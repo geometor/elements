@@ -119,52 +119,6 @@
            <div itemprop="articleBody">
               <section id="vesica">
 <h1>vesica<a class="headerlink" href="#vesica" title="Link to this heading"></a></h1>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">constructs the classic &#39;vesica pisces&#39;</span>
-<span class="sd">&quot;&quot;&quot;</span>
-<span class="kn">from</span> <span class="nn">geometor.elements</span> <span class="kn">import</span> <span class="o">*</span>
-
-<span class="k">def</span> <span class="nf">run</span><span class="p">():</span>
-    <span class="n">model</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="s1">&#39;vesica&#39;</span><span class="p">)</span>
-    <span class="n">A</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">set_point</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">classes</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;given&#39;</span><span class="p">])</span>
-    <span class="n">B</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">set_point</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">classes</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;given&#39;</span><span class="p">])</span>
-
-    <span class="n">model</span><span class="o">.</span><span class="n">construct_line</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
-
-    <span class="n">model</span><span class="o">.</span><span class="n">construct_circle</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
-    <span class="n">model</span><span class="o">.</span><span class="n">construct_circle</span><span class="p">(</span><span class="n">B</span><span class="p">,</span> <span class="n">A</span><span class="p">)</span>
-
-    <span class="n">E</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">get_element_by_label</span><span class="p">(</span><span class="s1">&#39;E&#39;</span><span class="p">)</span>
-    <span class="n">F</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">get_element_by_label</span><span class="p">(</span><span class="s1">&#39;F&#39;</span><span class="p">)</span>
-
-    <span class="n">model</span><span class="o">.</span><span class="n">set_polygon</span><span class="p">([</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">E</span><span class="p">])</span>
-    <span class="n">model</span><span class="o">.</span><span class="n">set_polygon</span><span class="p">([</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">F</span><span class="p">])</span>
-
-    <span class="n">model</span><span class="o">.</span><span class="n">construct_line</span><span class="p">(</span><span class="n">E</span><span class="p">,</span> <span class="n">F</span><span class="p">)</span>
-
-    <span class="c1">#  report_summary(model)</span>
-    <span class="c1">#  report_group_by_type(model)</span>
-    <span class="c1">#  report_sequence(model)</span>
-
-    <span class="n">model</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">&#39;vesica.json&#39;</span><span class="p">)</span>
-
-
-    <span class="c1">#  m2 = model.load(&quot;vesica.json&quot;)</span>
-    <span class="c1">#  report_sequence(m2)</span>
-    <span class="c1">#  print(m2)</span>
-
-    <span class="n">sequencer</span> <span class="o">=</span> <span class="n">Sequencer</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
-    <span class="n">sequencer</span><span class="o">.</span><span class="n">plot_sequence</span><span class="p">()</span>
-
-    <span class="c1">#  ancestors = model.get_ancestors(F)</span>
-    <span class="c1">#  print(ancestors)</span>
-    <span class="c1">#  ancestors = model.get_ancestors_labels(F)</span>
-    <span class="c1">#  print(ancestors)</span>
-
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
-    <span class="n">run</span><span class="p">()</span>
-</pre></div>
-</div>
 </section>
 
 <div class="section">
