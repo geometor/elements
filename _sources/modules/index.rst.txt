@@ -10,9 +10,6 @@ geometor.elements
 .. toctree::
    :maxdepth: 2
 
-   geometor.elements.model
-   geometor.elements.render
-   geometor.elements.utils
 
 
 
