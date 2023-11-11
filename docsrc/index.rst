@@ -19,7 +19,7 @@ contents:
 
    mission/index.rst
    usage.rst
-   modules/geometor.elements.rst
+   modules/index.rst
    demos/index.rst
    refs/index.rst
    log </log#https://>
