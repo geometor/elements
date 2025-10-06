@@ -1,36 +1,33 @@
 GEOMETOR • elements
 ===================
 
-test
+.. include:: ../intro.rst
 
-.. include:: ../README.rst
-
-recent logs:
-------------
+recent logs
+-----------
 
 .. postlist:: 5
    :excerpts:
 
-
-contents:
----------
+contents
+--------
 
 .. toctree::
    :hidden:
    :maxdepth: 2
 
    mission/index.rst
-   usage.rst
+   usage/index.rst
    modules/index.rst
    demos/index.rst
    refs/index.rst
    log </log#https://>
    todos.rst
+   changelog.rst
+   glossary.rst
 
-
-
-Indices and tables
-==================
+indices
+-------
 
 * :ref:`genindex`
 * :ref:`modindex`
