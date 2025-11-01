@@ -1,3 +1,0 @@
-'''
-Milvus queries module.
-'''

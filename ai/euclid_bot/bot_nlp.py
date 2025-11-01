@@ -1,3 +1,0 @@
-'''
-EuclidBot NLP module.
-'''

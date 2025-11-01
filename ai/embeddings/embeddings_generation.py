@@ -1,3 +1,0 @@
-'''
-Embeddings generation module.
-'''

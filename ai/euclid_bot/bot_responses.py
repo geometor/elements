@@ -1,3 +1,0 @@
-'''
-EuclidBot responses module.
-'''
