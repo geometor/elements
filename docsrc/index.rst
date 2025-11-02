@@ -17,14 +17,19 @@ contents
    :maxdepth: 2
 
    mission/index.rst
-   usage/index.rst
-   modules/index.rst
-   demos/index.rst
    refs/index.rst
    log </log#https://>
    todos.rst
    changelog.rst
    glossary.rst
+
+Euclid's Elements 2.0
+---------------------
+
+.. toctree::
+   :maxdepth: 2
+
+   elements2/design.rst
 
 indices
 -------

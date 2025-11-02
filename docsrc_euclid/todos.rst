@@ -1,6 +1,0 @@
-todos
-=====
-
-
-.. todolist::
-
