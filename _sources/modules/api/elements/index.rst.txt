@@ -1,0 +1,26 @@
+elements
+========
+
+.. py:module:: elements
+
+.. autoapi-nested-parse::
+
+   tools for modeling and rendering geometric constructions
+
+
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 1
+
+   /modules/api/elements/__main__/index
+   /modules/api/elements/app/index
+   /modules/api/elements/elements/index
+   /modules/api/elements/rst_builder/index
+   /modules/api/elements/rst_generator/index
+   /modules/api/elements/utils/index
+   /modules/api/elements/xml_parser/index
+
+
