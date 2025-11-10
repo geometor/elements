@@ -6,8 +6,11 @@ GEOMETOR • elements
 recent logs
 -----------
 
-.. postlist:: 5
-   :excerpts:
+.. collection::
+   :type: log
+   :sort: date
+   :reverse:
+   :limit: 5
 
 contents
 --------
@@ -18,7 +21,6 @@ contents
 
    mission/index.rst
    refs/index.rst
-   log </log#https://>
    todos.rst
    changelog.rst
    glossary.rst
