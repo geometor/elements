@@ -66,11 +66,3 @@ a complete refactoring of the work into code-like structures that drive an
 animation and analytical engine.
 
 
-goals
------
-
-.. postlist:: 
-   :category: GOALS
-   :excerpts:
-
-

@@ -15,7 +15,8 @@ construct an equilateral triangle on a segment
 construct an equalateral triangle on a segment
 
 .. image:: sequences/summary.svg
-
+   :width: 200px
+   :align: right
 
 
 | from the :ref:`given points` :math:`A` and :math:`B` 
@@ -24,10 +25,14 @@ construct an equalateral triangle on a segment
  point :math:`A`
 
 .. image:: sequences/00000-point-start.svg
+   :width: 200px
+   :align: right
 
 point :math:`B`
 
 .. image:: sequences/00001-point-start.svg
+   :width: 200px
+   :align: right
 
 
 **PROBLEM:** construct an :ref:`equilateral triangle` on the :ref:`segment`
@@ -38,10 +43,14 @@ point :math:`B`
 :ref:`construct circle` :math:`(A, B)` as :math:`c_1`.
 
 .. image:: sequences/00002-circle.svg
+   :width: 200px
+   :align: right
 
 :ref:`construct circle` :math:`(B, A)` as :math:`c_2`.
 
 .. image:: sequences/00003-circle.svg
+   :width: 200px
+   :align: right
 
 .. todo:: define intersection point
 
@@ -49,18 +58,26 @@ identify the two intersection points of circles :math:`c_1` and :math:`c_2`
 as points :math:`C` and :math:`D`
 
 .. image:: sequences/00004-point.svg
+   :width: 200px
+   :align: right
 
 .. image:: sequences/00005-point.svg
+   :width: 200px
+   :align: right
 
 | from the points :math:`A` and :math:`C` 
 | :ref:`set segment` :math:`\bar{AC}`.
 
 .. image:: sequences/00006-polygon.svg
+   :width: 200px
+   :align: right
 
 | from the points :math:`B` and :math:`C` 
 | :ref:`set segment` :math:`\bar{BC}`.
 
 .. image:: sequences/00007-polygon.svg
+   :width: 200px
+   :align: right
 
 As the :ref:`circle` is defined, all points on the perimeter are an equal distance from the center.
 
@@ -95,6 +112,8 @@ segment :math:`\bar{AB}`.
 - **PROBLEM SOLVED**
 
 .. image:: sequences/summary.svg
+   :width: 200px
+   :align: right
 
 .. todo:: demonstrate the second triangle
 

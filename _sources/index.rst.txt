@@ -1,29 +1,21 @@
 GEOMETOR • elements
 ===================
 
-.. include:: ../intro.rst
-
-recent logs
------------
-
-.. collection::
-   :type: log
-   :sort: date
-   :reverse:
-   :limit: 5
-
-contents
---------
-
 .. toctree::
    :hidden:
    :maxdepth: 2
 
    mission/index.rst
+   log/index.rst
+   elements/index.rst
+   modules/index.rst
    refs/index.rst
    todos.rst
    changelog.rst
    glossary.rst
+
+.. include:: ../intro.rst
+
 
 Euclid's Elements 2.0
 ---------------------
@@ -33,9 +25,3 @@ Euclid's Elements 2.0
 
    elements2/design.rst
 
-indices
--------
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
