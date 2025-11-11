@@ -48,12 +48,15 @@ Therefore etc.
 ## Footnotes
 
 .. [1] falling on two straight lines,
-    <foreign lang="greek">εὶς δύο εὐθείας ἐμπίπτουσα</foreign>, the phrase
+
+   <foreign lang="greek">εὶς δύο εὐθείας ἐμπίπτουσα</foreign>, the phrase
    being the same as that used in <a href="/elem.1.post.5">Post. 5</a>, meaning
    a <em>transversal</em>.
 
+
 .. [2] the alternate angles,
-    <foreign lang="greek">αἱ ἐναλλὰξ γωνίαι</foreign>. Proclus (<xref n="Proc.
+
+   <foreign lang="greek">αἱ ἐναλλὰξ γωνίαι</foreign>. Proclus (<xref n="Proc.
    p. 357, 9" from="ROOT" to="DITTO">p. 357, 9</xref>) explains that Euclid
    uses the word <em>alternate</em> (or, more exactly, <em>alternately</em>,
    <foreign lang="greek">ἐναλλάξ</foreign>) in two connexions, (1) of a certain
@@ -68,4 +71,5 @@ Therefore etc.
    be any two of them not successive but separated by one angle of the four.
 
 .. [3] in the direction of B, D or towards A, C,
-    literally <quote>towards the <em>parts B</em>, `D` or towards `A`, `C`,</quote> <foreign lang="greek">ἐπὶ τὰ Β, Δ μέρη ἢ ἐπὶ τὰ Α Γ</foreign>.
+
+   literally <quote>towards the <em>parts B</em>, `D` or towards `A`, `C`,</quote> <foreign lang="greek">ἐπὶ τὰ Β, Δ μέρη ἢ ἐπὶ τὰ Α Γ</foreign>.

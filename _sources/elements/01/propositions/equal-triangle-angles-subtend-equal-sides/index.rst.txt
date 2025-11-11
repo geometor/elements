@@ -1,7 +1,7 @@
 .. index:: proof, triangles
 
 .. _I.6:
-.. _equal triangle angles of triangle subtend equal sides
+.. _equal triangle angles of triangle subtend equal sides:
 
 when two angles of a triangle are equal, so are the subtended sides
 ===================================================================

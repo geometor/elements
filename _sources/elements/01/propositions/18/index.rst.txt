@@ -52,7 +52,7 @@ Therefore etc.
 
 .. [1] Number
 
-    In the enunciation of this number we have <foreign
+   In the enunciation of this number we have <foreign
    lang="greek">ὑποτείνειν</foreign> (<quote>subtend</quote>) used with the
    simple accusative instead of the more usual <foreign
    lang="greek">ὑπό</foreign> with accusative. The latter construction is used
@@ -72,3 +72,4 @@ Therefore etc.
    wording, <foreign lang="greek">ὑπὸ γὰρ τὴν μείζω γωνίαν ὑποτείνει</foreign>
    (<xref n="Aristot. Meteo.. 376a.12" from="ROOT"
    to="DITTO"><title>Meteorologica</title> III. 5, 376 a 12</xref>).
+

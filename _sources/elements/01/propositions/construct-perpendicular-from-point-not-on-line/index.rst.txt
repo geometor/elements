@@ -20,7 +20,7 @@ Let `AB` be the given infinite straight line, and `C` the given point which is n
 
 **PROBLEM:** draw to the given infinite straight line `AB`, from the given point `C` which is not on it, a perpendicular straight line.
 
-For let a point `D` be taken at random on the other side of the straight line `AB`[2]_, and with centre `C` and distance `CD` let the circle `EFG` be described; [I.post.3]
+For let a point `D` be taken at random on the other side of the straight line `AB` [2]_, and with centre `C` and distance `CD` let the circle `EFG` be described; [I.post.3]
 
 - let the straight line `EG` be bisected at `H`, [I.10] and let the straight lines `CG`, `CH`, `CE` be joined. [I.post.1]
 
@@ -57,4 +57,4 @@ footnotes
     , <foreign lang="greek">κάθετον εὐθεῖαν γραμμἡν</foreign>. This is the full expression for a <em>perpendicular</em>, <foreign lang="greek">κάθετος</foreign> meaning <em>let fall</em> or <em>let down</em>, so that the expression corresponds to our <em>plumb-line</em>. <foreign lang="greek">ἡ κάθετος</foreign> is however constantly used alone for a perpendicular, <foreign lang="greek">γραμμἡ</foreign> being understood.
 
 .. [2] on the other side of the straight line AB
-    , literally <quote>towards the other parts of the straight line `AB`,</quote> <foreign lang="greek">ἐπὶ τὰ ἕτερα μέρη τῆς</foreign> AB. Cf. <quote>on the same side</quote> (<foreign lang="greek">ἐπὶ τὰ αὐτὰ μέρη</foreign>) in <a href="/elem.1.post.5">Post. 5</a> and <quote>in both directions</quote> (<foreign lang="greek">ἐφ̓ ἑκάτερα τὰ μἑρη</foreign>) in <a href="/elem.1.def.23">Def. 23</a>.
+    , literally ``towards the other parts of the straight line `AB`,`` <foreign lang="greek">ἐπὶ τὰ ἕτερα μέρη τῆς</foreign> AB. Cf. ``on the same side`` (<foreign lang="greek">ἐπὶ τὰ αὐτὰ μέρη</foreign>) in <a href="/elem.1.post.5">Post. 5</a> and ``in both directions`` (<foreign lang="greek">ἐφ̓ ἑκάτερα τὰ μἑρη</foreign>) in <a href="/elem.1.def.23">Def. 23</a>.
