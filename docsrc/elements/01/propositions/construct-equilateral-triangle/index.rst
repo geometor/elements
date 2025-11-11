@@ -1,3 +1,5 @@
+:category: triangle, construction
+
 .. index:: construction, triangles, segments
 
 .. _I.1:
@@ -12,7 +14,7 @@ construct an equilateral triangle on a segment
 
   -- Euclid
 
-construct an equalateral triangle on a segment
+construct an equilateral triangle on a segment
 
 .. image:: sequences/summary.svg
    :width: 200px
@@ -22,7 +24,7 @@ construct an equalateral triangle on a segment
 | from the :ref:`given points` :math:`A` and :math:`B` 
 | :ref:`set segment` :math:`\bar{AB}`.
 
- point :math:`A`
+point :math:`A`
 
 .. image:: sequences/00000-point-start.svg
    :width: 200px

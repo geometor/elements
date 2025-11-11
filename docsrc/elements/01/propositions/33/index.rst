@@ -53,16 +53,16 @@ footnotes
 .. [1] joining...(at the extremities which are) in the same directions (respectively).
 
    I have for clearness' sake inserted the words in brackets though they are
-   not in the original Greek, which has <quote>joining...in the same
-   directions</quote> or <quote>on the same sides,</quote> <foreign
+   not in the original Greek, which has ``joining...in the same
+   directions`` or ``on the same sides,`` <foreign
    lang="greek">ἐπὶ τὰ αυτὰ μέρη ἐπιζευγνύουσαι</foreign>. The expression
-   <quote>tiwards the same parts,</quote> though usage has sanctioned it, is
+   ``tiwards the same parts,`` though usage has sanctioned it, is
    perhaps not quite satisfactory.
 
 .. [2] DC, CB
 
-   and 18. `DCB`. The Greek has <quote> `BC`, `CD`</quote> and
-   <quote>`BCD`</quote> in these places respectively. Euclid is not always
+   and 18. `DCB`. The Greek has `` `BC`, `CD` `` and
+   `` `BCD` `` in these places respectively. Euclid is not always
    careful to write in corresponding order the letters denoting corresponding
    points in congruent figures. On the contrary, he evidently prefers the
    alphabetical order, and seems to disdain to alter it for the sake of

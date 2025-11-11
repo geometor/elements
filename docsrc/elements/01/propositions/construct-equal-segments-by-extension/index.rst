@@ -8,7 +8,7 @@ construct equal segments by extension
 
   I.2
 
-  To place at a given point (as an extremity) a straight line equal to a given
+  To place at a given point (as an extremity) [1]_ a straight line equal to a given
   straight line.
 
   -- Euclid
@@ -100,8 +100,8 @@ footnotes
 
 .. [1] (as an extremity).  
 
-   I have inserted these words because <quote>to place a straight line
-   <em>at</em> a given point</quote> (<foreign lang="greek">πρὸς τῷ δοθέντι
+   I have inserted these words because ``to place a straight line
+   <em>at</em> a given point`` (<foreign lang="greek">πρὸς τῷ δοθέντι
    σημείῳ</foreign>) is not quite clear enough, at least in English.
 
 .. [2] Let the straight lines AE, BF be produced....  
@@ -112,16 +112,16 @@ footnotes
    that which is produced in such cases, <foreign
    lang="greek">ἐκβεβλήσθωσαν</foreign> and <foreign
    lang="greek">προσεκβεβλήσθωσαν</foreign> meaning little more than
-   <em>drawing</em> straight lines <quote>in a straight line with</quote> the
+   <em>drawing</em> straight lines ``in a straight line with`` the
    given straight lines. The first place in which Euclid uses phraseology
    exactly corresponding to ours when <pb n="245"/>speaking of a straight line
-   being produced is in <a href="/elem.1.16">I. 16</a>: <quote>let one side of
-   it, **BC**, be produced to **D** </quote> (<foreign
+   being produced is in <a href="/elem.1.16">I. 16</a>: ``let one side of
+   it, **BC**, be produced to **D** `` (<foreign
    lang="greek">προσεκβεβλήσθω αὐτοῦ μία πλευρὰ ἡ ΒΓ ἐπὶ τὸ Δ</foreign>).
 
 .. [3] the remainder AL...the remainder BG.  
    The Greek expressions are <foreign lang="greek">λοιπὴ ἡ ΑΛ</foreign> and
    <foreign lang="greek">λοιπῇ τῇ</foreign> BH, and the literal translation
-   would be <quote>**AL** (or **BG**) <em>remaining</em>,</quote> but the shade
+   would be ``**AL** (or **BG**) <em>remaining</em>,`` but the shade
    of meaning conveyed by the position of the definite article can hardly be
    expressed in English.

@@ -22,7 +22,7 @@ exterior angle of a triangle is greater than the either the interior or opposite
 
 Let `ABC` be a triangle, and let one side of it `BC` be produced to `D`; 
 
-I say that the exterior angle [1]_ `ACD`is greater than either of the interior and opposite angles [2]_ `CBA`, `BAC`.
+I say that the exterior angle [1]_ `ACD`is greater than either of the interior and opposite angles [2] `CBA`, `BAC`.
 
 Let `AC` be bisected at `E` [I.10], and let `BE` be joined and produced in a straight line to `F`;
 
@@ -59,7 +59,7 @@ footnotes
 
 
 .. [1] the exterior angle,
-    literally <quote>the outside angle,</quote> <foreign lang="greek">ἡ ἐκτὸς γωνία</foreign>.
+    literally ``the outside angle,`` <foreign lang="greek">ἡ ἐκτὸς γωνία</foreign>.
 
 .. [2] the interior and opposite angles,
     <foreign lang="greek">τῶν ἐντὸς καὶ ἀπεναντίον γωνιῶν</foreign>.
