@@ -11,7 +11,7 @@ def _convert_element_to_rst(element):
 
     for child in element:
         if child.tag == 'emph':
-            parts.append(f"*{''.join(child.itertext()).strip()}*")
+            parts.append(f"``{''.join(child.itertext()).strip()}``")
         elif child.tag == 'ref':
             target = child.get('target')
             link_text = ''.join(child.itertext()).strip()
@@ -47,8 +47,19 @@ def parse_element_xml(file_path: Path):
     
     proof = "\n\n".join(proof_paragraphs)
 
+    # Fallback for elements without explicit Enunc/Proof sections
+    if not enunciation and not proof:
+        all_paragraphs = root.findall('p')
+        if all_paragraphs:
+            enunciation = _convert_element_to_rst(all_paragraphs[0])
+            if len(all_paragraphs) > 1:
+                proof_paragraphs = [_convert_element_to_rst(p) for p in all_paragraphs[1:]]
+                proof = "\n\n".join(proof_paragraphs)
+
     qed_p = root.find(".//div4[@type='QED']/p")
     qed = _convert_element_to_rst(qed_p)
+
+    dependencies = [ref.get('target') for ref in root.findall('.//ref')]
 
     return {
         'id': element_id,
@@ -58,4 +69,5 @@ def parse_element_xml(file_path: Path):
         'enunciation': enunciation,
         'proof': proof,
         'qed': qed,
+        'dependencies': dependencies,
     }

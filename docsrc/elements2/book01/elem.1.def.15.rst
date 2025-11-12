@@ -1,0 +1,9 @@
+.. _elem.1.def.15:
+
+:category: definition
+
+15
+==
+
+    A circle is a plane figure contained by one line such that all the straight lines falling upon it from one point among those lying within the figure are equal to one another;
+

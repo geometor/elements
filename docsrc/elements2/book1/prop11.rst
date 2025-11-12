@@ -1,0 +1,33 @@
+.. _elem.1.11:
+
+Proposition 11.
+===============
+
+To draw a straight line at right angles to a given straight line from a given point on it.
+
+Proof
+-----
+
+Let *AB* be the given straight line, and *C* the given point on it.
+
+Thus it is required to draw from the point *C* a straight line at right angles to the straight line *AB*.
+
+Let a point *D* be taken at random on *AC*; *CE* be made equal to *CD*; [:ref:`I. 3 <elem.1.3>`] on *DE* let the equilateral triangle *FDE* be constructed, [:ref:`I. 1 <elem.1.1>`] and let *FC* be joined;
+
+I say that the straight line *FC* has been drawn at right *AB* from *C* the given point on it.
+
+For, since *DC* is equal to *CE*, and *CF* is common, the two sides DC, CF are equal to the two sides EC, CF respectively; and the base *DF* is equal to the base *FE*; therefore the angle DCF is equal to the angle ECF; [I. 8] and they are adjacent angles.
+
+But, when a straight line set up on a straight line makes :ref:`Def. 10 <elem.1.def.10>`] therefore each of the angles DCF, FCE is right.
+
+Therefore the straight line *CF* has been drawn at right angles to the given straight line *AB* from the given point *C* on it.
+
+
+**Q.E.D.** Q. E. F.
+
+Dependencies
+------------
+- :ref:`elem.1.3`
+- :ref:`elem.1.1`
+- :ref:`elem.1.8`
+- :ref:`elem.1.def.10`

@@ -18,7 +18,7 @@ The project will focus on the following:
 
 - **Formalization**: Translating the text of Euclid's Elements into a more structured and machine-readable format. Semantically and symbolically consistent throughout.
 - **Dependency Mapping**: Identifying the dependency chain between definitions, postulates, and propositions.
-- **Content Transformation**: Converting the xml content from the `resources` folder into reStructuredText (RST) within a new `docsrc/elements2` directory. This will involve:
+- **Content Transformation**: Converting the xml content from the `resources` folder into reStructuredText (RST) within the `docsrc/elements2` directory. This will involve:
     -   Retitling propositions for clarity.
     -   Establishing a consistent categorization and linking system.
     -   Integrating with Sphinx for documentation generation.
@@ -33,8 +33,3 @@ But before we begin we need to document the process and design the system for
 organization. In `docsrc/elements` I experimented with departing from numbered
 indexes to phrases - which would be the key for refs and the url path. This is
 tedious, however a reference like "Book3 prop11" or worse "III.11" is useless semantically.
-
-# Current Status and Next Steps
-
-The design for the new RST structure and XML parsing process is documented in :doc:`elements2/design`.
-The next step is to develop the XML parsing script based on this design.

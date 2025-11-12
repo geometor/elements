@@ -1,6 +1,19 @@
 changelog
 =========
 
+0.0.3
+-----
+*2025-11-11*
+
+**added**
+
+.. + Added dependency extraction from XML files.
+.. + Added fallback logic to handle XML files without explicit Enunc/Proof sections.
+
+**changed**
+
+.. + Improved RST generation to include a list of dependencies.
+
 0.0.2
 -----
 *2025-11-11*
