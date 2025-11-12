@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>elements.rst_generator &mdash; Project name not set  documentation</title>
   <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=626bc201" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=e399521c" />
   <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
 </head>
 <body>
@@ -30,16 +30,16 @@
           <a href="../../mission/index.html"  >mission</a>
         </li>
         <li>
-          <a href="../../elements/index.html"  >elements</a>
-        </li>
-        <li>
           <a href="../../usage.html"  >usage</a>
         </li>
         <li>
-          <a href="../../modules/index.html"  >modules</a>
+          <a href="../../elements/index.html"  >elements</a>
         </li>
         <li>
           <a href="../../log/index.html"  >log</a>
+        </li>
+        <li>
+          <a href="../../modules/index.html"  >modules</a>
         </li>
       </ul>
     </nav>
@@ -80,33 +80,35 @@
     <span class="n">enunciation</span> <span class="o">=</span> <span class="n">parsed_data</span><span class="p">[</span><span class="s1">&#39;enunciation&#39;</span><span class="p">]</span>
     <span class="n">proof</span> <span class="o">=</span> <span class="n">parsed_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;proof&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
     <span class="n">qed</span> <span class="o">=</span> <span class="n">parsed_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;qed&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+    <span class="n">dependencies</span> <span class="o">=</span> <span class="n">parsed_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;dependencies&#39;</span><span class="p">,</span> <span class="p">[])</span>
 
     <span class="c1"># Create a semantic filename (e.g., book1-proposition1.rst)</span>
     <span class="c1"># This needs more sophisticated logic for actual semantic naming</span>
     <span class="c1"># For now, a simple conversion from elem.1.1.xml to book1/prop1.rst</span>
-    <span class="n">book_num</span> <span class="o">=</span> <span class="n">element_id</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">book_num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">element_id</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">])</span>
     <span class="n">type_abbr</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;proposition&#39;</span><span class="p">:</span> <span class="s1">&#39;prop&#39;</span><span class="p">,</span> <span class="s1">&#39;definition&#39;</span><span class="p">:</span> <span class="s1">&#39;def&#39;</span><span class="p">,</span> <span class="s1">&#39;postulate&#39;</span><span class="p">:</span> <span class="s1">&#39;post&#39;</span><span class="p">,</span> <span class="s1">&#39;common_notion&#39;</span><span class="p">:</span> <span class="s1">&#39;cn&#39;</span><span class="p">}</span>
     <span class="n">element_type_short</span> <span class="o">=</span> <span class="n">type_abbr</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">element_type</span><span class="p">,</span> <span class="n">element_type</span><span class="p">)</span>
     
     <span class="c1"># Create book subdirectory if it doesn&#39;t exist</span>
-    <span class="n">book_output_dir</span> <span class="o">=</span> <span class="n">output_dir</span> <span class="o">/</span> <span class="sa">f</span><span class="s2">&quot;book</span><span class="si">{</span><span class="n">book_num</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="n">book_output_dir</span> <span class="o">=</span> <span class="n">output_dir</span> <span class="o">/</span> <span class="sa">f</span><span class="s2">&quot;book</span><span class="si">{</span><span class="n">book_num</span><span class="si">:</span><span class="s2">02</span><span class="si">}</span><span class="s2">&quot;</span>
     <span class="n">book_output_dir</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
-    <span class="n">rst_filename</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">element_type_short</span><span class="si">}{</span><span class="n">element_number</span><span class="si">}</span><span class="s2">.rst&quot;</span>
+    <span class="n">rst_filename</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">element_id</span><span class="si">}</span><span class="s2">.rst&quot;</span>
     <span class="n">rst_file_path</span> <span class="o">=</span> <span class="n">book_output_dir</span> <span class="o">/</span> <span class="n">rst_filename</span>
 
     <span class="n">rst_content</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;&quot;&quot;.. _</span><span class="si">{</span><span class="n">element_id</span><span class="si">}</span><span class="s2">:</span>
 
+<span class="s2">:category: </span><span class="si">{</span><span class="n">element_type</span><span class="si">}</span>
+
 <span class="si">{</span><span class="n">head</span><span class="si">}</span>
 <span class="si">{</span><span class="s1">&#39;=&#39;</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nb">len</span><span class="p">(</span><span class="n">head</span><span class="p">)</span><span class="si">}</span>
 
-<span class="si">{</span><span class="n">enunciation</span><span class="si">}</span>
+<span class="s2">    </span><span class="si">{</span><span class="n">enunciation</span><span class="si">}</span>
+
 <span class="s2">&quot;&quot;&quot;</span>
 
     <span class="k">if</span> <span class="n">proof</span><span class="p">:</span>
         <span class="n">rst_content</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">Proof</span>
-<span class="s2">-----</span>
 
 <span class="si">{</span><span class="n">proof</span><span class="si">}</span>
 <span class="s2">&quot;&quot;&quot;</span>
@@ -116,6 +118,15 @@
 
 <span class="s2">**Q.E.D.** </span><span class="si">{</span><span class="n">qed</span><span class="si">}</span>
 <span class="s2">&quot;&quot;&quot;</span>
+
+    <span class="k">if</span> <span class="n">dependencies</span><span class="p">:</span>
+        <span class="n">rst_content</span> <span class="o">+=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">Dependencies</span>
+<span class="s2">------------</span>
+<span class="s2">&quot;&quot;&quot;</span>
+        <span class="k">for</span> <span class="n">dep</span> <span class="ow">in</span> <span class="n">dependencies</span><span class="p">:</span>
+            <span class="n">rst_content</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;- :ref:`</span><span class="si">{</span><span class="n">dep</span><span class="si">}</span><span class="s2">`</span><span class="se">\n</span><span class="s2">&quot;</span>
+
 
     <span class="n">rst_file_path</span><span class="o">.</span><span class="n">write_text</span><span class="p">(</span><span class="n">rst_content</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Generated RST file: </span><span class="si">{</span><span class="n">rst_file_path</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span></div>
@@ -155,7 +166,15 @@
     <h3>Categories</h3>
     <ul>
         
+        <li><a href="../../categories/common%20notion.html">common notion</a></li>
+        
         <li><a href="../../categories/construction.html">construction</a></li>
+        
+        <li><a href="../../categories/definition.html">definition</a></li>
+        
+        <li><a href="../../categories/postulate.html">postulate</a></li>
+        
+        <li><a href="../../categories/proposition.html">proposition</a></li>
         
         <li><a href="../../categories/triangle.html">triangle</a></li>
         

@@ -1,0 +1,174 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elements 2.0 Design &mdash; Project name not set  documentation</title>
+  <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../_static/css/styles.css?v=e399521c" />
+  <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="../index.html">
+        <img src="../_static/logo.png" class="logo" alt="Logo"/>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">elements</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../mission/index.html"  >mission</a>
+        </li>
+        <li>
+          <a href="../usage.html"  >usage</a>
+        </li>
+        <li>
+          <a href="../elements/index.html"  >elements</a>
+        </li>
+        <li>
+          <a href="../log/index.html"  >log</a>
+        </li>
+        <li>
+          <a href="../modules/index.html"  >modules</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main>
+
+    <article>
+      <header>
+      <nav class="breadcrumbs">
+        <span><a href="../index.html">Home</a></span>
+        <span>/</span>
+        <span>Elements 2.0 Design</span>
+      </nav>
+        <nav class="context">
+          <div class="prev">
+             <a href="../glossary.html" class="btn btn-neutral float-left" title="glossary" >Prev</a>
+          </div>
+          <div class="next">
+            <a href="../modules/api/index.html" class="btn btn-neutral float-right" title="API Reference" >Next</a>
+          </div>
+        </nav>
+      </header>
+      <div class="content">
+          <section id="elements-2-0-design">
+<span id="elements2-design"></span><h1>Elements 2.0 Design<a class="headerlink" href="#elements-2-0-design" title="Link to this heading">¶</a></h1>
+<p>This document outlines the design for the new reStructuredText (RST) structure and the XML parsing process for Euclid’s Elements. The goal is to create a semantically consistent, machine-readable, and easily navigable documentation of the Elements, departing from the traditional numbered hierarchy.</p>
+<ol class="arabic simple">
+<li><p><strong>Overall Structure and Naming Conventions</strong>
+*   <strong>File Organization</strong>: Each element (definition, postulate, proposition, common notion) will reside in its own RST file. Files will be organized within subdirectories corresponding to books.
+*   <strong>Semantic Naming</strong>: File names and RST labels will use semantic phrases instead of traditional numbering (e.g., <cite>book1/equilateral-triangle.rst</cite> instead of <cite>book1/prop1.rst</cite>). This will also form the basis for predictable URLs and cross-references.
+*   <strong>Title Format</strong>: Each RST file will have a clear, succinct title reflecting the element’s content.</p></li>
+<li><p><strong>XML Parsing Strategy</strong>
+*   <strong>Source</strong>: The XML content from <cite>resources/xml/</cite> will be the primary source.
+*   <strong>Parsing Tool</strong>: A Python script will be developed to parse the XML.
+*   <strong>Extraction</strong>: The script will extract the element type (definition, postulate, proposition, common notion), the statement, and any associated proof or explanation.
+*   <strong>Image Integration</strong>: Images from <cite>resources/images/</cite> will be linked to the corresponding RST files. A consistent naming convention for images (e.g., <cite>elem.&lt;book&gt;.&lt;type&gt;.&lt;number&gt;.jpg</cite>) will be assumed or established.</p></li>
+<li><p><strong>RST Content Generation</strong>
+*   <strong>Standard Directives</strong>: Use standard Sphinx/RST directives for definitions, propositions, and proofs.
+*   <strong>Cross-referencing</strong>: Implement a robust cross-referencing system using Sphinx’s <cite>ref</cite> and <cite>term</cite> roles, linking to other elements, definitions, and glossary terms.
+*   <strong>Glossary Integration</strong>: Key terms will be linked to a central glossary.</p></li>
+<li><p><strong>Formalization and Dependency Mapping</strong>
+*   <strong>Metadata</strong>: Each RST file will include metadata (e.g., using Sphinx’s <cite>meta</cite> directive or custom fields) to capture the element type, original book/number, and semantic tags.
+*   <strong>Dependency Links</strong>: Within the RST content, explicit links or a custom Sphinx directive will be used to denote dependencies on other definitions, postulates, or propositions. This will facilitate the creation of a dependency graph.</p></li>
+<li><p><strong>Canonical Consistency</strong>
+*   <strong>URL Structure</strong>: URLs will be derived directly from the semantic file paths (e.g., <cite>/elements2/book1/equilateral-triangle.html</cite>).
+*   <strong>Labeling</strong>: Consistent RST labels will ensure reliable cross-referencing throughout the documentation.</p></li>
+<li><p><strong>Development Workflow</strong>
+*   <strong>Iterative Parsing</strong>: Develop the parsing script iteratively, starting with Book 1 and gradually extending to other books.
+*   <strong>Testing</strong>: Implement unit tests for the parsing script to ensure correct XML extraction and RST generation.
+*   <strong>Build Verification</strong>: Regularly build the Sphinx documentation to verify the generated RST content and resolve any rendering issues.</p></li>
+</ol>
+<p>This design aims to create a flexible and powerful framework for exploring Euclid’s Elements, enabling deeper analysis of its logical structure and dependencies.</p>
+</section>
+
+      </div>
+      <footer>
+
+
+        <nav class="context">
+          <div class="prev">
+             <a href="../glossary.html" class="btn btn-neutral float-left" title="glossary" >Prev</a>
+          </div>
+          <div class="next">
+            <a href="../modules/api/index.html" class="btn btn-neutral float-right" title="API Reference" >Next</a>
+          </div>
+        </nav></footer>
+    </article>
+
+  </main>
+
+<div class="asides">
+    <aside>
+        <h3>Search</h3>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+    </aside>
+    
+    
+
+    
+
+<aside class="aside-categories">
+    <h3>Categories</h3>
+    <ul>
+        
+        <li><a href="../categories/common%20notion.html">common notion</a></li>
+        
+        <li><a href="../categories/construction.html">construction</a></li>
+        
+        <li><a href="../categories/definition.html">definition</a></li>
+        
+        <li><a href="../categories/postulate.html">postulate</a></li>
+        
+        <li><a href="../categories/proposition.html">proposition</a></li>
+        
+        <li><a href="../categories/triangle.html">triangle</a></li>
+        
+    </ul>
+</aside>
+
+</div>
+<footer>
+    <div class="footer-nav">
+    <ul>
+        <li><a href="../glossary.html">glossary</a></li>
+        <li><a href="../todos.html">todos</a></li>
+        <li><a href="../changelog.html">changelog</a></li>
+    </ul>
+</div>
+    <hr/>
+    <div role="contentinfo">
+        <p>
+                &copy; Copyright .
+        </p>
+    </div>
+</footer>
+
+  <script src="../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+  <script src="../_static/doctools.js?v=9bcbadda"></script>
+  <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+
+
+</body>
+</html>
