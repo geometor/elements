@@ -1,0 +1,11 @@
+:order: 6
+:number: 6
+
+.. _III.def.6:
+
+III.def.6
+=========
+
+A
+segment of a circle
+is the figure contained by a straight line and a circumference of a circle.

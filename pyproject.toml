@@ -21,6 +21,7 @@ dependencies = [
 
 [project.scripts]
 elements = "geometor.elements.__main__:main"
+elements_transform = "geometor.elements.transform:main"
 
 [build-system]
 requires = ["setuptools", "setuptools-scm"]

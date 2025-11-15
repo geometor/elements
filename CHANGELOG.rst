@@ -1,6 +1,19 @@
 changelog
 =========
 
+0.0.4
+-----
+*2025-11-15*
+
+**added**
+
+.. + Added `elements_transform` script for converting Euclid's Elements from XML to RST.
+.. + Established new, structured RST output in `docsrc/elements2/`.
+
+**changed**
+
+.. - Removed old, manually created documentation from `docsrc/elements/`.
+
 0.0.3
 -----
 *2025-11-11*
