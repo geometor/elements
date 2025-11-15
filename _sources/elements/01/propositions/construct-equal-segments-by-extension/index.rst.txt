@@ -99,13 +99,11 @@ footnotes
 
 
 .. [1] (as an extremity).  
-
    I have inserted these words because ``to place a straight line
    <em>at</em> a given point`` (<foreign lang="greek">πρὸς τῷ δοθέντι
    σημείῳ</foreign>) is not quite clear enough, at least in English.
 
-.. [2] Let the straight lines AE, BF be produced....  
-
+.. [2] Let the straight lines AE, BF be produced....
    It will be observed that in this first application of <a
    href="/elem.1.post.2">Postulate 2</a>, and again in <a href="/elem.1.5">I.
    5</a>, Euclid speaks of the <em>continuation</em> of the straight line as

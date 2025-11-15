@@ -35,8 +35,7 @@ Again, since the straight line `DE` stands on the straight line `AB`, making the
 
 But the angles `CEA`, `AED` were also proved equal to two right angles; 
 
-- therefore the angles `CEA`, `AED` are equal to the angles `AED`
-`DEB`. [I.post.4] and [I.cn.1] Let the angle `AED` be subtracted from each; therefore the remaining angle `CEA` is equal to the remaining angle `BED`. [I.cn.3]
+- therefore the angles `CEA`, `AED` are equal to the angles `AED` `DEB`. [I.post.4] and [I.cn.1] Let the angle `AED` be subtracted from each; therefore the remaining angle `CEA` is equal to the remaining angle `BED`. [I.cn.3]
 
 Similarly it can be proved that the angles `CEB`, `DEA` are also equal.
 
