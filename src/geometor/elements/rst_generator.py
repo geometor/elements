@@ -27,9 +27,9 @@ def generate_rst_from_xml(xml_file_path: Path, output_dir: Path):
     rst_filename = f"{element_id}.rst"
     rst_file_path = book_output_dir / rst_filename
 
-    rst_content = f""".. _{element_id}:
+    rst_content = f""":category: {element_type}
 
-:category: {element_type}
+.. _{element_id}:
 
 {head}
 {'=' * len(head)}
@@ -52,6 +52,7 @@ def generate_rst_from_xml(xml_file_path: Path, output_dir: Path):
 
     if dependencies:
         rst_content += """
+
 Dependencies
 ------------
 """

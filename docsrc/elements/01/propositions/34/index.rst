@@ -75,11 +75,10 @@ footnotes
 ---------
 
 .. [1] parallelogrammic areas
-
    It is to be observed that, when parallelograms have to be mentioned for the
    first time, Euclid calls them ``parallelogrammic areas`` or, more
    exactly, ``parallelogram`` areas (<foreign
-   lang="greek">παραλληλόγραμμα χωρία</foreign>). The meaning is simply areas
+   lang="greek">παραλλ:wasηλόγραμμα χωρία</foreign>). The meaning is simply areas
    bounded by parallel straight lines with the further limitation placed upon
    the term by Euclid that only <em>four-sided</em> figures are so called,
    although of course there are certain regular polygons which have opposite
@@ -92,9 +91,8 @@ footnotes
    was analogous to that of <foreign lang="greek">εὐθύγραμμος</foreign>
    (straight-lined or rectilineal).
 
-.. [2]
-
-   and `DC`, `CB`. The Greek has in these places ``BCD`` and
+.. [2] and `DC`, `CB`. 
+   The Greek has in these places ``BCD`` and
    `` `CD`, `BC` `` respectively. Cf. note on <a href="/elem.1.33">I.
    33</a>, lines 15, 18.
 

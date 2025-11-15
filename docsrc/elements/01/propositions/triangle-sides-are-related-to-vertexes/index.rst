@@ -143,10 +143,11 @@ footnotes
 
 .. [3] much greater
    
-    literally <quote>greater by much</quote> (<foreign lang="greek">πολλῷ
+   literally <quote>greater by much</quote> (<foreign lang="greek">πολλῷ
    μεἰζων</foreign>). Simson and those who follow him translate:
    <quote><em>much more then</em> is the angle **BDC** greater than the angle
    **BCD**,</quote> but the Greek for this would have to be <foreign
    lang="greek">πολλῷ</foreign> (or <foreign lang="greek">πολὺ[ρπαρ  ] μᾶλλόν
    ἐστι...μείζων. πολλῷ μᾶλλον</foreign>, however, though used by Apollonius,
    is not, apparently, found in Euclid or Archimedes.
+
