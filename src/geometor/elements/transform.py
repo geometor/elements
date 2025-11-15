@@ -21,6 +21,9 @@ def convert_inline_xml_to_rst(element):
     if element is None:
         return ""
 
+    if element.tag == 'term':
+        return f" **{''.join(element.itertext()).strip()}** "
+
     parts = []
     if element.text:
         parts.append(element.text)
@@ -85,7 +88,9 @@ def convert_inline_xml_to_rst(element):
         elif child.tag == 'term':
             parts.append(f" **{''.join(child.itertext()).strip()}** ")
         elif child.tag == 'hi':
-            parts.append(f" {''.join(child.itertext()).strip()} ")
+            # Recursively convert content within <hi> tags
+            hi_content = convert_inline_xml_to_rst(child)
+            parts.append(f" {hi_content.strip()} ")
         elif child.tag == 'lb':
             parts.append("\n") # Proper newline for inline break
         elif child.tag == 'figure':
@@ -171,19 +176,54 @@ def parse_book_xml(file_path):
                 entry_title = canonical_ref if canonical_ref else entry_id # Use canonical_ref as title
 
                 entry_content_rst = []
+                
+                def format_as_blockquote(text):
+                    if not text:
+                        return ""
+                    lines = text.strip().split('\n')
+                    indented_lines = [f"   {line}" for line in lines]
+                    return "\n".join(indented_lines)
+
+                # Handle Enunciation: either from div4 or the first p tag
+                enunc_div = div3.find("./div4[@type='Enunc']")
+                if enunc_div is not None:
+                    enunc_p = enunc_div.find('p')
+                    if enunc_p is not None:
+                        enunc_text = convert_inline_xml_to_rst(enunc_p)
+                        entry_content_rst.append(format_as_blockquote(enunc_text))
+                else:
+                    # If no Enunc div4, treat the first p as enunciation
+                    first_p = div3.find('p')
+                    if first_p is not None:
+                        enunc_text = convert_inline_xml_to_rst(first_p)
+                        entry_content_rst.append(format_as_blockquote(enunc_text))
+                        # To avoid processing it again, we can remove it or set a flag.
+                        # For simplicity, we'll just be careful in the loop below.
+                
+                # Process remaining elements
+                is_first_p = True
                 for child in div3:
                     if child.tag == 'head':
                         continue
-                    elif child.tag == 'div4':
+
+                    # Skip the enunciation div4 if it exists
+                    if child.tag == 'div4' and child.attrib.get('type') == 'Enunc':
+                        continue
+                    
+                    # Skip the first p if it was used as enunciation
+                    if child.tag == 'p' and is_first_p and enunc_div is None:
+                        is_first_p = False
+                        continue
+                    is_first_p = False
+
+                    if child.tag == 'div4':
                         div4_type = child.attrib.get('type')
-                        if div4_type == 'Enunc':
-                            entry_content_rst.append("\n**Enunciation.**\n")
-                        elif div4_type == 'Proof':
+                        if div4_type == 'Proof':
                             entry_content_rst.append("\n**Proof.**\n")
                         elif div4_type == 'QED':
                             entry_content_rst.append("\n**Q. E. D.**\n")
                         
-                        # Process content within div4 (which are typically p tags)
+                        # Process content within div4
                         div4_inner_content = []
                         for grand_child in child:
                             if grand_child.tag == 'p':
@@ -191,7 +231,7 @@ def parse_book_xml(file_path):
                                 if inline_rst:
                                     div4_inner_content.append(inline_rst)
                             elif grand_child.tag == 'figure':
-                                div4_inner_content.append("\n.. figure:: /_images/placeholder.png\n   :alt: Figure placeholder\n\n")
+                                div4_inner_content.append("\n.. figure:: /_images/placeholder.png\n   :alt: Figure placeholder\n")
                             elif grand_child.tag == 'hi' and grand_child.attrib.get('rend') == 'center':
                                 content = ''.join(grand_child.itertext()).strip()
                                 if content:
@@ -208,46 +248,45 @@ def parse_book_xml(file_path):
                         paragraph_rst_blocks = []
                         current_inline_parts = []
 
-                        # Process text before any child tags
+                        def flush_inline_parts():
+                            nonlocal current_inline_parts
+                            if not current_inline_parts:
+                                return
+                            full_text = "".join(current_inline_parts)
+                            lines = full_text.split('\n')
+                            cleaned_lines = [re.sub(r'\s+', ' ', line).strip() for line in lines]
+                            final_text = "\n".join(line for line in cleaned_lines if line)
+                            if final_text:
+                                paragraph_rst_blocks.append(final_text)
+                            current_inline_parts = []
+
                         if child.text:
-                            current_inline_parts.append(child.text.strip())
+                            current_inline_parts.append(child.text)
 
                         for grand_child in child:
                             if grand_child.tag == 'figure':
-                                # Add any accumulated inline text as a block
-                                if current_inline_parts:
-                                    paragraph_rst_blocks.append("\n".join(filter(None, current_inline_parts)).strip())
-                                    current_inline_parts = []
-                                paragraph_rst_blocks.append("\n\n.. figure:: /_images/placeholder.png\n   :alt: Figure placeholder\n\n\n")
+                                flush_inline_parts()
+                                paragraph_rst_blocks.append("\n.. figure:: /_images/placeholder.png\n   :alt: Figure placeholder\n")
                             elif grand_child.tag == 'hi' and grand_child.attrib.get('rend') == 'center':
-                                # Add any accumulated inline text as a block
-                                if current_inline_parts:
-                                    paragraph_rst_blocks.append("\n".join(filter(None, current_inline_parts)).strip())
-                                    current_inline_parts = []
+                                flush_inline_parts()
                                 content = convert_inline_xml_to_rst(grand_child)
                                 if content:
-                                    # Ensure content itself is properly indented for the container
-                                    indented_content = "\\n   ".join(content.splitlines())
-                                    paragraph_rst_blocks.append(f"\n\n.. container:: center\n\n   {indented_content}\n\n\n")
+                                    indented_content = "\n   ".join(content.splitlines())
+                                    paragraph_rst_blocks.append(f"\n.. container:: center\n\n   {indented_content}\n")
                             else:
-                                # For other inline children, convert them and add to current inline parts
                                 inline_rst = convert_inline_xml_to_rst(grand_child)
                                 if inline_rst:
                                     current_inline_parts.append(inline_rst)
                             
-                            # Add tail text after processing child
                             if grand_child.tail:
-                                current_inline_parts.append(grand_child.tail.strip())
+                                current_inline_parts.append(grand_child.tail)
                         
-                        # Add any remaining accumulated inline text as a final block
-                        if current_inline_parts:
-                            paragraph_rst_blocks.append("\n".join(filter(None, current_inline_parts)).strip())
+                        flush_inline_parts()
 
                         if paragraph_rst_blocks:
-                            # Join blocks with double newlines for proper RST block separation
-                            entry_content_rst.append("\n\n".join(filter(None, paragraph_rst_blocks)))
+                            entry_content_rst.append("\n\n".join(paragraph_rst_blocks))
                     elif child.tag == 'figure':
-                        entry_content_rst.append("\n.. figure:: /_images/placeholder.png\n   :alt: Figure placeholder\n\n")
+                        entry_content_rst.append("\n.. figure:: /_images/placeholder.png\n   :alt: Figure placeholder\n")
                     elif child.tag == 'hi' and child.attrib.get('rend') == 'center':
                         content = ''.join(child.itertext()).strip()
                         if content:
@@ -260,13 +299,14 @@ def parse_book_xml(file_path):
                             entry_content_rst.append(inline_rst)
 
 
+
                 section_data["entries"].append({
                     "id": entry_id,
                     "n": entry_n,
                     "title": entry_title,
                     "canonical_ref": canonical_ref,
                     "folder_name": folder_name,
-                    "content_rst": "\n\n".join(filter(None, entry_content_rst)).strip(),
+                    "content_rst": "\n\n".join(filter(None, entry_content_rst)),
                     "order": entry_n,
                     "number": entry_number,
                 })
@@ -316,7 +356,7 @@ def main():
     print("RST transformation tool")
     output_dir = "docsrc/elements2"
     
-    for i in range(1, 2):
+    for i in range(1, 3):
         xml_file_path = f"resources/xml/books/{i:02d}.xml"
         if os.path.exists(xml_file_path):
             book_data = parse_book_xml(xml_file_path)
@@ -333,7 +373,7 @@ def main():
         ".. toctree::",
         "   :maxdepth: 1\n"
     ]
-    for i in range(1, 2):
+    for i in range(1, 3):
         book_roman = ROMAN_NUMERALS.get(str(i))
         if book_roman:
             main_index_content.append(f"   {book_roman}/index.rst")

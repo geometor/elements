@@ -6,10 +6,7 @@
 I.10
 ====
 
-**Enunciation.**
-
-
-To bisect a given finite straight line.
+   To bisect a given finite straight line.
 
 
 **Proof.**
@@ -24,7 +21,7 @@ Let the equilateral triangle ``ABC`` be constructed on it, [ :ref:`I.1` ] and le
 I say that the straight line ``AB`` has been bisected at the point ``D`` .
 
 For, since ``AC`` is equal to ``CB`` , and ``CD`` is common,
-the two sides AC, CD are equal to the two sides BC, CD respectively; and the angle ``ACD`` is equal to the angle ``BCD`` ; therefore the base AD is equal to the base BD. [I. 4]
+the two sides ``AC`` , ``CD`` are equal to the two sides ``BC`` , ``CD`` respectively; and the angle ``ACD`` is equal to the angle ``BCD`` ; therefore the base ``AD`` is equal to the base ``BD`` . [ :ref:`I.4` ]
 
 Therefore the given finite straight line ``AB`` has been bisected at ``D`` .
 

@@ -6,10 +6,7 @@
 I.12
 ====
 
-**Enunciation.**
-
-
-To a given infinite straight line, from a given point which is not on it, to draw a perpendicular straight line.
+   To a given infinite straight line, from a given point which is not on it, to draw a perpendicular straight line.
 
 
 **Proof.**
@@ -20,14 +17,15 @@ thus it is required to draw to the given infinite straight line ``AB`` , from th
 
 For let a point ``D`` be taken
 at random on the other side of the straight line ``AB`` , and with centre ``C`` and distance ``CD`` let the circle ``EFG`` be described; [ :ref:`I.post.3` ]
-let the straight line EG
-be bisected at H, [I. 10] and let the straight lines CG, CH, CE be joined. [Post. 1]
+let the straight line ``EG``
+
+be bisected at ``H`` , [ :ref:`I.10` ] and let the straight lines ``CG`` , ``CH`` , ``CE`` be joined. [ :ref:`I.post.1` ]
 
 I say that ``CH`` has been drawn perpendicular to the given infinite straight line ``AB`` from the given point ``C`` which is not on it.
 
 
-For, since ``GH`` is equal to ``HE`` , and ``HC`` is common, the two sides GH, HC are equal to the two sides EH, HC respectively; and the base ``CG`` is equal to the base ``CE`` ;
-therefore the angle CHG is equal to the angle EHC. [I. 8] And they are adjacent angles.
+For, since ``GH`` is equal to ``HE`` , and ``HC`` is common, the two sides ``GH`` , ``HC`` are equal to the two sides ``EH`` , ``HC`` respectively; and the base ``CG`` is equal to the base ``CE`` ;
+therefore the angle ``CHG`` is equal to the angle ``EHC`` . [ :ref:`I.8` ] And they are adjacent angles.
 
 But, when a straight line set up on a straight line makes the adjacent angles equal to one another, each of the equal angles is right, and the straight line standing on the other is
 called a perpendicular to that on which it stands. [ :ref:`I.def.10` ]

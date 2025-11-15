@@ -6,4 +6,4 @@
 I.post.4
 ========
 
-That all right angles are equal to one another.
+   That all right angles are equal to one another.

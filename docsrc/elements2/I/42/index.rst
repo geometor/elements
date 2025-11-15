@@ -6,10 +6,7 @@
 I.42
 ====
 
-**Enunciation.**
-
-
-To construct, in a given rectilineal angle, a parallelogram equal to a given triangle.
+   To construct, in a given rectilineal angle, a parallelogram equal to a given triangle.
 
 
 **Proof.**
@@ -21,10 +18,10 @@ Let ``BC`` be bisected at ``E`` , and let ``AE`` be joined; on the straight line
 
 Then ``FECG`` is a parallelogram.
 
-And, since ``BE`` is equal to ``EC`` , the triangle ABE is also equal to the triangle AEC, for they are on equal bases BE, EC and in the same parallels BC, AG; [I. 38] therefore the triangle ABC is double of the triangle AEC.
+And, since ``BE`` is equal to ``EC`` , the triangle ``ABE`` is also equal to the triangle ``AEC`` , for they are on equal bases ``BE`` , ``EC`` and in the same parallels ``BC`` , ``AG`` ; [ :ref:`I.38` ] therefore the triangle ``ABC`` is double of the triangle ``AEC`` .
 
 
-But the parallelogram ``FECG`` is also double of the triangle ``AEC`` , for it has the same base with it and is in the same parallels with it; [ :ref:`I.41` ] therefore the parallelogram FECG is equal to the triangle ABC.
+But the parallelogram ``FECG`` is also double of the triangle ``AEC`` , for it has the same base with it and is in the same parallels with it; [ :ref:`I.41` ] therefore the parallelogram ``FECG`` is equal to the triangle ``ABC`` .
 
 And it has the angle ``CEF`` equal to the given angle ``D`` .
 

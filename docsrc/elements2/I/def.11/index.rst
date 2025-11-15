@@ -6,6 +6,4 @@
 I.def.11
 ========
 
-An
-obtuse angle
-is an angle greater than a right angle.
+   An **obtuse angle** is an angle greater than a right angle.

@@ -6,10 +6,7 @@
 I.18
 ====
 
-**Enunciation.**
-
-
-In any triangle the greater side subtends the greater angle.
+   In any triangle the greater side subtends the greater angle.
 
 
 **Proof.**
@@ -25,7 +22,7 @@ Then, since the angle ``ADB`` is an exterior angle of the triangle ``BCD`` ,
 
 it is greater than the interior and opposite angle ``DCB`` . [ :ref:`I.16` ]
 
-But the angle ``ADB`` is equal to the angle ``ABD`` , since the side AB is equal to AD; therefore the angle ABD is also greater than the angle ACB; therefore the angle ABC is much greater than the angle ACB.
+But the angle ``ADB`` is equal to the angle ``ABD`` , since the side ``AB`` is equal to ``AD`` ; therefore the angle ``ABD`` is also greater than the angle ``ACB`` ; therefore the angle ``ABC`` is much greater than the angle ``ACB`` .
 
 Therefore etc.
 

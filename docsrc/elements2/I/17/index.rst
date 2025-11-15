@@ -6,10 +6,7 @@
 I.17
 ====
 
-**Enunciation.**
-
-
-In any triangle two angles taken together in any manner are less than two right angles.
+   In any triangle two angles taken together in any manner are less than two right angles.
 
 
 **Proof.**
@@ -21,7 +18,7 @@ For let ``BC`` be produced to ``D`` . [ :ref:`I.post.2` ]
 
 Then, since the angle ``ACD`` is an exterior angle of the triangle ``ABC`` ,
 
-it is greater than the interior and opposite angle ``ABC`` . [ :ref:`I.16` ] Let the angle ACB be added to each; therefore the angles ``ACD`` , ``ACB`` are greater than the angles ``ABC`` , ``BCA`` . But the angles ``ACD`` , ``ACB`` are equal to two right angles. [ :ref:`I.13` ]
+it is greater than the interior and opposite angle ``ABC`` . [ :ref:`I.16` ] Let the angle ``ACB`` be added to each; therefore the angles ``ACD`` , ``ACB`` are greater than the angles ``ABC`` , ``BCA`` . But the angles ``ACD`` , ``ACB`` are equal to two right angles. [ :ref:`I.13` ]
 
 Therefore the angles ``ABC`` , ``BCA`` are less than two right angles.
 

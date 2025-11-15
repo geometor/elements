@@ -6,10 +6,7 @@
 I.16
 ====
 
-**Enunciation.**
-
-
-In any triangle, if one of the sides be produced, the exterior angle is greater than either of the interior and opposite angles.
+   In any triangle, if one of the sides be produced, the exterior angle is greater than either of the interior and opposite angles.
 
 
 **Proof.**
@@ -26,11 +23,12 @@ in a straight line to ``F`` ;
 let ``EF`` be made equal to ``BE`` [ :ref:`I.3` ], let ``FC`` be joined [ :ref:`I.post.1` ], and let ``AC`` be drawn through to ``G`` [ :ref:`I.post.2` ].
 
 Then, since ``AE`` is equal to ``EC`` ,
-and ``BE`` to ``EF`` , the two sides AE, EB are equal to the two sides CE, EF respectively; and the angle AEB is equal to the angle FEC, for they are vertical angles. [I. 15] Therefore the base AB is equal to the base FC, and the triangle ABE is equal to the triangle CFE, and the remaining angles are equal to the remaining angles respectively, namely those which the equal sides subtend; [I. 4] therefore the angle BAE is equal to the angle ECF.
+and ``BE`` to ``EF`` , the two sides ``AE`` , ``EB`` are equal to the two sides ``CE`` , ``EF`` respectively; and the angle ``AEB`` is equal to the angle ``FEC`` , for they are vertical angles. [ :ref:`I.15` ]
+Therefore the base ``AB`` is equal to the base ``FC`` , and the triangle ``ABE`` is equal to the triangle ``CFE`` , and the remaining angles are equal to the remaining angles respectively, namely those which the equal sides subtend; [ :ref:`I.4` ] therefore the angle ``BAE`` is equal to the angle ``ECF`` .
 
 
 
-But the angle ``ECD`` is greater than the angle ``ECF`` ; [ C. N . 5] therefore the angle ACD is greater than the angle BAE.
+But the angle ``ECD`` is greater than the angle ``ECF`` ; [ C. N . 5] therefore the angle ``ACD`` is greater than the angle ``BAE`` .
 
 Similarly also, if ``BC`` be bisected, the angle ``BCG`` , that is, the angle ``ACD`` [ :ref:`I.15` ], can be proved greater than the angle ``ABC`` as well.
 

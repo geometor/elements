@@ -6,43 +6,13 @@
 II.13
 =====
 
-In acute-angled triangles the square on the side subtending the acute angle is less than the squares on the sides containing the acute angle by twice the rectangle contained by one of the sides about the acute angle
-,
-namely that on which the perpendicular falls
-,
-and the straight line cut off within by the perpendicular towards the acutc angle
-.
+   ``In acute-angled triangles the square on the side subtending the acute angle is less than the squares on the sides containing the acute angle by twice the rectangle contained by one of the sides about the acute angle`` , ``namely that on which the perpendicular falls`` , ``and the straight line cut off within by the perpendicular towards the acutc angle`` .
 
-Let
-ABC
-be an acute-angled triangle having the angle at
-B
-acute, and let
-AD
-be drawn from the point
-A
-perpendicular to
-BC
-;
+Let ABC be an acute-angled triangle having the angle at B acute, and let AD be drawn from the point A perpendicular to BC;
 
-I say that the square on
-AC
-is less than the squares on
-CB
-,
-BA
-by twice the rectangle contained by
-CB
-,
-BD
-.
+I say that the square on AC is less than the squares on CB, BA by twice the rectangle contained by CB, BD.
 
-For, since the straight line
-CB
-has been cut at random at
-D
-,
-
+For, since the straight line CB has been cut at random at D,
 
 
 .. container:: center
@@ -51,71 +21,14 @@ D
 
 
 
-
-
-
 .. figure:: /_images/placeholder.png
    :alt: Figure placeholder
 
 
+Let the square on DA be added to each; therefore the squares on CB, BD, DA are equal to twice the rectangle contained by CB, BD and the squares on AD, DC.
 
+But the square on AB is equal to the squares on BD, DA, for the angle at D is right; [I. 47] and the square on AC is equal to the squares on AD, DC; therefore the squares on CB, BA are equal to the square on AC and twice the rectangle CB, BD,
 
-Let the square on
-DA
-be added to each; therefore the squares on
-CB
-,
-BD
-,
-DA
-are equal to twice the rectangle contained by
-CB
-,
-BD
-and the squares on
-AD
-,
-DC
-.
-
-But the square on
-AB
-is equal to the squares on
-BD
-,
-DA
-, for the angle at
-D
-is right; [
-I. 47
-] and the square on
-AC
-is equal to the squares on
-AD
-,
-DC
-; therefore the squares on
-CB
-,
-BA
-are equal to the square on
-AC
-and twice the rectangle
-CB
-,
-BD
-,
-
-so that the square on
-AC
-alone is less than the squares on
-CB
-,
-BA
-by twice the rectangle contained by
-CB
-,
-BD
-.
+so that the square on AC alone is less than the squares on CB, BA by twice the rectangle contained by CB, BD.
 
 Therefore etc. Q. E. D.

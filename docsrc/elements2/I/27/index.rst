@@ -6,10 +6,7 @@
 I.27
 ====
 
-**Enunciation.**
-
-
-If a straight line falling on two straight lines make the alternate angles equal to one another, the straight lines will be parallel to one another.
+   If a straight line falling on two straight lines make the alternate angles equal to one another, the straight lines will be parallel to one another.
 
 
 **Proof.**
@@ -33,7 +30,7 @@ Therefore ``AB`` , ``CD`` when produced will not meet in the direction of ``B`` 
 Similarly it can be proved that neither will they meet
 towards ``A`` , ``C`` .
 
-But straight lines which do not meet in either direction are parallel; [ :ref:`I.def.23` ] therefore AB is parallel to CD.
+But straight lines which do not meet in either direction are parallel; [ :ref:`I.def.23` ] therefore ``AB`` is parallel to ``CD`` .
 
 Therefore etc.
 

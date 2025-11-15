@@ -6,6 +6,6 @@
 I.def.16
 ========
 
-And the point is called the
-centre
-of the circle.
+   And the point is called the **centre** of the circle.
+
+And the point is called the **centre** of the circle.

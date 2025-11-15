@@ -1,6 +1,20 @@
 changelog
 =========
 
+0.0.5
+-----
+*2025-11-15*
+
+**fixed**
+
+.. + Fixed XML parsing for nested tags within `<hi>` elements.
+.. + Corrected handling of `<term>` elements to ensure proper bolding.
+.. + Standardized enunciation formatting as blockquotes for Books I and II.
+
+**added**
+
+.. + Added Book II to the RST generation test suite.
+
 0.0.4
 -----
 *2025-11-15*

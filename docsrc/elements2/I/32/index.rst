@@ -6,10 +6,7 @@
 I.32
 ====
 
-**Enunciation.**
-
-
-In any triangle, if one of the sides be produced, the exterior angle is equal to the two interior and opposite angles, and the three interior angles of the triangle are equal to two right angles.
+   In any triangle, if one of the sides be produced, the exterior angle is equal to the two interior and opposite angles, and the three interior angles of the triangle are equal to two right angles.
 
 
 **Proof.**
@@ -21,16 +18,16 @@ I say that the exterior angle ``ACD`` is equal to the two interior and opposite 
 
 For let ``CE`` be drawn through the point ``C`` parallel to the straight line ``AB`` . [ :ref:`I.31` ]
 
-Then, since ``AB`` is parallel to ``CE`` , and AC has fallen upon them, the alternate angles BAC, ACE are equal to one another. [I. 29]
+Then, since ``AB`` is parallel to ``CE`` , and ``AC`` has fallen upon them, the alternate angles ``BAC`` , ``ACE`` are equal to one another. [ :ref:`I.29` ]
 
 
-Again, since ``AB`` is parallel to ``CE`` , and the straight line BD has fallen upon them, the exterior angle ``ECD`` is equal to the interior and opposite angle ``ABC`` . [ :ref:`I.29` ]
+Again, since ``AB`` is parallel to ``CE`` , and the straight line ``BD`` has fallen upon them, the exterior angle ``ECD`` is equal to the interior and opposite angle ``ABC`` . [ :ref:`I.29` ]
 
-But the angle ``ACE`` was also proved equal to the angle ``BAC`` ; therefore the whole angle ACD is equal to the two interior and opposite angles BAC, ABC.
+But the angle ``ACE`` was also proved equal to the angle ``BAC`` ; therefore the whole angle ``ACD`` is equal to the two interior and opposite angles ``BAC`` , ``ABC`` .
 
-Let the angle ``ACB`` be added to each; therefore the angles ACD, ACB are equal to the three angles ABC, BCA, CAB.
+Let the angle ``ACB`` be added to each; therefore the angles ``ACD`` , ``ACB`` are equal to the three angles ``ABC`` , ``BCA`` , ``CAB`` .
 
-But the angles ``ACD`` , ``ACB`` are equal to two right angles; [ :ref:`I.13` ] therefore the angles ABC, BCA, CAB are also equal to two right angles.
+But the angles ``ACD`` , ``ACB`` are equal to two right angles; [ :ref:`I.13` ] therefore the angles ``ABC`` , ``BCA`` , ``CAB`` are also equal to two right angles.
 
 Therefore etc.
 

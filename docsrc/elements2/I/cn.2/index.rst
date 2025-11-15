@@ -6,4 +6,4 @@
 I.cn.2
 ======
 
-If equals be added to equals, the wholes are equal.
+   If equals be added to equals, the wholes are equal.

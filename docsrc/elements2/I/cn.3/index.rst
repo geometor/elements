@@ -6,4 +6,4 @@
 I.cn.3
 ======
 
-If equals be subtracted from equals, the remainders are equal.
+   If equals be subtracted from equals, the remainders are equal.

@@ -6,6 +6,6 @@
 I.post.1
 ========
 
-Let the following be postulated:
+   Let the following be postulated:
 
 To draw a straight line from any point to any point.

@@ -6,10 +6,7 @@
 I.39
 ====
 
-**Enunciation.**
-
-
-Equal triangles which are on the same base and on the same side are also in the same parallels.
+   Equal triangles which are on the same base and on the same side are also in the same parallels.
 
 
 **Proof.**
@@ -26,12 +23,12 @@ For, if not, let ``AE`` be drawn through the point ``A`` parallel to the straigh
 Therefore the triangle ``ABC`` is equal to the triangle ``EBC`` ; for it is on the same base ``BC`` with it and in the same
 parallels. [ :ref:`I.37` ]
 
-But ``ABC`` is equal to ``DBC`` ; therefore DBC is also equal to EBC, [C.N. 1] the greater to the less: which is impossible.
+But ``ABC`` is equal to ``DBC`` ; therefore ``DBC`` is also equal to ``EBC`` , [ :ref:`I.cn.1` ] the greater to the less: which is impossible.
 
 Therefore ``AE`` is not parallel to ``BC`` .
 
 
-Similarly we can prove that neither is any other straight line except ``AD`` ; therefore AD is parallel to BC.
+Similarly we can prove that neither is any other straight line except ``AD`` ; therefore ``AD`` is parallel to ``BC`` .
 
 Therefore etc.
 

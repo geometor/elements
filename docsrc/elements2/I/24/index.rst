@@ -6,11 +6,7 @@
 I.24
 ====
 
-**Enunciation.**
-
-
-If two triangles have the two sides equal to two sides respectively, but have the one of the angles contained by the equal straight lines greater than the other, they will also have the base greater than the base.
-
+   If two triangles have the two sides equal to two sides respectively, but have the one of the angles contained by the equal straight lines greater than the other, they will also have the base greater than the base.
 
 
 **Proof.**
@@ -27,18 +23,18 @@ equal to the angle ``BAC`` ; [ :ref:`I.23` ] let ``DG`` be made equal to either 
 
 
 Then, since ``AB`` is equal to ``DE`` , and ``AC`` to ``DG`` ,
-the two sides ``BA`` , ``AC`` are equal to the two sides ``ED`` , ``DG`` , respectively; and the angle BAC is equal to the angle EDG; therefore the base BC is equal to the base EG. [I. 4]
+the two sides ``BA`` , ``AC`` are equal to the two sides ``ED`` , ``DG`` , respectively; and the angle ``BAC`` is equal to the angle ``EDG`` ; therefore the base ``BC`` is equal to the base ``EG`` . [ :ref:`I.4` ]
 
 Again, since ``DF`` is equal to ``DG`` ,
-the angle DGF is also equal to the angle DFG; [I. 5] therefore the angle DFG is greater than the angle EGF.
+the angle ``DGF`` is also equal to the angle ``DFG`` ; [ :ref:`I.5` ] therefore the angle ``DFG`` is greater than the angle ``EGF`` .
 
 Therefore the angle ``EFG`` is much greater than the angle ``EGF`` .
 
 And, since ``EFG`` is a triangle having the angle ``EFG``
 
-greater than the angle ``EGF`` , and the greater angle is subtended by the greater side, [I. 19] the side EG is also greater than EF.
+greater than the angle ``EGF`` , and the greater angle is subtended by the greater side, [ :ref:`I.19` ] the side ``EG`` is also greater than ``EF`` .
 
-But ``EG`` is equal to ``BC`` . Therefore BC is also greater than EF.
+But ``EG`` is equal to ``BC`` . Therefore ``BC`` is also greater than ``EF`` .
 
 
 

@@ -6,10 +6,7 @@
 I.19
 ====
 
-**Enunciation.**
-
-
-In any triangle the greater angle is subtended by the greater side.
+   In any triangle the greater angle is subtended by the greater side.
 
 
 **Proof.**
@@ -22,11 +19,11 @@ I say that the side ``AC`` is also greater than the side ``AB`` .
 For, if not, ``AC`` is either equal to ``AB`` or less.
 
 Now ``AC`` is not equal to ``AB`` ; for then the angle ``ABC`` would also have been equal to the angle ``ACB`` ; [ :ref:`I.5` ] but it is not;
-therefore AC is not equal to AB.
+therefore ``AC`` is not equal to ``AB`` .
 
-Neither is ``AC`` less than ``AB`` , for then the angle ``ABC`` would also have been less than the angle ``ACB`` ; [ :ref:`I.18` ] but it is not; therefore AC is not less than AB.
+Neither is ``AC`` less than ``AB`` , for then the angle ``ABC`` would also have been less than the angle ``ACB`` ; [ :ref:`I.18` ] but it is not; therefore ``AC`` is not less than ``AB`` .
 
-And it was proved that it is not equal either. Therefore AC is greater than AB.
+And it was proved that it is not equal either. Therefore ``AC`` is greater than ``AB`` .
 
 Therefore etc.
 

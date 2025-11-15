@@ -6,10 +6,7 @@
 I.41
 ====
 
-**Enunciation.**
-
-
-If a parallelogram have the same base with a triangle and be in the same parallels, the parallelogram is double of the triangle.
+   If a parallelogram have the same base with a triangle and be in the same parallels, the parallelogram is double of the triangle.
 
 
 **Proof.**
@@ -23,7 +20,7 @@ For let ``AC`` be joined.
 
 Then the triangle ``ABC`` is equal to the triangle ``EBC`` ; for it is on the same base ``BC`` with it and in the same parallels ``BC`` , ``AE`` . [ :ref:`I.37` ]
 
-But the parallelogram ``ABCD`` is double of the triangle ``ABC`` ; for the diameter AC bisects it; [I. 34] so that the parallelogram ``ABCD`` is also double of the triangle ``EBC`` .
+But the parallelogram ``ABCD`` is double of the triangle ``ABC`` ; for the diameter ``AC`` bisects it; [ :ref:`I.34` ] so that the parallelogram ``ABCD`` is also double of the triangle ``EBC`` .
 
 Therefore etc.
 

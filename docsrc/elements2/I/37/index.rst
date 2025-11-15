@@ -6,10 +6,7 @@
 I.37
 ====
 
-**Enunciation.**
-
-
-Triangles which are on the same base and in the same parallels are equal to one another.
+   Triangles which are on the same base and in the same parallels are equal to one another.
 
 
 **Proof.**

@@ -6,4 +6,4 @@
 I.def.6
 =======
 
-The extremities of a surface are lines.
+   The extremities of a surface are lines.

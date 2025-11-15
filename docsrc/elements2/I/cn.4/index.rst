@@ -6,4 +6,4 @@
 I.cn.4
 ======
 
-[7] Things which coincide with one another are equal to one another.
+   [7] Things which coincide with one another are equal to one another.

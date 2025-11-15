@@ -6,10 +6,7 @@
 I.46
 ====
 
-**Enunciation.**
-
-
-On a given straight line to describe a square.
+   On a given straight line to describe a square.
 
 
 **Proof.**
@@ -22,20 +19,20 @@ Let ``AB`` be the given straight line; thus it is required to describe a square 
 Let ``AC`` be drawn at right angles to the straight line ``AB`` from the point ``A`` on it [ :ref:`I.11` ], and let ``AD`` be made equal to ``AB`` ; through the point ``D`` let ``DE`` be drawn
 parallel to ``AB`` , and through the point ``B`` let ``BE`` be drawn parallel to ``AD`` . [ :ref:`I.31` ]
 
-Therefore ``ADEB`` is a parallelogram; therefore AB is equal to DE, and AD to BE. [I. 34]
+Therefore ``ADEB`` is a parallelogram; therefore ``AB`` is equal to ``DE`` , and ``AD`` to ``BE`` . [ :ref:`I.34` ]
 
 But ``AB`` is equal to ``AD`` ;
-therefore the four straight lines BA, AD, DE, EB are equal to one another; therefore the parallelogram ``ADEB`` is equilateral.
+therefore the four straight lines ``BA`` , ``AD`` , ``DE`` , ``EB`` are equal to one another; therefore the parallelogram ``ADEB`` is equilateral.
 
 I say next that it is also right-angled.
 
 For, since the straight line ``AD`` falls upon the parallels
-``AB`` , ``DE`` , the angles BAD, ADE are equal to two right angles. [I. 29]
+``AB`` , ``DE`` , the angles ``BAD`` , ``ADE`` are equal to two right angles. [ :ref:`I.29` ]
 
-But the angle ``BAD`` is right; therefore the angle ADE is also right.
+But the angle ``BAD`` is right; therefore the angle ``ADE`` is also right.
 
 And in parallelogrammic areas the opposite sides and
-angles are equal to one another; [ :ref:`I.34` ] therefore each of the opposite angles ABE, BED is also right. Therefore ADEB is right-angled.
+angles are equal to one another; [ :ref:`I.34` ] therefore each of the opposite angles ``ABE`` , ``BED`` is also right. Therefore ``ADEB`` is right-angled.
 
 And it was also proved equilateral.
 

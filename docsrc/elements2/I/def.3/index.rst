@@ -6,4 +6,4 @@
 I.def.3
 =======
 
-The extremities of a line are points.
+   The extremities of a line are points.

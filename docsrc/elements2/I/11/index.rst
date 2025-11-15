@@ -6,10 +6,7 @@
 I.11
 ====
 
-**Enunciation.**
-
-
-To draw a straight line at right angles to a given straight line from a given point on it.
+   To draw a straight line at right angles to a given straight line from a given point on it.
 
 
 **Proof.**
@@ -26,10 +23,11 @@ let ``CE`` be made equal to ``CD`` ; [ :ref:`I.3` ] on ``DE`` let the equilatera
 I say that the straight line ``FC`` has been drawn at right
 angles to the given straight line ``AB`` from ``C`` the given point on it.
 
-For, since ``DC`` is equal to ``CE`` , and ``CF`` is common, the two sides DC, CF are equal to the two sides EC, CF respectively; and the base ``DF`` is equal to the base ``FE`` ; therefore the angle DCF is equal to the angle ECF; [I. 8] and they are adjacent angles.
+For, since ``DC`` is equal to ``CE`` , and ``CF`` is common, the two sides ``DC`` , ``CF`` are equal to the two sides ``EC`` ,
+``CF`` respectively; and the base ``DF`` is equal to the base ``FE`` ; therefore the angle ``DCF`` is equal to the angle ``ECF`` ; [ :ref:`I.8` ] and they are adjacent angles.
 
 But, when a straight line set up on a straight line makes
-the adjacent angles equal to one another, each of the equal angles is right; [ :ref:`I.def.10` ] therefore each of the angles DCF, FCE is right.
+the adjacent angles equal to one another, each of the equal angles is right; [ :ref:`I.def.10` ] therefore each of the angles ``DCF`` , ``FCE`` is right.
 
 Therefore the straight line ``CF`` has been drawn at right angles to the given straight line ``AB`` from the given point
 ``C`` on it.

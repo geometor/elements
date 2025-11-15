@@ -6,10 +6,7 @@
 I.9
 ===
 
-**Enunciation.**
-
-
-To bisect a given rectilineal angle.
+   To bisect a given rectilineal angle.
 
 
 **Proof.**
@@ -23,9 +20,9 @@ Let a point ``D`` be taken at random on ``AB`` ; let ``AE`` be cut off from ``AC
 
 I say that the angle ``BAC`` has been bisected by the straight line ``AF`` .
 
-For, since ``AD`` is equal to ``AE`` , and ``AF`` is common, the two sides DA, AF are equal to the two sides EA, AF respectively.
+For, since ``AD`` is equal to ``AE`` , and ``AF`` is common, the two sides ``DA`` , ``AF`` are equal to the two sides ``EA`` , ``AF`` respectively.
 
-And the base ``DF`` is equal to the base ``EF`` ; therefore the angle DAF is equal to the angle EAF. [I. 8]
+And the base ``DF`` is equal to the base ``EF`` ; therefore the angle ``DAF`` is equal to the angle ``EAF`` . [ :ref:`I.8` ]
 
 Therefore the given rectilineal angle ``BAC`` has been bisected by the straight line ``AF`` .
 

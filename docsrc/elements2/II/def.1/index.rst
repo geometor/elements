@@ -6,6 +6,4 @@
 II.def.1
 ========
 
-Any rectangular parallelogram is said to be
-contained
-by the two straight lines containing the right angle.
+   Any rectangular parallelogram is said to be contained by the two straight lines containing the right angle.

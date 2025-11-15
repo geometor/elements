@@ -6,10 +6,7 @@
 I.36
 ====
 
-**Enunciation.**
-
-
-Parallelograms which are on equal bases and in the same parallels are equal to one another.
+   Parallelograms which are on equal bases and in the same parallels are equal to one another.
 
 
 **Proof.**
@@ -19,7 +16,7 @@ Let ``ABCD`` , ``EFGH`` be parallelograms which are on equal bases ``BC`` , ``FG
 
 For let ``BE`` , ``CH`` be joined.
 
-Then, since ``BC`` is equal to ``FG`` while ``FG`` is equal to ``EH`` , BC is also equal to EH. [C.N. 1]
+Then, since ``BC`` is equal to ``FG`` while ``FG`` is equal to ``EH`` , ``BC`` is also equal to ``EH`` . [ :ref:`I.cn.1` ]
 
 But they are also parallel.
 

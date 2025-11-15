@@ -6,6 +6,4 @@
 I.def.12
 ========
 
-An
-acute angle
-is an angle less than a right angle.
+   An **acute angle** is an angle less than a right angle.

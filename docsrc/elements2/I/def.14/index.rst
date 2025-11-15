@@ -6,6 +6,4 @@
 I.def.14
 ========
 
-A
-figure
-is that which is contained by any boundary or boundaries.
+   A **figure** is that which is contained by any boundary or boundaries.

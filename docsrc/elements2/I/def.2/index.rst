@@ -6,6 +6,4 @@
 I.def.2
 =======
 
-A
-line
-is breadthless length.
+   A **line** is breadthless length.

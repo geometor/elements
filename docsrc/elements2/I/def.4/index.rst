@@ -6,6 +6,4 @@
 I.def.4
 =======
 
-A
-straight line
-is a line which lies evenly with the points on itself.
+   A **straight line** is a line which lies evenly with the points on itself.

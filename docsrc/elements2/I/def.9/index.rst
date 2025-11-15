@@ -6,6 +6,4 @@
 I.def.9
 =======
 
-And when the lines containing the angle are straight, the angle is called
-rectilineal
-.
+   And when the lines containing the angle are straight, the angle is called **rectilineal** .

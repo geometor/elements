@@ -6,6 +6,4 @@
 I.def.1
 =======
 
-A
-point
-is that which has no part.
+   A **point** is that which has no part.

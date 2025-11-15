@@ -6,6 +6,4 @@
 I.def.13
 ========
 
-A
-boundary
-is that which is an extremity of anything.
+   A **boundary** is that which is an extremity of anything.
