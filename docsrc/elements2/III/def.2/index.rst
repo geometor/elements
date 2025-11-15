@@ -6,6 +6,4 @@
 III.def.2
 =========
 
-A straight line is said to
-touch a circle
-which, meeting the circle and being produced, does not cut the circle.
+   A straight line is said to touch a circle which, meeting the circle and being produced, does not cut the circle.

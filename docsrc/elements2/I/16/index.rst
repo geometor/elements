@@ -12,25 +12,25 @@ I.16
 **Proof.**
 
 
-Let ``ABC`` be a triangle, and let one side of it ``BC`` be produced to ``D`` ;
+Let ``ABC`` be a triangle, and let one side of it ``BC`` be produced to ``D``; 
 
 
-I say that the exterior angle ``ACD`` is greater than either of the interior and opposite angles ``CBA`` , ``BAC`` .
+I say that the exterior angle ``ACD`` is greater than either of the interior and opposite angles ``CBA``, ``BAC``.
 
-Let ``AC`` be bisected at ``E`` [ :ref:`I.10` ], and let ``BE`` be joined and produced
-in a straight line to ``F`` ;
+Let ``AC`` be bisected at ``E`` [:ref:`I.10`], and let ``BE`` be joined and produced 
+in a straight line to ``F``; 
 
-let ``EF`` be made equal to ``BE`` [ :ref:`I.3` ], let ``FC`` be joined [ :ref:`I.post.1` ], and let ``AC`` be drawn through to ``G`` [ :ref:`I.post.2` ].
+let ``EF`` be made equal to ``BE``[:ref:`I.3`], let ``FC`` be joined [:ref:`I.post.1`], and let ``AC`` be drawn through to ``G`` [:ref:`I.post.2`].
 
-Then, since ``AE`` is equal to ``EC`` ,
-and ``BE`` to ``EF`` , the two sides ``AE`` , ``EB`` are equal to the two sides ``CE`` , ``EF`` respectively; and the angle ``AEB`` is equal to the angle ``FEC`` , for they are vertical angles. [ :ref:`I.15` ]
-Therefore the base ``AB`` is equal to the base ``FC`` , and the triangle ``ABE`` is equal to the triangle ``CFE`` , and the remaining angles are equal to the remaining angles respectively, namely those which the equal sides subtend; [ :ref:`I.4` ] therefore the angle ``BAE`` is equal to the angle ``ECF`` .
+Then, since ``AE`` is equal to ``EC``, 
+and ``BE`` to ``EF``, the two sides ``AE``, ``EB`` are equal to the two sides ``CE``, ``EF`` respectively; and the angle ``AEB`` is equal to the angle ``FEC``, for they are vertical angles. [:ref:`I.15`] 
+Therefore the base ``AB`` is equal to the base ``FC``, and the triangle ``ABE`` is equal to the triangle ``CFE``, and the remaining angles are equal to the remaining angles respectively, namely those which the equal sides subtend; [:ref:`I.4`] therefore the angle ``BAE`` is equal to the angle ``ECF``.
+        
 
 
+But the angle ``ECD`` is greater than the angle ``ECF``; [C. N. 5] therefore the angle ``ACD`` is greater than the angle ``BAE``.
 
-But the angle ``ECD`` is greater than the angle ``ECF`` ; [ C. N . 5] therefore the angle ``ACD`` is greater than the angle ``BAE`` .
-
-Similarly also, if ``BC`` be bisected, the angle ``BCG`` , that is, the angle ``ACD`` [ :ref:`I.15` ], can be proved greater than the angle ``ABC`` as well.
+Similarly also, if ``BC`` be bisected, the angle ``BCG``, that is, the angle ``ACD`` [:ref:`I.15`], can be proved greater than the angle ``ABC`` as well.
 
 Therefore etc.
 

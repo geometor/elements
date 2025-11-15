@@ -6,55 +6,16 @@
 III.27
 ======
 
-In equal circles angles standing on equal circumferences are equal to one another
-,
-whether they stand at the centres or at the circumferences
-.
+   In equal circles angles standing on equal circumferences are equal to one another, whether they stand at the centres or at the circumferences.
 
-For in equal circles
-ABC
-,
-DEF
-, on equal circumferences
-BC
-,
-EF
-, let the angles
-BGC
-,
-EHF
-stand at the centres
-G
-,
-H
-, and the angles
-BAC
-,
-EDF
-at the circumferences; I say that the angle
-BGC
-is equal to the angle
-EHF
-, and the angle
-BAC
-is equal to the angle
-EDF
-.
-
+For in equal circles ``ABC``, ``DEF``, on equal circumferences ``BC``, ``EF``, let the angles ``BGC``, ``EHF`` stand at the centres ``G``, ``H``, and the angles ``BAC``, ``EDF`` at the circumferences; I say that the angle ``BGC`` is equal to the angle ``EHF``, and the angle ``BAC`` is equal to the angle ``EDF``.
 
 
 .. figure:: /_images/placeholder.png
    :alt: Figure placeholder
 
 
-
-
-For, if the angle
-BGC
-is unequal to the angle
-EHF
-,
-
+For, if the angle ``BGC`` is unequal to the angle ``EHF``,
 
 
 .. container:: center
@@ -62,56 +23,25 @@ EHF
    one of them is greater.
 
 
+Let the angle ``BGC`` be greater : and on the straight line ``BG``, and at the point ``G`` on it, let the angle ``BGK`` be constructed equal to the angle ``EHF``. [:ref:`I.23`]
 
-
-Let the angle
-BGC
-be greater : and on the straight line
-BG
-, and at the point
-G
-on it, let the angle
-BGK
-be constructed equal to the angle
-EHF
-. [
-I. 23
-]
-
-Now equal angles stand on equal circumferences, when they are at the centres; [
-III. 26
-]
-
+Now equal angles stand on equal circumferences, when they are at the centres; [:ref:`III.26`]
 
 
 .. container:: center
 
-   therefore the circumference ``BK`` is equal to the circumference ``EF`` .
+   therefore the circumference ``BK`` is equal to the circumference ``EF``.
 
 
-
-
-But
-EF
-is equal to
-BC
-;
-
+But ``EF`` is equal to ``BC``;
 
 
 .. container:: center
 
-   therefore ``BK`` is also equal to ``BC`` , the less to the greater : which is impossible.
+   therefore ``BK`` is also equal to ``BC``, the less to the greater : which is impossible.
 
 
-
-
-Therefore the angle
-BGC
-is not unequal to the angle
-EHF
-;
-
+Therefore the angle ``BGC`` is not unequal to the angle ``EHF``;
 
 
 .. container:: center
@@ -119,27 +49,14 @@ EHF
    therefore it is equal to it.
 
 
-
-
-And the angle at
-A
-is half of the angle
-BGC
-,
-
+And the angle at ``A`` is half of the angle ``BGC``,
 
 
 .. container:: center
 
-   and the angle at ``D`` half of the angle ``EHF`` ; [ :ref:`III.20` ]
+   and the angle at ``D`` half of the angle ``EHF``; [:ref:`III.20`]
 
 
-
-
-therefore the angle at
-A
-is also equal to the angle at
-D
-.
+therefore the angle at ``A`` is also equal to the angle at ``D``.
 
 Therefore etc. Q. E. D.

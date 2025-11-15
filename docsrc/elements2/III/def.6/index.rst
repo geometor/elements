@@ -6,6 +6,4 @@
 III.def.6
 =========
 
-A
-segment of a circle
-is the figure contained by a straight line and a circumference of a circle.
+   A segment of a circle is the figure contained by a straight line and a circumference of a circle.

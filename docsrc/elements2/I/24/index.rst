@@ -12,30 +12,30 @@ I.24
 **Proof.**
 
 
-Let ``ABC`` , ``DEF`` be two triangles having the two sides ``AB`` , ``AC`` equal to the two sides ``DE`` , ``DF`` respectively, namely ``AB`` to ``DE`` , and ``AC`` to ``DF`` , and let the angle at ``A`` be greater than the angle at ``D`` ;
+Let ``ABC``, ``DEF`` be two triangles having the two sides ``AB``, ``AC`` equal to the two sides ``DE``, ``DF`` respectively, namely ``AB`` to ``DE``, and ``AC`` to ``DF``, and let the angle at ``A`` be greater than the angle at ``D``;
 
-I say that the base ``BC`` is also greater than the base ``EF`` .
-
-
-For, since the angle ``BAC`` is greater than the angle ``EDF`` , let there be constructed, on the straight line ``DE`` , and at the point ``D`` on it, the angle ``EDG``
-
-equal to the angle ``BAC`` ; [ :ref:`I.23` ] let ``DG`` be made equal to either of the two straight lines ``AC`` , ``DF`` , and let ``EG`` , ``FG`` be joined.
+I say that the base ``BC`` is also greater than the base ``EF``. 
 
 
-Then, since ``AB`` is equal to ``DE`` , and ``AC`` to ``DG`` ,
-the two sides ``BA`` , ``AC`` are equal to the two sides ``ED`` , ``DG`` , respectively; and the angle ``BAC`` is equal to the angle ``EDG`` ; therefore the base ``BC`` is equal to the base ``EG`` . [ :ref:`I.4` ]
+For, since the angle ``BAC`` is greater than the angle ``EDF``, let there be constructed, on the straight line ``DE``, and at the point ``D`` on it, the angle ``EDG``
+        
+equal to the angle ``BAC``; [:ref:`I.23`] let ``DG`` be made equal to either of the two straight lines ``AC``, ``DF``, and let ``EG``, ``FG`` be joined. 
+        
 
-Again, since ``DF`` is equal to ``DG`` ,
-the angle ``DGF`` is also equal to the angle ``DFG`` ; [ :ref:`I.5` ] therefore the angle ``DFG`` is greater than the angle ``EGF`` .
+Then, since ``AB`` is equal to ``DE``, and ``AC`` to ``DG``, 
+the two sides ``BA``, ``AC`` are equal to the two sides ``ED``, ``DG``, respectively; and the angle ``BAC`` is equal to the angle ``EDG``; therefore the base ``BC`` is equal to the base ``EG``. [:ref:`I.4`]
 
-Therefore the angle ``EFG`` is much greater than the angle ``EGF`` .
+Again, since ``DF`` is equal to ``DG``, 
+the angle ``DGF`` is also equal to the angle ``DFG``; [:ref:`I.5`] therefore the angle ``DFG`` is greater than the angle ``EGF``.
+
+Therefore the angle ``EFG`` is much greater than the angle ``EGF``.
 
 And, since ``EFG`` is a triangle having the angle ``EFG``
+        
+greater than the angle ``EGF``, and the greater angle is subtended by the greater side, [:ref:`I.19`] the side ``EG`` is also greater than ``EF``.
 
-greater than the angle ``EGF`` , and the greater angle is subtended by the greater side, [ :ref:`I.19` ] the side ``EG`` is also greater than ``EF`` .
-
-But ``EG`` is equal to ``BC`` . Therefore ``BC`` is also greater than ``EF`` .
-
+But ``EG`` is equal to ``BC``. Therefore ``BC`` is also greater than ``EF``.
+        
 
 
 Therefore etc.

@@ -59,6 +59,18 @@ def parse_element_xml(file_path: Path):
     qed_p = root.find(".//div4[@type='QED']/p")
     qed = _convert_element_to_rst(qed_p)
 
+    porism_div = root.find(".//div4[@type='porism']")
+    porism = None
+    if porism_div is not None:
+        porism_head = porism_div.find('head').text if porism_div.find('head') is not None else ''
+        porism_paragraphs = []
+        for p in porism_div.findall('p'):
+            porism_paragraphs.append(_convert_element_to_rst(p))
+        porism = {
+            'head': porism_head,
+            'text': "\n\n".join(porism_paragraphs)
+        }
+
     dependencies = [ref.get('target') for ref in root.findall('.//ref')]
 
     return {
@@ -69,5 +81,6 @@ def parse_element_xml(file_path: Path):
         'enunciation': enunciation,
         'proof': proof,
         'qed': qed,
+        'porism': porism,
         'dependencies': dependencies,
     }

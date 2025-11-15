@@ -17,100 +17,74 @@ SECTION_TYPE_MAP = {
     'Prop': 'prop'
 }
 
-def convert_inline_xml_to_rst(element):
+def convert_inline_xml_to_rst(element, is_enunciation=False):
     if element is None:
         return ""
 
-    if element.tag == 'term':
-        return f" **{''.join(element.itertext()).strip()}** "
+    # Handle non-recursive tags first
+    if element.tag == 'ref':
+        target = element.get('target')
+        if target:
+            target_parts = target.split('.')
+            canonical_ref = None # Initialize as None
+            if len(target_parts) >= 3 and target_parts[0] == 'elem':
+                book_num_str = target_parts[1]
+                book_num_roman = ROMAN_NUMERALS.get(book_num_str)
+                
+                if book_num_roman:
+                    if len(target_parts) == 5 and target_parts[2] == 'c' and target_parts[3] == 'n':
+                        section_type_canonical = 'cn'
+                        item_num = target_parts[4]
+                        canonical_ref = f"{book_num_roman}.{section_type_canonical}.{item_num}"
+                    elif len(target_parts) == 4:
+                        section_type_str = target_parts[2]
+                        item_num = target_parts[3]
+                        section_type_canonical = SECTION_TYPE_MAP.get(section_type_str.capitalize())
+                        if section_type_canonical:
+                            canonical_ref = f"{book_num_roman}.{section_type_canonical}.{item_num}"
+                    elif len(target_parts) == 3:
+                        item_num = target_parts[2]
+                        if book_num_roman:
+                            canonical_ref = f"{book_num_roman}.{item_num}"
+            
+            ref_link = canonical_ref if canonical_ref else target
+            return f":ref:`{ref_link}`"
+        else:
+            link_text = ''.join(element.itertext()).strip()
+            temp_split_parts = re.split(r'[\s.]+', link_text)
+            canonical_ref = f"**{link_text}**"
+            return f"{canonical_ref}"
+    
+    if element.tag == 'lb':
+        return "\n"
+        
+    if element.tag == 'figure':
+        return "" # Handled by the p-handler which deals with block-level elements
 
+    # Handle container-like tags recursively
     parts = []
     if element.text:
         parts.append(element.text)
 
     for child in element:
-        if child.tag == 'emph':
-            parts.append(f" ``{''.join(child.itertext()).strip()}`` ")
-        elif child.tag == 'ref':
-            target = child.get('target')
-            if target:
-                target_parts = target.split('.')
-                canonical_ref = None # Initialize as None
-                if len(target_parts) >= 3 and target_parts[0] == 'elem':
-                    book_num_str = target_parts[1]
-                    book_num_roman = ROMAN_NUMERALS.get(book_num_str)
-                    
-                    if book_num_roman:
-                        if len(target_parts) == 5 and target_parts[2] == 'c' and target_parts[3] == 'n':
-                            section_type_canonical = 'cn'
-                            item_num = target_parts[4]
-                            canonical_ref = f"{book_num_roman}.{section_type_canonical}.{item_num}"
-                        elif len(target_parts) == 4:
-                            section_type_str = target_parts[2]
-                            item_num = target_parts[3]
-                            section_type_canonical = SECTION_TYPE_MAP.get(section_type_str.capitalize())
-                            if section_type_canonical:
-                                canonical_ref = f"{book_num_roman}.{section_type_canonical}.{item_num}"
-                        elif len(target_parts) == 3:
-                            item_num = target_parts[2]
-                            if book_num_roman:
-                                canonical_ref = f"{book_num_roman}.{item_num}"
-                
-                # If a canonical ref was successfully created, use it. Otherwise, use the original target.
-                ref_link = canonical_ref if canonical_ref else target
-                parts.append(f" :ref:`{ref_link}` ")
-            else:
-                # Fallback for refs with no target. Try to parse inner text.
-                link_text = ''.join(child.itertext()).strip()
-                # Example inner text: "C.N. 1" or "Post. 3"
-                temp_split_parts = re.split(r'[\s.]+', link_text) # Use a temporary variable
-                canonical_ref = None
-                
-                # This logic assumes the book number is implicitly the current book.
-                # This is a limitation, but better than no link.
-                # We don't have access to the current book number here, 
-                # so we can't construct a full canonical ref.
-                # For now, we will just bold the text as a clear indicator.
-                # A more advanced solution would require passing the book context into this function.
-                
-                # Attempt to find a pattern like C.N. 1, Def. 15, etc.
-                if len(temp_split_parts) >= 2:
-                    # A very simplified heuristic to guess the ref type
-                    ref_type_guess = temp_split_parts[0].lower()
-                    ref_num = temp_split_parts[-1]
-                    # This is not robust enough to build a link, so we bold it.
-                    # A future improvement would be to pass book context here.
-                    canonical_ref = f"**{link_text}**" # Revert to bolding as a safe fallback
-                else:
-                    canonical_ref = f"**{link_text}**"
-
-                parts.append(f" {canonical_ref} ")
-        elif child.tag == 'term':
-            parts.append(f" **{''.join(child.itertext()).strip()}** ")
-        elif child.tag == 'hi':
-            # Recursively convert content within <hi> tags
-            hi_content = convert_inline_xml_to_rst(child)
-            parts.append(f" {hi_content.strip()} ")
-        elif child.tag == 'lb':
-            parts.append("\n") # Proper newline for inline break
-        elif child.tag == 'figure':
-            # Block-level directives are handled in the main parsing loop
-            pass
-        else:
-            # For any other tag, just get its text content with padding
-            parts.append(f" {''.join(child.itertext()).strip()} ")
-
-        # Process the text that comes after the child tag
+        parts.append(convert_inline_xml_to_rst(child, is_enunciation))
         if child.tail:
             parts.append(child.tail)
+    
+    content = "".join(parts)
 
-    # Join all parts and normalize whitespace to single spaces,
-    # but preserve intentional newlines from <lb> tags.
-    full_text = "".join(parts)
-    # Split by newlines, normalize spaces in each line, then rejoin.
-    lines = full_text.split('\n')
-    cleaned_lines = [re.sub(r'\s+', ' ', line).strip() for line in lines]
-    return "\n".join(cleaned_lines)
+    # Apply formatting based on the container's tag
+    if element.tag == 'emph':
+        if is_enunciation:
+            return f"{content.strip()}"
+        else:
+            return f"``{content.strip()}``"
+    elif element.tag == 'term':
+        return f"**{content.strip()}**"
+
+    # For other tags (like p, hi, div), just return the processed content
+    # Final whitespace cleanup is handled by the caller (flush_inline_parts)
+    return content
 
 def parse_book_xml(file_path):
     tree = ET.parse(file_path)
@@ -189,13 +163,13 @@ def parse_book_xml(file_path):
                 if enunc_div is not None:
                     enunc_p = enunc_div.find('p')
                     if enunc_p is not None:
-                        enunc_text = convert_inline_xml_to_rst(enunc_p)
+                        enunc_text = convert_inline_xml_to_rst(enunc_p, is_enunciation=True)
                         entry_content_rst.append(format_as_blockquote(enunc_text))
                 else:
                     # If no Enunc div4, treat the first p as enunciation
                     first_p = div3.find('p')
                     if first_p is not None:
-                        enunc_text = convert_inline_xml_to_rst(first_p)
+                        enunc_text = convert_inline_xml_to_rst(first_p, is_enunciation=True)
                         entry_content_rst.append(format_as_blockquote(enunc_text))
                         # To avoid processing it again, we can remove it or set a flag.
                         # For simplicity, we'll just be careful in the loop below.
@@ -356,7 +330,7 @@ def main():
     print("RST transformation tool")
     output_dir = "docsrc/elements2"
     
-    for i in range(1, 3):
+    for i in range(1, 4):
         xml_file_path = f"resources/xml/books/{i:02d}.xml"
         if os.path.exists(xml_file_path):
             book_data = parse_book_xml(xml_file_path)
@@ -373,7 +347,7 @@ def main():
         ".. toctree::",
         "   :maxdepth: 1\n"
     ]
-    for i in range(1, 3):
+    for i in range(1, 4):
         book_roman = ROMAN_NUMERALS.get(str(i))
         if book_roman:
             main_index_content.append(f"   {book_roman}/index.rst")

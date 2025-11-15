@@ -12,26 +12,26 @@ I.43
 **Proof.**
 
 
-Let ``ABCD`` be a parallelogram, and ``AC`` its diameter; and about ``AC`` let ``EH`` , ``FG`` be parallelograms, and ``BK`` , ``KD``
-
+Let ``ABCD`` be a parallelogram, and ``AC`` its diameter; and about ``AC`` let ``EH``, ``FG`` be parallelograms, and ``BK``, ``KD``
+        
 the so-called complements;
 
-I say that the complement ``BK`` is equal to the complement ``KD`` .
+I say that the complement ``BK`` is equal to the complement ``KD``.
 
-For, since ``ABCD`` is a parallelogram, and ``AC`` its diameter, the triangle ``ABC`` is equal to
-the triangle ``ACD`` . [ :ref:`I.34` ]
+For, since ``ABCD`` is a parallelogram, and ``AC`` its diameter, the triangle ``ABC`` is equal to 
+the triangle ``ACD``. [:ref:`I.34`]
 
-Again, since ``EH`` is a parallelogram, and ``AK`` is its diameter, the triangle ``AEK`` is equal to the triangle ``AHK`` .
+Again, since ``EH`` is a parallelogram, and ``AK`` is its diameter, the triangle ``AEK`` is equal to the triangle ``AHK``.
+        
+        
+For the same reason the triangle ``KFC`` is also equal to ``KGC``.
 
+Now, since the triangle ``AEK`` is equal to the triangle ``AHK``, and ``KFC`` to ``KGC``,
+        
+the triangle ``AEK`` together with ``KGC`` is equal to the triangle ``AHK`` together with ``KFC``. [:ref:`I.cn.2`]
 
-For the same reason the triangle ``KFC`` is also equal to ``KGC`` .
-
-Now, since the triangle ``AEK`` is equal to the triangle ``AHK`` , and ``KFC`` to ``KGC`` ,
-
-the triangle ``AEK`` together with ``KGC`` is equal to the triangle ``AHK`` together with ``KFC`` . [ :ref:`I.cn.2` ]
-
-And the whole triangle ``ABC`` is also equal to the whole ``ADC`` ; therefore the complement ``BK`` which remains is equal to the
-complement ``KD`` which remains. [ :ref:`I.cn.3` ]
+And the whole triangle ``ABC`` is also equal to the whole ``ADC``; therefore the complement ``BK`` which remains is equal to the 
+complement ``KD`` which remains. [:ref:`I.cn.3`]
 
 Therefore etc.
 

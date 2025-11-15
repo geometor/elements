@@ -6,5 +6,4 @@
 III.def.1
 =========
 
-Equal circles
-are those the diameters of which are equal, or the radii of which are equal.
+   Equal circles are those the diameters of which are equal, or the radii of which are equal.

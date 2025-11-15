@@ -6,86 +6,41 @@
 III.30
 ======
 
-To bisect a given circumference
-.
+   To bisect a given circumference.
 
-Let
-ADB
-be the given circumference; thus it is required to bisect the circumference
-ADB
-.
+Let ``ADB`` be the given circumference; thus it is required to bisect the circumference ``ADB``.
 
-Let
-AB
-be joined and bisected at
-C
-; from the point
-C
-let
-CD
-be drawn at right angles to the straight line
-AB
-,
-
+Let ``AB`` be joined and bisected at ``C``; from the point ``C`` let ``CD`` be drawn at right angles to the straight line ``AB``,
 
 
 .. figure:: /_images/placeholder.png
    :alt: Figure placeholder
 
 
+and let ``AD``, ``DB`` be joined.
 
-
-and let
-AD
-,
-DB
-be joined.
-
-Then, since
-AC
-is equal to
-CB
-, and
-CD
-is common,
-
+Then, since ``AC`` is equal to ``CB``, and ``CD`` is common,
 
 
 .. container:: center
 
-   the two sides ``AC`` , ``CD`` are equal to the two sides ``BC`` , ``CD`` ;
+   the two sides ``AC``, ``CD`` are equal to the two sides ``BC``, ``CD``;
 
 
-
-
-and the angle
-ACD
-is equal to the angle
-BCD
-, for each is right;
-
+and the angle ``ACD`` is equal to the angle ``BCD``, for each is right;
 
 
 .. container:: center
 
-   therefore the base ``AD`` is equal to the base ``DB`` . [ :ref:`I.4` ]
+   therefore the base ``AD`` is equal to the base ``DB``. [:ref:`I.4`]
 
 
-
-
-But equal straight lines cut off equal circumferences, the greater equal to the greater, and the less to the less; [
-III. 28
-]
-
+But equal straight lines cut off equal circumferences, the greater equal to the greater, and the less to the less; [:ref:`III.28`]
 
 
 .. container:: center
 
-   and each of the circumferences ``AD`` , ``DB`` is less than a semicircle; therefore the circumference ``AD`` is equal to the circumference ``DB`` .
+   and each of the circumferences ``AD``, ``DB`` is less than a semicircle; therefore the circumference ``AD`` is equal to the circumference ``DB``.
 
 
-
-
-Therefore the given circumference has been bisected at the point
-D
-. Q. E. F.
+Therefore the given circumference has been bisected at the point ``D``. Q. E. F.

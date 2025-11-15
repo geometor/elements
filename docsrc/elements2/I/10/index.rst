@@ -14,16 +14,16 @@ I.10
 
 Let ``AB`` be the given finite straight line.
 
-Thus it is required to bisect the finite straight line ``AB`` .
+Thus it is required to bisect the finite straight line ``AB``.
 
-Let the equilateral triangle ``ABC`` be constructed on it, [ :ref:`I.1` ] and let the angle ``ACB`` be bisected by the straight line ``CD`` ; [ :ref:`I.9` ]
+Let the equilateral triangle ``ABC`` be constructed on it, [:ref:`I.1`] and let the angle ``ACB`` be bisected by the straight line ``CD``; [:ref:`I.9`]
 
-I say that the straight line ``AB`` has been bisected at the point ``D`` .
+I say that the straight line ``AB`` has been bisected at the point ``D``.
 
-For, since ``AC`` is equal to ``CB`` , and ``CD`` is common,
-the two sides ``AC`` , ``CD`` are equal to the two sides ``BC`` , ``CD`` respectively; and the angle ``ACD`` is equal to the angle ``BCD`` ; therefore the base ``AD`` is equal to the base ``BD`` . [ :ref:`I.4` ]
+For, since ``AC`` is equal to ``CB``, and ``CD`` is common, 
+        the two sides ``AC``, ``CD`` are equal to the two sides ``BC``, ``CD`` respectively; and the angle ``ACD`` is equal to the angle ``BCD``; therefore the base ``AD`` is equal to the base ``BD``. [:ref:`I.4`]
 
-Therefore the given finite straight line ``AB`` has been bisected at ``D`` .
+Therefore the given finite straight line ``AB`` has been bisected at ``D``.
 
 
 **Q. E. D.**

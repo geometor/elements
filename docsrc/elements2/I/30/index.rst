@@ -12,22 +12,22 @@ I.30
 **Proof.**
 
 
-Let each of the straight lines ``AB`` , ``CD`` be parallel to ``EF`` ; I say that ``AB`` is also parallel to ``CD`` .
+Let each of the straight lines ``AB``, ``CD`` be parallel to ``EF``; I say that ``AB`` is also parallel to ``CD``. 
 
 
-For let the straight line ``GK`` fall upon them;
+For let the straight line ``GK`` fall upon them; 
 
-Then, since the straight line ``GK`` has fallen on the parallel straight lines ``AB`` , ``EF`` ,
-the angle ``AGK`` is equal to the angle ``GHF`` . [ :ref:`I.29` ]
+Then, since the straight line ``GK`` has fallen on the parallel straight lines ``AB``, ``EF``, 
+the angle ``AGK`` is equal to the angle ``GHF``. [:ref:`I.29`]
 
-Again, since the straight line ``GK`` has fallen on the parallel straight lines ``EF`` , ``CD`` , the angle ``GHF`` is equal to the angle ``GKD`` . [ :ref:`I.29` ]
-
-
-
-But the angle ``AGK`` was also proved equal to the angle ``GHF`` ; therefore the angle ``AGK`` is also equal to the angle ``GKD`` ; [ :ref:`I.cn.1` ] and they are alternate.
+Again, since the straight line ``GK`` has fallen on the parallel straight lines ``EF``, ``CD``, the angle ``GHF`` is equal to the angle ``GKD``. [:ref:`I.29`]
+        
 
 
-Therefore ``AB`` is parallel to ``CD`` .
+But the angle ``AGK`` was also proved equal to the angle ``GHF``; therefore the angle ``AGK`` is also equal to the angle ``GKD``; [:ref:`I.cn.1`] and they are alternate. 
+
+
+Therefore ``AB`` is parallel to ``CD``.
 
 
 **Q. E. D.**

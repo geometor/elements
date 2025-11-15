@@ -12,15 +12,15 @@ I.41
 **Proof.**
 
 
-For let the parallelogram ``ABCD`` have the same base ``BC`` with the triangle ``EBC`` , and let it be in the same parallels ``BC`` , ``AE`` ;
+For let the parallelogram ``ABCD`` have the same base ``BC`` with the triangle ``EBC``, and let it be in the same parallels ``BC``, ``AE``;
 
-I say that the parallelogram ``ABCD`` is double of the triangle ``BEC`` .
+I say that the parallelogram ``ABCD`` is double of the triangle ``BEC``.
 
 For let ``AC`` be joined.
 
-Then the triangle ``ABC`` is equal to the triangle ``EBC`` ; for it is on the same base ``BC`` with it and in the same parallels ``BC`` , ``AE`` . [ :ref:`I.37` ]
+Then the triangle ``ABC`` is equal to the triangle ``EBC``; for it is on the same base ``BC`` with it and in the same parallels ``BC``, ``AE``. [:ref:`I.37`] 
 
-But the parallelogram ``ABCD`` is double of the triangle ``ABC`` ; for the diameter ``AC`` bisects it; [ :ref:`I.34` ] so that the parallelogram ``ABCD`` is also double of the triangle ``EBC`` .
+But the parallelogram ``ABCD`` is double of the triangle ``ABC``; for the diameter ``AC`` bisects it; [:ref:`I.34`] so that the parallelogram ``ABCD`` is also double of the triangle ``EBC``.
 
 Therefore etc.
 

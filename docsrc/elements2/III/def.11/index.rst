@@ -6,5 +6,4 @@
 III.def.11
 ==========
 
-Similar segments of circles
-are those which admit equal angles, or in which the angles are equal to one another.
+   Similar segments of circles are those which admit equal angles, or in which the angles are equal to one another.

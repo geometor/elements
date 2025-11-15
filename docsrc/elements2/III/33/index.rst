@@ -6,41 +6,18 @@
 III.33
 ======
 
-On a given straight line to describe a segment of a circle admitting an angle equal to a given rectilineal angle
-.
+   On a given straight line to describe a segment of a circle admitting an angle equal to a given rectilineal angle.
 
-Let
-AB
-be the given straight line, and the angle at
-C
-the given rectilineal angle; thus it is required to describe on the given straight line
-AB
-a segment of a circle admitting an angle equal to the angle at
-C
-.
-
+Let ``AB`` be the given straight line, and the angle at ``C`` the given rectilineal angle; thus it is required to describe on the given straight line ``AB`` a segment of a circle admitting an angle equal to the angle at ``C``.
 
 
 .. figure:: /_images/placeholder.png
    :alt: Figure placeholder
 
 
+The angle at ``C`` is then acute, or right, or obtuse.
 
-
-The angle at
-C
-is then acute, or right, or obtuse.
-
-First let it be acute, and, as in the first figure, on the straight line
-AB
-, and at the point
-A
-, let the angle
-BAD
-be constructed equal to the angle at
-C
-;
-
+First let it be acute, and, as in the first figure, on the straight line ``AB``, and at the point ``A``, let the angle ``BAD`` be constructed equal to the angle at ``C``;
 
 
 .. container:: center
@@ -48,330 +25,114 @@ C
    therefore the angle ``BAD`` is also acute.
 
 
+Let ``AE`` be drawn at right angles to ``DA``, let ``AB`` be bisected at ``F``, let ``FG`` be drawn from the point ``F`` at right angles to ``AB``, and let ``GB`` be joined.
 
-
-Let
-AE
-be drawn at right angles to
-DA
-, let
-AB
-be
-bisected at
-F
-, let
-FG
-be drawn from the point
-F
-at right angles to
-AB
-, and let
-GB
-be joined.
-
-Then, since
-AF
-is equal to
-FB
-, and
-FG
-is common,
-
+Then, since ``AF`` is equal to ``FB``, and ``FG`` is common,
 
 
 .. container:: center
 
-   the two sides ``AF`` , ``FG`` are equal to the two sides ``BF`` , ``FG`` ;
+   the two sides ``AF``, ``FG`` are equal to the two sides ``BF``, ``FG``;
 
 
-
-
-and the angle
-AFG
-is equal to the angle
-BFG
-;
-
+and the angle ``AFG`` is equal to the angle ``BFG``;
 
 
 .. container:: center
 
-   therefore the base ``AG`` is equal to the base ``BG`` . [ :ref:`I.4` ]
+   therefore the base ``AG`` is equal to the base ``BG``. [:ref:`I.4`]
 
 
+Therefore the circle described with centre ``G`` and distance ``GA`` will pass through ``B`` also.
 
+Let it be drawn, and let it be ``ABE``; let ``EB`` be joined.
 
-Therefore the circle described with centre
-G
-and distance
-GA
-will pass through
-B
-also.
-
-Let it be drawn, and let it be
-ABE
-; let
-EB
-be joined.
-
-Now, since
-AD
-is drawn from
-A
-, the extremity of the diameter
-AE
-, at right angles to
-AE
-,
-
+Now, since ``AD`` is drawn from ``A``, the extremity of the diameter ``AE``, at right angles to ``AE``,
 
 
 .. container:: center
 
-   therefore ``AD`` touches the circle ``ABE`` . [ :ref:`elem.3.16.p.1` ]
+   therefore ``AD`` touches the circle ``ABE``. [:ref:`elem.3.16.p.1`]
 
 
-
-
-Since then a straight line
-AD
-touches the circle
-ABE
-, and from the point of contact at
-A
-a straight line
-AB
-is drawn across in the circle
-ABE
-,
-
+Since then a straight line ``AD`` touches the circle ``ABE``, and from the point of contact at ``A`` a straight line ``AB`` is drawn across in the circle ``ABE``,
 
 
 .. container:: center
 
-   the angle ``DAB`` is equal to the angle ``AEB`` in the alternate segment of the circle. [ :ref:`III.32` ]
+   the angle ``DAB`` is equal to the angle ``AEB`` in the alternate segment of the circle. [:ref:`III.32`]
 
 
+But the angle ``DAB`` is equal to the angle at ``C``; therefore the angle at ``C`` is also equal to the angle ``AEB``.
 
+Therefore on the given straight line ``AB`` the segment ``AEB`` of a circle has been described admitting the angle ``AEB`` equal to the given angle, the angle at ``C``.
 
-But the angle
-DAB
-is equal to the angle at
-C
-; therefore the angle at
-C
-is also equal to the angle
-AEB
-.
-
-Therefore on the given straight line
-AB
-the segment
-AEB
-of a circle has been described admitting the angle
-AEB
-equal to the given angle, the angle at
-C
-.
-
-Next let the angle at
-C
-be right;
-
+Next let the angle at ``C`` be right;
 
 
 .. figure:: /_images/placeholder.png
    :alt: Figure placeholder
 
 
+and let it be again required to describe on ``AB`` a segment of a circle admitting an angle equal to the right angle at ``C``.
 
+Let the angle ``BAD`` be constructed equal to the right angle at ``C``, as is the case in the second figure; let ``AB`` be bisected at ``F``, and with centre ``F`` and distance either ``FA`` or ``FB`` let the circle ``AEB`` be described.
 
-and let it be again required to describe on
-AB
-a segment of a circle admitting an angle equal to the right angle at
-C
-.
+Therefore the straight line ``AD`` touches the circle ``ABE``, because the angle at ``A`` is right. [:ref:`elem.3.16.p.1`]
 
-Let the angle
-BAD
-be constructed equal to the right angle at
-C
-, as is the case in the second figure;
-let
-AB
-be bisected at
-F
-, and with centre
-F
-and distance either
-FA
-or
-FB
-let the circle
-AEB
-be described.
+And the angle ``BAD`` is equal to the angle in the segment ``AEB``, for the latter too is itself a right angle, being an angle in a semicircle. [:ref:`III.31`]
 
-Therefore the straight line
-AD
-touches the circle
-ABE
-, because the angle at
-A
-is right. [
-III. 16, Por.
-]
+But the angle ``BAD`` is also equal to the angle at ``C``.
 
-And the angle
-BAD
-is equal to the angle in the segment
-AEB
-, for the latter too is itself a right angle, being an angle in a semicircle. [
-III. 31
-]
+Therefore the angle ``AEB`` is also equal to the angle at ``C``.
 
-But the angle
-BAD
-is also equal to the angle at
-C
-.
+Therefore again the segment ``AEB`` of a circle has been described on ``AB`` admitting an angle equal to the angle at ``C``.
 
-Therefore the angle
-AEB
-is also equal to the angle at
-C
-.
-
-Therefore again the segment
-AEB
-of a circle has been described on
-AB
-admitting an angle equal to the angle at
-C
-.
-
-Next, let the angle at
-C
-be obtuse;
-
+Next, let the angle at ``C`` be obtuse;
 
 
 .. figure:: /_images/placeholder.png
    :alt: Figure placeholder
 
 
+and on the straight line ``AB``, and at the point ``A``, let the angle ``BAD`` be constructed equal to it, as is the case in the third figure; let ``AE`` be drawn at right angles to ``AD``, let ``AB`` be again bisected at ``F``, let ``FG`` be drawn at right angles to ``AB``, and let ``GB`` be joined.
 
-
-and on the straight line
-AB
-, and at the point
-A
-, let the angle
-BAD
-be constructed equal to it, as is the case in the third figure; let
-AE
-be drawn at right angles to
-AD
-, let
-AB
-be again bisected at
-F
-, let
-FG
-be drawn at right angles to
-AB
-, and let
-GB
-be joined.
-
-Then, since
-AF
-is again equal to
-FB
-, and
-FG
-is common,
-
+Then, since ``AF`` is again equal to ``FB``, and ``FG`` is common,
 
 
 .. container:: center
 
-   the two sides ``AF`` , ``FG`` are equal to the two sides ``BF`` , ``FG`` ;
+   the two sides ``AF``, ``FG`` are equal to the two sides ``BF``, ``FG``;
 
 
-
-
-and the angle
-AFG
-is equal to the angle
-BFG
-;
-
+and the angle ``AFG`` is equal to the angle ``BFG``;
 
 
 .. container:: center
 
-   therefore the base ``AG`` is equal to the base ``BG`` . [ :ref:`I.4` ]
+   therefore the base ``AG`` is equal to the base ``BG``. [:ref:`I.4`]
 
 
+Therefore the circle described with centre ``G`` and distance ``GA`` will pass through ``B`` also; let it so pass, as ``AEB``.
 
-
-Therefore the circle described with centre
-G
-and distance
-GA
-will pass through
-B
-also; let it so pass, as
-AEB
-.
-
-Now, since
-AD
-is drawn at right angles to the diameter
-AE
-from its extremity,
-
+Now, since ``AD`` is drawn at right angles to the diameter ``AE`` from its extremity,
 
 
 .. container:: center
 
-   ``AD`` touches the circle ``AEB`` . [ :ref:`elem.3.16.p.1` ]
+   ``AD`` touches the circle ``AEB``. [:ref:`elem.3.16.p.1`]
 
 
-
-
-And
-AB
-has been drawn across from the point of contact at
-A
-;
-
+And ``AB`` has been drawn across from the point of contact at ``A``;
 
 
 .. container:: center
 
-   therefore the angle ``BAD`` is equal to the angle constructed in the alternate segment ``AHB`` of the circle. [ :ref:`III.32` ]
+   therefore the angle ``BAD`` is equal to the angle constructed in the alternate segment ``AHB`` of the circle. [:ref:`III.32`]
 
 
+But the angle ``BAD`` is equal to the angle at ``C``.
 
+Therefore the angle in the segment ``AHB`` is also equal to the angle at ``C``.
 
-But the angle
-BAD
-is equal to the angle at
-C
-.
-
-Therefore the angle in the segment
-AHB
-is also equal to the angle at
-C
-.
-
-Therefore on the given straight line
-AB
-the segment
-AHB
-of a circle has been described admitting an angle equal to the angle at
-C
-. Q. E. F.
+Therefore on the given straight line ``AB`` the segment ``AHB`` of a circle has been described admitting an angle equal to the angle at ``C``. Q. E. F.

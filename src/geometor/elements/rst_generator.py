@@ -11,6 +11,7 @@ def generate_rst_from_xml(xml_file_path: Path, output_dir: Path):
     enunciation = parsed_data['enunciation']
     proof = parsed_data.get('proof', '')
     qed = parsed_data.get('qed', '')
+    porism = parsed_data.get('porism')
     dependencies = parsed_data.get('dependencies', [])
 
     # Create a semantic filename (e.g., book1-proposition1.rst)
@@ -48,6 +49,16 @@ def generate_rst_from_xml(xml_file_path: Path, output_dir: Path):
         rst_content += f"""
 
 **Q.E.D.** {qed}
+"""
+
+    if porism:
+        rst_content += f"""
+.. _{element_id}.p.1:
+
+{porism['head']}
+{'-' * len(porism['head'])}
+
+{porism['text']}
 """
 
     if dependencies:

@@ -6,6 +6,4 @@
 III.def.9
 =========
 
-And, when the straight lines containing the angle cut off a circumference, the angle is said to
-stand upon
-that circumference.
+   And, when the straight lines containing the angle cut off a circumference, the angle is said to stand upon that circumference.

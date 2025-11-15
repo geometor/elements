@@ -12,23 +12,23 @@ I.39
 **Proof.**
 
 
-Let ``ABC`` , ``DBC`` be equal triangles which are on the same base ``BC`` and on the same side of it;
+Let ``ABC``, ``DBC`` be equal triangles which are on the same base ``BC`` and on the same side of it; 
 [I say that they are also in the same parallels.]
 
-And [For] let ``AD`` be joined; I say that ``AD`` is parallel to ``BC`` .
+And [For] let ``AD`` be joined; I say that ``AD`` is parallel to ``BC``.
 
-For, if not, let ``AE`` be drawn through the point ``A`` parallel to the straight line
-``BC`` , [ :ref:`I.31` ] and let ``EC`` be joined.
+For, if not, let ``AE`` be drawn through the point ``A`` parallel to the straight line 
+``BC``, [:ref:`I.31`] and let ``EC`` be joined. 
 
-Therefore the triangle ``ABC`` is equal to the triangle ``EBC`` ; for it is on the same base ``BC`` with it and in the same
-parallels. [ :ref:`I.37` ]
+Therefore the triangle ``ABC`` is equal to the triangle ``EBC``; for it is on the same base ``BC`` with it and in the same 
+parallels. [:ref:`I.37`]
 
-But ``ABC`` is equal to ``DBC`` ; therefore ``DBC`` is also equal to ``EBC`` , [ :ref:`I.cn.1` ] the greater to the less: which is impossible.
+But ``ABC`` is equal to ``DBC``; therefore ``DBC`` is also equal to ``EBC``, [:ref:`I.cn.1`] the greater to the less: which is impossible.
 
-Therefore ``AE`` is not parallel to ``BC`` .
+Therefore ``AE`` is not parallel to ``BC``. 
 
 
-Similarly we can prove that neither is any other straight line except ``AD`` ; therefore ``AD`` is parallel to ``BC`` .
+Similarly we can prove that neither is any other straight line except ``AD``; therefore ``AD`` is parallel to ``BC``.
 
 Therefore etc.
 

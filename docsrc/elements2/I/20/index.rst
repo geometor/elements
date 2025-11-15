@@ -12,19 +12,19 @@ I.20
 **Proof.**
 
 
-For let ``ABC`` be a triangle; I say that in the triangle ``ABC`` two sides taken together in any manner are greater than the remaining one, namely ``BA`` , ``AC`` greater than ``BC`` , ``AB`` , ``BC`` greater than ``AC`` , ``BC`` , ``CA`` greater than ``AB`` .
+For let ``ABC`` be a triangle; I say that in the triangle ``ABC`` two sides taken together in any manner are greater than the remaining one, namely ``BA``, ``AC`` greater than ``BC``, ``AB``, ``BC`` greater than ``AC``, ``BC``, ``CA`` greater than ``AB``.
 
-For let ``BA`` be drawn through to the point ``D`` , let ``DA`` be made equal to ``CA`` , and let ``DC`` be joined.
+For let ``BA`` be drawn through to the point ``D``, let ``DA`` be made equal to ``CA``, and let ``DC`` be joined.
 
-Then, since ``DA`` is equal to ``AC`` , the angle ``ADC`` is also equal to the angle ``ACD`` ; [ :ref:`I.5` ]
-therefore the angle ``BCD`` is greater than the angle ``ADC`` . [ :ref:`I.cn.5` ]
+Then, since ``DA`` is equal to ``AC``, the angle ``ADC`` is also equal to the angle ``ACD``; [:ref:`I.5`] 
+        therefore the angle ``BCD`` is greater than the angle ``ADC``. [:ref:`I.cn.5`]
 
-And, since ``DCB`` is a triangle having the angle ``BCD`` greater than the angle ``BDC`` , and the greater angle is subtended by the greater side, [ :ref:`I.19` ] therefore ``DB`` is greater than ``BC`` .
+And, since ``DCB`` is a triangle having the angle ``BCD`` greater than the angle ``BDC``, and the greater angle is subtended by the greater side, [:ref:`I.19`] therefore ``DB`` is greater than ``BC``.
+        
 
+But ``DA`` is equal to ``AC``; therefore ``BA``, ``AC`` are greater than ``BC``.
 
-But ``DA`` is equal to ``AC`` ; therefore ``BA`` , ``AC`` are greater than ``BC`` .
-
-Similarly we can prove that ``AB`` , ``BC`` are also greater than ``CA`` , and ``BC`` , ``CA`` than ``AB`` .
+Similarly we can prove that ``AB``, ``BC`` are also greater than ``CA``, and ``BC``, ``CA`` than ``AB``.
 
 Therefore etc.
 

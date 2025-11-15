@@ -1,6 +1,23 @@
 changelog
 =========
 
+0.0.6
+-----
+*2025-11-15*
+
+**added**
+
+.. + Support for parsing and generating RST for Book III of Euclid's Elements.
+
+**fixed**
+
+.. + Corrected RST reference linking for various element types (Definitions, Propositions, Common Notions).
+.. + Addressed issue with porisms not being parsed and included in the generated RST files.
+
+**changed**
+
+.. + Refactored inline XML to RST conversion logic for better handling of nested tags and enunciation-specific formatting.
+
 0.0.5
 -----
 *2025-11-15*
