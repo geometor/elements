@@ -38,6 +38,11 @@ Therefore, as ``BD`` which subtends the angle ``BAD`` in the triangle ``ABD`` is
 
 Therefore etc.
 
-PORISM.
+
+.. _elem.6.8.p.1:
+
+
+**VI.8.p.1**
+
 
 From this it is clear that, if in a right-angled triangle a perpendicular be drawn from the right angle to the base, the straight line so drawn is a mean proportional between the segments of the base. Q. E. D.

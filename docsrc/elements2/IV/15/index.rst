@@ -106,10 +106,13 @@ But it was also proved equilateral; and it has been inscribed in the circle ``AB
 
 Therefore in the given circle an equilateral and equiangular hexagon has been inscribed. Q. E. F.
 
-PORISM.
+
+.. _elem.4.15.p.1:
+
+
+**IV.15.p.1**
+
 
 From this it is manifest that the side of the hexagon is equal to the radius of the circle. 
-
 And, in like manner as in the case of the pentagon, if through the points of division on the circle we draw tangents to the circle, there will be circumscribed about the circle an equilateral and equiangular hexagon in conformity with what was explained in the case of the pentagon. 
-
 And further by means similar to those explained in the case of the pentagon we can both inscribe a circle in a given hexagon and circumscribe one about it. Q. E. F.

@@ -114,7 +114,12 @@ Therefore the polygon ``ABCDE`` also has to the polygon ``FGHKL`` a ratio duplic
 
 Therefore etc.
 
-PORISM.
+
+.. _elem.6.20.p.1:
+
+
+**VI.20.p.1**
+
 
 Similarly also it can be proved in the case of quadrilaterals that they are in the duplicate ratio of the corresponding sides. And it was also proved in the case of triangles; therefore also, generally, similar rectilineal figures are to one another in the duplicate ratio of the corresponding sides. Q. E. D.
 

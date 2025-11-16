@@ -50,6 +50,11 @@ And ``F`` is a multiple of ``C``, while ``D``, ``E`` are other, chance, equimult
 
 Therefore etc.
 
-PORISM.
+
+.. _elem.5.7.p.1:
+
+
+**V.7.p.1**
+
 
 From this it is manifest that, if any magnitudes are proportional, they will also be proportional inversely. Q. E. D.

@@ -217,6 +217,34 @@ def parse_book_xml(file_path):
                             pass
                         elif div4_type == 'QED':
                             entry_content_rst.append("\n**Q. E. D.**\n")
+                        elif div4_type == 'porism':
+                            porism_id = child.attrib.get('id')
+                            
+                            # Create canonical title like III.1.p.1
+                            porism_title = "Porism" # Default
+                            if porism_id:
+                                parts = porism_id.split('.')
+                                if len(parts) == 5:
+                                    book_roman = ROMAN_NUMERALS.get(parts[1])
+                                    prop_num = parts[2]
+                                    p_literal = parts[3]
+                                    porism_num = parts[4]
+                                    if book_roman:
+                                        porism_title = f"{book_roman}.{prop_num}.{p_literal}.{porism_num}"
+
+                            porism_content = []
+                            for grand_child in child:
+                                if grand_child.tag == 'p':
+                                    inline_rst = convert_inline_xml_to_rst(grand_child)
+                                    if inline_rst:
+                                        porism_content.append(inline_rst)
+
+                            if porism_id and porism_content:
+                                entry_content_rst.append(f"\n.. _{porism_id}:\n")
+                                entry_content_rst.append(f"**{porism_title}**\n")
+                                entry_content_rst.append("\n".join(porism_content))
+                            continue
+
                         
                         # Process content within div4
                         div4_inner_content = []

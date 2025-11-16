@@ -1,6 +1,14 @@
 changelog
 =========
 
+0.0.10
+------
+*2025-11-16*
+
+**fixed**
+
+.. + Corrected porism handling in the RST generation script to prevent duplicate content and ensure canonical IDs are used for headings.
+
 0.0.9
 -----
 *2025-11-16*

@@ -78,7 +78,12 @@ But such a straight line cannot be interposed;
 
 therefore there will not be any acute angle contained by straight lines which is greater than the angle contained by the straight line ``BA`` and the circumference ``CHA``, nor yet any acute angle contained by straight lines which is less than the angle contained by the circumference ``CHA`` and the straight line ``AE``.—
 
-PORISM.
+
+.. _elem.3.16.p.1:
+
+
+**III.16.p.1**
+
 
 From this it is manifest that the straight line drawn at right angles to the diameter of a circle from its extremity touches the circle. Q. E. D.
 
