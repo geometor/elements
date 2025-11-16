@@ -18,6 +18,25 @@ SECTION_TYPE_MAP = {
     'Prop': 'prop'
 }
 
+CATEGORIES_KEYWORDS = ['construct', 'describe', 'bisect']
+TAGS_KEYWORDS = ['line', 'circle', 'triangle']
+
+def get_taxonomy(enunciation_text):
+    categories = []
+    tags = []
+    
+    lower_text = enunciation_text.lower()
+    
+    for keyword in CATEGORIES_KEYWORDS:
+        if keyword in lower_text:
+            categories.append(keyword)
+            
+    for keyword in TAGS_KEYWORDS:
+        if keyword in lower_text:
+            tags.append(keyword)
+            
+    return categories, tags
+
 def convert_inline_xml_to_rst(element, is_enunciation=False):
     if element is None:
         return ""
@@ -151,6 +170,7 @@ def parse_book_xml(file_path):
                 entry_title = canonical_ref if canonical_ref else entry_id # Use canonical_ref as title
 
                 entry_content_rst = []
+                enunc_text = ""
                 
                 def format_as_blockquote(text):
                     if not text:
@@ -283,6 +303,8 @@ def parse_book_xml(file_path):
                     "content_rst": "\n\n".join(filter(None, entry_content_rst)),
                     "order": entry_n,
                     "number": entry_number,
+                    "type": section_type_canonical,
+                    "enunciation": enunc_text,
                 })
             book_data["sections"].append(section_data)
     return book_data
@@ -311,10 +333,19 @@ def generate_rst_files(book_data, output_dir):
                 # Create entry index.rst
                 title = entry['canonical_ref']
                 underline = "=" * len(title)
+
+                categories, tags = get_taxonomy(entry['enunciation'])
+
                 entry_index_content = [
                     f":order: {entry['order']}",
-                    f":number: {entry['number']}\n",
+                    f":number: {entry['number']}",
+                    f":type: {entry['type']}",
                 ]
+                if categories:
+                    entry_index_content.append(f":categories: {', '.join(categories)}")
+                if tags:
+                    entry_index_content.append(f":tags: {', '.join(tags)}")
+                entry_index_content.append('\n')
 
                 # Copy images and add figure directives
                 if canonical_images_dir.exists() and entry['canonical_ref']:

@@ -1,5 +1,7 @@
 :order: 7
 :number: 25
+:type: prop
+
 
 .. _V.7:
 

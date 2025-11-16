@@ -1,5 +1,7 @@
 :order: 4
 :number: 22
+:type: prop
+
 
 .. _V.4:
 

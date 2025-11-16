@@ -1,5 +1,7 @@
 :order: 5
 :number: 23
+:type: prop
+
 
 .. _V.5:
 

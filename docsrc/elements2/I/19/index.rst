@@ -1,5 +1,8 @@
 :order: 19
 :number: 52
+:type: prop
+:tags: triangle
+
 
 
 

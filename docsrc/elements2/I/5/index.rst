@@ -1,5 +1,8 @@
 :order: 5
 :number: 38
+:type: prop
+:tags: line, triangle
+
 
 
 

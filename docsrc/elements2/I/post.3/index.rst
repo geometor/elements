@@ -1,5 +1,9 @@
 :order: 3
 :number: 26
+:type: post
+:categories: describe
+:tags: circle
+
 
 .. _I.post.3:
 

@@ -1,5 +1,8 @@
 :order: 6
 :number: 6
+:type: def
+:tags: line, circle
+
 
 .. _III.def.6:
 

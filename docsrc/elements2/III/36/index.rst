@@ -1,5 +1,8 @@
 :order: 36
 :number: 47
+:type: prop
+:tags: line, circle
+
 
 
 

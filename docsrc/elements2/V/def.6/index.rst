@@ -1,5 +1,7 @@
 :order: 6
 :number: 6
+:type: def
+
 
 .. _V.def.6:
 

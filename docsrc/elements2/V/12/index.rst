@@ -1,5 +1,7 @@
 :order: 12
 :number: 30
+:type: prop
+
 
 .. _V.12:
 

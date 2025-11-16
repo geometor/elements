@@ -1,5 +1,8 @@
 :order: 1
 :number: 24
+:type: post
+:tags: line
+
 
 .. _I.post.1:
 

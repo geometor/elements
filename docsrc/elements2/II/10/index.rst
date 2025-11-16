@@ -1,5 +1,9 @@
 :order: 10
 :number: 12
+:type: prop
+:categories: describe, bisect
+:tags: line
+
 
 
 

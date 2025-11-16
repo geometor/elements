@@ -1,5 +1,7 @@
 :order: 9
 :number: 27
+:type: prop
+
 
 .. _V.9:
 

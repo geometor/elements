@@ -1,5 +1,7 @@
 :order: 7
 :number: 7
+:type: def
+
 
 .. _V.def.7:
 

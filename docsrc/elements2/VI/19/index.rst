@@ -1,5 +1,8 @@
 :order: 19
 :number: 24
+:type: prop
+:tags: triangle
+
 
 .. _VI.19:
 

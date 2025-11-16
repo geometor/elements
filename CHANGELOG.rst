@@ -1,6 +1,14 @@
 changelog
 =========
 
+0.0.9
+-----
+*2025-11-16*
+
+**added**
+
+.. + Added taxonomy fields to the generated RST files, including `:type:`, `:categories:`, and `:tags:`.
+
 0.0.8
 -----
 *2025-11-16*

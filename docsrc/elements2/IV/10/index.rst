@@ -1,5 +1,9 @@
 :order: 10
 :number: 17
+:type: prop
+:categories: construct
+:tags: triangle
+
 
 
 

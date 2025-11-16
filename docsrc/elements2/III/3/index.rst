@@ -1,5 +1,9 @@
 :order: 3
 :number: 14
+:type: prop
+:categories: bisect
+:tags: line, circle
+
 
 
 

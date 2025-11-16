@@ -1,5 +1,7 @@
 :order: 10
 :number: 10
+:type: def
+
 
 .. _V.def.10:
 
