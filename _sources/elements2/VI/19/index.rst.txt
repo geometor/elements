@@ -32,7 +32,12 @@ But the triangle ``ABG`` is equal to the triangle ``DEF``; therefore the triangl
 
 Therefore etc.
 
-PORISM.
+
+.. _elem.6.19.p.1:
+
+
+**VI.19.p.1**
+
 
 From this it is manifest that, if three straight lines be proportional, then, as the first is to the third, so is the figure described on the first to that which is similar and similarly described on the second. Q. E. D.
 

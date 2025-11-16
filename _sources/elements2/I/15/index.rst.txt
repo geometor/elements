@@ -34,7 +34,12 @@ Similarly it can be proved that the angles ``CEB``, ``DEA`` are also equal.
 
 Therefore etc. Q. E. D. 
 
-Porism.
+
+.. _elem.1.15.p.1:
+
+
+**I.15.p.1**
+
 
 [From this it is manifest that, if two straight lines cut one another, they will make the angles at the point of section equal to four right angles.
 

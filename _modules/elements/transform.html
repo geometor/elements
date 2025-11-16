@@ -30,10 +30,10 @@
           <a href="../../mission/index.html"  >mission</a>
         </li>
         <li>
-          <a href="../../elements2/index.html"  >Elements 2.0</a>
+          <a href="../../usage.html"  >usage</a>
         </li>
         <li>
-          <a href="../../usage.html"  >usage</a>
+          <a href="../../elements2/index.html"  >Elements 2.0</a>
         </li>
         <li>
           <a href="../../log/index.html"  >log</a>
@@ -304,6 +304,34 @@
                             <span class="k">pass</span>
                         <span class="k">elif</span> <span class="n">div4_type</span> <span class="o">==</span> <span class="s1">&#39;QED&#39;</span><span class="p">:</span>
                             <span class="n">entry_content_rst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">**Q. E. D.**</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                        <span class="k">elif</span> <span class="n">div4_type</span> <span class="o">==</span> <span class="s1">&#39;porism&#39;</span><span class="p">:</span>
+                            <span class="n">porism_id</span> <span class="o">=</span> <span class="n">child</span><span class="o">.</span><span class="n">attrib</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">)</span>
+                            
+                            <span class="c1"># Create canonical title like III.1.p.1</span>
+                            <span class="n">porism_title</span> <span class="o">=</span> <span class="s2">&quot;Porism&quot;</span> <span class="c1"># Default</span>
+                            <span class="k">if</span> <span class="n">porism_id</span><span class="p">:</span>
+                                <span class="n">parts</span> <span class="o">=</span> <span class="n">porism_id</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span>
+                                <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">parts</span><span class="p">)</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span>
+                                    <span class="n">book_roman</span> <span class="o">=</span> <span class="n">ROMAN_NUMERALS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">parts</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+                                    <span class="n">prop_num</span> <span class="o">=</span> <span class="n">parts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+                                    <span class="n">p_literal</span> <span class="o">=</span> <span class="n">parts</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+                                    <span class="n">porism_num</span> <span class="o">=</span> <span class="n">parts</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+                                    <span class="k">if</span> <span class="n">book_roman</span><span class="p">:</span>
+                                        <span class="n">porism_title</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">book_roman</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">prop_num</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">p_literal</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">porism_num</span><span class="si">}</span><span class="s2">&quot;</span>
+
+                            <span class="n">porism_content</span> <span class="o">=</span> <span class="p">[]</span>
+                            <span class="k">for</span> <span class="n">grand_child</span> <span class="ow">in</span> <span class="n">child</span><span class="p">:</span>
+                                <span class="k">if</span> <span class="n">grand_child</span><span class="o">.</span><span class="n">tag</span> <span class="o">==</span> <span class="s1">&#39;p&#39;</span><span class="p">:</span>
+                                    <span class="n">inline_rst</span> <span class="o">=</span> <span class="n">convert_inline_xml_to_rst</span><span class="p">(</span><span class="n">grand_child</span><span class="p">)</span>
+                                    <span class="k">if</span> <span class="n">inline_rst</span><span class="p">:</span>
+                                        <span class="n">porism_content</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">inline_rst</span><span class="p">)</span>
+
+                            <span class="k">if</span> <span class="n">porism_id</span> <span class="ow">and</span> <span class="n">porism_content</span><span class="p">:</span>
+                                <span class="n">entry_content_rst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">.. _</span><span class="si">{</span><span class="n">porism_id</span><span class="si">}</span><span class="s2">:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                                <span class="n">entry_content_rst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;**</span><span class="si">{</span><span class="n">porism_title</span><span class="si">}</span><span class="s2">**</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                                <span class="n">entry_content_rst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">porism_content</span><span class="p">))</span>
+                            <span class="k">continue</span>
+
                         
                         <span class="c1"># Process content within div4</span>
                         <span class="n">div4_inner_content</span> <span class="o">=</span> <span class="p">[]</span>

@@ -15,9 +15,9 @@
 I.22
 ====
 
-   Out of three straight lines, which are equal to three given straight lines, to construct a triangle: thus it is necessary that two of the straight lines taken together in any manner should be greater than the remaining one. [:ref:`I.20`]
+   Out of three straight lines, which are equal to three given straight lines, to construct a triangle: thus it is necessary that two of the straight lines taken together in any manner should be greater than the remaining one.
 
-Let the three given straight lines be ``A``, ``B``, ``C``, and of these let two taken together in any manner be greater than the remaining one, namely ``A``, ``B`` greater than ``C``, ``A``, ``C`` greater than ``B``, and ``B``, ``C`` greater than ``A``; thus it is required to construct a triangle out of straight lines equal to ``A``, ``B``, ``C``. 
+Let the three given straight lines be ``A``, ``B``, ``C``, and of these let two taken together in any manner be greater than the remaining one, namely ``A``, ``B`` greater than ``C``, ``A``, ``C`` greater than ``B``, and ``B``, ``C`` greater than ``A``; thus it is required to construct a triangle out of straight lines equal to ``A``, ``B``, ``C``. [:ref:`I.20`]
 
 Let there be set out a straight line ``DE``, terminated at ``D`` but of infinite length in the direction of ``E``, and let ``DF`` be made equal to ``A``, ``FG`` equal to ``B``, and ``GH`` equal to ``C``. [:ref:`I.3`]
 

@@ -62,7 +62,12 @@ Similarly we can prove that neither is any other point except ``F``.
    Therefore the point ``F`` is the centre of the circle ``ABC``.
 
 
-PORISM.
+
+.. _elem.3.1.p.1:
+
+
+**III.1.p.1**
+
 
 From this it is manifest that, if in a circle a straight line cut a straight line into two equal parts and at right angles, the centre of the circle is on the cutting straight line. Q. E. F.
 

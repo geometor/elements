@@ -29,7 +29,12 @@ Therefore also the remainder ``EB`` will be to the remainder ``FD`` as the whole
 Therefore etc.
 [
 
-PORISM.
+
+.. _elem.5.19.p.1:
+
+
+**V.19.p.1**
+
 
 From this it is manifest that, if magnitudes be proportional componendo, they will also be proportional convertendo.
 
