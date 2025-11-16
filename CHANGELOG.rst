@@ -1,6 +1,15 @@
 changelog
 =========
 
+0.0.11
+------
+*2025-11-16*
+
+**changed**
+
+.. + Refactored XML source files, consolidating them into book-level files.
+.. + Corrected misplaced proposition reference in `elem.1.22`.
+
 0.0.10
 ------
 *2025-11-16*
