@@ -7,7 +7,6 @@ GEOMETOR • elements
 
    mission/index.rst
    log/index.rst
-   elements/index.rst
    elements2/index.rst
    modules/index.rst
    refs/index.rst

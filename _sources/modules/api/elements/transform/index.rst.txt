@@ -1,0 +1,41 @@
+elements.transform
+==================
+
+.. py:module:: elements.transform
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   elements.transform.ROMAN_NUMERALS
+   elements.transform.SECTION_TYPE_MAP
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   elements.transform.convert_inline_xml_to_rst
+   elements.transform.parse_book_xml
+   elements.transform.generate_rst_files
+   elements.transform.main
+
+
+Module Contents
+---------------
+
+.. py:data:: ROMAN_NUMERALS
+
+.. py:data:: SECTION_TYPE_MAP
+
+.. py:function:: convert_inline_xml_to_rst(element, is_enunciation=False)
+
+.. py:function:: parse_book_xml(file_path)
+
+.. py:function:: generate_rst_files(book_data, output_dir)
+
+.. py:function:: main()
+

@@ -1,0 +1,502 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>elements.transform &mdash; Project name not set  documentation</title>
+  <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=e399521c" />
+  <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="../../index.html">
+        <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">elements</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../mission/index.html"  >mission</a>
+        </li>
+        <li>
+          <a href="../../usage.html"  >usage</a>
+        </li>
+        <li>
+          <a href="../../elements2/index.html"  >Elements 2.0</a>
+        </li>
+        <li>
+          <a href="../../modules/index.html"  >modules</a>
+        </li>
+        <li>
+          <a href="../../log/index.html"  >log</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main>
+
+    <article>
+      <header>
+      <nav class="breadcrumbs">
+        <span><a href="../../index.html">Home</a></span>
+          <span>/</span>
+        <span><a href="../index.html">Module code</a></span>
+        <span>/</span>
+        <span>elements.transform</span>
+      </nav>
+        <nav class="context">
+          <div class="prev">
+          </div>
+          <div class="next">
+          </div>
+        </nav>
+      </header>
+      <div class="content">
+          <h1>Source code for elements.transform</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span><span class="w"> </span><span class="nn">xml.etree.ElementTree</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">ET</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">re</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">xml.sax.saxutils</span><span class="w"> </span><span class="kn">import</span> <span class="n">escape</span>
+
+<div class="viewcode-block" id="ROMAN_NUMERALS">
+<a class="viewcode-back" href="../../modules/api/elements/transform/index.html#elements.transform.ROMAN_NUMERALS">[docs]</a>
+<span class="n">ROMAN_NUMERALS</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;1&#39;</span><span class="p">:</span> <span class="s1">&#39;I&#39;</span><span class="p">,</span> <span class="s1">&#39;2&#39;</span><span class="p">:</span> <span class="s1">&#39;II&#39;</span><span class="p">,</span> <span class="s1">&#39;3&#39;</span><span class="p">:</span> <span class="s1">&#39;III&#39;</span><span class="p">,</span> <span class="s1">&#39;4&#39;</span><span class="p">:</span> <span class="s1">&#39;IV&#39;</span><span class="p">,</span> <span class="s1">&#39;5&#39;</span><span class="p">:</span> <span class="s1">&#39;V&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;6&#39;</span><span class="p">:</span> <span class="s1">&#39;VI&#39;</span><span class="p">,</span> <span class="s1">&#39;7&#39;</span><span class="p">:</span> <span class="s1">&#39;VII&#39;</span><span class="p">,</span> <span class="s1">&#39;8&#39;</span><span class="p">:</span> <span class="s1">&#39;VIII&#39;</span><span class="p">,</span> <span class="s1">&#39;9&#39;</span><span class="p">:</span> <span class="s1">&#39;IX&#39;</span><span class="p">,</span> <span class="s1">&#39;10&#39;</span><span class="p">:</span> <span class="s1">&#39;X&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;11&#39;</span><span class="p">:</span> <span class="s1">&#39;XI&#39;</span><span class="p">,</span> <span class="s1">&#39;12&#39;</span><span class="p">:</span> <span class="s1">&#39;XII&#39;</span><span class="p">,</span> <span class="s1">&#39;13&#39;</span><span class="p">:</span> <span class="s1">&#39;XIII&#39;</span>
+<span class="p">}</span></div>
+
+
+<div class="viewcode-block" id="SECTION_TYPE_MAP">
+<a class="viewcode-back" href="../../modules/api/elements/transform/index.html#elements.transform.SECTION_TYPE_MAP">[docs]</a>
+<span class="n">SECTION_TYPE_MAP</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;Def&#39;</span><span class="p">:</span> <span class="s1">&#39;def&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Post&#39;</span><span class="p">:</span> <span class="s1">&#39;post&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;CN&#39;</span><span class="p">:</span> <span class="s1">&#39;cn&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Prop&#39;</span><span class="p">:</span> <span class="s1">&#39;prop&#39;</span>
+<span class="p">}</span></div>
+
+
+<div class="viewcode-block" id="convert_inline_xml_to_rst">
+<a class="viewcode-back" href="../../modules/api/elements/transform/index.html#elements.transform.convert_inline_xml_to_rst">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">convert_inline_xml_to_rst</span><span class="p">(</span><span class="n">element</span><span class="p">,</span> <span class="n">is_enunciation</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">element</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;&quot;</span>
+
+    <span class="c1"># Handle non-recursive tags first</span>
+    <span class="k">if</span> <span class="n">element</span><span class="o">.</span><span class="n">tag</span> <span class="o">==</span> <span class="s1">&#39;ref&#39;</span><span class="p">:</span>
+        <span class="n">target</span> <span class="o">=</span> <span class="n">element</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;target&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">target</span><span class="p">:</span>
+            <span class="n">target_parts</span> <span class="o">=</span> <span class="n">target</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span>
+            <span class="n">canonical_ref</span> <span class="o">=</span> <span class="kc">None</span> <span class="c1"># Initialize as None</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">target_parts</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">3</span> <span class="ow">and</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;elem&#39;</span><span class="p">:</span>
+                <span class="n">book_num_str</span> <span class="o">=</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+                <span class="n">book_num_roman</span> <span class="o">=</span> <span class="n">ROMAN_NUMERALS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">book_num_str</span><span class="p">)</span>
+                
+                <span class="k">if</span> <span class="n">book_num_roman</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">target_parts</span><span class="p">)</span> <span class="o">==</span> <span class="mi">5</span> <span class="ow">and</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;c&#39;</span> <span class="ow">and</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;n&#39;</span><span class="p">:</span>
+                        <span class="n">section_type_canonical</span> <span class="o">=</span> <span class="s1">&#39;cn&#39;</span>
+                        <span class="n">item_num</span> <span class="o">=</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+                        <span class="n">canonical_ref</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">book_num_roman</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">section_type_canonical</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">item_num</span><span class="si">}</span><span class="s2">&quot;</span>
+                    <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">target_parts</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
+                        <span class="n">section_type_str</span> <span class="o">=</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+                        <span class="n">item_num</span> <span class="o">=</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+                        <span class="n">section_type_canonical</span> <span class="o">=</span> <span class="n">SECTION_TYPE_MAP</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">section_type_str</span><span class="o">.</span><span class="n">capitalize</span><span class="p">())</span>
+                        <span class="k">if</span> <span class="n">section_type_canonical</span><span class="p">:</span>
+                            <span class="n">canonical_ref</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">book_num_roman</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">section_type_canonical</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">item_num</span><span class="si">}</span><span class="s2">&quot;</span>
+                    <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">target_parts</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+                        <span class="n">item_num</span> <span class="o">=</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+                        <span class="k">if</span> <span class="n">book_num_roman</span><span class="p">:</span>
+                            <span class="n">canonical_ref</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">book_num_roman</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">item_num</span><span class="si">}</span><span class="s2">&quot;</span>
+            
+            <span class="n">ref_link</span> <span class="o">=</span> <span class="n">canonical_ref</span> <span class="k">if</span> <span class="n">canonical_ref</span> <span class="k">else</span> <span class="n">target</span>
+            <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;:ref:`</span><span class="si">{</span><span class="n">ref_link</span><span class="si">}</span><span class="s2">`&quot;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">link_text</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">element</span><span class="o">.</span><span class="n">itertext</span><span class="p">())</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+            <span class="n">temp_split_parts</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;[\s.]+&#39;</span><span class="p">,</span> <span class="n">link_text</span><span class="p">)</span>
+            <span class="n">canonical_ref</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;**</span><span class="si">{</span><span class="n">link_text</span><span class="si">}</span><span class="s2">**&quot;</span>
+            <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">canonical_ref</span><span class="si">}</span><span class="s2">&quot;</span>
+    
+    <span class="k">if</span> <span class="n">element</span><span class="o">.</span><span class="n">tag</span> <span class="o">==</span> <span class="s1">&#39;lb&#39;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span>
+        
+    <span class="k">if</span> <span class="n">element</span><span class="o">.</span><span class="n">tag</span> <span class="o">==</span> <span class="s1">&#39;figure&#39;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;&quot;</span> <span class="c1"># Handled by the p-handler which deals with block-level elements</span>
+
+    <span class="c1"># Handle container-like tags recursively</span>
+    <span class="n">parts</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">if</span> <span class="n">element</span><span class="o">.</span><span class="n">text</span><span class="p">:</span>
+        <span class="n">parts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">element</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">child</span> <span class="ow">in</span> <span class="n">element</span><span class="p">:</span>
+        <span class="n">parts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">convert_inline_xml_to_rst</span><span class="p">(</span><span class="n">child</span><span class="p">,</span> <span class="n">is_enunciation</span><span class="p">))</span>
+        <span class="k">if</span> <span class="n">child</span><span class="o">.</span><span class="n">tail</span><span class="p">:</span>
+            <span class="n">parts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">child</span><span class="o">.</span><span class="n">tail</span><span class="p">)</span>
+    
+    <span class="n">content</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">parts</span><span class="p">)</span>
+
+    <span class="c1"># Apply formatting based on the container&#39;s tag</span>
+    <span class="k">if</span> <span class="n">element</span><span class="o">.</span><span class="n">tag</span> <span class="o">==</span> <span class="s1">&#39;emph&#39;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">is_enunciation</span><span class="p">:</span>
+            <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">content</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;``</span><span class="si">{</span><span class="n">content</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="si">}</span><span class="s2">``&quot;</span>
+    <span class="k">elif</span> <span class="n">element</span><span class="o">.</span><span class="n">tag</span> <span class="o">==</span> <span class="s1">&#39;term&#39;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;**</span><span class="si">{</span><span class="n">content</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="si">}</span><span class="s2">**&quot;</span>
+
+    <span class="c1"># For other tags (like p, hi, div), just return the processed content</span>
+    <span class="c1"># Final whitespace cleanup is handled by the caller (flush_inline_parts)</span>
+    <span class="k">return</span> <span class="n">content</span></div>
+
+
+<div class="viewcode-block" id="parse_book_xml">
+<a class="viewcode-back" href="../../modules/api/elements/transform/index.html#elements.transform.parse_book_xml">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">parse_book_xml</span><span class="p">(</span><span class="n">file_path</span><span class="p">):</span>
+    <span class="n">tree</span> <span class="o">=</span> <span class="n">ET</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
+    <span class="n">root</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">getroot</span><span class="p">()</span>
+
+    <span class="n">book_data</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;book_number_roman&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s2">&quot;book_number_arabic&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s2">&quot;sections&quot;</span><span class="p">:</span> <span class="p">[]</span>
+    <span class="p">}</span>
+
+    <span class="n">div1</span> <span class="o">=</span> <span class="n">root</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;.//div1[@type=&#39;book&#39;]&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">div1</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">book_data</span><span class="p">[</span><span class="s2">&quot;book_number_arabic&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">div1</span><span class="o">.</span><span class="n">attrib</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;n&quot;</span><span class="p">)</span>
+        <span class="n">book_data</span><span class="p">[</span><span class="s2">&quot;book_number_roman&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">ROMAN_NUMERALS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">book_data</span><span class="p">[</span><span class="s2">&quot;book_number_arabic&quot;</span><span class="p">])</span>
+        
+        <span class="n">entry_number</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># Initialize entry_number here</span>
+        <span class="k">for</span> <span class="n">div2</span> <span class="ow">in</span> <span class="n">div1</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="s2">&quot;.//div2&quot;</span><span class="p">):</span>
+            <span class="n">section_type_raw</span> <span class="o">=</span> <span class="n">div2</span><span class="o">.</span><span class="n">attrib</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;n&quot;</span><span class="p">)</span>
+            <span class="n">section_type_canonical</span> <span class="o">=</span> <span class="n">SECTION_TYPE_MAP</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">section_type_raw</span><span class="p">)</span>
+            <span class="n">section_head</span> <span class="o">=</span> <span class="n">div2</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;./head&quot;</span><span class="p">)</span>
+            <span class="n">section_title</span> <span class="o">=</span> <span class="n">section_head</span><span class="o">.</span><span class="n">text</span> <span class="k">if</span> <span class="n">section_head</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">section_type_raw</span>
+
+            <span class="n">section_data</span> <span class="o">=</span> <span class="p">{</span>
+                <span class="s2">&quot;type_raw&quot;</span><span class="p">:</span> <span class="n">section_type_raw</span><span class="p">,</span>
+                <span class="s2">&quot;type_canonical&quot;</span><span class="p">:</span> <span class="n">section_type_canonical</span><span class="p">,</span>
+                <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="n">section_title</span><span class="p">,</span>
+                <span class="s2">&quot;entries&quot;</span><span class="p">:</span> <span class="p">[]</span>
+            <span class="p">}</span>
+
+            <span class="k">for</span> <span class="n">div3</span> <span class="ow">in</span> <span class="n">div2</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="s2">&quot;.//div3&quot;</span><span class="p">):</span>
+                <span class="n">entry_number</span> <span class="o">+=</span> <span class="mi">1</span> <span class="c1"># Increment entry_number here</span>
+                <span class="n">entry_id</span> <span class="o">=</span> <span class="n">div3</span><span class="o">.</span><span class="n">attrib</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;id&quot;</span><span class="p">)</span>
+                <span class="n">entry_n</span> <span class="o">=</span> <span class="n">div3</span><span class="o">.</span><span class="n">attrib</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;n&quot;</span><span class="p">)</span>
+                <span class="n">entry_head</span> <span class="o">=</span> <span class="n">div3</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;./head&quot;</span><span class="p">)</span>
+                <span class="n">entry_title</span> <span class="o">=</span> <span class="n">entry_head</span><span class="o">.</span><span class="n">text</span> <span class="k">if</span> <span class="n">entry_head</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">entry_id</span>
+
+                <span class="c1"># Generate canonical reference for the entry</span>
+                <span class="n">canonical_ref</span> <span class="o">=</span> <span class="kc">None</span>
+                <span class="n">folder_name</span> <span class="o">=</span> <span class="kc">None</span>
+                <span class="c1"># entry_title will be set to canonical_ref later</span>
+
+                <span class="k">if</span> <span class="n">entry_id</span><span class="p">:</span>
+                    <span class="n">parts</span> <span class="o">=</span> <span class="n">entry_id</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span>
+                    <span class="n">book_num_roman</span> <span class="o">=</span> <span class="n">ROMAN_NUMERALS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">parts</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+
+                    <span class="k">if</span> <span class="n">book_num_roman</span><span class="p">:</span>
+                        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">parts</span><span class="p">)</span> <span class="o">==</span> <span class="mi">5</span> <span class="ow">and</span> <span class="n">parts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;c&#39;</span> <span class="ow">and</span> <span class="n">parts</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;n&#39;</span><span class="p">:</span>
+                            <span class="n">item_num</span> <span class="o">=</span> <span class="n">parts</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+                            <span class="n">canonical_ref</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">book_num_roman</span><span class="si">}</span><span class="s2">.cn.</span><span class="si">{</span><span class="n">item_num</span><span class="si">}</span><span class="s2">&quot;</span>
+                            <span class="n">folder_name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;cn.</span><span class="si">{</span><span class="n">item_num</span><span class="si">}</span><span class="s2">&quot;</span>
+                        <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">parts</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
+                            <span class="n">section_type</span> <span class="o">=</span> <span class="n">SECTION_TYPE_MAP</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">parts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">capitalize</span><span class="p">())</span>
+                            <span class="n">item_num</span> <span class="o">=</span> <span class="n">parts</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+                            <span class="k">if</span> <span class="n">section_type</span><span class="p">:</span>
+                                <span class="n">canonical_ref</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">book_num_roman</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">section_type</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">item_num</span><span class="si">}</span><span class="s2">&quot;</span>
+                                <span class="n">folder_name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">section_type</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">item_num</span><span class="si">}</span><span class="s2">&quot;</span>
+                        <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">parts</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+                            <span class="n">item_num</span> <span class="o">=</span> <span class="n">parts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+                            <span class="n">canonical_ref</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">book_num_roman</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">item_num</span><span class="si">}</span><span class="s2">&quot;</span>
+                            <span class="n">folder_name</span> <span class="o">=</span> <span class="n">item_num</span>
+                
+                <span class="n">entry_title</span> <span class="o">=</span> <span class="n">canonical_ref</span> <span class="k">if</span> <span class="n">canonical_ref</span> <span class="k">else</span> <span class="n">entry_id</span> <span class="c1"># Use canonical_ref as title</span>
+
+                <span class="n">entry_content_rst</span> <span class="o">=</span> <span class="p">[]</span>
+                
+                <span class="k">def</span><span class="w"> </span><span class="nf">format_as_blockquote</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+                    <span class="k">if</span> <span class="ow">not</span> <span class="n">text</span><span class="p">:</span>
+                        <span class="k">return</span> <span class="s2">&quot;&quot;</span>
+                    <span class="n">lines</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+                    <span class="n">indented_lines</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s2">&quot;   </span><span class="si">{</span><span class="n">line</span><span class="si">}</span><span class="s2">&quot;</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">]</span>
+                    <span class="k">return</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">indented_lines</span><span class="p">)</span>
+
+                <span class="c1"># Handle Enunciation: either from div4 or the first p tag</span>
+                <span class="n">enunc_div</span> <span class="o">=</span> <span class="n">div3</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;./div4[@type=&#39;Enunc&#39;]&quot;</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">enunc_div</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="n">enunc_p</span> <span class="o">=</span> <span class="n">enunc_div</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">)</span>
+                    <span class="k">if</span> <span class="n">enunc_p</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                        <span class="n">enunc_text</span> <span class="o">=</span> <span class="n">convert_inline_xml_to_rst</span><span class="p">(</span><span class="n">enunc_p</span><span class="p">,</span> <span class="n">is_enunciation</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+                        <span class="n">entry_content_rst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">format_as_blockquote</span><span class="p">(</span><span class="n">enunc_text</span><span class="p">))</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="c1"># If no Enunc div4, treat the first p as enunciation</span>
+                    <span class="n">first_p</span> <span class="o">=</span> <span class="n">div3</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">)</span>
+                    <span class="k">if</span> <span class="n">first_p</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                        <span class="n">enunc_text</span> <span class="o">=</span> <span class="n">convert_inline_xml_to_rst</span><span class="p">(</span><span class="n">first_p</span><span class="p">,</span> <span class="n">is_enunciation</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+                        <span class="n">entry_content_rst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">format_as_blockquote</span><span class="p">(</span><span class="n">enunc_text</span><span class="p">))</span>
+                        <span class="c1"># To avoid processing it again, we can remove it or set a flag.</span>
+                        <span class="c1"># For simplicity, we&#39;ll just be careful in the loop below.</span>
+                
+                <span class="c1"># Process remaining elements</span>
+                <span class="n">is_first_p</span> <span class="o">=</span> <span class="kc">True</span>
+                <span class="k">for</span> <span class="n">child</span> <span class="ow">in</span> <span class="n">div3</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="n">child</span><span class="o">.</span><span class="n">tag</span> <span class="o">==</span> <span class="s1">&#39;head&#39;</span><span class="p">:</span>
+                        <span class="k">continue</span>
+
+                    <span class="c1"># Skip the enunciation div4 if it exists</span>
+                    <span class="k">if</span> <span class="n">child</span><span class="o">.</span><span class="n">tag</span> <span class="o">==</span> <span class="s1">&#39;div4&#39;</span> <span class="ow">and</span> <span class="n">child</span><span class="o">.</span><span class="n">attrib</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;type&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;Enunc&#39;</span><span class="p">:</span>
+                        <span class="k">continue</span>
+                    
+                    <span class="c1"># Skip the first p if it was used as enunciation</span>
+                    <span class="k">if</span> <span class="n">child</span><span class="o">.</span><span class="n">tag</span> <span class="o">==</span> <span class="s1">&#39;p&#39;</span> <span class="ow">and</span> <span class="n">is_first_p</span> <span class="ow">and</span> <span class="n">enunc_div</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                        <span class="n">is_first_p</span> <span class="o">=</span> <span class="kc">False</span>
+                        <span class="k">continue</span>
+                    <span class="n">is_first_p</span> <span class="o">=</span> <span class="kc">False</span>
+
+                    <span class="k">if</span> <span class="n">child</span><span class="o">.</span><span class="n">tag</span> <span class="o">==</span> <span class="s1">&#39;div4&#39;</span><span class="p">:</span>
+                        <span class="n">div4_type</span> <span class="o">=</span> <span class="n">child</span><span class="o">.</span><span class="n">attrib</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;type&#39;</span><span class="p">)</span>
+                        <span class="k">if</span> <span class="n">div4_type</span> <span class="o">==</span> <span class="s1">&#39;Proof&#39;</span><span class="p">:</span>
+                            <span class="n">entry_content_rst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">**Proof.**</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                        <span class="k">elif</span> <span class="n">div4_type</span> <span class="o">==</span> <span class="s1">&#39;QED&#39;</span><span class="p">:</span>
+                            <span class="n">entry_content_rst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">**Q. E. D.**</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                        
+                        <span class="c1"># Process content within div4</span>
+                        <span class="n">div4_inner_content</span> <span class="o">=</span> <span class="p">[]</span>
+                        <span class="k">for</span> <span class="n">grand_child</span> <span class="ow">in</span> <span class="n">child</span><span class="p">:</span>
+                            <span class="k">if</span> <span class="n">grand_child</span><span class="o">.</span><span class="n">tag</span> <span class="o">==</span> <span class="s1">&#39;p&#39;</span><span class="p">:</span>
+                                <span class="n">inline_rst</span> <span class="o">=</span> <span class="n">convert_inline_xml_to_rst</span><span class="p">(</span><span class="n">grand_child</span><span class="p">)</span>
+                                <span class="k">if</span> <span class="n">inline_rst</span><span class="p">:</span>
+                                    <span class="n">div4_inner_content</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">inline_rst</span><span class="p">)</span>
+                            <span class="k">elif</span> <span class="n">grand_child</span><span class="o">.</span><span class="n">tag</span> <span class="o">==</span> <span class="s1">&#39;figure&#39;</span><span class="p">:</span>
+                                <span class="n">div4_inner_content</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">.. figure:: /_images/placeholder.png</span><span class="se">\n</span><span class="s2">   :alt: Figure placeholder</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                            <span class="k">elif</span> <span class="n">grand_child</span><span class="o">.</span><span class="n">tag</span> <span class="o">==</span> <span class="s1">&#39;hi&#39;</span> <span class="ow">and</span> <span class="n">grand_child</span><span class="o">.</span><span class="n">attrib</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;rend&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;center&#39;</span><span class="p">:</span>
+                                <span class="n">content</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">grand_child</span><span class="o">.</span><span class="n">itertext</span><span class="p">())</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+                                <span class="k">if</span> <span class="n">content</span><span class="p">:</span>
+                                    <span class="n">div4_inner_content</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">.. container:: center</span><span class="se">\n\n</span><span class="s2">   </span><span class="si">{</span><span class="n">content</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                            <span class="k">else</span><span class="p">:</span>
+                                <span class="n">inline_rst</span> <span class="o">=</span> <span class="n">convert_inline_xml_to_rst</span><span class="p">(</span><span class="n">grand_child</span><span class="p">)</span>
+                                <span class="k">if</span> <span class="n">inline_rst</span><span class="p">:</span>
+                                    <span class="n">div4_inner_content</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">inline_rst</span><span class="p">)</span>
+                        
+                        <span class="k">if</span> <span class="n">div4_inner_content</span><span class="p">:</span>
+                            <span class="n">entry_content_rst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">div4_inner_content</span><span class="p">))</span>
+
+                    <span class="k">elif</span> <span class="n">child</span><span class="o">.</span><span class="n">tag</span> <span class="o">==</span> <span class="s1">&#39;p&#39;</span><span class="p">:</span>
+                        <span class="n">paragraph_rst_blocks</span> <span class="o">=</span> <span class="p">[]</span>
+                        <span class="n">current_inline_parts</span> <span class="o">=</span> <span class="p">[]</span>
+
+                        <span class="k">def</span><span class="w"> </span><span class="nf">flush_inline_parts</span><span class="p">():</span>
+                            <span class="k">nonlocal</span> <span class="n">current_inline_parts</span>
+                            <span class="k">if</span> <span class="ow">not</span> <span class="n">current_inline_parts</span><span class="p">:</span>
+                                <span class="k">return</span>
+                            <span class="n">full_text</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">current_inline_parts</span><span class="p">)</span>
+                            <span class="n">lines</span> <span class="o">=</span> <span class="n">full_text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+                            <span class="n">cleaned_lines</span> <span class="o">=</span> <span class="p">[</span><span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;\s+&#39;</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">line</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">]</span>
+                            <span class="n">final_text</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">line</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">cleaned_lines</span> <span class="k">if</span> <span class="n">line</span><span class="p">)</span>
+                            <span class="k">if</span> <span class="n">final_text</span><span class="p">:</span>
+                                <span class="n">paragraph_rst_blocks</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">final_text</span><span class="p">)</span>
+                            <span class="n">current_inline_parts</span> <span class="o">=</span> <span class="p">[]</span>
+
+                        <span class="k">if</span> <span class="n">child</span><span class="o">.</span><span class="n">text</span><span class="p">:</span>
+                            <span class="n">current_inline_parts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">child</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+
+                        <span class="k">for</span> <span class="n">grand_child</span> <span class="ow">in</span> <span class="n">child</span><span class="p">:</span>
+                            <span class="k">if</span> <span class="n">grand_child</span><span class="o">.</span><span class="n">tag</span> <span class="o">==</span> <span class="s1">&#39;figure&#39;</span><span class="p">:</span>
+                                <span class="n">flush_inline_parts</span><span class="p">()</span>
+                                <span class="n">paragraph_rst_blocks</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">.. figure:: /_images/placeholder.png</span><span class="se">\n</span><span class="s2">   :alt: Figure placeholder</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                            <span class="k">elif</span> <span class="n">grand_child</span><span class="o">.</span><span class="n">tag</span> <span class="o">==</span> <span class="s1">&#39;hi&#39;</span> <span class="ow">and</span> <span class="n">grand_child</span><span class="o">.</span><span class="n">attrib</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;rend&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;center&#39;</span><span class="p">:</span>
+                                <span class="n">flush_inline_parts</span><span class="p">()</span>
+                                <span class="n">content</span> <span class="o">=</span> <span class="n">convert_inline_xml_to_rst</span><span class="p">(</span><span class="n">grand_child</span><span class="p">)</span>
+                                <span class="k">if</span> <span class="n">content</span><span class="p">:</span>
+                                    <span class="n">indented_content</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">   &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">content</span><span class="o">.</span><span class="n">splitlines</span><span class="p">())</span>
+                                    <span class="n">paragraph_rst_blocks</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">.. container:: center</span><span class="se">\n\n</span><span class="s2">   </span><span class="si">{</span><span class="n">indented_content</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                            <span class="k">else</span><span class="p">:</span>
+                                <span class="n">inline_rst</span> <span class="o">=</span> <span class="n">convert_inline_xml_to_rst</span><span class="p">(</span><span class="n">grand_child</span><span class="p">)</span>
+                                <span class="k">if</span> <span class="n">inline_rst</span><span class="p">:</span>
+                                    <span class="n">current_inline_parts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">inline_rst</span><span class="p">)</span>
+                            
+                            <span class="k">if</span> <span class="n">grand_child</span><span class="o">.</span><span class="n">tail</span><span class="p">:</span>
+                                <span class="n">current_inline_parts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">grand_child</span><span class="o">.</span><span class="n">tail</span><span class="p">)</span>
+                        
+                        <span class="n">flush_inline_parts</span><span class="p">()</span>
+
+                        <span class="k">if</span> <span class="n">paragraph_rst_blocks</span><span class="p">:</span>
+                            <span class="n">entry_content_rst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">paragraph_rst_blocks</span><span class="p">))</span>
+                    <span class="k">elif</span> <span class="n">child</span><span class="o">.</span><span class="n">tag</span> <span class="o">==</span> <span class="s1">&#39;figure&#39;</span><span class="p">:</span>
+                        <span class="n">entry_content_rst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">.. figure:: /_images/placeholder.png</span><span class="se">\n</span><span class="s2">   :alt: Figure placeholder</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                    <span class="k">elif</span> <span class="n">child</span><span class="o">.</span><span class="n">tag</span> <span class="o">==</span> <span class="s1">&#39;hi&#39;</span> <span class="ow">and</span> <span class="n">child</span><span class="o">.</span><span class="n">attrib</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;rend&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;center&#39;</span><span class="p">:</span>
+                        <span class="n">content</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">child</span><span class="o">.</span><span class="n">itertext</span><span class="p">())</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+                        <span class="k">if</span> <span class="n">content</span><span class="p">:</span>
+                            <span class="n">entry_content_rst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">.. container:: center</span><span class="se">\n\n</span><span class="s2">   </span><span class="si">{</span><span class="n">content</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                    <span class="k">elif</span> <span class="n">child</span><span class="o">.</span><span class="n">tag</span> <span class="o">==</span> <span class="s1">&#39;note&#39;</span><span class="p">:</span>
+                        <span class="n">entry_content_rst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">.. raw:: html</span><span class="se">\n\n</span><span class="s2">   &lt;!-- Note: </span><span class="si">{</span><span class="n">child</span><span class="o">.</span><span class="n">attrib</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;n&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2"> --&gt;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                    <span class="k">else</span><span class="p">:</span>
+                        <span class="n">inline_rst</span> <span class="o">=</span> <span class="n">convert_inline_xml_to_rst</span><span class="p">(</span><span class="n">child</span><span class="p">)</span>
+                        <span class="k">if</span> <span class="n">inline_rst</span><span class="p">:</span>
+                            <span class="n">entry_content_rst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">inline_rst</span><span class="p">)</span>
+
+
+
+                <span class="n">section_data</span><span class="p">[</span><span class="s2">&quot;entries&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+                    <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="n">entry_id</span><span class="p">,</span>
+                    <span class="s2">&quot;n&quot;</span><span class="p">:</span> <span class="n">entry_n</span><span class="p">,</span>
+                    <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="n">entry_title</span><span class="p">,</span>
+                    <span class="s2">&quot;canonical_ref&quot;</span><span class="p">:</span> <span class="n">canonical_ref</span><span class="p">,</span>
+                    <span class="s2">&quot;folder_name&quot;</span><span class="p">:</span> <span class="n">folder_name</span><span class="p">,</span>
+                    <span class="s2">&quot;content_rst&quot;</span><span class="p">:</span> <span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="n">entry_content_rst</span><span class="p">)),</span>
+                    <span class="s2">&quot;order&quot;</span><span class="p">:</span> <span class="n">entry_n</span><span class="p">,</span>
+                    <span class="s2">&quot;number&quot;</span><span class="p">:</span> <span class="n">entry_number</span><span class="p">,</span>
+                <span class="p">})</span>
+            <span class="n">book_data</span><span class="p">[</span><span class="s2">&quot;sections&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">section_data</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">book_data</span></div>
+
+
+<div class="viewcode-block" id="generate_rst_files">
+<a class="viewcode-back" href="../../modules/api/elements/transform/index.html#elements.transform.generate_rst_files">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">generate_rst_files</span><span class="p">(</span><span class="n">book_data</span><span class="p">,</span> <span class="n">output_dir</span><span class="p">):</span>
+    <span class="n">book_roman</span> <span class="o">=</span> <span class="n">book_data</span><span class="p">[</span><span class="s2">&quot;book_number_roman&quot;</span><span class="p">]</span>
+    <span class="n">book_dir</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">output_dir</span><span class="p">)</span> <span class="o">/</span> <span class="n">book_roman</span>
+    <span class="n">book_dir</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="c1"># Create book index.rst</span>
+    <span class="n">book_index_content</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="sa">f</span><span class="s2">&quot;Book </span><span class="si">{</span><span class="n">book_roman</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+        <span class="sa">f</span><span class="s2">&quot;==============</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.. toctree::&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;   :maxdepth: 1</span><span class="se">\n</span><span class="s2">&quot;</span>
+    <span class="p">]</span>
+    
+    <span class="k">for</span> <span class="n">section</span> <span class="ow">in</span> <span class="n">book_data</span><span class="p">[</span><span class="s2">&quot;sections&quot;</span><span class="p">]:</span>
+        <span class="k">for</span> <span class="n">entry</span> <span class="ow">in</span> <span class="n">section</span><span class="p">[</span><span class="s2">&quot;entries&quot;</span><span class="p">]:</span>
+            <span class="k">if</span> <span class="n">entry</span><span class="p">[</span><span class="s2">&quot;folder_name&quot;</span><span class="p">]:</span>
+                <span class="n">entry_dir</span> <span class="o">=</span> <span class="n">book_dir</span> <span class="o">/</span> <span class="n">entry</span><span class="p">[</span><span class="s2">&quot;folder_name&quot;</span><span class="p">]</span>
+                <span class="n">entry_dir</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+                <span class="c1"># Create entry index.rst</span>
+                <span class="n">title</span> <span class="o">=</span> <span class="n">entry</span><span class="p">[</span><span class="s1">&#39;canonical_ref&#39;</span><span class="p">]</span>
+                <span class="n">underline</span> <span class="o">=</span> <span class="s2">&quot;=&quot;</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
+                <span class="n">entry_index_content</span> <span class="o">=</span> <span class="p">[</span>
+                    <span class="sa">f</span><span class="s2">&quot;:order: </span><span class="si">{</span><span class="n">entry</span><span class="p">[</span><span class="s1">&#39;order&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+                    <span class="sa">f</span><span class="s2">&quot;:number: </span><span class="si">{</span><span class="n">entry</span><span class="p">[</span><span class="s1">&#39;number&#39;</span><span class="p">]</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+                    <span class="sa">f</span><span class="s2">&quot;.. _</span><span class="si">{</span><span class="n">entry</span><span class="p">[</span><span class="s1">&#39;canonical_ref&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+                    <span class="n">title</span><span class="p">,</span>
+                    <span class="n">underline</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+                    <span class="n">entry</span><span class="p">[</span><span class="s1">&#39;content_rst&#39;</span><span class="p">]</span>
+                <span class="p">]</span>
+                <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">entry_dir</span> <span class="o">/</span> <span class="s2">&quot;index.rst&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+                    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">entry_index_content</span><span class="p">))</span>
+                
+                <span class="n">book_index_content</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;   </span><span class="si">{</span><span class="n">entry</span><span class="p">[</span><span class="s1">&#39;folder_name&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">/index&quot;</span><span class="p">)</span>
+
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">book_dir</span> <span class="o">/</span> <span class="s2">&quot;index.rst&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">book_index_content</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Generated RST files for Book </span><span class="si">{</span><span class="n">book_roman</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="main">
+<a class="viewcode-back" href="../../modules/api/elements/transform/index.html#elements.transform.main">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;RST transformation tool&quot;</span><span class="p">)</span>
+    <span class="n">output_dir</span> <span class="o">=</span> <span class="s2">&quot;docsrc/elements2&quot;</span>
+    
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">):</span>
+        <span class="n">xml_file_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;resources/xml/books/</span><span class="si">{</span><span class="n">i</span><span class="si">:</span><span class="s2">02d</span><span class="si">}</span><span class="s2">.xml&quot;</span>
+        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">xml_file_path</span><span class="p">):</span>
+            <span class="n">book_data</span> <span class="o">=</span> <span class="n">parse_book_xml</span><span class="p">(</span><span class="n">xml_file_path</span><span class="p">)</span>
+            <span class="n">generate_rst_files</span><span class="p">(</span><span class="n">book_data</span><span class="p">,</span> <span class="n">output_dir</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Warning: XML file not found at </span><span class="si">{</span><span class="n">xml_file_path</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Create the main index.rst for elements2</span>
+    <span class="n">main_index_content</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s2">&quot;:navigation: header&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;:order: 2</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Elements 2.0&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;============</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.. toctree::&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;   :maxdepth: 1</span><span class="se">\n</span><span class="s2">&quot;</span>
+    <span class="p">]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">):</span>
+        <span class="n">book_roman</span> <span class="o">=</span> <span class="n">ROMAN_NUMERALS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+        <span class="k">if</span> <span class="n">book_roman</span><span class="p">:</span>
+            <span class="n">main_index_content</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;   </span><span class="si">{</span><span class="n">book_roman</span><span class="si">}</span><span class="s2">/index.rst&quot;</span><span class="p">)</span>
+            
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="n">output_dir</span><span class="p">)</span> <span class="o">/</span> <span class="s2">&quot;index.rst&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">main_index_content</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Generated main index.rst for elements2&quot;</span><span class="p">)</span></div>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</pre></div>
+      </div>
+      <footer>
+
+
+        <nav class="context">
+          <div class="prev">
+          </div>
+          <div class="next">
+          </div>
+        </nav></footer>
+    </article>
+
+  </main>
+
+<div class="asides">
+    <aside>
+        <h3>Search</h3>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+    </aside>
+    
+    
+
+    
+
+</div>
+<footer>
+    <div class="footer-nav">
+    <ul>
+        <li><a href="../../glossary.html">glossary</a></li>
+        <li><a href="../../todos.html">todos</a></li>
+        <li><a href="../../changelog.html">changelog</a></li>
+    </ul>
+</div>
+    <hr/>
+    <div role="contentinfo">
+        <p>
+                &copy; Copyright .
+        </p>
+    </div>
+</footer>
+
+  <script src="../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+  <script src="../../_static/doctools.js?v=9bcbadda"></script>
+  <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+
+
+</body>
+</html>

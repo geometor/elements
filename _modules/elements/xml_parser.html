@@ -33,13 +33,13 @@
           <a href="../../usage.html"  >usage</a>
         </li>
         <li>
-          <a href="../../elements/index.html"  >elements</a>
-        </li>
-        <li>
-          <a href="../../log/index.html"  >log</a>
+          <a href="../../elements2/index.html"  >Elements 2.0</a>
         </li>
         <li>
           <a href="../../modules/index.html"  >modules</a>
+        </li>
+        <li>
+          <a href="../../log/index.html"  >log</a>
         </li>
       </ul>
     </nav>
@@ -128,6 +128,18 @@
     <span class="n">qed_p</span> <span class="o">=</span> <span class="n">root</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;.//div4[@type=&#39;QED&#39;]/p&quot;</span><span class="p">)</span>
     <span class="n">qed</span> <span class="o">=</span> <span class="n">_convert_element_to_rst</span><span class="p">(</span><span class="n">qed_p</span><span class="p">)</span>
 
+    <span class="n">porism_div</span> <span class="o">=</span> <span class="n">root</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;.//div4[@type=&#39;porism&#39;]&quot;</span><span class="p">)</span>
+    <span class="n">porism</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="k">if</span> <span class="n">porism_div</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">porism_head</span> <span class="o">=</span> <span class="n">porism_div</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;head&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span> <span class="k">if</span> <span class="n">porism_div</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;head&#39;</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="s1">&#39;&#39;</span>
+        <span class="n">porism_paragraphs</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">porism_div</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">):</span>
+            <span class="n">porism_paragraphs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">_convert_element_to_rst</span><span class="p">(</span><span class="n">p</span><span class="p">))</span>
+        <span class="n">porism</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;head&#39;</span><span class="p">:</span> <span class="n">porism_head</span><span class="p">,</span>
+            <span class="s1">&#39;text&#39;</span><span class="p">:</span> <span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">porism_paragraphs</span><span class="p">)</span>
+        <span class="p">}</span>
+
     <span class="n">dependencies</span> <span class="o">=</span> <span class="p">[</span><span class="n">ref</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;target&#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">ref</span> <span class="ow">in</span> <span class="n">root</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="s1">&#39;.//ref&#39;</span><span class="p">)]</span>
 
     <span class="k">return</span> <span class="p">{</span>
@@ -138,6 +150,7 @@
         <span class="s1">&#39;enunciation&#39;</span><span class="p">:</span> <span class="n">enunciation</span><span class="p">,</span>
         <span class="s1">&#39;proof&#39;</span><span class="p">:</span> <span class="n">proof</span><span class="p">,</span>
         <span class="s1">&#39;qed&#39;</span><span class="p">:</span> <span class="n">qed</span><span class="p">,</span>
+        <span class="s1">&#39;porism&#39;</span><span class="p">:</span> <span class="n">porism</span><span class="p">,</span>
         <span class="s1">&#39;dependencies&#39;</span><span class="p">:</span> <span class="n">dependencies</span><span class="p">,</span>
     <span class="p">}</span></div>
 
@@ -171,17 +184,6 @@
     
 
     
-
-<aside class="aside-categories">
-    <h3>Categories</h3>
-    <ul>
-        
-        <li><a href="../../categories/construction.html">construction</a></li>
-        
-        <li><a href="../../categories/triangle.html">triangle</a></li>
-        
-    </ul>
-</aside>
 
 </div>
 <footer>
