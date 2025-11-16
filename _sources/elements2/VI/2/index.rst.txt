@@ -1,5 +1,8 @@
 :order: 2
 :number: 7
+:type: prop
+:tags: line, triangle
+
 
 
 

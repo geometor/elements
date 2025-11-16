@@ -1,5 +1,7 @@
 :order: 1
 :number: 1
+:type: def
+
 
 .. _I.def.1:
 

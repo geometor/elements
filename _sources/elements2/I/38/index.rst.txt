@@ -1,5 +1,8 @@
 :order: 38
 :number: 71
+:type: prop
+:tags: triangle
+
 
 .. _I.38:
 

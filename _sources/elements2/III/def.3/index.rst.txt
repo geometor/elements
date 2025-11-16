@@ -1,5 +1,8 @@
 :order: 3
 :number: 3
+:type: def
+:tags: circle
+
 
 .. _III.def.3:
 

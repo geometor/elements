@@ -1,5 +1,7 @@
 :order: 8
 :number: 26
+:type: prop
+
 
 .. _V.8:
 

@@ -1,5 +1,9 @@
 :order: 10
 :number: 10
+:type: def
+:categories: construct
+:tags: line, circle
+
 
 .. _III.def.10:
 

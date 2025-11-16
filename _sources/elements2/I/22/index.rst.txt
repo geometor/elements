@@ -1,5 +1,9 @@
 :order: 22
 :number: 55
+:type: prop
+:categories: construct
+:tags: line, triangle
+
 
 
 

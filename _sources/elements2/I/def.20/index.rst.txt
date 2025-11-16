@@ -1,5 +1,8 @@
 :order: 20
 :number: 20
+:type: def
+:tags: triangle
+
 
 .. _I.def.20:
 

@@ -1,5 +1,8 @@
 :order: 7
 :number: 7
+:type: def
+:tags: line, circle
+
 
 .. _IV.def.7:
 

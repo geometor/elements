@@ -1,5 +1,8 @@
 :order: 6
 :number: 11
+:type: prop
+:tags: triangle
+
 
 .. _VI.6:
 

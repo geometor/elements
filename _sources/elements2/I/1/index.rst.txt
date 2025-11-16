@@ -1,5 +1,9 @@
 :order: 1
 :number: 34
+:type: prop
+:categories: construct
+:tags: line, triangle
+
 
 
 

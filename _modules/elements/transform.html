@@ -36,10 +36,10 @@
           <a href="../../usage.html"  >usage</a>
         </li>
         <li>
-          <a href="../../modules/index.html"  >modules</a>
+          <a href="../../log/index.html"  >log</a>
         </li>
         <li>
-          <a href="../../log/index.html"  >log</a>
+          <a href="../../modules/index.html"  >modules</a>
         </li>
       </ul>
     </nav>
@@ -89,6 +89,34 @@
     <span class="s1">&#39;CN&#39;</span><span class="p">:</span> <span class="s1">&#39;cn&#39;</span><span class="p">,</span>
     <span class="s1">&#39;Prop&#39;</span><span class="p">:</span> <span class="s1">&#39;prop&#39;</span>
 <span class="p">}</span></div>
+
+
+<div class="viewcode-block" id="CATEGORIES_KEYWORDS">
+<a class="viewcode-back" href="../../modules/api/elements/transform/index.html#elements.transform.CATEGORIES_KEYWORDS">[docs]</a>
+<span class="n">CATEGORIES_KEYWORDS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;construct&#39;</span><span class="p">,</span> <span class="s1">&#39;describe&#39;</span><span class="p">,</span> <span class="s1">&#39;bisect&#39;</span><span class="p">]</span></div>
+
+<div class="viewcode-block" id="TAGS_KEYWORDS">
+<a class="viewcode-back" href="../../modules/api/elements/transform/index.html#elements.transform.TAGS_KEYWORDS">[docs]</a>
+<span class="n">TAGS_KEYWORDS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;line&#39;</span><span class="p">,</span> <span class="s1">&#39;circle&#39;</span><span class="p">,</span> <span class="s1">&#39;triangle&#39;</span><span class="p">]</span></div>
+
+
+<div class="viewcode-block" id="get_taxonomy">
+<a class="viewcode-back" href="../../modules/api/elements/transform/index.html#elements.transform.get_taxonomy">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">get_taxonomy</span><span class="p">(</span><span class="n">enunciation_text</span><span class="p">):</span>
+    <span class="n">categories</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">tags</span> <span class="o">=</span> <span class="p">[]</span>
+    
+    <span class="n">lower_text</span> <span class="o">=</span> <span class="n">enunciation_text</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+    
+    <span class="k">for</span> <span class="n">keyword</span> <span class="ow">in</span> <span class="n">CATEGORIES_KEYWORDS</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">keyword</span> <span class="ow">in</span> <span class="n">lower_text</span><span class="p">:</span>
+            <span class="n">categories</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">keyword</span><span class="p">)</span>
+            
+    <span class="k">for</span> <span class="n">keyword</span> <span class="ow">in</span> <span class="n">TAGS_KEYWORDS</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">keyword</span> <span class="ow">in</span> <span class="n">lower_text</span><span class="p">:</span>
+            <span class="n">tags</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">keyword</span><span class="p">)</span>
+            
+    <span class="k">return</span> <span class="n">categories</span><span class="p">,</span> <span class="n">tags</span></div>
 
 
 <div class="viewcode-block" id="convert_inline_xml_to_rst">
@@ -229,6 +257,7 @@
                 <span class="n">entry_title</span> <span class="o">=</span> <span class="n">canonical_ref</span> <span class="k">if</span> <span class="n">canonical_ref</span> <span class="k">else</span> <span class="n">entry_id</span> <span class="c1"># Use canonical_ref as title</span>
 
                 <span class="n">entry_content_rst</span> <span class="o">=</span> <span class="p">[]</span>
+                <span class="n">enunc_text</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
                 
                 <span class="k">def</span><span class="w"> </span><span class="nf">format_as_blockquote</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
                     <span class="k">if</span> <span class="ow">not</span> <span class="n">text</span><span class="p">:</span>
@@ -361,6 +390,8 @@
                     <span class="s2">&quot;content_rst&quot;</span><span class="p">:</span> <span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="n">entry_content_rst</span><span class="p">)),</span>
                     <span class="s2">&quot;order&quot;</span><span class="p">:</span> <span class="n">entry_n</span><span class="p">,</span>
                     <span class="s2">&quot;number&quot;</span><span class="p">:</span> <span class="n">entry_number</span><span class="p">,</span>
+                    <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="n">section_type_canonical</span><span class="p">,</span>
+                    <span class="s2">&quot;enunciation&quot;</span><span class="p">:</span> <span class="n">enunc_text</span><span class="p">,</span>
                 <span class="p">})</span>
             <span class="n">book_data</span><span class="p">[</span><span class="s2">&quot;sections&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">section_data</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">book_data</span></div>
@@ -392,10 +423,19 @@
                 <span class="c1"># Create entry index.rst</span>
                 <span class="n">title</span> <span class="o">=</span> <span class="n">entry</span><span class="p">[</span><span class="s1">&#39;canonical_ref&#39;</span><span class="p">]</span>
                 <span class="n">underline</span> <span class="o">=</span> <span class="s2">&quot;=&quot;</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
+
+                <span class="n">categories</span><span class="p">,</span> <span class="n">tags</span> <span class="o">=</span> <span class="n">get_taxonomy</span><span class="p">(</span><span class="n">entry</span><span class="p">[</span><span class="s1">&#39;enunciation&#39;</span><span class="p">])</span>
+
                 <span class="n">entry_index_content</span> <span class="o">=</span> <span class="p">[</span>
                     <span class="sa">f</span><span class="s2">&quot;:order: </span><span class="si">{</span><span class="n">entry</span><span class="p">[</span><span class="s1">&#39;order&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
-                    <span class="sa">f</span><span class="s2">&quot;:number: </span><span class="si">{</span><span class="n">entry</span><span class="p">[</span><span class="s1">&#39;number&#39;</span><span class="p">]</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+                    <span class="sa">f</span><span class="s2">&quot;:number: </span><span class="si">{</span><span class="n">entry</span><span class="p">[</span><span class="s1">&#39;number&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+                    <span class="sa">f</span><span class="s2">&quot;:type: </span><span class="si">{</span><span class="n">entry</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
                 <span class="p">]</span>
+                <span class="k">if</span> <span class="n">categories</span><span class="p">:</span>
+                    <span class="n">entry_index_content</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;:categories: </span><span class="si">{</span><span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">categories</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">tags</span><span class="p">:</span>
+                    <span class="n">entry_index_content</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;:tags: </span><span class="si">{</span><span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">tags</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="n">entry_index_content</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
 
                 <span class="c1"># Copy images and add figure directives</span>
                 <span class="k">if</span> <span class="n">canonical_images_dir</span><span class="o">.</span><span class="n">exists</span><span class="p">()</span> <span class="ow">and</span> <span class="n">entry</span><span class="p">[</span><span class="s1">&#39;canonical_ref&#39;</span><span class="p">]:</span>
@@ -506,6 +546,19 @@
     </aside>
     
     
+
+<aside class="aside-tags">
+    <h3>Tags</h3>
+    <ul>
+        
+        <li><a href="../../tags/circle.html">circle</a></li>
+        
+        <li><a href="../../tags/line.html">line</a></li>
+        
+        <li><a href="../../tags/triangle.html">triangle</a></li>
+        
+    </ul>
+</aside>
 
     
 

@@ -1,5 +1,7 @@
 :order: 4
 :number: 4
+:type: def
+
 
 .. _VI.def.4:
 

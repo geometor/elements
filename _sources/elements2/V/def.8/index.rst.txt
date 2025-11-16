@@ -1,5 +1,7 @@
 :order: 8
 :number: 8
+:type: def
+
 
 .. _V.def.8:
 

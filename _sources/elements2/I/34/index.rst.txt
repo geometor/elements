@@ -1,5 +1,8 @@
 :order: 34
 :number: 67
+:type: prop
+:categories: bisect
+
 
 
 

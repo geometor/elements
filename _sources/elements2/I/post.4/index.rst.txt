@@ -1,5 +1,7 @@
 :order: 4
 :number: 27
+:type: post
+
 
 .. _I.post.4:
 

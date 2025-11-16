@@ -1,5 +1,8 @@
 :order: 15
 :number: 15
+:type: def
+:tags: line, circle
+
 
 .. _I.def.15:
 

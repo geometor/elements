@@ -1,5 +1,9 @@
 :order: 3
 :number: 8
+:type: prop
+:categories: bisect
+:tags: line, triangle
+
 
 
 

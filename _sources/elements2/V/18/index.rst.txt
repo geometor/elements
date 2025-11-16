@@ -1,5 +1,7 @@
 :order: 18
 :number: 36
+:type: prop
+
 
 .. _V.18:
 

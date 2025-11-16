@@ -1,5 +1,8 @@
 :order: 1
 :number: 1
+:type: def
+:tags: line
+
 
 .. _VI.def.1:
 

@@ -1,5 +1,7 @@
 :order: 26
 :number: 31
+:type: prop
+
 
 .. _VI.26:
 

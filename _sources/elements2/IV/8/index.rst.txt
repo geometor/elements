@@ -1,5 +1,8 @@
 :order: 8
 :number: 15
+:type: prop
+:tags: circle
+
 
 .. _IV.8:
 

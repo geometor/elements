@@ -1,5 +1,7 @@
 :order: 2
 :number: 30
+:type: cn
+
 
 .. _I.cn.2:
 

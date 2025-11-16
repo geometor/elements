@@ -1,5 +1,9 @@
 :order: 17
 :number: 17
+:type: def
+:categories: bisect
+:tags: line, circle
+
 
 .. _I.def.17:
 
