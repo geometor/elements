@@ -8,10 +8,6 @@ I.3
 
    Given two unequal straight lines, to cut off from the greater a straight line equal to the less.
 
-
-**Proof.**
-
-
 Let ``AB``, ``C`` be the-two given unequal straight lines, and let ``AB`` be the greater of them.
 
 Thus it is required to cut off from ``AB`` the greater a straight line equal to ``C`` the less.

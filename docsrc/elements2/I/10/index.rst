@@ -8,10 +8,6 @@ I.10
 
    To bisect a given finite straight line.
 
-
-**Proof.**
-
-
 Let ``AB`` be the given finite straight line.
 
 Thus it is required to bisect the finite straight line ``AB``.

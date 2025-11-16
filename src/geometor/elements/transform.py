@@ -55,8 +55,8 @@ def convert_inline_xml_to_rst(element, is_enunciation=False):
             canonical_ref = f"**{link_text}**"
             return f"{canonical_ref}"
     
-    if element.tag == 'lb':
-        return "\n"
+    if element.tag == 'lb' or element.tag == 'pb':
+        return ""
         
     if element.tag == 'figure':
         return "" # Handled by the p-handler which deals with block-level elements
@@ -193,7 +193,7 @@ def parse_book_xml(file_path):
                     if child.tag == 'div4':
                         div4_type = child.attrib.get('type')
                         if div4_type == 'Proof':
-                            entry_content_rst.append("\n**Proof.**\n")
+                            pass
                         elif div4_type == 'QED':
                             entry_content_rst.append("\n**Q. E. D.**\n")
                         
@@ -330,9 +330,10 @@ def main():
     print("RST transformation tool")
     output_dir = "docsrc/elements2"
     
-    for i in range(1, 4):
+    for i in range(1, 7):
         xml_file_path = f"resources/xml/books/{i:02d}.xml"
         if os.path.exists(xml_file_path):
+            print(f"Processing {xml_file_path}")
             book_data = parse_book_xml(xml_file_path)
             generate_rst_files(book_data, output_dir)
         else:
@@ -347,7 +348,7 @@ def main():
         ".. toctree::",
         "   :maxdepth: 1\n"
     ]
-    for i in range(1, 4):
+    for i in range(1, 7):
         book_roman = ROMAN_NUMERALS.get(str(i))
         if book_roman:
             main_index_content.append(f"   {book_roman}/index.rst")

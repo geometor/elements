@@ -8,8 +8,7 @@ III.13
 
    A circle does not touch a circle at more points than one, whether it touch it internally or externally.
 
-For, if possible, let the circle ``ABDC`` touch the circle ``EBFD``, first internally, at more
-points than one, namely ``D``, ``B``.
+For, if possible, let the circle ``ABDC`` touch the circle ``EBFD``, first internally, at more points than one, namely ``D``, ``B``.
 
 Let the centre ``G`` of the circle ``ABDC``, and the centre ``H`` of ``EBFD``, be taken.
 
@@ -58,8 +57,7 @@ I say further that neither does it so touch it externally.
 
 For, if possible, let the circle ``ACK`` touch the circle ``ABDC`` at more points than one, namely ``A``, ``C``, and let ``AC`` be joined.
 
-Then, since on the circumference of each of the circles
-``ABDC``, ``ACK`` two points ``A``, ``C`` have been taken at random, the straight line joining the points will fall within each circle; [:ref:`III.2`]
+Then, since on the circumference of each of the circles ``ABDC``, ``ACK`` two points ``A``, ``C`` have been taken at random, the straight line joining the points will fall within each circle; [:ref:`III.2`]
 
 
 .. container:: center

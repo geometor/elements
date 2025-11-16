@@ -8,10 +8,6 @@ I.6
 
    If in a triangle two angles be equal to one another, the sides which subtend the equal angles will also be equal to one another.
 
-
-**Proof.**
-
-
 Let ``ABC`` be a triangle having the angle ``ABC`` equal to the angle ``ACB``;
 
 I say that the side ``AB`` is also equal to the side ``AC``.

@@ -10,6 +10,11 @@ def _convert_element_to_rst(element):
         parts.append(element.text)
 
     for child in element:
+        if child.tag in ['lb', 'pb']:
+            if child.tail:
+                parts.append(child.tail)
+            continue
+
         if child.tag == 'emph':
             parts.append(f"``{''.join(child.itertext()).strip()}``")
         elif child.tag == 'ref':

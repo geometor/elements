@@ -8,10 +8,6 @@ I.48
 
    If in a triangle the square on one of the sides be equal to the squares on the remaining two sides of the triangle, the angle contained by the remaining two sides of the triangle is right.
 
-
-**Proof.**
-
-
 For in the triangle ``ABC`` let the square on one side ``BC`` be equal to the squares on the sides ``BA``, ``AC``;
 
 I say that the angle ``BAC`` is right.

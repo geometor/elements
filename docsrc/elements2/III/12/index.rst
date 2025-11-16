@@ -8,11 +8,9 @@ III.12
 
    If two circles touch one another externally, the straight line joining their centres will pass through the point of contact.
 
-For let the two circles ``ABC``, ``ADE`` touch one another
-externally at the point ``A``, and let the centre ``F`` of ``ABC``, and the centre ``G`` of ``ADE``, be taken; I say that the straight line joined from ``F`` to ``G`` will pass through the point of contact at ``A``.
+For let the two circles ``ABC``, ``ADE`` touch one another externally at the point ``A``, and let the centre ``F`` of ``ABC``, and the centre ``G`` of ``ADE``, be taken; I say that the straight line joined from ``F`` to ``G`` will pass through the point of contact at ``A``.
 
-For suppose it does not,
-but, if possible, let it pass as ``FCDG``, and let ``AF``, ``AG`` be joined.
+For suppose it does not, but, if possible, let it pass as ``FCDG``, and let ``AF``, ``AG`` be joined.
 
 
 .. figure:: /_images/placeholder.png

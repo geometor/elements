@@ -8,10 +8,6 @@ I.20
 
    In any triangle two sides taken together in any manner are greater than the remaining one.
 
-
-**Proof.**
-
-
 For let ``ABC`` be a triangle; I say that in the triangle ``ABC`` two sides taken together in any manner are greater than the remaining one, namely ``BA``, ``AC`` greater than ``BC``, ``AB``, ``BC`` greater than ``AC``, ``BC``, ``CA`` greater than ``AB``.
 
 For let ``BA`` be drawn through to the point ``D``, let ``DA`` be made equal to ``CA``, and let ``DC`` be joined.

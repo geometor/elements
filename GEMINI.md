@@ -33,3 +33,9 @@ But before we begin we need to document the process and design the system for
 organization. In `docsrc/elements` I experimented with departing from numbered
 indexes to phrases - which would be the key for refs and the url path. This is
 tedious, however a reference like "Book3 prop11" or worse "III.11" is useless semantically.
+
+# Current Progress
+
+- The `elements_transform` script (located at `src/geometor/elements/transform.py`) is now used for RST generation.
+- The script currently processes XML files for Books 1 through 6.
+- The `<lb>` (line break) and `<pb>` (page break) XML tags are now ignored during RST generation, returning an empty string.

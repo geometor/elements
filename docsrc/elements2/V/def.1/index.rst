@@ -1,0 +1,9 @@
+:order: 1
+:number: 1
+
+.. _V.def.1:
+
+V.def.1
+=======
+
+   A magnitude is a part of a magnitude, the less of the greater, when it measures the greater.

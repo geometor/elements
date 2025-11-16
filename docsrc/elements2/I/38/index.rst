@@ -8,10 +8,6 @@ I.38
 
    Triangles which are on equal bases and in the same parallels are equal to one another.
 
-
-**Proof.**
-
-
 Let ``ABC``, ``DEF`` be triangles on equal bases ``BC``, ``EF`` and in the same parallels ``BF``, ``AD``; I say that the triangle ``ABC`` is equal to the triangle ``DEF``. 
 
 For let ``AD`` be produced in both directions to ``G``, ``H``; through ``B`` let ``BG`` be drawn parallel to ``CA``, [:ref:`I.31`] and through ``F`` let ``FH`` be drawn parallel to ``DE``.

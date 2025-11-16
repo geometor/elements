@@ -8,10 +8,6 @@ I.9
 
    To bisect a given rectilineal angle.
 
-
-**Proof.**
-
-
 Let the angle ``BAC`` be the given rectilineal angle.
 
 Thus it is required to bisect it.

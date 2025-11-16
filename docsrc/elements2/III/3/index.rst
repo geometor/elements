@@ -45,8 +45,7 @@ But, when a straight line set up on a straight line makes the adjacent angles eq
 
 Therefore ``CD``, which is through the centre, and bisects ``AB`` which is not through the centre, also cuts it at right angles.
 
-Again, let ``CD`` cut ``AB`` at right angles;
-I say that it also bisects it. that is, that ``AF`` is equal to ``FB``.
+Again, let ``CD`` cut ``AB`` at right angles; I say that it also bisects it. that is, that ``AF`` is equal to ``FB``.
 
 For, with the same construction,
 
@@ -58,14 +57,12 @@ For, with the same construction,
 
 the angle ``EAF`` is also equal to the angle ``EBF``. [:ref:`I.5`]
 
-But the right angle ``AFE`` is equal to the right angle ``BFE``,
-therefore ``EAF``, ``EBF`` are two triangles having two angles equal to two angles and one side equal to one side, namely ``EF``, which is common to them, and subtends one of the equal angles;
+But the right angle ``AFE`` is equal to the right angle ``BFE``, therefore ``EAF``, ``EBF`` are two triangles having two angles equal to two angles and one side equal to one side, namely ``EF``, which is common to them, and subtends one of the equal angles;
 
 
 .. container:: center
 
-   therefore they will also have the remaining sides equal to 
-   the remaining sides; [:ref:`I.26`] therefore ``AF`` is equal to ``FB``.
+   therefore they will also have the remaining sides equal to the remaining sides; [:ref:`I.26`] therefore ``AF`` is equal to ``FB``.
 
 
 Therefore etc. Q. E. D.

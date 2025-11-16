@@ -8,10 +8,6 @@ I.42
 
    To construct, in a given rectilineal angle, a parallelogram equal to a given triangle.
 
-
-**Proof.**
-
-
 Let ``ABC`` be the given triangle, and ``D`` the given rectilineal angle; thus it is required to construct in the rectilineal angle ``D`` a parallelogram equal to the triangle ``ABC``. 
 
 Let ``BC`` be bisected at ``E``, and let ``AE`` be joined; on the straight line ``EC``, and at the point ``E`` on it, let the angle ``CEF`` be constructed equal to the angle ``D``; [:ref:`I.23`] through ``A`` let ``AG`` be drawn parallel to ``EC``, and [:ref:`I.31`] through ``C`` let ``CG`` be drawn parallel to ``EF``.

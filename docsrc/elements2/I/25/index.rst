@@ -8,10 +8,6 @@ I.25
 
    If two triangles have the two sides equal to two sides respectively, but have the base greater than the base, they will also have the one of the angles contained by the equal straight lines greater than the other.
 
-
-**Proof.**
-
-
 Let ``ABC``, ``DEF`` be two triangles having the two sides ``AB``, ``AC`` equal to the two sides ``DE``, ``DF`` respectively, namely ``AB`` to ``DE``, and ``AC`` to ``DF``; and let the base ``BC`` be greater than the base ``EF``;
 
 I say that the angle ``BAC`` is also greater than the angle ``EDF``. 

@@ -8,10 +8,6 @@ I.41
 
    If a parallelogram have the same base with a triangle and be in the same parallels, the parallelogram is double of the triangle.
 
-
-**Proof.**
-
-
 For let the parallelogram ``ABCD`` have the same base ``BC`` with the triangle ``EBC``, and let it be in the same parallels ``BC``, ``AE``;
 
 I say that the parallelogram ``ABCD`` is double of the triangle ``BEC``.

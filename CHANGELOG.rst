@@ -1,6 +1,19 @@
 changelog
 =========
 
+0.0.7
+-----
+*2025-11-15*
+
+**added**
+
+.. + Extended RST generation to include Books 1-6 of Euclid's Elements.
+
+**changed**
+
+.. + Removed the "Proof." heading from the generated RST files for a cleaner output.
+.. - Deleted the old `generate_rsts.py` script, centralizing RST generation in the `elements_transform` tool.
+
 0.0.6
 -----
 *2025-11-15*

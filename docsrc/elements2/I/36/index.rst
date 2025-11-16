@@ -8,10 +8,6 @@ I.36
 
    Parallelograms which are on equal bases and in the same parallels are equal to one another.
 
-
-**Proof.**
-
-
 Let ``ABCD``, ``EFGH`` be parallelograms which are on equal bases ``BC``, ``FG`` and in the same parallels ``AH``, ``BG``;  I say that the parallelogram ``ABCD`` is equal to ``EFGH``.
 
 For let ``BE``, ``CH`` be joined.

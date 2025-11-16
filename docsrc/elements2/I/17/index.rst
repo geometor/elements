@@ -8,10 +8,6 @@ I.17
 
    In any triangle two angles taken together in any manner are less than two right angles.
 
-
-**Proof.**
-
-
 Let ``ABC`` be a triangle; I say that two angles of the triangle ``ABC`` taken together in any manner are less than two right angles.
 
 For let ``BC`` be produced to ``D``. [:ref:`I.post.2`]

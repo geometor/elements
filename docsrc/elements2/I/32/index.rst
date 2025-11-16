@@ -8,10 +8,6 @@ I.32
 
    In any triangle, if one of the sides be produced, the exterior angle is equal to the two interior and opposite angles, and the three interior angles of the triangle are equal to two right angles.
 
-
-**Proof.**
-
-
 Let ``ABC`` be a triangle, and let one side of it ``BC`` be produced to ``D``;
 
 I say that the exterior angle ``ACD`` is equal to the two interior and opposite angles ``CAB``, ``ABC``, and the three interior angles of the triangle ``ABC``, ``BCA``, ``CAB`` are equal to two right angles. 

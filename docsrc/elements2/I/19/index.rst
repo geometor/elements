@@ -8,10 +8,6 @@ I.19
 
    In any triangle the greater angle is subtended by the greater side.
 
-
-**Proof.**
-
-
 Let ``ABC`` be a triangle having the angle ``ABC`` greater than the angle ``BCA``;
 
 I say that the side ``AC`` is also greater than the side ``AB``.

@@ -8,9 +8,7 @@ III.20
 
    In a circle the angle at the centre is double of the angle at the circumference, when the angles have the same circumference as base.
 
-Let ``ABC`` be a circle, let the angle ``BEC`` be an angle
-at its centre, and the angle ``BAC`` an angle at the circumference, and let them have the same circumference ``BC`` as base; I say that the angle ``BEC`` is double of
-the angle ``BAC``.
+Let ``ABC`` be a circle, let the angle ``BEC`` be an angle at its centre, and the angle ``BAC`` an angle at the circumference, and let them have the same circumference ``BC`` as base; I say that the angle ``BEC`` is double of the angle ``BAC``.
 
 
 .. figure:: /_images/placeholder.png
@@ -24,14 +22,12 @@ Then, since ``EA`` is equal to ``EB``,
 
 .. container:: center
 
-   the angle ``EAB`` is also equal to the 
-   angle ``EBA``; [:ref:`I.5`]
+   the angle ``EAB`` is also equal to the angle ``EBA``; [:ref:`I.5`]
 
 
 therefore the angles ``EAB``, ``EBA`` are double of the angle ``EAB``.
 
-But the angle ``BEF`` is equal to the angles ``EAB``, ``EBA``; [:ref:`I.32`] therefore the angle ``BEF`` is also double of the angle
-``EAB``.
+But the angle ``BEF`` is equal to the angles ``EAB``, ``EBA``; [:ref:`I.32`] therefore the angle ``BEF`` is also double of the angle ``EAB``.
 
 For the same reason
 
