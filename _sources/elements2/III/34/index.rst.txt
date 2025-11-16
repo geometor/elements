@@ -1,6 +1,11 @@
 :order: 34
 :number: 45
 
+
+
+.. figure:: III.34.jpg
+   :width: 50%
+
 .. _III.34:
 
 III.34
@@ -21,11 +26,6 @@ Then, since a straight line ``EF`` touches the circle ``ABC``,
 
 
 the angle ``FBC`` is equal to the angle constructed in the alternate segment ``BAC``. [:ref:`III.32`]
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 But the angle ``FBC`` is equal to the angle at ``D``;
 

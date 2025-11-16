@@ -1,6 +1,11 @@
 :order: 36
 :number: 47
 
+
+
+.. figure:: III.36.jpg
+   :width: 50%
+
 .. _III.36:
 
 III.36
@@ -9,11 +14,6 @@ III.36
    If a point be taken outside a circle and from it there fall on the circle two straight lines, and if one of them cut the circle and the other touch it, the rectangle contained by the whole of the straight line which cuts the circle and the straight line intercepted on it outside between the point and the convex circumference will be equal to the square on the tangent.
 
 For let a point ``D`` be taken outside the circle ``ABC``, and from ``D`` let the two straight lines ``DCA``, ``DB`` fall on the circle ``ABC``; let ``DCA`` cut the circle ``ABC`` and let ``BD`` touch it; I say that the rectangle contained by ``AD``, ``DC`` is equal to the square on ``DB``.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 Then ``DCA`` is either through the centre or not through the centre.
 
@@ -36,11 +36,6 @@ Let the square on ``FB`` be subtracted from each; therefore the rectangle ``AD``
 Again, let ``DCA`` not be through the centre of the circle ``ABC``; let the centre ``E`` be taken, and from ``E`` let ``EF`` be drawn perpendicular to ``AC``; let ``EB``, ``EC``, ``ED`` be joined.
 
 Then the angle ``EBD`` is right. [:ref:`III.18`]
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 And, since a straight line ``EF`` through the centre cuts a straight line ``AC`` not through the centre at right angles,
 

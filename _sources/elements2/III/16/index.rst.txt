@@ -1,6 +1,11 @@
 :order: 16
 :number: 27
 
+
+
+.. figure:: III.16.jpg
+   :width: 50%
+
 .. _III.16:
 
 III.16
@@ -13,11 +18,6 @@ Let ``ABC`` be a circle about ``D`` as centre and ``AB`` as diameter; I say that
 For suppose it does not, but, if possible, let it fall within as ``CA``, and let ``DC`` be joined.
 
 Since ``DA`` is equal to ``DC``,
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 
 .. container:: center

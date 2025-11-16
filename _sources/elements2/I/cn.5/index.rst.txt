@@ -6,4 +6,4 @@
 I.cn.5
 ======
 
-   [8] The whole is greater than the part.
+   The whole is greater than the part.

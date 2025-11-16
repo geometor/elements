@@ -1,6 +1,11 @@
 :order: 37
 :number: 48
 
+
+
+.. figure:: III.37.jpg
+   :width: 50%
+
 .. _III.37:
 
 III.37
@@ -9,11 +14,6 @@ III.37
    If a point be taken outside a circle and from the point there fall on the circle two straight lines, if one of them cut the circle, and the other fall on it, and if further the rectangle contained by the whole of the straight line which cuts the circle and the straight line intercepted on it outside between the point and the convex circumference be equal to the square on the straight line which falls on the circle, the straight line which falls on it will touch the circle.
 
 For let a point ``D`` be taken outside the circle ``ABC``; from ``D`` let the two straight lines ``DCA``, ``DB`` fall on the circle ``ACB``; let ``DCA`` cut the circle and ``DB`` fall on it; and let the rectangle ``AD``, ``DC`` be equal to the square on ``DB``.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 I say that ``DB`` touches the circle ``ABC``.
 

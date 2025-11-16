@@ -1,0 +1,9 @@
+:order: 8
+:number: 8
+
+.. _V.def.8:
+
+V.def.8
+=======
+
+   A proportion in three terms is the least possible.

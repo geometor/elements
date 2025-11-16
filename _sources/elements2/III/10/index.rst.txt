@@ -1,6 +1,11 @@
 :order: 10
 :number: 21
 
+
+
+.. figure:: III.10.jpg
+   :width: 50%
+
 .. _III.10:
 
 III.10
@@ -13,11 +18,6 @@ III.10
 For, if possible, let the circle ``ABC`` cut the circle ``DEF`` at more points than two, namely ``B``, ``C``, ``F``, ``H``;
 
 let ``BH``, ``BG`` be joined and bisected at the points ``K``, ``L``, and from ``K``, ``L`` let ``KC``, ``LM`` be drawn at right angles to ``BH``, ``BG`` and carried through to the points ``A``, ``E``.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 Then, since in the circle ``ABC`` a straight line ``AC`` cuts a straight line ``BH`` into two equal parts and at right angles,
 

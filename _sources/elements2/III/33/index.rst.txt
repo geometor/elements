@@ -1,6 +1,11 @@
 :order: 33
 :number: 44
 
+
+
+.. figure:: III.33.jpg
+   :width: 50%
+
 .. _III.33:
 
 III.33
@@ -9,11 +14,6 @@ III.33
    On a given straight line to describe a segment of a circle admitting an angle equal to a given rectilineal angle.
 
 Let ``AB`` be the given straight line, and the angle at ``C`` the given rectilineal angle; thus it is required to describe on the given straight line ``AB`` a segment of a circle admitting an angle equal to the angle at ``C``.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 The angle at ``C`` is then acute, or right, or obtuse.
 
@@ -69,11 +69,6 @@ Therefore on the given straight line ``AB`` the segment ``AEB`` of a circle has 
 
 Next let the angle at ``C`` be right;
 
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
-
 and let it be again required to describe on ``AB`` a segment of a circle admitting an angle equal to the right angle at ``C``.
 
 Let the angle ``BAD`` be constructed equal to the right angle at ``C``, as is the case in the second figure; let ``AB`` be bisected at ``F``, and with centre ``F`` and distance either ``FA`` or ``FB`` let the circle ``AEB`` be described.
@@ -89,11 +84,6 @@ Therefore the angle ``AEB`` is also equal to the angle at ``C``.
 Therefore again the segment ``AEB`` of a circle has been described on ``AB`` admitting an angle equal to the angle at ``C``.
 
 Next, let the angle at ``C`` be obtuse;
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 and on the straight line ``AB``, and at the point ``A``, let the angle ``BAD`` be constructed equal to it, as is the case in the third figure; let ``AE`` be drawn at right angles to ``AD``, let ``AB`` be again bisected at ``F``, let ``FG`` be drawn at right angles to ``AB``, and let ``GB`` be joined.
 

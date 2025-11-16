@@ -1,6 +1,11 @@
 :order: 19
 :number: 30
 
+
+
+.. figure:: III.19.jpg
+   :width: 50%
+
 .. _III.19:
 
 III.19
@@ -11,11 +16,6 @@ III.19
 For let a straight line ``DE`` touch the circle ``ABC`` at the point ``C``, and from ``C`` let ``CA`` be drawn at right angles to ``DE``; I say that the centre of the circle is on ``AC``.
 
 For suppose it is not, but, if
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 possible, let ``F`` be the centre, and let ``CF`` be joined.
 

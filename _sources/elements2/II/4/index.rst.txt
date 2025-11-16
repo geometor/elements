@@ -1,6 +1,11 @@
 :order: 4
 :number: 6
 
+
+
+.. figure:: II.4.jpg
+   :width: 50%
+
 .. _II.4:
 
 II.4
@@ -8,16 +13,9 @@ II.4
 
    If a straight line be cut at random, the square on the whole is equal to the squares on the segments and twice the rectangle contained by the segments.
 
-For let the straight line ``AB`` be cut at random at ``C``;
-I say that the square on ``AB`` is equal to the squares on ``AC``, ``CB`` and twice the rectangle contained by ``AC``, ``CB``.
+For let the straight line ``AB`` be cut at random at ``C``; I say that the square on ``AB`` is equal to the squares on ``AC``, ``CB`` and twice the rectangle contained by ``AC``, ``CB``.
 
-For let the square ``ADEB`` be described on ``AB``, [:ref:`I.46`]
-let ``BD`` be joined; through ``C`` let ``CF`` be drawn parallel to either ``AD`` or ``EB``, and through ``G`` let ``HK`` be drawn parallel to either ``AB`` or ``DE``. [:ref:`I.31`]
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
+For let the square ``ADEB`` be described on ``AB``, [:ref:`I.46`] let ``BD`` be joined; through ``C`` let ``CF`` be drawn parallel to either ``AD`` or ``EB``, and through ``G`` let ``HK`` be drawn parallel to either ``AB`` or ``DE``. [:ref:`I.31`]
 
 Then, since ``CF`` is parallel to ``AD``, and ``BD`` has fallen on them, the exterior angle ``CGB`` is equal to the interior and opposite angle ``ADB``. [:ref:`I.29`]
 
@@ -36,8 +34,7 @@ But ``CB`` is equal to ``GK``, and ``CG`` to ``KB``; [:ref:`I.34`]
 
 .. container:: center
 
-   therefore ``GK`` is also equal to ``KB``; 
-   therefore ``CGKB`` is equilateral.
+   therefore ``GK`` is also equal to ``KB``; therefore ``CGKB`` is equilateral.
 
 
 I say next that it is also right-angled.
@@ -63,8 +60,7 @@ Therefore ``CGKB`` is right-angled; and it was also proved equilateral;
 
 .. container:: center
 
-   therefore it is a square; 
-    and it is described on ``CB``.
+   therefore it is a square;  and it is described on ``CB``.
 
 
 For the same reason
@@ -89,8 +85,7 @@ Therefore ``AG``, ``GE`` are equal to twice the rectangle ``AC``, ``CB``.
 
 But the squares ``HF``, ``CK`` are also the squares on ``AC``, ``CB``; therefore the four areas ``HF``, ``CK``, ``AG``, ``GE`` are equal to the squares on ``AC``, ``CB`` and twice the rectangle contained by ``AC``, ``CB``.
 
-But ``HF``, ``CK``, ``AG``, ``GE`` are the whole ``ADEB``,
-which is the square on ``AB``.
+But ``HF``, ``CK``, ``AG``, ``GE`` are the whole ``ADEB``, which is the square on ``AB``.
 
 Therefore the square on ``AB`` is equal to the squares on ``AC``, ``CB`` and twice the rectangle contained by ``AC``, ``CB``.
 

@@ -1,6 +1,11 @@
 :order: 8
 :number: 10
 
+
+
+.. figure:: II.8.jpg
+   :width: 50%
+
 .. _II.8:
 
 II.8
@@ -15,11 +20,6 @@ I say that four times the rectangle contained by ``AB``, ``BC`` together with th
 For let [the straight line] ``BD`` be produced in a straight line [with ``AB``], and let ``BD`` be made equal to ``CB``; let the square ``AEFD`` be described on ``AD``, and let the figure be drawn double.
 
 Then, since ``CB`` is equal to ``BD``, while ``CB`` is equal to ``GK``, and ``BD`` to ``KN``, therefore ``GK`` is also equal to ``KN``.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 For the same reason
 

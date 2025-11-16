@@ -1,6 +1,11 @@
 :order: 5
 :number: 16
 
+
+
+.. figure:: III.5.jpg
+   :width: 50%
+
 .. _III.5:
 
 III.5
@@ -9,11 +14,6 @@ III.5
    If two circles cut one another, they will not have the same centre.
 
 For let the circles ``ABC``, ``CDG`` cut one another at the points ``B``, ``C``; I say that they will not have the same centre.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 For, if possible, let it be ``E``; let ``EC`` be joined, and let ``EFG`` be drawn through at random.
 

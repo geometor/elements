@@ -1,6 +1,11 @@
 :order: 30
 :number: 41
 
+
+
+.. figure:: III.30.jpg
+   :width: 50%
+
 .. _III.30:
 
 III.30
@@ -11,11 +16,6 @@ III.30
 Let ``ADB`` be the given circumference; thus it is required to bisect the circumference ``ADB``.
 
 Let ``AB`` be joined and bisected at ``C``; from the point ``C`` let ``CD`` be drawn at right angles to the straight line ``AB``,
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 and let ``AD``, ``DB`` be joined.
 

@@ -1,6 +1,11 @@
 :order: 8
 :number: 19
 
+
+
+.. figure:: III.8.jpg
+   :width: 50%
+
 .. _III.8:
 
 III.8
@@ -10,11 +15,6 @@ III.8
           the nearer to that through the centre is always greater than the more remote, but, of the straight lines falling on the convex circumference, that between the point and the diameter is least, while of the rest the nearer to the least is always less than the more remote, and only two equal straight lines will fall on the circle from the point, one on each side of the least.
 
 Let ``ABC`` be a circle, and let a point ``D`` be taken outside ``ABC``; let there be drawn through from it straight lines ``DA``, ``DE``, ``DF``, ``DC``, and let ``DA`` be through the centre; I say that, of the straight lines falling on the concave circumference ``AEFC``, the straight line ``DA`` through the centre is greatest,
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 while ``DE`` is greater than ``DF`` and ``DF`` than ``DC``.; but, of the straight lines falling on the convex circumference ``HLKG``, the straight line ``DG`` between the point and the diameter ``AG`` is least; and the nearer to the least ``DG`` is always less than the more remote, namely ``DK`` than ``DL``, and ``DL`` than ``DH``.
 

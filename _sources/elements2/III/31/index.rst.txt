@@ -1,6 +1,11 @@
 :order: 31
 :number: 42
 
+
+
+.. figure:: III.31.jpg
+   :width: 50%
+
 .. _III.31:
 
 III.31
@@ -9,11 +14,6 @@ III.31
    In a circle the angle in the semicircle is right, that in a greater segment less than a right angle, and that in a less segment greater than a right angle; and further the angle of the greater segment is greater than a right angle, and the angle of the less segment less than a right angle.
 
 Let ``ABCD`` be a circle, let ``BC`` be its diameter, and ``E`` its centre, and let ``BA``, ``AC``, ``AD``, ``DC`` be joined; I say that the angle ``BAC`` in the semicircle ``BAC`` is right, the angle ``ABC`` in the segment ``ABC`` greater than the semicircle is less
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 than a right angle, and the angle ``ADC`` in the segment ``ADC`` less than the semicircle is greater than a right angle.
 

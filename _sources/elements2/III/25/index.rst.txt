@@ -1,6 +1,11 @@
 :order: 25
 :number: 36
 
+
+
+.. figure:: III.25.jpg
+   :width: 50%
+
 .. _III.25:
 
 III.25
@@ -21,11 +26,6 @@ For let ``AC`` be bisected at ``D``, let ``DB`` be drawn from the point ``D`` at
 First let it be greater; and on the straight line ``BA``, and at the point ``A`` on it, let the angle ``BAE`` be constructed equal to the angle ``ABD``; let ``DB`` be drawn through to ``E``, and let ``EC`` be joined.
 
 Then, since the angle ``ABE`` is equal to the angle ``BAE``,
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 
 .. container:: center
@@ -75,11 +75,6 @@ Similarly, even if the angle ``ABD`` be equal to the angle ``BAD``, ``AD`` being
 
 
 But, if the angle ``ABD`` be less than the angle ``BAD``, and if we construct, on the straight line ``BA`` and at the point ``A`` on it, an angle equal to the angle ``ABD``, the centre will fall on ``DB`` within the segment ``ABC``, and the segment
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 ``ABC`` will clearly be greater than a semicircle.
 

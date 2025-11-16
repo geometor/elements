@@ -1,6 +1,11 @@
 :order: 9
 :number: 11
 
+
+
+.. figure:: II.9.jpg
+   :width: 50%
+
 .. _II.9:
 
 II.9
@@ -11,11 +16,6 @@ II.9
 For let a straight line ``AB`` be cut into equal segments at ``C``, and into unequal segments at ``D``;
 
 I say that the squares on ``AD``, ``DB`` are double of the squares on ``AC``, ``CD``.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 For let ``CE`` be drawn from ``C`` at right angles to ``AB``, and let it be made equal to either ``AC`` or ``CB``; let ``EA``, ``EB`` be joined, let ``DF`` be drawn through ``D`` parallel to ``EC``, and ``FG`` through ``F`` parallel to ``AB``, and let ``AF`` be joined.
 

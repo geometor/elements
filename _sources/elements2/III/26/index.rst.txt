@@ -1,6 +1,11 @@
 :order: 26
 :number: 37
 
+
+
+.. figure:: III.26.jpg
+   :width: 50%
+
 .. _III.26:
 
 III.26
@@ -9,11 +14,6 @@ III.26
    In equal circles equal angles stand on equal circumferences, whether they stand at the centres or at the circumferences.
 
 Let ``ABC``, ``DEF`` be equal circles, and in them let there be equal angles, namely at the centres the angles ``BGC``, ``EHF``, and at the circumferences the angles ``BAC``, ``EDF``; I say that the circumference ``BKC`` is equal to the circumference ``ELF``.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 For let ``BC``, ``EF`` be joined.
 

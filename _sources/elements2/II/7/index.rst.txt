@@ -1,6 +1,11 @@
 :order: 7
 :number: 9
 
+
+
+.. figure:: II.7.jpg
+   :width: 50%
+
 .. _II.7:
 
 II.7
@@ -23,11 +28,6 @@ Then, since ``AG`` is equal to ``GE``, [:ref:`I.43`] let ``CF`` be added to each
 
 
 Therefore ``AF``, ``CE`` are double of ``AF``.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 But ``AF``, ``CE`` are the gnomon ``KLM`` and the square ``CF``; therefore the gnomon ``KLM`` and the square ``CF`` are double of ``AF``.
 

@@ -1,6 +1,11 @@
 :order: 9
 :number: 20
 
+
+
+.. figure:: III.9.jpg
+   :width: 50%
+
 .. _III.9:
 
 III.9
@@ -9,11 +14,6 @@ III.9
    If a point be taken within a circle, and more than two equal straight lines fall from the point on the circle, the point taken is the centre of the circle.
 
 Let ``ABC`` be a circle and ``D`` a point within it, and from ``D`` let more than two equal straight lines, namely ``DA``, ``DB``, ``DC``, fall on the circle ``ABC``; I say that the point ``D`` is the centre of the circle ``ABC``.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 For let ``AB``, ``BC`` be joined and bisected at the points ``E``, ``F``, and let ``ED``, ``FD`` be joined and drawn through to the points ``G``, ``K``, ``H``, ``L``.
 

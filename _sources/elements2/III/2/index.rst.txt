@@ -1,6 +1,11 @@
 :order: 2
 :number: 13
 
+
+
+.. figure:: III.2.jpg
+   :width: 50%
+
 .. _III.2:
 
 III.2
@@ -9,11 +14,6 @@ III.2
    If on the circumference of a circle two points be taken at random, the straight line joining the points will fall within the circle.
 
 Let ``ABC`` be a circle, and let two points ``A``, ``B`` be taken at random on its circumference; I say that the straight line joined from ``A`` to ``B`` will fall within the circle.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 For suppose it does not, but, if possible, let it fall outside, as ``AEB``; let the centre of the circle ``ABC`` be taken [:ref:`III.1`], and let it be ``D``; let ``DA``, ``DB`` be joined, and let ``DFE`` be drawn through.
 

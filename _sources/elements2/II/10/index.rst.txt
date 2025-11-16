@@ -1,6 +1,11 @@
 :order: 10
 :number: 12
 
+
+
+.. figure:: II.10.jpg
+   :width: 50%
+
 .. _II.10:
 
 II.10
@@ -11,11 +16,6 @@ II.10
 For let a straight line ``AB`` be bisected at ``C``, and let a straight line ``BD`` be added to it in a straight line;
 
 I say that the squares on ``AD``, ``DB`` are double of the squares on ``AC``, ``CD``.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 For let ``CE`` be drawn from the point ``C`` at right angles to ``AB`` [:ref:`I.11`], and let it be made equal to either ``AC`` or ``CB`` [:ref:`I.3`]; let ``EA``, ``EB`` be joined; through ``E`` let ``EF`` be drawn parallel to ``AD``, and through ``D`` let ``FD`` be drawn parallel to ``CE``. [:ref:`I.31`]
 

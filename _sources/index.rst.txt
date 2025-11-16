@@ -9,7 +9,6 @@ GEOMETOR • elements
    log/index.rst
    elements2/index.rst
    modules/index.rst
-   refs/index.rst
    todos.rst
    changelog.rst
    glossary.rst
@@ -23,5 +22,5 @@ Euclid's Elements 2.0
 .. toctree::
    :maxdepth: 2
 
-   elements2/design.rst
+   design.rst
 

@@ -1,6 +1,11 @@
 :order: 6
 :number: 17
 
+
+
+.. figure:: III.6.jpg
+   :width: 50%
+
 .. _III.6:
 
 III.6
@@ -11,11 +16,6 @@ III.6
 ``If two circles touch one another``, ``they will not have the same centre``.
 
 For let the two circles ``ABC``, ``CDE`` touch one another at the point ``C``; I say that they will not have the same centre.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 For, if possible, let it be ``F``; let ``FC`` be joined, and let ``FEB`` be drawn through at random.
 
