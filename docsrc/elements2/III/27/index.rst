@@ -1,6 +1,11 @@
 :order: 27
 :number: 38
 
+
+
+.. figure:: III.27.jpg
+   :width: 50%
+
 .. _III.27:
 
 III.27
@@ -9,11 +14,6 @@ III.27
    In equal circles angles standing on equal circumferences are equal to one another, whether they stand at the centres or at the circumferences.
 
 For in equal circles ``ABC``, ``DEF``, on equal circumferences ``BC``, ``EF``, let the angles ``BGC``, ``EHF`` stand at the centres ``G``, ``H``, and the angles ``BAC``, ``EDF`` at the circumferences; I say that the angle ``BGC`` is equal to the angle ``EHF``, and the angle ``BAC`` is equal to the angle ``EDF``.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 For, if the angle ``BGC`` is unequal to the angle ``EHF``,
 

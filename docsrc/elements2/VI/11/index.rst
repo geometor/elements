@@ -1,6 +1,11 @@
 :order: 11
 :number: 16
 
+
+
+.. figure:: VI.11.jpg
+   :width: 50%
+
 .. _VI.11:
 
 VI.11
@@ -11,11 +16,6 @@ VI.11
 Let ``BA``, ``AC`` be the two given straight lines, and let them be placed so as to contain any angle; thus it is required to find a third proportional to ``BA``, ``AC``.
 
 For let them be produced to the points ``D``, ``E``, and let ``BD`` be made equal to ``AC``; [:ref:`I.3`] let ``BC`` be joined, and through ``D`` let ``DE`` be drawn parallel to it. [:ref:`I.31`]
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 Since, then, ``BC`` has been drawn parallel to ``DE``, one of the sides of the triangle ``ADE``, proportionally, as ``AB`` is to ``BD``, so is ``AC`` to ``CE``. [:ref:`VI.2`]
 

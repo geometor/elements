@@ -1,6 +1,11 @@
 :order: 20
 :number: 31
 
+
+
+.. figure:: III.20.jpg
+   :width: 50%
+
 .. _III.20:
 
 III.20
@@ -9,11 +14,6 @@ III.20
    In a circle the angle at the centre is double of the angle at the circumference, when the angles have the same circumference as base.
 
 Let ``ABC`` be a circle, let the angle ``BEC`` be an angle at its centre, and the angle ``BAC`` an angle at the circumference, and let them have the same circumference ``BC`` as base; I say that the angle ``BEC`` is double of the angle ``BAC``.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 For let ``AE`` be joined and drawn through to ``F``.
 

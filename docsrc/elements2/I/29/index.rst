@@ -1,6 +1,11 @@
 :order: 29
 :number: 62
 
+
+
+.. figure:: I.29.jpg
+   :width: 50%
+
 .. _I.29:
 
 I.29

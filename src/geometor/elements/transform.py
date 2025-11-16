@@ -1,6 +1,7 @@
 import xml.etree.ElementTree as ET
 import os
 import re
+import shutil
 from pathlib import Path
 from xml.sax.saxutils import escape
 
@@ -205,7 +206,7 @@ def parse_book_xml(file_path):
                                 if inline_rst:
                                     div4_inner_content.append(inline_rst)
                             elif grand_child.tag == 'figure':
-                                div4_inner_content.append("\n.. figure:: /_images/placeholder.png\n   :alt: Figure placeholder\n")
+                                pass
                             elif grand_child.tag == 'hi' and grand_child.attrib.get('rend') == 'center':
                                 content = ''.join(grand_child.itertext()).strip()
                                 if content:
@@ -240,7 +241,6 @@ def parse_book_xml(file_path):
                         for grand_child in child:
                             if grand_child.tag == 'figure':
                                 flush_inline_parts()
-                                paragraph_rst_blocks.append("\n.. figure:: /_images/placeholder.png\n   :alt: Figure placeholder\n")
                             elif grand_child.tag == 'hi' and grand_child.attrib.get('rend') == 'center':
                                 flush_inline_parts()
                                 content = convert_inline_xml_to_rst(grand_child)
@@ -260,7 +260,7 @@ def parse_book_xml(file_path):
                         if paragraph_rst_blocks:
                             entry_content_rst.append("\n\n".join(paragraph_rst_blocks))
                     elif child.tag == 'figure':
-                        entry_content_rst.append("\n.. figure:: /_images/placeholder.png\n   :alt: Figure placeholder\n")
+                        pass
                     elif child.tag == 'hi' and child.attrib.get('rend') == 'center':
                         content = ''.join(child.itertext()).strip()
                         if content:
@@ -292,6 +292,8 @@ def generate_rst_files(book_data, output_dir):
     book_dir = Path(output_dir) / book_roman
     book_dir.mkdir(parents=True, exist_ok=True)
 
+    canonical_images_dir = Path("resources/canonical_images")
+
     # Create book index.rst
     book_index_content = [
         f"Book {book_roman}",
@@ -312,11 +314,32 @@ def generate_rst_files(book_data, output_dir):
                 entry_index_content = [
                     f":order: {entry['order']}",
                     f":number: {entry['number']}\n",
+                ]
+
+                # Copy images and add figure directives
+                if canonical_images_dir.exists() and entry['canonical_ref']:
+                    image_stem = entry['canonical_ref']
+                    
+                    # Find all images for this entry (including variants like -b)
+                    image_files = []
+                    # Exact match
+                    exact_match = canonical_images_dir / f"{image_stem}.jpg"
+                    if exact_match.exists():
+                        image_files.append(exact_match)
+                    # Variant matches (e.g., I.1-b.jpg)
+                    image_files.extend(sorted(canonical_images_dir.glob(f"{image_stem}-*.jpg")))
+
+                    for image_path in image_files:
+                        shutil.copy(image_path, entry_dir)
+                        entry_index_content.append(f"\n\n.. figure:: {image_path.name}\n   :width: 50%\n")
+                
+                entry_index_content.extend([
                     f".. _{entry['canonical_ref']}:\n",
                     title,
                     underline + "\n",
                     entry['content_rst']
-                ]
+                ])
+
                 with open(entry_dir / "index.rst", "w") as f:
                     f.write("\n".join(entry_index_content))
                 
@@ -330,6 +353,17 @@ def main():
     print("RST transformation tool")
     output_dir = "docsrc/elements2"
     
+    # Clean up existing book directories to prevent orphans
+    output_path = Path(output_dir)
+    if output_path.exists():
+        for i in range(1, 7):
+            book_roman = ROMAN_NUMERALS.get(str(i))
+            if book_roman:
+                book_dir = output_path / book_roman
+                if book_dir.exists() and book_dir.is_dir():
+                    shutil.rmtree(book_dir)
+                    print(f"Removed directory: {book_dir}")
+
     for i in range(1, 7):
         xml_file_path = f"resources/xml/books/{i:02d}.xml"
         if os.path.exists(xml_file_path):

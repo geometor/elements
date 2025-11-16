@@ -10,11 +10,6 @@ V.12
 
 Let any number of magnitudes ``A``, ``B``, ``C``, ``D``, ``E``, ``F`` be proportional, so that, as ``A`` is to ``B``, so is ``C`` to ``D`` and ``E`` to ``F``; I say that, as ``A`` is to ``B``, so are ``A``, ``C``, ``E`` to ``B``, ``D``, ``F``.
 
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
-
 For of ``A``, ``C``, ``E`` let equimultiples ``G``, ``H``, ``K`` be taken, and of ``B``, ``D``, ``F`` other, chance, equimultiples ``L``, ``M``, ``N``.
 
 Then since, as ``A`` is to ``B``, so is ``C`` to ``D``, and ``E`` to ``F``, and of ``A``, ``C``, ``E`` equimultiples ``G``, ``H``, ``K`` have been taken, and of ``B``, ``D``, ``F`` other, chance, equimultiples ``L``, ``M``, ``N``, therefore, if ``G`` is in excess of ``L``, ``H`` is also in excess of ``M``, and ``K`` of ``N``, if equal, equal, and if less, less; so that, in addition, if ``G`` is in excess of ``L``, then ``G``, ``H``, ``K`` are in excess of ``L``, ``M``, ``N``, if equal, equal, and if less, less.

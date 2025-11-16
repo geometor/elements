@@ -1,6 +1,11 @@
 :order: 6
 :number: 8
 
+
+
+.. figure:: II.6.jpg
+   :width: 50%
+
 .. _II.6:
 
 II.6
@@ -13,11 +18,6 @@ For let a straight line ``AB`` be bisected at the point ``C``, and let a straigh
 I say that the rectangle contained by ``AD``, ``DB`` together with the square on ``CB`` is equal to the square on ``CD``.
 
 For let the square ``CEFD`` be described on ``CD``, [:ref:`I.46`] and let ``DE`` be joined; through the point ``B`` let ``BG`` be drawn parallel to either ``EC`` or ``DF``, through the point ``H`` let ``KM`` be drawn parallel to either ``AB`` or ``EF``, and further through ``A`` let ``AK`` be drawn parallel to either ``CL`` or ``DM``. [:ref:`I.31`]
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 
 .. container:: center

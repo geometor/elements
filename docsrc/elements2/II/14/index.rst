@@ -1,6 +1,11 @@
 :order: 14
 :number: 16
 
+
+
+.. figure:: II.14.jpg
+   :width: 50%
+
 .. _II.14:
 
 II.14
@@ -9,11 +14,6 @@ II.14
    To construct a square equal to a given rectilineal figure.
 
 Let ``A`` be the given rectilineal figure; thus it is required to construct a square equal to the rectilineal figure ``A``.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 For let there be constructed the rectangular parallelogram ``BD`` equal to the rectilineal figure ``A``. [:ref:`I.45`]
 

@@ -1,6 +1,11 @@
 :order: 15
 :number: 26
 
+
+
+.. figure:: III.15.jpg
+   :width: 50%
+
 .. _III.15:
 
 III.15
@@ -11,11 +16,6 @@ III.15
 Let ``ABCD`` be a circle, let ``AD`` be its diameter and ``E`` the centre; and let ``BC`` be nearer to the diameter ``AD``, and ``FG`` more remote; I say that ``AD`` is greatest and ``BC`` greater than ``FG``.
 
 For from the centre ``E`` let ``EH``, ``EK``
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 be drawn perpendicular to ``BC``, ``FG``.
 

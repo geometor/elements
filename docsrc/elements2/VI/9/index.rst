@@ -1,6 +1,11 @@
 :order: 9
 :number: 14
 
+
+
+.. figure:: VI.9.jpg
+   :width: 50%
+
 .. _VI.9:
 
 VI.9
@@ -13,11 +18,6 @@ Let ``AB`` be the given straight line; thus it is required to cut off from ``AB`
 Let the third part be that prescribed.
 
 Let a straight line ``AC`` be drawn through from ``A`` containing with ``AB`` any angle; let a point ``D`` be taken at random on ``AC``, and let ``DE``, ``EC`` be made equal to ``AD``. [:ref:`I.3`]
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 Let ``BC`` be joined, and through ``D`` let ``DF`` be drawn parallel to it. [:ref:`I.31`]
 

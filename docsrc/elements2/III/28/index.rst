@@ -1,6 +1,11 @@
 :order: 28
 :number: 39
 
+
+
+.. figure:: III.28.jpg
+   :width: 50%
+
 .. _III.28:
 
 III.28
@@ -9,11 +14,6 @@ III.28
    In equal circles equal straight lines cut off equal circumferences, the greater equal to the greater and the less to the less.
 
 Let ``ABC``, ``DEF`` be equal circles, and in the circles let ``AB``, ``DE`` be equal straight lines cutting off ``ACB``, ``DFE`` as greater circumferences and ``AGB``, ``DHE`` as lesser; I say that the greater circumference ``ACB`` is equal to the greater circumference ``DFE``, and the less circumference ``AGB`` to ``DHE``.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 For let the centres ``K``, ``L`` of the circles be taken, and let ``AK``, ``KB``, ``DL``, ``LE`` be joined.
 

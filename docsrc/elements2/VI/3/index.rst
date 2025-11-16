@@ -1,6 +1,11 @@
 :order: 3
 :number: 8
 
+
+
+.. figure:: VI.3.jpg
+   :width: 50%
+
 .. _VI.3:
 
 VI.3
@@ -11,11 +16,6 @@ VI.3
 Let ``ABC`` be a triangle, and let the angle ``BAC`` be bisected by the straight line ``AD``; I say that, as ``BD`` is to ``CD``, so is ``BA`` to ``AC``.
 
 For let ``CE`` be drawn through ``C`` parallel to ``DA``, and let ``BA``
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 be carried through and meet it at ``E``.
 

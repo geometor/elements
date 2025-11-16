@@ -1,6 +1,11 @@
 :order: 22
 :number: 27
 
+
+
+.. figure:: VI.22.jpg
+   :width: 50%
+
 .. _VI.22:
 
 VI.22
@@ -31,11 +36,6 @@ But, as ``AB`` is to ``O``, so is ``KAB`` to ``LCD``, [:ref:`elem.6.19.p.1`]
 
 
 therefore also, as ``KAB`` is to ``LCD``, so is ``MF`` to ``NH``. [:ref:`V.11`]
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 Next, let ``MF`` be to ``NH`` as ``KAB`` is to ``LCD``; I say also that, as ``AB`` is to ``CD``, so is ``EF`` to ``GH``.
 

@@ -1,6 +1,11 @@
 :order: 15
 :number: 20
 
+
+
+.. figure:: VI.15.jpg
+   :width: 50%
+
 .. _VI.15:
 
 VI.15
@@ -21,11 +26,6 @@ For let them be placed so that ``CA`` is in a straight line with ``AD``; therefo
 Let ``BD`` be joined.
 
 Since then the triangle ``ABC`` is equal to the triangle ``ADE``, and ``BAD`` is another area, therefore, as the triangle ``CAB`` is to the triangle ``BAD``, so is the triangle ``EAD`` to the triangle ``BAD``. [:ref:`V.7`]
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 But, as ``CAB`` is to ``BAD``, so is ``CA`` to ``AD``, [:ref:`VI.1`] and, as ``EAD`` is to ``BAD``, so is ``EA`` to ``AB``. [``id``.]
 

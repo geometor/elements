@@ -1,6 +1,11 @@
 :order: 17
 :number: 22
 
+
+
+.. figure:: VI.17.jpg
+   :width: 50%
+
 .. _VI.17:
 
 VI.17
@@ -9,11 +14,6 @@ VI.17
    If three straight lines be proportional, the rectangle contained by the extremes is equal to the square on the mean; and, if the rectangle contained by the extremes be equal to the square on the mean, the three straight lines will be proportional.
 
 Let the three straight lines ``A``, ``B``, ``C`` be proportional, so that, as ``A`` is to ``B``, so is ``B`` to ``C``; I say that the rectangle contained by ``A``, ``C`` is equal to the square on ``B``.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 Let ``D`` be made equal to ``B``.
 

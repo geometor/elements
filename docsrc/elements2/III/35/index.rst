@@ -1,6 +1,11 @@
 :order: 35
 :number: 46
 
+
+
+.. figure:: III.35.jpg
+   :width: 50%
+
 .. _III.35:
 
 III.35
@@ -10,19 +15,9 @@ III.35
 
 For in the circle ``ABCD`` let the two straight lines ``AC``, ``BD`` cut one another at the point ``E``; I say that the rectangle contained by ``AE``, ``EC`` is equal to the rectangle contained by ``DE``, ``EB``.
 
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
-
 If now ``AC``, ``BD`` are through the centre, so that ``E`` is the centre of the circle ``ABCD``, it is manifest that, ``AE``, ``EC``, ``DE``, ``EB`` being equal, the rectangle contained by ``AE``, ``EC`` is also equal to the rectangle contained by ``DE``, ``EB``.
 
 Next let ``AC``, ``DB`` not be through the centre; let the centre of ``ABCD`` be taken, and let it be ``F``; from ``F`` let ``FG``, ``FH`` be drawn perpendicular to the straight lines ``AC``, ``DB``, and let ``FB``, ``FC``, ``FE`` be joined.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 Then, since a straight line ``GF`` through the centre cuts a straight line ``AC`` not through the centre at right angles,
 

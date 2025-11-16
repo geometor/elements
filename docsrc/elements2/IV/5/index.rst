@@ -1,6 +1,11 @@
 :order: 5
 :number: 12
 
+
+
+.. figure:: IV.5.jpg
+   :width: 50%
+
 .. _IV.5:
 
 IV.5
@@ -9,11 +14,6 @@ IV.5
    About a given triangle to circumscribe a circle.
 
 Let ``ABC`` be the given triangle; thus it is required to circumscribe a circle about the given triangle ``ABC``.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 Let the straight lines ``AB``, ``AC`` be bisected at the points ``D``, ``E`` [:ref:`I.10`], and from the points ``D``, ``E`` let ``DF``, ``EF`` be drawn at right angles to ``AB``, ``AC``; they will then meet within the triangle ``ABC``, or on the straight line ``BC``, or outside ``BC``.
 

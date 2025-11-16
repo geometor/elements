@@ -1,6 +1,11 @@
 :order: 41
 :number: 74
 
+
+
+.. figure:: I.41.jpg
+   :width: 50%
+
 .. _I.41:
 
 I.41

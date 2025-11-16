@@ -1,6 +1,11 @@
 :order: 36
 :number: 69
 
+
+
+.. figure:: I.36.jpg
+   :width: 50%
+
 .. _I.36:
 
 I.36

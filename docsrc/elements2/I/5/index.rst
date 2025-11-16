@@ -1,6 +1,11 @@
 :order: 5
 :number: 38
 
+
+
+.. figure:: I.5.jpg
+   :width: 50%
+
 .. _I.5:
 
 I.5

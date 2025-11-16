@@ -1,6 +1,11 @@
 :order: 10
 :number: 17
 
+
+
+.. figure:: IV.10.jpg
+   :width: 50%
+
 .. _IV.10:
 
 IV.10
@@ -11,11 +16,6 @@ IV.10
 ``To construct an isosceles triangle having each of the angles at the base double of the remaining one``.
 
 Let any straight line ``AB`` be set out, and let it be cut at the point ``C`` so that the rectangle contained by ``AB``, ``BC`` is equal to the square on ``CA``; [:ref:`II.11`] with centre ``A`` and distance ``AB`` let the circle ``BDE`` be described, and let there be fitted in the circle ``BDE`` the straight line ``BD`` equal to the straight line ``AC`` which is not greater than the diameter of the circle ``BDE``. [:ref:`IV.1`]
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 Let ``AD``, ``DC`` be joined, and let the circle ``ACD`` be circumscribed about the triangle ``ACD``. [:ref:`IV.5`]
 

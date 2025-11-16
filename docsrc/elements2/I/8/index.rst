@@ -1,6 +1,16 @@
 :order: 8
 :number: 41
 
+
+
+.. figure:: I.8.jpg
+   :width: 50%
+
+
+
+.. figure:: I.8-b.jpg
+   :width: 50%
+
 .. _I.8:
 
 I.8

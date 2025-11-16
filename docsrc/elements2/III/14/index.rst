@@ -1,6 +1,11 @@
 :order: 14
 :number: 25
 
+
+
+.. figure:: III.14.jpg
+   :width: 50%
+
 .. _III.14:
 
 III.14
@@ -13,11 +18,6 @@ Let ``ABDC`` be a circle, and let ``AB``, ``CD`` be equal straight lines in it; 
 For let the centre of the circle ``ABDC`` be taken [:ref:`III.1`], and let it be ``E``; from ``E`` let ``EF``, ``EG`` be drawn perpendicular to ``AB``, ``CD``, and let ``AE``, ``EC`` be joined.
 
 Then, since a straight line ``EF`` through the centre cuts a straight line ``AB`` not through the centre at right angles, it also bisects it. [:ref:`III.3`]
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 
 .. container:: center

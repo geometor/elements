@@ -1,6 +1,11 @@
 :order: 28
 :number: 33
 
+
+
+.. figure:: VI.28.jpg
+   :width: 50%
+
 .. _VI.28:
 
 VI.28
@@ -18,11 +23,6 @@ If then ``AG`` is equal to ``C``, that which was enjoined will have been done;
 .. container:: center
 
    for there has been applied to the given straight line ``AB`` the parallelogram ``AG`` equal to the given rectilineal figure ``C`` and deficient by a parallelogrammic figure ``GB`` which is similar to ``D``.
-
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
 
 
 But, if not, let ``HE`` be greater than ``C``.

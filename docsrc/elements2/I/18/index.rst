@@ -1,6 +1,16 @@
 :order: 18
 :number: 51
 
+
+
+.. figure:: I.18.jpg
+   :width: 50%
+
+
+
+.. figure:: I.18-b.jpg
+   :width: 50%
+
 .. _I.18:
 
 I.18

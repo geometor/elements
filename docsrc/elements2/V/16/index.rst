@@ -10,11 +10,6 @@ V.16
 
 Let ``A``, ``B``, ``C``, ``D`` be four proportional magnitudes, so that, as ``A`` is to ``B``, so is ``C`` to ``D``; I say that they will also be so alternately, that is, as ``A`` is to ``C``, so is ``B`` to ``D``.
 
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
-
 For of ``A``, ``B`` let equimultiples ``E``, ``F`` be taken, and of ``C``, ``D`` other, chance, equimultiples ``G``, ``H``.
 
 Then, since ``E`` is the same multiple of ``A`` that ``F`` is of ``B``, and parts have the same ratio as the same multiples of them, [:ref:`V.15`] therefore, as ``A`` is to ``B``, so is ``E`` to ``F``.

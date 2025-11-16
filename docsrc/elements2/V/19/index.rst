@@ -10,11 +10,6 @@ V.19
 
 For, as the whole ``AB`` is to the whole ``CD``, so let the part ``AE`` subtracted be to the part ``CF`` subtracted; I say that the remainder ``EB`` will also be to the remainder ``FD`` as the whole ``AB`` to the whole ``CD``.
 
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
-
 For since, as ``AB`` is to ``CD``, so is ``AE`` to ``CF``, alternately also, as ``BA`` is to ``AE``, so is ``DC`` to ``CF``. [:ref:`V.16`]
 
 And, since the magnitudes are proportional ``componendo``, they will also be proportional ``separando``, [:ref:`V.17`] that is, as ``BE`` is to ``EA``, so is ``DF`` to ``CF``, and, alternately,

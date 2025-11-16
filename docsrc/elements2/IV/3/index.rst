@@ -1,6 +1,11 @@
 :order: 3
 :number: 10
 
+
+
+.. figure:: IV.3.jpg
+   :width: 50%
+
 .. _IV.3:
 
 IV.3
@@ -9,11 +14,6 @@ IV.3
    About a given circle to circumscribe a triangle equiangular with a given triangle.
 
 Let ``ABC`` be the given circle, and ``DEF`` the given triangle; thus it is required to circumscribe about the circle ``ABC`` a triangle equiangular with the triangle ``DEF``.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 Let ``EF`` be produced in both directions to the points ``G``, ``H``, let the centre ``K`` of the circle ``ABC`` be taken [:ref:`III.1`], and let the straight line ``KB`` be drawn across at random; on the straight line ``KB``, and at the point ``K`` on it, let the angle ``BKA`` be constructed equal to the angle ``DEG``, and the angle ``BKC`` equal to the angle ``DFH``; [:ref:`I.23`] and through the points ``A``, ``B``, ``C`` let ``LAM``, ``MBN``, ``NCL`` be drawn touching the circle ``ABC``. [:ref:`elem.3.16.p.1`]
 

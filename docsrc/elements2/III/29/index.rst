@@ -1,6 +1,11 @@
 :order: 29
 :number: 40
 
+
+
+.. figure:: III.29.jpg
+   :width: 50%
+
 .. _III.29:
 
 III.29
@@ -9,11 +14,6 @@ III.29
    In equal circles equal circumferences are subtended by equal straight lines.
 
 Let ``ABC``, ``DEF`` be equal circles, and in them let equal circumferences ``BGC``, ``EHF`` be cut off; and let the straight lines ``BC``, ``EF`` be joined; I say that ``BC`` is equal to ``EF``.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 For let the centres of the circles be taken, and let them be ``K``, ``L``; let ``BK``, ``KC``, ``EL``, ``LF`` be joined.
 

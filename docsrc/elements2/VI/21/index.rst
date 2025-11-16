@@ -1,6 +1,11 @@
 :order: 21
 :number: 26
 
+
+
+.. figure:: VI.21.jpg
+   :width: 50%
+
 .. _VI.21:
 
 VI.21
@@ -11,11 +16,6 @@ VI.21
 For let each of the rectilineal figures ``A``, ``B`` be similar to ``C``; I say that ``A`` is also similar to ``B``.
 
 For, since ``A`` is similar to ``C``, it is equiangular with it and has the sides about the equal angles proportional. [:ref:`VI.def.1`]
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 Again, since ``B`` is similar to ``C``, it is equiangular with it and has the sides about the equal angles proportional.
 

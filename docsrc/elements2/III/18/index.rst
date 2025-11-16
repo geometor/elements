@@ -1,6 +1,11 @@
 :order: 18
 :number: 29
 
+
+
+.. figure:: III.18.jpg
+   :width: 50%
+
 .. _III.18:
 
 III.18
@@ -9,11 +14,6 @@ III.18
    If a straight line touch a circle, and a straight line be joined from the centre to the point of contact, the straight line so joined will be perpendicular to the tangent.
 
 For let a straight line ``DE`` touch the circle ``ABC`` at the point ``C``, let the centre ``F`` of the circle ``ABC`` be taken, and let ``FC`` be joined from ``F`` to ``C``; I say that ``FC`` is perpendicular to ``DE``.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 For, if not, let ``FG`` be drawn from ``F`` perpendicular to ``DE``.
 

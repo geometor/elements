@@ -1,6 +1,11 @@
 :order: 2
 :number: 7
 
+
+
+.. figure:: VI.2.jpg
+   :width: 50%
+
 .. _VI.2:
 
 VI.2
@@ -13,11 +18,6 @@ For let ``DE`` be drawn parallel to ``BC``, one of the sides of the triangle ``A
 For let ``BE``, ``CD`` be joined.
 
 Therefore the triangle ``BDE`` is equal to
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 the triangle ``CDE``; for they are on the same base ``DE`` and in the same parallels ``DE``, ``BC``. [:ref:`I.38`]
 

@@ -1,6 +1,11 @@
 :order: 24
 :number: 35
 
+
+
+.. figure:: III.24.jpg
+   :width: 50%
+
 .. _III.24:
 
 III.24
@@ -22,11 +27,6 @@ For, if the segment ``AEB`` be applied to ``CFD``, and if the point ``A`` be pla
 .. container:: center
 
    and, ``AB`` coinciding with ``CD``, the segment ``AEB`` will also coincide with ``CFD``.
-
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
 
 
 For, if the straight line ``AB`` coincide with ``CD`` but the segment ``AEB`` do not coincide with ``CFD``, it will either fall with it, or outside it; or it will fall awry, as ``CGD``, and a circle cuts a circle at more points than two : which is impossible. [:ref:`III.10`]

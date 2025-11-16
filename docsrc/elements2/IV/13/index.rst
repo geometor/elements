@@ -1,6 +1,11 @@
 :order: 13
 :number: 20
 
+
+
+.. figure:: IV.13.jpg
+   :width: 50%
+
 .. _IV.13:
 
 IV.13
@@ -13,11 +18,6 @@ Let ``ABCDE`` be the given equilateral and equiangular pentagon; thus it is requ
 For let the angles ``BCD``, ``CDE`` be bisected by the straight lines ``CF``, ``DF`` respectively; and from the point ``F``, at which the straight lines ``CF``, ``DF`` meet one another, let the straight lines ``FB``, ``FA``, ``FE`` be joined.
 
 Then, since ``BC`` is equal to ``CD``, and ``CF`` common, the two sides ``BC``, ``CF`` are equal to the two sides ``DC``, ``CF``;
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 and the angle ``BCF`` is equal to the angle ``DCF``;
 

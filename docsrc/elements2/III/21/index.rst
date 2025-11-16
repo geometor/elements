@@ -1,6 +1,11 @@
 :order: 21
 :number: 32
 
+
+
+.. figure:: III.21.jpg
+   :width: 50%
+
 .. _III.21:
 
 III.21
@@ -11,11 +16,6 @@ III.21
 Let ``ABCD`` be a circle, and let the angles ``BAD``, ``BED`` be angles in the same segment ``BAED``; I say that the angles ``BAD``, ``BED`` are equal to one another.
 
 For let the centre of the circle ``ABCD`` be taken, and let it be ``F``; let
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 ``BF``, ``FD`` be joined.
 

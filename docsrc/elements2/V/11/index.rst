@@ -12,11 +12,6 @@ V.11
 
 For, as ``A`` is to ``B``, so let ``C`` be to ``D``, and, as ``C`` is to ``D``, so let ``E`` be to ``F``; I say that, as ``A`` is to ``B``, so is ``E`` to ``F``.
 
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
-
 For of ``A``, ``C``, ``E`` let equimultiples ``G``, ``H``, ``K`` be taken, and of ``B``, ``D``, ``F`` other, chance, equimultiples ``L``, ``M``, ``N``.
 
 Then since, as ``A`` is to ``B``, so is ``C`` to ``D``, and of ``A``, ``C`` equimultiples ``G``, ``H`` have been taken, and of ``B``, ``D`` other, chance, equimultiples ``L``, ``M``, therefore, if ``G`` is in excess of ``L``, ``H`` is also in excess of ``M``, if equal, equal, and if less, less.

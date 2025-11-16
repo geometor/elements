@@ -12,11 +12,6 @@ IV.8
 
 Let ``ABCD`` be the given square; thus it is required to inscribe a circle in the given square ``ABCD``.
 
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
-
 Let the straight lines ``AD``, ``AB`` be bisected at the points ``E``, ``F`` respectively [:ref:`I.10`], through ``E`` let ``EH`` be drawn parallel to either ``AB`` or ``CD``, and through ``F`` let ``FK`` be drawn parallel to either ``AD`` or ``BC``; [:ref:`I.31`] therefore each of the figures ``AK``, ``KB``, ``AH``, ``HD``, ``AG``, ``GC``, ``BG``, ``GD`` is a parallelogram, and their opposite sides are evidently equal. [:ref:`I.34`]
 
 Now, since ``AD`` is equal to ``AB``, and ``AE`` is half of ``AD``, and ``AF`` half of ``AB``,

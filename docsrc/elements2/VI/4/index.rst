@@ -1,6 +1,11 @@
 :order: 4
 :number: 9
 
+
+
+.. figure:: VI.4.jpg
+   :width: 50%
+
 .. _VI.4:
 
 VI.4
@@ -9,11 +14,6 @@ VI.4
    In equiangular triangles the sides about the equal angles are proportional, and those are corresponding sides which subtend the equal angles.
 
 Let ``ABC``, ``DCE`` be equiangular triangles having the angle ``ABC`` equal to the angle ``DCE``, the angle ``BAC`` to the angle ``CDE``, and further the angle ``ACB`` to the angle ``CED``; I say that in the triangles ``ABC``, ``DCE`` the sides about the equal angles are proportional, and those are corresponding sides which subtend the equal angles.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 For let ``BC`` be placed in a straight line with ``CE``.
 

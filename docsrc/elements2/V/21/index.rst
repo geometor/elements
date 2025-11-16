@@ -20,11 +20,6 @@ Let there be three magnitudes ``A``, ``B``, ``C``, and others ``D``, ``E``, ``F`
 and, as ``B`` is to ``C``, so is ``D`` to ``E``, and let ``A`` be greater than ``C``
 ex aequali; I say that ``D`` will also be greater than ``F``; if ``A`` is equal to ``C``, equal; and if less, less.
 
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
-
 For, since ``A`` is greater than ``C``, and ``B`` is some other magnitude, therefore ``A`` has to ``B`` a greater ratio than ``C`` has to ``B``. [:ref:`V.8`]
 
 But, as ``A`` is to ``B``, so is ``E`` to ``F``, and, as ``C`` is to ``B``, inversely, so is ``E`` to ``D``. Therefore also ``E`` has to ``F`` a greater ratio than ``E`` has to ``D``. [:ref:`V.13`]

@@ -19,11 +19,6 @@ Let there be three magnitudes ``A``, ``B``, ``C``, and others equal to them in m
 
 and, as ``B`` is to ``C``, so is ``D`` to ``E``; I say that, as ``A`` is to ``C``, so is ``D`` to ``F``.
 
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
-
 Of ``A``, ``B``, ``D`` let equimultiples ``G``, ``H``, ``K`` be taken, and of ``C``, ``E``, ``F`` other, chance, equimultiples ``L``, ``M``, ``N``.
 
 Then, since ``G``, ``H`` are equimultiples of ``A``, ``B``, and parts have the same ratio as the same multiples of them, [:ref:`V.15`]

@@ -1,6 +1,11 @@
 :order: 37
 :number: 70
 
+
+
+.. figure:: I.37.jpg
+   :width: 50%
+
 .. _I.37:
 
 I.37

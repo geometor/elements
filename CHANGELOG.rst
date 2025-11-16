@@ -1,6 +1,19 @@
 changelog
 =========
 
+0.0.8
+-----
+*2025-11-16*
+
+**changed**
+
+.. + Updated the `elements_transform` script to include images in the generated RST files.
+.. + Added `width` attribute to the figure directive to control image size.
+
+**fixed**
+
+.. + Removed placeholder figures from the generated RST files.
+
 0.0.7
 -----
 *2025-11-15*
@@ -108,4 +121,3 @@ changelog
 
 .. + Fixed bug in data processing (`#42 <https://github.com/example/repo/issues/42>`_)
 .. + Improved error handling in API calls
-

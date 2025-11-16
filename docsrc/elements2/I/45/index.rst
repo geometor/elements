@@ -1,6 +1,11 @@
 :order: 45
 :number: 78
 
+
+
+.. figure:: I.45.jpg
+   :width: 50%
+
 .. _I.45:
 
 I.45

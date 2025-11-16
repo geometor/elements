@@ -1,6 +1,16 @@
 :order: 7
 :number: 40
 
+
+
+.. figure:: I.7.jpg
+   :width: 50%
+
+
+
+.. figure:: I.7-b.jpg
+   :width: 50%
+
 .. _I.7:
 
 I.7

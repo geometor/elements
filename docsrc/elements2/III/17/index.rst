@@ -1,6 +1,11 @@
 :order: 17
 :number: 28
 
+
+
+.. figure:: III.17.jpg
+   :width: 50%
+
 .. _III.17:
 
 III.17
@@ -11,11 +16,6 @@ III.17
 Let ``A`` be the given point, and ``BCD`` the given circle; thus it is required to draw from the point ``A`` a straight line touching the circle ``BCD``.
 
 For let the centre ``E`` of the circle be taken; [:ref:`III.1`] let ``AE`` be joined, and with centre ``E`` and distance ``EA`` let the circle ``AFG`` be described;
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 from ``D`` let ``DF`` be drawn at right angles to ``EA``, and let ``EF``, ``AB`` be joined; I say that ``AB`` has been drawn from the point ``A`` touching the circle ``BCD``.
 

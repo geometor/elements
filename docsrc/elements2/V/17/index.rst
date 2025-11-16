@@ -18,11 +18,6 @@ Then, since ``GH`` is the same multiple of ``AE`` that ``HK`` is of ``EB``, ther
 
 But ``GH`` is the same multiple of ``AE`` that ``LM`` is of ``CF``; therefore ``GK`` is the same multiple of ``AB`` that ``LM`` is of ``CF``.
 
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
-
 Again, since ``LM`` is the same multiple of ``CF`` that ``MN`` is of ``FD``, therefore ``LM`` is the same multiple of ``CF`` that ``LN`` is of ``CD``. [:ref:`V.1`]
 
 But ``LM`` was the same multiple of ``CF`` that ``GK`` is of ``AB``; therefore ``GK`` is the same multiple of ``AB`` that ``LN`` is of ``CD``.

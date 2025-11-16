@@ -26,11 +26,6 @@ and, as ``B`` is to ``C``, so is ``E`` to ``F``; I say that they will also be in
 
 For of ``A``, ``D`` let equimultiples ``G``, ``H`` be taken, and of ``B``, ``E`` other, chance, equimultiples ``K``, ``L``; and, further, of ``C``, ``F`` other, chance, equimultiples ``M``, ``N``.
 
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
-
 Then, since, as ``A`` is to ``B``, so is ``D`` to ``E``, and of ``A``, ``D`` equimultiples ``G``, ``H`` have been taken, and of ``B``, ``E`` other, chance, equimultiples ``K``, ``L``,
 
 

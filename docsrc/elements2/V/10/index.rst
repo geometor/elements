@@ -10,11 +10,6 @@ V.10
 
 For let ``A`` have to ``C`` a greater ratio than ``B`` has to ``C``; I say that ``A`` is greater than ``B``.
 
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
-
 For, if not, ``A`` is either equal to ``B`` or less.
 
 Now ``A`` is not equal to ``B``; for in that case each of the magnitudes ``A``, ``B`` would have had the same ratio to ``C``; [:ref:`V.7`] but they have not;

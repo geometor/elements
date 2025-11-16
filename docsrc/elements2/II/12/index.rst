@@ -1,6 +1,11 @@
 :order: 12
 :number: 14
 
+
+
+.. figure:: II.12.jpg
+   :width: 50%
+
 .. _II.12:
 
 II.12
@@ -14,11 +19,6 @@ Let ``ABC`` be an obtuse-angled triangle having the angle ``BAC`` obtuse, and le
 I say that the square on ``BC`` is greater than the squares on ``BA``, ``AC`` by twice the rectangle contained by ``CA``, ``AD``.
 
 For, since the straight line ``CD`` has been cut at random at the point ``A``, the square on ``DC`` is equal to the squares on ``CA``, ``AD`` and twice the rectangle contained by ``CA``, ``AD``. [:ref:`II.4`]
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 Let the square on ``DB`` be added to each; therefore the squares on ``CD``, ``DB`` are equal to the squares on ``CA``, ``AD``, ``DB`` and twice the rectangle ``CA``, ``AD``.
 

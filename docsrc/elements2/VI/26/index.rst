@@ -10,11 +10,6 @@ VI.26
 
 For from the parallelogram ``ABCD`` let there be taken away the parallelogram ``AF`` similar and similarly situated to ``ABCD``, and having the angle ``DAB`` common with it;
 
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
-
 I say that ``ABCD`` is about the same diameter with ``AF``.
 
 For suppose it is not, but, if possible, let ``AHC`` be the diameter < of ``ABCD`` >, let ``GF`` be produced and carried through to ``H``, and let ``HK`` be drawn through ``H`` parallel to either of the straight lines ``AD``, ``BC``. [:ref:`I.31`]

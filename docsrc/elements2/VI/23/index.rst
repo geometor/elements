@@ -1,6 +1,11 @@
 :order: 23
 :number: 28
 
+
+
+.. figure:: VI.23.jpg
+   :width: 50%
+
 .. _VI.23:
 
 VI.23
@@ -9,11 +14,6 @@ VI.23
    Equiangular parallelograms have to one another the ratio compounded of the ratios of their sides.
 
 Let ``AC``, ``CF`` be equiangular parallelograms having the angle ``BCD`` equal to the angle ``ECG``; I say that the parallelogram ``AC`` has to the parallelogram ``CF`` the ratio compounded of the ratios of the sides.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 For let them be placed so that ``BC`` is in a straight line with ``CG``;
 

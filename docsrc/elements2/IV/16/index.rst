@@ -1,6 +1,11 @@
 :order: 16
 :number: 23
 
+
+
+.. figure:: IV.16.jpg
+   :width: 50%
+
 .. _IV.16:
 
 IV.16
@@ -11,11 +16,6 @@ IV.16
 ``In a given circle to inscribe a fifteen-angled figure which shall be both equilateral and equiangular``.
 
 Let ``ABCD`` be the given circle; thus it is required to inscribe in the circle ``ABCD`` a fifteenangled figure which shall be both equilateral and equiangular.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 In the circle ``ABCD`` let there be inscribed a side ``AC`` of the equilateral triangle inscribed in it, and a side ``AB`` of an equilateral pentagon; therefore, of the equal segments of which there are fifteen in the circle ``ABCD``, there will be five in the circumference ``ABC`` which is one-third of the circle, and there will be three in the circumference ``AB`` which is one-fifth of the circle;
 

@@ -1,6 +1,11 @@
 :order: 22
 :number: 33
 
+
+
+.. figure:: III.22.jpg
+   :width: 50%
+
 .. _III.22:
 
 III.22
@@ -21,11 +26,6 @@ Then, since in any triangle the three angles are equal to two right angles, [:re
 
 
 But the angle ``CAB`` is equal to the angle ``BDC``, for they are in the same segment ``BADC``; [:ref:`III.21`] and the angle ``ACB`` is equal to the angle
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 ``ADB``, for they are in the same segment ``ADCB``; therefore the whole angle ``ADC`` is equal to the angles ``BAC``, ``ACB``.
 

@@ -1,6 +1,11 @@
 :order: 13
 :number: 24
 
+
+
+.. figure:: III.13.jpg
+   :width: 50%
+
 .. _III.13:
 
 III.13
@@ -13,11 +18,6 @@ For, if possible, let the circle ``ABDC`` touch the circle ``EBFD``, first inter
 Let the centre ``G`` of the circle ``ABDC``, and the centre ``H`` of ``EBFD``, be taken.
 
 Therefore the straight line
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 joined from ``G`` to ``H`` will fall on ``B``, ``D``. [:ref:`III.11`]
 

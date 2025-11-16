@@ -1,6 +1,11 @@
 :order: 11
 :number: 13
 
+
+
+.. figure:: II.11.jpg
+   :width: 50%
+
 .. _II.11:
 
 II.11
@@ -11,11 +16,6 @@ II.11
 Let ``AB`` be the given straight line; thus it is required to cut ``AB`` so that the rectangle contained by the whole and one of the segments is equal to the square on the remaining segment.
 
 For let the square ``ABDC`` be described on ``AB``; [:ref:`I.46`] let ``AC`` be bisected at the point ``E``, and let ``BE`` be joined; let ``CA`` be drawn through to ``F``, and let ``EF`` be made equal to ``BE``; let the square ``FH`` be described on ``AF``, and let ``GH`` be drawn through to ``K``.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 I say that ``AB`` has been cut at ``H`` so as to make the rectangle contained by ``AB``, ``BH`` equal to the square on ``AH``.
 

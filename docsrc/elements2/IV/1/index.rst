@@ -1,6 +1,11 @@
 :order: 1
 :number: 8
 
+
+
+.. figure:: IV.1.jpg
+   :width: 50%
+
 .. _IV.1:
 
 IV.1
@@ -9,11 +14,6 @@ IV.1
    Into a given circle to fit a straight line equal to a given straight line which is not greater than the diameter of the circle.
 
 Let ``ABC`` be the given circle, and ``D`` the given straight line not greater than the diameter of the circle; thus it is required to fit into the circle ``ABC`` a straight line equal to the straight line ``D``.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 Let a diameter ``BC`` of the circle ``ABC`` be drawn.
 

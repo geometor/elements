@@ -10,11 +10,6 @@ V.6
 
 For let two magnitudes ``AB``, ``CD`` be equimultiples of two magnitudes ``E``, ``F``, and let ``AG``, ``CH`` subtracted from them be equimultiples of the same two ``E``, ``F``;
 
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
-
 I say that the remainders also, ``GB``, ``HD``, are either equal to ``E``, ``F`` or equimultiples of them.
 
 For, first, let ``GB`` be equal to ``E``; I say that ``HD`` is also equal to ``F``.

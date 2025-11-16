@@ -1,6 +1,16 @@
 :order: 25
 :number: 58
 
+
+
+.. figure:: I.25.jpg
+   :width: 50%
+
+
+
+.. figure:: I.25-b.jpg
+   :width: 50%
+
 .. _I.25:
 
 I.25

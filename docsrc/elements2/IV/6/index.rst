@@ -1,6 +1,11 @@
 :order: 6
 :number: 13
 
+
+
+.. figure:: IV.6.jpg
+   :width: 50%
+
 .. _IV.6:
 
 IV.6
@@ -13,11 +18,6 @@ IV.6
 Let ``ABCD`` be the given circle; thus it is required to inscribe a square in the circle ``ABCD``.
 
 Let two diameters ``AC``, ``BD`` of the circle ``ABCD`` be drawn at right angles to one another, and let ``AB``, ``BC``, ``CD``, ``DA`` be joined.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 Then, since ``BE`` is equal to ``ED``, for ``E`` is the centre, and ``EA`` is common and at right angles, therefore the base ``AB`` is equal to the base ``AD``. [:ref:`I.4`]
 

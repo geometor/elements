@@ -1,6 +1,16 @@
 :order: 26
 :number: 59
 
+
+
+.. figure:: I.26.jpg
+   :width: 50%
+
+
+
+.. figure:: I.26-b.jpg
+   :width: 50%
+
 .. _I.26:
 
 I.26

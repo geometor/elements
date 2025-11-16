@@ -1,6 +1,11 @@
 :order: 3
 :number: 36
 
+
+
+.. figure:: I.3.jpg
+   :width: 50%
+
 .. _I.3:
 
 I.3

@@ -1,6 +1,11 @@
 :order: 4
 :number: 6
 
+
+
+.. figure:: II.4.jpg
+   :width: 50%
+
 .. _II.4:
 
 II.4
@@ -11,11 +16,6 @@ II.4
 For let the straight line ``AB`` be cut at random at ``C``; I say that the square on ``AB`` is equal to the squares on ``AC``, ``CB`` and twice the rectangle contained by ``AC``, ``CB``.
 
 For let the square ``ADEB`` be described on ``AB``, [:ref:`I.46`] let ``BD`` be joined; through ``C`` let ``CF`` be drawn parallel to either ``AD`` or ``EB``, and through ``G`` let ``HK`` be drawn parallel to either ``AB`` or ``DE``. [:ref:`I.31`]
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 Then, since ``CF`` is parallel to ``AD``, and ``BD`` has fallen on them, the exterior angle ``CGB`` is equal to the interior and opposite angle ``ADB``. [:ref:`I.29`]
 

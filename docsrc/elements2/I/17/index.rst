@@ -1,6 +1,11 @@
 :order: 17
 :number: 50
 
+
+
+.. figure:: I.17.jpg
+   :width: 50%
+
 .. _I.17:
 
 I.17

@@ -1,6 +1,11 @@
 :order: 40
 :number: 73
 
+
+
+.. figure:: I.40.jpg
+   :width: 50%
+
 .. _I.40:
 
 I.40
@@ -15,11 +20,6 @@ I say that they are also in the same parallels.
 For let ``AD`` be joined; I say that ``AD`` is parallel to ``BE``.
 
 For, if not, let ``AF`` be drawn through ``A`` parallel to ``BE`` [:ref:`I.31`], and let ``FE`` be joined.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 Therefore the triangle ``ABC`` is equal to the triangle ``FCE``; for they are on equal bases ``BC``, ``CE`` and in the same parallels ``BE``, ``AF``. [:ref:`I.38`]
 

@@ -1,6 +1,11 @@
 :order: 32
 :number: 65
 
+
+
+.. figure:: I.32.jpg
+   :width: 50%
+
 .. _I.32:
 
 I.32

@@ -10,11 +10,6 @@ V.1
 
 Let any number of magnitudes whatever ``AB``, ``CD`` be respectively equimultiples of any magnitudes ``E``, ``F`` equal in multitude; I say that, whatever multiple ``AB`` is of ``E``, that multiple will ``AB``, ``CD`` also be of ``E``, ``F``.
 
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
-
 For, since ``AB`` is the same multiple of ``E`` that ``CD`` is of ``F``, as many magnitudes as there are in ``AB`` equal to ``E``, so many also are there in ``CD`` equal to ``F``.
 
 Let ``AB`` be divided into the magnitudes ``AG``, ``GB`` equal to ``E``, and ``CD`` into ``CH``, ``HD`` equal to ``F``; then the multitude of the magnitudes ``AG``, ``GB`` will be equal to the multitude of the magnitudes ``CH``, ``HD``.

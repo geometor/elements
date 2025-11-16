@@ -1,6 +1,11 @@
 :order: 15
 :number: 22
 
+
+
+.. figure:: IV.15.jpg
+   :width: 50%
+
 .. _IV.15:
 
 IV.15
@@ -11,11 +16,6 @@ IV.15
 Let ``ABCDEF`` be the given circle; thus it is required to inscribe an equilateral and equiangular hexagon in the circle ``ABCDEF``.
 
 Let the diameter ``AD`` of the circle ``ABCDEF`` be drawn; let the centre ``G`` of the circle be taken, and with centre ``D`` and distance ``DG`` let the circle ``EGCH`` be described;
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 let ``EG``, ``CG`` be joined and carried through to the points ``B``, ``F``, and let ``AB``, ``BC``, ``CD``, ``DE``, ``EF``, ``FA`` be joined.
 

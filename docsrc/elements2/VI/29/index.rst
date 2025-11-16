@@ -1,6 +1,11 @@
 :order: 29
 :number: 34
 
+
+
+.. figure:: VI.29.jpg
+   :width: 50%
+
 .. _VI.29:
 
 VI.29
@@ -9,11 +14,6 @@ VI.29
    To a given straight line to apply a parallelogram equal to a given rectilineal figure and exceeding by a parallelogrammic figure similar to a given one.
 
 Let ``AB`` be the given straight line, ``C`` the given rectilineal figure to which the figure to be applied to ``AB`` is required to be equal, and ``D`` that to which the excess is required to be similar; thus it is required to apply to the straight line ``AB`` a parallelogram equal to the rectilineal figure ``C`` and exceeding by a parallelogrammic figure similar to ``D``.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 Let ``AB`` be bisected at ``E``; let there be described on ``EB`` the parallelogram ``BF`` similar and similarly situated to ``D``; and let ``GH`` be constructed at once equal to the sum of ``BF``, ``C`` and similar and similarly situated to ``D``. [:ref:`VI.25`]
 

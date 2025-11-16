@@ -1,6 +1,11 @@
 :order: 27
 :number: 60
 
+
+
+.. figure:: I.27.jpg
+   :width: 50%
+
 .. _I.27:
 
 I.27

@@ -10,11 +10,6 @@ V.14
 
 For let a first magnitude ``A`` have the same ratio to a second ``B`` as a third ``C`` has to a fourth ``D``; and let ``A`` be greater than ``C``; I say that ``B`` is also greater than ``D``.
 
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
-
 For, since ``A`` is greater than ``C``, and ``B`` is another, chance, magnitude, therefore ``A`` has to ``B`` a greater ratio than ``C`` has to ``B``. [:ref:`V.8`]
 
 But, as ``A`` is to ``B``, so is ``C`` to ``D``;

@@ -10,11 +10,6 @@ V.8
 
 Let ``AB``, ``C`` be unequal magnitudes, and let ``AB`` be greater; let ``D`` be another, chance, magnitude; I say that ``AB`` has to ``D`` a greater ratio than ``C`` has to ``D``, and ``D`` has to ``C`` a greater ratio than it has to ``AB``.
 
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
-
 For, since ``AB`` is greater than ``C``, let ``BE`` be made equal to ``C``; then the less of the magnitudes ``AE``, ``EB``, if multiplied, will sometime be greater than ``D``. [:ref:`V.def.4`]
 
 [Case I.]
@@ -90,11 +85,6 @@ Again, let ``AE`` be greater than ``EB``.
 Then the less, ``EB``, if multiplied, will sometime be greater than ``D``. [:ref:`V.def.4`]
 
 Let it be multiplied, and let ``GH`` be a multiple of ``EB`` and greater than ``D``; and, whatever multiple ``GH`` is of ``EB``, let ``FG`` be made the same multiple of ``AE``, and ``K``
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 of ``C``.
 

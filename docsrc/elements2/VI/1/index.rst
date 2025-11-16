@@ -1,6 +1,11 @@
 :order: 1
 :number: 6
 
+
+
+.. figure:: VI.1.jpg
+   :width: 50%
+
 .. _VI.1:
 
 VI.1
@@ -9,11 +14,6 @@ VI.1
    Triangles and parallelograms which are under the same height are to one another as their bases.
 
 Let ``ABC``, ``ACD`` be triangles and ``EC``, ``CF`` parallelograms under the same height; I say that, as the base ``BC`` is to the base ``CD``, so is the triangle ``ABC`` to the triangle ``ACD``, and the parallelogram ``EC`` to the parallelogram ``CF``.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 For let ``BD`` be produced in both directions to the points ``H``, ``L`` and let [any number of straight lines] ``BG``, ``GH`` be made equal to the base ``BC``, and any number of straight lines ``DK``, ``KL`` equal to the base ``CD``; let ``AG``, ``AH``, ``AK``, ``AL`` be joined.
 

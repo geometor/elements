@@ -1,6 +1,11 @@
 :order: 31
 :number: 36
 
+
+
+.. figure:: VI.31.jpg
+   :width: 50%
+
 .. _VI.31:
 
 VI.31
@@ -13,11 +18,6 @@ Let ``ABC`` be a right-angled triangle having the angle ``BAC`` right; I say tha
 Let ``AD`` be drawn perpendicular.
 
 Then since, in the right-angled triangle ``ABC``, ``AD`` has been drawn from the right angle at ``A`` perpendicular to the base ``BC``, the triangles ``ABD``, ``ADC`` adjoining the perpendicular are similar both to the whole ``ABC`` and to one another. [:ref:`VI.8`]
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 And, since ``ABC`` is similar to ``ABD``, therefore, as ``CB`` is to ``BA``, so is ``AB`` to ``BD``. [:ref:`VI.def.1`]
 

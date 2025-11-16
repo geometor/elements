@@ -1,6 +1,11 @@
 :order: 14
 :number: 19
 
+
+
+.. figure:: VI.14.jpg
+   :width: 50%
+
 .. _VI.14:
 
 VI.14
@@ -17,11 +22,6 @@ Let ``AB``, ``BC`` be equal and equiangular parallelograms having the angles at 
 
 
 I say that, in ``AB``, ``BC``, the sides about the equal angles are reciprocally proportional, that is to say, that, as ``DB`` is to ``BE``, so is ``GB`` to ``BF``.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 For let the parallelogram ``FE`` be completed.
 

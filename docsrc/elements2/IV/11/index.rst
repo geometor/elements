@@ -1,6 +1,11 @@
 :order: 11
 :number: 18
 
+
+
+.. figure:: IV.11.jpg
+   :width: 50%
+
 .. _IV.11:
 
 IV.11
@@ -11,11 +16,6 @@ IV.11
 Let ``ABCDE`` be the given circle; thus it is required to inscribe in the circle ``ABCDE`` an equilateral and equiangular pentagon.
 
 Let the isosceles triangle ``FGH`` be set out having each of the angles at ``G``, ``H`` double of the angle at ``F``; [:ref:`IV.10`]
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 let there be inscribed in the circle ``ABCDE`` the triangle ``ACD`` equiangular with the triangle ``FGH``, so that the angle ``CAD`` is equal to the angle at ``F`` and the angles at ``G``, ``H`` respectively equal to the angles ``ACD``, ``CDA``; [:ref:`IV.2`] therefore each of the angles ``ACD``, ``CDA`` is also double of the angle ``CAD``.
 

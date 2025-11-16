@@ -1,6 +1,11 @@
 :order: 7
 :number: 18
 
+
+
+.. figure:: III.7.jpg
+   :width: 50%
+
 .. _III.7:
 
 III.7
@@ -15,11 +20,6 @@ III.7
 Let ``ABCD`` be a circle, and let ``AD`` be a diameter of it; on ``AD`` let a point ``F`` be taken which is not the centre of the circle, let ``E`` be the centre of the circle, and from ``F`` let straight lines ``FB``, ``FC``, ``FG`` fall upon the circle ``ABCD``; I say that ``FA`` is greatest, ``FD`` is least, and of the rest ``FB`` is greater than ``FC``, and ``FC`` than ``FG``.
 
 For let ``BE``, ``CE``, ``GE`` be joined.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 Then, since in any triangle two sides are greater than the remaining one, [:ref:`I.20`]
 

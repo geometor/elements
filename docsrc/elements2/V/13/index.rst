@@ -10,11 +10,6 @@ V.13
 
 For let a first magnitude ``A`` have to a second ``B`` the same ratio as a third ``C`` has to a fourth ``D``, and let the third ``C`` have to the fourth ``D`` a greater ratio than a fifth ``E`` has to a sixth ``F``; I say that the first ``A`` will also have to the second ``B`` a greater ratio than the fifth ``E`` to the sixth ``F``.
 
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
-
 For, since there are some equimultiples of ``C``, ``E``, and of ``D``, ``F`` other, chance, equimultiples, such that the multiple of ``C`` is in excess of the multiple of ``D``, while the multiple of ``E`` is not in excess of the multiple of ``F``, [:ref:`V.def.7`] let them be taken, and let ``G``, ``H`` be equimultiples of ``C``, ``E``, and ``K``, ``L`` other, chance, equimultiples of ``D``, ``F``, so that ``G`` is in excess of ``K``, but ``H`` is not in excess of ``L``; and, whatever multiple ``G`` is of ``C``, let ``M`` be also that multiple of ``A``, and, whatever multiple ``K`` is of ``D``, let ``N`` be also that multiple of ``B``.
 
 Now, since, as ``A`` is to ``B``, so is ``C`` to ``D``, and of ``A``, ``C`` equimultiples ``M``, ``G`` have been taken, and of ``B``, ``D`` other, chance, equimultiples ``N``, ``K``, therefore, if ``M`` is in excess of ``N``, ``G`` is also in excess of ``K``, if equal, equal, and if less, less. [:ref:`V.def.5`]

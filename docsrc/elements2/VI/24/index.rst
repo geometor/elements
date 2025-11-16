@@ -1,6 +1,11 @@
 :order: 24
 :number: 29
 
+
+
+.. figure:: VI.24.jpg
+   :width: 50%
+
 .. _VI.24:
 
 VI.24
@@ -9,11 +14,6 @@ VI.24
    In any parallelogram the parallelograms about the diameter are similar both to the whole and to one another.
 
 Let ``ABCD`` be a parallelogram, and ``AC`` its diameter, and let ``EG``, ``HK`` be parallelograms about ``AC``; I say that each of the parallelograms ``EG``, ``HK`` is similar both to the whole ``ABCD`` and to the other.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 For, since ``EF`` has been drawn parallel to ``BC``, one of the sides of the triangle ``ABC``,
 

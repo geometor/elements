@@ -1,6 +1,11 @@
 :order: 12
 :number: 19
 
+
+
+.. figure:: IV.12.jpg
+   :width: 50%
+
 .. _IV.12:
 
 IV.12
@@ -11,11 +16,6 @@ IV.12
 Let ``ABCDE`` be the given circle; thus it is required to circumscribe an equilateral and equiangular pentagon about the circle ``ABCDE``.
 
 Let ``A``, ``B``, ``C``, ``D``, ``E`` be conceived to be the angular points of the inscribed pentagon, so that the circumferences ``AB``, ``BC``, ``CD``, ``DE``, ``EA`` are equal; [:ref:`IV.11`]
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 through ``A``, ``B``, ``C``, ``D``, ``E`` let ``GH``, ``HK``, ``KL``, ``LM``, ``MG`` be drawn touching the circle; [:ref:`elem.3.16.p.1`] let the centre ``F`` of the circle ``ABCDE`` be taken [:ref:`III.1`], and let ``FB``, ``FK``, ``FC``, ``FL``, ``FD`` be joined.
 

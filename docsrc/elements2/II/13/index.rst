@@ -1,6 +1,11 @@
 :order: 13
 :number: 15
 
+
+
+.. figure:: II.13.jpg
+   :width: 50%
+
 .. _II.13:
 
 II.13
@@ -18,11 +23,6 @@ For, since the straight line ``CB`` has been cut at random at ``D``,
 .. container:: center
 
    the squares on ``CB``, ``BD`` are equal to twice the rectangle contained by ``CB``, ``BD`` and the square on ``DC``. [:ref:`II.7`]
-
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
 
 
 Let the square on ``DA`` be added to each; therefore the squares on ``CB``, ``BD``, ``DA`` are equal to twice the rectangle contained by ``CB``, ``BD`` and the squares on ``AD``, ``DC``.

@@ -1,6 +1,11 @@
 :order: 13
 :number: 18
 
+
+
+.. figure:: VI.13.jpg
+   :width: 50%
+
 .. _VI.13:
 
 VI.13
@@ -11,11 +16,6 @@ VI.13
 Let ``AB``, ``BC`` be the two given straight lines; thus it is required to find a mean proportional to ``AB``, ``BC``.
 
 Let them be placed in a straight line, and let the semicircle ``ADC`` be described on ``AC``;
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 let ``BD`` be drawn from the point ``B`` at right angles to the straight line ``AC``, and let ``AD``, ``DC`` be joined.
 

@@ -10,11 +10,6 @@ IV.9
 
 Let ``ABCD`` be the given square; thus it is required to circumscribe a circle about the square ``ABCD``.
 
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
-
 For let ``AC``, ``BD`` be joined, and let them cut one another at ``E``.
 
 Then, since ``DA`` is equal to ``AB``, and ``AC`` is common, therefore the two sides ``DA``, ``AC`` are equal to the two sides ``BA``, ``AC``; and the base ``DC`` is equal to the base ``BC``;

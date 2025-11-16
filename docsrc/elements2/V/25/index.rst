@@ -12,11 +12,6 @@ V.25
 
 Let the four magnitudes ``AB``, ``CD``, ``E``, ``F`` be proportional so that, as ``AB`` is to ``CD``, so is ``E`` to ``F``, and let ``AB`` be the greatest of them and ``F`` the least; I say that ``AB``, ``F`` are greater than ``CD``, ``E``.
 
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
-
 For let ``AG`` be made equal to ``E``, and ``CH`` equal to ``F``.
 
 Since, as ``AB`` is to ``CD``, so is ``E`` to ``F``, and ``E`` is equal to ``AG``, and ``F`` to ``CH``,

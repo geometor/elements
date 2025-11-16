@@ -10,11 +10,6 @@ V.24
 
 Let a first magnitude ``AB`` have to a second ``C`` the same ratio as a third ``DE`` has to a fourth ``F``; and let also a fifth ``BG`` have to
 
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
-
 the second ``C`` the same ratio as a sixth ``EH`` has to the fourth ``F``; I say that the first and fifth added together, ``AG``, will have to the second ``C`` the same ratio as the third and sixth, ``DH``, has to the fourth ``F``.
 
 For since, as ``BG`` is to ``C``, so is ``EH`` to ``F``, inversely, as ``C`` is to ``BG``, so is ``F`` to ``EH``.

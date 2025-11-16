@@ -1,6 +1,11 @@
 :order: 19
 :number: 52
 
+
+
+.. figure:: I.19.jpg
+   :width: 50%
+
 .. _I.19:
 
 I.19

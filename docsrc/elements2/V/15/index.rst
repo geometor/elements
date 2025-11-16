@@ -10,11 +10,6 @@ V.15
 
 For let ``AB`` be the same multiple of ``C`` that ``DE`` is of ``F``; I say that, as ``C`` is to ``F``, so is ``AB`` to ``DE``.
 
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
-
 For, since ``AB`` is the same multiple of ``C`` that ``DE`` is of ``F``, as many magnitudes as there are in ``AB`` equal to ``C``, so many are there also in ``DE`` equal to ``F``.
 
 Let ``AB`` be divided into the magnitudes ``AG``, ``GH``, ``HB`` equal to ``C``, and ``DE`` into the magnitudes ``DK``, ``KL``, ``LE`` equal to ``F``; then the multitude of the magnitudes ``AG``, ``GH``, ``HB`` will be equal to the multitude of the magnitudes ``DK``, ``KL``, ``LE``.

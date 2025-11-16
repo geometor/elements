@@ -1,6 +1,11 @@
 :order: 25
 :number: 30
 
+
+
+.. figure:: VI.25.jpg
+   :width: 50%
+
 .. _VI.25:
 
 VI.25
@@ -9,11 +14,6 @@ VI.25
    To construct one and the same figure similar to a given rectilineal figure and equal to another given rectilineal figure.
 
 Let ``ABC`` be the given rectilineal figure to which the figure to be constructed must be similar, and ``D`` that to which it must be equal; thus it is required to construct one and the same figure similar to ``ABC`` and equal to ``D``.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 Let there be applied to ``BC`` the parallelogram ``BE`` equal to the triangle ``ABC`` [:ref:`I.44`], and to ``CE`` the parallelogram ``CM`` equal to ``D`` in the angle ``FCE`` which is equal to the angle ``CBL``. [:ref:`I.45`]
 

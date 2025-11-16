@@ -1,6 +1,11 @@
 :order: 30
 :number: 35
 
+
+
+.. figure:: VI.30.jpg
+   :width: 50%
+
 .. _VI.30:
 
 VI.30
@@ -24,11 +29,6 @@ Now ``BC`` is a square;
 .. container:: center
 
    therefore ``AD`` is also a square.
-
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
 
 
 And, since ``BC`` is equal to ``CD``, let ``CE`` be subtracted from each;

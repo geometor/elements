@@ -1,6 +1,11 @@
 :order: 32
 :number: 37
 
+
+
+.. figure:: VI.32.jpg
+   :width: 50%
+
 .. _VI.32:
 
 VI.32
@@ -21,11 +26,6 @@ For the same reason
 
 
 so that the angle ``BAC`` is equal to the angle ``CDE``.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 And, since ``ABC``, ``DCE`` are two triangles having one angle, the angle at ``A``, equal to one angle, the angle at ``D``,
 

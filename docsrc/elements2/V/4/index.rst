@@ -10,11 +10,6 @@ V.4
 
 For let a first magnitude ``A`` have to a second ``B`` the same ratio as a third ``C`` to a fourth ``D``; and let equimultiples ``E``, ``F`` be taken of ``A``, ``C``, and ``G``, ``H`` other, chance, equimultiples of ``B``, ``D``; I say that, as ``E`` is to ``G``, so is ``F`` to ``H``.
 
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
-
 For let equimultiples ``K``, ``L`` be taken of ``E``, ``F``, and other, chance, equimultiples ``M``, ``N`` of ``G``, ``H``.
 
 Since ``E`` is the same multiple of ``A`` that ``F`` is of ``C``, and equimultiples ``K``, ``L`` of ``E``, ``F`` have been taken, therefore ``K`` is the same multiple of ``A`` that ``L`` is of ``C``. [:ref:`V.3`]

@@ -1,6 +1,16 @@
 :order: 47
 :number: 80
 
+
+
+.. figure:: I.47.jpg
+   :width: 50%
+
+
+
+.. figure:: I.47-b.jpg
+   :width: 50%
+
 .. _I.47:
 
 I.47

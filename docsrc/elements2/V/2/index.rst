@@ -10,11 +10,6 @@ V.2
 
 Let a first magnitude, ``AB``, be the same multiple of a second, ``C``, that a third, ``DE``, is of a fourth, ``F``, and let a fifth, ``BG``, also be the same multiple of the second, ``C``, that a sixth, ``EH``, is of the fourth ``F``;
 
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
-
 I say that the sum of the first and fifth, ``AG``, will be the same multiple of the second, ``C``, that the sum of the third and sixth, ``DH``, is of the fourth, ``F``.
 
 For, since ``AB`` is the same multiple of ``C`` that ``DE`` is of ``F``, therefore, as many magnitudes as there are in ``AB`` equal to ``C``, so many also are there in ``DE`` equal to ``F``.

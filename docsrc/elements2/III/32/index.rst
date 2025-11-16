@@ -1,6 +1,11 @@
 :order: 32
 :number: 43
 
+
+
+.. figure:: III.32.jpg
+   :width: 50%
+
 .. _III.32:
 
 III.32
@@ -11,11 +16,6 @@ III.32
 For let a straight line ``EF`` touch the circle ``ABCD`` at the point ``B``, and from the point ``B`` let there be drawn across, in the circle ``ABCD``, a straight line ``BD`` cutting it; I say that the angles which ``BD`` makes with the tangent ``EF`` will be equal to the angles in the alternate segments of the circle, that is, that the angle ``FBD`` is equal to the angle constructed in the segment ``BAD``, and the angle ``EBD`` is equal to the angle constructed in the segment ``DCB``.
 
 For let ``BA`` be drawn from ``B`` at right angles to ``EF``, let a point ``C`` be taken at random on the circumference ``BD``,
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 and let ``AD``, ``DC``, ``CB`` be joined.
 

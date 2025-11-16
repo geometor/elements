@@ -1,6 +1,11 @@
 :order: 15
 :number: 48
 
+
+
+.. figure:: I.15.jpg
+   :width: 50%
+
 .. _I.15:
 
 I.15

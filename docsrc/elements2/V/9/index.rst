@@ -10,11 +10,6 @@ V.9
 
 For let each of the magnitudes ``A``, ``B`` have the same ratio to ``C``; I say that ``A`` is equal to ``B``.
 
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
-
 For, otherwise, each of the magnitudes ``A``, ``B`` would not have had the same ratio to ``C``; [:ref:`V.8`] but it has;
 
 

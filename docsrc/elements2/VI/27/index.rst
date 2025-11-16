@@ -1,6 +1,11 @@
 :order: 27
 :number: 32
 
+
+
+.. figure:: VI.27.jpg
+   :width: 50%
+
 .. _VI.27:
 
 VI.27
@@ -11,11 +16,6 @@ VI.27
 ``Of all the parallelograms applied to the same straight line and deficient by parallelogrammic figures similar and similarly situated to that described on the half of the straight line``, ``that parallelogram is greatest which is applied to the half of the straight line and is similar to the defect``.
 
 Let ``AB`` be a straight line and let it be bisected at ``C``; let there be applied to the straight line ``AB`` the parallelogram ``AD`` deficient by the parallelogrammic figure ``DB`` described on the half of ``AB``, that is, ``CB``;
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 I say that, of all the parallelograms applied to ``AB`` and deficient by parallelogrammic figures similar and similarly situated to ``DB``, ``AD`` is greatest.
 

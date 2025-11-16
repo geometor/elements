@@ -1,6 +1,11 @@
 :order: 20
 :number: 25
 
+
+
+.. figure:: VI.20.jpg
+   :width: 50%
+
 .. _VI.20:
 
 VI.20
@@ -12,11 +17,6 @@ VI.20
 Let ``ABCDE``, ``FGHKL`` be similar polygons, and let ``AB`` correspond to ``FG``; I say that the polygons ``ABCDE``, ``FGHKL`` are divided into similar triangles, and into triangles equal in multitude and in the same ratio as the wholes, and the polygon ``ABCDE`` has to the polygon ``FGHKL`` a ratio duplicate of that which ``AB`` has to ``FG``.
 
 Let ``BE``, ``EC``, ``GL``, ``LH`` be joined.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 Now, since the polygon ``ABCDE`` is similar to the polygon ``FGHKL``, the angle ``BAE`` is equal to the angle ``GFL``;
 

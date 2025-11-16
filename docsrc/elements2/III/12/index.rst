@@ -1,6 +1,11 @@
 :order: 12
 :number: 23
 
+
+
+.. figure:: III.12.jpg
+   :width: 50%
+
 .. _III.12:
 
 III.12
@@ -11,11 +16,6 @@ III.12
 For let the two circles ``ABC``, ``ADE`` touch one another externally at the point ``A``, and let the centre ``F`` of ``ABC``, and the centre ``G`` of ``ADE``, be taken; I say that the straight line joined from ``F`` to ``G`` will pass through the point of contact at ``A``.
 
 For suppose it does not, but, if possible, let it pass as ``FCDG``, and let ``AF``, ``AG`` be joined.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 Then, since the point ``F`` is the centre of the circle ``ABC``,
 

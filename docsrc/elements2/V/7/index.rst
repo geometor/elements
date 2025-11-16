@@ -10,11 +10,6 @@ V.7
 
 Let ``A``, ``B`` be equal magnitudes and ``C`` any other, chance, magnitude; I say that each of the magnitudes ``A``, ``B`` has the same ratio to ``C``, and ``C`` has the same ratio to each of the magnitudes ``A``, ``B``.
 
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
-
 For let equimultiples ``D``, ``E`` of ``A``, ``B`` be taken, and of ``C`` another, chance, multiple ``F``.
 
 Then, since ``D`` is the same multiple of ``A`` that ``E`` is of ``B``, while ``A`` is equal to ``B``,

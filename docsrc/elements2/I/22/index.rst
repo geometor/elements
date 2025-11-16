@@ -1,6 +1,11 @@
 :order: 22
 :number: 55
 
+
+
+.. figure:: I.22.jpg
+   :width: 50%
+
 .. _I.22:
 
 I.22

@@ -1,6 +1,11 @@
 :order: 33
 :number: 38
 
+
+
+.. figure:: VI.33.jpg
+   :width: 50%
+
 .. _VI.33:
 
 VI.33
@@ -9,11 +14,6 @@ VI.33
    In equal circles angles have the same ratio as the circumferences on which they stand, whether they stand at the centres or at the circumferences.
 
 Let ``ABC``, ``DEF`` be equal circles, and let the angles ``BGC``, ``EHF`` be angles at their centres ``G``, ``H``, and the angles ``BAC``, ``EDF`` angles at the circumferences; I say that, as the circumference ``BC`` is to the circumference ``EF``, so is the angle ``BGC`` to the angle ``EHF``, and the angle ``BAC`` to the angle ``EDF``.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 For let any number of consecutive circumferences ``CK``, ``KL`` be made equal to the circumference ``BC``, and any number of consecutive circumferences ``FM``, ``MN`` equal to the circumference ``EF``; and let ``GK``, ``GL``, ``HM``, ``HN`` be joined.
 

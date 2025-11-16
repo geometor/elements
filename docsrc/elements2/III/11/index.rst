@@ -1,6 +1,11 @@
 :order: 11
 :number: 22
 
+
+
+.. figure:: III.11.jpg
+   :width: 50%
+
 .. _III.11:
 
 III.11
@@ -9,11 +14,6 @@ III.11
    If two circles touch one another internally, and their centres be taken, the straight line joining their centres, if it be also produced, will fall on the point of contact of the circles.
 
 For let the two circles ``ABC``, ``ADE`` touch one another internally at the point ``A``, and let the centre ``F`` of the circle ``ABC``, and the centre ``G`` of ``ADE``, be taken; I say that the straight line joined from ``G`` to ``F`` and produced will fall on ``A``.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 For suppose it does not, but, if possible, let it fall as ``FGH``, and let ``AF``, ``AG`` be joined.
 

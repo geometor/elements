@@ -10,11 +10,6 @@ VI.19
 
 Let ``ABC``, ``DEF`` be similar triangles having the angle at ``B`` equal to the angle at ``E``, and such that, as ``AB`` is to ``BC``, so is ``DE`` to ``EF``, so that ``BC`` corresponds to ``EF``; [:ref:`V.def.11`] I say that the triangle ``ABC`` has to the triangle ``DEF`` a ratio duplicate of that which ``BC`` has to ``EF``.
 
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
-
 For let a third proportional ``BG`` be taken to ``BC``, ``EF``, so that, as ``BC`` is to ``EF``, so is ``EF`` to ``BG``; [:ref:`VI.11`] and let ``AG`` be joined.
 
 Since then, as ``AB`` is to ``BC``, so is ``DE`` to ``EF``, therefore, alternately, as ``AB`` is to ``DE``, so is ``BC`` to ``EF``. [:ref:`V.16`]

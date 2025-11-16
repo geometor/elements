@@ -1,6 +1,11 @@
 :order: 1
 :number: 12
 
+
+
+.. figure:: III.1.jpg
+   :width: 50%
+
 .. _III.1:
 
 III.1
@@ -11,11 +16,6 @@ III.1
 Let ``ABC`` be the given circle; thus it is required to find the centre of the circle ``ABC``.
 
 Let a straight line ``AB`` be drawn through it at random, and let it be bisected at the point ``D``; from ``D`` let ``DC`` be drawn at right angles to ``AB`` and let it be drawn through to ``E``; let ``CE`` be bisected at ``F``; I say that ``F`` is the centre of the circle ``ABC``.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 For suppose it is not, but, if possible, let ``G`` be the centre, and let ``GA``, ``GD``, ``GB`` be joined.
 

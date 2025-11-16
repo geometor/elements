@@ -1,6 +1,11 @@
 :order: 8
 :number: 13
 
+
+
+.. figure:: VI.8.jpg
+   :width: 50%
+
 .. _VI.8:
 
 VI.8
@@ -11,11 +16,6 @@ VI.8
 Let ``ABC`` be a right-angled triangle having the angle ``BAC`` right, and let ``AD`` be drawn from ``A`` perpendicular to ``BC``; I say that each of the triangles ``ABD``, ``ADC`` is similar to the whole ``ABC`` and, further, they are similar to one another.
 
 For, since the angle ``BAC`` is equal to the angle ``ADB``, for each is right, and the angle at ``B`` is common to the two triangles ``ABC`` and ``ABD``, therefore the remaining angle ``ACB`` is equal to the remaining angle ``BAD``; [:ref:`I.32`]
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 therefore the triangle ``ABC`` is equiangular with the triangle ``ABD``.
 

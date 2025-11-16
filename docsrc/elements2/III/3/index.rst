@@ -1,6 +1,11 @@
 :order: 3
 :number: 14
 
+
+
+.. figure:: III.3.jpg
+   :width: 50%
+
 .. _III.3:
 
 III.3
@@ -10,11 +15,6 @@ III.3
 
 Let ``ABC`` be a circle, and in it let a straight line ``CD``
 through the centre bisect a straight line ``AB`` not through the centre at the point ``F``;
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 I say that it also cuts it at right angles.
 

@@ -1,6 +1,11 @@
 :order: 4
 :number: 11
 
+
+
+.. figure:: IV.4.jpg
+   :width: 50%
+
 .. _IV.4:
 
 IV.4
@@ -12,11 +17,6 @@ Let ``ABC`` be the given triangle; thus it is required to inscribe a circle in t
 
 Let the angles ``ABC``, ``ACB``
 be bisected by the straight lines ``BD``, ``CD`` [:ref:`I.9`], and let these meet one another at the point ``D``; from ``D`` let ``DE``, ``DF``, ``DG`` be drawn perpendicular to the straight lines ``AB``, ``BC``, ``CA``.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 Now, since the angle ``ABD`` is equal to the angle ``CBD``, and the right angle ``BED`` is also equal to the right angle ``BFD``, ``EBD``, ``FBD`` are two triangles having two angles equal to two angles and one side equal to one side, namely that subtending one of the equal angles, which is ``BD`` common to the triangles;
 

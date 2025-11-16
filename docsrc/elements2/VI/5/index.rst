@@ -1,6 +1,11 @@
 :order: 5
 :number: 10
 
+
+
+.. figure:: VI.5.jpg
+   :width: 50%
+
 .. _VI.5:
 
 VI.5
@@ -27,11 +32,6 @@ For on the straight line ``EF``, and at the points ``E``, ``F`` on it, let there
 
 
 Therefore the triangle ``ABC`` is equiangular with the triangle ``GEF``.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 Therefore in the triangles ``ABC``, ``GEF`` the sides about the equal angles are proportional, and those are corresponding sides which subtend the equal angles; [:ref:`VI.4`]
 

@@ -14,11 +14,6 @@ For, since ``EF`` is the same multiple of ``A`` that ``GH`` is of ``C``, therefo
 
 Let ``EF`` be divided into the magnitudes ``EK``, ``KF`` equal to ``A``, and ``GH`` into the magnitudes ``GL``, ``LH`` equal to ``C``; then the multitude of the magnitudes ``EK``, ``KF`` will be equal to the multitude of the magnitudes ``GL``, ``LH``.
 
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
-
 And, since ``A`` is the same multiple of ``B`` that ``C`` is of ``D``, while ``EK`` is equal to ``A``, and ``GL`` to ``C``, therefore ``EK`` is the same multiple of ``B`` that ``GL`` is of ``D``.
 
 For the same reason

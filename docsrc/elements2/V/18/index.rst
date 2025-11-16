@@ -12,11 +12,6 @@ V.18
 
 Let ``AE``, ``EB``, ``CF``, ``FD`` be magnitudes proportional separando, so that, as ``AE`` is to ``EB``, so is ``CF`` to ``FD``;
 
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
-
 I say that they will also be proportional componendo, that is, as ``AB`` is to ``BE``, so is ``CD`` to ``FD``.
 
 For, if ``CD`` be not to ``DF`` as ``AB`` to ``BE``, then, as ``AB`` is to ``BE``, so will ``CD`` be either to some magnitude less than ``DF`` or to a greater.

@@ -1,6 +1,11 @@
 :order: 14
 :number: 21
 
+
+
+.. figure:: IV.14.jpg
+   :width: 50%
+
 .. _IV.14:
 
 IV.14
@@ -11,11 +16,6 @@ IV.14
 Let ``ABCDE`` be the given pentagon, which is equilateral and equiangular; thus it is required to circumscribe a circle about the pentagon ``ABCDE``.
 
 Let the angles ``BCD``, ``CDE`` be bisected by the straight lines ``CF``, ``DF`` respectively, and from the point ``F``, at which the straight lines meet, let the straight lines ``FB``, ``FA``, ``FE`` be joined to the points ``B``, ``A``, ``E``.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 Then in manner similar to the preceding it can be proved that the angles ``CBA``, ``BAE``, ``AED`` have also been bisected by the straight lines ``FB``, ``FA``, ``FE`` respectively.
 

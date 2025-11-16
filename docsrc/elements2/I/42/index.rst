@@ -1,6 +1,11 @@
 :order: 42
 :number: 75
 
+
+
+.. figure:: I.42.jpg
+   :width: 50%
+
 .. _I.42:
 
 I.42

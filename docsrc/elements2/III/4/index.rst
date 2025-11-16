@@ -1,6 +1,11 @@
 :order: 4
 :number: 15
 
+
+
+.. figure:: III.4.jpg
+   :width: 50%
+
 .. _III.4:
 
 III.4
@@ -9,11 +14,6 @@ III.4
    If in a circle two straight lines cut one another which are not through the centre, they do not bisect one another.
 
 Let ``ABCD`` be a circle, and in it let the two straight lines ``AC``, ``BD``, which are not through the centre, cut one another at ``E``;
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 I say that they do not bisect one another.
 

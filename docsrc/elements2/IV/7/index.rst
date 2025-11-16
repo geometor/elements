@@ -1,6 +1,11 @@
 :order: 7
 :number: 14
 
+
+
+.. figure:: IV.7.jpg
+   :width: 50%
+
 .. _IV.7:
 
 IV.7
@@ -11,11 +16,6 @@ IV.7
 Let ``ABCD`` be the given circle; thus it is required to circumscribe a square about the circle ``ABCD``.
 
 Let two diameters ``AC``, ``BD`` of the circle ``ABCD`` be drawn at right angles to one another, and through the points ``A``, ``B``, ``C``, ``D`` let ``FG``, ``GH``, ``HK``, ``KF`` be drawn touching the circle ``ABCD``. [:ref:`elem.3.16.p.1`]
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 Then, since ``FG`` touches the circle ``ABCD``, and ``EA`` has been joined from the centre ``E`` to the point of contact at ``A``,
 

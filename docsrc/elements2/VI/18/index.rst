@@ -1,6 +1,11 @@
 :order: 18
 :number: 23
 
+
+
+.. figure:: VI.18.jpg
+   :width: 50%
+
 .. _VI.18:
 
 VI.18
@@ -9,11 +14,6 @@ VI.18
    On a given straight line to describe a rectilineal figure similar and similarly situated to a given rectilineal figure.
 
 Let ``AB`` be the given straight line and ``CE`` the given rectilineal figure; thus it is required to describe on the straight line ``AB`` a rectilineal figure similar and similarly situated to the rectilineal figure ``CE``.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 Let ``DF`` be joined, and on the straight line ``AB``, and at the points ``A``, ``B`` on it, let the angle ``GAB`` be constructed equal to the angle at ``C``, and the angle ``ABG`` equal to the angle ``CDF``. [:ref:`I.23`]
 

@@ -1,6 +1,11 @@
 :order: 16
 :number: 21
 
+
+
+.. figure:: VI.16.jpg
+   :width: 50%
+
 .. _VI.16:
 
 VI.16
@@ -9,11 +14,6 @@ VI.16
    If four straight lines be proportional, the rectangle contained by the extremes is equal to the rectangle contained by the means; and, if the rectangle contained by the extremes be equal to the rectangle contained by the means, the four straight lines will be proportional.
 
 Let the four straight lines ``AB``, ``CD``, ``E``, ``F`` be proportional, so that, as ``AB`` is to ``CD``, so is ``E`` to ``F``; I say that the rectangle contained by ``AB``, ``F`` is equal to the rectangle contained by ``CD``, ``E``.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 Let ``AG``, ``CH`` be drawn from the points ``A``, ``C`` at right angles to the straight lines ``AB``, ``CD``, and let ``AG`` be made equal to ``F``, and ``CH`` equal to ``E``.
 

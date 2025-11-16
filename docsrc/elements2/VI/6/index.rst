@@ -32,11 +32,6 @@ Therefore, proportionally, as ``BA`` is to ``AC``, so is ``GD`` to ``DF``. [:ref
 
 But, by hypothesis, as ``BA`` is to ``AC``, so also is ``ED`` to ``DF``; therefore also, as ``ED`` is to ``DF``, so is ``GD`` to ``DF``. [:ref:`V.11`]
 
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
-
 Therefore ``ED`` is equal to ``DG``; [:ref:`V.9`] and ``DF`` is common;
 
 

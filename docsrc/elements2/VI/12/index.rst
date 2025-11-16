@@ -1,6 +1,11 @@
 :order: 12
 :number: 17
 
+
+
+.. figure:: VI.12.jpg
+   :width: 50%
+
 .. _VI.12:
 
 VI.12
@@ -11,11 +16,6 @@ VI.12
 ``To three given straight lines to find a fourth proportional``.
 
 Let ``A``, ``B``, ``C`` be the three given straight lines; thus it is required to find a fourth proportional to ``A``, ``B``, ``C``.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 Let two straight lines ``DE``, ``DF`` be set out containing any angle ``EDF``; let ``DG`` be made equal to ``A``, ``GE`` equal to ``B``, and further ``DH`` equal to ``C``; let ``GH`` be joined, and let ``EF`` be drawn through ``E`` parallel to it. [:ref:`I.31`]
 

@@ -1,6 +1,11 @@
 :order: 10
 :number: 43
 
+
+
+.. figure:: I.10.jpg
+   :width: 50%
+
 .. _I.10:
 
 I.10

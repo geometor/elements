@@ -1,6 +1,11 @@
 :order: 43
 :number: 76
 
+
+
+.. figure:: I.43.jpg
+   :width: 50%
+
 .. _I.43:
 
 I.43

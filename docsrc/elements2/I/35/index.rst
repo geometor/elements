@@ -1,6 +1,16 @@
 :order: 35
 :number: 68
 
+
+
+.. figure:: I.35.jpg
+   :width: 50%
+
+
+
+.. figure:: I.35-b.jpg
+   :width: 50%
+
 .. _I.35:
 
 I.35

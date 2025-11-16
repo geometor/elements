@@ -10,11 +10,6 @@ V.5
 
 For let the magnitude ``AB`` be the same multiple of the magnitude ``CD`` that the part ``AE`` subtracted is of the part ``CF`` subtracted; I say that the remainder ``EB`` is also the same multiple of the remainder ``FD`` that the whole ``AB`` is of the whole ``CD``.
 
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
-
 For, whatever multiple ``AE`` is of ``CF``, let ``EB`` be made that multiple of ``CG``.
 
 Then, since ``AE`` is the same multiple of ``CF`` that ``EB`` is of ``GC``, therefore ``AE`` is the same multiple of ``CF`` that ``AB`` is of ``GF``. [:ref:`V.1`]

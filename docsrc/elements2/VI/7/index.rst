@@ -1,6 +1,11 @@
 :order: 7
 :number: 12
 
+
+
+.. figure:: VI.7.jpg
+   :width: 50%
+
 .. _VI.7:
 
 VI.7
@@ -11,11 +16,6 @@ VI.7
 ``If two triangles have one angle equal to one angle``, ``the sides about other angles proportional``, ``and the remaining angles either both less or both not less than a right angle``, ``the triangles will be equiangular and will have those angles equal``, ``the sides about which are proportional``.
 
 Let ``ABC``, ``DEF`` be two triangles having one angle equal to one angle, the angle ``BAC`` to the angle ``EDF``, the sides about other angles ``ABC``, ``DEF`` proportional, so that, as ``AB`` is to ``BC``, so is ``DE`` to ``EF``, and, first, each of the remaining angles at ``C``, ``F`` less than a right angle;
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 I say that the triangle ``ABC`` is equiangular with the triangle ``DEF``, the angle ``ABC`` will be equal to the angle ``DEF``, and the remaining angle, namely the angle at ``C``, equal to the remaining angle, the angle at ``F``.
 
@@ -52,11 +52,6 @@ But the angle at ``A`` is also equal to the angle at ``D``; therefore the remain
 Therefore the triangle ``ABC`` is equiangular with the triangle ``DEF``.
 
 But, again, let each of the angles at ``C``, ``F`` be supposed not less than a right angle; I say again that, in this case too, the triangle ``ABC`` is equiangular with the triangle ``DEF``.
-
-
-.. figure:: /_images/placeholder.png
-   :alt: Figure placeholder
-
 
 For, with the same construction, we can prove similarly that
 
