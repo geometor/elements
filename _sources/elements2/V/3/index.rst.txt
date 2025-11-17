@@ -1,6 +1,7 @@
 :order: 3
-:number: 21
+:number: 189
 :type: prop
+:dependencies: V.2
 
 
 .. _V.3:
@@ -25,3 +26,24 @@ For the same reason
 Since, then, a first magnitude ``EK`` is the same multiple of a second ``B`` that a third ``GL`` is of a fourth ``D``, and a fifth ``KF`` is also the same multiple of the second ``B`` that a sixth ``LH`` is of the fourth ``D``, therefore the sum of the first and fifth, ``EF``, is also the same multiple of the second ``B`` that the sum of the third and sixth, ``GH``, is of the fourth ``D``. [:ref:`V.2`]
 
 Therefore etc. Q. E. D.
+
+
+Dependency Graph
+----------------
+
+.. graphviz::
+
+   digraph {
+     rankdir="TB";
+     node [shape=box, style=rounded];
+     "V.2" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/2/", target="_top"];
+     "V.3" [style="rounded,filled", fillcolor=lightblue, URL="/elements2/V/3/", target="_top"];
+     "V.3" -> "V.2";
+   }
+
+
+
+Required for
+------------
+
+:ref:`V.22`, :ref:`V.24`, :ref:`V.4`, :ref:`VI.18`, :ref:`VI.20`, :ref:`VI.22`, :ref:`VI.24`, :ref:`VI.25`, :ref:`VI.26`, :ref:`VI.27`, :ref:`VI.28`, :ref:`VI.29`, :ref:`VI.30`, :ref:`VI.31`, :ref:`VI.32`, :ref:`VI.4`, :ref:`VI.5`, :ref:`VI.6`, :ref:`VI.7`, :ref:`VI.8`

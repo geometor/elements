@@ -2,6 +2,7 @@
 :number: 51
 :type: prop
 :tags: triangle
+:dependencies: I.16, I.3
 
 
 
@@ -42,6 +43,94 @@ Therefore etc.
 Q. E. D.
 
 
-.. raw:: html
+.. note::
 
-   <!-- Note:  -->
+
+   In the enunciation of this number we have ὑποτείνειν (subtend
+
+   ) used with the simple accusative instead of the more usual ὑπό with accusative. The latter construction is used in the enunciation of :ref:`I.19`, which otherwise only differs from that of :ref:`I.18` in the order of the words. The point to remember in order to distinguish the two is that the datum comes first and the quaesitum second, the datum being in this proposition the greater ``side`` and in the next the greater ``angle``. Thus the enunciations are (:ref:`I.18`) παντὸς τριγώνου ἡ μείζων πλευρὰ τὴν μείζονα γωνίαν ὑποτείνει and (:ref:`I.19`) παντὸς τριγώνου ὑπὸ τὴν μείζονα γωνίαν ἡ μείζων πλευρὰ ὑποτείνει. In order to keep the proper order in English we must use the passive of the verb in :ref:`I.19`. Aristotle quotes the result of :ref:`I.19`, using the exact wording, ὑπὸ γὰρ τὴν μείζω γωνίαν ὑποτείνει (Meteorologica III. 5, 376 a 12).
+
+
+Dependency Graph
+----------------
+
+.. graphviz::
+
+   digraph {
+     rankdir="TB";
+     node [shape=box, style=rounded];
+     "I.16" [URL="/elements2/I/16/", target="_top"];
+     "I.def.10" [style="rounded,filled", fillcolor=orange, URL="/elements2/I/def.10/", target="_top"];
+     "I.9" [URL="/elements2/I/9/", target="_top"];
+     "I.18" [style="rounded,filled", fillcolor=lightblue, URL="/elements2/I/18/", target="_top"];
+     "I.2" [URL="/elements2/I/2/", target="_top"];
+     "I.8" [URL="/elements2/I/8/", target="_top"];
+     "I.15" [URL="/elements2/I/15/", target="_top"];
+     "I.def.15" [style="rounded,filled", fillcolor=orange, URL="/elements2/I/def.15/", target="_top"];
+     "I.cn.4" [style="rounded,filled", fillcolor=orange, URL="/elements2/I/cn.4/", target="_top"];
+     "I.post.3" [style="rounded,filled", fillcolor=orange, URL="/elements2/I/post.3/", target="_top"];
+     "I.1" [URL="/elements2/I/1/", target="_top"];
+     "I.post.2" [style="rounded,filled", fillcolor=orange, URL="/elements2/I/post.2/", target="_top"];
+     "I.13" [URL="/elements2/I/13/", target="_top"];
+     "I.10" [URL="/elements2/I/10/", target="_top"];
+     "I.post.1" [style="rounded,filled", fillcolor=orange, URL="/elements2/I/post.1/", target="_top"];
+     "I.7" [URL="/elements2/I/7/", target="_top"];
+     "I.post.4" [style="rounded,filled", fillcolor=orange, URL="/elements2/I/post.4/", target="_top"];
+     "I.cn.1" [style="rounded,filled", fillcolor=orange, URL="/elements2/I/cn.1/", target="_top"];
+     "I.3" [URL="/elements2/I/3/", target="_top"];
+     "I.cn.3" [style="rounded,filled", fillcolor=orange, URL="/elements2/I/cn.3/", target="_top"];
+     "I.11" [URL="/elements2/I/11/", target="_top"];
+     "I.5" [URL="/elements2/I/5/", target="_top"];
+     "I.4" [URL="/elements2/I/4/", target="_top"];
+     "I.18" -> "I.16";
+     "I.11" -> "I.def.10";
+     "I.13" -> "I.def.10";
+     "I.10" -> "I.9";
+     "I.3" -> "I.2";
+     "I.9" -> "I.8";
+     "I.11" -> "I.8";
+     "I.16" -> "I.15";
+     "I.1" -> "I.def.15";
+     "I.3" -> "I.def.15";
+     "I.4" -> "I.cn.4";
+     "I.1" -> "I.post.3";
+     "I.2" -> "I.post.3";
+     "I.3" -> "I.post.3";
+     "I.2" -> "I.1";
+     "I.10" -> "I.1";
+     "I.11" -> "I.1";
+     "I.2" -> "I.post.2";
+     "I.5" -> "I.post.2";
+     "I.16" -> "I.post.2";
+     "I.15" -> "I.13";
+     "I.16" -> "I.10";
+     "I.1" -> "I.post.1";
+     "I.2" -> "I.post.1";
+     "I.5" -> "I.post.1";
+     "I.16" -> "I.post.1";
+     "I.8" -> "I.7";
+     "I.15" -> "I.post.4";
+     "I.1" -> "I.cn.1";
+     "I.2" -> "I.cn.1";
+     "I.3" -> "I.cn.1";
+     "I.15" -> "I.cn.1";
+     "I.5" -> "I.3";
+     "I.9" -> "I.3";
+     "I.11" -> "I.3";
+     "I.16" -> "I.3";
+     "I.18" -> "I.3";
+     "I.2" -> "I.cn.3";
+     "I.15" -> "I.cn.3";
+     "I.13" -> "I.11";
+     "I.7" -> "I.5";
+     "I.5" -> "I.4";
+     "I.10" -> "I.4";
+     "I.16" -> "I.4";
+   }
+
+
+
+Required for
+------------
+
+:ref:`I.19`, :ref:`I.20`, :ref:`I.21`, :ref:`I.22`, :ref:`I.24`, :ref:`I.25`, :ref:`III.12`, :ref:`III.13`, :ref:`III.15`, :ref:`III.16`, :ref:`III.18`, :ref:`III.19`, :ref:`III.2`, :ref:`III.32`, :ref:`III.33`, :ref:`III.34`, :ref:`III.36`, :ref:`III.37`, :ref:`III.7`, :ref:`III.8`, :ref:`IV.10`, :ref:`IV.11`, :ref:`IV.12`, :ref:`IV.13`, :ref:`IV.2`, :ref:`IV.3`, :ref:`IV.4`, :ref:`IV.7`, :ref:`IV.8`

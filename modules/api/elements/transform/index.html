@@ -30,10 +30,10 @@
           <a href="../../../../mission/index.html"  >mission</a>
         </li>
         <li>
-          <a href="../../../../usage.html"  >usage</a>
+          <a href="../../../../elements2/index.html"  >Elements 2.0</a>
         </li>
         <li>
-          <a href="../../../../elements2/index.html"  >Elements 2.0</a>
+          <a href="../../../../usage.html"  >usage</a>
         </li>
         <li>
           <a href="../../../../log/index.html"  >log</a>
@@ -96,16 +96,25 @@
 <tr class="row-odd"><td><p><a class="reference internal" href="#elements.transform.get_taxonomy" title="elements.transform.get_taxonomy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_taxonomy</span></code></a>(enunciation_text)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#elements.transform.convert_inline_xml_to_rst" title="elements.transform.convert_inline_xml_to_rst"><code class="xref py py-obj docutils literal notranslate"><span class="pre">convert_inline_xml_to_rst</span></code></a>(element[, is_enunciation])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#elements.transform.convert_inline_xml_to_rst" title="elements.transform.convert_inline_xml_to_rst"><code class="xref py py-obj docutils literal notranslate"><span class="pre">convert_inline_xml_to_rst</span></code></a>(element, dependencies[, ...])</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#elements.transform.parse_book_xml" title="elements.transform.parse_book_xml"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_book_xml</span></code></a>(file_path)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#elements.transform.parse_book_xml" title="elements.transform.parse_book_xml"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_book_xml</span></code></a>(file_path[, entry_number_start])</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#elements.transform.generate_rst_files" title="elements.transform.generate_rst_files"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generate_rst_files</span></code></a>(book_data, output_dir)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#elements.transform.analyze_dependencies" title="elements.transform.analyze_dependencies"><code class="xref py py-obj docutils literal notranslate"><span class="pre">analyze_dependencies</span></code></a>(graph, element_ref)</p></td>
+<td><p>Analyzes the dependency graph for a given element.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#elements.transform.generate_proof_chain_dot" title="elements.transform.generate_proof_chain_dot"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generate_proof_chain_dot</span></code></a>(graph, element_ref, ...)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#elements.transform.main" title="elements.transform.main"><code class="xref py py-obj docutils literal notranslate"><span class="pre">main</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#elements.transform.generate_rst_files" title="elements.transform.generate_rst_files"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generate_rst_files</span></code></a>(book_data, output_dir, graph, ...)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#elements.transform.generate_dependency_graph" title="elements.transform.generate_dependency_graph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generate_dependency_graph</span></code></a>(graph[, output_dir])</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#elements.transform.main" title="elements.transform.main"><code class="xref py py-obj docutils literal notranslate"><span class="pre">main</span></code></a>()</p></td>
 <td><p></p></td>
 </tr>
 </tbody>
@@ -140,17 +149,34 @@
 
 <dl class="py function">
 <dt class="sig sig-object py" id="elements.transform.convert_inline_xml_to_rst">
-<span class="sig-prename descclassname"><span class="pre">elements.transform.</span></span><span class="sig-name descname"><span class="pre">convert_inline_xml_to_rst</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_enunciation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/elements/transform.html#convert_inline_xml_to_rst"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#elements.transform.convert_inline_xml_to_rst" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">elements.transform.</span></span><span class="sig-name descname"><span class="pre">convert_inline_xml_to_rst</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dependencies</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_enunciation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/elements/transform.html#convert_inline_xml_to_rst"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#elements.transform.convert_inline_xml_to_rst" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="elements.transform.parse_book_xml">
-<span class="sig-prename descclassname"><span class="pre">elements.transform.</span></span><span class="sig-name descname"><span class="pre">parse_book_xml</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/elements/transform.html#parse_book_xml"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#elements.transform.parse_book_xml" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">elements.transform.</span></span><span class="sig-name descname"><span class="pre">parse_book_xml</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entry_number_start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/elements/transform.html#parse_book_xml"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#elements.transform.parse_book_xml" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="elements.transform.analyze_dependencies">
+<span class="sig-prename descclassname"><span class="pre">elements.transform.</span></span><span class="sig-name descname"><span class="pre">analyze_dependencies</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">graph</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_ref</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/elements/transform.html#analyze_dependencies"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#elements.transform.analyze_dependencies" title="Link to this definition">¶</a></dt>
+<dd><p>Analyzes the dependency graph for a given element.
+An edge u -&gt; v means u depends on v.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="elements.transform.generate_proof_chain_dot">
+<span class="sig-prename descclassname"><span class="pre">elements.transform.</span></span><span class="sig-name descname"><span class="pre">generate_proof_chain_dot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">graph</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_ref</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ref_to_path_map</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/elements/transform.html#generate_proof_chain_dot"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#elements.transform.generate_proof_chain_dot" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="elements.transform.generate_rst_files">
-<span class="sig-prename descclassname"><span class="pre">elements.transform.</span></span><span class="sig-name descname"><span class="pre">generate_rst_files</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">book_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/elements/transform.html#generate_rst_files"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#elements.transform.generate_rst_files" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">elements.transform.</span></span><span class="sig-name descname"><span class="pre">generate_rst_files</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">book_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">graph</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ref_to_path_map</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/elements/transform.html#generate_rst_files"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#elements.transform.generate_rst_files" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="elements.transform.generate_dependency_graph">
+<span class="sig-prename descclassname"><span class="pre">elements.transform.</span></span><span class="sig-name descname"><span class="pre">generate_dependency_graph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">graph</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'docsrc/elements2'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/elements/transform.html#generate_dependency_graph"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#elements.transform.generate_dependency_graph" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py function">
@@ -205,6 +231,38 @@
 </aside>
 
     
+
+<aside class="aside-categories">
+    <h3>Categories</h3>
+    <ul>
+        
+        <li><a href="../../../../categories/bisect.html">bisect</a></li>
+        
+        <li><a href="../../../../categories/construct.html">construct</a></li>
+        
+        <li><a href="../../../../categories/describe.html">describe</a></li>
+        
+    </ul>
+</aside>
+
+    
+
+<aside class="aside-types">
+    <h3>Types</h3>
+    <ul>
+        
+        <li><a href="../../../../types/book.html">book</a></li>
+        
+        <li><a href="../../../../types/cn.html">cn</a></li>
+        
+        <li><a href="../../../../types/def.html">def</a></li>
+        
+        <li><a href="../../../../types/post.html">post</a></li>
+        
+        <li><a href="../../../../types/prop.html">prop</a></li>
+        
+    </ul>
+</aside>
 
 </div>
 <footer>

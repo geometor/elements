@@ -1,7 +1,8 @@
 :order: 21
-:number: 26
+:number: 237
 :type: prop
 :tags: line
+:dependencies: VI.def.1
 
 
 
@@ -28,3 +29,25 @@ Therefore each of the figures ``A``, ``B`` is equiangular with ``C`` and with ``
 .. container:: center
 
    therefore ``A`` is similar to ``B``. Q. E. D.
+
+
+
+Dependency Graph
+----------------
+
+.. graphviz::
+
+   digraph {
+     rankdir="TB";
+     node [shape=box, style=rounded];
+     "VI.def.1" [style="rounded,filled", fillcolor=orange, URL="/elements2/VI/def.1/", target="_top"];
+     "VI.21" [style="rounded,filled", fillcolor=lightblue, URL="/elements2/VI/21/", target="_top"];
+     "VI.21" -> "VI.def.1";
+   }
+
+
+
+Required for
+------------
+
+:ref:`VI.24`, :ref:`VI.26`, :ref:`VI.27`, :ref:`VI.28`, :ref:`VI.29`, :ref:`VI.30`

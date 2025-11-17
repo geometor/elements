@@ -1,6 +1,7 @@
 :order: 24
-:number: 42
+:number: 210
 :type: prop
+:dependencies: V.18, V.22
 
 
 .. _V.24:
@@ -37,3 +38,59 @@ And, since the magnitudes are proportional separando, they will also be proporti
 But also, as ``BG`` is to ``C``, so is ``EH`` to ``F``; therefore, ex aequali, as ``AG`` is to ``C``, so is ``DH`` to ``F``. [:ref:`V.22`]
 
 Therefore etc. Q. E. D.
+
+
+Dependency Graph
+----------------
+
+.. graphviz::
+
+   digraph {
+     rankdir="TB";
+     node [shape=box, style=rounded];
+     "V.1" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/1/", target="_top"];
+     "V.7" [URL="/elements2/V/7/", target="_top"];
+     "V.3" [URL="/elements2/V/3/", target="_top"];
+     "V.18" [URL="/elements2/V/18/", target="_top"];
+     "V.def.5" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/def.5/", target="_top"];
+     "V.4" [URL="/elements2/V/4/", target="_top"];
+     "V.def.7" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/def.7/", target="_top"];
+     "V.22" [URL="/elements2/V/22/", target="_top"];
+     "V.def.4" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/def.4/", target="_top"];
+     "V.11" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/11/", target="_top"];
+     "V.10" [URL="/elements2/V/10/", target="_top"];
+     "V.17" [URL="/elements2/V/17/", target="_top"];
+     "V.2" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/2/", target="_top"];
+     "V.24" [style="rounded,filled", fillcolor=lightblue, URL="/elements2/V/24/", target="_top"];
+     "V.13" [URL="/elements2/V/13/", target="_top"];
+     "V.14" [URL="/elements2/V/14/", target="_top"];
+     "V.8" [URL="/elements2/V/8/", target="_top"];
+     "V.20" [URL="/elements2/V/20/", target="_top"];
+     "V.8" -> "V.1";
+     "V.17" -> "V.1";
+     "V.10" -> "V.7";
+     "V.4" -> "V.3";
+     "V.24" -> "V.18";
+     "V.4" -> "V.def.5";
+     "V.7" -> "V.def.5";
+     "V.13" -> "V.def.5";
+     "V.22" -> "V.def.5";
+     "V.22" -> "V.4";
+     "V.8" -> "V.def.7";
+     "V.13" -> "V.def.7";
+     "V.24" -> "V.22";
+     "V.8" -> "V.def.4";
+     "V.18" -> "V.11";
+     "V.14" -> "V.10";
+     "V.20" -> "V.10";
+     "V.18" -> "V.17";
+     "V.3" -> "V.2";
+     "V.17" -> "V.2";
+     "V.14" -> "V.13";
+     "V.20" -> "V.13";
+     "V.18" -> "V.14";
+     "V.10" -> "V.8";
+     "V.14" -> "V.8";
+     "V.20" -> "V.8";
+     "V.22" -> "V.20";
+   }
