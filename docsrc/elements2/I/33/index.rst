@@ -37,12 +37,31 @@ Therefore etc.
 Q. E. D.
 
 
-.. raw:: html
-
-   <!-- Note: 1. joining...(at the extremities which are) in the same directions (respectively). -->
+.. note::
 
 
+   **1. joining...(at the extremities which are) in the same directions (respectively).**
 
-.. raw:: html
+   
 
-   <!-- Note: 15. DC, CB -->
+   I have for clearness' sake inserted the words in brackets though they are not in the original Greek, which has joining...in the same directions
+
+    or on the same sides,
+
+    ἐπὶ τὰ αυτὰ μέρη ἐπιζευγνύουσαι. The expression tiwards the same parts,
+
+    though usage has sanctioned it, is perhaps not quite satisfactory.
+
+
+.. note::
+
+
+   **15. DC, CB**
+
+   
+
+   and 18. DCB. The Greek has  ``BC``, ``CD``
+
+    and ``BCD``
+
+    in these places respectively. Euclid is not always careful to write in corresponding order the letters denoting corresponding points in congruent figures. On the contrary, he evidently prefers the alphabetical order, and seems to disdain to alter it for the sake of beginners or others who might be confused by it. In the case of angles alteration is perhaps unnecessary; but in the case of triangles and pairs of corresponding sides I have ventured to alter the order to that which the mathematician of to-day expects.

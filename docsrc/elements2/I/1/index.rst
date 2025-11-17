@@ -42,30 +42,75 @@ Therefore the triangle ``ABC`` is equilateral; and it has been constructed on th
 (Being) what it was required to do.
 
 
-.. raw:: html
-
-   <!-- Note: 1. On a given finite straight line. -->
+.. note::
 
 
+   **1. On a given finite straight line.**
 
-.. raw:: html
+   
 
-   <!-- Note: 3. Let AB be the given finite straight line. -->
+   The Greek usage differs from ours in that the definite article is employed in such a phrase as this where we have the indefinite. ἐπὶ τῆς δοθείσης εὐθείας πεπερασμένης, on ``the`` given finite straight line,
 
-
-
-.. raw:: html
-
-   <!-- Note: 8. let the circle BCD be described. -->
+    i.e. the finite straight line which we choose to take.
 
 
-
-.. raw:: html
-
-   <!-- Note: 13. from the point C.... -->
+.. note::
 
 
+   **3. Let AB be the given finite straight line.**
 
-.. raw:: html
+   
 
-   <!-- Note: 20. each of the straight lines CA, CB -->
+   To be strictly literal we should have to translate in the reverse order let the given finite straight line be the (straight line) ``AB``
+
+   ; but this order is inconvenient in other cases where there is more than one datum, e.g. in the ``setting-out`` of :ref:`I.2`, let the given point be ``A``, and the given straight line ``BC``,
+
+    the awkwardness arising from the omission of the verb in the second clause. Hence I have, for clearness' sake, adopted the other order throughout the book.
+
+
+.. note::
+
+
+   **8. let the circle BCD be described.**
+
+   
+
+   Two things are here to be noted, (1) the elegant and practically universal use of the perfect passive imperative in constructions, γεγράφθω meaning of course let it ``have been`` described
+
+    or suppose it described,
+
+    (2) the impossibility of expressing shortly in a translation the force of the words in their original order. κύκλος γεγράφθω ὸ ΒΓΔ means literally let a circle have been described, the (circle, namely, which I denote by) ``BCD``.
+
+    Similarly we have lower down let straight lines, (namely) the (straight lines) ``CA``, ``CB``, be joined,
+
+    ἐπεζεύχθωσαν εὐθεῖαι αί ΓΑ, ΓΒ. There seems to be no practicable alternative, in English, but to translate as I have done in the text.
+
+
+.. note::
+
+
+   **13. from the point C....**
+
+   
+
+   Euclid is careful to adhere to the phraseology of :ref:`I.post.1` except that he speaks of joining
+
+    (ἐπεζεύχθωσαν) instead of drawing
+
+    (γράφειν). He does not allow himself to use the shortened expression let the straight line ``FC`` be joined
+
+    (without mention of the points ``F``, ``C``) until :ref:`I.5`.
+
+
+.. note::
+
+
+   **20. each of the straight lines CA, CB**
+
+   
+
+   , ἑκατέρα τῶν ΓΑ, ΓΒ and 24. the three straight lines CA, AB, BC, αἱ τρεῖς αἱ ΓΑ, ΑΒ, ΒΓ. I have, here and in all similar expressions, inserted the words straight lines
+
+    which are not in the Greek. The possession of the inflected definite article enables the Greek to omit the words, but this is not possible in English, and it would scarcely be English to write each of ``CA``, ``CB``
+
+    or the three ``CA``, ``AB``, ``BC``.

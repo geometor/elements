@@ -41,30 +41,71 @@ Therefore etc.
 Q. E. D.
 
 
-.. raw:: html
-
-   <!-- Note: 2. the equal straight lines -->
+.. note::
 
 
+   **2. the equal straight lines**
 
-.. raw:: html
+   
 
-   <!-- Note: 10. Let a point F be taken at random on BD -->
-
-
-
-.. raw:: html
-
-   <!-- Note: 17. the two sides FA, AC are equal to the two sides GA, AB respectively, -->
+   (meaning the equal ``sides``). Cf. note on the similar expression in :ref:`I.4`, lines 2, 3.
 
 
-
-.. raw:: html
-
-   <!-- Note: 33. the base BC is common to them, -->
+.. note::
 
 
+   **10. Let a point F be taken at random on BD**
 
-.. raw:: html
+   
 
-   <!-- Note: 48 -->
+   , εἰλήφθω ἐπὶ τῆς ΒΔ τυχὸν σημεῖον τὸ Ζ, where τυχὸν σημεῖονmeans a chance point.
+
+
+.. note::
+
+
+   **17. the two sides FA, AC are equal to the two sides GA, AB respectively,**
+
+   
+
+   δύο αἱ ΖΑ, ΑΓ δυσὶ ταῖς ΗΑ, ΑΒ ἴσαι εἰσὶν ἑκατέρα ἑκατέρᾳ. Here, and in numberless later passages, I have inserted the word sides
+
+    for the reason given in the note on :ref:`I.1`, line 20. It would have been permissible to supply either straight lines
+
+    or sides
+
+   ; but on the whole sides
+
+    seems to be more in accordance with the phraseology of :ref:`I.4`.
+
+
+.. note::
+
+
+   **33. the base BC is common to them,**
+
+   
+
+   i.e., apparently, common to the ``angles``, as the αὐτῶν in βάσις αὐτῶν κοινὴ can only refer to γωνία and γωνίᾳ preceding. Simson wrote and the base ``BC`` is common to the two triangles ``BFC``, ``CGB``
+
+   ; Todhunter left out these words as being of no use and tending to perplex a beginner. But Euclid evidently chose to quote the conclusion of :ref:`I.4` exactly; the first phrase of that conclusion is that the bases (of the two triangles) are equal, and, as the equal bases are here the ``same`` base, Euclid naturally substitutes the word common
+
+    for equal.
+
+
+.. note::
+
+
+   **48**
+
+   
+
+   As (Being) what it was required to prove
+
+    (or do
+
+   ) is somewhat long, I shall henceforth write the time-honoured Q. E. D.
+
+    and Q. E. F.
+
+    for ὅπερ ἔδει δεῖξαι and ὅπερ ἔδει ποιῆσαι.

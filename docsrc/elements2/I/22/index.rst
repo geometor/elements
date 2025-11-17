@@ -42,18 +42,41 @@ Therefore out of the three straight lines ``KF``, ``FG``, ``GK``, which are equa
 Q. E. F.
 
 
-.. raw:: html
-
-   <!-- Note: 2-4 -->
+.. note::
 
 
+   **2-4**
 
-.. raw:: html
+   
 
-   <!-- Note: 2. thus it is necessary. -->
+   This is the first case in the Elements of a διορισμός to a problem in the sense of a statement of the conditions or limits of the possibility of a solution. The criterion is of course supplied by the preceding proposition.
 
 
+.. note::
 
-.. raw:: html
 
-   <!-- Note: 4 -->
+   **2. thus it is necessary.**
+
+   
+
+   This is usually translated (e.g. by Williamson and Simson) But it is necessary,
+
+    which is however inaccurate, since the Greek is not δεῖ δέ but δεῖ δή. The words are the same as those used to introduce the διορισμός in the other sense of the definition
+
+    or particular statement
+
+    of a construction to be effected. Hence, as in the latter case we say thus it is required
+
+    (e.g. to bisect the finite straight line ``AB``, :ref:`I.10`), we should here translate ``thus`` it is necessary.
+
+
+.. note::
+
+
+   **4**
+
+   
+
+   To this enunciation all the MSS. and Boethius add, after the διορισμός, the words because in any triangle two sides taken together in any manner are greater than the remaining one.
+
+    But this explanation has the appearance of a gloss, and it is omitted by Proclus and Campanus. Moreover there is no corresponding addition to the διορισμός of :ref:`VI.28`.

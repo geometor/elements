@@ -1,5 +1,5 @@
 :order: 19
-:number: 24
+:number: 235
 :type: prop
 :tags: triangle
 
@@ -42,6 +42,11 @@ Therefore etc.
 From this it is manifest that, if three straight lines be proportional, then, as the first is to the third, so is the figure described on the first to that which is similar and similarly described on the second. Q. E. D.
 
 
-.. raw:: html
+.. note::
 
-   <!-- Note: 4 -->
+
+   **4**
+
+   
+
+   and such that, as AB is to BC, so is DE to EF, literally (triangles) having the angle at ``B`` equal to the angle at ``E``, and (``having``), ``as AB to BC``, ``so DE to EF``.

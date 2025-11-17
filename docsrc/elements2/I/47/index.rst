@@ -59,24 +59,43 @@ Therefore etc.
 Q. E. D.
 
 
-.. raw:: html
-
-   <!-- Note: 1. the square on -->
+.. note::
 
 
+   **1. the square on**
 
-.. raw:: html
+   
 
-   <!-- Note:  -->
-
-
-
-.. raw:: html
-
-   <!-- Note: 33. the two sides AB, BD.... -->
+   , τὸ ἀπὸ...τετρἁγωνον, the word ἀναγραφέν or ἀναγεγραμμένον being understood.
 
 
+.. note::
 
-.. raw:: html
 
-   <!-- Note: 44 -->
+   subtending the right angle. Here ὑποτεινούσης, subtending,
+
+    is used with the simple accusative (τὴν ὀρθὴν γωνίαν) instead of being followed by ὑπό and the accusative, which seems to be the original and more orthodox construction. Cf. :ref:`I.18`, note.
+
+
+.. note::
+
+
+   **33. the two sides AB, BD....**
+
+   
+
+   Euclid actually writes ``DB``, ``BA``,
+
+    and therefore the equal sides in the two triangles are not mentioned in corresponding order, though he adheres to the words ἑκατέρα ἑκατέρα respectively.
+
+    Here ``DB`` is equal to ``BC`` and ``BA`` to ``FB``.
+
+
+.. note::
+
+
+   **44**
+
+   
+
+   [But the doubles of equals are equal to one another.] Heiberg brackets these words as an interpolation, since it quotes a Common Notion which is itself interpolated. Cf. notes on :ref:`I.37`, p. 332, and on interpolated Common Notions, pp. 223-4.

@@ -43,12 +43,21 @@ Therefore etc.
 Q. E. D.
 
 
-.. raw:: html
-
-   <!-- Note: 21. FDC. -->
+.. note::
 
 
+   **21. FDC.**
 
-.. raw:: html
+   
 
-   <!-- Note: 22. Let DGE be subtracted. -->
+   The text has ``DFC``.
+
+
+.. note::
+
+
+   **22. Let DGE be subtracted.**
+
+   
+
+   Euclid speaks of the triangle ``DGE`` without any explanation that, in the case which he takes (where ``AD``, ``EF`` have no point in common), ``BE``, ``CD`` must meet at a point ``G`` between the two parallels. He allows this to appear from the figure simply.

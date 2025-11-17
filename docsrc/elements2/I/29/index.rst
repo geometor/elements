@@ -48,12 +48,23 @@ Therefore etc.
 Q. E. D.
 
 
-.. raw:: html
-
-   <!-- Note: 23. straight lines produced indefinitely from angles less than two right angles, -->
+.. note::
 
 
+   **23. straight lines produced indefinitely from angles less than two right angles,**
 
-.. raw:: html
+   
 
-   <!-- Note: 26. because they are by hypothesis parallel, -->
+   αἰ δὲ ἀπ: ὲλασσόνων ἢ δύο ὀρθῶν ἐκβαλλόμεναι εἰς ἄπειπον συμπίπτουσιν, a variation from the more explicit language of :ref:`I.post.5`. A good deal is left to be understood, namely that the straight lines begin from points at which they meet a transversal, and make with it internal angles on the same side the sum of which is less than two right angles.
+
+
+.. note::
+
+
+   **26. because they are by hypothesis parallel,**
+
+   
+
+   literally because they are supposed parallel,
+
+    διὰ τὸ παραλλήλους αὐτὰς ὑποκεῖσθαι.

@@ -51,6 +51,15 @@ Therefore the parallelogram ``KFLM`` has been constructed equal to the given rec
 Q. E. F.
 
 
-.. raw:: html
+.. note::
 
-   <!-- Note: 2, 3, 6, 45, 48. rectilineal figure, in the Greek -->
+
+   **2, 3, 6, 45, 48. rectilineal figure, in the Greek**
+
+   
+
+   rectilineal
+
+    simply, without figure,
+
+    εὐθύγραμμον being here used as a substantive, like the similarly formed παραλληλόγραμμον.

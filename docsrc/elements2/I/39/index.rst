@@ -39,6 +39,19 @@ Therefore etc.
 Q. E. D.
 
 
-.. raw:: html
+.. note::
 
-   <!-- Note: 5 -->
+
+   **5**
+
+   
+
+   [I say that they are also in the same parallels.] Heiberg has proved (Hermes, XXXVIII., 1903, p. 50) from a recently discovered papyrus-fragment (Fayūm towns and their papyri, p. 96, No. IX.) that these words are an interpolation by some one who did not observe that the words And let ``AD`` be joined
+
+    are part of the ``setting-out`` (ἔκθεσις), but took them as belonging to the ``construction`` (κατασκευή) and consequently thought that a διορισμός or definition
+
+    (of the thing to be proved) should precede. The interpolator then altered And
+
+    into For
+
+    in the next sentence.

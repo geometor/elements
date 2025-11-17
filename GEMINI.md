@@ -39,3 +39,6 @@ tedious, however a reference like "Book3 prop11" or worse "III.11" is useless se
 - The `elements_transform` script (located at `src/geometor/elements/transform.py`) is now used for RST generation.
 - The script currently processes XML files for Books 1 through 6.
 - The `<lb>` (line break) and `<pb>` (page break) XML tags are now ignored during RST generation, returning an empty string.
+- Implemented collection directives to dynamically generate sorted lists of elements.
+- Added cumulative numbering for all elements across all books.
+- Implemented note directives to render Heath's footnotes from the XML source.

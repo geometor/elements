@@ -1,5 +1,5 @@
 :order: 31
-:number: 36
+:number: 247
 :type: prop
 :categories: describe
 :tags: triangle

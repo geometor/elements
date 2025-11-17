@@ -41,18 +41,37 @@ Therefore etc.
 Q. E. D.
 
 
-.. raw:: html
-
-   <!-- Note: 1. falling on two straight lines, -->
+.. note::
 
 
+   **1. falling on two straight lines,**
 
-.. raw:: html
+   
 
-   <!-- Note: 2. the alternate angles, -->
+   εὶς δύο εὐθείας ἐμπίπτουσα, the phrase being the same as that used in :ref:`I.post.5`, meaning a ``transversal``.
 
 
+.. note::
 
-.. raw:: html
 
-   <!-- Note: 9. in the direction of B, D or towards A, C, -->
+   **2. the alternate angles,**
+
+   
+
+   αἱ ἐναλλὰξ γωνίαι. Proclus (p. 357, 9) explains that Euclid uses the word ``alternate`` (or, more exactly, ``alternately``, ἐναλλάξ) in two connexions, (1) of a certain transformation of a proportion, as in Book V. and the arithmetical Books, (2) as here, of certain of the angles formed by parallels with a straight line crossing them. Alternate angles are, according to Euclid as interpreted by Proclus, those which are not on the same side of the transversal, and are not adjacent, but are separated by the transversal, both being within the parallels but one above
+
+    and the other below.
+
+    The meaning is natural enough if we imagine the four internal angles to be taken in cyclic order and ``alternate`` angles to be any two of them not successive but separated by one angle of the four.
+
+
+.. note::
+
+
+   **9. in the direction of B, D or towards A, C,**
+
+   
+
+   literally towards the ``parts B``, ``D`` or towards ``A``, ``C``,
+
+    ἐπὶ τὰ Β, Δ μέρη ἢ ἐπὶ τὰ Α Γ.

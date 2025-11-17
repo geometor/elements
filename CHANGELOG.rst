@@ -1,6 +1,16 @@
 changelog
 =========
 
+0.0.12
+------
+*2025-11-16*
+
+**added**
+
+.. + Implemented collection directives in the RST generation script to dynamically create sorted lists of definitions, postulates, common notions, and propositions.
+.. + Added cumulative numbering for all elements across all books.
+.. + Implemented note directives to render Heath's footnotes from the XML source.
+
 0.0.11
 ------
 *2025-11-16*

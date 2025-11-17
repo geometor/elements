@@ -37,6 +37,11 @@ Therefore etc.
 Q. E. D.
 
 
-.. raw:: html
+.. note::
 
-   <!-- Note: 1. taken together in any manner, -->
+
+   **1. taken together in any manner,**
+
+   
+
+   πάντη μεταλαμβανόμεναι, i.e. any pair added together.

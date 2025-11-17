@@ -45,6 +45,13 @@ Therefore etc.
 Q. E. D.
 
 
-.. raw:: html
+.. note::
 
-   <!-- Note: 10 -->
+
+   **10**
+
+   
+
+   I have naturally left out the well-known words added by Simson in order to avoid the necessity of considering three cases: Of the two sides ``DE``, ``DF`` let ``DE`` be the side which is not greater than the other.
+
+    I doubt whether Euclid could have been induced to insert the words himself, even if it had been represented to him that their omission meant leaving two possible cases out of consideration. His habit and that of the great Greek geometers was, not to set out all possible cases, but to give as a rule one case, generally the most difficult, as here, and to leave the others to the reader to work out for himself. We have already seen one instance in :ref:`I.7`.

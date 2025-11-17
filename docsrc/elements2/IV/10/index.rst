@@ -1,5 +1,5 @@
 :order: 10
-:number: 17
+:number: 162
 :type: prop
 :categories: construct
 :tags: triangle

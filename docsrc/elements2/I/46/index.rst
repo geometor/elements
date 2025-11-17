@@ -45,6 +45,13 @@ Therefore it is a square; and it is described on the straight line ``AB``.
 Q. E. F.
 
 
-.. raw:: html
+.. note::
 
-   <!-- Note: 1, 3, 30 -->
+
+   **1, 3, 30**
+
+   
+
+   Proclus (p. 423, 18 sqq.) notes the difference between the word ``construct`` (συστἡσασθαι) applied by Euclid to the construction of a ``triangle`` (and, he might have added, of an ``angle``) and the words ``describe on`` (ἀναγράφειν ἀπό) used of drawing a square on a given straight line as one side. The ``triangle`` (or ``angle``) is, so to say, pieced together, while the describing of a square on a given straight line is the making of a figure from
+
+    ``one`` side, and corresponds to the multiplication of the number representing the side by itself.

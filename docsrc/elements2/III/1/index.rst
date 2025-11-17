@@ -1,5 +1,5 @@
 :order: 1
-:number: 12
+:number: 109
 :type: prop
 :tags: circle
 
@@ -72,12 +72,21 @@ Similarly we can prove that neither is any other point except ``F``.
 From this it is manifest that, if in a circle a straight line cut a straight line into two equal parts and at right angles, the centre of the circle is on the cutting straight line. Q. E. F.
 
 
-.. raw:: html
-
-   <!-- Note: 12 -->
+.. note::
 
 
+   **12**
 
-.. raw:: html
+   
 
-   <!-- Note: 17 -->
+   12. For suppose it is not. This is expressed in the Greek by the two words Μὴ γάρ, but such an elliptical phrase is impossible in English.
+
+
+.. note::
+
+
+   **17**
+
+   
+
+   the two sides AD, DG are equal to the two sides BD, DG respectively. As before observed, Euclid is not always careful to put the equals in corresponding order. The text here has ``GD``, ``DB``.

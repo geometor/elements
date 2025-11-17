@@ -43,6 +43,23 @@ Therefore etc.
 Q. E. D.
 
 
-.. raw:: html
+.. note::
 
-   <!-- Note: 17. let the angle EBD be added to each, -->
+
+   **17. let the angle EBD be added to each,**
+
+   
+
+   literally let the angle ``EBD`` be added (so as to be) common,
+
+    κοινὴ προσκείσθω ἡ ὑπὸ ΕΒΔ. Similarly κοινὴ ἀφηρήσθω is used of subtracting a straight line or angle from each of two others. Let the common angle ``EBD`` be added
+
+    is clearly an inaccurate translation, for the angle is not common before it is added, i.e. the κοινὴ is proleptic. Let the common angle be ``subtracted``
+
+    as a translation of κοινὴ ἀφηρήσθω would be less unsatisfactory, it is true, but, as it is desirable to use corresponding words when translating the two expressions, it seems hopeless to attempt to keep the word common,
+
+    and I have therefore said to each
+
+    and from each
+
+    simply.

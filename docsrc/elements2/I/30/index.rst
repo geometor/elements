@@ -36,6 +36,13 @@ Therefore ``AB`` is parallel to ``CD``.
 Q. E. D.
 
 
-.. raw:: html
+.. note::
 
-   <!-- Note: 20 -->
+
+   **20**
+
+   
+
+   The usual ``conclusion`` in general terms (Therefore etc.
+
+   ) repeating the enunciation is, curiously enough, wanting at the end of this proposition.

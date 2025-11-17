@@ -1,5 +1,5 @@
 :order: 20
-:number: 25
+:number: 236
 :type: prop
 :tags: triangle
 
@@ -124,12 +124,31 @@ Therefore etc.
 Similarly also it can be proved in the case of quadrilaterals that they are in the duplicate ratio of the corresponding sides. And it was also proved in the case of triangles; therefore also, generally, similar rectilineal figures are to one another in the duplicate ratio of the corresponding sides. Q. E. D.
 
 
-.. raw:: html
-
-   <!-- Note: 2 -->
+.. note::
 
 
+   **2**
 
-.. raw:: html
+   
 
-   <!-- Note: 49 -->
+   in the same ratio as the wholes. The same word ὁμόλογος is used which I have generally translated by corresponding.
+
+    But here it is followed by a dative, ὁμόλογα τοῖς ὅλοις ``homologous with`` the wholes,
+
+    instead of being used absolutely. The meaning can therefore here be nothing else but in the same ratio with
+
+    or proportional to the wholes
+
+   ; and Euclid seems to recognise that he is making a special use of the word, because he explains it lower down (:ref:`I.46`): the triangles are homologous to the wholes, that is, in such manner that the triangles are proportional, and ``ABE``, ``EBC``, ``ECD`` are antecedents, while ``FGL``, ``LGH``, ``LHK`` are their consequents.
+
+
+.. note::
+
+
+   **49**
+
+   
+
+   ἑπόμενα αὐτῶν, ``their`` consequents,
+
+    is a little awkward, but may be supposed to indicate which triangles correspond to which as consequent to antecedent.

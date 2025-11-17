@@ -47,12 +47,23 @@ Therefore etc.
 Q. E. D.
 
 
-.. raw:: html
-
-   <!-- Note: 2. be constructed...meeting within the triangle. -->
+.. note::
 
 
+   **2. be constructed...meeting within the triangle.**
 
-.. raw:: html
+   
 
-   <!-- Note: 3. the straight lines so constructed. -->
+   The word meeting
+
+    is not in the Greek, where the words are ἐντὸς συσταθῶσιν. συνίστασθαι is the word used of constructing two straight lines ``to a point`` (cf. :ref:`I.7`) or so as to form a triangle; but it is necessary in English to indicate that they ``meet``.
+
+
+.. note::
+
+
+   **3. the straight lines so constructed.**
+
+   
+
+   Observe the elegant brevity of the Greek αἱ συσταθεῖσαι.

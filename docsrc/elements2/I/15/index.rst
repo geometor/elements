@@ -44,12 +44,23 @@ Therefore etc. Q. E. D.
 [From this it is manifest that, if two straight lines cut one another, they will make the angles at the point of section equal to four right angles.
 
 
-.. raw:: html
-
-   <!-- Note: 1. the vertical angles. -->
+.. note::
 
 
+   **1. the vertical angles.**
 
-.. raw:: html
+   
 
-   <!-- Note: 26. at the point of section, -->
+   The difference between ``adjacent`` angles (αἱ ἐφεξῆς γωνίαι) and ``vertical`` angles (αἱ κατὰ κορυφὴν γωνίαι) is thus explained by Proclus (p. 298, 14-24). The first term describes the angles made by two straight lines when one only is divided by the other, i.e. when one straight line meets another at a point which is not either of its extremities, but is not itself produced beyond the point of meeting. When the first straight line ``is`` produced, so that the lines cross at the point, they make two pairs of ``vertical`` angles (which are more clearly described as ``vertically opposite`` angles), and which are so called because their convergence is from opposite directions to one point (the intersection of the lines) as vertex (κορυφή).
+
+
+.. note::
+
+
+   **26. at the point of section,**
+
+   
+
+   literally at the section,
+
+    πρὸς τῇ τομῆ.

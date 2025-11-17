@@ -40,12 +40,25 @@ Therefore etc.
 Q. E. D.
 
 
-.. raw:: html
-
-   <!-- Note: 1 -->
+.. note::
 
 
+   **1**
 
-.. raw:: html
+   
 
-   <!-- Note: 4. and about AC.... -->
+   complements, παραπληρώματα, the figures put in to fill up (interstices).
+
+
+.. note::
+
+
+   **4. and about AC....**
+
+   
+
+   Euclid's phraseology here and in the next proposition implies that the complements as well as the other parallelograms are about
+
+    the diagonal. The words are here περὶ δὲ τὴν ΑΓ παραλληλόγραμμα μὲν ἔστω τὰ ΕΘ, ΖΗ, τὰ δὲ λεγόμενα παραπληρώματα τὰ ΒΚ, ΚΔ. The expression the so-called complements
+
+    indicates that this technical use of παραπληρώματα was not new, though it might not be universally known.

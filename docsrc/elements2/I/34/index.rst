@@ -42,12 +42,31 @@ Therefore the diameter ``BC`` bisects the parallelogram ``ACDB``.
 Q. E. D.
 
 
-.. raw:: html
-
-   <!-- Note: 1 -->
+.. note::
 
 
+   **1**
 
-.. raw:: html
+   
 
-   <!-- Note: 17, 18, 40. DCB -->
+   It is to be observed that, when parallelograms have to be mentioned for the first time, Euclid calls them parallelogrammic areas
+
+    or, more exactly, parallelogram
+
+    areas (παραλληλόγραμμα χωρία). The meaning is simply areas bounded by parallel straight lines with the further limitation placed upon the term by Euclid that only ``four-sided`` figures are so called, although of course there are certain regular polygons which have opposite sides parallel, and which therefore might be said to be areas bounded by parallel straight lines. We gather from Proclus (p. 393) that the word parallelogram
+
+    was first introduced by Euclid, that its use was suggested by :ref:`I.33`, and that the formation of the word παραλληλόγραμμος (parallel-lined) was analogous to that of εὐθύγραμμος (straight-lined or rectilineal).
+
+
+.. note::
+
+
+   **17, 18, 40. DCB**
+
+   
+
+   and 36. DC, CB. The Greek has in these places ``BCD``
+
+    and ``CD``, ``BC``
+
+    respectively. Cf. note on :ref:`I.33`, lines 15, 18.

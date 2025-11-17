@@ -106,7 +106,7 @@ def convert_inline_xml_to_rst(element, is_enunciation=False):
     # Final whitespace cleanup is handled by the caller (flush_inline_parts)
     return content
 
-def parse_book_xml(file_path):
+def parse_book_xml(file_path, entry_number_start=0):
     tree = ET.parse(file_path)
     root = tree.getroot()
 
@@ -121,7 +121,7 @@ def parse_book_xml(file_path):
         book_data["book_number_arabic"] = div1.attrib.get("n")
         book_data["book_number_roman"] = ROMAN_NUMERALS.get(book_data["book_number_arabic"])
         
-        entry_number = 0 # Initialize entry_number here
+        entry_number = entry_number_start # Initialize entry_number here
         for div2 in div1.findall(".//div2"):
             section_type_raw = div2.attrib.get("n")
             section_type_canonical = SECTION_TYPE_MAP.get(section_type_raw)
@@ -314,7 +314,23 @@ def parse_book_xml(file_path):
                         if content:
                             entry_content_rst.append(f"\n.. container:: center\n\n   {content}\n")
                     elif child.tag == 'note':
-                        entry_content_rst.append(f"\n.. raw:: html\n\n   <!-- Note: {child.attrib.get('n', '')} -->\n")
+                        note_title = child.attrib.get('n', '')
+                        note_content = []
+                        if note_title:
+                            note_content.append(f"**{note_title}**")
+
+                        for grand_child in child:
+                            if grand_child.tag == 'p':
+                                inline_rst = convert_inline_xml_to_rst(grand_child)
+                                if inline_rst:
+                                    note_content.append(inline_rst)
+                        
+                        if note_content:
+                            entry_content_rst.append(f"\n.. note::\n")
+                            full_note_content = "\n\n".join(note_content)
+                            for line in full_note_content.splitlines():
+                                entry_content_rst.append(f"   {line}")
+                        entry_content_rst.append("") # Add an empty line after the note
                     else:
                         inline_rst = convert_inline_xml_to_rst(child)
                         if inline_rst:
@@ -335,7 +351,7 @@ def parse_book_xml(file_path):
                     "enunciation": enunc_text,
                 })
             book_data["sections"].append(section_data)
-    return book_data
+    return book_data, entry_number
 
 def generate_rst_files(book_data, output_dir):
     book_roman = book_data["book_number_roman"]
@@ -346,16 +362,19 @@ def generate_rst_files(book_data, output_dir):
 
     # Create book index.rst
     book_index_content = [
+        f":order: {book_data["book_number_arabic"]}",
+        ":type: book\n",
         f"Book {book_roman}",
         f"==============\n",
-        ".. toctree::",
-        "   :maxdepth: 1\n"
     ]
+
+    entry_types_in_book = set()
     
     for section in book_data["sections"]:
         for entry in section["entries"]:
             if entry["folder_name"]:
                 entry_dir = book_dir / entry["folder_name"]
+                entry_types_in_book.add(entry['type'])
                 entry_dir.mkdir(exist_ok=True)
 
                 # Create entry index.rst
@@ -402,7 +421,20 @@ def generate_rst_files(book_data, output_dir):
                 with open(entry_dir / "index.rst", "w") as f:
                     f.write("\n".join(entry_index_content))
                 
-                book_index_content.append(f"   {entry['folder_name']}/index")
+    # Add collections for each type
+    type_titles = {
+        'def': 'Definitions',
+        'post': 'Postulates',
+        'cn': 'Common Notions',
+        'prop': 'Propositions'
+    }
+
+    for entry_type in sorted(list(entry_types_in_book)):
+        if entry_type:
+            book_index_content.append(f".. collection::")
+            book_index_content.append(f"   :type: {entry_type}")
+            book_index_content.append(f"   :title: {type_titles.get(entry_type, entry_type.capitalize())}")
+            book_index_content.append(f"   :sort: number\n")
 
     with open(book_dir / "index.rst", "w") as f:
         f.write("\n".join(book_index_content))
@@ -411,7 +443,7 @@ def generate_rst_files(book_data, output_dir):
 def main():
     print("RST transformation tool")
     output_dir = "docsrc/elements2"
-    
+
     # Clean up existing book directories to prevent orphans
     output_path = Path(output_dir)
     if output_path.exists():
@@ -423,12 +455,14 @@ def main():
                     shutil.rmtree(book_dir)
                     print(f"Removed directory: {book_dir}")
 
+    entry_number = 0
     for i in range(1, 7):
         xml_file_path = f"resources/xml/books/{i:02d}.xml"
         if os.path.exists(xml_file_path):
             print(f"Processing {xml_file_path}")
-            book_data = parse_book_xml(xml_file_path)
+            book_data, entry_number = parse_book_xml(xml_file_path, entry_number)
             generate_rst_files(book_data, output_dir)
+
         else:
             print(f"Warning: XML file not found at {xml_file_path}")
 
@@ -438,13 +472,11 @@ def main():
         ":order: 2\n",
         "Elements 2.0",
         "============\n",
-        ".. toctree::",
-        "   :maxdepth: 1\n"
+        ".. collection::",
+        "   :type: book",
+        "   :title: Books",
+        "   :sort: order\n",
     ]
-    for i in range(1, 7):
-        book_roman = ROMAN_NUMERALS.get(str(i))
-        if book_roman:
-            main_index_content.append(f"   {book_roman}/index.rst")
             
     with open(Path(output_dir) / "index.rst", "w") as f:
         f.write("\n".join(main_index_content))

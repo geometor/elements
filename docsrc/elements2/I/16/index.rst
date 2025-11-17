@@ -40,24 +40,43 @@ Therefore etc.
 Q. E. D.
 
 
-.. raw:: html
-
-   <!-- Note: 1. the exterior angle, -->
+.. note::
 
 
+   **1. the exterior angle,**
 
-.. raw:: html
+   
 
-   <!-- Note: 2. the interior and opposite angles, -->
+   literally the outside angle,
 
-
-
-.. raw:: html
-
-   <!-- Note: 12. let AC be drawn through to G. -->
+    ἡ ἐκτὸς γωνία.
 
 
+.. note::
 
-.. raw:: html
 
-   <!-- Note: 21. CFE, -->
+   **2. the interior and opposite angles,**
+
+   
+
+   τῶν ἐντὸς καὶ ἀπεναντίον γωνιῶν.
+
+
+.. note::
+
+
+   **12. let AC be drawn through to G.**
+
+   
+
+   The word is διήχθω, a variation on the more usual ἐκβεβλήσθω, let it be ``produced``.
+
+
+.. note::
+
+
+   **21. CFE,**
+
+   
+
+   in the text ``FEC``.

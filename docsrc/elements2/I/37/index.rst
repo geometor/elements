@@ -41,6 +41,13 @@ Therefore etc.
 Q. E. D.
 
 
-.. raw:: html
+.. note::
 
-   <!-- Note: 21 -->
+
+   **21**
+
+   
+
+   Here and in the next proposition Heiberg brackets the words But the halves of equal things are equal to one another
+
+    on the ground that, since the Common Notion which asserted this fact was interpolated at a very early date (before the time of Theon), it is probable that the words here were interpolated at the same time. Cf. note above (p. 224) on the interpolated Common Notion.

@@ -1,5 +1,5 @@
 :order: 14
-:number: 16
+:number: 97
 :type: prop
 :categories: construct
 :tags: line
@@ -64,12 +64,23 @@ Therefore the rectilineal figure ``A`` is also equal to the square which can be 
 Therefore a square, namely that which can be described on ``EH``, has been constructed equal to the given rectilineal figure ``A``. Q. E. F.
 
 
-.. raw:: html
-
-   <!-- Note: 7 -->
+.. note::
 
 
+   **7**
 
-.. raw:: html
+   
 
-   <!-- Note: 35, 36 -->
+   that which was enjoined will have been done, literally would have been done,
+
+    γεγονὸς ἂν εἴη τὸ ἐπιταχθέν.
+
+
+.. note::
+
+
+   **35, 36**
+
+   
+
+   which can be described, expressed by the future passive participle, ἀναγραφησομἑνῳ, ἀναγραφησόμενον.

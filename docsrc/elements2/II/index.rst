@@ -1,22 +1,15 @@
+:order: 2
+:type: book
+
 Book II
 ==============
 
-.. toctree::
-   :maxdepth: 1
+.. collection::
+   :type: def
+   :title: Definitions
+   :sort: number
 
-   def.1/index
-   def.2/index
-   1/index
-   2/index
-   3/index
-   4/index
-   5/index
-   6/index
-   7/index
-   8/index
-   9/index
-   10/index
-   11/index
-   12/index
-   13/index
-   14/index
+.. collection::
+   :type: prop
+   :title: Propositions
+   :sort: number

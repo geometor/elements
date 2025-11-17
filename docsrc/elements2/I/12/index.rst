@@ -37,12 +37,27 @@ Therefore ``CH`` has been drawn perpendicular to the given infinite straight lin
 Q. E. F.
 
 
-.. raw:: html
-
-   <!-- Note: 2. a perpendicular straight line -->
+.. note::
 
 
+   **2. a perpendicular straight line**
 
-.. raw:: html
+   
 
-   <!-- Note: 10. on the other side of the straight line AB -->
+   , κάθετον εὐθεῖαν γραμμἡν. This is the full expression for a ``perpendicular``, κάθετος meaning ``let fall`` or ``let down``, so that the expression corresponds to our ``plumb-line``. ἡ κάθετος is however constantly used alone for a perpendicular, γραμμἡ being understood.
+
+
+.. note::
+
+
+   **10. on the other side of the straight line AB**
+
+   
+
+   , literally towards the other parts of the straight line ``AB``,
+
+    ἐπὶ τὰ ἕτερα μέρη τῆς AB. Cf. on the same side
+
+    (ἐπὶ τὰ αὐτὰ μέρη) in :ref:`I.post.5` and in both directions
+
+    (ἐφ̓ ἑκάτερα τὰ μἑρη) in :ref:`I.def.23`.

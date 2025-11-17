@@ -42,6 +42,9 @@ Therefore etc.
 Q. E. D.
 
 
-.. raw:: html
+.. note::
 
-   <!-- Note:  -->
+
+   In the enunciation of this number we have ὑποτείνειν (subtend
+
+   ) used with the simple accusative instead of the more usual ὑπό with accusative. The latter construction is used in the enunciation of :ref:`I.19`, which otherwise only differs from that of :ref:`I.18` in the order of the words. The point to remember in order to distinguish the two is that the datum comes first and the quaesitum second, the datum being in this proposition the greater ``side`` and in the next the greater ``angle``. Thus the enunciations are (:ref:`I.18`) παντὸς τριγώνου ἡ μείζων πλευρὰ τὴν μείζονα γωνίαν ὑποτείνει and (:ref:`I.19`) παντὸς τριγώνου ὑπὸ τὴν μείζονα γωνίαν ἡ μείζων πλευρὰ ὑποτείνει. In order to keep the proper order in English we must use the passive of the verb in :ref:`I.19`. Aristotle quotes the result of :ref:`I.19`, using the exact wording, ὑπὸ γὰρ τὴν μείζω γωνίαν ὑποτείνει (Meteorologica III. 5, 376 a 12).

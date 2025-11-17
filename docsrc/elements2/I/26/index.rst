@@ -59,12 +59,21 @@ Therefore etc.
 Q. E. D.
 
 
-.. raw:: html
-
-   <!-- Note: 2-3. the side adjoining the equal angles, -->
+.. note::
 
 
+   **2-3. the side adjoining the equal angles,**
 
-.. raw:: html
+   
 
-   <!-- Note: 29. is by hypothesis equal. -->
+   πλευρὰν τὴν πρὸς ταῖς ἴσαις γωνίαις.
+
+
+.. note::
+
+
+   **29. is by hypothesis equal.**
+
+   
+
+   ὑπόκειται ἴση, according to the elegant Greek idiom. ὑπόκειμαι is used for the passive of ὑποτίθημι, as κεῖμαι is used for the passive of τίθημι, and so with the other compounds. Cf. προσκεῖσθαι, to be added.

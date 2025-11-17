@@ -38,18 +38,39 @@ Therefore etc.
 Q. E. D.
 
 
-.. raw:: html
-
-   <!-- Note: 1. If with any straight line.... -->
+.. note::
 
 
+   **1. If with any straight line....**
 
-.. raw:: html
+   
 
-   <!-- Note: 17 -->
+   There is no greater difficulty in translating the works of the Greek geometers than that of accurately giving the force of prepositions. πρός, for instance, is used in all sorts of expressions with various shades of meaning. The present enunciation begins ἐὰν πρός τινι εὐθείᾳ καὶ τῷ πρὸς αὐτῆ σημείῳ, and it is really necessary in this one sentence to translate πρός by three different words, ``with``, ``at``, and ``on``. The first πρός must be translated by ``with`` because two straight lines make
+
+    an angle ``with`` one another. On the other hand, where the similar expression πρὸς τῇ δοθείση εὐθείᾳ occurs in :ref:`I.23`, but it is a question of constructing
+
+    an angle (συστἡσασθαι), we have to say to construct ``on`` a given straight line.
+
+    Against would perhaps be the English word coming nearest to expressing all these meanings of πρός, but it would be intolerable as a translation.
 
 
+.. note::
 
-.. raw:: html
 
-   <!-- Note: 24. we can prove. -->
+   **17**
+
+   
+
+   Todhunter points out that for the inference in this line :ref:`I.post.4`, that all right angles are equal, is necessary as well as the Common Notion that things which are equal to the same thing (or rather, here, to ``equal things``) are equal. A similar remark applies to steps in the proofs of :ref:`I.15` and :ref:`I.28`.
+
+
+.. note::
+
+
+   **24. we can prove.**
+
+   
+
+   The Greek expresses this by the future of the verb, δείξομεν, we shall prove,
+
+    which however would perhaps be misleading in English.

@@ -45,18 +45,39 @@ Therefore at the given point ``A`` the straight line ``AL`` is placed equal to t
 (Being) what it was required to do.
 
 
-.. raw:: html
-
-   <!-- Note: 1. (as an extremity). -->
+.. note::
 
 
+   **1. (as an extremity).**
 
-.. raw:: html
+   
 
-   <!-- Note: 11. Let the straight lines AE, BF be produced.... -->
+   I have inserted these words because to place a straight line ``at`` a given point
+
+    (πρὸς τῷ δοθέντι σημείῳ) is not quite clear enough, at least in English.
 
 
+.. note::
 
-.. raw:: html
 
-   <!-- Note: 23. the remainder AL...the remainder BG. -->
+   **11. Let the straight lines AE, BF be produced....**
+
+   
+
+   It will be observed that in this first application of :ref:`I.post.2`, and again in :ref:`I.5`, Euclid speaks of the ``continuation`` of the straight line as that which is produced in such cases, ἐκβεβλήσθωσαν and προσεκβεβλήσθωσαν meaning little more than ``drawing`` straight lines in a straight line with
+
+    the given straight lines. The first place in which Euclid uses phraseology exactly corresponding to ours when speaking of a straight line being produced is in :ref:`I.16`: let one side of it, ``BC``, be produced to ``D``
+
+    (προσεκβεβλήσθω αὐτοῦ μία πλευρὰ ἡ ΒΓ ἐπὶ τὸ Δ).
+
+
+.. note::
+
+
+   **23. the remainder AL...the remainder BG.**
+
+   
+
+   The Greek expressions are λοιπὴ ἡ ΑΛ and λοιπῇ τῇ BH, and the literal translation would be ``AL`` (or ``BG``) ``remaining``,
+
+    but the shade of meaning conveyed by the position of the definite article can hardly be expressed in English.

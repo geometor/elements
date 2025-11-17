@@ -1,5 +1,5 @@
 :order: 7
-:number: 12
+:number: 223
 :type: prop
 :tags: triangle
 

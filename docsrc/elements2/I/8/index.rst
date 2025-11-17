@@ -43,12 +43,25 @@ If therefore etc.
 Q. E. D.
 
 
-.. raw:: html
-
-   <!-- Note: 19. BA, AC. -->
+.. note::
 
 
+   **19. BA, AC.**
 
-.. raw:: html
+   
 
-   <!-- Note: 21 -->
+   The text has here ``BA``, ``CA``.
+
+
+.. note::
+
+
+   **21**
+
+   
+
+   fall beside them. The Greek has the future, παραλλάξουσι. παραλλάττω means to pass by without touching,
+
+    to miss
+
+    or to deviate.

@@ -41,6 +41,11 @@ Therefore the parallelogram ``LB`` equal to the given triangle ``C`` has been ap
 Q. E. F.
 
 
-.. raw:: html
+.. note::
 
-   <!-- Note: 14. since the straight line HF falls.... -->
+
+   **14. since the straight line HF falls....**
+
+   
+
+   The verb is in the aorist (ὲνέπεσεν) here and in similar expressions in the following propositions.

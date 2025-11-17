@@ -1,5 +1,5 @@
 :order: 32
-:number: 37
+:number: 248
 :type: prop
 :tags: line, triangle
 

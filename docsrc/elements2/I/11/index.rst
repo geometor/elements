@@ -37,6 +37,13 @@ Therefore the straight line ``CF`` has been drawn at right angles to the given s
 Q. E. F.
 
 
-.. raw:: html
+.. note::
 
-   <!-- Note: 10. let CE be made equal to CD. -->
+
+   **10. let CE be made equal to CD.**
+
+   
+
+   The verb is κείσθω which, as well as the other parts of κεῖμαι, is constantly used for the passive of τίθημι to ``place``
+
+   ; and the latter word is constantly used in the sense of ``making``, e.g., one straight line equal to another straight line.

@@ -1,5 +1,5 @@
 :order: 16
-:number: 27
+:number: 124
 :type: prop
 :tags: line, circle
 
@@ -88,6 +88,13 @@ therefore there will not be any acute angle contained by straight lines which is
 From this it is manifest that the straight line drawn at right angles to the diameter of a circle from its extremity touches the circle. Q. E. D.
 
 
-.. raw:: html
+.. note::
 
-   <!-- Note: 4 -->
+
+   **4**
+
+   
+
+   cannot be interposed, literally will not fall in between
+
+    (οὐ παρεμπεσεῖται).

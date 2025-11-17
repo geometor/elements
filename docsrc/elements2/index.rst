@@ -4,12 +4,7 @@
 Elements 2.0
 ============
 
-.. toctree::
-   :maxdepth: 1
-
-   I/index.rst
-   II/index.rst
-   III/index.rst
-   IV/index.rst
-   V/index.rst
-   VI/index.rst
+.. collection::
+   :type: book
+   :title: Books
+   :sort: order
