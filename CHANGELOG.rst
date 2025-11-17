@@ -1,6 +1,15 @@
 changelog
 =========
 
+0.0.13
+------
+*2025-11-17*
+
+**added**
+
+.. + Added a table of contents to the book index pages using the `contents` directive.
+.. + Moved the collection titles out of the `collection` directive and into the main document flow as section headings.
+
 0.0.12
 ------
 *2025-11-16*

@@ -4,12 +4,26 @@
 Book VI
 ==============
 
+
+.. contents::
+   :local:
+   :depth: 1
+
+
+.. _book-vi-def:
+
+Definitions
+-----------
+
 .. collection::
    :type: def
-   :title: Definitions
    :sort: number
+
+.. _book-vi-prop:
+
+Propositions
+------------
 
 .. collection::
    :type: prop
-   :title: Propositions
    :sort: number

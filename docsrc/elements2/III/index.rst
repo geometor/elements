@@ -4,12 +4,26 @@
 Book III
 ==============
 
+
+.. contents::
+   :local:
+   :depth: 1
+
+
+.. _book-iii-def:
+
+Definitions
+-----------
+
 .. collection::
    :type: def
-   :title: Definitions
    :sort: number
+
+.. _book-iii-prop:
+
+Propositions
+------------
 
 .. collection::
    :type: prop
-   :title: Propositions
    :sort: number

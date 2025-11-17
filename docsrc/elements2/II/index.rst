@@ -4,12 +4,26 @@
 Book II
 ==============
 
+
+.. contents::
+   :local:
+   :depth: 1
+
+
+.. _book-ii-def:
+
+Definitions
+-----------
+
 .. collection::
    :type: def
-   :title: Definitions
    :sort: number
+
+.. _book-ii-prop:
+
+Propositions
+------------
 
 .. collection::
    :type: prop
-   :title: Propositions
    :sort: number

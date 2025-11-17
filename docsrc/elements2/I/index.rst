@@ -4,22 +4,44 @@
 Book I
 ==============
 
+
+.. contents::
+   :local:
+   :depth: 1
+
+
+.. _book-i-cn:
+
+Common Notions
+--------------
+
 .. collection::
    :type: cn
-   :title: Common Notions
    :sort: number
+
+.. _book-i-def:
+
+Definitions
+-----------
 
 .. collection::
    :type: def
-   :title: Definitions
    :sort: number
+
+.. _book-i-post:
+
+Postulates
+----------
 
 .. collection::
    :type: post
-   :title: Postulates
    :sort: number
+
+.. _book-i-prop:
+
+Propositions
+------------
 
 .. collection::
    :type: prop
-   :title: Propositions
    :sort: number

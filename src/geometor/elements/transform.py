@@ -429,12 +429,33 @@ def generate_rst_files(book_data, output_dir):
         'prop': 'Propositions'
     }
 
-    for entry_type in sorted(list(entry_types_in_book)):
+    # Generate collection sections
+    collection_sections = []
+    
+    sorted_entry_types = sorted(list(entry_types_in_book))
+    
+    for entry_type in sorted_entry_types:
         if entry_type:
-            book_index_content.append(f".. collection::")
-            book_index_content.append(f"   :type: {entry_type}")
-            book_index_content.append(f"   :title: {type_titles.get(entry_type, entry_type.capitalize())}")
-            book_index_content.append(f"   :sort: number\n")
+            title = type_titles.get(entry_type, entry_type.capitalize())
+            anchor = f"book-{book_roman.lower()}-{entry_type}"
+            
+            collection_sections.append(f".. _{anchor}:\n")
+            collection_sections.append(f"{title}")
+            collection_sections.append(f"{'-' * len(title)}\n")
+            collection_sections.append(f".. collection::")
+            collection_sections.append(f"   :type: {entry_type}")
+            collection_sections.append(f"   :sort: number\n")
+
+    # Insert contents directive after the main heading
+    book_index_content.append("""
+.. contents::
+   :local:
+   :depth: 1
+
+""")
+
+    # Add the collection sections
+    book_index_content.extend(collection_sections)
 
     with open(book_dir / "index.rst", "w") as f:
         f.write("\n".join(book_index_content))

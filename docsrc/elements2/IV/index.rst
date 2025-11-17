@@ -4,12 +4,26 @@
 Book IV
 ==============
 
+
+.. contents::
+   :local:
+   :depth: 1
+
+
+.. _book-iv-def:
+
+Definitions
+-----------
+
 .. collection::
    :type: def
-   :title: Definitions
    :sort: number
+
+.. _book-iv-prop:
+
+Propositions
+------------
 
 .. collection::
    :type: prop
-   :title: Propositions
    :sort: number

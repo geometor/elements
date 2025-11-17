@@ -4,12 +4,26 @@
 Book V
 ==============
 
+
+.. contents::
+   :local:
+   :depth: 1
+
+
+.. _book-v-def:
+
+Definitions
+-----------
+
 .. collection::
    :type: def
-   :title: Definitions
    :sort: number
+
+.. _book-v-prop:
+
+Propositions
+------------
 
 .. collection::
    :type: prop
-   :title: Propositions
    :sort: number
