@@ -41,3 +41,9 @@ But ``CE`` is equal to ``D``;
 
 
 Therefore into the given circle ``ABC`` there has been fitted ``CA`` equal to the given straight line ``D``.
+
+
+Required for
+------------
+
+:ref:`IV.10`, :ref:`IV.11`, :ref:`IV.12`

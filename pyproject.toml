@@ -17,6 +17,7 @@ dependencies = [
     "matplotlib",
     "mplcursors",
     "rich",
+    "networkx",
 ]
 
 [project.scripts]

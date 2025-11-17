@@ -1,6 +1,7 @@
 :order: 18
 :number: 204
 :type: prop
+:dependencies: V.11, V.14, V.17
 
 
 .. _V.18:
@@ -61,3 +62,50 @@ Similarly we can prove that neither is it in that ratio to a greater;
 
 
 Therefore etc. Q. E. D.
+
+
+Dependency Graph
+----------------
+
+.. graphviz::
+
+   digraph {
+     rankdir="TB";
+     node [shape=box, style=rounded];
+     "V.1" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/1/", target="_top"];
+     "V.11" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/11/", target="_top"];
+     "V.10" [URL="/elements2/V/10/", target="_top"];
+     "V.7" [URL="/elements2/V/7/", target="_top"];
+     "V.17" [URL="/elements2/V/17/", target="_top"];
+     "V.8" [URL="/elements2/V/8/", target="_top"];
+     "V.2" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/2/", target="_top"];
+     "V.14" [URL="/elements2/V/14/", target="_top"];
+     "V.18" [style="rounded,filled", fillcolor=lightblue, URL="/elements2/V/18/", target="_top"];
+     "V.def.5" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/def.5/", target="_top"];
+     "V.def.7" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/def.7/", target="_top"];
+     "V.def.4" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/def.4/", target="_top"];
+     "V.13" [URL="/elements2/V/13/", target="_top"];
+     "V.8" -> "V.1";
+     "V.17" -> "V.1";
+     "V.18" -> "V.11";
+     "V.14" -> "V.10";
+     "V.10" -> "V.7";
+     "V.18" -> "V.17";
+     "V.10" -> "V.8";
+     "V.14" -> "V.8";
+     "V.17" -> "V.2";
+     "V.18" -> "V.14";
+     "V.7" -> "V.def.5";
+     "V.13" -> "V.def.5";
+     "V.8" -> "V.def.7";
+     "V.13" -> "V.def.7";
+     "V.8" -> "V.def.4";
+     "V.14" -> "V.13";
+   }
+
+
+
+Required for
+------------
+
+:ref:`V.24`, :ref:`VI.24`, :ref:`VI.26`, :ref:`VI.27`, :ref:`VI.28`, :ref:`VI.29`, :ref:`VI.30`

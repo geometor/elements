@@ -1,6 +1,7 @@
 :order: 23
 :number: 209
 :type: prop
+:dependencies: V.11, V.15, V.16, V.21
 
 
 .. _V.23:
@@ -98,3 +99,65 @@ And ``G``, ``K`` are equimultiples of ``A``, ``D``, and ``L``, ``N`` of ``C``, `
 Therefore, as ``A`` is to ``C``, so is ``D`` to ``F``.
 
 Therefore etc. Q. E. D.
+
+
+Dependency Graph
+----------------
+
+.. graphviz::
+
+   digraph {
+     rankdir="TB";
+     node [shape=box, style=rounded];
+     "V.16" [URL="/elements2/V/16/", target="_top"];
+     "elem.5.17 elem.5.18" [style="rounded,filled", fillcolor=orange];
+     "V.1" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/1/", target="_top"];
+     "V.7" [URL="/elements2/V/7/", target="_top"];
+     "V.21" [URL="/elements2/V/21/", target="_top"];
+     "elem.5.20 elem.5.21 elem.5.22 elem.5.23" [style="rounded,filled", fillcolor=orange];
+     "V.23" [style="rounded,filled", fillcolor=lightblue, URL="/elements2/V/23/", target="_top"];
+     "V.def.5" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/def.5/", target="_top"];
+     "V.def.7" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/def.7/", target="_top"];
+     "V.def.4" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/def.4/", target="_top"];
+     "V.11" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/11/", target="_top"];
+     "V.10" [URL="/elements2/V/10/", target="_top"];
+     "V.12" [URL="/elements2/V/12/", target="_top"];
+     "V.13" [URL="/elements2/V/13/", target="_top"];
+     "V.15" [URL="/elements2/V/15/", target="_top"];
+     "V.14" [URL="/elements2/V/14/", target="_top"];
+     "V.8" [URL="/elements2/V/8/", target="_top"];
+     "V.20" [URL="/elements2/V/20/", target="_top"];
+     "V.23" -> "V.16";
+     "V.16" -> "elem.5.17 elem.5.18";
+     "V.8" -> "V.1";
+     "V.12" -> "V.1";
+     "V.10" -> "V.7";
+     "V.15" -> "V.7";
+     "V.16" -> "V.21";
+     "V.23" -> "V.21";
+     "V.16" -> "elem.5.20 elem.5.21 elem.5.22 elem.5.23";
+     "V.7" -> "V.def.5";
+     "V.12" -> "V.def.5";
+     "V.13" -> "V.def.5";
+     "V.16" -> "V.def.5";
+     "V.8" -> "V.def.7";
+     "V.13" -> "V.def.7";
+     "V.8" -> "V.def.4";
+     "V.16" -> "V.11";
+     "V.23" -> "V.11";
+     "V.14" -> "V.10";
+     "V.20" -> "V.10";
+     "V.21" -> "V.10";
+     "V.15" -> "V.12";
+     "V.14" -> "V.13";
+     "V.20" -> "V.13";
+     "V.21" -> "V.13";
+     "V.16" -> "V.15";
+     "V.23" -> "V.15";
+     "V.16" -> "V.14";
+     "V.10" -> "V.8";
+     "V.14" -> "V.8";
+     "V.20" -> "V.8";
+     "V.21" -> "V.8";
+     "V.16" -> "V.20";
+   }

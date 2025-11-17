@@ -3,6 +3,7 @@
 :type: prop
 :categories: describe
 :tags: circle
+:dependencies: I.6, III.9
 
 
 
@@ -84,3 +85,59 @@ But, if the angle ``ABD`` be less than the angle ``BAD``, and if we construct, o
 
 Therefore, given a segment of a circle, the complete circle has been described. Q. E. F.
 to describe the complete circle, προσαναγράψαι τὸν κύκλον, literally “to describe the circle ``on to it``.’
+
+
+Dependency Graph
+----------------
+
+.. graphviz::
+
+   digraph {
+     rankdir="TB";
+     node [shape=box, style=rounded];
+     "III.9" [URL="/elements2/III/9/", target="_top"];
+     "I.def.10" [style="rounded,filled", fillcolor=orange, URL="/elements2/I/def.10/", target="_top"];
+     "I.8" [URL="/elements2/I/8/", target="_top"];
+     "I.2" [URL="/elements2/I/2/", target="_top"];
+     "I.def.15" [style="rounded,filled", fillcolor=orange, URL="/elements2/I/def.15/", target="_top"];
+     "I.cn.4" [style="rounded,filled", fillcolor=orange, URL="/elements2/I/cn.4/", target="_top"];
+     "I.post.3" [style="rounded,filled", fillcolor=orange, URL="/elements2/I/post.3/", target="_top"];
+     "III.25" [style="rounded,filled", fillcolor=lightblue, URL="/elements2/III/25/", target="_top"];
+     "I.1" [URL="/elements2/I/1/", target="_top"];
+     "I.post.2" [style="rounded,filled", fillcolor=orange, URL="/elements2/I/post.2/", target="_top"];
+     "elem.3.1.p.1" [style="rounded,filled", fillcolor=orange];
+     "I.post.1" [style="rounded,filled", fillcolor=orange, URL="/elements2/I/post.1/", target="_top"];
+     "I.7" [URL="/elements2/I/7/", target="_top"];
+     "I.cn.1" [style="rounded,filled", fillcolor=orange, URL="/elements2/I/cn.1/", target="_top"];
+     "I.3" [URL="/elements2/I/3/", target="_top"];
+     "I.6" [style="rounded,filled", fillcolor=orange, URL="/elements2/I/6/", target="_top"];
+     "I.cn.3" [style="rounded,filled", fillcolor=orange, URL="/elements2/I/cn.3/", target="_top"];
+     "I.5" [URL="/elements2/I/5/", target="_top"];
+     "I.4" [URL="/elements2/I/4/", target="_top"];
+     "III.25" -> "III.9";
+     "III.9" -> "I.def.10";
+     "III.9" -> "I.8";
+     "I.3" -> "I.2";
+     "I.1" -> "I.def.15";
+     "I.3" -> "I.def.15";
+     "I.4" -> "I.cn.4";
+     "I.1" -> "I.post.3";
+     "I.2" -> "I.post.3";
+     "I.3" -> "I.post.3";
+     "I.2" -> "I.1";
+     "I.2" -> "I.post.2";
+     "I.5" -> "I.post.2";
+     "III.9" -> "elem.3.1.p.1";
+     "I.1" -> "I.post.1";
+     "I.2" -> "I.post.1";
+     "I.5" -> "I.post.1";
+     "I.8" -> "I.7";
+     "I.1" -> "I.cn.1";
+     "I.2" -> "I.cn.1";
+     "I.3" -> "I.cn.1";
+     "I.5" -> "I.3";
+     "III.25" -> "I.6";
+     "I.2" -> "I.cn.3";
+     "I.7" -> "I.5";
+     "I.5" -> "I.4";
+   }

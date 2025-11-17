@@ -1,6 +1,16 @@
 changelog
 =========
 
+0.0.14
+------
+*2025-11-17*
+
+**added**
+
+.. + Added clickable nodes to the dependency graphs with root-relative URLs.
+.. + Styled end nodes in orange to distinguish them from other nodes.
+.. + Set graphviz output to SVG for better rendering and interactivity.
+
 0.0.13
 ------
 *2025-11-17*

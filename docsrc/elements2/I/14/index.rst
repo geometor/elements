@@ -2,6 +2,7 @@
 :number: 47
 :type: prop
 :tags: line
+:dependencies: I.13, I.cn.1, I.cn.3, I.post.4
 
 
 
@@ -74,3 +75,71 @@ Q. E. D.
    The Greek expresses this by the future of the verb, δείξομεν, we shall prove,
 
     which however would perhaps be misleading in English.
+
+
+Dependency Graph
+----------------
+
+.. graphviz::
+
+   digraph {
+     rankdir="TB";
+     node [shape=box, style=rounded];
+     "I.def.10" [style="rounded,filled", fillcolor=orange, URL="/elements2/I/def.10/", target="_top"];
+     "I.8" [URL="/elements2/I/8/", target="_top"];
+     "I.2" [URL="/elements2/I/2/", target="_top"];
+     "I.def.15" [style="rounded,filled", fillcolor=orange, URL="/elements2/I/def.15/", target="_top"];
+     "I.cn.4" [style="rounded,filled", fillcolor=orange, URL="/elements2/I/cn.4/", target="_top"];
+     "I.post.3" [style="rounded,filled", fillcolor=orange, URL="/elements2/I/post.3/", target="_top"];
+     "I.1" [URL="/elements2/I/1/", target="_top"];
+     "I.post.2" [style="rounded,filled", fillcolor=orange, URL="/elements2/I/post.2/", target="_top"];
+     "I.13" [URL="/elements2/I/13/", target="_top"];
+     "I.post.4" [style="rounded,filled", fillcolor=orange, URL="/elements2/I/post.4/", target="_top"];
+     "I.post.1" [style="rounded,filled", fillcolor=orange, URL="/elements2/I/post.1/", target="_top"];
+     "I.cn.1" [style="rounded,filled", fillcolor=orange, URL="/elements2/I/cn.1/", target="_top"];
+     "I.7" [URL="/elements2/I/7/", target="_top"];
+     "I.3" [URL="/elements2/I/3/", target="_top"];
+     "I.cn.3" [style="rounded,filled", fillcolor=orange, URL="/elements2/I/cn.3/", target="_top"];
+     "I.14" [style="rounded,filled", fillcolor=lightblue, URL="/elements2/I/14/", target="_top"];
+     "I.11" [URL="/elements2/I/11/", target="_top"];
+     "I.5" [URL="/elements2/I/5/", target="_top"];
+     "I.4" [URL="/elements2/I/4/", target="_top"];
+     "I.11" -> "I.def.10";
+     "I.13" -> "I.def.10";
+     "I.11" -> "I.8";
+     "I.3" -> "I.2";
+     "I.1" -> "I.def.15";
+     "I.3" -> "I.def.15";
+     "I.4" -> "I.cn.4";
+     "I.1" -> "I.post.3";
+     "I.2" -> "I.post.3";
+     "I.3" -> "I.post.3";
+     "I.2" -> "I.1";
+     "I.11" -> "I.1";
+     "I.2" -> "I.post.2";
+     "I.5" -> "I.post.2";
+     "I.14" -> "I.13";
+     "I.14" -> "I.post.4";
+     "I.1" -> "I.post.1";
+     "I.2" -> "I.post.1";
+     "I.5" -> "I.post.1";
+     "I.1" -> "I.cn.1";
+     "I.2" -> "I.cn.1";
+     "I.3" -> "I.cn.1";
+     "I.14" -> "I.cn.1";
+     "I.8" -> "I.7";
+     "I.5" -> "I.3";
+     "I.11" -> "I.3";
+     "I.2" -> "I.cn.3";
+     "I.14" -> "I.cn.3";
+     "I.13" -> "I.11";
+     "I.7" -> "I.5";
+     "I.5" -> "I.4";
+   }
+
+
+
+Required for
+------------
+
+:ref:`I.45`, :ref:`I.47`, :ref:`I.48`, :ref:`II.10`, :ref:`II.11`, :ref:`II.12`, :ref:`II.13`, :ref:`II.14`, :ref:`II.9`, :ref:`III.14`, :ref:`III.15`, :ref:`III.35`, :ref:`III.36`, :ref:`III.37`, :ref:`IV.10`, :ref:`IV.11`, :ref:`IV.12`, :ref:`VI.14`, :ref:`VI.15`, :ref:`VI.16`, :ref:`VI.17`, :ref:`VI.19`, :ref:`VI.20`, :ref:`VI.25`, :ref:`VI.28`, :ref:`VI.29`, :ref:`VI.30`, :ref:`VI.32`

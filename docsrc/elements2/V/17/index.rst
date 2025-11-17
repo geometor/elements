@@ -1,6 +1,7 @@
 :order: 17
 :number: 203
 :type: prop
+:dependencies: V.1, V.2
 
 
 .. _V.17:
@@ -73,3 +74,26 @@ And ``GH``, ``LM`` are equimultiples of ``AE``, ``CF``, while ``KO``, ``NP`` are
 
 
 Therefore etc. Q. E. D.
+
+
+Dependency Graph
+----------------
+
+.. graphviz::
+
+   digraph {
+     rankdir="TB";
+     node [shape=box, style=rounded];
+     "V.1" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/1/", target="_top"];
+     "V.2" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/2/", target="_top"];
+     "V.17" [style="rounded,filled", fillcolor=lightblue, URL="/elements2/V/17/", target="_top"];
+     "V.17" -> "V.1";
+     "V.17" -> "V.2";
+   }
+
+
+
+Required for
+------------
+
+:ref:`V.18`, :ref:`V.19`, :ref:`V.24`, :ref:`V.25`, :ref:`VI.24`, :ref:`VI.26`, :ref:`VI.27`, :ref:`VI.28`, :ref:`VI.29`, :ref:`VI.30`

@@ -36,3 +36,9 @@ Therefore etc.
 
 
 Q. E. D.
+
+
+Required for
+------------
+
+:ref:`II.10`, :ref:`II.12`, :ref:`II.4`, :ref:`II.9`, :ref:`III.25`, :ref:`IV.10`, :ref:`IV.11`, :ref:`IV.12`, :ref:`IV.14`, :ref:`IV.9`, :ref:`VI.3`

@@ -2,6 +2,7 @@
 :number: 113
 :type: prop
 :tags: circle
+:dependencies: I.def.15
 
 
 
@@ -47,3 +48,24 @@ But ``EC`` was proved equal to ``EF`` also;
 Therefore the point ``E`` is not the centre of the circles ``ABC``, ``CDG``.
 
 Therefore etc. Q. E. D.
+
+
+Dependency Graph
+----------------
+
+.. graphviz::
+
+   digraph {
+     rankdir="TB";
+     node [shape=box, style=rounded];
+     "III.5" [style="rounded,filled", fillcolor=lightblue, URL="/elements2/III/5/", target="_top"];
+     "I.def.15" [style="rounded,filled", fillcolor=orange, URL="/elements2/I/def.15/", target="_top"];
+     "III.5" -> "I.def.15";
+   }
+
+
+
+Required for
+------------
+
+:ref:`III.10`, :ref:`III.24`, :ref:`III.26`, :ref:`III.27`, :ref:`III.28`, :ref:`III.29`, :ref:`III.30`, :ref:`IV.11`, :ref:`IV.12`, :ref:`IV.15`, :ref:`IV.16`, :ref:`VI.33`

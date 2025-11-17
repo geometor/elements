@@ -1,6 +1,7 @@
 :order: 22
 :number: 208
 :type: prop
+:dependencies: V.20, V.4, V.def.5
 
 
 .. _V.22:
@@ -57,3 +58,51 @@ And ``G``, ``H`` are equimultiples of ``A``, ``D``,
 Therefore, as ``A`` is to ``C``, so is ``D`` to ``F``. [:ref:`V.def.5`]
 
 Therefore etc. Q. E. D.
+
+
+Dependency Graph
+----------------
+
+.. graphviz::
+
+   digraph {
+     rankdir="TB";
+     node [shape=box, style=rounded];
+     "V.1" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/1/", target="_top"];
+     "V.10" [URL="/elements2/V/10/", target="_top"];
+     "V.7" [URL="/elements2/V/7/", target="_top"];
+     "V.8" [URL="/elements2/V/8/", target="_top"];
+     "V.2" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/2/", target="_top"];
+     "V.3" [URL="/elements2/V/3/", target="_top"];
+     "V.def.5" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/def.5/", target="_top"];
+     "V.4" [URL="/elements2/V/4/", target="_top"];
+     "V.def.7" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/def.7/", target="_top"];
+     "V.22" [style="rounded,filled", fillcolor=lightblue, URL="/elements2/V/22/", target="_top"];
+     "V.def.4" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/def.4/", target="_top"];
+     "V.13" [URL="/elements2/V/13/", target="_top"];
+     "V.20" [URL="/elements2/V/20/", target="_top"];
+     "V.8" -> "V.1";
+     "V.20" -> "V.10";
+     "V.10" -> "V.7";
+     "V.10" -> "V.8";
+     "V.20" -> "V.8";
+     "V.3" -> "V.2";
+     "V.4" -> "V.3";
+     "V.4" -> "V.def.5";
+     "V.7" -> "V.def.5";
+     "V.13" -> "V.def.5";
+     "V.22" -> "V.def.5";
+     "V.22" -> "V.4";
+     "V.8" -> "V.def.7";
+     "V.13" -> "V.def.7";
+     "V.8" -> "V.def.4";
+     "V.20" -> "V.13";
+     "V.22" -> "V.20";
+   }
+
+
+
+Required for
+------------
+
+:ref:`V.24`, :ref:`VI.18`, :ref:`VI.20`, :ref:`VI.22`, :ref:`VI.24`, :ref:`VI.25`, :ref:`VI.26`, :ref:`VI.27`, :ref:`VI.28`, :ref:`VI.29`, :ref:`VI.30`, :ref:`VI.31`, :ref:`VI.32`, :ref:`VI.4`, :ref:`VI.5`, :ref:`VI.6`, :ref:`VI.7`, :ref:`VI.8`

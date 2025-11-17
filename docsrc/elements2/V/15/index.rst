@@ -1,6 +1,7 @@
 :order: 15
 :number: 201
 :type: prop
+:dependencies: V.12, V.7
 
 
 .. _V.15:
@@ -35,3 +36,31 @@ But ``AG`` is equal to ``C`` and ``DK`` to ``F``;
 
 
 Therefore etc. Q. E. D.
+
+
+Dependency Graph
+----------------
+
+.. graphviz::
+
+   digraph {
+     rankdir="TB";
+     node [shape=box, style=rounded];
+     "V.1" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/1/", target="_top"];
+     "V.15" [style="rounded,filled", fillcolor=lightblue, URL="/elements2/V/15/", target="_top"];
+     "V.def.5" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/def.5/", target="_top"];
+     "V.7" [URL="/elements2/V/7/", target="_top"];
+     "V.12" [URL="/elements2/V/12/", target="_top"];
+     "V.12" -> "V.1";
+     "V.7" -> "V.def.5";
+     "V.12" -> "V.def.5";
+     "V.15" -> "V.7";
+     "V.15" -> "V.12";
+   }
+
+
+
+Required for
+------------
+
+:ref:`V.16`, :ref:`V.19`, :ref:`V.23`, :ref:`V.25`, :ref:`VI.1`, :ref:`VI.10`, :ref:`VI.11`, :ref:`VI.12`, :ref:`VI.14`, :ref:`VI.15`, :ref:`VI.16`, :ref:`VI.17`, :ref:`VI.18`, :ref:`VI.19`, :ref:`VI.2`, :ref:`VI.20`, :ref:`VI.22`, :ref:`VI.23`, :ref:`VI.24`, :ref:`VI.25`, :ref:`VI.26`, :ref:`VI.27`, :ref:`VI.28`, :ref:`VI.29`, :ref:`VI.3`, :ref:`VI.30`, :ref:`VI.31`, :ref:`VI.32`, :ref:`VI.4`, :ref:`VI.5`, :ref:`VI.6`, :ref:`VI.7`, :ref:`VI.8`, :ref:`VI.9`

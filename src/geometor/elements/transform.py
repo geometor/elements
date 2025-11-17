@@ -4,6 +4,7 @@ import re
 import shutil
 from pathlib import Path
 from xml.sax.saxutils import escape
+import networkx as nx
 
 ROMAN_NUMERALS = {
     '1': 'I', '2': 'II', '3': 'III', '4': 'IV', '5': 'V',
@@ -37,7 +38,7 @@ def get_taxonomy(enunciation_text):
             
     return categories, tags
 
-def convert_inline_xml_to_rst(element, is_enunciation=False):
+def convert_inline_xml_to_rst(element, dependencies, is_enunciation=False):
     if element is None:
         return ""
 
@@ -67,6 +68,11 @@ def convert_inline_xml_to_rst(element, is_enunciation=False):
                         if book_num_roman:
                             canonical_ref = f"{book_num_roman}.{item_num}"
             
+            if canonical_ref:
+                dependencies.append(canonical_ref)
+            else:
+                dependencies.append(target)
+
             ref_link = canonical_ref if canonical_ref else target
             return f":ref:`{ref_link}`"
         else:
@@ -87,7 +93,7 @@ def convert_inline_xml_to_rst(element, is_enunciation=False):
         parts.append(element.text)
 
     for child in element:
-        parts.append(convert_inline_xml_to_rst(child, is_enunciation))
+        parts.append(convert_inline_xml_to_rst(child, dependencies, is_enunciation))
         if child.tail:
             parts.append(child.tail)
     
@@ -171,6 +177,7 @@ def parse_book_xml(file_path, entry_number_start=0):
 
                 entry_content_rst = []
                 enunc_text = ""
+                dependencies = []
                 
                 def format_as_blockquote(text):
                     if not text:
@@ -184,13 +191,13 @@ def parse_book_xml(file_path, entry_number_start=0):
                 if enunc_div is not None:
                     enunc_p = enunc_div.find('p')
                     if enunc_p is not None:
-                        enunc_text = convert_inline_xml_to_rst(enunc_p, is_enunciation=True)
+                        enunc_text = convert_inline_xml_to_rst(enunc_p, dependencies, is_enunciation=True)
                         entry_content_rst.append(format_as_blockquote(enunc_text))
                 else:
                     # If no Enunc div4, treat the first p as enunciation
                     first_p = div3.find('p')
                     if first_p is not None:
-                        enunc_text = convert_inline_xml_to_rst(first_p, is_enunciation=True)
+                        enunc_text = convert_inline_xml_to_rst(first_p, dependencies, is_enunciation=True)
                         entry_content_rst.append(format_as_blockquote(enunc_text))
                         # To avoid processing it again, we can remove it or set a flag.
                         # For simplicity, we'll just be careful in the loop below.
@@ -235,7 +242,7 @@ def parse_book_xml(file_path, entry_number_start=0):
                             porism_content = []
                             for grand_child in child:
                                 if grand_child.tag == 'p':
-                                    inline_rst = convert_inline_xml_to_rst(grand_child)
+                                    inline_rst = convert_inline_xml_to_rst(grand_child, dependencies)
                                     if inline_rst:
                                         porism_content.append(inline_rst)
 
@@ -250,7 +257,7 @@ def parse_book_xml(file_path, entry_number_start=0):
                         div4_inner_content = []
                         for grand_child in child:
                             if grand_child.tag == 'p':
-                                inline_rst = convert_inline_xml_to_rst(grand_child)
+                                inline_rst = convert_inline_xml_to_rst(grand_child, dependencies)
                                 if inline_rst:
                                     div4_inner_content.append(inline_rst)
                             elif grand_child.tag == 'figure':
@@ -260,7 +267,7 @@ def parse_book_xml(file_path, entry_number_start=0):
                                 if content:
                                     div4_inner_content.append(f"\n.. container:: center\n\n   {content}\n")
                             else:
-                                inline_rst = convert_inline_xml_to_rst(grand_child)
+                                inline_rst = convert_inline_xml_to_rst(grand_child, dependencies)
                                 if inline_rst:
                                     div4_inner_content.append(inline_rst)
                         
@@ -291,12 +298,12 @@ def parse_book_xml(file_path, entry_number_start=0):
                                 flush_inline_parts()
                             elif grand_child.tag == 'hi' and grand_child.attrib.get('rend') == 'center':
                                 flush_inline_parts()
-                                content = convert_inline_xml_to_rst(grand_child)
+                                content = convert_inline_xml_to_rst(grand_child, dependencies)
                                 if content:
                                     indented_content = "\n   ".join(content.splitlines())
                                     paragraph_rst_blocks.append(f"\n.. container:: center\n\n   {indented_content}\n")
                             else:
-                                inline_rst = convert_inline_xml_to_rst(grand_child)
+                                inline_rst = convert_inline_xml_to_rst(grand_child, dependencies)
                                 if inline_rst:
                                     current_inline_parts.append(inline_rst)
                             
@@ -319,9 +326,10 @@ def parse_book_xml(file_path, entry_number_start=0):
                         if note_title:
                             note_content.append(f"**{note_title}**")
 
+                        note_dependencies = []  # Discard dependencies found in notes
                         for grand_child in child:
                             if grand_child.tag == 'p':
-                                inline_rst = convert_inline_xml_to_rst(grand_child)
+                                inline_rst = convert_inline_xml_to_rst(grand_child, note_dependencies)
                                 if inline_rst:
                                     note_content.append(inline_rst)
                         
@@ -332,7 +340,7 @@ def parse_book_xml(file_path, entry_number_start=0):
                                 entry_content_rst.append(f"   {line}")
                         entry_content_rst.append("") # Add an empty line after the note
                     else:
-                        inline_rst = convert_inline_xml_to_rst(child)
+                        inline_rst = convert_inline_xml_to_rst(child, dependencies)
                         if inline_rst:
                             entry_content_rst.append(inline_rst)
 
@@ -349,11 +357,75 @@ def parse_book_xml(file_path, entry_number_start=0):
                     "number": entry_number,
                     "type": section_type_canonical,
                     "enunciation": enunc_text,
+                    "dependencies": dependencies,
                 })
             book_data["sections"].append(section_data)
     return book_data, entry_number
 
-def generate_rst_files(book_data, output_dir):
+def analyze_dependencies(graph, element_ref):
+    """
+    Analyzes the dependency graph for a given element.
+    An edge u -> v means u depends on v.
+    """
+    analysis = {
+        "dependencies": [],  # Things element_ref depends on (descendants)
+        "dependents": [] # Things that depend on element_ref (ancestors)
+    }
+    if element_ref in graph:
+        analysis["dependencies"] = sorted(list(nx.descendants(graph, element_ref)))
+        analysis["dependents"] = sorted(list(nx.ancestors(graph, element_ref)))
+    return analysis
+
+def generate_proof_chain_dot(graph, element_ref, ref_to_path_map):
+    if element_ref not in graph:
+        return ""
+
+    descendants = nx.descendants(graph, element_ref)
+    nodes_in_chain = descendants.union({element_ref})
+
+    dot_lines = [
+        "digraph {",
+        '  rankdir="TB";',
+        '  node [shape=box, style=rounded];'
+    ]
+
+    # Define nodes with their styles and links
+    for node in nodes_in_chain:
+        attrs = []
+        
+        # Set color
+        if node == element_ref:
+            attrs.append('style="rounded,filled"')
+            attrs.append('fillcolor=lightblue')
+        else:
+            # Check if it's an end node (a leaf in this subgraph)
+            successors_in_chain = [succ for succ in graph.successors(node) if succ in nodes_in_chain]
+            if not successors_in_chain:
+                attrs.append('style="rounded,filled"')
+                attrs.append('fillcolor=orange')
+
+        # Set URL
+        path_info = ref_to_path_map.get(node)
+        if path_info:
+            target_book, target_folder = path_info
+            url = f"/elements2/{target_book}/{target_folder}/"
+            attrs.append(f'URL="{url}"')
+            attrs.append('target="_top"')
+
+        attr_str = ", ".join(attrs)
+        dot_lines.append(f'  "{node}" [{attr_str}];')
+
+    # Define edges
+    for node in nodes_in_chain:
+        for pred in graph.predecessors(node):
+            if pred in nodes_in_chain:
+                dot_lines.append(f'  "{pred}" -> "{node}";')
+
+    dot_lines.append("}")
+    return "\n".join(dot_lines)
+
+
+def generate_rst_files(book_data, output_dir, graph, ref_to_path_map):
     book_roman = book_data["book_number_roman"]
     book_dir = Path(output_dir) / book_roman
     book_dir.mkdir(parents=True, exist_ok=True)
@@ -362,7 +434,7 @@ def generate_rst_files(book_data, output_dir):
 
     # Create book index.rst
     book_index_content = [
-        f":order: {book_data["book_number_arabic"]}",
+        f":order: {book_data['book_number_arabic']}",
         ":type: book\n",
         f"Book {book_roman}",
         f"==============\n",
@@ -392,19 +464,21 @@ def generate_rst_files(book_data, output_dir):
                     entry_index_content.append(f":categories: {', '.join(categories)}")
                 if tags:
                     entry_index_content.append(f":tags: {', '.join(tags)}")
+                
+                if entry.get('dependencies'):
+                    deps_str = ', '.join(sorted(list(set(entry['dependencies']))))
+                    entry_index_content.append(f":dependencies: {deps_str}")
+
                 entry_index_content.append('\n')
 
                 # Copy images and add figure directives
                 if canonical_images_dir.exists() and entry['canonical_ref']:
                     image_stem = entry['canonical_ref']
                     
-                    # Find all images for this entry (including variants like -b)
                     image_files = []
-                    # Exact match
                     exact_match = canonical_images_dir / f"{image_stem}.jpg"
                     if exact_match.exists():
                         image_files.append(exact_match)
-                    # Variant matches (e.g., I.1-b.jpg)
                     image_files.extend(sorted(canonical_images_dir.glob(f"{image_stem}-*.jpg")))
 
                     for image_path in image_files:
@@ -417,6 +491,25 @@ def generate_rst_files(book_data, output_dir):
                     underline + "\n",
                     entry['content_rst']
                 ])
+
+                if entry.get('analysis'):
+                    analysis = entry['analysis']
+                    
+                    if analysis['dependencies']:
+                        entry_index_content.append("\n\nDependency Graph\n----------------\n")
+                        dot_content = generate_proof_chain_dot(graph, entry['canonical_ref'], ref_to_path_map)
+                        if dot_content:
+                            entry_index_content.append(".. graphviz::")
+                            entry_index_content.append("")
+                            for line in dot_content.splitlines():
+                                entry_index_content.append(f"   {line}")
+                            entry_index_content.append("")
+
+                    if analysis['dependents']:
+                        entry_index_content.append("\n\nRequired for\n------------\n")
+                        ref_list = [f":ref:`{req}`" for req in analysis['dependents']]
+                        entry_index_content.append(', '.join(ref_list))
+
 
                 with open(entry_dir / "index.rst", "w") as f:
                     f.write("\n".join(entry_index_content))
@@ -461,6 +554,36 @@ def generate_rst_files(book_data, output_dir):
         f.write("\n".join(book_index_content))
     print(f"Generated RST files for Book {book_roman}")
 
+def generate_dependency_graph(graph, output_dir="docsrc/elements2"):
+    dot_file_path = Path(output_dir) / "dependencies.dot"
+    with open(dot_file_path, "w") as f:
+        f.write("digraph G {\n")
+        f.write('  rankdir="LR";\n')
+        f.write('  overlap="false";\n')
+        f.write('  splines="true";\n')
+
+        nodes_by_book = {}
+        for node in sorted(graph.nodes()):
+            parts = node.split('.')
+            if len(parts) > 0:
+                book_roman = parts[0]
+                if book_roman not in nodes_by_book:
+                    nodes_by_book[book_roman] = []
+                nodes_by_book[book_roman].append(node)
+
+        for book_roman, nodes in sorted(nodes_by_book.items()):
+            f.write(f'  subgraph cluster_book_{book_roman} {{\n')
+            f.write(f'    label="Book {book_roman}";\n')
+            for node in nodes:
+                f.write(f'    "{node}";\n')
+            f.write('  }\n')
+
+        for edge in graph.edges():
+            f.write(f'  "{edge[0]}" -> "{edge[1]}";\n')
+        
+        f.write("}\n")
+    print(f"Generated dependency graph at {dot_file_path}")
+
 def main():
     print("RST transformation tool")
     output_dir = "docsrc/elements2"
@@ -476,16 +599,48 @@ def main():
                     shutil.rmtree(book_dir)
                     print(f"Removed directory: {book_dir}")
 
+    all_books_data = []
     entry_number = 0
     for i in range(1, 7):
         xml_file_path = f"resources/xml/books/{i:02d}.xml"
         if os.path.exists(xml_file_path):
             print(f"Processing {xml_file_path}")
             book_data, entry_number = parse_book_xml(xml_file_path, entry_number)
-            generate_rst_files(book_data, output_dir)
-
+            all_books_data.append(book_data)
         else:
             print(f"Warning: XML file not found at {xml_file_path}")
+
+    # Build the dependency graph
+    G = nx.DiGraph()
+    for book_data in all_books_data:
+        for section in book_data["sections"]:
+            for entry in section["entries"]:
+                if entry["canonical_ref"]:
+                    G.add_node(entry["canonical_ref"])
+                    for dep in sorted(list(set(entry["dependencies"]))):
+                        G.add_edge(entry["canonical_ref"], dep)
+
+    # Analyze dependencies for each element
+    for book_data in all_books_data:
+        for section in book_data["sections"]:
+            for entry in section["entries"]:
+                if entry["canonical_ref"]:
+                    analysis = analyze_dependencies(G, entry["canonical_ref"])
+                    entry["analysis"] = analysis
+
+    ref_to_path_map = {}
+    for book_data in all_books_data:
+        book_roman = book_data["book_number_roman"]
+        for section in book_data["sections"]:
+            for entry in section["entries"]:
+                if entry["canonical_ref"] and entry["folder_name"]:
+                    ref_to_path_map[entry["canonical_ref"]] = (book_roman, entry["folder_name"])
+
+    # Now generate the RST files with the full dependency info
+    for book_data in all_books_data:
+        generate_rst_files(book_data, output_dir, G, ref_to_path_map)
+
+    generate_dependency_graph(G, output_dir)
 
     # Create the main index.rst for elements2
     main_index_content = [
