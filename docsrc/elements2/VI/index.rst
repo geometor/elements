@@ -1,13 +1,17 @@
 :order: 6
 :type: book
 
-Book VI
-==============
+Book 6
+======
+
+   **Similar Figures**
+
+   Application of the theory of proportion
 
 
 .. contents::
    :local:
-   :depth: 1
+   :depth: 2
 
 
 .. _book-vi-def:

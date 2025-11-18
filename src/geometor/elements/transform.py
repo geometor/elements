@@ -5,6 +5,8 @@ import shutil
 from pathlib import Path
 from xml.sax.saxutils import escape
 import networkx as nx
+import json
+
 
 ROMAN_NUMERALS = {
     '1': 'I', '2': 'II', '3': 'III', '4': 'IV', '5': 'V',
@@ -56,6 +58,10 @@ def convert_inline_xml_to_rst(element, dependencies, is_enunciation=False):
                     if len(target_parts) == 5 and target_parts[2] == 'c' and target_parts[3] == 'n':
                         section_type_canonical = 'cn'
                         item_num = target_parts[4]
+                        canonical_ref = f"{book_num_roman}.{section_type_canonical}.{item_num}"
+                    elif len(target_parts) == 4 and target_parts[2] == 'post':
+                        section_type_canonical = 'post'
+                        item_num = target_parts[3]
                         canonical_ref = f"{book_num_roman}.{section_type_canonical}.{item_num}"
                     elif len(target_parts) == 4:
                         section_type_str = target_parts[2]
@@ -162,6 +168,10 @@ def parse_book_xml(file_path, entry_number_start=0):
                             item_num = parts[4]
                             canonical_ref = f"{book_num_roman}.cn.{item_num}"
                             folder_name = f"cn.{item_num}"
+                        elif len(parts) == 4 and parts[2] == 'post':
+                            item_num = parts[3]
+                            canonical_ref = f"{book_num_roman}.post.{item_num}"
+                            folder_name = f"post.{item_num}"
                         elif len(parts) == 4:
                             section_type = SECTION_TYPE_MAP.get(parts[2].capitalize())
                             item_num = parts[3]
@@ -425,7 +435,7 @@ def generate_proof_chain_dot(graph, element_ref, ref_to_path_map):
     return "\n".join(dot_lines)
 
 
-def generate_rst_files(book_data, output_dir, graph, ref_to_path_map):
+def generate_rst_files(book_data, output_dir, graph, ref_to_path_map, metadata):
     book_roman = book_data["book_number_roman"]
     book_dir = Path(output_dir) / book_roman
     book_dir.mkdir(parents=True, exist_ok=True)
@@ -433,12 +443,34 @@ def generate_rst_files(book_data, output_dir, graph, ref_to_path_map):
     canonical_images_dir = Path("resources/canonical_images")
 
     # Create book index.rst
+    book_num_arabic = book_data['book_number_arabic']
+    book_metadata = metadata.get(book_num_arabic, {})
+
+    title = book_metadata.get('title', f"Book {book_roman}")
+    
     book_index_content = [
         f":order: {book_data['book_number_arabic']}",
         ":type: book\n",
-        f"Book {book_roman}",
-        f"==============\n",
+        title,
+        f"{'=' * len(title)}\n",
     ]
+
+    if book_metadata.get('subtitle') or book_metadata.get('body'):
+        if book_metadata.get('subtitle'):
+            subtitle = book_metadata['subtitle']
+            book_index_content.append(f"   **{subtitle}**\n")
+        if book_metadata.get('body'):
+            body = book_metadata['body']
+            indented_body = "\n   ".join(body.splitlines())
+            book_index_content.append(f"   {indented_body}\n")
+
+    # Insert contents directive after the main heading and body
+    book_index_content.append("""
+.. contents::
+   :local:
+   :depth: 2
+
+""")
 
     entry_types_in_book = set()
     
@@ -539,14 +571,6 @@ def generate_rst_files(book_data, output_dir, graph, ref_to_path_map):
             collection_sections.append(f"   :type: {entry_type}")
             collection_sections.append(f"   :sort: number\n")
 
-    # Insert contents directive after the main heading
-    book_index_content.append("""
-.. contents::
-   :local:
-   :depth: 1
-
-""")
-
     # Add the collection sections
     book_index_content.extend(collection_sections)
 
@@ -637,8 +661,14 @@ def main():
                     ref_to_path_map[entry["canonical_ref"]] = (book_roman, entry["folder_name"])
 
     # Now generate the RST files with the full dependency info
+    metadata = {}
+    metadata_path = Path("resources/metadata.json")
+    if metadata_path.exists():
+        with open(metadata_path, "r") as f:
+            metadata = json.load(f)
+
     for book_data in all_books_data:
-        generate_rst_files(book_data, output_dir, G, ref_to_path_map)
+        generate_rst_files(book_data, output_dir, G, ref_to_path_map, metadata)
 
     generate_dependency_graph(G, output_dir)
 

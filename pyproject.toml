@@ -18,6 +18,7 @@ dependencies = [
     "mplcursors",
     "rich",
     "networkx",
+    "PyYAML",
 ]
 
 [project.scripts]

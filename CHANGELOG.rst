@@ -1,6 +1,16 @@
 changelog
 =========
 
+0.0.15
+------
+*2025-11-18*
+
+**added**
+
+.. + Added metadata file (`resources/metadata.json`) to store book titles and subtitles.
+.. + Updated transform script to use metadata in generated documentation.
+.. + Improved formatting for subtitles and introductions in book index pages.
+
 0.0.14
 ------
 *2025-11-17*

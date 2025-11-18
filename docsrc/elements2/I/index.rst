@@ -2,12 +2,16 @@
 :type: book
 
 Book I
-==============
+======
+
+   **Fundamentals of Plane Geometry Involving Straight-Lines**
+
+   Theory of angles, triangles, parallel lines, and parallelograms.
 
 
 .. contents::
    :local:
-   :depth: 1
+   :depth: 2
 
 
 .. _book-i-cn:

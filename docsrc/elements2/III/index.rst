@@ -1,13 +1,17 @@
 :order: 3
 :type: book
 
-Book III
-==============
+Book 3
+======
+
+   **Fundamentals of Plane Geometry Involving Circles**
+
+   Theory of the Circle
 
 
 .. contents::
    :local:
-   :depth: 1
+   :depth: 2
 
 
 .. _book-iii-def:
