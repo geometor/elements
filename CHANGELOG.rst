@@ -1,6 +1,17 @@
 changelog
 =========
 
+0.0.16
+------
+*2025-11-18*
+
+**added**
+
+.. + Created a Python script to semi-automate cropping of proposition images from Heath's Euclid scans.
+.. + Implemented JSON-based instruction file for defining crop coordinates.
+.. + Added functionality to stitch multi-page propositions.
+.. + Added functionality to extract diagram graphics from stitched proposition images.
+
 0.0.15
 ------
 *2025-11-18*

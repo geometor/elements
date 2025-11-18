@@ -67,13 +67,13 @@ Dependency Graph
    digraph {
      rankdir="TB";
      node [shape=box, style=rounded];
-     "I.def.15" [style="rounded,filled", fillcolor=orange, URL="/elements2/I/def.15/", target="_top"];
      "III.5" [URL="/elements2/III/5/", target="_top"];
-     "III.10" [style="rounded,filled", fillcolor=lightblue, URL="/elements2/III/10/", target="_top"];
+     "I.def.15" [style="rounded,filled", fillcolor=orange, URL="/elements2/I/def.15/", target="_top"];
      "elem.3.1.p.1" [style="rounded,filled", fillcolor=orange];
+     "III.10" [style="rounded,filled", fillcolor=lightblue, URL="/elements2/III/10/", target="_top"];
+     "III.10" -> "III.5";
      "III.5" -> "I.def.15";
      "III.10" -> "I.def.15";
-     "III.10" -> "III.5";
      "III.10" -> "elem.3.1.p.1";
    }
 

@@ -125,14 +125,14 @@ Dependency Graph
    digraph {
      rankdir="TB";
      node [shape=box, style=rounded];
-     "I.post.1" [style="rounded,filled", fillcolor=orange, URL="/elements2/I/post.1/", target="_top"];
-     "I.1" [style="rounded,filled", fillcolor=lightblue, URL="/elements2/I/1/", target="_top"];
      "I.def.15" [style="rounded,filled", fillcolor=orange, URL="/elements2/I/def.15/", target="_top"];
+     "I.1" [style="rounded,filled", fillcolor=lightblue, URL="/elements2/I/1/", target="_top"];
      "I.cn.1" [style="rounded,filled", fillcolor=orange, URL="/elements2/I/cn.1/", target="_top"];
+     "I.post.1" [style="rounded,filled", fillcolor=orange, URL="/elements2/I/post.1/", target="_top"];
      "I.post.3" [style="rounded,filled", fillcolor=orange, URL="/elements2/I/post.3/", target="_top"];
-     "I.1" -> "I.post.1";
      "I.1" -> "I.def.15";
      "I.1" -> "I.cn.1";
+     "I.1" -> "I.post.1";
      "I.1" -> "I.post.3";
    }
 

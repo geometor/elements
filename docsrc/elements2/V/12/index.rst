@@ -38,11 +38,11 @@ Dependency Graph
    digraph {
      rankdir="TB";
      node [shape=box, style=rounded];
-     "V.1" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/1/", target="_top"];
      "V.def.5" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/def.5/", target="_top"];
      "V.12" [style="rounded,filled", fillcolor=lightblue, URL="/elements2/V/12/", target="_top"];
-     "V.12" -> "V.1";
+     "V.1" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/1/", target="_top"];
      "V.12" -> "V.def.5";
+     "V.12" -> "V.1";
    }
 
 

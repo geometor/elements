@@ -40,12 +40,12 @@ Dependency Graph
    digraph {
      rankdir="TB";
      node [shape=box, style=rounded];
-     "V.2" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/2/", target="_top"];
-     "V.3" [URL="/elements2/V/3/", target="_top"];
-     "V.def.5" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/def.5/", target="_top"];
      "V.4" [style="rounded,filled", fillcolor=lightblue, URL="/elements2/V/4/", target="_top"];
-     "V.3" -> "V.2";
+     "V.3" [URL="/elements2/V/3/", target="_top"];
+     "V.2" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/2/", target="_top"];
+     "V.def.5" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/def.5/", target="_top"];
      "V.4" -> "V.3";
+     "V.3" -> "V.2";
      "V.4" -> "V.def.5";
    }
 

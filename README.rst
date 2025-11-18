@@ -24,6 +24,17 @@ I want each principle to have a succinct title.
 We will also be consistent with the definition and attributes of the elements in GEOMETOR model.
 
 
+Image Processing Workflow
+-------------------------
+
+A semi-automated workflow has been established to process the scanned pages of Heath's Edition, located in `resources/heath/`. This process involves two main steps:
+
+1.  **Proposition Cropping**: A Python script (`crop_propositions.py`) reads instructions from `resources/cropping_instructions.json` to crop the main proposition text and diagram from the scanned pages. It can handle propositions that span multiple pages by stitching them together into a single image, which is saved in `resources/cropped/`.
+2.  **Graphic Extraction**: The same script then extracts the geometric diagram from the stitched proposition image based on coordinates specified in the JSON file. These extracted graphics are saved in `resources/graphics/` with the eventual goal of converting them to SVG format.
+
+This workflow streamlines the preparation of visual materials for analysis and for use in the GEOMETOR explorer.
+
+
 Contributing
 ------------
 

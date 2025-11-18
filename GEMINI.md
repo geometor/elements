@@ -42,3 +42,4 @@ tedious, however a reference like "Book3 prop11" or worse "III.11" is useless se
 - Implemented collection directives to dynamically generate sorted lists of elements.
 - Added cumulative numbering for all elements across all books.
 - Implemented note directives to render Heath's footnotes from the XML source.
+- Developed a script (`crop_propositions.py`) to semi-automate the cropping of proposition text and the extraction of graphics from the Heath scans.
