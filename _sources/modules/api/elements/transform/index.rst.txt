@@ -59,7 +59,7 @@ Module Contents
 
 .. py:function:: generate_proof_chain_dot(graph, element_ref, ref_to_path_map)
 
-.. py:function:: generate_rst_files(book_data, output_dir, graph, ref_to_path_map)
+.. py:function:: generate_rst_files(book_data, output_dir, graph, ref_to_path_map, metadata)
 
 .. py:function:: generate_dependency_graph(graph, output_dir='docsrc/elements2')
 

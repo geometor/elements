@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>elements.transform &mdash; Project name not set  documentation</title>
   <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=e399521c" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=a3216404" />
   <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
 </head>
 <body>
@@ -36,10 +36,10 @@
           <a href="../../usage.html"  >usage</a>
         </li>
         <li>
-          <a href="../../log/index.html"  >log</a>
+          <a href="../../modules/index.html"  >modules</a>
         </li>
         <li>
-          <a href="../../modules/index.html"  >modules</a>
+          <a href="../../log/index.html"  >log</a>
         </li>
       </ul>
     </nav>
@@ -48,7 +48,7 @@
   <main>
 
     <article>
-      <header>
+      <div class="content">
       <nav class="breadcrumbs">
         <span><a href="../../index.html">Home</a></span>
           <span>/</span>
@@ -62,8 +62,6 @@
           <div class="next">
           </div>
         </nav>
-      </header>
-      <div class="content">
           <h1>Source code for elements.transform</h1><div class="highlight"><pre>
 <span></span><span class="kn">import</span><span class="w"> </span><span class="nn">xml.etree.ElementTree</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">ET</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
@@ -72,6 +70,8 @@
 <span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">xml.sax.saxutils</span><span class="w"> </span><span class="kn">import</span> <span class="n">escape</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">networkx</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">nx</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+
 
 <div class="viewcode-block" id="ROMAN_NUMERALS">
 <a class="viewcode-back" href="../../modules/api/elements/transform/index.html#elements.transform.ROMAN_NUMERALS">[docs]</a>
@@ -140,6 +140,10 @@
                     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">target_parts</span><span class="p">)</span> <span class="o">==</span> <span class="mi">5</span> <span class="ow">and</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;c&#39;</span> <span class="ow">and</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;n&#39;</span><span class="p">:</span>
                         <span class="n">section_type_canonical</span> <span class="o">=</span> <span class="s1">&#39;cn&#39;</span>
                         <span class="n">item_num</span> <span class="o">=</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+                        <span class="n">canonical_ref</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">book_num_roman</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">section_type_canonical</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">item_num</span><span class="si">}</span><span class="s2">&quot;</span>
+                    <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">target_parts</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span> <span class="ow">and</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;post&#39;</span><span class="p">:</span>
+                        <span class="n">section_type_canonical</span> <span class="o">=</span> <span class="s1">&#39;post&#39;</span>
+                        <span class="n">item_num</span> <span class="o">=</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
                         <span class="n">canonical_ref</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">book_num_roman</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">section_type_canonical</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">item_num</span><span class="si">}</span><span class="s2">&quot;</span>
                     <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">target_parts</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
                         <span class="n">section_type_str</span> <span class="o">=</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
@@ -249,6 +253,10 @@
                             <span class="n">item_num</span> <span class="o">=</span> <span class="n">parts</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
                             <span class="n">canonical_ref</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">book_num_roman</span><span class="si">}</span><span class="s2">.cn.</span><span class="si">{</span><span class="n">item_num</span><span class="si">}</span><span class="s2">&quot;</span>
                             <span class="n">folder_name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;cn.</span><span class="si">{</span><span class="n">item_num</span><span class="si">}</span><span class="s2">&quot;</span>
+                        <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">parts</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span> <span class="ow">and</span> <span class="n">parts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;post&#39;</span><span class="p">:</span>
+                            <span class="n">item_num</span> <span class="o">=</span> <span class="n">parts</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+                            <span class="n">canonical_ref</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">book_num_roman</span><span class="si">}</span><span class="s2">.post.</span><span class="si">{</span><span class="n">item_num</span><span class="si">}</span><span class="s2">&quot;</span>
+                            <span class="n">folder_name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;post.</span><span class="si">{</span><span class="n">item_num</span><span class="si">}</span><span class="s2">&quot;</span>
                         <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">parts</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
                             <span class="n">section_type</span> <span class="o">=</span> <span class="n">SECTION_TYPE_MAP</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">parts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">capitalize</span><span class="p">())</span>
                             <span class="n">item_num</span> <span class="o">=</span> <span class="n">parts</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
@@ -521,7 +529,7 @@
 
 <div class="viewcode-block" id="generate_rst_files">
 <a class="viewcode-back" href="../../modules/api/elements/transform/index.html#elements.transform.generate_rst_files">[docs]</a>
-<span class="k">def</span><span class="w"> </span><span class="nf">generate_rst_files</span><span class="p">(</span><span class="n">book_data</span><span class="p">,</span> <span class="n">output_dir</span><span class="p">,</span> <span class="n">graph</span><span class="p">,</span> <span class="n">ref_to_path_map</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">generate_rst_files</span><span class="p">(</span><span class="n">book_data</span><span class="p">,</span> <span class="n">output_dir</span><span class="p">,</span> <span class="n">graph</span><span class="p">,</span> <span class="n">ref_to_path_map</span><span class="p">,</span> <span class="n">metadata</span><span class="p">):</span>
     <span class="n">book_roman</span> <span class="o">=</span> <span class="n">book_data</span><span class="p">[</span><span class="s2">&quot;book_number_roman&quot;</span><span class="p">]</span>
     <span class="n">book_dir</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">output_dir</span><span class="p">)</span> <span class="o">/</span> <span class="n">book_roman</span>
     <span class="n">book_dir</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -529,12 +537,34 @@
     <span class="n">canonical_images_dir</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">&quot;resources/canonical_images&quot;</span><span class="p">)</span>
 
     <span class="c1"># Create book index.rst</span>
+    <span class="n">book_num_arabic</span> <span class="o">=</span> <span class="n">book_data</span><span class="p">[</span><span class="s1">&#39;book_number_arabic&#39;</span><span class="p">]</span>
+    <span class="n">book_metadata</span> <span class="o">=</span> <span class="n">metadata</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">book_num_arabic</span><span class="p">,</span> <span class="p">{})</span>
+
+    <span class="n">title</span> <span class="o">=</span> <span class="n">book_metadata</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;Book </span><span class="si">{</span><span class="n">book_roman</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    
     <span class="n">book_index_content</span> <span class="o">=</span> <span class="p">[</span>
         <span class="sa">f</span><span class="s2">&quot;:order: </span><span class="si">{</span><span class="n">book_data</span><span class="p">[</span><span class="s1">&#39;book_number_arabic&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
         <span class="s2">&quot;:type: book</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
-        <span class="sa">f</span><span class="s2">&quot;Book </span><span class="si">{</span><span class="n">book_roman</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
-        <span class="sa">f</span><span class="s2">&quot;==============</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+        <span class="n">title</span><span class="p">,</span>
+        <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="s1">&#39;=&#39;</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nb">len</span><span class="p">(</span><span class="n">title</span><span class="p">)</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
     <span class="p">]</span>
+
+    <span class="k">if</span> <span class="n">book_metadata</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;subtitle&#39;</span><span class="p">)</span> <span class="ow">or</span> <span class="n">book_metadata</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;body&#39;</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">book_metadata</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;subtitle&#39;</span><span class="p">):</span>
+            <span class="n">subtitle</span> <span class="o">=</span> <span class="n">book_metadata</span><span class="p">[</span><span class="s1">&#39;subtitle&#39;</span><span class="p">]</span>
+            <span class="n">book_index_content</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;   **</span><span class="si">{</span><span class="n">subtitle</span><span class="si">}</span><span class="s2">**</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">book_metadata</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;body&#39;</span><span class="p">):</span>
+            <span class="n">body</span> <span class="o">=</span> <span class="n">book_metadata</span><span class="p">[</span><span class="s1">&#39;body&#39;</span><span class="p">]</span>
+            <span class="n">indented_body</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">   &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">body</span><span class="o">.</span><span class="n">splitlines</span><span class="p">())</span>
+            <span class="n">book_index_content</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;   </span><span class="si">{</span><span class="n">indented_body</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Insert contents directive after the main heading and body</span>
+    <span class="n">book_index_content</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">.. contents::</span>
+<span class="s2">   :local:</span>
+<span class="s2">   :depth: 2</span>
+
+<span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
 
     <span class="n">entry_types_in_book</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
     
@@ -635,14 +665,6 @@
             <span class="n">collection_sections</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;   :type: </span><span class="si">{</span><span class="n">entry_type</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
             <span class="n">collection_sections</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;   :sort: number</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
 
-    <span class="c1"># Insert contents directive after the main heading</span>
-    <span class="n">book_index_content</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">.. contents::</span>
-<span class="s2">   :local:</span>
-<span class="s2">   :depth: 1</span>
-
-<span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
-
     <span class="c1"># Add the collection sections</span>
     <span class="n">book_index_content</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">collection_sections</span><span class="p">)</span>
 
@@ -739,8 +761,14 @@
                     <span class="n">ref_to_path_map</span><span class="p">[</span><span class="n">entry</span><span class="p">[</span><span class="s2">&quot;canonical_ref&quot;</span><span class="p">]]</span> <span class="o">=</span> <span class="p">(</span><span class="n">book_roman</span><span class="p">,</span> <span class="n">entry</span><span class="p">[</span><span class="s2">&quot;folder_name&quot;</span><span class="p">])</span>
 
     <span class="c1"># Now generate the RST files with the full dependency info</span>
+    <span class="n">metadata</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">metadata_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">&quot;resources/metadata.json&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">metadata_path</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">metadata_path</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">metadata</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+
     <span class="k">for</span> <span class="n">book_data</span> <span class="ow">in</span> <span class="n">all_books_data</span><span class="p">:</span>
-        <span class="n">generate_rst_files</span><span class="p">(</span><span class="n">book_data</span><span class="p">,</span> <span class="n">output_dir</span><span class="p">,</span> <span class="n">G</span><span class="p">,</span> <span class="n">ref_to_path_map</span><span class="p">)</span>
+        <span class="n">generate_rst_files</span><span class="p">(</span><span class="n">book_data</span><span class="p">,</span> <span class="n">output_dir</span><span class="p">,</span> <span class="n">G</span><span class="p">,</span> <span class="n">ref_to_path_map</span><span class="p">,</span> <span class="n">metadata</span><span class="p">)</span>
 
     <span class="n">generate_dependency_graph</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">output_dir</span><span class="p">)</span>
 

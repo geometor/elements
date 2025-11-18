@@ -1,13 +1,17 @@
 :order: 2
 :type: book
 
-Book II
-==============
+Book 2
+======
+
+   **Fundamentals of Geometric Algebra**
+
+   Theory of Rectangles
 
 
 .. contents::
    :local:
-   :depth: 1
+   :depth: 2
 
 
 .. _book-ii-def:
