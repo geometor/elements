@@ -111,8 +111,8 @@ Dependency Graph
      rankdir="TB";
      node [shape=box, style=rounded];
      "V.def.7" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/def.7/", target="_top"];
-     "V.1" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/1/", target="_top"];
      "V.8" [style="rounded,filled", fillcolor=lightblue, URL="/elements2/V/8/", target="_top"];
+     "V.1" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/1/", target="_top"];
      "V.def.4" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/def.4/", target="_top"];
      "V.8" -> "V.def.7";
      "V.8" -> "V.1";

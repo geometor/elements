@@ -56,26 +56,26 @@ Dependency Graph
    digraph {
      rankdir="TB";
      node [shape=box, style=rounded];
-     "V.10" [URL="/elements2/V/10/", target="_top"];
-     "V.1" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/1/", target="_top"];
      "V.def.5" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/def.5/", target="_top"];
+     "V.21" [style="rounded,filled", fillcolor=lightblue, URL="/elements2/V/21/", target="_top"];
+     "V.13" [URL="/elements2/V/13/", target="_top"];
+     "V.10" [URL="/elements2/V/10/", target="_top"];
      "V.8" [URL="/elements2/V/8/", target="_top"];
      "V.def.4" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/def.4/", target="_top"];
      "V.def.7" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/def.7/", target="_top"];
+     "V.1" [style="rounded,filled", fillcolor=orange, URL="/elements2/V/1/", target="_top"];
      "V.7" [URL="/elements2/V/7/", target="_top"];
-     "V.13" [URL="/elements2/V/13/", target="_top"];
-     "V.21" [style="rounded,filled", fillcolor=lightblue, URL="/elements2/V/21/", target="_top"];
-     "V.21" -> "V.10";
-     "V.8" -> "V.1";
      "V.7" -> "V.def.5";
      "V.13" -> "V.def.5";
+     "V.21" -> "V.13";
+     "V.21" -> "V.10";
      "V.10" -> "V.8";
      "V.21" -> "V.8";
      "V.8" -> "V.def.4";
      "V.8" -> "V.def.7";
      "V.13" -> "V.def.7";
+     "V.8" -> "V.1";
      "V.10" -> "V.7";
-     "V.21" -> "V.13";
    }
 
 
