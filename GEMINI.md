@@ -36,10 +36,12 @@ tedious, however a reference like "Book3 prop11" or worse "III.11" is useless se
 
 # Current Progress
 
-- The `elements_transform` script (located at `src/geometor/elements/transform.py`) is now used for RST generation.
-- The script currently processes XML files for Books 1 through 6.
-- The `<lb>` (line break) and `<pb>` (page break) XML tags are now ignored during RST generation, returning an empty string.
-- Implemented collection directives to dynamically generate sorted lists of elements.
-- Added cumulative numbering for all elements across all books.
-- Implemented note directives to render Heath's footnotes from the XML source.
-- Developed a script (`crop_propositions.py`) to semi-automate the cropping of proposition text and the extraction of graphics from the Heath scans.
+- The `elements_transform` script (located at `src/geometor/elements/transform.py`) is currently used for RST generation from XML files, processing Books 1 through 6.
+- The XML parsing ignores `<lb>` and `<pb>` tags during RST generation.
+- Collection and note directives are implemented for dynamic lists and Heath's footnotes.
+- A new, comprehensive, modular ingestion pipeline (`src/geometor/elements/ingest`) has been established to process Heath's Euclid from PDF sources.
+- This pipeline supports full extraction and organization of text and images for all three volumes of Euclid's Elements.
+- A separate refinement pipeline handles the analysis of propositions, dynamic cropping of images, and graphic extraction.
+- The `proposition_index.json` is now generated and stored within the `resources/heath` directory.
+- Canonical naming for cropped images (e.g., `I.1.png`) is consistently applied.
+- Legacy scripts for image processing have been deprecated or moved.

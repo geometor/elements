@@ -1,6 +1,27 @@
 changelog
 =========
 
+0.0.17
+------
+*2025-11-20*
+
+**added**
+
+.. + Introduced a modular ingestion pipeline (`geometor.elements.ingest`) for processing Heath's Euclid PDFs.
+.. + Implemented dynamic cropping and stitching of proposition images based on text analysis.
+.. + Created a separate refinement pipeline (`geometor.elements.ingest.refine`) for analysis, cropping, and metadata extraction.
+
+**changed**
+
+.. + Updated configuration to dynamically manage paths and global settings.
+.. + Canonical naming of cropped proposition images now uses Book numeral (e.g., `I.1.png`).
+.. + Renamed `resources/extracted` to `resources/heath` as the primary output directory for all extracted and processed assets.
+.. + `proposition_index.json`, `pages.json`, and `toc.json` are now saved to their respective volume directories within `resources/heath`.
+
+**fixed**
+
+.. + Corrected volume identification logic in analysis to prevent misattribution of propositions.
+
 0.0.16
 ------
 *2025-11-18*

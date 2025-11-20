@@ -24,15 +24,24 @@ I want each principle to have a succinct title.
 We will also be consistent with the definition and attributes of the elements in GEOMETOR model.
 
 
-Image Processing Workflow
--------------------------
+Image Processing & Text Ingestion Workflow
+-----------------------------------------
 
-A semi-automated workflow has been established to process the scanned pages of Heath's Edition, located in `resources/heath/`. This process involves two main steps:
+A comprehensive, modular pipeline (`src/geometor/elements/ingest`) has been established to process Heath's Euclid from PDF sources.
+This workflow is divided into two main stages:
 
-1.  **Proposition Cropping**: A Python script (`crop_propositions.py`) reads instructions from `resources/cropping_instructions.json` to crop the main proposition text and diagram from the scanned pages. It can handle propositions that span multiple pages by stitching them together into a single image, which is saved in `resources/cropped/`.
-2.  **Graphic Extraction**: The same script then extracts the geometric diagram from the stitched proposition image based on coordinates specified in the JSON file. These extracted graphics are saved in `resources/graphics/` with the eventual goal of converting them to SVG format.
+1.  **Ingestion Pipeline (`pipeline.py`)**: This stage focuses on initial extraction and organization.
 
-This workflow streamlines the preparation of visual materials for analysis and for use in the GEOMETOR explorer.
+    *   **Extraction (`extraction.py`)**: Converts PDF pages into images and extracts text. It also identifies and extracts the Table of Contents for each volume.
+    *   **Organization (`organization.py`)**: Structures the extracted files (images, text, and manifest JSONs) into a logical hierarchy within `resources/heath/volume_X/` based on the Table of Contents.
+
+2.  **Refinement Pipeline (`refine.py`)**: This stage performs further analysis and processing on the ingested data.
+
+    *   **Analysis (`analysis.py`)**: Scans the extracted text to identify and index propositions, recording their start and end points within pages.
+    *   **Cropping (`cropping.py`)**: Dynamically crops proposition text and extracts geometric diagrams from the high-resolution page images. It can stitch multi-page propositions into single images. Cropped propositions are saved in `resources/heath/cropped/` and extracted graphics in `resources/heath/graphics/`.
+    *   **Metadata Extraction (`metadata_extraction/metadata_extraction.py`)**: Extracts and compiles metadata from the processed content for use in documentation generation.
+
+This modular approach ensures flexibility and maintainability, streamlining the preparation of all materials for use in the GEOMETOR explorer and Sphinx-based documentation.
 
 
 Contributing
