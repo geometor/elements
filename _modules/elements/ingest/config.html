@@ -1,0 +1,235 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>elements.ingest.config &mdash; Project name not set  documentation</title>
+  <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../../_static/css/styles.css?v=a3216404" />
+  <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=4ae1632d" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="../../../index.html">
+        <img src="../../../_static/logo.png" class="logo" alt="Logo"/>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">elements</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../../mission/index.html"  >mission</a>
+        </li>
+        <li>
+          <a href="../../../usage.html"  >usage</a>
+        </li>
+        <li>
+          <a href="../../../elements2/index.html"  >Elements 2.0</a>
+        </li>
+        <li>
+          <a href="../../../modules/index.html"  >modules</a>
+        </li>
+        <li>
+          <a href="../../../log/index.html"  >log</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main>
+
+    <article>
+      <div class="content">
+      <nav class="breadcrumbs">
+        <span><a href="../../../index.html">Home</a></span>
+          <span>/</span>
+        <span><a href="../../index.html">Module code</a></span>
+        <span>/</span>
+        <span>elements.ingest.config</span>
+      </nav>
+        <nav class="context">
+          <div class="prev">
+          </div>
+          <div class="next">
+          </div>
+        </nav>
+          <h1>Source code for elements.ingest.config</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+
+<span class="c1"># Base paths</span>
+<div class="viewcode-block" id="PROJECT_ROOT">
+<a class="viewcode-back" href="../../../modules/api/elements/ingest/config/index.html#elements.ingest.config.PROJECT_ROOT">[docs]</a>
+<span class="n">PROJECT_ROOT</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&quot;GEOMETOR_PROJECT_ROOT&quot;</span><span class="p">,</span> <span class="s2">&quot;/home/phi/PROJECTS/geometor/elements&quot;</span><span class="p">))</span></div>
+
+
+<div class="viewcode-block" id="RESOURCES_DIR">
+<a class="viewcode-back" href="../../../modules/api/elements/ingest/config/index.html#elements.ingest.config.RESOURCES_DIR">[docs]</a>
+<span class="n">RESOURCES_DIR</span> <span class="o">=</span> <span class="n">PROJECT_ROOT</span> <span class="o">/</span> <span class="s2">&quot;resources&quot;</span></div>
+
+
+<span class="c1"># Input paths</span>
+<span class="c1"># Default to the path found in original scripts, but allow env var override</span>
+<div class="viewcode-block" id="DEFAULT_PDF_DIR">
+<a class="viewcode-back" href="../../../modules/api/elements/ingest/config/index.html#elements.ingest.config.DEFAULT_PDF_DIR">[docs]</a>
+<span class="n">DEFAULT_PDF_DIR</span> <span class="o">=</span> <span class="s2">&quot;/home/phi/PROJECTS/geometor/heath_pdf_2nd_ed&quot;</span></div>
+
+<div class="viewcode-block" id="PDF_BASE_DIR">
+<a class="viewcode-back" href="../../../modules/api/elements/ingest/config/index.html#elements.ingest.config.PDF_BASE_DIR">[docs]</a>
+<span class="n">PDF_BASE_DIR</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&quot;GEOMETOR_PDF_DIR&quot;</span><span class="p">,</span> <span class="n">DEFAULT_PDF_DIR</span><span class="p">))</span></div>
+
+
+<span class="c1"># Output paths</span>
+<div class="viewcode-block" id="EXTRACTED_DIR">
+<a class="viewcode-back" href="../../../modules/api/elements/ingest/config/index.html#elements.ingest.config.EXTRACTED_DIR">[docs]</a>
+<span class="n">EXTRACTED_DIR</span> <span class="o">=</span> <span class="n">RESOURCES_DIR</span> <span class="o">/</span> <span class="s2">&quot;heath&quot;</span></div>
+
+
+<span class="c1"># JSON Data Files</span>
+<div class="viewcode-block" id="PROPOSITION_INDEX_PATH">
+<a class="viewcode-back" href="../../../modules/api/elements/ingest/config/index.html#elements.ingest.config.PROPOSITION_INDEX_PATH">[docs]</a>
+<span class="n">PROPOSITION_INDEX_PATH</span> <span class="o">=</span> <span class="n">EXTRACTED_DIR</span> <span class="o">/</span> <span class="s2">&quot;proposition_index.json&quot;</span></div>
+
+<div class="viewcode-block" id="METADATA_PATH">
+<a class="viewcode-back" href="../../../modules/api/elements/ingest/config/index.html#elements.ingest.config.METADATA_PATH">[docs]</a>
+<span class="n">METADATA_PATH</span> <span class="o">=</span> <span class="n">RESOURCES_DIR</span> <span class="o">/</span> <span class="s2">&quot;metadata.json&quot;</span></div>
+
+
+<span class="c1"># Global Settings (from manual cropping instructions)</span>
+<div class="viewcode-block" id="PAGE_WIDTH">
+<a class="viewcode-back" href="../../../modules/api/elements/ingest/config/index.html#elements.ingest.config.PAGE_WIDTH">[docs]</a>
+<span class="n">PAGE_WIDTH</span> <span class="o">=</span> <span class="mi">755</span></div>
+
+<div class="viewcode-block" id="PAGE_HEADER_END">
+<a class="viewcode-back" href="../../../modules/api/elements/ingest/config/index.html#elements.ingest.config.PAGE_HEADER_END">[docs]</a>
+<span class="n">PAGE_HEADER_END</span> <span class="o">=</span> <span class="mi">125</span></div>
+
+<div class="viewcode-block" id="PAGE_FOOTER_START">
+<a class="viewcode-back" href="../../../modules/api/elements/ingest/config/index.html#elements.ingest.config.PAGE_FOOTER_START">[docs]</a>
+<span class="n">PAGE_FOOTER_START</span> <span class="o">=</span> <span class="mi">1115</span></div>
+
+<div class="viewcode-block" id="CROP_WIDTH">
+<a class="viewcode-back" href="../../../modules/api/elements/ingest/config/index.html#elements.ingest.config.CROP_WIDTH">[docs]</a>
+<span class="n">CROP_WIDTH</span> <span class="o">=</span> <span class="mi">640</span></div>
+
+
+<span class="c1"># Volume Definitions</span>
+<div class="viewcode-block" id="VOLUMES">
+<a class="viewcode-back" href="../../../modules/api/elements/ingest/config/index.html#elements.ingest.config.VOLUMES">[docs]</a>
+<span class="n">VOLUMES</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;I&quot;</span><span class="p">:</span> <span class="s2">&quot;The Thirteen Books of Euclid&#39;s Elements _ Volume I _ Second Edition (35)/The Thirteen Books of Euclid&#39;s Elements _ - Euclid.pdf&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;II&quot;</span><span class="p">:</span> <span class="s2">&quot;The Thirteen Books of Euclid&#39;s Elements _ Volume II _ Second Edition (36)/The Thirteen Books of Euclid&#39;s Elements _ - Euclid.pdf&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;III&quot;</span><span class="p">:</span> <span class="s2">&quot;The Thirteen Books of Euclid&#39;s Elements _ Volume III _ Second Edition (37)/The Thirteen Books of Euclid&#39;s Elements _ - Euclid.pdf&quot;</span>
+<span class="p">}</span></div>
+
+</pre></div>
+      </div>
+      <footer>
+
+
+        <nav class="context">
+          <div class="prev">
+          </div>
+          <div class="next">
+          </div>
+        </nav></footer>
+    </article>
+
+  </main>
+
+<div class="asides">
+    <aside>
+        <h3>Search</h3>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+    </aside>
+    
+    
+
+<aside class="aside-tags">
+    <h3>Tags</h3>
+    <ul>
+        
+        <li><a href="../../../tags/circle.html">circle</a></li>
+        
+        <li><a href="../../../tags/line.html">line</a></li>
+        
+        <li><a href="../../../tags/triangle.html">triangle</a></li>
+        
+    </ul>
+</aside>
+
+    
+
+<aside class="aside-categories">
+    <h3>Categories</h3>
+    <ul>
+        
+        <li><a href="../../../categories/bisect.html">bisect</a></li>
+        
+        <li><a href="../../../categories/construct.html">construct</a></li>
+        
+        <li><a href="../../../categories/describe.html">describe</a></li>
+        
+    </ul>
+</aside>
+
+    
+
+<aside class="aside-types">
+    <h3>Types</h3>
+    <ul>
+        
+        <li><a href="../../../types/book.html">book</a></li>
+        
+        <li><a href="../../../types/cn.html">cn</a></li>
+        
+        <li><a href="../../../types/def.html">def</a></li>
+        
+        <li><a href="../../../types/post.html">post</a></li>
+        
+        <li><a href="../../../types/prop.html">prop</a></li>
+        
+    </ul>
+</aside>
+
+</div>
+<footer>
+    <div class="footer-nav">
+    <ul>
+        <li><a href="../../../glossary.html">glossary</a></li>
+        <li><a href="../../../todos.html">todos</a></li>
+        <li><a href="../../../changelog.html">changelog</a></li>
+    </ul>
+</div>
+    <hr/>
+    <div role="contentinfo">
+        <p>
+                &copy; Copyright .
+        </p>
+    </div>
+</footer>
+
+  <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../../_static/documentation_options.js?v=5929fcd5"></script>
+  <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+  <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+
+
+</body>
+</html>

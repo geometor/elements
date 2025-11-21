@@ -1,0 +1,426 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>elements.ingest.cropping &mdash; Project name not set  documentation</title>
+  <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../../_static/css/styles.css?v=a3216404" />
+  <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=4ae1632d" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="../../../index.html">
+        <img src="../../../_static/logo.png" class="logo" alt="Logo"/>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">elements</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../../mission/index.html"  >mission</a>
+        </li>
+        <li>
+          <a href="../../../usage.html"  >usage</a>
+        </li>
+        <li>
+          <a href="../../../elements2/index.html"  >Elements 2.0</a>
+        </li>
+        <li>
+          <a href="../../../modules/index.html"  >modules</a>
+        </li>
+        <li>
+          <a href="../../../log/index.html"  >log</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main>
+
+    <article>
+      <div class="content">
+      <nav class="breadcrumbs">
+        <span><a href="../../../index.html">Home</a></span>
+          <span>/</span>
+        <span><a href="../../index.html">Module code</a></span>
+        <span>/</span>
+        <span>elements.ingest.cropping</span>
+      </nav>
+        <nav class="context">
+          <div class="prev">
+          </div>
+          <div class="next">
+          </div>
+        </nav>
+          <h1>Source code for elements.ingest.cropping</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">PIL</span><span class="w"> </span><span class="kn">import</span> <span class="n">Image</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">geometor.elements.ingest.config</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+    <span class="n">PROPOSITION_INDEX_PATH</span><span class="p">,</span> 
+    <span class="n">EXTRACTED_DIR</span><span class="p">,</span>
+    <span class="n">RESOURCES_DIR</span><span class="p">,</span>
+    <span class="n">VOLUMES</span><span class="p">,</span>
+    <span class="n">PAGE_WIDTH</span><span class="p">,</span>
+    <span class="n">PAGE_HEADER_END</span><span class="p">,</span>
+    <span class="n">PAGE_FOOTER_START</span><span class="p">,</span>
+    <span class="n">CROP_WIDTH</span>
+<span class="p">)</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">geometor.elements.ingest.utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">load_json</span>
+
+<div class="viewcode-block" id="CROPPED_DIR">
+<a class="viewcode-back" href="../../../modules/api/elements/ingest/cropping/index.html#elements.ingest.cropping.CROPPED_DIR">[docs]</a>
+<span class="n">CROPPED_DIR</span> <span class="o">=</span> <span class="n">EXTRACTED_DIR</span> <span class="o">/</span> <span class="s2">&quot;cropped&quot;</span></div>
+
+<div class="viewcode-block" id="GRAPHICS_DIR">
+<a class="viewcode-back" href="../../../modules/api/elements/ingest/cropping/index.html#elements.ingest.cropping.GRAPHICS_DIR">[docs]</a>
+<span class="n">GRAPHICS_DIR</span> <span class="o">=</span> <span class="n">EXTRACTED_DIR</span> <span class="o">/</span> <span class="s2">&quot;graphics&quot;</span></div>
+
+
+<div class="viewcode-block" id="ensure_dir">
+<a class="viewcode-back" href="../../../modules/api/elements/ingest/cropping/index.html#elements.ingest.cropping.ensure_dir">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">ensure_dir</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+        <span class="n">path</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="calculate_crop_box">
+<a class="viewcode-back" href="../../../modules/api/elements/ingest/cropping/index.html#elements.ingest.cropping.calculate_crop_box">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">calculate_crop_box</span><span class="p">(</span><span class="n">img_height</span><span class="p">,</span> <span class="n">total_lines</span><span class="p">,</span> <span class="n">start_line</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">end_line</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Calculates the crop box based on line indices.</span>
+<span class="sd">    Assumes linear distribution of lines within the text area.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># The active text area on the page</span>
+    <span class="n">text_area_height</span> <span class="o">=</span> <span class="n">PAGE_FOOTER_START</span> <span class="o">-</span> <span class="n">PAGE_HEADER_END</span>
+    
+    <span class="k">if</span> <span class="n">total_lines</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="c1"># Should not happen</span>
+
+    <span class="n">px_per_line</span> <span class="o">=</span> <span class="n">text_area_height</span> <span class="o">/</span> <span class="n">total_lines</span>
+    
+    <span class="c1"># Calculate top Y</span>
+    <span class="k">if</span> <span class="n">start_line</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="c1"># We add some padding (e.g., 1-2 lines) above the start line to be safe</span>
+        <span class="c1"># But strictly, start_line * px_per_line is the distance from top of text area</span>
+        <span class="n">top_offset</span> <span class="o">=</span> <span class="p">(</span><span class="n">start_line</span> <span class="o">*</span> <span class="n">px_per_line</span><span class="p">)</span>
+        <span class="c1"># Adjust relative to page</span>
+        <span class="n">top_y</span> <span class="o">=</span> <span class="n">PAGE_HEADER_END</span> <span class="o">+</span> <span class="n">top_offset</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">top_y</span> <span class="o">=</span> <span class="n">PAGE_HEADER_END</span>
+        
+    <span class="c1"># Calculate bottom Y</span>
+    <span class="k">if</span> <span class="n">end_line</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="c1"># end_line is the index of the last line. </span>
+        <span class="c1"># So we want to include it.</span>
+        <span class="n">bottom_offset</span> <span class="o">=</span> <span class="p">((</span><span class="n">end_line</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="n">px_per_line</span><span class="p">)</span>
+        <span class="n">bottom_y</span> <span class="o">=</span> <span class="n">PAGE_HEADER_END</span> <span class="o">+</span> <span class="n">bottom_offset</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">bottom_y</span> <span class="o">=</span> <span class="n">PAGE_FOOTER_START</span>
+
+    <span class="c1"># Centered horizontal crop</span>
+    <span class="n">left_x</span> <span class="o">=</span> <span class="p">(</span><span class="n">PAGE_WIDTH</span> <span class="o">-</span> <span class="n">CROP_WIDTH</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>
+    <span class="n">right_x</span> <span class="o">=</span> <span class="n">left_x</span> <span class="o">+</span> <span class="n">CROP_WIDTH</span>
+    
+    <span class="c1"># Ensure bounds</span>
+    <span class="n">top_y</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">top_y</span><span class="p">)</span>
+    <span class="n">bottom_y</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">img_height</span><span class="p">,</span> <span class="n">bottom_y</span><span class="p">)</span>
+    
+    <span class="c1"># Add a small padding/margin if we calculated dynamic coords</span>
+    <span class="c1"># (Only if not hitting the hard header/footer limits)</span>
+    <span class="k">if</span> <span class="n">start_line</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">top_y</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">PAGE_HEADER_END</span><span class="p">,</span> <span class="n">top_y</span> <span class="o">-</span> <span class="mi">10</span><span class="p">)</span> 
+    <span class="k">if</span> <span class="n">end_line</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">bottom_y</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">PAGE_FOOTER_START</span><span class="p">,</span> <span class="n">bottom_y</span> <span class="o">+</span> <span class="mi">10</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="p">(</span><span class="n">left_x</span><span class="p">,</span> <span class="n">top_y</span><span class="p">,</span> <span class="n">right_x</span><span class="p">,</span> <span class="n">bottom_y</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="process_propositions">
+<a class="viewcode-back" href="../../../modules/api/elements/ingest/cropping/index.html#elements.ingest.cropping.process_propositions">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">process_propositions</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Automated cropping of propositions based on analysis data.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">propositions</span> <span class="o">=</span> <span class="n">load_json</span><span class="p">(</span><span class="n">PROPOSITION_INDEX_PATH</span><span class="p">)</span>
+    
+    <span class="c1"># Load manual instructions ONLY for graphics for now</span>
+    <span class="n">manual_instructions_path</span> <span class="o">=</span> <span class="n">RESOURCES_DIR</span> <span class="o">/</span> <span class="s2">&quot;heath_manual&quot;</span> <span class="o">/</span> <span class="s2">&quot;cropping_instructions.json&quot;</span>
+    <span class="n">manual_instructions</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">if</span> <span class="n">manual_instructions_path</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+        <span class="n">manual_instructions</span> <span class="o">=</span> <span class="n">load_json</span><span class="p">(</span><span class="n">manual_instructions_path</span><span class="p">)</span>
+    
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">propositions</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Error loading proposition index.&quot;</span><span class="p">)</span>
+        <span class="k">return</span>
+
+    <span class="c1"># Create a lookup map for page images: { &quot;volume_I_255&quot;: &quot;path/to/image.png&quot; }</span>
+    <span class="c1"># Paths will be relative to the volume directory</span>
+    <span class="n">page_lookup</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">for</span> <span class="n">vol_key</span> <span class="ow">in</span> <span class="n">VOLUMES</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+        <span class="n">manifest_path</span> <span class="o">=</span> <span class="n">EXTRACTED_DIR</span> <span class="o">/</span> <span class="sa">f</span><span class="s2">&quot;volume_</span><span class="si">{</span><span class="n">vol_key</span><span class="si">}</span><span class="s2">&quot;</span> <span class="o">/</span> <span class="s2">&quot;pages.json&quot;</span>
+        <span class="n">manifest</span> <span class="o">=</span> <span class="n">load_json</span><span class="p">(</span><span class="n">manifest_path</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">manifest</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Warning: No manifest found for </span><span class="si">{</span><span class="n">vol_key</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">continue</span>
+            
+        <span class="k">for</span> <span class="n">page_info</span> <span class="ow">in</span> <span class="n">manifest</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;pages&quot;</span><span class="p">,</span> <span class="p">[]):</span>
+            <span class="n">p_num</span> <span class="o">=</span> <span class="n">page_info</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;page_num&quot;</span><span class="p">)</span>
+            <span class="c1"># Store relative path from EXTRACTED_DIR / volume_X</span>
+            <span class="c1"># e.g. &quot;book_i/0001.png&quot;</span>
+            <span class="c1"># Key format: volume_I_255</span>
+            <span class="n">page_lookup</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;volume_</span><span class="si">{</span><span class="n">vol_key</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">p_num</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">page_info</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;image&quot;</span><span class="p">)</span>
+
+    <span class="n">ensure_dir</span><span class="p">(</span><span class="n">CROPPED_DIR</span><span class="p">)</span>
+    <span class="n">ensure_dir</span><span class="p">(</span><span class="n">GRAPHICS_DIR</span><span class="p">)</span>
+    
+    <span class="c1"># Helper to extract Roman numeral from book string &quot;book_i&quot;, &quot;book_ii&quot;</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">get_book_numeral</span><span class="p">(</span><span class="n">book_str</span><span class="p">):</span>
+        <span class="c1"># Assumes format &quot;book_x&quot; where x is roman numeral or word</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">book_str</span><span class="p">:</span> <span class="k">return</span> <span class="s2">&quot;I&quot;</span> <span class="c1"># Fallback</span>
+        <span class="n">parts</span> <span class="o">=</span> <span class="n">book_str</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">parts</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">parts</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+        <span class="k">return</span> <span class="s2">&quot;I&quot;</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Processing </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">propositions</span><span class="p">)</span><span class="si">}</span><span class="s2"> propositions...&quot;</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">prop</span> <span class="ow">in</span> <span class="n">propositions</span><span class="p">:</span>
+        <span class="n">vol</span> <span class="o">=</span> <span class="n">prop</span><span class="p">[</span><span class="s1">&#39;volume&#39;</span><span class="p">]</span>
+        <span class="n">book_slug</span> <span class="o">=</span> <span class="n">prop</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;book&#39;</span><span class="p">,</span> <span class="s1">&#39;book_i&#39;</span><span class="p">)</span>
+        <span class="n">book_numeral</span> <span class="o">=</span> <span class="n">get_book_numeral</span><span class="p">(</span><span class="n">book_slug</span><span class="p">)</span>
+        
+        <span class="n">label</span> <span class="o">=</span> <span class="n">prop</span><span class="p">[</span><span class="s1">&#39;label&#39;</span><span class="p">]</span>
+        <span class="n">normalized_label</span> <span class="o">=</span> <span class="s2">&quot;1&quot;</span> <span class="k">if</span> <span class="n">label</span> <span class="o">==</span> <span class="s2">&quot;I&quot;</span> <span class="k">else</span> <span class="n">label</span>
+        
+        <span class="c1"># Key format: BOOK.PROP (e.g. I.1, II.5)</span>
+        <span class="c1"># This is used for the output filename</span>
+        <span class="n">prop_key</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">book_numeral</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">normalized_label</span><span class="si">}</span><span class="s2">&quot;</span>
+        
+        <span class="c1"># Determine pages</span>
+        <span class="n">start_page</span> <span class="o">=</span> <span class="n">prop</span><span class="p">[</span><span class="s1">&#39;start_page&#39;</span><span class="p">]</span>
+        <span class="n">end_page</span> <span class="o">=</span> <span class="n">prop</span><span class="p">[</span><span class="s1">&#39;end_page&#39;</span><span class="p">]</span>
+        
+        <span class="k">if</span> <span class="n">end_page</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="c1"># Proposition might be incomplete or single page at end of book</span>
+            <span class="n">page_range</span> <span class="o">=</span> <span class="p">[</span><span class="n">start_page</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">page_range</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">start_page</span><span class="p">,</span> <span class="n">end_page</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
+            
+        <span class="n">cropped_images</span> <span class="o">=</span> <span class="p">[]</span>
+        
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">page_num</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">page_range</span><span class="p">):</span>
+            <span class="c1"># Lookup image using Volume (physical location)</span>
+            <span class="c1"># Key format: volume_I_255</span>
+            <span class="n">vol_key</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;volume_</span><span class="si">{</span><span class="n">vol</span><span class="si">}</span><span class="s2">&quot;</span>
+            <span class="n">lookup_key</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">vol_key</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">page_num</span><span class="si">}</span><span class="s2">&quot;</span>
+            <span class="n">rel_img_path</span> <span class="o">=</span> <span class="n">page_lookup</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">lookup_key</span><span class="p">)</span>
+            
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">rel_img_path</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Missing image for </span><span class="si">{</span><span class="n">prop_key</span><span class="si">}</span><span class="s2"> page </span><span class="si">{</span><span class="n">page_num</span><span class="si">}</span><span class="s2"> (key: </span><span class="si">{</span><span class="n">lookup_key</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">)</span>
+                <span class="n">cropped_images</span> <span class="o">=</span> <span class="p">[]</span>
+                <span class="k">break</span>
+                
+            <span class="c1"># EXTRACTED_DIR / volume_X / rel_img_path</span>
+            <span class="n">input_path</span> <span class="o">=</span> <span class="n">EXTRACTED_DIR</span> <span class="o">/</span> <span class="n">vol_key</span> <span class="o">/</span> <span class="n">rel_img_path</span>
+            
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">input_path</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+                 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Image file not found: </span><span class="si">{</span><span class="n">input_path</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                 <span class="n">cropped_images</span> <span class="o">=</span> <span class="p">[]</span>
+                 <span class="k">break</span>
+                 
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">input_path</span><span class="p">)</span>
+                
+                <span class="c1"># Determine start/end lines for this page</span>
+                <span class="n">p_start_line</span> <span class="o">=</span> <span class="mi">0</span>
+                <span class="n">p_end_line</span> <span class="o">=</span> <span class="kc">None</span> <span class="c1"># Means go to footer</span>
+                
+                <span class="c1"># If this is the first page of the prop</span>
+                <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                    <span class="n">p_start_line</span> <span class="o">=</span> <span class="n">prop</span><span class="p">[</span><span class="s1">&#39;start_line_index&#39;</span><span class="p">]</span>
+                    
+                <span class="c1"># If this is the last page of the prop</span>
+                <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">page_range</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="n">prop</span><span class="p">[</span><span class="s1">&#39;end_line_index&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                        <span class="n">p_end_line</span> <span class="o">=</span> <span class="n">prop</span><span class="p">[</span><span class="s1">&#39;end_line_index&#39;</span><span class="p">]</span>
+                
+                <span class="c1"># Total lines on THIS page</span>
+                <span class="n">current_total_lines</span> <span class="o">=</span> <span class="mi">40</span> <span class="c1"># Default fallback</span>
+                
+                <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                    <span class="n">current_total_lines</span> <span class="o">=</span> <span class="n">prop</span><span class="p">[</span><span class="s1">&#39;start_page_total_lines&#39;</span><span class="p">]</span>
+                <span class="k">elif</span> <span class="n">i</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">page_range</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">prop</span><span class="p">[</span><span class="s1">&#39;end_page_total_lines&#39;</span><span class="p">]:</span>
+                    <span class="n">current_total_lines</span> <span class="o">=</span> <span class="n">prop</span><span class="p">[</span><span class="s1">&#39;end_page_total_lines&#39;</span><span class="p">]</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="c1"># Middle page</span>
+                    <span class="k">pass</span>
+
+                <span class="n">box</span> <span class="o">=</span> <span class="n">calculate_crop_box</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">height</span><span class="p">,</span> <span class="n">current_total_lines</span><span class="p">,</span> <span class="n">p_start_line</span><span class="p">,</span> <span class="n">p_end_line</span><span class="p">)</span>
+                
+                <span class="c1"># Validate box</span>
+                <span class="k">if</span> <span class="n">box</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">box</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">or</span> <span class="n">box</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">box</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Invalid crop box </span><span class="si">{</span><span class="n">box</span><span class="si">}</span><span class="s2"> for </span><span class="si">{</span><span class="n">prop_key</span><span class="si">}</span><span class="s2"> page </span><span class="si">{</span><span class="n">page_num</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                    <span class="n">cropped_images</span> <span class="o">=</span> <span class="p">[]</span>
+                    <span class="k">break</span>
+                    
+                <span class="n">cropped_images</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">crop</span><span class="p">(</span><span class="n">box</span><span class="p">))</span>
+                
+            <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Error processing </span><span class="si">{</span><span class="n">prop_key</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="n">cropped_images</span> <span class="o">=</span> <span class="p">[]</span>
+                <span class="k">break</span>
+        
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">cropped_images</span><span class="p">:</span>
+            <span class="k">continue</span>
+            
+        <span class="c1"># Stitch</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">cropped_images</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">total_height</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">height</span> <span class="k">for</span> <span class="n">img</span> <span class="ow">in</span> <span class="n">cropped_images</span><span class="p">)</span>
+            <span class="n">stitched_image</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s1">&#39;RGB&#39;</span><span class="p">,</span> <span class="p">(</span><span class="n">CROP_WIDTH</span><span class="p">,</span> <span class="n">total_height</span><span class="p">),</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">))</span>
+            <span class="n">current_y</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="k">for</span> <span class="n">img</span> <span class="ow">in</span> <span class="n">cropped_images</span><span class="p">:</span>
+                <span class="n">stitched_image</span><span class="o">.</span><span class="n">paste</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">current_y</span><span class="p">))</span>
+                <span class="n">current_y</span> <span class="o">+=</span> <span class="n">img</span><span class="o">.</span><span class="n">height</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">stitched_image</span> <span class="o">=</span> <span class="n">cropped_images</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+            
+        <span class="n">output_filename</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">prop_key</span><span class="si">}</span><span class="s2">.png&quot;</span>
+        <span class="n">stitched_image</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">CROPPED_DIR</span> <span class="o">/</span> <span class="n">output_filename</span><span class="p">)</span>
+        
+        <span class="c1"># Graphic Extraction (Manual Fallback)</span>
+        <span class="c1"># The manual instructions use keys like &quot;I.1&quot;.</span>
+        <span class="c1"># If our prop_key matches, we can try to extract the graphic.</span>
+        <span class="k">if</span> <span class="n">prop_key</span> <span class="ow">in</span> <span class="n">manual_instructions</span><span class="p">:</span>
+             <span class="n">instr</span> <span class="o">=</span> <span class="n">manual_instructions</span><span class="p">[</span><span class="n">prop_key</span><span class="p">]</span>
+             <span class="n">gx</span> <span class="o">=</span> <span class="n">instr</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;graphic_x_offset&quot;</span><span class="p">)</span>
+             <span class="n">gy</span> <span class="o">=</span> <span class="n">instr</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;graphic_y_offset&quot;</span><span class="p">)</span>
+             <span class="n">g_box</span> <span class="o">=</span> <span class="n">instr</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;graphic_crop_box&quot;</span><span class="p">)</span>
+             
+             <span class="k">if</span> <span class="nb">all</span><span class="p">([</span><span class="n">gx</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">,</span> <span class="n">gy</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">,</span> <span class="n">g_box</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">]):</span>
+                 <span class="n">graphic_width</span><span class="p">,</span> <span class="n">graphic_height</span> <span class="o">=</span> <span class="n">g_box</span>
+                 <span class="n">graphic_box</span> <span class="o">=</span> <span class="p">(</span><span class="n">gx</span><span class="p">,</span> <span class="n">gy</span><span class="p">,</span> <span class="n">gx</span> <span class="o">+</span> <span class="n">graphic_width</span><span class="p">,</span> <span class="n">gy</span> <span class="o">+</span> <span class="n">graphic_height</span><span class="p">)</span>
+                 
+                 <span class="k">if</span> <span class="n">graphic_box</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">stitched_image</span><span class="o">.</span><span class="n">width</span> <span class="ow">and</span> <span class="n">graphic_box</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">stitched_image</span><span class="o">.</span><span class="n">height</span><span class="p">:</span>
+                     <span class="n">graphic_img</span> <span class="o">=</span> <span class="n">stitched_image</span><span class="o">.</span><span class="n">crop</span><span class="p">(</span><span class="n">graphic_box</span><span class="p">)</span>
+                     <span class="n">graphic_img</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">GRAPHICS_DIR</span> <span class="o">/</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">prop_key</span><span class="si">}</span><span class="s2">_graphic.png&quot;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="run_cropping">
+<a class="viewcode-back" href="../../../modules/api/elements/ingest/cropping/index.html#elements.ingest.cropping.run_cropping">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">run_cropping</span><span class="p">():</span>
+    <span class="n">process_propositions</span><span class="p">()</span></div>
+
+</pre></div>
+      </div>
+      <footer>
+
+
+        <nav class="context">
+          <div class="prev">
+          </div>
+          <div class="next">
+          </div>
+        </nav></footer>
+    </article>
+
+  </main>
+
+<div class="asides">
+    <aside>
+        <h3>Search</h3>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+    </aside>
+    
+    
+
+<aside class="aside-tags">
+    <h3>Tags</h3>
+    <ul>
+        
+        <li><a href="../../../tags/circle.html">circle</a></li>
+        
+        <li><a href="../../../tags/line.html">line</a></li>
+        
+        <li><a href="../../../tags/triangle.html">triangle</a></li>
+        
+    </ul>
+</aside>
+
+    
+
+<aside class="aside-categories">
+    <h3>Categories</h3>
+    <ul>
+        
+        <li><a href="../../../categories/bisect.html">bisect</a></li>
+        
+        <li><a href="../../../categories/construct.html">construct</a></li>
+        
+        <li><a href="../../../categories/describe.html">describe</a></li>
+        
+    </ul>
+</aside>
+
+    
+
+<aside class="aside-types">
+    <h3>Types</h3>
+    <ul>
+        
+        <li><a href="../../../types/book.html">book</a></li>
+        
+        <li><a href="../../../types/cn.html">cn</a></li>
+        
+        <li><a href="../../../types/def.html">def</a></li>
+        
+        <li><a href="../../../types/post.html">post</a></li>
+        
+        <li><a href="../../../types/prop.html">prop</a></li>
+        
+    </ul>
+</aside>
+
+</div>
+<footer>
+    <div class="footer-nav">
+    <ul>
+        <li><a href="../../../glossary.html">glossary</a></li>
+        <li><a href="../../../todos.html">todos</a></li>
+        <li><a href="../../../changelog.html">changelog</a></li>
+    </ul>
+</div>
+    <hr/>
+    <div role="contentinfo">
+        <p>
+                &copy; Copyright .
+        </p>
+    </div>
+</footer>
+
+  <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../../_static/documentation_options.js?v=5929fcd5"></script>
+  <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+  <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+
+
+</body>
+</html>
