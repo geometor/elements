@@ -47,4 +47,6 @@ tedious, however a reference like "Book3 prop11" or worse "III.11" is useless se
 - `stitch_propositions.py` consumes the per-book indexes to generate stitched proposition images in `resources/heath/propositions/`.
 - `process_book.sh` allows for easy batch processing (scanning and stitching) of a single book by ID (e.g., `I`).
 - Canonical naming for cropped images (e.g., `I.1.png`) is consistently applied.
+- Extracted graphics are now saved in the same directory as cropped propositions (`resources/heath/cropped/`) with the suffix `.graphic.png`.
+- Added safeguards to `scan_propositions.py` and `cropping.py` to prevent accidental overwrites of manual index tweaks.
 - Legacy scripts for image processing have been deprecated or moved.

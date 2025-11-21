@@ -38,7 +38,7 @@ This workflow is divided into two main stages:
 2.  **Refinement Pipeline (`refine.py`)**: This stage performs further analysis and processing on the ingested data.
 
     *   **Analysis (`analysis.py`)**: Scans the extracted text to identify and index propositions, recording their start and end points within pages.
-    *   **Cropping (`cropping.py`)**: Dynamically crops proposition text and extracts geometric diagrams from the high-resolution page images. It can stitch multi-page propositions into single images. Cropped propositions are saved in `resources/heath/cropped/` and extracted graphics in `resources/heath/graphics/`.
+    *   **Cropping (`cropping.py`)**: Dynamically crops proposition text and extracts geometric diagrams from the high-resolution page images. It can stitch multi-page propositions into single images. Cropped propositions and extracted graphics are saved in `resources/heath/cropped/` (e.g., `I.1.png` and `I.1.graphic.png`).
     *   **Metadata Extraction (`metadata_extraction/metadata_extraction.py`)**: Extracts and compiles metadata from the processed content for use in documentation generation.
 
 This modular approach ensures flexibility and maintainability, streamlining the preparation of all materials for use in the GEOMETOR explorer and Sphinx-based documentation.

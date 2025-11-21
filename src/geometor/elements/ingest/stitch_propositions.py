@@ -6,7 +6,6 @@ from PIL import Image
 
 # Configuration
 HEATH_DIR = Path("resources/heath")
-GRAPHICS_DIR = HEATH_DIR / "graphics"
 
 # Constants
 PAGE_WIDTH = 755
@@ -32,7 +31,6 @@ def get_book_slug_from_path(path):
         return None
 
 def stitch_propositions(target_book=None):
-    ensure_dir(GRAPHICS_DIR)
     
     # Find all index files
     index_files = sorted(HEATH_DIR.rglob("volume_*/book_*/propositions/index.json"))
@@ -181,7 +179,7 @@ def stitch_propositions(target_book=None):
                     if gx + gw <= stitched_image.width and gy + gh <= stitched_image.height:
                         graphic_crop = (gx, gy, gx + gw, gy + gh)
                         graphic_img = stitched_image.crop(graphic_crop)
-                        graphic_img.save(GRAPHICS_DIR / f"{prop_id}_graphic.png")
+                        graphic_img.save(CROPPED_DIR / f"{prop_id}.graphic.png")
                     else:
                         pass
 

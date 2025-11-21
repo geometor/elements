@@ -31,9 +31,7 @@ def process_propositions(instructions_file):
 
     # Prepare output directories
     cropped_dir = os.path.join("resources", "cropped")
-    graphics_dir = os.path.join("resources", "graphics")
     os.makedirs(cropped_dir, exist_ok=True)
-    os.makedirs(graphics_dir, exist_ok=True)
 
     for prop_key, prop_data in instructions.items():
         if prop_key == "global_settings":
@@ -109,7 +107,7 @@ def process_propositions(instructions_file):
 
         try:
             graphic_img = stitched_image.crop(graphic_box)
-            graphic_output_path = os.path.join(graphics_dir, f"{prop_key}_graphic.png")
+            graphic_output_path = os.path.join(cropped_dir, f"{prop_key}.graphic.png")
             graphic_img.save(graphic_output_path)
             print(f"Saved extracted graphic to {graphic_output_path}")
         except Exception as e:

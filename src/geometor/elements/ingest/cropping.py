@@ -15,7 +15,6 @@ from geometor.elements.ingest.config import (
 from geometor.elements.ingest.utils import load_json
 
 CROPPED_DIR = EXTRACTED_DIR / "cropped"
-GRAPHICS_DIR = EXTRACTED_DIR / "graphics"
 
 def ensure_dir(path):
     if not path.exists():
@@ -74,6 +73,14 @@ def process_propositions():
     """
     Automated cropping of propositions based on analysis data.
     """
+    print("""
+    ----------------------------------------------------------------------------------------------------
+    WARNING: Running this script may overwrite manual cleanup, QED/QEF markers, and proposition index tweaks.
+    If you are sure you want to proceed, comment out the 'return' statement below this warning.
+    ----------------------------------------------------------------------------------------------------
+    """)
+    return
+
     propositions = load_json(PROPOSITION_INDEX_PATH)
     
     # Load manual instructions ONLY for graphics for now
@@ -104,7 +111,6 @@ def process_propositions():
             page_lookup[f"volume_{vol_key}_{p_num}"] = page_info.get("image")
 
     ensure_dir(CROPPED_DIR)
-    ensure_dir(GRAPHICS_DIR)
     
     # Helper to extract Roman numeral from book string "book_i", "book_ii"
     def get_book_numeral(book_str):
@@ -235,7 +241,7 @@ def process_propositions():
                  
                  if graphic_box[2] <= stitched_image.width and graphic_box[3] <= stitched_image.height:
                      graphic_img = stitched_image.crop(graphic_box)
-                     graphic_img.save(GRAPHICS_DIR / f"{prop_key}_graphic.png")
+                     graphic_img.save(CROPPED_DIR / f"{prop_key}.graphic.png")
 
 def run_cropping():
     process_propositions()

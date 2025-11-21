@@ -1,6 +1,16 @@
 changelog
 =========
 
+0.0.20
+------
+*2025-11-21*
+
+**changed**
+
+.. + Updated `stitch_propositions.py`, `cropping.py`, and `crop_propositions.py` to save extracted graphics to the `cropped` directory (alongside stitched propositions) instead of a separate `graphics` folder.
+.. + Changed the filename suffix for extracted graphics from `_graphic.png` to `.graphic.png` (e.g., `I.1.graphic.png`).
+.. + Added a warning and safeguard return statement to `scan_propositions.py` and `cropping.py` to prevent accidental overwrites of manual work.
+
 0.0.19
 ------
 *2025-11-21*

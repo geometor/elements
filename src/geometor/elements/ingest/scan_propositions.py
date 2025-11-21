@@ -49,6 +49,14 @@ def get_book_and_volume_from_path(file_path):
     return volume_key, book_slug
 
 def scan_propositions(target_book=None):
+    print("""
+    ----------------------------------------------------------------------------------------------------
+    WARNING: Running this script may overwrite manual cleanup, QED/QEF markers, and proposition index tweaks.
+    If you are sure you want to proceed, comment out the 'return' statement below this warning.
+    ----------------------------------------------------------------------------------------------------
+    """)
+    return
+    
     cropping_data = load_json(CROPPING_INSTRUCTIONS)
     
     # We will now organize propositions by book to save individual indexes
