@@ -30,16 +30,16 @@
           <a href="../../../mission/index.html"  >mission</a>
         </li>
         <li>
-          <a href="../../../usage.html"  >usage</a>
-        </li>
-        <li>
           <a href="../../../elements2/index.html"  >Elements 2.0</a>
         </li>
         <li>
-          <a href="../../../modules/index.html"  >modules</a>
+          <a href="../../../usage.html"  >usage</a>
         </li>
         <li>
           <a href="../../../log/index.html"  >log</a>
+        </li>
+        <li>
+          <a href="../../../modules/index.html"  >modules</a>
         </li>
       </ul>
     </nav>
@@ -82,10 +82,6 @@
 <div class="viewcode-block" id="CROPPED_DIR">
 <a class="viewcode-back" href="../../../modules/api/elements/ingest/cropping/index.html#elements.ingest.cropping.CROPPED_DIR">[docs]</a>
 <span class="n">CROPPED_DIR</span> <span class="o">=</span> <span class="n">EXTRACTED_DIR</span> <span class="o">/</span> <span class="s2">&quot;cropped&quot;</span></div>
-
-<div class="viewcode-block" id="GRAPHICS_DIR">
-<a class="viewcode-back" href="../../../modules/api/elements/ingest/cropping/index.html#elements.ingest.cropping.GRAPHICS_DIR">[docs]</a>
-<span class="n">GRAPHICS_DIR</span> <span class="o">=</span> <span class="n">EXTRACTED_DIR</span> <span class="o">/</span> <span class="s2">&quot;graphics&quot;</span></div>
 
 
 <div class="viewcode-block" id="ensure_dir">
@@ -153,6 +149,14 @@
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Automated cropping of propositions based on analysis data.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">    ----------------------------------------------------------------------------------------------------</span>
+<span class="s2">    WARNING: Running this script may overwrite manual cleanup, QED/QEF markers, and proposition index tweaks.</span>
+<span class="s2">    If you are sure you want to proceed, comment out the &#39;return&#39; statement below this warning.</span>
+<span class="s2">    ----------------------------------------------------------------------------------------------------</span>
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+    <span class="k">return</span>
+
     <span class="n">propositions</span> <span class="o">=</span> <span class="n">load_json</span><span class="p">(</span><span class="n">PROPOSITION_INDEX_PATH</span><span class="p">)</span>
     
     <span class="c1"># Load manual instructions ONLY for graphics for now</span>
@@ -183,7 +187,6 @@
             <span class="n">page_lookup</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;volume_</span><span class="si">{</span><span class="n">vol_key</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">p_num</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">page_info</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;image&quot;</span><span class="p">)</span>
 
     <span class="n">ensure_dir</span><span class="p">(</span><span class="n">CROPPED_DIR</span><span class="p">)</span>
-    <span class="n">ensure_dir</span><span class="p">(</span><span class="n">GRAPHICS_DIR</span><span class="p">)</span>
     
     <span class="c1"># Helper to extract Roman numeral from book string &quot;book_i&quot;, &quot;book_ii&quot;</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">get_book_numeral</span><span class="p">(</span><span class="n">book_str</span><span class="p">):</span>
@@ -314,7 +317,7 @@
                  
                  <span class="k">if</span> <span class="n">graphic_box</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">stitched_image</span><span class="o">.</span><span class="n">width</span> <span class="ow">and</span> <span class="n">graphic_box</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">stitched_image</span><span class="o">.</span><span class="n">height</span><span class="p">:</span>
                      <span class="n">graphic_img</span> <span class="o">=</span> <span class="n">stitched_image</span><span class="o">.</span><span class="n">crop</span><span class="p">(</span><span class="n">graphic_box</span><span class="p">)</span>
-                     <span class="n">graphic_img</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">GRAPHICS_DIR</span> <span class="o">/</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">prop_key</span><span class="si">}</span><span class="s2">_graphic.png&quot;</span><span class="p">)</span></div>
+                     <span class="n">graphic_img</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">CROPPED_DIR</span> <span class="o">/</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">prop_key</span><span class="si">}</span><span class="s2">.graphic.png&quot;</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="run_cropping">

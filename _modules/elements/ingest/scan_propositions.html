@@ -30,16 +30,16 @@
           <a href="../../../mission/index.html"  >mission</a>
         </li>
         <li>
-          <a href="../../../usage.html"  >usage</a>
-        </li>
-        <li>
           <a href="../../../elements2/index.html"  >Elements 2.0</a>
         </li>
         <li>
-          <a href="../../../modules/index.html"  >modules</a>
+          <a href="../../../usage.html"  >usage</a>
         </li>
         <li>
           <a href="../../../log/index.html"  >log</a>
+        </li>
+        <li>
+          <a href="../../../modules/index.html"  >modules</a>
         </li>
       </ul>
     </nav>
@@ -143,6 +143,14 @@
 <div class="viewcode-block" id="scan_propositions">
 <a class="viewcode-back" href="../../../modules/api/elements/ingest/scan_propositions/index.html#elements.ingest.scan_propositions.scan_propositions">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">scan_propositions</span><span class="p">(</span><span class="n">target_book</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">    ----------------------------------------------------------------------------------------------------</span>
+<span class="s2">    WARNING: Running this script may overwrite manual cleanup, QED/QEF markers, and proposition index tweaks.</span>
+<span class="s2">    If you are sure you want to proceed, comment out the &#39;return&#39; statement below this warning.</span>
+<span class="s2">    ----------------------------------------------------------------------------------------------------</span>
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+    <span class="k">return</span>
+    
     <span class="n">cropping_data</span> <span class="o">=</span> <span class="n">load_json</span><span class="p">(</span><span class="n">CROPPING_INSTRUCTIONS</span><span class="p">)</span>
     
     <span class="c1"># We will now organize propositions by book to save individual indexes</span>

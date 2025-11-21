@@ -10,7 +10,6 @@ Attributes
 .. autoapisummary::
 
    elements.ingest.stitch_propositions.HEATH_DIR
-   elements.ingest.stitch_propositions.GRAPHICS_DIR
    elements.ingest.stitch_propositions.PAGE_WIDTH
    elements.ingest.stitch_propositions.CROP_WIDTH
    elements.ingest.stitch_propositions.parser
@@ -31,8 +30,6 @@ Module Contents
 ---------------
 
 .. py:data:: HEATH_DIR
-
-.. py:data:: GRAPHICS_DIR
 
 .. py:data:: PAGE_WIDTH
    :value: 755

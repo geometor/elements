@@ -30,16 +30,16 @@
           <a href="../../../mission/index.html"  >mission</a>
         </li>
         <li>
-          <a href="../../../usage.html"  >usage</a>
-        </li>
-        <li>
           <a href="../../../elements2/index.html"  >Elements 2.0</a>
         </li>
         <li>
-          <a href="../../../modules/index.html"  >modules</a>
+          <a href="../../../usage.html"  >usage</a>
         </li>
         <li>
           <a href="../../../log/index.html"  >log</a>
+        </li>
+        <li>
+          <a href="../../../modules/index.html"  >modules</a>
         </li>
       </ul>
     </nav>
@@ -73,10 +73,6 @@
 <div class="viewcode-block" id="HEATH_DIR">
 <a class="viewcode-back" href="../../../modules/api/elements/ingest/stitch_propositions/index.html#elements.ingest.stitch_propositions.HEATH_DIR">[docs]</a>
 <span class="n">HEATH_DIR</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">&quot;resources/heath&quot;</span><span class="p">)</span></div>
-
-<div class="viewcode-block" id="GRAPHICS_DIR">
-<a class="viewcode-back" href="../../../modules/api/elements/ingest/stitch_propositions/index.html#elements.ingest.stitch_propositions.GRAPHICS_DIR">[docs]</a>
-<span class="n">GRAPHICS_DIR</span> <span class="o">=</span> <span class="n">HEATH_DIR</span> <span class="o">/</span> <span class="s2">&quot;graphics&quot;</span></div>
 
 
 <span class="c1"># Constants</span>
@@ -120,7 +116,6 @@
 <div class="viewcode-block" id="stitch_propositions">
 <a class="viewcode-back" href="../../../modules/api/elements/ingest/stitch_propositions/index.html#elements.ingest.stitch_propositions.stitch_propositions">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">stitch_propositions</span><span class="p">(</span><span class="n">target_book</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-    <span class="n">ensure_dir</span><span class="p">(</span><span class="n">GRAPHICS_DIR</span><span class="p">)</span>
     
     <span class="c1"># Find all index files</span>
     <span class="n">index_files</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">HEATH_DIR</span><span class="o">.</span><span class="n">rglob</span><span class="p">(</span><span class="s2">&quot;volume_*/book_*/propositions/index.json&quot;</span><span class="p">))</span>
@@ -269,7 +264,7 @@
                     <span class="k">if</span> <span class="n">gx</span> <span class="o">+</span> <span class="n">gw</span> <span class="o">&lt;=</span> <span class="n">stitched_image</span><span class="o">.</span><span class="n">width</span> <span class="ow">and</span> <span class="n">gy</span> <span class="o">+</span> <span class="n">gh</span> <span class="o">&lt;=</span> <span class="n">stitched_image</span><span class="o">.</span><span class="n">height</span><span class="p">:</span>
                         <span class="n">graphic_crop</span> <span class="o">=</span> <span class="p">(</span><span class="n">gx</span><span class="p">,</span> <span class="n">gy</span><span class="p">,</span> <span class="n">gx</span> <span class="o">+</span> <span class="n">gw</span><span class="p">,</span> <span class="n">gy</span> <span class="o">+</span> <span class="n">gh</span><span class="p">)</span>
                         <span class="n">graphic_img</span> <span class="o">=</span> <span class="n">stitched_image</span><span class="o">.</span><span class="n">crop</span><span class="p">(</span><span class="n">graphic_crop</span><span class="p">)</span>
-                        <span class="n">graphic_img</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">GRAPHICS_DIR</span> <span class="o">/</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">prop_id</span><span class="si">}</span><span class="s2">_graphic.png&quot;</span><span class="p">)</span>
+                        <span class="n">graphic_img</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">CROPPED_DIR</span> <span class="o">/</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">prop_id</span><span class="si">}</span><span class="s2">.graphic.png&quot;</span><span class="p">)</span>
                     <span class="k">else</span><span class="p">:</span>
                         <span class="k">pass</span>
 

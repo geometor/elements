@@ -10,7 +10,6 @@ Attributes
 .. autoapisummary::
 
    elements.ingest.cropping.CROPPED_DIR
-   elements.ingest.cropping.GRAPHICS_DIR
 
 
 Functions
@@ -28,8 +27,6 @@ Module Contents
 ---------------
 
 .. py:data:: CROPPED_DIR
-
-.. py:data:: GRAPHICS_DIR
 
 .. py:function:: ensure_dir(path)
 
