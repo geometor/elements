@@ -43,5 +43,7 @@ tedious, however a reference like "Book3 prop11" or worse "III.11" is useless se
 - This pipeline supports full extraction and organization of text and images for all three volumes of Euclid's Elements.
 - A separate refinement pipeline handles the analysis of propositions, dynamic cropping of images, and graphic extraction.
 - The `proposition_index.json` is now generated and stored within the `resources/heath` directory.
+- `scan_propositions.py` now accurately scans propositions, calculating pixel-based offsets for cropping (respecting header/footer margins).
+- `stitch_propositions.py` generates stitched proposition images in `resources/heath/propositions/` based on the scanned index.
 - Canonical naming for cropped images (e.g., `I.1.png`) is consistently applied.
 - Legacy scripts for image processing have been deprecated or moved.

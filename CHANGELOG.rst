@@ -1,6 +1,17 @@
 changelog
 =========
 
+0.0.18
+------
+*2025-11-21*
+
+**changed**
+
+.. + Standardized Heath resource folder structure (`resources/heath/`).
+.. + Moved JSON index files (`pages.json`, `proposition_index.json`, `toc.json`) into `resources/heath/`.
+.. + Refined `scan_propositions.py` to use pixel-based offsets and correct boundary detection.
+.. + Updated `stitch_propositions.py` to generate stitched images with body-text cropping.
+
 0.0.17
 ------
 *2025-11-20*
