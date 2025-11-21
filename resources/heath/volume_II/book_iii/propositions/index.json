@@ -1,0 +1,1401 @@
+[
+  {
+    "id": "III.1",
+    "volume": "II",
+    "book": "book_iii",
+    "proposition_number": 1,
+    "start_page": 12,
+    "start_line_index": 6,
+    "start_line_text": "PROPOSITION",
+    "end_page": 13,
+    "end_line_index": 18,
+    "status": "closed_by_qed",
+    "pages": [
+      {
+        "page": 12,
+        "file": "resources/heath/volume_II/book_iii/propositions/0012.png",
+        "start_offset_px": 224,
+        "end_offset_px": 85
+      },
+      {
+        "page": 13,
+        "file": "resources/heath/volume_II/book_iii/propositions/0013.png",
+        "start_offset_px": 125,
+        "end_offset_px": 777
+      }
+    ],
+    "graphics": [
+      {
+        "x_offset": 335,
+        "y_offset": 130,
+        "crop_box": [
+          300,
+          200
+        ]
+      }
+    ],
+    "end_line_text": "Q. E. F."
+  },
+  {
+    "id": "III.2",
+    "volume": "II",
+    "book": "book_iii",
+    "proposition_number": 2,
+    "start_page": 14,
+    "start_line_index": 38,
+    "start_line_text": "PROPOSITION",
+    "end_page": 16,
+    "end_line_index": 12,
+    "status": "closed_by_next_prop_start",
+    "pages": [
+      {
+        "page": 14,
+        "file": "resources/heath/volume_II/book_iii/propositions/0014.png",
+        "start_offset_px": 773,
+        "end_offset_px": 85
+      },
+      {
+        "page": 15,
+        "file": "resources/heath/volume_II/book_iii/propositions/0015.png",
+        "start_offset_px": 125,
+        "end_offset_px": 85
+      },
+      {
+        "page": 16,
+        "file": "resources/heath/volume_II/book_iii/propositions/0016.png",
+        "start_offset_px": 125,
+        "end_offset_px": 886
+      }
+    ],
+    "graphics": [
+      {
+        "x_offset": 335,
+        "y_offset": 130,
+        "crop_box": [
+          300,
+          200
+        ]
+      }
+    ],
+    "end_line_text": ""
+  },
+  {
+    "id": "III.3",
+    "volume": "II",
+    "book": "book_iii",
+    "proposition_number": 3,
+    "start_page": 16,
+    "start_line_index": 13,
+    "start_line_text": "PROPOSITION",
+    "end_page": 17,
+    "end_line_index": 23,
+    "status": "closed_by_qed",
+    "pages": [
+      {
+        "page": 16,
+        "file": "resources/heath/volume_II/book_iii/propositions/0016.png",
+        "start_offset_px": 314,
+        "end_offset_px": 85
+      },
+      {
+        "page": 17,
+        "file": "resources/heath/volume_II/book_iii/propositions/0017.png",
+        "start_offset_px": 125,
+        "end_offset_px": 750
+      }
+    ],
+    "graphics": [
+      {
+        "x_offset": 335,
+        "y_offset": 130,
+        "crop_box": [
+          300,
+          200
+        ]
+      }
+    ],
+    "end_line_text": "Q. E. D."
+  },
+  {
+    "id": "III.4",
+    "volume": "II",
+    "book": "book_iii",
+    "proposition_number": 4,
+    "start_page": 17,
+    "start_line_index": 31,
+    "start_line_text": "PROPOSITION",
+    "end_page": 18,
+    "end_line_index": 10,
+    "status": "closed_by_next_prop_start",
+    "pages": [
+      {
+        "page": 17,
+        "file": "resources/heath/volume_II/book_iii/propositions/0017.png",
+        "start_offset_px": 545,
+        "end_offset_px": 85
+      },
+      {
+        "page": 18,
+        "file": "resources/heath/volume_II/book_iii/propositions/0018.png",
+        "start_offset_px": 125,
+        "end_offset_px": 905
+      }
+    ],
+    "graphics": [
+      {
+        "x_offset": 335,
+        "y_offset": 130,
+        "crop_box": [
+          300,
+          200
+        ]
+      }
+    ],
+    "end_line_text": ""
+  },
+  {
+    "id": "III.5",
+    "volume": "II",
+    "book": "book_iii",
+    "proposition_number": 5,
+    "start_page": 18,
+    "start_line_index": 11,
+    "start_line_text": "PROPOSITION",
+    "end_page": 19,
+    "end_line_index": -1,
+    "status": "closed_by_next_prop_start",
+    "pages": [
+      {
+        "page": 18,
+        "file": "resources/heath/volume_II/book_iii/propositions/0018.png",
+        "start_offset_px": 295,
+        "end_offset_px": 85
+      },
+      {
+        "page": 19,
+        "file": "resources/heath/volume_II/book_iii/propositions/0019.png",
+        "start_offset_px": 125,
+        "end_offset_px": 1075
+      }
+    ],
+    "graphics": [
+      {
+        "x_offset": 335,
+        "y_offset": 130,
+        "crop_box": [
+          300,
+          200
+        ]
+      }
+    ],
+    "end_line_text": ""
+  },
+  {
+    "id": "III.6",
+    "volume": "II",
+    "book": "book_iii",
+    "proposition_number": 6,
+    "start_page": 19,
+    "start_line_index": 0,
+    "start_line_text": "PROPOSITION",
+    "end_page": 20,
+    "end_line_index": -1,
+    "status": "closed_by_next_prop_start",
+    "pages": [
+      {
+        "page": 19,
+        "file": "resources/heath/volume_II/book_iii/propositions/0019.png",
+        "start_offset_px": 125,
+        "end_offset_px": 85
+      },
+      {
+        "page": 20,
+        "file": "resources/heath/volume_II/book_iii/propositions/0020.png",
+        "start_offset_px": 125,
+        "end_offset_px": 1075
+      }
+    ],
+    "graphics": [
+      {
+        "x_offset": 335,
+        "y_offset": 130,
+        "crop_box": [
+          300,
+          200
+        ]
+      }
+    ],
+    "end_line_text": ""
+  },
+  {
+    "id": "III.7",
+    "volume": "II",
+    "book": "book_iii",
+    "proposition_number": 7,
+    "start_page": 20,
+    "start_line_index": 0,
+    "start_line_text": "PROPOSITION",
+    "end_page": 21,
+    "end_line_index": 26,
+    "status": "closed_by_qed",
+    "pages": [
+      {
+        "page": 20,
+        "file": "resources/heath/volume_II/book_iii/propositions/0020.png",
+        "start_offset_px": 125,
+        "end_offset_px": 85
+      },
+      {
+        "page": 21,
+        "file": "resources/heath/volume_II/book_iii/propositions/0021.png",
+        "start_offset_px": 125,
+        "end_offset_px": 615
+      }
+    ],
+    "graphics": [
+      {
+        "x_offset": 335,
+        "y_offset": 130,
+        "crop_box": [
+          300,
+          200
+        ]
+      }
+    ],
+    "end_line_text": "Q. E. D."
+  },
+  {
+    "id": "III.8",
+    "volume": "II",
+    "book": "book_iii",
+    "proposition_number": 8,
+    "start_page": 23,
+    "start_line_index": 66,
+    "start_line_text": "PROPOSITION",
+    "end_page": 25,
+    "end_line_index": 66,
+    "status": "closed_by_qed",
+    "pages": [
+      {
+        "page": 23,
+        "file": "resources/heath/volume_II/book_iii/propositions/0023.png",
+        "start_offset_px": 973,
+        "end_offset_px": 85
+      },
+      {
+        "page": 24,
+        "file": "resources/heath/volume_II/book_iii/propositions/0024.png",
+        "start_offset_px": 125,
+        "end_offset_px": 85
+      },
+      {
+        "page": 25,
+        "file": "resources/heath/volume_II/book_iii/propositions/0025.png",
+        "start_offset_px": 125,
+        "end_offset_px": 100
+      }
+    ],
+    "graphics": [
+      {
+        "x_offset": 335,
+        "y_offset": 130,
+        "crop_box": [
+          300,
+          200
+        ]
+      }
+    ],
+    "end_line_text": "Q. E. D."
+  },
+  {
+    "id": "III.9",
+    "volume": "II",
+    "book": "book_iii",
+    "proposition_number": 9,
+    "start_page": 27,
+    "start_line_index": 13,
+    "start_line_text": "PROPOSITION",
+    "end_page": 28,
+    "end_line_index": 18,
+    "status": "closed_by_qed",
+    "pages": [
+      {
+        "page": 27,
+        "file": "resources/heath/volume_II/book_iii/propositions/0027.png",
+        "start_offset_px": 317,
+        "end_offset_px": 85
+      },
+      {
+        "page": 28,
+        "file": "resources/heath/volume_II/book_iii/propositions/0028.png",
+        "start_offset_px": 125,
+        "end_offset_px": 885
+      }
+    ],
+    "graphics": [
+      {
+        "x_offset": 335,
+        "y_offset": 130,
+        "crop_box": [
+          300,
+          200
+        ]
+      }
+    ],
+    "end_line_text": "Q. E. D."
+  },
+  {
+    "id": "III.10",
+    "volume": "II",
+    "book": "book_iii",
+    "proposition_number": 10,
+    "start_page": 29,
+    "start_line_index": 0,
+    "start_line_text": "PROPOSITION",
+    "end_page": 29,
+    "end_line_index": 42,
+    "status": "closed_by_qed",
+    "pages": [
+      {
+        "page": 29,
+        "file": "resources/heath/volume_II/book_iii/propositions/0029.png",
+        "start_offset_px": 125,
+        "end_offset_px": 459
+      }
+    ],
+    "graphics": [
+      {
+        "x_offset": 335,
+        "y_offset": 130,
+        "crop_box": [
+          300,
+          200
+        ]
+      }
+    ],
+    "end_line_text": "Q. E. D."
+  },
+  {
+    "id": "III.11",
+    "volume": "II",
+    "book": "book_iii",
+    "proposition_number": 11,
+    "start_page": 30,
+    "start_line_index": 63,
+    "start_line_text": "PROPOSITION",
+    "end_page": 31,
+    "end_line_index": 8,
+    "status": "closed_by_qed",
+    "pages": [
+      {
+        "page": 30,
+        "file": "resources/heath/volume_II/book_iii/propositions/0030.png",
+        "start_offset_px": 795,
+        "end_offset_px": 85
+      },
+      {
+        "page": 31,
+        "file": "resources/heath/volume_II/book_iii/propositions/0031.png",
+        "start_offset_px": 125,
+        "end_offset_px": 929
+      }
+    ],
+    "graphics": [
+      {
+        "x_offset": 335,
+        "y_offset": 130,
+        "crop_box": [
+          300,
+          200
+        ]
+      }
+    ],
+    "end_line_text": "Q. E. D."
+  },
+  {
+    "id": "III.12",
+    "volume": "II",
+    "book": "book_iii",
+    "proposition_number": 12,
+    "start_page": 33,
+    "start_line_index": 49,
+    "start_line_text": "PROPOSITION",
+    "end_page": 34,
+    "end_line_index": 35,
+    "status": "closed_by_qed",
+    "pages": [
+      {
+        "page": 33,
+        "file": "resources/heath/volume_II/book_iii/propositions/0033.png",
+        "start_offset_px": 907,
+        "end_offset_px": 85
+      },
+      {
+        "page": 34,
+        "file": "resources/heath/volume_II/book_iii/propositions/0034.png",
+        "start_offset_px": 125,
+        "end_offset_px": 613
+      }
+    ],
+    "graphics": [
+      {
+        "x_offset": 335,
+        "y_offset": 130,
+        "crop_box": [
+          300,
+          200
+        ]
+      }
+    ],
+    "end_line_text": "Q. E. D."
+  },
+  {
+    "id": "III.13",
+    "volume": "II",
+    "book": "book_iii",
+    "proposition_number": 13,
+    "start_page": 38,
+    "start_line_index": 45,
+    "start_line_text": "PROPOSITION",
+    "end_page": 39,
+    "end_line_index": 36,
+    "status": "closed_by_qed",
+    "pages": [
+      {
+        "page": 38,
+        "file": "resources/heath/volume_II/book_iii/propositions/0038.png",
+        "start_offset_px": 780,
+        "end_offset_px": 85
+      },
+      {
+        "page": 39,
+        "file": "resources/heath/volume_II/book_iii/propositions/0039.png",
+        "start_offset_px": 125,
+        "end_offset_px": 485
+      }
+    ],
+    "graphics": [
+      {
+        "x_offset": 335,
+        "y_offset": 130,
+        "crop_box": [
+          300,
+          200
+        ]
+      }
+    ],
+    "end_line_text": "Q. E. D."
+  },
+  {
+    "id": "III.14",
+    "volume": "II",
+    "book": "book_iii",
+    "proposition_number": 14,
+    "start_page": 40,
+    "start_line_index": 41,
+    "start_line_text": "PROPOSITION",
+    "end_page": 42,
+    "end_line_index": 29,
+    "status": "closed_by_next_prop_start",
+    "pages": [
+      {
+        "page": 40,
+        "file": "resources/heath/volume_II/book_iii/propositions/0040.png",
+        "start_offset_px": 812,
+        "end_offset_px": 85
+      },
+      {
+        "page": 41,
+        "file": "resources/heath/volume_II/book_iii/propositions/0041.png",
+        "start_offset_px": 125,
+        "end_offset_px": 85
+      },
+      {
+        "page": 42,
+        "file": "resources/heath/volume_II/book_iii/propositions/0042.png",
+        "start_offset_px": 125,
+        "end_offset_px": 685
+      }
+    ],
+    "graphics": [
+      {
+        "x_offset": 335,
+        "y_offset": 130,
+        "crop_box": [
+          300,
+          200
+        ]
+      }
+    ],
+    "end_line_text": ""
+  },
+  {
+    "id": "III.15",
+    "volume": "II",
+    "book": "book_iii",
+    "proposition_number": 15,
+    "start_page": 42,
+    "start_line_index": 30,
+    "start_line_text": "PROPOSITION",
+    "end_page": 43,
+    "end_line_index": 39,
+    "status": "closed_by_qed",
+    "pages": [
+      {
+        "page": 42,
+        "file": "resources/heath/volume_II/book_iii/propositions/0042.png",
+        "start_offset_px": 515,
+        "end_offset_px": 85
+      },
+      {
+        "page": 43,
+        "file": "resources/heath/volume_II/book_iii/propositions/0043.png",
+        "start_offset_px": 125,
+        "end_offset_px": 625
+      }
+    ],
+    "graphics": [
+      {
+        "x_offset": 335,
+        "y_offset": 130,
+        "crop_box": [
+          300,
+          200
+        ]
+      }
+    ],
+    "end_line_text": "Q. E. D."
+  },
+  {
+    "id": "III.16",
+    "volume": "II",
+    "book": "book_iii",
+    "proposition_number": 16,
+    "start_page": 43,
+    "start_line_index": 68,
+    "start_line_text": "PROPOSITION",
+    "end_page": 45,
+    "end_line_index": 29,
+    "status": "closed_by_qed",
+    "pages": [
+      {
+        "page": 43,
+        "file": "resources/heath/volume_II/book_iii/propositions/0043.png",
+        "start_offset_px": 890,
+        "end_offset_px": 85
+      },
+      {
+        "page": 44,
+        "file": "resources/heath/volume_II/book_iii/propositions/0044.png",
+        "start_offset_px": 125,
+        "end_offset_px": 85
+      },
+      {
+        "page": 45,
+        "file": "resources/heath/volume_II/book_iii/propositions/0045.png",
+        "start_offset_px": 125,
+        "end_offset_px": 604
+      }
+    ],
+    "graphics": [
+      {
+        "x_offset": 335,
+        "y_offset": 130,
+        "crop_box": [
+          300,
+          200
+        ]
+      }
+    ],
+    "end_line_text": "Q. E. D."
+  },
+  {
+    "id": "III.17",
+    "volume": "II",
+    "book": "book_iii",
+    "proposition_number": 17,
+    "start_page": 49,
+    "start_line_index": 6,
+    "start_line_text": "PROPOSITION",
+    "end_page": 50,
+    "end_line_index": 12,
+    "status": "closed_by_next_prop_start",
+    "pages": [
+      {
+        "page": 49,
+        "file": "resources/heath/volume_II/book_iii/propositions/0049.png",
+        "start_offset_px": 248,
+        "end_offset_px": 85
+      },
+      {
+        "page": 50,
+        "file": "resources/heath/volume_II/book_iii/propositions/0050.png",
+        "start_offset_px": 125,
+        "end_offset_px": 850
+      }
+    ],
+    "graphics": [
+      {
+        "x_offset": 335,
+        "y_offset": 130,
+        "crop_box": [
+          300,
+          200
+        ]
+      }
+    ],
+    "end_line_text": ""
+  },
+  {
+    "id": "III.18",
+    "volume": "II",
+    "book": "book_iii",
+    "proposition_number": 18,
+    "start_page": 50,
+    "start_line_index": 13,
+    "start_line_text": "PROPOSITION",
+    "end_page": 51,
+    "end_line_index": 14,
+    "status": "closed_by_next_prop_start",
+    "pages": [
+      {
+        "page": 50,
+        "file": "resources/heath/volume_II/book_iii/propositions/0050.png",
+        "start_offset_px": 350,
+        "end_offset_px": 85
+      },
+      {
+        "page": 51,
+        "file": "resources/heath/volume_II/book_iii/propositions/0051.png",
+        "start_offset_px": 125,
+        "end_offset_px": 828
+      }
+    ],
+    "graphics": [
+      {
+        "x_offset": 335,
+        "y_offset": 130,
+        "crop_box": [
+          300,
+          200
+        ]
+      }
+    ],
+    "end_line_text": ""
+  },
+  {
+    "id": "III.19",
+    "volume": "II",
+    "book": "book_iii",
+    "proposition_number": 19,
+    "start_page": 51,
+    "start_line_index": 15,
+    "start_line_text": "PROPOSITION",
+    "end_page": 52,
+    "end_line_index": 11,
+    "status": "closed_by_next_prop_start",
+    "pages": [
+      {
+        "page": 51,
+        "file": "resources/heath/volume_II/book_iii/propositions/0051.png",
+        "start_offset_px": 372,
+        "end_offset_px": 85
+      },
+      {
+        "page": 52,
+        "file": "resources/heath/volume_II/book_iii/propositions/0052.png",
+        "start_offset_px": 125,
+        "end_offset_px": 939
+      }
+    ],
+    "graphics": [
+      {
+        "x_offset": 335,
+        "y_offset": 130,
+        "crop_box": [
+          300,
+          200
+        ]
+      }
+    ],
+    "end_line_text": ""
+  },
+  {
+    "id": "III.20",
+    "volume": "II",
+    "book": "book_iii",
+    "proposition_number": 20,
+    "start_page": 52,
+    "start_line_index": 12,
+    "start_line_text": "PROPOSITION",
+    "end_page": 53,
+    "end_line_index": 10,
+    "status": "closed_by_qed",
+    "pages": [
+      {
+        "page": 52,
+        "file": "resources/heath/volume_II/book_iii/propositions/0052.png",
+        "start_offset_px": 261,
+        "end_offset_px": 85
+      },
+      {
+        "page": 53,
+        "file": "resources/heath/volume_II/book_iii/propositions/0053.png",
+        "start_offset_px": 125,
+        "end_offset_px": 900
+      }
+    ],
+    "graphics": [
+      {
+        "x_offset": 335,
+        "y_offset": 130,
+        "crop_box": [
+          300,
+          200
+        ]
+      }
+    ],
+    "end_line_text": "Q. E. D."
+  },
+  {
+    "id": "III.21",
+    "volume": "II",
+    "book": "book_iii",
+    "proposition_number": 21,
+    "start_page": 55,
+    "start_line_index": 20,
+    "start_line_text": "PROPOSITION",
+    "end_page": 55,
+    "end_line_index": 56,
+    "status": "closed_by_qed",
+    "pages": [
+      {
+        "page": 55,
+        "file": "resources/heath/volume_II/book_iii/propositions/0055.png",
+        "start_offset_px": 429,
+        "end_offset_px": 207
+      }
+    ],
+    "graphics": [
+      {
+        "x_offset": 335,
+        "y_offset": 130,
+        "crop_box": [
+          300,
+          200
+        ]
+      }
+    ],
+    "end_line_text": "Q. E. D."
+  },
+  {
+    "id": "III.22",
+    "volume": "II",
+    "book": "book_iii",
+    "proposition_number": 22,
+    "start_page": 57,
+    "start_line_index": 79,
+    "start_line_text": "PROPOSITION",
+    "end_page": 58,
+    "end_line_index": 50,
+    "status": "closed_by_next_prop_start",
+    "pages": [
+      {
+        "page": 57,
+        "file": "resources/heath/volume_II/book_iii/propositions/0057.png",
+        "start_offset_px": 957,
+        "end_offset_px": 85
+      },
+      {
+        "page": 58,
+        "file": "resources/heath/volume_II/book_iii/propositions/0058.png",
+        "start_offset_px": 125,
+        "end_offset_px": 393
+      }
+    ],
+    "graphics": [
+      {
+        "x_offset": 335,
+        "y_offset": 130,
+        "crop_box": [
+          300,
+          200
+        ]
+      }
+    ],
+    "end_line_text": ""
+  },
+  {
+    "id": "III.23",
+    "volume": "II",
+    "book": "book_iii",
+    "proposition_number": 23,
+    "start_page": 58,
+    "start_line_index": 51,
+    "start_line_text": "PROPOSITION",
+    "end_page": 59,
+    "end_line_index": 10,
+    "status": "closed_by_qed",
+    "pages": [
+      {
+        "page": 58,
+        "file": "resources/heath/volume_II/book_iii/propositions/0058.png",
+        "start_offset_px": 807,
+        "end_offset_px": 85
+      },
+      {
+        "page": 59,
+        "file": "resources/heath/volume_II/book_iii/propositions/0059.png",
+        "start_offset_px": 125,
+        "end_offset_px": 913
+      }
+    ],
+    "graphics": [
+      {
+        "x_offset": 335,
+        "y_offset": 130,
+        "crop_box": [
+          300,
+          200
+        ]
+      }
+    ],
+    "end_line_text": "Q. E. D."
+  },
+  {
+    "id": "III.24",
+    "volume": "II",
+    "book": "book_iii",
+    "proposition_number": 24,
+    "start_page": 59,
+    "start_line_index": 53,
+    "start_line_text": "PROPOSITION",
+    "end_page": 60,
+    "end_line_index": 45,
+    "status": "closed_by_next_prop_start",
+    "pages": [
+      {
+        "page": 59,
+        "file": "resources/heath/volume_II/book_iii/propositions/0059.png",
+        "start_offset_px": 908,
+        "end_offset_px": 85
+      },
+      {
+        "page": 60,
+        "file": "resources/heath/volume_II/book_iii/propositions/0060.png",
+        "start_offset_px": 125,
+        "end_offset_px": 341
+      }
+    ],
+    "graphics": [
+      {
+        "x_offset": 335,
+        "y_offset": 130,
+        "crop_box": [
+          300,
+          200
+        ]
+      }
+    ],
+    "end_line_text": ""
+  },
+  {
+    "id": "III.25",
+    "volume": "II",
+    "book": "book_iii",
+    "proposition_number": 25,
+    "start_page": 60,
+    "start_line_index": 46,
+    "start_line_text": "PROPOSITION",
+    "end_page": 62,
+    "end_line_index": 21,
+    "status": "closed_by_qed",
+    "pages": [
+      {
+        "page": 60,
+        "file": "resources/heath/volume_II/book_iii/propositions/0060.png",
+        "start_offset_px": 859,
+        "end_offset_px": 85
+      },
+      {
+        "page": 61,
+        "file": "resources/heath/volume_II/book_iii/propositions/0061.png",
+        "start_offset_px": 125,
+        "end_offset_px": 85
+      },
+      {
+        "page": 62,
+        "file": "resources/heath/volume_II/book_iii/propositions/0062.png",
+        "start_offset_px": 125,
+        "end_offset_px": 789
+      }
+    ],
+    "graphics": [
+      {
+        "x_offset": 335,
+        "y_offset": 130,
+        "crop_box": [
+          300,
+          200
+        ]
+      }
+    ],
+    "end_line_text": "Q. E. F."
+  },
+  {
+    "id": "III.26",
+    "volume": "II",
+    "book": "book_iii",
+    "proposition_number": 26,
+    "start_page": 62,
+    "start_line_index": 68,
+    "start_line_text": "PROPOSITION",
+    "end_page": 63,
+    "end_line_index": 37,
+    "status": "closed_by_qed",
+    "pages": [
+      {
+        "page": 62,
+        "file": "resources/heath/volume_II/book_iii/propositions/0062.png",
+        "start_offset_px": 1010,
+        "end_offset_px": 85
+      },
+      {
+        "page": 63,
+        "file": "resources/heath/volume_II/book_iii/propositions/0063.png",
+        "start_offset_px": 125,
+        "end_offset_px": 338
+      }
+    ],
+    "graphics": [
+      {
+        "x_offset": 335,
+        "y_offset": 130,
+        "crop_box": [
+          300,
+          200
+        ]
+      }
+    ],
+    "end_line_text": "Q. E. D."
+  },
+  {
+    "id": "III.27",
+    "volume": "II",
+    "book": "book_iii",
+    "proposition_number": 27,
+    "start_page": 64,
+    "start_line_index": 13,
+    "start_line_text": "PROPOSITION",
+    "end_page": 65,
+    "end_line_index": 11,
+    "status": "closed_by_qed",
+    "pages": [
+      {
+        "page": 64,
+        "file": "resources/heath/volume_II/book_iii/propositions/0064.png",
+        "start_offset_px": 320,
+        "end_offset_px": 85
+      },
+      {
+        "page": 65,
+        "file": "resources/heath/volume_II/book_iii/propositions/0065.png",
+        "start_offset_px": 125,
+        "end_offset_px": 843
+      }
+    ],
+    "graphics": [
+      {
+        "x_offset": 335,
+        "y_offset": 130,
+        "crop_box": [
+          300,
+          200
+        ]
+      }
+    ],
+    "end_line_text": "Q. E. D."
+  },
+  {
+    "id": "III.28",
+    "volume": "II",
+    "book": "book_iii",
+    "proposition_number": 28,
+    "start_page": 65,
+    "start_line_index": 16,
+    "start_line_text": "PROPOSITION",
+    "end_page": 66,
+    "end_line_index": 13,
+    "status": "closed_by_qed",
+    "pages": [
+      {
+        "page": 65,
+        "file": "resources/heath/volume_II/book_iii/propositions/0065.png",
+        "start_offset_px": 435,
+        "end_offset_px": 85
+      },
+      {
+        "page": 66,
+        "file": "resources/heath/volume_II/book_iii/propositions/0066.png",
+        "start_offset_px": 125,
+        "end_offset_px": 809
+      }
+    ],
+    "graphics": [
+      {
+        "x_offset": 335,
+        "y_offset": 130,
+        "crop_box": [
+          300,
+          200
+        ]
+      }
+    ],
+    "end_line_text": "Q. E. D."
+  },
+  {
+    "id": "III.29",
+    "volume": "II",
+    "book": "book_iii",
+    "proposition_number": 29,
+    "start_page": 66,
+    "start_line_index": 24,
+    "start_line_text": "PROPOSITION",
+    "end_page": 66,
+    "end_line_index": 50,
+    "status": "closed_by_qed",
+    "pages": [
+      {
+        "page": 66,
+        "file": "resources/heath/volume_II/book_iii/propositions/0066.png",
+        "start_offset_px": 581,
+        "end_offset_px": 105
+      }
+    ],
+    "graphics": [
+      {
+        "x_offset": 335,
+        "y_offset": 130,
+        "crop_box": [
+          300,
+          200
+        ]
+      }
+    ],
+    "end_line_text": "Q. E. D."
+  },
+  {
+    "id": "III.30",
+    "volume": "II",
+    "book": "book_iii",
+    "proposition_number": 30,
+    "start_page": 67,
+    "start_line_index": 5,
+    "start_line_text": "PROPOSITION",
+    "end_page": 67,
+    "end_line_index": 51,
+    "status": "closed_by_next_prop_start",
+    "pages": [
+      {
+        "page": 67,
+        "file": "resources/heath/volume_II/book_iii/propositions/0067.png",
+        "start_offset_px": 203,
+        "end_offset_px": 258
+      }
+    ],
+    "graphics": [
+      {
+        "x_offset": 335,
+        "y_offset": 130,
+        "crop_box": [
+          300,
+          200
+        ]
+      }
+    ],
+    "end_line_text": ""
+  },
+  {
+    "id": "III.31",
+    "volume": "II",
+    "book": "book_iii",
+    "proposition_number": 31,
+    "start_page": 67,
+    "start_line_index": 52,
+    "start_line_text": "PROPOSITION",
+    "end_page": 69,
+    "end_line_index": 26,
+    "status": "closed_by_qed",
+    "pages": [
+      {
+        "page": 67,
+        "file": "resources/heath/volume_II/book_iii/propositions/0067.png",
+        "start_offset_px": 942,
+        "end_offset_px": 85
+      },
+      {
+        "page": 68,
+        "file": "resources/heath/volume_II/book_iii/propositions/0068.png",
+        "start_offset_px": 125,
+        "end_offset_px": 85
+      },
+      {
+        "page": 69,
+        "file": "resources/heath/volume_II/book_iii/propositions/0069.png",
+        "start_offset_px": 125,
+        "end_offset_px": 664
+      }
+    ],
+    "graphics": [
+      {
+        "x_offset": 335,
+        "y_offset": 130,
+        "crop_box": [
+          300,
+          200
+        ]
+      }
+    ],
+    "end_line_text": "Q. E. D."
+  },
+  {
+    "id": "III.32",
+    "volume": "II",
+    "book": "book_iii",
+    "proposition_number": 32,
+    "start_page": 71,
+    "start_line_index": 40,
+    "start_line_text": "PROPOSITION",
+    "end_page": 72,
+    "end_line_index": 53,
+    "status": "closed_by_qed",
+    "pages": [
+      {
+        "page": 71,
+        "file": "resources/heath/volume_II/book_iii/propositions/0071.png",
+        "start_offset_px": 832,
+        "end_offset_px": 85
+      },
+      {
+        "page": 72,
+        "file": "resources/heath/volume_II/book_iii/propositions/0072.png",
+        "start_offset_px": 125,
+        "end_offset_px": 213
+      }
+    ],
+    "graphics": [
+      {
+        "x_offset": 335,
+        "y_offset": 130,
+        "crop_box": [
+          300,
+          200
+        ]
+      }
+    ],
+    "end_line_text": "Q. E. D."
+  },
+  {
+    "id": "III.33",
+    "volume": "II",
+    "book": "book_iii",
+    "proposition_number": 33,
+    "start_page": 73,
+    "start_line_index": 48,
+    "start_line_text": "PROPOSITION",
+    "end_page": 76,
+    "end_line_index": 16,
+    "status": "closed_by_qed",
+    "pages": [
+      {
+        "page": 73,
+        "file": "resources/heath/volume_II/book_iii/propositions/0073.png",
+        "start_offset_px": 704,
+        "end_offset_px": 85
+      },
+      {
+        "page": 74,
+        "file": "resources/heath/volume_II/book_iii/propositions/0074.png",
+        "start_offset_px": 125,
+        "end_offset_px": 85
+      },
+      {
+        "page": 75,
+        "file": "resources/heath/volume_II/book_iii/propositions/0075.png",
+        "start_offset_px": 125,
+        "end_offset_px": 85
+      },
+      {
+        "page": 76,
+        "file": "resources/heath/volume_II/book_iii/propositions/0076.png",
+        "start_offset_px": 125,
+        "end_offset_px": 813
+      }
+    ],
+    "graphics": [
+      {
+        "x_offset": 335,
+        "y_offset": 130,
+        "crop_box": [
+          300,
+          200
+        ]
+      }
+    ],
+    "end_line_text": "Q. E. F."
+  },
+  {
+    "id": "III.34",
+    "volume": "II",
+    "book": "book_iii",
+    "proposition_number": 34,
+    "start_page": 76,
+    "start_line_index": 43,
+    "start_line_text": "PROPOSITION",
+    "end_page": 77,
+    "end_line_index": 19,
+    "status": "closed_by_qed",
+    "pages": [
+      {
+        "page": 76,
+        "file": "resources/heath/volume_II/book_iii/propositions/0076.png",
+        "start_offset_px": 790,
+        "end_offset_px": 85
+      },
+      {
+        "page": 77,
+        "file": "resources/heath/volume_II/book_iii/propositions/0077.png",
+        "start_offset_px": 125,
+        "end_offset_px": 740
+      }
+    ],
+    "graphics": [
+      {
+        "x_offset": 335,
+        "y_offset": 130,
+        "crop_box": [
+          300,
+          200
+        ]
+      }
+    ],
+    "end_line_text": "Q. E. F."
+  },
+  {
+    "id": "III.35",
+    "volume": "II",
+    "book": "book_iii",
+    "proposition_number": 35,
+    "start_page": 77,
+    "start_line_index": 24,
+    "start_line_text": "PROPOSITION",
+    "end_page": 78,
+    "end_line_index": 52,
+    "status": "closed_by_qed",
+    "pages": [
+      {
+        "page": 77,
+        "file": "resources/heath/volume_II/book_iii/propositions/0077.png",
+        "start_offset_px": 527,
+        "end_offset_px": 85
+      },
+      {
+        "page": 78,
+        "file": "resources/heath/volume_II/book_iii/propositions/0078.png",
+        "start_offset_px": 125,
+        "end_offset_px": 139
+      }
+    ],
+    "graphics": [
+      {
+        "x_offset": 335,
+        "y_offset": 130,
+        "crop_box": [
+          300,
+          200
+        ]
+      }
+    ],
+    "end_line_text": "Q. E. D."
+  },
+  {
+    "id": "III.36",
+    "volume": "II",
+    "book": "book_iii",
+    "proposition_number": 36,
+    "start_page": 79,
+    "start_line_index": 47,
+    "start_line_text": "PROPOSITION",
+    "end_page": 81,
+    "end_line_index": 30,
+    "status": "closed_by_qed",
+    "pages": [
+      {
+        "page": 79,
+        "file": "resources/heath/volume_II/book_iii/propositions/0079.png",
+        "start_offset_px": 941,
+        "end_offset_px": 85
+      },
+      {
+        "page": 80,
+        "file": "resources/heath/volume_II/book_iii/propositions/0080.png",
+        "start_offset_px": 125,
+        "end_offset_px": 85
+      },
+      {
+        "page": 81,
+        "file": "resources/heath/volume_II/book_iii/propositions/0081.png",
+        "start_offset_px": 125,
+        "end_offset_px": 537
+      }
+    ],
+    "graphics": [
+      {
+        "x_offset": 335,
+        "y_offset": 130,
+        "crop_box": [
+          300,
+          200
+        ]
+      }
+    ],
+    "end_line_text": "Q. E. D."
+  },
+  {
+    "id": "III.37",
+    "volume": "II",
+    "book": "book_iii",
+    "proposition_number": 37,
+    "start_page": 81,
+    "start_line_index": 47,
+    "start_line_text": "PROPOSITION",
+    "end_page": 82,
+    "end_line_index": 60,
+    "status": "closed_by_qed",
+    "pages": [
+      {
+        "page": 81,
+        "file": "resources/heath/volume_II/book_iii/propositions/0081.png",
+        "start_offset_px": 941,
+        "end_offset_px": 85
+      },
+      {
+        "page": 82,
+        "file": "resources/heath/volume_II/book_iii/propositions/0082.png",
+        "start_offset_px": 125,
+        "end_offset_px": 160
+      }
+    ],
+    "graphics": [
+      {
+        "x_offset": 335,
+        "y_offset": 130,
+        "crop_box": [
+          300,
+          200
+        ]
+      }
+    ],
+    "end_line_text": "Q. E. D."
+  }
+]

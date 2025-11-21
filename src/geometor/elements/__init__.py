@@ -7,7 +7,7 @@ tools for modeling and rendering geometric constructions
 __author__ = "geometor"
 __maintainer__ = "geometor"
 __email__ = "github@geometor.com"
-__version__ = "0.0.18"
+__version__ = "0.0.19"
 __licence__ = "MIT"
 
 __all__ = [

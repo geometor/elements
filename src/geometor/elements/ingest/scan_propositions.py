@@ -1,11 +1,11 @@
 import json
 import re
+import argparse
 from pathlib import Path
 
 # Configuration
 HEATH_DIR = Path("resources/heath")
 CROPPING_INSTRUCTIONS = Path("resources/heath_manual/cropping_instructions.json")
-OUTPUT_INDEX = HEATH_DIR / "proposition_index.json"
 
 DEFAULT_PAGE_HEIGHT = 1200
 PAGE_HEADER_END = 125
@@ -48,10 +48,12 @@ def get_book_and_volume_from_path(file_path):
             
     return volume_key, book_slug
 
-def scan_propositions():
+def scan_propositions(target_book=None):
     cropping_data = load_json(CROPPING_INSTRUCTIONS)
     
-    propositions = {} # Keyed by canonical ID
+    # We will now organize propositions by book to save individual indexes
+    # Structure: { (vol_key, book_slug): [prop_list] }
+    propositions_by_book = {}
     book_proposition_counters = {} # To keep track of proposition numbers per book
     
     prop_text_files = sorted(HEATH_DIR.rglob("volume_*/book_*/propositions/*.txt"))
@@ -60,15 +62,32 @@ def scan_propositions():
     for f_path in prop_text_files:
         vol_key, book_slug = get_book_and_volume_from_path(f_path)
         if vol_key and book_slug:
+            # Filter if target_book is specified
+            # Check against book_slug (e.g., "book_i") or mapped Roman (e.g., "I")
+            book_roman = BOOK_MAP.get(book_slug, book_slug)
+            
+            if target_book:
+                # Normalize target book to check against slug or Roman
+                t_book = target_book.lower()
+                if t_book != book_slug and t_book != book_roman.lower():
+                    continue
+
             key = (vol_key, book_slug)
             if key not in files_by_book:
                 files_by_book[key] = []
             files_by_book[key].append(f_path)
             
+    if not files_by_book:
+        print(f"No files found for book: {target_book}")
+        return
+
     for (vol_key, book_slug), files in files_by_book.items():
         book_roman = BOOK_MAP.get(book_slug, book_slug)
         prop_counter = book_proposition_counters.get(book_roman, 0)
         current_prop = None
+        
+        if (vol_key, book_slug) not in propositions_by_book:
+            propositions_by_book[(vol_key, book_slug)] = []
 
         print(f"Scanning {vol_key}/{book_slug}...")
 
@@ -92,37 +111,26 @@ def scan_propositions():
                 line_stripped = line.strip()
                 
                 is_proposition_start = re.match(r'^PROPOSITION\s*$', line_stripped, re.IGNORECASE)
-                is_proposition_end = re.match(r'^Q\. ?E\. ?D\.$|^Q\. ?E\. ?F\.$|^\(Being\) what it was required to do\.$', line_stripped, re.IGNORECASE)
+                is_proposition_end = re.match(r'^Q\.\s*E\.\s*D\.$|^Q\.\s*E\.\s*F\.$|^\(Being\) what it was required to do\.$', line_stripped, re.IGNORECASE)
 
                 if is_proposition_start:
                     # If a new proposition starts, close the previous one first
                     if current_prop and current_prop['status'] == 'open':
-                        # Set end for previous prop to line *before* current proposition starts
                         current_prop['end_page'] = page_num
                         current_prop['end_line_index'] = i - 1
                         current_prop['end_line_text'] = lines[i-1].strip() if i > 0 else ""
                         current_prop['status'] = 'closed_by_next_prop_start'
 
-                        # Calculate end offset for previous prop (margin from bottom)
-                        # End pos from top = Header + (line_idx / total) * Body
-                        # We include the line i-1, so we cut below it.
-                        # cut_y = Header + ((i-1 + 1) / total) * Body = Header + (i / total) * Body
-                        # Actually, let's be precise. i-1 is the index. 
-                        # line_height = BODY / total.
-                        # top of line i-1 = Header + (i-1/total)*Body
-                        # bottom of line i-1 = Header + (i/total)*Body
                         cut_y = int(PAGE_HEADER_END + (i / total_lines) * BODY_HEIGHT) if total_lines > 0 else PAGE_FOOTER_START
                         end_offset_val = DEFAULT_PAGE_HEIGHT - cut_y
 
-                        # Update end offset for the last page
                         if current_prop['pages'] and current_prop['pages'][-1]['page'] == page_num:
                             current_prop['pages'][-1]['end_offset_px'] = end_offset_val
                         else:
-                            # Add the current page as the end page
                             current_prop['pages'].append({
                                 "page": page_num,
                                 "file": str(HEATH_DIR / f"volume_{vol_key}" / book_slug / "propositions" / f"{page_num:04d}.png"),
-                                "start_offset_px": PAGE_HEADER_END, # It's an end page, so start from header end (full top body)
+                                "start_offset_px": PAGE_HEADER_END,
                                 "end_offset_px": end_offset_val
                             })
 
@@ -143,17 +151,16 @@ def scan_propositions():
                         "pages": [], 
                         "graphics": []
                     }
-                    propositions[canonical_id] = current_prop
+                    # Add to current book list instead of global dict
+                    propositions_by_book[(vol_key, book_slug)].append(current_prop)
                     
-                    # Start offset: Top of line i
-                    # top_y = Header + (i/total)*Body
                     start_y = int(PAGE_HEADER_END + (i / total_lines) * BODY_HEIGHT) if total_lines > 0 else PAGE_HEADER_END
                     
                     current_prop['pages'].append({
                         "page": page_num,
                         "file": str(HEATH_DIR / f"volume_{vol_key}" / book_slug / "propositions" / f"{page_num:04d}.png"),
                         "start_offset_px": start_y,
-                        "end_offset_px": DEFAULT_PAGE_HEIGHT - PAGE_FOOTER_START # Default bottom margin (footer)
+                        "end_offset_px": DEFAULT_PAGE_HEIGHT - PAGE_FOOTER_START 
                     })
 
                 elif current_prop and is_proposition_end:
@@ -162,12 +169,9 @@ def scan_propositions():
                     current_prop['end_line_text'] = line_stripped
                     current_prop['status'] = 'closed_by_qed'
                     
-                    # End offset: Bottom of line i
-                    # bottom_y = Header + ((i+1)/total)*Body
                     cut_y = int(PAGE_HEADER_END + ((i + 1) / total_lines) * BODY_HEIGHT) if total_lines > 0 else PAGE_FOOTER_START
                     end_offset_val = DEFAULT_PAGE_HEIGHT - cut_y
 
-                    # Update the end_offset for the last page of this proposition
                     if current_prop['pages'] and current_prop['pages'][-1]['page'] == page_num:
                         current_prop['pages'][-1]['end_offset_px'] = end_offset_val
                     else: 
@@ -177,10 +181,8 @@ def scan_propositions():
                             "start_offset_px": PAGE_HEADER_END,
                             "end_offset_px": end_offset_val
                         })
-                    current_prop = None # Done with this one
+                    current_prop = None 
                 
-            # After processing all lines in a file, if a proposition is still open and this is not its starting page, 
-            # add this page as an intermediate page.
             if current_prop and current_prop['status'] == 'open':
                 if not current_prop['pages'] or current_prop['pages'][-1]['page'] != page_num:
                     if current_prop['start_page'] != page_num:
@@ -191,7 +193,6 @@ def scan_propositions():
                             "end_offset_px": DEFAULT_PAGE_HEIGHT - PAGE_FOOTER_START 
                         })
 
-        # After processing all files in a book, if a proposition is still open...
         if current_prop and current_prop['status'] == 'open':
             last_file_in_book = files[-1]
             last_page_num = int(re.search(r'(\d{4})\.txt$', last_file_in_book.name).group(1))
@@ -202,16 +203,13 @@ def scan_propositions():
             current_prop['end_line_text'] = last_lines[-1].strip() if last_lines else ""
             current_prop['status'] = 'closed_by_end_of_book'
 
-            # End offset for EOF: Bottom of body
             end_offset_val = DEFAULT_PAGE_HEIGHT - PAGE_FOOTER_START
 
-            # Update end offset for the last page
             if current_prop['pages'] and current_prop['pages'][-1]['page'] == last_page_num:
                 current_prop['pages'][-1]['end_offset_px'] = end_offset_val
             else:
                 start_offset_px = PAGE_HEADER_END
                 if current_prop['start_page'] == last_page_num:
-                    # Re-calculate start offset if it was the start page (unlikely to reach here if handled above)
                     start_y = int(PAGE_HEADER_END + (current_prop['start_line_index'] / len(last_lines)) * BODY_HEIGHT) if len(last_lines) > 0 else PAGE_HEADER_END
                     start_offset_px = start_y
 
@@ -224,33 +222,43 @@ def scan_propositions():
         
         book_proposition_counters[book_roman] = prop_counter
     
-    # Final pass to merge cropping data and add placeholders
-    final_propositions_list = []
+    # Final pass to merge cropping data and add placeholders, then save PER BOOK
     PLACEHOLDER_GRAPHIC = {
         "x_offset": 335,
         "y_offset": 130,
         "crop_box": [300, 200]
     }
 
-    for canonical_id in sorted(propositions.keys(), key=lambda x: (propositions[x]['volume'], propositions[x]['book'], propositions[x]['proposition_number'])):
-        prop = propositions[canonical_id]
-        
-        if canonical_id in cropping_data:
-            c_info = cropping_data[canonical_id]
-            prop['graphics'] = [{
-                "x_offset": c_info.get('graphic_x_offset'),
-                "y_offset": c_info.get('graphic_y_offset'),
-                "crop_box": c_info.get('graphic_crop_box')
-            }]
-        else:
-            prop['graphics'] = [PLACEHOLDER_GRAPHIC]
+    for (vol_key, book_slug), props_list in propositions_by_book.items():
+        final_propositions_list = []
+        for prop in props_list:
+            canonical_id = prop['id']
+            if canonical_id in cropping_data:
+                c_info = cropping_data[canonical_id]
+                prop['graphics'] = [{
+                    "x_offset": c_info.get('graphic_x_offset'),
+                    "y_offset": c_info.get('graphic_y_offset'),
+                    "crop_box": c_info.get('graphic_crop_box')
+                }]
+            else:
+                prop['graphics'] = [PLACEHOLDER_GRAPHIC]
+            final_propositions_list.append(prop)
 
-        final_propositions_list.append(prop)
+        # Construct path: resources/heath/volume_X/book_y/propositions/index.json
+        # We need to ensure the directory exists.
+        # Note: scan found .txt files in .../propositions/*.txt, so the directory should exist.
+        book_props_dir = HEATH_DIR / f"volume_{vol_key}" / book_slug / "propositions"
+        book_props_dir.mkdir(parents=True, exist_ok=True)
+        output_index_path = book_props_dir / "index.json"
         
-    with open(OUTPUT_INDEX, 'w') as f:
-        json.dump(final_propositions_list, f, indent=2)
-        
-    print(f"Scanned {len(final_propositions_list)} propositions and generated {OUTPUT_INDEX}")
+        with open(output_index_path, 'w') as f:
+            json.dump(final_propositions_list, f, indent=2)
+            
+        print(f"Generated {output_index_path} with {len(final_propositions_list)} propositions.")
 
 if __name__ == "__main__":
-    scan_propositions()
+    parser = argparse.ArgumentParser(description="Scan propositions from text files.")
+    parser.add_argument("--book", "-b", type=str, help="Specific book to scan (e.g., 'I' or 'book_i'). If omitted, scans all found books.")
+    args = parser.parse_args()
+    
+    scan_propositions(target_book=args.book)

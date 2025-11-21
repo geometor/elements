@@ -1,6 +1,22 @@
 changelog
 =========
 
+0.0.19
+------
+*2025-11-21*
+
+**added**
+
+.. + Added `process_book.sh` helper script for scanning and stitching propositions of a single book.
+.. + Implemented per-book `index.json` generation in `scan_propositions.py` (saved to `resources/heath/volume_X/book_y/propositions/index.json`).
+.. + Added command-line argument `--book` to `scan_propositions.py` and `stitch_propositions.py` to target specific books.
+
+**changed**
+
+.. + Updated `scan_propositions.py` to support scanning individual books and storing indexes locally within the book's directory structure.
+.. + Updated `stitch_propositions.py` to consume per-book `index.json` files and support book-specific processing.
+.. + Refined regex for end-of-proposition detection to handle variations in spacing (e.g., "Q. E . D.").
+
 0.0.18
 ------
 *2025-11-21*

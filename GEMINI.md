@@ -42,8 +42,9 @@ tedious, however a reference like "Book3 prop11" or worse "III.11" is useless se
 - A new, comprehensive, modular ingestion pipeline (`src/geometor/elements/ingest`) has been established to process Heath's Euclid from PDF sources.
 - This pipeline supports full extraction and organization of text and images for all three volumes of Euclid's Elements.
 - A separate refinement pipeline handles the analysis of propositions, dynamic cropping of images, and graphic extraction.
-- The `proposition_index.json` is now generated and stored within the `resources/heath` directory.
-- `scan_propositions.py` now accurately scans propositions, calculating pixel-based offsets for cropping (respecting header/footer margins).
-- `stitch_propositions.py` generates stitched proposition images in `resources/heath/propositions/` based on the scanned index.
+- `scan_propositions.py` generates `index.json` files within each book's `propositions` directory (e.g., `resources/heath/volume_I/book_i/propositions/index.json`), supporting per-book scanning.
+- `scan_propositions.py` accurately scans propositions, calculating pixel-based offsets for cropping (respecting header/footer margins).
+- `stitch_propositions.py` consumes the per-book indexes to generate stitched proposition images in `resources/heath/propositions/`.
+- `process_book.sh` allows for easy batch processing (scanning and stitching) of a single book by ID (e.g., `I`).
 - Canonical naming for cropped images (e.g., `I.1.png`) is consistently applied.
 - Legacy scripts for image processing have been deprecated or moved.
