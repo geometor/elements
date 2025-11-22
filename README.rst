@@ -47,9 +47,9 @@ This modular approach ensures flexibility and maintainability, streamlining the 
 Contributing
 ------------
 
-Contributions are welcome! Please see our [GitHub issues](https://github.com/geometor/euclid/issues) for ways to contribute.
+Contributions are welcome! Please see our [GitHub issues](https://github.com/geometor/elements/issues) for ways to contribute.
 
 License
 -------
 
-**euclid** is licensed under the MIT License. See the `LICENSE` file for more details.
+**elements** is licensed under the MIT License. See the `LICENSE` file for more details.
