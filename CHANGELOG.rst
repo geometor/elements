@@ -1,6 +1,20 @@
 changelog
 =========
 
+0.1.0
+-----
+*2025-11-23*
+
+**added**
+
+.. + Integrated automatic bleed removal and image cleanup into the proposition stitching pipeline.
+.. + Added `clean_image` function in `src/geometor/elements/ingest/cleanup.py` to remove background noise and artifacts (bleed-through) from scanned images.
+.. + Updated `stitch_propositions.py` to apply cleanup processing during the stitching phase.
+
+**changed**
+
+.. + Removed temporary bleed test scripts and images from the project root.
+
 0.0.20
 ------
 *2025-11-21*

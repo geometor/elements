@@ -49,4 +49,5 @@ tedious, however a reference like "Book3 prop11" or worse "III.11" is useless se
 - Canonical naming for cropped images (e.g., `I.1.png`) is consistently applied.
 - Extracted graphics are now saved in the same directory as cropped propositions (`resources/heath/cropped/`) with the suffix `.graphic.png`.
 - Added safeguards to `scan_propositions.py` and `cropping.py` to prevent accidental overwrites of manual index tweaks.
+- Integrated automatic bleed removal and image cleanup into the proposition stitching pipeline to improve image quality.
 - Legacy scripts for image processing have been deprecated or moved.

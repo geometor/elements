@@ -3,6 +3,7 @@ import os
 import argparse
 from pathlib import Path
 from PIL import Image
+from geometor.elements.ingest.cleanup import clean_image
 
 # Configuration
 HEATH_DIR = Path("resources/heath")
@@ -144,6 +145,10 @@ def stitch_propositions(target_book=None):
                     
                     crop_box = (left, top, right, bottom)
                     segment = img.crop(crop_box)
+                    
+                    # Apply cleanup (bleed removal)
+                    segment = clean_image(segment, white_point=226)
+                    
                     cropped_segments.append(segment)
                     
                 except Exception as e:
