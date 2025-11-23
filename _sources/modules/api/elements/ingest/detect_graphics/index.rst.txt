@@ -10,8 +10,6 @@ Attributes
 .. autoapisummary::
 
    elements.ingest.detect_graphics.HEATH_DIR
-   elements.ingest.detect_graphics.PROPOSITIONS_DIR
-   elements.ingest.detect_graphics.API_KEY_ENV
 
 
 Functions
@@ -21,8 +19,9 @@ Functions
 
    elements.ingest.detect_graphics.load_json
    elements.ingest.detect_graphics.save_json
-   elements.ingest.detect_graphics.detect_graphic
-   elements.ingest.detect_graphics.process_book
+   elements.ingest.detect_graphics.get_book_slug_from_path
+   elements.ingest.detect_graphics.detect_graphic_cv
+   elements.ingest.detect_graphics.process_books
    elements.ingest.detect_graphics.main
 
 
@@ -31,30 +30,15 @@ Module Contents
 
 .. py:data:: HEATH_DIR
 
-.. py:data:: PROPOSITIONS_DIR
-
-.. py:data:: API_KEY_ENV
-   :value: 'GOOGLE_API_KEY'
-
-
 .. py:function:: load_json(path)
 
 .. py:function:: save_json(path, data)
 
-.. py:function:: detect_graphic(model_instance, image_path)
+.. py:function:: get_book_slug_from_path(path)
 
-   Uses Gemini Flash to detect the bounding box of the geometric diagram.
-   Returns a list of graphic objects as expected by the index schema:
-   [
-     {
-       "x_offset": int,
-       "y_offset": int,
-       "crop_box": [width, height]
-     }
-   ]
+.. py:function:: detect_graphic_cv(image_path, debug=False)
 
-
-.. py:function:: process_book(volume, book_slug, book_roman, model_name, model_instance, dry_run=False)
+.. py:function:: process_books(target_book=None, dry_run=False, debug=False)
 
 .. py:function:: main()
 

@@ -77,12 +77,6 @@
 <tr class="row-odd"><td><p><a class="reference internal" href="#elements.ingest.detect_graphics.HEATH_DIR" title="elements.ingest.detect_graphics.HEATH_DIR"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HEATH_DIR</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#elements.ingest.detect_graphics.PROPOSITIONS_DIR" title="elements.ingest.detect_graphics.PROPOSITIONS_DIR"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PROPOSITIONS_DIR</span></code></a></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#elements.ingest.detect_graphics.API_KEY_ENV" title="elements.ingest.detect_graphics.API_KEY_ENV"><code class="xref py py-obj docutils literal notranslate"><span class="pre">API_KEY_ENV</span></code></a></p></td>
-<td><p></p></td>
-</tr>
 </tbody>
 </table>
 </section>
@@ -96,13 +90,16 @@
 <tr class="row-even"><td><p><a class="reference internal" href="#elements.ingest.detect_graphics.save_json" title="elements.ingest.detect_graphics.save_json"><code class="xref py py-obj docutils literal notranslate"><span class="pre">save_json</span></code></a>(path, data)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#elements.ingest.detect_graphics.detect_graphic" title="elements.ingest.detect_graphics.detect_graphic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">detect_graphic</span></code></a>(model_instance, image_path)</p></td>
-<td><p>Uses Gemini Flash to detect the bounding box of the geometric diagram.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#elements.ingest.detect_graphics.process_book" title="elements.ingest.detect_graphics.process_book"><code class="xref py py-obj docutils literal notranslate"><span class="pre">process_book</span></code></a>(volume, book_slug, book_roman, ...[, dry_run])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#elements.ingest.detect_graphics.get_book_slug_from_path" title="elements.ingest.detect_graphics.get_book_slug_from_path"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_book_slug_from_path</span></code></a>(path)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#elements.ingest.detect_graphics.main" title="elements.ingest.detect_graphics.main"><code class="xref py py-obj docutils literal notranslate"><span class="pre">main</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#elements.ingest.detect_graphics.detect_graphic_cv" title="elements.ingest.detect_graphics.detect_graphic_cv"><code class="xref py py-obj docutils literal notranslate"><span class="pre">detect_graphic_cv</span></code></a>(image_path[, debug])</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#elements.ingest.detect_graphics.process_books" title="elements.ingest.detect_graphics.process_books"><code class="xref py py-obj docutils literal notranslate"><span class="pre">process_books</span></code></a>([target_book, dry_run, debug])</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#elements.ingest.detect_graphics.main" title="elements.ingest.detect_graphics.main"><code class="xref py py-obj docutils literal notranslate"><span class="pre">main</span></code></a>()</p></td>
 <td><p></p></td>
 </tr>
 </tbody>
@@ -113,16 +110,6 @@
 <dl class="py data">
 <dt class="sig sig-object py" id="elements.ingest.detect_graphics.HEATH_DIR">
 <span class="sig-prename descclassname"><span class="pre">elements.ingest.detect_graphics.</span></span><span class="sig-name descname"><span class="pre">HEATH_DIR</span></span><a class="reference internal" href="../../../../../_modules/elements/ingest/detect_graphics.html#HEATH_DIR"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#elements.ingest.detect_graphics.HEATH_DIR" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py data">
-<dt class="sig sig-object py" id="elements.ingest.detect_graphics.PROPOSITIONS_DIR">
-<span class="sig-prename descclassname"><span class="pre">elements.ingest.detect_graphics.</span></span><span class="sig-name descname"><span class="pre">PROPOSITIONS_DIR</span></span><a class="reference internal" href="../../../../../_modules/elements/ingest/detect_graphics.html#PROPOSITIONS_DIR"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#elements.ingest.detect_graphics.PROPOSITIONS_DIR" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py data">
-<dt class="sig sig-object py" id="elements.ingest.detect_graphics.API_KEY_ENV">
-<span class="sig-prename descclassname"><span class="pre">elements.ingest.detect_graphics.</span></span><span class="sig-name descname"><span class="pre">API_KEY_ENV</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'GOOGLE_API_KEY'</span></em><a class="reference internal" href="../../../../../_modules/elements/ingest/detect_graphics.html#API_KEY_ENV"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#elements.ingest.detect_graphics.API_KEY_ENV" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py function">
@@ -136,26 +123,18 @@
 <dd></dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="elements.ingest.detect_graphics.detect_graphic">
-<span class="sig-prename descclassname"><span class="pre">elements.ingest.detect_graphics.</span></span><span class="sig-name descname"><span class="pre">detect_graphic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_instance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">image_path</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../../../_modules/elements/ingest/detect_graphics.html#detect_graphic"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#elements.ingest.detect_graphics.detect_graphic" title="Link to this definition">¶</a></dt>
-<dd><p>Uses Gemini Flash to detect the bounding box of the geometric diagram.
-Returns a list of graphic objects as expected by the index schema:
-[</p>
-<blockquote>
-<div><dl class="simple">
-<dt>{</dt><dd><p>“x_offset”: int,
-“y_offset”: int,
-“crop_box”: [width, height]</p>
-</dd>
-</dl>
-<p>}</p>
-</div></blockquote>
-<p>]</p>
-</dd></dl>
+<dt class="sig sig-object py" id="elements.ingest.detect_graphics.get_book_slug_from_path">
+<span class="sig-prename descclassname"><span class="pre">elements.ingest.detect_graphics.</span></span><span class="sig-name descname"><span class="pre">get_book_slug_from_path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../../../_modules/elements/ingest/detect_graphics.html#get_book_slug_from_path"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#elements.ingest.detect_graphics.get_book_slug_from_path" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="elements.ingest.detect_graphics.process_book">
-<span class="sig-prename descclassname"><span class="pre">elements.ingest.detect_graphics.</span></span><span class="sig-name descname"><span class="pre">process_book</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">volume</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">book_slug</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">book_roman</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_instance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dry_run</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../../../_modules/elements/ingest/detect_graphics.html#process_book"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#elements.ingest.detect_graphics.process_book" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="elements.ingest.detect_graphics.detect_graphic_cv">
+<span class="sig-prename descclassname"><span class="pre">elements.ingest.detect_graphics.</span></span><span class="sig-name descname"><span class="pre">detect_graphic_cv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">debug</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../../../_modules/elements/ingest/detect_graphics.html#detect_graphic_cv"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#elements.ingest.detect_graphics.detect_graphic_cv" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="elements.ingest.detect_graphics.process_books">
+<span class="sig-prename descclassname"><span class="pre">elements.ingest.detect_graphics.</span></span><span class="sig-name descname"><span class="pre">process_books</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">target_book</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dry_run</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">debug</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../../../_modules/elements/ingest/detect_graphics.html#process_books"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#elements.ingest.detect_graphics.process_books" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py function">

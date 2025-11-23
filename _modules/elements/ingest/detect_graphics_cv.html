@@ -104,75 +104,58 @@
     <span class="n">gray</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2GRAY</span><span class="p">)</span>
     
     <span class="c1"># 1. Binarize (Invert so ink is white, paper is black)</span>
-    <span class="c1"># Otsu&#39;s thresholding</span>
     <span class="n">_</span><span class="p">,</span> <span class="n">binary</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">threshold</span><span class="p">(</span><span class="n">gray</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">THRESH_BINARY_INV</span> <span class="o">+</span> <span class="n">cv2</span><span class="o">.</span><span class="n">THRESH_OTSU</span><span class="p">)</span>
     
-    <span class="c1"># 2. Remove Text (Heuristic)</span>
-    <span class="c1"># We assume text characters are small.</span>
-    <span class="c1"># We can use connected components analysis.</span>
-    
+    <span class="c1"># 2. Connected Components</span>
     <span class="n">num_labels</span><span class="p">,</span> <span class="n">labels</span><span class="p">,</span> <span class="n">stats</span><span class="p">,</span> <span class="n">centroids</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">connectedComponentsWithStats</span><span class="p">(</span><span class="n">binary</span><span class="p">,</span> <span class="n">connectivity</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
     
-    <span class="c1"># stats: [x, y, width, height, area]</span>
-    
-    <span class="c1"># We will create a mask of &quot;potential graphic components&quot;</span>
     <span class="n">graphics_mask</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">binary</span><span class="p">)</span>
     
-    <span class="c1"># Heuristics for text vs graphic</span>
-    <span class="c1"># Text characters usually have:</span>
-    <span class="c1"># - Small height (e.g., &lt; 50 px)</span>
-    <span class="c1"># - Small width </span>
-    <span class="c1"># - Small area</span>
-    
-    <span class="c1"># Diagram parts (like a long line) might have small height OR small width, but usually not both.</span>
-    <span class="c1"># A circle has large width AND height.</span>
-    
-    <span class="c1"># Let&#39;s try filtering out &quot;small&quot; components.</span>
-    <span class="n">min_dimension</span> <span class="o">=</span> <span class="mi">40</span>  <span class="c1"># If both width and height are smaller than this, it&#39;s likely text</span>
-    
-    <span class="c1"># Also, we want to keep the labels (A, B, C) which are near the graphic.</span>
-    <span class="c1"># This is tricky.</span>
-    
-    <span class="c1"># Alternative approach:</span>
-    <span class="c1"># 1. Identify the &quot;main&quot; graphic elements (large lines, circles).</span>
-    <span class="c1"># 2. Create a bounding box around them.</span>
-    <span class="c1"># 3. Expand that bounding box to include nearby &quot;small&quot; elements (labels).</span>
+    <span class="c1"># GROUPS</span>
+    <span class="c1"># 1. Core Graphic: Large connected parts (lines, circles)</span>
+    <span class="c1"># 2. Labels: Small parts near the core</span>
+    <span class="c1"># 3. Text: Wide, short parts (we want to avoid these)</span>
     
     <span class="n">large_components</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_labels</span><span class="p">):</span> <span class="c1"># Skip background (0)</span>
-        <span class="n">x</span> <span class="o">=</span> <span class="n">stats</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">CC_STAT_LEFT</span><span class="p">]</span>
-        <span class="n">y</span> <span class="o">=</span> <span class="n">stats</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">CC_STAT_TOP</span><span class="p">]</span>
+    
+    <span class="c1"># Thresholds</span>
+    <span class="n">MIN_GRAPHIC_DIM</span> <span class="o">=</span> <span class="mi">60</span>   <span class="c1"># Minimum width or height to be considered a &quot;line&quot; or &quot;circle&quot; part</span>
+    <span class="n">MAX_TEXT_HEIGHT</span> <span class="o">=</span> <span class="mi">40</span>   <span class="c1"># Height of a line of text usually &lt; 30-40px</span>
+    <span class="n">MIN_TEXT_WIDTH</span> <span class="o">=</span> <span class="mi">100</span>   <span class="c1"># Lines of text are usually wider than this</span>
+    
+    <span class="c1"># Step A: Find the &quot;Core&quot; (the actual drawing)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_labels</span><span class="p">):</span> <span class="c1"># Skip background</span>
         <span class="n">w</span> <span class="o">=</span> <span class="n">stats</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">CC_STAT_WIDTH</span><span class="p">]</span>
         <span class="n">h</span> <span class="o">=</span> <span class="n">stats</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">CC_STAT_HEIGHT</span><span class="p">]</span>
-        <span class="n">area</span> <span class="o">=</span> <span class="n">stats</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">CC_STAT_AREA</span><span class="p">]</span>
         
-        <span class="c1"># Criteria for a &quot;Graphic Anchor&quot; (main lines/circles)</span>
-        <span class="c1"># Must be reasonably large in at least one dimension</span>
-        <span class="k">if</span> <span class="n">w</span> <span class="o">&gt;</span> <span class="mi">100</span> <span class="ow">or</span> <span class="n">h</span> <span class="o">&gt;</span> <span class="mi">100</span><span class="p">:</span> 
+        <span class="c1"># If it&#39;s big enough in either dimension, it&#39;s likely part of the drawing.</span>
+        <span class="c1"># But if it&#39;s WIDE and SHORT, it&#39;s a text line -&gt; Ignore it.</span>
+        <span class="k">if</span> <span class="n">w</span> <span class="o">&gt;</span> <span class="n">MIN_TEXT_WIDTH</span> <span class="ow">and</span> <span class="n">h</span> <span class="o">&lt;</span> <span class="n">MAX_TEXT_HEIGHT</span><span class="p">:</span>
+            <span class="k">continue</span> <span class="c1"># This is a line of text</span>
+            
+        <span class="k">if</span> <span class="n">w</span> <span class="o">&gt;</span> <span class="n">MIN_GRAPHIC_DIM</span> <span class="ow">or</span> <span class="n">h</span> <span class="o">&gt;</span> <span class="n">MIN_GRAPHIC_DIM</span><span class="p">:</span>
             <span class="n">large_components</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
             <span class="n">graphics_mask</span><span class="p">[</span><span class="n">labels</span> <span class="o">==</span> <span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">255</span>
             
-    <span class="c1"># If no large components found, maybe the threshold is too high?</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">large_components</span><span class="p">:</span>
         <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;error&quot;</span><span class="p">:</span> <span class="s2">&quot;No large graphic components found&quot;</span><span class="p">}</span>
         
-    <span class="c1"># Find the bounding box of all large components combined</span>
+    <span class="c1"># Step B: Bounding box of the core</span>
     <span class="n">points</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">findNonZero</span><span class="p">(</span><span class="n">graphics_mask</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">points</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
          <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;error&quot;</span><span class="p">:</span> <span class="s2">&quot;Mask empty&quot;</span><span class="p">}</span>
          
-    <span class="n">rect</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">boundingRect</span><span class="p">(</span><span class="n">points</span><span class="p">)</span>
-    <span class="n">gx</span><span class="p">,</span> <span class="n">gy</span><span class="p">,</span> <span class="n">gw</span><span class="p">,</span> <span class="n">gh</span> <span class="o">=</span> <span class="n">rect</span>
+    <span class="n">gx</span><span class="p">,</span> <span class="n">gy</span><span class="p">,</span> <span class="n">gw</span><span class="p">,</span> <span class="n">gh</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">boundingRect</span><span class="p">(</span><span class="n">points</span><span class="p">)</span>
     
-    <span class="c1"># 3. Include nearby labels</span>
-    <span class="c1"># Now we look for small components that are close to this bounding box.</span>
-    <span class="c1"># Expand the search region</span>
-    <span class="n">margin</span> <span class="o">=</span> <span class="mi">50</span>
-    <span class="n">search_x</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">gx</span> <span class="o">-</span> <span class="n">margin</span><span class="p">)</span>
-    <span class="n">search_y</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">gy</span> <span class="o">-</span> <span class="n">margin</span><span class="p">)</span>
-    <span class="n">search_w</span> <span class="o">=</span> <span class="n">gw</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">margin</span>
-    <span class="n">search_h</span> <span class="o">=</span> <span class="n">gh</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">margin</span>
-    <span class="n">search_rect</span> <span class="o">=</span> <span class="p">(</span><span class="n">search_x</span><span class="p">,</span> <span class="n">search_y</span><span class="p">,</span> <span class="n">search_x</span> <span class="o">+</span> <span class="n">search_w</span><span class="p">,</span> <span class="n">search_y</span> <span class="o">+</span> <span class="n">search_h</span><span class="p">)</span>
+    <span class="c1"># Step C: Add nearby labels (points, letters)</span>
+    <span class="c1"># We search for small components near the core rect, BUT we filter out text lines.</span>
+    
+    <span class="n">LABEL_SEARCH_MARGIN</span> <span class="o">=</span> <span class="mi">20</span>  <span class="c1"># How far from the graphic to look for labels (tightened from 50)</span>
+    
+    <span class="n">search_x</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">gx</span> <span class="o">-</span> <span class="n">LABEL_SEARCH_MARGIN</span><span class="p">)</span>
+    <span class="n">search_y</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">gy</span> <span class="o">-</span> <span class="n">LABEL_SEARCH_MARGIN</span><span class="p">)</span>
+    <span class="n">search_w</span> <span class="o">=</span> <span class="n">gw</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">LABEL_SEARCH_MARGIN</span>
+    <span class="n">search_h</span> <span class="o">=</span> <span class="n">gh</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">LABEL_SEARCH_MARGIN</span>
     
     <span class="n">final_mask</span> <span class="o">=</span> <span class="n">graphics_mask</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
     
@@ -185,18 +168,30 @@
         <span class="n">w</span> <span class="o">=</span> <span class="n">stats</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">CC_STAT_WIDTH</span><span class="p">]</span>
         <span class="n">h</span> <span class="o">=</span> <span class="n">stats</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">CC_STAT_HEIGHT</span><span class="p">]</span>
         
+        <span class="c1"># Filter: Is this component a line of text?</span>
+        <span class="k">if</span> <span class="n">w</span> <span class="o">&gt;</span> <span class="n">MIN_TEXT_WIDTH</span> <span class="ow">and</span> <span class="n">h</span> <span class="o">&lt;</span> <span class="n">MAX_TEXT_HEIGHT</span><span class="p">:</span>
+            <span class="k">continue</span>
+            
         <span class="c1"># Center of component</span>
         <span class="n">cx</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">w</span><span class="o">/</span><span class="mi">2</span>
         <span class="n">cy</span> <span class="o">=</span> <span class="n">y</span> <span class="o">+</span> <span class="n">h</span><span class="o">/</span><span class="mi">2</span>
         
-        <span class="c1"># Check if inside the expanded search rect</span>
+        <span class="c1"># Check proximity</span>
         <span class="k">if</span> <span class="p">(</span><span class="n">search_x</span> <span class="o">&lt;=</span> <span class="n">cx</span> <span class="o">&lt;=</span> <span class="n">search_x</span> <span class="o">+</span> <span class="n">search_w</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">search_y</span> <span class="o">&lt;=</span> <span class="n">cy</span> <span class="o">&lt;=</span> <span class="n">search_y</span> <span class="o">+</span> <span class="n">search_h</span><span class="p">):</span>
-            <span class="c1"># It&#39;s close to the graphic, likely a label</span>
             <span class="n">final_mask</span><span class="p">[</span><span class="n">labels</span> <span class="o">==</span> <span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">255</span>
             
     <span class="c1"># Recalculate bounding box</span>
     <span class="n">points</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">findNonZero</span><span class="p">(</span><span class="n">final_mask</span><span class="p">)</span>
     <span class="n">gx</span><span class="p">,</span> <span class="n">gy</span><span class="p">,</span> <span class="n">gw</span><span class="p">,</span> <span class="n">gh</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">boundingRect</span><span class="p">(</span><span class="n">points</span><span class="p">)</span>
+    
+    <span class="c1"># Add a small aesthetic padding to the final crop</span>
+    <span class="n">PADDING</span> <span class="o">=</span> <span class="mi">10</span>
+    <span class="n">height</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">shape</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span>
+    
+    <span class="n">gx</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">gx</span> <span class="o">-</span> <span class="n">PADDING</span><span class="p">)</span>
+    <span class="n">gy</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">gy</span> <span class="o">-</span> <span class="n">PADDING</span><span class="p">)</span>
+    <span class="n">gw</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">width</span> <span class="o">-</span> <span class="n">gx</span><span class="p">,</span> <span class="n">gw</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">PADDING</span><span class="p">)</span>
+    <span class="n">gh</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">height</span> <span class="o">-</span> <span class="n">gy</span><span class="p">,</span> <span class="n">gh</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">PADDING</span><span class="p">)</span>
     
     <span class="k">if</span> <span class="n">debug</span><span class="p">:</span>
         <span class="c1"># Draw rectangle and save debug image</span>
