@@ -25,75 +25,58 @@ def detect_graphic_cv(image_path, debug=False):
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     
     # 1. Binarize (Invert so ink is white, paper is black)
-    # Otsu's thresholding
     _, binary = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
     
-    # 2. Remove Text (Heuristic)
-    # We assume text characters are small.
-    # We can use connected components analysis.
-    
+    # 2. Connected Components
     num_labels, labels, stats, centroids = cv2.connectedComponentsWithStats(binary, connectivity=8)
     
-    # stats: [x, y, width, height, area]
-    
-    # We will create a mask of "potential graphic components"
     graphics_mask = np.zeros_like(binary)
     
-    # Heuristics for text vs graphic
-    # Text characters usually have:
-    # - Small height (e.g., < 50 px)
-    # - Small width 
-    # - Small area
-    
-    # Diagram parts (like a long line) might have small height OR small width, but usually not both.
-    # A circle has large width AND height.
-    
-    # Let's try filtering out "small" components.
-    min_dimension = 40  # If both width and height are smaller than this, it's likely text
-    
-    # Also, we want to keep the labels (A, B, C) which are near the graphic.
-    # This is tricky.
-    
-    # Alternative approach:
-    # 1. Identify the "main" graphic elements (large lines, circles).
-    # 2. Create a bounding box around them.
-    # 3. Expand that bounding box to include nearby "small" elements (labels).
+    # GROUPS
+    # 1. Core Graphic: Large connected parts (lines, circles)
+    # 2. Labels: Small parts near the core
+    # 3. Text: Wide, short parts (we want to avoid these)
     
     large_components = []
-    for i in range(1, num_labels): # Skip background (0)
-        x = stats[i, cv2.CC_STAT_LEFT]
-        y = stats[i, cv2.CC_STAT_TOP]
+    
+    # Thresholds
+    MIN_GRAPHIC_DIM = 60   # Minimum width or height to be considered a "line" or "circle" part
+    MAX_TEXT_HEIGHT = 40   # Height of a line of text usually < 30-40px
+    MIN_TEXT_WIDTH = 100   # Lines of text are usually wider than this
+    
+    # Step A: Find the "Core" (the actual drawing)
+    for i in range(1, num_labels): # Skip background
         w = stats[i, cv2.CC_STAT_WIDTH]
         h = stats[i, cv2.CC_STAT_HEIGHT]
-        area = stats[i, cv2.CC_STAT_AREA]
         
-        # Criteria for a "Graphic Anchor" (main lines/circles)
-        # Must be reasonably large in at least one dimension
-        if w > 100 or h > 100: 
+        # If it's big enough in either dimension, it's likely part of the drawing.
+        # But if it's WIDE and SHORT, it's a text line -> Ignore it.
+        if w > MIN_TEXT_WIDTH and h < MAX_TEXT_HEIGHT:
+            continue # This is a line of text
+            
+        if w > MIN_GRAPHIC_DIM or h > MIN_GRAPHIC_DIM:
             large_components.append(i)
             graphics_mask[labels == i] = 255
             
-    # If no large components found, maybe the threshold is too high?
     if not large_components:
         return {"error": "No large graphic components found"}
         
-    # Find the bounding box of all large components combined
+    # Step B: Bounding box of the core
     points = cv2.findNonZero(graphics_mask)
     if points is None:
          return {"error": "Mask empty"}
          
-    rect = cv2.boundingRect(points)
-    gx, gy, gw, gh = rect
+    gx, gy, gw, gh = cv2.boundingRect(points)
     
-    # 3. Include nearby labels
-    # Now we look for small components that are close to this bounding box.
-    # Expand the search region
-    margin = 50
-    search_x = max(0, gx - margin)
-    search_y = max(0, gy - margin)
-    search_w = gw + 2*margin
-    search_h = gh + 2*margin
-    search_rect = (search_x, search_y, search_x + search_w, search_y + search_h)
+    # Step C: Add nearby labels (points, letters)
+    # We search for small components near the core rect, BUT we filter out text lines.
+    
+    LABEL_SEARCH_MARGIN = 20  # How far from the graphic to look for labels (tightened from 50)
+    
+    search_x = max(0, gx - LABEL_SEARCH_MARGIN)
+    search_y = max(0, gy - LABEL_SEARCH_MARGIN)
+    search_w = gw + 2*LABEL_SEARCH_MARGIN
+    search_h = gh + 2*LABEL_SEARCH_MARGIN
     
     final_mask = graphics_mask.copy()
     
@@ -106,18 +89,30 @@ def detect_graphic_cv(image_path, debug=False):
         w = stats[i, cv2.CC_STAT_WIDTH]
         h = stats[i, cv2.CC_STAT_HEIGHT]
         
+        # Filter: Is this component a line of text?
+        if w > MIN_TEXT_WIDTH and h < MAX_TEXT_HEIGHT:
+            continue
+            
         # Center of component
         cx = x + w/2
         cy = y + h/2
         
-        # Check if inside the expanded search rect
+        # Check proximity
         if (search_x <= cx <= search_x + search_w) and (search_y <= cy <= search_y + search_h):
-            # It's close to the graphic, likely a label
             final_mask[labels == i] = 255
             
     # Recalculate bounding box
     points = cv2.findNonZero(final_mask)
     gx, gy, gw, gh = cv2.boundingRect(points)
+    
+    # Add a small aesthetic padding to the final crop
+    PADDING = 10
+    height, width = img.shape[:2]
+    
+    gx = max(0, gx - PADDING)
+    gy = max(0, gy - PADDING)
+    gw = min(width - gx, gw + 2*PADDING)
+    gh = min(height - gy, gh + 2*PADDING)
     
     if debug:
         # Draw rectangle and save debug image
