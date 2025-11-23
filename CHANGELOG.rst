@@ -1,6 +1,19 @@
 changelog
 =========
 
+0.1.1
+-----
+*2025-11-23*
+
+**changed**
+
+.. + Updated `transform.py` to target `docsrc/heath` as the primary output directory for generated RST.
+.. + Extended `transform.py` to process all 13 books of the Elements.
+.. + Modified `transform.py` to invert colors for extracted graphic images (for dark mode compatibility).
+.. + Removed fixed `width` attribute from figure directives in generated RST to allow for responsive sizing.
+.. + Updated dependency graph links to point to the new `heath` directory structure.
+.. + Removed the deprecated `docsrc/elements2` directory.
+
 0.1.0
 -----
 *2025-11-23*
@@ -230,41 +243,3 @@ changelog
 **changed**
 
 .. + Improved RST generation to include a list of dependencies.
-
-0.0.2
------
-*2025-11-11*
-
-**fixed**
-
-.. + 
-
-**added**
-
-.. + 
-
-**changed**
-
-.. + 
-
-changelog
-=========
-
-0.1.0 
------
-*2023-11-15*
-
-**fixed**
-
-.. + Fixed bug in data processing (`#42 <https://github.com/example/repo/issues/42>`_)
-.. + Improved error handling in API calls
-
-**added**
-
-.. + Fixed bug in data processing (`#42 <https://github.com/example/repo/issues/42>`_)
-.. + Improved error handling in API calls
-
-**changed**
-
-.. + Fixed bug in data processing (`#42 <https://github.com/example/repo/issues/42>`_)
-.. + Improved error handling in API calls

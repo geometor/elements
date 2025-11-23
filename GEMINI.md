@@ -36,7 +36,10 @@ tedious, however a reference like "Book3 prop11" or worse "III.11" is useless se
 
 # Current Progress
 
-- The `elements_transform` script (located at `src/geometor/elements/transform.py`) is currently used for RST generation from XML files, processing Books 1 through 6.
+- The `elements_transform` script (located at `src/geometor/elements/transform.py`) has been updated to generate RST for all 13 books of the Elements.
+- The output directory for generated RST has been moved to `docsrc/heath`.
+- Extracted graphic images are now inverted (white lines on black background) for better visibility in dark mode environments.
+- Fixed `width` attributes have been removed from figure directives in the generated RST to allow for responsive sizing.
 - The XML parsing ignores `<lb>` and `<pb>` tags during RST generation.
 - Collection and note directives are implemented for dynamic lists and Heath's footnotes.
 - A new, comprehensive, modular ingestion pipeline (`src/geometor/elements/ingest`) has been established to process Heath's Euclid from PDF sources.

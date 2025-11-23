@@ -6,6 +6,7 @@ from pathlib import Path
 from xml.sax.saxutils import escape
 import networkx as nx
 import json
+from PIL import Image, ImageOps
 
 
 ROMAN_NUMERALS = {
@@ -418,7 +419,7 @@ def generate_proof_chain_dot(graph, element_ref, ref_to_path_map):
         path_info = ref_to_path_map.get(node)
         if path_info:
             target_book, target_folder = path_info
-            url = f"/elements2/{target_book}/{target_folder}/"
+            url = f"/heath/{target_book}/{target_folder}/"
             attrs.append(f'URL="{url}"')
             attrs.append('target="_top"')
 
@@ -515,7 +516,20 @@ def generate_rst_files(book_data, output_dir, graph, ref_to_path_map, metadata):
 
                     for image_path in image_files:
                         shutil.copy(image_path, entry_dir)
-                        entry_index_content.append(f"\n\n.. figure:: {image_path.name}\n   :width: 50%\n")
+                        entry_index_content.append(f"\n\n.. figure:: {image_path.name}\n")
+                
+                heath_propositions_dir = Path("resources/heath/propositions")
+                if heath_propositions_dir.exists() and entry['canonical_ref']:
+                    graphic_stem = entry['canonical_ref']
+                    graphic_file = heath_propositions_dir / f"{graphic_stem}.graphic.png"
+
+                    if graphic_file.exists():
+                        # Invert and save the graphic image
+                        img = Image.open(graphic_file)
+                        inverted_img = ImageOps.invert(img.convert('RGB'))
+                        inverted_img_path = entry_dir / f"{graphic_file.stem}.inverted.png"
+                        inverted_img.save(inverted_img_path)
+                        entry_index_content.append(f"\n\n.. figure:: {inverted_img_path.name}\n")
                 
                 entry_index_content.extend([
                     f".. _{entry['canonical_ref']}:\n",
@@ -610,7 +624,7 @@ def generate_dependency_graph(graph, output_dir="docsrc/elements2"):
 
 def main():
     print("RST transformation tool")
-    output_dir = "docsrc/elements2"
+    output_dir = "docsrc/heath"
 
     # Clean up existing book directories to prevent orphans
     output_path = Path(output_dir)
@@ -625,7 +639,7 @@ def main():
 
     all_books_data = []
     entry_number = 0
-    for i in range(1, 7):
+    for i in range(1, 14):
         xml_file_path = f"resources/xml/books/{i:02d}.xml"
         if os.path.exists(xml_file_path):
             print(f"Processing {xml_file_path}")
@@ -676,7 +690,7 @@ def main():
     main_index_content = [
         ":navigation: header",
         ":order: 2\n",
-        "Elements 2.0",
+        "Elements Heath Edition",
         "============\n",
         ".. collection::",
         "   :type: book",
@@ -686,7 +700,7 @@ def main():
             
     with open(Path(output_dir) / "index.rst", "w") as f:
         f.write("\n".join(main_index_content))
-    print("Generated main index.rst for elements2")
+    print("Generated main index.rst for heath")
 
 if __name__ == "__main__":
     main()
