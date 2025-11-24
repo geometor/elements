@@ -1,7 +1,7 @@
 :order: 3
 :number: 274
 :type: prop
-:dependencies: VII.2, elem.7.2.p.1
+:dependencies: VII.2, VII.2.p.1
 
 
 
@@ -29,7 +29,7 @@ For, if D is not the greatest common measure of A, B, C, some number which is gr
 
 Let such a number measure them, and let it be E.
 
-Since then E measures A, B, C, it will also measure A, B; therefore it will also measure the greatest common measure of A, B. [:ref:`elem.7.2.p.1`]
+Since then E measures A, B, C, it will also measure A, B; therefore it will also measure the greatest common measure of A, B. [:ref:`VII.2.p.1`]
 
 But the greatest common measure of A, B is D; therefore E measures D, the greater the less: which is impossible.
 
@@ -45,7 +45,7 @@ Next, let D not measure C; I say first that C, D are not prime to one another.
 
 For, since A, B, C are not prime to one another, some number will measure them.
 
-Now that which measures A, B, C will also measure A, B, and will measure D, the greatest common measure of A, B. [:ref:`elem.7.2.p.1`]
+Now that which measures A, B, C will also measure A, B, and will measure D, the greatest common measure of A, B. [:ref:`VII.2.p.1`]
 
 But it measures C also; therefore some number will measure the numbers D, C; therefore D, C are not prime to one another.
 
@@ -61,11 +61,11 @@ For, if E is not the greatest common measure of A, B, C, some number which is gr
 
 Let such a number measure them, and let it be F.
 
-Now, since F measures A, B, C, it also measures A, B; therefore it will also measure the greatest common measure of A, B. [:ref:`elem.7.2.p.1`]
+Now, since F measures A, B, C, it also measures A, B; therefore it will also measure the greatest common measure of A, B. [:ref:`VII.2.p.1`]
 
 But the greatest common measure of A, B is D; therefore F measures D.
 
-And it measures C also; therefore F measures D, C; therefore it will also measure the greatest common measure of D, C. [:ref:`elem.7.2.p.1`]
+And it measures C also; therefore F measures D, C; therefore it will also measure the greatest common measure of D, C. [:ref:`VII.2.p.1`]
 
 But the greatest common measure of D, C is E; therefore F measures E, the greater the less: which is impossible.
 
@@ -80,14 +80,14 @@ Dependency Graph
    digraph {
      rankdir="TB";
      node [shape=box, style=rounded];
-     "VII.2" [URL="/heath/VII/2/", target="_top"];
-     "VII.def.12" [style="rounded,filled", fillcolor=orange, URL="/heath/VII/def.12/", target="_top"];
-     "elem.7.2.p.1" [style="rounded,filled", fillcolor=orange];
-     "VII.1" [URL="/heath/VII/1/", target="_top"];
      "VII.3" [style="rounded,filled", fillcolor=lightblue, URL="/heath/VII/3/", target="_top"];
-     "VII.3" -> "VII.2";
+     "VII.def.12" [style="rounded,filled", fillcolor=orange, URL="/heath/VII/def.12/", target="_top"];
+     "VII.2.p.1" [style="rounded,filled", fillcolor=orange];
+     "VII.2" [URL="/heath/VII/2/", target="_top"];
+     "VII.1" [URL="/heath/VII/1/", target="_top"];
      "VII.1" -> "VII.def.12";
-     "VII.3" -> "elem.7.2.p.1";
+     "VII.3" -> "VII.2.p.1";
+     "VII.3" -> "VII.2";
      "VII.2" -> "VII.1";
    }
 

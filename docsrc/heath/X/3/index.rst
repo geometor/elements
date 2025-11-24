@@ -56,11 +56,15 @@ Therefore no magnitude greater than AF will measure AB, CD; therefore AF is the 
 Therefore the greatest common measure of the two given commensurable magnitudes AB, CD has been found. Q. E. D.
 
 
-.. _elem.10.3.p.1:
+.. _X.3.p.1:
 
 
 **X.3.p.1**
 
+
+From this it is manifest that, if a magnitude measure two magnitudes, it will also measure their greatest common measure.
+
+PORISM.
 
 From this it is manifest that, if a magnitude measure two magnitudes, it will also measure their greatest common measure.
 
@@ -73,9 +77,9 @@ Dependency Graph
    digraph {
      rankdir="TB";
      node [shape=box, style=rounded];
-     "X.3" [style="rounded,filled", fillcolor=lightblue, URL="/heath/X/3/", target="_top"];
      "X.def.1" [style="rounded,filled", fillcolor=orange, URL="/heath/X/def.1/", target="_top"];
      "X.2" [URL="/heath/X/2/", target="_top"];
+     "X.3" [style="rounded,filled", fillcolor=lightblue, URL="/heath/X/3/", target="_top"];
      "X.2" -> "X.def.1";
      "X.3" -> "X.2";
    }

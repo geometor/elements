@@ -2,7 +2,7 @@
 :number: 118
 :type: prop
 :tags: circle
-:dependencies: I.def.15, III.5, elem.3.1.p.1
+:dependencies: I.def.15, III.1.p.1, III.5
 
 
 
@@ -27,7 +27,7 @@ Then, since in the circle ``ABC`` a straight line ``AC`` cuts a straight line ``
 
 .. container:: center
 
-   the centre of the circle ``ABC`` is on ``AC``. [:ref:`elem.3.1.p.1`]
+   the centre of the circle ``ABC`` is on ``AC``. [:ref:`III.1.p.1`]
 
 
 Again, since in the same circle ``ABC`` a straight line ``NO`` cuts a straight line ``BG`` into two equal parts and at right angles,
@@ -66,13 +66,13 @@ Dependency Graph
    digraph {
      rankdir="TB";
      node [shape=box, style=rounded];
-     "I.def.15" [style="rounded,filled", fillcolor=orange, URL="/heath/I/def.15/", target="_top"];
      "III.10" [style="rounded,filled", fillcolor=lightblue, URL="/heath/III/10/", target="_top"];
-     "elem.3.1.p.1" [style="rounded,filled", fillcolor=orange];
+     "III.1.p.1" [style="rounded,filled", fillcolor=orange];
+     "I.def.15" [style="rounded,filled", fillcolor=orange, URL="/heath/I/def.15/", target="_top"];
      "III.5" [URL="/heath/III/5/", target="_top"];
+     "III.10" -> "III.1.p.1";
      "III.5" -> "I.def.15";
      "III.10" -> "I.def.15";
-     "III.10" -> "elem.3.1.p.1";
      "III.10" -> "III.5";
    }
 

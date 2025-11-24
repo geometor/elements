@@ -1,0 +1,11 @@
+elements.__main__
+=================
+
+.. py:module:: elements.__main__
+
+.. autoapi-nested-parse::
+
+   The package entry point into the application.
+
+
+

@@ -30,8 +30,8 @@ Dependency Graph
    digraph {
      rankdir="TB";
      node [shape=box, style=rounded];
-     "IX.21" [style="rounded,filled", fillcolor=lightblue, URL="/heath/IX/21/", target="_top"];
      "VII.def.6" [style="rounded,filled", fillcolor=orange, URL="/heath/VII/def.6/", target="_top"];
+     "IX.21" [style="rounded,filled", fillcolor=lightblue, URL="/heath/IX/21/", target="_top"];
      "IX.21" -> "VII.def.6";
    }
 

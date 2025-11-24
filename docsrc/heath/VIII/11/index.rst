@@ -54,34 +54,34 @@ Dependency Graph
    digraph {
      rankdir="TB";
      node [shape=box, style=rounded];
-     "elem.7.5 elem.7.6" [style="rounded,filled", fillcolor=orange];
-     "V.def.9" [style="rounded,filled", fillcolor=orange, URL="/heath/V/def.9/", target="_top"];
-     "VII.10" [URL="/heath/VII/10/", target="_top"];
-     "VII.9" [URL="/heath/VII/9/", target="_top"];
-     "VII.18" [URL="/heath/VII/18/", target="_top"];
      "VII.13" [URL="/heath/VII/13/", target="_top"];
-     "VIII.11" [style="rounded,filled", fillcolor=lightblue, URL="/heath/VIII/11/", target="_top"];
-     "VII.16" [URL="/heath/VII/16/", target="_top"];
      "VII.12" [URL="/heath/VII/12/", target="_top"];
-     "VII.15" [URL="/heath/VII/15/", target="_top"];
-     "VII.def.20" [style="rounded,filled", fillcolor=orange, URL="/heath/VII/def.20/", target="_top"];
+     "elem.7.5 elem.7.6" [style="rounded,filled", fillcolor=orange];
+     "VII.9" [URL="/heath/VII/9/", target="_top"];
+     "V.def.9" [style="rounded,filled", fillcolor=orange, URL="/heath/V/def.9/", target="_top"];
+     "VII.18" [URL="/heath/VII/18/", target="_top"];
+     "VII.16" [URL="/heath/VII/16/", target="_top"];
      "VII.17" [URL="/heath/VII/17/", target="_top"];
+     "VIII.11" [style="rounded,filled", fillcolor=lightblue, URL="/heath/VIII/11/", target="_top"];
+     "VII.def.20" [style="rounded,filled", fillcolor=orange, URL="/heath/VII/def.20/", target="_top"];
+     "VII.15" [URL="/heath/VII/15/", target="_top"];
+     "VII.10" [URL="/heath/VII/10/", target="_top"];
+     "VII.17" -> "VII.13";
+     "VII.15" -> "VII.12";
      "VII.9" -> "elem.7.5 elem.7.6";
      "VII.10" -> "elem.7.5 elem.7.6";
      "VII.12" -> "elem.7.5 elem.7.6";
-     "VIII.11" -> "V.def.9";
-     "VII.13" -> "VII.10";
      "VII.10" -> "VII.9";
+     "VIII.11" -> "V.def.9";
      "VIII.11" -> "VII.18";
-     "VII.17" -> "VII.13";
      "VII.18" -> "VII.16";
-     "VII.15" -> "VII.12";
-     "VII.16" -> "VII.15";
+     "VII.18" -> "VII.17";
+     "VIII.11" -> "VII.17";
      "VII.12" -> "VII.def.20";
      "VII.13" -> "VII.def.20";
      "VII.17" -> "VII.def.20";
-     "VII.18" -> "VII.17";
-     "VIII.11" -> "VII.17";
+     "VII.16" -> "VII.15";
+     "VII.13" -> "VII.10";
    }
 
 

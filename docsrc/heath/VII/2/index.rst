@@ -66,11 +66,15 @@ Therefore no number which is greater than CF will measure the numbers AB, CD;
 
 
 
-.. _elem.7.2.p.1:
+.. _VII.2.p.1:
 
 
 **VII.2.p.1**
 
+
+From this it is manifest that, if a number measure two numbers, it will also measure their greatest common measure.
+
+PORISM.
 
 From this it is manifest that, if a number measure two numbers, it will also measure their greatest common measure.
 
@@ -86,10 +90,10 @@ Dependency Graph
      rankdir="TB";
      node [shape=box, style=rounded];
      "VII.2" [style="rounded,filled", fillcolor=lightblue, URL="/heath/VII/2/", target="_top"];
-     "VII.def.12" [style="rounded,filled", fillcolor=orange, URL="/heath/VII/def.12/", target="_top"];
      "VII.1" [URL="/heath/VII/1/", target="_top"];
-     "VII.1" -> "VII.def.12";
+     "VII.def.12" [style="rounded,filled", fillcolor=orange, URL="/heath/VII/def.12/", target="_top"];
      "VII.2" -> "VII.1";
+     "VII.1" -> "VII.def.12";
    }
 
 

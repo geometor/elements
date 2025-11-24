@@ -56,10 +56,24 @@ def convert_inline_xml_to_rst(element, dependencies, is_enunciation=False):
                 book_num_roman = ROMAN_NUMERALS.get(book_num_str)
                 
                 if book_num_roman:
-                    if len(target_parts) == 5 and target_parts[2] == 'c' and target_parts[3] == 'n':
-                        section_type_canonical = 'cn'
-                        item_num = target_parts[4]
-                        canonical_ref = f"{book_num_roman}.{section_type_canonical}.{item_num}"
+                    if len(target_parts) == 5:
+                        # Handle nested definitions like elem.10.def.3.1
+                        if target_parts[2] == 'def':
+                            group_num = target_parts[3]
+                            item_num = target_parts[4]
+                            canonical_ref = f"{book_num_roman}.def.{group_num}.{item_num}"
+                        elif target_parts[2] == 'c' and target_parts[3] == 'n':
+                            section_type_canonical = 'cn'
+                            item_num = target_parts[4]
+                            canonical_ref = f"{book_num_roman}.{section_type_canonical}.{item_num}"
+                        elif target_parts[3] == 'p':
+                            prop_num = target_parts[2]
+                            porism_num = target_parts[4]
+                            canonical_ref = f"{book_num_roman}.{prop_num}.p.{porism_num}"
+                        elif target_parts[3] == 'l':
+                            prop_num = target_parts[2]
+                            lemma_num = target_parts[4]
+                            canonical_ref = f"{book_num_roman}.{prop_num}.l.{lemma_num}"
                     elif len(target_parts) == 4 and target_parts[2] == 'post':
                         section_type_canonical = 'post'
                         item_num = target_parts[3]
@@ -167,10 +181,18 @@ def parse_book_xml(file_path, entry_number_start=0):
                     book_num_roman = ROMAN_NUMERALS.get(parts[1])
 
                     if book_num_roman:
-                        if len(parts) == 5 and parts[2] == 'c' and parts[3] == 'n':
-                            item_num = parts[4]
-                            canonical_ref = f"{book_num_roman}.cn.{item_num}"
-                            folder_name = f"cn.{item_num}"
+                        if len(parts) == 5:
+                            # Handle nested definitions like elem.10.def.3.1
+                            section_type_str = parts[2]
+                            if section_type_str == 'def':
+                                group_num = parts[3]
+                                item_num = parts[4]
+                                canonical_ref = f"{book_num_roman}.def.{group_num}.{item_num}"
+                                folder_name = f"def.{group_num}.{item_num}"
+                            elif parts[2] == 'c' and parts[3] == 'n':
+                                item_num = parts[4]
+                                canonical_ref = f"{book_num_roman}.cn.{item_num}"
+                                folder_name = f"cn.{item_num}"
                         elif len(parts) == 4 and parts[2] == 'post':
                             item_num = parts[3]
                             canonical_ref = f"{book_num_roman}.post.{item_num}"
@@ -239,30 +261,71 @@ def parse_book_xml(file_path, entry_number_start=0):
                             entry_content_rst.append("\n**Q. E. D.**\n")
                         elif div4_type == 'porism':
                             porism_id = child.attrib.get('id')
-                            
-                            # Create canonical title like III.1.p.1
+                            porism_n = child.attrib.get('n')
                             porism_title = "Porism" # Default
                             if porism_id:
                                 parts = porism_id.split('.')
                                 if len(parts) == 5:
-                                    book_roman = ROMAN_NUMERALS.get(parts[1])
-                                    prop_num = parts[2]
-                                    p_literal = parts[3]
+                                    # elem.3.1.p.1
+                                    # We need the prop_num from the parent entry, not from the porism_id itself
+                                    # Assuming entry_id is like elem.3.1
+                                    parent_parts = entry_id.split('.')
+                                    if len(parent_parts) >= 3:
+                                        prop_num = parent_parts[2]
+                                    else:
+                                        prop_num = "UNKNOWN" # Fallback
+                                    
+                                    p_literal = parts[3] # should be 'p'
                                     porism_num = parts[4]
-                                    if book_roman:
-                                        porism_title = f"{book_roman}.{prop_num}.{p_literal}.{porism_num}"
-
+                                    if p_literal == 'p':
+                                        porism_title = f"{book_num_roman}.{prop_num}.p.{porism_num}"
+                            
                             porism_content = []
-                            for grand_child in child:
-                                if grand_child.tag == 'p':
-                                    inline_rst = convert_inline_xml_to_rst(grand_child, dependencies)
-                                    if inline_rst:
-                                        porism_content.append(inline_rst)
-
+                            for sub_child in child:
+                                if sub_child.tag == 'head':
+                                    continue
+                                elif sub_child.tag == 'p':
+                                    inline_rst = convert_inline_xml_to_rst(sub_child, dependencies)
+                                    porism_content.append(inline_rst)
+                            
                             if porism_id and porism_content:
-                                entry_content_rst.append(f"\n.. _{porism_id}:\n")
+                                entry_content_rst.append(f"\n.. _{porism_title}:\n")
                                 entry_content_rst.append(f"**{porism_title}**\n")
                                 entry_content_rst.append("\n".join(porism_content))
+
+                        elif div4_type == 'lemma':
+                            lemma_id = child.attrib.get('id')
+                            lemma_n = child.attrib.get('n')
+                            lemma_title = "Lemma" # Default
+                            if lemma_id:
+                                parts = lemma_id.split('.')
+                                if len(parts) == 5:
+                                    # elem.10.9.l.1
+                                    # We need the prop_num from the parent entry, not from the lemma_id itself
+                                    # Assuming entry_id is like elem.10.9
+                                    parent_parts = entry_id.split('.')
+                                    if len(parent_parts) >= 3:
+                                        prop_num = parent_parts[2]
+                                    else:
+                                        prop_num = "UNKNOWN" # Fallback
+
+                                    l_literal = parts[3] # should be 'l'
+                                    lemma_num = parts[4]
+                                    if l_literal == 'l':
+                                        lemma_title = f"{book_num_roman}.{prop_num}.l.{lemma_num}"
+                            
+                            lemma_content = []
+                            for sub_child in child:
+                                if sub_child.tag == 'head':
+                                    continue
+                                elif sub_child.tag == 'p':
+                                    inline_rst = convert_inline_xml_to_rst(sub_child, dependencies)
+                                    lemma_content.append(inline_rst)
+                            
+                            if lemma_id and lemma_content:
+                                entry_content_rst.append(f"\n.. _{lemma_title}:\n")
+                                entry_content_rst.append(f"**{lemma_title}**\n")
+                                entry_content_rst.append("\n".join(lemma_content))
                             continue
 
                         
@@ -692,8 +755,8 @@ def main():
     main_index_content = [
         ":navigation: header",
         ":order: 2\n",
-        "Elements Heath Edition",
-        "============\n",
+        "Heath",
+        "=====\n",
         ".. collection::",
         "   :type: book",
         "   :title: Books",

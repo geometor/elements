@@ -66,18 +66,18 @@ Dependency Graph
    digraph {
      rankdir="TB";
      node [shape=box, style=rounded];
-     "elem.7.5 elem.7.6" [style="rounded,filled", fillcolor=orange];
      "VII.13" [URL="/heath/VII/13/", target="_top"];
+     "elem.7.5 elem.7.6" [style="rounded,filled", fillcolor=orange];
      "VII.14" [style="rounded,filled", fillcolor=lightblue, URL="/heath/VII/14/", target="_top"];
+     "VII.9" [URL="/heath/VII/9/", target="_top"];
      "VII.def.20" [style="rounded,filled", fillcolor=orange, URL="/heath/VII/def.20/", target="_top"];
      "VII.10" [URL="/heath/VII/10/", target="_top"];
-     "VII.9" [URL="/heath/VII/9/", target="_top"];
+     "VII.14" -> "VII.13";
      "VII.9" -> "elem.7.5 elem.7.6";
      "VII.10" -> "elem.7.5 elem.7.6";
-     "VII.14" -> "VII.13";
+     "VII.10" -> "VII.9";
      "VII.13" -> "VII.def.20";
      "VII.13" -> "VII.10";
-     "VII.10" -> "VII.9";
    }
 
 

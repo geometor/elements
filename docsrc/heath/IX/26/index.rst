@@ -32,8 +32,8 @@ Dependency Graph
      node [shape=box, style=rounded];
      "IX.24" [URL="/heath/IX/24/", target="_top"];
      "VII.def.7" [style="rounded,filled", fillcolor=orange, URL="/heath/VII/def.7/", target="_top"];
-     "IX.26" [style="rounded,filled", fillcolor=lightblue, URL="/heath/IX/26/", target="_top"];
      "VII.def.6" [style="rounded,filled", fillcolor=orange, URL="/heath/VII/def.6/", target="_top"];
+     "IX.26" [style="rounded,filled", fillcolor=lightblue, URL="/heath/IX/26/", target="_top"];
      "IX.26" -> "IX.24";
      "IX.26" -> "VII.def.7";
      "IX.24" -> "VII.def.6";

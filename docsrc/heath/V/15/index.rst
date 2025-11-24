@@ -50,16 +50,16 @@ Dependency Graph
    digraph {
      rankdir="TB";
      node [shape=box, style=rounded];
-     "V.def.5" [style="rounded,filled", fillcolor=orange, URL="/heath/V/def.5/", target="_top"];
-     "V.12" [URL="/heath/V/12/", target="_top"];
-     "V.15" [style="rounded,filled", fillcolor=lightblue, URL="/heath/V/15/", target="_top"];
      "V.7" [URL="/heath/V/7/", target="_top"];
+     "V.15" [style="rounded,filled", fillcolor=lightblue, URL="/heath/V/15/", target="_top"];
      "V.1" [style="rounded,filled", fillcolor=orange, URL="/heath/V/1/", target="_top"];
-     "V.7" -> "V.def.5";
-     "V.12" -> "V.def.5";
-     "V.15" -> "V.12";
+     "V.12" [URL="/heath/V/12/", target="_top"];
+     "V.def.5" [style="rounded,filled", fillcolor=orange, URL="/heath/V/def.5/", target="_top"];
      "V.15" -> "V.7";
      "V.12" -> "V.1";
+     "V.15" -> "V.12";
+     "V.7" -> "V.def.5";
+     "V.12" -> "V.def.5";
    }
 
 

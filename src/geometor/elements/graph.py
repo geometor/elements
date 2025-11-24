@@ -51,10 +51,24 @@ def convert_inline_xml_to_rst(element, dependencies, is_enunciation=False):
                 book_num_roman = ROMAN_NUMERALS.get(book_num_str)
                 
                 if book_num_roman:
-                    if len(target_parts) == 5 and target_parts[2] == 'c' and target_parts[3] == 'n':
-                        section_type_canonical = 'cn'
-                        item_num = target_parts[4]
-                        canonical_ref = f"{book_num_roman}.{section_type_canonical}.{item_num}"
+                    if len(target_parts) == 5:
+                        # Handle nested definitions like elem.10.def.3.1
+                        if target_parts[2] == 'def':
+                            group_num = target_parts[3]
+                            item_num = target_parts[4]
+                            canonical_ref = f"{book_num_roman}.def.{group_num}.{item_num}"
+                        elif target_parts[2] == 'c' and target_parts[3] == 'n':
+                            section_type_canonical = 'cn'
+                            item_num = target_parts[4]
+                            canonical_ref = f"{book_num_roman}.{section_type_canonical}.{item_num}"
+                        elif target_parts[3] == 'p':
+                            prop_num = target_parts[2]
+                            porism_num = target_parts[4]
+                            canonical_ref = f"{book_num_roman}.{prop_num}.p.{porism_num}"
+                        elif target_parts[3] == 'l':
+                            prop_num = target_parts[2]
+                            lemma_num = target_parts[4]
+                            canonical_ref = f"{book_num_roman}.{prop_num}.l.{lemma_num}"
                     elif len(target_parts) == 4 and target_parts[2] == 'post':
                         section_type_canonical = 'post'
                         item_num = target_parts[3]
@@ -160,10 +174,19 @@ def parse_book_xml(file_path, entry_number_start=0):
                     book_num_roman = ROMAN_NUMERALS.get(parts[1])
 
                     if book_num_roman:
-                        if len(parts) == 5 and parts[2] == 'c' and parts[3] == 'n':
-                            item_num = parts[4]
-                            canonical_ref = f"{book_num_roman}.cn.{item_num}"
-                            folder_name = f"cn.{item_num}"
+                        if len(parts) == 5:
+                            # Handle nested definitions like elem.10.def.3.1
+                            section_type_str = parts[2]
+                            # Check if it is a definition
+                            if section_type_str == 'def':
+                                group_num = parts[3]
+                                item_num = parts[4]
+                                canonical_ref = f"{book_num_roman}.def.{group_num}.{item_num}"
+                                folder_name = f"def.{group_num}.{item_num}"
+                            elif parts[2] == 'c' and parts[3] == 'n':
+                                item_num = parts[4]
+                                canonical_ref = f"{book_num_roman}.cn.{item_num}"
+                                folder_name = f"cn.{item_num}"
                         elif len(parts) == 4 and parts[2] == 'post':
                             item_num = parts[3]
                             canonical_ref = f"{book_num_roman}.post.{item_num}"

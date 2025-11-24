@@ -40,15 +40,15 @@ Dependency Graph
    digraph {
      rankdir="TB";
      node [shape=box, style=rounded];
+     "VII.12" [URL="/heath/VII/12/", target="_top"];
+     "elem.7.11 elem.7.13" [style="rounded,filled", fillcolor=orange];
      "elem.7.5 elem.7.6" [style="rounded,filled", fillcolor=orange];
      "IX.35" [style="rounded,filled", fillcolor=lightblue, URL="/heath/IX/35/", target="_top"];
-     "elem.7.11 elem.7.13" [style="rounded,filled", fillcolor=orange];
      "VII.def.20" [style="rounded,filled", fillcolor=orange, URL="/heath/VII/def.20/", target="_top"];
-     "VII.12" [URL="/heath/VII/12/", target="_top"];
-     "VII.12" -> "elem.7.5 elem.7.6";
-     "IX.35" -> "elem.7.11 elem.7.13";
-     "VII.12" -> "VII.def.20";
      "IX.35" -> "VII.12";
+     "IX.35" -> "elem.7.11 elem.7.13";
+     "VII.12" -> "elem.7.5 elem.7.6";
+     "VII.12" -> "VII.def.20";
    }
 
 
