@@ -1,0 +1,31 @@
+:order: 350
+:original_id: XI.18
+:type: prop
+:dependencies: g.19, g.39, g.338, g.333, g.349
+
+.. _g.350:
+
+G.350
+=====
+
+**Heath ID:** :ref:`XI.18`
+
+   If a straight line be at right angles to any plane, all the planes through it will also be at right angles to the same plane.
+
+For let any straight line AB be at right angles to the plane of reference; I say that all the planes through AB are also at right angles to the plane of reference.
+
+For let the plane DE be drawn through AB, let CE be the common section of the plane DE and the plane of reference, let a point F be taken at random on CE, and from F let FG be drawn in the plane DE at right angles to CE. [:ref:`g.19`]
+
+Now, since AB is at right angles to the plane of reference, AB is also at right angles to all the straight lines which meet it and are in the plane of reference; [:ref:`g.333`] so that it is also at right angles to CE; therefore the angle ABF is right.
+
+But the angle GFB is also right; therefore AB is parallel to FG. [:ref:`g.39`]
+
+But AB is at right angles to the plane of reference; therefore FG is also at right angles to the plane of reference. [:ref:`g.338`]
+
+Now a plane is at right angles to a plane, when the straight lines drawn, in one of the planes, at right angles to the common section of the planes are at right angles to the remaining plane. [:ref:`g.349`]
+
+And FG, drawn in one of the planes DE at right angles to CE, the common section of the planes, was proved to be at right angles to the plane of reference; therefore the plane DE is at right angles to the plane of reference.
+
+Similarly also it can be proved that all the planes through AB are at right angles to the plane of reference.
+
+Therefore etc. Q. E. D.

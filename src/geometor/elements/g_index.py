@@ -1,4 +1,5 @@
 import networkx as nx
+import re
 from pathlib import Path
 import shutil
 import json
@@ -6,10 +7,10 @@ from geometor.elements.graph import build_graph
 
 def generate_g_index(output_dir=None):
     if output_dir is None:
-        # Default to project root docsrc/elements2
+        # Default to project root elements2
         current_file = Path(__file__)
         project_root = current_file.parent.parent.parent.parent
-        output_dir = project_root / "docsrc/elements2"
+        output_dir = project_root / "elements2"
     
     print("Building dependency graph...")
     G, all_books_data = build_graph()
@@ -85,25 +86,26 @@ def generate_g_index(output_dir=None):
         shutil.rmtree(output_path)
     output_path.mkdir(parents=True, exist_ok=True)
 
-    # Map from Canonical ID to G ID
+    # 1. Build ID Map
     id_map = {}
-    
-    # Create individual RST files
-    print("Generating RST files...")
     for i, node_ref in enumerate(g_sequence):
         g_id = i + 1
         g_name = f"g.{g_id}"
         id_map[node_ref] = g_name
+
+    # 2. Generate RST files
+    print("Generating RST files...")
+    for i, node_ref in enumerate(g_sequence):
+        g_id = i + 1
+        g_name = f"g.{g_id}"
         
         node_data = G.nodes[node_ref]
         
-        # Create file content
-        # We wrap the original content but change the title/header?
-        # Or just include the original content.
-        # The user wants "uniform codified set".
+        # Create directory for the G-node
+        node_dir = output_path / g_name
+        node_dir.mkdir(parents=True, exist_ok=True)
         
-        filename = f"{g_name}.rst"
-        filepath = output_path / filename
+        filepath = node_dir / "index.rst"
         
         # Construct RST content
         rst_content = [
@@ -114,13 +116,24 @@ def generate_g_index(output_dir=None):
         
         # Add dependencies if available
         if node_data.get('dependencies'):
-            deps_str = ', '.join(sorted(list(set(node_data['dependencies']))))
+            # Replace dependency refs with G-refs
+            deps_list = []
+            for dep in sorted(list(set(node_data['dependencies']))):
+                if dep in id_map:
+                    deps_list.append(id_map[dep])
+                else:
+                    deps_list.append(dep) # Keep original if not in map
+            deps_str = ', '.join(deps_list)
             rst_content.append(f":dependencies: {deps_str}")
             
         rst_content.append("")
         
+        # Ref link
+        rst_content.append(f".. _{g_name}:")
+        rst_content.append("")
+        
         # Title
-        title = f"{g_name}"
+        title = f"G.{g_id}"
         rst_content.append(title)
         rst_content.append("=" * len(title))
         rst_content.append("")
@@ -137,6 +150,15 @@ def generate_g_index(output_dir=None):
         
         content = node_data.get('content_rst', '')
         
+        # Replace refs in content
+        def replace_ref(match):
+            ref_key = match.group(1)
+            if ref_key in id_map:
+                return f":ref:`{id_map[ref_key]}`"
+            return match.group(0)
+            
+        content = re.sub(r":ref:`([^`]+)`", replace_ref, content)
+        
         # Let's copy images.
         canonical_images_dir = Path("resources/canonical_images")
         heath_propositions_dir = Path("resources/heath/propositions")
@@ -145,7 +167,7 @@ def generate_g_index(output_dir=None):
             image_stem = node_ref
             # Copy all matching images
             for img in canonical_images_dir.glob(f"{image_stem}*.jpg"):
-                shutil.copy(img, output_path)
+                shutil.copy(img, node_dir)
         
         if heath_propositions_dir.exists():
             graphic_stem = node_ref
@@ -154,7 +176,7 @@ def generate_g_index(output_dir=None):
                 # We might need to invert it again if we don't have the inverted one handy.
                 # Or we can just copy it. transform.py inverted it.
                 # Let's just copy the graphic for now.
-                shutil.copy(graphic_file, output_path / f"{graphic_stem}.graphic.png")
+                shutil.copy(graphic_file, node_dir / f"{graphic_stem}.graphic.png")
                 # If we want the inverted one, we should probably do that image processing here too
                 # or assume it's done.
         
@@ -179,16 +201,8 @@ def generate_g_index(output_dir=None):
         "   :type: g_node",
         "   :sort: order",
         "",
-        ".. toctree::",
-        "   :maxdepth: 1",
-        "   :caption: Contents:",
-        "",
     ]
     
-    for i in range(len(g_sequence)):
-        g_id = i + 1
-        index_content.append(f"   g.{g_id}")
-        
     with open(output_path / "index.rst", "w") as f:
         f.write("\n".join(index_content))
 

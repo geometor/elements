@@ -1,0 +1,29 @@
+:order: 364
+:original_id: XI.29
+:type: prop
+:dependencies: g.47, g.49, g.363
+
+.. _g.364:
+
+G.364
+=====
+
+**Heath ID:** :ref:`XI.29`
+
+   Parallelepipedal solids which are on the same base and of the same height, and in which the extremities of the sides which stand up are on the same straight lines, are equal to one another.
+
+Let CM, CN be parallelepipedal solids on the same base AB and of the same height, and let the extremities of their sides which stand up, namely AG, AF, LM, LN, CD, CE, BH, BK, be on the same straight lines FN, DK; I say that the solid CM is equal to the solid CN.
+
+For, since each of the figures CH, CK is a parallelogram, CB is equal to each of the straight lines DH, EK, [:ref:`g.47`] hence DH is also equal to EK.
+
+Let EH be subtracted from each; therefore the remainder DE is equal to the remainder HK.
+
+Hence the triangle DCE is also equal to the triangle HBK, [:ref:`g.363`] and the parallelogram DG to the parallelogram HN. [:ref:`g.49`]
+
+For the same reason the triangle AFG is also equal to the triangle MLN.
+
+But the parallelogram CF is equal to the parallelogram BM, and CG to BN, for they are opposite; therefore the prism contained by the two triangles AFG, DCE and the three parallelograms AD, DG, CG is equal to the prism contained by the two triangles MLN, HBK and the three parallelograms BM, HN, BN.
+
+Let there be added to each the solid of which the parallelogram AB is the base and GEHM its opposite; therefore the whole parallelepipedal solid CM is equal to the whole parallelepipedal solid CN.
+
+Therefore etc. Q. E. D.

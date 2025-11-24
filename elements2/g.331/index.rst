@@ -1,0 +1,27 @@
+:order: 331
+:original_id: XI.2
+:type: prop
+:dependencies: g.330
+
+.. _g.331:
+
+G.331
+=====
+
+**Heath ID:** :ref:`XI.2`
+
+   If two straight lines cut one another, they are in one plane, and every triangle is in one plane.
+
+For let the two straight lines AB, CD cut one another at the point E; I say that AB, CD are in one plane, and every triangle is in one plane.
+
+For let points F, G be taken at random on EC, EB, let CB, FG be joined, and let FH, GK be drawn across; I say first that the triangle ECB is in one plane.
+
+For, if part of the triangle ECB, either FHC or GBK, is in the plane of reference, and the rest in another, a part also of one of the straight lines EC, EB will be in the plane of reference, and a part in another.
+
+But, if the part FCBG of the triangle ECB be in the plane of reference, and the rest in another, a part also of both the straight lines EC, EB will be in the plane of reference and a part in another: which was proved absurd. [:ref:`g.330`]
+
+Therefore the triangle ECB is in one plane.
+
+But, in whatever plane the triangle ECB is, in that plane also is each of the straight lines EC, EB, and, in whatever plane each of the straight lines EC, EB is, in that plane are AB, CD also. [:ref:`g.330`]
+
+Therefore the straight lines AB, CD are in one plane, and every triangle is in one plane. Q. E. D.

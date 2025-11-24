@@ -1,0 +1,42 @@
+:order: 426
+:original_id: X.13
+:type: None
+:dependencies: g.60, g.112, g.119, g.423
+
+.. _g.426:
+
+G.426
+=====
+
+**Heath ID:** :ref:`X.13`
+
+   If two magnitudes be commensurable, and the one of them be incommensurable with any magnitude, the remaining one will also be incommensurable with the same.
+
+Let A, B be two commensurable magnitudes, and let one of them, A, be incommensurable with any other magnitude C; I say that the remaining one, B, will also be incommensurable with C.
+
+For, if B is commensurable with C, while A is also commensurable with B, A is also commensurable with C. [:ref:`g.423`]
+
+But it is also incommensurable with it: which is impossible.
+
+Therefore B is not commensurable with C; therefore it is incommensurable with it.
+
+Therefore etc.
+
+LEMMA.
+
+Given two unequal straight lines, to find by what square the square on the greater is greater than the square on the less. 
+
+Let AB, C be the given two unequal straight lines, and let AB be the greater of them; thus it is required to find by what square the square on AB is greater than the square on C. 
+       
+
+Let the semicircle ADB be described on AB, and let AD be fitted into it equal to C; [:ref:`g.119`] let DB be joined. 
+
+It is then manifest that the angle ADB is right, [:ref:`g.112`] and that the square on AB is greater than the square on AD, that is, C, by the square on DB. [:ref:`g.60`] 
+
+Similarly also, if two straight lines be given, the straight line the square on which is equal to the sum of the squares on them is found in this manner. 
+
+Let AD, DB be the given two straight lines, and let it be required to find the straight line the square on which is equal to the sum of the squares on them. 
+
+Let them be placed so as to contain a right angle, that formed by AD, DB; and let AB be joined. 
+
+It is again manifest that the straight line the square on which is equal to the sum of the squares on AD, DB is AB. [:ref:`g.60`] Q. E. D.

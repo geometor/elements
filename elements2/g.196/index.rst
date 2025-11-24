@@ -1,0 +1,111 @@
+:order: 196
+:original_id: VI.24
+:type: prop
+:dependencies: g.159, g.161, g.163, g.168, g.192, g.174
+
+.. _g.196:
+
+G.196
+=====
+
+**Heath ID:** :ref:`VI.24`
+
+   In any parallelogram the parallelograms about the diameter are similar both to the whole and to one another.
+
+Let ``ABCD`` be a parallelogram, and ``AC`` its diameter, and let ``EG``, ``HK`` be parallelograms about ``AC``; I say that each of the parallelograms ``EG``, ``HK`` is similar both to the whole ``ABCD`` and to the other.
+
+For, since ``EF`` has been drawn parallel to ``BC``, one of the sides of the triangle ``ABC``,
+
+
+.. container:: center
+
+   proportionally, as ``BE`` is to ``EA``, so is ``CF`` to ``FA``. [:ref:`g.168`]
+
+
+Again, since ``FG`` has been drawn parallel to ``CD``, one of the sides of the triangle ``ACD``,
+
+
+.. container:: center
+
+   proportionally, as ``CF`` is to ``FA``, so is ``DG`` to ``GA``. [:ref:`g.168`]
+
+
+But it was proved that,
+
+
+.. container:: center
+
+   as ``CF`` is to ``FA``, so also is ``BE`` to ``EA``; therefore also, as ``BE`` is to ``EA``, so is ``DG`` to ``GA``,
+
+
+and therefore, ``componendo``,
+
+
+.. container:: center
+
+   as ``BA`` is to ``AE``, so is ``DA`` to ``AG``, [:ref:`g.161`]
+
+
+and, alternately,
+
+
+.. container:: center
+
+   as ``BA`` is to ``AD``, so is ``EA`` to ``AG``. [:ref:`g.159`]
+
+
+Therefore in the parallelograms ``ABCD``, ``EG``, the sides about the common angle ``BAD`` are proportional.
+
+And, since ``GF`` is parallel to ``DC``,
+
+
+.. container:: center
+
+   the angle ``AFG`` is equal to the angle ``DCA``;
+
+
+and the angle ``DAC`` is common to the two triangles ``ADC``, ``AGF``;
+
+
+.. container:: center
+
+   therefore the triangle ``ADC`` is equiangular with the triangle ``AGF``.
+
+
+For the same reason
+
+
+.. container:: center
+
+   the triangle ``ACB`` is also equiangular with the triangle ``AFE``,
+
+
+and the whole parallelogram ``ABCD`` is equiangular with the parallelogram ``EG``.
+
+Therefore, proportionally,
+
+
+.. container:: center
+
+   as ``AD`` is to ``DC``, so is ``AG`` to ``GF``, as ``DC`` is to ``CA``, so is ``GF`` to ``FA``, as ``AC`` is to ``CB``, so is ``AF`` to ``FE``,
+
+
+and further, as ``CB`` is to ``BA``, so is ``FE`` to ``EA``.
+
+And, since it was proved that,
+
+
+.. container:: center
+
+   as ``DC`` is to ``CA``, so is ``GF`` to ``FA``,
+
+
+and, as ``AC`` is to ``CB``, so is ``AF`` to ``FE``, therefore, ex aequali, as ``DC`` is to ``CB``, so is ``GF`` to ``FE``. [:ref:`g.163`]
+
+Therefore in the parallelograms ``ABCD``, ``EG`` the sides about the equal angles are proportional; therefore the parallelogram ``ABCD`` is similar to the parallelogram ``EG``. [:ref:`g.174`]
+
+For the same reason the parallelogram ``ABCD`` is also similar to the parallelogram ``KH``; therefore each of the parallelograms ``EG``, ``HK`` is similar to ``ABCD``.
+
+But figures similar to the same rectilineal figure are also similar to one another; [:ref:`g.192`] therefore the parallelogram ``EG`` is also similar to the parallelogram ``HK``.
+
+Therefore etc. Q. E. D.

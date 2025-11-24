@@ -1,0 +1,39 @@
+:order: 198
+:original_id: VI.26
+:type: prop
+:dependencies: g.44, g.150, g.148, g.196
+
+.. _g.198:
+
+G.198
+=====
+
+**Heath ID:** :ref:`VI.26`
+
+   If from a parallelogram there be taken away a parallelogram similar and similarly situated to the whole and having a common angle with it, it is about the same diameter with the whole
+
+For from the parallelogram ``ABCD`` let there be taken away the parallelogram ``AF`` similar and similarly situated to ``ABCD``, and having the angle ``DAB`` common with it;
+
+I say that ``ABCD`` is about the same diameter with ``AF``.
+
+For suppose it is not, but, if possible, let ``AHC`` be the diameter < of ``ABCD`` >, let ``GF`` be produced and carried through to ``H``, and let ``HK`` be drawn through ``H`` parallel to either of the straight lines ``AD``, ``BC``. [:ref:`g.44`]
+
+Since, then, ``ABCD`` is about the same diameter with ``KG``, therefore, as ``DA`` is to ``AB``, so is ``GA`` to ``AK``. [:ref:`g.196`]
+
+But also, because of the similarity of ``ABCD``, ``EG``,
+
+
+.. container:: center
+
+   as ``DA`` is to ``AB``, so is ``GA`` to ``AE``;
+
+
+therefore also, as ``GA`` is to ``AK``, so is ``GA`` to ``AE``. [:ref:`g.150`]
+
+Therefore ``GA`` has the same ratio to each of the straight lines ``AK``, ``AE``.
+
+Therefore ``AE`` is equal to ``AK`` [:ref:`g.148`], the less to the greater : which is impossible.
+
+Therefore ``ABCD`` cannot but be about the same diameter with ``AF``; therefore the parallelogram ``ABCD`` is about the same diameter with the parallelogram ``AF``.
+
+Therefore etc. Q. E. D.

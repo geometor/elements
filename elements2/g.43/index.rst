@@ -1,0 +1,44 @@
+:order: 43
+:original_id: I.30
+:type: prop
+:dependencies: g.42, g.1
+
+.. _g.43:
+
+G.43
+====
+
+**Heath ID:** :ref:`I.30`
+
+   Straight lines parallel to the same straight line are also parallel to one another.
+
+Let each of the straight lines ``AB``, ``CD`` be parallel to ``EF``; I say that ``AB`` is also parallel to ``CD``. 
+
+For let the straight line ``GK`` fall upon them; 
+
+Then, since the straight line ``GK`` has fallen on the parallel straight lines ``AB``, ``EF``, the angle ``AGK`` is equal to the angle ``GHF``. [:ref:`g.42`]
+
+Again, since the straight line ``GK`` has fallen on the parallel straight lines ``EF``, ``CD``, the angle ``GHF`` is equal to the angle ``GKD``. [:ref:`g.42`]
+        
+
+But the angle ``AGK`` was also proved equal to the angle ``GHF``; therefore the angle ``AGK`` is also equal to the angle ``GKD``; [:ref:`g.1`] and they are alternate. 
+
+Therefore ``AB`` is parallel to ``CD``.
+
+
+**Q. E. D.**
+
+
+Q. E. D.
+
+
+.. note::
+
+
+   **20**
+
+   
+
+   The usual ``conclusion`` in general terms (Therefore etc.
+
+   ) repeating the enunciation is, curiously enough, wanting at the end of this proposition.

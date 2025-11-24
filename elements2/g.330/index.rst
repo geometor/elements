@@ -1,0 +1,24 @@
+:order: 330
+:original_id: XI.1
+:type: prop
+
+.. _g.330:
+
+G.330
+=====
+
+**Heath ID:** :ref:`XI.1`
+
+   A part of a straight line cannot be in the plane of reference and a part in a plane more elevated.
+
+For, if possible, let a part AB of the straight line ABC be in the plane of reference, and a part BC in a plane more elevated.
+
+There will then be in the plane of reference some straight line continuous with AB in a straight line.
+
+Let it be BD; therefore AB is a common segment of the two straight lines ABC, ABD: which is impossible, inasmuch as, if we describe a circle with centre B and distance AB, the diameters will cut off unequal circumferences of the circle.
+
+Therefore a part of a straight line cannot be in the plane of reference, and a part in a plane more elevated. Q. E. D.
+1. the plane of reference,
+τὸ ὑποκείμενον ἐπίπεδον, the plane laid down or assumed.
+2. more elevated,
+μετεωροτέρῳ.
