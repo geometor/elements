@@ -1,0 +1,10 @@
+:order: 232
+:original_id: VII.def.15
+:type: def
+
+g.232
+=====
+
+**Heath ID:** :ref:`VII.def.15`
+
+   A number is said to multiply a number when that which is multiplied is added to itself as many times as there are units in the other, and thus some number is produced.

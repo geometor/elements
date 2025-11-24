@@ -1,0 +1,43 @@
+:order: 109
+:original_id: III.28
+:type: prop
+:dependencies: I.8, III.26
+
+g.109
+=====
+
+**Heath ID:** :ref:`III.28`
+
+   In equal circles equal straight lines cut off equal circumferences, the greater equal to the greater and the less to the less.
+
+Let ``ABC``, ``DEF`` be equal circles, and in the circles let ``AB``, ``DE`` be equal straight lines cutting off ``ACB``, ``DFE`` as greater circumferences and ``AGB``, ``DHE`` as lesser; I say that the greater circumference ``ACB`` is equal to the greater circumference ``DFE``, and the less circumference ``AGB`` to ``DHE``.
+
+For let the centres ``K``, ``L`` of the circles be taken, and let ``AK``, ``KB``, ``DL``, ``LE`` be joined.
+
+Now, since the circles are equal,
+
+
+.. container:: center
+
+   the radii are also equal; therefore the two sides ``AK``, ``KB`` are equal to the two sides ``DL``, ``LE``;
+
+
+and the base ``AB`` is equal to the base ``DE``;
+
+
+.. container:: center
+
+   therefore the angle ``AKB`` is equal to the angle ``DLE``. [:ref:`I.8`]
+
+
+But equal angles stand on equal circumferences, when they are at the centres; [:ref:`III.26`]
+
+
+.. container:: center
+
+   therefore the circumference ``AGB`` is equal to ``DHE``.
+
+
+And the whole circle ``ABC`` is also equal to the whole circle ``DEF``; therefore the circumference ``ACB`` which remains is also equal to the circumference ``DFE`` which remains.
+
+Therefore etc. Q. E. D.

@@ -1,0 +1,17 @@
+:order: 278
+:original_id: VIII.22
+:type: prop
+:dependencies: VIII.20
+
+g.278
+=====
+
+**Heath ID:** :ref:`VIII.22`
+
+   If three numbers be in continued proportion, and the first be square, the third will also be square.
+
+Let A, B, C be three numbers in continued proportion, and let A the first be square; I say that C the third is also square.
+
+For, since between A, C there is one mean proportional number, B, therefore A, C are similar plane numbers. [:ref:`VIII.20`]
+
+But A is square; therefore C is also square. Q. E. D.
