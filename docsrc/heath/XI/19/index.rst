@@ -38,13 +38,13 @@ Dependency Graph
    digraph {
      rankdir="TB";
      node [shape=box, style=rounded];
-     "XI.13" [URL="/heath/XI/13/", target="_top"];
-     "XI.3" [style="rounded,filled", fillcolor=orange, URL="/heath/XI/3/", target="_top"];
-     "XI.19" [style="rounded,filled", fillcolor=lightblue, URL="/heath/XI/19/", target="_top"];
-     "XI.def.4" [style="rounded,filled", fillcolor=orange, URL="/heath/XI/def.4/", target="_top"];
      "XI.def.3" [style="rounded,filled", fillcolor=orange, URL="/heath/XI/def.3/", target="_top"];
-     "XI.19" -> "XI.13";
-     "XI.13" -> "XI.3";
-     "XI.19" -> "XI.def.4";
+     "XI.19" [style="rounded,filled", fillcolor=lightblue, URL="/heath/XI/19/", target="_top"];
+     "XI.13" [URL="/heath/XI/13/", target="_top"];
+     "XI.def.4" [style="rounded,filled", fillcolor=orange, URL="/heath/XI/def.4/", target="_top"];
+     "XI.3" [style="rounded,filled", fillcolor=orange, URL="/heath/XI/3/", target="_top"];
      "XI.13" -> "XI.def.3";
+     "XI.19" -> "XI.13";
+     "XI.19" -> "XI.def.4";
+     "XI.13" -> "XI.3";
    }

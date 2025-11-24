@@ -28,3 +28,30 @@ But the unit A measures D according to the units in it; therefore B also measure
 And it is manifest that, whatever place the measuring number has, reckoned from the unit, the same place also has the number according to which it measures, reckoned from the number measured, in the direction of the number before it.—
 
 Q. E. D.
+
+
+Dependency Graph
+----------------
+
+.. graphviz::
+
+   digraph {
+     rankdir="TB";
+     node [shape=box, style=rounded];
+     "G.216" [label="G.216", style="rounded,filled", fillcolor=orange, URL="/elements2/g.216/", target="_top"];
+     "G.225" [label="G.225", URL="/elements2/g.225/", target="_top"];
+     "G.295" [label="G.295", style="rounded,filled", fillcolor=lightblue, URL="/elements2/g.295/", target="_top"];
+     "G.222" [label="G.222", URL="/elements2/g.222/", target="_top"];
+     "G.219" [label="G.219", style="rounded,filled", fillcolor=orange, URL="/elements2/g.219/", target="_top"];
+     "G.222" -> "G.216";
+     "G.295" -> "G.225";
+     "G.225" -> "G.222";
+     "G.222" -> "G.219";
+   }
+
+
+
+Required for
+------------
+
+:ref:`g.299`, :ref:`g.322`, :ref:`g.329`

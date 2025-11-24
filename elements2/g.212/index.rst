@@ -26,3 +26,9 @@ Therefore, as many numbers as there are in BC equal to A, so many are there also
 Therefore, whatever multiple BC is of A, the same multiple also is the sum of BC, EF of the sum of A, D.
 
 Therefore, whatever part A is of BC, the same part also is the sum of A, D of the sum of BC, EF. Q. E. D.
+
+
+Required for
+------------
+
+:ref:`g.213`, :ref:`g.214`, :ref:`g.215`

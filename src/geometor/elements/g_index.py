@@ -182,6 +182,94 @@ def generate_g_index(output_dir=None):
         
         rst_content.append(content)
         
+        # Dependency Graph
+        descendants = nx.descendants(G, node_ref)
+        if descendants:
+            rst_content.append("\n\nDependency Graph")
+            rst_content.append("----------------")
+            rst_content.append("")
+            
+            # Generate DOT
+            nodes_in_chain = descendants.union({node_ref})
+            dot_lines = [
+                "digraph {",
+                '  rankdir="TB";',
+                '  node [shape=box, style=rounded];'
+            ]
+            
+            for node in nodes_in_chain:
+                attrs = []
+                # Label with G-ID if available, else original
+                label = id_map.get(node, node)
+                if label.startswith("g."):
+                    label = label.replace("g.", "G.")
+                attrs.append(f'label="{label}"')
+                
+                if node == node_ref:
+                    attrs.append('style="rounded,filled"')
+                    attrs.append('fillcolor=lightblue')
+                else:
+                    successors_in_chain = [succ for succ in G.successors(node) if succ in nodes_in_chain]
+                    if not successors_in_chain:
+                        attrs.append('style="rounded,filled"')
+                        attrs.append('fillcolor=orange')
+                
+                if node in id_map:
+                    # Link to the directory of the G-node
+                    url = f"/elements2/{id_map[node]}/"
+                    attrs.append(f'URL="{url}"')
+                    attrs.append('target="_top"')
+                
+                attr_str = ", ".join(attrs)
+                
+                # Use G-ID for node identifier if available
+                node_id = label # We already capitalized it above if it was g.N
+                # But wait, label might be the original ID if not in map.
+                # Let's ensure node_id is quoted properly if it contains dots (it does).
+                
+                dot_lines.append(f'  "{node_id}" [{attr_str}];')
+            
+            for node in nodes_in_chain:
+                # Source node ID
+                src_label = id_map.get(node, node)
+                if src_label.startswith("g."):
+                    src_label = src_label.replace("g.", "G.")
+                
+                for pred in G.predecessors(node):
+                    if pred in nodes_in_chain:
+                        # Pred node ID
+                        pred_label = id_map.get(pred, pred)
+                        if pred_label.startswith("g."):
+                            pred_label = pred_label.replace("g.", "G.")
+                            
+                        dot_lines.append(f'  "{pred_label}" -> "{src_label}";')
+            
+            dot_lines.append("}")
+            dot_content = "\n".join(dot_lines)
+            
+            rst_content.append(".. graphviz::")
+            rst_content.append("")
+            for line in dot_content.splitlines():
+                rst_content.append(f"   {line}")
+            rst_content.append("")
+
+        # Required for
+        ancestors = sorted(list(nx.ancestors(G, node_ref)))
+        if ancestors:
+            rst_content.append("\n\nRequired for")
+            rst_content.append("------------")
+            rst_content.append("")
+            
+            ref_list = []
+            for ancestor in ancestors:
+                if ancestor in id_map:
+                    ref_list.append(f":ref:`{id_map[ancestor]}`")
+                else:
+                    ref_list.append(ancestor)
+            
+            rst_content.append(', '.join(ref_list))
+            rst_content.append("")
+        
         with open(filepath, "w") as f:
             f.write("\n".join(rst_content))
 

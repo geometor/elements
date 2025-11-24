@@ -1,37 +1,83 @@
 :order: 335
-:original_id: XI.5
+:original_id: X.4
 :type: prop
-:dependencies: g.332, g.334, g.333
+:dependencies: g.333, g.334
 
 .. _g.335:
 
 G.335
 =====
 
-**Heath ID:** :ref:`XI.5`
+**Heath ID:** :ref:`X.4`
 
-   If a straight line be set up at right angles to three straight lines which meet one another, at their common point of section, the three straight lines are in one plane.
+   Given three commensurable magnitudes, to find their greatest common measure.
 
-For let a straight line AB be set up at right angles to the three straight lines BC, BD, BE, at their point of meeting at B; I say that BC, BD, BE are in one plane.
+Let A, B, C be the three given commensurable magnitudes; thus it is required to find the greatest common measure of A, B, C.
 
-For suppose they are not, but, if possible, let BD, BE be in the plane of reference and BC in one more elevated; let the plane through AB, BC be produced; it will thus make, as common section in the plane of reference, a straight line. [:ref:`g.332`]
+Let the greatest common measure of the two magnitudes A, B be taken, and let it be D; [:ref:`g.333`] then D either measures C, or does not measure it.
 
-Let it make BF.
+First, let it measure it.
 
-Therefore the three straight lines AB, BC, BF are in one plane, namely that drawn through AB, BC.
+Since then D measures C, while it also measures A, B, therefore D is a common measure of A, B, C.
 
-Now, since AB is at right angles to each of the straight lines BD, BE, therefore AB is also at right angles to the plane through BD, BE. [:ref:`g.334`]
+And it is manifest that it is also the greatest; for a greater magnitude than the magnitude D does not measure A, B.
 
-But the plane through BD, BE is the plane of reference; therefore AB is at right angles to the plane of reference.
+Next, let D not measure C.
 
-Thus AB will also make right angles with all the straight lines which meet it and are in the plane of reference. [:ref:`g.333`]
+I say first that C, D are commensurable.
 
-But BF which is in the plane of reference meets it; therefore the angle ABF is right.
+For, since A, B, C are commensurable, some magnitude will measure them, and this will of course measure A, B also; so that it will also measure the greatest common measure of A, B, namely D. [:ref:`g.334`]
 
-But, by hypothesis, the angle ABC is also right; therefore the angle ABF is equal to the angle ABC.
+But it also measures C; so that the said magnitude will measure C, D; therefore C, D are commensurable.
 
-And they are in one plane: which is impossible.
+Now let their greatest common measure be taken, and let it be E. [:ref:`g.333`]
 
-Therefore the straight line BC is not in a more elevated plane; therefore the three straight lines BC, BD, BE are in one plane.
+Since then E measures D, while D measures A, B, therefore E will also measure A, B.
 
-Therefore, if a straight line be set up at right angles to three straight lines, at their point of meeting, the three straight lines are in one plane. Q. E. D.
+But it measures C also; therefore E measures A, B, C; therefore E is a common measure of A, B, C.
+
+I say next that it is also the greatest.
+
+For, if possible, let there be some magnitude F greater than E, and let it measure A, B, C.
+
+Now, since F measures A, B, C, it will also measure A, B, and will measure the greatest common measure of A, B. [:ref:`g.334`]
+
+But the greatest common measure of A, B is D; therefore F measures D.
+
+But it measures C also; therefore F measures C, D; therefore F will also measure the greatest common measure of C, D. [:ref:`g.334`]
+
+But that is E; therefore F will measure E, the greater the less: which is impossible.
+
+Therefore no magnitude greater than the magnitude E will measure A, B, C; therefore E is the greatest common measure of A, B, C if D do not measure C, and, if it measure it, D is itself the greatest common measure.
+
+Therefore the greatest common measure of the three given commensurable magnitudes has been found.
+
+
+.. _elem.10.4.p.1:
+
+
+**X.4.p.1**
+
+
+From this it is manifest that, if a magnitude measure three magnitudes, it will also measure their greatest common measure. 
+Similarly too, with more magnitudes, the greatest common measure can be found, and the porism can be extended. Q. E. D.
+
+
+Dependency Graph
+----------------
+
+.. graphviz::
+
+   digraph {
+     rankdir="TB";
+     node [shape=box, style=rounded];
+     "G.335" [label="G.335", style="rounded,filled", fillcolor=lightblue, URL="/elements2/g.335/", target="_top"];
+     "G.334" [label="G.334", style="rounded,filled", fillcolor=orange, URL="/elements2/g.334/", target="_top"];
+     "G.331" [label="G.331", style="rounded,filled", fillcolor=orange, URL="/elements2/g.331/", target="_top"];
+     "G.332" [label="G.332", URL="/elements2/g.332/", target="_top"];
+     "G.333" [label="G.333", URL="/elements2/g.333/", target="_top"];
+     "G.335" -> "G.334";
+     "G.332" -> "G.331";
+     "G.333" -> "G.332";
+     "G.335" -> "G.333";
+   }

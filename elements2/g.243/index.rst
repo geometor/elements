@@ -19,3 +19,17 @@ If now A is prime, that which was enjoined will have been done.
 But if it is composite, some prime number will measure it. [:ref:`g.242`]
 
 Therefore any number either is prime or is measured by some prime number. Q. E. D.
+
+
+Dependency Graph
+----------------
+
+.. graphviz::
+
+   digraph {
+     rankdir="TB";
+     node [shape=box, style=rounded];
+     "G.242" [label="G.242", style="rounded,filled", fillcolor=orange, URL="/elements2/g.242/", target="_top"];
+     "G.243" [label="G.243", style="rounded,filled", fillcolor=lightblue, URL="/elements2/g.243/", target="_top"];
+     "G.243" -> "G.242";
+   }

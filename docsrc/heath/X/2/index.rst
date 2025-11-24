@@ -1,6 +1,6 @@
 :order: 2
 :number: 379
-:type: None
+:type: prop
 :dependencies: X.def.1
 
 

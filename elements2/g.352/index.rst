@@ -1,31 +1,18 @@
 :order: 352
-:original_id: XI.20
-:type: prop
-:dependencies: g.30, g.35, g.11
+:original_id: elem.10.16.l.1
+:type: unknown
 
 .. _g.352:
 
 G.352
 =====
 
-**Heath ID:** :ref:`XI.20`
+**Heath ID:** :ref:`elem.10.16.l.1`
 
-   If a solid angle be contained by three plane angles, any two, taken together in any manner, are greater than the remaining one.
 
-For let the solid angle at A be contained by the three plane angles BAC, CAD, DAB; I say that any two of the angles BAC, CAD, DAB, taken together in any manner, are greater than the remaining one.
 
-If now the angles BAC, CAD, DAB are equal to one another, it is manifest that any two are greater than the remaining one.
 
-But, if not, let BAC be greater, and on the straight line AB, and at the point A on it, let the angle BAE be constructed, in the plane through BA, AC, equal to the angle DAB; let AE be made equal to AD, and let BEC, drawn across through the point E, cut the straight lines AB, AC at the points B, C; let DB, DC be joined.
+Required for
+------------
 
-Now, since DA is equal to AE, and AB is common, two sides are equal to two sides; and the angle DAB is equal to the angle BAE; therefore the base DB is equal to the base BE. [:ref:`g.11`]
-
-And, since the two sides BD, DC are greater than BC, [:ref:`g.30`] and of these DB was proved equal to BE, therefore the remainder DC is greater than the remainder EC.
-
-Now, since DA is equal to AE, and AC is common, and the base DC is greater than the base EC, therefore the angle DAC is greater than the angle EAC. [:ref:`g.35`]
-
-But the angle DAB was also proved equal to the angle BAE; therefore the angles DAB, DAC are greater than the angle BAC.
-
-Similarly we can prove that the remaining angles also, taken together two and two, are greater than the remaining one.
-
-Therefore etc. Q. E. D.
+:ref:`g.466`, :ref:`g.467`, :ref:`g.468`, :ref:`g.472`, :ref:`g.473`, :ref:`g.474`, :ref:`g.475`, :ref:`g.476`, :ref:`g.477`, :ref:`g.353`, :ref:`g.376`, :ref:`g.377`, :ref:`g.380`, :ref:`g.385`, :ref:`g.386`, :ref:`g.387`, :ref:`g.392`, :ref:`g.393`, :ref:`g.408`, :ref:`g.410`, :ref:`g.411`, :ref:`g.419`, :ref:`g.420`, :ref:`g.421`, :ref:`g.426`, :ref:`g.427`, :ref:`g.428`, :ref:`g.429`, :ref:`g.430`, :ref:`g.435`, :ref:`g.437`, :ref:`g.438`, :ref:`g.442`, :ref:`g.443`, :ref:`g.444`, :ref:`g.460`, :ref:`g.461`, :ref:`g.462`, :ref:`g.569`, :ref:`g.574`, :ref:`g.578`

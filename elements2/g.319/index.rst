@@ -29,3 +29,34 @@ Therefore C is not odd; therefore C is even.
 Thus A measures B an even number of times.
 
 For this reason then it also measures the half of it. Q. E. D.
+
+
+Dependency Graph
+----------------
+
+.. graphviz::
+
+   digraph {
+     rankdir="TB";
+     node [shape=box, style=rounded];
+     "G.308" [label="G.308", style="rounded,filled", fillcolor=orange, URL="/elements2/g.308/", target="_top"];
+     "G.311" [label="G.311", URL="/elements2/g.311/", target="_top"];
+     "G.309" [label="G.309", URL="/elements2/g.309/", target="_top"];
+     "G.310" [label="G.310", style="rounded,filled", fillcolor=orange, URL="/elements2/g.310/", target="_top"];
+     "G.319" [label="G.319", style="rounded,filled", fillcolor=lightblue, URL="/elements2/g.319/", target="_top"];
+     "G.312" [label="G.312", URL="/elements2/g.312/", target="_top"];
+     "G.309" -> "G.308";
+     "G.312" -> "G.311";
+     "G.311" -> "G.309";
+     "G.312" -> "G.309";
+     "G.311" -> "G.310";
+     "G.312" -> "G.310";
+     "G.319" -> "G.312";
+   }
+
+
+
+Required for
+------------
+
+:ref:`g.320`

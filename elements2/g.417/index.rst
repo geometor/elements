@@ -1,35 +1,18 @@
 :order: 417
-:original_id: X.15
-:type: None
-:dependencies: g.416
+:original_id: elem.10.12 elem.10.13
+:type: unknown
 
 .. _g.417:
 
 G.417
 =====
 
-**Heath ID:** :ref:`X.15`
+**Heath ID:** :ref:`elem.10.12 elem.10.13`
 
-   If two commensurable magnitudes be added together, the whole will also be commensurable with each of them; and, if the whole be commensurable with one of them, the original magnitudes will also be commensurable.
 
-For let the two commensurable magnitudes AB, BC be added together; I say that the whole AC is also commensurable with each of the magnitudes AB, BC.
 
-For, since AB, BC are commensurable, some magnitude will measure them.
 
-Let it measure them, and let it be D.
+Required for
+------------
 
-Since then D measures AB, BC, it will also measure the whole AC.
-
-But it measures AB, BC also; therefore D measures AB, BC, AC; therefore AC is commensurable with each of the magnitudes AB, BC. [:ref:`g.416`]
-
-Next, let AC be commensurable with AB; I say that AB, BC are also commensurable.
-
-For, since AC, AB are commensurable, some magnitude will measure them.
-
-Let it measure them, and let it be D.
-
-Since then D measures CA, AB, it will also measure the remainder BC.
-
-But it measures AB also; therefore D will measure AB, BC; therefore AB, BC are commensurable. [:ref:`g.416`]
-
-Therefore etc.
+:ref:`g.418`

@@ -40,3 +40,17 @@ That is, the remainder ``EB`` will be the same multiple of the remainder ``FD`` 
 
 Therefore etc. Q. E. D.
 let EB be made that multiple of CG, τοσαυταπλάσιον γεγονέτω καὶ τὸ ΕΒ τοῦ ΓΗ. From this way of stating the construction one might suppose that ``CG`` was given and ``EB`` had to be found equal to a certain multiple of it. But in fact ``EB`` is what is given and ``CG`` has to be found, i.e. ``CG`` has to be constructed as a certain ``sub``multiple of ``EB``.
+
+
+Dependency Graph
+----------------
+
+.. graphviz::
+
+   digraph {
+     rankdir="TB";
+     node [shape=box, style=rounded];
+     "G.142" [label="G.142", style="rounded,filled", fillcolor=lightblue, URL="/elements2/g.142/", target="_top"];
+     "G.137" [label="G.137", style="rounded,filled", fillcolor=orange, URL="/elements2/g.137/", target="_top"];
+     "G.142" -> "G.137";
+   }

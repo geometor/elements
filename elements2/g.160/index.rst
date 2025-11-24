@@ -75,3 +75,26 @@ And ``GH``, ``LM`` are equimultiples of ``AE``, ``CF``, while ``KO``, ``NP`` are
 
 
 Therefore etc. Q. E. D.
+
+
+Dependency Graph
+----------------
+
+.. graphviz::
+
+   digraph {
+     rankdir="TB";
+     node [shape=box, style=rounded];
+     "G.138" [label="G.138", style="rounded,filled", fillcolor=orange, URL="/elements2/g.138/", target="_top"];
+     "G.160" [label="G.160", style="rounded,filled", fillcolor=lightblue, URL="/elements2/g.160/", target="_top"];
+     "G.137" [label="G.137", style="rounded,filled", fillcolor=orange, URL="/elements2/g.137/", target="_top"];
+     "G.160" -> "G.138";
+     "G.160" -> "G.137";
+   }
+
+
+
+Required for
+------------
+
+:ref:`g.161`, :ref:`g.162`, :ref:`g.165`, :ref:`g.166`, :ref:`g.196`, :ref:`g.198`, :ref:`g.199`, :ref:`g.200`, :ref:`g.201`, :ref:`g.202`, :ref:`g.466`, :ref:`g.467`, :ref:`g.468`, :ref:`g.469`, :ref:`g.472`, :ref:`g.473`, :ref:`g.474`, :ref:`g.475`, :ref:`g.476`, :ref:`g.477`, :ref:`g.480`, :ref:`g.481`, :ref:`g.482`, :ref:`g.348`, :ref:`g.374`, :ref:`g.375`, :ref:`g.376`, :ref:`g.377`, :ref:`g.380`, :ref:`g.385`, :ref:`g.386`, :ref:`g.387`, :ref:`g.392`, :ref:`g.393`, :ref:`g.400`, :ref:`g.408`, :ref:`g.410`, :ref:`g.411`, :ref:`g.419`, :ref:`g.420`, :ref:`g.421`, :ref:`g.423`, :ref:`g.425`, :ref:`g.426`, :ref:`g.427`, :ref:`g.428`, :ref:`g.429`, :ref:`g.430`, :ref:`g.435`, :ref:`g.437`, :ref:`g.438`, :ref:`g.442`, :ref:`g.443`, :ref:`g.444`, :ref:`g.457`, :ref:`g.458`, :ref:`g.459`, :ref:`g.460`, :ref:`g.461`, :ref:`g.462`, :ref:`g.543`, :ref:`g.546`, :ref:`g.547`, :ref:`g.548`, :ref:`g.536`, :ref:`g.569`, :ref:`g.574`, :ref:`g.578`

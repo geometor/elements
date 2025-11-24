@@ -1,37 +1,268 @@
 :order: 357
-:original_id: XI.25
+:original_id: X.21
 :type: prop
-:dependencies: g.140, g.356
+:dependencies: g.167, g.343, g.354
 
 .. _g.357:
 
 G.357
 =====
 
-**Heath ID:** :ref:`XI.25`
+**Heath ID:** :ref:`X.21`
 
-   If a parallelepipedal solid be cut by a plane which is parallel to the opposite planes, then, as the base is to the base, so will the solid be to the solid.
+   The rectangle contained by rational straight lines commensurable in square only is irrational, and the side of the square equal to it is irrational. Let the latter be called
+          medial.
 
-For let the parallelepipedal solid ABCD be cut by the plane FG which is parallel to the opposite planes RA, DH; I say that, as the base AEFV is to the base EHCF, so is the solid ABFU to the solid EGCD.
+For let the rectangle AC be contained by the rational straight lines AB, BC commensurable in square only; I say that AC is irrational, and the side of the square equal to it is irrational; and let the latter be called medial.
 
-For let AH be produced in each direction, let any number of straight lines whatever, AK, KL, be made equal to AE, and any number whatever, HM, MN, equal to EH; and let the parallelograms LP, KV, HW, MS and the solids LQ, KR, DM, MT be completed.
+For on AB let the square AD be described; therefore AD is rational. [:ref:`g.354`]
 
-Then, since the straight lines LK, KA, AE are equal to one another, the parallelograms LP, KV, AF are also equal to one another, KO, KB, AG are equal to one another, and further LX, KQ, AR are equal to one another, for they are opposite. [:ref:`g.356`]
+And, since AB is incommensurable in length with BC, for by hypothesis they are commensurable in square only, while AB is equal to BD, therefore DB is also incommensurable in length with BC.
 
-For the same reason the parallelograms EC, HW, MS are also equal to one another, HG, HI, IN are equal to one another, and further DH, MY, NT are equal to one another.
+And, as DB is to BC, so is AD to AC; [:ref:`g.167`] therefore DA is incommensurable with AC. [:ref:`g.343`]
 
-Therefore in the solids LQ, KR, AU three planes are equal to three planes.
+But DA is rational; therefore AC is irrational, so that the side of the square equal to AC is also irrational. [:ref:`g.354`]
 
-But the three planes are equal to the three opposite; therefore the three solids LQ, KR, AU are equal to one another.
+And let the latter be called medial. Q. E. D.
 
-For the same reason the three solids ED, DM, MT are also equal to one another.
+LEMMA.
 
-Therefore, whatever multiple the base LF is of the base AF, the same multiple also is the solid LU of the solid AU.
+If there be two straight lines, then, as the first is to the second, so is the square on the first to the rectangle contained by the two straight lines. 
 
-For the same reason, whatever multiple the base NF is of the base FH, the same multiple also is the solid NU of the solid HU.
+Let FE, EG be two straight lines. 
+       
 
-And, if the base LF is equal to the base NF, the solid LU is also equal to the solid NU; if the base LF exceeds the base NF, the solid LU also exceeds the solid NU; and, if one falls short, the other falls short.
+I say that, as FE is to EG, so is the square on FE to the rectangle FE, EG. 
 
-Therefore, there being four magnitudes, the two bases AF, FH, and the two solids AU, UH, equimultiples have been taken of the base AF and the solid AU, namely the base LF and the solid LU, and equimultiples of the base HF and the solid HU, namely the base NF and the solid NU, and it has been proved that, if the base LF exceeds the base FN, the solid LU also exceeds the solid NU, if the bases are equal, the solids are equal, and if the base falls short, the solid falls short.
+For on FE let the square DF be described, and let GD be completed. 
 
-Therefore, as the base AF is to the base FH, so is the solid AU to the solid UH. [:ref:`g.140`] Q. E. D.
+Since then, as FE is to EG, so is FD to DG, [:ref:`g.167`] and FD is the square on FE, and DG the rectangle DE, EG, that is, the rectangle FE, EG, therefore, as FE is to EG, so is the square on FE to the rectangle FE, EG. 
+
+Similarly also, as the rectangle GE, EF is to the square on EF, that is, as GD is to FD, so is GE to EF. Q. E. D.
+
+
+Dependency Graph
+----------------
+
+.. graphviz::
+
+   digraph {
+     rankdir="TB";
+     node [shape=box, style=rounded];
+     "G.159" [label="G.159", URL="/elements2/g.159/", target="_top"];
+     "G.151" [label="G.151", URL="/elements2/g.151/", target="_top"];
+     "G.354" [label="G.354", style="rounded,filled", fillcolor=orange, URL="/elements2/g.354/", target="_top"];
+     "G.141" [label="G.141", URL="/elements2/g.141/", target="_top"];
+     "G.4" [label="G.4", style="rounded,filled", fillcolor=orange, URL="/elements2/g.4/", target="_top"];
+     "G.145" [label="G.145", style="rounded,filled", fillcolor=orange, URL="/elements2/g.145/", target="_top"];
+     "G.24" [label="G.24", URL="/elements2/g.24/", target="_top"];
+     "G.9" [label="G.9", URL="/elements2/g.9/", target="_top"];
+     "G.2" [label="G.2", style="rounded,filled", fillcolor=orange, URL="/elements2/g.2/", target="_top"];
+     "G.152" [label="G.152", URL="/elements2/g.152/", target="_top"];
+     "G.5" [label="G.5", URL="/elements2/g.5/", target="_top"];
+     "G.18" [label="G.18", style="rounded,filled", fillcolor=orange, URL="/elements2/g.18/", target="_top"];
+     "G.153" [label="G.153", URL="/elements2/g.153/", target="_top"];
+     "G.343" [label="G.343", URL="/elements2/g.343/", target="_top"];
+     "G.163" [label="G.163", URL="/elements2/g.163/", target="_top"];
+     "G.157" [label="G.157", style="rounded,filled", fillcolor=orange, URL="/elements2/g.157/", target="_top"];
+     "G.44" [label="G.44", URL="/elements2/g.44/", target="_top"];
+     "G.17" [label="G.17", URL="/elements2/g.17/", target="_top"];
+     "G.50" [label="G.50", URL="/elements2/g.50/", target="_top"];
+     "G.148" [label="G.148", URL="/elements2/g.148/", target="_top"];
+     "G.6" [label="G.6", style="rounded,filled", fillcolor=orange, URL="/elements2/g.6/", target="_top"];
+     "G.36" [label="G.36", URL="/elements2/g.36/", target="_top"];
+     "G.25" [label="G.25", URL="/elements2/g.25/", target="_top"];
+     "G.1" [label="G.1", style="rounded,filled", fillcolor=orange, URL="/elements2/g.1/", target="_top"];
+     "G.33" [label="G.33", URL="/elements2/g.33/", target="_top"];
+     "G.7" [label="G.7", style="rounded,filled", fillcolor=orange, URL="/elements2/g.7/", target="_top"];
+     "G.219" [label="G.219", style="rounded,filled", fillcolor=orange, URL="/elements2/g.219/", target="_top"];
+     "G.12" [label="G.12", URL="/elements2/g.12/", target="_top"];
+     "G.193" [label="G.193", style="rounded,filled", fillcolor=orange, URL="/elements2/g.193/", target="_top"];
+     "G.51" [label="G.51", URL="/elements2/g.51/", target="_top"];
+     "G.54" [label="G.54", URL="/elements2/g.54/", target="_top"];
+     "G.340" [label="G.340", URL="/elements2/g.340/", target="_top"];
+     "G.16" [label="G.16", URL="/elements2/g.16/", target="_top"];
+     "G.156" [label="G.156", URL="/elements2/g.156/", target="_top"];
+     "G.46" [label="G.46", URL="/elements2/g.46/", target="_top"];
+     "G.140" [label="G.140", style="rounded,filled", fillcolor=orange, URL="/elements2/g.140/", target="_top"];
+     "G.149" [label="G.149", URL="/elements2/g.149/", target="_top"];
+     "G.41" [label="G.41", style="rounded,filled", fillcolor=orange, URL="/elements2/g.41/", target="_top"];
+     "G.155" [label="G.155", URL="/elements2/g.155/", target="_top"];
+     "G.48" [label="G.48", URL="/elements2/g.48/", target="_top"];
+     "G.15" [label="G.15", URL="/elements2/g.15/", target="_top"];
+     "G.337" [label="G.337", URL="/elements2/g.337/", target="_top"];
+     "G.22" [label="G.22", style="rounded,filled", fillcolor=orange, URL="/elements2/g.22/", target="_top"];
+     "G.357" [label="G.357", style="rounded,filled", fillcolor=lightblue, URL="/elements2/g.357/", target="_top"];
+     "G.158" [label="G.158", style="rounded,filled", fillcolor=orange, URL="/elements2/g.158/", target="_top"];
+     "G.3" [label="G.3", style="rounded,filled", fillcolor=orange, URL="/elements2/g.3/", target="_top"];
+     "G.147" [label="G.147", URL="/elements2/g.147/", target="_top"];
+     "G.338" [label="G.338", URL="/elements2/g.338/", target="_top"];
+     "G.49" [label="G.49", URL="/elements2/g.49/", target="_top"];
+     "G.339" [label="G.339", URL="/elements2/g.339/", target="_top"];
+     "G.144" [label="G.144", URL="/elements2/g.144/", target="_top"];
+     "G.42" [label="G.42", URL="/elements2/g.42/", target="_top"];
+     "G.40" [label="G.40", style="rounded,filled", fillcolor=orange, URL="/elements2/g.40/", target="_top"];
+     "G.137" [label="G.137", style="rounded,filled", fillcolor=orange, URL="/elements2/g.137/", target="_top"];
+     "G.38" [label="G.38", URL="/elements2/g.38/", target="_top"];
+     "G.336" [label="G.336", style="rounded,filled", fillcolor=orange, URL="/elements2/g.336/", target="_top"];
+     "G.139" [label="G.139", URL="/elements2/g.139/", target="_top"];
+     "G.167" [label="G.167", URL="/elements2/g.167/", target="_top"];
+     "G.150" [label="G.150", style="rounded,filled", fillcolor=orange, URL="/elements2/g.150/", target="_top"];
+     "G.138" [label="G.138", style="rounded,filled", fillcolor=orange, URL="/elements2/g.138/", target="_top"];
+     "G.21" [label="G.21", URL="/elements2/g.21/", target="_top"];
+     "G.154" [label="G.154", URL="/elements2/g.154/", target="_top"];
+     "G.14" [label="G.14", URL="/elements2/g.14/", target="_top"];
+     "G.37" [label="G.37", style="rounded,filled", fillcolor=orange, URL="/elements2/g.37/", target="_top"];
+     "G.19" [label="G.19", URL="/elements2/g.19/", target="_top"];
+     "G.47" [label="G.47", URL="/elements2/g.47/", target="_top"];
+     "G.8" [label="G.8", URL="/elements2/g.8/", target="_top"];
+     "G.146" [label="G.146", style="rounded,filled", fillcolor=orange, URL="/elements2/g.146/", target="_top"];
+     "G.11" [label="G.11", URL="/elements2/g.11/", target="_top"];
+     "G.10" [label="G.10", style="rounded,filled", fillcolor=orange, URL="/elements2/g.10/", target="_top"];
+     "G.167" -> "G.159";
+     "G.154" -> "G.151";
+     "G.357" -> "G.354";
+     "G.163" -> "G.141";
+     "G.5" -> "G.4";
+     "G.8" -> "G.4";
+     "G.9" -> "G.4";
+     "G.147" -> "G.145";
+     "G.25" -> "G.24";
+     "G.42" -> "G.24";
+     "G.12" -> "G.9";
+     "G.16" -> "G.9";
+     "G.19" -> "G.9";
+     "G.25" -> "G.9";
+     "G.5" -> "G.2";
+     "G.9" -> "G.2";
+     "G.153" -> "G.152";
+     "G.155" -> "G.152";
+     "G.156" -> "G.152";
+     "G.8" -> "G.5";
+     "G.17" -> "G.5";
+     "G.19" -> "G.5";
+     "G.19" -> "G.18";
+     "G.21" -> "G.18";
+     "G.159" -> "G.153";
+     "G.357" -> "G.343";
+     "G.337" -> "G.163";
+     "G.338" -> "G.163";
+     "G.159" -> "G.157";
+     "G.50" -> "G.44";
+     "G.51" -> "G.44";
+     "G.25" -> "G.17";
+     "G.54" -> "G.50";
+     "G.338" -> "G.148";
+     "G.8" -> "G.6";
+     "G.24" -> "G.6";
+     "G.48" -> "G.6";
+     "G.47" -> "G.36";
+     "G.36" -> "G.25";
+     "G.38" -> "G.25";
+     "G.5" -> "G.1";
+     "G.8" -> "G.1";
+     "G.9" -> "G.1";
+     "G.24" -> "G.1";
+     "G.42" -> "G.1";
+     "G.48" -> "G.1";
+     "G.49" -> "G.1";
+     "G.44" -> "G.33";
+     "G.8" -> "G.7";
+     "G.12" -> "G.7";
+     "G.25" -> "G.7";
+     "G.337" -> "G.219";
+     "G.338" -> "G.219";
+     "G.14" -> "G.12";
+     "G.338" -> "G.193";
+     "G.167" -> "G.51";
+     "G.167" -> "G.54";
+     "G.343" -> "G.340";
+     "G.17" -> "G.16";
+     "G.159" -> "G.156";
+     "G.49" -> "G.46";
+     "G.141" -> "G.140";
+     "G.144" -> "G.140";
+     "G.151" -> "G.140";
+     "G.152" -> "G.140";
+     "G.159" -> "G.140";
+     "G.163" -> "G.140";
+     "G.167" -> "G.140";
+     "G.153" -> "G.149";
+     "G.155" -> "G.149";
+     "G.156" -> "G.149";
+     "G.42" -> "G.41";
+     "G.159" -> "G.155";
+     "G.163" -> "G.155";
+     "G.49" -> "G.48";
+     "G.50" -> "G.48";
+     "G.16" -> "G.15";
+     "G.19" -> "G.15";
+     "G.33" -> "G.15";
+     "G.340" -> "G.337";
+     "G.343" -> "G.337";
+     "G.24" -> "G.22";
+     "G.159" -> "G.158";
+     "G.5" -> "G.3";
+     "G.8" -> "G.3";
+     "G.12" -> "G.3";
+     "G.25" -> "G.3";
+     "G.148" -> "G.147";
+     "G.149" -> "G.147";
+     "G.153" -> "G.147";
+     "G.155" -> "G.147";
+     "G.156" -> "G.147";
+     "G.339" -> "G.338";
+     "G.343" -> "G.338";
+     "G.51" -> "G.49";
+     "G.343" -> "G.339";
+     "G.149" -> "G.144";
+     "G.154" -> "G.144";
+     "G.46" -> "G.42";
+     "G.47" -> "G.42";
+     "G.48" -> "G.42";
+     "G.42" -> "G.40";
+     "G.47" -> "G.40";
+     "G.48" -> "G.40";
+     "G.147" -> "G.137";
+     "G.151" -> "G.137";
+     "G.44" -> "G.38";
+     "G.46" -> "G.38";
+     "G.337" -> "G.336";
+     "G.338" -> "G.336";
+     "G.141" -> "G.139";
+     "G.357" -> "G.167";
+     "G.159" -> "G.150";
+     "G.167" -> "G.150";
+     "G.338" -> "G.150";
+     "G.139" -> "G.138";
+     "G.24" -> "G.21";
+     "G.42" -> "G.21";
+     "G.159" -> "G.154";
+     "G.167" -> "G.154";
+     "G.15" -> "G.14";
+     "G.38" -> "G.37";
+     "G.21" -> "G.19";
+     "G.48" -> "G.47";
+     "G.49" -> "G.47";
+     "G.50" -> "G.47";
+     "G.51" -> "G.47";
+     "G.54" -> "G.47";
+     "G.9" -> "G.8";
+     "G.147" -> "G.146";
+     "G.152" -> "G.146";
+     "G.12" -> "G.11";
+     "G.17" -> "G.11";
+     "G.25" -> "G.11";
+     "G.36" -> "G.11";
+     "G.46" -> "G.11";
+     "G.47" -> "G.11";
+     "G.48" -> "G.11";
+     "G.11" -> "G.10";
+   }
+
+
+
+Required for
+------------
+
+:ref:`g.466`, :ref:`g.467`, :ref:`g.468`, :ref:`g.471`, :ref:`g.472`, :ref:`g.473`, :ref:`g.474`, :ref:`g.475`, :ref:`g.476`, :ref:`g.477`, :ref:`g.478`, :ref:`g.358`, :ref:`g.361`, :ref:`g.364`, :ref:`g.365`, :ref:`g.366`, :ref:`g.369`, :ref:`g.374`, :ref:`g.375`, :ref:`g.376`, :ref:`g.377`, :ref:`g.380`, :ref:`g.383`, :ref:`g.385`, :ref:`g.386`, :ref:`g.387`, :ref:`g.388`, :ref:`g.389`, :ref:`g.391`, :ref:`g.392`, :ref:`g.393`, :ref:`g.394`, :ref:`g.404`, :ref:`g.406`, :ref:`g.408`, :ref:`g.410`, :ref:`g.411`, :ref:`g.414`, :ref:`g.416`, :ref:`g.418`, :ref:`g.419`, :ref:`g.420`, :ref:`g.421`, :ref:`g.425`, :ref:`g.426`, :ref:`g.427`, :ref:`g.428`, :ref:`g.429`, :ref:`g.430`, :ref:`g.434`, :ref:`g.435`, :ref:`g.437`, :ref:`g.438`, :ref:`g.439`, :ref:`g.440`, :ref:`g.441`, :ref:`g.442`, :ref:`g.443`, :ref:`g.444`, :ref:`g.457`, :ref:`g.458`, :ref:`g.459`, :ref:`g.460`, :ref:`g.461`, :ref:`g.462`, :ref:`g.463`, :ref:`g.464`, :ref:`g.465`, :ref:`g.569`, :ref:`g.574`, :ref:`g.575`, :ref:`g.578`, :ref:`g.563`

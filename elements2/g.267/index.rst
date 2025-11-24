@@ -31,3 +31,28 @@ And the multitude of D, L, E is equal to the multitude of E, O, F, and that of G
 
 
 and, as G is to H, so is H to K. [:ref:`g.224`] Q. E. D.
+
+
+Dependency Graph
+----------------
+
+.. graphviz::
+
+   digraph {
+     rankdir="TB";
+     node [shape=box, style=rounded];
+     "G.224" [label="G.224", URL="/elements2/g.224/", target="_top"];
+     "G.223" [label="G.223", URL="/elements2/g.223/", target="_top"];
+     "G.218" [label="G.218", URL="/elements2/g.218/", target="_top"];
+     "G.216" [label="G.216", style="rounded,filled", fillcolor=orange, URL="/elements2/g.216/", target="_top"];
+     "G.217" [label="G.217", URL="/elements2/g.217/", target="_top"];
+     "G.219" [label="G.219", style="rounded,filled", fillcolor=orange, URL="/elements2/g.219/", target="_top"];
+     "G.267" [label="G.267", style="rounded,filled", fillcolor=lightblue, URL="/elements2/g.267/", target="_top"];
+     "G.267" -> "G.224";
+     "G.224" -> "G.223";
+     "G.223" -> "G.218";
+     "G.217" -> "G.216";
+     "G.218" -> "G.216";
+     "G.218" -> "G.217";
+     "G.223" -> "G.219";
+   }

@@ -1,24 +1,54 @@
 :order: 330
-:original_id: XI.1
+:original_id: X.1
 :type: prop
+:dependencies: g.145
 
 .. _g.330:
 
 G.330
 =====
 
-**Heath ID:** :ref:`XI.1`
+**Heath ID:** :ref:`X.1`
 
-   A part of a straight line cannot be in the plane of reference and a part in a plane more elevated.
+   Two unequal magnitudes being set out, if from the greater there be subtracted a magnitude greater than its half, and from that which is left a magnitude greater than its half, and if this process be repeated continually, there will be left some magnitude which will be less than the lesser magnitude set out.
 
-For, if possible, let a part AB of the straight line ABC be in the plane of reference, and a part BC in a plane more elevated.
+Let AB, C be two unequal magnitudes of which AB is the greater: I say that, if from AB there be subtracted a magnitude greater than its half, and from that which is left a magnitude greater than its half, and if this process be repeated continually, there will be left some magnitude which will be less than the magnitude C.
 
-There will then be in the plane of reference some straight line continuous with AB in a straight line.
+For C if multiplied will sometime be greater than AB. [cf. :ref:`g.145`]
 
-Let it be BD; therefore AB is a common segment of the two straight lines ABC, ABD: which is impossible, inasmuch as, if we describe a circle with centre B and distance AB, the diameters will cut off unequal circumferences of the circle.
+Let it be multiplied, and let DE be a multiple of C, and greater than. AB; let DE be divided into the parts DF, FG, GE equal to C, from AB let there be subtracted BH greater than its half, and, from AH, HK greater than its half, and let this process be repeated continually until the divisions in AB are equal in multitude with the divisions in DE.
 
-Therefore a part of a straight line cannot be in the plane of reference, and a part in a plane more elevated. Q. E. D.
-1. the plane of reference,
-τὸ ὑποκείμενον ἐπίπεδον, the plane laid down or assumed.
-2. more elevated,
-μετεωροτέρῳ.
+Let, then, AK, KH, HB be divisions which are equal in multitude with DF, FG, GE.
+
+Now, since DE is greater than AB, and from DE there has been subtracted EG less than its half, and, from AB, BH greater than its half, therefore the remainder GD is greater than the remainder HA.
+
+And, since GD is greater than HA, and there has been subtracted, from GD, the half GF, and, from HA, HK greater than its half, therefore the remainder DF is greater than the remainder AK.
+
+But DF is equal to C; therefore C is also greater than AK.
+
+Therefore AK is less than C.
+
+Therefore there is left of the magnitude AB the magnitude AK which is less than the lesser magnitude set out, namely C. Q. E. D.
+
+And the theorem can be similarly proved even if the parts subtracted be halves.
+
+
+Dependency Graph
+----------------
+
+.. graphviz::
+
+   digraph {
+     rankdir="TB";
+     node [shape=box, style=rounded];
+     "G.330" [label="G.330", style="rounded,filled", fillcolor=lightblue, URL="/elements2/g.330/", target="_top"];
+     "G.145" [label="G.145", style="rounded,filled", fillcolor=orange, URL="/elements2/g.145/", target="_top"];
+     "G.330" -> "G.145";
+   }
+
+
+
+Required for
+------------
+
+:ref:`g.542`, :ref:`g.543`, :ref:`g.545`, :ref:`g.546`, :ref:`g.547`, :ref:`g.548`, :ref:`g.549`

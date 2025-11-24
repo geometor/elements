@@ -41,3 +41,17 @@ Hence, if ``GB`` is equal to ``E``, ``HD`` is also equal to ``F``.
 Similarly we can prove that, even if ``GB`` be a multiple of ``E``, ``HD`` is also the same multiple of ``F``.
 
 Therefore etc. Q. E. D.
+
+
+Dependency Graph
+----------------
+
+.. graphviz::
+
+   digraph {
+     rankdir="TB";
+     node [shape=box, style=rounded];
+     "G.138" [label="G.138", style="rounded,filled", fillcolor=orange, URL="/elements2/g.138/", target="_top"];
+     "G.143" [label="G.143", style="rounded,filled", fillcolor=lightblue, URL="/elements2/g.143/", target="_top"];
+     "G.143" -> "G.138";
+   }

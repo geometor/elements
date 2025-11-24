@@ -1,48 +1,18 @@
 :order: 368
-:original_id: XI.33
-:type: prop
-:dependencies: g.265, g.167, g.356, g.367, g.361
+:original_id: elem.9.24 elem.9.26
+:type: unknown
 
 .. _g.368:
 
 G.368
 =====
 
-**Heath ID:** :ref:`XI.33`
-
-   Similar parallelepipedal solids are to one another in the triplicate ratio of their corresponding sides.
-
-Let AB, CD be similar parallelepipedal solids, and let AE be the side corresponding to CF; I say that the solid AB has to the solid CD the ratio triplicate of that which AE has to CF.
-
-For let EK, EL, EM be produced in a straight line with AE, GE, HE, let EK be made equal to CF, EL equal to FN, and further EM equal to FR, and let the parallelogram KL and the solid KP be completed.
-
-Now, since the two sides KE, EL are equal to the two sides CF, FN, while the angle KEL is also equal to the angle CFN, inasmuch as the angle AEG is also equal to the angle CFN because of the similarity of the solids AB, CD, therefore the parallelogram KL is equal <and similar> to the parallelogram CN.
-
-For the same reason the parallelogram KM is also equal and similar to CR, and further EP to DF; therefore three parallelograms of the solid KP are equal and similar to three parallelograms of the solid CD.
-
-But the former three parallelograms are equal and similar to their opposites, and the latter three to their opposites; [:ref:`g.356`] therefore the whole solid KP is equal and similar to the whole solid CD. [:ref:`g.361`]
-
-Let the parallelogram GK be completed, and on the parallelograms GK, KL as bases, and with the same height as that of AB, let the solids EO, LQ be completed.
-
-Then since; owing to the similarity of the solids AB, CD, as AE is to CF, so is EG to FN, and EH to FR, while CF is equal to EK, FN to EL, and FR to EM, therefore, as AE is to EK, so is GE to EL, and HE to EM.
-
-But, as AE is to EK, so is AG to the parallelogram GK, as GE is to EL, so is GK to KL, and, as HE is to EM, so is QE to KM; [:ref:`g.167`] therefore also, as the parallelogram AG is to GK, so is GK to KL, and QE to KM.
-
-But, as AG is to GK, so is the solid AB to the solid EO, as GK is to KL, so is the solid OE to the solid QL, and, as QE is to KM, so is the solid QL to the solid KP; [:ref:`g.367`] therefore also, as the solid AB is to EO, so is EO to QL, and QL to KP.
-
-But, if four magnitudes be continuously proportional, the first has to the fourth the ratio triplicate of that which it has to the second; [:ref:`g.265`] therefore the solid AB has to KP the ratio triplicate of that which AB has to EO.
-
-But, as AB is to EO, so is the parallelogram AG to GK, and the straight line AE to EK [:ref:`g.167`]; hence the solid AB has also to KP the ratio triplicate of that which AE has to EK.
-
-But the solid KP is equal to the solid CD, and the straight line EK to CF; therefore the solid AB has also to the solid CD the ratio triplicate of that which the corresponding side of it, AE, has to the corresponding side CF.
-
-Therefore etc. Q. E. D.
+**Heath ID:** :ref:`elem.9.24 elem.9.26`
 
 
-.. _elem.11.33.p.1:
 
 
-**XI.33.p.1**
+Required for
+------------
 
-
-From this it is manifest that, if four straight lines be <continuously> proportional, as the first is to the fourth, so will a parallelepipedal solid on the first be to the similar and similarly described parallelepipedal solid on the second, inasmuch as the first has to the fourth the ratio triplicate of that which it has to the second.
+:ref:`g.477`, :ref:`g.369`, :ref:`g.434`, :ref:`g.441`, :ref:`g.459`, :ref:`g.465`

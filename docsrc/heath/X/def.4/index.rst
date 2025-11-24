@@ -1,6 +1,6 @@
 :order: 4
 :number: 377
-:type: None
+:type: def
 :categories: describe
 :tags: line
 

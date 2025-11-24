@@ -1,6 +1,6 @@
 :order: 1
 :number: 374
-:type: None
+:type: def
 
 
 .. _X.def.1:

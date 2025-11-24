@@ -1,31 +1,18 @@
 :order: 451
-:original_id: XIII.12
-:type: prop
-:dependencies: g.60, g.112, g.434
+:original_id: elem.10.def.3.4
+:type: unknown
 
 .. _g.451:
 
 G.451
 =====
 
-**Heath ID:** :ref:`XIII.12`
+**Heath ID:** :ref:`elem.10.def.3.4`
 
-   If an equilateral triangle be inscribed in a circle, the square on the side of the triangle is triple of the square on the radius of the circle.
 
-Let ABC be a circle, and let the equilateral triangle ABC be inscribed in it; I say that the square on one side of the triangle ABC is triple of the square on the radius of the circle.
 
-For let the centre D of the circle ABC be taken, let AD be joined and carried through to E, and let BE be joined.
 
-Then, since the triangle ABC is equilateral, therefore the circumference BEC is a third part of the circumference of the circle ABC.
+Required for
+------------
 
-Therefore the circumference BE is a sixth part of the circumference of the circle; therefore the straight line BE belongs to a hexagon; therefore it is equal to the radius DE. [:ref:`g.434`]
-
-And, since AE is double of DE, the square on AE is quadruple of the square on ED, that is, of the square on BE.
-
-But the square on AE is equal to the squares on AB, BE; [:ref:`g.112`, :ref:`g.60`] therefore the squares on AB, BE are quadruple of the square on BE.
-
-Therefore, separando, the square on AB is triple of the square on BE.
-
-But BE is equal to DE; therefore the square on AB is triple of the square on DE.
-
-Therefore the square on the side of the triangle is triple of the square on the radius. Q. E. D.
+:ref:`g.466`, :ref:`g.475`, :ref:`g.452`, :ref:`g.460`, :ref:`g.569`, :ref:`g.574`, :ref:`g.578`

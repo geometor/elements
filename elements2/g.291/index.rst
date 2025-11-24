@@ -23,3 +23,19 @@ Since then D measures A according to the units in E, therefore E by multiplying 
 And, since A by multiplying B has made C, and A is the product of D, E, therefore the product of D, E by multiplying B has made C.
 
 Therefore C is solid, and D, E, B are its sides. Q. E. D.
+
+
+Dependency Graph
+----------------
+
+.. graphviz::
+
+   digraph {
+     rankdir="TB";
+     node [shape=box, style=rounded];
+     "G.291" [label="G.291", style="rounded,filled", fillcolor=lightblue, URL="/elements2/g.291/", target="_top"];
+     "G.290" [label="G.290", style="rounded,filled", fillcolor=orange, URL="/elements2/g.290/", target="_top"];
+     "G.232" [label="G.232", style="rounded,filled", fillcolor=orange, URL="/elements2/g.232/", target="_top"];
+     "G.291" -> "G.290";
+     "G.291" -> "G.232";
+   }

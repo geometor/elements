@@ -1,27 +1,18 @@
 :order: 372
-:original_id: XI.36
-:type: prop
-:dependencies: g.182, g.366, g.371
+:original_id: elem.10.28.l.2
+:type: unknown
 
 .. _g.372:
 
 G.372
 =====
 
-**Heath ID:** :ref:`XI.36`
+**Heath ID:** :ref:`elem.10.28.l.2`
 
-   If three straight lines be proportional, the parallelepipedal solid formed out of the three is equal to the parallelepipedal solid on the mean which is equilateral, but equiangular with the aforesaid solid.
 
-Let A, B, C be three straight lines in proportion, so that, as A is to B, so is B to C; I say that the solid formed out of A, B, C is equal to the solid on B which is equilateral, but equiangular with the aforesaid solid.
 
-Let there be set out the solid angle at E contained by the angles DEG, GEF, FED, let each of the straight lines DE, GE, EF be made equal to B, and let the parallelepipedal solid EK be completed, let LM be made equal to A, and on the straight line LM, and at the point L on it, let there be constructed a solid angle equal to the solid angle at E, namely that contained by NLO, OLM, MLN; let LO be made equal to B, and LN equal to C.
 
-Now, since, as A is to B, so is B to C, while A is equal to LM, B to each of the straight lines LO, ED, and C to LN, therefore, as LM is to EF, so is DE to LN.
+Required for
+------------
 
-Thus the sides about the equal angles NLM, DEF are reciprocally proportional; therefore the parallelogram MN is equal to the parallelogram DF. [:ref:`g.182`]
-
-And, since the angles DEF, NLM are two plane rectilineal angles, and on them the elevated straight lines LO, EG are set up which are equal to one another and contain equal angles with the original straight lines respectively, therefore the perpendiculars drawn from the points G, O to the planes through NL, LM and DE, EF are equal to one another; [:ref:`g.371`, Por.] hence the solids LH, EK are of the same height.
-
-But parallelepipedal solids on equal bases and of the same height are equal to one another; [:ref:`g.366`] therefore the solid HL is equal to the solid EK.
-
-And LH is the solid formed out of A, B, C, and EK the solid on B; therefore the parallelepipedal solid formed out of A, B, C is equal to the solid on B which is equilateral, but equiangular with the aforesaid solid. Q. E. D.
+:ref:`g.466`, :ref:`g.467`, :ref:`g.468`, :ref:`g.472`, :ref:`g.473`, :ref:`g.474`, :ref:`g.475`, :ref:`g.476`, :ref:`g.477`, :ref:`g.373`, :ref:`g.374`, :ref:`g.375`, :ref:`g.376`, :ref:`g.377`, :ref:`g.380`, :ref:`g.385`, :ref:`g.386`, :ref:`g.387`, :ref:`g.392`, :ref:`g.393`, :ref:`g.408`, :ref:`g.410`, :ref:`g.411`, :ref:`g.419`, :ref:`g.420`, :ref:`g.421`, :ref:`g.426`, :ref:`g.427`, :ref:`g.428`, :ref:`g.429`, :ref:`g.430`, :ref:`g.435`, :ref:`g.437`, :ref:`g.438`, :ref:`g.442`, :ref:`g.443`, :ref:`g.444`, :ref:`g.460`, :ref:`g.461`, :ref:`g.462`, :ref:`g.569`, :ref:`g.574`, :ref:`g.578`

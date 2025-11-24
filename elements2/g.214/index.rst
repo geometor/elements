@@ -25,3 +25,24 @@ Let CF be subtracted from each; therefore the remainder GC is equal to the remai
 Now since, whatever part AE is of CF, the same part also is EB of GC, while GC is equal to FD, therefore, whatever part AE is of CF, the same part also is EB of FD.
 
 But, whatever part AE is of CF, the same part also is AB of CD; therefore also the remainder EB is the same part of the remainder FD that the whole AB is of the whole CD. Q. E. D.
+
+
+Dependency Graph
+----------------
+
+.. graphviz::
+
+   digraph {
+     rankdir="TB";
+     node [shape=box, style=rounded];
+     "G.214" [label="G.214", style="rounded,filled", fillcolor=lightblue, URL="/elements2/g.214/", target="_top"];
+     "G.212" [label="G.212", style="rounded,filled", fillcolor=orange, URL="/elements2/g.212/", target="_top"];
+     "G.214" -> "G.212";
+   }
+
+
+
+Required for
+------------
+
+:ref:`g.215`

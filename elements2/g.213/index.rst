@@ -23,3 +23,17 @@ And since, whatever part AG is of C, the same part is DH of F also, therefore, w
 For the same reason, whatever part GB is of C, the same part also is the sum of GB, HE of the sum of C, F.
 
 Therefore, whatever parts AB is of C, the same parts also is the sum of AB, DE of the sum of C, F. Q. E. D.
+
+
+Dependency Graph
+----------------
+
+.. graphviz::
+
+   digraph {
+     rankdir="TB";
+     node [shape=box, style=rounded];
+     "G.213" [label="G.213", style="rounded,filled", fillcolor=lightblue, URL="/elements2/g.213/", target="_top"];
+     "G.212" [label="G.212", style="rounded,filled", fillcolor=orange, URL="/elements2/g.212/", target="_top"];
+     "G.213" -> "G.212";
+   }

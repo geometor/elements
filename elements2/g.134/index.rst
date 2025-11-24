@@ -33,3 +33,24 @@ Therefore the circle described with centre ``F`` and distance one of the straigh
 Let it be circumscribed, and let it be ``ABCDE``.
 
 Therefore about the given pentagon, which is equilateral and equiangular, a circle has been circumscribed. Q. E. F.
+
+
+Dependency Graph
+----------------
+
+.. graphviz::
+
+   digraph {
+     rankdir="TB";
+     node [shape=box, style=rounded];
+     "G.13" [label="G.13", style="rounded,filled", fillcolor=orange, URL="/elements2/g.13/", target="_top"];
+     "G.134" [label="G.134", style="rounded,filled", fillcolor=lightblue, URL="/elements2/g.134/", target="_top"];
+     "G.134" -> "G.13";
+   }
+
+
+
+Required for
+------------
+
+:ref:`g.569`, :ref:`g.574`, :ref:`g.578`, :ref:`g.565`

@@ -1,25 +1,18 @@
 :order: 367
-:original_id: XI.32
-:type: prop
-:dependencies: g.58, g.357, g.366
+:original_id: elem.10.28.l.1
+:type: unknown
 
 .. _g.367:
 
 G.367
 =====
 
-**Heath ID:** :ref:`XI.32`
+**Heath ID:** :ref:`elem.10.28.l.1`
 
-   Parallelepipedal solids which are of the same height are to one another as their bases.
 
-Let AB, CD be parallelepipedal solids of the same height; I say that the parallelepipedal solids AB, CD are to one another as their bases, that is, that, as the base AE is to the base CF, so is the solid AB to the solid CD.
 
-For let FH equal to AE be applied to FG, [:ref:`g.58`] and on FH as base, and with the same height as that of CD, let the parallelepipedal solid GK be completed.
 
-Then the solid AB is equal to the solid GK; for they are on equal bases AE, FH and of the same height. [:ref:`g.366`]
+Required for
+------------
 
-And, since the parallelepipedal solid CK is cut by the plane DG which is parallel to opposite planes, therefore, as the base CF is to the base FH, so is the solid CD to the solid DH. [:ref:`g.357`]
-
-But the base FH is equal to the base AE, and the solid GK to the solid AB; therefore also, as the base AE is to the base CF, so is the solid AB to the solid CD.
-
-Therefore etc. Q. E. D.
+:ref:`g.467`, :ref:`g.468`, :ref:`g.473`, :ref:`g.474`, :ref:`g.476`, :ref:`g.477`, :ref:`g.369`, :ref:`g.371`, :ref:`g.374`, :ref:`g.375`, :ref:`g.377`, :ref:`g.380`, :ref:`g.386`, :ref:`g.387`, :ref:`g.393`, :ref:`g.395`, :ref:`g.410`, :ref:`g.411`, :ref:`g.420`, :ref:`g.421`, :ref:`g.427`, :ref:`g.428`, :ref:`g.429`, :ref:`g.430`, :ref:`g.434`, :ref:`g.437`, :ref:`g.438`, :ref:`g.441`, :ref:`g.443`, :ref:`g.444`, :ref:`g.459`, :ref:`g.461`, :ref:`g.462`, :ref:`g.465`

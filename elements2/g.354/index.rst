@@ -1,43 +1,18 @@
 :order: 354
-:original_id: XI.22
-:type: prop
-:dependencies: g.34, g.11
+:original_id: X.def.4
+:type: def
 
 .. _g.354:
 
 G.354
 =====
 
-**Heath ID:** :ref:`XI.22`
+**Heath ID:** :ref:`X.def.4`
 
-   If there be three plane angles of which two, taken together in any manner, are greater than the remaining one, and they are contained by equal straight lines, it is possible to construct a triangle out of the straight lines joining the extremities of the equal straight lines.
-
-Let there be three plane angles ABC, DEF, GHK, of which two, taken together in any manner, are greater than the remaining one, namely
+   And let the square on the assigned straight line be called rational and those areas which are commensurable with it rational, but those which are incommensurable with it irrational, and the straight lines which produce them irrational, that is, in case the areas are squares, the sides themselves, but in case they are any other rectilineal figures, the straight lines on which are described squares equal to them.
 
 
-.. container:: center
+Required for
+------------
 
-   the angles ABC, DEF greater than the angle GHK, the angles DEF, GHK greater than the angle ABC,
-
-
-and, further, the angles GHK, ABC greater than the angle DEF; let the straight lines AB, BC, DE, EF, GH, HK be equal, and let AC, DF, GK be joined; I say that it is possible to construct a triangle out of straight lines equal to AC, DF, GK, that is, that any two of the straight lines AC, DF, GK are greater than the remaining one.
-
-Now, if the angles ABC, DEF, GHK are equal to one another, it is manifest that, AC, DF, GK being equal also, it is possible to construct a triangle out of straight lines equal to AC, DF, GK.
-
-But, if not, let them be unequal, and on the straight line HK, and at the point H on it, let the angle KHL be constructed equal to the angle ABC; let HL be made equal to one of the straight lines AB, BC, DE, EF, GH, HK, and let KL, GL be joined.
-
-Now, since the two sides AB, BC are equal to the two sides KH, HL, and the angle at B is equal to the angle KHL, therefore the base AC is equal to the base KL. [:ref:`g.11`]
-
-And, since the angles ABC, GHK are greater than the angle DEF, while the angle ABC is equal to the angle KHL, therefore the angle GHL is greater than the angle DEF.
-
-And, since the two sides GH, HL are equal to the two sides DE, EF, and the angle GHL is greater than the angle DEF, therefore the base GL is greater than the base DF. [:ref:`g.34`]
-
-But GK, KL are greater than GL.
-
-Therefore GK, KL are much greater than DF.
-
-But KL is equal to AC; therefore AC, GK are greater than the remaining straight line DF.
-
-Similarly we can prove that AC, DF are greater than GK, and further DF, GK are greater than AC.
-
-Therefore it is possible to construct a triangle out of straight lines equal to AC, DF, GK. Q. E. D.
+:ref:`g.466`, :ref:`g.467`, :ref:`g.468`, :ref:`g.469`, :ref:`g.471`, :ref:`g.472`, :ref:`g.473`, :ref:`g.474`, :ref:`g.475`, :ref:`g.476`, :ref:`g.477`, :ref:`g.478`, :ref:`g.480`, :ref:`g.481`, :ref:`g.482`, :ref:`g.483`, :ref:`g.355`, :ref:`g.356`, :ref:`g.357`, :ref:`g.358`, :ref:`g.361`, :ref:`g.364`, :ref:`g.365`, :ref:`g.366`, :ref:`g.369`, :ref:`g.371`, :ref:`g.374`, :ref:`g.375`, :ref:`g.376`, :ref:`g.377`, :ref:`g.380`, :ref:`g.381`, :ref:`g.382`, :ref:`g.383`, :ref:`g.385`, :ref:`g.386`, :ref:`g.387`, :ref:`g.388`, :ref:`g.389`, :ref:`g.391`, :ref:`g.392`, :ref:`g.393`, :ref:`g.394`, :ref:`g.395`, :ref:`g.396`, :ref:`g.397`, :ref:`g.399`, :ref:`g.400`, :ref:`g.402`, :ref:`g.404`, :ref:`g.406`, :ref:`g.408`, :ref:`g.410`, :ref:`g.411`, :ref:`g.414`, :ref:`g.416`, :ref:`g.418`, :ref:`g.419`, :ref:`g.420`, :ref:`g.421`, :ref:`g.423`, :ref:`g.425`, :ref:`g.426`, :ref:`g.427`, :ref:`g.428`, :ref:`g.429`, :ref:`g.430`, :ref:`g.432`, :ref:`g.433`, :ref:`g.434`, :ref:`g.435`, :ref:`g.437`, :ref:`g.438`, :ref:`g.439`, :ref:`g.440`, :ref:`g.441`, :ref:`g.442`, :ref:`g.443`, :ref:`g.444`, :ref:`g.446`, :ref:`g.448`, :ref:`g.450`, :ref:`g.452`, :ref:`g.454`, :ref:`g.456`, :ref:`g.457`, :ref:`g.458`, :ref:`g.459`, :ref:`g.460`, :ref:`g.461`, :ref:`g.462`, :ref:`g.463`, :ref:`g.464`, :ref:`g.465`, :ref:`g.569`, :ref:`g.574`, :ref:`g.575`, :ref:`g.578`, :ref:`g.563`

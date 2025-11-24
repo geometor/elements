@@ -1,48 +1,18 @@
 :order: 384
-:original_id: XII.8
-:type: prop
-:dependencies: g.151, g.191, g.356, g.362, g.368, g.383
+:original_id: elem.10.6 elem.10.23.p.1
+:type: unknown
 
 .. _g.384:
 
 G.384
 =====
 
-**Heath ID:** :ref:`XII.8`
-
-   Similar pyramids which have triangular bases are in the triplicate ratio of their corresponding sides.
-
-Let there be similar and similarly situated pyramids of which the triangles ABC, DEF, are the bases and the points G, H the vertices; I say that the pyramid ABCG has to the pyramid DEFH the ratio triplicate of that which BC has to EF.
-
-For let the parallelepipedal solids BGML, EHQP be completed.
-
-Now, since the pyramid ABCG is similar to the pyramid DEFH, therefore the angle ABC is equal to the angle DEF, the angle GBC to the angle HEF, and the angle ABG to the angle DEH; and, as AB is to DE, so is BC to EF, and BG to EH.
-
-And since, as AB is to DE, so is BC to EF, and the sides are proportional about equal angles, therefore the parallelogram BM is similar to the parallelogram EQ.
-
-For the same reason BN is also similar to ER, and BK to EO; therefore the three parallelograms MB, BK, BN are similar to the three EQ, EO, ER.
-
-But the three parallelograms MB, BK, BN are equal and similar to their three opposites, and the three EQ, EO, ER are equal and similar to their three opposites. [:ref:`g.356`]
-
-Therefore the solids BGML, EHQP are contained by similar planes equal in multitude.
-
-Therefore the solid BGML is similar to the solid EHQP.
-
-But similar parallelepipedal solids are in the triplicate ratio of their corresponding sides. [:ref:`g.368`]
-
-Therefore the solid BGML has to the solid EHQP the ratio triplicate of that which the corresponding side BC has to the corresponding side EF.
-
-But, as the solid BGML is to the solid EHQP, so is the pyramid ABCG to the pyramid DEFH, inasmuch as the pyramid is a sixth part of the solid, because the prism which is half of the parallelepipedal solid [:ref:`g.362`] is also triple of the pyramid. [:ref:`g.383`]
-
-Therefore the pyramid ABCG also has to the pyramid DEFH the ratio triplicate of that which BC has to EF. Q. E. D.
+**Heath ID:** :ref:`elem.10.6 elem.10.23.p.1`
 
 
-.. _elem.12.8.p.1:
 
 
-**XII.8.p.1**
+Required for
+------------
 
-
-From this it is manifest that similar pyramids which have polygonal bases are also to one another in the triplicate ratio of their corresponding sides. 
-For, if they are divided into the pyramids contained in them which have triangular bases, by virtue of the fact that the similar polygons forming their bases are also divided into similar triangles equal in multitude and corresponding to the wholes [:ref:`g.191`], then, as the one pyramid which has a triangular base in the one complete pyramid is to the one pyramid which has a triangular base in the other complete pyramid, so also will all the pyramids which have triangular bases contained in the one pyramid be to all the pyramids which have triangular bases contained in the other pyramid [:ref:`g.151`], that is, the pyramid itself which has a polygonal base to the pyramid which has a polygonal base. 
-But the pyramid which has a triangular base is to the pyramid which has a triangular base in the triplicate ratio of the corresponding sides; therefore also the pyramid which has a polygonal base has to the pyramid which has a similar base the ratio triplicate of that which the side has to the side.
+:ref:`g.385`, :ref:`g.392`, :ref:`g.408`, :ref:`g.419`, :ref:`g.426`, :ref:`g.429`

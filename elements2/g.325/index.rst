@@ -27,3 +27,17 @@ Thus A is even-times odd.
 But it was also proved even-times even.
 
 Therefore A is both even-times even and even-times odd. Q. E. D.
+
+
+Dependency Graph
+----------------
+
+.. graphviz::
+
+   digraph {
+     rankdir="TB";
+     node [shape=box, style=rounded];
+     "G.321" [label="G.321", style="rounded,filled", fillcolor=orange, URL="/elements2/g.321/", target="_top"];
+     "G.325" [label="G.325", style="rounded,filled", fillcolor=lightblue, URL="/elements2/g.325/", target="_top"];
+     "G.325" -> "G.321";
+   }

@@ -59,3 +59,62 @@ And the straight lines ``GK``, ``HL`` have no other point common but the point `
 
 
 Therefore etc. Q. E. D.
+
+
+Dependency Graph
+----------------
+
+.. graphviz::
+
+   digraph {
+     rankdir="TB";
+     node [shape=box, style=rounded];
+     "G.85" [label="G.85", style="rounded,filled", fillcolor=lightblue, URL="/elements2/g.85/", target="_top"];
+     "G.4" [label="G.4", style="rounded,filled", fillcolor=orange, URL="/elements2/g.4/", target="_top"];
+     "G.14" [label="G.14", URL="/elements2/g.14/", target="_top"];
+     "G.9" [label="G.9", URL="/elements2/g.9/", target="_top"];
+     "G.2" [label="G.2", style="rounded,filled", fillcolor=orange, URL="/elements2/g.2/", target="_top"];
+     "G.6" [label="G.6", style="rounded,filled", fillcolor=orange, URL="/elements2/g.6/", target="_top"];
+     "G.15" [label="G.15", URL="/elements2/g.15/", target="_top"];
+     "G.8" [label="G.8", URL="/elements2/g.8/", target="_top"];
+     "G.1" [label="G.1", style="rounded,filled", fillcolor=orange, URL="/elements2/g.1/", target="_top"];
+     "G.5" [label="G.5", URL="/elements2/g.5/", target="_top"];
+     "G.7" [label="G.7", style="rounded,filled", fillcolor=orange, URL="/elements2/g.7/", target="_top"];
+     "G.18" [label="G.18", style="rounded,filled", fillcolor=orange, URL="/elements2/g.18/", target="_top"];
+     "G.11" [label="G.11", URL="/elements2/g.11/", target="_top"];
+     "G.10" [label="G.10", style="rounded,filled", fillcolor=orange, URL="/elements2/g.10/", target="_top"];
+     "G.84" [label="G.84", style="rounded,filled", fillcolor=orange, URL="/elements2/g.84/", target="_top"];
+     "G.12" [label="G.12", URL="/elements2/g.12/", target="_top"];
+     "G.3" [label="G.3", style="rounded,filled", fillcolor=orange, URL="/elements2/g.3/", target="_top"];
+     "G.5" -> "G.4";
+     "G.8" -> "G.4";
+     "G.9" -> "G.4";
+     "G.15" -> "G.14";
+     "G.12" -> "G.9";
+     "G.5" -> "G.2";
+     "G.9" -> "G.2";
+     "G.8" -> "G.6";
+     "G.85" -> "G.15";
+     "G.9" -> "G.8";
+     "G.5" -> "G.1";
+     "G.8" -> "G.1";
+     "G.9" -> "G.1";
+     "G.8" -> "G.5";
+     "G.8" -> "G.7";
+     "G.12" -> "G.7";
+     "G.85" -> "G.18";
+     "G.12" -> "G.11";
+     "G.11" -> "G.10";
+     "G.85" -> "G.84";
+     "G.14" -> "G.12";
+     "G.5" -> "G.3";
+     "G.8" -> "G.3";
+     "G.12" -> "G.3";
+   }
+
+
+
+Required for
+------------
+
+:ref:`g.106`

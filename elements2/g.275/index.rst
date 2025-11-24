@@ -87,3 +87,59 @@ For, since A, N, O, B are four numbers in continued proportion, therefore A has 
 But, as A is to N, so it was proved that C is to F, D to G, and also E to H.
 
 Therefore A also has to B the ratio triplicate of that which the corresponding side has to the corresponding side, that is, of the ratio which the number C has to F, D to G, and also E to H. Q. E. D.
+
+
+Dependency Graph
+----------------
+
+.. graphviz::
+
+   digraph {
+     rankdir="TB";
+     node [shape=box, style=rounded];
+     "G.223" [label="G.223", URL="/elements2/g.223/", target="_top"];
+     "G.218" [label="G.218", URL="/elements2/g.218/", target="_top"];
+     "G.225" [label="G.225", URL="/elements2/g.225/", target="_top"];
+     "G.274" [label="G.274", URL="/elements2/g.274/", target="_top"];
+     "G.226" [label="G.226", URL="/elements2/g.226/", target="_top"];
+     "G.275" [label="G.275", style="rounded,filled", fillcolor=lightblue, URL="/elements2/g.275/", target="_top"];
+     "G.227" [label="G.227", URL="/elements2/g.227/", target="_top"];
+     "G.216" [label="G.216", style="rounded,filled", fillcolor=orange, URL="/elements2/g.216/", target="_top"];
+     "G.188" [label="G.188", style="rounded,filled", fillcolor=orange, URL="/elements2/g.188/", target="_top"];
+     "G.265" [label="G.265", style="rounded,filled", fillcolor=orange, URL="/elements2/g.265/", target="_top"];
+     "G.217" [label="G.217", URL="/elements2/g.217/", target="_top"];
+     "G.222" [label="G.222", URL="/elements2/g.222/", target="_top"];
+     "G.219" [label="G.219", style="rounded,filled", fillcolor=orange, URL="/elements2/g.219/", target="_top"];
+     "G.228" [label="G.228", URL="/elements2/g.228/", target="_top"];
+     "G.273" [label="G.273", style="rounded,filled", fillcolor=orange, URL="/elements2/g.273/", target="_top"];
+     "G.227" -> "G.223";
+     "G.274" -> "G.223";
+     "G.275" -> "G.223";
+     "G.223" -> "G.218";
+     "G.226" -> "G.225";
+     "G.275" -> "G.274";
+     "G.228" -> "G.226";
+     "G.228" -> "G.227";
+     "G.274" -> "G.227";
+     "G.275" -> "G.227";
+     "G.217" -> "G.216";
+     "G.218" -> "G.216";
+     "G.222" -> "G.216";
+     "G.274" -> "G.188";
+     "G.275" -> "G.265";
+     "G.218" -> "G.217";
+     "G.225" -> "G.222";
+     "G.222" -> "G.219";
+     "G.223" -> "G.219";
+     "G.227" -> "G.219";
+     "G.275" -> "G.228";
+     "G.274" -> "G.273";
+     "G.275" -> "G.273";
+   }
+
+
+
+Required for
+------------
+
+:ref:`g.294`, :ref:`g.287`, :ref:`g.288`, :ref:`g.289`, :ref:`g.281`, :ref:`g.283`

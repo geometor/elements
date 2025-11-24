@@ -130,7 +130,9 @@ def parse_book_xml(file_path, entry_number_start=0):
         entry_number = entry_number_start # Initialize entry_number here
         for div2 in div1.findall(".//div2"):
             section_type_raw = div2.attrib.get("n")
-            section_type_canonical = SECTION_TYPE_MAP.get(section_type_raw)
+            # Handle cases like "Def 1", "Prop 1" in Book 10
+            type_key = section_type_raw.split()[0] if section_type_raw else ""
+            section_type_canonical = SECTION_TYPE_MAP.get(type_key)
             section_head = div2.find("./head")
             section_title = section_head.text if section_head is not None else section_type_raw
 

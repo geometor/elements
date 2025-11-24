@@ -39,3 +39,53 @@ Therefore the circle described with centre ``E`` and distance one of the straigh
 Let it be circumscribed, as ``ABCD``.
 
 Therefore about the given square a circle has been circumscribed. Q. E. F.
+
+
+Dependency Graph
+----------------
+
+.. graphviz::
+
+   digraph {
+     rankdir="TB";
+     node [shape=box, style=rounded];
+     "G.14" [label="G.14", URL="/elements2/g.14/", target="_top"];
+     "G.9" [label="G.9", URL="/elements2/g.9/", target="_top"];
+     "G.2" [label="G.2", style="rounded,filled", fillcolor=orange, URL="/elements2/g.2/", target="_top"];
+     "G.6" [label="G.6", style="rounded,filled", fillcolor=orange, URL="/elements2/g.6/", target="_top"];
+     "G.15" [label="G.15", URL="/elements2/g.15/", target="_top"];
+     "G.8" [label="G.8", URL="/elements2/g.8/", target="_top"];
+     "G.1" [label="G.1", style="rounded,filled", fillcolor=orange, URL="/elements2/g.1/", target="_top"];
+     "G.5" [label="G.5", URL="/elements2/g.5/", target="_top"];
+     "G.130" [label="G.130", style="rounded,filled", fillcolor=lightblue, URL="/elements2/g.130/", target="_top"];
+     "G.13" [label="G.13", style="rounded,filled", fillcolor=orange, URL="/elements2/g.13/", target="_top"];
+     "G.7" [label="G.7", style="rounded,filled", fillcolor=orange, URL="/elements2/g.7/", target="_top"];
+     "G.11" [label="G.11", URL="/elements2/g.11/", target="_top"];
+     "G.4" [label="G.4", style="rounded,filled", fillcolor=orange, URL="/elements2/g.4/", target="_top"];
+     "G.10" [label="G.10", style="rounded,filled", fillcolor=orange, URL="/elements2/g.10/", target="_top"];
+     "G.12" [label="G.12", URL="/elements2/g.12/", target="_top"];
+     "G.3" [label="G.3", style="rounded,filled", fillcolor=orange, URL="/elements2/g.3/", target="_top"];
+     "G.15" -> "G.14";
+     "G.12" -> "G.9";
+     "G.5" -> "G.2";
+     "G.9" -> "G.2";
+     "G.8" -> "G.6";
+     "G.130" -> "G.15";
+     "G.9" -> "G.8";
+     "G.5" -> "G.1";
+     "G.8" -> "G.1";
+     "G.9" -> "G.1";
+     "G.8" -> "G.5";
+     "G.130" -> "G.13";
+     "G.8" -> "G.7";
+     "G.12" -> "G.7";
+     "G.12" -> "G.11";
+     "G.5" -> "G.4";
+     "G.8" -> "G.4";
+     "G.9" -> "G.4";
+     "G.11" -> "G.10";
+     "G.14" -> "G.12";
+     "G.5" -> "G.3";
+     "G.8" -> "G.3";
+     "G.12" -> "G.3";
+   }

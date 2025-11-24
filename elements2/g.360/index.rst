@@ -1,29 +1,18 @@
 :order: 360
-:original_id: XI.27
-:type: prop
-:dependencies: g.163, g.179, g.359
+:original_id: elem.10.18.l.1
+:type: unknown
 
 .. _g.360:
 
 G.360
 =====
 
-**Heath ID:** :ref:`XI.27`
+**Heath ID:** :ref:`elem.10.18.l.1`
 
-   On a given straight line to describe a parallelepipedal solid similar and similarly situated to a given parallelepipedal solid.
 
-Let AB be the given straight line and CD the given parallelepipedal solid; thus it is required to describe on the given straight line AB a parallelepipedal solid similar and similarly situated to the given parallelepipedal solid CD.
 
-For on the straight line AB and at the point A on it let the solid angle, contained by the angles BAH, HAK, KAB, be constructed equal to the solid angle at C, so that the angle BAH is equal to the angle ECF, the angle BAK equal to the angle ECG, and the angle KAH to the angle GCF; and let it be contrived that, as EC is to CG, so is BA to AK, and, as GC is to CF, so is KA to AH. [:ref:`g.179`]
 
-Therefore also, ex aequali, as EC is to CF, so is BA to AH. [:ref:`g.163`]
+Required for
+------------
 
-Let the parallelogram HB and the solid AL be completed.
-
-Now since, as EC is to CG, so is BA to AK, and the sides about the equal angles ECG, BAK are thus proportional, therefore the parallelogram GE is similar to the parallelogram KB.
-
-For the same reason the parallelogram KH is also similar to the parallelogram GF, and further FE to HB; therefore three parallelograms of the solid CD are similar to three parallelograms of the solid AL.
-
-But the former three are both equal and similar to the three opposite parallelograms, and the latter three are both equal and similar to the three opposite parallelograms; therefore the whole solid CD is similar to the whole solid AL. [:ref:`g.359`]
-
-Therefore on the given straight line AB there has been described AL similar and similarly situated to the given parallelepipedal solid CD. Q. E. F.
+:ref:`g.467`, :ref:`g.468`, :ref:`g.471`, :ref:`g.473`, :ref:`g.474`, :ref:`g.476`, :ref:`g.477`, :ref:`g.361`, :ref:`g.366`, :ref:`g.369`, :ref:`g.374`, :ref:`g.375`, :ref:`g.377`, :ref:`g.380`, :ref:`g.386`, :ref:`g.387`, :ref:`g.393`, :ref:`g.410`, :ref:`g.411`, :ref:`g.420`, :ref:`g.421`, :ref:`g.425`, :ref:`g.427`, :ref:`g.428`, :ref:`g.429`, :ref:`g.430`, :ref:`g.434`, :ref:`g.437`, :ref:`g.438`, :ref:`g.441`, :ref:`g.443`, :ref:`g.444`, :ref:`g.459`, :ref:`g.461`, :ref:`g.462`, :ref:`g.465`

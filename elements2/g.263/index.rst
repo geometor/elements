@@ -63,3 +63,41 @@ therefore also, as A is to K, so is K to L and L to B.
 Therefore A, K, L, B are in continued proportion.
 
 Therefore, as many numbers as fall between each of the numbers A, B and the unit C in continued proportion, so many also will fall between A, B in continued proportion. Q. E. D.
+
+
+Dependency Graph
+----------------
+
+.. graphviz::
+
+   digraph {
+     rankdir="TB";
+     node [shape=box, style=rounded];
+     "G.223" [label="G.223", URL="/elements2/g.223/", target="_top"];
+     "G.218" [label="G.218", URL="/elements2/g.218/", target="_top"];
+     "G.225" [label="G.225", URL="/elements2/g.225/", target="_top"];
+     "G.226" [label="G.226", URL="/elements2/g.226/", target="_top"];
+     "G.263" [label="G.263", style="rounded,filled", fillcolor=lightblue, URL="/elements2/g.263/", target="_top"];
+     "G.227" [label="G.227", URL="/elements2/g.227/", target="_top"];
+     "G.216" [label="G.216", style="rounded,filled", fillcolor=orange, URL="/elements2/g.216/", target="_top"];
+     "G.217" [label="G.217", URL="/elements2/g.217/", target="_top"];
+     "G.222" [label="G.222", URL="/elements2/g.222/", target="_top"];
+     "G.219" [label="G.219", style="rounded,filled", fillcolor=orange, URL="/elements2/g.219/", target="_top"];
+     "G.228" [label="G.228", URL="/elements2/g.228/", target="_top"];
+     "G.227" -> "G.223";
+     "G.223" -> "G.218";
+     "G.226" -> "G.225";
+     "G.228" -> "G.226";
+     "G.228" -> "G.227";
+     "G.263" -> "G.227";
+     "G.217" -> "G.216";
+     "G.218" -> "G.216";
+     "G.222" -> "G.216";
+     "G.218" -> "G.217";
+     "G.225" -> "G.222";
+     "G.222" -> "G.219";
+     "G.223" -> "G.219";
+     "G.227" -> "G.219";
+     "G.263" -> "G.219";
+     "G.263" -> "G.228";
+   }

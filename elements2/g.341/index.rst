@@ -1,37 +1,18 @@
 :order: 341
-:original_id: XI.11
-:type: prop
-:dependencies: g.19, g.20, g.44, g.334, g.338, g.333
+:original_id: elem.6.20.p.1
+:type: unknown
 
 .. _g.341:
 
 G.341
 =====
 
-**Heath ID:** :ref:`XI.11`
+**Heath ID:** :ref:`elem.6.20.p.1`
 
-   From a given elevated point to draw a straight line perpendicular to a given plane.
 
-Let A be the given elevated point, and the plane of reference the given plane; thus it is required to draw from the point A a straight line perpendicular to the plane of reference.
 
-Let any straight line BC be drawn, at random, in the plane of reference, and let AD be drawn from the point A perpendicular to BC. [:ref:`g.20`]
 
-If then AD is also perpendicular to the plane of reference, that which was enjoined will have been done.
+Required for
+------------
 
-But, if not, let DE be drawn from the point D at right angles to BC and in the plane of reference, [:ref:`g.19`] let AF be drawn from A perpendicular to DE, [:ref:`g.20`] and let GH be drawn through the point F parallel to BC. [:ref:`g.44`]
-
-Now, since BC is at right angles to each of the straight lines DA, DE, therefore BC is also at right angles to the plane through ED, DA. [:ref:`g.334`]
-
-And GH is parallel to it; but, if two straight lines be parallel, and one of them be at right angles to any plane, the remaining one will also be at right angles to the same plane; [:ref:`g.338`] therefore GH is also at right angles to the plane through ED, DA.
-
-Therefore GH is also at right angles to all the straight lines which meet it and are in the plane through ED, DA. [:ref:`g.333`]
-
-But AF meets it and is in the plane through ED, DA; therefore GH is at right angles to FA, so that FA is also at right angles to GH.
-
-But AF is also at right angles to DE; therefore AF is at right angles to each of the straight lines GH, DE.
-
-But, if a straight line be set up at right angles to two straight lines which cut one another, at the point of section, it will also be at right angles to the plane through them; [:ref:`g.334`] therefore FA is at right angles to the plane through ED, GH.
-
-But the plane through ED, GH is the plane of reference; therefore AF is at right angles to the plane of reference.
-
-Therefore from the given elevated point A the straight line AF has been drawn perpendicular to the plane of reference. Q. E. F.
+:ref:`g.345`, :ref:`g.466`, :ref:`g.467`, :ref:`g.468`, :ref:`g.472`, :ref:`g.473`, :ref:`g.474`, :ref:`g.475`, :ref:`g.476`, :ref:`g.477`, :ref:`g.371`, :ref:`g.373`, :ref:`g.374`, :ref:`g.375`, :ref:`g.376`, :ref:`g.377`, :ref:`g.380`, :ref:`g.385`, :ref:`g.386`, :ref:`g.387`, :ref:`g.392`, :ref:`g.393`, :ref:`g.395`, :ref:`g.396`, :ref:`g.397`, :ref:`g.398`, :ref:`g.399`, :ref:`g.400`, :ref:`g.408`, :ref:`g.410`, :ref:`g.411`, :ref:`g.419`, :ref:`g.420`, :ref:`g.421`, :ref:`g.426`, :ref:`g.427`, :ref:`g.428`, :ref:`g.429`, :ref:`g.430`, :ref:`g.435`, :ref:`g.437`, :ref:`g.438`, :ref:`g.442`, :ref:`g.443`, :ref:`g.444`, :ref:`g.446`, :ref:`g.448`, :ref:`g.450`, :ref:`g.452`, :ref:`g.454`, :ref:`g.342`, :ref:`g.456`, :ref:`g.460`, :ref:`g.461`, :ref:`g.462`, :ref:`g.569`, :ref:`g.574`, :ref:`g.575`, :ref:`g.578`, :ref:`g.563`

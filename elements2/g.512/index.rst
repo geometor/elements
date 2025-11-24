@@ -1,0 +1,177 @@
+:order: 512
+:original_id: XI.26
+:type: prop
+:dependencies: g.33, g.11, g.15, g.495, g.496, g.487
+
+.. _g.512:
+
+G.512
+=====
+
+**Heath ID:** :ref:`XI.26`
+
+   On a given straight line, and at a given point on it, to construct a solid angle equal to a given solid angle.
+
+Let AB be the given straight line, A the given point on it, and the angle at D, contained by the angles EDC, EDF, FDC, the given solid angle; thus it is required to construct on the straight line AB, and at the point A on it, a solid angle equal to the solid angle at D.
+
+For let a point F be taken at random on DF, let FG be drawn from F perpendicular to the plane through ED, DC, and let it meet the plane at G, [:ref:`g.495`] let DG be joined, let there be constructed on the straight line AB and at the point A on it the angle BAL equal to the angle EDC, and the angle BAK equal to the angle EDG, [:ref:`g.33`] let AK be made equal to DG, let KH be set up from the point K at right angles to the plane through BA, AL, [:ref:`g.496`] let KH be made equal to GF, and let HA be joined; I say that the solid angle at A, contained by the angles BAL, BAH, HAL is equal to the solid angle at D contained by the angles EDC, EDF, FDC.
+
+For let AB, DE be cut off equal to one another, and let HB, KB, FE, GE be joined.
+
+Then, since FG is at right angles to the plane of reference, it will also make right angles with all the straight lines which meet it and are in the plane of reference; [:ref:`g.487`] therefore each of the angles FGD, FGE is right.
+
+For the same reason each of the angles HKA, HKB is also right.
+
+And, since the two sides KA, AB are equal to the two sides GD, DE respectively, and they contain equal angles, therefore the base KB is equal to the base GE. [:ref:`g.11`]
+
+But KH is also equal to GF, and they contain right angles; therefore HB is also equal to FE. [:ref:`g.11`]
+
+Again, since the two sides AK, KH are equal to the two sides DG, GF, and they contain right angles, therefore the base AH is equal to the base FD. [:ref:`g.11`]
+
+But AB is also equal to DE; therefore the two sides HA, AB are equal to the two sides DF, DE.
+
+And the base HB is equal to the base FE; therefore the angle BAH is equal to the angle EDF. [:ref:`g.15`]
+
+For the same reason the angle HAL is also equal to the angle FDC.
+
+And the angle BAL is also equal to the angle EDC.
+
+Therefore on the straight line AB, and at the point A on it, a solid angle has been constructed equal to the given solid angle at D. Q. E. F.
+
+
+Dependency Graph
+----------------
+
+.. graphviz::
+
+   digraph {
+     rankdir="TB";
+     node [shape=box, style=rounded];
+     "G.16" [label="G.16", URL="/elements2/g.16/", target="_top"];
+     "G.41" [label="G.41", style="rounded,filled", fillcolor=orange, URL="/elements2/g.41/", target="_top"];
+     "G.4" [label="G.4", style="rounded,filled", fillcolor=orange, URL="/elements2/g.4/", target="_top"];
+     "G.24" [label="G.24", URL="/elements2/g.24/", target="_top"];
+     "G.20" [label="G.20", URL="/elements2/g.20/", target="_top"];
+     "G.9" [label="G.9", URL="/elements2/g.9/", target="_top"];
+     "G.2" [label="G.2", style="rounded,filled", fillcolor=orange, URL="/elements2/g.2/", target="_top"];
+     "G.15" [label="G.15", URL="/elements2/g.15/", target="_top"];
+     "G.5" [label="G.5", URL="/elements2/g.5/", target="_top"];
+     "G.492" [label="G.492", URL="/elements2/g.492/", target="_top"];
+     "G.18" [label="G.18", style="rounded,filled", fillcolor=orange, URL="/elements2/g.18/", target="_top"];
+     "G.22" [label="G.22", style="rounded,filled", fillcolor=orange, URL="/elements2/g.22/", target="_top"];
+     "G.496" [label="G.496", URL="/elements2/g.496/", target="_top"];
+     "G.3" [label="G.3", style="rounded,filled", fillcolor=orange, URL="/elements2/g.3/", target="_top"];
+     "G.495" [label="G.495", URL="/elements2/g.495/", target="_top"];
+     "G.44" [label="G.44", URL="/elements2/g.44/", target="_top"];
+     "G.42" [label="G.42", URL="/elements2/g.42/", target="_top"];
+     "G.40" [label="G.40", style="rounded,filled", fillcolor=orange, URL="/elements2/g.40/", target="_top"];
+     "G.38" [label="G.38", URL="/elements2/g.38/", target="_top"];
+     "G.488" [label="G.488", URL="/elements2/g.488/", target="_top"];
+     "G.491" [label="G.491", URL="/elements2/g.491/", target="_top"];
+     "G.17" [label="G.17", URL="/elements2/g.17/", target="_top"];
+     "G.21" [label="G.21", URL="/elements2/g.21/", target="_top"];
+     "G.14" [label="G.14", URL="/elements2/g.14/", target="_top"];
+     "G.487" [label="G.487", style="rounded,filled", fillcolor=orange, URL="/elements2/g.487/", target="_top"];
+     "G.37" [label="G.37", style="rounded,filled", fillcolor=orange, URL="/elements2/g.37/", target="_top"];
+     "G.486" [label="G.486", style="rounded,filled", fillcolor=orange, URL="/elements2/g.486/", target="_top"];
+     "G.6" [label="G.6", style="rounded,filled", fillcolor=orange, URL="/elements2/g.6/", target="_top"];
+     "G.19" [label="G.19", URL="/elements2/g.19/", target="_top"];
+     "G.36" [label="G.36", URL="/elements2/g.36/", target="_top"];
+     "G.25" [label="G.25", URL="/elements2/g.25/", target="_top"];
+     "G.1" [label="G.1", style="rounded,filled", fillcolor=orange, URL="/elements2/g.1/", target="_top"];
+     "G.8" [label="G.8", URL="/elements2/g.8/", target="_top"];
+     "G.33" [label="G.33", URL="/elements2/g.33/", target="_top"];
+     "G.484" [label="G.484", style="rounded,filled", fillcolor=orange, URL="/elements2/g.484/", target="_top"];
+     "G.7" [label="G.7", style="rounded,filled", fillcolor=orange, URL="/elements2/g.7/", target="_top"];
+     "G.11" [label="G.11", URL="/elements2/g.11/", target="_top"];
+     "G.512" [label="G.512", style="rounded,filled", fillcolor=lightblue, URL="/elements2/g.512/", target="_top"];
+     "G.10" [label="G.10", style="rounded,filled", fillcolor=orange, URL="/elements2/g.10/", target="_top"];
+     "G.485" [label="G.485", URL="/elements2/g.485/", target="_top"];
+     "G.12" [label="G.12", URL="/elements2/g.12/", target="_top"];
+     "G.17" -> "G.16";
+     "G.42" -> "G.41";
+     "G.5" -> "G.4";
+     "G.8" -> "G.4";
+     "G.9" -> "G.4";
+     "G.20" -> "G.4";
+     "G.25" -> "G.24";
+     "G.42" -> "G.24";
+     "G.488" -> "G.24";
+     "G.495" -> "G.20";
+     "G.12" -> "G.9";
+     "G.16" -> "G.9";
+     "G.19" -> "G.9";
+     "G.25" -> "G.9";
+     "G.5" -> "G.2";
+     "G.9" -> "G.2";
+     "G.16" -> "G.15";
+     "G.19" -> "G.15";
+     "G.20" -> "G.15";
+     "G.33" -> "G.15";
+     "G.488" -> "G.15";
+     "G.512" -> "G.15";
+     "G.8" -> "G.5";
+     "G.17" -> "G.5";
+     "G.19" -> "G.5";
+     "G.495" -> "G.492";
+     "G.496" -> "G.492";
+     "G.19" -> "G.18";
+     "G.20" -> "G.18";
+     "G.21" -> "G.18";
+     "G.24" -> "G.22";
+     "G.512" -> "G.496";
+     "G.5" -> "G.3";
+     "G.8" -> "G.3";
+     "G.12" -> "G.3";
+     "G.20" -> "G.3";
+     "G.25" -> "G.3";
+     "G.496" -> "G.495";
+     "G.512" -> "G.495";
+     "G.495" -> "G.44";
+     "G.496" -> "G.44";
+     "G.492" -> "G.42";
+     "G.42" -> "G.40";
+     "G.44" -> "G.38";
+     "G.492" -> "G.488";
+     "G.495" -> "G.488";
+     "G.492" -> "G.491";
+     "G.20" -> "G.17";
+     "G.25" -> "G.17";
+     "G.24" -> "G.21";
+     "G.42" -> "G.21";
+     "G.15" -> "G.14";
+     "G.488" -> "G.487";
+     "G.492" -> "G.487";
+     "G.495" -> "G.487";
+     "G.512" -> "G.487";
+     "G.38" -> "G.37";
+     "G.491" -> "G.486";
+     "G.8" -> "G.6";
+     "G.24" -> "G.6";
+     "G.21" -> "G.19";
+     "G.495" -> "G.19";
+     "G.488" -> "G.36";
+     "G.36" -> "G.25";
+     "G.38" -> "G.25";
+     "G.5" -> "G.1";
+     "G.8" -> "G.1";
+     "G.9" -> "G.1";
+     "G.24" -> "G.1";
+     "G.42" -> "G.1";
+     "G.9" -> "G.8";
+     "G.44" -> "G.33";
+     "G.512" -> "G.33";
+     "G.485" -> "G.484";
+     "G.8" -> "G.7";
+     "G.12" -> "G.7";
+     "G.25" -> "G.7";
+     "G.12" -> "G.11";
+     "G.17" -> "G.11";
+     "G.25" -> "G.11";
+     "G.36" -> "G.11";
+     "G.488" -> "G.11";
+     "G.512" -> "G.11";
+     "G.11" -> "G.10";
+     "G.492" -> "G.485";
+     "G.14" -> "G.12";
+   }

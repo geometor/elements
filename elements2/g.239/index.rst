@@ -41,3 +41,24 @@ But it also measures AB; therefore D measures CA, AB which are prime to one anot
 Therefore no number will measure the numbers AB, BC.
 
 Therefore AB, BC are prime to one another. Q. E. D.
+
+
+Dependency Graph
+----------------
+
+.. graphviz::
+
+   digraph {
+     rankdir="TB";
+     node [shape=box, style=rounded];
+     "G.206" [label="G.206", style="rounded,filled", fillcolor=orange, URL="/elements2/g.206/", target="_top"];
+     "G.239" [label="G.239", style="rounded,filled", fillcolor=lightblue, URL="/elements2/g.239/", target="_top"];
+     "G.239" -> "G.206";
+   }
+
+
+
+Required for
+------------
+
+:ref:`g.302`

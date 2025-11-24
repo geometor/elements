@@ -27,3 +27,30 @@ Therefore also, as one of the antecedents is to one of the consequents, so are a
 But KH is equal to CG, FH to A, and LF, FK, HF to D, BC, A; therefore, as CG is to A, so is EH to D, BC, A.
 
 Therefore, as the excess of the second is to the first, so is the excess of the last to all those before it. Q. E. D.
+
+
+Dependency Graph
+----------------
+
+.. graphviz::
+
+   digraph {
+     rankdir="TB";
+     node [shape=box, style=rounded];
+     "G.216" [label="G.216", style="rounded,filled", fillcolor=orange, URL="/elements2/g.216/", target="_top"];
+     "G.222" [label="G.222", URL="/elements2/g.222/", target="_top"];
+     "G.219" [label="G.219", style="rounded,filled", fillcolor=orange, URL="/elements2/g.219/", target="_top"];
+     "G.326" [label="G.326", style="rounded,filled", fillcolor=orange, URL="/elements2/g.326/", target="_top"];
+     "G.327" [label="G.327", style="rounded,filled", fillcolor=lightblue, URL="/elements2/g.327/", target="_top"];
+     "G.222" -> "G.216";
+     "G.327" -> "G.222";
+     "G.222" -> "G.219";
+     "G.327" -> "G.326";
+   }
+
+
+
+Required for
+------------
+
+:ref:`g.329`

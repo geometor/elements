@@ -1,79 +1,18 @@
 :order: 370
-:original_id: XI.34
-:type: prop
-:dependencies: g.144, g.148, g.167, g.357, g.366, g.367, g.369
+:original_id: elem.5.19.p.1
+:type: unknown
 
 .. _g.370:
 
 G.370
 =====
 
-**Heath ID:** :ref:`XI.34`
+**Heath ID:** :ref:`elem.5.19.p.1`
 
-   In equal parallelepipedal solids the bases are reciprocally proportional to the heights; and those parallelepipedal solids in which the bases are reciprocally proportional to the heights are equal.
 
-Let AB, CD be equal parallelepipedal solids; I say that in the parallelepipedal solids AB, CD the bases are reciprocally proportional to the heights, that is, as the base EH is to the base NQ, so is the height of the solid CD to the height of the solid AB.
 
-First, let the sides which stand up, namely AG, EF, LB, HK, CM, NO, PD, QR, be at right angles to their bases; I say that, as the base EH is to the base NQ, so is CM to AG.
 
-If now the base EH is equal to the base NQ, while the solid AB is also equal to the solid CD, CM will also be equal to AG.
+Required for
+------------
 
-For parallelepipedal solids of the same height are to one another as the bases; [:ref:`g.367`] and, as the base EH is to NQ, so will CM be to AG, and it is manifest that in the parallelepipedal solids AB, CD the bases are reciprocally proportional to the heights.
-
-Next, let the base EH not be equal to the base NQ, but let EH be greater.
-
-Now the solid AB is equal to the solid CD; therefore CM is also greater than AG.
-
-Let then CT be made equal to AG, and let the parallelepipedal solid VC be completed on NQ as base and with CT as height.
-
-Now, since the solid AB is equal to the solid CD, and CV is outside them, while equals have to the same the same ratio, [:ref:`g.144`] therefore, as the solid AB is to the solid CV, so is the solid CD to the solid CV.
-
-But, as the solid AB is to the solid CV, so is the base EH to the base NQ, for the solids AB, CV are of equal height; [:ref:`g.367`] and, as the solid CD is to the solid CV, so is the base MQ to the base TQ [:ref:`g.357`] and CM to CT [:ref:`g.167`]; therefore also, as the base EH is to the base NQ, so is MC to CT.
-
-But CT is equal to AG; therefore also, as the base EH is to the base NQ, so is MC to AG.
-
-Therefore in the parallelepipedal solids AB, CD the bases are reciprocally proportional to the heights.
-
-Again, in the parallelepipedal solids AB, CD let the bases be reciprocally proportional to the heights, that is, as the base EH is to the base NQ, so let the height of the solid CD be to the height of the solid AB; I say that the solid AB is equal to the solid CD.
-
-Let the sides which stand up be again at right angles to the bases.
-
-Now, if the base EH is equal to the base NQ, and, as the base EH is to the base NQ, so is the height of the solid CD to the height of the solid AB, therefore the height of the solid CD is also equal to the height of the solid AB.
-
-But parallelepipedal solids on equal bases and of the same height are equal to one another; [:ref:`g.366`] therefore the solid AB is equal to the solid CD.
-
-Next, let the base EH not be equal to the base NQ, but let EH be greater; therefore the height of the solid CD is also greater than the height of the solid AB, that is, CM is greater than AG.
-
-Let CT be again made equal to AG, and let the solid CV be similarly completed.
-
-Since, as the base EH is to the base NQ, so is MC to AG, while AG is equal to CT, therefore, as the base EH is to the base NQ, so is CM to CT.
-
-But, as the base EH is to the base NQ, so is the solid AB to the solid CV, for the solids AB, CV are of equal height; [:ref:`g.367`] and, as CM is to CT, so is the base MQ to the base QT [:ref:`g.167`] and the solid CD to the solid CV. [:ref:`g.357`]
-
-Therefore also, as the solid AB is to the solid CV, so is the solid CD to the solid CV; therefore each of the solids AB, CD has to CV the same ratio.
-
-Therefore the solid AB is equal to the solid CD. [:ref:`g.148`]
-
-Now let the sides which stand up, FE, BL, GA, HK, ON, DP, MC, RQ, not be at right angles to their bases; let perpendiculars be drawn from the points F, G, B, K, O, M, D, R to the planes through EH, NQ, and let them meet the planes at S, T, U, V, W, X, Y, a, and let the solids FV, Oa be completed; I say that, in this case too, if the solids AB, CD are equal, the bases are reciprocally proportional to the heights, that is, as the base EH is to the base NQ, so is the height of the solid CD to the height of the solid AB.
-
-Since the solid AB is equal to the solid CD, while AB is equal to BT, for they are on the same base FK and of the same height; [:ref:`g.369`] and the solid CD is equal to DX, for they are again on the same base RO and of the same height; [id.] therefore the solid BT is also equal to the solid DX.
-
-Therefore, as the base FK is to the base OR, so is the height of the solid DX to the height of the solid BT. [Part 1.]
-
-But the base FK is equal to the base EH, and the base OR to the base NQ; therefore, as the base EH is to the base NQ, so is the height of the solid DX to the height of the solid BT.
-
-But the solids DX, BT and the solids DC, BA have the same heights respectively; therefore, as the base EH is to the base NQ, so is the height of the solid DC to the height of the solid AB.
-
-Therefore in the parallelepipedal solids AB, CD the bases are reciprocally proportional to the heights.
-
-Again, in the parallelepipedal solids AB, CD let the bases be reciprocally proportional to the heights, that is, as the base EH is to the base NQ, so let the height of the solid CD be to the height of the solid AB; I say that the solid AB is equal to the solid CD.
-
-For, with the same construction, since, as the base EH is to the base NQ, so is the height of the solid CD to the height of the solid AB, while the base EH is equal to the base FK, and NQ to OR, therefore, as the base FK is to the base OR, so is the height of the solid CD to the height of the solid AB.
-
-But the solids AB, CD and BT, DX have the same heights respectively; therefore, as the base FK is to the base OR, so is the height of the solid DX to the height of the solid BT.
-
-Therefore in the parallelepipedal solids BT, DX the bases are reciprocally proportional to the heights; therefore the solid BT is equal to the solid DX. [Part 1.]
-
-But BT is equal to BA, for they are on the same base FK and of the same height; [:ref:`g.369`] and the solid DX is equal to the solid DC. [id.]
-
-Therefore the solid AB is also equal to the solid CD. Q. E. D.
+:ref:`g.466`, :ref:`g.467`, :ref:`g.468`, :ref:`g.472`, :ref:`g.473`, :ref:`g.474`, :ref:`g.475`, :ref:`g.476`, :ref:`g.477`, :ref:`g.481`, :ref:`g.371`, :ref:`g.373`, :ref:`g.374`, :ref:`g.375`, :ref:`g.376`, :ref:`g.377`, :ref:`g.380`, :ref:`g.385`, :ref:`g.386`, :ref:`g.387`, :ref:`g.392`, :ref:`g.393`, :ref:`g.395`, :ref:`g.396`, :ref:`g.397`, :ref:`g.398`, :ref:`g.399`, :ref:`g.400`, :ref:`g.408`, :ref:`g.410`, :ref:`g.411`, :ref:`g.419`, :ref:`g.420`, :ref:`g.421`, :ref:`g.426`, :ref:`g.427`, :ref:`g.428`, :ref:`g.429`, :ref:`g.430`, :ref:`g.435`, :ref:`g.437`, :ref:`g.438`, :ref:`g.442`, :ref:`g.443`, :ref:`g.444`, :ref:`g.446`, :ref:`g.448`, :ref:`g.450`, :ref:`g.452`, :ref:`g.454`, :ref:`g.456`, :ref:`g.460`, :ref:`g.461`, :ref:`g.462`, :ref:`g.569`, :ref:`g.574`, :ref:`g.578`

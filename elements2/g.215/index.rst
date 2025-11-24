@@ -35,3 +35,19 @@ Therefore, whatever part KH is of CD, the same part also is KN of CF; therefore 
 But the remainder MK was also proved to be the same part of the remainder FD that the whole GK is of the whole CD; therefore also the sum of MK, NH is the same parts of DF that the whole HG is of the whole CD.
 
 But the sum of MK, NH is equal to EB, and HG is equal to BA; therefore the remainder EB is the same parts of the remainder FD that the whole AB is of the whole CD. Q. E. D.
+
+
+Dependency Graph
+----------------
+
+.. graphviz::
+
+   digraph {
+     rankdir="TB";
+     node [shape=box, style=rounded];
+     "G.214" [label="G.214", URL="/elements2/g.214/", target="_top"];
+     "G.215" [label="G.215", style="rounded,filled", fillcolor=lightblue, URL="/elements2/g.215/", target="_top"];
+     "G.212" [label="G.212", style="rounded,filled", fillcolor=orange, URL="/elements2/g.212/", target="_top"];
+     "G.215" -> "G.214";
+     "G.214" -> "G.212";
+   }

@@ -1,116 +1,353 @@
 :order: 456
-:original_id: XIII.17
+:original_id: X.90
 :type: prop
-:dependencies: g.60, g.15, g.154, g.204, g.330, g.374, g.336, g.454, g.407, g.409, g.431, g.432
+:dependencies: g.163, g.338, g.432, g.342, g.344, g.455, g.370
 
 .. _g.456:
 
 G.456
 =====
 
-**Heath ID:** :ref:`XIII.17`
+**Heath ID:** :ref:`X.90`
 
-   To construct a dodecahedron and comprehend it in a sphere, like the aforesaid figures, and to prove that the side of the dodecahedron is the irrational straight line called apotome.
+   To find the sixth apotome.
 
-Let ABCD, CBEF, two planes of the aforesaid cube at right angles to one another, be set out, let the sides AB, BC, CD, DA, EF, EB, FC be bisected at G, H, K, L, M, N, O respectively, let GK, HL, MH, NO be joined, let the straight lines NP, PO, HQ be cut in extreme and mean ratio at the points R, S, T respectively, and let RP, PS, TQ be their greater segments; from the points R, S, T let RU, SV, TW be set up at right angles to the planes of the cube towards the outside of the cube, let them be made equal to RP, PS, TQ, and let UB, BW, WC, CV, VU be joined.
+Let a rational straight line A be set out, and three numbers E, BC, CD not having to one another the ratio which a square number has to a square number; and further let CB also not have to BD the ratio which a square number has to a square number.
 
-I say that the pentagon UBWCV is equilateral, and in one plane, and is further equiangular.
+Let it be contrived that, as E is to BC, so is the square on A to the square on FG, and, as BC is to CD, so is the square on FG to the square on GH. [:ref:`g.344`]
 
-For let RB, SB, VB be joined.
+Now since, as E is to BC, so is the square on A to the square on FG, therefore the square on A is commensurable with the square on FG. [:ref:`g.338`]
 
-Then, since the straight line NP has been cut in extreme and mean ratio at R, and RP is the greater segment, therefore the squares on PN, NR are triple of the square on RP. [:ref:`g.407`]
+But the square on A is rational; therefore the square on FG is also rational; therefore FG is also rational.
 
-But PN is equal to NB, and PR to RU; therefore the squares on BN, NR are triple of the square on RU.
+And, since E has not to BC the ratio which a square number has to a square number, therefore neither has the square on A to the square on FG the ratio which a square number has to a square number; therefore A is incommensurable in length with FG. [:ref:`g.342`]
 
-But the square on BR is equal to the squares on BN, NR; [:ref:`g.60`] therefore the square on BR is triple of the square on RU; hence the squares on BR, RU are quadruple of the square on RU.
+Again, since, as BC is to CD, so is the square on FG to the square on GH, therefore the square on FG is commensurable with the square on GH. [:ref:`g.338`]
 
-But the square on BU is equal to the squares on BR, RU; therefore the square on BU is quadruple of the square on RU; therefore BU is double of RU.
+But the square on FG is rational; therefore the square on GH is also rational; therefore GH is also rational.
 
-But VU is also double of UR, inasmuch as SR is also double of PR, that is, of RU; therefore BU is equal to UV.
+And, since BC has not to CD the ratio which a square number has to a square number, therefore neither has the square on FG to the square on GH the ratio which a square number has to a square number; therefore FG is incommensurable in length with GH. [:ref:`g.342`]
 
-Similarly it can be proved that each of the straight lines BW, WC, CV is also equal to each of the straight lines BU, UV.
+And both are rational; therefore FG, GH are rational straight lines commensurable in square only; therefore FH is an apotome. [:ref:`g.432`]
 
-Therefore the pentagon BUVCW is equilateral.
+I say next that it is also a sixth apotome.
 
-I say next that it is also in one plane.
+For since, as E is to BC, so is the square on A to the square on FG, and, as BC is to CD, so is the square on FG to the square on GH, therefore, ex aequali, as E is to CD, so is the square on A to the square on GH. [:ref:`g.163`]
 
-For let PX be drawn from P parallel to each of the straight lines RU, SV and towards the outside of the cube, and let XH, HW be joined; I say that XHW is a straight line.
+But E has not to CD the ratio which a square number has to a square number; therefore neither has the square on A to the square on GH the ratio which a square number has to a square number; therefore A is incommensurable in length with GH; [:ref:`g.342`] therefore neither of the straight lines FG, GH is commensurable in length with the rational straight line A.
 
-For, since HQ has been cut in extreme and mean ratio at T, and QT is its greater segment, therefore, as HQ is to QT, so is QT to TH.
+Now let the square on K be that by which the square on FG is greater than the square on GH.
 
-But HQ is equal to HP, and QT to each of the straight lines TW, PX; therefore, as HP is to PX, so is WT to TH.
+Since then, as BC is to CD, so is the square on FG to the square on GH, therefore, convertendo, as CB is to BD, so is the square on FG to the square on K. [:ref:`g.370`]
 
-And HP is parallel to TW, for each of them is at right angles to the plane BD; [:ref:`g.336`] and TH is parallel to PX, for each of them is at right angles to the plane BF. [id.]
+But CB has not to BD the ratio which a square number has to a square number; therefore neither has the square on FG to the square on K the ratio which a square number has to a square number; therefore FG is incommensurable in length with K. [:ref:`g.342`]
 
-But if two triangles, as XPH, HTW, which have two sides proportional to two sides be placed together at one angle so that their corresponding sides are also parallel, the remaining straight lines will be in a straight line; [:ref:`g.204`] therefore XH is in a straight line with HW.
+And the square on FG is greater than the square on GH by the square on K; therefore the square on FG is greater than the square on GH by the square on a straight line incommensurable in length with FG.
 
-But every straight line is in one plane; [:ref:`g.330`] therefore the pentagon UBWCV is in one plane.
+And neither of the straight lines FG, GH is commensurable with the rational straight line A set out.
 
-I say next that it is also equiangular.
+Therefore FH is a sixth apotome. [:ref:`g.455`]
 
-For, since the straight line NP has been cut in extreme and mean ratio at R, and PR is the greater segment, while PR is equal to PS, therefore NS has also been cut in extreme and mean ratio at P, and NP is the greater segment; [:ref:`g.409`] therefore the squares on NS, SP are triple of the square on NP. [:ref:`g.407`]
-
-But NP is equal to NB, and PS to SV; therefore the squares on NS, SV are triple of the square on NB; hence the squares on VS, SN, NB are quadruple of the square on NB.
-
-But the square on SB is equal to the squares on SN, NB; therefore the squares on BS, SV, that is, the square on BV —for the angle VSB is right—is quadruple of the square on NB; therefore VB is double of BN.
-
-But BC is also double of BN; therefore BV is equal to BC.
-
-And, since the two sides BU, UV are equal to the two sides BW, WC, and the base BV is equal to the base BC, therefore the angle BUV is equal to the angle BWC. [:ref:`g.15`]
-
-Similarly we can prove that the angle UVC is also equal to the angle BWC; therefore the three angles BWC, BUV, UVC are equal to one another.
-
-But if in an equilateral pentagon three angles are equal to one another, the pentagon will be equiangular, [:ref:`g.432`] therefore the pentagon BUVCW is equiangular.
-
-And it was also proved equilateral; therefore the pentagon BUVCW is equilateral and equiangular, and it is on one side BC of the cube.
-
-Therefore, if we make the same construction in the case of each of the twelve sides of the cube, a solid figure will have been constructed which is contained by twelve equilateral and equiangular pentagons, and which is called a dodecahedron.
-
-It is then required to comprehend it in the given sphere, and to prove that the side of the dodecahedron is the irrational straight line called apotome.
-
-For let XP be produced, and let the produced straight line be XZ; therefore PZ meets the diameter of the cube, and they bisect one another, for this has been proved in the last theorem but one of the eleventh book. [:ref:`g.374`]
-
-Let them cut at Z; therefore Z is the centre of the sphere which comprehends the cube, and ZP is half of the side of the cube.
-
-Let UZ be joined.
-
-Now, since the straight line NS has been cut in extreme and mean ratio at P, and NP is its greater segment, therefore the squares on NS, SP are triple of the square on NP. [:ref:`g.407`]
-
-But NS is equal to XZ, inasmuch as NP is also equal to PZ, and XP to PS.
-
-But further PS is also equal to XU, since it is also equal to RP; therefore the squares on ZX, XU are triple of the square on NP.
-
-But the square on UZ is equal to the squares on ZX, XU; therefore the square on UZ is triple of the square on NP.
-
-But the square on the radius of the sphere which comprehends the cube is also triple of the square on the half of the side of the cube, for it has previously been shown how to construct a cube and comprehend it in a sphere, and to prove that the square on the diameter of the sphere is triple of the square on the side of the cube. [:ref:`g.454`]
-
-But, if whole is so related to whole, so is half to half also; and NP is half of the side of the cube; therefore UZ is equal to the radius of the sphere which comprehends the cube.
-
-And Z is the centre of the sphere which comprehends the cube; therefore the point U is on the surface of the sphere.
-
-Similarly we can prove that each of the remaining angles of the dodecahedron is also on the surface of the sphere; therefore the dodecahedron has been comprehended in the given sphere.
-
-I say next that the side of the dodecahedron is the irrational straight line called apotome.
-
-For since, when NP has been cut in extreme and mean ratio, RP is the greater segment, and, when PO has been cut in extreme and mean ratio, PS is the greater segment, therefore, when the whole NO is cut in extreme and mean ratio, RS is the greater segment.
-
-[Thus, since, as NP is to PR, so is PR to RN, the same is true of the doubles also, for parts have the same ratio as their equimultiples; [:ref:`g.154`] therefore as NO is to RS, so is RS to the sum of NR, SO.
-
-But NO is greater than RS; therefore RS is also greater than the sum of NR, SO; therefore NO has been cut in extreme and mean ratio, and RS is its greater segment.]
-
-But RS is equal to UV; therefore, when NO is cut in extreme and mean ratio, UV is the greater segment.
-
-And, since the diameter of the sphere is rational, and the square on it is triple of the square on the side of the cube, therefore NO, being a side of the cube, is rational.
-
-[But if a rational line be cut in extreme and mean ratio, each of the segments is an irrational apotome.]
-
-Therefore UV, being a side of the dodecahedron, is an irrational apotome. [:ref:`g.431`]
+Therefore the sixth apotome FH has been found. Q. E. D.
 
 
-.. _elem.13.17.p.1:
+Dependency Graph
+----------------
 
+.. graphviz::
 
-**XIII.17.p.1**
-
-
-From this it is manifest that, when the side of the cube is cut in extreme and mean ratio, the greater segment is the side of the dodecahedron. Q. E. D.
+   digraph {
+     rankdir="TB";
+     node [shape=box, style=rounded];
+     "G.253" [label="G.253", style="rounded,filled", fillcolor=orange, URL="/elements2/g.253/", target="_top"];
+     "G.238" [label="G.238", URL="/elements2/g.238/", target="_top"];
+     "G.354" [label="G.354", style="rounded,filled", fillcolor=orange, URL="/elements2/g.354/", target="_top"];
+     "G.210" [label="G.210", URL="/elements2/g.210/", target="_top"];
+     "G.141" [label="G.141", URL="/elements2/g.141/", target="_top"];
+     "G.4" [label="G.4", style="rounded,filled", fillcolor=orange, URL="/elements2/g.4/", target="_top"];
+     "G.145" [label="G.145", style="rounded,filled", fillcolor=orange, URL="/elements2/g.145/", target="_top"];
+     "G.274" [label="G.274", URL="/elements2/g.274/", target="_top"];
+     "G.24" [label="G.24", URL="/elements2/g.24/", target="_top"];
+     "G.68" [label="G.68", URL="/elements2/g.68/", target="_top"];
+     "G.2" [label="G.2", style="rounded,filled", fillcolor=orange, URL="/elements2/g.2/", target="_top"];
+     "G.9" [label="G.9", URL="/elements2/g.9/", target="_top"];
+     "G.211" [label="G.211", URL="/elements2/g.211/", target="_top"];
+     "G.231" [label="G.231", URL="/elements2/g.231/", target="_top"];
+     "G.341" [label="G.341", style="rounded,filled", fillcolor=orange, URL="/elements2/g.341/", target="_top"];
+     "G.152" [label="G.152", URL="/elements2/g.152/", target="_top"];
+     "G.5" [label="G.5", URL="/elements2/g.5/", target="_top"];
+     "G.227" [label="G.227", URL="/elements2/g.227/", target="_top"];
+     "G.456" [label="G.456", style="rounded,filled", fillcolor=lightblue, URL="/elements2/g.456/", target="_top"];
+     "G.18" [label="G.18", style="rounded,filled", fillcolor=orange, URL="/elements2/g.18/", target="_top"];
+     "G.207" [label="G.207", URL="/elements2/g.207/", target="_top"];
+     "G.343" [label="G.343", URL="/elements2/g.343/", target="_top"];
+     "G.208" [label="G.208", URL="/elements2/g.208/", target="_top"];
+     "G.56" [label="G.56", URL="/elements2/g.56/", target="_top"];
+     "G.163" [label="G.163", URL="/elements2/g.163/", target="_top"];
+     "G.431" [label="G.431", style="rounded,filled", fillcolor=orange, URL="/elements2/g.431/", target="_top"];
+     "G.44" [label="G.44", URL="/elements2/g.44/", target="_top"];
+     "G.59" [label="G.59", URL="/elements2/g.59/", target="_top"];
+     "G.216" [label="G.216", style="rounded,filled", fillcolor=orange, URL="/elements2/g.216/", target="_top"];
+     "G.230" [label="G.230", URL="/elements2/g.230/", target="_top"];
+     "G.217" [label="G.217", URL="/elements2/g.217/", target="_top"];
+     "G.236" [label="G.236", URL="/elements2/g.236/", target="_top"];
+     "G.17" [label="G.17", URL="/elements2/g.17/", target="_top"];
+     "G.223" [label="G.223", URL="/elements2/g.223/", target="_top"];
+     "G.225" [label="G.225", URL="/elements2/g.225/", target="_top"];
+     "G.148" [label="G.148", URL="/elements2/g.148/", target="_top"];
+     "G.6" [label="G.6", style="rounded,filled", fillcolor=orange, URL="/elements2/g.6/", target="_top"];
+     "G.251" [label="G.251", URL="/elements2/g.251/", target="_top"];
+     "G.36" [label="G.36", URL="/elements2/g.36/", target="_top"];
+     "G.25" [label="G.25", URL="/elements2/g.25/", target="_top"];
+     "G.1" [label="G.1", style="rounded,filled", fillcolor=orange, URL="/elements2/g.1/", target="_top"];
+     "G.233" [label="G.233", URL="/elements2/g.233/", target="_top"];
+     "G.33" [label="G.33", URL="/elements2/g.33/", target="_top"];
+     "G.349" [label="G.349", URL="/elements2/g.349/", target="_top"];
+     "G.7" [label="G.7", style="rounded,filled", fillcolor=orange, URL="/elements2/g.7/", target="_top"];
+     "G.235" [label="G.235", URL="/elements2/g.235/", target="_top"];
+     "G.219" [label="G.219", style="rounded,filled", fillcolor=orange, URL="/elements2/g.219/", target="_top"];
+     "G.12" [label="G.12", URL="/elements2/g.12/", target="_top"];
+     "G.193" [label="G.193", style="rounded,filled", fillcolor=orange, URL="/elements2/g.193/", target="_top"];
+     "G.340" [label="G.340", URL="/elements2/g.340/", target="_top"];
+     "G.16" [label="G.16", URL="/elements2/g.16/", target="_top"];
+     "G.264" [label="G.264", URL="/elements2/g.264/", target="_top"];
+     "G.140" [label="G.140", style="rounded,filled", fillcolor=orange, URL="/elements2/g.140/", target="_top"];
+     "G.149" [label="G.149", URL="/elements2/g.149/", target="_top"];
+     "G.344" [label="G.344", style="rounded,filled", fillcolor=orange, URL="/elements2/g.344/", target="_top"];
+     "G.41" [label="G.41", style="rounded,filled", fillcolor=orange, URL="/elements2/g.41/", target="_top"];
+     "G.209" [label="G.209", style="rounded,filled", fillcolor=orange, URL="/elements2/g.209/", target="_top"];
+     "G.155" [label="G.155", URL="/elements2/g.155/", target="_top"];
+     "G.218" [label="G.218", URL="/elements2/g.218/", target="_top"];
+     "G.370" [label="G.370", style="rounded,filled", fillcolor=orange, URL="/elements2/g.370/", target="_top"];
+     "G.206" [label="G.206", style="rounded,filled", fillcolor=orange, URL="/elements2/g.206/", target="_top"];
+     "G.331" [label="G.331", style="rounded,filled", fillcolor=orange, URL="/elements2/g.331/", target="_top"];
+     "G.15" [label="G.15", URL="/elements2/g.15/", target="_top"];
+     "G.224" [label="G.224", URL="/elements2/g.224/", target="_top"];
+     "G.337" [label="G.337", URL="/elements2/g.337/", target="_top"];
+     "G.188" [label="G.188", style="rounded,filled", fillcolor=orange, URL="/elements2/g.188/", target="_top"];
+     "G.22" [label="G.22", style="rounded,filled", fillcolor=orange, URL="/elements2/g.22/", target="_top"];
+     "G.228" [label="G.228", URL="/elements2/g.228/", target="_top"];
+     "G.3" [label="G.3", style="rounded,filled", fillcolor=orange, URL="/elements2/g.3/", target="_top"];
+     "G.147" [label="G.147", URL="/elements2/g.147/", target="_top"];
+     "G.237" [label="G.237", URL="/elements2/g.237/", target="_top"];
+     "G.338" [label="G.338", URL="/elements2/g.338/", target="_top"];
+     "G.234" [label="G.234", URL="/elements2/g.234/", target="_top"];
+     "G.339" [label="G.339", URL="/elements2/g.339/", target="_top"];
+     "G.144" [label="G.144", URL="/elements2/g.144/", target="_top"];
+     "G.40" [label="G.40", style="rounded,filled", fillcolor=orange, URL="/elements2/g.40/", target="_top"];
+     "G.42" [label="G.42", URL="/elements2/g.42/", target="_top"];
+     "G.137" [label="G.137", style="rounded,filled", fillcolor=orange, URL="/elements2/g.137/", target="_top"];
+     "G.38" [label="G.38", URL="/elements2/g.38/", target="_top"];
+     "G.336" [label="G.336", style="rounded,filled", fillcolor=orange, URL="/elements2/g.336/", target="_top"];
+     "G.139" [label="G.139", URL="/elements2/g.139/", target="_top"];
+     "G.222" [label="G.222", URL="/elements2/g.222/", target="_top"];
+     "G.226" [label="G.226", URL="/elements2/g.226/", target="_top"];
+     "G.282" [label="G.282", URL="/elements2/g.282/", target="_top"];
+     "G.244" [label="G.244", URL="/elements2/g.244/", target="_top"];
+     "G.150" [label="G.150", style="rounded,filled", fillcolor=orange, URL="/elements2/g.150/", target="_top"];
+     "G.342" [label="G.342", URL="/elements2/g.342/", target="_top"];
+     "G.273" [label="G.273", style="rounded,filled", fillcolor=orange, URL="/elements2/g.273/", target="_top"];
+     "G.21" [label="G.21", URL="/elements2/g.21/", target="_top"];
+     "G.14" [label="G.14", URL="/elements2/g.14/", target="_top"];
+     "G.138" [label="G.138", style="rounded,filled", fillcolor=orange, URL="/elements2/g.138/", target="_top"];
+     "G.37" [label="G.37", style="rounded,filled", fillcolor=orange, URL="/elements2/g.37/", target="_top"];
+     "G.19" [label="G.19", URL="/elements2/g.19/", target="_top"];
+     "G.432" [label="G.432", URL="/elements2/g.432/", target="_top"];
+     "G.229" [label="G.229", URL="/elements2/g.229/", target="_top"];
+     "G.47" [label="G.47", URL="/elements2/g.47/", target="_top"];
+     "G.455" [label="G.455", style="rounded,filled", fillcolor=orange, URL="/elements2/g.455/", target="_top"];
+     "G.8" [label="G.8", URL="/elements2/g.8/", target="_top"];
+     "G.146" [label="G.146", style="rounded,filled", fillcolor=orange, URL="/elements2/g.146/", target="_top"];
+     "G.11" [label="G.11", URL="/elements2/g.11/", target="_top"];
+     "G.10" [label="G.10", style="rounded,filled", fillcolor=orange, URL="/elements2/g.10/", target="_top"];
+     "G.252" [label="G.252", URL="/elements2/g.252/", target="_top"];
+     "G.232" [label="G.232", style="rounded,filled", fillcolor=orange, URL="/elements2/g.232/", target="_top"];
+     "G.282" -> "G.253";
+     "G.252" -> "G.238";
+     "G.432" -> "G.354";
+     "G.244" -> "G.210";
+     "G.163" -> "G.141";
+     "G.5" -> "G.4";
+     "G.8" -> "G.4";
+     "G.9" -> "G.4";
+     "G.147" -> "G.145";
+     "G.282" -> "G.274";
+     "G.25" -> "G.24";
+     "G.42" -> "G.24";
+     "G.432" -> "G.68";
+     "G.5" -> "G.2";
+     "G.9" -> "G.2";
+     "G.12" -> "G.9";
+     "G.16" -> "G.9";
+     "G.19" -> "G.9";
+     "G.25" -> "G.9";
+     "G.230" -> "G.211";
+     "G.235" -> "G.231";
+     "G.244" -> "G.231";
+     "G.251" -> "G.231";
+     "G.342" -> "G.341";
+     "G.155" -> "G.152";
+     "G.8" -> "G.5";
+     "G.17" -> "G.5";
+     "G.19" -> "G.5";
+     "G.228" -> "G.227";
+     "G.229" -> "G.227";
+     "G.233" -> "G.227";
+     "G.252" -> "G.227";
+     "G.264" -> "G.227";
+     "G.274" -> "G.227";
+     "G.19" -> "G.18";
+     "G.21" -> "G.18";
+     "G.208" -> "G.207";
+     "G.432" -> "G.343";
+     "G.210" -> "G.208";
+     "G.211" -> "G.208";
+     "G.68" -> "G.56";
+     "G.337" -> "G.163";
+     "G.338" -> "G.163";
+     "G.456" -> "G.163";
+     "G.432" -> "G.431";
+     "G.59" -> "G.44";
+     "G.68" -> "G.59";
+     "G.217" -> "G.216";
+     "G.218" -> "G.216";
+     "G.222" -> "G.216";
+     "G.231" -> "G.230";
+     "G.235" -> "G.230";
+     "G.251" -> "G.230";
+     "G.218" -> "G.217";
+     "G.238" -> "G.236";
+     "G.25" -> "G.17";
+     "G.224" -> "G.223";
+     "G.227" -> "G.223";
+     "G.230" -> "G.223";
+     "G.274" -> "G.223";
+     "G.226" -> "G.225";
+     "G.229" -> "G.148";
+     "G.338" -> "G.148";
+     "G.8" -> "G.6";
+     "G.24" -> "G.6";
+     "G.56" -> "G.6";
+     "G.252" -> "G.251";
+     "G.47" -> "G.36";
+     "G.36" -> "G.25";
+     "G.38" -> "G.25";
+     "G.5" -> "G.1";
+     "G.8" -> "G.1";
+     "G.9" -> "G.1";
+     "G.24" -> "G.1";
+     "G.42" -> "G.1";
+     "G.252" -> "G.233";
+     "G.44" -> "G.33";
+     "G.432" -> "G.349";
+     "G.8" -> "G.7";
+     "G.12" -> "G.7";
+     "G.25" -> "G.7";
+     "G.236" -> "G.235";
+     "G.237" -> "G.235";
+     "G.222" -> "G.219";
+     "G.223" -> "G.219";
+     "G.227" -> "G.219";
+     "G.230" -> "G.219";
+     "G.244" -> "G.219";
+     "G.337" -> "G.219";
+     "G.338" -> "G.219";
+     "G.14" -> "G.12";
+     "G.338" -> "G.193";
+     "G.343" -> "G.340";
+     "G.17" -> "G.16";
+     "G.342" -> "G.264";
+     "G.141" -> "G.140";
+     "G.144" -> "G.140";
+     "G.152" -> "G.140";
+     "G.163" -> "G.140";
+     "G.155" -> "G.149";
+     "G.456" -> "G.344";
+     "G.42" -> "G.41";
+     "G.210" -> "G.209";
+     "G.163" -> "G.155";
+     "G.223" -> "G.218";
+     "G.456" -> "G.370";
+     "G.207" -> "G.206";
+     "G.231" -> "G.206";
+     "G.234" -> "G.206";
+     "G.235" -> "G.206";
+     "G.349" -> "G.331";
+     "G.16" -> "G.15";
+     "G.19" -> "G.15";
+     "G.33" -> "G.15";
+     "G.251" -> "G.224";
+     "G.340" -> "G.337";
+     "G.342" -> "G.337";
+     "G.343" -> "G.337";
+     "G.264" -> "G.188";
+     "G.274" -> "G.188";
+     "G.24" -> "G.22";
+     "G.229" -> "G.228";
+     "G.252" -> "G.228";
+     "G.264" -> "G.228";
+     "G.5" -> "G.3";
+     "G.8" -> "G.3";
+     "G.12" -> "G.3";
+     "G.25" -> "G.3";
+     "G.148" -> "G.147";
+     "G.149" -> "G.147";
+     "G.155" -> "G.147";
+     "G.238" -> "G.237";
+     "G.339" -> "G.338";
+     "G.342" -> "G.338";
+     "G.343" -> "G.338";
+     "G.432" -> "G.338";
+     "G.456" -> "G.338";
+     "G.235" -> "G.234";
+     "G.343" -> "G.339";
+     "G.149" -> "G.144";
+     "G.229" -> "G.144";
+     "G.42" -> "G.40";
+     "G.47" -> "G.40";
+     "G.56" -> "G.40";
+     "G.47" -> "G.42";
+     "G.59" -> "G.42";
+     "G.147" -> "G.137";
+     "G.44" -> "G.38";
+     "G.337" -> "G.336";
+     "G.338" -> "G.336";
+     "G.141" -> "G.139";
+     "G.225" -> "G.222";
+     "G.230" -> "G.222";
+     "G.228" -> "G.226";
+     "G.231" -> "G.226";
+     "G.235" -> "G.226";
+     "G.244" -> "G.226";
+     "G.342" -> "G.282";
+     "G.282" -> "G.244";
+     "G.338" -> "G.150";
+     "G.456" -> "G.342";
+     "G.274" -> "G.273";
+     "G.24" -> "G.21";
+     "G.42" -> "G.21";
+     "G.15" -> "G.14";
+     "G.139" -> "G.138";
+     "G.38" -> "G.37";
+     "G.21" -> "G.19";
+     "G.59" -> "G.19";
+     "G.456" -> "G.432";
+     "G.235" -> "G.229";
+     "G.244" -> "G.229";
+     "G.56" -> "G.47";
+     "G.59" -> "G.47";
+     "G.456" -> "G.455";
+     "G.9" -> "G.8";
+     "G.147" -> "G.146";
+     "G.152" -> "G.146";
+     "G.12" -> "G.11";
+     "G.17" -> "G.11";
+     "G.25" -> "G.11";
+     "G.36" -> "G.11";
+     "G.47" -> "G.11";
+     "G.11" -> "G.10";
+     "G.282" -> "G.252";
+     "G.233" -> "G.232";
+     "G.235" -> "G.232";
+     "G.244" -> "G.232";
+   }

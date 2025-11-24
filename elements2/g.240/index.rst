@@ -24,3 +24,9 @@ Now, since C measures B, A, therefore it also measures A which is prime, though 
 Therefore no number will measure B, A.
 
 Therefore A, B are prime to one another. Q. E. D.
+
+
+Required for
+------------
+
+:ref:`g.298`, :ref:`g.299`, :ref:`g.300`, :ref:`g.322`, :ref:`g.329`, :ref:`g.241`

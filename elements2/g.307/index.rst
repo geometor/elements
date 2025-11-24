@@ -39,3 +39,17 @@ Therefore G is not the same with any one of the numbers A, B, C.
 And by hypothesis it is prime.
 
 Therefore the prime numbers A, B, C, G have been found which are more than the assigned multitude of A, B, C. Q. E. D.
+
+
+Dependency Graph
+----------------
+
+.. graphviz::
+
+   digraph {
+     rankdir="TB";
+     node [shape=box, style=rounded];
+     "G.242" [label="G.242", style="rounded,filled", fillcolor=orange, URL="/elements2/g.242/", target="_top"];
+     "G.307" [label="G.307", style="rounded,filled", fillcolor=lightblue, URL="/elements2/g.307/", target="_top"];
+     "G.307" -> "G.242";
+   }

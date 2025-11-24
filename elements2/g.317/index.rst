@@ -21,3 +21,21 @@ And B is even; therefore C is made up of even numbers.
 But, if as many even numbers as we please be added together, the whole is even. [:ref:`g.309`]
 
 Therefore C is even. Q. E. D.
+
+
+Dependency Graph
+----------------
+
+.. graphviz::
+
+   digraph {
+     rankdir="TB";
+     node [shape=box, style=rounded];
+     "G.317" [label="G.317", style="rounded,filled", fillcolor=lightblue, URL="/elements2/g.317/", target="_top"];
+     "G.308" [label="G.308", style="rounded,filled", fillcolor=orange, URL="/elements2/g.308/", target="_top"];
+     "G.232" [label="G.232", style="rounded,filled", fillcolor=orange, URL="/elements2/g.232/", target="_top"];
+     "G.309" [label="G.309", URL="/elements2/g.309/", target="_top"];
+     "G.309" -> "G.308";
+     "G.317" -> "G.232";
+     "G.317" -> "G.309";
+   }

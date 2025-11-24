@@ -39,3 +39,9 @@ Therefore any composite number is measured by some prime number.
 i.e. the implied problem of finding a prime number which measures A.
 In the Greek the sentence stops here, but it is necessary to add the words the number before it, which will also measure A,
 which are found a few lines further down. It is possible that the words may have fallen out of P here by a simple mistake due to ὁμοιοτέλευτον (Heiberg).
+
+
+Required for
+------------
+
+:ref:`g.299`, :ref:`g.307`, :ref:`g.322`, :ref:`g.329`, :ref:`g.243`

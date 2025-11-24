@@ -125,14 +125,14 @@ Dependency Graph
      rankdir="TB";
      node [shape=box, style=rounded];
      "I.def.15" [style="rounded,filled", fillcolor=orange, URL="/heath/I/def.15/", target="_top"];
-     "I.1" [style="rounded,filled", fillcolor=lightblue, URL="/heath/I/1/", target="_top"];
      "I.post.3" [style="rounded,filled", fillcolor=orange, URL="/heath/I/post.3/", target="_top"];
-     "I.post.1" [style="rounded,filled", fillcolor=orange, URL="/heath/I/post.1/", target="_top"];
+     "I.1" [style="rounded,filled", fillcolor=lightblue, URL="/heath/I/1/", target="_top"];
      "I.cn.1" [style="rounded,filled", fillcolor=orange, URL="/heath/I/cn.1/", target="_top"];
+     "I.post.1" [style="rounded,filled", fillcolor=orange, URL="/heath/I/post.1/", target="_top"];
      "I.1" -> "I.def.15";
      "I.1" -> "I.post.3";
-     "I.1" -> "I.post.1";
      "I.1" -> "I.cn.1";
+     "I.1" -> "I.post.1";
    }
 
 

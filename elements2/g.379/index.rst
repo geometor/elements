@@ -1,57 +1,18 @@
 :order: 379
-:original_id: XII.4
-:type: prop
-:dependencies: g.151, g.159, g.194, g.348, g.367, g.375, g.378
+:original_id: elem.10.32.p.1
+:type: unknown
 
 .. _g.379:
 
 G.379
 =====
 
-**Heath ID:** :ref:`XII.4`
+**Heath ID:** :ref:`elem.10.32.p.1`
 
-   If there be two pyramids of the same height which have triangular bases, and cach of them be divided into two pyramids equal to one another and similar to the whole, and into two equal prisms, then, as the base of the one pyramid is to the base of the other pyramid, so will all the prisms in the one pyramid be to all the prisms, being equal in multitude, in the other pyramid.
 
-Let there be two pyramids of the same height which have the triangular bases ABC, DEF, and vertices the points G, H, and let each of them be divided into two pyramids equal to one another and similar to the whole and into two equal prisms; [:ref:`g.378`] I say that, as the base ABC is to the base DEF, so are all the prisms in the pyramid ABCG to all the prisms, being equal in multitude, in the pyramid DEFH,
 
-For, since BO is equal to OC, and AL to LC, therefore LO is parallel to AB, and the triangle ABC is similar to the triangle LOC.
 
-For the same reason the triangle DEF is also similar to the triangle RVF.
+Required for
+------------
 
-And, since BC is double of CO, and EF of FV, therefore, as BC is to CO, so is EF to FV.
-
-And on BC, CO are described the similar and similarly situated rectilineal figures ABC, LOC, and on EF, FV the similar and similarly situated figures DEF, RVF; therefore, as the triangle ABC is to the triangle LOC, so is the triangle DEF to the triangle RVF; [:ref:`g.194`] therefore, alternately, as the triangle ABC is to the triangle DEF, so is the triangle LOC to the triangle RVF. [:ref:`g.159`]
-
-But, as the triangle LOC is to the triangle RVF, so is the prism in which the triangle LOC is the base and PMN its opposite to the prism in which the triangle RVF is the base and STU its opposite; [Lemma following] therefore also, as the triangle ABC is to the triangle DEF, so is the prism in which the triangle LOC is the base and PMN its opposite to the prism in which the triangle RVF is the base and STU its opposite.
-
-But, as the said prisms are to one another, so is the prism in which the parallelogram KBOL is the base and the straight line PM its opposite to the prism in which the parallelogram QEVR is the base and the straight line ST its opposite. [:ref:`g.375`; cf. :ref:`g.378`]
-
-Therefore also the two prisms, that in which the parallelogram KBOL is the base and PM its opposite, and that in which the triangle LOC is the base and PMN its opposite, are to the prisms in which QEVR is the base and the straight line ST its opposite and in which the triangle RVF is the base and STU its opposite in the same ratio [:ref:`g.151`]
-
-Therefore also, as the base ABC is to the base DEF, so are the said two prisms to the said two prisms.
-
-And similarly, if the pyramids PMNG, STUH be divided into two prisms and two pyramids, as the base PMN is to the base STU, so will the two prisms in the pyramid PMNG be to the two prisms in the pyramid STUH.
-
-But, as the base PMN is to the base STU, so is the base ABC to the base DEF; for the triangles PMN, STU are equal to the triangles LOC, RVF respectively.
-
-Therefore also, as the base ABC is to the base DEF, so are the four prisms to the four prisms.
-
-And similarly also, if we divide the remaining pyramids into two pyramids and into two prisms, then, as the base ABC is to the base DEF, so will all the prisms in the pyramid ABCG be to all the prisms, being equal in multitude, in the pyramid DEFH. Q. E. D.
-
-LEMMA.
-
-But that, as the triangle LOC is to the triangle RVF, so is the prism in which the triangle LOC is the base and PMN its opposite to the prism in which the triangle RVF is the base and STU its opposite, we must prove as follows. 
-
-For in the same figure let perpendiculars be conceived drawn from G, H to the planes ABC, DEF; these are of course equal because, by hypothesis, the pyramids are of equal height. 
-
-Now, since the two straight lines GC and the perpendicular from G are cut by the parallel planes ABC, PMN, they will be cut in the same ratios. [:ref:`g.348`] 
-
-And GC is bisected by the plane PMN at N; therefore the perpendicular from G to the plane ABC will also be bisected by the plane PMN. 
-
-For the same reason the perpendicular from H to the plane DEF will also be bisected by the plane STU. 
-
-And the perpendiculars from G, H to the planes ABC, DEF are equal; therefore the perpendiculars from the triangles PMN, STU to the planes ABC, DEF are also equal. 
-
-Therefore the prisms in which the triangles LOC, RVF are bases, and PMN, STU their opposites, are of equal height. 
-
-Hence also the parallelepipedal solids described from the said prisms are of equal height and are to one another as their bases; [:ref:`g.367`] therefore their halves, namely the said prisms, are to one another as the base LOC is to the base RVF. Q. E. D.
+:ref:`g.468`, :ref:`g.474`, :ref:`g.477`, :ref:`g.380`, :ref:`g.387`, :ref:`g.411`, :ref:`g.421`, :ref:`g.428`, :ref:`g.430`, :ref:`g.438`, :ref:`g.444`, :ref:`g.462`

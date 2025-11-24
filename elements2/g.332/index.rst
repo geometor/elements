@@ -1,24 +1,54 @@
 :order: 332
-:original_id: XI.3
+:original_id: X.2
 :type: prop
+:dependencies: g.331
 
 .. _g.332:
 
 G.332
 =====
 
-**Heath ID:** :ref:`XI.3`
+**Heath ID:** :ref:`X.2`
 
-   If two planes cut one another, their common section is a straight line.
+   If, when the less of two unequal magnitudes is continually subtracted in turn from the greater, that which is left never measures the one before it, the magnitudes will be incommensurable.
 
-For let the two planes AB, BC cut one another, and let the line DB be their common section; I say that the line DB is a straight line.
+For, there being two unequal magnitudes AB, CD, and AB being the less, when the less is continually subtracted in turn from the greater, let that which is left over never measure the one before it; I say that the magnitudes AB, CD are incommensurable.
 
-For, if not, from D to B let the straight line DEB be joined in the plane AB, and in the plane BC the straight line DFB.
+For, if they are commensurable, some magnitude will measure them.
 
-Then the two straight lines DEB, DFB will have the same extremities, and will clearly enclose an area: which is absurd.
+Let a magnitude measure them, if possible, and let it be E; let AB, measuring FD, leave CF less than itself, let CF measuring BG, leave AG less than itself, and let this process be repeated continually, until there is left some magnitude which is less than E.
 
-Therefore DEB, DFB are not straight lines.
+Suppose this done, and let there be left AG less than E.
 
-Similarly we can prove that neither will there be any other straight line joined from D to B except DB the common section of the planes AB, BC.
+Then, since E measures AB, while AB measures DF, therefore E will also measure FD.
 
-Therefore etc. Q. E. D.
+But it measures the whole CD also; therefore it will also measure the remainder CF.
+
+But CF measures BG; therefore E also measures BG.
+
+But it measures the whole AB also; therefore it will also measure the remainder AG, the greater the less: which is impossible.
+
+Therefore no magnitude will measure the magnitudes AB, CD; therefore the magnitudes AB, CD are incommensurable.
+
+Therefore etc. [:ref:`g.331`]
+
+
+Dependency Graph
+----------------
+
+.. graphviz::
+
+   digraph {
+     rankdir="TB";
+     node [shape=box, style=rounded];
+     "G.331" [label="G.331", style="rounded,filled", fillcolor=orange, URL="/elements2/g.331/", target="_top"];
+     "G.332" [label="G.332", style="rounded,filled", fillcolor=lightblue, URL="/elements2/g.332/", target="_top"];
+     "G.332" -> "G.331";
+   }
+
+
+
+Required for
+------------
+
+:ref:`g.333`, :ref:`g.335`

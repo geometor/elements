@@ -13,7 +13,7 @@ GEOMETOR • elements
    changelog.rst
    glossary.rst
 
-.. include:: intro.rst
+.. .. include:: intro.rst
 
 
 Euclid's Elements 2.0

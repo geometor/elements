@@ -21,3 +21,19 @@ I say next that it is also even-times odd only.
 For, if A is even-times even also, it will be measured by an even number according to an even number; [:ref:`g.321`] so that the half of it will also be measured by an even number though it is odd: which is absurd.
 
 Therefore A is even-times odd only. Q. E. D.
+
+
+Dependency Graph
+----------------
+
+.. graphviz::
+
+   digraph {
+     rankdir="TB";
+     node [shape=box, style=rounded];
+     "G.321" [label="G.321", style="rounded,filled", fillcolor=orange, URL="/elements2/g.321/", target="_top"];
+     "G.323" [label="G.323", style="rounded,filled", fillcolor=orange, URL="/elements2/g.323/", target="_top"];
+     "G.324" [label="G.324", style="rounded,filled", fillcolor=lightblue, URL="/elements2/g.324/", target="_top"];
+     "G.324" -> "G.321";
+     "G.324" -> "G.323";
+   }
