@@ -30,10 +30,10 @@
           <a href="../../mission/index.html"  >mission</a>
         </li>
         <li>
-          <a href="../../elements2/index.html"  >Elements 2.0</a>
+          <a href="../../usage.html"  >usage</a>
         </li>
         <li>
-          <a href="../../usage.html"  >usage</a>
+          <a href="../../heath/index.html"  >Elements Heath Edition</a>
         </li>
         <li>
           <a href="../../modules/index.html"  >modules</a>
@@ -71,6 +71,7 @@
 <span class="kn">from</span><span class="w"> </span><span class="nn">xml.sax.saxutils</span><span class="w"> </span><span class="kn">import</span> <span class="n">escape</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">networkx</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">nx</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">PIL</span><span class="w"> </span><span class="kn">import</span> <span class="n">Image</span><span class="p">,</span> <span class="n">ImageOps</span>
 
 
 <div class="viewcode-block" id="ROMAN_NUMERALS">
@@ -509,7 +510,7 @@
         <span class="n">path_info</span> <span class="o">=</span> <span class="n">ref_to_path_map</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">node</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">path_info</span><span class="p">:</span>
             <span class="n">target_book</span><span class="p">,</span> <span class="n">target_folder</span> <span class="o">=</span> <span class="n">path_info</span>
-            <span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;/elements2/</span><span class="si">{</span><span class="n">target_book</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">target_folder</span><span class="si">}</span><span class="s2">/&quot;</span>
+            <span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;/heath/</span><span class="si">{</span><span class="n">target_book</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">target_folder</span><span class="si">}</span><span class="s2">/&quot;</span>
             <span class="n">attrs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;URL=&quot;</span><span class="si">{</span><span class="n">url</span><span class="si">}</span><span class="s1">&quot;&#39;</span><span class="p">)</span>
             <span class="n">attrs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;target=&quot;_top&quot;&#39;</span><span class="p">)</span>
 
@@ -609,7 +610,20 @@
 
                     <span class="k">for</span> <span class="n">image_path</span> <span class="ow">in</span> <span class="n">image_files</span><span class="p">:</span>
                         <span class="n">shutil</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">image_path</span><span class="p">,</span> <span class="n">entry_dir</span><span class="p">)</span>
-                        <span class="n">entry_index_content</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">.. figure:: </span><span class="si">{</span><span class="n">image_path</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="se">\n</span><span class="s2">   :width: 50%</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                        <span class="n">entry_index_content</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">.. figure:: </span><span class="si">{</span><span class="n">image_path</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                
+                <span class="n">heath_propositions_dir</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">&quot;resources/heath/propositions&quot;</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">heath_propositions_dir</span><span class="o">.</span><span class="n">exists</span><span class="p">()</span> <span class="ow">and</span> <span class="n">entry</span><span class="p">[</span><span class="s1">&#39;canonical_ref&#39;</span><span class="p">]:</span>
+                    <span class="n">graphic_stem</span> <span class="o">=</span> <span class="n">entry</span><span class="p">[</span><span class="s1">&#39;canonical_ref&#39;</span><span class="p">]</span>
+                    <span class="n">graphic_file</span> <span class="o">=</span> <span class="n">heath_propositions_dir</span> <span class="o">/</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">graphic_stem</span><span class="si">}</span><span class="s2">.graphic.png&quot;</span>
+
+                    <span class="k">if</span> <span class="n">graphic_file</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+                        <span class="c1"># Invert and save the graphic image</span>
+                        <span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">graphic_file</span><span class="p">)</span>
+                        <span class="n">inverted_img</span> <span class="o">=</span> <span class="n">ImageOps</span><span class="o">.</span><span class="n">invert</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">convert</span><span class="p">(</span><span class="s1">&#39;RGB&#39;</span><span class="p">))</span>
+                        <span class="n">inverted_img_path</span> <span class="o">=</span> <span class="n">entry_dir</span> <span class="o">/</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">graphic_file</span><span class="o">.</span><span class="n">stem</span><span class="si">}</span><span class="s2">.inverted.png&quot;</span>
+                        <span class="n">inverted_img</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">inverted_img_path</span><span class="p">)</span>
+                        <span class="n">entry_index_content</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">.. figure:: </span><span class="si">{</span><span class="n">inverted_img_path</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
                 
                 <span class="n">entry_index_content</span><span class="o">.</span><span class="n">extend</span><span class="p">([</span>
                     <span class="sa">f</span><span class="s2">&quot;.. _</span><span class="si">{</span><span class="n">entry</span><span class="p">[</span><span class="s1">&#39;canonical_ref&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
@@ -710,7 +724,7 @@
 <a class="viewcode-back" href="../../modules/api/elements/transform/index.html#elements.transform.main">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;RST transformation tool&quot;</span><span class="p">)</span>
-    <span class="n">output_dir</span> <span class="o">=</span> <span class="s2">&quot;docsrc/elements2&quot;</span>
+    <span class="n">output_dir</span> <span class="o">=</span> <span class="s2">&quot;docsrc/heath&quot;</span>
 
     <span class="c1"># Clean up existing book directories to prevent orphans</span>
     <span class="n">output_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">output_dir</span><span class="p">)</span>
@@ -725,7 +739,7 @@
 
     <span class="n">all_books_data</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="n">entry_number</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">14</span><span class="p">):</span>
         <span class="n">xml_file_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;resources/xml/books/</span><span class="si">{</span><span class="n">i</span><span class="si">:</span><span class="s2">02d</span><span class="si">}</span><span class="s2">.xml&quot;</span>
         <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">xml_file_path</span><span class="p">):</span>
             <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Processing </span><span class="si">{</span><span class="n">xml_file_path</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
@@ -776,7 +790,7 @@
     <span class="n">main_index_content</span> <span class="o">=</span> <span class="p">[</span>
         <span class="s2">&quot;:navigation: header&quot;</span><span class="p">,</span>
         <span class="s2">&quot;:order: 2</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;Elements 2.0&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Elements Heath Edition&quot;</span><span class="p">,</span>
         <span class="s2">&quot;============</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
         <span class="s2">&quot;.. collection::&quot;</span><span class="p">,</span>
         <span class="s2">&quot;   :type: book&quot;</span><span class="p">,</span>
@@ -786,7 +800,7 @@
             
     <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="n">output_dir</span><span class="p">)</span> <span class="o">/</span> <span class="s2">&quot;index.rst&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
         <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">main_index_content</span><span class="p">))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Generated main index.rst for elements2&quot;</span><span class="p">)</span></div>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Generated main index.rst for heath&quot;</span><span class="p">)</span></div>
 
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
@@ -853,6 +867,8 @@
 <aside class="aside-types">
     <h3>Types</h3>
     <ul>
+        
+        <li><a href="../../types/None.html">None</a></li>
         
         <li><a href="../../types/book.html">book</a></li>
         

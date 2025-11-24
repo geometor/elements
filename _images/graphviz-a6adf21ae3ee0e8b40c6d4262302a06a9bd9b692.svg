@@ -1,0 +1,48 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" width="152pt" height="188pt" viewBox="0.00 0.00 152.00 188.00">
+<ns0:g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
+<ns0:title>%3</ns0:title>
+<ns0:polygon fill="white" stroke="transparent" points="-4,4 -4,-184 148,-184 148,4 -4,4" />
+
+<ns0:g id="node1" class="node">
+<ns0:title>VII.10</ns0:title>
+<ns0:g id="a_node1"><ns0:a ns1:href="../../../../../../../heath/VII/10" ns1:title="VII.10" target="_top">
+<ns0:path fill="lightblue" stroke="black" d="M89.5,-180C89.5,-180 54.5,-180 54.5,-180 48.5,-180 42.5,-174 42.5,-168 42.5,-168 42.5,-156 42.5,-156 42.5,-150 48.5,-144 54.5,-144 54.5,-144 89.5,-144 89.5,-144 95.5,-144 101.5,-150 101.5,-156 101.5,-156 101.5,-168 101.5,-168 101.5,-174 95.5,-180 89.5,-180" />
+<ns0:text text-anchor="middle" x="72" y="-158.3" font-family="Times,serif" font-size="14.00">VII.10</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node2" class="node">
+<ns0:title>elem.7.5 elem.7.6</ns0:title>
+<ns0:path fill="orange" stroke="black" d="M132,-36C132,-36 12,-36 12,-36 6,-36 0,-30 0,-24 0,-24 0,-12 0,-12 0,-6 6,0 12,0 12,0 132,0 132,0 138,0 144,-6 144,-12 144,-12 144,-24 144,-24 144,-30 138,-36 132,-36" />
+<ns0:text text-anchor="middle" x="72" y="-14.3" font-family="Times,serif" font-size="14.00">elem.7.5 elem.7.6</ns0:text>
+</ns0:g>
+
+<ns0:g id="edge2" class="edge">
+<ns0:title>VII.10-&gt;elem.7.5 elem.7.6</ns0:title>
+<ns0:path fill="none" stroke="black" d="M68.75,-143.89C66.95,-133.54 64.91,-120.06 64,-108 62.8,-92.04 62.8,-87.96 64,-72 64.64,-63.52 65.84,-54.34 67.12,-46.04" />
+<ns0:polygon fill="black" stroke="black" points="70.58,-46.55 68.75,-36.11 63.68,-45.41 70.58,-46.55" />
+</ns0:g>
+
+<ns0:g id="node3" class="node">
+<ns0:title>VII.9</ns0:title>
+<ns0:g id="a_node3"><ns0:a ns1:href="../../../../../../../heath/VII/9" ns1:title="VII.9" target="_top">
+<ns0:path fill="none" stroke="black" d="M115,-108C115,-108 85,-108 85,-108 79,-108 73,-102 73,-96 73,-96 73,-84 73,-84 73,-78 79,-72 85,-72 85,-72 115,-72 115,-72 121,-72 127,-78 127,-84 127,-84 127,-96 127,-96 127,-102 121,-108 115,-108" />
+<ns0:text text-anchor="middle" x="100" y="-86.3" font-family="Times,serif" font-size="14.00">VII.9</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge3" class="edge">
+<ns0:title>VII.10-&gt;VII.9</ns0:title>
+<ns0:path fill="none" stroke="black" d="M78.92,-143.7C82.07,-135.81 85.88,-126.3 89.38,-117.55" />
+<ns0:polygon fill="black" stroke="black" points="92.69,-118.69 93.16,-108.1 86.19,-116.09 92.69,-118.69" />
+</ns0:g>
+
+<ns0:g id="edge1" class="edge">
+<ns0:title>VII.9-&gt;elem.7.5 elem.7.6</ns0:title>
+<ns0:path fill="none" stroke="black" d="M93.08,-71.7C89.93,-63.81 86.12,-54.3 82.62,-45.55" />
+<ns0:polygon fill="black" stroke="black" points="85.81,-44.09 78.84,-36.1 79.31,-46.69 85.81,-44.09" />
+</ns0:g>
+</ns0:g>
+</ns0:svg>

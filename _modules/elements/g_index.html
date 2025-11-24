@@ -1,0 +1,384 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>elements.g_index &mdash; Project name not set  documentation</title>
+  <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=a3216404" />
+  <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="../../index.html">
+        <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">elements</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../mission/index.html"  >mission</a>
+        </li>
+        <li>
+          <a href="../../usage.html"  >usage</a>
+        </li>
+        <li>
+          <a href="../../heath/index.html"  >Elements Heath Edition</a>
+        </li>
+        <li>
+          <a href="../../modules/index.html"  >modules</a>
+        </li>
+        <li>
+          <a href="../../log/index.html"  >log</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main>
+
+    <article>
+      <div class="content">
+      <nav class="breadcrumbs">
+        <span><a href="../../index.html">Home</a></span>
+          <span>/</span>
+        <span><a href="../index.html">Module code</a></span>
+        <span>/</span>
+        <span>elements.g_index</span>
+      </nav>
+        <nav class="context">
+          <div class="prev">
+          </div>
+          <div class="next">
+          </div>
+        </nav>
+          <h1>Source code for elements.g_index</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span><span class="w"> </span><span class="nn">networkx</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">nx</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">re</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">shutil</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">geometor.elements.graph</span><span class="w"> </span><span class="kn">import</span> <span class="n">build_graph</span>
+
+<div class="viewcode-block" id="generate_g_index">
+<a class="viewcode-back" href="../../modules/api/elements/g_index/index.html#elements.g_index.generate_g_index">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">generate_g_index</span><span class="p">(</span><span class="n">output_dir</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">output_dir</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="c1"># Default to project root elements2</span>
+        <span class="n">current_file</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span>
+        <span class="n">project_root</span> <span class="o">=</span> <span class="n">current_file</span><span class="o">.</span><span class="n">parent</span><span class="o">.</span><span class="n">parent</span><span class="o">.</span><span class="n">parent</span><span class="o">.</span><span class="n">parent</span>
+        <span class="n">output_dir</span> <span class="o">=</span> <span class="n">project_root</span> <span class="o">/</span> <span class="s2">&quot;elements2&quot;</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Building dependency graph...&quot;</span><span class="p">)</span>
+    <span class="n">G</span><span class="p">,</span> <span class="n">all_books_data</span> <span class="o">=</span> <span class="n">build_graph</span><span class="p">()</span>
+    
+    <span class="c1"># Identify &quot;Goal&quot; nodes: Propositions in original book order</span>
+    <span class="n">goals</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">book</span> <span class="ow">in</span> <span class="n">all_books_data</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">section</span> <span class="ow">in</span> <span class="n">book</span><span class="p">[</span><span class="s2">&quot;sections&quot;</span><span class="p">]:</span>
+            <span class="c1"># We treat all entries in the book as potential goals, </span>
+            <span class="c1"># but we prioritize preserving the order of the book.</span>
+            <span class="c1"># However, we primarily want to drive this by Propositions.</span>
+            <span class="c1"># Definitions and Postulates are usually dependencies.</span>
+            <span class="c1"># If we include Definitions in the goal list, they will be emitted </span>
+            <span class="c1"># when encountered if not already emitted.</span>
+            <span class="c1"># But the user wants &quot;push off definitions etc until we need them&quot;.</span>
+            <span class="c1"># So we should ONLY use Propositions (and maybe Porisms/Lemmas) as goals.</span>
+            
+            <span class="c1"># Let&#39;s look at section types.</span>
+            <span class="c1"># &#39;prop&#39; is the main one.</span>
+            <span class="k">if</span> <span class="n">section</span><span class="p">[</span><span class="s1">&#39;type_canonical&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;prop&#39;</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">entry</span> <span class="ow">in</span> <span class="n">section</span><span class="p">[</span><span class="s1">&#39;entries&#39;</span><span class="p">]:</span>
+                    <span class="k">if</span> <span class="n">entry</span><span class="p">[</span><span class="s1">&#39;canonical_ref&#39;</span><span class="p">]:</span>
+                        <span class="n">goals</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">entry</span><span class="p">[</span><span class="s1">&#39;canonical_ref&#39;</span><span class="p">])</span>
+    
+    <span class="n">visited</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+    <span class="n">g_sequence</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">recursion_stack</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">visit</span><span class="p">(</span><span class="n">node</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">visited</span><span class="p">:</span>
+            <span class="k">return</span>
+        <span class="k">if</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">recursion_stack</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Warning: Cycle detected involving </span><span class="si">{</span><span class="n">node</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">return</span>
+        
+        <span class="n">recursion_stack</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">node</span><span class="p">)</span>
+        
+        <span class="c1"># If node is not in graph (e.g. external ref), skip or handle</span>
+        <span class="k">if</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">G</span><span class="p">:</span>
+            <span class="c1"># Visit dependencies first</span>
+            <span class="c1"># Sort dependencies to ensure deterministic order (e.g. by canonical ref)</span>
+            <span class="n">dependencies</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">G</span><span class="o">.</span><span class="n">successors</span><span class="p">(</span><span class="n">node</span><span class="p">)))</span>
+            <span class="k">for</span> <span class="n">dep</span> <span class="ow">in</span> <span class="n">dependencies</span><span class="p">:</span>
+                <span class="n">visit</span><span class="p">(</span><span class="n">dep</span><span class="p">)</span>
+            
+            <span class="n">g_sequence</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">node</span><span class="p">)</span>
+            <span class="n">visited</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">node</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="c1"># print(f&quot;Warning: Node {node} not found in graph&quot;)</span>
+            <span class="k">pass</span>
+            
+        <span class="n">recursion_stack</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">node</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Processing </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">goals</span><span class="p">)</span><span class="si">}</span><span class="s2"> goal propositions...&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">goal</span> <span class="ow">in</span> <span class="n">goals</span><span class="p">:</span>
+        <span class="n">visit</span><span class="p">(</span><span class="n">goal</span><span class="p">)</span>
+
+    <span class="c1"># Check for orphans (nodes in G but not in g_sequence)</span>
+    <span class="n">orphans</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">G</span><span class="o">.</span><span class="n">nodes</span><span class="p">():</span>
+        <span class="k">if</span> <span class="n">node</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">visited</span><span class="p">:</span>
+            <span class="n">orphans</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">node</span><span class="p">)</span>
+    
+    <span class="k">if</span> <span class="n">orphans</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Found </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">orphans</span><span class="p">)</span><span class="si">}</span><span class="s2"> orphan nodes (unused definitions/postulates/etc).&quot;</span><span class="p">)</span>
+        <span class="c1"># Optional: Append orphans at the end? </span>
+        <span class="c1"># For now, we leave them out as per &quot;Just In Time&quot; philosophy.</span>
+        <span class="c1"># But maybe we should list them in a separate index or appendix.</span>
+
+    <span class="c1"># Generate Output</span>
+    <span class="n">output_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">output_dir</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">output_path</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+        <span class="n">shutil</span><span class="o">.</span><span class="n">rmtree</span><span class="p">(</span><span class="n">output_path</span><span class="p">)</span>
+    <span class="n">output_path</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="c1"># 1. Build ID Map</span>
+    <span class="n">id_map</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">node_ref</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">g_sequence</span><span class="p">):</span>
+        <span class="n">g_id</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="n">g_name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;g.</span><span class="si">{</span><span class="n">g_id</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="n">id_map</span><span class="p">[</span><span class="n">node_ref</span><span class="p">]</span> <span class="o">=</span> <span class="n">g_name</span>
+
+    <span class="c1"># 2. Generate RST files</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Generating RST files...&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">node_ref</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">g_sequence</span><span class="p">):</span>
+        <span class="n">g_id</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="n">g_name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;g.</span><span class="si">{</span><span class="n">g_id</span><span class="si">}</span><span class="s2">&quot;</span>
+        
+        <span class="n">node_data</span> <span class="o">=</span> <span class="n">G</span><span class="o">.</span><span class="n">nodes</span><span class="p">[</span><span class="n">node_ref</span><span class="p">]</span>
+        
+        <span class="c1"># Create directory for the G-node</span>
+        <span class="n">node_dir</span> <span class="o">=</span> <span class="n">output_path</span> <span class="o">/</span> <span class="n">g_name</span>
+        <span class="n">node_dir</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        
+        <span class="n">filepath</span> <span class="o">=</span> <span class="n">node_dir</span> <span class="o">/</span> <span class="s2">&quot;index.rst&quot;</span>
+        
+        <span class="c1"># Construct RST content</span>
+        <span class="n">rst_content</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="sa">f</span><span class="s2">&quot;:order: </span><span class="si">{</span><span class="n">g_id</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+            <span class="sa">f</span><span class="s2">&quot;:original_id: </span><span class="si">{</span><span class="n">node_ref</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+            <span class="sa">f</span><span class="s2">&quot;:type: </span><span class="si">{</span><span class="n">node_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;type&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;unknown&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+        <span class="p">]</span>
+        
+        <span class="c1"># Add dependencies if available</span>
+        <span class="k">if</span> <span class="n">node_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;dependencies&#39;</span><span class="p">):</span>
+            <span class="c1"># Replace dependency refs with G-refs</span>
+            <span class="n">deps_list</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">for</span> <span class="n">dep</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">node_data</span><span class="p">[</span><span class="s1">&#39;dependencies&#39;</span><span class="p">]))):</span>
+                <span class="k">if</span> <span class="n">dep</span> <span class="ow">in</span> <span class="n">id_map</span><span class="p">:</span>
+                    <span class="n">deps_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">id_map</span><span class="p">[</span><span class="n">dep</span><span class="p">])</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">deps_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">dep</span><span class="p">)</span> <span class="c1"># Keep original if not in map</span>
+            <span class="n">deps_str</span> <span class="o">=</span> <span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">deps_list</span><span class="p">)</span>
+            <span class="n">rst_content</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;:dependencies: </span><span class="si">{</span><span class="n">deps_str</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            
+        <span class="n">rst_content</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+        
+        <span class="c1"># Ref link</span>
+        <span class="n">rst_content</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;.. _</span><span class="si">{</span><span class="n">g_name</span><span class="si">}</span><span class="s2">:&quot;</span><span class="p">)</span>
+        <span class="n">rst_content</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+        
+        <span class="c1"># Title</span>
+        <span class="n">title</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;G.</span><span class="si">{</span><span class="n">g_id</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="n">rst_content</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
+        <span class="n">rst_content</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;=&quot;</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">title</span><span class="p">))</span>
+        <span class="n">rst_content</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+        
+        <span class="c1"># Link back to Heath</span>
+        <span class="n">rst_content</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;**Heath ID:** :ref:`</span><span class="si">{</span><span class="n">node_ref</span><span class="si">}</span><span class="s2">`&quot;</span><span class="p">)</span>
+        <span class="n">rst_content</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+        
+        <span class="c1"># Original Content</span>
+        <span class="c1"># We need to be careful about relative links or images in the original content.</span>
+        <span class="c1"># The original content was designed for a specific folder structure.</span>
+        <span class="c1"># We are flattening it.</span>
+        <span class="c1"># Images: &#39;figure:: I.1.png&#39; -&gt; we need to copy images to this new dir.</span>
+        
+        <span class="n">content</span> <span class="o">=</span> <span class="n">node_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;content_rst&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+        
+        <span class="c1"># Replace refs in content</span>
+        <span class="k">def</span><span class="w"> </span><span class="nf">replace_ref</span><span class="p">(</span><span class="n">match</span><span class="p">):</span>
+            <span class="n">ref_key</span> <span class="o">=</span> <span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">ref_key</span> <span class="ow">in</span> <span class="n">id_map</span><span class="p">:</span>
+                <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;:ref:`</span><span class="si">{</span><span class="n">id_map</span><span class="p">[</span><span class="n">ref_key</span><span class="p">]</span><span class="si">}</span><span class="s2">`&quot;</span>
+            <span class="k">return</span> <span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+            
+        <span class="n">content</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;:ref:`([^`]+)`&quot;</span><span class="p">,</span> <span class="n">replace_ref</span><span class="p">,</span> <span class="n">content</span><span class="p">)</span>
+        
+        <span class="c1"># Let&#39;s copy images.</span>
+        <span class="n">canonical_images_dir</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">&quot;resources/canonical_images&quot;</span><span class="p">)</span>
+        <span class="n">heath_propositions_dir</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">&quot;resources/heath/propositions&quot;</span><span class="p">)</span>
+        
+        <span class="k">if</span> <span class="n">canonical_images_dir</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+            <span class="n">image_stem</span> <span class="o">=</span> <span class="n">node_ref</span>
+            <span class="c1"># Copy all matching images</span>
+            <span class="k">for</span> <span class="n">img</span> <span class="ow">in</span> <span class="n">canonical_images_dir</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">image_stem</span><span class="si">}</span><span class="s2">*.jpg&quot;</span><span class="p">):</span>
+                <span class="n">shutil</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">node_dir</span><span class="p">)</span>
+        
+        <span class="k">if</span> <span class="n">heath_propositions_dir</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+            <span class="n">graphic_stem</span> <span class="o">=</span> <span class="n">node_ref</span>
+            <span class="n">graphic_file</span> <span class="o">=</span> <span class="n">heath_propositions_dir</span> <span class="o">/</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">graphic_stem</span><span class="si">}</span><span class="s2">.graphic.png&quot;</span>
+            <span class="k">if</span> <span class="n">graphic_file</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+                <span class="c1"># We might need to invert it again if we don&#39;t have the inverted one handy.</span>
+                <span class="c1"># Or we can just copy it. transform.py inverted it.</span>
+                <span class="c1"># Let&#39;s just copy the graphic for now.</span>
+                <span class="n">shutil</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">graphic_file</span><span class="p">,</span> <span class="n">node_dir</span> <span class="o">/</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">graphic_stem</span><span class="si">}</span><span class="s2">.graphic.png&quot;</span><span class="p">)</span>
+                <span class="c1"># If we want the inverted one, we should probably do that image processing here too</span>
+                <span class="c1"># or assume it&#39;s done.</span>
+        
+        <span class="n">rst_content</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+        
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filepath</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">rst_content</span><span class="p">))</span>
+
+    <span class="c1"># Generate Map JSON</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">output_path</span> <span class="o">/</span> <span class="s2">&quot;map.json&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">id_map</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+    <span class="c1"># Generate Main Index</span>
+    <span class="n">index_content</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s2">&quot;:navigation: header&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;:order: 3&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Elements 2.0 (G Index)&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;======================&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.. collection::&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;   :type: g_node&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;   :sort: order&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="p">]</span>
+    
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">output_path</span> <span class="o">/</span> <span class="s2">&quot;index.rst&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">index_content</span><span class="p">))</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Generated </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">g_sequence</span><span class="p">)</span><span class="si">}</span><span class="s2"> G-nodes in </span><span class="si">{</span><span class="n">output_dir</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span></div>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">generate_g_index</span><span class="p">()</span>
+</pre></div>
+      </div>
+      <footer>
+
+
+        <nav class="context">
+          <div class="prev">
+          </div>
+          <div class="next">
+          </div>
+        </nav></footer>
+    </article>
+
+  </main>
+
+<div class="asides">
+    <aside>
+        <h3>Search</h3>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+    </aside>
+    
+    
+
+<aside class="aside-tags">
+    <h3>Tags</h3>
+    <ul>
+        
+        <li><a href="../../tags/circle.html">circle</a></li>
+        
+        <li><a href="../../tags/line.html">line</a></li>
+        
+        <li><a href="../../tags/triangle.html">triangle</a></li>
+        
+    </ul>
+</aside>
+
+    
+
+<aside class="aside-categories">
+    <h3>Categories</h3>
+    <ul>
+        
+        <li><a href="../../categories/bisect.html">bisect</a></li>
+        
+        <li><a href="../../categories/construct.html">construct</a></li>
+        
+        <li><a href="../../categories/describe.html">describe</a></li>
+        
+    </ul>
+</aside>
+
+    
+
+<aside class="aside-types">
+    <h3>Types</h3>
+    <ul>
+        
+        <li><a href="../../types/None.html">None</a></li>
+        
+        <li><a href="../../types/book.html">book</a></li>
+        
+        <li><a href="../../types/cn.html">cn</a></li>
+        
+        <li><a href="../../types/def.html">def</a></li>
+        
+        <li><a href="../../types/post.html">post</a></li>
+        
+        <li><a href="../../types/prop.html">prop</a></li>
+        
+    </ul>
+</aside>
+
+</div>
+<footer>
+    <div class="footer-nav">
+    <ul>
+        <li><a href="../../glossary.html">glossary</a></li>
+        <li><a href="../../todos.html">todos</a></li>
+        <li><a href="../../changelog.html">changelog</a></li>
+    </ul>
+</div>
+    <hr/>
+    <div role="contentinfo">
+        <p>
+                &copy; Copyright .
+        </p>
+    </div>
+</footer>
+
+  <script src="../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+  <script src="../../_static/doctools.js?v=9bcbadda"></script>
+  <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+
+
+</body>
+</html>

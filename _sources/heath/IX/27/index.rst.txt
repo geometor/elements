@@ -1,0 +1,42 @@
+:order: 27
+:number: 364
+:type: prop
+:dependencies: IX.24, VII.def.7
+
+
+
+
+.. figure:: IX.27.graphic.inverted.png
+
+.. _IX.27:
+
+IX.27
+=====
+
+   If from an odd number an even number be subtracted, the remainder will be odd.
+
+For from the odd number AB let the even number BC be subtracted; I say that the remainder CA is odd.
+
+Let the unit AD be subtracted; therefore DB is even. [:ref:`VII.def.7`]
+
+But BC is also even; therefore the remainder CD is even. [:ref:`IX.24`]
+
+Therefore CA is odd. [:ref:`VII.def.7`] Q. E. D.
+
+
+Dependency Graph
+----------------
+
+.. graphviz::
+
+   digraph {
+     rankdir="TB";
+     node [shape=box, style=rounded];
+     "VII.def.7" [style="rounded,filled", fillcolor=orange, URL="/heath/VII/def.7/", target="_top"];
+     "IX.27" [style="rounded,filled", fillcolor=lightblue, URL="/heath/IX/27/", target="_top"];
+     "VII.def.6" [style="rounded,filled", fillcolor=orange, URL="/heath/VII/def.6/", target="_top"];
+     "IX.24" [URL="/heath/IX/24/", target="_top"];
+     "IX.27" -> "VII.def.7";
+     "IX.24" -> "VII.def.6";
+     "IX.27" -> "IX.24";
+   }
