@@ -47,8 +47,8 @@ Dependency Graph
      rankdir="TB";
      node [shape=box, style=rounded];
      "XI.1" [style="rounded,filled", fillcolor=orange, URL="/heath/XI/1/", target="_top"];
-     "I.def.23" [style="rounded,filled", fillcolor=orange, URL="/heath/I/def.23/", target="_top"];
      "XI.16" [style="rounded,filled", fillcolor=lightblue, URL="/heath/XI/16/", target="_top"];
+     "I.def.23" [style="rounded,filled", fillcolor=orange, URL="/heath/I/def.23/", target="_top"];
      "XI.16" -> "XI.1";
      "XI.16" -> "I.def.23";
    }

@@ -1,6 +1,6 @@
 :order: 4
 :number: 381
-:type: None
+:type: prop
 :dependencies: X.3, elem.10.3.p.1
 
 
@@ -76,11 +76,11 @@ Dependency Graph
      node [shape=box, style=rounded];
      "X.4" [style="rounded,filled", fillcolor=lightblue, URL="/heath/X/4/", target="_top"];
      "X.2" [URL="/heath/X/2/", target="_top"];
+     "X.3" [URL="/heath/X/3/", target="_top"];
      "X.def.1" [style="rounded,filled", fillcolor=orange, URL="/heath/X/def.1/", target="_top"];
      "elem.10.3.p.1" [style="rounded,filled", fillcolor=orange];
-     "X.3" [URL="/heath/X/3/", target="_top"];
      "X.3" -> "X.2";
+     "X.4" -> "X.3";
      "X.2" -> "X.def.1";
      "X.4" -> "elem.10.3.p.1";
-     "X.4" -> "X.3";
    }

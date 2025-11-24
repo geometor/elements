@@ -1,0 +1,72 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" width="200pt" height="260pt" viewBox="0.00 0.00 200.00 260.00">
+<ns0:g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 256)">
+<ns0:title>%3</ns0:title>
+<ns0:polygon fill="white" stroke="transparent" points="-4,4 -4,-256 196,-256 196,4 -4,4" />
+
+<ns0:g id="node1" class="node">
+<ns0:title>X.4</ns0:title>
+<ns0:g id="a_node1"><ns0:a ns1:href="../../../../../../../heath/X/4" ns1:title="X.4" target="_top">
+<ns0:path fill="lightblue" stroke="black" d="M99,-252C99,-252 69,-252 69,-252 63,-252 57,-246 57,-240 57,-240 57,-228 57,-228 57,-222 63,-216 69,-216 69,-216 99,-216 99,-216 105,-216 111,-222 111,-228 111,-228 111,-240 111,-240 111,-246 105,-252 99,-252" />
+<ns0:text text-anchor="middle" x="84" y="-230.3" font-family="Times,serif" font-size="14.00">X.4</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node3" class="node">
+<ns0:title>X.3</ns0:title>
+<ns0:g id="a_node3"><ns0:a ns1:href="../../../../../../../heath/X/3" ns1:title="X.3" target="_top">
+<ns0:path fill="none" stroke="black" d="M48,-180C48,-180 18,-180 18,-180 12,-180 6,-174 6,-168 6,-168 6,-156 6,-156 6,-150 12,-144 18,-144 18,-144 48,-144 48,-144 54,-144 60,-150 60,-156 60,-156 60,-168 60,-168 60,-174 54,-180 48,-180" />
+<ns0:text text-anchor="middle" x="33" y="-158.3" font-family="Times,serif" font-size="14.00">X.3</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge2" class="edge">
+<ns0:title>X.4-&gt;X.3</ns0:title>
+<ns0:path fill="none" stroke="black" d="M71.39,-215.7C65.4,-207.47 58.12,-197.48 51.52,-188.42" />
+<ns0:polygon fill="black" stroke="black" points="54.18,-186.13 45.46,-180.1 48.52,-190.25 54.18,-186.13" />
+</ns0:g>
+
+<ns0:g id="node5" class="node">
+<ns0:title>elem.10.3.p.1</ns0:title>
+<ns0:path fill="orange" stroke="black" d="M180,-180C180,-180 90,-180 90,-180 84,-180 78,-174 78,-168 78,-168 78,-156 78,-156 78,-150 84,-144 90,-144 90,-144 180,-144 180,-144 186,-144 192,-150 192,-156 192,-156 192,-168 192,-168 192,-174 186,-180 180,-180" />
+<ns0:text text-anchor="middle" x="135" y="-158.3" font-family="Times,serif" font-size="14.00">elem.10.3.p.1</ns0:text>
+</ns0:g>
+
+<ns0:g id="edge4" class="edge">
+<ns0:title>X.4-&gt;elem.10.3.p.1</ns0:title>
+<ns0:path fill="none" stroke="black" d="M96.61,-215.7C102.6,-207.47 109.88,-197.48 116.48,-188.42" />
+<ns0:polygon fill="black" stroke="black" points="119.48,-190.25 122.54,-180.1 113.82,-186.13 119.48,-190.25" />
+</ns0:g>
+
+<ns0:g id="node2" class="node">
+<ns0:title>X.2</ns0:title>
+<ns0:g id="a_node2"><ns0:a ns1:href="../../../../../../../heath/X/2" ns1:title="X.2" target="_top">
+<ns0:path fill="none" stroke="black" d="M48,-108C48,-108 18,-108 18,-108 12,-108 6,-102 6,-96 6,-96 6,-84 6,-84 6,-78 12,-72 18,-72 18,-72 48,-72 48,-72 54,-72 60,-78 60,-84 60,-84 60,-96 60,-96 60,-102 54,-108 48,-108" />
+<ns0:text text-anchor="middle" x="33" y="-86.3" font-family="Times,serif" font-size="14.00">X.2</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node4" class="node">
+<ns0:title>X.def.1</ns0:title>
+<ns0:g id="a_node4"><ns0:a ns1:href="../../../../../../../heath/X/def.1" ns1:title="X.def.1" target="_top">
+<ns0:path fill="orange" stroke="black" d="M54,-36C54,-36 12,-36 12,-36 6,-36 0,-30 0,-24 0,-24 0,-12 0,-12 0,-6 6,0 12,0 12,0 54,0 54,0 60,0 66,-6 66,-12 66,-12 66,-24 66,-24 66,-30 60,-36 54,-36" />
+<ns0:text text-anchor="middle" x="33" y="-14.3" font-family="Times,serif" font-size="14.00">X.def.1</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge3" class="edge">
+<ns0:title>X.2-&gt;X.def.1</ns0:title>
+<ns0:path fill="none" stroke="black" d="M33,-71.7C33,-63.98 33,-54.71 33,-46.11" />
+<ns0:polygon fill="black" stroke="black" points="36.5,-46.1 33,-36.1 29.5,-46.1 36.5,-46.1" />
+</ns0:g>
+
+<ns0:g id="edge1" class="edge">
+<ns0:title>X.3-&gt;X.2</ns0:title>
+<ns0:path fill="none" stroke="black" d="M33,-143.7C33,-135.98 33,-126.71 33,-118.11" />
+<ns0:polygon fill="black" stroke="black" points="36.5,-118.1 33,-108.1 29.5,-118.1 36.5,-118.1" />
+</ns0:g>
+</ns0:g>
+</ns0:svg>

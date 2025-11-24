@@ -215,7 +215,9 @@
         <span class="n">entry_number</span> <span class="o">=</span> <span class="n">entry_number_start</span> <span class="c1"># Initialize entry_number here</span>
         <span class="k">for</span> <span class="n">div2</span> <span class="ow">in</span> <span class="n">div1</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="s2">&quot;.//div2&quot;</span><span class="p">):</span>
             <span class="n">section_type_raw</span> <span class="o">=</span> <span class="n">div2</span><span class="o">.</span><span class="n">attrib</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;n&quot;</span><span class="p">)</span>
-            <span class="n">section_type_canonical</span> <span class="o">=</span> <span class="n">SECTION_TYPE_MAP</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">section_type_raw</span><span class="p">)</span>
+            <span class="c1"># Handle cases like &quot;Def 1&quot;, &quot;Prop 1&quot; in Book 10</span>
+            <span class="n">type_key</span> <span class="o">=</span> <span class="n">section_type_raw</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span> <span class="k">if</span> <span class="n">section_type_raw</span> <span class="k">else</span> <span class="s2">&quot;&quot;</span>
+            <span class="n">section_type_canonical</span> <span class="o">=</span> <span class="n">SECTION_TYPE_MAP</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">type_key</span><span class="p">)</span>
             <span class="n">section_head</span> <span class="o">=</span> <span class="n">div2</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;./head&quot;</span><span class="p">)</span>
             <span class="n">section_title</span> <span class="o">=</span> <span class="n">section_head</span><span class="o">.</span><span class="n">text</span> <span class="k">if</span> <span class="n">section_head</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">section_type_raw</span>
 
@@ -542,8 +544,6 @@
 <aside class="aside-types">
     <h3>Types</h3>
     <ul>
-        
-        <li><a href="../../types/None.html">None</a></li>
         
         <li><a href="../../types/book.html">book</a></li>
         

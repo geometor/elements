@@ -67,8 +67,8 @@ Dependency Graph
      rankdir="TB";
      node [shape=box, style=rounded];
      "I.def.15" [style="rounded,filled", fillcolor=orange, URL="/heath/I/def.15/", target="_top"];
-     "elem.3.1.p.1" [style="rounded,filled", fillcolor=orange];
      "III.10" [style="rounded,filled", fillcolor=lightblue, URL="/heath/III/10/", target="_top"];
+     "elem.3.1.p.1" [style="rounded,filled", fillcolor=orange];
      "III.5" [URL="/heath/III/5/", target="_top"];
      "III.5" -> "I.def.15";
      "III.10" -> "I.def.15";

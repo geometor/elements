@@ -89,20 +89,20 @@
 <p>Therefore etc. Q. E. D.</p>
 <section id="dependency-graph">
 <h2>Dependency Graph<a class="headerlink" href="#dependency-graph" title="Link to this heading">¶</a></h2>
-<div class="graphviz"><object data="../../../_images/graphviz-6756ed9ffd91628d37869e03b7f2124313d2ac01.svg" type="image/svg+xml" class="graphviz">
+<div class="graphviz"><object data="../../../_images/graphviz-812f0e9b1b9607e75396e1d5cd41777f233911d1.svg" type="image/svg+xml" class="graphviz">
 <p class="warning">digraph {
   rankdir=&quot;TB&quot;;
   node [shape=box, style=rounded];
-  &quot;V.1&quot; [style=&quot;rounded,filled&quot;, fillcolor=orange, URL=&quot;/heath/V/1/&quot;, target=&quot;_top&quot;];
-  &quot;V.7&quot; [URL=&quot;/heath/V/7/&quot;, target=&quot;_top&quot;];
-  &quot;V.15&quot; [style=&quot;rounded,filled&quot;, fillcolor=lightblue, URL=&quot;/heath/V/15/&quot;, target=&quot;_top&quot;];
-  &quot;V.12&quot; [URL=&quot;/heath/V/12/&quot;, target=&quot;_top&quot;];
   &quot;V.def.5&quot; [style=&quot;rounded,filled&quot;, fillcolor=orange, URL=&quot;/heath/V/def.5/&quot;, target=&quot;_top&quot;];
-  &quot;V.12&quot; -&gt; &quot;V.1&quot;;
-  &quot;V.15&quot; -&gt; &quot;V.7&quot;;
-  &quot;V.15&quot; -&gt; &quot;V.12&quot;;
+  &quot;V.12&quot; [URL=&quot;/heath/V/12/&quot;, target=&quot;_top&quot;];
+  &quot;V.15&quot; [style=&quot;rounded,filled&quot;, fillcolor=lightblue, URL=&quot;/heath/V/15/&quot;, target=&quot;_top&quot;];
+  &quot;V.7&quot; [URL=&quot;/heath/V/7/&quot;, target=&quot;_top&quot;];
+  &quot;V.1&quot; [style=&quot;rounded,filled&quot;, fillcolor=orange, URL=&quot;/heath/V/1/&quot;, target=&quot;_top&quot;];
   &quot;V.7&quot; -&gt; &quot;V.def.5&quot;;
   &quot;V.12&quot; -&gt; &quot;V.def.5&quot;;
+  &quot;V.15&quot; -&gt; &quot;V.12&quot;;
+  &quot;V.15&quot; -&gt; &quot;V.7&quot;;
+  &quot;V.12&quot; -&gt; &quot;V.1&quot;;
 }</p></object></div>
 </section>
 <section id="required-for">
@@ -176,8 +176,6 @@
 <aside class="aside-types">
     <h3>Types</h3>
     <ul>
-        
-        <li><a href="../../../types/None.html">None</a></li>
         
         <li><a href="../../../types/book.html">book</a></li>
         

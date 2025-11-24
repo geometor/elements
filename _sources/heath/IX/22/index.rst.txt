@@ -32,12 +32,12 @@ Dependency Graph
    digraph {
      rankdir="TB";
      node [shape=box, style=rounded];
-     "VII.def.7" [style="rounded,filled", fillcolor=orange, URL="/heath/VII/def.7/", target="_top"];
      "VII.def.6" [style="rounded,filled", fillcolor=orange, URL="/heath/VII/def.6/", target="_top"];
+     "VII.def.7" [style="rounded,filled", fillcolor=orange, URL="/heath/VII/def.7/", target="_top"];
      "IX.21" [URL="/heath/IX/21/", target="_top"];
      "IX.22" [style="rounded,filled", fillcolor=lightblue, URL="/heath/IX/22/", target="_top"];
-     "IX.22" -> "VII.def.7";
      "IX.21" -> "VII.def.6";
+     "IX.22" -> "VII.def.7";
      "IX.22" -> "IX.21";
    }
 

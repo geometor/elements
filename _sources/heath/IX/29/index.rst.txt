@@ -32,19 +32,19 @@ Dependency Graph
    digraph {
      rankdir="TB";
      node [shape=box, style=rounded];
-     "VII.def.7" [style="rounded,filled", fillcolor=orange, URL="/heath/VII/def.7/", target="_top"];
      "IX.21" [URL="/heath/IX/21/", target="_top"];
-     "IX.22" [URL="/heath/IX/22/", target="_top"];
      "IX.29" [style="rounded,filled", fillcolor=lightblue, URL="/heath/IX/29/", target="_top"];
-     "VII.def.6" [style="rounded,filled", fillcolor=orange, URL="/heath/VII/def.6/", target="_top"];
-     "VII.def.15" [style="rounded,filled", fillcolor=orange, URL="/heath/VII/def.15/", target="_top"];
      "IX.23" [URL="/heath/IX/23/", target="_top"];
-     "IX.22" -> "VII.def.7";
-     "IX.23" -> "VII.def.7";
+     "VII.def.6" [style="rounded,filled", fillcolor=orange, URL="/heath/VII/def.6/", target="_top"];
+     "IX.22" [URL="/heath/IX/22/", target="_top"];
+     "VII.def.15" [style="rounded,filled", fillcolor=orange, URL="/heath/VII/def.15/", target="_top"];
+     "VII.def.7" [style="rounded,filled", fillcolor=orange, URL="/heath/VII/def.7/", target="_top"];
      "IX.22" -> "IX.21";
      "IX.23" -> "IX.21";
-     "IX.23" -> "IX.22";
-     "IX.21" -> "VII.def.6";
-     "IX.29" -> "VII.def.15";
      "IX.29" -> "IX.23";
+     "IX.21" -> "VII.def.6";
+     "IX.23" -> "IX.22";
+     "IX.29" -> "VII.def.15";
+     "IX.22" -> "VII.def.7";
+     "IX.23" -> "VII.def.7";
    }

@@ -1,6 +1,6 @@
 :order: 16
 :number: 393
-:type: None
+:type: prop
 :dependencies: X.def.1
 
 
@@ -73,8 +73,8 @@ Dependency Graph
    digraph {
      rankdir="TB";
      node [shape=box, style=rounded];
-     "X.def.1" [style="rounded,filled", fillcolor=orange, URL="/heath/X/def.1/", target="_top"];
      "X.16" [style="rounded,filled", fillcolor=lightblue, URL="/heath/X/16/", target="_top"];
+     "X.def.1" [style="rounded,filled", fillcolor=orange, URL="/heath/X/def.1/", target="_top"];
      "X.16" -> "X.def.1";
    }
 
