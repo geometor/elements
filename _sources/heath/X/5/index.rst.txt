@@ -1,7 +1,7 @@
 :order: 5
 :number: 382
 :type: prop
-:dependencies: V.22, VII.def.20, elem.5.7.p.1
+:dependencies: V.22, V.7.p.1, VII.def.20
 
 
 
@@ -23,7 +23,7 @@ Let it measure them, and let it be C.
 
 And, as many times as C measures A, so many units let there be in D; and, as many times as C measures B, so many units let there be in E.
 
-Since then C measures A according to the units in D, while the unit also measures D according to the units in it, therefore the unit measures the number D the same number of times as the magnitude C measures A; therefore, as C is to A, so is the unit to D; [:ref:`VII.def.20`] therefore, inversely, as A is to C, so is D to the unit. [cf. :ref:`elem.5.7.p.1`]
+Since then C measures A according to the units in D, while the unit also measures D according to the units in it, therefore the unit measures the number D the same number of times as the magnitude C measures A; therefore, as C is to A, so is the unit to D; [:ref:`VII.def.20`] therefore, inversely, as A is to C, so is D to the unit. [cf. :ref:`V.7.p.1`]
 
 Again, since C measures B according to the units in E, while the unit also measures E according to the units in it, therefore the unit measures E the same number of times as C measures B; therefore, as C is to B, so is the unit to E.
 
@@ -54,42 +54,42 @@ Dependency Graph
    digraph {
      rankdir="TB";
      node [shape=box, style=rounded];
-     "V.8" [URL="/heath/V/8/", target="_top"];
-     "V.1" [style="rounded,filled", fillcolor=orange, URL="/heath/V/1/", target="_top"];
-     "X.5" [style="rounded,filled", fillcolor=lightblue, URL="/heath/X/5/", target="_top"];
-     "V.7" [URL="/heath/V/7/", target="_top"];
-     "V.def.4" [style="rounded,filled", fillcolor=orange, URL="/heath/V/def.4/", target="_top"];
-     "V.def.5" [style="rounded,filled", fillcolor=orange, URL="/heath/V/def.5/", target="_top"];
      "V.2" [style="rounded,filled", fillcolor=orange, URL="/heath/V/2/", target="_top"];
-     "V.22" [URL="/heath/V/22/", target="_top"];
      "V.10" [URL="/heath/V/10/", target="_top"];
-     "V.13" [URL="/heath/V/13/", target="_top"];
      "V.4" [URL="/heath/V/4/", target="_top"];
-     "elem.5.7.p.1" [style="rounded,filled", fillcolor=orange];
-     "V.3" [URL="/heath/V/3/", target="_top"];
      "V.def.7" [style="rounded,filled", fillcolor=orange, URL="/heath/V/def.7/", target="_top"];
+     "V.22" [URL="/heath/V/22/", target="_top"];
+     "V.1" [style="rounded,filled", fillcolor=orange, URL="/heath/V/1/", target="_top"];
+     "V.13" [URL="/heath/V/13/", target="_top"];
+     "V.3" [URL="/heath/V/3/", target="_top"];
      "V.20" [URL="/heath/V/20/", target="_top"];
+     "V.7" [URL="/heath/V/7/", target="_top"];
+     "V.7.p.1" [style="rounded,filled", fillcolor=orange];
+     "X.5" [style="rounded,filled", fillcolor=lightblue, URL="/heath/X/5/", target="_top"];
+     "V.def.5" [style="rounded,filled", fillcolor=orange, URL="/heath/V/def.5/", target="_top"];
      "VII.def.20" [style="rounded,filled", fillcolor=orange, URL="/heath/VII/def.20/", target="_top"];
-     "V.10" -> "V.8";
-     "V.20" -> "V.8";
+     "V.def.4" [style="rounded,filled", fillcolor=orange, URL="/heath/V/def.4/", target="_top"];
+     "V.8" [URL="/heath/V/8/", target="_top"];
+     "V.3" -> "V.2";
+     "V.20" -> "V.10";
+     "V.22" -> "V.4";
+     "V.8" -> "V.def.7";
+     "V.13" -> "V.def.7";
+     "X.5" -> "V.22";
      "V.8" -> "V.1";
+     "V.20" -> "V.13";
+     "V.4" -> "V.3";
+     "V.22" -> "V.20";
      "V.10" -> "V.7";
-     "V.8" -> "V.def.4";
+     "X.5" -> "V.7.p.1";
      "V.4" -> "V.def.5";
      "V.7" -> "V.def.5";
      "V.13" -> "V.def.5";
      "V.22" -> "V.def.5";
-     "V.3" -> "V.2";
-     "X.5" -> "V.22";
-     "V.20" -> "V.10";
-     "V.20" -> "V.13";
-     "V.22" -> "V.4";
-     "X.5" -> "elem.5.7.p.1";
-     "V.4" -> "V.3";
-     "V.8" -> "V.def.7";
-     "V.13" -> "V.def.7";
-     "V.22" -> "V.20";
      "X.5" -> "VII.def.20";
+     "V.8" -> "V.def.4";
+     "V.10" -> "V.8";
+     "V.20" -> "V.8";
    }
 
 

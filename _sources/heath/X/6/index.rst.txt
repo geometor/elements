@@ -1,7 +1,7 @@
 :order: 6
 :number: 383
 :type: prop
-:dependencies: V.11, V.22, V.9, VII.def.20, elem.5.7.p.1, elem.6.19.p.1
+:dependencies: V.11, V.22, V.7.p.1, V.9, VI.19.p.1, VII.def.20
 
 
 
@@ -23,7 +23,7 @@ Since then there are in A as many magnitudes equal to C as there are units in D,
 
 But the unit measures the number D; therefore C also measures A.
 
-And since, as C is to A, so is the unit to D, therefore, inversely, as A is to C, so is the number D to the unit. [cf. :ref:`elem.5.7.p.1`]
+And since, as C is to A, so is the unit to D, therefore, inversely, as A is to C, so is the number D to the unit. [cf. :ref:`V.7.p.1`]
 
 Again, since there are in F as many magnitudes equal to C as there are units in E, therefore, as C is to F, so is the unit to E. [:ref:`VII.def.20`]
 
@@ -50,7 +50,7 @@ Therefore A is commensurable with B.
 Therefore etc.
 
 
-.. _elem.10.6.p.1:
+.. _X.6.p.1:
 
 
 **X.6.p.1**
@@ -58,7 +58,17 @@ Therefore etc.
 
 From this it is manifest that, if there be two numbers, as D, E, and a straight line, as A, it is possible to make a straight line [F] such that the given straight line is to it as the number D is to the number E. 
 And, if a mean proportional be also taken between A, F, as B, 
-as A is to F, so will the square on A be to the square on B, that is, as the first is to the third, so is the figure on the first to that which is similar and similarly described on the second. [:ref:`elem.6.19.p.1`] 
+as A is to F, so will the square on A be to the square on B, that is, as the first is to the third, so is the figure on the first to that which is similar and similarly described on the second. [:ref:`VI.19.p.1`] 
+But, as A is to F, so is the number D to the number E; therefore it has been contrived that, as the number D is to the number E, so also is the figure on the straight line A to the figure on the straight line B. Q. E. D.
+
+PORISM.
+
+From this it is manifest that, if there be two numbers, as D, E, and a straight line, as A, it is possible to make a straight line [F] such that the given straight line is to it as the number D is to the number E. 
+
+And, if a mean proportional be also taken between A, F, as B, 
+
+as A is to F, so will the square on A be to the square on B, that is, as the first is to the third, so is the figure on the first to that which is similar and similarly described on the second. [:ref:`VI.19.p.1`] 
+
 But, as A is to F, so is the number D to the number E; therefore it has been contrived that, as the number D is to the number E, so also is the figure on the straight line A to the figure on the straight line B. Q. E. D.
 
 
@@ -76,49 +86,49 @@ Dependency Graph
    digraph {
      rankdir="TB";
      node [shape=box, style=rounded];
-     "V.8" [URL="/heath/V/8/", target="_top"];
-     "V.def.5" [style="rounded,filled", fillcolor=orange, URL="/heath/V/def.5/", target="_top"];
-     "V.22" [URL="/heath/V/22/", target="_top"];
-     "V.4" [URL="/heath/V/4/", target="_top"];
-     "elem.5.7.p.1" [style="rounded,filled", fillcolor=orange];
-     "X.6" [style="rounded,filled", fillcolor=lightblue, URL="/heath/X/6/", target="_top"];
-     "V.10" [URL="/heath/V/10/", target="_top"];
-     "V.1" [style="rounded,filled", fillcolor=orange, URL="/heath/V/1/", target="_top"];
+     "V.2" [style="rounded,filled", fillcolor=orange, URL="/heath/V/2/", target="_top"];
+     "V.def.7" [style="rounded,filled", fillcolor=orange, URL="/heath/V/def.7/", target="_top"];
      "V.13" [URL="/heath/V/13/", target="_top"];
+     "V.3" [URL="/heath/V/3/", target="_top"];
+     "V.7" [URL="/heath/V/7/", target="_top"];
+     "V.7.p.1" [style="rounded,filled", fillcolor=orange];
+     "VI.19.p.1" [style="rounded,filled", fillcolor=orange];
+     "V.def.5" [style="rounded,filled", fillcolor=orange, URL="/heath/V/def.5/", target="_top"];
+     "X.6" [style="rounded,filled", fillcolor=lightblue, URL="/heath/X/6/", target="_top"];
+     "V.9" [URL="/heath/V/9/", target="_top"];
+     "V.8" [URL="/heath/V/8/", target="_top"];
+     "V.10" [URL="/heath/V/10/", target="_top"];
+     "V.4" [URL="/heath/V/4/", target="_top"];
+     "V.22" [URL="/heath/V/22/", target="_top"];
+     "V.1" [style="rounded,filled", fillcolor=orange, URL="/heath/V/1/", target="_top"];
      "V.20" [URL="/heath/V/20/", target="_top"];
      "V.11" [style="rounded,filled", fillcolor=orange, URL="/heath/V/11/", target="_top"];
-     "V.7" [URL="/heath/V/7/", target="_top"];
-     "V.9" [URL="/heath/V/9/", target="_top"];
-     "V.def.4" [style="rounded,filled", fillcolor=orange, URL="/heath/V/def.4/", target="_top"];
-     "V.2" [style="rounded,filled", fillcolor=orange, URL="/heath/V/2/", target="_top"];
-     "V.3" [URL="/heath/V/3/", target="_top"];
-     "V.def.7" [style="rounded,filled", fillcolor=orange, URL="/heath/V/def.7/", target="_top"];
      "VII.def.20" [style="rounded,filled", fillcolor=orange, URL="/heath/VII/def.20/", target="_top"];
-     "elem.6.19.p.1" [style="rounded,filled", fillcolor=orange];
-     "V.9" -> "V.8";
-     "V.10" -> "V.8";
-     "V.20" -> "V.8";
+     "V.def.4" [style="rounded,filled", fillcolor=orange, URL="/heath/V/def.4/", target="_top"];
+     "V.3" -> "V.2";
+     "V.8" -> "V.def.7";
+     "V.13" -> "V.def.7";
+     "V.20" -> "V.13";
+     "V.4" -> "V.3";
+     "V.10" -> "V.7";
+     "X.6" -> "V.7.p.1";
+     "X.6" -> "VI.19.p.1";
      "V.4" -> "V.def.5";
      "V.7" -> "V.def.5";
      "V.13" -> "V.def.5";
      "V.22" -> "V.def.5";
-     "X.6" -> "V.22";
-     "V.22" -> "V.4";
-     "X.6" -> "elem.5.7.p.1";
+     "X.6" -> "V.9";
+     "V.9" -> "V.8";
+     "V.10" -> "V.8";
+     "V.20" -> "V.8";
      "V.20" -> "V.10";
+     "V.22" -> "V.4";
+     "X.6" -> "V.22";
      "V.8" -> "V.1";
-     "V.20" -> "V.13";
      "V.22" -> "V.20";
      "X.6" -> "V.11";
-     "V.10" -> "V.7";
-     "X.6" -> "V.9";
-     "V.8" -> "V.def.4";
-     "V.3" -> "V.2";
-     "V.4" -> "V.3";
-     "V.8" -> "V.def.7";
-     "V.13" -> "V.def.7";
      "X.6" -> "VII.def.20";
-     "X.6" -> "elem.6.19.p.1";
+     "V.8" -> "V.def.4";
    }
 
 

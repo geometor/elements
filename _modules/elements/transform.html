@@ -30,10 +30,10 @@
           <a href="../../mission/index.html"  >mission</a>
         </li>
         <li>
-          <a href="../../usage.html"  >usage</a>
+          <a href="../../heath/index.html"  >Heath</a>
         </li>
         <li>
-          <a href="../../heath/index.html"  >Elements Heath Edition</a>
+          <a href="../../usage.html"  >usage</a>
         </li>
         <li>
           <a href="../../modules/index.html"  >modules</a>
@@ -138,10 +138,24 @@
                 <span class="n">book_num_roman</span> <span class="o">=</span> <span class="n">ROMAN_NUMERALS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">book_num_str</span><span class="p">)</span>
                 
                 <span class="k">if</span> <span class="n">book_num_roman</span><span class="p">:</span>
-                    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">target_parts</span><span class="p">)</span> <span class="o">==</span> <span class="mi">5</span> <span class="ow">and</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;c&#39;</span> <span class="ow">and</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;n&#39;</span><span class="p">:</span>
-                        <span class="n">section_type_canonical</span> <span class="o">=</span> <span class="s1">&#39;cn&#39;</span>
-                        <span class="n">item_num</span> <span class="o">=</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
-                        <span class="n">canonical_ref</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">book_num_roman</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">section_type_canonical</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">item_num</span><span class="si">}</span><span class="s2">&quot;</span>
+                    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">target_parts</span><span class="p">)</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span>
+                        <span class="c1"># Handle nested definitions like elem.10.def.3.1</span>
+                        <span class="k">if</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;def&#39;</span><span class="p">:</span>
+                            <span class="n">group_num</span> <span class="o">=</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+                            <span class="n">item_num</span> <span class="o">=</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+                            <span class="n">canonical_ref</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">book_num_roman</span><span class="si">}</span><span class="s2">.def.</span><span class="si">{</span><span class="n">group_num</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">item_num</span><span class="si">}</span><span class="s2">&quot;</span>
+                        <span class="k">elif</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;c&#39;</span> <span class="ow">and</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;n&#39;</span><span class="p">:</span>
+                            <span class="n">section_type_canonical</span> <span class="o">=</span> <span class="s1">&#39;cn&#39;</span>
+                            <span class="n">item_num</span> <span class="o">=</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+                            <span class="n">canonical_ref</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">book_num_roman</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">section_type_canonical</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">item_num</span><span class="si">}</span><span class="s2">&quot;</span>
+                        <span class="k">elif</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;p&#39;</span><span class="p">:</span>
+                            <span class="n">prop_num</span> <span class="o">=</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+                            <span class="n">porism_num</span> <span class="o">=</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+                            <span class="n">canonical_ref</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">book_num_roman</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">prop_num</span><span class="si">}</span><span class="s2">.p.</span><span class="si">{</span><span class="n">porism_num</span><span class="si">}</span><span class="s2">&quot;</span>
+                        <span class="k">elif</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;l&#39;</span><span class="p">:</span>
+                            <span class="n">prop_num</span> <span class="o">=</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+                            <span class="n">lemma_num</span> <span class="o">=</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+                            <span class="n">canonical_ref</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">book_num_roman</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">prop_num</span><span class="si">}</span><span class="s2">.l.</span><span class="si">{</span><span class="n">lemma_num</span><span class="si">}</span><span class="s2">&quot;</span>
                     <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">target_parts</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span> <span class="ow">and</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;post&#39;</span><span class="p">:</span>
                         <span class="n">section_type_canonical</span> <span class="o">=</span> <span class="s1">&#39;post&#39;</span>
                         <span class="n">item_num</span> <span class="o">=</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
@@ -252,10 +266,18 @@
                     <span class="n">book_num_roman</span> <span class="o">=</span> <span class="n">ROMAN_NUMERALS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">parts</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
 
                     <span class="k">if</span> <span class="n">book_num_roman</span><span class="p">:</span>
-                        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">parts</span><span class="p">)</span> <span class="o">==</span> <span class="mi">5</span> <span class="ow">and</span> <span class="n">parts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;c&#39;</span> <span class="ow">and</span> <span class="n">parts</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;n&#39;</span><span class="p">:</span>
-                            <span class="n">item_num</span> <span class="o">=</span> <span class="n">parts</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
-                            <span class="n">canonical_ref</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">book_num_roman</span><span class="si">}</span><span class="s2">.cn.</span><span class="si">{</span><span class="n">item_num</span><span class="si">}</span><span class="s2">&quot;</span>
-                            <span class="n">folder_name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;cn.</span><span class="si">{</span><span class="n">item_num</span><span class="si">}</span><span class="s2">&quot;</span>
+                        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">parts</span><span class="p">)</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span>
+                            <span class="c1"># Handle nested definitions like elem.10.def.3.1</span>
+                            <span class="n">section_type_str</span> <span class="o">=</span> <span class="n">parts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+                            <span class="k">if</span> <span class="n">section_type_str</span> <span class="o">==</span> <span class="s1">&#39;def&#39;</span><span class="p">:</span>
+                                <span class="n">group_num</span> <span class="o">=</span> <span class="n">parts</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+                                <span class="n">item_num</span> <span class="o">=</span> <span class="n">parts</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+                                <span class="n">canonical_ref</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">book_num_roman</span><span class="si">}</span><span class="s2">.def.</span><span class="si">{</span><span class="n">group_num</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">item_num</span><span class="si">}</span><span class="s2">&quot;</span>
+                                <span class="n">folder_name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;def.</span><span class="si">{</span><span class="n">group_num</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">item_num</span><span class="si">}</span><span class="s2">&quot;</span>
+                            <span class="k">elif</span> <span class="n">parts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;c&#39;</span> <span class="ow">and</span> <span class="n">parts</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;n&#39;</span><span class="p">:</span>
+                                <span class="n">item_num</span> <span class="o">=</span> <span class="n">parts</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+                                <span class="n">canonical_ref</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">book_num_roman</span><span class="si">}</span><span class="s2">.cn.</span><span class="si">{</span><span class="n">item_num</span><span class="si">}</span><span class="s2">&quot;</span>
+                                <span class="n">folder_name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;cn.</span><span class="si">{</span><span class="n">item_num</span><span class="si">}</span><span class="s2">&quot;</span>
                         <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">parts</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span> <span class="ow">and</span> <span class="n">parts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;post&#39;</span><span class="p">:</span>
                             <span class="n">item_num</span> <span class="o">=</span> <span class="n">parts</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
                             <span class="n">canonical_ref</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">book_num_roman</span><span class="si">}</span><span class="s2">.post.</span><span class="si">{</span><span class="n">item_num</span><span class="si">}</span><span class="s2">&quot;</span>
@@ -324,30 +346,71 @@
                             <span class="n">entry_content_rst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">**Q. E. D.**</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
                         <span class="k">elif</span> <span class="n">div4_type</span> <span class="o">==</span> <span class="s1">&#39;porism&#39;</span><span class="p">:</span>
                             <span class="n">porism_id</span> <span class="o">=</span> <span class="n">child</span><span class="o">.</span><span class="n">attrib</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">)</span>
-                            
-                            <span class="c1"># Create canonical title like III.1.p.1</span>
+                            <span class="n">porism_n</span> <span class="o">=</span> <span class="n">child</span><span class="o">.</span><span class="n">attrib</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;n&#39;</span><span class="p">)</span>
                             <span class="n">porism_title</span> <span class="o">=</span> <span class="s2">&quot;Porism&quot;</span> <span class="c1"># Default</span>
                             <span class="k">if</span> <span class="n">porism_id</span><span class="p">:</span>
                                 <span class="n">parts</span> <span class="o">=</span> <span class="n">porism_id</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span>
                                 <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">parts</span><span class="p">)</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span>
-                                    <span class="n">book_roman</span> <span class="o">=</span> <span class="n">ROMAN_NUMERALS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">parts</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-                                    <span class="n">prop_num</span> <span class="o">=</span> <span class="n">parts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
-                                    <span class="n">p_literal</span> <span class="o">=</span> <span class="n">parts</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+                                    <span class="c1"># elem.3.1.p.1</span>
+                                    <span class="c1"># We need the prop_num from the parent entry, not from the porism_id itself</span>
+                                    <span class="c1"># Assuming entry_id is like elem.3.1</span>
+                                    <span class="n">parent_parts</span> <span class="o">=</span> <span class="n">entry_id</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span>
+                                    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">parent_parts</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">3</span><span class="p">:</span>
+                                        <span class="n">prop_num</span> <span class="o">=</span> <span class="n">parent_parts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+                                    <span class="k">else</span><span class="p">:</span>
+                                        <span class="n">prop_num</span> <span class="o">=</span> <span class="s2">&quot;UNKNOWN&quot;</span> <span class="c1"># Fallback</span>
+                                    
+                                    <span class="n">p_literal</span> <span class="o">=</span> <span class="n">parts</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="c1"># should be &#39;p&#39;</span>
                                     <span class="n">porism_num</span> <span class="o">=</span> <span class="n">parts</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
-                                    <span class="k">if</span> <span class="n">book_roman</span><span class="p">:</span>
-                                        <span class="n">porism_title</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">book_roman</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">prop_num</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">p_literal</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">porism_num</span><span class="si">}</span><span class="s2">&quot;</span>
-
+                                    <span class="k">if</span> <span class="n">p_literal</span> <span class="o">==</span> <span class="s1">&#39;p&#39;</span><span class="p">:</span>
+                                        <span class="n">porism_title</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">book_num_roman</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">prop_num</span><span class="si">}</span><span class="s2">.p.</span><span class="si">{</span><span class="n">porism_num</span><span class="si">}</span><span class="s2">&quot;</span>
+                            
                             <span class="n">porism_content</span> <span class="o">=</span> <span class="p">[]</span>
-                            <span class="k">for</span> <span class="n">grand_child</span> <span class="ow">in</span> <span class="n">child</span><span class="p">:</span>
-                                <span class="k">if</span> <span class="n">grand_child</span><span class="o">.</span><span class="n">tag</span> <span class="o">==</span> <span class="s1">&#39;p&#39;</span><span class="p">:</span>
-                                    <span class="n">inline_rst</span> <span class="o">=</span> <span class="n">convert_inline_xml_to_rst</span><span class="p">(</span><span class="n">grand_child</span><span class="p">,</span> <span class="n">dependencies</span><span class="p">)</span>
-                                    <span class="k">if</span> <span class="n">inline_rst</span><span class="p">:</span>
-                                        <span class="n">porism_content</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">inline_rst</span><span class="p">)</span>
-
+                            <span class="k">for</span> <span class="n">sub_child</span> <span class="ow">in</span> <span class="n">child</span><span class="p">:</span>
+                                <span class="k">if</span> <span class="n">sub_child</span><span class="o">.</span><span class="n">tag</span> <span class="o">==</span> <span class="s1">&#39;head&#39;</span><span class="p">:</span>
+                                    <span class="k">continue</span>
+                                <span class="k">elif</span> <span class="n">sub_child</span><span class="o">.</span><span class="n">tag</span> <span class="o">==</span> <span class="s1">&#39;p&#39;</span><span class="p">:</span>
+                                    <span class="n">inline_rst</span> <span class="o">=</span> <span class="n">convert_inline_xml_to_rst</span><span class="p">(</span><span class="n">sub_child</span><span class="p">,</span> <span class="n">dependencies</span><span class="p">)</span>
+                                    <span class="n">porism_content</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">inline_rst</span><span class="p">)</span>
+                            
                             <span class="k">if</span> <span class="n">porism_id</span> <span class="ow">and</span> <span class="n">porism_content</span><span class="p">:</span>
-                                <span class="n">entry_content_rst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">.. _</span><span class="si">{</span><span class="n">porism_id</span><span class="si">}</span><span class="s2">:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                                <span class="n">entry_content_rst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">.. _</span><span class="si">{</span><span class="n">porism_title</span><span class="si">}</span><span class="s2">:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
                                 <span class="n">entry_content_rst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;**</span><span class="si">{</span><span class="n">porism_title</span><span class="si">}</span><span class="s2">**</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
                                 <span class="n">entry_content_rst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">porism_content</span><span class="p">))</span>
+
+                        <span class="k">elif</span> <span class="n">div4_type</span> <span class="o">==</span> <span class="s1">&#39;lemma&#39;</span><span class="p">:</span>
+                            <span class="n">lemma_id</span> <span class="o">=</span> <span class="n">child</span><span class="o">.</span><span class="n">attrib</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">)</span>
+                            <span class="n">lemma_n</span> <span class="o">=</span> <span class="n">child</span><span class="o">.</span><span class="n">attrib</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;n&#39;</span><span class="p">)</span>
+                            <span class="n">lemma_title</span> <span class="o">=</span> <span class="s2">&quot;Lemma&quot;</span> <span class="c1"># Default</span>
+                            <span class="k">if</span> <span class="n">lemma_id</span><span class="p">:</span>
+                                <span class="n">parts</span> <span class="o">=</span> <span class="n">lemma_id</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span>
+                                <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">parts</span><span class="p">)</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span>
+                                    <span class="c1"># elem.10.9.l.1</span>
+                                    <span class="c1"># We need the prop_num from the parent entry, not from the lemma_id itself</span>
+                                    <span class="c1"># Assuming entry_id is like elem.10.9</span>
+                                    <span class="n">parent_parts</span> <span class="o">=</span> <span class="n">entry_id</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span>
+                                    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">parent_parts</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">3</span><span class="p">:</span>
+                                        <span class="n">prop_num</span> <span class="o">=</span> <span class="n">parent_parts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+                                    <span class="k">else</span><span class="p">:</span>
+                                        <span class="n">prop_num</span> <span class="o">=</span> <span class="s2">&quot;UNKNOWN&quot;</span> <span class="c1"># Fallback</span>
+
+                                    <span class="n">l_literal</span> <span class="o">=</span> <span class="n">parts</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="c1"># should be &#39;l&#39;</span>
+                                    <span class="n">lemma_num</span> <span class="o">=</span> <span class="n">parts</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+                                    <span class="k">if</span> <span class="n">l_literal</span> <span class="o">==</span> <span class="s1">&#39;l&#39;</span><span class="p">:</span>
+                                        <span class="n">lemma_title</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">book_num_roman</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">prop_num</span><span class="si">}</span><span class="s2">.l.</span><span class="si">{</span><span class="n">lemma_num</span><span class="si">}</span><span class="s2">&quot;</span>
+                            
+                            <span class="n">lemma_content</span> <span class="o">=</span> <span class="p">[]</span>
+                            <span class="k">for</span> <span class="n">sub_child</span> <span class="ow">in</span> <span class="n">child</span><span class="p">:</span>
+                                <span class="k">if</span> <span class="n">sub_child</span><span class="o">.</span><span class="n">tag</span> <span class="o">==</span> <span class="s1">&#39;head&#39;</span><span class="p">:</span>
+                                    <span class="k">continue</span>
+                                <span class="k">elif</span> <span class="n">sub_child</span><span class="o">.</span><span class="n">tag</span> <span class="o">==</span> <span class="s1">&#39;p&#39;</span><span class="p">:</span>
+                                    <span class="n">inline_rst</span> <span class="o">=</span> <span class="n">convert_inline_xml_to_rst</span><span class="p">(</span><span class="n">sub_child</span><span class="p">,</span> <span class="n">dependencies</span><span class="p">)</span>
+                                    <span class="n">lemma_content</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">inline_rst</span><span class="p">)</span>
+                            
+                            <span class="k">if</span> <span class="n">lemma_id</span> <span class="ow">and</span> <span class="n">lemma_content</span><span class="p">:</span>
+                                <span class="n">entry_content_rst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">.. _</span><span class="si">{</span><span class="n">lemma_title</span><span class="si">}</span><span class="s2">:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                                <span class="n">entry_content_rst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;**</span><span class="si">{</span><span class="n">lemma_title</span><span class="si">}</span><span class="s2">**</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                                <span class="n">entry_content_rst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">lemma_content</span><span class="p">))</span>
                             <span class="k">continue</span>
 
                         
@@ -792,8 +855,8 @@
     <span class="n">main_index_content</span> <span class="o">=</span> <span class="p">[</span>
         <span class="s2">&quot;:navigation: header&quot;</span><span class="p">,</span>
         <span class="s2">&quot;:order: 2</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;Elements Heath Edition&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;============</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Heath&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;=====</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
         <span class="s2">&quot;.. collection::&quot;</span><span class="p">,</span>
         <span class="s2">&quot;   :type: book&quot;</span><span class="p">,</span>
         <span class="s2">&quot;   :title: Books&quot;</span><span class="p">,</span>
@@ -877,6 +940,8 @@
         <li><a href="../../types/def.html">def</a></li>
         
         <li><a href="../../types/post.html">post</a></li>
+        
+        <li><a href="../../types/postulate.html">postulate</a></li>
         
         <li><a href="../../types/prop.html">prop</a></li>
         

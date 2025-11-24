@@ -1,6 +1,6 @@
 :order: 1
 :number: 24
-:type: post
+:type: postulate
 :tags: line
 
 

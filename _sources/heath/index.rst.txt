@@ -1,8 +1,8 @@
 :navigation: header
 :order: 2
 
-Elements Heath Edition
-============
+Heath
+=====
 
 .. collection::
    :type: book

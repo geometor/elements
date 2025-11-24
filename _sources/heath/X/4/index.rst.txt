@@ -1,7 +1,7 @@
 :order: 4
 :number: 381
 :type: prop
-:dependencies: X.3, elem.10.3.p.1
+:dependencies: X.3, X.3.p.1
 
 
 
@@ -29,7 +29,7 @@ Next, let D not measure C.
 
 I say first that C, D are commensurable.
 
-For, since A, B, C are commensurable, some magnitude will measure them, and this will of course measure A, B also; so that it will also measure the greatest common measure of A, B, namely D. [:ref:`elem.10.3.p.1`]
+For, since A, B, C are commensurable, some magnitude will measure them, and this will of course measure A, B also; so that it will also measure the greatest common measure of A, B, namely D. [:ref:`X.3.p.1`]
 
 But it also measures C; so that the said magnitude will measure C, D; therefore C, D are commensurable.
 
@@ -43,11 +43,11 @@ I say next that it is also the greatest.
 
 For, if possible, let there be some magnitude F greater than E, and let it measure A, B, C.
 
-Now, since F measures A, B, C, it will also measure A, B, and will measure the greatest common measure of A, B. [:ref:`elem.10.3.p.1`]
+Now, since F measures A, B, C, it will also measure A, B, and will measure the greatest common measure of A, B. [:ref:`X.3.p.1`]
 
 But the greatest common measure of A, B is D; therefore F measures D.
 
-But it measures C also; therefore F measures C, D; therefore F will also measure the greatest common measure of C, D. [:ref:`elem.10.3.p.1`]
+But it measures C also; therefore F measures C, D; therefore F will also measure the greatest common measure of C, D. [:ref:`X.3.p.1`]
 
 But that is E; therefore F will measure E, the greater the less: which is impossible.
 
@@ -56,13 +56,19 @@ Therefore no magnitude greater than the magnitude E will measure A, B, C; theref
 Therefore the greatest common measure of the three given commensurable magnitudes has been found.
 
 
-.. _elem.10.4.p.1:
+.. _X.4.p.1:
 
 
 **X.4.p.1**
 
 
 From this it is manifest that, if a magnitude measure three magnitudes, it will also measure their greatest common measure. 
+Similarly too, with more magnitudes, the greatest common measure can be found, and the porism can be extended. Q. E. D.
+
+PORISM.
+
+From this it is manifest that, if a magnitude measure three magnitudes, it will also measure their greatest common measure. 
+
 Similarly too, with more magnitudes, the greatest common measure can be found, and the porism can be extended. Q. E. D.
 
 
@@ -74,13 +80,13 @@ Dependency Graph
    digraph {
      rankdir="TB";
      node [shape=box, style=rounded];
+     "X.def.1" [style="rounded,filled", fillcolor=orange, URL="/heath/X/def.1/", target="_top"];
      "X.4" [style="rounded,filled", fillcolor=lightblue, URL="/heath/X/4/", target="_top"];
+     "X.3.p.1" [style="rounded,filled", fillcolor=orange];
      "X.2" [URL="/heath/X/2/", target="_top"];
      "X.3" [URL="/heath/X/3/", target="_top"];
-     "X.def.1" [style="rounded,filled", fillcolor=orange, URL="/heath/X/def.1/", target="_top"];
-     "elem.10.3.p.1" [style="rounded,filled", fillcolor=orange];
+     "X.2" -> "X.def.1";
+     "X.4" -> "X.3.p.1";
      "X.3" -> "X.2";
      "X.4" -> "X.3";
-     "X.2" -> "X.def.1";
-     "X.4" -> "elem.10.3.p.1";
    }

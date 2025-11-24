@@ -51,17 +51,19 @@ Therefore no magnitude will measure AB, BC; therefore AB, BC are incommensurable
 
 Therefore etc.
 
-LEMMA.
+
+.. _X.16.l.1:
+
+
+**X.16.l.1**
+
 
 
         If to any straight line there be applied a parallelogram deficient by a square figure, the applied parallelogram is equal to the rectangle contained by the segments of the straight line resulting from the application.
        
-
 For let there be applied to the straight line AB the parallelogram AD deficient by the square figure DB; I say that AD is equal to the rectangle contained by AC, CB. 
        
-
 This is indeed at once manifest; for, since DB is a square, DC is equal to CB; and AD is the rectangle AC, CD, that is, the rectangle AC, CB. 
-
 Therefore etc.
 
 
@@ -73,8 +75,8 @@ Dependency Graph
    digraph {
      rankdir="TB";
      node [shape=box, style=rounded];
-     "X.16" [style="rounded,filled", fillcolor=lightblue, URL="/heath/X/16/", target="_top"];
      "X.def.1" [style="rounded,filled", fillcolor=orange, URL="/heath/X/def.1/", target="_top"];
+     "X.16" [style="rounded,filled", fillcolor=lightblue, URL="/heath/X/16/", target="_top"];
      "X.16" -> "X.def.1";
    }
 
