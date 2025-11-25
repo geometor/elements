@@ -18,15 +18,15 @@ I.12
 
 Let ``AB`` be the given infinite straight line, and ``C`` the given point which is not on it; thus it is required to draw to the given infinite straight line ``AB``, from the given point ``C`` which is not on it, a perpendicular straight line.
 
-For let a point ``D`` be taken at random on the other side of the straight line ``AB``, and with centre ``C`` and distance ``CD`` let the circle ``EFG`` be described; [:ref:`I.post.3`] 
+For let a point ``D`` be taken at random on the other side of the straight line ``AB``, and with centre ``C`` and distance ``CD`` let the circle ``EFG`` be described; [:ref:`I.post.3 <I.post.3>`] 
         let the straight line ``EG``
-         be bisected at ``H``, [:ref:`I.10`] and let the straight lines ``CG``, ``CH``, ``CE`` be joined. [:ref:`I.post.1`]
+         be bisected at ``H``, [:ref:`I.10 <I.10>`] and let the straight lines ``CG``, ``CH``, ``CE`` be joined. [:ref:`I.post.1 <I.post.1>`]
 
 I say that ``CH`` has been drawn perpendicular to the given infinite straight line ``AB`` from the given point ``C`` which is not on it. 
 
-For, since ``GH`` is equal to ``HE``, and ``HC`` is common, the two sides ``GH``, ``HC`` are equal to the two sides ``EH``, ``HC`` respectively; and the base ``CG`` is equal to the base ``CE``; therefore the angle ``CHG`` is equal to the angle ``EHC``. [:ref:`I.8`] And they are adjacent angles.
+For, since ``GH`` is equal to ``HE``, and ``HC`` is common, the two sides ``GH``, ``HC`` are equal to the two sides ``EH``, ``HC`` respectively; and the base ``CG`` is equal to the base ``CE``; therefore the angle ``CHG`` is equal to the angle ``EHC``. [:ref:`I.8 <I.8>`] And they are adjacent angles.
 
-But, when a straight line set up on a straight line makes the adjacent angles equal to one another, each of the equal angles is right, and the straight line standing on the other is called a perpendicular to that on which it stands. [:ref:`I.def.10`]
+But, when a straight line set up on a straight line makes the adjacent angles equal to one another, each of the equal angles is right, and the straight line standing on the other is called a perpendicular to that on which it stands. [:ref:`I.def.10 <I.def.10>`]
 
 Therefore ``CH`` has been drawn perpendicular to the given infinite straight line ``AB`` from the given point ``C`` which is not on it.
 
@@ -58,9 +58,9 @@ Q. E. F.
 
     ἐπὶ τὰ ἕτερα μέρη τῆς AB. Cf. on the same side
 
-    (ἐπὶ τὰ αὐτὰ μέρη) in :ref:`I.post.5` and in both directions
+    (ἐπὶ τὰ αὐτὰ μέρη) in :ref:`I.post.5 <I.post.5>` and in both directions
 
-    (ἐφ̓ ἑκάτερα τὰ μἑρη) in :ref:`I.def.23`.
+    (ἐφ̓ ἑκάτερα τὰ μἑρη) in :ref:`I.def.23 <I.def.23>`.
 
 
 Dependency Graph
@@ -69,57 +69,59 @@ Dependency Graph
 .. graphviz::
 
    digraph {
+     bgcolor="black";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
+     edge [color="white", fontcolor="white"];
      rankdir="TB";
-     node [shape=box, style=rounded];
-     "I.9" [URL="/heath/I/9/", target="_top"];
-     "I.cn.1" [style="rounded,filled", fillcolor=orange, URL="/heath/I/cn.1/", target="_top"];
-     "I.7" [URL="/heath/I/7/", target="_top"];
-     "I.2" [URL="/heath/I/2/", target="_top"];
-     "I.def.15" [style="rounded,filled", fillcolor=orange, URL="/heath/I/def.15/", target="_top"];
-     "I.4" [URL="/heath/I/4/", target="_top"];
-     "I.1" [URL="/heath/I/1/", target="_top"];
-     "I.post.3" [style="rounded,filled", fillcolor=orange, URL="/heath/I/post.3/", target="_top"];
-     "I.post.1" [style="rounded,filled", fillcolor=orange, URL="/heath/I/post.1/", target="_top"];
-     "I.8" [URL="/heath/I/8/", target="_top"];
-     "I.5" [URL="/heath/I/5/", target="_top"];
-     "I.cn.3" [style="rounded,filled", fillcolor=orange, URL="/heath/I/cn.3/", target="_top"];
-     "I.def.10" [style="rounded,filled", fillcolor=orange, URL="/heath/I/def.10/", target="_top"];
-     "I.10" [URL="/heath/I/10/", target="_top"];
-     "I.12" [style="rounded,filled", fillcolor=lightblue, URL="/heath/I/12/", target="_top"];
-     "I.cn.4" [style="rounded,filled", fillcolor=orange, URL="/heath/I/cn.4/", target="_top"];
-     "I.post.2" [style="rounded,filled", fillcolor=orange, URL="/heath/I/post.2/", target="_top"];
-     "I.3" [URL="/heath/I/3/", target="_top"];
-     "I.10" -> "I.9";
+     "I.12" [penwidth=3, color="white", fillcolor="#555555", URL="/heath/I/12/", target="_top"];
+     "I.3" [fillcolor="#222244", URL="/heath/I/3/", target="_top"];
+     "I.post.1" [fillcolor="#444422", URL="/heath/I/post.1/", target="_top"];
+     "I.cn.1" [fillcolor="#442222", URL="/heath/I/cn.1/", target="_top"];
+     "I.def.10" [fillcolor="#224422", URL="/heath/I/def.10/", target="_top"];
+     "I.cn.3" [fillcolor="#442222", URL="/heath/I/cn.3/", target="_top"];
+     "I.post.2" [fillcolor="#444422", URL="/heath/I/post.2/", target="_top"];
+     "I.2" [fillcolor="#222244", URL="/heath/I/2/", target="_top"];
+     "I.cn.4" [fillcolor="#442222", URL="/heath/I/cn.4/", target="_top"];
+     "I.9" [fillcolor="#222244", URL="/heath/I/9/", target="_top"];
+     "I.1" [fillcolor="#222244", URL="/heath/I/1/", target="_top"];
+     "I.post.3" [fillcolor="#444422", URL="/heath/I/post.3/", target="_top"];
+     "I.8" [fillcolor="#222244", URL="/heath/I/8/", target="_top"];
+     "I.4" [fillcolor="#222244", URL="/heath/I/4/", target="_top"];
+     "I.7" [fillcolor="#222244", URL="/heath/I/7/", target="_top"];
+     "I.def.15" [fillcolor="#224422", URL="/heath/I/def.15/", target="_top"];
+     "I.5" [fillcolor="#222244", URL="/heath/I/5/", target="_top"];
+     "I.10" [fillcolor="#222244", URL="/heath/I/10/", target="_top"];
+     "I.5" -> "I.3";
+     "I.9" -> "I.3";
+     "I.1" -> "I.post.1";
+     "I.2" -> "I.post.1";
+     "I.5" -> "I.post.1";
+     "I.12" -> "I.post.1";
      "I.1" -> "I.cn.1";
      "I.2" -> "I.cn.1";
      "I.3" -> "I.cn.1";
-     "I.8" -> "I.7";
+     "I.12" -> "I.def.10";
+     "I.2" -> "I.cn.3";
+     "I.2" -> "I.post.2";
+     "I.5" -> "I.post.2";
      "I.3" -> "I.2";
-     "I.1" -> "I.def.15";
-     "I.3" -> "I.def.15";
-     "I.5" -> "I.4";
-     "I.10" -> "I.4";
+     "I.4" -> "I.cn.4";
+     "I.10" -> "I.9";
      "I.2" -> "I.1";
      "I.10" -> "I.1";
      "I.1" -> "I.post.3";
      "I.2" -> "I.post.3";
      "I.3" -> "I.post.3";
      "I.12" -> "I.post.3";
-     "I.1" -> "I.post.1";
-     "I.2" -> "I.post.1";
-     "I.5" -> "I.post.1";
-     "I.12" -> "I.post.1";
      "I.9" -> "I.8";
      "I.12" -> "I.8";
+     "I.5" -> "I.4";
+     "I.10" -> "I.4";
+     "I.8" -> "I.7";
+     "I.1" -> "I.def.15";
+     "I.3" -> "I.def.15";
      "I.7" -> "I.5";
-     "I.2" -> "I.cn.3";
-     "I.12" -> "I.def.10";
      "I.12" -> "I.10";
-     "I.4" -> "I.cn.4";
-     "I.2" -> "I.post.2";
-     "I.5" -> "I.post.2";
-     "I.5" -> "I.3";
-     "I.9" -> "I.3";
    }
 
 

@@ -25,7 +25,7 @@ And it is manifest that it is also the greatest; for a greater magnitude than th
 
 Next, let AB not measure CD.
 
-Then, if the less be continually subtracted in turn from the greater, that which is left over will sometime measure the one before it, because AB, CD are not incommensurable; [cf. :ref:`X.2`] let AB, measuring ED, leave EC less than itself, let EC, measuring FB, leave AF less than itself, and let AF measure CE.
+Then, if the less be continually subtracted in turn from the greater, that which is left over will sometime measure the one before it, because AB, CD are not incommensurable; [cf. :ref:`X.2 <X.2>`] let AB, measuring ED, leave EC less than itself, let EC, measuring FB, leave AF less than itself, and let AF measure CE.
 
 Since, then, AF measures CE, while CE measures FB, therefore AF will also measure FB.
 
@@ -75,13 +75,15 @@ Dependency Graph
 .. graphviz::
 
    digraph {
+     bgcolor="black";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
+     edge [color="white", fontcolor="white"];
      rankdir="TB";
-     node [shape=box, style=rounded];
-     "X.def.1" [style="rounded,filled", fillcolor=orange, URL="/heath/X/def.1/", target="_top"];
-     "X.2" [URL="/heath/X/2/", target="_top"];
-     "X.3" [style="rounded,filled", fillcolor=lightblue, URL="/heath/X/3/", target="_top"];
-     "X.2" -> "X.def.1";
+     "X.2" [fillcolor="#222244", URL="/heath/X/2/", target="_top"];
+     "X.def.1" [fillcolor="#224422", URL="/heath/X/def.1/", target="_top"];
+     "X.3" [penwidth=3, color="white", fillcolor="#555555", URL="/heath/X/3/", target="_top"];
      "X.3" -> "X.2";
+     "X.2" -> "X.def.1";
    }
 
 

@@ -17,7 +17,7 @@ IX.11
 
 Let there be as many numbers as we please, B, C, D, E, beginning from the unit A and in continued proportion; I say that B, the least of the numbers B, C, D, E, measures E according to some one of the numbers C, D.
 
-For since, as the unit A is to B, so is D to E, therefore the unit A measures the number B the same number of times as D measures E; therefore, alternately, the unit A measures D the same number of times as B measures E. [:ref:`VII.15`]
+For since, as the unit A is to B, so is D to E, therefore the unit A measures the number B the same number of times as D measures E; therefore, alternately, the unit A measures D the same number of times as B measures E. [:ref:`VII.15 <VII.15>`]
 
 But the unit A measures D according to the units in it; therefore B also measures E according to the units in D; so that B the less measures E the greater according to some number of those which have place among the proportional numbers.—
 
@@ -43,17 +43,22 @@ Dependency Graph
 .. graphviz::
 
    digraph {
+     bgcolor="black";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
+     edge [color="white", fontcolor="white"];
      rankdir="TB";
-     node [shape=box, style=rounded];
-     "VII.12" [URL="/heath/VII/12/", target="_top"];
-     "elem.7.5 elem.7.6" [style="rounded,filled", fillcolor=orange];
-     "IX.11" [style="rounded,filled", fillcolor=lightblue, URL="/heath/IX/11/", target="_top"];
-     "VII.def.20" [style="rounded,filled", fillcolor=orange, URL="/heath/VII/def.20/", target="_top"];
-     "VII.15" [URL="/heath/VII/15/", target="_top"];
-     "VII.15" -> "VII.12";
-     "VII.12" -> "elem.7.5 elem.7.6";
+     "VII.def.20" [fillcolor="#224422", URL="/heath/VII/def.20/", target="_top"];
+     "VII.12" [fillcolor="#222244", URL="/heath/VII/12/", target="_top"];
+     "VII.6" [fillcolor="#222244", URL="/heath/VII/6/", target="_top"];
+     "IX.11" [penwidth=3, color="white", fillcolor="#555555", URL="/heath/IX/11/", target="_top"];
+     "VII.15" [fillcolor="#222244", URL="/heath/VII/15/", target="_top"];
+     "VII.5" [fillcolor="#222244", URL="/heath/VII/5/", target="_top"];
      "VII.12" -> "VII.def.20";
+     "VII.15" -> "VII.12";
+     "VII.12" -> "VII.6";
      "IX.11" -> "VII.15";
+     "VII.6" -> "VII.5";
+     "VII.12" -> "VII.5";
    }
 
 
@@ -61,4 +66,4 @@ Dependency Graph
 Required for
 ------------
 
-:ref:`IX.13`, :ref:`IX.32`, :ref:`IX.36`
+:ref:`IX.12`, :ref:`IX.13`, :ref:`IX.32`, :ref:`IX.36`

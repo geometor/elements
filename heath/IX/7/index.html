@@ -7,8 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>IX.7 &mdash; Project name not set  documentation</title>
   <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../../_static/css/styles.css?v=a3216404" />
+  <link rel="stylesheet" type="text/css" href="../../../_static/css/styles.css?v=b9bf8c56" />
   <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="../../../_static/css/print.css" type="text/css" media="print" />
 </head>
 <body>
   <header>
@@ -82,15 +83,17 @@
 <p>Therefore C is solid, and D, E, B are its sides. Q. E. D.</p>
 <section id="dependency-graph">
 <h2>Dependency Graph<a class="headerlink" href="#dependency-graph" title="Link to this heading">¶</a></h2>
-<div class="graphviz"><object data="../../../_images/graphviz-31d600d9136c3fc3ba9d6e98224bc96b41156c7c.svg" type="image/svg+xml" class="graphviz">
+<div class="graphviz"><object data="../../../_images/graphviz-517ae787d8fb8d96634d02217f95059e8375c972.svg" type="image/svg+xml" class="graphviz">
 <p class="warning">digraph {
+  bgcolor=&quot;black&quot;;
+  node [shape=box, style=&quot;rounded,filled&quot;, fontname=&quot;Helvetica&quot;, color=&quot;white&quot;, fontcolor=&quot;white&quot;];
+  edge [color=&quot;white&quot;, fontcolor=&quot;white&quot;];
   rankdir=&quot;TB&quot;;
-  node [shape=box, style=rounded];
-  &quot;VII.def.15&quot; [style=&quot;rounded,filled&quot;, fillcolor=orange, URL=&quot;/heath/VII/def.15/&quot;, target=&quot;_top&quot;];
-  &quot;IX.7&quot; [style=&quot;rounded,filled&quot;, fillcolor=lightblue, URL=&quot;/heath/IX/7/&quot;, target=&quot;_top&quot;];
-  &quot;VII.def.13&quot; [style=&quot;rounded,filled&quot;, fillcolor=orange, URL=&quot;/heath/VII/def.13/&quot;, target=&quot;_top&quot;];
-  &quot;IX.7&quot; -&gt; &quot;VII.def.15&quot;;
+  &quot;VII.def.13&quot; [fillcolor=&quot;#224422&quot;, URL=&quot;/heath/VII/def.13/&quot;, target=&quot;_top&quot;];
+  &quot;IX.7&quot; [penwidth=3, color=&quot;white&quot;, fillcolor=&quot;#555555&quot;, URL=&quot;/heath/IX/7/&quot;, target=&quot;_top&quot;];
+  &quot;VII.def.15&quot; [fillcolor=&quot;#224422&quot;, URL=&quot;/heath/VII/def.15/&quot;, target=&quot;_top&quot;];
   &quot;IX.7&quot; -&gt; &quot;VII.def.13&quot;;
+  &quot;IX.7&quot; -&gt; &quot;VII.def.15&quot;;
 }</p></object></div>
 </section>
 </section>
@@ -169,8 +172,6 @@
         
         <li><a href="../../../types/post.html">post</a></li>
         
-        <li><a href="../../../types/postulate.html">postulate</a></li>
-        
         <li><a href="../../../types/prop.html">prop</a></li>
         
     </ul>
@@ -198,6 +199,7 @@
   <script src="../../../_static/documentation_options.js?v=5929fcd5"></script>
   <script src="../../../_static/doctools.js?v=9bcbadda"></script>
   <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+  <script src="../../../_static/js/collection_controls.js?v=b6b5297a"></script>
 
 
 </body>

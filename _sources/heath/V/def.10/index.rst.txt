@@ -14,4 +14,4 @@ V.def.10
 Required for
 ------------
 
-:ref:`IX.10`, :ref:`IX.4`, :ref:`IX.5`, :ref:`IX.6`, :ref:`VIII.12`, :ref:`VIII.19`, :ref:`VIII.25`, :ref:`VIII.27`, :ref:`XI.33`, :ref:`XI.37`, :ref:`XII.12`, :ref:`XII.8`
+:ref:`IX.10`, :ref:`IX.4`, :ref:`IX.5`, :ref:`IX.6`, :ref:`VIII.12`, :ref:`VIII.15`, :ref:`VIII.17`, :ref:`VIII.19`, :ref:`VIII.25`, :ref:`VIII.27`, :ref:`XI.33`, :ref:`XI.37`, :ref:`XII.12`, :ref:`XII.8`

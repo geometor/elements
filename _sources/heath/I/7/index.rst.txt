@@ -20,7 +20,7 @@ I.7
 For, if possible, given two straight lines ``AC``, ``CB`` constructed on the straight line ``AB`` and meeting at the point ``C``, let two other straight lines 
         ``AD``, ``DB`` be constructed on the same straight line ``AB``, on the same side of it, meeting in another point ``D`` and equal to the former two respectively, namely each to that which has the same extremity with it, so that ``CA`` is equal to ``DA`` which has the same extremity ``A`` with it, and ``CB`` to ``DB`` which has the same extremity ``B`` with it; and let ``CD`` be joined.
 
-Then, since ``AC`` is equal to ``AD``, the angle ``ACD`` is also equal to the angle ``ADC``; [:ref:`I.5`] therefore the angle ``ADC`` is greater than the angle ``DCB``; therefore the angle ``CDB`` is much greater than the angle ``DCB``.
+Then, since ``AC`` is equal to ``AD``, the angle ``ACD`` is also equal to the angle ``ADC``; [:ref:`I.5 <I.5>`] therefore the angle ``ADC`` is greater than the angle ``DCB``; therefore the angle ``CDB`` is much greater than the angle ``DCB``.
 
 Again, since ``CB`` is equal to ``DB``, the angle ``CDB`` is also equal to the angle ``DCB``.
         But it was also proved much greater than it: which is impossible.
@@ -47,7 +47,7 @@ Q. E. D.
 
     is not in English sufficiently definite unless we explain that they are drawn from the ``ends`` of the straight line to ``meet`` at a point. I have had the less hesitation in putting in the words from its extremities
 
-    because they are actually used by Euclid in the somewhat similar enunciation of :ref:`I.21`.
+    because they are actually used by Euclid in the somewhat similar enunciation of :ref:`I.21 <I.21>`.
 
    
 
@@ -57,7 +57,7 @@ Q. E. D.
 
    
 
-   The reason why Euclid allowed himself to use, in this enunciation, language apparently so obscure is no doubt that the phraseology was traditional and therefore, vague as it was, had a conventional meaning which the contemporary geometer well understood. This is proved, I think, by the occurrence in Aristotle (Meteorologica III. 5, 376 a 2 sqq.) of the very same, evidently technical, expressions. Aristotle is there alluding to the theorem given by Eutocius from Apollonius' Plane Loci to the effect that, if ``H``, ``K`` be two fixed points and ``M`` such a variable point that the ratio of ``MH`` to ``MK`` is a given ratio (not one of equality), the locus of ``M`` is a circle. (For an account of this theorem see note on :ref:`VI.3` below.) Now Aristotle says The lines drawn up from ``H``, ``K`` in this ratio cannot be constructed to two different points of the semicircle ``A``
+   The reason why Euclid allowed himself to use, in this enunciation, language apparently so obscure is no doubt that the phraseology was traditional and therefore, vague as it was, had a conventional meaning which the contemporary geometer well understood. This is proved, I think, by the occurrence in Aristotle (Meteorologica III. 5, 376 a 2 sqq.) of the very same, evidently technical, expressions. Aristotle is there alluding to the theorem given by Eutocius from Apollonius' Plane Loci to the effect that, if ``H``, ``K`` be two fixed points and ``M`` such a variable point that the ratio of ``MH`` to ``MK`` is a given ratio (not one of equality), the locus of ``M`` is a circle. (For an account of this theorem see note on :ref:`VI.3 <VI.3>` below.) Now Aristotle says The lines drawn up from ``H``, ``K`` in this ratio cannot be constructed to two different points of the semicircle ``A``
 
     (αἰ οὖν ἀπὸ τῶν ΗΚ ἀναγόμεναι γραμμαὶ ἐν τούτῳ τῷ λόγῳ οὐ συσταθήσουται τοῦ ἐφ̓ ᾦ Α ἡμικυκλίου πρὸς ἄλλο καὶ ἄλλο σημεῖον).
 
@@ -67,7 +67,7 @@ Q. E. D.
 
     and as detracting from the beauty and accuracy of Euclid's enunciation which are enlarged upon by Proclus in his commentary. Yet, when Taylor says Whatever difficulty learners may find in conceiving this proposition abstractedly is easily removed by its exposition in the figure,
 
-    he really gives his case away. The fact is that Taylor, always enthusiastic over his author, was nettled by Simson's slighting remarks on Proclus' comments on the proposition. Simson had said, with reference to Proclus' explanation of the bearing of the second part of :ref:`I.5` on :ref:`I.7`, that it was not worth while to relate his trifles at full length,
+    he really gives his case away. The fact is that Taylor, always enthusiastic over his author, was nettled by Simson's slighting remarks on Proclus' comments on the proposition. Simson had said, with reference to Proclus' explanation of the bearing of the second part of :ref:`I.5 <I.5>` on :ref:`I.7 <I.7>`, that it was not worth while to relate his trifles at full length,
 
     to which Taylor retorts But Mr Simson was no philosopher; and therefore the greatest part of these Commentaries must be considered by him as trifles, from the want of a philosophic genius to comprehend their meaning, and a taste superior to that of a ``mere mathematician``, to discover their beauty and elegance.
 
@@ -79,7 +79,7 @@ Q. E. D.
 
    
 
-   It would be natural to insert here the step but the angle ``ACD`` is greater than the angle ``BCD``. [:ref:`I.cn.5`].
+   It would be natural to insert here the step but the angle ``ACD`` is greater than the angle ``BCD``. [:ref:`I.cn.5 <I.cn.5>`].
 
 
 .. note::
@@ -102,41 +102,43 @@ Dependency Graph
 .. graphviz::
 
    digraph {
+     bgcolor="black";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
+     edge [color="white", fontcolor="white"];
      rankdir="TB";
-     node [shape=box, style=rounded];
-     "I.cn.1" [style="rounded,filled", fillcolor=orange, URL="/heath/I/cn.1/", target="_top"];
-     "I.7" [style="rounded,filled", fillcolor=lightblue, URL="/heath/I/7/", target="_top"];
-     "I.2" [URL="/heath/I/2/", target="_top"];
-     "I.def.15" [style="rounded,filled", fillcolor=orange, URL="/heath/I/def.15/", target="_top"];
-     "I.4" [URL="/heath/I/4/", target="_top"];
-     "I.cn.4" [style="rounded,filled", fillcolor=orange, URL="/heath/I/cn.4/", target="_top"];
-     "I.1" [URL="/heath/I/1/", target="_top"];
-     "I.post.2" [style="rounded,filled", fillcolor=orange, URL="/heath/I/post.2/", target="_top"];
-     "I.5" [URL="/heath/I/5/", target="_top"];
-     "I.post.1" [style="rounded,filled", fillcolor=orange, URL="/heath/I/post.1/", target="_top"];
-     "I.post.3" [style="rounded,filled", fillcolor=orange, URL="/heath/I/post.3/", target="_top"];
-     "I.cn.3" [style="rounded,filled", fillcolor=orange, URL="/heath/I/cn.3/", target="_top"];
-     "I.3" [URL="/heath/I/3/", target="_top"];
-     "I.1" -> "I.cn.1";
-     "I.2" -> "I.cn.1";
-     "I.3" -> "I.cn.1";
-     "I.3" -> "I.2";
-     "I.1" -> "I.def.15";
-     "I.3" -> "I.def.15";
-     "I.5" -> "I.4";
-     "I.4" -> "I.cn.4";
+     "I.1" [fillcolor="#222244", URL="/heath/I/1/", target="_top"];
+     "I.post.2" [fillcolor="#444422", URL="/heath/I/post.2/", target="_top"];
+     "I.3" [fillcolor="#222244", URL="/heath/I/3/", target="_top"];
+     "I.post.1" [fillcolor="#444422", URL="/heath/I/post.1/", target="_top"];
+     "I.cn.1" [fillcolor="#442222", URL="/heath/I/cn.1/", target="_top"];
+     "I.post.3" [fillcolor="#444422", URL="/heath/I/post.3/", target="_top"];
+     "I.4" [fillcolor="#222244", URL="/heath/I/4/", target="_top"];
+     "I.cn.3" [fillcolor="#442222", URL="/heath/I/cn.3/", target="_top"];
+     "I.7" [penwidth=3, color="white", fillcolor="#555555", URL="/heath/I/7/", target="_top"];
+     "I.def.15" [fillcolor="#224422", URL="/heath/I/def.15/", target="_top"];
+     "I.5" [fillcolor="#222244", URL="/heath/I/5/", target="_top"];
+     "I.2" [fillcolor="#222244", URL="/heath/I/2/", target="_top"];
+     "I.cn.4" [fillcolor="#442222", URL="/heath/I/cn.4/", target="_top"];
      "I.2" -> "I.1";
      "I.2" -> "I.post.2";
      "I.5" -> "I.post.2";
-     "I.7" -> "I.5";
+     "I.5" -> "I.3";
      "I.1" -> "I.post.1";
      "I.2" -> "I.post.1";
      "I.5" -> "I.post.1";
+     "I.1" -> "I.cn.1";
+     "I.2" -> "I.cn.1";
+     "I.3" -> "I.cn.1";
      "I.1" -> "I.post.3";
      "I.2" -> "I.post.3";
      "I.3" -> "I.post.3";
+     "I.5" -> "I.4";
      "I.2" -> "I.cn.3";
-     "I.5" -> "I.3";
+     "I.1" -> "I.def.15";
+     "I.3" -> "I.def.15";
+     "I.7" -> "I.5";
+     "I.3" -> "I.2";
+     "I.4" -> "I.cn.4";
    }
 
 

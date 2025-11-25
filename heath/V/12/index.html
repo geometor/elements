@@ -7,8 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>V.12 &mdash; Project name not set  documentation</title>
   <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../../_static/css/styles.css?v=a3216404" />
+  <link rel="stylesheet" type="text/css" href="../../../_static/css/styles.css?v=b9bf8c56" />
   <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="../../../_static/css/print.css" type="text/css" media="print" />
 </head>
 <body>
   <header>
@@ -85,15 +86,17 @@
 <p>Therefore etc. Q. E. D.</p>
 <section id="dependency-graph">
 <h2>Dependency Graph<a class="headerlink" href="#dependency-graph" title="Link to this heading">¶</a></h2>
-<div class="graphviz"><object data="../../../_images/graphviz-bf13070bd17b4755f24ee0bf1e180e15c283ad19.svg" type="image/svg+xml" class="graphviz">
+<div class="graphviz"><object data="../../../_images/graphviz-c2c7340b2ce62746d56d307160e4ae6dcb332462.svg" type="image/svg+xml" class="graphviz">
 <p class="warning">digraph {
+  bgcolor=&quot;black&quot;;
+  node [shape=box, style=&quot;rounded,filled&quot;, fontname=&quot;Helvetica&quot;, color=&quot;white&quot;, fontcolor=&quot;white&quot;];
+  edge [color=&quot;white&quot;, fontcolor=&quot;white&quot;];
   rankdir=&quot;TB&quot;;
-  node [shape=box, style=rounded];
-  &quot;V.1&quot; [style=&quot;rounded,filled&quot;, fillcolor=orange, URL=&quot;/heath/V/1/&quot;, target=&quot;_top&quot;];
-  &quot;V.def.5&quot; [style=&quot;rounded,filled&quot;, fillcolor=orange, URL=&quot;/heath/V/def.5/&quot;, target=&quot;_top&quot;];
-  &quot;V.12&quot; [style=&quot;rounded,filled&quot;, fillcolor=lightblue, URL=&quot;/heath/V/12/&quot;, target=&quot;_top&quot;];
-  &quot;V.12&quot; -&gt; &quot;V.1&quot;;
+  &quot;V.def.5&quot; [fillcolor=&quot;#224422&quot;, URL=&quot;/heath/V/def.5/&quot;, target=&quot;_top&quot;];
+  &quot;V.1&quot; [fillcolor=&quot;#222244&quot;, URL=&quot;/heath/V/1/&quot;, target=&quot;_top&quot;];
+  &quot;V.12&quot; [penwidth=3, color=&quot;white&quot;, fillcolor=&quot;#555555&quot;, URL=&quot;/heath/V/12/&quot;, target=&quot;_top&quot;];
   &quot;V.12&quot; -&gt; &quot;V.def.5&quot;;
+  &quot;V.12&quot; -&gt; &quot;V.1&quot;;
 }</p></object></div>
 </section>
 <section id="required-for">
@@ -176,8 +179,6 @@
         
         <li><a href="../../../types/post.html">post</a></li>
         
-        <li><a href="../../../types/postulate.html">postulate</a></li>
-        
         <li><a href="../../../types/prop.html">prop</a></li>
         
     </ul>
@@ -205,6 +206,7 @@
   <script src="../../../_static/documentation_options.js?v=5929fcd5"></script>
   <script src="../../../_static/doctools.js?v=9bcbadda"></script>
   <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+  <script src="../../../_static/js/collection_controls.js?v=b6b5297a"></script>
 
 
 </body>

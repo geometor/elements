@@ -19,7 +19,7 @@ For let ``A`` have to ``C`` a greater ratio than ``B`` has to ``C``; I say that 
 
 For, if not, ``A`` is either equal to ``B`` or less.
 
-Now ``A`` is not equal to ``B``; for in that case each of the magnitudes ``A``, ``B`` would have had the same ratio to ``C``; [:ref:`V.7`] but they have not;
+Now ``A`` is not equal to ``B``; for in that case each of the magnitudes ``A``, ``B`` would have had the same ratio to ``C``; [:ref:`V.7 <V.7>`] but they have not;
 
 
 .. container:: center
@@ -27,7 +27,7 @@ Now ``A`` is not equal to ``B``; for in that case each of the magnitudes ``A``, 
    therefore ``A`` is not equal to ``B``.
 
 
-Nor again is ``A`` less than ``B``; for in that case ``A`` would have had to ``C`` a less ratio than ``B`` has to ``C``; [:ref:`V.8`] but it has not;
+Nor again is ``A`` less than ``B``; for in that case ``A`` would have had to ``C`` a less ratio than ``B`` has to ``C``; [:ref:`V.8 <V.8>`] but it has not;
 
 
 .. container:: center
@@ -47,7 +47,7 @@ Again, let ``C`` have to ``B`` a greater ratio than ``C`` has to ``A``; I say th
 
 For, if not, it is either equal or greater.
 
-Now ``B`` is not equal to ``A``; for in that case ``C`` would have had the same ratio to each of the magnitudes ``A``, ``B``; [:ref:`V.7`] but it has not;
+Now ``B`` is not equal to ``A``; for in that case ``C`` would have had the same ratio to each of the magnitudes ``A``, ``B``; [:ref:`V.7 <V.7>`] but it has not;
 
 
 .. container:: center
@@ -55,7 +55,7 @@ Now ``B`` is not equal to ``A``; for in that case ``C`` would have had the same 
    therefore ``A`` is not equal to ``B``.
 
 
-Nor again is ``B`` greater than ``A``; for in that case ``C`` would have had to ``B`` a less ratio than it has to ``A``; [:ref:`V.8`] but it has not;
+Nor again is ``B`` greater than ``A``; for in that case ``C`` would have had to ``B`` a less ratio than it has to ``A``; [:ref:`V.8 <V.8>`] but it has not;
 
 
 .. container:: center
@@ -80,21 +80,23 @@ Dependency Graph
 .. graphviz::
 
    digraph {
+     bgcolor="black";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
+     edge [color="white", fontcolor="white"];
      rankdir="TB";
-     node [shape=box, style=rounded];
-     "V.7" [URL="/heath/V/7/", target="_top"];
-     "V.10" [style="rounded,filled", fillcolor=lightblue, URL="/heath/V/10/", target="_top"];
-     "V.def.7" [style="rounded,filled", fillcolor=orange, URL="/heath/V/def.7/", target="_top"];
-     "V.1" [style="rounded,filled", fillcolor=orange, URL="/heath/V/1/", target="_top"];
-     "V.def.5" [style="rounded,filled", fillcolor=orange, URL="/heath/V/def.5/", target="_top"];
-     "V.def.4" [style="rounded,filled", fillcolor=orange, URL="/heath/V/def.4/", target="_top"];
-     "V.8" [URL="/heath/V/8/", target="_top"];
-     "V.10" -> "V.7";
-     "V.8" -> "V.def.7";
-     "V.8" -> "V.1";
-     "V.7" -> "V.def.5";
-     "V.8" -> "V.def.4";
+     "V.8" [fillcolor="#222244", URL="/heath/V/8/", target="_top"];
+     "V.def.5" [fillcolor="#224422", URL="/heath/V/def.5/", target="_top"];
+     "V.1" [fillcolor="#222244", URL="/heath/V/1/", target="_top"];
+     "V.def.7" [fillcolor="#224422", URL="/heath/V/def.7/", target="_top"];
+     "V.7" [fillcolor="#222244", URL="/heath/V/7/", target="_top"];
+     "V.def.4" [fillcolor="#224422", URL="/heath/V/def.4/", target="_top"];
+     "V.10" [penwidth=3, color="white", fillcolor="#555555", URL="/heath/V/10/", target="_top"];
      "V.10" -> "V.8";
+     "V.7" -> "V.def.5";
+     "V.8" -> "V.1";
+     "V.8" -> "V.def.7";
+     "V.10" -> "V.7";
+     "V.8" -> "V.def.4";
    }
 
 

@@ -27,11 +27,11 @@ Let there be three magnitudes ``A``, ``B``, ``C``, and others ``D``, ``E``, ``F`
 
 and as ``B`` is to ``C``, so is ``E`` to ``F``; and let ``A`` be greater than ``C`` ex aequali; I say that ``D`` will also be greater than ``F``; if ``A`` is equal to ``C``, equal; and, if less, less.
 
-For, since ``A`` is greater than ``C``, and ``B`` is some other magnitude, and the greater has to the same a greater ratio than the less has, [:ref:`V.8`] therefore ``A`` has to ``B`` a greater ratio than ``C`` has to ``B``.
+For, since ``A`` is greater than ``C``, and ``B`` is some other magnitude, and the greater has to the same a greater ratio than the less has, [:ref:`V.8 <V.8>`] therefore ``A`` has to ``B`` a greater ratio than ``C`` has to ``B``.
 
-But, as ``A`` is to ``B``, so is ``D`` to ``E``, and, as ``C`` is to ``B``, inversely, so is ``F`` to ``E``; therefore ``D`` has also to ``E`` a greater ratio than ``F`` has to ``E``. [:ref:`V.13`]
+But, as ``A`` is to ``B``, so is ``D`` to ``E``, and, as ``C`` is to ``B``, inversely, so is ``F`` to ``E``; therefore ``D`` has also to ``E`` a greater ratio than ``F`` has to ``E``. [:ref:`V.13 <V.13>`]
 
-But, of magnitudes which have a ratio to the same, that which has a greater ratio is greater; [:ref:`V.10`]
+But, of magnitudes which have a ratio to the same, that which has a greater ratio is greater; [:ref:`V.10 <V.10>`]
 
 
 .. container:: center
@@ -50,28 +50,30 @@ Dependency Graph
 .. graphviz::
 
    digraph {
+     bgcolor="black";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
+     edge [color="white", fontcolor="white"];
      rankdir="TB";
-     node [shape=box, style=rounded];
-     "V.10" [URL="/heath/V/10/", target="_top"];
-     "V.def.7" [style="rounded,filled", fillcolor=orange, URL="/heath/V/def.7/", target="_top"];
-     "V.1" [style="rounded,filled", fillcolor=orange, URL="/heath/V/1/", target="_top"];
-     "V.13" [URL="/heath/V/13/", target="_top"];
-     "V.20" [style="rounded,filled", fillcolor=lightblue, URL="/heath/V/20/", target="_top"];
-     "V.7" [URL="/heath/V/7/", target="_top"];
-     "V.def.5" [style="rounded,filled", fillcolor=orange, URL="/heath/V/def.5/", target="_top"];
-     "V.def.4" [style="rounded,filled", fillcolor=orange, URL="/heath/V/def.4/", target="_top"];
-     "V.8" [URL="/heath/V/8/", target="_top"];
-     "V.20" -> "V.10";
-     "V.8" -> "V.def.7";
-     "V.13" -> "V.def.7";
-     "V.8" -> "V.1";
-     "V.20" -> "V.13";
-     "V.10" -> "V.7";
+     "V.def.5" [fillcolor="#224422", URL="/heath/V/def.5/", target="_top"];
+     "V.1" [fillcolor="#222244", URL="/heath/V/1/", target="_top"];
+     "V.def.7" [fillcolor="#224422", URL="/heath/V/def.7/", target="_top"];
+     "V.def.4" [fillcolor="#224422", URL="/heath/V/def.4/", target="_top"];
+     "V.20" [penwidth=3, color="white", fillcolor="#555555", URL="/heath/V/20/", target="_top"];
+     "V.13" [fillcolor="#222244", URL="/heath/V/13/", target="_top"];
+     "V.8" [fillcolor="#222244", URL="/heath/V/8/", target="_top"];
+     "V.7" [fillcolor="#222244", URL="/heath/V/7/", target="_top"];
+     "V.10" [fillcolor="#222244", URL="/heath/V/10/", target="_top"];
      "V.7" -> "V.def.5";
      "V.13" -> "V.def.5";
+     "V.8" -> "V.1";
+     "V.8" -> "V.def.7";
+     "V.13" -> "V.def.7";
      "V.8" -> "V.def.4";
+     "V.20" -> "V.13";
      "V.10" -> "V.8";
      "V.20" -> "V.8";
+     "V.10" -> "V.7";
+     "V.20" -> "V.10";
    }
 
 

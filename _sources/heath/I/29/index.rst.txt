@@ -26,18 +26,18 @@ Let the angle ``AGH`` be greater.
 
 Let the angle ``BGH`` be added to each; therefore the angles ``AGH``, ``BGH`` are greater than the angles ``BGH``, ``GHD``. 
 
-But the angles ``AGH``, ``BGH`` are equal to two right angles; [:ref:`I.13`] therefore the angles ``BGH``, ``GHD`` are less than two right angles.
+But the angles ``AGH``, ``BGH`` are equal to two right angles; [:ref:`I.13 <I.13>`] therefore the angles ``BGH``, ``GHD`` are less than two right angles.
 
-But straight lines produced indefinitely from angles less than two right angles meet; [:ref:`I.post.5`] therefore ``AB``, ``CD``, if produced indefinitely, will meet; but they do not meet, because they are by hypothesis parallel.
+But straight lines produced indefinitely from angles less than two right angles meet; [:ref:`I.post.5 <I.post.5>`] therefore ``AB``, ``CD``, if produced indefinitely, will meet; but they do not meet, because they are by hypothesis parallel.
 
 Therefore the angle ``AGH`` is not unequal to the angle ``GHD``, and is therefore equal to it.
         
 
-Again, the angle ``AGH`` is equal to the angle ``EGB``; [:ref:`I.15`] therefore the angle ``EGB`` is also equal to the angle ``GHD``. [:ref:`I.cn.1`]
+Again, the angle ``AGH`` is equal to the angle ``EGB``; [:ref:`I.15 <I.15>`] therefore the angle ``EGB`` is also equal to the angle ``GHD``. [:ref:`I.cn.1 <I.cn.1>`]
 
-Let the angle ``BGH`` be added to each; therefore the angles ``EGB``, ``BGH`` are equal to the angles ``BGH``, ``GHD``. [:ref:`I.cn.2`]
+Let the angle ``BGH`` be added to each; therefore the angles ``EGB``, ``BGH`` are equal to the angles ``BGH``, ``GHD``. [:ref:`I.cn.2 <I.cn.2>`]
 
-But the angles ``EGB``, ``BGH`` are equal to two right angles; [:ref:`I.13`] therefore the angles ``BGH``, ``GHD`` are also equal to two right angles.
+But the angles ``EGB``, ``BGH`` are equal to two right angles; [:ref:`I.13 <I.13>`] therefore the angles ``BGH``, ``GHD`` are also equal to two right angles.
 
 Therefore etc.
 
@@ -55,7 +55,7 @@ Q. E. D.
 
    
 
-   αἰ δὲ ἀπ: ὲλασσόνων ἢ δύο ὀρθῶν ἐκβαλλόμεναι εἰς ἄπειπον συμπίπτουσιν, a variation from the more explicit language of :ref:`I.post.5`. A good deal is left to be understood, namely that the straight lines begin from points at which they meet a transversal, and make with it internal angles on the same side the sum of which is less than two right angles.
+   αἰ δὲ ἀπ: ὲλασσόνων ἢ δύο ὀρθῶν ἐκβαλλόμεναι εἰς ἄπειπον συμπίπτουσιν, a variation from the more explicit language of :ref:`I.post.5 <I.post.5>`. A good deal is left to be understood, namely that the straight lines begin from points at which they meet a transversal, and make with it internal angles on the same side the sum of which is less than two right angles.
 
 
 .. note::
@@ -76,66 +76,68 @@ Dependency Graph
 .. graphviz::
 
    digraph {
+     bgcolor="black";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
+     edge [color="white", fontcolor="white"];
      rankdir="TB";
-     node [shape=box, style=rounded];
-     "I.cn.1" [style="rounded,filled", fillcolor=orange, URL="/heath/I/cn.1/", target="_top"];
-     "I.7" [URL="/heath/I/7/", target="_top"];
-     "I.2" [URL="/heath/I/2/", target="_top"];
-     "I.def.15" [style="rounded,filled", fillcolor=orange, URL="/heath/I/def.15/", target="_top"];
-     "I.13" [URL="/heath/I/13/", target="_top"];
-     "I.post.4" [style="rounded,filled", fillcolor=orange, URL="/heath/I/post.4/", target="_top"];
-     "I.4" [URL="/heath/I/4/", target="_top"];
-     "I.1" [URL="/heath/I/1/", target="_top"];
-     "I.post.3" [style="rounded,filled", fillcolor=orange, URL="/heath/I/post.3/", target="_top"];
-     "I.post.1" [style="rounded,filled", fillcolor=orange, URL="/heath/I/post.1/", target="_top"];
-     "I.5" [URL="/heath/I/5/", target="_top"];
-     "I.8" [URL="/heath/I/8/", target="_top"];
-     "I.cn.3" [style="rounded,filled", fillcolor=orange, URL="/heath/I/cn.3/", target="_top"];
-     "I.29" [style="rounded,filled", fillcolor=lightblue, URL="/heath/I/29/", target="_top"];
-     "I.def.10" [style="rounded,filled", fillcolor=orange, URL="/heath/I/def.10/", target="_top"];
-     "I.15" [URL="/heath/I/15/", target="_top"];
-     "I.11" [URL="/heath/I/11/", target="_top"];
-     "I.cn.2" [style="rounded,filled", fillcolor=orange, URL="/heath/I/cn.2/", target="_top"];
-     "I.post.5" [style="rounded,filled", fillcolor=orange, URL="/heath/I/post.5/", target="_top"];
-     "I.cn.4" [style="rounded,filled", fillcolor=orange, URL="/heath/I/cn.4/", target="_top"];
-     "I.post.2" [style="rounded,filled", fillcolor=orange, URL="/heath/I/post.2/", target="_top"];
-     "I.3" [URL="/heath/I/3/", target="_top"];
+     "I.3" [fillcolor="#222244", URL="/heath/I/3/", target="_top"];
+     "I.post.1" [fillcolor="#444422", URL="/heath/I/post.1/", target="_top"];
+     "I.cn.1" [fillcolor="#442222", URL="/heath/I/cn.1/", target="_top"];
+     "I.def.10" [fillcolor="#224422", URL="/heath/I/def.10/", target="_top"];
+     "I.15" [fillcolor="#222244", URL="/heath/I/15/", target="_top"];
+     "I.11" [fillcolor="#222244", URL="/heath/I/11/", target="_top"];
+     "I.cn.3" [fillcolor="#442222", URL="/heath/I/cn.3/", target="_top"];
+     "I.13" [fillcolor="#222244", URL="/heath/I/13/", target="_top"];
+     "I.2" [fillcolor="#222244", URL="/heath/I/2/", target="_top"];
+     "I.post.2" [fillcolor="#444422", URL="/heath/I/post.2/", target="_top"];
+     "I.cn.2" [fillcolor="#442222", URL="/heath/I/cn.2/", target="_top"];
+     "I.29" [penwidth=3, color="white", fillcolor="#555555", URL="/heath/I/29/", target="_top"];
+     "I.cn.4" [fillcolor="#442222", URL="/heath/I/cn.4/", target="_top"];
+     "I.1" [fillcolor="#222244", URL="/heath/I/1/", target="_top"];
+     "I.post.5" [fillcolor="#444422", URL="/heath/I/post.5/", target="_top"];
+     "I.post.4" [fillcolor="#444422", URL="/heath/I/post.4/", target="_top"];
+     "I.8" [fillcolor="#222244", URL="/heath/I/8/", target="_top"];
+     "I.4" [fillcolor="#222244", URL="/heath/I/4/", target="_top"];
+     "I.post.3" [fillcolor="#444422", URL="/heath/I/post.3/", target="_top"];
+     "I.7" [fillcolor="#222244", URL="/heath/I/7/", target="_top"];
+     "I.def.15" [fillcolor="#224422", URL="/heath/I/def.15/", target="_top"];
+     "I.5" [fillcolor="#222244", URL="/heath/I/5/", target="_top"];
+     "I.5" -> "I.3";
+     "I.11" -> "I.3";
+     "I.1" -> "I.post.1";
+     "I.2" -> "I.post.1";
+     "I.5" -> "I.post.1";
      "I.1" -> "I.cn.1";
      "I.2" -> "I.cn.1";
      "I.3" -> "I.cn.1";
      "I.15" -> "I.cn.1";
      "I.29" -> "I.cn.1";
-     "I.8" -> "I.7";
-     "I.3" -> "I.2";
-     "I.1" -> "I.def.15";
-     "I.3" -> "I.def.15";
-     "I.15" -> "I.13";
-     "I.29" -> "I.13";
-     "I.15" -> "I.post.4";
-     "I.5" -> "I.4";
-     "I.2" -> "I.1";
-     "I.11" -> "I.1";
-     "I.1" -> "I.post.3";
-     "I.2" -> "I.post.3";
-     "I.3" -> "I.post.3";
-     "I.1" -> "I.post.1";
-     "I.2" -> "I.post.1";
-     "I.5" -> "I.post.1";
-     "I.7" -> "I.5";
-     "I.11" -> "I.8";
-     "I.2" -> "I.cn.3";
-     "I.15" -> "I.cn.3";
      "I.11" -> "I.def.10";
      "I.13" -> "I.def.10";
      "I.29" -> "I.15";
      "I.13" -> "I.11";
-     "I.29" -> "I.cn.2";
-     "I.29" -> "I.post.5";
-     "I.4" -> "I.cn.4";
+     "I.2" -> "I.cn.3";
+     "I.15" -> "I.cn.3";
+     "I.15" -> "I.13";
+     "I.29" -> "I.13";
+     "I.3" -> "I.2";
      "I.2" -> "I.post.2";
      "I.5" -> "I.post.2";
-     "I.5" -> "I.3";
-     "I.11" -> "I.3";
+     "I.29" -> "I.cn.2";
+     "I.4" -> "I.cn.4";
+     "I.2" -> "I.1";
+     "I.11" -> "I.1";
+     "I.29" -> "I.post.5";
+     "I.15" -> "I.post.4";
+     "I.11" -> "I.8";
+     "I.5" -> "I.4";
+     "I.1" -> "I.post.3";
+     "I.2" -> "I.post.3";
+     "I.3" -> "I.post.3";
+     "I.8" -> "I.7";
+     "I.1" -> "I.def.15";
+     "I.3" -> "I.def.15";
+     "I.7" -> "I.5";
    }
 
 

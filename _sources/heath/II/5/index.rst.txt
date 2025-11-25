@@ -18,9 +18,9 @@ II.5
 
 For let a straight line ``AB`` be cut into equal segments at ``C`` and into unequal segments at ``D``; I say that the rectangle contained by ``AD``, ``DB`` together with the square on ``CD`` is equal to the square on ``CB``.
 
-For let the square ``CEFB`` be described on ``CB``, [:ref:`I.46`] and let ``BE`` be joined; through ``D`` let ``DG`` be drawn parallel to either ``CE`` or ``BF``, through ``H`` again let ``KM`` be drawn parallel to either ``AB`` or ``EF``, and again through ``A`` let ``AK`` be drawn parallel to either ``CL`` or ``BM``. [:ref:`I.31`]
+For let the square ``CEFB`` be described on ``CB``, [:ref:`I.46 <I.46>`] and let ``BE`` be joined; through ``D`` let ``DG`` be drawn parallel to either ``CE`` or ``BF``, through ``H`` again let ``KM`` be drawn parallel to either ``AB`` or ``EF``, and again through ``A`` let ``AK`` be drawn parallel to either ``CL`` or ``BM``. [:ref:`I.31 <I.31>`]
 
-Then, since the complement ``CH`` is equal to the complement ``HF``, [:ref:`I.43`] let ``DM`` be added to each;
+Then, since the complement ``CH`` is equal to the complement ``HF``, [:ref:`I.43 <I.43>`] let ``DM`` be added to each;
 
 
 .. container:: center
@@ -33,7 +33,7 @@ But ``CM`` is equal to ``AL``,
 
 .. container:: center
 
-   since ``AC`` is also equal to ``CB``; [:ref:`I.36`] therefore ``AL`` is also equal to ``DF``.
+   since ``AC`` is also equal to ``CB``; [:ref:`I.36 <I.36>`] therefore ``AL`` is also equal to ``DF``.
 
 
 Let ``CH`` be added to each;
@@ -80,73 +80,53 @@ Dependency Graph
 .. graphviz::
 
    digraph {
+     bgcolor="black";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
+     edge [color="white", fontcolor="white"];
      rankdir="TB";
-     node [shape=box, style=rounded];
-     "I.23" [URL="/heath/I/23/", target="_top"];
-     "I.9" [URL="/heath/I/9/", target="_top"];
-     "I.33" [URL="/heath/I/33/", target="_top"];
-     "I.def.15" [style="rounded,filled", fillcolor=orange, URL="/heath/I/def.15/", target="_top"];
-     "I.post.3" [style="rounded,filled", fillcolor=orange, URL="/heath/I/post.3/", target="_top"];
-     "I.post.1" [style="rounded,filled", fillcolor=orange, URL="/heath/I/post.1/", target="_top"];
-     "I.43" [URL="/heath/I/43/", target="_top"];
-     "II.5" [style="rounded,filled", fillcolor=lightblue, URL="/heath/II/5/", target="_top"];
-     "I.31" [URL="/heath/I/31/", target="_top"];
-     "I.def.10" [style="rounded,filled", fillcolor=orange, URL="/heath/I/def.10/", target="_top"];
-     "I.27" [URL="/heath/I/27/", target="_top"];
-     "I.34" [URL="/heath/I/34/", target="_top"];
-     "I.3" [URL="/heath/I/3/", target="_top"];
-     "I.35" [URL="/heath/I/35/", target="_top"];
-     "I.cn.1" [style="rounded,filled", fillcolor=orange, URL="/heath/I/cn.1/", target="_top"];
-     "I.7" [URL="/heath/I/7/", target="_top"];
-     "I.2" [URL="/heath/I/2/", target="_top"];
-     "I.36" [URL="/heath/I/36/", target="_top"];
-     "I.13" [URL="/heath/I/13/", target="_top"];
-     "I.post.4" [style="rounded,filled", fillcolor=orange, URL="/heath/I/post.4/", target="_top"];
-     "I.4" [URL="/heath/I/4/", target="_top"];
-     "I.1" [URL="/heath/I/1/", target="_top"];
-     "I.5" [URL="/heath/I/5/", target="_top"];
-     "I.8" [URL="/heath/I/8/", target="_top"];
-     "I.29" [URL="/heath/I/29/", target="_top"];
-     "I.cn.3" [style="rounded,filled", fillcolor=orange, URL="/heath/I/cn.3/", target="_top"];
-     "I.16" [URL="/heath/I/16/", target="_top"];
-     "I.15" [URL="/heath/I/15/", target="_top"];
-     "I.10" [URL="/heath/I/10/", target="_top"];
-     "I.11" [URL="/heath/I/11/", target="_top"];
-     "I.def.23" [style="rounded,filled", fillcolor=orange, URL="/heath/I/def.23/", target="_top"];
-     "I.cn.2" [style="rounded,filled", fillcolor=orange, URL="/heath/I/cn.2/", target="_top"];
-     "I.post.5" [style="rounded,filled", fillcolor=orange, URL="/heath/I/post.5/", target="_top"];
-     "I.cn.4" [style="rounded,filled", fillcolor=orange, URL="/heath/I/cn.4/", target="_top"];
-     "I.post.2" [style="rounded,filled", fillcolor=orange, URL="/heath/I/post.2/", target="_top"];
-     "I.46" [URL="/heath/I/46/", target="_top"];
-     "I.26" [URL="/heath/I/26/", target="_top"];
-     "I.31" -> "I.23";
-     "I.10" -> "I.9";
-     "I.36" -> "I.33";
-     "I.1" -> "I.def.15";
-     "I.3" -> "I.def.15";
-     "I.1" -> "I.post.3";
-     "I.2" -> "I.post.3";
-     "I.3" -> "I.post.3";
-     "I.1" -> "I.post.1";
-     "I.2" -> "I.post.1";
-     "I.5" -> "I.post.1";
-     "I.16" -> "I.post.1";
-     "II.5" -> "I.43";
+     "I.31" [fillcolor="#222244", URL="/heath/I/31/", target="_top"];
+     "I.3" [fillcolor="#222244", URL="/heath/I/3/", target="_top"];
+     "I.cn.1" [fillcolor="#442222", URL="/heath/I/cn.1/", target="_top"];
+     "I.def.10" [fillcolor="#224422", URL="/heath/I/def.10/", target="_top"];
+     "I.15" [fillcolor="#222244", URL="/heath/I/15/", target="_top"];
+     "I.13" [fillcolor="#222244", URL="/heath/I/13/", target="_top"];
+     "I.27" [fillcolor="#222244", URL="/heath/I/27/", target="_top"];
+     "I.2" [fillcolor="#222244", URL="/heath/I/2/", target="_top"];
+     "I.cn.2" [fillcolor="#442222", URL="/heath/I/cn.2/", target="_top"];
+     "I.9" [fillcolor="#222244", URL="/heath/I/9/", target="_top"];
+     "I.43" [fillcolor="#222244", URL="/heath/I/43/", target="_top"];
+     "I.1" [fillcolor="#222244", URL="/heath/I/1/", target="_top"];
+     "I.post.5" [fillcolor="#444422", URL="/heath/I/post.5/", target="_top"];
+     "I.post.4" [fillcolor="#444422", URL="/heath/I/post.4/", target="_top"];
+     "I.23" [fillcolor="#222244", URL="/heath/I/23/", target="_top"];
+     "I.26" [fillcolor="#222244", URL="/heath/I/26/", target="_top"];
+     "I.8" [fillcolor="#222244", URL="/heath/I/8/", target="_top"];
+     "I.4" [fillcolor="#222244", URL="/heath/I/4/", target="_top"];
+     "I.7" [fillcolor="#222244", URL="/heath/I/7/", target="_top"];
+     "I.5" [fillcolor="#222244", URL="/heath/I/5/", target="_top"];
+     "I.10" [fillcolor="#222244", URL="/heath/I/10/", target="_top"];
+     "I.46" [fillcolor="#222244", URL="/heath/I/46/", target="_top"];
+     "I.post.1" [fillcolor="#444422", URL="/heath/I/post.1/", target="_top"];
+     "I.11" [fillcolor="#222244", URL="/heath/I/11/", target="_top"];
+     "I.16" [fillcolor="#222244", URL="/heath/I/16/", target="_top"];
+     "I.cn.3" [fillcolor="#442222", URL="/heath/I/cn.3/", target="_top"];
+     "I.36" [fillcolor="#222244", URL="/heath/I/36/", target="_top"];
+     "I.29" [fillcolor="#222244", URL="/heath/I/29/", target="_top"];
+     "I.post.2" [fillcolor="#444422", URL="/heath/I/post.2/", target="_top"];
+     "I.cn.4" [fillcolor="#442222", URL="/heath/I/cn.4/", target="_top"];
+     "I.def.23" [fillcolor="#224422", URL="/heath/I/def.23/", target="_top"];
+     "I.35" [fillcolor="#222244", URL="/heath/I/35/", target="_top"];
+     "I.post.3" [fillcolor="#444422", URL="/heath/I/post.3/", target="_top"];
+     "I.33" [fillcolor="#222244", URL="/heath/I/33/", target="_top"];
+     "I.34" [fillcolor="#222244", URL="/heath/I/34/", target="_top"];
+     "II.5" [penwidth=3, color="white", fillcolor="#555555", URL="/heath/II/5/", target="_top"];
+     "I.def.15" [fillcolor="#224422", URL="/heath/I/def.15/", target="_top"];
      "I.46" -> "I.31";
      "II.5" -> "I.31";
-     "I.11" -> "I.def.10";
-     "I.13" -> "I.def.10";
-     "I.31" -> "I.27";
-     "I.33" -> "I.27";
-     "I.35" -> "I.34";
-     "I.36" -> "I.34";
-     "I.43" -> "I.34";
-     "I.46" -> "I.34";
      "I.5" -> "I.3";
      "I.9" -> "I.3";
      "I.11" -> "I.3";
      "I.16" -> "I.3";
-     "I.36" -> "I.35";
      "I.1" -> "I.cn.1";
      "I.2" -> "I.cn.1";
      "I.3" -> "I.cn.1";
@@ -154,12 +134,31 @@ Dependency Graph
      "I.29" -> "I.cn.1";
      "I.35" -> "I.cn.1";
      "I.36" -> "I.cn.1";
-     "I.8" -> "I.7";
-     "I.3" -> "I.2";
-     "II.5" -> "I.36";
+     "I.11" -> "I.def.10";
+     "I.13" -> "I.def.10";
+     "I.16" -> "I.15";
+     "I.29" -> "I.15";
      "I.15" -> "I.13";
      "I.29" -> "I.13";
+     "I.31" -> "I.27";
+     "I.33" -> "I.27";
+     "I.3" -> "I.2";
+     "I.29" -> "I.cn.2";
+     "I.34" -> "I.cn.2";
+     "I.35" -> "I.cn.2";
+     "I.43" -> "I.cn.2";
+     "I.10" -> "I.9";
+     "II.5" -> "I.43";
+     "I.2" -> "I.1";
+     "I.10" -> "I.1";
+     "I.11" -> "I.1";
+     "I.29" -> "I.post.5";
      "I.15" -> "I.post.4";
+     "I.31" -> "I.23";
+     "I.34" -> "I.26";
+     "I.9" -> "I.8";
+     "I.11" -> "I.8";
+     "I.23" -> "I.8";
      "I.5" -> "I.4";
      "I.10" -> "I.4";
      "I.16" -> "I.4";
@@ -167,40 +166,43 @@ Dependency Graph
      "I.33" -> "I.4";
      "I.34" -> "I.4";
      "I.35" -> "I.4";
-     "I.2" -> "I.1";
-     "I.10" -> "I.1";
-     "I.11" -> "I.1";
+     "I.8" -> "I.7";
      "I.7" -> "I.5";
-     "I.9" -> "I.8";
-     "I.11" -> "I.8";
-     "I.23" -> "I.8";
-     "I.33" -> "I.29";
-     "I.34" -> "I.29";
-     "I.35" -> "I.29";
-     "I.46" -> "I.29";
+     "I.16" -> "I.10";
+     "II.5" -> "I.46";
+     "I.1" -> "I.post.1";
+     "I.2" -> "I.post.1";
+     "I.5" -> "I.post.1";
+     "I.16" -> "I.post.1";
+     "I.13" -> "I.11";
+     "I.46" -> "I.11";
+     "I.26" -> "I.16";
+     "I.27" -> "I.16";
      "I.2" -> "I.cn.3";
      "I.15" -> "I.cn.3";
      "I.35" -> "I.cn.3";
      "I.43" -> "I.cn.3";
-     "I.26" -> "I.16";
-     "I.27" -> "I.16";
-     "I.16" -> "I.15";
-     "I.29" -> "I.15";
-     "I.16" -> "I.10";
-     "I.13" -> "I.11";
-     "I.46" -> "I.11";
-     "I.27" -> "I.def.23";
-     "I.29" -> "I.cn.2";
-     "I.34" -> "I.cn.2";
-     "I.35" -> "I.cn.2";
-     "I.43" -> "I.cn.2";
-     "I.29" -> "I.post.5";
-     "I.4" -> "I.cn.4";
+     "II.5" -> "I.36";
+     "I.33" -> "I.29";
+     "I.34" -> "I.29";
+     "I.35" -> "I.29";
+     "I.46" -> "I.29";
      "I.2" -> "I.post.2";
      "I.5" -> "I.post.2";
      "I.16" -> "I.post.2";
-     "II.5" -> "I.46";
-     "I.34" -> "I.26";
+     "I.4" -> "I.cn.4";
+     "I.27" -> "I.def.23";
+     "I.36" -> "I.35";
+     "I.1" -> "I.post.3";
+     "I.2" -> "I.post.3";
+     "I.3" -> "I.post.3";
+     "I.36" -> "I.33";
+     "I.35" -> "I.34";
+     "I.36" -> "I.34";
+     "I.43" -> "I.34";
+     "I.46" -> "I.34";
+     "I.1" -> "I.def.15";
+     "I.3" -> "I.def.15";
    }
 
 

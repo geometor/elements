@@ -7,8 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>X.4 &mdash; Project name not set  documentation</title>
   <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../../_static/css/styles.css?v=a3216404" />
+  <link rel="stylesheet" type="text/css" href="../../../_static/css/styles.css?v=b9bf8c56" />
   <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="../../../_static/css/print.css" type="text/css" media="print" />
 </head>
 <body>
   <header>
@@ -81,16 +82,16 @@
 <p>And it is manifest that it is also the greatest; for a greater magnitude than the magnitude D does not measure A, B.</p>
 <p>Next, let D not measure C.</p>
 <p>I say first that C, D are commensurable.</p>
-<p>For, since A, B, C are commensurable, some magnitude will measure them, and this will of course measure A, B also; so that it will also measure the greatest common measure of A, B, namely D. [<span class="xref std std-ref">X.3.p.1</span>]</p>
+<p>For, since A, B, C are commensurable, some magnitude will measure them, and this will of course measure A, B also; so that it will also measure the greatest common measure of A, B, namely D. [<a class="reference internal" href="../3/index.html#x-3-p-1"><span class="std std-ref">X.3.p.1</span></a>]</p>
 <p>But it also measures C; so that the said magnitude will measure C, D; therefore C, D are commensurable.</p>
 <p>Now let their greatest common measure be taken, and let it be E. [<a class="reference internal" href="../3/index.html#x-3"><span class="std std-ref">X.3</span></a>]</p>
 <p>Since then E measures D, while D measures A, B, therefore E will also measure A, B.</p>
 <p>But it measures C also; therefore E measures A, B, C; therefore E is a common measure of A, B, C.</p>
 <p>I say next that it is also the greatest.</p>
 <p>For, if possible, let there be some magnitude F greater than E, and let it measure A, B, C.</p>
-<p>Now, since F measures A, B, C, it will also measure A, B, and will measure the greatest common measure of A, B. [<span class="xref std std-ref">X.3.p.1</span>]</p>
+<p>Now, since F measures A, B, C, it will also measure A, B, and will measure the greatest common measure of A, B. [<a class="reference internal" href="../3/index.html#x-3-p-1"><span class="std std-ref">X.3.p.1</span></a>]</p>
 <p>But the greatest common measure of A, B is D; therefore F measures D.</p>
-<p>But it measures C also; therefore F measures C, D; therefore F will also measure the greatest common measure of C, D. [<span class="xref std std-ref">X.3.p.1</span>]</p>
+<p>But it measures C also; therefore F measures C, D; therefore F will also measure the greatest common measure of C, D. [<a class="reference internal" href="../3/index.html#x-3-p-1"><span class="std std-ref">X.3.p.1</span></a>]</p>
 <p>But that is E; therefore F will measure E, the greater the less: which is impossible.</p>
 <p>Therefore no magnitude greater than the magnitude E will measure A, B, C; therefore E is the greatest common measure of A, B, C if D do not measure C, and, if it measure it, D is itself the greatest common measure.</p>
 <p>Therefore the greatest common measure of the three given commensurable magnitudes has been found.</p>
@@ -102,18 +103,20 @@ Similarly too, with more magnitudes, the greatest common measure can be found, a
 <p>Similarly too, with more magnitudes, the greatest common measure can be found, and the porism can be extended. Q. E. D.</p>
 <section id="dependency-graph">
 <h2>Dependency Graph<a class="headerlink" href="#dependency-graph" title="Link to this heading">¶</a></h2>
-<div class="graphviz"><object data="../../../_images/graphviz-e9abb4905348b1e8fae50e9f13f939b3352cef24.svg" type="image/svg+xml" class="graphviz">
+<div class="graphviz"><object data="../../../_images/graphviz-c0e445a838e3dcb7f51ce13236f0eb108e11e0a2.svg" type="image/svg+xml" class="graphviz">
 <p class="warning">digraph {
+  bgcolor=&quot;black&quot;;
+  node [shape=box, style=&quot;rounded,filled&quot;, fontname=&quot;Helvetica&quot;, color=&quot;white&quot;, fontcolor=&quot;white&quot;];
+  edge [color=&quot;white&quot;, fontcolor=&quot;white&quot;];
   rankdir=&quot;TB&quot;;
-  node [shape=box, style=rounded];
-  &quot;X.def.1&quot; [style=&quot;rounded,filled&quot;, fillcolor=orange, URL=&quot;/heath/X/def.1/&quot;, target=&quot;_top&quot;];
-  &quot;X.4&quot; [style=&quot;rounded,filled&quot;, fillcolor=lightblue, URL=&quot;/heath/X/4/&quot;, target=&quot;_top&quot;];
-  &quot;X.3.p.1&quot; [style=&quot;rounded,filled&quot;, fillcolor=orange];
-  &quot;X.2&quot; [URL=&quot;/heath/X/2/&quot;, target=&quot;_top&quot;];
-  &quot;X.3&quot; [URL=&quot;/heath/X/3/&quot;, target=&quot;_top&quot;];
+  &quot;X.2&quot; [fillcolor=&quot;#222244&quot;, URL=&quot;/heath/X/2/&quot;, target=&quot;_top&quot;];
+  &quot;X.def.1&quot; [fillcolor=&quot;#224422&quot;, URL=&quot;/heath/X/def.1/&quot;, target=&quot;_top&quot;];
+  &quot;X.4&quot; [penwidth=3, color=&quot;white&quot;, fillcolor=&quot;#555555&quot;, URL=&quot;/heath/X/4/&quot;, target=&quot;_top&quot;];
+  &quot;X.3.p.1&quot; [fillcolor=&quot;#333333&quot;];
+  &quot;X.3&quot; [fillcolor=&quot;#222244&quot;, URL=&quot;/heath/X/3/&quot;, target=&quot;_top&quot;];
+  &quot;X.3&quot; -&gt; &quot;X.2&quot;;
   &quot;X.2&quot; -&gt; &quot;X.def.1&quot;;
   &quot;X.4&quot; -&gt; &quot;X.3.p.1&quot;;
-  &quot;X.3&quot; -&gt; &quot;X.2&quot;;
   &quot;X.4&quot; -&gt; &quot;X.3&quot;;
 }</p></object></div>
 </section>
@@ -193,8 +196,6 @@ Similarly too, with more magnitudes, the greatest common measure can be found, a
         
         <li><a href="../../../types/post.html">post</a></li>
         
-        <li><a href="../../../types/postulate.html">postulate</a></li>
-        
         <li><a href="../../../types/prop.html">prop</a></li>
         
     </ul>
@@ -222,6 +223,7 @@ Similarly too, with more magnitudes, the greatest common measure can be found, a
   <script src="../../../_static/documentation_options.js?v=5929fcd5"></script>
   <script src="../../../_static/doctools.js?v=9bcbadda"></script>
   <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+  <script src="../../../_static/js/collection_controls.js?v=b6b5297a"></script>
 
 
 </body>

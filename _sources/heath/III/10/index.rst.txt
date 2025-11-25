@@ -27,7 +27,7 @@ Then, since in the circle ``ABC`` a straight line ``AC`` cuts a straight line ``
 
 .. container:: center
 
-   the centre of the circle ``ABC`` is on ``AC``. [:ref:`III.1.p.1`]
+   the centre of the circle ``ABC`` is on ``AC``. [:ref:`III.1.p.1 <III.1.p.1>`]
 
 
 Again, since in the same circle ``ABC`` a straight line ``NO`` cuts a straight line ``BG`` into two equal parts and at right angles,
@@ -51,11 +51,11 @@ Similarly we can prove that ``P`` is also the centre of the circle ``DEF``;
 
 .. container:: center
 
-   therefore the two circles ``ABC``, ``DEF`` which cut one another have the same centre ``P``: which is impossible. [:ref:`III.5`]
+   therefore the two circles ``ABC``, ``DEF`` which cut one another have the same centre ``P``: which is impossible. [:ref:`III.5 <III.5>`]
 
 
 Therefore etc. Q. E. D.
-The word circle (κύκλος) is here employed in the unusual sense of the ``circumference`` (περιφέρεια) of a circle. Cf. note on :ref:`I.def.15`.
+The word circle (κύκλος) is here employed in the unusual sense of the ``circumference`` (περιφέρεια) of a circle. Cf. note on :ref:`I.def.15 <I.def.15>`.
 
 
 Dependency Graph
@@ -64,16 +64,18 @@ Dependency Graph
 .. graphviz::
 
    digraph {
+     bgcolor="black";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
+     edge [color="white", fontcolor="white"];
      rankdir="TB";
-     node [shape=box, style=rounded];
-     "III.10" [style="rounded,filled", fillcolor=lightblue, URL="/heath/III/10/", target="_top"];
-     "III.1.p.1" [style="rounded,filled", fillcolor=orange];
-     "I.def.15" [style="rounded,filled", fillcolor=orange, URL="/heath/I/def.15/", target="_top"];
-     "III.5" [URL="/heath/III/5/", target="_top"];
-     "III.10" -> "III.1.p.1";
+     "III.5" [fillcolor="#222244", URL="/heath/III/5/", target="_top"];
+     "I.def.15" [fillcolor="#224422", URL="/heath/I/def.15/", target="_top"];
+     "III.10" [penwidth=3, color="white", fillcolor="#555555", URL="/heath/III/10/", target="_top"];
+     "III.1.p.1" [fillcolor="#333333"];
+     "III.10" -> "III.5";
      "III.5" -> "I.def.15";
      "III.10" -> "I.def.15";
-     "III.10" -> "III.5";
+     "III.10" -> "III.1.p.1";
    }
 
 

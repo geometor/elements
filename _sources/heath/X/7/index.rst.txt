@@ -17,7 +17,7 @@ X.7
 
 Let A, B be incommensurable magnitudes; I say that A has not to B the ratio which a number has to a number.
 
-For, if A has to B the ratio which a number has to a number, A will be commensurable with B. [:ref:`X.6`]
+For, if A has to B the ratio which a number has to a number, A will be commensurable with B. [:ref:`X.6 <X.6>`]
 
 But it is not; therefore A has not to B the ratio which a number has to a number.
 
@@ -30,53 +30,55 @@ Dependency Graph
 .. graphviz::
 
    digraph {
+     bgcolor="black";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
+     edge [color="white", fontcolor="white"];
      rankdir="TB";
-     node [shape=box, style=rounded];
-     "V.2" [style="rounded,filled", fillcolor=orange, URL="/heath/V/2/", target="_top"];
-     "V.def.7" [style="rounded,filled", fillcolor=orange, URL="/heath/V/def.7/", target="_top"];
-     "V.13" [URL="/heath/V/13/", target="_top"];
-     "V.3" [URL="/heath/V/3/", target="_top"];
-     "V.7" [URL="/heath/V/7/", target="_top"];
-     "V.7.p.1" [style="rounded,filled", fillcolor=orange];
-     "VI.19.p.1" [style="rounded,filled", fillcolor=orange];
-     "V.def.5" [style="rounded,filled", fillcolor=orange, URL="/heath/V/def.5/", target="_top"];
-     "X.6" [URL="/heath/X/6/", target="_top"];
-     "V.9" [URL="/heath/V/9/", target="_top"];
-     "V.8" [URL="/heath/V/8/", target="_top"];
-     "V.10" [URL="/heath/V/10/", target="_top"];
-     "X.7" [style="rounded,filled", fillcolor=lightblue, URL="/heath/X/7/", target="_top"];
-     "V.4" [URL="/heath/V/4/", target="_top"];
-     "V.22" [URL="/heath/V/22/", target="_top"];
-     "V.1" [style="rounded,filled", fillcolor=orange, URL="/heath/V/1/", target="_top"];
-     "V.20" [URL="/heath/V/20/", target="_top"];
-     "V.11" [style="rounded,filled", fillcolor=orange, URL="/heath/V/11/", target="_top"];
-     "VII.def.20" [style="rounded,filled", fillcolor=orange, URL="/heath/VII/def.20/", target="_top"];
-     "V.def.4" [style="rounded,filled", fillcolor=orange, URL="/heath/V/def.4/", target="_top"];
-     "V.3" -> "V.2";
-     "V.8" -> "V.def.7";
-     "V.13" -> "V.def.7";
-     "V.20" -> "V.13";
-     "V.4" -> "V.3";
-     "V.10" -> "V.7";
-     "X.6" -> "V.7.p.1";
-     "X.6" -> "VI.19.p.1";
+     "V.def.5" [fillcolor="#224422", URL="/heath/V/def.5/", target="_top"];
+     "V.22" [fillcolor="#222244", URL="/heath/V/22/", target="_top"];
+     "X.6" [fillcolor="#222244", URL="/heath/X/6/", target="_top"];
+     "V.11" [fillcolor="#222244", URL="/heath/V/11/", target="_top"];
+     "V.def.7" [fillcolor="#224422", URL="/heath/V/def.7/", target="_top"];
+     "V.def.4" [fillcolor="#224422", URL="/heath/V/def.4/", target="_top"];
+     "V.20" [fillcolor="#222244", URL="/heath/V/20/", target="_top"];
+     "VII.def.20" [fillcolor="#224422", URL="/heath/VII/def.20/", target="_top"];
+     "X.7" [penwidth=3, color="white", fillcolor="#555555", URL="/heath/X/7/", target="_top"];
+     "V.2" [fillcolor="#222244", URL="/heath/V/2/", target="_top"];
+     "V.1" [fillcolor="#222244", URL="/heath/V/1/", target="_top"];
+     "VI.19.p.1" [fillcolor="#333333"];
+     "V.4" [fillcolor="#222244", URL="/heath/V/4/", target="_top"];
+     "V.13" [fillcolor="#222244", URL="/heath/V/13/", target="_top"];
+     "V.8" [fillcolor="#222244", URL="/heath/V/8/", target="_top"];
+     "V.7.p.1" [fillcolor="#333333"];
+     "V.7" [fillcolor="#222244", URL="/heath/V/7/", target="_top"];
+     "V.3" [fillcolor="#222244", URL="/heath/V/3/", target="_top"];
+     "V.9" [fillcolor="#222244", URL="/heath/V/9/", target="_top"];
+     "V.10" [fillcolor="#222244", URL="/heath/V/10/", target="_top"];
      "V.4" -> "V.def.5";
      "V.7" -> "V.def.5";
      "V.13" -> "V.def.5";
      "V.22" -> "V.def.5";
+     "X.6" -> "V.22";
      "X.7" -> "X.6";
-     "X.6" -> "V.9";
+     "X.6" -> "V.11";
+     "V.8" -> "V.def.7";
+     "V.13" -> "V.def.7";
+     "V.8" -> "V.def.4";
+     "V.22" -> "V.20";
+     "X.6" -> "VII.def.20";
+     "V.3" -> "V.2";
+     "V.8" -> "V.1";
+     "X.6" -> "VI.19.p.1";
+     "V.22" -> "V.4";
+     "V.20" -> "V.13";
      "V.9" -> "V.8";
      "V.10" -> "V.8";
      "V.20" -> "V.8";
+     "X.6" -> "V.7.p.1";
+     "V.10" -> "V.7";
+     "V.4" -> "V.3";
+     "X.6" -> "V.9";
      "V.20" -> "V.10";
-     "V.22" -> "V.4";
-     "X.6" -> "V.22";
-     "V.8" -> "V.1";
-     "V.22" -> "V.20";
-     "X.6" -> "V.11";
-     "X.6" -> "VII.def.20";
-     "V.8" -> "V.def.4";
    }
 
 

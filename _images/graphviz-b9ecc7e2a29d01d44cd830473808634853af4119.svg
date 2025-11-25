@@ -1,0 +1,60 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" width="174pt" height="188pt" viewBox="0.00 0.00 173.50 188.00">
+<ns0:g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
+<ns0:title>%3</ns0:title>
+<ns0:polygon fill="black" stroke="transparent" points="-4,4 -4,-184 169.5,-184 169.5,4 -4,4" />
+
+<ns0:g id="node1" class="node">
+<ns0:title>IX.21</ns0:title>
+<ns0:g id="a_node1"><ns0:a ns1:href="../../../../../../../heath/IX/21" ns1:title="IX.21" target="_top">
+<ns0:path fill="#222244" stroke="white" d="M52,-108C52,-108 22,-108 22,-108 16,-108 10,-102 10,-96 10,-96 10,-84 10,-84 10,-78 16,-72 22,-72 22,-72 52,-72 52,-72 58,-72 64,-78 64,-84 64,-84 64,-96 64,-96 64,-102 58,-108 52,-108" />
+<ns0:text text-anchor="middle" x="37" y="-86.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="white">IX.21</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node4" class="node">
+<ns0:title>VII.def.6</ns0:title>
+<ns0:g id="a_node4"><ns0:a ns1:href="../../../../../../../heath/VII/def.6" ns1:title="VII.def.6" target="_top">
+<ns0:path fill="#224422" stroke="white" d="M62,-36C62,-36 12,-36 12,-36 6,-36 0,-30 0,-24 0,-24 0,-12 0,-12 0,-6 6,0 12,0 12,0 62,0 62,0 68,0 74,-6 74,-12 74,-12 74,-24 74,-24 74,-30 68,-36 62,-36" />
+<ns0:text text-anchor="middle" x="37" y="-14.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="white">VII.def.6</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge3" class="edge">
+<ns0:title>IX.21-&gt;VII.def.6</ns0:title>
+<ns0:path fill="none" stroke="white" d="M37,-71.7C37,-63.98 37,-54.71 37,-46.11" />
+<ns0:polygon fill="white" stroke="white" points="40.5,-46.1 37,-36.1 33.5,-46.1 40.5,-46.1" />
+</ns0:g>
+
+<ns0:g id="node2" class="node">
+<ns0:title>IX.28</ns0:title>
+<ns0:g id="a_node2"><ns0:a ns1:href="../../../../../../../heath/IX/28" ns1:title="IX.28" target="_top">
+<ns0:path fill="#555555" stroke="white" stroke-width="3" d="M95,-180C95,-180 65,-180 65,-180 59,-180 53,-174 53,-168 53,-168 53,-156 53,-156 53,-150 59,-144 65,-144 65,-144 95,-144 95,-144 101,-144 107,-150 107,-156 107,-156 107,-168 107,-168 107,-174 101,-180 95,-180" />
+<ns0:text text-anchor="middle" x="80" y="-158.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="white">IX.28</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge1" class="edge">
+<ns0:title>IX.28-&gt;IX.21</ns0:title>
+<ns0:path fill="none" stroke="white" d="M69.37,-143.7C64.37,-135.56 58.31,-125.69 52.79,-116.7" />
+<ns0:polygon fill="white" stroke="white" points="55.72,-114.79 47.51,-108.1 49.76,-118.46 55.72,-114.79" />
+</ns0:g>
+
+<ns0:g id="node3" class="node">
+<ns0:title>VII.def.15</ns0:title>
+<ns0:g id="a_node3"><ns0:a ns1:href="../../../../../../../heath/VII/def.15" ns1:title="VII.def.15" target="_top">
+<ns0:path fill="#224422" stroke="white" d="M153.5,-108C153.5,-108 94.5,-108 94.5,-108 88.5,-108 82.5,-102 82.5,-96 82.5,-96 82.5,-84 82.5,-84 82.5,-78 88.5,-72 94.5,-72 94.5,-72 153.5,-72 153.5,-72 159.5,-72 165.5,-78 165.5,-84 165.5,-84 165.5,-96 165.5,-96 165.5,-102 159.5,-108 153.5,-108" />
+<ns0:text text-anchor="middle" x="124" y="-86.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="white">VII.def.15</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge2" class="edge">
+<ns0:title>IX.28-&gt;VII.def.15</ns0:title>
+<ns0:path fill="none" stroke="white" d="M90.88,-143.7C95.99,-135.56 102.2,-125.69 107.84,-116.7" />
+<ns0:polygon fill="white" stroke="white" points="110.89,-118.43 113.25,-108.1 104.96,-114.71 110.89,-118.43" />
+</ns0:g>
+</ns0:g>
+</ns0:svg>

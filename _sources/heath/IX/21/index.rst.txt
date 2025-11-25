@@ -17,7 +17,7 @@ IX.21
 
 For let as many even numbers as we please, AB, BC, CD, DE, be added together; I say that the whole AE is even.
 
-For, since each of the numbers AB, BC, CD, DE is even, it has a half part; [:ref:`VII.def.6`] so that the whole AE also has a half part.
+For, since each of the numbers AB, BC, CD, DE is even, it has a half part; [:ref:`VII.def.6 <VII.def.6>`] so that the whole AE also has a half part.
 
 But an even number is that which is divisible into two equal parts; [id.] therefore AE is even. Q. E. D.
 
@@ -28,10 +28,12 @@ Dependency Graph
 .. graphviz::
 
    digraph {
+     bgcolor="black";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
+     edge [color="white", fontcolor="white"];
      rankdir="TB";
-     node [shape=box, style=rounded];
-     "VII.def.6" [style="rounded,filled", fillcolor=orange, URL="/heath/VII/def.6/", target="_top"];
-     "IX.21" [style="rounded,filled", fillcolor=lightblue, URL="/heath/IX/21/", target="_top"];
+     "IX.21" [penwidth=3, color="white", fillcolor="#555555", URL="/heath/IX/21/", target="_top"];
+     "VII.def.6" [fillcolor="#224422", URL="/heath/VII/def.6/", target="_top"];
      "IX.21" -> "VII.def.6";
    }
 

@@ -1,0 +1,72 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" width="153pt" height="260pt" viewBox="0.00 0.00 153.00 260.00">
+<ns0:g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 256)">
+<ns0:title>%3</ns0:title>
+<ns0:polygon fill="black" stroke="transparent" points="-4,4 -4,-256 149,-256 149,4 -4,4" />
+
+<ns0:g id="node1" class="node">
+<ns0:title>X.2</ns0:title>
+<ns0:g id="a_node1"><ns0:a ns1:href="../../../../../../../heath/X/2" ns1:title="X.2" target="_top">
+<ns0:path fill="#222244" stroke="white" d="M127.5,-108C127.5,-108 97.5,-108 97.5,-108 91.5,-108 85.5,-102 85.5,-96 85.5,-96 85.5,-84 85.5,-84 85.5,-78 91.5,-72 97.5,-72 97.5,-72 127.5,-72 127.5,-72 133.5,-72 139.5,-78 139.5,-84 139.5,-84 139.5,-96 139.5,-96 139.5,-102 133.5,-108 127.5,-108" />
+<ns0:text text-anchor="middle" x="112.5" y="-86.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="white">X.2</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node2" class="node">
+<ns0:title>X.def.1</ns0:title>
+<ns0:g id="a_node2"><ns0:a ns1:href="../../../../../../../heath/X/def.1" ns1:title="X.def.1" target="_top">
+<ns0:path fill="#224422" stroke="white" d="M133,-36C133,-36 92,-36 92,-36 86,-36 80,-30 80,-24 80,-24 80,-12 80,-12 80,-6 86,0 92,0 92,0 133,0 133,0 139,0 145,-6 145,-12 145,-12 145,-24 145,-24 145,-30 139,-36 133,-36" />
+<ns0:text text-anchor="middle" x="112.5" y="-14.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="white">X.def.1</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge2" class="edge">
+<ns0:title>X.2-&gt;X.def.1</ns0:title>
+<ns0:path fill="none" stroke="white" d="M112.5,-71.7C112.5,-63.98 112.5,-54.71 112.5,-46.11" />
+<ns0:polygon fill="white" stroke="white" points="116,-46.1 112.5,-36.1 109,-46.1 116,-46.1" />
+</ns0:g>
+
+<ns0:g id="node3" class="node">
+<ns0:title>X.4</ns0:title>
+<ns0:g id="a_node3"><ns0:a ns1:href="../../../../../../../heath/X/4" ns1:title="X.4" target="_top">
+<ns0:path fill="#555555" stroke="white" stroke-width="3" d="M87.5,-252C87.5,-252 57.5,-252 57.5,-252 51.5,-252 45.5,-246 45.5,-240 45.5,-240 45.5,-228 45.5,-228 45.5,-222 51.5,-216 57.5,-216 57.5,-216 87.5,-216 87.5,-216 93.5,-216 99.5,-222 99.5,-228 99.5,-228 99.5,-240 99.5,-240 99.5,-246 93.5,-252 87.5,-252" />
+<ns0:text text-anchor="middle" x="72.5" y="-230.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="white">X.4</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node4" class="node">
+<ns0:title>X.3.p.1</ns0:title>
+<ns0:path fill="#333333" stroke="white" d="M55,-180C55,-180 12,-180 12,-180 6,-180 0,-174 0,-168 0,-168 0,-156 0,-156 0,-150 6,-144 12,-144 12,-144 55,-144 55,-144 61,-144 67,-150 67,-156 67,-156 67,-168 67,-168 67,-174 61,-180 55,-180" />
+<ns0:text text-anchor="middle" x="33.5" y="-158.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="white">X.3.p.1</ns0:text>
+</ns0:g>
+
+<ns0:g id="edge3" class="edge">
+<ns0:title>X.4-&gt;X.3.p.1</ns0:title>
+<ns0:path fill="none" stroke="white" d="M62.86,-215.7C58.37,-207.64 52.94,-197.89 47.98,-188.98" />
+<ns0:polygon fill="white" stroke="white" points="50.95,-187.14 43.03,-180.1 44.84,-190.54 50.95,-187.14" />
+</ns0:g>
+
+<ns0:g id="node5" class="node">
+<ns0:title>X.3</ns0:title>
+<ns0:g id="a_node5"><ns0:a ns1:href="../../../../../../../heath/X/3" ns1:title="X.3" target="_top">
+<ns0:path fill="#222244" stroke="white" d="M127.5,-180C127.5,-180 97.5,-180 97.5,-180 91.5,-180 85.5,-174 85.5,-168 85.5,-168 85.5,-156 85.5,-156 85.5,-150 91.5,-144 97.5,-144 97.5,-144 127.5,-144 127.5,-144 133.5,-144 139.5,-150 139.5,-156 139.5,-156 139.5,-168 139.5,-168 139.5,-174 133.5,-180 127.5,-180" />
+<ns0:text text-anchor="middle" x="112.5" y="-158.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="white">X.3</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge4" class="edge">
+<ns0:title>X.4-&gt;X.3</ns0:title>
+<ns0:path fill="none" stroke="white" d="M82.39,-215.7C86.99,-207.64 92.56,-197.89 97.65,-188.98" />
+<ns0:polygon fill="white" stroke="white" points="100.8,-190.52 102.73,-180.1 94.73,-187.05 100.8,-190.52" />
+</ns0:g>
+
+<ns0:g id="edge1" class="edge">
+<ns0:title>X.3-&gt;X.2</ns0:title>
+<ns0:path fill="none" stroke="white" d="M112.5,-143.7C112.5,-135.98 112.5,-126.71 112.5,-118.11" />
+<ns0:polygon fill="white" stroke="white" points="116,-118.1 112.5,-108.1 109,-118.1 116,-118.1" />
+</ns0:g>
+</ns0:g>
+</ns0:svg>

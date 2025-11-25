@@ -7,8 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>elements.transform &mdash; Project name not set  documentation</title>
   <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=a3216404" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=b9bf8c56" />
   <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="../../_static/css/print.css" type="text/css" media="print" />
 </head>
 <body>
   <header>
@@ -129,55 +130,61 @@
 
     <span class="c1"># Handle non-recursive tags first</span>
     <span class="k">if</span> <span class="n">element</span><span class="o">.</span><span class="n">tag</span> <span class="o">==</span> <span class="s1">&#39;ref&#39;</span><span class="p">:</span>
-        <span class="n">target</span> <span class="o">=</span> <span class="n">element</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;target&#39;</span><span class="p">)</span>
-        <span class="k">if</span> <span class="n">target</span><span class="p">:</span>
-            <span class="n">target_parts</span> <span class="o">=</span> <span class="n">target</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span>
-            <span class="n">canonical_ref</span> <span class="o">=</span> <span class="kc">None</span> <span class="c1"># Initialize as None</span>
-            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">target_parts</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">3</span> <span class="ow">and</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;elem&#39;</span><span class="p">:</span>
-                <span class="n">book_num_str</span> <span class="o">=</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-                <span class="n">book_num_roman</span> <span class="o">=</span> <span class="n">ROMAN_NUMERALS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">book_num_str</span><span class="p">)</span>
-                
-                <span class="k">if</span> <span class="n">book_num_roman</span><span class="p">:</span>
-                    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">target_parts</span><span class="p">)</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span>
-                        <span class="c1"># Handle nested definitions like elem.10.def.3.1</span>
-                        <span class="k">if</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;def&#39;</span><span class="p">:</span>
-                            <span class="n">group_num</span> <span class="o">=</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
-                            <span class="n">item_num</span> <span class="o">=</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
-                            <span class="n">canonical_ref</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">book_num_roman</span><span class="si">}</span><span class="s2">.def.</span><span class="si">{</span><span class="n">group_num</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">item_num</span><span class="si">}</span><span class="s2">&quot;</span>
-                        <span class="k">elif</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;c&#39;</span> <span class="ow">and</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;n&#39;</span><span class="p">:</span>
-                            <span class="n">section_type_canonical</span> <span class="o">=</span> <span class="s1">&#39;cn&#39;</span>
-                            <span class="n">item_num</span> <span class="o">=</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
-                            <span class="n">canonical_ref</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">book_num_roman</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">section_type_canonical</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">item_num</span><span class="si">}</span><span class="s2">&quot;</span>
-                        <span class="k">elif</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;p&#39;</span><span class="p">:</span>
-                            <span class="n">prop_num</span> <span class="o">=</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
-                            <span class="n">porism_num</span> <span class="o">=</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
-                            <span class="n">canonical_ref</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">book_num_roman</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">prop_num</span><span class="si">}</span><span class="s2">.p.</span><span class="si">{</span><span class="n">porism_num</span><span class="si">}</span><span class="s2">&quot;</span>
-                        <span class="k">elif</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;l&#39;</span><span class="p">:</span>
-                            <span class="n">prop_num</span> <span class="o">=</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
-                            <span class="n">lemma_num</span> <span class="o">=</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
-                            <span class="n">canonical_ref</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">book_num_roman</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">prop_num</span><span class="si">}</span><span class="s2">.l.</span><span class="si">{</span><span class="n">lemma_num</span><span class="si">}</span><span class="s2">&quot;</span>
-                    <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">target_parts</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span> <span class="ow">and</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;post&#39;</span><span class="p">:</span>
-                        <span class="n">section_type_canonical</span> <span class="o">=</span> <span class="s1">&#39;post&#39;</span>
-                        <span class="n">item_num</span> <span class="o">=</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
-                        <span class="n">canonical_ref</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">book_num_roman</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">section_type_canonical</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">item_num</span><span class="si">}</span><span class="s2">&quot;</span>
-                    <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">target_parts</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
-                        <span class="n">section_type_str</span> <span class="o">=</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
-                        <span class="n">item_num</span> <span class="o">=</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
-                        <span class="n">section_type_canonical</span> <span class="o">=</span> <span class="n">SECTION_TYPE_MAP</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">section_type_str</span><span class="o">.</span><span class="n">capitalize</span><span class="p">())</span>
-                        <span class="k">if</span> <span class="n">section_type_canonical</span><span class="p">:</span>
-                            <span class="n">canonical_ref</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">book_num_roman</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">section_type_canonical</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">item_num</span><span class="si">}</span><span class="s2">&quot;</span>
-                    <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">target_parts</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
-                        <span class="n">item_num</span> <span class="o">=</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
-                        <span class="k">if</span> <span class="n">book_num_roman</span><span class="p">:</span>
-                            <span class="n">canonical_ref</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">book_num_roman</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">item_num</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="n">target_attr</span> <span class="o">=</span> <span class="n">element</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;target&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">target_attr</span><span class="p">:</span>
+            <span class="n">targets</span> <span class="o">=</span> <span class="n">target_attr</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+            <span class="n">rst_links</span> <span class="o">=</span> <span class="p">[]</span>
             
-            <span class="k">if</span> <span class="n">canonical_ref</span><span class="p">:</span>
-                <span class="n">dependencies</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">canonical_ref</span><span class="p">)</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="n">dependencies</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">target</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">target</span> <span class="ow">in</span> <span class="n">targets</span><span class="p">:</span>
+                <span class="n">target_parts</span> <span class="o">=</span> <span class="n">target</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span>
+                <span class="n">canonical_ref</span> <span class="o">=</span> <span class="kc">None</span> <span class="c1"># Initialize as None</span>
+                <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">target_parts</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">3</span> <span class="ow">and</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;elem&#39;</span><span class="p">:</span>
+                    <span class="n">book_num_str</span> <span class="o">=</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+                    <span class="n">book_num_roman</span> <span class="o">=</span> <span class="n">ROMAN_NUMERALS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">book_num_str</span><span class="p">)</span>
+                    
+                    <span class="k">if</span> <span class="n">book_num_roman</span><span class="p">:</span>
+                        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">target_parts</span><span class="p">)</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span>
+                            <span class="c1"># Handle nested definitions like elem.10.def.3.1</span>
+                            <span class="k">if</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;def&#39;</span><span class="p">:</span>
+                                <span class="n">group_num</span> <span class="o">=</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+                                <span class="n">item_num</span> <span class="o">=</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+                                <span class="n">canonical_ref</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">book_num_roman</span><span class="si">}</span><span class="s2">.def.</span><span class="si">{</span><span class="n">group_num</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">item_num</span><span class="si">}</span><span class="s2">&quot;</span>
+                            <span class="k">elif</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;c&#39;</span> <span class="ow">and</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;n&#39;</span><span class="p">:</span>
+                                <span class="n">section_type_canonical</span> <span class="o">=</span> <span class="s1">&#39;cn&#39;</span>
+                                <span class="n">item_num</span> <span class="o">=</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+                                <span class="n">canonical_ref</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">book_num_roman</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">section_type_canonical</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">item_num</span><span class="si">}</span><span class="s2">&quot;</span>
+                            <span class="k">elif</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;p&#39;</span><span class="p">:</span>
+                                <span class="n">prop_num</span> <span class="o">=</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+                                <span class="n">porism_num</span> <span class="o">=</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+                                <span class="n">canonical_ref</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">book_num_roman</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">prop_num</span><span class="si">}</span><span class="s2">.p.</span><span class="si">{</span><span class="n">porism_num</span><span class="si">}</span><span class="s2">&quot;</span>
+                            <span class="k">elif</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;l&#39;</span><span class="p">:</span>
+                                <span class="n">prop_num</span> <span class="o">=</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+                                <span class="n">lemma_num</span> <span class="o">=</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+                                <span class="n">canonical_ref</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">book_num_roman</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">prop_num</span><span class="si">}</span><span class="s2">.l.</span><span class="si">{</span><span class="n">lemma_num</span><span class="si">}</span><span class="s2">&quot;</span>
+                        <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">target_parts</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span> <span class="ow">and</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;post&#39;</span><span class="p">:</span>
+                            <span class="n">section_type_canonical</span> <span class="o">=</span> <span class="s1">&#39;post&#39;</span>
+                            <span class="n">item_num</span> <span class="o">=</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+                            <span class="n">canonical_ref</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">book_num_roman</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">section_type_canonical</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">item_num</span><span class="si">}</span><span class="s2">&quot;</span>
+                        <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">target_parts</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
+                            <span class="n">section_type_str</span> <span class="o">=</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+                            <span class="n">item_num</span> <span class="o">=</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+                            <span class="n">section_type_canonical</span> <span class="o">=</span> <span class="n">SECTION_TYPE_MAP</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">section_type_str</span><span class="o">.</span><span class="n">capitalize</span><span class="p">())</span>
+                            <span class="k">if</span> <span class="n">section_type_canonical</span><span class="p">:</span>
+                                <span class="n">canonical_ref</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">book_num_roman</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">section_type_canonical</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">item_num</span><span class="si">}</span><span class="s2">&quot;</span>
+                        <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">target_parts</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+                            <span class="n">item_num</span> <span class="o">=</span> <span class="n">target_parts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+                            <span class="k">if</span> <span class="n">book_num_roman</span><span class="p">:</span>
+                                <span class="n">canonical_ref</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">book_num_roman</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">item_num</span><span class="si">}</span><span class="s2">&quot;</span>
+                
+                <span class="k">if</span> <span class="n">canonical_ref</span><span class="p">:</span>
+                    <span class="n">dependencies</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">canonical_ref</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">dependencies</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">target</span><span class="p">)</span>
 
-            <span class="n">ref_link</span> <span class="o">=</span> <span class="n">canonical_ref</span> <span class="k">if</span> <span class="n">canonical_ref</span> <span class="k">else</span> <span class="n">target</span>
-            <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;:ref:`</span><span class="si">{</span><span class="n">ref_link</span><span class="si">}</span><span class="s2">`&quot;</span>
+                <span class="n">ref_link</span> <span class="o">=</span> <span class="n">canonical_ref</span> <span class="k">if</span> <span class="n">canonical_ref</span> <span class="k">else</span> <span class="n">target</span>
+                <span class="n">rst_links</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;:ref:`</span><span class="si">{</span><span class="n">ref_link</span><span class="si">}</span><span class="s2"> &lt;</span><span class="si">{</span><span class="n">ref_link</span><span class="si">}</span><span class="s2">&gt;`&quot;</span><span class="p">)</span>
+            
+            <span class="k">return</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">rst_links</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="n">link_text</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">element</span><span class="o">.</span><span class="n">itertext</span><span class="p">())</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
             <span class="n">temp_split_parts</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;[\s.]+&#39;</span><span class="p">,</span> <span class="n">link_text</span><span class="p">)</span>
@@ -552,24 +559,38 @@
 
     <span class="n">dot_lines</span> <span class="o">=</span> <span class="p">[</span>
         <span class="s2">&quot;digraph {&quot;</span><span class="p">,</span>
+        <span class="s1">&#39;  bgcolor=&quot;black&quot;;&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;  node [shape=box, style=&quot;rounded,filled&quot;, fontname=&quot;Helvetica&quot;, color=&quot;white&quot;, fontcolor=&quot;white&quot;];&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;  edge [color=&quot;white&quot;, fontcolor=&quot;white&quot;];&#39;</span><span class="p">,</span>
         <span class="s1">&#39;  rankdir=&quot;TB&quot;;&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;  node [shape=box, style=rounded];&#39;</span>
     <span class="p">]</span>
 
     <span class="c1"># Define nodes with their styles and links</span>
     <span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">nodes_in_chain</span><span class="p">:</span>
         <span class="n">attrs</span> <span class="o">=</span> <span class="p">[]</span>
         
+        <span class="c1"># Determine node type for styling</span>
+        <span class="n">node_data_item</span> <span class="o">=</span> <span class="n">graph</span><span class="o">.</span><span class="n">nodes</span><span class="p">[</span><span class="n">node</span><span class="p">]</span>
+        <span class="n">node_type</span> <span class="o">=</span> <span class="n">node_data_item</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;type&#39;</span><span class="p">,</span> <span class="s1">&#39;unknown&#39;</span><span class="p">)</span>
+        
+        <span class="n">fillcolor</span> <span class="o">=</span> <span class="s2">&quot;#333333&quot;</span> <span class="c1"># Default dark gray</span>
+        
         <span class="c1"># Set color</span>
         <span class="k">if</span> <span class="n">node</span> <span class="o">==</span> <span class="n">element_ref</span><span class="p">:</span>
-            <span class="n">attrs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;style=&quot;rounded,filled&quot;&#39;</span><span class="p">)</span>
-            <span class="n">attrs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;fillcolor=lightblue&#39;</span><span class="p">)</span>
+            <span class="n">attrs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;penwidth=3&#39;</span><span class="p">)</span>
+            <span class="n">attrs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;color=&quot;white&quot;&#39;</span><span class="p">)</span>
+            <span class="n">fillcolor</span> <span class="o">=</span> <span class="s2">&quot;#555555&quot;</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="c1"># Check if it&#39;s an end node (a leaf in this subgraph)</span>
-            <span class="n">successors_in_chain</span> <span class="o">=</span> <span class="p">[</span><span class="n">succ</span> <span class="k">for</span> <span class="n">succ</span> <span class="ow">in</span> <span class="n">graph</span><span class="o">.</span><span class="n">successors</span><span class="p">(</span><span class="n">node</span><span class="p">)</span> <span class="k">if</span> <span class="n">succ</span> <span class="ow">in</span> <span class="n">nodes_in_chain</span><span class="p">]</span>
-            <span class="k">if</span> <span class="ow">not</span> <span class="n">successors_in_chain</span><span class="p">:</span>
-                <span class="n">attrs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;style=&quot;rounded,filled&quot;&#39;</span><span class="p">)</span>
-                <span class="n">attrs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;fillcolor=orange&#39;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">node_type</span> <span class="o">==</span> <span class="s1">&#39;def&#39;</span><span class="p">:</span>
+                <span class="n">fillcolor</span> <span class="o">=</span> <span class="s2">&quot;#224422&quot;</span> <span class="c1"># Dark Green</span>
+            <span class="k">elif</span> <span class="n">node_type</span> <span class="o">==</span> <span class="s1">&#39;prop&#39;</span><span class="p">:</span>
+                <span class="n">fillcolor</span> <span class="o">=</span> <span class="s2">&quot;#222244&quot;</span> <span class="c1"># Dark Blue</span>
+            <span class="k">elif</span> <span class="n">node_type</span> <span class="o">==</span> <span class="s1">&#39;cn&#39;</span><span class="p">:</span>
+                <span class="n">fillcolor</span> <span class="o">=</span> <span class="s2">&quot;#442222&quot;</span> <span class="c1"># Dark Red</span>
+            <span class="k">elif</span> <span class="n">node_type</span> <span class="o">==</span> <span class="s1">&#39;post&#39;</span><span class="p">:</span>
+                <span class="n">fillcolor</span> <span class="o">=</span> <span class="s2">&quot;#444422&quot;</span> <span class="c1"># Dark Olive</span>
+        
+        <span class="n">attrs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;fillcolor=&quot;</span><span class="si">{</span><span class="n">fillcolor</span><span class="si">}</span><span class="s1">&quot;&#39;</span><span class="p">)</span>
 
         <span class="c1"># Set URL</span>
         <span class="n">path_info</span> <span class="o">=</span> <span class="n">ref_to_path_map</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">node</span><span class="p">)</span>
@@ -758,6 +779,9 @@
     <span class="n">dot_file_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">output_dir</span><span class="p">)</span> <span class="o">/</span> <span class="s2">&quot;dependencies.dot&quot;</span>
     <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">dot_file_path</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
         <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;digraph G {</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;  bgcolor=&quot;black&quot;;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;  node [shape=box, style=&quot;rounded,filled&quot;, fontname=&quot;Helvetica&quot;, color=&quot;white&quot;, fontcolor=&quot;white&quot;];</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;  edge [color=&quot;white&quot;, fontcolor=&quot;white&quot;];</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
         <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;  rankdir=&quot;LR&quot;;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
         <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;  overlap=&quot;false&quot;;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
         <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;  splines=&quot;true&quot;;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
@@ -774,8 +798,24 @@
         <span class="k">for</span> <span class="n">book_roman</span><span class="p">,</span> <span class="n">nodes</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">nodes_by_book</span><span class="o">.</span><span class="n">items</span><span class="p">()):</span>
             <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;  subgraph cluster_book_</span><span class="si">{</span><span class="n">book_roman</span><span class="si">}</span><span class="s1"> </span><span class="se">{{\n</span><span class="s1">&#39;</span><span class="p">)</span>
             <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;    label=&quot;Book </span><span class="si">{</span><span class="n">book_roman</span><span class="si">}</span><span class="s1">&quot;;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;    color=&quot;white&quot;;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;    fontcolor=&quot;white&quot;;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
             <span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">nodes</span><span class="p">:</span>
-                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;    &quot;</span><span class="si">{</span><span class="n">node</span><span class="si">}</span><span class="s1">&quot;;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+                <span class="c1"># Determine node type for styling</span>
+                <span class="n">node_data_item</span> <span class="o">=</span> <span class="n">graph</span><span class="o">.</span><span class="n">nodes</span><span class="p">[</span><span class="n">node</span><span class="p">]</span>
+                <span class="n">node_type</span> <span class="o">=</span> <span class="n">node_data_item</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;type&#39;</span><span class="p">,</span> <span class="s1">&#39;unknown&#39;</span><span class="p">)</span>
+                
+                <span class="n">fillcolor</span> <span class="o">=</span> <span class="s2">&quot;#333333&quot;</span> <span class="c1"># Default dark gray</span>
+                <span class="k">if</span> <span class="n">node_type</span> <span class="o">==</span> <span class="s1">&#39;def&#39;</span><span class="p">:</span>
+                    <span class="n">fillcolor</span> <span class="o">=</span> <span class="s2">&quot;#224422&quot;</span> <span class="c1"># Dark Green</span>
+                <span class="k">elif</span> <span class="n">node_type</span> <span class="o">==</span> <span class="s1">&#39;prop&#39;</span><span class="p">:</span>
+                    <span class="n">fillcolor</span> <span class="o">=</span> <span class="s2">&quot;#222244&quot;</span> <span class="c1"># Dark Blue</span>
+                <span class="k">elif</span> <span class="n">node_type</span> <span class="o">==</span> <span class="s1">&#39;cn&#39;</span><span class="p">:</span>
+                    <span class="n">fillcolor</span> <span class="o">=</span> <span class="s2">&quot;#442222&quot;</span> <span class="c1"># Dark Red</span>
+                <span class="k">elif</span> <span class="n">node_type</span> <span class="o">==</span> <span class="s1">&#39;post&#39;</span><span class="p">:</span>
+                    <span class="n">fillcolor</span> <span class="o">=</span> <span class="s2">&quot;#444422&quot;</span> <span class="c1"># Dark Olive</span>
+                
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;    &quot;</span><span class="si">{</span><span class="n">node</span><span class="si">}</span><span class="s1">&quot; [fillcolor=&quot;</span><span class="si">{</span><span class="n">fillcolor</span><span class="si">}</span><span class="s1">&quot;];</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
             <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;  }</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
 
         <span class="k">for</span> <span class="n">edge</span> <span class="ow">in</span> <span class="n">graph</span><span class="o">.</span><span class="n">edges</span><span class="p">():</span>
@@ -794,7 +834,8 @@
     <span class="c1"># Clean up existing book directories to prevent orphans</span>
     <span class="n">output_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">output_dir</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">output_path</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
-        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">):</span>
+        <span class="c1"># Clean all books</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">14</span><span class="p">):</span>
             <span class="n">book_roman</span> <span class="o">=</span> <span class="n">ROMAN_NUMERALS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
             <span class="k">if</span> <span class="n">book_roman</span><span class="p">:</span>
                 <span class="n">book_dir</span> <span class="o">=</span> <span class="n">output_path</span> <span class="o">/</span> <span class="n">book_roman</span>
@@ -804,6 +845,7 @@
 
     <span class="n">all_books_data</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="n">entry_number</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="c1"># Process all books</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">14</span><span class="p">):</span>
         <span class="n">xml_file_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;resources/xml/books/</span><span class="si">{</span><span class="n">i</span><span class="si">:</span><span class="s2">02d</span><span class="si">}</span><span class="s2">.xml&quot;</span>
         <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">xml_file_path</span><span class="p">):</span>
@@ -819,7 +861,7 @@
         <span class="k">for</span> <span class="n">section</span> <span class="ow">in</span> <span class="n">book_data</span><span class="p">[</span><span class="s2">&quot;sections&quot;</span><span class="p">]:</span>
             <span class="k">for</span> <span class="n">entry</span> <span class="ow">in</span> <span class="n">section</span><span class="p">[</span><span class="s2">&quot;entries&quot;</span><span class="p">]:</span>
                 <span class="k">if</span> <span class="n">entry</span><span class="p">[</span><span class="s2">&quot;canonical_ref&quot;</span><span class="p">]:</span>
-                    <span class="n">G</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="n">entry</span><span class="p">[</span><span class="s2">&quot;canonical_ref&quot;</span><span class="p">])</span>
+                    <span class="n">G</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="n">entry</span><span class="p">[</span><span class="s2">&quot;canonical_ref&quot;</span><span class="p">],</span> <span class="o">**</span><span class="n">entry</span><span class="p">)</span>
                     <span class="k">for</span> <span class="n">dep</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">entry</span><span class="p">[</span><span class="s2">&quot;dependencies&quot;</span><span class="p">]))):</span>
                         <span class="n">G</span><span class="o">.</span><span class="n">add_edge</span><span class="p">(</span><span class="n">entry</span><span class="p">[</span><span class="s2">&quot;canonical_ref&quot;</span><span class="p">],</span> <span class="n">dep</span><span class="p">)</span>
 
@@ -941,8 +983,6 @@
         
         <li><a href="../../types/post.html">post</a></li>
         
-        <li><a href="../../types/postulate.html">postulate</a></li>
-        
         <li><a href="../../types/prop.html">prop</a></li>
         
     </ul>
@@ -970,6 +1010,7 @@
   <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
   <script src="../../_static/doctools.js?v=9bcbadda"></script>
   <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+  <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
 
 
 </body>

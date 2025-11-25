@@ -18,7 +18,7 @@ XI.7
 
 Let AB, CD be two parallel straight lines, and let points E, F be taken at random on them respectively; I say that the straight line joining the points E, F is in the same plane with the parallel straight lines.
 
-For suppose it is not, but, if possible, let it be in a more elevated plane as EGF, and let a plane be drawn through EGF; it will then make, as section in the plane of reference, a straight line. [:ref:`XI.3`]
+For suppose it is not, but, if possible, let it be in a more elevated plane as EGF, and let a plane be drawn through EGF; it will then make, as section in the plane of reference, a straight line. [:ref:`XI.3 <XI.3>`]
 
 Let it make it, as EF; therefore the two straight lines EGF, EF will enclose an area: which is impossible.
 
@@ -33,10 +33,12 @@ Dependency Graph
 .. graphviz::
 
    digraph {
+     bgcolor="black";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
+     edge [color="white", fontcolor="white"];
      rankdir="TB";
-     node [shape=box, style=rounded];
-     "XI.3" [style="rounded,filled", fillcolor=orange, URL="/heath/XI/3/", target="_top"];
-     "XI.7" [style="rounded,filled", fillcolor=lightblue, URL="/heath/XI/7/", target="_top"];
+     "XI.3" [fillcolor="#222244", URL="/heath/XI/3/", target="_top"];
+     "XI.7" [penwidth=3, color="white", fillcolor="#555555", URL="/heath/XI/7/", target="_top"];
      "XI.7" -> "XI.3";
    }
 

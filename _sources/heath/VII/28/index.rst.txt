@@ -23,7 +23,7 @@ Let a number measure them, and let it be D.
 
 Since then D measures CA, AB, therefore it will also measure the remainder BC.
 
-But it also measures BA; therefore D measures AB, BC which are prime to one another: which is impossible. [:ref:`VII.def.12`]
+But it also measures BA; therefore D measures AB, BC which are prime to one another: which is impossible. [:ref:`VII.def.12 <VII.def.12>`]
 
 Therefore no number will measure the numbers CA, AB; therefore CA, AB are prime to one another.
 
@@ -39,7 +39,7 @@ Let a number measure them, and let it be D.
 
 Now, since D measures each of the numbers AB, BC, it will also measure the whole CA.
 
-But it also measures AB; therefore D measures CA, AB which are prime to one another: which is impossible. [:ref:`VII.def.12`]
+But it also measures AB; therefore D measures CA, AB which are prime to one another: which is impossible. [:ref:`VII.def.12 <VII.def.12>`]
 
 Therefore no number will measure the numbers AB, BC.
 
@@ -52,10 +52,12 @@ Dependency Graph
 .. graphviz::
 
    digraph {
+     bgcolor="black";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
+     edge [color="white", fontcolor="white"];
      rankdir="TB";
-     node [shape=box, style=rounded];
-     "VII.def.12" [style="rounded,filled", fillcolor=orange, URL="/heath/VII/def.12/", target="_top"];
-     "VII.28" [style="rounded,filled", fillcolor=lightblue, URL="/heath/VII/28/", target="_top"];
+     "VII.def.12" [fillcolor="#224422", URL="/heath/VII/def.12/", target="_top"];
+     "VII.28" [penwidth=3, color="white", fillcolor="#555555", URL="/heath/VII/28/", target="_top"];
      "VII.28" -> "VII.def.12";
    }
 

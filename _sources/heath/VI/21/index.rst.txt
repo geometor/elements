@@ -18,7 +18,7 @@ VI.21
 
 For let each of the rectilineal figures ``A``, ``B`` be similar to ``C``; I say that ``A`` is also similar to ``B``.
 
-For, since ``A`` is similar to ``C``, it is equiangular with it and has the sides about the equal angles proportional. [:ref:`VI.def.1`]
+For, since ``A`` is similar to ``C``, it is equiangular with it and has the sides about the equal angles proportional. [:ref:`VI.def.1 <VI.def.1>`]
 
 Again, since ``B`` is similar to ``C``, it is equiangular with it and has the sides about the equal angles proportional.
 
@@ -37,10 +37,12 @@ Dependency Graph
 .. graphviz::
 
    digraph {
+     bgcolor="black";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
+     edge [color="white", fontcolor="white"];
      rankdir="TB";
-     node [shape=box, style=rounded];
-     "VI.21" [style="rounded,filled", fillcolor=lightblue, URL="/heath/VI/21/", target="_top"];
-     "VI.def.1" [style="rounded,filled", fillcolor=orange, URL="/heath/VI/def.1/", target="_top"];
+     "VI.21" [penwidth=3, color="white", fillcolor="#555555", URL="/heath/VI/21/", target="_top"];
+     "VI.def.1" [fillcolor="#224422", URL="/heath/VI/def.1/", target="_top"];
      "VI.21" -> "VI.def.1";
    }
 

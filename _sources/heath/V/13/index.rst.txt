@@ -17,9 +17,9 @@ V.13
 
 For let a first magnitude ``A`` have to a second ``B`` the same ratio as a third ``C`` has to a fourth ``D``, and let the third ``C`` have to the fourth ``D`` a greater ratio than a fifth ``E`` has to a sixth ``F``; I say that the first ``A`` will also have to the second ``B`` a greater ratio than the fifth ``E`` to the sixth ``F``.
 
-For, since there are some equimultiples of ``C``, ``E``, and of ``D``, ``F`` other, chance, equimultiples, such that the multiple of ``C`` is in excess of the multiple of ``D``, while the multiple of ``E`` is not in excess of the multiple of ``F``, [:ref:`V.def.7`] let them be taken, and let ``G``, ``H`` be equimultiples of ``C``, ``E``, and ``K``, ``L`` other, chance, equimultiples of ``D``, ``F``, so that ``G`` is in excess of ``K``, but ``H`` is not in excess of ``L``; and, whatever multiple ``G`` is of ``C``, let ``M`` be also that multiple of ``A``, and, whatever multiple ``K`` is of ``D``, let ``N`` be also that multiple of ``B``.
+For, since there are some equimultiples of ``C``, ``E``, and of ``D``, ``F`` other, chance, equimultiples, such that the multiple of ``C`` is in excess of the multiple of ``D``, while the multiple of ``E`` is not in excess of the multiple of ``F``, [:ref:`V.def.7 <V.def.7>`] let them be taken, and let ``G``, ``H`` be equimultiples of ``C``, ``E``, and ``K``, ``L`` other, chance, equimultiples of ``D``, ``F``, so that ``G`` is in excess of ``K``, but ``H`` is not in excess of ``L``; and, whatever multiple ``G`` is of ``C``, let ``M`` be also that multiple of ``A``, and, whatever multiple ``K`` is of ``D``, let ``N`` be also that multiple of ``B``.
 
-Now, since, as ``A`` is to ``B``, so is ``C`` to ``D``, and of ``A``, ``C`` equimultiples ``M``, ``G`` have been taken, and of ``B``, ``D`` other, chance, equimultiples ``N``, ``K``, therefore, if ``M`` is in excess of ``N``, ``G`` is also in excess of ``K``, if equal, equal, and if less, less. [:ref:`V.def.5`]
+Now, since, as ``A`` is to ``B``, so is ``C`` to ``D``, and of ``A``, ``C`` equimultiples ``M``, ``G`` have been taken, and of ``B``, ``D`` other, chance, equimultiples ``N``, ``K``, therefore, if ``M`` is in excess of ``N``, ``G`` is also in excess of ``K``, if equal, equal, and if less, less. [:ref:`V.def.5 <V.def.5>`]
 
 But ``G`` is in excess of ``K``; therefore ``M`` is also in excess of ``N``.
 
@@ -28,7 +28,7 @@ But ``H`` is not in excess of ``L``; and ``M``, ``H`` are equimultiples of ``A``
 
 .. container:: center
 
-   therefore ``A`` has to ``B`` a greater ratio than ``E`` has to ``F``. [:ref:`V.def.7`]
+   therefore ``A`` has to ``B`` a greater ratio than ``E`` has to ``F``. [:ref:`V.def.7 <V.def.7>`]
 
 
 Therefore etc. Q. E. D.
@@ -40,11 +40,13 @@ Dependency Graph
 .. graphviz::
 
    digraph {
+     bgcolor="black";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
+     edge [color="white", fontcolor="white"];
      rankdir="TB";
-     node [shape=box, style=rounded];
-     "V.def.5" [style="rounded,filled", fillcolor=orange, URL="/heath/V/def.5/", target="_top"];
-     "V.13" [style="rounded,filled", fillcolor=lightblue, URL="/heath/V/13/", target="_top"];
-     "V.def.7" [style="rounded,filled", fillcolor=orange, URL="/heath/V/def.7/", target="_top"];
+     "V.def.5" [fillcolor="#224422", URL="/heath/V/def.5/", target="_top"];
+     "V.def.7" [fillcolor="#224422", URL="/heath/V/def.7/", target="_top"];
+     "V.13" [penwidth=3, color="white", fillcolor="#555555", URL="/heath/V/13/", target="_top"];
      "V.13" -> "V.def.5";
      "V.13" -> "V.def.7";
    }

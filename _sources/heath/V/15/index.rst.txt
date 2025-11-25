@@ -21,9 +21,9 @@ For, since ``AB`` is the same multiple of ``C`` that ``DE`` is of ``F``, as many
 
 Let ``AB`` be divided into the magnitudes ``AG``, ``GH``, ``HB`` equal to ``C``, and ``DE`` into the magnitudes ``DK``, ``KL``, ``LE`` equal to ``F``; then the multitude of the magnitudes ``AG``, ``GH``, ``HB`` will be equal to the multitude of the magnitudes ``DK``, ``KL``, ``LE``.
 
-And, since ``AG``. ``GH``, ``HB`` are equal to one another, and ``DK``, ``KL``, ``LE`` are also equal to one another, therefore, as ``AG`` is to ``DK``, so is ``GH`` to ``KL``, and ``HB`` to ``LE``. [:ref:`V.7`]
+And, since ``AG``. ``GH``, ``HB`` are equal to one another, and ``DK``, ``KL``, ``LE`` are also equal to one another, therefore, as ``AG`` is to ``DK``, so is ``GH`` to ``KL``, and ``HB`` to ``LE``. [:ref:`V.7 <V.7>`]
 
-Therefore, as one of the antecedents is to one of the consequents, so will all the antecedents be to all the consequents; [:ref:`V.12`]
+Therefore, as one of the antecedents is to one of the consequents, so will all the antecedents be to all the consequents; [:ref:`V.12 <V.12>`]
 
 
 .. container:: center
@@ -48,18 +48,20 @@ Dependency Graph
 .. graphviz::
 
    digraph {
+     bgcolor="black";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
+     edge [color="white", fontcolor="white"];
      rankdir="TB";
-     node [shape=box, style=rounded];
-     "V.7" [URL="/heath/V/7/", target="_top"];
-     "V.15" [style="rounded,filled", fillcolor=lightblue, URL="/heath/V/15/", target="_top"];
-     "V.1" [style="rounded,filled", fillcolor=orange, URL="/heath/V/1/", target="_top"];
-     "V.12" [URL="/heath/V/12/", target="_top"];
-     "V.def.5" [style="rounded,filled", fillcolor=orange, URL="/heath/V/def.5/", target="_top"];
-     "V.15" -> "V.7";
-     "V.12" -> "V.1";
-     "V.15" -> "V.12";
+     "V.15" [penwidth=3, color="white", fillcolor="#555555", URL="/heath/V/15/", target="_top"];
+     "V.def.5" [fillcolor="#224422", URL="/heath/V/def.5/", target="_top"];
+     "V.1" [fillcolor="#222244", URL="/heath/V/1/", target="_top"];
+     "V.7" [fillcolor="#222244", URL="/heath/V/7/", target="_top"];
+     "V.12" [fillcolor="#222244", URL="/heath/V/12/", target="_top"];
      "V.7" -> "V.def.5";
      "V.12" -> "V.def.5";
+     "V.12" -> "V.1";
+     "V.15" -> "V.7";
+     "V.15" -> "V.12";
    }
 
 

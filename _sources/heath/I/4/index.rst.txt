@@ -28,7 +28,7 @@ Again, ``AB`` coinciding with ``DE``, the straight line ``AC`` will also coincid
 
 But ``B`` also coincided with ``E``; hence the base ``BC`` will coincide with the base ``EF``.
 
-[For if, when ``B`` coincides with ``E`` and ``C`` with ``F``, the base ``BC`` does not coincide with the base ``EF``, two straight lines will enclose a space: which is impossible. Therefore the base ``BC`` will coincide with ``EF``] and will be equal to it. [:ref:`I.cn.4`]
+[For if, when ``B`` coincides with ``E`` and ``C`` with ``F``, the base ``BC`` does not coincide with the base ``EF``, two straight lines will enclose a space: which is impossible. Therefore the base ``BC`` will coincide with ``EF``] and will be equal to it. [:ref:`I.cn.4 <I.cn.4>`]
 
 Thus the whole triangle ``ABC`` will coincide with the whole triangle ``DEF``, and will be equal to it.
         
@@ -59,9 +59,9 @@ Therefore etc.
 
     not ``sides``.
 
-    It may be that he wished to adhere scrupulously, at the outset, to the phraseology of the definitions, where the angle is the inclination to one another of two ``lines`` or ``straight lines``. Similarly in the enunciation of :ref:`I.5` he speaks of producing the equal straight lines
+    It may be that he wished to adhere scrupulously, at the outset, to the phraseology of the definitions, where the angle is the inclination to one another of two ``lines`` or ``straight lines``. Similarly in the enunciation of :ref:`I.5 <I.5>` he speaks of producing the equal straight lines
 
-    as if to keep strictly to the wording of :ref:`I.post.2`.
+    as if to keep strictly to the wording of :ref:`I.post.2 <I.post.2>`.
 
 
 .. note::
@@ -85,7 +85,7 @@ Therefore etc.
 
    Here we have the word ``base`` used for the first time in the Elements. Proclus explains it (p. 236, 12-15) as meaning (1), when no side of a triangle has been mentioned before, the side which is on a level with the sight
 
-    (τὴν πρὸς τῇ ὄψει κειμένην), and (2), when two sides have already been mentioned, the third side. Proclus thus avoids the mistake made by some modern editors who explain the term exclusively with reference to the case where two sides have been mentioned before. That this is an error is proved (1) by the occurrence of the term in the enunciations of :ref:`I.37` etc. about triangles on the same base and equal bases, (2) by the application of the same term to the bases of parallelograms in :ref:`I.35` etc. The truth is that the use of the term must have been suggested by the practice of drawing the particular side horizontally, as it were, and the rest of the figure above it. The ``base`` of a figure was therefore spoken of, primarily, in the same sense as the base of anything else, e.g. of a pedestal or column; but when, as in :ref:`I.5`, two triangles were compared occupying other than the normal positions which gave rise to the name, and when two sides had been previously mentioned, the base was, as Proclus says, necessarily the third side.
+    (τὴν πρὸς τῇ ὄψει κειμένην), and (2), when two sides have already been mentioned, the third side. Proclus thus avoids the mistake made by some modern editors who explain the term exclusively with reference to the case where two sides have been mentioned before. That this is an error is proved (1) by the occurrence of the term in the enunciations of :ref:`I.37 <I.37>` etc. about triangles on the same base and equal bases, (2) by the application of the same term to the bases of parallelograms in :ref:`I.35 <I.35>` etc. The truth is that the use of the term must have been suggested by the practice of drawing the particular side horizontally, as it were, and the rest of the figure above it. The ``base`` of a figure was therefore spoken of, primarily, in the same sense as the base of anything else, e.g. of a pedestal or column; but when, as in :ref:`I.5 <I.5>`, two triangles were compared occupying other than the normal positions which gave rise to the name, and when two sides had been previously mentioned, the base was, as Proclus says, necessarily the third side.
 
 
 .. note::
@@ -135,7 +135,7 @@ Therefore etc.
 
    
 
-   Heiberg (Paralipomena su Euklid in Hermes, XXXVIII., 1903, p. 56) has pointed out, as a conclusive reason for regarding these words as an early interpolation, that the text of an-Nairīzī (Codex Leidensis 399, 1, ed. Besthorn-Heiberg, p. 55) does not give the words in this place but after the conclusion Q.E.D., which shows that they constitute a ``scholium`` only. They were doubtless added by some commentator who thought it necessary to explain the immediate inference that, since ``B`` coincides with ``E`` and ``C`` with ``F``, the straight line ``BC`` coincides with the straight line ``EF``, an inference which really follows from the definition of a straight line and :ref:`I.post.1`; and no doubt the Postulate that Two straight lines cannot enclose a space
+   Heiberg (Paralipomena su Euklid in Hermes, XXXVIII., 1903, p. 56) has pointed out, as a conclusive reason for regarding these words as an early interpolation, that the text of an-Nairīzī (Codex Leidensis 399, 1, ed. Besthorn-Heiberg, p. 55) does not give the words in this place but after the conclusion Q.E.D., which shows that they constitute a ``scholium`` only. They were doubtless added by some commentator who thought it necessary to explain the immediate inference that, since ``B`` coincides with ``E`` and ``C`` with ``F``, the straight line ``BC`` coincides with the straight line ``EF``, an inference which really follows from the definition of a straight line and :ref:`I.post.1 <I.post.1>`; and no doubt the Postulate that Two straight lines cannot enclose a space
 
     (afterwards placed among the Common Notions) was interpolated at the same time.
 
@@ -158,10 +158,12 @@ Dependency Graph
 .. graphviz::
 
    digraph {
+     bgcolor="black";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
+     edge [color="white", fontcolor="white"];
      rankdir="TB";
-     node [shape=box, style=rounded];
-     "I.4" [style="rounded,filled", fillcolor=lightblue, URL="/heath/I/4/", target="_top"];
-     "I.cn.4" [style="rounded,filled", fillcolor=orange, URL="/heath/I/cn.4/", target="_top"];
+     "I.4" [penwidth=3, color="white", fillcolor="#555555", URL="/heath/I/4/", target="_top"];
+     "I.cn.4" [fillcolor="#442222", URL="/heath/I/cn.4/", target="_top"];
      "I.4" -> "I.cn.4";
    }
 

@@ -17,7 +17,7 @@ IX.34
 
 For let the number A neither be one of those doubled from a dyad, nor have its half odd; I say that A is both even-times even and even-times odd.
 
-Now that A is even-times even is manifest; for it has not its half odd. [:ref:`VII.def.8`]
+Now that A is even-times even is manifest; for it has not its half odd. [:ref:`VII.def.8 <VII.def.8>`]
 
 I say next that it is also even-times odd.
 
@@ -38,9 +38,11 @@ Dependency Graph
 .. graphviz::
 
    digraph {
+     bgcolor="black";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
+     edge [color="white", fontcolor="white"];
      rankdir="TB";
-     node [shape=box, style=rounded];
-     "VII.def.8" [style="rounded,filled", fillcolor=orange, URL="/heath/VII/def.8/", target="_top"];
-     "IX.34" [style="rounded,filled", fillcolor=lightblue, URL="/heath/IX/34/", target="_top"];
+     "VII.def.8" [fillcolor="#224422", URL="/heath/VII/def.8/", target="_top"];
+     "IX.34" [penwidth=3, color="white", fillcolor="#555555", URL="/heath/IX/34/", target="_top"];
      "IX.34" -> "VII.def.8";
    }

@@ -1,0 +1,78 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" width="123pt" height="260pt" viewBox="0.00 0.00 122.65 260.00">
+<ns0:g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 256)">
+<ns0:title>%3</ns0:title>
+<ns0:polygon fill="black" stroke="transparent" points="-4,4 -4,-256 118.65,-256 118.65,4 -4,4" />
+
+<ns0:g id="node1" class="node">
+<ns0:title>VII.9</ns0:title>
+<ns0:g id="a_node1"><ns0:a ns1:href="../../../../../../../heath/VII/9" ns1:title="VII.9" target="_top">
+<ns0:path fill="#222244" stroke="white" d="M88,-180C88,-180 58,-180 58,-180 52,-180 46,-174 46,-168 46,-168 46,-156 46,-156 46,-150 52,-144 58,-144 58,-144 88,-144 88,-144 94,-144 100,-150 100,-156 100,-156 100,-168 100,-168 100,-174 94,-180 88,-180" />
+<ns0:text text-anchor="middle" x="73" y="-158.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="white">VII.9</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node2" class="node">
+<ns0:title>VII.6</ns0:title>
+<ns0:g id="a_node2"><ns0:a ns1:href="../../../../../../../heath/VII/6" ns1:title="VII.6" target="_top">
+<ns0:path fill="#222244" stroke="white" d="M42,-108C42,-108 12,-108 12,-108 6,-108 0,-102 0,-96 0,-96 0,-84 0,-84 0,-78 6,-72 12,-72 12,-72 42,-72 42,-72 48,-72 54,-78 54,-84 54,-84 54,-96 54,-96 54,-102 48,-108 42,-108" />
+<ns0:text text-anchor="middle" x="27" y="-86.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="white">VII.6</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge2" class="edge">
+<ns0:title>VII.9-&gt;VII.6</ns0:title>
+<ns0:path fill="none" stroke="white" d="M61.63,-143.7C56.28,-135.56 49.8,-125.69 43.89,-116.7" />
+<ns0:polygon fill="white" stroke="white" points="46.66,-114.54 38.24,-108.1 40.81,-118.38 46.66,-114.54" />
+</ns0:g>
+
+<ns0:g id="node4" class="node">
+<ns0:title>VII.5</ns0:title>
+<ns0:g id="a_node4"><ns0:a ns1:href="../../../../../../../heath/VII/5" ns1:title="VII.5" target="_top">
+<ns0:path fill="#222244" stroke="white" d="M97,-36C97,-36 67,-36 67,-36 61,-36 55,-30 55,-24 55,-24 55,-12 55,-12 55,-6 61,0 67,0 67,0 97,0 97,0 103,0 109,-6 109,-12 109,-12 109,-24 109,-24 109,-30 103,-36 97,-36" />
+<ns0:text text-anchor="middle" x="82" y="-14.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="white">VII.5</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge5" class="edge">
+<ns0:title>VII.9-&gt;VII.5</ns0:title>
+<ns0:path fill="none" stroke="white" d="M74.09,-143.87C75.62,-119.67 78.44,-75.21 80.26,-46.39" />
+<ns0:polygon fill="white" stroke="white" points="83.77,-46.39 80.91,-36.19 76.78,-45.95 83.77,-46.39" />
+</ns0:g>
+
+<ns0:g id="edge4" class="edge">
+<ns0:title>VII.6-&gt;VII.5</ns0:title>
+<ns0:path fill="none" stroke="white" d="M40.6,-71.7C47.12,-63.39 55.07,-53.28 62.25,-44.14" />
+<ns0:polygon fill="white" stroke="white" points="65.13,-46.13 68.56,-36.1 59.63,-41.81 65.13,-46.13" />
+</ns0:g>
+
+<ns0:g id="node3" class="node">
+<ns0:title>VII.10</ns0:title>
+<ns0:g id="a_node3"><ns0:a ns1:href="../../../../../../../heath/VII/10" ns1:title="VII.10" target="_top">
+<ns0:path fill="#555555" stroke="white" stroke-width="3" d="M90,-252C90,-252 56,-252 56,-252 50,-252 44,-246 44,-240 44,-240 44,-228 44,-228 44,-222 50,-216 56,-216 56,-216 90,-216 90,-216 96,-216 102,-222 102,-228 102,-228 102,-240 102,-240 102,-246 96,-252 90,-252" />
+<ns0:text text-anchor="middle" x="73" y="-230.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="white">VII.10</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge1" class="edge">
+<ns0:title>VII.10-&gt;VII.9</ns0:title>
+<ns0:path fill="none" stroke="white" d="M73,-215.7C73,-207.98 73,-198.71 73,-190.11" />
+<ns0:polygon fill="white" stroke="white" points="76.5,-190.1 73,-180.1 69.5,-190.1 76.5,-190.1" />
+</ns0:g>
+
+<ns0:g id="edge3" class="edge">
+<ns0:title>VII.10-&gt;VII.6</ns0:title>
+<ns0:path fill="none" stroke="white" d="M57.97,-215.58C50.38,-205.78 41.78,-192.94 37,-180 29.68,-160.22 27.31,-136.42 26.7,-118.41" />
+<ns0:polygon fill="white" stroke="white" points="30.2,-118.23 26.52,-108.29 23.2,-118.35 30.2,-118.23" />
+</ns0:g>
+
+<ns0:g id="edge6" class="edge">
+<ns0:title>VII.10-&gt;VII.5</ns0:title>
+<ns0:path fill="none" stroke="white" d="M88.61,-215.77C96.37,-206.03 104.95,-193.18 109,-180 123.13,-134.04 106.68,-78.3 93.97,-45.91" />
+<ns0:polygon fill="white" stroke="white" points="97.05,-44.19 90.02,-36.26 90.57,-46.84 97.05,-44.19" />
+</ns0:g>
+</ns0:g>
+</ns0:svg>

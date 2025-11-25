@@ -1,0 +1,96 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" width="191pt" height="332pt" viewBox="0.00 0.00 190.50 332.00">
+<ns0:g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 328)">
+<ns0:title>%3</ns0:title>
+<ns0:polygon fill="black" stroke="transparent" points="-4,4 -4,-328 186.5,-328 186.5,4 -4,4" />
+
+<ns0:g id="node1" class="node">
+<ns0:title>VII.def.20</ns0:title>
+<ns0:g id="a_node1"><ns0:a ns1:href="../../../../../../../heath/VII/def.20" ns1:title="VII.def.20" target="_top">
+<ns0:path fill="#224422" stroke="white" d="M71,-108C71,-108 12,-108 12,-108 6,-108 0,-102 0,-96 0,-96 0,-84 0,-84 0,-78 6,-72 12,-72 12,-72 71,-72 71,-72 77,-72 83,-78 83,-84 83,-84 83,-96 83,-96 83,-102 77,-108 71,-108" />
+<ns0:text text-anchor="middle" x="41.5" y="-86.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="white">VII.def.20</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node2" class="node">
+<ns0:title>VII.12</ns0:title>
+<ns0:g id="a_node2"><ns0:a ns1:href="../../../../../../../heath/VII/12" ns1:title="VII.12" target="_top">
+<ns0:path fill="#222244" stroke="white" d="M145.5,-180C145.5,-180 111.5,-180 111.5,-180 105.5,-180 99.5,-174 99.5,-168 99.5,-168 99.5,-156 99.5,-156 99.5,-150 105.5,-144 111.5,-144 111.5,-144 145.5,-144 145.5,-144 151.5,-144 157.5,-150 157.5,-156 157.5,-156 157.5,-168 157.5,-168 157.5,-174 151.5,-180 145.5,-180" />
+<ns0:text text-anchor="middle" x="128.5" y="-158.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="white">VII.12</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge1" class="edge">
+<ns0:title>VII.12-&gt;VII.def.20</ns0:title>
+<ns0:path fill="none" stroke="white" d="M106.99,-143.7C96.04,-134.88 82.55,-124.03 70.68,-114.47" />
+<ns0:polygon fill="white" stroke="white" points="72.74,-111.65 62.76,-108.1 68.36,-117.1 72.74,-111.65" />
+</ns0:g>
+
+<ns0:g id="node3" class="node">
+<ns0:title>VII.6</ns0:title>
+<ns0:g id="a_node3"><ns0:a ns1:href="../../../../../../../heath/VII/6" ns1:title="VII.6" target="_top">
+<ns0:path fill="#222244" stroke="white" d="M143.5,-108C143.5,-108 113.5,-108 113.5,-108 107.5,-108 101.5,-102 101.5,-96 101.5,-96 101.5,-84 101.5,-84 101.5,-78 107.5,-72 113.5,-72 113.5,-72 143.5,-72 143.5,-72 149.5,-72 155.5,-78 155.5,-84 155.5,-84 155.5,-96 155.5,-96 155.5,-102 149.5,-108 143.5,-108" />
+<ns0:text text-anchor="middle" x="128.5" y="-86.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="white">VII.6</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge3" class="edge">
+<ns0:title>VII.12-&gt;VII.6</ns0:title>
+<ns0:path fill="none" stroke="white" d="M128.5,-143.7C128.5,-135.98 128.5,-126.71 128.5,-118.11" />
+<ns0:polygon fill="white" stroke="white" points="132,-118.1 128.5,-108.1 125,-118.1 132,-118.1" />
+</ns0:g>
+
+<ns0:g id="node6" class="node">
+<ns0:title>VII.5</ns0:title>
+<ns0:g id="a_node6"><ns0:a ns1:href="../../../../../../../heath/VII/5" ns1:title="VII.5" target="_top">
+<ns0:path fill="#222244" stroke="white" d="M170.5,-36C170.5,-36 140.5,-36 140.5,-36 134.5,-36 128.5,-30 128.5,-24 128.5,-24 128.5,-12 128.5,-12 128.5,-6 134.5,0 140.5,0 140.5,0 170.5,0 170.5,0 176.5,0 182.5,-6 182.5,-12 182.5,-12 182.5,-24 182.5,-24 182.5,-30 176.5,-36 170.5,-36" />
+<ns0:text text-anchor="middle" x="155.5" y="-14.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="white">VII.5</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge6" class="edge">
+<ns0:title>VII.12-&gt;VII.5</ns0:title>
+<ns0:path fill="none" stroke="white" d="M144.11,-143.77C151.87,-134.03 160.45,-121.18 164.5,-108 170.72,-87.77 167.77,-63.87 163.65,-45.92" />
+<ns0:polygon fill="white" stroke="white" points="167.01,-44.95 161.15,-36.12 160.23,-46.68 167.01,-44.95" />
+</ns0:g>
+
+<ns0:g id="edge5" class="edge">
+<ns0:title>VII.6-&gt;VII.5</ns0:title>
+<ns0:path fill="none" stroke="white" d="M135.17,-71.7C138.21,-63.81 141.88,-54.3 145.26,-45.55" />
+<ns0:polygon fill="white" stroke="white" points="148.57,-46.69 148.9,-36.1 142.04,-44.17 148.57,-46.69" />
+</ns0:g>
+
+<ns0:g id="node4" class="node">
+<ns0:title>IX.11</ns0:title>
+<ns0:g id="a_node4"><ns0:a ns1:href="../../../../../../../heath/IX/11" ns1:title="IX.11" target="_top">
+<ns0:path fill="#555555" stroke="white" stroke-width="3" d="M143.5,-324C143.5,-324 113.5,-324 113.5,-324 107.5,-324 101.5,-318 101.5,-312 101.5,-312 101.5,-300 101.5,-300 101.5,-294 107.5,-288 113.5,-288 113.5,-288 143.5,-288 143.5,-288 149.5,-288 155.5,-294 155.5,-300 155.5,-300 155.5,-312 155.5,-312 155.5,-318 149.5,-324 143.5,-324" />
+<ns0:text text-anchor="middle" x="128.5" y="-302.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="white">IX.11</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node5" class="node">
+<ns0:title>VII.15</ns0:title>
+<ns0:g id="a_node5"><ns0:a ns1:href="../../../../../../../heath/VII/15" ns1:title="VII.15" target="_top">
+<ns0:path fill="#222244" stroke="white" d="M145.5,-252C145.5,-252 111.5,-252 111.5,-252 105.5,-252 99.5,-246 99.5,-240 99.5,-240 99.5,-228 99.5,-228 99.5,-222 105.5,-216 111.5,-216 111.5,-216 145.5,-216 145.5,-216 151.5,-216 157.5,-222 157.5,-228 157.5,-228 157.5,-240 157.5,-240 157.5,-246 151.5,-252 145.5,-252" />
+<ns0:text text-anchor="middle" x="128.5" y="-230.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="white">VII.15</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge4" class="edge">
+<ns0:title>IX.11-&gt;VII.15</ns0:title>
+<ns0:path fill="none" stroke="white" d="M128.5,-287.7C128.5,-279.98 128.5,-270.71 128.5,-262.11" />
+<ns0:polygon fill="white" stroke="white" points="132,-262.1 128.5,-252.1 125,-262.1 132,-262.1" />
+</ns0:g>
+
+<ns0:g id="edge2" class="edge">
+<ns0:title>VII.15-&gt;VII.12</ns0:title>
+<ns0:path fill="none" stroke="white" d="M128.5,-215.7C128.5,-207.98 128.5,-198.71 128.5,-190.11" />
+<ns0:polygon fill="white" stroke="white" points="132,-190.1 128.5,-180.1 125,-190.1 132,-190.1" />
+</ns0:g>
+</ns0:g>
+</ns0:svg>

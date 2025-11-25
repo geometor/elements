@@ -36,7 +36,7 @@ And ``D``, ``E`` are equimultiples of ``A``, ``B``, while ``F`` is another, chan
 
 .. container:: center
 
-   therefore, as ``A`` is to ``C``, so is ``B`` to ``C``. [:ref:`V.def.5`]
+   therefore, as ``A`` is to ``C``, so is ``B`` to ``C``. [:ref:`V.def.5 <V.def.5>`]
 
 
 I say next that ``C`` also has the same ratio to each of the magnitudes ``A``, ``B``.
@@ -50,7 +50,7 @@ And ``F`` is a multiple of ``C``, while ``D``, ``E`` are other, chance, equimult
 
 .. container:: center
 
-   therefore, as ``C`` is to ``A``, so is ``C`` to ``B``. [:ref:`V.def.5`]
+   therefore, as ``C`` is to ``A``, so is ``C`` to ``B``. [:ref:`V.def.5 <V.def.5>`]
 
 
 Therefore etc.
@@ -75,10 +75,12 @@ Dependency Graph
 .. graphviz::
 
    digraph {
+     bgcolor="black";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
+     edge [color="white", fontcolor="white"];
      rankdir="TB";
-     node [shape=box, style=rounded];
-     "V.def.5" [style="rounded,filled", fillcolor=orange, URL="/heath/V/def.5/", target="_top"];
-     "V.7" [style="rounded,filled", fillcolor=lightblue, URL="/heath/V/7/", target="_top"];
+     "V.def.5" [fillcolor="#224422", URL="/heath/V/def.5/", target="_top"];
+     "V.7" [penwidth=3, color="white", fillcolor="#555555", URL="/heath/V/7/", target="_top"];
      "V.7" -> "V.def.5";
    }
 

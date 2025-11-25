@@ -15,4 +15,4 @@ VI.def.3
 Required for
 ------------
 
-:ref:`XIII.1`, :ref:`XIII.11`, :ref:`XIII.16`, :ref:`XIII.17`, :ref:`XIII.18`, :ref:`XIII.4`, :ref:`XIII.6`
+:ref:`XIII.1`, :ref:`XIII.11`, :ref:`XIII.16`, :ref:`XIII.17`, :ref:`XIII.18`, :ref:`XIII.4`, :ref:`XIII.5`, :ref:`XIII.6`
