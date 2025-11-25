@@ -1,7 +1,7 @@
 :order: 35
 :number: 372
 :type: prop
-:dependencies: VII.12, elem.7.11 elem.7.13
+:dependencies: VII.11, VII.12, VII.13
 
 
 
@@ -23,9 +23,9 @@ Then, since FK is equal to BC, and of these the part FH is equal to the part BG,
 
 And since, as EF is to D, so is D to BC, and BC to A, while D is equal to FL, BC to FK, and A to FH, therefore, as EF is to FL, so is LF to FK, and FK to FH.
 
-Separando, as EL is to LF, so is LK to FK, and KH to FH. [:ref:`elem.7.11 elem.7.13`]
+Separando, as EL is to LF, so is LK to FK, and KH to FH. [:ref:`VII.11 <VII.11>` :ref:`VII.13 <VII.13>`]
 
-Therefore also, as one of the antecedents is to one of the consequents, so are all the antecedents to all the consequents; [:ref:`VII.12`] therefore, as KH is to FH, so are EL, LK. KH to LF, FK, HF.
+Therefore also, as one of the antecedents is to one of the consequents, so are all the antecedents to all the consequents; [:ref:`VII.12 <VII.12>`] therefore, as KH is to FH, so are EL, LK. KH to LF, FK, HF.
 
 But KH is equal to CG, FH to A, and LF, FK, HF to D, BC, A; therefore, as CG is to A, so is EH to D, BC, A.
 
@@ -38,17 +38,40 @@ Dependency Graph
 .. graphviz::
 
    digraph {
+     bgcolor="black";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
+     edge [color="white", fontcolor="white"];
      rankdir="TB";
-     node [shape=box, style=rounded];
-     "VII.12" [URL="/heath/VII/12/", target="_top"];
-     "elem.7.11 elem.7.13" [style="rounded,filled", fillcolor=orange];
-     "elem.7.5 elem.7.6" [style="rounded,filled", fillcolor=orange];
-     "IX.35" [style="rounded,filled", fillcolor=lightblue, URL="/heath/IX/35/", target="_top"];
-     "VII.def.20" [style="rounded,filled", fillcolor=orange, URL="/heath/VII/def.20/", target="_top"];
-     "IX.35" -> "VII.12";
-     "IX.35" -> "elem.7.11 elem.7.13";
-     "VII.12" -> "elem.7.5 elem.7.6";
+     "VII.13" [fillcolor="#222244", URL="/heath/VII/13/", target="_top"];
+     "VII.10" [fillcolor="#222244", URL="/heath/VII/10/", target="_top"];
+     "VII.11" [fillcolor="#222244", URL="/heath/VII/11/", target="_top"];
+     "VII.8" [fillcolor="#222244", URL="/heath/VII/8/", target="_top"];
+     "VII.5" [fillcolor="#222244", URL="/heath/VII/5/", target="_top"];
+     "VII.def.20" [fillcolor="#224422", URL="/heath/VII/def.20/", target="_top"];
+     "VII.9" [fillcolor="#222244", URL="/heath/VII/9/", target="_top"];
+     "IX.35" [penwidth=3, color="white", fillcolor="#555555", URL="/heath/IX/35/", target="_top"];
+     "VII.7" [fillcolor="#222244", URL="/heath/VII/7/", target="_top"];
+     "VII.12" [fillcolor="#222244", URL="/heath/VII/12/", target="_top"];
+     "VII.6" [fillcolor="#222244", URL="/heath/VII/6/", target="_top"];
+     "IX.35" -> "VII.13";
+     "VII.13" -> "VII.10";
+     "IX.35" -> "VII.11";
+     "VII.11" -> "VII.8";
+     "VII.6" -> "VII.5";
+     "VII.7" -> "VII.5";
+     "VII.9" -> "VII.5";
+     "VII.10" -> "VII.5";
+     "VII.12" -> "VII.5";
+     "VII.11" -> "VII.def.20";
      "VII.12" -> "VII.def.20";
+     "VII.13" -> "VII.def.20";
+     "VII.10" -> "VII.9";
+     "VII.8" -> "VII.7";
+     "VII.11" -> "VII.7";
+     "IX.35" -> "VII.12";
+     "VII.9" -> "VII.6";
+     "VII.10" -> "VII.6";
+     "VII.12" -> "VII.6";
    }
 
 

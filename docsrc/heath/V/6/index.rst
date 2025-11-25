@@ -23,7 +23,7 @@ For, first, let ``GB`` be equal to ``E``; I say that ``HD`` is also equal to ``F
 
 For let ``CK`` be made equal to ``F``.
 
-Since ``AG`` is the same multiple of ``E`` that ``CH`` is of ``F``, while ``GB`` is equal to ``E`` and ``KC`` to ``F``, therefore ``AB`` is the same multiple of ``E`` that ``KH`` is of ``F``. [:ref:`V.2`]
+Since ``AG`` is the same multiple of ``E`` that ``CH`` is of ``F``, while ``GB`` is equal to ``E`` and ``KC`` to ``F``, therefore ``AB`` is the same multiple of ``E`` that ``KH`` is of ``F``. [:ref:`V.2 <V.2>`]
 
 But, by hypothesis, ``AB`` is the same multiple of ``E`` that ``CD`` is of ``F``; therefore ``KH`` is the same multiple of ``F`` that ``CD`` is of ``F``.
 
@@ -52,9 +52,11 @@ Dependency Graph
 .. graphviz::
 
    digraph {
+     bgcolor="black";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
+     edge [color="white", fontcolor="white"];
      rankdir="TB";
-     node [shape=box, style=rounded];
-     "V.2" [style="rounded,filled", fillcolor=orange, URL="/heath/V/2/", target="_top"];
-     "V.6" [style="rounded,filled", fillcolor=lightblue, URL="/heath/V/6/", target="_top"];
+     "V.6" [penwidth=3, color="white", fillcolor="#555555", URL="/heath/V/6/", target="_top"];
+     "V.2" [fillcolor="#222244", URL="/heath/V/2/", target="_top"];
      "V.6" -> "V.2";
    }

@@ -12,3 +12,5 @@ repo_name = 'elements'
 setup_globals(org, org_name, repo, repo_name)
 
 graphviz_output_format = 'svg'
+
+html_theme = "foundation"

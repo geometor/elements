@@ -24,9 +24,9 @@ For, if ``AB`` is unequal to ``DE``, one of them is greater.
 
 Let ``AB`` be greater, and let ``BG`` be made equal to ``DE``; and let ``GC`` be joined. 
 
-Then, since ``BG`` is equal to ``DE``, and ``BC`` to ``EF``, the two sides ``GB``, ``BC`` are equal to the two sides ``DE``, ``EF`` respectively; and the angle ``GBC`` is equal to the angle ``DEF``; therefore the base ``GC`` is equal to the base ``DF``, and the triangle ``GBC`` is equal to the triangle ``DEF``, and the remaining angles will be equal to the remaining angles, namely those which the equal sides subtend; [:ref:`I.4`] therefore the angle ``GCB`` is equal to the angle ``DFE``. But the angle ``DFE`` is by hypothesis equal to the angle ``BCA``; therefore the angle ``BCG`` is equal to the angle ``BCA``, the less to the greater: which is impossible. Therefore ``AB`` is not unequal to ``DE``, and is therefore equal to it.
+Then, since ``BG`` is equal to ``DE``, and ``BC`` to ``EF``, the two sides ``GB``, ``BC`` are equal to the two sides ``DE``, ``EF`` respectively; and the angle ``GBC`` is equal to the angle ``DEF``; therefore the base ``GC`` is equal to the base ``DF``, and the triangle ``GBC`` is equal to the triangle ``DEF``, and the remaining angles will be equal to the remaining angles, namely those which the equal sides subtend; [:ref:`I.4 <I.4>`] therefore the angle ``GCB`` is equal to the angle ``DFE``. But the angle ``DFE`` is by hypothesis equal to the angle ``BCA``; therefore the angle ``BCG`` is equal to the angle ``BCA``, the less to the greater: which is impossible. Therefore ``AB`` is not unequal to ``DE``, and is therefore equal to it.
 
-But ``BC`` is also equal to ``EF``; therefore the two sides ``AB``, ``BC`` are equal to the two sides ``DE``, ``EF`` respectively, and the angle ``ABC`` is equal to the angle ``DEF``; therefore the base ``AC`` is equal to the base ``DF``, and the remaining angle ``BAC`` is equal to the remaining angle ``EDF``. [:ref:`I.4`]
+But ``BC`` is also equal to ``EF``; therefore the two sides ``AB``, ``BC`` are equal to the two sides ``DE``, ``EF`` respectively, and the angle ``ABC`` is equal to the angle ``DEF``; therefore the base ``AC`` is equal to the base ``DF``, and the remaining angle ``BAC`` is equal to the remaining angle ``EDF``. [:ref:`I.4 <I.4>`]
         
 
 Again, let sides subtending equal angles be equal, as ``AB`` to ``DE``;
@@ -37,13 +37,13 @@ For, if ``BC`` is unequal to ``EF``, one of them is greater.
 
 Let ``BC`` be greater, if possible, and let ``BH`` be made equal to ``EF``; let ``AH`` be joined. 
 
-Then, since ``BH`` is equal to ``EF``, and ``AB`` to ``DE``, the two sides ``AB``, ``BH`` are equal to the two sides ``DE``, ``EF`` respectively, and they contain equal angles; therefore the base ``AH`` is equal to the base ``DF``, and the triangle ``ABH`` is equal to the triangle ``DEF``, and the remaining angles will be equal to the remaining angles, namely those which the equal sides subtend; [:ref:`I.4`] therefore the angle ``BHA`` is equal to the angle ``EFD``.
+Then, since ``BH`` is equal to ``EF``, and ``AB`` to ``DE``, the two sides ``AB``, ``BH`` are equal to the two sides ``DE``, ``EF`` respectively, and they contain equal angles; therefore the base ``AH`` is equal to the base ``DF``, and the triangle ``ABH`` is equal to the triangle ``DEF``, and the remaining angles will be equal to the remaining angles, namely those which the equal sides subtend; [:ref:`I.4 <I.4>`] therefore the angle ``BHA`` is equal to the angle ``EFD``.
 
-But the angle ``EFD`` is equal to the angle ``BCA``; therefore, in the triangle ``AHC``, the exterior angle ``BHA`` is equal to the interior and opposite angle ``BCA``: which is impossible. [:ref:`I.16`]
+But the angle ``EFD`` is equal to the angle ``BCA``; therefore, in the triangle ``AHC``, the exterior angle ``BHA`` is equal to the interior and opposite angle ``BCA``: which is impossible. [:ref:`I.16 <I.16>`]
 
 Therefore ``BC`` is not unequal to ``EF``, and is therefore equal to it.
 
-But ``AB`` is also equal to ``DE``; therefore the two sides ``AB``, ``BC`` are equal to the two sides ``DE``, ``EF`` respectively, and they contain equal angles; therefore the base ``AC`` is equal to the base ``DF``, the triangle ``ABC`` equal to the triangle ``DEF``, and the remaining angle ``BAC`` equal to the remaining angle ``EDF``. [:ref:`I.4`]
+But ``AB`` is also equal to ``DE``; therefore the two sides ``AB``, ``BC`` are equal to the two sides ``DE``, ``EF`` respectively, and they contain equal angles; therefore the base ``AC`` is equal to the base ``DF``, the triangle ``ABC`` equal to the triangle ``DEF``, and the remaining angle ``BAC`` equal to the remaining angle ``EDF``. [:ref:`I.4 <I.4>`]
 
 Therefore etc.
 
@@ -80,75 +80,77 @@ Dependency Graph
 .. graphviz::
 
    digraph {
+     bgcolor="black";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
+     edge [color="white", fontcolor="white"];
      rankdir="TB";
-     node [shape=box, style=rounded];
-     "I.9" [URL="/heath/I/9/", target="_top"];
-     "I.cn.1" [style="rounded,filled", fillcolor=orange, URL="/heath/I/cn.1/", target="_top"];
-     "I.7" [URL="/heath/I/7/", target="_top"];
-     "I.2" [URL="/heath/I/2/", target="_top"];
-     "I.def.15" [style="rounded,filled", fillcolor=orange, URL="/heath/I/def.15/", target="_top"];
-     "I.13" [URL="/heath/I/13/", target="_top"];
-     "I.post.4" [style="rounded,filled", fillcolor=orange, URL="/heath/I/post.4/", target="_top"];
-     "I.4" [URL="/heath/I/4/", target="_top"];
-     "I.1" [URL="/heath/I/1/", target="_top"];
-     "I.post.3" [style="rounded,filled", fillcolor=orange, URL="/heath/I/post.3/", target="_top"];
-     "I.post.1" [style="rounded,filled", fillcolor=orange, URL="/heath/I/post.1/", target="_top"];
-     "I.5" [URL="/heath/I/5/", target="_top"];
-     "I.8" [URL="/heath/I/8/", target="_top"];
-     "I.cn.3" [style="rounded,filled", fillcolor=orange, URL="/heath/I/cn.3/", target="_top"];
-     "I.16" [URL="/heath/I/16/", target="_top"];
-     "I.def.10" [style="rounded,filled", fillcolor=orange, URL="/heath/I/def.10/", target="_top"];
-     "I.15" [URL="/heath/I/15/", target="_top"];
-     "I.10" [URL="/heath/I/10/", target="_top"];
-     "I.11" [URL="/heath/I/11/", target="_top"];
-     "I.cn.4" [style="rounded,filled", fillcolor=orange, URL="/heath/I/cn.4/", target="_top"];
-     "I.post.2" [style="rounded,filled", fillcolor=orange, URL="/heath/I/post.2/", target="_top"];
-     "I.26" [style="rounded,filled", fillcolor=lightblue, URL="/heath/I/26/", target="_top"];
-     "I.3" [URL="/heath/I/3/", target="_top"];
-     "I.10" -> "I.9";
-     "I.1" -> "I.cn.1";
-     "I.2" -> "I.cn.1";
-     "I.3" -> "I.cn.1";
-     "I.15" -> "I.cn.1";
-     "I.8" -> "I.7";
-     "I.3" -> "I.2";
-     "I.1" -> "I.def.15";
-     "I.3" -> "I.def.15";
-     "I.15" -> "I.13";
-     "I.15" -> "I.post.4";
-     "I.5" -> "I.4";
-     "I.10" -> "I.4";
-     "I.16" -> "I.4";
-     "I.26" -> "I.4";
-     "I.2" -> "I.1";
-     "I.10" -> "I.1";
-     "I.11" -> "I.1";
-     "I.1" -> "I.post.3";
-     "I.2" -> "I.post.3";
-     "I.3" -> "I.post.3";
-     "I.1" -> "I.post.1";
-     "I.2" -> "I.post.1";
-     "I.5" -> "I.post.1";
-     "I.16" -> "I.post.1";
-     "I.7" -> "I.5";
-     "I.9" -> "I.8";
-     "I.11" -> "I.8";
-     "I.2" -> "I.cn.3";
-     "I.15" -> "I.cn.3";
-     "I.26" -> "I.16";
-     "I.11" -> "I.def.10";
-     "I.13" -> "I.def.10";
-     "I.16" -> "I.15";
-     "I.16" -> "I.10";
-     "I.13" -> "I.11";
-     "I.4" -> "I.cn.4";
-     "I.2" -> "I.post.2";
-     "I.5" -> "I.post.2";
-     "I.16" -> "I.post.2";
+     "I.3" [fillcolor="#222244", URL="/heath/I/3/", target="_top"];
+     "I.post.1" [fillcolor="#444422", URL="/heath/I/post.1/", target="_top"];
+     "I.cn.1" [fillcolor="#442222", URL="/heath/I/cn.1/", target="_top"];
+     "I.def.10" [fillcolor="#224422", URL="/heath/I/def.10/", target="_top"];
+     "I.15" [fillcolor="#222244", URL="/heath/I/15/", target="_top"];
+     "I.11" [fillcolor="#222244", URL="/heath/I/11/", target="_top"];
+     "I.16" [fillcolor="#222244", URL="/heath/I/16/", target="_top"];
+     "I.cn.3" [fillcolor="#442222", URL="/heath/I/cn.3/", target="_top"];
+     "I.13" [fillcolor="#222244", URL="/heath/I/13/", target="_top"];
+     "I.2" [fillcolor="#222244", URL="/heath/I/2/", target="_top"];
+     "I.post.2" [fillcolor="#444422", URL="/heath/I/post.2/", target="_top"];
+     "I.cn.4" [fillcolor="#442222", URL="/heath/I/cn.4/", target="_top"];
+     "I.9" [fillcolor="#222244", URL="/heath/I/9/", target="_top"];
+     "I.1" [fillcolor="#222244", URL="/heath/I/1/", target="_top"];
+     "I.post.4" [fillcolor="#444422", URL="/heath/I/post.4/", target="_top"];
+     "I.26" [penwidth=3, color="white", fillcolor="#555555", URL="/heath/I/26/", target="_top"];
+     "I.8" [fillcolor="#222244", URL="/heath/I/8/", target="_top"];
+     "I.4" [fillcolor="#222244", URL="/heath/I/4/", target="_top"];
+     "I.post.3" [fillcolor="#444422", URL="/heath/I/post.3/", target="_top"];
+     "I.7" [fillcolor="#222244", URL="/heath/I/7/", target="_top"];
+     "I.def.15" [fillcolor="#224422", URL="/heath/I/def.15/", target="_top"];
+     "I.5" [fillcolor="#222244", URL="/heath/I/5/", target="_top"];
+     "I.10" [fillcolor="#222244", URL="/heath/I/10/", target="_top"];
      "I.5" -> "I.3";
      "I.9" -> "I.3";
      "I.11" -> "I.3";
      "I.16" -> "I.3";
+     "I.1" -> "I.post.1";
+     "I.2" -> "I.post.1";
+     "I.5" -> "I.post.1";
+     "I.16" -> "I.post.1";
+     "I.1" -> "I.cn.1";
+     "I.2" -> "I.cn.1";
+     "I.3" -> "I.cn.1";
+     "I.15" -> "I.cn.1";
+     "I.11" -> "I.def.10";
+     "I.13" -> "I.def.10";
+     "I.16" -> "I.15";
+     "I.13" -> "I.11";
+     "I.26" -> "I.16";
+     "I.2" -> "I.cn.3";
+     "I.15" -> "I.cn.3";
+     "I.15" -> "I.13";
+     "I.3" -> "I.2";
+     "I.2" -> "I.post.2";
+     "I.5" -> "I.post.2";
+     "I.16" -> "I.post.2";
+     "I.4" -> "I.cn.4";
+     "I.10" -> "I.9";
+     "I.2" -> "I.1";
+     "I.10" -> "I.1";
+     "I.11" -> "I.1";
+     "I.15" -> "I.post.4";
+     "I.9" -> "I.8";
+     "I.11" -> "I.8";
+     "I.5" -> "I.4";
+     "I.10" -> "I.4";
+     "I.16" -> "I.4";
+     "I.26" -> "I.4";
+     "I.1" -> "I.post.3";
+     "I.2" -> "I.post.3";
+     "I.3" -> "I.post.3";
+     "I.8" -> "I.7";
+     "I.1" -> "I.def.15";
+     "I.3" -> "I.def.15";
+     "I.7" -> "I.5";
+     "I.16" -> "I.10";
    }
 
 

@@ -17,7 +17,7 @@ V.8
 
 Let ``AB``, ``C`` be unequal magnitudes, and let ``AB`` be greater; let ``D`` be another, chance, magnitude; I say that ``AB`` has to ``D`` a greater ratio than ``C`` has to ``D``, and ``D`` has to ``C`` a greater ratio than it has to ``AB``.
 
-For, since ``AB`` is greater than ``C``, let ``BE`` be made equal to ``C``; then the less of the magnitudes ``AE``, ``EB``, if multiplied, will sometime be greater than ``D``. [:ref:`V.def.4`]
+For, since ``AB`` is greater than ``C``, let ``BE`` be made equal to ``C``; then the less of the magnitudes ``AE``, ``EB``, if multiplied, will sometime be greater than ``D``. [:ref:`V.def.4 <V.def.4>`]
 
 [Case I.]
 
@@ -25,7 +25,7 @@ First, let ``AE`` be less than ``EB``; let ``AE`` be multiplied, and let ``FG`` 
 
 Then, since ``K`` is less than ``N`` first, therefore ``K`` is not less than ``M``.
 
-And, since ``FG`` is the same multiple of ``AE`` that ``GH`` is of ``EB``, therefore ``FG`` is the same multiple of ``AE`` that ``FH`` is of ``AB``. [:ref:`V.1`]
+And, since ``FG`` is the same multiple of ``AE`` that ``GH`` is of ``EB``, therefore ``FG`` is the same multiple of ``AE`` that ``FH`` is of ``AB``. [:ref:`V.1 <V.1>`]
 
 But ``FG`` is the same multiple of ``AE`` that ``K`` is of ``C``;
 
@@ -70,7 +70,7 @@ And ``FH``, ``K`` are equimultiples of ``AB``, ``C``, while ``N`` is another, ch
 
 .. container:: center
 
-   therefore ``AB`` has to ``D`` a greater ratio than ``C`` has to ``D``. [:ref:`V.def.7`]
+   therefore ``AB`` has to ``D`` a greater ratio than ``C`` has to ``D``. [:ref:`V.def.7 <V.def.7>`]
 
 
 I say next, that ``D`` also has to ``C`` a greater ratio than ``D`` has to ``AB``.
@@ -82,14 +82,14 @@ And ``N`` is a multiple of ``D``, while ``FH``, ``K`` are other, chance, equimul
 
 .. container:: center
 
-   therefore ``D`` has to ``C`` a greater ratio than ``D`` has to ``AB``. [:ref:`V.def.7`]
+   therefore ``D`` has to ``C`` a greater ratio than ``D`` has to ``AB``. [:ref:`V.def.7 <V.def.7>`]
 
 
 [Case 2.]
 
 Again, let ``AE`` be greater than ``EB``.
 
-Then the less, ``EB``, if multiplied, will sometime be greater than ``D``. [:ref:`V.def.4`]
+Then the less, ``EB``, if multiplied, will sometime be greater than ``D``. [:ref:`V.def.4 <V.def.4>`]
 
 Let it be multiplied, and let ``GH`` be a multiple of ``EB`` and greater than ``D``; and, whatever multiple ``GH`` is of ``EB``, let ``FG`` be made the same multiple of ``AE``, and ``K``
 
@@ -112,12 +112,14 @@ Dependency Graph
 .. graphviz::
 
    digraph {
+     bgcolor="black";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
+     edge [color="white", fontcolor="white"];
      rankdir="TB";
-     node [shape=box, style=rounded];
-     "V.1" [style="rounded,filled", fillcolor=orange, URL="/heath/V/1/", target="_top"];
-     "V.def.4" [style="rounded,filled", fillcolor=orange, URL="/heath/V/def.4/", target="_top"];
-     "V.def.7" [style="rounded,filled", fillcolor=orange, URL="/heath/V/def.7/", target="_top"];
-     "V.8" [style="rounded,filled", fillcolor=lightblue, URL="/heath/V/8/", target="_top"];
+     "V.8" [penwidth=3, color="white", fillcolor="#555555", URL="/heath/V/8/", target="_top"];
+     "V.1" [fillcolor="#222244", URL="/heath/V/1/", target="_top"];
+     "V.def.4" [fillcolor="#224422", URL="/heath/V/def.4/", target="_top"];
+     "V.def.7" [fillcolor="#224422", URL="/heath/V/def.7/", target="_top"];
      "V.8" -> "V.1";
      "V.8" -> "V.def.4";
      "V.8" -> "V.def.7";

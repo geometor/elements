@@ -18,20 +18,20 @@ I.34
 
 Let ``ACDB`` be a parallelogrammic area, and ``BC`` its diameter; I say that the opposite sides and angles of the parallelogram ``ACDB`` are equal to one another, and the diameter ``BC`` bisects it. 
 
-For, since ``AB`` is parallel to ``CD``, and the straight line ``BC`` has fallen  upon them, the alternate angles ``ABC``, ``BCD`` are equal to one another. [:ref:`I.29`]
+For, since ``AB`` is parallel to ``CD``, and the straight line ``BC`` has fallen  upon them, the alternate angles ``ABC``, ``BCD`` are equal to one another. [:ref:`I.29 <I.29>`]
 
-Again, since ``AC`` is parallel to ``BD``, and ``BC``has fallen upon them, the alternate angles ``ACB``, ``CBD`` are equal to one another. [:ref:`I.29`]
+Again, since ``AC`` is parallel to ``BD``, and ``BC``has fallen upon them, the alternate angles ``ACB``, ``CBD`` are equal to one another. [:ref:`I.29 <I.29>`]
 
-Therefore ``ABC``, ``DCB`` are two triangles having the two angles ``ABC``, ``BCA`` equal to the two angles ``DCB``, ``CBD`` respectively, and one side equal to one side, namely that adjoining the equal angles and common to both of them, ``BC``; therefore they will also have the remaining sides equal to the remaining sides respectively, and the remaining angle to the remaining angle; [:ref:`I.26`] therefore the side ``AB`` is equal to ``CD``, and ``AC`` to ``BD``, and further the angle ``BAC`` is equal to the angle ``CDB``.
+Therefore ``ABC``, ``DCB`` are two triangles having the two angles ``ABC``, ``BCA`` equal to the two angles ``DCB``, ``CBD`` respectively, and one side equal to one side, namely that adjoining the equal angles and common to both of them, ``BC``; therefore they will also have the remaining sides equal to the remaining sides respectively, and the remaining angle to the remaining angle; [:ref:`I.26 <I.26>`] therefore the side ``AB`` is equal to ``CD``, and ``AC`` to ``BD``, and further the angle ``BAC`` is equal to the angle ``CDB``.
 
-And, since the angle ``ABC`` is equal to the angle ``BCD``, and the angle ``CBD`` to the angle ``ACB``, the whole angle ``ABD`` is equal to the whole angle ``ACD``. [:ref:`I.cn.2`]
+And, since the angle ``ABC`` is equal to the angle ``BCD``, and the angle ``CBD`` to the angle ``ACB``, the whole angle ``ABD`` is equal to the whole angle ``ACD``. [:ref:`I.cn.2 <I.cn.2>`]
         And the angle ``BAC`` was also proved equal to the angle ``CDB``.
 
 Therefore in parallelogrammic areas the opposite sides and angles are equal to one another.
 
 I say, next, that the diameter also bisects the areas.
 
-For, since ``AB`` is equal to ``CD``, and ``BC`` is common, the two sides ``AB``, ``BC`` are equal to the two sides ``DC``, ``CB`` respectively; and the angle ``ABC`` is equal to the angle ``BCD``; therefore the base ``AC`` is also equal to ``DB``, and the triangle ``ABC`` is equal to the triangle ``DCB``. [:ref:`I.4`]
+For, since ``AB`` is equal to ``CD``, and ``BC`` is common, the two sides ``AB``, ``BC`` are equal to the two sides ``DC``, ``CB`` respectively; and the angle ``ABC`` is equal to the angle ``BCD``; therefore the base ``AC`` is also equal to ``DB``, and the triangle ``ABC`` is equal to the triangle ``DCB``. [:ref:`I.4 <I.4>`]
 
 Therefore the diameter ``BC`` bisects the parallelogram ``ACDB``.
 
@@ -55,7 +55,7 @@ Q. E. D.
 
     areas (παραλληλόγραμμα χωρία). The meaning is simply areas bounded by parallel straight lines with the further limitation placed upon the term by Euclid that only ``four-sided`` figures are so called, although of course there are certain regular polygons which have opposite sides parallel, and which therefore might be said to be areas bounded by parallel straight lines. We gather from Proclus (p. 393) that the word parallelogram
 
-    was first introduced by Euclid, that its use was suggested by :ref:`I.33`, and that the formation of the word παραλληλόγραμμος (parallel-lined) was analogous to that of εὐθύγραμμος (straight-lined or rectilineal).
+    was first introduced by Euclid, that its use was suggested by :ref:`I.33 <I.33>`, and that the formation of the word παραλληλόγραμμος (parallel-lined) was analogous to that of εὐθύγραμμος (straight-lined or rectilineal).
 
 
 .. note::
@@ -69,7 +69,7 @@ Q. E. D.
 
     and ``CD``, ``BC``
 
-    respectively. Cf. note on :ref:`I.33`, lines 15, 18.
+    respectively. Cf. note on :ref:`I.33 <I.33>`, lines 15, 18.
 
 
 Dependency Graph
@@ -78,88 +78,90 @@ Dependency Graph
 .. graphviz::
 
    digraph {
+     bgcolor="black";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
+     edge [color="white", fontcolor="white"];
      rankdir="TB";
-     node [shape=box, style=rounded];
-     "I.9" [URL="/heath/I/9/", target="_top"];
-     "I.cn.1" [style="rounded,filled", fillcolor=orange, URL="/heath/I/cn.1/", target="_top"];
-     "I.7" [URL="/heath/I/7/", target="_top"];
-     "I.2" [URL="/heath/I/2/", target="_top"];
-     "I.def.15" [style="rounded,filled", fillcolor=orange, URL="/heath/I/def.15/", target="_top"];
-     "I.13" [URL="/heath/I/13/", target="_top"];
-     "I.post.4" [style="rounded,filled", fillcolor=orange, URL="/heath/I/post.4/", target="_top"];
-     "I.4" [URL="/heath/I/4/", target="_top"];
-     "I.1" [URL="/heath/I/1/", target="_top"];
-     "I.post.3" [style="rounded,filled", fillcolor=orange, URL="/heath/I/post.3/", target="_top"];
-     "I.post.1" [style="rounded,filled", fillcolor=orange, URL="/heath/I/post.1/", target="_top"];
-     "I.5" [URL="/heath/I/5/", target="_top"];
-     "I.8" [URL="/heath/I/8/", target="_top"];
-     "I.cn.3" [style="rounded,filled", fillcolor=orange, URL="/heath/I/cn.3/", target="_top"];
-     "I.29" [URL="/heath/I/29/", target="_top"];
-     "I.16" [URL="/heath/I/16/", target="_top"];
-     "I.def.10" [style="rounded,filled", fillcolor=orange, URL="/heath/I/def.10/", target="_top"];
-     "I.15" [URL="/heath/I/15/", target="_top"];
-     "I.10" [URL="/heath/I/10/", target="_top"];
-     "I.11" [URL="/heath/I/11/", target="_top"];
-     "I.cn.2" [style="rounded,filled", fillcolor=orange, URL="/heath/I/cn.2/", target="_top"];
-     "I.post.5" [style="rounded,filled", fillcolor=orange, URL="/heath/I/post.5/", target="_top"];
-     "I.cn.4" [style="rounded,filled", fillcolor=orange, URL="/heath/I/cn.4/", target="_top"];
-     "I.post.2" [style="rounded,filled", fillcolor=orange, URL="/heath/I/post.2/", target="_top"];
-     "I.26" [URL="/heath/I/26/", target="_top"];
-     "I.34" [style="rounded,filled", fillcolor=lightblue, URL="/heath/I/34/", target="_top"];
-     "I.3" [URL="/heath/I/3/", target="_top"];
-     "I.10" -> "I.9";
+     "I.3" [fillcolor="#222244", URL="/heath/I/3/", target="_top"];
+     "I.post.1" [fillcolor="#444422", URL="/heath/I/post.1/", target="_top"];
+     "I.cn.1" [fillcolor="#442222", URL="/heath/I/cn.1/", target="_top"];
+     "I.def.10" [fillcolor="#224422", URL="/heath/I/def.10/", target="_top"];
+     "I.15" [fillcolor="#222244", URL="/heath/I/15/", target="_top"];
+     "I.11" [fillcolor="#222244", URL="/heath/I/11/", target="_top"];
+     "I.16" [fillcolor="#222244", URL="/heath/I/16/", target="_top"];
+     "I.cn.3" [fillcolor="#442222", URL="/heath/I/cn.3/", target="_top"];
+     "I.13" [fillcolor="#222244", URL="/heath/I/13/", target="_top"];
+     "I.2" [fillcolor="#222244", URL="/heath/I/2/", target="_top"];
+     "I.post.2" [fillcolor="#444422", URL="/heath/I/post.2/", target="_top"];
+     "I.cn.2" [fillcolor="#442222", URL="/heath/I/cn.2/", target="_top"];
+     "I.29" [fillcolor="#222244", URL="/heath/I/29/", target="_top"];
+     "I.cn.4" [fillcolor="#442222", URL="/heath/I/cn.4/", target="_top"];
+     "I.9" [fillcolor="#222244", URL="/heath/I/9/", target="_top"];
+     "I.1" [fillcolor="#222244", URL="/heath/I/1/", target="_top"];
+     "I.post.5" [fillcolor="#444422", URL="/heath/I/post.5/", target="_top"];
+     "I.post.4" [fillcolor="#444422", URL="/heath/I/post.4/", target="_top"];
+     "I.26" [fillcolor="#222244", URL="/heath/I/26/", target="_top"];
+     "I.8" [fillcolor="#222244", URL="/heath/I/8/", target="_top"];
+     "I.4" [fillcolor="#222244", URL="/heath/I/4/", target="_top"];
+     "I.post.3" [fillcolor="#444422", URL="/heath/I/post.3/", target="_top"];
+     "I.34" [penwidth=3, color="white", fillcolor="#555555", URL="/heath/I/34/", target="_top"];
+     "I.7" [fillcolor="#222244", URL="/heath/I/7/", target="_top"];
+     "I.def.15" [fillcolor="#224422", URL="/heath/I/def.15/", target="_top"];
+     "I.5" [fillcolor="#222244", URL="/heath/I/5/", target="_top"];
+     "I.10" [fillcolor="#222244", URL="/heath/I/10/", target="_top"];
+     "I.5" -> "I.3";
+     "I.9" -> "I.3";
+     "I.11" -> "I.3";
+     "I.16" -> "I.3";
+     "I.1" -> "I.post.1";
+     "I.2" -> "I.post.1";
+     "I.5" -> "I.post.1";
+     "I.16" -> "I.post.1";
      "I.1" -> "I.cn.1";
      "I.2" -> "I.cn.1";
      "I.3" -> "I.cn.1";
      "I.15" -> "I.cn.1";
      "I.29" -> "I.cn.1";
-     "I.8" -> "I.7";
-     "I.3" -> "I.2";
-     "I.1" -> "I.def.15";
-     "I.3" -> "I.def.15";
+     "I.11" -> "I.def.10";
+     "I.13" -> "I.def.10";
+     "I.16" -> "I.15";
+     "I.29" -> "I.15";
+     "I.13" -> "I.11";
+     "I.26" -> "I.16";
+     "I.2" -> "I.cn.3";
+     "I.15" -> "I.cn.3";
      "I.15" -> "I.13";
      "I.29" -> "I.13";
+     "I.3" -> "I.2";
+     "I.2" -> "I.post.2";
+     "I.5" -> "I.post.2";
+     "I.16" -> "I.post.2";
+     "I.29" -> "I.cn.2";
+     "I.34" -> "I.cn.2";
+     "I.34" -> "I.29";
+     "I.4" -> "I.cn.4";
+     "I.10" -> "I.9";
+     "I.2" -> "I.1";
+     "I.10" -> "I.1";
+     "I.11" -> "I.1";
+     "I.29" -> "I.post.5";
      "I.15" -> "I.post.4";
+     "I.34" -> "I.26";
+     "I.9" -> "I.8";
+     "I.11" -> "I.8";
      "I.5" -> "I.4";
      "I.10" -> "I.4";
      "I.16" -> "I.4";
      "I.26" -> "I.4";
      "I.34" -> "I.4";
-     "I.2" -> "I.1";
-     "I.10" -> "I.1";
-     "I.11" -> "I.1";
      "I.1" -> "I.post.3";
      "I.2" -> "I.post.3";
      "I.3" -> "I.post.3";
-     "I.1" -> "I.post.1";
-     "I.2" -> "I.post.1";
-     "I.5" -> "I.post.1";
-     "I.16" -> "I.post.1";
+     "I.8" -> "I.7";
+     "I.1" -> "I.def.15";
+     "I.3" -> "I.def.15";
      "I.7" -> "I.5";
-     "I.9" -> "I.8";
-     "I.11" -> "I.8";
-     "I.2" -> "I.cn.3";
-     "I.15" -> "I.cn.3";
-     "I.34" -> "I.29";
-     "I.26" -> "I.16";
-     "I.11" -> "I.def.10";
-     "I.13" -> "I.def.10";
-     "I.16" -> "I.15";
-     "I.29" -> "I.15";
      "I.16" -> "I.10";
-     "I.13" -> "I.11";
-     "I.29" -> "I.cn.2";
-     "I.34" -> "I.cn.2";
-     "I.29" -> "I.post.5";
-     "I.4" -> "I.cn.4";
-     "I.2" -> "I.post.2";
-     "I.5" -> "I.post.2";
-     "I.16" -> "I.post.2";
-     "I.34" -> "I.26";
-     "I.5" -> "I.3";
-     "I.9" -> "I.3";
-     "I.11" -> "I.3";
-     "I.16" -> "I.3";
    }
 
 

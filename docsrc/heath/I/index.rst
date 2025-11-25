@@ -34,7 +34,7 @@ Postulates
 ----------
 
 .. collection::
-   :type: postulate
+   :type: post
    :sort: number
 
 .. _book-i-prop:

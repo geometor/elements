@@ -1,0 +1,2033 @@
+Compiling SASS for all themes...
+  Compiling SASS for theme: photon
+  Compiling SASS for theme: foundation
+SASS compilation successful.
+Starting Sphinx build for project at: /home/phi/PROJECTS/geometor/elements
+[01mRunning Sphinx v8.2.3[39;49;00m
+[01mloading translations [en]... [39;49;00mdone
+loading intersphinx inventory 'python' from https://docs.python.org/3.9/objects.inv ...
+loading intersphinx inventory 'sympy' from https://docs.sympy.org/latest/objects.inv ...
+[01mmyst v4.0.1:[39;49;00m MdParserConfig(commonmark_only=False, gfm_only=False, enable_extensions=set(), disable_syntax=[], all_links_external=False, links_external_new_tab=False, url_schemes=('http', 'https', 'mailto', 'ftp'), ref_domains=None, fence_as_directive=set(), number_code_blocks=[], title_to_header=False, heading_anchors=0, heading_slug_func=None, html_meta={}, footnote_sort=True, footnote_transition=True, words_per_minute=200, substitutions={}, linkify_fuzzy_links=True, dmath_allow_labels=True, dmath_allow_space=True, dmath_allow_digits=True, dmath_double_inline=False, update_mathjax=True, mathjax_classes='tex2jax_process|mathjax_process|math|output_area', enable_checkboxes=False, suppress_warnings=[], highlight_code_blocks=True)
+Writing evaluated template result to /home/phi/PROJECTS/geometor/elements/docs/_static/carousel-custom.css
+[01m[01m[AutoAPI] Reading files... [39;49;00m[39;49;00m[  3%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/xml_parser.py[39;49;00m
+[01m[01m[AutoAPI] Reading files... [39;49;00m[39;49;00m[  6%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/app.py[39;49;00m
+[01m[01m[AutoAPI] Reading files... [39;49;00m[39;49;00m[  9%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/__main__.py[39;49;00m
+[01m[01m[AutoAPI] Reading files... [39;49;00m[39;49;00m[ 12%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/graph.py[39;49;00m
+[01m[01m[AutoAPI] Reading files... [39;49;00m[39;49;00m[ 16%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/g_index.py[39;49;00m
+[01m[01m[AutoAPI] Reading files... [39;49;00m[39;49;00m[ 19%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/transform.py[39;49;00m
+[01m[01m[AutoAPI] Reading files... [39;49;00m[39;49;00m[ 22%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/rst_builder.py[39;49;00m
+[01m[01m[AutoAPI] Reading files... [39;49;00m[39;49;00m[ 25%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/elements.py[39;49;00m
+[01m[01m[AutoAPI] Reading files... [39;49;00m[39;49;00m[ 28%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/utils.py[39;49;00m
+[01m[01m[AutoAPI] Reading files... [39;49;00m[39;49;00m[ 31%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/rst_generator.py[39;49;00m
+[01m[01m[AutoAPI] Reading files... [39;49;00m[39;49;00m[ 34%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/__init__.py[39;49;00m
+[01m[01m[AutoAPI] Reading files... [39;49;00m[39;49;00m[ 38%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/legacy/check_refs.py[39;49;00m
+[01m[01m[AutoAPI] Reading files... [39;49;00m[39;49;00m[ 41%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/legacy/__init__.py[39;49;00m
+[01m[01m[AutoAPI] Reading files... [39;49;00m[39;49;00m[ 44%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/ingest/cropping.py[39;49;00m
+[01m[01m[AutoAPI] Reading files... [39;49;00m[39;49;00m[ 47%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/ingest/refine.py[39;49;00m
+[01m[01m[AutoAPI] Reading files... [39;49;00m[39;49;00m[ 50%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/ingest/scan_propositions.py[39;49;00m
+[01m[01m[AutoAPI] Reading files... [39;49;00m[39;49;00m[ 53%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/ingest/stitch_propositions.py[39;49;00m
+[01m[01m[AutoAPI] Reading files... [39;49;00m[39;49;00m[ 56%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/ingest/detect_graphics_cv.py[39;49;00m
+[01m[01m[AutoAPI] Reading files... [39;49;00m[39;49;00m[ 59%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/ingest/organization.py[39;49;00m
+[01m[01m[AutoAPI] Reading files... [39;49;00m[39;49;00m[ 62%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/ingest/analysis.py[39;49;00m
+[01m[01m[AutoAPI] Reading files... [39;49;00m[39;49;00m[ 66%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/ingest/compare_models.py[39;49;00m
+[01m[01m[AutoAPI] Reading files... [39;49;00m[39;49;00m[ 69%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/ingest/image_processing.py[39;49;00m
+[01m[01m[AutoAPI] Reading files... [39;49;00m[39;49;00m[ 72%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/ingest/cleanup.py[39;49;00m
+[01m[01m[AutoAPI] Reading files... [39;49;00m[39;49;00m[ 75%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/ingest/pipeline.py[39;49;00m
+[01m[01m[AutoAPI] Reading files... [39;49;00m[39;49;00m[ 78%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/ingest/generate_index.py[39;49;00m
+[01m[01m[AutoAPI] Reading files... [39;49;00m[39;49;00m[ 81%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/ingest/detect_graphics.py[39;49;00m
+[01m[01m[AutoAPI] Reading files... [39;49;00m[39;49;00m[ 84%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/ingest/extraction.py[39;49;00m
+[01m[01m[AutoAPI] Reading files... [39;49;00m[39;49;00m[ 88%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/ingest/utils.py[39;49;00m
+[01m[01m[AutoAPI] Reading files... [39;49;00m[39;49;00m[ 91%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/ingest/__init__.py[39;49;00m
+[01m[01m[AutoAPI] Reading files... [39;49;00m[39;49;00m[ 94%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/ingest/config.py[39;49;00m
+[01m[01m[AutoAPI] Reading files... [39;49;00m[39;49;00m[ 97%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/ingest/metadata_extraction/metadata_extraction.py[39;49;00m
+[01m[01m[AutoAPI] Reading files... [39;49;00m[39;49;00m[100%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/ingest/metadata_extraction/__init__.py[39;49;00m
+
+[01m[01m[AutoAPI] [39;49;00mMapping Data... [39;49;00m[  3%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/xml_parser.py[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mMapping Data... [39;49;00m[  6%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/app.py[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mMapping Data... [39;49;00m[  9%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/__main__.py[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mMapping Data... [39;49;00m[ 12%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/graph.py[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mMapping Data... [39;49;00m[ 16%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/g_index.py[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mMapping Data... [39;49;00m[ 19%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/transform.py[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mMapping Data... [39;49;00m[ 22%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/rst_builder.py[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mMapping Data... [39;49;00m[ 25%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/elements.py[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mMapping Data... [39;49;00m[ 28%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/utils.py[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mMapping Data... [39;49;00m[ 31%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/rst_generator.py[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mMapping Data... [39;49;00m[ 34%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/__init__.py[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mMapping Data... [39;49;00m[ 38%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/legacy/check_refs.py[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mMapping Data... [39;49;00m[ 41%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/legacy/__init__.py[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mMapping Data... [39;49;00m[ 44%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/ingest/cropping.py[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mMapping Data... [39;49;00m[ 47%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/ingest/refine.py[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mMapping Data... [39;49;00m[ 50%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/ingest/scan_propositions.py[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mMapping Data... [39;49;00m[ 53%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/ingest/stitch_propositions.py[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mMapping Data... [39;49;00m[ 56%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/ingest/detect_graphics_cv.py[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mMapping Data... [39;49;00m[ 59%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/ingest/organization.py[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mMapping Data... [39;49;00m[ 62%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/ingest/analysis.py[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mMapping Data... [39;49;00m[ 66%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/ingest/compare_models.py[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mMapping Data... [39;49;00m[ 69%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/ingest/image_processing.py[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mMapping Data... [39;49;00m[ 72%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/ingest/cleanup.py[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mMapping Data... [39;49;00m[ 75%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/ingest/pipeline.py[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mMapping Data... [39;49;00m[ 78%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/ingest/generate_index.py[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mMapping Data... [39;49;00m[ 81%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/ingest/detect_graphics.py[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mMapping Data... [39;49;00m[ 84%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/ingest/extraction.py[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mMapping Data... [39;49;00m[ 88%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/ingest/utils.py[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mMapping Data... [39;49;00m[ 91%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/ingest/__init__.py[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mMapping Data... [39;49;00m[ 94%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/ingest/config.py[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mMapping Data... [39;49;00m[ 97%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/ingest/metadata_extraction/metadata_extraction.py[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mMapping Data... [39;49;00m[100%] [32m/home/phi/PROJECTS/geometor/elements/src/geometor/elements/ingest/metadata_extraction/__init__.py[39;49;00m
+
+[01m[01m[AutoAPI] [39;49;00mRendering Data... [39;49;00m[  3%] [32melements[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mRendering Data... [39;49;00m[  6%] [32melements.app[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mRendering Data... [39;49;00m[  9%] [32melements.graph[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mRendering Data... [39;49;00m[ 12%] [32melements.utils[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mRendering Data... [39;49;00m[ 16%] [32melements.legacy[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mRendering Data... [39;49;00m[ 19%] [32melements.ingest[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mRendering Data... [39;49;00m[ 22%] [32melements.g_index[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mRendering Data... [39;49;00m[ 25%] [32melements.__main__[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mRendering Data... [39;49;00m[ 28%] [32melements.elements[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mRendering Data... [39;49;00m[ 31%] [32melements.transform[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mRendering Data... [39;49;00m[ 34%] [32melements.xml_parser[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mRendering Data... [39;49;00m[ 38%] [32melements.rst_builder[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mRendering Data... [39;49;00m[ 41%] [32melements.ingest.utils[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mRendering Data... [39;49;00m[ 44%] [32melements.rst_generator[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mRendering Data... [39;49;00m[ 47%] [32melements.ingest.refine[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mRendering Data... [39;49;00m[ 50%] [32melements.ingest.config[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mRendering Data... [39;49;00m[ 53%] [32melements.ingest.cleanup[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mRendering Data... [39;49;00m[ 56%] [32melements.ingest.cropping[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mRendering Data... [39;49;00m[ 59%] [32melements.ingest.analysis[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mRendering Data... [39;49;00m[ 62%] [32melements.ingest.pipeline[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mRendering Data... [39;49;00m[ 66%] [32melements.legacy.check_refs[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mRendering Data... [39;49;00m[ 69%] [32melements.ingest.extraction[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mRendering Data... [39;49;00m[ 72%] [32melements.ingest.organization[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mRendering Data... [39;49;00m[ 75%] [32melements.ingest.compare_models[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mRendering Data... [39;49;00m[ 78%] [32melements.ingest.generate_index[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mRendering Data... [39;49;00m[ 81%] [32melements.ingest.detect_graphics[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mRendering Data... [39;49;00m[ 84%] [32melements.ingest.image_processing[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mRendering Data... [39;49;00m[ 88%] [32melements.ingest.scan_propositions[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mRendering Data... [39;49;00m[ 91%] [32melements.ingest.detect_graphics_cv[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mRendering Data... [39;49;00m[ 94%] [32melements.ingest.stitch_propositions[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mRendering Data... [39;49;00m[ 97%] [32melements.ingest.metadata_extraction[39;49;00m
+[01m[01m[AutoAPI] [39;49;00mRendering Data... [39;49;00m[100%] [32melements.ingest.metadata_extraction.metadata_extraction[39;49;00m
+
+[autosummary] generating autosummary for: _build/html/_static/fonts/Fira_Code/OFL.txt, _build/html/_static/fonts/Fira_Code/README.txt, _build/html/_static/fonts/Fira_Mono/OFL.txt, _build/html/_static/fonts/Fira_Sans/OFL.txt, _build/html/_static/fonts/Fira_Sans_Condensed/OFL.txt, _build/html/_static/fonts/Fira_Sans_Extra_Condensed/OFL.txt, changelog.rst, design.rst, glossary.rst, heath/I/1/index.rst, ..., heath/XIII/index.rst, heath/index.rst, index.rst, intro.rst, log/index.rst, mission/index.rst, modules/index.rst, quadrance.md, todos.rst, usage.rst
+[01mbuilding [mo]: [39;49;00mtargets for 0 po files that are out of date
+[01mwriting output... [39;49;00m
+[01mbuilding [html]: [39;49;00mtargets for 638 source files that are out of date
+[01mupdating environment: [39;49;00m[new config] 671 added, 0 changed, 0 removed
+[01mreading sources... [39;49;00m[  0%] [35m_build/html/_static/fonts/Fira_Code/OFL[39;49;00m
+[01mreading sources... [39;49;00m[  0%] [35m_build/html/_static/fonts/Fira_Code/README[39;49;00m
+[01mreading sources... [39;49;00m[  0%] [35m_build/html/_static/fonts/Fira_Mono/OFL[39;49;00m
+[01mreading sources... [39;49;00m[  1%] [35m_build/html/_static/fonts/Fira_Sans/OFL[39;49;00m
+[01mreading sources... [39;49;00m[  1%] [35m_build/html/_static/fonts/Fira_Sans_Condensed/OFL[39;49;00m
+[01mreading sources... [39;49;00m[  1%] [35m_build/html/_static/fonts/Fira_Sans_Extra_Condensed/OFL[39;49;00m
+[01mreading sources... [39;49;00m[  1%] [35mchangelog[39;49;00m
+[01mreading sources... [39;49;00m[  1%] [35mdesign[39;49;00m
+[01mreading sources... [39;49;00m[  1%] [35mglossary[39;49;00m
+[01mreading sources... [39;49;00m[  1%] [35mheath/I/1/index[39;49;00m
+[01mreading sources... [39;49;00m[  2%] [35mheath/I/10/index[39;49;00m
+[01mreading sources... [39;49;00m[  2%] [35mheath/I/11/index[39;49;00m
+[01mreading sources... [39;49;00m[  2%] [35mheath/I/12/index[39;49;00m
+[01mreading sources... [39;49;00m[  2%] [35mheath/I/13/index[39;49;00m
+[01mreading sources... [39;49;00m[  2%] [35mheath/I/14/index[39;49;00m
+[01mreading sources... [39;49;00m[  2%] [35mheath/I/15/index[39;49;00m
+[01mreading sources... [39;49;00m[  3%] [35mheath/I/16/index[39;49;00m
+[01mreading sources... [39;49;00m[  3%] [35mheath/I/17/index[39;49;00m
+[01mreading sources... [39;49;00m[  3%] [35mheath/I/18/index[39;49;00m
+[01mreading sources... [39;49;00m[  3%] [35mheath/I/19/index[39;49;00m
+[01mreading sources... [39;49;00m[  3%] [35mheath/I/2/index[39;49;00m
+[01mreading sources... [39;49;00m[  3%] [35mheath/I/20/index[39;49;00m
+[01mreading sources... [39;49;00m[  3%] [35mheath/I/21/index[39;49;00m
+[01mreading sources... [39;49;00m[  4%] [35mheath/I/22/index[39;49;00m
+[01mreading sources... [39;49;00m[  4%] [35mheath/I/23/index[39;49;00m
+[01mreading sources... [39;49;00m[  4%] [35mheath/I/24/index[39;49;00m
+[01mreading sources... [39;49;00m[  4%] [35mheath/I/25/index[39;49;00m
+[01mreading sources... [39;49;00m[  4%] [35mheath/I/26/index[39;49;00m
+[01mreading sources... [39;49;00m[  4%] [35mheath/I/27/index[39;49;00m
+[01mreading sources... [39;49;00m[  4%] [35mheath/I/28/index[39;49;00m
+[01mreading sources... [39;49;00m[  5%] [35mheath/I/29/index[39;49;00m
+[01mreading sources... [39;49;00m[  5%] [35mheath/I/3/index[39;49;00m
+[01mreading sources... [39;49;00m[  5%] [35mheath/I/30/index[39;49;00m
+[01mreading sources... [39;49;00m[  5%] [35mheath/I/31/index[39;49;00m
+[01mreading sources... [39;49;00m[  5%] [35mheath/I/32/index[39;49;00m
+[01mreading sources... [39;49;00m[  5%] [35mheath/I/33/index[39;49;00m
+[01mreading sources... [39;49;00m[  6%] [35mheath/I/34/index[39;49;00m
+[01mreading sources... [39;49;00m[  6%] [35mheath/I/35/index[39;49;00m
+[01mreading sources... [39;49;00m[  6%] [35mheath/I/36/index[39;49;00m
+[01mreading sources... [39;49;00m[  6%] [35mheath/I/37/index[39;49;00m
+[01mreading sources... [39;49;00m[  6%] [35mheath/I/38/index[39;49;00m
+[01mreading sources... [39;49;00m[  6%] [35mheath/I/39/index[39;49;00m
+[01mreading sources... [39;49;00m[  6%] [35mheath/I/4/index[39;49;00m
+[01mreading sources... [39;49;00m[  7%] [35mheath/I/40/index[39;49;00m
+[01mreading sources... [39;49;00m[  7%] [35mheath/I/41/index[39;49;00m
+[01mreading sources... [39;49;00m[  7%] [35mheath/I/42/index[39;49;00m
+[01mreading sources... [39;49;00m[  7%] [35mheath/I/43/index[39;49;00m
+[01mreading sources... [39;49;00m[  7%] [35mheath/I/44/index[39;49;00m
+[01mreading sources... [39;49;00m[  7%] [35mheath/I/45/index[39;49;00m
+[01mreading sources... [39;49;00m[  7%] [35mheath/I/46/index[39;49;00m
+[01mreading sources... [39;49;00m[  8%] [35mheath/I/47/index[39;49;00m
+[01mreading sources... [39;49;00m[  8%] [35mheath/I/48/index[39;49;00m
+[01mreading sources... [39;49;00m[  8%] [35mheath/I/5/index[39;49;00m
+[01mreading sources... [39;49;00m[  8%] [35mheath/I/6/index[39;49;00m
+[01mreading sources... [39;49;00m[  8%] [35mheath/I/7/index[39;49;00m
+[01mreading sources... [39;49;00m[  8%] [35mheath/I/8/index[39;49;00m
+[01mreading sources... [39;49;00m[  8%] [35mheath/I/9/index[39;49;00m
+[01mreading sources... [39;49;00m[  9%] [35mheath/I/cn.1/index[39;49;00m
+[01mreading sources... [39;49;00m[  9%] [35mheath/I/cn.2/index[39;49;00m
+[01mreading sources... [39;49;00m[  9%] [35mheath/I/cn.3/index[39;49;00m
+[01mreading sources... [39;49;00m[  9%] [35mheath/I/cn.4/index[39;49;00m
+[01mreading sources... [39;49;00m[  9%] [35mheath/I/cn.5/index[39;49;00m
+[01mreading sources... [39;49;00m[  9%] [35mheath/I/def.1/index[39;49;00m
+[01mreading sources... [39;49;00m[ 10%] [35mheath/I/def.10/index[39;49;00m
+[01mreading sources... [39;49;00m[ 10%] [35mheath/I/def.11/index[39;49;00m
+[01mreading sources... [39;49;00m[ 10%] [35mheath/I/def.12/index[39;49;00m
+[01mreading sources... [39;49;00m[ 10%] [35mheath/I/def.13/index[39;49;00m
+[01mreading sources... [39;49;00m[ 10%] [35mheath/I/def.14/index[39;49;00m
+[01mreading sources... [39;49;00m[ 10%] [35mheath/I/def.15/index[39;49;00m
+[01mreading sources... [39;49;00m[ 10%] [35mheath/I/def.16/index[39;49;00m
+[01mreading sources... [39;49;00m[ 11%] [35mheath/I/def.17/index[39;49;00m
+[01mreading sources... [39;49;00m[ 11%] [35mheath/I/def.18/index[39;49;00m
+[01mreading sources... [39;49;00m[ 11%] [35mheath/I/def.19/index[39;49;00m
+[01mreading sources... [39;49;00m[ 11%] [35mheath/I/def.2/index[39;49;00m
+[01mreading sources... [39;49;00m[ 11%] [35mheath/I/def.20/index[39;49;00m
+[01mreading sources... [39;49;00m[ 11%] [35mheath/I/def.21/index[39;49;00m
+[01mreading sources... [39;49;00m[ 11%] [35mheath/I/def.22/index[39;49;00m
+[01mreading sources... [39;49;00m[ 12%] [35mheath/I/def.23/index[39;49;00m
+[01mreading sources... [39;49;00m[ 12%] [35mheath/I/def.3/index[39;49;00m
+[01mreading sources... [39;49;00m[ 12%] [35mheath/I/def.4/index[39;49;00m
+[01mreading sources... [39;49;00m[ 12%] [35mheath/I/def.5/index[39;49;00m
+[01mreading sources... [39;49;00m[ 12%] [35mheath/I/def.6/index[39;49;00m
+[01mreading sources... [39;49;00m[ 12%] [35mheath/I/def.7/index[39;49;00m
+[01mreading sources... [39;49;00m[ 13%] [35mheath/I/def.8/index[39;49;00m
+[01mreading sources... [39;49;00m[ 13%] [35mheath/I/def.9/index[39;49;00m
+[01mreading sources... [39;49;00m[ 13%] [35mheath/I/index[39;49;00m
+[01mreading sources... [39;49;00m[ 13%] [35mheath/I/post.1/index[39;49;00m
+[01mreading sources... [39;49;00m[ 13%] [35mheath/I/post.2/index[39;49;00m
+[01mreading sources... [39;49;00m[ 13%] [35mheath/I/post.3/index[39;49;00m
+[01mreading sources... [39;49;00m[ 13%] [35mheath/I/post.4/index[39;49;00m
+[01mreading sources... [39;49;00m[ 14%] [35mheath/I/post.5/index[39;49;00m
+[01mreading sources... [39;49;00m[ 14%] [35mheath/II/1/index[39;49;00m
+[01mreading sources... [39;49;00m[ 14%] [35mheath/II/10/index[39;49;00m
+[01mreading sources... [39;49;00m[ 14%] [35mheath/II/11/index[39;49;00m
+[01mreading sources... [39;49;00m[ 14%] [35mheath/II/12/index[39;49;00m
+[01mreading sources... [39;49;00m[ 14%] [35mheath/II/13/index[39;49;00m
+[01mreading sources... [39;49;00m[ 14%] [35mheath/II/14/index[39;49;00m
+[01mreading sources... [39;49;00m[ 15%] [35mheath/II/2/index[39;49;00m
+[01mreading sources... [39;49;00m[ 15%] [35mheath/II/3/index[39;49;00m
+[01mreading sources... [39;49;00m[ 15%] [35mheath/II/4/index[39;49;00m
+[01mreading sources... [39;49;00m[ 15%] [35mheath/II/5/index[39;49;00m
+[01mreading sources... [39;49;00m[ 15%] [35mheath/II/6/index[39;49;00m
+[01mreading sources... [39;49;00m[ 15%] [35mheath/II/7/index[39;49;00m
+[01mreading sources... [39;49;00m[ 15%] [35mheath/II/8/index[39;49;00m
+[01mreading sources... [39;49;00m[ 16%] [35mheath/II/9/index[39;49;00m
+[01mreading sources... [39;49;00m[ 16%] [35mheath/II/def.1/index[39;49;00m
+[01mreading sources... [39;49;00m[ 16%] [35mheath/II/def.2/index[39;49;00m
+[01mreading sources... [39;49;00m[ 16%] [35mheath/II/index[39;49;00m
+[01mreading sources... [39;49;00m[ 16%] [35mheath/III/1/index[39;49;00m
+[01mreading sources... [39;49;00m[ 16%] [35mheath/III/10/index[39;49;00m
+[01mreading sources... [39;49;00m[ 17%] [35mheath/III/11/index[39;49;00m
+[01mreading sources... [39;49;00m[ 17%] [35mheath/III/12/index[39;49;00m
+[01mreading sources... [39;49;00m[ 17%] [35mheath/III/13/index[39;49;00m
+[01mreading sources... [39;49;00m[ 17%] [35mheath/III/14/index[39;49;00m
+[01mreading sources... [39;49;00m[ 17%] [35mheath/III/15/index[39;49;00m
+[01mreading sources... [39;49;00m[ 17%] [35mheath/III/16/index[39;49;00m
+[01mreading sources... [39;49;00m[ 17%] [35mheath/III/17/index[39;49;00m
+[01mreading sources... [39;49;00m[ 18%] [35mheath/III/18/index[39;49;00m
+[01mreading sources... [39;49;00m[ 18%] [35mheath/III/19/index[39;49;00m
+[01mreading sources... [39;49;00m[ 18%] [35mheath/III/2/index[39;49;00m
+[01mreading sources... [39;49;00m[ 18%] [35mheath/III/20/index[39;49;00m
+[01mreading sources... [39;49;00m[ 18%] [35mheath/III/21/index[39;49;00m
+[01mreading sources... [39;49;00m[ 18%] [35mheath/III/22/index[39;49;00m
+[01mreading sources... [39;49;00m[ 18%] [35mheath/III/23/index[39;49;00m
+[01mreading sources... [39;49;00m[ 19%] [35mheath/III/24/index[39;49;00m
+[01mreading sources... [39;49;00m[ 19%] [35mheath/III/25/index[39;49;00m
+[01mreading sources... [39;49;00m[ 19%] [35mheath/III/26/index[39;49;00m
+[01mreading sources... [39;49;00m[ 19%] [35mheath/III/27/index[39;49;00m
+[01mreading sources... [39;49;00m[ 19%] [35mheath/III/28/index[39;49;00m
+[01mreading sources... [39;49;00m[ 19%] [35mheath/III/29/index[39;49;00m
+[01mreading sources... [39;49;00m[ 20%] [35mheath/III/3/index[39;49;00m
+[01mreading sources... [39;49;00m[ 20%] [35mheath/III/30/index[39;49;00m
+[01mreading sources... [39;49;00m[ 20%] [35mheath/III/31/index[39;49;00m
+[01mreading sources... [39;49;00m[ 20%] [35mheath/III/32/index[39;49;00m
+[01mreading sources... [39;49;00m[ 20%] [35mheath/III/33/index[39;49;00m
+[01mreading sources... [39;49;00m[ 20%] [35mheath/III/34/index[39;49;00m
+[01mreading sources... [39;49;00m[ 20%] [35mheath/III/35/index[39;49;00m
+[01mreading sources... [39;49;00m[ 21%] [35mheath/III/36/index[39;49;00m
+[01mreading sources... [39;49;00m[ 21%] [35mheath/III/37/index[39;49;00m
+[01mreading sources... [39;49;00m[ 21%] [35mheath/III/4/index[39;49;00m
+[01mreading sources... [39;49;00m[ 21%] [35mheath/III/5/index[39;49;00m
+[01mreading sources... [39;49;00m[ 21%] [35mheath/III/6/index[39;49;00m
+[01mreading sources... [39;49;00m[ 21%] [35mheath/III/7/index[39;49;00m
+[01mreading sources... [39;49;00m[ 21%] [35mheath/III/8/index[39;49;00m
+[01mreading sources... [39;49;00m[ 22%] [35mheath/III/9/index[39;49;00m
+[01mreading sources... [39;49;00m[ 22%] [35mheath/III/def.1/index[39;49;00m
+[01mreading sources... [39;49;00m[ 22%] [35mheath/III/def.10/index[39;49;00m
+[01mreading sources... [39;49;00m[ 22%] [35mheath/III/def.11/index[39;49;00m
+[01mreading sources... [39;49;00m[ 22%] [35mheath/III/def.2/index[39;49;00m
+[01mreading sources... [39;49;00m[ 22%] [35mheath/III/def.3/index[39;49;00m
+[01mreading sources... [39;49;00m[ 23%] [35mheath/III/def.4/index[39;49;00m
+[01mreading sources... [39;49;00m[ 23%] [35mheath/III/def.5/index[39;49;00m
+[01mreading sources... [39;49;00m[ 23%] [35mheath/III/def.6/index[39;49;00m
+[01mreading sources... [39;49;00m[ 23%] [35mheath/III/def.7/index[39;49;00m
+[01mreading sources... [39;49;00m[ 23%] [35mheath/III/def.8/index[39;49;00m
+[01mreading sources... [39;49;00m[ 23%] [35mheath/III/def.9/index[39;49;00m
+[01mreading sources... [39;49;00m[ 23%] [35mheath/III/index[39;49;00m
+[01mreading sources... [39;49;00m[ 24%] [35mheath/IV/1/index[39;49;00m
+[01mreading sources... [39;49;00m[ 24%] [35mheath/IV/10/index[39;49;00m
+[01mreading sources... [39;49;00m[ 24%] [35mheath/IV/11/index[39;49;00m
+[01mreading sources... [39;49;00m[ 24%] [35mheath/IV/12/index[39;49;00m
+[01mreading sources... [39;49;00m[ 24%] [35mheath/IV/13/index[39;49;00m
+[01mreading sources... [39;49;00m[ 24%] [35mheath/IV/14/index[39;49;00m
+[01mreading sources... [39;49;00m[ 24%] [35mheath/IV/15/index[39;49;00m
+[01mreading sources... [39;49;00m[ 25%] [35mheath/IV/16/index[39;49;00m
+[01mreading sources... [39;49;00m[ 25%] [35mheath/IV/2/index[39;49;00m
+[01mreading sources... [39;49;00m[ 25%] [35mheath/IV/3/index[39;49;00m
+[01mreading sources... [39;49;00m[ 25%] [35mheath/IV/4/index[39;49;00m
+[01mreading sources... [39;49;00m[ 25%] [35mheath/IV/5/index[39;49;00m
+[01mreading sources... [39;49;00m[ 25%] [35mheath/IV/6/index[39;49;00m
+[01mreading sources... [39;49;00m[ 25%] [35mheath/IV/7/index[39;49;00m
+[01mreading sources... [39;49;00m[ 26%] [35mheath/IV/8/index[39;49;00m
+[01mreading sources... [39;49;00m[ 26%] [35mheath/IV/9/index[39;49;00m
+[01mreading sources... [39;49;00m[ 26%] [35mheath/IV/def.1/index[39;49;00m
+[01mreading sources... [39;49;00m[ 26%] [35mheath/IV/def.2/index[39;49;00m
+[01mreading sources... [39;49;00m[ 26%] [35mheath/IV/def.3/index[39;49;00m
+[01mreading sources... [39;49;00m[ 26%] [35mheath/IV/def.4/index[39;49;00m
+[01mreading sources... [39;49;00m[ 27%] [35mheath/IV/def.5/index[39;49;00m
+[01mreading sources... [39;49;00m[ 27%] [35mheath/IV/def.6/index[39;49;00m
+[01mreading sources... [39;49;00m[ 27%] [35mheath/IV/def.7/index[39;49;00m
+[01mreading sources... [39;49;00m[ 27%] [35mheath/IV/index[39;49;00m
+[01mreading sources... [39;49;00m[ 27%] [35mheath/IX/1/index[39;49;00m
+[01mreading sources... [39;49;00m[ 27%] [35mheath/IX/10/index[39;49;00m
+[01mreading sources... [39;49;00m[ 27%] [35mheath/IX/11/index[39;49;00m
+[01mreading sources... [39;49;00m[ 28%] [35mheath/IX/12/index[39;49;00m
+[01mreading sources... [39;49;00m[ 28%] [35mheath/IX/13/index[39;49;00m
+[01mreading sources... [39;49;00m[ 28%] [35mheath/IX/14/index[39;49;00m
+[01mreading sources... [39;49;00m[ 28%] [35mheath/IX/15/index[39;49;00m
+[01mreading sources... [39;49;00m[ 28%] [35mheath/IX/16/index[39;49;00m
+[01mreading sources... [39;49;00m[ 28%] [35mheath/IX/17/index[39;49;00m
+[01mreading sources... [39;49;00m[ 28%] [35mheath/IX/18/index[39;49;00m
+[01mreading sources... [39;49;00m[ 29%] [35mheath/IX/19/index[39;49;00m
+[01mreading sources... [39;49;00m[ 29%] [35mheath/IX/2/index[39;49;00m
+[01mreading sources... [39;49;00m[ 29%] [35mheath/IX/20/index[39;49;00m
+[01mreading sources... [39;49;00m[ 29%] [35mheath/IX/21/index[39;49;00m
+[01mreading sources... [39;49;00m[ 29%] [35mheath/IX/22/index[39;49;00m
+[01mreading sources... [39;49;00m[ 29%] [35mheath/IX/23/index[39;49;00m
+[01mreading sources... [39;49;00m[ 30%] [35mheath/IX/24/index[39;49;00m
+[01mreading sources... [39;49;00m[ 30%] [35mheath/IX/25/index[39;49;00m
+[01mreading sources... [39;49;00m[ 30%] [35mheath/IX/26/index[39;49;00m
+[01mreading sources... [39;49;00m[ 30%] [35mheath/IX/27/index[39;49;00m
+[01mreading sources... [39;49;00m[ 30%] [35mheath/IX/28/index[39;49;00m
+[01mreading sources... [39;49;00m[ 30%] [35mheath/IX/29/index[39;49;00m
+[01mreading sources... [39;49;00m[ 30%] [35mheath/IX/3/index[39;49;00m
+[01mreading sources... [39;49;00m[ 31%] [35mheath/IX/30/index[39;49;00m
+[01mreading sources... [39;49;00m[ 31%] [35mheath/IX/31/index[39;49;00m
+[01mreading sources... [39;49;00m[ 31%] [35mheath/IX/32/index[39;49;00m
+[01mreading sources... [39;49;00m[ 31%] [35mheath/IX/33/index[39;49;00m
+[01mreading sources... [39;49;00m[ 31%] [35mheath/IX/34/index[39;49;00m
+[01mreading sources... [39;49;00m[ 31%] [35mheath/IX/35/index[39;49;00m
+[01mreading sources... [39;49;00m[ 31%] [35mheath/IX/36/index[39;49;00m
+[01mreading sources... [39;49;00m[ 32%] [35mheath/IX/4/index[39;49;00m
+[01mreading sources... [39;49;00m[ 32%] [35mheath/IX/5/index[39;49;00m
+[01mreading sources... [39;49;00m[ 32%] [35mheath/IX/6/index[39;49;00m
+[01mreading sources... [39;49;00m[ 32%] [35mheath/IX/7/index[39;49;00m
+[01mreading sources... [39;49;00m[ 32%] [35mheath/IX/8/index[39;49;00m
+[01mreading sources... [39;49;00m[ 32%] [35mheath/IX/9/index[39;49;00m
+[01mreading sources... [39;49;00m[ 32%] [35mheath/IX/index[39;49;00m
+[01mreading sources... [39;49;00m[ 33%] [35mheath/V/1/index[39;49;00m
+[01mreading sources... [39;49;00m[ 33%] [35mheath/V/10/index[39;49;00m
+[01mreading sources... [39;49;00m[ 33%] [35mheath/V/11/index[39;49;00m
+[01mreading sources... [39;49;00m[ 33%] [35mheath/V/12/index[39;49;00m
+[01mreading sources... [39;49;00m[ 33%] [35mheath/V/13/index[39;49;00m
+[01mreading sources... [39;49;00m[ 33%] [35mheath/V/14/index[39;49;00m
+[01mreading sources... [39;49;00m[ 34%] [35mheath/V/15/index[39;49;00m
+[01mreading sources... [39;49;00m[ 34%] [35mheath/V/16/index[39;49;00m
+[01mreading sources... [39;49;00m[ 34%] [35mheath/V/17/index[39;49;00m
+[01mreading sources... [39;49;00m[ 34%] [35mheath/V/18/index[39;49;00m
+[01mreading sources... [39;49;00m[ 34%] [35mheath/V/19/index[39;49;00m
+[01mreading sources... [39;49;00m[ 34%] [35mheath/V/2/index[39;49;00m
+[01mreading sources... [39;49;00m[ 34%] [35mheath/V/20/index[39;49;00m
+[01mreading sources... [39;49;00m[ 35%] [35mheath/V/21/index[39;49;00m
+[01mreading sources... [39;49;00m[ 35%] [35mheath/V/22/index[39;49;00m
+[01mreading sources... [39;49;00m[ 35%] [35mheath/V/23/index[39;49;00m
+[01mreading sources... [39;49;00m[ 35%] [35mheath/V/24/index[39;49;00m
+[01mreading sources... [39;49;00m[ 35%] [35mheath/V/25/index[39;49;00m
+[01mreading sources... [39;49;00m[ 35%] [35mheath/V/3/index[39;49;00m
+[01mreading sources... [39;49;00m[ 35%] [35mheath/V/4/index[39;49;00m
+[01mreading sources... [39;49;00m[ 36%] [35mheath/V/5/index[39;49;00m
+[01mreading sources... [39;49;00m[ 36%] [35mheath/V/6/index[39;49;00m
+[01mreading sources... [39;49;00m[ 36%] [35mheath/V/7/index[39;49;00m
+[01mreading sources... [39;49;00m[ 36%] [35mheath/V/8/index[39;49;00m
+[01mreading sources... [39;49;00m[ 36%] [35mheath/V/9/index[39;49;00m
+[01mreading sources... [39;49;00m[ 36%] [35mheath/V/def.1/index[39;49;00m
+[01mreading sources... [39;49;00m[ 37%] [35mheath/V/def.10/index[39;49;00m
+[01mreading sources... [39;49;00m[ 37%] [35mheath/V/def.11/index[39;49;00m
+[01mreading sources... [39;49;00m[ 37%] [35mheath/V/def.12/index[39;49;00m
+[01mreading sources... [39;49;00m[ 37%] [35mheath/V/def.13/index[39;49;00m
+[01mreading sources... [39;49;00m[ 37%] [35mheath/V/def.14/index[39;49;00m
+[01mreading sources... [39;49;00m[ 37%] [35mheath/V/def.15/index[39;49;00m
+[01mreading sources... [39;49;00m[ 37%] [35mheath/V/def.16/index[39;49;00m
+[01mreading sources... [39;49;00m[ 38%] [35mheath/V/def.17/index[39;49;00m
+[01mreading sources... [39;49;00m[ 38%] [35mheath/V/def.18/index[39;49;00m
+[01mreading sources... [39;49;00m[ 38%] [35mheath/V/def.2/index[39;49;00m
+[01mreading sources... [39;49;00m[ 38%] [35mheath/V/def.3/index[39;49;00m
+[01mreading sources... [39;49;00m[ 38%] [35mheath/V/def.4/index[39;49;00m
+[01mreading sources... [39;49;00m[ 38%] [35mheath/V/def.5/index[39;49;00m
+[01mreading sources... [39;49;00m[ 38%] [35mheath/V/def.6/index[39;49;00m
+[01mreading sources... [39;49;00m[ 39%] [35mheath/V/def.7/index[39;49;00m
+[01mreading sources... [39;49;00m[ 39%] [35mheath/V/def.8/index[39;49;00m
+[01mreading sources... [39;49;00m[ 39%] [35mheath/V/def.9/index[39;49;00m
+[01mreading sources... [39;49;00m[ 39%] [35mheath/V/index[39;49;00m
+[01mreading sources... [39;49;00m[ 39%] [35mheath/VI/1/index[39;49;00m
+[01mreading sources... [39;49;00m[ 39%] [35mheath/VI/10/index[39;49;00m
+[01mreading sources... [39;49;00m[ 39%] [35mheath/VI/11/index[39;49;00m
+[01mreading sources... [39;49;00m[ 40%] [35mheath/VI/12/index[39;49;00m
+[01mreading sources... [39;49;00m[ 40%] [35mheath/VI/13/index[39;49;00m
+[01mreading sources... [39;49;00m[ 40%] [35mheath/VI/14/index[39;49;00m
+[01mreading sources... [39;49;00m[ 40%] [35mheath/VI/15/index[39;49;00m
+[01mreading sources... [39;49;00m[ 40%] [35mheath/VI/16/index[39;49;00m
+[01mreading sources... [39;49;00m[ 40%] [35mheath/VI/17/index[39;49;00m
+[01mreading sources... [39;49;00m[ 41%] [35mheath/VI/18/index[39;49;00m
+[01mreading sources... [39;49;00m[ 41%] [35mheath/VI/19/index[39;49;00m
+[01mreading sources... [39;49;00m[ 41%] [35mheath/VI/2/index[39;49;00m
+[01mreading sources... [39;49;00m[ 41%] [35mheath/VI/20/index[39;49;00m
+[01mreading sources... [39;49;00m[ 41%] [35mheath/VI/21/index[39;49;00m
+[01mreading sources... [39;49;00m[ 41%] [35mheath/VI/22/index[39;49;00m
+[01mreading sources... [39;49;00m[ 41%] [35mheath/VI/23/index[39;49;00m
+[01mreading sources... [39;49;00m[ 42%] [35mheath/VI/24/index[39;49;00m
+[01mreading sources... [39;49;00m[ 42%] [35mheath/VI/25/index[39;49;00m
+[01mreading sources... [39;49;00m[ 42%] [35mheath/VI/26/index[39;49;00m
+[01mreading sources... [39;49;00m[ 42%] [35mheath/VI/27/index[39;49;00m
+[01mreading sources... [39;49;00m[ 42%] [35mheath/VI/28/index[39;49;00m
+[01mreading sources... [39;49;00m[ 42%] [35mheath/VI/29/index[39;49;00m
+[01mreading sources... [39;49;00m[ 42%] [35mheath/VI/3/index[39;49;00m
+[01mreading sources... [39;49;00m[ 43%] [35mheath/VI/30/index[39;49;00m
+[01mreading sources... [39;49;00m[ 43%] [35mheath/VI/31/index[39;49;00m
+[01mreading sources... [39;49;00m[ 43%] [35mheath/VI/32/index[39;49;00m
+[01mreading sources... [39;49;00m[ 43%] [35mheath/VI/33/index[39;49;00m
+[01mreading sources... [39;49;00m[ 43%] [35mheath/VI/4/index[39;49;00m
+[01mreading sources... [39;49;00m[ 43%] [35mheath/VI/5/index[39;49;00m
+[01mreading sources... [39;49;00m[ 44%] [35mheath/VI/6/index[39;49;00m
+[01mreading sources... [39;49;00m[ 44%] [35mheath/VI/7/index[39;49;00m
+[01mreading sources... [39;49;00m[ 44%] [35mheath/VI/8/index[39;49;00m
+[01mreading sources... [39;49;00m[ 44%] [35mheath/VI/9/index[39;49;00m
+[01mreading sources... [39;49;00m[ 44%] [35mheath/VI/def.1/index[39;49;00m
+[01mreading sources... [39;49;00m[ 44%] [35mheath/VI/def.2/index[39;49;00m
+[01mreading sources... [39;49;00m[ 44%] [35mheath/VI/def.3/index[39;49;00m
+[01mreading sources... [39;49;00m[ 45%] [35mheath/VI/def.4/index[39;49;00m
+[01mreading sources... [39;49;00m[ 45%] [35mheath/VI/def.5/index[39;49;00m
+[01mreading sources... [39;49;00m[ 45%] [35mheath/VI/index[39;49;00m
+[01mreading sources... [39;49;00m[ 45%] [35mheath/VII/1/index[39;49;00m
+[01mreading sources... [39;49;00m[ 45%] [35mheath/VII/10/index[39;49;00m
+[01mreading sources... [39;49;00m[ 45%] [35mheath/VII/11/index[39;49;00m
+[01mreading sources... [39;49;00m[ 45%] [35mheath/VII/12/index[39;49;00m
+[01mreading sources... [39;49;00m[ 46%] [35mheath/VII/13/index[39;49;00m
+[01mreading sources... [39;49;00m[ 46%] [35mheath/VII/14/index[39;49;00m
+[01mreading sources... [39;49;00m[ 46%] [35mheath/VII/15/index[39;49;00m
+[01mreading sources... [39;49;00m[ 46%] [35mheath/VII/16/index[39;49;00m
+[01mreading sources... [39;49;00m[ 46%] [35mheath/VII/17/index[39;49;00m
+[01mreading sources... [39;49;00m[ 46%] [35mheath/VII/18/index[39;49;00m
+[01mreading sources... [39;49;00m[ 46%] [35mheath/VII/19/index[39;49;00m
+[01mreading sources... [39;49;00m[ 47%] [35mheath/VII/2/index[39;49;00m
+[01mreading sources... [39;49;00m[ 47%] [35mheath/VII/20/index[39;49;00m
+[01mreading sources... [39;49;00m[ 47%] [35mheath/VII/21/index[39;49;00m
+[01mreading sources... [39;49;00m[ 47%] [35mheath/VII/22/index[39;49;00m
+[01mreading sources... [39;49;00m[ 47%] [35mheath/VII/23/index[39;49;00m
+[01mreading sources... [39;49;00m[ 47%] [35mheath/VII/24/index[39;49;00m
+[01mreading sources... [39;49;00m[ 48%] [35mheath/VII/25/index[39;49;00m
+[01mreading sources... [39;49;00m[ 48%] [35mheath/VII/26/index[39;49;00m
+[01mreading sources... [39;49;00m[ 48%] [35mheath/VII/27/index[39;49;00m
+[01mreading sources... [39;49;00m[ 48%] [35mheath/VII/28/index[39;49;00m
+[01mreading sources... [39;49;00m[ 48%] [35mheath/VII/29/index[39;49;00m
+[01mreading sources... [39;49;00m[ 48%] [35mheath/VII/3/index[39;49;00m
+[01mreading sources... [39;49;00m[ 48%] [35mheath/VII/30/index[39;49;00m
+[01mreading sources... [39;49;00m[ 49%] [35mheath/VII/31/index[39;49;00m
+[01mreading sources... [39;49;00m[ 49%] [35mheath/VII/32/index[39;49;00m
+[01mreading sources... [39;49;00m[ 49%] [35mheath/VII/33/index[39;49;00m
+[01mreading sources... [39;49;00m[ 49%] [35mheath/VII/34/index[39;49;00m
+[01mreading sources... [39;49;00m[ 49%] [35mheath/VII/35/index[39;49;00m
+[01mreading sources... [39;49;00m[ 49%] [35mheath/VII/36/index[39;49;00m
+[01mreading sources... [39;49;00m[ 49%] [35mheath/VII/37/index[39;49;00m
+[01mreading sources... [39;49;00m[ 50%] [35mheath/VII/38/index[39;49;00m
+[01mreading sources... [39;49;00m[ 50%] [35mheath/VII/39/index[39;49;00m
+[01mreading sources... [39;49;00m[ 50%] [35mheath/VII/4/index[39;49;00m
+[01mreading sources... [39;49;00m[ 50%] [35mheath/VII/5/index[39;49;00m
+[01mreading sources... [39;49;00m[ 50%] [35mheath/VII/6/index[39;49;00m
+[01mreading sources... [39;49;00m[ 50%] [35mheath/VII/7/index[39;49;00m
+[01mreading sources... [39;49;00m[ 51%] [35mheath/VII/8/index[39;49;00m
+[01mreading sources... [39;49;00m[ 51%] [35mheath/VII/9/index[39;49;00m
+[01mreading sources... [39;49;00m[ 51%] [35mheath/VII/def.1/index[39;49;00m
+[01mreading sources... [39;49;00m[ 51%] [35mheath/VII/def.10/index[39;49;00m
+[01mreading sources... [39;49;00m[ 51%] [35mheath/VII/def.11/index[39;49;00m
+[01mreading sources... [39;49;00m[ 51%] [35mheath/VII/def.12/index[39;49;00m
+[01mreading sources... [39;49;00m[ 51%] [35mheath/VII/def.13/index[39;49;00m
+[01mreading sources... [39;49;00m[ 52%] [35mheath/VII/def.14/index[39;49;00m
+[01mreading sources... [39;49;00m[ 52%] [35mheath/VII/def.15/index[39;49;00m
+[01mreading sources... [39;49;00m[ 52%] [35mheath/VII/def.16/index[39;49;00m
+[01mreading sources... [39;49;00m[ 52%] [35mheath/VII/def.17/index[39;49;00m
+[01mreading sources... [39;49;00m[ 52%] [35mheath/VII/def.18/index[39;49;00m
+[01mreading sources... [39;49;00m[ 52%] [35mheath/VII/def.19/index[39;49;00m
+[01mreading sources... [39;49;00m[ 52%] [35mheath/VII/def.2/index[39;49;00m
+[01mreading sources... [39;49;00m[ 53%] [35mheath/VII/def.20/index[39;49;00m
+[01mreading sources... [39;49;00m[ 53%] [35mheath/VII/def.21/index[39;49;00m
+[01mreading sources... [39;49;00m[ 53%] [35mheath/VII/def.22/index[39;49;00m
+[01mreading sources... [39;49;00m[ 53%] [35mheath/VII/def.3/index[39;49;00m
+[01mreading sources... [39;49;00m[ 53%] [35mheath/VII/def.4/index[39;49;00m
+[01mreading sources... [39;49;00m[ 53%] [35mheath/VII/def.5/index[39;49;00m
+[01mreading sources... [39;49;00m[ 54%] [35mheath/VII/def.6/index[39;49;00m
+[01mreading sources... [39;49;00m[ 54%] [35mheath/VII/def.7/index[39;49;00m
+[01mreading sources... [39;49;00m[ 54%] [35mheath/VII/def.8/index[39;49;00m
+[01mreading sources... [39;49;00m[ 54%] [35mheath/VII/def.9/index[39;49;00m
+[01mreading sources... [39;49;00m[ 54%] [35mheath/VII/index[39;49;00m
+[01mreading sources... [39;49;00m[ 54%] [35mheath/VIII/1/index[39;49;00m
+[01mreading sources... [39;49;00m[ 54%] [35mheath/VIII/10/index[39;49;00m
+[01mreading sources... [39;49;00m[ 55%] [35mheath/VIII/11/index[39;49;00m
+[01mreading sources... [39;49;00m[ 55%] [35mheath/VIII/12/index[39;49;00m
+[01mreading sources... [39;49;00m[ 55%] [35mheath/VIII/13/index[39;49;00m
+[01mreading sources... [39;49;00m[ 55%] [35mheath/VIII/14/index[39;49;00m
+[01mreading sources... [39;49;00m[ 55%] [35mheath/VIII/15/index[39;49;00m
+[01mreading sources... [39;49;00m[ 55%] [35mheath/VIII/16/index[39;49;00m
+[01mreading sources... [39;49;00m[ 55%] [35mheath/VIII/17/index[39;49;00m
+[01mreading sources... [39;49;00m[ 56%] [35mheath/VIII/18/index[39;49;00m
+[01mreading sources... [39;49;00m[ 56%] [35mheath/VIII/19/index[39;49;00m
+[01mreading sources... [39;49;00m[ 56%] [35mheath/VIII/2/index[39;49;00m
+[01mreading sources... [39;49;00m[ 56%] [35mheath/VIII/20/index[39;49;00m
+[01mreading sources... [39;49;00m[ 56%] [35mheath/VIII/21/index[39;49;00m
+[01mreading sources... [39;49;00m[ 56%] [35mheath/VIII/22/index[39;49;00m
+[01mreading sources... [39;49;00m[ 56%] [35mheath/VIII/23/index[39;49;00m
+[01mreading sources... [39;49;00m[ 57%] [35mheath/VIII/24/index[39;49;00m
+[01mreading sources... [39;49;00m[ 57%] [35mheath/VIII/25/index[39;49;00m
+[01mreading sources... [39;49;00m[ 57%] [35mheath/VIII/26/index[39;49;00m
+[01mreading sources... [39;49;00m[ 57%] [35mheath/VIII/27/index[39;49;00m
+[01mreading sources... [39;49;00m[ 57%] [35mheath/VIII/3/index[39;49;00m
+[01mreading sources... [39;49;00m[ 57%] [35mheath/VIII/4/index[39;49;00m
+[01mreading sources... [39;49;00m[ 58%] [35mheath/VIII/5/index[39;49;00m
+[01mreading sources... [39;49;00m[ 58%] [35mheath/VIII/6/index[39;49;00m
+[01mreading sources... [39;49;00m[ 58%] [35mheath/VIII/7/index[39;49;00m
+[01mreading sources... [39;49;00m[ 58%] [35mheath/VIII/8/index[39;49;00m
+[01mreading sources... [39;49;00m[ 58%] [35mheath/VIII/9/index[39;49;00m
+[01mreading sources... [39;49;00m[ 58%] [35mheath/VIII/index[39;49;00m
+[01mreading sources... [39;49;00m[ 58%] [35mheath/X/1/index[39;49;00m
+[01mreading sources... [39;49;00m[ 59%] [35mheath/X/10/index[39;49;00m
+[01mreading sources... [39;49;00m[ 59%] [35mheath/X/100/index[39;49;00m
+[01mreading sources... [39;49;00m[ 59%] [35mheath/X/101/index[39;49;00m
+[01mreading sources... [39;49;00m[ 59%] [35mheath/X/102/index[39;49;00m
+[01mreading sources... [39;49;00m[ 59%] [35mheath/X/103/index[39;49;00m
+[01mreading sources... [39;49;00m[ 59%] [35mheath/X/104/index[39;49;00m
+[01mreading sources... [39;49;00m[ 59%] [35mheath/X/105/index[39;49;00m
+[01mreading sources... [39;49;00m[ 60%] [35mheath/X/106/index[39;49;00m
+[01mreading sources... [39;49;00m[ 60%] [35mheath/X/107/index[39;49;00m
+[01mreading sources... [39;49;00m[ 60%] [35mheath/X/108/index[39;49;00m
+[01mreading sources... [39;49;00m[ 60%] [35mheath/X/109/index[39;49;00m
+[01mreading sources... [39;49;00m[ 60%] [35mheath/X/11/index[39;49;00m
+[01mreading sources... [39;49;00m[ 60%] [35mheath/X/110/index[39;49;00m
+[01mreading sources... [39;49;00m[ 61%] [35mheath/X/111/index[39;49;00m
+[01mreading sources... [39;49;00m[ 61%] [35mheath/X/112/index[39;49;00m
+[01mreading sources... [39;49;00m[ 61%] [35mheath/X/113/index[39;49;00m
+[01mreading sources... [39;49;00m[ 61%] [35mheath/X/114/index[39;49;00m
+[01mreading sources... [39;49;00m[ 61%] [35mheath/X/115/index[39;49;00m
+[01mreading sources... [39;49;00m[ 61%] [35mheath/X/12/index[39;49;00m
+[01mreading sources... [39;49;00m[ 61%] [35mheath/X/13/index[39;49;00m
+[01mreading sources... [39;49;00m[ 62%] [35mheath/X/14/index[39;49;00m
+[01mreading sources... [39;49;00m[ 62%] [35mheath/X/15/index[39;49;00m
+[01mreading sources... [39;49;00m[ 62%] [35mheath/X/16/index[39;49;00m
+[01mreading sources... [39;49;00m[ 62%] [35mheath/X/17/index[39;49;00m
+[01mreading sources... [39;49;00m[ 62%] [35mheath/X/18/index[39;49;00m
+[01mreading sources... [39;49;00m[ 62%] [35mheath/X/19/index[39;49;00m
+[01mreading sources... [39;49;00m[ 62%] [35mheath/X/2/index[39;49;00m
+[01mreading sources... [39;49;00m[ 63%] [35mheath/X/20/index[39;49;00m
+[01mreading sources... [39;49;00m[ 63%] [35mheath/X/21/index[39;49;00m
+[01mreading sources... [39;49;00m[ 63%] [35mheath/X/22/index[39;49;00m
+[01mreading sources... [39;49;00m[ 63%] [35mheath/X/23/index[39;49;00m
+[01mreading sources... [39;49;00m[ 63%] [35mheath/X/24/index[39;49;00m
+[01mreading sources... [39;49;00m[ 63%] [35mheath/X/25/index[39;49;00m
+[01mreading sources... [39;49;00m[ 63%] [35mheath/X/26/index[39;49;00m
+[01mreading sources... [39;49;00m[ 64%] [35mheath/X/27/index[39;49;00m
+[01mreading sources... [39;49;00m[ 64%] [35mheath/X/28/index[39;49;00m
+[01mreading sources... [39;49;00m[ 64%] [35mheath/X/29/index[39;49;00m
+[01mreading sources... [39;49;00m[ 64%] [35mheath/X/3/index[39;49;00m
+[01mreading sources... [39;49;00m[ 64%] [35mheath/X/30/index[39;49;00m
+[01mreading sources... [39;49;00m[ 64%] [35mheath/X/31/index[39;49;00m
+[01mreading sources... [39;49;00m[ 65%] [35mheath/X/32/index[39;49;00m
+[01mreading sources... [39;49;00m[ 65%] [35mheath/X/33/index[39;49;00m
+[01mreading sources... [39;49;00m[ 65%] [35mheath/X/34/index[39;49;00m
+[01mreading sources... [39;49;00m[ 65%] [35mheath/X/35/index[39;49;00m
+[01mreading sources... [39;49;00m[ 65%] [35mheath/X/36/index[39;49;00m
+[01mreading sources... [39;49;00m[ 65%] [35mheath/X/37/index[39;49;00m
+[01mreading sources... [39;49;00m[ 65%] [35mheath/X/38/index[39;49;00m
+[01mreading sources... [39;49;00m[ 66%] [35mheath/X/39/index[39;49;00m
+[01mreading sources... [39;49;00m[ 66%] [35mheath/X/4/index[39;49;00m
+[01mreading sources... [39;49;00m[ 66%] [35mheath/X/40/index[39;49;00m
+[01mreading sources... [39;49;00m[ 66%] [35mheath/X/41/index[39;49;00m
+[01mreading sources... [39;49;00m[ 66%] [35mheath/X/42/index[39;49;00m
+[01mreading sources... [39;49;00m[ 66%] [35mheath/X/43/index[39;49;00m
+[01mreading sources... [39;49;00m[ 66%] [35mheath/X/44/index[39;49;00m
+[01mreading sources... [39;49;00m[ 67%] [35mheath/X/45/index[39;49;00m
+[01mreading sources... [39;49;00m[ 67%] [35mheath/X/46/index[39;49;00m
+[01mreading sources... [39;49;00m[ 67%] [35mheath/X/47/index[39;49;00m
+[01mreading sources... [39;49;00m[ 67%] [35mheath/X/48/index[39;49;00m
+[01mreading sources... [39;49;00m[ 67%] [35mheath/X/49/index[39;49;00m
+[01mreading sources... [39;49;00m[ 67%] [35mheath/X/5/index[39;49;00m
+[01mreading sources... [39;49;00m[ 68%] [35mheath/X/50/index[39;49;00m
+[01mreading sources... [39;49;00m[ 68%] [35mheath/X/51/index[39;49;00m
+[01mreading sources... [39;49;00m[ 68%] [35mheath/X/52/index[39;49;00m
+[01mreading sources... [39;49;00m[ 68%] [35mheath/X/53/index[39;49;00m
+[01mreading sources... [39;49;00m[ 68%] [35mheath/X/54/index[39;49;00m
+[01mreading sources... [39;49;00m[ 68%] [35mheath/X/55/index[39;49;00m
+[01mreading sources... [39;49;00m[ 68%] [35mheath/X/56/index[39;49;00m
+[01mreading sources... [39;49;00m[ 69%] [35mheath/X/57/index[39;49;00m
+[01mreading sources... [39;49;00m[ 69%] [35mheath/X/58/index[39;49;00m
+[01mreading sources... [39;49;00m[ 69%] [35mheath/X/59/index[39;49;00m
+[01mreading sources... [39;49;00m[ 69%] [35mheath/X/6/index[39;49;00m
+[01mreading sources... [39;49;00m[ 69%] [35mheath/X/60/index[39;49;00m
+[01mreading sources... [39;49;00m[ 69%] [35mheath/X/61/index[39;49;00m
+[01mreading sources... [39;49;00m[ 69%] [35mheath/X/62/index[39;49;00m
+[01mreading sources... [39;49;00m[ 70%] [35mheath/X/63/index[39;49;00m
+[01mreading sources... [39;49;00m[ 70%] [35mheath/X/64/index[39;49;00m
+[01mreading sources... [39;49;00m[ 70%] [35mheath/X/65/index[39;49;00m
+[01mreading sources... [39;49;00m[ 70%] [35mheath/X/66/index[39;49;00m
+[01mreading sources... [39;49;00m[ 70%] [35mheath/X/67/index[39;49;00m
+[01mreading sources... [39;49;00m[ 70%] [35mheath/X/68/index[39;49;00m
+[01mreading sources... [39;49;00m[ 70%] [35mheath/X/69/index[39;49;00m
+[01mreading sources... [39;49;00m[ 71%] [35mheath/X/7/index[39;49;00m
+[01mreading sources... [39;49;00m[ 71%] [35mheath/X/70/index[39;49;00m
+[01mreading sources... [39;49;00m[ 71%] [35mheath/X/71/index[39;49;00m
+[01mreading sources... [39;49;00m[ 71%] [35mheath/X/72/index[39;49;00m
+[01mreading sources... [39;49;00m[ 71%] [35mheath/X/73/index[39;49;00m
+[01mreading sources... [39;49;00m[ 71%] [35mheath/X/74/index[39;49;00m
+[01mreading sources... [39;49;00m[ 72%] [35mheath/X/75/index[39;49;00m
+[01mreading sources... [39;49;00m[ 72%] [35mheath/X/76/index[39;49;00m
+[01mreading sources... [39;49;00m[ 72%] [35mheath/X/77/index[39;49;00m
+[01mreading sources... [39;49;00m[ 72%] [35mheath/X/78/index[39;49;00m
+[01mreading sources... [39;49;00m[ 72%] [35mheath/X/79/index[39;49;00m
+[01mreading sources... [39;49;00m[ 72%] [35mheath/X/8/index[39;49;00m
+[01mreading sources... [39;49;00m[ 72%] [35mheath/X/80/index[39;49;00m
+[01mreading sources... [39;49;00m[ 73%] [35mheath/X/81/index[39;49;00m
+[01mreading sources... [39;49;00m[ 73%] [35mheath/X/82/index[39;49;00m
+[01mreading sources... [39;49;00m[ 73%] [35mheath/X/83/index[39;49;00m
+[01mreading sources... [39;49;00m[ 73%] [35mheath/X/84/index[39;49;00m
+[01mreading sources... [39;49;00m[ 73%] [35mheath/X/85/index[39;49;00m
+[01mreading sources... [39;49;00m[ 73%] [35mheath/X/86/index[39;49;00m
+[01mreading sources... [39;49;00m[ 73%] [35mheath/X/87/index[39;49;00m
+[01mreading sources... [39;49;00m[ 74%] [35mheath/X/88/index[39;49;00m
+[01mreading sources... [39;49;00m[ 74%] [35mheath/X/89/index[39;49;00m
+[01mreading sources... [39;49;00m[ 74%] [35mheath/X/9/index[39;49;00m
+[01mreading sources... [39;49;00m[ 74%] [35mheath/X/90/index[39;49;00m
+[01mreading sources... [39;49;00m[ 74%] [35mheath/X/91/index[39;49;00m
+[01mreading sources... [39;49;00m[ 74%] [35mheath/X/92/index[39;49;00m
+[01mreading sources... [39;49;00m[ 75%] [35mheath/X/93/index[39;49;00m
+[01mreading sources... [39;49;00m[ 75%] [35mheath/X/94/index[39;49;00m
+[01mreading sources... [39;49;00m[ 75%] [35mheath/X/95/index[39;49;00m
+[01mreading sources... [39;49;00m[ 75%] [35mheath/X/96/index[39;49;00m
+[01mreading sources... [39;49;00m[ 75%] [35mheath/X/97/index[39;49;00m
+[01mreading sources... [39;49;00m[ 75%] [35mheath/X/98/index[39;49;00m
+[01mreading sources... [39;49;00m[ 75%] [35mheath/X/99/index[39;49;00m
+[01mreading sources... [39;49;00m[ 76%] [35mheath/X/def.1/index[39;49;00m
+[01mreading sources... [39;49;00m[ 76%] [35mheath/X/def.2.1/index[39;49;00m
+[01mreading sources... [39;49;00m[ 76%] [35mheath/X/def.2.2/index[39;49;00m
+[01mreading sources... [39;49;00m[ 76%] [35mheath/X/def.2.3/index[39;49;00m
+[01mreading sources... [39;49;00m[ 76%] [35mheath/X/def.2.4/index[39;49;00m
+[01mreading sources... [39;49;00m[ 76%] [35mheath/X/def.2.5/index[39;49;00m
+[01mreading sources... [39;49;00m[ 76%] [35mheath/X/def.2.6/index[39;49;00m
+[01mreading sources... [39;49;00m[ 77%] [35mheath/X/def.2/index[39;49;00m
+[01mreading sources... [39;49;00m[ 77%] [35mheath/X/def.3.1/index[39;49;00m
+[01mreading sources... [39;49;00m[ 77%] [35mheath/X/def.3.2/index[39;49;00m
+[01mreading sources... [39;49;00m[ 77%] [35mheath/X/def.3.3/index[39;49;00m
+[01mreading sources... [39;49;00m[ 77%] [35mheath/X/def.3.4/index[39;49;00m
+[01mreading sources... [39;49;00m[ 77%] [35mheath/X/def.3.5/index[39;49;00m
+[01mreading sources... [39;49;00m[ 77%] [35mheath/X/def.3.6/index[39;49;00m
+[01mreading sources... [39;49;00m[ 78%] [35mheath/X/def.3/index[39;49;00m
+[01mreading sources... [39;49;00m[ 78%] [35mheath/X/def.4/index[39;49;00m
+[01mreading sources... [39;49;00m[ 78%] [35mheath/X/index[39;49;00m
+[01mreading sources... [39;49;00m[ 78%] [35mheath/XI/1/index[39;49;00m
+[01mreading sources... [39;49;00m[ 78%] [35mheath/XI/10/index[39;49;00m
+[01mreading sources... [39;49;00m[ 78%] [35mheath/XI/11/index[39;49;00m
+[01mreading sources... [39;49;00m[ 79%] [35mheath/XI/12/index[39;49;00m
+[01mreading sources... [39;49;00m[ 79%] [35mheath/XI/13/index[39;49;00m
+[01mreading sources... [39;49;00m[ 79%] [35mheath/XI/14/index[39;49;00m
+[01mreading sources... [39;49;00m[ 79%] [35mheath/XI/15/index[39;49;00m
+[01mreading sources... [39;49;00m[ 79%] [35mheath/XI/16/index[39;49;00m
+[01mreading sources... [39;49;00m[ 79%] [35mheath/XI/17/index[39;49;00m
+[01mreading sources... [39;49;00m[ 79%] [35mheath/XI/18/index[39;49;00m
+[01mreading sources... [39;49;00m[ 80%] [35mheath/XI/19/index[39;49;00m
+[01mreading sources... [39;49;00m[ 80%] [35mheath/XI/2/index[39;49;00m
+[01mreading sources... [39;49;00m[ 80%] [35mheath/XI/20/index[39;49;00m
+[01mreading sources... [39;49;00m[ 80%] [35mheath/XI/21/index[39;49;00m
+[01mreading sources... [39;49;00m[ 80%] [35mheath/XI/22/index[39;49;00m
+[01mreading sources... [39;49;00m[ 80%] [35mheath/XI/23/index[39;49;00m
+[01mreading sources... [39;49;00m[ 80%] [35mheath/XI/24/index[39;49;00m
+[01mreading sources... [39;49;00m[ 81%] [35mheath/XI/25/index[39;49;00m
+[01mreading sources... [39;49;00m[ 81%] [35mheath/XI/26/index[39;49;00m
+[01mreading sources... [39;49;00m[ 81%] [35mheath/XI/27/index[39;49;00m
+[01mreading sources... [39;49;00m[ 81%] [35mheath/XI/28/index[39;49;00m
+[01mreading sources... [39;49;00m[ 81%] [35mheath/XI/29/index[39;49;00m
+[01mreading sources... [39;49;00m[ 81%] [35mheath/XI/3/index[39;49;00m
+[01mreading sources... [39;49;00m[ 82%] [35mheath/XI/30/index[39;49;00m
+[01mreading sources... [39;49;00m[ 82%] [35mheath/XI/31/index[39;49;00m
+[01mreading sources... [39;49;00m[ 82%] [35mheath/XI/32/index[39;49;00m
+[01mreading sources... [39;49;00m[ 82%] [35mheath/XI/33/index[39;49;00m
+[01mreading sources... [39;49;00m[ 82%] [35mheath/XI/34/index[39;49;00m
+[01mreading sources... [39;49;00m[ 82%] [35mheath/XI/35/index[39;49;00m
+[01mreading sources... [39;49;00m[ 82%] [35mheath/XI/36/index[39;49;00m
+[01mreading sources... [39;49;00m[ 83%] [35mheath/XI/37/index[39;49;00m
+[01mreading sources... [39;49;00m[ 83%] [35mheath/XI/38/index[39;49;00m
+[01mreading sources... [39;49;00m[ 83%] [35mheath/XI/39/index[39;49;00m
+[01mreading sources... [39;49;00m[ 83%] [35mheath/XI/4/index[39;49;00m
+[01mreading sources... [39;49;00m[ 83%] [35mheath/XI/5/index[39;49;00m
+[01mreading sources... [39;49;00m[ 83%] [35mheath/XI/6/index[39;49;00m
+[01mreading sources... [39;49;00m[ 83%] [35mheath/XI/7/index[39;49;00m
+[01mreading sources... [39;49;00m[ 84%] [35mheath/XI/8/index[39;49;00m
+[01mreading sources... [39;49;00m[ 84%] [35mheath/XI/9/index[39;49;00m
+[01mreading sources... [39;49;00m[ 84%] [35mheath/XI/def.1/index[39;49;00m
+[01mreading sources... [39;49;00m[ 84%] [35mheath/XI/def.10/index[39;49;00m
+[01mreading sources... [39;49;00m[ 84%] [35mheath/XI/def.11/index[39;49;00m
+[01mreading sources... [39;49;00m[ 84%] [35mheath/XI/def.12/index[39;49;00m
+[01mreading sources... [39;49;00m[ 85%] [35mheath/XI/def.13/index[39;49;00m
+[01mreading sources... [39;49;00m[ 85%] [35mheath/XI/def.14/index[39;49;00m
+[01mreading sources... [39;49;00m[ 85%] [35mheath/XI/def.15/index[39;49;00m
+[01mreading sources... [39;49;00m[ 85%] [35mheath/XI/def.16/index[39;49;00m
+[01mreading sources... [39;49;00m[ 85%] [35mheath/XI/def.17/index[39;49;00m
+[01mreading sources... [39;49;00m[ 85%] [35mheath/XI/def.18/index[39;49;00m
+[01mreading sources... [39;49;00m[ 85%] [35mheath/XI/def.19/index[39;49;00m
+[01mreading sources... [39;49;00m[ 86%] [35mheath/XI/def.2/index[39;49;00m
+[01mreading sources... [39;49;00m[ 86%] [35mheath/XI/def.20/index[39;49;00m
+[01mreading sources... [39;49;00m[ 86%] [35mheath/XI/def.21/index[39;49;00m
+[01mreading sources... [39;49;00m[ 86%] [35mheath/XI/def.22/index[39;49;00m
+[01mreading sources... [39;49;00m[ 86%] [35mheath/XI/def.23/index[39;49;00m
+[01mreading sources... [39;49;00m[ 86%] [35mheath/XI/def.24/index[39;49;00m
+[01mreading sources... [39;49;00m[ 86%] [35mheath/XI/def.25/index[39;49;00m
+[01mreading sources... [39;49;00m[ 87%] [35mheath/XI/def.26/index[39;49;00m
+[01mreading sources... [39;49;00m[ 87%] [35mheath/XI/def.27/index[39;49;00m
+[01mreading sources... [39;49;00m[ 87%] [35mheath/XI/def.28/index[39;49;00m
+[01mreading sources... [39;49;00m[ 87%] [35mheath/XI/def.3/index[39;49;00m
+[01mreading sources... [39;49;00m[ 87%] [35mheath/XI/def.4/index[39;49;00m
+[01mreading sources... [39;49;00m[ 87%] [35mheath/XI/def.5/index[39;49;00m
+[01mreading sources... [39;49;00m[ 87%] [35mheath/XI/def.6/index[39;49;00m
+[01mreading sources... [39;49;00m[ 88%] [35mheath/XI/def.7/index[39;49;00m
+[01mreading sources... [39;49;00m[ 88%] [35mheath/XI/def.8/index[39;49;00m
+[01mreading sources... [39;49;00m[ 88%] [35mheath/XI/def.9/index[39;49;00m
+[01mreading sources... [39;49;00m[ 88%] [35mheath/XI/index[39;49;00m
+[01mreading sources... [39;49;00m[ 88%] [35mheath/XII/1/index[39;49;00m
+[01mreading sources... [39;49;00m[ 88%] [35mheath/XII/10/index[39;49;00m
+[01mreading sources... [39;49;00m[ 89%] [35mheath/XII/11/index[39;49;00m
+[01mreading sources... [39;49;00m[ 89%] [35mheath/XII/12/index[39;49;00m
+[01mreading sources... [39;49;00m[ 89%] [35mheath/XII/13/index[39;49;00m
+[01mreading sources... [39;49;00m[ 89%] [35mheath/XII/14/index[39;49;00m
+[01mreading sources... [39;49;00m[ 89%] [35mheath/XII/15/index[39;49;00m
+[01mreading sources... [39;49;00m[ 89%] [35mheath/XII/16/index[39;49;00m
+[01mreading sources... [39;49;00m[ 89%] [35mheath/XII/17/index[39;49;00m
+[01mreading sources... [39;49;00m[ 90%] [35mheath/XII/18/index[39;49;00m
+[01mreading sources... [39;49;00m[ 90%] [35mheath/XII/2/index[39;49;00m
+[01mreading sources... [39;49;00m[ 90%] [35mheath/XII/3/index[39;49;00m
+[01mreading sources... [39;49;00m[ 90%] [35mheath/XII/4/index[39;49;00m
+[01mreading sources... [39;49;00m[ 90%] [35mheath/XII/5/index[39;49;00m
+[01mreading sources... [39;49;00m[ 90%] [35mheath/XII/6/index[39;49;00m
+[01mreading sources... [39;49;00m[ 90%] [35mheath/XII/7/index[39;49;00m
+[01mreading sources... [39;49;00m[ 91%] [35mheath/XII/8/index[39;49;00m
+[01mreading sources... [39;49;00m[ 91%] [35mheath/XII/9/index[39;49;00m
+[01mreading sources... [39;49;00m[ 91%] [35mheath/XII/index[39;49;00m
+[01mreading sources... [39;49;00m[ 91%] [35mheath/XIII/1/index[39;49;00m
+[01mreading sources... [39;49;00m[ 91%] [35mheath/XIII/10/index[39;49;00m
+[01mreading sources... [39;49;00m[ 91%] [35mheath/XIII/11/index[39;49;00m
+[01mreading sources... [39;49;00m[ 92%] [35mheath/XIII/12/index[39;49;00m
+[01mreading sources... [39;49;00m[ 92%] [35mheath/XIII/13/index[39;49;00m
+[01mreading sources... [39;49;00m[ 92%] [35mheath/XIII/14/index[39;49;00m
+[01mreading sources... [39;49;00m[ 92%] [35mheath/XIII/15/index[39;49;00m
+[01mreading sources... [39;49;00m[ 92%] [35mheath/XIII/16/index[39;49;00m
+[01mreading sources... [39;49;00m[ 92%] [35mheath/XIII/17/index[39;49;00m
+[01mreading sources... [39;49;00m[ 92%] [35mheath/XIII/18/index[39;49;00m
+[01mreading sources... [39;49;00m[ 93%] [35mheath/XIII/2/index[39;49;00m
+[01mreading sources... [39;49;00m[ 93%] [35mheath/XIII/3/index[39;49;00m
+[01mreading sources... [39;49;00m[ 93%] [35mheath/XIII/4/index[39;49;00m
+[01mreading sources... [39;49;00m[ 93%] [35mheath/XIII/5/index[39;49;00m
+[01mreading sources... [39;49;00m[ 93%] [35mheath/XIII/6/index[39;49;00m
+[01mreading sources... [39;49;00m[ 93%] [35mheath/XIII/7/index[39;49;00m
+[01mreading sources... [39;49;00m[ 93%] [35mheath/XIII/8/index[39;49;00m
+[01mreading sources... [39;49;00m[ 94%] [35mheath/XIII/9/index[39;49;00m
+[01mreading sources... [39;49;00m[ 94%] [35mheath/XIII/index[39;49;00m
+[01mreading sources... [39;49;00m[ 94%] [35mheath/index[39;49;00m
+[01mreading sources... [39;49;00m[ 94%] [35mindex[39;49;00m
+[01m[AutoAPI] [39;49;00m[32mAdding AutoAPI TOCTree [modules/api/index] to index.rst[39;49;00m
+[01mreading sources... [39;49;00m[ 94%] [35mintro[39;49;00m
+[01mreading sources... [39;49;00m[ 94%] [35mlog/index[39;49;00m
+[01mreading sources... [39;49;00m[ 94%] [35mmission/index[39;49;00m
+[01mreading sources... [39;49;00m[ 95%] [35mmodules/api/elements/__main__/index[39;49;00m
+[01mreading sources... [39;49;00m[ 95%] [35mmodules/api/elements/app/index[39;49;00m
+[01mreading sources... [39;49;00m[ 95%] [35mmodules/api/elements/elements/index[39;49;00m
+[01mreading sources... [39;49;00m[ 95%] [35mmodules/api/elements/g_index/index[39;49;00m
+[01mreading sources... [39;49;00m[ 95%] [35mmodules/api/elements/graph/index[39;49;00m
+[01mreading sources... [39;49;00m[ 95%] [35mmodules/api/elements/index[39;49;00m
+[01mreading sources... [39;49;00m[ 96%] [35mmodules/api/elements/ingest/analysis/index[39;49;00m
+[01mreading sources... [39;49;00m[ 96%] [35mmodules/api/elements/ingest/cleanup/index[39;49;00m
+[01mreading sources... [39;49;00m[ 96%] [35mmodules/api/elements/ingest/compare_models/index[39;49;00m
+[01mreading sources... [39;49;00m[ 96%] [35mmodules/api/elements/ingest/config/index[39;49;00m
+[01mreading sources... [39;49;00m[ 96%] [35mmodules/api/elements/ingest/cropping/index[39;49;00m
+[01mreading sources... [39;49;00m[ 96%] [35mmodules/api/elements/ingest/detect_graphics/index[39;49;00m
+[01mreading sources... [39;49;00m[ 96%] [35mmodules/api/elements/ingest/detect_graphics_cv/index[39;49;00m
+[01mreading sources... [39;49;00m[ 97%] [35mmodules/api/elements/ingest/extraction/index[39;49;00m
+[01mreading sources... [39;49;00m[ 97%] [35mmodules/api/elements/ingest/generate_index/index[39;49;00m
+[01mreading sources... [39;49;00m[ 97%] [35mmodules/api/elements/ingest/image_processing/index[39;49;00m
+[01mreading sources... [39;49;00m[ 97%] [35mmodules/api/elements/ingest/index[39;49;00m
+[01mreading sources... [39;49;00m[ 97%] [35mmodules/api/elements/ingest/metadata_extraction/index[39;49;00m
+[01mreading sources... [39;49;00m[ 97%] [35mmodules/api/elements/ingest/metadata_extraction/metadata_extraction/index[39;49;00m
+[01mreading sources... [39;49;00m[ 97%] [35mmodules/api/elements/ingest/organization/index[39;49;00m
+[01mreading sources... [39;49;00m[ 98%] [35mmodules/api/elements/ingest/pipeline/index[39;49;00m
+[01mreading sources... [39;49;00m[ 98%] [35mmodules/api/elements/ingest/refine/index[39;49;00m
+[01mreading sources... [39;49;00m[ 98%] [35mmodules/api/elements/ingest/scan_propositions/index[39;49;00m
+[01mreading sources... [39;49;00m[ 98%] [35mmodules/api/elements/ingest/stitch_propositions/index[39;49;00m
+[01mreading sources... [39;49;00m[ 98%] [35mmodules/api/elements/ingest/utils/index[39;49;00m
+[01mreading sources... [39;49;00m[ 98%] [35mmodules/api/elements/legacy/check_refs/index[39;49;00m
+[01mreading sources... [39;49;00m[ 99%] [35mmodules/api/elements/legacy/index[39;49;00m
+[01mreading sources... [39;49;00m[ 99%] [35mmodules/api/elements/rst_builder/index[39;49;00m
+[01mreading sources... [39;49;00m[ 99%] [35mmodules/api/elements/rst_generator/index[39;49;00m
+[01mreading sources... [39;49;00m[ 99%] [35mmodules/api/elements/transform/index[39;49;00m
+[01mreading sources... [39;49;00m[ 99%] [35mmodules/api/elements/utils/index[39;49;00m
+[01mreading sources... [39;49;00m[ 99%] [35mmodules/api/elements/xml_parser/index[39;49;00m
+[01mreading sources... [39;49;00m[ 99%] [35mmodules/api/index[39;49;00m
+[01mreading sources... [39;49;00m[100%] [35mmodules/index[39;49;00m
+[01mreading sources... [39;49;00m[100%] [35mquadrance[39;49;00m
+[01mreading sources... [39;49;00m[100%] [35mtodos[39;49;00m
+[01mreading sources... [39;49;00m[100%] [35musage[39;49;00m
+
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/_build/html/_static/fonts/Fira_Code/OFL.txt.rst:9: WARNING: Document headings start at H2, not H1 [myst.header][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/_build/html/_static/fonts/Fira_Mono/OFL.txt.rst:9: WARNING: Document headings start at H2, not H1 [myst.header][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/_build/html/_static/fonts/Fira_Sans/OFL.txt.rst:9: WARNING: Document headings start at H2, not H1 [myst.header][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/_build/html/_static/fonts/Fira_Sans_Condensed/OFL.txt.rst:9: WARNING: Document headings start at H2, not H1 [myst.header][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/_build/html/_static/fonts/Fira_Sans_Extra_Condensed/OFL.txt.rst:9: WARNING: Document headings start at H2, not H1 [myst.header][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/X/41/index.rst:64: WARNING: Block quote ends without a blank line; unexpected unindent. [docutils][39;49;00m
+[31m/home/phi/PROJECTS/geometor/elements/docsrc/modules/api/elements/ingest/index.rst:15: ERROR: Unexpected indentation. [docutils][39;49;00m
+[01mlooking for now-outdated files... [39;49;00mnone found
+[01mpickling environment... [39;49;00mdone
+[01mchecking consistency... [39;49;00m[91m/home/phi/PROJECTS/geometor/elements/docsrc/_build/html/_static/fonts/Fira_Code/OFL.txt: WARNING: document isn't included in any toctree [toc.not_included][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/_build/html/_static/fonts/Fira_Code/README.txt: WARNING: document isn't included in any toctree [toc.not_included][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/_build/html/_static/fonts/Fira_Mono/OFL.txt: WARNING: document isn't included in any toctree [toc.not_included][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/_build/html/_static/fonts/Fira_Sans/OFL.txt: WARNING: document isn't included in any toctree [toc.not_included][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/_build/html/_static/fonts/Fira_Sans_Condensed/OFL.txt: WARNING: document isn't included in any toctree [toc.not_included][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/_build/html/_static/fonts/Fira_Sans_Extra_Condensed/OFL.txt: WARNING: document isn't included in any toctree [toc.not_included][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/I/post.1/index.rst: WARNING: document isn't included in any toctree [toc.not_included][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/I/post.2/index.rst: WARNING: document isn't included in any toctree [toc.not_included][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/I/post.3/index.rst: WARNING: document isn't included in any toctree [toc.not_included][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/I/post.4/index.rst: WARNING: document isn't included in any toctree [toc.not_included][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/I/post.5/index.rst: WARNING: document isn't included in any toctree [toc.not_included][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/intro.rst: WARNING: document isn't included in any toctree [toc.not_included][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/quadrance.md: WARNING: document isn't included in any toctree [toc.not_included][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/usage.rst: WARNING: document isn't included in any toctree [toc.not_included][39;49;00m
+/home/phi/PROJECTS/geometor/elements/docsrc/modules/api/elements/index.rst: document is referenced in multiple toctrees: ['modules/api/index', 'modules/index'], selecting: modules/index <- modules/api/elements/index
+done
+[01mpreparing documents... [39;49;00mdone
+[01mcopying assets... [39;49;00m
+[01mcopying static files... [39;49;00m
+Writing evaluated template result to /home/phi/PROJECTS/geometor/elements/docs/_static/basic.css
+Writing evaluated template result to /home/phi/PROJECTS/geometor/elements/docs/_static/documentation_options.js
+Writing evaluated template result to /home/phi/PROJECTS/geometor/elements/docs/_static/language_data.js
+[01mcopying static files: [39;49;00mdone
+[01mcopying extra files... [39;49;00m
+[01mcopying extra files: [39;49;00mdone
+[01mcopying assets: [39;49;00mdone
+[01mwriting output... [39;49;00m[  0%] [32m_build/html/_static/fonts/Fira_Code/OFL[39;49;00m
+[01mwriting output... [39;49;00m[  0%] [32m_build/html/_static/fonts/Fira_Code/README[39;49;00m
+[01mwriting output... [39;49;00m[  0%] [32m_build/html/_static/fonts/Fira_Mono/OFL[39;49;00m
+[01mwriting output... [39;49;00m[  1%] [32m_build/html/_static/fonts/Fira_Sans/OFL[39;49;00m
+[01mwriting output... [39;49;00m[  1%] [32m_build/html/_static/fonts/Fira_Sans_Condensed/OFL[39;49;00m
+[01mwriting output... [39;49;00m[  1%] [32m_build/html/_static/fonts/Fira_Sans_Extra_Condensed/OFL[39;49;00m
+[01mwriting output... [39;49;00m[  1%] [32mchangelog[39;49;00m
+[01mwriting output... [39;49;00m[  1%] [32mdesign[39;49;00m
+[01mwriting output... [39;49;00m[  1%] [32mglossary[39;49;00m
+[01mwriting output... [39;49;00m[  1%] [32mheath/I/1/index[39;49;00m
+[01mwriting output... [39;49;00m[  2%] [32mheath/I/10/index[39;49;00m
+[01mwriting output... [39;49;00m[  2%] [32mheath/I/11/index[39;49;00m
+[01mwriting output... [39;49;00m[  2%] [32mheath/I/12/index[39;49;00m
+[01mwriting output... [39;49;00m[  2%] [32mheath/I/13/index[39;49;00m
+[01mwriting output... [39;49;00m[  2%] [32mheath/I/14/index[39;49;00m
+[01mwriting output... [39;49;00m[  2%] [32mheath/I/15/index[39;49;00m
+[01mwriting output... [39;49;00m[  3%] [32mheath/I/16/index[39;49;00m
+[01mwriting output... [39;49;00m[  3%] [32mheath/I/17/index[39;49;00m
+[01mwriting output... [39;49;00m[  3%] [32mheath/I/18/index[39;49;00m
+[01mwriting output... [39;49;00m[  3%] [32mheath/I/19/index[39;49;00m
+[01mwriting output... [39;49;00m[  3%] [32mheath/I/2/index[39;49;00m
+[01mwriting output... [39;49;00m[  3%] [32mheath/I/20/index[39;49;00m
+[01mwriting output... [39;49;00m[  3%] [32mheath/I/21/index[39;49;00m
+[01mwriting output... [39;49;00m[  4%] [32mheath/I/22/index[39;49;00m
+[01mwriting output... [39;49;00m[  4%] [32mheath/I/23/index[39;49;00m
+[01mwriting output... [39;49;00m[  4%] [32mheath/I/24/index[39;49;00m
+[01mwriting output... [39;49;00m[  4%] [32mheath/I/25/index[39;49;00m
+[01mwriting output... [39;49;00m[  4%] [32mheath/I/26/index[39;49;00m
+[01mwriting output... [39;49;00m[  4%] [32mheath/I/27/index[39;49;00m
+[01mwriting output... [39;49;00m[  4%] [32mheath/I/28/index[39;49;00m
+[01mwriting output... [39;49;00m[  5%] [32mheath/I/29/index[39;49;00m
+[01mwriting output... [39;49;00m[  5%] [32mheath/I/3/index[39;49;00m
+[01mwriting output... [39;49;00m[  5%] [32mheath/I/30/index[39;49;00m
+[01mwriting output... [39;49;00m[  5%] [32mheath/I/31/index[39;49;00m
+[01mwriting output... [39;49;00m[  5%] [32mheath/I/32/index[39;49;00m
+[01mwriting output... [39;49;00m[  5%] [32mheath/I/33/index[39;49;00m
+[01mwriting output... [39;49;00m[  6%] [32mheath/I/34/index[39;49;00m
+[01mwriting output... [39;49;00m[  6%] [32mheath/I/35/index[39;49;00m
+[01mwriting output... [39;49;00m[  6%] [32mheath/I/36/index[39;49;00m
+[01mwriting output... [39;49;00m[  6%] [32mheath/I/37/index[39;49;00m
+[01mwriting output... [39;49;00m[  6%] [32mheath/I/38/index[39;49;00m
+[01mwriting output... [39;49;00m[  6%] [32mheath/I/39/index[39;49;00m
+[01mwriting output... [39;49;00m[  6%] [32mheath/I/4/index[39;49;00m
+[01mwriting output... [39;49;00m[  7%] [32mheath/I/40/index[39;49;00m
+[01mwriting output... [39;49;00m[  7%] [32mheath/I/41/index[39;49;00m
+[01mwriting output... [39;49;00m[  7%] [32mheath/I/42/index[39;49;00m
+[01mwriting output... [39;49;00m[  7%] [32mheath/I/43/index[39;49;00m
+[01mwriting output... [39;49;00m[  7%] [32mheath/I/44/index[39;49;00m
+[01mwriting output... [39;49;00m[  7%] [32mheath/I/45/index[39;49;00m
+[01mwriting output... [39;49;00m[  7%] [32mheath/I/46/index[39;49;00m
+[01mwriting output... [39;49;00m[  8%] [32mheath/I/47/index[39;49;00m
+[01mwriting output... [39;49;00m[  8%] [32mheath/I/48/index[39;49;00m
+[01mwriting output... [39;49;00m[  8%] [32mheath/I/5/index[39;49;00m
+[01mwriting output... [39;49;00m[  8%] [32mheath/I/6/index[39;49;00m
+[01mwriting output... [39;49;00m[  8%] [32mheath/I/7/index[39;49;00m
+[01mwriting output... [39;49;00m[  8%] [32mheath/I/8/index[39;49;00m
+[01mwriting output... [39;49;00m[  8%] [32mheath/I/9/index[39;49;00m
+[01mwriting output... [39;49;00m[  9%] [32mheath/I/cn.1/index[39;49;00m
+[01mwriting output... [39;49;00m[  9%] [32mheath/I/cn.2/index[39;49;00m
+[01mwriting output... [39;49;00m[  9%] [32mheath/I/cn.3/index[39;49;00m
+[01mwriting output... [39;49;00m[  9%] [32mheath/I/cn.4/index[39;49;00m
+[01mwriting output... [39;49;00m[  9%] [32mheath/I/cn.5/index[39;49;00m
+[01mwriting output... [39;49;00m[  9%] [32mheath/I/def.1/index[39;49;00m
+[01mwriting output... [39;49;00m[ 10%] [32mheath/I/def.10/index[39;49;00m
+[01mwriting output... [39;49;00m[ 10%] [32mheath/I/def.11/index[39;49;00m
+[01mwriting output... [39;49;00m[ 10%] [32mheath/I/def.12/index[39;49;00m
+[01mwriting output... [39;49;00m[ 10%] [32mheath/I/def.13/index[39;49;00m
+[01mwriting output... [39;49;00m[ 10%] [32mheath/I/def.14/index[39;49;00m
+[01mwriting output... [39;49;00m[ 10%] [32mheath/I/def.15/index[39;49;00m
+[01mwriting output... [39;49;00m[ 10%] [32mheath/I/def.16/index[39;49;00m
+[01mwriting output... [39;49;00m[ 11%] [32mheath/I/def.17/index[39;49;00m
+[01mwriting output... [39;49;00m[ 11%] [32mheath/I/def.18/index[39;49;00m
+[01mwriting output... [39;49;00m[ 11%] [32mheath/I/def.19/index[39;49;00m
+[01mwriting output... [39;49;00m[ 11%] [32mheath/I/def.2/index[39;49;00m
+[01mwriting output... [39;49;00m[ 11%] [32mheath/I/def.20/index[39;49;00m
+[01mwriting output... [39;49;00m[ 11%] [32mheath/I/def.21/index[39;49;00m
+[01mwriting output... [39;49;00m[ 11%] [32mheath/I/def.22/index[39;49;00m
+[01mwriting output... [39;49;00m[ 12%] [32mheath/I/def.23/index[39;49;00m
+[01mwriting output... [39;49;00m[ 12%] [32mheath/I/def.3/index[39;49;00m
+[01mwriting output... [39;49;00m[ 12%] [32mheath/I/def.4/index[39;49;00m
+[01mwriting output... [39;49;00m[ 12%] [32mheath/I/def.5/index[39;49;00m
+[01mwriting output... [39;49;00m[ 12%] [32mheath/I/def.6/index[39;49;00m
+[01mwriting output... [39;49;00m[ 12%] [32mheath/I/def.7/index[39;49;00m
+[01mwriting output... [39;49;00m[ 13%] [32mheath/I/def.8/index[39;49;00m
+[01mwriting output... [39;49;00m[ 13%] [32mheath/I/def.9/index[39;49;00m
+[01mwriting output... [39;49;00m[ 13%] [32mheath/I/index[39;49;00m
+[01mwriting output... [39;49;00m[ 13%] [32mheath/I/post.1/index[39;49;00m
+[01mwriting output... [39;49;00m[ 13%] [32mheath/I/post.2/index[39;49;00m
+[01mwriting output... [39;49;00m[ 13%] [32mheath/I/post.3/index[39;49;00m
+[01mwriting output... [39;49;00m[ 13%] [32mheath/I/post.4/index[39;49;00m
+[01mwriting output... [39;49;00m[ 14%] [32mheath/I/post.5/index[39;49;00m
+[01mwriting output... [39;49;00m[ 14%] [32mheath/II/1/index[39;49;00m
+[01mwriting output... [39;49;00m[ 14%] [32mheath/II/10/index[39;49;00m
+[01mwriting output... [39;49;00m[ 14%] [32mheath/II/11/index[39;49;00m
+[01mwriting output... [39;49;00m[ 14%] [32mheath/II/12/index[39;49;00m
+[01mwriting output... [39;49;00m[ 14%] [32mheath/II/13/index[39;49;00m
+[01mwriting output... [39;49;00m[ 14%] [32mheath/II/14/index[39;49;00m
+[01mwriting output... [39;49;00m[ 15%] [32mheath/II/2/index[39;49;00m
+[01mwriting output... [39;49;00m[ 15%] [32mheath/II/3/index[39;49;00m
+[01mwriting output... [39;49;00m[ 15%] [32mheath/II/4/index[39;49;00m
+[01mwriting output... [39;49;00m[ 15%] [32mheath/II/5/index[39;49;00m
+[01mwriting output... [39;49;00m[ 15%] [32mheath/II/6/index[39;49;00m
+[01mwriting output... [39;49;00m[ 15%] [32mheath/II/7/index[39;49;00m
+[01mwriting output... [39;49;00m[ 15%] [32mheath/II/8/index[39;49;00m
+[01mwriting output... [39;49;00m[ 16%] [32mheath/II/9/index[39;49;00m
+[01mwriting output... [39;49;00m[ 16%] [32mheath/II/def.1/index[39;49;00m
+[01mwriting output... [39;49;00m[ 16%] [32mheath/II/def.2/index[39;49;00m
+[01mwriting output... [39;49;00m[ 16%] [32mheath/II/index[39;49;00m
+[01mwriting output... [39;49;00m[ 16%] [32mheath/III/1/index[39;49;00m
+[01mwriting output... [39;49;00m[ 16%] [32mheath/III/10/index[39;49;00m
+[01mwriting output... [39;49;00m[ 17%] [32mheath/III/11/index[39;49;00m
+[01mwriting output... [39;49;00m[ 17%] [32mheath/III/12/index[39;49;00m
+[01mwriting output... [39;49;00m[ 17%] [32mheath/III/13/index[39;49;00m
+[01mwriting output... [39;49;00m[ 17%] [32mheath/III/14/index[39;49;00m
+[01mwriting output... [39;49;00m[ 17%] [32mheath/III/15/index[39;49;00m
+[01mwriting output... [39;49;00m[ 17%] [32mheath/III/16/index[39;49;00m
+[01mwriting output... [39;49;00m[ 17%] [32mheath/III/17/index[39;49;00m
+[01mwriting output... [39;49;00m[ 18%] [32mheath/III/18/index[39;49;00m
+[01mwriting output... [39;49;00m[ 18%] [32mheath/III/19/index[39;49;00m
+[01mwriting output... [39;49;00m[ 18%] [32mheath/III/2/index[39;49;00m
+[01mwriting output... [39;49;00m[ 18%] [32mheath/III/20/index[39;49;00m
+[01mwriting output... [39;49;00m[ 18%] [32mheath/III/21/index[39;49;00m
+[01mwriting output... [39;49;00m[ 18%] [32mheath/III/22/index[39;49;00m
+[01mwriting output... [39;49;00m[ 18%] [32mheath/III/23/index[39;49;00m
+[01mwriting output... [39;49;00m[ 19%] [32mheath/III/24/index[39;49;00m
+[01mwriting output... [39;49;00m[ 19%] [32mheath/III/25/index[39;49;00m
+[01mwriting output... [39;49;00m[ 19%] [32mheath/III/26/index[39;49;00m
+[01mwriting output... [39;49;00m[ 19%] [32mheath/III/27/index[39;49;00m
+[01mwriting output... [39;49;00m[ 19%] [32mheath/III/28/index[39;49;00m
+[01mwriting output... [39;49;00m[ 19%] [32mheath/III/29/index[39;49;00m
+[01mwriting output... [39;49;00m[ 20%] [32mheath/III/3/index[39;49;00m
+[01mwriting output... [39;49;00m[ 20%] [32mheath/III/30/index[39;49;00m
+[01mwriting output... [39;49;00m[ 20%] [32mheath/III/31/index[39;49;00m
+[01mwriting output... [39;49;00m[ 20%] [32mheath/III/32/index[39;49;00m
+[01mwriting output... [39;49;00m[ 20%] [32mheath/III/33/index[39;49;00m
+[01mwriting output... [39;49;00m[ 20%] [32mheath/III/34/index[39;49;00m
+[01mwriting output... [39;49;00m[ 20%] [32mheath/III/35/index[39;49;00m
+[01mwriting output... [39;49;00m[ 21%] [32mheath/III/36/index[39;49;00m
+[01mwriting output... [39;49;00m[ 21%] [32mheath/III/37/index[39;49;00m
+[01mwriting output... [39;49;00m[ 21%] [32mheath/III/4/index[39;49;00m
+[01mwriting output... [39;49;00m[ 21%] [32mheath/III/5/index[39;49;00m
+[01mwriting output... [39;49;00m[ 21%] [32mheath/III/6/index[39;49;00m
+[01mwriting output... [39;49;00m[ 21%] [32mheath/III/7/index[39;49;00m
+[01mwriting output... [39;49;00m[ 21%] [32mheath/III/8/index[39;49;00m
+[01mwriting output... [39;49;00m[ 22%] [32mheath/III/9/index[39;49;00m
+[01mwriting output... [39;49;00m[ 22%] [32mheath/III/def.1/index[39;49;00m
+[01mwriting output... [39;49;00m[ 22%] [32mheath/III/def.10/index[39;49;00m
+[01mwriting output... [39;49;00m[ 22%] [32mheath/III/def.11/index[39;49;00m
+[01mwriting output... [39;49;00m[ 22%] [32mheath/III/def.2/index[39;49;00m
+[01mwriting output... [39;49;00m[ 22%] [32mheath/III/def.3/index[39;49;00m
+[01mwriting output... [39;49;00m[ 23%] [32mheath/III/def.4/index[39;49;00m
+[01mwriting output... [39;49;00m[ 23%] [32mheath/III/def.5/index[39;49;00m
+[01mwriting output... [39;49;00m[ 23%] [32mheath/III/def.6/index[39;49;00m
+[01mwriting output... [39;49;00m[ 23%] [32mheath/III/def.7/index[39;49;00m
+[01mwriting output... [39;49;00m[ 23%] [32mheath/III/def.8/index[39;49;00m
+[01mwriting output... [39;49;00m[ 23%] [32mheath/III/def.9/index[39;49;00m
+[01mwriting output... [39;49;00m[ 23%] [32mheath/III/index[39;49;00m
+[01mwriting output... [39;49;00m[ 24%] [32mheath/IV/1/index[39;49;00m
+[01mwriting output... [39;49;00m[ 24%] [32mheath/IV/10/index[39;49;00m
+[01mwriting output... [39;49;00m[ 24%] [32mheath/IV/11/index[39;49;00m
+[01mwriting output... [39;49;00m[ 24%] [32mheath/IV/12/index[39;49;00m
+[01mwriting output... [39;49;00m[ 24%] [32mheath/IV/13/index[39;49;00m
+[01mwriting output... [39;49;00m[ 24%] [32mheath/IV/14/index[39;49;00m
+[01mwriting output... [39;49;00m[ 24%] [32mheath/IV/15/index[39;49;00m
+[01mwriting output... [39;49;00m[ 25%] [32mheath/IV/16/index[39;49;00m
+[01mwriting output... [39;49;00m[ 25%] [32mheath/IV/2/index[39;49;00m
+[01mwriting output... [39;49;00m[ 25%] [32mheath/IV/3/index[39;49;00m
+[01mwriting output... [39;49;00m[ 25%] [32mheath/IV/4/index[39;49;00m
+[01mwriting output... [39;49;00m[ 25%] [32mheath/IV/5/index[39;49;00m
+[01mwriting output... [39;49;00m[ 25%] [32mheath/IV/6/index[39;49;00m
+[01mwriting output... [39;49;00m[ 25%] [32mheath/IV/7/index[39;49;00m
+[01mwriting output... [39;49;00m[ 26%] [32mheath/IV/8/index[39;49;00m
+[01mwriting output... [39;49;00m[ 26%] [32mheath/IV/9/index[39;49;00m
+[01mwriting output... [39;49;00m[ 26%] [32mheath/IV/def.1/index[39;49;00m
+[01mwriting output... [39;49;00m[ 26%] [32mheath/IV/def.2/index[39;49;00m
+[01mwriting output... [39;49;00m[ 26%] [32mheath/IV/def.3/index[39;49;00m
+[01mwriting output... [39;49;00m[ 26%] [32mheath/IV/def.4/index[39;49;00m
+[01mwriting output... [39;49;00m[ 27%] [32mheath/IV/def.5/index[39;49;00m
+[01mwriting output... [39;49;00m[ 27%] [32mheath/IV/def.6/index[39;49;00m
+[01mwriting output... [39;49;00m[ 27%] [32mheath/IV/def.7/index[39;49;00m
+[01mwriting output... [39;49;00m[ 27%] [32mheath/IV/index[39;49;00m
+[01mwriting output... [39;49;00m[ 27%] [32mheath/IX/1/index[39;49;00m
+[01mwriting output... [39;49;00m[ 27%] [32mheath/IX/10/index[39;49;00m
+[01mwriting output... [39;49;00m[ 27%] [32mheath/IX/11/index[39;49;00m
+[01mwriting output... [39;49;00m[ 28%] [32mheath/IX/12/index[39;49;00m
+[01mwriting output... [39;49;00m[ 28%] [32mheath/IX/13/index[39;49;00m
+[01mwriting output... [39;49;00m[ 28%] [32mheath/IX/14/index[39;49;00m
+[01mwriting output... [39;49;00m[ 28%] [32mheath/IX/15/index[39;49;00m
+[01mwriting output... [39;49;00m[ 28%] [32mheath/IX/16/index[39;49;00m
+[01mwriting output... [39;49;00m[ 28%] [32mheath/IX/17/index[39;49;00m
+[01mwriting output... [39;49;00m[ 28%] [32mheath/IX/18/index[39;49;00m
+[01mwriting output... [39;49;00m[ 29%] [32mheath/IX/19/index[39;49;00m
+[01mwriting output... [39;49;00m[ 29%] [32mheath/IX/2/index[39;49;00m
+[01mwriting output... [39;49;00m[ 29%] [32mheath/IX/20/index[39;49;00m
+[01mwriting output... [39;49;00m[ 29%] [32mheath/IX/21/index[39;49;00m
+[01mwriting output... [39;49;00m[ 29%] [32mheath/IX/22/index[39;49;00m
+[01mwriting output... [39;49;00m[ 29%] [32mheath/IX/23/index[39;49;00m
+[01mwriting output... [39;49;00m[ 30%] [32mheath/IX/24/index[39;49;00m
+[01mwriting output... [39;49;00m[ 30%] [32mheath/IX/25/index[39;49;00m
+[01mwriting output... [39;49;00m[ 30%] [32mheath/IX/26/index[39;49;00m
+[01mwriting output... [39;49;00m[ 30%] [32mheath/IX/27/index[39;49;00m
+[01mwriting output... [39;49;00m[ 30%] [32mheath/IX/28/index[39;49;00m
+[01mwriting output... [39;49;00m[ 30%] [32mheath/IX/29/index[39;49;00m
+[01mwriting output... [39;49;00m[ 30%] [32mheath/IX/3/index[39;49;00m
+[01mwriting output... [39;49;00m[ 31%] [32mheath/IX/30/index[39;49;00m
+[01mwriting output... [39;49;00m[ 31%] [32mheath/IX/31/index[39;49;00m
+[01mwriting output... [39;49;00m[ 31%] [32mheath/IX/32/index[39;49;00m
+[01mwriting output... [39;49;00m[ 31%] [32mheath/IX/33/index[39;49;00m
+[01mwriting output... [39;49;00m[ 31%] [32mheath/IX/34/index[39;49;00m
+[01mwriting output... [39;49;00m[ 31%] [32mheath/IX/35/index[39;49;00m
+[01mwriting output... [39;49;00m[ 31%] [32mheath/IX/36/index[39;49;00m
+[01mwriting output... [39;49;00m[ 32%] [32mheath/IX/4/index[39;49;00m
+[01mwriting output... [39;49;00m[ 32%] [32mheath/IX/5/index[39;49;00m
+[01mwriting output... [39;49;00m[ 32%] [32mheath/IX/6/index[39;49;00m
+[01mwriting output... [39;49;00m[ 32%] [32mheath/IX/7/index[39;49;00m
+[01mwriting output... [39;49;00m[ 32%] [32mheath/IX/8/index[39;49;00m
+[01mwriting output... [39;49;00m[ 32%] [32mheath/IX/9/index[39;49;00m
+[01mwriting output... [39;49;00m[ 32%] [32mheath/IX/index[39;49;00m
+[01mwriting output... [39;49;00m[ 33%] [32mheath/V/1/index[39;49;00m
+[01mwriting output... [39;49;00m[ 33%] [32mheath/V/10/index[39;49;00m
+[01mwriting output... [39;49;00m[ 33%] [32mheath/V/11/index[39;49;00m
+[01mwriting output... [39;49;00m[ 33%] [32mheath/V/12/index[39;49;00m
+[01mwriting output... [39;49;00m[ 33%] [32mheath/V/13/index[39;49;00m
+[01mwriting output... [39;49;00m[ 33%] [32mheath/V/14/index[39;49;00m
+[01mwriting output... [39;49;00m[ 34%] [32mheath/V/15/index[39;49;00m
+[01mwriting output... [39;49;00m[ 34%] [32mheath/V/16/index[39;49;00m
+[01mwriting output... [39;49;00m[ 34%] [32mheath/V/17/index[39;49;00m
+[01mwriting output... [39;49;00m[ 34%] [32mheath/V/18/index[39;49;00m
+[01mwriting output... [39;49;00m[ 34%] [32mheath/V/19/index[39;49;00m
+[01mwriting output... [39;49;00m[ 34%] [32mheath/V/2/index[39;49;00m
+[01mwriting output... [39;49;00m[ 34%] [32mheath/V/20/index[39;49;00m
+[01mwriting output... [39;49;00m[ 35%] [32mheath/V/21/index[39;49;00m
+[01mwriting output... [39;49;00m[ 35%] [32mheath/V/22/index[39;49;00m
+[01mwriting output... [39;49;00m[ 35%] [32mheath/V/23/index[39;49;00m
+[01mwriting output... [39;49;00m[ 35%] [32mheath/V/24/index[39;49;00m
+[01mwriting output... [39;49;00m[ 35%] [32mheath/V/25/index[39;49;00m
+[01mwriting output... [39;49;00m[ 35%] [32mheath/V/3/index[39;49;00m
+[01mwriting output... [39;49;00m[ 35%] [32mheath/V/4/index[39;49;00m
+[01mwriting output... [39;49;00m[ 36%] [32mheath/V/5/index[39;49;00m
+[01mwriting output... [39;49;00m[ 36%] [32mheath/V/6/index[39;49;00m
+[01mwriting output... [39;49;00m[ 36%] [32mheath/V/7/index[39;49;00m
+[01mwriting output... [39;49;00m[ 36%] [32mheath/V/8/index[39;49;00m
+[01mwriting output... [39;49;00m[ 36%] [32mheath/V/9/index[39;49;00m
+[01mwriting output... [39;49;00m[ 36%] [32mheath/V/def.1/index[39;49;00m
+[01mwriting output... [39;49;00m[ 37%] [32mheath/V/def.10/index[39;49;00m
+[01mwriting output... [39;49;00m[ 37%] [32mheath/V/def.11/index[39;49;00m
+[01mwriting output... [39;49;00m[ 37%] [32mheath/V/def.12/index[39;49;00m
+[01mwriting output... [39;49;00m[ 37%] [32mheath/V/def.13/index[39;49;00m
+[01mwriting output... [39;49;00m[ 37%] [32mheath/V/def.14/index[39;49;00m
+[01mwriting output... [39;49;00m[ 37%] [32mheath/V/def.15/index[39;49;00m
+[01mwriting output... [39;49;00m[ 37%] [32mheath/V/def.16/index[39;49;00m
+[01mwriting output... [39;49;00m[ 38%] [32mheath/V/def.17/index[39;49;00m
+[01mwriting output... [39;49;00m[ 38%] [32mheath/V/def.18/index[39;49;00m
+[01mwriting output... [39;49;00m[ 38%] [32mheath/V/def.2/index[39;49;00m
+[01mwriting output... [39;49;00m[ 38%] [32mheath/V/def.3/index[39;49;00m
+[01mwriting output... [39;49;00m[ 38%] [32mheath/V/def.4/index[39;49;00m
+[01mwriting output... [39;49;00m[ 38%] [32mheath/V/def.5/index[39;49;00m
+[01mwriting output... [39;49;00m[ 38%] [32mheath/V/def.6/index[39;49;00m
+[01mwriting output... [39;49;00m[ 39%] [32mheath/V/def.7/index[39;49;00m
+[01mwriting output... [39;49;00m[ 39%] [32mheath/V/def.8/index[39;49;00m
+[01mwriting output... [39;49;00m[ 39%] [32mheath/V/def.9/index[39;49;00m
+[01mwriting output... [39;49;00m[ 39%] [32mheath/V/index[39;49;00m
+[01mwriting output... [39;49;00m[ 39%] [32mheath/VI/1/index[39;49;00m
+[01mwriting output... [39;49;00m[ 39%] [32mheath/VI/10/index[39;49;00m
+[01mwriting output... [39;49;00m[ 39%] [32mheath/VI/11/index[39;49;00m
+[01mwriting output... [39;49;00m[ 40%] [32mheath/VI/12/index[39;49;00m
+[01mwriting output... [39;49;00m[ 40%] [32mheath/VI/13/index[39;49;00m
+[01mwriting output... [39;49;00m[ 40%] [32mheath/VI/14/index[39;49;00m
+[01mwriting output... [39;49;00m[ 40%] [32mheath/VI/15/index[39;49;00m
+[01mwriting output... [39;49;00m[ 40%] [32mheath/VI/16/index[39;49;00m
+[01mwriting output... [39;49;00m[ 40%] [32mheath/VI/17/index[39;49;00m
+[01mwriting output... [39;49;00m[ 41%] [32mheath/VI/18/index[39;49;00m
+[01mwriting output... [39;49;00m[ 41%] [32mheath/VI/19/index[39;49;00m
+[01mwriting output... [39;49;00m[ 41%] [32mheath/VI/2/index[39;49;00m
+[01mwriting output... [39;49;00m[ 41%] [32mheath/VI/20/index[39;49;00m
+[01mwriting output... [39;49;00m[ 41%] [32mheath/VI/21/index[39;49;00m
+[01mwriting output... [39;49;00m[ 41%] [32mheath/VI/22/index[39;49;00m
+[01mwriting output... [39;49;00m[ 41%] [32mheath/VI/23/index[39;49;00m
+[01mwriting output... [39;49;00m[ 42%] [32mheath/VI/24/index[39;49;00m
+[01mwriting output... [39;49;00m[ 42%] [32mheath/VI/25/index[39;49;00m
+[01mwriting output... [39;49;00m[ 42%] [32mheath/VI/26/index[39;49;00m
+[01mwriting output... [39;49;00m[ 42%] [32mheath/VI/27/index[39;49;00m
+[01mwriting output... [39;49;00m[ 42%] [32mheath/VI/28/index[39;49;00m
+[01mwriting output... [39;49;00m[ 42%] [32mheath/VI/29/index[39;49;00m
+[01mwriting output... [39;49;00m[ 42%] [32mheath/VI/3/index[39;49;00m
+[01mwriting output... [39;49;00m[ 43%] [32mheath/VI/30/index[39;49;00m
+[01mwriting output... [39;49;00m[ 43%] [32mheath/VI/31/index[39;49;00m
+[01mwriting output... [39;49;00m[ 43%] [32mheath/VI/32/index[39;49;00m
+[01mwriting output... [39;49;00m[ 43%] [32mheath/VI/33/index[39;49;00m
+[01mwriting output... [39;49;00m[ 43%] [32mheath/VI/4/index[39;49;00m
+[01mwriting output... [39;49;00m[ 43%] [32mheath/VI/5/index[39;49;00m
+[01mwriting output... [39;49;00m[ 44%] [32mheath/VI/6/index[39;49;00m
+[01mwriting output... [39;49;00m[ 44%] [32mheath/VI/7/index[39;49;00m
+[01mwriting output... [39;49;00m[ 44%] [32mheath/VI/8/index[39;49;00m
+[01mwriting output... [39;49;00m[ 44%] [32mheath/VI/9/index[39;49;00m
+[01mwriting output... [39;49;00m[ 44%] [32mheath/VI/def.1/index[39;49;00m
+[01mwriting output... [39;49;00m[ 44%] [32mheath/VI/def.2/index[39;49;00m
+[01mwriting output... [39;49;00m[ 44%] [32mheath/VI/def.3/index[39;49;00m
+[01mwriting output... [39;49;00m[ 45%] [32mheath/VI/def.4/index[39;49;00m
+[01mwriting output... [39;49;00m[ 45%] [32mheath/VI/def.5/index[39;49;00m
+[01mwriting output... [39;49;00m[ 45%] [32mheath/VI/index[39;49;00m
+[01mwriting output... [39;49;00m[ 45%] [32mheath/VII/1/index[39;49;00m
+[01mwriting output... [39;49;00m[ 45%] [32mheath/VII/10/index[39;49;00m
+[01mwriting output... [39;49;00m[ 45%] [32mheath/VII/11/index[39;49;00m
+[01mwriting output... [39;49;00m[ 45%] [32mheath/VII/12/index[39;49;00m
+[01mwriting output... [39;49;00m[ 46%] [32mheath/VII/13/index[39;49;00m
+[01mwriting output... [39;49;00m[ 46%] [32mheath/VII/14/index[39;49;00m
+[01mwriting output... [39;49;00m[ 46%] [32mheath/VII/15/index[39;49;00m
+[01mwriting output... [39;49;00m[ 46%] [32mheath/VII/16/index[39;49;00m
+[01mwriting output... [39;49;00m[ 46%] [32mheath/VII/17/index[39;49;00m
+[01mwriting output... [39;49;00m[ 46%] [32mheath/VII/18/index[39;49;00m
+[01mwriting output... [39;49;00m[ 46%] [32mheath/VII/19/index[39;49;00m
+[01mwriting output... [39;49;00m[ 47%] [32mheath/VII/2/index[39;49;00m
+[01mwriting output... [39;49;00m[ 47%] [32mheath/VII/20/index[39;49;00m
+[01mwriting output... [39;49;00m[ 47%] [32mheath/VII/21/index[39;49;00m
+[01mwriting output... [39;49;00m[ 47%] [32mheath/VII/22/index[39;49;00m
+[01mwriting output... [39;49;00m[ 47%] [32mheath/VII/23/index[39;49;00m
+[01mwriting output... [39;49;00m[ 47%] [32mheath/VII/24/index[39;49;00m
+[01mwriting output... [39;49;00m[ 48%] [32mheath/VII/25/index[39;49;00m
+[01mwriting output... [39;49;00m[ 48%] [32mheath/VII/26/index[39;49;00m
+[01mwriting output... [39;49;00m[ 48%] [32mheath/VII/27/index[39;49;00m
+[01mwriting output... [39;49;00m[ 48%] [32mheath/VII/28/index[39;49;00m
+[01mwriting output... [39;49;00m[ 48%] [32mheath/VII/29/index[39;49;00m
+[01mwriting output... [39;49;00m[ 48%] [32mheath/VII/3/index[39;49;00m
+[01mwriting output... [39;49;00m[ 48%] [32mheath/VII/30/index[39;49;00m
+[01mwriting output... [39;49;00m[ 49%] [32mheath/VII/31/index[39;49;00m
+[01mwriting output... [39;49;00m[ 49%] [32mheath/VII/32/index[39;49;00m
+[01mwriting output... [39;49;00m[ 49%] [32mheath/VII/33/index[39;49;00m
+[01mwriting output... [39;49;00m[ 49%] [32mheath/VII/34/index[39;49;00m
+[01mwriting output... [39;49;00m[ 49%] [32mheath/VII/35/index[39;49;00m
+[01mwriting output... [39;49;00m[ 49%] [32mheath/VII/36/index[39;49;00m
+[01mwriting output... [39;49;00m[ 49%] [32mheath/VII/37/index[39;49;00m
+[01mwriting output... [39;49;00m[ 50%] [32mheath/VII/38/index[39;49;00m
+[01mwriting output... [39;49;00m[ 50%] [32mheath/VII/39/index[39;49;00m
+[01mwriting output... [39;49;00m[ 50%] [32mheath/VII/4/index[39;49;00m
+[01mwriting output... [39;49;00m[ 50%] [32mheath/VII/5/index[39;49;00m
+[01mwriting output... [39;49;00m[ 50%] [32mheath/VII/6/index[39;49;00m
+[01mwriting output... [39;49;00m[ 50%] [32mheath/VII/7/index[39;49;00m
+[01mwriting output... [39;49;00m[ 51%] [32mheath/VII/8/index[39;49;00m
+[01mwriting output... [39;49;00m[ 51%] [32mheath/VII/9/index[39;49;00m
+[01mwriting output... [39;49;00m[ 51%] [32mheath/VII/def.1/index[39;49;00m
+[01mwriting output... [39;49;00m[ 51%] [32mheath/VII/def.10/index[39;49;00m
+[01mwriting output... [39;49;00m[ 51%] [32mheath/VII/def.11/index[39;49;00m
+[01mwriting output... [39;49;00m[ 51%] [32mheath/VII/def.12/index[39;49;00m
+[01mwriting output... [39;49;00m[ 51%] [32mheath/VII/def.13/index[39;49;00m
+[01mwriting output... [39;49;00m[ 52%] [32mheath/VII/def.14/index[39;49;00m
+[01mwriting output... [39;49;00m[ 52%] [32mheath/VII/def.15/index[39;49;00m
+[01mwriting output... [39;49;00m[ 52%] [32mheath/VII/def.16/index[39;49;00m
+[01mwriting output... [39;49;00m[ 52%] [32mheath/VII/def.17/index[39;49;00m
+[01mwriting output... [39;49;00m[ 52%] [32mheath/VII/def.18/index[39;49;00m
+[01mwriting output... [39;49;00m[ 52%] [32mheath/VII/def.19/index[39;49;00m
+[01mwriting output... [39;49;00m[ 52%] [32mheath/VII/def.2/index[39;49;00m
+[01mwriting output... [39;49;00m[ 53%] [32mheath/VII/def.20/index[39;49;00m
+[01mwriting output... [39;49;00m[ 53%] [32mheath/VII/def.21/index[39;49;00m
+[01mwriting output... [39;49;00m[ 53%] [32mheath/VII/def.22/index[39;49;00m
+[01mwriting output... [39;49;00m[ 53%] [32mheath/VII/def.3/index[39;49;00m
+[01mwriting output... [39;49;00m[ 53%] [32mheath/VII/def.4/index[39;49;00m
+[01mwriting output... [39;49;00m[ 53%] [32mheath/VII/def.5/index[39;49;00m
+[01mwriting output... [39;49;00m[ 54%] [32mheath/VII/def.6/index[39;49;00m
+[01mwriting output... [39;49;00m[ 54%] [32mheath/VII/def.7/index[39;49;00m
+[01mwriting output... [39;49;00m[ 54%] [32mheath/VII/def.8/index[39;49;00m
+[01mwriting output... [39;49;00m[ 54%] [32mheath/VII/def.9/index[39;49;00m
+[01mwriting output... [39;49;00m[ 54%] [32mheath/VII/index[39;49;00m
+[01mwriting output... [39;49;00m[ 54%] [32mheath/VIII/1/index[39;49;00m
+[01mwriting output... [39;49;00m[ 54%] [32mheath/VIII/10/index[39;49;00m
+[01mwriting output... [39;49;00m[ 55%] [32mheath/VIII/11/index[39;49;00m
+[01mwriting output... [39;49;00m[ 55%] [32mheath/VIII/12/index[39;49;00m
+[01mwriting output... [39;49;00m[ 55%] [32mheath/VIII/13/index[39;49;00m
+[01mwriting output... [39;49;00m[ 55%] [32mheath/VIII/14/index[39;49;00m
+[01mwriting output... [39;49;00m[ 55%] [32mheath/VIII/15/index[39;49;00m
+[01mwriting output... [39;49;00m[ 55%] [32mheath/VIII/16/index[39;49;00m
+[01mwriting output... [39;49;00m[ 55%] [32mheath/VIII/17/index[39;49;00m
+[01mwriting output... [39;49;00m[ 56%] [32mheath/VIII/18/index[39;49;00m
+[01mwriting output... [39;49;00m[ 56%] [32mheath/VIII/19/index[39;49;00m
+[01mwriting output... [39;49;00m[ 56%] [32mheath/VIII/2/index[39;49;00m
+[01mwriting output... [39;49;00m[ 56%] [32mheath/VIII/20/index[39;49;00m
+[01mwriting output... [39;49;00m[ 56%] [32mheath/VIII/21/index[39;49;00m
+[01mwriting output... [39;49;00m[ 56%] [32mheath/VIII/22/index[39;49;00m
+[01mwriting output... [39;49;00m[ 56%] [32mheath/VIII/23/index[39;49;00m
+[01mwriting output... [39;49;00m[ 57%] [32mheath/VIII/24/index[39;49;00m
+[01mwriting output... [39;49;00m[ 57%] [32mheath/VIII/25/index[39;49;00m
+[01mwriting output... [39;49;00m[ 57%] [32mheath/VIII/26/index[39;49;00m
+[01mwriting output... [39;49;00m[ 57%] [32mheath/VIII/27/index[39;49;00m
+[01mwriting output... [39;49;00m[ 57%] [32mheath/VIII/3/index[39;49;00m
+[01mwriting output... [39;49;00m[ 57%] [32mheath/VIII/4/index[39;49;00m
+[01mwriting output... [39;49;00m[ 58%] [32mheath/VIII/5/index[39;49;00m
+[01mwriting output... [39;49;00m[ 58%] [32mheath/VIII/6/index[39;49;00m
+[01mwriting output... [39;49;00m[ 58%] [32mheath/VIII/7/index[39;49;00m
+[01mwriting output... [39;49;00m[ 58%] [32mheath/VIII/8/index[39;49;00m
+[01mwriting output... [39;49;00m[ 58%] [32mheath/VIII/9/index[39;49;00m
+[01mwriting output... [39;49;00m[ 58%] [32mheath/VIII/index[39;49;00m
+[01mwriting output... [39;49;00m[ 58%] [32mheath/X/1/index[39;49;00m
+[01mwriting output... [39;49;00m[ 59%] [32mheath/X/10/index[39;49;00m
+[01mwriting output... [39;49;00m[ 59%] [32mheath/X/100/index[39;49;00m
+[01mwriting output... [39;49;00m[ 59%] [32mheath/X/101/index[39;49;00m
+[01mwriting output... [39;49;00m[ 59%] [32mheath/X/102/index[39;49;00m
+[01mwriting output... [39;49;00m[ 59%] [32mheath/X/103/index[39;49;00m
+[01mwriting output... [39;49;00m[ 59%] [32mheath/X/104/index[39;49;00m
+[01mwriting output... [39;49;00m[ 59%] [32mheath/X/105/index[39;49;00m
+[01mwriting output... [39;49;00m[ 60%] [32mheath/X/106/index[39;49;00m
+[01mwriting output... [39;49;00m[ 60%] [32mheath/X/107/index[39;49;00m
+[01mwriting output... [39;49;00m[ 60%] [32mheath/X/108/index[39;49;00m
+[01mwriting output... [39;49;00m[ 60%] [32mheath/X/109/index[39;49;00m
+[01mwriting output... [39;49;00m[ 60%] [32mheath/X/11/index[39;49;00m
+[01mwriting output... [39;49;00m[ 60%] [32mheath/X/110/index[39;49;00m
+[01mwriting output... [39;49;00m[ 61%] [32mheath/X/111/index[39;49;00m
+[01mwriting output... [39;49;00m[ 61%] [32mheath/X/112/index[39;49;00m
+[01mwriting output... [39;49;00m[ 61%] [32mheath/X/113/index[39;49;00m
+[01mwriting output... [39;49;00m[ 61%] [32mheath/X/114/index[39;49;00m
+[01mwriting output... [39;49;00m[ 61%] [32mheath/X/115/index[39;49;00m
+[01mwriting output... [39;49;00m[ 61%] [32mheath/X/12/index[39;49;00m
+[01mwriting output... [39;49;00m[ 61%] [32mheath/X/13/index[39;49;00m
+[01mwriting output... [39;49;00m[ 62%] [32mheath/X/14/index[39;49;00m
+[01mwriting output... [39;49;00m[ 62%] [32mheath/X/15/index[39;49;00m
+[01mwriting output... [39;49;00m[ 62%] [32mheath/X/16/index[39;49;00m
+[01mwriting output... [39;49;00m[ 62%] [32mheath/X/17/index[39;49;00m
+[01mwriting output... [39;49;00m[ 62%] [32mheath/X/18/index[39;49;00m
+[01mwriting output... [39;49;00m[ 62%] [32mheath/X/19/index[39;49;00m
+[01mwriting output... [39;49;00m[ 62%] [32mheath/X/2/index[39;49;00m
+[01mwriting output... [39;49;00m[ 63%] [32mheath/X/20/index[39;49;00m
+[01mwriting output... [39;49;00m[ 63%] [32mheath/X/21/index[39;49;00m
+[01mwriting output... [39;49;00m[ 63%] [32mheath/X/22/index[39;49;00m
+[01mwriting output... [39;49;00m[ 63%] [32mheath/X/23/index[39;49;00m
+[01mwriting output... [39;49;00m[ 63%] [32mheath/X/24/index[39;49;00m
+[01mwriting output... [39;49;00m[ 63%] [32mheath/X/25/index[39;49;00m
+[01mwriting output... [39;49;00m[ 63%] [32mheath/X/26/index[39;49;00m
+[01mwriting output... [39;49;00m[ 64%] [32mheath/X/27/index[39;49;00m
+[01mwriting output... [39;49;00m[ 64%] [32mheath/X/28/index[39;49;00m
+[01mwriting output... [39;49;00m[ 64%] [32mheath/X/29/index[39;49;00m
+[01mwriting output... [39;49;00m[ 64%] [32mheath/X/3/index[39;49;00m
+[01mwriting output... [39;49;00m[ 64%] [32mheath/X/30/index[39;49;00m
+[01mwriting output... [39;49;00m[ 64%] [32mheath/X/31/index[39;49;00m
+[01mwriting output... [39;49;00m[ 65%] [32mheath/X/32/index[39;49;00m
+[01mwriting output... [39;49;00m[ 65%] [32mheath/X/33/index[39;49;00m
+[01mwriting output... [39;49;00m[ 65%] [32mheath/X/34/index[39;49;00m
+[01mwriting output... [39;49;00m[ 65%] [32mheath/X/35/index[39;49;00m
+[01mwriting output... [39;49;00m[ 65%] [32mheath/X/36/index[39;49;00m
+[01mwriting output... [39;49;00m[ 65%] [32mheath/X/37/index[39;49;00m
+[01mwriting output... [39;49;00m[ 65%] [32mheath/X/38/index[39;49;00m
+[01mwriting output... [39;49;00m[ 66%] [32mheath/X/39/index[39;49;00m
+[01mwriting output... [39;49;00m[ 66%] [32mheath/X/4/index[39;49;00m
+[01mwriting output... [39;49;00m[ 66%] [32mheath/X/40/index[39;49;00m
+[01mwriting output... [39;49;00m[ 66%] [32mheath/X/41/index[39;49;00m
+[01mwriting output... [39;49;00m[ 66%] [32mheath/X/42/index[39;49;00m
+[01mwriting output... [39;49;00m[ 66%] [32mheath/X/43/index[39;49;00m
+[01mwriting output... [39;49;00m[ 66%] [32mheath/X/44/index[39;49;00m
+[01mwriting output... [39;49;00m[ 67%] [32mheath/X/45/index[39;49;00m
+[01mwriting output... [39;49;00m[ 67%] [32mheath/X/46/index[39;49;00m
+[01mwriting output... [39;49;00m[ 67%] [32mheath/X/47/index[39;49;00m
+[01mwriting output... [39;49;00m[ 67%] [32mheath/X/48/index[39;49;00m
+[01mwriting output... [39;49;00m[ 67%] [32mheath/X/49/index[39;49;00m
+[01mwriting output... [39;49;00m[ 67%] [32mheath/X/5/index[39;49;00m
+[01mwriting output... [39;49;00m[ 68%] [32mheath/X/50/index[39;49;00m
+[01mwriting output... [39;49;00m[ 68%] [32mheath/X/51/index[39;49;00m
+[01mwriting output... [39;49;00m[ 68%] [32mheath/X/52/index[39;49;00m
+[01mwriting output... [39;49;00m[ 68%] [32mheath/X/53/index[39;49;00m
+[01mwriting output... [39;49;00m[ 68%] [32mheath/X/54/index[39;49;00m
+[01mwriting output... [39;49;00m[ 68%] [32mheath/X/55/index[39;49;00m
+[01mwriting output... [39;49;00m[ 68%] [32mheath/X/56/index[39;49;00m
+[01mwriting output... [39;49;00m[ 69%] [32mheath/X/57/index[39;49;00m
+[01mwriting output... [39;49;00m[ 69%] [32mheath/X/58/index[39;49;00m
+[01mwriting output... [39;49;00m[ 69%] [32mheath/X/59/index[39;49;00m
+[01mwriting output... [39;49;00m[ 69%] [32mheath/X/6/index[39;49;00m
+[01mwriting output... [39;49;00m[ 69%] [32mheath/X/60/index[39;49;00m
+[01mwriting output... [39;49;00m[ 69%] [32mheath/X/61/index[39;49;00m
+[01mwriting output... [39;49;00m[ 69%] [32mheath/X/62/index[39;49;00m
+[01mwriting output... [39;49;00m[ 70%] [32mheath/X/63/index[39;49;00m
+[01mwriting output... [39;49;00m[ 70%] [32mheath/X/64/index[39;49;00m
+[01mwriting output... [39;49;00m[ 70%] [32mheath/X/65/index[39;49;00m
+[01mwriting output... [39;49;00m[ 70%] [32mheath/X/66/index[39;49;00m
+[01mwriting output... [39;49;00m[ 70%] [32mheath/X/67/index[39;49;00m
+[01mwriting output... [39;49;00m[ 70%] [32mheath/X/68/index[39;49;00m
+[01mwriting output... [39;49;00m[ 70%] [32mheath/X/69/index[39;49;00m
+[01mwriting output... [39;49;00m[ 71%] [32mheath/X/7/index[39;49;00m
+[01mwriting output... [39;49;00m[ 71%] [32mheath/X/70/index[39;49;00m
+[01mwriting output... [39;49;00m[ 71%] [32mheath/X/71/index[39;49;00m
+[01mwriting output... [39;49;00m[ 71%] [32mheath/X/72/index[39;49;00m
+[01mwriting output... [39;49;00m[ 71%] [32mheath/X/73/index[39;49;00m
+[01mwriting output... [39;49;00m[ 71%] [32mheath/X/74/index[39;49;00m
+[01mwriting output... [39;49;00m[ 72%] [32mheath/X/75/index[39;49;00m
+[01mwriting output... [39;49;00m[ 72%] [32mheath/X/76/index[39;49;00m
+[01mwriting output... [39;49;00m[ 72%] [32mheath/X/77/index[39;49;00m
+[01mwriting output... [39;49;00m[ 72%] [32mheath/X/78/index[39;49;00m
+[01mwriting output... [39;49;00m[ 72%] [32mheath/X/79/index[39;49;00m
+[01mwriting output... [39;49;00m[ 72%] [32mheath/X/8/index[39;49;00m
+[01mwriting output... [39;49;00m[ 72%] [32mheath/X/80/index[39;49;00m
+[01mwriting output... [39;49;00m[ 73%] [32mheath/X/81/index[39;49;00m
+[01mwriting output... [39;49;00m[ 73%] [32mheath/X/82/index[39;49;00m
+[01mwriting output... [39;49;00m[ 73%] [32mheath/X/83/index[39;49;00m
+[01mwriting output... [39;49;00m[ 73%] [32mheath/X/84/index[39;49;00m
+[01mwriting output... [39;49;00m[ 73%] [32mheath/X/85/index[39;49;00m
+[01mwriting output... [39;49;00m[ 73%] [32mheath/X/86/index[39;49;00m
+[01mwriting output... [39;49;00m[ 73%] [32mheath/X/87/index[39;49;00m
+[01mwriting output... [39;49;00m[ 74%] [32mheath/X/88/index[39;49;00m
+[01mwriting output... [39;49;00m[ 74%] [32mheath/X/89/index[39;49;00m
+[01mwriting output... [39;49;00m[ 74%] [32mheath/X/9/index[39;49;00m
+[01mwriting output... [39;49;00m[ 74%] [32mheath/X/90/index[39;49;00m
+[01mwriting output... [39;49;00m[ 74%] [32mheath/X/91/index[39;49;00m
+[01mwriting output... [39;49;00m[ 74%] [32mheath/X/92/index[39;49;00m
+[01mwriting output... [39;49;00m[ 75%] [32mheath/X/93/index[39;49;00m
+[01mwriting output... [39;49;00m[ 75%] [32mheath/X/94/index[39;49;00m
+[01mwriting output... [39;49;00m[ 75%] [32mheath/X/95/index[39;49;00m
+[01mwriting output... [39;49;00m[ 75%] [32mheath/X/96/index[39;49;00m
+[01mwriting output... [39;49;00m[ 75%] [32mheath/X/97/index[39;49;00m
+[01mwriting output... [39;49;00m[ 75%] [32mheath/X/98/index[39;49;00m
+[01mwriting output... [39;49;00m[ 75%] [32mheath/X/99/index[39;49;00m
+[01mwriting output... [39;49;00m[ 76%] [32mheath/X/def.1/index[39;49;00m
+[01mwriting output... [39;49;00m[ 76%] [32mheath/X/def.2.1/index[39;49;00m
+[01mwriting output... [39;49;00m[ 76%] [32mheath/X/def.2.2/index[39;49;00m
+[01mwriting output... [39;49;00m[ 76%] [32mheath/X/def.2.3/index[39;49;00m
+[01mwriting output... [39;49;00m[ 76%] [32mheath/X/def.2.4/index[39;49;00m
+[01mwriting output... [39;49;00m[ 76%] [32mheath/X/def.2.5/index[39;49;00m
+[01mwriting output... [39;49;00m[ 76%] [32mheath/X/def.2.6/index[39;49;00m
+[01mwriting output... [39;49;00m[ 77%] [32mheath/X/def.2/index[39;49;00m
+[01mwriting output... [39;49;00m[ 77%] [32mheath/X/def.3.1/index[39;49;00m
+[01mwriting output... [39;49;00m[ 77%] [32mheath/X/def.3.2/index[39;49;00m
+[01mwriting output... [39;49;00m[ 77%] [32mheath/X/def.3.3/index[39;49;00m
+[01mwriting output... [39;49;00m[ 77%] [32mheath/X/def.3.4/index[39;49;00m
+[01mwriting output... [39;49;00m[ 77%] [32mheath/X/def.3.5/index[39;49;00m
+[01mwriting output... [39;49;00m[ 77%] [32mheath/X/def.3.6/index[39;49;00m
+[01mwriting output... [39;49;00m[ 78%] [32mheath/X/def.3/index[39;49;00m
+[01mwriting output... [39;49;00m[ 78%] [32mheath/X/def.4/index[39;49;00m
+[01mwriting output... [39;49;00m[ 78%] [32mheath/X/index[39;49;00m
+[01mwriting output... [39;49;00m[ 78%] [32mheath/XI/1/index[39;49;00m
+[01mwriting output... [39;49;00m[ 78%] [32mheath/XI/10/index[39;49;00m
+[01mwriting output... [39;49;00m[ 78%] [32mheath/XI/11/index[39;49;00m
+[01mwriting output... [39;49;00m[ 79%] [32mheath/XI/12/index[39;49;00m
+[01mwriting output... [39;49;00m[ 79%] [32mheath/XI/13/index[39;49;00m
+[01mwriting output... [39;49;00m[ 79%] [32mheath/XI/14/index[39;49;00m
+[01mwriting output... [39;49;00m[ 79%] [32mheath/XI/15/index[39;49;00m
+[01mwriting output... [39;49;00m[ 79%] [32mheath/XI/16/index[39;49;00m
+[01mwriting output... [39;49;00m[ 79%] [32mheath/XI/17/index[39;49;00m
+[01mwriting output... [39;49;00m[ 79%] [32mheath/XI/18/index[39;49;00m
+[01mwriting output... [39;49;00m[ 80%] [32mheath/XI/19/index[39;49;00m
+[01mwriting output... [39;49;00m[ 80%] [32mheath/XI/2/index[39;49;00m
+[01mwriting output... [39;49;00m[ 80%] [32mheath/XI/20/index[39;49;00m
+[01mwriting output... [39;49;00m[ 80%] [32mheath/XI/21/index[39;49;00m
+[01mwriting output... [39;49;00m[ 80%] [32mheath/XI/22/index[39;49;00m
+[01mwriting output... [39;49;00m[ 80%] [32mheath/XI/23/index[39;49;00m
+[01mwriting output... [39;49;00m[ 80%] [32mheath/XI/24/index[39;49;00m
+[01mwriting output... [39;49;00m[ 81%] [32mheath/XI/25/index[39;49;00m
+[01mwriting output... [39;49;00m[ 81%] [32mheath/XI/26/index[39;49;00m
+[01mwriting output... [39;49;00m[ 81%] [32mheath/XI/27/index[39;49;00m
+[01mwriting output... [39;49;00m[ 81%] [32mheath/XI/28/index[39;49;00m
+[01mwriting output... [39;49;00m[ 81%] [32mheath/XI/29/index[39;49;00m
+[01mwriting output... [39;49;00m[ 81%] [32mheath/XI/3/index[39;49;00m
+[01mwriting output... [39;49;00m[ 82%] [32mheath/XI/30/index[39;49;00m
+[01mwriting output... [39;49;00m[ 82%] [32mheath/XI/31/index[39;49;00m
+[01mwriting output... [39;49;00m[ 82%] [32mheath/XI/32/index[39;49;00m
+[01mwriting output... [39;49;00m[ 82%] [32mheath/XI/33/index[39;49;00m
+[01mwriting output... [39;49;00m[ 82%] [32mheath/XI/34/index[39;49;00m
+[01mwriting output... [39;49;00m[ 82%] [32mheath/XI/35/index[39;49;00m
+[01mwriting output... [39;49;00m[ 82%] [32mheath/XI/36/index[39;49;00m
+[01mwriting output... [39;49;00m[ 83%] [32mheath/XI/37/index[39;49;00m
+[01mwriting output... [39;49;00m[ 83%] [32mheath/XI/38/index[39;49;00m
+[01mwriting output... [39;49;00m[ 83%] [32mheath/XI/39/index[39;49;00m
+[01mwriting output... [39;49;00m[ 83%] [32mheath/XI/4/index[39;49;00m
+[01mwriting output... [39;49;00m[ 83%] [32mheath/XI/5/index[39;49;00m
+[01mwriting output... [39;49;00m[ 83%] [32mheath/XI/6/index[39;49;00m
+[01mwriting output... [39;49;00m[ 83%] [32mheath/XI/7/index[39;49;00m
+[01mwriting output... [39;49;00m[ 84%] [32mheath/XI/8/index[39;49;00m
+[01mwriting output... [39;49;00m[ 84%] [32mheath/XI/9/index[39;49;00m
+[01mwriting output... [39;49;00m[ 84%] [32mheath/XI/def.1/index[39;49;00m
+[01mwriting output... [39;49;00m[ 84%] [32mheath/XI/def.10/index[39;49;00m
+[01mwriting output... [39;49;00m[ 84%] [32mheath/XI/def.11/index[39;49;00m
+[01mwriting output... [39;49;00m[ 84%] [32mheath/XI/def.12/index[39;49;00m
+[01mwriting output... [39;49;00m[ 85%] [32mheath/XI/def.13/index[39;49;00m
+[01mwriting output... [39;49;00m[ 85%] [32mheath/XI/def.14/index[39;49;00m
+[01mwriting output... [39;49;00m[ 85%] [32mheath/XI/def.15/index[39;49;00m
+[01mwriting output... [39;49;00m[ 85%] [32mheath/XI/def.16/index[39;49;00m
+[01mwriting output... [39;49;00m[ 85%] [32mheath/XI/def.17/index[39;49;00m
+[01mwriting output... [39;49;00m[ 85%] [32mheath/XI/def.18/index[39;49;00m
+[01mwriting output... [39;49;00m[ 85%] [32mheath/XI/def.19/index[39;49;00m
+[01mwriting output... [39;49;00m[ 86%] [32mheath/XI/def.2/index[39;49;00m
+[01mwriting output... [39;49;00m[ 86%] [32mheath/XI/def.20/index[39;49;00m
+[01mwriting output... [39;49;00m[ 86%] [32mheath/XI/def.21/index[39;49;00m
+[01mwriting output... [39;49;00m[ 86%] [32mheath/XI/def.22/index[39;49;00m
+[01mwriting output... [39;49;00m[ 86%] [32mheath/XI/def.23/index[39;49;00m
+[01mwriting output... [39;49;00m[ 86%] [32mheath/XI/def.24/index[39;49;00m
+[01mwriting output... [39;49;00m[ 86%] [32mheath/XI/def.25/index[39;49;00m
+[01mwriting output... [39;49;00m[ 87%] [32mheath/XI/def.26/index[39;49;00m
+[01mwriting output... [39;49;00m[ 87%] [32mheath/XI/def.27/index[39;49;00m
+[01mwriting output... [39;49;00m[ 87%] [32mheath/XI/def.28/index[39;49;00m
+[01mwriting output... [39;49;00m[ 87%] [32mheath/XI/def.3/index[39;49;00m
+[01mwriting output... [39;49;00m[ 87%] [32mheath/XI/def.4/index[39;49;00m
+[01mwriting output... [39;49;00m[ 87%] [32mheath/XI/def.5/index[39;49;00m
+[01mwriting output... [39;49;00m[ 87%] [32mheath/XI/def.6/index[39;49;00m
+[01mwriting output... [39;49;00m[ 88%] [32mheath/XI/def.7/index[39;49;00m
+[01mwriting output... [39;49;00m[ 88%] [32mheath/XI/def.8/index[39;49;00m
+[01mwriting output... [39;49;00m[ 88%] [32mheath/XI/def.9/index[39;49;00m
+[01mwriting output... [39;49;00m[ 88%] [32mheath/XI/index[39;49;00m
+[01mwriting output... [39;49;00m[ 88%] [32mheath/XII/1/index[39;49;00m
+[01mwriting output... [39;49;00m[ 88%] [32mheath/XII/10/index[39;49;00m
+[01mwriting output... [39;49;00m[ 89%] [32mheath/XII/11/index[39;49;00m
+[01mwriting output... [39;49;00m[ 89%] [32mheath/XII/12/index[39;49;00m
+[01mwriting output... [39;49;00m[ 89%] [32mheath/XII/13/index[39;49;00m
+[01mwriting output... [39;49;00m[ 89%] [32mheath/XII/14/index[39;49;00m
+[01mwriting output... [39;49;00m[ 89%] [32mheath/XII/15/index[39;49;00m
+[01mwriting output... [39;49;00m[ 89%] [32mheath/XII/16/index[39;49;00m
+[01mwriting output... [39;49;00m[ 89%] [32mheath/XII/17/index[39;49;00m
+[01mwriting output... [39;49;00m[ 90%] [32mheath/XII/18/index[39;49;00m
+[01mwriting output... [39;49;00m[ 90%] [32mheath/XII/2/index[39;49;00m
+[01mwriting output... [39;49;00m[ 90%] [32mheath/XII/3/index[39;49;00m
+[01mwriting output... [39;49;00m[ 90%] [32mheath/XII/4/index[39;49;00m
+[01mwriting output... [39;49;00m[ 90%] [32mheath/XII/5/index[39;49;00m
+[01mwriting output... [39;49;00m[ 90%] [32mheath/XII/6/index[39;49;00m
+[01mwriting output... [39;49;00m[ 90%] [32mheath/XII/7/index[39;49;00m
+[01mwriting output... [39;49;00m[ 91%] [32mheath/XII/8/index[39;49;00m
+[01mwriting output... [39;49;00m[ 91%] [32mheath/XII/9/index[39;49;00m
+[01mwriting output... [39;49;00m[ 91%] [32mheath/XII/index[39;49;00m
+[01mwriting output... [39;49;00m[ 91%] [32mheath/XIII/1/index[39;49;00m
+[01mwriting output... [39;49;00m[ 91%] [32mheath/XIII/10/index[39;49;00m
+[01mwriting output... [39;49;00m[ 91%] [32mheath/XIII/11/index[39;49;00m
+[01mwriting output... [39;49;00m[ 92%] [32mheath/XIII/12/index[39;49;00m
+[01mwriting output... [39;49;00m[ 92%] [32mheath/XIII/13/index[39;49;00m
+[01mwriting output... [39;49;00m[ 92%] [32mheath/XIII/14/index[39;49;00m
+[01mwriting output... [39;49;00m[ 92%] [32mheath/XIII/15/index[39;49;00m
+[01mwriting output... [39;49;00m[ 92%] [32mheath/XIII/16/index[39;49;00m
+[01mwriting output... [39;49;00m[ 92%] [32mheath/XIII/17/index[39;49;00m
+[01mwriting output... [39;49;00m[ 92%] [32mheath/XIII/18/index[39;49;00m
+[01mwriting output... [39;49;00m[ 93%] [32mheath/XIII/2/index[39;49;00m
+[01mwriting output... [39;49;00m[ 93%] [32mheath/XIII/3/index[39;49;00m
+[01mwriting output... [39;49;00m[ 93%] [32mheath/XIII/4/index[39;49;00m
+[01mwriting output... [39;49;00m[ 93%] [32mheath/XIII/5/index[39;49;00m
+[01mwriting output... [39;49;00m[ 93%] [32mheath/XIII/6/index[39;49;00m
+[01mwriting output... [39;49;00m[ 93%] [32mheath/XIII/7/index[39;49;00m
+[01mwriting output... [39;49;00m[ 93%] [32mheath/XIII/8/index[39;49;00m
+[01mwriting output... [39;49;00m[ 94%] [32mheath/XIII/9/index[39;49;00m
+[01mwriting output... [39;49;00m[ 94%] [32mheath/XIII/index[39;49;00m
+[01mwriting output... [39;49;00m[ 94%] [32mheath/index[39;49;00m
+[01mwriting output... [39;49;00m[ 94%] [32mindex[39;49;00m
+[01mwriting output... [39;49;00m[ 94%] [32mintro[39;49;00m
+[01mwriting output... [39;49;00m[ 94%] [32mlog/index[39;49;00m
+[01mwriting output... [39;49;00m[ 94%] [32mmission/index[39;49;00m
+[01mwriting output... [39;49;00m[ 95%] [32mmodules/api/elements/__main__/index[39;49;00m
+[01mwriting output... [39;49;00m[ 95%] [32mmodules/api/elements/app/index[39;49;00m
+[01mwriting output... [39;49;00m[ 95%] [32mmodules/api/elements/elements/index[39;49;00m
+[01mwriting output... [39;49;00m[ 95%] [32mmodules/api/elements/g_index/index[39;49;00m
+[01mwriting output... [39;49;00m[ 95%] [32mmodules/api/elements/graph/index[39;49;00m
+[01mwriting output... [39;49;00m[ 95%] [32mmodules/api/elements/index[39;49;00m
+[01mwriting output... [39;49;00m[ 96%] [32mmodules/api/elements/ingest/analysis/index[39;49;00m
+[01mwriting output... [39;49;00m[ 96%] [32mmodules/api/elements/ingest/cleanup/index[39;49;00m
+[01mwriting output... [39;49;00m[ 96%] [32mmodules/api/elements/ingest/compare_models/index[39;49;00m
+[01mwriting output... [39;49;00m[ 96%] [32mmodules/api/elements/ingest/config/index[39;49;00m
+[01mwriting output... [39;49;00m[ 96%] [32mmodules/api/elements/ingest/cropping/index[39;49;00m
+[01mwriting output... [39;49;00m[ 96%] [32mmodules/api/elements/ingest/detect_graphics/index[39;49;00m
+[01mwriting output... [39;49;00m[ 96%] [32mmodules/api/elements/ingest/detect_graphics_cv/index[39;49;00m
+[01mwriting output... [39;49;00m[ 97%] [32mmodules/api/elements/ingest/extraction/index[39;49;00m
+[01mwriting output... [39;49;00m[ 97%] [32mmodules/api/elements/ingest/generate_index/index[39;49;00m
+[01mwriting output... [39;49;00m[ 97%] [32mmodules/api/elements/ingest/image_processing/index[39;49;00m
+[01mwriting output... [39;49;00m[ 97%] [32mmodules/api/elements/ingest/index[39;49;00m
+[01mwriting output... [39;49;00m[ 97%] [32mmodules/api/elements/ingest/metadata_extraction/index[39;49;00m
+[01mwriting output... [39;49;00m[ 97%] [32mmodules/api/elements/ingest/metadata_extraction/metadata_extraction/index[39;49;00m
+[01mwriting output... [39;49;00m[ 97%] [32mmodules/api/elements/ingest/organization/index[39;49;00m
+[01mwriting output... [39;49;00m[ 98%] [32mmodules/api/elements/ingest/pipeline/index[39;49;00m
+[01mwriting output... [39;49;00m[ 98%] [32mmodules/api/elements/ingest/refine/index[39;49;00m
+[01mwriting output... [39;49;00m[ 98%] [32mmodules/api/elements/ingest/scan_propositions/index[39;49;00m
+[01mwriting output... [39;49;00m[ 98%] [32mmodules/api/elements/ingest/stitch_propositions/index[39;49;00m
+[01mwriting output... [39;49;00m[ 98%] [32mmodules/api/elements/ingest/utils/index[39;49;00m
+[01mwriting output... [39;49;00m[ 98%] [32mmodules/api/elements/legacy/check_refs/index[39;49;00m
+[01mwriting output... [39;49;00m[ 99%] [32mmodules/api/elements/legacy/index[39;49;00m
+[01mwriting output... [39;49;00m[ 99%] [32mmodules/api/elements/rst_builder/index[39;49;00m
+[01mwriting output... [39;49;00m[ 99%] [32mmodules/api/elements/rst_generator/index[39;49;00m
+[01mwriting output... [39;49;00m[ 99%] [32mmodules/api/elements/transform/index[39;49;00m
+[01mwriting output... [39;49;00m[ 99%] [32mmodules/api/elements/utils/index[39;49;00m
+[01mwriting output... [39;49;00m[ 99%] [32mmodules/api/elements/xml_parser/index[39;49;00m
+[01mwriting output... [39;49;00m[ 99%] [32mmodules/api/index[39;49;00m
+[01mwriting output... [39;49;00m[100%] [32mmodules/index[39;49;00m
+[01mwriting output... [39;49;00m[100%] [32mquadrance[39;49;00m
+[01mwriting output... [39;49;00m[100%] [32mtodos[39;49;00m
+[01mwriting output... [39;49;00m[100%] [32musage[39;49;00m
+
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/IX/12/index.rst:26: WARNING: undefined label: 'elem.9.11 elem.9.11.p.1' [ref.ref][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/IX/12/index.rst:36: WARNING: undefined label: 'elem.9.11 elem.9.11.p.1' [ref.ref][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/IX/15/index.rst:40: WARNING: undefined label: 'elem.7.24 elem.7.25' [ref.ref][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/IX/35/index.rst:26: WARNING: undefined label: 'elem.7.11 elem.7.13' [ref.ref][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/V/16/index.rst:50: WARNING: undefined label: 'elem.5.17 elem.5.18' [ref.ref][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/V/16/index.rst:50: WARNING: undefined label: 'elem.5.20 elem.5.21 elem.5.22 elem.5.23' [ref.ref][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/VI/20/index.rst:37: WARNING: undefined label: 'elem.6.4 elem.6.def.1' [ref.ref][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/VI/20/index.rst:65: WARNING: undefined label: 'elem.6.4 elem.6.def.1' [ref.ref][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/VII/10/index.rst:26: WARNING: undefined label: 'elem.7.5 elem.7.6' [ref.ref][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/VII/11/index.rst:22: WARNING: undefined label: 'elem.7.7 elem.7.8' [ref.ref][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/VII/12/index.rst:30: WARNING: undefined label: 'elem.7.5 elem.7.6' [ref.ref][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/VII/9/index.rst:24: WARNING: undefined label: 'elem.7.5 elem.7.6' [ref.ref][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/VIII/15/index.rst:22: WARNING: undefined label: 'elem.8.11 elem.8.12' [ref.ref][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/VIII/4/index.rst:30: WARNING: undefined label: 'elem.7.def.20 elem.7.13' [ref.ref][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/VIII/4/index.rst:61: WARNING: undefined label: 'elem.7.13 elem.7.def.20' [ref.ref][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/VIII/4/index.rst:73: WARNING: undefined label: 'elem.7.13 elem.7.def.20' [ref.ref][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/X/104/index.rst:23: WARNING: undefined label: 'elem.10.74 elem.10.75' [ref.ref][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/X/104/index.rst:27: WARNING: undefined label: 'elem.10.74 elem.10.75' [ref.ref][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/X/104/index.rst:37: WARNING: undefined label: 'elem.10.74 elem.10.75' [ref.ref][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/X/112/index.rst:55: WARNING: undefined label: 'elem.10.11 elem.10.12' [ref.ref][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/X/28/index.rst:58: WARNING: undefined label: 'elem.9.24 elem.9.26' [ref.ref][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/X/39/index.rst:23: WARNING: undefined label: 'elem.10.6 elem.10.23.p.1' [ref.ref][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/X/61/index.rst:25: WARNING: undefined label: 'elem.10.15 elem.10.23.p.1' [ref.ref][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/X/62/index.rst:25: WARNING: undefined label: 'elem.10.15 elem.10.23.p.1' [ref.ref][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/X/62/index.rst:35: WARNING: undefined label: 'elem.10.12 elem.10.13' [ref.ref][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/X/67/index.rst:21: WARNING: undefined label: 'elem.10.37 elem.10.38' [ref.ref][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/X/73/index.rst:28: WARNING: undefined label: 'elem.10.13 elem.10.16' [ref.ref][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/X/75/index.rst:25: WARNING: undefined label: 'elem.10.15 elem.10.23.p.1' [ref.ref][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/X/77/index.rst:22: WARNING: undefined label: 'elem.2.7 elem.10.16' [ref.ref][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/X/80/index.rst:27: WARNING: undefined label: 'elem.10.15 elem.10.23.p.1' [ref.ref][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/X/81/index.rst:34: WARNING: undefined label: 'elem.10.15 elem.10.23.p.1' [ref.ref][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/X/98/index.rst:23: WARNING: undefined label: 'elem.10.15 elem.10.23.p.1' [ref.ref][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/X/99/index.rst:23: WARNING: undefined label: 'elem.10.15 elem.10.23.p.1' [ref.ref][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/XI/29/index.rst:25: WARNING: undefined label: 'elem.1.8 elem.1.4' [ref.ref][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/XI/34/index.rst:62: WARNING: undefined label: 'elem.11.29 elem.11.30' [ref.ref][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/XI/34/index.rst:80: WARNING: undefined label: 'elem.11.29 elem.11.30' [ref.ref][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/XII/10/index.rst:26: WARNING: undefined label: 'elem.12.6 elem.12.7.p.1' [ref.ref][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/XII/17/index.rst:89: WARNING: undefined label: 'elem.6.8 elem.6.8.p.1' [ref.ref][39;49;00m
+[91m/home/phi/PROJECTS/geometor/elements/docsrc/heath/XIII/5/index.rst:25: WARNING: undefined label: 'elem.6.def.3 elem.6.17' [ref.ref][39;49;00m
+[01mgenerating indices... [39;49;00mgenindex py-modindex done
+[01mhighlighting module code... [39;49;00m[  4%] [94melements.app[39;49;00m
+[01mhighlighting module code... [39;49;00m[  8%] [94melements.g_index[39;49;00m
+[01mhighlighting module code... [39;49;00m[ 12%] [94melements.graph[39;49;00m
+[01mhighlighting module code... [39;49;00m[ 15%] [94melements.ingest.analysis[39;49;00m
+[01mhighlighting module code... [39;49;00m[ 19%] [94melements.ingest.cleanup[39;49;00m
+[01mhighlighting module code... [39;49;00m[ 23%] [94melements.ingest.compare_models[39;49;00m
+[01mhighlighting module code... [39;49;00m[ 27%] [94melements.ingest.config[39;49;00m
+[01mhighlighting module code... [39;49;00m[ 31%] [94melements.ingest.cropping[39;49;00m
+[01mhighlighting module code... [39;49;00m[ 35%] [94melements.ingest.detect_graphics[39;49;00m
+[01mhighlighting module code... [39;49;00m[ 38%] [94melements.ingest.detect_graphics_cv[39;49;00m
+[01mhighlighting module code... [39;49;00m[ 42%] [94melements.ingest.extraction[39;49;00m
+[01mhighlighting module code... [39;49;00m[ 46%] [94melements.ingest.generate_index[39;49;00m
+[01mhighlighting module code... [39;49;00m[ 50%] [94melements.ingest.image_processing[39;49;00m
+[01mhighlighting module code... [39;49;00m[ 54%] [94melements.ingest.metadata_extraction.metadata_extraction[39;49;00m
+[01mhighlighting module code... [39;49;00m[ 58%] [94melements.ingest.organization[39;49;00m
+[01mhighlighting module code... [39;49;00m[ 62%] [94melements.ingest.pipeline[39;49;00m
+[01mhighlighting module code... [39;49;00m[ 65%] [94melements.ingest.refine[39;49;00m
+[01mhighlighting module code... [39;49;00m[ 69%] [94melements.ingest.scan_propositions[39;49;00m
+[01mhighlighting module code... [39;49;00m[ 73%] [94melements.ingest.stitch_propositions[39;49;00m
+[01mhighlighting module code... [39;49;00m[ 77%] [94melements.ingest.utils[39;49;00m
+[01mhighlighting module code... [39;49;00m[ 81%] [94melements.legacy.check_refs[39;49;00m
+[01mhighlighting module code... [39;49;00m[ 85%] [94melements.rst_builder[39;49;00m
+[01mhighlighting module code... [39;49;00m[ 88%] [94melements.rst_generator[39;49;00m
+[01mhighlighting module code... [39;49;00m[ 92%] [94melements.transform[39;49;00m
+[01mhighlighting module code... [39;49;00m[ 96%] [94melements.utils[39;49;00m
+[01mhighlighting module code... [39;49;00m[100%] [94melements.xml_parser[39;49;00m
+
+[01mwriting additional pages... [39;49;00msearch done
+[01mcopying images... [39;49;00m[  0%] [33mheath/I/1/I.1.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[  0%] [33mheath/I/10/I.10.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[  1%] [33mheath/I/11/I.11.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[  1%] [33mheath/I/12/I.12.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[  1%] [33mheath/I/13/I.13.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[  1%] [33mheath/I/14/I.14.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[  2%] [33mheath/I/15/I.15.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[  2%] [33mheath/I/16/I.16.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[  2%] [33mheath/I/17/I.17.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[  2%] [33mheath/I/18/I.18.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[  2%] [33mheath/I/19/I.19.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[  3%] [33mheath/I/2/I.2.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[  3%] [33mheath/I/20/I.20.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[  3%] [33mheath/I/21/I.21.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[  3%] [33mheath/I/22/I.22.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[  3%] [33mheath/I/23/I.23.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[  4%] [33mheath/I/24/I.24.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[  4%] [33mheath/I/25/I.25.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[  4%] [33mheath/I/26/I.26.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[  4%] [33mheath/I/27/I.27.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[  5%] [33mheath/I/28/I.28.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[  5%] [33mheath/I/29/I.29.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[  5%] [33mheath/I/3/I.3.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[  5%] [33mheath/I/30/I.30.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[  5%] [33mheath/I/31/I.31.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[  6%] [33mheath/I/32/I.32.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[  6%] [33mheath/I/33/I.33.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[  6%] [33mheath/I/34/I.34.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[  6%] [33mheath/I/35/I.35.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[  6%] [33mheath/I/36/I.36.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[  7%] [33mheath/I/37/I.37.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[  7%] [33mheath/I/38/I.38.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[  7%] [33mheath/I/39/I.39.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[  7%] [33mheath/I/4/I.4.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[  8%] [33mheath/I/40/I.40.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[  8%] [33mheath/I/41/I.41.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[  8%] [33mheath/I/42/I.42.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[  8%] [33mheath/I/43/I.43.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[  8%] [33mheath/I/44/I.44.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[  9%] [33mheath/I/45/I.45.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[  9%] [33mheath/I/46/I.46.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[  9%] [33mheath/I/47/I.47.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[  9%] [33mheath/I/48/I.48.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 10%] [33mheath/I/5/I.5.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 10%] [33mheath/I/6/I.6.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 10%] [33mheath/I/7/I.7.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 10%] [33mheath/I/8/I.8.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 10%] [33mheath/I/9/I.9.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 11%] [33mheath/II/1/II.1.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 11%] [33mheath/II/10/II.10.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 11%] [33mheath/II/11/II.11.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 11%] [33mheath/II/12/II.12.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 11%] [33mheath/II/13/II.13.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 12%] [33mheath/II/14/II.14.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 12%] [33mheath/II/2/II.2.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 12%] [33mheath/II/3/II.3.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 12%] [33mheath/II/4/II.4.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 13%] [33mheath/II/5/II.5.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 13%] [33mheath/II/6/II.6.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 13%] [33mheath/II/7/II.7.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 13%] [33mheath/II/8/II.8.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 13%] [33mheath/II/9/II.9.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 14%] [33mheath/III/1/III.1.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 14%] [33mheath/III/10/III.10.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 14%] [33mheath/III/11/III.11.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 14%] [33mheath/III/12/III.12.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 14%] [33mheath/III/13/III.13.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 15%] [33mheath/III/14/III.14.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 15%] [33mheath/III/15/III.15.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 15%] [33mheath/III/16/III.16.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 15%] [33mheath/III/17/III.17.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 16%] [33mheath/III/18/III.18.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 16%] [33mheath/III/19/III.19.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 16%] [33mheath/III/2/III.2.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 16%] [33mheath/III/20/III.20.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 16%] [33mheath/III/21/III.21.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 17%] [33mheath/III/22/III.22.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 17%] [33mheath/III/23/III.23.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 17%] [33mheath/III/24/III.24.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 17%] [33mheath/III/25/III.25.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 17%] [33mheath/III/26/III.26.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 18%] [33mheath/III/27/III.27.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 18%] [33mheath/III/28/III.28.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 18%] [33mheath/III/29/III.29.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 18%] [33mheath/III/3/III.3.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 19%] [33mheath/III/30/III.30.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 19%] [33mheath/III/31/III.31.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 19%] [33mheath/III/32/III.32.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 19%] [33mheath/III/33/III.33.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 19%] [33mheath/III/34/III.34.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 20%] [33mheath/III/35/III.35.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 20%] [33mheath/III/36/III.36.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 20%] [33mheath/III/37/III.37.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 20%] [33mheath/III/4/III.4.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 21%] [33mheath/III/5/III.5.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 21%] [33mheath/III/6/III.6.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 21%] [33mheath/III/7/III.7.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 21%] [33mheath/III/8/III.8.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 21%] [33mheath/III/9/III.9.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 22%] [33mheath/IV/1/IV.1.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 22%] [33mheath/IV/10/IV.10.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 22%] [33mheath/IV/11/IV.11.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 22%] [33mheath/IV/12/IV.12.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 22%] [33mheath/IV/13/IV.13.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 23%] [33mheath/IV/14/IV.14.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 23%] [33mheath/IV/15/IV.15.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 23%] [33mheath/IV/16/IV.16.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 23%] [33mheath/IV/2/IV.2.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 24%] [33mheath/IV/3/IV.3.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 24%] [33mheath/IV/4/IV.4.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 24%] [33mheath/IV/5/IV.5.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 24%] [33mheath/IV/6/IV.6.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 24%] [33mheath/IV/7/IV.7.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 25%] [33mheath/IV/8/IV.8.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 25%] [33mheath/IV/9/IV.9.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 25%] [33mheath/IX/1/IX.1.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 25%] [33mheath/IX/10/IX.10.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 25%] [33mheath/IX/11/IX.11.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 26%] [33mheath/IX/12/IX.12.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 26%] [33mheath/IX/13/IX.13.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 26%] [33mheath/IX/14/IX.14.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 26%] [33mheath/IX/15/IX.15.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 27%] [33mheath/IX/16/IX.16.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 27%] [33mheath/IX/17/IX.17.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 27%] [33mheath/IX/18/IX.18.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 27%] [33mheath/IX/19/IX.19.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 27%] [33mheath/IX/2/IX.2.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 28%] [33mheath/IX/20/IX.20.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 28%] [33mheath/IX/21/IX.21.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 28%] [33mheath/IX/22/IX.22.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 28%] [33mheath/IX/23/IX.23.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 29%] [33mheath/IX/25/IX.25.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 29%] [33mheath/IX/26/IX.26.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 29%] [33mheath/IX/27/IX.27.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 29%] [33mheath/IX/28/IX.28.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 29%] [33mheath/IX/29/IX.29.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 30%] [33mheath/IX/3/IX.3.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 30%] [33mheath/IX/30/IX.30.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 30%] [33mheath/IX/31/IX.31.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 30%] [33mheath/IX/32/IX.32.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 30%] [33mheath/IX/33/IX.33.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 31%] [33mheath/IX/34/IX.34.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 31%] [33mheath/IX/35/IX.35.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 31%] [33mheath/IX/36/IX.36.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 31%] [33mheath/IX/4/IX.4.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 32%] [33mheath/IX/5/IX.5.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 32%] [33mheath/IX/6/IX.6.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 32%] [33mheath/IX/7/IX.7.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 32%] [33mheath/IX/8/IX.8.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 32%] [33mheath/IX/9/IX.9.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 33%] [33mheath/V/1/V.1.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 33%] [33mheath/V/10/V.10.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 33%] [33mheath/V/11/V.11.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 33%] [33mheath/V/12/V.12.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 33%] [33mheath/V/13/V.13.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 34%] [33mheath/V/14/V.14.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 34%] [33mheath/V/15/V.15.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 34%] [33mheath/V/16/V.16.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 34%] [33mheath/V/17/V.17.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 35%] [33mheath/V/18/V.18.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 35%] [33mheath/V/19/V.19.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 35%] [33mheath/V/2/V.2.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 35%] [33mheath/V/20/V.20.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 35%] [33mheath/V/21/V.21.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 36%] [33mheath/V/22/V.22.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 36%] [33mheath/V/23/V.23.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 36%] [33mheath/V/24/V.24.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 36%] [33mheath/V/25/V.25.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 37%] [33mheath/V/3/V.3.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 37%] [33mheath/V/4/V.4.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 37%] [33mheath/V/5/V.5.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 37%] [33mheath/V/6/V.6.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 37%] [33mheath/V/7/V.7.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 38%] [33mheath/V/8/V.8.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 38%] [33mheath/V/9/V.9.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 38%] [33mheath/VI/1/VI.1.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 38%] [33mheath/VI/10/VI.10.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 38%] [33mheath/VI/11/VI.11.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 39%] [33mheath/VI/12/VI.12.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 39%] [33mheath/VI/13/VI.13.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 39%] [33mheath/VI/14/VI.14.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 39%] [33mheath/VI/15/VI.15.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 40%] [33mheath/VI/16/VI.16.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 40%] [33mheath/VI/17/VI.17.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 40%] [33mheath/VI/18/VI.18.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 40%] [33mheath/VI/19/VI.19.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 40%] [33mheath/VI/2/VI.2.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 41%] [33mheath/VI/20/VI.20.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 41%] [33mheath/VI/21/VI.21.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 41%] [33mheath/VI/22/VI.22.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 41%] [33mheath/VI/23/VI.23.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 41%] [33mheath/VI/24/VI.24.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 42%] [33mheath/VI/25/VI.25.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 42%] [33mheath/VI/26/VI.26.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 42%] [33mheath/VI/27/VI.27.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 42%] [33mheath/VI/28/VI.28.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 43%] [33mheath/VI/29/VI.29.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 43%] [33mheath/VI/3/VI.3.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 43%] [33mheath/VI/30/VI.30.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 43%] [33mheath/VI/31/VI.31.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 43%] [33mheath/VI/32/VI.32.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 44%] [33mheath/VI/33/VI.33.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 44%] [33mheath/VI/4/VI.4.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 44%] [33mheath/VI/5/VI.5.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 44%] [33mheath/VI/6/VI.6.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 44%] [33mheath/VI/7/VI.7.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 45%] [33mheath/VI/8/VI.8.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 45%] [33mheath/VI/9/VI.9.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 45%] [33mheath/VII/1/VII.1.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 45%] [33mheath/VII/10/VII.10.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 46%] [33mheath/VII/11/VII.11.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 46%] [33mheath/VII/12/VII.12.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 46%] [33mheath/VII/13/VII.13.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 46%] [33mheath/VII/14/VII.14.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 46%] [33mheath/VII/15/VII.15.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 47%] [33mheath/VII/16/VII.16.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 47%] [33mheath/VII/17/VII.17.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 47%] [33mheath/VII/18/VII.18.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 47%] [33mheath/VII/19/VII.19.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 48%] [33mheath/VII/2/VII.2.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 48%] [33mheath/VII/20/VII.20.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 48%] [33mheath/VII/21/VII.21.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 48%] [33mheath/VII/22/VII.22.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 48%] [33mheath/VII/23/VII.23.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 49%] [33mheath/VII/24/VII.24.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 49%] [33mheath/VII/25/VII.25.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 49%] [33mheath/VII/26/VII.26.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 49%] [33mheath/VII/27/VII.27.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 49%] [33mheath/VII/28/VII.28.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 50%] [33mheath/VII/29/VII.29.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 50%] [33mheath/VII/3/VII.3.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 50%] [33mheath/VII/30/VII.30.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 50%] [33mheath/VII/31/VII.31.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 51%] [33mheath/VII/32/VII.32.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 51%] [33mheath/VII/33/VII.33.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 51%] [33mheath/VII/34/VII.34.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 51%] [33mheath/VII/35/VII.35.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 51%] [33mheath/VII/36/VII.36.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 52%] [33mheath/VII/37/VII.37.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 52%] [33mheath/VII/38/VII.38.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 52%] [33mheath/VII/39/VII.39.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 52%] [33mheath/VII/4/VII.4.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 52%] [33mheath/VII/5/VII.5.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 53%] [33mheath/VII/6/VII.6.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 53%] [33mheath/VII/7/VII.7.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 53%] [33mheath/VII/8/VII.8.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 53%] [33mheath/VII/9/VII.9.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 54%] [33mheath/VIII/1/VIII.1.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 54%] [33mheath/VIII/10/VIII.10.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 54%] [33mheath/VIII/11/VIII.11.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 54%] [33mheath/VIII/12/VIII.12.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 54%] [33mheath/VIII/13/VIII.13.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 55%] [33mheath/VIII/14/VIII.14.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 55%] [33mheath/VIII/15/VIII.15.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 55%] [33mheath/VIII/16/VIII.16.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 55%] [33mheath/VIII/17/VIII.17.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 56%] [33mheath/VIII/18/VIII.18.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 56%] [33mheath/VIII/19/VIII.19.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 56%] [33mheath/VIII/2/VIII.2.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 56%] [33mheath/VIII/20/VIII.20.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 56%] [33mheath/VIII/21/VIII.21.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 57%] [33mheath/VIII/22/VIII.22.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 57%] [33mheath/VIII/23/VIII.23.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 57%] [33mheath/VIII/24/VIII.24.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 57%] [33mheath/VIII/25/VIII.25.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 57%] [33mheath/VIII/26/VIII.26.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 58%] [33mheath/VIII/27/VIII.27.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 58%] [33mheath/VIII/3/VIII.3.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 58%] [33mheath/VIII/4/VIII.4.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 58%] [33mheath/VIII/5/VIII.5.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 59%] [33mheath/VIII/6/VIII.6.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 59%] [33mheath/VIII/7/VIII.7.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 59%] [33mheath/VIII/8/VIII.8.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 59%] [33mheath/VIII/9/VIII.9.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 59%] [33mheath/X/1/X.1.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 60%] [33mheath/X/10/X.10.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 60%] [33mheath/X/100/X.100.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 60%] [33mheath/X/101/X.101.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 60%] [33mheath/X/102/X.102.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 60%] [33mheath/X/103/X.103.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 61%] [33mheath/X/104/X.104.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 61%] [33mheath/X/105/X.105.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 61%] [33mheath/X/106/X.106.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 61%] [33mheath/X/107/X.107.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 62%] [33mheath/X/108/X.108.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 62%] [33mheath/X/109/X.109.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 62%] [33mheath/X/11/X.11.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 62%] [33mheath/X/110/X.110.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 62%] [33mheath/X/111/X.111.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 63%] [33mheath/X/112/X.112.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 63%] [33mheath/X/113/X.113.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 63%] [33mheath/X/114/X.114.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 63%] [33mheath/X/115/X.115.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 63%] [33mheath/X/12/X.12.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 64%] [33mheath/X/13/X.13.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 64%] [33mheath/X/14/X.14.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 64%] [33mheath/X/15/X.15.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 64%] [33mheath/X/16/X.16.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 65%] [33mheath/X/17/X.17.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 65%] [33mheath/X/18/X.18.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 65%] [33mheath/X/19/X.19.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 65%] [33mheath/X/2/X.2.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 65%] [33mheath/X/20/X.20.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 66%] [33mheath/X/21/X.21.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 66%] [33mheath/X/22/X.22.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 66%] [33mheath/X/23/X.23.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 66%] [33mheath/X/24/X.24.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 67%] [33mheath/X/25/X.25.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 67%] [33mheath/X/26/X.26.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 67%] [33mheath/X/27/X.27.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 67%] [33mheath/X/28/X.28.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 67%] [33mheath/X/29/X.29.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 68%] [33mheath/X/3/X.3.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 68%] [33mheath/X/30/X.30.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 68%] [33mheath/X/31/X.31.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 68%] [33mheath/X/32/X.32.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 68%] [33mheath/X/33/X.33.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 69%] [33mheath/X/34/X.34.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 69%] [33mheath/X/35/X.35.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 69%] [33mheath/X/36/X.36.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 69%] [33mheath/X/37/X.37.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 70%] [33mheath/X/38/X.38.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 70%] [33mheath/X/39/X.39.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 70%] [33mheath/X/4/X.4.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 70%] [33mheath/X/40/X.40.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 70%] [33mheath/X/41/X.41.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 71%] [33mheath/X/42/X.42.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 71%] [33mheath/X/43/X.43.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 71%] [33mheath/X/44/X.44.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 71%] [33mheath/X/45/X.45.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 71%] [33mheath/X/46/X.46.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 72%] [33mheath/X/47/X.47.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 72%] [33mheath/X/48/X.48.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 72%] [33mheath/X/49/X.49.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 72%] [33mheath/X/5/X.5.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 73%] [33mheath/X/50/X.50.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 73%] [33mheath/X/51/X.51.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 73%] [33mheath/X/52/X.52.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 73%] [33mheath/X/54/X.54.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 73%] [33mheath/X/55/X.55.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 74%] [33mheath/X/56/X.56.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 74%] [33mheath/X/57/X.57.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 74%] [33mheath/X/58/X.58.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 74%] [33mheath/X/59/X.59.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 75%] [33mheath/X/6/X.6.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 75%] [33mheath/X/60/X.60.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 75%] [33mheath/X/61/X.61.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 75%] [33mheath/X/62/X.62.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 75%] [33mheath/X/63/X.63.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 76%] [33mheath/X/64/X.64.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 76%] [33mheath/X/65/X.65.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 76%] [33mheath/X/66/X.66.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 76%] [33mheath/X/67/X.67.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 76%] [33mheath/X/68/X.68.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 77%] [33mheath/X/69/X.69.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 77%] [33mheath/X/7/X.7.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 77%] [33mheath/X/70/X.70.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 77%] [33mheath/X/71/X.71.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 78%] [33mheath/X/72/X.72.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 78%] [33mheath/X/73/X.73.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 78%] [33mheath/X/74/X.74.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 78%] [33mheath/X/75/X.75.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 78%] [33mheath/X/76/X.76.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 79%] [33mheath/X/77/X.77.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 79%] [33mheath/X/78/X.78.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 79%] [33mheath/X/79/X.79.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 79%] [33mheath/X/8/X.8.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 79%] [33mheath/X/80/X.80.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 80%] [33mheath/X/81/X.81.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 80%] [33mheath/X/82/X.82.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 80%] [33mheath/X/83/X.83.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 80%] [33mheath/X/84/X.84.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 81%] [33mheath/X/85/X.85.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 81%] [33mheath/X/86/X.86.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 81%] [33mheath/X/87/X.87.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 81%] [33mheath/X/88/X.88.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 81%] [33mheath/X/89/X.89.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 82%] [33mheath/X/9/X.9.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 82%] [33mheath/X/90/X.90.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 82%] [33mheath/X/91/X.91.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 82%] [33mheath/X/92/X.92.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 83%] [33mheath/X/93/X.93.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 83%] [33mheath/X/94/X.94.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 83%] [33mheath/X/95/X.95.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 83%] [33mheath/X/96/X.96.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 83%] [33mheath/X/97/X.97.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 84%] [33mheath/X/98/X.98.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 84%] [33mheath/X/99/X.99.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 84%] [33mheath/XI/1/XI.1.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 84%] [33mheath/XI/10/XI.10.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 84%] [33mheath/XI/11/XI.11.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 85%] [33mheath/XI/12/XI.12.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 85%] [33mheath/XI/13/XI.13.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 85%] [33mheath/XI/14/XI.14.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 85%] [33mheath/XI/15/XI.15.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 86%] [33mheath/XI/16/XI.16.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 86%] [33mheath/XI/17/XI.17.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 86%] [33mheath/XI/18/XI.18.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 86%] [33mheath/XI/19/XI.19.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 86%] [33mheath/XI/2/XI.2.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 87%] [33mheath/XI/20/XI.20.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 87%] [33mheath/XI/21/XI.21.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 87%] [33mheath/XI/22/XI.22.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 87%] [33mheath/XI/23/XI.23.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 87%] [33mheath/XI/24/XI.24.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 88%] [33mheath/XI/25/XI.25.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 88%] [33mheath/XI/26/XI.26.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 88%] [33mheath/XI/27/XI.27.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 88%] [33mheath/XI/28/XI.28.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 89%] [33mheath/XI/29/XI.29.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 89%] [33mheath/XI/3/XI.3.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 89%] [33mheath/XI/30/XI.30.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 89%] [33mheath/XI/31/XI.31.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 89%] [33mheath/XI/32/XI.32.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 90%] [33mheath/XI/33/XI.33.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 90%] [33mheath/XI/34/XI.34.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 90%] [33mheath/XI/35/XI.35.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 90%] [33mheath/XI/36/XI.36.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 90%] [33mheath/XI/37/XI.37.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 91%] [33mheath/XI/38/XI.38.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 91%] [33mheath/XI/39/XI.39.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 91%] [33mheath/XI/4/XI.4.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 91%] [33mheath/XI/5/XI.5.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 92%] [33mheath/XI/6/XI.6.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 92%] [33mheath/XI/7/XI.7.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 92%] [33mheath/XI/8/XI.8.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 92%] [33mheath/XI/9/XI.9.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 92%] [33mheath/XII/1/XII.1.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 93%] [33mheath/XII/10/XII.10.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 93%] [33mheath/XII/11/XII.11.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 93%] [33mheath/XII/12/XII.12.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 93%] [33mheath/XII/13/XII.13.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 94%] [33mheath/XII/14/XII.14.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 94%] [33mheath/XII/15/XII.15.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 94%] [33mheath/XII/16/XII.16.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 94%] [33mheath/XII/17/XII.17.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 94%] [33mheath/XII/18/XII.18.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 95%] [33mheath/XII/2/XII.2.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 95%] [33mheath/XII/3/XII.3.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 95%] [33mheath/XII/4/XII.4.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 95%] [33mheath/XII/5/XII.5.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 95%] [33mheath/XII/6/XII.6.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 96%] [33mheath/XII/7/XII.7.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 96%] [33mheath/XII/8/XII.8.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 96%] [33mheath/XII/9/XII.9.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 96%] [33mheath/XIII/1/XIII.1.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 97%] [33mheath/XIII/10/XIII.10.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 97%] [33mheath/XIII/11/XIII.11.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 97%] [33mheath/XIII/12/XIII.12.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 97%] [33mheath/XIII/13/XIII.13.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 97%] [33mheath/XIII/14/XIII.14.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 98%] [33mheath/XIII/15/XIII.15.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 98%] [33mheath/XIII/16/XIII.16.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 98%] [33mheath/XIII/17/XIII.17.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 98%] [33mheath/XIII/18/XIII.18.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 98%] [33mheath/XIII/2/XIII.2.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 99%] [33mheath/XIII/3/XIII.3.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 99%] [33mheath/XIII/4/XIII.4.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 99%] [33mheath/XIII/5/XIII.5.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[ 99%] [33mheath/XIII/6/XIII.6.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[100%] [33mheath/XIII/7/XIII.7.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[100%] [33mheath/XIII/8/XIII.8.graphic.inverted.png[39;49;00m
+[01mcopying images... [39;49;00m[100%] [33mheath/XIII/9/XIII.9.graphic.inverted.png[39;49;00m
+
+[01mdumping search index in English (code: en)... [39;49;00mdone
+[01mdumping object inventory... [39;49;00mdone
+[01mbuild succeeded, 60 warnings.[39;49;00m
+
+The HTML pages are in docs.
+Sphinx build completed successfully.

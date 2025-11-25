@@ -17,7 +17,7 @@ V.9
 
 For let each of the magnitudes ``A``, ``B`` have the same ratio to ``C``; I say that ``A`` is equal to ``B``.
 
-For, otherwise, each of the magnitudes ``A``, ``B`` would not have had the same ratio to ``C``; [:ref:`V.8`] but it has;
+For, otherwise, each of the magnitudes ``A``, ``B`` would not have had the same ratio to ``C``; [:ref:`V.8 <V.8>`] but it has;
 
 
 .. container:: center
@@ -27,7 +27,7 @@ For, otherwise, each of the magnitudes ``A``, ``B`` would not have had the same 
 
 Again, let ``C`` have the same ratio to each of the magnitudes ``A``, ``B``; I say that ``A`` is equal to ``B``.
 
-For, otherwise, ``C`` would not have had the same ratio to each of the magnitudes ``A``, ``B``; [:ref:`V.8`] but it has;
+For, otherwise, ``C`` would not have had the same ratio to each of the magnitudes ``A``, ``B``; [:ref:`V.8 <V.8>`] but it has;
 
 
 .. container:: center
@@ -44,17 +44,19 @@ Dependency Graph
 .. graphviz::
 
    digraph {
+     bgcolor="black";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
+     edge [color="white", fontcolor="white"];
      rankdir="TB";
-     node [shape=box, style=rounded];
-     "V.def.7" [style="rounded,filled", fillcolor=orange, URL="/heath/V/def.7/", target="_top"];
-     "V.1" [style="rounded,filled", fillcolor=orange, URL="/heath/V/1/", target="_top"];
-     "V.9" [style="rounded,filled", fillcolor=lightblue, URL="/heath/V/9/", target="_top"];
-     "V.def.4" [style="rounded,filled", fillcolor=orange, URL="/heath/V/def.4/", target="_top"];
-     "V.8" [URL="/heath/V/8/", target="_top"];
-     "V.8" -> "V.def.7";
-     "V.8" -> "V.1";
-     "V.8" -> "V.def.4";
+     "V.8" [fillcolor="#222244", URL="/heath/V/8/", target="_top"];
+     "V.1" [fillcolor="#222244", URL="/heath/V/1/", target="_top"];
+     "V.def.7" [fillcolor="#224422", URL="/heath/V/def.7/", target="_top"];
+     "V.def.4" [fillcolor="#224422", URL="/heath/V/def.4/", target="_top"];
+     "V.9" [penwidth=3, color="white", fillcolor="#555555", URL="/heath/V/9/", target="_top"];
      "V.9" -> "V.8";
+     "V.8" -> "V.1";
+     "V.8" -> "V.def.7";
+     "V.8" -> "V.def.4";
    }
 
 

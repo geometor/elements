@@ -19,7 +19,7 @@ For let the magnitude ``AB`` be the same multiple of the magnitude ``CD`` that t
 
 For, whatever multiple ``AE`` is of ``CF``, let ``EB`` be made that multiple of ``CG``.
 
-Then, since ``AE`` is the same multiple of ``CF`` that ``EB`` is of ``GC``, therefore ``AE`` is the same multiple of ``CF`` that ``AB`` is of ``GF``. [:ref:`V.1`]
+Then, since ``AE`` is the same multiple of ``CF`` that ``EB`` is of ``GC``, therefore ``AE`` is the same multiple of ``CF`` that ``AB`` is of ``GF``. [:ref:`V.1 <V.1>`]
 
 But, by the assumption, ``AE`` is the same multiple of ``CF`` that ``AB`` is of ``CD``.
 
@@ -51,9 +51,11 @@ Dependency Graph
 .. graphviz::
 
    digraph {
+     bgcolor="black";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
+     edge [color="white", fontcolor="white"];
      rankdir="TB";
-     node [shape=box, style=rounded];
-     "V.1" [style="rounded,filled", fillcolor=orange, URL="/heath/V/1/", target="_top"];
-     "V.5" [style="rounded,filled", fillcolor=lightblue, URL="/heath/V/5/", target="_top"];
+     "V.1" [fillcolor="#222244", URL="/heath/V/1/", target="_top"];
+     "V.5" [penwidth=3, color="white", fillcolor="#555555", URL="/heath/V/5/", target="_top"];
      "V.5" -> "V.1";
    }

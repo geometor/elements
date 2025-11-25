@@ -23,7 +23,7 @@ thus it is required to construct on the given straight line ``AB``, and at the p
 
 On the straight lines ``CD``, ``CE`` respectively let the points ``D``, ``E`` be taken at random; let ``DE`` be joined, and out of three straight lines which are equal to the three straight lines ``CD``, ``DE``, ``CE`` let the triangle ``AFG`` be constructed in such a way that ``CD`` is equal to ``AF``, ``CE`` to ``AG``, and further ``DE`` to ``FG``.
 
-Then, since the two sides ``DC``, ``CE`` are equal to the two sides ``FA``, ``AG`` respectively, and the base ``DE`` is equal to the base ``FG``, the angle ``DCE`` is equal to the angle ``FAG``. [:ref:`I.8`]
+Then, since the two sides ``DC``, ``CE`` are equal to the two sides ``FA``, ``AG`` respectively, and the base ``DE`` is equal to the base ``FG``, the angle ``DCE`` is equal to the angle ``FAG``. [:ref:`I.8 <I.8>`]
 
 Therefore on the given straight line ``AB``, and at the point ``A`` on it, the rectilineal angle ``FAG`` has been constructed equal to the given rectilineal angle ``DCE``.
 
@@ -40,45 +40,47 @@ Dependency Graph
 .. graphviz::
 
    digraph {
+     bgcolor="black";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
+     edge [color="white", fontcolor="white"];
      rankdir="TB";
-     node [shape=box, style=rounded];
-     "I.23" [style="rounded,filled", fillcolor=lightblue, URL="/heath/I/23/", target="_top"];
-     "I.cn.1" [style="rounded,filled", fillcolor=orange, URL="/heath/I/cn.1/", target="_top"];
-     "I.7" [URL="/heath/I/7/", target="_top"];
-     "I.2" [URL="/heath/I/2/", target="_top"];
-     "I.def.15" [style="rounded,filled", fillcolor=orange, URL="/heath/I/def.15/", target="_top"];
-     "I.4" [URL="/heath/I/4/", target="_top"];
-     "I.cn.4" [style="rounded,filled", fillcolor=orange, URL="/heath/I/cn.4/", target="_top"];
-     "I.1" [URL="/heath/I/1/", target="_top"];
-     "I.5" [URL="/heath/I/5/", target="_top"];
-     "I.post.1" [style="rounded,filled", fillcolor=orange, URL="/heath/I/post.1/", target="_top"];
-     "I.8" [URL="/heath/I/8/", target="_top"];
-     "I.post.2" [style="rounded,filled", fillcolor=orange, URL="/heath/I/post.2/", target="_top"];
-     "I.post.3" [style="rounded,filled", fillcolor=orange, URL="/heath/I/post.3/", target="_top"];
-     "I.cn.3" [style="rounded,filled", fillcolor=orange, URL="/heath/I/cn.3/", target="_top"];
-     "I.3" [URL="/heath/I/3/", target="_top"];
-     "I.1" -> "I.cn.1";
-     "I.2" -> "I.cn.1";
-     "I.3" -> "I.cn.1";
-     "I.8" -> "I.7";
-     "I.3" -> "I.2";
-     "I.1" -> "I.def.15";
-     "I.3" -> "I.def.15";
-     "I.5" -> "I.4";
-     "I.4" -> "I.cn.4";
+     "I.1" [fillcolor="#222244", URL="/heath/I/1/", target="_top"];
+     "I.post.2" [fillcolor="#444422", URL="/heath/I/post.2/", target="_top"];
+     "I.3" [fillcolor="#222244", URL="/heath/I/3/", target="_top"];
+     "I.23" [penwidth=3, color="white", fillcolor="#555555", URL="/heath/I/23/", target="_top"];
+     "I.post.1" [fillcolor="#444422", URL="/heath/I/post.1/", target="_top"];
+     "I.cn.1" [fillcolor="#442222", URL="/heath/I/cn.1/", target="_top"];
+     "I.8" [fillcolor="#222244", URL="/heath/I/8/", target="_top"];
+     "I.4" [fillcolor="#222244", URL="/heath/I/4/", target="_top"];
+     "I.post.3" [fillcolor="#444422", URL="/heath/I/post.3/", target="_top"];
+     "I.cn.3" [fillcolor="#442222", URL="/heath/I/cn.3/", target="_top"];
+     "I.7" [fillcolor="#222244", URL="/heath/I/7/", target="_top"];
+     "I.def.15" [fillcolor="#224422", URL="/heath/I/def.15/", target="_top"];
+     "I.5" [fillcolor="#222244", URL="/heath/I/5/", target="_top"];
+     "I.2" [fillcolor="#222244", URL="/heath/I/2/", target="_top"];
+     "I.cn.4" [fillcolor="#442222", URL="/heath/I/cn.4/", target="_top"];
      "I.2" -> "I.1";
-     "I.7" -> "I.5";
+     "I.2" -> "I.post.2";
+     "I.5" -> "I.post.2";
+     "I.5" -> "I.3";
      "I.1" -> "I.post.1";
      "I.2" -> "I.post.1";
      "I.5" -> "I.post.1";
+     "I.1" -> "I.cn.1";
+     "I.2" -> "I.cn.1";
+     "I.3" -> "I.cn.1";
      "I.23" -> "I.8";
-     "I.2" -> "I.post.2";
-     "I.5" -> "I.post.2";
+     "I.5" -> "I.4";
      "I.1" -> "I.post.3";
      "I.2" -> "I.post.3";
      "I.3" -> "I.post.3";
      "I.2" -> "I.cn.3";
-     "I.5" -> "I.3";
+     "I.8" -> "I.7";
+     "I.1" -> "I.def.15";
+     "I.3" -> "I.def.15";
+     "I.7" -> "I.5";
+     "I.3" -> "I.2";
+     "I.4" -> "I.cn.4";
    }
 
 

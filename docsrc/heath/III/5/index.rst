@@ -25,7 +25,7 @@ Then, since the point ``E`` is the centre of the circle ``ABC``,
 
 .. container:: center
 
-   ``EC`` is equal to ``EF``. [:ref:`I.def.15`]
+   ``EC`` is equal to ``EF``. [:ref:`I.def.15 <I.def.15>`]
 
 
 Again, since the point ``E`` is the centre of the circle ``CDG``,
@@ -55,10 +55,12 @@ Dependency Graph
 .. graphviz::
 
    digraph {
+     bgcolor="black";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
+     edge [color="white", fontcolor="white"];
      rankdir="TB";
-     node [shape=box, style=rounded];
-     "I.def.15" [style="rounded,filled", fillcolor=orange, URL="/heath/I/def.15/", target="_top"];
-     "III.5" [style="rounded,filled", fillcolor=lightblue, URL="/heath/III/5/", target="_top"];
+     "III.5" [penwidth=3, color="white", fillcolor="#555555", URL="/heath/III/5/", target="_top"];
+     "I.def.15" [fillcolor="#224422", URL="/heath/I/def.15/", target="_top"];
      "III.5" -> "I.def.15";
    }
 

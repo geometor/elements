@@ -33,7 +33,7 @@ But it measures the whole AB also; therefore it will also measure the remainder 
 
 Therefore no magnitude will measure the magnitudes AB, CD; therefore the magnitudes AB, CD are incommensurable.
 
-Therefore etc. [:ref:`X.def.1`]
+Therefore etc. [:ref:`X.def.1 <X.def.1>`]
 
 
 Dependency Graph
@@ -42,10 +42,12 @@ Dependency Graph
 .. graphviz::
 
    digraph {
+     bgcolor="black";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
+     edge [color="white", fontcolor="white"];
      rankdir="TB";
-     node [shape=box, style=rounded];
-     "X.def.1" [style="rounded,filled", fillcolor=orange, URL="/heath/X/def.1/", target="_top"];
-     "X.2" [style="rounded,filled", fillcolor=lightblue, URL="/heath/X/2/", target="_top"];
+     "X.2" [penwidth=3, color="white", fillcolor="#555555", URL="/heath/X/2/", target="_top"];
+     "X.def.1" [fillcolor="#224422", URL="/heath/X/def.1/", target="_top"];
      "X.2" -> "X.def.1";
    }
 

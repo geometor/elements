@@ -21,15 +21,15 @@ Let ``AB`` be the given finite straight line.
 
 Thus it is required to construct an equilateral triangle on the straight line ``AB``. 
 
-With centre ``A`` and distance ``AB`` let the circle ``BCD`` be described; [:ref:`I.post.3`] again, with centre ``B`` and distance ``BA`` let the circle ``ACE`` be described; [:ref:`I.post.3`] and from the point ``C``, in which the circles cut one another, to the points ``A``, ``B`` let the straight lines ``CA``, ``CB`` be joined. [:ref:`I.post.1`] 
+With centre ``A`` and distance ``AB`` let the circle ``BCD`` be described; [:ref:`I.post.3 <I.post.3>`] again, with centre ``B`` and distance ``BA`` let the circle ``ACE`` be described; [:ref:`I.post.3 <I.post.3>`] and from the point ``C``, in which the circles cut one another, to the points ``A``, ``B`` let the straight lines ``CA``, ``CB`` be joined. [:ref:`I.post.1 <I.post.1>`] 
 
-Now, since the point ``A`` is the centre of the circle ``CDB``, ``AC`` is equal to ``AB``. [:ref:`I.def.15`]
+Now, since the point ``A`` is the centre of the circle ``CDB``, ``AC`` is equal to ``AB``. [:ref:`I.def.15 <I.def.15>`]
 
-Again, since the point ``B`` is the centre of the circle ``CAE``, ``BC`` is equal to ``BA``. [:ref:`I.def.15`]
+Again, since the point ``B`` is the centre of the circle ``CAE``, ``BC`` is equal to ``BA``. [:ref:`I.def.15 <I.def.15>`]
 
 But ``CA`` was also proved equal to ``AB``; therefore each of the straight lines ``CA``, ``CB`` is equal to ``AB``.
 
-And things which are equal to the same thing are also equal to one another; [:ref:`I.cn.1`] therefore ``CA`` is also equal to ``CB``.
+And things which are equal to the same thing are also equal to one another; [:ref:`I.cn.1 <I.cn.1>`] therefore ``CA`` is also equal to ``CB``.
 
 Therefore the three straight lines ``CA``, ``AB``, ``BC`` are equal to one another. 
 
@@ -63,7 +63,7 @@ Therefore the triangle ``ABC`` is equilateral; and it has been constructed on th
 
    To be strictly literal we should have to translate in the reverse order let the given finite straight line be the (straight line) ``AB``
 
-   ; but this order is inconvenient in other cases where there is more than one datum, e.g. in the ``setting-out`` of :ref:`I.2`, let the given point be ``A``, and the given straight line ``BC``,
+   ; but this order is inconvenient in other cases where there is more than one datum, e.g. in the ``setting-out`` of :ref:`I.2 <I.2>`, let the given point be ``A``, and the given straight line ``BC``,
 
     the awkwardness arising from the omission of the verb in the second clause. Hence I have, for clearness' sake, adopted the other order throughout the book.
 
@@ -93,13 +93,13 @@ Therefore the triangle ``ABC`` is equilateral; and it has been constructed on th
 
    
 
-   Euclid is careful to adhere to the phraseology of :ref:`I.post.1` except that he speaks of joining
+   Euclid is careful to adhere to the phraseology of :ref:`I.post.1 <I.post.1>` except that he speaks of joining
 
     (ἐπεζεύχθωσαν) instead of drawing
 
     (γράφειν). He does not allow himself to use the shortened expression let the straight line ``FC`` be joined
 
-    (without mention of the points ``F``, ``C``) until :ref:`I.5`.
+    (without mention of the points ``F``, ``C``) until :ref:`I.5 <I.5>`.
 
 
 .. note::
@@ -122,17 +122,19 @@ Dependency Graph
 .. graphviz::
 
    digraph {
+     bgcolor="black";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
+     edge [color="white", fontcolor="white"];
      rankdir="TB";
-     node [shape=box, style=rounded];
-     "I.cn.1" [style="rounded,filled", fillcolor=orange, URL="/heath/I/cn.1/", target="_top"];
-     "I.1" [style="rounded,filled", fillcolor=lightblue, URL="/heath/I/1/", target="_top"];
-     "I.post.3" [style="rounded,filled", fillcolor=orange, URL="/heath/I/post.3/", target="_top"];
-     "I.post.1" [style="rounded,filled", fillcolor=orange, URL="/heath/I/post.1/", target="_top"];
-     "I.def.15" [style="rounded,filled", fillcolor=orange, URL="/heath/I/def.15/", target="_top"];
+     "I.1" [penwidth=3, color="white", fillcolor="#555555", URL="/heath/I/1/", target="_top"];
+     "I.def.15" [fillcolor="#224422", URL="/heath/I/def.15/", target="_top"];
+     "I.post.1" [fillcolor="#444422", URL="/heath/I/post.1/", target="_top"];
+     "I.cn.1" [fillcolor="#442222", URL="/heath/I/cn.1/", target="_top"];
+     "I.post.3" [fillcolor="#444422", URL="/heath/I/post.3/", target="_top"];
+     "I.1" -> "I.def.15";
+     "I.1" -> "I.post.1";
      "I.1" -> "I.cn.1";
      "I.1" -> "I.post.3";
-     "I.1" -> "I.post.1";
-     "I.1" -> "I.def.15";
    }
 
 

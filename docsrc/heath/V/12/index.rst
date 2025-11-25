@@ -21,14 +21,14 @@ For of ``A``, ``C``, ``E`` let equimultiples ``G``, ``H``, ``K`` be taken, and o
 
 Then since, as ``A`` is to ``B``, so is ``C`` to ``D``, and ``E`` to ``F``, and of ``A``, ``C``, ``E`` equimultiples ``G``, ``H``, ``K`` have been taken, and of ``B``, ``D``, ``F`` other, chance, equimultiples ``L``, ``M``, ``N``, therefore, if ``G`` is in excess of ``L``, ``H`` is also in excess of ``M``, and ``K`` of ``N``, if equal, equal, and if less, less; so that, in addition, if ``G`` is in excess of ``L``, then ``G``, ``H``, ``K`` are in excess of ``L``, ``M``, ``N``, if equal, equal, and if less, less.
 
-Now ``G`` and ``G``, ``H``, ``K`` are equimultiples of ``A`` and ``A``, ``C``, ``E``, since, if any number of magnitudes whatever are respectively equimultiples of any magnitudes equal in multitude, whatever multiple one of the magnitudes is of one, that multiple also will all be of all. [:ref:`V.1`]
+Now ``G`` and ``G``, ``H``, ``K`` are equimultiples of ``A`` and ``A``, ``C``, ``E``, since, if any number of magnitudes whatever are respectively equimultiples of any magnitudes equal in multitude, whatever multiple one of the magnitudes is of one, that multiple also will all be of all. [:ref:`V.1 <V.1>`]
 
 For the same reason ``L`` and ``L``, ``M``, ``N`` are also equimultiples of ``B`` and ``B``, ``D``, ``F``;
 
 
 .. container:: center
 
-   therefore, as ``A`` is to ``B``, so are ``A``, ``C``, ``E`` to ``B``, ``D``, ``F``. [:ref:`V.def.5`]
+   therefore, as ``A`` is to ``B``, so are ``A``, ``C``, ``E`` to ``B``, ``D``, ``F``. [:ref:`V.def.5 <V.def.5>`]
 
 
 Therefore etc. Q. E. D.
@@ -40,13 +40,15 @@ Dependency Graph
 .. graphviz::
 
    digraph {
+     bgcolor="black";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
+     edge [color="white", fontcolor="white"];
      rankdir="TB";
-     node [shape=box, style=rounded];
-     "V.1" [style="rounded,filled", fillcolor=orange, URL="/heath/V/1/", target="_top"];
-     "V.def.5" [style="rounded,filled", fillcolor=orange, URL="/heath/V/def.5/", target="_top"];
-     "V.12" [style="rounded,filled", fillcolor=lightblue, URL="/heath/V/12/", target="_top"];
-     "V.12" -> "V.1";
+     "V.def.5" [fillcolor="#224422", URL="/heath/V/def.5/", target="_top"];
+     "V.1" [fillcolor="#222244", URL="/heath/V/1/", target="_top"];
+     "V.12" [penwidth=3, color="white", fillcolor="#555555", URL="/heath/V/12/", target="_top"];
      "V.12" -> "V.def.5";
+     "V.12" -> "V.1";
    }
 
 

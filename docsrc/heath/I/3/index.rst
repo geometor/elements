@@ -20,7 +20,7 @@ Let ``AB``, ``C`` be the-two given unequal straight lines, and let ``AB`` be the
 
 Thus it is required to cut off from ``AB`` the greater a straight line equal to ``C`` the less.
 
-At the point ``A`` let ``AD`` be placed equal to the straight line ``C``; [:ref:`I.2`] and with centre ``A`` and distance ``AD`` let the circle ``DEF`` be described. [:ref:`I.post.3`] Now, since the point ``A`` is the centre of the circle ``DEF``, ``AE`` is equal to ``AD``. [:ref:`I.def.15`] But ``C`` is also equal to ``AD``. Therefore each of the straight lines ``AE``, ``C`` is equal to ``AD``; so that ``AE`` is also equal to ``C``. [:ref:`I.cn.1`]
+At the point ``A`` let ``AD`` be placed equal to the straight line ``C``; [:ref:`I.2 <I.2>`] and with centre ``A`` and distance ``AD`` let the circle ``DEF`` be described. [:ref:`I.post.3 <I.post.3>`] Now, since the point ``A`` is the centre of the circle ``DEF``, ``AE`` is equal to ``AD``. [:ref:`I.def.15 <I.def.15>`] But ``C`` is also equal to ``AD``. Therefore each of the straight lines ``AE``, ``C`` is equal to ``AD``; so that ``AE`` is also equal to ``C``. [:ref:`I.cn.1 <I.cn.1>`]
 
 Therefore, given the two straight lines ``AB``, ``C``, from ``AB`` the greater ``AE`` has been cut off equal to ``C`` the less.
 
@@ -37,31 +37,33 @@ Dependency Graph
 .. graphviz::
 
    digraph {
+     bgcolor="black";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
+     edge [color="white", fontcolor="white"];
      rankdir="TB";
-     node [shape=box, style=rounded];
-     "I.cn.1" [style="rounded,filled", fillcolor=orange, URL="/heath/I/cn.1/", target="_top"];
-     "I.2" [URL="/heath/I/2/", target="_top"];
-     "I.def.15" [style="rounded,filled", fillcolor=orange, URL="/heath/I/def.15/", target="_top"];
-     "I.1" [URL="/heath/I/1/", target="_top"];
-     "I.post.3" [style="rounded,filled", fillcolor=orange, URL="/heath/I/post.3/", target="_top"];
-     "I.post.1" [style="rounded,filled", fillcolor=orange, URL="/heath/I/post.1/", target="_top"];
-     "I.post.2" [style="rounded,filled", fillcolor=orange, URL="/heath/I/post.2/", target="_top"];
-     "I.cn.3" [style="rounded,filled", fillcolor=orange, URL="/heath/I/cn.3/", target="_top"];
-     "I.3" [style="rounded,filled", fillcolor=lightblue, URL="/heath/I/3/", target="_top"];
+     "I.1" [fillcolor="#222244", URL="/heath/I/1/", target="_top"];
+     "I.post.2" [fillcolor="#444422", URL="/heath/I/post.2/", target="_top"];
+     "I.3" [penwidth=3, color="white", fillcolor="#555555", URL="/heath/I/3/", target="_top"];
+     "I.post.1" [fillcolor="#444422", URL="/heath/I/post.1/", target="_top"];
+     "I.cn.1" [fillcolor="#442222", URL="/heath/I/cn.1/", target="_top"];
+     "I.post.3" [fillcolor="#444422", URL="/heath/I/post.3/", target="_top"];
+     "I.cn.3" [fillcolor="#442222", URL="/heath/I/cn.3/", target="_top"];
+     "I.def.15" [fillcolor="#224422", URL="/heath/I/def.15/", target="_top"];
+     "I.2" [fillcolor="#222244", URL="/heath/I/2/", target="_top"];
+     "I.2" -> "I.1";
+     "I.2" -> "I.post.2";
+     "I.1" -> "I.post.1";
+     "I.2" -> "I.post.1";
      "I.1" -> "I.cn.1";
      "I.2" -> "I.cn.1";
      "I.3" -> "I.cn.1";
-     "I.3" -> "I.2";
-     "I.1" -> "I.def.15";
-     "I.3" -> "I.def.15";
-     "I.2" -> "I.1";
      "I.1" -> "I.post.3";
      "I.2" -> "I.post.3";
      "I.3" -> "I.post.3";
-     "I.1" -> "I.post.1";
-     "I.2" -> "I.post.1";
-     "I.2" -> "I.post.2";
      "I.2" -> "I.cn.3";
+     "I.1" -> "I.def.15";
+     "I.3" -> "I.def.15";
+     "I.3" -> "I.2";
    }
 
 

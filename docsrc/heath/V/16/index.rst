@@ -1,7 +1,7 @@
 :order: 16
 :number: 202
 :type: prop
-:dependencies: V.11, V.14, V.15, V.20, V.21, V.def.5, elem.5.17 elem.5.18, elem.5.20 elem.5.21 elem.5.22 elem.5.23
+:dependencies: V.11, V.14, V.15, V.17, V.18, V.20, V.21, V.22, V.23, V.def.5
 
 
 
@@ -19,13 +19,13 @@ Let ``A``, ``B``, ``C``, ``D`` be four proportional magnitudes, so that, as ``A`
 
 For of ``A``, ``B`` let equimultiples ``E``, ``F`` be taken, and of ``C``, ``D`` other, chance, equimultiples ``G``, ``H``.
 
-Then, since ``E`` is the same multiple of ``A`` that ``F`` is of ``B``, and parts have the same ratio as the same multiples of them, [:ref:`V.15`] therefore, as ``A`` is to ``B``, so is ``E`` to ``F``.
+Then, since ``E`` is the same multiple of ``A`` that ``F`` is of ``B``, and parts have the same ratio as the same multiples of them, [:ref:`V.15 <V.15>`] therefore, as ``A`` is to ``B``, so is ``E`` to ``F``.
 
-But as ``A`` is to ``B``, so is ``C`` to ``D``; therefore also, as ``C`` is to ``D``, so is ``E`` to ``F``. [:ref:`V.11`]
+But as ``A`` is to ``B``, so is ``C`` to ``D``; therefore also, as ``C`` is to ``D``, so is ``E`` to ``F``. [:ref:`V.11 <V.11>`]
 
-Again, since ``G``, ``H`` are equimultiples of ``C``, ``D``, therefore, as ``C`` is to ``D``, so is ``G`` to ``H``. [:ref:`V.15`]
+Again, since ``G``, ``H`` are equimultiples of ``C``, ``D``, therefore, as ``C`` is to ``D``, so is ``G`` to ``H``. [:ref:`V.15 <V.15>`]
 
-But, as ``C`` is to ``D``, so is ``E`` to ``F``; therefore also, as ``E`` is to ``F``, so is ``G`` to ``H``. [:ref:`V.11`]
+But, as ``C`` is to ``D``, so is ``E`` to ``F``; therefore also, as ``E`` is to ``F``, so is ``G`` to ``H``. [:ref:`V.11 <V.11>`]
 
 But, if four magnitudes be proportional, and the first be greater than the third,
 
@@ -35,7 +35,7 @@ But, if four magnitudes be proportional, and the first be greater than the third
    the second will also be greater than the fourth;
 
 
-if equal, equal; and if less, less. [:ref:`V.14`]
+if equal, equal; and if less, less. [:ref:`V.14 <V.14>`]
 
 Therefore, if ``E`` is in excess of ``G``, ``F`` is also in excess of ``H``, if equal, equal, and if less, less.
 
@@ -44,14 +44,14 @@ Now ``E``, ``F`` are equimultiples of ``A``, ``B``, and ``G``, ``H`` other, chan
 
 .. container:: center
 
-   therefore, as ``A`` is to ``C``, so is ``B`` to ``D``. [:ref:`V.def.5`]
+   therefore, as ``A`` is to ``C``, so is ``B`` to ``D``. [:ref:`V.def.5 <V.def.5>`]
 
 
 Therefore etc. Q. E. D.
 Let A, B, C, D be four proportional magnitudes, so that, as A is to B, so is C to D.
 In a number of expressions like this it is absolutely necessary, when translating into English, to interpolate words which are not in the Greek. Thus the Greek here is: Ἕστω τέσσαρα μεγέθη ἀνάλογον τὰ Α, Β, Γ, Δ, ὡς τὸ Α πρὸς τὸ Β, οὕτως τὸ Γ πρὸς τὸ Δ, literally Let ``A``, ``B``, ``C``, ``D`` be four proportional magnitudes, as ``A`` to ``B``, so ``C`` to ``D``.
-The same remark applies to the corresponding expressions in the next propositions, :ref:`elem.5.17 elem.5.18`, and to other forms of expression in :ref:`elem.5.20 elem.5.21 elem.5.22 elem.5.23` and later propositions: e.g. in :ref:`V.20` we have a phrase meaning literally Let there be magnitudes...which taken two and two are in the same ratio, as ``A`` to ``B``, so ``D`` to ``E``,
-etc.: in :ref:`V.21` (magnitudes)...which taken two and two are in the same ratio, and let the proportion of them be perturbed, as ``A`` to ``B``, so ``E`` to ``F``,
+The same remark applies to the corresponding expressions in the next propositions, :ref:`V.17 <V.17>` :ref:`V.18 <V.18>`, and to other forms of expression in :ref:`V.20 <V.20>` :ref:`V.21 <V.21>` :ref:`V.22 <V.22>` :ref:`V.23 <V.23>` and later propositions: e.g. in :ref:`V.20 <V.20>` we have a phrase meaning literally Let there be magnitudes...which taken two and two are in the same ratio, as ``A`` to ``B``, so ``D`` to ``E``,
+etc.: in :ref:`V.21 <V.21>` (magnitudes)...which taken two and two are in the same ratio, and let the proportion of them be perturbed, as ``A`` to ``B``, so ``E`` to ``F``,
 etc. In all such cases (where the Greek is so terse as to be almost ungrammatical) I shall insert the words necessary in English, without further remark.
 
 
@@ -61,54 +61,78 @@ Dependency Graph
 .. graphviz::
 
    digraph {
+     bgcolor="black";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
+     edge [color="white", fontcolor="white"];
      rankdir="TB";
-     node [shape=box, style=rounded];
-     "V.16" [style="rounded,filled", fillcolor=lightblue, URL="/heath/V/16/", target="_top"];
-     "V.def.7" [style="rounded,filled", fillcolor=orange, URL="/heath/V/def.7/", target="_top"];
-     "V.21" [URL="/heath/V/21/", target="_top"];
-     "V.13" [URL="/heath/V/13/", target="_top"];
-     "V.7" [URL="/heath/V/7/", target="_top"];
-     "elem.5.17 elem.5.18" [style="rounded,filled", fillcolor=orange];
-     "V.14" [URL="/heath/V/14/", target="_top"];
-     "V.def.5" [style="rounded,filled", fillcolor=orange, URL="/heath/V/def.5/", target="_top"];
-     "V.8" [URL="/heath/V/8/", target="_top"];
-     "V.10" [URL="/heath/V/10/", target="_top"];
-     "V.1" [style="rounded,filled", fillcolor=orange, URL="/heath/V/1/", target="_top"];
-     "V.20" [URL="/heath/V/20/", target="_top"];
-     "V.15" [URL="/heath/V/15/", target="_top"];
-     "V.11" [style="rounded,filled", fillcolor=orange, URL="/heath/V/11/", target="_top"];
-     "elem.5.20 elem.5.21 elem.5.22 elem.5.23" [style="rounded,filled", fillcolor=orange];
-     "V.12" [URL="/heath/V/12/", target="_top"];
-     "V.def.4" [style="rounded,filled", fillcolor=orange, URL="/heath/V/def.4/", target="_top"];
-     "V.8" -> "V.def.7";
-     "V.13" -> "V.def.7";
-     "V.16" -> "V.21";
-     "V.14" -> "V.13";
-     "V.20" -> "V.13";
-     "V.21" -> "V.13";
-     "V.10" -> "V.7";
-     "V.15" -> "V.7";
-     "V.16" -> "elem.5.17 elem.5.18";
-     "V.16" -> "V.14";
+     "V.15" [fillcolor="#222244", URL="/heath/V/15/", target="_top"];
+     "V.def.5" [fillcolor="#224422", URL="/heath/V/def.5/", target="_top"];
+     "V.22" [fillcolor="#222244", URL="/heath/V/22/", target="_top"];
+     "V.11" [fillcolor="#222244", URL="/heath/V/11/", target="_top"];
+     "V.def.7" [fillcolor="#224422", URL="/heath/V/def.7/", target="_top"];
+     "V.12" [fillcolor="#222244", URL="/heath/V/12/", target="_top"];
+     "V.def.4" [fillcolor="#224422", URL="/heath/V/def.4/", target="_top"];
+     "V.20" [fillcolor="#222244", URL="/heath/V/20/", target="_top"];
+     "V.18" [fillcolor="#222244", URL="/heath/V/18/", target="_top"];
+     "V.14" [fillcolor="#222244", URL="/heath/V/14/", target="_top"];
+     "V.23" [fillcolor="#222244", URL="/heath/V/23/", target="_top"];
+     "V.2" [fillcolor="#222244", URL="/heath/V/2/", target="_top"];
+     "V.1" [fillcolor="#222244", URL="/heath/V/1/", target="_top"];
+     "V.4" [fillcolor="#222244", URL="/heath/V/4/", target="_top"];
+     "V.13" [fillcolor="#222244", URL="/heath/V/13/", target="_top"];
+     "V.21" [fillcolor="#222244", URL="/heath/V/21/", target="_top"];
+     "V.8" [fillcolor="#222244", URL="/heath/V/8/", target="_top"];
+     "V.16" [penwidth=3, color="white", fillcolor="#555555", URL="/heath/V/16/", target="_top"];
+     "V.7" [fillcolor="#222244", URL="/heath/V/7/", target="_top"];
+     "V.3" [fillcolor="#222244", URL="/heath/V/3/", target="_top"];
+     "V.17" [fillcolor="#222244", URL="/heath/V/17/", target="_top"];
+     "V.10" [fillcolor="#222244", URL="/heath/V/10/", target="_top"];
+     "V.16" -> "V.15";
+     "V.23" -> "V.15";
+     "V.4" -> "V.def.5";
      "V.7" -> "V.def.5";
      "V.12" -> "V.def.5";
      "V.13" -> "V.def.5";
      "V.16" -> "V.def.5";
+     "V.22" -> "V.def.5";
+     "V.16" -> "V.22";
+     "V.16" -> "V.11";
+     "V.18" -> "V.11";
+     "V.23" -> "V.11";
+     "V.8" -> "V.def.7";
+     "V.13" -> "V.def.7";
+     "V.15" -> "V.12";
+     "V.8" -> "V.def.4";
+     "V.16" -> "V.20";
+     "V.22" -> "V.20";
+     "V.16" -> "V.18";
+     "V.16" -> "V.14";
+     "V.18" -> "V.14";
+     "V.16" -> "V.23";
+     "V.3" -> "V.2";
+     "V.17" -> "V.2";
+     "V.8" -> "V.1";
+     "V.12" -> "V.1";
+     "V.17" -> "V.1";
+     "V.22" -> "V.4";
+     "V.14" -> "V.13";
+     "V.20" -> "V.13";
+     "V.21" -> "V.13";
+     "V.16" -> "V.21";
+     "V.23" -> "V.21";
      "V.10" -> "V.8";
      "V.14" -> "V.8";
      "V.20" -> "V.8";
      "V.21" -> "V.8";
+     "V.23" -> "V.16";
+     "V.10" -> "V.7";
+     "V.15" -> "V.7";
+     "V.4" -> "V.3";
+     "V.16" -> "V.17";
+     "V.18" -> "V.17";
      "V.14" -> "V.10";
      "V.20" -> "V.10";
      "V.21" -> "V.10";
-     "V.8" -> "V.1";
-     "V.12" -> "V.1";
-     "V.16" -> "V.20";
-     "V.16" -> "V.15";
-     "V.16" -> "V.11";
-     "V.16" -> "elem.5.20 elem.5.21 elem.5.22 elem.5.23";
-     "V.15" -> "V.12";
-     "V.8" -> "V.def.4";
    }
 
 

@@ -23,7 +23,7 @@ Let a number measure them, and let it be D.
 
 Now A is odd; therefore D is also odd.
 
-And since D which is odd measures C, and C is even, therefore [D] will measure the half of C also. [:ref:`IX.30`]
+And since D which is odd measures C, and C is even, therefore [D] will measure the half of C also. [:ref:`IX.30 <IX.30>`]
 
 But B is half of C; therefore D measures B.
 
@@ -40,21 +40,23 @@ Dependency Graph
 .. graphviz::
 
    digraph {
+     bgcolor="black";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
+     edge [color="white", fontcolor="white"];
      rankdir="TB";
-     node [shape=box, style=rounded];
-     "VII.def.6" [style="rounded,filled", fillcolor=orange, URL="/heath/VII/def.6/", target="_top"];
-     "IX.30" [URL="/heath/IX/30/", target="_top"];
-     "IX.22" [URL="/heath/IX/22/", target="_top"];
-     "IX.23" [URL="/heath/IX/23/", target="_top"];
-     "VII.def.7" [style="rounded,filled", fillcolor=orange, URL="/heath/VII/def.7/", target="_top"];
-     "IX.21" [URL="/heath/IX/21/", target="_top"];
-     "IX.31" [style="rounded,filled", fillcolor=lightblue, URL="/heath/IX/31/", target="_top"];
-     "IX.21" -> "VII.def.6";
-     "IX.31" -> "IX.30";
-     "IX.23" -> "IX.22";
-     "IX.30" -> "IX.23";
-     "IX.22" -> "VII.def.7";
-     "IX.23" -> "VII.def.7";
+     "IX.21" [fillcolor="#222244", URL="/heath/IX/21/", target="_top"];
+     "IX.30" [fillcolor="#222244", URL="/heath/IX/30/", target="_top"];
+     "IX.31" [penwidth=3, color="white", fillcolor="#555555", URL="/heath/IX/31/", target="_top"];
+     "VII.def.7" [fillcolor="#224422", URL="/heath/VII/def.7/", target="_top"];
+     "IX.23" [fillcolor="#222244", URL="/heath/IX/23/", target="_top"];
+     "IX.22" [fillcolor="#222244", URL="/heath/IX/22/", target="_top"];
+     "VII.def.6" [fillcolor="#224422", URL="/heath/VII/def.6/", target="_top"];
      "IX.22" -> "IX.21";
      "IX.23" -> "IX.21";
+     "IX.31" -> "IX.30";
+     "IX.22" -> "VII.def.7";
+     "IX.23" -> "VII.def.7";
+     "IX.30" -> "IX.23";
+     "IX.23" -> "IX.22";
+     "IX.21" -> "VII.def.6";
    }

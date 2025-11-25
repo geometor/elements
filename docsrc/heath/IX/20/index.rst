@@ -23,7 +23,7 @@ Then EF is either prime or not.
 
 First, let it be prime; then the prime numbers A, B, C, EF have been found which are more than A, B, C.
 
-Next, let EF not be prime; therefore it is measured by some prime number. [:ref:`VII.31`]
+Next, let EF not be prime; therefore it is measured by some prime number. [:ref:`VII.31 <VII.31>`]
 
 Let it be measured by the prime number G.
 
@@ -50,9 +50,11 @@ Dependency Graph
 .. graphviz::
 
    digraph {
+     bgcolor="black";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
+     edge [color="white", fontcolor="white"];
      rankdir="TB";
-     node [shape=box, style=rounded];
-     "VII.31" [style="rounded,filled", fillcolor=orange, URL="/heath/VII/31/", target="_top"];
-     "IX.20" [style="rounded,filled", fillcolor=lightblue, URL="/heath/IX/20/", target="_top"];
+     "IX.20" [penwidth=3, color="white", fillcolor="#555555", URL="/heath/IX/20/", target="_top"];
+     "VII.31" [fillcolor="#222244", URL="/heath/VII/31/", target="_top"];
      "IX.20" -> "VII.31";
    }

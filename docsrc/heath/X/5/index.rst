@@ -23,7 +23,7 @@ Let it measure them, and let it be C.
 
 And, as many times as C measures A, so many units let there be in D; and, as many times as C measures B, so many units let there be in E.
 
-Since then C measures A according to the units in D, while the unit also measures D according to the units in it, therefore the unit measures the number D the same number of times as the magnitude C measures A; therefore, as C is to A, so is the unit to D; [:ref:`VII.def.20`] therefore, inversely, as A is to C, so is D to the unit. [cf. :ref:`V.7.p.1`]
+Since then C measures A according to the units in D, while the unit also measures D according to the units in it, therefore the unit measures the number D the same number of times as the magnitude C measures A; therefore, as C is to A, so is the unit to D; [:ref:`VII.def.20 <VII.def.20>`] therefore, inversely, as A is to C, so is D to the unit. [cf. :ref:`V.7.p.1 <V.7.p.1>`]
 
 Again, since C measures B according to the units in E, while the unit also measures E according to the units in it, therefore the unit measures E the same number of times as C measures B; therefore, as C is to B, so is the unit to E.
 
@@ -40,7 +40,7 @@ therefore, ex aequali,
 
 .. container:: center
 
-   as A is to B, so is the number D to E. [:ref:`V.22`]
+   as A is to B, so is the number D to E. [:ref:`V.22 <V.22>`]
 
 
 Therefore the commensurable magnitudes A, B have to one another the ratio which the number D has to the number E. Q. E. D.
@@ -52,44 +52,46 @@ Dependency Graph
 .. graphviz::
 
    digraph {
+     bgcolor="black";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
+     edge [color="white", fontcolor="white"];
      rankdir="TB";
-     node [shape=box, style=rounded];
-     "V.2" [style="rounded,filled", fillcolor=orange, URL="/heath/V/2/", target="_top"];
-     "V.10" [URL="/heath/V/10/", target="_top"];
-     "V.4" [URL="/heath/V/4/", target="_top"];
-     "V.def.7" [style="rounded,filled", fillcolor=orange, URL="/heath/V/def.7/", target="_top"];
-     "V.22" [URL="/heath/V/22/", target="_top"];
-     "V.1" [style="rounded,filled", fillcolor=orange, URL="/heath/V/1/", target="_top"];
-     "V.13" [URL="/heath/V/13/", target="_top"];
-     "V.3" [URL="/heath/V/3/", target="_top"];
-     "V.20" [URL="/heath/V/20/", target="_top"];
-     "V.7" [URL="/heath/V/7/", target="_top"];
-     "V.7.p.1" [style="rounded,filled", fillcolor=orange];
-     "X.5" [style="rounded,filled", fillcolor=lightblue, URL="/heath/X/5/", target="_top"];
-     "V.def.5" [style="rounded,filled", fillcolor=orange, URL="/heath/V/def.5/", target="_top"];
-     "VII.def.20" [style="rounded,filled", fillcolor=orange, URL="/heath/VII/def.20/", target="_top"];
-     "V.def.4" [style="rounded,filled", fillcolor=orange, URL="/heath/V/def.4/", target="_top"];
-     "V.8" [URL="/heath/V/8/", target="_top"];
-     "V.3" -> "V.2";
-     "V.20" -> "V.10";
-     "V.22" -> "V.4";
-     "V.8" -> "V.def.7";
-     "V.13" -> "V.def.7";
-     "X.5" -> "V.22";
-     "V.8" -> "V.1";
-     "V.20" -> "V.13";
-     "V.4" -> "V.3";
-     "V.22" -> "V.20";
-     "V.10" -> "V.7";
-     "X.5" -> "V.7.p.1";
+     "V.def.5" [fillcolor="#224422", URL="/heath/V/def.5/", target="_top"];
+     "V.22" [fillcolor="#222244", URL="/heath/V/22/", target="_top"];
+     "V.1" [fillcolor="#222244", URL="/heath/V/1/", target="_top"];
+     "V.2" [fillcolor="#222244", URL="/heath/V/2/", target="_top"];
+     "V.def.7" [fillcolor="#224422", URL="/heath/V/def.7/", target="_top"];
+     "V.def.4" [fillcolor="#224422", URL="/heath/V/def.4/", target="_top"];
+     "V.20" [fillcolor="#222244", URL="/heath/V/20/", target="_top"];
+     "V.4" [fillcolor="#222244", URL="/heath/V/4/", target="_top"];
+     "V.13" [fillcolor="#222244", URL="/heath/V/13/", target="_top"];
+     "V.7.p.1" [fillcolor="#333333"];
+     "VII.def.20" [fillcolor="#224422", URL="/heath/VII/def.20/", target="_top"];
+     "V.8" [fillcolor="#222244", URL="/heath/V/8/", target="_top"];
+     "X.5" [penwidth=3, color="white", fillcolor="#555555", URL="/heath/X/5/", target="_top"];
+     "V.7" [fillcolor="#222244", URL="/heath/V/7/", target="_top"];
+     "V.3" [fillcolor="#222244", URL="/heath/V/3/", target="_top"];
+     "V.10" [fillcolor="#222244", URL="/heath/V/10/", target="_top"];
      "V.4" -> "V.def.5";
      "V.7" -> "V.def.5";
      "V.13" -> "V.def.5";
      "V.22" -> "V.def.5";
-     "X.5" -> "VII.def.20";
+     "X.5" -> "V.22";
+     "V.8" -> "V.1";
+     "V.3" -> "V.2";
+     "V.8" -> "V.def.7";
+     "V.13" -> "V.def.7";
      "V.8" -> "V.def.4";
+     "V.22" -> "V.20";
+     "V.22" -> "V.4";
+     "V.20" -> "V.13";
+     "X.5" -> "V.7.p.1";
+     "X.5" -> "VII.def.20";
      "V.10" -> "V.8";
      "V.20" -> "V.8";
+     "V.10" -> "V.7";
+     "V.4" -> "V.3";
+     "V.20" -> "V.10";
    }
 
 

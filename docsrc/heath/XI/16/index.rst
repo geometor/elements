@@ -21,7 +21,7 @@ For, if not, EF, GH will, when produced, meet either in the direction of F, H or
 
 Let them be produced, as in the direction of F, H, and let them, first, meet at K.
 
-Now, since EFK is in the plane AB, therefore all the points on EFK are also in the plane AB. [:ref:`XI.1`]
+Now, since EFK is in the plane AB, therefore all the points on EFK are also in the plane AB. [:ref:`XI.1 <XI.1>`]
 
 But K is one of the points on the straight line EFK; therefore K is in the plane AB.
 
@@ -31,7 +31,7 @@ But they do not meet, because they are, by hypothesis, parallel; therefore the s
 
 Similarly we can prove that neither will the straight lines EF, GH meet when produced in the direction of E, G.
 
-But straight lines which do not meet in either direction are parallel. [:ref:`I.def.23`]
+But straight lines which do not meet in either direction are parallel. [:ref:`I.def.23 <I.def.23>`]
 
 Therefore EF is parallel to GH.
 
@@ -44,11 +44,13 @@ Dependency Graph
 .. graphviz::
 
    digraph {
+     bgcolor="black";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
+     edge [color="white", fontcolor="white"];
      rankdir="TB";
-     node [shape=box, style=rounded];
-     "I.def.23" [style="rounded,filled", fillcolor=orange, URL="/heath/I/def.23/", target="_top"];
-     "XI.1" [style="rounded,filled", fillcolor=orange, URL="/heath/XI/1/", target="_top"];
-     "XI.16" [style="rounded,filled", fillcolor=lightblue, URL="/heath/XI/16/", target="_top"];
+     "I.def.23" [fillcolor="#224422", URL="/heath/I/def.23/", target="_top"];
+     "XI.16" [penwidth=3, color="white", fillcolor="#555555", URL="/heath/XI/16/", target="_top"];
+     "XI.1" [fillcolor="#222244", URL="/heath/XI/1/", target="_top"];
      "XI.16" -> "I.def.23";
      "XI.16" -> "XI.1";
    }

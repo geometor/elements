@@ -21,12 +21,12 @@ Let ``AB`` be the given finite straight line.
 
 Thus it is required to bisect the finite straight line ``AB``.
 
-Let the equilateral triangle ``ABC`` be constructed on it, [:ref:`I.1`] and let the angle ``ACB`` be bisected by the straight line ``CD``; [:ref:`I.9`]
+Let the equilateral triangle ``ABC`` be constructed on it, [:ref:`I.1 <I.1>`] and let the angle ``ACB`` be bisected by the straight line ``CD``; [:ref:`I.9 <I.9>`]
 
 I say that the straight line ``AB`` has been bisected at the point ``D``.
 
 For, since ``AC`` is equal to ``CB``, and ``CD`` is common, 
-        the two sides ``AC``, ``CD`` are equal to the two sides ``BC``, ``CD`` respectively; and the angle ``ACD`` is equal to the angle ``BCD``; therefore the base ``AD`` is equal to the base ``BD``. [:ref:`I.4`]
+        the two sides ``AC``, ``CD`` are equal to the two sides ``BC``, ``CD`` respectively; and the angle ``ACD`` is equal to the angle ``BCD``; therefore the base ``AD`` is equal to the base ``BD``. [:ref:`I.4 <I.4>`]
 
 Therefore the given finite straight line ``AB`` has been bisected at ``D``.
 
@@ -43,50 +43,52 @@ Dependency Graph
 .. graphviz::
 
    digraph {
+     bgcolor="black";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
+     edge [color="white", fontcolor="white"];
      rankdir="TB";
-     node [shape=box, style=rounded];
-     "I.cn.1" [style="rounded,filled", fillcolor=orange, URL="/heath/I/cn.1/", target="_top"];
-     "I.9" [URL="/heath/I/9/", target="_top"];
-     "I.7" [URL="/heath/I/7/", target="_top"];
-     "I.2" [URL="/heath/I/2/", target="_top"];
-     "I.10" [style="rounded,filled", fillcolor=lightblue, URL="/heath/I/10/", target="_top"];
-     "I.def.15" [style="rounded,filled", fillcolor=orange, URL="/heath/I/def.15/", target="_top"];
-     "I.4" [URL="/heath/I/4/", target="_top"];
-     "I.cn.4" [style="rounded,filled", fillcolor=orange, URL="/heath/I/cn.4/", target="_top"];
-     "I.1" [URL="/heath/I/1/", target="_top"];
-     "I.post.3" [style="rounded,filled", fillcolor=orange, URL="/heath/I/post.3/", target="_top"];
-     "I.post.1" [style="rounded,filled", fillcolor=orange, URL="/heath/I/post.1/", target="_top"];
-     "I.8" [URL="/heath/I/8/", target="_top"];
-     "I.post.2" [style="rounded,filled", fillcolor=orange, URL="/heath/I/post.2/", target="_top"];
-     "I.5" [URL="/heath/I/5/", target="_top"];
-     "I.cn.3" [style="rounded,filled", fillcolor=orange, URL="/heath/I/cn.3/", target="_top"];
-     "I.3" [URL="/heath/I/3/", target="_top"];
-     "I.1" -> "I.cn.1";
-     "I.2" -> "I.cn.1";
-     "I.3" -> "I.cn.1";
+     "I.9" [fillcolor="#222244", URL="/heath/I/9/", target="_top"];
+     "I.1" [fillcolor="#222244", URL="/heath/I/1/", target="_top"];
+     "I.post.2" [fillcolor="#444422", URL="/heath/I/post.2/", target="_top"];
+     "I.3" [fillcolor="#222244", URL="/heath/I/3/", target="_top"];
+     "I.10" [penwidth=3, color="white", fillcolor="#555555", URL="/heath/I/10/", target="_top"];
+     "I.post.1" [fillcolor="#444422", URL="/heath/I/post.1/", target="_top"];
+     "I.cn.1" [fillcolor="#442222", URL="/heath/I/cn.1/", target="_top"];
+     "I.post.3" [fillcolor="#444422", URL="/heath/I/post.3/", target="_top"];
+     "I.4" [fillcolor="#222244", URL="/heath/I/4/", target="_top"];
+     "I.8" [fillcolor="#222244", URL="/heath/I/8/", target="_top"];
+     "I.cn.3" [fillcolor="#442222", URL="/heath/I/cn.3/", target="_top"];
+     "I.7" [fillcolor="#222244", URL="/heath/I/7/", target="_top"];
+     "I.def.15" [fillcolor="#224422", URL="/heath/I/def.15/", target="_top"];
+     "I.2" [fillcolor="#222244", URL="/heath/I/2/", target="_top"];
+     "I.5" [fillcolor="#222244", URL="/heath/I/5/", target="_top"];
+     "I.cn.4" [fillcolor="#442222", URL="/heath/I/cn.4/", target="_top"];
      "I.10" -> "I.9";
-     "I.8" -> "I.7";
-     "I.3" -> "I.2";
-     "I.1" -> "I.def.15";
-     "I.3" -> "I.def.15";
-     "I.5" -> "I.4";
-     "I.10" -> "I.4";
-     "I.4" -> "I.cn.4";
      "I.2" -> "I.1";
      "I.10" -> "I.1";
-     "I.1" -> "I.post.3";
-     "I.2" -> "I.post.3";
-     "I.3" -> "I.post.3";
+     "I.2" -> "I.post.2";
+     "I.5" -> "I.post.2";
+     "I.5" -> "I.3";
+     "I.9" -> "I.3";
      "I.1" -> "I.post.1";
      "I.2" -> "I.post.1";
      "I.5" -> "I.post.1";
+     "I.1" -> "I.cn.1";
+     "I.2" -> "I.cn.1";
+     "I.3" -> "I.cn.1";
+     "I.1" -> "I.post.3";
+     "I.2" -> "I.post.3";
+     "I.3" -> "I.post.3";
+     "I.5" -> "I.4";
+     "I.10" -> "I.4";
      "I.9" -> "I.8";
-     "I.2" -> "I.post.2";
-     "I.5" -> "I.post.2";
-     "I.7" -> "I.5";
      "I.2" -> "I.cn.3";
-     "I.5" -> "I.3";
-     "I.9" -> "I.3";
+     "I.8" -> "I.7";
+     "I.1" -> "I.def.15";
+     "I.3" -> "I.def.15";
+     "I.3" -> "I.2";
+     "I.7" -> "I.5";
+     "I.4" -> "I.cn.4";
    }
 
 

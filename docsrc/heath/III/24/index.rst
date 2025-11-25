@@ -32,7 +32,7 @@ For, if the segment ``AEB`` be applied to ``CFD``, and if the point ``A`` be pla
    and, ``AB`` coinciding with ``CD``, the segment ``AEB`` will also coincide with ``CFD``.
 
 
-For, if the straight line ``AB`` coincide with ``CD`` but the segment ``AEB`` do not coincide with ``CFD``, it will either fall with it, or outside it; or it will fall awry, as ``CGD``, and a circle cuts a circle at more points than two : which is impossible. [:ref:`III.10`]
+For, if the straight line ``AB`` coincide with ``CD`` but the segment ``AEB`` do not coincide with ``CFD``, it will either fall with it, or outside it; or it will fall awry, as ``CGD``, and a circle cuts a circle at more points than two : which is impossible. [:ref:`III.10 <III.10>`]
 
 Therefore, if the straight line ``AB`` be applied to ``CD``, the segment ``AEB`` will not fail to coincide with ``CFD`` also;
 
@@ -43,7 +43,7 @@ Therefore, if the straight line ``AB`` be applied to ``CD``, the segment ``AEB``
 
 
 Therefore etc. Q. E. D.
-fall awry, παραλλάξει, the same word as used in the like case in :ref:`I.8`. The word implies that the applied figure will partly fall short of, and partly overlap, the figure to which it is applied.
+fall awry, παραλλάξει, the same word as used in the like case in :ref:`I.8 <I.8>`. The word implies that the applied figure will partly fall short of, and partly overlap, the figure to which it is applied.
 
 
 Dependency Graph
@@ -52,53 +52,55 @@ Dependency Graph
 .. graphviz::
 
    digraph {
+     bgcolor="black";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
+     edge [color="white", fontcolor="white"];
      rankdir="TB";
-     node [shape=box, style=rounded];
-     "I.cn.1" [style="rounded,filled", fillcolor=orange, URL="/heath/I/cn.1/", target="_top"];
-     "I.7" [URL="/heath/I/7/", target="_top"];
-     "III.24" [style="rounded,filled", fillcolor=lightblue, URL="/heath/III/24/", target="_top"];
-     "I.2" [URL="/heath/I/2/", target="_top"];
-     "I.def.15" [style="rounded,filled", fillcolor=orange, URL="/heath/I/def.15/", target="_top"];
-     "I.4" [URL="/heath/I/4/", target="_top"];
-     "I.1" [URL="/heath/I/1/", target="_top"];
-     "I.5" [URL="/heath/I/5/", target="_top"];
-     "I.post.1" [style="rounded,filled", fillcolor=orange, URL="/heath/I/post.1/", target="_top"];
-     "I.8" [URL="/heath/I/8/", target="_top"];
-     "I.post.3" [style="rounded,filled", fillcolor=orange, URL="/heath/I/post.3/", target="_top"];
-     "I.cn.3" [style="rounded,filled", fillcolor=orange, URL="/heath/I/cn.3/", target="_top"];
-     "III.10" [URL="/heath/III/10/", target="_top"];
-     "III.1.p.1" [style="rounded,filled", fillcolor=orange];
-     "I.cn.4" [style="rounded,filled", fillcolor=orange, URL="/heath/I/cn.4/", target="_top"];
-     "I.post.2" [style="rounded,filled", fillcolor=orange, URL="/heath/I/post.2/", target="_top"];
-     "I.3" [URL="/heath/I/3/", target="_top"];
-     "III.5" [URL="/heath/III/5/", target="_top"];
+     "III.10" [fillcolor="#222244", URL="/heath/III/10/", target="_top"];
+     "I.3" [fillcolor="#222244", URL="/heath/I/3/", target="_top"];
+     "I.post.1" [fillcolor="#444422", URL="/heath/I/post.1/", target="_top"];
+     "I.cn.1" [fillcolor="#442222", URL="/heath/I/cn.1/", target="_top"];
+     "I.cn.3" [fillcolor="#442222", URL="/heath/I/cn.3/", target="_top"];
+     "I.post.2" [fillcolor="#444422", URL="/heath/I/post.2/", target="_top"];
+     "I.2" [fillcolor="#222244", URL="/heath/I/2/", target="_top"];
+     "I.5" [fillcolor="#222244", URL="/heath/I/5/", target="_top"];
+     "I.cn.4" [fillcolor="#442222", URL="/heath/I/cn.4/", target="_top"];
+     "I.1" [fillcolor="#222244", URL="/heath/I/1/", target="_top"];
+     "I.8" [fillcolor="#222244", URL="/heath/I/8/", target="_top"];
+     "I.4" [fillcolor="#222244", URL="/heath/I/4/", target="_top"];
+     "I.post.3" [fillcolor="#444422", URL="/heath/I/post.3/", target="_top"];
+     "III.24" [penwidth=3, color="white", fillcolor="#555555", URL="/heath/III/24/", target="_top"];
+     "III.1.p.1" [fillcolor="#333333"];
+     "III.5" [fillcolor="#222244", URL="/heath/III/5/", target="_top"];
+     "I.def.15" [fillcolor="#224422", URL="/heath/I/def.15/", target="_top"];
+     "I.7" [fillcolor="#222244", URL="/heath/I/7/", target="_top"];
+     "III.24" -> "III.10";
+     "I.5" -> "I.3";
+     "I.1" -> "I.post.1";
+     "I.2" -> "I.post.1";
+     "I.5" -> "I.post.1";
      "I.1" -> "I.cn.1";
      "I.2" -> "I.cn.1";
      "I.3" -> "I.cn.1";
-     "I.8" -> "I.7";
+     "I.2" -> "I.cn.3";
+     "I.2" -> "I.post.2";
+     "I.5" -> "I.post.2";
      "I.3" -> "I.2";
+     "I.7" -> "I.5";
+     "I.4" -> "I.cn.4";
+     "I.2" -> "I.1";
+     "III.24" -> "I.8";
+     "I.5" -> "I.4";
+     "I.1" -> "I.post.3";
+     "I.2" -> "I.post.3";
+     "I.3" -> "I.post.3";
+     "III.10" -> "III.1.p.1";
+     "III.10" -> "III.5";
      "I.1" -> "I.def.15";
      "I.3" -> "I.def.15";
      "III.5" -> "I.def.15";
      "III.10" -> "I.def.15";
-     "I.5" -> "I.4";
-     "I.2" -> "I.1";
-     "I.7" -> "I.5";
-     "I.1" -> "I.post.1";
-     "I.2" -> "I.post.1";
-     "I.5" -> "I.post.1";
-     "III.24" -> "I.8";
-     "I.1" -> "I.post.3";
-     "I.2" -> "I.post.3";
-     "I.3" -> "I.post.3";
-     "I.2" -> "I.cn.3";
-     "III.24" -> "III.10";
-     "III.10" -> "III.1.p.1";
-     "I.4" -> "I.cn.4";
-     "I.2" -> "I.post.2";
-     "I.5" -> "I.post.2";
-     "I.5" -> "I.3";
-     "III.10" -> "III.5";
+     "I.8" -> "I.7";
    }
 
 

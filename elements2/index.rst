@@ -4,6 +4,12 @@
 Elements 2.0 (G Index)
 ======================
 
+.. toctree::
+   :maxdepth: 1
+   :caption: Contents
+
+   orphans
+
 .. collection::
    :type: g_node
    :sort: order

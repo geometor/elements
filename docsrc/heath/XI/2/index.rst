@@ -22,11 +22,11 @@ For let points F, G be taken at random on EC, EB, let CB, FG be joined, and let 
 
 For, if part of the triangle ECB, either FHC or GBK, is in the plane of reference, and the rest in another, a part also of one of the straight lines EC, EB will be in the plane of reference, and a part in another.
 
-But, if the part FCBG of the triangle ECB be in the plane of reference, and the rest in another, a part also of both the straight lines EC, EB will be in the plane of reference and a part in another: which was proved absurd. [:ref:`XI.1`]
+But, if the part FCBG of the triangle ECB be in the plane of reference, and the rest in another, a part also of both the straight lines EC, EB will be in the plane of reference and a part in another: which was proved absurd. [:ref:`XI.1 <XI.1>`]
 
 Therefore the triangle ECB is in one plane.
 
-But, in whatever plane the triangle ECB is, in that plane also is each of the straight lines EC, EB, and, in whatever plane each of the straight lines EC, EB is, in that plane are AB, CD also. [:ref:`XI.1`]
+But, in whatever plane the triangle ECB is, in that plane also is each of the straight lines EC, EB, and, in whatever plane each of the straight lines EC, EB is, in that plane are AB, CD also. [:ref:`XI.1 <XI.1>`]
 
 Therefore the straight lines AB, CD are in one plane, and every triangle is in one plane. Q. E. D.
 
@@ -37,10 +37,12 @@ Dependency Graph
 .. graphviz::
 
    digraph {
+     bgcolor="black";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
+     edge [color="white", fontcolor="white"];
      rankdir="TB";
-     node [shape=box, style=rounded];
-     "XI.2" [style="rounded,filled", fillcolor=lightblue, URL="/heath/XI/2/", target="_top"];
-     "XI.1" [style="rounded,filled", fillcolor=orange, URL="/heath/XI/1/", target="_top"];
+     "XI.2" [penwidth=3, color="white", fillcolor="#555555", URL="/heath/XI/2/", target="_top"];
+     "XI.1" [fillcolor="#222244", URL="/heath/XI/1/", target="_top"];
      "XI.2" -> "XI.1";
    }
 

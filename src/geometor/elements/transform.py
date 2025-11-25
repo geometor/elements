@@ -47,55 +47,61 @@ def convert_inline_xml_to_rst(element, dependencies, is_enunciation=False):
 
     # Handle non-recursive tags first
     if element.tag == 'ref':
-        target = element.get('target')
-        if target:
-            target_parts = target.split('.')
-            canonical_ref = None # Initialize as None
-            if len(target_parts) >= 3 and target_parts[0] == 'elem':
-                book_num_str = target_parts[1]
-                book_num_roman = ROMAN_NUMERALS.get(book_num_str)
-                
-                if book_num_roman:
-                    if len(target_parts) == 5:
-                        # Handle nested definitions like elem.10.def.3.1
-                        if target_parts[2] == 'def':
-                            group_num = target_parts[3]
-                            item_num = target_parts[4]
-                            canonical_ref = f"{book_num_roman}.def.{group_num}.{item_num}"
-                        elif target_parts[2] == 'c' and target_parts[3] == 'n':
-                            section_type_canonical = 'cn'
-                            item_num = target_parts[4]
-                            canonical_ref = f"{book_num_roman}.{section_type_canonical}.{item_num}"
-                        elif target_parts[3] == 'p':
-                            prop_num = target_parts[2]
-                            porism_num = target_parts[4]
-                            canonical_ref = f"{book_num_roman}.{prop_num}.p.{porism_num}"
-                        elif target_parts[3] == 'l':
-                            prop_num = target_parts[2]
-                            lemma_num = target_parts[4]
-                            canonical_ref = f"{book_num_roman}.{prop_num}.l.{lemma_num}"
-                    elif len(target_parts) == 4 and target_parts[2] == 'post':
-                        section_type_canonical = 'post'
-                        item_num = target_parts[3]
-                        canonical_ref = f"{book_num_roman}.{section_type_canonical}.{item_num}"
-                    elif len(target_parts) == 4:
-                        section_type_str = target_parts[2]
-                        item_num = target_parts[3]
-                        section_type_canonical = SECTION_TYPE_MAP.get(section_type_str.capitalize())
-                        if section_type_canonical:
-                            canonical_ref = f"{book_num_roman}.{section_type_canonical}.{item_num}"
-                    elif len(target_parts) == 3:
-                        item_num = target_parts[2]
-                        if book_num_roman:
-                            canonical_ref = f"{book_num_roman}.{item_num}"
+        target_attr = element.get('target')
+        if target_attr:
+            targets = target_attr.split()
+            rst_links = []
             
-            if canonical_ref:
-                dependencies.append(canonical_ref)
-            else:
-                dependencies.append(target)
+            for target in targets:
+                target_parts = target.split('.')
+                canonical_ref = None # Initialize as None
+                if len(target_parts) >= 3 and target_parts[0] == 'elem':
+                    book_num_str = target_parts[1]
+                    book_num_roman = ROMAN_NUMERALS.get(book_num_str)
+                    
+                    if book_num_roman:
+                        if len(target_parts) == 5:
+                            # Handle nested definitions like elem.10.def.3.1
+                            if target_parts[2] == 'def':
+                                group_num = target_parts[3]
+                                item_num = target_parts[4]
+                                canonical_ref = f"{book_num_roman}.def.{group_num}.{item_num}"
+                            elif target_parts[2] == 'c' and target_parts[3] == 'n':
+                                section_type_canonical = 'cn'
+                                item_num = target_parts[4]
+                                canonical_ref = f"{book_num_roman}.{section_type_canonical}.{item_num}"
+                            elif target_parts[3] == 'p':
+                                prop_num = target_parts[2]
+                                porism_num = target_parts[4]
+                                canonical_ref = f"{book_num_roman}.{prop_num}.p.{porism_num}"
+                            elif target_parts[3] == 'l':
+                                prop_num = target_parts[2]
+                                lemma_num = target_parts[4]
+                                canonical_ref = f"{book_num_roman}.{prop_num}.l.{lemma_num}"
+                        elif len(target_parts) == 4 and target_parts[2] == 'post':
+                            section_type_canonical = 'post'
+                            item_num = target_parts[3]
+                            canonical_ref = f"{book_num_roman}.{section_type_canonical}.{item_num}"
+                        elif len(target_parts) == 4:
+                            section_type_str = target_parts[2]
+                            item_num = target_parts[3]
+                            section_type_canonical = SECTION_TYPE_MAP.get(section_type_str.capitalize())
+                            if section_type_canonical:
+                                canonical_ref = f"{book_num_roman}.{section_type_canonical}.{item_num}"
+                        elif len(target_parts) == 3:
+                            item_num = target_parts[2]
+                            if book_num_roman:
+                                canonical_ref = f"{book_num_roman}.{item_num}"
+                
+                if canonical_ref:
+                    dependencies.append(canonical_ref)
+                else:
+                    dependencies.append(target)
 
-            ref_link = canonical_ref if canonical_ref else target
-            return f":ref:`{ref_link}`"
+                ref_link = canonical_ref if canonical_ref else target
+                rst_links.append(f":ref:`{ref_link} <{ref_link}>`")
+            
+            return " ".join(rst_links)
         else:
             link_text = ''.join(element.itertext()).strip()
             temp_split_parts = re.split(r'[\s.]+', link_text)
@@ -461,24 +467,38 @@ def generate_proof_chain_dot(graph, element_ref, ref_to_path_map):
 
     dot_lines = [
         "digraph {",
+        '  bgcolor="black";',
+        '  node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];',
+        '  edge [color="white", fontcolor="white"];',
         '  rankdir="TB";',
-        '  node [shape=box, style=rounded];'
     ]
 
     # Define nodes with their styles and links
     for node in nodes_in_chain:
         attrs = []
         
+        # Determine node type for styling
+        node_data_item = graph.nodes[node]
+        node_type = node_data_item.get('type', 'unknown')
+        
+        fillcolor = "#333333" # Default dark gray
+        
         # Set color
         if node == element_ref:
-            attrs.append('style="rounded,filled"')
-            attrs.append('fillcolor=lightblue')
+            attrs.append('penwidth=3')
+            attrs.append('color="white"')
+            fillcolor = "#555555"
         else:
-            # Check if it's an end node (a leaf in this subgraph)
-            successors_in_chain = [succ for succ in graph.successors(node) if succ in nodes_in_chain]
-            if not successors_in_chain:
-                attrs.append('style="rounded,filled"')
-                attrs.append('fillcolor=orange')
+            if node_type == 'def':
+                fillcolor = "#224422" # Dark Green
+            elif node_type == 'prop':
+                fillcolor = "#222244" # Dark Blue
+            elif node_type == 'cn':
+                fillcolor = "#442222" # Dark Red
+            elif node_type == 'post':
+                fillcolor = "#444422" # Dark Olive
+        
+        attrs.append(f'fillcolor="{fillcolor}"')
 
         # Set URL
         path_info = ref_to_path_map.get(node)
@@ -661,6 +681,9 @@ def generate_dependency_graph(graph, output_dir="docsrc/elements2"):
     dot_file_path = Path(output_dir) / "dependencies.dot"
     with open(dot_file_path, "w") as f:
         f.write("digraph G {\n")
+        f.write('  bgcolor="black";\n')
+        f.write('  node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];\n')
+        f.write('  edge [color="white", fontcolor="white"];\n')
         f.write('  rankdir="LR";\n')
         f.write('  overlap="false";\n')
         f.write('  splines="true";\n')
@@ -677,8 +700,24 @@ def generate_dependency_graph(graph, output_dir="docsrc/elements2"):
         for book_roman, nodes in sorted(nodes_by_book.items()):
             f.write(f'  subgraph cluster_book_{book_roman} {{\n')
             f.write(f'    label="Book {book_roman}";\n')
+            f.write('    color="white";\n')
+            f.write('    fontcolor="white";\n')
             for node in nodes:
-                f.write(f'    "{node}";\n')
+                # Determine node type for styling
+                node_data_item = graph.nodes[node]
+                node_type = node_data_item.get('type', 'unknown')
+                
+                fillcolor = "#333333" # Default dark gray
+                if node_type == 'def':
+                    fillcolor = "#224422" # Dark Green
+                elif node_type == 'prop':
+                    fillcolor = "#222244" # Dark Blue
+                elif node_type == 'cn':
+                    fillcolor = "#442222" # Dark Red
+                elif node_type == 'post':
+                    fillcolor = "#444422" # Dark Olive
+                
+                f.write(f'    "{node}" [fillcolor="{fillcolor}"];\n')
             f.write('  }\n')
 
         for edge in graph.edges():
@@ -694,7 +733,8 @@ def main():
     # Clean up existing book directories to prevent orphans
     output_path = Path(output_dir)
     if output_path.exists():
-        for i in range(1, 7):
+        # Clean all books
+        for i in range(1, 14):
             book_roman = ROMAN_NUMERALS.get(str(i))
             if book_roman:
                 book_dir = output_path / book_roman
@@ -704,6 +744,7 @@ def main():
 
     all_books_data = []
     entry_number = 0
+    # Process all books
     for i in range(1, 14):
         xml_file_path = f"resources/xml/books/{i:02d}.xml"
         if os.path.exists(xml_file_path):
@@ -719,7 +760,7 @@ def main():
         for section in book_data["sections"]:
             for entry in section["entries"]:
                 if entry["canonical_ref"]:
-                    G.add_node(entry["canonical_ref"])
+                    G.add_node(entry["canonical_ref"], **entry)
                     for dep in sorted(list(set(entry["dependencies"]))):
                         G.add_edge(entry["canonical_ref"], dep)
 

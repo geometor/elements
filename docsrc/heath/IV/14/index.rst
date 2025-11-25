@@ -27,7 +27,7 @@ Now, since the angle ``BCD`` is equal to the angle ``CDE``, and the angle ``FCD`
 
 .. container:: center
 
-   so that the side ``FC`` is also equal to the side ``FD``. [:ref:`I.6`]
+   so that the side ``FC`` is also equal to the side ``FD``. [:ref:`I.6 <I.6>`]
 
 
 Similarly it can be proved that each of the straight lines ``FB``, ``FA``, ``FE`` is also equal to each of the straight lines ``FC``, ``FD``; therefore the five straight lines ``FA``, ``FB``, ``FC``, ``FD``, ``FE`` are equal to one another.
@@ -45,10 +45,12 @@ Dependency Graph
 .. graphviz::
 
    digraph {
+     bgcolor="black";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
+     edge [color="white", fontcolor="white"];
      rankdir="TB";
-     node [shape=box, style=rounded];
-     "I.6" [style="rounded,filled", fillcolor=orange, URL="/heath/I/6/", target="_top"];
-     "IV.14" [style="rounded,filled", fillcolor=lightblue, URL="/heath/IV/14/", target="_top"];
+     "IV.14" [penwidth=3, color="white", fillcolor="#555555", URL="/heath/IV/14/", target="_top"];
+     "I.6" [fillcolor="#222244", URL="/heath/I/6/", target="_top"];
      "IV.14" -> "I.6";
    }
 
