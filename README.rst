@@ -31,6 +31,19 @@ The project employs a multi-stage pipeline:
 3.  **Transformation**: Converting structured data into reStructuredText for Sphinx.
 4.  **Publishing**: Building the static site for exploration.
 
+Usage
+-----
+
+The project provides command-line tools for processing and transformation:
+
+.. code-block:: bash
+
+    # Main entry point
+    elements
+
+    # Transform XML to RST
+    elements_transform
+
 Resources
 ---------
 
