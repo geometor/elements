@@ -1,7 +1,15 @@
+from __future__ import annotations
 from geometor.elements.xml_parser import parse_element_xml
 from pathlib import Path
 
 def generate_rst_from_xml(xml_file_path: Path, output_dir: Path):
+    """
+    Generate an RST file from an XML element file.
+
+    Args:
+        xml_file_path (Path): The path to the input XML file.
+        output_dir (Path): The directory where the output RST file will be saved.
+    """
     parsed_data = parse_element_xml(xml_file_path)
 
     element_id = parsed_data['id']

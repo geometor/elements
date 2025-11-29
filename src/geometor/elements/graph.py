@@ -1,3 +1,4 @@
+from __future__ import annotations
 import networkx as nx
 import xml.etree.ElementTree as ET
 import os
@@ -20,7 +21,16 @@ SECTION_TYPE_MAP = {
 CATEGORIES_KEYWORDS = ['construct', 'describe', 'bisect']
 TAGS_KEYWORDS = ['line', 'circle', 'triangle']
 
-def get_taxonomy(enunciation_text):
+def get_taxonomy(enunciation_text: str) -> tuple[list[str], list[str]]:
+    """
+    Extract categories and tags from enunciation text.
+
+    Args:
+        enunciation_text (str): The text of the enunciation.
+
+    Returns:
+        tuple: A tuple containing a list of categories and a list of tags.
+    """
     categories = []
     tags = []
     
@@ -36,7 +46,7 @@ def get_taxonomy(enunciation_text):
             
     return categories, tags
 
-def convert_inline_xml_to_rst(element, dependencies, is_enunciation=False):
+def convert_inline_xml_to_rst(element: ET.Element | None, dependencies: list[str], is_enunciation: bool = False) -> str:
     if element is None:
         return ""
 
@@ -132,7 +142,7 @@ def convert_inline_xml_to_rst(element, dependencies, is_enunciation=False):
 
     return content
 
-def parse_book_xml(file_path, entry_number_start=0):
+def parse_book_xml(file_path: str | Path, entry_number_start: int = 0) -> tuple[dict, int]:
     tree = ET.parse(file_path)
     root = tree.getroot()
 
@@ -393,7 +403,17 @@ def parse_book_xml(file_path, entry_number_start=0):
             book_data["sections"].append(section_data)
     return book_data, entry_number
 
-def build_graph(xml_dir=None):
+def build_graph(xml_dir: Path | None = None) -> tuple[nx.DiGraph, list[dict]]:
+    """
+    Build a NetworkX dependency graph from the XML source files.
+
+    Args:
+        xml_dir (Path, optional): The directory containing the XML book files.
+            Defaults to 'resources/xml/books' in the project root.
+
+    Returns:
+        tuple: A tuple containing the NetworkX DiGraph and a list of book data dictionaries.
+    """
     if xml_dir is None:
         # Default to project root resources if not specified
         # Assuming this file is in src/geometor/elements/graph.py

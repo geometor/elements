@@ -1,3 +1,4 @@
+from __future__ import annotations
 import xml.etree.ElementTree as ET
 import os
 import re
@@ -25,7 +26,7 @@ SECTION_TYPE_MAP = {
 CATEGORIES_KEYWORDS = ['construct', 'describe', 'bisect']
 TAGS_KEYWORDS = ['line', 'circle', 'triangle']
 
-def get_taxonomy(enunciation_text):
+def get_taxonomy(enunciation_text: str) -> tuple[list[str], list[str]]:
     categories = []
     tags = []
     
@@ -41,7 +42,7 @@ def get_taxonomy(enunciation_text):
             
     return categories, tags
 
-def convert_inline_xml_to_rst(element, dependencies, is_enunciation=False):
+def convert_inline_xml_to_rst(element: ET.Element | None, dependencies: list[str], is_enunciation: bool = False) -> str:
     if element is None:
         return ""
 
@@ -139,7 +140,7 @@ def convert_inline_xml_to_rst(element, dependencies, is_enunciation=False):
     # Final whitespace cleanup is handled by the caller (flush_inline_parts)
     return content
 
-def parse_book_xml(file_path, entry_number_start=0):
+def parse_book_xml(file_path: str | Path, entry_number_start: int = 0) -> tuple[dict, int]:
     tree = ET.parse(file_path)
     root = tree.getroot()
 
@@ -444,7 +445,7 @@ def parse_book_xml(file_path, entry_number_start=0):
             book_data["sections"].append(section_data)
     return book_data, entry_number
 
-def analyze_dependencies(graph, element_ref):
+def analyze_dependencies(graph: nx.DiGraph, element_ref: str) -> dict[str, list[str]]:
     """
     Analyzes the dependency graph for a given element.
     An edge u -> v means u depends on v.
@@ -458,7 +459,7 @@ def analyze_dependencies(graph, element_ref):
         analysis["dependents"] = sorted(list(nx.ancestors(graph, element_ref)))
     return analysis
 
-def generate_proof_chain_dot(graph, element_ref, ref_to_path_map):
+def generate_proof_chain_dot(graph: nx.DiGraph, element_ref: str, ref_to_path_map: dict[str, tuple[str, str]]) -> str:
     if element_ref not in graph:
         return ""
 
@@ -521,7 +522,7 @@ def generate_proof_chain_dot(graph, element_ref, ref_to_path_map):
     return "\n".join(dot_lines)
 
 
-def generate_rst_files(book_data, output_dir, graph, ref_to_path_map, metadata):
+def generate_rst_files(book_data: dict, output_dir: str | Path, graph: nx.DiGraph, ref_to_path_map: dict[str, tuple[str, str]], metadata: dict) -> None:
     book_roman = book_data["book_number_roman"]
     book_dir = Path(output_dir) / book_roman
     book_dir.mkdir(parents=True, exist_ok=True)
@@ -677,7 +678,7 @@ def generate_rst_files(book_data, output_dir, graph, ref_to_path_map, metadata):
         f.write("\n".join(book_index_content))
     print(f"Generated RST files for Book {book_roman}")
 
-def generate_dependency_graph(graph, output_dir="docsrc/elements2"):
+def generate_dependency_graph(graph: nx.DiGraph, output_dir: str | Path = "docsrc/elements2") -> None:
     dot_file_path = Path(output_dir) / "dependencies.dot"
     with open(dot_file_path, "w") as f:
         f.write("digraph G {\n")

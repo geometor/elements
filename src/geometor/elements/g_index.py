@@ -1,3 +1,4 @@
+from __future__ import annotations
 import networkx as nx
 import re
 from pathlib import Path
@@ -5,7 +6,14 @@ import shutil
 import json
 from geometor.elements.graph import build_graph
 
-def generate_g_index(output_dir=None):
+def generate_g_index(output_dir: Path | None = None) -> None:
+    """
+    Generate the G-Index (dependency graph index) for the elements.
+
+    Args:
+        output_dir (Path, optional): The directory to output the generated RST files.
+            Defaults to the 'elements2' directory in the project root.
+    """
     if output_dir is None:
         # Default to project root elements2
         current_file = Path(__file__)
@@ -39,7 +47,7 @@ def generate_g_index(output_dir=None):
     g_sequence = []
     recursion_stack = set()
 
-    def visit(node):
+    def visit(node: str) -> None:
         if node in visited:
             return
         if node in recursion_stack:
@@ -96,7 +104,7 @@ def generate_g_index(output_dir=None):
         id_map[node_ref] = g_name
 
     # Helper function to generate RST for a node
-    def generate_node_rst(node_ref, node_dir, title, id_map, G, g_id, project_root):
+    def generate_node_rst(node_ref: str, node_dir: Path, title: str, id_map: dict[str, str], G: nx.DiGraph, g_id: int, project_root: Path) -> None:
         node_data = G.nodes[node_ref]
         node_dir.mkdir(parents=True, exist_ok=True)
         filepath = node_dir / "index.rst"
@@ -136,7 +144,7 @@ def generate_g_index(output_dir=None):
         
         content = node_data.get('content_rst', '')
         
-        def replace_ref(match):
+        def replace_ref(match: re.Match) -> str:
             content = match.group(1)
             if '<' in content:
                 # Format: Label <Target>
@@ -328,7 +336,7 @@ def generate_g_index(output_dir=None):
             'prop': 4
         }
 
-        def canonical_sort_key(ref_id):
+        def canonical_sort_key(ref_id: str) -> tuple[int, int, int]:
             parts = ref_id.split('.')
             if not parts:
                 return (0, 0, 0)
@@ -367,7 +375,7 @@ def generate_g_index(output_dir=None):
             content = node_data.get('content_rst', '')
             
             # Replace refs
-            def replace_ref(match):
+            def replace_ref(match: re.Match) -> str:
                 content = match.group(1)
                 if '<' in content:
                     # Format: Label <Target>

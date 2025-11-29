@@ -1,7 +1,8 @@
+from __future__ import annotations
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
-def _convert_element_to_rst(element):
+def _convert_element_to_rst(element: ET.Element | None) -> str:
     if element is None:
         return ""
 
@@ -32,6 +33,15 @@ def _convert_element_to_rst(element):
     return ''.join(parts).strip().replace('\n', ' ')
 
 def parse_element_xml(file_path: Path):
+    """
+    Parse a single element XML file.
+
+    Args:
+        file_path (Path): The path to the XML file.
+
+    Returns:
+        dict: A dictionary containing the parsed element data (id, type, head, enunciation, etc.).
+    """
     tree = ET.parse(file_path)
     root = tree.getroot()
 

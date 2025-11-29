@@ -4,7 +4,7 @@
 modules
 =======
 
-.. include:: api/index.rst
+.. include:: api/geometor/elements/index.rst
 
 indices
 -------

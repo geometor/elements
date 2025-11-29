@@ -2,7 +2,7 @@
 import logging
 import os as os
 
-def log_init(name):
+def log_init(name: str) -> None:
     sessions = os.path.expanduser('~') + '/Sessions'
     out = f'{sessions}/{name}/'
     os.makedirs(out, exist_ok=True)
@@ -19,7 +19,7 @@ def log_init(name):
             )
     logging.info(f'Init {name}')
 
-def print_log(txt=''):
+def print_log(txt: str = '') -> None:
     print(txt)
     logging.info(txt)
 
@@ -27,6 +27,6 @@ def print_log(txt=''):
 import datetime
 from timeit import default_timer as timer
 
-def elapsed(start_time):
+def elapsed(start_time: float) -> str:
     secs = timer() - start_time
     return str(datetime.timedelta(seconds=secs))
