@@ -15,11 +15,7 @@ from __future__ import annotations
 
 
 
-__author__ = "geometor"
-__maintainer__ = "geometor"
-__email__ = "github@geometor.com"
 __version__ = "0.1.3"
-__licence__ = "MIT"
 
 __all__ = [
     "parse_element_xml",

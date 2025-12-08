@@ -4,7 +4,7 @@ GEOMETOR • elements
 .. image:: https://img.shields.io/github/license/geometor/elements.svg
    :target: https://github.com/geometor/elements/blob/main/LICENSE
 
-Codifying the logic of Euclid's Elements.
+A digital reconstruction of Euclid's Elements for dependency mapping and analysis.
 
 Overview
 --------
