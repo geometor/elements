@@ -279,6 +279,12 @@ pre {
   display: block;
 }
 
+div.highlight {
+  background: black;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
 /* elements/a *****************************/
 a {
   color: #88aaff;
@@ -434,6 +440,20 @@ td {
 th {
   font-weight: 700;
   text-align: right;
+}
+
+.viewcode-link .pre {
+  display: none;
+}
+
+.viewcode-link::after {
+  content: "{}";
+  font-family: "Fira Code", monospace;
+  font-weight: bold;
+  font-size: 1rem;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 0.2em;
 }
 
 /* elements/forms *****************************/
@@ -754,6 +774,48 @@ button:hover {
   margin: 0;
 }
 
+/* elements/api *****************************/
+/* API Documentation Styles */
+dl.py dt.sig {
+  font-family: "Fira Code";
+  font-size: 0;
+}
+
+dl.py dt.sig > * {
+  font-size: 1rem;
+}
+
+dl.py dt.sig .sig-prename {
+  color: #888;
+}
+
+dl.py dt.sig .sig-name {
+  font-weight: bold;
+}
+
+dl.py dt.sig .sig-param {
+  display: block;
+  margin-left: 2rem;
+}
+
+dl.py dt.sig .sig-param::after {
+  content: ",";
+}
+
+dl.py dt.sig .sig-param:last-of-type::after {
+  content: "";
+}
+
+dl.py em.property {
+  color: #e74c3c;
+  font-style: normal;
+}
+
+dl.py dd {
+  padding: 1rem 1rem 1rem 2rem;
+  margin-left: 0;
+}
+
 article {
   padding: var(--fitz-2);
   margin: var(--fitz);
@@ -1044,7 +1106,6 @@ article > .gallery.modal > .list > figure > img {
     order: 4;
   }
   article > footer {
-    flex: 1 1 var(--col);
     order: 5;
     flex-flow: column nowrap;
     justify-content: flex-start;
@@ -1054,9 +1115,6 @@ article > .gallery.modal > .list > figure > img {
 @media (min-width: 108em) {
   article > .content {
     flex: 1 1 calc(100% - var(--col-2));
-  }
-  article > figure, article > .gallery, article > footer {
-    flex: 0 0 var(--col-2);
   }
 }
 

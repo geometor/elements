@@ -1,6 +1,8 @@
 GEOMETOR • elements
 ===================
 
+A digital reconstruction of Euclid's Elements for dependency mapping and analysis.
+
 .. toctree::
    :hidden:
    :maxdepth: 2
