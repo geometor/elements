@@ -4,44 +4,33 @@ GEOMETOR • elements
 .. image:: https://img.shields.io/github/license/geometor/elements.svg
    :target: https://github.com/geometor/elements/blob/main/LICENSE
 
-A digital reconstruction of Euclid's Elements for dependency mapping and analysis.
+**A digital reconstruction of Euclid's Elements for dependency mapping and analysis.**
 
 Overview
 --------
 
-**geometor.elements** is a project to reconstruct Euclid's *Elements* as a structured, digital knowledge base. We are transforming the classical text and diagrams (based on the Heath edition) into a format that allows for deep analysis, cross-referencing, and visualization.
+**geometor.elements** transforms Euclid's *Elements* into a structured, digital knowledge base. By parsing the classical Heath edition, we create a system that allows for:
 
-Our goal is not just to digitize the text, but to model the **dependency chain** of geometric logic—tracing how definitions, postulates, and propositions build upon one another.
+- **Deep Analysis**: Tracing the logical flow from axioms to complex propositions.
+- **Visualization**: mapping the dependency graph of geometric logic.
+- **Cross-Referencing**: Instant navigation between definitions, postulates, and propositions.
 
 Key Features
 ------------
 
-- **Digital Reconstruction**: Parsing and normalizing text from the Heath edition.
-- **Dependency Mapping**: Explicitly modeling the logical dependencies between propositions.
-- **Diagram Extraction**: Processing and cleaning original diagrams for high-quality display.
-- **Sphinx Integration**: Generating rich, cross-linked documentation.
-
-Workflow
---------
-
-The project employs a multi-stage pipeline:
-
-1.  **Ingestion**: Extracting text and images from PDF sources.
-2.  **Refinement**: Cropping diagrams, normalizing text, and identifying logical units.
-3.  **Transformation**: Converting structured data into reStructuredText for Sphinx.
-4.  **Publishing**: Building the static site for exploration.
+- **Digital Reconstruction**: Normalized text and high-quality diagram extraction.
+- **Dependency Mapping**: Explicit modeling of logical prerequisites.
+- **Sphinx Integration**: Rich, cross-linked documentation generation.
 
 Usage
 -----
 
-The project provides command-line tools for processing and transformation:
-
 .. code-block:: bash
 
-    # Main entry point
+    # Main entry point for processing
     elements
 
-    # Transform XML to RST
+    # Transform structured data to RST
     elements_transform
 
 Resources
@@ -53,4 +42,4 @@ Resources
 Related Projects
 ----------------
 
-- `GEOMETOR Model <https://github.com/geometor/model>`_: The symbolic engine used to verify constructions.
+- `GEOMETOR Model <https://github.com/geometor/model>`_: The symbolic engine.
