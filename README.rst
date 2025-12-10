@@ -27,9 +27,6 @@ Usage
 
 .. code-block:: bash
 
-    # Main entry point for processing
-    elements
-
     # Transform structured data to RST
     elements_transform
 
