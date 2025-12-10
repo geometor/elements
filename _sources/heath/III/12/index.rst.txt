@@ -7,7 +7,7 @@
 
 
 
-.. figure:: III.12.graphic.inverted.png
+.. picture:: III.12.graphic.inverted.png
 
 .. _III.12:
 

@@ -7,7 +7,7 @@
 
 
 
-.. figure:: I.32.graphic.inverted.png
+.. picture:: I.32.graphic.inverted.png
 
 .. _I.32:
 

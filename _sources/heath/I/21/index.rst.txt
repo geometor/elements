@@ -8,7 +8,7 @@
 
 
 
-.. figure:: I.21.graphic.inverted.png
+.. picture:: I.21.graphic.inverted.png
 
 .. _I.21:
 

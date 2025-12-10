@@ -8,7 +8,7 @@
 
 
 
-.. figure:: I.45.graphic.inverted.png
+.. picture:: I.45.graphic.inverted.png
 
 .. _I.45:
 

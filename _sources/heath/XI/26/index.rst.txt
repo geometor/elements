@@ -8,7 +8,7 @@
 
 
 
-.. figure:: XI.26.graphic.inverted.png
+.. picture:: XI.26.graphic.inverted.png
 
 .. _XI.26:
 

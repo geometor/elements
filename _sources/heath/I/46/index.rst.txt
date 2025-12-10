@@ -8,7 +8,7 @@
 
 
 
-.. figure:: I.46.graphic.inverted.png
+.. picture:: I.46.graphic.inverted.png
 
 .. _I.46:
 

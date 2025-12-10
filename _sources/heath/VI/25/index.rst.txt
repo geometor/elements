@@ -8,7 +8,7 @@
 
 
 
-.. figure:: VI.25.graphic.inverted.png
+.. picture:: VI.25.graphic.inverted.png
 
 .. _VI.25:
 

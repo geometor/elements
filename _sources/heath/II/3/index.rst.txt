@@ -7,7 +7,7 @@
 
 
 
-.. figure:: II.3.graphic.inverted.png
+.. picture:: II.3.graphic.inverted.png
 
 .. _II.3:
 

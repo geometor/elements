@@ -7,7 +7,7 @@
 
 
 
-.. figure:: X.22.graphic.inverted.png
+.. picture:: X.22.graphic.inverted.png
 
 .. _X.22:
 

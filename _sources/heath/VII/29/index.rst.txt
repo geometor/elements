@@ -5,7 +5,7 @@
 
 
 
-.. figure:: VII.29.graphic.inverted.png
+.. picture:: VII.29.graphic.inverted.png
 
 .. _VII.29:
 

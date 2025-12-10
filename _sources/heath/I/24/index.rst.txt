@@ -7,7 +7,7 @@
 
 
 
-.. figure:: I.24.graphic.inverted.png
+.. picture:: I.24.graphic.inverted.png
 
 .. _I.24:
 

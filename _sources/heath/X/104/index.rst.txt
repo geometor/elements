@@ -7,7 +7,7 @@
 
 
 
-.. figure:: X.104.graphic.inverted.png
+.. picture:: X.104.graphic.inverted.png
 
 .. _X.104:
 

@@ -7,7 +7,7 @@
 
 
 
-.. figure:: X.50.graphic.inverted.png
+.. picture:: X.50.graphic.inverted.png
 
 .. _X.50:
 

@@ -6,7 +6,7 @@
 
 
 
-.. figure:: XI.25.graphic.inverted.png
+.. picture:: XI.25.graphic.inverted.png
 
 .. _XI.25:
 

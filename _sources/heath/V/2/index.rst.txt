@@ -5,7 +5,7 @@
 
 
 
-.. figure:: V.2.graphic.inverted.png
+.. picture:: V.2.graphic.inverted.png
 
 .. _V.2:
 

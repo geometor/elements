@@ -7,7 +7,7 @@
 
 
 
-.. figure:: X.76.graphic.inverted.png
+.. picture:: X.76.graphic.inverted.png
 
 .. _X.76:
 
