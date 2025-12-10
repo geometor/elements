@@ -6,7 +6,7 @@
 
 
 
-.. figure:: V.13.graphic.inverted.png
+.. picture:: V.13.graphic.inverted.png
 
 .. _V.13:
 

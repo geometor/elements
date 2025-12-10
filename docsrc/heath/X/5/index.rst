@@ -6,7 +6,7 @@
 
 
 
-.. figure:: X.5.graphic.inverted.png
+.. picture:: X.5.graphic.inverted.png
 
 .. _X.5:
 

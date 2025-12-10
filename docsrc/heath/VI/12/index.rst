@@ -7,7 +7,7 @@
 
 
 
-.. figure:: VI.12.graphic.inverted.png
+.. picture:: VI.12.graphic.inverted.png
 
 .. _VI.12:
 

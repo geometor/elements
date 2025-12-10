@@ -7,7 +7,7 @@
 
 
 
-.. figure:: XIII.9.graphic.inverted.png
+.. picture:: XIII.9.graphic.inverted.png
 
 .. _XIII.9:
 

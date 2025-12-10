@@ -7,7 +7,7 @@
 
 
 
-.. figure:: XI.29.graphic.inverted.png
+.. picture:: XI.29.graphic.inverted.png
 
 .. _XI.29:
 

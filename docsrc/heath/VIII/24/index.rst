@@ -6,7 +6,7 @@
 
 
 
-.. figure:: VIII.24.graphic.inverted.png
+.. picture:: VIII.24.graphic.inverted.png
 
 .. _VIII.24:
 

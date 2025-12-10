@@ -6,7 +6,7 @@
 
 
 
-.. figure:: X.86.graphic.inverted.png
+.. picture:: X.86.graphic.inverted.png
 
 .. _X.86:
 

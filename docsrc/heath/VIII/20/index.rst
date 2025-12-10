@@ -6,7 +6,7 @@
 
 
 
-.. figure:: VIII.20.graphic.inverted.png
+.. picture:: VIII.20.graphic.inverted.png
 
 .. _VIII.20:
 

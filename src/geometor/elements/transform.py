@@ -602,7 +602,7 @@ def generate_rst_files(book_data: dict, output_dir: str | Path, graph: nx.DiGrap
 
                     for image_path in image_files:
                         shutil.copy(image_path, entry_dir)
-                        entry_index_content.append(f"\n\n.. figure:: {image_path.name}\n")
+                        entry_index_content.append(f"\n\n.. picture:: {image_path.name}\n")
                 
                 heath_propositions_dir = Path("resources/heath/propositions")
                 if heath_propositions_dir.exists() and entry['canonical_ref']:
@@ -615,7 +615,7 @@ def generate_rst_files(book_data: dict, output_dir: str | Path, graph: nx.DiGrap
                         inverted_img = ImageOps.invert(img.convert('RGB'))
                         inverted_img_path = entry_dir / f"{graphic_file.stem}.inverted.png"
                         inverted_img.save(inverted_img_path)
-                        entry_index_content.append(f"\n\n.. figure:: {inverted_img_path.name}\n")
+                        entry_index_content.append(f"\n\n.. picture:: {inverted_img_path.name}\n")
                 
                 entry_index_content.extend([
                     f".. _{entry['canonical_ref']}:\n",

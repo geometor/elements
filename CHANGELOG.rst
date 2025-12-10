@@ -1,6 +1,15 @@
 changelog
 =========
 
+0.1.4
+-----
+*2025-12-09*
+
+**changed**
+
+-   Migrated from `.. figure::` to `.. picture::` directive in generated RST documentation for better image handling.
+-   Updated `src/geometor/elements/transform.py` to generate `.. picture::` directives.
+
 0.1.3
 -----
 

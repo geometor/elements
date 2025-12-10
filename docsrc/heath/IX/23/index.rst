@@ -6,7 +6,7 @@
 
 
 
-.. figure:: IX.23.graphic.inverted.png
+.. picture:: IX.23.graphic.inverted.png
 
 .. _IX.23:
 

@@ -6,7 +6,7 @@
 
 
 
-.. figure:: XII.12.graphic.inverted.png
+.. picture:: XII.12.graphic.inverted.png
 
 .. _XII.12:
 

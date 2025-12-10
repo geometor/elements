@@ -8,7 +8,7 @@
 
 
 
-.. figure:: III.33.graphic.inverted.png
+.. picture:: III.33.graphic.inverted.png
 
 .. _III.33:
 

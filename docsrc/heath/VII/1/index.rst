@@ -6,7 +6,7 @@
 
 
 
-.. figure:: VII.1.graphic.inverted.png
+.. picture:: VII.1.graphic.inverted.png
 
 .. _VII.1:
 

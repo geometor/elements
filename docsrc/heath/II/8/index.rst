@@ -8,7 +8,7 @@
 
 
 
-.. figure:: II.8.graphic.inverted.png
+.. picture:: II.8.graphic.inverted.png
 
 .. _II.8:
 

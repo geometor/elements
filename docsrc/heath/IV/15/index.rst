@@ -7,7 +7,7 @@
 
 
 
-.. figure:: IV.15.graphic.inverted.png
+.. picture:: IV.15.graphic.inverted.png
 
 .. _IV.15:
 
