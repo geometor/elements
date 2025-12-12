@@ -1,0 +1,43 @@
+[project]
+name = "geometor-elements"
+dynamic = ["version"]
+authors = [
+  { name="geometor", email="github@geometor.com" },
+]
+description = "A digital reconstruction of Euclid's Elements for dependency mapping and analysis."
+readme = "README.rst"
+requires-python = ">=3.13"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "sympy",
+    "matplotlib",
+    "mplcursors",
+    "rich",
+    "networkx",
+    "PyYAML",
+]
+
+[project.scripts]
+elements = "geometor.elements.__main__:main"
+elements_transform = "geometor.elements.transform:main"
+
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["geometor"]
+namespaces = true
+
+[tool.setuptools.dynamic]
+version = {attr = "geometor.elements.__version__"}
+
+[project.urls]
+"Website" = "https://geometor.github.io/elements"
+"Repository" = "https://github.com/geometor/elements"
+"Issues" = "https://github.com/geometor/elements/issues"
