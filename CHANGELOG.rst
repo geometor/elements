@@ -1,6 +1,16 @@
 changelog
 =========
 
+0.2.0
+-----
+*2025-12-12*
+
+**changed**
+
+-   Reset git repository to start fresh with G-Index and codification scope.
+-   Restored project structure and dependencies.
+-   Updated `GEMINI.md` and `pyproject.toml`.
+
 0.1.4
 -----
 *2025-12-09*

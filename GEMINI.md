@@ -4,44 +4,28 @@ A digital reconstruction of Euclid's Elements for dependency mapping and analysi
 
 ## Overview
 
-`geometor.elements` converts the Heath edition of Euclid's *Elements* into structured data and reStructuredText (RST). It enables dependency analysis, diagram extraction, and the generation of hyperlink-rich documentation.
+`geometor.elements` builds upon the semantic structure provided by `geometor.euclid` to create the **G Index**—a symbolic and logical codification of the geometric constructions.
 
-## Architecture
+It is responsible for:
+-   **G Index Generation**: Creating a dependency-aware index of all propositions.
+-   **Codification**: Translating text descriptions into symbolic GEOMETOR models.
+-   **Visualization**: Rendering the "Genealogy" of geometric truth.
 
--   **Ingestion**: `ingest/` pipeline extracts and normalizes text/images from source PDFs.
--   **Refinement**: Processes diagrams and maps logical dependencies.
--   **Transformation**: `transform.py` generates the final RST structure for Sphinx.
+## Key Repos
 
-## Index
+-   **elements**: This repository. Code for G Index generation and model codification.
+-   **euclid**: The source of truth for the text and logical graph.
 
--   `ingest/`: Source processing pipeline.
--   `transform.py`: Entry point for RST generation.
--   `graph.py`: Dependency graph generation logic.
--   `elements.py`: Core data structures.
+## Development Plan
 
-## Getting Started
+-   Refine `g_index` generation logic.
+-   Implement initial codification of Book I propositions.
 
-### Installation
+## Workflows
 
-```bash
-git clone https://github.com/geometor/elements
-cd elements
-pip install -e .
-```
+### Create Branch
 
-### Usage
-
-The project provides command-line tools for processing and transformation:
-
-```bash
-# Main entry point
-elements
-
-# Transform XML to RST
-elements_transform
-```
-
-## Resources
-
--   **Source Code**: https://github.com/geometor/elements
--   **Issues**: https://github.com/geometor/elements/issues
+1.  **Navigate to Repository**: `cd /home/phi/PROJECTS/geometor/elements`
+2.  **Checkout Main**: `git checkout main`
+3.  **Pull Latest**: `git pull origin main`
+4.  **Create Branch**: `git checkout -b <branch_name>`

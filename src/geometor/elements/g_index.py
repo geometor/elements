@@ -4,7 +4,7 @@ import re
 from pathlib import Path
 import shutil
 import json
-from geometor.elements.graph import build_graph
+from geometor.euclid.graph import build_graph
 
 def generate_g_index(output_dir: Path | None = None) -> None:
     """
@@ -15,10 +15,10 @@ def generate_g_index(output_dir: Path | None = None) -> None:
             Defaults to the 'elements2' directory in the project root.
     """
     if output_dir is None:
-        # Default to project root elements2
+        # Default to project root docsrc/elements2
         current_file = Path(__file__)
         project_root = current_file.parent.parent.parent.parent
-        output_dir = project_root / "elements2"
+        output_dir = project_root / "docsrc" / "elements2"
     
     print("Building dependency graph...")
     G, all_books_data = build_graph()
