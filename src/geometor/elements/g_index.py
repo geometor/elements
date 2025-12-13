@@ -4,7 +4,7 @@ import re
 from pathlib import Path
 import shutil
 import json
-from geometor.euclid.graph import build_graph
+from graph import build_graph
 
 def generate_g_index(output_dir: Path | None = None) -> None:
     """

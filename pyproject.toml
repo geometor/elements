@@ -13,13 +13,11 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 dependencies = [
-    "geometor-euclid",
     "sympy",
     "matplotlib",
-    "mplcursors",
+    # "mplcursors",
     "rich",
     "networkx",
-    "PyYAML",
 ]
 
 [project.scripts]
