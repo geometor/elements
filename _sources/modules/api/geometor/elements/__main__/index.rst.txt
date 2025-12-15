@@ -5,7 +5,23 @@ geometor.elements.__main__
 
 .. autoapi-nested-parse::
 
-   The package entry point into the application.
+   Entry point for geometor.elements.
 
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.elements.__main__.main
+
+
+Module Contents
+---------------
+
+.. py:function:: main() -> None
+
+   Execute the main entry point.
 
 
