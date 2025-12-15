@@ -1,6 +1,18 @@
 changelog
 =========
 
+
+0.2.1
+-----
+*2025-12-15*
+
+**changed**
+
+-   Cleaned up docstrings and type hints across the codebase.
+-   Added missing docstrings to `g_index.py`, `graph.py`, `__main__.py`, and `__init__.py`.
+-   Fixed build issues related to `g_index` generation.
+-   Removed legacy documentation in `docsrc/elements2`.
+
 0.2.0
 -----
 *2025-12-12*

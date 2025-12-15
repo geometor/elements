@@ -3,7 +3,9 @@ GEOMETOR • elements
 
 A digital reconstruction of Euclid's Elements for dependency mapping and analysis.
 
-.. toctree::
+.. include:: intro.rst
+
+.. .. toctree::
    :hidden:
    :maxdepth: 2
 
@@ -15,14 +17,6 @@ A digital reconstruction of Euclid's Elements for dependency mapping and analysi
    changelog.rst
    glossary.rst
 
-.. .. include:: intro.rst
 
 
-Euclid's Elements 2.0
----------------------
-
-.. toctree::
-   :maxdepth: 2
-
-   design.rst
 

@@ -3,6 +3,11 @@ geometor.elements.graph
 
 .. py:module:: geometor.elements.graph
 
+.. autoapi-nested-parse::
+
+   Graph manipulation utilities.
+
+
 
 Attributes
 ----------
@@ -54,7 +59,13 @@ Module Contents
 
 .. py:function:: convert_inline_xml_to_rst(element: xml.etree.ElementTree.Element | None, dependencies: list[str], is_enunciation: bool = False) -> str
 
+   Convert inline XML elements to RST format.
+
+
 .. py:function:: parse_book_xml(file_path: str | pathlib.Path, entry_number_start: int = 0) -> tuple[dict, int]
+
+   Parse a book XML file.
+
 
 .. py:function:: build_graph(xml_dir: pathlib.Path | None = None) -> tuple[networkx.DiGraph, list[dict]]
 

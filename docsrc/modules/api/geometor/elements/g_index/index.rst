@@ -3,6 +3,11 @@ geometor.elements.g_index
 
 .. py:module:: geometor.elements.g_index
 
+.. autoapi-nested-parse::
+
+   Generate the G Index.
+
+
 
 Functions
 ---------
