@@ -16,16 +16,4 @@ It is responsible for:
 -   **elements**: This repository. Code for G Index generation and model codification.
 -   **euclid**: The source of truth for the text and logical graph.
 
-## Development Plan
 
--   Refine `g_index` generation logic.
--   Implement initial codification of Book I propositions.
-
-## Workflows
-
-### Create Branch
-
-1.  **Navigate to Repository**: `cd /home/phi/PROJECTS/geometor/elements`
-2.  **Checkout Main**: `git checkout main`
-3.  **Pull Latest**: `git pull origin main`
-4.  **Create Branch**: `git checkout -b <branch_name>`
