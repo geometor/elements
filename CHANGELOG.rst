@@ -2,6 +2,25 @@ changelog
 =========
 
 
+0.2.2
+-----
+*2025-12-20*
+
+**added**
+
+-   Implemented template-based RST generation for G-nodes.
+-   Added `:excerpt:` metadata to G-nodes for cleaner documentation snippets.
+-   Introduced hard links for Heath IDs to ensure stable intersphinx references.
+-   Added Graphviz dependency visualizations to every G-node.
+
+**changed**
+
+-   Separated `geometor.elements` from `geometor.euclid` source tree.
+-   Refactored `graph.py` to parse RST directly from `geometor.euclid`.
+-   Overhauled project documentation (README, GEMINI.md, Design, Mission).
+-   Advanced docstrings to Google style for the core G-Index pipeline.
+-   Limited initial G-Index generation to Book I for verification.
+
 0.2.1
 -----
 *2025-12-15*

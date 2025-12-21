@@ -4,7 +4,11 @@ from geometor.elements.g_index import generate_g_index
 
 
 def main() -> None:
-    """Execute the main entry point."""
+    """Execute the G-Index generation process.
+
+    Scans the Euclid source documentation, builds a dependency graph,
+    and renders the G-Index RST structure.
+    """
     generate_g_index()
 
 

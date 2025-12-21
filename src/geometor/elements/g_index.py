@@ -1,4 +1,10 @@
-"""Generate the G Index."""
+"""
+Generate the G-Index for Euclid's Elements.
+
+This module processes the semantic structure of the modernized text
+(sourced from the Heath edition in the sibling `geometor-euclid` project)
+to create a strictly numbered dependency graph and interlinked RST structure.
+"""
 
 from __future__ import annotations
 import networkx as nx
@@ -6,7 +12,7 @@ import re
 from pathlib import Path
 import shutil
 import json
-from graph import build_graph
+from .graph import build_graph
 
 
 def generate_g_index(output_dir: Path | None = None) -> None:
@@ -41,10 +47,11 @@ def generate_g_index(output_dir: Path | None = None) -> None:
 
             # Let's look at section types.
             # 'prop' is the main one.
-            if section["type_canonical"] == "prop":
-                for entry in section["entries"]:
-                    if entry["canonical_ref"]:
-                        goals.append(entry["canonical_ref"])
+            # In the new RST graph structure, sections are just containers for the book.
+            # We need to filter entries by their type to select goals.
+            for entry in section["entries"]:
+                if entry.get("type") == "prop" and entry.get("canonical_ref"):
+                    goals.append(entry["canonical_ref"])
 
     visited = set()
     g_sequence = []
@@ -106,6 +113,30 @@ def generate_g_index(output_dir: Path | None = None) -> None:
         g_name = f"G.{g_id}"
         id_map[node_ref] = g_name
 
+    # String Template for G-Node
+    node_template = """
+:order: {g_id}
+:original_id: {node_ref}
+:type: {node_type}
+:dependencies: {deps_str}
+:excerpt: {excerpt}
+
+**Heath ID:** {heath_link}
+
+{image_block}
+
+.. _{title}:
+
+{title}
+{title_underline}
+
+{content}
+
+{dependency_graph}
+
+{required_for}
+"""
+
     # Helper function to generate RST for a node
     def generate_node_rst(
         node_ref: str,
@@ -116,16 +147,26 @@ def generate_g_index(output_dir: Path | None = None) -> None:
         g_id: int,
         project_root: Path,
     ) -> None:
+        """Generate a single RST folder/index for a G-Node.
+
+        Uses the node template to render properties, metadata, enunciation,
+        and dependency visualizations.
+
+        Args:
+            node_ref (str): The original Euclid reference (e.g. 'I.1').
+            node_dir (Path): The output directory for this G-Node.
+            title (str): The display title (e.g. 'G.1').
+            id_map (dict[str, str]): Mapping of original refs to G-IDs.
+            G (nx.DiGraph): The full dependency graph.
+            g_id (int): The numerical index for this node.
+            project_root (Path): The root of the elements project.
+        """
         node_data = G.nodes[node_ref]
         node_dir.mkdir(parents=True, exist_ok=True)
         filepath = node_dir / "index.rst"
 
-        rst_content = [
-            f":order: {g_id}",
-            f":original_id: {node_ref}",
-            f":type: {node_data.get('type', 'unknown')}",
-        ]
-
+        # Dependencies
+        deps_str = ""
         if node_data.get("dependencies"):
             deps_list = []
             for dep in sorted(list(set(node_data["dependencies"]))):
@@ -134,99 +175,91 @@ def generate_g_index(output_dir: Path | None = None) -> None:
                 else:
                     deps_list.append(dep)
             deps_str = ", ".join(deps_list)
-            rst_content.append(f":dependencies: {deps_str}")
 
-        rst_content.append("")
+        # Title Underline
+        title_underline = "=" * len(title)
 
-        # Ref link - use the title as the label if it's a G-node, else the node_ref
-        label = title if title.startswith("G.") else node_ref
-        rst_content.append(f".. _{label}:")
-        rst_content.append("")
-
-        # Title
-        display_title = title
-        rst_content.append(display_title)
-        rst_content.append("=" * len(display_title))
-        rst_content.append("")
-
-        if title.startswith("G."):
-            rst_content.append(f"**Heath ID:** :ref:`{node_ref}`")
-            rst_content.append("")
-
-        content = node_data.get("content_rst", "")
-
+        # Content Handling
+        raw_content = node_data.get("content_rst", "")
+        
+        # Ref Replacement Logic
         def replace_ref(match: re.Match) -> str:
-            content = match.group(1)
-            if "<" in content:
-                # Format: Label <Target>
-                label, target = content.split("<")
+            val = match.group(1)
+            if "<" in val:
+                lbl, target = val.split("<")
                 target = target.strip(" >")
-                label = label.strip()
-
-                new_target = target
-                if target in id_map:
-                    new_target = id_map[target]
-
-                new_label = label
-                if label in id_map:
-                    new_label = id_map[label]
-
-                if new_target != target or new_label != label:
+                lbl = lbl.strip()
+                new_target = id_map.get(target, target)
+                new_label = id_map.get(lbl, lbl)
+                if new_target != target or new_label != lbl:
                     if new_label == new_target:
                         return f":ref:`{new_target}`"
                     return f":ref:`{new_label} <{new_target}>`"
             else:
-                # Format: Target
-                target = content
+                target = val
                 if target in id_map:
                     return f":ref:`{id_map[target]}`"
             return match.group(0)
 
-        content = re.sub(r":ref:`([^`]+)`", replace_ref, content)
+        content = re.sub(r":ref:`([^`]+)`", replace_ref, raw_content)
 
-        # Copy images
-        canonical_images_dir = project_root / "resources/canonical_images"
+        # Excerpt and Blockquote
+        excerpt = ""
+        if content:
+            paragraphs = content.split("\n\n", 1)
+            if len(paragraphs) > 0:
+                # Use first paragraph as excerpt, stripping refs for safety in metadata
+                enunc = paragraphs[0].strip()
+                excerpt = re.sub(r":ref:`([^`]+)`", r"\1", enunc).replace("\n", " ")
+                
+                # Indent the first paragraph
+                indented_enunc = "\n".join([f"    {line}" for line in enunc.splitlines()])
+                if len(paragraphs) > 1:
+                    content = indented_enunc + "\n\n" + paragraphs[1]
+                else:
+                    content = indented_enunc
 
-        if canonical_images_dir.exists():
-            image_stem = node_ref
-            for img in canonical_images_dir.glob(f"{image_stem}*.jpg"):
-                shutil.copy(img, node_dir)
-
-        # Graphic from docsrc/heath
+        # Heath Link (Hard link back to Euclid to avoid intersphinx extraction issues)
+        # Structure: https://geometor.github.io/euclid/Book/Folder/
         parts = node_ref.split(".")
         if len(parts) >= 2:
             book = parts[0]
-            remainder = ".".join(parts[1:])
+            folder = ".".join(parts[1:])
+            # Handle special cases for folder names if needed, 
+            # but usually it's just the remainder of the ref
+            url = f"https://geometor.github.io/euclid/{book}/{folder}/"
+            heath_link = f"`{node_ref} <{url}>`_"
+        else:
+            heath_link = f":ref:`{node_ref}`"
 
-            # Source path: docsrc/heath/{book}/{remainder}/{node_ref}.graphic.inverted.png
-            graphic_source_dir = project_root / "docsrc/heath" / book / remainder
-            graphic_file = graphic_source_dir / f"{node_ref}.graphic.inverted.png"
-
-            if graphic_file.exists():
-                # Rename to match G-node ID (e.g., g.1.png)
-                new_graphic_name = f"{title}.png"
-                shutil.copy(graphic_file, node_dir / new_graphic_name)
-
-                # Update content to reference new image name
-                # The original content likely has: .. figure:: I.1.graphic.inverted.png
-                # Or maybe just I.1.graphic.png if that's what was in the RST?
-                # Let's assume the RST might reference the inverted one or the standard one.
-                # We'll replace both potential patterns to be safe, or just the one we know exists.
-                content = content.replace(
-                    f"{node_ref}.graphic.inverted.png", new_graphic_name
-                )
-                content = content.replace(f"{node_ref}.graphic.png", new_graphic_name)
-
-        rst_content.append(content)
+        # Image Handling
+        image_block = ""
+        main_image = node_data.get("image")
+        
+        if main_image:
+            parts = node_ref.split(".")
+            if len(parts) >= 2:
+                book = parts[0]
+                remainder = ".".join(parts[1:])
+                euclid_root = project_root.parent / "euclid"
+                graphic_source_dir = euclid_root / "docsrc" / "heath" / book / remainder
+                
+                graphic_file = graphic_source_dir / main_image
+                
+                if graphic_file.exists():
+                    # Rename to G.ID.png
+                    new_image_name = f"{title}.png"
+                    shutil.copy(graphic_file, node_dir / new_image_name)
+                    
+                    # Create image block using picture directive
+                    image_block = f".. picture:: {new_image_name}"
 
         # Dependency Graph
+        dependency_graph = ""
         descendants = nx.descendants(G, node_ref)
         if descendants:
-            rst_content.append("\n\nDependency Graph")
-            rst_content.append("----------------")
-            rst_content.append("")
-
             nodes_in_chain = descendants.union({node_ref})
+            
             dot_lines = [
                 "digraph {",
                 '  bgcolor="black";',
@@ -234,33 +267,27 @@ def generate_g_index(output_dir: Path | None = None) -> None:
                 '  edge [color="white", fontcolor="white"];',
                 '  rankdir="TB";',
             ]
-
+            
             for node in nodes_in_chain:
                 attrs = []
-                label = id_map.get(node, node)
-                if label.startswith("g."):
-                    label = label.replace("g.", "G.")
-                attrs.append(f'label="{label}"')
+                n_label = id_map.get(node, node)
+                if n_label.startswith("g."):
+                    n_label = n_label.replace("g.", "G.")
+                attrs.append(f'label="{n_label}"')
 
-                # Determine node type for styling
                 node_data_item = G.nodes[node]
                 node_type = node_data_item.get("type", "unknown")
 
-                fillcolor = "#333333"  # Default dark gray
+                fillcolor = "#333333"
                 if node == node_ref:
-                    # Current node
                     attrs.append("penwidth=3")
                     attrs.append('color="white"')
                     fillcolor = "#555555"
                 else:
-                    if node_type == "def":
-                        fillcolor = "#224422"  # Dark Green
-                    elif node_type == "prop":
-                        fillcolor = "#222244"  # Dark Blue
-                    elif node_type == "cn":
-                        fillcolor = "#442222"  # Dark Red
-                    elif node_type == "post":
-                        fillcolor = "#444422"  # Dark Olive
+                    if node_type == "def": fillcolor = "#224422"
+                    elif node_type == "prop": fillcolor = "#222244"
+                    elif node_type == "cn": fillcolor = "#442222"
+                    elif node_type == "post": fillcolor = "#444422"
 
                 attrs.append(f'fillcolor="{fillcolor}"')
 
@@ -270,47 +297,61 @@ def generate_g_index(output_dir: Path | None = None) -> None:
                     attrs.append('target="_top"')
 
                 attr_str = ", ".join(attrs)
-                node_id = label
-                dot_lines.append(f'  "{node_id}" [{attr_str}];')
+                dot_lines.append(f'  "{n_label}" [{attr_str}];')
 
             for node in nodes_in_chain:
-                src_label = id_map.get(node, node)
-                if src_label.startswith("g."):
-                    src_label = src_label.replace("g.", "G.")
-
+                src_label = id_map.get(node, node).replace("g.", "G.")
                 for pred in G.predecessors(node):
                     if pred in nodes_in_chain:
-                        pred_label = id_map.get(pred, pred)
-                        if pred_label.startswith("g."):
-                            pred_label = pred_label.replace("g.", "G.")
+                        pred_label = id_map.get(pred, pred).replace("g.", "G.")
                         dot_lines.append(f'  "{pred_label}" -> "{src_label}";')
 
             dot_lines.append("}")
-            dot_content = "\n".join(dot_lines)
+            
+            dependency_graph = ".. graphviz::\n\n" + "\n".join([f"   {line}" for line in dot_lines])
+            
+            dependency_graph = f"""
+Dependency Graph
+----------------
 
-            rst_content.append(".. graphviz::")
-            rst_content.append("")
-            for line in dot_content.splitlines():
-                rst_content.append(f"   {line}")
-            rst_content.append("")
+{dependency_graph}
+"""
 
-        # Required for
+        # Required For
+        required_for = ""
         ancestors = sorted(list(nx.ancestors(G, node_ref)))
         if ancestors:
-            rst_content.append("\n\nRequired for")
-            rst_content.append("------------")
-            rst_content.append("")
             ref_list = []
             for ancestor in ancestors:
                 if ancestor in id_map:
                     ref_list.append(f":ref:`{id_map[ancestor]}`")
                 else:
                     ref_list.append(ancestor)
-            rst_content.append(", ".join(ref_list))
-            rst_content.append("")
+            required_for = f"""
+Required for
+------------
+
+{", ".join(ref_list)}
+"""
+
+        # Render Template
+        rendered_rst = node_template.format(
+            g_id=g_id,
+            node_ref=node_ref,
+            node_type=node_data.get('type', 'unknown'),
+            deps_str=deps_str,
+            excerpt=excerpt,
+            heath_link=heath_link,
+            title=title,
+            title_underline=title_underline,
+            image_block=image_block,
+            content=content,
+            dependency_graph=dependency_graph,
+            required_for=required_for
+        ).strip()
 
         with open(filepath, "w") as f:
-            f.write("\n".join(rst_content))
+            f.write(rendered_rst + "\n")
 
     # 2. Generate RST files for G-nodes
     print("Generating RST files for G-nodes...")
@@ -434,8 +475,9 @@ def generate_g_index(output_dir: Path | None = None) -> None:
                 book = parts[0]
                 remainder = ".".join(parts[1:])
 
-                # Source path: docsrc/heath/{book}/{remainder}/{orphan}.graphic.inverted.png
-                graphic_source_dir = project_root / "docsrc/heath" / book / remainder
+                # Source path: ../euclid/docsrc/heath/{book}/{remainder}/{orphan}.graphic.inverted.png for orphans
+                euclid_root = project_root.parent / "euclid"
+                graphic_source_dir = euclid_root / "docsrc" / "heath" / book / remainder
                 graphic_file = graphic_source_dir / f"{orphan}.graphic.inverted.png"
 
                 if graphic_file.exists():
@@ -481,7 +523,6 @@ def generate_g_index(output_dir: Path | None = None) -> None:
         "   orphans" if orphans else "",
         "",
         ".. collection::",
-        "   :type: g_node",
         "   :sort: order",
         "",
     ]

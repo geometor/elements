@@ -4,32 +4,34 @@ GEOMETOR • elements
 .. image:: https://img.shields.io/github/license/geometor/elements.svg
    :target: https://github.com/geometor/elements/blob/main/LICENSE
 
-**A digital reconstruction of Euclid's Elements for dependency mapping and analysis.**
+**Symbolic dependency mapping and G-Index generation for Euclid's Elements.**
 
 
 Overview
 --------
 
-**geometor.elements** transforms Euclid's *Elements* into a structured, digital knowledge base. By parsing the classical Heath edition, we create a system that allows for:
+**geometor.elements** transforms the processed Euclid text into a structured G-Index. While the sister project `geometor.euclid` focuses on semantic discovery and text normalization, **elements** is responsible for:
 
-- **Deep Analysis**: Tracing the logical flow from axioms to complex propositions.
-- **Visualization**: mapping the dependency graph of geometric logic.
-- **Cross-Referencing**: Instant navigation between definitions, postulates, and propositions.
+- **Logic Mapping**: Creating the G-Index (G.1, G.2...) to trace the strict logical genealogy of propositions.
+- **Dependency Analysis**: Modeling the relationships between definitions, postulates, and propositions as a directed acyclic graph (DAG).
+- **Symbolic Integration**: Preparing the foundations for symbolic modeling in `geometor.model`.
 
 Key Features
 ------------
 
-- **Digital Reconstruction**: Normalized text and high-quality diagram extraction.
-- **Dependency Mapping**: Explicit modeling of logical prerequisites.
-- **Sphinx Integration**: Rich, cross-linked documentation generation.
+- **G-Index Generation**: Automating the creation of a cross-referenced index of all elements.
+- **Dependency Graphs**: Visualizing the proof chain for every proposition using Graphviz.
+- **Clean RST Injection**: Generating optimized documentation with clean enunciation blockquotes and integrated diagrams.
+- **Intersphinx Integration**: Seamlessly linking back to the canonical Euclid source.
 
 Usage
 -----
 
+To generate the G-Index:
+
 .. code-block:: bash
 
-    # Transform structured data to RST
-    elements_transform
+    python -m geometor.elements
 
 Resources
 ---------
@@ -40,4 +42,5 @@ Resources
 Related Projects
 ----------------
 
+- `GEOMETOR Euclid <https://github.com/geometor/euclid>`_: Semantic discovery and source text.
 - `GEOMETOR Model <https://github.com/geometor/model>`_: The symbolic engine.

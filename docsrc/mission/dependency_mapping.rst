@@ -1,6 +1,6 @@
 :order: 2
 
-dependency mapping
-==================
+G-Index mapping
+===============
 
-    model the logical dependencies between propositions, postulates, and definitions
+    model logical dependencies as a Directed Acyclic Graph (DAG) to trace the genealogy of truth

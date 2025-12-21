@@ -1,6 +1,6 @@
 :order: 3
 
-diagram extraction
-==================
+symbolic visualization
+======================
 
-    process and clean original diagrams for high-quality digital display
+    generate interactive dependency trees to visualize the proof chain of every proposition

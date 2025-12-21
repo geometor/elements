@@ -1,6 +1,6 @@
 :order: 1
 
-digital reconstruction
-======================
+logical codification
+====================
 
-    parse and normalize text from the Heath edition
+    transform the semantic structure of Euclid's text into a strictly numbered symbolic index
