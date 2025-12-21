@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Elements 2.0 Design &mdash; Project name not set  documentation</title>
+  <title>G-Index Design &mdash; Project name not set  documentation</title>
   <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=ea5fcf70" />
   <link rel="stylesheet" type="text/css" href="_static/css/styles.css?v=38c7a96b" />
   <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
@@ -42,6 +42,12 @@
         <li>
           <a href="modules/index.html"  >modules</a>
         </li>
+        <li>
+          <a href="elements2/index.html"  >Elements 2.0 (G Index)</a>
+        </li>
+        <li>
+          <a href="elements2/orphans.html"  >Orphans</a>
+        </li>
       </ul>
     </nav>
     <div class="motto"></div>
@@ -60,35 +66,46 @@
         </nav>
       </header>
       <div class="content">
-        <section id="elements-2-0-design">
-          <span id="elements2-design"></span><h1>Elements 2.0 Design<a class="headerlink" href="#elements-2-0-design" title="Link to this heading">¶</a></h1>
-          <p>This document outlines the design for the new reStructuredText (RST) structure and the XML parsing process for Euclid’s Elements. The goal is to create a semantically consistent, machine-readable, and easily navigable documentation of the Elements, departing from the traditional numbered hierarchy.</p>
+        <section id="g-index-design">
+          <span id="elements-design"></span><h1>G-Index Design<a class="headerlink" href="#g-index-design" title="Link to this heading">¶</a></h1>
+          <p>The G-Index is a symbolic and logical codification of Euclid’s <em>Elements</em>. It transforms the semantic structure of the modernized text into a strictly numbered dependency graph.</p>
           <ol class="arabic simple">
-          <li><p><strong>Overall Structure and Naming Conventions</strong>
-          *   <strong>File Organization</strong>: Each element (definition, postulate, proposition, common notion) will reside in its own RST file. Files will be organized within subdirectories corresponding to books.
-          *   <strong>Semantic Naming</strong>: File names and RST labels will use semantic phrases instead of traditional numbering (e.g., <cite>book1/equilateral-triangle.rst</cite> instead of <cite>book1/prop1.rst</cite>). This will also form the basis for predictable URLs and cross-references.
-          *   <strong>Title Format</strong>: Each RST file will have a clear, succinct title reflecting the element’s content.</p></li>
-          <li><p><strong>XML Parsing Strategy</strong>
-          *   <strong>Source</strong>: The XML content from <cite>resources/xml/</cite> will be the primary source.
-          *   <strong>Parsing Tool</strong>: A Python script will be developed to parse the XML.
-          *   <strong>Extraction</strong>: The script will extract the element type (definition, postulate, proposition, common notion), the statement, and any associated proof or explanation.
-          *   <strong>Image Integration</strong>: Images from <cite>resources/images/</cite> will be linked to the corresponding RST files. A consistent naming convention for images (e.g., <cite>elem.&lt;book&gt;.&lt;type&gt;.&lt;number&gt;.jpg</cite>) will be assumed or established.</p></li>
-          <li><p><strong>RST Content Generation</strong>
-          *   <strong>Standard Directives</strong>: Use standard Sphinx/RST directives for definitions, propositions, and proofs.
-          *   <strong>Cross-referencing</strong>: Implement a robust cross-referencing system using Sphinx’s <cite>ref</cite> and <cite>term</cite> roles, linking to other elements, definitions, and glossary terms.
-          *   <strong>Glossary Integration</strong>: Key terms will be linked to a central glossary.</p></li>
-          <li><p><strong>Formalization and Dependency Mapping</strong>
-          *   <strong>Metadata</strong>: Each RST file will include metadata (e.g., using Sphinx’s <cite>meta</cite> directive or custom fields) to capture the element type, original book/number, and semantic tags.
-          *   <strong>Dependency Links</strong>: Within the RST content, explicit links or a custom Sphinx directive will be used to denote dependencies on other definitions, postulates, or propositions. This will facilitate the creation of a dependency graph.</p></li>
-          <li><p><strong>Canonical Consistency</strong>
-          *   <strong>URL Structure</strong>: URLs will be derived directly from the semantic file paths (e.g., <cite>/elements2/book1/equilateral-triangle.html</cite>).
-          *   <strong>Labeling</strong>: Consistent RST labels will ensure reliable cross-referencing throughout the documentation.</p></li>
-          <li><p><strong>Development Workflow</strong>
-          *   <strong>Iterative Parsing</strong>: Develop the parsing script iteratively, starting with Book 1 and gradually extending to other books.
-          *   <strong>Testing</strong>: Implement unit tests for the parsing script to ensure correct XML extraction and RST generation.
-          *   <strong>Build Verification</strong>: Regularly build the Sphinx documentation to verify the generated RST content and resolve any rendering issues.</p></li>
+          <li><p>Unlike the traditional book-based numbering (I.1, II.5), the <strong>G-Index</strong> uses a flat, incremental numbering system (<strong>G.1</strong>, <strong>G.2</strong>…) reflecting the order of introduction and the dependency chain.</p>
+          <ul class="simple">
+          <li><p><strong>G-Nodes</strong>: Each entry (definition, postulate, common notion, or proposition) is treated as a node in a Directed Acyclic Graph (DAG).</p></li>
+          <li><p><strong>Orphans</strong>: Elements that are defined but not yet used as dependencies are tracked as orphans to ensure complete logical coverage.</p></li>
+          </ul>
+          </li>
+          <li><p><cite>geometor.elements</cite> sources its data from the sister project <cite>geometor.euclid</cite>.</p>
+          <ul class="simple">
+          <li><p><strong>RST Parsing</strong>: Instead of raw XML, the system parses the processed reStructuredText files from <cite>euclid/docsrc/heath</cite>.</p></li>
+          <li><p><strong>Metadata Extraction</strong>: Dependency links are extracted from <cite>:dependencies:</cite> metadata fields in the source files.</p></li>
+          <li><p><strong>Asset Management</strong>: Diagrams and images are sourced from the corresponding Euclid folders and renamed to match the G-Index Identity (e.g., <cite>G.1.png</cite>).</p></li>
+          </ul>
+          </li>
+          <li><p>The generation process follows these steps:</p>
+          <ol class="arabic simple">
+          <li><p><strong>Graph Construction</strong>: Use <cite>networkx</cite> to build a dependency graph by scanning all source files in the Euclid project.</p></li>
+          <li><p><strong>Topological Sort</strong>: (Optional) Analysis of the graph to understand the “Genealogy of Truth.”</p></li>
+          <li><p><strong>Templated RST Output</strong>: Every G-Node is rendered using a standard template that includes:
+          *   <strong>Heath ID</strong>: Link back to the canonical Euclid entry.
+          *   <strong>Enunciation</strong>: Indented blockquote for the main statement.
+          *   <strong>Dependency Graph</strong>: A Graphviz visualization of the node’s relatives.
+          *   <strong>Required For</strong>: A list of all future nodes that depend on this truth.</p></li>
           </ol>
-          <p>This design aims to create a flexible and powerful framework for exploring Euclid’s Elements, enabling deeper analysis of its logical structure and dependencies.</p>
+          </li>
+          <li><p>The ultimate goal of the G-Index is to serve as a bridge to formal symbolic logic:</p>
+          <ul class="simple">
+          <li><p><strong>Symbolic Tagging</strong>: Mapping textual elements (e.g., “equilateral triangle”) to symbolic types in <cite>geometor.model</cite>.</p></li>
+          <li><p><strong>Construction Steps</strong>: Future iterations will include the symbolic construction steps required to generate the diagrams programmatically.</p></li>
+          </ul>
+          </li>
+          <li><ul class="simple">
+          <li><p><cite>graph.py</cite>: Handles the crawling of the Euclid source tree and the extraction of metadata/content using regular expressions.</p></li>
+          <li><p><cite>g_index.py</cite>: Manages the generation of the flat directory structure in <cite>docsrc/elements2/</cite> and the rendering of the templated RST.</p></li>
+          </ul>
+          </li>
+          </ol>
           </section>
 
       </div>
@@ -113,6 +130,15 @@
           <input type="hidden" name="area" value="default" />
         </form>
       </div>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="types/cn.html">cn</a></li>
+        <li><a href="types/def.html">def</a></li>
+        <li><a href="types/post.html">post</a></li>
+        <li><a href="types/prop.html">prop</a></li>
+      </ul>
     </aside>
   </div>
   <footer>

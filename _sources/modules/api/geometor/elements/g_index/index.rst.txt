@@ -5,7 +5,11 @@ geometor.elements.g_index
 
 .. autoapi-nested-parse::
 
-   Generate the G Index.
+   Generate the G-Index for Euclid's Elements.
+
+   This module processes the semantic structure of the modernized text
+   (sourced from the Heath edition in the sibling `geometor-euclid` project)
+   to create a strictly numbered dependency graph and interlinked RST structure.
 
 
 

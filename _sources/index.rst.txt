@@ -1,7 +1,7 @@
 GEOMETOR • elements
 ===================
 
-A digital reconstruction of Euclid's Elements for dependency mapping and analysis.
+Symbolic dependency mapping and G-Index generation for Euclid's Elements.
 
 .. include:: intro.rst
 

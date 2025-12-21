@@ -42,6 +42,12 @@
         <li>
           <a href="modules/index.html"  >modules</a>
         </li>
+        <li>
+          <a href="elements2/index.html"  >Elements 2.0 (G Index)</a>
+        </li>
+        <li>
+          <a href="elements2/orphans.html"  >Orphans</a>
+        </li>
       </ul>
     </nav>
     <div class="motto"></div>
@@ -54,7 +60,7 @@
       </nav>
         <nav class="context">
           <div class="prev">
-             <a href="todos/index.html" title="todos" >Prev</a>
+             <a href="todos/codify_book_i.html" title="Codify Book I propositions" >Prev</a>
           </div>
           <div class="next">
             <a href="modules/api/index.html" title="API Reference" >Next</a>
@@ -65,7 +71,26 @@
         <section id="changelog">
           <h1>changelog<a class="headerlink" href="#changelog" title="Link to this heading">¶</a></h1>
           <section id="id1">
-          <h2>0.2.1<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+          <h2>0.2.2<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+          <p><em>2025-12-20</em></p>
+          <p><strong>added</strong></p>
+          <ul class="simple">
+          <li><p>Implemented template-based RST generation for G-nodes.</p></li>
+          <li><p>Added <cite>:excerpt:</cite> metadata to G-nodes for cleaner documentation snippets.</p></li>
+          <li><p>Introduced hard links for Heath IDs to ensure stable intersphinx references.</p></li>
+          <li><p>Added Graphviz dependency visualizations to every G-node.</p></li>
+          </ul>
+          <p><strong>changed</strong></p>
+          <ul class="simple">
+          <li><p>Separated <cite>geometor.elements</cite> from <cite>geometor.euclid</cite> source tree.</p></li>
+          <li><p>Refactored <cite>graph.py</cite> to parse RST directly from <cite>geometor.euclid</cite>.</p></li>
+          <li><p>Overhauled project documentation (README, GEMINI.md, Design, Mission).</p></li>
+          <li><p>Advanced docstrings to Google style for the core G-Index pipeline.</p></li>
+          <li><p>Limited initial G-Index generation to Book I for verification.</p></li>
+          </ul>
+          </section>
+          <section id="id2">
+          <h2>0.2.1<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
           <p><em>2025-12-15</em></p>
           <p><strong>changed</strong></p>
           <ul class="simple">
@@ -75,8 +100,8 @@
           <li><p>Removed legacy documentation in <cite>docsrc/elements2</cite>.</p></li>
           </ul>
           </section>
-          <section id="id2">
-          <h2>0.2.0<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+          <section id="id3">
+          <h2>0.2.0<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
           <p><em>2025-12-12</em></p>
           <p><strong>changed</strong></p>
           <ul class="simple">
@@ -85,8 +110,8 @@
           <li><p>Updated <cite>GEMINI.md</cite> and <cite>pyproject.toml</cite>.</p></li>
           </ul>
           </section>
-          <section id="id3">
-          <h2>0.1.4<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+          <section id="id4">
+          <h2>0.1.4<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
           <p><em>2025-12-09</em></p>
           <p><strong>changed</strong></p>
           <ul class="simple">
@@ -94,15 +119,15 @@
           <li><p>Updated <cite>src/geometor/elements/transform.py</cite> to generate <cite>.. picture::</cite> directives.</p></li>
           </ul>
           </section>
-          <section id="id4">
-          <h2>0.1.3<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+          <section id="id5">
+          <h2>0.1.3<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
           <ul class="simple">
           <li><p>Refined docstrings and type hinting.</p></li>
           <li><p>Fixed <cite>from __future__ import annotations</cite> placement.</p></li>
           </ul>
           </section>
-          <section id="id5">
-          <h2>0.1.1<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
+          <section id="id6">
+          <h2>0.1.1<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h2>
           <p><em>2025-11-23</em></p>
           <p><strong>changed</strong></p>
           <ul class="simple">
@@ -114,8 +139,8 @@
           <li><p>Removed the deprecated <cite>docsrc/elements2</cite> directory.</p></li>
           </ul>
           </section>
-          <section id="id6">
-          <h2>0.1.0<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h2>
+          <section id="id7">
+          <h2>0.1.0<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h2>
           <p><em>2025-11-23</em></p>
           <p><strong>added</strong></p>
           <ul class="simple">
@@ -128,8 +153,8 @@
           <li><p>Removed temporary bleed test scripts and images from the project root.</p></li>
           </ul>
           </section>
-          <section id="id7">
-          <h2>0.0.20<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h2>
+          <section id="id8">
+          <h2>0.0.20<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h2>
           <p><em>2025-11-21</em></p>
           <p><strong>changed</strong></p>
           <ul class="simple">
@@ -138,8 +163,8 @@
           <li><p>Added a warning and safeguard return statement to <cite>scan_propositions.py</cite> and <cite>cropping.py</cite> to prevent accidental overwrites of manual work.</p></li>
           </ul>
           </section>
-          <section id="id8">
-          <h2>0.0.19<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h2>
+          <section id="id9">
+          <h2>0.0.19<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h2>
           <p><em>2025-11-21</em></p>
           <p><strong>added</strong></p>
           <ul class="simple">
@@ -154,8 +179,8 @@
           <li><p>Refined regex for end-of-proposition detection to handle variations in spacing (e.g., “Q. E . D.”).</p></li>
           </ul>
           </section>
-          <section id="id9">
-          <h2>0.0.18<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h2>
+          <section id="id10">
+          <h2>0.0.18<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h2>
           <p><em>2025-11-21</em></p>
           <p><strong>changed</strong></p>
           <ul class="simple">
@@ -165,8 +190,8 @@
           <li><p>Updated <cite>stitch_propositions.py</cite> to generate stitched images with body-text cropping.</p></li>
           </ul>
           </section>
-          <section id="id10">
-          <h2>0.0.17<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h2>
+          <section id="id11">
+          <h2>0.0.17<a class="headerlink" href="#id11" title="Link to this heading">¶</a></h2>
           <p><em>2025-11-20</em></p>
           <p><strong>added</strong></p>
           <ul class="simple">
@@ -186,8 +211,8 @@
           <li><p>Corrected volume identification logic in analysis to prevent misattribution of propositions.</p></li>
           </ul>
           </section>
-          <section id="id11">
-          <h2>0.0.16<a class="headerlink" href="#id11" title="Link to this heading">¶</a></h2>
+          <section id="id12">
+          <h2>0.0.16<a class="headerlink" href="#id12" title="Link to this heading">¶</a></h2>
           <p><em>2025-11-18</em></p>
           <p><strong>added</strong></p>
           <ul class="simple">
@@ -197,8 +222,8 @@
           <li><p>Added functionality to extract diagram graphics from stitched proposition images.</p></li>
           </ul>
           </section>
-          <section id="id12">
-          <h2>0.0.15<a class="headerlink" href="#id12" title="Link to this heading">¶</a></h2>
+          <section id="id13">
+          <h2>0.0.15<a class="headerlink" href="#id13" title="Link to this heading">¶</a></h2>
           <p><em>2025-11-18</em></p>
           <p><strong>added</strong></p>
           <ul class="simple">
@@ -207,8 +232,8 @@
           <li><p>Improved formatting for subtitles and introductions in book index pages.</p></li>
           </ul>
           </section>
-          <section id="id13">
-          <h2>0.0.14<a class="headerlink" href="#id13" title="Link to this heading">¶</a></h2>
+          <section id="id14">
+          <h2>0.0.14<a class="headerlink" href="#id14" title="Link to this heading">¶</a></h2>
           <p><em>2025-11-17</em></p>
           <p><strong>added</strong></p>
           <ul class="simple">
@@ -217,8 +242,8 @@
           <li><p>Set graphviz output to SVG for better rendering and interactivity.</p></li>
           </ul>
           </section>
-          <section id="id14">
-          <h2>0.0.13<a class="headerlink" href="#id14" title="Link to this heading">¶</a></h2>
+          <section id="id15">
+          <h2>0.0.13<a class="headerlink" href="#id15" title="Link to this heading">¶</a></h2>
           <p><em>2025-11-17</em></p>
           <p><strong>added</strong></p>
           <ul class="simple">
@@ -226,8 +251,8 @@
           <li><p>Moved the collection titles out of the <cite>collection</cite> directive and into the main document flow as section headings.</p></li>
           </ul>
           </section>
-          <section id="id15">
-          <h2>0.0.12<a class="headerlink" href="#id15" title="Link to this heading">¶</a></h2>
+          <section id="id16">
+          <h2>0.0.12<a class="headerlink" href="#id16" title="Link to this heading">¶</a></h2>
           <p><em>2025-11-16</em></p>
           <p><strong>added</strong></p>
           <ul class="simple">
@@ -236,8 +261,8 @@
           <li><p>Implemented note directives to render Heath’s footnotes from the XML source.</p></li>
           </ul>
           </section>
-          <section id="id16">
-          <h2>0.0.11<a class="headerlink" href="#id16" title="Link to this heading">¶</a></h2>
+          <section id="id17">
+          <h2>0.0.11<a class="headerlink" href="#id17" title="Link to this heading">¶</a></h2>
           <p><em>2025-11-16</em></p>
           <p><strong>changed</strong></p>
           <ul class="simple">
@@ -245,24 +270,24 @@
           <li><p>Corrected misplaced proposition reference in <cite>elem.1.22</cite>.</p></li>
           </ul>
           </section>
-          <section id="id17">
-          <h2>0.0.10<a class="headerlink" href="#id17" title="Link to this heading">¶</a></h2>
+          <section id="id18">
+          <h2>0.0.10<a class="headerlink" href="#id18" title="Link to this heading">¶</a></h2>
           <p><em>2025-11-16</em></p>
           <p><strong>fixed</strong></p>
           <ul class="simple">
           <li><p>Corrected porism handling in the RST generation script to prevent duplicate content and ensure canonical IDs are used for headings.</p></li>
           </ul>
           </section>
-          <section id="id18">
-          <h2>0.0.9<a class="headerlink" href="#id18" title="Link to this heading">¶</a></h2>
+          <section id="id19">
+          <h2>0.0.9<a class="headerlink" href="#id19" title="Link to this heading">¶</a></h2>
           <p><em>2025-11-16</em></p>
           <p><strong>added</strong></p>
           <ul class="simple">
           <li><p>Added taxonomy fields to the generated RST files, including <cite>:type:</cite>, <cite>:categories:</cite>, and <cite>:tags:</cite>.</p></li>
           </ul>
           </section>
-          <section id="id19">
-          <h2>0.0.8<a class="headerlink" href="#id19" title="Link to this heading">¶</a></h2>
+          <section id="id20">
+          <h2>0.0.8<a class="headerlink" href="#id20" title="Link to this heading">¶</a></h2>
           <p><em>2025-11-16</em></p>
           <p><strong>changed</strong></p>
           <ul class="simple">
@@ -274,8 +299,8 @@
           <li><p>Removed placeholder figures from the generated RST files.</p></li>
           </ul>
           </section>
-          <section id="id20">
-          <h2>0.0.7<a class="headerlink" href="#id20" title="Link to this heading">¶</a></h2>
+          <section id="id21">
+          <h2>0.0.7<a class="headerlink" href="#id21" title="Link to this heading">¶</a></h2>
           <p><em>2025-11-15</em></p>
           <p><strong>added</strong></p>
           <ul class="simple">
@@ -286,8 +311,8 @@
           <li><p>Removed the “Proof.” heading from the generated RST files for a cleaner output.</p></li>
           </ul>
           </section>
-          <section id="id21">
-          <h2>0.0.6<a class="headerlink" href="#id21" title="Link to this heading">¶</a></h2>
+          <section id="id22">
+          <h2>0.0.6<a class="headerlink" href="#id22" title="Link to this heading">¶</a></h2>
           <p><em>2025-11-15</em></p>
           <p><strong>added</strong></p>
           <ul class="simple">
@@ -303,8 +328,8 @@
           <li><p>Refactored inline XML to RST conversion logic for better handling of nested tags and enunciation-specific formatting.</p></li>
           </ul>
           </section>
-          <section id="id22">
-          <h2>0.0.5<a class="headerlink" href="#id22" title="Link to this heading">¶</a></h2>
+          <section id="id23">
+          <h2>0.0.5<a class="headerlink" href="#id23" title="Link to this heading">¶</a></h2>
           <p><em>2025-11-15</em></p>
           <p><strong>fixed</strong></p>
           <ul class="simple">
@@ -317,8 +342,8 @@
           <li><p>Added Book II to the RST generation test suite.</p></li>
           </ul>
           </section>
-          <section id="id23">
-          <h2>0.0.4<a class="headerlink" href="#id23" title="Link to this heading">¶</a></h2>
+          <section id="id24">
+          <h2>0.0.4<a class="headerlink" href="#id24" title="Link to this heading">¶</a></h2>
           <p><em>2025-11-15</em></p>
           <p><strong>added</strong></p>
           <ul class="simple">
@@ -327,8 +352,8 @@
           </ul>
           <p><strong>changed</strong></p>
           </section>
-          <section id="id24">
-          <h2>0.0.3<a class="headerlink" href="#id24" title="Link to this heading">¶</a></h2>
+          <section id="id25">
+          <h2>0.0.3<a class="headerlink" href="#id25" title="Link to this heading">¶</a></h2>
           <p><em>2025-11-11</em></p>
           <p><strong>added</strong></p>
           <ul class="simple">
@@ -349,7 +374,7 @@
         </div>
         <nav class="context">
           <div class="prev">
-             <a href="todos/index.html" title="todos" >Prev</a>
+             <a href="todos/codify_book_i.html" title="Codify Book I propositions" >Prev</a>
           </div>
           <div class="next">
             <a href="modules/api/index.html" title="API Reference" >Next</a>
@@ -368,6 +393,15 @@
           <input type="hidden" name="area" value="default" />
         </form>
       </div>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="types/cn.html">cn</a></li>
+        <li><a href="types/def.html">def</a></li>
+        <li><a href="types/post.html">post</a></li>
+        <li><a href="types/prop.html">prop</a></li>
+      </ul>
     </aside>
   </div>
   <footer>
