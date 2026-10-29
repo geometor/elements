@@ -24,48 +24,56 @@ G.230
 
    Any prime number is prime to any number which it does not measure.
 
-Let :g:`A <0336.g1:A>` be a prime number, and let it not measure :g:`B <0336.g1:B>`;
-
-I say that :g:`B <0336.g1:B>`, :g:`A <0336.g1:A>` are prime to one another.
-
-.. picture:: 0336.g1.svg
+.. picture:: g1.svg
    :alt: Book VII, Proposition 29
 
-.. subclause::
+.. step:: given
 
-   For, if :g:`B <0336.g1:B>`, :g:`A <0336.g1:A>` are not prime to one another, some number will measure them.
+   :g:`A <g1:A>` be a prime number
 
-Let :g:`C <0336.g1:C>` measure them.
+.. step:: assert
 
-.. subclause::
+   Let it not measure :g:`B <g1:B>`
 
-   Since :g:`C <0336.g1:C>` measures :g:`B <0336.g1:B>`, and :g:`A <0336.g1:A>` does not measure :g:`B <0336.g1:B>`,
+.. step:: assert
 
-.. assertion::
+   If :g:`B <g1:B>`, :g:`A <g1:A>` are not prime to one another, some number will measure them.
 
-   therefore :g:`C <0336.g1:C>` is not the same with :g:`A <0336.g1:A>`.
+.. step:: assert
 
-.. subclause::
+   Let :g:`C <g1:C>` measure them.
 
-   Now, since :g:`C <0336.g1:C>` measures :g:`B <0336.g1:B>`, :g:`A <0336.g1:A>`,
+.. step:: assert
 
-.. assertion::
+   Since :g:`C <g1:C>` measures :g:`B <g1:B>`, and :g:`A <g1:A>` does not measure :g:`B <g1:B>`,
 
-   therefore it also measures :g:`A <0336.g1:A>` which is prime, though it is not the same with it : which is impossible.
+.. step:: assert
 
-.. assertion::
+   Therefore :g:`C <g1:C>` is not the same with :g:`A <g1:A>`.
 
-   Therefore no number will measure :g:`B <0336.g1:B>`, :g:`A <0336.g1:A>`.
+.. step:: assert
 
-.. assertion::
+   Since :g:`C <g1:C>` measures :g:`B <g1:B>`, :g:`A <g1:A>`,
 
-   Therefore :g:`A <0336.g1:A>`, :g:`B <0336.g1:B>` are prime to one another.
+.. step:: assert
 
-.. qed::
+   Therefore it also measures :g:`A <g1:A>` which is prime, though it is not the same with it : which is impossible.
 
-   :just:`Q. E. D.`
+.. step:: assert
+
+   Therefore no number will measure :g:`B <g1:B>`, :g:`A <g1:A>`.
+
+.. step:: conclude
+
+   Therefore :g:`A <g1:A>`, :g:`B <g1:B>` are prime to one another.
 
 Required for
 ------------
 
 :ref:`G.231 <G.231>`, :ref:`G.283 <G.283>`, :ref:`G.284 <G.284>`, :ref:`G.285 <G.285>`, :ref:`G.306 <G.306>`, :ref:`G.312 <G.312>`
+
+.. toctree::
+   :hidden:
+
+   code
+   heath

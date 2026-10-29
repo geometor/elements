@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=5aff7b7d" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=156d9f89" />
   <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -74,6 +74,13 @@
             <a class="book-nav-btn" href="../G.292/index.html" title="G.292">&larr; <span class="nav-label">Prev</span></a>
           </div>
           <div class="book-nav-center">
+            <nav class="book-tracks-nav" aria-label="Document Tracks">
+              <strong class="book-track-item is-active" aria-current="page">Pseudocode</strong>
+              <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="code.html">Code</a>
+              <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="heath.html">Heath</a>
+            </nav>
           </div>
           <div class="book-nav-next">
             <a class="book-nav-btn" href="../G.294/index.html" title="G.294"><span class="nav-label">Next</span> &rarr;</a>
@@ -85,10 +92,8 @@
         <span id="g-293"></span><span id="id1"></span><h1>G.293<a class="headerlink" href="#ix-21" title="Link to this heading">¶</a></h1>
         <p class="rubric"><a class="reference external" href="https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/21/" title="IX.21: If as many even numbers as we please be added together, the whole is even.">IX.21</a></p>
         <div class="enunciation">If as many even numbers as we please be added together, the whole is even.</div>
-        <p>For let as many even numbers as we please, <span class="geom-ref" data-ref="0419.g1:/ A B /" title="/ A B /">/ A B /</span>, <span class="geom-ref" data-ref="0419.g1:/ B C /" title="/ B C /">/ B C /</span>, <span class="geom-ref" data-ref="0419.g1:/ C D /" title="/ C D /">/ C D /</span>, <span class="geom-ref" data-ref="0419.g1:/ D E /" title="/ D E /">/ D E /</span>, be added together ;</p>
-        <p>I say that the whole <span class="geom-ref" data-ref="0419.g1:/ A E /" title="/ A E /">/ A E /</span> is even.</p>
         <figure class="photon-picture photon-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -6 311 49" width="311" height="49" class="euclid-graphic" data-graphic-id="0419.g1" data-folio="0419" data-graphic="g1" data-proposition="IX.21">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -6 311 49" width="311" height="49" class="euclid-graphic" data-graphic-id="g1" data-graphic="g1" data-proposition="IX.21">
           <defs>
             <marker id="geom-tick-1" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
               <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
@@ -157,27 +162,29 @@
           </g>
         </svg>
         </figure>
-        <div class="sub-clause">For, since each of the numbers <span class="geom-ref" data-ref="0419.g1:/ A B /" title="/ A B /">/ A B /</span>, <span class="geom-ref" data-ref="0419.g1:/ B C /" title="/ B C /">/ B C /</span>, <span class="geom-ref" data-ref="0419.g1:/ C D /" title="/ C D /">/ C D /</span>, <span class="geom-ref" data-ref="0419.g1:/ D E /" title="/ D E /">/ D E /</span> is even, it has a half part ; <a class="justification" href="../G.292/index.html#g-292" data-ref-target="G.292" title="G.292: An even number is that which is divisible into two equal parts.">[G.292]</a></div>
-        <div class="assertion">so that the whole <span class="geom-ref" data-ref="0419.g1:/ A E /" title="/ A E /">/ A E /</span> also has a half part.</div>
-        <div class="sub-clause">But an even number is that which is divisible into two equal parts ; <a class="justification" href="../G.292/index.html#g-292" data-ref-target="G.292" title="G.292: An even number is that which is divisible into two equal parts.">[G.292]</a></div>
-        <div class="assertion">therefore <span class="geom-ref" data-ref="0419.g1:/ A E /" title="/ A E /">/ A E /</span> is even.</div>
-        <div class="qed"><span class="justification">Q. E. D.</span></div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> For let as many even numbers as we please, <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span>, <span class="geom-ref" data-ref="g1:/ B C /" title="/ B C /">/ B C /</span>, <span class="geom-ref" data-ref="g1:/ C D /" title="/ C D /">/ C D /</span>, <span class="geom-ref" data-ref="g1:/ D E /" title="/ D E /">/ D E /</span>, be added together</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><a class="justification" href="../G.292/index.html#g-292" data-ref-target="G.292" title="G.292: Aneven number is that which is divisible into two equal parts.">[G.292]</a><span class="geom-step-badge geom-badge-assert">assert</span> Since each of the numbers <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span>, <span class="geom-ref" data-ref="g1:/ B C /" title="/ B C /">/ B C /</span>, <span class="geom-ref" data-ref="g1:/ C D /" title="/ C D /">/ C D /</span>, <span class="geom-ref" data-ref="g1:/ D E /" title="/ D E /">/ D E /</span> is even, it has a half part .</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> So that the whole <span class="geom-ref" data-ref="g1:/ A E /" title="/ A E /">/ A E /</span> also has a half part.</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><a class="justification" href="../G.292/index.html#g-292" data-ref-target="G.292" title="G.292: Aneven number is that which is divisible into two equal parts.">[G.292]</a><span class="geom-step-badge geom-badge-assert">assert</span> An even number is that which is divisible into two equal parts .</div>
+        <div class="geom-step geom-step-conclude" data-step-kind="conclude"><span class="geom-step-badge geom-badge-conclude">conclude</span> Therefore <span class="geom-ref" data-ref="g1:/ A E /" title="/ A E /">/ A E /</span> is even.</div>
         <section class="level-2" id="dependency-graph">
         <h2>Dependency Graph<a class="headerlink" href="#dependency-graph" title="Link to this heading">¶</a></h2>
-        <div class="graphviz"><object data="../../_images/graphviz-f5f024de800a4d88df98574d9b96b4a7091c9cb3.svg" type="image/svg+xml" class="graphviz">
+        <div class="graphviz"><object data="../../_images/graphviz-8afb1d1bb820056b922b1d95f9e989efa8dc9f0f.svg" type="image/svg+xml" class="graphviz">
         <p class="warning">digraph {
           bgcolor=&quot;transparent&quot;;
           node [shape=box, style=&quot;rounded,filled&quot;, fontname=&quot;Helvetica&quot;, fontsize=11, color=&quot;#d6d3cd&quot;, fontcolor=&quot;#ffffff&quot;];
           edge [color=&quot;#8c857b&quot;, fontcolor=&quot;#8c857b&quot;, arrowsize=0.75];
           rankdir=&quot;TB&quot;;
-          &quot;G.292&quot; [label=&quot;G.292&quot;, tooltip=&quot;G.292 (VII.def.6): An even number is that which is divisible into two equal parts.&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.292/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.292&quot; [label=&quot;G.292&quot;, tooltip=&quot;G.292 (VII.def.6): Aneven number is that which is divisible into two equal parts.&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.292/index.html&quot;, target=&quot;_top&quot;];
           &quot;G.293&quot; [label=&quot;G.293&quot;, tooltip=&quot;G.293 (IX.21): If as many even numbers as we please be added together, the whole is even.&quot;, penwidth=2.5, color=&quot;#e8b85a&quot;, fillcolor=&quot;#4a453b&quot;, URL=&quot;index.html&quot;, target=&quot;_top&quot;];
           &quot;G.293&quot; -&gt; &quot;G.292&quot;;
         }</p></object></div>
         </section>
         <section class="level-2" id="required-for">
         <h2>Required for<a class="headerlink" href="#required-for" title="Link to this heading">¶</a></h2>
-        <p><a class="reference internal" href="../G.295/index.html#g-295" title="G.295: If as many odd numbers as we please be added together, and their multitude be even, the whole will be even."><span class="std std-ref">G.295</span></a>, <a class="reference internal" href="../G.296/index.html#g-296" title="G.296: If as many odd numbers as we please be added together, and their multitude be odd, the whole will also be odd."><span class="std std-ref">G.296</span></a>, <a class="reference internal" href="../G.301/index.html#g-301" title="G.301: If an odd number by multiplying an even number make some number, the product will be even."><span class="std std-ref">G.301</span></a>, <a class="reference internal" href="../G.302/index.html#g-302" title="G.302: If an odd number by multiplying an odd number make some number, the product will be odd."><span class="std std-ref">G.302</span></a>, <a class="reference internal" href="../G.303/index.html#g-303" title="G.303: If an odd number measure an even number, it will also measure the half of it."><span class="std std-ref">G.303</span></a>, <a class="reference internal" href="../G.304/index.html#g-304" title="G.304: If an odd number be prime to any number, it will also be prime to the double of it."><span class="std std-ref">G.304</span></a></p>
+        <p><a class="reference internal" href="../G.295/index.html#g-295" title="G.295: If as many odd numbers as we please be added together, and their multitude be even, the whole is even."><span class="std std-ref">G.295</span></a>, <a class="reference internal" href="../G.296/index.html#g-296" title="G.296: If as many odd numbers as we please be added together, and their multitude be odd, the whole is odd."><span class="std std-ref">G.296</span></a>, <a class="reference internal" href="../G.301/index.html#g-301" title="G.301: If an odd number by multiplying an even number make some number, the product is even."><span class="std std-ref">G.301</span></a>, <a class="reference internal" href="../G.302/index.html#g-302" title="G.302: If an odd number by multiplying an odd number make some number, the product is odd."><span class="std std-ref">G.302</span></a>, <a class="reference internal" href="../G.303/index.html#g-303" title="G.303: If an odd number measure an even number, it will also measure the half of it."><span class="std std-ref">G.303</span></a>, <a class="reference internal" href="../G.304/index.html#g-304" title="G.304: If an odd number be prime to any number, it is prime to the double of it."><span class="std std-ref">G.304</span></a></p>
+        <div class="toctree-wrapper compound">
+        </div>
         </section>
         </section>
 
@@ -439,7 +446,7 @@
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
-  <script src="../../_static/js/geometor_interactive.js?v=832534ec"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=421e4467"></script>
   <script src="../../_static/js/search_highlight.js"></script>
 
 </body>

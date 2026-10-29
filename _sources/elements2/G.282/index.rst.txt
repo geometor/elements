@@ -27,3 +27,8 @@ Required for
 ------------
 
 :ref:`G.283 <G.283>`, :ref:`G.284 <G.284>`, :ref:`G.306 <G.306>`, :ref:`G.312 <G.312>`
+
+.. toctree::
+   :hidden:
+
+   heath

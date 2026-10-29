@@ -24,28 +24,24 @@ G.233
 
    Any number either is prime or is measured by some prime number.
 
-Let :g:`A <0339.g1:A>` be a number;
-
-I say that :g:`A <0339.g1:A>` either is prime or is measured by some prime number.
-
-.. subclause::
-
-   If now :g:`A <0339.g1:A>` is prime, that which was enjoined will have been done.
-
-.. picture:: 0339.g1.svg
+.. picture:: g1.svg
    :alt: Proposition 32 diagram
 
-.. subclause:: [G.232] <G.232>
+.. step:: given
 
-   But if it is composite, some prime number will measure it.
+   :g:`A <g1:A>` be a number
 
-.. assertion::
+.. step:: assert
+
+   If now :g:`A <g1:A>` is prime, that which was enjoined will have been done.
+
+.. step:: assert [G.232] <G.232>
+
+   If it is composite, some prime number will measure it.
+
+.. step:: conclude
 
    Therefore any number either is prime or is measured by some prime number.
-
-.. qed::
-
-   :just:`Q. E. D.`
 
 Dependency Graph
 ----------------
@@ -61,3 +57,9 @@ Dependency Graph
      "G.233" [label="G.233", tooltip="G.233 (VII.32): Any number either is prime or is measured by some prime number.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.233" -> "G.232";
    }
+
+.. toctree::
+   :hidden:
+
+   code
+   heath

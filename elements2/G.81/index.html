@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=5aff7b7d" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=156d9f89" />
   <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -74,6 +74,13 @@
             <a class="book-nav-btn" href="../G.80/index.html" title="G.80">&larr; <span class="nav-label">Prev</span></a>
           </div>
           <div class="book-nav-center">
+            <nav class="book-tracks-nav" aria-label="Document Tracks">
+              <strong class="book-track-item is-active" aria-current="page">Pseudocode</strong>
+              <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="code.html">Code</a>
+              <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="heath.html">Heath</a>
+            </nav>
           </div>
           <div class="book-nav-next">
             <a class="book-nav-btn" href="../G.82/index.html" title="G.82"><span class="nav-label">Next</span> &rarr;</a>
@@ -85,10 +92,8 @@
         <span id="g-81"></span><span id="id1"></span><h1>G.81<a class="headerlink" href="#iii-6" title="Link to this heading">¶</a></h1>
         <p class="rubric"><a class="reference external" href="https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/06/" title="III.6: If two circles touch one another, they will not have the same centre.">III.6</a></p>
         <div class="enunciation">If two circles touch one another, they will not have the same centre.</div>
-        <p>For let the two circles <span class="geom-ref" data-ref="0019.g1:( A B C )" title="( A B C )">( A B C )</span>, <span class="geom-ref" data-ref="0019.g1:( C D E )" title="( C D E )">( C D E )</span> touch one another at the point <span class="geom-ref" data-ref="0019.g1:C" title="C">C</span>;</p>
-        <p>I say that they will not have the same centre.</p>
         <figure class="photon-picture photon-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="4 4 211 214" width="211" height="214" class="euclid-graphic" data-graphic-id="0019.g1" data-folio="0019" data-graphic="g1" data-proposition="III.6">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="4 4 211 214" width="211" height="214" class="euclid-graphic" data-graphic-id="g1" data-graphic="g1" data-proposition="III.6">
           <defs>
             <marker id="geom-tick-1" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
               <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
@@ -141,14 +146,17 @@
           </g>
         </svg>
         </figure>
-        <p>For, if possible, let it be <span class="geom-ref" data-ref="0019.g1:F" title="F">F</span>; let <span class="geom-ref" data-ref="0019.g1:/ F C /" title="/ F C /">/ F C /</span> be joined, and let <span class="geom-ref" data-ref="0019.g1:/ F E B /" title="/ F E B /">/ F E B /</span> be drawn through at random.</p>
-        <p>Then, since the point <span class="geom-ref" data-ref="0019.g1:F" title="F">F</span> is the centre of the circle <span class="geom-ref" data-ref="0019.g1:( A B C )" title="( A B C )">( A B C )</span>,</p>
-        <div class="assertion"><span class="geom-ref" data-ref="0019.g1:/ F C /" title="/ F C /">/ F C /</span> is <span class="geom-eq-ref" data-assert-equal="0019.g1:/ F C / = 0019.g1:/ F B /" title="/ F C / = / F B /">equal</span> to <span class="geom-ref" data-ref="0019.g1:/ F B /" title="/ F B /">/ F B /</span>.</div>
-        <p>Again, since the point <span class="geom-ref" data-ref="0019.g1:F" title="F">F</span> is the centre of the circle <span class="geom-ref" data-ref="0019.g1:( C D E )" title="( C D E )">( C D E )</span>,</p>
-        <div class="assertion"><span class="geom-ref" data-ref="0019.g1:/ F C /" title="/ F C /">/ F C /</span> is <span class="geom-eq-ref" data-assert-equal="0019.g1:/ F C / = 0019.g1:/ F E /" title="/ F C / = / F E /">equal</span> to <span class="geom-ref" data-ref="0019.g1:/ F E /" title="/ F E /">/ F E /</span>.</div>
-        <p>But <span class="geom-ref" data-ref="0019.g1:/ F C /" title="/ F C /">/ F C /</span> was proved <span class="geom-eq-ref" data-assert-equal="0019.g1:/ F C / = 0019.g1:/ F B /" title="/ F C / = / F B /">equal</span> to <span class="geom-ref" data-ref="0019.g1:/ F B /" title="/ F B /">/ F B /</span>; therefore <span class="geom-ref" data-ref="0019.g1:/ F E /" title="/ F E /">/ F E /</span> is also <span class="geom-eq-ref" data-assert-equal="0019.g1:/ F E / = 0019.g1:/ F B /" title="/ F E / = / F B /">equal</span> to <span class="geom-ref" data-ref="0019.g1:/ F B /" title="/ F B /">/ F B /</span>, the less to the greater: which is impossible.</p>
-        <div class="assertion">Therefore <span class="geom-ref" data-ref="0019.g1:F" title="F">F</span> is not the centre of the circles <span class="geom-ref" data-ref="0019.g1:( A B C )" title="( A B C )">( A B C )</span>, <span class="geom-ref" data-ref="0019.g1:( C D E )" title="( C D E )">( C D E )</span>.</div>
-        <div class="qed">Therefore etc. <span class="justification">Q. E. D.</span></div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> For let the two circles <span class="geom-ref" data-ref="g1:( A B C )" title="( A B C )">( A B C )</span>, <span class="geom-ref" data-ref="g1:( C D E )" title="( C D E )">( C D E )</span> touch one another at <span class="geom-ref" data-ref="g1:C" title="C">C</span></div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> If possible, let it be <span class="geom-ref" data-ref="g1:F" title="F">F</span></div>
+        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> <strong>segment</strong> <span class="geom-ref" data-ref="g1:/ F C /" title="/ F C /">/ F C /</span></div>
+        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> Let <span class="geom-ref" data-ref="g1:/ F E B /" title="/ F E B /">/ F E B /</span> be drawn through at random.</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Since <span class="geom-ref" data-ref="g1:F" title="F">F</span> is the center of <span class="geom-ref" data-ref="g1:( A B C )" title="( A B C )">( A B C )</span> → <span class="geom-ref" data-ref="g1:/ F C /" title="/ F C /">/ F C /</span> is <span class="geom-eq-ref" data-assert-equal="g1:/ F C / = g1:/ F B /" title="/ F C / = / F B /">equal</span> to <span class="geom-ref" data-ref="g1:/ F B /" title="/ F B /">/ F B /</span>.</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Since <span class="geom-ref" data-ref="g1:F" title="F">F</span> is the center of <span class="geom-ref" data-ref="g1:( C D E )" title="( C D E )">( C D E )</span> → <span class="geom-ref" data-ref="g1:/ F C /" title="/ F C /">/ F C /</span> is <span class="geom-eq-ref" data-assert-equal="g1:/ F C / = g1:/ F E /" title="/ F C / = / F E /">equal</span> to <span class="geom-ref" data-ref="g1:/ F E /" title="/ F E /">/ F E /</span>.</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> <span class="geom-ref" data-ref="g1:/ F C /" title="/ F C /">/ F C /</span> was proved <span class="geom-eq-ref" data-assert-equal="g1:/ F C / = g1:/ F B /" title="/ F C / = / F B /">equal</span> to <span class="geom-ref" data-ref="g1:/ F B /" title="/ F B /">/ F B /</span></div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore <span class="geom-ref" data-ref="g1:/ F E /" title="/ F E /">/ F E /</span> is also <span class="geom-eq-ref" data-assert-equal="g1:/ F E / = g1:/ F B /" title="/ F E / = / F B /">equal</span> to <span class="geom-ref" data-ref="g1:/ F B /" title="/ F B /">/ F B /</span>, the less to the greater: which is impossible.</div>
+        <div class="geom-step geom-step-conclude" data-step-kind="conclude"><span class="geom-step-badge geom-badge-conclude">conclude</span> Therefore <span class="geom-ref" data-ref="g1:F" title="F">F</span> is not the center of <span class="geom-ref" data-ref="g1:( A B C )" title="( A B C )">( A B C )</span>, <span class="geom-ref" data-ref="g1:( C D E )" title="( C D E )">( C D E )</span>.</div>
+        <div class="toctree-wrapper compound">
+        </div>
         </section>
 
       </div>
@@ -413,7 +421,7 @@
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
-  <script src="../../_static/js/geometor_interactive.js?v=832534ec"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=421e4467"></script>
   <script src="../../_static/js/search_highlight.js"></script>
 
 </body>

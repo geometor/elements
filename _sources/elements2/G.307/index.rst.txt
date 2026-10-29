@@ -9,7 +9,7 @@
 :category: definition, number-theory
 :tags: book-vii, even-times-odd-number, number, even-number, odd-number
 :dependencies: 
-:excerpt: An even-times odd number is that which is measured by an even number according to an odd number.
+:excerpt: Aneven-times odd number is that which is measured by an even number according to an odd number.
 
 .. _G.307:
 .. _VII.def.9:
@@ -21,9 +21,14 @@ G.307
 
 .. enunciation::
 
-   An :term:`**even-times odd number** <even-times-odd-number>` is that which is measured by an even number according to an odd number.
+   An:term:`**even-times odd number** <even-times-odd-number>` is that which is measured by an even number according to an odd number.
 
 Required for
 ------------
 
 :ref:`G.308 <G.308>`
+
+.. toctree::
+   :hidden:
+
+   heath

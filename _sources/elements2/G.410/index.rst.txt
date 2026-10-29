@@ -9,7 +9,7 @@
 :category: definition, incommensurables, magnitudes
 :tags: book-x, third-apotome, square, commensurable, rational, apotome
 :dependencies: 
-:excerpt: But if neither be commensurable in length with the rational straight line set out, and the square on the whole be greater than the square on the annex by the square on a straight line commensurable with the whole, let the apotome be called a third apotome.
+:excerpt: But if neither be commensurable in length with the rational straight line set out, and the square on the whole be greater than the square on the annex by the square on a straight line commensurable with the whole, let the apotome be called athird apotome.
 
 .. _G.410:
 .. _X.def.iii.3:
@@ -21,9 +21,14 @@ G.410
 
 .. enunciation::
 
-   But if neither be commensurable in length with the rational straight line set out, and the square on the whole be greater than the square on the annex by the square on a straight line commensurable with the whole, let the apotome be called a :term:`**third apotome** <third-apotome>`.
+   But if neither be commensurable in length with the rational straight line set out, and the square on the whole be greater than the square on the annex by the square on a straight line commensurable with the whole, let the apotome be called a:term:`**third apotome** <third-apotome>`.
 
 Required for
 ------------
 
 :ref:`G.411 <G.411>`, :ref:`G.420 <G.420>`, :ref:`G.426 <G.426>`, :ref:`G.437 <G.437>`
+
+.. toctree::
+   :hidden:
+
+   heath

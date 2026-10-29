@@ -9,7 +9,7 @@
 :category: definition, incommensurables, magnitudes
 :tags: book-x, sixth-binomial, binomial
 :dependencies: 
-:excerpt: and if neither, a sixth binomial.
+:excerpt: And if neither, asixth binomial.
 
 .. _G.386:
 .. _X.def.ii.6:
@@ -21,9 +21,14 @@ G.386
 
 .. enunciation::
 
-   and if neither, a :term:`**sixth binomial** <sixth-binomial>`.
+   And if neither, a:term:`**sixth binomial** <sixth-binomial>`.
 
 Required for
 ------------
 
 :ref:`G.387 <G.387>`, :ref:`G.393 <G.393>`
+
+.. toctree::
+   :hidden:
+
+   heath

@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=5aff7b7d" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=156d9f89" />
   <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -74,6 +74,13 @@
             <a class="book-nav-btn" href="../G.85/index.html" title="G.85">&larr; <span class="nav-label">Prev</span></a>
           </div>
           <div class="book-nav-center">
+            <nav class="book-tracks-nav" aria-label="Document Tracks">
+              <strong class="book-track-item is-active" aria-current="page">Pseudocode</strong>
+              <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="code.html">Code</a>
+              <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="heath.html">Heath</a>
+            </nav>
           </div>
           <div class="book-nav-next">
             <a class="book-nav-btn" href="../G.87/index.html" title="G.87"><span class="nav-label">Next</span> &rarr;</a>
@@ -85,10 +92,8 @@
         <span id="g-86"></span><span id="id1"></span><h1>G.86<a class="headerlink" href="#iii-11" title="Link to this heading">¶</a></h1>
         <p class="rubric"><a class="reference external" href="https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/11/" title="III.11: If two circles touch one another internally, and their centres be taken, the straight line joining their centres, if it be also produced, will fall on the point of contact of the…">III.11</a></p>
         <div class="enunciation">If two circles touch one another internally, and their centres be taken, the straight line joining their centres, if it be also produced, will fall on the point of contact of the circles.</div>
-        <p>For let the two circles <span class="geom-ref" data-ref="0030.g2:( A B C )" title="( A B C )">( A B C )</span>, <span class="geom-ref" data-ref="0030.g2:( A D E )" title="( A D E )">( A D E )</span> touch one another internally at the point <span class="geom-ref" data-ref="0030.g2:A" title="A">A</span>, and let the centre <span class="geom-ref" data-ref="0030.g2:F" title="F">F</span> of the circle <span class="geom-ref" data-ref="0030.g2:( A B C )" title="( A B C )">( A B C )</span>, and the centre <span class="geom-ref" data-ref="0030.g2:G" title="G">G</span> of <span class="geom-ref" data-ref="0030.g2:( A D E )" title="( A D E )">( A D E )</span>, be taken;</p>
-        <p>I say that the straight line joined from <span class="geom-ref" data-ref="0030.g2:G" title="G">G</span> to <span class="geom-ref" data-ref="0030.g2:F" title="F">F</span> and produced will fall on <span class="geom-ref" data-ref="0030.g2:A" title="A">A</span>.</p>
         <figure class="photon-picture photon-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="8 -2 235 255" width="235" height="255" class="euclid-graphic" data-graphic-id="0030.g2" data-folio="0030" data-graphic="g2" data-proposition="III.11">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="8 -2 235 255" width="235" height="255" class="euclid-graphic" data-graphic-id="g1" data-graphic="g1" data-proposition="III.11">
           <defs>
             <marker id="geom-tick-1" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
               <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
@@ -154,19 +159,22 @@
           </g>
         </svg>
         </figure>
-        <p>For suppose it does not, but, if possible, let it fall as <span class="geom-ref" data-ref="0030.g2:/ F G H /" title="/ F G H /">/ F G H /</span>, and let <span class="geom-ref" data-ref="0030.g2:/ A F /" title="/ A F /">/ A F /</span>, <span class="geom-ref" data-ref="0030.g2:/ A G /" title="/ A G /">/ A G /</span> be joined.</p>
-        <p>Then, since <span class="geom-ref" data-ref="0030.g2:/ A G /" title="/ A G /">/ A G /</span>, <span class="geom-ref" data-ref="0030.g2:/ G F /" title="/ G F /">/ G F /</span> are greater than <span class="geom-ref" data-ref="0030.g2:/ F A /" title="/ F A /">/ F A /</span>, that is, than <span class="geom-ref" data-ref="0030.g2:/ F H /" title="/ F H /">/ F H /</span>,</p>
-        <div class="sub-clause">let <span class="geom-ref" data-ref="0030.g2:/ F G /" title="/ F G /">/ F G /</span> be subtracted from each;</div>
-        <div class="assertion">therefore the remainder <span class="geom-ref" data-ref="0030.g2:/ A G /" title="/ A G /">/ A G /</span> is greater than the remainder <span class="geom-ref" data-ref="0030.g2:/ G H /" title="/ G H /">/ G H /</span>.</div>
-        <p>But <span class="geom-ref" data-ref="0030.g2:/ A G /" title="/ A G /">/ A G /</span> is <span class="geom-eq-ref" data-assert-equal="0030.g2:/ A G / = 0030.g2:/ G D /" title="/ A G / = / G D /">equal</span> to <span class="geom-ref" data-ref="0030.g2:/ G D /" title="/ G D /">/ G D /</span>;</p>
-        <div class="assertion">therefore <span class="geom-ref" data-ref="0030.g2:/ G D /" title="/ G D /">/ G D /</span> is also greater than <span class="geom-ref" data-ref="0030.g2:/ G H /" title="/ G H /">/ G H /</span>,</div>
-        <div class="sub-clause">the less than the greater: which is impossible.</div>
-        <div class="assertion">Therefore the straight line joined from <span class="geom-ref" data-ref="0030.g2:F" title="F">F</span> to <span class="geom-ref" data-ref="0030.g2:G" title="G">G</span> will not fall outside;</div>
-        <div class="assertion">therefore it will fall at <span class="geom-ref" data-ref="0030.g2:A" title="A">A</span> on the point of contact.</div>
-        <div class="qed">Therefore etc. <span class="justification">Q. E. D.</span></div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> For let the two circles <span class="geom-ref" data-ref="g1:( A B C )" title="( A B C )">( A B C )</span>, <span class="geom-ref" data-ref="g1:( A D E )" title="( A D E )">( A D E )</span> touch one another internally at <span class="geom-ref" data-ref="g1:A" title="A">A</span></div>
+        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> Let the center <span class="geom-ref" data-ref="g1:F" title="F">F</span> of <span class="geom-ref" data-ref="g1:( A B C )" title="( A B C )">( A B C )</span>, and the center <span class="geom-ref" data-ref="g1:G" title="G">G</span> of <span class="geom-ref" data-ref="g1:( A D E )" title="( A D E )">( A D E )</span>, be taken</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> For suppose it does not, but, if possible, let it fall as <span class="geom-ref" data-ref="g1:/ F G H /" title="/ F G H /">/ F G H /</span></div>
+        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> <strong>segment</strong> <span class="geom-ref" data-ref="g1:/ A F /" title="/ A F /">/ A F /</span>, <span class="geom-ref" data-ref="g1:/ A G /" title="/ A G /">/ A G /</span></div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Since <span class="geom-ref" data-ref="g1:/ A G /" title="/ A G /">/ A G /</span>, <span class="geom-ref" data-ref="g1:/ G F /" title="/ G F /">/ G F /</span> are greater than <span class="geom-ref" data-ref="g1:/ F A /" title="/ F A /">/ F A /</span>, that is, than <span class="geom-ref" data-ref="g1:/ F H /" title="/ F H /">/ F H /</span> → let <span class="geom-ref" data-ref="g1:/ F G /" title="/ F G /">/ F G /</span> be subtracted from each;</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore the remainder <span class="geom-ref" data-ref="g1:/ A G /" title="/ A G /">/ A G /</span> is greater than the remainder <span class="geom-ref" data-ref="g1:/ G H /" title="/ G H /">/ G H /</span>.</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> <span class="geom-ref" data-ref="g1:/ A G /" title="/ A G /">/ A G /</span> is <span class="geom-eq-ref" data-assert-equal="g1:/ A G / = g1:/ G D /" title="/ A G / = / G D /">equal</span> to <span class="geom-ref" data-ref="g1:/ G D /" title="/ G D /">/ G D /</span></div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore <span class="geom-ref" data-ref="g1:/ G D /" title="/ G D /">/ G D /</span> is also greater than <span class="geom-ref" data-ref="g1:/ G H /" title="/ G H /">/ G H /</span>,</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> The less than the greater: which is impossible.</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore the straight line joined from <span class="geom-ref" data-ref="g1:F" title="F">F</span> to <span class="geom-ref" data-ref="g1:G" title="G">G</span> will not fall outside;</div>
+        <div class="geom-step geom-step-conclude" data-step-kind="conclude"><span class="geom-step-badge geom-badge-conclude">conclude</span> Therefore it will fall at <span class="geom-ref" data-ref="g1:A" title="A">A</span> on the point of contact.</div>
         <section class="level-2" id="required-for">
         <h2>Required for<a class="headerlink" href="#required-for" title="Link to this heading">¶</a></h2>
         <p><a class="reference internal" href="../G.89/index.html#g-89" title="G.89: A circle does not touch a circle at more points than one, whether it touch it internally or externally."><span class="std std-ref">G.89</span></a></p>
+        <div class="toctree-wrapper compound">
+        </div>
         </section>
         </section>
 
@@ -432,7 +440,7 @@
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
-  <script src="../../_static/js/geometor_interactive.js?v=832534ec"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=421e4467"></script>
   <script src="../../_static/js/search_highlight.js"></script>
 
 </body>

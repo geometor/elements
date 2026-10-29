@@ -9,7 +9,7 @@
 :category: definition, plane-geometry, circles
 :tags: book-iii, greater-distance-from-centre, perpendicular
 :dependencies: 
-:excerpt: And that straight line is said to be at a greater distance on which the greater perpendicular falls.
+:excerpt: And that straight line is said to beat a greater distance on which the greater perpendicular falls.
 
 .. _G.92:
 .. _III.def.5:
@@ -21,9 +21,14 @@ G.92
 
 .. enunciation::
 
-   And that straight line is said to be :term:`**at a greater distance** <greater-distance-from-centre>` on which the greater perpendicular falls.
+   And that straight line is said to be:term:`**at a greater distance** <greater-distance-from-centre>` on which the greater perpendicular falls.
 
 Required for
 ------------
 
 :ref:`G.93 <G.93>`
+
+.. toctree::
+   :hidden:
+
+   heath

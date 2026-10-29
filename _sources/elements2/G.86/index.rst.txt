@@ -24,48 +24,60 @@ G.86
 
    If two circles touch one another internally, and their centres be taken, the straight line joining their centres, if it be also produced, will fall on the point of contact of the circles.
 
-For let the two circles :g:`( A B C ) <0030.g2:( A B C )>`, :g:`( A D E ) <0030.g2:( A D E )>` touch one another internally at the point :g:`A <0030.g2:A>`, and let the centre :g:`F <0030.g2:F>` of the circle :g:`( A B C ) <0030.g2:( A B C )>`, and the centre :g:`G <0030.g2:G>` of :g:`( A D E ) <0030.g2:( A D E )>`, be taken;
-
-I say that the straight line joined from :g:`G <0030.g2:G>` to :g:`F <0030.g2:F>` and produced will fall on :g:`A <0030.g2:A>`.
-
-.. picture:: 0030.g2.svg
+.. picture:: g1.svg
    :alt: Diagram for Proposition 11 showing circles ABC and ADE touching internally at A
 
-For suppose it does not, but, if possible, let it fall as :g:`/ F G H / <0030.g2:/ F G H />`, and let :g:`/ A F / <0030.g2:/ A F />`, :g:`/ A G / <0030.g2:/ A G />` be joined.
+.. step:: assert
 
-Then, since :g:`/ A G / <0030.g2:/ A G />`, :g:`/ G F / <0030.g2:/ G F />` are greater than :g:`/ F A / <0030.g2:/ F A />`, that is, than :g:`/ F H / <0030.g2:/ F H />`,
+   For let the two circles :g:`( A B C ) <g1:( A B C )>`, :g:`( A D E ) <g1:( A D E )>` touch one another internally at :g:`A <g1:A>`
 
-.. subclause::
+.. step:: construct
 
-   let :g:`/ F G / <0030.g2:/ F G />` be subtracted from each;
+   Let the center :g:`F <g1:F>` of :g:`( A B C ) <g1:( A B C )>`, and the center :g:`G <g1:G>` of :g:`( A D E ) <g1:( A D E )>`, be taken
 
-.. assertion::
+.. step:: assert
 
-   therefore the remainder :g:`/ A G / <0030.g2:/ A G />` is greater than the remainder :g:`/ G H / <0030.g2:/ G H />`.
+   For suppose it does not, but, if possible, let it fall as :g:`/ F G H / <g1:/ F G H />`
 
-But :g:`/ A G / <0030.g2:/ A G />` is :eq:`equal <0030.g2:/ A G / = 0030.g2:/ G D />` to :g:`/ G D / <0030.g2:/ G D />`;
+.. step:: construct
 
-.. assertion::
+   **segment** :g:`/ A F / <g1:/ A F />`, :g:`/ A G / <g1:/ A G />`
 
-   therefore :g:`/ G D / <0030.g2:/ G D />` is also greater than :g:`/ G H / <0030.g2:/ G H />`,
+.. step:: assert
 
-.. subclause::
+   Since :g:`/ A G / <g1:/ A G />`, :g:`/ G F / <g1:/ G F />` are greater than :g:`/ F A / <g1:/ F A />`, that is, than :g:`/ F H / <g1:/ F H />` → let :g:`/ F G / <g1:/ F G />` be subtracted from each;
 
-   the less than the greater: which is impossible.
+.. step:: assert
 
-.. assertion::
+   Therefore the remainder :g:`/ A G / <g1:/ A G />` is greater than the remainder :g:`/ G H / <g1:/ G H />`.
 
-   Therefore the straight line joined from :g:`F <0030.g2:F>` to :g:`G <0030.g2:G>` will not fall outside;
+.. step:: assert
 
-.. assertion::
+   :g:`/ A G / <g1:/ A G />` is :eq:`equal <g1:/ A G / = g1:/ G D />` to :g:`/ G D / <g1:/ G D />`
 
-   therefore it will fall at :g:`A <0030.g2:A>` on the point of contact.
+.. step:: assert
 
-.. qed::
+   Therefore :g:`/ G D / <g1:/ G D />` is also greater than :g:`/ G H / <g1:/ G H />`,
 
-   Therefore etc. :just:`Q. E. D.`
+.. step:: assert
+
+   The less than the greater: which is impossible.
+
+.. step:: assert
+
+   Therefore the straight line joined from :g:`F <g1:F>` to :g:`G <g1:G>` will not fall outside;
+
+.. step:: conclude
+
+   Therefore it will fall at :g:`A <g1:A>` on the point of contact.
 
 Required for
 ------------
 
 :ref:`G.89 <G.89>`
+
+.. toctree::
+   :hidden:
+
+   code
+   heath

@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=5aff7b7d" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=156d9f89" />
   <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -74,6 +74,13 @@
             <a class="book-nav-btn" href="../G.108/index.html" title="G.108">&larr; <span class="nav-label">Prev</span></a>
           </div>
           <div class="book-nav-center">
+            <nav class="book-tracks-nav" aria-label="Document Tracks">
+              <strong class="book-track-item is-active" aria-current="page">Pseudocode</strong>
+              <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="code.html">Code</a>
+              <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="heath.html">Heath</a>
+            </nav>
           </div>
           <div class="book-nav-next">
             <a class="book-nav-btn" href="../G.110/index.html" title="G.110"><span class="nav-label">Next</span> &rarr;</a>
@@ -83,16 +90,10 @@
       <div class="content body book-content folio-book-page" role="main">
         <section class="level-1" id="iii-30">
         <span id="g-109"></span><span id="id1"></span><h1>G.109<a class="headerlink" href="#iii-30" title="Link to this heading">¶</a></h1>
-        <p class="rubric"><a class="reference external" href="https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/30/" title="III.30: To bisect a given circumference.">III.30</a></p>
-        <div class="enunciation">To bisect a given circumference.</div>
-        <p>Let <span class="geom-ref" data-ref="0067.g1:( A D B )" title="( A D B )">( A D B )</span> be the given circumference;
-        thus it is required to bisect the circumference <span class="geom-ref" data-ref="0067.g1:( A D B )" title="( A D B )">( A D B )</span>.</p>
-        <p>Let <span class="geom-ref" data-ref="0067.g1:/ A B /" title="/ A B /">/ A B /</span> be joined and bisected at
-        <span class="geom-ref" data-ref="0067.g1:C" title="C">C</span>; from the point <span class="geom-ref" data-ref="0067.g1:C" title="C">C</span> let <span class="geom-ref" data-ref="0067.g1:/ C D /" title="/ C D /">/ C D /</span> be drawn
-        at right angles to the straight line <span class="geom-ref" data-ref="0067.g1:/ A B /" title="/ A B /">/ A B /</span>,
-        and let <span class="geom-ref" data-ref="0067.g1:/ A D /" title="/ A D /">/ A D /</span>, <span class="geom-ref" data-ref="0067.g1:/ D B /" title="/ D B /">/ D B /</span> be joined.</p>
+        <p class="rubric"><a class="reference external" href="https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/30/" title="III.30: Bisect a given circumference.">III.30</a></p>
+        <div class="enunciation">Bisect a given circumference.</div>
         <figure class="photon-picture photon-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="1 -4 211 120" width="211" height="120" class="euclid-graphic" data-graphic-id="0067.g1" data-folio="0067" data-graphic="g1" data-proposition="III.30">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="1 -4 211 120" width="211" height="120" class="euclid-graphic" data-graphic-id="g1" data-graphic="g1" data-proposition="III.30">
           <defs>
             <marker id="geom-tick-1" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
               <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
@@ -159,50 +160,48 @@
           </g>
         </svg>
         </figure>
-        <p>Then, since <span class="geom-ref" data-ref="0067.g1:/ A C /" title="/ A C /">/ A C /</span> is <span class="geom-eq-ref" data-assert-equal="0067.g1:/ A C / = 0067.g1:/ C B /" title="/ A C / = / C B /">equal</span> to <span class="geom-ref" data-ref="0067.g1:/ C B /" title="/ C B /">/ C B /</span>,
-        and <span class="geom-ref" data-ref="0067.g1:/ C D /" title="/ C D /">/ C D /</span> is common,
-        the two sides <span class="geom-ref" data-ref="0067.g1:/ A C /" title="/ A C /">/ A C /</span>, <span class="geom-ref" data-ref="0067.g1:/ C D /" title="/ C D /">/ C D /</span> are <span class="geom-eq-ref" data-assert-equal="0067.g1:/ A C / = 0067.g1:/ B C /; 0067.g1:/ C D / = 0067.g1:/ C D /" title="/ A C / = / B C /; / C D / = / C D /">equal</span> to the two sides <span class="geom-ref" data-ref="0067.g1:/ B C /" title="/ B C /">/ B C /</span>, <span class="geom-ref" data-ref="0067.g1:/ C D /" title="/ C D /">/ C D /</span>;
-        and the angle <span class="geom-ref" data-ref="0067.g1:&lt; A C D )" title="&lt; A C D )">&lt; A C D )</span> is <span class="geom-eq-ref" data-assert-equal="0067.g1:&lt; A C D ) = 0067.g1:&lt; B C D )" title="&lt; A C D ) = &lt; B C D )">equal</span> to the angle <span class="geom-ref" data-ref="0067.g1:&lt; B C D )" title="&lt; B C D )">&lt; B C D )</span>, for each is
-        right;</p>
-        <div class="assertion"><a class="justification" href="../G.11/index.html#g-11" data-ref-target="G.11" title="G.11: If two triangles have the two sides equal to two sides respectively, and have the angles contained by the equal straight lines equal, they will also have the base equal to the…">[G.11]</a>therefore the base <span class="geom-ref" data-ref="0067.g1:/ A D /" title="/ A D /">/ A D /</span> is <span class="geom-eq-ref" data-assert-equal="0067.g1:/ A D / = 0067.g1:/ D B /" title="/ A D / = / D B /">equal</span> to the base <span class="geom-ref" data-ref="0067.g1:/ D B /" title="/ D B /">/ D B /</span>.</div>
-        <p>But equal straight lines cut off equal circumferences, the
-        greater equal to the greater, and the less to the less; <a class="justification" href="../G.107/index.html#g-107" data-ref-target="G.107" title="G.107: In equal circles equal straight lines cut off equal circumferences, the greater equal to the greater and the less to the less.">[G.107]</a></p>
-        <div class="sub-clause">and each of the circumferences <span class="geom-ref" data-ref="0067.g1:( A D )" title="( A D )">( A D )</span>, <span class="geom-ref" data-ref="0067.g1:( D B )" title="( D B )">( D B )</span> is less than a semicircle;</div>
-        <div class="assertion">therefore the circumference <span class="geom-ref" data-ref="0067.g1:( A D )" title="( A D )">( A D )</span> is <span class="geom-eq-ref" data-assert-equal="0067.g1:( A D ) = 0067.g1:( D B )" title="( A D ) = ( D B )">equal</span> to the circumference <span class="geom-ref" data-ref="0067.g1:( D B )" title="( D B )">( D B )</span>.</div>
-        <p>Therefore the given circumference has been bisected at
-        the point <span class="geom-ref" data-ref="0067.g1:D" title="D">D</span>.</p>
-        <div class="qed"><span class="justification">Q. E. F.</span></div>
+        <div class="geom-step geom-step-given" data-step-kind="given"><span class="geom-step-badge geom-badge-given">given</span> <span class="geom-ref" data-ref="g1:( A D B )" title="( A D B )">( A D B )</span> be the given circumference</div>
+        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> Let <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span> be joined and bisected at <span class="geom-ref" data-ref="g1:C" title="C">C</span></div>
+        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> From <span class="geom-ref" data-ref="g1:C" title="C">C</span> let <span class="geom-ref" data-ref="g1:/ C D /" title="/ C D /">/ C D /</span> be drawn at right angles to <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span></div>
+        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> <strong>segment</strong> <span class="geom-ref" data-ref="g1:/ A D /" title="/ A D /">/ A D /</span>, <span class="geom-ref" data-ref="g1:/ D B /" title="/ D B /">/ D B /</span></div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Since <span class="geom-ref" data-ref="g1:/ A C /" title="/ A C /">/ A C /</span> is <span class="geom-eq-ref" data-assert-equal="g1:/ A C / = g1:/ C B /" title="/ A C / = / C B /">equal</span> to <span class="geom-ref" data-ref="g1:/ C B /" title="/ C B /">/ C B /</span>, and <span class="geom-ref" data-ref="g1:/ C D /" title="/ C D /">/ C D /</span> is common, the two sides <span class="geom-ref" data-ref="g1:/ A C /" title="/ A C /">/ A C /</span>, <span class="geom-ref" data-ref="g1:/ C D /" title="/ C D /">/ C D /</span> are <span class="geom-eq-ref" data-assert-equal="g1:/ A C / = g1:/ B C /; g1:/ C D / = g1:/ C D /" title="/ A C / = / B C /; / C D / = / C D /">equal</span> to the two sides <span class="geom-ref" data-ref="g1:/ B C /" title="/ B C /">/ B C /</span>, <span class="geom-ref" data-ref="g1:/ C D /" title="/ C D /">/ C D /</span></div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> And <span class="geom-ref" data-ref="g1:&lt; A C D )" title="&lt; A C D )">&lt; A C D )</span> is <span class="geom-eq-ref" data-assert-equal="g1:&lt; A C D ) = g1:&lt; B C D )" title="&lt; A C D ) = &lt; B C D )">equal</span> to <span class="geom-ref" data-ref="g1:&lt; B C D )" title="&lt; B C D )">&lt; B C D )</span>, for each is right</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><a class="justification" href="../G.11/index.html#g-11" data-ref-target="G.11" title="G.11: Triangles with two sides and the included angle equal are congruent (SAS).">[G.11]</a><span class="geom-step-badge geom-badge-assert">assert</span> Therefore the base <span class="geom-ref" data-ref="g1:/ A D /" title="/ A D /">/ A D /</span> is <span class="geom-eq-ref" data-assert-equal="g1:/ A D / = g1:/ D B /" title="/ A D / = / D B /">equal</span> to the base <span class="geom-ref" data-ref="g1:/ D B /" title="/ D B /">/ D B /</span>.</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><a class="justification" href="../G.107/index.html#g-107" data-ref-target="G.107" title="G.107: In equal circles equal straight lines cut off equal circumferences, the greater equal to the greater and the less to the less.">[G.107]</a><span class="geom-step-badge geom-badge-assert">assert</span> Equal straight lines cut off equal circumferences, the greater equal to the greater, and the less to the less</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> And each of the circumferences <span class="geom-ref" data-ref="g1:( A D )" title="( A D )">( A D )</span>, <span class="geom-ref" data-ref="g1:( D B )" title="( D B )">( D B )</span> is less than a semicircle;</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore the circumference <span class="geom-ref" data-ref="g1:( A D )" title="( A D )">( A D )</span> is <span class="geom-eq-ref" data-assert-equal="g1:( A D ) = g1:( D B )" title="( A D ) = ( D B )">equal</span> to the circumference <span class="geom-ref" data-ref="g1:( D B )" title="( D B )">( D B )</span>.</div>
+        <div class="geom-step geom-step-conclude" data-step-kind="conclude"><span class="geom-step-badge geom-badge-conclude">conclude</span> Therefore the given circumference has been bisected at <span class="geom-ref" data-ref="g1:D" title="D">D</span>.</div>
         <section class="level-2" id="dependency-graph">
         <h2>Dependency Graph<a class="headerlink" href="#dependency-graph" title="Link to this heading">¶</a></h2>
-        <div class="graphviz"><object data="../../_images/graphviz-31e6550ea8c16e977086f7eca9e889bf0ded01d5.svg" type="image/svg+xml" class="graphviz">
+        <div class="graphviz"><object data="../../_images/graphviz-673ec7920905e44498c7453ce335e3d67e873ca6.svg" type="image/svg+xml" class="graphviz">
         <p class="warning">digraph {
           bgcolor=&quot;transparent&quot;;
           node [shape=box, style=&quot;rounded,filled&quot;, fontname=&quot;Helvetica&quot;, fontsize=11, color=&quot;#d6d3cd&quot;, fontcolor=&quot;#ffffff&quot;];
           edge [color=&quot;#8c857b&quot;, fontcolor=&quot;#8c857b&quot;, arrowsize=0.75];
           rankdir=&quot;TB&quot;;
-          &quot;G.1&quot; [label=&quot;G.1&quot;, tooltip=&quot;G.1 (I.cn.1): Things which are equal to the same thing are also equal to one another.&quot;, fillcolor=&quot;#442222&quot;, URL=&quot;../G.1/index.html&quot;, target=&quot;_top&quot;];
-          &quot;G.2&quot; [label=&quot;G.2&quot;, tooltip=&quot;G.2 (I.def.15): A circle is a plane figure contained by one line such that all the straight lines falling upon it from one point among those lying within the figure are equal to one another ;&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.2/index.html&quot;, target=&quot;_top&quot;];
-          &quot;G.3&quot; [label=&quot;G.3&quot;, tooltip=&quot;G.3 (I.post.1): To draw a straight line from any point to any point.&quot;, fillcolor=&quot;#444422&quot;, URL=&quot;../G.3/index.html&quot;, target=&quot;_top&quot;];
-          &quot;G.4&quot; [label=&quot;G.4&quot;, tooltip=&quot;G.4 (I.post.3): To describe a circle with any centre and distance.&quot;, fillcolor=&quot;#444422&quot;, URL=&quot;../G.4/index.html&quot;, target=&quot;_top&quot;];
-          &quot;G.5&quot; [label=&quot;G.5&quot;, tooltip=&quot;G.5 (I.1): On a given finite straight line to construct an equilateral triangle.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.5/index.html&quot;, target=&quot;_top&quot;];
-          &quot;G.6&quot; [label=&quot;G.6&quot;, tooltip=&quot;G.6 (I.cn.3): If equals be subtracted from equals, the remainders are equal.&quot;, fillcolor=&quot;#442222&quot;, URL=&quot;../G.6/index.html&quot;, target=&quot;_top&quot;];
-          &quot;G.7&quot; [label=&quot;G.7&quot;, tooltip=&quot;G.7 (I.post.2): To produce a finite straight line continuously in a straight line.&quot;, fillcolor=&quot;#444422&quot;, URL=&quot;../G.7/index.html&quot;, target=&quot;_top&quot;];
-          &quot;G.8&quot; [label=&quot;G.8&quot;, tooltip=&quot;G.8 (I.2): To place at a given point (as an extremity) a straight line equal to a given straight line.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.8/index.html&quot;, target=&quot;_top&quot;];
-          &quot;G.9&quot; [label=&quot;G.9&quot;, tooltip=&quot;G.9 (I.3): Given two unequal straight lines, to cut off from the greater a straight line equal to the less.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.9/index.html&quot;, target=&quot;_top&quot;];
-          &quot;G.10&quot; [label=&quot;G.10&quot;, tooltip=&quot;G.10 (I.cn.4): [7] 4. Things which coincide with one another are equal to one another.&quot;, fillcolor=&quot;#442222&quot;, URL=&quot;../G.10/index.html&quot;, target=&quot;_top&quot;];
-          &quot;G.11&quot; [label=&quot;G.11&quot;, tooltip=&quot;G.11 (I.4): If two triangles have the two sides equal to two sides respectively, and have the angles contained by the equal straight lines equal, they will also have the base equal to the base...&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.11/index.html&quot;, target=&quot;_top&quot;];
-          &quot;G.12&quot; [label=&quot;G.12&quot;, tooltip=&quot;G.12 (I.5): In isosceles triangles the angles at the base are equal to one another, and, if the equal straight lines be produced further, the angles under the base will be equal to one another...&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.12/index.html&quot;, target=&quot;_top&quot;];
-          &quot;G.14&quot; [label=&quot;G.14&quot;, tooltip=&quot;G.14 (I.7): Given two straight lines constructed on a straight line (from its extremities) and meeting in a point, there cannot be constructed on the same straight line (from its extremities),...&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.14/index.html&quot;, target=&quot;_top&quot;];
-          &quot;G.15&quot; [label=&quot;G.15&quot;, tooltip=&quot;G.15 (I.8): If two triangles have the two sides equal to two sides respectively, and have also the base equal to the base, they will also have the angles equal which are contained by the equal...&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.15/index.html&quot;, target=&quot;_top&quot;];
-          &quot;G.18&quot; [label=&quot;G.18&quot;, tooltip=&quot;G.18 (I.def.10): When a straight line set up on a straight line makes the adjacent angles equal to one another, each of the equal angles is right, and the straight line standing on the other is cal...&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.18/index.html&quot;, target=&quot;_top&quot;];
-          &quot;G.76&quot; [label=&quot;G.76&quot;, tooltip=&quot;G.76 (III.1): To find the centre of a given circle.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.76/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.1&quot; [label=&quot;G.1&quot;, tooltip=&quot;G.1 (I.cn.1): Things equal to the same thing are equal to one another.&quot;, fillcolor=&quot;#442222&quot;, URL=&quot;../G.1/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.2&quot; [label=&quot;G.2&quot;, tooltip=&quot;G.2 (I.def.15): A circle is a plane figure contained by one line such that all segments falling upon it from its center are equal.&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.2/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.3&quot; [label=&quot;G.3&quot;, tooltip=&quot;G.3 (I.post.1): Construct a segment between any two points.&quot;, fillcolor=&quot;#444422&quot;, URL=&quot;../G.3/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.4&quot; [label=&quot;G.4&quot;, tooltip=&quot;G.4 (I.post.3): Construct a circle with any center and radius.&quot;, fillcolor=&quot;#444422&quot;, URL=&quot;../G.4/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.5&quot; [label=&quot;G.5&quot;, tooltip=&quot;G.5 (I.1): Construct an equilateral triangle on a given finite segment.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.5/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.6&quot; [label=&quot;G.6&quot;, tooltip=&quot;G.6 (I.cn.3): If equals are subtracted from equals, the remainders are equal.&quot;, fillcolor=&quot;#442222&quot;, URL=&quot;../G.6/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.7&quot; [label=&quot;G.7&quot;, tooltip=&quot;G.7 (I.post.2): Extend a finite segment continuously in a straight line.&quot;, fillcolor=&quot;#444422&quot;, URL=&quot;../G.7/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.8&quot; [label=&quot;G.8&quot;, tooltip=&quot;G.8 (I.2): Construct at a given point a segment equal to a given segment.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.8/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.9&quot; [label=&quot;G.9&quot;, tooltip=&quot;G.9 (I.3): Cut off from the greater of two unequal segments a segment equal to the less.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.9/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.10&quot; [label=&quot;G.10&quot;, tooltip=&quot;G.10 (I.cn.4): Things that coincide with one another are equal.&quot;, fillcolor=&quot;#442222&quot;, URL=&quot;../G.10/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.11&quot; [label=&quot;G.11&quot;, tooltip=&quot;G.11 (I.4): Triangles with two sides and the included angle equal are congruent (SAS).&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.11/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.12&quot; [label=&quot;G.12&quot;, tooltip=&quot;G.12 (I.5): In an isosceles triangle, the angles at the base are equal, and if the equal sides are extended, the angles under the base are equal.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.12/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.14&quot; [label=&quot;G.14&quot;, tooltip=&quot;G.14 (I.7): On the same segment and on the same side, there cannot be constructed two distinct triangles with both pairs of conterminous sides equal.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.14/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.15&quot; [label=&quot;G.15&quot;, tooltip=&quot;G.15 (I.8): Triangles with all three corresponding sides equal have their corresponding angles equal (SSS).&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.15/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.18&quot; [label=&quot;G.18&quot;, tooltip=&quot;G.18 (I.def.10): When a straight line standing on a straight line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing line is perpendicular to that on which...&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.18/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.76&quot; [label=&quot;G.76&quot;, tooltip=&quot;G.76 (III.1): Find the centre of a given circle.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.76/index.html&quot;, target=&quot;_top&quot;];
           &quot;G.80&quot; [label=&quot;G.80&quot;, tooltip=&quot;G.80 (III.5): If two circles cut one another, they will not have the same centre.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.80/index.html&quot;, target=&quot;_top&quot;];
           &quot;G.85&quot; [label=&quot;G.85&quot;, tooltip=&quot;G.85 (III.10): A circle does not cut a circle at more points than two.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.85/index.html&quot;, target=&quot;_top&quot;];
-          &quot;G.101&quot; [label=&quot;G.101&quot;, tooltip=&quot;G.101 (III.def.11): Similar segments of circles are those which admit equal angles, or in which the angles are equal to one another.&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.101/index.html&quot;, target=&quot;_top&quot;];
-          &quot;G.103&quot; [label=&quot;G.103&quot;, tooltip=&quot;G.103 (III.24): Similar segments of circles on equal straight lines are equal to one another.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.103/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.101&quot; [label=&quot;G.101&quot;, tooltip=&quot;G.101 (III.def.11): Similar segments of circles are those which admit equal angles, or in which the angles are equal.&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.101/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.103&quot; [label=&quot;G.103&quot;, tooltip=&quot;G.103 (III.24): Similar segments of circles on equal straight lines are equal.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.103/index.html&quot;, target=&quot;_top&quot;];
           &quot;G.105&quot; [label=&quot;G.105&quot;, tooltip=&quot;G.105 (III.26): In equal circles equal angles stand on equal circumferences, whether they stand at the centres or at the circumferences.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.105/index.html&quot;, target=&quot;_top&quot;];
           &quot;G.107&quot; [label=&quot;G.107&quot;, tooltip=&quot;G.107 (III.28): In equal circles equal straight lines cut off equal circumferences, the greater equal to the greater and the less to the less.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.107/index.html&quot;, target=&quot;_top&quot;];
-          &quot;G.109&quot; [label=&quot;G.109&quot;, tooltip=&quot;G.109 (III.30): To bisect a given circumference.&quot;, penwidth=2.5, color=&quot;#e8b85a&quot;, fillcolor=&quot;#4a453b&quot;, URL=&quot;index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.109&quot; [label=&quot;G.109&quot;, tooltip=&quot;G.109 (III.30): Bisect a given circumference.&quot;, penwidth=2.5, color=&quot;#e8b85a&quot;, fillcolor=&quot;#4a453b&quot;, URL=&quot;index.html&quot;, target=&quot;_top&quot;];
           &quot;G.5&quot; -&gt; &quot;G.1&quot;;
           &quot;G.8&quot; -&gt; &quot;G.1&quot;;
           &quot;G.9&quot; -&gt; &quot;G.1&quot;;
@@ -242,7 +241,9 @@
         </section>
         <section class="level-2" id="required-for">
         <h2>Required for<a class="headerlink" href="#required-for" title="Link to this heading">¶</a></h2>
-        <p><a class="reference internal" href="../G.134/index.html#g-134" title="G.134: In a given circle to inscribe a fifteen-angled figure which shall be both equilateral and equiangular."><span class="std std-ref">G.134</span></a></p>
+        <p><a class="reference internal" href="../G.134/index.html#g-134" title="G.134: Inscribe in a given circle a fifteen-angled figure which shall be both equilateral and equiangular."><span class="std std-ref">G.134</span></a></p>
+        <div class="toctree-wrapper compound">
+        </div>
         </section>
         </section>
 
@@ -509,7 +510,7 @@
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
-  <script src="../../_static/js/geometor_interactive.js?v=832534ec"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=421e4467"></script>
   <script src="../../_static/js/search_highlight.js"></script>
 
 </body>

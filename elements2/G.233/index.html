@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=5aff7b7d" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=156d9f89" />
   <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -74,6 +74,13 @@
             <a class="book-nav-btn" href="../G.232/index.html" title="G.232">&larr; <span class="nav-label">Prev</span></a>
           </div>
           <div class="book-nav-center">
+            <nav class="book-tracks-nav" aria-label="Document Tracks">
+              <strong class="book-track-item is-active" aria-current="page">Pseudocode</strong>
+              <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="code.html">Code</a>
+              <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="heath.html">Heath</a>
+            </nav>
           </div>
           <div class="book-nav-next">
             <a class="book-nav-btn" href="../G.234/index.html" title="G.234"><span class="nav-label">Next</span> &rarr;</a>
@@ -85,11 +92,8 @@
         <span id="g-233"></span><span id="id1"></span><h1>G.233<a class="headerlink" href="#vii-32" title="Link to this heading">¶</a></h1>
         <p class="rubric"><a class="reference external" href="https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/32/" title="VII.32: Any number either is prime or is measured by some prime number.">VII.32</a></p>
         <div class="enunciation">Any number either is prime or is measured by some prime number.</div>
-        <p>Let <span class="geom-ref" data-ref="0339.g1:A" title="A">A</span> be a number;</p>
-        <p>I say that <span class="geom-ref" data-ref="0339.g1:A" title="A">A</span> either is prime or is measured by some prime number.</p>
-        <div class="sub-clause">If now <span class="geom-ref" data-ref="0339.g1:A" title="A">A</span> is prime, that which was enjoined will have been done.</div>
         <figure class="photon-picture photon-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-6 -7 180 42" width="180" height="42" class="euclid-graphic" data-graphic-id="0339.g1" data-folio="0339" data-graphic="g1" data-proposition="VII.32">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-6 -7 180 42" width="180" height="42" class="euclid-graphic" data-graphic-id="g1" data-graphic="g1" data-proposition="VII.32">
           <defs>
             <marker id="geom-tick-1" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
               <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
@@ -119,9 +123,10 @@
           </g>
         </svg>
         </figure>
-        <div class="sub-clause"><a class="justification" href="../G.232/index.html#g-232" data-ref-target="G.232" title="G.232: Any composite number is measured by some prime number.">[G.232]</a>But if it is composite, some prime number will measure it.</div>
-        <div class="assertion">Therefore any number either is prime or is measured by some prime number.</div>
-        <div class="qed"><span class="justification">Q. E. D.</span></div>
+        <div class="geom-step geom-step-given" data-step-kind="given"><span class="geom-step-badge geom-badge-given">given</span> <span class="geom-ref" data-ref="g1:A" title="A">A</span> be a number</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> If now <span class="geom-ref" data-ref="g1:A" title="A">A</span> is prime, that which was enjoined will have been done.</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><a class="justification" href="../G.232/index.html#g-232" data-ref-target="G.232" title="G.232: Any composite number is measured by some prime number.">[G.232]</a><span class="geom-step-badge geom-badge-assert">assert</span> If it is composite, some prime number will measure it.</div>
+        <div class="geom-step geom-step-conclude" data-step-kind="conclude"><span class="geom-step-badge geom-badge-conclude">conclude</span> Therefore any number either is prime or is measured by some prime number.</div>
         <section class="level-2" id="dependency-graph">
         <h2>Dependency Graph<a class="headerlink" href="#dependency-graph" title="Link to this heading">¶</a></h2>
         <div class="graphviz"><object data="../../_images/graphviz-368c7fadbf1ded0989df352cb148bc9da7be699d.svg" type="image/svg+xml" class="graphviz">
@@ -134,6 +139,8 @@
           &quot;G.233&quot; [label=&quot;G.233&quot;, tooltip=&quot;G.233 (VII.32): Any number either is prime or is measured by some prime number.&quot;, penwidth=2.5, color=&quot;#e8b85a&quot;, fillcolor=&quot;#4a453b&quot;, URL=&quot;index.html&quot;, target=&quot;_top&quot;];
           &quot;G.233&quot; -&gt; &quot;G.232&quot;;
         }</p></object></div>
+        <div class="toctree-wrapper compound">
+        </div>
         </section>
         </section>
 
@@ -395,7 +402,7 @@
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
-  <script src="../../_static/js/geometor_interactive.js?v=832534ec"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=421e4467"></script>
   <script src="../../_static/js/search_highlight.js"></script>
 
 </body>

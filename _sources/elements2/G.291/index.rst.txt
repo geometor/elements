@@ -24,66 +24,80 @@ G.291
 
    Prime numbers are more than any assigned multitude of prime numbers.
 
-Let :g:`A <0418.g1:A>`, :g:`B <0418.g1:B>`, :g:`C <0418.g1:C>` be the assigned prime numbers ;
-
-I say that there are more prime numbers than :g:`A <0418.g1:A>`, :g:`B <0418.g1:B>`, :g:`C <0418.g1:C>`.
-
-For let the least number measured by :g:`A <0418.g1:A>`, :g:`B <0418.g1:B>`, :g:`C <0418.g1:C>` be taken, and let it be :g:`/ D E / <0418.g1:/ D E />` ; let the unit :g:`/ D F / <0418.g1:/ D F />` be added to :g:`/ D E / <0418.g1:/ D E />`.
-
-.. picture:: 0418.g1.svg
+.. picture:: g1.svg
    :alt: Book IX, Proposition 20
 
-Then :g:`/ E F / <0418.g1:/ E F />` is either prime or not.
+.. step:: given
 
-First, let it be prime ;
+   :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` be the assigned prime numbers
 
-.. assertion::
+.. step:: construct
 
-   then the prime numbers :g:`A <0418.g1:A>`, :g:`B <0418.g1:B>`, :g:`C <0418.g1:C>`, :g:`/ E F / <0418.g1:/ E F />` have been found which are more than :g:`A <0418.g1:A>`, :g:`B <0418.g1:B>`, :g:`C <0418.g1:C>`.
+   For let the least number measured by :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` be taken
 
-Next, let :g:`/ E F / <0418.g1:/ E F />` not be prime ;
+.. step:: assert
 
-.. assertion:: [G.232] <G.232>
+   Let it be :g:`/ D E / <g1:/ D E />`
 
-   therefore it is measured by some prime number.
+.. step:: assert
 
-Let it be measured by the prime number :g:`G <0418.g1:G>`.
+   Let the unit :g:`/ D F / <g1:/ D F />` be added to :g:`/ D E / <g1:/ D E />`.
 
-I say that :g:`G <0418.g1:G>` is not the same with any of the numbers :g:`A <0418.g1:A>`, :g:`B <0418.g1:B>`, :g:`C <0418.g1:C>`.
+.. step:: assert
 
-For, if possible, let it be so.
+   Then :g:`/ E F / <g1:/ E F />` is either prime or not.
 
-.. subclause::
+.. step:: assert
 
-   Now :g:`A <0418.g1:A>`, :g:`B <0418.g1:B>`, :g:`C <0418.g1:C>` measure :g:`/ D E / <0418.g1:/ D E />` ;
+   First, let it be prime
 
-.. assertion::
+.. step:: assert
 
-   therefore :g:`G <0418.g1:G>` also will measure :g:`/ D E / <0418.g1:/ D E />`.
+   Then the prime numbers :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`/ E F / <g1:/ E F />` have been found which are more than :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`.
 
-.. subclause::
+.. step:: assert
 
-   But it also measures :g:`/ E F / <0418.g1:/ E F />`.
+   Next, let :g:`/ E F / <g1:/ E F />` not be prime
 
-.. assertion::
+.. step:: assert [G.232] <G.232>
 
-   Therefore :g:`G <0418.g1:G>`, being a number, will measure the remainder, the unit :g:`/ D F / <0418.g1:/ D F />` : which is absurd.
+   Therefore it is measured by some prime number.
 
-.. assertion::
+.. step:: assert
 
-   Therefore :g:`G <0418.g1:G>` is not the same with any one of the numbers :g:`A <0418.g1:A>`, :g:`B <0418.g1:B>`, :g:`C <0418.g1:C>`.
+   Let it be measured by the prime number :g:`G <g1:G>`.
 
-.. subclause::
+.. step:: assert
 
-   And by hypothesis it is prime.
+   If possible, let it be so.
 
-.. assertion::
+.. step:: assert
 
-   Therefore the prime numbers :g:`A <0418.g1:A>`, :g:`B <0418.g1:B>`, :g:`C <0418.g1:C>`, :g:`G <0418.g1:G>` have been found which are more than the assigned multitude of :g:`A <0418.g1:A>`, :g:`B <0418.g1:B>`, :g:`C <0418.g1:C>`.
+   Now :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` measure :g:`/ D E / <g1:/ D E />` ;
 
-.. qed::
+.. step:: assert
 
-   :just:`Q. E. D.`
+   Therefore :g:`G <g1:G>` also will measure :g:`/ D E / <g1:/ D E />`.
+
+.. step:: assert
+
+   It also measures :g:`/ E F / <g1:/ E F />`.
+
+.. step:: assert
+
+   Therefore :g:`G <g1:G>`, being a number, will measure the remainder, the unit :g:`/ D F / <g1:/ D F />` : which is absurd.
+
+.. step:: assert
+
+   Therefore :g:`G <g1:G>` is not the same with any one of the numbers :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`.
+
+.. step:: assert
+
+   By hypothesis it is prime.
+
+.. step:: conclude
+
+   Therefore the prime numbers :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`G <g1:G>` have been found which are more than the assigned multitude of :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`.
 
 Dependency Graph
 ----------------
@@ -99,3 +113,9 @@ Dependency Graph
      "G.291" [label="G.291", tooltip="G.291 (IX.20): Prime numbers are more than any assigned multitude of prime numbers.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.291" -> "G.232";
    }
+
+.. toctree::
+   :hidden:
+
+   code
+   heath

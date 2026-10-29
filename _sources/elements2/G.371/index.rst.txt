@@ -9,7 +9,7 @@
 :category: definition, incommensurables, magnitudes
 :tags: book-x, second-binomial, commensurable, rational, binomial
 :dependencies: 
-:excerpt: but if the lesser term be commensurable in length with the rational straight line set out, let the whole be called a second binomial;
+:excerpt: But if the lesser term be commensurable in length with the rational straight line set out, let the whole be called asecond binomial;
 
 .. _G.371:
 .. _X.def.ii.2:
@@ -21,9 +21,14 @@ G.371
 
 .. enunciation::
 
-   but if the lesser term be commensurable in length with the rational straight line set out, let the whole be called a :term:`**second binomial** <second-binomial>`;
+   But if the lesser term be commensurable in length with the rational straight line set out, let the whole be called a:term:`**second binomial** <second-binomial>`;
 
 Required for
 ------------
 
 :ref:`G.372 <G.372>`, :ref:`G.381 <G.381>`, :ref:`G.387 <G.387>`, :ref:`G.392 <G.392>`
+
+.. toctree::
+   :hidden:
+
+   heath

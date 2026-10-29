@@ -24,256 +24,324 @@ G.505
 
    Given two spheres about the same centre, to inscribe in the greater sphere a polyhedral solid which does not touch the lesser sphere at its surface.
 
-Let two spheres be conceived about the same centre :g:`A <0429.g1:A>` ; thus it is required to inscribe in the greater sphere a polyhedral solid which does not touch the lesser sphere at its surface.
-
-.. picture:: 0429.g1.svg
+.. picture:: g1.svg
    :alt: Proposition 17
 
-Let the spheres be cut by any plane through the centre ; then the sections will be circles, inasmuch as the sphere was produced by the diameter remaining fixed and the semicircle being carried round it ; :just:`[G.504] <G.504>` hence, in whatever position we conceive the semicircle to be, the plane carried through it will produce a circle on the circumference of the sphere.
+.. step:: given
 
-And it is manifest that this circle is the greatest possible,
-inasmuch as the diameter of the sphere, which is of course the diameter both of the semicircle and of the circle, is greater than all the straight lines drawn across in the circle or the sphere.
+   two spheres be conceived about the same center :g:`A <g1:A>`
 
-Let then :g:`( B C D E ) <0429.g1:( B C D E )>` be the circle in the greater sphere, and :g:`( F G H ) <0429.g1:( F G H )>` the circle in the lesser sphere ; let two diameters in them, :g:`/ B D / <0429.g1:/ B D />`, :g:`/ C E / <0429.g1:/ C E />`, be drawn at right angles to one another ; then, given the two circles :g:`( B C D E ) <0429.g1:( B C D E )>`, :g:`( F G H ) <0429.g1:( F G H )>` about the same centre, let there be inscribed in the greater circle :g:`( B C D E ) <0429.g1:( B C D E )>` an :eq:`equilateral <0429.g1:/ B K / = 0429.g1:/ K L / = 0429.g1:/ L M / = 0429.g1:/ M E />` polygon with an even number of sides which does not touch the lesser circle :g:`( F G H ) <0429.g1:( F G H )>`, let :g:`/ B K / <0429.g1:/ B K />`, :g:`/ K L / <0429.g1:/ K L />`, :g:`/ L M / <0429.g1:/ L M />`, :g:`/ M E / <0429.g1:/ M E />` be its sides in the quadrant :g:`( B E ) <0429.g1:( B E )>`, let :g:`/ K A / <0429.g1:/ K A />` be joined and carried through to :g:`N <0429.g1:N>`, let :g:`/ A O / <0429.g1:/ A O />` be set up from the point :g:`A <0429.g1:A>` at right angles to the plane of the circle :g:`( B C D E ) <0429.g1:( B C D E )>`, and let it meet the surface of the sphere at :g:`O <0429.g1:O>`, and through :g:`/ A O / <0429.g1:/ A O />` and each of the straight lines :g:`/ B D / <0429.g1:/ B D />`, :g:`/ K N / <0429.g1:/ K N />` let planes be carried ; they will then make greatest circles on the surface of the sphere, for the reason stated. Let them make such, and in them let :g:`( B O D ) <0429.g1:( B O D )>`, :g:`( K O N ) <0429.g1:( K O N )>` be the semicircles on :g:`/ B D / <0429.g1:/ B D />`, :g:`/ K N / <0429.g1:/ K N />`.
+.. step:: construct
 
-.. subclause::
+   Let the spheres be cut by any plane through the center
 
-   Now, since :g:`/ O A / <0429.g1:/ O A />` is at right angles to the plane of the circle :g:`( B C D E ) <0429.g1:( B C D E )>`,
+.. step:: assert [G.504] <G.504>
 
-.. assertion::
+   Then the sections will be circles, inasmuch as the sphere was produced by the diameter remaining fixed and the semicircle being carried round it
 
-   therefore all the planes through :g:`/ O A / <0429.g1:/ O A />` are also at right angles to the plane of the circle :g:`( B C D E ) <0429.g1:( B C D E )>` ; :just:`[G.463] <G.463>` hence the semicircles :g:`( B O D ) <0429.g1:( B O D )>`, :g:`( K O N ) <0429.g1:( K O N )>` are also at right angles to the plane of the circle :g:`( B C D E ) <0429.g1:( B C D E )>`.
+.. step:: assert
 
-.. subclause::
+   Hence, in whatever position we conceive the semicircle to be, the plane carried through it will produce a circle on the circumference of the sphere.
 
-   And, since the semicircles :g:`( B E D ) <0429.g1:( B E D )>`, :g:`( B O D ) <0429.g1:( B O D )>`, :g:`( K O N ) <0429.g1:( K O N )>` are :eq:`equal <0429.g1:( B E D ) = 0429.g1:( B O D ) = 0429.g1:( K O N )>`, for they are on the :eq:`equal <0429.g1:/ B D / = 0429.g1:/ K N />` diameters :g:`/ B D / <0429.g1:/ B D />`, :g:`/ K N / <0429.g1:/ K N />`,
+.. step:: assert
 
-.. assertion::
+   It is manifest that this circle is the greatest possible, inasmuch as the diameter of the sphere, which is of course the diameter both of the semicircle and of the circle, is greater than all the straight lines drawn across in the circle or the sphere.
 
-   therefore the quadrants :g:`( B E ) <0429.g1:( B E )>`, :g:`( B O ) <0429.g1:( B O )>`, :g:`( K O ) <0429.g1:( K O )>` are also :eq:`equal <0429.g1:( B E ) = 0429.g1:( B O ) = 0429.g1:( K O )>` to one another.
+.. step:: assert
 
-.. assertion::
+   Let then :g:`( B C D E ) <g1:( B C D E )>` be the circle in the greater sphere, and :g:`( F G H ) <g1:( F G H )>` the circle in the lesser sphere
 
-   Therefore there are as many straight lines in the quadrants :g:`( B O ) <0429.g1:( B O )>`, :g:`( K O ) <0429.g1:( K O )>` :eq:`equal <0429.g1:/ B P / = 0429.g1:/ P Q / = 0429.g1:/ Q R / = 0429.g1:/ R O / = 0429.g1:/ K S / = 0429.g1:/ S T / = 0429.g1:/ T U / = 0429.g1:/ U O / = 0429.g1:/ B K / = 0429.g1:/ K L / = 0429.g1:/ L M / = 0429.g1:/ M E />` to the straight lines :g:`/ B K / <0429.g1:/ B K />`, :g:`/ K L / <0429.g1:/ K L />`, :g:`/ L M / <0429.g1:/ L M />`, :g:`/ M E / <0429.g1:/ M E />` as there are sides of the polygon in the quadrant :g:`( B E ) <0429.g1:( B E )>`.
+.. step:: construct
 
-Let them be inscribed, and let them be :g:`/ B P / <0429.g1:/ B P />`, :g:`/ P Q / <0429.g1:/ P Q />`, :g:`/ Q R / <0429.g1:/ Q R />`, :g:`/ R O / <0429.g1:/ R O />` and :g:`/ K S / <0429.g1:/ K S />`, :g:`/ S T / <0429.g1:/ S T />`, :g:`/ T U / <0429.g1:/ T U />`, :g:`/ U O / <0429.g1:/ U O />`, let :g:`/ S P / <0429.g1:/ S P />`, :g:`/ T Q / <0429.g1:/ T Q />`, :g:`/ U R / <0429.g1:/ U R />` be joined,
-and from :g:`P <0429.g1:P>`, :g:`S <0429.g1:S>` let perpendiculars be drawn to the plane of the circle :g:`( B C D E ) <0429.g1:( B C D E )>` ; :just:`[G.454] <G.454>` these will fall on :g:`/ B D / <0429.g1:/ B D />`, :g:`/ K N / <0429.g1:/ K N />`, the common sections of the planes, inasmuch as the planes of :g:`( B O D ) <0429.g1:( B O D )>`, :g:`( K O N ) <0429.g1:( K O N )>` are also at right angles to the plane of the circle :g:`( B C D E ) <0429.g1:( B C D E )>`. :just:`[G.462] <G.462>` Let them so fall, and let them be :g:`/ P V / <0429.g1:/ P V />`, :g:`/ S W / <0429.g1:/ S W />`, and let :g:`/ W V / <0429.g1:/ W V />` be joined.
+   Let two diameters in them, :g:`/ B D / <g1:/ B D />`, :g:`/ C E / <g1:/ C E />`, be drawn at right angles to one another
 
-.. subclause::
+.. step:: construct
 
-   Now since, in the :eq:`equal <0429.g1:( B O D ) = 0429.g1:( K O N )>` semicircles :g:`( B O D ) <0429.g1:( B O D )>`, :g:`( K O N ) <0429.g1:( K O N )>`, :eq:`equal <0429.g1:/ B P / = 0429.g1:/ K S />` straight lines :g:`/ B P / <0429.g1:/ B P />`, :g:`/ K S / <0429.g1:/ K S />` have been cut off, and the perpendiculars :g:`/ P V / <0429.g1:/ P V />`, :g:`/ S W / <0429.g1:/ S W />` have been drawn,
+   Then, given the two circles :g:`( B C D E ) <g1:( B C D E )>`, :g:`( F G H ) <g1:( F G H )>` about the same center, let there be inscribed in the greater circle :g:`( B C D E ) <g1:( B C D E )>` an :eq:`equilateral <g1:/ B K / = g1:/ K L / = g1:/ L M / = g1:/ M E />` polygon with an even number of sides which does not touch the lesser circle :g:`( F G H ) <g1:( F G H )>`, let :g:`/ B K / <g1:/ B K />`, :g:`/ K L / <g1:/ K L />`, :g:`/ L M / <g1:/ L M />`, :g:`/ M E / <g1:/ M E />` be its sides in the quadrant :g:`( B E ) <g1:( B E )>`, let :g:`/ K A / <g1:/ K A />` be joined and carried through to :g:`N <g1:N>`, let :g:`/ A O / <g1:/ A O />` be set up from :g:`A <g1:A>` at right angles to the plane of :g:`( B C D E ) <g1:( B C D E )>`
 
-.. assertion:: [G.106, G.37] <G.106, G.37>
+.. step:: assert
 
-   therefore :g:`/ P V / <0429.g1:/ P V />` is :eq:`equal <0429.g1:/ P V / = 0429.g1:/ S W /; 0429.g1:/ B V / = 0429.g1:/ K W />` to :g:`/ S W / <0429.g1:/ S W />`, and :g:`/ B V / <0429.g1:/ B V />` to :g:`/ K W / <0429.g1:/ K W />`.
+   Let it meet the surface of the sphere at :g:`O <g1:O>`
 
-.. subclause::
+.. step:: assert
 
-   But the whole :g:`/ B A / <0429.g1:/ B A />` is also :eq:`equal <0429.g1:/ B A / = 0429.g1:/ K A />` to the whole :g:`/ K A / <0429.g1:/ K A />` ;
+   Through :g:`/ A O / <g1:/ A O />` and each of :g:`/ B D / <g1:/ B D />`, :g:`/ K N / <g1:/ K N />` let planes be carried
 
-.. assertion::
+.. step:: assert
 
-   therefore the remainder :g:`/ V A / <0429.g1:/ V A />` is also :eq:`equal <0429.g1:/ V A / = 0429.g1:/ W A />` to the remainder :g:`/ W A / <0429.g1:/ W A />` ; therefore, as :g:`/ B V / <0429.g1:/ B V />` is to :g:`/ V A / <0429.g1:/ V A />`, so is :g:`/ K W / <0429.g1:/ K W />` to :g:`/ W A / <0429.g1:/ W A />` ; therefore :g:`/ W V / <0429.g1:/ W V />` is parallel to :g:`/ K B / <0429.g1:/ K B />`. :just:`[G.164] <G.164>`
+   They will then make greatest circles on the surface of the sphere, for the reason stated. Let them make such
 
-.. subclause::
+.. step:: assert
 
-   And, since each of the straight lines :g:`/ P V / <0429.g1:/ P V />`, :g:`/ S W / <0429.g1:/ S W />` is at right angles to the plane of the circle :g:`( B C D E ) <0429.g1:( B C D E )>`,
+   In them let :g:`( B O D ) <g1:( B O D )>`, :g:`( K O N ) <g1:( K O N )>` be the semicircles on :g:`/ B D / <g1:/ B D />`, :g:`/ K N / <g1:/ K N />`.
 
-.. assertion:: [G.449] <G.449>
+.. step:: assert
 
-   therefore :g:`/ P V / <0429.g1:/ P V />` is parallel to :g:`/ S W / <0429.g1:/ S W />`.
+   Since :g:`/ O A / <g1:/ O A />` is at right angles to the plane of :g:`( B C D E ) <g1:( B C D E )>`,
 
-.. subclause::
+.. step:: assert [G.463] <G.463>
 
-   But it was also proved :eq:`equal <0429.g1:/ P V / = 0429.g1:/ S W />` to it ;
+   Therefore all the planes through :g:`/ O A / <g1:/ O A />` are also at right angles to the plane of :g:`( B C D E ) <g1:( B C D E )>` ; hence the semicircles :g:`( B O D ) <g1:( B O D )>`, :g:`( K O N ) <g1:( K O N )>` are also at right angles to the plane of :g:`( B C D E ) <g1:( B C D E )>`.
 
-.. assertion:: [G.46] <G.46>
+.. step:: assert
 
-   therefore :g:`/ W V / <0429.g1:/ W V />`, :g:`/ S P / <0429.g1:/ S P />` are also :eq:`equal <0429.g1:/ W V / = 0429.g1:/ S P />` and parallel.
+   And, since the semicircles :g:`( B E D ) <g1:( B E D )>`, :g:`( B O D ) <g1:( B O D )>`, :g:`( K O N ) <g1:( K O N )>` are :eq:`equal <g1:( B E D ) = g1:( B O D ) = g1:( K O N )>`, for they are on the :eq:`equal <g1:/ B D / = g1:/ K N />` diameters :g:`/ B D / <g1:/ B D />`, :g:`/ K N / <g1:/ K N />`,
 
-.. subclause::
+.. step:: assert
 
-   And, since :g:`/ W V / <0429.g1:/ W V />` is parallel to :g:`/ S P / <0429.g1:/ S P />`, while :g:`/ W V / <0429.g1:/ W V />` is parallel to :g:`/ K B / <0429.g1:/ K B />`,
+   Therefore the quadrants :g:`( B E ) <g1:( B E )>`, :g:`( B O ) <g1:( B O )>`, :g:`( K O ) <g1:( K O )>` are also :eq:`equal <g1:( B E ) = g1:( B O ) = g1:( K O )>` to one another.
 
-.. assertion:: [G.452] <G.452>
+.. step:: assert
 
-   therefore :g:`/ S P / <0429.g1:/ S P />` is also parallel to :g:`/ K B / <0429.g1:/ K B />`.
+   Therefore there are as many straight lines in the quadrants :g:`( B O ) <g1:( B O )>`, :g:`( K O ) <g1:( K O )>` :eq:`equal <g1:/ B P / = g1:/ P Q / = g1:/ Q R / = g1:/ R O / = g1:/ K S / = g1:/ S T / = g1:/ T U / = g1:/ U O / = g1:/ B K / = g1:/ K L / = g1:/ L M / = g1:/ M E />` to :g:`/ B K / <g1:/ B K />`, :g:`/ K L / <g1:/ K L />`, :g:`/ L M / <g1:/ L M />`, :g:`/ M E / <g1:/ M E />` as there are sides of the polygon in the quadrant :g:`( B E ) <g1:( B E )>`.
 
-.. subclause::
+.. step:: assert
 
-   And :g:`/ B P / <0429.g1:/ B P />`, :g:`/ K S / <0429.g1:/ K S />` join their extremities ;
+   Let them be inscribed
 
-.. assertion::
+.. step:: construct
 
-   therefore the quadrilateral :g:`< K B P S > <0429.g1:< K B P S >>` is in one plane, inasmuch as, if two straight lines be parallel, and points be taken at random on each of them, the straight line joining the points is in the same plane with the parallels. :just:`[G.450] <G.450>`
+   **segment** them be :g:`/ B P / <g1:/ B P />`, :g:`/ P Q / <g1:/ P Q />`, :g:`/ Q R / <g1:/ Q R />`, :g:`/ R O / <g1:/ R O />` and :g:`/ K S / <g1:/ K S />`, :g:`/ S T / <g1:/ S T />`, :g:`/ T U / <g1:/ T U />`, :g:`/ U O / <g1:/ U O />`, let :g:`/ S P / <g1:/ S P />`, :g:`/ T Q / <g1:/ T Q />`, :g:`/ U R / <g1:/ U R />`
 
-.. assertion::
+.. step:: construct [G.454] <G.454>
 
-   For the same reason each of the quadrilaterals :g:`< S P Q T > <0429.g1:< S P Q T >>`, :g:`< T Q R U > <0429.g1:< T Q R U >>` is also in one plane.
+   From :g:`P <g1:P>`, :g:`S <g1:S>` let perpendiculars be drawn to the plane of :g:`( B C D E ) <g1:( B C D E )>`
 
-.. assertion:: [G.444] <G.444>
+.. step:: assert [G.462] <G.462>
 
-   But the triangle :g:`< U R O > <0429.g1:< U R O >>` is also in one plane.
+   These will fall on :g:`/ B D / <g1:/ B D />`, :g:`/ K N / <g1:/ K N />`, the common sections of the planes, inasmuch as the planes of :g:`( B O D ) <g1:( B O D )>`, :g:`( K O N ) <g1:( K O N )>` are also at right angles to the plane of :g:`( B C D E ) <g1:( B C D E )>`. Let them so fall
 
-If then we conceive straight lines joined from the points :g:`P <0429.g1:P>`, :g:`S <0429.g1:S>`, :g:`Q <0429.g1:Q>`, :g:`T <0429.g1:T>`, :g:`R <0429.g1:R>`, :g:`U <0429.g1:U>` to :g:`A <0429.g1:A>`, there will be constructed a certain polyhedral solid figure between the circumferences :g:`( B O ) <0429.g1:( B O )>`, :g:`( K O ) <0429.g1:( K O )>`, consisting of pyramids of which the quadrilaterals :g:`< K B P S > <0429.g1:< K B P S >>`, :g:`< S P Q T > <0429.g1:< S P Q T >>`, :g:`< T Q R U > <0429.g1:< T Q R U >>` and the triangle :g:`< U R O > <0429.g1:< U R O >>` are the bases and the point :g:`A <0429.g1:A>` the vertex.
+.. step:: assert
 
-And, if we make the same construction in the case of each of the sides :g:`/ K L / <0429.g1:/ K L />`, :g:`/ L M / <0429.g1:/ L M />`, :g:`/ M E / <0429.g1:/ M E />` as in the case of :g:`/ B K / <0429.g1:/ B K />`, and further in the case of the remaining three quadrants, there will be constructed a certain polyhedral figure inscribed in the sphere and contained by pyramids, of which the said quadrilaterals and the triangle :g:`< U R O > <0429.g1:< U R O >>`, and the others corresponding to them, are the bases and the point :g:`A <0429.g1:A>` the vertex.
+   Let them be :g:`/ P V / <g1:/ P V />`, :g:`/ S W / <g1:/ S W />`
 
-I say that the said polyhedron will not touch the lesser sphere at the surface on which the circle :g:`( F G H ) <0429.g1:( F G H )>` is.
+.. step:: construct
 
-Let :g:`/ A X / <0429.g1:/ A X />` be drawn from the point :g:`A <0429.g1:A>` perpendicular to the plane of the quadrilateral :g:`< K B P S > <0429.g1:< K B P S >>`, and let it meet the plane at the point :g:`X <0429.g1:X>` ; :just:`[G.454] <G.454>` let :g:`/ X B / <0429.g1:/ X B />`, :g:`/ X K / <0429.g1:/ X K />` be joined.
+   **segment** :g:`/ W V / <g1:/ W V />`
 
-.. subclause::
+.. step:: assert
 
-   Then, since :g:`/ A X / <0429.g1:/ A X />` is at right angles to the plane of the quadrilateral :g:`< K B P S > <0429.g1:< K B P S >>`,
+   Now since, in the :eq:`equal <g1:( B O D ) = g1:( K O N )>` semicircles :g:`( B O D ) <g1:( B O D )>`, :g:`( K O N ) <g1:( K O N )>`, :eq:`equal <g1:/ B P / = g1:/ K S />` straight lines :g:`/ B P / <g1:/ B P />`, :g:`/ K S / <g1:/ K S />` have been cut off, and the perpendiculars :g:`/ P V / <g1:/ P V />`, :g:`/ S W / <g1:/ S W />` have been drawn,
 
-.. assertion::
+.. step:: assert [G.106, G.37] <G.106, G.37>
 
-   therefore it is also at right angles to all the straight lines which meet it and are in the plane of the quadrilateral. :just:`[G.446] <G.446>` Therefore :g:`/ A X / <0429.g1:/ A X />` is at right angles to each of the straight lines :g:`/ B X / <0429.g1:/ B X />`, :g:`/ X K / <0429.g1:/ X K />`.
+   Therefore :g:`/ P V / <g1:/ P V />` is :eq:`equal <g1:/ P V / = g1:/ S W /; g1:/ B V / = g1:/ K W />` to :g:`/ S W / <g1:/ S W />`, and :g:`/ B V / <g1:/ B V />` to :g:`/ K W / <g1:/ K W />`.
 
-.. subclause::
+.. step:: assert
 
-   And, since :g:`/ A B / <0429.g1:/ A B />` is :eq:`equal <0429.g1:/ A B / = 0429.g1:/ A K />` to :g:`/ A K / <0429.g1:/ A K />`,
+   The whole :g:`/ B A / <g1:/ B A />` is also :eq:`equal <g1:/ B A / = g1:/ K A />` to the whole :g:`/ K A / <g1:/ K A />` ;
 
-.. assertion::
+.. step:: assert [G.164] <G.164>
 
-   the square on :g:`/ A B / <0429.g1:/ A B />` is also :eq:`equal <0429.g1:/ A B / = 0429.g1:/ A K />` to the square on :g:`/ A K / <0429.g1:/ A K />`.
+   Therefore the remainder :g:`/ V A / <g1:/ V A />` is also :eq:`equal <g1:/ V A / = g1:/ W A />` to the remainder :g:`/ W A / <g1:/ W A />` ; therefore, as :g:`/ B V / <g1:/ B V />` is to :g:`/ V A / <g1:/ V A />`, so is :g:`/ K W / <g1:/ K W />` to :g:`/ W A / <g1:/ W A />` ; therefore :g:`/ W V / <g1:/ W V />` is parallel to :g:`/ K B / <g1:/ K B />`.
 
-.. subclause::
+.. step:: assert
 
-   And the squares on :g:`/ A X / <0429.g1:/ A X />`, :g:`/ X B / <0429.g1:/ X B />` are equal to the square on :g:`/ A B / <0429.g1:/ A B />`, for the angle at :g:`X <0429.g1:X>` is right ; :just:`[G.60] <G.60>` and the squares on :g:`/ A X / <0429.g1:/ A X />`, :g:`/ X K / <0429.g1:/ X K />` are equal to the square on :g:`/ A K / <0429.g1:/ A K />`. :just:`[G.60] <G.60>`
+   And, since each of :g:`/ P V / <g1:/ P V />`, :g:`/ S W / <g1:/ S W />` is at right angles to the plane of :g:`( B C D E ) <g1:( B C D E )>`,
 
-.. assertion::
+.. step:: assert [G.449] <G.449>
 
-   Therefore the squares on :g:`/ A X / <0429.g1:/ A X />`, :g:`/ X B / <0429.g1:/ X B />` are equal to the squares on :g:`/ A X / <0429.g1:/ A X />`, :g:`/ X K / <0429.g1:/ X K />`.
+   Therefore :g:`/ P V / <g1:/ P V />` is parallel to :g:`/ S W / <g1:/ S W />`.
 
-Let the square on :g:`/ A X / <0429.g1:/ A X />` be subtracted from each ;
+.. step:: assert
 
-.. assertion::
+   It was also proved :eq:`equal <g1:/ P V / = g1:/ S W />` to it ;
 
-   therefore the remainder, the square on :g:`/ B X / <0429.g1:/ B X />`, is :eq:`equal <0429.g1:/ B X / = 0429.g1:/ X K />` to the remainder, the square on :g:`/ X K / <0429.g1:/ X K />` ; therefore :g:`/ B X / <0429.g1:/ B X />` is :eq:`equal <0429.g1:/ B X / = 0429.g1:/ X K />` to :g:`/ X K / <0429.g1:/ X K />`.
+.. step:: assert [G.46] <G.46>
 
-.. assertion::
+   Therefore :g:`/ W V / <g1:/ W V />`, :g:`/ S P / <g1:/ S P />` are also :eq:`equal <g1:/ W V / = g1:/ S P />` and parallel.
 
-   Similarly we can prove that the straight lines joined from :g:`X <0429.g1:X>` to :g:`P <0429.g1:P>`, :g:`S <0429.g1:S>` are :eq:`equal <0429.g1:/ B X / = 0429.g1:/ X K />` to each of the straight lines :g:`/ B X / <0429.g1:/ B X />`, :g:`/ X K / <0429.g1:/ X K />`.
+.. step:: assert
 
-.. assertion::
+   And, since :g:`/ W V / <g1:/ W V />` is parallel to :g:`/ S P / <g1:/ S P />`, while :g:`/ W V / <g1:/ W V />` is parallel to :g:`/ K B / <g1:/ K B />`,
 
-   Therefore the circle described with centre :g:`X <0429.g1:X>` and distance one of the straight lines :g:`/ X B / <0429.g1:/ X B />`, :g:`/ X K / <0429.g1:/ X K />` will pass through :g:`P <0429.g1:P>`, :g:`S <0429.g1:S>` also, and :g:`< K B P S > <0429.g1:< K B P S >>` will be a quadrilateral in a circle.
+.. step:: assert [G.452] <G.452>
 
-.. subclause::
+   Therefore :g:`/ S P / <g1:/ S P />` is also parallel to :g:`/ K B / <g1:/ K B />`.
 
-   Now, since :g:`/ K B / <0429.g1:/ K B />` is greater than :g:`/ W V / <0429.g1:/ W V />`, while :g:`/ W V / <0429.g1:/ W V />` is :eq:`equal <0429.g1:/ W V / = 0429.g1:/ S P />` to :g:`/ S P / <0429.g1:/ S P />`,
+.. step:: assert
 
-.. assertion::
+   :g:`/ B P / <g1:/ B P />`, :g:`/ K S / <g1:/ K S />` join their extremities ;
 
-   therefore :g:`/ K B / <0429.g1:/ K B />` is greater than :g:`/ S P / <0429.g1:/ S P />`.
+.. step:: assert [G.450] <G.450>
 
-.. subclause::
+   Therefore the quadrilateral :g:`< K B P S > <g1:< K B P S >>` is in one plane, inasmuch as, if two straight lines be parallel, and points be taken at random on each of them, the straight line joining the points is in the same plane with the parallels.
 
-   But :g:`/ K B / <0429.g1:/ K B />` is :eq:`equal <0429.g1:/ K B / = 0429.g1:/ K S / = 0429.g1:/ B P />` to each of the straight lines :g:`/ K S / <0429.g1:/ K S />`, :g:`/ B P / <0429.g1:/ B P />`;
+.. step:: assert
 
-.. assertion::
+   For the same reason each of the quadrilaterals :g:`< S P Q T > <g1:< S P Q T >>`, :g:`< T Q R U > <g1:< T Q R U >>` is also in one plane.
 
-   therefore each of the straight lines :g:`/ K S / <0429.g1:/ K S />`, :g:`/ B P / <0429.g1:/ B P />` is greater than :g:`/ S P / <0429.g1:/ S P />`.
+.. step:: assert [G.444] <G.444>
 
-.. subclause::
+   :g:`< U R O > <g1:< U R O >>` is also in one plane.
 
-   And, since :g:`< K B P S > <0429.g1:< K B P S >>` is a quadrilateral in a circle, and :g:`/ K B / <0429.g1:/ K B />`, :g:`/ B P / <0429.g1:/ B P />`, :g:`/ K S / <0429.g1:/ K S />` are :eq:`equal <0429.g1:/ K B / = 0429.g1:/ B P / = 0429.g1:/ K S />`, and :g:`/ P S / <0429.g1:/ P S />` less, and :g:`/ B X / <0429.g1:/ B X />` is the radius of the circle,
+.. step:: assert
 
-.. assertion::
+   If then we conceive straight lines joined from :g:`P <g1:P>`, :g:`S <g1:S>`, :g:`Q <g1:Q>`, :g:`T <g1:T>`, :g:`R <g1:R>`, :g:`U <g1:U>` to :g:`A <g1:A>`, there will be constructed a certain polyhedral solid figure between the circumferences :g:`( B O ) <g1:( B O )>`, :g:`( K O ) <g1:( K O )>`, consisting of pyramids of which the quadrilaterals :g:`< K B P S > <g1:< K B P S >>`, :g:`< S P Q T > <g1:< S P Q T >>`, :g:`< T Q R U > <g1:< T Q R U >>` and :g:`< U R O > <g1:< U R O >>` are the bases and :g:`A <g1:A>` the vertex.
 
-   therefore the square on :g:`/ K B / <0429.g1:/ K B />` is greater than double of the square on :g:`/ B X / <0429.g1:/ B X />`.
+.. step:: assert
 
-Let :g:`/ K Z / <0429.g1:/ K Z />` be drawn from :g:`K <0429.g1:K>` perpendicular to :g:`/ B V / <0429.g1:/ B V />`.
+   And, if we make the same construction in the case of each of the sides :g:`/ K L / <g1:/ K L />`, :g:`/ L M / <g1:/ L M />`, :g:`/ M E / <g1:/ M E />` as in the case of :g:`/ B K / <g1:/ B K />`, and further in the case of the remaining three quadrants, there will be constructed a certain polyhedral figure inscribed in the sphere and contained by pyramids, of which the said quadrilaterals and :g:`< U R O > <g1:< U R O >>`, and the others corresponding to them, are the bases and :g:`A <g1:A>` the vertex.
 
-.. subclause::
+.. step:: construct
 
-   Then, since :g:`/ B D / <0429.g1:/ B D />` is less than double of :g:`/ D Z / <0429.g1:/ D Z />`, and, as :g:`/ B D / <0429.g1:/ B D />` is to :g:`/ D Z / <0429.g1:/ D Z />`, so is the rectangle :g:`/ D B / <0429.g1:/ D B />`, :g:`/ B Z / <0429.g1:/ B Z />` to the rectangle :g:`/ D Z / <0429.g1:/ D Z />`, :g:`/ Z B / <0429.g1:/ Z B />`, if a square be described upon :g:`/ B Z / <0429.g1:/ B Z />` and the parallelogram on :g:`/ Z D / <0429.g1:/ Z D />` be completed,
+   Let :g:`/ A X / <g1:/ A X />` be drawn from :g:`A <g1:A>` perpendicular to the plane of the quadrilateral :g:`< K B P S > <g1:< K B P S >>`
 
-.. assertion::
+.. step:: assert [G.454] <G.454>
 
-   then the rectangle :g:`/ D B / <0429.g1:/ D B />`, :g:`/ B Z / <0429.g1:/ B Z />` is also less than double of the rectangle :g:`/ D Z / <0429.g1:/ D Z />`, :g:`/ Z B / <0429.g1:/ Z B />`.
+   Let it meet the plane at :g:`X <g1:X>`
 
-.. subclause::
+.. step:: construct
 
-   And, if :g:`/ K D / <0429.g1:/ K D />` be joined, the rectangle :g:`/ D B / <0429.g1:/ D B />`, :g:`/ B Z / <0429.g1:/ B Z />` is equal to the square on :g:`/ B K / <0429.g1:/ B K />`, and the rectangle :g:`/ D Z / <0429.g1:/ D Z />`, :g:`/ Z B / <0429.g1:/ Z B />` equal to the square on :g:`/ K Z / <0429.g1:/ K Z />`; :just:`[G.110, G.171] <G.110, G.171>`
+   **segment** :g:`/ X B / <g1:/ X B />`, :g:`/ X K / <g1:/ X K />`
 
-.. assertion::
+.. step:: assert
 
-   therefore the square on :g:`/ K B / <0429.g1:/ K B />` is less than double of the square on :g:`/ K Z / <0429.g1:/ K Z />`.
+   Since :g:`/ A X / <g1:/ A X />` is at right angles to the plane of the quadrilateral :g:`< K B P S > <g1:< K B P S >>`,
 
-.. subclause::
+.. step:: assert [G.446] <G.446>
 
-   But the square on :g:`/ K B / <0429.g1:/ K B />` is greater than double of the square on :g:`/ B X / <0429.g1:/ B X />`;
+   Therefore it is also at right angles to all the straight lines which meet it and are in the plane of the quadrilateral. Therefore :g:`/ A X / <g1:/ A X />` is at right angles to each of :g:`/ B X / <g1:/ B X />`, :g:`/ X K / <g1:/ X K />`.
 
-.. assertion::
+.. step:: assert
 
-   therefore the square on :g:`/ K Z / <0429.g1:/ K Z />` is greater than the square on :g:`/ B X / <0429.g1:/ B X />`.
+   And, since :g:`/ A B / <g1:/ A B />` is :eq:`equal <g1:/ A B / = g1:/ A K />` to :g:`/ A K / <g1:/ A K />`,
 
-.. subclause::
+.. step:: assert
 
-   And, since :g:`/ B A / <0429.g1:/ B A />` is :eq:`equal <0429.g1:/ B A / = 0429.g1:/ K A />` to :g:`/ K A / <0429.g1:/ K A />`,
+   The square on :g:`/ A B / <g1:/ A B />` is also :eq:`equal <g1:/ A B / = g1:/ A K />` to the square on :g:`/ A K / <g1:/ A K />`.
 
-.. assertion::
+.. step:: assert [G.60] <G.60>
 
-   the square on :g:`/ B A / <0429.g1:/ B A />` is :eq:`equal <0429.g1:/ B A / = 0429.g1:/ A K />` to the square on :g:`/ A K / <0429.g1:/ A K />`.
+   The squares on :g:`/ A X / <g1:/ A X />`, :g:`/ X B / <g1:/ X B />` are equal to the square on :g:`/ A B / <g1:/ A B />`, for the angle at :g:`X <g1:X>` is right ; and the squares on :g:`/ A X / <g1:/ A X />`, :g:`/ X K / <g1:/ X K />` are equal to the square on :g:`/ A K / <g1:/ A K />`.
 
-.. subclause::
+.. step:: assert
 
-   And the squares on :g:`/ B X / <0429.g1:/ B X />`, :g:`/ X A / <0429.g1:/ X A />` are equal to the square on :g:`/ B A / <0429.g1:/ B A />`, and the squares on :g:`/ K Z / <0429.g1:/ K Z />`, :g:`/ Z A / <0429.g1:/ Z A />` equal to the square on :g:`/ K A / <0429.g1:/ K A />`; :just:`[G.60] <G.60>`
+   Therefore the squares on :g:`/ A X / <g1:/ A X />`, :g:`/ X B / <g1:/ X B />` are equal to the squares on :g:`/ A X / <g1:/ A X />`, :g:`/ X K / <g1:/ X K />`.
 
-.. assertion::
+.. step:: assert
 
-   therefore the squares on :g:`/ B X / <0429.g1:/ B X />`, :g:`/ X A / <0429.g1:/ X A />` are equal to the squares on :g:`/ K Z / <0429.g1:/ K Z />`, :g:`/ Z A / <0429.g1:/ Z A />`,
+   Let the square on :g:`/ A X / <g1:/ A X />` be subtracted from each
 
-.. assertion::
+.. step:: assert
 
-   and of these the square on :g:`/ K Z / <0429.g1:/ K Z />` is greater than the square on :g:`/ B X / <0429.g1:/ B X />`; therefore the remainder, the square on :g:`/ Z A / <0429.g1:/ Z A />`, is less than the square on :g:`/ X A / <0429.g1:/ X A />`.
+   Therefore the remainder, the square on :g:`/ B X / <g1:/ B X />`, is :eq:`equal <g1:/ B X / = g1:/ X K />` to the remainder, the square on :g:`/ X K / <g1:/ X K />` ; therefore :g:`/ B X / <g1:/ B X />` is :eq:`equal <g1:/ B X / = g1:/ X K />` to :g:`/ X K / <g1:/ X K />`.
 
-.. assertion::
+.. step:: assert
 
-   Therefore :g:`/ A X / <0429.g1:/ A X />` is greater than :g:`/ A Z / <0429.g1:/ A Z />`; therefore :g:`/ A X / <0429.g1:/ A X />` is much greater than :g:`/ A G / <0429.g1:/ A G />`.
+   Similarly we can prove that the straight lines joined from :g:`X <g1:X>` to :g:`P <g1:P>`, :g:`S <g1:S>` are :eq:`equal <g1:/ B X / = g1:/ X K />` to each of :g:`/ B X / <g1:/ B X />`, :g:`/ X K / <g1:/ X K />`.
 
-.. subclause::
+.. step:: assert
 
-   And :g:`/ A X / <0429.g1:/ A X />` is the perpendicular on one base of the polyhedron, and :g:`/ A G / <0429.g1:/ A G />` on the surface of the lesser sphere;
+   Therefore the circle described with center :g:`X <g1:X>` and distance one of :g:`/ X B / <g1:/ X B />`, :g:`/ X K / <g1:/ X K />` will pass through :g:`P <g1:P>`, :g:`S <g1:S>` also, and :g:`< K B P S > <g1:< K B P S >>` will be a quadrilateral in a circle.
 
-.. assertion::
+.. step:: assert
 
-   hence the polyhedron will not touch the lesser sphere on its surface.
+   Since :g:`/ K B / <g1:/ K B />` is greater than :g:`/ W V / <g1:/ W V />`, while :g:`/ W V / <g1:/ W V />` is :eq:`equal <g1:/ W V / = g1:/ S P />` to :g:`/ S P / <g1:/ S P />`,
 
-.. qed::
+.. step:: assert
 
-   Therefore, given two spheres about the same centre, a polyhedral solid has been inscribed in the greater sphere which does not touch the lesser sphere at its surface. :just:`Q. E. F.`
+   Therefore :g:`/ K B / <g1:/ K B />` is greater than :g:`/ S P / <g1:/ S P />`.
 
-.. assertion::
+.. step:: assert
 
-   PORISM. *But if in another sphere also a polyhedral solid be inscribed similar to the solid in the sphere :g:`( B C D E ) <0429.g1:( B C D E )>`, the polyhedral solid in the sphere :g:`( B C D E ) <0429.g1:( B C D E )>` has to the polyhedral solid in the other sphere the ratio triplicate of that which the diameter of the sphere :g:`( B C D E ) <0429.g1:( B C D E )>` has to the diameter of the other sphere.*
+   :g:`/ K B / <g1:/ K B />` is :eq:`equal <g1:/ K B / = g1:/ K S / = g1:/ B P />` to each of :g:`/ K S / <g1:/ K S />`, :g:`/ B P / <g1:/ B P />`;
 
-.. subclause::
+.. step:: assert
 
-   For, the solids being divided into their pyramids similar in multitude and arrangement, the pyramids will be similar.
+   Therefore each of :g:`/ K S / <g1:/ K S />`, :g:`/ B P / <g1:/ B P />` is greater than :g:`/ S P / <g1:/ S P />`.
 
-.. subclause::
+.. step:: assert
 
-   But similar pyramids are to one another in the triplicate ratio of their corresponding sides; :just:`[G.494] <G.494>`
+   And, since :g:`< K B P S > <g1:< K B P S >>` is a quadrilateral in a circle, and :g:`/ K B / <g1:/ K B />`, :g:`/ B P / <g1:/ B P />`, :g:`/ K S / <g1:/ K S />` are :eq:`equal <g1:/ K B / = g1:/ B P / = g1:/ K S />`, and :g:`/ P S / <g1:/ P S />` less, and :g:`/ B X / <g1:/ B X />` is the radius of the circle,
 
-.. assertion::
+.. step:: assert
 
-   therefore the pyramid of which the quadrilateral :g:`< K B P S > <0429.g1:< K B P S >>` is the base, and the point :g:`A <0429.g1:A>` the vertex, has to the similarly arranged pyramid in the other sphere the ratio triplicate of that which the corresponding side has to the corresponding side, that is, of that which the radius :g:`/ A B / <0429.g1:/ A B />` of the sphere about :g:`A <0429.g1:A>` as centre has to the radius of the other sphere.
+   Therefore the square on :g:`/ K B / <g1:/ K B />` is greater than double of the square on :g:`/ B X / <g1:/ B X />`.
 
-.. assertion::
+.. step:: construct
 
-   Similarly also each pyramid of those in the sphere about :g:`A <0429.g1:A>` as centre has to each similarly arranged pyramid of those in the other sphere the ratio triplicate of that which :g:`/ A B / <0429.g1:/ A B />` has to the radius of the other sphere.
+   Let :g:`/ K Z / <g1:/ K Z />` be drawn from :g:`K <g1:K>` perpendicular to :g:`/ B V / <g1:/ B V />`.
 
-.. assertion::
+.. step:: assert
 
-   And, as one of the antecedents is to one of the consequents, so are all the antecedents to all the consequents; :just:`[G.149] <G.149>`
+   Since :g:`/ B D / <g1:/ B D />` is less than double of :g:`/ D Z / <g1:/ D Z />`, and, as :g:`/ B D / <g1:/ B D />` is to :g:`/ D Z / <g1:/ D Z />`, so is the rectangle :g:`/ D B / <g1:/ D B />`, :g:`/ B Z / <g1:/ B Z />` to the rectangle :g:`/ D Z / <g1:/ D Z />`, :g:`/ Z B / <g1:/ Z B />`, if a square be described upon :g:`/ B Z / <g1:/ B Z />` and the parallelogram on :g:`/ Z D / <g1:/ Z D />` be completed,
 
-.. qed::
+.. step:: assert
 
-   hence the whole polyhedral solid in the sphere about :g:`A <0435.g1:A>` as centre has to the whole polyhedral solid in the other sphere the ratio triplicate of that which :g:`/ A B / <0435.g1:/ A B />` has to the radius of the other sphere, that is, of that which the diameter :g:`/ B D / <0435.g1:/ B D />` has to the diameter of the other sphere. :just:`Q. E. D.`
+   Then the rectangle :g:`/ D B / <g1:/ D B />`, :g:`/ B Z / <g1:/ B Z />` is also less than double of the rectangle :g:`/ D Z / <g1:/ D Z />`, :g:`/ Z B / <g1:/ Z B />`.
+
+.. step:: assert [G.110, G.171] <G.110, G.171>
+
+   And, if :g:`/ K D / <g1:/ K D />` be joined, the rectangle :g:`/ D B / <g1:/ D B />`, :g:`/ B Z / <g1:/ B Z />` is equal to the square on :g:`/ B K / <g1:/ B K />`, and the rectangle :g:`/ D Z / <g1:/ D Z />`, :g:`/ Z B / <g1:/ Z B />` equal to the square on :g:`/ K Z / <g1:/ K Z />`.
+
+.. step:: assert
+
+   Therefore the square on :g:`/ K B / <g1:/ K B />` is less than double of the square on :g:`/ K Z / <g1:/ K Z />`.
+
+.. step:: assert
+
+   The square on :g:`/ K B / <g1:/ K B />` is greater than double of the square on :g:`/ B X / <g1:/ B X />`;
+
+.. step:: assert
+
+   Therefore the square on :g:`/ K Z / <g1:/ K Z />` is greater than the square on :g:`/ B X / <g1:/ B X />`.
+
+.. step:: assert
+
+   And, since :g:`/ B A / <g1:/ B A />` is :eq:`equal <g1:/ B A / = g1:/ K A />` to :g:`/ K A / <g1:/ K A />`,
+
+.. step:: assert
+
+   The square on :g:`/ B A / <g1:/ B A />` is :eq:`equal <g1:/ B A / = g1:/ A K />` to the square on :g:`/ A K / <g1:/ A K />`.
+
+.. step:: assert [G.60] <G.60>
+
+   The squares on :g:`/ B X / <g1:/ B X />`, :g:`/ X A / <g1:/ X A />` are equal to the square on :g:`/ B A / <g1:/ B A />`, and the squares on :g:`/ K Z / <g1:/ K Z />`, :g:`/ Z A / <g1:/ Z A />` equal to the square on :g:`/ K A / <g1:/ K A />`.
+
+.. step:: assert
+
+   Therefore the squares on :g:`/ B X / <g1:/ B X />`, :g:`/ X A / <g1:/ X A />` are equal to the squares on :g:`/ K Z / <g1:/ K Z />`, :g:`/ Z A / <g1:/ Z A />`,
+
+.. step:: assert
+
+   And of these the square on :g:`/ K Z / <g1:/ K Z />` is greater than the square on :g:`/ B X / <g1:/ B X />`; therefore the remainder, the square on :g:`/ Z A / <g1:/ Z A />`, is less than the square on :g:`/ X A / <g1:/ X A />`.
+
+.. step:: assert
+
+   Therefore :g:`/ A X / <g1:/ A X />` is greater than :g:`/ A Z / <g1:/ A Z />`; therefore :g:`/ A X / <g1:/ A X />` is much greater than :g:`/ A G / <g1:/ A G />`.
+
+.. step:: assert
+
+   :g:`/ A X / <g1:/ A X />` is the perpendicular on one base of the polyhedron, and :g:`/ A G / <g1:/ A G />` on the surface of the lesser sphere;
+
+.. step:: assert
+
+   Hence the polyhedron will not touch the lesser sphere on its surface.
+
+.. step:: assert
+
+   PORISM. *But if in another sphere also a polyhedral solid be inscribed similar to the solid in the sphere :g:`( B C D E ) <g1:( B C D E )>`, the polyhedral solid in the sphere :g:`( B C D E ) <g1:( B C D E )>` has to the polyhedral solid in the other sphere the ratio triplicate of that which the diameter of the sphere :g:`( B C D E ) <g1:( B C D E )>` has to the diameter of the other sphere.*
+
+.. step:: assert
+
+   The solids being divided into their pyramids similar in multitude and arrangement, the pyramids will be similar.
+
+.. step:: assert [G.494] <G.494>
+
+   Similar pyramids are to one another in the triplicate ratio of their corresponding sides.
+
+.. step:: assert
+
+   Therefore the pyramid of which the quadrilateral :g:`< K B P S > <g1:< K B P S >>` is the base, and :g:`A <g1:A>` the vertex, has to the similarly arranged pyramid in the other sphere the ratio triplicate of that which the corresponding side has to the corresponding side, that is, of that which the radius :g:`/ A B / <g1:/ A B />` of the sphere about :g:`A <g1:A>` as center has to the radius of the other sphere.
+
+.. step:: assert
+
+   Similarly also each pyramid of those in the sphere about :g:`A <g1:A>` as center has to each similarly arranged pyramid of those in the other sphere the ratio triplicate of that which :g:`/ A B / <g1:/ A B />` has to the radius of the other sphere.
+
+.. step:: conclude [G.149] <G.149>
+
+   And, as one of the antecedents is to one of the consequents, so are all the antecedents to all the consequents.
 
 Dependency Graph
 ----------------
@@ -285,133 +353,133 @@ Dependency Graph
      node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11, color="#d6d3cd", fontcolor="#ffffff"];
      edge [color="#8c857b", fontcolor="#8c857b", arrowsize=0.75];
      rankdir="TB";
-     "G.1" [label="G.1", tooltip="G.1 (I.cn.1): Things which are equal to the same thing are also equal to one another.", fillcolor="#442222", URL="../G.1/index.html", target="_top"];
-     "G.2" [label="G.2", tooltip="G.2 (I.def.15): A circle is a plane figure contained by one line such that all the straight lines falling upon it from one point among those lying within the figure are equal to one another ;", fillcolor="#224422", URL="../G.2/index.html", target="_top"];
-     "G.3" [label="G.3", tooltip="G.3 (I.post.1): To draw a straight line from any point to any point.", fillcolor="#444422", URL="../G.3/index.html", target="_top"];
-     "G.4" [label="G.4", tooltip="G.4 (I.post.3): To describe a circle with any centre and distance.", fillcolor="#444422", URL="../G.4/index.html", target="_top"];
-     "G.5" [label="G.5", tooltip="G.5 (I.1): On a given finite straight line to construct an equilateral triangle.", fillcolor="#222244", URL="../G.5/index.html", target="_top"];
-     "G.6" [label="G.6", tooltip="G.6 (I.cn.3): If equals be subtracted from equals, the remainders are equal.", fillcolor="#442222", URL="../G.6/index.html", target="_top"];
-     "G.7" [label="G.7", tooltip="G.7 (I.post.2): To produce a finite straight line continuously in a straight line.", fillcolor="#444422", URL="../G.7/index.html", target="_top"];
-     "G.8" [label="G.8", tooltip="G.8 (I.2): To place at a given point (as an extremity) a straight line equal to a given straight line.", fillcolor="#222244", URL="../G.8/index.html", target="_top"];
-     "G.9" [label="G.9", tooltip="G.9 (I.3): Given two unequal straight lines, to cut off from the greater a straight line equal to the less.", fillcolor="#222244", URL="../G.9/index.html", target="_top"];
-     "G.10" [label="G.10", tooltip="G.10 (I.cn.4): [7] 4. Things which coincide with one another are equal to one another.", fillcolor="#442222", URL="../G.10/index.html", target="_top"];
-     "G.11" [label="G.11", tooltip="G.11 (I.4): If two triangles have the two sides equal to two sides respectively, and have the angles contained by the equal straight lines equal, they will also have the base equal to the base...", fillcolor="#222244", URL="../G.11/index.html", target="_top"];
-     "G.12" [label="G.12", tooltip="G.12 (I.5): In isosceles triangles the angles at the base are equal to one another, and, if the equal straight lines be produced further, the angles under the base will be equal to one another...", fillcolor="#222244", URL="../G.12/index.html", target="_top"];
-     "G.14" [label="G.14", tooltip="G.14 (I.7): Given two straight lines constructed on a straight line (from its extremities) and meeting in a point, there cannot be constructed on the same straight line (from its extremities),...", fillcolor="#222244", URL="../G.14/index.html", target="_top"];
-     "G.15" [label="G.15", tooltip="G.15 (I.8): If two triangles have the two sides equal to two sides respectively, and have also the base equal to the base, they will also have the angles equal which are contained by the equal...", fillcolor="#222244", URL="../G.15/index.html", target="_top"];
-     "G.16" [label="G.16", tooltip="G.16 (I.9): To bisect a given rectilineal angle.", fillcolor="#222244", URL="../G.16/index.html", target="_top"];
-     "G.17" [label="G.17", tooltip="G.17 (I.10): To bisect a given finite straight line.", fillcolor="#222244", URL="../G.17/index.html", target="_top"];
-     "G.18" [label="G.18", tooltip="G.18 (I.def.10): When a straight line set up on a straight line makes the adjacent angles equal to one another, each of the equal angles is right, and the straight line standing on the other is cal...", fillcolor="#224422", URL="../G.18/index.html", target="_top"];
-     "G.19" [label="G.19", tooltip="G.19 (I.11): To draw a straight line at right angles to a given straight line from a given point on it.", fillcolor="#222244", URL="../G.19/index.html", target="_top"];
-     "G.20" [label="G.20", tooltip="G.20 (I.12): To a given infinite straight line, from a given point which is not on it, to draw a perpendicular straight line.", fillcolor="#222244", URL="../G.20/index.html", target="_top"];
-     "G.21" [label="G.21", tooltip="G.21 (I.cn.2): If equals be added to equals, the wholes are equal.", fillcolor="#442222", URL="../G.21/index.html", target="_top"];
-     "G.22" [label="G.22", tooltip="G.22 (I.13): If a straight line set up on a straight line make angles, it will make either two right angles or angles equal to two right angles.", fillcolor="#222244", URL="../G.22/index.html", target="_top"];
-     "G.23" [label="G.23", tooltip="G.23 (I.post.4): That all right angles are equal to one another.", fillcolor="#444422", URL="../G.23/index.html", target="_top"];
-     "G.24" [label="G.24", tooltip="G.24 (I.14): If with any straight line, and at a point on it, two straight lines not lying on the same side make the adjacent angles equal to two right angles, the two straight lines will be in...", fillcolor="#222244", URL="../G.24/index.html", target="_top"];
-     "G.25" [label="G.25", tooltip="G.25 (I.15): If two straight lines cut one another, they make the vertical angles equal to one another.", fillcolor="#222244", URL="../G.25/index.html", target="_top"];
-     "G.26" [label="G.26", tooltip="G.26 (I.cn.5): [8] 5. The whole is greater than the part.", fillcolor="#442222", URL="../G.26/index.html", target="_top"];
-     "G.27" [label="G.27", tooltip="G.27 (I.16): In any triangle, if one of the sides be produced, the exterior angle is greater than either of the interior and opposite angles.", fillcolor="#222244", URL="../G.27/index.html", target="_top"];
-     "G.28" [label="G.28", tooltip="G.28 (I.17): In any triangle two angles taken together in any manner are less than two right angles.", fillcolor="#222244", URL="../G.28/index.html", target="_top"];
-     "G.29" [label="G.29", tooltip="G.29 (I.18): In any triangle the greater side subtends the greater angle.", fillcolor="#222244", URL="../G.29/index.html", target="_top"];
-     "G.30" [label="G.30", tooltip="G.30 (I.19): In any triangle the greater angle is subtended by the greater side.", fillcolor="#222244", URL="../G.30/index.html", target="_top"];
-     "G.31" [label="G.31", tooltip="G.31 (I.20): In any triangle two sides taken together in any manner are greater than the remaining one.", fillcolor="#222244", URL="../G.31/index.html", target="_top"];
-     "G.33" [label="G.33", tooltip="G.33 (I.22): Out of three straight lines, which are equal to three given straight lines, to construct a triangle: thus it is necessary that two of the straight lines taken together in any manne...", fillcolor="#222244", URL="../G.33/index.html", target="_top"];
-     "G.34" [label="G.34", tooltip="G.34 (I.23): On a given straight line and at a point on it to construct a rectilineal angle equal to a given rectilineal angle.", fillcolor="#222244", URL="../G.34/index.html", target="_top"];
-     "G.37" [label="G.37", tooltip="G.37 (I.26): If two triangles have the two angles equal to two angles respectively, and one side equal to one side, namely, either the side adjoining the equal angles, or that subtending one of...", fillcolor="#222244", URL="../G.37/index.html", target="_top"];
-     "G.38" [label="G.38", tooltip="G.38 (I.def.23): Parallel straight lines are straight lines which, being in the same plane and being produced indefinitely in both directions, do not meet one another in either direction.", fillcolor="#224422", URL="../G.38/index.html", target="_top"];
-     "G.39" [label="G.39", tooltip="G.39 (I.27): If a straight line falling on two straight lines make the alternate angles equal to one another, the straight lines will be parallel to one another.", fillcolor="#222244", URL="../G.39/index.html", target="_top"];
-     "G.40" [label="G.40", tooltip="G.40 (I.28): If a straight line falling on two straight lines make the exterior angle equal to the interior and opposite angle on the same side, or the interior angles on the same side equal to...", fillcolor="#222244", URL="../G.40/index.html", target="_top"];
-     "G.41" [label="G.41", tooltip="G.41 (I.post.5): That, if a straight line falling on two straight lines make the interior angles on the same side less than two right angles, the two straight lines, if produced indefinitely, meet ...", fillcolor="#444422", URL="../G.41/index.html", target="_top"];
-     "G.42" [label="G.42", tooltip="G.42 (I.29): A straight line falling on parallel straight lines makes the alternate angles equal to one another, the exterior angle equal to the interior and opposite angle, and the interior an...", fillcolor="#222244", URL="../G.42/index.html", target="_top"];
-     "G.43" [label="G.43", tooltip="G.43 (I.30): Straight lines parallel to the same straight line are also parallel to one another.", fillcolor="#222244", URL="../G.43/index.html", target="_top"];
-     "G.44" [label="G.44", tooltip="G.44 (I.31): Through a given point to draw a straight line parallel to a given straight line.", fillcolor="#222244", URL="../G.44/index.html", target="_top"];
-     "G.45" [label="G.45", tooltip="G.45 (I.32): In any triangle, if one of the sides be produced, the exterior angle is equal to the two interior and opposite angles, and the three interior angles of the triangle are equal to tw...", fillcolor="#222244", URL="../G.45/index.html", target="_top"];
-     "G.46" [label="G.46", tooltip="G.46 (I.33): The straight lines joining equal and parallel straight lines (at the extremities which are) in the same directions (respectively) are themselves also equal and parallel.", fillcolor="#222244", URL="../G.46/index.html", target="_top"];
-     "G.47" [label="G.47", tooltip="G.47 (I.34): In parallelogrammic areas the opposite sides and angles are equal to one another, and the diameter bisects the areas.", fillcolor="#222244", URL="../G.47/index.html", target="_top"];
-     "G.48" [label="G.48", tooltip="G.48 (I.35): Parallelograms which are on the same base and in the same parallels are equal to one another.", fillcolor="#222244", URL="../G.48/index.html", target="_top"];
-     "G.49" [label="G.49", tooltip="G.49 (I.36): Parallelograms which are on equal bases and in the same parallels are equal to one another.", fillcolor="#222244", URL="../G.49/index.html", target="_top"];
-     "G.50" [label="G.50", tooltip="G.50 (I.37): Triangles which are on the same base and in the same parallels are equal to one another.", fillcolor="#222244", URL="../G.50/index.html", target="_top"];
-     "G.51" [label="G.51", tooltip="G.51 (I.38): Triangles which are on equal bases and in the same parallels are equal to one another.", fillcolor="#222244", URL="../G.51/index.html", target="_top"];
-     "G.52" [label="G.52", tooltip="G.52 (I.39): Equal triangles which are on the same base and on the same side are also in the same parallels.", fillcolor="#222244", URL="../G.52/index.html", target="_top"];
-     "G.54" [label="G.54", tooltip="G.54 (I.41): If a parallelogram have the same base with a triangle and be in the same parallels, the parallelogram is double of the triangle.", fillcolor="#222244", URL="../G.54/index.html", target="_top"];
-     "G.55" [label="G.55", tooltip="G.55 (I.42): To construct, in a given rectilineal angle, a parallelogram equal to a given triangle.", fillcolor="#222244", URL="../G.55/index.html", target="_top"];
-     "G.56" [label="G.56", tooltip="G.56 (I.43): In any parallelogram the complements of the parallelograms about the diameter are equal to one another.", fillcolor="#222244", URL="../G.56/index.html", target="_top"];
-     "G.57" [label="G.57", tooltip="G.57 (I.44): To a given straight line to apply, in a given rectilineal angle, a parallelogram equal to a given triangle.", fillcolor="#222244", URL="../G.57/index.html", target="_top"];
-     "G.58" [label="G.58", tooltip="G.58 (I.45): To construct, in a given rectilineal angle, a parallelogram equal to a given rectilineal figure.", fillcolor="#222244", URL="../G.58/index.html", target="_top"];
-     "G.59" [label="G.59", tooltip="G.59 (I.46): On a given straight line to describe a square.", fillcolor="#222244", URL="../G.59/index.html", target="_top"];
-     "G.60" [label="G.60", tooltip="G.60 (I.47): In right-angled triangles the square on the side subtending the right angle is equal to the squares on the sides containing the right angle.", fillcolor="#222244", URL="../G.60/index.html", target="_top"];
-     "G.76" [label="G.76", tooltip="G.76 (III.1): To find the centre of a given circle.", fillcolor="#222244", URL="../G.76/index.html", target="_top"];
+     "G.1" [label="G.1", tooltip="G.1 (I.cn.1): Things equal to the same thing are equal to one another.", fillcolor="#442222", URL="../G.1/index.html", target="_top"];
+     "G.2" [label="G.2", tooltip="G.2 (I.def.15): A circle is a plane figure contained by one line such that all segments falling upon it from its center are equal.", fillcolor="#224422", URL="../G.2/index.html", target="_top"];
+     "G.3" [label="G.3", tooltip="G.3 (I.post.1): Construct a segment between any two points.", fillcolor="#444422", URL="../G.3/index.html", target="_top"];
+     "G.4" [label="G.4", tooltip="G.4 (I.post.3): Construct a circle with any center and radius.", fillcolor="#444422", URL="../G.4/index.html", target="_top"];
+     "G.5" [label="G.5", tooltip="G.5 (I.1): Construct an equilateral triangle on a given finite segment.", fillcolor="#222244", URL="../G.5/index.html", target="_top"];
+     "G.6" [label="G.6", tooltip="G.6 (I.cn.3): If equals are subtracted from equals, the remainders are equal.", fillcolor="#442222", URL="../G.6/index.html", target="_top"];
+     "G.7" [label="G.7", tooltip="G.7 (I.post.2): Extend a finite segment continuously in a straight line.", fillcolor="#444422", URL="../G.7/index.html", target="_top"];
+     "G.8" [label="G.8", tooltip="G.8 (I.2): Construct at a given point a segment equal to a given segment.", fillcolor="#222244", URL="../G.8/index.html", target="_top"];
+     "G.9" [label="G.9", tooltip="G.9 (I.3): Cut off from the greater of two unequal segments a segment equal to the less.", fillcolor="#222244", URL="../G.9/index.html", target="_top"];
+     "G.10" [label="G.10", tooltip="G.10 (I.cn.4): Things that coincide with one another are equal.", fillcolor="#442222", URL="../G.10/index.html", target="_top"];
+     "G.11" [label="G.11", tooltip="G.11 (I.4): Triangles with two sides and the included angle equal are congruent (SAS).", fillcolor="#222244", URL="../G.11/index.html", target="_top"];
+     "G.12" [label="G.12", tooltip="G.12 (I.5): In an isosceles triangle, the angles at the base are equal, and if the equal sides are extended, the angles under the base are equal.", fillcolor="#222244", URL="../G.12/index.html", target="_top"];
+     "G.14" [label="G.14", tooltip="G.14 (I.7): On the same segment and on the same side, there cannot be constructed two distinct triangles with both pairs of conterminous sides equal.", fillcolor="#222244", URL="../G.14/index.html", target="_top"];
+     "G.15" [label="G.15", tooltip="G.15 (I.8): Triangles with all three corresponding sides equal have their corresponding angles equal (SSS).", fillcolor="#222244", URL="../G.15/index.html", target="_top"];
+     "G.16" [label="G.16", tooltip="G.16 (I.9): Bisect a given angle.", fillcolor="#222244", URL="../G.16/index.html", target="_top"];
+     "G.17" [label="G.17", tooltip="G.17 (I.10): Bisect a given finite segment.", fillcolor="#222244", URL="../G.17/index.html", target="_top"];
+     "G.18" [label="G.18", tooltip="G.18 (I.def.10): When a straight line standing on a straight line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing line is perpendicular to that on which...", fillcolor="#224422", URL="../G.18/index.html", target="_top"];
+     "G.19" [label="G.19", tooltip="G.19 (I.11): Construct a line at right angles to a given line from a given point on it.", fillcolor="#222244", URL="../G.19/index.html", target="_top"];
+     "G.20" [label="G.20", tooltip="G.20 (I.12): Construct a perpendicular to a given infinite line from a given point not on it.", fillcolor="#222244", URL="../G.20/index.html", target="_top"];
+     "G.21" [label="G.21", tooltip="G.21 (I.cn.2): If equals are added to equals, the wholes are equal.", fillcolor="#442222", URL="../G.21/index.html", target="_top"];
+     "G.22" [label="G.22", tooltip="G.22 (I.13): A ray standing on a line makes either two right angles or adjacent angles summing to two right angles.", fillcolor="#222244", URL="../G.22/index.html", target="_top"];
+     "G.23" [label="G.23", tooltip="G.23 (I.post.4): All right angles are equal.", fillcolor="#444422", URL="../G.23/index.html", target="_top"];
+     "G.24" [label="G.24", tooltip="G.24 (I.14): If two rays at a point on a line on opposite sides make adjacent angles summing to two right angles, the two rays are collinear.", fillcolor="#222244", URL="../G.24/index.html", target="_top"];
+     "G.25" [label="G.25", tooltip="G.25 (I.15): Intersecting lines make their vertical angles equal.", fillcolor="#222244", URL="../G.25/index.html", target="_top"];
+     "G.26" [label="G.26", tooltip="G.26 (I.cn.5): The whole is greater than the part.", fillcolor="#442222", URL="../G.26/index.html", target="_top"];
+     "G.27" [label="G.27", tooltip="G.27 (I.16): In any triangle, if one side is extended, the exterior angle is greater than either opposite interior angle.", fillcolor="#222244", URL="../G.27/index.html", target="_top"];
+     "G.28" [label="G.28", tooltip="G.28 (I.17): In any triangle, the sum of any two angles is less than two right angles.", fillcolor="#222244", URL="../G.28/index.html", target="_top"];
+     "G.29" [label="G.29", tooltip="G.29 (I.18): In any triangle, the greater side subtends the greater angle.", fillcolor="#222244", URL="../G.29/index.html", target="_top"];
+     "G.30" [label="G.30", tooltip="G.30 (I.19): In any triangle, the greater angle is subtended by the greater side.", fillcolor="#222244", URL="../G.30/index.html", target="_top"];
+     "G.31" [label="G.31", tooltip="G.31 (I.20): In any triangle, the sum of any two sides is greater than the remaining side.", fillcolor="#222244", URL="../G.31/index.html", target="_top"];
+     "G.33" [label="G.33", tooltip="G.33 (I.22): Construct a triangle from three segments equal to three given segments satisfying the triangle inequality.", fillcolor="#222244", URL="../G.33/index.html", target="_top"];
+     "G.34" [label="G.34", tooltip="G.34 (I.23): Construct on a given line at a given point an angle equal to a given angle.", fillcolor="#222244", URL="../G.34/index.html", target="_top"];
+     "G.37" [label="G.37", tooltip="G.37 (I.26): Triangles with two angles and one corresponding side equal are congruent (ASA / AAS).", fillcolor="#222244", URL="../G.37/index.html", target="_top"];
+     "G.38" [label="G.38", tooltip="G.38 (I.def.23): Parallel lines are straight lines in the same plane which, produced indefinitely in both directions, do not meet.", fillcolor="#224422", URL="../G.38/index.html", target="_top"];
+     "G.39" [label="G.39", tooltip="G.39 (I.27): If a transversal cutting two lines makes the alternate interior angles equal, the lines are parallel.", fillcolor="#222244", URL="../G.39/index.html", target="_top"];
+     "G.40" [label="G.40", tooltip="G.40 (I.28): If a transversal cutting two lines makes the exterior angle equal to the opposite interior angle, or interior angles on the same side supplementary, the lines are parallel.", fillcolor="#222244", URL="../G.40/index.html", target="_top"];
+     "G.41" [label="G.41", tooltip="G.41 (I.post.5): Two lines intersected by a transversal with interior angles on one side summing to less than two right angles meet on that side.", fillcolor="#444422", URL="../G.41/index.html", target="_top"];
+     "G.42" [label="G.42", tooltip="G.42 (I.29): A transversal cutting parallel lines makes alternate interior angles equal, exterior and opposite interior angles equal, and same-side interior angles supplementary.", fillcolor="#222244", URL="../G.42/index.html", target="_top"];
+     "G.43" [label="G.43", tooltip="G.43 (I.30): Lines parallel to the same line are parallel to one another.", fillcolor="#222244", URL="../G.43/index.html", target="_top"];
+     "G.44" [label="G.44", tooltip="G.44 (I.31): Construct through a given point a line parallel to a given line.", fillcolor="#222244", URL="../G.44/index.html", target="_top"];
+     "G.45" [label="G.45", tooltip="G.45 (I.32): In any triangle, an exterior angle equals the sum of the two opposite interior angles, and the three interior angles sum to two right angles.", fillcolor="#222244", URL="../G.45/index.html", target="_top"];
+     "G.46" [label="G.46", tooltip="G.46 (I.33): Segments joining the endpoints of equal and parallel segments in the same directions are themselves equal and parallel.", fillcolor="#222244", URL="../G.46/index.html", target="_top"];
+     "G.47" [label="G.47", tooltip="G.47 (I.34): In a parallelogram, opposite sides and opposite angles are equal, and the diagonal bisects the area.", fillcolor="#222244", URL="../G.47/index.html", target="_top"];
+     "G.48" [label="G.48", tooltip="G.48 (I.35): Parallelograms on the same base and in the same parallels are equal in area.", fillcolor="#222244", URL="../G.48/index.html", target="_top"];
+     "G.49" [label="G.49", tooltip="G.49 (I.36): Parallelograms on equal bases and in the same parallels are equal in area.", fillcolor="#222244", URL="../G.49/index.html", target="_top"];
+     "G.50" [label="G.50", tooltip="G.50 (I.37): Triangles on the same base and in the same parallels are equal in area.", fillcolor="#222244", URL="../G.50/index.html", target="_top"];
+     "G.51" [label="G.51", tooltip="G.51 (I.38): Triangles on equal bases and in the same parallels are equal in area.", fillcolor="#222244", URL="../G.51/index.html", target="_top"];
+     "G.52" [label="G.52", tooltip="G.52 (I.39): Equal triangles on the same base and on the same side lie in the same parallels.", fillcolor="#222244", URL="../G.52/index.html", target="_top"];
+     "G.54" [label="G.54", tooltip="G.54 (I.41): If a parallelogram shares the same base with a triangle and lies in the same parallels, the parallelogram is double the triangle.", fillcolor="#222244", URL="../G.54/index.html", target="_top"];
+     "G.55" [label="G.55", tooltip="G.55 (I.42): Construct, in a given angle, a parallelogram equal in area to a given triangle.", fillcolor="#222244", URL="../G.55/index.html", target="_top"];
+     "G.56" [label="G.56", tooltip="G.56 (I.43): In any parallelogram, the complements of the parallelograms about the diagonal are equal in area.", fillcolor="#222244", URL="../G.56/index.html", target="_top"];
+     "G.57" [label="G.57", tooltip="G.57 (I.44): Apply to a given segment, in a given angle, a parallelogram equal in area to a given triangle.", fillcolor="#222244", URL="../G.57/index.html", target="_top"];
+     "G.58" [label="G.58", tooltip="G.58 (I.45): Construct, in a given angle, a parallelogram equal in area to a given polygon.", fillcolor="#222244", URL="../G.58/index.html", target="_top"];
+     "G.59" [label="G.59", tooltip="G.59 (I.46): Construct a square on a given segment.", fillcolor="#222244", URL="../G.59/index.html", target="_top"];
+     "G.60" [label="G.60", tooltip="G.60 (I.47): In a right-angled triangle, the square on the hypotenuse equals the sum of the squares on the two legs (Pythagorean Theorem).", fillcolor="#222244", URL="../G.60/index.html", target="_top"];
+     "G.76" [label="G.76", tooltip="G.76 (III.1): Find the centre of a given circle.", fillcolor="#222244", URL="../G.76/index.html", target="_top"];
      "G.80" [label="G.80", tooltip="G.80 (III.5): If two circles cut one another, they will not have the same centre.", fillcolor="#222244", URL="../G.80/index.html", target="_top"];
      "G.85" [label="G.85", tooltip="G.85 (III.10): A circle does not cut a circle at more points than two.", fillcolor="#222244", URL="../G.85/index.html", target="_top"];
      "G.98" [label="G.98", tooltip="G.98 (III.20): In a circle the angle at the centre is double of the angle at the circumference, when the angles have the same circumference as base.", fillcolor="#222244", URL="../G.98/index.html", target="_top"];
-     "G.99" [label="G.99", tooltip="G.99 (III.21): In a circle the angles in the same segment are equal to one another.", fillcolor="#222244", URL="../G.99/index.html", target="_top"];
+     "G.99" [label="G.99", tooltip="G.99 (III.21): In a circle the angles in the same segment are equal.", fillcolor="#222244", URL="../G.99/index.html", target="_top"];
      "G.100" [label="G.100", tooltip="G.100 (III.22): The opposite angles of quadrilaterals in circles are equal to two right angles.", fillcolor="#222244", URL="../G.100/index.html", target="_top"];
-     "G.101" [label="G.101", tooltip="G.101 (III.def.11): Similar segments of circles are those which admit equal angles, or in which the angles are equal to one another.", fillcolor="#224422", URL="../G.101/index.html", target="_top"];
-     "G.103" [label="G.103", tooltip="G.103 (III.24): Similar segments of circles on equal straight lines are equal to one another.", fillcolor="#222244", URL="../G.103/index.html", target="_top"];
+     "G.101" [label="G.101", tooltip="G.101 (III.def.11): Similar segments of circles are those which admit equal angles, or in which the angles are equal.", fillcolor="#224422", URL="../G.101/index.html", target="_top"];
+     "G.103" [label="G.103", tooltip="G.103 (III.24): Similar segments of circles on equal straight lines are equal.", fillcolor="#222244", URL="../G.103/index.html", target="_top"];
      "G.105" [label="G.105", tooltip="G.105 (III.26): In equal circles equal angles stand on equal circumferences, whether they stand at the centres or at the circumferences.", fillcolor="#222244", URL="../G.105/index.html", target="_top"];
-     "G.106" [label="G.106", tooltip="G.106 (III.27): In equal circles angles standing on equal circumferences are equal to one another, whether they stand at the centres or at the circumferences.", fillcolor="#222244", URL="../G.106/index.html", target="_top"];
+     "G.106" [label="G.106", tooltip="G.106 (III.27): In equal circles angles standing on equal circumferences are equal, whether they stand at the centres or at the circumferences.", fillcolor="#222244", URL="../G.106/index.html", target="_top"];
      "G.110" [label="G.110", tooltip="G.110 (III.31): In a circle the angle in the semicircle is right, that in a greater segment less than a right angle, and that in a less segment greater than a right angle; and further the angle of...", fillcolor="#222244", URL="../G.110/index.html", target="_top"];
      "G.135" [label="G.135", tooltip="G.135 (V.1): If there be any number of magnitudes whatever which are, respectively, equimultiples of any magnitudes equal in multitude, then, whatever multiple one of the magnitudes is of one, ...", fillcolor="#222244", URL="../G.135/index.html", target="_top"];
      "G.136" [label="G.136", tooltip="G.136 (V.2): If a first magnitude be the same multiple of a second that a third is of a fourth, and a fifth also be the same multiple of the second that a sixth is of the fourth, the sum of the...", fillcolor="#222244", URL="../G.136/index.html", target="_top"];
-     "G.137" [label="G.137", tooltip="G.137 (V.3): If a first magnitude be the same multiple of a second that a third is of a fourth, and if equimultiples be taken of the first and third, then also ex aequali the magnitudes taken w...", fillcolor="#222244", URL="../G.137/index.html", target="_top"];
-     "G.138" [label="G.138", tooltip="G.138 (V.def.5): Magnitudes are said to be in the same ratio, the first to the second and the third to the fourth, when, if any equimultiples whatever be taken of the first and third, and any equim...", fillcolor="#224422", URL="../G.138/index.html", target="_top"];
+     "G.137" [label="G.137", tooltip="G.137 (V.3): If a first magnitude be the same multiple of a second that a third is of a fourth, and if equimultiples be taken of the first and third, then alsoex aequali the magnitudes taken is...", fillcolor="#222244", URL="../G.137/index.html", target="_top"];
+     "G.138" [label="G.138", tooltip="G.138 (V.def.5): Magnitudes are said tobe in the same ratio, the first to the second and the third to the fourth, when, if any equimultiples whatever be taken of the first and third, and any equimu...", fillcolor="#224422", URL="../G.138/index.html", target="_top"];
      "G.139" [label="G.139", tooltip="G.139 (V.4): If a first magnitude have to a second the same ratio as a third to a fourth, any equimultiples whatever of the first and third will also have the same ratio to any equimultiples wh...", fillcolor="#222244", URL="../G.139/index.html", target="_top"];
      "G.142" [label="G.142", tooltip="G.142 (V.7): Equal magnitudes have to the same the same ratio, as also has the same to equal magnitudes.", fillcolor="#222244", URL="../G.142/index.html", target="_top"];
-     "G.143" [label="G.143", tooltip="G.143 (V.def.4): Magnitudes are said to have a ratio to one another which are capable, when multiplied, of exceeding one another.", fillcolor="#224422", URL="../G.143/index.html", target="_top"];
+     "G.143" [label="G.143", tooltip="G.143 (V.def.4): Magnitudes are said tohave a ratio to one another which are capable, when multiplied, of exceeding one another.", fillcolor="#224422", URL="../G.143/index.html", target="_top"];
      "G.144" [label="G.144", tooltip="G.144 (V.def.7): When, of the equimultiples, the multiple of the first magnitude exceeds the multiple of the second, but the multiple of the third does not exceed the multiple of the fourth, then t...", fillcolor="#224422", URL="../G.144/index.html", target="_top"];
      "G.145" [label="G.145", tooltip="G.145 (V.8): Of unequal magnitudes, the greater has to the same a greater ratio than the less has; and the same has to the less a greater ratio than it has to the greater.", fillcolor="#222244", URL="../G.145/index.html", target="_top"];
-     "G.146" [label="G.146", tooltip="G.146 (V.9): Magnitudes which have the same ratio to the same are equal to one another ; and magnitudes to which the same has the same ratio are equal.", fillcolor="#222244", URL="../G.146/index.html", target="_top"];
-     "G.147" [label="G.147", tooltip="G.147 (V.10): Of magnitudes which have a ratio to the same, that which has a greater ratio is greater ; and that to which the same has a greater ratio is less.", fillcolor="#222244", URL="../G.147/index.html", target="_top"];
+     "G.146" [label="G.146", tooltip="G.146 (V.9): Magnitudes which have the same ratio to the same are equal; and magnitudes to which the same has the same ratio are equal.", fillcolor="#222244", URL="../G.146/index.html", target="_top"];
+     "G.147" [label="G.147", tooltip="G.147 (V.10): Of magnitudes which have a ratio to the same, that which has a greater ratio is greater; and that to which the same has a greater ratio is less.", fillcolor="#222244", URL="../G.147/index.html", target="_top"];
      "G.148" [label="G.148", tooltip="G.148 (V.11): Ratios which are the same with the same ratio are also the same with one another.", fillcolor="#222244", URL="../G.148/index.html", target="_top"];
      "G.149" [label="G.149", tooltip="G.149 (V.12): If any number of magnitudes be proportional, as one of the antecedents is to one of the consequents, so will all the antecedents be to all the consequents.", fillcolor="#222244", URL="../G.149/index.html", target="_top"];
      "G.150" [label="G.150", tooltip="G.150 (V.13): If a first magnitude have to a second the same ratio as a third to a fourth, and the third have to the fourth a greater ratio than a fifth has to a sixth, the first will also have ...", fillcolor="#222244", URL="../G.150/index.html", target="_top"];
-     "G.151" [label="G.151", tooltip="G.151 (V.14): If a first magnitude have to a second the same ratio as a third has to a fourth, and the first be greater than the third, the second will also be greater than the fourth ; if equal...", fillcolor="#222244", URL="../G.151/index.html", target="_top"];
+     "G.151" [label="G.151", tooltip="G.151 (V.14): If a first magnitude have to a second the same ratio as a third has to a fourth, and the first be greater than the third, the second is greater than the fourth; if equal, equal; an...", fillcolor="#222244", URL="../G.151/index.html", target="_top"];
      "G.152" [label="G.152", tooltip="G.152 (V.15): Parts have the same ratio as the same multiples of them taken in corresponding order.", fillcolor="#222244", URL="../G.152/index.html", target="_top"];
-     "G.153" [label="G.153", tooltip="G.153 (V.16): If four magnitudes be proportional, they will also be proportional alternately.", fillcolor="#222244", URL="../G.153/index.html", target="_top"];
-     "G.157" [label="G.157", tooltip="G.157 (V.20): If there be three magnitudes, and others equal to them in multitude, which taken two and two are in the same ratio, and if ex aequali the first be greater than the third, the fourt...", fillcolor="#222244", URL="../G.157/index.html", target="_top"];
-     "G.159" [label="G.159", tooltip="G.159 (V.22): If there be any number of magnitudes whatever, and others equal to them in multitude, which taken two and two together are in the same ratio, they will also be in the same ratio ex...", fillcolor="#222244", URL="../G.159/index.html", target="_top"];
+     "G.153" [label="G.153", tooltip="G.153 (V.16): If four magnitudes be proportional, they is proportional alternately.", fillcolor="#222244", URL="../G.153/index.html", target="_top"];
+     "G.157" [label="G.157", tooltip="G.157 (V.20): If there be three magnitudes, and others equal to them in multitude, which taken two and two are in the same ratio, and ifex aequali the first be greater than the third, the fourth...", fillcolor="#222244", URL="../G.157/index.html", target="_top"];
+     "G.159" [label="G.159", tooltip="G.159 (V.22): If there be any number of magnitudes whatever, and others equal to them in multitude, which taken two and two together are in the same ratio, they is in the same ratio ex aequali.", fillcolor="#222244", URL="../G.159/index.html", target="_top"];
      "G.163" [label="G.163", tooltip="G.163 (VI.1): Triangles and parallelograms which are under the same height are to one another as their bases.", fillcolor="#222244", URL="../G.163/index.html", target="_top"];
      "G.164" [label="G.164", tooltip="G.164 (VI.2): If a straight line be drawn parallel to one of the sides of a triangle, it will cut the sides of the triangle proportionally; and, if the sides of the triangle be cut proportionall...", fillcolor="#222244", URL="../G.164/index.html", target="_top"];
      "G.166" [label="G.166", tooltip="G.166 (VI.4): In equiangular triangles the sides about the equal angles are proportional, and those are corresponding sides which subtend the equal angles.", fillcolor="#222244", URL="../G.166/index.html", target="_top"];
-     "G.168" [label="G.168", tooltip="G.168 (VI.6): If two triangles have one angle equal to one angle and the sides about the equal angles proportional, the triangles will be equiangular and will have those angles equal which the c...", fillcolor="#222244", URL="../G.168/index.html", target="_top"];
-     "G.170" [label="G.170", tooltip="G.170 (VI.def.1): Similar rectilineal figures are such as have their angles severally equal and the sides about the equal angles proportional.", fillcolor="#224422", URL="../G.170/index.html", target="_top"];
+     "G.168" [label="G.168", tooltip="G.168 (VI.6): If two triangles have one angle equal to one angle and the sides about the equal angles proportional, the triangles is equiangular and will have those angles equal which the corres...", fillcolor="#222244", URL="../G.168/index.html", target="_top"];
+     "G.170" [label="G.170", tooltip="G.170 (VI.def.1): Similar polygons are such as have their angles severally equal and the sides about the equal angles proportional.", fillcolor="#224422", URL="../G.170/index.html", target="_top"];
      "G.171" [label="G.171", tooltip="G.171 (VI.8): If in a right-angled triangle a perpendicular be drawn from the right angle to the base, the triangles adjoining the perpendicular are similar both to the whole and to one another.", fillcolor="#222244", URL="../G.171/index.html", target="_top"];
      "G.174" [label="G.174", tooltip="G.174 (VI.11): To two given straight lines to find a third proportional.", fillcolor="#222244", URL="../G.174/index.html", target="_top"];
      "G.175" [label="G.175", tooltip="G.175 (VI.12): To three given straight lines to find a fourth proportional.", fillcolor="#222244", URL="../G.175/index.html", target="_top"];
      "G.178" [label="G.178", tooltip="G.178 (VI.15): In equal triangles which have one angle equal to one angle the sides about the equal angles are reciprocally proportional; and those triangles which have one angle equal to one ang...", fillcolor="#222244", URL="../G.178/index.html", target="_top"];
-     "G.181" [label="G.181", tooltip="G.181 (VI.18): On a given straight line to describe a rectilinear figure similar and similarly situated to a given rectilinear figure.", fillcolor="#222244", URL="../G.181/index.html", target="_top"];
-     "G.182" [label="G.182", tooltip="G.182 (V.def.9): When three magnitudes are proportional, the first is said to have to the third the duplicate ratio of that which it has to the second.", fillcolor="#224422", URL="../G.182/index.html", target="_top"];
-     "G.183" [label="G.183", tooltip="G.183 (V.def.11): The term corresponding magnitudes is used of antecedents in relation to antecedents, and of consequents in relation to consequents.", fillcolor="#224422", URL="../G.183/index.html", target="_top"];
+     "G.181" [label="G.181", tooltip="G.181 (VI.18): Describe on a given segment a rectilinear figure similar and similarly situated to a given rectilinear figure.", fillcolor="#222244", URL="../G.181/index.html", target="_top"];
+     "G.182" [label="G.182", tooltip="G.182 (V.def.9): When three magnitudes are proportional, the first is said to have to the third theduplicate ratio of that which it has to the second.", fillcolor="#224422", URL="../G.182/index.html", target="_top"];
+     "G.183" [label="G.183", tooltip="G.183 (V.def.11): The termcorresponding magnitudes is used of antecedents in relation to antecedents, and of consequents in relation to consequents.", fillcolor="#224422", URL="../G.183/index.html", target="_top"];
      "G.184" [label="G.184", tooltip="G.184 (VI.19): Similar triangles are to one another in the duplicate ratio of the corresponding sides.", fillcolor="#222244", URL="../G.184/index.html", target="_top"];
      "G.185" [label="G.185", tooltip="G.185 (VI.20): Similar polygons are divided into similar triangles, and into triangles equal in multitude and in the same ratio as the wholes, and the polygon has to the polygon a ratio duplicate...", fillcolor="#222244", URL="../G.185/index.html", target="_top"];
-     "G.187" [label="G.187", tooltip="G.187 (VI.22): If four straight lines be proportional, the rectilineal figures similar and similarly described upon them will also be proportional; and, if the rectilineal figures similar and sim...", fillcolor="#222244", URL="../G.187/index.html", target="_top"];
-     "G.252" [label="G.252", tooltip="G.252 (V.def.10): When four magnitudes are < continuously > proportional, the first is said to have to the fourth the triplicate ratio of that which it has to the second, and so on continually, what...", fillcolor="#224422", URL="../G.252/index.html", target="_top"];
+     "G.187" [label="G.187", tooltip="G.187 (VI.22): If four straight lines be proportional, the polygons similar and similarly described upon them is proportional; and, if the polygons similar and similarly described upon them be pr...", fillcolor="#222244", URL="../G.187/index.html", target="_top"];
+     "G.252" [label="G.252", tooltip="G.252 (V.def.10): When four magnitudes are < continuously > proportional, the first is said to have to the fourth thetriplicate ratio of that which it has to the second, and so on continually, whate...", fillcolor="#224422", URL="../G.252/index.html", target="_top"];
      "G.313" [label="G.313", tooltip="G.313 (X.1): Two unequal magnitudes being set out, if from the greater there be subtracted a magnitude greater than its half, and from that which is left a magnitude greater than its half, and ...", fillcolor="#222244", URL="../G.313/index.html", target="_top"];
      "G.443" [label="G.443", tooltip="G.443 (XI.1): A part of a straight line cannot be in the plane of reference and a part in a plane more elevated.", fillcolor="#222244", URL="../G.443/index.html", target="_top"];
      "G.444" [label="G.444", tooltip="G.444 (XI.2): If two straight lines cut one another, they are in one plane, and every triangle is in one plane.", fillcolor="#222244", URL="../G.444/index.html", target="_top"];
      "G.445" [label="G.445", tooltip="G.445 (XI.3): If two planes cut one another, their common section is a straight line.", fillcolor="#222244", URL="../G.445/index.html", target="_top"];
-     "G.446" [label="G.446", tooltip="G.446 (XI.def.3): A straight line is at right angles to a plane, when it makes right angles with all the straight lines which meet it and are in the plane.", fillcolor="#224422", URL="../G.446/index.html", target="_top"];
-     "G.447" [label="G.447", tooltip="G.447 (XI.4): If a straight line be set up at right angles to two straight lines which cut one another, at their common point of section, it will also be at right angles to the plane through the...", fillcolor="#222244", URL="../G.447/index.html", target="_top"];
+     "G.446" [label="G.446", tooltip="G.446 (XI.def.3): A straight line isat right angles to a plane, when it makes right angles with all the straight lines which meet it and are in the plane.", fillcolor="#224422", URL="../G.446/index.html", target="_top"];
+     "G.447" [label="G.447", tooltip="G.447 (XI.4): If a straight line be set up at right angles to two straight lines which cut one another, at their common point of section, it is at right angles to the plane through them.", fillcolor="#222244", URL="../G.447/index.html", target="_top"];
      "G.448" [label="G.448", tooltip="G.448 (XI.5): If a straight line be set up at right angles to three straight lines which meet one another, at their common point of section, the three straight lines are in one plane.", fillcolor="#222244", URL="../G.448/index.html", target="_top"];
-     "G.449" [label="G.449", tooltip="G.449 (XI.6): If two straight lines be at right angles to the same plane, the straight lines will be parallel.", fillcolor="#222244", URL="../G.449/index.html", target="_top"];
+     "G.449" [label="G.449", tooltip="G.449 (XI.6): If two straight lines be at right angles to the same plane, the straight lines is parallel.", fillcolor="#222244", URL="../G.449/index.html", target="_top"];
      "G.450" [label="G.450", tooltip="G.450 (XI.7): If two straight lines be parallel and points be taken at random on each of them, the straight line joining the points is in the same plane with the parallel straight lines.", fillcolor="#222244", URL="../G.450/index.html", target="_top"];
-     "G.451" [label="G.451", tooltip="G.451 (XI.8): If two straight lines be parallel, and one of them be at right angles to any plane, the remaining one will also be at right angles to the same plane.", fillcolor="#222244", URL="../G.451/index.html", target="_top"];
+     "G.451" [label="G.451", tooltip="G.451 (XI.8): If two straight lines be parallel, and one of them be at right angles to any plane, the remaining one is at right angles to the same plane.", fillcolor="#222244", URL="../G.451/index.html", target="_top"];
      "G.452" [label="G.452", tooltip="G.452 (XI.9): Straight lines which are parallel to the same straight line and are not in the same plane with it are also parallel to one another.", fillcolor="#222244", URL="../G.452/index.html", target="_top"];
      "G.453" [label="G.453", tooltip="G.453 (XI.10): If two straight lines meeting one another be parallel to two straight lines meeting one another not in the same plane, they will contain equal angles.", fillcolor="#222244", URL="../G.453/index.html", target="_top"];
      "G.454" [label="G.454", tooltip="G.454 (XI.11): From a given elevated point to draw a straight line perpendicular to a given plane.", fillcolor="#222244", URL="../G.454/index.html", target="_top"];
      "G.460" [label="G.460", tooltip="G.460 (XI.16): If two parallel planes be cut by any plane, their common sections are parallel.", fillcolor="#222244", URL="../G.460/index.html", target="_top"];
-     "G.462" [label="G.462", tooltip="G.462 (XI.def.4): A plane is at right angles to a plane when the straight lines drawn, in one of the planes, at right angles to the common section of the planes are at right angles to the remaining ...", fillcolor="#224422", URL="../G.462/index.html", target="_top"];
-     "G.463" [label="G.463", tooltip="G.463 (XI.18): If a straight line be at right angles to any plane, all the planes through it will also be at right angles to the same plane.", fillcolor="#222244", URL="../G.463/index.html", target="_top"];
+     "G.462" [label="G.462", tooltip="G.462 (XI.def.4): Aplane is at right angles to a plane when the straight lines drawn, in one of the planes, at right angles to the common section of the planes are at right angles to the remaining p...", fillcolor="#224422", URL="../G.462/index.html", target="_top"];
+     "G.463" [label="G.463", tooltip="G.463 (XI.18): If a straight line be at right angles to any plane, all the planes through it is at right angles to the same plane.", fillcolor="#222244", URL="../G.463/index.html", target="_top"];
      "G.469" [label="G.469", tooltip="G.469 (XI.24): If a solid be contained by parallel planes, the opposite planes in it are equal and parallelogrammic.", fillcolor="#222244", URL="../G.469/index.html", target="_top"];
      "G.470" [label="G.470", tooltip="G.470 (XI.25): If a parallelepipedal solid be cut by a plane which is parallel to the opposite planes, then, as the base is to the base, so will the solid be to the solid.", fillcolor="#222244", URL="../G.470/index.html", target="_top"];
      "G.474" [label="G.474", tooltip="G.474 (XI.def.10): Equal and similar solid figures are those contained by similar planes equal in multitude and in magnitude.", fillcolor="#224422", URL="../G.474/index.html", target="_top"];
-     "G.475" [label="G.475", tooltip="G.475 (XI.28): If a parallelepipedal solid be cut by a plane through the diagonals of the opposite planes, the solid will be bisected by the plane.", fillcolor="#222244", URL="../G.475/index.html", target="_top"];
-     "G.476" [label="G.476", tooltip="G.476 (XI.29): Parallelepipedal solids which are on the same base and of the same height, and in which the extremities of the sides which stand up are on the same straight lines, are equal to one...", fillcolor="#222244", URL="../G.476/index.html", target="_top"];
-     "G.477" [label="G.477", tooltip="G.477 (XI.30): Parallelepipedal solids which are on the same base and of the same height, and in which the extremities of the sides which stand up are not on the same straight lines, are equal to...", fillcolor="#222244", URL="../G.477/index.html", target="_top"];
-     "G.478" [label="G.478", tooltip="G.478 (XI.31): Parallelepipedal solids which are on equal bases and of the same height are equal to one another.", fillcolor="#222244", URL="../G.478/index.html", target="_top"];
+     "G.475" [label="G.475", tooltip="G.475 (XI.28): If a parallelepipedal solid be cut by a plane through the diagonals of the opposite planes, the solid is bisected by the plane.", fillcolor="#222244", URL="../G.475/index.html", target="_top"];
+     "G.476" [label="G.476", tooltip="G.476 (XI.29): Parallelepipedal solids which are on the same base and of the same height, and in which the extremities of the sides which stand up are on the same straight lines, are equal.", fillcolor="#222244", URL="../G.476/index.html", target="_top"];
+     "G.477" [label="G.477", tooltip="G.477 (XI.30): Parallelepipedal solids which are on the same base and of the same height, and in which the extremities of the sides which stand up are not on the same straight lines, are equal.", fillcolor="#222244", URL="../G.477/index.html", target="_top"];
+     "G.478" [label="G.478", tooltip="G.478 (XI.31): Parallelepipedal solids which are on equal bases and of the same height are equal.", fillcolor="#222244", URL="../G.478/index.html", target="_top"];
      "G.479" [label="G.479", tooltip="G.479 (XI.32): Parallelepipedal solids which are of the same height are to one another as their bases.", fillcolor="#222244", URL="../G.479/index.html", target="_top"];
      "G.480" [label="G.480", tooltip="G.480 (XI.33): Similar parallelepipedal solids are to one another in the triplicate ratio of their corresponding sides.", fillcolor="#222244", URL="../G.480/index.html", target="_top"];
-     "G.486" [label="G.486", tooltip="G.486 (XI.39): If there be two prisms of equal height, and one have a parallelogram as base and the other a triangle, and if the parallelogram be double of the triangle, the prisms will be equal.", fillcolor="#222244", URL="../G.486/index.html", target="_top"];
+     "G.486" [label="G.486", tooltip="G.486 (XI.39): If there be two prisms of equal height, and one have a parallelogram as base and the other a triangle, and if the parallelogram be double of the triangle, the prisms is equal.", fillcolor="#222244", URL="../G.486/index.html", target="_top"];
      "G.487" [label="G.487", tooltip="G.487 (XII.1): Similar polygons inscribed in circles are to one another as the squares on the diameters.", fillcolor="#222244", URL="../G.487/index.html", target="_top"];
      "G.488" [label="G.488", tooltip="G.488 (XII.2): Circles are to one another as the squares on the diameters.", fillcolor="#222244", URL="../G.488/index.html", target="_top"];
      "G.489" [label="G.489", tooltip="G.489 (XII.3): Any pyramid which has a triangular base is divided into two pyramids equal and similar to one another, similar to the whole and having triangular bases, and into two equal prisms; ...", fillcolor="#222244", URL="../G.489/index.html", target="_top"];
@@ -818,3 +886,9 @@ Required for
 ------------
 
 :ref:`G.506 <G.506>`
+
+.. toctree::
+   :hidden:
+
+   code
+   heath

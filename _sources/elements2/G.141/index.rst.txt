@@ -24,60 +24,76 @@ G.141
 
    If two magnitudes be equimultiples of two magnitudes, and any magnitudes subtracted from them be equimultiples of the same, the remainders also are either equal to the same or equimultiples of them.
 
-For let two magnitudes :g:`/ A B / <0153.g1:/ A B />`, :g:`/ C D / <0153.g1:/ C D />` be equimultiples of two magnitudes :g:`E <0153.g1:E>`, :g:`F <0153.g1:F>`, and let :g:`/ A G / <0153.g1:/ A G />`, :g:`/ C H / <0153.g1:/ C H />` subtracted from them be equimultiples of the same two :g:`E <0153.g1:E>`, :g:`F <0153.g1:F>`;
-
-I say that the remainders also, :g:`/ G B / <0153.g1:/ G B />`, :g:`/ H D / <0153.g1:/ H D />`, are either :eq:`equal <0153.g1:/ G B / = 0153.g1:E; 0153.g1:/ H D / = 0153.g1:F>` to :g:`E <0153.g1:E>`, :g:`F <0153.g1:F>` or equimultiples of them.
-
-.. picture:: 0153.g1.svg
+.. picture:: g1.svg
    :alt: Proposition 6 Diagram
 
-For, first, let :g:`/ G B / <0153.g1:/ G B />` be :eq:`equal <0153.g1:/ G B / = 0153.g1:E>` to :g:`E <0153.g1:E>`;
+.. step:: assert
 
-I say that :g:`/ H D / <0153.g1:/ H D />` is also :eq:`equal <0153.g1:/ H D / = 0153.g1:F>` to :g:`F <0153.g1:F>`.
+   For let two magnitudes :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` be equimultiples of two magnitudes :g:`E <g1:E>`, :g:`F <g1:F>`
 
-For let :g:`/ C K / <0153.g1:/ C K />` be made :eq:`equal <0153.g1:/ C K / = 0153.g1:F>` to :g:`F <0153.g1:F>`.
+.. step:: assert
 
-Since :g:`/ A G / <0153.g1:/ A G />` is the same multiple of :g:`E <0153.g1:E>` that :g:`/ C H / <0153.g1:/ C H />` is of :g:`F <0153.g1:F>`,
+   Let :g:`/ A G / <g1:/ A G />`, :g:`/ C H / <g1:/ C H />` subtracted from them be equimultiples of the same two :g:`E <g1:E>`, :g:`F <g1:F>`
 
-.. subclause::
+.. step:: assert
 
-   while :g:`/ G B / <0153.g1:/ G B />` is :eq:`equal <0153.g1:/ G B / = 0153.g1:E; 0153.g1:/ C K / = 0153.g1:F>` to :g:`E <0153.g1:E>` and :g:`/ C K / <0153.g1:/ C K />` to :g:`F <0153.g1:F>`,
+   The remainders also, :g:`/ G B / <g1:/ G B />`, :g:`/ H D / <g1:/ H D />`, are either :eq:`equal <g1:/ G B / = g1:E; g1:/ H D / = g1:F>` to :g:`E <g1:E>`, :g:`F <g1:F>` or equimultiples of them.
 
-therefore :g:`/ A B / <0153.g1:/ A B />` is the same multiple of :g:`E <0153.g1:E>` that :g:`/ K H / <0153.g1:/ K H />` is of :g:`F <0153.g1:F>`. :just:`[G.136] <G.136>`
+.. step:: assert
 
-But, by hypothesis, :g:`/ A B / <0153.g1:/ A B />` is the same multiple of :g:`E <0153.g1:E>` that :g:`/ C D / <0153.g1:/ C D />` is of :g:`F <0153.g1:F>`;
+   First, let :g:`/ G B / <g1:/ G B />` be :eq:`equal <g1:/ G B / = g1:E>` to :g:`E <g1:E>`
 
-.. assertion::
+.. step:: assert
 
-   therefore :g:`/ K H / <0153.g1:/ K H />` is the same multiple of :g:`F <0153.g1:F>` that :g:`/ C D / <0153.g1:/ C D />` is of :g:`F <0153.g1:F>`.
+   :g:`/ H D / <g1:/ H D />` is also :eq:`equal <g1:/ H D / = g1:F>` to :g:`F <g1:F>`.
 
-Since then each of the magnitudes :g:`/ K H / <0153.g1:/ K H />`, :g:`/ C D / <0153.g1:/ C D />` is the same multiple of :g:`F <0153.g1:F>`,
+.. step:: construct
 
-.. assertion::
+   For let :g:`/ C K / <g1:/ C K />` be made :eq:`equal <g1:/ C K / = g1:F>` to :g:`F <g1:F>`.
 
-   therefore :g:`/ K H / <0153.g1:/ K H />` is :eq:`equal <0153.g1:/ K H / = 0153.g1:/ C D />` to :g:`/ C D / <0153.g1:/ C D />`.
+.. step:: assert
 
-.. subclause::
+   Since :g:`/ A G / <g1:/ A G />` is the same multiple of :g:`E <g1:E>` that :g:`/ C H / <g1:/ C H />` is of :g:`F <g1:F>` → while :g:`/ G B / <g1:/ G B />` is :eq:`equal <g1:/ G B / = g1:E; g1:/ C K / = g1:F>` to :g:`E <g1:E>` and :g:`/ C K / <g1:/ C K />` to :g:`F <g1:F>`,
 
-   Let :g:`/ C H / <0153.g1:/ C H />` be subtracted from each;
+.. step:: assert [G.136] <G.136>
 
-.. assertion::
+   Therefore :g:`/ A B / <g1:/ A B />` is the same multiple of :g:`E <g1:E>` that :g:`/ K H / <g1:/ K H />` is of :g:`F <g1:F>`.
 
-   therefore the remainder :g:`/ C K / <0153.g1:/ C K />` is :eq:`equal <0153.g1:/ C K / = 0153.g1:/ H D />` to the remainder :g:`/ H D / <0153.g1:/ H D />`.
+.. step:: assert
 
-But :g:`F <0153.g1:F>` is :eq:`equal <0153.g1:F = 0153.g1:/ C K />` to :g:`/ C K / <0153.g1:/ C K />`;
+   But, by hypothesis, :g:`/ A B / <g1:/ A B />` is the same multiple of :g:`E <g1:E>` that :g:`/ C D / <g1:/ C D />` is of :g:`F <g1:F>`
 
-.. assertion::
+.. step:: assert
 
-   therefore :g:`/ H D / <0153.g1:/ H D />` is also :eq:`equal <0153.g1:/ H D / = 0153.g1:F>` to :g:`F <0153.g1:F>`.
+   Therefore :g:`/ K H / <g1:/ K H />` is the same multiple of :g:`F <g1:F>` that :g:`/ C D / <g1:/ C D />` is of :g:`F <g1:F>`.
 
-Hence, if :g:`/ G B / <0153.g1:/ G B />` is :eq:`equal <0153.g1:/ G B / = 0153.g1:E>` to :g:`E <0153.g1:E>`, :g:`/ H D / <0153.g1:/ H D />` is also :eq:`equal <0153.g1:/ H D / = 0153.g1:F>` to :g:`F <0153.g1:F>`.
+.. step:: assert
 
-Similarly we can prove that, even if :g:`/ G B / <0153.g1:/ G B />` be a multiple of :g:`E <0153.g1:E>`, :g:`/ H D / <0153.g1:/ H D />` is also the same multiple of :g:`F <0153.g1:F>`.
+   Since then each of the magnitudes :g:`/ K H / <g1:/ K H />`, :g:`/ C D / <g1:/ C D />` is the same multiple of :g:`F <g1:F>` → therefore :g:`/ K H / <g1:/ K H />` is :eq:`equal <g1:/ K H / = g1:/ C D />` to :g:`/ C D / <g1:/ C D />`.
 
-.. qed::
+.. step:: assert
 
-   Therefore etc. :just:`Q. E. D.`
+   Let :g:`/ C H / <g1:/ C H />` be subtracted from each;
+
+.. step:: assert
+
+   Therefore the remainder :g:`/ C K / <g1:/ C K />` is :eq:`equal <g1:/ C K / = g1:/ H D />` to the remainder :g:`/ H D / <g1:/ H D />`.
+
+.. step:: assert
+
+   :g:`F <g1:F>` is :eq:`equal <g1:F = g1:/ C K />` to :g:`/ C K / <g1:/ C K />`
+
+.. step:: assert
+
+   Therefore :g:`/ H D / <g1:/ H D />` is also :eq:`equal <g1:/ H D / = g1:F>` to :g:`F <g1:F>`.
+
+.. step:: assert
+
+   Hence, if :g:`/ G B / <g1:/ G B />` is :eq:`equal <g1:/ G B / = g1:E>` to :g:`E <g1:E>`, :g:`/ H D / <g1:/ H D />` is also :eq:`equal <g1:/ H D / = g1:F>` to :g:`F <g1:F>`.
+
+.. step:: conclude
+
+   Similarly we can prove that, even if :g:`/ G B / <g1:/ G B />` be a multiple of :g:`E <g1:E>`, :g:`/ H D / <g1:/ H D />` is also the same multiple of :g:`F <g1:F>`.
 
 Dependency Graph
 ----------------
@@ -93,3 +109,9 @@ Dependency Graph
      "G.141" [label="G.141", tooltip="G.141 (V.6): If two magnitudes be equimultiples of two magnitudes, and any magnitudes subtracted from them be equimultiples of the same, the remainders also are either equal to the same or equi...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.141" -> "G.136";
    }
+
+.. toctree::
+   :hidden:
+
+   code
+   heath

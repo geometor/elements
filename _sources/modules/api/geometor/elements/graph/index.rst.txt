@@ -113,7 +113,7 @@ Module Contents
 
 .. py:function:: strip_footnotes(rst_body: str) -> str
 
-   Remove Heath's inline footnote references ([#f1]_) and footnote definition blocks (.. [#f1] ...).
+   Remove Heath's inline footnote references (``[#f1]_``) and footnote definition blocks (``.. [#f1]``).
 
 
 .. py:function:: extract_primitive_tags(rst_body: str) -> List[str]

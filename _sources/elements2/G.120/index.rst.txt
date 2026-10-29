@@ -9,7 +9,7 @@
 :category: definition, plane-geometry, circles, polygons
 :tags: book-iv, circle-inscribed-in-figure, tangent, arc, inscribed, similar
 :dependencies: 
-:excerpt: Similarly a circle is said to be inscribed in a figure when the circumference of the circle touches each side of the figure in which it is inscribed.
+:excerpt: Similarly a circle is said to beinscribed in a figure when the circumference of the circle touches each side of the figure in which it is inscribed.
 
 .. _G.120:
 .. _IV.def.5:
@@ -21,9 +21,14 @@ G.120
 
 .. enunciation::
 
-   Similarly a circle is said to be :term:`**inscribed in a figure** <circle-inscribed-in-figure>` when the circumference of the circle touches each side of the figure in which it is inscribed.
+   Similarly a circle is said to be:term:`**inscribed in a figure** <circle-inscribed-in-figure>` when the circumference of the circle touches each side of the figure in which it is inscribed.
 
 Required for
 ------------
 
 :ref:`G.121 <G.121>`
+
+.. toctree::
+   :hidden:
+
+   heath

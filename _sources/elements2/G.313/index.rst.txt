@@ -10,7 +10,7 @@
 :category: theorem, proof, incommensurables, magnitudes
 :tags: book-x, point, segment, equality
 :dependencies: G.143
-:excerpt: Two unequal magnitudes being set out, if from the greater there be subtracted a magnitude greater than its half, and from that which is left a magnitude greater than its half, and if this process be repeated continually, there will be left some magnitude which will be less than the lesser magnitude set out.
+:excerpt: Two unequal magnitudes being set out, if from the greater there be subtracted a magnitude greater than its half, and from that which is left a magnitude greater than its half, and if this process be repeated continually, there is left some magnitude which is less than the lesser magnitude set out.
 
 .. _G.313:
 .. _X.1:
@@ -22,54 +22,70 @@ G.313
 
 .. enunciation::
 
-   Two unequal magnitudes being set out, if from the greater there be subtracted a magnitude greater than its half, and from that which is left a magnitude greater than its half, and if this process be repeated continually, there will be left some magnitude which will be less than the lesser magnitude set out.
+   Two unequal magnitudes being set out, if from the greater there be subtracted a magnitude greater than its half, and from that which is left a magnitude greater than its half, and if this process be repeated continually, there is left some magnitude which is less than the lesser magnitude set out.
 
-Let :g:`/ A B / <0018.g1:/ A B />`, :g:`C <0018.g1:C>` be two unequal magnitudes of which :g:`/ A B / <0018.g1:/ A B />` is the greater : I say that, if from :g:`/ A B / <0018.g1:/ A B />` there be subtracted a magnitude greater than its half, and from that which is left a magnitude greater than its half, and if this process be repeated continually, there will be left some magnitude which will be less than the magnitude :g:`C <0018.g1:C>`.
-
-.. picture:: 0018.g1.svg
+.. picture:: g1.svg
    :alt: Book X, Proposition 1
 
-For :g:`C <0018.g1:C>` if multiplied will sometime be greater than :g:`/ A B / <0018.g1:/ A B />`. :just:`[G.143] <G.143>`
+.. step:: given
 
-Let it be multiplied, and let :g:`/ D E / <0018.g1:/ D E />` be a multiple of :g:`C <0018.g1:C>`, and greater than :g:`/ A B / <0018.g1:/ A B />`; let :g:`/ D E / <0018.g1:/ D E />` be divided into the parts :g:`/ D F / <0018.g1:/ D F />`, :g:`/ F G / <0018.g1:/ F G />`, :g:`/ G E / <0018.g1:/ G E />` :eq:`equal <0018.g1:/ D F / = 0018.g1:/ F G / = 0018.g1:/ G E / = 0018.g1:C>` to :g:`C <0018.g1:C>`, from :g:`/ A B / <0018.g1:/ A B />` let there be subtracted :g:`/ B H / <0018.g1:/ B H />` greater than its half, and, from :g:`/ A H / <0018.g1:/ A H />`, :g:`/ H K / <0018.g1:/ H K />` greater than its half, and let this process be repeated continually until the divisions in :g:`/ A B / <0018.g1:/ A B />` are equal in multitude with the divisions in :g:`/ D E / <0018.g1:/ D E />`.
+   :g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>` be two unequal magnitudes of which :g:`/ A B / <g1:/ A B />` is the greater : I say that, if from :g:`/ A B / <g1:/ A B />` there be subtracted a magnitude greater than its half, from that which is left a magnitude greater than its half, if this process be repeated continually, there will be left some magnitude which will be less than the magnitude :g:`C <g1:C>`
 
-Let, then, :g:`/ A K / <0018.g1:/ A K />`, :g:`/ K H / <0018.g1:/ K H />`, :g:`/ H B / <0018.g1:/ H B />` be divisions which are equal in multitude with :g:`/ D F / <0018.g1:/ D F />`, :g:`/ F G / <0018.g1:/ F G />`, :g:`/ G E / <0018.g1:/ G E />`.
+.. step:: assert [G.143] <G.143>
 
-.. subclause::
+   For :g:`C <g1:C>` if multiplied will sometime be greater than :g:`/ A B / <g1:/ A B />`.
 
-   Now, since :g:`/ D E / <0018.g1:/ D E />` is greater than :g:`/ A B / <0018.g1:/ A B />`, and from :g:`/ D E / <0018.g1:/ D E />` there has been subtracted :g:`/ E G / <0018.g1:/ E G />` less than its half, and, from :g:`/ A B / <0018.g1:/ A B />`, :g:`/ B H / <0018.g1:/ B H />` greater than its half,
+.. step:: assert
 
-.. assertion::
+   Let it be multiplied
 
-   therefore the remainder :g:`/ G D / <0018.g1:/ G D />` is greater than the remainder :g:`/ H A / <0018.g1:/ H A />`.
+.. step:: assert
 
-.. subclause::
+   Let :g:`/ D E / <g1:/ D E />` be a multiple of :g:`C <g1:C>`, and greater than :g:`/ A B / <g1:/ A B />`
 
-   And, since :g:`/ G D / <0018.g1:/ G D />` is greater than :g:`/ H A / <0018.g1:/ H A />`, and there has been subtracted, from :g:`/ G D / <0018.g1:/ G D />`, the half :g:`/ G F / <0018.g1:/ G F />`, and, from :g:`/ H A / <0018.g1:/ H A />`, :g:`/ H K / <0018.g1:/ H K />` greater than its half,
+.. step:: assert
 
-.. assertion::
+   Let :g:`/ D E / <g1:/ D E />` be divided into the parts :g:`/ D F / <g1:/ D F />`, :g:`/ F G / <g1:/ F G />`, :g:`/ G E / <g1:/ G E />` :eq:`equal <g1:/ D F / = g1:/ F G / = g1:/ G E / = g1:C>` to :g:`C <g1:C>`, from :g:`/ A B / <g1:/ A B />` let there be subtracted :g:`/ B H / <g1:/ B H />` greater than its half, and, from :g:`/ A H / <g1:/ A H />`, :g:`/ H K / <g1:/ H K />` greater than its half
 
-   therefore the remainder :g:`/ D F / <0018.g1:/ D F />` is greater than the remainder :g:`/ A K / <0018.g1:/ A K />`.
+.. step:: assert
 
-.. subclause::
+   Let this process be repeated continually until the divisions in :g:`/ A B / <g1:/ A B />` are equal in multitude with the divisions in :g:`/ D E / <g1:/ D E />`.
 
-   But :g:`/ D F / <0018.g1:/ D F />` is :eq:`equal <0018.g1:/ D F / = 0018.g1:C>` to :g:`C <0018.g1:C>`;
+.. step:: assert
 
-.. assertion::
+   Let, then, :g:`/ A K / <g1:/ A K />`, :g:`/ K H / <g1:/ K H />`, :g:`/ H B / <g1:/ H B />` be divisions which are equal in multitude with :g:`/ D F / <g1:/ D F />`, :g:`/ F G / <g1:/ F G />`, :g:`/ G E / <g1:/ G E />`.
 
-   therefore :g:`C <0018.g1:C>` is also greater than :g:`/ A K / <0018.g1:/ A K />`.
+.. step:: assert
 
-.. assertion::
+   Since :g:`/ D E / <g1:/ D E />` is greater than :g:`/ A B / <g1:/ A B />`, and from :g:`/ D E / <g1:/ D E />` there has been subtracted :g:`/ E G / <g1:/ E G />` less than its half, and, from :g:`/ A B / <g1:/ A B />`, :g:`/ B H / <g1:/ B H />` greater than its half,
 
-   Therefore :g:`/ A K / <0018.g1:/ A K />` is less than :g:`C <0018.g1:C>`.
+.. step:: assert
 
-.. qed::
+   Therefore the remainder :g:`/ G D / <g1:/ G D />` is greater than the remainder :g:`/ H A / <g1:/ H A />`.
 
-   Therefore there is left of the magnitude :g:`/ A B / <0018.g1:/ A B />` the magnitude :g:`/ A K / <0018.g1:/ A K />` which is less than the lesser magnitude set out, namely :g:`C <0018.g1:C>`. :just:`Q. E. D.`
+.. step:: assert
 
-.. assertion::
+   And, since :g:`/ G D / <g1:/ G D />` is greater than :g:`/ H A / <g1:/ H A />`, and there has been subtracted, from :g:`/ G D / <g1:/ G D />`, the half :g:`/ G F / <g1:/ G F />`, and, from :g:`/ H A / <g1:/ H A />`, :g:`/ H K / <g1:/ H K />` greater than its half,
 
-   And the theorem can be similarly proved even if the parts subtracted be halves.
+.. step:: assert
+
+   Therefore the remainder :g:`/ D F / <g1:/ D F />` is greater than the remainder :g:`/ A K / <g1:/ A K />`.
+
+.. step:: assert
+
+   :g:`/ D F / <g1:/ D F />` is :eq:`equal <g1:/ D F / = g1:C>` to :g:`C <g1:C>`;
+
+.. step:: assert
+
+   Therefore :g:`C <g1:C>` is also greater than :g:`/ A K / <g1:/ A K />`.
+
+.. step:: assert
+
+   Therefore :g:`/ A K / <g1:/ A K />` is less than :g:`C <g1:C>`.
+
+.. step:: conclude
+
+   The theorem can be similarly proved even if the parts subtracted be halves.
 
 Dependency Graph
 ----------------
@@ -81,7 +97,7 @@ Dependency Graph
      node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11, color="#d6d3cd", fontcolor="#ffffff"];
      edge [color="#8c857b", fontcolor="#8c857b", arrowsize=0.75];
      rankdir="TB";
-     "G.143" [label="G.143", tooltip="G.143 (V.def.4): Magnitudes are said to have a ratio to one another which are capable, when multiplied, of exceeding one another.", fillcolor="#224422", URL="../G.143/index.html", target="_top"];
+     "G.143" [label="G.143", tooltip="G.143 (V.def.4): Magnitudes are said tohave a ratio to one another which are capable, when multiplied, of exceeding one another.", fillcolor="#224422", URL="../G.143/index.html", target="_top"];
      "G.313" [label="G.313", tooltip="G.313 (X.1): Two unequal magnitudes being set out, if from the greater there be subtracted a magnitude greater than its half, and from that which is left a magnitude greater than its half, and ...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.313" -> "G.143";
    }
@@ -90,3 +106,9 @@ Required for
 ------------
 
 :ref:`G.491 <G.491>`, :ref:`G.492 <G.492>`, :ref:`G.493 <G.493>`, :ref:`G.494 <G.494>`, :ref:`G.496 <G.496>`, :ref:`G.497 <G.497>`, :ref:`G.499 <G.499>`, :ref:`G.500 <G.500>`, :ref:`G.501 <G.501>`, :ref:`G.502 <G.502>`, :ref:`G.503 <G.503>`, :ref:`G.505 <G.505>`, :ref:`G.506 <G.506>`
+
+.. toctree::
+   :hidden:
+
+   code
+   heath

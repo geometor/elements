@@ -9,7 +9,7 @@
 :category: definition, incommensurables, magnitudes
 :tags: book-x, fifth-binomial, binomial
 :dependencies: 
-:excerpt: if the lesser, a fifth binomial;
+:excerpt: If the lesser, afifth binomial;
 
 .. _G.377:
 .. _X.def.ii.5:
@@ -21,9 +21,14 @@ G.377
 
 .. enunciation::
 
-   if the lesser, a :term:`**fifth binomial** <fifth-binomial>`;
+   If the lesser, a:term:`**fifth binomial** <fifth-binomial>`;
 
 Required for
 ------------
 
 :ref:`G.378 <G.378>`, :ref:`G.384 <G.384>`, :ref:`G.387 <G.387>`, :ref:`G.392 <G.392>`
+
+.. toctree::
+   :hidden:
+
+   heath

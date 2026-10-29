@@ -10,7 +10,7 @@
 :category: theorem, proof, number-theory
 :tags: book-vii, point, segment, number, prime, reductio-ad-absurdum
 :dependencies: G.199
-:excerpt: If two numbers be prime to one another, the sum will also be prime to each of them ; and, if the sum of two numbers be prime to any one of them, the original numbers will also be prime to one another.
+:excerpt: If two numbers be prime to one another, the sum is prime to each of them; and, if the sum of two numbers be prime to any one of them, the original numbers is prime to one another.
 
 .. _G.229:
 .. _VII.28:
@@ -22,90 +22,98 @@ G.229
 
 .. enunciation::
 
-   If two numbers be prime to one another, the sum will also be prime to each of them ; and, if the sum of two numbers be prime to any one of them, the original numbers will also be prime to one another.
+   If two numbers be prime to one another, the sum is prime to each of them; and, if the sum of two numbers be prime to any one of them, the original numbers is prime to one another.
 
-For let two numbers :g:`/ A B / <0335.g1:/ A B />`, :g:`/ B C / <0335.g1:/ B C />` prime to one another be added ;
-
-I say that the sum :g:`/ A C / <0335.g1:/ A C />` is also prime to each of the numbers :g:`/ A B / <0335.g1:/ A B />`, :g:`/ B C / <0335.g1:/ B C />`.
-
-.. picture:: 0335.g1.svg
+.. picture:: g1.svg
    :alt: Book VII, Proposition 28
 
-.. subclause::
+.. step:: assert
 
-   For, if :g:`/ A C / <0335.g1:/ A C />`, :g:`/ A B / <0335.g1:/ A B />` are not prime to one another, some number will measure :g:`/ A C / <0335.g1:/ A C />`, :g:`/ A B / <0335.g1:/ A B />`.
+   For let two numbers :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` prime to one another be added
 
-Let a number measure them, and let it be :g:`D <0335.g1:D>`.
+.. step:: assert
 
-.. subclause::
+   If :g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />` are not prime to one another, some number will measure :g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />`.
 
-   Since then :g:`D <0335.g1:D>` measures :g:`/ A C / <0335.g1:/ A C />`, :g:`/ A B / <0335.g1:/ A B />`,
+.. step:: assert
 
-.. assertion::
+   Let a number measure them
 
-   therefore it will also measure the remainder :g:`/ B C / <0335.g1:/ B C />`.
+.. step:: assert
 
-.. subclause::
+   Let it be :g:`D <g1:D>`.
 
-   But it also measures :g:`/ A B / <0335.g1:/ A B />` ;
+.. step:: assert
 
-.. assertion::
+   Since then :g:`D <g1:D>` measures :g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />`,
 
-   therefore :g:`D <0335.g1:D>` measures :g:`/ A B / <0335.g1:/ A B />`, :g:`/ B C / <0335.g1:/ B C />` which are prime to one another : which is impossible. :just:`[G.199] <G.199>`
+.. step:: assert
 
-.. assertion::
+   Therefore it will also measure the remainder :g:`/ B C / <g1:/ B C />`.
 
-   Therefore no number will measure the numbers :g:`/ A C / <0335.g1:/ A C />`, :g:`/ A B / <0335.g1:/ A B />` ; therefore :g:`/ A C / <0335.g1:/ A C />`, :g:`/ A B / <0335.g1:/ A B />` are prime to one another.
+.. step:: assert
 
-.. subclause::
+   It also measures :g:`/ A B / <g1:/ A B />` ;
+
+.. step:: assert [G.199] <G.199>
+
+   Therefore :g:`D <g1:D>` measures :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` which are prime to one another : which is impossible.
+
+.. step:: assert
+
+   Therefore no number will measure the numbers :g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />` ; therefore :g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />` are prime to one another.
+
+.. step:: assert
 
    For the same reason
 
-.. assertion::
+.. step:: assert
 
-   :g:`/ A C / <0335.g1:/ A C />`, :g:`/ B C / <0335.g1:/ B C />` are also prime to one another.
+   :g:`/ A C / <g1:/ A C />`, :g:`/ B C / <g1:/ B C />` are also prime to one another.
 
-.. assertion::
+.. step:: assert
 
-   Therefore :g:`/ A C / <0335.g1:/ A C />` is prime to each of the numbers :g:`/ A B / <0335.g1:/ A B />`, :g:`/ B C / <0335.g1:/ B C />`.
+   Therefore :g:`/ A C / <g1:/ A C />` is prime to each of the numbers :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`.
 
-Again, let :g:`/ A C / <0335.g1:/ A C />`, :g:`/ A B / <0335.g1:/ A B />` be prime to one another ;
+.. step:: assert
 
-I say that :g:`/ A B / <0335.g1:/ A B />`, :g:`/ B C / <0335.g1:/ B C />` are also prime to one another.
+   Let :g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />` be prime to one another
 
-.. subclause::
+.. step:: assert
 
-   For, if :g:`/ A B / <0335.g1:/ A B />`, :g:`/ B C / <0335.g1:/ B C />` are not prime to one another, some number will measure :g:`/ A B / <0335.g1:/ A B />`, :g:`/ B C / <0335.g1:/ B C />`.
+   If :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are not prime to one another, some number will measure :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`.
 
-Let a number measure them, and let it be :g:`D <0335.g1:D>`.
+.. step:: assert
 
-.. subclause::
+   Let a number measure them
 
-   Now, since :g:`D <0335.g1:D>` measures each of the numbers :g:`/ A B / <0335.g1:/ A B />`, :g:`/ B C / <0335.g1:/ B C />`,
+.. step:: assert
 
-.. assertion::
+   Let it be :g:`D <g1:D>`.
 
-   it will also measure the whole :g:`/ A C / <0335.g1:/ A C />`.
+.. step:: assert
 
-.. subclause::
+   Since :g:`D <g1:D>` measures each of the numbers :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`,
 
-   But it also measures :g:`/ A B / <0335.g1:/ A B />` ;
+.. step:: assert
 
-.. assertion::
+   It will also measure the whole :g:`/ A C / <g1:/ A C />`.
 
-   therefore :g:`D <0335.g1:D>` measures :g:`/ A C / <0335.g1:/ A C />`, :g:`/ A B / <0335.g1:/ A B />` which are prime to one another : which is impossible. :just:`[G.199] <G.199>`
+.. step:: assert
 
-.. assertion::
+   It also measures :g:`/ A B / <g1:/ A B />` ;
 
-   Therefore no number will measure the numbers :g:`/ A B / <0335.g1:/ A B />`, :g:`/ B C / <0335.g1:/ B C />`.
+.. step:: assert [G.199] <G.199>
 
-.. assertion::
+   Therefore :g:`D <g1:D>` measures :g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />` which are prime to one another : which is impossible.
 
-   Therefore :g:`/ A B / <0335.g1:/ A B />`, :g:`/ B C / <0335.g1:/ B C />` are prime to one another.
+.. step:: assert
 
-.. qed::
+   Therefore no number will measure the numbers :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`.
 
-   :just:`Q. E. D.`
+.. step:: conclude
+
+   Therefore :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are prime to one another.
 
 Dependency Graph
 ----------------
@@ -118,7 +126,7 @@ Dependency Graph
      edge [color="#8c857b", fontcolor="#8c857b", arrowsize=0.75];
      rankdir="TB";
      "G.199" [label="G.199", tooltip="G.199 (VII.def.12): Numbers prime to one another are those which are measured by an unit alone as a common measure.", fillcolor="#224422", URL="../G.199/index.html", target="_top"];
-     "G.229" [label="G.229", tooltip="G.229 (VII.28): If two numbers be prime to one another, the sum will also be prime to each of them ; and, if the sum of two numbers be prime to any one of them, the original numbers will also be p...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.229" [label="G.229", tooltip="G.229 (VII.28): If two numbers be prime to one another, the sum is prime to each of them; and, if the sum of two numbers be prime to any one of them, the original numbers is prime to one another.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.229" -> "G.199";
    }
 
@@ -126,3 +134,9 @@ Required for
 ------------
 
 :ref:`G.286 <G.286>`
+
+.. toctree::
+   :hidden:
+
+   code
+   heath

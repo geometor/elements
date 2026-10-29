@@ -9,7 +9,7 @@
 :category: definition, plane-geometry, circles
 :tags: book-iii, circles-touching, tangent
 :dependencies: 
-:excerpt: **Circles** are said to touch one another which, meeting one another, do not cut one another.
+:excerpt: **Circles** are said totouch one another which, meeting one another, do not cut one another.
 
 .. _G.88:
 .. _III.def.3:
@@ -21,9 +21,14 @@ G.88
 
 .. enunciation::
 
-   **Circles** are said to :term:`**touch one another** <circles-touching>` which, meeting one another, do not cut one another.
+   **Circles** are said to:term:`**touch one another** <circles-touching>` which, meeting one another, do not cut one another.
 
 Required for
 ------------
 
 :ref:`G.89 <G.89>`
+
+.. toctree::
+   :hidden:
+
+   heath

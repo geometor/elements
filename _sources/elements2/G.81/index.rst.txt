@@ -24,33 +24,47 @@ G.81
 
    If two circles touch one another, they will not have the same centre.
 
-For let the two circles :g:`( A B C ) <0019.g1:( A B C )>`, :g:`( C D E ) <0019.g1:( C D E )>` touch one another at the point :g:`C <0019.g1:C>`;
-
-I say that they will not have the same centre.
-
-.. picture:: 0019.g1.svg
+.. picture:: g1.svg
    :alt: Proposition 6 Diagram
 
-For, if possible, let it be :g:`F <0019.g1:F>`; let :g:`/ F C / <0019.g1:/ F C />` be joined, and let :g:`/ F E B / <0019.g1:/ F E B />` be drawn through at random.
+.. step:: assert
 
-Then, since the point :g:`F <0019.g1:F>` is the centre of the circle :g:`( A B C ) <0019.g1:( A B C )>`,
+   For let the two circles :g:`( A B C ) <g1:( A B C )>`, :g:`( C D E ) <g1:( C D E )>` touch one another at :g:`C <g1:C>`
 
-.. assertion::
+.. step:: assert
 
-   :g:`/ F C / <0019.g1:/ F C />` is :eq:`equal <0019.g1:/ F C / = 0019.g1:/ F B />` to :g:`/ F B / <0019.g1:/ F B />`.
+   If possible, let it be :g:`F <g1:F>`
 
-Again, since the point :g:`F <0019.g1:F>` is the centre of the circle :g:`( C D E ) <0019.g1:( C D E )>`,
+.. step:: construct
 
-.. assertion::
+   **segment** :g:`/ F C / <g1:/ F C />`
 
-   :g:`/ F C / <0019.g1:/ F C />` is :eq:`equal <0019.g1:/ F C / = 0019.g1:/ F E />` to :g:`/ F E / <0019.g1:/ F E />`.
+.. step:: construct
 
-But :g:`/ F C / <0019.g1:/ F C />` was proved :eq:`equal <0019.g1:/ F C / = 0019.g1:/ F B />` to :g:`/ F B / <0019.g1:/ F B />`; therefore :g:`/ F E / <0019.g1:/ F E />` is also :eq:`equal <0019.g1:/ F E / = 0019.g1:/ F B />` to :g:`/ F B / <0019.g1:/ F B />`, the less to the greater: which is impossible.
+   Let :g:`/ F E B / <g1:/ F E B />` be drawn through at random.
 
-.. assertion::
+.. step:: assert
 
-   Therefore :g:`F <0019.g1:F>` is not the centre of the circles :g:`( A B C ) <0019.g1:( A B C )>`, :g:`( C D E ) <0019.g1:( C D E )>`.
+   Since :g:`F <g1:F>` is the center of :g:`( A B C ) <g1:( A B C )>` → :g:`/ F C / <g1:/ F C />` is :eq:`equal <g1:/ F C / = g1:/ F B />` to :g:`/ F B / <g1:/ F B />`.
 
-.. qed::
+.. step:: assert
 
-   Therefore etc. :just:`Q. E. D.`
+   Since :g:`F <g1:F>` is the center of :g:`( C D E ) <g1:( C D E )>` → :g:`/ F C / <g1:/ F C />` is :eq:`equal <g1:/ F C / = g1:/ F E />` to :g:`/ F E / <g1:/ F E />`.
+
+.. step:: assert
+
+   :g:`/ F C / <g1:/ F C />` was proved :eq:`equal <g1:/ F C / = g1:/ F B />` to :g:`/ F B / <g1:/ F B />`
+
+.. step:: assert
+
+   Therefore :g:`/ F E / <g1:/ F E />` is also :eq:`equal <g1:/ F E / = g1:/ F B />` to :g:`/ F B / <g1:/ F B />`, the less to the greater: which is impossible.
+
+.. step:: conclude
+
+   Therefore :g:`F <g1:F>` is not the center of :g:`( A B C ) <g1:( A B C )>`, :g:`( C D E ) <g1:( C D E )>`.
+
+.. toctree::
+   :hidden:
+
+   code
+   heath

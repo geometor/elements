@@ -1,0 +1,550 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>G.129 — Code &mdash; Elements 2.0 (G Index)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=156d9f89" />
+  <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../_static/favicon.ico" />
+</head>
+
+<body class="is-book-page book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../index.html">
+        <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">elements</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../mission/index.html"  >mission</a>
+        </li>
+        <li>
+          <a href="../../usage.html"  >usage</a>
+        </li>
+        <li>
+          <a href="../../modules/index.html"  >modules</a>
+        </li>
+        <li>
+          <a href="../../log/index.html"  >log</a>
+        </li>
+        <li>
+          <a href="../index.html"  >Elements 2.0 (G Index)</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane" data-canonical-id="G.129">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../index.html" title="Return to Project Portal">&larr; elements</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../index.html">Elements 2.0 (G Index)</a>
+          </div>
+          <div class="book-header-breadcrumbs book-header-badges" role="navigation" aria-label="Book Breadcrumbs">
+            <span class="book-badge canonical-badge">G.129</span>
+            <span class="book-badge folio-badge">IV.11</span>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../G.128/code.html" title="G.128">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+            <nav class="book-tracks-nav" aria-label="Document Tracks">
+              <a class="book-track-item" href="index.html">Pseudocode</a>
+              <span class="book-track-sep">&middot;</span>
+              <strong class="book-track-item is-active" aria-current="page">Code</strong>
+              <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="heath.html">Heath</a>
+            </nav>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../G.130/code.html" title="G.130"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content folio-book-page" role="main">
+        <section class="level-1" id="g-129-code">
+        <h1>G.129 — Code<a class="headerlink" href="#g-129-code" title="Link to this heading">¶</a></h1>
+        <p class="rubric"><a class="reference external" href="https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/11/" title="IV.11: Inscribe in a given circle an equilateral and equiangular pentagon.">IV.11</a></p>
+        <div class="enunciation">Inscribe in a given circle an equilateral and equiangular pentagon.</div>
+        <figure class="photon-picture photon-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -6 249 165" width="249" height="165" class="euclid-graphic" data-graphic-id="g1" data-graphic="g1" data-proposition="IV.11">
+          <defs>
+            <marker id="geom-tick-1" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker id="geom-tick-2" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker id="geom-tick-3" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g id="elements">
+            <circle id="el-circle-ABCDE" data-ref="( A B C D E )" data-aliases="( O A ) | ( B C D E A )" data-type="circle" cx="79.00" cy="83.00" r="55.00" class="geom-circle" />
+          </g>
+          <g id="graphics">
+            <polygon id="el-poly-ABCDE" data-ref="&lt; A B C D E &gt;" data-type="polygon" points="79.00,28.00 26.69,66.00 46.67,127.50 111.33,127.50 131.31,66.00" class="geom-polygon" />
+            <polygon id="el-tri-ACD" data-ref="&lt; A C D &gt;" data-aliases="&lt; C A D &gt; | &lt; D C A &gt;" data-type="polygon" points="79.00,28.00 46.67,127.50 111.33,127.50" class="geom-polygon geom-overlay" />
+            <polygon id="el-tri-FGH" data-ref="&lt; F G H &gt;" data-aliases="&lt; G F H &gt; | &lt; H G F &gt;" data-type="polygon" points="205.00,36.00 182.75,104.48 227.25,104.48" class="geom-polygon" />
+            <path id="el-arc-AB" data-ref="( A B )" data-aliases="( B A )" data-type="arc" d="M 79.00 28.00 A 55.00 55.00 0 0 0 26.69 66.00" class="geom-arc geom-overlay" />
+            <path id="el-arc-BC" data-ref="( B C )" data-aliases="( C B )" data-type="arc" d="M 26.69 66.00 A 55.00 55.00 0 0 0 46.67 127.50" class="geom-arc geom-overlay" />
+            <path id="el-arc-CD" data-ref="( C D )" data-aliases="( D C )" data-type="arc" d="M 46.67 127.50 A 55.00 55.00 0 0 0 111.33 127.50" class="geom-arc geom-overlay" />
+            <path id="el-arc-DE" data-ref="( D E )" data-aliases="( E D )" data-type="arc" d="M 111.33 127.50 A 55.00 55.00 0 0 0 131.31 66.00" class="geom-arc geom-overlay" />
+            <path id="el-arc-EA" data-ref="( E A )" data-aliases="( A E )" data-type="arc" d="M 131.31 66.00 A 55.00 55.00 0 0 0 79.00 28.00" class="geom-arc geom-overlay" />
+            <path id="el-arc-BCD" data-ref="( B C D )" data-aliases="( D C B )" data-type="arc" d="M 26.69 66.00 A 55.00 55.00 0 0 0 111.33 127.50" class="geom-arc geom-overlay" />
+            <path id="el-arc-ABCD" data-ref="( A B C D )" data-aliases="( D C B A )" data-type="arc" d="M 79.00 28.00 A 55.00 55.00 0 1 0 111.33 127.50" class="geom-arc geom-overlay" />
+            <path id="el-arc-EDCB" data-ref="( E D C B )" data-aliases="( B C D E )" data-type="arc" d="M 131.31 66.00 A 55.00 55.00 0 1 1 26.69 66.00" class="geom-arc geom-overlay" />
+            <path id="el-ang-GFH" data-ref="&lt; G F H )" data-aliases="&lt; H F G ) | &lt; F )" data-type="wedge" d="M 205.00 36.00 L 199.44 53.12 A 18 18 0 0 0 210.56 53.12 Z" class="wedge angle geom-overlay" />
+            <path id="el-ang-FGH" data-ref="&lt; F G H )" data-aliases="&lt; H G F ) | &lt; G )" data-type="wedge" d="M 182.75 104.48 L 200.75 104.48 A 18 18 0 0 0 188.31 87.36 Z" class="wedge angle geom-overlay" />
+            <path id="el-ang-FHG" data-ref="&lt; F H G )" data-aliases="&lt; G H F ) | &lt; H )" data-type="wedge" d="M 227.25 104.48 L 221.69 87.36 A 18 18 0 0 0 209.25 104.48 Z" class="wedge angle geom-overlay" />
+            <path id="el-ang-CAD" data-ref="&lt; C A D )" data-aliases="&lt; D A C )" data-type="wedge" d="M 79.00 28.00 L 72.82 47.02 A 20 20 0 0 0 85.18 47.02 Z" class="wedge angle geom-overlay" />
+            <path id="el-ang-ACD" data-ref="&lt; A C D )" data-aliases="&lt; D C A )" data-type="wedge" d="M 46.67 127.50 L 66.67 127.50 A 20 20 0 0 0 52.85 108.48 Z" class="wedge angle geom-overlay" />
+            <path id="el-ang-CDA" data-ref="&lt; C D A )" data-aliases="&lt; A D C )" data-type="wedge" d="M 111.33 127.50 L 105.15 108.48 A 20 20 0 0 0 91.33 127.50 Z" class="wedge angle geom-overlay" />
+            <path id="el-ang-ACE" data-ref="&lt; A C E )" data-aliases="&lt; E C A )" data-type="wedge" d="M 46.67 127.50 L 61.23 116.92 A 18 18 0 0 0 52.23 110.38 Z" class="wedge angle geom-overlay" />
+            <path id="el-ang-ECD" data-ref="&lt; E C D )" data-aliases="&lt; D C E )" data-type="wedge" d="M 46.67 127.50 L 64.67 127.50 A 18 18 0 0 0 61.23 116.92 Z" class="wedge angle geom-overlay" />
+            <path id="el-ang-CDB" data-ref="&lt; C D B )" data-aliases="&lt; B D C )" data-type="wedge" d="M 111.33 127.50 L 96.77 116.92 A 18 18 0 0 0 93.33 127.50 Z" class="wedge angle geom-overlay" />
+            <path id="el-ang-BDA" data-ref="&lt; B D A )" data-aliases="&lt; A D B )" data-type="wedge" d="M 111.33 127.50 L 105.77 110.38 A 18 18 0 0 0 96.77 116.92 Z" class="wedge angle geom-overlay" />
+            <path id="el-ang-BAE" data-ref="&lt; B A E )" data-aliases="&lt; E A B )" data-type="wedge" d="M 79.00 28.00 L 66.07 37.39 A 16 16 0 0 0 91.93 37.39 Z" class="wedge angle geom-overlay" />
+            <path id="el-ang-AED" data-ref="&lt; A E D )" data-aliases="&lt; D E A )" data-type="wedge" d="M 131.31 66.00 L 118.38 56.61 A 16 16 0 0 0 126.37 81.22 Z" class="wedge angle geom-overlay" />
+            <path id="el-ang-ABC" data-ref="&lt; A B C )" data-aliases="&lt; C B A )" data-type="wedge" d="M 26.69 66.00 L 31.63 81.22 A 16 16 0 0 0 39.62 56.61 Z" class="wedge angle geom-overlay" />
+            <path id="el-ang-BCD" data-ref="&lt; B C D )" data-aliases="&lt; D C B )" data-type="wedge" d="M 46.67 127.50 L 62.67 127.50 A 16 16 0 0 0 41.73 112.28 Z" class="wedge angle geom-overlay" />
+            <path id="el-ang-CDE" data-ref="&lt; C D E )" data-aliases="&lt; E D C )" data-type="wedge" d="M 111.33 127.50 L 116.27 112.28 A 16 16 0 0 0 95.33 127.50 Z" class="wedge angle geom-overlay" />
+            <path id="el-seg-AB" data-ref="/ A B /" data-aliases="/ B A /" data-type="segment" class="geom-line" d="M 79 28 L 52.84 47 L 26.69 66" />
+            <path id="el-seg-BC" data-ref="/ B C /" data-aliases="/ C B /" data-type="segment" class="geom-line" d="M 26.69 66 L 36.68 96.75 L 46.67 127.5" />
+            <path id="el-seg-CD" data-ref="/ C D /" data-aliases="/ D C /" data-type="segment" class="geom-line" d="M 46.67 127.5 L 79 127.5 L 111.33 127.5" />
+            <path id="el-seg-DE" data-ref="/ D E /" data-aliases="/ E D /" data-type="segment" class="geom-line" d="M 111.33 127.5 L 121.32 96.75 L 131.31 66" />
+            <path id="el-seg-EA" data-ref="/ E A /" data-aliases="/ A E /" data-type="segment" class="geom-line" d="M 131.31 66 L 105.16 47 L 79 28" />
+            <path id="el-seg-AC" data-ref="/ A C /" data-aliases="/ C A /" data-type="segment" class="geom-line" d="M 79 28 L 62.84 77.75 L 46.67 127.5" />
+            <path id="el-seg-AD" data-ref="/ A D /" data-aliases="/ D A /" data-type="segment" class="geom-line" d="M 79 28 L 95.16 77.75 L 111.33 127.5" />
+            <path id="el-seg-BD" data-ref="/ B D /" data-aliases="/ D B /" data-type="segment" class="geom-line" d="M 26.69 66 L 69.01 96.75 L 111.33 127.5" />
+            <path id="el-seg-CE" data-ref="/ C E /" data-aliases="/ E C /" data-type="segment" class="geom-line" d="M 46.67 127.5 L 88.99 96.75 L 131.31 66" />
+            <path id="el-seg-FG" data-ref="/ F G /" data-aliases="/ G F /" data-type="segment" class="geom-line" d="M 205 36 L 193.88 70.24 L 182.75 104.48" />
+            <path id="el-seg-GH" data-ref="/ G H /" data-aliases="/ H G /" data-type="segment" class="geom-line" d="M 182.75 104.48 L 205 104.48 L 227.25 104.48" />
+            <path id="el-seg-HF" data-ref="/ H F /" data-aliases="/ F H /" data-type="segment" class="geom-line" d="M 227.25 104.48 L 216.12 70.24 L 205 36" />
+          </g>
+          <g id="highlights" style="pointer-events: none;">
+            <circle id="hl-circle-ABCDE" data-ref="( A B C D E )" data-aliases="( O A ) | ( B C D E A )" cx="79.00" cy="83.00" r="55.00" class="geom-circle geom-overlay" />
+            <polygon id="hl-poly-ABCDE" data-ref="&lt; A B C D E &gt;" points="79.00,28.00 26.69,66.00 46.67,127.50 111.33,127.50 131.31,66.00" class="geom-polygon geom-overlay" />
+            <polygon id="hl-tri-ACD" data-ref="&lt; A C D &gt;" data-aliases="&lt; C A D &gt; | &lt; D C A &gt;" points="79.00,28.00 46.67,127.50 111.33,127.50" class="geom-polygon geom-overlay" />
+            <polygon id="hl-tri-FGH" data-ref="&lt; F G H &gt;" data-aliases="&lt; G F H &gt; | &lt; H G F &gt;" points="205.00,36.00 182.75,104.48 227.25,104.48" class="geom-polygon geom-overlay" />
+            <path id="hl-arc-AB" data-ref="( A B )" data-aliases="( B A )" d="M 79.00 28.00 A 55.00 55.00 0 0 0 26.69 66.00" class="geom-arc geom-overlay" />
+            <path id="hl-arc-BC" data-ref="( B C )" data-aliases="( C B )" d="M 26.69 66.00 A 55.00 55.00 0 0 0 46.67 127.50" class="geom-arc geom-overlay" />
+            <path id="hl-arc-CD" data-ref="( C D )" data-aliases="( D C )" d="M 46.67 127.50 A 55.00 55.00 0 0 0 111.33 127.50" class="geom-arc geom-overlay" />
+            <path id="hl-arc-DE" data-ref="( D E )" data-aliases="( E D )" d="M 111.33 127.50 A 55.00 55.00 0 0 0 131.31 66.00" class="geom-arc geom-overlay" />
+            <path id="hl-arc-EA" data-ref="( E A )" data-aliases="( A E )" d="M 131.31 66.00 A 55.00 55.00 0 0 0 79.00 28.00" class="geom-arc geom-overlay" />
+            <path id="hl-arc-BCD" data-ref="( B C D )" data-aliases="( D C B )" d="M 26.69 66.00 A 55.00 55.00 0 0 0 111.33 127.50" class="geom-arc geom-overlay" />
+            <path id="hl-arc-ABCD" data-ref="( A B C D )" data-aliases="( D C B A )" d="M 79.00 28.00 A 55.00 55.00 0 1 0 111.33 127.50" class="geom-arc geom-overlay" />
+            <path id="hl-arc-EDCB" data-ref="( E D C B )" data-aliases="( B C D E )" d="M 131.31 66.00 A 55.00 55.00 0 1 1 26.69 66.00" class="geom-arc geom-overlay" />
+            <path id="hl-ang-GFH" data-ref="&lt; G F H )" data-aliases="&lt; H F G ) | &lt; F )" d="M 205.00 36.00 L 199.44 53.12 A 18 18 0 0 0 210.56 53.12 Z" class="wedge angle geom-overlay" />
+            <path id="hl-ang-FGH" data-ref="&lt; F G H )" data-aliases="&lt; H G F ) | &lt; G )" d="M 182.75 104.48 L 200.75 104.48 A 18 18 0 0 0 188.31 87.36 Z" class="wedge angle geom-overlay" />
+            <path id="hl-ang-FHG" data-ref="&lt; F H G )" data-aliases="&lt; G H F ) | &lt; H )" d="M 227.25 104.48 L 221.69 87.36 A 18 18 0 0 0 209.25 104.48 Z" class="wedge angle geom-overlay" />
+            <path id="hl-ang-CAD" data-ref="&lt; C A D )" data-aliases="&lt; D A C )" d="M 79.00 28.00 L 72.82 47.02 A 20 20 0 0 0 85.18 47.02 Z" class="wedge angle geom-overlay" />
+            <path id="hl-ang-ACD" data-ref="&lt; A C D )" data-aliases="&lt; D C A )" d="M 46.67 127.50 L 66.67 127.50 A 20 20 0 0 0 52.85 108.48 Z" class="wedge angle geom-overlay" />
+            <path id="hl-ang-CDA" data-ref="&lt; C D A )" data-aliases="&lt; A D C )" d="M 111.33 127.50 L 105.15 108.48 A 20 20 0 0 0 91.33 127.50 Z" class="wedge angle geom-overlay" />
+            <path id="hl-ang-ACE" data-ref="&lt; A C E )" data-aliases="&lt; E C A )" d="M 46.67 127.50 L 61.23 116.92 A 18 18 0 0 0 52.23 110.38 Z" class="wedge angle geom-overlay" />
+            <path id="hl-ang-ECD" data-ref="&lt; E C D )" data-aliases="&lt; D C E )" d="M 46.67 127.50 L 64.67 127.50 A 18 18 0 0 0 61.23 116.92 Z" class="wedge angle geom-overlay" />
+            <path id="hl-ang-CDB" data-ref="&lt; C D B )" data-aliases="&lt; B D C )" d="M 111.33 127.50 L 96.77 116.92 A 18 18 0 0 0 93.33 127.50 Z" class="wedge angle geom-overlay" />
+            <path id="hl-ang-BDA" data-ref="&lt; B D A )" data-aliases="&lt; A D B )" d="M 111.33 127.50 L 105.77 110.38 A 18 18 0 0 0 96.77 116.92 Z" class="wedge angle geom-overlay" />
+            <path id="hl-ang-BAE" data-ref="&lt; B A E )" data-aliases="&lt; E A B )" d="M 79.00 28.00 L 66.07 37.39 A 16 16 0 0 0 91.93 37.39 Z" class="wedge angle geom-overlay" />
+            <path id="hl-ang-AED" data-ref="&lt; A E D )" data-aliases="&lt; D E A )" d="M 131.31 66.00 L 118.38 56.61 A 16 16 0 0 0 126.37 81.22 Z" class="wedge angle geom-overlay" />
+            <path id="hl-ang-ABC" data-ref="&lt; A B C )" data-aliases="&lt; C B A )" d="M 26.69 66.00 L 31.63 81.22 A 16 16 0 0 0 39.62 56.61 Z" class="wedge angle geom-overlay" />
+            <path id="hl-ang-BCD" data-ref="&lt; B C D )" data-aliases="&lt; D C B )" d="M 46.67 127.50 L 62.67 127.50 A 16 16 0 0 0 41.73 112.28 Z" class="wedge angle geom-overlay" />
+            <path id="hl-ang-CDE" data-ref="&lt; C D E )" data-aliases="&lt; E D C )" d="M 111.33 127.50 L 116.27 112.28 A 16 16 0 0 0 95.33 127.50 Z" class="wedge angle geom-overlay" />
+            <path id="hl-seg-AB" data-ref="/ A B /" data-aliases="/ B A /" class="geom-line geom-overlay" d="M 79 28 L 52.84 47 L 26.69 66" />
+            <path id="hl-seg-BC" data-ref="/ B C /" data-aliases="/ C B /" class="geom-line geom-overlay" d="M 26.69 66 L 36.68 96.75 L 46.67 127.5" />
+            <path id="hl-seg-CD" data-ref="/ C D /" data-aliases="/ D C /" class="geom-line geom-overlay" d="M 46.67 127.5 L 79 127.5 L 111.33 127.5" />
+            <path id="hl-seg-DE" data-ref="/ D E /" data-aliases="/ E D /" class="geom-line geom-overlay" d="M 111.33 127.5 L 121.32 96.75 L 131.31 66" />
+            <path id="hl-seg-EA" data-ref="/ E A /" data-aliases="/ A E /" class="geom-line geom-overlay" d="M 131.31 66 L 105.16 47 L 79 28" />
+            <path id="hl-seg-AC" data-ref="/ A C /" data-aliases="/ C A /" class="geom-line geom-overlay" d="M 79 28 L 62.84 77.75 L 46.67 127.5" />
+            <path id="hl-seg-AD" data-ref="/ A D /" data-aliases="/ D A /" class="geom-line geom-overlay" d="M 79 28 L 95.16 77.75 L 111.33 127.5" />
+            <path id="hl-seg-BD" data-ref="/ B D /" data-aliases="/ D B /" class="geom-line geom-overlay" d="M 26.69 66 L 69.01 96.75 L 111.33 127.5" />
+            <path id="hl-seg-CE" data-ref="/ C E /" data-aliases="/ E C /" class="geom-line geom-overlay" d="M 46.67 127.5 L 88.99 96.75 L 131.31 66" />
+            <path id="hl-seg-FG" data-ref="/ F G /" data-aliases="/ G F /" class="geom-line geom-overlay" d="M 205 36 L 193.88 70.24 L 182.75 104.48" />
+            <path id="hl-seg-GH" data-ref="/ G H /" data-aliases="/ H G /" class="geom-line geom-overlay" d="M 182.75 104.48 L 205 104.48 L 227.25 104.48" />
+            <path id="hl-seg-HF" data-ref="/ H F /" data-aliases="/ F H /" class="geom-line geom-overlay" d="M 227.25 104.48 L 216.12 70.24 L 205 36" />
+            <path id="hl-arc-GFH" data-ref="&lt; G F H )" data-aliases="&lt; H F G ) | &lt; F )" d="M 199.44 53.12 A 18 18 0 0 0 205 54 A 18 18 0 0 0 210.56 53.12" class="geom-ang-arc geom-overlay" />
+            <path id="hl-arc-FGH" data-ref="&lt; F G H )" data-aliases="&lt; H G F ) | &lt; G )" d="M 200.75 104.48 A 18 18 0 0 0 197.31 93.9 A 18 18 0 0 0 188.31 87.36" class="geom-ang-arc geom-overlay" />
+            <path id="hl-arc-FHG" data-ref="&lt; F H G )" data-aliases="&lt; G H F ) | &lt; H )" d="M 221.69 87.36 A 18 18 0 0 0 212.69 93.9 A 18 18 0 0 0 209.25 104.48" class="geom-ang-arc geom-overlay" />
+            <path id="hl-arc-CAD" data-ref="&lt; C A D )" data-aliases="&lt; D A C )" d="M 72.82 47.02 A 20 20 0 0 0 79 48 A 20 20 0 0 0 85.18 47.02" class="geom-ang-arc geom-overlay" />
+            <path id="hl-arc-ACD" data-ref="&lt; A C D )" data-aliases="&lt; D C A )" d="M 66.67 127.5 A 20 20 0 0 0 62.85 115.74 A 20 20 0 0 0 52.85 108.48" class="geom-ang-arc geom-overlay" />
+            <path id="hl-arc-CDA" data-ref="&lt; C D A )" data-aliases="&lt; A D C )" d="M 105.15 108.48 A 20 20 0 0 0 95.15 115.74 A 20 20 0 0 0 91.33 127.5" class="geom-ang-arc geom-overlay" />
+            <path id="hl-arc-ACE" data-ref="&lt; A C E )" data-aliases="&lt; E C A )" d="M 61.23 116.92 A 18 18 0 0 0 57.25 112.94 A 18 18 0 0 0 52.23 110.38" class="geom-ang-arc geom-overlay" />
+            <path id="hl-arc-ECD" data-ref="&lt; E C D )" data-aliases="&lt; D C E )" d="M 64.67 127.5 A 18 18 0 0 0 63.79 121.94 A 18 18 0 0 0 61.23 116.92" class="geom-ang-arc geom-overlay" />
+            <path id="hl-arc-CDB" data-ref="&lt; C D B )" data-aliases="&lt; B D C )" d="M 96.77 116.92 A 18 18 0 0 0 94.21 121.94 A 18 18 0 0 0 93.33 127.5" class="geom-ang-arc geom-overlay" />
+            <path id="hl-arc-BDA" data-ref="&lt; B D A )" data-aliases="&lt; A D B )" d="M 105.77 110.38 A 18 18 0 0 0 100.75 112.94 A 18 18 0 0 0 96.77 116.92" class="geom-ang-arc geom-overlay" />
+            <path id="hl-arc-BAE" data-ref="&lt; B A E )" data-aliases="&lt; E A B )" d="M 66.07 37.39 A 16 16 0 0 0 79 44 A 16 16 0 0 0 91.93 37.39" class="geom-ang-arc geom-overlay" />
+            <path id="hl-arc-AED" data-ref="&lt; A E D )" data-aliases="&lt; D E A )" d="M 118.38 56.61 A 16 16 0 0 0 116.09 70.95 A 16 16 0 0 0 126.37 81.22" class="geom-ang-arc geom-overlay" />
+            <path id="hl-arc-ABC" data-ref="&lt; A B C )" data-aliases="&lt; C B A )" d="M 31.63 81.22 A 16 16 0 0 0 41.91 70.95 A 16 16 0 0 0 39.62 56.61" class="geom-ang-arc geom-overlay" />
+            <path id="hl-arc-BCD" data-ref="&lt; B C D )" data-aliases="&lt; D C B )" d="M 62.67 127.5 A 16 16 0 0 0 56.08 114.56 A 16 16 0 0 0 41.73 112.28" class="geom-ang-arc geom-overlay" />
+            <path id="hl-arc-CDE" data-ref="&lt; C D E )" data-aliases="&lt; E D C )" d="M 116.27 112.28 A 16 16 0 0 0 101.92 114.56 A 16 16 0 0 0 95.33 127.5" class="geom-ang-arc geom-overlay" />
+          </g>
+          <g id="points">
+            <circle id="el-pt-A" data-ref="A" data-type="point" cx="79.00" cy="28.00" r="3.5" class="geom-point" />
+            <circle id="el-pt-B" data-ref="B" data-type="point" cx="26.69" cy="66.00" r="3.5" class="geom-point" />
+            <circle id="el-pt-C" data-ref="C" data-type="point" cx="46.67" cy="127.50" r="3.5" class="geom-point" />
+            <circle id="el-pt-D" data-ref="D" data-type="point" cx="111.33" cy="127.50" r="3.5" class="geom-point" />
+            <circle id="el-pt-E" data-ref="E" data-type="point" cx="131.31" cy="66.00" r="3.5" class="geom-point" />
+            <circle id="el-pt-F" data-ref="F" data-type="point" cx="205.00" cy="36.00" r="3.5" class="geom-point" />
+            <circle id="el-pt-G" data-ref="G" data-type="point" cx="182.75" cy="104.48" r="3.5" class="geom-point" />
+            <circle id="el-pt-H" data-ref="H" data-type="point" cx="227.25" cy="104.48" r="3.5" class="geom-point" />
+          </g>
+          <g id="labels">
+            <text id="lbl-A" data-ref="A" x="79.00" y="19.00" text-anchor="middle" class="geom-label">A</text>
+            <text id="lbl-B" data-ref="B" x="15.69" y="69.00" text-anchor="middle" class="geom-label">B</text>
+            <text id="lbl-C" data-ref="C" x="39.67" y="142.50" text-anchor="middle" class="geom-label">C</text>
+            <text id="lbl-D" data-ref="D" x="118.33" y="142.50" text-anchor="middle" class="geom-label">D</text>
+            <text id="lbl-E" data-ref="E" x="142.31" y="69.00" text-anchor="middle" class="geom-label">E</text>
+            <text id="lbl-F" data-ref="F" x="205.00" y="26.00" text-anchor="middle" class="geom-label">F</text>
+            <text id="lbl-G" data-ref="G" x="180.75" y="119.48" text-anchor="middle" class="geom-label">G</text>
+            <text id="lbl-H" data-ref="H" x="229.25" y="119.48" text-anchor="middle" class="geom-label">H</text>
+          </g>
+        </svg>
+        </figure>
+        <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">"""Programmatic construction for Book IV, Proposition 11 (IV.11)."""</span>
+
+        <span class="kn">from</span><span class="w"> </span><span class="nn">__future__</span><span class="w"> </span><span class="kn">import</span> <span class="n">annotations</span>
+
+        <span class="kn">from</span><span class="w"> </span><span class="nn">geometor.model</span><span class="w"> </span><span class="kn">import</span> <span class="n">Model</span>
+
+
+        <span class="k">def</span><span class="w"> </span><span class="nf">construct_g1</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">Model</span><span class="p">:</span>
+        <span class="w">    </span><span class="sd">"""Construct the figure 0106.g1 (Inscribed regular pentagon) using geometor.model."""</span>
+            <span class="n">model</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="s2">"IV.11"</span><span class="p">)</span>
+
+            <span class="c1"># Points (y-inverted for standard mathematical coordinates)</span>
+            <span class="n">O</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">set_point</span><span class="p">(</span><span class="mf">79.00</span><span class="p">,</span> <span class="o">-</span><span class="mf">83.00</span><span class="p">,</span> <span class="n">ID</span><span class="o">=</span><span class="s2">"O"</span><span class="p">)</span>
+            <span class="n">A</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">set_point</span><span class="p">(</span><span class="mf">79.00</span><span class="p">,</span> <span class="o">-</span><span class="mf">28.00</span><span class="p">,</span> <span class="n">classes</span><span class="o">=</span><span class="p">[</span><span class="s2">"given"</span><span class="p">],</span> <span class="n">ID</span><span class="o">=</span><span class="s2">"A"</span><span class="p">)</span>
+            <span class="n">B</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">set_point</span><span class="p">(</span><span class="mf">26.69</span><span class="p">,</span> <span class="o">-</span><span class="mf">66.00</span><span class="p">,</span> <span class="n">ID</span><span class="o">=</span><span class="s2">"B"</span><span class="p">)</span>
+            <span class="n">C</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">set_point</span><span class="p">(</span><span class="mf">46.67</span><span class="p">,</span> <span class="o">-</span><span class="mf">127.50</span><span class="p">,</span> <span class="n">ID</span><span class="o">=</span><span class="s2">"C"</span><span class="p">)</span>
+            <span class="n">D</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">set_point</span><span class="p">(</span><span class="mf">111.33</span><span class="p">,</span> <span class="o">-</span><span class="mf">127.50</span><span class="p">,</span> <span class="n">ID</span><span class="o">=</span><span class="s2">"D"</span><span class="p">)</span>
+            <span class="n">E</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">set_point</span><span class="p">(</span><span class="mf">131.31</span><span class="p">,</span> <span class="o">-</span><span class="mf">66.00</span><span class="p">,</span> <span class="n">ID</span><span class="o">=</span><span class="s2">"E"</span><span class="p">)</span>
+
+            <span class="c1"># Auxiliary golden triangle FGH</span>
+            <span class="n">F</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">set_point</span><span class="p">(</span><span class="mf">205.00</span><span class="p">,</span> <span class="o">-</span><span class="mf">36.00</span><span class="p">,</span> <span class="n">classes</span><span class="o">=</span><span class="p">[</span><span class="s2">"given"</span><span class="p">],</span> <span class="n">ID</span><span class="o">=</span><span class="s2">"F"</span><span class="p">)</span>
+            <span class="n">G</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">set_point</span><span class="p">(</span><span class="mf">182.75</span><span class="p">,</span> <span class="o">-</span><span class="mf">104.48</span><span class="p">,</span> <span class="n">classes</span><span class="o">=</span><span class="p">[</span><span class="s2">"given"</span><span class="p">],</span> <span class="n">ID</span><span class="o">=</span><span class="s2">"G"</span><span class="p">)</span>
+            <span class="n">H</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">set_point</span><span class="p">(</span><span class="mf">227.25</span><span class="p">,</span> <span class="o">-</span><span class="mf">104.48</span><span class="p">,</span> <span class="n">classes</span><span class="o">=</span><span class="p">[</span><span class="s2">"given"</span><span class="p">],</span> <span class="n">ID</span><span class="o">=</span><span class="s2">"H"</span><span class="p">)</span>
+
+            <span class="c1"># Given circle ABCDE</span>
+            <span class="n">model</span><span class="o">.</span><span class="n">construct_circle</span><span class="p">(</span><span class="n">O</span><span class="p">,</span> <span class="n">A</span><span class="p">)</span>
+
+            <span class="c1"># Segments</span>
+            <span class="n">model</span><span class="o">.</span><span class="n">set_segment</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+            <span class="n">model</span><span class="o">.</span><span class="n">set_segment</span><span class="p">(</span><span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">)</span>
+            <span class="n">model</span><span class="o">.</span><span class="n">set_segment</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="n">D</span><span class="p">)</span>
+            <span class="n">model</span><span class="o">.</span><span class="n">set_segment</span><span class="p">(</span><span class="n">D</span><span class="p">,</span> <span class="n">E</span><span class="p">)</span>
+            <span class="n">model</span><span class="o">.</span><span class="n">set_segment</span><span class="p">(</span><span class="n">E</span><span class="p">,</span> <span class="n">A</span><span class="p">)</span>
+            <span class="n">model</span><span class="o">.</span><span class="n">set_segment</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">C</span><span class="p">)</span>
+            <span class="n">model</span><span class="o">.</span><span class="n">set_segment</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">D</span><span class="p">)</span>
+            <span class="n">model</span><span class="o">.</span><span class="n">set_segment</span><span class="p">(</span><span class="n">B</span><span class="p">,</span> <span class="n">D</span><span class="p">)</span>
+            <span class="n">model</span><span class="o">.</span><span class="n">set_segment</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="n">E</span><span class="p">)</span>
+            <span class="n">model</span><span class="o">.</span><span class="n">set_segment</span><span class="p">(</span><span class="n">F</span><span class="p">,</span> <span class="n">G</span><span class="p">)</span>
+            <span class="n">model</span><span class="o">.</span><span class="n">set_segment</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">H</span><span class="p">)</span>
+            <span class="n">model</span><span class="o">.</span><span class="n">set_segment</span><span class="p">(</span><span class="n">H</span><span class="p">,</span> <span class="n">F</span><span class="p">)</span>
+
+            <span class="c1"># Polygons</span>
+            <span class="n">model</span><span class="o">.</span><span class="n">set_polygon</span><span class="p">([</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="n">D</span><span class="p">,</span> <span class="n">E</span><span class="p">])</span>
+            <span class="n">model</span><span class="o">.</span><span class="n">set_polygon</span><span class="p">([</span><span class="n">A</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="n">D</span><span class="p">])</span>
+            <span class="n">model</span><span class="o">.</span><span class="n">set_polygon</span><span class="p">([</span><span class="n">F</span><span class="p">,</span> <span class="n">G</span><span class="p">,</span> <span class="n">H</span><span class="p">])</span>
+
+            <span class="c1"># Angles (wedges)</span>
+            <span class="n">model</span><span class="o">.</span><span class="n">set_wedge</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">F</span><span class="p">,</span> <span class="n">F</span><span class="p">,</span> <span class="n">H</span><span class="p">)</span>
+            <span class="n">model</span><span class="o">.</span><span class="n">set_wedge</span><span class="p">(</span><span class="n">H</span><span class="p">,</span> <span class="n">G</span><span class="p">,</span> <span class="n">G</span><span class="p">,</span> <span class="n">F</span><span class="p">)</span>
+            <span class="n">model</span><span class="o">.</span><span class="n">set_wedge</span><span class="p">(</span><span class="n">F</span><span class="p">,</span> <span class="n">H</span><span class="p">,</span> <span class="n">H</span><span class="p">,</span> <span class="n">G</span><span class="p">)</span>
+            <span class="n">model</span><span class="o">.</span><span class="n">set_wedge</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">D</span><span class="p">)</span>
+            <span class="n">model</span><span class="o">.</span><span class="n">set_wedge</span><span class="p">(</span><span class="n">D</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="n">A</span><span class="p">)</span>
+            <span class="n">model</span><span class="o">.</span><span class="n">set_wedge</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">D</span><span class="p">,</span> <span class="n">D</span><span class="p">,</span> <span class="n">C</span><span class="p">)</span>
+            <span class="n">model</span><span class="o">.</span><span class="n">set_wedge</span><span class="p">(</span><span class="n">E</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="n">A</span><span class="p">)</span>
+            <span class="n">model</span><span class="o">.</span><span class="n">set_wedge</span><span class="p">(</span><span class="n">D</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="n">E</span><span class="p">)</span>
+            <span class="n">model</span><span class="o">.</span><span class="n">set_wedge</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="n">D</span><span class="p">,</span> <span class="n">D</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+            <span class="n">model</span><span class="o">.</span><span class="n">set_wedge</span><span class="p">(</span><span class="n">B</span><span class="p">,</span> <span class="n">D</span><span class="p">,</span> <span class="n">D</span><span class="p">,</span> <span class="n">A</span><span class="p">)</span>
+            <span class="n">model</span><span class="o">.</span><span class="n">set_wedge</span><span class="p">(</span><span class="n">B</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">E</span><span class="p">)</span>
+            <span class="n">model</span><span class="o">.</span><span class="n">set_wedge</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">E</span><span class="p">,</span> <span class="n">E</span><span class="p">,</span> <span class="n">D</span><span class="p">)</span>
+            <span class="n">model</span><span class="o">.</span><span class="n">set_wedge</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">)</span>
+            <span class="n">model</span><span class="o">.</span><span class="n">set_wedge</span><span class="p">(</span><span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="n">D</span><span class="p">)</span>
+            <span class="n">model</span><span class="o">.</span><span class="n">set_wedge</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="n">D</span><span class="p">,</span> <span class="n">D</span><span class="p">,</span> <span class="n">E</span><span class="p">)</span>
+
+            <span class="k">return</span> <span class="n">model</span>
+
+
+        <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
+            <span class="n">construct_g1</span><span class="p">()</span>
+        </pre></div>
+        </div>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../G.128/code.html" title="G.128">&larr; <span class="nav-label">G.128</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../index.html">Elements 2.0 (G Index)</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../G.130/code.html" title="G.130"><span class="nav-label">G.130</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-tags">
+      <h3>Tags</h3>
+      <ul>
+        <li><a href="../../tags/acute-angle.html">acute-angle</a></li>
+        <li><a href="../../tags/ad-infinitum.html">ad-infinitum</a></li>
+        <li><a href="../../tags/angle.html">angle</a></li>
+        <li><a href="../../tags/apotome.html">apotome</a></li>
+        <li><a href="../../tags/arc.html">arc</a></li>
+        <li><a href="../../tags/binomial.html">binomial</a></li>
+        <li><a href="../../tags/bisect.html">bisect</a></li>
+        <li><a href="../../tags/book-i.html">book-i</a></li>
+        <li><a href="../../tags/book-ii.html">book-ii</a></li>
+        <li><a href="../../tags/book-iii.html">book-iii</a></li>
+        <li><a href="../../tags/book-iv.html">book-iv</a></li>
+        <li><a href="../../tags/book-ix.html">book-ix</a></li>
+        <li><a href="../../tags/book-v.html">book-v</a></li>
+        <li><a href="../../tags/book-vi.html">book-vi</a></li>
+        <li><a href="../../tags/book-vii.html">book-vii</a></li>
+        <li><a href="../../tags/book-viii.html">book-viii</a></li>
+        <li><a href="../../tags/book-x.html">book-x</a></li>
+        <li><a href="../../tags/book-xi.html">book-xi</a></li>
+        <li><a href="../../tags/book-xii.html">book-xii</a></li>
+        <li><a href="../../tags/book-xiii.html">book-xiii</a></li>
+        <li><a href="../../tags/circle.html">circle</a></li>
+        <li><a href="../../tags/circle-inscribed-in-figure.html">circle-inscribed-in-figure</a></li>
+        <li><a href="../../tags/circles-touching.html">circles-touching</a></li>
+        <li><a href="../../tags/circumscribed.html">circumscribed</a></li>
+        <li><a href="../../tags/commensurable.html">commensurable</a></li>
+        <li><a href="../../tags/componendo.html">componendo</a></li>
+        <li><a href="../../tags/composite.html">composite</a></li>
+        <li><a href="../../tags/composite-number.html">composite-number</a></li>
+        <li><a href="../../tags/composite-to-one-another.html">composite-to-one-another</a></li>
+        <li><a href="../../tags/cone.html">cone</a></li>
+        <li><a href="../../tags/continued-proportion.html">continued-proportion</a></li>
+        <li><a href="../../tags/convertendo.html">convertendo</a></li>
+        <li><a href="../../tags/corresponding-magnitudes.html">corresponding-magnitudes</a></li>
+        <li><a href="../../tags/cube.html">cube</a></li>
+        <li><a href="../../tags/cube-number.html">cube-number</a></li>
+        <li><a href="../../tags/cylinder.html">cylinder</a></li>
+        <li><a href="../../tags/dodecahedron.html">dodecahedron</a></li>
+        <li><a href="../../tags/duplicate-ratio.html">duplicate-ratio</a></li>
+        <li><a href="../../tags/equal-and-similar-solid-figures.html">equal-and-similar-solid-figures</a></li>
+        <li><a href="../../tags/equality.html">equality</a></li>
+        <li><a href="../../tags/equally-distant-from-centre.html">equally-distant-from-centre</a></li>
+        <li><a href="../../tags/equilateral.html">equilateral</a></li>
+        <li><a href="../../tags/even-number.html">even-number</a></li>
+        <li><a href="../../tags/even-times-even-number.html">even-times-even-number</a></li>
+        <li><a href="../../tags/even-times-odd-number.html">even-times-odd-number</a></li>
+        <li><a href="../../tags/ex-aequali.html">ex-aequali</a></li>
+        <li><a href="../../tags/extreme-and-mean-ratio.html">extreme-and-mean-ratio</a></li>
+        <li><a href="../../tags/fifteen-angled.html">fifteen-angled</a></li>
+        <li><a href="../../tags/fifth-apotome.html">fifth-apotome</a></li>
+        <li><a href="../../tags/fifth-binomial.html">fifth-binomial</a></li>
+        <li><a href="../../tags/first-apotome.html">first-apotome</a></li>
+        <li><a href="../../tags/first-apotome-of-a-medial-straight-line.html">first-apotome-of-a-medial-straight-line</a></li>
+        <li><a href="../../tags/first-bimedial.html">first-bimedial</a></li>
+        <li><a href="../../tags/first-binomial-straight-line.html">first-binomial-straight-line</a></li>
+        <li><a href="../../tags/fourth-apotome.html">fourth-apotome</a></li>
+        <li><a href="../../tags/fourth-binomial.html">fourth-binomial</a></li>
+        <li><a href="../../tags/greater-distance-from-centre.html">greater-distance-from-centre</a></li>
+        <li><a href="../../tags/greater-ratio.html">greater-ratio</a></li>
+        <li><a href="../../tags/greatest-common-measure.html">greatest-common-measure</a></li>
+        <li><a href="../../tags/have-a-ratio.html">have-a-ratio</a></li>
+        <li><a href="../../tags/hexagon.html">hexagon</a></li>
+        <li><a href="../../tags/icosahedron.html">icosahedron</a></li>
+        <li><a href="../../tags/in-the-same-ratio.html">in-the-same-ratio</a></li>
+        <li><a href="../../tags/incommensurable.html">incommensurable</a></li>
+        <li><a href="../../tags/inscribed.html">inscribed</a></li>
+        <li><a href="../../tags/irrational.html">irrational</a></li>
+        <li><a href="../../tags/isosceles.html">isosceles</a></li>
+        <li><a href="../../tags/least-common-multiple.html">least-common-multiple</a></li>
+        <li><a href="../../tags/lemma.html">lemma</a></li>
+        <li><a href="../../tags/line.html">line</a></li>
+        <li><a href="../../tags/major.html">major</a></li>
+        <li><a href="../../tags/mean-proportional.html">mean-proportional</a></li>
+        <li><a href="../../tags/medial.html">medial</a></li>
+        <li><a href="../../tags/minor.html">minor</a></li>
+        <li><a href="../../tags/multiply.html">multiply</a></li>
+        <li><a href="../../tags/number.html">number</a></li>
+        <li><a href="../../tags/oblong.html">oblong</a></li>
+        <li><a href="../../tags/obtuse-angle.html">obtuse-angle</a></li>
+        <li><a href="../../tags/octahedron.html">octahedron</a></li>
+        <li><a href="../../tags/odd-number.html">odd-number</a></li>
+        <li><a href="../../tags/parallel.html">parallel</a></li>
+        <li><a href="../../tags/parallel-planes.html">parallel-planes</a></li>
+        <li><a href="../../tags/parallel-straight-lines.html">parallel-straight-lines</a></li>
+        <li><a href="../../tags/parallelepiped.html">parallelepiped</a></li>
+        <li><a href="../../tags/parallelogram.html">parallelogram</a></li>
+        <li><a href="../../tags/pentagon.html">pentagon</a></li>
+        <li><a href="../../tags/perfect-number.html">perfect-number</a></li>
+        <li><a href="../../tags/perpendicular.html">perpendicular</a></li>
+        <li><a href="../../tags/plane.html">plane</a></li>
+        <li><a href="../../tags/plane-at-right-angles-to-plane.html">plane-at-right-angles-to-plane</a></li>
+        <li><a href="../../tags/plane-number.html">plane-number</a></li>
+        <li><a href="../../tags/point.html">point</a></li>
+        <li><a href="../../tags/polygon.html">polygon</a></li>
+        <li><a href="../../tags/porism.html">porism</a></li>
+        <li><a href="../../tags/prime.html">prime</a></li>
+        <li><a href="../../tags/prime-to-one-another.html">prime-to-one-another</a></li>
+        <li><a href="../../tags/prism.html">prism</a></li>
+        <li><a href="../../tags/proportion.html">proportion</a></li>
+        <li><a href="../../tags/proportional.html">proportional</a></li>
+        <li><a href="../../tags/pyramid.html">pyramid</a></li>
+        <li><a href="../../tags/quadrilateral.html">quadrilateral</a></li>
+        <li><a href="../../tags/ratio.html">ratio</a></li>
+        <li><a href="../../tags/rational.html">rational</a></li>
+        <li><a href="../../tags/rectangle.html">rectangle</a></li>
+        <li><a href="../../tags/reductio-ad-absurdum.html">reductio-ad-absurdum</a></li>
+        <li><a href="../../tags/rhomboid.html">rhomboid</a></li>
+        <li><a href="../../tags/rhombus.html">rhombus</a></li>
+        <li><a href="../../tags/right-angle.html">right-angle</a></li>
+        <li><a href="../../tags/right-angles-to-plane.html">right-angles-to-plane</a></li>
+        <li><a href="../../tags/second-apotome.html">second-apotome</a></li>
+        <li><a href="../../tags/second-apotome-of-a-medial-straight-line.html">second-apotome-of-a-medial-straight-line</a></li>
+        <li><a href="../../tags/second-bimedial.html">second-bimedial</a></li>
+        <li><a href="../../tags/second-binomial.html">second-binomial</a></li>
+        <li><a href="../../tags/segment.html">segment</a></li>
+        <li><a href="../../tags/semicircle.html">semicircle</a></li>
+        <li><a href="../../tags/separando.html">separando</a></li>
+        <li><a href="../../tags/side-of-a-medial-minus-a-medial-area.html">side-of-a-medial-minus-a-medial-area</a></li>
+        <li><a href="../../tags/side-of-a-medial-minus-a-rational-area.html">side-of-a-medial-minus-a-rational-area</a></li>
+        <li><a href="../../tags/side-of-a-rational-plus-a-medial-area.html">side-of-a-rational-plus-a-medial-area</a></li>
+        <li><a href="../../tags/side-of-the-sum-of-two-medial-areas.html">side-of-the-sum-of-two-medial-areas</a></li>
+        <li><a href="../../tags/similar.html">similar</a></li>
+        <li><a href="../../tags/similar-cones-and-cylinders.html">similar-cones-and-cylinders</a></li>
+        <li><a href="../../tags/similar-plane-and-solid-numbers.html">similar-plane-and-solid-numbers</a></li>
+        <li><a href="../../tags/similar-rectilineal-figures.html">similar-rectilineal-figures</a></li>
+        <li><a href="../../tags/similar-segments-of-circles.html">similar-segments-of-circles</a></li>
+        <li><a href="../../tags/similar-solid-figures.html">similar-solid-figures</a></li>
+        <li><a href="../../tags/sixth-apotome.html">sixth-apotome</a></li>
+        <li><a href="../../tags/sixth-binomial.html">sixth-binomial</a></li>
+        <li><a href="../../tags/solid-angle.html">solid-angle</a></li>
+        <li><a href="../../tags/solid-number.html">solid-number</a></li>
+        <li><a href="../../tags/sphere.html">sphere</a></li>
+        <li><a href="../../tags/square.html">square</a></li>
+        <li><a href="../../tags/square-number.html">square-number</a></li>
+        <li><a href="../../tags/tangent.html">tangent</a></li>
+        <li><a href="../../tags/third-apotome.html">third-apotome</a></li>
+        <li><a href="../../tags/third-binomial.html">third-binomial</a></li>
+        <li><a href="../../tags/trapezium.html">trapezium</a></li>
+        <li><a href="../../tags/triangle.html">triangle</a></li>
+        <li><a href="../../tags/triplicate-ratio.html">triplicate-ratio</a></li>
+        <li><a href="../../tags/unit.html">unit</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-categories">
+      <h3>Categories</h3>
+      <ul>
+        <li><a href="../../categories/circles.html">circles</a></li>
+        <li><a href="../../categories/common-notion.html">common-notion</a></li>
+        <li><a href="../../categories/construction.html">construction</a></li>
+        <li><a href="../../categories/definition.html">definition</a></li>
+        <li><a href="../../categories/equality.html">equality</a></li>
+        <li><a href="../../categories/finding.html">finding</a></li>
+        <li><a href="../../categories/geometric-algebra.html">geometric-algebra</a></li>
+        <li><a href="../../categories/incommensurables.html">incommensurables</a></li>
+        <li><a href="../../categories/magnitudes.html">magnitudes</a></li>
+        <li><a href="../../categories/method-of-exhaustion.html">method-of-exhaustion</a></li>
+        <li><a href="../../categories/number-theory.html">number-theory</a></li>
+        <li><a href="../../categories/plane-geometry.html">plane-geometry</a></li>
+        <li><a href="../../categories/polygons.html">polygons</a></li>
+        <li><a href="../../categories/postulate.html">postulate</a></li>
+        <li><a href="../../categories/problem.html">problem</a></li>
+        <li><a href="../../categories/proof.html">proof</a></li>
+        <li><a href="../../categories/proportions.html">proportions</a></li>
+        <li><a href="../../categories/regular-solids.html">regular-solids</a></li>
+        <li><a href="../../categories/similar-figures.html">similar-figures</a></li>
+        <li><a href="../../categories/solid-geometry.html">solid-geometry</a></li>
+        <li><a href="../../categories/theorem.html">theorem</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../types/cn.html">cn</a></li>
+        <li><a href="../../types/def.html">def</a></li>
+        <li><a href="../../types/orphans.html">orphans</a></li>
+        <li><a href="../../types/post.html">post</a></li>
+        <li><a href="../../types/prop.html">prop</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../../about.html">about</a></li>
+        <li><a href="../../connect.html">connect</a></li>
+        <li><a href="../../glossary.html">glossary</a></li>
+        <li><a href="../../todos/index.html">todos</a></li>
+        <li><a href="../../changelog.html">changelog</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright .
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+  <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=421e4467"></script>
+  <script src="../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>
