@@ -19,19 +19,19 @@ Overview
 Key Features
 ------------
 
-- **G-Index Generation**: Automating the creation of a cross-referenced index of all elements.
-- **Dependency Graphs**: Visualizing the proof chain for every proposition using Graphviz.
-- **Clean RST Injection**: Generating optimized documentation with clean enunciation blockquotes and integrated diagrams.
-- **Intersphinx Integration**: Seamlessly linking back to the canonical Euclid source.
+- **G-Index Generation**: Automating the creation of a cross-referenced dependency index (`G.1`, `G.2`...) from the composed `geometor.euclid` Heath Edition.
+- **GEOMETOR Symbolic Indications**: Transforming geometric references into explicit symbolic primitives (`/ A B /`, `< A B C >`, `< B A C )`, `( B C D )`, `[ A B ]`, `A`).
+- **Interactive SVG & Dependency Graphs**: Embedding interactive SVG diagrams and Graphviz dependency trees for every element.
+- **Taxonomy & Apparatus**: Extracting categories, semantic tags, and scholarly apparatus (`:term:`, `:person:`, `:cite:`).
 
 Usage
 -----
 
-To generate the G-Index:
+To generate the G-Index (optionally filtering by book):
 
 .. code-block:: bash
 
-    python -m geometor.elements
+    python3 -m geometor.elements --books I
 
 Resources
 ---------

@@ -5,7 +5,7 @@ geometor.elements
 
 .. autoapi-nested-parse::
 
-   geometor.elements package.
+   Symbolic dependency mapping and G-Index generation for Euclid's Elements.
 
 
 
@@ -32,6 +32,6 @@ Package Contents
 ----------------
 
 .. py:data:: __version__
-   :value: '0.2.1'
+   :value: '0.2.2'
 
 

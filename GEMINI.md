@@ -20,7 +20,11 @@ It is responsible for:
 ## Key Repos
 
 -   **elements**: This repository. Code for G-Index generation and dependency analysis.
--   **euclid**: The source of truth for the modernized text and semantic discovery.
+-   **euclid**: The source of truth for the modernized text and semantic discovery (`../euclid/docsrc/heath/`).
 -   **model**: The symbolic engine used for geometric construction.
 
+## Key Modules
 
+-   `graph.py`: Crawls the composed RST Heath Edition in `../euclid/docsrc/heath/`, splitting definitions, postulates, and common notions into discrete anchored items and building the `networkx.DiGraph` with categories, tags, and interactive SVG assets.
+-   `g_index.py`: Sequences propositions and dependencies into `G.1`..`G.N`, rewrites `:g:` roles to explicit GEOMETOR symbolic indications (`/ A B /`, `< A B C >`, `< B A C )`, `( B C D )`, `[ A B ]`, `A`), rewrites justifications to `G.<n>` links, and renders the Book Codex RST in `docsrc/elements2/`.
+-   `__main__.py`: CLI entry point supporting `--books` and `--output-dir`.

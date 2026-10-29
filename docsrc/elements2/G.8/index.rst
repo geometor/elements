@@ -1,86 +1,79 @@
 :order: 8
+:number: 8
+:canonical_id: G.8
 :original_id: I.2
+:volume: I
+:book: I
 :type: prop
-:dependencies: G.5, G.1, G.6, G.3, G.7, G.4
+:subtype: problem
+:categories: problem, construction, plane-geometry
+:category: problem, construction, plane-geometry
+:tags: book-i, point, segment, circle, triangle, equality
+:dependencies: G.1, G.3, G.4, G.5, G.6, G.7
 :excerpt: To place at a given point (as an extremity) a straight line equal to a given straight line.
 
-**Heath ID:** `I.2 <https://geometor.github.io/euclid/I/2/>`_
-
-.. picture:: G.8.png
-
 .. _G.8:
+.. _I.2:
 
 G.8
 ===
 
-    To place at a given point (as an extremity) a straight line equal to a given straight line.
+.. rubric:: `I.2 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/02/>`_
 
-Let ``A`` be the given point, and ``BC`` the given straight line.
+.. enunciation::
 
-Thus it is required to place at the point ``A`` (as an extremity) a straight line equal to the given straight line ``BC``. 
+   To place at a given point (as an extremity)\ [#f1]_ a straight line equal to a given straight line.
 
-From the point ``A`` to the point ``B`` let the straight line ``AB`` be joined; [:ref:`G.3`] and on it let the equilateral triangle ``DAB`` be constructed. [:ref:`G.5`]
+.. picture:: 0258.g1.svg
+   :alt: Proposition 2 figure
 
-Let the straight lines ``AE``, ``BF`` be produced in a straight line with ``DA``, ``DB``; [:ref:`G.7`] with centre ``B`` and distance ``BC`` let the circle ``CGH`` be described; [:ref:`G.4`] and again, with centre ``D`` and distance ``DG`` let the circle ``GKL`` be described. [:ref:`G.4`]
+Let :g:`A <0258.g1:A>` be the given point, and :g:`/ B C / <0258.g1:/ B C />` the given straight line.
 
-Then, since the point ``B`` is the centre of the circle ``CGH``, ``BC`` is equal to ``BG``.
-        
+Thus it is required to place at the point :g:`A <0258.g1:A>` (as an extremity) a straight line equal to the given straight line :g:`/ B C / <0258.g1:/ B C />`.
 
-Again, since the point ``D`` is the centre of the circle ``GKL``, ``DL`` is equal to ``DG``.
+From the point :g:`A <0258.g1:A>` to the point :g:`B <0258.g1:B>` let the straight line :g:`/ A B / <0258.g1:/ A B />` be joined; :just:`[G.3] <G.3>`
 
-And in these ``DA`` is equal to ``DB``; therefore the remainder ``AL`` is equal to the remainder ``BG.`` [:ref:`G.6`]
-        
+and on it let the :eq:`equilateral <0258.g1:/ D A / = 0258.g1:/ D B / = 0258.g1:/ A B />` triangle :g:`< D A B > <0258.g1:< D A B >>` be constructed. :just:`[G.5] <G.5>`
 
-But ``BC`` was also proved equal to ``BG``; therefore each of the straight lines ``AL``, ``BC`` is equal to ``BG``.
+Let the straight lines :g:`/ A E / <0258.g1:/ A E />`, :g:`/ B F / <0258.g1:/ B F />` be produced\ [#f2]_ in a straight line with :g:`/ D A / <0258.g1:/ D A />`, :g:`/ D B / <0258.g1:/ D B />`; :just:`[G.7] <G.7>`
 
-And things which are equal to the same thing are also equal to one another; [:ref:`G.1`] therefore ``AL`` is also equal to ``BC``.
+with centre :g:`B <0258.g1:B>` and distance :g:`/ B C / <0258.g1:/ B C />` let the circle :g:`( B C ) <0258.g1:( B C )>` be described; :just:`[G.4] <G.4>`
 
-Therefore at the given point ``A`` the straight line ``AL`` is placed equal to the given straight line ``BC``.
+and again, with centre :g:`D <0258.g1:D>` and distance :g:`/ D G / <0258.g1:/ D G />` let the circle :g:`( D G ) <0258.g1:( D G )>` be described. :just:`[G.4] <G.4>`
 
+Then, since the point :g:`B <0258.g1:B>` is the centre of the circle :g:`( B C ) <0258.g1:( B C )>`,
 
-**Q. E. D.**
+.. assertion::
 
+   :g:`/ B C / <0258.g1:/ B C />` is :eq:`equal <0258.g1:/ B C / = 0258.g1:/ B G />` to :g:`/ B G / <0258.g1:/ B G />`.
 
-(Being) what it was required to do.
+Again, since the point :g:`D <0258.g1:D>` is the centre of the circle :g:`( D G ) <0258.g1:( D G )>`,
 
+.. assertion::
 
-.. note::
+   :g:`/ D L / <0258.g1:/ D L />` is :eq:`equal <0258.g1:/ D L / = 0258.g1:/ D G />` to :g:`/ D G / <0258.g1:/ D G />`.
 
+And in these :g:`/ D A / <0258.g1:/ D A />` is :eq:`equal <0258.g1:/ D A / = 0258.g1:/ D B />` to :g:`/ D B / <0258.g1:/ D B />`; therefore the remainder :g:`/ A L / <0258.g1:/ A L />` is :eq:`equal <0258.g1:/ A L / = 0258.g1:/ B G />` to the remainder :g:`/ B G / <0258.g1:/ B G />`.\ [#f3]_ :just:`[G.6] <G.6>`
 
-   **1. (as an extremity).**
+But :g:`/ B C / <0258.g1:/ B C />` was also proved :eq:`equal <0258.g1:/ B C / = 0258.g1:/ B G />` to :g:`/ B G / <0258.g1:/ B G />`; therefore each of the straight lines :g:`/ A L / <0258.g1:/ A L />`, :g:`/ B C / <0258.g1:/ B C />` is :eq:`equal <0258.g1:/ A L / = 0258.g1:/ B C / = 0258.g1:/ B G />` to :g:`/ B G / <0258.g1:/ B G />`.
 
-   
+And things which are equal to the same thing are also equal to one another; :just:`[G.1] <G.1>`
 
-   I have inserted these words because to place a straight line ``at`` a given point
+.. assertion::
 
-    (πρὸς τῷ δοθέντι σημείῳ) is not quite clear enough, at least in English.
+   therefore :g:`/ A L / <0258.g1:/ A L />` is also :eq:`equal <0258.g1:/ A L / = 0258.g1:/ B C />` to :g:`/ B C / <0258.g1:/ B C />`.
 
+Therefore at the given point :g:`A <0258.g1:A>` the straight line :g:`/ A L / <0258.g1:/ A L />` is placed :eq:`equal <0258.g1:/ A L / = 0258.g1:/ B C />` to the given straight line :g:`/ B C / <0258.g1:/ B C />`.
 
-.. note::
+.. qed::
 
+   (Being) what it was required to do.
 
-   **11. Let the straight lines AE, BF be produced....**
+.. [#f1] **(as an extremity).** I have inserted these words because “to place a straight line at a given point” (πρὸς τῷ δοθέντι σημείῳ) is not quite clear enough, at least in English.
 
-   
+.. [#f2] **Let the straight lines AE, BF be produced....** It will be observed that in this first application of Postulate 2, and again in I. 5, :person:`Euclid <euclid>` speaks of the *continuation* of the straight line as that which is produced in such cases, ἐκβεβλήσθωσαν and προσεκβεβλήσθωσαν meaning little more than *drawing* straight lines “in a straight line with” the given straight lines. The first place in which :person:`Euclid <euclid>` uses phraseology exactly corresponding to ours when
 
-   It will be observed that in this first application of :ref:`G.7`, and again in :ref:`G.12`, Euclid speaks of the ``continuation`` of the straight line as that which is produced in such cases, ἐκβεβλήσθωσαν and προσεκβεβλήσθωσαν meaning little more than ``drawing`` straight lines in a straight line with
-
-    the given straight lines. The first place in which Euclid uses phraseology exactly corresponding to ours when speaking of a straight line being produced is in :ref:`G.25`: let one side of it, ``BC``, be produced to ``D``
-
-    (προσεκβεβλήσθω αὐτοῦ μία πλευρὰ ἡ ΒΓ ἐπὶ τὸ Δ).
-
-
-.. note::
-
-
-   **23. the remainder AL...the remainder BG.**
-
-   
-
-   The Greek expressions are λοιπὴ ἡ ΑΛ and λοιπῇ τῇ BH, and the literal translation would be ``AL`` (or ``BG``) ``remaining``,
-
-    but the shade of meaning conveyed by the position of the definite article can hardly be expressed in English.
-
+.. [#f3] **the remainder AL...the remainder BG.** The Greek expressions are λοιπὴ ἡ ΑΛ and λοιπῇ τῇ ΒΗ, and the literal translation would be “:g:`/ A L / <0258.g1:/ A L />` (or :g:`/ B G / <0258.g1:/ B G />`) *remaining*,” but the shade of meaning conveyed by the position of the definite article can hardly be expressed in English.
 
 Dependency Graph
 ----------------
@@ -88,33 +81,31 @@ Dependency Graph
 .. graphviz::
 
    digraph {
-     bgcolor="black";
-     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
-     edge [color="white", fontcolor="white"];
+     bgcolor="transparent";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11, color="#d6d3cd", fontcolor="#ffffff"];
+     edge [color="#8c857b", fontcolor="#8c857b", arrowsize=0.75];
      rankdir="TB";
-     "G.3" [label="G.3", fillcolor="#444422", URL="/elements2/G.3/", target="_top"];
-     "G.8" [label="G.8", penwidth=3, color="white", fillcolor="#555555", URL="/elements2/G.8/", target="_top"];
-     "G.5" [label="G.5", fillcolor="#222244", URL="/elements2/G.5/", target="_top"];
-     "G.2" [label="G.2", fillcolor="#224422", URL="/elements2/G.2/", target="_top"];
-     "G.6" [label="G.6", fillcolor="#442222", URL="/elements2/G.6/", target="_top"];
-     "G.4" [label="G.4", fillcolor="#444422", URL="/elements2/G.4/", target="_top"];
-     "G.1" [label="G.1", fillcolor="#442222", URL="/elements2/G.1/", target="_top"];
-     "G.7" [label="G.7", fillcolor="#444422", URL="/elements2/G.7/", target="_top"];
-     "G.5" -> "G.3";
-     "G.8" -> "G.3";
-     "G.8" -> "G.5";
-     "G.5" -> "G.2";
-     "G.8" -> "G.6";
-     "G.5" -> "G.4";
-     "G.8" -> "G.4";
+     "G.1" [label="G.1", tooltip="G.1 (I.cn.1)", fillcolor="#442222", URL="../G.1/index.html", target="_top"];
+     "G.2" [label="G.2", tooltip="G.2 (I.def.15)", fillcolor="#224422", URL="../G.2/index.html", target="_top"];
+     "G.3" [label="G.3", tooltip="G.3 (I.post.1)", fillcolor="#444422", URL="../G.3/index.html", target="_top"];
+     "G.4" [label="G.4", tooltip="G.4 (I.post.3)", fillcolor="#444422", URL="../G.4/index.html", target="_top"];
+     "G.5" [label="G.5", tooltip="G.5 (I.1)", fillcolor="#222244", URL="../G.5/index.html", target="_top"];
+     "G.6" [label="G.6", tooltip="G.6 (I.cn.3)", fillcolor="#442222", URL="../G.6/index.html", target="_top"];
+     "G.7" [label="G.7", tooltip="G.7 (I.post.2)", fillcolor="#444422", URL="../G.7/index.html", target="_top"];
+     "G.8" [label="G.8", tooltip="G.8 (I.2)", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.5" -> "G.1";
      "G.8" -> "G.1";
+     "G.5" -> "G.2";
+     "G.5" -> "G.3";
+     "G.8" -> "G.3";
+     "G.5" -> "G.4";
+     "G.8" -> "G.4";
+     "G.8" -> "G.5";
+     "G.8" -> "G.6";
      "G.8" -> "G.7";
    }
-
-
 
 Required for
 ------------
 
-:ref:`G.17`, :ref:`G.19`, :ref:`G.20`, :ref:`G.21`, :ref:`G.23`, :ref:`G.24`, :ref:`G.25`, :ref:`G.26`, :ref:`G.27`, :ref:`G.28`, :ref:`G.30`, :ref:`G.31`, :ref:`G.32`, :ref:`G.33`, :ref:`G.34`, :ref:`G.35`, :ref:`G.36`, :ref:`G.38`, :ref:`G.39`, :ref:`G.42`, :ref:`G.9`, :ref:`G.43`, :ref:`G.44`, :ref:`G.45`, :ref:`G.46`, :ref:`G.47`, :ref:`G.48`, :ref:`G.49`, :ref:`G.50`, :ref:`G.51`, :ref:`G.52`, :ref:`G.53`, :ref:`G.54`, :ref:`G.55`, :ref:`G.56`, :ref:`G.57`, :ref:`G.58`, :ref:`G.59`, :ref:`G.60`, :ref:`G.61`, :ref:`G.12`, :ref:`G.14`, :ref:`G.15`, :ref:`G.16`
+:ref:`G.9 <G.9>`, :ref:`G.12 <G.12>`, :ref:`G.14 <G.14>`, :ref:`G.15 <G.15>`, :ref:`G.16 <G.16>`, :ref:`G.17 <G.17>`, :ref:`G.19 <G.19>`, :ref:`G.20 <G.20>`, :ref:`G.22 <G.22>`, :ref:`G.24 <G.24>`, :ref:`G.25 <G.25>`, :ref:`G.27 <G.27>`, :ref:`G.28 <G.28>`, :ref:`G.29 <G.29>`, :ref:`G.30 <G.30>`, :ref:`G.31 <G.31>`, :ref:`G.32 <G.32>`, :ref:`G.33 <G.33>`, :ref:`G.34 <G.34>`, :ref:`G.35 <G.35>`, :ref:`G.36 <G.36>`, :ref:`G.37 <G.37>`, :ref:`G.39 <G.39>`, :ref:`G.40 <G.40>`, :ref:`G.42 <G.42>`, :ref:`G.43 <G.43>`, :ref:`G.44 <G.44>`, :ref:`G.45 <G.45>`, :ref:`G.46 <G.46>`, :ref:`G.47 <G.47>`, :ref:`G.48 <G.48>`, :ref:`G.49 <G.49>`, :ref:`G.50 <G.50>`, :ref:`G.51 <G.51>`, :ref:`G.52 <G.52>`, :ref:`G.53 <G.53>`, :ref:`G.54 <G.54>`, :ref:`G.55 <G.55>`, :ref:`G.56 <G.56>`, :ref:`G.57 <G.57>`, :ref:`G.58 <G.58>`, :ref:`G.59 <G.59>`, :ref:`G.60 <G.60>`, :ref:`G.61 <G.61>`

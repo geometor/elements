@@ -2,6 +2,19 @@ changelog
 =========
 
 
+0.3.0
+-----
+*2026-10-29*
+
+**added**
+
+-   Rebuilt the Elements 2.0 (G-Index) pipeline (`graph.py`, `g_index.py`, `__main__.py`) directly from the composed Heath edition in `../euclid/docsrc/heath/`.
+-   Transformed `:g:` roles to display explicit GEOMETOR symbolic element indications (`/ A B /`, `< A B C >`, `< B A C )`, `( B C D )`, `[ A B ]`, `A`).
+-   Remapped `:just:`, `.. assertion::`, and `.. subclause::` justification references to G-Index targets (`[G.1] <G.1>`), resolving `[id.]` / `[*id.*]` back-references.
+-   Added rich taxonomy metadata (`:categories:`, `:tags:`, `:type:`, `:subtype:`, `:original_id:`, `:canonical_id:`) and inline interactive SVG diagrams (`.. picture:: <folio>.g<k>.svg`) to each G-node.
+-   Configured the Euclid Book Codex layout (`:layout: book`) and styles for the G-Index collection and node pages.
+
+
 0.2.2
 -----
 *2025-12-20*

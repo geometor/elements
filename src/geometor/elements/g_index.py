@@ -1,61 +1,298 @@
 """
 Generate the G-Index for Euclid's Elements.
 
-This module processes the semantic structure of the modernized text
-(sourced from the Heath edition in the sibling `geometor-euclid` project)
-to create a strictly numbered dependency graph and interlinked RST structure.
+Processes the composed Heath Edition in `../euclid/docsrc/heath/` to produce:
+- Strictly numbered G-Index nodes (`G.1`, `G.2`, ...) in topological dependency order
+- GEOMETOR symbolic element indications in `:g:` roles (`/ A B /`, `< A B C >`, `< B A C )`, `( B C D )`, `[ A B ]`, `A`)
+- G-Index step justifications (`:just:`[G.4] <G.4>``, `.. assertion:: [G.2] <G.2>`)
+- Interactive inline SVG figures copied per G-node
+- Rich metadata (`:type:`, `:subtype:`, `:categories:`, `:tags:`, `:dependencies:`)
+- Transitive Graphviz dependency graphs and `Required for` back-links
 """
 
 from __future__ import annotations
-import networkx as nx
-import re
-from pathlib import Path
-import shutil
+
 import json
-from .graph import build_graph
+import re
+import shutil
+from pathlib import Path
+from typing import Any, Dict, List, Optional, Set
+
+import networkx as nx
+
+from .graph import (
+    build_graph,
+    canonical_sort_key,
+    g_dependency_sort_key,
+    parse_justification_arg,
+)
+
+_G_ROLE_RE = re.compile(r":g:`([^`]+)`")
+_TERM_ROLE_RE = re.compile(r":term:`([^`]+)`")
+_PERSON_ROLE_RE = re.compile(r":person:`([^`]+)`")
+_CITE_ROLE_RE = re.compile(r":cite:`([^`]+)`")
+_EQ_ROLE_RE = re.compile(r":eq:`([^`]+)`")
+_COMBINED_JUST_RE = re.compile(
+    r"(?P<role>:just:`(?P<role_arg>[^`]+)`)|(?P<dir>^(?P<dir_prefix>\.\.\s+(?:assertion|subclause|sub-clause)::)[ \t]+(?P<dir_arg>[^\n]+))",
+    re.MULTILINE,
+)
 
 
-def generate_g_index(output_dir: Path | None = None) -> None:
-    """Generate the G-Index (dependency graph index) for the elements.
+def g_num_sort_key(g_name: str) -> int:
+    """Return integer index for a 'G.<n>' identifier."""
+    if g_name.startswith("G.") and g_name[2:].isdigit():
+        return int(g_name[2:])
+    return 999999
+
+
+def transform_geom_roles(rst_text: str) -> str:
+    """Replace cryptic `$AB$` display labels in `:g:` roles with GEOMETOR symbolic indications.
+
+    Examples:
+    - ``:g:`$AB$ <0255.g1:/ A B />``` -> ``:g:`/ A B / <0255.g1:/ A B />```
+    - ``:g:`$ABC$ <0255.g1:< A B C >>``` -> ``:g:`< A B C > <0255.g1:< A B C >>```
+    - ``:g:`$BAC$ <0261.g1:< B A C )>``` -> ``:g:`< B A C ) <0261.g1:< B A C )>```
+    - ``:g:`$BCD$ <0255.g1:( B C D )>``` -> ``:g:`( B C D ) <0255.g1:( B C D )>```
+    - ``:g:`$A$ <0255.g1:A>``` -> ``:g:`A <0255.g1:A>```
+    """
+
+    def _repl(match: re.Match) -> str:
+        raw = match.group(1).strip()
+        m = re.match(r"^(.+?)\s+<(.+)>$", raw)
+        if m:
+            target = m.group(2).strip()
+        else:
+            target = raw
+        expr = target.split(":", 1)[-1].strip() if ":" in target else target
+        if not expr:
+            return match.group(0)
+        return f":g:`{expr} <{target}>`"
+
+    return _G_ROLE_RE.sub(_repl, rst_text)
+
+
+def transform_justifications(
+    rst_text: str,
+    current_book: str,
+    id_map: Dict[str, str],
+) -> str:
+    """Rewrite `:just:` roles and `.. assertion::` / `.. subclause::` justifications to G-Index IDs."""
+    last_g_targets: Optional[str] = None
+
+    def _map_arg(raw_arg: str) -> Optional[str]:
+        nonlocal last_g_targets
+        s = raw_arg.strip()
+        if re.match(r"^\[?\*?id\.?\*?\.?\]?$", s, re.IGNORECASE) and last_g_targets:
+            return f"[{last_g_targets}] <{last_g_targets}>"
+
+        _disp, target = parse_justification_arg(s, current_book=current_book)
+        if not target:
+            return None
+
+        mapped_list: List[str] = []
+        for part in target.split(","):
+            p = part.strip()
+            if not p:
+                continue
+            mapped = id_map.get(p, p)
+            if mapped not in mapped_list:
+                mapped_list.append(mapped)
+
+        if not mapped_list:
+            return None
+
+        g_targets_str = ", ".join(mapped_list)
+        last_g_targets = g_targets_str
+        return f"[{g_targets_str}] <{g_targets_str}>"
+
+    def _repl(match: re.Match) -> str:
+        if match.group("role"):
+            new_arg = _map_arg(match.group("role_arg"))
+            if new_arg:
+                return f":just:`{new_arg}`"
+            return match.group(0)
+        else:
+            prefix = match.group("dir_prefix")
+            new_arg = _map_arg(match.group("dir_arg"))
+            if new_arg:
+                return f"{prefix} {new_arg}"
+            return match.group(0)
+
+    return _COMBINED_JUST_RE.sub(_repl, rst_text)
+
+
+def transform_refs(rst_text: str, id_map: Dict[str, str]) -> str:
+    """Rewrite any `:ref:` roles whose target is in `id_map` to the corresponding G-ID."""
+
+    def _replace_ref(match: re.Match) -> str:
+        val = match.group(1).strip()
+        if "<" in val and val.endswith(">"):
+            lbl, target_part = val.rsplit("<", 1)
+            target = target_part[:-1].strip()
+            lbl = lbl.strip()
+            new_target = id_map.get(target, target)
+            new_lbl = id_map.get(lbl, lbl)
+            if new_target != target or new_lbl != lbl:
+                return f":ref:`{new_lbl} <{new_target}>`"
+        else:
+            if val in id_map:
+                g_val = id_map[val]
+                return f":ref:`{g_val} <{g_val}>`"
+        return match.group(0)
+
+    return re.sub(r":ref:`([^`]+)`", _replace_ref, rst_text)
+
+
+def clean_plain_excerpt(rst_body: str) -> str:
+    """Extract a clean one-line plain-text excerpt from the enunciation or first paragraph."""
+    enun_m = re.search(
+        r"\.\.\s+enunciation::\n+(.*?)(?=\n\S|\Z)", rst_body, re.DOTALL
+    )
+    raw = enun_m.group(1).strip() if enun_m else rst_body.split("\n\n", 1)[0].strip()
+
+    # Strip footnote references (`\ [#f1]_` or `[#f1]_`)
+    text = re.sub(r"\\?\s*\[#[^\]]+\]_", "", raw)
+
+    # Unwrap roles (`:g:`, `:term:`, `:person:`, `:cite:`, `:eq:`, `:ref:`)
+    def _unwrap_role(m: re.Match) -> str:
+        inner = m.group(1).strip()
+        m_disp = re.match(r"^(.+?)\s+<.+>$", inner)
+        disp = m_disp.group(1).strip() if m_disp else inner
+        return disp.replace("**", "").replace("*", "")
+
+    text = re.sub(r":[A-Za-z0-9_.-]+:`([^`]+)`", _unwrap_role, text)
+    text = " ".join(line.strip() for line in text.splitlines() if line.strip())
+    return text
+
+
+def wrap_as_enunciation(statement_rst: str) -> str:
+    """Wrap a definition, postulate, or common notion statement in an `.. enunciation::` block."""
+    stripped = statement_rst.strip()
+    if stripped.startswith(".. enunciation::"):
+        return stripped
+    indented = "\n".join(
+        f"   {line}" if line.strip() else "" for line in stripped.splitlines()
+    )
+    return f".. enunciation::\n\n{indented}"
+
+
+def generate_g_dot(
+    G: nx.DiGraph,
+    node_ref: str,
+    id_map: Dict[str, str],
+) -> str:
+    """Generate a Graphviz DOT string for the transitive proof chain of `node_ref` using G-IDs."""
+    descendants = nx.descendants(G, node_ref)
+    if not descendants:
+        return ""
+
+    nodes_in_chain = sorted(
+        descendants.union({node_ref}),
+        key=lambda n: g_num_sort_key(id_map.get(n, n)),
+    )
+
+    dot_lines = [
+        "digraph {",
+        '  bgcolor="transparent";',
+        '  node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11, color="#d6d3cd", fontcolor="#ffffff"];',
+        '  edge [color="#8c857b", fontcolor="#8c857b", arrowsize=0.75];',
+        '  rankdir="TB";',
+    ]
+
+    for node in nodes_in_chain:
+        g_label = id_map.get(node, node)
+        node_data = G.nodes[node]
+        node_type = node_data.get("type", "unknown")
+
+        fillcolor = "#333333"
+        attrs = [
+            f'label="{g_label}"',
+            f'tooltip="{g_label} ({node})"',
+        ]
+        if node == node_ref:
+            attrs.append("penwidth=2.5")
+            attrs.append('color="#e8b85a"')
+            fillcolor = "#4a453b"
+        else:
+            if node_type == "def":
+                fillcolor = "#224422"
+            elif node_type == "prop":
+                fillcolor = "#222244"
+            elif node_type == "cn":
+                fillcolor = "#442222"
+            elif node_type == "post":
+                fillcolor = "#444422"
+
+        attrs.append(f'fillcolor="{fillcolor}"')
+        if node == node_ref:
+            attrs.append('URL="index.html"')
+        elif node in id_map:
+            attrs.append(f'URL="../{g_label}/index.html"')
+        attrs.append('target="_top"')
+
+        dot_lines.append(f'  "{g_label}" [{", ".join(attrs)}];')
+
+    for node in nodes_in_chain:
+        dst_label = id_map.get(node, node)
+        preds = sorted(
+            [p for p in G.predecessors(node) if p in nodes_in_chain],
+            key=lambda n: g_num_sort_key(id_map.get(n, n)),
+        )
+        for pred in preds:
+            src_label = id_map.get(pred, pred)
+            dot_lines.append(f'  "{src_label}" -> "{dst_label}";')
+
+    dot_lines.append("}")
+    return "\n".join(dot_lines)
+
+
+def sync_apparatus_resources(project_root: Path) -> None:
+    """Copy glossary.json, persons.json, and citations.json from euclid/resources/heath/ into elements/resources/."""
+    euclid_res = project_root.parent / "euclid" / "resources" / "heath"
+    target_res = project_root / "resources"
+    if not euclid_res.is_dir():
+        return
+    target_res.mkdir(parents=True, exist_ok=True)
+    for fname in ("glossary.json", "persons.json", "citations.json"):
+        src_file = euclid_res / fname
+        if src_file.is_file():
+            shutil.copy2(src_file, target_res / fname)
+
+
+def generate_g_index(
+    output_dir: Optional[Path] = None,
+    books: Optional[List[str]] = None,
+) -> Dict[str, Any]:
+    """Generate the complete G-Index RST structure from ../euclid/docsrc/heath/.
 
     Args:
-        output_dir (Path, optional): The directory to output the generated RST files.
-            Defaults to the 'elements2' directory in the project root.
+        output_dir: Directory to write generated G-Index RST files (`docsrc/elements2`).
+        books: Optional list of Roman book numerals to include (defaults to all 13 books).
 
+    Returns:
+        Summary statistics dictionary.
     """
+    current_file = Path(__file__)
+    project_root = current_file.parent.parent.parent.parent
     if output_dir is None:
-        # Default to project root docsrc/elements2
-        current_file = Path(__file__)
-        project_root = current_file.parent.parent.parent.parent
         output_dir = project_root / "docsrc" / "elements2"
 
-    print("Building dependency graph...")
-    G, all_books_data = build_graph()
+    sync_apparatus_resources(project_root)
 
-    # Identify "Goal" nodes: Propositions in original book order
-    goals = []
+    print("Building dependency graph from composed Euclid Heath edition...")
+    G, all_books_data = build_graph(books=books)
+
+    # Identify Goal nodes: Propositions in canonical book order
+    goals: List[str] = []
     for book in all_books_data:
         for section in book["sections"]:
-            # We treat all entries in the book as potential goals,
-            # but we prioritize preserving the order of the book.
-            # However, we primarily want to drive this by Propositions.
-            # Definitions and Postulates are usually dependencies.
-            # If we include Definitions in the goal list, they will be emitted
-            # when encountered if not already emitted.
-            # But the user wants "push off definitions etc until we need them".
-            # So we should ONLY use Propositions (and maybe Porisms/Lemmas) as goals.
-
-            # Let's look at section types.
-            # 'prop' is the main one.
-            # In the new RST graph structure, sections are just containers for the book.
-            # We need to filter entries by their type to select goals.
             for entry in section["entries"]:
                 if entry.get("type") == "prop" and entry.get("canonical_ref"):
                     goals.append(entry["canonical_ref"])
 
-    visited = set()
-    g_sequence = []
-    recursion_stack = set()
+    visited: Set[str] = set()
+    g_sequence: List[str] = []
+    recursion_stack: Set[str] = set()
 
     def visit(node: str) -> None:
         if node in visited:
@@ -65,477 +302,207 @@ def generate_g_index(output_dir: Path | None = None) -> None:
             return
 
         recursion_stack.add(node)
-
-        # If node is not in graph (e.g. external ref), skip or handle
         if node in G:
-            # Visit dependencies first
-            # Sort dependencies to ensure deterministic order (e.g. by canonical ref)
-            dependencies = sorted(list(G.successors(node)))
+            dependencies = sorted(
+                list(G.successors(node)),
+                key=g_dependency_sort_key,
+            )
             for dep in dependencies:
                 visit(dep)
 
             g_sequence.append(node)
             visited.add(node)
-        else:
-            # print(f"Warning: Node {node} not found in graph")
-            pass
-
         recursion_stack.remove(node)
 
-    print(f"Processing {len(goals)} goal propositions...")
+    print(f"Sequencing {len(goals)} propositions into G-Index...")
     for goal in goals:
         visit(goal)
 
-    # Check for orphans (nodes in G but not in g_sequence)
-    orphans = []
-    for node in G.nodes():
-        if node not in visited:
-            orphans.append(node)
-
+    orphans = sorted(
+        [node for node in G.nodes() if node not in visited],
+        key=canonical_sort_key,
+    )
     if orphans:
-        print(f"Found {len(orphans)} orphan nodes (unused definitions/postulates/etc):")
-        for orphan in sorted(orphans):
-            print(f" - {orphan}")
-        # Optional: Append orphans at the end?
-        # For now, we leave them out as per "Just In Time" philosophy.
-        # But maybe we should list them in a separate index or appendix.
+        print(f"Found {len(orphans)} orphan nodes (unreferenced definitions/postulates/common notions).")
 
-    # Generate Output
     output_path = Path(output_dir)
     if output_path.exists():
         shutil.rmtree(output_path)
     output_path.mkdir(parents=True, exist_ok=True)
 
-    # 1. Build ID Map
-    id_map = {}
+    # 1. Build ID Map (Euclid Canonical ID -> G.<n>)
+    id_map: Dict[str, str] = {}
     for i, node_ref in enumerate(g_sequence):
-        g_id = i + 1
-        g_name = f"G.{g_id}"
-        id_map[node_ref] = g_name
+        id_map[node_ref] = f"G.{i + 1}"
 
-    # String Template for G-Node
-    node_template = """
-:order: {g_id}
-:original_id: {node_ref}
-:type: {node_type}
-:dependencies: {deps_str}
-:excerpt: {excerpt}
-
-**Heath ID:** {heath_link}
-
-{image_block}
-
-.. _{title}:
-
-{title}
-{title_underline}
-
-{content}
-
-{dependency_graph}
-
-{required_for}
-"""
-
-    # Helper function to generate RST for a node
-    def generate_node_rst(
-        node_ref: str,
-        node_dir: Path,
-        title: str,
-        id_map: dict[str, str],
-        G: nx.DiGraph,
-        g_id: int,
-        project_root: Path,
-    ) -> None:
-        """Generate a single RST folder/index for a G-Node.
-
-        Uses the node template to render properties, metadata, enunciation,
-        and dependency visualizations.
-
-        Args:
-            node_ref (str): The original Euclid reference (e.g. 'I.1').
-            node_dir (Path): The output directory for this G-Node.
-            title (str): The display title (e.g. 'G.1').
-            id_map (dict[str, str]): Mapping of original refs to G-IDs.
-            G (nx.DiGraph): The full dependency graph.
-            g_id (int): The numerical index for this node.
-            project_root (Path): The root of the elements project.
-        """
-        node_data = G.nodes[node_ref]
-        node_dir.mkdir(parents=True, exist_ok=True)
-        filepath = node_dir / "index.rst"
-
-        # Dependencies
-        deps_str = ""
-        if node_data.get("dependencies"):
-            deps_list = []
-            for dep in sorted(list(set(node_data["dependencies"]))):
-                if dep in id_map:
-                    deps_list.append(id_map[dep])
-                else:
-                    deps_list.append(dep)
-            deps_str = ", ".join(deps_list)
-
-        # Title Underline
-        title_underline = "=" * len(title)
-
-        # Content Handling
-        raw_content = node_data.get("content_rst", "")
-        
-        # Ref Replacement Logic
-        def replace_ref(match: re.Match) -> str:
-            val = match.group(1)
-            if "<" in val:
-                lbl, target = val.split("<")
-                target = target.strip(" >")
-                lbl = lbl.strip()
-                new_target = id_map.get(target, target)
-                new_label = id_map.get(lbl, lbl)
-                if new_target != target or new_label != lbl:
-                    if new_label == new_target:
-                        return f":ref:`{new_target}`"
-                    return f":ref:`{new_label} <{new_target}>`"
-            else:
-                target = val
-                if target in id_map:
-                    return f":ref:`{id_map[target]}`"
-            return match.group(0)
-
-        content = re.sub(r":ref:`([^`]+)`", replace_ref, raw_content)
-
-        # Excerpt and Blockquote
-        excerpt = ""
-        if content:
-            paragraphs = content.split("\n\n", 1)
-            if len(paragraphs) > 0:
-                # Use first paragraph as excerpt, stripping refs for safety in metadata
-                enunc = paragraphs[0].strip()
-                excerpt = re.sub(r":ref:`([^`]+)`", r"\1", enunc).replace("\n", " ")
-                
-                # Indent the first paragraph
-                indented_enunc = "\n".join([f"    {line}" for line in enunc.splitlines()])
-                if len(paragraphs) > 1:
-                    content = indented_enunc + "\n\n" + paragraphs[1]
-                else:
-                    content = indented_enunc
-
-        # Heath Link (Hard link back to Euclid to avoid intersphinx extraction issues)
-        # Structure: https://geometor.github.io/euclid/Book/Folder/
-        parts = node_ref.split(".")
-        if len(parts) >= 2:
-            book = parts[0]
-            folder = ".".join(parts[1:])
-            # Handle special cases for folder names if needed, 
-            # but usually it's just the remainder of the ref
-            url = f"https://geometor.github.io/euclid/{book}/{folder}/"
-            heath_link = f"`{node_ref} <{url}>`_"
-        else:
-            heath_link = f":ref:`{node_ref}`"
-
-        # Image Handling
-        image_block = ""
-        main_image = node_data.get("image")
-        
-        if main_image:
-            parts = node_ref.split(".")
-            if len(parts) >= 2:
-                book = parts[0]
-                remainder = ".".join(parts[1:])
-                euclid_root = project_root.parent / "euclid"
-                graphic_source_dir = euclid_root / "docsrc" / "heath" / book / remainder
-                
-                graphic_file = graphic_source_dir / main_image
-                
-                if graphic_file.exists():
-                    # Rename to G.ID.png
-                    new_image_name = f"{title}.png"
-                    shutil.copy(graphic_file, node_dir / new_image_name)
-                    
-                    # Create image block using picture directive
-                    image_block = f".. picture:: {new_image_name}"
-
-        # Dependency Graph
-        dependency_graph = ""
-        descendants = nx.descendants(G, node_ref)
-        if descendants:
-            nodes_in_chain = descendants.union({node_ref})
-            
-            dot_lines = [
-                "digraph {",
-                '  bgcolor="black";',
-                '  node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];',
-                '  edge [color="white", fontcolor="white"];',
-                '  rankdir="TB";',
-            ]
-            
-            for node in nodes_in_chain:
-                attrs = []
-                n_label = id_map.get(node, node)
-                if n_label.startswith("g."):
-                    n_label = n_label.replace("g.", "G.")
-                attrs.append(f'label="{n_label}"')
-
-                node_data_item = G.nodes[node]
-                node_type = node_data_item.get("type", "unknown")
-
-                fillcolor = "#333333"
-                if node == node_ref:
-                    attrs.append("penwidth=3")
-                    attrs.append('color="white"')
-                    fillcolor = "#555555"
-                else:
-                    if node_type == "def": fillcolor = "#224422"
-                    elif node_type == "prop": fillcolor = "#222244"
-                    elif node_type == "cn": fillcolor = "#442222"
-                    elif node_type == "post": fillcolor = "#444422"
-
-                attrs.append(f'fillcolor="{fillcolor}"')
-
-                if node in id_map:
-                    url = f"/elements2/{id_map[node]}/"
-                    attrs.append(f'URL="{url}"')
-                    attrs.append('target="_top"')
-
-                attr_str = ", ".join(attrs)
-                dot_lines.append(f'  "{n_label}" [{attr_str}];')
-
-            for node in nodes_in_chain:
-                src_label = id_map.get(node, node).replace("g.", "G.")
-                for pred in G.predecessors(node):
-                    if pred in nodes_in_chain:
-                        pred_label = id_map.get(pred, pred).replace("g.", "G.")
-                        dot_lines.append(f'  "{pred_label}" -> "{src_label}";')
-
-            dot_lines.append("}")
-            
-            dependency_graph = ".. graphviz::\n\n" + "\n".join([f"   {line}" for line in dot_lines])
-            
-            dependency_graph = f"""
-Dependency Graph
-----------------
-
-{dependency_graph}
-"""
-
-        # Required For
-        required_for = ""
-        ancestors = sorted(list(nx.ancestors(G, node_ref)))
-        if ancestors:
-            ref_list = []
-            for ancestor in ancestors:
-                if ancestor in id_map:
-                    ref_list.append(f":ref:`{id_map[ancestor]}`")
-                else:
-                    ref_list.append(ancestor)
-            required_for = f"""
-Required for
-------------
-
-{", ".join(ref_list)}
-"""
-
-        # Render Template
-        rendered_rst = node_template.format(
-            g_id=g_id,
-            node_ref=node_ref,
-            node_type=node_data.get('type', 'unknown'),
-            deps_str=deps_str,
-            excerpt=excerpt,
-            heath_link=heath_link,
-            title=title,
-            title_underline=title_underline,
-            image_block=image_block,
-            content=content,
-            dependency_graph=dependency_graph,
-            required_for=required_for
-        ).strip()
-
-        with open(filepath, "w") as f:
-            f.write(rendered_rst + "\n")
-
-    # 2. Generate RST files for G-nodes
-    print("Generating RST files for G-nodes...")
+    # 2. Generate RST files for each G-node
+    print(f"Generating RST files for {len(g_sequence)} G-nodes...")
     for i, node_ref in enumerate(g_sequence):
         g_id = i + 1
         g_name = f"G.{g_id}"
         node_dir = output_path / g_name
-        generate_node_rst(node_ref, node_dir, g_name, id_map, G, g_id, project_root)
+        node_dir.mkdir(parents=True, exist_ok=True)
 
-    # 3. Generate Orphans
+        node_data = G.nodes[node_ref]
+        node_type = node_data.get("type", "unknown")
+        subtype = node_data.get("subtype")
+        book_roman = node_data.get("book", "I")
+        volume_roman = node_data.get("volume", "I")
+        categories = node_data.get("categories", [])
+        tags = node_data.get("tags", [])
+        heath_url = node_data.get("heath_url", "")
+        svg_files: List[Path] = node_data.get("svg_files", [])
+
+        # Copy interactive SVG figures into node_dir
+        for svg_path in svg_files:
+            if svg_path.is_file():
+                shutil.copy2(svg_path, node_dir / svg_path.name)
+
+        # Map dependencies to G-IDs sorted in G-order
+        deps_g: List[str] = []
+        for dep in node_data.get("dependencies", []):
+            mapped_dep = id_map.get(dep, dep)
+            if mapped_dep not in deps_g:
+                deps_g.append(mapped_dep)
+        deps_g.sort(key=g_num_sort_key)
+        deps_str = ", ".join(deps_g)
+
+        # Transform content body
+        raw_content = node_data.get("content_rst", "")
+        if node_type in ("def", "post", "cn"):
+            raw_content = wrap_as_enunciation(raw_content)
+
+        content = transform_geom_roles(raw_content)
+        content = transform_justifications(content, book_roman, id_map)
+        content = transform_refs(content, id_map)
+
+        excerpt = clean_plain_excerpt(content)
+
+        # Metadata header
+        meta_lines = [
+            f":order: {g_id}",
+            f":number: {g_id}",
+            f":canonical_id: {g_name}",
+            f":original_id: {node_ref}",
+            f":volume: {volume_roman}",
+            f":book: {book_roman}",
+            f":type: {node_type}",
+        ]
+        if subtype:
+            meta_lines.append(f":subtype: {subtype}")
+        if categories:
+            cats_str = ", ".join(categories)
+            meta_lines.append(f":categories: {cats_str}")
+            meta_lines.append(f":category: {cats_str}")
+        if tags:
+            meta_lines.append(f":tags: {', '.join(tags)}")
+        meta_lines.append(f":dependencies: {deps_str}")
+        if excerpt:
+            meta_lines.append(f":excerpt: {excerpt}")
+
+        heath_link = f"`{node_ref} <{heath_url}>`_" if heath_url else f"``{node_ref}``"
+        title_underline = "=" * len(g_name)
+
+        sections: List[str] = [
+            "\n".join(meta_lines),
+            f".. _{g_name}:\n.. _{node_ref}:\n\n{g_name}\n{title_underline}",
+            f".. rubric:: {heath_link}",
+            content,
+        ]
+
+        # Dependency Graph
+        dot_str = generate_g_dot(G, node_ref, id_map)
+        if dot_str:
+            indented_dot = "\n".join(f"   {line}" for line in dot_str.splitlines())
+            sections.append(
+                f"Dependency Graph\n----------------\n\n.. graphviz::\n\n{indented_dot}"
+            )
+
+        # Required For
+        ancestors = sorted(
+            list(nx.ancestors(G, node_ref)),
+            key=lambda a: g_num_sort_key(id_map.get(a, a)),
+        )
+        if ancestors:
+            ref_links = [
+                f":ref:`{id_map[a]} <{id_map[a]}>`" if a in id_map else a
+                for a in ancestors
+            ]
+            sections.append(
+                f"Required for\n------------\n\n{', '.join(ref_links)}"
+            )
+
+        rendered_rst = "\n\n".join(s for s in sections if s).strip() + "\n"
+        (node_dir / "index.rst").write_text(rendered_rst, encoding="utf-8")
+
+    # 3. Generate Orphans page
     if orphans:
         print(f"Generating orphans page for {len(orphans)} orphans...")
-        orphans_file = output_path / "orphans.rst"
-
-        orphans_content = [
-            ":navigation: header",
-            ":order: 99",
+        orphans_lines = [
+            ":order: 9999",
+            ":type: orphans",
+            ":excerpt: Definitions, postulates, and common notions not directly cited in the dependency sequence.",
             "",
             "Orphans",
             "=======",
             "",
-            "The following nodes were identified as orphans (not referenced by the main sequence).",
+            "The following definitions, postulates, and common notions are not directly cited by any proposition in the main dependency sequence.",
             "",
         ]
-
-        ROMAN_TO_INT = {
-            "I": 1,
-            "II": 2,
-            "III": 3,
-            "IV": 4,
-            "V": 5,
-            "VI": 6,
-            "VII": 7,
-            "VIII": 8,
-            "IX": 9,
-            "X": 10,
-            "XI": 11,
-            "XII": 12,
-            "XIII": 13,
-        }
-
-        SECTION_TYPE_ORDER = {"def": 1, "post": 2, "cn": 3, "prop": 4}
-
-        def canonical_sort_key(ref_id: str) -> tuple[int, int, int]:
-            parts = ref_id.split(".")
-            if not parts:
-                return (0, 0, 0)
-
-            # Book Number
-            book_num = 0
-            if parts[0] in ROMAN_TO_INT:
-                book_num = ROMAN_TO_INT[parts[0]]
-
-            # Section Type
-            type_order = 99
-            if len(parts) > 1:
-                type_order = SECTION_TYPE_ORDER.get(parts[1], 99)
-
-            # Item Number
-            item_num = 0
-            if len(parts) > 2:
-                try:
-                    item_num = int(parts[2])
-                except ValueError:
-                    pass  # Keep 0 if not an integer
-
-            return (book_num, type_order, item_num)
-
-        for orphan in sorted(orphans, key=canonical_sort_key):
+        for idx, orphan in enumerate(orphans):
             node_data = G.nodes[orphan]
+            heath_url = node_data.get("heath_url", "")
+            heading = orphan
+            orphans_lines.append(f".. _{orphan}:")
+            orphans_lines.append("")
+            orphans_lines.append(heading)
+            orphans_lines.append("-" * len(heading))
+            orphans_lines.append("")
+            if heath_url:
+                orphans_lines.append(f"**Heath ID:** `{orphan} <{heath_url}>`_")
+                orphans_lines.append("")
+            body_txt = transform_geom_roles(node_data.get("content_rst", ""))
+            body_txt = transform_refs(body_txt, id_map)
+            orphans_lines.append(body_txt)
+            orphans_lines.append("")
+            if idx < len(orphans) - 1:
+                orphans_lines.append("----")
+                orphans_lines.append("")
 
-            # Title
-            orphans_content.append(orphan)
-            orphans_content.append("-" * len(orphan))
-            orphans_content.append("")
+        (output_path / "orphans.rst").write_text(
+            "\n".join(orphans_lines).rstrip() + "\n", encoding="utf-8"
+        )
 
-            # Content
-            content = node_data.get("content_rst", "")
-
-            # Replace refs
-            def replace_ref(match: re.Match) -> str:
-                content = match.group(1)
-                if "<" in content:
-                    # Format: Label <Target>
-                    label, target = content.split("<")
-                    target = target.strip(" >")
-                    label = label.strip()
-
-                    new_target = target
-                    if target in id_map:
-                        new_target = id_map[target]
-
-                    new_label = label
-                    if label in id_map:
-                        new_label = id_map[label]
-
-                    if new_target != target or new_label != label:
-                        if new_label == new_target:
-                            return f":ref:`{new_target}`"
-                        return f":ref:`{new_label} <{new_target}>`"
-                else:
-                    # Format: Target
-                    target = content
-                    if target in id_map:
-                        return f":ref:`{id_map[target]}`"
-                return match.group(0)
-
-            content = re.sub(r":ref:`([^`]+)`", replace_ref, content)
-
-            # Copy images to output_dir (root of elements2)
-            canonical_images_dir = project_root / "resources/canonical_images"
-
-            if canonical_images_dir.exists():
-                image_stem = orphan
-                for img in canonical_images_dir.glob(f"{image_stem}*.jpg"):
-                    shutil.copy(img, output_path)
-
-            # Graphic from docsrc/heath
-            parts = orphan.split(".")
-            if len(parts) >= 2:
-                book = parts[0]
-                remainder = ".".join(parts[1:])
-
-                # Source path: ../euclid/docsrc/heath/{book}/{remainder}/{orphan}.graphic.inverted.png for orphans
-                euclid_root = project_root.parent / "euclid"
-                graphic_source_dir = euclid_root / "docsrc" / "heath" / book / remainder
-                graphic_file = graphic_source_dir / f"{orphan}.graphic.inverted.png"
-
-                if graphic_file.exists():
-                    # For orphans, we keep the original name or maybe orphan name?
-                    # Let's keep it simple and use orphan name but maybe .png?
-                    # The user didn't specify renaming for orphans, but consistency is good.
-                    # However, orphans don't have a G-ID.
-                    # Let's just copy it as {orphan}.png to be cleaner than .graphic.inverted.png
-                    new_graphic_name = f"{orphan}.png"
-                    shutil.copy(graphic_file, output_path / new_graphic_name)
-
-                    content = content.replace(
-                        f"{orphan}.graphic.inverted.png", new_graphic_name
-                    )
-                    content = content.replace(f"{orphan}.graphic.png", new_graphic_name)
-
-            orphans_content.append(content)
-            orphans_content.append("")
-            orphans_content.append(".. raw:: html")
-            orphans_content.append("")
-            orphans_content.append("   <hr>")
-            orphans_content.append("")
-
-        with open(orphans_file, "w") as f:
-            f.write("\n".join(orphans_content))
-
-    # Generate Map JSON
-    with open(output_path / "map.json", "w") as f:
+    # 4. Write map.json (both forward and reverse lookup info)
+    with open(output_path / "map.json", "w", encoding="utf-8") as f:
         json.dump(id_map, f, indent=2)
 
-    # Generate Main Index
-    index_content = [
+    # 5. Generate Main Index (docsrc/elements2/index.rst)
+    index_lines = [
         ":navigation: header",
         ":order: 3",
+        ":layout: book",
+        ":book_title: Elements 2.0 (G Index)",
         "",
         "Elements 2.0 (G Index)",
         "======================",
-        "",
-        ".. toctree::",
-        "   :maxdepth: 1",
-        "   :caption: Contents",
-        "",
-        "   orphans" if orphans else "",
         "",
         ".. collection::",
         "   :sort: order",
         "",
     ]
+    (output_path / "index.rst").write_text("\n".join(index_lines), encoding="utf-8")
 
-    # Remove empty lines if orphans is empty
-    index_content = [line for line in index_content if line or line == ""]
-
-    with open(output_path / "index.rst", "w") as f:
-        f.write("\n".join(index_content))
-
+    stats = {
+        "g_nodes": len(g_sequence),
+        "orphans": len(orphans),
+        "total_edges": G.number_of_edges(),
+        "output_dir": str(output_path),
+    }
     print(
-        f"Generated {len(g_sequence)} G-nodes and {len(orphans)} orphans in {output_dir}"
+        f"Generated {len(g_sequence)} G-nodes and {len(orphans)} orphans in {output_path}"
     )
+    return stats
 
 
 if __name__ == "__main__":

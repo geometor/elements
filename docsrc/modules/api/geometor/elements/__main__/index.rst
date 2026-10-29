@@ -20,8 +20,8 @@ Functions
 Module Contents
 ---------------
 
-.. py:function:: main() -> None
+.. py:function:: main(argv: Optional[List[str]] = None) -> None
 
-   Execute the main entry point.
+   Execute the G-Index generation process from the composed Euclid Heath edition.
 
 
