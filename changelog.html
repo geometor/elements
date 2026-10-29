@@ -1,15 +1,18 @@
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-content_root="./">
 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>changelog &mdash; Project name not set  documentation</title>
   <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="_static/css/styles.css?v=38c7a96b" />
+  <link rel="stylesheet" type="text/css" href="_static/css/styles.css?v=c2045cb7" />
   <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
   <link rel="stylesheet" href="_static/css/print.css" type="text/css" media="print" />
   <link rel="icon" href="_static/favicon.ico" />
 </head>
@@ -37,16 +40,13 @@
           <a href="usage.html"  >usage</a>
         </li>
         <li>
-          <a href="log/index.html"  >log</a>
+          <a href="elements2/index.html"  >Elements 2.0 (G Index)</a>
         </li>
         <li>
           <a href="modules/index.html"  >modules</a>
         </li>
         <li>
-          <a href="elements2/index.html"  >Elements 2.0 (G Index)</a>
-        </li>
-        <li>
-          <a href="elements2/orphans.html"  >Orphans</a>
+          <a href="log/index.html"  >log</a>
         </li>
       </ul>
     </nav>
@@ -60,18 +60,30 @@
       </nav>
         <nav class="context">
           <div class="prev">
-             <a href="todos/codify_book_i.html" title="Codify Book I propositions" >Prev</a>
+             <a href="todos/expand_research.html" title="Expand Research" >Prev</a>
           </div>
           <div class="next">
             <a href="modules/api/index.html" title="API Reference" >Next</a>
           </div>
         </nav>
       </header>
-      <div class="content">
-        <section id="changelog">
+      <div class="content body" role="main">
+        <section class="level-1" id="changelog">
           <h1>changelog<a class="headerlink" href="#changelog" title="Link to this heading">¶</a></h1>
-          <section id="id1">
-          <h2>0.2.2<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+          <section class="level-2" id="id1">
+          <h2>0.3.0<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+          <p><em>2026-10-29</em></p>
+          <p><strong>added</strong></p>
+          <ul class="simple">
+          <li><p>Rebuilt the Elements 2.0 (G-Index) pipeline (<cite>graph.py</cite>, <cite>g_index.py</cite>, <cite>__main__.py</cite>) directly from the composed Heath edition in <cite>../euclid/docsrc/heath/</cite>.</p></li>
+          <li><p>Transformed <cite>:g:</cite> roles to display explicit GEOMETOR symbolic element indications (<cite>/ A B /</cite>, <cite>&lt; A B C &gt;</cite>, <cite>&lt; B A C )</cite>, <cite>( B C D )</cite>, <cite>[ A B ]</cite>, <cite>A</cite>).</p></li>
+          <li><p>Remapped <cite>:just:</cite>, <cite>.. assertion::</cite>, and <cite>.. subclause::</cite> justification references to G-Index targets (<cite>[G.1] &lt;G.1&gt;</cite>), resolving <cite>[id.]</cite> / <cite>[*id.*]</cite> back-references.</p></li>
+          <li><p>Added rich taxonomy metadata (<cite>:categories:</cite>, <cite>:tags:</cite>, <cite>:type:</cite>, <cite>:subtype:</cite>, <cite>:original_id:</cite>, <cite>:canonical_id:</cite>) and inline interactive SVG diagrams (<cite>.. picture:: &lt;folio&gt;.g&lt;k&gt;.svg</cite>) to each G-node.</p></li>
+          <li><p>Configured the Euclid Book Codex layout (<cite>:layout: book</cite>) and styles for the G-Index collection and node pages.</p></li>
+          </ul>
+          </section>
+          <section class="level-2" id="id2">
+          <h2>0.2.2<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
           <p><em>2025-12-20</em></p>
           <p><strong>added</strong></p>
           <ul class="simple">
@@ -89,8 +101,8 @@
           <li><p>Limited initial G-Index generation to Book I for verification.</p></li>
           </ul>
           </section>
-          <section id="id2">
-          <h2>0.2.1<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+          <section class="level-2" id="id3">
+          <h2>0.2.1<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
           <p><em>2025-12-15</em></p>
           <p><strong>changed</strong></p>
           <ul class="simple">
@@ -100,8 +112,8 @@
           <li><p>Removed legacy documentation in <cite>docsrc/elements2</cite>.</p></li>
           </ul>
           </section>
-          <section id="id3">
-          <h2>0.2.0<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+          <section class="level-2" id="id4">
+          <h2>0.2.0<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
           <p><em>2025-12-12</em></p>
           <p><strong>changed</strong></p>
           <ul class="simple">
@@ -110,8 +122,8 @@
           <li><p>Updated <cite>GEMINI.md</cite> and <cite>pyproject.toml</cite>.</p></li>
           </ul>
           </section>
-          <section id="id4">
-          <h2>0.1.4<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+          <section class="level-2" id="id5">
+          <h2>0.1.4<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
           <p><em>2025-12-09</em></p>
           <p><strong>changed</strong></p>
           <ul class="simple">
@@ -119,15 +131,15 @@
           <li><p>Updated <cite>src/geometor/elements/transform.py</cite> to generate <cite>.. picture::</cite> directives.</p></li>
           </ul>
           </section>
-          <section id="id5">
-          <h2>0.1.3<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
+          <section class="level-2" id="id6">
+          <h2>0.1.3<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h2>
           <ul class="simple">
           <li><p>Refined docstrings and type hinting.</p></li>
           <li><p>Fixed <cite>from __future__ import annotations</cite> placement.</p></li>
           </ul>
           </section>
-          <section id="id6">
-          <h2>0.1.1<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h2>
+          <section class="level-2" id="id7">
+          <h2>0.1.1<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h2>
           <p><em>2025-11-23</em></p>
           <p><strong>changed</strong></p>
           <ul class="simple">
@@ -139,8 +151,8 @@
           <li><p>Removed the deprecated <cite>docsrc/elements2</cite> directory.</p></li>
           </ul>
           </section>
-          <section id="id7">
-          <h2>0.1.0<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h2>
+          <section class="level-2" id="id8">
+          <h2>0.1.0<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h2>
           <p><em>2025-11-23</em></p>
           <p><strong>added</strong></p>
           <ul class="simple">
@@ -153,8 +165,8 @@
           <li><p>Removed temporary bleed test scripts and images from the project root.</p></li>
           </ul>
           </section>
-          <section id="id8">
-          <h2>0.0.20<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h2>
+          <section class="level-2" id="id9">
+          <h2>0.0.20<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h2>
           <p><em>2025-11-21</em></p>
           <p><strong>changed</strong></p>
           <ul class="simple">
@@ -163,8 +175,8 @@
           <li><p>Added a warning and safeguard return statement to <cite>scan_propositions.py</cite> and <cite>cropping.py</cite> to prevent accidental overwrites of manual work.</p></li>
           </ul>
           </section>
-          <section id="id9">
-          <h2>0.0.19<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h2>
+          <section class="level-2" id="id10">
+          <h2>0.0.19<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h2>
           <p><em>2025-11-21</em></p>
           <p><strong>added</strong></p>
           <ul class="simple">
@@ -179,8 +191,8 @@
           <li><p>Refined regex for end-of-proposition detection to handle variations in spacing (e.g., “Q. E . D.”).</p></li>
           </ul>
           </section>
-          <section id="id10">
-          <h2>0.0.18<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h2>
+          <section class="level-2" id="id11">
+          <h2>0.0.18<a class="headerlink" href="#id11" title="Link to this heading">¶</a></h2>
           <p><em>2025-11-21</em></p>
           <p><strong>changed</strong></p>
           <ul class="simple">
@@ -190,8 +202,8 @@
           <li><p>Updated <cite>stitch_propositions.py</cite> to generate stitched images with body-text cropping.</p></li>
           </ul>
           </section>
-          <section id="id11">
-          <h2>0.0.17<a class="headerlink" href="#id11" title="Link to this heading">¶</a></h2>
+          <section class="level-2" id="id12">
+          <h2>0.0.17<a class="headerlink" href="#id12" title="Link to this heading">¶</a></h2>
           <p><em>2025-11-20</em></p>
           <p><strong>added</strong></p>
           <ul class="simple">
@@ -211,8 +223,8 @@
           <li><p>Corrected volume identification logic in analysis to prevent misattribution of propositions.</p></li>
           </ul>
           </section>
-          <section id="id12">
-          <h2>0.0.16<a class="headerlink" href="#id12" title="Link to this heading">¶</a></h2>
+          <section class="level-2" id="id13">
+          <h2>0.0.16<a class="headerlink" href="#id13" title="Link to this heading">¶</a></h2>
           <p><em>2025-11-18</em></p>
           <p><strong>added</strong></p>
           <ul class="simple">
@@ -222,8 +234,8 @@
           <li><p>Added functionality to extract diagram graphics from stitched proposition images.</p></li>
           </ul>
           </section>
-          <section id="id13">
-          <h2>0.0.15<a class="headerlink" href="#id13" title="Link to this heading">¶</a></h2>
+          <section class="level-2" id="id14">
+          <h2>0.0.15<a class="headerlink" href="#id14" title="Link to this heading">¶</a></h2>
           <p><em>2025-11-18</em></p>
           <p><strong>added</strong></p>
           <ul class="simple">
@@ -232,8 +244,8 @@
           <li><p>Improved formatting for subtitles and introductions in book index pages.</p></li>
           </ul>
           </section>
-          <section id="id14">
-          <h2>0.0.14<a class="headerlink" href="#id14" title="Link to this heading">¶</a></h2>
+          <section class="level-2" id="id15">
+          <h2>0.0.14<a class="headerlink" href="#id15" title="Link to this heading">¶</a></h2>
           <p><em>2025-11-17</em></p>
           <p><strong>added</strong></p>
           <ul class="simple">
@@ -242,8 +254,8 @@
           <li><p>Set graphviz output to SVG for better rendering and interactivity.</p></li>
           </ul>
           </section>
-          <section id="id15">
-          <h2>0.0.13<a class="headerlink" href="#id15" title="Link to this heading">¶</a></h2>
+          <section class="level-2" id="id16">
+          <h2>0.0.13<a class="headerlink" href="#id16" title="Link to this heading">¶</a></h2>
           <p><em>2025-11-17</em></p>
           <p><strong>added</strong></p>
           <ul class="simple">
@@ -251,8 +263,8 @@
           <li><p>Moved the collection titles out of the <cite>collection</cite> directive and into the main document flow as section headings.</p></li>
           </ul>
           </section>
-          <section id="id16">
-          <h2>0.0.12<a class="headerlink" href="#id16" title="Link to this heading">¶</a></h2>
+          <section class="level-2" id="id17">
+          <h2>0.0.12<a class="headerlink" href="#id17" title="Link to this heading">¶</a></h2>
           <p><em>2025-11-16</em></p>
           <p><strong>added</strong></p>
           <ul class="simple">
@@ -261,8 +273,8 @@
           <li><p>Implemented note directives to render Heath’s footnotes from the XML source.</p></li>
           </ul>
           </section>
-          <section id="id17">
-          <h2>0.0.11<a class="headerlink" href="#id17" title="Link to this heading">¶</a></h2>
+          <section class="level-2" id="id18">
+          <h2>0.0.11<a class="headerlink" href="#id18" title="Link to this heading">¶</a></h2>
           <p><em>2025-11-16</em></p>
           <p><strong>changed</strong></p>
           <ul class="simple">
@@ -270,24 +282,24 @@
           <li><p>Corrected misplaced proposition reference in <cite>elem.1.22</cite>.</p></li>
           </ul>
           </section>
-          <section id="id18">
-          <h2>0.0.10<a class="headerlink" href="#id18" title="Link to this heading">¶</a></h2>
+          <section class="level-2" id="id19">
+          <h2>0.0.10<a class="headerlink" href="#id19" title="Link to this heading">¶</a></h2>
           <p><em>2025-11-16</em></p>
           <p><strong>fixed</strong></p>
           <ul class="simple">
           <li><p>Corrected porism handling in the RST generation script to prevent duplicate content and ensure canonical IDs are used for headings.</p></li>
           </ul>
           </section>
-          <section id="id19">
-          <h2>0.0.9<a class="headerlink" href="#id19" title="Link to this heading">¶</a></h2>
+          <section class="level-2" id="id20">
+          <h2>0.0.9<a class="headerlink" href="#id20" title="Link to this heading">¶</a></h2>
           <p><em>2025-11-16</em></p>
           <p><strong>added</strong></p>
           <ul class="simple">
           <li><p>Added taxonomy fields to the generated RST files, including <cite>:type:</cite>, <cite>:categories:</cite>, and <cite>:tags:</cite>.</p></li>
           </ul>
           </section>
-          <section id="id20">
-          <h2>0.0.8<a class="headerlink" href="#id20" title="Link to this heading">¶</a></h2>
+          <section class="level-2" id="id21">
+          <h2>0.0.8<a class="headerlink" href="#id21" title="Link to this heading">¶</a></h2>
           <p><em>2025-11-16</em></p>
           <p><strong>changed</strong></p>
           <ul class="simple">
@@ -299,8 +311,8 @@
           <li><p>Removed placeholder figures from the generated RST files.</p></li>
           </ul>
           </section>
-          <section id="id21">
-          <h2>0.0.7<a class="headerlink" href="#id21" title="Link to this heading">¶</a></h2>
+          <section class="level-2" id="id22">
+          <h2>0.0.7<a class="headerlink" href="#id22" title="Link to this heading">¶</a></h2>
           <p><em>2025-11-15</em></p>
           <p><strong>added</strong></p>
           <ul class="simple">
@@ -311,8 +323,8 @@
           <li><p>Removed the “Proof.” heading from the generated RST files for a cleaner output.</p></li>
           </ul>
           </section>
-          <section id="id22">
-          <h2>0.0.6<a class="headerlink" href="#id22" title="Link to this heading">¶</a></h2>
+          <section class="level-2" id="id23">
+          <h2>0.0.6<a class="headerlink" href="#id23" title="Link to this heading">¶</a></h2>
           <p><em>2025-11-15</em></p>
           <p><strong>added</strong></p>
           <ul class="simple">
@@ -328,8 +340,8 @@
           <li><p>Refactored inline XML to RST conversion logic for better handling of nested tags and enunciation-specific formatting.</p></li>
           </ul>
           </section>
-          <section id="id23">
-          <h2>0.0.5<a class="headerlink" href="#id23" title="Link to this heading">¶</a></h2>
+          <section class="level-2" id="id24">
+          <h2>0.0.5<a class="headerlink" href="#id24" title="Link to this heading">¶</a></h2>
           <p><em>2025-11-15</em></p>
           <p><strong>fixed</strong></p>
           <ul class="simple">
@@ -342,8 +354,8 @@
           <li><p>Added Book II to the RST generation test suite.</p></li>
           </ul>
           </section>
-          <section id="id24">
-          <h2>0.0.4<a class="headerlink" href="#id24" title="Link to this heading">¶</a></h2>
+          <section class="level-2" id="id25">
+          <h2>0.0.4<a class="headerlink" href="#id25" title="Link to this heading">¶</a></h2>
           <p><em>2025-11-15</em></p>
           <p><strong>added</strong></p>
           <ul class="simple">
@@ -352,8 +364,8 @@
           </ul>
           <p><strong>changed</strong></p>
           </section>
-          <section id="id25">
-          <h2>0.0.3<a class="headerlink" href="#id25" title="Link to this heading">¶</a></h2>
+          <section class="level-2" id="id26">
+          <h2>0.0.3<a class="headerlink" href="#id26" title="Link to this heading">¶</a></h2>
           <p><em>2025-11-11</em></p>
           <p><strong>added</strong></p>
           <ul class="simple">
@@ -374,7 +386,7 @@
         </div>
         <nav class="context">
           <div class="prev">
-             <a href="todos/codify_book_i.html" title="Codify Book I propositions" >Prev</a>
+             <a href="todos/expand_research.html" title="Expand Research" >Prev</a>
           </div>
           <div class="next">
             <a href="modules/api/index.html" title="API Reference" >Next</a>
@@ -384,21 +396,71 @@
     </article>
   </main>
   <div class="asides">
-    <aside>
+    <aside class="aside-search">
       <h3>Search</h3>
-      <div role="search">
-        <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-          <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
           <input type="hidden" name="check_keywords" value="yes" />
           <input type="hidden" name="area" value="default" />
         </form>
       </div>
+    </aside>
+    <aside class="aside-tags">
+      <h3>Tags</h3>
+      <ul>
+        <li><a href="tags/angle.html">angle</a></li>
+        <li><a href="tags/bisect.html">bisect</a></li>
+        <li><a href="tags/book-i.html">book-i</a></li>
+        <li><a href="tags/circle.html">circle</a></li>
+        <li><a href="tags/equality.html">equality</a></li>
+        <li><a href="tags/equilateral.html">equilateral</a></li>
+        <li><a href="tags/isosceles.html">isosceles</a></li>
+        <li><a href="tags/line.html">line</a></li>
+        <li><a href="tags/parallel.html">parallel</a></li>
+        <li><a href="tags/parallel-straight-lines.html">parallel-straight-lines</a></li>
+        <li><a href="tags/parallelogram.html">parallelogram</a></li>
+        <li><a href="tags/perpendicular.html">perpendicular</a></li>
+        <li><a href="tags/plane.html">plane</a></li>
+        <li><a href="tags/point.html">point</a></li>
+        <li><a href="tags/polygon.html">polygon</a></li>
+        <li><a href="tags/porism.html">porism</a></li>
+        <li><a href="tags/quadrilateral.html">quadrilateral</a></li>
+        <li><a href="tags/reductio-ad-absurdum.html">reductio-ad-absurdum</a></li>
+        <li><a href="tags/right-angle.html">right-angle</a></li>
+        <li><a href="tags/segment.html">segment</a></li>
+        <li><a href="tags/square.html">square</a></li>
+        <li><a href="tags/triangle.html">triangle</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-categories">
+      <h3>Categories</h3>
+      <ul>
+        <li><a href="categories/common-notion.html">common-notion</a></li>
+        <li><a href="categories/construction.html">construction</a></li>
+        <li><a href="categories/definition.html">definition</a></li>
+        <li><a href="categories/equality.html">equality</a></li>
+        <li><a href="categories/plane-geometry.html">plane-geometry</a></li>
+        <li><a href="categories/postulate.html">postulate</a></li>
+        <li><a href="categories/problem.html">problem</a></li>
+        <li><a href="categories/proof.html">proof</a></li>
+        <li><a href="categories/theorem.html">theorem</a></li>
+      </ul>
     </aside>
     <aside class="aside-types">
       <h3>Types</h3>
       <ul>
         <li><a href="types/cn.html">cn</a></li>
         <li><a href="types/def.html">def</a></li>
+        <li><a href="types/orphans.html">orphans</a></li>
         <li><a href="types/post.html">post</a></li>
         <li><a href="types/prop.html">prop</a></li>
       </ul>
@@ -425,9 +487,11 @@
   <script src="_static/jquery.js?v=5d32c60e"></script>
   <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
   <script src="_static/documentation_options.js?v=5929fcd5"></script>
-  <script src="_static/doctools.js?v=9bcbadda"></script>
-  <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+  <script src="_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="_static/js/geometor_interactive.js?v=832534ec"></script>
+  <script src="_static/js/search_highlight.js"></script>
 
 </body>
 </html>

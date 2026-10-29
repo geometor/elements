@@ -1,71 +1,73 @@
 :order: 31
-:original_id: I.21
+:number: 31
+:canonical_id: G.31
+:original_id: I.20
+:volume: I
+:book: I
 :type: prop
-:dependencies: G.25, G.30
-:excerpt: If on one of the sides of a triangle, from its extremities, there be constructed two straight lines meeting within the triangle, the straight lines so constructed will be less than the remaining two sides of the triangle, but will contain a greater angle.
-
-**Heath ID:** `I.21 <https://geometor.github.io/euclid/I/21/>`_
-
-.. picture:: G.31.png
+:subtype: theorem
+:categories: theorem, proof, plane-geometry
+:category: theorem, proof, plane-geometry
+:tags: book-i, point, segment, line, angle, triangle, equality
+:dependencies: G.12, G.26, G.30
+:excerpt: In any triangle two sides taken together in any manner are greater than the remaining one.
 
 .. _G.31:
+.. _I.20:
 
 G.31
 ====
 
-    If on one of the sides of a triangle, from its extremities, there be constructed two straight lines meeting within the triangle, the straight lines so constructed will be less than the remaining two sides of the triangle, but will contain a greater angle.
+.. rubric:: `I.20 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/20/>`_
 
-On ``BC``, one of the sides of the triangle ``ABC``, from its extremities ``B``, ``C``, let the two straight lines ``BD``, ``DC`` be constructed meeting within the triangle;
+.. enunciation::
 
-I say that ``BD``, ``DC`` are less than the remaining two sides of the triangle ``BA``, ``AC``, but contain an angle ``BDC`` greater than the angle ``BAC``. 
+   In any triangle two sides taken together in any manner are greater than the remaining one.
 
-For let ``BD`` be drawn through to ``E``.
+For let :g:`< A B C > <0300.g2:< A B C >>` be a triangle;
 
-Then, since in any triangle two sides are greater than the remaining one, [:ref:`G.30`] therefore, in the triangle ``ABE``, the two sides ``AB``, ``AE`` are greater than ``BE``.
+I say that in the triangle :g:`< A B C > <0300.g2:< A B C >>` two sides taken together in any manner are greater than the remaining one, namely
 
-Let ``EC`` be added to each; therefore ``BA``, ``AC`` are greater than ``BE``, ``EC``.
-        
+.. subclause::
 
-Again, since, in the triangle ``CED``, the two sides ``CE``, ``ED`` are greater than ``CD``, let ``DB`` be added to each; therefore ``CE``, ``EB`` are greater than ``CD``, ``DB``.
+   :g:`/ B A / <0300.g2:/ B A />`, :g:`/ A C / <0300.g2:/ A C />` greater than :g:`/ B C / <0300.g2:/ B C />`,
 
-But ``BA``, ``AC`` were proved greater than ``BE``, ``EC``; therefore ``BA``, ``AC`` are much greater than ``BD``, ``DC``.
+.. subclause::
 
-Again, since in any triangle the exterior angle is greater than the interior and opposite angle, [:ref:`G.25`] therefore, in the triangle ``CDE``, the exterior angle ``BDC`` is greater than the angle ``CED``.
-        
+   :g:`/ A B / <0300.g2:/ A B />`, :g:`/ B C / <0300.g2:/ B C />` greater than :g:`/ A C / <0300.g2:/ A C />`,
 
-For the same reason, moreover, in the triangle ``ABE`` also, the exterior angle ``CEB`` is greater than the angle ``BAC``. But the angle ``BDC`` was proved greater than the angle ``CEB``; therefore the angle ``BDC`` is much greater than the angle ``BAC``.
-        
+.. subclause::
 
-Therefore etc.
+   :g:`/ B C / <0300.g2:/ B C />`, :g:`/ C A / <0300.g2:/ C A />` greater than :g:`/ A B / <0300.g2:/ A B />`.
 
+.. picture:: 0300.g2.svg
+   :alt: Proposition 20 figure
 
-**Q. E. D.**
+For let :g:`[ B A ] <0300.g2:[ B A ]>` be drawn through to the point :g:`D <0300.g2:D>`, let :g:`/ D A / <0300.g2:/ D A />` be made :eq:`equal <0300.g2:/ D A / = 0300.g2:/ C A />` to :g:`/ C A / <0300.g2:/ C A />`, and let :g:`/ D C / <0300.g2:/ D C />` be joined.
 
+Then, since :g:`/ D A / <0300.g2:/ D A />` is :eq:`equal <0300.g2:/ D A / = 0300.g2:/ A C />` to :g:`/ A C / <0300.g2:/ A C />`, the angle :g:`< A D C ) <0300.g2:< A D C )>` is also :eq:`equal <0300.g2:< A D C ) = 0300.g2:< A C D )>` to the angle :g:`< A C D ) <0300.g2:< A C D )>`; :just:`[G.12] <G.12>`
 
-Q. E. D.
+.. assertion:: [G.26] <G.26>
 
+   therefore the angle :g:`< B C D ) <0300.g2:< B C D )>` is greater than the angle :g:`< A D C ) <0300.g2:< A D C )>`.
 
-.. note::
+And, since :g:`< D C B > <0300.g2:< D C B >>` is a triangle having the angle :g:`< B C D ) <0300.g2:< B C D )>` greater than the angle :g:`< B D C ) <0300.g2:< B D C )>`, and the greater angle is subtended by the greater side, :just:`[G.30] <G.30>`
 
+.. assertion::
 
-   **2. be constructed...meeting within the triangle.**
+   therefore :g:`/ D B / <0300.g2:/ D B />` is greater than :g:`/ B C / <0300.g2:/ B C />`.
 
-   
+But :g:`/ D A / <0300.g2:/ D A />` is :eq:`equal <0300.g2:/ D A / = 0300.g2:/ A C />` to :g:`/ A C / <0300.g2:/ A C />`;
 
-   The word meeting
+.. assertion::
 
-    is not in the Greek, where the words are ἐντὸς συσταθῶσιν. συνίστασθαι is the word used of constructing two straight lines ``to a point`` (cf. :ref:`G.14`) or so as to form a triangle; but it is necessary in English to indicate that they ``meet``.
+   therefore :g:`/ B A / <0300.g2:/ B A />`, :g:`/ A C / <0300.g2:/ A C />` are greater than :g:`/ B C / <0300.g2:/ B C />`.
 
+Similarly we can prove that :g:`/ A B / <0300.g2:/ A B />`, :g:`/ B C / <0300.g2:/ B C />` are also greater than :g:`/ C A / <0300.g2:/ C A />`, and :g:`/ B C / <0300.g2:/ B C />`, :g:`/ C A / <0300.g2:/ C A />` than :g:`/ A B / <0300.g2:/ A B />`.
 
-.. note::
+.. qed::
 
-
-   **3. the straight lines so constructed.**
-
-   
-
-   Observe the elegant brevity of the Greek αἱ συσταθεῖσαι.
-
+   Therefore etc. :just:`Q. E. D.`
 
 Dependency Graph
 ----------------
@@ -73,86 +75,93 @@ Dependency Graph
 .. graphviz::
 
    digraph {
-     bgcolor="black";
-     node [shape=box, style="rounded,filled", fontname="Helvetica", color="white", fontcolor="white"];
-     edge [color="white", fontcolor="white"];
+     bgcolor="transparent";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11, color="#d6d3cd", fontcolor="#ffffff"];
+     edge [color="#8c857b", fontcolor="#8c857b", arrowsize=0.75];
      rankdir="TB";
-     "G.27" [label="G.27", fillcolor="#222244", URL="/elements2/G.27/", target="_top"];
-     "G.6" [label="G.6", fillcolor="#442222", URL="/elements2/G.6/", target="_top"];
-     "G.19" [label="G.19", fillcolor="#222244", URL="/elements2/G.19/", target="_top"];
-     "G.24" [label="G.24", fillcolor="#222244", URL="/elements2/G.24/", target="_top"];
-     "G.21" [label="G.21", fillcolor="#222244", URL="/elements2/G.21/", target="_top"];
-     "G.10" [label="G.10", fillcolor="#442222", URL="/elements2/G.10/", target="_top"];
-     "G.7" [label="G.7", fillcolor="#444422", URL="/elements2/G.7/", target="_top"];
-     "G.17" [label="G.17", fillcolor="#222244", URL="/elements2/G.17/", target="_top"];
-     "G.3" [label="G.3", fillcolor="#444422", URL="/elements2/G.3/", target="_top"];
-     "G.15" [label="G.15", fillcolor="#222244", URL="/elements2/G.15/", target="_top"];
-     "G.5" [label="G.5", fillcolor="#222244", URL="/elements2/G.5/", target="_top"];
-     "G.30" [label="G.30", fillcolor="#222244", URL="/elements2/G.30/", target="_top"];
-     "G.1" [label="G.1", fillcolor="#442222", URL="/elements2/G.1/", target="_top"];
-     "G.2" [label="G.2", fillcolor="#224422", URL="/elements2/G.2/", target="_top"];
-     "G.12" [label="G.12", fillcolor="#222244", URL="/elements2/G.12/", target="_top"];
-     "G.22" [label="G.22", fillcolor="#444422", URL="/elements2/G.22/", target="_top"];
-     "G.14" [label="G.14", fillcolor="#222244", URL="/elements2/G.14/", target="_top"];
-     "G.28" [label="G.28", fillcolor="#222244", URL="/elements2/G.28/", target="_top"];
-     "G.8" [label="G.8", fillcolor="#222244", URL="/elements2/G.8/", target="_top"];
-     "G.9" [label="G.9", fillcolor="#222244", URL="/elements2/G.9/", target="_top"];
-     "G.25" [label="G.25", fillcolor="#222244", URL="/elements2/G.25/", target="_top"];
-     "G.18" [label="G.18", fillcolor="#224422", URL="/elements2/G.18/", target="_top"];
-     "G.29" [label="G.29", fillcolor="#442222", URL="/elements2/G.29/", target="_top"];
-     "G.11" [label="G.11", fillcolor="#222244", URL="/elements2/G.11/", target="_top"];
-     "G.31" [label="G.31", penwidth=3, color="white", fillcolor="#555555", URL="/elements2/G.31/", target="_top"];
-     "G.4" [label="G.4", fillcolor="#444422", URL="/elements2/G.4/", target="_top"];
-     "G.16" [label="G.16", fillcolor="#222244", URL="/elements2/G.16/", target="_top"];
-     "G.28" -> "G.27";
-     "G.24" -> "G.6";
-     "G.8" -> "G.6";
-     "G.21" -> "G.19";
-     "G.25" -> "G.24";
-     "G.24" -> "G.21";
-     "G.11" -> "G.10";
-     "G.25" -> "G.7";
-     "G.8" -> "G.7";
-     "G.12" -> "G.7";
-     "G.25" -> "G.17";
-     "G.5" -> "G.3";
-     "G.25" -> "G.3";
-     "G.8" -> "G.3";
-     "G.12" -> "G.3";
-     "G.19" -> "G.15";
-     "G.16" -> "G.15";
-     "G.19" -> "G.5";
-     "G.8" -> "G.5";
-     "G.17" -> "G.5";
-     "G.31" -> "G.30";
+     "G.1" [label="G.1", tooltip="G.1 (I.cn.1)", fillcolor="#442222", URL="../G.1/index.html", target="_top"];
+     "G.2" [label="G.2", tooltip="G.2 (I.def.15)", fillcolor="#224422", URL="../G.2/index.html", target="_top"];
+     "G.3" [label="G.3", tooltip="G.3 (I.post.1)", fillcolor="#444422", URL="../G.3/index.html", target="_top"];
+     "G.4" [label="G.4", tooltip="G.4 (I.post.3)", fillcolor="#444422", URL="../G.4/index.html", target="_top"];
+     "G.5" [label="G.5", tooltip="G.5 (I.1)", fillcolor="#222244", URL="../G.5/index.html", target="_top"];
+     "G.6" [label="G.6", tooltip="G.6 (I.cn.3)", fillcolor="#442222", URL="../G.6/index.html", target="_top"];
+     "G.7" [label="G.7", tooltip="G.7 (I.post.2)", fillcolor="#444422", URL="../G.7/index.html", target="_top"];
+     "G.8" [label="G.8", tooltip="G.8 (I.2)", fillcolor="#222244", URL="../G.8/index.html", target="_top"];
+     "G.9" [label="G.9", tooltip="G.9 (I.3)", fillcolor="#222244", URL="../G.9/index.html", target="_top"];
+     "G.10" [label="G.10", tooltip="G.10 (I.cn.4)", fillcolor="#442222", URL="../G.10/index.html", target="_top"];
+     "G.11" [label="G.11", tooltip="G.11 (I.4)", fillcolor="#222244", URL="../G.11/index.html", target="_top"];
+     "G.12" [label="G.12", tooltip="G.12 (I.5)", fillcolor="#222244", URL="../G.12/index.html", target="_top"];
+     "G.14" [label="G.14", tooltip="G.14 (I.7)", fillcolor="#222244", URL="../G.14/index.html", target="_top"];
+     "G.15" [label="G.15", tooltip="G.15 (I.8)", fillcolor="#222244", URL="../G.15/index.html", target="_top"];
+     "G.16" [label="G.16", tooltip="G.16 (I.9)", fillcolor="#222244", URL="../G.16/index.html", target="_top"];
+     "G.17" [label="G.17", tooltip="G.17 (I.10)", fillcolor="#222244", URL="../G.17/index.html", target="_top"];
+     "G.18" [label="G.18", tooltip="G.18 (I.def.10)", fillcolor="#224422", URL="../G.18/index.html", target="_top"];
+     "G.19" [label="G.19", tooltip="G.19 (I.11)", fillcolor="#222244", URL="../G.19/index.html", target="_top"];
+     "G.21" [label="G.21", tooltip="G.21 (I.cn.2)", fillcolor="#442222", URL="../G.21/index.html", target="_top"];
+     "G.22" [label="G.22", tooltip="G.22 (I.13)", fillcolor="#222244", URL="../G.22/index.html", target="_top"];
+     "G.23" [label="G.23", tooltip="G.23 (I.post.4)", fillcolor="#444422", URL="../G.23/index.html", target="_top"];
+     "G.25" [label="G.25", tooltip="G.25 (I.15)", fillcolor="#222244", URL="../G.25/index.html", target="_top"];
+     "G.26" [label="G.26", tooltip="G.26 (I.cn.5)", fillcolor="#442222", URL="../G.26/index.html", target="_top"];
+     "G.27" [label="G.27", tooltip="G.27 (I.16)", fillcolor="#222244", URL="../G.27/index.html", target="_top"];
+     "G.29" [label="G.29", tooltip="G.29 (I.18)", fillcolor="#222244", URL="../G.29/index.html", target="_top"];
+     "G.30" [label="G.30", tooltip="G.30 (I.19)", fillcolor="#222244", URL="../G.30/index.html", target="_top"];
+     "G.31" [label="G.31", tooltip="G.31 (I.20)", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.5" -> "G.1";
-     "G.24" -> "G.1";
      "G.8" -> "G.1";
      "G.9" -> "G.1";
+     "G.22" -> "G.1";
+     "G.25" -> "G.1";
      "G.5" -> "G.2";
      "G.9" -> "G.2";
-     "G.30" -> "G.12";
-     "G.28" -> "G.12";
-     "G.14" -> "G.12";
-     "G.24" -> "G.22";
-     "G.15" -> "G.14";
-     "G.30" -> "G.28";
-     "G.9" -> "G.8";
-     "G.19" -> "G.9";
-     "G.25" -> "G.9";
-     "G.16" -> "G.9";
-     "G.27" -> "G.9";
-     "G.12" -> "G.9";
-     "G.27" -> "G.25";
-     "G.31" -> "G.25";
-     "G.19" -> "G.18";
-     "G.21" -> "G.18";
-     "G.30" -> "G.29";
-     "G.25" -> "G.11";
-     "G.17" -> "G.11";
-     "G.12" -> "G.11";
+     "G.5" -> "G.3";
+     "G.8" -> "G.3";
+     "G.12" -> "G.3";
+     "G.14" -> "G.3";
+     "G.27" -> "G.3";
      "G.5" -> "G.4";
      "G.8" -> "G.4";
      "G.9" -> "G.4";
+     "G.8" -> "G.5";
+     "G.17" -> "G.5";
+     "G.19" -> "G.5";
+     "G.8" -> "G.6";
+     "G.25" -> "G.6";
+     "G.8" -> "G.7";
+     "G.12" -> "G.7";
+     "G.27" -> "G.7";
+     "G.9" -> "G.8";
+     "G.12" -> "G.9";
+     "G.16" -> "G.9";
+     "G.19" -> "G.9";
+     "G.27" -> "G.9";
+     "G.29" -> "G.9";
+     "G.11" -> "G.10";
+     "G.12" -> "G.11";
+     "G.17" -> "G.11";
+     "G.27" -> "G.11";
+     "G.14" -> "G.12";
+     "G.30" -> "G.12";
+     "G.31" -> "G.12";
+     "G.15" -> "G.14";
+     "G.16" -> "G.15";
+     "G.19" -> "G.15";
      "G.17" -> "G.16";
+     "G.27" -> "G.17";
+     "G.19" -> "G.18";
+     "G.22" -> "G.18";
+     "G.22" -> "G.19";
+     "G.22" -> "G.21";
+     "G.25" -> "G.22";
+     "G.25" -> "G.23";
+     "G.27" -> "G.25";
+     "G.27" -> "G.26";
+     "G.31" -> "G.26";
+     "G.29" -> "G.27";
+     "G.30" -> "G.29";
+     "G.31" -> "G.30";
    }
+
+Required for
+------------
+
+:ref:`G.32 <G.32>`, :ref:`G.33 <G.33>`, :ref:`G.34 <G.34>`, :ref:`G.35 <G.35>`, :ref:`G.36 <G.36>`, :ref:`G.44 <G.44>`, :ref:`G.45 <G.45>`, :ref:`G.50 <G.50>`, :ref:`G.51 <G.51>`, :ref:`G.52 <G.52>`, :ref:`G.53 <G.53>`, :ref:`G.54 <G.54>`, :ref:`G.55 <G.55>`, :ref:`G.57 <G.57>`, :ref:`G.58 <G.58>`, :ref:`G.59 <G.59>`, :ref:`G.60 <G.60>`, :ref:`G.61 <G.61>`

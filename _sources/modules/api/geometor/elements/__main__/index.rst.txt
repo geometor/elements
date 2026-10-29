@@ -20,11 +20,8 @@ Functions
 Module Contents
 ---------------
 
-.. py:function:: main() -> None
+.. py:function:: main(argv: Optional[List[str]] = None) -> None
 
-   Execute the G-Index generation process.
-
-   Scans the Euclid source documentation, builds a dependency graph,
-   and renders the G-Index RST structure.
+   Execute the G-Index generation process from the composed Euclid Heath edition.
 
 

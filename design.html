@@ -1,15 +1,18 @@
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-content_root="./">
 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>G-Index Design &mdash; Project name not set  documentation</title>
   <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="_static/css/styles.css?v=38c7a96b" />
+  <link rel="stylesheet" type="text/css" href="_static/css/styles.css?v=c2045cb7" />
   <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
   <link rel="stylesheet" href="_static/css/print.css" type="text/css" media="print" />
   <link rel="icon" href="_static/favicon.ico" />
 </head>
@@ -37,16 +40,13 @@
           <a href="usage.html"  >usage</a>
         </li>
         <li>
-          <a href="log/index.html"  >log</a>
+          <a href="elements2/index.html"  >Elements 2.0 (G Index)</a>
         </li>
         <li>
           <a href="modules/index.html"  >modules</a>
         </li>
         <li>
-          <a href="elements2/index.html"  >Elements 2.0 (G Index)</a>
-        </li>
-        <li>
-          <a href="elements2/orphans.html"  >Orphans</a>
+          <a href="log/index.html"  >log</a>
         </li>
       </ul>
     </nav>
@@ -65,47 +65,58 @@
           </div>
         </nav>
       </header>
-      <div class="content">
-        <section id="g-index-design">
+      <div class="content body" role="main">
+        <section class="level-1" id="g-index-design">
           <span id="elements-design"></span><h1>G-Index Design<a class="headerlink" href="#g-index-design" title="Link to this heading">¶</a></h1>
           <p>The G-Index is a symbolic and logical codification of Euclid’s <em>Elements</em>. It transforms the semantic structure of the modernized text into a strictly numbered dependency graph.</p>
-          <ol class="arabic simple">
-          <li><p>Unlike the traditional book-based numbering (I.1, II.5), the <strong>G-Index</strong> uses a flat, incremental numbering system (<strong>G.1</strong>, <strong>G.2</strong>…) reflecting the order of introduction and the dependency chain.</p>
+          <section class="level-2" id="g-index-structure">
+          <h2>1. G-Index Structure<a class="headerlink" href="#g-index-structure" title="Link to this heading">¶</a></h2>
+          <p>Unlike the traditional book-based numbering (I.1, II.5), the <strong>G-Index</strong> uses a flat, incremental numbering system (<strong>G.1</strong>, <strong>G.2</strong>…) reflecting the order of introduction and the dependency chain.</p>
           <ul class="simple">
           <li><p><strong>G-Nodes</strong>: Each entry (definition, postulate, common notion, or proposition) is treated as a node in a Directed Acyclic Graph (DAG).</p></li>
           <li><p><strong>Orphans</strong>: Elements that are defined but not yet used as dependencies are tracked as orphans to ensure complete logical coverage.</p></li>
           </ul>
-          </li>
-          <li><p><cite>geometor.elements</cite> sources its data from the sister project <cite>geometor.euclid</cite>.</p>
+          </section>
+          <section class="level-2" id="sourcing-strategy">
+          <h2>2. Sourcing Strategy<a class="headerlink" href="#sourcing-strategy" title="Link to this heading">¶</a></h2>
+          <p><code class="docutils literal notranslate"><span class="pre">geometor.elements</span></code> sources its data from the sister project <code class="docutils literal notranslate"><span class="pre">geometor.euclid</span></code>.</p>
           <ul class="simple">
-          <li><p><strong>RST Parsing</strong>: Instead of raw XML, the system parses the processed reStructuredText files from <cite>euclid/docsrc/heath</cite>.</p></li>
-          <li><p><strong>Metadata Extraction</strong>: Dependency links are extracted from <cite>:dependencies:</cite> metadata fields in the source files.</p></li>
-          <li><p><strong>Asset Management</strong>: Diagrams and images are sourced from the corresponding Euclid folders and renamed to match the G-Index Identity (e.g., <cite>G.1.png</cite>).</p></li>
+          <li><p><strong>RST Parsing</strong>: Instead of raw XML, the system parses the processed reStructuredText files from <code class="docutils literal notranslate"><span class="pre">euclid/docsrc/heath</span></code>.</p></li>
+          <li><p><strong>Metadata Extraction</strong>: Dependency links are extracted from <code class="docutils literal notranslate"><span class="pre">:dependencies:</span></code> metadata fields in the source files.</p></li>
+          <li><p><strong>Asset Management</strong>: Diagrams and images are sourced from the corresponding Euclid folders and copied into each G-Index folder.</p></li>
           </ul>
-          </li>
-          <li><p>The generation process follows these steps:</p>
+          </section>
+          <section class="level-2" id="generation-pipeline">
+          <h2>3. Generation Pipeline<a class="headerlink" href="#generation-pipeline" title="Link to this heading">¶</a></h2>
+          <p>The generation process follows these steps:</p>
           <ol class="arabic simple">
-          <li><p><strong>Graph Construction</strong>: Use <cite>networkx</cite> to build a dependency graph by scanning all source files in the Euclid project.</p></li>
-          <li><p><strong>Topological Sort</strong>: (Optional) Analysis of the graph to understand the “Genealogy of Truth.”</p></li>
-          <li><p><strong>Templated RST Output</strong>: Every G-Node is rendered using a standard template that includes:
-          *   <strong>Heath ID</strong>: Link back to the canonical Euclid entry.
-          *   <strong>Enunciation</strong>: Indented blockquote for the main statement.
-          *   <strong>Dependency Graph</strong>: A Graphviz visualization of the node’s relatives.
-          *   <strong>Required For</strong>: A list of all future nodes that depend on this truth.</p></li>
-          </ol>
-          </li>
-          <li><p>The ultimate goal of the G-Index is to serve as a bridge to formal symbolic logic:</p>
+          <li><p><strong>Graph Construction</strong>: Use <code class="docutils literal notranslate"><span class="pre">networkx</span></code> to build a dependency graph by scanning all source files in the Euclid project.</p></li>
+          <li><p><strong>Topological Sort</strong>: Analysis of the graph to understand the “Genealogy of Truth.”</p></li>
+          <li><p><strong>Templated RST Output</strong>: Every G-Node is rendered using a standard template that includes:</p>
           <ul class="simple">
-          <li><p><strong>Symbolic Tagging</strong>: Mapping textual elements (e.g., “equilateral triangle”) to symbolic types in <cite>geometor.model</cite>.</p></li>
-          <li><p><strong>Construction Steps</strong>: Future iterations will include the symbolic construction steps required to generate the diagrams programmatically.</p></li>
-          </ul>
-          </li>
-          <li><ul class="simple">
-          <li><p><cite>graph.py</cite>: Handles the crawling of the Euclid source tree and the extraction of metadata/content using regular expressions.</p></li>
-          <li><p><cite>g_index.py</cite>: Manages the generation of the flat directory structure in <cite>docsrc/elements2/</cite> and the rendering of the templated RST.</p></li>
+          <li><p><strong>Heath ID</strong>: Link back to the canonical Euclid entry.</p></li>
+          <li><p><strong>Enunciation</strong>: Highlighted statement of the proposition or definition.</p></li>
+          <li><p><strong>Dependency Graph</strong>: A Graphviz visualization of the node’s relatives.</p></li>
+          <li><p><strong>Required For</strong>: A list of all future nodes that depend on this truth.</p></li>
           </ul>
           </li>
           </ol>
+          </section>
+          <section class="level-2" id="formalization-goals">
+          <h2>4. Formalization Goals<a class="headerlink" href="#formalization-goals" title="Link to this heading">¶</a></h2>
+          <p>The ultimate goal of the G-Index is to serve as a bridge to formal symbolic logic:</p>
+          <ul class="simple">
+          <li><p><strong>Symbolic Tagging</strong>: Mapping textual elements and geometric indicators (<code class="docutils literal notranslate"><span class="pre">/</span> <span class="pre">A</span> <span class="pre">B</span> <span class="pre">/</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;</span> <span class="pre">A</span> <span class="pre">B</span> <span class="pre">C</span> <span class="pre">&gt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;</span> <span class="pre">B</span> <span class="pre">A</span> <span class="pre">C</span> <span class="pre">)</span></code>, <code class="docutils literal notranslate"><span class="pre">(</span> <span class="pre">B</span> <span class="pre">C</span> <span class="pre">D</span> <span class="pre">)</span></code>, <code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">A</span> <span class="pre">B</span> <span class="pre">]</span></code>, <code class="docutils literal notranslate"><span class="pre">A</span></code>) to symbolic types in <code class="docutils literal notranslate"><span class="pre">geometor.model</span></code>.</p></li>
+          <li><p><strong>Construction Steps</strong>: Connecting propositions to the symbolic construction steps required to generate the diagrams programmatically.</p></li>
+          </ul>
+          </section>
+          <section class="level-2" id="implementation-details">
+          <h2>5. Implementation Details<a class="headerlink" href="#implementation-details" title="Link to this heading">¶</a></h2>
+          <ul class="simple">
+          <li><p><code class="docutils literal notranslate"><span class="pre">graph.py</span></code>: Handles the crawling of the Euclid source tree and the extraction of metadata/content.</p></li>
+          <li><p><code class="docutils literal notranslate"><span class="pre">g_index.py</span></code>: Manages the generation of the flat directory structure in <code class="docutils literal notranslate"><span class="pre">docsrc/elements2/</span></code> and the rendering of the templated RST.</p></li>
+          </ul>
+          </section>
           </section>
 
       </div>
@@ -121,21 +132,71 @@
     </article>
   </main>
   <div class="asides">
-    <aside>
+    <aside class="aside-search">
       <h3>Search</h3>
-      <div role="search">
-        <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-          <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
           <input type="hidden" name="check_keywords" value="yes" />
           <input type="hidden" name="area" value="default" />
         </form>
       </div>
+    </aside>
+    <aside class="aside-tags">
+      <h3>Tags</h3>
+      <ul>
+        <li><a href="tags/angle.html">angle</a></li>
+        <li><a href="tags/bisect.html">bisect</a></li>
+        <li><a href="tags/book-i.html">book-i</a></li>
+        <li><a href="tags/circle.html">circle</a></li>
+        <li><a href="tags/equality.html">equality</a></li>
+        <li><a href="tags/equilateral.html">equilateral</a></li>
+        <li><a href="tags/isosceles.html">isosceles</a></li>
+        <li><a href="tags/line.html">line</a></li>
+        <li><a href="tags/parallel.html">parallel</a></li>
+        <li><a href="tags/parallel-straight-lines.html">parallel-straight-lines</a></li>
+        <li><a href="tags/parallelogram.html">parallelogram</a></li>
+        <li><a href="tags/perpendicular.html">perpendicular</a></li>
+        <li><a href="tags/plane.html">plane</a></li>
+        <li><a href="tags/point.html">point</a></li>
+        <li><a href="tags/polygon.html">polygon</a></li>
+        <li><a href="tags/porism.html">porism</a></li>
+        <li><a href="tags/quadrilateral.html">quadrilateral</a></li>
+        <li><a href="tags/reductio-ad-absurdum.html">reductio-ad-absurdum</a></li>
+        <li><a href="tags/right-angle.html">right-angle</a></li>
+        <li><a href="tags/segment.html">segment</a></li>
+        <li><a href="tags/square.html">square</a></li>
+        <li><a href="tags/triangle.html">triangle</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-categories">
+      <h3>Categories</h3>
+      <ul>
+        <li><a href="categories/common-notion.html">common-notion</a></li>
+        <li><a href="categories/construction.html">construction</a></li>
+        <li><a href="categories/definition.html">definition</a></li>
+        <li><a href="categories/equality.html">equality</a></li>
+        <li><a href="categories/plane-geometry.html">plane-geometry</a></li>
+        <li><a href="categories/postulate.html">postulate</a></li>
+        <li><a href="categories/problem.html">problem</a></li>
+        <li><a href="categories/proof.html">proof</a></li>
+        <li><a href="categories/theorem.html">theorem</a></li>
+      </ul>
     </aside>
     <aside class="aside-types">
       <h3>Types</h3>
       <ul>
         <li><a href="types/cn.html">cn</a></li>
         <li><a href="types/def.html">def</a></li>
+        <li><a href="types/orphans.html">orphans</a></li>
         <li><a href="types/post.html">post</a></li>
         <li><a href="types/prop.html">prop</a></li>
       </ul>
@@ -162,9 +223,11 @@
   <script src="_static/jquery.js?v=5d32c60e"></script>
   <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
   <script src="_static/documentation_options.js?v=5929fcd5"></script>
-  <script src="_static/doctools.js?v=9bcbadda"></script>
-  <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+  <script src="_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="_static/js/geometor_interactive.js?v=832534ec"></script>
+  <script src="_static/js/search_highlight.js"></script>
 
 </body>
 </html>
