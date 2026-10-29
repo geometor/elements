@@ -346,6 +346,19 @@ def strip_folio_milestones(rst_body: str) -> str:
     return cleaned.strip()
 
 
+def strip_footnotes(rst_body: str) -> str:
+    """Remove Heath's inline footnote references ([#f1]_) and footnote definition blocks (.. [#f1] ...)."""
+    cleaned = re.sub(
+        r"^\.\.\s+\[#[^\]]+\][^\n]*(?:\n(?:[ \t]+[^\n]*|[ \t]*))*",
+        "",
+        rst_body,
+        flags=re.MULTILINE,
+    )
+    cleaned = re.sub(r"\\?[ \t]*\[#[^\]]+\]_", "", cleaned)
+    cleaned = re.sub(r"\n{3,}", "\n\n", cleaned)
+    return cleaned.strip()
+
+
 def extract_primitive_tags(rst_body: str) -> List[str]:
     """Identify GEOMETOR geometric primitive tags from :g: role targets in rst_body."""
     found: Set[str] = set()
@@ -507,6 +520,7 @@ def parse_grouped_items_file(
 
         chunk = body[start_pos:end_pos].strip()
         chunk = strip_folio_milestones(chunk)
+        chunk = strip_footnotes(chunk)
         # Strip leading item number (e.g. "15. " or "**1.** ")
         chunk = re.sub(r"^(?:\*\*\d+\.\*\*|\d+\.)\s+", "", chunk, count=1)
 
@@ -559,6 +573,7 @@ def parse_proposition_file(
     # Strip explicit canonical label (`.. _I.1:`), folio milestones, and `PROPOSITION N.\n===` heading
     body = re.sub(r"^\.\.\s+_[^:\n]+:\s*\n+", "", body, flags=re.MULTILINE)
     body = strip_folio_milestones(body)
+    body = strip_footnotes(body)
     body = re.sub(
         r"^PROPOSITION\s+\d+\.?\s*\n=+\s*\n+",
         "",

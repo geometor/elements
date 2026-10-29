@@ -42,6 +42,7 @@ Functions
    geometor.elements.graph.parse_justification_arg
    geometor.elements.graph.parse_metadata_and_body
    geometor.elements.graph.strip_folio_milestones
+   geometor.elements.graph.strip_footnotes
    geometor.elements.graph.extract_primitive_tags
    geometor.elements.graph.extract_taxonomy
    geometor.elements.graph.parse_grouped_items_file
@@ -108,6 +109,11 @@ Module Contents
 .. py:function:: strip_folio_milestones(rst_body: str) -> str
 
    Remove .. _folio-...: labels and .. folio:: directives from an RST body.
+
+
+.. py:function:: strip_footnotes(rst_body: str) -> str
+
+   Remove Heath's inline footnote references ([#f1]_) and footnote definition blocks (.. [#f1] ...).
 
 
 .. py:function:: extract_primitive_tags(rst_body: str) -> List[str]

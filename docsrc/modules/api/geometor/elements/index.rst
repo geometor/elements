@@ -32,6 +32,6 @@ Package Contents
 ----------------
 
 .. py:data:: __version__
-   :value: '0.2.2'
+   :value: '0.3.0'
 
 

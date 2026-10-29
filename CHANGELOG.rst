@@ -2,6 +2,17 @@ changelog
 =========
 
 
+0.3.1
+-----
+*2026-10-29*
+
+**changed**
+
+-   Regenerated the complete 13-book Euclid G-Index (`G.1` through `G.525` and `81` orphans in `docsrc/elements2/`) with updated `:g:` references and recalibrated SVGs from `euclid`.
+-   Stripped Heath's inline footnote markers (`[#f1]_`) and footnote blocks (`.. [#f1] ...`) in `graph.py` (`strip_footnotes`).
+-   Added truncated enunciation tooltips to Graphviz dependency nodes and exported `resources/enunciations.json` for `G.<n>` and canonical Euclid IDs.
+
+
 0.3.0
 -----
 *2026-10-29*

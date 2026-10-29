@@ -203,11 +203,18 @@ def generate_g_dot(
         g_label = id_map.get(node, node)
         node_data = G.nodes[node]
         node_type = node_data.get("type", "unknown")
+        excerpt = node_data.get("g_excerpt") or node_data.get("excerpt", "")
+        if excerpt:
+            short_excerpt = excerpt[:180] + ("..." if len(excerpt) > 180 else "")
+            escaped_excerpt = short_excerpt.replace("\\", "\\\\").replace('"', '\\"')
+            tooltip_str = f"{g_label} ({node}): {escaped_excerpt}"
+        else:
+            tooltip_str = f"{g_label} ({node})"
 
         fillcolor = "#333333"
         attrs = [
             f'label="{g_label}"',
-            f'tooltip="{g_label} ({node})"',
+            f'tooltip="{tooltip_str}"',
         ]
         if node == node_ref:
             attrs.append("penwidth=2.5")
@@ -247,13 +254,13 @@ def generate_g_dot(
 
 
 def sync_apparatus_resources(project_root: Path) -> None:
-    """Copy glossary.json, persons.json, and citations.json from euclid/resources/heath/ into elements/resources/."""
+    """Copy glossary.json, persons.json, citations.json, and enunciations.json from euclid/resources/heath/ into elements/resources/."""
     euclid_res = project_root.parent / "euclid" / "resources" / "heath"
     target_res = project_root / "resources"
     if not euclid_res.is_dir():
         return
     target_res.mkdir(parents=True, exist_ok=True)
-    for fname in ("glossary.json", "persons.json", "citations.json"):
+    for fname in ("glossary.json", "persons.json", "citations.json", "enunciations.json"):
         src_file = euclid_res / fname
         if src_file.is_file():
             shutil.copy2(src_file, target_res / fname)
@@ -377,6 +384,7 @@ def generate_g_index(
         content = transform_refs(content, id_map)
 
         excerpt = clean_plain_excerpt(content)
+        node_data["g_excerpt"] = excerpt
 
         # Metadata header
         meta_lines = [
@@ -473,9 +481,28 @@ def generate_g_index(
             "\n".join(orphans_lines).rstrip() + "\n", encoding="utf-8"
         )
 
-    # 4. Write map.json (both forward and reverse lookup info)
+    # 4. Write map.json and update resources/enunciations.json
     with open(output_path / "map.json", "w", encoding="utf-8") as f:
         json.dump(id_map, f, indent=2)
+
+    enun_path = project_root / "resources" / "enunciations.json"
+    enun_data: Dict[str, str] = {}
+    if enun_path.is_file():
+        try:
+            enun_data = json.loads(enun_path.read_text(encoding="utf-8"))
+        except Exception:
+            enun_data = {}
+    for node_ref in g_sequence:
+        g_name = id_map[node_ref]
+        ex = G.nodes[node_ref].get("g_excerpt") or G.nodes[node_ref].get("excerpt", "")
+        if ex:
+            enun_data[g_name] = ex
+            enun_data[node_ref] = ex
+    enun_path.parent.mkdir(parents=True, exist_ok=True)
+    enun_path.write_text(
+        json.dumps(enun_data, indent=2, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
 
     # 5. Generate Main Index (docsrc/elements2/index.rst)
     index_lines = [
