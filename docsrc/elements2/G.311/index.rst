@@ -9,7 +9,7 @@
 :category: definition, number-theory
 :tags: book-vii, perfect-number, number
 :dependencies: 
-:excerpt: A perfect number is that which is equal to its own parts.
+:excerpt: Aperfect number is that which is equal to its own parts.
 
 .. _G.311:
 .. _VII.def.22:
@@ -21,9 +21,14 @@ G.311
 
 .. enunciation::
 
-   A :term:`**perfect number** <perfect-number>` is that which is equal to its own parts.
+   A:term:`**perfect number** <perfect-number>` is that which is equal to its own parts.
 
 Required for
 ------------
 
 :ref:`G.312 <G.312>`
+
+.. toctree::
+   :hidden:
+
+   heath

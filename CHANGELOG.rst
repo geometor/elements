@@ -2,6 +2,17 @@ changelog
 =========
 
 
+0.3.2
+-----
+*2026-10-29*
+
+**added**
+
+-   Migrated and validated `geometor.model` Python construction scripts (`resources/constructions/<id>/g1.py`, `g2.py`, ...) into `geometor.elements`.
+-   Created `pseudocode.py` to generate tightened, fact-oriented enunciations and structured `.. step:: <kind> [justification]` sequences (`given`, `construct`, `intersect`, `assert`, `conclude`).
+-   Expanded each `docsrc/elements2/G.<n>/` directory into a self-contained folder with 3 companion tracks (`index.rst` for **Pseudocode**, `code.rst` for **Code**, and `heath.rst` for **Heath**) alongside folio-free `g1.svg` and `g1.py` artifacts.
+
+
 0.3.1
 -----
 *2026-10-29*

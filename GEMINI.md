@@ -25,6 +25,7 @@ It is responsible for:
 
 ## Key Modules
 
--   `graph.py`: Crawls the composed RST Heath Edition in `../euclid/docsrc/heath/`, splitting definitions, postulates, and common notions into discrete anchored items and building the `networkx.DiGraph` with categories, tags, and interactive SVG assets.
--   `g_index.py`: Sequences propositions and dependencies into `G.1`..`G.N`, rewrites `:g:` roles to explicit GEOMETOR symbolic indications (`/ A B /`, `< A B C >`, `< B A C )`, `( B C D )`, `[ A B ]`, `A`), rewrites justifications to `G.<n>` links, and renders the Book Codex RST in `docsrc/elements2/`.
+-   `graph.py`: Crawls the composed RST Heath Edition in `../euclid/docsrc/heath/`, splitting definitions, postulates, and common notions into discrete anchored items and building the `networkx.DiGraph` with categories, tags, SVG figures, and `resources/constructions/<id>/g<k>.py` construction scripts.
+-   `pseudocode.py`: Tightens proposition and definition enunciations into concise fact statements and converts proofs into `.. step:: <kind> [justification]` sequences (`given`, `construct`, `intersect`, `assert`, `conclude`).
+-   `g_index.py`: Sequences propositions and dependencies into `G.1`..`G.N`, rewrites `:g:` roles to explicit GEOMETOR symbolic indications (`/ A B /`, `< A B C >`, `< B A C )`, `( B C D )`, `[ A B ]`, `A`), rewrites justifications to `G.<n>` links, and renders the 3-track Book Codex (`index.rst` Pseudocode, `code.rst` Code, `heath.rst` Heath) with `g1.svg` and `g1.py` in `docsrc/elements2/G.<n>/`.
 -   `__main__.py`: CLI entry point supporting `--books` and `--output-dir`.

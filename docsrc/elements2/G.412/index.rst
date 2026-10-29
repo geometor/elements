@@ -9,7 +9,7 @@
 :category: definition, incommensurables, magnitudes
 :tags: book-x, fourth-apotome, square, commensurable, incommensurable, rational, apotome
 :dependencies: 
-:excerpt: Again, if the square on the whole be greater than the square on the annex by the square on a straight line incommensurable with the whole, then, if the whole be commensurable in length with the rational straight line set out, let the apotome be called a fourth apotome ;
+:excerpt: Again, if the square on the whole be greater than the square on the annex by the square on a straight line incommensurable with the whole, then, if the whole be commensurable in length with the rational straight line set out, let the apotome be called afourth apotome;
 
 .. _G.412:
 .. _X.def.iii.4:
@@ -21,9 +21,14 @@ G.412
 
 .. enunciation::
 
-   Again, if the square on the whole be greater than the square on the annex by the square on a straight line incommensurable with the whole, then, if the whole be commensurable in length with the rational straight line set out, let the apotome be called a :term:`**fourth apotome** <fourth-apotome>` ;
+   Again, if the square on the whole be greater than the square on the annex by the square on a straight line incommensurable with the whole, then, if the whole be commensurable in length with the rational straight line set out, let the apotome be called a:term:`**fourth apotome** <fourth-apotome>`;
 
 Required for
 ------------
 
 :ref:`G.413 <G.413>`, :ref:`G.421 <G.421>`, :ref:`G.427 <G.427>`, :ref:`G.435 <G.435>`, :ref:`G.518 <G.518>`, :ref:`G.523 <G.523>`, :ref:`G.525 <G.525>`
+
+.. toctree::
+   :hidden:
+
+   heath

@@ -24,98 +24,112 @@ G.510
 
    If a straight line be cut in extreme and mean ratio, the square on the lesser segment added to the half of the greater segment is five times the square on the half of the greater segment.
 
-For let any straight line :g:`/ A B / <0450.g1:/ A B />` be cut in extreme and mean ratio at the point :g:`C <0450.g1:C>`, let :g:`/ A C / <0450.g1:/ A C />` be the greater segment, and let :g:`/ A C / <0450.g1:/ A C />` be :eq:`bisected <0450.g1:/ A D / = 0450.g1:/ D C />` at :g:`D <0450.g1:D>` ; I say that the square on :g:`/ B D / <0450.g1:/ B D />` is five times the square on :g:`/ D C / <0450.g1:/ D C />`.
-
-For let the square :g:`< A E > <0450.g1:< A E >>` be described on :g:`/ A B / <0450.g1:/ A B />`, and let the figure be drawn double.
-
-.. picture:: 0450.g1.svg
+.. picture:: g1.svg
    :alt: Book XIII, Proposition 3
 
-.. subclause::
+.. step:: construct
 
-   Since :g:`/ A C / <0450.g1:/ A C />` is double of :g:`/ D C / <0450.g1:/ D C />`,
+   For let any straight line :g:`/ A B / <g1:/ A B />` be cut in extreme and mean ratio at :g:`C <g1:C>`, let :g:`/ A C / <g1:/ A C />` be the greater segment
 
-.. assertion::
+.. step:: assert
 
-   therefore the square on :g:`/ A C / <0450.g1:/ A C />` is quadruple of the square on :g:`/ D C / <0450.g1:/ D C />`, that is, :g:`< R S > <0450.g1:< R S >>` is quadruple of :g:`< F G > <0450.g1:< F G >>`.
+   Let :g:`/ A C / <g1:/ A C />` be :eq:`bisected <g1:/ A D / = g1:/ D C />` at :g:`D <g1:D>`
 
-.. subclause::
+.. step:: construct
 
-   And, since the rectangle :g:`/ A B / <0450.g1:/ A B />`, :g:`/ B C / <0450.g1:/ B C />` is equal to the square on :g:`/ A C / <0450.g1:/ A C />`, and :g:`< C E > <0450.g1:< C E >>` is the rectangle :g:`/ A B / <0450.g1:/ A B />`, :g:`/ B C / <0450.g1:/ B C />`,
+   For let the square :g:`< A E > <g1:< A E >>` be described on :g:`/ A B / <g1:/ A B />`
 
-.. assertion::
+.. step:: construct
 
-   therefore :g:`< C E > <0450.g1:< C E >>` is :eq:`equal <0450.g1:< C E > = 0450.g1:< R S >>` to :g:`< R S > <0450.g1:< R S >>`.
+   Let the figure be drawn double.
 
-.. subclause::
+.. step:: assert
 
-   But :g:`< R S > <0450.g1:< R S >>` is quadruple of :g:`< F G > <0450.g1:< F G >>` ;
+   Since :g:`/ A C / <g1:/ A C />` is double of :g:`/ D C / <g1:/ D C />`,
 
-.. assertion::
+.. step:: assert
 
-   therefore :g:`< C E > <0450.g1:< C E >>` is also quadruple of :g:`< F G > <0450.g1:< F G >>`.
+   Therefore the square on :g:`/ A C / <g1:/ A C />` is quadruple of the square on :g:`/ D C / <g1:/ D C />`, that is, :g:`< R S > <g1:< R S >>` is quadruple of :g:`< F G > <g1:< F G >>`.
 
-.. subclause::
+.. step:: assert
 
-   Again, since :g:`/ A D / <0450.g1:/ A D />` is :eq:`equal <0450.g1:/ A D / = 0450.g1:/ D C />` to :g:`/ D C / <0450.g1:/ D C />`,
+   And, since the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` is equal to the square on :g:`/ A C / <g1:/ A C />`, and :g:`< C E > <g1:< C E >>` is the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`,
 
-.. assertion::
+.. step:: assert
 
-   :g:`/ H K / <0450.g1:/ H K />` is also :eq:`equal <0450.g1:/ H K / = 0450.g1:/ K F />` to :g:`/ K F / <0450.g1:/ K F />`.
+   Therefore :g:`< C E > <g1:< C E >>` is :eq:`equal <g1:< C E > = g1:< R S >>` to :g:`< R S > <g1:< R S >>`.
 
-.. assertion::
+.. step:: assert
 
-   Hence the square :g:`< G F > <0450.g1:< G F >>` is also :eq:`equal <0450.g1:< G F > = 0450.g1:< H L >>` to the square :g:`< H L > <0450.g1:< H L >>`.
+   :g:`< R S > <g1:< R S >>` is quadruple of :g:`< F G > <g1:< F G >>` ;
 
-.. assertion::
+.. step:: assert
 
-   Therefore :g:`/ G K / <0450.g1:/ G K />` is :eq:`equal <0450.g1:/ G K / = 0450.g1:/ K L /; 0450.g1:/ M N / = 0450.g1:/ N E />` to :g:`/ K L / <0450.g1:/ K L />`, that is, :g:`/ M N / <0450.g1:/ M N />` to :g:`/ N E / <0450.g1:/ N E />` ; hence :g:`< M F > <0450.g1:< M F >>` is also :eq:`equal <0450.g1:< M F > = 0450.g1:< F E >>` to :g:`< F E > <0450.g1:< F E >>`.
+   Therefore :g:`< C E > <g1:< C E >>` is also quadruple of :g:`< F G > <g1:< F G >>`.
 
-.. subclause::
+.. step:: assert
 
-   But :g:`< M F > <0450.g1:< M F >>` is :eq:`equal <0450.g1:< M F > = 0450.g1:< C G >>` to :g:`< C G > <0450.g1:< C G >>` ;
+   Since :g:`/ A D / <g1:/ A D />` is :eq:`equal <g1:/ A D / = g1:/ D C />` to :g:`/ D C / <g1:/ D C />`,
 
-.. assertion::
+.. step:: assert
 
-   therefore :g:`< C G > <0450.g1:< C G >>` is also :eq:`equal <0450.g1:< C G > = 0450.g1:< F E >>` to :g:`< F E > <0450.g1:< F E >>`.
+   :g:`/ H K / <g1:/ H K />` is also :eq:`equal <g1:/ H K / = g1:/ K F />` to :g:`/ K F / <g1:/ K F />`.
 
-.. subclause::
+.. step:: assert
 
-   Let :g:`< C N > <0450.g1:< C N >>` be added to each ;
+   Hence the square :g:`< G F > <g1:< G F >>` is also :eq:`equal <g1:< G F > = g1:< H L >>` to the square :g:`< H L > <g1:< H L >>`.
 
-.. assertion::
+.. step:: assert
 
-   therefore the gnomon :g:`< O P Q > <0450.g1:< O P Q >>` is :eq:`equal <0450.g1:< O P Q > = 0450.g1:< C E >>` to :g:`< C E > <0450.g1:< C E >>`.
+   Therefore :g:`/ G K / <g1:/ G K />` is :eq:`equal <g1:/ G K / = g1:/ K L /; g1:/ M N / = g1:/ N E />` to :g:`/ K L / <g1:/ K L />`, that is, :g:`/ M N / <g1:/ M N />` to :g:`/ N E / <g1:/ N E />` ; hence :g:`< M F > <g1:< M F >>` is also :eq:`equal <g1:< M F > = g1:< F E >>` to :g:`< F E > <g1:< F E >>`.
 
-.. subclause::
+.. step:: assert
 
-   But :g:`< C E > <0450.g1:< C E >>` was proved quadruple of :g:`< G F > <0450.g1:< G F >>` ;
+   :g:`< M F > <g1:< M F >>` is :eq:`equal <g1:< M F > = g1:< C G >>` to :g:`< C G > <g1:< C G >>` ;
 
-.. assertion::
+.. step:: assert
 
-   therefore the gnomon :g:`< O P Q > <0450.g1:< O P Q >>` is also quadruple of the square :g:`< F G > <0450.g1:< F G >>`.
+   Therefore :g:`< C G > <g1:< C G >>` is also :eq:`equal <g1:< C G > = g1:< F E >>` to :g:`< F E > <g1:< F E >>`.
 
-.. assertion::
+.. step:: assert
 
-   Therefore the gnomon :g:`< O P Q > <0450.g1:< O P Q >>` and the square :g:`< F G > <0450.g1:< F G >>` are five times :g:`< F G > <0450.g1:< F G >>`.
+   Let :g:`< C N > <g1:< C N >>` be added to each ;
 
-.. subclause::
+.. step:: assert
 
-   But the gnomon :g:`< O P Q > <0450.g1:< O P Q >>` and the square :g:`< F G > <0450.g1:< F G >>` are the square :g:`< D N > <0450.g1:< D N >>`.
+   Therefore the gnomon :g:`< O P Q > <g1:< O P Q >>` is :eq:`equal <g1:< O P Q > = g1:< C E >>` to :g:`< C E > <g1:< C E >>`.
 
-.. subclause::
+.. step:: assert
 
-   And :g:`< D N > <0450.g1:< D N >>` is the square on :g:`/ D B / <0450.g1:/ D B />`, and :g:`< G F > <0450.g1:< G F >>` the square on :g:`/ D C / <0450.g1:/ D C />`.
+   :g:`< C E > <g1:< C E >>` was proved quadruple of :g:`< G F > <g1:< G F >>` ;
 
-.. assertion::
+.. step:: assert
 
-   Therefore the square on :g:`/ D B / <0450.g1:/ D B />` is five times the square on :g:`/ D C / <0450.g1:/ D C />`.
+   Therefore the gnomon :g:`< O P Q > <g1:< O P Q >>` is also quadruple of the square :g:`< F G > <g1:< F G >>`.
 
-.. qed::
+.. step:: assert
 
-   :just:`Q. E. D.`
+   Therefore the gnomon :g:`< O P Q > <g1:< O P Q >>` and the square :g:`< F G > <g1:< F G >>` are five times :g:`< F G > <g1:< F G >>`.
+
+.. step:: assert
+
+   The gnomon :g:`< O P Q > <g1:< O P Q >>` and the square :g:`< F G > <g1:< F G >>` are the square :g:`< D N > <g1:< D N >>`.
+
+.. step:: assert
+
+   :g:`< D N > <g1:< D N >>` is the square on :g:`/ D B / <g1:/ D B />`, and :g:`< G F > <g1:< G F >>` the square on :g:`/ D C / <g1:/ D C />`.
+
+.. step:: conclude
+
+   Therefore the square on :g:`/ D B / <g1:/ D B />` is five times the square on :g:`/ D C / <g1:/ D C />`.
 
 Required for
 ------------
 
 :ref:`G.523 <G.523>`, :ref:`G.525 <G.525>`
+
+.. toctree::
+   :hidden:
+
+   code
+   heath

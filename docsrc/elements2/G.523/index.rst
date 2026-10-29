@@ -10,7 +10,7 @@
 :category: problem, construction, solid-geometry, regular-solids
 :tags: book-xiii, point, segment, circle, angle, triangle, polygon, irrational, sphere, icosahedron, equality, porism
 :dependencies: G.46, G.110, G.133, G.171, G.182, G.449, G.510, G.516, G.517, G.518
-:excerpt: To construct an icosahedron and comprehend it in a sphere, like the aforesaid figures; and to prove that the side of the icosahedron is the irrational straight line called minor.
+:excerpt: Construct an icosahedron and comprehend it in a sphere, like the aforesaid figures; and to prove that the side of the icosahedron is the irrational straight line called minor.
 
 .. _G.523:
 .. _XIII.16:
@@ -22,282 +22,342 @@ G.523
 
 .. enunciation::
 
-   To construct an icosahedron and comprehend it in a sphere, like the aforesaid figures; and to prove that the side of the icosahedron is the irrational straight line called minor.
+   Construct an icosahedron and comprehend it in a sphere, like the aforesaid figures; and to prove that the side of the icosahedron is the irrational straight line called minor.
 
-Let the diameter :g:`/ A B / <0485.g1:/ A B />` of the given sphere be set out, and let it be cut at :g:`C <0485.g1:C>` so that :g:`/ A C / <0485.g1:/ A C />` is quadruple of :g:`/ C B / <0485.g1:/ C B />`, let the semicircle :g:`( A D B ) <0485.g1:( A D B )>` be described on :g:`/ A B / <0485.g1:/ A B />`, let the straight line :g:`/ C D / <0485.g1:/ C D />` be drawn from :g:`C <0485.g1:C>` at right angles to :g:`/ A B / <0485.g1:/ A B />`, and let :g:`/ D B / <0485.g1:/ D B />` be joined;
-
-.. picture:: 0485.g1.svg
+.. picture:: g1.svg
    :alt: Book XIII, Proposition 16
 
-let the circle :g:`( E F G H K ) <0485.g1:( E F G H K )>` be set out and let its radius be :eq:`equal <0485.g1:/ E V / = 0485.g1:/ D B />` to :g:`/ D B / <0485.g1:/ D B />`, let the :eq:`equilateral <0485.g1:/ E F / = 0485.g1:/ F G / = 0485.g1:/ G H / = 0485.g1:/ H K / = 0485.g1:/ K E />` and equiangular pentagon :g:`< E F G H K > <0485.g1:< E F G H K >>` be inscribed in the circle :g:`( E F G H K ) <0485.g1:( E F G H K )>`, let the circumferences :g:`( E F ) <0485.g1:( E F )>`, :g:`( F G ) <0485.g1:( F G )>`, :g:`( G H ) <0485.g1:( G H )>`, :g:`( H K ) <0485.g1:( H K )>`, :g:`( K E ) <0485.g1:( K E )>` be bisected at the points :g:`L <0485.g1:L>`, :g:`M <0485.g1:M>`, :g:`N <0485.g1:N>`, :g:`O <0485.g1:O>`, :g:`P <0485.g1:P>`, and let :g:`/ L M / <0485.g1:/ L M />`, :g:`/ M N / <0485.g1:/ M N />`, :g:`/ N O / <0485.g1:/ N O />`, :g:`/ O P / <0485.g1:/ O P />`, :g:`/ P L / <0485.g1:/ P L />`, :g:`/ E P / <0485.g1:/ E P />` be joined.
+.. step:: given
 
-Therefore the pentagon :g:`< L M N O P > <0485.g1:< L M N O P >>` is also :eq:`equilateral <0485.g1:/ L M / = 0485.g1:/ M N / = 0485.g1:/ N O / = 0485.g1:/ O P / = 0485.g1:/ P L />`, and the straight line :g:`/ E P / <0485.g1:/ E P />` belongs to a decagon.
+   the diameter :g:`/ A B / <g1:/ A B />` of the given sphere be set out
 
-Now from the points :g:`E <0485.g1:E>`, :g:`F <0485.g1:F>`, :g:`G <0485.g1:G>`, :g:`H <0485.g1:H>`, :g:`K <0485.g1:K>` let the straight lines :g:`/ E Q / <0485.g1:/ E Q />`, :g:`/ F R / <0485.g1:/ F R />`, :g:`/ G S / <0485.g1:/ G S />`, :g:`/ H T / <0485.g1:/ H T />`, :g:`/ K U / <0485.g1:/ K U />` be set up at right angles to the plane of the circle, and let them be :eq:`equal <0485.g1:/ E Q / = 0485.g1:/ F R / = 0485.g1:/ G S / = 0485.g1:/ H T / = 0485.g1:/ K U / = 0485.g1:/ E V />` to the radius of the circle :g:`( E F G H K ) <0485.g1:( E F G H K )>`, let :g:`/ Q R / <0485.g1:/ Q R />`, :g:`/ R S / <0485.g1:/ R S />`, :g:`/ S T / <0485.g1:/ S T />`, :g:`/ T U / <0485.g1:/ T U />`, :g:`/ U Q / <0485.g1:/ U Q />`, :g:`/ Q L / <0485.g1:/ Q L />`, :g:`/ L R / <0485.g1:/ L R />`, :g:`/ R M / <0485.g1:/ R M />`, :g:`/ M S / <0485.g1:/ M S />`, :g:`/ S N / <0485.g1:/ S N />`, :g:`/ N T / <0485.g1:/ N T />`, :g:`/ T O / <0485.g1:/ T O />`, :g:`/ O U / <0485.g1:/ O U />`, :g:`/ U P / <0485.g1:/ U P />`, :g:`/ P Q / <0485.g1:/ P Q />` be joined.
+.. step:: construct
 
-Now, since each of the straight lines :g:`/ E Q / <0485.g1:/ E Q />`, :g:`/ K U / <0485.g1:/ K U />` is at right angles to the same plane,
+   Let it be cut at :g:`C <g1:C>` so that :g:`/ A C / <g1:/ A C />` is quadruple of :g:`/ C B / <g1:/ C B />`, let the semicircle :g:`( A D B ) <g1:( A D B )>` be described on :g:`/ A B / <g1:/ A B />`, let :g:`/ C D / <g1:/ C D />` be drawn from :g:`C <g1:C>` at right angles to :g:`/ A B / <g1:/ A B />`
 
-.. assertion:: [G.449] <G.449>
+.. step:: construct
 
-   therefore :g:`/ E Q / <0485.g1:/ E Q />` is parallel to :g:`/ K U / <0485.g1:/ K U />`.
+   **segment** :g:`/ D B / <g1:/ D B />`
 
-But it is also :eq:`equal <0485.g1:/ E Q / = 0485.g1:/ K U />` to it; and the straight lines joining those extremities of equal and parallel straight lines which are in the same direction are equal and parallel. :just:`[G.46] <G.46>`
+.. step:: construct
 
-.. assertion::
+   Let :g:`( E F G H K ) <g1:( E F G H K )>` be set out and let its radius be :eq:`equal <g1:/ E V / = g1:/ D B />` to :g:`/ D B / <g1:/ D B />`, let the :eq:`equilateral <g1:/ E F / = g1:/ F G / = g1:/ G H / = g1:/ H K / = g1:/ K E />` and equiangular pentagon :g:`< E F G H K > <g1:< E F G H K >>` be inscribed in :g:`( E F G H K ) <g1:( E F G H K )>`, let the circumferences :g:`( E F ) <g1:( E F )>`, :g:`( F G ) <g1:( F G )>`, :g:`( G H ) <g1:( G H )>`, :g:`( H K ) <g1:( H K )>`, :g:`( K E ) <g1:( K E )>` be bisected at :g:`L <g1:L>`, :g:`M <g1:M>`, :g:`N <g1:N>`, :g:`O <g1:O>`, :g:`P <g1:P>`
 
-   Therefore :g:`/ Q U / <0485.g1:/ Q U />` is :eq:`equal <0485.g1:/ Q U / = 0485.g1:/ E K />` and parallel to :g:`/ E K / <0485.g1:/ E K />`.
+.. step:: construct
 
-.. subclause::
+   **segment** :g:`/ L M / <g1:/ L M />`, :g:`/ M N / <g1:/ M N />`, :g:`/ N O / <g1:/ N O />`, :g:`/ O P / <g1:/ O P />`, :g:`/ P L / <g1:/ P L />`, :g:`/ E P / <g1:/ E P />`
 
-   But :g:`/ E K / <0485.g1:/ E K />` belongs to an equilateral pentagon;
+.. step:: assert
 
-.. assertion::
+   Therefore the pentagon :g:`< L M N O P > <g1:< L M N O P >>` is also :eq:`equilateral <g1:/ L M / = g1:/ M N / = g1:/ N O / = g1:/ O P / = g1:/ P L />`, and :g:`/ E P / <g1:/ E P />` belongs to a decagon.
 
-   therefore :g:`/ Q U / <0485.g1:/ Q U />` also belongs to the equilateral pentagon inscribed in the circle :g:`( E F G H K ) <0485.g1:( E F G H K )>`.
+.. step:: construct
 
-.. subclause::
+   Now from :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`K <g1:K>` let :g:`/ E Q / <g1:/ E Q />`, :g:`/ F R / <g1:/ F R />`, :g:`/ G S / <g1:/ G S />`, :g:`/ H T / <g1:/ H T />`, :g:`/ K U / <g1:/ K U />` be set up at right angles to the plane of the circle
 
-   For the same reason each of the straight lines :g:`/ Q R / <0485.g1:/ Q R />`, :g:`/ R S / <0485.g1:/ R S />`, :g:`/ S T / <0485.g1:/ S T />`, :g:`/ T U / <0485.g1:/ T U />` also belongs to the equilateral pentagon inscribed in the circle :g:`( E F G H K ) <0485.g1:( E F G H K )>`;
+.. step:: construct
 
-.. assertion::
+   **segment** them be :eq:`equal <g1:/ E Q / = g1:/ F R / = g1:/ G S / = g1:/ H T / = g1:/ K U / = g1:/ E V />` to the radius of :g:`( E F G H K ) <g1:( E F G H K )>`, let :g:`/ Q R / <g1:/ Q R />`, :g:`/ R S / <g1:/ R S />`, :g:`/ S T / <g1:/ S T />`, :g:`/ T U / <g1:/ T U />`, :g:`/ U Q / <g1:/ U Q />`, :g:`/ Q L / <g1:/ Q L />`, :g:`/ L R / <g1:/ L R />`, :g:`/ R M / <g1:/ R M />`, :g:`/ M S / <g1:/ M S />`, :g:`/ S N / <g1:/ S N />`, :g:`/ N T / <g1:/ N T />`, :g:`/ T O / <g1:/ T O />`, :g:`/ O U / <g1:/ O U />`, :g:`/ U P / <g1:/ U P />`, :g:`/ P Q / <g1:/ P Q />`
 
-   therefore the pentagon :g:`< Q R S T U > <0485.g1:< Q R S T U >>` is :eq:`equilateral <0485.g1:/ Q R / = 0485.g1:/ R S / = 0485.g1:/ S T / = 0485.g1:/ T U / = 0485.g1:/ U Q />`.
+.. step:: assert [G.449] <G.449>
 
-And, since :g:`/ Q E / <0485.g1:/ Q E />` belongs to a hexagon, and :g:`/ E P / <0485.g1:/ E P />` to a decagon, and the angle :g:`< Q E P ) <0485.g1:< Q E P )>` is right,
+   Since each of :g:`/ E Q / <g1:/ E Q />`, :g:`/ K U / <g1:/ K U />` is at right angles to the same plane → therefore :g:`/ E Q / <g1:/ E Q />` is parallel to :g:`/ K U / <g1:/ K U />`.
 
-.. assertion::
+.. step:: assert
 
-   therefore :g:`/ Q P / <0485.g1:/ Q P />` belongs to a pentagon;
+   It is also :eq:`equal <g1:/ E Q / = g1:/ K U />` to it
 
-for the square on the side of the pentagon is equal to the square on the side of the hexagon and the square on the side of the decagon inscribed in the same circle. :just:`[G.517] <G.517>`
+.. step:: assert [G.46] <G.46>
 
-.. subclause::
+   And the straight lines joining those extremities of equal and parallel straight lines which are in the same direction are equal and parallel.
 
-   For the same reason :g:`/ P U / <0485.g1:/ P U />` is also a side of a pentagon.
+.. step:: assert
 
-.. subclause::
+   Therefore :g:`/ Q U / <g1:/ Q U />` is :eq:`equal <g1:/ Q U / = g1:/ E K />` and parallel to :g:`/ E K / <g1:/ E K />`.
 
-   But :g:`/ Q U / <0485.g1:/ Q U />` also belongs to a pentagon;
+.. step:: assert
 
-.. assertion::
+   :g:`/ E K / <g1:/ E K />` belongs to an equilateral pentagon;
 
-   therefore the triangle :g:`< Q P U > <0485.g1:< Q P U >>` is :eq:`equilateral <0485.g1:/ P Q / = 0485.g1:/ U P / = 0485.g1:/ U Q />`.
+.. step:: assert
 
-.. subclause::
+   Therefore :g:`/ Q U / <g1:/ Q U />` also belongs to the equilateral pentagon inscribed in :g:`( E F G H K ) <g1:( E F G H K )>`.
 
-   For the same reason each of the triangles :g:`< Q L R > <0485.g1:< Q L R >>`, :g:`< R M S > <0485.g1:< R M S >>`, :g:`< S N T > <0485.g1:< S N T >>`, :g:`< T O U > <0485.g1:< T O U >>` is also :eq:`equilateral <0485.g1:/ Q L / = 0485.g1:/ L R / = 0485.g1:/ Q R / = 0485.g1:/ R M / = 0485.g1:/ M S / = 0485.g1:/ R S / = 0485.g1:/ S N / = 0485.g1:/ N T / = 0485.g1:/ S T / = 0485.g1:/ T O / = 0485.g1:/ O U / = 0485.g1:/ T U />`.
+.. step:: assert
 
-And, since each of the straight lines :g:`/ Q L / <0485.g1:/ Q L />`, :g:`/ Q P / <0485.g1:/ Q P />` was proved to belong to a pentagon, and :g:`/ L P / <0485.g1:/ L P />` also belongs to a pentagon,
+   For the same reason each of :g:`/ Q R / <g1:/ Q R />`, :g:`/ R S / <g1:/ R S />`, :g:`/ S T / <g1:/ S T />`, :g:`/ T U / <g1:/ T U />` also belongs to the equilateral pentagon inscribed in :g:`( E F G H K ) <g1:( E F G H K )>`;
 
-.. assertion::
+.. step:: assert
 
-   therefore the triangle :g:`< Q L P > <0485.g1:< Q L P >>` is :eq:`equilateral <0485.g1:/ Q L / = 0485.g1:/ P L / = 0485.g1:/ P Q />`.
+   Therefore the pentagon :g:`< Q R S T U > <g1:< Q R S T U >>` is :eq:`equilateral <g1:/ Q R / = g1:/ R S / = g1:/ S T / = g1:/ T U / = g1:/ U Q />`.
 
-.. subclause::
+.. step:: assert
 
-   For the same reason each of the triangles :g:`< L R M > <0485.g1:< L R M >>`, :g:`< M S N > <0485.g1:< M S N >>`, :g:`< N T O > <0485.g1:< N T O >>`, :g:`< O U P > <0485.g1:< O U P >>` is also :eq:`equilateral <0485.g1:/ L R / = 0485.g1:/ R M / = 0485.g1:/ L M / = 0485.g1:/ M S / = 0485.g1:/ S N / = 0485.g1:/ M N / = 0485.g1:/ N T / = 0485.g1:/ T O / = 0485.g1:/ N O / = 0485.g1:/ O U / = 0485.g1:/ U P / = 0485.g1:/ O P />`.
+   And, since :g:`/ Q E / <g1:/ Q E />` belongs to a hexagon, and :g:`/ E P / <g1:/ E P />` to a decagon, and :g:`< Q E P ) <g1:< Q E P )>` is right,
 
-Let the centre of the circle :g:`( E F G H K ) <0485.g1:( E F G H K )>`, the point :g:`V <0485.g1:V>`, be taken; from :g:`V <0485.g1:V>` let :g:`/ V Z / <0485.g1:/ V Z />` be set up at right angles to the plane of the circle, let it be produced in the other direction, as :g:`/ V X / <0485.g1:/ V X />`, let there be cut off :g:`/ V W / <0485.g1:/ V W />`, the side of a hexagon, and each of the straight lines :g:`/ V X / <0485.g1:/ V X />`, :g:`/ W Z / <0485.g1:/ W Z />`, being sides of a decagon, and let :g:`/ Q Z / <0485.g1:/ Q Z />`, :g:`/ Q W / <0485.g1:/ Q W />`, :g:`/ U Z / <0485.g1:/ U Z />`, :g:`/ E V / <0485.g1:/ E V />`, :g:`/ L V / <0485.g1:/ L V />`, :g:`/ L X / <0485.g1:/ L X />`, :g:`/ X M / <0485.g1:/ X M />` be joined.
+.. step:: assert
 
-Now, since each of the straight lines :g:`/ V W / <0485.g1:/ V W />`, :g:`/ Q E / <0485.g1:/ Q E />` is at right angles to the plane of the circle,
+   Therefore :g:`/ Q P / <g1:/ Q P />` belongs to a pentagon;
 
-.. assertion:: [G.449] <G.449>
+.. step:: assert [G.517] <G.517>
 
-   therefore :g:`/ V W / <0485.g1:/ V W />` is parallel to :g:`/ Q E / <0485.g1:/ Q E />`.
+   For the square on the side of the pentagon is equal to the square on the side of the hexagon and the square on the side of the decagon inscribed in the same circle.
 
-But they are also :eq:`equal <0485.g1:/ V W / = 0485.g1:/ Q E />`;
+.. step:: assert
 
-.. assertion:: [G.46] <G.46>
+   For the same reason :g:`/ P U / <g1:/ P U />` is also a side of a pentagon.
 
-   therefore :g:`/ E V / <0485.g1:/ E V />`, :g:`/ Q W / <0485.g1:/ Q W />` are also :eq:`equal <0485.g1:/ E V / = 0485.g1:/ Q W />` and parallel.
+.. step:: assert
 
-.. subclause::
+   :g:`/ Q U / <g1:/ Q U />` also belongs to a pentagon;
 
-   But :g:`/ E V / <0485.g1:/ E V />` belongs to a hexagon;
+.. step:: assert
 
-.. assertion::
+   Therefore :g:`< Q P U > <g1:< Q P U >>` is :eq:`equilateral <g1:/ P Q / = g1:/ U P / = g1:/ U Q />`.
 
-   therefore :g:`/ Q W / <0485.g1:/ Q W />` also belongs to a hexagon.
+.. step:: assert
 
-And, since :g:`/ Q W / <0485.g1:/ Q W />` belongs to a hexagon, and :g:`/ W Z / <0485.g1:/ W Z />` to a decagon, and the angle :g:`< Q W Z ) <0485.g1:< Q W Z )>` is right,
+   For the same reason each of :g:`< Q L R > <g1:< Q L R >>`, :g:`< R M S > <g1:< R M S >>`, :g:`< S N T > <g1:< S N T >>`, :g:`< T O U > <g1:< T O U >>` is also :eq:`equilateral <g1:/ Q L / = g1:/ L R / = g1:/ Q R / = g1:/ R M / = g1:/ M S / = g1:/ R S / = g1:/ S N / = g1:/ N T / = g1:/ S T / = g1:/ T O / = g1:/ O U / = g1:/ T U />`.
 
-.. assertion:: [G.517] <G.517>
+.. step:: assert
 
-   therefore :g:`/ Q Z / <0485.g1:/ Q Z />` belongs to a pentagon.
+   And, since each of :g:`/ Q L / <g1:/ Q L />`, :g:`/ Q P / <g1:/ Q P />` was proved to belong to a pentagon, and :g:`/ L P / <g1:/ L P />` also belongs to a pentagon,
 
-.. subclause::
+.. step:: assert
 
-   For the same reason :g:`/ U Z / <0485.g1:/ U Z />` also belongs to a pentagon, inasmuch as, if we join :g:`/ V K / <0485.g1:/ V K />`, :g:`/ W U / <0485.g1:/ W U />`, they will be :eq:`equal <0485.g1:/ V K / = 0485.g1:/ W U />` and opposite, and :g:`/ V K / <0485.g1:/ V K />`, being a radius, belongs to a hexagon; :just:`[G.133] <G.133>` therefore :g:`/ W U / <0485.g1:/ W U />` also belongs to a hexagon.
+   Therefore :g:`< Q L P > <g1:< Q L P >>` is :eq:`equilateral <g1:/ Q L / = g1:/ P L / = g1:/ P Q />`.
 
-.. subclause::
+.. step:: assert
 
-   But :g:`/ W Z / <0485.g1:/ W Z />` belongs to a decagon, and the angle :g:`< U W Z ) <0485.g1:< U W Z )>` is right;
+   For the same reason each of :g:`< L R M > <g1:< L R M >>`, :g:`< M S N > <g1:< M S N >>`, :g:`< N T O > <g1:< N T O >>`, :g:`< O U P > <g1:< O U P >>` is also :eq:`equilateral <g1:/ L R / = g1:/ R M / = g1:/ L M / = g1:/ M S / = g1:/ S N / = g1:/ M N / = g1:/ N T / = g1:/ T O / = g1:/ N O / = g1:/ O U / = g1:/ U P / = g1:/ O P />`.
 
-.. assertion:: [G.517] <G.517>
+.. step:: construct
 
-   therefore :g:`/ U Z / <0485.g1:/ U Z />` belongs to a pentagon.
+   Let the center of :g:`( E F G H K ) <g1:( E F G H K )>`, :g:`V <g1:V>`, be taken
 
-.. subclause::
+.. step:: construct
 
-   But :g:`/ Q U / <0485.g1:/ Q U />` also belongs to a pentagon;
+   From :g:`V <g1:V>` let :g:`/ V Z / <g1:/ V Z />` be set up at right angles to the plane of the circle, let it be produced in the other direction, as :g:`/ V X / <g1:/ V X />`, let there be cut off :g:`/ V W / <g1:/ V W />`, the side of a hexagon, and each of :g:`/ V X / <g1:/ V X />`, :g:`/ W Z / <g1:/ W Z />`, being sides of a decagon
 
-.. assertion::
+.. step:: construct
 
-   therefore the triangle :g:`< Q U Z > <0485.g1:< Q U Z >>` is :eq:`equilateral <0485.g1:/ Q Z / = 0485.g1:/ U Z / = 0485.g1:/ U Q />`.
+   **segment** :g:`/ Q Z / <g1:/ Q Z />`, :g:`/ Q W / <g1:/ Q W />`, :g:`/ U Z / <g1:/ U Z />`, :g:`/ E V / <g1:/ E V />`, :g:`/ L V / <g1:/ L V />`, :g:`/ L X / <g1:/ L X />`, :g:`/ X M / <g1:/ X M />`
 
-.. subclause::
+.. step:: assert [G.449] <G.449>
 
-   For the same reason each of the remaining triangles of which the straight lines :g:`/ Q R / <0485.g1:/ Q R />`, :g:`/ R S / <0485.g1:/ R S />`, :g:`/ S T / <0485.g1:/ S T />`, :g:`/ T U / <0485.g1:/ T U />` are the bases, and the point :g:`Z <0485.g1:Z>` the vertex, is also equilateral.
+   Since each of :g:`/ V W / <g1:/ V W />`, :g:`/ Q E / <g1:/ Q E />` is at right angles to the plane of the circle → therefore :g:`/ V W / <g1:/ V W />` is parallel to :g:`/ Q E / <g1:/ Q E />`.
 
-Again, since :g:`/ V L / <0485.g1:/ V L />` belongs to a hexagon, and :g:`/ V X / <0485.g1:/ V X />` to a decagon, and the angle :g:`< L V X ) <0485.g1:< L V X )>` is right,
+.. step:: assert
 
-.. assertion:: [G.517] <G.517>
+   They are also :eq:`equal <g1:/ V W / = g1:/ Q E />`
 
-   therefore :g:`/ L X / <0485.g1:/ L X />` belongs to a pentagon.
+.. step:: assert [G.46] <G.46>
 
-.. subclause::
+   Therefore :g:`/ E V / <g1:/ E V />`, :g:`/ Q W / <g1:/ Q W />` are also :eq:`equal <g1:/ E V / = g1:/ Q W />` and parallel.
 
-   For the same reason, if we join :g:`/ M V / <0485.g1:/ M V />`, which belongs to a hexagon, :g:`/ M X / <0485.g1:/ M X />` is also inferred to belong to a pentagon.
+.. step:: assert
 
-.. subclause::
+   :g:`/ E V / <g1:/ E V />` belongs to a hexagon;
 
-   But :g:`/ L M / <0485.g1:/ L M />` also belongs to a pentagon;
+.. step:: assert
 
-.. assertion::
+   Therefore :g:`/ Q W / <g1:/ Q W />` also belongs to a hexagon.
 
-   therefore the triangle :g:`< L M X > <0485.g1:< L M X >>` is :eq:`equilateral <0485.g1:/ L M / = 0485.g1:/ L X / = 0485.g1:/ X M />`.
+.. step:: assert
 
-.. assertion::
+   And, since :g:`/ Q W / <g1:/ Q W />` belongs to a hexagon, and :g:`/ W Z / <g1:/ W Z />` to a decagon, and :g:`< Q W Z ) <g1:< Q W Z )>` is right,
 
-   Similarly it can be proved that each of the remaining triangles of which :g:`/ M N / <0485.g1:/ M N />`, :g:`/ N O / <0485.g1:/ N O />`, :g:`/ O P / <0485.g1:/ O P />`, :g:`/ P L / <0485.g1:/ P L />` are the bases, and the point :g:`X <0485.g1:X>` the vertex, is also equilateral.
+.. step:: assert [G.517] <G.517>
 
-.. assertion::
+   Therefore :g:`/ Q Z / <g1:/ Q Z />` belongs to a pentagon.
+
+.. step:: assert [G.133] <G.133>
+
+   For the same reason :g:`/ U Z / <g1:/ U Z />` also belongs to a pentagon, inasmuch as, if we join :g:`/ V K / <g1:/ V K />`, :g:`/ W U / <g1:/ W U />`, they will be :eq:`equal <g1:/ V K / = g1:/ W U />` and opposite, and :g:`/ V K / <g1:/ V K />`, being a radius, belongs to a hexagon; therefore :g:`/ W U / <g1:/ W U />` also belongs to a hexagon.
+
+.. step:: assert
+
+   :g:`/ W Z / <g1:/ W Z />` belongs to a decagon, and :g:`< U W Z ) <g1:< U W Z )>` is right;
+
+.. step:: assert [G.517] <G.517>
+
+   Therefore :g:`/ U Z / <g1:/ U Z />` belongs to a pentagon.
+
+.. step:: assert
+
+   :g:`/ Q U / <g1:/ Q U />` also belongs to a pentagon;
+
+.. step:: assert
+
+   Therefore :g:`< Q U Z > <g1:< Q U Z >>` is :eq:`equilateral <g1:/ Q Z / = g1:/ U Z / = g1:/ U Q />`.
+
+.. step:: assert
+
+   For the same reason each of the remaining triangles of which :g:`/ Q R / <g1:/ Q R />`, :g:`/ R S / <g1:/ R S />`, :g:`/ S T / <g1:/ S T />`, :g:`/ T U / <g1:/ T U />` are the bases, and :g:`Z <g1:Z>` the vertex, is also equilateral.
+
+.. step:: assert [G.517] <G.517>
+
+   Since :g:`/ V L / <g1:/ V L />` belongs to a hexagon, and :g:`/ V X / <g1:/ V X />` to a decagon, and :g:`< L V X ) <g1:< L V X )>` is right → therefore :g:`/ L X / <g1:/ L X />` belongs to a pentagon.
+
+.. step:: assert
+
+   For the same reason, if we join :g:`/ M V / <g1:/ M V />`, which belongs to a hexagon, :g:`/ M X / <g1:/ M X />` is also inferred to belong to a pentagon.
+
+.. step:: assert
+
+   :g:`/ L M / <g1:/ L M />` also belongs to a pentagon;
+
+.. step:: assert
+
+   Therefore :g:`< L M X > <g1:< L M X >>` is :eq:`equilateral <g1:/ L M / = g1:/ L X / = g1:/ X M />`.
+
+.. step:: assert
+
+   Similarly it can be proved that each of the remaining triangles of which :g:`/ M N / <g1:/ M N />`, :g:`/ N O / <g1:/ N O />`, :g:`/ O P / <g1:/ O P />`, :g:`/ P L / <g1:/ P L />` are the bases, and :g:`X <g1:X>` the vertex, is also equilateral.
+
+.. step:: assert
 
    Therefore an icosahedron has been constructed which is contained by twenty equilateral triangles.
 
-It is next required to comprehend it in the given sphere, and to prove that the side of the icosahedron is the irrational straight line called minor.
+.. step:: assert
 
-For, since :g:`/ V W / <0485.g1:/ V W />` belongs to a hexagon, and :g:`/ W Z / <0485.g1:/ W Z />` to a decagon, therefore :g:`/ V Z / <0485.g1:/ V Z />` has been cut in extreme and mean ratio at :g:`W <0485.g1:W>`, and :g:`/ V W / <0485.g1:/ V W />` is its greater segment; :just:`[G.516] <G.516>`
+   It is next required to comprehend it in the given sphere, and to prove that the side of the icosahedron is the irrational straight line called minor.
 
-.. assertion::
+.. step:: assert [G.516] <G.516>
 
-   therefore, as :g:`/ Z V / <0485.g1:/ Z V />` is to :g:`/ V W / <0485.g1:/ V W />`, so is :g:`/ V W / <0485.g1:/ V W />` to :g:`/ W Z / <0485.g1:/ W Z />`.
+   Since :g:`/ V W / <g1:/ V W />` belongs to a hexagon, and :g:`/ W Z / <g1:/ W Z />` to a decagon, therefore :g:`/ V Z / <g1:/ V Z />` has been cut in extreme and mean ratio at :g:`W <g1:W>`, and :g:`/ V W / <g1:/ V W />` is its greater segment
 
-.. subclause::
+.. step:: assert
 
-   But :g:`/ V W / <0485.g1:/ V W />` is :eq:`equal <0485.g1:/ V W / = 0485.g1:/ E V /; 0485.g1:/ W Z / = 0485.g1:/ V X />` to :g:`/ V E / <0485.g1:/ V E />`, and :g:`/ W Z / <0485.g1:/ W Z />` to :g:`/ V X / <0485.g1:/ V X />`;
+   Therefore, as :g:`/ Z V / <g1:/ Z V />` is to :g:`/ V W / <g1:/ V W />`, so is :g:`/ V W / <g1:/ V W />` to :g:`/ W Z / <g1:/ W Z />`.
 
-.. assertion::
+.. step:: assert
 
-   therefore, as :g:`/ Z V / <0485.g1:/ Z V />` is to :g:`/ V E / <0485.g1:/ V E />`, so is :g:`/ E V / <0485.g1:/ E V />` to :g:`/ V X / <0485.g1:/ V X />`.
+   :g:`/ V W / <g1:/ V W />` is :eq:`equal <g1:/ V W / = g1:/ E V /; g1:/ W Z / = g1:/ V X />` to :g:`/ V E / <g1:/ V E />`, and :g:`/ W Z / <g1:/ W Z />` to :g:`/ V X / <g1:/ V X />`;
 
-And the angles :g:`< Z V E ) <0485.g1:< Z V E )>`, :g:`< E V X ) <0485.g1:< E V X )>` are :eq:`right <0485.g1:< Z V E ) = 0485.g1:< E V X )>`; therefore, if we join the straight line :g:`/ E Z / <0485.g1:/ E Z />`, the angle :g:`< X E Z ) <0485.g1:< X E Z )>` will be right because of the similarity of the triangles :g:`< X E Z > <0485.g1:< X E Z >>`, :g:`< V E Z > <0485.g1:< V E Z >>`.
+.. step:: assert
 
-.. subclause::
+   Therefore, as :g:`/ Z V / <g1:/ Z V />` is to :g:`/ V E / <g1:/ V E />`, so is :g:`/ E V / <g1:/ E V />` to :g:`/ V X / <g1:/ V X />`.
 
-   For the same reason, since, as :g:`/ Z V / <0485.g1:/ Z V />` is to :g:`/ V W / <0485.g1:/ V W />`, so is :g:`/ V W / <0485.g1:/ V W />` to :g:`/ W Z / <0485.g1:/ W Z />`, and :g:`/ Z V / <0485.g1:/ Z V />` is :eq:`equal <0485.g1:/ V Z / = 0485.g1:/ X W /; 0485.g1:/ V W / = 0485.g1:/ Q W />` to :g:`/ X W / <0485.g1:/ X W />`, and :g:`/ V W / <0485.g1:/ V W />` to :g:`/ W Q / <0485.g1:/ W Q />`,
+.. step:: assert
 
-.. assertion::
+   :g:`< Z V E ) <g1:< Z V E )>`, :g:`< E V X ) <g1:< E V X )>` are :eq:`right <g1:< Z V E ) = g1:< E V X )>`
 
-   therefore, as :g:`/ X W / <0485.g1:/ X W />` is to :g:`/ W Q / <0485.g1:/ W Q />`, so is :g:`/ Q W / <0485.g1:/ Q W />` to :g:`/ W Z / <0485.g1:/ W Z />`.
+.. step:: assert
 
-.. subclause::
+   Therefore, if we join :g:`/ E Z / <g1:/ E Z />`, :g:`< X E Z ) <g1:< X E Z )>` will be right because of the similarity of :g:`< X E Z > <g1:< X E Z >>`, :g:`< V E Z > <g1:< V E Z >>`.
 
-   And for this reason again, if we join :g:`/ Q X / <0485.g1:/ Q X />`, the angle at :g:`Q <0485.g1:Q>` will be right; :just:`[G.171] <G.171>`
+.. step:: assert
 
-.. assertion::
+   For the same reason, since, as :g:`/ Z V / <g1:/ Z V />` is to :g:`/ V W / <g1:/ V W />`, so is :g:`/ V W / <g1:/ V W />` to :g:`/ W Z / <g1:/ W Z />`, and :g:`/ Z V / <g1:/ Z V />` is :eq:`equal <g1:/ V Z / = g1:/ X W /; g1:/ V W / = g1:/ Q W />` to :g:`/ X W / <g1:/ X W />`, and :g:`/ V W / <g1:/ V W />` to :g:`/ W Q / <g1:/ W Q />`,
 
-   therefore the semicircle described on :g:`/ X Z / <0485.g1:/ X Z />` will also pass through :g:`Q <0485.g1:Q>`. :just:`[G.110] <G.110>`
+.. step:: assert
 
-And if, :g:`/ X Z / <0485.g1:/ X Z />` remaining fixed, the semicircle be carried round and restored to the same position from which it began to be moved, it will also pass through :g:`Q <0485.g1:Q>` and the remaining angular points of the icosahedron, and the icosahedron will have been comprehended in a sphere.
+   Therefore, as :g:`/ X W / <g1:/ X W />` is to :g:`/ W Q / <g1:/ W Q />`, so is :g:`/ Q W / <g1:/ Q W />` to :g:`/ W Z / <g1:/ W Z />`.
 
-.. assertion::
+.. step:: assert [G.171] <G.171>
+
+   For this reason again, if we join :g:`/ Q X / <g1:/ Q X />`, the angle at :g:`Q <g1:Q>` will be right.
+
+.. step:: assert [G.110] <G.110>
+
+   Therefore the semicircle described on :g:`/ X Z / <g1:/ X Z />` will also pass through :g:`Q <g1:Q>`.
+
+.. step:: assert
+
+   If, :g:`/ X Z / <g1:/ X Z />` remaining fixed, the semicircle be carried round and restored to the same position from which it began to be moved, it will also pass through :g:`Q <g1:Q>` and the remaining angular points of the icosahedron, and the icosahedron will have been comprehended in a sphere.
+
+.. step:: assert
 
    I say next that it is also comprehended in the given sphere.
 
-For let :g:`/ V W / <0485.g1:/ V W />` be bisected at :g:`A' <0485.g1:A'>`.
+.. step:: construct
 
-.. subclause::
+   For let :g:`/ V W / <g1:/ V W />` be bisected at :g:`A' <g1:A'>`.
 
-   Then, since the straight line :g:`/ V Z / <0485.g1:/ V Z />` has been cut in extreme and mean ratio at :g:`W <0485.g1:W>`, and :g:`/ Z W / <0485.g1:/ Z W />` is its lesser segment,
+.. step:: assert
 
-.. assertion::
+   Since :g:`/ V Z / <g1:/ V Z />` has been cut in extreme and mean ratio at :g:`W <g1:W>`, and :g:`/ Z W / <g1:/ Z W />` is its lesser segment,
 
-   therefore the square on :g:`/ Z W / <0485.g1:/ Z W />` added to the half of the greater segment, that is :g:`/ W A' / <0485.g1:/ W A' />`, is five times the square on the half of the greater segment; :just:`[G.510] <G.510>` therefore the square on :g:`/ Z A' / <0485.g1:/ Z A' />` is five times the square on :g:`/ A' W / <0485.g1:/ A' W />`.
+.. step:: assert [G.510] <G.510>
 
-.. subclause::
+   Therefore the square on :g:`/ Z W / <g1:/ Z W />` added to the half of the greater segment, that is :g:`/ W A' / <g1:/ W A' />`, is five times the square on the half of the greater segment; therefore the square on :g:`/ Z A' / <g1:/ Z A' />` is five times the square on :g:`/ A' W / <g1:/ A' W />`.
 
-   And :g:`/ Z X / <0485.g1:/ Z X />` is double of :g:`/ Z A' / <0485.g1:/ Z A' />`, and :g:`/ V W / <0485.g1:/ V W />` double of :g:`/ A' W / <0485.g1:/ A' W />`;
+.. step:: assert
 
-.. assertion::
+   :g:`/ Z X / <g1:/ Z X />` is double of :g:`/ Z A' / <g1:/ Z A' />`, and :g:`/ V W / <g1:/ V W />` double of :g:`/ A' W / <g1:/ A' W />`;
 
-   therefore the square on :g:`/ Z X / <0485.g1:/ Z X />` is five times the square on :g:`/ W V / <0485.g1:/ W V />`.
+.. step:: assert
 
-.. subclause::
+   Therefore the square on :g:`/ Z X / <g1:/ Z X />` is five times the square on :g:`/ W V / <g1:/ W V />`.
 
-   And, since :g:`/ A C / <0485.g1:/ A C />` is quadruple of :g:`/ C B / <0485.g1:/ C B />`,
+.. step:: assert
 
-.. assertion::
+   And, since :g:`/ A C / <g1:/ A C />` is quadruple of :g:`/ C B / <g1:/ C B />`,
 
-   therefore :g:`/ A B / <0485.g1:/ A B />` is five times :g:`/ B C / <0485.g1:/ B C />`.
+.. step:: assert
 
-.. subclause::
+   Therefore :g:`/ A B / <g1:/ A B />` is five times :g:`/ B C / <g1:/ B C />`.
 
-   But, as :g:`/ A B / <0485.g1:/ A B />` is to :g:`/ B C / <0485.g1:/ B C />`, so is the square on :g:`/ A B / <0485.g1:/ A B />` to the square on :g:`/ B D / <0485.g1:/ B D />`; :just:`[G.171, G.182] <G.171, G.182>`
+.. step:: assert [G.171, G.182] <G.171, G.182>
 
-.. assertion::
+   But, as :g:`/ A B / <g1:/ A B />` is to :g:`/ B C / <g1:/ B C />`, so is the square on :g:`/ A B / <g1:/ A B />` to the square on :g:`/ B D / <g1:/ B D />`.
 
-   therefore the square on :g:`/ A B / <0485.g1:/ A B />` is five times the square on :g:`/ B D / <0485.g1:/ B D />`.
+.. step:: assert
 
-But the square on :g:`/ Z X / <0485.g1:/ Z X />` was also proved to be five times the square on :g:`/ V W / <0485.g1:/ V W />`.
+   Therefore the square on :g:`/ A B / <g1:/ A B />` is five times the square on :g:`/ B D / <g1:/ B D />`.
 
-.. subclause::
+.. step:: assert
 
-   And :g:`/ D B / <0485.g1:/ D B />` is :eq:`equal <0485.g1:/ D B / = 0485.g1:/ V W />` to :g:`/ V W / <0485.g1:/ V W />`, for each of them is :eq:`equal <0485.g1:/ D B / = 0485.g1:/ V W / = 0485.g1:/ E V />` to the radius of the circle :g:`( E F G H K ) <0485.g1:( E F G H K )>`;
+   The square on :g:`/ Z X / <g1:/ Z X />` was also proved to be five times the square on :g:`/ V W / <g1:/ V W />`.
 
-.. assertion::
+.. step:: assert
 
-   therefore :g:`/ A B / <0485.g1:/ A B />` is also :eq:`equal <0485.g1:/ A B / = 0485.g1:/ X Z />` to :g:`/ X Z / <0485.g1:/ X Z />`.
+   :g:`/ D B / <g1:/ D B />` is :eq:`equal <g1:/ D B / = g1:/ V W />` to :g:`/ V W / <g1:/ V W />`, for each of them is :eq:`equal <g1:/ D B / = g1:/ V W / = g1:/ E V />` to the radius of :g:`( E F G H K ) <g1:( E F G H K )>`;
 
-.. subclause::
+.. step:: assert
 
-   And :g:`/ A B / <0485.g1:/ A B />` is the diameter of the given sphere;
+   Therefore :g:`/ A B / <g1:/ A B />` is also :eq:`equal <g1:/ A B / = g1:/ X Z />` to :g:`/ X Z / <g1:/ X Z />`.
 
-.. assertion::
+.. step:: assert
 
-   therefore :g:`/ X Z / <0485.g1:/ X Z />` is also :eq:`equal <0485.g1:/ X Z / = 0485.g1:/ A B />` to the diameter of the given sphere.
+   :g:`/ A B / <g1:/ A B />` is the diameter of the given sphere;
 
-Therefore the icosahedron has been comprehended in the given sphere
+.. step:: assert
 
-.. assertion::
+   Therefore :g:`/ X Z / <g1:/ X Z />` is also :eq:`equal <g1:/ X Z / = g1:/ A B />` to the diameter of the given sphere.
+
+.. step:: assert
+
+   Therefore the icosahedron has been comprehended in the given sphere
+
+.. step:: assert
 
    I say next that the side of the icosahedron is the irrational straight line called minor.
 
-.. subclause::
+.. step:: assert
 
-   For, since the diameter of the sphere is rational, and the square on it is five times the square on the radius of the circle :g:`( E F G H K ) <0485.g1:( E F G H K )>`,
+   Since the diameter of the sphere is rational, and the square on it is five times the square on the radius of :g:`( E F G H K ) <g1:( E F G H K )>`,
 
-.. assertion::
+.. step:: assert
 
-   therefore the radius of the circle :g:`( E F G H K ) <0485.g1:( E F G H K )>` is also rational; hence its diameter is also rational.
+   Therefore the radius of :g:`( E F G H K ) <g1:( E F G H K )>` is also rational; hence its diameter is also rational.
 
-.. subclause::
+.. step:: assert [G.518] <G.518>
 
-   But, if an equilateral pentagon be inscribed in a circle which has its diameter rational, the side of the pentagon is the irrational straight line called minor. :just:`[G.518] <G.518>`
+   But, if an equilateral pentagon be inscribed in a circle which has its diameter rational, the side of the pentagon is the irrational straight line called minor.
 
-.. subclause::
+.. step:: assert
 
-   And the side of the pentagon :g:`< E F G H K > <0485.g1:< E F G H K >>` is the side of the icosahedron.
+   The side of the pentagon :g:`< E F G H K > <g1:< E F G H K >>` is the side of the icosahedron.
 
-.. assertion::
+.. step:: assert
 
    Therefore the side of the icosahedron is the irrational straight line called minor.
 
-**Porism.** From this it is manifest that the square on the diameter of the sphere is five times the square on the radius of the circle from which the icosahedron has been described, and that the diameter of the sphere is composed of the side of the hexagon and two of the sides of the decagon inscribed in the same circle.
+.. step:: conclude
 
-.. qed::
-
-   Q. E. D.
+   **Porism.** From this it is manifest that the square on the diameter of the sphere is five times the square on the radius of the circle from which the icosahedron has been described, and that the diameter of the sphere is composed of the side of the hexagon and two of the sides of the decagon inscribed in the same circle.
 
 Dependency Graph
 ----------------
@@ -309,196 +369,196 @@ Dependency Graph
      node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11, color="#d6d3cd", fontcolor="#ffffff"];
      edge [color="#8c857b", fontcolor="#8c857b", arrowsize=0.75];
      rankdir="TB";
-     "G.1" [label="G.1", tooltip="G.1 (I.cn.1): Things which are equal to the same thing are also equal to one another.", fillcolor="#442222", URL="../G.1/index.html", target="_top"];
-     "G.2" [label="G.2", tooltip="G.2 (I.def.15): A circle is a plane figure contained by one line such that all the straight lines falling upon it from one point among those lying within the figure are equal to one another ;", fillcolor="#224422", URL="../G.2/index.html", target="_top"];
-     "G.3" [label="G.3", tooltip="G.3 (I.post.1): To draw a straight line from any point to any point.", fillcolor="#444422", URL="../G.3/index.html", target="_top"];
-     "G.4" [label="G.4", tooltip="G.4 (I.post.3): To describe a circle with any centre and distance.", fillcolor="#444422", URL="../G.4/index.html", target="_top"];
-     "G.5" [label="G.5", tooltip="G.5 (I.1): On a given finite straight line to construct an equilateral triangle.", fillcolor="#222244", URL="../G.5/index.html", target="_top"];
-     "G.6" [label="G.6", tooltip="G.6 (I.cn.3): If equals be subtracted from equals, the remainders are equal.", fillcolor="#442222", URL="../G.6/index.html", target="_top"];
-     "G.7" [label="G.7", tooltip="G.7 (I.post.2): To produce a finite straight line continuously in a straight line.", fillcolor="#444422", URL="../G.7/index.html", target="_top"];
-     "G.8" [label="G.8", tooltip="G.8 (I.2): To place at a given point (as an extremity) a straight line equal to a given straight line.", fillcolor="#222244", URL="../G.8/index.html", target="_top"];
-     "G.9" [label="G.9", tooltip="G.9 (I.3): Given two unequal straight lines, to cut off from the greater a straight line equal to the less.", fillcolor="#222244", URL="../G.9/index.html", target="_top"];
-     "G.10" [label="G.10", tooltip="G.10 (I.cn.4): [7] 4. Things which coincide with one another are equal to one another.", fillcolor="#442222", URL="../G.10/index.html", target="_top"];
-     "G.11" [label="G.11", tooltip="G.11 (I.4): If two triangles have the two sides equal to two sides respectively, and have the angles contained by the equal straight lines equal, they will also have the base equal to the base...", fillcolor="#222244", URL="../G.11/index.html", target="_top"];
-     "G.12" [label="G.12", tooltip="G.12 (I.5): In isosceles triangles the angles at the base are equal to one another, and, if the equal straight lines be produced further, the angles under the base will be equal to one another...", fillcolor="#222244", URL="../G.12/index.html", target="_top"];
-     "G.13" [label="G.13", tooltip="G.13 (I.6): If in a triangle two angles be equal to one another, the sides which subtend the equal angles will also be equal to one another.", fillcolor="#222244", URL="../G.13/index.html", target="_top"];
-     "G.14" [label="G.14", tooltip="G.14 (I.7): Given two straight lines constructed on a straight line (from its extremities) and meeting in a point, there cannot be constructed on the same straight line (from its extremities),...", fillcolor="#222244", URL="../G.14/index.html", target="_top"];
-     "G.15" [label="G.15", tooltip="G.15 (I.8): If two triangles have the two sides equal to two sides respectively, and have also the base equal to the base, they will also have the angles equal which are contained by the equal...", fillcolor="#222244", URL="../G.15/index.html", target="_top"];
-     "G.16" [label="G.16", tooltip="G.16 (I.9): To bisect a given rectilineal angle.", fillcolor="#222244", URL="../G.16/index.html", target="_top"];
-     "G.17" [label="G.17", tooltip="G.17 (I.10): To bisect a given finite straight line.", fillcolor="#222244", URL="../G.17/index.html", target="_top"];
-     "G.18" [label="G.18", tooltip="G.18 (I.def.10): When a straight line set up on a straight line makes the adjacent angles equal to one another, each of the equal angles is right, and the straight line standing on the other is cal...", fillcolor="#224422", URL="../G.18/index.html", target="_top"];
-     "G.19" [label="G.19", tooltip="G.19 (I.11): To draw a straight line at right angles to a given straight line from a given point on it.", fillcolor="#222244", URL="../G.19/index.html", target="_top"];
-     "G.21" [label="G.21", tooltip="G.21 (I.cn.2): If equals be added to equals, the wholes are equal.", fillcolor="#442222", URL="../G.21/index.html", target="_top"];
-     "G.22" [label="G.22", tooltip="G.22 (I.13): If a straight line set up on a straight line make angles, it will make either two right angles or angles equal to two right angles.", fillcolor="#222244", URL="../G.22/index.html", target="_top"];
-     "G.23" [label="G.23", tooltip="G.23 (I.post.4): That all right angles are equal to one another.", fillcolor="#444422", URL="../G.23/index.html", target="_top"];
-     "G.24" [label="G.24", tooltip="G.24 (I.14): If with any straight line, and at a point on it, two straight lines not lying on the same side make the adjacent angles equal to two right angles, the two straight lines will be in...", fillcolor="#222244", URL="../G.24/index.html", target="_top"];
-     "G.25" [label="G.25", tooltip="G.25 (I.15): If two straight lines cut one another, they make the vertical angles equal to one another.", fillcolor="#222244", URL="../G.25/index.html", target="_top"];
-     "G.26" [label="G.26", tooltip="G.26 (I.cn.5): [8] 5. The whole is greater than the part.", fillcolor="#442222", URL="../G.26/index.html", target="_top"];
-     "G.27" [label="G.27", tooltip="G.27 (I.16): In any triangle, if one of the sides be produced, the exterior angle is greater than either of the interior and opposite angles.", fillcolor="#222244", URL="../G.27/index.html", target="_top"];
-     "G.28" [label="G.28", tooltip="G.28 (I.17): In any triangle two angles taken together in any manner are less than two right angles.", fillcolor="#222244", URL="../G.28/index.html", target="_top"];
-     "G.29" [label="G.29", tooltip="G.29 (I.18): In any triangle the greater side subtends the greater angle.", fillcolor="#222244", URL="../G.29/index.html", target="_top"];
-     "G.30" [label="G.30", tooltip="G.30 (I.19): In any triangle the greater angle is subtended by the greater side.", fillcolor="#222244", URL="../G.30/index.html", target="_top"];
-     "G.31" [label="G.31", tooltip="G.31 (I.20): In any triangle two sides taken together in any manner are greater than the remaining one.", fillcolor="#222244", URL="../G.31/index.html", target="_top"];
-     "G.33" [label="G.33", tooltip="G.33 (I.22): Out of three straight lines, which are equal to three given straight lines, to construct a triangle: thus it is necessary that two of the straight lines taken together in any manne...", fillcolor="#222244", URL="../G.33/index.html", target="_top"];
-     "G.34" [label="G.34", tooltip="G.34 (I.23): On a given straight line and at a point on it to construct a rectilineal angle equal to a given rectilineal angle.", fillcolor="#222244", URL="../G.34/index.html", target="_top"];
-     "G.37" [label="G.37", tooltip="G.37 (I.26): If two triangles have the two angles equal to two angles respectively, and one side equal to one side, namely, either the side adjoining the equal angles, or that subtending one of...", fillcolor="#222244", URL="../G.37/index.html", target="_top"];
-     "G.38" [label="G.38", tooltip="G.38 (I.def.23): Parallel straight lines are straight lines which, being in the same plane and being produced indefinitely in both directions, do not meet one another in either direction.", fillcolor="#224422", URL="../G.38/index.html", target="_top"];
-     "G.39" [label="G.39", tooltip="G.39 (I.27): If a straight line falling on two straight lines make the alternate angles equal to one another, the straight lines will be parallel to one another.", fillcolor="#222244", URL="../G.39/index.html", target="_top"];
-     "G.40" [label="G.40", tooltip="G.40 (I.28): If a straight line falling on two straight lines make the exterior angle equal to the interior and opposite angle on the same side, or the interior angles on the same side equal to...", fillcolor="#222244", URL="../G.40/index.html", target="_top"];
-     "G.41" [label="G.41", tooltip="G.41 (I.post.5): That, if a straight line falling on two straight lines make the interior angles on the same side less than two right angles, the two straight lines, if produced indefinitely, meet ...", fillcolor="#444422", URL="../G.41/index.html", target="_top"];
-     "G.42" [label="G.42", tooltip="G.42 (I.29): A straight line falling on parallel straight lines makes the alternate angles equal to one another, the exterior angle equal to the interior and opposite angle, and the interior an...", fillcolor="#222244", URL="../G.42/index.html", target="_top"];
-     "G.43" [label="G.43", tooltip="G.43 (I.30): Straight lines parallel to the same straight line are also parallel to one another.", fillcolor="#222244", URL="../G.43/index.html", target="_top"];
-     "G.44" [label="G.44", tooltip="G.44 (I.31): Through a given point to draw a straight line parallel to a given straight line.", fillcolor="#222244", URL="../G.44/index.html", target="_top"];
-     "G.45" [label="G.45", tooltip="G.45 (I.32): In any triangle, if one of the sides be produced, the exterior angle is equal to the two interior and opposite angles, and the three interior angles of the triangle are equal to tw...", fillcolor="#222244", URL="../G.45/index.html", target="_top"];
-     "G.46" [label="G.46", tooltip="G.46 (I.33): The straight lines joining equal and parallel straight lines (at the extremities which are) in the same directions (respectively) are themselves also equal and parallel.", fillcolor="#222244", URL="../G.46/index.html", target="_top"];
-     "G.47" [label="G.47", tooltip="G.47 (I.34): In parallelogrammic areas the opposite sides and angles are equal to one another, and the diameter bisects the areas.", fillcolor="#222244", URL="../G.47/index.html", target="_top"];
-     "G.48" [label="G.48", tooltip="G.48 (I.35): Parallelograms which are on the same base and in the same parallels are equal to one another.", fillcolor="#222244", URL="../G.48/index.html", target="_top"];
-     "G.49" [label="G.49", tooltip="G.49 (I.36): Parallelograms which are on equal bases and in the same parallels are equal to one another.", fillcolor="#222244", URL="../G.49/index.html", target="_top"];
-     "G.50" [label="G.50", tooltip="G.50 (I.37): Triangles which are on the same base and in the same parallels are equal to one another.", fillcolor="#222244", URL="../G.50/index.html", target="_top"];
-     "G.51" [label="G.51", tooltip="G.51 (I.38): Triangles which are on equal bases and in the same parallels are equal to one another.", fillcolor="#222244", URL="../G.51/index.html", target="_top"];
-     "G.52" [label="G.52", tooltip="G.52 (I.39): Equal triangles which are on the same base and on the same side are also in the same parallels.", fillcolor="#222244", URL="../G.52/index.html", target="_top"];
-     "G.54" [label="G.54", tooltip="G.54 (I.41): If a parallelogram have the same base with a triangle and be in the same parallels, the parallelogram is double of the triangle.", fillcolor="#222244", URL="../G.54/index.html", target="_top"];
-     "G.55" [label="G.55", tooltip="G.55 (I.42): To construct, in a given rectilineal angle, a parallelogram equal to a given triangle.", fillcolor="#222244", URL="../G.55/index.html", target="_top"];
-     "G.56" [label="G.56", tooltip="G.56 (I.43): In any parallelogram the complements of the parallelograms about the diameter are equal to one another.", fillcolor="#222244", URL="../G.56/index.html", target="_top"];
-     "G.57" [label="G.57", tooltip="G.57 (I.44): To a given straight line to apply, in a given rectilineal angle, a parallelogram equal to a given triangle.", fillcolor="#222244", URL="../G.57/index.html", target="_top"];
-     "G.58" [label="G.58", tooltip="G.58 (I.45): To construct, in a given rectilineal angle, a parallelogram equal to a given rectilineal figure.", fillcolor="#222244", URL="../G.58/index.html", target="_top"];
-     "G.59" [label="G.59", tooltip="G.59 (I.46): On a given straight line to describe a square.", fillcolor="#222244", URL="../G.59/index.html", target="_top"];
-     "G.60" [label="G.60", tooltip="G.60 (I.47): In right-angled triangles the square on the side subtending the right angle is equal to the squares on the sides containing the right angle.", fillcolor="#222244", URL="../G.60/index.html", target="_top"];
+     "G.1" [label="G.1", tooltip="G.1 (I.cn.1): Things equal to the same thing are equal to one another.", fillcolor="#442222", URL="../G.1/index.html", target="_top"];
+     "G.2" [label="G.2", tooltip="G.2 (I.def.15): A circle is a plane figure contained by one line such that all segments falling upon it from its center are equal.", fillcolor="#224422", URL="../G.2/index.html", target="_top"];
+     "G.3" [label="G.3", tooltip="G.3 (I.post.1): Construct a segment between any two points.", fillcolor="#444422", URL="../G.3/index.html", target="_top"];
+     "G.4" [label="G.4", tooltip="G.4 (I.post.3): Construct a circle with any center and radius.", fillcolor="#444422", URL="../G.4/index.html", target="_top"];
+     "G.5" [label="G.5", tooltip="G.5 (I.1): Construct an equilateral triangle on a given finite segment.", fillcolor="#222244", URL="../G.5/index.html", target="_top"];
+     "G.6" [label="G.6", tooltip="G.6 (I.cn.3): If equals are subtracted from equals, the remainders are equal.", fillcolor="#442222", URL="../G.6/index.html", target="_top"];
+     "G.7" [label="G.7", tooltip="G.7 (I.post.2): Extend a finite segment continuously in a straight line.", fillcolor="#444422", URL="../G.7/index.html", target="_top"];
+     "G.8" [label="G.8", tooltip="G.8 (I.2): Construct at a given point a segment equal to a given segment.", fillcolor="#222244", URL="../G.8/index.html", target="_top"];
+     "G.9" [label="G.9", tooltip="G.9 (I.3): Cut off from the greater of two unequal segments a segment equal to the less.", fillcolor="#222244", URL="../G.9/index.html", target="_top"];
+     "G.10" [label="G.10", tooltip="G.10 (I.cn.4): Things that coincide with one another are equal.", fillcolor="#442222", URL="../G.10/index.html", target="_top"];
+     "G.11" [label="G.11", tooltip="G.11 (I.4): Triangles with two sides and the included angle equal are congruent (SAS).", fillcolor="#222244", URL="../G.11/index.html", target="_top"];
+     "G.12" [label="G.12", tooltip="G.12 (I.5): In an isosceles triangle, the angles at the base are equal, and if the equal sides are extended, the angles under the base are equal.", fillcolor="#222244", URL="../G.12/index.html", target="_top"];
+     "G.13" [label="G.13", tooltip="G.13 (I.6): If two angles of a triangle are equal, the sides subtending the equal angles are also equal.", fillcolor="#222244", URL="../G.13/index.html", target="_top"];
+     "G.14" [label="G.14", tooltip="G.14 (I.7): On the same segment and on the same side, there cannot be constructed two distinct triangles with both pairs of conterminous sides equal.", fillcolor="#222244", URL="../G.14/index.html", target="_top"];
+     "G.15" [label="G.15", tooltip="G.15 (I.8): Triangles with all three corresponding sides equal have their corresponding angles equal (SSS).", fillcolor="#222244", URL="../G.15/index.html", target="_top"];
+     "G.16" [label="G.16", tooltip="G.16 (I.9): Bisect a given angle.", fillcolor="#222244", URL="../G.16/index.html", target="_top"];
+     "G.17" [label="G.17", tooltip="G.17 (I.10): Bisect a given finite segment.", fillcolor="#222244", URL="../G.17/index.html", target="_top"];
+     "G.18" [label="G.18", tooltip="G.18 (I.def.10): When a straight line standing on a straight line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing line is perpendicular to that on which...", fillcolor="#224422", URL="../G.18/index.html", target="_top"];
+     "G.19" [label="G.19", tooltip="G.19 (I.11): Construct a line at right angles to a given line from a given point on it.", fillcolor="#222244", URL="../G.19/index.html", target="_top"];
+     "G.21" [label="G.21", tooltip="G.21 (I.cn.2): If equals are added to equals, the wholes are equal.", fillcolor="#442222", URL="../G.21/index.html", target="_top"];
+     "G.22" [label="G.22", tooltip="G.22 (I.13): A ray standing on a line makes either two right angles or adjacent angles summing to two right angles.", fillcolor="#222244", URL="../G.22/index.html", target="_top"];
+     "G.23" [label="G.23", tooltip="G.23 (I.post.4): All right angles are equal.", fillcolor="#444422", URL="../G.23/index.html", target="_top"];
+     "G.24" [label="G.24", tooltip="G.24 (I.14): If two rays at a point on a line on opposite sides make adjacent angles summing to two right angles, the two rays are collinear.", fillcolor="#222244", URL="../G.24/index.html", target="_top"];
+     "G.25" [label="G.25", tooltip="G.25 (I.15): Intersecting lines make their vertical angles equal.", fillcolor="#222244", URL="../G.25/index.html", target="_top"];
+     "G.26" [label="G.26", tooltip="G.26 (I.cn.5): The whole is greater than the part.", fillcolor="#442222", URL="../G.26/index.html", target="_top"];
+     "G.27" [label="G.27", tooltip="G.27 (I.16): In any triangle, if one side is extended, the exterior angle is greater than either opposite interior angle.", fillcolor="#222244", URL="../G.27/index.html", target="_top"];
+     "G.28" [label="G.28", tooltip="G.28 (I.17): In any triangle, the sum of any two angles is less than two right angles.", fillcolor="#222244", URL="../G.28/index.html", target="_top"];
+     "G.29" [label="G.29", tooltip="G.29 (I.18): In any triangle, the greater side subtends the greater angle.", fillcolor="#222244", URL="../G.29/index.html", target="_top"];
+     "G.30" [label="G.30", tooltip="G.30 (I.19): In any triangle, the greater angle is subtended by the greater side.", fillcolor="#222244", URL="../G.30/index.html", target="_top"];
+     "G.31" [label="G.31", tooltip="G.31 (I.20): In any triangle, the sum of any two sides is greater than the remaining side.", fillcolor="#222244", URL="../G.31/index.html", target="_top"];
+     "G.33" [label="G.33", tooltip="G.33 (I.22): Construct a triangle from three segments equal to three given segments satisfying the triangle inequality.", fillcolor="#222244", URL="../G.33/index.html", target="_top"];
+     "G.34" [label="G.34", tooltip="G.34 (I.23): Construct on a given line at a given point an angle equal to a given angle.", fillcolor="#222244", URL="../G.34/index.html", target="_top"];
+     "G.37" [label="G.37", tooltip="G.37 (I.26): Triangles with two angles and one corresponding side equal are congruent (ASA / AAS).", fillcolor="#222244", URL="../G.37/index.html", target="_top"];
+     "G.38" [label="G.38", tooltip="G.38 (I.def.23): Parallel lines are straight lines in the same plane which, produced indefinitely in both directions, do not meet.", fillcolor="#224422", URL="../G.38/index.html", target="_top"];
+     "G.39" [label="G.39", tooltip="G.39 (I.27): If a transversal cutting two lines makes the alternate interior angles equal, the lines are parallel.", fillcolor="#222244", URL="../G.39/index.html", target="_top"];
+     "G.40" [label="G.40", tooltip="G.40 (I.28): If a transversal cutting two lines makes the exterior angle equal to the opposite interior angle, or interior angles on the same side supplementary, the lines are parallel.", fillcolor="#222244", URL="../G.40/index.html", target="_top"];
+     "G.41" [label="G.41", tooltip="G.41 (I.post.5): Two lines intersected by a transversal with interior angles on one side summing to less than two right angles meet on that side.", fillcolor="#444422", URL="../G.41/index.html", target="_top"];
+     "G.42" [label="G.42", tooltip="G.42 (I.29): A transversal cutting parallel lines makes alternate interior angles equal, exterior and opposite interior angles equal, and same-side interior angles supplementary.", fillcolor="#222244", URL="../G.42/index.html", target="_top"];
+     "G.43" [label="G.43", tooltip="G.43 (I.30): Lines parallel to the same line are parallel to one another.", fillcolor="#222244", URL="../G.43/index.html", target="_top"];
+     "G.44" [label="G.44", tooltip="G.44 (I.31): Construct through a given point a line parallel to a given line.", fillcolor="#222244", URL="../G.44/index.html", target="_top"];
+     "G.45" [label="G.45", tooltip="G.45 (I.32): In any triangle, an exterior angle equals the sum of the two opposite interior angles, and the three interior angles sum to two right angles.", fillcolor="#222244", URL="../G.45/index.html", target="_top"];
+     "G.46" [label="G.46", tooltip="G.46 (I.33): Segments joining the endpoints of equal and parallel segments in the same directions are themselves equal and parallel.", fillcolor="#222244", URL="../G.46/index.html", target="_top"];
+     "G.47" [label="G.47", tooltip="G.47 (I.34): In a parallelogram, opposite sides and opposite angles are equal, and the diagonal bisects the area.", fillcolor="#222244", URL="../G.47/index.html", target="_top"];
+     "G.48" [label="G.48", tooltip="G.48 (I.35): Parallelograms on the same base and in the same parallels are equal in area.", fillcolor="#222244", URL="../G.48/index.html", target="_top"];
+     "G.49" [label="G.49", tooltip="G.49 (I.36): Parallelograms on equal bases and in the same parallels are equal in area.", fillcolor="#222244", URL="../G.49/index.html", target="_top"];
+     "G.50" [label="G.50", tooltip="G.50 (I.37): Triangles on the same base and in the same parallels are equal in area.", fillcolor="#222244", URL="../G.50/index.html", target="_top"];
+     "G.51" [label="G.51", tooltip="G.51 (I.38): Triangles on equal bases and in the same parallels are equal in area.", fillcolor="#222244", URL="../G.51/index.html", target="_top"];
+     "G.52" [label="G.52", tooltip="G.52 (I.39): Equal triangles on the same base and on the same side lie in the same parallels.", fillcolor="#222244", URL="../G.52/index.html", target="_top"];
+     "G.54" [label="G.54", tooltip="G.54 (I.41): If a parallelogram shares the same base with a triangle and lies in the same parallels, the parallelogram is double the triangle.", fillcolor="#222244", URL="../G.54/index.html", target="_top"];
+     "G.55" [label="G.55", tooltip="G.55 (I.42): Construct, in a given angle, a parallelogram equal in area to a given triangle.", fillcolor="#222244", URL="../G.55/index.html", target="_top"];
+     "G.56" [label="G.56", tooltip="G.56 (I.43): In any parallelogram, the complements of the parallelograms about the diagonal are equal in area.", fillcolor="#222244", URL="../G.56/index.html", target="_top"];
+     "G.57" [label="G.57", tooltip="G.57 (I.44): Apply to a given segment, in a given angle, a parallelogram equal in area to a given triangle.", fillcolor="#222244", URL="../G.57/index.html", target="_top"];
+     "G.58" [label="G.58", tooltip="G.58 (I.45): Construct, in a given angle, a parallelogram equal in area to a given polygon.", fillcolor="#222244", URL="../G.58/index.html", target="_top"];
+     "G.59" [label="G.59", tooltip="G.59 (I.46): Construct a square on a given segment.", fillcolor="#222244", URL="../G.59/index.html", target="_top"];
+     "G.60" [label="G.60", tooltip="G.60 (I.47): In a right-angled triangle, the square on the hypotenuse equals the sum of the squares on the two legs (Pythagorean Theorem).", fillcolor="#222244", URL="../G.60/index.html", target="_top"];
      "G.63" [label="G.63", tooltip="G.63 (II.2): If a straight line be cut at random, the rectangle contained by the whole and both of the segments is equal to the square on the whole.", fillcolor="#222244", URL="../G.63/index.html", target="_top"];
      "G.66" [label="G.66", tooltip="G.66 (II.5): If a straight line be cut into equal and unequal segments, the rectangle contained by the unequal segments of the whole together with the square on the straight line between the po...", fillcolor="#222244", URL="../G.66/index.html", target="_top"];
      "G.68" [label="G.68", tooltip="G.68 (II.7): If a straight line be cut at random, the square on the whole and that on one of the segments both together are equal to twice the rectangle contained by the whole and the said segm...", fillcolor="#222244", URL="../G.68/index.html", target="_top"];
-     "G.76" [label="G.76", tooltip="G.76 (III.1): To find the centre of a given circle.", fillcolor="#222244", URL="../G.76/index.html", target="_top"];
+     "G.76" [label="G.76", tooltip="G.76 (III.1): Find the centre of a given circle.", fillcolor="#222244", URL="../G.76/index.html", target="_top"];
      "G.80" [label="G.80", tooltip="G.80 (III.5): If two circles cut one another, they will not have the same centre.", fillcolor="#222244", URL="../G.80/index.html", target="_top"];
      "G.85" [label="G.85", tooltip="G.85 (III.10): A circle does not cut a circle at more points than two.", fillcolor="#222244", URL="../G.85/index.html", target="_top"];
      "G.98" [label="G.98", tooltip="G.98 (III.20): In a circle the angle at the centre is double of the angle at the circumference, when the angles have the same circumference as base.", fillcolor="#222244", URL="../G.98/index.html", target="_top"];
-     "G.99" [label="G.99", tooltip="G.99 (III.21): In a circle the angles in the same segment are equal to one another.", fillcolor="#222244", URL="../G.99/index.html", target="_top"];
+     "G.99" [label="G.99", tooltip="G.99 (III.21): In a circle the angles in the same segment are equal.", fillcolor="#222244", URL="../G.99/index.html", target="_top"];
      "G.100" [label="G.100", tooltip="G.100 (III.22): The opposite angles of quadrilaterals in circles are equal to two right angles.", fillcolor="#222244", URL="../G.100/index.html", target="_top"];
-     "G.101" [label="G.101", tooltip="G.101 (III.def.11): Similar segments of circles are those which admit equal angles, or in which the angles are equal to one another.", fillcolor="#224422", URL="../G.101/index.html", target="_top"];
-     "G.103" [label="G.103", tooltip="G.103 (III.24): Similar segments of circles on equal straight lines are equal to one another.", fillcolor="#222244", URL="../G.103/index.html", target="_top"];
+     "G.101" [label="G.101", tooltip="G.101 (III.def.11): Similar segments of circles are those which admit equal angles, or in which the angles are equal.", fillcolor="#224422", URL="../G.101/index.html", target="_top"];
+     "G.103" [label="G.103", tooltip="G.103 (III.24): Similar segments of circles on equal straight lines are equal.", fillcolor="#222244", URL="../G.103/index.html", target="_top"];
      "G.105" [label="G.105", tooltip="G.105 (III.26): In equal circles equal angles stand on equal circumferences, whether they stand at the centres or at the circumferences.", fillcolor="#222244", URL="../G.105/index.html", target="_top"];
-     "G.106" [label="G.106", tooltip="G.106 (III.27): In equal circles angles standing on equal circumferences are equal to one another, whether they stand at the centres or at the circumferences.", fillcolor="#222244", URL="../G.106/index.html", target="_top"];
+     "G.106" [label="G.106", tooltip="G.106 (III.27): In equal circles angles standing on equal circumferences are equal, whether they stand at the centres or at the circumferences.", fillcolor="#222244", URL="../G.106/index.html", target="_top"];
      "G.107" [label="G.107", tooltip="G.107 (III.28): In equal circles equal straight lines cut off equal circumferences, the greater equal to the greater and the less to the less.", fillcolor="#222244", URL="../G.107/index.html", target="_top"];
      "G.108" [label="G.108", tooltip="G.108 (III.29): In equal circles equal circumferences are subtended by equal straight lines.", fillcolor="#222244", URL="../G.108/index.html", target="_top"];
      "G.110" [label="G.110", tooltip="G.110 (III.31): In a circle the angle in the semicircle is right, that in a greater segment less than a right angle, and that in a less segment greater than a right angle; and further the angle of...", fillcolor="#222244", URL="../G.110/index.html", target="_top"];
      "G.117" [label="G.117", tooltip="G.117 (IV.1): Into a given circle to fit a straight line equal to a given straight line which is not greater than the diameter of the circle.", fillcolor="#222244", URL="../G.117/index.html", target="_top"];
      "G.132" [label="G.132", tooltip="G.132 (IV.14): About a given pentagon, which is equilateral and equiangular, to circumscribe a circle.", fillcolor="#222244", URL="../G.132/index.html", target="_top"];
-     "G.133" [label="G.133", tooltip="G.133 (IV.15): In a given circle to inscribe an equilateral and equiangular hexagon.", fillcolor="#222244", URL="../G.133/index.html", target="_top"];
+     "G.133" [label="G.133", tooltip="G.133 (IV.15): Inscribe in a given circle an equilateral and equiangular hexagon.", fillcolor="#222244", URL="../G.133/index.html", target="_top"];
      "G.135" [label="G.135", tooltip="G.135 (V.1): If there be any number of magnitudes whatever which are, respectively, equimultiples of any magnitudes equal in multitude, then, whatever multiple one of the magnitudes is of one, ...", fillcolor="#222244", URL="../G.135/index.html", target="_top"];
      "G.136" [label="G.136", tooltip="G.136 (V.2): If a first magnitude be the same multiple of a second that a third is of a fourth, and a fifth also be the same multiple of the second that a sixth is of the fourth, the sum of the...", fillcolor="#222244", URL="../G.136/index.html", target="_top"];
-     "G.137" [label="G.137", tooltip="G.137 (V.3): If a first magnitude be the same multiple of a second that a third is of a fourth, and if equimultiples be taken of the first and third, then also ex aequali the magnitudes taken w...", fillcolor="#222244", URL="../G.137/index.html", target="_top"];
-     "G.138" [label="G.138", tooltip="G.138 (V.def.5): Magnitudes are said to be in the same ratio, the first to the second and the third to the fourth, when, if any equimultiples whatever be taken of the first and third, and any equim...", fillcolor="#224422", URL="../G.138/index.html", target="_top"];
+     "G.137" [label="G.137", tooltip="G.137 (V.3): If a first magnitude be the same multiple of a second that a third is of a fourth, and if equimultiples be taken of the first and third, then alsoex aequali the magnitudes taken is...", fillcolor="#222244", URL="../G.137/index.html", target="_top"];
+     "G.138" [label="G.138", tooltip="G.138 (V.def.5): Magnitudes are said tobe in the same ratio, the first to the second and the third to the fourth, when, if any equimultiples whatever be taken of the first and third, and any equimu...", fillcolor="#224422", URL="../G.138/index.html", target="_top"];
      "G.139" [label="G.139", tooltip="G.139 (V.4): If a first magnitude have to a second the same ratio as a third to a fourth, any equimultiples whatever of the first and third will also have the same ratio to any equimultiples wh...", fillcolor="#222244", URL="../G.139/index.html", target="_top"];
      "G.142" [label="G.142", tooltip="G.142 (V.7): Equal magnitudes have to the same the same ratio, as also has the same to equal magnitudes.", fillcolor="#222244", URL="../G.142/index.html", target="_top"];
-     "G.143" [label="G.143", tooltip="G.143 (V.def.4): Magnitudes are said to have a ratio to one another which are capable, when multiplied, of exceeding one another.", fillcolor="#224422", URL="../G.143/index.html", target="_top"];
+     "G.143" [label="G.143", tooltip="G.143 (V.def.4): Magnitudes are said tohave a ratio to one another which are capable, when multiplied, of exceeding one another.", fillcolor="#224422", URL="../G.143/index.html", target="_top"];
      "G.144" [label="G.144", tooltip="G.144 (V.def.7): When, of the equimultiples, the multiple of the first magnitude exceeds the multiple of the second, but the multiple of the third does not exceed the multiple of the fourth, then t...", fillcolor="#224422", URL="../G.144/index.html", target="_top"];
      "G.145" [label="G.145", tooltip="G.145 (V.8): Of unequal magnitudes, the greater has to the same a greater ratio than the less has; and the same has to the less a greater ratio than it has to the greater.", fillcolor="#222244", URL="../G.145/index.html", target="_top"];
-     "G.146" [label="G.146", tooltip="G.146 (V.9): Magnitudes which have the same ratio to the same are equal to one another ; and magnitudes to which the same has the same ratio are equal.", fillcolor="#222244", URL="../G.146/index.html", target="_top"];
-     "G.147" [label="G.147", tooltip="G.147 (V.10): Of magnitudes which have a ratio to the same, that which has a greater ratio is greater ; and that to which the same has a greater ratio is less.", fillcolor="#222244", URL="../G.147/index.html", target="_top"];
+     "G.146" [label="G.146", tooltip="G.146 (V.9): Magnitudes which have the same ratio to the same are equal; and magnitudes to which the same has the same ratio are equal.", fillcolor="#222244", URL="../G.146/index.html", target="_top"];
+     "G.147" [label="G.147", tooltip="G.147 (V.10): Of magnitudes which have a ratio to the same, that which has a greater ratio is greater; and that to which the same has a greater ratio is less.", fillcolor="#222244", URL="../G.147/index.html", target="_top"];
      "G.148" [label="G.148", tooltip="G.148 (V.11): Ratios which are the same with the same ratio are also the same with one another.", fillcolor="#222244", URL="../G.148/index.html", target="_top"];
      "G.149" [label="G.149", tooltip="G.149 (V.12): If any number of magnitudes be proportional, as one of the antecedents is to one of the consequents, so will all the antecedents be to all the consequents.", fillcolor="#222244", URL="../G.149/index.html", target="_top"];
      "G.150" [label="G.150", tooltip="G.150 (V.13): If a first magnitude have to a second the same ratio as a third to a fourth, and the third have to the fourth a greater ratio than a fifth has to a sixth, the first will also have ...", fillcolor="#222244", URL="../G.150/index.html", target="_top"];
-     "G.151" [label="G.151", tooltip="G.151 (V.14): If a first magnitude have to a second the same ratio as a third has to a fourth, and the first be greater than the third, the second will also be greater than the fourth ; if equal...", fillcolor="#222244", URL="../G.151/index.html", target="_top"];
+     "G.151" [label="G.151", tooltip="G.151 (V.14): If a first magnitude have to a second the same ratio as a third has to a fourth, and the first be greater than the third, the second is greater than the fourth; if equal, equal; an...", fillcolor="#222244", URL="../G.151/index.html", target="_top"];
      "G.152" [label="G.152", tooltip="G.152 (V.15): Parts have the same ratio as the same multiples of them taken in corresponding order.", fillcolor="#222244", URL="../G.152/index.html", target="_top"];
-     "G.153" [label="G.153", tooltip="G.153 (V.16): If four magnitudes be proportional, they will also be proportional alternately.", fillcolor="#222244", URL="../G.153/index.html", target="_top"];
-     "G.154" [label="G.154", tooltip="G.154 (V.17): If magnitudes be proportional componendo, they will also be proportional separando.", fillcolor="#222244", URL="../G.154/index.html", target="_top"];
-     "G.155" [label="G.155", tooltip="G.155 (V.18): If magnitudes be proportional separando, they will also be proportional componendo.", fillcolor="#222244", URL="../G.155/index.html", target="_top"];
-     "G.156" [label="G.156", tooltip="G.156 (V.19): If, as a whole is to a whole, so is a part subtracted to a part subtracted, the remainder will also be to the remainder as whole to whole.", fillcolor="#222244", URL="../G.156/index.html", target="_top"];
-     "G.157" [label="G.157", tooltip="G.157 (V.20): If there be three magnitudes, and others equal to them in multitude, which taken two and two are in the same ratio, and if ex aequali the first be greater than the third, the fourt...", fillcolor="#222244", URL="../G.157/index.html", target="_top"];
-     "G.159" [label="G.159", tooltip="G.159 (V.22): If there be any number of magnitudes whatever, and others equal to them in multitude, which taken two and two together are in the same ratio, they will also be in the same ratio ex...", fillcolor="#222244", URL="../G.159/index.html", target="_top"];
+     "G.153" [label="G.153", tooltip="G.153 (V.16): If four magnitudes be proportional, they is proportional alternately.", fillcolor="#222244", URL="../G.153/index.html", target="_top"];
+     "G.154" [label="G.154", tooltip="G.154 (V.17): If magnitudes be proportional componendo, they is proportional separando.", fillcolor="#222244", URL="../G.154/index.html", target="_top"];
+     "G.155" [label="G.155", tooltip="G.155 (V.18): If magnitudes be proportional separando, they is proportional componendo.", fillcolor="#222244", URL="../G.155/index.html", target="_top"];
+     "G.156" [label="G.156", tooltip="G.156 (V.19): If, as a whole is to a whole, so is a part subtracted to a part subtracted, the remainder is to the remainder as whole to whole.", fillcolor="#222244", URL="../G.156/index.html", target="_top"];
+     "G.157" [label="G.157", tooltip="G.157 (V.20): If there be three magnitudes, and others equal to them in multitude, which taken two and two are in the same ratio, and ifex aequali the first be greater than the third, the fourth...", fillcolor="#222244", URL="../G.157/index.html", target="_top"];
+     "G.159" [label="G.159", tooltip="G.159 (V.22): If there be any number of magnitudes whatever, and others equal to them in multitude, which taken two and two together are in the same ratio, they is in the same ratio ex aequali.", fillcolor="#222244", URL="../G.159/index.html", target="_top"];
      "G.163" [label="G.163", tooltip="G.163 (VI.1): Triangles and parallelograms which are under the same height are to one another as their bases.", fillcolor="#222244", URL="../G.163/index.html", target="_top"];
      "G.164" [label="G.164", tooltip="G.164 (VI.2): If a straight line be drawn parallel to one of the sides of a triangle, it will cut the sides of the triangle proportionally; and, if the sides of the triangle be cut proportionall...", fillcolor="#222244", URL="../G.164/index.html", target="_top"];
      "G.166" [label="G.166", tooltip="G.166 (VI.4): In equiangular triangles the sides about the equal angles are proportional, and those are corresponding sides which subtend the equal angles.", fillcolor="#222244", URL="../G.166/index.html", target="_top"];
-     "G.168" [label="G.168", tooltip="G.168 (VI.6): If two triangles have one angle equal to one angle and the sides about the equal angles proportional, the triangles will be equiangular and will have those angles equal which the c...", fillcolor="#222244", URL="../G.168/index.html", target="_top"];
-     "G.170" [label="G.170", tooltip="G.170 (VI.def.1): Similar rectilineal figures are such as have their angles severally equal and the sides about the equal angles proportional.", fillcolor="#224422", URL="../G.170/index.html", target="_top"];
+     "G.168" [label="G.168", tooltip="G.168 (VI.6): If two triangles have one angle equal to one angle and the sides about the equal angles proportional, the triangles is equiangular and will have those angles equal which the corres...", fillcolor="#222244", URL="../G.168/index.html", target="_top"];
+     "G.170" [label="G.170", tooltip="G.170 (VI.def.1): Similar polygons are such as have their angles severally equal and the sides about the equal angles proportional.", fillcolor="#224422", URL="../G.170/index.html", target="_top"];
      "G.171" [label="G.171", tooltip="G.171 (VI.8): If in a right-angled triangle a perpendicular be drawn from the right angle to the base, the triangles adjoining the perpendicular are similar both to the whole and to one another.", fillcolor="#222244", URL="../G.171/index.html", target="_top"];
      "G.174" [label="G.174", tooltip="G.174 (VI.11): To two given straight lines to find a third proportional.", fillcolor="#222244", URL="../G.174/index.html", target="_top"];
      "G.175" [label="G.175", tooltip="G.175 (VI.12): To three given straight lines to find a fourth proportional.", fillcolor="#222244", URL="../G.175/index.html", target="_top"];
      "G.176" [label="G.176", tooltip="G.176 (VI.13): To two given straight lines to find a mean proportional.", fillcolor="#222244", URL="../G.176/index.html", target="_top"];
      "G.177" [label="G.177", tooltip="G.177 (VI.14): In equal and equiangular parallelograms the sides about the equal angles are reciprocally proportional; and equiangular parallelograms in which the sides about the equal angles are...", fillcolor="#222244", URL="../G.177/index.html", target="_top"];
      "G.178" [label="G.178", tooltip="G.178 (VI.15): In equal triangles which have one angle equal to one angle the sides about the equal angles are reciprocally proportional; and those triangles which have one angle equal to one ang...", fillcolor="#222244", URL="../G.178/index.html", target="_top"];
-     "G.179" [label="G.179", tooltip="G.179 (VI.16): If four straight lines be proportional, the rectangle contained by the extremes is equal to the rectangle contained by the means; and, if the rectangle contained by the extremes be...", fillcolor="#222244", URL="../G.179/index.html", target="_top"];
-     "G.180" [label="G.180", tooltip="G.180 (VI.17): If three straight lines be proportional, the rectangle contained by the extremes is equal to the square on the mean; and, if the rectangle contained by the extremes be equal to the...", fillcolor="#222244", URL="../G.180/index.html", target="_top"];
-     "G.181" [label="G.181", tooltip="G.181 (VI.18): On a given straight line to describe a rectilinear figure similar and similarly situated to a given rectilinear figure.", fillcolor="#222244", URL="../G.181/index.html", target="_top"];
-     "G.182" [label="G.182", tooltip="G.182 (V.def.9): When three magnitudes are proportional, the first is said to have to the third the duplicate ratio of that which it has to the second.", fillcolor="#224422", URL="../G.182/index.html", target="_top"];
-     "G.183" [label="G.183", tooltip="G.183 (V.def.11): The term corresponding magnitudes is used of antecedents in relation to antecedents, and of consequents in relation to consequents.", fillcolor="#224422", URL="../G.183/index.html", target="_top"];
+     "G.179" [label="G.179", tooltip="G.179 (VI.16): If four straight lines be proportional, the rectangle contained by the extremes is equal to the rectangle contained by the means; and, if the rectangle contained by the extremes eq...", fillcolor="#222244", URL="../G.179/index.html", target="_top"];
+     "G.180" [label="G.180", tooltip="G.180 (VI.17): If three straight lines be proportional, the rectangle contained by the extremes is equal to the square on the mean; and, if the rectangle contained by the extremes equals the squa...", fillcolor="#222244", URL="../G.180/index.html", target="_top"];
+     "G.181" [label="G.181", tooltip="G.181 (VI.18): Describe on a given segment a rectilinear figure similar and similarly situated to a given rectilinear figure.", fillcolor="#222244", URL="../G.181/index.html", target="_top"];
+     "G.182" [label="G.182", tooltip="G.182 (V.def.9): When three magnitudes are proportional, the first is said to have to the third theduplicate ratio of that which it has to the second.", fillcolor="#224422", URL="../G.182/index.html", target="_top"];
+     "G.183" [label="G.183", tooltip="G.183 (V.def.11): The termcorresponding magnitudes is used of antecedents in relation to antecedents, and of consequents in relation to consequents.", fillcolor="#224422", URL="../G.183/index.html", target="_top"];
      "G.184" [label="G.184", tooltip="G.184 (VI.19): Similar triangles are to one another in the duplicate ratio of the corresponding sides.", fillcolor="#222244", URL="../G.184/index.html", target="_top"];
      "G.185" [label="G.185", tooltip="G.185 (VI.20): Similar polygons are divided into similar triangles, and into triangles equal in multitude and in the same ratio as the wholes, and the polygon has to the polygon a ratio duplicate...", fillcolor="#222244", URL="../G.185/index.html", target="_top"];
-     "G.186" [label="G.186", tooltip="G.186 (VI.21): Figures which are similar to the same rectilineal figure are also similar to one another.", fillcolor="#222244", URL="../G.186/index.html", target="_top"];
-     "G.187" [label="G.187", tooltip="G.187 (VI.22): If four straight lines be proportional, the rectilineal figures similar and similarly described upon them will also be proportional; and, if the rectilineal figures similar and sim...", fillcolor="#222244", URL="../G.187/index.html", target="_top"];
+     "G.186" [label="G.186", tooltip="G.186 (VI.21): Figures which are similar to the same polygon are also similar to one another.", fillcolor="#222244", URL="../G.186/index.html", target="_top"];
+     "G.187" [label="G.187", tooltip="G.187 (VI.22): If four straight lines be proportional, the polygons similar and similarly described upon them is proportional; and, if the polygons similar and similarly described upon them be pr...", fillcolor="#222244", URL="../G.187/index.html", target="_top"];
      "G.189" [label="G.189", tooltip="G.189 (VI.24): In any parallelogram the parallelograms about the diameter are similar both to the whole and to one another.", fillcolor="#222244", URL="../G.189/index.html", target="_top"];
-     "G.190" [label="G.190", tooltip="G.190 (VI.25): To construct one and the same figure similar to a given rectilineal figure and equal to another given rectilineal figure.", fillcolor="#222244", URL="../G.190/index.html", target="_top"];
+     "G.190" [label="G.190", tooltip="G.190 (VI.25): Construct one and the same figure similar to a given polygon and equal to another given polygon.", fillcolor="#222244", URL="../G.190/index.html", target="_top"];
      "G.191" [label="G.191", tooltip="G.191 (VI.26): If from a parallelogram there be taken away a parallelogram similar and similarly situated to the whole and having a common angle with it, it is about the same diameter with the wh...", fillcolor="#222244", URL="../G.191/index.html", target="_top"];
-     "G.193" [label="G.193", tooltip="G.193 (VI.28): To a given straight line to apply a parallelogram equal to a given rectilineal figure and deficient by a parallelogrammic figure similar to a given one : thus the given rectilineal...", fillcolor="#222244", URL="../G.193/index.html", target="_top"];
+     "G.193" [label="G.193", tooltip="G.193 (VI.28): To a given straight line to apply a parallelogram equal to a given polygon and deficient by a parallelogrammic figure similar to a given one: thus the given polygon must not be gre...", fillcolor="#222244", URL="../G.193/index.html", target="_top"];
      "G.198" [label="G.198", tooltip="G.198 (VI.33): In equal circles angles have the same ratio as the circumferences on which they stand, whether they stand at the centres or at the circumferences.", fillcolor="#222244", URL="../G.198/index.html", target="_top"];
      "G.199" [label="G.199", tooltip="G.199 (VII.def.12): Numbers prime to one another are those which are measured by an unit alone as a common measure.", fillcolor="#224422", URL="../G.199/index.html", target="_top"];
      "G.200" [label="G.200", tooltip="G.200 (VII.1): Two unequal numbers being set out, and the less being continually subtracted in turn from the greater, if the number which is left never measures the one before it until an unit is...", fillcolor="#222244", URL="../G.200/index.html", target="_top"];
      "G.201" [label="G.201", tooltip="G.201 (VII.2): Given two numbers not prime to one another, to find their greatest common measure.", fillcolor="#222244", URL="../G.201/index.html", target="_top"];
      "G.202" [label="G.202", tooltip="G.202 (VII.3): Given three numbers not prime to one another, to find their greatest common measure.", fillcolor="#222244", URL="../G.202/index.html", target="_top"];
      "G.203" [label="G.203", tooltip="G.203 (VII.4): Any number is either a part or parts of any number, the less of the greater.", fillcolor="#222244", URL="../G.203/index.html", target="_top"];
-     "G.204" [label="G.204", tooltip="G.204 (VII.5): If a number be a part of a number, and another be the same part of another, the sum will also be the same part of the sum that the one is of the one.", fillcolor="#222244", URL="../G.204/index.html", target="_top"];
-     "G.205" [label="G.205", tooltip="G.205 (VII.6): If a number be parts of a number, and another be the same parts of another, the sum will also be the same parts of the sum that the one is of the one.", fillcolor="#222244", URL="../G.205/index.html", target="_top"];
+     "G.204" [label="G.204", tooltip="G.204 (VII.5): If a number be a part of a number, and another be the same part of another, the sum is the same part of the sum that the one is of the one.", fillcolor="#222244", URL="../G.204/index.html", target="_top"];
+     "G.205" [label="G.205", tooltip="G.205 (VII.6): If a number be parts of a number, and another be the same parts of another, the sum is the same parts of the sum that the one is of the one.", fillcolor="#222244", URL="../G.205/index.html", target="_top"];
      "G.208" [label="G.208", tooltip="G.208 (VII.9): If a number be a part of a number, and another be the same part of another, alternately also, whatever part or parts the first is of the third, the same part, or the same parts, wi...", fillcolor="#222244", URL="../G.208/index.html", target="_top"];
      "G.209" [label="G.209", tooltip="G.209 (VII.10): If a number be parts of a number, and another be the same parts of another, alternately also, whatever parts or part the first is of the third, the same parts or the same part will...", fillcolor="#222244", URL="../G.209/index.html", target="_top"];
-     "G.210" [label="G.210", tooltip="G.210 (VII.def.20): **Numbers** are proportional when the first is the same multiple, or the same part, or the same parts, of the second that the third is of the fourth.", fillcolor="#224422", URL="../G.210/index.html", target="_top"];
+     "G.210" [label="G.210", tooltip="G.210 (VII.def.20): **Numbers** areproportional when the first is the same multiple, or the same part, or the same parts, of the second that the third is of the fourth.", fillcolor="#224422", URL="../G.210/index.html", target="_top"];
      "G.212" [label="G.212", tooltip="G.212 (VII.12): If there be as many numbers as we please in proportion, then, as one of the antecedents is to one of the consequents, so are all the antecedents to all the consequents.", fillcolor="#222244", URL="../G.212/index.html", target="_top"];
-     "G.213" [label="G.213", tooltip="G.213 (VII.13): If four numbers be proportional, they will also be proportional alternately.", fillcolor="#222244", URL="../G.213/index.html", target="_top"];
-     "G.214" [label="G.214", tooltip="G.214 (VII.14): If there be as many numbers as we please, and others equal to them in multitude, which taken two and two are in the same ratio, they will also be in the same ratio ex aequali.", fillcolor="#222244", URL="../G.214/index.html", target="_top"];
+     "G.213" [label="G.213", tooltip="G.213 (VII.13): If four numbers be proportional, they is proportional alternately.", fillcolor="#222244", URL="../G.213/index.html", target="_top"];
+     "G.214" [label="G.214", tooltip="G.214 (VII.14): If there be as many numbers as we please, and others equal to them in multitude, which taken two and two are in the same ratio, they is in the same ratio ex aequali.", fillcolor="#222244", URL="../G.214/index.html", target="_top"];
      "G.215" [label="G.215", tooltip="G.215 (VII.15): If an unit measure any number, and another number measure any other number the same number of times, alternately also, the unit will measure the third number the same number of tim...", fillcolor="#222244", URL="../G.215/index.html", target="_top"];
-     "G.216" [label="G.216", tooltip="G.216 (VII.16): If two numbers by multiplying one another make certain numbers, the numbers so produced will be equal to one another.", fillcolor="#222244", URL="../G.216/index.html", target="_top"];
+     "G.216" [label="G.216", tooltip="G.216 (VII.16): If two numbers by multiplying one another make certain numbers, the numbers so produced are equal.", fillcolor="#222244", URL="../G.216/index.html", target="_top"];
      "G.217" [label="G.217", tooltip="G.217 (VII.17): If a number by multiplying two numbers make certain numbers, the numbers so produced will have the same ratio as the numbers multiplied.", fillcolor="#222244", URL="../G.217/index.html", target="_top"];
      "G.218" [label="G.218", tooltip="G.218 (VII.18): If two numbers by multiplying any number make certain numbers, the numbers so produced will have the same ratio as the multipliers.", fillcolor="#222244", URL="../G.218/index.html", target="_top"];
-     "G.219" [label="G.219", tooltip="G.219 (VII.19): If four numbers be proportional, the number produced from the first and fourth will be equal to the number produced from the second and third; and, if the number produced from the ...", fillcolor="#222244", URL="../G.219/index.html", target="_top"];
+     "G.219" [label="G.219", tooltip="G.219 (VII.19): If four numbers be proportional, the number produced from the first and fourth will equals the number produced from the second and third; and, if the number produced from the first...", fillcolor="#222244", URL="../G.219/index.html", target="_top"];
      "G.220" [label="G.220", tooltip="G.220 (VII.20): The least numbers of those which have the same ratio with them measure those which have the same ratio the same number of times, the greater the greater and the less the less.", fillcolor="#222244", URL="../G.220/index.html", target="_top"];
      "G.221" [label="G.221", tooltip="G.221 (VII.21): Numbers prime to one another are the least of those which have the same ratio with them.", fillcolor="#222244", URL="../G.221/index.html", target="_top"];
-     "G.222" [label="G.222", tooltip="G.222 (VII.def.15): A number is said to multiply a number when that which is multiplied is added to itself as many times as there are units in the other, and thus some number is produced.", fillcolor="#224422", URL="../G.222/index.html", target="_top"];
+     "G.222" [label="G.222", tooltip="G.222 (VII.def.15): A number is said tomultiply a number when that which is multiplied is added to itself as many times as there are units in the other, and thus some number is produced.", fillcolor="#224422", URL="../G.222/index.html", target="_top"];
      "G.223" [label="G.223", tooltip="G.223 (VII.22): The least numbers of those which have the same ratio with them are prime to one another.", fillcolor="#222244", URL="../G.223/index.html", target="_top"];
-     "G.224" [label="G.224", tooltip="G.224 (VII.23): If two numbers be prime to one another, the number which measures the one of them will be prime to the remaining number.", fillcolor="#222244", URL="../G.224/index.html", target="_top"];
-     "G.225" [label="G.225", tooltip="G.225 (VII.24): If two numbers be prime to any number, their product also will be prime to the same.", fillcolor="#222244", URL="../G.225/index.html", target="_top"];
-     "G.226" [label="G.226", tooltip="G.226 (VII.25): If two numbers be prime to one another, the product of one of them into itself will be prime to the remaining one.", fillcolor="#222244", URL="../G.226/index.html", target="_top"];
-     "G.227" [label="G.227", tooltip="G.227 (VII.26): If two numbers be prime to two numbers, both to each, their products also will be prime to one another.", fillcolor="#222244", URL="../G.227/index.html", target="_top"];
-     "G.228" [label="G.228", tooltip="G.228 (VII.27): If two numbers be prime to one another, and each by multiplying itself make a certain number, the products will be prime to one another ; and, if the original numbers by multiplyin...", fillcolor="#222244", URL="../G.228/index.html", target="_top"];
+     "G.224" [label="G.224", tooltip="G.224 (VII.23): If two numbers be prime to one another, the number which measures the one of them is prime to the remaining number.", fillcolor="#222244", URL="../G.224/index.html", target="_top"];
+     "G.225" [label="G.225", tooltip="G.225 (VII.24): If two numbers be prime to any number, their product also is prime to the same.", fillcolor="#222244", URL="../G.225/index.html", target="_top"];
+     "G.226" [label="G.226", tooltip="G.226 (VII.25): If two numbers be prime to one another, the product of one of them into itself is prime to the remaining one.", fillcolor="#222244", URL="../G.226/index.html", target="_top"];
+     "G.227" [label="G.227", tooltip="G.227 (VII.26): If two numbers be prime to two numbers, both to each, their products also is prime to one another.", fillcolor="#222244", URL="../G.227/index.html", target="_top"];
+     "G.228" [label="G.228", tooltip="G.228 (VII.27): If two numbers be prime to one another, and each by multiplying itself make a certain number, the products is prime to one another; and, if the original numbers by multiplying the ...", fillcolor="#222244", URL="../G.228/index.html", target="_top"];
      "G.234" [label="G.234", tooltip="G.234 (VII.33): Given as many numbers as we please, to find the least of those which have the same ratio with them.", fillcolor="#222244", URL="../G.234/index.html", target="_top"];
      "G.235" [label="G.235", tooltip="G.235 (VII.34): Given two numbers, to find the least number which they measure.", fillcolor="#222244", URL="../G.235/index.html", target="_top"];
      "G.236" [label="G.236", tooltip="G.236 (VII.35): If two numbers measure any number, the least number measured by them will also measure the same.", fillcolor="#222244", URL="../G.236/index.html", target="_top"];
      "G.241" [label="G.241", tooltip="G.241 (VIII.1): If there be as many numbers as we please in continued proportion, and the extremes of them be prime to one another, the numbers are the least of those which have the same ratio wit...", fillcolor="#222244", URL="../G.241/index.html", target="_top"];
-     "G.242" [label="G.242", tooltip="G.242 (VIII.2): To find numbers in continued proportion, as many as may be prescribed, and the least that are in a given ratio.", fillcolor="#222244", URL="../G.242/index.html", target="_top"];
+     "G.242" [label="G.242", tooltip="G.242 (VIII.2): Find numbers in continued proportion, as many as may be prescribed, and the least that are in a given ratio.", fillcolor="#222244", URL="../G.242/index.html", target="_top"];
      "G.244" [label="G.244", tooltip="G.244 (VIII.4): Given as many ratios as we please in least numbers, to find numbers in continued proportion which are the least in the given ratios.", fillcolor="#222244", URL="../G.244/index.html", target="_top"];
      "G.251" [label="G.251", tooltip="G.251 (VIII.11): Between two square numbers there is one mean proportional number, and the square has to the square the ratio duplicate of that which the side has to the side.", fillcolor="#222244", URL="../G.251/index.html", target="_top"];
      "G.259" [label="G.259", tooltip="G.259 (VII.def.21): Similar plane and solid numbers are those which have their sides proportional.", fillcolor="#224422", URL="../G.259/index.html", target="_top"];
      "G.260" [label="G.260", tooltip="G.260 (VIII.18): Between two similar plane numbers there is one mean proportional number; and the plane number has to the plane number the ratio duplicate of that which the corresponding side has t...", fillcolor="#222244", URL="../G.260/index.html", target="_top"];
      "G.268" [label="G.268", tooltip="G.268 (VIII.26): Similar plane numbers have to one another the ratio which a square number has to a square number.", fillcolor="#222244", URL="../G.268/index.html", target="_top"];
-     "G.314" [label="G.314", tooltip="G.314 (X.def.1): Those magnitudes are said to be commensurable which are measured by the same measure, and those incommensurable which cannot have any common measure.", fillcolor="#224422", URL="../G.314/index.html", target="_top"];
+     "G.314" [label="G.314", tooltip="G.314 (X.def.1): Those magnitudes are said to becommensurable which are measured by the same measure, and thoseincommensurable which cannot have any common measure.", fillcolor="#224422", URL="../G.314/index.html", target="_top"];
      "G.318" [label="G.318", tooltip="G.318 (X.5): Commensurable magnitudes have to one another the ratio which a number has to a number.", fillcolor="#222244", URL="../G.318/index.html", target="_top"];
-     "G.319" [label="G.319", tooltip="G.319 (X.6): If two magnitudes have to one another the ratio which a number has to a number, the magnitudes will be commensurable.", fillcolor="#222244", URL="../G.319/index.html", target="_top"];
+     "G.319" [label="G.319", tooltip="G.319 (X.6): If two magnitudes have to one another the ratio which a number has to a number, the magnitudes is commensurable.", fillcolor="#222244", URL="../G.319/index.html", target="_top"];
      "G.320" [label="G.320", tooltip="G.320 (X.7): Incommensurable magnitudes have not to one another the ratio which a number has to a number.", fillcolor="#222244", URL="../G.320/index.html", target="_top"];
-     "G.321" [label="G.321", tooltip="G.321 (X.8): If two magnitudes have not to one another the ratio which a number has to a number, the magnitudes will be incommensurable.", fillcolor="#222244", URL="../G.321/index.html", target="_top"];
+     "G.321" [label="G.321", tooltip="G.321 (X.8): If two magnitudes have not to one another the ratio which a number has to a number, the magnitudes is incommensurable.", fillcolor="#222244", URL="../G.321/index.html", target="_top"];
      "G.322" [label="G.322", tooltip="G.322 (X.9): The squares on straight lines commensurable in length have to one another the ratio which a square number has to a square number; and squares which have to one another the ratio wh...", fillcolor="#222244", URL="../G.322/index.html", target="_top"];
-     "G.323" [label="G.323", tooltip="G.323 (X.11): If four magnitudes be proportional, and the first be commensurable with the second, the third will also be commensurable with the fourth ; and, if the first be incommensurable with...", fillcolor="#222244", URL="../G.323/index.html", target="_top"];
+     "G.323" [label="G.323", tooltip="G.323 (X.11): If four magnitudes be proportional, and the first be commensurable with the second, the third is commensurable with the fourth; and, if the first be incommensurable with the second...", fillcolor="#222244", URL="../G.323/index.html", target="_top"];
      "G.325" [label="G.325", tooltip="G.325 (X.12): Magnitudes commensurable with the same magnitude are commensurable with one another also.", fillcolor="#222244", URL="../G.325/index.html", target="_top"];
-     "G.326" [label="G.326", tooltip="G.326 (X.13): If two magnitudes be commensurable, and the one of them be incommensurable with any magnitude, the remaining one will also be incommensurable with the same.", fillcolor="#222244", URL="../G.326/index.html", target="_top"];
-     "G.328" [label="G.328", tooltip="G.328 (X.15): If two commensurable magnitudes be added together, the whole will also be commensurable with each of them; and, if the whole be commensurable with one of them, the original magnitu...", fillcolor="#222244", URL="../G.328/index.html", target="_top"];
-     "G.329" [label="G.329", tooltip="G.329 (X.16): If two incommensurable magnitudes be added together, the whole will also be incommensurable with each of them; and, if the whole be incommensurable with one of them, the original m...", fillcolor="#222244", URL="../G.329/index.html", target="_top"];
+     "G.326" [label="G.326", tooltip="G.326 (X.13): If two magnitudes be commensurable, and the one of them be incommensurable with any magnitude, the remaining one is incommensurable with the same.", fillcolor="#222244", URL="../G.326/index.html", target="_top"];
+     "G.328" [label="G.328", tooltip="G.328 (X.15): If two commensurable magnitudes be added together, the whole is commensurable with each of them; and, if the whole be commensurable with one of them, the original magnitudes is com...", fillcolor="#222244", URL="../G.328/index.html", target="_top"];
+     "G.329" [label="G.329", tooltip="G.329 (X.16): If two incommensurable magnitudes be added together, the whole is incommensurable with each of them; and, if the whole be incommensurable with one of them, the original magnitudes ...", fillcolor="#222244", URL="../G.329/index.html", target="_top"];
      "G.330" [label="G.330", tooltip="G.330 (X.17): If there be two unequal straight lines, and to the greater there be applied a parallelogram equal to the fourth part of the square on the less and deficient by a square figure, and...", fillcolor="#222244", URL="../G.330/index.html", target="_top"];
      "G.331" [label="G.331", tooltip="G.331 (X.18): If there be two unequal straight lines, and to the greater there be applied a parallelogram equal to the fourth part of the square on the less and deficient by a square figure, and...", fillcolor="#222244", URL="../G.331/index.html", target="_top"];
-     "G.332" [label="G.332", tooltip="G.332 (X.def.4): And let the square on the assigned straight line be called rational and those areas which are commensurable with it rational, but those which are incommensurable with it irrational...", fillcolor="#224422", URL="../G.332/index.html", target="_top"];
+     "G.332" [label="G.332", tooltip="G.332 (X.def.4): And let the square on the assigned straight line be calledrational and those areas which are commensurable with itrational, but those which are incommensurable with itirrational, a...", fillcolor="#224422", URL="../G.332/index.html", target="_top"];
      "G.333" [label="G.333", tooltip="G.333 (X.19): The rectangle contained by rational straight lines commensurable in length is rational.", fillcolor="#222244", URL="../G.333/index.html", target="_top"];
      "G.335" [label="G.335", tooltip="G.335 (X.21): The rectangle contained by rational straight lines commensurable in square only is irrational, and the side of the square equal to it is irrational. Let the latter be called medial...", fillcolor="#222244", URL="../G.335/index.html", target="_top"];
      "G.336" [label="G.336", tooltip="G.336 (X.22): The square on a medial straight line, if applied to a rational straight line, produces as breadth a straight line rational and incommensurable in length with that to which it is ap...", fillcolor="#222244", URL="../G.336/index.html", target="_top"];
      "G.337" [label="G.337", tooltip="G.337 (X.def.3): With these hypotheses, it is proved that there exist straight lines infinite in multitude which are commensurable and incommensurable respectively, some in length only, and others ...", fillcolor="#224422", URL="../G.337/index.html", target="_top"];
      "G.338" [label="G.338", tooltip="G.338 (X.23): A straight line commensurable with a medial straight line is medial.", fillcolor="#222244", URL="../G.338/index.html", target="_top"];
-     "G.345" [label="G.345", tooltip="G.345 (X.30): To find two rational straight lines commensurable in square only and such that the square on the greater is greater than the square on the less by the square on a straight line inc...", fillcolor="#222244", URL="../G.345/index.html", target="_top"];
-     "G.348" [label="G.348", tooltip="G.348 (X.33): To find two straight lines incommensurable in square which make the sum of the squares on them rational but the rectangle contained by them medial.", fillcolor="#222244", URL="../G.348/index.html", target="_top"];
-     "G.394" [label="G.394", tooltip="G.394 (X.73): If from a rational straight line there be subtracted a rational straight line commensurable with the whole in square only, the remainder is irrational ; and let it be called an apo...", fillcolor="#222244", URL="../G.394/index.html", target="_top"];
+     "G.345" [label="G.345", tooltip="G.345 (X.30): Find two rational straight lines commensurable in square only and such that the square on the greater is greater than the square on the less by the square on a straight line incomm...", fillcolor="#222244", URL="../G.345/index.html", target="_top"];
+     "G.348" [label="G.348", tooltip="G.348 (X.33): Find two straight lines incommensurable in square which make the sum of the squares on them rational but the rectangle contained by them medial.", fillcolor="#222244", URL="../G.348/index.html", target="_top"];
+     "G.394" [label="G.394", tooltip="G.394 (X.73): If from a rational straight line there be subtracted a rational straight line commensurable with the whole in square only, the remainder is irrational; and let it be called anapoto...", fillcolor="#222244", URL="../G.394/index.html", target="_top"];
      "G.397" [label="G.397", tooltip="G.397 (X.76): If from a straight line there be subtracted a straight line which is incommensurable in square with the whole and which with the whole makes the squares on them added together rati...", fillcolor="#222244", URL="../G.397/index.html", target="_top"];
      "G.412" [label="G.412", tooltip="G.412 (X.def.iii.4): Again, if the square on the whole be greater than the square on the annex by the square on a straight line incommensurable with the whole, then, if the whole be commensurable in le...", fillcolor="#224422", URL="../G.412/index.html", target="_top"];
      "G.421" [label="G.421", tooltip="G.421 (X.94): If an area be contained by a rational straight line and a fourth apotome, the “side” of the area is minor.", fillcolor="#222244", URL="../G.421/index.html", target="_top"];
      "G.443" [label="G.443", tooltip="G.443 (XI.1): A part of a straight line cannot be in the plane of reference and a part in a plane more elevated.", fillcolor="#222244", URL="../G.443/index.html", target="_top"];
      "G.444" [label="G.444", tooltip="G.444 (XI.2): If two straight lines cut one another, they are in one plane, and every triangle is in one plane.", fillcolor="#222244", URL="../G.444/index.html", target="_top"];
      "G.445" [label="G.445", tooltip="G.445 (XI.3): If two planes cut one another, their common section is a straight line.", fillcolor="#222244", URL="../G.445/index.html", target="_top"];
-     "G.446" [label="G.446", tooltip="G.446 (XI.def.3): A straight line is at right angles to a plane, when it makes right angles with all the straight lines which meet it and are in the plane.", fillcolor="#224422", URL="../G.446/index.html", target="_top"];
-     "G.447" [label="G.447", tooltip="G.447 (XI.4): If a straight line be set up at right angles to two straight lines which cut one another, at their common point of section, it will also be at right angles to the plane through the...", fillcolor="#222244", URL="../G.447/index.html", target="_top"];
+     "G.446" [label="G.446", tooltip="G.446 (XI.def.3): A straight line isat right angles to a plane, when it makes right angles with all the straight lines which meet it and are in the plane.", fillcolor="#224422", URL="../G.446/index.html", target="_top"];
+     "G.447" [label="G.447", tooltip="G.447 (XI.4): If a straight line be set up at right angles to two straight lines which cut one another, at their common point of section, it is at right angles to the plane through them.", fillcolor="#222244", URL="../G.447/index.html", target="_top"];
      "G.448" [label="G.448", tooltip="G.448 (XI.5): If a straight line be set up at right angles to three straight lines which meet one another, at their common point of section, the three straight lines are in one plane.", fillcolor="#222244", URL="../G.448/index.html", target="_top"];
-     "G.449" [label="G.449", tooltip="G.449 (XI.6): If two straight lines be at right angles to the same plane, the straight lines will be parallel.", fillcolor="#222244", URL="../G.449/index.html", target="_top"];
+     "G.449" [label="G.449", tooltip="G.449 (XI.6): If two straight lines be at right angles to the same plane, the straight lines is parallel.", fillcolor="#222244", URL="../G.449/index.html", target="_top"];
      "G.507" [label="G.507", tooltip="G.507 (VI.def.3): A straight line is said to have been cut in extreme and mean ratio when, as the whole line is to the greater segment, so is the greater to the less.", fillcolor="#224422", URL="../G.507/index.html", target="_top"];
      "G.508" [label="G.508", tooltip="G.508 (XIII.1): If a straight line be cut in extreme and mean ratio, the square on the greater segment added to the half of the whole is five times the square on the half.", fillcolor="#222244", URL="../G.508/index.html", target="_top"];
      "G.510" [label="G.510", tooltip="G.510 (XIII.3): If a straight line be cut in extreme and mean ratio, the square on the lesser segment added to the half of the greater segment is five times the square on the half of the greater s...", fillcolor="#222244", URL="../G.510/index.html", target="_top"];
@@ -506,7 +566,7 @@ Dependency Graph
      "G.516" [label="G.516", tooltip="G.516 (XIII.9): If the side of the hexagon and that of the decagon inscribed in the same circle be added together, the whole straight line has been cut in extreme and mean ratio, and its greater s...", fillcolor="#222244", URL="../G.516/index.html", target="_top"];
      "G.517" [label="G.517", tooltip="G.517 (XIII.10): If an equilateral pentagon be inscribed in a circle, the square on the side of the pentagon is equal to the squares on the side of the hexagon and on that of the decagon inscribed ...", fillcolor="#222244", URL="../G.517/index.html", target="_top"];
      "G.518" [label="G.518", tooltip="G.518 (XIII.11): If in a circle which has its diameter rational an equilateral pentagon be inscribed, the side of the pentagon is the irrational straight line called minor.", fillcolor="#222244", URL="../G.518/index.html", target="_top"];
-     "G.523" [label="G.523", tooltip="G.523 (XIII.16): To construct an icosahedron and comprehend it in a sphere, like the aforesaid figures; and to prove that the side of the icosahedron is the irrational straight line called minor.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.523" [label="G.523", tooltip="G.523 (XIII.16): Construct an icosahedron and comprehend it in a sphere, like the aforesaid figures; and to prove that the side of the icosahedron is the irrational straight line called minor.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.5" -> "G.1";
      "G.8" -> "G.1";
      "G.9" -> "G.1";
@@ -1064,3 +1124,9 @@ Required for
 ------------
 
 :ref:`G.525 <G.525>`
+
+.. toctree::
+   :hidden:
+
+   code
+   heath

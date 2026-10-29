@@ -10,7 +10,7 @@
 :category: theorem, proof, number-theory
 :tags: book-ix, segment, number, even-number
 :dependencies: G.292
-:excerpt: If from an even number an even number be subtracted, the remainder will be even.
+:excerpt: If from an even number an even number be subtracted, the remainder is even.
 
 .. _G.297:
 .. _IX.24:
@@ -22,30 +22,26 @@ G.297
 
 .. enunciation::
 
-   If from an even number an even number be subtracted, the remainder will be even.
+   If from an even number an even number be subtracted, the remainder is even.
 
-For from the even number :g:`/ A B / <0420.g3:/ A B />` let the even number :g:`/ B C / <0420.g3:/ B C />` be subtracted :
-
-I say that the remainder :g:`/ A C / <0420.g3:/ A C />` is even.
-
-.. picture:: 0420.g3.svg
+.. picture:: g1.svg
    :alt: Book IX, Proposition 24
 
-.. subclause::
+.. step:: assert
 
-   For, since :g:`/ A B / <0420.g3:/ A B />` is even, it has a half part. :just:`[G.292] <G.292>`
+   For from the even number :g:`/ A B / <g1:/ A B />` let the even number :g:`/ B C / <g1:/ B C />` be subtracted :
 
-.. subclause::
+.. step:: assert [G.292] <G.292>
 
-   For the same reason :g:`/ B C / <0420.g3:/ B C />` also has a half part ;
+   Since :g:`/ A B / <g1:/ A B />` is even, it has a half part.
 
-.. assertion::
+.. step:: assert
 
-   so that the remainder [:g:`/ A C / <0420.g3:/ A C />` also has a half part, and] :g:`/ A C / <0420.g3:/ A C />` is therefore even.
+   For the same reason :g:`/ B C / <g1:/ B C />` also has a half part ;
 
-.. qed::
+.. step:: conclude
 
-   :just:`Q. E. D.`
+   So that the remainder [:g:`/ A C / <g1:/ A C />` also has a half part, and] :g:`/ A C / <g1:/ A C />` is therefore even.
 
 Dependency Graph
 ----------------
@@ -57,8 +53,8 @@ Dependency Graph
      node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11, color="#d6d3cd", fontcolor="#ffffff"];
      edge [color="#8c857b", fontcolor="#8c857b", arrowsize=0.75];
      rankdir="TB";
-     "G.292" [label="G.292", tooltip="G.292 (VII.def.6): An even number is that which is divisible into two equal parts.", fillcolor="#224422", URL="../G.292/index.html", target="_top"];
-     "G.297" [label="G.297", tooltip="G.297 (IX.24): If from an even number an even number be subtracted, the remainder will be even.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.292" [label="G.292", tooltip="G.292 (VII.def.6): Aneven number is that which is divisible into two equal parts.", fillcolor="#224422", URL="../G.292/index.html", target="_top"];
+     "G.297" [label="G.297", tooltip="G.297 (IX.24): If from an even number an even number be subtracted, the remainder is even.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.297" -> "G.292";
    }
 
@@ -66,3 +62,9 @@ Required for
 ------------
 
 :ref:`G.298 <G.298>`, :ref:`G.299 <G.299>`, :ref:`G.300 <G.300>`
+
+.. toctree::
+   :hidden:
+
+   code
+   heath

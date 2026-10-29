@@ -9,7 +9,7 @@
 :category: definition, plane-geometry, circles
 :tags: book-iii, equally-distant-from-centre, perpendicular
 :dependencies: 
-:excerpt: In a circle straight lines are said to be equally distant from the centre when the perpendiculars drawn to them from the centre are equal.
+:excerpt: In a circle straight lines are said to beequally distant from the centre when the perpendiculars drawn to them from the centre are equal.
 
 .. _G.90:
 .. _III.def.4:
@@ -21,9 +21,14 @@ G.90
 
 .. enunciation::
 
-   In a circle straight lines are said to be :term:`**equally distant from the centre** <equally-distant-from-centre>` when the perpendiculars drawn to them from the centre are equal.
+   In a circle straight lines are said to be:term:`**equally distant from the centre** <equally-distant-from-centre>` when the perpendiculars drawn to them from the centre are equal.
 
 Required for
 ------------
 
 :ref:`G.91 <G.91>`, :ref:`G.93 <G.93>`
+
+.. toctree::
+   :hidden:
+
+   heath

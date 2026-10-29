@@ -9,7 +9,7 @@
 :category: definition, incommensurables, magnitudes
 :tags: book-x, third-binomial, commensurable, rational, binomial
 :dependencies: 
-:excerpt: and if neither of the terms be commensurable in length with the rational straight line set out, let the whole be called a third binomial.
+:excerpt: And if neither of the terms be commensurable in length with the rational straight line set out, let the whole be called athird binomial.
 
 .. _G.373:
 .. _X.def.ii.3:
@@ -21,9 +21,14 @@ G.373
 
 .. enunciation::
 
-   and if neither of the terms be commensurable in length with the rational straight line set out, let the whole be called a :term:`**third binomial** <third-binomial>`.
+   And if neither of the terms be commensurable in length with the rational straight line set out, let the whole be called a:term:`**third binomial** <third-binomial>`.
 
 Required for
 ------------
 
 :ref:`G.374 <G.374>`, :ref:`G.382 <G.382>`, :ref:`G.387 <G.387>`, :ref:`G.393 <G.393>`
+
+.. toctree::
+   :hidden:
+
+   heath

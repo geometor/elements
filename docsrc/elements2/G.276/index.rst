@@ -9,7 +9,7 @@
 :category: definition, number-theory
 :tags: book-vii, composite-number, number, composite
 :dependencies: 
-:excerpt: A composite number is that which is measured by some number.
+:excerpt: Acomposite number is that which is measured by some number.
 
 .. _G.276:
 .. _VII.def.13:
@@ -21,9 +21,14 @@ G.276
 
 .. enunciation::
 
-   A :term:`**composite number** <composite-number>` is that which is measured by some number.
+   A:term:`**composite number** <composite-number>` is that which is measured by some number.
 
 Required for
 ------------
 
 :ref:`G.277 <G.277>`
+
+.. toctree::
+   :hidden:
+
+   heath

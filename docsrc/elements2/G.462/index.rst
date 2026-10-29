@@ -9,7 +9,7 @@
 :category: definition, solid-geometry
 :tags: book-xi, plane-at-right-angles-to-plane, right-angle, plane
 :dependencies: 
-:excerpt: A plane is at right angles to a plane when the straight lines drawn, in one of the planes, at right angles to the common section of the planes are at right angles to the remaining plane.
+:excerpt: Aplane is at right angles to a plane when the straight lines drawn, in one of the planes, at right angles to the common section of the planes are at right angles to the remaining plane.
 
 .. _G.462:
 .. _XI.def.4:
@@ -21,9 +21,14 @@ G.462
 
 .. enunciation::
 
-   A :term:`**plane is at right angles to a plane** <plane-at-right-angles-to-plane>` when the straight lines drawn, in one of the planes, at right angles to the common section of the planes are at right angles to the remaining plane.
+   A:term:`**plane is at right angles to a plane** <plane-at-right-angles-to-plane>` when the straight lines drawn, in one of the planes, at right angles to the common section of the planes are at right angles to the remaining plane.
 
 Required for
 ------------
 
 :ref:`G.463 <G.463>`, :ref:`G.464 <G.464>`, :ref:`G.505 <G.505>`, :ref:`G.506 <G.506>`
+
+.. toctree::
+   :hidden:
+
+   heath

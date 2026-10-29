@@ -24,30 +24,40 @@ G.450
 
    If two straight lines be parallel and points be taken at random on each of them, the straight line joining the points is in the same plane with the parallel straight lines.
 
-Let :g:`/ A B / <0289.g1:/ A B />`, :g:`/ C D / <0289.g1:/ C D />` be two parallel straight lines, and let points :g:`E <0289.g1:E>`, :g:`F <0289.g1:F>` be taken at random on them respectively; I say that the straight line joining the points :g:`E <0289.g1:E>`, :g:`F <0289.g1:F>` is in the same plane with the parallel straight lines.
-
-.. picture:: 0289.g1.svg
+.. picture:: g1.svg
    :alt: Book XI - Proposition 7
 
-For suppose it is not, but, if possible, let it be in a more elevated plane as :g:`( E G F ) <0289.g1:( E G F )>`, and let a plane be drawn through :g:`( E G F ) <0289.g1:( E G F )>`;
+.. step:: given
 
-.. assertion::
+   :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` be two parallel straight lines
 
-   it will then make, as section in the plane of reference, a straight line. :just:`[G.445] <G.445>`
+.. step:: construct
 
-Let it make it, as :g:`/ E F / <0289.g1:/ E F />`;
+   Let points :g:`E <g1:E>`, :g:`F <g1:F>` be taken at random on them respectively
 
-.. assertion::
+.. step:: assert
 
-   therefore the two straight lines :g:`( E G F ) <0289.g1:( E G F )>`, :g:`/ E F / <0289.g1:/ E F />` will enclose an area: which is impossible.
+   For suppose it is not, but, if possible, let it be in a more elevated plane as :g:`( E G F ) <g1:( E G F )>`
 
-.. assertion::
+.. step:: construct
 
-   Therefore the straight line joined from :g:`E <0289.g1:E>` to :g:`F <0289.g1:F>` is not in a plane more elevated; therefore the straight line joined from :g:`E <0289.g1:E>` to :g:`F <0289.g1:F>` is in the plane through the parallel straight lines :g:`/ A B / <0289.g1:/ A B />`, :g:`/ C D / <0289.g1:/ C D />`.
+   Let a plane be drawn through :g:`( E G F ) <g1:( E G F )>`
 
-.. qed::
+.. step:: assert [G.445] <G.445>
 
-   Therefore etc. :just:`Q. E. D.`
+   It will then make, as section in the plane of reference, a straight line.
+
+.. step:: assert
+
+   Let it make it, as :g:`/ E F / <g1:/ E F />`
+
+.. step:: assert
+
+   Therefore :g:`( E G F ) <g1:( E G F )>`, :g:`/ E F / <g1:/ E F />` will enclose an area: which is impossible.
+
+.. step:: conclude
+
+   Therefore the straight line joined from :g:`E <g1:E>` to :g:`F <g1:F>` is not in a plane more elevated; therefore the straight line joined from :g:`E <g1:E>` to :g:`F <g1:F>` is in the plane through the parallel straight lines :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`.
 
 Dependency Graph
 ----------------
@@ -68,3 +78,9 @@ Required for
 ------------
 
 :ref:`G.451 <G.451>`, :ref:`G.452 <G.452>`, :ref:`G.453 <G.453>`, :ref:`G.454 <G.454>`, :ref:`G.455 <G.455>`, :ref:`G.459 <G.459>`, :ref:`G.463 <G.463>`, :ref:`G.468 <G.468>`, :ref:`G.469 <G.469>`, :ref:`G.470 <G.470>`, :ref:`G.471 <G.471>`, :ref:`G.478 <G.478>`, :ref:`G.479 <G.479>`, :ref:`G.480 <G.480>`, :ref:`G.481 <G.481>`, :ref:`G.482 <G.482>`, :ref:`G.483 <G.483>`, :ref:`G.484 <G.484>`, :ref:`G.485 <G.485>`, :ref:`G.486 <G.486>`, :ref:`G.489 <G.489>`, :ref:`G.490 <G.490>`, :ref:`G.491 <G.491>`, :ref:`G.492 <G.492>`, :ref:`G.493 <G.493>`, :ref:`G.494 <G.494>`, :ref:`G.495 <G.495>`, :ref:`G.496 <G.496>`, :ref:`G.497 <G.497>`, :ref:`G.499 <G.499>`, :ref:`G.500 <G.500>`, :ref:`G.501 <G.501>`, :ref:`G.502 <G.502>`, :ref:`G.505 <G.505>`, :ref:`G.506 <G.506>`, :ref:`G.520 <G.520>`, :ref:`G.521 <G.521>`, :ref:`G.524 <G.524>`, :ref:`G.525 <G.525>`
+
+.. toctree::
+   :hidden:
+
+   code
+   heath

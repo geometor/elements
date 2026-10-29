@@ -347,7 +347,7 @@ def strip_folio_milestones(rst_body: str) -> str:
 
 
 def strip_footnotes(rst_body: str) -> str:
-    """Remove Heath's inline footnote references ([#f1]_) and footnote definition blocks (.. [#f1] ...)."""
+    """Remove Heath's inline footnote references (``[#f1]_``) and footnote definition blocks (``.. [#f1]``)."""
     cleaned = re.sub(
         r"^\.\.\s+\[#[^\]]+\][^\n]*(?:\n(?:[ \t]+[^\n]*|[ \t]*))*",
         "",
@@ -496,6 +496,34 @@ def extract_taxonomy(
     return categories, tags, subtype
 
 
+def _extract_referenced_svgs_and_pys(
+    rst_body: str, parent_dir: Path, canonical_ref: str
+) -> Tuple[List[Path], List[Path]]:
+    """Extract SVG files referenced by .. picture:: in rst_body and their companion g<k>.py construction scripts."""
+    svg_names = re.findall(
+        r"^\.\.\s+picture::\s+(\S+\.svg)", rst_body, flags=re.MULTILINE
+    )
+    seen_svgs: Set[str] = set()
+    svg_files: List[Path] = []
+    py_files: List[Path] = []
+    project_root = Path(__file__).parent.parent.parent.parent
+    constructions_dir = project_root / "resources" / "constructions" / canonical_ref
+
+    for name in svg_names:
+        if name in seen_svgs:
+            continue
+        seen_svgs.add(name)
+        svg_path = parent_dir / name
+        if svg_path.is_file():
+            svg_files.append(svg_path)
+            idx = len(svg_files)
+            py_path = constructions_dir / f"g{idx}.py"
+            if py_path.is_file():
+                py_files.append(py_path)
+
+    return svg_files, py_files
+
+
 def parse_grouped_items_file(
     rst_path: Path, heath_root: Path
 ) -> List[Dict[str, Any]]:
@@ -521,8 +549,8 @@ def parse_grouped_items_file(
         chunk = body[start_pos:end_pos].strip()
         chunk = strip_folio_milestones(chunk)
         chunk = strip_footnotes(chunk)
-        # Strip leading item number (e.g. "15. " or "**1.** ")
-        chunk = re.sub(r"^(?:\*\*\d+\.\*\*|\d+\.)\s+", "", chunk, count=1)
+        # Strip leading item number (e.g. "15. ", "**1.** ", or "[7] 4. ")
+        chunk = re.sub(r"^(?:\[\d+\]\s*)*(?:\*\*\d+\.\*\*|\d+\.)?\s*", "", chunk, count=1)
 
         node_type = get_node_type(item_id)
         anchor = re.sub(r"[^a-z0-9]+", "-", item_id.lower()).strip("-")
@@ -530,6 +558,9 @@ def parse_grouped_items_file(
 
         categories, tags, subtype = extract_taxonomy(
             item_id, node_type, book_roman, chunk
+        )
+        svg_files, py_files = _extract_referenced_svgs_and_pys(
+            chunk, rst_path.parent, item_id
         )
 
         items.append(
@@ -541,7 +572,8 @@ def parse_grouped_items_file(
                 "volume": volume_roman,
                 "dependencies": [],
                 "content_rst": chunk,
-                "svg_files": [],
+                "svg_files": svg_files,
+                "py_files": py_files,
                 "heath_url": heath_url,
                 "categories": categories,
                 "tags": tags,
@@ -591,7 +623,9 @@ def parse_proposition_file(
             if norm_d and norm_d != cid and norm_d not in deps:
                 deps.append(norm_d)
 
-    svg_files = sorted(rst_path.parent.glob("*.svg"))
+    svg_files, py_files = _extract_referenced_svgs_and_pys(
+        body, rst_path.parent, cid
+    )
     rel_dir = rst_path.parent.relative_to(heath_root).as_posix()
     heath_url = f"https://geometor.github.io/euclid/heath/{rel_dir}/"
 
@@ -606,6 +640,7 @@ def parse_proposition_file(
         "dependencies": deps,
         "content_rst": body,
         "svg_files": svg_files,
+        "py_files": py_files,
         "heath_url": heath_url,
         "categories": categories,
         "tags": tags,

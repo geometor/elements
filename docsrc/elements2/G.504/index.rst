@@ -9,7 +9,7 @@
 :category: definition, solid-geometry
 :tags: book-xi, sphere, semicircle
 :dependencies: 
-:excerpt: When, the diameter of a semicircle remaining fixed, the semicircle is carried round and restored again to the same position from which it began to be moved, the figure so comprehended is a sphere.
+:excerpt: When, the diameter of a semicircle remaining fixed, the semicircle is carried round and restored again to the same position from which it began to be moved, the figure so comprehended is asphere.
 
 .. _G.504:
 .. _XI.def.14:
@@ -21,9 +21,14 @@ G.504
 
 .. enunciation::
 
-   When, the diameter of a semicircle remaining fixed, the semicircle is carried round and restored again to the same position from which it began to be moved, the figure so comprehended is a :term:`**sphere** <sphere>`.
+   When, the diameter of a semicircle remaining fixed, the semicircle is carried round and restored again to the same position from which it began to be moved, the figure so comprehended is a:term:`**sphere** <sphere>`.
 
 Required for
 ------------
 
 :ref:`G.505 <G.505>`, :ref:`G.506 <G.506>`
+
+.. toctree::
+   :hidden:
+
+   heath

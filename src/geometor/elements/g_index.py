@@ -26,6 +26,7 @@ from .graph import (
     g_dependency_sort_key,
     parse_justification_arg,
 )
+from .pseudocode import generate_pseudocode_rst
 
 _G_ROLE_RE = re.compile(r":g:`([^`]+)`")
 _TERM_ROLE_RE = re.compile(r":term:`([^`]+)`")
@@ -359,11 +360,39 @@ def generate_g_index(
         tags = node_data.get("tags", [])
         heath_url = node_data.get("heath_url", "")
         svg_files: List[Path] = node_data.get("svg_files", [])
+        py_files: List[Path] = node_data.get("py_files", [])
 
-        # Copy interactive SVG figures into node_dir
-        for svg_path in svg_files:
+        # Map original <folio>.g<k> stems to clean sequential g1, g2, ...
+        gid_map: Dict[str, str] = {}
+        local_svg_names: List[str] = []
+        for idx, svg_path in enumerate(svg_files, start=1):
+            new_gid = f"g{idx}"
+            gid_map[svg_path.stem] = new_gid
+            dest_svg_name = f"{new_gid}.svg"
+            local_svg_names.append(dest_svg_name)
             if svg_path.is_file():
-                shutil.copy2(svg_path, node_dir / svg_path.name)
+                svg_text = svg_path.read_text(encoding="utf-8")
+                svg_text = re.sub(
+                    r'\s+data-folio="[^"]*"', "", svg_text
+                )
+                svg_text = re.sub(
+                    r'data-graphic-id="[^"]*"',
+                    f'data-graphic-id="{new_gid}"',
+                    svg_text,
+                )
+                svg_text = re.sub(
+                    r'data-graphic="[^"]*"',
+                    f'data-graphic="{new_gid}"',
+                    svg_text,
+                )
+                (node_dir / dest_svg_name).write_text(svg_text, encoding="utf-8")
+
+        local_py_names: List[str] = []
+        for idx, py_path in enumerate(py_files, start=1):
+            dest_py_name = f"g{idx}.py"
+            local_py_names.append(dest_py_name)
+            if py_path.is_file():
+                shutil.copy2(py_path, node_dir / dest_py_name)
 
         # Map dependencies to G-IDs sorted in G-order
         deps_g: List[str] = []
@@ -374,19 +403,27 @@ def generate_g_index(
         deps_g.sort(key=g_num_sort_key)
         deps_str = ", ".join(deps_g)
 
-        # Transform content body
+        # Transform content body (Heath edition with GEOMETOR roles and G.<n> justifications)
         raw_content = node_data.get("content_rst", "")
+        for old_stem, new_gid in gid_map.items():
+            raw_content = raw_content.replace(f"{old_stem}.svg", f"{new_gid}.svg")
+            raw_content = raw_content.replace(f"{old_stem}:", f"{new_gid}:")
+        raw_content = re.sub(r"\b\d{4}\.(g\d+):", r"\1:", raw_content)
+
         if node_type in ("def", "post", "cn"):
             raw_content = wrap_as_enunciation(raw_content)
 
-        content = transform_geom_roles(raw_content)
-        content = transform_justifications(content, book_roman, id_map)
-        content = transform_refs(content, id_map)
+        heath_content = transform_geom_roles(raw_content)
+        heath_content = transform_justifications(heath_content, book_roman, id_map)
+        heath_content = transform_refs(heath_content, id_map)
 
-        excerpt = clean_plain_excerpt(content)
+        # Generate Pseudocode track content with tightened enunciation and .. step:: sequence
+        pseudo_content = generate_pseudocode_rst(heath_content, node_ref, node_type)
+
+        excerpt = clean_plain_excerpt(pseudo_content)
         node_data["g_excerpt"] = excerpt
 
-        # Metadata header
+        # Metadata header for primary track (index.rst)
         meta_lines = [
             f":order: {g_id}",
             f":number: {g_id}",
@@ -411,37 +448,97 @@ def generate_g_index(
         heath_link = f"`{node_ref} <{heath_url}>`_" if heath_url else f"``{node_ref}``"
         title_underline = "=" * len(g_name)
 
-        sections: List[str] = [
-            "\n".join(meta_lines),
-            f".. _{g_name}:\n.. _{node_ref}:\n\n{g_name}\n{title_underline}",
-            f".. rubric:: {heath_link}",
-            content,
-        ]
-
-        # Dependency Graph
+        # Dependency Graph & Required For (shared by Pseudocode and Heath tracks)
         dot_str = generate_g_dot(G, node_ref, id_map)
+        dep_graph_section = ""
         if dot_str:
             indented_dot = "\n".join(f"   {line}" for line in dot_str.splitlines())
-            sections.append(
+            dep_graph_section = (
                 f"Dependency Graph\n----------------\n\n.. graphviz::\n\n{indented_dot}"
             )
 
-        # Required For
         ancestors = sorted(
             list(nx.ancestors(G, node_ref)),
             key=lambda a: g_num_sort_key(id_map.get(a, a)),
         )
+        req_for_section = ""
         if ancestors:
             ref_links = [
                 f":ref:`{id_map[a]} <{id_map[a]}>`" if a in id_map else a
                 for a in ancestors
             ]
-            sections.append(
-                f"Required for\n------------\n\n{', '.join(ref_links)}"
-            )
+            req_for_section = f"Required for\n------------\n\n{', '.join(ref_links)}"
 
-        rendered_rst = "\n\n".join(s for s in sections if s).strip() + "\n"
-        (node_dir / "index.rst").write_text(rendered_rst, encoding="utf-8")
+        # Companion track toctree (hidden)
+        toctree_entries = []
+        if local_py_names:
+            toctree_entries.append("   code")
+        toctree_entries.append("   heath")
+        toctree_section = ".. toctree::\n   :hidden:\n\n" + "\n".join(toctree_entries)
+
+        # Track 1: index.rst (Pseudocode)
+        index_sections: List[str] = [
+            "\n".join(meta_lines),
+            f".. _{g_name}:\n.. _{node_ref}:\n\n{g_name}\n{title_underline}",
+            f".. rubric:: {heath_link}",
+            pseudo_content,
+            dep_graph_section,
+            req_for_section,
+            toctree_section,
+        ]
+        rendered_index = "\n\n".join(s for s in index_sections if s).strip() + "\n"
+        (node_dir / "index.rst").write_text(rendered_index, encoding="utf-8")
+
+        # Auxiliary metadata header for Code and Heath tracks
+        aux_meta = "\n".join(
+            [
+                f":canonical_id: {g_name}",
+                f":original_id: {node_ref}",
+                f":volume: {volume_roman}",
+                f":book: {book_roman}",
+                f":type: {node_type}",
+            ]
+        )
+
+        # Track 2: code.rst (Code - only when .py construction scripts exist)
+        if local_py_names:
+            code_title = f"{g_name} — Code"
+            code_sections: List[str] = [
+                aux_meta,
+                f"{code_title}\n{'=' * len(code_title)}",
+                f".. rubric:: {heath_link}",
+            ]
+            enun_m = re.search(
+                r"(\.\.\s+enunciation::\n+(?:[ \t]+[^\n]*\n+|\n)*)",
+                pseudo_content,
+            )
+            if enun_m:
+                code_sections.append(enun_m.group(1).strip())
+
+            for idx, py_name in enumerate(local_py_names):
+                if len(local_py_names) > 1:
+                    code_sections.append(f".. rubric:: ``{py_name}``")
+                if idx < len(local_svg_names):
+                    code_sections.append(f".. picture:: {local_svg_names[idx]}")
+                code_sections.append(
+                    f".. literalinclude:: {py_name}\n   :language: python"
+                )
+
+            rendered_code = "\n\n".join(s for s in code_sections if s).strip() + "\n"
+            (node_dir / "code.rst").write_text(rendered_code, encoding="utf-8")
+
+        # Track 3: heath.rst (Heath)
+        heath_title = f"{g_name} — Heath"
+        heath_sections: List[str] = [
+            aux_meta,
+            f"{heath_title}\n{'=' * len(heath_title)}",
+            f".. rubric:: {heath_link}",
+            heath_content,
+            dep_graph_section,
+            req_for_section,
+        ]
+        rendered_heath = "\n\n".join(s for s in heath_sections if s).strip() + "\n"
+        (node_dir / "heath.rst").write_text(rendered_heath, encoding="utf-8")
 
     # 3. Generate Orphans page
     if orphans:

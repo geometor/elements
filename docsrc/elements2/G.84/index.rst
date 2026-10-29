@@ -24,54 +24,68 @@ G.84
 
    If a point be taken within a circle, and more than two equal straight lines fall from the point on the circle, the point taken is the centre of the circle.
 
-Let :g:`( A B C ) <0027.g1:( A B C )>` be a circle and :g:`D <0027.g1:D>` a point within it, and from :g:`D <0027.g1:D>` let more than two :eq:`equal <0027.g1:/ D A / = 0027.g1:/ D B / = 0027.g1:/ D C />` straight lines, namely :g:`/ D A / <0027.g1:/ D A />`, :g:`/ D B / <0027.g1:/ D B />`, :g:`/ D C / <0027.g1:/ D C />`, fall on the circle :g:`( A B C ) <0027.g1:( A B C )>`;
-
-I say that the point :g:`D <0027.g1:D>` is the centre of the circle :g:`( A B C ) <0027.g1:( A B C )>`.
-
-.. picture:: 0027.g1.svg
+.. picture:: g1.svg
    :alt: Diagram for Proposition 9
 
-For let :g:`/ A B / <0027.g1:/ A B />`, :g:`/ B C / <0027.g1:/ B C />` be joined and :eq:`bisected <0027.g1:/ A E / = 0027.g1:/ E B /; 0027.g1:/ B F / = 0027.g1:/ F C />` at the points :g:`E <0027.g1:E>`, :g:`F <0027.g1:F>`, and let :g:`/ E D / <0027.g1:/ E D />`, :g:`/ F D / <0027.g1:/ F D />` be joined and drawn through to the points :g:`G <0027.g1:G>`, :g:`K <0027.g1:K>`, :g:`H <0027.g1:H>`, :g:`L <0027.g1:L>`.
+.. step:: given
 
-Then, since :g:`/ A E / <0027.g1:/ A E />` is :eq:`equal <0027.g1:/ A E / = 0027.g1:/ E B />` to :g:`/ E B / <0027.g1:/ E B />`, and :g:`/ E D / <0027.g1:/ E D />` is common,
+   :g:`( A B C ) <g1:( A B C )>` be a circle and :g:`D <g1:D>` a point within it
 
-.. subclause::
+.. step:: assert
 
-   the two sides :g:`/ A E / <0027.g1:/ A E />`, :g:`/ E D / <0027.g1:/ E D />` are :eq:`equal <0027.g1:/ A E / = 0027.g1:/ B E />` to the two sides :g:`/ B E / <0027.g1:/ B E />`, :g:`/ E D / <0027.g1:/ E D />`;
+   From :g:`D <g1:D>` let more than two :eq:`equal <g1:/ D A / = g1:/ D B / = g1:/ D C />` straight lines, namely :g:`/ D A / <g1:/ D A />`, :g:`/ D B / <g1:/ D B />`, :g:`/ D C / <g1:/ D C />`, fall on :g:`( A B C ) <g1:( A B C )>`
 
-and the base :g:`/ D A / <0027.g1:/ D A />` is :eq:`equal <0027.g1:/ D A / = 0027.g1:/ D B />` to the base :g:`/ D B / <0027.g1:/ D B />`;
+.. step:: construct
 
-.. assertion:: [G.15] <G.15>
+   For let :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` be joined and :eq:`bisected <g1:/ A E / = g1:/ E B /; g1:/ B F / = g1:/ F C />` at :g:`E <g1:E>`, :g:`F <g1:F>`
 
-   therefore the angle :g:`< A E D ) <0027.g1:< A E D )>` is :eq:`equal <0027.g1:< A E D ) = 0027.g1:< B E D )>` to the angle :g:`< B E D ) <0027.g1:< B E D )>`.
+.. step:: construct
 
-.. assertion:: [G.18] <G.18>
+   Let :g:`/ E D / <g1:/ E D />`, :g:`/ F D / <g1:/ F D />` be joined and drawn through to :g:`G <g1:G>`, :g:`K <g1:K>`, :g:`H <g1:H>`, :g:`L <g1:L>`.
 
-   Therefore each of the angles :g:`< A E D ) <0027.g1:< A E D )>`, :g:`< B E D ) <0027.g1:< B E D )>` is :eq:`right <0027.g1:< A E D ) = 0027.g1:< B E D )>`;
+.. step:: assert
 
-therefore :g:`/ G K / <0027.g1:/ G K />` cuts :g:`/ A B / <0027.g1:/ A B />` into two :eq:`equal <0027.g1:/ A E / = 0027.g1:/ E B />` parts and at :eq:`right angles <0027.g1:< A E D ) = 0027.g1:< B E D )>`.
+   Since :g:`/ A E / <g1:/ A E />` is :eq:`equal <g1:/ A E / = g1:/ E B />` to :g:`/ E B / <g1:/ E B />`, and :g:`/ E D / <g1:/ E D />` is common → the two sides :g:`/ A E / <g1:/ A E />`, :g:`/ E D / <g1:/ E D />` are :eq:`equal <g1:/ A E / = g1:/ B E />` to the two sides :g:`/ B E / <g1:/ B E />`, :g:`/ E D / <g1:/ E D />`;
 
-And since, if in a circle a straight line cut a straight line into two equal parts and at right angles, the centre of the circle is on the cutting straight line, :just:`[G.76] <G.76>`
+.. step:: assert
 
-.. assertion::
+   And the base :g:`/ D A / <g1:/ D A />` is :eq:`equal <g1:/ D A / = g1:/ D B />` to the base :g:`/ D B / <g1:/ D B />`
 
-   the centre of the circle is on :g:`/ G K / <0027.g1:/ G K />`.
+.. step:: assert [G.15] <G.15>
 
-For the same reason
+   Therefore :g:`< A E D ) <g1:< A E D )>` is :eq:`equal <g1:< A E D ) = g1:< B E D )>` to :g:`< B E D ) <g1:< B E D )>`.
 
-.. assertion::
+.. step:: assert [G.18] <G.18>
 
-   the centre of the circle :g:`( A B C ) <0027.g1:( A B C )>` is also on :g:`/ H L / <0027.g1:/ H L />`.
+   Therefore each of :g:`< A E D ) <g1:< A E D )>`, :g:`< B E D ) <g1:< B E D )>` is :eq:`right <g1:< A E D ) = g1:< B E D )>`;
 
-And the straight lines :g:`/ G K / <0027.g1:/ G K />`, :g:`/ H L / <0027.g1:/ H L />` have no other point common but the point :g:`D <0027.g1:D>`;
+.. step:: assert
 
-.. assertion::
+   Therefore :g:`/ G K / <g1:/ G K />` cuts :g:`/ A B / <g1:/ A B />` into two :eq:`equal <g1:/ A E / = g1:/ E B />` parts and at :eq:`right angles <g1:< A E D ) = g1:< B E D )>`.
 
-   therefore the point :g:`D <0027.g1:D>` is the centre of the circle :g:`( A B C ) <0027.g1:( A B C )>`.
+.. step:: assert [G.76] <G.76>
 
-.. qed::
+   Since, if in a circle a straight line cut a straight line into two equal parts and at right angles, the center of the circle is on the cutting straight line.
 
-   Therefore etc. :just:`Q. E. D.`
+.. step:: assert
+
+   The center of the circle is on :g:`/ G K / <g1:/ G K />`.
+
+.. step:: assert
+
+   For the same reason
+
+.. step:: assert
+
+   The center of :g:`( A B C ) <g1:( A B C )>` is also on :g:`/ H L / <g1:/ H L />`.
+
+.. step:: assert
+
+   :g:`/ G K / <g1:/ G K />`, :g:`/ H L / <g1:/ H L />` have no other point common but :g:`D <g1:D>`
+
+.. step:: conclude
+
+   Therefore :g:`D <g1:D>` is the center of :g:`( A B C ) <g1:( A B C )>`.
 
 Dependency Graph
 ----------------
@@ -83,22 +97,22 @@ Dependency Graph
      node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11, color="#d6d3cd", fontcolor="#ffffff"];
      edge [color="#8c857b", fontcolor="#8c857b", arrowsize=0.75];
      rankdir="TB";
-     "G.1" [label="G.1", tooltip="G.1 (I.cn.1): Things which are equal to the same thing are also equal to one another.", fillcolor="#442222", URL="../G.1/index.html", target="_top"];
-     "G.2" [label="G.2", tooltip="G.2 (I.def.15): A circle is a plane figure contained by one line such that all the straight lines falling upon it from one point among those lying within the figure are equal to one another ;", fillcolor="#224422", URL="../G.2/index.html", target="_top"];
-     "G.3" [label="G.3", tooltip="G.3 (I.post.1): To draw a straight line from any point to any point.", fillcolor="#444422", URL="../G.3/index.html", target="_top"];
-     "G.4" [label="G.4", tooltip="G.4 (I.post.3): To describe a circle with any centre and distance.", fillcolor="#444422", URL="../G.4/index.html", target="_top"];
-     "G.5" [label="G.5", tooltip="G.5 (I.1): On a given finite straight line to construct an equilateral triangle.", fillcolor="#222244", URL="../G.5/index.html", target="_top"];
-     "G.6" [label="G.6", tooltip="G.6 (I.cn.3): If equals be subtracted from equals, the remainders are equal.", fillcolor="#442222", URL="../G.6/index.html", target="_top"];
-     "G.7" [label="G.7", tooltip="G.7 (I.post.2): To produce a finite straight line continuously in a straight line.", fillcolor="#444422", URL="../G.7/index.html", target="_top"];
-     "G.8" [label="G.8", tooltip="G.8 (I.2): To place at a given point (as an extremity) a straight line equal to a given straight line.", fillcolor="#222244", URL="../G.8/index.html", target="_top"];
-     "G.9" [label="G.9", tooltip="G.9 (I.3): Given two unequal straight lines, to cut off from the greater a straight line equal to the less.", fillcolor="#222244", URL="../G.9/index.html", target="_top"];
-     "G.10" [label="G.10", tooltip="G.10 (I.cn.4): [7] 4. Things which coincide with one another are equal to one another.", fillcolor="#442222", URL="../G.10/index.html", target="_top"];
-     "G.11" [label="G.11", tooltip="G.11 (I.4): If two triangles have the two sides equal to two sides respectively, and have the angles contained by the equal straight lines equal, they will also have the base equal to the base...", fillcolor="#222244", URL="../G.11/index.html", target="_top"];
-     "G.12" [label="G.12", tooltip="G.12 (I.5): In isosceles triangles the angles at the base are equal to one another, and, if the equal straight lines be produced further, the angles under the base will be equal to one another...", fillcolor="#222244", URL="../G.12/index.html", target="_top"];
-     "G.14" [label="G.14", tooltip="G.14 (I.7): Given two straight lines constructed on a straight line (from its extremities) and meeting in a point, there cannot be constructed on the same straight line (from its extremities),...", fillcolor="#222244", URL="../G.14/index.html", target="_top"];
-     "G.15" [label="G.15", tooltip="G.15 (I.8): If two triangles have the two sides equal to two sides respectively, and have also the base equal to the base, they will also have the angles equal which are contained by the equal...", fillcolor="#222244", URL="../G.15/index.html", target="_top"];
-     "G.18" [label="G.18", tooltip="G.18 (I.def.10): When a straight line set up on a straight line makes the adjacent angles equal to one another, each of the equal angles is right, and the straight line standing on the other is cal...", fillcolor="#224422", URL="../G.18/index.html", target="_top"];
-     "G.76" [label="G.76", tooltip="G.76 (III.1): To find the centre of a given circle.", fillcolor="#222244", URL="../G.76/index.html", target="_top"];
+     "G.1" [label="G.1", tooltip="G.1 (I.cn.1): Things equal to the same thing are equal to one another.", fillcolor="#442222", URL="../G.1/index.html", target="_top"];
+     "G.2" [label="G.2", tooltip="G.2 (I.def.15): A circle is a plane figure contained by one line such that all segments falling upon it from its center are equal.", fillcolor="#224422", URL="../G.2/index.html", target="_top"];
+     "G.3" [label="G.3", tooltip="G.3 (I.post.1): Construct a segment between any two points.", fillcolor="#444422", URL="../G.3/index.html", target="_top"];
+     "G.4" [label="G.4", tooltip="G.4 (I.post.3): Construct a circle with any center and radius.", fillcolor="#444422", URL="../G.4/index.html", target="_top"];
+     "G.5" [label="G.5", tooltip="G.5 (I.1): Construct an equilateral triangle on a given finite segment.", fillcolor="#222244", URL="../G.5/index.html", target="_top"];
+     "G.6" [label="G.6", tooltip="G.6 (I.cn.3): If equals are subtracted from equals, the remainders are equal.", fillcolor="#442222", URL="../G.6/index.html", target="_top"];
+     "G.7" [label="G.7", tooltip="G.7 (I.post.2): Extend a finite segment continuously in a straight line.", fillcolor="#444422", URL="../G.7/index.html", target="_top"];
+     "G.8" [label="G.8", tooltip="G.8 (I.2): Construct at a given point a segment equal to a given segment.", fillcolor="#222244", URL="../G.8/index.html", target="_top"];
+     "G.9" [label="G.9", tooltip="G.9 (I.3): Cut off from the greater of two unequal segments a segment equal to the less.", fillcolor="#222244", URL="../G.9/index.html", target="_top"];
+     "G.10" [label="G.10", tooltip="G.10 (I.cn.4): Things that coincide with one another are equal.", fillcolor="#442222", URL="../G.10/index.html", target="_top"];
+     "G.11" [label="G.11", tooltip="G.11 (I.4): Triangles with two sides and the included angle equal are congruent (SAS).", fillcolor="#222244", URL="../G.11/index.html", target="_top"];
+     "G.12" [label="G.12", tooltip="G.12 (I.5): In an isosceles triangle, the angles at the base are equal, and if the equal sides are extended, the angles under the base are equal.", fillcolor="#222244", URL="../G.12/index.html", target="_top"];
+     "G.14" [label="G.14", tooltip="G.14 (I.7): On the same segment and on the same side, there cannot be constructed two distinct triangles with both pairs of conterminous sides equal.", fillcolor="#222244", URL="../G.14/index.html", target="_top"];
+     "G.15" [label="G.15", tooltip="G.15 (I.8): Triangles with all three corresponding sides equal have their corresponding angles equal (SSS).", fillcolor="#222244", URL="../G.15/index.html", target="_top"];
+     "G.18" [label="G.18", tooltip="G.18 (I.def.10): When a straight line standing on a straight line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing line is perpendicular to that on which...", fillcolor="#224422", URL="../G.18/index.html", target="_top"];
+     "G.76" [label="G.76", tooltip="G.76 (III.1): Find the centre of a given circle.", fillcolor="#222244", URL="../G.76/index.html", target="_top"];
      "G.84" [label="G.84", tooltip="G.84 (III.9): If a point be taken within a circle, and more than two equal straight lines fall from the point on the circle, the point taken is the centre of the circle.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.5" -> "G.1";
      "G.8" -> "G.1";
@@ -133,3 +147,9 @@ Required for
 ------------
 
 :ref:`G.104 <G.104>`
+
+.. toctree::
+   :hidden:
+
+   code
+   heath

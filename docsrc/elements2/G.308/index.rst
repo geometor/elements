@@ -24,38 +24,36 @@ G.308
 
    If a number have its half odd, it is even-times odd only.
 
-For let the number :g:`A <0425.g1:A>` have its half odd;
-
-I say that :g:`A <0425.g1:A>` is even-times odd only.
-
-.. picture:: 0425.g1.svg
+.. picture:: g1.svg
    :alt: Proposition 33 Diagram
 
-.. assertion::
+.. step:: assert
 
-   Now that it is even-times odd is manifest; for the half of it, being odd, measures it an even number of times. :just:`[G.307] <G.307>`
+   For let the number :g:`A <g1:A>` have its half odd
 
-I say next that it is also even-times odd only.
+.. step:: assert [G.307] <G.307>
 
-.. subclause::
+   Now that it is even-times odd is manifest; for the half of it, being odd, measures it an even number of times.
 
-   For, if :g:`A <0425.g1:A>` is even-times even also,
+.. step:: assert
 
-.. assertion::
+   I say next that it is also even-times odd only.
 
-   it will be measured by an even number according to an even number; :just:`[G.305] <G.305>`
+.. step:: assert
 
-.. assertion::
+   If :g:`A <g1:A>` is even-times even also,
 
-   so that the half of it will also be measured by an even number though it is odd: which is absurd.
+.. step:: assert [G.305] <G.305>
 
-.. assertion::
+   It will be measured by an even number according to an even number.
 
-   Therefore :g:`A <0425.g1:A>` is even-times odd only.
+.. step:: assert
 
-.. qed::
+   So that the half of it will also be measured by an even number though it is odd: which is absurd.
 
-   :just:`Q. E. D.`
+.. step:: conclude
+
+   Therefore :g:`A <g1:A>` is even-times odd only.
 
 Dependency Graph
 ----------------
@@ -67,9 +65,15 @@ Dependency Graph
      node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11, color="#d6d3cd", fontcolor="#ffffff"];
      edge [color="#8c857b", fontcolor="#8c857b", arrowsize=0.75];
      rankdir="TB";
-     "G.305" [label="G.305", tooltip="G.305 (VII.def.8): An even-times even number is that which is measured by an even number according to an even number.", fillcolor="#224422", URL="../G.305/index.html", target="_top"];
-     "G.307" [label="G.307", tooltip="G.307 (VII.def.9): An even-times odd number is that which is measured by an even number according to an odd number.", fillcolor="#224422", URL="../G.307/index.html", target="_top"];
+     "G.305" [label="G.305", tooltip="G.305 (VII.def.8): Aneven-times even number is that which is measured by an even number according to an even number.", fillcolor="#224422", URL="../G.305/index.html", target="_top"];
+     "G.307" [label="G.307", tooltip="G.307 (VII.def.9): Aneven-times odd number is that which is measured by an even number according to an odd number.", fillcolor="#224422", URL="../G.307/index.html", target="_top"];
      "G.308" [label="G.308", tooltip="G.308 (IX.33): If a number have its half odd, it is even-times odd only.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.308" -> "G.305";
      "G.308" -> "G.307";
    }
+
+.. toctree::
+   :hidden:
+
+   code
+   heath

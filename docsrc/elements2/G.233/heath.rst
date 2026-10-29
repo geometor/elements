@@ -1,0 +1,52 @@
+:canonical_id: G.233
+:original_id: VII.32
+:volume: II
+:book: VII
+:type: prop
+
+G.233 — Heath
+=============
+
+.. rubric:: `VII.32 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/32/>`_
+
+.. enunciation::
+
+   Any number either is prime or is measured by some prime number.
+
+Let :g:`A <g1:A>` be a number;
+
+I say that :g:`A <g1:A>` either is prime or is measured by some prime number.
+
+.. subclause::
+
+   If now :g:`A <g1:A>` is prime, that which was enjoined will have been done.
+
+.. picture:: g1.svg
+   :alt: Proposition 32 diagram
+
+.. subclause:: [G.232] <G.232>
+
+   But if it is composite, some prime number will measure it.
+
+.. assertion::
+
+   Therefore any number either is prime or is measured by some prime number.
+
+.. qed::
+
+   :just:`Q. E. D.`
+
+Dependency Graph
+----------------
+
+.. graphviz::
+
+   digraph {
+     bgcolor="transparent";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11, color="#d6d3cd", fontcolor="#ffffff"];
+     edge [color="#8c857b", fontcolor="#8c857b", arrowsize=0.75];
+     rankdir="TB";
+     "G.232" [label="G.232", tooltip="G.232 (VII.31): Any composite number is measured by some prime number.", fillcolor="#222244", URL="../G.232/index.html", target="_top"];
+     "G.233" [label="G.233", tooltip="G.233 (VII.32): Any number either is prime or is measured by some prime number.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.233" -> "G.232";
+   }

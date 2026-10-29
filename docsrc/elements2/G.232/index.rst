@@ -24,58 +24,70 @@ G.232
 
    Any composite number is measured by some prime number.
 
-Let :g:`A <0338.g1:A>` be a composite number;
-
-I say that :g:`A <0338.g1:A>` is measured by some prime number.
-
-.. subclause::
-
-   For, since :g:`A <0338.g1:A>` is composite, some number will measure it.
-
-Let a number measure it, and let it be :g:`B <0338.g1:B>`.
-
-.. picture:: 0338.g1.svg
+.. picture:: g1.svg
    :alt: Proposition 31 diagram
 
-.. subclause::
+.. step:: given
 
-   Now, if :g:`B <0338.g1:B>` is prime, what was enjoined will have been done.
+   :g:`A <g1:A>` be a composite number
 
-.. subclause::
+.. step:: assert
 
-   But if it is composite, some number will measure it.
+   Since :g:`A <g1:A>` is composite, some number will measure it.
 
-Let a number measure it, and let it be :g:`C <0338.g1:C>`.
+.. step:: assert
 
-.. subclause::
+   Let a number measure it
 
-   Then, since :g:`C <0338.g1:C>` measures :g:`B <0338.g1:B>`, and :g:`B <0338.g1:B>` measures :g:`A <0338.g1:A>`,
+.. step:: assert
 
-.. assertion::
+   Let it be :g:`B <g1:B>`.
 
-   therefore :g:`C <0338.g1:C>` also measures :g:`A <0338.g1:A>`.
+.. step:: assert
 
-.. subclause::
+   If :g:`B <g1:B>` is prime, what was enjoined will have been done.
 
-   And, if :g:`C <0338.g1:C>` is prime, what was enjoined will have been done.
+.. step:: assert
 
-.. subclause::
+   If it is composite, some number will measure it.
 
-   But if it is composite, some number will measure it.
+.. step:: assert
 
-.. assertion::
+   Let a number measure it
 
-   Thus, if the investigation be continued in this way, some prime number will be found which will measure the number before it, which will also measure :g:`A <0338.g1:A>`.
+.. step:: assert
 
-.. subclause::
+   Let it be :g:`C <g1:C>`.
 
-   For, if it is not found, an infinite series of numbers will measure the number :g:`A <0338.g1:A>`, each of which is less than the other: which is impossible in numbers.
+.. step:: assert
 
-.. assertion::
+   Since :g:`C <g1:C>` measures :g:`B <g1:B>`, and :g:`B <g1:B>` measures :g:`A <g1:A>`,
 
-   Therefore some prime number will be found which will measure the one before it, which will also measure :g:`A <0338.g1:A>`.
+.. step:: assert
 
-.. assertion::
+   Therefore :g:`C <g1:C>` also measures :g:`A <g1:A>`.
+
+.. step:: assert
+
+   And, if :g:`C <g1:C>` is prime, what was enjoined will have been done.
+
+.. step:: assert
+
+   If it is composite, some number will measure it.
+
+.. step:: assert
+
+   Thus, if the investigation be continued in this way, some prime number will be found which will measure the number before it, which will also measure :g:`A <g1:A>`.
+
+.. step:: assert
+
+   If it is not found, an infinite series of numbers will measure the number :g:`A <g1:A>`, each of which is less than the other: which is impossible in numbers.
+
+.. step:: assert
+
+   Therefore some prime number will be found which will measure the one before it, which will also measure :g:`A <g1:A>`.
+
+.. step:: conclude
 
    Therefore any composite number is measured by some prime number.
 
@@ -83,3 +95,9 @@ Required for
 ------------
 
 :ref:`G.233 <G.233>`, :ref:`G.284 <G.284>`, :ref:`G.291 <G.291>`, :ref:`G.306 <G.306>`, :ref:`G.312 <G.312>`
+
+.. toctree::
+   :hidden:
+
+   code
+   heath

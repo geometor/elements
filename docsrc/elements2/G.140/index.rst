@@ -10,7 +10,7 @@
 :category: theorem, proof, proportions, magnitudes
 :tags: book-v, segment, equality
 :dependencies: G.135
-:excerpt: If a magnitude be the same multiple of a magnitude that a part subtracted is of a part subtracted, the remainder will also be the same multiple of the remainder that the whole is of the whole.
+:excerpt: If a magnitude be the same multiple of a magnitude that a part subtracted is of a part subtracted, the remainder is the same multiple of the remainder that the whole is of the whole.
 
 .. _G.140:
 .. _V.5:
@@ -22,66 +22,70 @@ G.140
 
 .. enunciation::
 
-   If a magnitude be the same multiple of a magnitude that a part subtracted is of a part subtracted, the remainder will also be the same multiple of the remainder that the whole is of the whole.
+   If a magnitude be the same multiple of a magnitude that a part subtracted is of a part subtracted, the remainder is the same multiple of the remainder that the whole is of the whole.
 
-For let the magnitude :g:`/ A B / <0151.g1:/ A B />` be the same multiple of the magnitude :g:`/ C D / <0151.g1:/ C D />` that the part :g:`/ A E / <0151.g1:/ A E />` subtracted is of the part :g:`/ C F / <0151.g1:/ C F />` subtracted;
-
-I say that the remainder :g:`/ E B / <0151.g1:/ E B />` is also the same multiple of the remainder :g:`/ F D / <0151.g1:/ F D />` that the whole :g:`/ A B / <0151.g1:/ A B />` is of the whole :g:`/ C D / <0151.g1:/ C D />`.
-
-.. picture:: 0151.g1.svg
+.. picture:: g1.svg
    :alt: Proposition 5 Diagram
 
-For, whatever multiple :g:`/ A E / <0151.g1:/ A E />` is of :g:`/ C F / <0151.g1:/ C F />`, let :g:`/ E B / <0151.g1:/ E B />` be made that multiple of :g:`/ C G / <0151.g1:/ C G />`.
+.. step:: assert
 
-Then, since :g:`/ A E / <0151.g1:/ A E />` is the same multiple of :g:`/ C F / <0151.g1:/ C F />` that :g:`/ E B / <0151.g1:/ E B />` is of :g:`/ C G / <0151.g1:/ C G />`,
+   For let the magnitude :g:`/ A B / <g1:/ A B />` be the same multiple of the magnitude :g:`/ C D / <g1:/ C D />` that the part :g:`/ A E / <g1:/ A E />` subtracted is of the part :g:`/ C F / <g1:/ C F />` subtracted
 
-.. assertion:: [G.135] <G.135>
+.. step:: construct
 
-   therefore :g:`/ A E / <0151.g1:/ A E />` is the same multiple of :g:`/ C F / <0151.g1:/ C F />` that :g:`/ A B / <0151.g1:/ A B />` is of :g:`/ G F / <0151.g1:/ G F />`.
+   Whatever multiple :g:`/ A E / <g1:/ A E />` is of :g:`/ C F / <g1:/ C F />`, let :g:`/ E B / <g1:/ E B />` be made that multiple of :g:`/ C G / <g1:/ C G />`.
 
-But, by the assumption, :g:`/ A E / <0151.g1:/ A E />` is the same multiple of :g:`/ C F / <0151.g1:/ C F />` that :g:`/ A B / <0151.g1:/ A B />` is of :g:`/ C D / <0151.g1:/ C D />`.
+.. step:: assert [G.135] <G.135>
 
-.. assertion::
+   Since :g:`/ A E / <g1:/ A E />` is the same multiple of :g:`/ C F / <g1:/ C F />` that :g:`/ E B / <g1:/ E B />` is of :g:`/ C G / <g1:/ C G />` → therefore :g:`/ A E / <g1:/ A E />` is the same multiple of :g:`/ C F / <g1:/ C F />` that :g:`/ A B / <g1:/ A B />` is of :g:`/ G F / <g1:/ G F />`.
 
-   Therefore :g:`/ A B / <0151.g1:/ A B />` is the same multiple of each of the magnitudes :g:`/ G F / <0151.g1:/ G F />`, :g:`/ C D / <0151.g1:/ C D />`;
+.. step:: assert
 
-.. assertion::
+   But, by the assumption, :g:`/ A E / <g1:/ A E />` is the same multiple of :g:`/ C F / <g1:/ C F />` that :g:`/ A B / <g1:/ A B />` is of :g:`/ C D / <g1:/ C D />`.
 
-   therefore :g:`/ G F / <0151.g1:/ G F />` is :eq:`equal <0151.g1:/ G F / = 0151.g1:/ C D />` to :g:`/ C D / <0151.g1:/ C D />`.
+.. step:: assert
 
-.. subclause::
+   Therefore :g:`/ A B / <g1:/ A B />` is the same multiple of each of the magnitudes :g:`/ G F / <g1:/ G F />`, :g:`/ C D / <g1:/ C D />`;
 
-   Let :g:`/ C F / <0151.g1:/ C F />` be subtracted from each;
+.. step:: assert
 
-.. assertion::
+   Therefore :g:`/ G F / <g1:/ G F />` is :eq:`equal <g1:/ G F / = g1:/ C D />` to :g:`/ C D / <g1:/ C D />`.
 
-   therefore the remainder :g:`/ C G / <0151.g1:/ C G />` is :eq:`equal <0151.g1:/ C G / = 0151.g1:/ F D />` to the remainder :g:`/ F D / <0151.g1:/ F D />`.
+.. step:: assert
 
-And, since :g:`/ A E / <0151.g1:/ A E />` is the same multiple of :g:`/ C F / <0151.g1:/ C F />` that :g:`/ E B / <0151.g1:/ E B />` is of :g:`/ C G / <0151.g1:/ C G />`,
+   Let :g:`/ C F / <g1:/ C F />` be subtracted from each;
 
-.. subclause::
+.. step:: assert
 
-   and :g:`/ C G / <0151.g1:/ C G />` is :eq:`equal <0151.g1:/ C G / = 0151.g1:/ F D />` to :g:`/ F D / <0151.g1:/ F D />`,
+   Therefore the remainder :g:`/ C G / <g1:/ C G />` is :eq:`equal <g1:/ C G / = g1:/ F D />` to the remainder :g:`/ F D / <g1:/ F D />`.
 
-.. assertion::
+.. step:: assert
 
-   therefore :g:`/ A E / <0151.g1:/ A E />` is the same multiple of :g:`/ C F / <0151.g1:/ C F />` that :g:`/ E B / <0151.g1:/ E B />` is of :g:`/ F D / <0151.g1:/ F D />`.
+   And, since :g:`/ A E / <g1:/ A E />` is the same multiple of :g:`/ C F / <g1:/ C F />` that :g:`/ E B / <g1:/ E B />` is of :g:`/ C G / <g1:/ C G />`,
 
-But, by hypothesis,
+.. step:: assert
 
-.. subclause::
+   And :g:`/ C G / <g1:/ C G />` is :eq:`equal <g1:/ C G / = g1:/ F D />` to :g:`/ F D / <g1:/ F D />`,
 
-   :g:`/ A E / <0151.g1:/ A E />` is the same multiple of :g:`/ C F / <0151.g1:/ C F />` that :g:`/ A B / <0151.g1:/ A B />` is of :g:`/ C D / <0151.g1:/ C D />`;
+.. step:: assert
 
-.. assertion::
+   Therefore :g:`/ A E / <g1:/ A E />` is the same multiple of :g:`/ C F / <g1:/ C F />` that :g:`/ E B / <g1:/ E B />` is of :g:`/ F D / <g1:/ F D />`.
 
-   therefore :g:`/ E B / <0151.g1:/ E B />` is the same multiple of :g:`/ F D / <0151.g1:/ F D />` that :g:`/ A B / <0151.g1:/ A B />` is of :g:`/ C D / <0151.g1:/ C D />`.
+.. step:: assert
 
-That is, the remainder :g:`/ E B / <0151.g1:/ E B />` will be the same multiple of the remainder :g:`/ F D / <0151.g1:/ F D />` that the whole :g:`/ A B / <0151.g1:/ A B />` is of the whole :g:`/ C D / <0151.g1:/ C D />`.
+   But, by hypothesis,
 
-.. qed::
+.. step:: assert
 
-   Therefore etc. :just:`Q. E. D.`
+   :g:`/ A E / <g1:/ A E />` is the same multiple of :g:`/ C F / <g1:/ C F />` that :g:`/ A B / <g1:/ A B />` is of :g:`/ C D / <g1:/ C D />`;
+
+.. step:: assert
+
+   Therefore :g:`/ E B / <g1:/ E B />` is the same multiple of :g:`/ F D / <g1:/ F D />` that :g:`/ A B / <g1:/ A B />` is of :g:`/ C D / <g1:/ C D />`.
+
+.. step:: conclude
+
+   That is, the remainder :g:`/ E B / <g1:/ E B />` will be the same multiple of the remainder :g:`/ F D / <g1:/ F D />` that the whole :g:`/ A B / <g1:/ A B />` is of the whole :g:`/ C D / <g1:/ C D />`.
 
 Dependency Graph
 ----------------
@@ -94,6 +98,12 @@ Dependency Graph
      edge [color="#8c857b", fontcolor="#8c857b", arrowsize=0.75];
      rankdir="TB";
      "G.135" [label="G.135", tooltip="G.135 (V.1): If there be any number of magnitudes whatever which are, respectively, equimultiples of any magnitudes equal in multitude, then, whatever multiple one of the magnitudes is of one, ...", fillcolor="#222244", URL="../G.135/index.html", target="_top"];
-     "G.140" [label="G.140", tooltip="G.140 (V.5): If a magnitude be the same multiple of a magnitude that a part subtracted is of a part subtracted, the remainder will also be the same multiple of the remainder that the whole is o...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.140" [label="G.140", tooltip="G.140 (V.5): If a magnitude be the same multiple of a magnitude that a part subtracted is of a part subtracted, the remainder is the same multiple of the remainder that the whole is of the whol...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.140" -> "G.135";
    }
+
+.. toctree::
+   :hidden:
+
+   code
+   heath

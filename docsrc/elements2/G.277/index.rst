@@ -10,7 +10,7 @@
 :category: theorem, proof, number-theory
 :tags: book-ix, point, number, composite
 :dependencies: G.222, G.276
-:excerpt: If a composite number by multiplying any number make some number, the product will be solid.
+:excerpt: If a composite number by multiplying any number make some number, the product is solid.
 
 .. _G.277:
 .. _IX.7:
@@ -22,48 +22,50 @@ G.277
 
 .. enunciation::
 
-   If a composite number by multiplying any number make some number, the product will be solid.
+   If a composite number by multiplying any number make some number, the product is solid.
 
-For let the composite number :g:`A <0395.g1:A>` by multiplying any number :g:`B <0395.g1:B>` make :g:`C <0395.g1:C>`;
-
-I say that :g:`C <0395.g1:C>` is solid.
-
-.. picture:: 0395.g1.svg
+.. picture:: g1.svg
    :alt: Proposition 7 Diagram
 
-.. subclause::
+.. step:: assert
 
-   For, since :g:`A <0395.g1:A>` is composite,
+   For let the composite number :g:`A <g1:A>` by multiplying any number :g:`B <g1:B>` make :g:`C <g1:C>`
 
-.. assertion::
+.. step:: assert
 
-   it will be measured by some number. :just:`[G.276] <G.276>`
+   Since :g:`A <g1:A>` is composite,
 
-Let it be measured by :g:`D <0395.g1:D>`; and, as many times as :g:`D <0395.g1:D>` measures :g:`A <0395.g1:A>`, so many units let there be in :g:`E <0395.g1:E>`.
+.. step:: assert [G.276] <G.276>
 
-.. subclause::
+   It will be measured by some number.
 
-   Since then :g:`D <0395.g1:D>` measures :g:`A <0395.g1:A>` according to the units in :g:`E <0395.g1:E>`,
+.. step:: assert
 
-.. assertion:: [G.222] <G.222>
+   Let it be measured by :g:`D <g1:D>`
 
-   therefore :g:`E <0395.g1:E>` by multiplying :g:`D <0395.g1:D>` has made :g:`A <0395.g1:A>`.
+.. step:: assert
 
-.. subclause::
+   And, as many times as :g:`D <g1:D>` measures :g:`A <g1:A>`, so many units let there be in :g:`E <g1:E>`.
 
-   And, since :g:`A <0395.g1:A>` by multiplying :g:`B <0395.g1:B>` has made :g:`C <0395.g1:C>`, and :g:`A <0395.g1:A>` is the product of :g:`D <0395.g1:D>`, :g:`E <0395.g1:E>`,
+.. step:: assert
 
-.. assertion::
+   Since then :g:`D <g1:D>` measures :g:`A <g1:A>` according to the units in :g:`E <g1:E>`,
 
-   therefore the product of :g:`D <0395.g1:D>`, :g:`E <0395.g1:E>` by multiplying :g:`B <0395.g1:B>` has made :g:`C <0395.g1:C>`.
+.. step:: assert [G.222] <G.222>
 
-.. assertion::
+   Therefore :g:`E <g1:E>` by multiplying :g:`D <g1:D>` has made :g:`A <g1:A>`.
 
-   Therefore :g:`C <0395.g1:C>` is solid, and :g:`D <0395.g1:D>`, :g:`E <0395.g1:E>`, :g:`B <0395.g1:B>` are its sides.
+.. step:: assert
 
-.. qed::
+   And, since :g:`A <g1:A>` by multiplying :g:`B <g1:B>` has made :g:`C <g1:C>`, and :g:`A <g1:A>` is the product of :g:`D <g1:D>`, :g:`E <g1:E>`,
 
-   :just:`Q. E. D.`
+.. step:: assert
+
+   Therefore the product of :g:`D <g1:D>`, :g:`E <g1:E>` by multiplying :g:`B <g1:B>` has made :g:`C <g1:C>`.
+
+.. step:: conclude
+
+   Therefore :g:`C <g1:C>` is solid, and :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`B <g1:B>` are its sides.
 
 Dependency Graph
 ----------------
@@ -75,9 +77,15 @@ Dependency Graph
      node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11, color="#d6d3cd", fontcolor="#ffffff"];
      edge [color="#8c857b", fontcolor="#8c857b", arrowsize=0.75];
      rankdir="TB";
-     "G.222" [label="G.222", tooltip="G.222 (VII.def.15): A number is said to multiply a number when that which is multiplied is added to itself as many times as there are units in the other, and thus some number is produced.", fillcolor="#224422", URL="../G.222/index.html", target="_top"];
-     "G.276" [label="G.276", tooltip="G.276 (VII.def.13): A composite number is that which is measured by some number.", fillcolor="#224422", URL="../G.276/index.html", target="_top"];
-     "G.277" [label="G.277", tooltip="G.277 (IX.7): If a composite number by multiplying any number make some number, the product will be solid.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.222" [label="G.222", tooltip="G.222 (VII.def.15): A number is said tomultiply a number when that which is multiplied is added to itself as many times as there are units in the other, and thus some number is produced.", fillcolor="#224422", URL="../G.222/index.html", target="_top"];
+     "G.276" [label="G.276", tooltip="G.276 (VII.def.13): Acomposite number is that which is measured by some number.", fillcolor="#224422", URL="../G.276/index.html", target="_top"];
+     "G.277" [label="G.277", tooltip="G.277 (IX.7): If a composite number by multiplying any number make some number, the product is solid.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.277" -> "G.222";
      "G.277" -> "G.276";
    }
+
+.. toctree::
+   :hidden:
+
+   code
+   heath

@@ -24,42 +24,40 @@ G.309
 
    If a number neither be one of those which are continually doubled from a dyad, nor have its half odd, it is both even-times even and even-times odd.
 
-For let the number :g:`A <0425.g2:A>` neither be one of those doubled from a dyad, nor have its half odd;
-
-I say that :g:`A <0425.g2:A>` is both even-times even and even-times odd.
-
-.. picture:: 0425.g2.svg
+.. picture:: g1.svg
    :alt: Proposition 34 Diagram
 
-.. assertion::
+.. step:: assert
 
-   Now that :g:`A <0425.g2:A>` is even-times even is manifest; for it has not its half odd. :just:`[G.305] <G.305>`
+   For let the number :g:`A <g1:A>` neither be one of those doubled from a dyad, nor have its half odd
 
-I say next that it is also even-times odd.
+.. step:: assert [G.305] <G.305>
 
-.. subclause::
+   Now that :g:`A <g1:A>` is even-times even is manifest; for it has not its half odd.
 
-   For, if we bisect :g:`A <0425.g2:A>`, then bisect its half, and do this continually, we shall come upon some odd number which will measure :g:`A <0425.g2:A>` according to an even number.
+.. step:: assert
 
-.. subclause::
+   I say next that it is also even-times odd.
 
-   For, if not, we shall come upon a dyad, and :g:`A <0425.g2:A>` will be among those which are doubled from a dyad: which is contrary to the hypothesis.
+.. step:: assert
 
-.. assertion::
+   If we bisect :g:`A <g1:A>`, then bisect its half, and do this continually, we shall come upon some odd number which will measure :g:`A <g1:A>` according to an even number.
 
-   Thus :g:`A <0425.g2:A>` is even-times odd.
+.. step:: assert
 
-.. subclause::
+   If not, we shall come upon a dyad, and :g:`A <g1:A>` will be among those which are doubled from a dyad: which is contrary to the hypothesis.
 
-   But it was also proved even-times even.
+.. step:: assert
 
-.. assertion::
+   Thus :g:`A <g1:A>` is even-times odd.
 
-   Therefore :g:`A <0425.g2:A>` is both even-times even and even-times odd.
+.. step:: assert
 
-.. qed::
+   It was also proved even-times even.
 
-   :just:`Q. E. D.`
+.. step:: conclude
+
+   Therefore :g:`A <g1:A>` is both even-times even and even-times odd.
 
 Dependency Graph
 ----------------
@@ -71,7 +69,13 @@ Dependency Graph
      node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11, color="#d6d3cd", fontcolor="#ffffff"];
      edge [color="#8c857b", fontcolor="#8c857b", arrowsize=0.75];
      rankdir="TB";
-     "G.305" [label="G.305", tooltip="G.305 (VII.def.8): An even-times even number is that which is measured by an even number according to an even number.", fillcolor="#224422", URL="../G.305/index.html", target="_top"];
+     "G.305" [label="G.305", tooltip="G.305 (VII.def.8): Aneven-times even number is that which is measured by an even number according to an even number.", fillcolor="#224422", URL="../G.305/index.html", target="_top"];
      "G.309" [label="G.309", tooltip="G.309 (IX.34): If a number neither be one of those which are continually doubled from a dyad, nor have its half odd, it is both even-times even and even-times odd.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.309" -> "G.305";
    }
+
+.. toctree::
+   :hidden:
+
+   code
+   heath

@@ -18,6 +18,7 @@ Submodules
    /modules/api/geometor/elements/__main__/index
    /modules/api/geometor/elements/g_index/index
    /modules/api/geometor/elements/graph/index
+   /modules/api/geometor/elements/pseudocode/index
 
 
 Attributes
@@ -32,6 +33,6 @@ Package Contents
 ----------------
 
 .. py:data:: __version__
-   :value: '0.3.0'
+   :value: '0.3.1'
 
 

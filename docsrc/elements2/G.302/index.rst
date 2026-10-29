@@ -10,7 +10,7 @@
 :category: theorem, proof, number-theory
 :tags: book-ix, point, number, odd-number
 :dependencies: G.222, G.296
-:excerpt: If an odd number by multiplying an odd number make some number, the product will be odd.
+:excerpt: If an odd number by multiplying an odd number make some number, the product is odd.
 
 .. _G.302:
 .. _IX.29:
@@ -22,38 +22,34 @@ G.302
 
 .. enunciation::
 
-   If an odd number by multiplying an odd number make some number, the product will be odd.
+   If an odd number by multiplying an odd number make some number, the product is odd.
 
-For let the odd number :g:`A <0422.g3:A>` by multiplying the odd number :g:`B <0422.g3:B>` make :g:`C <0422.g3:C>` ;
-
-I say that :g:`C <0422.g3:C>` is odd.
-
-.. picture:: 0422.g3.svg
+.. picture:: g1.svg
    :alt: Book IX, Proposition 29
 
-.. subclause::
+.. step:: assert
 
-   For, since :g:`A <0422.g3:A>` by multiplying :g:`B <0422.g3:B>` has made :g:`C <0422.g3:C>`,
+   For let the odd number :g:`A <g1:A>` by multiplying the odd number :g:`B <g1:B>` make :g:`C <g1:C>`
 
-.. assertion::
+.. step:: assert
 
-   therefore :g:`C <0422.g3:C>` is made up of as many numbers equal to :g:`B <0422.g3:B>` as there are units in :g:`A <0422.g3:A>`. :just:`[G.222] <G.222>`
+   Since :g:`A <g1:A>` by multiplying :g:`B <g1:B>` has made :g:`C <g1:C>`,
 
-.. subclause::
+.. step:: assert [G.222] <G.222>
 
-   And each of the numbers :g:`A <0422.g3:A>`, :g:`B <0422.g3:B>` is odd;
+   Therefore :g:`C <g1:C>` is made up of as many numbers equal to :g:`B <g1:B>` as there are units in :g:`A <g1:A>`.
 
-.. assertion::
+.. step:: assert
 
-   therefore :g:`C <0422.g3:C>` is made up of odd numbers the multitude of which is odd.
+   Each of the numbers :g:`A <g1:A>`, :g:`B <g1:B>` is odd;
 
-.. assertion:: [G.296] <G.296>
+.. step:: assert
 
-   Thus :g:`C <0422.g3:C>` is odd.
+   Therefore :g:`C <g1:C>` is made up of odd numbers the multitude of which is odd.
 
-.. qed::
+.. step:: conclude [G.296] <G.296>
 
-   :just:`Q. E. D.`
+   Thus :g:`C <g1:C>` is odd.
 
 Dependency Graph
 ----------------
@@ -65,13 +61,13 @@ Dependency Graph
      node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11, color="#d6d3cd", fontcolor="#ffffff"];
      edge [color="#8c857b", fontcolor="#8c857b", arrowsize=0.75];
      rankdir="TB";
-     "G.222" [label="G.222", tooltip="G.222 (VII.def.15): A number is said to multiply a number when that which is multiplied is added to itself as many times as there are units in the other, and thus some number is produced.", fillcolor="#224422", URL="../G.222/index.html", target="_top"];
-     "G.292" [label="G.292", tooltip="G.292 (VII.def.6): An even number is that which is divisible into two equal parts.", fillcolor="#224422", URL="../G.292/index.html", target="_top"];
+     "G.222" [label="G.222", tooltip="G.222 (VII.def.15): A number is said tomultiply a number when that which is multiplied is added to itself as many times as there are units in the other, and thus some number is produced.", fillcolor="#224422", URL="../G.222/index.html", target="_top"];
+     "G.292" [label="G.292", tooltip="G.292 (VII.def.6): Aneven number is that which is divisible into two equal parts.", fillcolor="#224422", URL="../G.292/index.html", target="_top"];
      "G.293" [label="G.293", tooltip="G.293 (IX.21): If as many even numbers as we please be added together, the whole is even.", fillcolor="#222244", URL="../G.293/index.html", target="_top"];
-     "G.294" [label="G.294", tooltip="G.294 (VII.def.7): An odd number is that which is not divisible into two equal parts, or that which differs by an unit from an even number.", fillcolor="#224422", URL="../G.294/index.html", target="_top"];
-     "G.295" [label="G.295", tooltip="G.295 (IX.22): If as many odd numbers as we please be added together, and their multitude be even, the whole will be even.", fillcolor="#222244", URL="../G.295/index.html", target="_top"];
-     "G.296" [label="G.296", tooltip="G.296 (IX.23): If as many odd numbers as we please be added together, and their multitude be odd, the whole will also be odd.", fillcolor="#222244", URL="../G.296/index.html", target="_top"];
-     "G.302" [label="G.302", tooltip="G.302 (IX.29): If an odd number by multiplying an odd number make some number, the product will be odd.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.294" [label="G.294", tooltip="G.294 (VII.def.7): Anodd number is that which is not divisible into two equal parts, or that which differs by an unit from an even number.", fillcolor="#224422", URL="../G.294/index.html", target="_top"];
+     "G.295" [label="G.295", tooltip="G.295 (IX.22): If as many odd numbers as we please be added together, and their multitude be even, the whole is even.", fillcolor="#222244", URL="../G.295/index.html", target="_top"];
+     "G.296" [label="G.296", tooltip="G.296 (IX.23): If as many odd numbers as we please be added together, and their multitude be odd, the whole is odd.", fillcolor="#222244", URL="../G.296/index.html", target="_top"];
+     "G.302" [label="G.302", tooltip="G.302 (IX.29): If an odd number by multiplying an odd number make some number, the product is odd.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.302" -> "G.222";
      "G.293" -> "G.292";
      "G.295" -> "G.293";
@@ -81,3 +77,9 @@ Dependency Graph
      "G.296" -> "G.295";
      "G.302" -> "G.296";
    }
+
+.. toctree::
+   :hidden:
+
+   code
+   heath

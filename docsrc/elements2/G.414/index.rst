@@ -9,7 +9,7 @@
 :category: definition, incommensurables, magnitudes
 :tags: book-x, fifth-apotome, commensurable, apotome
 :dependencies: 
-:excerpt: if the annex be so commensurable, a fifth ;
+:excerpt: If the annex be so commensurable, afifth;
 
 .. _G.414:
 .. _X.def.iii.5:
@@ -21,9 +21,14 @@ G.414
 
 .. enunciation::
 
-   if the annex be so commensurable, a :term:`**fifth** <fifth-apotome>` ;
+   If the annex be so commensurable, a:term:`**fifth** <fifth-apotome>`;
 
 Required for
 ------------
 
 :ref:`G.415 <G.415>`, :ref:`G.422 <G.422>`, :ref:`G.428 <G.428>`, :ref:`G.436 <G.436>`
+
+.. toctree::
+   :hidden:
+
+   heath
