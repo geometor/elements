@@ -80,7 +80,7 @@ Module Contents
 
 .. py:function:: sync_apparatus_resources(project_root: pathlib.Path) -> None
 
-   Copy glossary.json, persons.json, and citations.json from euclid/resources/heath/ into elements/resources/.
+   Copy glossary.json, persons.json, citations.json, and enunciations.json from euclid/resources/heath/ into elements/resources/.
 
 
 .. py:function:: generate_g_index(output_dir: Optional[pathlib.Path] = None, books: Optional[List[str]] = None) -> Dict[str, Any]
