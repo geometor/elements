@@ -24,6 +24,12 @@ G.489
 
    Any pyramid which has a triangular base is divided into two pyramids equal and similar to one another, similar to the whole and having triangular bases, and into two equal prisms; and the two prisms are greater than the half of the whole pyramid.
 
+.. signature:: theorem
+
+   | :fn:`pyramid_triangular_base <G.489>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`D <g1:D>`)
+   | **given** there be a pyramid of which :g:`< A B C > <g1:< A B C >>` is the base and :g:`D <g1:D>` the vertex
+   | **prove** the pyramid :g:`< A B C D > <g1:< A B C D >>` is divided into two pyramids equal to one another, having triangular bases and similar to the whole pyramid, and into two equal prisms
+
 .. picture:: g1.svg
    :alt: Pyramid divided into two pyramids and two prisms
 
@@ -35,19 +41,15 @@ G.489
 
    And the two prisms are greater than the half of the whole pyramid.
 
-.. step:: assert
-
-   For let :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ C A / <g1:/ C A />`, :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />`, :g:`/ D C / <g1:/ D C />` be :eq:`bisected <g1:/ A E / = g1:/ E B /; g1:/ B F / = g1:/ F C /; g1:/ C G / = g1:/ G A /; g1:/ A H / = g1:/ H D /; g1:/ D K / = g1:/ K B /; g1:/ D L / = g1:/ L C />` at :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`K <g1:K>`, :g:`L <g1:L>`
-
 .. step:: construct
 
-   **segment** :g:`/ H E / <g1:/ H E />`, :g:`/ E G / <g1:/ E G />`, :g:`/ G H / <g1:/ G H />`, :g:`/ H K / <g1:/ H K />`, :g:`/ K L / <g1:/ K L />`, :g:`/ L H / <g1:/ L H />`, :g:`/ K F / <g1:/ K F />`, :g:`/ F G / <g1:/ F G />`
+   :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`) → :g:`/ A B / <g1:/ A B />`, :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`C <g1:C>`) → :g:`/ B C / <g1:/ B C />`, :fn:`segment <G.3>`\ (:g:`C <g1:C>`, :g:`A <g1:A>`) → :g:`/ C A / <g1:/ C A />`, :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`D <g1:D>`) → :g:`/ A D / <g1:/ A D />`, :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`B <g1:B>`) → :g:`/ D B / <g1:/ D B />`, :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`C <g1:C>`) → :g:`/ D C / <g1:/ D C />`, :fn:`segment <G.3>`\ () → :g:`E <g1:E>`, :fn:`segment <G.3>`\ () → :g:`F <g1:F>`, :fn:`segment <G.3>`\ () → :g:`G <g1:G>`, :fn:`segment <G.3>`\ () → :g:`H <g1:H>`, :fn:`segment <G.3>`\ () → :g:`K <g1:K>`, :fn:`segment <G.3>`\ () → :g:`L <g1:L>`, :fn:`segment <G.3>`\ (:g:`H <g1:H>`, :g:`E <g1:E>`) → :g:`/ H E / <g1:/ H E />`, :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`G <g1:G>`) → :g:`/ E G / <g1:/ E G />`, :fn:`segment <G.3>`\ (:g:`G <g1:G>`, :g:`H <g1:H>`) → :g:`/ G H / <g1:/ G H />`, :fn:`segment <G.3>`\ (:g:`H <g1:H>`, :g:`K <g1:K>`) → :g:`/ H K / <g1:/ H K />`, :fn:`segment <G.3>`\ (:g:`K <g1:K>`, :g:`L <g1:L>`) → :g:`/ K L / <g1:/ K L />`, :fn:`segment <G.3>`\ (:g:`L <g1:L>`, :g:`H <g1:H>`) → :g:`/ L H / <g1:/ L H />`, :fn:`segment <G.3>`\ (:g:`K <g1:K>`, :g:`F <g1:F>`) → :g:`/ K F / <g1:/ K F />`, :fn:`segment <G.3>`\ (:g:`F <g1:F>`, :g:`G <g1:G>`) → :g:`/ F G / <g1:/ F G />`
 
 .. step:: assert
 
    Since :g:`/ A E / <g1:/ A E />` is :eq:`equal <g1:/ A E / = g1:/ E B /; g1:/ A H / = g1:/ D H />` to :g:`/ E B / <g1:/ E B />`, and :g:`/ A H / <g1:/ A H />` to :g:`/ D H / <g1:/ D H />`,
 
-.. step:: assert [G.164] <G.164>
+.. step:: assert ∵ straight_line_drawn_vi_2 <G.164>
 
    Therefore :g:`/ E H / <g1:/ E H />` is parallel to :g:`/ D B / <g1:/ D B />`.
 
@@ -55,7 +57,7 @@ G.489
 
    For the same reason :g:`/ H K / <g1:/ H K />` is also parallel to :g:`/ A B / <g1:/ A B />`.
 
-.. step:: assert [G.47] <G.47>
+.. step:: assert ∵ parallelogram_properties <G.47>
 
    Therefore :g:`< H E B K > <g1:< H E B K >>` is a parallelogram; therefore :g:`/ H K / <g1:/ H K />` is :eq:`equal <g1:/ H K / = g1:/ E B />` to :g:`/ E B / <g1:/ E B />`.
 
@@ -71,7 +73,7 @@ G.489
 
    :g:`/ A H / <g1:/ A H />` is also :eq:`equal <g1:/ A H / = g1:/ H D />` to :g:`/ H D / <g1:/ H D />`;
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    Therefore the two sides :g:`/ E A / <g1:/ E A />`, :g:`/ A H / <g1:/ A H />` are :eq:`equal <g1:/ E A / = g1:/ K H /; g1:/ A H / = g1:/ H D />` to the two sides :g:`/ K H / <g1:/ K H />`, :g:`/ H D / <g1:/ H D />` respectively, and :g:`< E A H ) <g1:< E A H )>` is :eq:`equal <g1:< E A H ) = g1:< K H D )>` to :g:`< K H D ) <g1:< K H D )>`; therefore the base :g:`/ E H / <g1:/ E H />` is :eq:`equal <g1:/ E H / = g1:/ K D />` to the base :g:`/ K D / <g1:/ K D />`.
 
@@ -83,7 +85,7 @@ G.489
 
    For the same reason :g:`< A H G > <g1:< A H G >>` is also :eq:`equal <g1:< A H G > = g1:< H L D >>` and similar to :g:`< H L D > <g1:< H L D >>`.
 
-.. step:: assert [G.453] <G.453>
+.. step:: assert ∵ straight_lines_meeting <G.453>
 
    Since two straight lines :g:`/ E H / <g1:/ E H />`, :g:`/ H G / <g1:/ H G />` meeting one another are parallel to two straight lines :g:`/ K D / <g1:/ K D />`, :g:`/ D L / <g1:/ D L />` meeting one another, and are not in the same plane, they will contain equal angles.
 
@@ -95,7 +97,7 @@ G.489
 
    And, since :g:`/ E H / <g1:/ E H />`, :g:`/ H G / <g1:/ H G />` are :eq:`equal <g1:/ E H / = g1:/ K D /; g1:/ H G / = g1:/ D L />` to the two :g:`/ K D / <g1:/ K D />`, :g:`/ D L / <g1:/ D L />` respectively, and :g:`< E H G ) <g1:< E H G )>` is :eq:`equal <g1:< E H G ) = g1:< K D L )>` to :g:`< K D L ) <g1:< K D L )>`,
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    Therefore the base :g:`/ E G / <g1:/ E G />` is :eq:`equal <g1:/ E G / = g1:/ K L />` to the base :g:`/ K L / <g1:/ K L />`; therefore :g:`< E H G > <g1:< E H G >>` is :eq:`equal <g1:< E H G > = g1:< K D L >>` and similar to :g:`< K D L > <g1:< K D L >>`.
 
@@ -103,7 +105,7 @@ G.489
 
    For the same reason :g:`< A E G > <g1:< A E G >>` is also :eq:`equal <g1:< A E G > = g1:< H K L >>` and similar to :g:`< H K L > <g1:< H K L >>`.
 
-.. step:: assert [G.474] <G.474>
+.. step:: assert ∵ equal_similar_solid_def <G.474>
 
    Therefore the pyramid of which :g:`< A E G > <g1:< A E G >>` is the base and :g:`H <g1:H>` the vertex is :eq:`equal <g1:< A E G H > = g1:< H K L D >>` and similar to the pyramid of which :g:`< H K L > <g1:< H K L >>` is the base and :g:`D <g1:D>` the vertex.
 
@@ -111,7 +113,7 @@ G.489
 
    And, since :g:`/ H K / <g1:/ H K />` has been drawn parallel to :g:`/ A B / <g1:/ A B />`, one of the sides of :g:`< A D B > <g1:< A D B >>`,
 
-.. step:: assert [G.42, G.170] <G.42, G.170>
+.. step:: assert ∵ parallel_transversal_angles, similar_polygons_angles_def <G.42, G.170>
 
    :g:`< A D B > <g1:< A D B >>` is equiangular to :g:`< D H K > <g1:< D H K >>`, and they have their sides proportional; therefore :g:`< A D B > <g1:< A D B >>` is similar to :g:`< D H K > <g1:< D H K >>`.
 
@@ -119,7 +121,7 @@ G.489
 
    For the same reason :g:`< D B C > <g1:< D B C >>` is also similar to :g:`< D K L > <g1:< D K L >>`, and :g:`< A D C > <g1:< A D C >>` to :g:`< D L H > <g1:< D L H >>`.
 
-.. step:: assert [G.453] <G.453>
+.. step:: assert ∵ straight_lines_meeting <G.453>
 
    Since :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />` meeting one another are parallel to :g:`/ K H / <g1:/ K H />`, :g:`/ H L / <g1:/ H L />` meeting one another, not in the same plane, they will contain equal angles.
 
@@ -155,7 +157,7 @@ G.489
 
    The parallelogram :g:`< E B F G > <g1:< E B F G >>` is double of :g:`< G F C > <g1:< G F C >>`.
 
-.. step:: assert [G.486] <G.486>
+.. step:: assert ∵ there_prisms_equal <G.486>
 
    Since, if there be two prisms of equal height, and one have a parallelogram as base, and the other a triangle, and if the parallelogram be double of the triangle, the prisms are equal.
 

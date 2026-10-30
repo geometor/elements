@@ -24,22 +24,24 @@ G.264
 
    If three numbers be in continued proportion, and the first be square, the third is square.
 
+.. signature:: theorem
+
+   | :fn:`numbers_continued_proportion <G.264>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`)
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` be three numbers in continued proportion, let :g:`A <g1:A>` the first be square
+   | **prove** :g:`C <g1:C>` the third is also square
+
 .. picture:: g1.svg
    :alt: Proposition 22
 
 .. step:: given
 
-   :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` be three numbers in continued proportion
-
-.. step:: assert
-
-   Let :g:`A <g1:A>` the first be square
+   :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` be three numbers in continued proportion, let :g:`A <g1:A>` the first be square
 
 .. step:: assert
 
    Since between :g:`A <g1:A>`, :g:`C <g1:C>` there is one mean proportional number, :g:`B <g1:B>`,
 
-.. step:: assert [G.262] <G.262>
+.. step:: assert ∵ mean_proportional_number <G.262>
 
    Therefore :g:`A <g1:A>`, :g:`C <g1:C>` are similar plane numbers.
 

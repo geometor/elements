@@ -23,6 +23,10 @@ G.412
 
    Again, if the square on the whole be greater than the square on the annex by the square on a straight line incommensurable with the whole, then, if the whole be commensurable in length with the rational straight line set out, let the apotome be called a:term:`**fourth apotome** <fourth-apotome>`;
 
+.. signature:: def
+
+   | :fn:`again_square_whole_def <G.412>`
+
 Required for
 ------------
 

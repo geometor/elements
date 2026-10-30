@@ -24,42 +24,44 @@ G.451
 
    If two straight lines be parallel, and one of them be at right angles to any plane, the remaining one is at right angles to the same plane.
 
+.. signature:: theorem
+
+   | :fn:`straight_lines_parallel_xi_8 <G.451>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`)
+   | **given** :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` be two parallel straight lines, let one of them, :g:`/ A B / <g1:/ A B />`, be at right angles to the plane of reference
+   | **prove** the remaining one, :g:`/ C D / <g1:/ C D />`, will also be at right angles to the same plane
+
 .. picture:: g1.svg
    :alt: Book XI - Proposition 8
 
 .. step:: given
 
-   :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` be two parallel straight lines
-
-.. step:: assert
-
-   Let one of them, :g:`/ A B / <g1:/ A B />`, be at right angles to the plane of reference
-
-.. step:: assert
-
-   For let :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` meet the plane of reference at :g:`B <g1:B>`, :g:`D <g1:D>`
+   :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` be two parallel straight lines, let one of them, :g:`/ A B / <g1:/ A B />`, be at right angles to the plane of reference
 
 .. step:: construct
 
-   **segment** :g:`/ B D / <g1:/ B D />`
+   :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`) → :g:`/ A B / <g1:/ A B />`, :fn:`segment <G.3>`\ (:g:`C <g1:C>`, :g:`D <g1:D>`) → :g:`/ C D / <g1:/ C D />`, :fn:`segment <G.3>`\ () → :g:`B <g1:B>`, :fn:`segment <G.3>`\ () → :g:`D <g1:D>`, :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`D <g1:D>`) → :g:`/ B D / <g1:/ B D />`
 
-.. step:: assert [G.450] <G.450>
+.. step:: assert ∵ straight_lines_parallel <G.450>
 
    Therefore :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`, :g:`/ B D / <g1:/ B D />` are in one plane.
 
 .. step:: construct
 
-   Let :g:`/ D E / <g1:/ D E />` be drawn, in the plane of reference, at right angles to :g:`/ B D / <g1:/ B D />`, let :g:`/ D E / <g1:/ D E />` be made :eq:`equal <g1:/ D E / = g1:/ A B />` to :g:`/ A B / <g1:/ A B />`
+   Let :g:`/ D E / <g1:/ D E />` be drawn
 
 .. step:: construct
 
-   **segment** :g:`/ B E / <g1:/ B E />`, :g:`/ A E / <g1:/ A E />`, :g:`/ A D / <g1:/ A D />`
+   In the plane of reference, at right angles to :g:`/ B D / <g1:/ B D />`, let :g:`/ D E / <g1:/ D E />` be made :eq:`equal <g1:/ D E / = g1:/ A B />` to :g:`/ A B / <g1:/ A B />`
+
+.. step:: construct
+
+   :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`E <g1:E>`) → :g:`/ B E / <g1:/ B E />`, :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`E <g1:E>`) → :g:`/ A E / <g1:/ A E />`, :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`D <g1:D>`) → :g:`/ A D / <g1:/ A D />`
 
 .. step:: assert
 
    Since :g:`/ A B / <g1:/ A B />` is at right angles to the plane of reference,
 
-.. step:: assert [G.446] <G.446>
+.. step:: assert ∵ straight_line_right_def <G.446>
 
    Therefore :g:`/ A B / <g1:/ A B />` is also at right angles to all the straight lines which meet it and are in the plane of reference; therefore each of :g:`< A B D ) <g1:< A B D )>`, :g:`< A B E ) <g1:< A B E )>` is :eq:`right <g1:< A B D ) = g1:< A B E )>`.
 
@@ -67,7 +69,7 @@ G.451
 
    And, since :g:`/ B D / <g1:/ B D />` has fallen on the parallels :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`,
 
-.. step:: assert [G.42] <G.42>
+.. step:: assert ∵ parallel_transversal_angles <G.42>
 
    Therefore :g:`< A B D ) <g1:< A B D )>`, :g:`< C D B ) <g1:< C D B )>` are equal to two right angles.
 
@@ -107,7 +109,7 @@ G.451
 
    It is also at right angles to :g:`/ D B / <g1:/ D B />`;
 
-.. step:: assert [G.447] <G.447>
+.. step:: assert ∵ straight_line_set <G.447>
 
    Therefore :g:`/ E D / <g1:/ E D />` is also at right angles to the plane through :g:`/ B D / <g1:/ B D />`, :g:`/ D A / <g1:/ D A />`.
 
@@ -115,7 +117,7 @@ G.451
 
    Therefore :g:`/ E D / <g1:/ E D />` will also make right angles with all the straight lines which meet it and are in the plane through :g:`/ B D / <g1:/ B D />`, :g:`/ D A / <g1:/ D A />`.
 
-.. step:: assert [G.444] <G.444>
+.. step:: assert ∵ straight_lines_cut <G.444>
 
    :g:`/ D C / <g1:/ D C />` is in the plane through :g:`/ B D / <g1:/ B D />`, :g:`/ D A / <g1:/ D A />`, inasmuch as :g:`/ A B / <g1:/ A B />`, :g:`/ B D / <g1:/ B D />` are in the plane through :g:`/ B D / <g1:/ B D />`, :g:`/ D A / <g1:/ D A />`, and :g:`/ D C / <g1:/ D C />` is also in the plane in which :g:`/ A B / <g1:/ A B />`, :g:`/ B D / <g1:/ B D />` are.
 
@@ -131,7 +133,7 @@ G.451
 
    Therefore :g:`/ C D / <g1:/ C D />` is set up at right angles to :g:`/ D E / <g1:/ D E />`, :g:`/ D B / <g1:/ D B />` which cut one another, from the point of section at :g:`D <g1:D>`;
 
-.. step:: assert [G.447] <G.447>
+.. step:: assert ∵ straight_line_set <G.447>
 
    So that :g:`/ C D / <g1:/ C D />` is also at right angles to the plane through :g:`/ D E / <g1:/ D E />`, :g:`/ D B / <g1:/ D B />`.
 

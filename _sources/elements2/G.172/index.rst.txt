@@ -24,6 +24,12 @@ G.172
 
    From a given straight line to cut off a prescribed part.
 
+.. signature:: problem
+
+   | :fn:`cut_nth_part <G.172>`\ (:g:`/ A B / <g1:/ A B />`) → :g:`/ C D / <g1:/ C D />`, :g:`/ D A / <g1:/ D A />`
+   | **given** :g:`/ A B / <g1:/ A B />`
+   | **construct** :g:`/ C D / <g1:/ C D />` is double of :g:`/ D A / <g1:/ D A />`; therefore :g:`/ B F / <g1:/ B F />` is also double of :g:`/ F A / <g1:/ F A />`; therefore :g:`/ B A / <g1:/ B A />` is triple of :g:`/ A F / <g1:/ A F />`
+
 .. picture:: g1.svg
    :alt: Proposition 9
 
@@ -41,21 +47,21 @@ G.172
 
 .. step:: construct
 
-   **point** :g:`D <g1:D>` on :g:`/ A C / <g1:/ A C />`
-
-.. step:: construct [G.9] <G.9>
-
-   Let :g:`/ D E / <g1:/ D E />`, :g:`/ E C / <g1:/ E C />` be made :eq:`equal <g1:/ D E / = g1:/ E C / = g1:/ A D />` to :g:`/ A D / <g1:/ A D />`.
+   **point**\ (:g:`/ A C / <g1:/ A C />`) → :g:`D <g1:D>`
 
 .. step:: construct
 
-   **segment** :g:`/ B C / <g1:/ B C />`
+   :fn:`cut_equal_segment <G.9>`: Let :g:`/ D E / <g1:/ D E />`, :g:`/ E C / <g1:/ E C />` be made :eq:`equal <g1:/ D E / = g1:/ E C / = g1:/ A D />` to :g:`/ A D / <g1:/ A D />`.
 
-.. step:: construct [G.44] <G.44>
+.. step:: construct
 
-   Through :g:`D <g1:D>` let :g:`/ D F / <g1:/ D F />` be drawn parallel to it.
+   :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`C <g1:C>`) → :g:`/ B C / <g1:/ B C />`
 
-.. step:: assert [G.164] <G.164>
+.. step:: construct
+
+   :fn:`parallel_line <G.44>`\ (:g:`D <g1:D>`, it) → :g:`/ D F / <g1:/ D F />`
+
+.. step:: assert ∵ straight_line_drawn_vi_2 <G.164>
 
    Since :g:`/ F D / <g1:/ F D />` has been drawn parallel to :g:`/ B C / <g1:/ B C />`, one of the sides of :g:`< A B C > <g1:< A B C >>` → therefore, proportionally, as :g:`/ C D / <g1:/ C D />` is to :g:`/ D A / <g1:/ D A />`, so is :g:`/ B F / <g1:/ B F />` to :g:`/ F A / <g1:/ F A />`.
 

@@ -24,18 +24,19 @@ G.258
 
    If a cube number do not measure a cube number, neither will the side measure the side; and, if the side do not measure the side, neither will the cube measure the cube.
 
+.. signature:: theorem
+
+   | :fn:`cube_number_measure_viii_17 <G.258>`\ ()
+   | **prove** :g:`C <g1:C>` will not measure :g:`D <g1:D>`; neither will :g:`A <g1:A>` measure :g:`B <g1:B>`
+
 .. picture:: g1.svg
    :alt: Book VIII, Proposition 17
 
 .. step:: assert
 
-   For let the cube number :g:`A <g1:A>` not measure the cube number :g:`B <g1:B>`
+   Let the cube number :g:`A <g1:A>` not measure the cube number :g:`B <g1:B>`, and let :g:`C <g1:C>` be the side of :g:`A <g1:A>`, and :g:`D <g1:D>` of :g:`B <g1:B>`
 
-.. step:: assert
-
-   Let :g:`C <g1:C>` be the side of :g:`A <g1:A>`, and :g:`D <g1:D>` of :g:`B <g1:B>`
-
-.. step:: assert [G.256] <G.256>
+.. step:: assert ∵ cube_number_measure <G.256>
 
    For if :g:`C <g1:C>` measures :g:`D <g1:D>`, :g:`A <g1:A>` will also measure :g:`B <g1:B>`.
 
@@ -51,7 +52,7 @@ G.258
 
    Let :g:`C <g1:C>` not measure :g:`D <g1:D>`
 
-.. step:: assert [G.256] <G.256>
+.. step:: assert ∵ cube_number_measure <G.256>
 
    If :g:`A <g1:A>` measures :g:`B <g1:B>`, :g:`C <g1:C>` will also measure :g:`D <g1:D>`.
 

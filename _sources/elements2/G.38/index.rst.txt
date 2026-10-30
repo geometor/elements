@@ -23,6 +23,10 @@ G.38
 
    Parallel lines are straight lines in the same plane which, produced indefinitely in both directions, do not meet.
 
+.. signature:: def
+
+   | :fn:`parallel_lines_def <G.38>`
+
 Required for
 ------------
 

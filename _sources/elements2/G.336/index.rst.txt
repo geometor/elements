@@ -24,18 +24,19 @@ G.336
 
    The square on a medial straight line, if applied to a rational straight line, produces as breadth a straight line rational and incommensurable in length with that to which it is applied.
 
+.. signature:: theorem
+
+   | :fn:`square_medial_straight <G.336>`\ ()
+   | **prove** :g:`/ C D / <g1:/ C D />` is rational and incommensurable in length with :g:`/ C B / <g1:/ C B />`
+
 .. picture:: g1.svg
    :alt: Proposition 22
 
-.. step:: given
-
-   :g:`A <g1:A>` be medial and :g:`/ C B / <g1:/ C B />` rational
-
 .. step:: construct
 
-   Let a rectangular area :g:`< B D > <g1:< B D >>` equal to the square on :g:`A <g1:A>` be applied to :g:`/ B C / <g1:/ B C />`, producing :g:`/ C D / <g1:/ C D />` as breadth
+   Let :g:`A <g1:A>` be medial and :g:`/ C B / <g1:/ C B />` rational, and let a rectangular area :g:`< B D > <g1:< B D >>` equal to the square on :g:`A <g1:A>` be applied to :g:`/ B C / <g1:/ B C />`, producing :g:`/ C D / <g1:/ C D />` as breadth
 
-.. step:: assert [G.335] <G.335>
+.. step:: assert ∵ rectangle_contained_rational_x_21 <G.335>
 
    Since :g:`A <g1:A>` is medial, the square on it is equal to a rectangular area contained by rational straight lines commensurable in square only.
 
@@ -51,7 +52,7 @@ G.336
 
    Therefore :g:`< B D > <g1:< B D >>` is :eq:`equal <g1:< B D > = g1:< G F >>` to :g:`< G F > <g1:< G F >>`.
 
-.. step:: assert [G.177] <G.177>
+.. step:: assert ∵ equal_equiangular_parallelograms <G.177>
 
    It is also equiangular with it; and in equal and equiangular parallelograms the sides about the equal angles are reciprocally proportional.
 
@@ -59,7 +60,7 @@ G.336
 
    Therefore, proportionally, as :g:`/ B C / <g1:/ B C />` is to :g:`/ E G / <g1:/ E G />`, so is :g:`/ E F / <g1:/ E F />` to :g:`/ C D / <g1:/ C D />`.
 
-.. step:: assert [G.187] <G.187>
+.. step:: assert ∵ straight_lines_proportional_vi_22 <G.187>
 
    Therefore also, as the square on :g:`/ B C / <g1:/ B C />` is to the square on :g:`/ E G / <g1:/ E G />`, so is the square on :g:`/ E F / <g1:/ E F />` to the square on :g:`/ C D / <g1:/ C D />`.
 
@@ -67,7 +68,7 @@ G.336
 
    The square on :g:`/ C B / <g1:/ C B />` is commensurable with the square on :g:`/ E G / <g1:/ E G />`, for each of these straight lines is rational;
 
-.. step:: assert [G.323] <G.323>
+.. step:: assert ∵ magnitudes_proportional_commensurable <G.323>
 
    Therefore the square on :g:`/ E F / <g1:/ E F />` is also commensurable with the square on :g:`/ C D / <g1:/ C D />`.
 
@@ -75,7 +76,7 @@ G.336
 
    The square on :g:`/ E F / <g1:/ E F />` is rational;
 
-.. step:: assert [G.332] <G.332>
+.. step:: assert ∵ square_assigned_straight_def <G.332>
 
    Therefore the square on :g:`/ C D / <g1:/ C D />` is also rational;
 
@@ -83,11 +84,11 @@ G.336
 
    Therefore :g:`/ C D / <g1:/ C D />` is rational.
 
-.. step:: assert [Lemma] <Lemma>
+.. step:: assert ∵ Lemma <Lemma>
 
    And, since :g:`/ E F / <g1:/ E F />` is incommensurable in length with :g:`/ E G / <g1:/ E G />`, for they are commensurable in square only, and, as :g:`/ E F / <g1:/ E F />` is to :g:`/ E G / <g1:/ E G />`, so is the square on :g:`/ E F / <g1:/ E F />` to the rectangle :g:`/ F E / <g1:/ F E />`, :g:`/ E G / <g1:/ E G />`.
 
-.. step:: assert [G.323] <G.323>
+.. step:: assert ∵ magnitudes_proportional_commensurable <G.323>
 
    Therefore the square on :g:`/ E F / <g1:/ E F />` is incommensurable with the rectangle :g:`/ F E / <g1:/ F E />`, :g:`/ E G / <g1:/ E G />`.
 
@@ -95,15 +96,15 @@ G.336
 
    The square on :g:`/ C D / <g1:/ C D />` is commensurable with the square on :g:`/ E F / <g1:/ E F />`, for the straight lines are rational in square; and the rectangle :g:`/ D C / <g1:/ D C />`, :g:`/ C B / <g1:/ C B />` is commensurable with the rectangle :g:`/ F E / <g1:/ F E />`, :g:`/ E G / <g1:/ E G />`, for they are equal to the square on :g:`A <g1:A>`;
 
-.. step:: assert [G.326] <G.326>
+.. step:: assert ∵ magnitudes_commensurable_incommensurable <G.326>
 
    Therefore the square on :g:`/ C D / <g1:/ C D />` is also incommensurable with the rectangle :g:`/ D C / <g1:/ D C />`, :g:`/ C B / <g1:/ C B />`.
 
-.. step:: assert [Lemma] <Lemma>
+.. step:: assert ∵ Lemma <Lemma>
 
    But, as the square on :g:`/ C D / <g1:/ C D />` is to the rectangle :g:`/ D C / <g1:/ D C />`, :g:`/ C B / <g1:/ C B />`, so is :g:`/ D C / <g1:/ D C />` to :g:`/ C B / <g1:/ C B />`.
 
-.. step:: conclude [G.323] <G.323>
+.. step:: conclude ∵ magnitudes_proportional_commensurable <G.323>
 
    Therefore :g:`/ D C / <g1:/ D C />` is incommensurable in length with :g:`/ C B / <g1:/ C B />`.
 

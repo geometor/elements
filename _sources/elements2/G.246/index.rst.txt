@@ -24,16 +24,18 @@ G.246
 
    If there be as many numbers as we please in continued proportion, and the first do not measure the second, neither will any other measure any other.
 
+.. signature:: theorem
+
+   | :fn:`there_many_numbers_viii_6 <G.246>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`)
+   | **given** there be as many numbers as we please, :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`E <g1:E>`, in continued proportion, let :g:`A <g1:A>` not measure :g:`B <g1:B>`
+   | **prove** neither will any other measure any other
+
 .. picture:: g1.svg
    :alt: Book VIII Proposition 6
 
 .. step:: given
 
-   there be as many numbers as we please, :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`E <g1:E>`, in continued proportion
-
-.. step:: assert
-
-   Let :g:`A <g1:A>` not measure :g:`B <g1:B>`
+   there be as many numbers as we please, :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`E <g1:E>`, in continued proportion, let :g:`A <g1:A>` not measure :g:`B <g1:B>`
 
 .. step:: assert
 
@@ -47,15 +49,15 @@ G.246
 
    If possible, let :g:`A <g1:A>` measure :g:`C <g1:C>`.
 
-.. step:: construct [G.234] <G.234>
+.. step:: construct
 
-   And, however many :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` are, let as many numbers :g:`F <g1:F>`, :g:`G <g1:G>`, :g:`H <g1:H>`, the least of those which have the same ratio with :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, be taken.
+   :fn:`many_numbers_please <G.234>`: And, however many :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` are, let as many numbers :g:`F <g1:F>`, :g:`G <g1:G>`, :g:`H <g1:H>`, the least of those which have the same ratio with :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, be taken.
 
 .. step:: assert
 
    Since :g:`F <g1:F>`, :g:`G <g1:G>`, :g:`H <g1:H>` are in the same ratio with :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, and the multitude of the numbers :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` is equal to the multitude of the numbers :g:`F <g1:F>`, :g:`G <g1:G>`, :g:`H <g1:H>`,
 
-.. step:: assert [G.214] <G.214>
+.. step:: assert ∵ there_many_numbers_vii_14 <G.214>
 
    Therefore, :term:`*ex aequali* <ex-aequali>`, as :g:`A <g1:A>` is to :g:`C <g1:C>`, so is :g:`F <g1:F>` to :g:`H <g1:H>`.
 
@@ -63,7 +65,7 @@ G.246
 
    Since, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`F <g1:F>` to :g:`G <g1:G>`, while :g:`A <g1:A>` does not measure :g:`B <g1:B>`,
 
-.. step:: assert [G.210] <G.210>
+.. step:: assert ∵ numbers_proportional_multiple_def <G.210>
 
    Therefore neither does :g:`F <g1:F>` measure :g:`G <g1:G>`;
 
@@ -71,7 +73,7 @@ G.246
 
    Therefore :g:`F <g1:F>` is not an unit, for the unit measures any number.
 
-.. step:: assert [G.243] <G.243>
+.. step:: assert ∵ many_numbers_please_viii_3 <G.243>
 
    Now :g:`F <g1:F>`, :g:`H <g1:H>` are prime to one another.
 

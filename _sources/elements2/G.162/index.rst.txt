@@ -24,26 +24,28 @@ G.162
 
    If four magnitudes be proportional, the greatest and the least are greater than the remaining two.
 
+.. signature:: theorem
+
+   | :fn:`magnitudes_proportional_greatest <G.162>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`, :g:`E <g1:E>`, :g:`F <g1:F>`)
+   | **given** the four magnitudes :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`, :g:`E <g1:E>`, :g:`F <g1:F>` be proportional so that, as :g:`/ A B / <g1:/ A B />` is to :g:`/ C D / <g1:/ C D />`, so is :g:`E <g1:E>` to :g:`F <g1:F>`, let :g:`/ A B / <g1:/ A B />` be the greatest of them and :g:`F <g1:F>` the least
+   | **prove** :g:`/ A B / <g1:/ A B />`, :g:`F <g1:F>` are greater than :g:`/ C D / <g1:/ C D />`, :g:`E <g1:E>`
+
 .. picture:: g1.svg
    :alt: Book V, Proposition 25, Line Segments
 
 .. step:: given
 
-   the four magnitudes :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`, :g:`E <g1:E>`, :g:`F <g1:F>` be proportional so that, as :g:`/ A B / <g1:/ A B />` is to :g:`/ C D / <g1:/ C D />`, so is :g:`E <g1:E>` to :g:`F <g1:F>`
-
-.. step:: assert
-
-   Let :g:`/ A B / <g1:/ A B />` be the greatest of them and :g:`F <g1:F>` the least
+   the four magnitudes :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`, :g:`E <g1:E>`, :g:`F <g1:F>` be proportional so that, as :g:`/ A B / <g1:/ A B />` is to :g:`/ C D / <g1:/ C D />`, so is :g:`E <g1:E>` to :g:`F <g1:F>`, let :g:`/ A B / <g1:/ A B />` be the greatest of them and :g:`F <g1:F>` the least
 
 .. step:: construct
 
-   For let :g:`/ A G / <g1:/ A G />` be made :eq:`equal <g1:/ A G / = g1:E>` to :g:`E <g1:E>`, and :g:`/ C H / <g1:/ C H />` :eq:`equal <g1:/ C H / = g1:F>` to :g:`F <g1:F>`.
+   :fn:`cut_equal_segment <G.9>`\ (:g:`E <g1:E>`, and :g:`/ C H / <g1:/ C H />` :eq:`equal <g1:/ C H / = g1:F>` to :g:`F <g1:F>`) → :g:`/ A G / <g1:/ A G />` (:eq:`equal <g1:/ A G / = g1:E>`)
 
 .. step:: assert
 
    Since, as :g:`/ A B / <g1:/ A B />` is to :g:`/ C D / <g1:/ C D />`, so is :g:`E <g1:E>` to :g:`F <g1:F>`, and :g:`E <g1:E>` is :eq:`equal <g1:E = g1:/ A G /; g1:F = g1:/ C H />` to :g:`/ A G / <g1:/ A G />`, and :g:`F <g1:F>` to :g:`/ C H / <g1:/ C H />` → therefore, as :g:`/ A B / <g1:/ A B />` is to :g:`/ C D / <g1:/ C D />`, so is :g:`/ A G / <g1:/ A G />` to :g:`/ C H / <g1:/ C H />`.
 
-.. step:: assert [G.156] <G.156>
+.. step:: assert ∵ whole_whole_part <G.156>
 
    Since, as the whole :g:`/ A B / <g1:/ A B />` is to the whole :g:`/ C D / <g1:/ C D />`, so is the part :g:`/ A G / <g1:/ A G />` subtracted to the part :g:`/ C H / <g1:/ C H />` subtracted → the remainder :g:`/ G B / <g1:/ G B />` will also be to the remainder :g:`/ H D / <g1:/ H D />` as the whole :g:`/ A B / <g1:/ A B />` is to the whole :g:`/ C D / <g1:/ C D />`.
 

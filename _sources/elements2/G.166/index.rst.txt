@@ -24,6 +24,12 @@ G.166
 
    In equiangular triangles the sides about the equal angles are proportional, and those are corresponding sides which subtend the equal angles.
 
+.. signature:: theorem
+
+   | :fn:`equiangular_triangles_sides <G.166>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`< D C E > <g1:< D C E >>`, :g:`< A B C ) <g1:< A B C )>`, :g:`< D C E ) <g1:< D C E )>`)
+   | **given** :g:`< A B C > <g1:< A B C >>`, :g:`< D C E > <g1:< D C E >>` be :eq:`equiangular <g1:< A B C ) = g1:< D C E ); g1:< B A C ) = g1:< C D E ); g1:< A C B ) = g1:< C E D )>` triangles having :g:`< A B C ) <g1:< A B C )>` :eq:`equal <g1:< A B C ) = g1:< D C E ); g1:< B A C ) = g1:< C D E ); g1:< A C B ) = g1:< C E D )>` to :g:`< D C E ) <g1:< D C E )>`, :g:`< B A C ) <g1:< B A C )>` to :g:`< C D E ) <g1:< C D E )>`, further :g:`< A C B ) <g1:< A C B )>` to :g:`< C E D ) <g1:< C E D )>`
+   | **prove** in :g:`< A B C > <g1:< A B C >>`, :g:`< D C E > <g1:< D C E >>` the sides about the equal angles are proportional, and those are corresponding sides which subtend the equal angles
+
 .. picture:: g1.svg
    :alt: Proposition 4
 
@@ -33,9 +39,9 @@ G.166
 
 .. step:: construct
 
-   For let :g:`/ B C / <g1:/ B C />` be placed in a straight line with :g:`/ C E / <g1:/ C E />`.
+   Let :g:`/ B C / <g1:/ B C />` be placed in a straight line with :g:`/ C E / <g1:/ C E />`.
 
-.. step:: assert [G.28] <G.28>
+.. step:: assert ∵ two_angles_less_than_two_right <G.28>
 
    Since :g:`< A B C ) <g1:< A B C )>`, :g:`< A C B ) <g1:< A C B )>` are less than two right angles.
 
@@ -47,7 +53,7 @@ G.166
 
    Therefore :g:`< A B C ) <g1:< A B C )>`, :g:`< D E C ) <g1:< D E C )>` are less than two right angles;
 
-.. step:: assert [G.41] <G.41>
+.. step:: assert ∵ parallel_postulate <G.41>
 
    Therefore :g:`/ B A / <g1:/ B A />`, :g:`/ E D / <g1:/ E D />`, when produced, will meet.
 
@@ -55,11 +61,11 @@ G.166
 
    Let them be produced and meet at :g:`F <g1:F>`.
 
-.. step:: assert [G.40] <G.40>
+.. step:: assert ∵ corresponding_angles_parallel <G.40>
 
    Since :g:`< D C E ) <g1:< D C E )>` is :eq:`equal <g1:< D C E ) = g1:< A B C )>` to :g:`< A B C ) <g1:< A B C )>` → :g:`/ B F / <g1:/ B F />` is parallel to :g:`/ C D / <g1:/ C D />`.
 
-.. step:: assert [G.40] <G.40>
+.. step:: assert ∵ corresponding_angles_parallel <G.40>
 
    Since :g:`< A C B ) <g1:< A C B )>` is :eq:`equal <g1:< A C B ) = g1:< D E C )>` to :g:`< D E C ) <g1:< D E C )>` → :g:`/ A C / <g1:/ A C />` is parallel to :g:`/ F E / <g1:/ F E />`.
 
@@ -67,7 +73,7 @@ G.166
 
    Therefore :g:`< F A C D > <g1:< F A C D >>` is a parallelogram;
 
-.. step:: assert [G.47] <G.47>
+.. step:: assert ∵ parallelogram_properties <G.47>
 
    Therefore :g:`/ F A / <g1:/ F A />` is :eq:`equal <g1:/ F A / = g1:/ D C /; g1:/ A C / = g1:/ F D />` to :g:`/ D C / <g1:/ D C />`, and :g:`/ A C / <g1:/ A C />` to :g:`/ F D / <g1:/ F D />`.
 
@@ -75,7 +81,7 @@ G.166
 
    And, since :g:`/ A C / <g1:/ A C />` has been drawn parallel to :g:`/ F E / <g1:/ F E />`, one side of :g:`< F B E > <g1:< F B E >>`,
 
-.. step:: assert [G.164] <G.164>
+.. step:: assert ∵ straight_line_drawn_vi_2 <G.164>
 
    Therefore, as :g:`/ B A / <g1:/ B A />` is to :g:`/ A F / <g1:/ A F />`, so is :g:`/ B C / <g1:/ B C />` to :g:`/ C E / <g1:/ C E />`.
 
@@ -83,11 +89,11 @@ G.166
 
    :g:`/ A F / <g1:/ A F />` is :eq:`equal <g1:/ A F / = g1:/ C D />` to :g:`/ C D / <g1:/ C D />`;
 
-.. step:: assert [G.153] <G.153>
+.. step:: assert ∵ magnitudes_proportional_proportional <G.153>
 
    Therefore, as :g:`/ B A / <g1:/ B A />` is to :g:`/ C D / <g1:/ C D />`, so is :g:`/ B C / <g1:/ B C />` to :g:`/ C E / <g1:/ C E />`, and alternately, as :g:`/ A B / <g1:/ A B />` is to :g:`/ B C / <g1:/ B C />`, so is :g:`/ D C / <g1:/ D C />` to :g:`/ C E / <g1:/ C E />`.
 
-.. step:: assert [G.164] <G.164>
+.. step:: assert ∵ straight_line_drawn_vi_2 <G.164>
 
    Since :g:`/ C D / <g1:/ C D />` is parallel to :g:`/ B F / <g1:/ B F />` → therefore, as :g:`/ B C / <g1:/ B C />` is to :g:`/ C E / <g1:/ C E />`, so is :g:`/ F D / <g1:/ F D />` to :g:`/ D E / <g1:/ D E />`.
 
@@ -95,7 +101,7 @@ G.166
 
    :g:`/ F D / <g1:/ F D />` is :eq:`equal <g1:/ F D / = g1:/ A C />` to :g:`/ A C / <g1:/ A C />`;
 
-.. step:: assert [G.153] <G.153>
+.. step:: assert ∵ magnitudes_proportional_proportional <G.153>
 
    Therefore, as :g:`/ B C / <g1:/ B C />` is to :g:`/ C E / <g1:/ C E />`, so is :g:`/ A C / <g1:/ A C />` to :g:`/ D E / <g1:/ D E />`, and alternately, as :g:`/ B C / <g1:/ B C />` is to :g:`/ C A / <g1:/ C A />`, so is :g:`/ C E / <g1:/ C E />` to :g:`/ E D / <g1:/ E D />`.
 
@@ -103,7 +109,7 @@ G.166
 
    Since then it was proved that → as :g:`/ A B / <g1:/ A B />` is to :g:`/ B C / <g1:/ B C />`, so is :g:`/ D C / <g1:/ D C />` to :g:`/ C E / <g1:/ C E />`, and, as :g:`/ B C / <g1:/ B C />` is to :g:`/ C A / <g1:/ C A />`, so is :g:`/ C E / <g1:/ C E />` to :g:`/ E D / <g1:/ E D />`;
 
-.. step:: conclude [G.159] <G.159>
+.. step:: conclude ∵ there_number_magnitudes_v_22 <G.159>
 
    Therefore, :term:`*ex aequali* <ex-aequali>`, as :g:`/ B A / <g1:/ B A />` is to :g:`/ A C / <g1:/ A C />`, so is :g:`/ C D / <g1:/ C D />` to :g:`/ D E / <g1:/ D E />`.
 

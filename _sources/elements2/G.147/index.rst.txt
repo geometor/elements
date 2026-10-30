@@ -24,12 +24,17 @@ G.147
 
    Of magnitudes which have a ratio to the same, that which has a greater ratio is greater; and that to which the same has a greater ratio is less.
 
+.. signature:: theorem
+
+   | :fn:`magnitudes_ratio_greater <G.147>`\ ()
+   | **prove** :g:`A <g1:A>` is greater than :g:`B <g1:B>`; :g:`B <g1:B>` is less than :g:`A <g1:A>`
+
 .. picture:: g1.svg
    :alt: Folio 0161 Figure 1
 
 .. step:: assert
 
-   For let :g:`A <g1:A>` have to :g:`C <g1:C>` a greater ratio than :g:`B <g1:B>` has to :g:`C <g1:C>`
+   Let :g:`A <g1:A>` have to :g:`C <g1:C>` a greater ratio than :g:`B <g1:B>` has to :g:`C <g1:C>`
 
 .. step:: assert
 
@@ -39,7 +44,7 @@ G.147
 
    Now :g:`A <g1:A>` is not :eq:`equal <g1:A = g1:B>` to :g:`B <g1:B>`
 
-.. step:: assert [G.142] <G.142>
+.. step:: assert ∵ equal_magnitudes_ratio <G.142>
 
    For in that case each of the magnitudes :g:`A <g1:A>`, :g:`B <g1:B>` would have had the same ratio to :g:`C <g1:C>`
 
@@ -55,7 +60,7 @@ G.147
 
    Nor again is :g:`A <g1:A>` less than :g:`B <g1:B>`
 
-.. step:: assert [G.145] <G.145>
+.. step:: assert ∵ unequal_magnitudes_greater <G.145>
 
    For in that case :g:`A <g1:A>` would have had to :g:`C <g1:C>` a less ratio than :g:`B <g1:B>` has to :g:`C <g1:C>`
 
@@ -87,7 +92,7 @@ G.147
 
    Now :g:`B <g1:B>` is not :eq:`equal <g1:B = g1:A>` to :g:`A <g1:A>`
 
-.. step:: assert [G.142] <G.142>
+.. step:: assert ∵ equal_magnitudes_ratio <G.142>
 
    For in that case :g:`C <g1:C>` would have had the same ratio to each of the magnitudes :g:`A <g1:A>`, :g:`B <g1:B>`
 
@@ -103,7 +108,7 @@ G.147
 
    Nor again is :g:`B <g1:B>` greater than :g:`A <g1:A>`
 
-.. step:: assert [G.145] <G.145>
+.. step:: assert ∵ unequal_magnitudes_greater <G.145>
 
    For in that case :g:`C <g1:C>` would have had to :g:`B <g1:B>` a less ratio than it has to :g:`A <g1:A>`
 

@@ -24,18 +24,23 @@ G.469
 
    If a solid be contained by parallel planes, the opposite planes in it are equal and parallelogrammic.
 
+.. signature:: theorem
+
+   | :fn:`solid_contained_parallel <G.469>`\ ()
+   | **prove** the opposite planes in it are equal and parallelogrammic
+
 .. picture:: g1.svg
    :alt: Proposition 24 figure
 
 .. step:: assert
 
-   For let the solid :g:`< C D H G > <g1:< C D H G >>` be contained by the parallel planes :g:`< A C > <g1:< A C >>`, :g:`< G F > <g1:< G F >>`, :g:`< A H > <g1:< A H >>`, :g:`< D F > <g1:< D F >>`, :g:`< B F > <g1:< B F >>`, :g:`< A E > <g1:< A E >>`
+   Let the solid :g:`< C D H G > <g1:< C D H G >>` be contained by the parallel planes :g:`< A C > <g1:< A C >>`, :g:`< G F > <g1:< G F >>`, :g:`< A H > <g1:< A H >>`, :g:`< D F > <g1:< D F >>`, :g:`< B F > <g1:< B F >>`, :g:`< A E > <g1:< A E >>`
 
 .. step:: assert
 
    Since the two parallel planes :g:`< B G > <g1:< B G >>`, :g:`< C E > <g1:< C E >>` are cut by the plane :g:`< A C > <g1:< A C >>`,
 
-.. step:: assert [G.460] <G.460>
+.. step:: assert ∵ parallel_planes_cut <G.460>
 
    Their common sections are parallel.
 
@@ -47,7 +52,7 @@ G.469
 
    Since the two parallel planes :g:`< B F > <g1:< B F >>`, :g:`< A E > <g1:< A E >>` are cut by the plane :g:`< A C > <g1:< A C >>`,
 
-.. step:: assert [G.460] <G.460>
+.. step:: assert ∵ parallel_planes_cut <G.460>
 
    Their common sections are parallel.
 
@@ -69,25 +74,25 @@ G.469
 
 .. step:: construct
 
-   **segment** :g:`/ A H / <g1:/ A H />`, :g:`/ D F / <g1:/ D F />`
+   :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`H <g1:H>`) → :g:`/ A H / <g1:/ A H />`, :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`F <g1:F>`) → :g:`/ D F / <g1:/ D F />`
 
 .. step:: assert
 
    Since :g:`/ A B / <g1:/ A B />` is parallel to :g:`/ D C / <g1:/ D C />`, and :g:`/ B H / <g1:/ B H />` to :g:`/ C F / <g1:/ C F />`, :g:`/ A B / <g1:/ A B />`, :g:`/ B H / <g1:/ B H />` which meet one another are parallel to :g:`/ D C / <g1:/ D C />`, :g:`/ C F / <g1:/ C F />` which meet one another, not in the same plane;
 
-.. step:: assert [G.453] <G.453>
+.. step:: assert ∵ straight_lines_meeting <G.453>
 
    Therefore they will contain equal angles; therefore :g:`< A B H ) <g1:< A B H )>` is :eq:`equal <g1:< A B H ) = g1:< D C F )>` to :g:`< D C F ) <g1:< D C F )>`.
 
-.. step:: assert [G.47] <G.47>
+.. step:: assert ∵ parallelogram_properties <G.47>
 
    And, since the two sides :g:`/ A B / <g1:/ A B />`, :g:`/ B H / <g1:/ B H />` are :eq:`equal <g1:/ A B / = g1:/ D C /; g1:/ B H / = g1:/ C F />` to the two sides :g:`/ D C / <g1:/ D C />`, :g:`/ C F / <g1:/ C F />`, and :g:`< A B H ) <g1:< A B H )>` is :eq:`equal <g1:< A B H ) = g1:< D C F )>` to :g:`< D C F ) <g1:< D C F )>`.
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    Therefore the base :g:`/ A H / <g1:/ A H />` is :eq:`equal <g1:/ A H / = g1:/ D F />` to the base :g:`/ D F / <g1:/ D F />`, and :g:`< A B H > <g1:< A B H >>` is :eq:`equal <g1:< A B H > = g1:< D C F >>` to :g:`< D C F > <g1:< D C F >>`.
 
-.. step:: assert [G.47] <G.47>
+.. step:: assert ∵ parallelogram_properties <G.47>
 
    The parallelogram :g:`< B G > <g1:< B G >>` is double of :g:`< A B H > <g1:< A B H >>`, and the parallelogram :g:`< C E > <g1:< C E >>` double of :g:`< D C F > <g1:< D C F >>`.
 

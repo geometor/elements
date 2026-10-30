@@ -24,22 +24,27 @@ G.374
 
    If an area be contained by a rational straight line and the third binomial, the "side" of the area is the irrational straight line called a second bimedial.
 
+.. signature:: theorem
+
+   | :fn:`area_contained_rational_x_56 <G.374>`\ ()
+   | **prove** the "side" of the area :g:`< A C > <g1:< A C >>` is the irrational straight line called a second bimedial
+
 .. picture:: g1.svg
    :alt: Proposition 56
 
 .. step:: assert
 
-   For let the area :g:`< A B C D > <g1:< A B C D >>` be contained by the rational straight line :g:`/ A B / <g1:/ A B />` and the third binomial :g:`/ A D / <g1:/ A D />` divided into its terms at :g:`E <g1:E>`, of which terms :g:`/ A E / <g1:/ A E />` is the greater
+   Let the area :g:`< A B C D > <g1:< A B C D >>` be contained by the rational straight line :g:`/ A B / <g1:/ A B />` and the third binomial :g:`/ A D / <g1:/ A D />` divided into its terms at :g:`E <g1:E>`, of which terms :g:`/ A E / <g1:/ A E />` is the greater
 
 .. step:: construct
 
-   For let the same construction be made as before.
+   Let the same construction be made as before.
 
 .. step:: assert
 
    Since :g:`/ A D / <g1:/ A D />` is a third binomial straight line,
 
-.. step:: assert [G.373] <G.373>
+.. step:: assert ∵ terms_commensurable_length_def <G.373>
 
    Therefore :g:`/ A E / <g1:/ A E />`, :g:`/ E D / <g1:/ E D />` are rational straight lines commensurable in square only, the square on :g:`/ A E / <g1:/ A E />` is greater than the square on :g:`/ E D / <g1:/ E D />` by the square on a straight line commensurable with :g:`/ A E / <g1:/ A E />`, and neither of the terms :g:`/ A E / <g1:/ A E />`, :g:`/ E D / <g1:/ E D />` is commensurable in length with :g:`/ A B / <g1:/ A B />`.
 
@@ -55,7 +60,7 @@ G.374
 
    Since :g:`/ E D / <g1:/ E D />` is incommensurable in length with :g:`/ A B / <g1:/ A B />`, that is, with :g:`/ E K / <g1:/ E K />`, and :g:`/ E D / <g1:/ E D />` is commensurable with :g:`/ E F / <g1:/ E F />`,
 
-.. step:: assert [G.326] <G.326>
+.. step:: assert ∵ magnitudes_commensurable_incommensurable <G.326>
 
    Therefore :g:`/ E F / <g1:/ E F />` is incommensurable in length with :g:`/ E K / <g1:/ E K />`.
 
@@ -67,7 +72,7 @@ G.374
 
    Therefore :g:`/ E F / <g1:/ E F />`, :g:`/ E K / <g1:/ E K />` are rational straight lines commensurable in square only.
 
-.. step:: assert [G.335] <G.335>
+.. step:: assert ∵ rectangle_contained_rational_x_21 <G.335>
 
    Therefore :g:`< E L > <g1:< E L >>`, that is, :g:`< M R > <g1:< M R >>`, is medial.
 

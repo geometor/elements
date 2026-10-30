@@ -24,6 +24,12 @@ G.283
 
    If as many numbers as we please beginning from an unit be in continued proportion, by however many prime numbers the last is measured, the next to the unit is measured by the same.
 
+.. signature:: theorem
+
+   | :fn:`many_numbers_please_ix_12 <G.283>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`)
+   | **given** there be as many numbers as we please, :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, beginning from an unit, in continued proportion
+   | **prove** :g:`E <g1:E>` measures :g:`A <g1:A>`
+
 .. picture:: g1.svg
    :alt: Proposition 12 Diagram
 
@@ -33,13 +39,17 @@ G.283
 
 .. step:: assert
 
-   For let :g:`D <g1:D>` be measured by any prime number :g:`E <g1:E>`
+   I say that, by however many prime numbers :g:`D <g1:D>` is measured, :g:`A <g1:A>` will also be measured by the same.
+
+.. step:: construct
+
+   Let :g:`D <g1:D>` be measured by any prime number :g:`E <g1:E>`
 
 .. step:: assert
 
-   For suppose it does not
+   Suppose it does not
 
-.. step:: assert [G.230] <G.230>
+.. step:: assert ∵ prime_number_prime <G.230>
 
    Now :g:`E <g1:E>` is prime, and any prime number is prime to any which it does not measure.
 
@@ -55,7 +65,7 @@ G.283
 
    Therefore :g:`E <g1:E>` by multiplying :g:`F <g1:F>` has made :g:`D <g1:D>`.
 
-.. step:: assert [G.281] <G.281>
+.. step:: assert ∵ many_numbers_please_ix_11 <G.281>
 
    Since :g:`A <g1:A>` measures :g:`D <g1:D>` according to the units in :g:`C <g1:C>`.
 
@@ -71,11 +81,11 @@ G.283
 
    Therefore the product of :g:`A <g1:A>`, :g:`C <g1:C>` is equal to the product of :g:`E <g1:E>`, :g:`F <g1:F>`.
 
-.. step:: assert [G.219] <G.219>
+.. step:: assert ∵ numbers_proportional_number <G.219>
 
    Therefore, as :g:`A <g1:A>` is to :g:`E <g1:E>`, so is :g:`F <g1:F>` to :g:`C <g1:C>`.
 
-.. step:: assert [G.221, G.220] <G.221, G.220>
+.. step:: assert ∵ numbers_prime_least, least_numbers_ratio <G.221, G.220>
 
    :g:`A <g1:A>`, :g:`E <g1:E>` are prime, primes are also least, and the least measure those which have the same ratio the same number of times, the antecedent the antecedent and the consequent the consequent .
 
@@ -91,7 +101,7 @@ G.283
 
    Therefore :g:`E <g1:E>` by multiplying :g:`G <g1:G>` has made :g:`C <g1:C>`.
 
-.. step:: assert [G.281] <G.281>
+.. step:: assert ∵ many_numbers_please_ix_11 <G.281>
 
    But, further, by the theorem before this, :g:`A <g1:A>` has also by multiplying :g:`B <g1:B>` made :g:`C <g1:C>`.
 
@@ -99,11 +109,11 @@ G.283
 
    Therefore the product of :g:`A <g1:A>`, :g:`B <g1:B>` is equal to the product of :g:`E <g1:E>`, :g:`G <g1:G>`.
 
-.. step:: assert [G.219] <G.219>
+.. step:: assert ∵ numbers_proportional_number <G.219>
 
    Therefore, as :g:`A <g1:A>` is to :g:`E <g1:E>`, so is :g:`G <g1:G>` to :g:`B <g1:B>`.
 
-.. step:: assert [G.221, G.220] <G.221, G.220>
+.. step:: assert ∵ numbers_prime_least, least_numbers_ratio <G.221, G.220>
 
    :g:`A <g1:A>`, :g:`E <g1:E>` are prime, primes are also least, and the least numbers measure those which have the same ratio with them the same number of times, the antecedent the antecedent and the consequent the consequent :
 
@@ -119,7 +129,7 @@ G.283
 
    Therefore :g:`E <g1:E>` by multiplying :g:`H <g1:H>` has made :g:`B <g1:B>`.
 
-.. step:: assert [G.278] <G.278>
+.. step:: assert ∵ many_numbers_please_ix_8 <G.278>
 
    Further :g:`A <g1:A>` has also by multiplying itself made :g:`B <g1:B>`;
 
@@ -127,11 +137,11 @@ G.283
 
    Therefore the product of :g:`E <g1:E>`, :g:`H <g1:H>` is equal to the square on :g:`A <g1:A>`.
 
-.. step:: assert [G.219] <G.219>
+.. step:: assert ∵ numbers_proportional_number <G.219>
 
    Therefore, as :g:`E <g1:E>` is to :g:`A <g1:A>`, so is :g:`A <g1:A>` to :g:`H <g1:H>`.
 
-.. step:: assert [G.221, G.220] <G.221, G.220>
+.. step:: assert ∵ numbers_prime_least, least_numbers_ratio <G.221, G.220>
 
    :g:`A <g1:A>`, :g:`E <g1:E>` are prime, primes are also least, and the least measure those which have the same ratio the same number of times, the antecedent the antecedent and the consequent the consequent .
 
@@ -155,7 +165,7 @@ G.283
 
    Therefore they are composite to one another.
 
-.. step:: assert [G.282] <G.282>
+.. step:: assert ∵ numbers_composite_measured_def <G.282>
 
    Numbers composite to one another are measured by some number.
 

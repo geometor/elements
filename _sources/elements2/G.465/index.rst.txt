@@ -24,12 +24,17 @@ G.465
 
    If a solid angle be contained by three plane angles, any two, taken together in any manner, are greater than the remaining one.
 
+.. signature:: theorem
+
+   | :fn:`solid_angle_contained <G.465>`\ ()
+   | **prove** any two of :g:`< B A C ) <g1:< B A C )>`, :g:`< C A D ) <g1:< C A D )>`, :g:`< D A B ) <g1:< D A B )>`, taken together in any manner, are greater than the remaining one
+
 .. picture:: g1.svg
    :alt: Book XI, Proposition 20
 
 .. step:: assert
 
-   For let the solid angle at :g:`A <g1:A>` be contained by the three plane angles :g:`< B A C ) <g1:< B A C )>`, :g:`< C A D ) <g1:< C A D )>`, :g:`< D A B ) <g1:< D A B )>`
+   Let the solid angle at :g:`A <g1:A>` be contained by the three plane angles :g:`< B A C ) <g1:< B A C )>`, :g:`< C A D ) <g1:< C A D )>`, :g:`< D A B ) <g1:< D A B )>`
 
 .. step:: assert
 
@@ -43,17 +48,13 @@ G.465
 
    But, if not, let :g:`< B A C ) <g1:< B A C )>` be greater,
 
-.. step:: assert
+.. step:: construct
 
-   And on :g:`/ A B / <g1:/ A B />`
+   And on :g:`/ A B / <g1:/ A B />`, and at :g:`A <g1:A>` on it, let :g:`< B A E ) <g1:< B A E )>` be constructed, in the plane through :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />`, :eq:`equal <g1:< B A E ) = g1:< D A B )>` to :g:`< D A B ) <g1:< D A B )>`
 
 .. step:: construct
 
-   At :g:`A <g1:A>` on it, let :g:`< B A E ) <g1:< B A E )>` be constructed, in the plane through :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />`, :eq:`equal <g1:< B A E ) = g1:< D A B )>` to :g:`< D A B ) <g1:< D A B )>`
-
-.. step:: construct
-
-   Let :g:`/ A E / <g1:/ A E />` be made :eq:`equal <g1:/ A E / = g1:/ A D />` to :g:`/ A D / <g1:/ A D />`
+   :fn:`cut_equal_segment <G.9>`\ (:g:`/ A D / <g1:/ A D />`) → :g:`/ A E / <g1:/ A E />` (:eq:`equal <g1:/ A E / = g1:/ A D />`)
 
 .. step:: assert
 
@@ -61,17 +62,17 @@ G.465
 
 .. step:: construct
 
-   **segment** :g:`/ D B / <g1:/ D B />`, :g:`/ D C / <g1:/ D C />`
+   :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`B <g1:B>`) → :g:`/ D B / <g1:/ D B />`, :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`C <g1:C>`) → :g:`/ D C / <g1:/ D C />`
 
 .. step:: assert
 
    Since :g:`/ D A / <g1:/ D A />` is :eq:`equal <g1:/ D A / = g1:/ A E />` to :g:`/ A E / <g1:/ A E />`, and :g:`/ A B / <g1:/ A B />` is common, two sides are :eq:`equal <g1:/ D A / = g1:/ A E />` to two sides ; and :g:`< D A B ) <g1:< D A B )>` is :eq:`equal <g1:< D A B ) = g1:< B A E )>` to :g:`< B A E ) <g1:< B A E )>`;
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    Therefore the base :g:`/ D B / <g1:/ D B />` is :eq:`equal <g1:/ D B / = g1:/ B E />` to the base :g:`/ B E / <g1:/ B E />`.
 
-.. step:: assert [G.31] <G.31>
+.. step:: assert ∵ triangle_inequality <G.31>
 
    And, since the two sides :g:`/ B D / <g1:/ B D />`, :g:`/ D C / <g1:/ D C />` are greater than :g:`/ B C / <g1:/ B C />`, and of these :g:`/ D B / <g1:/ D B />` was proved :eq:`equal <g1:/ D B / = g1:/ B E />` to :g:`/ B E / <g1:/ B E />`.
 
@@ -83,7 +84,7 @@ G.465
 
    Since :g:`/ D A / <g1:/ D A />` is :eq:`equal <g1:/ D A / = g1:/ A E />` to :g:`/ A E / <g1:/ A E />`, and :g:`/ A C / <g1:/ A C />` is common, and the base :g:`/ D C / <g1:/ D C />` is greater than the base :g:`/ E C / <g1:/ E C />`,
 
-.. step:: assert [G.36] <G.36>
+.. step:: assert ∵ converse_hinge_theorem <G.36>
 
    Therefore :g:`< D A C ) <g1:< D A C )>` is greater than :g:`< E A C ) <g1:< E A C )>`.
 

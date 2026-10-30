@@ -24,18 +24,23 @@ G.428
 
    The square on the straight line which produces with a rational area a medial whole, if applied to a rational straight line, produces as breadth a fifth apotome.
 
+.. signature:: theorem
+
+   | :fn:`square_straight_line <G.428>`\ ()
+   | **prove** :g:`/ C F / <g1:/ C F />` is a fifth apotome
+
 .. picture:: g1.svg
    :alt: Proposition 101 Diagram
 
-.. step:: given
+.. step:: construct
 
-   :g:`/ A B / <g1:/ A B />` be the straight line which produces with a rational area a medial whole, :g:`/ C D / <g1:/ C D />` a rational straight line, to :g:`/ C D / <g1:/ C D />` let :g:`< C F E D > <g1:< C F E D >>` be applied equal to the square on :g:`/ A B / <g1:/ A B />` and producing :g:`/ C F / <g1:/ C F />` as breadth
+   Let :g:`/ A B / <g1:/ A B />` be the straight line which produces with a rational area a medial whole, and :g:`/ C D / <g1:/ C D />` a rational straight line, and to :g:`/ C D / <g1:/ C D />` let :g:`< C F E D > <g1:< C F E D >>` be applied equal to the square on :g:`/ A B / <g1:/ A B />` and producing :g:`/ C F / <g1:/ C F />` as breadth
 
 .. step:: assert
 
    For let :g:`/ B G / <g1:/ B G />` be the annex to :g:`/ A B / <g1:/ A B />`;
 
-.. step:: assert [G.398] <G.398>
+.. step:: assert ∵ straight_line_there_x_77 <G.398>
 
    Therefore :g:`/ A G / <g1:/ A G />`, :g:`/ B G / <g1:/ B G />` are straight lines incommensurable in square which make the sum of the squares on them medial but twice the rectangle contained by them rational.
 
@@ -59,7 +64,7 @@ G.428
 
    It is applied to the rational straight line :g:`/ C D / <g1:/ C D />`, producing :g:`/ C M / <g1:/ C M />` as breadth;
 
-.. step:: assert [G.336] <G.336>
+.. step:: assert ∵ square_medial_straight <G.336>
 
    Therefore :g:`/ C M / <g1:/ C M />` is rational and incommensurable with :g:`/ C D / <g1:/ C D />`.
 
@@ -67,17 +72,13 @@ G.428
 
    And, since the whole :g:`< C M L D > <g1:< C M L D >>` is equal to the squares on :g:`/ A G / <g1:/ A G />`, :g:`/ B G / <g1:/ B G />`, and, in these, :g:`< C F E D > <g1:< C F E D >>` is equal to the square on :g:`/ A B / <g1:/ A B />`,
 
-.. step:: assert [G.68] <G.68>
+.. step:: assert ∵ square_of_difference <G.68>
 
    Therefore the remainder :g:`< F M L E > <g1:< F M L E >>` is equal to twice the rectangle :g:`/ A G / <g1:/ A G />`, :g:`/ B G / <g1:/ B G />`.
 
-.. step:: assert
-
-   Let then :g:`/ F M / <g1:/ F M />` be :eq:`bisected <g1:/ F N / = g1:/ N M />` at :g:`N <g1:N>`
-
 .. step:: construct
 
-   Through :g:`N <g1:N>` let :g:`/ N O / <g1:/ N O />` be drawn parallel to either of :g:`/ C D / <g1:/ C D />`, :g:`/ M L / <g1:/ M L />`
+   Let then :g:`/ F M / <g1:/ F M />` be :eq:`bisected <g1:/ F N / = g1:/ N M />` at :g:`N <g1:N>`, and through :g:`N <g1:N>` let :g:`/ N O / <g1:/ N O />` be drawn parallel to either of :g:`/ C D / <g1:/ C D />`, :g:`/ M L / <g1:/ M L />`
 
 .. step:: assert
 
@@ -95,7 +96,7 @@ G.428
 
    It is applied to the rational straight line :g:`/ F E / <g1:/ F E />`, producing :g:`/ F M / <g1:/ F M />` as breadth;
 
-.. step:: assert [G.334] <G.334>
+.. step:: assert ∵ rational_area_applied <G.334>
 
    Therefore :g:`/ F M / <g1:/ F M />` is rational and commensurable in length with :g:`/ C D / <g1:/ C D />`.
 
@@ -107,11 +108,11 @@ G.428
 
    Therefore :g:`< C M L D > <g1:< C M L D >>` is incommensurable with :g:`< F M L E > <g1:< F M L E >>`.
 
-.. step:: assert [G.163] <G.163>
+.. step:: assert ∵ triangles_parallelograms_height <G.163>
 
    But, as :g:`< C M L D > <g1:< C M L D >>` is to :g:`< F M L E > <g1:< F M L E >>`, so is :g:`/ C M / <g1:/ C M />` to :g:`/ F M / <g1:/ F M />`;
 
-.. step:: assert [G.323] <G.323>
+.. step:: assert ∵ magnitudes_proportional_commensurable <G.323>
 
    Therefore :g:`/ C M / <g1:/ C M />` is incommensurable in length with :g:`/ F M / <g1:/ F M />`.
 
@@ -119,7 +120,7 @@ G.428
 
    Both are rational;
 
-.. step:: assert [G.394] <G.394>
+.. step:: assert ∵ rational_straight_line <G.394>
 
    Therefore :g:`/ C M / <g1:/ C M />`, :g:`/ F M / <g1:/ F M />` are rational straight lines commensurable in square only; therefore :g:`/ C F / <g1:/ C F />` is an apotome.
 
@@ -143,11 +144,11 @@ G.428
 
    Therefore :g:`< C K H D > <g1:< C K H D >>` is incommensurable with :g:`< K M L H > <g1:< K M L H >>`.
 
-.. step:: assert [G.163] <G.163>
+.. step:: assert ∵ triangles_parallelograms_height <G.163>
 
    But, as :g:`< C K H D > <g1:< C K H D >>` is to :g:`< K M L H > <g1:< K M L H >>`, so is :g:`/ C K / <g1:/ C K />` to :g:`/ K M / <g1:/ K M />`;
 
-.. step:: assert [G.323] <G.323>
+.. step:: assert ∵ magnitudes_proportional_commensurable <G.323>
 
    Therefore :g:`/ C K / <g1:/ C K />` is incommensurable in length with :g:`/ K M / <g1:/ K M />`.
 
@@ -155,7 +156,7 @@ G.428
 
    Since then :g:`/ C M / <g1:/ C M />`, :g:`/ F M / <g1:/ F M />` are two unequal straight lines, and a parallelogram equal to the fourth part of the square on :g:`/ F M / <g1:/ F M />` and deficient by a square figure has been applied to :g:`/ C M / <g1:/ C M />`, and divides it into incommensurable parts,
 
-.. step:: assert [G.331] <G.331>
+.. step:: assert ∵ there_unequal_straight_x_18 <G.331>
 
    Therefore the square on :g:`/ C M / <g1:/ C M />` is greater than the square on :g:`/ F M / <g1:/ F M />` by the square on a straight line incommensurable with :g:`/ C M / <g1:/ C M />`.
 
@@ -163,7 +164,7 @@ G.428
 
    The annex :g:`/ F M / <g1:/ F M />` is commensurable with the rational straight line :g:`/ C D / <g1:/ C D />` set out;
 
-.. step:: conclude [G.414] <G.414>
+.. step:: conclude ∵ annex_commensurable_fifth_def <G.414>
 
    Therefore :g:`/ C F / <g1:/ C F />` is a fifth apotome.
 

@@ -24,22 +24,24 @@ G.257
 
    If a square number do not measure a square number, neither will the side measure the side; and, if the side do not measure the side, neither will the square measure the square.
 
+.. signature:: theorem
+
+   | :fn:`square_number_measure <G.257>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`)
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>` be square numbers, let :g:`C <g1:C>`, :g:`D <g1:D>` be their sides
+   | **prove** neither does :g:`C <g1:C>` measure :g:`D <g1:D>`; neither will :g:`A <g1:A>` measure :g:`B <g1:B>`
+
 .. picture:: g1.svg
    :alt: Book VIII, Proposition 16
 
 .. step:: given
 
-   :g:`A <g1:A>`, :g:`B <g1:B>` be square numbers
-
-.. step:: assert
-
-   Let :g:`C <g1:C>`, :g:`D <g1:D>` be their sides
+   :g:`A <g1:A>`, :g:`B <g1:B>` be square numbers, let :g:`C <g1:C>`, :g:`D <g1:D>` be their sides
 
 .. step:: assert
 
    And let :g:`A <g1:A>` not measure :g:`B <g1:B>`
 
-.. step:: assert [G.255] <G.255>
+.. step:: assert ∵ square_measure_square <G.255>
 
    If :g:`C <g1:C>` measures :g:`D <g1:D>`, :g:`A <g1:A>` will also measure :g:`B <g1:B>`.
 
@@ -55,7 +57,7 @@ G.257
 
    Let :g:`C <g1:C>` not measure :g:`D <g1:D>`
 
-.. step:: assert [G.255] <G.255>
+.. step:: assert ∵ square_measure_square <G.255>
 
    If :g:`A <g1:A>` measures :g:`B <g1:B>`, :g:`C <g1:C>` will also measure :g:`D <g1:D>`.
 

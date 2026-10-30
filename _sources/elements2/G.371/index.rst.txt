@@ -23,6 +23,10 @@ G.371
 
    But if the lesser term be commensurable in length with the rational straight line set out, let the whole be called a:term:`**second binomial** <second-binomial>`;
 
+.. signature:: def
+
+   | :fn:`lesser_term_commensurable_def <G.371>`
+
 Required for
 ------------
 

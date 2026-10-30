@@ -24,6 +24,12 @@ G.362
 
    The side of the sum of two medial areas is divided at one point only.
 
+.. signature:: theorem
+
+   | :fn:`side_sum_medial <G.362>`\ (:g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`, :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />`)
+   | **given** :g:`/ A B / <g1:/ A B />` be divided at :g:`C <g1:C>`, so that :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` are incommensurable in square and make the sum of the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` medial, the rectangle :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` medial and also incommensurable with the sum of the squares on them
+   | **prove** :g:`/ A B / <g1:/ A B />` is not divided at another point so as to fulfil the given conditions
+
 .. picture:: g1.svg
    :alt: Proposition 47 diagram
 
@@ -35,15 +41,11 @@ G.362
 
    If possible, let it be divided at :g:`D <g1:D>`, so that again :g:`/ A C / <g1:/ A C />` is of course not the same as :g:`/ B D / <g1:/ B D />`, but :g:`/ A C / <g1:/ A C />` is supposed greater
 
-.. step:: assert
-
-   Let a rational straight line :g:`/ E F / <g1:/ E F />` be set out
-
 .. step:: construct
 
-   Let there be applied to :g:`/ E F / <g1:/ E F />` the rectangle :g:`< E G > <g1:< E G >>` equal to the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />`, and the rectangle :g:`< H K > <g1:< H K >>` equal to twice the rectangle :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />`
+   Let a rational straight line :g:`/ E F / <g1:/ E F />` be set out, and let there be applied to :g:`/ E F / <g1:/ E F />` the rectangle :g:`< E G > <g1:< E G >>` equal to the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />`, and the rectangle :g:`< H K > <g1:< H K >>` equal to twice the rectangle :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />`
 
-.. step:: assert [G.65] <G.65>
+.. step:: assert ∵ square_of_sum <G.65>
 
    Therefore the whole :g:`< E K > <g1:< E K >>` is equal to the square on :g:`/ A B / <g1:/ A B />`.
 
@@ -67,7 +69,7 @@ G.362
 
    It is applied to the rational straight line :g:`/ E F / <g1:/ E F />`;
 
-.. step:: assert [G.336] <G.336>
+.. step:: assert ∵ square_medial_straight <G.336>
 
    Therefore :g:`/ H E / <g1:/ H E />` is rational and incommensurable in length with :g:`/ E F / <g1:/ E F />`.
 
@@ -87,7 +89,7 @@ G.362
 
    Therefore :g:`< E G > <g1:< E G >>` is also incommensurable with :g:`< G N > <g1:< G N >>`,
 
-.. step:: assert [G.163, G.323] <G.163, G.323>
+.. step:: assert ∵ triangles_parallelograms_height, magnitudes_proportional_commensurable <G.163, G.323>
 
    So that :g:`/ E H / <g1:/ E H />` is also incommensurable with :g:`/ H N / <g1:/ H N />`.
 
@@ -99,7 +101,7 @@ G.362
 
    Therefore :g:`/ E H / <g1:/ E H />`, :g:`/ H N / <g1:/ H N />` are rational straight lines commensurable in square only;
 
-.. step:: assert [G.351] <G.351>
+.. step:: assert ∵ rational_straight_lines <G.351>
 
    Therefore :g:`/ E N / <g1:/ E N />` is a binomial straight line divided at :g:`H <g1:H>`.
 
@@ -115,7 +117,7 @@ G.362
 
    Therefore a binomial has been divided at different points :
 
-.. step:: conclude [G.357] <G.357>
+.. step:: conclude ∵ binomial_straight_line <G.357>
 
    Which is absurd.
 

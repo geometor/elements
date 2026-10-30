@@ -24,6 +24,12 @@ G.494
 
    Similar pyramids which have triangular bases are in the triplicate ratio of their corresponding sides.
 
+.. signature:: theorem
+
+   | :fn:`similar_pyramids_triangular <G.494>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>`, :g:`G <g1:G>`, :g:`H <g1:H>`)
+   | **given** there be similar and similarly situated pyramids of which :g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>` are the bases and :g:`G <g1:G>`, :g:`H <g1:H>` the vertices
+   | **prove** the pyramid :g:`< A B C G > <g1:< A B C G >>` has to the pyramid :g:`< D E F H > <g1:< D E F H >>` the ratio triplicate of that which :g:`/ B C / <g1:/ B C />` has to :g:`/ E F / <g1:/ E F />`
+
 .. picture:: g1.svg
    :alt: Book XII, Proposition 8
 
@@ -33,7 +39,7 @@ G.494
 
 .. step:: assert
 
-   For let the parallelepipedal solids :g:`< B G M L > <g1:< B G M L >>`, :g:`< E H Q P > <g1:< E H Q P >>` be completed.
+   Let the parallelepipedal solids :g:`< B G M L > <g1:< B G M L >>`, :g:`< E H Q P > <g1:< E H Q P >>` be completed.
 
 .. step:: assert
 
@@ -59,7 +65,7 @@ G.494
 
    Therefore the three parallelograms :g:`< B C M A > <g1:< B C M A >>`, :g:`< B G K A > <g1:< B G K A >>`, :g:`< B C N G > <g1:< B C N G >>` are similar to the three :g:`< E F Q D > <g1:< E F Q D >>`, :g:`< E H O D > <g1:< E H O D >>`, :g:`< E F R H > <g1:< E F R H >>`.
 
-.. step:: assert [G.469] <G.469>
+.. step:: assert ∵ solid_contained_parallel <G.469>
 
    The three parallelograms :g:`< B C M A > <g1:< B C M A >>`, :g:`< B G K A > <g1:< B G K A >>`, :g:`< B C N G > <g1:< B C N G >>` are equal and similar to their three opposites, and the three :g:`< E F Q D > <g1:< E F Q D >>`, :g:`< E H O D > <g1:< E H O D >>`, :g:`< E F R H > <g1:< E F R H >>` are equal and similar to their three opposites.
 
@@ -71,7 +77,7 @@ G.494
 
    Therefore the solid :g:`< B G M L > <g1:< B G M L >>` is similar to the solid :g:`< E H Q P > <g1:< E H Q P >>`.
 
-.. step:: assert [G.480] <G.480>
+.. step:: assert ∵ similar_parallelepipedal_solids <G.480>
 
    Similar parallelepipedal solids are in the triplicate ratio of their corresponding sides.
 
@@ -79,11 +85,11 @@ G.494
 
    Therefore the solid :g:`< B G M L > <g1:< B G M L >>` has to the solid :g:`< E H Q P > <g1:< E H Q P >>` the ratio triplicate of that which the corresponding side :g:`/ B C / <g1:/ B C />` has to the corresponding side :g:`/ E F / <g1:/ E F />`.
 
-.. step:: assert [G.475, G.493] <G.475, G.493>
+.. step:: assert ∵ parallelepipedal_solid_cut_xi_28, prism_triangular_base <G.475, G.493>
 
    But, as the solid :g:`< B G M L > <g1:< B G M L >>` is to the solid :g:`< E H Q P > <g1:< E H Q P >>`, so is the pyramid :g:`< A B C G > <g1:< A B C G >>` to the pyramid :g:`< D E F H > <g1:< D E F H >>`, inasmuch as the pyramid is a sixth part of the solid, because the prism which is half of the parallelepipedal solid is also triple of the pyramid.
 
-.. step:: assert [Q. E. D.] <Q. E. D.>
+.. step:: assert ∵ Q. E. D. <Q. E. D.>
 
    Therefore the pyramid :g:`< A B C G > <g1:< A B C G >>` also has to the pyramid :g:`< D E F H > <g1:< D E F H >>` the ratio triplicate of that which :g:`/ B C / <g1:/ B C />` has to :g:`/ E F / <g1:/ E F />`.
 
@@ -91,7 +97,7 @@ G.494
 
    PORISM. *From this it is manifest that similar pyramids which have polygonal bases are also to one another in the triplicate ratio of their corresponding sides.*
 
-.. step:: assert [G.185, G.149] <G.185, G.149>
+.. step:: assert ∵ similar_polygons_divided, number_magnitudes_proportional <G.185, G.149>
 
    If they are divided into the pyramids contained in them which have triangular bases, by virtue of the fact that the similar polygons forming their bases are also divided into similar triangles equal in multitude and corresponding to the wholes, then, as the one pyramid which has a triangular base in the one complete pyramid is to the one pyramid which has a triangular base in the other complete pyramid, so also will all the pyramids which have triangular bases contained in the one pyramid be to all the pyramids which have triangular bases contained in the other pyramid, that is, the pyramid itself which has a polygonal base to the pyramid which has a polygonal base.
 

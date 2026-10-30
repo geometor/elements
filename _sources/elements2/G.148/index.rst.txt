@@ -24,6 +24,11 @@ G.148
 
    Ratios which are the same with the same ratio are also the same with one another.
 
+.. signature:: theorem
+
+   | :fn:`ratios_ratio <G.148>`\ ()
+   | **prove** as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`E <g1:E>` to :g:`F <g1:F>`
+
 .. picture:: g1.svg
    :alt: Folio 0164 Figure 1
 
@@ -31,9 +36,13 @@ G.148
 
    As :g:`A <g1:A>` is to :g:`B <g1:B>`, so let :g:`C <g1:C>` be to :g:`D <g1:D>`, and, as :g:`C <g1:C>` is to :g:`D <g1:D>`, so let :g:`E <g1:E>` be to :g:`F <g1:F>`
 
+.. step:: assert
+
+   I say that, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`E <g1:E>` to :g:`F <g1:F>`.
+
 .. step:: construct
 
-   For of :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`E <g1:E>` let equimultiples :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`K <g1:K>` be taken, and of :g:`B <g1:B>`, :g:`D <g1:D>`, :g:`F <g1:F>` other, chance, equimultiples :g:`L <g1:L>`, :g:`M <g1:M>`, :g:`N <g1:N>`.
+   Of :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`E <g1:E>` let equimultiples :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`K <g1:K>` be taken, and of :g:`B <g1:B>`, :g:`D <g1:D>`, :g:`F <g1:F>` other, chance, equimultiples :g:`L <g1:L>`, :g:`M <g1:M>`, :g:`N <g1:N>`.
 
 .. step:: assert
 

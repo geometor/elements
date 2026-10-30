@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=156d9f89" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=3d8cc37d" />
   <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -49,7 +49,7 @@
           <a href="../../log/index.html"  >log</a>
         </li>
         <li>
-          <a href="../index.html"  >Elements 2.0 (G Index)</a>
+          <a href="../index.html" class="is-active" aria-selected="true" >Elements 2.0 (G Index)</a>
         </li>
       </ul>
     </nav>
@@ -92,6 +92,13 @@
         <span id="g-180"></span><span id="id1"></span><h1>G.180<a class="headerlink" href="#vi-17" title="Link to this heading">¶</a></h1>
         <p class="rubric"><a class="reference external" href="https://geometor.github.io/euclid/heath/volume_II/book_vi/propositions/17/" title="VI.17: If three straight lines be proportional, the rectangle contained by the extremes is equal to the square on the mean; and, if the rectangle contained by the extremes equals the…">VI.17</a></p>
         <div class="enunciation">If three straight lines be proportional, the rectangle contained by the extremes is equal to the square on the mean; and, if the rectangle contained by the extremes equals the square on the mean, the three straight lines is proportional.</div>
+        <div class="geom-signature geom-signature-theorem">
+        <div class="line-block">
+        <div class="line"><span class="geom-fn geom-fn-def" data-ref-target="G.180" title="G.180: If three straight lines be proportional, the rectangle contained by the extremes is equal to the square on the mean; and, if the rectangle contained by the extremes equals the…">straight_lines_proportional_vi_17</span>(<span class="geom-ref" data-ref="g1:A" title="A">A</span>, <span class="geom-ref" data-ref="g1:B" title="B">B</span>, <span class="geom-ref" data-ref="g1:C" title="C">C</span>)</div>
+        <div class="line"><strong>given</strong> <span class="geom-ref" data-ref="g1:A" title="A">A</span>, <span class="geom-ref" data-ref="g1:B" title="B">B</span>, <span class="geom-ref" data-ref="g1:C" title="C">C</span> be proportional, so that, as <span class="geom-ref" data-ref="g1:A" title="A">A</span> is to <span class="geom-ref" data-ref="g1:B" title="B">B</span>, so is <span class="geom-ref" data-ref="g1:B" title="B">B</span> to <span class="geom-ref" data-ref="g1:C" title="C">C</span></div>
+        <div class="line"><strong>prove</strong> the rectangle contained by <span class="geom-ref" data-ref="g1:A" title="A">A</span>, <span class="geom-ref" data-ref="g1:C" title="C">C</span> is equal to the square on <span class="geom-ref" data-ref="g1:B" title="B">B</span></div>
+        </div>
+        </div>
         <figure class="photon-picture photon-svg">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="1 -2 326 107" width="326" height="107" class="euclid-graphic" data-graphic-id="g1" data-graphic="g1" data-proposition="VI.17">
           <defs>
@@ -141,17 +148,18 @@
         </svg>
         </figure>
         <div class="geom-step geom-step-given" data-step-kind="given"><span class="geom-step-badge geom-badge-given">given</span> <span class="geom-ref" data-ref="g1:A" title="A">A</span>, <span class="geom-ref" data-ref="g1:B" title="B">B</span>, <span class="geom-ref" data-ref="g1:C" title="C">C</span> be proportional, so that, as <span class="geom-ref" data-ref="g1:A" title="A">A</span> is to <span class="geom-ref" data-ref="g1:B" title="B">B</span>, so is <span class="geom-ref" data-ref="g1:B" title="B">B</span> to <span class="geom-ref" data-ref="g1:C" title="C">C</span></div>
-        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> Let <span class="geom-ref" data-ref="g1:D" title="D">D</span> be made <span class="geom-eq-ref" data-assert-equal="g1:D = g1:B" title="D = B">equal</span> to <span class="geom-ref" data-ref="g1:B" title="B">B</span>.</div>
+        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> <a class="geom-fn" href="../G.9/index.html#g-9" data-ref-target="G.9" title="G.9: Cut off from the greater of two unequal segments a segment equal to the less.">cut_equal_segment</a>(<span class="geom-ref" data-ref="g1:B" title="B">B</span>) → <span class="geom-ref" data-ref="g1:D" title="D">D</span> (<span class="geom-eq-ref" data-assert-equal="g1:D = g1:B" title="D = B">equal</span>)</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Since, as <span class="geom-ref" data-ref="g1:A" title="A">A</span> is to <span class="geom-ref" data-ref="g1:B" title="B">B</span>, so is <span class="geom-ref" data-ref="g1:B" title="B">B</span> to <span class="geom-ref" data-ref="g1:C" title="C">C</span> → and <span class="geom-ref" data-ref="g1:B" title="B">B</span> is <span class="geom-eq-ref" data-assert-equal="g1:B = g1:D" title="B = D">equal</span> to <span class="geom-ref" data-ref="g1:D" title="D">D</span>,</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore, as <span class="geom-ref" data-ref="g1:A" title="A">A</span> is to <span class="geom-ref" data-ref="g1:B" title="B">B</span>, so is <span class="geom-ref" data-ref="g1:D" title="D">D</span> to <span class="geom-ref" data-ref="g1:C" title="C">C</span>.</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><a class="justification" href="../G.179/index.html#g-179" data-ref-target="G.179" title="G.179: If four straight lines be proportional, the rectangle contained by the extremes is equal to the rectangle contained by the means; and, if the rectangle contained by the extremes…">[G.179]</a><span class="geom-step-badge geom-badge-assert">assert</span> But, if four straight lines be proportional, the rectangle contained by the extremes is equal to the rectangle contained by the means.</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.179/index.html#g-179" data-ref-target="G.179" title="G.179: If four straight lines be proportional, the rectangle contained by the extremes is equal to the rectangle contained by the means; and, if the rectangle contained by the extremes…">straight_lines_proportional</a></span><span class="geom-step-badge geom-badge-assert">assert</span> But, if four straight lines be proportional, the rectangle contained by the extremes is equal to the rectangle contained by the means.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore the rectangle <span class="geom-ref" data-ref="g1:A" title="A">A</span>, <span class="geom-ref" data-ref="g1:C" title="C">C</span> is equal to the rectangle <span class="geom-ref" data-ref="g1:B" title="B">B</span>, <span class="geom-ref" data-ref="g1:D" title="D">D</span>.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> The rectangle <span class="geom-ref" data-ref="g1:B" title="B">B</span>, <span class="geom-ref" data-ref="g1:D" title="D">D</span> is the square on <span class="geom-ref" data-ref="g1:B" title="B">B</span>, for <span class="geom-ref" data-ref="g1:B" title="B">B</span> is <span class="geom-eq-ref" data-assert-equal="g1:B = g1:D" title="B = D">equal</span> to <span class="geom-ref" data-ref="g1:D" title="D">D</span>;</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore the rectangle contained by <span class="geom-ref" data-ref="g1:A" title="A">A</span>, <span class="geom-ref" data-ref="g1:C" title="C">C</span> is equal to the square on <span class="geom-ref" data-ref="g1:B" title="B">B</span>.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Next, let the rectangle <span class="geom-ref" data-ref="g1:A" title="A">A</span>, <span class="geom-ref" data-ref="g1:C" title="C">C</span> be equal to the square on <span class="geom-ref" data-ref="g1:B" title="B">B</span></div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> I say that, as <span class="geom-ref" data-ref="g1:A" title="A">A</span> is to <span class="geom-ref" data-ref="g1:B" title="B">B</span>, so is <span class="geom-ref" data-ref="g1:B" title="B">B</span> to <span class="geom-ref" data-ref="g1:C" title="C">C</span>.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> With the same construction, since the rectangle <span class="geom-ref" data-ref="g1:A" title="A">A</span>, <span class="geom-ref" data-ref="g1:C" title="C">C</span> is equal to the square on <span class="geom-ref" data-ref="g1:B" title="B">B</span> → while the square on <span class="geom-ref" data-ref="g1:B" title="B">B</span> is the rectangle <span class="geom-ref" data-ref="g1:B" title="B">B</span>, <span class="geom-ref" data-ref="g1:D" title="D">D</span>, for <span class="geom-ref" data-ref="g1:B" title="B">B</span> is <span class="geom-eq-ref" data-assert-equal="g1:B = g1:D" title="B = D">equal</span> to <span class="geom-ref" data-ref="g1:D" title="D">D</span>,</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore the rectangle <span class="geom-ref" data-ref="g1:A" title="A">A</span>, <span class="geom-ref" data-ref="g1:C" title="C">C</span> is equal to the rectangle <span class="geom-ref" data-ref="g1:B" title="B">B</span>, <span class="geom-ref" data-ref="g1:D" title="D">D</span>.</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><a class="justification" href="../G.179/index.html#g-179" data-ref-target="G.179" title="G.179: If four straight lines be proportional, the rectangle contained by the extremes is equal to the rectangle contained by the means; and, if the rectangle contained by the extremes…">[G.179]</a><span class="geom-step-badge geom-badge-assert">assert</span> But, if the rectangle contained by the extremes be equal to that contained by the means, the four straight lines are proportional.</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.179/index.html#g-179" data-ref-target="G.179" title="G.179: If four straight lines be proportional, the rectangle contained by the extremes is equal to the rectangle contained by the means; and, if the rectangle contained by the extremes…">straight_lines_proportional</a></span><span class="geom-step-badge geom-badge-assert">assert</span> But, if the rectangle contained by the extremes be equal to that contained by the means, the four straight lines are proportional.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore, as <span class="geom-ref" data-ref="g1:A" title="A">A</span> is to <span class="geom-ref" data-ref="g1:B" title="B">B</span>, so is <span class="geom-ref" data-ref="g1:D" title="D">D</span> to <span class="geom-ref" data-ref="g1:C" title="C">C</span>.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> <span class="geom-ref" data-ref="g1:B" title="B">B</span> is <span class="geom-eq-ref" data-assert-equal="g1:B = g1:D" title="B = D">equal</span> to <span class="geom-ref" data-ref="g1:D" title="D">D</span>;</div>
         <div class="geom-step geom-step-conclude" data-step-kind="conclude"><span class="geom-step-badge geom-badge-conclude">conclude</span> Therefore, as <span class="geom-ref" data-ref="g1:A" title="A">A</span> is to <span class="geom-ref" data-ref="g1:B" title="B">B</span>, so is <span class="geom-ref" data-ref="g1:B" title="B">B</span> to <span class="geom-ref" data-ref="g1:C" title="C">C</span>.</div>
@@ -589,28 +597,28 @@
   <footer>
     <div class="footer-nav">
       <ul>
-        <li><a href="../../about.html">about</a></li>
-        <li><a href="../../connect.html">connect</a></li>
-        <li><a href="../../glossary.html">glossary</a></li>
-        <li><a href="../../todos/index.html">todos</a></li>
-        <li><a href="../../changelog.html">changelog</a></li>
+        <li><a href="../../about.html"  >about</a></li>
+        <li><a href="../../connect.html"  >connect</a></li>
+        <li><a href="../../glossary.html"  >glossary</a></li>
+        <li><a href="../../todos/index.html"  >todos</a></li>
+        <li><a href="../../changelog.html"  >changelog</a></li>
       </ul>
     </div>
     <hr />
     <div role="contentinfo">
       <p>
-        &copy; Copyright .
+        &copy; Copyright 2026, GEOMETOR.
       </p>
     </div>
   </footer>
 
   <script src="../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+  <script src="../../_static/documentation_options.js?v=d5a15cff"></script>
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
-  <script src="../../_static/js/geometor_interactive.js?v=421e4467"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=4430a5d4"></script>
   <script src="../../_static/js/search_highlight.js"></script>
 
 </body>

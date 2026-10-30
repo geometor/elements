@@ -24,16 +24,18 @@ G.224
 
    If two numbers be prime to one another, the number which measures the one of them is prime to the remaining number.
 
+.. signature:: theorem
+
+   | :fn:`numbers_prime_number <G.224>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`)
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>` be two numbers prime to one another, let any number :g:`C <g1:C>` measure :g:`A <g1:A>`
+   | **prove** :g:`C <g1:C>`, :g:`B <g1:B>` are also prime to one another
+
 .. picture:: g1.svg
    :alt: Book VII, Proposition 23
 
 .. step:: given
 
-   :g:`A <g1:A>`, :g:`B <g1:B>` be two numbers prime to one another
-
-.. step:: assert
-
-   Let any number :g:`C <g1:C>` measure :g:`A <g1:A>`
+   :g:`A <g1:A>`, :g:`B <g1:B>` be two numbers prime to one another, let any number :g:`C <g1:C>` measure :g:`A <g1:A>`
 
 .. step:: assert
 
@@ -41,11 +43,7 @@ G.224
 
 .. step:: assert
 
-   Let a number measure them
-
-.. step:: assert
-
-   Let it be :g:`D <g1:D>`.
+   Let a number measure them, and let it be :g:`D <g1:D>`.
 
 .. step:: assert
 
@@ -59,7 +57,7 @@ G.224
 
    It also measures :g:`B <g1:B>` ;
 
-.. step:: assert [G.199] <G.199>
+.. step:: assert ∵ numbers_prime_measured_def <G.199>
 
    Therefore :g:`D <g1:D>` measures :g:`A <g1:A>`, :g:`B <g1:B>` which are prime to one another : which is impossible.
 

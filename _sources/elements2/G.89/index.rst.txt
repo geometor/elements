@@ -24,6 +24,11 @@ G.89
 
    A circle does not touch a circle at more points than one, whether it touch it internally or externally.
 
+.. signature:: theorem
+
+   | :fn:`circle_touch_circle <G.89>`\ ()
+   | **prove** It was proved that neither does it so touch it internally
+
 .. picture:: g1.svg
    :alt: Proposition 13 diagram
 
@@ -35,7 +40,7 @@ G.89
 
    Let the center :g:`G <g1:G>` of :g:`( A B D C ) <g1:( A B D C )>`, and the center :g:`H <g1:H>` of :g:`( E B F D ) <g1:( E B F D )>`, be taken.
 
-.. step:: assert [G.86] <G.86>
+.. step:: assert ∵ circles_touch_internally <G.86>
 
    Therefore the straight line joined from :g:`G <g1:G>` to :g:`H <g1:H>` will fall on :g:`B <g1:B>`, :g:`D <g1:D>`.
 
@@ -43,7 +48,7 @@ G.89
 
    Let it so fall, as :g:`/ B G H D / <g1:/ B G H D />`.
 
-.. step:: assert
+.. step:: assert ∵ circle_radii <G.2>
 
    Since :g:`G <g1:G>` is the center of :g:`( A B C D ) <g1:( A B C D )>` → :g:`/ B G / <g1:/ B G />` is :eq:`equal <g1:/ B G / = g1:/ G D />` to :g:`/ G D / <g1:/ G D />`;
 
@@ -55,7 +60,7 @@ G.89
 
    Therefore :g:`/ B H / <g1:/ B H />` is much greater than :g:`/ H D / <g1:/ H D />`.
 
-.. step:: assert
+.. step:: assert ∵ circle_radii <G.2>
 
    Since :g:`H <g1:H>` is the center of :g:`( E B F D ) <g1:( E B F D )>` → :g:`/ B H / <g1:/ B H />` is :eq:`equal <g1:/ B H / = g1:/ H D />` to :g:`/ H D / <g1:/ H D />`;
 
@@ -71,19 +76,15 @@ G.89
 
    I say further that neither does it so touch it externally.
 
-.. step:: assert
-
-   If possible, let :g:`( A C K ) <g1:( A C K )>` touch :g:`( A B D C ) <g1:( A B D C )>` at more points than one, namely :g:`A <g1:A>`, :g:`C <g1:C>`
-
 .. step:: construct
 
-   **segment** :g:`/ A C / <g1:/ A C />`
+   If possible, let :g:`( A C K ) <g1:( A C K )>` touch :g:`( A B D C ) <g1:( A B D C )>` at more points than one, namely :g:`A <g1:A>`, :g:`C <g1:C>`, and let :g:`/ A C / <g1:/ A C />` be joined.
 
-.. step:: assert [G.77] <G.77>
+.. step:: assert ∵ circumference_circle_points <G.77>
 
    Since on the circumference of each of :g:`( A B D C ) <g1:( A B D C )>`, :g:`( A C K ) <g1:( A C K )>` two points :g:`A <g1:A>`, :g:`C <g1:C>` have been taken at random, the straight line joining the points will fall within each circle
 
-.. step:: assert [G.88] <G.88>
+.. step:: assert ∵ circles_said_touch_def <G.88>
 
    But it fell within :g:`( A B C D ) <g1:( A B C D )>` and outside :g:`( A C K ) <g1:( A C K )>`: which is absurd.
 

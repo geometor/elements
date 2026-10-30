@@ -24,6 +24,12 @@ G.112
 
    Describe on a given segment a segment of a circle admitting an angle equal to a given angle.
 
+.. signature:: problem
+
+   | :fn:`describe_segment_segment <G.112>`\ (:g:`/ A B / <g1:/ A B />`, :g:`< C ) <g1:< C )>`) → :g:`/ A B / <g3:/ A B />`, :g:`( A H B ) <g3:( A H B )>`
+   | **given** :g:`/ A B / <g1:/ A B />`, the angle at :g:`< C ) <g1:< C )>`
+   | **construct** on :g:`/ A B / <g3:/ A B />` the segment :g:`( A H B ) <g3:( A H B )>` of a circle has been described admitting an angle equal to the angle at :g:`< C ) <g3:< C )>`
+
 .. picture:: g1.svg
    :alt: Proposition 33 first figure: acute angle case
 
@@ -41,13 +47,9 @@ G.112
 
    The angle at :g:`< C ) <g1:< C )>` is then acute, or right, or obtuse.
 
-.. step:: assert
-
-   First let it be acute, and, as in the first figure, on :g:`/ A B / <g1:/ A B />`
-
 .. step:: construct
 
-   At :g:`A <g1:A>`, let :g:`< B A D ) <g1:< B A D )>` be constructed :eq:`equal <g1:< B A D ) = g1:< C )>` to the angle at :g:`< C ) <g1:< C )>`
+   First let it be acute, and, as in the first figure, on :g:`/ A B / <g1:/ A B />`, and at :g:`A <g1:A>`, let :g:`< B A D ) <g1:< B A D )>` be constructed :eq:`equal <g1:< B A D ) = g1:< C )>` to the angle at :g:`< C ) <g1:< C )>`
 
 .. step:: assert
 
@@ -55,11 +57,19 @@ G.112
 
 .. step:: construct
 
-   Let :g:`/ A E / <g1:/ A E />` be drawn at right angles to :g:`/ D A / <g1:/ D A />`, let :g:`/ A B / <g1:/ A B />` be bisected at :g:`F <g1:F>`, let :g:`/ F G / <g1:/ F G />` be drawn from :g:`F <g1:F>` at right angles to :g:`/ A B / <g1:/ A B />`
+   :fn:`perpendicular_at <G.19>`\ (:g:`/ D A / <g1:/ D A />`) → :g:`/ A E / <g1:/ A E />`
 
 .. step:: construct
 
-   **segment** :g:`/ G B / <g1:/ G B />`
+   :fn:`bisect_segment <G.17>`\ (:g:`/ A B / <g1:/ A B />`) → :g:`F <g1:F>` (bisected)
+
+.. step:: construct
+
+   :fn:`perpendicular_at <G.19>`\ (:g:`/ A B / <g1:/ A B />`, :g:`F <g1:F>`) → :g:`/ F G / <g1:/ F G />`
+
+.. step:: construct
+
+   :fn:`segment <G.3>`\ (:g:`G <g1:G>`, :g:`B <g1:B>`) → :g:`/ G B / <g1:/ G B />`
 
 .. step:: assert
 
@@ -69,7 +79,7 @@ G.112
 
    And :g:`< A F G ) <g1:< A F G )>` is :eq:`equal <g1:< A F G ) = g1:< B F G )>` to :g:`< B F G ) <g1:< B F G )>`
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    Therefore the base :g:`/ A G / <g1:/ A G />` is :eq:`equal <g1:/ A G / = g1:/ B G />` to the base :g:`/ B G / <g1:/ B G />`.
 
@@ -87,13 +97,13 @@ G.112
 
 .. step:: construct
 
-   **segment** :g:`/ E B / <g1:/ E B />`
+   :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`B <g1:B>`) → :g:`/ E B / <g1:/ E B />`
 
-.. step:: assert [G.94] <G.94>
+.. step:: assert ∵ straight_line_drawn <G.94>
 
    Since :g:`/ A D / <g1:/ A D />` is drawn from :g:`A <g1:A>`, the extremity of the diameter :g:`/ A E / <g1:/ A E />`, at right angles to :g:`/ A E / <g1:/ A E />` → therefore :g:`/ A D / <g1:/ A D />` touches :g:`( A B E ) <g1:( A B E )>`.
 
-.. step:: assert [G.111] <G.111>
+.. step:: assert ∵ straight_line_touch_iii_32 <G.111>
 
    Since then a straight line :g:`/ A D / <g1:/ A D />` touches :g:`( A B E ) <g1:( A B E )>`, and from the point of contact at :g:`A <g1:A>` a straight line :g:`/ A B / <g1:/ A B />` is drawn across in :g:`( A B E ) <g1:( A B E )>`, :g:`< D A B ) <g1:< D A B )>` is :eq:`equal <g1:< D A B ) = g1:< A E B )>` to :g:`< A E B ) <g1:< A E B )>` in the alternate segment of the circle.
 
@@ -123,17 +133,17 @@ G.112
 
 .. step:: construct
 
-   Let :g:`/ A B / <g2:/ A B />` be bisected at :g:`F <g2:F>`
+   :fn:`bisect_segment <G.17>`\ (:g:`/ A B / <g2:/ A B />`) → :g:`F <g2:F>` (bisected)
 
 .. step:: construct
 
    With center :g:`F <g2:F>` and distance either :g:`/ F A / <g2:/ F A />` or :g:`/ F B / <g2:/ F B />` let :g:`( A E B ) <g2:( A E B )>` be described.
 
-.. step:: assert [G.94] <G.94>
+.. step:: assert ∵ straight_line_drawn <G.94>
 
    Therefore :g:`/ A D / <g2:/ A D />` touches :g:`( A B E ) <g2:( A B E )>`, because the angle at :g:`< A ) <g2:< A )>` is right.
 
-.. step:: assert [G.110] <G.110>
+.. step:: assert ∵ thales_semicircle_theorem <G.110>
 
    :g:`< B A D ) <g2:< B A D )>` is equal to the angle in the segment :g:`( A E B ) <g2:( A E B )>`, for the latter too is itself a right angle, being an angle in a semicircle.
 
@@ -153,21 +163,21 @@ G.112
 
    Next, let the angle at :g:`< C ) <g3:< C )>` be obtuse
 
-.. step:: assert
+.. step:: construct
 
-   And on :g:`/ A B / <g3:/ A B />`
+   And on :g:`/ A B / <g3:/ A B />`, and at :g:`A <g3:A>`, let :g:`< B A D ) <g3:< B A D )>` be constructed :eq:`equal <g3:< B A D ) = g3:< C )>` to it, as is the case in the third figure
 
 .. step:: construct
 
-   At :g:`A <g3:A>`, let :g:`< B A D ) <g3:< B A D )>` be constructed :eq:`equal <g3:< B A D ) = g3:< C )>` to it, as is the case in the third figure
+   :fn:`perpendicular_at <G.19>`\ (:g:`/ A D / <g3:/ A D />`) → :g:`/ A E / <g3:/ A E />`
 
 .. step:: construct
 
-   Let :g:`/ A E / <g3:/ A E />` be drawn at right angles to :g:`/ A D / <g3:/ A D />`, let :g:`/ A B / <g3:/ A B />` be again bisected at :g:`F <g3:F>`, let :g:`/ F G / <g3:/ F G />` be drawn at right angles to :g:`/ A B / <g3:/ A B />`
+   Let :g:`/ A B / <g3:/ A B />` be again bisected at :g:`F <g3:F>`, let :g:`/ F G / <g3:/ F G />` be drawn at right angles to :g:`/ A B / <g3:/ A B />`
 
 .. step:: construct
 
-   **segment** :g:`/ G B / <g3:/ G B />`
+   :fn:`segment <G.3>`\ (:g:`G <g3:G>`, :g:`B <g3:B>`) → :g:`/ G B / <g3:/ G B />`
 
 .. step:: assert
 
@@ -177,7 +187,7 @@ G.112
 
    And :g:`< A F G ) <g3:< A F G )>` is :eq:`equal <g3:< A F G ) = g3:< B F G )>` to :g:`< B F G ) <g3:< B F G )>`
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    Therefore the base :g:`/ A G / <g3:/ A G />` is :eq:`equal <g3:/ A G / = g3:/ B G />` to the base :g:`/ B G / <g3:/ B G />`.
 
@@ -189,7 +199,7 @@ G.112
 
    Let it so pass, as :g:`( A E B ) <g3:( A E B )>`.
 
-.. step:: assert [G.94] <G.94>
+.. step:: assert ∵ straight_line_drawn <G.94>
 
    Since :g:`/ A D / <g3:/ A D />` is drawn at right angles to the diameter :g:`/ A E / <g3:/ A E />` from its extremity → :g:`/ A D / <g3:/ A D />` touches :g:`( A E B ) <g3:( A E B )>`.
 
@@ -197,9 +207,13 @@ G.112
 
    :g:`/ A B / <g3:/ A B />` has been drawn across from the point of contact at :g:`A <g3:A>`
 
-.. step:: assert [G.111] <G.111>
+.. step:: assert ∵ straight_line_touch_iii_32 <G.111>
 
-   Therefore :g:`< B A D ) <g3:< B A D )>` is equal to the angle constructed in the alternate segment :g:`( A H B ) <g3:( A H B )>` of the circle. But :g:`< B A D ) <g3:< B A D )>` is :eq:`equal <g3:< B A D ) = g3:< C )>` to the angle at :g:`< C ) <g3:< C )>`.
+   Therefore :g:`< B A D ) <g3:< B A D )>` is equal to the angle constructed in the alternate segment :g:`( A H B ) <g3:( A H B )>` of the circle
+
+.. step:: assert
+
+   :g:`< B A D ) <g3:< B A D )>` is :eq:`equal <g3:< B A D ) = g3:< C )>` to the angle at :g:`< C ) <g3:< C )>`.
 
 .. step:: assert
 

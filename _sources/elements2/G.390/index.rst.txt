@@ -24,16 +24,18 @@ G.390
 
    A straight line commensurable with the side of a rational plus a medial area is itself also the side of a rational plus a medial area.
 
+.. signature:: theorem
+
+   | :fn:`straight_line_commensurable_x_69 <G.390>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`)
+   | **given** :g:`/ A B / <g1:/ A B />` be the side of a rational plus a medial area, let :g:`/ C D / <g1:/ C D />` be commensurable with :g:`/ A B / <g1:/ A B />`
+   | **prove** We can then prove similarly that :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />` are incommensurable in square, and the sum of the squares on :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />` is commensurable with the sum of the squares on :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />`, and the rectangle :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />` with the rectangle :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />`; so that the sum of the squares on :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />` is also medial, and the rectangle :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />` rational
+
 .. picture:: g1.svg
    :alt: Proposition 69
 
 .. step:: given
 
-   :g:`/ A B / <g1:/ A B />` be the side of a rational plus a medial area
-
-.. step:: assert
-
-   Let :g:`/ C D / <g1:/ C D />` be commensurable with :g:`/ A B / <g1:/ A B />`
+   :g:`/ A B / <g1:/ A B />` be the side of a rational plus a medial area, let :g:`/ C D / <g1:/ C D />` be commensurable with :g:`/ A B / <g1:/ A B />`
 
 .. step:: assert
 
@@ -43,7 +45,7 @@ G.390
 
    Let :g:`/ A B / <g1:/ A B />` be divided into its straight lines at :g:`E <g1:E>`
 
-.. step:: assert [G.355] <G.355>
+.. step:: assert ∵ straight_lines_incommensurable_x_40 <G.355>
 
    Therefore :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />` are straight lines incommensurable in square which make the sum of the squares on them medial, but the rectangle contained by them rational.
 

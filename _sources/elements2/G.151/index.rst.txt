@@ -24,18 +24,23 @@ G.151
 
    If a first magnitude have to a second the same ratio as a third has to a fourth, and the first be greater than the third, the second is greater than the fourth; if equal, equal; and if less, less.
 
+.. signature:: theorem
+
+   | :fn:`magnitude_ratio_greater_v_14 <G.151>`\ ()
+   | **prove** :g:`B <g1:B>` is also greater than :g:`D <g1:D>`
+
 .. picture:: g1.svg
    :alt: Proposition 14 diagram
 
 .. step:: assert
 
-   For let a first magnitude :g:`A <g1:A>` have the same ratio to a second :g:`B <g1:B>` as a third :g:`C <g1:C>` has to a fourth :g:`D <g1:D>`
+   Let a first magnitude :g:`A <g1:A>` have the same ratio to a second :g:`B <g1:B>` as a third :g:`C <g1:C>` has to a fourth :g:`D <g1:D>`
 
 .. step:: assert
 
    And let :g:`A <g1:A>` be greater than :g:`C <g1:C>`
 
-.. step:: assert [G.145] <G.145>
+.. step:: assert ∵ unequal_magnitudes_greater <G.145>
 
    Since :g:`A <g1:A>` is greater than :g:`C <g1:C>`, and :g:`B <g1:B>` is another, chance, magnitude → therefore :g:`A <g1:A>` has to :g:`B <g1:B>` a greater ratio than :g:`C <g1:C>` has to :g:`B <g1:B>`.
 
@@ -43,11 +48,11 @@ G.151
 
    But, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`
 
-.. step:: assert [G.150] <G.150>
+.. step:: assert ∵ magnitude_ratio_greater <G.150>
 
    Therefore :g:`C <g1:C>` has also to :g:`D <g1:D>` a greater ratio than :g:`C <g1:C>` has to :g:`B <g1:B>`.
 
-.. step:: assert [G.147] <G.147>
+.. step:: assert ∵ magnitudes_ratio_greater <G.147>
 
    That to which the same has a greater ratio is less ;
 

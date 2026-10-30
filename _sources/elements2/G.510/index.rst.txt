@@ -24,20 +24,25 @@ G.510
 
    If a straight line be cut in extreme and mean ratio, the square on the lesser segment added to the half of the greater segment is five times the square on the half of the greater segment.
 
+.. signature:: theorem
+
+   | :fn:`straight_line_cut_xiii_3 <G.510>`\ ()
+   | **prove** the square on :g:`/ B D / <g1:/ B D />` is five times the square on :g:`/ D C / <g1:/ D C />`
+
 .. picture:: g1.svg
    :alt: Book XIII, Proposition 3
 
 .. step:: construct
 
-   For let any straight line :g:`/ A B / <g1:/ A B />` be cut in extreme and mean ratio at :g:`C <g1:C>`, let :g:`/ A C / <g1:/ A C />` be the greater segment
+   Let any straight line :g:`/ A B / <g1:/ A B />` be cut in extreme and mean ratio at :g:`C <g1:C>`
 
 .. step:: assert
 
-   Let :g:`/ A C / <g1:/ A C />` be :eq:`bisected <g1:/ A D / = g1:/ D C />` at :g:`D <g1:D>`
+   Let :g:`/ A C / <g1:/ A C />` be the greater segment, and let :g:`/ A C / <g1:/ A C />` be :eq:`bisected <g1:/ A D / = g1:/ D C />` at :g:`D <g1:D>`
 
 .. step:: construct
 
-   For let the square :g:`< A E > <g1:< A E >>` be described on :g:`/ A B / <g1:/ A B />`
+   Let the square :g:`< A E > <g1:< A E >>` be described on :g:`/ A B / <g1:/ A B />`
 
 .. step:: construct
 
@@ -91,7 +96,7 @@ G.510
 
    Therefore :g:`< C G > <g1:< C G >>` is also :eq:`equal <g1:< C G > = g1:< F E >>` to :g:`< F E > <g1:< F E >>`.
 
-.. step:: assert
+.. step:: construct
 
    Let :g:`< C N > <g1:< C N >>` be added to each ;
 

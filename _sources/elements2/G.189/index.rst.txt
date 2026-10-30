@@ -24,22 +24,24 @@ G.189
 
    In any parallelogram the parallelograms about the diameter are similar both to the whole and to one another.
 
+.. signature:: theorem
+
+   | :fn:`parallelogram_parallelograms_diameter <G.189>`\ (:g:`< A B C D > <g1:< A B C D >>`, :g:`/ A C / <g1:/ A C />`, :g:`< E G > <g1:< E G >>`, :g:`< H K > <g1:< H K >>`)
+   | **given** :g:`< A B C D > <g1:< A B C D >>` be a parallelogram, :g:`/ A C / <g1:/ A C />` its diameter, let :g:`< E G > <g1:< E G >>`, :g:`< H K > <g1:< H K >>` be parallelograms about :g:`/ A C / <g1:/ A C />`
+   | **prove** each of the parallelograms :g:`< E G > <g1:< E G >>`, :g:`< H K > <g1:< H K >>` is similar both to the whole :g:`< A B C D > <g1:< A B C D >>` and to the other
+
 .. picture:: g1.svg
    :alt: Proposition 24 Diagram
 
 .. step:: given
 
-   :g:`< A B C D > <g1:< A B C D >>` be a parallelogram, :g:`/ A C / <g1:/ A C />` its diameter
-
-.. step:: assert
-
-   Let :g:`< E G > <g1:< E G >>`, :g:`< H K > <g1:< H K >>` be parallelograms about :g:`/ A C / <g1:/ A C />`
+   :g:`< A B C D > <g1:< A B C D >>` be a parallelogram, :g:`/ A C / <g1:/ A C />` its diameter, let :g:`< E G > <g1:< E G >>`, :g:`< H K > <g1:< H K >>` be parallelograms about :g:`/ A C / <g1:/ A C />`
 
 .. step:: assert
 
    Since :g:`/ E F / <g1:/ E F />` has been drawn parallel to :g:`/ B C / <g1:/ B C />`, one of the sides of :g:`< A B C > <g1:< A B C >>`,
 
-.. step:: assert [G.164] <G.164>
+.. step:: assert ∵ straight_line_drawn_vi_2 <G.164>
 
    Proportionally, as :g:`/ B E / <g1:/ B E />` is to :g:`/ E A / <g1:/ E A />`, so is :g:`/ C F / <g1:/ C F />` to :g:`/ F A / <g1:/ F A />`.
 
@@ -47,7 +49,7 @@ G.189
 
    Since :g:`/ F G / <g1:/ F G />` has been drawn parallel to :g:`/ C D / <g1:/ C D />`, one of the sides of :g:`< A C D > <g1:< A C D >>`,
 
-.. step:: assert [G.164] <G.164>
+.. step:: assert ∵ straight_line_drawn_vi_2 <G.164>
 
    Proportionally, as :g:`/ C F / <g1:/ C F />` is to :g:`/ F A / <g1:/ F A />`, so is :g:`/ D G / <g1:/ D G />` to :g:`/ G A / <g1:/ G A />`..
 
@@ -67,7 +69,7 @@ G.189
 
    And therefore, :term:`*componendo* <componendo>`,
 
-.. step:: assert [G.155] <G.155>
+.. step:: assert ∵ magnitudes_proportional_separando <G.155>
 
    As :g:`/ B A / <g1:/ B A />` is to :g:`/ A E / <g1:/ A E />`, so is :g:`/ D A / <g1:/ D A />` to :g:`/ A G / <g1:/ A G />`,
 
@@ -75,7 +77,7 @@ G.189
 
    And, alternately,
 
-.. step:: assert [G.153] <G.153>
+.. step:: assert ∵ magnitudes_proportional_proportional <G.153>
 
    As :g:`/ B A / <g1:/ B A />` is to :g:`/ A D / <g1:/ A D />`, so is :g:`/ E A / <g1:/ E A />` to :g:`/ A G / <g1:/ A G />`.
 
@@ -123,7 +125,7 @@ G.189
 
    And, since it was proved that, as :g:`/ D C / <g1:/ D C />` is to :g:`/ C A / <g1:/ C A />`, so is :g:`/ G F / <g1:/ G F />` to :g:`/ F A / <g1:/ F A />`, and, as :g:`/ A C / <g1:/ A C />` is to :g:`/ C B / <g1:/ C B />`, so is :g:`/ A F / <g1:/ A F />` to :g:`/ F E / <g1:/ F E />`,
 
-.. step:: assert [G.159] <G.159>
+.. step:: assert ∵ there_number_magnitudes_v_22 <G.159>
 
    Therefore, :term:`*ex aequali* <ex-aequali>`, as :g:`/ D C / <g1:/ D C />` is to :g:`/ C B / <g1:/ C B />`, so is :g:`/ G F / <g1:/ G F />` to :g:`/ F E / <g1:/ F E />`.
 
@@ -131,7 +133,7 @@ G.189
 
    Therefore in the parallelograms :g:`< A B C D > <g1:< A B C D >>`, :g:`< E G > <g1:< E G >>` the sides about the equal angles are proportional ;
 
-.. step:: assert [G.170] <G.170>
+.. step:: assert ∵ similar_polygons_angles_def <G.170>
 
    Therefore the parallelogram :g:`< A B C D > <g1:< A B C D >>` is similar to the parallelogram :g:`< E G > <g1:< E G >>`.
 
@@ -147,7 +149,7 @@ G.189
 
    Therefore each of the parallelograms :g:`< E G > <g1:< E G >>`, :g:`< H K > <g1:< H K >>` is similar to :g:`< A B C D > <g1:< A B C D >>`.
 
-.. step:: assert [G.186] <G.186>
+.. step:: assert ∵ figures_similar_polygon <G.186>
 
    Figures similar to the same rectilineal figure are also similar to one another .
 

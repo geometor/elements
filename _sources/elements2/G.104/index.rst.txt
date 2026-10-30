@@ -24,6 +24,12 @@ G.104
 
    Given a segment of a circle, to describe the complete circle of which it is a segment.
 
+.. signature:: problem
+
+   | :fn:`segment_circle_describe <G.104>`\ (:g:`( A B C ) <g1:( A B C )>`) → :g:`/ E C / <g1:/ E C />`
+   | **given** :g:`( A B C ) <g1:( A B C )>` of a circle
+   | **construct** given a segment of a circle, the complete circle has been described
+
 .. picture:: g1.svg
    :alt: Diagram for Proposition 25, Case 1
 
@@ -35,15 +41,15 @@ G.104
 
 .. step:: given
 
-   :g:`( A B C ) <g1:( A B C )>` be the given segment of a circle
+   :g:`( A B C ) <g1:( A B C )>` of a circle
 
 .. step:: construct
 
-   For let :g:`/ A C / <g1:/ A C />` be :eq:`bisected <g1:/ A D / = g1:/ D C />` at :g:`D <g1:D>`, let :g:`/ D B / <g1:/ D B />` be drawn from :g:`D <g1:D>` at right angles to :g:`/ A C / <g1:/ A C />`
+   Let :g:`/ A C / <g1:/ A C />` be :eq:`bisected <g1:/ A D / = g1:/ D C />` at :g:`D <g1:D>`, let :g:`/ D B / <g1:/ D B />` be drawn from :g:`D <g1:D>` at right angles to :g:`/ A C / <g1:/ A C />`
 
 .. step:: construct
 
-   **segment** :g:`/ A B / <g1:/ A B />`
+   :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`) → :g:`/ A B / <g1:/ A B />`
 
 .. step:: assert
 
@@ -53,23 +59,19 @@ G.104
 
    First let it be greater
 
-.. step:: assert
+.. step:: construct
 
-   And on :g:`/ B A / <g1:/ B A />`
+   :fn:`copy_angle <G.34>`\ (:g:`/ B A / <g1:/ B A />`, :g:`A <g1:A>`, :g:`< A B D ) <g1:< A B D )>`) → :g:`< B A E ) <g1:< B A E )>` (:eq:`equal <g1:< B A E ) = g1:< A B D )>`)
 
 .. step:: construct
 
-   At :g:`A <g1:A>` on it, let :g:`< B A E ) <g1:< B A E )>` be constructed :eq:`equal <g1:< B A E ) = g1:< A B D )>` to :g:`< A B D ) <g1:< A B D )>`
+   :fn:`extend <G.7>`\ (:g:`/ D B / <g1:/ D B />`) → :g:`E <g1:E>`
 
 .. step:: construct
 
-   Let :g:`/ D B / <g1:/ D B />` be drawn through to :g:`E <g1:E>`
+   :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`C <g1:C>`) → :g:`/ E C / <g1:/ E C />`
 
-.. step:: construct
-
-   **segment** :g:`/ E C / <g1:/ E C />`
-
-.. step:: assert [G.13] <G.13>
+.. step:: assert ∵ equal_angles_isosceles <G.13>
 
    Since :g:`< A B E ) <g1:< A B E )>` is :eq:`equal <g1:< A B E ) = g1:< B A E )>` to :g:`< B A E ) <g1:< B A E )>`, :g:`/ E B / <g1:/ E B />` is also :eq:`equal <g1:/ E B / = g1:/ E A />` to :g:`/ E A / <g1:/ E A />`.
 
@@ -97,7 +99,7 @@ G.104
 
    Therefore :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />`, :g:`/ E C / <g1:/ E C />` are :eq:`equal <g1:/ A E / = g1:/ E B / = g1:/ E C />` to one another.
 
-.. step:: assert [G.84] <G.84>
+.. step:: assert ∵ point_taken_within <G.84>
 
    Therefore the circle drawn with center :g:`E <g1:E>` and distance one of :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />`, :g:`/ E C / <g1:/ E C />` will also pass through the remaining points and will have been completed.
 

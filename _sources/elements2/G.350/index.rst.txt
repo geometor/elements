@@ -24,10 +24,16 @@ G.350
 
    Find two straight lines incommensurable in square which make the sum of the squares on them medial and the rectangle contained by them medial and moreover incommensurable with the sum of the squares on them.
 
+.. signature:: problem
+
+   | :fn:`find_straight_lines_x_35 <G.350>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`) → :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />`
+   | **given** there be set out two medial straight lines :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` commensurable in square only, containing a medial rectangle, such that the square on :g:`/ A B / <g1:/ A B />` is greater than the square on :g:`/ B C / <g1:/ B C />` by the square on a straight line incommensurable with :g:`/ A B / <g1:/ A B />`
+   | **construct** the sum of the squares on :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` is incommensurable with the rectangle :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />`
+
 .. picture:: g1.svg
    :alt: Proposition 35
 
-.. step:: given [G.347] <G.347>
+.. step:: given
 
    there be set out two medial straight lines :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` commensurable in square only, containing a medial rectangle, such that the square on :g:`/ A B / <g1:/ A B />` is greater than the square on :g:`/ B C / <g1:/ B C />` by the square on a straight line incommensurable with :g:`/ A B / <g1:/ A B />`
 
@@ -39,11 +45,11 @@ G.350
 
    Let the rest of the construction be as above.
 
-.. step:: assert [G.331] <G.331>
+.. step:: assert ∵ there_unequal_straight_x_18 <G.331>
 
    Since :g:`/ A F / <g1:/ A F />` is incommensurable in length with :g:`/ F B / <g1:/ F B />`.
 
-.. step:: assert [G.323] <G.323>
+.. step:: assert ∵ magnitudes_proportional_commensurable <G.323>
 
    :g:`/ A D / <g1:/ A D />` is also incommensurable in square with :g:`/ D B / <g1:/ D B />`.
 
@@ -51,7 +57,7 @@ G.350
 
    And, since the square on :g:`/ A B / <g1:/ A B />` is medial,
 
-.. step:: assert [G.110, G.60] <G.110, G.60>
+.. step:: assert ∵ thales_semicircle_theorem, pythagorean_theorem <G.110, G.60>
 
    Therefore the sum of the squares on :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` is also medial.
 
@@ -67,11 +73,11 @@ G.350
 
    The rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` is medial;
 
-.. step:: assert [G.347] <G.347>
+.. step:: assert ∵ find_medial_straight_x_32 <G.347>
 
    Therefore the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ F D / <g1:/ F D />` is also medial.
 
-.. step:: assert [G.347] <G.347>
+.. step:: assert ∵ find_medial_straight_x_32 <G.347>
 
    It is equal to the rectangle :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />`.
 
@@ -83,11 +89,11 @@ G.350
 
    And, since :g:`/ A B / <g1:/ A B />` is incommensurable in length with :g:`/ B C / <g1:/ B C />`, while :g:`/ C B / <g1:/ C B />` is commensurable with :g:`/ B E / <g1:/ B E />`,
 
-.. step:: assert [G.326, G.323] <G.326, G.323>
+.. step:: assert ∵ magnitudes_commensurable_incommensurable, magnitudes_proportional_commensurable <G.326, G.323>
 
    Therefore :g:`/ A B / <g1:/ A B />` is also incommensurable in length with :g:`/ B E / <g1:/ B E />`, so that the square on :g:`/ A B / <g1:/ A B />` is also incommensurable with the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B E / <g1:/ B E />`.
 
-.. step:: assert [G.60] <G.60>
+.. step:: assert ∵ pythagorean_theorem <G.60>
 
    The squares on :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` are equal to the square on :g:`/ A B / <g1:/ A B />`, and the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ F D / <g1:/ F D />`, that is, the rectangle :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />`, is equal to the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B E / <g1:/ B E />`.
 

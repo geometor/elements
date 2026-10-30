@@ -24,6 +24,12 @@ G.124
 
    Inscribe in a given circle a square.
 
+.. signature:: problem
+
+   | :fn:`inscribe_square_in_circle <G.124>`\ (:g:`( A B C D ) <g1:( A B C D )>`) → :g:`< A B C D > <g1:< A B C D >>`
+   | **given** :g:`( A B C D ) <g1:( A B C D )>`
+   | **construct** in the given circle the square :g:`< A B C D > <g1:< A B C D >>` has been inscribed
+
 .. picture:: g1.svg
    :alt: Proposition 6 diagram
 
@@ -37,15 +43,15 @@ G.124
 
 .. step:: construct
 
-   **segment** :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ C D / <g1:/ C D />`, :g:`/ D A / <g1:/ D A />`
+   :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`) → :g:`/ A B / <g1:/ A B />`, :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`C <g1:C>`) → :g:`/ B C / <g1:/ B C />`, :fn:`segment <G.3>`\ (:g:`C <g1:C>`, :g:`D <g1:D>`) → :g:`/ C D / <g1:/ C D />`, :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`A <g1:A>`) → :g:`/ D A / <g1:/ D A />`
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    Since :g:`/ B E / <g1:/ B E />` is :eq:`equal <g1:/ B E / = g1:/ E D />` to :g:`/ E D / <g1:/ E D />`, for :g:`E <g1:E>` is the center, and :g:`/ E A / <g1:/ E A />` is common and at right angles, therefore the base :g:`/ A B / <g1:/ A B />` is :eq:`equal <g1:/ A B / = g1:/ A D />` to the base :g:`/ A D / <g1:/ A D />`.
 
 .. step:: assert
 
-   For the same reason each of :g:`/ B C / <g1:/ B C />`, :g:`/ C D / <g1:/ C D />` is also :eq:`equal <g1:/ B C / = g1:/ C D / = g1:/ A B / = g1:/ A D />` to each of :g:`/ A B / <g1:/ A B />`, :g:`/ A D / <g1:/ A D />`
+   The same reason each of :g:`/ B C / <g1:/ B C />`, :g:`/ C D / <g1:/ C D />` is also :eq:`equal <g1:/ B C / = g1:/ C D / = g1:/ A B / = g1:/ A D />` to each of :g:`/ A B / <g1:/ A B />`, :g:`/ A D / <g1:/ A D />`
 
 .. step:: assert
 
@@ -59,13 +65,13 @@ G.124
 
    Since :g:`/ B D / <g1:/ B D />` is a diameter of :g:`( A B C D ) <g1:( A B C D )>`, therefore :g:`( B A D ) <g1:( B A D )>` is a semicircle
 
-.. step:: assert [G.110] <G.110>
+.. step:: assert ∵ thales_semicircle_theorem <G.110>
 
    Therefore :g:`< B A D ) <g1:< B A D )>` is right.
 
 .. step:: assert
 
-   For the same reason each of :g:`< A B C ) <g1:< A B C )>`, :g:`< B C D ) <g1:< B C D )>`, :g:`< C D A ) <g1:< C D A )>` is also :eq:`right <g1:< A B C ) = g1:< B C D ) = g1:< C D A ) = g1:< B A D )>`
+   The same reason each of :g:`< A B C ) <g1:< A B C )>`, :g:`< B C D ) <g1:< B C D )>`, :g:`< C D A ) <g1:< C D A )>` is also :eq:`right <g1:< A B C ) = g1:< B C D ) = g1:< C D A ) = g1:< B A D )>`
 
 .. step:: assert
 
@@ -75,7 +81,7 @@ G.124
 
    It was also proved :eq:`equilateral <g1:/ A B / = g1:/ B C / = g1:/ C D / = g1:/ D A />`
 
-.. step:: assert [G.123] <G.123>
+.. step:: assert ∵ quadrilateral_def <G.123>
 
    Therefore it is a square
 

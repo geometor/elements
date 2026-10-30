@@ -24,6 +24,12 @@ G.51
 
    Triangles on equal bases and in the same parallels are equal in area.
 
+.. signature:: theorem
+
+   | :fn:`triangles_equal_bases <G.51>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>`, :g:`/ B C / <g1:/ B C />`, :g:`/ E F / <g1:/ E F />`)
+   | **given** :g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>` be triangles on :eq:`equal <g1:/ B C / = g1:/ E F />` bases :g:`/ B C / <g1:/ B C />`, :g:`/ E F / <g1:/ E F />` and in the same parallels :g:`/ B F / <g1:/ B F />`, :g:`/ A D / <g1:/ A D />`
+   | **prove** :g:`< A B C > <g1:< A B C >>` is :eq:`equal <g1:< A B C > = g1:< D E F >>` to :g:`< D E F > <g1:< D E F >>`
+
 .. picture:: g1.svg
    :alt: Folio 0347 Figure 1 - Proposition 38
 
@@ -31,21 +37,17 @@ G.51
 
    :g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>` be triangles on :eq:`equal <g1:/ B C / = g1:/ E F />` bases :g:`/ B C / <g1:/ B C />`, :g:`/ E F / <g1:/ E F />` and in the same parallels :g:`/ B F / <g1:/ B F />`, :g:`/ A D / <g1:/ A D />`
 
-.. step:: assert
+.. step:: construct
 
-   :g:`< A B C > <g1:< A B C >>` is :eq:`equal <g1:< A B C > = g1:< D E F >>` to :g:`< D E F > <g1:< D E F >>`.
+   :fn:`extend <G.7>`\ (:g:`[ A D ] <g1:[ A D ]>`) → :g:`G <g1:G>`, :g:`H <g1:H>`
 
 .. step:: construct
 
-   For let :g:`[ A D ] <g1:[ A D ]>` be produced in both directions to :g:`G <g1:G>`, :g:`H <g1:H>`
-
-.. step:: construct [G.44] <G.44>
-
-   Through :g:`B <g1:B>` let :g:`/ B G / <g1:/ B G />` be drawn parallel to :g:`/ C A / <g1:/ C A />`.
+   :fn:`parallel_line <G.44>`\ (:g:`B <g1:B>`, :g:`/ C A / <g1:/ C A />`) → :g:`/ B G / <g1:/ B G />`
 
 .. step:: construct
 
-   And through :g:`F <g1:F>` let :g:`/ F H / <g1:/ F H />` be drawn parallel to :g:`/ D E / <g1:/ D E />`.
+   :fn:`parallel_line <G.44>`\ (:g:`F <g1:F>`, :g:`/ D E / <g1:/ D E />`) → :g:`/ F H / <g1:/ F H />`
 
 .. step:: assert
 
@@ -55,7 +57,7 @@ G.51
 
    And :g:`< G B C A > <g1:< G B C A >>` is :eq:`equal <g1:< G B C A > = g1:< D E F H >>` to :g:`< D E F H > <g1:< D E F H >>`
 
-.. step:: assert [G.49] <G.49>
+.. step:: assert ∵ parallelograms_equal_bases <G.49>
 
    For they are on :eq:`equal <g1:/ B C / = g1:/ E F />` bases :g:`/ B C / <g1:/ B C />`, :g:`/ E F / <g1:/ E F />` and in the same parallels :g:`/ B F / <g1:/ B F />`, :g:`/ G H / <g1:/ G H />`.
 
@@ -63,7 +65,7 @@ G.51
 
    Moreover :g:`< A B C > <g1:< A B C >>` is half of the parallelogram :g:`< G B C A > <g1:< G B C A >>`
 
-.. step:: assert [G.47] <G.47>
+.. step:: assert ∵ parallelogram_properties <G.47>
 
    For the diameter :g:`/ A B / <g1:/ A B />` :eq:`bisects <g1:< G A B > = g1:< A B C >>` it.
 
@@ -71,7 +73,7 @@ G.51
 
    :g:`< F E D > <g1:< F E D >>` is half of the parallelogram :g:`< D E F H > <g1:< D E F H >>`
 
-.. step:: assert [G.47] <G.47>
+.. step:: assert ∵ parallelogram_properties <G.47>
 
    For the diameter :g:`/ D F / <g1:/ D F />` :eq:`bisects <g1:< D E F > = g1:< D H F >>` it.
 

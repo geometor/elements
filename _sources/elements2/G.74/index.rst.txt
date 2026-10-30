@@ -10,7 +10,7 @@
 :category: theorem, proof, plane-geometry, geometric-algebra
 :tags: book-ii, point, segment, angle, triangle, acute-angle, square, rectangle, perpendicular
 :dependencies: G.60, G.68
-:excerpt: In acute-angled triangles the square on the side subtending the acute angle is less than the squares on the sides containing the acute angle by twice the rectangle contained by one of the sides about the acute angle, namely that on which the per- pendicular falls, and the straight line cut off within by the perpendicular towards the acute angle.
+:excerpt: In acute-angled triangles the square on the side subtending the acute angle is less than the squares on the sides containing the acute angle by twice the rectangle contained by one of the sides about the acute angle, namely that on which the perpendicular falls, and the straight line cut off within by the perpendicular towards the acute angle.
 
 .. _G.74:
 .. _II.13:
@@ -22,24 +22,25 @@ G.74
 
 .. enunciation::
 
-   In acute-angled triangles the square on the side subtending the acute angle is less than the squares on the sides containing the acute angle by twice the rectangle contained by one of the sides about the acute angle, namely that on which the per- pendicular falls, and the straight line cut off within by the perpendicular towards the acute angle.
+   In acute-angled triangles the square on the side subtending the acute angle is less than the squares on the sides containing the acute angle by twice the rectangle contained by one of the sides about the acute angle, namely that on which the perpendicular falls, and the straight line cut off within by the perpendicular towards the acute angle.
+
+.. signature:: theorem
+
+   | :fn:`law_of_cosines_acute <G.74>`\ ()
+   | **prove** the square on :g:`/ A C / <g1:/ A C />` is less than the squares on :g:`/ C B / <g1:/ C B />`, :g:`/ B A / <g1:/ B A />` by twice the rectangle contained by :g:`/ C B / <g1:/ C B />`, :g:`/ B D / <g1:/ B D />`
 
 .. picture:: g1.svg
    :alt: Diagram
 
-.. step:: given
-
-   :g:`< A B C > <g1:< A B C >>` be an acute-angled triangle having the angle at :g:`< A B C ) <g1:< A B C )>` acute
-
 .. step:: construct
 
-   Let :g:`/ A D / <g1:/ A D />` be drawn from :g:`A <g1:A>` perpendicular to :g:`/ B C / <g1:/ B C />`
+   Let :g:`< A B C > <g1:< A B C >>` be an acute-angled triangle having the angle at :g:`< A B C ) <g1:< A B C )>` acute, and let :g:`/ A D / <g1:/ A D />` be drawn from :g:`A <g1:A>` perpendicular to :g:`/ B C / <g1:/ B C />`
 
-.. step:: assert [G.68] <G.68>
+.. step:: assert ∵ square_of_difference <G.68>
 
    Since :g:`/ C B / <g1:/ C B />` has been cut at random at :g:`D <g1:D>`, the squares on :g:`/ C B / <g1:/ C B />`, :g:`/ B D / <g1:/ B D />` are equal to twice the rectangle contained by :g:`/ C B / <g1:/ C B />`, :g:`/ B D / <g1:/ B D />` and the square on :g:`/ D C / <g1:/ D C />`.
 
-.. step:: assert
+.. step:: construct
 
    Let the square on :g:`/ D A / <g1:/ D A />` be added to each
 
@@ -47,7 +48,7 @@ G.74
 
    Therefore the squares on :g:`/ C B / <g1:/ C B />`, :g:`/ B D / <g1:/ B D />`, :g:`/ D A / <g1:/ D A />` are equal to twice the rectangle contained by :g:`/ C B / <g1:/ C B />`, :g:`/ B D / <g1:/ B D />` and the squares on :g:`/ A D / <g1:/ A D />`, :g:`/ D C / <g1:/ D C />`.
 
-.. step:: assert [G.60] <G.60>
+.. step:: assert ∵ pythagorean_theorem <G.60>
 
    The square on :g:`/ A B / <g1:/ A B />` is equal to the squares on :g:`/ B D / <g1:/ B D />`, :g:`/ D A / <g1:/ D A />`, for the angle at :g:`< A D B ) <g1:< A D B )>` is right
 

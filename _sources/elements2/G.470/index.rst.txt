@@ -24,16 +24,29 @@ G.470
 
    If a parallelepipedal solid be cut by a plane which is parallel to the opposite planes, then, as the base is to the base, so will the solid be to the solid.
 
+.. signature:: theorem
+
+   | :fn:`parallelepipedal_solid_cut <G.470>`\ ()
+   | **prove** there being four magnitudes, the two bases :g:`< A F > <g1:< A F >>`, :g:`< F H > <g1:< F H >>`, and the two solids :g:`< A U > <g1:< A U >>`, :g:`< U H > <g1:< U H >>`, equimultiples have been taken of the base :g:`< A F > <g1:< A F >>` and the solid :g:`< A U > <g1:< A U >>`, namely the base :g:`< L F > <g1:< L F >>` and the solid :g:`< L U > <g1:< L U >>`, and equimultiples of the base :g:`< H F > <g1:< H F >>` and the solid :g:`< H U > <g1:< H U >>`, namely the base :g:`< N F > <g1:< N F >>` and the solid :g:`< N U > <g1:< N U >>`, and it has been proved that, if the base :g:`< L F > <g1:< L F >>` exceeds the base :g:`< F N > <g1:< F N >>`, the solid :g:`< L U > <g1:< L U >>` also exceeds the solid :g:`< N U > <g1:< N U >>`, if the bases are :eq:`equal <g1:< L F > = g1:< F N >>`, the solids are :eq:`equal <g1:< L U > = g1:< N U >>`, and if the base falls short, the solid falls short
+
 .. picture:: g1.svg
    :alt: Folio 0329 Figure 1
 
 .. step:: construct
 
-   For let the parallelepipedal solid :g:`< A B C D > <g1:< A B C D >>` be cut by the plane :g:`< F G > <g1:< F G >>` which is parallel to the opposite planes :g:`< R A > <g1:< R A >>`, :g:`< D H > <g1:< D H >>`
+   Let the parallelepipedal solid :g:`< A B C D > <g1:< A B C D >>` be cut by the plane :g:`< F G > <g1:< F G >>` which is parallel to the opposite planes :g:`< R A > <g1:< R A >>`, :g:`< D H > <g1:< D H >>`
+
+.. step:: assert
+
+   I say that, as the base :g:`< A E F V > <g1:< A E F V >>` is to the base :g:`< E H C F > <g1:< E H C F >>`, so is the solid :g:`< A B F U > <g1:< A B F U >>` to the solid :g:`< E G C D > <g1:< E G C D >>`.
 
 .. step:: construct
 
-   For let :g:`/ A H / <g1:/ A H />` be produced in each direction, let any number of straight lines whatever, :g:`/ A K / <g1:/ A K />`, :g:`/ K L / <g1:/ K L />`, be made :eq:`equal <g1:/ A K / = g1:/ K L / = g1:/ A E />` to :g:`/ A E / <g1:/ A E />`, and any number whatever, :g:`/ H M / <g1:/ H M />`, :g:`/ M N / <g1:/ M N />`, :eq:`equal <g1:/ H M / = g1:/ M N / = g1:/ E H />` to :g:`/ E H / <g1:/ E H />`
+   Let :g:`/ A H / <g1:/ A H />` be produced in each direction
+
+.. step:: construct
+
+   Let any number of straight lines whatever, :g:`/ A K / <g1:/ A K />`, :g:`/ K L / <g1:/ K L />`, be made :eq:`equal <g1:/ A K / = g1:/ K L / = g1:/ A E />` to :g:`/ A E / <g1:/ A E />`, and any number whatever, :g:`/ H M / <g1:/ H M />`, :g:`/ M N / <g1:/ M N />`, :eq:`equal <g1:/ H M / = g1:/ M N / = g1:/ E H />` to :g:`/ E H / <g1:/ E H />`
 
 .. step:: assert
 
@@ -43,7 +56,7 @@ G.470
 
    Since :g:`/ L K / <g1:/ L K />`, :g:`/ K A / <g1:/ K A />`, :g:`/ A E / <g1:/ A E />` are :eq:`equal <g1:/ L K / = g1:/ K A / = g1:/ A E />` to one another,
 
-.. step:: assert [G.469] <G.469>
+.. step:: assert ∵ solid_contained_parallel <G.469>
 
    The parallelograms :g:`< L P > <g1:< L P >>`, :g:`< K V > <g1:< K V >>`, :g:`< A F > <g1:< A F >>` are also :eq:`equal <g1:< L P > = g1:< K V > = g1:< A F >>` to one another, :g:`< K O > <g1:< K O >>`, :g:`< K B > <g1:< K B >>`, :g:`< A G > <g1:< A G >>` are :eq:`equal <g1:< K O > = g1:< K B > = g1:< A G >>` to one another, and further :g:`< L X > <g1:< L X >>`, :g:`< K Q > <g1:< K Q >>`, :g:`< A R > <g1:< A R >>` are :eq:`equal <g1:< L X > = g1:< K Q > = g1:< A R >>` to one another, for they are opposite.
 

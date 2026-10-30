@@ -24,6 +24,12 @@ G.383
 
    The square on the major straight line applied to a rational straight line produces as breadth the fourth binomial.
 
+.. signature:: theorem
+
+   | :fn:`square_major_straight <G.383>`\ (:g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`, :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />`)
+   | **given** :g:`/ A B / <g1:/ A B />` be a major straight line divided at :g:`C <g1:C>`, so that :g:`/ A C / <g1:/ A C />` is greater than :g:`/ C B / <g1:/ C B />`
+   | **prove** :g:`/ D G / <g1:/ D G />` is a fourth binomial straight line
+
 .. picture:: g1.svg
    :alt: Proposition 63 Diagram
 
@@ -39,7 +45,7 @@ G.383
 
    Let the same construction be made as before shown.
 
-.. step:: assert [G.354] <G.354>
+.. step:: assert ∵ straight_lines_incommensurable <G.354>
 
    Since :g:`/ A B / <g1:/ A B />` is a major straight line divided at :g:`C <g1:C>`, :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` are straight lines incommensurable in square which make the sum of the squares on them rational, but the rectangle contained by them medial.
 
@@ -47,7 +53,7 @@ G.383
 
    Since then the sum of the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` is rational,
 
-.. step:: assert [G.334] <G.334>
+.. step:: assert ∵ rational_area_applied <G.334>
 
    Therefore :g:`< D L > <g1:< D L >>` is rational ; therefore :g:`/ D M / <g1:/ D M />` is also rational and commensurable in length with :g:`/ D E / <g1:/ D E />`.
 
@@ -55,11 +61,11 @@ G.383
 
    Since twice the rectangle :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />`, that is, :g:`< M F > <g1:< M F >>`, is medial, and it is applied to the rational straight line :g:`/ M L / <g1:/ M L />`,
 
-.. step:: assert [G.336, G.326] <G.336, G.326>
+.. step:: assert ∵ square_medial_straight, magnitudes_commensurable_incommensurable <G.336, G.326>
 
    Therefore :g:`/ M G / <g1:/ M G />` is also rational and incommensurable in length with :g:`/ D E / <g1:/ D E />` ; therefore :g:`/ D M / <g1:/ D M />` is also incommensurable in length with :g:`/ M G / <g1:/ M G />`.
 
-.. step:: assert [G.351] <G.351>
+.. step:: assert ∵ rational_straight_lines <G.351>
 
    Therefore :g:`/ D M / <g1:/ D M />`, :g:`/ M G / <g1:/ M G />` are rational straight lines commensurable in square only ; therefore :g:`/ D G / <g1:/ D G />` is binomial.
 
@@ -71,7 +77,7 @@ G.383
 
    Since then the square on :g:`/ A C / <g1:/ A C />` is incommensurable with the square on :g:`/ C B / <g1:/ C B />`,
 
-.. step:: assert [G.163, G.323] <G.163, G.323>
+.. step:: assert ∵ triangles_parallelograms_height, magnitudes_proportional_commensurable <G.163, G.323>
 
    Therefore :g:`< D H > <g1:< D H >>` is also incommensurable with :g:`< K L > <g1:< K L >>`, so that :g:`/ D K / <g1:/ D K />` is also incommensurable with :g:`/ K M / <g1:/ K M />`.
 
@@ -79,7 +85,7 @@ G.383
 
    But, if there be two unequal straight lines, and to the greater there be applied a parallelogram equal to the fourth part of the square on the less and deficient by a square figure, and if it divide it into incommensurable parts, then the
 
-.. step:: assert [G.331] <G.331>
+.. step:: assert ∵ there_unequal_straight_x_18 <G.331>
 
    Square on the greater will be greater than the square on the less by the square on a straight line incommensurable in length with the greater .
 

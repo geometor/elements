@@ -24,24 +24,21 @@ G.341
 
    A medial area does not exceed a medial area by a rational area.
 
+.. signature:: theorem
+
+   | :fn:`medial_area_exceed <G.341>`\ ()
+   | **prove** Which is impossible
+
 .. picture:: g1.svg
    :alt: Proposition 26 diagram
 
 .. step:: assert
 
-   If possible, let the medial area :g:`< A B > <g1:< A B >>` exceed the medial area :g:`< A C > <g1:< A C >>` by the rational area :g:`< D B > <g1:< D B >>`
-
-.. step:: assert
-
-   Let a rational straight line :g:`/ E F / <g1:/ E F />` be set out
+   If possible, let the medial area :g:`< A B > <g1:< A B >>` exceed the medial area :g:`< A C > <g1:< A C >>` by the rational area :g:`< D B > <g1:< D B >>`, and let a rational straight line :g:`/ E F / <g1:/ E F />` be set out
 
 .. step:: construct
 
-   To :g:`/ E F / <g1:/ E F />` let there be applied the rectangular parallelogram :g:`< F H > <g1:< F H >>` :eq:`equal <g1:< F H > = g1:< A B >>` to :g:`< A B > <g1:< A B >>`, producing :g:`/ E H / <g1:/ E H />` as breadth
-
-.. step:: assert
-
-   Let the rectangle :g:`< F G > <g1:< F G >>` :eq:`equal <g1:< F G > = g1:< A C >>` to :g:`< A C > <g1:< A C >>` be subtracted
+   To :g:`/ E F / <g1:/ E F />` let there be applied the rectangular parallelogram :g:`< F H > <g1:< F H >>` :eq:`equal <g1:< F H > = g1:< A B >>` to :g:`< A B > <g1:< A B >>`, producing :g:`/ E H / <g1:/ E H />` as breadth, and let the rectangle :g:`< F G > <g1:< F G >>` :eq:`equal <g1:< F G > = g1:< A C >>` to :g:`< A C > <g1:< A C >>` be subtracted
 
 .. step:: assert
 
@@ -67,7 +64,7 @@ G.341
 
    They are applied to the rational straight line :g:`/ E F / <g1:/ E F />`;
 
-.. step:: assert [G.336] <G.336>
+.. step:: assert ∵ square_medial_straight <G.336>
 
    Therefore each of :g:`/ H E / <g1:/ H E />`, :g:`/ E G / <g1:/ E G />` is rational and incommensurable in length with :g:`/ E F / <g1:/ E F />`.
 
@@ -75,7 +72,7 @@ G.341
 
    And, since [:g:`< D B > <g1:< D B >>` is rational and is :eq:`equal <g1:< D B > = g1:< K H >>` to :g:`< K H > <g1:< K H >>`, therefore] :g:`< K H > <g1:< K H >>` is [also] rational; and it is applied to the rational straight line :g:`/ E F / <g1:/ E F />`;
 
-.. step:: assert [G.334] <G.334>
+.. step:: assert ∵ rational_area_applied <G.334>
 
    Therefore :g:`/ G H / <g1:/ G H />` is rational and commensurable in length with :g:`/ E F / <g1:/ E F />`.
 
@@ -83,7 +80,7 @@ G.341
 
    :g:`/ E G / <g1:/ E G />` is also rational, and is incommensurable in length with :g:`/ E F / <g1:/ E F />`;
 
-.. step:: assert [G.326] <G.326>
+.. step:: assert ∵ magnitudes_commensurable_incommensurable <G.326>
 
    Therefore :g:`/ E G / <g1:/ E G />` is incommensurable in length with :g:`/ G H / <g1:/ G H />`.
 
@@ -91,19 +88,19 @@ G.341
 
    And, as :g:`/ E G / <g1:/ E G />` is to :g:`/ G H / <g1:/ G H />`, so is the square on :g:`/ E G / <g1:/ E G />` to the rectangle :g:`/ E G / <g1:/ E G />`, :g:`/ G H / <g1:/ G H />`;
 
-.. step:: assert [G.323] <G.323>
+.. step:: assert ∵ magnitudes_proportional_commensurable <G.323>
 
    Therefore the square on :g:`/ E G / <g1:/ E G />` is incommensurable with the rectangle :g:`/ E G / <g1:/ E G />`, :g:`/ G H / <g1:/ G H />`.
 
-.. step:: assert [G.319] <G.319>
+.. step:: assert ∵ magnitudes_ratio_number <G.319>
 
    The squares on :g:`/ E G / <g1:/ E G />`, :g:`/ G H / <g1:/ G H />` are commensurable with the square on :g:`/ E G / <g1:/ E G />`, for both are rational; and twice the rectangle :g:`/ E G / <g1:/ E G />`, :g:`/ G H / <g1:/ G H />` is commensurable with the rectangle :g:`/ E G / <g1:/ E G />`, :g:`/ G H / <g1:/ G H />`, for it is double of it.
 
-.. step:: assert [G.326] <G.326>
+.. step:: assert ∵ magnitudes_commensurable_incommensurable <G.326>
 
    Therefore the squares on :g:`/ E G / <g1:/ E G />`, :g:`/ G H / <g1:/ G H />` are incommensurable with twice the rectangle :g:`/ E G / <g1:/ E G />`, :g:`/ G H / <g1:/ G H />`.
 
-.. step:: assert [G.65, G.329] <G.65, G.329>
+.. step:: assert ∵ square_of_sum, incommensurable_magnitudes_added <G.65, G.329>
 
    Therefore also the sum of the squares on :g:`/ E G / <g1:/ E G />`, :g:`/ G H / <g1:/ G H />` and twice the rectangle :g:`/ E G / <g1:/ E G />`, :g:`/ G H / <g1:/ G H />`, that is, the square on :g:`/ E H / <g1:/ E H />`, is incommensurable with the squares on :g:`/ E G / <g1:/ E G />`, :g:`/ G H / <g1:/ G H />`.
 
@@ -111,7 +108,7 @@ G.341
 
    The squares on :g:`/ E G / <g1:/ E G />`, :g:`/ G H / <g1:/ G H />` are rational;
 
-.. step:: assert [G.332] <G.332>
+.. step:: assert ∵ square_assigned_straight_def <G.332>
 
    Therefore the square on :g:`/ E H / <g1:/ E H />` is irrational.
 

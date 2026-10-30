@@ -24,34 +24,32 @@ G.477
 
    Parallelepipedal solids which are on the same base and of the same height, and in which the extremities of the sides which stand up are not on the same straight lines, are equal.
 
+.. signature:: theorem
+
+   | :fn:`parallelepipedal_solids_base_xi_30 <G.477>`\ (:g:`< C M > <g1:< C M >>`, :g:`< C N > <g1:< C N >>`, :g:`< A B > <g1:< A B >>`, :g:`/ A F / <g1:/ A F />`)
+   | **given** :g:`< C M > <g1:< C M >>`, :g:`< C N > <g1:< C N >>` be parallelepipedal solids on the same base :g:`< A B > <g1:< A B >>` and of the same height, let the extremities of their sides which stand up, namely :g:`/ A F / <g1:/ A F />`, :g:`/ A G / <g1:/ A G />`, :g:`/ L M / <g1:/ L M />`, :g:`/ L N / <g1:/ L N />`, :g:`/ C D / <g1:/ C D />`, :g:`/ C E / <g1:/ C E />`, :g:`/ B H / <g1:/ B H />`, :g:`/ B K / <g1:/ B K />`, not be on the same straight lines
+   | **prove** the solid :g:`< C M > <g1:< C M >>` is :eq:`equal <g1:< C M > = g1:< C N >>` to the solid :g:`< C N > <g1:< C N >>`
+
 .. picture:: g1.svg
    :alt: Proposition 30
 
 .. step:: given
 
-   :g:`< C M > <g1:< C M >>`, :g:`< C N > <g1:< C N >>` be parallelepipedal solids on the same base :g:`< A B > <g1:< A B >>` and of the same height
-
-.. step:: assert
-
-   Let the extremities of their sides which stand up, namely :g:`/ A F / <g1:/ A F />`, :g:`/ A G / <g1:/ A G />`, :g:`/ L M / <g1:/ L M />`, :g:`/ L N / <g1:/ L N />`, :g:`/ C D / <g1:/ C D />`, :g:`/ C E / <g1:/ C E />`, :g:`/ B H / <g1:/ B H />`, :g:`/ B K / <g1:/ B K />`, not be on the same straight lines
-
-.. step:: assert
-
-   The solid :g:`< C M > <g1:< C M >>` is :eq:`equal <g1:< C M > = g1:< C N >>` to the solid :g:`< C N > <g1:< C N >>`.
+   :g:`< C M > <g1:< C M >>`, :g:`< C N > <g1:< C N >>` be parallelepipedal solids on the same base :g:`< A B > <g1:< A B >>` and of the same height, let the extremities of their sides which stand up, namely :g:`/ A F / <g1:/ A F />`, :g:`/ A G / <g1:/ A G />`, :g:`/ L M / <g1:/ L M />`, :g:`/ L N / <g1:/ L N />`, :g:`/ C D / <g1:/ C D />`, :g:`/ C E / <g1:/ C E />`, :g:`/ B H / <g1:/ B H />`, :g:`/ B K / <g1:/ B K />`, not be on the same straight lines
 
 .. step:: construct
 
-   For let :g:`/ N K / <g1:/ N K />`, :g:`/ D H / <g1:/ D H />` be produced and meet one another at :g:`R <g1:R>`, and further let :g:`/ F M / <g1:/ F M />`, :g:`/ G E / <g1:/ G E />` be produced to :g:`P <g1:P>`, :g:`Q <g1:Q>`
+   :fn:`extend <G.7>`\ (:g:`/ N K / <g1:/ N K />`, :g:`/ D H / <g1:/ D H />` be produced and meet one another at :g:`R <g1:R>`, and further let :g:`/ F M / <g1:/ F M />`, :g:`/ G E / <g1:/ G E />`) → :g:`P <g1:P>`, :g:`Q <g1:Q>`
 
 .. step:: construct
 
-   **segment** :g:`/ A O / <g1:/ A O />`, :g:`/ L P / <g1:/ L P />`, :g:`/ C Q / <g1:/ C Q />`, :g:`/ B R / <g1:/ B R />`
+   :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`O <g1:O>`) → :g:`/ A O / <g1:/ A O />`, :fn:`segment <G.3>`\ (:g:`L <g1:L>`, :g:`P <g1:P>`) → :g:`/ L P / <g1:/ L P />`, :fn:`segment <G.3>`\ (:g:`C <g1:C>`, :g:`Q <g1:Q>`) → :g:`/ C Q / <g1:/ C Q />`, :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`R <g1:R>`) → :g:`/ B R / <g1:/ B R />`
 
 .. step:: assert
 
    Then the solid :g:`< C M > <g1:< C M >>`, of which the parallelogram :g:`< A C B L > <g1:< A C B L >>` is the base, and :g:`< F D H M > <g1:< F D H M >>` its opposite, is :eq:`equal <g1:< C M > = g1:< C P >>` to the solid :g:`< C P > <g1:< C P >>`, of which the parallelogram :g:`< A C B L > <g1:< A C B L >>` is the base, and :g:`< O Q R P > <g1:< O Q R P >>` its opposite;
 
-.. step:: assert [G.476] <G.476>
+.. step:: assert ∵ parallelepipedal_solids_base <G.476>
 
    For they are on the same base :g:`< A C B L > <g1:< A C B L >>` and of the same height, and the extremities of their sides which stand up, namely :g:`/ A F / <g1:/ A F />`, :g:`/ A O / <g1:/ A O />`, :g:`/ L M / <g1:/ L M />`, :g:`/ L P / <g1:/ L P />`, :g:`/ C D / <g1:/ C D />`, :g:`/ C Q / <g1:/ C Q />`, :g:`/ B H / <g1:/ B H />`, :g:`/ B R / <g1:/ B R />`, are on the same straight lines :g:`/ F P / <g1:/ F P />`, :g:`/ D R / <g1:/ D R />`.
 

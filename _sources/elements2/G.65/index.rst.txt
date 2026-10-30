@@ -24,40 +24,49 @@ G.65
 
    If a straight line be cut at random, the square on the whole is equal to the squares on the segments and twice the rectangle contained by the segments.
 
+.. signature:: theorem
+
+   | :fn:`square_of_sum <G.65>`\ ()
+   | **prove** the square on :g:`/ A B / <g1:/ A B />` is equal to the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ B C / <g1:/ B C />` and twice the rectangle contained by :g:`/ A C / <g1:/ A C />`, :g:`/ B C / <g1:/ B C />`
+
 .. picture:: g1.svg
    :alt: Diagram
 
 .. step:: construct
 
-   For let :g:`/ A B / <g1:/ A B />` be cut at random at :g:`C <g1:C>`
-
-.. step:: construct [G.59] <G.59>
-
-   For let the square :g:`< A D E B > <g1:< A D E B >>` be described on :g:`/ A B / <g1:/ A B />`.
+   Let :g:`/ A B / <g1:/ A B />` be cut at random at :g:`C <g1:C>`
 
 .. step:: construct
 
-   **segment** :g:`/ B D / <g1:/ B D />`
+   :fn:`square_on_segment <G.59>`: Let the square :g:`< A D E B > <g1:< A D E B >>` be described on :g:`/ A B / <g1:/ A B />`.
 
 .. step:: construct
 
-   Through :g:`C <g1:C>` let :g:`/ C F / <g1:/ C F />` be drawn parallel to either :g:`/ A D / <g1:/ A D />` or :g:`/ B E / <g1:/ B E />`
+   :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`D <g1:D>`) → :g:`/ B D / <g1:/ B D />`
 
-.. step:: construct [G.44] <G.44>
+.. step:: construct
 
-   Through :g:`G <g1:G>` let :g:`/ H K / <g1:/ H K />` be drawn parallel to either :g:`/ A B / <g1:/ A B />` or :g:`/ D E / <g1:/ D E />`.
+   :fn:`parallel_line <G.44>`\ (:g:`C <g1:C>`, :g:`/ A D / <g1:/ A D />` or :g:`/ B E / <g1:/ B E />`) → :g:`/ C F / <g1:/ C F />`
 
-.. step:: assert [G.42] <G.42>
+.. step:: construct
+
+   :fn:`parallel_line <G.44>`\ (:g:`G <g1:G>`, :g:`/ A B / <g1:/ A B />` or :g:`/ D E / <g1:/ D E />`) → :g:`/ H K / <g1:/ H K />`
+
+.. step:: assert ∵ parallel_transversal_angles <G.42>
 
    Since :g:`/ C F / <g1:/ C F />` is parallel to :g:`/ A D / <g1:/ A D />`, and :g:`/ B D / <g1:/ B D />` has fallen on them, the exterior angle :g:`< C G B ) <g1:< C G B )>` is :eq:`equal <g1:< C G B ) = g1:< A D B )>` to the interior and opposite angle :g:`< A D B ) <g1:< A D B )>`.
 
-.. step:: assert [G.12] <G.12>
+.. step:: assert ∵ isosceles_base_angles <G.12>
 
    :g:`< A D B ) <g1:< A D B )>` is :eq:`equal <g1:< A D B ) = g1:< A B D )>` to :g:`< A B D ) <g1:< A B D )>`, since the side :g:`/ A B / <g1:/ A B />` is also :eq:`equal <g1:/ A B / = g1:/ A D />` to :g:`/ A D / <g1:/ A D />`
 
-.. step:: assert [G.13, G.47] <G.13, G.47>
+.. step:: assert ∵ equal_angles_isosceles <G.13>
 
-   Therefore :g:`< C G B ) <g1:< C G B )>` is also :eq:`equal <g1:< C G B ) = g1:< G B C )>` to :g:`< G B C ) <g1:< G B C )>`, so that the side :g:`/ B C / <g1:/ B C />` is also :eq:`equal <g1:/ B C / = g1:/ C G />` to the side :g:`/ C G / <g1:/ C G />`. But :g:`/ B C / <g1:/ B C />` is :eq:`equal <g1:/ B C / = g1:/ G K /; g1:/ C G / = g1:/ B K />` to :g:`/ G K / <g1:/ G K />`, and :g:`/ C G / <g1:/ C G />` to :g:`/ B K / <g1:/ B K />`
+   Therefore :g:`< C G B ) <g1:< C G B )>` is also :eq:`equal <g1:< C G B ) = g1:< G B C )>` to :g:`< G B C ) <g1:< G B C )>`, so that the side :g:`/ B C / <g1:/ B C />` is also :eq:`equal <g1:/ B C / = g1:/ C G />` to the side :g:`/ C G / <g1:/ C G />`
+
+.. step:: assert ∵ parallelogram_properties <G.47>
+
+   :g:`/ B C / <g1:/ B C />` is :eq:`equal <g1:/ B C / = g1:/ G K /; g1:/ C G / = g1:/ B K />` to :g:`/ G K / <g1:/ G K />`, and :g:`/ C G / <g1:/ C G />` to :g:`/ B K / <g1:/ B K />`
 
 .. step:: assert
 
@@ -71,7 +80,7 @@ G.65
 
    I say next that it is also right-angled.
 
-.. step:: assert [G.42] <G.42>
+.. step:: assert ∵ parallel_transversal_angles <G.42>
 
    Since :g:`/ C G / <g1:/ C G />` is parallel to :g:`/ B K / <g1:/ B K />`, :g:`< K B C ) <g1:< K B C )>`, :g:`< G C B ) <g1:< G C B )>` are equal to two right angles.
 
@@ -83,7 +92,7 @@ G.65
 
    Therefore :g:`< G C B ) <g1:< G C B )>` is also :eq:`right <g1:< G C B ) = g1:< K B C )>`,
 
-.. step:: assert [G.47] <G.47>
+.. step:: assert ∵ parallelogram_properties <G.47>
 
    So that the opposite angles :g:`< C G K ) <g1:< C G K )>`, :g:`< G K B ) <g1:< G K B )>` are also :eq:`right <g1:< C G K ) = g1:< G K B ) = g1:< K B C ) = g1:< G C B )>`.
 
@@ -107,7 +116,7 @@ G.65
 
    For the same reason :g:`< H F > <g1:< H F >>` is also a square;
 
-.. step:: assert [G.47] <G.47>
+.. step:: assert ∵ parallelogram_properties <G.47>
 
    And it is described on :g:`/ H G / <g1:/ H G />`, that is :g:`/ A C / <g1:/ A C />`.
 

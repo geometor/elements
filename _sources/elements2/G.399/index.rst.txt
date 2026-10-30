@@ -24,22 +24,23 @@ G.399
 
    If from a straight line there be subtracted a straight line which is incommensurable in square with the whole and which with the whole makes the sum of the squares on them medial, twice the rectangle contained by them medial, and further the squares on them incommensurable with twice the rectangle contained by them, the remainder is irrational; and let it be called:term:`**that which produces with a medial area a medial whole** <side-of-a-medial-minus-a-medial-area>`.
 
+.. signature:: theorem
+
+   | :fn:`straight_line_there_x_78 <G.399>`\ ()
+   | **prove** the remainder :g:`/ A C / <g1:/ A C />` is the irrational straight line called :term:`**that which produces with a medial area a medial whole** <side-of-a-medial-minus-a-medial-area>`
+
 .. picture:: g1.svg
    :alt: Proposition 78 Diagram
 
-.. step:: assert [G.350] <G.350>
+.. step:: construct
 
-   For from :g:`/ A B / <g1:/ A B />` let there be subtracted :g:`/ B C / <g1:/ B C />` incommensurable in square with :g:`/ A B / <g1:/ A B />` and fulfilling the given conditions
+   :fn:`find_straight_lines_x_35 <G.350>`: From :g:`/ A B / <g1:/ A B />` let there be subtracted :g:`/ B C / <g1:/ B C />` incommensurable in square with :g:`/ A B / <g1:/ A B />` and fulfilling the given conditions
 
 .. step:: construct
 
-   For let a rational straight line :g:`/ D I / <g1:/ D I />` be set out, to :g:`/ D I / <g1:/ D I />` let there be applied :g:`< D E > <g1:< D E >>` equal to the squares on :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, producing :g:`/ D G / <g1:/ D G />` as breadth
+   Let a rational straight line :g:`/ D I / <g1:/ D I />` be set out, to :g:`/ D I / <g1:/ D I />` let there be applied :g:`< D E > <g1:< D E >>` equal to the squares on :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, producing :g:`/ D G / <g1:/ D G />` as breadth, and let :g:`< D H > <g1:< D H >>` equal to twice the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` be subtracted.
 
-.. step:: assert
-
-   Let :g:`< D H > <g1:< D H >>` equal to twice the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` be subtracted.
-
-.. step:: assert [G.68] <G.68>
+.. step:: assert ∵ square_of_difference <G.68>
 
    Therefore the remainder :g:`< F E > <g1:< F E >>` is equal to the square on :g:`/ A C / <g1:/ A C />`, so that :g:`/ A C / <g1:/ A C />` is the "side" of :g:`< F E > <g1:< F E >>`.
 
@@ -55,7 +56,7 @@ G.399
 
    It is applied to the rational straight line :g:`/ D I / <g1:/ D I />`, producing :g:`/ D G / <g1:/ D G />` as breadth ;
 
-.. step:: assert [G.336] <G.336>
+.. step:: assert ∵ square_medial_straight <G.336>
 
    Therefore :g:`/ D G / <g1:/ D G />` is rational and incommensurable in length with :g:`/ D I / <g1:/ D I />`.
 
@@ -71,7 +72,7 @@ G.399
 
    It is applied to the rational straight line :g:`/ D I / <g1:/ D I />`, producing :g:`/ D F / <g1:/ D F />` as breadth ;
 
-.. step:: assert [G.336] <G.336>
+.. step:: assert ∵ square_medial_straight <G.336>
 
    Therefore :g:`/ D F / <g1:/ D F />` is also rational and incommensurable in length with :g:`/ D I / <g1:/ D I />`.
 
@@ -83,11 +84,11 @@ G.399
 
    Therefore :g:`< D E > <g1:< D E >>` is also incommensurable with :g:`< D H > <g1:< D H >>`.
 
-.. step:: assert [G.163] <G.163>
+.. step:: assert ∵ triangles_parallelograms_height <G.163>
 
    But, as :g:`< D E > <g1:< D E >>` is to :g:`< D H > <g1:< D H >>`, so also is :g:`/ D G / <g1:/ D G />` to :g:`/ D F / <g1:/ D F />` ;
 
-.. step:: assert [G.323] <G.323>
+.. step:: assert ∵ magnitudes_proportional_commensurable <G.323>
 
    Therefore :g:`/ D G / <g1:/ D G />` is incommensurable with :g:`/ D F / <g1:/ D F />`.
 
@@ -95,11 +96,11 @@ G.399
 
    Both are rational ;
 
-.. step:: assert [G.394] <G.394>
+.. step:: assert ∵ rational_straight_line <G.394>
 
    Therefore :g:`/ G D / <g1:/ G D />`, :g:`/ D F / <g1:/ D F />` are rational straight lines commensurable in square only. Therefore :g:`/ F G / <g1:/ F G />` is an apotome.
 
-.. step:: assert [G.334] <G.334>
+.. step:: assert ∵ rational_area_applied <G.334>
 
    :g:`/ D I / <g1:/ D I />` is rational ; but the rectangle contained by a rational straight line and an apotome is irrational.
 

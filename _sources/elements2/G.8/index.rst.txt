@@ -24,6 +24,12 @@ G.8
 
    Construct at a given point a segment equal to a given segment.
 
+.. signature:: problem
+
+   | :fn:`transfer_segment <G.8>`\ (:g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />`) → :g:`/ A L / <g1:/ A L />`
+   | **given** :g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />`
+   | **construct** at :g:`A <g1:A>` :g:`/ A L / <g1:/ A L />` is placed :eq:`equal <g1:/ A L / = g1:/ B C />` to :g:`/ B C / <g1:/ B C />`
+
 .. picture:: g1.svg
    :alt: Proposition 2 figure
 
@@ -31,31 +37,31 @@ G.8
 
    :g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />`
 
-.. step:: construct [G.3] <G.3>
+.. step:: construct
 
-   **segment** :g:`/ A B / <g1:/ A B />` from :g:`A <g1:A>` to :g:`B <g1:B>`
+   :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`) → :g:`/ A B / <g1:/ A B />`
 
-.. step:: construct [G.5] <G.5>
+.. step:: construct
 
-   **triangle** :g:`< D A B > <g1:< D A B >>` (:eq:`equilateral <g1:/ D A / = g1:/ D B / = g1:/ A B />`) on it
+   :fn:`equilateral_triangle <G.5>`\ (:g:`/ A B / <g1:/ A B />`) → :g:`< D A B > <g1:< D A B >>` (:eq:`equilateral <g1:/ D A / = g1:/ D B / = g1:/ A B />`)
 
-.. step:: construct [G.7] <G.7>
+.. step:: construct
 
-   **extend** :g:`/ D A / <g1:/ D A />`, :g:`/ D B / <g1:/ D B />` to :g:`/ A E / <g1:/ A E />`, :g:`/ B F / <g1:/ B F />`
+   :fn:`extend <G.7>`\ (:g:`/ D A / <g1:/ D A />`, :g:`/ D B / <g1:/ D B />`) → :g:`/ A E / <g1:/ A E />`, :g:`/ B F / <g1:/ B F />`
 
-.. step:: construct [G.4] <G.4>
+.. step:: construct
 
-   **circle** :g:`( B C ) <g1:( B C )>` with center :g:`B <g1:B>` and radius :g:`/ B C / <g1:/ B C />`
+   :fn:`circle <G.4>`\ (:g:`B <g1:B>`, :g:`/ B C / <g1:/ B C />`) → :g:`( B C ) <g1:( B C )>`
 
-.. step:: construct [G.4] <G.4>
+.. step:: construct
 
-   **circle** :g:`( D G ) <g1:( D G )>` with center :g:`D <g1:D>` and radius :g:`/ D G / <g1:/ D G />`
+   :fn:`circle <G.4>`\ (:g:`D <g1:D>`, :g:`/ D G / <g1:/ D G />`) → :g:`( D G ) <g1:( D G )>`
 
-.. step:: assert
+.. step:: assert ∵ circle_radii <G.2>
 
    Since :g:`B <g1:B>` is the center of :g:`( B C ) <g1:( B C )>` → :g:`/ B C / <g1:/ B C />` is :eq:`equal <g1:/ B C / = g1:/ B G />` to :g:`/ B G / <g1:/ B G />`.
 
-.. step:: assert
+.. step:: assert ∵ circle_radii <G.2>
 
    Since :g:`D <g1:D>` is the center of :g:`( D G ) <g1:( D G )>` → :g:`/ D L / <g1:/ D L />` is :eq:`equal <g1:/ D L / = g1:/ D G />` to :g:`/ D G / <g1:/ D G />`.
 
@@ -63,7 +69,7 @@ G.8
 
    In these :g:`/ D A / <g1:/ D A />` is :eq:`equal <g1:/ D A / = g1:/ D B />` to :g:`/ D B / <g1:/ D B />`
 
-.. step:: assert [G.6] <G.6>
+.. step:: assert ∵ subtract_equals <G.6>
 
    Therefore the remainder :g:`/ A L / <g1:/ A L />` is :eq:`equal <g1:/ A L / = g1:/ B G />` to the remainder :g:`/ B G / <g1:/ B G />`.
 
@@ -75,7 +81,7 @@ G.8
 
    Therefore each of :g:`/ A L / <g1:/ A L />`, :g:`/ B C / <g1:/ B C />` is :eq:`equal <g1:/ A L / = g1:/ B C / = g1:/ B G />` to :g:`/ B G / <g1:/ B G />`.
 
-.. step:: assert [G.1] <G.1>
+.. step:: assert ∵ equal_transitive <G.1>
 
    Therefore :g:`/ A L / <g1:/ A L />` is also :eq:`equal <g1:/ A L / = g1:/ B C />` to :g:`/ B C / <g1:/ B C />`.
 

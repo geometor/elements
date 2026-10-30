@@ -24,6 +24,11 @@ G.85
 
    A circle does not cut a circle at more points than two.
 
+.. signature:: theorem
+
+   | :fn:`circle_cut_circle <G.85>`\ ()
+   | **prove** the two circles :g:`( A B C ) <g1:( A B C )>`, :g:`( D E F ) <g1:( D E F )>` which cut one another have the same center :g:`P <g1:P>`: which is impossible
+
 .. picture:: g1.svg
    :alt: Diagram for Proposition 10
 
@@ -33,13 +38,9 @@ G.85
 
 .. step:: construct
 
-   Let :g:`/ B H / <g1:/ B H />`, :g:`/ B G / <g1:/ B G />` be joined and :eq:`bisected <g1:/ B K / = g1:/ K H /; g1:/ B L / = g1:/ L G />` at :g:`K <g1:K>`, :g:`L <g1:L>`
+   Let :g:`/ B H / <g1:/ B H />`, :g:`/ B G / <g1:/ B G />` be joined and :eq:`bisected <g1:/ B K / = g1:/ K H /; g1:/ B L / = g1:/ L G />` at :g:`K <g1:K>`, :g:`L <g1:L>`, and from :g:`K <g1:K>`, :g:`L <g1:L>` let :g:`/ K C / <g1:/ K C />`, :g:`/ L M / <g1:/ L M />` be drawn at right angles to :g:`/ B H / <g1:/ B H />`, :g:`/ B G / <g1:/ B G />` and carried through to :g:`A <g1:A>`, :g:`E <g1:E>`.
 
-.. step:: construct
-
-   From :g:`K <g1:K>`, :g:`L <g1:L>` let :g:`/ K C / <g1:/ K C />`, :g:`/ L M / <g1:/ L M />` be drawn at right angles to :g:`/ B H / <g1:/ B H />`, :g:`/ B G / <g1:/ B G />` and carried through to :g:`A <g1:A>`, :g:`E <g1:E>`.
-
-.. step:: assert [G.76] <G.76>
+.. step:: assert ∵ find_circle_center <G.76>
 
    Since in :g:`( A B C ) <g1:( A B C )>` a straight line :g:`/ A C / <g1:/ A C />` cuts a straight line :g:`/ B H / <g1:/ B H />` into two :eq:`equal <g1:/ B K / = g1:/ K H />` parts and at right angles → the center of :g:`( A B C ) <g1:( A B C )>` is on :g:`/ A C / <g1:/ A C />`.
 
@@ -51,7 +52,7 @@ G.85
 
    It was also proved to be on :g:`/ A C / <g1:/ A C />`, and :g:`/ A C / <g1:/ A C />`, :g:`/ N O / <g1:/ N O />` meet at no point except at :g:`P <g1:P>`
 
-.. step:: assert
+.. step:: assert ∵ circle_radii <G.2>
 
    Therefore :g:`P <g1:P>` is the center of :g:`( A B C ) <g1:( A B C )>`.
 
@@ -59,7 +60,7 @@ G.85
 
    Similarly we can prove that :g:`P <g1:P>` is also the center of :g:`( D E F ) <g1:( D E F )>`
 
-.. step:: conclude [G.80] <G.80>
+.. step:: conclude ∵ circles_cut_centre <G.80>
 
    Therefore the two circles :g:`( A B C ) <g1:( A B C )>`, :g:`( D E F ) <g1:( D E F )>` which cut one another have the same center :g:`P <g1:P>`: which is impossible.
 

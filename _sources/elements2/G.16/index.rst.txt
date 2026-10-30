@@ -24,6 +24,12 @@ G.16
 
    Bisect a given angle.
 
+.. signature:: problem
+
+   | :fn:`bisect_angle <G.16>`\ (:g:`< B A C ) <g1:< B A C )>`) → :g:`/ A F / <g1:/ A F />`
+   | **given** :g:`< B A C ) <g1:< B A C )>`
+   | **construct** :g:`< B A C ) <g1:< B A C )>` has been :eq:`bisected <g1:< D A F ) = g1:< E A F )>` by :g:`/ A F / <g1:/ A F />`
+
 .. picture:: g1.svg
    :alt: Proposition 9 figure
 
@@ -33,27 +39,23 @@ G.16
 
 .. step:: construct
 
-   **point** :g:`D <g1:D>` on :g:`/ A B / <g1:/ A B />`
-
-.. step:: construct [G.9] <G.9>
-
-   **cut off** :g:`/ A E / <g1:/ A E />` on :g:`/ A C / <g1:/ A C />` :eq:`equal <g1:/ A E / = g1:/ A D />` to :g:`/ A D / <g1:/ A D />`
+   **point**\ (:g:`/ A B / <g1:/ A B />`) → :g:`D <g1:D>`
 
 .. step:: construct
 
-   **segment** :g:`/ D E / <g1:/ D E />`
+   :fn:`cut_equal_segment <G.9>`\ (:g:`/ A C / <g1:/ A C />`, :g:`/ A D / <g1:/ A D />`) → :g:`/ A E / <g1:/ A E />` (:eq:`equal <g1:/ A E / = g1:/ A D />`)
 
 .. step:: construct
 
-   **triangle** :g:`< D E F > <g1:< D E F >>` (:eq:`equilateral <g1:/ D E / = g1:/ D F / = g1:/ E F />`) on :g:`/ D E / <g1:/ D E />`
+   :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`E <g1:E>`) → :g:`/ D E / <g1:/ D E />`
 
 .. step:: construct
 
-   **segment** :g:`/ A F / <g1:/ A F />`
+   :fn:`equilateral_triangle <G.5>`\ (:g:`/ D E / <g1:/ D E />`) → :g:`< D E F > <g1:< D E F >>` (:eq:`equilateral <g1:/ D E / = g1:/ D F / = g1:/ E F />`)
 
-.. step:: assert
+.. step:: construct
 
-   :g:`< B A C ) <g1:< B A C )>` has been :eq:`bisected <g1:< D A F ) = g1:< E A F )>` by :g:`/ A F / <g1:/ A F />`.
+   :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`F <g1:F>`) → :g:`/ A F / <g1:/ A F />`
 
 .. step:: assert
 
@@ -63,7 +65,7 @@ G.16
 
    The base :g:`/ D F / <g1:/ D F />` is :eq:`equal <g1:/ D F / = g1:/ E F />` to the base :g:`/ E F / <g1:/ E F />`
 
-.. step:: assert [G.15] <G.15>
+.. step:: assert ∵ sss_congruence <G.15>
 
    Therefore :g:`< D A F ) <g1:< D A F )>` is :eq:`equal <g1:< D A F ) = g1:< E A F )>` to :g:`< E A F ) <g1:< E A F )>`.
 

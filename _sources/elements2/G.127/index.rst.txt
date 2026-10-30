@@ -24,6 +24,12 @@ G.127
 
    About a given square to circumscribe a circle.
 
+.. signature:: problem
+
+   | :fn:`square_circumscribe_circle <G.127>`\ (:g:`< A B C D > <g1:< A B C D >>`)
+   | **given** :g:`< A B C D > <g1:< A B C D >>` be the given square
+   | **construct** about the given square a circle has been circumscribed
+
 .. picture:: g1.svg
    :alt: Proposition IV. 9 Diagram
 
@@ -33,7 +39,7 @@ G.127
 
 .. step:: construct
 
-   For let :g:`/ A C / <g1:/ A C />`, :g:`/ B D / <g1:/ B D />` be joined
+   :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`C <g1:C>`) → :g:`/ A C / <g1:/ A C />`, :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`D <g1:D>`) → :g:`/ B D / <g1:/ B D />`
 
 .. step:: intersect
 
@@ -47,7 +53,7 @@ G.127
 
    And the base :g:`/ D C / <g1:/ D C />` is :eq:`equal <g1:/ D C / = g1:/ B C />` to the base :g:`/ B C / <g1:/ B C />`
 
-.. step:: assert [G.15] <G.15>
+.. step:: assert ∵ sss_congruence <G.15>
 
    Therefore :g:`< D A C ) <g1:< D A C )>` is :eq:`equal <g1:< D A C ) = g1:< B A C )>` to :g:`< B A C ) <g1:< B A C )>`.
 
@@ -63,7 +69,7 @@ G.127
 
    Since :g:`< D A B ) <g1:< D A B )>` is :eq:`equal <g1:< D A B ) = g1:< A B C )>` to :g:`< A B C ) <g1:< A B C )>`, and :g:`< E A B ) <g1:< E A B )>` is half :g:`< D A B ) <g1:< D A B )>`, and :g:`< E B A ) <g1:< E B A )>` half :g:`< A B C ) <g1:< A B C )>`, therefore :g:`< E A B ) <g1:< E A B )>` is also :eq:`equal <g1:< E A B ) = g1:< E B A )>` to :g:`< E B A ) <g1:< E B A )>`
 
-.. step:: assert [G.13] <G.13>
+.. step:: assert ∵ equal_angles_isosceles <G.13>
 
    So that the side :g:`/ E A / <g1:/ E A />` is also :eq:`equal <g1:/ E A / = g1:/ E B />` to :g:`/ E B / <g1:/ E B />`.
 
@@ -83,7 +89,7 @@ G.127
 
    And it will have been circumscribed about the square :g:`< A B C D > <g1:< A B C D >>`.
 
-.. step:: assert
+.. step:: construct
 
    Let it be circumscribed, as :g:`( A B C D ) <g1:( A B C D )>`.
 

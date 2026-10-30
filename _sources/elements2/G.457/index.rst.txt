@@ -23,6 +23,10 @@ G.457
 
    :term:`**Parallel planes** <parallel-planes>` are those which do not meet.
 
+.. signature:: def
+
+   | :fn:`parallel_planes_meet_def <G.457>`
+
 Required for
 ------------
 

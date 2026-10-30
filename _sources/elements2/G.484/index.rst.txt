@@ -24,6 +24,12 @@ G.484
 
    If four straight lines be proportional, the parallelepipedal solids on them which are similar and similarly described is proportional; and, if the parallelepipedal solids on them which are similar and similarly described be proportional, the straight lines will themselves also be proportional.
 
+.. signature:: theorem
+
+   | :fn:`straight_lines_proportional_xi_37 <G.484>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`, :g:`/ E F / <g1:/ E F />`, :g:`/ G H / <g1:/ G H />`)
+   | **given** :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`, :g:`/ E F / <g1:/ E F />`, :g:`/ G H / <g1:/ G H />` be four straight lines in proportion, so that, as :g:`/ A B / <g1:/ A B />` is to :g:`/ C D / <g1:/ C D />`, so is :g:`/ E F / <g1:/ E F />` to :g:`/ G H / <g1:/ G H />`
+   | **prove** also, as :g:`/ A B / <g1:/ A B />` is to :g:`/ C D / <g1:/ C D />`, so is :g:`/ E F / <g1:/ E F />` to :g:`/ G H / <g1:/ G H />`
+
 .. picture:: g1.svg
    :alt: Proposition 37 diagram
 
@@ -37,13 +43,17 @@ G.484
 
 .. step:: assert
 
+   I say that, as :g:`< K A > <g1:< K A >>` is to :g:`< L C > <g1:< L C >>`, so is :g:`< M E > <g1:< M E >>` to :g:`< N G > <g1:< N G >>`.
+
+.. step:: assert
+
    Since the parallelepipedal solid :g:`< K A > <g1:< K A >>` is similar to :g:`< L C > <g1:< L C >>`,
 
-.. step:: assert [G.480] <G.480>
+.. step:: assert ∵ similar_parallelepipedal_solids <G.480>
 
    Therefore :g:`< K A > <g1:< K A >>` has to :g:`< L C > <g1:< L C >>` the ratio triplicate of that which :g:`/ A B / <g1:/ A B />` has to :g:`/ C D / <g1:/ C D />`.
 
-.. step:: assert [G.480] <G.480>
+.. step:: assert ∵ similar_parallelepipedal_solids <G.480>
 
    For the same reason :g:`< M E > <g1:< M E >>` also has to :g:`< N G > <g1:< N G >>` the ratio triplicate of that which :g:`/ E F / <g1:/ E F />` has to :g:`/ G H / <g1:/ G H />`.
 
@@ -59,7 +69,11 @@ G.484
 
    Next, as the solid :g:`< A K > <g1:< A K >>` is to the solid :g:`< L C > <g1:< L C >>`, so let the solid :g:`< M E > <g1:< M E >>` be to the solid :g:`< N G > <g1:< N G >>`
 
-.. step:: assert [G.480] <G.480>
+.. step:: assert
+
+   I say that, as :g:`/ A B / <g1:/ A B />` is to :g:`/ C D / <g1:/ C D />`, so is :g:`/ E F / <g1:/ E F />` to :g:`/ G H / <g1:/ G H />`.
+
+.. step:: assert ∵ similar_parallelepipedal_solids <G.480>
 
    For since, again, :g:`< K A > <g1:< K A >>` has to :g:`< L C > <g1:< L C >>` the ratio triplicate of that which :g:`/ A B / <g1:/ A B />` has to :g:`/ C D / <g1:/ C D />`, and :g:`< M E > <g1:< M E >>` also has to :g:`< N G > <g1:< N G >>` the ratio triplicate of that which :g:`/ E F / <g1:/ E F />` has to :g:`/ G H / <g1:/ G H />`, and, as :g:`< K A > <g1:< K A >>` is to :g:`< L C > <g1:< L C >>`, so is :g:`< M E > <g1:< M E >>` to :g:`< N G > <g1:< N G >>`.
 

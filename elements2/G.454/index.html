@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=156d9f89" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=3d8cc37d" />
   <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -49,7 +49,7 @@
           <a href="../../log/index.html"  >log</a>
         </li>
         <li>
-          <a href="../index.html"  >Elements 2.0 (G Index)</a>
+          <a href="../index.html" class="is-active" aria-selected="true" >Elements 2.0 (G Index)</a>
         </li>
       </ul>
     </nav>
@@ -92,6 +92,13 @@
         <span id="g-454"></span><span id="id1"></span><h1>G.454<a class="headerlink" href="#xi-11" title="Link to this heading">¶</a></h1>
         <p class="rubric"><a class="reference external" href="https://geometor.github.io/euclid/heath/volume_III/book_xi/propositions/11/" title="XI.11: From a given elevated point to draw a straight line perpendicular to a given plane.">XI.11</a></p>
         <div class="enunciation">From a given elevated point to draw a straight line perpendicular to a given plane.</div>
+        <div class="geom-signature geom-signature-problem">
+        <div class="line-block">
+        <div class="line"><span class="geom-fn geom-fn-def" data-ref-target="G.454" title="G.454: From a given elevated point to draw a straight line perpendicular to a given plane.">elevated_point_draw</span>(<span class="geom-ref" data-ref="g1:A" title="A">A</span>) → <span class="geom-ref" data-ref="g1:/ A F /" title="/ A F /">/ A F /</span></div>
+        <div class="line"><strong>given</strong> <span class="geom-ref" data-ref="g1:A" title="A">A</span> be the given elevated point, the plane of reference the given plane</div>
+        <div class="line"><strong>construct</strong> from the given elevated point <span class="geom-ref" data-ref="g1:A" title="A">A</span> <span class="geom-ref" data-ref="g1:/ A F /" title="/ A F /">/ A F /</span> has been drawn perpendicular to the plane of reference</div>
+        </div>
+        </div>
         <figure class="photon-picture photon-svg">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -4 195 180" width="195" height="180" class="euclid-graphic" data-graphic-id="g1" data-graphic="g1" data-proposition="XI.11">
           <defs>
@@ -173,20 +180,20 @@
         </svg>
         </figure>
         <div class="geom-step geom-step-given" data-step-kind="given"><span class="geom-step-badge geom-badge-given">given</span> <span class="geom-ref" data-ref="g1:A" title="A">A</span> be the given elevated point, the plane of reference the given plane</div>
-        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> Let any straight line <span class="geom-ref" data-ref="g1:/ B C /" title="/ B C /">/ B C /</span> be drawn, at random, in the plane of reference</div>
-        <div class="geom-step geom-step-construct" data-step-kind="construct"><a class="justification" href="../G.20/index.html#g-20" data-ref-target="G.20" title="G.20: Construct a perpendicular to a given infinite line from a given point not on it.">[G.20]</a><span class="geom-step-badge geom-badge-construct">construct</span> Let <span class="geom-ref" data-ref="g1:/ A D /" title="/ A D /">/ A D /</span> be drawn from <span class="geom-ref" data-ref="g1:A" title="A">A</span> perpendicular to <span class="geom-ref" data-ref="g1:/ B C /" title="/ B C /">/ B C /</span>.</div>
+        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> Let any straight line <span class="geom-ref" data-ref="g1:/ B C /" title="/ B C /">/ B C /</span> be drawn</div>
+        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> <a class="geom-fn" href="../G.20/index.html#g-20" data-ref-target="G.20" title="G.20: Construct a perpendicular to a given infinite line from a given point not on it.">perpendicular_from</a>: At random, in the plane of reference, and let <span class="geom-ref" data-ref="g1:/ A D /" title="/ A D /">/ A D /</span> be drawn from <span class="geom-ref" data-ref="g1:A" title="A">A</span> perpendicular to <span class="geom-ref" data-ref="g1:/ B C /" title="/ B C /">/ B C /</span>.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> If then <span class="geom-ref" data-ref="g1:/ A D /" title="/ A D /">/ A D /</span> is also perpendicular to the plane of reference, that which was enjoined will have been done.</div>
-        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="justification">[<a class="justification-link" href="../G.19/index.html#g-19" data-ref-target="G.19" title="G.19: Construct a line at right angles to a given line from a given point on it.">G.19</a>, <a class="justification-link" href="../G.20/index.html#g-20" data-ref-target="G.20" title="G.20: Construct a perpendicular to a given infinite line from a given point not on it.">G.20</a>, <a class="justification-link" href="../G.44/index.html#g-44" data-ref-target="G.44" title="G.44: Construct through a given point a line parallel to a given line.">G.44</a>]</span><span class="geom-step-badge geom-badge-construct">construct</span> But, if not, let <span class="geom-ref" data-ref="g1:/ D E /" title="/ D E /">/ D E /</span> be drawn from <span class="geom-ref" data-ref="g1:D" title="D">D</span> at right angles to <span class="geom-ref" data-ref="g1:/ B C /" title="/ B C /">/ B C /</span> and in the plane of reference, let <span class="geom-ref" data-ref="g1:/ A F /" title="/ A F /">/ A F /</span> be drawn from <span class="geom-ref" data-ref="g1:A" title="A">A</span> perpendicular to <span class="geom-ref" data-ref="g1:/ D E /" title="/ D E /">/ D E /</span>, and let <span class="geom-ref" data-ref="g1:/ G H /" title="/ G H /">/ G H /</span> be drawn through <span class="geom-ref" data-ref="g1:F" title="F">F</span> parallel to <span class="geom-ref" data-ref="g1:/ B C /" title="/ B C /">/ B C /</span>.</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><a class="justification" href="../G.447/index.html#g-447" data-ref-target="G.447" title="G.447: If a straight line be set up at right angles to two straight lines which cut one another, at their common point of section, it is at right angles to the plane through them.">[G.447]</a><span class="geom-step-badge geom-badge-assert">assert</span> Since <span class="geom-ref" data-ref="g1:/ B C /" title="/ B C /">/ B C /</span> is at right angles to each of <span class="geom-ref" data-ref="g1:/ D A /" title="/ D A /">/ D A /</span>, <span class="geom-ref" data-ref="g1:/ D E /" title="/ D E /">/ D E /</span> → therefore <span class="geom-ref" data-ref="g1:/ B C /" title="/ B C /">/ B C /</span> is also at right angles to the plane through <span class="geom-ref" data-ref="g1:/ E D /" title="/ E D /">/ E D /</span>, <span class="geom-ref" data-ref="g1:/ D A /" title="/ D A /">/ D A /</span>.</div>
+        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> <a class="geom-fn" href="../G.19/index.html#g-19" data-ref-target="G.19" title="G.19: Construct a line at right angles to a given line from a given point on it.">perpendicular_at</a>: But, if not, let <span class="geom-ref" data-ref="g1:/ D E /" title="/ D E /">/ D E /</span> be drawn from <span class="geom-ref" data-ref="g1:D" title="D">D</span> at right angles to <span class="geom-ref" data-ref="g1:/ B C /" title="/ B C /">/ B C /</span> and in the plane of reference, let <span class="geom-ref" data-ref="g1:/ A F /" title="/ A F /">/ A F /</span> be drawn from <span class="geom-ref" data-ref="g1:A" title="A">A</span> perpendicular to <span class="geom-ref" data-ref="g1:/ D E /" title="/ D E /">/ D E /</span>, and let <span class="geom-ref" data-ref="g1:/ G H /" title="/ G H /">/ G H /</span> be drawn through <span class="geom-ref" data-ref="g1:F" title="F">F</span> parallel to <span class="geom-ref" data-ref="g1:/ B C /" title="/ B C /">/ B C /</span>.</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.447/index.html#g-447" data-ref-target="G.447" title="G.447: If a straight line be set up at right angles to two straight lines which cut one another, at their common point of section, it is at right angles to the plane through them.">straight_line_set</a></span><span class="geom-step-badge geom-badge-assert">assert</span> Since <span class="geom-ref" data-ref="g1:/ B C /" title="/ B C /">/ B C /</span> is at right angles to each of <span class="geom-ref" data-ref="g1:/ D A /" title="/ D A /">/ D A /</span>, <span class="geom-ref" data-ref="g1:/ D E /" title="/ D E /">/ D E /</span> → therefore <span class="geom-ref" data-ref="g1:/ B C /" title="/ B C /">/ B C /</span> is also at right angles to the plane through <span class="geom-ref" data-ref="g1:/ E D /" title="/ E D /">/ E D /</span>, <span class="geom-ref" data-ref="g1:/ D A /" title="/ D A /">/ D A /</span>.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> <span class="geom-ref" data-ref="g1:/ G H /" title="/ G H /">/ G H /</span> is parallel to it;</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><a class="justification" href="../G.451/index.html#g-451" data-ref-target="G.451" title="G.451: If two straight lines be parallel, and one of them be at right angles to any plane, the remaining one is at right angles to the same plane.">[G.451]</a><span class="geom-step-badge geom-badge-assert">assert</span> But, if two straight lines be parallel, and one of them be at right angles to any plane, the remaining one will also be at right angles to the same plane</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.451/index.html#g-451" data-ref-target="G.451" title="G.451: If two straight lines be parallel, and one of them be at right angles to any plane, the remaining one is at right angles to the same plane.">straight_lines_parallel_xi_8</a></span><span class="geom-step-badge geom-badge-assert">assert</span> But, if two straight lines be parallel, and one of them be at right angles to any plane, the remaining one will also be at right angles to the same plane</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore <span class="geom-ref" data-ref="g1:/ G H /" title="/ G H /">/ G H /</span> is also at right angles to the plane through <span class="geom-ref" data-ref="g1:/ E D /" title="/ E D /">/ E D /</span>, <span class="geom-ref" data-ref="g1:/ D A /" title="/ D A /">/ D A /</span>.</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><a class="justification" href="../G.446/index.html#g-446" data-ref-target="G.446" title="G.446: A straight line isat right angles to a plane, when it makes right angles with all the straight lines which meet it and are in the plane.">[G.446]</a><span class="geom-step-badge geom-badge-assert">assert</span> Therefore <span class="geom-ref" data-ref="g1:/ G H /" title="/ G H /">/ G H /</span> is also at right angles to all the straight lines which meet it and are in the plane through <span class="geom-ref" data-ref="g1:/ E D /" title="/ E D /">/ E D /</span>, <span class="geom-ref" data-ref="g1:/ D A /" title="/ D A /">/ D A /</span>.</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.446/index.html#g-446" data-ref-target="G.446" title="G.446: A straight line isat right angles to a plane, when it makes right angles with all the straight lines which meet it and are in the plane.">straight_line_right_def</a></span><span class="geom-step-badge geom-badge-assert">assert</span> Therefore <span class="geom-ref" data-ref="g1:/ G H /" title="/ G H /">/ G H /</span> is also at right angles to all the straight lines which meet it and are in the plane through <span class="geom-ref" data-ref="g1:/ E D /" title="/ E D /">/ E D /</span>, <span class="geom-ref" data-ref="g1:/ D A /" title="/ D A /">/ D A /</span>.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> <span class="geom-ref" data-ref="g1:/ A F /" title="/ A F /">/ A F /</span> meets it and is in the plane through <span class="geom-ref" data-ref="g1:/ E D /" title="/ E D /">/ E D /</span>, <span class="geom-ref" data-ref="g1:/ D A /" title="/ D A /">/ D A /</span>;</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore <span class="geom-ref" data-ref="g1:/ G H /" title="/ G H /">/ G H /</span> is at right angles to <span class="geom-ref" data-ref="g1:/ F A /" title="/ F A /">/ F A /</span>, so that <span class="geom-ref" data-ref="g1:/ F A /" title="/ F A /">/ F A /</span> is also at right angles to <span class="geom-ref" data-ref="g1:/ G H /" title="/ G H /">/ G H /</span>.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> <span class="geom-ref" data-ref="g1:/ A F /" title="/ A F /">/ A F /</span> is also at right angles to <span class="geom-ref" data-ref="g1:/ D E /" title="/ D E /">/ D E /</span>;</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore <span class="geom-ref" data-ref="g1:/ A F /" title="/ A F /">/ A F /</span> is at right angles to each of <span class="geom-ref" data-ref="g1:/ G H /" title="/ G H /">/ G H /</span>, <span class="geom-ref" data-ref="g1:/ D E /" title="/ D E /">/ D E /</span>.</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><a class="justification" href="../G.447/index.html#g-447" data-ref-target="G.447" title="G.447: If a straight line be set up at right angles to two straight lines which cut one another, at their common point of section, it is at right angles to the plane through them.">[G.447]</a><span class="geom-step-badge geom-badge-assert">assert</span> But, if a straight line be set up at right angles to two straight lines which cut one another, at the point of section, it will also be at right angles to the plane through them</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.447/index.html#g-447" data-ref-target="G.447" title="G.447: If a straight line be set up at right angles to two straight lines which cut one another, at their common point of section, it is at right angles to the plane through them.">straight_line_set</a></span><span class="geom-step-badge geom-badge-assert">assert</span> But, if a straight line be set up at right angles to two straight lines which cut one another, at the point of section, it will also be at right angles to the plane through them</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore <span class="geom-ref" data-ref="g1:/ F A /" title="/ F A /">/ F A /</span> is at right angles to the plane through <span class="geom-ref" data-ref="g1:/ E D /" title="/ E D /">/ E D /</span>, <span class="geom-ref" data-ref="g1:/ G H /" title="/ G H /">/ G H /</span>.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> The plane through <span class="geom-ref" data-ref="g1:/ E D /" title="/ E D /">/ E D /</span>, <span class="geom-ref" data-ref="g1:/ G H /" title="/ G H /">/ G H /</span> is the plane of reference;</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore <span class="geom-ref" data-ref="g1:/ A F /" title="/ A F /">/ A F /</span> is at right angles to the plane of reference.</div>
@@ -582,28 +589,28 @@
   <footer>
     <div class="footer-nav">
       <ul>
-        <li><a href="../../about.html">about</a></li>
-        <li><a href="../../connect.html">connect</a></li>
-        <li><a href="../../glossary.html">glossary</a></li>
-        <li><a href="../../todos/index.html">todos</a></li>
-        <li><a href="../../changelog.html">changelog</a></li>
+        <li><a href="../../about.html"  >about</a></li>
+        <li><a href="../../connect.html"  >connect</a></li>
+        <li><a href="../../glossary.html"  >glossary</a></li>
+        <li><a href="../../todos/index.html"  >todos</a></li>
+        <li><a href="../../changelog.html"  >changelog</a></li>
       </ul>
     </div>
     <hr />
     <div role="contentinfo">
       <p>
-        &copy; Copyright .
+        &copy; Copyright 2026, GEOMETOR.
       </p>
     </div>
   </footer>
 
   <script src="../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+  <script src="../../_static/documentation_options.js?v=d5a15cff"></script>
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
-  <script src="../../_static/js/geometor_interactive.js?v=421e4467"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=4430a5d4"></script>
   <script src="../../_static/js/search_highlight.js"></script>
 
 </body>

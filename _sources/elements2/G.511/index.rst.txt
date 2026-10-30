@@ -24,6 +24,11 @@ G.511
 
    If a straight line be cut in extreme and mean ratio, the square on the whole and the square on the lesser segment together are triple of the square on the greater segment.
 
+.. signature:: theorem
+
+   | :fn:`straight_line_cut_xiii_4 <G.511>`\ ()
+   | **prove** the squares on :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are triple of the square on :g:`/ C A / <g1:/ C A />`
+
 .. picture:: g1.svg
    :alt: Book XIII, Proposition 4
 
@@ -37,7 +42,7 @@ G.511
 
 .. step:: construct
 
-   For let the square :g:`< A D E B > <g1:< A D E B >>` be described on :g:`/ A B / <g1:/ A B />`
+   Let the square :g:`< A D E B > <g1:< A D E B >>` be described on :g:`/ A B / <g1:/ A B />`
 
 .. step:: construct
 
@@ -47,7 +52,7 @@ G.511
 
    Since then :g:`/ A B / <g1:/ A B />` has been cut in extreme and mean ratio at :g:`C <g1:C>`, and :g:`/ A C / <g1:/ A C />` is the greater segment,
 
-.. step:: assert [G.507, G.180] <G.507, G.180>
+.. step:: assert ∵ straight_line_said_def_vi_def_3, straight_lines_proportional_vi_17 <G.507, G.180>
 
    Therefore the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` is equal to the square on :g:`/ A C / <g1:/ A C />`.
 
@@ -55,7 +60,7 @@ G.511
 
    :g:`< A K > <g1:< A K >>` is the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, and :g:`< H G > <g1:< H G >>` the square on :g:`/ A C / <g1:/ A C />`; therefore :g:`< A K > <g1:< A K >>` is :eq:`equal <g1:< A K > = g1:< H G >>` to :g:`< H G > <g1:< H G >>`.
 
-.. step:: assert
+.. step:: construct
 
    And, since :g:`< A F > <g1:< A F >>` is :eq:`equal <g1:< A F > = g1:< F E >>` to :g:`< F E > <g1:< F E >>`, let :g:`< C K > <g1:< C K >>` be added to each;
 

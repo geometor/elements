@@ -24,6 +24,12 @@ G.432
 
    A straight line commensurable with a minor straight line is minor.
 
+.. signature:: theorem
+
+   | :fn:`straight_line_commensurable_x_105 <G.432>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`)
+   | **given** :g:`/ A B / <g1:/ A B />` be a minor straight line, :g:`/ C D / <g1:/ C D />` commensurable with :g:`/ A B / <g1:/ A B />`
+   | **prove** :g:`/ C D / <g1:/ C D />` is also minor
+
 .. picture:: g1.svg
    :alt: Proposition 105 diagram
 
@@ -35,23 +41,23 @@ G.432
 
    Let the same construction be made as before
 
-.. step:: assert [G.397] <G.397>
+.. step:: assert ∵ straight_line_there_x_76 <G.397>
 
    Then, since :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />` are incommensurable in square.
 
-.. step:: assert [G.326] <G.326>
+.. step:: assert ∵ magnitudes_commensurable_incommensurable <G.326>
 
    Therefore :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />` are also incommensurable in square.
 
-.. step:: assert [G.149, G.153] <G.149, G.153>
+.. step:: assert ∵ number_magnitudes_proportional, magnitudes_proportional_proportional <G.149, G.153>
 
    Now since, as :g:`/ A E / <g1:/ A E />` is to :g:`/ E B / <g1:/ E B />`, so is :g:`/ C F / <g1:/ C F />` to :g:`/ F D / <g1:/ F D />`,
 
-.. step:: assert [G.187] <G.187>
+.. step:: assert ∵ straight_lines_proportional_vi_22 <G.187>
 
    Therefore also, as the square on :g:`/ A E / <g1:/ A E />` is to the square on :g:`/ E B / <g1:/ E B />`, so is the square on :g:`/ C F / <g1:/ C F />` to the square on :g:`/ F D / <g1:/ F D />`.
 
-.. step:: assert [G.155] <G.155>
+.. step:: assert ∵ magnitudes_proportional_separando <G.155>
 
    Therefore, :term:`*componendo* <componendo>`, as the squares on :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />` are to the square on :g:`/ E B / <g1:/ E B />`, so are the squares on :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />` to the square on :g:`/ F D / <g1:/ F D />`.
 
@@ -59,15 +65,15 @@ G.432
 
    The square on :g:`/ B E / <g1:/ B E />` is commensurable with the square on :g:`/ D F / <g1:/ D F />`;
 
-.. step:: assert [G.153, G.323] <G.153, G.323>
+.. step:: assert ∵ magnitudes_proportional_proportional, magnitudes_proportional_commensurable <G.153, G.323>
 
    Therefore the sum of the squares on :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />` is also commensurable with the sum of the squares on :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />`.
 
-.. step:: assert [G.397] <G.397>
+.. step:: assert ∵ straight_line_there_x_76 <G.397>
 
    The sum of the squares on :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />` is rational;
 
-.. step:: assert [G.332] <G.332>
+.. step:: assert ∵ square_assigned_straight_def <G.332>
 
    Therefore the sum of the squares on :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />` is also rational.
 
@@ -79,15 +85,15 @@ G.432
 
    Therefore the rectangle :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />` is also commensurable with the rectangle :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />`.
 
-.. step:: assert [G.397] <G.397>
+.. step:: assert ∵ straight_line_there_x_76 <G.397>
 
    The rectangle :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />` is medial;
 
-.. step:: assert [G.338] <G.338>
+.. step:: assert ∵ straight_line_commensurable <G.338>
 
    Therefore the rectangle :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />` is also medial; therefore :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />` are straight lines incommensurable in square which make the sum of the squares on them rational, but the rectangle contained by them medial.
 
-.. step:: conclude [G.397] <G.397>
+.. step:: conclude ∵ straight_line_there_x_76 <G.397>
 
    Therefore :g:`/ C D / <g1:/ C D />` is minor.
 

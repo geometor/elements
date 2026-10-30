@@ -24,18 +24,23 @@ G.322
 
    The squares on straight lines commensurable in length have to one another the ratio which a square number has to a square number; and squares which have to one another the ratio which a square number has to a square number will also have their sides commensurable in length. But the squares on straight lines incommensurable in length have not to one another the ratio which a square number has to a square number; and squares which have not to one another the ratio which a square number has to a square number will not have their sides commensurable in length either.
 
+.. signature:: theorem
+
+   | :fn:`squares_straight_lines <G.322>`\ ()
+   | **prove** the square on :g:`A <g1:A>` has to the square on :g:`B <g1:B>` the ratio which a square number has to a square number; :g:`A <g1:A>` is commensurable in length with :g:`B <g1:B>`; the square on :g:`A <g1:A>` has not to the square on :g:`B <g1:B>` the ratio which a square number has to a square number; :g:`A <g1:A>` is incommensurable in length with :g:`B <g1:B>`
+
 .. picture:: g1.svg
    :alt: Proposition 9 diagram
 
 .. step:: assert
 
-   For let :g:`A <g1:A>`, :g:`B <g1:B>` be commensurable in length
+   Let :g:`A <g1:A>`, :g:`B <g1:B>` be commensurable in length
 
 .. step:: assert
 
    Since :g:`A <g1:A>` is commensurable in length with :g:`B <g1:B>`,
 
-.. step:: assert [G.318] <G.318>
+.. step:: assert ∵ commensurable_magnitudes_ratio <G.318>
 
    Therefore :g:`A <g1:A>` has to :g:`B <g1:B>` the ratio which a number has to a number.
 
@@ -43,7 +48,7 @@ G.322
 
    Let it have to it the ratio which :g:`C <g1:C>` has to :g:`D <g1:D>`.
 
-.. step:: assert [G.185, G.251] <G.185, G.251>
+.. step:: assert ∵ similar_polygons_divided, square_numbers_there <G.185, G.251>
 
    Since then, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`, while the ratio of the square on :g:`A <g1:A>` to the square on :g:`B <g1:B>` is duplicate of the ratio of :g:`A <g1:A>` to :g:`B <g1:B>`, for similar figures are in the duplicate ratio of their corresponding sides ; and the ratio of the square on :g:`C <g1:C>` to the square on :g:`D <g1:D>` is duplicate of the ratio of :g:`C <g1:C>` to :g:`D <g1:D>`, for between two square numbers there is one mean proportional number, and the square number has to the square number the ratio duplicate of that which the side has to the side .
 
@@ -63,7 +68,7 @@ G.322
 
    Therefore also, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`.
 
-.. step:: assert [G.319] <G.319>
+.. step:: assert ∵ magnitudes_ratio_number <G.319>
 
    Therefore :g:`A <g1:A>` has to :g:`B <g1:B>` the ratio which the number :g:`C <g1:C>` has to the number :g:`D <g1:D>` ; therefore :g:`A <g1:A>` is commensurable in length with :g:`B <g1:B>`.
 
@@ -75,7 +80,7 @@ G.322
 
    If the square on :g:`A <g1:A>` has to the square on :g:`B <g1:B>` the ratio
 
-.. step:: assert [G.319] <G.319>
+.. step:: assert ∵ magnitudes_ratio_number <G.319>
 
    Which a square number has to a square number, :g:`A <g1:A>` will be commensurable with :g:`B <g1:B>`.
 
@@ -107,7 +112,7 @@ G.322
 
    PORISM. And it is manifest from what has been proved that straight lines commensurable in length are always commensurable in square also, but those commensurable in square are not always commensurable in length also.
 
-.. step:: assert [G.268] <G.268>
+.. step:: assert ∵ similar_plane_numbers_viii_26 <G.268>
 
    [LEMMA. It has been proved in the arithmetical books that similar plane numbers have to one another the ratio which a square number has to a square number, and that, if two numbers have to one another the ratio which a square number has to a square number, they are similar plane numbers.
 

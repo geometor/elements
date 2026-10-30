@@ -24,12 +24,17 @@ G.422
 
    If an area be contained by a rational straight line and a fifth apotome, the “side” of the area is a straight line which produces with a rational area a medial whole.
 
+.. signature:: theorem
+
+   | :fn:`area_contained_rational_x_95 <G.422>`\ ()
+   | **prove** the “side” of the area :g:`< A B > <g1:< A B >>` is a straight line which produces with a rational area a medial whole; :g:`/ L N / <g1:/ L N />` is the straight line which produces with a rational area a medial whole
+
 .. picture:: g1.svg
    :alt: Proposition 95
 
 .. step:: assert
 
-   For let the area :g:`< A B > <g1:< A B >>` be contained by the rational straight line :g:`/ A C / <g1:/ A C />` and the fifth apotome :g:`/ A D / <g1:/ A D />`
+   Let the area :g:`< A B > <g1:< A B >>` be contained by the rational straight line :g:`/ A C / <g1:/ A C />` and the fifth apotome :g:`/ A D / <g1:/ A D />`
 
 .. step:: assert
 
@@ -43,11 +48,11 @@ G.422
 
    The annex :g:`/ G D / <g1:/ G D />` is commensurable in length with the rational straight line :g:`/ A C / <g1:/ A C />` set out, and the square on the whole :g:`/ A G / <g1:/ A G />` is greater than the square
 
-.. step:: assert [G.414] <G.414>
+.. step:: assert ∵ annex_commensurable_fifth_def <G.414>
 
    On the annex :g:`/ D G / <g1:/ D G />` by the square on a straight line incommensurable with :g:`/ A G / <g1:/ A G />`.
 
-.. step:: assert [G.331] <G.331>
+.. step:: assert ∵ there_unequal_straight_x_18 <G.331>
 
    Therefore, if there be applied to :g:`/ A G / <g1:/ A G />` a parallelogram equal to the fourth part of the square on :g:`/ D G / <g1:/ D G />` and deficient by a square figure, it will divide it into incommensurable parts.
 
@@ -67,7 +72,7 @@ G.422
 
    Since :g:`/ A G / <g1:/ A G />` is incommensurable in length with :g:`/ C A / <g1:/ C A />`, and both are rational,
 
-.. step:: assert [G.335] <G.335>
+.. step:: assert ∵ rectangle_contained_rational_x_21 <G.335>
 
    Therefore :g:`< A K > <g1:< A K >>` is medial.
 
@@ -75,7 +80,7 @@ G.422
 
    Since :g:`/ D G / <g1:/ D G />` is rational and commensurable in length with :g:`/ A C / <g1:/ A C />`,
 
-.. step:: assert [G.333] <G.333>
+.. step:: assert ∵ rectangle_contained_rational <G.333>
 
    :g:`< D K > <g1:< D K >>` is rational.
 
@@ -83,21 +88,17 @@ G.422
 
    Now let the square :g:`< L M > <g1:< L M >>` be constructed :eq:`equal <g1:< L M > = g1:< A I >>` to :g:`< A I > <g1:< A I >>`
 
-.. step:: assert
+.. step:: construct
 
    Let the square :g:`< N O > <g1:< N O >>` :eq:`equal <g1:< N O > = g1:< F K >>` to :g:`< F K > <g1:< F K >>` and about the same angle, :g:`< L P M ) <g1:< L P M )>`, be subtracted
 
-.. step:: assert [G.191] <G.191>
+.. step:: assert ∵ parallelogram_there_taken <G.191>
 
    Therefore the squares :g:`< L M > <g1:< L M >>`, :g:`< N O > <g1:< N O >>` are about the same diameter.
 
-.. step:: assert
-
-   Let :g:`/ P R / <g1:/ P R />` be their diameter
-
 .. step:: construct
 
-   Let the figure be drawn. Similarly then we can prove that :g:`/ L N / <g1:/ L N />` is the “side” of the area :g:`< A B > <g1:< A B >>`.
+   Let :g:`/ P R / <g1:/ P R />` be their diameter, and let the figure be drawn. Similarly then we can prove that :g:`/ L N / <g1:/ L N />` is the “side” of the area :g:`< A B > <g1:< A B >>`.
 
 .. step:: assert
 
@@ -127,7 +128,7 @@ G.422
 
    Square which make the sum of the squares on them medial but twice the rectangle contained by them rational.
 
-.. step:: conclude [G.398] <G.398>
+.. step:: conclude ∵ straight_line_there_x_77 <G.398>
 
    Therefore the remainder :g:`/ L N / <g1:/ L N />` is the irrational straight line called that which produces with a rational area a medial whole ; and it is the "side" of the area :g:`< A B > <g1:< A B >>`.
 

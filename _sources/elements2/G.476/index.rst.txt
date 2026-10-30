@@ -24,22 +24,20 @@ G.476
 
    Parallelepipedal solids which are on the same base and of the same height, and in which the extremities of the sides which stand up are on the same straight lines, are equal.
 
+.. signature:: theorem
+
+   | :fn:`parallelepipedal_solids_base <G.476>`\ (:g:`< C M > <g1:< C M >>`, :g:`< C N > <g1:< C N >>`, :g:`< A B > <g1:< A B >>`, :g:`/ A G / <g1:/ A G />`)
+   | **given** :g:`< C M > <g1:< C M >>`, :g:`< C N > <g1:< C N >>` be parallelepipedal solids on the same base :g:`< A B > <g1:< A B >>` and of the same height, let the extremities of their sides which stand up, namely :g:`/ A G / <g1:/ A G />`, :g:`/ A F / <g1:/ A F />`, :g:`/ L M / <g1:/ L M />`, :g:`/ L N / <g1:/ L N />`, :g:`/ C D / <g1:/ C D />`, :g:`/ C E / <g1:/ C E />`, :g:`/ B H / <g1:/ B H />`, :g:`/ B K / <g1:/ B K />`, be on the same straight lines :g:`/ F N / <g1:/ F N />`, :g:`/ D K / <g1:/ D K />`
+   | **prove** the solid :g:`< C M > <g1:< C M >>` is :eq:`equal <g1:< C M > = g1:< C N >>` to the solid :g:`< C N > <g1:< C N >>`
+
 .. picture:: g1.svg
    :alt: Proposition 29
 
 .. step:: given
 
-   :g:`< C M > <g1:< C M >>`, :g:`< C N > <g1:< C N >>` be parallelepipedal solids on the same base :g:`< A B > <g1:< A B >>` and of the same height
+   :g:`< C M > <g1:< C M >>`, :g:`< C N > <g1:< C N >>` be parallelepipedal solids on the same base :g:`< A B > <g1:< A B >>` and of the same height, let the extremities of their sides which stand up, namely :g:`/ A G / <g1:/ A G />`, :g:`/ A F / <g1:/ A F />`, :g:`/ L M / <g1:/ L M />`, :g:`/ L N / <g1:/ L N />`, :g:`/ C D / <g1:/ C D />`, :g:`/ C E / <g1:/ C E />`, :g:`/ B H / <g1:/ B H />`, :g:`/ B K / <g1:/ B K />`, be on the same straight lines :g:`/ F N / <g1:/ F N />`, :g:`/ D K / <g1:/ D K />`
 
-.. step:: assert
-
-   Let the extremities of their sides which stand up, namely :g:`/ A G / <g1:/ A G />`, :g:`/ A F / <g1:/ A F />`, :g:`/ L M / <g1:/ L M />`, :g:`/ L N / <g1:/ L N />`, :g:`/ C D / <g1:/ C D />`, :g:`/ C E / <g1:/ C E />`, :g:`/ B H / <g1:/ B H />`, :g:`/ B K / <g1:/ B K />`, be on the same straight lines :g:`/ F N / <g1:/ F N />`, :g:`/ D K / <g1:/ D K />`
-
-.. step:: assert
-
-   The solid :g:`< C M > <g1:< C M >>` is :eq:`equal <g1:< C M > = g1:< C N >>` to the solid :g:`< C N > <g1:< C N >>`.
-
-.. step:: assert [G.47] <G.47>
+.. step:: assert ∵ parallelogram_properties <G.47>
 
    Since each of the figures :g:`< C H > <g1:< C H >>`, :g:`< C K > <g1:< C K >>` is a parallelogram, :g:`/ C B / <g1:/ C B />` is :eq:`equal <g1:/ C B / = g1:/ D H / = g1:/ E K />` to each of :g:`/ D H / <g1:/ D H />`, :g:`/ E K / <g1:/ E K />`.
 
@@ -47,7 +45,7 @@ G.476
 
    Hence :g:`/ D H / <g1:/ D H />` is also :eq:`equal <g1:/ D H / = g1:/ E K />` to :g:`/ E K / <g1:/ E K />`.
 
-.. step:: assert
+.. step:: construct
 
    Let :g:`/ E H / <g1:/ E H />` be subtracted from each
 
@@ -55,7 +53,7 @@ G.476
 
    Therefore the remainder :g:`/ D E / <g1:/ D E />` is :eq:`equal <g1:/ D E / = g1:/ H K />` to the remainder :g:`/ H K / <g1:/ H K />`.
 
-.. step:: assert [G.15, G.11, G.49] <G.15, G.11, G.49>
+.. step:: assert ∵ sss_congruence, sas_congruence, parallelograms_equal_bases <G.15, G.11, G.49>
 
    Hence :g:`< D C E > <g1:< D C E >>` is also :eq:`equal <g1:< D C E > = g1:< H B K >; g1:< D G > = g1:< H N >>` to :g:`< H B K > <g1:< H B K >>`, and the parallelogram :g:`< D G > <g1:< D G >>` to the parallelogram :g:`< H N > <g1:< H N >>`.
 
@@ -71,7 +69,7 @@ G.476
 
    Therefore the prism contained by the two triangles :g:`< A F G > <g1:< A F G >>`, :g:`< D C E > <g1:< D C E >>` and the three parallelograms :g:`< A D > <g1:< A D >>`, :g:`< D G > <g1:< D G >>`, :g:`< C G > <g1:< C G >>` is equal to the prism contained by the two triangles :g:`< M L N > <g1:< M L N >>`, :g:`< H B K > <g1:< H B K >>` and the three parallelograms :g:`< B M > <g1:< B M >>`, :g:`< H N > <g1:< H N >>`, :g:`< B N > <g1:< B N >>`.
 
-.. step:: assert
+.. step:: construct
 
    Let there be added to each the solid of which the parallelogram :g:`< A B > <g1:< A B >>` is the base and :g:`< G E H M > <g1:< G E H M >>` its opposite
 

@@ -24,6 +24,12 @@ G.467
 
    If there be three plane angles of which two, taken together in any manner, are greater than the remaining one, and they are contained by equal straight lines, it is possible to construct a triangle out of the straight lines joining the extremities of the equal straight lines.
 
+.. signature:: problem
+
+   | :fn:`there_plane_angles <G.467>`\ (:g:`< A B C ) <g1:< A B C )>`, :g:`< D E F ) <g1:< D E F )>`, :g:`< G H K ) <g1:< G H K )>`) → :g:`/ A C / <g1:/ A C />`, :g:`/ D F / <g1:/ D F />`
+   | **given** there be three plane angles :g:`< A B C ) <g1:< A B C )>`, :g:`< D E F ) <g1:< D E F )>`, :g:`< G H K ) <g1:< G H K )>`, of which two, taken together in any manner, are greater than the remaining one, namely :g:`< A B C ) <g1:< A B C )>`, :g:`< D E F ) <g1:< D E F )>` greater than :g:`< G H K ) <g1:< G H K )>`, :g:`< D E F ) <g1:< D E F )>`, :g:`< G H K ) <g1:< G H K )>` greater than :g:`< A B C ) <g1:< A B C )>`, and, further, :g:`< G H K ) <g1:< G H K )>`, :g:`< A B C ) <g1:< A B C )>` greater than :g:`< D E F ) <g1:< D E F )>`
+   | **construct** it is possible to construct a triangle out of straight lines equal to :g:`/ A C / <g1:/ A C />`, :g:`/ D F / <g1:/ D F />`, :g:`/ G K / <g1:/ G K />`
+
 .. picture:: g1.svg
    :alt: Proposition 22, Figure 1
 
@@ -34,39 +40,27 @@ G.467
 
    there be three plane angles :g:`< A B C ) <g1:< A B C )>`, :g:`< D E F ) <g1:< D E F )>`, :g:`< G H K ) <g1:< G H K )>`, of which two, taken together in any manner, are greater than the remaining one, namely :g:`< A B C ) <g1:< A B C )>`, :g:`< D E F ) <g1:< D E F )>` greater than :g:`< G H K ) <g1:< G H K )>`, :g:`< D E F ) <g1:< D E F )>`, :g:`< G H K ) <g1:< G H K )>` greater than :g:`< A B C ) <g1:< A B C )>`, and, further, :g:`< G H K ) <g1:< G H K )>`, :g:`< A B C ) <g1:< A B C )>` greater than :g:`< D E F ) <g1:< D E F )>`
 
-.. step:: assert
-
-   Let :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ D E / <g1:/ D E />`, :g:`/ E F / <g1:/ E F />`, :g:`/ G H / <g1:/ G H />`, :g:`/ H K / <g1:/ H K />` be :eq:`equal <g1:/ A B / = g1:/ B C / = g1:/ D E / = g1:/ E F / = g1:/ G H / = g1:/ H K />`
-
 .. step:: construct
 
-   **segment** :g:`/ A C / <g1:/ A C />`, :g:`/ D F / <g1:/ D F />`, :g:`/ G K / <g1:/ G K />`
+   :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`) → :g:`/ A B / <g1:/ A B />`, :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`C <g1:C>`) → :g:`/ B C / <g1:/ B C />`, :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`E <g1:E>`) → :g:`/ D E / <g1:/ D E />`, :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`F <g1:F>`) → :g:`/ E F / <g1:/ E F />`, :fn:`segment <G.3>`\ (:g:`G <g1:G>`, :g:`H <g1:H>`) → :g:`/ G H / <g1:/ G H />`, :fn:`segment <G.3>`\ (:g:`H <g1:H>`, :g:`K <g1:K>`) → :g:`/ H K / <g1:/ H K />`, :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`C <g1:C>`) → :g:`/ A C / <g1:/ A C />`, :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`F <g1:F>`) → :g:`/ D F / <g1:/ D F />`, :fn:`segment <G.3>`\ (:g:`G <g1:G>`, :g:`K <g1:K>`) → :g:`/ G K / <g1:/ G K />`
 
 .. step:: assert
 
    If :g:`< A B C ) <g1:< A B C )>`, :g:`< D E F ) <g1:< D E F )>`, :g:`< G H K ) <g1:< G H K )>` are :eq:`equal <g1:< A B C ) = g1:< D E F ) = g1:< G H K )>` to one another, it is manifest that, :g:`/ A C / <g1:/ A C />`, :g:`/ D F / <g1:/ D F />`, :g:`/ G K / <g1:/ G K />` being :eq:`equal <g1:/ A C / = g1:/ D F / = g1:/ G K />` also, it is possible to construct a triangle out of straight lines equal to :g:`/ A C / <g1:/ A C />`, :g:`/ D F / <g1:/ D F />`, :g:`/ G K / <g1:/ G K />`.
 
-.. step:: assert
+.. step:: construct
 
-   But, if not, let them be unequal
+   But, if not, let them be unequal, and on :g:`/ H K / <g2:/ H K />`, and at :g:`H <g2:H>` on it, let :g:`< K H L ) <g2:< K H L )>` be constructed :eq:`equal <g2:< K H L ) = g1:< A B C )>` to :g:`< A B C ) <g1:< A B C )>`
 
 .. step:: construct
 
-   On :g:`/ H K / <g2:/ H K />`, and at :g:`H <g2:H>` on it, let :g:`< K H L ) <g2:< K H L )>` be constructed :eq:`equal <g2:< K H L ) = g1:< A B C )>` to :g:`< A B C ) <g1:< A B C )>`
-
-.. step:: construct
-
-   Let :g:`/ H L / <g2:/ H L />` be made :eq:`equal <g2:/ H L / = g1:/ A B / = g1:/ B C / = g1:/ D E / = g1:/ E F / = g2:/ G H / = g2:/ H K />` to one of :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ D E / <g1:/ D E />`, :g:`/ E F / <g1:/ E F />`, :g:`/ G H / <g2:/ G H />`, :g:`/ H K / <g2:/ H K />`
-
-.. step:: construct
-
-   **segment** :g:`/ K L / <g2:/ K L />`, :g:`/ G L / <g2:/ G L />`
+   :fn:`segment <G.3>`\ (:g:`H <g2:H>`, :g:`L <g2:L>`) → :g:`/ H L / <g2:/ H L />`, :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`) → :g:`/ A B / <g1:/ A B />`, :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`C <g1:C>`) → :g:`/ B C / <g1:/ B C />`, :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`E <g1:E>`) → :g:`/ D E / <g1:/ D E />`, :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`F <g1:F>`) → :g:`/ E F / <g1:/ E F />`, :fn:`segment <G.3>`\ (:g:`G <g2:G>`, :g:`H <g2:H>`) → :g:`/ G H / <g2:/ G H />`, :fn:`segment <G.3>`\ (:g:`H <g2:H>`, :g:`K <g2:K>`) → :g:`/ H K / <g2:/ H K />`, :fn:`segment <G.3>`\ (:g:`K <g2:K>`, :g:`L <g2:L>`) → :g:`/ K L / <g2:/ K L />`, :fn:`segment <G.3>`\ (:g:`G <g2:G>`, :g:`L <g2:L>`) → :g:`/ G L / <g2:/ G L />`
 
 .. step:: assert
 
    Since the two sides :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are :eq:`equal <g1:/ A B / = g2:/ K H /; g1:/ B C / = g2:/ H L />` to the two sides :g:`/ K H / <g2:/ K H />`, :g:`/ H L / <g2:/ H L />`, and the angle at :g:`B <g1:B>` is :eq:`equal <g1:< A B C ) = g2:< K H L )>` to :g:`< K H L ) <g2:< K H L )>`,
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    Therefore the base :g:`/ A C / <g1:/ A C />` is :eq:`equal <g1:/ A C / = g2:/ K L />` to the base :g:`/ K L / <g2:/ K L />`.
 
@@ -86,7 +80,7 @@ G.467
 
    And, since the two sides :g:`/ G H / <g2:/ G H />`, :g:`/ H L / <g2:/ H L />` are :eq:`equal <g2:/ G H / = g1:/ D E /; g2:/ H L / = g1:/ E F />` to the two sides :g:`/ D E / <g1:/ D E />`, :g:`/ E F / <g1:/ E F />`, and :g:`< G H L ) <g2:< G H L )>` is greater than :g:`< D E F ) <g1:< D E F )>`,
 
-.. step:: assert [G.35] <G.35>
+.. step:: assert ∵ hinge_theorem <G.35>
 
    Therefore the base :g:`/ G L / <g2:/ G L />` is greater than the base :g:`/ D F / <g1:/ D F />`.
 

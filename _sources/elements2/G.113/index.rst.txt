@@ -24,6 +24,12 @@ G.113
 
    From a given circle to cut off a segment admitting an angle equal to a given angle.
 
+.. signature:: problem
+
+   | :fn:`circle_cut_off <G.113>`\ (:g:`( A B C ) <g1:( A B C )>`, :g:`< D ) <g1:< D )>`) → :g:`( B A C ) <g1:( B A C )>`
+   | **given** :g:`( A B C ) <g1:( A B C )>`, the angle at :g:`< D ) <g1:< D )>`
+   | **construct** from the given circle :g:`( A B C ) <g1:( A B C )>` the segment :g:`( B A C ) <g1:( B A C )>` has been cut off admitting an angle equal to the given rectilineal angle, the angle at :g:`< D ) <g1:< D )>`
+
 .. picture:: g1.svg
    :alt: Proposition 34 diagram
 
@@ -35,11 +41,11 @@ G.113
 
    Let :g:`/ E F / <g1:/ E F />` be drawn touching :g:`( A B C ) <g1:( A B C )>` at :g:`B <g1:B>`
 
-.. step:: construct [G.34] <G.34>
+.. step:: construct
 
-   On :g:`/ F B / <g1:/ F B />`, and at :g:`B <g1:B>` on it, let :g:`< F B C ) <g1:< F B C )>` be constructed :eq:`equal <g1:< F B C ) = g1:< D )>` to the angle at :g:`< D ) <g1:< D )>`.
+   :fn:`copy_angle <G.34>`: On :g:`/ F B / <g1:/ F B />`, and at :g:`B <g1:B>` on it, let :g:`< F B C ) <g1:< F B C )>` be constructed :eq:`equal <g1:< F B C ) = g1:< D )>` to the angle at :g:`< D ) <g1:< D )>`.
 
-.. step:: assert [G.111] <G.111>
+.. step:: assert ∵ straight_line_touch_iii_32 <G.111>
 
    Since a straight line :g:`/ E F / <g1:/ E F />` touches :g:`( A B C ) <g1:( A B C )>`, and :g:`/ B C / <g1:/ B C />` has been drawn across from the point of contact at :g:`B <g1:B>`, :g:`< F B C ) <g1:< F B C )>` is equal to the angle constructed in the alternate segment :g:`( B A C ) <g1:( B A C )>`.
 

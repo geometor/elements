@@ -24,6 +24,12 @@ G.478
 
    Parallelepipedal solids which are on equal bases and of the same height are equal.
 
+.. signature:: theorem
+
+   | :fn:`parallelepipedal_solids_equal <G.478>`\ (:g:`< A E > <g1:< A E >>`, :g:`< C F > <g1:< C F >>`, :g:`< A B > <g1:< A B >>`, :g:`< C D > <g1:< C D >>`)
+   | **given** the parallelepipedal solids :g:`< A E > <g1:< A E >>`, :g:`< C F > <g1:< C F >>`, of the same height, be on :eq:`equal <g1:< A B > = g1:< C D >>` bases :g:`< A B > <g1:< A B >>`, :g:`< C D > <g1:< C D >>`
+   | **prove** the solid :g:`< A E > <g1:< A E >>` is :eq:`equal <g1:< A E > = g1:< C F >>` to the solid :g:`< C F > <g1:< C F >>`
+
 .. picture:: g1.svg
    :alt: Book XI, Proposition 31
 
@@ -36,27 +42,15 @@ G.478
 
 .. step:: assert
 
-   The solid :g:`< A E > <g1:< A E >>` is :eq:`equal <g1:< A E > = g1:< C F >>` to the solid :g:`< C F > <g1:< C F >>`.
-
-.. step:: assert
-
    First, let the sides which stand up, :g:`/ H K / <g1:/ H K />`, :g:`/ B E / <g1:/ B E />`, :g:`/ A G / <g1:/ A G />`, :g:`/ L M / <g1:/ L M />`, :g:`/ P Q / <g1:/ P Q />`, :g:`/ D F / <g1:/ D F />`, :g:`/ C O / <g1:/ C O />`, :g:`/ R S / <g1:/ R S />`, be at :eq:`right angles <g1:/ H K / = g1:< A B >; g1:/ B E / = g1:< A B >; g1:/ A G / = g1:< A B >; g1:/ L M / = g1:< A B >; g1:/ P Q / = g1:< C D >; g1:/ D F / = g1:< C D >; g1:/ C O / = g1:< C D >; g1:/ R S / = g1:< C D >>` to the bases :g:`< A B > <g1:< A B >>`, :g:`< C D > <g1:< C D >>`
 
 .. step:: construct
 
-   **extend** :g:`/ C R / <g1:/ C R />` to :g:`/ R T / <g1:/ R T />`
+   :fn:`extend <G.7>`\ (:g:`/ C R / <g1:/ C R />`) → :g:`/ R T / <g1:/ R T />`
 
-.. step:: assert
+.. step:: construct
 
-   On :g:`/ R T / <g1:/ R T />`
-
-.. step:: construct [G.34] <G.34>
-
-   At :g:`R <g1:R>` on it, let :g:`< T R U ) <g1:< T R U )>` be constructed :eq:`equal <g1:< T R U ) = g1:< A L B )>` to :g:`< A L B ) <g1:< A L B )>`, let :g:`/ R T / <g1:/ R T />` be made :eq:`equal <g1:/ R T / = g1:/ A L />` to :g:`/ A L / <g1:/ A L />`, and :g:`/ R U / <g1:/ R U />` :eq:`equal <g1:/ R U / = g1:/ L B />` to :g:`/ L B / <g1:/ L B />`
-
-.. step:: assert
-
-   Let the base :g:`< R W > <g1:< R W >>` and the solid :g:`< X U > <g1:< X U >>` be completed.
+   :fn:`copy_angle <G.34>`: On :g:`/ R T / <g1:/ R T />`, and at :g:`R <g1:R>` on it, let :g:`< T R U ) <g1:< T R U )>` be constructed :eq:`equal <g1:< T R U ) = g1:< A L B )>` to :g:`< A L B ) <g1:< A L B )>`, let :g:`/ R T / <g1:/ R T />` be made :eq:`equal <g1:/ R T / = g1:/ A L />` to :g:`/ A L / <g1:/ A L />`, and :g:`/ R U / <g1:/ R U />` :eq:`equal <g1:/ R U / = g1:/ L B />` to :g:`/ L B / <g1:/ L B />`, and let the base :g:`< R W > <g1:< R W >>` and the solid :g:`< X U > <g1:< X U >>` be completed.
 
 .. step:: assert
 
@@ -82,23 +76,31 @@ G.478
 
    Therefore three parallelograms of the solid :g:`< A E > <g1:< A E >>` are equal and similar to three parallelograms of the solid :g:`< X U > <g1:< X U >>`.
 
-.. step:: assert [G.469] <G.469>
+.. step:: assert ∵ solid_contained_parallel <G.469>
 
    The former three are equal and similar to the three opposite, and the latter three to the three opposite.
 
-.. step:: assert [G.474] <G.474>
+.. step:: assert ∵ equal_similar_solid_def <G.474>
 
    Therefore the whole parallelepipedal solid :g:`< A E > <g1:< A E >>` is :eq:`equal <g1:< A E > = g1:< X U >>` to the whole parallelepipedal solid :g:`< X U > <g1:< X U >>`.
 
 .. step:: construct
 
-   Let :g:`/ D R / <g1:/ D R />`, :g:`/ W U / <g1:/ W U />` be drawn through and meet one another at :g:`Y <g1:Y>`, let :g:`/ a T b / <g1:/ a T b />` be drawn through :g:`T <g1:T>` parallel to :g:`/ D Y / <g1:/ D Y />`, let :g:`/ P D / <g1:/ P D />` be produced to :g:`a <g1:a>`
+   Let :g:`/ D R / <g1:/ D R />`, :g:`/ W U / <g1:/ W U />` be drawn through and meet one another at :g:`Y <g1:Y>`
+
+.. step:: construct
+
+   :fn:`parallel_line <G.44>`\ (:g:`T <g1:T>`, :g:`/ D Y / <g1:/ D Y />`) → :g:`/ a T b / <g1:/ a T b />`
+
+.. step:: construct
+
+   :fn:`extend <G.7>`\ (:g:`/ P D / <g1:/ P D />`) → :g:`a <g1:a>`
 
 .. step:: assert
 
    Let the solids :g:`< Y X > <g1:< Y X >>`, :g:`< R I > <g1:< R I >>` be completed.
 
-.. step:: assert [G.476] <G.476>
+.. step:: assert ∵ parallelepipedal_solids_base <G.476>
 
    Then the solid :g:`< X Y > <g1:< X Y >>`, of which the parallelogram :g:`< R X > <g1:< R X >>` is the base and :g:`< Y c > <g1:< Y c >>` its opposite, is :eq:`equal <g1:< X Y > = g1:< X U >>` to the solid :g:`< X U > <g1:< X U >>` of which the parallelogram :g:`< R X > <g1:< R X >>` is the base and :g:`< U V > <g1:< U V >>` its opposite, for they are on the same base :g:`< R X > <g1:< R X >>` and of the same height, and the extremities of their sides which stand up, namely :g:`/ R Y / <g1:/ R Y />`, :g:`/ R U / <g1:/ R U />`, :g:`/ T b / <g1:/ T b />`, :g:`/ T W / <g1:/ T W />`, :g:`/ S e / <g1:/ S e />`, :g:`/ S d / <g1:/ S d />`, :g:`/ X c / <g1:/ X c />`, :g:`/ X V / <g1:/ X V />`, are on the same straight lines :g:`/ Y W / <g1:/ Y W />`, :g:`/ e V / <g1:/ e V />`.
 
@@ -110,7 +112,7 @@ G.478
 
    Therefore the solid :g:`< X Y > <g1:< X Y >>` is also :eq:`equal <g1:< X Y > = g1:< A E >>` to the solid :g:`< A E > <g1:< A E >>`.
 
-.. step:: assert [G.48] <G.48>
+.. step:: assert ∵ parallelograms_same_base <G.48>
 
    And, since the parallelogram :g:`< R U W T > <g1:< R U W T >>` is :eq:`equal <g1:< R U W T > = g1:< Y T >>` to the parallelogram :g:`< Y T > <g1:< Y T >>` for they are on the same base :g:`/ R T / <g1:/ R T />` and in the same parallels :g:`/ R T / <g1:/ R T />`, :g:`/ Y W / <g1:/ Y W />`, while :g:`< R U W T > <g1:< R U W T >>` is :eq:`equal <g1:< R U W T > = g1:< C D >>` to :g:`< C D > <g1:< C D >>`, since it is also :eq:`equal <g1:< R U W T > = g1:< A B >>` to :g:`< A B > <g1:< A B >>`.
 
@@ -122,7 +124,7 @@ G.478
 
    :g:`< D T > <g1:< D T >>` is another parallelogram;
 
-.. step:: assert [G.142] <G.142>
+.. step:: assert ∵ equal_magnitudes_ratio <G.142>
 
    Therefore, as the base :g:`< C D > <g1:< C D >>` is to :g:`< D T > <g1:< D T >>`, so is :g:`< Y T > <g1:< Y T >>` to :g:`< D T > <g1:< D T >>`.
 
@@ -130,7 +132,7 @@ G.478
 
    And, since the parallelepipedal solid :g:`< C I > <g1:< C I >>` has been cut by the plane :g:`< R F > <g1:< R F >>` which is parallel to opposite planes,
 
-.. step:: assert [G.470] <G.470>
+.. step:: assert ∵ parallelepipedal_solid_cut <G.470>
 
    As the base :g:`< C D > <g1:< C D >>` is to the base :g:`< D T > <g1:< D T >>`, so is the solid :g:`< C F > <g1:< C F >>` to the solid :g:`< R I > <g1:< R I >>`.
 
@@ -138,7 +140,7 @@ G.478
 
    For the same reason, since the parallelepipedal solid :g:`< Y I > <g2:< Y I >>` has been cut by the plane :g:`< R X > <g2:< R X >>` which is parallel to opposite planes,
 
-.. step:: assert [G.470] <G.470>
+.. step:: assert ∵ parallelepipedal_solid_cut <G.470>
 
    As the base :g:`< Y T > <g2:< Y T >>` is to the base :g:`< T D > <g2:< T D >>`, so is the solid :g:`< Y X > <g2:< Y X >>` to the solid :g:`< R I > <g2:< R I >>`.
 
@@ -146,11 +148,11 @@ G.478
 
    But, as the base :g:`< C D > <g2:< C D >>` is to :g:`< D T > <g2:< D T >>`, so is :g:`< Y T > <g2:< Y T >>` to :g:`< D T > <g2:< D T >>`;
 
-.. step:: assert [G.148] <G.148>
+.. step:: assert ∵ ratios_ratio <G.148>
 
    Therefore also, as the solid :g:`< C F > <g2:< C F >>` is to the solid :g:`< R I > <g2:< R I >>`, so is the solid :g:`< Y X > <g2:< Y X >>` to :g:`< R I > <g2:< R I >>`.
 
-.. step:: assert [G.146] <G.146>
+.. step:: assert ∵ magnitudes_ratio_equal <G.146>
 
    Therefore each of the solids :g:`< C F > <g2:< C F >>`, :g:`< Y X > <g2:< Y X >>` has to :g:`< R I > <g2:< R I >>` the same ratio; therefore the solid :g:`< C F > <g2:< C F >>` is :eq:`equal <g2:< C F > = g2:< Y X >>` to the solid :g:`< Y X > <g2:< Y X >>`.
 
@@ -172,21 +174,17 @@ G.478
 
 .. step:: construct
 
-   For from :g:`K <g2:K>`, :g:`E <g2:E>`, :g:`G <g2:G>`, :g:`M <g2:M>`, :g:`Q <g2:Q>`, :g:`F <g2:F>`, :g:`N <g2:N>`, :g:`S <g2:S>` let :g:`/ K O / <g2:/ K O />`, :g:`/ E T / <g2:/ E T />`, :g:`/ G U / <g2:/ G U />`, :g:`/ M V / <g2:/ M V />`, :g:`/ Q W / <g2:/ Q W />`, :g:`/ F X / <g2:/ F X />`, :g:`/ N Y / <g2:/ N Y />`, :g:`/ S I / <g2:/ S I />` be drawn perpendicular to the plane of reference
-
-.. step:: assert
-
-   Let them meet the plane at :g:`O <g2:O>`, :g:`T <g2:T>`, :g:`U <g2:U>`, :g:`V <g2:V>`, :g:`W <g2:W>`, :g:`X <g2:X>`, :g:`Y <g2:Y>`, :g:`I <g2:I>`
+   From :g:`K <g2:K>`, :g:`E <g2:E>`, :g:`G <g2:G>`, :g:`M <g2:M>`, :g:`Q <g2:Q>`, :g:`F <g2:F>`, :g:`N <g2:N>`, :g:`S <g2:S>` let :g:`/ K O / <g2:/ K O />`, :g:`/ E T / <g2:/ E T />`, :g:`/ G U / <g2:/ G U />`, :g:`/ M V / <g2:/ M V />`, :g:`/ Q W / <g2:/ Q W />`, :g:`/ F X / <g2:/ F X />`, :g:`/ N Y / <g2:/ N Y />`, :g:`/ S I / <g2:/ S I />` be drawn perpendicular to the plane of reference
 
 .. step:: construct
 
-   **segment** :g:`/ O T / <g2:/ O T />`, :g:`/ O U / <g2:/ O U />`, :g:`/ U V / <g2:/ U V />`, :g:`/ T V / <g2:/ T V />`, :g:`/ W X / <g2:/ W X />`, :g:`/ W Y / <g2:/ W Y />`, :g:`/ Y I / <g2:/ Y I />`, :g:`/ I X / <g2:/ I X />`
+   :fn:`segment <G.3>`\ () → :g:`O <g2:O>`, :fn:`segment <G.3>`\ () → :g:`T <g2:T>`, :fn:`segment <G.3>`\ () → :g:`U <g2:U>`, :fn:`segment <G.3>`\ () → :g:`V <g2:V>`, :fn:`segment <G.3>`\ () → :g:`W <g2:W>`, :fn:`segment <G.3>`\ () → :g:`X <g2:X>`, :fn:`segment <G.3>`\ () → :g:`Y <g2:Y>`, :fn:`segment <G.3>`\ () → :g:`I <g2:I>`, :fn:`segment <G.3>`\ (:g:`O <g2:O>`, :g:`T <g2:T>`) → :g:`/ O T / <g2:/ O T />`, :fn:`segment <G.3>`\ (:g:`O <g2:O>`, :g:`U <g2:U>`) → :g:`/ O U / <g2:/ O U />`, :fn:`segment <G.3>`\ (:g:`U <g2:U>`, :g:`V <g2:V>`) → :g:`/ U V / <g2:/ U V />`, :fn:`segment <G.3>`\ (:g:`T <g2:T>`, :g:`V <g2:V>`) → :g:`/ T V / <g2:/ T V />`, :fn:`segment <G.3>`\ (:g:`W <g2:W>`, :g:`X <g2:X>`) → :g:`/ W X / <g2:/ W X />`, :fn:`segment <G.3>`\ (:g:`W <g2:W>`, :g:`Y <g2:Y>`) → :g:`/ W Y / <g2:/ W Y />`, :fn:`segment <G.3>`\ (:g:`Y <g2:Y>`, :g:`I <g2:I>`) → :g:`/ Y I / <g2:/ Y I />`, :fn:`segment <G.3>`\ (:g:`I <g2:I>`, :g:`X <g2:X>`) → :g:`/ I X / <g2:/ I X />`
 
-.. step:: assert [First part of this Prop.] <First part of this Prop.>
+.. step:: assert ∵ First part of this Prop. <First part of this Prop.>
 
    Then the solid :g:`< K V > <g2:< K V >>` is :eq:`equal <g2:< K V > = g2:< Q I >>` to the solid :g:`< Q I > <g2:< Q I >>`, for they are on the :eq:`equal <g2:< K M > = g2:< Q S >>` bases :g:`< K M > <g2:< K M >>`, :g:`< Q S > <g2:< Q S >>` and of the same height, and their sides which stand up are at right angles to their bases.
 
-.. step:: assert [G.477] <G.477>
+.. step:: assert ∵ parallelepipedal_solids_base_xi_30 <G.477>
 
    The solid :g:`< K V > <g2:< K V >>` is :eq:`equal <g2:< K V > = g2:< A E >; g2:< Q I > = g2:< C F >>` to the solid :g:`< A E > <g2:< A E >>`, and :g:`< Q I > <g2:< Q I >>` to :g:`< C F > <g2:< C F >>`; for they are on the same base and of the same height, while the extremities of their sides which stand up are not on the same straight lines.
 

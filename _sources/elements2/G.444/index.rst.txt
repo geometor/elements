@@ -24,16 +24,21 @@ G.444
 
    If two straight lines cut one another, they are in one plane, and every triangle is in one plane.
 
+.. signature:: theorem
+
+   | :fn:`straight_lines_cut <G.444>`\ ()
+   | **prove** :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` are in one plane, and every triangle is in one plane
+
 .. picture:: g1.svg
    :alt: Book XI, Proposition 2
 
 .. step:: intersect
 
-   For let :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` cut one another at :g:`E <g1:E>`
+   Let :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` cut one another at :g:`E <g1:E>`
 
 .. step:: construct
 
-   For let points :g:`F <g1:F>`, :g:`G <g1:G>` be taken at random on :g:`/ E C / <g1:/ E C />`, :g:`/ E B / <g1:/ E B />`, let :g:`/ C B / <g1:/ C B />`, :g:`/ F G / <g1:/ F G />` be joined
+   :fn:`segment <G.3>`\ () → :g:`F <g1:F>`, :fn:`segment <G.3>`\ () → :g:`G <g1:G>`, :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`C <g1:C>`) → :g:`/ E C / <g1:/ E C />`, :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`B <g1:B>`) → :g:`/ E B / <g1:/ E B />`, :fn:`segment <G.3>`\ (:g:`C <g1:C>`, :g:`B <g1:B>`) → :g:`/ C B / <g1:/ C B />`, :fn:`segment <G.3>`\ (:g:`F <g1:F>`, :g:`G <g1:G>`) → :g:`/ F G / <g1:/ F G />`
 
 .. step:: construct
 
@@ -59,7 +64,7 @@ G.444
 
    A part also of both :g:`/ E C / <g1:/ E C />`, :g:`/ E B / <g1:/ E B />` will be in the plane of reference and a part in another:
 
-.. step:: assert [G.443] <G.443>
+.. step:: assert ∵ part_straight_line <G.443>
 
    Which was proved absurd.
 
@@ -67,7 +72,7 @@ G.444
 
    Therefore :g:`< E C B > <g1:< E C B >>` is in one plane.
 
-.. step:: assert [G.443] <G.443>
+.. step:: assert ∵ part_straight_line <G.443>
 
    But, in whatever plane :g:`< E C B > <g1:< E C B >>` is, in that plane also is each of :g:`/ E C / <g1:/ E C />`, :g:`/ E B / <g1:/ E B />`, and, in whatever plane each of :g:`/ E C / <g1:/ E C />`, :g:`/ E B / <g1:/ E B />` is, in that plane are :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` also.
 

@@ -24,20 +24,21 @@ G.496
 
    Any cone is a third part of the cylinder which has the same base with it and equal height.
 
+.. signature:: theorem
+
+   | :fn:`cone_part_cylinder <G.496>`\ ()
+   | **prove** the cone is a third part of the cylinder, that is, that the cylinder is triple of the cone
+
 .. picture:: g1.svg
    :alt: Book XII, Proposition 10
 
 .. step:: assert
 
-   For let a cone have the same base, namely :g:`( A B C D ) <g1:( A B C D )>`, with a cylinder and equal height
+   Let a cone have the same base, namely :g:`( A B C D ) <g1:( A B C D )>`, with a cylinder and equal height
 
-.. step:: assert
+.. step:: construct
 
-   For if the cylinder is not triple of the cone, the cylinder will be either greater than triple or less than triple of the cone. First let it be greater than triple
-
-.. step:: assert [G.124] <G.124>
-
-   Let the square :g:`< A B C D > <g1:< A B C D >>` be inscribed in :g:`( A B C D ) <g1:( A B C D )>`
+   :fn:`inscribe_square_in_circle <G.124>`: If the cylinder is not triple of the cone, the cylinder will be either greater than triple or less than triple of the cone. First let it be greater than triple, and let the square :g:`< A B C D > <g1:< A B C D >>` be inscribed in :g:`( A B C D ) <g1:( A B C D )>`
 
 .. step:: assert
 
@@ -45,13 +46,17 @@ G.496
 
 .. step:: construct
 
-   From the square :g:`< A B C D > <g1:< A B C D >>` let there be set up a prism of equal height with the cylinder. Then the prism so set up is greater than the half of the cylinder,
+   From the square :g:`< A B C D > <g1:< A B C D >>` let there be set up a prism of equal height with the cylinder
 
-.. step:: assert [G.125, G.479] <G.125, G.479>
+.. step:: assert
+
+   Then the prism so set up is greater than the half of the cylinder,
+
+.. step:: assert ∵ circumscribe_circle_square, parallelepipedal_solids_height <G.125, G.479>
 
    Inasmuch as, if we also circumscribe a square about :g:`( A B C D ) <g1:( A B C D )>`, the square inscribed in :g:`( A B C D ) <g1:( A B C D )>` is half of that circumscribed about it, and the solids set up from them are parallelepipedal prisms of equal height, while parallelepipedal solids which are of the same height are to one another as their bases .
 
-.. step:: assert [G.475, G.492, G.493] <G.475, G.492, G.493>
+.. step:: assert ∵ parallelepipedal_solid_cut_xi_28, pyramids_height_polygonal, prism_triangular_base <G.475, G.492, G.493>
 
    Therefore also the prism set up on the square :g:`< A B C D > <g1:< A B C D >>` is half of the prism set up from the square circumscribed about :g:`( A B C D ) <g1:( A B C D )>` .
 
@@ -63,15 +68,11 @@ G.496
 
    Therefore the prism set up from the square :g:`< A B C D > <g1:< A B C D >>` and of equal height with the cylinder is greater than the half of the cylinder.
 
-.. step:: assert
-
-   Let the circumferences :g:`( A E B ) <g1:( A E B )>`, :g:`( B F C ) <g1:( B F C )>`, :g:`( C G D ) <g1:( C G D )>`, :g:`( D H A ) <g1:( D H A )>` be :eq:`bisected <g1:/ A E / = g1:/ E B / = g1:/ B F / = g1:/ F C / = g1:/ C G / = g1:/ G D / = g1:/ D H / = g1:/ H A />` at :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>`, :g:`H <g1:H>`
-
 .. step:: construct
 
-   **segment** :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />`, :g:`/ B F / <g1:/ B F />`, :g:`/ F C / <g1:/ F C />`, :g:`/ C G / <g1:/ C G />`, :g:`/ G D / <g1:/ G D />`, :g:`/ D H / <g1:/ D H />`, :g:`/ H A / <g1:/ H A />`
+   :fn:`segment <G.3>`\ () → :g:`( A E B ) <g1:( A E B )>`, :fn:`segment <G.3>`\ () → :g:`( B F C ) <g1:( B F C )>`, :fn:`segment <G.3>`\ () → :g:`( C G D ) <g1:( C G D )>`, :fn:`segment <G.3>`\ () → :g:`( D H A ) <g1:( D H A )>`, :fn:`segment <G.3>`\ () → :g:`E <g1:E>`, :fn:`segment <G.3>`\ () → :g:`F <g1:F>`, :fn:`segment <G.3>`\ () → :g:`G <g1:G>`, :fn:`segment <G.3>`\ () → :g:`H <g1:H>`, :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`E <g1:E>`) → :g:`/ A E / <g1:/ A E />`, :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`B <g1:B>`) → :g:`/ E B / <g1:/ E B />`, :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`F <g1:F>`) → :g:`/ B F / <g1:/ B F />`, :fn:`segment <G.3>`\ (:g:`F <g1:F>`, :g:`C <g1:C>`) → :g:`/ F C / <g1:/ F C />`, :fn:`segment <G.3>`\ (:g:`C <g1:C>`, :g:`G <g1:G>`) → :g:`/ C G / <g1:/ C G />`, :fn:`segment <G.3>`\ (:g:`G <g1:G>`, :g:`D <g1:D>`) → :g:`/ G D / <g1:/ G D />`, :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`H <g1:H>`) → :g:`/ D H / <g1:/ D H />`, :fn:`segment <G.3>`\ (:g:`H <g1:H>`, :g:`A <g1:A>`) → :g:`/ H A / <g1:/ H A />`
 
-.. step:: assert [G.488] <G.488>
+.. step:: assert ∵ circles_squares_diameters <G.488>
 
    Then each of :g:`< A E B > <g1:< A E B >>`, :g:`< B F C > <g1:< B F C >>`, :g:`< C G D > <g1:< C G D >>`, :g:`< D H A > <g1:< D H A >>` is greater than the half of that segment of :g:`( A B C D ) <g1:( A B C D )>` which is about it, as we proved before.
 
@@ -91,7 +92,7 @@ G.496
 
    Hence also the prisms on :g:`< A E B > <g1:< A E B >>`, :g:`< B F C > <g1:< B F C >>`, :g:`< C G D > <g1:< C G D >>`, :g:`< D H A > <g1:< D H A >>` are greater than the half of the segments of the cylinder about them.
 
-.. step:: assert [G.313] <G.313>
+.. step:: assert ∵ unequal_magnitudes_set <G.313>
 
    Thus, bisecting the circumferences that are left, joining straight lines, setting up on each of the triangles prisms of equal height with the cylinder, and doing this continually, we shall leave some segments of the cylinder which will be less than the excess by which the cylinder exceeds the triple of the cone.
 
@@ -103,7 +104,7 @@ G.496
 
    Therefore the remainder, the prism of which the polygon :g:`< A E B F C G D H > <g1:< A E B F C G D H >>` is the base and the height is the same as that of the cylinder, is greater than triple of the cone.
 
-.. step:: assert [G.493] <G.493>
+.. step:: assert ∵ prism_triangular_base <G.493>
 
    The prism of which the polygon :g:`< A E B F C G D H > <g1:< A E B F C G D H >>` is the base and the height the same as that of the cylinder is triple of the pyramid of which the polygon :g:`< A E B F C G D H > <g1:< A E B F C G D H >>` is the base and the vertex is the same as that of the cone .
 
@@ -131,7 +132,7 @@ G.496
 
    Therefore, inversely, the cone is greater than a third part of the cylinder.
 
-.. step:: assert
+.. step:: construct
 
    Let the square :g:`< A B C D > <g1:< A B C D >>` be inscribed in :g:`( A B C D ) <g1:( A B C D )>`
 
@@ -151,7 +152,7 @@ G.496
 
    Seeing that, as we proved before, if we circumscribe a square
 
-.. step:: assert [G.479] <G.479>
+.. step:: assert ∵ parallelepipedal_solids_height <G.479>
 
    About the circle, the square :g:`< A B C D > <g1:< A B C D >>` will be half of the square circumscribed about the circle, and if we set up from the squares parallelepipedal solids of equal height with the cone, which are also called prisms, the solid set up from the square :g:`< A B C D > <g1:< A B C D >>` will be half of that set up from the square circumscribed about the circle ; for they are to one another as their bases.
 
@@ -171,13 +172,9 @@ G.496
 
    Therefore the pyramid of which the square :g:`< A B C D > <g1:< A B C D >>` is the base and the vertex is the same with that of the cone is greater than the half of the cone.
 
-.. step:: assert
-
-   Let the circumferences :g:`( A E B ) <g1:( A E B )>`, :g:`( B F C ) <g1:( B F C )>`, :g:`( C G D ) <g1:( C G D )>`, :g:`( D H A ) <g1:( D H A )>` be :eq:`bisected <g1:/ A E / = g1:/ E B / = g1:/ B F / = g1:/ F C / = g1:/ C G / = g1:/ G D / = g1:/ D H / = g1:/ H A />` at :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>`, :g:`H <g1:H>`
-
 .. step:: construct
 
-   **segment** :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />`, :g:`/ B F / <g1:/ B F />`, :g:`/ F C / <g1:/ F C />`, :g:`/ C G / <g1:/ C G />`, :g:`/ G D / <g1:/ G D />`, :g:`/ D H / <g1:/ D H />`, :g:`/ H A / <g1:/ H A />`
+   :fn:`segment <G.3>`\ () → :g:`( A E B ) <g1:( A E B )>`, :fn:`segment <G.3>`\ () → :g:`( B F C ) <g1:( B F C )>`, :fn:`segment <G.3>`\ () → :g:`( C G D ) <g1:( C G D )>`, :fn:`segment <G.3>`\ () → :g:`( D H A ) <g1:( D H A )>`, :fn:`segment <G.3>`\ () → :g:`E <g1:E>`, :fn:`segment <G.3>`\ () → :g:`F <g1:F>`, :fn:`segment <G.3>`\ () → :g:`G <g1:G>`, :fn:`segment <G.3>`\ () → :g:`H <g1:H>`, :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`E <g1:E>`) → :g:`/ A E / <g1:/ A E />`, :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`B <g1:B>`) → :g:`/ E B / <g1:/ E B />`, :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`F <g1:F>`) → :g:`/ B F / <g1:/ B F />`, :fn:`segment <G.3>`\ (:g:`F <g1:F>`, :g:`C <g1:C>`) → :g:`/ F C / <g1:/ F C />`, :fn:`segment <G.3>`\ (:g:`C <g1:C>`, :g:`G <g1:G>`) → :g:`/ C G / <g1:/ C G />`, :fn:`segment <G.3>`\ (:g:`G <g1:G>`, :g:`D <g1:D>`) → :g:`/ G D / <g1:/ G D />`, :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`H <g1:H>`) → :g:`/ D H / <g1:/ D H />`, :fn:`segment <G.3>`\ (:g:`H <g1:H>`, :g:`A <g1:A>`) → :g:`/ H A / <g1:/ H A />`
 
 .. step:: assert
 
@@ -191,17 +188,13 @@ G.496
 
    Therefore also each of the pyramids so set up is, in the same manner, greater than the half part of that segment of the cone which is about it.
 
-.. step:: assert [G.313] <G.313>
+.. step:: assert ∵ unequal_magnitudes_set <G.313>
 
    Thus, by bisecting the circumferences that are left, joining straight lines, setting up on each of the triangles a pyramid which has the same vertex as the cone, and doing this continually, we shall leave some segments of the cone which will be less than the excess by which the cone exceeds the third part of the cylinder.
 
 .. step:: assert
 
-   Let such be left
-
-.. step:: assert
-
-   Let them be the segments on :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />`, :g:`/ B F / <g1:/ B F />`, :g:`/ F C / <g1:/ F C />`, :g:`/ C G / <g1:/ C G />`, :g:`/ G D / <g1:/ G D />`, :g:`/ D H / <g1:/ D H />`, :g:`/ H A / <g1:/ H A />`
+   Let such be left, and let them be the segments on :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />`, :g:`/ B F / <g1:/ B F />`, :g:`/ F C / <g1:/ F C />`, :g:`/ C G / <g1:/ C G />`, :g:`/ G D / <g1:/ G D />`, :g:`/ D H / <g1:/ D H />`, :g:`/ H A / <g1:/ H A />`
 
 .. step:: assert
 

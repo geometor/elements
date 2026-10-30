@@ -24,30 +24,27 @@ G.106
 
    In equal circles angles standing on equal circumferences are equal, whether they stand at the centres or at the circumferences.
 
+.. signature:: theorem
+
+   | :fn:`equal_circles_angles <G.106>`\ ()
+   | **prove** :g:`< B G C ) <g1:< B G C )>` is :eq:`equal <g1:< B G C ) = g1:< E H F )>` to :g:`< E H F ) <g1:< E H F )>`, and :g:`< B A C ) <g1:< B A C )>` is :eq:`equal <g1:< B A C ) = g1:< E D F )>` to :g:`< E D F ) <g1:< E D F )>`
+
 .. picture:: g1.svg
    :alt: Diagram
 
 .. step:: assert
 
-   For in :eq:`equal <g1:( A B C ) = g1:( D E F )>` circles :g:`( A B C ) <g1:( A B C )>`, :g:`( D E F ) <g1:( D E F )>`, on :eq:`equal <g1:( B C ) = g1:( E F )>` circumferences :g:`( B C ) <g1:( B C )>`, :g:`( E F ) <g1:( E F )>`, let :g:`< B G C ) <g1:< B G C )>`, :g:`< E H F ) <g1:< E H F )>` stand at the centres :g:`G <g1:G>`, :g:`H <g1:H>`, and :g:`< B A C ) <g1:< B A C )>`, :g:`< E D F ) <g1:< E D F )>` at the circumferences
-
-.. step:: assert
-
-   :g:`< B G C ) <g1:< B G C )>` is :eq:`equal <g1:< B G C ) = g1:< E H F )>` to :g:`< E H F ) <g1:< E H F )>`, and :g:`< B A C ) <g1:< B A C )>` is :eq:`equal <g1:< B A C ) = g1:< E D F )>` to :g:`< E D F ) <g1:< E D F )>`.
+   In :eq:`equal <g1:( A B C ) = g1:( D E F )>` circles :g:`( A B C ) <g1:( A B C )>`, :g:`( D E F ) <g1:( D E F )>`, on :eq:`equal <g1:( B C ) = g1:( E F )>` circumferences :g:`( B C ) <g1:( B C )>`, :g:`( E F ) <g1:( E F )>`, let :g:`< B G C ) <g1:< B G C )>`, :g:`< E H F ) <g1:< E H F )>` stand at the centres :g:`G <g1:G>`, :g:`H <g1:H>`, and :g:`< B A C ) <g1:< B A C )>`, :g:`< E D F ) <g1:< E D F )>` at the circumferences
 
 .. step:: assert
 
    If :g:`< B G C ) <g1:< B G C )>` is unequal to :g:`< E H F ) <g1:< E H F )>` → one of them is greater.
 
-.. step:: assert
+.. step:: construct
 
-   Let :g:`< B G C ) <g1:< B G C )>` be greater: and on :g:`/ B G / <g1:/ B G />`
+   :fn:`copy_angle <G.34>`: Let :g:`< B G C ) <g1:< B G C )>` be greater: and on :g:`/ B G / <g1:/ B G />`, and at :g:`G <g1:G>` on it, let :g:`< B G K ) <g1:< B G K )>` be constructed :eq:`equal <g1:< B G K ) = g1:< E H F )>` to :g:`< E H F ) <g1:< E H F )>`.
 
-.. step:: construct [G.34] <G.34>
-
-   At :g:`G <g1:G>` on it, let :g:`< B G K ) <g1:< B G K )>` be constructed :eq:`equal <g1:< B G K ) = g1:< E H F )>` to :g:`< E H F ) <g1:< E H F )>`.
-
-.. step:: assert [G.105] <G.105>
+.. step:: assert ∵ equal_circles_equal <G.105>
 
    Now equal angles stand on equal circumferences, when they are at the centres
 
@@ -71,7 +68,7 @@ G.106
 
    Therefore it is :eq:`equal <g1:< B G C ) = g1:< E H F )>` to it.
 
-.. step:: assert [G.98] <G.98>
+.. step:: assert ∵ inscribed_angle_theorem <G.98>
 
    The angle at :g:`A <g1:A>` is half of :g:`< B G C ) <g1:< B G C )>`, and the angle at :g:`D <g1:D>` half of :g:`< E H F ) <g1:< E H F )>`
 

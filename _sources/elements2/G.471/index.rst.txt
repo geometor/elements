@@ -24,38 +24,48 @@ G.471
 
    On a given straight line, and at a given point on it, to construct a solid angle equal to a given solid angle.
 
+.. signature:: problem
+
+   | :fn:`straight_line_point <G.471>`\ (:g:`/ A B / <g1:/ A B />`, :g:`A <g1:A>`, :g:`D <g1:D>`, :g:`< E D C ) <g1:< E D C )>`) → :g:`< B A L ) <g1:< B A L )>`
+   | **given** :g:`/ A B / <g1:/ A B />` , :g:`A <g1:A>` on it, the angle at :g:`D <g1:D>`, contained by :g:`< E D C ) <g1:< E D C )>`, :g:`< E D F ) <g1:< E D F )>`, :g:`< F D C ) <g1:< F D C )>`, the given solid angle
+   | **construct** the solid angle at :g:`A <g1:A>`, contained by :g:`< B A L ) <g1:< B A L )>`, :g:`< B A H ) <g1:< B A H )>`, :g:`< H A L ) <g1:< H A L )>` is :eq:`equal <g1:< B A L ) = g1:< E D C ); g1:< B A H ) = g1:< E D F ); g1:< H A L ) = g1:< F D C )>` to the solid angle at :g:`D <g1:D>` contained by :g:`< E D C ) <g1:< E D C )>`, :g:`< E D F ) <g1:< E D F )>`, :g:`< F D C ) <g1:< F D C )>`
+
 .. picture:: g1.svg
    :alt: Proposition 26
 
 .. step:: given
 
-   :g:`/ A B / <g1:/ A B />` , :g:`A <g1:A>` the given point on it, the angle at :g:`D <g1:D>`, contained by :g:`< E D C ) <g1:< E D C )>`, :g:`< E D F ) <g1:< E D F )>`, :g:`< F D C ) <g1:< F D C )>`, the given solid angle
+   :g:`/ A B / <g1:/ A B />` , :g:`A <g1:A>` on it, the angle at :g:`D <g1:D>`, contained by :g:`< E D C ) <g1:< E D C )>`, :g:`< E D F ) <g1:< E D F )>`, :g:`< F D C ) <g1:< F D C )>`, the given solid angle
 
 .. step:: construct
 
-   For let a point :g:`F <g1:F>` be taken at random on :g:`/ D F / <g1:/ D F />`, let :g:`/ F G / <g1:/ F G />` be drawn from :g:`F <g1:F>` perpendicular to the plane through :g:`/ E D / <g1:/ E D />`, :g:`/ D C / <g1:/ D C />`
-
-.. step:: construct [G.454, G.34, G.455] <G.454, G.34, G.455>
-
-   Let it meet the plane at :g:`G <g1:G>`, let :g:`/ D G / <g1:/ D G />` be joined, let there be constructed on :g:`/ A B / <g1:/ A B />` and at :g:`A <g1:A>` on it :g:`< B A L ) <g1:< B A L )>` :eq:`equal <g1:< B A L ) = g1:< E D C )>` to :g:`< E D C ) <g1:< E D C )>`, and :g:`< B A K ) <g1:< B A K )>` :eq:`equal <g1:< B A K ) = g1:< E D G )>` to :g:`< E D G ) <g1:< E D G )>`, let :g:`/ A K / <g1:/ A K />` be made :eq:`equal <g1:/ A K / = g1:/ D G />` to :g:`/ D G / <g1:/ D G />`, let :g:`/ K H / <g1:/ K H />` be set up from :g:`K <g1:K>` at right angles to the plane through :g:`/ B A / <g1:/ B A />`, :g:`/ A L / <g1:/ A L />`, let :g:`/ K H / <g1:/ K H />` be made :eq:`equal <g1:/ K H / = g1:/ G F />` to :g:`/ G F / <g1:/ G F />`
+   **point**\ (:g:`/ D F / <g1:/ D F />`) → :g:`F <g1:F>`
 
 .. step:: construct
 
-   **segment** :g:`/ H A / <g1:/ H A />`
-
-.. step:: assert
-
-   The solid angle at :g:`A <g1:A>`, contained by :g:`< B A L ) <g1:< B A L )>`, :g:`< B A H ) <g1:< B A H )>`, :g:`< H A L ) <g1:< H A L )>` is :eq:`equal <g1:< B A L ) = g1:< E D C ); g1:< B A H ) = g1:< E D F ); g1:< H A L ) = g1:< F D C )>` to the solid angle at :g:`D <g1:D>` contained by :g:`< E D C ) <g1:< E D C )>`, :g:`< E D F ) <g1:< E D F )>`, :g:`< F D C ) <g1:< F D C )>`.
+   :fn:`segment <G.3>`\ (:g:`F <g1:F>`, :g:`G <g1:G>`) → :g:`/ F G / <g1:/ F G />`, :fn:`segment <G.3>`\ () → :g:`F <g1:F>`, :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`D <g1:D>`) → :g:`/ E D / <g1:/ E D />`, :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`C <g1:C>`) → :g:`/ D C / <g1:/ D C />`, :fn:`segment <G.3>`\ () → :g:`G <g1:G>`, :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`G <g1:G>`) → :g:`/ D G / <g1:/ D G />`
 
 .. step:: construct
 
-   For let :g:`/ A B / <g1:/ A B />`, :g:`/ D E / <g1:/ D E />` be cut off :eq:`equal <g1:/ A B / = g1:/ D E />` to one another
+   :fn:`copy_angle <G.34>`: Let there be constructed on :g:`/ A B / <g1:/ A B />` and at :g:`A <g1:A>` on it :g:`< B A L ) <g1:< B A L )>` :eq:`equal <g1:< B A L ) = g1:< E D C )>` to :g:`< E D C ) <g1:< E D C )>`, and :g:`< B A K ) <g1:< B A K )>` :eq:`equal <g1:< B A K ) = g1:< E D G )>` to :g:`< E D G ) <g1:< E D G )>`, let :g:`/ A K / <g1:/ A K />` be made :eq:`equal <g1:/ A K / = g1:/ D G />` to :g:`/ D G / <g1:/ D G />`
 
 .. step:: construct
 
-   **segment** :g:`/ H B / <g1:/ H B />`, :g:`/ K B / <g1:/ K B />`, :g:`/ F E / <g1:/ F E />`, :g:`/ G E / <g1:/ G E />`
+   :fn:`set_straight_line <G.455>`: Let :g:`/ K H / <g1:/ K H />` be set up from :g:`K <g1:K>` at right angles to the plane through :g:`/ B A / <g1:/ B A />`, :g:`/ A L / <g1:/ A L />`, let :g:`/ K H / <g1:/ K H />` be made :eq:`equal <g1:/ K H / = g1:/ G F />` to :g:`/ G F / <g1:/ G F />`
 
-.. step:: assert [G.446] <G.446>
+.. step:: construct
+
+   :fn:`segment <G.3>`\ (:g:`H <g1:H>`, :g:`A <g1:A>`) → :g:`/ H A / <g1:/ H A />`
+
+.. step:: construct
+
+   Let :g:`/ A B / <g1:/ A B />`, :g:`/ D E / <g1:/ D E />` be cut off :eq:`equal <g1:/ A B / = g1:/ D E />` to one another
+
+.. step:: construct
+
+   :fn:`segment <G.3>`\ (:g:`H <g1:H>`, :g:`B <g1:B>`) → :g:`/ H B / <g1:/ H B />`, :fn:`segment <G.3>`\ (:g:`K <g1:K>`, :g:`B <g1:B>`) → :g:`/ K B / <g1:/ K B />`, :fn:`segment <G.3>`\ (:g:`F <g1:F>`, :g:`E <g1:E>`) → :g:`/ F E / <g1:/ F E />`, :fn:`segment <G.3>`\ (:g:`G <g1:G>`, :g:`E <g1:E>`) → :g:`/ G E / <g1:/ G E />`
+
+.. step:: assert ∵ straight_line_right_def <G.446>
 
    Since :g:`/ F G / <g1:/ F G />` is at right angles to the plane of reference, it will also make right angles with all the straight lines which meet it and are in the plane of reference .
 
@@ -71,7 +81,7 @@ G.471
 
    And, since the two sides :g:`/ K A / <g1:/ K A />`, :g:`/ A B / <g1:/ A B />` are :eq:`equal <g1:/ K A / = g1:/ G D /; g1:/ A B / = g1:/ D E />` to the two sides :g:`/ G D / <g1:/ G D />`, :g:`/ D E / <g1:/ D E />` respectively, and they contain equal angles,
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    Therefore the base :g:`/ K B / <g1:/ K B />` is :eq:`equal <g1:/ K B / = g1:/ G E />` to the base :g:`/ G E / <g1:/ G E />`.
 
@@ -79,7 +89,7 @@ G.471
 
    :g:`/ K H / <g1:/ K H />` is also :eq:`equal <g1:/ K H / = g1:/ G F />` to :g:`/ G F / <g1:/ G F />`, and they contain right angles ;
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    Therefore :g:`/ H B / <g1:/ H B />` is also :eq:`equal <g1:/ H B / = g1:/ F E />` to :g:`/ F E / <g1:/ F E />`.
 
@@ -87,7 +97,7 @@ G.471
 
    Since the two sides :g:`/ A K / <g1:/ A K />`, :g:`/ K H / <g1:/ K H />` are :eq:`equal <g1:/ A K / = g1:/ D G /; g1:/ K H / = g1:/ G F />` to the two sides :g:`/ D G / <g1:/ D G />`, :g:`/ G F / <g1:/ G F />`, and they contain right angles,
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    Therefore the base :g:`/ A H / <g1:/ A H />` is :eq:`equal <g1:/ A H / = g1:/ F D />` to the base :g:`/ F D / <g1:/ F D />`.
 
@@ -103,7 +113,7 @@ G.471
 
    The base :g:`/ H B / <g1:/ H B />` is :eq:`equal <g1:/ H B / = g1:/ F E />` to the base :g:`/ F E / <g1:/ F E />` ;
 
-.. step:: assert [G.15] <G.15>
+.. step:: assert ∵ sss_congruence <G.15>
 
    Therefore :g:`< B A H ) <g1:< B A H )>` is :eq:`equal <g1:< B A H ) = g1:< E D F )>` to :g:`< E D F ) <g1:< E D F )>`.
 

@@ -24,16 +24,18 @@ G.158
 
    If there be three magnitudes, and others equal to them in multitude, which taken two and two together are in the same ratio, and the proportion of them be perturbed, then, if ex aequali the first magnitude is greater than the third, the fourth is greater than the sixth; if equal, equal; and if less, less.
 
+.. signature:: theorem
+
+   | :fn:`there_magnitudes_others_v_21 <G.158>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`)
+   | **given** there be three magnitudes :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, others :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`F <g1:F>` equal to them in multitude, which taken two and two are in the same ratio, let the proportion of them be perturbed, so that
+   | **prove** :g:`D <g1:D>` will also be greater than :g:`F <g1:F>`
+
 .. picture:: g1.svg
    :alt: Proposition 21
 
 .. step:: given
 
-   there be three magnitudes :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, others :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`F <g1:F>` equal to them in multitude, which taken two and two are in the same ratio
-
-.. step:: assert
-
-   Let the proportion of them be perturbed, so that,
+   there be three magnitudes :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, others :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`F <g1:F>` equal to them in multitude, which taken two and two are in the same ratio, let the proportion of them be perturbed, so that
 
 .. step:: assert
 
@@ -55,7 +57,7 @@ G.158
 
    And if less, less.
 
-.. step:: assert [G.145] <G.145>
+.. step:: assert ∵ unequal_magnitudes_greater <G.145>
 
    Since :g:`A <g1:A>` is greater than :g:`C <g1:C>`, and :g:`B <g1:B>` is some other magnitude → therefore :g:`A <g1:A>` has to :g:`B <g1:B>` a greater ratio than :g:`C <g1:C>` has to :g:`B <g1:B>`.
 
@@ -63,11 +65,11 @@ G.158
 
    But, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`E <g1:E>` to :g:`F <g1:F>`, and, as :g:`C <g1:C>` is to :g:`B <g1:B>`, inversely, so is :g:`E <g1:E>` to :g:`D <g1:D>`.
 
-.. step:: assert [G.150] <G.150>
+.. step:: assert ∵ magnitude_ratio_greater <G.150>
 
    Therefore also :g:`E <g1:E>` has to :g:`F <g1:F>` a greater ratio than :g:`E <g1:E>` has to :g:`D <g1:D>`.
 
-.. step:: assert [G.147] <G.147>
+.. step:: assert ∵ magnitudes_ratio_greater <G.147>
 
    That to which the same has a greater ratio is less;
 

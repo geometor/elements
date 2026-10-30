@@ -24,38 +24,43 @@ G.515
 
    If in an equilateral and equiangular pentagon straight lines subtend two angles taken in order, they cut one another in extreme and mean ratio, and their greater segments are equal to the side of the pentagon.
 
+.. signature:: theorem
+
+   | :fn:`equilateral_equiangular_pentagon <G.515>`\ ()
+   | **prove** each of them has been cut in extreme and mean ratio at :g:`H <g1:H>`, and their greater segments are equal to the side of the pentagon
+
 .. picture:: g1.svg
    :alt: Book XIII, Proposition 8
 
 .. step:: assert
 
-   For in the :eq:`equilateral <g1:/ A B / = g1:/ B C / = g1:/ C D / = g1:/ D E / = g1:/ E A />` and equiangular pentagon :g:`< A B C D E > <g1:< A B C D E >>` let :g:`/ A C / <g1:/ A C />`, :g:`/ B E / <g1:/ B E />`, cutting one another at :g:`H <g1:H>`, subtend two angles taken in order, the angles at :g:`A <g1:A>`, :g:`B <g1:B>`
+   In the :eq:`equilateral <g1:/ A B / = g1:/ B C / = g1:/ C D / = g1:/ D E / = g1:/ E A />` and equiangular pentagon :g:`< A B C D E > <g1:< A B C D E >>` let :g:`/ A C / <g1:/ A C />`, :g:`/ B E / <g1:/ B E />`, cutting one another at :g:`H <g1:H>`, subtend two angles taken in order, the angles at :g:`A <g1:A>`, :g:`B <g1:B>`
 
-.. step:: assert [G.132] <G.132>
+.. step:: construct
 
-   For let :g:`( A B C D E ) <g1:( A B C D E )>` be circumscribed about the pentagon :g:`< A B C D E > <g1:< A B C D E >>`.
+   :fn:`pentagon_equilateral_equiangular_iv_14 <G.132>`: Let :g:`( A B C D E ) <g1:( A B C D E )>` be circumscribed about the pentagon :g:`< A B C D E > <g1:< A B C D E >>`.
 
 .. step:: assert
 
    Since :g:`/ E A / <g1:/ E A />`, :g:`/ A B / <g1:/ A B />` are :eq:`equal <g1:/ E A / = g1:/ A B / = g1:/ B C />` to the two :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, and they contain equal angles,
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    Therefore the base :g:`/ B E / <g1:/ B E />` is :eq:`equal <g1:/ B E / = g1:/ A C />` to the base :g:`/ A C / <g1:/ A C />`, :g:`< A B E > <g1:< A B E >>` is :eq:`equal <g1:< A B E > = g1:< A B C >>` to :g:`< A B C > <g1:< A B C >>`, and the remaining angles will be equal to the remaining angles respectively, namely those which the equal sides subtend.
 
-.. step:: assert [G.45] <G.45>
+.. step:: assert ∵ triangle_angle_sum <G.45>
 
    Therefore :g:`< B A C ) <g1:< B A C )>` is :eq:`equal <g1:< B A C ) = g1:< A B E )>` to :g:`< A B E ) <g1:< A B E )>`; therefore :g:`< A H E ) <g1:< A H E )>` is double of :g:`< B A H ) <g1:< B A H )>`.
 
-.. step:: assert [G.107, G.198] <G.107, G.198>
+.. step:: assert ∵ equal_circles_equal_iii_28, equal_circles_angles_vi_33 <G.107, G.198>
 
    :g:`< E A C ) <g1:< E A C )>` is also double of :g:`< B A C ) <g1:< B A C )>`, inasmuch as the circumference :g:`( E D C ) <g1:( E D C )>` is also double of the circumference :g:`( C B ) <g1:( C B )>`.
 
-.. step:: assert [G.13] <G.13>
+.. step:: assert ∵ equal_angles_isosceles <G.13>
 
    Therefore :g:`< H A E ) <g1:< H A E )>` is :eq:`equal <g1:< H A E ) = g1:< A H E )>` to :g:`< A H E ) <g1:< A H E )>`; hence :g:`/ H E / <g1:/ H E />` is also :eq:`equal <g1:/ H E / = g1:/ E A / = g1:/ A B />` to :g:`/ E A / <g1:/ E A />`, that is, to :g:`/ A B / <g1:/ A B />`.
 
-.. step:: assert [G.12] <G.12>
+.. step:: assert ∵ isosceles_base_angles <G.12>
 
    And, since :g:`/ B A / <g1:/ B A />` is :eq:`equal <g1:/ B A / = g1:/ A E />` to :g:`/ A E / <g1:/ A E />`, :g:`< A B E ) <g1:< A B E )>` is also :eq:`equal <g1:< A B E ) = g1:< A E B )>` to :g:`< A E B ) <g1:< A E B )>`.
 
@@ -71,7 +76,7 @@ G.515
 
    :g:`< A B E ) <g1:< A B E )>` is common to the two triangles :g:`< A B E > <g1:< A B E >>` and :g:`< A B H > <g1:< A B H >>`;
 
-.. step:: assert [G.45, G.166] <G.45, G.166>
+.. step:: assert ∵ triangle_angle_sum, equiangular_triangles_sides <G.45, G.166>
 
    Therefore the remaining angle :g:`< B A E ) <g1:< B A E )>` is :eq:`equal <g1:< B A E ) = g1:< A H B )>` to the remaining angle :g:`< A H B ) <g1:< A H B )>`; therefore :g:`< A B E > <g1:< A B E >>` is equiangular with :g:`< A B H > <g1:< A B H >>`; therefore, proportionally, as :g:`/ E B / <g1:/ E B />` is to :g:`/ B A / <g1:/ B A />`, so is :g:`/ A B / <g1:/ A B />` to :g:`/ B H / <g1:/ B H />`.
 
@@ -87,7 +92,7 @@ G.515
 
    :g:`/ B E / <g1:/ B E />` is greater than :g:`/ E H / <g1:/ E H />`;
 
-.. step:: assert [G.151] <G.151>
+.. step:: assert ∵ magnitude_ratio_greater_v_14 <G.151>
 
    Therefore :g:`/ E H / <g1:/ E H />` is also greater than :g:`/ H B / <g1:/ H B />`.
 

@@ -24,12 +24,21 @@ G.152
 
    Parts have the same ratio as the same multiples of them taken in corresponding order.
 
+.. signature:: theorem
+
+   | :fn:`parts_ratio_multiples <G.152>`\ ()
+   | **prove** as :g:`C <g1:C>` is to :g:`F <g1:F>`, so is :g:`/ A B / <g1:/ A B />` to :g:`/ D E / <g1:/ D E />`
+
 .. picture:: g1.svg
    :alt: Proposition 15 diagram
 
 .. step:: assert
 
-   For let :g:`/ A B / <g1:/ A B />` be the same multiple of :g:`C <g1:C>` that :g:`/ D E / <g1:/ D E />` is of :g:`F <g1:F>`
+   Let :g:`/ A B / <g1:/ A B />` be the same multiple of :g:`C <g1:C>` that :g:`/ D E / <g1:/ D E />` is of :g:`F <g1:F>`
+
+.. step:: assert
+
+   I say that, as :g:`C <g1:C>` is to :g:`F <g1:F>`, so is :g:`/ A B / <g1:/ A B />` to :g:`/ D E / <g1:/ D E />`.
 
 .. step:: assert
 
@@ -47,11 +56,11 @@ G.152
 
    And, since :g:`/ A G / <g1:/ A G />`, :g:`/ G H / <g1:/ G H />`, :g:`/ H B / <g1:/ H B />` are :eq:`equal <g1:/ A G / = g1:/ G H / = g1:/ H B />` to one another, and :g:`/ D K / <g1:/ D K />`, :g:`/ K L / <g1:/ K L />`, :g:`/ L E / <g1:/ L E />` are also :eq:`equal <g1:/ D K / = g1:/ K L / = g1:/ L E />` to one another,
 
-.. step:: assert [G.142] <G.142>
+.. step:: assert ∵ equal_magnitudes_ratio <G.142>
 
    Therefore, as :g:`/ A G / <g1:/ A G />` is to :g:`/ D K / <g1:/ D K />`, so is :g:`/ G H / <g1:/ G H />` to :g:`/ K L / <g1:/ K L />`, and :g:`/ H B / <g1:/ H B />` to :g:`/ L E / <g1:/ L E />`.
 
-.. step:: assert [G.149] <G.149>
+.. step:: assert ∵ number_magnitudes_proportional <G.149>
 
    Therefore, as one of the antecedents is to one of the consequents, so will all the antecedents be to all the consequents
 

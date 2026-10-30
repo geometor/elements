@@ -23,6 +23,10 @@ G.18
 
    When a straight line standing on a straight line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing line is perpendicular to that on which it stands.
 
+.. signature:: def
+
+   | :fn:`right_angle_perpendicular <G.18>`
+
 Required for
 ------------
 

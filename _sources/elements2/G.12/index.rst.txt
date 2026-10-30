@@ -24,6 +24,12 @@ G.12
 
    In an isosceles triangle, the angles at the base are equal, and if the equal sides are extended, the angles under the base are equal.
 
+.. signature:: theorem
+
+   | :fn:`isosceles_base_angles <G.12>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />`)
+   | **given** :g:`< A B C > <g1:< A B C >>` be an :eq:`isosceles <g1:/ A B / = g1:/ A C />` triangle having the side :g:`/ A B / <g1:/ A B />` :eq:`equal <g1:/ A B / = g1:/ A C />` to the side :g:`/ A C / <g1:/ A C />`
+   | **prove** :g:`< A B C ) <g1:< A B C )>` is :eq:`equal <g1:< A B C ) = g1:< A C B ); g1:< C B D ) = g1:< B C E )>` to :g:`< A C B ) <g1:< A C B )>`, and :g:`< C B D ) <g1:< C B D )>` to :g:`< B C E ) <g1:< B C E )>`
+
 .. picture:: g1.svg
    :alt: Proposition 5 figure
 
@@ -31,25 +37,21 @@ G.12
 
    :g:`< A B C > <g1:< A B C >>` be an :eq:`isosceles <g1:/ A B / = g1:/ A C />` triangle having the side :g:`/ A B / <g1:/ A B />` :eq:`equal <g1:/ A B / = g1:/ A C />` to the side :g:`/ A C / <g1:/ A C />`
 
-.. step:: construct [G.7] <G.7>
+.. step:: construct
 
-   And let :g:`/ B D / <g1:/ B D />`, :g:`/ C E / <g1:/ C E />` be produced further in a straight line with :g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />`.
-
-.. step:: assert
-
-   :g:`< A B C ) <g1:< A B C )>` is :eq:`equal <g1:< A B C ) = g1:< A C B ); g1:< C B D ) = g1:< B C E )>` to :g:`< A C B ) <g1:< A C B )>`, and :g:`< C B D ) <g1:< C B D )>` to :g:`< B C E ) <g1:< B C E )>`.
+   :fn:`extend <G.7>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />`) → :g:`/ B D / <g1:/ B D />`, :g:`/ C E / <g1:/ C E />`
 
 .. step:: construct
 
-   **point** :g:`F <g1:F>` on :g:`/ B D / <g1:/ B D />`
+   **point**\ (:g:`/ B D / <g1:/ B D />`) → :g:`F <g1:F>`
 
-.. step:: construct [G.9] <G.9>
+.. step:: construct
 
-   From :g:`/ A E / <g1:/ A E />` the greater let :g:`/ A G / <g1:/ A G />` be cut off :eq:`equal <g1:/ A G / = g1:/ A F />` to :g:`/ A F / <g1:/ A F />` the less
+   :fn:`cut_equal_segment <G.9>`\ (:g:`/ A E / <g1:/ A E />`, :g:`/ A F / <g1:/ A F />`) → :g:`/ A G / <g1:/ A G />` (:eq:`equal <g1:/ A G / = g1:/ A F />`)
 
-.. step:: construct [G.3] <G.3>
+.. step:: construct
 
-   **segment** :g:`/ F C / <g1:/ F C />`, :g:`/ G B / <g1:/ G B />`
+   :fn:`segment <G.3>`\ (:g:`F <g1:F>`, :g:`C <g1:C>`) → :g:`/ F C / <g1:/ F C />`, :fn:`segment <G.3>`\ (:g:`G <g1:G>`, :g:`B <g1:B>`) → :g:`/ G B / <g1:/ G B />`
 
 .. step:: assert
 
@@ -71,7 +73,7 @@ G.12
 
    That is, :g:`< A C F ) <g1:< A C F )>` to :g:`< A B G ) <g1:< A B G )>`,
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    And :g:`< A F C ) <g1:< A F C )>` to :g:`< A G B ) <g1:< A G B )>`.
 

@@ -23,6 +23,10 @@ G.210
 
    **Numbers** are:term:`**proportional** <proportional>` when the first is the same multiple, or the same part, or the same parts, of the second that the third is of the fourth.
 
+.. signature:: def
+
+   | :fn:`numbers_proportional_multiple_def <G.210>`
+
 Required for
 ------------
 

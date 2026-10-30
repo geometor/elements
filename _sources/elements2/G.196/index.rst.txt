@@ -24,6 +24,12 @@ G.196
 
    In right-angled triangles the figure on the side subtending the right angle is equal to the similar and similarly described figures on the sides containing the right angle.
 
+.. signature:: theorem
+
+   | :fn:`right_angled_triangles <G.196>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`< B A C ) <g1:< B A C )>`)
+   | **given** :g:`< A B C > <g1:< A B C >>` be a right-angled triangle having :g:`< B A C ) <g1:< B A C )>` :eq:`right <g1:< B A C )>`
+   | **prove** the figure on :g:`/ B C / <g1:/ B C />` is equal to the similar and similarly described figures on :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />`
+
 .. picture:: g1.svg
    :alt: Proposition 31
 
@@ -43,7 +49,7 @@ G.196
 
    Been drawn from the right angle at :g:`A <g1:A>` :eq:`perpendicular <g1:/ A D / = g1:/ B C />` to the base :g:`/ B C / <g1:/ B C />`,
 
-.. step:: assert [G.171] <G.171>
+.. step:: assert ∵ right_angled_triangle <G.171>
 
    :g:`< A B D > <g1:< A B D >>`, :g:`< A D C > <g1:< A D C >>` adjoining the perpendicular are similar both to the whole :g:`< A B C > <g1:< A B C >>` and to one another.
 
@@ -51,11 +57,11 @@ G.196
 
    And, since :g:`< A B C > <g1:< A B C >>` is similar to :g:`< A B D > <g1:< A B D >>`,
 
-.. step:: assert [G.170] <G.170>
+.. step:: assert ∵ similar_polygons_angles_def <G.170>
 
    Therefore, as :g:`/ C B / <g1:/ C B />` is to :g:`/ B A / <g1:/ B A />`, so is :g:`/ A B / <g1:/ A B />` to :g:`/ B D / <g1:/ B D />`.
 
-.. step:: assert [G.184] <G.184>
+.. step:: assert ∵ similar_triangles_duplicate <G.184>
 
    And, since three straight lines are proportional, as the first is to the third, so is the figure on the first to the similar and similarly described figure on the second.
 

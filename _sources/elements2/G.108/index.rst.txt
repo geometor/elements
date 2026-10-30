@@ -24,28 +24,25 @@ G.108
 
    In equal circles equal circumferences are subtended by equal straight lines.
 
+.. signature:: theorem
+
+   | :fn:`equal_circles_equal_iii_29 <G.108>`\ ()
+   | **prove** :g:`/ B C / <g1:/ B C />` is :eq:`equal <g1:/ B C / = g1:/ E F />` to :g:`/ E F / <g1:/ E F />`
+
 .. picture:: g1.svg
    :alt: Diagram
 
-.. step:: given
+.. step:: construct
 
-   :g:`( A B C ) <g1:( A B C )>`, :g:`( D E F ) <g1:( D E F )>` be :eq:`equal <g1:( A B C ) = g1:( D E F )>` circles
+   Let :g:`( A B C ) <g1:( A B C )>`, :g:`( D E F ) <g1:( D E F )>` be :eq:`equal <g1:( A B C ) = g1:( D E F )>` circles, and in them let :eq:`equal <g1:( B G C ) = g1:( E H F )>` circumferences :g:`( B G C ) <g1:( B G C )>`, :g:`( E H F ) <g1:( E H F )>` be cut off
 
 .. step:: construct
 
-   In them let :eq:`equal <g1:( B G C ) = g1:( E H F )>` circumferences :g:`( B G C ) <g1:( B G C )>`, :g:`( E H F ) <g1:( E H F )>` be cut off
+   :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`C <g1:C>`) → :g:`/ B C / <g1:/ B C />`, :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`F <g1:F>`) → :g:`/ E F / <g1:/ E F />`
 
 .. step:: construct
 
-   **segment** :g:`/ B C / <g1:/ B C />`, :g:`/ E F / <g1:/ E F />`
-
-.. step:: assert
-
-   :g:`/ B C / <g1:/ B C />` is :eq:`equal <g1:/ B C / = g1:/ E F />` to :g:`/ E F / <g1:/ E F />`.
-
-.. step:: construct
-
-   For let the centres of the circles be taken
+   Let the centres of the circles be taken
 
 .. step:: assert
 
@@ -53,9 +50,9 @@ G.108
 
 .. step:: construct
 
-   **segment** :g:`/ B K / <g1:/ B K />`, :g:`/ K C / <g1:/ K C />`, :g:`/ E L / <g1:/ E L />`, :g:`/ L F / <g1:/ L F />`
+   :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`K <g1:K>`) → :g:`/ B K / <g1:/ B K />`, :fn:`segment <G.3>`\ (:g:`K <g1:K>`, :g:`C <g1:C>`) → :g:`/ K C / <g1:/ K C />`, :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`L <g1:L>`) → :g:`/ E L / <g1:/ E L />`, :fn:`segment <G.3>`\ (:g:`L <g1:L>`, :g:`F <g1:F>`) → :g:`/ L F / <g1:/ L F />`
 
-.. step:: assert [G.106] <G.106>
+.. step:: assert ∵ equal_circles_angles <G.106>
 
    Since the circumference :g:`( B G C ) <g1:( B G C )>` is :eq:`equal <g1:( B G C ) = g1:( E H F )>` to the circumference :g:`( E H F ) <g1:( E H F )>` → :g:`< B K C ) <g1:< B K C )>` is also :eq:`equal <g1:< B K C ) = g1:< E L F )>` to :g:`< E L F ) <g1:< E L F )>`.
 
@@ -75,7 +72,7 @@ G.108
 
    And they contain :eq:`equal <g1:< B K C ) = g1:< E L F )>` angles
 
-.. step:: conclude [G.11] <G.11>
+.. step:: conclude ∵ sas_congruence <G.11>
 
    Therefore the base :g:`/ B C / <g1:/ B C />` is :eq:`equal <g1:/ B C / = g1:/ E F />` to the base :g:`/ E F / <g1:/ E F />`.
 

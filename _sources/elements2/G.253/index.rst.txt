@@ -24,28 +24,26 @@ G.253
 
    Between two cube numbers there are two mean proportional numbers, and the cube has to the cube the ratio triplicate of that which the side has to the side.
 
+.. signature:: theorem
+
+   | :fn:`cube_numbers_there <G.253>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`)
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>` be cube numbers, let :g:`C <g1:C>` be the side of :g:`A <g1:A>`, :g:`D <g1:D>` of :g:`B <g1:B>`
+   | **prove** between :g:`A <g1:A>`, :g:`B <g1:B>` there are two mean proportional numbers, and :g:`A <g1:A>` has to :g:`B <g1:B>` the ratio triplicate of that which :g:`C <g1:C>` has to :g:`D <g1:D>`
+
 .. picture:: g1.svg
    :alt: Book VIII, Proposition 12
 
 .. step:: given
 
-   :g:`A <g1:A>`, :g:`B <g1:B>` be cube numbers
+   :g:`A <g1:A>`, :g:`B <g1:B>` be cube numbers, let :g:`C <g1:C>` be the side of :g:`A <g1:A>`, :g:`D <g1:D>` of :g:`B <g1:B>`
 
 .. step:: assert
 
-   Let :g:`C <g1:C>` be the side of :g:`A <g1:A>`, and :g:`D <g1:D>` of :g:`B <g1:B>`
+   Let :g:`C <g1:C>` by multiplying itself make :g:`E <g1:E>`, and by multiplying :g:`D <g1:D>` let it make :g:`F <g1:F>`
 
 .. step:: assert
 
-   For let :g:`C <g1:C>` by multiplying itself make :g:`E <g1:E>`, and by multiplying :g:`D <g1:D>` let it make :g:`F <g1:F>`
-
-.. step:: assert
-
-   Let :g:`D <g1:D>` by multiplying itself make :g:`G <g1:G>`
-
-.. step:: assert
-
-   Let the numbers :g:`C <g1:C>`, :g:`D <g1:D>` by multiplying :g:`F <g1:F>` make :g:`H <g1:H>`, :g:`K <g1:K>` respectively.
+   Let :g:`D <g1:D>` by multiplying itself make :g:`G <g1:G>`, and let the numbers :g:`C <g1:C>`, :g:`D <g1:D>` by multiplying :g:`F <g1:F>` make :g:`H <g1:H>`, :g:`K <g1:K>` respectively.
 
 .. step:: assert
 
@@ -67,7 +65,7 @@ G.253
 
    And, since :g:`C <g1:C>` by multiplying the numbers :g:`C <g1:C>`, :g:`D <g1:D>` has made :g:`E <g1:E>`, :g:`F <g1:F>` respectively,
 
-.. step:: assert [G.217] <G.217>
+.. step:: assert ∵ number_multiplying_numbers <G.217>
 
    Therefore, as :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`E <g1:E>` to :g:`F <g1:F>`.
 
@@ -75,7 +73,7 @@ G.253
 
    For the same reason also,
 
-.. step:: assert [G.218] <G.218>
+.. step:: assert ∵ numbers_multiplying_number <G.218>
 
    As :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`F <g1:F>` to :g:`G <g1:G>`.
 
@@ -83,7 +81,7 @@ G.253
 
    Since :g:`C <g1:C>` by multiplying the numbers :g:`E <g1:E>`, :g:`F <g1:F>` has made :g:`A <g1:A>`, :g:`H <g1:H>` respectively,
 
-.. step:: assert [G.217] <G.217>
+.. step:: assert ∵ number_multiplying_numbers <G.217>
 
    Therefore, as :g:`E <g1:E>` is to :g:`F <g1:F>`, so is :g:`A <g1:A>` to :g:`H <g1:H>`.
 
@@ -99,7 +97,7 @@ G.253
 
    Since the numbers :g:`C <g1:C>`, :g:`D <g1:D>` by multiplying :g:`F <g1:F>` have made :g:`H <g1:H>`, :g:`K <g1:K>` respectively,
 
-.. step:: assert [G.218] <G.218>
+.. step:: assert ∵ numbers_multiplying_number <G.218>
 
    Therefore, as :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`H <g1:H>` to :g:`K <g1:K>`.
 
@@ -107,7 +105,7 @@ G.253
 
    Since :g:`D <g1:D>` by multiplying each of the numbers :g:`F <g1:F>`, :g:`G <g1:G>` has made :g:`K <g1:K>`, :g:`B <g1:B>` respectively,
 
-.. step:: assert [G.217] <G.217>
+.. step:: assert ∵ number_multiplying_numbers <G.217>
 
    Therefore, as :g:`F <g1:F>` is to :g:`G <g1:G>`, so is :g:`K <g1:K>` to :g:`B <g1:B>`.
 
@@ -131,7 +129,7 @@ G.253
 
    Since :g:`A <g1:A>`, :g:`H <g1:H>`, :g:`K <g1:K>`, :g:`B <g1:B>` are four numbers in proportion,
 
-.. step:: assert [G.252] <G.252>
+.. step:: assert ∵ magnitudes_proportional_said_def_v_def_10 <G.252>
 
    Therefore :g:`A <g1:A>` has to :g:`B <g1:B>` the ratio triplicate of that which :g:`A <g1:A>` has to :g:`H <g1:H>`.
 

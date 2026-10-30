@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=156d9f89" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=3d8cc37d" />
   <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -49,7 +49,7 @@
           <a href="../../log/index.html"  >log</a>
         </li>
         <li>
-          <a href="../index.html"  >Elements 2.0 (G Index)</a>
+          <a href="../index.html" class="is-active" aria-selected="true" >Elements 2.0 (G Index)</a>
         </li>
       </ul>
     </nav>
@@ -92,6 +92,13 @@
         <span id="g-104"></span><span id="id1"></span><h1>G.104<a class="headerlink" href="#iii-25" title="Link to this heading">¶</a></h1>
         <p class="rubric"><a class="reference external" href="https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/25/" title="III.25: Given a segment of a circle, to describe the complete circle of which it is a segment.">III.25</a></p>
         <div class="enunciation">Given a segment of a circle, to describe the complete circle of which it is a segment.</div>
+        <div class="geom-signature geom-signature-problem">
+        <div class="line-block">
+        <div class="line"><span class="geom-fn geom-fn-def" data-ref-target="G.104" title="G.104: Given a segment of a circle, to describe the complete circle of which it is a segment.">segment_circle_describe</span>(<span class="geom-ref" data-ref="g1:( A B C )" title="( A B C )">( A B C )</span>) → <span class="geom-ref" data-ref="g1:/ E C /" title="/ E C /">/ E C /</span></div>
+        <div class="line"><strong>given</strong> <span class="geom-ref" data-ref="g1:( A B C )" title="( A B C )">( A B C )</span> of a circle</div>
+        <div class="line"><strong>construct</strong> given a segment of a circle, the complete circle has been described</div>
+        </div>
+        </div>
         <figure class="photon-picture photon-svg">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -6 181 191" width="181" height="191" class="euclid-graphic" data-graphic-id="g1" data-graphic="g1" data-proposition="III.25">
           <defs>
@@ -314,23 +321,22 @@
           </g>
         </svg>
         </figure>
-        <div class="geom-step geom-step-given" data-step-kind="given"><span class="geom-step-badge geom-badge-given">given</span> <span class="geom-ref" data-ref="g1:( A B C )" title="( A B C )">( A B C )</span> be the given segment of a circle</div>
-        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> For let <span class="geom-ref" data-ref="g1:/ A C /" title="/ A C /">/ A C /</span> be <span class="geom-eq-ref" data-assert-equal="g1:/ A D / = g1:/ D C /" title="/ A D / = / D C /">bisected</span> at <span class="geom-ref" data-ref="g1:D" title="D">D</span>, let <span class="geom-ref" data-ref="g1:/ D B /" title="/ D B /">/ D B /</span> be drawn from <span class="geom-ref" data-ref="g1:D" title="D">D</span> at right angles to <span class="geom-ref" data-ref="g1:/ A C /" title="/ A C /">/ A C /</span></div>
-        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> <strong>segment</strong> <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span></div>
+        <div class="geom-step geom-step-given" data-step-kind="given"><span class="geom-step-badge geom-badge-given">given</span> <span class="geom-ref" data-ref="g1:( A B C )" title="( A B C )">( A B C )</span> of a circle</div>
+        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> Let <span class="geom-ref" data-ref="g1:/ A C /" title="/ A C /">/ A C /</span> be <span class="geom-eq-ref" data-assert-equal="g1:/ A D / = g1:/ D C /" title="/ A D / = / D C /">bisected</span> at <span class="geom-ref" data-ref="g1:D" title="D">D</span>, let <span class="geom-ref" data-ref="g1:/ D B /" title="/ D B /">/ D B /</span> be drawn from <span class="geom-ref" data-ref="g1:D" title="D">D</span> at right angles to <span class="geom-ref" data-ref="g1:/ A C /" title="/ A C /">/ A C /</span></div>
+        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> <a class="geom-fn" href="../G.3/index.html#g-3" data-ref-target="G.3" title="G.3: Construct a segment between any two points.">segment</a>(<span class="geom-ref" data-ref="g1:A" title="A">A</span>, <span class="geom-ref" data-ref="g1:B" title="B">B</span>) → <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span></div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> <span class="geom-ref" data-ref="g1:&lt; A B D )" title="&lt; A B D )">&lt; A B D )</span> is then greater than, equal to, or less than <span class="geom-ref" data-ref="g1:&lt; B A D )" title="&lt; B A D )">&lt; B A D )</span>.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> First let it be greater</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> And on <span class="geom-ref" data-ref="g1:/ B A /" title="/ B A /">/ B A /</span></div>
-        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> At <span class="geom-ref" data-ref="g1:A" title="A">A</span> on it, let <span class="geom-ref" data-ref="g1:&lt; B A E )" title="&lt; B A E )">&lt; B A E )</span> be constructed <span class="geom-eq-ref" data-assert-equal="g1:&lt; B A E ) = g1:&lt; A B D )" title="&lt; B A E ) = &lt; A B D )">equal</span> to <span class="geom-ref" data-ref="g1:&lt; A B D )" title="&lt; A B D )">&lt; A B D )</span></div>
-        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> Let <span class="geom-ref" data-ref="g1:/ D B /" title="/ D B /">/ D B /</span> be drawn through to <span class="geom-ref" data-ref="g1:E" title="E">E</span></div>
-        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> <strong>segment</strong> <span class="geom-ref" data-ref="g1:/ E C /" title="/ E C /">/ E C /</span></div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><a class="justification" href="../G.13/index.html#g-13" data-ref-target="G.13" title="G.13: If two angles of a triangle are equal, the sides subtending the equal angles are also equal.">[G.13]</a><span class="geom-step-badge geom-badge-assert">assert</span> Since <span class="geom-ref" data-ref="g1:&lt; A B E )" title="&lt; A B E )">&lt; A B E )</span> is <span class="geom-eq-ref" data-assert-equal="g1:&lt; A B E ) = g1:&lt; B A E )" title="&lt; A B E ) = &lt; B A E )">equal</span> to <span class="geom-ref" data-ref="g1:&lt; B A E )" title="&lt; B A E )">&lt; B A E )</span>, <span class="geom-ref" data-ref="g1:/ E B /" title="/ E B /">/ E B /</span> is also <span class="geom-eq-ref" data-assert-equal="g1:/ E B / = g1:/ E A /" title="/ E B / = / E A /">equal</span> to <span class="geom-ref" data-ref="g1:/ E A /" title="/ E A /">/ E A /</span>.</div>
+        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> <a class="geom-fn" href="../G.34/index.html#g-34" data-ref-target="G.34" title="G.34: Construct on a given line at a given point an angle equal to a given angle.">copy_angle</a>(<span class="geom-ref" data-ref="g1:/ B A /" title="/ B A /">/ B A /</span>, <span class="geom-ref" data-ref="g1:A" title="A">A</span>, <span class="geom-ref" data-ref="g1:&lt; A B D )" title="&lt; A B D )">&lt; A B D )</span>) → <span class="geom-ref" data-ref="g1:&lt; B A E )" title="&lt; B A E )">&lt; B A E )</span> (<span class="geom-eq-ref" data-assert-equal="g1:&lt; B A E ) = g1:&lt; A B D )" title="&lt; B A E ) = &lt; A B D )">equal</span>)</div>
+        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> <a class="geom-fn" href="../G.7/index.html#g-7" data-ref-target="G.7" title="G.7: Extend a finite segment continuously in a straight line.">extend</a>(<span class="geom-ref" data-ref="g1:/ D B /" title="/ D B /">/ D B /</span>) → <span class="geom-ref" data-ref="g1:E" title="E">E</span></div>
+        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> <a class="geom-fn" href="../G.3/index.html#g-3" data-ref-target="G.3" title="G.3: Construct a segment between any two points.">segment</a>(<span class="geom-ref" data-ref="g1:E" title="E">E</span>, <span class="geom-ref" data-ref="g1:C" title="C">C</span>) → <span class="geom-ref" data-ref="g1:/ E C /" title="/ E C /">/ E C /</span></div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.13/index.html#g-13" data-ref-target="G.13" title="G.13: If two angles of a triangle are equal, the sides subtending the equal angles are also equal.">equal_angles_isosceles</a></span><span class="geom-step-badge geom-badge-assert">assert</span> Since <span class="geom-ref" data-ref="g1:&lt; A B E )" title="&lt; A B E )">&lt; A B E )</span> is <span class="geom-eq-ref" data-assert-equal="g1:&lt; A B E ) = g1:&lt; B A E )" title="&lt; A B E ) = &lt; B A E )">equal</span> to <span class="geom-ref" data-ref="g1:&lt; B A E )" title="&lt; B A E )">&lt; B A E )</span>, <span class="geom-ref" data-ref="g1:/ E B /" title="/ E B /">/ E B /</span> is also <span class="geom-eq-ref" data-assert-equal="g1:/ E B / = g1:/ E A /" title="/ E B / = / E A /">equal</span> to <span class="geom-ref" data-ref="g1:/ E A /" title="/ E A /">/ E A /</span>.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> And, since <span class="geom-ref" data-ref="g1:/ A D /" title="/ A D /">/ A D /</span> is <span class="geom-eq-ref" data-assert-equal="g1:/ A D / = g1:/ D C /" title="/ A D / = / D C /">equal</span> to <span class="geom-ref" data-ref="g1:/ D C /" title="/ D C /">/ D C /</span>, and <span class="geom-ref" data-ref="g1:/ D E /" title="/ D E /">/ D E /</span> is common, the two sides <span class="geom-ref" data-ref="g1:/ A D /" title="/ A D /">/ A D /</span>, <span class="geom-ref" data-ref="g1:/ D E /" title="/ D E /">/ D E /</span> are <span class="geom-eq-ref" data-assert-equal="g1:/ A D / = g1:/ C D /" title="/ A D / = / C D /">equal</span> to the two sides <span class="geom-ref" data-ref="g1:/ C D /" title="/ C D /">/ C D /</span>, <span class="geom-ref" data-ref="g1:/ D E /" title="/ D E /">/ D E /</span> respectively</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> And <span class="geom-ref" data-ref="g1:&lt; A D E )" title="&lt; A D E )">&lt; A D E )</span> is <span class="geom-eq-ref" data-assert-equal="g1:&lt; A D E ) = g1:&lt; C D E )" title="&lt; A D E ) = &lt; C D E )">equal</span> to <span class="geom-ref" data-ref="g1:&lt; C D E )" title="&lt; C D E )">&lt; C D E )</span>, for each is <span class="geom-eq-ref" data-assert-equal="g1:&lt; A D E ) = g1:&lt; C D E )" title="&lt; A D E ) = &lt; C D E )">right</span></div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore the base <span class="geom-ref" data-ref="g1:/ A E /" title="/ A E /">/ A E /</span> is <span class="geom-eq-ref" data-assert-equal="g1:/ A E / = g1:/ C E /" title="/ A E / = / C E /">equal</span> to the base <span class="geom-ref" data-ref="g1:/ C E /" title="/ C E /">/ C E /</span>.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> <span class="geom-ref" data-ref="g1:/ A E /" title="/ A E /">/ A E /</span> was proved <span class="geom-eq-ref" data-assert-equal="g1:/ A E / = g1:/ B E /" title="/ A E / = / B E /">equal</span> to <span class="geom-ref" data-ref="g1:/ B E /" title="/ B E /">/ B E /</span></div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore <span class="geom-ref" data-ref="g1:/ B E /" title="/ B E /">/ B E /</span> is also <span class="geom-eq-ref" data-assert-equal="g1:/ B E / = g1:/ C E /" title="/ B E / = / C E /">equal</span> to <span class="geom-ref" data-ref="g1:/ C E /" title="/ C E /">/ C E /</span>;</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore <span class="geom-ref" data-ref="g1:/ A E /" title="/ A E /">/ A E /</span>, <span class="geom-ref" data-ref="g1:/ E B /" title="/ E B /">/ E B /</span>, <span class="geom-ref" data-ref="g1:/ E C /" title="/ E C /">/ E C /</span> are <span class="geom-eq-ref" data-assert-equal="g1:/ A E / = g1:/ E B / = g1:/ E C /" title="/ A E / = / E B / = / E C /">equal</span> to one another.</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><a class="justification" href="../G.84/index.html#g-84" data-ref-target="G.84" title="G.84: If a point be taken within a circle, and more than two equal straight lines fall from the point on the circle, the point taken is the centre of the circle.">[G.84]</a><span class="geom-step-badge geom-badge-assert">assert</span> Therefore the circle drawn with center <span class="geom-ref" data-ref="g1:E" title="E">E</span> and distance one of <span class="geom-ref" data-ref="g1:/ A E /" title="/ A E /">/ A E /</span>, <span class="geom-ref" data-ref="g1:/ E B /" title="/ E B /">/ E B /</span>, <span class="geom-ref" data-ref="g1:/ E C /" title="/ E C /">/ E C /</span> will also pass through the remaining points and will have been completed.</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.84/index.html#g-84" data-ref-target="G.84" title="G.84: If a point be taken within a circle, and more than two equal straight lines fall from the point on the circle, the point taken is the centre of the circle.">point_taken_within</a></span><span class="geom-step-badge geom-badge-assert">assert</span> Therefore the circle drawn with center <span class="geom-ref" data-ref="g1:E" title="E">E</span> and distance one of <span class="geom-ref" data-ref="g1:/ A E /" title="/ A E /">/ A E /</span>, <span class="geom-ref" data-ref="g1:/ E B /" title="/ E B /">/ E B /</span>, <span class="geom-ref" data-ref="g1:/ E C /" title="/ E C /">/ E C /</span> will also pass through the remaining points and will have been completed.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore, given a segment of a circle, the complete circle has been described.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> It is manifest that the segment <span class="geom-ref" data-ref="g1:( A B C )" title="( A B C )">( A B C )</span> is less than a semicircle, because the center <span class="geom-ref" data-ref="g1:E" title="E">E</span> happens to be outside it.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Similarly, even if <span class="geom-ref" data-ref="g2:&lt; A B D )" title="&lt; A B D )">&lt; A B D )</span> be <span class="geom-eq-ref" data-assert-equal="g2:&lt; A B D ) = g2:&lt; B A D )" title="&lt; A B D ) = &lt; B A D )">equal</span> to <span class="geom-ref" data-ref="g2:&lt; B A D )" title="&lt; B A D )">&lt; B A D )</span>, <span class="geom-ref" data-ref="g2:/ A D /" title="/ A D /">/ A D /</span> being <span class="geom-eq-ref" data-assert-equal="g2:/ A D / = g2:/ B D / = g2:/ D C /" title="/ A D / = / B D / = / D C /">equal</span> to each of the two <span class="geom-ref" data-ref="g2:/ B D /" title="/ B D /">/ B D /</span>, <span class="geom-ref" data-ref="g2:/ D C /" title="/ D C /">/ D C /</span>,</div>
@@ -639,28 +645,28 @@
   <footer>
     <div class="footer-nav">
       <ul>
-        <li><a href="../../about.html">about</a></li>
-        <li><a href="../../connect.html">connect</a></li>
-        <li><a href="../../glossary.html">glossary</a></li>
-        <li><a href="../../todos/index.html">todos</a></li>
-        <li><a href="../../changelog.html">changelog</a></li>
+        <li><a href="../../about.html"  >about</a></li>
+        <li><a href="../../connect.html"  >connect</a></li>
+        <li><a href="../../glossary.html"  >glossary</a></li>
+        <li><a href="../../todos/index.html"  >todos</a></li>
+        <li><a href="../../changelog.html"  >changelog</a></li>
       </ul>
     </div>
     <hr />
     <div role="contentinfo">
       <p>
-        &copy; Copyright .
+        &copy; Copyright 2026, GEOMETOR.
       </p>
     </div>
   </footer>
 
   <script src="../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+  <script src="../../_static/documentation_options.js?v=d5a15cff"></script>
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
-  <script src="../../_static/js/geometor_interactive.js?v=421e4467"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=4430a5d4"></script>
   <script src="../../_static/js/search_highlight.js"></script>
 
 </body>

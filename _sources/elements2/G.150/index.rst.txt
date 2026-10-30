@@ -24,18 +24,19 @@ G.150
 
    If a first magnitude have to a second the same ratio as a third to a fourth, and the third have to the fourth a greater ratio than a fifth has to a sixth, the first will also have to the second a greater ratio than the fifth to the sixth.
 
+.. signature:: theorem
+
+   | :fn:`magnitude_ratio_greater <G.150>`\ ()
+   | **prove** the first :g:`A <g1:A>` will also have to the second :g:`B <g1:B>` a greater ratio than the fifth :g:`E <g1:E>` to the sixth :g:`F <g1:F>`
+
 .. picture:: g1.svg
    :alt: Proposition 13 diagram
 
 .. step:: assert
 
-   For let a first magnitude :g:`A <g1:A>` have to a second :g:`B <g1:B>` the same ratio as a third :g:`C <g1:C>` has to a fourth :g:`D <g1:D>`
+   Let a first magnitude :g:`A <g1:A>` have to a second :g:`B <g1:B>` the same ratio as a third :g:`C <g1:C>` has to a fourth :g:`D <g1:D>`, and let the third :g:`C <g1:C>` have to the fourth :g:`D <g1:D>` a greater ratio than a fifth :g:`E <g1:E>` has to a sixth :g:`F <g1:F>`
 
-.. step:: assert
-
-   Let the third :g:`C <g1:C>` have to the fourth :g:`D <g1:D>` a greater ratio than a fifth :g:`E <g1:E>` has to a sixth :g:`F <g1:F>`
-
-.. step:: assert [G.144] <G.144>
+.. step:: assert ∵ equimultiples_multiple_magnitude_def <G.144>
 
    Since there are some equimultiples of :g:`C <g1:C>`, :g:`E <g1:E>`, and of :g:`D <g1:D>`, :g:`F <g1:F>` other, chance, equimultiples, such that the multiple of :g:`C <g1:C>` is in excess of the multiple of :g:`D <g1:D>`, while the multiple of :g:`E <g1:E>` is not in excess of the multiple of :g:`F <g1:F>`.
 
@@ -51,7 +52,7 @@ G.150
 
    And, whatever multiple :g:`G <g1:G>` is of :g:`C <g1:C>`, let :g:`M <g1:M>` be also that multiple of :g:`A <g1:A>`, and, whatever multiple :g:`K <g1:K>` is of :g:`D <g1:D>`, let :g:`N <g1:N>` be also that multiple of :g:`B <g1:B>`.
 
-.. step:: assert [G.138] <G.138>
+.. step:: assert ∵ magnitudes_said_ratio_def <G.138>
 
    Since, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`, and of :g:`A <g1:A>`, :g:`C <g1:C>` equimultiples :g:`M <g1:M>`, :g:`G <g1:G>` have been taken, and of :g:`B <g1:B>`, :g:`D <g1:D>` other, chance, equimultiples :g:`N <g1:N>`, :g:`K <g1:K>` → therefore, if :g:`M <g1:M>` is in excess of :g:`N <g1:N>`, :g:`G <g1:G>` is also in excess of :g:`K <g1:K>`, if :eq:`equal <g1:M = g1:N>`, :eq:`equal <g1:G = g1:K>`, and if less, less.
 
@@ -71,7 +72,7 @@ G.150
 
    And :g:`M <g1:M>`, :g:`H <g1:H>` are equimultiples of :g:`A <g1:A>`, :g:`E <g1:E>`, and :g:`N <g1:N>`, :g:`L <g1:L>` other, chance, equimultiples of :g:`B <g1:B>`, :g:`F <g1:F>`
 
-.. step:: conclude [G.144] <G.144>
+.. step:: conclude ∵ equimultiples_multiple_magnitude_def <G.144>
 
    Therefore :g:`A <g1:A>` has to :g:`B <g1:B>` a greater ratio than :g:`E <g1:E>` has to :g:`F <g1:F>`.
 

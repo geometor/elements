@@ -24,6 +24,12 @@ G.155
 
    If magnitudes be proportional separando, they is proportional componendo.
 
+.. signature:: theorem
+
+   | :fn:`magnitudes_proportional_separando <G.155>`\ (:g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />`, :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />`)
+   | **given** :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />`, :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />` be magnitudes proportional :term:`*separando* <separando>`, so that, as :g:`/ A E / <g1:/ A E />` is to :g:`/ E B / <g1:/ E B />`, so is :g:`/ C F / <g1:/ C F />` to :g:`/ F D / <g1:/ F D />`
+   | **prove** they will also be proportional :term:`*componendo* <componendo>`, that is, as :g:`/ A B / <g1:/ A B />` is to :g:`/ E B / <g1:/ E B />`, so is :g:`/ C D / <g1:/ C D />` to :g:`/ F D / <g1:/ F D />`
+
 .. picture:: g1.svg
    :alt: Proposition 18 diagram of line segments
 
@@ -43,7 +49,7 @@ G.155
 
    Since, as :g:`/ A B / <g1:/ A B />` is to :g:`/ E B / <g1:/ E B />`, so is :g:`/ C D / <g1:/ C D />` to :g:`/ G D / <g1:/ G D />`, they are magnitudes proportional :term:`*componendo* <componendo>`
 
-.. step:: assert [G.154] <G.154>
+.. step:: assert ∵ magnitudes_proportional_componendo <G.154>
 
    So that they will also be proportional :term:`*separando* <separando>`.
 
@@ -59,7 +65,7 @@ G.155
 
    As :g:`/ A E / <g1:/ A E />` is to :g:`/ E B / <g1:/ E B />`, so is :g:`/ C F / <g1:/ C F />` to :g:`/ F D / <g1:/ F D />`.
 
-.. step:: assert [G.148] <G.148>
+.. step:: assert ∵ ratios_ratio <G.148>
 
    Therefore also, as :g:`/ C G / <g1:/ C G />` is to :g:`/ G D / <g1:/ G D />`, so is :g:`/ C F / <g1:/ C F />` to :g:`/ F D / <g1:/ F D />`.
 
@@ -67,7 +73,7 @@ G.155
 
    The first :g:`/ C G / <g1:/ C G />` is greater than the third :g:`/ C F / <g1:/ C F />`
 
-.. step:: assert [G.151] <G.151>
+.. step:: assert ∵ magnitude_ratio_greater_v_14 <G.151>
 
    Therefore the second :g:`/ G D / <g1:/ G D />` is also greater than the fourth :g:`/ F D / <g1:/ F D />`.
 

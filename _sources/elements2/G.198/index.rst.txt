@@ -24,30 +24,36 @@ G.198
 
    In equal circles angles have the same ratio as the circumferences on which they stand, whether they stand at the centres or at the circumferences.
 
+.. signature:: theorem
+
+   | :fn:`equal_circles_angles_vi_33 <G.198>`\ (:g:`( A B C ) <g1:( A B C )>`, :g:`( D E F ) <g1:( D E F )>`, :g:`< B G C ) <g1:< B G C )>`, :g:`< E H F ) <g1:< E H F )>`)
+   | **given** :g:`( A B C ) <g1:( A B C )>`, :g:`( D E F ) <g1:( D E F )>` be :eq:`equal <g1:( A B C ) = g1:( D E F )>` circles, let :g:`< B G C ) <g1:< B G C )>`, :g:`< E H F ) <g1:< E H F )>` be angles at their centres :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`< B A C ) <g1:< B A C )>`, :g:`< E D F ) <g1:< E D F )>` angles at the circumferences
+   | **prove** also, as the circumference :g:`( B C ) <g1:( B C )>` is to the circumference :g:`( E F ) <g1:( E F )>`, so is :g:`< B G C ) <g1:< B G C )>` to :g:`< E H F ) <g1:< E H F )>`, and :g:`< B A C ) <g1:< B A C )>` to :g:`< E D F ) <g1:< E D F )>`
+
 .. picture:: g1.svg
    :alt: Proposition 33
 
 .. step:: given
 
-   :g:`( A B C ) <g1:( A B C )>`, :g:`( D E F ) <g1:( D E F )>` be :eq:`equal <g1:( A B C ) = g1:( D E F )>` circles
+   :g:`( A B C ) <g1:( A B C )>`, :g:`( D E F ) <g1:( D E F )>` be :eq:`equal <g1:( A B C ) = g1:( D E F )>` circles, let :g:`< B G C ) <g1:< B G C )>`, :g:`< E H F ) <g1:< E H F )>` be angles at their centres :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`< B A C ) <g1:< B A C )>`, :g:`< E D F ) <g1:< E D F )>` angles at the circumferences
 
 .. step:: assert
 
-   Let :g:`< B G C ) <g1:< B G C )>`, :g:`< E H F ) <g1:< E H F )>` be angles at their centres :g:`G <g1:G>`, :g:`H <g1:H>`, and :g:`< B A C ) <g1:< B A C )>`, :g:`< E D F ) <g1:< E D F )>` angles at the circumferences
+   I say that, as the circumference :g:`( B C ) <g1:( B C )>` is to the circumference :g:`( E F ) <g1:( E F )>`, so is :g:`< B G C ) <g1:< B G C )>` to :g:`< E H F ) <g1:< E H F )>`, and :g:`< B A C ) <g1:< B A C )>` to :g:`< E D F ) <g1:< E D F )>`.
 
 .. step:: construct
 
-   For let any number of consecutive circumferences :g:`( C K ) <g1:( C K )>`, :g:`( K L ) <g1:( K L )>` be made :eq:`equal <g1:( C K ) = g1:( K L ) = g1:( B C )>` to the circumference :g:`( B C ) <g1:( B C )>`, and any number of consecutive circumferences :g:`( F M ) <g1:( F M )>`, :g:`( M N ) <g1:( M N )>` :eq:`equal <g1:( F M ) = g1:( M N ) = g1:( E F )>` to the circumference :g:`( E F ) <g1:( E F )>`
+   Let any number of consecutive circumferences :g:`( C K ) <g1:( C K )>`, :g:`( K L ) <g1:( K L )>` be made :eq:`equal <g1:( C K ) = g1:( K L ) = g1:( B C )>` to the circumference :g:`( B C ) <g1:( B C )>`, and any number of consecutive circumferences :g:`( F M ) <g1:( F M )>`, :g:`( M N ) <g1:( M N )>` :eq:`equal <g1:( F M ) = g1:( M N ) = g1:( E F )>` to the circumference :g:`( E F ) <g1:( E F )>`
 
 .. step:: construct
 
-   **segment** :g:`/ G K / <g1:/ G K />`, :g:`/ G L / <g1:/ G L />`, :g:`/ H M / <g1:/ H M />`, :g:`/ H N / <g1:/ H N />`
+   :fn:`segment <G.3>`\ (:g:`G <g1:G>`, :g:`K <g1:K>`) → :g:`/ G K / <g1:/ G K />`, :fn:`segment <G.3>`\ (:g:`G <g1:G>`, :g:`L <g1:L>`) → :g:`/ G L / <g1:/ G L />`, :fn:`segment <G.3>`\ (:g:`H <g1:H>`, :g:`M <g1:M>`) → :g:`/ H M / <g1:/ H M />`, :fn:`segment <G.3>`\ (:g:`H <g1:H>`, :g:`N <g1:N>`) → :g:`/ H N / <g1:/ H N />`
 
 .. step:: assert
 
    Since the circumferences :g:`( B C ) <g1:( B C )>`, :g:`( C K ) <g1:( C K )>`, :g:`( K L ) <g1:( K L )>` are :eq:`equal <g1:( B C ) = g1:( C K ) = g1:( K L )>` to one another,
 
-.. step:: assert [G.106] <G.106>
+.. step:: assert ∵ equal_circles_angles <G.106>
 
    :g:`< B G C ) <g1:< B G C )>`, :g:`< C G K ) <g1:< C G K )>`, :g:`< K G L ) <g1:< K G L )>` are also :eq:`equal <g1:< B G C ) = g1:< C G K ) = g1:< K G L )>` to one another;
 
@@ -63,7 +69,7 @@ G.198
 
    Whatever multiple the circumference :g:`( N E ) <g1:( N E )>` is of :g:`( E F ) <g1:( E F )>`, that multiple also is :g:`< N H E ) <g1:< N H E )>` of :g:`< E H F ) <g1:< E H F )>`.
 
-.. step:: assert [G.106] <G.106>
+.. step:: assert ∵ equal_circles_angles <G.106>
 
    If then the circumference :g:`( B L ) <g1:( B L )>` is :eq:`equal <g1:( B L ) = g1:( E N )>` to the circumference :g:`( E N ) <g1:( E N )>`, :g:`< B G L ) <g1:< B G L )>` is also :eq:`equal <g1:< B G L ) = g1:< E H N )>` to :g:`< E H N ) <g1:< E H N )>`; if the circumference :g:`( B L ) <g1:( B L )>` is greater than the circumference :g:`( E N ) <g1:( E N )>`, :g:`< B G L ) <g1:< B G L )>` is also greater than :g:`< E H N ) <g1:< E H N )>`; and, if less, less.
 
@@ -75,7 +81,7 @@ G.198
 
    It has been proved that, if the circumference :g:`( B L ) <g1:( B L )>` is in excess of the circumference :g:`( E N ) <g1:( E N )>`, :g:`< B G L ) <g1:< B G L )>` is also in excess of :g:`< E H N ) <g1:< E H N )>`; if :eq:`equal <g1:( B L ) = g1:( E N )>`, :eq:`equal <g1:< B G L ) = g1:< E H N )>`; and if less, less.
 
-.. step:: assert [G.138] <G.138>
+.. step:: assert ∵ magnitudes_said_ratio_def <G.138>
 
    Therefore, as the circumference :g:`( B C ) <g1:( B C )>` is to :g:`( E F ) <g1:( E F )>`, so is :g:`< B G C ) <g1:< B G C )>` to :g:`< E H F ) <g1:< E H F )>`.
 

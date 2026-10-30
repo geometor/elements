@@ -24,18 +24,23 @@ G.325
 
    Magnitudes commensurable with the same magnitude are commensurable with one another also.
 
+.. signature:: theorem
+
+   | :fn:`magnitudes_commensurable_magnitude <G.325>`\ ()
+   | **prove** :g:`A <g1:A>` is also commensurable with :g:`B <g1:B>`
+
 .. picture:: g1.svg
    :alt: Proposition 12 diagram
 
 .. step:: assert
 
-   For let each of the magnitudes :g:`A <g1:A>`, :g:`B <g1:B>` be commensurable with :g:`C <g1:C>`
+   Let each of the magnitudes :g:`A <g1:A>`, :g:`B <g1:B>` be commensurable with :g:`C <g1:C>`
 
 .. step:: assert
 
    Since :g:`A <g1:A>` is commensurable with :g:`C <g1:C>`,
 
-.. step:: assert [G.318] <G.318>
+.. step:: assert ∵ commensurable_magnitudes_ratio <G.318>
 
    Therefore :g:`A <g1:A>` has to :g:`C <g1:C>` the ratio which a number has to a number.
 
@@ -47,7 +52,7 @@ G.325
 
    Since :g:`C <g1:C>` is commensurable with :g:`B <g1:B>`,
 
-.. step:: assert [G.318] <G.318>
+.. step:: assert ∵ commensurable_magnitudes_ratio <G.318>
 
    Therefore :g:`C <g1:C>` has to :g:`B <g1:B>` the ratio which a number has to a number.
 
@@ -55,9 +60,9 @@ G.325
 
    Let it have the ratio which :g:`F <g1:F>` has to :g:`G <g1:G>`.
 
-.. step:: construct [G.244] <G.244>
+.. step:: construct
 
-   And, given any number of ratios we please, namely the ratio which :g:`D <g1:D>` has to :g:`E <g1:E>` and that which :g:`F <g1:F>` has to :g:`G <g1:G>`, let the numbers :g:`H <g1:H>`, :g:`K <g1:K>`, :g:`L <g1:L>` be taken continuously in the given ratios
+   :fn:`many_ratios_please <G.244>`: And, given any number of ratios we please, namely the ratio which :g:`D <g1:D>` has to :g:`E <g1:E>` and that which :g:`F <g1:F>` has to :g:`G <g1:G>`, let the numbers :g:`H <g1:H>`, :g:`K <g1:K>`, :g:`L <g1:L>` be taken continuously in the given ratios
 
 .. step:: assert
 
@@ -67,7 +72,7 @@ G.325
 
    Since, then, as :g:`A <g1:A>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to :g:`E <g1:E>`, while, as :g:`D <g1:D>` is to :g:`E <g1:E>`, so is :g:`H <g1:H>` to :g:`K <g1:K>`,
 
-.. step:: assert [G.148] <G.148>
+.. step:: assert ∵ ratios_ratio <G.148>
 
    Therefore also, as :g:`A <g1:A>` is to :g:`C <g1:C>`, so is :g:`H <g1:H>` to :g:`K <g1:K>`.
 
@@ -75,7 +80,7 @@ G.325
 
    Since, as :g:`C <g1:C>` is to :g:`B <g1:B>`, so is :g:`F <g1:F>` to :g:`G <g1:G>`, while, as :g:`F <g1:F>` is to :g:`G <g1:G>`, so is :g:`K <g1:K>` to :g:`L <g1:L>`,
 
-.. step:: assert [G.148] <G.148>
+.. step:: assert ∵ ratios_ratio <G.148>
 
    Therefore also, as :g:`C <g1:C>` is to :g:`B <g1:B>`, so is :g:`K <g1:K>` to :g:`L <g1:L>`.
 
@@ -83,11 +88,11 @@ G.325
 
    Also, as :g:`A <g1:A>` is to :g:`C <g1:C>`, so is :g:`H <g1:H>` to :g:`K <g1:K>`;
 
-.. step:: assert [G.159] <G.159>
+.. step:: assert ∵ there_number_magnitudes_v_22 <G.159>
 
    Therefore, :term:`*ex aequali* <ex-aequali>`, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`H <g1:H>` to :g:`L <g1:L>`.
 
-.. step:: conclude [G.319] <G.319>
+.. step:: conclude ∵ magnitudes_ratio_number <G.319>
 
    Therefore :g:`A <g1:A>` has to :g:`B <g1:B>` the ratio which a number has to a number; therefore :g:`A <g1:A>` is commensurable with :g:`B <g1:B>`.
 

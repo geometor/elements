@@ -24,6 +24,12 @@ G.442
 
    From a medial straight line there arise irrational straight lines infinite in number, and none of them is the same as any of the preceding.
 
+.. signature:: theorem
+
+   | :fn:`medial_straight_line_x_115 <G.442>`\ (:g:`A <g1:A>`)
+   | **given** :g:`A <g1:A>` be a medial straight line
+   | **prove** from :g:`A <g1:A>` there arise irrational straight lines infinite in number, and none of them is the same as any of the preceding
+
 .. picture:: g1.svg
    :alt: Proposition 115 diagram
 
@@ -33,17 +39,13 @@ G.442
 
 .. step:: assert
 
-   Let a rational straight line :g:`B <g1:B>` be set out
+   Let a rational straight line :g:`B <g1:B>` be set out, and let the square on :g:`C <g1:C>` be equal to the rectangle :g:`B <g1:B>`, :g:`A <g1:A>`
 
-.. step:: assert
-
-   Let the square on :g:`C <g1:C>` be equal to the rectangle :g:`B <g1:B>`, :g:`A <g1:A>`
-
-.. step:: assert [G.332] <G.332>
+.. step:: assert ∵ square_assigned_straight_def <G.332>
 
    Therefore :g:`C <g1:C>` is irrational;
 
-.. step:: assert [G.334] <G.334>
+.. step:: assert ∵ rational_area_applied <G.334>
 
    For that which is contained by an irrational and a rational straight line is irrational.
 
@@ -55,11 +57,11 @@ G.442
 
    Let the square on :g:`D <g1:D>` be equal to the rectangle :g:`B <g1:B>`, :g:`C <g1:C>`
 
-.. step:: assert [G.334] <G.334>
+.. step:: assert ∵ rational_area_applied <G.334>
 
    Therefore the square on :g:`D <g1:D>` is irrational.
 
-.. step:: conclude [G.332] <G.332>
+.. step:: conclude ∵ square_assigned_straight_def <G.332>
 
    Therefore :g:`D <g1:D>` is irrational; and it is not the same with any of the preceding, for the square on none of the preceding, if applied to a rational straight line, produces :g:`C <g1:C>` as breadth.
 

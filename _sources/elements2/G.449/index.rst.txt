@@ -24,22 +24,35 @@ G.449
 
    If two straight lines be at right angles to the same plane, the straight lines is parallel.
 
+.. signature:: theorem
+
+   | :fn:`straight_lines_right <G.449>`\ ()
+   | **prove** :g:`/ A B / <g1:/ A B />` is parallel to :g:`/ C D / <g1:/ C D />`
+
 .. picture:: g1.svg
    :alt: Book XI - Proposition 6
 
 .. step:: assert
 
-   For let :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` be at right angles to the plane of reference
+   Let :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` be at right angles to the plane of reference
 
 .. step:: construct
 
-   For let them meet the plane of reference at :g:`B <g1:B>`, :g:`D <g1:D>`, let :g:`/ B D / <g1:/ B D />` be joined, let :g:`/ D E / <g1:/ D E />` be drawn, in the plane of reference, at right angles to :g:`/ B D / <g1:/ B D />`, let :g:`/ D E / <g1:/ D E />` be made :eq:`equal <g1:/ D E / = g1:/ A B />` to :g:`/ A B / <g1:/ A B />`
+   :fn:`segment <G.3>`\ () → :g:`B <g1:B>`, :fn:`segment <G.3>`\ () → :g:`D <g1:D>`, :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`D <g1:D>`) → :g:`/ B D / <g1:/ B D />`
 
 .. step:: construct
 
-   **segment** :g:`/ B E / <g1:/ B E />`, :g:`/ A E / <g1:/ A E />`, :g:`/ A D / <g1:/ A D />`
+   Let :g:`/ D E / <g1:/ D E />` be drawn
 
-.. step:: assert [G.446] <G.446>
+.. step:: construct
+
+   In the plane of reference, at right angles to :g:`/ B D / <g1:/ B D />`, let :g:`/ D E / <g1:/ D E />` be made :eq:`equal <g1:/ D E / = g1:/ A B />` to :g:`/ A B / <g1:/ A B />`
+
+.. step:: construct
+
+   :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`E <g1:E>`) → :g:`/ B E / <g1:/ B E />`, :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`E <g1:E>`) → :g:`/ A E / <g1:/ A E />`, :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`D <g1:D>`) → :g:`/ A D / <g1:/ A D />`
+
+.. step:: assert ∵ straight_line_right_def <G.446>
 
    Since :g:`/ A B / <g1:/ A B />` is at right angles to the plane of reference, it will also make right angles with all the straight lines which meet it and are in the plane of reference.
 
@@ -59,7 +72,7 @@ G.449
 
    And, since :g:`/ A B / <g1:/ A B />` is :eq:`equal <g1:/ A B / = g1:/ D E />` to :g:`/ D E / <g1:/ D E />`, and :g:`/ B D / <g1:/ B D />` is common, the two sides :g:`/ A B / <g1:/ A B />`, :g:`/ B D / <g1:/ B D />` are :eq:`equal <g1:/ A B / = g1:/ E D />` to the two sides :g:`/ E D / <g1:/ E D />`, :g:`/ D B / <g1:/ D B />`; and they include :eq:`right angles <g1:< A B D ) = g1:< E D B )>`;
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    Therefore the base :g:`/ A D / <g1:/ A D />` is :eq:`equal <g1:/ A D / = g1:/ B E />` to the base :g:`/ B E / <g1:/ B E />`.
 
@@ -67,7 +80,7 @@ G.449
 
    And, since :g:`/ A B / <g1:/ A B />` is :eq:`equal <g1:/ A B / = g1:/ D E />` to :g:`/ D E / <g1:/ D E />`, while :g:`/ A D / <g1:/ A D />` is also :eq:`equal <g1:/ A D / = g1:/ B E />` to :g:`/ B E / <g1:/ B E />`, the two sides :g:`/ A B / <g1:/ A B />`, :g:`/ B E / <g1:/ B E />` are :eq:`equal <g1:/ A B / = g1:/ E D /; g1:/ B E / = g1:/ D A />` to the two sides :g:`/ E D / <g1:/ E D />`, :g:`/ D A / <g1:/ D A />`; and :g:`/ A E / <g1:/ A E />` is their common base;
 
-.. step:: assert [G.15] <G.15>
+.. step:: assert ∵ sss_congruence <G.15>
 
    Therefore :g:`< A B E ) <g1:< A B E )>` is :eq:`equal <g1:< A B E ) = g1:< E D A )>` to :g:`< E D A ) <g1:< E D A )>`.
 
@@ -83,11 +96,11 @@ G.449
 
    It is also at right angles to each of :g:`/ B D / <g1:/ B D />`, :g:`/ D C / <g1:/ D C />`;
 
-.. step:: assert [G.448] <G.448>
+.. step:: assert ∵ straight_line_set_xi_5 <G.448>
 
    Therefore :g:`/ E D / <g1:/ E D />` is set up at right angles to :g:`/ B D / <g1:/ B D />`, :g:`/ D A / <g1:/ D A />`, :g:`/ D C / <g1:/ D C />` at their point of meeting; therefore :g:`/ B D / <g1:/ B D />`, :g:`/ D A / <g1:/ D A />`, :g:`/ D C / <g1:/ D C />` are in one plane.
 
-.. step:: assert [G.444] <G.444>
+.. step:: assert ∵ straight_lines_cut <G.444>
 
    But, in whatever plane :g:`/ D B / <g1:/ D B />`, :g:`/ D A / <g1:/ D A />` are, in that plane is :g:`/ A B / <g1:/ A B />` also, for every triangle is in one plane.
 
@@ -99,7 +112,7 @@ G.449
 
    Each of :g:`< A B D ) <g1:< A B D )>`, :g:`< B D C ) <g1:< B D C )>` is :eq:`right <g1:< A B D ) = g1:< B D C )>`;
 
-.. step:: conclude [G.40] <G.40>
+.. step:: conclude ∵ corresponding_angles_parallel <G.40>
 
    Therefore :g:`/ A B / <g1:/ A B />` is parallel to :g:`/ C D / <g1:/ C D />`.
 

@@ -24,12 +24,17 @@ G.335
 
    The rectangle contained by rational straight lines commensurable in square only is irrational, and the side of the square equal to it is irrational. Let the latter be called medial.
 
+.. signature:: theorem
+
+   | :fn:`rectangle_contained_rational_x_21 <G.335>`\ ()
+   | **prove** :g:`< A C > <g1:< A C >>` is irrational, and the side of the square equal to it is irrational
+
 .. picture:: g1.svg
    :alt: Proposition 21
 
 .. step:: assert
 
-   For let the rectangle :g:`< A C > <g1:< A C >>` be contained by the rational straight lines :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` commensurable in square only
+   Let the rectangle :g:`< A C > <g1:< A C >>` be contained by the rational straight lines :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` commensurable in square only
 
 .. step:: assert
 
@@ -37,9 +42,9 @@ G.335
 
 .. step:: construct
 
-   For on :g:`/ A B / <g1:/ A B />` let the square :g:`< A D > <g1:< A D >>` be described
+   On :g:`/ A B / <g1:/ A B />` let the square :g:`< A D > <g1:< A D >>` be described
 
-.. step:: assert [G.332] <G.332>
+.. step:: assert ∵ square_assigned_straight_def <G.332>
 
    Therefore :g:`< A D > <g1:< A D >>` is rational.
 
@@ -51,11 +56,11 @@ G.335
 
    Therefore :g:`/ D B / <g1:/ D B />` is also incommensurable in length with :g:`/ B C / <g1:/ B C />`.
 
-.. step:: assert [G.163] <G.163>
+.. step:: assert ∵ triangles_parallelograms_height <G.163>
 
    And, as :g:`/ D B / <g1:/ D B />` is to :g:`/ B C / <g1:/ B C />`, so is :g:`< A D > <g1:< A D >>` to :g:`< A C > <g1:< A C >>`;
 
-.. step:: assert [G.323] <G.323>
+.. step:: assert ∵ magnitudes_proportional_commensurable <G.323>
 
    Therefore :g:`< D A > <g1:< D A >>` is incommensurable with :g:`< A C > <g1:< A C >>`.
 
@@ -63,7 +68,7 @@ G.335
 
    :g:`< D A > <g1:< D A >>` is rational;
 
-.. step:: conclude [G.332] <G.332>
+.. step:: conclude ∵ square_assigned_straight_def <G.332>
 
    Therefore :g:`< A C > <g1:< A C >>` is irrational, so that the side of the square equal to :g:`< A C > <g1:< A C >>` is also irrational.
 

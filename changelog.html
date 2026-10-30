@@ -6,12 +6,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>changelog &mdash; Project name not set  documentation</title>
+  <title>changelog &mdash; GEOMETOR • elements</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="_static/css/styles.css?v=156d9f89" />
+  <link rel="stylesheet" type="text/css" href="_static/css/styles.css?v=3d8cc37d" />
   <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -20,7 +20,7 @@
   <link rel="icon" href="_static/favicon.ico" />
 </head>
 
-<body>
+<body class="book-theme-classical-serif">
   <header>
     <div class="logo">
       <a href="index.html">
@@ -55,366 +55,383 @@
     </nav>
     <div class="motto"></div>
   </header>
-  <main>
-    <article>
-      <header>
-      <nav class="breadcrumbs">
-        <span><a href="index.html">Home</a></span>
-      </nav>
-        <nav class="context">
-          <div class="prev">
-             <a href="todos/expand_research.html" title="Expand Research" >Prev</a>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="index.html" title="Return to Project Portal">&larr; elements</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="index.html">GEOMETOR • elements</a>
           </div>
-          <div class="next">
-            <a href="modules/api/index.html" title="API Reference" >Next</a>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="todos/expand_research.html" title="Expand Research">&larr; <span class="nav-label">Prev</span></a>
           </div>
-        </nav>
+          <div class="book-nav-center">
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="modules/api/index.html" title="API Reference"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
       </header>
-      <div class="content body" role="main">
+      <div class="content body book-content" role="main">
         <section class="level-1" id="changelog">
-          <h1>changelog<a class="headerlink" href="#changelog" title="Link to this heading">¶</a></h1>
-          <section class="level-2" id="id1">
-          <h2>0.3.2<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
-          <p><em>2026-10-29</em></p>
-          <p><strong>added</strong></p>
-          <ul class="simple">
-          <li><p>Migrated and validated <cite>geometor.model</cite> Python construction scripts (<cite>resources/constructions/&lt;id&gt;/g1.py</cite>, <cite>g2.py</cite>, …) into <cite>geometor.elements</cite>.</p></li>
-          <li><p>Created <cite>pseudocode.py</cite> to generate tightened, fact-oriented enunciations and structured <cite>.. step:: &lt;kind&gt; [justification]</cite> sequences (<cite>given</cite>, <cite>construct</cite>, <cite>intersect</cite>, <cite>assert</cite>, <cite>conclude</cite>).</p></li>
-          <li><p>Expanded each <cite>docsrc/elements2/G.&lt;n&gt;/</cite> directory into a self-contained folder with 3 companion tracks (<cite>index.rst</cite> for <strong>Pseudocode</strong>, <cite>code.rst</cite> for <strong>Code</strong>, and <cite>heath.rst</cite> for <strong>Heath</strong>) alongside folio-free <cite>g1.svg</cite> and <cite>g1.py</cite> artifacts.</p></li>
-          </ul>
-          </section>
-          <section class="level-2" id="id2">
-          <h2>0.3.1<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
-          <p><em>2026-10-29</em></p>
-          <p><strong>changed</strong></p>
-          <ul class="simple">
-          <li><p>Regenerated the complete 13-book Euclid G-Index (<cite>G.1</cite> through <cite>G.525</cite> and <cite>81</cite> orphans in <cite>docsrc/elements2/</cite>) with updated <cite>:g:</cite> references and recalibrated SVGs from <cite>euclid</cite>.</p></li>
-          <li><p>Stripped Heath’s inline footnote markers (<cite>[#f1]_</cite>) and footnote blocks (<cite>.. [#f1] …</cite>) in <cite>graph.py</cite> (<cite>strip_footnotes</cite>).</p></li>
-          <li><p>Added truncated enunciation tooltips to Graphviz dependency nodes and exported <cite>resources/enunciations.json</cite> for <cite>G.&lt;n&gt;</cite> and canonical Euclid IDs.</p></li>
-          </ul>
-          </section>
-          <section class="level-2" id="id3">
-          <h2>0.3.0<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
-          <p><em>2026-10-29</em></p>
-          <p><strong>added</strong></p>
-          <ul class="simple">
-          <li><p>Rebuilt the Elements 2.0 (G-Index) pipeline (<cite>graph.py</cite>, <cite>g_index.py</cite>, <cite>__main__.py</cite>) directly from the composed Heath edition in <cite>../euclid/docsrc/heath/</cite>.</p></li>
-          <li><p>Transformed <cite>:g:</cite> roles to display explicit GEOMETOR symbolic element indications (<cite>/ A B /</cite>, <cite>&lt; A B C &gt;</cite>, <cite>&lt; B A C )</cite>, <cite>( B C D )</cite>, <cite>[ A B ]</cite>, <cite>A</cite>).</p></li>
-          <li><p>Remapped <cite>:just:</cite>, <cite>.. assertion::</cite>, and <cite>.. subclause::</cite> justification references to G-Index targets (<cite>[G.1] &lt;G.1&gt;</cite>), resolving <cite>[id.]</cite> / <cite>[*id.*]</cite> back-references.</p></li>
-          <li><p>Added rich taxonomy metadata (<cite>:categories:</cite>, <cite>:tags:</cite>, <cite>:type:</cite>, <cite>:subtype:</cite>, <cite>:original_id:</cite>, <cite>:canonical_id:</cite>) and inline interactive SVG diagrams (<cite>.. picture:: &lt;folio&gt;.g&lt;k&gt;.svg</cite>) to each G-node.</p></li>
-          <li><p>Configured the Euclid Book Codex layout (<cite>:layout: book</cite>) and styles for the G-Index collection and node pages.</p></li>
-          </ul>
-          </section>
-          <section class="level-2" id="id4">
-          <h2>0.2.2<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
-          <p><em>2025-12-20</em></p>
-          <p><strong>added</strong></p>
-          <ul class="simple">
-          <li><p>Implemented template-based RST generation for G-nodes.</p></li>
-          <li><p>Added <cite>:excerpt:</cite> metadata to G-nodes for cleaner documentation snippets.</p></li>
-          <li><p>Introduced hard links for Heath IDs to ensure stable intersphinx references.</p></li>
-          <li><p>Added Graphviz dependency visualizations to every G-node.</p></li>
-          </ul>
-          <p><strong>changed</strong></p>
-          <ul class="simple">
-          <li><p>Separated <cite>geometor.elements</cite> from <cite>geometor.euclid</cite> source tree.</p></li>
-          <li><p>Refactored <cite>graph.py</cite> to parse RST directly from <cite>geometor.euclid</cite>.</p></li>
-          <li><p>Overhauled project documentation (README, GEMINI.md, Design, Mission).</p></li>
-          <li><p>Advanced docstrings to Google style for the core G-Index pipeline.</p></li>
-          <li><p>Limited initial G-Index generation to Book I for verification.</p></li>
-          </ul>
-          </section>
-          <section class="level-2" id="id5">
-          <h2>0.2.1<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
-          <p><em>2025-12-15</em></p>
-          <p><strong>changed</strong></p>
-          <ul class="simple">
-          <li><p>Cleaned up docstrings and type hints across the codebase.</p></li>
-          <li><p>Added missing docstrings to <cite>g_index.py</cite>, <cite>graph.py</cite>, <cite>__main__.py</cite>, and <cite>__init__.py</cite>.</p></li>
-          <li><p>Fixed build issues related to <cite>g_index</cite> generation.</p></li>
-          <li><p>Removed legacy documentation in <cite>docsrc/elements2</cite>.</p></li>
-          </ul>
-          </section>
-          <section class="level-2" id="id6">
-          <h2>0.2.0<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h2>
-          <p><em>2025-12-12</em></p>
-          <p><strong>changed</strong></p>
-          <ul class="simple">
-          <li><p>Reset git repository to start fresh with G-Index and codification scope.</p></li>
-          <li><p>Restored project structure and dependencies.</p></li>
-          <li><p>Updated <cite>GEMINI.md</cite> and <cite>pyproject.toml</cite>.</p></li>
-          </ul>
-          </section>
-          <section class="level-2" id="id7">
-          <h2>0.1.4<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h2>
-          <p><em>2025-12-09</em></p>
-          <p><strong>changed</strong></p>
-          <ul class="simple">
-          <li><p>Migrated from <cite>.. figure::</cite> to <cite>.. picture::</cite> directive in generated RST documentation for better image handling.</p></li>
-          <li><p>Updated <cite>src/geometor/elements/transform.py</cite> to generate <cite>.. picture::</cite> directives.</p></li>
-          </ul>
-          </section>
-          <section class="level-2" id="id8">
-          <h2>0.1.3<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h2>
-          <ul class="simple">
-          <li><p>Refined docstrings and type hinting.</p></li>
-          <li><p>Fixed <cite>from __future__ import annotations</cite> placement.</p></li>
-          </ul>
-          </section>
-          <section class="level-2" id="id9">
-          <h2>0.1.1<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h2>
-          <p><em>2025-11-23</em></p>
-          <p><strong>changed</strong></p>
-          <ul class="simple">
-          <li><p>Updated <cite>transform.py</cite> to target <cite>docsrc/heath</cite> as the primary output directory for generated RST.</p></li>
-          <li><p>Extended <cite>transform.py</cite> to process all 13 books of the Elements.</p></li>
-          <li><p>Modified <cite>transform.py</cite> to invert colors for extracted graphic images (for dark mode compatibility).</p></li>
-          <li><p>Removed fixed <cite>width</cite> attribute from figure directives in generated RST to allow for responsive sizing.</p></li>
-          <li><p>Updated dependency graph links to point to the new <cite>heath</cite> directory structure.</p></li>
-          <li><p>Removed the deprecated <cite>docsrc/elements2</cite> directory.</p></li>
-          </ul>
-          </section>
-          <section class="level-2" id="id10">
-          <h2>0.1.0<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h2>
-          <p><em>2025-11-23</em></p>
-          <p><strong>added</strong></p>
-          <ul class="simple">
-          <li><p>Integrated automatic bleed removal and image cleanup into the proposition stitching pipeline.</p></li>
-          <li><p>Added <cite>clean_image</cite> function in <cite>src/geometor/elements/ingest/cleanup.py</cite> to remove background noise and artifacts (bleed-through) from scanned images.</p></li>
-          <li><p>Updated <cite>stitch_propositions.py</cite> to apply cleanup processing during the stitching phase.</p></li>
-          </ul>
-          <p><strong>changed</strong></p>
-          <ul class="simple">
-          <li><p>Removed temporary bleed test scripts and images from the project root.</p></li>
-          </ul>
-          </section>
-          <section class="level-2" id="id11">
-          <h2>0.0.20<a class="headerlink" href="#id11" title="Link to this heading">¶</a></h2>
-          <p><em>2025-11-21</em></p>
-          <p><strong>changed</strong></p>
-          <ul class="simple">
-          <li><p>Updated <cite>stitch_propositions.py</cite>, <cite>cropping.py</cite>, and <cite>crop_propositions.py</cite> to save extracted graphics to the <cite>cropped</cite> directory (alongside stitched propositions) instead of a separate <cite>graphics</cite> folder.</p></li>
-          <li><p>Changed the filename suffix for extracted graphics from <cite>_graphic.png</cite> to <cite>.graphic.png</cite> (e.g., <cite>I.1.graphic.png</cite>).</p></li>
-          <li><p>Added a warning and safeguard return statement to <cite>scan_propositions.py</cite> and <cite>cropping.py</cite> to prevent accidental overwrites of manual work.</p></li>
-          </ul>
-          </section>
-          <section class="level-2" id="id12">
-          <h2>0.0.19<a class="headerlink" href="#id12" title="Link to this heading">¶</a></h2>
-          <p><em>2025-11-21</em></p>
-          <p><strong>added</strong></p>
-          <ul class="simple">
-          <li><p>Added <cite>process_book.sh</cite> helper script for scanning and stitching propositions of a single book.</p></li>
-          <li><p>Implemented per-book <cite>index.json</cite> generation in <cite>scan_propositions.py</cite> (saved to <cite>resources/heath/volume_X/book_y/propositions/index.json</cite>).</p></li>
-          <li><p>Added command-line argument <cite>–book</cite> to <cite>scan_propositions.py</cite> and <cite>stitch_propositions.py</cite> to target specific books.</p></li>
-          </ul>
-          <p><strong>changed</strong></p>
-          <ul class="simple">
-          <li><p>Updated <cite>scan_propositions.py</cite> to support scanning individual books and storing indexes locally within the book’s directory structure.</p></li>
-          <li><p>Updated <cite>stitch_propositions.py</cite> to consume per-book <cite>index.json</cite> files and support book-specific processing.</p></li>
-          <li><p>Refined regex for end-of-proposition detection to handle variations in spacing (e.g., “Q. E . D.”).</p></li>
-          </ul>
-          </section>
-          <section class="level-2" id="id13">
-          <h2>0.0.18<a class="headerlink" href="#id13" title="Link to this heading">¶</a></h2>
-          <p><em>2025-11-21</em></p>
-          <p><strong>changed</strong></p>
-          <ul class="simple">
-          <li><p>Standardized Heath resource folder structure (<cite>resources/heath/</cite>).</p></li>
-          <li><p>Moved JSON index files (<cite>pages.json</cite>, <cite>proposition_index.json</cite>, <cite>toc.json</cite>) into <cite>resources/heath/</cite>.</p></li>
-          <li><p>Refined <cite>scan_propositions.py</cite> to use pixel-based offsets and correct boundary detection.</p></li>
-          <li><p>Updated <cite>stitch_propositions.py</cite> to generate stitched images with body-text cropping.</p></li>
-          </ul>
-          </section>
-          <section class="level-2" id="id14">
-          <h2>0.0.17<a class="headerlink" href="#id14" title="Link to this heading">¶</a></h2>
-          <p><em>2025-11-20</em></p>
-          <p><strong>added</strong></p>
-          <ul class="simple">
-          <li><p>Introduced a modular ingestion pipeline (<cite>geometor.elements.ingest</cite>) for processing Heath’s Euclid PDFs.</p></li>
-          <li><p>Implemented dynamic cropping and stitching of proposition images based on text analysis.</p></li>
-          <li><p>Created a separate refinement pipeline (<cite>geometor.elements.ingest.refine</cite>) for analysis, cropping, and metadata extraction.</p></li>
-          </ul>
-          <p><strong>changed</strong></p>
-          <ul class="simple">
-          <li><p>Updated configuration to dynamically manage paths and global settings.</p></li>
-          <li><p>Canonical naming of cropped proposition images now uses Book numeral (e.g., <cite>I.1.png</cite>).</p></li>
-          <li><p>Renamed <cite>resources/extracted</cite> to <cite>resources/heath</cite> as the primary output directory for all extracted and processed assets.</p></li>
-          <li><p><cite>proposition_index.json</cite>, <cite>pages.json</cite>, and <cite>toc.json</cite> are now saved to their respective volume directories within <cite>resources/heath</cite>.</p></li>
-          </ul>
-          <p><strong>fixed</strong></p>
-          <ul class="simple">
-          <li><p>Corrected volume identification logic in analysis to prevent misattribution of propositions.</p></li>
-          </ul>
-          </section>
-          <section class="level-2" id="id15">
-          <h2>0.0.16<a class="headerlink" href="#id15" title="Link to this heading">¶</a></h2>
-          <p><em>2025-11-18</em></p>
-          <p><strong>added</strong></p>
-          <ul class="simple">
-          <li><p>Created a Python script to semi-automate cropping of proposition images from Heath’s Euclid scans.</p></li>
-          <li><p>Implemented JSON-based instruction file for defining crop coordinates.</p></li>
-          <li><p>Added functionality to stitch multi-page propositions.</p></li>
-          <li><p>Added functionality to extract diagram graphics from stitched proposition images.</p></li>
-          </ul>
-          </section>
-          <section class="level-2" id="id16">
-          <h2>0.0.15<a class="headerlink" href="#id16" title="Link to this heading">¶</a></h2>
-          <p><em>2025-11-18</em></p>
-          <p><strong>added</strong></p>
-          <ul class="simple">
-          <li><p>Added metadata file (<cite>resources/metadata.json</cite>) to store book titles and subtitles.</p></li>
-          <li><p>Updated transform script to use metadata in generated documentation.</p></li>
-          <li><p>Improved formatting for subtitles and introductions in book index pages.</p></li>
-          </ul>
-          </section>
-          <section class="level-2" id="id17">
-          <h2>0.0.14<a class="headerlink" href="#id17" title="Link to this heading">¶</a></h2>
-          <p><em>2025-11-17</em></p>
-          <p><strong>added</strong></p>
-          <ul class="simple">
-          <li><p>Added clickable nodes to the dependency graphs with root-relative URLs.</p></li>
-          <li><p>Styled end nodes in orange to distinguish them from other nodes.</p></li>
-          <li><p>Set graphviz output to SVG for better rendering and interactivity.</p></li>
-          </ul>
-          </section>
-          <section class="level-2" id="id18">
-          <h2>0.0.13<a class="headerlink" href="#id18" title="Link to this heading">¶</a></h2>
-          <p><em>2025-11-17</em></p>
-          <p><strong>added</strong></p>
-          <ul class="simple">
-          <li><p>Added a table of contents to the book index pages using the <cite>contents</cite> directive.</p></li>
-          <li><p>Moved the collection titles out of the <cite>collection</cite> directive and into the main document flow as section headings.</p></li>
-          </ul>
-          </section>
-          <section class="level-2" id="id19">
-          <h2>0.0.12<a class="headerlink" href="#id19" title="Link to this heading">¶</a></h2>
-          <p><em>2025-11-16</em></p>
-          <p><strong>added</strong></p>
-          <ul class="simple">
-          <li><p>Implemented collection directives in the RST generation script to dynamically create sorted lists of definitions, postulates, common notions, and propositions.</p></li>
-          <li><p>Added cumulative numbering for all elements across all books.</p></li>
-          <li><p>Implemented note directives to render Heath’s footnotes from the XML source.</p></li>
-          </ul>
-          </section>
-          <section class="level-2" id="id20">
-          <h2>0.0.11<a class="headerlink" href="#id20" title="Link to this heading">¶</a></h2>
-          <p><em>2025-11-16</em></p>
-          <p><strong>changed</strong></p>
-          <ul class="simple">
-          <li><p>Refactored XML source files, consolidating them into book-level files.</p></li>
-          <li><p>Corrected misplaced proposition reference in <cite>elem.1.22</cite>.</p></li>
-          </ul>
-          </section>
-          <section class="level-2" id="id21">
-          <h2>0.0.10<a class="headerlink" href="#id21" title="Link to this heading">¶</a></h2>
-          <p><em>2025-11-16</em></p>
-          <p><strong>fixed</strong></p>
-          <ul class="simple">
-          <li><p>Corrected porism handling in the RST generation script to prevent duplicate content and ensure canonical IDs are used for headings.</p></li>
-          </ul>
-          </section>
-          <section class="level-2" id="id22">
-          <h2>0.0.9<a class="headerlink" href="#id22" title="Link to this heading">¶</a></h2>
-          <p><em>2025-11-16</em></p>
-          <p><strong>added</strong></p>
-          <ul class="simple">
-          <li><p>Added taxonomy fields to the generated RST files, including <cite>:type:</cite>, <cite>:categories:</cite>, and <cite>:tags:</cite>.</p></li>
-          </ul>
-          </section>
-          <section class="level-2" id="id23">
-          <h2>0.0.8<a class="headerlink" href="#id23" title="Link to this heading">¶</a></h2>
-          <p><em>2025-11-16</em></p>
-          <p><strong>changed</strong></p>
-          <ul class="simple">
-          <li><p>Updated the <cite>elements_transform</cite> script to include images in the generated RST files.</p></li>
-          <li><p>Added <cite>width</cite> attribute to the figure directive to control image size.</p></li>
-          </ul>
-          <p><strong>fixed</strong></p>
-          <ul class="simple">
-          <li><p>Removed placeholder figures from the generated RST files.</p></li>
-          </ul>
-          </section>
-          <section class="level-2" id="id24">
-          <h2>0.0.7<a class="headerlink" href="#id24" title="Link to this heading">¶</a></h2>
-          <p><em>2025-11-15</em></p>
-          <p><strong>added</strong></p>
-          <ul class="simple">
-          <li><p>Extended RST generation to include Books 1-6 of Euclid’s Elements.</p></li>
-          </ul>
-          <p><strong>changed</strong></p>
-          <ul class="simple">
-          <li><p>Removed the “Proof.” heading from the generated RST files for a cleaner output.</p></li>
-          </ul>
-          </section>
-          <section class="level-2" id="id25">
-          <h2>0.0.6<a class="headerlink" href="#id25" title="Link to this heading">¶</a></h2>
-          <p><em>2025-11-15</em></p>
-          <p><strong>added</strong></p>
-          <ul class="simple">
-          <li><p>Support for parsing and generating RST for Book III of Euclid’s Elements.</p></li>
-          </ul>
-          <p><strong>fixed</strong></p>
-          <ul class="simple">
-          <li><p>Corrected RST reference linking for various element types (Definitions, Propositions, Common Notions).</p></li>
-          <li><p>Addressed issue with porisms not being parsed and included in the generated RST files.</p></li>
-          </ul>
-          <p><strong>changed</strong></p>
-          <ul class="simple">
-          <li><p>Refactored inline XML to RST conversion logic for better handling of nested tags and enunciation-specific formatting.</p></li>
-          </ul>
-          </section>
-          <section class="level-2" id="id26">
-          <h2>0.0.5<a class="headerlink" href="#id26" title="Link to this heading">¶</a></h2>
-          <p><em>2025-11-15</em></p>
-          <p><strong>fixed</strong></p>
-          <ul class="simple">
-          <li><p>Fixed XML parsing for nested tags within <cite>&lt;hi&gt;</cite> elements.</p></li>
-          <li><p>Corrected handling of <cite>&lt;term&gt;</cite> elements to ensure proper bolding.</p></li>
-          <li><p>Standardized enunciation formatting as blockquotes for Books I and II.</p></li>
-          </ul>
-          <p><strong>added</strong></p>
-          <ul class="simple">
-          <li><p>Added Book II to the RST generation test suite.</p></li>
-          </ul>
-          </section>
-          <section class="level-2" id="id27">
-          <h2>0.0.4<a class="headerlink" href="#id27" title="Link to this heading">¶</a></h2>
-          <p><em>2025-11-15</em></p>
-          <p><strong>added</strong></p>
-          <ul class="simple">
-          <li><p>Added <cite>elements_transform</cite> script for converting Euclid’s Elements from XML to RST.</p></li>
-          <li><p>Established new, structured RST output in <cite>docsrc/elements2/</cite>.</p></li>
-          </ul>
-          <p><strong>changed</strong></p>
-          </section>
-          <section class="level-2" id="id28">
-          <h2>0.0.3<a class="headerlink" href="#id28" title="Link to this heading">¶</a></h2>
-          <p><em>2025-11-11</em></p>
-          <p><strong>added</strong></p>
-          <ul class="simple">
-          <li><p>Added dependency extraction from XML files.</p></li>
-          <li><p>Added fallback logic to handle XML files without explicit Enunc/Proof sections.</p></li>
-          </ul>
-          <p><strong>changed</strong></p>
-          <ul class="simple">
-          <li><p>Improved RST generation to include a list of dependencies.</p></li>
-          </ul>
-          </section>
-          </section>
+        <h1>changelog<a class="headerlink" href="#changelog" title="Link to this heading">¶</a></h1>
+        <section class="level-2" id="id1">
+        <h2>0.3.3<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+        <p><em>2026-10-29</em></p>
+        <p><strong>added</strong></p>
+        <ul class="simple">
+        <li><p>Added formal proposition and rule signatures (<cite>.. signature:: &lt;kind&gt;</cite>) with <cite>given</cite> and <cite>construct</cite> / <cite>prove</cite> contracts across all G-Index entries in <cite>pseudocode.py</cite>.</p></li>
+        <li><p>Converted <cite>construct</cite> steps to composable <cite>:fn:</cite> function invocations (<cite>:fn:`circle &lt;G.4&gt;`(…) → …</cite>), <cite>intersect</cite> steps to symbolic <cite>∩</cite> intersections, and <cite>assert</cite> / <cite>conclude</cite> justifications to semantic rule names (<cite>∵ circle_radii &lt;G.2&gt;</cite>).</p></li>
+        <li><p>Merged multi-block enunciations split across folio breaks while preserving trailing Porism blocks in <cite>footer_blocks</cite>.</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="id2">
+        <h2>0.3.2<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+        <p><em>2026-10-29</em></p>
+        <p><strong>added</strong></p>
+        <ul class="simple">
+        <li><p>Migrated and validated <cite>geometor.model</cite> Python construction scripts (<cite>resources/constructions/&lt;id&gt;/g1.py</cite>, <cite>g2.py</cite>, …) into <cite>geometor.elements</cite>.</p></li>
+        <li><p>Created <cite>pseudocode.py</cite> to generate tightened, fact-oriented enunciations and structured <cite>.. step:: &lt;kind&gt; [justification]</cite> sequences (<cite>given</cite>, <cite>construct</cite>, <cite>intersect</cite>, <cite>assert</cite>, <cite>conclude</cite>).</p></li>
+        <li><p>Expanded each <cite>docsrc/elements2/G.&lt;n&gt;/</cite> directory into a self-contained folder with 3 companion tracks (<cite>index.rst</cite> for <strong>Pseudocode</strong>, <cite>code.rst</cite> for <strong>Code</strong>, and <cite>heath.rst</cite> for <strong>Heath</strong>) alongside folio-free <cite>g1.svg</cite> and <cite>g1.py</cite> artifacts.</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="id3">
+        <h2>0.3.1<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+        <p><em>2026-10-29</em></p>
+        <p><strong>changed</strong></p>
+        <ul class="simple">
+        <li><p>Regenerated the complete 13-book Euclid G-Index (<cite>G.1</cite> through <cite>G.525</cite> and <cite>81</cite> orphans in <cite>docsrc/elements2/</cite>) with updated <cite>:g:</cite> references and recalibrated SVGs from <cite>euclid</cite>.</p></li>
+        <li><p>Stripped Heath’s inline footnote markers (<cite>[#f1]_</cite>) and footnote blocks (<cite>.. [#f1] …</cite>) in <cite>graph.py</cite> (<cite>strip_footnotes</cite>).</p></li>
+        <li><p>Added truncated enunciation tooltips to Graphviz dependency nodes and exported <cite>resources/enunciations.json</cite> for <cite>G.&lt;n&gt;</cite> and canonical Euclid IDs.</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="id4">
+        <h2>0.3.0<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+        <p><em>2026-10-29</em></p>
+        <p><strong>added</strong></p>
+        <ul class="simple">
+        <li><p>Rebuilt the Elements 2.0 (G-Index) pipeline (<cite>graph.py</cite>, <cite>g_index.py</cite>, <cite>__main__.py</cite>) directly from the composed Heath edition in <cite>../euclid/docsrc/heath/</cite>.</p></li>
+        <li><p>Transformed <cite>:g:</cite> roles to display explicit GEOMETOR symbolic element indications (<cite>/ A B /</cite>, <cite>&lt; A B C &gt;</cite>, <cite>&lt; B A C )</cite>, <cite>( B C D )</cite>, <cite>[ A B ]</cite>, <cite>A</cite>).</p></li>
+        <li><p>Remapped <cite>:just:</cite>, <cite>.. assertion::</cite>, and <cite>.. subclause::</cite> justification references to G-Index targets (<cite>[G.1] &lt;G.1&gt;</cite>), resolving <cite>[id.]</cite> / <cite>[*id.*]</cite> back-references.</p></li>
+        <li><p>Added rich taxonomy metadata (<cite>:categories:</cite>, <cite>:tags:</cite>, <cite>:type:</cite>, <cite>:subtype:</cite>, <cite>:original_id:</cite>, <cite>:canonical_id:</cite>) and inline interactive SVG diagrams (<cite>.. picture:: &lt;folio&gt;.g&lt;k&gt;.svg</cite>) to each G-node.</p></li>
+        <li><p>Configured the Euclid Book Codex layout (<cite>:layout: book</cite>) and styles for the G-Index collection and node pages.</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="id5">
+        <h2>0.2.2<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
+        <p><em>2025-12-20</em></p>
+        <p><strong>added</strong></p>
+        <ul class="simple">
+        <li><p>Implemented template-based RST generation for G-nodes.</p></li>
+        <li><p>Added <cite>:excerpt:</cite> metadata to G-nodes for cleaner documentation snippets.</p></li>
+        <li><p>Introduced hard links for Heath IDs to ensure stable intersphinx references.</p></li>
+        <li><p>Added Graphviz dependency visualizations to every G-node.</p></li>
+        </ul>
+        <p><strong>changed</strong></p>
+        <ul class="simple">
+        <li><p>Separated <cite>geometor.elements</cite> from <cite>geometor.euclid</cite> source tree.</p></li>
+        <li><p>Refactored <cite>graph.py</cite> to parse RST directly from <cite>geometor.euclid</cite>.</p></li>
+        <li><p>Overhauled project documentation (README, GEMINI.md, Design, Mission).</p></li>
+        <li><p>Advanced docstrings to Google style for the core G-Index pipeline.</p></li>
+        <li><p>Limited initial G-Index generation to Book I for verification.</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="id6">
+        <h2>0.2.1<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h2>
+        <p><em>2025-12-15</em></p>
+        <p><strong>changed</strong></p>
+        <ul class="simple">
+        <li><p>Cleaned up docstrings and type hints across the codebase.</p></li>
+        <li><p>Added missing docstrings to <cite>g_index.py</cite>, <cite>graph.py</cite>, <cite>__main__.py</cite>, and <cite>__init__.py</cite>.</p></li>
+        <li><p>Fixed build issues related to <cite>g_index</cite> generation.</p></li>
+        <li><p>Removed legacy documentation in <cite>docsrc/elements2</cite>.</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="id7">
+        <h2>0.2.0<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h2>
+        <p><em>2025-12-12</em></p>
+        <p><strong>changed</strong></p>
+        <ul class="simple">
+        <li><p>Reset git repository to start fresh with G-Index and codification scope.</p></li>
+        <li><p>Restored project structure and dependencies.</p></li>
+        <li><p>Updated <cite>GEMINI.md</cite> and <cite>pyproject.toml</cite>.</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="id8">
+        <h2>0.1.4<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h2>
+        <p><em>2025-12-09</em></p>
+        <p><strong>changed</strong></p>
+        <ul class="simple">
+        <li><p>Migrated from <cite>.. figure::</cite> to <cite>.. picture::</cite> directive in generated RST documentation for better image handling.</p></li>
+        <li><p>Updated <cite>src/geometor/elements/transform.py</cite> to generate <cite>.. picture::</cite> directives.</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="id9">
+        <h2>0.1.3<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h2>
+        <ul class="simple">
+        <li><p>Refined docstrings and type hinting.</p></li>
+        <li><p>Fixed <cite>from __future__ import annotations</cite> placement.</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="id10">
+        <h2>0.1.1<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h2>
+        <p><em>2025-11-23</em></p>
+        <p><strong>changed</strong></p>
+        <ul class="simple">
+        <li><p>Updated <cite>transform.py</cite> to target <cite>docsrc/heath</cite> as the primary output directory for generated RST.</p></li>
+        <li><p>Extended <cite>transform.py</cite> to process all 13 books of the Elements.</p></li>
+        <li><p>Modified <cite>transform.py</cite> to invert colors for extracted graphic images (for dark mode compatibility).</p></li>
+        <li><p>Removed fixed <cite>width</cite> attribute from figure directives in generated RST to allow for responsive sizing.</p></li>
+        <li><p>Updated dependency graph links to point to the new <cite>heath</cite> directory structure.</p></li>
+        <li><p>Removed the deprecated <cite>docsrc/elements2</cite> directory.</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="id11">
+        <h2>0.1.0<a class="headerlink" href="#id11" title="Link to this heading">¶</a></h2>
+        <p><em>2025-11-23</em></p>
+        <p><strong>added</strong></p>
+        <ul class="simple">
+        <li><p>Integrated automatic bleed removal and image cleanup into the proposition stitching pipeline.</p></li>
+        <li><p>Added <cite>clean_image</cite> function in <cite>src/geometor/elements/ingest/cleanup.py</cite> to remove background noise and artifacts (bleed-through) from scanned images.</p></li>
+        <li><p>Updated <cite>stitch_propositions.py</cite> to apply cleanup processing during the stitching phase.</p></li>
+        </ul>
+        <p><strong>changed</strong></p>
+        <ul class="simple">
+        <li><p>Removed temporary bleed test scripts and images from the project root.</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="id12">
+        <h2>0.0.20<a class="headerlink" href="#id12" title="Link to this heading">¶</a></h2>
+        <p><em>2025-11-21</em></p>
+        <p><strong>changed</strong></p>
+        <ul class="simple">
+        <li><p>Updated <cite>stitch_propositions.py</cite>, <cite>cropping.py</cite>, and <cite>crop_propositions.py</cite> to save extracted graphics to the <cite>cropped</cite> directory (alongside stitched propositions) instead of a separate <cite>graphics</cite> folder.</p></li>
+        <li><p>Changed the filename suffix for extracted graphics from <cite>_graphic.png</cite> to <cite>.graphic.png</cite> (e.g., <cite>I.1.graphic.png</cite>).</p></li>
+        <li><p>Added a warning and safeguard return statement to <cite>scan_propositions.py</cite> and <cite>cropping.py</cite> to prevent accidental overwrites of manual work.</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="id13">
+        <h2>0.0.19<a class="headerlink" href="#id13" title="Link to this heading">¶</a></h2>
+        <p><em>2025-11-21</em></p>
+        <p><strong>added</strong></p>
+        <ul class="simple">
+        <li><p>Added <cite>process_book.sh</cite> helper script for scanning and stitching propositions of a single book.</p></li>
+        <li><p>Implemented per-book <cite>index.json</cite> generation in <cite>scan_propositions.py</cite> (saved to <cite>resources/heath/volume_X/book_y/propositions/index.json</cite>).</p></li>
+        <li><p>Added command-line argument <cite>–book</cite> to <cite>scan_propositions.py</cite> and <cite>stitch_propositions.py</cite> to target specific books.</p></li>
+        </ul>
+        <p><strong>changed</strong></p>
+        <ul class="simple">
+        <li><p>Updated <cite>scan_propositions.py</cite> to support scanning individual books and storing indexes locally within the book’s directory structure.</p></li>
+        <li><p>Updated <cite>stitch_propositions.py</cite> to consume per-book <cite>index.json</cite> files and support book-specific processing.</p></li>
+        <li><p>Refined regex for end-of-proposition detection to handle variations in spacing (e.g., “Q. E . D.”).</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="id14">
+        <h2>0.0.18<a class="headerlink" href="#id14" title="Link to this heading">¶</a></h2>
+        <p><em>2025-11-21</em></p>
+        <p><strong>changed</strong></p>
+        <ul class="simple">
+        <li><p>Standardized Heath resource folder structure (<cite>resources/heath/</cite>).</p></li>
+        <li><p>Moved JSON index files (<cite>pages.json</cite>, <cite>proposition_index.json</cite>, <cite>toc.json</cite>) into <cite>resources/heath/</cite>.</p></li>
+        <li><p>Refined <cite>scan_propositions.py</cite> to use pixel-based offsets and correct boundary detection.</p></li>
+        <li><p>Updated <cite>stitch_propositions.py</cite> to generate stitched images with body-text cropping.</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="id15">
+        <h2>0.0.17<a class="headerlink" href="#id15" title="Link to this heading">¶</a></h2>
+        <p><em>2025-11-20</em></p>
+        <p><strong>added</strong></p>
+        <ul class="simple">
+        <li><p>Introduced a modular ingestion pipeline (<cite>geometor.elements.ingest</cite>) for processing Heath’s Euclid PDFs.</p></li>
+        <li><p>Implemented dynamic cropping and stitching of proposition images based on text analysis.</p></li>
+        <li><p>Created a separate refinement pipeline (<cite>geometor.elements.ingest.refine</cite>) for analysis, cropping, and metadata extraction.</p></li>
+        </ul>
+        <p><strong>changed</strong></p>
+        <ul class="simple">
+        <li><p>Updated configuration to dynamically manage paths and global settings.</p></li>
+        <li><p>Canonical naming of cropped proposition images now uses Book numeral (e.g., <cite>I.1.png</cite>).</p></li>
+        <li><p>Renamed <cite>resources/extracted</cite> to <cite>resources/heath</cite> as the primary output directory for all extracted and processed assets.</p></li>
+        <li><p><cite>proposition_index.json</cite>, <cite>pages.json</cite>, and <cite>toc.json</cite> are now saved to their respective volume directories within <cite>resources/heath</cite>.</p></li>
+        </ul>
+        <p><strong>fixed</strong></p>
+        <ul class="simple">
+        <li><p>Corrected volume identification logic in analysis to prevent misattribution of propositions.</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="id16">
+        <h2>0.0.16<a class="headerlink" href="#id16" title="Link to this heading">¶</a></h2>
+        <p><em>2025-11-18</em></p>
+        <p><strong>added</strong></p>
+        <ul class="simple">
+        <li><p>Created a Python script to semi-automate cropping of proposition images from Heath’s Euclid scans.</p></li>
+        <li><p>Implemented JSON-based instruction file for defining crop coordinates.</p></li>
+        <li><p>Added functionality to stitch multi-page propositions.</p></li>
+        <li><p>Added functionality to extract diagram graphics from stitched proposition images.</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="id17">
+        <h2>0.0.15<a class="headerlink" href="#id17" title="Link to this heading">¶</a></h2>
+        <p><em>2025-11-18</em></p>
+        <p><strong>added</strong></p>
+        <ul class="simple">
+        <li><p>Added metadata file (<cite>resources/metadata.json</cite>) to store book titles and subtitles.</p></li>
+        <li><p>Updated transform script to use metadata in generated documentation.</p></li>
+        <li><p>Improved formatting for subtitles and introductions in book index pages.</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="id18">
+        <h2>0.0.14<a class="headerlink" href="#id18" title="Link to this heading">¶</a></h2>
+        <p><em>2025-11-17</em></p>
+        <p><strong>added</strong></p>
+        <ul class="simple">
+        <li><p>Added clickable nodes to the dependency graphs with root-relative URLs.</p></li>
+        <li><p>Styled end nodes in orange to distinguish them from other nodes.</p></li>
+        <li><p>Set graphviz output to SVG for better rendering and interactivity.</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="id19">
+        <h2>0.0.13<a class="headerlink" href="#id19" title="Link to this heading">¶</a></h2>
+        <p><em>2025-11-17</em></p>
+        <p><strong>added</strong></p>
+        <ul class="simple">
+        <li><p>Added a table of contents to the book index pages using the <cite>contents</cite> directive.</p></li>
+        <li><p>Moved the collection titles out of the <cite>collection</cite> directive and into the main document flow as section headings.</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="id20">
+        <h2>0.0.12<a class="headerlink" href="#id20" title="Link to this heading">¶</a></h2>
+        <p><em>2025-11-16</em></p>
+        <p><strong>added</strong></p>
+        <ul class="simple">
+        <li><p>Implemented collection directives in the RST generation script to dynamically create sorted lists of definitions, postulates, common notions, and propositions.</p></li>
+        <li><p>Added cumulative numbering for all elements across all books.</p></li>
+        <li><p>Implemented note directives to render Heath’s footnotes from the XML source.</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="id21">
+        <h2>0.0.11<a class="headerlink" href="#id21" title="Link to this heading">¶</a></h2>
+        <p><em>2025-11-16</em></p>
+        <p><strong>changed</strong></p>
+        <ul class="simple">
+        <li><p>Refactored XML source files, consolidating them into book-level files.</p></li>
+        <li><p>Corrected misplaced proposition reference in <cite>elem.1.22</cite>.</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="id22">
+        <h2>0.0.10<a class="headerlink" href="#id22" title="Link to this heading">¶</a></h2>
+        <p><em>2025-11-16</em></p>
+        <p><strong>fixed</strong></p>
+        <ul class="simple">
+        <li><p>Corrected porism handling in the RST generation script to prevent duplicate content and ensure canonical IDs are used for headings.</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="id23">
+        <h2>0.0.9<a class="headerlink" href="#id23" title="Link to this heading">¶</a></h2>
+        <p><em>2025-11-16</em></p>
+        <p><strong>added</strong></p>
+        <ul class="simple">
+        <li><p>Added taxonomy fields to the generated RST files, including <cite>:type:</cite>, <cite>:categories:</cite>, and <cite>:tags:</cite>.</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="id24">
+        <h2>0.0.8<a class="headerlink" href="#id24" title="Link to this heading">¶</a></h2>
+        <p><em>2025-11-16</em></p>
+        <p><strong>changed</strong></p>
+        <ul class="simple">
+        <li><p>Updated the <cite>elements_transform</cite> script to include images in the generated RST files.</p></li>
+        <li><p>Added <cite>width</cite> attribute to the figure directive to control image size.</p></li>
+        </ul>
+        <p><strong>fixed</strong></p>
+        <ul class="simple">
+        <li><p>Removed placeholder figures from the generated RST files.</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="id25">
+        <h2>0.0.7<a class="headerlink" href="#id25" title="Link to this heading">¶</a></h2>
+        <p><em>2025-11-15</em></p>
+        <p><strong>added</strong></p>
+        <ul class="simple">
+        <li><p>Extended RST generation to include Books 1-6 of Euclid’s Elements.</p></li>
+        </ul>
+        <p><strong>changed</strong></p>
+        <ul class="simple">
+        <li><p>Removed the “Proof.” heading from the generated RST files for a cleaner output.</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="id26">
+        <h2>0.0.6<a class="headerlink" href="#id26" title="Link to this heading">¶</a></h2>
+        <p><em>2025-11-15</em></p>
+        <p><strong>added</strong></p>
+        <ul class="simple">
+        <li><p>Support for parsing and generating RST for Book III of Euclid’s Elements.</p></li>
+        </ul>
+        <p><strong>fixed</strong></p>
+        <ul class="simple">
+        <li><p>Corrected RST reference linking for various element types (Definitions, Propositions, Common Notions).</p></li>
+        <li><p>Addressed issue with porisms not being parsed and included in the generated RST files.</p></li>
+        </ul>
+        <p><strong>changed</strong></p>
+        <ul class="simple">
+        <li><p>Refactored inline XML to RST conversion logic for better handling of nested tags and enunciation-specific formatting.</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="id27">
+        <h2>0.0.5<a class="headerlink" href="#id27" title="Link to this heading">¶</a></h2>
+        <p><em>2025-11-15</em></p>
+        <p><strong>fixed</strong></p>
+        <ul class="simple">
+        <li><p>Fixed XML parsing for nested tags within <cite>&lt;hi&gt;</cite> elements.</p></li>
+        <li><p>Corrected handling of <cite>&lt;term&gt;</cite> elements to ensure proper bolding.</p></li>
+        <li><p>Standardized enunciation formatting as blockquotes for Books I and II.</p></li>
+        </ul>
+        <p><strong>added</strong></p>
+        <ul class="simple">
+        <li><p>Added Book II to the RST generation test suite.</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="id28">
+        <h2>0.0.4<a class="headerlink" href="#id28" title="Link to this heading">¶</a></h2>
+        <p><em>2025-11-15</em></p>
+        <p><strong>added</strong></p>
+        <ul class="simple">
+        <li><p>Added <cite>elements_transform</cite> script for converting Euclid’s Elements from XML to RST.</p></li>
+        <li><p>Established new, structured RST output in <cite>docsrc/elements2/</cite>.</p></li>
+        </ul>
+        <p><strong>changed</strong></p>
+        </section>
+        <section class="level-2" id="id29">
+        <h2>0.0.3<a class="headerlink" href="#id29" title="Link to this heading">¶</a></h2>
+        <p><em>2025-11-11</em></p>
+        <p><strong>added</strong></p>
+        <ul class="simple">
+        <li><p>Added dependency extraction from XML files.</p></li>
+        <li><p>Added fallback logic to handle XML files without explicit Enunc/Proof sections.</p></li>
+        </ul>
+        <p><strong>changed</strong></p>
+        <ul class="simple">
+        <li><p>Improved RST generation to include a list of dependencies.</p></li>
+        </ul>
+        </section>
+        </section>
 
       </div>
-      <footer>
-
-        <div class="meta">
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="todos/expand_research.html" title="Expand Research">&larr; <span class="nav-label">Expand Research</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="index.html">GEOMETOR • elements</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="modules/api/index.html" title="API Reference"><span class="nav-label">API Reference</span> &rarr;</a>
+          </div>
         </div>
-        <nav class="context">
-          <div class="prev">
-             <a href="todos/expand_research.html" title="Expand Research" >Prev</a>
-          </div>
-          <div class="next">
-            <a href="modules/api/index.html" title="API Reference" >Next</a>
-          </div>
-        </nav>
       </footer>
     </article>
   </main>
@@ -622,28 +639,28 @@
   <footer>
     <div class="footer-nav">
       <ul>
-        <li><a href="about.html">about</a></li>
-        <li><a href="connect.html">connect</a></li>
-        <li><a href="glossary.html">glossary</a></li>
-        <li><a href="todos/index.html">todos</a></li>
-        <li><a href="#">changelog</a></li>
+        <li><a href="about.html"  >about</a></li>
+        <li><a href="connect.html"  >connect</a></li>
+        <li><a href="glossary.html"  >glossary</a></li>
+        <li><a href="todos/index.html"  >todos</a></li>
+        <li><a href="#" class="is-active" aria-selected="true" aria-current="page">changelog</a></li>
       </ul>
     </div>
     <hr />
     <div role="contentinfo">
       <p>
-        &copy; Copyright .
+        &copy; Copyright 2026, GEOMETOR.
       </p>
     </div>
   </footer>
 
   <script src="_static/jquery.js?v=5d32c60e"></script>
   <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="_static/documentation_options.js?v=5929fcd5"></script>
+  <script src="_static/documentation_options.js?v=d5a15cff"></script>
   <script src="_static/doctools.js?v=fd6eb6e6"></script>
   <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="_static/js/collection_controls.js?v=b6b5297a"></script>
-  <script src="_static/js/geometor_interactive.js?v=421e4467"></script>
+  <script src="_static/js/geometor_interactive.js?v=4430a5d4"></script>
   <script src="_static/js/search_highlight.js"></script>
 
 </body>

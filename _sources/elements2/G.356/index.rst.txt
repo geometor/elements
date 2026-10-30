@@ -24,22 +24,23 @@ G.356
 
    If two straight lines incommensurable in square which make the sum of the squares on them medial, and the rectangle contained by them medial and also incommensurable with the sum of the squares on them, be added together, the whole straight line is irrational; and let it be called the:term:`**side of the sum of two medial areas** <side-of-the-sum-of-two-medial-areas>`.
 
+.. signature:: theorem
+
+   | :fn:`straight_lines_incommensurable_x_41 <G.356>`\ ()
+   | **prove** :g:`/ A C / <g1:/ A C />` is irrational
+
 .. picture:: g1.svg
    :alt: Proposition 41 diagram
 
-.. step:: assert [G.350] <G.350>
+.. step:: construct
 
-   For let two straight lines :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` incommensurable in square and satisfying the given conditions be added together
-
-.. step:: assert
-
-   Let a rational straight line :g:`/ D E / <g1:/ D E />` be set out
+   :fn:`find_straight_lines_x_35 <G.350>`: Let two straight lines :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` incommensurable in square and satisfying the given conditions be added together
 
 .. step:: construct
 
-   Let there be applied to :g:`/ D E / <g1:/ D E />` the rectangle :g:`< D F > <g1:< D F >>` equal to the squares on :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, and the rectangle :g:`< G H > <g1:< G H >>` equal to twice the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`
+   Let a rational straight line :g:`/ D E / <g1:/ D E />` be set out, and let there be applied to :g:`/ D E / <g1:/ D E />` the rectangle :g:`< D F > <g1:< D F >>` equal to the squares on :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, and the rectangle :g:`< G H > <g1:< G H >>` equal to twice the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`
 
-.. step:: assert [G.65] <G.65>
+.. step:: assert ∵ square_of_sum <G.65>
 
    Therefore the whole :g:`< D H > <g1:< D H >>` is equal to the square on :g:`/ A C / <g1:/ A C />`.
 
@@ -55,7 +56,7 @@ G.356
 
    It is applied to the rational straight line :g:`/ D E / <g1:/ D E />`;
 
-.. step:: assert [G.336] <G.336>
+.. step:: assert ∵ square_medial_straight <G.336>
 
    Therefore :g:`/ D G / <g1:/ D G />` is rational and incommensurable in length with :g:`/ D E / <g1:/ D E />`.
 
@@ -67,7 +68,7 @@ G.356
 
    And, since the squares on :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are incommensurable with twice the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`,
 
-.. step:: assert [G.163, G.323] <G.163, G.323>
+.. step:: assert ∵ triangles_parallelograms_height, magnitudes_proportional_commensurable <G.163, G.323>
 
    :g:`< D F > <g1:< D F >>` is incommensurable with :g:`< G H > <g1:< G H >>`; so that :g:`/ D G / <g1:/ D G />` is also incommensurable with :g:`/ G K / <g1:/ G K />`.
 
@@ -75,7 +76,7 @@ G.356
 
    They are rational;
 
-.. step:: assert [G.351] <G.351>
+.. step:: assert ∵ rational_straight_lines <G.351>
 
    Therefore :g:`/ D G / <g1:/ D G />`, :g:`/ G K / <g1:/ G K />` are rational straight lines commensurable in square only; therefore :g:`/ D K / <g1:/ D K />` is irrational and what is called binomial.
 
@@ -83,7 +84,7 @@ G.356
 
    :g:`/ D E / <g1:/ D E />` is rational;
 
-.. step:: assert [G.332] <G.332>
+.. step:: assert ∵ square_assigned_straight_def <G.332>
 
    Therefore :g:`< D H > <g1:< D H >>` is irrational, and the side of the square which is equal to it is irrational.
 

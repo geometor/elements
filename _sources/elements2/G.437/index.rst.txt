@@ -24,10 +24,15 @@ G.437
 
    If from a medial area there be subtracted a medial area incommensurable with the whole, the two remaining irrational straight lines arise, either a second apotome of a medial straight line or a straight line which produces with a medial area a medial whole.
 
+.. signature:: theorem
+
+   | :fn:`medial_area_there <G.437>`\ ()
+   | **prove** the "side" of :g:`< E C > <g1:< E C >>` is one of two irrational straight lines, either a second apotome of a medial straight line or a straight line which produces with a medial area a medial whole
+
 .. picture:: g1.svg
    :alt: Proposition 110
 
-.. step:: assert
+.. step:: construct
 
    As in the foregoing figures, let there be subtracted from the medial area :g:`< B C > <g1:< B C >>` the medial area :g:`< B D > <g1:< B D >>` incommensurable with the whole
 
@@ -35,7 +40,7 @@ G.437
 
    Since each of the rectangles :g:`< B C > <g1:< B C >>`, :g:`< B D > <g1:< B D >>` is medial, and :g:`< B C > <g1:< B C >>` is incommensurable with :g:`< B D > <g1:< B D >>`,
 
-.. step:: assert [G.336] <G.336>
+.. step:: assert ∵ square_medial_straight <G.336>
 
    It follows that each of :g:`/ F H / <g1:/ F H />`, :g:`/ F K / <g1:/ F K />` will be rational and incommensurable in length with :g:`/ F G / <g1:/ F G />`.
 
@@ -43,7 +48,7 @@ G.437
 
    And, since :g:`< B C > <g1:< B C >>` is incommensurable with :g:`< B D > <g1:< B D >>`, that is, :g:`< G H > <g1:< G H >>` with :g:`< G K > <g1:< G K >>`,
 
-.. step:: assert [G.163, G.323, G.394] <G.163, G.323, G.394>
+.. step:: assert ∵ triangles_parallelograms_height, magnitudes_proportional_commensurable, rational_straight_line <G.163, G.323, G.394>
 
    :g:`/ H F / <g1:/ H F />` is also incommensurable with :g:`/ F K / <g1:/ F K />`; therefore :g:`/ F H / <g1:/ F H />`, :g:`/ F K / <g1:/ F K />` are rational straight lines commensurable in square only; therefore :g:`/ K H / <g1:/ K H />` is an apotome.
 
@@ -51,11 +56,11 @@ G.437
 
    If then the square on :g:`/ F H / <g1:/ F H />` is greater than the square on :g:`/ F K / <g1:/ F K />` by the square on a straight line commensurable with :g:`/ F H / <g1:/ F H />`, while neither of :g:`/ F H / <g1:/ F H />`, :g:`/ F K / <g1:/ F K />` is commensurable in length with the rational straight line :g:`/ F G / <g1:/ F G />` set out,
 
-.. step:: assert [G.410] <G.410>
+.. step:: assert ∵ commensurable_length_rational_def <G.410>
 
    :g:`/ K H / <g1:/ K H />` is a third apotome.
 
-.. step:: assert [G.420] <G.420>
+.. step:: assert ∵ area_contained_rational_x_93 <G.420>
 
    :g:`/ K L / <g1:/ K L />` is rational, and the rectangle contained by a rational straight line and a third apotome is irrational, and the "side" of it is irrational, and is called a second apotome of a medial straight line.
 
@@ -67,11 +72,11 @@ G.437
 
    But, if the square on :g:`/ F H / <g1:/ F H />` is greater than the square on :g:`/ F K / <g1:/ F K />` by the square on a straight line incommensurable with :g:`/ F H / <g1:/ F H />`, while neither of :g:`/ H F / <g1:/ H F />`, :g:`/ F K / <g1:/ F K />` is commensurable in length with :g:`/ F G / <g1:/ F G />`,
 
-.. step:: assert [G.416] <G.416>
+.. step:: assert ∵ sixth_def <G.416>
 
    :g:`/ K H / <g1:/ K H />` is a sixth apotome.
 
-.. step:: assert [G.423] <G.423>
+.. step:: assert ∵ area_contained_rational_x_96 <G.423>
 
    The "side" of the rectangle contained by a rational straight line and a sixth apotome is a straight line which produces with a medial area a medial whole.
 

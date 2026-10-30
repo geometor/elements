@@ -23,6 +23,10 @@ G.416
 
    And, if neither, a:term:`**sixth** <sixth-apotome>`.
 
+.. signature:: def
+
+   | :fn:`sixth_def <G.416>`
+
 Required for
 ------------
 

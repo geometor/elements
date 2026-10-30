@@ -24,6 +24,12 @@ G.212
 
    If there be as many numbers as we please in proportion, then, as one of the antecedents is to one of the consequents, so are all the antecedents to all the consequents.
 
+.. signature:: theorem
+
+   | :fn:`there_many_numbers <G.212>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`)
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` be as many numbers as we please in proportion, so that, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`
+   | **prove** as :g:`A <g1:A>` is to :g:`B <g1:B>`, so are :g:`A <g1:A>`, :g:`C <g1:C>` to :g:`B <g1:B>`, :g:`D <g1:D>`
+
 .. picture:: g1.svg
    :alt: Proposition 12 Diagram
 
@@ -33,17 +39,21 @@ G.212
 
 .. step:: assert
 
+   I say that, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so are :g:`A <g1:A>`, :g:`C <g1:C>` to :g:`B <g1:B>`, :g:`D <g1:D>`.
+
+.. step:: assert
+
    For since, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`,
 
-.. step:: assert [G.210] <G.210>
+.. step:: assert ∵ numbers_proportional_multiple_def <G.210>
 
    Whatever part or parts :g:`A <g1:A>` is of :g:`B <g1:B>`, the same part or parts is :g:`C <g1:C>` of :g:`D <g1:D>` also.
 
-.. step:: assert [G.204, G.205] <G.204, G.205>
+.. step:: assert ∵ number_part_number, number_parts_number <G.204, G.205>
 
    Therefore also the sum of :g:`A <g1:A>`, :g:`C <g1:C>` is the same part or the same parts of the sum of :g:`B <g1:B>`, :g:`D <g1:D>` that :g:`A <g1:A>` is of :g:`B <g1:B>`.
 
-.. step:: conclude [G.210] <G.210>
+.. step:: conclude ∵ numbers_proportional_multiple_def <G.210>
 
    Therefore, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so are :g:`A <g1:A>`, :g:`C <g1:C>` to :g:`B <g1:B>`, :g:`D <g1:D>`.
 

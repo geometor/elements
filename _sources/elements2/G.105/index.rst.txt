@@ -24,24 +24,22 @@ G.105
 
    In equal circles equal angles stand on equal circumferences, whether they stand at the centres or at the circumferences.
 
+.. signature:: theorem
+
+   | :fn:`equal_circles_equal <G.105>`\ (:g:`( A B C ) <g1:( A B C )>`, :g:`( D E F ) <g1:( D E F )>`, :g:`< B G C ) <g1:< B G C )>`, :g:`< E H F ) <g1:< E H F )>`)
+   | **given** :g:`( A B C ) <g1:( A B C )>`, :g:`( D E F ) <g1:( D E F )>` be :eq:`equal <g1:( A B C ) = g1:( D E F )>` circles, in them let there be :eq:`equal <g1:< B G C ) = g1:< E H F ); g1:< B A C ) = g1:< E D F )>` angles, namely at the centres :g:`< B G C ) <g1:< B G C )>`, :g:`< E H F ) <g1:< E H F )>`, at the circumferences :g:`< B A C ) <g1:< B A C )>`, :g:`< E D F ) <g1:< E D F )>`
+   | **prove** the circumference :g:`( B K C ) <g1:( B K C )>` is :eq:`equal <g1:( B K C ) = g1:( E L F )>` to the circumference :g:`( E L F ) <g1:( E L F )>`
+
 .. picture:: g1.svg
    :alt: Diagram
 
 .. step:: given
 
-   :g:`( A B C ) <g1:( A B C )>`, :g:`( D E F ) <g1:( D E F )>` be :eq:`equal <g1:( A B C ) = g1:( D E F )>` circles
-
-.. step:: assert
-
-   In them let there be :eq:`equal <g1:< B G C ) = g1:< E H F ); g1:< B A C ) = g1:< E D F )>` angles, namely at the centres :g:`< B G C ) <g1:< B G C )>`, :g:`< E H F ) <g1:< E H F )>`, and at the circumferences :g:`< B A C ) <g1:< B A C )>`, :g:`< E D F ) <g1:< E D F )>`
-
-.. step:: assert
-
-   The circumference :g:`( B K C ) <g1:( B K C )>` is :eq:`equal <g1:( B K C ) = g1:( E L F )>` to the circumference :g:`( E L F ) <g1:( E L F )>`.
+   :g:`( A B C ) <g1:( A B C )>`, :g:`( D E F ) <g1:( D E F )>` be :eq:`equal <g1:( A B C ) = g1:( D E F )>` circles, in them let there be :eq:`equal <g1:< B G C ) = g1:< E H F ); g1:< B A C ) = g1:< E D F )>` angles, namely at the centres :g:`< B G C ) <g1:< B G C )>`, :g:`< E H F ) <g1:< E H F )>`, at the circumferences :g:`< B A C ) <g1:< B A C )>`, :g:`< E D F ) <g1:< E D F )>`
 
 .. step:: construct
 
-   For let :g:`/ B C / <g1:/ B C />`, :g:`/ E F / <g1:/ E F />` be joined.
+   :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`C <g1:C>`) → :g:`/ B C / <g1:/ B C />`, :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`F <g1:F>`) → :g:`/ E F / <g1:/ E F />`
 
 .. step:: assert
 
@@ -55,7 +53,7 @@ G.105
 
    And the angle at :g:`G <g1:G>` is :eq:`equal <g1:< B G C ) = g1:< E H F )>` to the angle at :g:`H <g1:H>`;
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    Therefore the base :g:`/ B C / <g1:/ B C />` is :eq:`equal <g1:/ B C / = g1:/ E F />` to the base :g:`/ E F / <g1:/ E F />`.
 
@@ -63,7 +61,7 @@ G.105
 
    And, since the angle at :g:`A <g1:A>` is :eq:`equal <g1:< B A C ) = g1:< E D F )>` to the angle at :g:`D <g1:D>`,
 
-.. step:: assert [G.101] <G.101>
+.. step:: assert ∵ similar_segments_circles_def <G.101>
 
    The segment :g:`( B A C ) <g1:( B A C )>` is similar to the segment :g:`( E D F ) <g1:( E D F )>`;
 
@@ -71,7 +69,7 @@ G.105
 
    And they are upon :eq:`equal <g1:/ B C / = g1:/ E F />` straight lines.
 
-.. step:: assert [G.103] <G.103>
+.. step:: assert ∵ similar_segments_circles <G.103>
 
    Similar segments of circles on equal straight lines are equal to one another
 

@@ -24,22 +24,35 @@ G.501
 
    Cones and cylinders which are on equal bases are to one another as their heights.
 
+.. signature:: theorem
+
+   | :fn:`cones_cylinders_equal <G.501>`\ ()
+   | **prove** also, as the axis :g:`/ G H / <g1:/ G H />` is to the axis :g:`/ K L / <g1:/ K L />`, so is the cone :g:`< A B G > <g1:< A B G >>` to the cone :g:`< C D K > <g1:< C D K >>` and the cylinder :g:`< E B > <g1:< E B >>` to the cylinder :g:`< F D > <g1:< F D >>`
+
 .. picture:: g1.svg
    :alt: Proposition 14 Diagram
 
 .. step:: assert
 
-   For let :g:`< E B > <g1:< E B >>`, :g:`< F D > <g1:< F D >>` be cylinders on :eq:`equal <g1:( A B ) = g1:( C D )>` bases, :g:`( A B ) <g1:( A B )>`, :g:`( C D ) <g1:( C D )>`
+   Let :g:`< E B > <g1:< E B >>`, :g:`< F D > <g1:< F D >>` be cylinders on :eq:`equal <g1:( A B ) = g1:( C D )>` bases, :g:`( A B ) <g1:( A B )>`, :g:`( C D ) <g1:( C D )>`
+
+.. step:: assert
+
+   I say that, as the cylinder :g:`< E B > <g1:< E B >>` is to the cylinder :g:`< F D > <g1:< F D >>`, so is the axis :g:`/ G H / <g1:/ G H />` to the axis :g:`/ K L / <g1:/ K L />`.
 
 .. step:: construct
 
-   For let the axis :g:`/ K L / <g1:/ K L />` be produced to :g:`N <g1:N>`, let :g:`/ L N / <g1:/ L N />` be made :eq:`equal <g1:/ L N / = g1:/ G H />` to the axis :g:`/ G H / <g1:/ G H />`
+   :fn:`extend <G.7>`\ (the axis :g:`/ K L / <g1:/ K L />`) → :g:`N <g1:N>`
+
+.. step:: construct
+
+   :fn:`cut_equal_segment <G.9>`\ (the axis :g:`/ G H / <g1:/ G H />`) → :g:`/ L N / <g1:/ L N />` (:eq:`equal <g1:/ L N / = g1:/ G H />`)
 
 .. step:: assert
 
    Let the cylinder :g:`< C M > <g1:< C M >>` be conceived about :g:`/ L N / <g1:/ L N />` as axis.
 
-.. step:: assert [G.497] <G.497>
+.. step:: assert ∵ cones_cylinders_height <G.497>
 
    Since then the cylinders :g:`< E B > <g1:< E B >>`, :g:`< C M > <g1:< C M >>` are of the same height, they are to one another as their bases.
 
@@ -55,7 +68,7 @@ G.501
 
    And, since the cylinder :g:`< F M > <g1:< F M >>` has been cut by the plane :g:`( C D ) <g1:( C D )>` which is parallel to its opposite planes,
 
-.. step:: assert [G.500] <G.500>
+.. step:: assert ∵ cylinder_cut_plane <G.500>
 
    Therefore, as the cylinder :g:`< C M > <g1:< C M >>` is to the cylinder :g:`< F D > <g1:< F D >>`, so is the axis :g:`/ L N / <g1:/ L N />` to the axis :g:`/ K L / <g1:/ K L />`.
 
@@ -67,7 +80,7 @@ G.501
 
    Therefore, as the cylinder :g:`< E B > <g1:< E B >>` is to the cylinder :g:`< F D > <g1:< F D >>`, so is the axis :g:`/ G H / <g1:/ G H />` to the axis :g:`/ K L / <g1:/ K L />`.
 
-.. step:: assert [G.496] <G.496>
+.. step:: assert ∵ cone_part_cylinder <G.496>
 
    But, as the cylinder :g:`< E B > <g1:< E B >>` is to the cylinder :g:`< F D > <g1:< F D >>`, so is the cone :g:`< A B G > <g1:< A B G >>` to the cone :g:`< C D K > <g1:< C D K >>`.
 

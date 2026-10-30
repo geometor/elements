@@ -24,28 +24,30 @@ G.9
 
    Cut off from the greater of two unequal segments a segment equal to the less.
 
+.. signature:: problem
+
+   | :fn:`cut_equal_segment <G.9>`\ (:g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`) → :g:`/ A E / <g1:/ A E />`
+   | **given** :g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`, let :g:`/ A B / <g1:/ A B />` be the greater of them
+   | **construct** from :g:`/ A B / <g1:/ A B />` the greater :g:`/ A E / <g1:/ A E />` has been cut off :eq:`equal <g1:/ A E / = g1:C>` to :g:`C <g1:C>` the less
+
 .. picture:: g1.svg
    :alt: Proposition 3 figure
 
 .. step:: given
 
-   :g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>` be the two given unequal straight lines
+   :g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`, let :g:`/ A B / <g1:/ A B />` be the greater of them
 
-.. step:: assert
+.. step:: construct
 
-   Let :g:`/ A B / <g1:/ A B />` be the greater of them.
+   :fn:`transfer_segment <G.8>`\ (:g:`A <g1:A>`, :g:`C <g1:C>`) → :g:`/ A D / <g1:/ A D />` (:eq:`equal <g1:/ A D / = g1:C>`)
 
-.. step:: construct [G.8] <G.8>
+.. step:: construct
 
-   At :g:`A <g1:A>` let :g:`/ A D / <g1:/ A D />` be placed :eq:`equal <g1:/ A D / = g1:C>` to :g:`C <g1:C>`
+   :fn:`circle <G.4>`\ (:g:`A <g1:A>`, :g:`/ A D / <g1:/ A D />`) → :g:`( D E F ) <g1:( D E F )>`
 
-.. step:: construct [G.4] <G.4>
+.. step:: assert ∵ circle_radii <G.2>
 
-   And with center :g:`A <g1:A>` and distance :g:`/ A D / <g1:/ A D />` let :g:`( D E F ) <g1:( D E F )>` be described. Now, since :g:`A <g1:A>` is the center of :g:`( D E F ) <g1:( D E F )>`.
-
-.. step:: assert [G.2] <G.2>
-
-   :g:`/ A E / <g1:/ A E />` is :eq:`equal <g1:/ A E / = g1:/ A D />` to :g:`/ A D / <g1:/ A D />`.
+   Since :g:`A <g1:A>` is the center of :g:`( D E F ) <g1:( D E F )>` → :g:`/ A E / <g1:/ A E />` is :eq:`equal <g1:/ A E / = g1:/ A D />` to :g:`/ A D / <g1:/ A D />`.
 
 .. step:: assert
 
@@ -55,7 +57,7 @@ G.9
 
    Therefore each of :g:`/ A E / <g1:/ A E />`, :g:`C <g1:C>` is :eq:`equal <g1:/ A E / = g1:C = g1:/ A D />` to :g:`/ A D / <g1:/ A D />`
 
-.. step:: assert [G.1] <G.1>
+.. step:: assert ∵ equal_transitive <G.1>
 
    So that :g:`/ A E / <g1:/ A E />` is also :eq:`equal <g1:/ A E / = g1:C>` to :g:`C <g1:C>`.
 

@@ -24,16 +24,17 @@ G.304
 
    If an odd number be prime to any number, it is prime to the double of it.
 
+.. signature:: theorem
+
+   | :fn:`odd_number_prime <G.304>`\ ()
+   | **prove** :g:`A <g1:A>` is prime to :g:`C <g1:C>`
+
 .. picture:: g1.svg
    :alt: Book IX, Proposition 31
 
 .. step:: assert
 
-   For let the odd number :g:`A <g1:A>` be prime to any number :g:`B <g1:B>`
-
-.. step:: assert
-
-   Let :g:`C <g1:C>` be double of :g:`B <g1:B>`
+   Let the odd number :g:`A <g1:A>` be prime to any number :g:`B <g1:B>`, and let :g:`C <g1:C>` be double of :g:`B <g1:B>`
 
 .. step:: assert
 
@@ -41,11 +42,7 @@ G.304
 
 .. step:: assert
 
-   Let a number measure them
-
-.. step:: assert
-
-   Let it be :g:`D <g1:D>`.
+   Let a number measure them, and let it be :g:`D <g1:D>`.
 
 .. step:: assert
 
@@ -59,7 +56,7 @@ G.304
 
    Since :g:`D <g1:D>` which is odd measures :g:`C <g1:C>`, and :g:`C <g1:C>` is even,
 
-.. step:: assert [G.303] <G.303>
+.. step:: assert ∵ odd_number_measure <G.303>
 
    Therefore [:g:`D <g1:D>`] will measure the half of :g:`C <g1:C>` also.
 

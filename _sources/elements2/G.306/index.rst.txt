@@ -24,12 +24,17 @@ G.306
 
    Each of the numbers which are continually doubled beginning from a dyad is even-times even only.
 
+.. signature:: theorem
+
+   | :fn:`numbers_continually_doubled <G.306>`\ ()
+   | **prove** :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` are even-times even only; it is also even-times even only
+
 .. picture:: g1.svg
    :alt: Book IX, Proposition 32
 
 .. step:: assert
 
-   For let as many numbers as we please, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, have been continually doubled beginning from the dyad :g:`A <g1:A>`
+   Let as many numbers as we please, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, have been continually doubled beginning from the dyad :g:`A <g1:A>`
 
 .. step:: assert
 
@@ -37,13 +42,13 @@ G.306
 
 .. step:: assert
 
-   For let an unit be set out.
+   Let an unit be set out.
 
 .. step:: assert
 
    Since then as many numbers as we please beginning from an unit are in continued proportion, and the number :g:`A <g1:A>` after the unit is prime,
 
-.. step:: assert [G.284] <G.284>
+.. step:: assert ∵ many_numbers_please_ix_13 <G.284>
 
    Therefore :g:`D <g1:D>`, the greatest of the numbers :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, will not be measured by any other number except :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`.
 
@@ -51,7 +56,7 @@ G.306
 
    Each of the numbers :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` is even;
 
-.. step:: assert [G.305] <G.305>
+.. step:: assert ∵ even_times_even_def <G.305>
 
    Therefore :g:`D <g1:D>` is even-times even only.
 

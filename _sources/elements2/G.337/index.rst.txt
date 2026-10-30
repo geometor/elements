@@ -23,6 +23,10 @@ G.337
 
    With these hypotheses, it is proved that there exist straight lines infinite in multitude which are commensurable and incommensurable respectively, some in length only, and others in square also, with an assigned straight line. Let then the assigned straight line be called:term:`**rational** <rational>`, and those straight lines which are commensurable with it, whether in length and in square or in square only,:term:`**rational** <rational>`, but those which are incommensurable with it:term:`**irrational** <irrational>`.
 
+.. signature:: def
+
+   | :fn:`hypotheses_proved_there_def <G.337>`
+
 Required for
 ------------
 

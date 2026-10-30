@@ -24,6 +24,12 @@ G.411
 
    Find the third apotome.
 
+.. signature:: problem
+
+   | :fn:`find_apotome_x_87 <G.411>`\ (:g:`A <g1:A>`, :g:`E <g1:E>`, :g:`/ B C / <g1:/ B C />`, :g:`/ C D / <g1:/ C D />`) → :g:`/ F H / <g1:/ F H />`
+   | **given** a rational straight line :g:`A <g1:A>` be set out, let three numbers :g:`E <g1:E>`, :g:`/ B C / <g1:/ B C />`, :g:`/ C D / <g1:/ C D />` be set out which have not to one another the ratio which a square number has to a square number, but let :g:`/ C B / <g1:/ C B />` have to :g:`/ B D / <g1:/ B D />` the ratio which a square number has to a square number
+   | **construct** :g:`/ F H / <g1:/ F H />` is a third apotome
+
 .. picture:: g1.svg
    :alt: Proposition 87
 
@@ -31,7 +37,7 @@ G.411
 
    a rational straight line :g:`A <g1:A>` be set out, let three numbers :g:`E <g1:E>`, :g:`/ B C / <g1:/ B C />`, :g:`/ C D / <g1:/ C D />` be set out which have not to one another the ratio which a square number has to a square number, but let :g:`/ C B / <g1:/ C B />` have to :g:`/ B D / <g1:/ B D />` the ratio which a square number has to a square number
 
-.. step:: assert [G.319] <G.319>
+.. step:: assert ∵ magnitudes_ratio_number <G.319>
 
    Let it be contrived that, as :g:`E <g1:E>` is to :g:`/ B C / <g1:/ B C />`, so is the square on :g:`A <g1:A>` to the square on :g:`/ F G / <g1:/ F G />`, and, as :g:`/ B C / <g1:/ B C />` is to :g:`/ C D / <g1:/ C D />`, so is the square on :g:`/ F G / <g1:/ F G />` to the square on :g:`/ G H / <g1:/ G H />`.
 
@@ -39,7 +45,7 @@ G.411
 
    Since then, as :g:`E <g1:E>` is to :g:`/ B C / <g1:/ B C />`, so is the square on :g:`A <g1:A>` to the square on :g:`/ F G / <g1:/ F G />`,
 
-.. step:: assert [G.319] <G.319>
+.. step:: assert ∵ magnitudes_ratio_number <G.319>
 
    Therefore the square on :g:`A <g1:A>` is commensurable with the square on :g:`/ F G / <g1:/ F G />`.
 
@@ -55,7 +61,7 @@ G.411
 
    And, since :g:`E <g1:E>` has not to :g:`/ B C / <g1:/ B C />` the ratio which a square number has to a square number,
 
-.. step:: assert [G.322] <G.322>
+.. step:: assert ∵ squares_straight_lines <G.322>
 
    Therefore neither has the square on :g:`A <g1:A>` to the square on :g:`/ F G / <g1:/ F G />` the ratio which a square number has to a square number ; therefore :g:`A <g1:A>` is incommensurable in length with :g:`/ F G / <g1:/ F G />`.
 
@@ -63,7 +69,7 @@ G.411
 
    Since, as :g:`/ B C / <g1:/ B C />` is to :g:`/ C D / <g1:/ C D />`, so is the square on :g:`/ F G / <g1:/ F G />` to the square on :g:`/ G H / <g1:/ G H />`,
 
-.. step:: assert [G.319] <G.319>
+.. step:: assert ∵ magnitudes_ratio_number <G.319>
 
    Therefore the square on :g:`/ F G / <g1:/ F G />` is commensurable with the square on :g:`/ G H / <g1:/ G H />`.
 
@@ -79,7 +85,7 @@ G.411
 
    And, since :g:`/ B C / <g1:/ B C />` has not to :g:`/ C D / <g1:/ C D />` the ratio which a square number has to a square number,
 
-.. step:: assert [G.322] <G.322>
+.. step:: assert ∵ squares_straight_lines <G.322>
 
    Therefore neither has the square on :g:`/ F G / <g1:/ F G />` to the square on :g:`/ G H / <g1:/ G H />` the ratio which a square number has to a square number ; therefore :g:`/ F G / <g1:/ F G />` is incommensurable in length with :g:`/ G H / <g1:/ G H />`.
 
@@ -87,7 +93,7 @@ G.411
 
    Both are rational ;
 
-.. step:: assert [G.394] <G.394>
+.. step:: assert ∵ rational_straight_line <G.394>
 
    Therefore :g:`/ F G / <g1:/ F G />`, :g:`/ G H / <g1:/ G H />` are rational straight lines commensurable in square only ; therefore :g:`/ F H / <g1:/ F H />` is an apotome.
 
@@ -99,7 +105,7 @@ G.411
 
    For since, as :g:`E <g1:E>` is to :g:`/ B C / <g1:/ B C />`, so is the square on :g:`A <g1:A>` to the square on :g:`/ F G / <g1:/ F G />`, and, as :g:`/ B C / <g1:/ B C />` is to :g:`/ C D / <g1:/ C D />`, so is the square on :g:`/ F G / <g1:/ F G />` to the square on :g:`/ H G / <g1:/ H G />`,
 
-.. step:: assert [G.159] <G.159>
+.. step:: assert ∵ there_number_magnitudes_v_22 <G.159>
 
    Therefore, :term:`*ex aequali* <ex-aequali>`, as :g:`E <g1:E>` is to :g:`/ C D / <g1:/ C D />`, so is the square on :g:`A <g1:A>` to the square on :g:`/ H G / <g1:/ H G />`.
 
@@ -107,7 +113,7 @@ G.411
 
    :g:`E <g1:E>` has not to :g:`/ C D / <g1:/ C D />` the ratio which a square number has to a square number ;
 
-.. step:: assert [G.322] <G.322>
+.. step:: assert ∵ squares_straight_lines <G.322>
 
    Therefore neither has the square on :g:`A <g1:A>` to the square on :g:`/ G H / <g1:/ G H />` the ratio which a square number has to a square number ; therefore :g:`A <g1:A>` is incommensurable in length with :g:`/ G H / <g1:/ G H />`.
 
@@ -123,7 +129,7 @@ G.411
 
    Since then, as :g:`/ B C / <g1:/ B C />` is to :g:`/ C D / <g1:/ C D />`, so is the square on :g:`/ F G / <g1:/ F G />` to the square on :g:`/ G H / <g1:/ G H />`,
 
-.. step:: assert [G.156] <G.156>
+.. step:: assert ∵ whole_whole_part <G.156>
 
    Therefore, :term:`*convertendo* <convertendo>`, as :g:`/ B C / <g1:/ B C />` is to :g:`/ B D / <g1:/ B D />`, so is the square on :g:`/ F G / <g1:/ F G />` to the square on :g:`K <g1:K>`.
 
@@ -135,7 +141,7 @@ G.411
 
    Therefore the square on :g:`/ F G / <g1:/ F G />` also has to the square on :g:`K <g1:K>` the ratio which a square number has to a square number.
 
-.. step:: assert [G.322] <G.322>
+.. step:: assert ∵ squares_straight_lines <G.322>
 
    Therefore :g:`/ F G / <g1:/ F G />` is commensurable in length with :g:`K <g1:K>`, and the square on :g:`/ F G / <g1:/ F G />` is greater than the square on :g:`/ G H / <g1:/ G H />` by the square on a straight line commensurable with :g:`/ F G / <g1:/ F G />`.
 
@@ -143,7 +149,7 @@ G.411
 
    Neither of :g:`/ F G / <g1:/ F G />`, :g:`/ G H / <g1:/ G H />` is commensurable in length with the rational straight line :g:`A <g1:A>` set out ;
 
-.. step:: conclude [G.410] <G.410>
+.. step:: conclude ∵ commensurable_length_rational_def <G.410>
 
    Therefore :g:`/ F H / <g1:/ F H />` is a third apotome.
 

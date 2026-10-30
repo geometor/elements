@@ -24,6 +24,12 @@ G.5
 
    Construct an equilateral triangle on a given finite segment.
 
+.. signature:: problem
+
+   | :fn:`equilateral_triangle <G.5>`\ (:g:`/ A B / <g1:/ A B />`) → :g:`< A B C > <g1:< A B C >>`
+   | **given** :g:`/ A B / <g1:/ A B />`
+   | **construct** :g:`< A B C > <g1:< A B C >>` is :eq:`equilateral <g1:/ C A / = g1:/ A B / = g1:/ B C />`
+
 .. picture:: g1.svg
    :alt: Proposition 1 figure
 
@@ -31,27 +37,27 @@ G.5
 
    :g:`/ A B / <g1:/ A B />`
 
-.. step:: construct [G.4] <G.4>
+.. step:: construct
 
-   **circle** :g:`( B C D ) <g1:( B C D )>` with center :g:`A <g1:A>` and radius :g:`/ A B / <g1:/ A B />`
+   :fn:`circle <G.4>`\ (:g:`A <g1:A>`, :g:`/ A B / <g1:/ A B />`) → :g:`( B C D ) <g1:( B C D )>`
 
-.. step:: construct [G.4] <G.4>
+.. step:: construct
 
-   **circle** :g:`( A C E ) <g1:( A C E )>` with center :g:`B <g1:B>` and radius :g:`/ B A / <g1:/ B A />`
+   :fn:`circle <G.4>`\ (:g:`B <g1:B>`, :g:`/ B A / <g1:/ B A />`) → :g:`( A C E ) <g1:( A C E )>`
 
 .. step:: intersect
 
-   **point** :g:`C <g1:C>` at intersection of circles
+   :g:`( B C D ) <g1:( B C D )>` ∩ :g:`( A C E ) <g1:( A C E )>` → :g:`C <g1:C>`
 
-.. step:: construct [G.3] <G.3>
+.. step:: construct
 
-   **segment** :g:`/ C A / <g1:/ C A />`, :g:`/ C B / <g1:/ C B />` joining :g:`C <g1:C>` to :g:`A <g1:A>`, :g:`B <g1:B>`
+   :fn:`segment <G.3>`\ (:g:`C <g1:C>`, :g:`A <g1:A>`) → :g:`/ C A / <g1:/ C A />`, :fn:`segment <G.3>`\ (:g:`C <g1:C>`, :g:`B <g1:B>`) → :g:`/ C B / <g1:/ C B />`
 
-.. step:: assert [G.2] <G.2>
+.. step:: assert ∵ circle_radii <G.2>
 
    Since :g:`A <g1:A>` is the center of :g:`( C D B ) <g1:( C D B )>` → :g:`/ A C / <g1:/ A C />` is :eq:`equal <g1:/ A C / = g1:/ A B />` to :g:`/ A B / <g1:/ A B />`.
 
-.. step:: assert [G.2] <G.2>
+.. step:: assert ∵ circle_radii <G.2>
 
    Since :g:`B <g1:B>` is the center of :g:`( C A E ) <g1:( C A E )>` → :g:`/ B C / <g1:/ B C />` is :eq:`equal <g1:/ B C / = g1:/ B A />` to :g:`/ B A / <g1:/ B A />`.
 
@@ -63,7 +69,7 @@ G.5
 
    Therefore each of :g:`/ C A / <g1:/ C A />`, :g:`/ C B / <g1:/ C B />` is :eq:`equal <g1:/ C A / = g1:/ C B / = g1:/ A B />` to :g:`/ A B / <g1:/ A B />`.
 
-.. step:: assert [G.1] <G.1>
+.. step:: assert ∵ equal_transitive <G.1>
 
    Therefore :g:`/ C A / <g1:/ C A />` is also :eq:`equal <g1:/ C A / = g1:/ C B />` to :g:`/ C B / <g1:/ C B />`.
 

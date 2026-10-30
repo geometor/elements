@@ -24,24 +24,26 @@ G.249
 
    If two numbers be prime to one another, and numbers fall between them in continued proportion, then, however many numbers fall between them in continued proportion, so many will also fall between each of them and an unit in continued proportion.
 
+.. signature:: theorem
+
+   | :fn:`numbers_prime_numbers_viii_9 <G.249>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`)
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>` be two numbers prime to one another, let :g:`C <g1:C>`, :g:`D <g1:D>` fall between them in continued proportion, let the unit :g:`E <g1:E>` be set out
+   | **prove** as many numbers as have fallen between :g:`A <g1:A>`, :g:`B <g1:B>` in continued proportion, so many numbers also have fallen between each of the numbers :g:`A <g1:A>`, :g:`B <g1:B>` and the unit :g:`E <g1:E>` in continued proportion
+
 .. picture:: g1.svg
    :alt: Book VIII Proposition 9
 
 .. step:: given
 
-   :g:`A <g1:A>`, :g:`B <g1:B>` be two numbers prime to one another
+   :g:`A <g1:A>`, :g:`B <g1:B>` be two numbers prime to one another, let :g:`C <g1:C>`, :g:`D <g1:D>` fall between them in continued proportion, let the unit :g:`E <g1:E>` be set out
 
 .. step:: assert
 
-   Let :g:`C <g1:C>`, :g:`D <g1:D>` fall between them in continued proportion
+   I say that, as many numbers as fall between :g:`A <g1:A>`, :g:`B <g1:B>` in continued proportion, so many will also fall between either of the numbers :g:`A <g1:A>`, :g:`B <g1:B>` and the unit in continued proportion.
 
-.. step:: assert
+.. step:: construct
 
-   Let the unit :g:`E <g1:E>` be set out
-
-.. step:: construct [G.242] <G.242>
-
-   For let two numbers :g:`F <g1:F>`, :g:`G <g1:G>`, the least that are in the ratio of :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`B <g1:B>`, be taken, three numbers :g:`H <g1:H>`, :g:`K <g1:K>`, :g:`L <g1:L>` with the same property, and others more by one continually, until their multitude is equal to the multitude of :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`B <g1:B>`.
+   :fn:`find_numbers_continued <G.242>`: Let two numbers :g:`F <g1:F>`, :g:`G <g1:G>`, the least that are in the ratio of :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`B <g1:B>`, be taken, three numbers :g:`H <g1:H>`, :g:`K <g1:K>`, :g:`L <g1:L>` with the same property, and others more by one continually, until their multitude is equal to the multitude of :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`B <g1:B>`.
 
 .. step:: construct
 
@@ -51,11 +53,11 @@ G.249
 
    Let them be :g:`M <g1:M>`, :g:`N <g1:N>`, :g:`O <g1:O>`, :g:`P <g1:P>`.
 
-.. step:: assert [G.242] <G.242>
+.. step:: assert ∵ find_numbers_continued <G.242>
 
    It is now manifest that :g:`F <g1:F>` by multiplying itself has made :g:`H <g1:H>` and by multiplying :g:`H <g1:H>` has made :g:`M <g1:M>`, while :g:`G <g1:G>` by multiplying itself has made :g:`L <g1:L>` and by multiplying :g:`L <g1:L>` has made :g:`P <g1:P>`.
 
-.. step:: assert [G.241] <G.241>
+.. step:: assert ∵ there_many_numbers_viii_1 <G.241>
 
    And, since :g:`M <g1:M>`, :g:`N <g1:N>`, :g:`O <g1:O>`, :g:`P <g1:P>` are the least of those which have the same ratio with :g:`F <g1:F>`, :g:`G <g1:G>`, and :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`B <g1:B>` are also the least of those which have the same ratio with :g:`F <g1:F>`, :g:`G <g1:G>`, while the multitude of the numbers :g:`M <g1:M>`, :g:`N <g1:N>`, :g:`O <g1:O>`, :g:`P <g1:P>` is equal to the multitude of the numbers :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`B <g1:B>`.
 
@@ -79,7 +81,7 @@ G.249
 
    Therefore the unit :g:`E <g1:E>` measures the number :g:`F <g1:F>` the same number of times as :g:`F <g1:F>` measures :g:`H <g1:H>`.
 
-.. step:: assert [G.210] <G.210>
+.. step:: assert ∵ numbers_proportional_multiple_def <G.210>
 
    Therefore, as the unit :g:`E <g1:E>` is to the number :g:`F <g1:F>`, so is :g:`F <g1:F>` to :g:`H <g1:H>`.
 

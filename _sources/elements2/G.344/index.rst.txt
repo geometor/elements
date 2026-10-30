@@ -24,34 +24,43 @@ G.344
 
    Find two rational straight lines commensurable in square only and such that the square on the greater is greater than the square on the less by the square on a straight line commensurable in length with the greater.
 
+.. signature:: problem
+
+   | :fn:`find_rational_straight <G.344>`\ () → :g:`/ A B / <g1:/ A B />`, :g:`/ A F / <g1:/ A F />`
+   | **construct** the square on :g:`/ A B / <g1:/ A B />` is greater than the square on :g:`/ A F / <g1:/ A F />` by the square on :g:`/ B F / <g1:/ B F />` commensurable with :g:`/ A B / <g1:/ A B />`
+
 .. picture:: g1.svg
    :alt: Proposition 29
 
-.. step:: assert [Lemma 1] <Lemma 1>
+.. step:: assert ∵ Lemma 1 <Lemma 1>
 
-   For let there be set out any rational straight line :g:`/ A B / <g1:/ A B />`, and two square numbers :g:`/ C D / <g1:/ C D />`, :g:`/ E D / <g1:/ E D />` such that their difference :g:`/ C E / <g1:/ C E />` is not square
+   Let there be set out any rational straight line :g:`/ A B / <g1:/ A B />`, and two square numbers :g:`/ C D / <g1:/ C D />`, :g:`/ E D / <g1:/ E D />` such that their difference :g:`/ C E / <g1:/ C E />` is not square
 
 .. step:: construct
 
    Let there be described on :g:`/ A B / <g1:/ A B />` the semicircle :g:`( A F B ) <g1:( A F B )>`
 
-.. step:: construct [G.319] <G.319>
+.. step:: assert ∵ magnitudes_ratio_number <G.319>
 
-   **segment** it be contrived that, as :g:`/ D C / <g1:/ D C />` is to :g:`/ C E / <g1:/ C E />`, so is the square on :g:`/ B A / <g1:/ B A />` to the square on :g:`/ A F / <g1:/ A F />`. Let :g:`/ F B / <g1:/ F B />`
+   Let it be contrived that, as :g:`/ D C / <g1:/ D C />` is to :g:`/ C E / <g1:/ C E />`, so is the square on :g:`/ B A / <g1:/ B A />` to the square on :g:`/ A F / <g1:/ A F />`
+
+.. step:: construct
+
+   :fn:`segment <G.3>`\ (:g:`F <g1:F>`, :g:`B <g1:B>`) → :g:`/ F B / <g1:/ F B />`
 
 .. step:: assert
 
    Since, as the square on :g:`/ B A / <g1:/ B A />` is to the square on :g:`/ A F / <g1:/ A F />`, so is :g:`/ D C / <g1:/ D C />` to :g:`/ C E / <g1:/ C E />`,
 
-.. step:: assert [G.319] <G.319>
+.. step:: assert ∵ magnitudes_ratio_number <G.319>
 
    Therefore the square on :g:`/ B A / <g1:/ B A />` has to the square on :g:`/ A F / <g1:/ A F />` the ratio which the number :g:`/ D C / <g1:/ D C />` has to the number :g:`/ C E / <g1:/ C E />`; therefore the square on :g:`/ B A / <g1:/ B A />` is commensurable with the square on :g:`/ A F / <g1:/ A F />`.
 
-.. step:: assert [G.332] <G.332>
+.. step:: assert ∵ square_assigned_straight_def <G.332>
 
    The square on :g:`/ A B / <g1:/ A B />` is rational;
 
-.. step:: assert [G.332] <G.332>
+.. step:: assert ∵ square_assigned_straight_def <G.332>
 
    Therefore the square on :g:`/ A F / <g1:/ A F />` is also rational; therefore :g:`/ A F / <g1:/ A F />` is also rational.
 
@@ -59,7 +68,7 @@ G.344
 
    And, since :g:`/ D C / <g1:/ D C />` has not to :g:`/ C E / <g1:/ C E />` the ratio which a square number has to a square number,
 
-.. step:: assert [G.322] <G.322>
+.. step:: assert ∵ squares_straight_lines <G.322>
 
    Neither has the square on :g:`/ B A / <g1:/ B A />` to the square on :g:`/ A F / <g1:/ A F />` the ratio which a square number has to a square number; therefore :g:`/ A B / <g1:/ A B />` is incommensurable in length with :g:`/ A F / <g1:/ A F />`.
 
@@ -71,7 +80,7 @@ G.344
 
    Since, as :g:`/ D C / <g1:/ D C />` is to :g:`/ C E / <g1:/ C E />`, so is the square on :g:`/ B A / <g1:/ B A />` to the square on :g:`/ A F / <g1:/ A F />`,
 
-.. step:: assert [G.156, G.110, G.60] <G.156, G.110, G.60>
+.. step:: assert ∵ whole_whole_part, thales_semicircle_theorem, pythagorean_theorem <G.156, G.110, G.60>
 
    Therefore, :term:`*convertendo* <convertendo>`, as :g:`/ C D / <g1:/ C D />` is to :g:`/ E D / <g1:/ E D />`, so is the square on :g:`/ A B / <g1:/ A B />` to the square on :g:`/ B F / <g1:/ B F />`.
 
@@ -79,7 +88,7 @@ G.344
 
    :g:`/ C D / <g1:/ C D />` has to :g:`/ E D / <g1:/ E D />` the ratio which a square number has to a square number;
 
-.. step:: assert [G.322] <G.322>
+.. step:: assert ∵ squares_straight_lines <G.322>
 
    Therefore also the square on :g:`/ A B / <g1:/ A B />` has to the square on :g:`/ B F / <g1:/ B F />` the ratio which a square number has to a square number; therefore :g:`/ A B / <g1:/ A B />` is commensurable in length with :g:`/ B F / <g1:/ B F />`.
 

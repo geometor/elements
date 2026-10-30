@@ -24,18 +24,23 @@ G.263
 
    If two mean proportional numbers fall between two numbers, the numbers are similar solid numbers.
 
+.. signature:: theorem
+
+   | :fn:`mean_proportional_numbers <G.263>`\ ()
+   | **prove** :g:`A <g1:A>`, :g:`B <g1:B>` are similar solid numbers; they are also similar
+
 .. picture:: g1.svg
    :alt: Proposition 21
 
 .. step:: assert
 
-   For let two mean proportional numbers :g:`C <g1:C>`, :g:`D <g1:D>` fall between the two numbers :g:`A <g1:A>`, :g:`B <g1:B>`
+   Let two mean proportional numbers :g:`C <g1:C>`, :g:`D <g1:D>` fall between the two numbers :g:`A <g1:A>`, :g:`B <g1:B>`
 
-.. step:: construct [G.234, G.242] <G.234, G.242>
+.. step:: construct
 
-   For let three numbers :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>`, the least of those which have the same ratio with :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`D <g1:D>`, be taken
+   :fn:`many_numbers_please <G.234>`: Let three numbers :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>`, the least of those which have the same ratio with :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`D <g1:D>`, be taken
 
-.. step:: assert [G.243] <G.243>
+.. step:: assert ∵ many_numbers_please_viii_3 <G.243>
 
    Therefore the extremes of them :g:`E <g1:E>`, :g:`G <g1:G>` are prime to one another.
 
@@ -43,7 +48,7 @@ G.263
 
    Since one mean proportional number :g:`F <g1:F>` has fallen between :g:`E <g1:E>`, :g:`G <g1:G>`,
 
-.. step:: assert [G.262] <G.262>
+.. step:: assert ∵ mean_proportional_number <G.262>
 
    Therefore :g:`E <g1:E>`, :g:`G <g1:G>` are similar plane numbers.
 
@@ -59,15 +64,15 @@ G.263
 
    Since :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>` are the least of the numbers which have the same ratio with :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`D <g1:D>`, and the multitude of the numbers :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>` is equal to the multitude of the numbers :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`D <g1:D>`,
 
-.. step:: assert [G.214] <G.214>
+.. step:: assert ∵ there_many_numbers_vii_14 <G.214>
 
    Therefore, :term:`*ex aequali* <ex-aequali>`, as :g:`E <g1:E>` is to :g:`G <g1:G>`, so is :g:`A <g1:A>` to :g:`D <g1:D>`.
 
-.. step:: assert [G.221] <G.221>
+.. step:: assert ∵ numbers_prime_least <G.221>
 
    :g:`E <g1:E>`, :g:`G <g1:G>` are prime, primes are also least, and the least measure those which have the same ratio with
 
-.. step:: assert [G.220] <G.220>
+.. step:: assert ∵ least_numbers_ratio <G.220>
 
    Them the same number of times, the greater the greater and the less the less, that is, the antecedent the antecedent and the consequent the consequent .
 
@@ -135,7 +140,7 @@ G.263
 
    For since :g:`N <g1:N>`, :g:`O <g1:O>` by multiplying :g:`E <g1:E>` have made :g:`A <g1:A>`, :g:`C <g1:C>`,
 
-.. step:: assert [G.218] <G.218>
+.. step:: assert ∵ numbers_multiplying_number <G.218>
 
    Therefore, as :g:`N <g1:N>` is to :g:`O <g1:O>`, so is :g:`A <g1:A>` to :g:`C <g1:C>`, that is, :g:`E <g1:E>` to :g:`F <g1:F>`.
 

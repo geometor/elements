@@ -24,14 +24,19 @@ G.293
 
    If as many even numbers as we please be added together, the whole is even.
 
+.. signature:: theorem
+
+   | :fn:`many_even_numbers <G.293>`\ ()
+   | **prove** the whole :g:`/ A E / <g1:/ A E />` is even
+
 .. picture:: g1.svg
    :alt: Book IX, Proposition 21
 
-.. step:: assert
+.. step:: construct
 
-   For let as many even numbers as we please, :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ C D / <g1:/ C D />`, :g:`/ D E / <g1:/ D E />`, be added together
+   Let as many even numbers as we please, :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ C D / <g1:/ C D />`, :g:`/ D E / <g1:/ D E />`, be added together
 
-.. step:: assert [G.292] <G.292>
+.. step:: assert ∵ even_number_divisible_def <G.292>
 
    Since each of the numbers :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ C D / <g1:/ C D />`, :g:`/ D E / <g1:/ D E />` is even, it has a half part .
 
@@ -39,7 +44,7 @@ G.293
 
    So that the whole :g:`/ A E / <g1:/ A E />` also has a half part.
 
-.. step:: assert [G.292] <G.292>
+.. step:: assert ∵ even_number_divisible_def <G.292>
 
    An even number is that which is divisible into two equal parts .
 

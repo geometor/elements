@@ -23,6 +23,10 @@ G.386
 
    And if neither, a:term:`**sixth binomial** <sixth-binomial>`.
 
+.. signature:: def
+
+   | :fn:`sixth_binomial_def <G.386>`
+
 Required for
 ------------
 

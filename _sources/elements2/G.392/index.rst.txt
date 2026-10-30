@@ -24,6 +24,12 @@ G.392
 
    If a rational and a medial area be added together, four irrational straight lines arise, namely a binomial or a first bimedial or a major or a side of a rational plus a medial area.
 
+.. signature:: theorem
+
+   | :fn:`rational_medial_area <G.392>`\ (:g:`< A B > <g1:< A B >>`, :g:`< C D > <g1:< C D >>`)
+   | **given** :g:`< A B > <g1:< A B >>` be rational, :g:`< C D > <g1:< C D >>` medial
+   | **prove** the "side" of the area :g:`< A D > <g1:< A D >>` is a binomial or a first bimedial or a major or a side of a rational plus a medial area
+
 .. picture:: g1.svg
    :alt: Proposition 71
 
@@ -33,7 +39,7 @@ G.392
 
 .. step:: assert
 
-   For :g:`< A B > <g1:< A B >>` is either greater or less than :g:`< C D > <g1:< C D >>`.
+   :g:`< A B > <g1:< A B >>` is either greater or less than :g:`< C D > <g1:< C D >>`.
 
 .. step:: assert
 
@@ -41,11 +47,7 @@ G.392
 
 .. step:: construct
 
-   Let a rational straight line :g:`/ E F / <g1:/ E F />` be set out, let there be applied to :g:`/ E F / <g1:/ E F />` the rectangle :g:`< E G > <g1:< E G >>` :eq:`equal <g1:< E G > = g1:< A B >>` to :g:`< A B > <g1:< A B >>`, producing :g:`/ E H / <g1:/ E H />` as breadth
-
-.. step:: construct
-
-   Let :g:`< H I > <g1:< H I >>`, :eq:`equal <g1:< H I > = g1:< D C >>` to :g:`< D C > <g1:< D C >>`, be applied to :g:`/ E F / <g1:/ E F />`, producing :g:`/ H K / <g1:/ H K />` as breadth.
+   Let a rational straight line :g:`/ E F / <g1:/ E F />` be set out, let there be applied to :g:`/ E F / <g1:/ E F />` the rectangle :g:`< E G > <g1:< E G >>` :eq:`equal <g1:< E G > = g1:< A B >>` to :g:`< A B > <g1:< A B >>`, producing :g:`/ E H / <g1:/ E H />` as breadth, and let :g:`< H I > <g1:< H I >>`, :eq:`equal <g1:< H I > = g1:< D C >>` to :g:`< D C > <g1:< D C >>`, be applied to :g:`/ E F / <g1:/ E F />`, producing :g:`/ H K / <g1:/ H K />` as breadth.
 
 .. step:: assert
 
@@ -59,7 +61,7 @@ G.392
 
    It has been applied to :g:`/ E F / <g1:/ E F />`, producing :g:`/ E H / <g1:/ E H />` as breadth;
 
-.. step:: assert [G.334] <G.334>
+.. step:: assert ∵ rational_area_applied <G.334>
 
    Therefore :g:`/ E H / <g1:/ E H />` is rational and commensurable in length with :g:`/ E F / <g1:/ E F />`.
 
@@ -75,7 +77,7 @@ G.392
 
    It is applied to the rational straight line :g:`/ E F / <g1:/ E F />`, producing :g:`/ H K / <g1:/ H K />` as breadth;
 
-.. step:: assert [G.336] <G.336>
+.. step:: assert ∵ square_medial_straight <G.336>
 
    Therefore :g:`/ H K / <g1:/ H K />` is rational and incommensurable in length with :g:`/ E F / <g1:/ E F />`.
 
@@ -87,11 +89,11 @@ G.392
 
    Therefore :g:`< A B > <g1:< A B >>` is incommensurable with :g:`< C D > <g1:< C D >>`, so that :g:`< E G > <g1:< E G >>` is also incommensurable with :g:`< H I > <g1:< H I >>`.
 
-.. step:: assert [G.163] <G.163>
+.. step:: assert ∵ triangles_parallelograms_height <G.163>
 
    But, as :g:`< E G > <g1:< E G >>` is to :g:`< H I > <g1:< H I >>`, so is :g:`/ E H / <g1:/ E H />` to :g:`/ H K / <g1:/ H K />`;
 
-.. step:: assert [G.323] <G.323>
+.. step:: assert ∵ magnitudes_proportional_commensurable <G.323>
 
    Therefore :g:`/ E H / <g1:/ E H />` is also incommensurable in length with :g:`/ H K / <g1:/ H K />`.
 
@@ -99,7 +101,7 @@ G.392
 
    Both are rational;
 
-.. step:: assert [G.351] <G.351>
+.. step:: assert ∵ rational_straight_lines <G.351>
 
    Therefore :g:`/ E H / <g1:/ E H />`, :g:`/ H K / <g1:/ H K />` are rational straight lines commensurable in square only; therefore :g:`/ E K / <g1:/ E K />` is a binomial straight line, divided at :g:`H <g1:H>`.
 
@@ -123,11 +125,11 @@ G.392
 
    Now the greater straight line :g:`/ H E / <g1:/ H E />` is commensurable in length with the rational straight line :g:`/ E F / <g1:/ E F />` set out ;
 
-.. step:: assert [G.369] <G.369>
+.. step:: assert ∵ rational_straight_line_def <G.369>
 
    Therefore :g:`/ E K / <g1:/ E K />` is a first binomial.
 
-.. step:: assert [G.370] <G.370>
+.. step:: assert ∵ area_contained_rational <G.370>
 
    :g:`/ E F / <g1:/ E F />` is rational ; and, if an area be contained by a rational straight line and the first binomial, the side of the square equal to the area is binomial.
 
@@ -143,11 +145,11 @@ G.392
 
    Now the greater straight line :g:`/ E H / <g1:/ E H />` is commensurable in length with the rational straight line :g:`/ E F / <g1:/ E F />` set out ;
 
-.. step:: assert [G.375] <G.375>
+.. step:: assert ∵ again_square_greater_def <G.375>
 
    Therefore :g:`/ E K / <g1:/ E K />` is a fourth binomial.
 
-.. step:: assert [G.376] <G.376>
+.. step:: assert ∵ area_contained_rational_x_57 <G.376>
 
    :g:`/ E F / <g1:/ E F />` is rational ; and, if an area be contained by a rational straight line and the fourth binomial, the "side" of the area is the irrational straight line called major.
 
@@ -175,11 +177,11 @@ G.392
 
    Now the lesser straight line :g:`/ E H / <g1:/ E H />` is commensurable in length with the rational straight line :g:`/ E F / <g1:/ E F />` set out;
 
-.. step:: assert [G.371] <G.371>
+.. step:: assert ∵ lesser_term_commensurable_def <G.371>
 
    Therefore :g:`/ E K / <g1:/ E K />` is a second binomial.
 
-.. step:: assert [G.372] <G.372>
+.. step:: assert ∵ area_contained_rational_x_55 <G.372>
 
    :g:`/ E F / <g1:/ E F />` is rational, and, if an area be contained by a rational straight line and the second binomial, the side of the square equal to it is a first bimedial.
 
@@ -195,11 +197,11 @@ G.392
 
    Now the lesser straight line :g:`/ E H / <g1:/ E H />` is commensurable with the rational straight line :g:`/ E F / <g1:/ E F />` set out;
 
-.. step:: assert [G.377] <G.377>
+.. step:: assert ∵ lesser_fifth_binomial_def <G.377>
 
    Therefore :g:`/ E K / <g1:/ E K />` is a fifth binomial.
 
-.. step:: assert [G.378] <G.378>
+.. step:: assert ∵ area_contained_rational_x_58 <G.378>
 
    :g:`/ E F / <g1:/ E F />` is rational; and, if an area be contained by a rational straight line and the fifth binomial, the side of the square equal to the area is a side of a rational plus a medial area.
 

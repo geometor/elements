@@ -24,16 +24,21 @@ G.207
 
    If a number be the same parts of a number that a number subtracted is of a number subtracted, the remainder is the same parts of the remainder that the whole is of the whole.
 
+.. signature:: theorem
+
+   | :fn:`number_parts_number_vii_8 <G.207>`\ ()
+   | **prove** the remainder :g:`/ E B / <g1:/ E B />` is also the same parts of the remainder :g:`/ F D / <g1:/ F D />` that the whole :g:`/ A B / <g1:/ A B />` is of the whole :g:`/ C D / <g1:/ C D />`
+
 .. picture:: g1.svg
    :alt: Book VII, Proposition 8
 
 .. step:: assert
 
-   For let the number :g:`/ A B / <g1:/ A B />` be the same parts of the number :g:`/ C D / <g1:/ C D />` that :g:`/ A E / <g1:/ A E />` subtracted is of :g:`/ C F / <g1:/ C F />` subtracted
+   Let the number :g:`/ A B / <g1:/ A B />` be the same parts of the number :g:`/ C D / <g1:/ C D />` that :g:`/ A E / <g1:/ A E />` subtracted is of :g:`/ C F / <g1:/ C F />` subtracted
 
 .. step:: construct
 
-   For let :g:`/ G H / <g1:/ G H />` be made :eq:`equal <g1:/ G H / = g1:/ A B />` to :g:`/ A B / <g1:/ A B />`.
+   :fn:`cut_equal_segment <G.9>`\ (:g:`/ A B / <g1:/ A B />`) → :g:`/ G H / <g1:/ G H />` (:eq:`equal <g1:/ G H / = g1:/ A B />`)
 
 .. step:: assert
 
@@ -55,15 +60,15 @@ G.207
 
    Therefore :g:`/ G K / <g1:/ G K />` is also greater than :g:`/ A L / <g1:/ A L />`.
 
-.. step:: assert
+.. step:: construct
 
-   Let :g:`/ G M / <g1:/ G M />` be made :eq:`equal <g1:/ G M / = g1:/ A L />` to :g:`/ A L / <g1:/ A L />`.
+   :fn:`cut_equal_segment <G.9>`\ (:g:`/ A L / <g1:/ A L />`) → :g:`/ G M / <g1:/ G M />` (:eq:`equal <g1:/ G M / = g1:/ A L />`)
 
 .. step:: assert
 
    Therefore, whatever part :g:`/ G K / <g1:/ G K />` is of :g:`/ C D / <g1:/ C D />`, the same part also is :g:`/ G M / <g1:/ G M />` of :g:`/ C F / <g1:/ C F />`;
 
-.. step:: assert [G.206] <G.206>
+.. step:: assert ∵ number_part_number_vii_7 <G.206>
 
    Therefore also the remainder :g:`/ M K / <g1:/ M K />` is the same part of the remainder :g:`/ F D / <g1:/ F D />` that the whole :g:`/ G K / <g1:/ G K />` is of the whole :g:`/ C D / <g1:/ C D />`.
 
@@ -75,15 +80,15 @@ G.207
 
    Therefore :g:`/ K H / <g1:/ K H />` is also greater than :g:`/ L E / <g1:/ L E />`.
 
-.. step:: assert
+.. step:: construct
 
-   Let :g:`/ K N / <g1:/ K N />` be made :eq:`equal <g1:/ K N / = g1:/ L E />` to :g:`/ L E / <g1:/ L E />`.
+   :fn:`cut_equal_segment <G.9>`\ (:g:`/ L E / <g1:/ L E />`) → :g:`/ K N / <g1:/ K N />` (:eq:`equal <g1:/ K N / = g1:/ L E />`)
 
 .. step:: assert
 
    Therefore, whatever part :g:`/ K H / <g1:/ K H />` is of :g:`/ C D / <g1:/ C D />`, the same part also is :g:`/ K N / <g1:/ K N />` of :g:`/ C F / <g1:/ C F />`;
 
-.. step:: assert [G.206] <G.206>
+.. step:: assert ∵ number_part_number_vii_7 <G.206>
 
    Therefore also the remainder :g:`/ N H / <g1:/ N H />` is the same part of the remainder :g:`/ F D / <g1:/ F D />` that the whole :g:`/ K H / <g1:/ K H />` is of the whole :g:`/ C D / <g1:/ C D />`.
 

@@ -24,22 +24,24 @@ G.403
 
    To a minor straight line only one straight line can be annexed which is incommensurable in square with the whole and which makes, with the whole, the sum of the squares on them rational but twice the rectangle contained by them medial.
 
+.. signature:: theorem
+
+   | :fn:`minor_straight_line <G.403>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`)
+   | **given** :g:`/ A B / <g1:/ A B />` be the minor straight line, let :g:`/ B C / <g1:/ B C />` be an annex to :g:`/ A B / <g1:/ A B />`
+   | **prove** no other straight line can be annexed to :g:`/ A B / <g1:/ A B />` fulfilling the same conditions
+
 .. picture:: g1.svg
    :alt: Proposition 82
 
 .. step:: given
 
-   :g:`/ A B / <g1:/ A B />` be the minor straight line
-
-.. step:: assert
-
-   Let :g:`/ B C / <g1:/ B C />` be an annex to :g:`/ A B / <g1:/ A B />`
+   :g:`/ A B / <g1:/ A B />` be the minor straight line, let :g:`/ B C / <g1:/ B C />` be an annex to :g:`/ A B / <g1:/ A B />`
 
 .. step:: assert
 
    Therefore :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` are straight lines incommensurable in square
 
-.. step:: assert [G.397] <G.397>
+.. step:: assert ∵ straight_line_there_x_76 <G.397>
 
    Which make the sum of the squares on them rational, but twice the rectangle contained by them medial.
 
@@ -47,7 +49,7 @@ G.403
 
    If possible, let :g:`/ B D / <g1:/ B D />` be so annexed ;
 
-.. step:: assert [G.397] <G.397>
+.. step:: assert ∵ straight_line_there_x_76 <G.397>
 
    Therefore :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` are also straight lines incommensurable in square which fulfil the aforesaid conditions.
 
@@ -55,7 +57,7 @@ G.403
 
    Since the excess of the squares on :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` over the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` is also the excess of twice the rectangle :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` over twice the rectangle :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />`, while the squares on :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` exceed the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` by a rational area, for both are rational,
 
-.. step:: conclude [G.341] <G.341>
+.. step:: conclude ∵ medial_area_exceed <G.341>
 
    Therefore twice the rectangle :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` also exceeds twice the rectangle :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` by a rational area : which is impossible, for both are medial.
 

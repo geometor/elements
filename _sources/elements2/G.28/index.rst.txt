@@ -24,6 +24,12 @@ G.28
 
    In any triangle, the sum of any two angles is less than two right angles.
 
+.. signature:: theorem
+
+   | :fn:`two_angles_less_than_two_right <G.28>`\ (:g:`< A B C > <g1:< A B C >>`)
+   | **given** :g:`< A B C > <g1:< A B C >>` be a triangle
+   | **prove** two angles of :g:`< A B C > <g1:< A B C >>` taken together in any manner are less than two right angles
+
 .. picture:: g1.svg
    :alt: Proposition 17 figure
 
@@ -31,15 +37,15 @@ G.28
 
    :g:`< A B C > <g1:< A B C >>` be a triangle
 
-.. step:: construct [G.7] <G.7>
+.. step:: construct
 
-   For let :g:`/ B C / <g1:/ B C />` be produced to :g:`D <g1:D>`.
+   :fn:`extend <G.7>`\ (:g:`/ B C / <g1:/ B C />`) → :g:`D <g1:D>`
 
 .. step:: assert
 
    Since :g:`< A C D ) <g1:< A C D )>` is an exterior angle of :g:`< A B C > <g1:< A B C >>` → it is greater than the interior and opposite angle :g:`< A B C ) <g1:< A B C )>`.
 
-.. step:: assert
+.. step:: construct
 
    Let :g:`< A C B ) <g1:< A C B )>` be added to each;
 
@@ -47,7 +53,7 @@ G.28
 
    Therefore :g:`< A C D ) <g1:< A C D )>`, :g:`< A C B ) <g1:< A C B )>` are greater than :g:`< A B C ) <g1:< A B C )>`, :g:`< B C A ) <g1:< B C A )>`.
 
-.. step:: assert [G.22] <G.22>
+.. step:: assert ∵ adjacent_angles_supplementary <G.22>
 
    :g:`< A C D ) <g1:< A C D )>`, :g:`< A C B ) <g1:< A C B )>` are equal to two right angles.
 

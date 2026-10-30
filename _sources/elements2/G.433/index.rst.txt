@@ -24,6 +24,12 @@ G.433
 
    A straight line commensurable with that which produces with a rational area a medial whole is a straight line which produces with a rational area a medial whole.
 
+.. signature:: theorem
+
+   | :fn:`straight_line_commensurable_x_106 <G.433>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`)
+   | **given** :g:`/ A B / <g1:/ A B />` be a straight line which produces with a rational area a medial whole, :g:`/ C D / <g1:/ C D />` commensurable with :g:`/ A B / <g1:/ A B />`
+   | **prove** :g:`/ C D / <g1:/ C D />` is also a straight line which produces with a rational area a medial whole
+
 .. picture:: g1.svg
    :alt: Proposition 106 diagram
 
@@ -33,9 +39,9 @@ G.433
 
 .. step:: assert
 
-   For let :g:`/ B E / <g1:/ B E />` be the annex to :g:`/ A B / <g1:/ A B />`
+   Let :g:`/ B E / <g1:/ B E />` be the annex to :g:`/ A B / <g1:/ A B />`
 
-.. step:: assert [G.398] <G.398>
+.. step:: assert ∵ straight_line_there_x_77 <G.398>
 
    Therefore :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />` are straight lines incommensurable in square which make the sum of the squares on :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />` medial, but the rectangle contained by them rational.
 
@@ -47,7 +53,7 @@ G.433
 
    Then we can prove, in manner similar to the foregoing, that :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />` are in the same ratio as :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />`, the sum of the squares on :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />` is commensurable with the sum of the squares on :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />`, and the rectangle :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />` with the rectangle :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />`; so that :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />` are also straight lines incommensurable in square which make the sum of the squares on :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />` medial, but the rectangle contained by them rational.
 
-.. step:: conclude [G.398] <G.398>
+.. step:: conclude ∵ straight_line_there_x_77 <G.398>
 
    Therefore :g:`/ C D / <g1:/ C D />` is a straight line which produces with a rational area a medial whole.
 

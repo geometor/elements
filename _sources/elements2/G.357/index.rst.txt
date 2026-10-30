@@ -24,6 +24,12 @@ G.357
 
    A binomial straight line is divided into its terms at one point only.
 
+.. signature:: theorem
+
+   | :fn:`binomial_straight_line <G.357>`\ (:g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`)
+   | **given** :g:`/ A B / <g1:/ A B />` be a binomial straight line divided into its terms at :g:`C <g1:C>`
+   | **prove** :g:`/ A B / <g1:/ A B />` is not divided at another point into two rational straight lines commensurable in square only
+
 .. picture:: g1.svg
    :alt: Proposition 42 diagram
 
@@ -31,7 +37,7 @@ G.357
 
    :g:`/ A B / <g1:/ A B />` be a binomial straight line divided into its terms at :g:`C <g1:C>`
 
-.. step:: assert [G.351] <G.351>
+.. step:: assert ∵ rational_straight_lines <G.351>
 
    Therefore :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` are rational straight lines commensurable in square only.
 
@@ -59,7 +65,7 @@ G.357
 
    For this reason also :g:`C <g1:C>`, :g:`D <g1:D>` are not equidistant from the point of bisection.
 
-.. step:: assert [G.65] <G.65>
+.. step:: assert ∵ square_of_sum <G.65>
 
    Therefore that by which the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` differ from the squares on :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` is also that by which twice the rectangle :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` differs from twice the rectangle :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />`, because both the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` together with twice the rectangle :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />`, and the squares on :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` together with twice the rectangle :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />`, are equal to the square on :g:`/ A B / <g1:/ A B />`.
 
@@ -67,7 +73,7 @@ G.357
 
    The squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` differ from the squares on :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` by a rational area, for both are rational;
 
-.. step:: assert [G.335, G.341] <G.335, G.341>
+.. step:: assert ∵ rectangle_contained_rational_x_21, medial_area_exceed <G.335, G.341>
 
    Therefore twice the rectangle :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` also differs from twice the rectangle :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` by a rational area, though they are medial: which is absurd, for a medial area does not exceed a medial by a rational area.
 

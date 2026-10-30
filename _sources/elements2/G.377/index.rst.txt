@@ -23,6 +23,10 @@ G.377
 
    If the lesser, a:term:`**fifth binomial** <fifth-binomial>`;
 
+.. signature:: def
+
+   | :fn:`lesser_fifth_binomial_def <G.377>`
+
 Required for
 ------------
 

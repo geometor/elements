@@ -24,22 +24,23 @@ G.24
 
    If two rays at a point on a line on opposite sides make adjacent angles summing to two right angles, the two rays are collinear.
 
+.. signature:: theorem
+
+   | :fn:`supplementary_angles_collinear <G.24>`\ ()
+   | **prove** :g:`/ B D / <g1:/ B D />` is in a straight line with :g:`/ C B / <g1:/ C B />`
+
 .. picture:: g1.svg
    :alt: Proposition 14 figure
 
 .. step:: assert
 
-   For with any straight line :g:`/ A B / <g1:/ A B />`
-
-.. step:: assert
-
-   At :g:`B <g1:B>` on it, let :g:`/ B C / <g1:/ B C />`, :g:`/ B D / <g1:/ B D />` not lying on the same side make the adjacent angles :g:`< A B C ) <g1:< A B C )>`, :g:`< A B D ) <g1:< A B D )>` equal to two right angles
+   With any straight line :g:`/ A B / <g1:/ A B />`, and at :g:`B <g1:B>` on it, let :g:`/ B C / <g1:/ B C />`, :g:`/ B D / <g1:/ B D />` not lying on the same side make the adjacent angles :g:`< A B C ) <g1:< A B C )>`, :g:`< A B D ) <g1:< A B D )>` equal to two right angles
 
 .. step:: assert
 
    If :g:`/ B D / <g1:/ B D />` is not in a straight line with :g:`/ B C / <g1:/ B C />`, let :g:`/ B E / <g1:/ B E />` be in a straight line with :g:`/ C B / <g1:/ C B />`.
 
-.. step:: assert [G.22] <G.22>
+.. step:: assert ∵ adjacent_angles_supplementary <G.22>
 
    Since :g:`/ A B / <g1:/ A B />` stands on :g:`/ C B E / <g1:/ C B E />` → :g:`< A B C ) <g1:< A B C )>`, :g:`< A B E ) <g1:< A B E )>` are equal to two right angles.
 
@@ -47,15 +48,15 @@ G.24
 
    :g:`< A B C ) <g1:< A B C )>`, :g:`< A B D ) <g1:< A B D )>` are also equal to two right angles
 
-.. step:: assert [G.23, G.1] <G.23, G.1>
+.. step:: assert ∵ right_angles_equal, equal_transitive <G.23, G.1>
 
    Therefore :g:`< C B A ) <g1:< C B A )>`, :g:`< A B E ) <g1:< A B E )>` are equal to :g:`< C B A ) <g1:< C B A )>`, :g:`< A B D ) <g1:< A B D )>`.
 
-.. step:: assert
+.. step:: construct
 
    Let :g:`< C B A ) <g1:< C B A )>` be subtracted from each;
 
-.. step:: assert [G.6] <G.6>
+.. step:: assert ∵ subtract_equals <G.6>
 
    Therefore the remaining angle :g:`< A B E ) <g1:< A B E )>` is :eq:`equal <g1:< A B E ) = g1:< A B D )>` to the remaining angle :g:`< A B D ) <g1:< A B D )>`.
 

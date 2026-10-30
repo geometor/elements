@@ -24,24 +24,42 @@ G.517
 
    If an equilateral pentagon be inscribed in a circle, the square on the side of the pentagon is equal to the squares on the side of the hexagon and on that of the decagon inscribed in the same circle.
 
+.. signature:: theorem
+
+   | :fn:`equilateral_pentagon_inscribed <G.517>`\ (:g:`( A B C D E ) <g1:( A B C D E )>`, :g:`< A B C D E > <g1:< A B C D E >>`)
+   | **given** :g:`( A B C D E ) <g1:( A B C D E )>` be a circle, let the :eq:`equilateral <g1:/ A B / = g1:/ B C / = g1:/ C D / = g1:/ D E / = g1:/ E A />` pentagon :g:`< A B C D E > <g1:< A B C D E >>` be inscribed in :g:`( A B C D E ) <g1:( A B C D E )>`
+   | **prove** the square on the side of the pentagon :g:`< A B C D E > <g1:< A B C D E >>` is equal to the squares on the side of the hexagon and on that of the decagon inscribed in :g:`( A B C D E ) <g1:( A B C D E )>`
+
 .. picture:: g1.svg
    :alt: Proposition 10
 
 .. step:: given
 
-   :g:`( A B C D E ) <g1:( A B C D E )>` be a circle
-
-.. step:: assert
-
-   Let the :eq:`equilateral <g1:/ A B / = g1:/ B C / = g1:/ C D / = g1:/ D E / = g1:/ E A />` pentagon :g:`< A B C D E > <g1:< A B C D E >>` be inscribed in :g:`( A B C D E ) <g1:( A B C D E )>`. I say that the square on the side of the pentagon :g:`< A B C D E > <g1:< A B C D E >>` is equal to the squares on the side of the hexagon and on that of the decagon inscribed in :g:`( A B C D E ) <g1:( A B C D E )>`.
+   :g:`( A B C D E ) <g1:( A B C D E )>` be a circle, let the :eq:`equilateral <g1:/ A B / = g1:/ B C / = g1:/ C D / = g1:/ D E / = g1:/ E A />` pentagon :g:`< A B C D E > <g1:< A B C D E >>` be inscribed in :g:`( A B C D E ) <g1:( A B C D E )>`
 
 .. step:: construct
 
-   For let the center of the circle, :g:`F <g1:F>`, be taken, let :g:`/ A F / <g1:/ A F />` be joined and carried through to :g:`G <g1:G>`, let :g:`/ F B / <g1:/ F B />` be joined, let :g:`/ F H / <g1:/ F H />` be drawn from :g:`F <g1:F>` perpendicular to :g:`/ A B / <g1:/ A B />` and be carried through to :g:`K <g1:K>`, let :g:`/ A K / <g1:/ A K />`, :g:`/ K B / <g1:/ K B />` be joined, let :g:`/ F L / <g1:/ F L />` be again drawn from :g:`F <g1:F>` perpendicular to :g:`/ A K / <g1:/ A K />`, and be carried through to :g:`M <g1:M>`
+   Let the center of the circle, :g:`F <g1:F>`, be taken
 
 .. step:: construct
 
-   **segment** :g:`/ K N / <g1:/ K N />`
+   Let :g:`/ A F / <g1:/ A F />` be joined and carried through to :g:`G <g1:G>`
+
+.. step:: construct
+
+   :fn:`segment <G.3>`\ (:g:`F <g1:F>`, :g:`B <g1:B>`) → :g:`/ F B / <g1:/ F B />`
+
+.. step:: construct
+
+   Let :g:`/ F H / <g1:/ F H />` be drawn from :g:`F <g1:F>` perpendicular to :g:`/ A B / <g1:/ A B />` and be carried through to :g:`K <g1:K>`
+
+.. step:: construct
+
+   :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`K <g1:K>`) → :g:`/ A K / <g1:/ A K />`, :fn:`segment <G.3>`\ (:g:`K <g1:K>`, :g:`B <g1:B>`) → :g:`/ K B / <g1:/ K B />`
+
+.. step:: construct
+
+   :fn:`segment <G.3>`\ (:g:`F <g1:F>`, :g:`L <g1:L>`) → :g:`/ F L / <g1:/ F L />`, :fn:`segment <G.3>`\ () → :g:`F <g1:F>`, :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`K <g1:K>`) → :g:`/ A K / <g1:/ A K />`, :fn:`segment <G.3>`\ () → :g:`M <g1:M>`, :fn:`segment <G.3>`\ (:g:`K <g1:K>`, :g:`N <g1:N>`) → :g:`/ K N / <g1:/ K N />`
 
 .. step:: assert
 
@@ -63,11 +81,11 @@ G.517
 
    And, since :g:`/ F A / <g1:/ F A />` is :eq:`equal <g1:/ F A / = g1:/ F B />` to :g:`/ F B / <g1:/ F B />`, and :g:`/ F H / <g1:/ F H />` is perpendicular,
 
-.. step:: assert [G.12, G.37] <G.12, G.37>
+.. step:: assert ∵ isosceles_base_angles, asa_aas_congruence <G.12, G.37>
 
    Therefore :g:`< A F K ) <g1:< A F K )>` is also :eq:`equal <g1:< A F K ) = g1:< K F B )>` to :g:`< K F B ) <g1:< K F B )>`.
 
-.. step:: assert [G.105] <G.105>
+.. step:: assert ∵ equal_circles_equal <G.105>
 
    Hence the circumference :g:`( A K ) <g1:( A K )>` is also :eq:`equal <g1:( A K ) = g1:( K B )>` to :g:`( K B ) <g1:( K B )>`; therefore the circumference :g:`( A B ) <g1:( A B )>` is double of the circumference :g:`( B K ) <g1:( B K )>`; therefore :g:`/ A K / <g1:/ A K />` is a side of a decagon.
 
@@ -103,7 +121,7 @@ G.517
 
    But, further, the circumference :g:`( C B ) <g1:( C B )>` is also double of the circumference :g:`( B K ) <g1:( B K )>`, for the circumference :g:`( C B ) <g1:( C B )>` is :eq:`equal <g1:( C B ) = g1:( B A )>` to :g:`( B A ) <g1:( B A )>`.
 
-.. step:: assert [G.198] <G.198>
+.. step:: assert ∵ equal_circles_angles_vi_33 <G.198>
 
    Therefore the whole circumference :g:`( G B ) <g1:( G B )>` is also double of :g:`( B M ) <g1:( B M )>`; hence :g:`< G F B ) <g1:< G F B )>` is also double of :g:`< B F M ) <g1:< B F M )>`.
 
@@ -119,11 +137,11 @@ G.517
 
    :g:`< A B F ) <g1:< A B F )>` is common to the two triangles :g:`< A B F > <g1:< A B F >>` and :g:`< B F N > <g1:< B F N >>`;
 
-.. step:: assert [G.45] <G.45>
+.. step:: assert ∵ triangle_angle_sum <G.45>
 
    Therefore the remaining angle :g:`< A F B ) <g1:< A F B )>` is :eq:`equal <g1:< A F B ) = g1:< B N F )>` to the remaining angle :g:`< B N F ) <g1:< B N F )>`; therefore :g:`< A B F > <g1:< A B F >>` is equiangular with :g:`< B F N > <g1:< B F N >>`.
 
-.. step:: assert [G.166, G.180] <G.166, G.180>
+.. step:: assert ∵ equiangular_triangles_sides, straight_lines_proportional_vi_17 <G.166, G.180>
 
    Therefore, proportionally, as :g:`/ A B / <g1:/ A B />` is to :g:`/ B F / <g1:/ B F />`, so is :g:`/ F B / <g1:/ F B />` to :g:`/ B N / <g1:/ B N />`; therefore the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B N / <g1:/ B N />` is equal to the square on :g:`/ B F / <g1:/ B F />`.
 
@@ -131,7 +149,7 @@ G.517
 
    Since :g:`/ A L / <g1:/ A L />` is :eq:`equal <g1:/ A L / = g1:/ L K />` to :g:`/ L K / <g1:/ L K />`, while :g:`/ L N / <g1:/ L N />` is common and at right angles,
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    Therefore the base :g:`/ K N / <g1:/ K N />` is :eq:`equal <g1:/ K N / = g1:/ A N />` to the base :g:`/ A N / <g1:/ A N />`; therefore :g:`< L K N ) <g1:< L K N )>` is also :eq:`equal <g1:< L K N ) = g1:< L A N )>` to :g:`< L A N ) <g1:< L A N )>`.
 
@@ -147,11 +165,11 @@ G.517
 
    The angle at :g:`A <g1:A>` is common to the two triangles :g:`< A K B > <g1:< A K B >>` and :g:`< A K N > <g1:< A K N >>`.
 
-.. step:: assert [G.45] <G.45>
+.. step:: assert ∵ triangle_angle_sum <G.45>
 
    Therefore the remaining angle :g:`< A K B ) <g1:< A K B )>` is :eq:`equal <g1:< A K B ) = g1:< K N A )>` to the remaining angle :g:`< K N A ) <g1:< K N A )>`; therefore :g:`< K B A > <g1:< K B A >>` is equiangular with :g:`< K N A > <g1:< K N A >>`.
 
-.. step:: assert [G.166, G.180] <G.166, G.180>
+.. step:: assert ∵ equiangular_triangles_sides, straight_lines_proportional_vi_17 <G.166, G.180>
 
    Therefore, proportionally, as :g:`/ B A / <g1:/ B A />` is to :g:`/ A K / <g1:/ A K />`, so is :g:`/ K A / <g1:/ K A />` to :g:`/ A N / <g1:/ A N />`; therefore the rectangle :g:`/ B A / <g1:/ B A />`, :g:`/ A N / <g1:/ A N />` is equal to the square on :g:`/ A K / <g1:/ A K />`.
 
@@ -159,11 +177,11 @@ G.517
 
    The rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B N / <g1:/ B N />` was also proved equal to the square on :g:`/ B F / <g1:/ B F />`;
 
-.. step:: assert [G.63] <G.63>
+.. step:: assert ∵ square_sum_rectangles <G.63>
 
    Therefore the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B N / <g1:/ B N />` together with the rectangle :g:`/ B A / <g1:/ B A />`, :g:`/ A N / <g1:/ A N />`, that is, the square on :g:`/ B A / <g1:/ B A />`, is equal to the square on :g:`/ B F / <g1:/ B F />` together with the square on :g:`/ A K / <g1:/ A K />`.
 
-.. step:: conclude [G.133] <G.133>
+.. step:: conclude ∵ inscribe_hexagon_in_circle <G.133>
 
    :g:`/ B A / <g1:/ B A />` is a side of the pentagon, :g:`/ B F / <g1:/ B F />` of the hexagon, and :g:`/ A K / <g1:/ A K />` of the decagon.
 

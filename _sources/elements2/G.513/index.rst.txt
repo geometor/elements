@@ -24,6 +24,11 @@ G.513
 
    If a rational straight line be cut in extreme and mean ratio, each of the segments is the irrational straight line called apotome.
 
+.. signature:: theorem
+
+   | :fn:`rational_straight_line_xiii_6 <G.513>`\ ()
+   | **prove** each of :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` is the irrational straight line called apotome
+
 .. picture:: g1.svg
    :alt: Book XIII, Proposition 6
 
@@ -37,7 +42,7 @@ G.513
 
 .. step:: construct
 
-   For let :g:`/ B A / <g1:/ B A />` be produced
+   Let :g:`/ B A / <g1:/ B A />` be produced
 
 .. step:: construct
 
@@ -47,11 +52,11 @@ G.513
 
    Since then :g:`/ A B / <g1:/ A B />` has been cut in extreme and mean ratio, and to the greater segment :g:`/ A C / <g1:/ A C />` is added :g:`/ A D / <g1:/ A D />` which is half of :g:`/ A B / <g1:/ A B />`,
 
-.. step:: assert [G.508] <G.508>
+.. step:: assert ∵ straight_line_cut <G.508>
 
    Therefore the square on :g:`/ C D / <g1:/ C D />` is five times the square on :g:`/ D A / <g1:/ D A />`.
 
-.. step:: assert [G.319] <G.319>
+.. step:: assert ∵ magnitudes_ratio_number <G.319>
 
    Therefore the square on :g:`/ C D / <g1:/ C D />` has to the square on :g:`/ D A / <g1:/ D A />` the ratio which a number has to a number; therefore the square on :g:`/ C D / <g1:/ C D />` is commensurable with the square on :g:`/ D A / <g1:/ D A />`.
 
@@ -59,7 +64,7 @@ G.513
 
    The square on :g:`/ D A / <g1:/ D A />` is rational, for :g:`/ D A / <g1:/ D A />` is rational, being half of :g:`/ A B / <g1:/ A B />` which is rational;
 
-.. step:: assert [G.332] <G.332>
+.. step:: assert ∵ square_assigned_straight_def <G.332>
 
    Therefore the square on :g:`/ C D / <g1:/ C D />` is also rational; therefore :g:`/ C D / <g1:/ C D />` is also rational.
 
@@ -67,7 +72,7 @@ G.513
 
    And, since the square on :g:`/ C D / <g1:/ C D />` has not to the square on :g:`/ D A / <g1:/ D A />` the ratio which a square number has to a square number,
 
-.. step:: assert [G.322, G.394] <G.322, G.394>
+.. step:: assert ∵ squares_straight_lines, rational_straight_line <G.322, G.394>
 
    Therefore :g:`/ C D / <g1:/ C D />` is incommensurable in length with :g:`/ D A / <g1:/ D A />`; therefore :g:`/ C D / <g1:/ C D />`, :g:`/ D A / <g1:/ D A />` are rational straight lines commensurable in square only; therefore :g:`/ A C / <g1:/ A C />` is an apotome.
 
@@ -75,7 +80,7 @@ G.513
 
    Since :g:`/ A B / <g1:/ A B />` has been cut in extreme and mean ratio, and :g:`/ A C / <g1:/ A C />` is the greater segment,
 
-.. step:: assert [G.507, G.180] <G.507, G.180>
+.. step:: assert ∵ straight_line_said_def_vi_def_3, straight_lines_proportional_vi_17 <G.507, G.180>
 
    Therefore the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` is equal to the square on :g:`/ A C / <g1:/ A C />`.
 
@@ -83,7 +88,7 @@ G.513
 
    Therefore the square on the apotome :g:`/ A C / <g1:/ A C />`, if applied to the rational straight line :g:`/ A B / <g1:/ A B />`, produces :g:`/ B C / <g1:/ B C />` as breadth.
 
-.. step:: assert [G.424] <G.424>
+.. step:: assert ∵ square_apotome_applied <G.424>
 
    The square on an apotome, if applied to a rational straight line, produces as breadth a first apotome.
 

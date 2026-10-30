@@ -24,22 +24,24 @@ G.389
 
    A straight line commensurable with a major straight line is itself also major.
 
+.. signature:: theorem
+
+   | :fn:`straight_line_commensurable_x_68 <G.389>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`)
+   | **given** :g:`/ A B / <g1:/ A B />` be major, let :g:`/ C D / <g1:/ C D />` be commensurable with :g:`/ A B / <g1:/ A B />`
+   | **prove** :g:`/ C D / <g1:/ C D />` is major
+
 .. picture:: g1.svg
    :alt: Proposition 68
 
 .. step:: given
 
-   :g:`/ A B / <g1:/ A B />` be major
-
-.. step:: assert
-
-   Let :g:`/ C D / <g1:/ C D />` be commensurable with :g:`/ A B / <g1:/ A B />`
+   :g:`/ A B / <g1:/ A B />` be major, let :g:`/ C D / <g1:/ C D />` be commensurable with :g:`/ A B / <g1:/ A B />`
 
 .. step:: assert
 
    Let :g:`/ A B / <g1:/ A B />` be divided at :g:`E <g1:E>`
 
-.. step:: assert [G.354] <G.354>
+.. step:: assert ∵ straight_lines_incommensurable <G.354>
 
    Therefore :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />` are straight lines incommensurable in square which make the sum of the squares on them rational, but the rectangle contained by them medial.
 
@@ -51,7 +53,7 @@ G.389
 
    Then since, as :g:`/ A B / <g1:/ A B />` is to :g:`/ C D / <g1:/ C D />`, so is :g:`/ A E / <g1:/ A E />` to :g:`/ C F / <g1:/ C F />`, and :g:`/ E B / <g1:/ E B />` to :g:`/ F D / <g1:/ F D />`,
 
-.. step:: assert [G.148] <G.148>
+.. step:: assert ∵ ratios_ratio <G.148>
 
    Therefore also, as :g:`/ A E / <g1:/ A E />` is to :g:`/ C F / <g1:/ C F />`, so is :g:`/ E B / <g1:/ E B />` to :g:`/ F D / <g1:/ F D />`.
 
@@ -59,15 +61,15 @@ G.389
 
    :g:`/ A B / <g1:/ A B />` is commensurable with :g:`/ C D / <g1:/ C D />`;
 
-.. step:: assert [G.323] <G.323>
+.. step:: assert ∵ magnitudes_proportional_commensurable <G.323>
 
    Therefore :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />` are also commensurable with :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />` respectively.
 
-.. step:: assert [G.153] <G.153>
+.. step:: assert ∵ magnitudes_proportional_proportional <G.153>
 
    Since, as :g:`/ A E / <g1:/ A E />` is to :g:`/ C F / <g1:/ C F />`, so is :g:`/ E B / <g1:/ E B />` to :g:`/ F D / <g1:/ F D />`, alternately also, as :g:`/ A E / <g1:/ A E />` is to :g:`/ E B / <g1:/ E B />`, so is :g:`/ C F / <g1:/ C F />` to :g:`/ F D / <g1:/ F D />`.
 
-.. step:: assert [G.155, G.185] <G.155, G.185>
+.. step:: assert ∵ magnitudes_proportional_separando, similar_polygons_divided <G.155, G.185>
 
    Therefore also, :term:`*componendo* <componendo>`, as :g:`/ A B / <g1:/ A B />` is to :g:`/ B E / <g1:/ B E />`, so is :g:`/ C D / <g1:/ C D />` to :g:`/ D F / <g1:/ D F />`; therefore also, as the square on :g:`/ A B / <g1:/ A B />` is to the square on :g:`/ B E / <g1:/ B E />`, so is the square on :g:`/ C D / <g1:/ C D />` to the square on :g:`/ D F / <g1:/ D F />`.
 
@@ -75,7 +77,7 @@ G.389
 
    Similarly we can prove that, as the square on :g:`/ A B / <g1:/ A B />` is to the square on :g:`/ A E / <g1:/ A E />`, so also is the square on :g:`/ C D / <g1:/ C D />` to the square on :g:`/ C F / <g1:/ C F />`.
 
-.. step:: assert [G.153] <G.153>
+.. step:: assert ∵ magnitudes_proportional_proportional <G.153>
 
    Therefore also, as the square on :g:`/ A B / <g1:/ A B />` is to the squares on :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />`, so is the square on :g:`/ C D / <g1:/ C D />` to the squares on :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />`; therefore also, alternately, as the square on :g:`/ A B / <g1:/ A B />` is to the square on :g:`/ C D / <g1:/ C D />`, so are the squares on :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />` to the squares on :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />`.
 
@@ -103,11 +105,11 @@ G.389
 
    Twice the rectangle :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />` is medial;
 
-.. step:: assert [G.338] <G.338>
+.. step:: assert ∵ straight_line_commensurable <G.338>
 
    Therefore twice the rectangle :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />` is also medial.
 
-.. step:: conclude [G.354] <G.354>
+.. step:: conclude ∵ straight_lines_incommensurable <G.354>
 
    Therefore :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />` are straight lines incommensurable in square which make, at the same time, the sum of the squares on them rational, but the rectangle contained by them medial; therefore the whole :g:`/ C D / <g1:/ C D />` is the irrational straight line called major.
 

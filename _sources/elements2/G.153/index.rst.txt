@@ -24,6 +24,12 @@ G.153
 
    If four magnitudes be proportional, they is proportional alternately.
 
+.. signature:: theorem
+
+   | :fn:`magnitudes_proportional_proportional <G.153>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`)
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` be four proportional magnitudes, so that, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`
+   | **prove** they will also be so alternately, that is, as :g:`A <g1:A>` is to :g:`C <g1:C>`, so is :g:`B <g1:B>` to :g:`D <g1:D>`
+
 .. picture:: g1.svg
    :alt: Proposition 16 diagram
 
@@ -33,9 +39,9 @@ G.153
 
 .. step:: construct
 
-   For of :g:`A <g1:A>`, :g:`B <g1:B>` let equimultiples :g:`E <g1:E>`, :g:`F <g1:F>` be taken, and of :g:`C <g1:C>`, :g:`D <g1:D>` other, chance, equimultiples :g:`G <g1:G>`, :g:`H <g1:H>`.
+   Of :g:`A <g1:A>`, :g:`B <g1:B>` let equimultiples :g:`E <g1:E>`, :g:`F <g1:F>` be taken, and of :g:`C <g1:C>`, :g:`D <g1:D>` other, chance, equimultiples :g:`G <g1:G>`, :g:`H <g1:H>`.
 
-.. step:: assert [G.152] <G.152>
+.. step:: assert ∵ parts_ratio_multiples <G.152>
 
    Since :g:`E <g1:E>` is the same multiple of :g:`A <g1:A>` that :g:`F <g1:F>` is of :g:`B <g1:B>`, and parts have the same ratio as the same multiples of them.
 
@@ -47,11 +53,11 @@ G.153
 
    As :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`
 
-.. step:: assert [G.148] <G.148>
+.. step:: assert ∵ ratios_ratio <G.148>
 
    Therefore also, as :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`E <g1:E>` to :g:`F <g1:F>`.
 
-.. step:: assert [G.152] <G.152>
+.. step:: assert ∵ parts_ratio_multiples <G.152>
 
    Since :g:`G <g1:G>`, :g:`H <g1:H>` are equimultiples of :g:`C <g1:C>`, :g:`D <g1:D>` → therefore, as :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`G <g1:G>` to :g:`H <g1:H>`.
 
@@ -59,11 +65,11 @@ G.153
 
    But, as :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`E <g1:E>` to :g:`F <g1:F>`
 
-.. step:: assert [G.148] <G.148>
+.. step:: assert ∵ ratios_ratio <G.148>
 
    Therefore also, as :g:`E <g1:E>` is to :g:`F <g1:F>`, so is :g:`G <g1:G>` to :g:`H <g1:H>`.
 
-.. step:: assert [G.151] <G.151>
+.. step:: assert ∵ magnitude_ratio_greater_v_14 <G.151>
 
    But, if four magnitudes be proportional, and the first be greater than the third, the second will also be greater than the fourth ; if equal, equal ; and if less, less.
 
@@ -75,7 +81,7 @@ G.153
 
    Now :g:`E <g1:E>`, :g:`F <g1:F>` are equimultiples of :g:`A <g1:A>`, :g:`B <g1:B>`, and :g:`G <g1:G>`, :g:`H <g1:H>` other, chance, equimultiples of :g:`C <g1:C>`, :g:`D <g1:D>`
 
-.. step:: conclude [G.138] <G.138>
+.. step:: conclude ∵ magnitudes_said_ratio_def <G.138>
 
    Therefore, as :g:`A <g1:A>` is to :g:`C <g1:C>`, so is :g:`B <g1:B>` to :g:`D <g1:D>`.
 

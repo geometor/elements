@@ -24,6 +24,12 @@ G.516
 
    If the side of the hexagon and that of the decagon inscribed in the same circle be added together, the whole straight line has been cut in extreme and mean ratio, and its greater segment is the side of the hexagon.
 
+.. signature:: theorem
+
+   | :fn:`side_hexagon_decagon <G.516>`\ (:g:`( A B C ) <g1:( A B C )>`)
+   | **given** :g:`( A B C ) <g1:( A B C )>` be a circle
+   | **prove** the whole straight line :g:`/ B D / <g1:/ B D />` has been cut in extreme and mean ratio, and :g:`/ C D / <g1:/ C D />` is its greater segment
+
 .. picture:: g1.svg
    :alt: Proposition 9
 
@@ -33,15 +39,15 @@ G.516
 
 .. step:: assert
 
-   Of the figures inscribed in :g:`( A B C ) <g1:( A B C )>` let :g:`/ B C / <g1:/ B C />` be the side of a decagon, :g:`/ C D / <g1:/ C D />` that of a hexagon
-
-.. step:: assert
-
-   Let them be in a straight line
+   Of the figures inscribed in :g:`( A B C ) <g1:( A B C )>` let :g:`/ B C / <g1:/ B C />` be the side of a decagon, :g:`/ C D / <g1:/ C D />` that of a hexagon, and let them be in a straight line
 
 .. step:: construct
 
-   For let the center of the circle, :g:`E <g1:E>`, be taken, let :g:`/ E B / <g1:/ E B />`, :g:`/ E C / <g1:/ E C />`, :g:`/ E D / <g1:/ E D />` be joined
+   Let the center of the circle, :g:`E <g1:E>`, be taken
+
+.. step:: construct
+
+   :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`B <g1:B>`) → :g:`/ E B / <g1:/ E B />`, :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`C <g1:C>`) → :g:`/ E C / <g1:/ E C />`, :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`D <g1:D>`) → :g:`/ E D / <g1:/ E D />`
 
 .. step:: assert
 
@@ -51,7 +57,7 @@ G.516
 
    Since :g:`/ B C / <g1:/ B C />` is the side of an equilateral decagon → therefore the circumference :g:`( A C B ) <g1:( A C B )>` is five times the circumference :g:`( B C ) <g1:( B C )>`; therefore the circumference :g:`( A C ) <g1:( A C )>` is quadruple of :g:`( C B ) <g1:( C B )>`.
 
-.. step:: assert [G.198] <G.198>
+.. step:: assert ∵ equal_circles_angles_vi_33 <G.198>
 
    But, as the circumference :g:`( A C ) <g1:( A C )>` is to :g:`( C B ) <g1:( C B )>`, so is :g:`< A E C ) <g1:< A E C )>` to :g:`< C E B ) <g1:< C E B )>`.
 
@@ -59,19 +65,19 @@ G.516
 
    Therefore :g:`< A E C ) <g1:< A E C )>` is quadruple of :g:`< C E B ) <g1:< C E B )>`.
 
-.. step:: assert [G.12] <G.12>
+.. step:: assert ∵ isosceles_base_angles <G.12>
 
    And, since :g:`< E B C ) <g1:< E B C )>` is :eq:`equal <g1:< E B C ) = g1:< E C B )>` to :g:`< E C B ) <g1:< E C B )>`,
 
-.. step:: assert [G.45] <G.45>
+.. step:: assert ∵ triangle_angle_sum <G.45>
 
    Therefore :g:`< A E C ) <g1:< A E C )>` is double of :g:`< E C B ) <g1:< E C B )>`.
 
-.. step:: assert [G.133, G.12] <G.133, G.12>
+.. step:: assert ∵ inscribe_hexagon_in_circle, isosceles_base_angles <G.133, G.12>
 
    And, since :g:`/ E C / <g1:/ E C />` is :eq:`equal <g1:/ E C / = g1:/ C D />` to :g:`/ C D / <g1:/ C D />`, for each of them is equal to the side of the hexagon inscribed in :g:`( A B C ) <g1:( A B C )>`, :g:`< C E D ) <g1:< C E D )>` is also :eq:`equal <g1:< C E D ) = g1:< C D E )>` to :g:`< C D E ) <g1:< C D E )>`.
 
-.. step:: assert [G.45] <G.45>
+.. step:: assert ∵ triangle_angle_sum <G.45>
 
    Therefore :g:`< E C B ) <g1:< E C B )>` is double of :g:`< E D C ) <g1:< E D C )>`.
 
@@ -95,7 +101,7 @@ G.516
 
    :g:`< E B D ) <g1:< E B D )>` is common to the two triangles :g:`< B E C > <g1:< B E C >>` and :g:`< B E D > <g1:< B E D >>`;
 
-.. step:: assert [G.45] <G.45>
+.. step:: assert ∵ triangle_angle_sum <G.45>
 
    Therefore the remaining angle :g:`< B E D ) <g1:< B E D )>` is also :eq:`equal <g1:< B E D ) = g1:< E C B )>` to the remaining angle :g:`< E C B ) <g1:< E C B )>`.
 
@@ -103,7 +109,7 @@ G.516
 
    Therefore :g:`< E B D > <g1:< E B D >>` is equiangular with :g:`< E B C > <g1:< E B C >>`.
 
-.. step:: assert [G.166] <G.166>
+.. step:: assert ∵ equiangular_triangles_sides <G.166>
 
    Therefore, proportionally, as :g:`/ D B / <g1:/ D B />` is to :g:`/ B E / <g1:/ B E />`, so is :g:`/ E B / <g1:/ E B />` to :g:`/ B C / <g1:/ B C />`.
 

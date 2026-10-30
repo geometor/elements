@@ -6,12 +6,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>geometor.elements.graph &mdash; Project name not set  documentation</title>
+  <title>geometor.elements.graph &mdash; GEOMETOR • elements</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=156d9f89" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=3d8cc37d" />
   <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -20,7 +20,7 @@
   <link rel="icon" href="../../../../../_static/favicon.ico" />
 </head>
 
-<body>
+<body class="book-theme-classical-serif">
   <header>
     <div class="logo">
       <a href="../../../../../index.html">
@@ -43,7 +43,7 @@
           <a href="../../../../../usage.html"  >usage</a>
         </li>
         <li>
-          <a href="../../../../index.html"  >modules</a>
+          <a href="../../../../index.html" class="is-active" aria-selected="true" >modules</a>
         </li>
         <li>
           <a href="../../../../../log/index.html"  >log</a>
@@ -55,262 +55,272 @@
     </nav>
     <div class="motto"></div>
   </header>
-  <main>
-    <article>
-      <header>
-      <nav class="breadcrumbs">
-        <span><a href="../../../../../index.html">Home</a></span>
-          <span>/</span>
-        <span><a href="../../../../index.html">modules</a></span>
-      </nav>
-        <nav class="context">
-          <div class="prev">
-             <a href="../g_index/index.html" title="geometor.elements.g_index" >Prev</a>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../../../../index.html" title="Return to Project Portal">&larr; elements</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../../../../../index.html">GEOMETOR • elements</a>
           </div>
-          <div class="next">
-            <a href="../pseudocode/index.html" title="geometor.elements.pseudocode" >Next</a>
+          <div class="book-header-breadcrumbs book-header-badges" role="navigation" aria-label="Breadcrumbs">
+            <a class="book-crumb-link" href="../../../../index.html">modules</a>
           </div>
-        </nav>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../g_index/index.html" title="geometor.elements.g_index">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../pseudocode/index.html" title="geometor.elements.pseudocode"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
       </header>
-      <div class="content body" role="main">
+      <div class="content body book-content" role="main">
         <section class="level-1" id="module-geometor.elements.graph">
-          <span id="geometor-elements-graph"></span><h1>geometor.elements.graph<a class="headerlink" href="#module-geometor.elements.graph" title="Link to this heading">¶</a></h1>
-          <p>Graph construction and semantic metadata extraction for GEOMETOR Elements.</p>
-          <p>Crawls the composed Heath Edition RST source in <cite>../euclid/docsrc/heath/</cite> across
-          all 3 volumes (Books I–XIII), extracting discrete nodes for definitions,
-          postulates, common notions, and propositions, along with their dependency edges,
-          interactive SVG diagrams, categories, and semantic tags.</p>
-          <section class="level-2" id="attributes">
-          <h2>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">¶</a></h2>
-          <table class="autosummary longtable docutils align-default">
-          <tbody>
-          <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.elements.graph.ROMAN_NUMERALS" title="geometor.elements.graph.ROMAN_NUMERALS"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ROMAN_NUMERALS</span></code></a></p></td>
-          <td><p></p></td>
-          </tr>
-          <tr class="row-even"><td><p><a class="reference internal" href="#geometor.elements.graph.ROMAN_TO_INT" title="geometor.elements.graph.ROMAN_TO_INT"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ROMAN_TO_INT</span></code></a></p></td>
-          <td><p></p></td>
-          </tr>
-          <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.elements.graph.VALID_BOOKS" title="geometor.elements.graph.VALID_BOOKS"><code class="xref py py-obj docutils literal notranslate"><span class="pre">VALID_BOOKS</span></code></a></p></td>
-          <td><p></p></td>
-          </tr>
-          <tr class="row-even"><td><p><a class="reference internal" href="#geometor.elements.graph.BOOK_TO_VOLUME" title="geometor.elements.graph.BOOK_TO_VOLUME"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BOOK_TO_VOLUME</span></code></a></p></td>
-          <td><p></p></td>
-          </tr>
-          <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.elements.graph.BOOK_DOMAIN_CATEGORIES" title="geometor.elements.graph.BOOK_DOMAIN_CATEGORIES"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BOOK_DOMAIN_CATEGORIES</span></code></a></p></td>
-          <td><p></p></td>
-          </tr>
-          <tr class="row-even"><td><p><a class="reference internal" href="#geometor.elements.graph.SECTION_TYPE_ORDER" title="geometor.elements.graph.SECTION_TYPE_ORDER"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SECTION_TYPE_ORDER</span></code></a></p></td>
-          <td><p></p></td>
-          </tr>
-          <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.elements.graph.G_DEP_TYPE_ORDER" title="geometor.elements.graph.G_DEP_TYPE_ORDER"><code class="xref py py-obj docutils literal notranslate"><span class="pre">G_DEP_TYPE_ORDER</span></code></a></p></td>
-          <td><p></p></td>
-          </tr>
-          <tr class="row-even"><td><p><a class="reference internal" href="#geometor.elements.graph.CONCEPT_PATTERNS" title="geometor.elements.graph.CONCEPT_PATTERNS"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONCEPT_PATTERNS</span></code></a></p></td>
-          <td><p></p></td>
-          </tr>
-          </tbody>
-          </table>
-          </section>
-          <section class="level-2" id="functions">
-          <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
-          <table class="autosummary longtable docutils align-default">
-          <tbody>
-          <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.elements.graph.normalize_canonical_id" title="geometor.elements.graph.normalize_canonical_id"><code class="xref py py-obj docutils literal notranslate"><span class="pre">normalize_canonical_id</span></code></a>(→ str)</p></td>
-          <td><p>Normalize cross-book shared definition IDs (e.g. VIII.def.20 -&gt; VII.def.20).</p></td>
-          </tr>
-          <tr class="row-even"><td><p><a class="reference internal" href="#geometor.elements.graph.get_node_type" title="geometor.elements.graph.get_node_type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_node_type</span></code></a>(→ str)</p></td>
-          <td><p>Classify a canonical Euclid ID into 'prop', 'def', 'post', or 'cn'.</p></td>
-          </tr>
-          <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.elements.graph.canonical_sort_key" title="geometor.elements.graph.canonical_sort_key"><code class="xref py py-obj docutils literal notranslate"><span class="pre">canonical_sort_key</span></code></a>(→ Tuple[int, int, int, int, str])</p></td>
-          <td><p>Return a deterministic sort key for canonical Euclid IDs.</p></td>
-          </tr>
-          <tr class="row-even"><td><p><a class="reference internal" href="#geometor.elements.graph.g_dependency_sort_key" title="geometor.elements.graph.g_dependency_sort_key"><code class="xref py py-obj docutils literal notranslate"><span class="pre">g_dependency_sort_key</span></code></a>(→ Tuple[int, int, int, int, str])</p></td>
-          <td><p>Sort key for G-Index dependency traversal (cn, def, post, prop).</p></td>
-          </tr>
-          <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.elements.graph.infer_justification_target" title="geometor.elements.graph.infer_justification_target"><code class="xref py py-obj docutils literal notranslate"><span class="pre">infer_justification_target</span></code></a>(→ Optional[str])</p></td>
-          <td><p>Infer canonical target ID(s) from justification text when &lt;target&gt; is omitted.</p></td>
-          </tr>
-          <tr class="row-even"><td><p><a class="reference internal" href="#geometor.elements.graph.parse_justification_arg" title="geometor.elements.graph.parse_justification_arg"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_justification_arg</span></code></a>(→ Tuple[str, Optional[str]])</p></td>
-          <td><p>Parse a justification string into (display_text, normalized_target_ids).</p></td>
-          </tr>
-          <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.elements.graph.parse_metadata_and_body" title="geometor.elements.graph.parse_metadata_and_body"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_metadata_and_body</span></code></a>(→ Tuple[Dict[str, str], str])</p></td>
-          <td><p>Split an RST document into its leading field-list metadata dict and remaining body.</p></td>
-          </tr>
-          <tr class="row-even"><td><p><a class="reference internal" href="#geometor.elements.graph.strip_folio_milestones" title="geometor.elements.graph.strip_folio_milestones"><code class="xref py py-obj docutils literal notranslate"><span class="pre">strip_folio_milestones</span></code></a>(→ str)</p></td>
-          <td><p>Remove .. _folio-...: labels and .. folio:: directives from an RST body.</p></td>
-          </tr>
-          <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.elements.graph.strip_footnotes" title="geometor.elements.graph.strip_footnotes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">strip_footnotes</span></code></a>(→ str)</p></td>
-          <td><p>Remove Heath's inline footnote references (<code class="docutils literal notranslate"><span class="pre">[#f1]_</span></code>) and footnote definition blocks (<code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">[#f1]</span></code>).</p></td>
-          </tr>
-          <tr class="row-even"><td><p><a class="reference internal" href="#geometor.elements.graph.extract_primitive_tags" title="geometor.elements.graph.extract_primitive_tags"><code class="xref py py-obj docutils literal notranslate"><span class="pre">extract_primitive_tags</span></code></a>(→ List[str])</p></td>
-          <td><p>Identify GEOMETOR geometric primitive tags from :g: role targets in rst_body.</p></td>
-          </tr>
-          <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.elements.graph.extract_taxonomy" title="geometor.elements.graph.extract_taxonomy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">extract_taxonomy</span></code></a>(→ Tuple[List[str], List[str], ...)</p></td>
-          <td><p>Derive (categories, tags, subtype) for a G-Index node from its content and structure.</p></td>
-          </tr>
-          <tr class="row-even"><td><p><a class="reference internal" href="#geometor.elements.graph.parse_grouped_items_file" title="geometor.elements.graph.parse_grouped_items_file"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_grouped_items_file</span></code></a>(→ List[Dict[str, Any]])</p></td>
-          <td><p>Extract individual anchored items (definitions, postulates, common notions) from a grouped RST file.</p></td>
-          </tr>
-          <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.elements.graph.parse_proposition_file" title="geometor.elements.graph.parse_proposition_file"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_proposition_file</span></code></a>(→ Dict[str, Any])</p></td>
-          <td><p>Parse a composed proposition index.rst file from euclid/docsrc/heath/.</p></td>
-          </tr>
-          <tr class="row-even"><td><p><a class="reference internal" href="#geometor.elements.graph.build_graph" title="geometor.elements.graph.build_graph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">build_graph</span></code></a>(→ Tuple[networkx.DiGraph, List[Dict[str, ...)</p></td>
-          <td><p>Build the complete NetworkX dependency graph from ../euclid/docsrc/heath/.</p></td>
-          </tr>
-          </tbody>
-          </table>
-          </section>
-          <section class="level-2" id="module-contents">
-          <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
-          <dl class="py data">
-          <dt class="sig sig-object py" id="geometor.elements.graph.ROMAN_NUMERALS">
-          <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">ROMAN_NUMERALS</span></span><a class="headerlink" href="#geometor.elements.graph.ROMAN_NUMERALS" title="Link to this definition">¶</a></dt>
-          <dd></dd></dl>
+        <span id="geometor-elements-graph"></span><h1>geometor.elements.graph<a class="headerlink" href="#module-geometor.elements.graph" title="Link to this heading">¶</a></h1>
+        <p>Graph construction and semantic metadata extraction for GEOMETOR Elements.</p>
+        <p>Crawls the composed Heath Edition RST source in <cite>../euclid/docsrc/heath/</cite> across
+        all 3 volumes (Books I–XIII), extracting discrete nodes for definitions,
+        postulates, common notions, and propositions, along with their dependency edges,
+        interactive SVG diagrams, categories, and semantic tags.</p>
+        <section class="level-2" id="attributes">
+        <h2>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.elements.graph.ROMAN_NUMERALS" title="geometor.elements.graph.ROMAN_NUMERALS"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ROMAN_NUMERALS</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.elements.graph.ROMAN_TO_INT" title="geometor.elements.graph.ROMAN_TO_INT"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ROMAN_TO_INT</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.elements.graph.VALID_BOOKS" title="geometor.elements.graph.VALID_BOOKS"><code class="xref py py-obj docutils literal notranslate"><span class="pre">VALID_BOOKS</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.elements.graph.BOOK_TO_VOLUME" title="geometor.elements.graph.BOOK_TO_VOLUME"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BOOK_TO_VOLUME</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.elements.graph.BOOK_DOMAIN_CATEGORIES" title="geometor.elements.graph.BOOK_DOMAIN_CATEGORIES"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BOOK_DOMAIN_CATEGORIES</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.elements.graph.SECTION_TYPE_ORDER" title="geometor.elements.graph.SECTION_TYPE_ORDER"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SECTION_TYPE_ORDER</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.elements.graph.G_DEP_TYPE_ORDER" title="geometor.elements.graph.G_DEP_TYPE_ORDER"><code class="xref py py-obj docutils literal notranslate"><span class="pre">G_DEP_TYPE_ORDER</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.elements.graph.CONCEPT_PATTERNS" title="geometor.elements.graph.CONCEPT_PATTERNS"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONCEPT_PATTERNS</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="functions">
+        <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.elements.graph.normalize_canonical_id" title="geometor.elements.graph.normalize_canonical_id"><code class="xref py py-obj docutils literal notranslate"><span class="pre">normalize_canonical_id</span></code></a>(→ str)</p></td>
+        <td><p>Normalize cross-book shared definition IDs (e.g. VIII.def.20 -&gt; VII.def.20).</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.elements.graph.get_node_type" title="geometor.elements.graph.get_node_type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_node_type</span></code></a>(→ str)</p></td>
+        <td><p>Classify a canonical Euclid ID into 'prop', 'def', 'post', or 'cn'.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.elements.graph.canonical_sort_key" title="geometor.elements.graph.canonical_sort_key"><code class="xref py py-obj docutils literal notranslate"><span class="pre">canonical_sort_key</span></code></a>(→ Tuple[int, int, int, int, str])</p></td>
+        <td><p>Return a deterministic sort key for canonical Euclid IDs.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.elements.graph.g_dependency_sort_key" title="geometor.elements.graph.g_dependency_sort_key"><code class="xref py py-obj docutils literal notranslate"><span class="pre">g_dependency_sort_key</span></code></a>(→ Tuple[int, int, int, int, str])</p></td>
+        <td><p>Sort key for G-Index dependency traversal (cn, def, post, prop).</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.elements.graph.infer_justification_target" title="geometor.elements.graph.infer_justification_target"><code class="xref py py-obj docutils literal notranslate"><span class="pre">infer_justification_target</span></code></a>(→ Optional[str])</p></td>
+        <td><p>Infer canonical target ID(s) from justification text when &lt;target&gt; is omitted.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.elements.graph.parse_justification_arg" title="geometor.elements.graph.parse_justification_arg"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_justification_arg</span></code></a>(→ Tuple[str, Optional[str]])</p></td>
+        <td><p>Parse a justification string into (display_text, normalized_target_ids).</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.elements.graph.parse_metadata_and_body" title="geometor.elements.graph.parse_metadata_and_body"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_metadata_and_body</span></code></a>(→ Tuple[Dict[str, str], str])</p></td>
+        <td><p>Split an RST document into its leading field-list metadata dict and remaining body.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.elements.graph.strip_folio_milestones" title="geometor.elements.graph.strip_folio_milestones"><code class="xref py py-obj docutils literal notranslate"><span class="pre">strip_folio_milestones</span></code></a>(→ str)</p></td>
+        <td><p>Remove .. _folio-...: labels and .. folio:: directives from an RST body.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.elements.graph.strip_footnotes" title="geometor.elements.graph.strip_footnotes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">strip_footnotes</span></code></a>(→ str)</p></td>
+        <td><p>Remove Heath's inline footnote references (<code class="docutils literal notranslate"><span class="pre">[#f1]_</span></code>) and footnote definition blocks (<code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">[#f1]</span></code>).</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.elements.graph.extract_primitive_tags" title="geometor.elements.graph.extract_primitive_tags"><code class="xref py py-obj docutils literal notranslate"><span class="pre">extract_primitive_tags</span></code></a>(→ List[str])</p></td>
+        <td><p>Identify GEOMETOR geometric primitive tags from :g: role targets in rst_body.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.elements.graph.extract_taxonomy" title="geometor.elements.graph.extract_taxonomy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">extract_taxonomy</span></code></a>(→ Tuple[List[str], List[str], ...)</p></td>
+        <td><p>Derive (categories, tags, subtype) for a G-Index node from its content and structure.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.elements.graph.parse_grouped_items_file" title="geometor.elements.graph.parse_grouped_items_file"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_grouped_items_file</span></code></a>(→ List[Dict[str, Any]])</p></td>
+        <td><p>Extract individual anchored items (definitions, postulates, common notions) from a grouped RST file.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.elements.graph.parse_proposition_file" title="geometor.elements.graph.parse_proposition_file"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_proposition_file</span></code></a>(→ Dict[str, Any])</p></td>
+        <td><p>Parse a composed proposition index.rst file from euclid/docsrc/heath/.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.elements.graph.build_graph" title="geometor.elements.graph.build_graph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">build_graph</span></code></a>(→ Tuple[networkx.DiGraph, List[Dict[str, ...)</p></td>
+        <td><p>Build the complete NetworkX dependency graph from ../euclid/docsrc/heath/.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="module-contents">
+        <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.elements.graph.ROMAN_NUMERALS">
+        <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">ROMAN_NUMERALS</span></span><a class="headerlink" href="#geometor.elements.graph.ROMAN_NUMERALS" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
 
-          <dl class="py data">
-          <dt class="sig sig-object py" id="geometor.elements.graph.ROMAN_TO_INT">
-          <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">ROMAN_TO_INT</span></span><a class="headerlink" href="#geometor.elements.graph.ROMAN_TO_INT" title="Link to this definition">¶</a></dt>
-          <dd></dd></dl>
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.elements.graph.ROMAN_TO_INT">
+        <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">ROMAN_TO_INT</span></span><a class="headerlink" href="#geometor.elements.graph.ROMAN_TO_INT" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
 
-          <dl class="py data">
-          <dt class="sig sig-object py" id="geometor.elements.graph.VALID_BOOKS">
-          <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">VALID_BOOKS</span></span><a class="headerlink" href="#geometor.elements.graph.VALID_BOOKS" title="Link to this definition">¶</a></dt>
-          <dd></dd></dl>
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.elements.graph.VALID_BOOKS">
+        <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">VALID_BOOKS</span></span><a class="headerlink" href="#geometor.elements.graph.VALID_BOOKS" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
 
-          <dl class="py data">
-          <dt class="sig sig-object py" id="geometor.elements.graph.BOOK_TO_VOLUME">
-          <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">BOOK_TO_VOLUME</span></span><a class="headerlink" href="#geometor.elements.graph.BOOK_TO_VOLUME" title="Link to this definition">¶</a></dt>
-          <dd></dd></dl>
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.elements.graph.BOOK_TO_VOLUME">
+        <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">BOOK_TO_VOLUME</span></span><a class="headerlink" href="#geometor.elements.graph.BOOK_TO_VOLUME" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
 
-          <dl class="py data">
-          <dt class="sig sig-object py" id="geometor.elements.graph.BOOK_DOMAIN_CATEGORIES">
-          <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">BOOK_DOMAIN_CATEGORIES</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.elements.graph.BOOK_DOMAIN_CATEGORIES" title="Link to this definition">¶</a></dt>
-          <dd></dd></dl>
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.elements.graph.BOOK_DOMAIN_CATEGORIES">
+        <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">BOOK_DOMAIN_CATEGORIES</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.elements.graph.BOOK_DOMAIN_CATEGORIES" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
 
-          <dl class="py data">
-          <dt class="sig sig-object py" id="geometor.elements.graph.SECTION_TYPE_ORDER">
-          <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">SECTION_TYPE_ORDER</span></span><a class="headerlink" href="#geometor.elements.graph.SECTION_TYPE_ORDER" title="Link to this definition">¶</a></dt>
-          <dd></dd></dl>
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.elements.graph.SECTION_TYPE_ORDER">
+        <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">SECTION_TYPE_ORDER</span></span><a class="headerlink" href="#geometor.elements.graph.SECTION_TYPE_ORDER" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
 
-          <dl class="py data">
-          <dt class="sig sig-object py" id="geometor.elements.graph.G_DEP_TYPE_ORDER">
-          <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">G_DEP_TYPE_ORDER</span></span><a class="headerlink" href="#geometor.elements.graph.G_DEP_TYPE_ORDER" title="Link to this definition">¶</a></dt>
-          <dd></dd></dl>
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.elements.graph.G_DEP_TYPE_ORDER">
+        <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">G_DEP_TYPE_ORDER</span></span><a class="headerlink" href="#geometor.elements.graph.G_DEP_TYPE_ORDER" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
 
-          <dl class="py data">
-          <dt class="sig sig-object py" id="geometor.elements.graph.CONCEPT_PATTERNS">
-          <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">CONCEPT_PATTERNS</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/library/re.html#re.Pattern" title="(in Python v3.13)"><span class="pre">re.Pattern</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.elements.graph.CONCEPT_PATTERNS" title="Link to this definition">¶</a></dt>
-          <dd></dd></dl>
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.elements.graph.CONCEPT_PATTERNS">
+        <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">CONCEPT_PATTERNS</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/library/re.html#re.Pattern" title="(in Python v3.13)"><span class="pre">re.Pattern</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.elements.graph.CONCEPT_PATTERNS" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
 
-          <dl class="py function">
-          <dt class="sig sig-object py" id="geometor.elements.graph.normalize_canonical_id">
-          <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">normalize_canonical_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ref_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.elements.graph.normalize_canonical_id" title="Link to this definition">¶</a></dt>
-          <dd><p>Normalize cross-book shared definition IDs (e.g. VIII.def.20 -&gt; VII.def.20).</p>
-          </dd></dl>
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.elements.graph.normalize_canonical_id">
+        <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">normalize_canonical_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ref_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.elements.graph.normalize_canonical_id" title="Link to this definition">¶</a></dt>
+        <dd><p>Normalize cross-book shared definition IDs (e.g. VIII.def.20 -&gt; VII.def.20).</p>
+        </dd></dl>
 
-          <dl class="py function">
-          <dt class="sig sig-object py" id="geometor.elements.graph.get_node_type">
-          <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">get_node_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ref_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.elements.graph.get_node_type" title="Link to this definition">¶</a></dt>
-          <dd><p>Classify a canonical Euclid ID into ‘prop’, ‘def’, ‘post’, or ‘cn’.</p>
-          </dd></dl>
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.elements.graph.get_node_type">
+        <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">get_node_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ref_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.elements.graph.get_node_type" title="Link to this definition">¶</a></dt>
+        <dd><p>Classify a canonical Euclid ID into ‘prop’, ‘def’, ‘post’, or ‘cn’.</p>
+        </dd></dl>
 
-          <dl class="py function">
-          <dt class="sig sig-object py" id="geometor.elements.graph.canonical_sort_key">
-          <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">canonical_sort_key</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ref_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_order_map</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.elements.graph.canonical_sort_key" title="Link to this definition">¶</a></dt>
-          <dd><p>Return a deterministic sort key for canonical Euclid IDs.</p>
-          </dd></dl>
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.elements.graph.canonical_sort_key">
+        <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">canonical_sort_key</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ref_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_order_map</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.elements.graph.canonical_sort_key" title="Link to this definition">¶</a></dt>
+        <dd><p>Return a deterministic sort key for canonical Euclid IDs.</p>
+        </dd></dl>
 
-          <dl class="py function">
-          <dt class="sig sig-object py" id="geometor.elements.graph.g_dependency_sort_key">
-          <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">g_dependency_sort_key</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ref_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.elements.graph.g_dependency_sort_key" title="Link to this definition">¶</a></dt>
-          <dd><p>Sort key for G-Index dependency traversal (cn, def, post, prop).</p>
-          </dd></dl>
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.elements.graph.g_dependency_sort_key">
+        <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">g_dependency_sort_key</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ref_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.elements.graph.g_dependency_sort_key" title="Link to this definition">¶</a></dt>
+        <dd><p>Sort key for G-Index dependency traversal (cn, def, post, prop).</p>
+        </dd></dl>
 
-          <dl class="py function">
-          <dt class="sig sig-object py" id="geometor.elements.graph.infer_justification_target">
-          <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">infer_justification_target</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">display</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">current_book</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#geometor.elements.graph.infer_justification_target" title="Link to this definition">¶</a></dt>
-          <dd><p>Infer canonical target ID(s) from justification text when &lt;target&gt; is omitted.</p>
-          </dd></dl>
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.elements.graph.infer_justification_target">
+        <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">infer_justification_target</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">display</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">current_book</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#geometor.elements.graph.infer_justification_target" title="Link to this definition">¶</a></dt>
+        <dd><p>Infer canonical target ID(s) from justification text when &lt;target&gt; is omitted.</p>
+        </dd></dl>
 
-          <dl class="py function">
-          <dt class="sig sig-object py" id="geometor.elements.graph.parse_justification_arg">
-          <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">parse_justification_arg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">raw_arg</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">current_book</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.elements.graph.parse_justification_arg" title="Link to this definition">¶</a></dt>
-          <dd><p>Parse a justification string into (display_text, normalized_target_ids).</p>
-          </dd></dl>
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.elements.graph.parse_justification_arg">
+        <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">parse_justification_arg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">raw_arg</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">current_book</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.elements.graph.parse_justification_arg" title="Link to this definition">¶</a></dt>
+        <dd><p>Parse a justification string into (display_text, normalized_target_ids).</p>
+        </dd></dl>
 
-          <dl class="py function">
-          <dt class="sig sig-object py" id="geometor.elements.graph.parse_metadata_and_body">
-          <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">parse_metadata_and_body</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rst_text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.elements.graph.parse_metadata_and_body" title="Link to this definition">¶</a></dt>
-          <dd><p>Split an RST document into its leading field-list metadata dict and remaining body.</p>
-          </dd></dl>
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.elements.graph.parse_metadata_and_body">
+        <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">parse_metadata_and_body</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rst_text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.elements.graph.parse_metadata_and_body" title="Link to this definition">¶</a></dt>
+        <dd><p>Split an RST document into its leading field-list metadata dict and remaining body.</p>
+        </dd></dl>
 
-          <dl class="py function">
-          <dt class="sig sig-object py" id="geometor.elements.graph.strip_folio_milestones">
-          <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">strip_folio_milestones</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rst_body</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.elements.graph.strip_folio_milestones" title="Link to this definition">¶</a></dt>
-          <dd><p>Remove .. _folio-…: labels and .. folio:: directives from an RST body.</p>
-          </dd></dl>
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.elements.graph.strip_folio_milestones">
+        <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">strip_folio_milestones</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rst_body</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.elements.graph.strip_folio_milestones" title="Link to this definition">¶</a></dt>
+        <dd><p>Remove .. _folio-…: labels and .. folio:: directives from an RST body.</p>
+        </dd></dl>
 
-          <dl class="py function">
-          <dt class="sig sig-object py" id="geometor.elements.graph.strip_footnotes">
-          <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">strip_footnotes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rst_body</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.elements.graph.strip_footnotes" title="Link to this definition">¶</a></dt>
-          <dd><p>Remove Heath’s inline footnote references (<code class="docutils literal notranslate"><span class="pre">[#f1]_</span></code>) and footnote definition blocks (<code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">[#f1]</span></code>).</p>
-          </dd></dl>
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.elements.graph.strip_footnotes">
+        <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">strip_footnotes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rst_body</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#geometor.elements.graph.strip_footnotes" title="Link to this definition">¶</a></dt>
+        <dd><p>Remove Heath’s inline footnote references (<code class="docutils literal notranslate"><span class="pre">[#f1]_</span></code>) and footnote definition blocks (<code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">[#f1]</span></code>).</p>
+        </dd></dl>
 
-          <dl class="py function">
-          <dt class="sig sig-object py" id="geometor.elements.graph.extract_primitive_tags">
-          <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">extract_primitive_tags</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rst_body</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.elements.graph.extract_primitive_tags" title="Link to this definition">¶</a></dt>
-          <dd><p>Identify GEOMETOR geometric primitive tags from :g: role targets in rst_body.</p>
-          </dd></dl>
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.elements.graph.extract_primitive_tags">
+        <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">extract_primitive_tags</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rst_body</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.elements.graph.extract_primitive_tags" title="Link to this definition">¶</a></dt>
+        <dd><p>Identify GEOMETOR geometric primitive tags from :g: role targets in rst_body.</p>
+        </dd></dl>
 
-          <dl class="py function">
-          <dt class="sig sig-object py" id="geometor.elements.graph.extract_taxonomy">
-          <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">extract_taxonomy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node_ref</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">book_roman</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">rst_body</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.elements.graph.extract_taxonomy" title="Link to this definition">¶</a></dt>
-          <dd><p>Derive (categories, tags, subtype) for a G-Index node from its content and structure.</p>
-          </dd></dl>
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.elements.graph.extract_taxonomy">
+        <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">extract_taxonomy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node_ref</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">book_roman</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">rst_body</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.elements.graph.extract_taxonomy" title="Link to this definition">¶</a></dt>
+        <dd><p>Derive (categories, tags, subtype) for a G-Index node from its content and structure.</p>
+        </dd></dl>
 
-          <dl class="py function">
-          <dt class="sig sig-object py" id="geometor.elements.graph.parse_grouped_items_file">
-          <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">parse_grouped_items_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rst_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/pathlib.html#pathlib.Path" title="(in Python v3.13)"><span class="pre">pathlib.Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">heath_root</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/pathlib.html#pathlib.Path" title="(in Python v3.13)"><span class="pre">pathlib.Path</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.elements.graph.parse_grouped_items_file" title="Link to this definition">¶</a></dt>
-          <dd><p>Extract individual anchored items (definitions, postulates, common notions) from a grouped RST file.</p>
-          </dd></dl>
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.elements.graph.parse_grouped_items_file">
+        <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">parse_grouped_items_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rst_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/pathlib.html#pathlib.Path" title="(in Python v3.13)"><span class="pre">pathlib.Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">heath_root</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/pathlib.html#pathlib.Path" title="(in Python v3.13)"><span class="pre">pathlib.Path</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.elements.graph.parse_grouped_items_file" title="Link to this definition">¶</a></dt>
+        <dd><p>Extract individual anchored items (definitions, postulates, common notions) from a grouped RST file.</p>
+        </dd></dl>
 
-          <dl class="py function">
-          <dt class="sig sig-object py" id="geometor.elements.graph.parse_proposition_file">
-          <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">parse_proposition_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rst_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/pathlib.html#pathlib.Path" title="(in Python v3.13)"><span class="pre">pathlib.Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">heath_root</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/pathlib.html#pathlib.Path" title="(in Python v3.13)"><span class="pre">pathlib.Path</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.elements.graph.parse_proposition_file" title="Link to this definition">¶</a></dt>
-          <dd><p>Parse a composed proposition index.rst file from euclid/docsrc/heath/.</p>
-          </dd></dl>
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.elements.graph.parse_proposition_file">
+        <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">parse_proposition_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rst_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/pathlib.html#pathlib.Path" title="(in Python v3.13)"><span class="pre">pathlib.Path</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">heath_root</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/pathlib.html#pathlib.Path" title="(in Python v3.13)"><span class="pre">pathlib.Path</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.elements.graph.parse_proposition_file" title="Link to this definition">¶</a></dt>
+        <dd><p>Parse a composed proposition index.rst file from euclid/docsrc/heath/.</p>
+        </dd></dl>
 
-          <dl class="py function">
-          <dt class="sig sig-object py" id="geometor.elements.graph.build_graph">
-          <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">build_graph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">source_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/pathlib.html#pathlib.Path" title="(in Python v3.13)"><span class="pre">pathlib.Path</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">books</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">networkx.DiGraph</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.elements.graph.build_graph" title="Link to this definition">¶</a></dt>
-          <dd><p>Build the complete NetworkX dependency graph from ../euclid/docsrc/heath/.</p>
-          <dl class="field-list simple">
-          <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-          <dd class="field-odd"><ul class="simple">
-          <li><p><strong>source_dir</strong> – Path to <cite>euclid/docsrc/heath</cite>. Defaults to sibling repo.</p></li>
-          <li><p><strong>books</strong> – Optional list of Roman book numerals to include (defaults to I..XIII).</p></li>
-          </ul>
-          </dd>
-          <dt class="field-even">Returns<span class="colon">:</span></dt>
-          <dd class="field-even"><p>Tuple of (DiGraph, all_books_data).</p>
-          </dd>
-          </dl>
-          </dd></dl>
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.elements.graph.build_graph">
+        <span class="sig-prename descclassname"><span class="pre">geometor.elements.graph.</span></span><span class="sig-name descname"><span class="pre">build_graph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">source_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/pathlib.html#pathlib.Path" title="(in Python v3.13)"><span class="pre">pathlib.Path</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">books</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">networkx.DiGraph</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.elements.graph.build_graph" title="Link to this definition">¶</a></dt>
+        <dd><p>Build the complete NetworkX dependency graph from ../euclid/docsrc/heath/.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>source_dir</strong> – Path to <cite>euclid/docsrc/heath</cite>. Defaults to sibling repo.</p></li>
+        <li><p><strong>books</strong> – Optional list of Roman book numerals to include (defaults to I..XIII).</p></li>
+        </ul>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Tuple of (DiGraph, all_books_data).</p>
+        </dd>
+        </dl>
+        </dd></dl>
 
-          </section>
-          </section>
+        </section>
+        </section>
 
       </div>
-      <footer>
-
-        <nav class="context">
-          <div class="prev">
-             <a href="../g_index/index.html" title="geometor.elements.g_index" >Prev</a>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../g_index/index.html" title="geometor.elements.g_index">&larr; <span class="nav-label">geometor.elements.g_index</span></a>
           </div>
-          <div class="next">
-            <a href="../pseudocode/index.html" title="geometor.elements.pseudocode" >Next</a>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../../../../../index.html">GEOMETOR • elements</a>
           </div>
-        </nav>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../pseudocode/index.html" title="geometor.elements.pseudocode"><span class="nav-label">geometor.elements.pseudocode</span> &rarr;</a>
+          </div>
+        </div>
       </footer>
     </article>
   </main>
@@ -518,28 +528,28 @@
   <footer>
     <div class="footer-nav">
       <ul>
-        <li><a href="../../../../../about.html">about</a></li>
-        <li><a href="../../../../../connect.html">connect</a></li>
-        <li><a href="../../../../../glossary.html">glossary</a></li>
-        <li><a href="../../../../../todos/index.html">todos</a></li>
-        <li><a href="../../../../../changelog.html">changelog</a></li>
+        <li><a href="../../../../../about.html"  >about</a></li>
+        <li><a href="../../../../../connect.html"  >connect</a></li>
+        <li><a href="../../../../../glossary.html"  >glossary</a></li>
+        <li><a href="../../../../../todos/index.html"  >todos</a></li>
+        <li><a href="../../../../../changelog.html"  >changelog</a></li>
       </ul>
     </div>
     <hr />
     <div role="contentinfo">
       <p>
-        &copy; Copyright .
+        &copy; Copyright 2026, GEOMETOR.
       </p>
     </div>
   </footer>
 
   <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../../../../_static/documentation_options.js?v=5929fcd5"></script>
+  <script src="../../../../../_static/documentation_options.js?v=d5a15cff"></script>
   <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>
-  <script src="../../../../../_static/js/geometor_interactive.js?v=421e4467"></script>
+  <script src="../../../../../_static/js/geometor_interactive.js?v=4430a5d4"></script>
   <script src="../../../../../_static/js/search_highlight.js"></script>
 
 </body>

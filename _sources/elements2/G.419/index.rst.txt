@@ -24,18 +24,23 @@ G.419
 
    If an area be contained by a rational straight line and a second apotome, the "side" of the area is a first apotome of a medial straight line.
 
+.. signature:: theorem
+
+   | :fn:`area_contained_rational_x_92 <G.419>`\ ()
+   | **prove** the "side" of the area :g:`< A B > <g1:< A B >>` is a first apotome of a medial straight line; :g:`/ L N / <g1:/ L N />` is a first apotome of a medial straight line
+
 .. picture:: g1.svg
    :alt: Book X, Proposition 92
 
 .. step:: assert
 
-   For let the area :g:`< A B > <g1:< A B >>` be contained by the rational straight line :g:`/ A C / <g1:/ A C />` and the second apotome :g:`/ A D / <g1:/ A D />`
+   Let the area :g:`< A B > <g1:< A B >>` be contained by the rational straight line :g:`/ A C / <g1:/ A C />` and the second apotome :g:`/ A D / <g1:/ A D />`
 
 .. step:: assert
 
-   For let :g:`/ D G / <g1:/ D G />` be the annex to :g:`/ A D / <g1:/ A D />`
+   Let :g:`/ D G / <g1:/ D G />` be the annex to :g:`/ A D / <g1:/ A D />`
 
-.. step:: assert [G.394, G.408] <G.394, G.408>
+.. step:: assert ∵ rational_straight_line, annex_commensurable_length_def <G.394, G.408>
 
    Therefore :g:`/ A G / <g1:/ A G />`, :g:`/ G D / <g1:/ G D />` are rational straight lines commensurable in square only, and the annex :g:`/ D G / <g1:/ D G />` is commensurable with the rational straight line :g:`/ A C / <g1:/ A C />` set out, while the square on the whole :g:`/ A G / <g1:/ A G />` is greater than the square on the annex :g:`/ G D / <g1:/ G D />` by the square on a straight line commensurable in length with :g:`/ A G / <g1:/ A G />`.
 
@@ -43,7 +48,7 @@ G.419
 
    Since then the square on :g:`/ A G / <g1:/ A G />` is greater than the square on :g:`/ G D / <g1:/ G D />` by the square on a straight line commensurable with :g:`/ A G / <g1:/ A G />`,
 
-.. step:: assert [G.330] <G.330>
+.. step:: assert ∵ there_unequal_straight <G.330>
 
    Therefore, if there be applied to :g:`/ A G / <g1:/ A G />` a parallelogram equal to the fourth part of the square on :g:`/ G D / <g1:/ G D />` and deficient by a square figure, it divides it into commensurable parts.
 
@@ -59,7 +64,7 @@ G.419
 
    Therefore :g:`/ A F / <g1:/ A F />` is commensurable in length with :g:`/ F G / <g1:/ F G />`.
 
-.. step:: assert [G.328] <G.328>
+.. step:: assert ∵ commensurable_magnitudes_added <G.328>
 
    Therefore :g:`/ A G / <g1:/ A G />` is also commensurable in length with each of :g:`/ A F / <g1:/ A F />`, :g:`/ F G / <g1:/ F G />`.
 
@@ -67,7 +72,7 @@ G.419
 
    :g:`/ A G / <g1:/ A G />` is rational and incommensurable in length with :g:`/ A C / <g1:/ A C />`;
 
-.. step:: assert [G.326, G.335] <G.326, G.335>
+.. step:: assert ∵ magnitudes_commensurable_incommensurable, rectangle_contained_rational_x_21 <G.326, G.335>
 
    Therefore each of :g:`/ A F / <g1:/ A F />`, :g:`/ F G / <g1:/ F G />` is also rational and incommensurable in length with :g:`/ A C / <g1:/ A C />`; therefore each of the rectangles :g:`< A I > <g1:< A I >>`, :g:`< F K > <g1:< F K >>` is medial.
 
@@ -75,7 +80,7 @@ G.419
 
    Since :g:`/ D E / <g1:/ D E />` is commensurable with :g:`/ E G / <g1:/ E G />`,
 
-.. step:: assert [G.328] <G.328>
+.. step:: assert ∵ commensurable_magnitudes_added <G.328>
 
    Therefore :g:`/ D G / <g1:/ D G />` is also commensurable with each of :g:`/ D E / <g1:/ D E />`, :g:`/ E G / <g1:/ E G />`.
 
@@ -83,7 +88,7 @@ G.419
 
    :g:`/ D G / <g1:/ D G />` is commensurable in length with :g:`/ A C / <g1:/ A C />`.
 
-.. step:: assert [G.333] <G.333>
+.. step:: assert ∵ rectangle_contained_rational <G.333>
 
    Therefore each of the rectangles :g:`< D H > <g1:< D H >>`, :g:`< E K > <g1:< E K >>` is rational.
 
@@ -91,21 +96,17 @@ G.419
 
    Let then the square :g:`< L M > <g1:< L M >>` be constructed :eq:`equal <g1:< L M > = g1:< A I >>` to :g:`< A I > <g1:< A I >>`
 
-.. step:: assert
+.. step:: construct
 
    Let there be subtracted :g:`< N O > <g1:< N O >>` :eq:`equal <g1:< N O > = g1:< F K >>` to :g:`< F K > <g1:< F K >>` and being about the same angle with :g:`< L M > <g1:< L M >>`, namely :g:`< L P M ) <g1:< L P M )>`
 
-.. step:: assert [G.191] <G.191>
+.. step:: assert ∵ parallelogram_there_taken <G.191>
 
    Therefore the squares :g:`< L M > <g1:< L M >>`, :g:`< N O > <g1:< N O >>` are about the same diameter.
 
-.. step:: assert
-
-   Let :g:`/ P R / <g1:/ P R />` be their diameter
-
 .. step:: construct
 
-   Let the figure be drawn.
+   Let :g:`/ P R / <g1:/ P R />` be their diameter, and let the figure be drawn.
 
 .. step:: assert
 
@@ -119,15 +120,15 @@ G.419
 
    And, since the rectangle :g:`/ A F / <g1:/ A F />`, :g:`/ F G / <g1:/ F G />` is equal to the square on :g:`/ E G / <g1:/ E G />`,
 
-.. step:: assert [G.180] <G.180>
+.. step:: assert ∵ straight_lines_proportional_vi_17 <G.180>
 
    Therefore, as :g:`/ A F / <g1:/ A F />` is to :g:`/ E G / <g1:/ E G />`, so is :g:`/ E G / <g1:/ E G />` to :g:`/ F G / <g1:/ F G />`,
 
-.. step:: assert [G.163] <G.163>
+.. step:: assert ∵ triangles_parallelograms_height <G.163>
 
    While, as :g:`/ A F / <g1:/ A F />` is to :g:`/ E G / <g1:/ E G />`, so is :g:`< A I > <g1:< A I >>` to :g:`< E K > <g1:< E K >>`, and, as :g:`/ E G / <g1:/ E G />` is to :g:`/ F G / <g1:/ F G />`, so is :g:`< E K > <g1:< E K >>` to :g:`< F K > <g1:< F K >>`.
 
-.. step:: assert [G.148] <G.148>
+.. step:: assert ∵ ratios_ratio <G.148>
 
    Therefore :g:`< E K > <g1:< E K >>` is a mean proportional between :g:`< A I > <g1:< A I >>`, :g:`< F K > <g1:< F K >>`.
 
@@ -179,15 +180,15 @@ G.419
 
    Therefore :g:`< L O > <g1:< L O >>` is incommensurable with :g:`< N O > <g1:< N O >>`.
 
-.. step:: assert [G.163] <G.163>
+.. step:: assert ∵ triangles_parallelograms_height <G.163>
 
    But, as :g:`< L O > <g1:< L O >>` is to :g:`< N O > <g1:< N O >>`, so is :g:`/ L P / <g1:/ L P />` to :g:`/ P N / <g1:/ P N />`;
 
-.. step:: assert [G.323] <G.323>
+.. step:: assert ∵ magnitudes_proportional_commensurable <G.323>
 
    Therefore :g:`/ L P / <g1:/ L P />`, :g:`/ P N / <g1:/ P N />` are incommensurable in length.
 
-.. step:: assert [G.395] <G.395>
+.. step:: assert ∵ medial_straight_line <G.395>
 
    Therefore :g:`/ L P / <g1:/ L P />`, :g:`/ P N / <g1:/ P N />` are medial straight lines commensurable in square only which contain a rational rectangle; therefore :g:`/ L N / <g1:/ L N />` is a first apotome of a medial straight line.
 

@@ -24,16 +24,18 @@ G.203
 
    Any number is either a part or parts of any number, the less of the greater.
 
+.. signature:: theorem
+
+   | :fn:`number_part_parts <G.203>`\ (:g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />`)
+   | **given** :g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />` be two numbers, let :g:`/ B C / <g1:/ B C />` be the less
+   | **prove** :g:`/ B C / <g1:/ B C />` is either a part, or parts, of :g:`A <g1:A>`
+
 .. picture:: g1.svg
    :alt: Proposition 4 Diagram
 
 .. step:: given
 
-   :g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />` be two numbers
-
-.. step:: assert
-
-   Let :g:`/ B C / <g1:/ B C />` be the less
+   :g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />` be two numbers, let :g:`/ B C / <g1:/ B C />` be the less
 
 .. step:: assert
 
@@ -63,9 +65,9 @@ G.203
 
    If now :g:`/ B C / <g1:/ B C />` measures :g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />` is a part of :g:`A <g1:A>`.
 
-.. step:: construct [G.201] <G.201>
+.. step:: construct
 
-   But, if not, let the greatest common measure :g:`D <g1:D>` of :g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />` be taken
+   :fn:`numbers_prime_find <G.201>`: But, if not, let the greatest common measure :g:`D <g1:D>` of :g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />` be taken
 
 .. step:: assert
 

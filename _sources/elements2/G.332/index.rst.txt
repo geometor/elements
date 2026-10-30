@@ -23,6 +23,10 @@ G.332
 
    And let the square on the assigned straight line be called:term:`**rational** <rational>` and those areas which are commensurable with it:term:`**rational** <rational>`, but those which are incommensurable with it:term:`**irrational** <irrational>`, and the straight lines which produce them:term:`**irrational** <irrational>`, that is, in case the areas are squares, the sides themselves, but in case they are any other polygons, the straight lines on which are described squares equal to them.
 
+.. signature:: def
+
+   | :fn:`square_assigned_straight_def <G.332>`
+
 Required for
 ------------
 

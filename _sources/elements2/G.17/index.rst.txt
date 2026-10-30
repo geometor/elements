@@ -24,6 +24,12 @@ G.17
 
    Bisect a given finite segment.
 
+.. signature:: problem
+
+   | :fn:`bisect_segment <G.17>`\ (:g:`/ A B / <g1:/ A B />`) → :g:`D <g1:D>`
+   | **given** :g:`/ A B / <g1:/ A B />`
+   | **construct** :g:`/ A B / <g1:/ A B />` has been :eq:`bisected <g1:/ A D / = g1:/ B D />` at :g:`D <g1:D>`
+
 .. picture:: g1.svg
    :alt: Proposition 10 figure
 
@@ -31,17 +37,13 @@ G.17
 
    :g:`/ A B / <g1:/ A B />`
 
-.. step:: construct [G.5] <G.5>
+.. step:: construct
 
-   Let the :eq:`equilateral <g1:/ A B / = g1:/ A C / = g1:/ B C />` triangle :g:`< A B C > <g1:< A B C >>` be constructed on it.
+   :fn:`equilateral_triangle <G.5>`\ (:g:`/ A B / <g1:/ A B />`) → :g:`< A B C > <g1:< A B C >>` (:eq:`equilateral <g1:/ A B / = g1:/ A C / = g1:/ B C />`)
 
-.. step:: assert [G.16] <G.16>
+.. step:: construct
 
-   And let :g:`< A C B ) <g1:< A C B )>` be :eq:`bisected <g1:< A C D ) = g1:< B C D )>` by :g:`/ C D / <g1:/ C D />`
-
-.. step:: assert
-
-   :g:`/ A B / <g1:/ A B />` has been :eq:`bisected <g1:/ A D / = g1:/ B D />` at :g:`D <g1:D>`.
+   :fn:`bisect_angle <G.16>`\ (:g:`< A C B ) <g1:< A C B )>`) → :g:`/ C D / <g1:/ C D />` (:eq:`bisected <g1:< A C D ) = g1:< B C D )>`)
 
 .. step:: assert
 
@@ -51,7 +53,7 @@ G.17
 
    And :g:`< A C D ) <g1:< A C D )>` is :eq:`equal <g1:< A C D ) = g1:< B C D )>` to :g:`< B C D ) <g1:< B C D )>`
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    Therefore the base :g:`/ A D / <g1:/ A D />` is :eq:`equal <g1:/ A D / = g1:/ B D />` to the base :g:`/ B D / <g1:/ B D />`.
 

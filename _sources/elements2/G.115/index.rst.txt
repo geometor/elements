@@ -10,7 +10,7 @@
 :category: theorem, proof, plane-geometry, circles
 :tags: book-iii, point, segment, circle, angle, rectangle, tangent, equality
 :dependencies: G.60, G.67, G.78, G.96
-:excerpt: If a point be taken outside a circle and from it there fall on the circle two straight lines, and if one of them cut the circle and the other touch it, the rectangle contained by the whole of the straight line which cuts the circle and the straight
+:excerpt: If a point be taken outside a circle and from it there fall on the circle two straight lines, and if one of them cut the circle and the other touch it, the rectangle contained by the whole of the straight line which cuts the circle and the straight line intercepted on it outside between the point and the convex circumference will equals the square on the tangent.
 
 .. _G.115:
 .. _III.36:
@@ -22,11 +22,12 @@ G.115
 
 .. enunciation::
 
-   If a point be taken outside a circle and from it there fall on the circle two straight lines, and if one of them cut the circle and the other touch it, the rectangle contained by the whole of the straight line which cuts the circle and the straight
+   If a point be taken outside a circle and from it there fall on the circle two straight lines, and if one of them cut the circle and the other touch it, the rectangle contained by the whole of the straight line which cuts the circle and the straight line intercepted on it outside between the point and the convex circumference will equals the square on the tangent.
 
-.. enunciation::
+.. signature:: theorem
 
-   Line intercepted on it outside between the point and the convex circumference will equals the square on the tangent.
+   | :fn:`point_taken_outside_iii_36 <G.115>`\ ()
+   | **prove** the rectangle contained by :g:`/ A D / <g1:/ A D />`, :g:`/ D C / <g1:/ D C />` is equal to the square on :g:`/ D B / <g1:/ D B />`
 
 .. picture:: g1.svg
    :alt: Proposition 36 Case 1 diagram
@@ -36,7 +37,7 @@ G.115
 
 .. step:: construct
 
-   For let a point :g:`D <g1:D>` be taken outside :g:`( A B C ) <g1:( A B C )>`
+   Let a point :g:`D <g1:D>` be taken outside :g:`( A B C ) <g1:( A B C )>`
 
 .. step:: assert
 
@@ -52,21 +53,17 @@ G.115
 
 .. step:: assert
 
-   First let it be through the center
-
-.. step:: assert
-
-   Let :g:`F <g1:F>` be the center of :g:`( A B C ) <g1:( A B C )>`
+   First let it be through the center, and let :g:`F <g1:F>` be the center of :g:`( A B C ) <g1:( A B C )>`
 
 .. step:: construct
 
-   **segment** :g:`/ F B / <g1:/ F B />`
+   :fn:`segment <G.3>`\ (:g:`F <g1:F>`, :g:`B <g1:B>`) → :g:`/ F B / <g1:/ F B />`
 
-.. step:: assert [G.96] <G.96>
+.. step:: assert ∵ straight_line_touch <G.96>
 
    Therefore :g:`< F B D ) <g1:< F B D )>` is right.
 
-.. step:: assert [G.67] <G.67>
+.. step:: assert ∵ bisected_and_extended_segment <G.67>
 
    And, since :g:`/ A C / <g1:/ A C />` has been bisected at :g:`F <g1:F>`, and :g:`/ C D / <g1:/ C D />` is added to it, the rectangle :g:`/ A D / <g1:/ A D />`, :g:`/ D C / <g1:/ D C />` together with the square on :g:`/ F C / <g1:/ F C />` is equal to the square on :g:`/ F D / <g1:/ F D />`.
 
@@ -78,7 +75,7 @@ G.115
 
    Therefore the rectangle :g:`/ A D / <g1:/ A D />`, :g:`/ D C / <g1:/ D C />` together with the square on :g:`/ F B / <g1:/ F B />` is equal to the square on :g:`/ F D / <g1:/ F D />`.
 
-.. step:: assert [G.60] <G.60>
+.. step:: assert ∵ pythagorean_theorem <G.60>
 
    The squares on :g:`/ F B / <g1:/ F B />`, :g:`/ B D / <g1:/ B D />` are equal to the square on :g:`/ F D / <g1:/ F D />`
 
@@ -86,7 +83,7 @@ G.115
 
    Therefore the rectangle :g:`/ A D / <g1:/ A D />`, :g:`/ D C / <g1:/ D C />` together with the square on :g:`/ F B / <g1:/ F B />` is equal to the squares on :g:`/ F B / <g1:/ F B />`, :g:`/ B D / <g1:/ B D />`.
 
-.. step:: assert
+.. step:: construct
 
    Let the square on :g:`/ F B / <g1:/ F B />` be subtracted from each
 
@@ -108,9 +105,9 @@ G.115
 
 .. step:: construct
 
-   **segment** :g:`/ E B / <g2:/ E B />`, :g:`/ E C / <g2:/ E C />`, :g:`/ E D / <g2:/ E D />`
+   :fn:`segment <G.3>`\ (:g:`E <g2:E>`, :g:`B <g2:B>`) → :g:`/ E B / <g2:/ E B />`, :fn:`segment <G.3>`\ (:g:`E <g2:E>`, :g:`C <g2:C>`) → :g:`/ E C / <g2:/ E C />`, :fn:`segment <G.3>`\ (:g:`E <g2:E>`, :g:`D <g2:D>`) → :g:`/ E D / <g2:/ E D />`
 
-.. step:: assert [G.96] <G.96>
+.. step:: assert ∵ straight_line_touch <G.96>
 
    Then :g:`< E B D ) <g2:< E B D )>` is right.
 
@@ -118,7 +115,7 @@ G.115
 
    And, since a straight line :g:`/ E F / <g2:/ E F />` through the center cuts a straight line :g:`/ A C / <g2:/ A C />` not through the center at right angles,
 
-.. step:: assert [G.78] <G.78>
+.. step:: assert ∵ circle_straight_line <G.78>
 
    It also bisects it;
 
@@ -126,11 +123,11 @@ G.115
 
    Therefore :g:`/ A F / <g2:/ A F />` is :eq:`equal <g2:/ A F / = g2:/ F C />` to :g:`/ F C / <g2:/ F C />`.
 
-.. step:: assert [G.67] <G.67>
+.. step:: assert ∵ bisected_and_extended_segment <G.67>
 
    Since :g:`/ A C / <g2:/ A C />` has been bisected at :g:`F <g2:F>`, and :g:`/ C D / <g2:/ C D />` is added to it, the rectangle contained by :g:`/ A D / <g2:/ A D />`, :g:`/ D C / <g2:/ D C />` together with the square on :g:`/ F C / <g2:/ F C />` is equal to the square on :g:`/ F D / <g2:/ F D />`.
 
-.. step:: assert
+.. step:: construct
 
    Let the square on :g:`/ F E / <g2:/ F E />` be added to each
 
@@ -138,7 +135,7 @@ G.115
 
    Therefore the rectangle :g:`/ A D / <g2:/ A D />`, :g:`/ D C / <g2:/ D C />` together with the squares on :g:`/ C F / <g2:/ C F />`, :g:`/ F E / <g2:/ F E />` is equal to the squares on :g:`/ F D / <g2:/ F D />`, :g:`/ F E / <g2:/ F E />`.
 
-.. step:: assert [G.60] <G.60>
+.. step:: assert ∵ pythagorean_theorem <G.60>
 
    The square on :g:`/ E C / <g2:/ E C />` is equal to the squares on :g:`/ C F / <g2:/ C F />`, :g:`/ F E / <g2:/ F E />`, for :g:`< E F C ) <g2:< E F C )>` is right
 
@@ -158,7 +155,7 @@ G.115
 
    Therefore the rectangle :g:`/ A D / <g2:/ A D />`, :g:`/ D C / <g2:/ D C />` together with the square on :g:`/ E B / <g2:/ E B />` is equal to the square on :g:`/ E D / <g2:/ E D />`.
 
-.. step:: assert [G.60] <G.60>
+.. step:: assert ∵ pythagorean_theorem <G.60>
 
    The squares on :g:`/ E B / <g2:/ E B />`, :g:`/ B D / <g2:/ B D />` are equal to the square on :g:`/ E D / <g2:/ E D />`, for :g:`< E B D ) <g2:< E B D )>` is right
 
@@ -166,7 +163,7 @@ G.115
 
    Therefore the rectangle :g:`/ A D / <g2:/ A D />`, :g:`/ D C / <g2:/ D C />` together with the square on :g:`/ E B / <g2:/ E B />` is equal to the squares on :g:`/ E B / <g2:/ E B />`, :g:`/ B D / <g2:/ B D />`.
 
-.. step:: assert
+.. step:: construct
 
    Let the square on :g:`/ E B / <g2:/ E B />` be subtracted from each
 

@@ -24,18 +24,19 @@ G.401
 
    To a first apotome of a medial straight line only one medial straight line can be annexed which is commensurable with the whole in square only and which contains with the whole a rational rectangle.
 
+.. signature:: theorem
+
+   | :fn:`apotome_medial_straight <G.401>`\ ()
+   | **prove** no other medial straight line can be annexed to :g:`/ A B / <g1:/ A B />` which is commensurable with the whole in square only and which contains with the whole a rational area
+
 .. picture:: g1.svg
    :alt: Proposition 80 diagram
 
 .. step:: assert
 
-   For let :g:`/ A B / <g1:/ A B />` be a first apotome of a medial straight line
+   Let :g:`/ A B / <g1:/ A B />` be a first apotome of a medial straight line, and let :g:`/ B C / <g1:/ B C />` be an annex to :g:`/ A B / <g1:/ A B />`
 
-.. step:: assert
-
-   Let :g:`/ B C / <g1:/ B C />` be an annex to :g:`/ A B / <g1:/ A B />`
-
-.. step:: assert [G.395] <G.395>
+.. step:: assert ∵ medial_straight_line <G.395>
 
    Therefore :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` are medial straight lines commensurable in square only and such that the rectangle :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` which they contain is rational.
 
@@ -43,11 +44,11 @@ G.401
 
    If possible, let :g:`/ D B / <g1:/ D B />` also be so annexed;
 
-.. step:: assert [G.395] <G.395>
+.. step:: assert ∵ medial_straight_line <G.395>
 
    Therefore :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` are medial straight lines commensurable in square only and such that the rectangle :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` which they contain is rational.
 
-.. step:: assert [G.68] <G.68>
+.. step:: assert ∵ square_of_difference <G.68>
 
    Since the excess of the squares on :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` over twice the rectangle :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` is also the excess of the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` over twice the rectangle :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />`, for they exceed by the same, the square on :g:`/ A B / <g1:/ A B />`.
 
@@ -59,7 +60,7 @@ G.401
 
    Twice the rectangle :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` exceeds twice the rectangle :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` by a rational area, for both are rational.
 
-.. step:: conclude [G.328, G.338, G.341] <G.328, G.338, G.341>
+.. step:: conclude ∵ commensurable_magnitudes_added, straight_line_commensurable, medial_area_exceed <G.328, G.338, G.341>
 
    Therefore the squares on :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` also exceed the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` by a rational area: which is impossible, for both are medial, and a medial area does not exceed a medial by a rational area.
 

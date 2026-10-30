@@ -24,16 +24,21 @@ G.452
 
    Straight lines which are parallel to the same straight line and are not in the same plane with it are also parallel to one another.
 
+.. signature:: theorem
+
+   | :fn:`straight_lines_parallel_xi_9 <G.452>`\ ()
+   | **prove** :g:`/ A B / <g1:/ A B />` is parallel to :g:`/ C D / <g1:/ C D />`
+
 .. picture:: g1.svg
    :alt: Proposition 9
 
 .. step:: assert
 
-   For let each of :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` be parallel to :g:`/ E F / <g1:/ E F />`, not being in the same plane with it
+   Let each of :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` be parallel to :g:`/ E F / <g1:/ E F />`, not being in the same plane with it
 
 .. step:: construct
 
-   For let a point :g:`G <g1:G>` be taken at random on :g:`/ E F / <g1:/ E F />`
+   **point**\ (:g:`/ E F / <g1:/ E F />`) → :g:`G <g1:G>`
 
 .. step:: construct
 
@@ -43,7 +48,7 @@ G.452
 
    Since :g:`/ E F / <g1:/ E F />` is at right angles to each of :g:`/ G H / <g1:/ G H />`, :g:`/ G K / <g1:/ G K />`,
 
-.. step:: assert [G.447] <G.447>
+.. step:: assert ∵ straight_line_set <G.447>
 
    Therefore :g:`/ E F / <g1:/ E F />` is also at right angles to the plane through :g:`/ G H / <g1:/ G H />`, :g:`/ G K / <g1:/ G K />`.
 
@@ -51,7 +56,7 @@ G.452
 
    :g:`/ E F / <g1:/ E F />` is parallel to :g:`/ A B / <g1:/ A B />`;
 
-.. step:: assert [G.451] <G.451>
+.. step:: assert ∵ straight_lines_parallel_xi_8 <G.451>
 
    Therefore :g:`/ A B / <g1:/ A B />` is also at right angles to the plane through :g:`/ H G / <g1:/ H G />`, :g:`/ G K / <g1:/ G K />`.
 
@@ -63,7 +68,7 @@ G.452
 
    Therefore each of :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` is at right angles to the plane through :g:`/ H G / <g1:/ H G />`, :g:`/ G K / <g1:/ G K />`.
 
-.. step:: assert [G.449] <G.449>
+.. step:: assert ∵ straight_lines_right <G.449>
 
    But, if two straight lines be at right angles to the same plane, the straight lines are parallel.
 

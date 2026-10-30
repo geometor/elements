@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=156d9f89" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=3d8cc37d" />
   <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -49,7 +49,7 @@
           <a href="../../log/index.html"  >log</a>
         </li>
         <li>
-          <a href="../index.html"  >Elements 2.0 (G Index)</a>
+          <a href="../index.html" class="is-active" aria-selected="true" >Elements 2.0 (G Index)</a>
         </li>
       </ul>
     </nav>
@@ -92,6 +92,12 @@
         <span id="g-89"></span><span id="id1"></span><h1>G.89<a class="headerlink" href="#iii-13" title="Link to this heading">¶</a></h1>
         <p class="rubric"><a class="reference external" href="https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/13/" title="III.13: A circle does not touch a circle at more points than one, whether it touch it internally or externally.">III.13</a></p>
         <div class="enunciation">A circle does not touch a circle at more points than one, whether it touch it internally or externally.</div>
+        <div class="geom-signature geom-signature-theorem">
+        <div class="line-block">
+        <div class="line"><span class="geom-fn geom-fn-def" data-ref-target="G.89" title="G.89: A circle does not touch a circle at more points than one, whether it touch it internally or externally.">circle_touch_circle</span>()</div>
+        <div class="line"><strong>prove</strong> It was proved that neither does it so touch it internally</div>
+        </div>
+        </div>
         <figure class="photon-picture photon-svg">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="3 4 257 246" width="257" height="246" class="euclid-graphic" data-graphic-id="g1" data-graphic="g1" data-proposition="III.13">
           <defs>
@@ -162,19 +168,18 @@
         </figure>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> If possible, let <span class="geom-ref" data-ref="g1:( A B D C )" title="( A B D C )">( A B D C )</span> touch <span class="geom-ref" data-ref="g1:( E B F D )" title="( E B F D )">( E B F D )</span>, first internally, at more points than one, namely <span class="geom-ref" data-ref="g1:D" title="D">D</span>, <span class="geom-ref" data-ref="g1:B" title="B">B</span>.</div>
         <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> Let the center <span class="geom-ref" data-ref="g1:G" title="G">G</span> of <span class="geom-ref" data-ref="g1:( A B D C )" title="( A B D C )">( A B D C )</span>, and the center <span class="geom-ref" data-ref="g1:H" title="H">H</span> of <span class="geom-ref" data-ref="g1:( E B F D )" title="( E B F D )">( E B F D )</span>, be taken.</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><a class="justification" href="../G.86/index.html#g-86" data-ref-target="G.86" title="G.86: If two circles touch one another internally, and their centres be taken, the straight line joining their centres, if it be also produced, will fall on the point of contact of the…">[G.86]</a><span class="geom-step-badge geom-badge-assert">assert</span> Therefore the straight line joined from <span class="geom-ref" data-ref="g1:G" title="G">G</span> to <span class="geom-ref" data-ref="g1:H" title="H">H</span> will fall on <span class="geom-ref" data-ref="g1:B" title="B">B</span>, <span class="geom-ref" data-ref="g1:D" title="D">D</span>.</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.86/index.html#g-86" data-ref-target="G.86" title="G.86: If two circles touch one another internally, and their centres be taken, the straight line joining their centres, if it be also produced, will fall on the point of contact of the…">circles_touch_internally</a></span><span class="geom-step-badge geom-badge-assert">assert</span> Therefore the straight line joined from <span class="geom-ref" data-ref="g1:G" title="G">G</span> to <span class="geom-ref" data-ref="g1:H" title="H">H</span> will fall on <span class="geom-ref" data-ref="g1:B" title="B">B</span>, <span class="geom-ref" data-ref="g1:D" title="D">D</span>.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Let it so fall, as <span class="geom-ref" data-ref="g1:/ B G H D /" title="/ B G H D /">/ B G H D /</span>.</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Since <span class="geom-ref" data-ref="g1:G" title="G">G</span> is the center of <span class="geom-ref" data-ref="g1:( A B C D )" title="( A B C D )">( A B C D )</span> → <span class="geom-ref" data-ref="g1:/ B G /" title="/ B G /">/ B G /</span> is <span class="geom-eq-ref" data-assert-equal="g1:/ B G / = g1:/ G D /" title="/ B G / = / G D /">equal</span> to <span class="geom-ref" data-ref="g1:/ G D /" title="/ G D /">/ G D /</span>;</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.2/index.html#g-2" data-ref-target="G.2" title="G.2: A circle is a plane figure contained by one line such that all segments falling upon it from its center are equal.">circle_radii</a></span><span class="geom-step-badge geom-badge-assert">assert</span> Since <span class="geom-ref" data-ref="g1:G" title="G">G</span> is the center of <span class="geom-ref" data-ref="g1:( A B C D )" title="( A B C D )">( A B C D )</span> → <span class="geom-ref" data-ref="g1:/ B G /" title="/ B G /">/ B G /</span> is <span class="geom-eq-ref" data-assert-equal="g1:/ B G / = g1:/ G D /" title="/ B G / = / G D /">equal</span> to <span class="geom-ref" data-ref="g1:/ G D /" title="/ G D /">/ G D /</span>;</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore <span class="geom-ref" data-ref="g1:/ B G /" title="/ B G /">/ B G /</span> is greater than <span class="geom-ref" data-ref="g1:/ H D /" title="/ H D /">/ H D /</span>;</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore <span class="geom-ref" data-ref="g1:/ B H /" title="/ B H /">/ B H /</span> is much greater than <span class="geom-ref" data-ref="g1:/ H D /" title="/ H D /">/ H D /</span>.</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Since <span class="geom-ref" data-ref="g1:H" title="H">H</span> is the center of <span class="geom-ref" data-ref="g1:( E B F D )" title="( E B F D )">( E B F D )</span> → <span class="geom-ref" data-ref="g1:/ B H /" title="/ B H /">/ B H /</span> is <span class="geom-eq-ref" data-assert-equal="g1:/ B H / = g1:/ H D /" title="/ B H / = / H D /">equal</span> to <span class="geom-ref" data-ref="g1:/ H D /" title="/ H D /">/ H D /</span>;</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.2/index.html#g-2" data-ref-target="G.2" title="G.2: A circle is a plane figure contained by one line such that all segments falling upon it from its center are equal.">circle_radii</a></span><span class="geom-step-badge geom-badge-assert">assert</span> Since <span class="geom-ref" data-ref="g1:H" title="H">H</span> is the center of <span class="geom-ref" data-ref="g1:( E B F D )" title="( E B F D )">( E B F D )</span> → <span class="geom-ref" data-ref="g1:/ B H /" title="/ B H /">/ B H /</span> is <span class="geom-eq-ref" data-assert-equal="g1:/ B H / = g1:/ H D /" title="/ B H / = / H D /">equal</span> to <span class="geom-ref" data-ref="g1:/ H D /" title="/ H D /">/ H D /</span>;</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> But it was also proved much greater than it: which is impossible.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore a circle does not touch a circle internally at more points than one.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> I say further that neither does it so touch it externally.</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> If possible, let <span class="geom-ref" data-ref="g1:( A C K )" title="( A C K )">( A C K )</span> touch <span class="geom-ref" data-ref="g1:( A B D C )" title="( A B D C )">( A B D C )</span> at more points than one, namely <span class="geom-ref" data-ref="g1:A" title="A">A</span>, <span class="geom-ref" data-ref="g1:C" title="C">C</span></div>
-        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> <strong>segment</strong> <span class="geom-ref" data-ref="g1:/ A C /" title="/ A C /">/ A C /</span></div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><a class="justification" href="../G.77/index.html#g-77" data-ref-target="G.77" title="G.77: If on the circumference of a circle two points be taken at random, the straight line joining the points will fall within the circle.">[G.77]</a><span class="geom-step-badge geom-badge-assert">assert</span> Since on the circumference of each of <span class="geom-ref" data-ref="g1:( A B D C )" title="( A B D C )">( A B D C )</span>, <span class="geom-ref" data-ref="g1:( A C K )" title="( A C K )">( A C K )</span> two points <span class="geom-ref" data-ref="g1:A" title="A">A</span>, <span class="geom-ref" data-ref="g1:C" title="C">C</span> have been taken at random, the straight line joining the points will fall within each circle</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><a class="justification" href="../G.88/index.html#g-88" data-ref-target="G.88" title="G.88: **Circles** are said totouch one another which, meeting one another, do not cut one another.">[G.88]</a><span class="geom-step-badge geom-badge-assert">assert</span> But it fell within <span class="geom-ref" data-ref="g1:( A B C D )" title="( A B C D )">( A B C D )</span> and outside <span class="geom-ref" data-ref="g1:( A C K )" title="( A C K )">( A C K )</span>: which is absurd.</div>
+        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> If possible, let <span class="geom-ref" data-ref="g1:( A C K )" title="( A C K )">( A C K )</span> touch <span class="geom-ref" data-ref="g1:( A B D C )" title="( A B D C )">( A B D C )</span> at more points than one, namely <span class="geom-ref" data-ref="g1:A" title="A">A</span>, <span class="geom-ref" data-ref="g1:C" title="C">C</span>, and let <span class="geom-ref" data-ref="g1:/ A C /" title="/ A C /">/ A C /</span> be joined.</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.77/index.html#g-77" data-ref-target="G.77" title="G.77: If on the circumference of a circle two points be taken at random, the straight line joining the points will fall within the circle.">circumference_circle_points</a></span><span class="geom-step-badge geom-badge-assert">assert</span> Since on the circumference of each of <span class="geom-ref" data-ref="g1:( A B D C )" title="( A B D C )">( A B D C )</span>, <span class="geom-ref" data-ref="g1:( A C K )" title="( A C K )">( A C K )</span> two points <span class="geom-ref" data-ref="g1:A" title="A">A</span>, <span class="geom-ref" data-ref="g1:C" title="C">C</span> have been taken at random, the straight line joining the points will fall within each circle</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.88/index.html#g-88" data-ref-target="G.88" title="G.88: **Circles** are said totouch one another which, meeting one another, do not cut one another.">circles_said_touch_def</a></span><span class="geom-step-badge geom-badge-assert">assert</span> But it fell within <span class="geom-ref" data-ref="g1:( A B C D )" title="( A B C D )">( A B C D )</span> and outside <span class="geom-ref" data-ref="g1:( A C K )" title="( A C K )">( A C K )</span>: which is absurd.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore a circle does not touch a circle externally at more points than one.</div>
         <div class="geom-step geom-step-conclude" data-step-kind="conclude"><span class="geom-step-badge geom-badge-conclude">conclude</span> It was proved that neither does it so touch it internally.</div>
         <section class="level-2" id="dependency-graph">
@@ -522,28 +527,28 @@
   <footer>
     <div class="footer-nav">
       <ul>
-        <li><a href="../../about.html">about</a></li>
-        <li><a href="../../connect.html">connect</a></li>
-        <li><a href="../../glossary.html">glossary</a></li>
-        <li><a href="../../todos/index.html">todos</a></li>
-        <li><a href="../../changelog.html">changelog</a></li>
+        <li><a href="../../about.html"  >about</a></li>
+        <li><a href="../../connect.html"  >connect</a></li>
+        <li><a href="../../glossary.html"  >glossary</a></li>
+        <li><a href="../../todos/index.html"  >todos</a></li>
+        <li><a href="../../changelog.html"  >changelog</a></li>
       </ul>
     </div>
     <hr />
     <div role="contentinfo">
       <p>
-        &copy; Copyright .
+        &copy; Copyright 2026, GEOMETOR.
       </p>
     </div>
   </footer>
 
   <script src="../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+  <script src="../../_static/documentation_options.js?v=d5a15cff"></script>
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
-  <script src="../../_static/js/geometor_interactive.js?v=421e4467"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=4430a5d4"></script>
   <script src="../../_static/js/search_highlight.js"></script>
 
 </body>

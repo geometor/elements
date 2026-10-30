@@ -24,6 +24,12 @@ G.438
 
    The apotome is not the same with the binomial straight line.
 
+.. signature:: theorem
+
+   | :fn:`apotome_binomial_straight <G.438>`\ (:g:`/ A B / <g1:/ A B />`)
+   | **given** :g:`/ A B / <g1:/ A B />` be an apotome
+   | **prove** :g:`/ A B / <g1:/ A B />` is not the same with the binomial straight line
+
 .. picture:: g1.svg
    :alt: Proposition 111
 
@@ -43,7 +49,7 @@ G.438
 
    Since :g:`/ A B / <g1:/ A B />` is an apotome,
 
-.. step:: assert [G.424] <G.424>
+.. step:: assert ∵ square_apotome_applied <G.424>
 
    :g:`/ D E / <g1:/ D E />` is a first apotome.
 
@@ -51,7 +57,7 @@ G.438
 
    Let :g:`/ E F / <g1:/ E F />` be the annex to it
 
-.. step:: assert [G.406] <G.406>
+.. step:: assert ∵ rational_straight_line_def_x_def_iii_1 <G.406>
 
    Therefore :g:`/ D F / <g1:/ D F />`, :g:`/ F E / <g1:/ F E />` are rational straight lines commensurable in square only, the square on :g:`/ D F / <g1:/ D F />` is greater than the square on :g:`/ F E / <g1:/ F E />` by the square on a straight line commensurable with :g:`/ D F / <g1:/ D F />`, and :g:`/ D F / <g1:/ D F />` is commensurable in length with the rational straight line :g:`/ D C / <g1:/ D C />` set out.
 
@@ -59,27 +65,23 @@ G.438
 
    Since :g:`/ A B / <g1:/ A B />` is binomial,
 
-.. step:: assert [G.380] <G.380>
+.. step:: assert ∵ square_binomial_straight <G.380>
 
    Therefore :g:`/ D E / <g1:/ D E />` is a first binomial straight line.
 
 .. step:: assert
 
-   Let it be divided into its terms at :g:`G <g1:G>`
-
-.. step:: assert
-
-   Let :g:`/ D G / <g1:/ D G />` be the greater term
+   Let it be divided into its terms at :g:`G <g1:G>`, and let :g:`/ D G / <g1:/ D G />` be the greater term
 
 .. step:: assert
 
    Therefore :g:`/ D G / <g1:/ D G />`, :g:`/ G E / <g1:/ G E />` are rational straight lines commensurable in square only,
 
-.. step:: assert [G.369] <G.369>
+.. step:: assert ∵ rational_straight_line_def <G.369>
 
    The square on :g:`/ D G / <g1:/ D G />` is greater than the square on :g:`/ G E / <g1:/ G E />` by the square on a straight line commensurable with :g:`/ D G / <g1:/ D G />`, and the greater term :g:`/ D G / <g1:/ D G />` is commensurable in length with the rational straight line :g:`/ D C / <g1:/ D C />` set out.
 
-.. step:: assert [G.325, G.328] <G.325, G.328>
+.. step:: assert ∵ magnitudes_commensurable_magnitude, commensurable_magnitudes_added <G.325, G.328>
 
    Therefore :g:`/ D F / <g1:/ D F />` is also commensurable in length with :g:`/ D G / <g1:/ D G />`; therefore the remainder :g:`/ G F / <g1:/ G F />` is also commensurable in length with :g:`/ D F / <g1:/ D F />`.
 
@@ -87,11 +89,11 @@ G.438
 
    :g:`/ D F / <g1:/ D F />` is incommensurable in length with :g:`/ E F / <g1:/ E F />`;
 
-.. step:: assert [G.326] <G.326>
+.. step:: assert ∵ magnitudes_commensurable_incommensurable <G.326>
 
    Therefore :g:`/ F G / <g1:/ F G />` is also incommensurable in length with :g:`/ E F / <g1:/ E F />`.
 
-.. step:: assert [G.394] <G.394>
+.. step:: assert ∵ rational_straight_line <G.394>
 
    Therefore :g:`/ G F / <g1:/ G F />`, :g:`/ F E / <g1:/ F E />` are rational straight lines commensurable in square only; therefore :g:`/ E G / <g1:/ E G />` is an apotome.
 

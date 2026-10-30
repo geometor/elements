@@ -24,6 +24,12 @@ G.240
 
    Find the number which is the least that will have given parts.
 
+.. signature:: problem
+
+   | :fn:`find_number_least <G.240>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`) → :g:`G <g1:G>`
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` be the given parts
+   | **construct** there will be no number less than :g:`G <g1:G>` that will have the parts :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`
+
 .. picture:: g1.svg
    :alt: Proposition 39
 
@@ -31,15 +37,11 @@ G.240
 
    :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` be the given parts
 
-.. step:: assert
+.. step:: construct
 
-   Let :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`F <g1:F>` be numbers called by the same name as the parts :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`
+   :fn:`numbers_find_least_vii_36 <G.237>`: Let :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`F <g1:F>` be numbers called by the same name as the parts :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, and let :g:`G <g1:G>`, the least number measured by :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`F <g1:F>`, be taken.
 
-.. step:: construct [G.237] <G.237>
-
-   Let :g:`G <g1:G>`, the least number measured by :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`F <g1:F>`, be taken.
-
-.. step:: assert [G.238] <G.238>
+.. step:: assert ∵ number_measured_number <G.238>
 
    Therefore :g:`G <g1:G>` has parts called by the same name as :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`F <g1:F>`.
 
@@ -67,7 +69,7 @@ G.240
 
    Since :g:`H <g1:H>` has the parts :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`,
 
-.. step:: assert [G.239] <G.239>
+.. step:: assert ∵ number_part_whatever <G.239>
 
    Therefore :g:`H <g1:H>` will be measured by numbers called by the same name as the parts :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`.
 

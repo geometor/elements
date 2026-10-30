@@ -24,24 +24,22 @@ G.185
 
    Similar polygons are divided into similar triangles, and into triangles equal in multitude and in the same ratio as the wholes, and the polygon has to the polygon a ratio duplicate of that which the corresponding side has to the corresponding side.
 
+.. signature:: theorem
+
+   | :fn:`similar_polygons_divided <G.185>`\ (:g:`< A B C D E > <g1:< A B C D E >>`, :g:`< F G H K L > <g1:< F G H K L >>`, :g:`/ A B / <g1:/ A B />`, :g:`/ F G / <g1:/ F G />`)
+   | **given** :g:`< A B C D E > <g1:< A B C D E >>`, :g:`< F G H K L > <g1:< F G H K L >>` be similar polygons, let :g:`/ A B / <g1:/ A B />` correspond to :g:`/ F G / <g1:/ F G />`
+   | **prove** the polygons :g:`< A B C D E > <g1:< A B C D E >>`, :g:`< F G H K L > <g1:< F G H K L >>` are divided into similar triangles, and into triangles equal in multitude and in the same ratio as the wholes, and the polygon :g:`< A B C D E > <g1:< A B C D E >>` has to the polygon :g:`< F G H K L > <g1:< F G H K L >>` a ratio duplicate of that which :g:`/ A B / <g1:/ A B />` has to :g:`/ F G / <g1:/ F G />`; they are also in the same ratio as the wholes, that is, in such manner that the triangles are proportional, and :g:`< A B E > <g1:< A B E >>`, :g:`< E B C > <g1:< E B C >>`, :g:`< E C D > <g1:< E C D >>` are antecedents, while :g:`< F G L > <g1:< F G L >>`, :g:`< L G H > <g1:< L G H >>`, :g:`< L H K > <g1:< L H K >>` are their consequents, and that the polygon :g:`< A B C D E > <g1:< A B C D E >>` has to the polygon :g:`< F G H K L > <g1:< F G H K L >>` a ratio duplicate of that which the corresponding side has to the corresponding side, that is :g:`/ A B / <g1:/ A B />` to :g:`/ F G / <g1:/ F G />`
+
 .. picture:: g1.svg
    :alt: Book VI Proposition 20 Diagram
 
-.. enunciation::
-
-   PORISM. Similarly also it can be proved in the case of quadrilaterals that they are in the duplicate ratio of the corresponding sides. And it was also proved in the case of triangles; therefore also, generally, similar polygons are to one another in the duplicate ratio of the corresponding sides.:just:`Q. E. D.`
-
 .. step:: given
 
-   :g:`< A B C D E > <g1:< A B C D E >>`, :g:`< F G H K L > <g1:< F G H K L >>` be similar polygons
-
-.. step:: assert
-
-   Let :g:`/ A B / <g1:/ A B />` correspond to :g:`/ F G / <g1:/ F G />`
+   :g:`< A B C D E > <g1:< A B C D E >>`, :g:`< F G H K L > <g1:< F G H K L >>` be similar polygons, let :g:`/ A B / <g1:/ A B />` correspond to :g:`/ F G / <g1:/ F G />`
 
 .. step:: construct
 
-   **segment** :g:`/ B E / <g1:/ B E />`, :g:`/ E C / <g1:/ E C />`, :g:`/ G L / <g1:/ G L />`, :g:`/ L H / <g1:/ L H />`
+   :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`E <g1:E>`) → :g:`/ B E / <g1:/ B E />`, :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`C <g1:C>`) → :g:`/ E C / <g1:/ E C />`, :fn:`segment <G.3>`\ (:g:`G <g1:G>`, :g:`L <g1:L>`) → :g:`/ G L / <g1:/ G L />`, :fn:`segment <G.3>`\ (:g:`L <g1:L>`, :g:`H <g1:H>`) → :g:`/ L H / <g1:/ L H />`
 
 .. step:: assert
 
@@ -51,7 +49,7 @@ G.185
 
    :g:`< B A E ) <g1:< B A E )>` is :eq:`equal <g1:< B A E ) = g1:< G F L )>` to :g:`< G F L ) <g1:< G F L )>`;
 
-.. step:: assert [G.170] <G.170>
+.. step:: assert ∵ similar_polygons_angles_def <G.170>
 
    And, as :g:`/ B A / <g1:/ B A />` is to :g:`/ A E / <g1:/ A E />`, so is :g:`/ G F / <g1:/ G F />` to :g:`/ F L / <g1:/ F L />`.
 
@@ -59,11 +57,11 @@ G.185
 
    Since then :g:`< A B E > <g1:< A B E >>`, :g:`< F G L > <g1:< F G L >>` are two triangles having one angle :eq:`equal <g1:< B A E ) = g1:< G F L )>` to one angle and the sides about the equal angles proportional,
 
-.. step:: assert [G.168] <G.168>
+.. step:: assert ∵ triangles_angle_equal <G.168>
 
    Therefore :g:`< A B E > <g1:< A B E >>` is :eq:`equiangular <g1:< B A E ) = g1:< G F L ); g1:< A B E ) = g1:< F G L )>` with :g:`< F G L > <g1:< F G L >>`.
 
-.. step:: assert [G.166, G.170] <G.166, G.170>
+.. step:: assert ∵ equiangular_triangles_sides, similar_polygons_angles_def <G.166, G.170>
 
    So that it is also similar;
 
@@ -95,7 +93,7 @@ G.185
 
    As :g:`/ A B / <g1:/ A B />` is to :g:`/ B C / <g1:/ B C />`, so is :g:`/ F G / <g1:/ F G />` to :g:`/ G H / <g1:/ G H />`,
 
-.. step:: assert [G.159] <G.159>
+.. step:: assert ∵ there_number_magnitudes_v_22 <G.159>
 
    Therefore, :term:`*ex aequali* <ex-aequali>`, as :g:`/ E B / <g1:/ E B />` is to :g:`/ B C / <g1:/ B C />`, so is :g:`/ L G / <g1:/ L G />` to :g:`/ G H / <g1:/ G H />`;
 
@@ -103,11 +101,11 @@ G.185
 
    That is, the sides about the :eq:`equal <g1:< E B C ) = g1:< L G H )>` angles :g:`< E B C ) <g1:< E B C )>`, :g:`< L G H ) <g1:< L G H )>` are proportional;
 
-.. step:: assert [G.168] <G.168>
+.. step:: assert ∵ triangles_angle_equal <G.168>
 
    Therefore :g:`< E B C > <g1:< E B C >>` is :eq:`equiangular <g1:< E B C ) = g1:< L G H )>` with :g:`< L G H > <g1:< L G H >>`.
 
-.. step:: assert [G.166, G.170] <G.166, G.170>
+.. step:: assert ∵ equiangular_triangles_sides, similar_polygons_angles_def <G.166, G.170>
 
    So that :g:`< E B C > <g1:< E B C >>` is also similar to :g:`< L G H > <g1:< L G H >>`.
 
@@ -125,13 +123,13 @@ G.185
 
 .. step:: construct
 
-   For let :g:`/ A C / <g1:/ A C />`, :g:`/ F H / <g1:/ F H />` be joined.
+   :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`C <g1:C>`) → :g:`/ A C / <g1:/ A C />`, :fn:`segment <G.3>`\ (:g:`F <g1:F>`, :g:`H <g1:H>`) → :g:`/ F H / <g1:/ F H />`
 
 .. step:: assert
 
    Then since, because of the similarity of the polygons, :g:`< A B C ) <g1:< A B C )>` is :eq:`equal <g1:< A B C ) = g1:< F G H )>` to :g:`< F G H ) <g1:< F G H )>`, and, as :g:`/ A B / <g1:/ A B />` is to :g:`/ B C / <g1:/ B C />`, so is :g:`/ F G / <g1:/ F G />` to :g:`/ G H / <g1:/ G H />`,
 
-.. step:: assert [G.168] <G.168>
+.. step:: assert ∵ triangles_angle_equal <G.168>
 
    :g:`< A B C > <g1:< A B C >>` is :eq:`equiangular <g1:< A B C ) = g1:< F G H ); g1:< B A C ) = g1:< G F H ); g1:< B C A ) = g1:< G H F )>` with :g:`< F G H > <g1:< F G H >>`;
 
@@ -143,7 +141,7 @@ G.185
 
    And, since :g:`< B A M ) <g1:< B A M )>` is :eq:`equal <g1:< B A M ) = g1:< G F N )>` to :g:`< G F N ) <g1:< G F N )>`, and :g:`< A B M ) <g1:< A B M )>` is also :eq:`equal <g1:< A B M ) = g1:< F G N )>` to :g:`< F G N ) <g1:< F G N )>`,
 
-.. step:: assert [G.45] <G.45>
+.. step:: assert ∵ triangle_angle_sum <G.45>
 
    Therefore the remaining angle :g:`< A M B ) <g1:< A M B )>` is also :eq:`equal <g1:< A M B ) = g1:< F N G )>` to the remaining angle :g:`< F N G ) <g1:< F N G )>`.
 
@@ -163,11 +161,11 @@ G.185
 
    So that, in addition, :term:`*ex aequali* <ex-aequali>`, as :g:`/ A M / <g1:/ A M />` is to :g:`/ M C / <g1:/ M C />`, so is :g:`/ F N / <g1:/ F N />` to :g:`/ N H / <g1:/ N H />`.
 
-.. step:: assert [G.163] <G.163>
+.. step:: assert ∵ triangles_parallelograms_height <G.163>
 
    But, as :g:`/ A M / <g1:/ A M />` is to :g:`/ M C / <g1:/ M C />`, so is :g:`< A B M > <g1:< A B M >>` to :g:`< M B C > <g1:< M B C >>`, and :g:`< A M E > <g1:< A M E >>` to :g:`< E M C > <g1:< E M C >>`; for they are to one another as their bases.
 
-.. step:: assert [G.149] <G.149>
+.. step:: assert ∵ number_magnitudes_proportional <G.149>
 
    Therefore also, as one of the antecedents is to one of the consequents, so are all the antecedents to all the consequents.
 
@@ -207,7 +205,7 @@ G.185
 
    Since, as :g:`< A B E > <g1:< A B E >>` is to :g:`< F G L > <g1:< F G L >>`, so is :g:`< E B C > <g1:< E B C >>` to :g:`< L G H > <g1:< L G H >>`, and further :g:`< E C D > <g1:< E C D >>` to :g:`< L H K > <g1:< L H K >>`,
 
-.. step:: assert [G.149] <G.149>
+.. step:: assert ∵ number_magnitudes_proportional <G.149>
 
    Therefore also, as one of the antecedents is to one of the consequents, so are all the antecedents to all the consequents.
 
@@ -215,13 +213,17 @@ G.185
 
    Therefore, as :g:`< A B E > <g1:< A B E >>` is to :g:`< F G L > <g1:< F G L >>`, so is the polygon :g:`< A B C D E > <g1:< A B C D E >>` to the polygon :g:`< F G H K L > <g1:< F G H K L >>`.
 
-.. step:: assert [G.184] <G.184>
+.. step:: assert ∵ similar_triangles_duplicate <G.184>
 
    :g:`< A B E > <g1:< A B E >>` has to :g:`< F G L > <g1:< F G L >>` a ratio duplicate of that which the corresponding side :g:`/ A B / <g1:/ A B />` has to the corresponding side :g:`/ F G / <g1:/ F G />`; for similar triangles are in the duplicate ratio of the corresponding sides.
 
 .. step:: conclude
 
    Therefore the polygon :g:`< A B C D E > <g1:< A B C D E >>` also has to the polygon :g:`< F G H K L > <g1:< F G H K L >>` a ratio duplicate of that which the corresponding side :g:`/ A B / <g1:/ A B />` has to the corresponding side :g:`/ F G / <g1:/ F G />`.
+
+.. enunciation::
+
+   PORISM. Similarly also it can be proved in the case of quadrilaterals that they are in the duplicate ratio of the corresponding sides. And it was also proved in the case of triangles; therefore also, generally, similar rectilineal figures are to one another in the duplicate ratio of the corresponding sides. :just:`Q. E. D.`
 
 Dependency Graph
 ----------------

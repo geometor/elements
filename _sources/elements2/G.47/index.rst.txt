@@ -24,6 +24,12 @@ G.47
 
    In a parallelogram, opposite sides and opposite angles are equal, and the diagonal bisects the area.
 
+.. signature:: theorem
+
+   | :fn:`parallelogram_properties <G.47>`\ (:g:`< A C D B > <g1:< A C D B >>`, :g:`/ B C / <g1:/ B C />`)
+   | **given** :g:`< A C D B > <g1:< A C D B >>` be a parallelogrammic area, :g:`/ B C / <g1:/ B C />` its diameter
+   | **prove** the opposite sides and angles of the parallelogram :g:`< A C D B > <g1:< A C D B >>` are :eq:`equal <g1:/ A B / = g1:/ C D /; g1:/ A C / = g1:/ B D /; g1:< B A C ) = g1:< C D B ); g1:< A B D ) = g1:< A C D )>` to one another, and the diameter :g:`/ B C / <g1:/ B C />` :eq:`bisects <g1:< A B C > = g1:< D C B >>` it
+
 .. picture:: g1.svg
    :alt: Folio 0338 Figure 1 - Proposition 34
 
@@ -31,15 +37,11 @@ G.47
 
    :g:`< A C D B > <g1:< A C D B >>` be a parallelogrammic area, :g:`/ B C / <g1:/ B C />` its diameter
 
-.. step:: assert
-
-   The opposite sides and angles of the parallelogram :g:`< A C D B > <g1:< A C D B >>` are :eq:`equal <g1:/ A B / = g1:/ C D /; g1:/ A C / = g1:/ B D /; g1:< B A C ) = g1:< C D B ); g1:< A B D ) = g1:< A C D )>` to one another, and the diameter :g:`/ B C / <g1:/ B C />` :eq:`bisects <g1:< A B C > = g1:< D C B >>` it.
-
-.. step:: assert [G.42] <G.42>
+.. step:: assert ∵ parallel_transversal_angles <G.42>
 
    Since :g:`/ A B / <g1:/ A B />` is parallel to :g:`/ C D / <g1:/ C D />`, and :g:`/ B C / <g1:/ B C />` has fallen upon them → the alternate angles :g:`< A B C ) <g1:< A B C )>`, :g:`< B C D ) <g1:< B C D )>` are :eq:`equal <g1:< A B C ) = g1:< B C D )>` to one another.
 
-.. step:: assert [G.42] <G.42>
+.. step:: assert ∵ parallel_transversal_angles <G.42>
 
    Since :g:`/ A C / <g1:/ A C />` is parallel to :g:`/ B D / <g1:/ B D />`, and :g:`/ B C / <g1:/ B C />` has fallen upon them → the alternate angles :g:`< A C B ) <g1:< A C B )>`, :g:`< C B D ) <g1:< C B D )>` are :eq:`equal <g1:< A C B ) = g1:< C B D )>` to one another.
 
@@ -47,7 +49,7 @@ G.47
 
    Therefore :g:`< A B C > <g1:< A B C >>`, :g:`< D C B > <g1:< D C B >>` are two triangles having the two angles :g:`< A B C ) <g1:< A B C )>`, :g:`< B C A ) <g1:< B C A )>` :eq:`equal <g1:< A B C ) = g1:< D C B ); g1:< B C A ) = g1:< C B D )>` to the two angles :g:`< D C B ) <g1:< D C B )>`, :g:`< C B D ) <g1:< C B D )>` respectively, and one side :eq:`equal <g1:/ B C / = g1:/ C B />` to one side, namely that adjoining the :eq:`equal <g1:< A B C ) = g1:< D C B ); g1:< B C A ) = g1:< C B D )>` angles and common to both of them, :g:`/ B C / <g1:/ B C />`
 
-.. step:: assert [G.37] <G.37>
+.. step:: assert ∵ asa_aas_congruence <G.37>
 
    Therefore they will also have the remaining sides :eq:`equal <g1:/ A B / = g1:/ C D /; g1:/ A C / = g1:/ B D />` to the remaining sides respectively, and the remaining angle to the remaining angle;
 
@@ -67,7 +69,7 @@ G.47
 
    And, since :g:`< A B C ) <g1:< A B C )>` is :eq:`equal <g1:< A B C ) = g1:< B C D )>` to :g:`< B C D ) <g1:< B C D )>`, and :g:`< C B D ) <g1:< C B D )>` to :g:`< A C B ) <g1:< A C B )>`,
 
-.. step:: assert [G.21] <G.21>
+.. step:: assert ∵ add_equals <G.21>
 
    The whole angle :g:`< A B D ) <g1:< A B D )>` is :eq:`equal <g1:< A B D ) = g1:< A C D )>` to the whole angle :g:`< A C D ) <g1:< A C D )>`.
 
@@ -95,7 +97,7 @@ G.47
 
    Therefore the base :g:`/ A C / <g1:/ A C />` is also :eq:`equal <g1:/ A C / = g1:/ D B />` to :g:`/ D B / <g1:/ D B />`,
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    And :g:`< A B C > <g1:< A B C >>` is :eq:`equal <g1:< A B C > = g1:< D C B >>` to :g:`< D C B > <g1:< D C B >>`.
 

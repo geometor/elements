@@ -23,6 +23,10 @@ G.276
 
    A:term:`**composite number** <composite-number>` is that which is measured by some number.
 
+.. signature:: def
+
+   | :fn:`composite_number_measured_def <G.276>`
+
 Required for
 ------------
 

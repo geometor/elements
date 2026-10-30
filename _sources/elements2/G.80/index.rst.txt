@@ -24,12 +24,17 @@ G.80
 
    If two circles cut one another, they will not have the same centre.
 
+.. signature:: theorem
+
+   | :fn:`circles_cut_centre <G.80>`\ ()
+   | **prove** they will not have the same center
+
 .. picture:: g1.svg
    :alt: Proposition 5 Diagram
 
 .. step:: intersect
 
-   For let :g:`( A B C ) <g1:( A B C )>`, :g:`( C D G ) <g1:( C D G )>` cut one another at :g:`B <g1:B>`, :g:`C <g1:C>`
+   Let :g:`( A B C ) <g1:( A B C )>`, :g:`( C D G ) <g1:( C D G )>` cut one another at :g:`B <g1:B>`, :g:`C <g1:C>`
 
 .. step:: assert
 
@@ -37,17 +42,17 @@ G.80
 
 .. step:: construct
 
-   **segment** :g:`/ E C / <g1:/ E C />`
+   :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`C <g1:C>`) → :g:`/ E C / <g1:/ E C />`
 
 .. step:: construct
 
    Let :g:`/ E F G / <g1:/ E F G />` be drawn through at random.
 
-.. step:: assert [G.2] <G.2>
+.. step:: assert ∵ circle_radii <G.2>
 
    Since :g:`E <g1:E>` is the center of :g:`( A B C ) <g1:( A B C )>` → :g:`/ E C / <g1:/ E C />` is :eq:`equal <g1:/ E C / = g1:/ E F />` to :g:`/ E F / <g1:/ E F />`.
 
-.. step:: assert
+.. step:: assert ∵ circle_radii <G.2>
 
    Since :g:`E <g1:E>` is the center of :g:`( C D G ) <g1:( C D G )>` → :g:`/ E C / <g1:/ E C />` is :eq:`equal <g1:/ E C / = g1:/ E G />` to :g:`/ E G / <g1:/ E G />`.
 

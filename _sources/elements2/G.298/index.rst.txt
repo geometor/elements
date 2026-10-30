@@ -24,18 +24,23 @@ G.298
 
    If from an even number an odd number be subtracted, the remainder is odd.
 
+.. signature:: theorem
+
+   | :fn:`even_number_odd <G.298>`\ ()
+   | **prove** the remainder :g:`/ A C / <g1:/ A C />` is odd
+
 .. picture:: g1.svg
    :alt: Book IX, Proposition 25
 
-.. step:: assert
+.. step:: construct
 
-   For from the even number :g:`/ A B / <g1:/ A B />` let the odd number :g:`/ B C / <g1:/ B C />` be subtracted
+   From the even number :g:`/ A B / <g1:/ A B />` let the odd number :g:`/ B C / <g1:/ B C />` be subtracted
 
-.. step:: assert
+.. step:: construct
 
-   For let the unit :g:`/ C D / <g1:/ C D />` be subtracted from :g:`/ B C / <g1:/ B C />`
+   Let the unit :g:`/ C D / <g1:/ C D />` be subtracted from :g:`/ B C / <g1:/ B C />`
 
-.. step:: assert [G.294] <G.294>
+.. step:: assert ∵ odd_number_divisible_def <G.294>
 
    Therefore :g:`/ B D / <g1:/ B D />` is even.
 
@@ -43,7 +48,7 @@ G.298
 
    :g:`/ A B / <g1:/ A B />` is also even ;
 
-.. step:: assert [G.297] <G.297>
+.. step:: assert ∵ even_number_even <G.297>
 
    Therefore the remainder :g:`/ A D / <g1:/ A D />` is also even.
 
@@ -51,7 +56,7 @@ G.298
 
    :g:`/ C D / <g1:/ C D />` is an unit ;
 
-.. step:: conclude [G.294] <G.294>
+.. step:: conclude ∵ odd_number_divisible_def <G.294>
 
    Therefore :g:`/ A C / <g1:/ A C />` is odd.
 

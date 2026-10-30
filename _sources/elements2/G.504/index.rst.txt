@@ -23,6 +23,10 @@ G.504
 
    When, the diameter of a semicircle remaining fixed, the semicircle is carried round and restored again to the same position from which it began to be moved, the figure so comprehended is a:term:`**sphere** <sphere>`.
 
+.. signature:: def
+
+   | :fn:`diameter_semicircle_remaining_def <G.504>`
+
 Required for
 ------------
 

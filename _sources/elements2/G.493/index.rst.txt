@@ -24,6 +24,12 @@ G.493
 
    Any prism which has a triangular base is divided into three pyramids equal to one another which have triangular bases.
 
+.. signature:: theorem
+
+   | :fn:`prism_triangular_base <G.493>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>`)
+   | **given** there be a prism in which :g:`< A B C > <g1:< A B C >>` is the base and :g:`< D E F > <g1:< D E F >>` its opposite
+   | **prove** the prism :g:`< A B C D E F > <g1:< A B C D E F >>` is divided into three pyramids :eq:`equal <g1:< C A B D > = g1:< C D E B > = g1:< D E C F >>` to one another, which have triangular bases
+
 .. picture:: g1.svg
    :alt: Book XII, Proposition 7
 
@@ -31,19 +37,15 @@ G.493
 
    there be a prism in which :g:`< A B C > <g1:< A B C >>` is the base and :g:`< D E F > <g1:< D E F >>` its opposite
 
-.. step:: assert
-
-   The prism :g:`< A B C D E F > <g1:< A B C D E F >>` is divided into three pyramids :eq:`equal <g1:< C A B D > = g1:< C D E B > = g1:< D E C F >>` to one another, which have triangular bases.
-
 .. step:: construct
 
-   For let :g:`/ B D / <g1:/ B D />`, :g:`/ E C / <g1:/ E C />`, :g:`/ C D / <g1:/ C D />` be joined.
+   :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`D <g1:D>`) → :g:`/ B D / <g1:/ B D />`, :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`C <g1:C>`) → :g:`/ E C / <g1:/ E C />`, :fn:`segment <G.3>`\ (:g:`C <g1:C>`, :g:`D <g1:D>`) → :g:`/ C D / <g1:/ C D />`
 
 .. step:: assert
 
    Since :g:`< A B E D > <g1:< A B E D >>` is a parallelogram, and :g:`/ B D / <g1:/ B D />` is its diameter,
 
-.. step:: assert [G.47, G.491] <G.47, G.491>
+.. step:: assert ∵ parallelogram_properties, pyramids_height_triangular <G.47, G.491>
 
    Therefore :g:`< A B D > <g1:< A B D >>` is :eq:`equal <g1:< A B D > = g1:< E B D >>` to :g:`< E B D > <g1:< E B D >>`; therefore also the pyramid of which :g:`< A B D > <g1:< A B D >>` is the base and :g:`C <g1:C>` the vertex is :eq:`equal <g1:< C A B D > = g1:< C D E B >>` to the pyramid of which :g:`< D E B > <g1:< D E B >>` is the base and :g:`C <g1:C>` the vertex.
 
@@ -59,11 +61,11 @@ G.493
 
    Since :g:`< F C B E > <g1:< F C B E >>` is a parallelogram, and :g:`/ C E / <g1:/ C E />` is its diameter,
 
-.. step:: assert [G.47] <G.47>
+.. step:: assert ∵ parallelogram_properties <G.47>
 
    :g:`< C E F > <g1:< C E F >>` is :eq:`equal <g1:< C E F > = g1:< C B E >>` to :g:`< C B E > <g1:< C B E >>`.
 
-.. step:: assert [G.491] <G.491>
+.. step:: assert ∵ pyramids_height_triangular <G.491>
 
    Therefore also the pyramid of which :g:`< B C E > <g1:< B C E >>` is the base and :g:`D <g1:D>` the vertex is :eq:`equal <g1:< C D E B > = g1:< D E C F >>` to the pyramid of which :g:`< E C F > <g1:< E C F >>` is the base and :g:`D <g1:D>` the vertex.
 
@@ -83,7 +85,7 @@ G.493
 
    Therefore also the pyramid of which :g:`< A B C > <g1:< A B C >>` is the base and :g:`D <g1:D>` the vertex is a third of the prism which has the same base, :g:`< A B C > <g1:< A B C >>`, and :g:`< D E F > <g1:< D E F >>` as its opposite.
 
-.. step:: conclude [Q. E. D.] <Q. E. D.>
+.. step:: conclude ∵ Q. E. D. <Q. E. D.>
 
    PORISM. *From this it is manifest that any pyramid is a third part of the prism which has the same base with it and equal height.*
 

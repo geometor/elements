@@ -24,18 +24,20 @@ G.279
 
    If as many numbers as we please beginning from an unit be in continued proportion, and the number after the unit be square, all the rest is square. And, if the number after the unit be cube, all the rest is cube.
 
+.. signature:: theorem
+
+   | :fn:`many_numbers_please_ix_9 <G.279>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`)
+   | **given** there be as many numbers as we please, :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`F <g1:F>`, beginning from an unit and in continued proportion, let :g:`A <g1:A>`, the number after the unit, be square
+   | **prove** all the rest will also be square; all the rest are also square; all the rest are also cube; all the rest are also cube
+
 .. picture:: g1.svg
    :alt: Proposition 9 Diagram
 
 .. step:: given
 
-   there be as many numbers as we please, :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`F <g1:F>`, beginning from an unit and in continued proportion
+   there be as many numbers as we please, :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`F <g1:F>`, beginning from an unit and in continued proportion, let :g:`A <g1:A>`, the number after the unit, be square
 
-.. step:: assert
-
-   Let :g:`A <g1:A>`, the number after the unit, be square
-
-.. step:: assert [G.278] <G.278>
+.. step:: assert ∵ many_numbers_please_ix_8 <G.278>
 
    Now it has been proved that :g:`B <g1:B>`, the third from the unit, is square, as are also all those which leave out one .
 
@@ -43,7 +45,7 @@ G.279
 
    Since :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` are in continued proportion, and :g:`A <g1:A>` is square,
 
-.. step:: assert [G.264] <G.264>
+.. step:: assert ∵ numbers_continued_proportion <G.264>
 
    Therefore :g:`C <g1:C>` is also square.
 
@@ -51,7 +53,7 @@ G.279
 
    Since :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` are in continued proportion, and :g:`B <g1:B>` is square,
 
-.. step:: assert [G.264] <G.264>
+.. step:: assert ∵ numbers_continued_proportion <G.264>
 
    :g:`D <g1:D>` is also square.
 
@@ -63,7 +65,7 @@ G.279
 
    Next, let :g:`A <g1:A>` be cube
 
-.. step:: assert [G.278] <G.278>
+.. step:: assert ∵ many_numbers_please_ix_8 <G.278>
 
    Now it has been proved that :g:`C <g1:C>`, the fourth from the unit, is cube, as also are all those which leave out two .
 
@@ -91,7 +93,7 @@ G.279
 
    :g:`A <g1:A>` is cube.
 
-.. step:: assert [G.272] <G.272>
+.. step:: assert ∵ cube_number_multiplying <G.272>
 
    But, if a cube number by multiplying itself make some number, the product is cube.
 
@@ -103,7 +105,7 @@ G.279
 
    And, since the four numbers :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` are in continued proportion, and :g:`A <g1:A>` is cube,
 
-.. step:: assert [G.265] <G.265>
+.. step:: assert ∵ numbers_continued_proportion_viii_23 <G.265>
 
    :g:`D <g1:D>` also is cube.
 

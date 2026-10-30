@@ -24,6 +24,12 @@ G.242
 
    Find numbers in continued proportion, as many as may be prescribed, and the least that are in a given ratio.
 
+.. signature:: problem
+
+   | :fn:`find_numbers_continued <G.242>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`)
+   | **given** the ratio of :g:`A <g1:A>` to :g:`B <g1:B>` be the given ratio in least numbers
+   | **construct** PORISM. From this it is manifest that, if three numbers in continued proportion be the least of those which have the same ratio with them, the extremes of them are squares, and, if four numbers, cubes
+
 .. picture:: g1.svg
    :alt: Proposition 2 Diagram
 
@@ -45,17 +51,13 @@ G.242
 
 .. step:: assert
 
-   Further, let :g:`A <g1:A>` by multiplying :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`E <g1:E>` make :g:`F <g1:F>`, :g:`G <g1:G>`, :g:`H <g1:H>`
-
-.. step:: assert
-
-   Let :g:`B <g1:B>` by multiplying :g:`E <g1:E>` make :g:`K <g1:K>`.
+   Further, let :g:`A <g1:A>` by multiplying :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`E <g1:E>` make :g:`F <g1:F>`, :g:`G <g1:G>`, :g:`H <g1:H>`, and let :g:`B <g1:B>` by multiplying :g:`E <g1:E>` make :g:`K <g1:K>`.
 
 .. step:: assert
 
    Since :g:`A <g1:A>` by multiplying itself has made :g:`C <g1:C>`, and by multiplying :g:`B <g1:B>` has made :g:`D <g1:D>`,
 
-.. step:: assert [G.217] <G.217>
+.. step:: assert ∵ number_multiplying_numbers <G.217>
 
    Therefore, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`.
 
@@ -67,7 +69,7 @@ G.242
 
    Therefore the numbers :g:`A <g1:A>`, :g:`B <g1:B>` by multiplying :g:`B <g1:B>` have made the numbers :g:`D <g1:D>`, :g:`E <g1:E>` respectively.
 
-.. step:: assert [G.218] <G.218>
+.. step:: assert ∵ numbers_multiplying_number <G.218>
 
    Therefore, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`D <g1:D>` to :g:`E <g1:E>`.
 
@@ -83,7 +85,7 @@ G.242
 
    And, since :g:`A <g1:A>` by multiplying :g:`C <g1:C>`, :g:`D <g1:D>` has made :g:`F <g1:F>`, :g:`G <g1:G>`,
 
-.. step:: assert [G.217] <G.217>
+.. step:: assert ∵ number_multiplying_numbers <G.217>
 
    Therefore, as :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`F <g1:F>` to :g:`G <g1:G>`.
 
@@ -99,7 +101,7 @@ G.242
 
    Since :g:`A <g1:A>` by multiplying :g:`D <g1:D>`, :g:`E <g1:E>` has made :g:`G <g1:G>`, :g:`H <g1:H>`,
 
-.. step:: assert [G.217] <G.217>
+.. step:: assert ∵ number_multiplying_numbers <G.217>
 
    Therefore, as :g:`D <g1:D>` is to :g:`E <g1:E>`, so is :g:`G <g1:G>` to :g:`H <g1:H>`.
 
@@ -115,7 +117,7 @@ G.242
 
    And, since :g:`A <g1:A>`, :g:`B <g1:B>` by multiplying :g:`E <g1:E>` have made :g:`H <g1:H>`, :g:`K <g1:K>`,
 
-.. step:: assert [G.218] <G.218>
+.. step:: assert ∵ numbers_multiplying_number <G.218>
 
    Therefore, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`H <g1:H>` to :g:`K <g1:K>`.
 
@@ -131,7 +133,7 @@ G.242
 
    I say next that they are the least numbers that are so.
 
-.. step:: assert [G.223] <G.223>
+.. step:: assert ∵ least_numbers_ratio_vii_22 <G.223>
 
    Since :g:`A <g1:A>`, :g:`B <g1:B>` are the least of those which have the same ratio with them, and the least of those which have the same ratio are prime to one another.
 
@@ -143,7 +145,7 @@ G.242
 
    The numbers :g:`A <g1:A>`, :g:`B <g1:B>` by multiplying themselves respectively have made the numbers :g:`C <g1:C>`, :g:`E <g1:E>`, and by multiplying the numbers :g:`C <g1:C>`, :g:`E <g1:E>` respectively have made the numbers :g:`F <g1:F>`, :g:`K <g1:K>`;
 
-.. step:: assert [G.228] <G.228>
+.. step:: assert ∵ numbers_prime_multiplying <G.228>
 
    Therefore :g:`C <g1:C>`, :g:`E <g1:E>` and :g:`F <g1:F>`, :g:`K <g1:K>` are prime to one another respectively.
 
@@ -151,7 +153,7 @@ G.242
 
    But, if there be as many numbers as we please in continued proportion, and the extremes of them be prime to one another,
 
-.. step:: assert [G.241] <G.241>
+.. step:: assert ∵ there_many_numbers_viii_1 <G.241>
 
    They are the least of those which have the same ratio with them.
 

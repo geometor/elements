@@ -24,6 +24,12 @@ G.367
 
    Find the fifth binomial straight line.
 
+.. signature:: problem
+
+   | :fn:`find_fifth_binomial <G.367>`\ (:g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />`, :g:`/ A B / <g1:/ A B />`) → :g:`/ F G / <g1:/ F G />`, :g:`/ E F / <g1:/ E F />`
+   | **given** two numbers :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` be set out such that :g:`/ A B / <g1:/ A B />` has not to either of them the ratio which a square number has to a square number
+   | **construct** :g:`/ F G / <g1:/ F G />`, :g:`/ E F / <g1:/ E F />` are rational straight lines commensurable in square only, and the lesser term :g:`/ E F / <g1:/ E F />` is commensurable in length with the rational straight line :g:`D <g1:D>` set out
+
 .. picture:: g1.svg
    :alt: Proposition 52
 
@@ -33,17 +39,13 @@ G.367
 
 .. step:: assert
 
-   Let any rational straight line :g:`D <g1:D>` be set out
-
-.. step:: assert
-
-   Let :g:`/ E F / <g1:/ E F />` be commensurable with :g:`D <g1:D>`
+   Let any rational straight line :g:`D <g1:D>` be set out, and let :g:`/ E F / <g1:/ E F />` be commensurable with :g:`D <g1:D>`
 
 .. step:: assert
 
    Therefore :g:`/ E F / <g1:/ E F />` is rational.
 
-.. step:: assert [G.319] <G.319>
+.. step:: assert ∵ magnitudes_ratio_number <G.319>
 
    Let it be contrived that, as :g:`/ A C / <g1:/ A C />` is to :g:`/ A B / <g1:/ A B />`, so is the square on :g:`/ E F / <g1:/ E F />` to the square on :g:`/ F G / <g1:/ F G />`.
 
@@ -55,7 +57,7 @@ G.367
 
    Therefore neither has the square on :g:`/ E F / <g1:/ E F />` to the square on :g:`/ F G / <g1:/ F G />` the ratio which a square number has to a square number.
 
-.. step:: assert [G.322, G.351] <G.322, G.351>
+.. step:: assert ∵ squares_straight_lines, rational_straight_lines <G.322, G.351>
 
    Therefore :g:`/ E F / <g1:/ E F />`, :g:`/ F G / <g1:/ F G />` are rational straight lines commensurable in square only; therefore :g:`/ E G / <g1:/ E G />` is binomial.
 
@@ -75,7 +77,7 @@ G.367
 
    Let then the squares on :g:`/ E F / <g1:/ E F />`, :g:`H <g1:H>` be equal to the square on :g:`/ F G / <g1:/ F G />`
 
-.. step:: assert [G.156] <G.156>
+.. step:: assert ∵ whole_whole_part <G.156>
 
    Therefore, :term:`*convertendo* <convertendo>`, as the number :g:`/ A B / <g1:/ A B />` is to :g:`/ C B / <g1:/ C B />`, so is the square on :g:`/ F G / <g1:/ F G />` to the square on :g:`H <g1:H>`.
 
@@ -87,7 +89,7 @@ G.367
 
    Therefore neither has the square on :g:`/ F G / <g1:/ F G />` to the square on :g:`H <g1:H>` the ratio which a square number has to a square number.
 
-.. step:: assert [G.322] <G.322>
+.. step:: assert ∵ squares_straight_lines <G.322>
 
    Therefore :g:`/ F G / <g1:/ F G />` is incommensurable in length with :g:`H <g1:H>`; so that the square on :g:`/ F G / <g1:/ F G />` is greater than the square on :g:`/ E F / <g1:/ E F />` by the square on a straight line incommensurable with :g:`/ F G / <g1:/ F G />`.
 

@@ -24,6 +24,12 @@ G.37
 
    Triangles with two angles and one corresponding side equal are congruent (ASA / AAS).
 
+.. signature:: theorem
+
+   | :fn:`asa_aas_congruence <G.37>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>`, :g:`< A B C ) <g1:< A B C )>`, :g:`< B C A ) <g1:< B C A )>`)
+   | **given** :g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>` be two triangles having the two angles :g:`< A B C ) <g1:< A B C )>`, :g:`< B C A ) <g1:< B C A )>` :eq:`equal <g1:< A B C ) = g1:< D E F ); g1:< B C A ) = g1:< E F D )>` to the two angles :g:`< D E F ) <g1:< D E F )>`, :g:`< E F D ) <g1:< E F D )>` respectively, namely :g:`< A B C ) <g1:< A B C )>` to :g:`< D E F ) <g1:< D E F )>`, :g:`< B C A ) <g1:< B C A )>` to :g:`< E F D ) <g1:< E F D )>`
+   | **prove** they will also have the remaining sides :eq:`equal <g1:/ A B / = g1:/ D E /; g1:/ A C / = g1:/ D F /; g1:< B A C ) = g1:< E D F )>` to the remaining sides respectively, namely :g:`/ A B / <g1:/ A B />` to :g:`/ D E / <g1:/ D E />` and :g:`/ A C / <g1:/ A C />` to :g:`/ D F / <g1:/ D F />`, and the remaining angle to the remaining angle, namely :g:`< B A C ) <g1:< B A C )>` to :g:`< E D F ) <g1:< E D F )>`
+
 .. picture:: g1.svg
    :alt: Folio 0316 Figure 1 - Proposition 26
 
@@ -37,23 +43,19 @@ G.37
 
 .. step:: assert
 
-   They will also have the remaining sides :eq:`equal <g1:/ A B / = g1:/ D E /; g1:/ A C / = g1:/ D F /; g1:< B A C ) = g1:< E D F )>` to the remaining sides respectively, namely :g:`/ A B / <g1:/ A B />` to :g:`/ D E / <g1:/ D E />` and :g:`/ A C / <g1:/ A C />` to :g:`/ D F / <g1:/ D F />`, and the remaining angle to the remaining angle, namely :g:`< B A C ) <g1:< B A C )>` to :g:`< E D F ) <g1:< E D F )>`.
-
-.. step:: assert
-
    If :g:`/ A B / <g1:/ A B />` is unequal to :g:`/ D E / <g1:/ D E />`, one of them is greater.
 
+.. step:: construct
+
+   Let :g:`/ A B / <g1:/ A B />` be greater, and let :g:`/ B G / <g1:/ B G />` be made :eq:`equal <g1:/ B G / = g1:/ D E />` to :g:`/ D E / <g1:/ D E />`
+
+.. step:: construct
+
+   :fn:`segment <G.3>`\ (:g:`G <g1:G>`, :g:`C <g1:C>`) → :g:`/ G C / <g1:/ G C />`
+
 .. step:: assert
 
-   Let :g:`/ A B / <g1:/ A B />` be greater
-
-.. step:: construct
-
-   Let :g:`/ B G / <g1:/ B G />` be made :eq:`equal <g1:/ B G / = g1:/ D E />` to :g:`/ D E / <g1:/ D E />`
-
-.. step:: construct
-
-   And let :g:`/ G C / <g1:/ G C />` be joined. Then, since :g:`/ B G / <g1:/ B G />` is :eq:`equal <g1:/ B G / = g1:/ D E /; g1:/ B C / = g1:/ E F />` to :g:`/ D E / <g1:/ D E />`, and :g:`/ B C / <g1:/ B C />` to :g:`/ E F / <g1:/ E F />`, the two sides :g:`/ G B / <g1:/ G B />`, :g:`/ B C / <g1:/ B C />` are :eq:`equal <g1:/ G B / = g1:/ D E /; g1:/ B C / = g1:/ E F />` to the two sides :g:`/ D E / <g1:/ D E />`, :g:`/ E F / <g1:/ E F />` respectively
+   Since :g:`/ B G / <g1:/ B G />` is :eq:`equal <g1:/ B G / = g1:/ D E /; g1:/ B C / = g1:/ E F />` to :g:`/ D E / <g1:/ D E />`, and :g:`/ B C / <g1:/ B C />` to :g:`/ E F / <g1:/ E F />`, the two sides :g:`/ G B / <g1:/ G B />`, :g:`/ B C / <g1:/ B C />` are :eq:`equal <g1:/ G B / = g1:/ D E /; g1:/ B C / = g1:/ E F />` to the two sides :g:`/ D E / <g1:/ D E />`, :g:`/ E F / <g1:/ E F />` respectively
 
 .. step:: assert
 
@@ -67,7 +69,7 @@ G.37
 
    And :g:`< G B C > <g1:< G B C >>` is :eq:`equal <g1:< G B C > = g1:< D E F >>` to :g:`< D E F > <g1:< D E F >>`,
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    And the remaining angles will be equal to the remaining angles, namely those which the equal sides subtend;
 
@@ -107,7 +109,7 @@ G.37
 
    Therefore the base :g:`/ A C / <g1:/ A C />` is :eq:`equal <g1:/ A C / = g1:/ D F />` to the base :g:`/ D F / <g1:/ D F />`,
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    And the remaining angle :g:`< B A C ) <g1:< B A C )>` is :eq:`equal <g1:< B A C ) = g1:< E D F )>` to the remaining angle :g:`< E D F ) <g1:< E D F )>`.
 
@@ -123,17 +125,17 @@ G.37
 
    If :g:`/ B C / <g1:/ B C />` is unequal to :g:`/ E F / <g1:/ E F />`, one of them is greater.
 
+.. step:: construct
+
+   Let :g:`/ B C / <g1:/ B C />` be greater, if possible, and let :g:`/ B H / <g1:/ B H />` be made :eq:`equal <g1:/ B H / = g1:/ E F />` to :g:`/ E F / <g1:/ E F />`
+
+.. step:: construct
+
+   :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`H <g1:H>`) → :g:`/ A H / <g1:/ A H />`
+
 .. step:: assert
 
-   Let :g:`/ B C / <g1:/ B C />` be greater, if possible
-
-.. step:: construct
-
-   Let :g:`/ B H / <g1:/ B H />` be made :eq:`equal <g1:/ B H / = g1:/ E F />` to :g:`/ E F / <g1:/ E F />`
-
-.. step:: construct
-
-   Let :g:`/ A H / <g1:/ A H />` be joined. Then, since :g:`/ B H / <g1:/ B H />` is :eq:`equal <g1:/ B H / = g1:/ E F /; g1:/ A B / = g1:/ D E />` to :g:`/ E F / <g1:/ E F />`, and :g:`/ A B / <g1:/ A B />` to :g:`/ D E / <g1:/ D E />`, the two sides :g:`/ A B / <g1:/ A B />`, :g:`/ B H / <g1:/ B H />` are :eq:`equal <g1:/ A B / = g1:/ D E /; g1:/ B H / = g1:/ E F />` to the two sides :g:`/ D E / <g1:/ D E />`, :g:`/ E F / <g1:/ E F />` respectively, and they contain :eq:`equal <g1:< A B C ) = g1:< D E F )>` angles
+   Since :g:`/ B H / <g1:/ B H />` is :eq:`equal <g1:/ B H / = g1:/ E F /; g1:/ A B / = g1:/ D E />` to :g:`/ E F / <g1:/ E F />`, and :g:`/ A B / <g1:/ A B />` to :g:`/ D E / <g1:/ D E />`, the two sides :g:`/ A B / <g1:/ A B />`, :g:`/ B H / <g1:/ B H />` are :eq:`equal <g1:/ A B / = g1:/ D E /; g1:/ B H / = g1:/ E F />` to the two sides :g:`/ D E / <g1:/ D E />`, :g:`/ E F / <g1:/ E F />` respectively, and they contain :eq:`equal <g1:< A B C ) = g1:< D E F )>` angles
 
 .. step:: assert
 
@@ -143,7 +145,7 @@ G.37
 
    And :g:`< A B H > <g1:< A B H >>` is :eq:`equal <g1:< A B H > = g1:< D E F >>` to :g:`< D E F > <g1:< D E F >>`,
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    And the remaining angles will be equal to the remaining angles, namely those which the equal sides subtend;
 
@@ -159,7 +161,7 @@ G.37
 
    Therefore, in :g:`< A H C > <g1:< A H C >>`, the exterior angle :g:`< B H A ) <g1:< B H A )>` is :eq:`equal <g1:< B H A ) = g1:< B C A )>` to the interior and opposite angle :g:`< B C A ) <g1:< B C A )>`:
 
-.. step:: assert [G.27] <G.27>
+.. step:: assert ∵ exterior_angle_greater <G.27>
 
    Which is impossible.
 
@@ -187,7 +189,7 @@ G.37
 
    :g:`< A B C > <g1:< A B C >>` :eq:`equal <g1:< A B C > = g1:< D E F >>` to :g:`< D E F > <g1:< D E F >>`,
 
-.. step:: conclude [G.11] <G.11>
+.. step:: conclude ∵ sas_congruence <G.11>
 
    And the remaining angle :g:`< B A C ) <g1:< B A C )>` :eq:`equal <g1:< B A C ) = g1:< E D F )>` to the remaining angle :g:`< E D F ) <g1:< E D F )>`.
 

@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=156d9f89" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=3d8cc37d" />
   <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -49,7 +49,7 @@
           <a href="../../log/index.html"  >log</a>
         </li>
         <li>
-          <a href="../index.html"  >Elements 2.0 (G Index)</a>
+          <a href="../index.html" class="is-active" aria-selected="true" >Elements 2.0 (G Index)</a>
         </li>
       </ul>
     </nav>
@@ -92,6 +92,12 @@
         <span id="g-87"></span><span id="id1"></span><h1>G.87<a class="headerlink" href="#iii-12" title="Link to this heading">¶</a></h1>
         <p class="rubric"><a class="reference external" href="https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/12/" title="III.12: If two circles touch one another externally, the straight line joining their centres will pass through the point of contact.">III.12</a></p>
         <div class="enunciation">If two circles touch one another externally, the straight line joining their centres will pass through the point of contact.</div>
+        <div class="geom-signature geom-signature-theorem">
+        <div class="line-block">
+        <div class="line"><span class="geom-fn geom-fn-def" data-ref-target="G.87" title="G.87: If two circles touch one another externally, the straight line joining their centres will pass through the point of contact.">circles_touch_externally</span>()</div>
+        <div class="line"><strong>prove</strong> the straight line joined from <span class="geom-ref" data-ref="g1:F" title="F">F</span> to <span class="geom-ref" data-ref="g1:G" title="G">G</span> will pass through the point of contact at <span class="geom-ref" data-ref="g1:A" title="A">A</span></div>
+        </div>
+        </div>
         <figure class="photon-picture photon-svg">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="5 -3 274 218" width="274" height="218" class="euclid-graphic" data-graphic-id="g1" data-graphic="g1" data-proposition="III.12">
           <defs>
@@ -158,16 +164,14 @@
           </g>
         </svg>
         </figure>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> For let the two circles <span class="geom-ref" data-ref="g1:( A B C )" title="( A B C )">( A B C )</span>, <span class="geom-ref" data-ref="g1:( A D E )" title="( A D E )">( A D E )</span> touch one another externally at <span class="geom-ref" data-ref="g1:A" title="A">A</span></div>
-        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> Let the center <span class="geom-ref" data-ref="g1:F" title="F">F</span> of <span class="geom-ref" data-ref="g1:( A B C )" title="( A B C )">( A B C )</span>, and the center <span class="geom-ref" data-ref="g1:G" title="G">G</span> of <span class="geom-ref" data-ref="g1:( A D E )" title="( A D E )">( A D E )</span>, be taken</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> For suppose it does not, but, if possible, let it pass as <span class="geom-ref" data-ref="g1:/ F C D G /" title="/ F C D G /">/ F C D G /</span></div>
-        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> <strong>segment</strong> <span class="geom-ref" data-ref="g1:/ A F /" title="/ A F /">/ A F /</span>, <span class="geom-ref" data-ref="g1:/ A G /" title="/ A G /">/ A G /</span></div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Since <span class="geom-ref" data-ref="g1:F" title="F">F</span> is the center of <span class="geom-ref" data-ref="g1:( A B C )" title="( A B C )">( A B C )</span> → <span class="geom-ref" data-ref="g1:/ F A /" title="/ F A /">/ F A /</span> is <span class="geom-eq-ref" data-assert-equal="g1:/ F A / = g1:/ F C /" title="/ F A / = / F C /">equal</span> to <span class="geom-ref" data-ref="g1:/ F C /" title="/ F C /">/ F C /</span>.</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Since <span class="geom-ref" data-ref="g1:G" title="G">G</span> is the center of <span class="geom-ref" data-ref="g1:( A D E )" title="( A D E )">( A D E )</span> → <span class="geom-ref" data-ref="g1:/ G A /" title="/ G A /">/ G A /</span> is <span class="geom-eq-ref" data-assert-equal="g1:/ G A / = g1:/ G D /" title="/ G A / = / G D /">equal</span> to <span class="geom-ref" data-ref="g1:/ G D /" title="/ G D /">/ G D /</span>.</div>
+        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> Let the two circles <span class="geom-ref" data-ref="g1:( A B C )" title="( A B C )">( A B C )</span>, <span class="geom-ref" data-ref="g1:( A D E )" title="( A D E )">( A D E )</span> touch one another externally at <span class="geom-ref" data-ref="g1:A" title="A">A</span>, and let the center <span class="geom-ref" data-ref="g1:F" title="F">F</span> of <span class="geom-ref" data-ref="g1:( A B C )" title="( A B C )">( A B C )</span>, and the center <span class="geom-ref" data-ref="g1:G" title="G">G</span> of <span class="geom-ref" data-ref="g1:( A D E )" title="( A D E )">( A D E )</span>, be taken</div>
+        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> Suppose it does not, but, if possible, let it pass as <span class="geom-ref" data-ref="g1:/ F C D G /" title="/ F C D G /">/ F C D G /</span>, and let <span class="geom-ref" data-ref="g1:/ A F /" title="/ A F /">/ A F /</span>, <span class="geom-ref" data-ref="g1:/ A G /" title="/ A G /">/ A G /</span> be joined.</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.2/index.html#g-2" data-ref-target="G.2" title="G.2: A circle is a plane figure contained by one line such that all segments falling upon it from its center are equal.">circle_radii</a></span><span class="geom-step-badge geom-badge-assert">assert</span> Since <span class="geom-ref" data-ref="g1:F" title="F">F</span> is the center of <span class="geom-ref" data-ref="g1:( A B C )" title="( A B C )">( A B C )</span> → <span class="geom-ref" data-ref="g1:/ F A /" title="/ F A /">/ F A /</span> is <span class="geom-eq-ref" data-assert-equal="g1:/ F A / = g1:/ F C /" title="/ F A / = / F C /">equal</span> to <span class="geom-ref" data-ref="g1:/ F C /" title="/ F C /">/ F C /</span>.</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.2/index.html#g-2" data-ref-target="G.2" title="G.2: A circle is a plane figure contained by one line such that all segments falling upon it from its center are equal.">circle_radii</a></span><span class="geom-step-badge geom-badge-assert">assert</span> Since <span class="geom-ref" data-ref="g1:G" title="G">G</span> is the center of <span class="geom-ref" data-ref="g1:( A D E )" title="( A D E )">( A D E )</span> → <span class="geom-ref" data-ref="g1:/ G A /" title="/ G A /">/ G A /</span> is <span class="geom-eq-ref" data-assert-equal="g1:/ G A / = g1:/ G D /" title="/ G A / = / G D /">equal</span> to <span class="geom-ref" data-ref="g1:/ G D /" title="/ G D /">/ G D /</span>.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> <span class="geom-ref" data-ref="g1:/ F A /" title="/ F A /">/ F A /</span> was also proved <span class="geom-eq-ref" data-assert-equal="g1:/ F A / = g1:/ F C /" title="/ F A / = / F C /">equal</span> to <span class="geom-ref" data-ref="g1:/ F C /" title="/ F C /">/ F C /</span></div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore <span class="geom-ref" data-ref="g1:/ F A /" title="/ F A /">/ F A /</span>, <span class="geom-ref" data-ref="g1:/ A G /" title="/ A G /">/ A G /</span> are equal to <span class="geom-ref" data-ref="g1:/ F C /" title="/ F C /">/ F C /</span>, <span class="geom-ref" data-ref="g1:/ G D /" title="/ G D /">/ G D /</span>,</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> So that the whole <span class="geom-ref" data-ref="g1:/ F G /" title="/ F G /">/ F G /</span> is greater than <span class="geom-ref" data-ref="g1:/ F A /" title="/ F A /">/ F A /</span>, <span class="geom-ref" data-ref="g1:/ A G /" title="/ A G /">/ A G /</span>;</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><a class="justification" href="../G.31/index.html#g-31" data-ref-target="G.31" title="G.31: In any triangle, the sum of any two sides is greater than the remaining side.">[G.31]</a><span class="geom-step-badge geom-badge-assert">assert</span> But it is also less: which is impossible.</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.31/index.html#g-31" data-ref-target="G.31" title="G.31: In any triangle, the sum of any two sides is greater than the remaining side.">triangle_inequality</a></span><span class="geom-step-badge geom-badge-assert">assert</span> But it is also less: which is impossible.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore the straight line joined from <span class="geom-ref" data-ref="g1:F" title="F">F</span> to <span class="geom-ref" data-ref="g1:G" title="G">G</span> will not fail to pass through the point of contact at <span class="geom-ref" data-ref="g1:A" title="A">A</span></div>
         <div class="geom-step geom-step-conclude" data-step-kind="conclude"><span class="geom-step-badge geom-badge-conclude">conclude</span> Therefore it will pass through it.</div>
         <section class="level-2" id="dependency-graph">
@@ -507,28 +511,28 @@
   <footer>
     <div class="footer-nav">
       <ul>
-        <li><a href="../../about.html">about</a></li>
-        <li><a href="../../connect.html">connect</a></li>
-        <li><a href="../../glossary.html">glossary</a></li>
-        <li><a href="../../todos/index.html">todos</a></li>
-        <li><a href="../../changelog.html">changelog</a></li>
+        <li><a href="../../about.html"  >about</a></li>
+        <li><a href="../../connect.html"  >connect</a></li>
+        <li><a href="../../glossary.html"  >glossary</a></li>
+        <li><a href="../../todos/index.html"  >todos</a></li>
+        <li><a href="../../changelog.html"  >changelog</a></li>
       </ul>
     </div>
     <hr />
     <div role="contentinfo">
       <p>
-        &copy; Copyright .
+        &copy; Copyright 2026, GEOMETOR.
       </p>
     </div>
   </footer>
 
   <script src="../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+  <script src="../../_static/documentation_options.js?v=d5a15cff"></script>
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
-  <script src="../../_static/js/geometor_interactive.js?v=421e4467"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=4430a5d4"></script>
   <script src="../../_static/js/search_highlight.js"></script>
 
 </body>

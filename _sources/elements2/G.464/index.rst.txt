@@ -24,30 +24,27 @@ G.464
 
    If two planes which cut one another be at right angles to any plane, their common section is at right angles to the same plane.
 
+.. signature:: theorem
+
+   | :fn:`planes_cut_right <G.464>`\ ()
+   | **prove** :g:`/ B D / <g1:/ B D />` is at right angles to the plane of reference
+
 .. picture:: g1.svg
    :alt: Book XI, Proposition 19
 
 .. step:: assert
 
-   For let the two planes :g:`< A B > <g1:< A B >>`, :g:`< B C > <g1:< B C >>` be at right angles to the plane of reference
-
-.. step:: assert
-
-   Let :g:`/ B D / <g1:/ B D />` be their common section
-
-.. step:: assert
-
-   For suppose it is not
+   Let the two planes :g:`< A B > <g1:< A B >>`, :g:`< B C > <g1:< B C >>` be at right angles to the plane of reference, and let :g:`/ B D / <g1:/ B D />` be their common section
 
 .. step:: construct
 
-   From :g:`D <g1:D>` let :g:`/ D E / <g1:/ D E />` be drawn in the plane :g:`< A B > <g1:< A B >>` at right angles to :g:`/ A D / <g1:/ A D />`, and :g:`/ D F / <g1:/ D F />` in the plane :g:`< B C > <g1:< B C >>` at right angles to :g:`/ C D / <g1:/ C D />`.
+   Suppose it is not, and from :g:`D <g1:D>` let :g:`/ D E / <g1:/ D E />` be drawn in the plane :g:`< A B > <g1:< A B >>` at right angles to :g:`/ A D / <g1:/ A D />`, and :g:`/ D F / <g1:/ D F />` in the plane :g:`< B C > <g1:< B C >>` at right angles to :g:`/ C D / <g1:/ C D />`.
 
 .. step:: assert
 
    Since the plane :g:`< A B > <g1:< A B >>` is at right angles to the plane of reference, and :g:`/ D E / <g1:/ D E />` has been drawn in the plane :g:`< A B > <g1:< A B >>` at right angles to :g:`/ A D / <g1:/ A D />`, their common section,
 
-.. step:: assert [G.462] <G.462>
+.. step:: assert ∵ plane_right_angles_def <G.462>
 
    Therefore :g:`/ D E / <g1:/ D E />` is at right angles to the plane of reference.
 
@@ -55,7 +52,7 @@ G.464
 
    Similarly we can prove that :g:`/ D F / <g1:/ D F />` is also at right angles to the plane of reference.
 
-.. step:: assert [G.456] <G.456>
+.. step:: assert ∵ point_straight_lines <G.456>
 
    Therefore from the same point :g:`D <g1:D>` two straight lines have been set up at right angles to the plane of reference on the same side: which is impossible.
 

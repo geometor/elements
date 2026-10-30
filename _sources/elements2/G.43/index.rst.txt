@@ -24,6 +24,12 @@ G.43
 
    Lines parallel to the same line are parallel to one another.
 
+.. signature:: theorem
+
+   | :fn:`parallel_transitive <G.43>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`, :g:`/ E F / <g1:/ E F />`)
+   | **given** each of :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` be parallel to :g:`/ E F / <g1:/ E F />`
+   | **prove** :g:`/ A B / <g1:/ A B />` is also parallel to :g:`/ C D / <g1:/ C D />`
+
 .. picture:: g1.svg
    :alt: Folio 0328 Figure 1 - Proposition 30
 
@@ -33,13 +39,13 @@ G.43
 
 .. step:: assert
 
-   For let :g:`/ G K / <g1:/ G K />` fall upon them
+   Let :g:`/ G K / <g1:/ G K />` fall upon them
 
-.. step:: assert [G.42] <G.42>
+.. step:: assert ∵ parallel_transversal_angles <G.42>
 
    Since :g:`/ G K / <g1:/ G K />` has fallen on the parallel straight lines :g:`/ A B / <g1:/ A B />`, :g:`/ E F / <g1:/ E F />` → :g:`< A G K ) <g1:< A G K )>` is :eq:`equal <g1:< A G K ) = g1:< G H F )>` to :g:`< G H F ) <g1:< G H F )>`.
 
-.. step:: assert [G.42] <G.42>
+.. step:: assert ∵ parallel_transversal_angles <G.42>
 
    Since :g:`/ G K / <g1:/ G K />` has fallen on the parallel straight lines :g:`/ E F / <g1:/ E F />`, :g:`/ C D / <g1:/ C D />` → :g:`< G H F ) <g1:< G H F )>` is :eq:`equal <g1:< G H F ) = g1:< G K D )>` to :g:`< G K D ) <g1:< G K D )>`.
 
@@ -47,7 +53,7 @@ G.43
 
    :g:`< A G K ) <g1:< A G K )>` was also proved :eq:`equal <g1:< A G K ) = g1:< G H F )>` to :g:`< G H F ) <g1:< G H F )>`
 
-.. step:: assert [G.1] <G.1>
+.. step:: assert ∵ equal_transitive <G.1>
 
    Therefore :g:`< A G K ) <g1:< A G K )>` is also :eq:`equal <g1:< A G K ) = g1:< G K D )>` to :g:`< G K D ) <g1:< G K D )>`;
 

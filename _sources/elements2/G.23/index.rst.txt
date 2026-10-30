@@ -23,6 +23,10 @@ G.23
 
    All right angles are equal.
 
+.. signature:: rule
+
+   | :fn:`right_angles_equal <G.23>`
+
 Required for
 ------------
 

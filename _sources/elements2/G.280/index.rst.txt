@@ -24,22 +24,24 @@ G.280
 
    If as many numbers as we please beginning from an unit be in continued proportion, and the number after the unit be not square, neither will any other be square except the third from the unit and all those which leave out one. And, if the number after the unit be not cube, neither will any other be cube except the fourth from the unit and all those which leave out two.
 
+.. signature:: theorem
+
+   | :fn:`many_numbers_please_ix_10 <G.280>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`)
+   | **given** there be as many numbers as we please, :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`F <g1:F>`, beginning from an unit and in continued proportion, let :g:`A <g1:A>`, the number after the unit, not be square
+   | **prove** neither will any other be square except the third from the unit <and those which leave out one>; neither will any other be cube except the fourth from the unit and those which leave out two
+
 .. picture:: g1.svg
    :alt: Proposition 10 Diagram
 
 .. step:: given
 
-   there be as many numbers as we please, :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`F <g1:F>`, beginning from an unit and in continued proportion
-
-.. step:: assert
-
-   Let :g:`A <g1:A>`, the number after the unit, not be square
+   there be as many numbers as we please, :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`F <g1:F>`, beginning from an unit and in continued proportion, let :g:`A <g1:A>`, the number after the unit, not be square
 
 .. step:: assert
 
    If possible, let :g:`C <g1:C>` be square.
 
-.. step:: assert [G.278] <G.278>
+.. step:: assert ∵ many_numbers_please_ix_8 <G.278>
 
    :g:`B <g1:B>` is also square ;
 
@@ -55,7 +57,7 @@ G.280
 
    Therefore :g:`A <g1:A>`, :g:`B <g1:B>` have to one another the ratio which a square number has to a square number ;
 
-.. step:: assert [G.268] <G.268>
+.. step:: assert ∵ similar_plane_numbers_viii_26 <G.268>
 
    [so that :g:`A <g1:A>`, :g:`B <g1:B>` are similar plane numbers].
 
@@ -83,7 +85,7 @@ G.280
 
    If possible, let :g:`D <g1:D>` be cube.
 
-.. step:: assert [G.278] <G.278>
+.. step:: assert ∵ many_numbers_please_ix_8 <G.278>
 
    Now :g:`C <g1:C>` is also cube ; for it is fourth from the unit.
 
@@ -99,7 +101,7 @@ G.280
 
    :g:`C <g1:C>` is cube ;
 
-.. step:: assert [G.267] <G.267>
+.. step:: assert ∵ numbers_ratio_cube <G.267>
 
    Therefore :g:`B <g1:B>` is also cube.
 
@@ -115,7 +117,7 @@ G.280
 
    Therefore :g:`A <g1:A>` by multiplying itself has made the cube number :g:`B <g1:B>`.
 
-.. step:: assert [G.275] <G.275>
+.. step:: assert ∵ number_multiplying_itself <G.275>
 
    But, if a number by multiplying itself make a cube number, it is also itself cube.
 

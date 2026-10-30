@@ -24,18 +24,23 @@ G.334
 
    If a rational area be applied to a rational straight line, it produces as breadth a straight line rational and commensurable in length with the straight line to which it is applied.
 
+.. signature:: theorem
+
+   | :fn:`rational_area_applied <G.334>`\ ()
+   | **prove** :g:`/ B C / <g1:/ B C />` is rational and commensurable in length with :g:`/ B A / <g1:/ B A />`
+
 .. picture:: g1.svg
    :alt: Proposition 20
 
 .. step:: construct
 
-   For let the rational area :g:`< A C > <g1:< A C >>` be applied to :g:`/ A B / <g1:/ A B />`, a straight line once more rational in any of the aforesaid ways, producing :g:`/ B C / <g1:/ B C />` as breadth
+   Let the rational area :g:`< A C > <g1:< A C >>` be applied to :g:`/ A B / <g1:/ A B />`, a straight line once more rational in any of the aforesaid ways, producing :g:`/ B C / <g1:/ B C />` as breadth
 
 .. step:: construct
 
-   For on :g:`/ A B / <g1:/ A B />` let the square :g:`< A D > <g1:< A D >>` be described
+   On :g:`/ A B / <g1:/ A B />` let the square :g:`< A D > <g1:< A D >>` be described
 
-.. step:: assert [G.332] <G.332>
+.. step:: assert ∵ square_assigned_straight_def <G.332>
 
    Therefore :g:`< A D > <g1:< A D >>` is rational.
 
@@ -47,11 +52,11 @@ G.334
 
    Therefore :g:`< D A > <g1:< D A >>` is commensurable with :g:`< A C > <g1:< A C >>`.
 
-.. step:: assert [G.163] <G.163>
+.. step:: assert ∵ triangles_parallelograms_height <G.163>
 
    And, as :g:`< D A > <g1:< D A >>` is to :g:`< A C > <g1:< A C >>`, so is :g:`/ D B / <g1:/ D B />` to :g:`/ B C / <g1:/ B C />`.
 
-.. step:: assert [G.323] <G.323>
+.. step:: assert ∵ magnitudes_proportional_commensurable <G.323>
 
    Therefore :g:`/ D B / <g1:/ D B />` is also commensurable with :g:`/ B C / <g1:/ B C />`;
 

@@ -24,26 +24,27 @@ G.312
 
    If as many numbers as we please beginning from an unit be set out continuously in double proportion, until the sum of all becomes prime, and if the sum multiplied into the last make some number, the product is perfect.
 
+.. signature:: theorem
+
+   | :fn:`many_numbers_please_ix_36 <G.312>`\ ()
+   | **prove** :g:`/ F G / <g1:/ F G />` is perfect
+
 .. picture:: g1.svg
    :alt: Proposition 36 Diagram
 
 .. step:: assert
 
-   For let as many numbers as we please, :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, beginning from an unit be set out in double proportion, until the sum of all becomes prime, let :g:`E <g1:E>` be equal to the sum
-
-.. step:: assert
-
-   Let :g:`E <g1:E>` by multiplying :g:`D <g1:D>` make :g:`/ F G / <g1:/ F G />`
+   Let as many numbers as we please, :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, beginning from an unit be set out in double proportion, until the sum of all becomes prime, let :g:`E <g1:E>` be equal to the sum, and let :g:`E <g1:E>` by multiplying :g:`D <g1:D>` make :g:`/ F G / <g1:/ F G />`
 
 .. step:: construct
 
    However many :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` are in multitude, let so many :g:`E <g1:E>`, :g:`/ H K / <g1:/ H K />`, :g:`L <g1:L>`, :g:`M <g1:M>` be taken in double proportion beginning from :g:`E <g1:E>`
 
-.. step:: assert [G.214] <G.214>
+.. step:: assert ∵ there_many_numbers_vii_14 <G.214>
 
    Therefore, :term:`*ex aequali* <ex-aequali>`, as :g:`A <g1:A>` is to :g:`D <g1:D>`, so is :g:`E <g1:E>` to :g:`M <g1:M>`.
 
-.. step:: assert [G.219] <G.219>
+.. step:: assert ∵ numbers_proportional_number <G.219>
 
    Therefore the product of :g:`E <g1:E>`, :g:`D <g1:D>` is equal to the product of :g:`A <g1:A>`, :g:`M <g1:M>`.
 
@@ -75,11 +76,11 @@ G.312
 
    Therefore :g:`E <g1:E>`, :g:`/ H K / <g1:/ H K />`, :g:`L <g1:L>`, :g:`M <g1:M>`, :g:`/ F G / <g1:/ F G />` are continuously proportional in double proportion.
 
-.. step:: assert
+.. step:: construct
 
    Now let there be subtracted from the second :g:`/ H K / <g1:/ H K />` and the last :g:`/ F G / <g1:/ F G />` the numbers :g:`/ H N / <g1:/ H N />`, :g:`/ F O / <g1:/ F O />`, each :eq:`equal <g1:/ H N / = g1:/ F O / = g1:E>` to the first :g:`E <g1:E>`
 
-.. step:: assert [G.310] <G.310>
+.. step:: assert ∵ many_numbers_please_ix_35 <G.310>
 
    Therefore, as the excess of the second is to the first, so is the excess of the last to all those before it.
 
@@ -109,11 +110,7 @@ G.312
 
 .. step:: assert
 
-   If possible, let some number :g:`P <g1:P>` measure :g:`/ F G / <g1:/ F G />`
-
-.. step:: assert
-
-   Let :g:`P <g1:P>` not be the same with any of the numbers :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`/ H K / <g1:/ H K />`, :g:`L <g1:L>`, :g:`M <g1:M>`.
+   If possible, let some number :g:`P <g1:P>` measure :g:`/ F G / <g1:/ F G />`, and let :g:`P <g1:P>` not be the same with any of the numbers :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`/ H K / <g1:/ H K />`, :g:`L <g1:L>`, :g:`M <g1:M>`.
 
 .. step:: assert
 
@@ -127,7 +124,7 @@ G.312
 
    But, further, :g:`E <g1:E>` has also by multiplying :g:`D <g1:D>` made :g:`/ F G / <g1:/ F G />` ;
 
-.. step:: assert [G.219] <G.219>
+.. step:: assert ∵ numbers_proportional_number <G.219>
 
    Therefore, as :g:`E <g1:E>` is to :g:`Q <g1:Q>`, so is :g:`P <g1:P>` to :g:`D <g1:D>`.
 
@@ -135,7 +132,7 @@ G.312
 
    And, since :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` are continuously proportional beginning from an unit,
 
-.. step:: assert [G.284] <G.284>
+.. step:: assert ∵ many_numbers_please_ix_13 <G.284>
 
    Therefore :g:`D <g1:D>` will not be measured by any other number except :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`.
 
@@ -151,11 +148,11 @@ G.312
 
    But, as :g:`P <g1:P>` is to :g:`D <g1:D>`, so is :g:`E <g1:E>` to :g:`Q <g1:Q>` ;
 
-.. step:: assert [G.210] <G.210>
+.. step:: assert ∵ numbers_proportional_multiple_def <G.210>
 
    Therefore neither does :g:`E <g1:E>` measure :g:`Q <g1:Q>`.
 
-.. step:: assert [G.230] <G.230>
+.. step:: assert ∵ prime_number_prime <G.230>
 
    :g:`E <g1:E>` is prime ; and any prime number is prime to any number which it does not measure.
 
@@ -163,7 +160,7 @@ G.312
 
    Therefore :g:`E <g1:E>`, :g:`Q <g1:Q>` are prime to one another.
 
-.. step:: assert [G.221, G.220] <G.221, G.220>
+.. step:: assert ∵ numbers_prime_least, least_numbers_ratio <G.221, G.220>
 
    Primes are also least, and the least numbers measure those which have the same ratio the same number of times, the antecedent the antecedent and the consequent the consequent ; and, as :g:`E <g1:E>` is to :g:`Q <g1:Q>`, so is :g:`P <g1:P>` to :g:`D <g1:D>` .
 
@@ -191,11 +188,11 @@ G.312
 
    Now :g:`E <g1:E>`, :g:`/ H K / <g1:/ H K />`, :g:`L <g1:L>` are in the same ratio with :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` ;
 
-.. step:: assert [G.214] <G.214>
+.. step:: assert ∵ there_many_numbers_vii_14 <G.214>
 
    Therefore, :term:`*ex aequali* <ex-aequali>`, as :g:`B <g1:B>` is to :g:`D <g1:D>`, so is :g:`E <g1:E>` to :g:`L <g1:L>`.
 
-.. step:: assert [G.219] <G.219>
+.. step:: assert ∵ numbers_proportional_number <G.219>
 
    Therefore the product of :g:`B <g1:B>`, :g:`L <g1:L>` is equal to the product of :g:`D <g1:D>`, :g:`E <g1:E>`.
 
@@ -207,7 +204,7 @@ G.312
 
    Therefore the product of :g:`Q <g1:Q>`, :g:`P <g1:P>` is also equal to the product of :g:`B <g1:B>`, :g:`L <g1:L>`.
 
-.. step:: assert [G.219] <G.219>
+.. step:: assert ∵ numbers_proportional_number <G.219>
 
    Therefore, as :g:`Q <g1:Q>` is to :g:`B <g1:B>`, so is :g:`L <g1:L>` to :g:`P <g1:P>`.
 
@@ -227,7 +224,7 @@ G.312
 
    Therefore no number will measure :g:`/ F G / <g1:/ F G />` except :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`/ H K / <g1:/ H K />`, :g:`L <g1:L>`, :g:`M <g1:M>` and the unit.
 
-.. step:: assert [G.311] <G.311>
+.. step:: assert ∵ perfect_number_equal_def <G.311>
 
    :g:`/ F G / <g1:/ F G />` was proved equal to :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`/ H K / <g1:/ H K />`, :g:`L <g1:L>`, :g:`M <g1:M>` and the unit ; and a perfect number is that which is equal to its own parts .
 

@@ -24,6 +24,12 @@ G.118
 
    Inscribe in a given circle a triangle equiangular with a given triangle.
 
+.. signature:: problem
+
+   | :fn:`inscribe_triangle_in_circle <G.118>`\ (:g:`( A B C ) <g1:( A B C )>`, :g:`< D E F > <g1:< D E F >>`) → :g:`< B A C ) <g1:< B A C )>`, :g:`< E D F ) <g1:< E D F )>`
+   | **given** :g:`( A B C ) <g1:( A B C )>`, :g:`< D E F > <g1:< D E F >>`
+   | **construct** the remaining angle :g:`< B A C ) <g1:< B A C )>` is also :eq:`equal <g1:< B A C ) = g1:< E D F )>` to the remaining angle :g:`< E D F ) <g1:< E D F )>`
+
 .. picture:: g1.svg
    :alt: Diagram for Proposition 2
 
@@ -31,27 +37,23 @@ G.118
 
    :g:`( A B C ) <g1:( A B C )>`, :g:`< D E F > <g1:< D E F >>`
 
-.. step:: construct [G.94] <G.94>
+.. step:: construct
 
-   Let :g:`/ G H / <g1:/ G H />` be drawn touching :g:`( A B C ) <g1:( A B C )>` at :g:`A <g1:A>`
-
-.. step:: assert
-
-   On :g:`/ A H / <g1:/ A H />`
+   :fn:`straight_line_drawn <G.94>`: Let :g:`/ G H / <g1:/ G H />` be drawn touching :g:`( A B C ) <g1:( A B C )>` at :g:`A <g1:A>`
 
 .. step:: construct
 
-   At :g:`A <g1:A>` on it, let :g:`< H A C ) <g1:< H A C )>` be constructed :eq:`equal <g1:< H A C ) = g1:< D E F )>` to :g:`< D E F ) <g1:< D E F )>`
-
-.. step:: construct [G.34] <G.34>
-
-   On :g:`/ A G / <g1:/ A G />`, and at :g:`A <g1:A>` on it, let :g:`< G A B ) <g1:< G A B )>` be constructed :eq:`equal <g1:< G A B ) = g1:< D F E )>` to :g:`< D F E ) <g1:< D F E )>`
+   :fn:`copy_angle <G.34>`\ (:g:`/ A H / <g1:/ A H />`, :g:`A <g1:A>`, :g:`< D E F ) <g1:< D E F )>`) → :g:`< H A C ) <g1:< H A C )>` (:eq:`equal <g1:< H A C ) = g1:< D E F )>`)
 
 .. step:: construct
 
-   **segment** :g:`/ B C / <g1:/ B C />`
+   :fn:`copy_angle <G.34>`\ (:g:`/ A G / <g1:/ A G />`, :g:`A <g1:A>`, :g:`< D F E ) <g1:< D F E )>`) → :g:`< G A B ) <g1:< G A B )>` (:eq:`equal <g1:< G A B ) = g1:< D F E )>`)
 
-.. step:: assert [G.111] <G.111>
+.. step:: construct
+
+   :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`C <g1:C>`) → :g:`/ B C / <g1:/ B C />`
+
+.. step:: assert ∵ straight_line_touch_iii_32 <G.111>
 
    Since a straight line :g:`/ A H / <g1:/ A H />` touches :g:`( A B C ) <g1:( A B C )>`, and from the point of contact at :g:`A <g1:A>` :g:`/ A C / <g1:/ A C />` is drawn across in the circle, therefore :g:`< H A C ) <g1:< H A C )>` is :eq:`equal <g1:< H A C ) = g1:< A B C )>` to :g:`< A B C ) <g1:< A B C )>` in the alternate segment of the circle.
 
@@ -65,13 +67,13 @@ G.118
 
 .. step:: assert
 
-   For the same reason
+   The same reason
 
 .. step:: assert
 
    :g:`< A C B ) <g1:< A C B )>` is also :eq:`equal <g1:< A C B ) = g1:< D F E )>` to :g:`< D F E ) <g1:< D F E )>`;
 
-.. step:: conclude [G.45] <G.45>
+.. step:: conclude ∵ triangle_angle_sum <G.45>
 
    Therefore the remaining angle :g:`< B A C ) <g1:< B A C )>` is also :eq:`equal <g1:< B A C ) = g1:< E D F )>` to the remaining angle :g:`< E D F ) <g1:< E D F )>`.
 

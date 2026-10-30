@@ -23,6 +23,10 @@ G.307
 
    An:term:`**even-times odd number** <even-times-odd-number>` is that which is measured by an even number according to an odd number.
 
+.. signature:: def
+
+   | :fn:`even_times_odd_def <G.307>`
+
 Required for
 ------------
 

@@ -23,6 +23,10 @@ G.410
 
    But if neither be commensurable in length with the rational straight line set out, and the square on the whole be greater than the square on the annex by the square on a straight line commensurable with the whole, let the apotome be called a:term:`**third apotome** <third-apotome>`.
 
+.. signature:: def
+
+   | :fn:`commensurable_length_rational_def <G.410>`
+
 Required for
 ------------
 

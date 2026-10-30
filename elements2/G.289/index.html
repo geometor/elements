@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=156d9f89" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=3d8cc37d" />
   <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -49,7 +49,7 @@
           <a href="../../log/index.html"  >log</a>
         </li>
         <li>
-          <a href="../index.html"  >Elements 2.0 (G Index)</a>
+          <a href="../index.html" class="is-active" aria-selected="true" >Elements 2.0 (G Index)</a>
         </li>
       </ul>
     </nav>
@@ -92,6 +92,13 @@
         <span id="g-289"></span><span id="id1"></span><h1>G.289<a class="headerlink" href="#ix-18" title="Link to this heading">¶</a></h1>
         <p class="rubric"><a class="reference external" href="https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/18/" title="IX.18: Given two numbers, to investigate whether it is possible to find a third proportional to them.">IX.18</a></p>
         <div class="enunciation">Given two numbers, to investigate whether it is possible to find a third proportional to them.</div>
+        <div class="geom-signature geom-signature-problem">
+        <div class="line-block">
+        <div class="line"><span class="geom-fn geom-fn-def" data-ref-target="G.289" title="G.289: Given two numbers, to investigate whether it is possible to find a third proportional to them.">numbers_investigate_whether</span>(<span class="geom-ref" data-ref="g1:A" title="A">A</span>, <span class="geom-ref" data-ref="g1:B" title="B">B</span>) → <span class="geom-ref" data-ref="g1:C" title="C">C</span></div>
+        <div class="line"><strong>given</strong> <span class="geom-ref" data-ref="g1:A" title="A">A</span>, <span class="geom-ref" data-ref="g1:B" title="B">B</span> be the given two numbers, let it be required to investigate whether it is possible to find a third proportional to them</div>
+        <div class="line"><strong>construct</strong> it is not possible to find a third proportional number to <span class="geom-ref" data-ref="g1:A" title="A">A</span>, <span class="geom-ref" data-ref="g1:B" title="B">B</span> when <span class="geom-ref" data-ref="g1:A" title="A">A</span> does not measure <span class="geom-ref" data-ref="g1:C" title="C">C</span></div>
+        </div>
+        </div>
         <figure class="photon-picture photon-svg">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -1 404 76" width="404" height="76" class="euclid-graphic" data-graphic-id="g1" data-graphic="g1" data-proposition="IX.18">
           <defs>
@@ -132,18 +139,16 @@
           </g>
         </svg>
         </figure>
-        <div class="geom-step geom-step-given" data-step-kind="given"><span class="geom-step-badge geom-badge-given">given</span> <span class="geom-ref" data-ref="g1:A" title="A">A</span>, <span class="geom-ref" data-ref="g1:B" title="B">B</span> be the given two numbers</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Let it be required to investigate whether it is possible to find a third proportional to them.</div>
+        <div class="geom-step geom-step-given" data-step-kind="given"><span class="geom-step-badge geom-badge-given">given</span> <span class="geom-ref" data-ref="g1:A" title="A">A</span>, <span class="geom-ref" data-ref="g1:B" title="B">B</span> be the given two numbers, let it be required to investigate whether it is possible to find a third proportional to them</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Now <span class="geom-ref" data-ref="g1:A" title="A">A</span>, <span class="geom-ref" data-ref="g1:B" title="B">B</span> are either prime to one another or not.</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><a class="justification" href="../G.287/index.html#g-287" data-ref-target="G.287" title="G.287: If two numbers be prime to one another, the second will not be to any other number as the first is to the second.">[G.287]</a><span class="geom-step-badge geom-badge-assert">assert</span> And, if they are prime to one another, it has been proved that it is impossible to find a third proportional to them.</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Next, let <span class="geom-ref" data-ref="g1:A" title="A">A</span>, <span class="geom-ref" data-ref="g1:B" title="B">B</span> not be prime to one another</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Let <span class="geom-ref" data-ref="g1:B" title="B">B</span> by multiplying itself make <span class="geom-ref" data-ref="g1:C" title="C">C</span>.</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.287/index.html#g-287" data-ref-target="G.287" title="G.287: If two numbers be prime to one another, the second will not be to any other number as the first is to the second.">numbers_prime_number_ix_16</a></span><span class="geom-step-badge geom-badge-assert">assert</span> And, if they are prime to one another, it has been proved that it is impossible to find a third proportional to them.</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Next, let <span class="geom-ref" data-ref="g1:A" title="A">A</span>, <span class="geom-ref" data-ref="g1:B" title="B">B</span> not be prime to one another, and let <span class="geom-ref" data-ref="g1:B" title="B">B</span> by multiplying itself make <span class="geom-ref" data-ref="g1:C" title="C">C</span>.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Then <span class="geom-ref" data-ref="g1:A" title="A">A</span> either measures <span class="geom-ref" data-ref="g1:C" title="C">C</span> or does not measure it.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> First, let it measure it according to <span class="geom-ref" data-ref="g1:D" title="D">D</span> ;</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore <span class="geom-ref" data-ref="g1:A" title="A">A</span> by multiplying <span class="geom-ref" data-ref="g1:D" title="D">D</span> has made <span class="geom-ref" data-ref="g1:C" title="C">C</span>.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> But, further, <span class="geom-ref" data-ref="g1:B" title="B">B</span> has also by multiplying itself made <span class="geom-ref" data-ref="g1:C" title="C">C</span> ;</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore the product of <span class="geom-ref" data-ref="g1:A" title="A">A</span>, <span class="geom-ref" data-ref="g1:D" title="D">D</span> is equal to the square on <span class="geom-ref" data-ref="g1:B" title="B">B</span>.</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><a class="justification" href="../G.219/index.html#g-219" data-ref-target="G.219" title="G.219: If four numbers be proportional, the number produced from the first and fourth will equals the number produced from the second and third; and, if the number produced from the…">[G.219]</a><span class="geom-step-badge geom-badge-assert">assert</span> Therefore, as <span class="geom-ref" data-ref="g1:A" title="A">A</span> is to <span class="geom-ref" data-ref="g1:B" title="B">B</span>, so is <span class="geom-ref" data-ref="g1:B" title="B">B</span> to <span class="geom-ref" data-ref="g1:D" title="D">D</span> ; therefore a third proportional number <span class="geom-ref" data-ref="g1:D" title="D">D</span> has been found to <span class="geom-ref" data-ref="g1:A" title="A">A</span>, <span class="geom-ref" data-ref="g1:B" title="B">B</span>.</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.219/index.html#g-219" data-ref-target="G.219" title="G.219: If four numbers be proportional, the number produced from the first and fourth will equals the number produced from the second and third; and, if the number produced from the…">numbers_proportional_number</a></span><span class="geom-step-badge geom-badge-assert">assert</span> Therefore, as <span class="geom-ref" data-ref="g1:A" title="A">A</span> is to <span class="geom-ref" data-ref="g1:B" title="B">B</span>, so is <span class="geom-ref" data-ref="g1:B" title="B">B</span> to <span class="geom-ref" data-ref="g1:D" title="D">D</span> ; therefore a third proportional number <span class="geom-ref" data-ref="g1:D" title="D">D</span> has been found to <span class="geom-ref" data-ref="g1:A" title="A">A</span>, <span class="geom-ref" data-ref="g1:B" title="B">B</span>.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Next, let <span class="geom-ref" data-ref="g1:A" title="A">A</span> not measure <span class="geom-ref" data-ref="g1:C" title="C">C</span></div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> If possible, let <span class="geom-ref" data-ref="g1:D" title="D">D</span>, such third proportional, have been found.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore the product of <span class="geom-ref" data-ref="g1:A" title="A">A</span>, <span class="geom-ref" data-ref="g1:D" title="D">D</span> is equal to the square on <span class="geom-ref" data-ref="g1:B" title="B">B</span>.</div>
@@ -472,28 +477,28 @@
   <footer>
     <div class="footer-nav">
       <ul>
-        <li><a href="../../about.html">about</a></li>
-        <li><a href="../../connect.html">connect</a></li>
-        <li><a href="../../glossary.html">glossary</a></li>
-        <li><a href="../../todos/index.html">todos</a></li>
-        <li><a href="../../changelog.html">changelog</a></li>
+        <li><a href="../../about.html"  >about</a></li>
+        <li><a href="../../connect.html"  >connect</a></li>
+        <li><a href="../../glossary.html"  >glossary</a></li>
+        <li><a href="../../todos/index.html"  >todos</a></li>
+        <li><a href="../../changelog.html"  >changelog</a></li>
       </ul>
     </div>
     <hr />
     <div role="contentinfo">
       <p>
-        &copy; Copyright .
+        &copy; Copyright 2026, GEOMETOR.
       </p>
     </div>
   </footer>
 
   <script src="../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+  <script src="../../_static/documentation_options.js?v=d5a15cff"></script>
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
-  <script src="../../_static/js/geometor_interactive.js?v=421e4467"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=4430a5d4"></script>
   <script src="../../_static/js/search_highlight.js"></script>
 
 </body>

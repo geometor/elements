@@ -24,24 +24,26 @@ G.79
 
    If in a circle two straight lines cut one another which are not through the centre, they do not bisect one another.
 
+.. signature:: theorem
+
+   | :fn:`circle_straight_lines <G.79>`\ (:g:`( A B C D ) <g1:( A B C D )>`, :g:`/ A C / <g1:/ A C />`, :g:`/ B D / <g1:/ B D />`, :g:`E <g1:E>`)
+   | **given** :g:`( A B C D ) <g1:( A B C D )>` be a circle, in it let :g:`/ A C / <g1:/ A C />`, :g:`/ B D / <g1:/ B D />`, which are not through the center, cut one another at :g:`E <g1:E>`
+   | **prove** they do not bisect one another
+
 .. picture:: g1.svg
    :alt: Proposition 4
 
 .. step:: given
 
-   :g:`( A B C D ) <g1:( A B C D )>` be a circle
-
-.. step:: intersect
-
-   In it let :g:`/ A C / <g1:/ A C />`, :g:`/ B D / <g1:/ B D />`, which are not through the center, cut one another at :g:`E <g1:E>`
+   :g:`( A B C D ) <g1:( A B C D )>` be a circle, in it let :g:`/ A C / <g1:/ A C />`, :g:`/ B D / <g1:/ B D />`, which are not through the center, cut one another at :g:`E <g1:E>`
 
 .. step:: assert
 
    If possible, let them :eq:`bisect <g1:/ A E / = g1:/ E C /; g1:/ B E / = g1:/ E D />` one another, so that :g:`/ A E / <g1:/ A E />` is :eq:`equal <g1:/ A E / = g1:/ E C /; g1:/ B E / = g1:/ E D />` to :g:`/ E C / <g1:/ E C />`, and :g:`/ B E / <g1:/ B E />` to :g:`/ E D / <g1:/ E D />`
 
-.. step:: construct [G.76] <G.76>
+.. step:: construct
 
-   Let the center of :g:`( A B C D ) <g1:( A B C D )>` be taken
+   :fn:`find_circle_center <G.76>`: Let the center of :g:`( A B C D ) <g1:( A B C D )>` be taken
 
 .. step:: assert
 
@@ -49,9 +51,9 @@ G.79
 
 .. step:: construct
 
-   **segment** :g:`/ F E / <g1:/ F E />`
+   :fn:`segment <G.3>`\ (:g:`F <g1:F>`, :g:`E <g1:E>`) → :g:`/ F E / <g1:/ F E />`
 
-.. step:: assert [G.78] <G.78>
+.. step:: assert ∵ circle_straight_line <G.78>
 
    Since a straight line :g:`/ F E / <g1:/ F E />` through the center :eq:`bisects <g1:/ A E / = g1:/ E C />` a straight line :g:`/ A C / <g1:/ A C />` not through the center → it also cuts it at right angles;
 
@@ -59,7 +61,7 @@ G.79
 
    Therefore :g:`< F E A ) <g1:< F E A )>` is right.
 
-.. step:: assert [G.78] <G.78>
+.. step:: assert ∵ circle_straight_line <G.78>
 
    Since a straight line :g:`/ F E / <g1:/ F E />` :eq:`bisects <g1:/ B E / = g1:/ E D />` a straight line :g:`/ B D / <g1:/ B D />` → it also cuts it at right angles;
 

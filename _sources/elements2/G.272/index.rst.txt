@@ -24,16 +24,21 @@ G.272
 
    If a cube number by multiplying itself make some number, the product is cube.
 
+.. signature:: theorem
+
+   | :fn:`cube_number_multiplying <G.272>`\ ()
+   | **prove** :g:`B <g1:B>` is cube
+
 .. picture:: g1.svg
    :alt: Proposition 3 Diagram
 
 .. step:: assert
 
-   For let the cube number :g:`A <g1:A>` by multiplying itself make :g:`B <g1:B>`
+   Let the cube number :g:`A <g1:A>` by multiplying itself make :g:`B <g1:B>`
 
 .. step:: construct
 
-   For let :g:`C <g1:C>`, the side of :g:`A <g1:A>`, be taken
+   Let :g:`C <g1:C>`, the side of :g:`A <g1:A>`, be taken
 
 .. step:: assert
 
@@ -55,7 +60,7 @@ G.272
 
    Further the unit also measures :g:`C <g1:C>` according to the units in it;
 
-.. step:: assert [G.210] <G.210>
+.. step:: assert ∵ numbers_proportional_multiple_def <G.210>
 
    Therefore, as the unit is to :g:`C <g1:C>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`.
 
@@ -99,7 +104,7 @@ G.272
 
    The unit also measures :g:`A <g1:A>` according to the units in it;
 
-.. step:: assert [G.210] <G.210>
+.. step:: assert ∵ numbers_proportional_multiple_def <G.210>
 
    Therefore, as the unit is to :g:`A <g1:A>`, so is :g:`A <g1:A>` to :g:`B <g1:B>`.
 
@@ -107,11 +112,11 @@ G.272
 
    Between the unit and :g:`A <g1:A>` two mean proportional numbers have fallen;
 
-.. step:: assert [G.248] <G.248>
+.. step:: assert ∵ numbers_there_fall <G.248>
 
    Therefore two mean proportional numbers will also fall between :g:`A <g1:A>`, :g:`B <g1:B>`.
 
-.. step:: assert [G.265] <G.265>
+.. step:: assert ∵ numbers_continued_proportion_viii_23 <G.265>
 
    But, if two mean proportional numbers fall between two numbers, and the first be cube, the second will also be cube.
 

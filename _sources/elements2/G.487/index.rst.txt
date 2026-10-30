@@ -24,22 +24,28 @@ G.487
 
    Similar polygons inscribed in circles are to one another as the squares on the diameters.
 
+.. signature:: theorem
+
+   | :fn:`similar_polygons_inscribed <G.487>`\ (:g:`( A B C ) <g1:( A B C )>`, :g:`( F G H ) <g1:( F G H )>`, :g:`< A B C D E > <g1:< A B C D E >>`, :g:`< F G H K L > <g1:< F G H K L >>`)
+   | **given** :g:`( A B C ) <g1:( A B C )>`, :g:`( F G H ) <g1:( F G H )>` be circles, let :g:`< A B C D E > <g1:< A B C D E >>`, :g:`< F G H K L > <g1:< F G H K L >>` be similar polygons inscribed in them, let :g:`/ B M / <g1:/ B M />`, :g:`/ G N / <g1:/ G N />` be diameters of the circles
+   | **prove** also, as the square on :g:`/ B M / <g1:/ B M />` is to the square on :g:`/ G N / <g1:/ G N />`, so is the polygon :g:`< A B C D E > <g1:< A B C D E >>` to the polygon :g:`< F G H K L > <g1:< F G H K L >>`
+
 .. picture:: g1.svg
    :alt: Similar polygons inscribed in circles
 
 .. step:: given
 
-   :g:`( A B C ) <g1:( A B C )>`, :g:`( F G H ) <g1:( F G H )>` be circles, let :g:`< A B C D E > <g1:< A B C D E >>`, :g:`< F G H K L > <g1:< F G H K L >>` be similar polygons inscribed in them
+   :g:`( A B C ) <g1:( A B C )>`, :g:`( F G H ) <g1:( F G H )>` be circles, let :g:`< A B C D E > <g1:< A B C D E >>`, :g:`< F G H K L > <g1:< F G H K L >>` be similar polygons inscribed in them, let :g:`/ B M / <g1:/ B M />`, :g:`/ G N / <g1:/ G N />` be diameters of the circles
 
 .. step:: assert
 
-   Let :g:`/ B M / <g1:/ B M />`, :g:`/ G N / <g1:/ G N />` be diameters of the circles
+   I say that, as the square on :g:`/ B M / <g1:/ B M />` is to the square on :g:`/ G N / <g1:/ G N />`, so is the polygon :g:`< A B C D E > <g1:< A B C D E >>` to the polygon :g:`< F G H K L > <g1:< F G H K L >>`.
 
 .. step:: construct
 
-   For let :g:`/ B E / <g1:/ B E />`, :g:`/ A M / <g1:/ A M />`, :g:`/ G L / <g1:/ G L />`, :g:`/ F N / <g1:/ F N />` be joined.
+   :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`E <g1:E>`) → :g:`/ B E / <g1:/ B E />`, :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`M <g1:M>`) → :g:`/ A M / <g1:/ A M />`, :fn:`segment <G.3>`\ (:g:`G <g1:G>`, :g:`L <g1:L>`) → :g:`/ G L / <g1:/ G L />`, :fn:`segment <G.3>`\ (:g:`F <g1:F>`, :g:`N <g1:N>`) → :g:`/ F N / <g1:/ F N />`
 
-.. step:: assert [G.170] <G.170>
+.. step:: assert ∵ similar_polygons_angles_def <G.170>
 
    Since the polygon :g:`< A B C D E > <g1:< A B C D E >>` is similar to the polygon :g:`< F G H K L > <g1:< F G H K L >>`, :g:`< B A E ) <g1:< B A E )>` is :eq:`equal <g1:< B A E ) = g1:< G F L )>` to :g:`< G F L ) <g1:< G F L )>`, and, as :g:`/ B A / <g1:/ B A />` is to :g:`/ A E / <g1:/ A E />`, so is :g:`/ G F / <g1:/ G F />` to :g:`/ F L / <g1:/ F L />`.
 
@@ -47,7 +53,7 @@ G.487
 
    Thus :g:`< B A E > <g1:< B A E >>`, :g:`< G F L > <g1:< G F L >>` are two triangles which have one angle :eq:`equal <g1:< B A E ) = g1:< G F L )>` to one angle, namely :g:`< B A E ) <g1:< B A E )>` to :g:`< G F L ) <g1:< G F L )>`, and the sides about the equal angles proportional
 
-.. step:: assert [G.168] <G.168>
+.. step:: assert ∵ triangles_angle_equal <G.168>
 
    Therefore :g:`< A B E > <g1:< A B E >>` is equiangular with :g:`< F G L > <g1:< F G L >>`.
 
@@ -55,7 +61,7 @@ G.487
 
    Therefore :g:`< A E B ) <g1:< A E B )>` is :eq:`equal <g1:< A E B ) = g1:< F L G )>` to :g:`< F L G ) <g1:< F L G )>`.
 
-.. step:: assert [G.106] <G.106>
+.. step:: assert ∵ equal_circles_angles <G.106>
 
    :g:`< A E B ) <g1:< A E B )>` is :eq:`equal <g1:< A E B ) = g1:< A M B ); g1:< F L G ) = g1:< F N G )>` to :g:`< A M B ) <g1:< A M B )>`, for they stand on the same circumference; and :g:`< F L G ) <g1:< F L G )>` to :g:`< F N G ) <g1:< F N G )>`.
 
@@ -63,11 +69,11 @@ G.487
 
    Therefore :g:`< A M B ) <g1:< A M B )>` is also :eq:`equal <g1:< A M B ) = g1:< F N G )>` to :g:`< F N G ) <g1:< F N G )>`.
 
-.. step:: assert [G.110] <G.110>
+.. step:: assert ∵ thales_semicircle_theorem <G.110>
 
    The right angle :g:`< B A M ) <g1:< B A M )>` is also :eq:`equal <g1:< B A M ) = g1:< G F N )>` to the right angle :g:`< G F N ) <g1:< G F N )>`.
 
-.. step:: assert [G.45] <G.45>
+.. step:: assert ∵ triangle_angle_sum <G.45>
 
    Therefore the remaining angle is equal to the remaining angle.
 
@@ -75,11 +81,11 @@ G.487
 
    Therefore :g:`< A B M > <g1:< A B M >>` is equiangular with :g:`< F G N > <g1:< F G N >>`.
 
-.. step:: assert [G.166] <G.166>
+.. step:: assert ∵ equiangular_triangles_sides <G.166>
 
    Therefore, proportionally, as :g:`/ B M / <g1:/ B M />` is to :g:`/ G N / <g1:/ G N />`, so is :g:`/ B A / <g1:/ B A />` to :g:`/ G F / <g1:/ G F />`.
 
-.. step:: assert [G.185] <G.185>
+.. step:: assert ∵ similar_polygons_divided <G.185>
 
    The ratio of the square on :g:`/ B M / <g1:/ B M />` to the square on :g:`/ G N / <g1:/ G N />` is duplicate of the ratio of :g:`/ B M / <g1:/ B M />` to :g:`/ G N / <g1:/ G N />`, and the ratio of the polygon :g:`< A B C D E > <g1:< A B C D E >>` to the polygon :g:`< F G H K L > <g1:< F G H K L >>` is duplicate of the ratio of :g:`/ B A / <g1:/ B A />` to :g:`/ G F / <g1:/ G F />`.
 

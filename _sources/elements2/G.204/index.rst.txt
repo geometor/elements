@@ -24,12 +24,17 @@ G.204
 
    If a number be a part of a number, and another be the same part of another, the sum is the same part of the sum that the one is of the one.
 
+.. signature:: theorem
+
+   | :fn:`number_part_number <G.204>`\ ()
+   | **prove** the sum of :g:`A <g1:A>`, :g:`D <g1:D>` is also the same part of the sum of :g:`/ B C / <g1:/ B C />`, :g:`/ E F / <g1:/ E F />` that :g:`A <g1:A>` is of :g:`/ B C / <g1:/ B C />`
+
 .. picture:: g1.svg
    :alt: Book VII, Proposition 5
 
 .. step:: assert
 
-   For let the number :g:`A <g1:A>` be a part of :g:`/ B C / <g1:/ B C />`, and another, :g:`D <g1:D>`, the same part of another :g:`/ E F / <g1:/ E F />` that :g:`A <g1:A>` is of :g:`/ B C / <g1:/ B C />`
+   Let the number :g:`A <g1:A>` be a part of :g:`/ B C / <g1:/ B C />`, and another, :g:`D <g1:D>`, the same part of another :g:`/ E F / <g1:/ E F />` that :g:`A <g1:A>` is of :g:`/ B C / <g1:/ B C />`
 
 .. step:: assert
 

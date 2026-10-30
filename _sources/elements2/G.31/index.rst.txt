@@ -24,12 +24,17 @@ G.31
 
    In any triangle, the sum of any two sides is greater than the remaining side.
 
+.. signature:: theorem
+
+   | :fn:`triangle_inequality <G.31>`\ ()
+   | **prove** in :g:`< A B C > <g1:< A B C >>` two sides taken together in any manner are greater than the remaining one, namely
+
 .. picture:: g1.svg
    :alt: Proposition 20 figure
 
 .. step:: assert
 
-   For let :g:`< A B C > <g1:< A B C >>` be a triangle
+   Let :g:`< A B C > <g1:< A B C >>` be a triangle
 
 .. step:: assert
 
@@ -45,21 +50,25 @@ G.31
 
 .. step:: construct
 
-   For let :g:`[ B A ] <g1:[ B A ]>` be drawn through to :g:`D <g1:D>`, let :g:`/ D A / <g1:/ D A />` be made :eq:`equal <g1:/ D A / = g1:/ C A />` to :g:`/ C A / <g1:/ C A />`
+   :fn:`extend <G.7>`\ (:g:`[ B A ] <g1:[ B A ]>`) → :g:`D <g1:D>`
 
 .. step:: construct
 
-   **segment** :g:`/ D C / <g1:/ D C />`
+   :fn:`cut_equal_segment <G.9>`\ (:g:`/ C A / <g1:/ C A />`) → :g:`/ D A / <g1:/ D A />` (:eq:`equal <g1:/ D A / = g1:/ C A />`)
 
-.. step:: assert [G.12] <G.12>
+.. step:: construct
+
+   :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`C <g1:C>`) → :g:`/ D C / <g1:/ D C />`
+
+.. step:: assert ∵ isosceles_base_angles <G.12>
 
    Since :g:`/ D A / <g1:/ D A />` is :eq:`equal <g1:/ D A / = g1:/ A C />` to :g:`/ A C / <g1:/ A C />`, :g:`< A D C ) <g1:< A D C )>` is also :eq:`equal <g1:< A D C ) = g1:< A C D )>` to :g:`< A C D ) <g1:< A C D )>`
 
-.. step:: assert [G.26] <G.26>
+.. step:: assert ∵ whole_greater_than_part <G.26>
 
    Therefore :g:`< B C D ) <g1:< B C D )>` is greater than :g:`< A D C ) <g1:< A D C )>`.
 
-.. step:: assert [G.30] <G.30>
+.. step:: assert ∵ greater_angle_greater_side <G.30>
 
    And, since :g:`< D C B > <g1:< D C B >>` is a triangle having :g:`< B C D ) <g1:< B C D )>` greater than :g:`< B D C ) <g1:< B D C )>`, and the greater angle is subtended by the greater side.
 

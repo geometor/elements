@@ -24,12 +24,14 @@ G.76
 
    Find the centre of a given circle.
 
+.. signature:: problem
+
+   | :fn:`find_circle_center <G.76>`\ (:g:`( A B C ) <g1:( A B C )>`) → :g:`F <g1:F>`
+   | **given** :g:`( A B C ) <g1:( A B C )>`
+   | **construct** :g:`F <g1:F>` is the center of :g:`( A B C ) <g1:( A B C )>`
+
 .. picture:: g1.svg
    :alt: Proposition 1
-
-.. enunciation::
-
-   PORISM. From this it is manifest that, if in a circle a straight line cut a straight line into two equal parts and at right angles, the centre of the circle is on the cutting straight line.
 
 .. step:: given
 
@@ -47,17 +49,13 @@ G.76
 
    From :g:`D <g1:D>` let :g:`/ D C / <g1:/ D C />` be drawn at right angles to :g:`/ A B / <g1:/ A B />` and let it be drawn through to :g:`E <g1:E>`
 
-.. step:: assert
+.. step:: construct
 
-   Let :g:`/ C E / <g1:/ C E />` be :eq:`bisected <g1:/ C F / = g1:/ F E />` at :g:`F <g1:F>`
-
-.. step:: assert
-
-   For suppose it is not, but, if possible, let :g:`G <g1:G>` be the center
+   :fn:`bisect_segment <G.17>`\ (:g:`/ C E / <g1:/ C E />`) → :g:`F <g1:F>` (:eq:`bisected <g1:/ C F / = g1:/ F E />`)
 
 .. step:: construct
 
-   **segment** :g:`/ G A / <g1:/ G A />`, :g:`/ G D / <g1:/ G D />`, :g:`/ G B / <g1:/ G B />`
+   Suppose it is not, but, if possible, let :g:`G <g1:G>` be the center, and let :g:`/ G A / <g1:/ G A />`, :g:`/ G D / <g1:/ G D />`, :g:`/ G B / <g1:/ G B />` be joined.
 
 .. step:: assert
 
@@ -67,11 +65,11 @@ G.76
 
    And the base :g:`/ G A / <g1:/ G A />` is :eq:`equal <g1:/ G A / = g1:/ G B />` to the base :g:`/ G B / <g1:/ G B />`, for they are radii
 
-.. step:: assert [G.15] <G.15>
+.. step:: assert ∵ sss_congruence <G.15>
 
    Therefore :g:`< A D G ) <g1:< A D G )>` is :eq:`equal <g1:< A D G ) = g1:< G D B )>` to :g:`< G D B ) <g1:< G D B )>`.
 
-.. step:: assert [G.18] <G.18>
+.. step:: assert ∵ right_angle_perpendicular <G.18>
 
    But, when a straight line set up on a straight line makes the adjacent angles equal to one another, each of the equal angles is right
 
@@ -95,9 +93,13 @@ G.76
 
    Similarly we can prove that neither is any other point except :g:`F <g1:F>`.
 
-.. step:: conclude
+.. step:: conclude ∵ circle_radii <G.2>
 
    Therefore :g:`F <g1:F>` is the center of :g:`( A B C ) <g1:( A B C )>`.
+
+.. enunciation::
+
+   PORISM. From this it is manifest that, if in a circle a straight line cut a straight line into two equal parts and at right angles, the centre of the circle is on the cutting straight line.
 
 Dependency Graph
 ----------------

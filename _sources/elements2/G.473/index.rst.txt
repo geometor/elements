@@ -24,6 +24,12 @@ G.473
 
    Describe on a given segment a parallelepipedal solid similar and similarly situated to a given parallelepipedal solid.
 
+.. signature:: problem
+
+   | :fn:`describe_segment_parallelepipedal <G.473>`\ (:g:`/ A B / <g1:/ A B />`, :g:`< C D > <g1:< C D >>`) → :g:`< A L > <g1:< A L >>`
+   | **given** :g:`/ A B / <g1:/ A B />` and :g:`< C D > <g1:< C D >>` the given parallelepipedal solid
+   | **construct** the whole solid :g:`< C D > <g1:< C D >>` is similar to the whole solid :g:`< A L > <g1:< A L >>`
+
 .. picture:: g1.svg
    :alt: Proposition 27
 
@@ -33,13 +39,13 @@ G.473
 
 .. step:: construct
 
-   For on :g:`/ A B / <g1:/ A B />` and at :g:`A <g1:A>` on it let the solid angle, contained by :g:`< B A H ) <g1:< B A H )>`, :g:`< H A K ) <g1:< H A K )>`, :g:`< K A B ) <g1:< K A B )>`, be constructed equal to the solid angle at :g:`C <g1:C>`, so that :g:`< B A H ) <g1:< B A H )>` is :eq:`equal <g1:< B A H ) = g1:< E C F )>` to :g:`< E C F ) <g1:< E C F )>`, :g:`< B A K ) <g1:< B A K )>` :eq:`equal <g1:< B A K ) = g1:< E C G ); g1:< K A H ) = g1:< G C F )>` to :g:`< E C G ) <g1:< E C G )>`, and :g:`< K A H ) <g1:< K A H )>` to :g:`< G C F ) <g1:< G C F )>`
+   On :g:`/ A B / <g1:/ A B />` and at :g:`A <g1:A>` on it let the solid angle, contained by :g:`< B A H ) <g1:< B A H )>`, :g:`< H A K ) <g1:< H A K )>`, :g:`< K A B ) <g1:< K A B )>`, be constructed equal to the solid angle at :g:`C <g1:C>`, so that :g:`< B A H ) <g1:< B A H )>` is :eq:`equal <g1:< B A H ) = g1:< E C F )>` to :g:`< E C F ) <g1:< E C F )>`, :g:`< B A K ) <g1:< B A K )>` :eq:`equal <g1:< B A K ) = g1:< E C G ); g1:< K A H ) = g1:< G C F )>` to :g:`< E C G ) <g1:< E C G )>`, and :g:`< K A H ) <g1:< K A H )>` to :g:`< G C F ) <g1:< G C F )>`
 
-.. step:: assert [G.175] <G.175>
+.. step:: assert ∵ fourth_proportional <G.175>
 
    And let it be contrived that, as :g:`/ E C / <g1:/ E C />` is to :g:`/ C G / <g1:/ C G />`, so is :g:`/ B A / <g1:/ B A />` to :g:`/ A K / <g1:/ A K />`, and, as :g:`/ G C / <g1:/ G C />` is to :g:`/ C F / <g1:/ C F />`, so is :g:`/ K A / <g1:/ K A />` to :g:`/ A H / <g1:/ A H />`.
 
-.. step:: assert [G.159] <G.159>
+.. step:: assert ∵ there_number_magnitudes_v_22 <G.159>
 
    Therefore also, :term:`*ex aequali* <ex-aequali>`, as :g:`/ E C / <g1:/ E C />` is to :g:`/ C F / <g1:/ C F />`, so is :g:`/ B A / <g1:/ B A />` to :g:`/ A H / <g1:/ A H />`.
 
@@ -63,7 +69,7 @@ G.473
 
    The former three are both equal and similar to the three opposite parallelograms, and the latter three are both equal and similar to the three opposite parallelograms ;
 
-.. step:: conclude [G.472] <G.472>
+.. step:: conclude ∵ similar_solid_figures_def <G.472>
 
    Therefore the whole solid :g:`< C D > <g1:< C D >>` is similar to the whole solid :g:`< A L > <g1:< A L >>`.
 

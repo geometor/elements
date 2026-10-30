@@ -24,44 +24,54 @@ G.521
 
    Construct an octahedron and comprehend it in a sphere, as in the preceding case; and to prove that the square on the diameter of the sphere is double of the square on the side of the octahedron.
 
+.. signature:: problem
+
+   | :fn:`construct_octahedron_comprehend <G.521>`\ (:g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`)
+   | **given** the diameter :g:`/ A B / <g1:/ A B />` of the given sphere be set out, let it be :eq:`bisected <g1:/ A C / = g1:/ C B />` at :g:`C <g1:C>`
+   | **construct** the octahedron has been comprehended in the given sphere, and it has been demonstrated at the same time that the square on the diameter of the sphere is double of the square on the side of the octahedron
+
 .. picture:: g1.svg
    :alt: Proposition 14 Diagram
 
 .. step:: given
 
-   the diameter :g:`/ A B / <g1:/ A B />` of the given sphere be set out
-
-.. step:: assert
-
-   Let it be :eq:`bisected <g1:/ A C / = g1:/ C B />` at :g:`C <g1:C>`
+   the diameter :g:`/ A B / <g1:/ A B />` of the given sphere be set out, let it be :eq:`bisected <g1:/ A C / = g1:/ C B />` at :g:`C <g1:C>`
 
 .. step:: construct
 
-   **segment** the semicircle :g:`( A D B ) <g1:( A D B )>` be described on :g:`/ A B / <g1:/ A B />`, let :g:`/ C D / <g1:/ C D />` be drawn from :g:`C <g1:C>` at right angles to :g:`/ A B / <g1:/ A B />`, let :g:`/ D B / <g1:/ D B />`
-
-.. step:: construct [G.455] <G.455>
-
-   Let the square :g:`< E F G H > <g1:< E F G H >>`, having each of its sides :eq:`equal <g1:/ E F / = g1:/ F G / = g1:/ G H / = g1:/ H E / = g1:/ D B />` to :g:`/ D B / <g1:/ D B />`, be set out, let :g:`/ H F / <g1:/ H F />`, :g:`/ E G / <g1:/ E G />` be joined, from :g:`K <g1:K>` let :g:`/ K L / <g1:/ K L />` be set up at right angles to the plane of the square :g:`< E F G H > <g1:< E F G H >>`
-
-.. step:: assert
-
-   Let it be carried through to the other side of the plane, as :g:`/ K M / <g1:/ K M />`
-
-.. step:: assert
-
-   From :g:`/ K L / <g1:/ K L />`, :g:`/ K M / <g1:/ K M />` let :g:`/ K L / <g1:/ K L />`, :g:`/ K M / <g1:/ K M />` be respectively cut off :eq:`equal <g1:/ K L / = g1:/ K M / = g1:/ E K / = g1:/ F K / = g1:/ G K / = g1:/ H K />` to one of :g:`/ E K / <g1:/ E K />`, :g:`/ F K / <g1:/ F K />`, :g:`/ G K / <g1:/ G K />`, :g:`/ H K / <g1:/ H K />`
+   Let the semicircle :g:`( A D B ) <g1:( A D B )>` be described on :g:`/ A B / <g1:/ A B />`
 
 .. step:: construct
 
-   **segment** :g:`/ L E / <g1:/ L E />`, :g:`/ L F / <g1:/ L F />`, :g:`/ L G / <g1:/ L G />`, :g:`/ L H / <g1:/ L H />`, :g:`/ M E / <g1:/ M E />`, :g:`/ M F / <g1:/ M F />`, :g:`/ M G / <g1:/ M G />`, :g:`/ M H / <g1:/ M H />`
+   :fn:`perpendicular_at <G.19>`\ (:g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`) → :g:`/ C D / <g1:/ C D />`
 
-.. step:: assert [G.60] <G.60>
+.. step:: construct
+
+   :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`B <g1:B>`) → :g:`/ D B / <g1:/ D B />`
+
+.. step:: construct
+
+   :fn:`segment <G.3>`\ () → :g:`< E F G H > <g1:< E F G H >>`, :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`B <g1:B>`) → :g:`/ D B / <g1:/ D B />`, :fn:`segment <G.3>`\ (:g:`H <g1:H>`, :g:`F <g1:F>`) → :g:`/ H F / <g1:/ H F />`, :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`G <g1:G>`) → :g:`/ E G / <g1:/ E G />`
+
+.. step:: construct
+
+   :fn:`set_straight_line <G.455>`: From :g:`K <g1:K>` let :g:`/ K L / <g1:/ K L />` be set up at right angles to the plane of the square :g:`< E F G H > <g1:< E F G H >>`, and let it be carried through to the other side of the plane, as :g:`/ K M / <g1:/ K M />`
+
+.. step:: construct
+
+   From :g:`/ K L / <g1:/ K L />`, :g:`/ K M / <g1:/ K M />` let :g:`/ K L / <g1:/ K L />`, :g:`/ K M / <g1:/ K M />` be respectively cut off :eq:`equal <g1:/ K L / = g1:/ K M / = g1:/ E K / = g1:/ F K / = g1:/ G K / = g1:/ H K />` to one of :g:`/ E K / <g1:/ E K />`, :g:`/ F K / <g1:/ F K />`, :g:`/ G K / <g1:/ G K />`, :g:`/ H K / <g1:/ H K />`, and let :g:`/ L E / <g1:/ L E />`, :g:`/ L F / <g1:/ L F />`, :g:`/ L G / <g1:/ L G />`, :g:`/ L H / <g1:/ L H />`, :g:`/ M E / <g1:/ M E />`, :g:`/ M F / <g1:/ M F />`, :g:`/ M G / <g1:/ M G />`, :g:`/ M H / <g1:/ M H />` be joined.
+
+.. step:: assert ∵ pythagorean_theorem <G.60>
 
    Since :g:`/ K E / <g1:/ K E />` is :eq:`equal <g1:/ K E / = g1:/ K H />` to :g:`/ K H / <g1:/ K H />`, and :g:`< E K H ) <g1:< E K H )>` is right, therefore the square on :g:`/ H E / <g1:/ H E />` is double of the square on :g:`/ E K / <g1:/ E K />`.
 
-.. step:: assert [G.60] <G.60>
+.. step:: assert ∵ pythagorean_theorem <G.60>
 
-   Since :g:`/ L K / <g1:/ L K />` is :eq:`equal <g1:/ L K / = g1:/ K E />` to :g:`/ K E / <g1:/ K E />`, and :g:`< L K E ) <g1:< L K E )>` is right, therefore the square on :g:`/ E L / <g1:/ E L />` is double of the square on :g:`/ E K / <g1:/ E K />`. But the square on :g:`/ H E / <g1:/ H E />` was also proved double of the square on :g:`/ E K / <g1:/ E K />`
+   Since :g:`/ L K / <g1:/ L K />` is :eq:`equal <g1:/ L K / = g1:/ K E />` to :g:`/ K E / <g1:/ K E />`, and :g:`< L K E ) <g1:< L K E )>` is right, therefore the square on :g:`/ E L / <g1:/ E L />` is double of the square on :g:`/ E K / <g1:/ E K />`
+
+.. step:: assert
+
+   The square on :g:`/ H E / <g1:/ H E />` was also proved double of the square on :g:`/ E K / <g1:/ E K />`
 
 .. step:: assert
 
@@ -73,7 +83,7 @@ G.521
 
 .. step:: assert
 
-   For the same reason :g:`/ L H / <g1:/ L H />` is also :eq:`equal <g1:/ L H / = g1:/ H E />` to :g:`/ H E / <g1:/ H E />`
+   The same reason :g:`/ L H / <g1:/ L H />` is also :eq:`equal <g1:/ L H / = g1:/ H E />` to :g:`/ H E / <g1:/ H E />`
 
 .. step:: assert
 
@@ -103,11 +113,11 @@ G.521
 
    I say next that it is also comprehended in the given sphere.
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    Since :g:`/ L K / <g1:/ L K />` is :eq:`equal <g1:/ L K / = g1:/ K M />` to :g:`/ K M / <g1:/ K M />`, while :g:`/ K E / <g1:/ K E />` is common, and they contain right angles, therefore the base :g:`/ L E / <g1:/ L E />` is :eq:`equal <g1:/ L E / = g1:/ E M />` to the base :g:`/ E M / <g1:/ E M />`.
 
-.. step:: assert [G.110, G.60] <G.110, G.60>
+.. step:: assert ∵ thales_semicircle_theorem, pythagorean_theorem <G.110, G.60>
 
    And, since :g:`< L E M ) <g1:< L E M )>` is right, for it is in a semicircle, therefore the square on :g:`/ L M / <g1:/ L M />` is double of the square on :g:`/ L E / <g1:/ L E />`.
 

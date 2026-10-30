@@ -24,12 +24,21 @@ G.208
 
    If a number be a part of a number, and another be the same part of another, alternately also, whatever part or parts the first is of the third, the same part, or the same parts, will the second also be of the fourth.
 
+.. signature:: theorem
+
+   | :fn:`number_part_number_vii_9 <G.208>`\ ()
+   | **prove** whatever part or parts :g:`A <g1:A>` is of :g:`D <g1:D>`, the same part or the same parts is :g:`/ B C / <g1:/ B C />` of :g:`/ E F / <g1:/ E F />` also
+
 .. picture:: g1.svg
    :alt: Book VII, Proposition 9
 
 .. step:: assert
 
-   For let the number :g:`A <g1:A>` be a part of the number :g:`/ B C / <g1:/ B C />`, and another, :g:`D <g1:D>`, the same part of another, :g:`/ E F / <g1:/ E F />`, that :g:`A <g1:A>` is of :g:`/ B C / <g1:/ B C />`
+   Let the number :g:`A <g1:A>` be a part of the number :g:`/ B C / <g1:/ B C />`, and another, :g:`D <g1:D>`, the same part of another, :g:`/ E F / <g1:/ E F />`, that :g:`A <g1:A>` is of :g:`/ B C / <g1:/ B C />`
+
+.. step:: assert
+
+   I say that, alternately also, whatever part or parts :g:`A <g1:A>` is of :g:`D <g1:D>`, the same part or parts is :g:`/ B C / <g1:/ B C />` of :g:`/ E F / <g1:/ E F />` also.
 
 .. step:: assert
 
@@ -55,7 +64,7 @@ G.208
 
    Therefore, whatever part or parts :g:`/ B G / <g1:/ B G />` is of :g:`/ E H / <g1:/ E H />`, the same part or the same parts is :g:`/ G C / <g1:/ G C />` of :g:`/ H F / <g1:/ H F />` also;
 
-.. step:: assert [G.204, G.205] <G.204, G.205>
+.. step:: assert ∵ number_part_number, number_parts_number <G.204, G.205>
 
    So that, in addition, whatever part or parts :g:`/ B G / <g1:/ B G />` is of :g:`/ E H / <g1:/ E H />`, the same part also, or the same parts, is the sum :g:`/ B C / <g1:/ B C />` of the sum :g:`/ E F / <g1:/ E F />`.
 

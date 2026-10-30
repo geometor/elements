@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=156d9f89" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=3d8cc37d" />
   <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -49,7 +49,7 @@
           <a href="../../log/index.html"  >log</a>
         </li>
         <li>
-          <a href="../index.html"  >Elements 2.0 (G Index)</a>
+          <a href="../index.html" class="is-active" aria-selected="true" >Elements 2.0 (G Index)</a>
         </li>
       </ul>
     </nav>
@@ -92,6 +92,13 @@
         <span id="g-134"></span><span id="id1"></span><h1>G.134<a class="headerlink" href="#iv-16" title="Link to this heading">¶</a></h1>
         <p class="rubric"><a class="reference external" href="https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/16/" title="IV.16: Inscribe in a given circle a fifteen-angled figure which shall be both equilateral and equiangular.">IV.16</a></p>
         <div class="enunciation">Inscribe in a given circle a fifteen-angled figure which shall be both equilateral and equiangular.</div>
+        <div class="geom-signature geom-signature-problem">
+        <div class="line-block">
+        <div class="line"><span class="geom-fn geom-fn-def" data-ref-target="G.134" title="G.134: Inscribe in a given circle a fifteen-angled figure which shall be both equilateral and equiangular.">inscribe_pentadecagon_in_circle</span>(<span class="geom-ref" data-ref="g1:( A B C D )" title="( A B C D )">( A B C D )</span>) → <span class="geom-ref" data-ref="g1:E" title="E">E</span></div>
+        <div class="line"><strong>given</strong> <span class="geom-ref" data-ref="g1:( A B C D )" title="( A B C D )">( A B C D )</span></div>
+        <div class="line"><strong>construct</strong> Further, by proofs similar to those in the case of the pentagon, we can both inscribe a circle in the given fifteen-angled figure and circumscribe one about it</div>
+        </div>
+        </div>
         <figure class="photon-picture photon-svg">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -4 294 298" width="294" height="298" class="euclid-graphic" data-graphic-id="g1" data-graphic="g1" data-proposition="IV.16">
           <defs>
@@ -165,10 +172,10 @@
         </svg>
         </figure>
         <div class="geom-step geom-step-given" data-step-kind="given"><span class="geom-step-badge geom-badge-given">given</span> <span class="geom-ref" data-ref="g1:( A B C D )" title="( A B C D )">( A B C D )</span></div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> In <span class="geom-ref" data-ref="g1:( A B C D )" title="( A B C D )">( A B C D )</span> let there be inscribed a side <span class="geom-ref" data-ref="g1:/ A C /" title="/ A C /">/ A C /</span> of the equilateral triangle inscribed in it, and a side <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span> of an equilateral pentagon</div>
+        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> In <span class="geom-ref" data-ref="g1:( A B C D )" title="( A B C D )">( A B C D )</span> let there be inscribed a side <span class="geom-ref" data-ref="g1:/ A C /" title="/ A C /">/ A C /</span> of the equilateral triangle inscribed in it, and a side <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span> of an equilateral pentagon</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore, of the equal segments of which there are fifteen in <span class="geom-ref" data-ref="g1:( A B C D )" title="( A B C D )">( A B C D )</span>, there will be five in the circumference <span class="geom-ref" data-ref="g1:( A B C )" title="( A B C )">( A B C )</span> which is one-third of the circle, and there will be three in the circumference <span class="geom-ref" data-ref="g1:( A B )" title="( A B )">( A B )</span> which is one-fifth of the circle</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore in the remainder <span class="geom-ref" data-ref="g1:( B C )" title="( B C )">( B C )</span> there will be two of the equal segments.</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><a class="justification" href="../G.109/index.html#g-109" data-ref-target="G.109" title="G.109: Bisect a given circumference.">[G.109]</a><span class="geom-step-badge geom-badge-assert">assert</span> Let <span class="geom-ref" data-ref="g1:( B C )" title="( B C )">( B C )</span> be <span class="geom-eq-ref" data-assert-equal="g1:( B E ) = g1:( E C )" title="( B E ) = ( E C )">bisected</span> at <span class="geom-ref" data-ref="g1:E" title="E">E</span></div>
+        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> <a class="geom-fn" href="../G.17/index.html#g-17" data-ref-target="G.17" title="G.17: Bisect a given finite segment.">bisect_segment</a>(<span class="geom-ref" data-ref="g1:( B C )" title="( B C )">( B C )</span>) → <span class="geom-ref" data-ref="g1:E" title="E">E</span> (<span class="geom-eq-ref" data-assert-equal="g1:( B E ) = g1:( E C )" title="( B E ) = ( E C )">bisected</span>)</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore each of the circumferences <span class="geom-ref" data-ref="g1:( B E )" title="( B E )">( B E )</span>, <span class="geom-ref" data-ref="g1:( E C )" title="( E C )">( E C )</span> is a fifteenth of <span class="geom-ref" data-ref="g1:( A B C D )" title="( A B C D )">( A B C D )</span>.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> And, in like manner as in the case of the pentagon, if through the points of division on the circle we draw tangents to the circle, there will be circumscribed about the circle a fifteen-angled figure which is equilateral and equiangular .</div>
         <div class="geom-step geom-step-conclude" data-step-kind="conclude"><span class="geom-step-badge geom-badge-conclude">conclude</span> Further, by proofs similar to those in the case of the pentagon, we can both inscribe a circle in the given fifteen-angled figure and circumscribe one about it.</div>
@@ -489,28 +496,28 @@
   <footer>
     <div class="footer-nav">
       <ul>
-        <li><a href="../../about.html">about</a></li>
-        <li><a href="../../connect.html">connect</a></li>
-        <li><a href="../../glossary.html">glossary</a></li>
-        <li><a href="../../todos/index.html">todos</a></li>
-        <li><a href="../../changelog.html">changelog</a></li>
+        <li><a href="../../about.html"  >about</a></li>
+        <li><a href="../../connect.html"  >connect</a></li>
+        <li><a href="../../glossary.html"  >glossary</a></li>
+        <li><a href="../../todos/index.html"  >todos</a></li>
+        <li><a href="../../changelog.html"  >changelog</a></li>
       </ul>
     </div>
     <hr />
     <div role="contentinfo">
       <p>
-        &copy; Copyright .
+        &copy; Copyright 2026, GEOMETOR.
       </p>
     </div>
   </footer>
 
   <script src="../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+  <script src="../../_static/documentation_options.js?v=d5a15cff"></script>
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
-  <script src="../../_static/js/geometor_interactive.js?v=421e4467"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=4430a5d4"></script>
   <script src="../../_static/js/search_highlight.js"></script>
 
 </body>

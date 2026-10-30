@@ -23,6 +23,10 @@ G.373
 
    And if neither of the terms be commensurable in length with the rational straight line set out, let the whole be called a:term:`**third binomial** <third-binomial>`.
 
+.. signature:: def
+
+   | :fn:`terms_commensurable_length_def <G.373>`
+
 Required for
 ------------
 

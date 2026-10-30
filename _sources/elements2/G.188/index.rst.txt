@@ -24,6 +24,12 @@ G.188
 
    Equiangular parallelograms have to one another the ratio compounded of the ratios of their sides.
 
+.. signature:: theorem
+
+   | :fn:`equiangular_parallelograms_ratio <G.188>`\ (:g:`< A C > <g1:< A C >>`, :g:`< C F > <g1:< C F >>`, :g:`< B C D ) <g1:< B C D )>`, :g:`< E C G ) <g1:< E C G )>`)
+   | **given** :g:`< A C > <g1:< A C >>`, :g:`< C F > <g1:< C F >>` be equiangular parallelograms having :g:`< B C D ) <g1:< B C D )>` :eq:`equal <g1:< B C D ) = g1:< E C G )>` to :g:`< E C G ) <g1:< E C G )>`
+   | **prove** the parallelogram :g:`< A C > <g1:< A C >>` has to the parallelogram :g:`< C F > <g1:< C F >>` the ratio compounded of the ratios of the sides
+
 .. picture:: g1.svg
    :alt: Proposition 23 Diagram
 
@@ -33,7 +39,7 @@ G.188
 
 .. step:: construct
 
-   For let them be placed so that :g:`/ B C / <g1:/ B C />` is in a straight line with :g:`/ C G / <g1:/ C G />`
+   Let them be placed so that :g:`/ B C / <g1:/ B C />` is in a straight line with :g:`/ C G / <g1:/ C G />`
 
 .. step:: assert
 
@@ -45,17 +51,13 @@ G.188
 
 .. step:: assert
 
-   Let a straight line :g:`K <g1:K>` be set out
-
-.. step:: assert
-
-   Let it be contrived that,
+   Let a straight line :g:`K <g1:K>` be set out, and let it be contrived that,
 
 .. step:: assert
 
    As :g:`/ B C / <g1:/ B C />` is to :g:`/ C G / <g1:/ C G />`, so is :g:`K <g1:K>` to :g:`L <g1:L>`,
 
-.. step:: assert [G.175] <G.175>
+.. step:: assert ∵ fourth_proportional <G.175>
 
    And, as :g:`/ D C / <g1:/ D C />` is to :g:`/ C E / <g1:/ C E />`, so is :g:`L <g1:L>` to :g:`M <g1:M>`.
 
@@ -71,19 +73,19 @@ G.188
 
    So that :g:`K <g1:K>` has also to :g:`M <g1:M>` the ratio compounded of the ratios of the sides.
 
-.. step:: assert [G.163] <G.163>
+.. step:: assert ∵ triangles_parallelograms_height <G.163>
 
    Now since, as :g:`/ B C / <g1:/ B C />` is to :g:`/ C G / <g1:/ C G />`, so is the parallelogram :g:`< A C > <g1:< A C >>` to the parallelogram :g:`< C H > <g1:< C H >>`, while, as :g:`/ B C / <g1:/ B C />` is to :g:`/ C G / <g1:/ C G />`, so is :g:`K <g1:K>` to :g:`L <g1:L>`.
 
-.. step:: assert [G.148] <G.148>
+.. step:: assert ∵ ratios_ratio <G.148>
 
    Therefore also, as :g:`K <g1:K>` is to :g:`L <g1:L>`, so is :g:`< A C > <g1:< A C >>` to :g:`< C H > <g1:< C H >>`.
 
-.. step:: assert [G.163] <G.163>
+.. step:: assert ∵ triangles_parallelograms_height <G.163>
 
    Since, as :g:`/ D C / <g1:/ D C />` is to :g:`/ C E / <g1:/ C E />`, so is the parallelogram :g:`< C H > <g1:< C H >>` to :g:`< C F > <g1:< C F >>`, while, as :g:`/ D C / <g1:/ D C />` is to :g:`/ C E / <g1:/ C E />`, so is :g:`L <g1:L>` to :g:`M <g1:M>`.
 
-.. step:: assert [G.148] <G.148>
+.. step:: assert ∵ ratios_ratio <G.148>
 
    Therefore also, as :g:`L <g1:L>` is to :g:`M <g1:M>`, so is the parallelogram :g:`< C H > <g1:< C H >>` to the parallelogram :g:`< C F > <g1:< C F >>`.
 

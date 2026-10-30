@@ -24,34 +24,27 @@ G.256
 
    If a cube number measure a cube number, the side will also measure the side; and, if the side measure the side, the cube will also measure the cube.
 
+.. signature:: theorem
+
+   | :fn:`cube_number_measure <G.256>`\ ()
+   | **prove** :g:`C <g1:C>` measures :g:`D <g1:D>`; :g:`A <g1:A>` will also measure :g:`B <g1:B>`
+
 .. picture:: g1.svg
    :alt: Book VIII, Proposition 15
 
 .. step:: assert
 
-   For let the cube number :g:`A <g1:A>` measure the cube :g:`B <g1:B>`
+   Let the cube number :g:`A <g1:A>` measure the cube :g:`B <g1:B>`, and let :g:`C <g1:C>` be the side of :g:`A <g1:A>` and :g:`D <g1:D>` of :g:`B <g1:B>`
 
 .. step:: assert
 
-   Let :g:`C <g1:C>` be the side of :g:`A <g1:A>` and :g:`D <g1:D>` of :g:`B <g1:B>`
+   Let :g:`C <g1:C>` by multiplying itself make :g:`E <g1:E>`, and let :g:`D <g1:D>` by multiplying itself make :g:`G <g1:G>`
 
 .. step:: assert
 
-   For let :g:`C <g1:C>` by multiplying itself make :g:`E <g1:E>`
+   Further, let :g:`C <g1:C>` by multiplying :g:`D <g1:D>` make :g:`F <g1:F>`, and let :g:`C <g1:C>`, :g:`D <g1:D>` by multiplying :g:`F <g1:F>` make :g:`H <g1:H>`, :g:`K <g1:K>` respectively.
 
-.. step:: assert
-
-   Let :g:`D <g1:D>` by multiplying itself make :g:`G <g1:G>`
-
-.. step:: assert
-
-   Further, let :g:`C <g1:C>` by multiplying :g:`D <g1:D>` make :g:`F <g1:F>`
-
-.. step:: assert
-
-   Let :g:`C <g1:C>`, :g:`D <g1:D>` by multiplying :g:`F <g1:F>` make :g:`H <g1:H>`, :g:`K <g1:K>` respectively.
-
-.. step:: assert [G.251, G.253] <G.251, G.253>
+.. step:: assert ∵ square_numbers_there, cube_numbers_there <G.251, G.253>
 
    Now it is manifest that :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>` and :g:`A <g1:A>`, :g:`H <g1:H>`, :g:`K <g1:K>`, :g:`B <g1:B>` are continuously proportional in the ratio of :g:`C <g1:C>` to :g:`D <g1:D>`.
 
@@ -59,7 +52,7 @@ G.256
 
    And, since :g:`A <g1:A>`, :g:`H <g1:H>`, :g:`K <g1:K>`, :g:`B <g1:B>` are continuously proportional, and :g:`A <g1:A>` measures :g:`B <g1:B>`,
 
-.. step:: assert [G.247] <G.247>
+.. step:: assert ∵ there_many_numbers_viii_7 <G.247>
 
    Therefore it also measures :g:`H <g1:H>`.
 
@@ -67,7 +60,7 @@ G.256
 
    And, as :g:`A <g1:A>` is to :g:`H <g1:H>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`;
 
-.. step:: assert [G.210] <G.210>
+.. step:: assert ∵ numbers_proportional_multiple_def <G.210>
 
    Therefore :g:`C <g1:C>` also measures :g:`D <g1:D>`.
 
@@ -83,7 +76,7 @@ G.256
 
    And, since :g:`C <g1:C>` measures :g:`D <g1:D>`, and, as :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`A <g1:A>` to :g:`H <g1:H>`,
 
-.. step:: conclude [G.210] <G.210>
+.. step:: conclude ∵ numbers_proportional_multiple_def <G.210>
 
    Therefore :g:`A <g1:A>` also measures :g:`H <g1:H>`, so that :g:`A <g1:A>` measures :g:`B <g1:B>` also.
 

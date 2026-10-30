@@ -24,18 +24,27 @@ G.218
 
    If two numbers by multiplying any number make certain numbers, the numbers so produced will have the same ratio as the multipliers.
 
+.. signature:: theorem
+
+   | :fn:`numbers_multiplying_number <G.218>`\ ()
+   | **prove** as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`D <g1:D>` to :g:`E <g1:E>`
+
 .. picture:: g1.svg
    :alt: Book VII, Proposition 18
 
 .. step:: assert
 
-   For let two numbers :g:`A <g1:A>`, :g:`B <g1:B>` by multiplying any number :g:`C <g1:C>` make :g:`D <g1:D>`, :g:`E <g1:E>`
+   Let two numbers :g:`A <g1:A>`, :g:`B <g1:B>` by multiplying any number :g:`C <g1:C>` make :g:`D <g1:D>`, :g:`E <g1:E>`
+
+.. step:: assert
+
+   I say that, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`D <g1:D>` to :g:`E <g1:E>`.
 
 .. step:: assert
 
    Since :g:`A <g1:A>` by multiplying :g:`C <g1:C>` has made :g:`D <g1:D>`,
 
-.. step:: assert [G.216] <G.216>
+.. step:: assert ∵ numbers_multiplying_make <G.216>
 
    Therefore also :g:`C <g1:C>` by multiplying :g:`A <g1:A>` has made :g:`D <g1:D>`.
 
@@ -47,7 +56,7 @@ G.218
 
    Therefore the number :g:`C <g1:C>` by multiplying the two numbers :g:`A <g1:A>`, :g:`B <g1:B>` has made :g:`D <g1:D>`, :g:`E <g1:E>`.
 
-.. step:: conclude [G.217] <G.217>
+.. step:: conclude ∵ number_multiplying_numbers <G.217>
 
    Therefore, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`D <g1:D>` to :g:`E <g1:E>`.
 

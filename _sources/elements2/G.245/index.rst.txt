@@ -24,20 +24,22 @@ G.245
 
    Plane numbers have to one another the ratio compounded of the ratios of their sides.
 
+.. signature:: theorem
+
+   | :fn:`plane_numbers_ratio <G.245>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`)
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>` be plane numbers, let the numbers :g:`C <g1:C>`, :g:`D <g1:D>` be the sides of :g:`A <g1:A>`, :g:`E <g1:E>`, :g:`F <g1:F>` of :g:`B <g1:B>`
+   | **prove** :g:`A <g1:A>` has to :g:`B <g1:B>` the ratio compounded of the ratios of the sides
+
 .. picture:: g1.svg
    :alt: Book VIII Proposition 5
 
 .. step:: given
 
-   :g:`A <g1:A>`, :g:`B <g1:B>` be plane numbers
+   :g:`A <g1:A>`, :g:`B <g1:B>` be plane numbers, let the numbers :g:`C <g1:C>`, :g:`D <g1:D>` be the sides of :g:`A <g1:A>`, :g:`E <g1:E>`, :g:`F <g1:F>` of :g:`B <g1:B>`
 
-.. step:: assert
+.. step:: construct
 
-   Let the numbers :g:`C <g1:C>`, :g:`D <g1:D>` be the sides of :g:`A <g1:A>`, and :g:`E <g1:E>`, :g:`F <g1:F>` of :g:`B <g1:B>`
-
-.. step:: construct [G.244] <G.244>
-
-   The ratios being given which :g:`C <g1:C>` has to :g:`E <g1:E>` and :g:`D <g1:D>` to :g:`F <g1:F>`, let the least numbers :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`K <g1:K>` that are continuously in the ratios :g:`C <g1:C>` : :g:`E <g1:E>`, :g:`D <g1:D>` : :g:`F <g1:F>` be taken, so that, as :g:`C <g1:C>` is to :g:`E <g1:E>`, so is :g:`G <g1:G>` to :g:`H <g1:H>`, and, as :g:`D <g1:D>` is to :g:`F <g1:F>`, so is :g:`H <g1:H>` to :g:`K <g1:K>`.
+   :fn:`many_ratios_please <G.244>`: The ratios being given which :g:`C <g1:C>` has to :g:`E <g1:E>` and :g:`D <g1:D>` to :g:`F <g1:F>`, let the least numbers :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`K <g1:K>` that are continuously in the ratios :g:`C <g1:C>` : :g:`E <g1:E>`, :g:`D <g1:D>` : :g:`F <g1:F>` be taken, so that, as :g:`C <g1:C>` is to :g:`E <g1:E>`, so is :g:`G <g1:G>` to :g:`H <g1:H>`, and, as :g:`D <g1:D>` is to :g:`F <g1:F>`, so is :g:`H <g1:H>` to :g:`K <g1:K>`.
 
 .. step:: assert
 
@@ -47,7 +49,7 @@ G.245
 
    Since :g:`D <g1:D>` by multiplying :g:`C <g1:C>` has made :g:`A <g1:A>`, and by multiplying :g:`E <g1:E>` has made :g:`L <g1:L>`,
 
-.. step:: assert [G.217] <G.217>
+.. step:: assert ∵ number_multiplying_numbers <G.217>
 
    Therefore, as :g:`C <g1:C>` is to :g:`E <g1:E>`, so is :g:`A <g1:A>` to :g:`L <g1:L>`.
 
@@ -63,7 +65,7 @@ G.245
 
    Since :g:`E <g1:E>` by multiplying :g:`D <g1:D>` has made :g:`L <g1:L>`, and further by multiplying :g:`F <g1:F>` has made :g:`B <g1:B>`,
 
-.. step:: assert [G.217] <G.217>
+.. step:: assert ∵ number_multiplying_numbers <G.217>
 
    Therefore, as :g:`D <g1:D>` is to :g:`F <g1:F>`, so is :g:`L <g1:L>` to :g:`B <g1:B>`.
 
@@ -79,7 +81,7 @@ G.245
 
    It was also proved that, as :g:`G <g1:G>` is to :g:`H <g1:H>`, so is :g:`A <g1:A>` to :g:`L <g1:L>`;
 
-.. step:: assert [G.214] <G.214>
+.. step:: assert ∵ there_many_numbers_vii_14 <G.214>
 
    Therefore, :term:`*ex aequali* <ex-aequali>`, as :g:`G <g1:G>` is to :g:`K <g1:K>`, so is :g:`A <g1:A>` to :g:`B <g1:B>`.
 

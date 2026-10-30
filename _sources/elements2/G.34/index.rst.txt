@@ -24,6 +24,12 @@ G.34
 
    Construct on a given line at a given point an angle equal to a given angle.
 
+.. signature:: problem
+
+   | :fn:`copy_angle <G.34>`\ (:g:`/ A B / <g1:/ A B />`, :g:`A <g1:A>`, :g:`< D C E ) <g1:< D C E )>`) → :g:`< F A G ) <g1:< F A G )>`
+   | **given** :g:`/ A B / <g1:/ A B />` , :g:`A <g1:A>` the point on it, :g:`< D C E ) <g1:< D C E )>`
+   | **construct** on :g:`/ A B / <g1:/ A B />`, and at :g:`A <g1:A>` on it, :g:`< F A G ) <g1:< F A G )>` has been constructed :eq:`equal <g1:< F A G ) = g1:< D C E )>` to :g:`< D C E ) <g1:< D C E )>`
+
 .. picture:: g1.svg
    :alt: Folio 0308 Figure 1 - Proposition 23
 
@@ -33,13 +39,13 @@ G.34
 
 .. step:: construct
 
-   On :g:`[ C D ] <g1:[ C D ]>`, :g:`[ C E ] <g1:[ C E ]>` respectively let :g:`D <g1:D>`, :g:`E <g1:E>` be taken at random
+   **point**\ (:g:`[ C D ] <g1:[ C D ]>`, :g:`[ C E ] <g1:[ C E ]>`) → :g:`D <g1:D>`, :g:`E <g1:E>`
 
-.. step:: construct [G.33] <G.33>
+.. step:: construct
 
-   Let :g:`/ D E / <g1:/ D E />` be joined, and out of three straight lines which are equal to :g:`/ C D / <g1:/ C D />`, :g:`/ D E / <g1:/ D E />`, :g:`/ C E / <g1:/ C E />` let :g:`< A F G > <g1:< A F G >>` be constructed in such a way that :g:`/ C D / <g1:/ C D />` is :eq:`equal <g1:/ C D / = g1:/ A F /; g1:/ C E / = g1:/ A G /; g1:/ D E / = g1:/ F G />` to :g:`/ A F / <g1:/ A F />`, :g:`/ C E / <g1:/ C E />` to :g:`/ A G / <g1:/ A G />`, and further :g:`/ D E / <g1:/ D E />` to :g:`/ F G / <g1:/ F G />`.
+   :fn:`triangle_from_segments <G.33>`: Let :g:`/ D E / <g1:/ D E />` be joined, and out of three straight lines which are equal to :g:`/ C D / <g1:/ C D />`, :g:`/ D E / <g1:/ D E />`, :g:`/ C E / <g1:/ C E />` let :g:`< A F G > <g1:< A F G >>` be constructed in such a way that :g:`/ C D / <g1:/ C D />` is :eq:`equal <g1:/ C D / = g1:/ A F /; g1:/ C E / = g1:/ A G /; g1:/ D E / = g1:/ F G />` to :g:`/ A F / <g1:/ A F />`, :g:`/ C E / <g1:/ C E />` to :g:`/ A G / <g1:/ A G />`, and further :g:`/ D E / <g1:/ D E />` to :g:`/ F G / <g1:/ F G />`.
 
-.. step:: assert [G.15] <G.15>
+.. step:: assert ∵ sss_congruence <G.15>
 
    Since the two sides :g:`/ D C / <g1:/ D C />`, :g:`/ C E / <g1:/ C E />` are :eq:`equal <g1:/ D C / = g1:/ F A /; g1:/ C E / = g1:/ A G />` to the two sides :g:`/ F A / <g1:/ F A />`, :g:`/ A G / <g1:/ A G />` respectively, and the base :g:`/ D E / <g1:/ D E />` is :eq:`equal <g1:/ D E / = g1:/ F G />` to the base :g:`/ F G / <g1:/ F G />` → :g:`< D C E ) <g1:< D C E )>` is :eq:`equal <g1:< D C E ) = g1:< F A G )>` to :g:`< F A G ) <g1:< F A G )>`.
 

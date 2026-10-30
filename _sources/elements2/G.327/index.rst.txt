@@ -10,7 +10,7 @@
 :category: theorem, proof, incommensurables, magnitudes
 :tags: book-x, point, separando, ex-aequali, square, proportion, commensurable
 :dependencies: G.154, G.159, G.187, G.323
-:excerpt: If four straight lines be proportional, and the square on the first be greater than the square on the second by the square on a straight line commensurable with the first, the square on the third is greater than the square on the fourth by the square on a straight line commensurable with the third.
+:excerpt: If four straight lines be proportional, and the square on the first be greater than the square on the second by the square on a straight line commensurable with the first, the square on the third is greater than the square on the fourth by the square on a straight line commensurable with the third. And, if the square on the first be greater than the square on the second by the square on a straight line incommensurable with the first, the square on the third is greater than the square on the fourth by the square on a straight line incommensurable with the third.
 
 .. _G.327:
 .. _X.14:
@@ -22,11 +22,13 @@ G.327
 
 .. enunciation::
 
-   If four straight lines be proportional, and the square on the first be greater than the square on the second by the square on a straight line commensurable with the first, the square on the third is greater than the square on the fourth by the square on a straight line commensurable with the third.
+   If four straight lines be proportional, and the square on the first be greater than the square on the second by the square on a straight line commensurable with the first, the square on the third is greater than the square on the fourth by the square on a straight line commensurable with the third. And, if the square on the first be greater than the square on the second by the square on a straight line incommensurable with the first, the square on the third is greater than the square on the fourth by the square on a straight line incommensurable with the third.
 
-.. enunciation::
+.. signature:: theorem
 
-   And, if the square on the first be greater than the square on the second by the square on a straight line incommensurable with the first, the square on the third is greater than the square on the fourth by the square on a straight line incommensurable with the third.
+   | :fn:`straight_lines_proportional_x_14 <G.327>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`)
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` be four straight lines in proportion, so that, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`
+   | **prove** if :g:`A <g1:A>` is commensurable with :g:`E <g1:E>`, :g:`C <g1:C>` is also commensurable with :g:`F <g1:F>`, and, if :g:`A <g1:A>` is incommensurable with :g:`E <g1:E>`, :g:`C <g1:C>` is also incommensurable with :g:`F <g1:F>`
 
 .. picture:: g1.svg
    :alt: Proposition 14 Diagram
@@ -37,17 +39,17 @@ G.327
 
 .. step:: assert
 
-   And let the square on :g:`A <g1:A>` be greater than the square on :g:`B <g1:B>` by the square on :g:`E <g1:E>`
+   And let the square on :g:`A <g1:A>` be greater than the square on :g:`B <g1:B>` by the square on :g:`E <g1:E>`, and let the square on :g:`C <g1:C>` be greater than the square on :g:`D <g1:D>` by the square on :g:`F <g1:F>`
 
 .. step:: assert
 
-   Let the square on :g:`C <g1:C>` be greater than the square on :g:`D <g1:D>` by the square on :g:`F <g1:F>`
+   I say that, if :g:`A <g1:A>` is commensurable with :g:`E <g1:E>`, :g:`C <g1:C>` is also commensurable with :g:`F <g1:F>`, and, if :g:`A <g1:A>` is incommensurable with :g:`E <g1:E>`, :g:`C <g1:C>` is also incommensurable with :g:`F <g1:F>`.
 
 .. step:: assert
 
    For since, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`,
 
-.. step:: assert [G.187] <G.187>
+.. step:: assert ∵ straight_lines_proportional_vi_22 <G.187>
 
    Therefore also, as the square on :g:`A <g1:A>` is to the square on :g:`B <g1:B>`, so is the square on :g:`C <g1:C>` to the square on :g:`D <g1:D>`.
 
@@ -59,11 +61,11 @@ G.327
 
    Therefore, as the squares on :g:`E <g1:E>`, :g:`B <g1:B>` are to the square on :g:`B <g1:B>`, so are the squares on :g:`D <g1:D>`, :g:`F <g1:F>` to the square on :g:`D <g1:D>`;
 
-.. step:: assert [G.154] <G.154>
+.. step:: assert ∵ magnitudes_proportional_componendo <G.154>
 
    Therefore, :term:`*separando* <separando>`, as the square on :g:`E <g1:E>` is to the square on :g:`B <g1:B>`, so is the square on :g:`F <g1:F>` to the square on :g:`D <g1:D>`.
 
-.. step:: assert [G.187] <G.187>
+.. step:: assert ∵ straight_lines_proportional_vi_22 <G.187>
 
    Therefore also, as :g:`E <g1:E>` is to :g:`B <g1:B>`, so is :g:`F <g1:F>` to :g:`D <g1:D>`; therefore, inversely, as :g:`B <g1:B>` is to :g:`E <g1:E>`, so is :g:`D <g1:D>` to :g:`F <g1:F>`.
 
@@ -71,11 +73,11 @@ G.327
 
    But, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so also is :g:`C <g1:C>` to :g:`D <g1:D>`;
 
-.. step:: assert [G.159] <G.159>
+.. step:: assert ∵ there_number_magnitudes_v_22 <G.159>
 
    Therefore, :term:`*ex aequali* <ex-aequali>`, as :g:`A <g1:A>` is to :g:`E <g1:E>`, so is :g:`C <g1:C>` to :g:`F <g1:F>`.
 
-.. step:: conclude [G.323] <G.323>
+.. step:: conclude ∵ magnitudes_proportional_commensurable <G.323>
 
    Therefore, if :g:`A <g1:A>` is commensurable with :g:`E <g1:E>`, :g:`C <g1:C>` is also commensurable with :g:`F <g1:F>`, and, if :g:`A <g1:A>` is incommensurable with :g:`E <g1:E>`, :g:`C <g1:C>` is also incommensurable with :g:`F <g1:F>`.
 

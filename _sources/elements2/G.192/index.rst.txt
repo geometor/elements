@@ -24,6 +24,12 @@ G.192
 
    Of all the parallelograms applied to the same straight line and deficient by parallelogrammic figures similar and similarly situated to that described on the half of the straight line, that parallelogram is greatest which is applied to the half of the straight line and is similar to the defect.
 
+.. signature:: theorem
+
+   | :fn:`parallelograms_applied_straight <G.192>`\ (:g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`)
+   | **given** :g:`/ A B / <g1:/ A B />` be a straight line and let it be :eq:`bisected <g1:/ A C / = g1:/ C B />` at :g:`C <g1:C>`
+   | **prove** :g:`< A D > <g1:< A D >>` is greater than :g:`< A F > <g1:< A F >>`
+
 .. picture:: g1.svg
    :alt: Proposition 27
 
@@ -37,21 +43,25 @@ G.192
 
 .. step:: assert
 
-   For let there be applied to :g:`/ A B / <g1:/ A B />` the parallelogram :g:`< A F > <g1:< A F >>` deficient by the parallelogrammic figure :g:`< F B > <g1:< F B >>` similar and similarly situated to :g:`< D B > <g1:< D B >>` ;
+   I say that, of all the parallelograms applied to :g:`/ A B / <g1:/ A B />` and deficient by parallelogrammic figures similar and similarly situated to :g:`< D B > <g1:< D B >>`, :g:`< A D > <g1:< A D >>` is greatest.
+
+.. step:: construct
+
+   Let there be applied to :g:`/ A B / <g1:/ A B />` the parallelogram :g:`< A F > <g1:< A F >>` deficient by the parallelogrammic figure :g:`< F B > <g1:< F B >>` similar and similarly situated to :g:`< D B > <g1:< D B >>` ;
 
 .. step:: assert
 
    Since the parallelogram :g:`< D B > <g1:< D B >>` is similar to the parallelogram :g:`< F B > <g1:< F B >>`,
 
-.. step:: assert [G.191] <G.191>
+.. step:: assert ∵ parallelogram_there_taken <G.191>
 
    They are about the same diameter.
 
-.. step:: assert
+.. step:: construct
 
    Let their diameter :g:`/ D B / <g1:/ D B />` be drawn, and let the figure be described.
 
-.. step:: assert [G.56] <G.56>
+.. step:: assert ∵ parallelogram_complements <G.56>
 
    Since :g:`< C F > <g1:< C F >>` is :eq:`equal <g1:< C F > = g1:< F E >>` to :g:`< F E > <g1:< F E >>`, and :g:`< F B > <g1:< F B >>` is common.
 
@@ -59,7 +69,7 @@ G.192
 
    Therefore the whole :g:`< C H > <g1:< C H >>` is :eq:`equal <g1:< C H > = g1:< K E >>` to the whole :g:`< K E > <g1:< K E >>`.
 
-.. step:: assert [G.49] <G.49>
+.. step:: assert ∵ parallelograms_equal_bases <G.49>
 
    :g:`< C H > <g1:< C H >>` is :eq:`equal <g1:< C H > = g1:< C G >>` to :g:`< C G > <g1:< C G >>`, since :g:`/ A C / <g1:/ A C />` is also :eq:`equal <g1:/ A C / = g1:/ C B />` to :g:`/ C B / <g1:/ C B />`.
 
@@ -67,7 +77,7 @@ G.192
 
    Therefore :g:`< C G > <g1:< C G >>` is also :eq:`equal <g1:< C G > = g1:< K E >>` to :g:`< K E > <g1:< K E >>`.
 
-.. step:: assert
+.. step:: construct
 
    Let :g:`< C F > <g1:< C F >>` be added to each ;
 

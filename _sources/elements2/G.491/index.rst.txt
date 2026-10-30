@@ -24,12 +24,22 @@ G.491
 
    Pyramids which are of the same height and have triangular bases are to one another as the bases.
 
+.. signature:: theorem
+
+   | :fn:`pyramids_height_triangular <G.491>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>`, :g:`G <g1:G>`, :g:`H <g1:H>`)
+   | **given** there be pyramids of the same height, of which :g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>` are the bases and :g:`G <g1:G>`, :g:`H <g1:H>` the vertices
+   | **prove** It was proved that neither is it in that ratio to a less solid
+
 .. picture:: g1.svg
    :alt: Proposition 5
 
 .. step:: given
 
    there be pyramids of the same height, of which :g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>` are the bases and :g:`G <g1:G>`, :g:`H <g1:H>` the vertices
+
+.. step:: assert
+
+   I say that, as the base :g:`< A B C > <g1:< A B C >>` is to the base :g:`< D E F > <g1:< D E F >>`, so is the pyramid :g:`< A B C G > <g1:< A B C G >>` to the pyramid :g:`< D E F H > <g1:< D E F H >>`.
 
 .. step:: assert
 
@@ -41,31 +51,19 @@ G.491
 
 .. step:: assert
 
-   Let it, first, be in that ratio to a less solid :g:`W <g1:W>`
+   Let it, first, be in that ratio to a less solid :g:`W <g1:W>`, and let the pyramid :g:`< D E F H > <g1:< D E F H >>` be divided into two pyramids equal to one another and similar to the whole and into two equal prisms
 
-.. step:: assert
-
-   Let the pyramid :g:`< D E F H > <g1:< D E F H >>` be divided into two pyramids equal to one another and similar to the whole and into two equal prisms
-
-.. step:: assert [G.489] <G.489>
+.. step:: assert ∵ pyramid_triangular_base <G.489>
 
    Then the two prisms are greater than the half of the whole pyramid.
 
-.. step:: assert
+.. step:: assert ∵ unequal_magnitudes_set <G.313>
 
-   Let the pyramids arising from the division be similarly divided
-
-.. step:: assert [G.313] <G.313>
-
-   Let this be done continually until there are left over from the pyramid :g:`< D E F H > <g1:< D E F H >>` some pyramids which are less than the excess by which the pyramid :g:`< D E F H > <g1:< D E F H >>` exceeds the solid :g:`W <g1:W>`.
+   Let the pyramids arising from the division be similarly divided, and let this be done continually until there are left over from the pyramid :g:`< D E F H > <g1:< D E F H >>` some pyramids which are less than the excess by which the pyramid :g:`< D E F H > <g1:< D E F H >>` exceeds the solid :g:`W <g1:W>`.
 
 .. step:: assert
 
-   Let such be left
-
-.. step:: assert
-
-   Let them be, for the sake of argument, :g:`< D Q R S > <g1:< D Q R S >>`, :g:`< S T U H > <g1:< S T U H >>`
+   Let such be left, and let them be, for the sake of argument, :g:`< D Q R S > <g1:< D Q R S >>`, :g:`< S T U H > <g1:< S T U H >>`
 
 .. step:: assert
 
@@ -75,7 +73,7 @@ G.491
 
    Let the pyramid :g:`< A B C G > <g1:< A B C G >>` also be divided similarly, and a similar number of times, with the pyramid :g:`< D E F H > <g1:< D E F H >>`
 
-.. step:: assert [G.490] <G.490>
+.. step:: assert ∵ there_pyramids_height <G.490>
 
    Therefore, as the base :g:`< A B C > <g1:< A B C >>` is to the base :g:`< D E F > <g1:< D E F >>`, so are the prisms in the pyramid :g:`< A B C G > <g1:< A B C G >>` to the prisms in the pyramid :g:`< D E F H > <g1:< D E F H >>`.
 
@@ -83,7 +81,7 @@ G.491
 
    But, as the base :g:`< A B C > <g1:< A B C >>` is to the base :g:`< D E F > <g1:< D E F >>`, so also is the pyramid :g:`< A B C G > <g1:< A B C G >>` to the solid :g:`W <g1:W>`;
 
-.. step:: assert [G.148, G.153] <G.148, G.153>
+.. step:: assert ∵ ratios_ratio, magnitudes_proportional_proportional <G.148, G.153>
 
    Therefore also, as the pyramid :g:`< A B C G > <g1:< A B C G >>` is to the solid :g:`W <g1:W>`, so are the prisms in the pyramid :g:`< A B C G > <g1:< A B C G >>` to the prisms in the pyramid :g:`< D E F H > <g1:< D E F H >>`; therefore, alternately, as the pyramid :g:`< A B C G > <g1:< A B C G >>` is to the prisms in it, so is the solid :g:`W <g1:W>` to the prisms in the pyramid :g:`< D E F H > <g1:< D E F H >>`.
 
@@ -123,11 +121,11 @@ G.491
 
    Therefore, inversely, as the base :g:`< D E F > <g1:< D E F >>` is to the base :g:`< A B C > <g1:< A B C >>`, so is the solid :g:`W <g1:W>` to the pyramid :g:`< A B C G > <g1:< A B C G >>`.
 
-.. step:: assert [G.488] <G.488>
+.. step:: assert ∵ circles_squares_diameters <G.488>
 
    But, as the solid :g:`W <g1:W>` is to the solid :g:`< A B C G > <g1:< A B C G >>`, so is the pyramid :g:`< D E F H > <g1:< D E F H >>` to some solid less than the pyramid :g:`< A B C G > <g1:< A B C G >>`, as was before proved.
 
-.. step:: assert [G.148] <G.148>
+.. step:: assert ∵ ratios_ratio <G.148>
 
    Therefore also, as the base :g:`< D E F > <g1:< D E F >>` is to the base :g:`< A B C > <g1:< A B C >>`, so is the pyramid :g:`< D E F H > <g1:< D E F H >>` to some solid less than the pyramid :g:`< A B C G > <g1:< A B C G >>`: which was proved absurd.
 

@@ -10,7 +10,7 @@
 :category: theorem, proof, plane-geometry, circles
 :tags: book-iii, point, segment, circle, angle, rectangle, equality
 :dependencies: G.15, G.94, G.96, G.115
-:excerpt: If a point be taken outside a circle and from the point there fall on the circle two straight lines, if one of them cut the circle, and the other fall on it, and if further the rectangle contained by the whole of the straight line which cuts
+:excerpt: If a point be taken outside a circle and from the point there fall on the circle two straight lines, if one of them cut the circle, and the other fall on it, and if further the rectangle contained by the whole of the straight line which cuts the circle and the straight line intercepted on it outside between the point and the convex circumference equals the square on the straight line which falls on the circle, the straight line which falls on it will touch the circle.
 
 .. _G.116:
 .. _III.37:
@@ -22,18 +22,19 @@ G.116
 
 .. enunciation::
 
-   If a point be taken outside a circle and from the point there fall on the circle two straight lines, if one of them cut the circle, and the other fall on it, and if further the rectangle contained by the whole of the straight line which cuts
+   If a point be taken outside a circle and from the point there fall on the circle two straight lines, if one of them cut the circle, and the other fall on it, and if further the rectangle contained by the whole of the straight line which cuts the circle and the straight line intercepted on it outside between the point and the convex circumference equals the square on the straight line which falls on the circle, the straight line which falls on it will touch the circle.
 
-.. enunciation::
+.. signature:: theorem
 
-   The circle and the straight line intercepted on it outside between the point and the convex circumference equals the square on the straight line which falls on the circle, the straight line which falls on it will touch the circle.
+   | :fn:`point_taken_outside_iii_37 <G.116>`\ ()
+   | **prove** :g:`/ D B / <g1:/ D B />` touches :g:`( A B C ) <g1:( A B C )>`
 
 .. picture:: g1.svg
    :alt: Proposition 37 diagram
 
 .. step:: construct
 
-   For let a point :g:`D <g1:D>` be taken outside :g:`( A B C ) <g1:( A B C )>`
+   Let a point :g:`D <g1:D>` be taken outside :g:`( A B C ) <g1:( A B C )>`
 
 .. step:: assert
 
@@ -49,7 +50,7 @@ G.116
 
 .. step:: construct
 
-   For let :g:`/ D E / <g1:/ D E />` be drawn touching :g:`( A B C ) <g1:( A B C )>`
+   Let :g:`/ D E / <g1:/ D E />` be drawn touching :g:`( A B C ) <g1:( A B C )>`
 
 .. step:: construct
 
@@ -61,13 +62,13 @@ G.116
 
 .. step:: construct
 
-   **segment** :g:`/ F E / <g1:/ F E />`, :g:`/ F B / <g1:/ F B />`, :g:`/ F D / <g1:/ F D />`
+   :fn:`segment <G.3>`\ (:g:`F <g1:F>`, :g:`E <g1:E>`) → :g:`/ F E / <g1:/ F E />`, :fn:`segment <G.3>`\ (:g:`F <g1:F>`, :g:`B <g1:B>`) → :g:`/ F B / <g1:/ F B />`, :fn:`segment <G.3>`\ (:g:`F <g1:F>`, :g:`D <g1:D>`) → :g:`/ F D / <g1:/ F D />`
 
-.. step:: assert [G.96] <G.96>
+.. step:: assert ∵ straight_line_touch <G.96>
 
    Thus :g:`< F E D ) <g1:< F E D )>` is right.
 
-.. step:: assert [G.115] <G.115>
+.. step:: assert ∵ point_taken_outside_iii_36 <G.115>
 
    Since :g:`/ D E / <g1:/ D E />` touches :g:`( A B C ) <g1:( A B C )>`, and :g:`/ D C A / <g1:/ D C A />` cuts it, the rectangle :g:`/ A D / <g1:/ A D />`, :g:`/ D C / <g1:/ D C />` is equal to the square on :g:`/ D E / <g1:/ D E />`.
 
@@ -95,7 +96,7 @@ G.116
 
    And :g:`/ F D / <g1:/ F D />` is the common base of the triangles
 
-.. step:: assert [G.15] <G.15>
+.. step:: assert ∵ sss_congruence <G.15>
 
    Therefore :g:`< D E F ) <g1:< D E F )>` is :eq:`equal <g1:< D E F ) = g1:< D B F )>` to :g:`< D B F ) <g1:< D B F )>`.
 
@@ -111,7 +112,7 @@ G.116
 
    :g:`/ F B / <g1:/ F B />` produced is a diameter
 
-.. step:: assert [G.94] <G.94>
+.. step:: assert ∵ straight_line_drawn <G.94>
 
    And the straight line drawn at right angles to the diameter of a circle, from its extremity, touches the circle
 

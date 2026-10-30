@@ -24,16 +24,17 @@ G.225
 
    If two numbers be prime to any number, their product also is prime to the same.
 
+.. signature:: theorem
+
+   | :fn:`numbers_prime_number_vii_24 <G.225>`\ ()
+   | **prove** :g:`C <g1:C>`, :g:`D <g1:D>` are prime to one another
+
 .. picture:: g1.svg
    :alt: Book VII, Proposition 24
 
 .. step:: assert
 
-   For let the two numbers :g:`A <g1:A>`, :g:`B <g1:B>` be prime to any number :g:`C <g1:C>`
-
-.. step:: assert
-
-   Let :g:`A <g1:A>` by multiplying :g:`B <g1:B>` make :g:`D <g1:D>`
+   Let the two numbers :g:`A <g1:A>`, :g:`B <g1:B>` be prime to any number :g:`C <g1:C>`, and let :g:`A <g1:A>` by multiplying :g:`B <g1:B>` make :g:`D <g1:D>`
 
 .. step:: assert
 
@@ -41,17 +42,13 @@ G.225
 
 .. step:: assert
 
-   Let a number measure them
-
-.. step:: assert
-
-   Let it be :g:`E <g1:E>`.
+   Let a number measure them, and let it be :g:`E <g1:E>`.
 
 .. step:: assert
 
    Since :g:`C <g1:C>`, :g:`A <g1:A>` are prime to one another, and a certain number :g:`E <g1:E>` measures :g:`C <g1:C>`,
 
-.. step:: assert [G.224] <G.224>
+.. step:: assert ∵ numbers_prime_number <G.224>
 
    Therefore :g:`A <g1:A>`, :g:`E <g1:E>` are prime to one another.
 
@@ -59,11 +56,11 @@ G.225
 
    As many times, then, as :g:`E <g1:E>` measures :g:`D <g1:D>`, so many units let there be in :g:`F <g1:F>`
 
-.. step:: assert [G.216] <G.216>
+.. step:: assert ∵ numbers_multiplying_make <G.216>
 
    Therefore :g:`F <g1:F>` also measures :g:`D <g1:D>` according to the units in :g:`E <g1:E>`.
 
-.. step:: assert [G.222] <G.222>
+.. step:: assert ∵ number_said_multiply_def <G.222>
 
    Therefore :g:`E <g1:E>` by multiplying :g:`F <g1:F>` has made :g:`D <g1:D>`.
 
@@ -75,7 +72,7 @@ G.225
 
    Therefore the product of :g:`E <g1:E>`, :g:`F <g1:F>` is equal to the product of :g:`A <g1:A>`, :g:`B <g1:B>`.
 
-.. step:: assert [G.219] <G.219>
+.. step:: assert ∵ numbers_proportional_number <G.219>
 
    But, if the product of the extremes be equal to that of the means, the four numbers are proportional .
 
@@ -83,11 +80,11 @@ G.225
 
    Therefore, as :g:`E <g1:E>` is to :g:`A <g1:A>`, so is :g:`B <g1:B>` to :g:`F <g1:F>`.
 
-.. step:: assert [G.221] <G.221>
+.. step:: assert ∵ numbers_prime_least <G.221>
 
    :g:`A <g1:A>`, :g:`E <g1:E>` are prime to one another, numbers which are prime to one another are also the least of those which have the same ratio, and the least numbers of those which have the same ratio with them measure those which have the same ratio the same
 
-.. step:: assert [G.220] <G.220>
+.. step:: assert ∵ least_numbers_ratio <G.220>
 
    Number of times, the greater the greater and the less the less, that is, the antecedent the antecedent and the consequent the consequent .
 
@@ -99,7 +96,7 @@ G.225
 
    It also measures :g:`C <g1:C>` ;
 
-.. step:: assert [G.199] <G.199>
+.. step:: assert ∵ numbers_prime_measured_def <G.199>
 
    Therefore :g:`E <g1:E>` measures :g:`B <g1:B>`, :g:`C <g1:C>` which are prime to one another : which is impossible.
 

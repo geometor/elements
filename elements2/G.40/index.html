@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=156d9f89" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=3d8cc37d" />
   <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -49,7 +49,7 @@
           <a href="../../log/index.html"  >log</a>
         </li>
         <li>
-          <a href="../index.html"  >Elements 2.0 (G Index)</a>
+          <a href="../index.html" class="is-active" aria-selected="true" >Elements 2.0 (G Index)</a>
         </li>
       </ul>
     </nav>
@@ -92,6 +92,12 @@
         <span id="g-40"></span><span id="id1"></span><h1>G.40<a class="headerlink" href="#i-28" title="Link to this heading">¶</a></h1>
         <p class="rubric"><a class="reference external" href="https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/28/" title="I.28: If a transversal cutting two lines makes the exterior angle equal to the opposite interior angle, or interior angles on the same side supplementary, the lines are parallel.">I.28</a></p>
         <div class="enunciation">If a transversal cutting two lines makes the exterior angle equal to the opposite interior angle, or interior angles on the same side supplementary, the lines are parallel.</div>
+        <div class="geom-signature geom-signature-theorem">
+        <div class="line-block">
+        <div class="line"><span class="geom-fn geom-fn-def" data-ref-target="G.40" title="G.40: If a transversal cutting two lines makes the exterior angle equal to the opposite interior angle, or interior angles on the same side supplementary, the lines are parallel.">corresponding_angles_parallel</span>()</div>
+        <div class="line"><strong>prove</strong> <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span> is parallel to <span class="geom-ref" data-ref="g1:/ C D /" title="/ C D /">/ C D /</span></div>
+        </div>
+        </div>
         <figure class="photon-picture photon-svg">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="7 7 237 166" class="euclid-graphic" data-graphic-id="g1" width="237" height="166">
           <title>Euclid's Elements, Book I, Proposition 28</title>
@@ -165,17 +171,17 @@
           </g>
         </svg>
         </figure>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> For let <span class="geom-ref" data-ref="g1:/ E F /" title="/ E F /">/ E F /</span> falling on <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span>, <span class="geom-ref" data-ref="g1:/ C D /" title="/ C D /">/ C D /</span> make the exterior angle <span class="geom-ref" data-ref="g1:&lt; E G B )" title="&lt; E G B )">&lt; E G B )</span> <span class="geom-eq-ref" data-assert-equal="g1:&lt; E G B ) = g1:&lt; G H D )" title="&lt; E G B ) = &lt; G H D )">equal</span> to the interior and opposite angle <span class="geom-ref" data-ref="g1:&lt; G H D )" title="&lt; G H D )">&lt; G H D )</span>, or the interior angles on the same side, namely <span class="geom-ref" data-ref="g1:&lt; B G H )" title="&lt; B G H )">&lt; B G H )</span>, <span class="geom-ref" data-ref="g1:&lt; G H D )" title="&lt; G H D )">&lt; G H D )</span>, equal to two right angles</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><a class="justification" href="../G.25/index.html#g-25" data-ref-target="G.25" title="G.25: Intersecting lines make their vertical angles equal.">[G.25]</a><span class="geom-step-badge geom-badge-assert">assert</span> Since <span class="geom-ref" data-ref="g1:&lt; E G B )" title="&lt; E G B )">&lt; E G B )</span> is <span class="geom-eq-ref" data-assert-equal="g1:&lt; E G B ) = g1:&lt; G H D )" title="&lt; E G B ) = &lt; G H D )">equal</span> to <span class="geom-ref" data-ref="g1:&lt; G H D )" title="&lt; G H D )">&lt; G H D )</span>, while <span class="geom-ref" data-ref="g1:&lt; E G B )" title="&lt; E G B )">&lt; E G B )</span> is <span class="geom-eq-ref" data-assert-equal="g1:&lt; E G B ) = g1:&lt; A G H )" title="&lt; E G B ) = &lt; A G H )">equal</span> to <span class="geom-ref" data-ref="g1:&lt; A G H )" title="&lt; A G H )">&lt; A G H )</span>.</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Let <span class="geom-ref" data-ref="g1:/ E F /" title="/ E F /">/ E F /</span> falling on <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span>, <span class="geom-ref" data-ref="g1:/ C D /" title="/ C D /">/ C D /</span> make the exterior angle <span class="geom-ref" data-ref="g1:&lt; E G B )" title="&lt; E G B )">&lt; E G B )</span> <span class="geom-eq-ref" data-assert-equal="g1:&lt; E G B ) = g1:&lt; G H D )" title="&lt; E G B ) = &lt; G H D )">equal</span> to the interior and opposite angle <span class="geom-ref" data-ref="g1:&lt; G H D )" title="&lt; G H D )">&lt; G H D )</span>, or the interior angles on the same side, namely <span class="geom-ref" data-ref="g1:&lt; B G H )" title="&lt; B G H )">&lt; B G H )</span>, <span class="geom-ref" data-ref="g1:&lt; G H D )" title="&lt; G H D )">&lt; G H D )</span>, equal to two right angles</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.25/index.html#g-25" data-ref-target="G.25" title="G.25: Intersecting lines make their vertical angles equal.">vertical_angles_equal</a></span><span class="geom-step-badge geom-badge-assert">assert</span> Since <span class="geom-ref" data-ref="g1:&lt; E G B )" title="&lt; E G B )">&lt; E G B )</span> is <span class="geom-eq-ref" data-assert-equal="g1:&lt; E G B ) = g1:&lt; G H D )" title="&lt; E G B ) = &lt; G H D )">equal</span> to <span class="geom-ref" data-ref="g1:&lt; G H D )" title="&lt; G H D )">&lt; G H D )</span>, while <span class="geom-ref" data-ref="g1:&lt; E G B )" title="&lt; E G B )">&lt; E G B )</span> is <span class="geom-eq-ref" data-assert-equal="g1:&lt; E G B ) = g1:&lt; A G H )" title="&lt; E G B ) = &lt; A G H )">equal</span> to <span class="geom-ref" data-ref="g1:&lt; A G H )" title="&lt; A G H )">&lt; A G H )</span>.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> <span class="geom-ref" data-ref="g1:&lt; A G H )" title="&lt; A G H )">&lt; A G H )</span> is also <span class="geom-eq-ref" data-assert-equal="g1:&lt; A G H ) = g1:&lt; G H D )" title="&lt; A G H ) = &lt; G H D )">equal</span> to <span class="geom-ref" data-ref="g1:&lt; G H D )" title="&lt; G H D )">&lt; G H D )</span>;</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> And they are alternate;</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><a class="justification" href="../G.39/index.html#g-39" data-ref-target="G.39" title="G.39: If a transversal cutting two lines makes the alternate interior angles equal, the lines are parallel.">[G.39]</a><span class="geom-step-badge geom-badge-assert">assert</span> Therefore <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span> is parallel to <span class="geom-ref" data-ref="g1:/ C D /" title="/ C D /">/ C D /</span>.</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><a class="justification" href="../G.22/index.html#g-22" data-ref-target="G.22" title="G.22: A ray standing on a line makes either two right angles or adjacent angles summing to two right angles.">[G.22]</a><span class="geom-step-badge geom-badge-assert">assert</span> Since <span class="geom-ref" data-ref="g1:&lt; B G H )" title="&lt; B G H )">&lt; B G H )</span>, <span class="geom-ref" data-ref="g1:&lt; G H D )" title="&lt; G H D )">&lt; G H D )</span> are equal to two right angles, and <span class="geom-ref" data-ref="g1:&lt; A G H )" title="&lt; A G H )">&lt; A G H )</span>, <span class="geom-ref" data-ref="g1:&lt; B G H )" title="&lt; B G H )">&lt; B G H )</span> are also equal to two right angles.</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.39/index.html#g-39" data-ref-target="G.39" title="G.39: If a transversal cutting two lines makes the alternate interior angles equal, the lines are parallel.">alternate_angles_parallel</a></span><span class="geom-step-badge geom-badge-assert">assert</span> Therefore <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span> is parallel to <span class="geom-ref" data-ref="g1:/ C D /" title="/ C D /">/ C D /</span>.</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.22/index.html#g-22" data-ref-target="G.22" title="G.22: A ray standing on a line makes either two right angles or adjacent angles summing to two right angles.">adjacent_angles_supplementary</a></span><span class="geom-step-badge geom-badge-assert">assert</span> Since <span class="geom-ref" data-ref="g1:&lt; B G H )" title="&lt; B G H )">&lt; B G H )</span>, <span class="geom-ref" data-ref="g1:&lt; G H D )" title="&lt; G H D )">&lt; G H D )</span> are equal to two right angles, and <span class="geom-ref" data-ref="g1:&lt; A G H )" title="&lt; A G H )">&lt; A G H )</span>, <span class="geom-ref" data-ref="g1:&lt; B G H )" title="&lt; B G H )">&lt; B G H )</span> are also equal to two right angles.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> <span class="geom-ref" data-ref="g1:&lt; A G H )" title="&lt; A G H )">&lt; A G H )</span>, <span class="geom-ref" data-ref="g1:&lt; B G H )" title="&lt; B G H )">&lt; B G H )</span> are equal to <span class="geom-ref" data-ref="g1:&lt; B G H )" title="&lt; B G H )">&lt; B G H )</span>, <span class="geom-ref" data-ref="g1:&lt; G H D )" title="&lt; G H D )">&lt; G H D )</span>.</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Let <span class="geom-ref" data-ref="g1:&lt; B G H )" title="&lt; B G H )">&lt; B G H )</span> be subtracted from each</div>
+        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> Let <span class="geom-ref" data-ref="g1:&lt; B G H )" title="&lt; B G H )">&lt; B G H )</span> be subtracted from each</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore the remaining angle <span class="geom-ref" data-ref="g1:&lt; A G H )" title="&lt; A G H )">&lt; A G H )</span> is <span class="geom-eq-ref" data-assert-equal="g1:&lt; A G H ) = g1:&lt; G H D )" title="&lt; A G H ) = &lt; G H D )">equal</span> to the remaining angle <span class="geom-ref" data-ref="g1:&lt; G H D )" title="&lt; G H D )">&lt; G H D )</span>;</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> And they are alternate;</div>
-        <div class="geom-step geom-step-conclude" data-step-kind="conclude"><a class="justification" href="../G.39/index.html#g-39" data-ref-target="G.39" title="G.39: If a transversal cutting two lines makes the alternate interior angles equal, the lines are parallel.">[G.39]</a><span class="geom-step-badge geom-badge-conclude">conclude</span> Therefore <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span> is parallel to <span class="geom-ref" data-ref="g1:/ C D /" title="/ C D /">/ C D /</span>.</div>
+        <div class="geom-step geom-step-conclude" data-step-kind="conclude"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.39/index.html#g-39" data-ref-target="G.39" title="G.39: If a transversal cutting two lines makes the alternate interior angles equal, the lines are parallel.">alternate_angles_parallel</a></span><span class="geom-step-badge geom-badge-conclude">conclude</span> Therefore <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span> is parallel to <span class="geom-ref" data-ref="g1:/ C D /" title="/ C D /">/ C D /</span>.</div>
         <section class="level-2" id="dependency-graph">
         <h2>Dependency Graph<a class="headerlink" href="#dependency-graph" title="Link to this heading">¶</a></h2>
         <div class="graphviz"><object data="../../_images/graphviz-f4cd811993178ad40f36881afdfac753c22ff7cc.svg" type="image/svg+xml" class="graphviz">
@@ -511,28 +517,28 @@
   <footer>
     <div class="footer-nav">
       <ul>
-        <li><a href="../../about.html">about</a></li>
-        <li><a href="../../connect.html">connect</a></li>
-        <li><a href="../../glossary.html">glossary</a></li>
-        <li><a href="../../todos/index.html">todos</a></li>
-        <li><a href="../../changelog.html">changelog</a></li>
+        <li><a href="../../about.html"  >about</a></li>
+        <li><a href="../../connect.html"  >connect</a></li>
+        <li><a href="../../glossary.html"  >glossary</a></li>
+        <li><a href="../../todos/index.html"  >todos</a></li>
+        <li><a href="../../changelog.html"  >changelog</a></li>
       </ul>
     </div>
     <hr />
     <div role="contentinfo">
       <p>
-        &copy; Copyright .
+        &copy; Copyright 2026, GEOMETOR.
       </p>
     </div>
   </footer>
 
   <script src="../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+  <script src="../../_static/documentation_options.js?v=d5a15cff"></script>
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
-  <script src="../../_static/js/geometor_interactive.js?v=421e4467"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=4430a5d4"></script>
   <script src="../../_static/js/search_highlight.js"></script>
 
 </body>

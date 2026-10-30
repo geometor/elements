@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=156d9f89" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=3d8cc37d" />
   <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -49,7 +49,7 @@
           <a href="../../log/index.html"  >log</a>
         </li>
         <li>
-          <a href="../index.html"  >Elements 2.0 (G Index)</a>
+          <a href="../index.html" class="is-active" aria-selected="true" >Elements 2.0 (G Index)</a>
         </li>
       </ul>
     </nav>
@@ -92,6 +92,12 @@
         <span id="g-450"></span><span id="id1"></span><h1>G.450<a class="headerlink" href="#xi-7" title="Link to this heading">¶</a></h1>
         <p class="rubric"><a class="reference external" href="https://geometor.github.io/euclid/heath/volume_III/book_xi/propositions/07/" title="XI.7: If two straight lines be parallel and points be taken at random on each of them, the straight line joining the points is in the same plane with the parallel straight lines.">XI.7</a></p>
         <div class="enunciation">If two straight lines be parallel and points be taken at random on each of them, the straight line joining the points is in the same plane with the parallel straight lines.</div>
+        <div class="geom-signature geom-signature-theorem">
+        <div class="line-block">
+        <div class="line"><span class="geom-fn geom-fn-def" data-ref-target="G.450" title="G.450: If two straight lines be parallel and points be taken at random on each of them, the straight line joining the points is in the same plane with the parallel straight lines.">straight_lines_parallel</span>()</div>
+        <div class="line"><strong>prove</strong> the straight line joining <span class="geom-ref" data-ref="g1:E" title="E">E</span>, <span class="geom-ref" data-ref="g1:F" title="F">F</span> is in the same plane with the parallel straight lines</div>
+        </div>
+        </div>
         <figure class="photon-picture photon-svg">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -6 208 142" width="208" height="142" class="euclid-graphic" data-graphic-id="g1" data-graphic="g1" data-proposition="XI.7">
           <defs>
@@ -156,11 +162,9 @@
           </g>
         </svg>
         </figure>
-        <div class="geom-step geom-step-given" data-step-kind="given"><span class="geom-step-badge geom-badge-given">given</span> <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span>, <span class="geom-ref" data-ref="g1:/ C D /" title="/ C D /">/ C D /</span> be two parallel straight lines</div>
-        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> Let points <span class="geom-ref" data-ref="g1:E" title="E">E</span>, <span class="geom-ref" data-ref="g1:F" title="F">F</span> be taken at random on them respectively</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> For suppose it is not, but, if possible, let it be in a more elevated plane as <span class="geom-ref" data-ref="g1:( E G F )" title="( E G F )">( E G F )</span></div>
-        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> Let a plane be drawn through <span class="geom-ref" data-ref="g1:( E G F )" title="( E G F )">( E G F )</span></div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><a class="justification" href="../G.445/index.html#g-445" data-ref-target="G.445" title="G.445: If two planes cut one another, their common section is a straight line.">[G.445]</a><span class="geom-step-badge geom-badge-assert">assert</span> It will then make, as section in the plane of reference, a straight line.</div>
+        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> Let <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span>, <span class="geom-ref" data-ref="g1:/ C D /" title="/ C D /">/ C D /</span> be two parallel straight lines, and let points <span class="geom-ref" data-ref="g1:E" title="E">E</span>, <span class="geom-ref" data-ref="g1:F" title="F">F</span> be taken at random on them respectively</div>
+        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> Suppose it is not, but, if possible, let it be in a more elevated plane as <span class="geom-ref" data-ref="g1:( E G F )" title="( E G F )">( E G F )</span>, and let a plane be drawn through <span class="geom-ref" data-ref="g1:( E G F )" title="( E G F )">( E G F )</span></div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.445/index.html#g-445" data-ref-target="G.445" title="G.445: If two planes cut one another, their common section is a straight line.">planes_cut_common</a></span><span class="geom-step-badge geom-badge-assert">assert</span> It will then make, as section in the plane of reference, a straight line.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Let it make it, as <span class="geom-ref" data-ref="g1:/ E F /" title="/ E F /">/ E F /</span></div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore <span class="geom-ref" data-ref="g1:( E G F )" title="( E G F )">( E G F )</span>, <span class="geom-ref" data-ref="g1:/ E F /" title="/ E F /">/ E F /</span> will enclose an area: which is impossible.</div>
         <div class="geom-step geom-step-conclude" data-step-kind="conclude"><span class="geom-step-badge geom-badge-conclude">conclude</span> Therefore the straight line joined from <span class="geom-ref" data-ref="g1:E" title="E">E</span> to <span class="geom-ref" data-ref="g1:F" title="F">F</span> is not in a plane more elevated; therefore the straight line joined from <span class="geom-ref" data-ref="g1:E" title="E">E</span> to <span class="geom-ref" data-ref="g1:F" title="F">F</span> is in the plane through the parallel straight lines <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span>, <span class="geom-ref" data-ref="g1:/ C D /" title="/ C D /">/ C D /</span>.</div>
@@ -425,28 +429,28 @@
   <footer>
     <div class="footer-nav">
       <ul>
-        <li><a href="../../about.html">about</a></li>
-        <li><a href="../../connect.html">connect</a></li>
-        <li><a href="../../glossary.html">glossary</a></li>
-        <li><a href="../../todos/index.html">todos</a></li>
-        <li><a href="../../changelog.html">changelog</a></li>
+        <li><a href="../../about.html"  >about</a></li>
+        <li><a href="../../connect.html"  >connect</a></li>
+        <li><a href="../../glossary.html"  >glossary</a></li>
+        <li><a href="../../todos/index.html"  >todos</a></li>
+        <li><a href="../../changelog.html"  >changelog</a></li>
       </ul>
     </div>
     <hr />
     <div role="contentinfo">
       <p>
-        &copy; Copyright .
+        &copy; Copyright 2026, GEOMETOR.
       </p>
     </div>
   </footer>
 
   <script src="../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+  <script src="../../_static/documentation_options.js?v=d5a15cff"></script>
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
-  <script src="../../_static/js/geometor_interactive.js?v=421e4467"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=4430a5d4"></script>
   <script src="../../_static/js/search_highlight.js"></script>
 
 </body>

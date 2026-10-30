@@ -24,6 +24,12 @@ G.95
 
    From a given point to draw a straight line touching a given circle.
 
+.. signature:: problem
+
+   | :fn:`tangent_to_circle <G.95>`\ (:g:`A <g1:A>`, :g:`( B C D ) <g1:( B C D )>`) → :g:`/ A B / <g1:/ A B />`
+   | **given** :g:`A <g1:A>`, :g:`( B C D ) <g1:( B C D )>`
+   | **construct** from :g:`A <g1:A>` :g:`/ A B / <g1:/ A B />` has been drawn touching :g:`( B C D ) <g1:( B C D )>`
+
 .. picture:: g1.svg
    :alt: Diagram for Proposition 17
 
@@ -31,17 +37,17 @@ G.95
 
    :g:`A <g1:A>`, :g:`( B C D ) <g1:( B C D )>`
 
-.. step:: construct [G.76] <G.76>
+.. step:: construct
 
-   For let the center :g:`E <g1:E>` of the circle be taken
+   :fn:`find_circle_center <G.76>`: Let the center :g:`E <g1:E>` of the circle be taken
 
 .. step:: construct
 
-   **segment** :g:`/ A E / <g1:/ A E />`
+   :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`E <g1:E>`) → :g:`/ A E / <g1:/ A E />`
 
 .. step:: construct
 
-   **circle** :g:`( A F G ) <g1:( A F G )>` with center :g:`E <g1:E>` and radius :g:`/ E A / <g1:/ E A />`
+   :fn:`circle <G.4>`\ (:g:`E <g1:E>`, :g:`/ E A / <g1:/ E A />`) → :g:`( A F G ) <g1:( A F G )>`
 
 .. step:: construct
 
@@ -49,9 +55,9 @@ G.95
 
 .. step:: construct
 
-   **segment** :g:`/ E F / <g1:/ E F />`, :g:`/ A B / <g1:/ A B />`
+   :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`F <g1:F>`) → :g:`/ E F / <g1:/ E F />`, :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`) → :g:`/ A B / <g1:/ A B />`
 
-.. step:: assert
+.. step:: assert ∵ circle_radii <G.2>
 
    Since :g:`E <g1:E>` is the center of :g:`( B C D ) <g1:( B C D )>`, :g:`( A F G ) <g1:( A F G )>` → :g:`/ E A / <g1:/ E A />` is :eq:`equal <g1:/ E A / = g1:/ E F /; g1:/ E D / = g1:/ E B />` to :g:`/ E F / <g1:/ E F />`, and :g:`/ E D / <g1:/ E D />` to :g:`/ E B / <g1:/ E B />`;
 
@@ -59,7 +65,7 @@ G.95
 
    Therefore the two sides :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />` are :eq:`equal <g1:/ A E / = g1:/ F E /; g1:/ E B / = g1:/ E D />` to the two sides :g:`/ F E / <g1:/ F E />`, :g:`/ E D / <g1:/ E D />`: and they contain a common angle, the angle at :g:`E <g1:E>`
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    Therefore the base :g:`/ D F / <g1:/ D F />` is :eq:`equal <g1:/ D F / = g1:/ A B />` to the base :g:`/ A B / <g1:/ A B />`, and :g:`< D E F > <g1:< D E F >>` is :eq:`equal <g1:< D E F > = g1:< B E A >>` to :g:`< B E A > <g1:< B E A >>`, and the remaining angles to the remaining angles; therefore :g:`< E D F ) <g1:< E D F )>` is :eq:`equal <g1:< E D F ) = g1:< E B A )>` to :g:`< E B A ) <g1:< E B A )>`.
 
@@ -75,7 +81,7 @@ G.95
 
    Now :g:`/ E B / <g1:/ E B />` is a radius
 
-.. step:: assert [G.94] <G.94>
+.. step:: assert ∵ straight_line_drawn <G.94>
 
    And the straight line drawn at right angles to the diameter of a circle, from its extremity, touches the circle
 

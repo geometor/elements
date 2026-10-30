@@ -24,30 +24,27 @@ G.87
 
    If two circles touch one another externally, the straight line joining their centres will pass through the point of contact.
 
+.. signature:: theorem
+
+   | :fn:`circles_touch_externally <G.87>`\ ()
+   | **prove** the straight line joined from :g:`F <g1:F>` to :g:`G <g1:G>` will pass through the point of contact at :g:`A <g1:A>`
+
 .. picture:: g1.svg
    :alt: Diagram for Proposition 12 showing two circles ABC and ADE touching externally at A
 
-.. step:: assert
+.. step:: construct
 
-   For let the two circles :g:`( A B C ) <g1:( A B C )>`, :g:`( A D E ) <g1:( A D E )>` touch one another externally at :g:`A <g1:A>`
+   Let the two circles :g:`( A B C ) <g1:( A B C )>`, :g:`( A D E ) <g1:( A D E )>` touch one another externally at :g:`A <g1:A>`, and let the center :g:`F <g1:F>` of :g:`( A B C ) <g1:( A B C )>`, and the center :g:`G <g1:G>` of :g:`( A D E ) <g1:( A D E )>`, be taken
 
 .. step:: construct
 
-   Let the center :g:`F <g1:F>` of :g:`( A B C ) <g1:( A B C )>`, and the center :g:`G <g1:G>` of :g:`( A D E ) <g1:( A D E )>`, be taken
+   Suppose it does not, but, if possible, let it pass as :g:`/ F C D G / <g1:/ F C D G />`, and let :g:`/ A F / <g1:/ A F />`, :g:`/ A G / <g1:/ A G />` be joined.
 
-.. step:: assert
-
-   For suppose it does not, but, if possible, let it pass as :g:`/ F C D G / <g1:/ F C D G />`
-
-.. step:: construct
-
-   **segment** :g:`/ A F / <g1:/ A F />`, :g:`/ A G / <g1:/ A G />`
-
-.. step:: assert
+.. step:: assert ∵ circle_radii <G.2>
 
    Since :g:`F <g1:F>` is the center of :g:`( A B C ) <g1:( A B C )>` → :g:`/ F A / <g1:/ F A />` is :eq:`equal <g1:/ F A / = g1:/ F C />` to :g:`/ F C / <g1:/ F C />`.
 
-.. step:: assert
+.. step:: assert ∵ circle_radii <G.2>
 
    Since :g:`G <g1:G>` is the center of :g:`( A D E ) <g1:( A D E )>` → :g:`/ G A / <g1:/ G A />` is :eq:`equal <g1:/ G A / = g1:/ G D />` to :g:`/ G D / <g1:/ G D />`.
 
@@ -63,7 +60,7 @@ G.87
 
    So that the whole :g:`/ F G / <g1:/ F G />` is greater than :g:`/ F A / <g1:/ F A />`, :g:`/ A G / <g1:/ A G />`;
 
-.. step:: assert [G.31] <G.31>
+.. step:: assert ∵ triangle_inequality <G.31>
 
    But it is also less: which is impossible.
 

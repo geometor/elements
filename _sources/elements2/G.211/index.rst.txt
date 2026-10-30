@@ -24,6 +24,11 @@ G.211
 
    If, as whole is to whole, so is a number subtracted to a number subtracted, the remainder is to the remainder as whole to whole.
 
+.. signature:: theorem
+
+   | :fn:`whole_whole_number <G.211>`\ ()
+   | **prove** the remainder :g:`/ E B / <g1:/ E B />` is also to the remainder :g:`/ F D / <g1:/ F D />` as the whole :g:`/ A B / <g1:/ A B />` to the whole :g:`/ C D / <g1:/ C D />`
+
 .. picture:: g1.svg
    :alt: Book VII, Proposition 11
 
@@ -35,15 +40,15 @@ G.211
 
    Since, as :g:`/ A B / <g1:/ A B />` is to :g:`/ C D / <g1:/ C D />`, so is :g:`/ A E / <g1:/ A E />` to :g:`/ C F / <g1:/ C F />`,
 
-.. step:: assert [G.210] <G.210>
+.. step:: assert ∵ numbers_proportional_multiple_def <G.210>
 
    Whatever part or parts :g:`/ A B / <g1:/ A B />` is of :g:`/ C D / <g1:/ C D />`, the same part or the same parts is :g:`/ A E / <g1:/ A E />` of :g:`/ C F / <g1:/ C F />` also.
 
-.. step:: assert [G.206, G.207] <G.206, G.207>
+.. step:: assert ∵ number_part_number_vii_7, number_parts_number_vii_8 <G.206, G.207>
 
    Therefore also the remainder :g:`/ E B / <g1:/ E B />` is the same part or parts of :g:`/ F D / <g1:/ F D />` that :g:`/ A B / <g1:/ A B />` is of :g:`/ C D / <g1:/ C D />`.
 
-.. step:: conclude [G.210] <G.210>
+.. step:: conclude ∵ numbers_proportional_multiple_def <G.210>
 
    Therefore, as :g:`/ E B / <g1:/ E B />` is to :g:`/ F D / <g1:/ F D />`, so is :g:`/ A B / <g1:/ A B />` to :g:`/ C D / <g1:/ C D />`.
 

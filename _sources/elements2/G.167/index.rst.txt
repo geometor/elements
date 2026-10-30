@@ -24,6 +24,12 @@ G.167
 
    If two triangles have their sides proportional, the triangles is equiangular and will have those angles equal which the corresponding sides subtend.
 
+.. signature:: theorem
+
+   | :fn:`triangles_sides_proportional <G.167>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g2:< D E F >>`)
+   | **given** :g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g2:< D E F >>` be two triangles having their sides proportional, so that
+   | **prove** :g:`< A B C > <g1:< A B C >>` is :eq:`equiangular <g1:< A B C ) = g2:< D E F ); g1:< B C A ) = g2:< E F D ); g1:< B A C ) = g2:< E D F )>` with :g:`< D E F > <g2:< D E F >>`, and they will have those angles :eq:`equal <g1:< A B C ) = g2:< D E F ); g1:< B C A ) = g2:< E F D ); g1:< B A C ) = g2:< E D F )>` which the corresponding sides subtend, namely :g:`< A B C ) <g1:< A B C )>` to :g:`< D E F ) <g2:< D E F )>`, :g:`< B C A ) <g1:< B C A )>` to :g:`< E F D ) <g2:< E F D )>`, and further :g:`< B A C ) <g1:< B A C )>` to :g:`< E D F ) <g2:< E D F )>`
+
 .. picture:: g1.svg
    :alt: Proposition 5 diagram 1
 
@@ -46,19 +52,11 @@ G.167
 
    And further, as :g:`/ B A / <g1:/ B A />` is to :g:`/ A C / <g1:/ A C />`, so is :g:`/ E D / <g2:/ E D />` to :g:`/ D F / <g2:/ D F />`;
 
-.. step:: assert
+.. step:: construct
 
-   :g:`< A B C > <g1:< A B C >>` is :eq:`equiangular <g1:< A B C ) = g2:< D E F ); g1:< B C A ) = g2:< E F D ); g1:< B A C ) = g2:< E D F )>` with :g:`< D E F > <g2:< D E F >>`, and they will have those angles :eq:`equal <g1:< A B C ) = g2:< D E F ); g1:< B C A ) = g2:< E F D ); g1:< B A C ) = g2:< E D F )>` which the corresponding sides subtend, namely :g:`< A B C ) <g1:< A B C )>` to :g:`< D E F ) <g2:< D E F )>`, :g:`< B C A ) <g1:< B C A )>` to :g:`< E F D ) <g2:< E F D )>`, and further :g:`< B A C ) <g1:< B A C )>` to :g:`< E D F ) <g2:< E D F )>`.
+   :fn:`copy_angle <G.34>`: On :g:`/ E F / <g2:/ E F />`, and at :g:`E <g2:E>`, :g:`F <g2:F>` on it, let there be constructed :g:`< F E G ) <g2:< F E G )>` :eq:`equal <g2:< F E G ) = g1:< A B C )>` to :g:`< A B C ) <g1:< A B C )>`, and :g:`< E F G ) <g2:< E F G )>` :eq:`equal <g2:< E F G ) = g1:< A C B )>` to :g:`< A C B ) <g1:< A C B )>`
 
-.. step:: assert
-
-   For on :g:`/ E F / <g2:/ E F />`
-
-.. step:: construct [G.34] <G.34>
-
-   At :g:`E <g2:E>`, :g:`F <g2:F>` on it, let there be constructed :g:`< F E G ) <g2:< F E G )>` :eq:`equal <g2:< F E G ) = g1:< A B C )>` to :g:`< A B C ) <g1:< A B C )>`, and :g:`< E F G ) <g2:< E F G )>` :eq:`equal <g2:< E F G ) = g1:< A C B )>` to :g:`< A C B ) <g1:< A C B )>`
-
-.. step:: assert [G.45] <G.45>
+.. step:: assert ∵ triangle_angle_sum <G.45>
 
    Therefore the remaining angle at :g:`< A ) <g1:< A )>` is :eq:`equal <g1:< A ) = g2:< G )>` to the remaining angle at :g:`< G ) <g2:< G )>`.
 
@@ -66,7 +64,7 @@ G.167
 
    Therefore :g:`< A B C > <g1:< A B C >>` is :eq:`equiangular <g1:< A B C ) = g2:< F E G ); g1:< A C B ) = g2:< E F G ); g1:< A ) = g2:< G )>` with :g:`< G E F > <g2:< G E F >>`.
 
-.. step:: assert [G.166] <G.166>
+.. step:: assert ∵ equiangular_triangles_sides <G.166>
 
    Therefore in :g:`< A B C > <g1:< A B C >>`, :g:`< G E F > <g2:< G E F >>` the sides about the equal angles are proportional, and those are corresponding sides which subtend the equal angles
 
@@ -78,7 +76,7 @@ G.167
 
    But, as :g:`/ A B / <g1:/ A B />` is to :g:`/ B C / <g1:/ B C />`, so by hypothesis is :g:`/ D E / <g2:/ D E />` to :g:`/ E F / <g2:/ E F />`
 
-.. step:: assert [G.148] <G.148>
+.. step:: assert ∵ ratios_ratio <G.148>
 
    Therefore, as :g:`/ D E / <g2:/ D E />` is to :g:`/ E F / <g2:/ E F />`, so is :g:`/ G E / <g2:/ G E />` to :g:`/ E F / <g2:/ E F />`.
 
@@ -86,13 +84,13 @@ G.167
 
    Therefore each of :g:`/ D E / <g2:/ D E />`, :g:`/ G E / <g2:/ G E />` has the same ratio to :g:`/ E F / <g2:/ E F />`
 
-.. step:: assert [G.146] <G.146>
+.. step:: assert ∵ magnitudes_ratio_equal <G.146>
 
    Therefore :g:`/ D E / <g2:/ D E />` is :eq:`equal <g2:/ D E / = g2:/ G E />` to :g:`/ G E / <g2:/ G E />`.
 
 .. step:: assert
 
-   For the same reason
+   The same reason
 
 .. step:: assert
 
@@ -106,11 +104,11 @@ G.167
 
    And the base :g:`/ D F / <g2:/ D F />` is :eq:`equal <g2:/ D F / = g2:/ F G />` to the base :g:`/ F G / <g2:/ F G />`;
 
-.. step:: assert [G.15] <G.15>
+.. step:: assert ∵ sss_congruence <G.15>
 
    Therefore :g:`< D E F ) <g2:< D E F )>` is :eq:`equal <g2:< D E F ) = g2:< G E F )>` to :g:`< G E F ) <g2:< G E F )>`,
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    And :g:`< D E F > <g2:< D E F >>` is :eq:`equal <g2:< D E F > = g2:< G E F >>` to :g:`< G E F > <g2:< G E F >>`, and the remaining angles are :eq:`equal <g2:< D F E ) = g2:< G F E ); g2:< E D F ) = g2:< E G F )>` to the remaining angles, namely those which the equal sides subtend.
 
@@ -132,7 +130,7 @@ G.167
 
 .. step:: assert
 
-   For the same reason
+   The same reason
 
 .. step:: assert
 

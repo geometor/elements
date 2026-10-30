@@ -24,34 +24,32 @@ G.387
 
    A straight line commensurable in length with a binomial straight line is itself also binomial and the same in order.
 
+.. signature:: theorem
+
+   | :fn:`straight_line_commensurable_x_66 <G.387>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`)
+   | **given** :g:`/ A B / <g1:/ A B />` be binomial, let :g:`/ C D / <g1:/ C D />` be commensurable in length with :g:`/ A B / <g1:/ A B />`
+   | **prove** :g:`/ C D / <g1:/ C D />` is binomial and the same in order with :g:`/ A B / <g1:/ A B />`
+
 .. picture:: g1.svg
    :alt: Proposition 66 Diagram
 
 .. step:: given
 
-   :g:`/ A B / <g1:/ A B />` be binomial
+   :g:`/ A B / <g1:/ A B />` be binomial, let :g:`/ C D / <g1:/ C D />` be commensurable in length with :g:`/ A B / <g1:/ A B />`
 
 .. step:: assert
 
-   Let :g:`/ C D / <g1:/ C D />` be commensurable in length with :g:`/ A B / <g1:/ A B />`
+   Since :g:`/ A B / <g1:/ A B />` is binomial, let it be divided into its terms at :g:`E <g1:E>`, and let :g:`/ A E / <g1:/ A E />` be the greater term
 
-.. step:: assert
-
-   Since :g:`/ A B / <g1:/ A B />` is binomial, let it be divided into its terms at :g:`E <g1:E>`
-
-.. step:: assert
-
-   Let :g:`/ A E / <g1:/ A E />` be the greater term
-
-.. step:: assert [G.351] <G.351>
+.. step:: assert ∵ rational_straight_lines <G.351>
 
    Therefore :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />` are rational straight lines commensurable in square only.
 
-.. step:: assert [G.175] <G.175>
+.. step:: assert ∵ fourth_proportional <G.175>
 
    Let it be contrived that, as :g:`/ A B / <g1:/ A B />` is to :g:`/ C D / <g1:/ C D />`, so is :g:`/ A E / <g1:/ A E />` to :g:`/ C F / <g1:/ C F />`
 
-.. step:: assert [G.156] <G.156>
+.. step:: assert ∵ whole_whole_part <G.156>
 
    Therefore also the remainder :g:`/ E B / <g1:/ E B />` is to the remainder :g:`/ F D / <g1:/ F D />` as :g:`/ A B / <g1:/ A B />` is to :g:`/ C D / <g1:/ C D />`.
 
@@ -59,7 +57,7 @@ G.387
 
    :g:`/ A B / <g1:/ A B />` is commensurable in length with :g:`/ C D / <g1:/ C D />`;
 
-.. step:: assert [G.323] <G.323>
+.. step:: assert ∵ magnitudes_proportional_commensurable <G.323>
 
    Therefore :g:`/ A E / <g1:/ A E />` is also commensurable with :g:`/ C F / <g1:/ C F />`, and :g:`/ E B / <g1:/ E B />` with :g:`/ F D / <g1:/ F D />`.
 
@@ -71,11 +69,11 @@ G.387
 
    Therefore :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />` are also rational.
 
-.. step:: assert [G.148] <G.148>
+.. step:: assert ∵ ratios_ratio <G.148>
 
    And, as :g:`/ A E / <g1:/ A E />` is to :g:`/ C F / <g1:/ C F />`, so is :g:`/ E B / <g1:/ E B />` to :g:`/ F D / <g1:/ F D />`.
 
-.. step:: assert [G.153] <G.153>
+.. step:: assert ∵ magnitudes_proportional_proportional <G.153>
 
    Therefore, alternately, as :g:`/ A E / <g1:/ A E />` is to :g:`/ E B / <g1:/ E B />`, so is :g:`/ C F / <g1:/ C F />` to :g:`/ F D / <g1:/ F D />`.
 
@@ -83,7 +81,7 @@ G.387
 
    :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />` are commensurable in square only;
 
-.. step:: assert [G.323] <G.323>
+.. step:: assert ∵ magnitudes_proportional_commensurable <G.323>
 
    Therefore :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />` are also commensurable in square only.
 
@@ -91,7 +89,7 @@ G.387
 
    They are rational;
 
-.. step:: assert [G.351] <G.351>
+.. step:: assert ∵ rational_straight_lines <G.351>
 
    Therefore :g:`/ C D / <g1:/ C D />` is binomial.
 
@@ -107,31 +105,31 @@ G.387
 
    If then the square on :g:`/ A E / <g1:/ A E />` is greater than the square on :g:`/ E B / <g1:/ E B />` by the square on a straight line commensurable with :g:`/ A E / <g1:/ A E />`,
 
-.. step:: assert [G.327] <G.327>
+.. step:: assert ∵ straight_lines_proportional_x_14 <G.327>
 
    The square on :g:`/ C F / <g1:/ C F />` will also be greater than the square on :g:`/ F D / <g1:/ F D />` by the square on a straight line commensurable with :g:`/ C F / <g1:/ C F />`.
 
-.. step:: assert [G.325] <G.325>
+.. step:: assert ∵ magnitudes_commensurable_magnitude <G.325>
 
    And, if :g:`/ A E / <g1:/ A E />` is commensurable with the rational straight line set out, :g:`/ C F / <g1:/ C F />` will also be commensurable with it.
 
-.. step:: assert [G.369] <G.369>
+.. step:: assert ∵ rational_straight_line_def <G.369>
 
    And for this reason each of :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` is a first binomial, that is, the same in order.
 
-.. step:: assert [G.325] <G.325>
+.. step:: assert ∵ magnitudes_commensurable_magnitude <G.325>
 
    But, if :g:`/ E B / <g1:/ E B />` is commensurable with the rational straight line set out, :g:`/ F D / <g1:/ F D />` is also commensurable with it.
 
-.. step:: assert [G.371] <G.371>
+.. step:: assert ∵ lesser_term_commensurable_def <G.371>
 
    And for this reason again :g:`/ C D / <g1:/ C D />` will be the same in order with :g:`/ A B / <g1:/ A B />`, for each of them will be a second binomial.
 
-.. step:: assert [G.326] <G.326>
+.. step:: assert ∵ magnitudes_commensurable_incommensurable <G.326>
 
    But, if neither of :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />` is commensurable with the rational straight line set out, neither of :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />` will be commensurable with it.
 
-.. step:: assert [G.373] <G.373>
+.. step:: assert ∵ terms_commensurable_length_def <G.373>
 
    And each of :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` is a third binomial.
 
@@ -139,7 +137,7 @@ G.387
 
    But, if the square on :g:`/ A E / <g1:/ A E />` is greater than the square on :g:`/ E B / <g1:/ E B />` by the square on a straight line incommensurable with :g:`/ A E / <g1:/ A E />`,
 
-.. step:: assert [G.327] <G.327>
+.. step:: assert ∵ straight_lines_proportional_x_14 <G.327>
 
    The square on :g:`/ C F / <g1:/ C F />` is also greater than the square on :g:`/ F D / <g1:/ F D />` by the square on a straight line incommensurable with :g:`/ C F / <g1:/ C F />`.
 
@@ -147,7 +145,7 @@ G.387
 
    And, if :g:`/ A E / <g1:/ A E />` is commensurable with the rational straight line set out, :g:`/ C F / <g1:/ C F />` is also commensurable with it,
 
-.. step:: assert [G.375] <G.375>
+.. step:: assert ∵ again_square_greater_def <G.375>
 
    And each of :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` is a fourth binomial.
 
@@ -155,7 +153,7 @@ G.387
 
    But, if :g:`/ E B / <g1:/ E B />` is so commensurable, so is :g:`/ F D / <g1:/ F D />` also,
 
-.. step:: assert [G.377] <G.377>
+.. step:: assert ∵ lesser_fifth_binomial_def <G.377>
 
    And each of :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` will be a fifth binomial.
 
@@ -163,7 +161,7 @@ G.387
 
    But, if neither of :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />` is so commensurable, neither of :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />` is commensurable with the rational straight line set out,
 
-.. step:: conclude [G.386] <G.386>
+.. step:: conclude ∵ sixth_binomial_def <G.386>
 
    And each of :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` will be a sixth binomial.
 

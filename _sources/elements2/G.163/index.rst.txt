@@ -24,6 +24,12 @@ G.163
 
    Triangles and parallelograms which are under the same height are to one another as their bases.
 
+.. signature:: theorem
+
+   | :fn:`triangles_parallelograms_height <G.163>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`< A C D > <g1:< A C D >>`, :g:`< E C > <g1:< E C >>`, :g:`< C F > <g1:< C F >>`)
+   | **given** :g:`< A B C > <g1:< A B C >>`, :g:`< A C D > <g1:< A C D >>` be triangles and :g:`< E C > <g1:< E C >>`, :g:`< C F > <g1:< C F >>` parallelograms under the same height
+   | **prove** Since, then, it was proved that, as the base :g:`/ B C / <g1:/ B C />` is to :g:`/ C D / <g1:/ C D />`, so is :g:`< A B C > <g1:< A B C >>` to :g:`< A C D > <g1:< A C D >>`, and, as :g:`< A B C > <g1:< A B C >>` is to :g:`< A C D > <g1:< A C D >>`, so is the parallelogram :g:`< E C > <g1:< E C >>` to the parallelogram :g:`< C F > <g1:< C F >>` → therefore also, as the base :g:`/ B C / <g1:/ B C />` is to the base :g:`/ C D / <g1:/ C D />`, so is the parallelogram :g:`< E C > <g1:< E C >>` to the parallelogram :g:`< F C > <g1:< F C >>`
+
 .. picture:: g1.svg
    :alt: Book VI Proposition 1
 
@@ -31,15 +37,19 @@ G.163
 
    :g:`< A B C > <g1:< A B C >>`, :g:`< A C D > <g1:< A C D >>` be triangles and :g:`< E C > <g1:< E C >>`, :g:`< C F > <g1:< C F >>` parallelograms under the same height
 
+.. step:: assert
+
+   I say that, as the base :g:`/ B C / <g1:/ B C />` is to the base :g:`/ C D / <g1:/ C D />`, so is :g:`< A B C > <g1:< A B C >>` to :g:`< A C D > <g1:< A C D >>`, and the parallelogram :g:`< E C > <g1:< E C >>` to the parallelogram :g:`< C F > <g1:< C F >>`.
+
 .. step:: construct
 
-   For let :g:`/ B D / <g1:/ B D />` be produced in both directions to :g:`H <g1:H>`, :g:`L <g1:L>` and let [any number of straight lines] :g:`/ B G / <g1:/ B G />`, :g:`/ G H / <g1:/ G H />` be made :eq:`equal <g1:/ B G / = g1:/ G H / = g1:/ B C />` to the base :g:`/ B C / <g1:/ B C />`, and any number of straight lines :g:`/ D K / <g1:/ D K />`, :g:`/ K L / <g1:/ K L />` :eq:`equal <g1:/ D K / = g1:/ K L / = g1:/ C D />` to the base :g:`/ C D / <g1:/ C D />`
+   :fn:`extend <G.7>`\ (:g:`/ B D / <g1:/ B D />`) → :g:`H <g1:H>`, :g:`L <g1:L>` and let [any number of straight lines] :g:`/ B G / <g1:/ B G />`, :g:`/ G H / <g1:/ G H />` be made :eq:`equal <g1:/ B G / = g1:/ G H / = g1:/ B C />` to the base :g:`/ B C / <g1:/ B C />`, and any number of straight lines :g:`/ D K / <g1:/ D K />`, :g:`/ K L / <g1:/ K L />` :eq:`equal <g1:/ D K / = g1:/ K L / = g1:/ C D />` to the base :g:`/ C D / <g1:/ C D />`
 
 .. step:: construct
 
-   **segment** :g:`/ A G / <g1:/ A G />`, :g:`/ A H / <g1:/ A H />`, :g:`/ A K / <g1:/ A K />`, :g:`/ A L / <g1:/ A L />`
+   :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`G <g1:G>`) → :g:`/ A G / <g1:/ A G />`, :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`H <g1:H>`) → :g:`/ A H / <g1:/ A H />`, :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`K <g1:K>`) → :g:`/ A K / <g1:/ A K />`, :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`L <g1:L>`) → :g:`/ A L / <g1:/ A L />`
 
-.. step:: assert [G.51] <G.51>
+.. step:: assert ∵ triangles_equal_bases <G.51>
 
    Since :g:`/ C B / <g1:/ C B />`, :g:`/ B G / <g1:/ B G />`, :g:`/ G H / <g1:/ G H />` are :eq:`equal <g1:/ C B / = g1:/ B G / = g1:/ G H />` to one another → :g:`< A B C > <g1:< A B C >>`, :g:`< A G B > <g1:< A G B >>`, :g:`< A H G > <g1:< A H G >>` are also :eq:`equal <g1:< A B C > = g1:< A G B > = g1:< A H G >>` to one another.
 
@@ -55,7 +65,7 @@ G.163
 
    Whatever multiple the base :g:`/ L C / <g1:/ L C />` is of the base :g:`/ C D / <g1:/ C D />`, that multiple also is :g:`< A L C > <g1:< A L C >>` of :g:`< A C D > <g1:< A C D >>`;
 
-.. step:: assert [G.51] <G.51>
+.. step:: assert ∵ triangles_equal_bases <G.51>
 
    And, if the base :g:`/ H C / <g1:/ H C />` is :eq:`equal <g1:/ H C / = g1:/ C L />` to the base :g:`/ C L / <g1:/ C L />`, :g:`< A H C > <g1:< A H C >>` is also :eq:`equal <g1:< A H C > = g1:< A C L >>` to :g:`< A C L > <g1:< A C L >>`.
 
@@ -71,15 +81,15 @@ G.163
 
    If the base :g:`/ H C / <g1:/ H C />` is in excess of the base :g:`/ C L / <g1:/ C L />`, :g:`< A H C > <g1:< A H C >>` is also in excess of :g:`< A L C > <g1:< A L C >>`; if :eq:`equal <g1:/ H C / = g1:/ C L />`, :eq:`equal <g1:< A H C > = g1:< A L C >>`; and, if less, less.
 
-.. step:: assert [G.138] <G.138>
+.. step:: assert ∵ magnitudes_said_ratio_def <G.138>
 
    Therefore, as the base :g:`/ B C / <g1:/ B C />` is to the base :g:`/ C D / <g1:/ C D />`, so is :g:`< A B C > <g1:< A B C >>` to :g:`< A C D > <g1:< A C D >>`.
 
-.. step:: assert [G.54] <G.54>
+.. step:: assert ∵ parallelogram_double_triangle <G.54>
 
    Next, since the parallelogram :g:`< E C > <g1:< E C >>` is double of :g:`< A B C > <g1:< A B C >>`.
 
-.. step:: assert [G.152] <G.152>
+.. step:: assert ∵ parts_ratio_multiples <G.152>
 
    And the parallelogram :g:`< F C > <g1:< F C >>` is double of :g:`< A C D > <g1:< A C D >>`, while parts have the same ratio as the same multiples of them.
 
@@ -87,7 +97,7 @@ G.163
 
    Therefore, as :g:`< A B C > <g1:< A B C >>` is to :g:`< A C D > <g1:< A C D >>`, so is the parallelogram :g:`< E C > <g1:< E C >>` to the parallelogram :g:`< F C > <g1:< F C >>`.
 
-.. step:: conclude [G.148] <G.148>
+.. step:: conclude ∵ ratios_ratio <G.148>
 
    Since, then, it was proved that, as the base :g:`/ B C / <g1:/ B C />` is to :g:`/ C D / <g1:/ C D />`, so is :g:`< A B C > <g1:< A B C >>` to :g:`< A C D > <g1:< A C D >>`, and, as :g:`< A B C > <g1:< A B C >>` is to :g:`< A C D > <g1:< A C D >>`, so is the parallelogram :g:`< E C > <g1:< E C >>` to the parallelogram :g:`< C F > <g1:< C F >>` → therefore also, as the base :g:`/ B C / <g1:/ B C />` is to the base :g:`/ C D / <g1:/ C D />`, so is the parallelogram :g:`< E C > <g1:< E C >>` to the parallelogram :g:`< F C > <g1:< F C >>`.
 

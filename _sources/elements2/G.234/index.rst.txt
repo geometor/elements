@@ -24,6 +24,12 @@ G.234
 
    Given as many numbers as we please, to find the least of those which have the same ratio with them.
 
+.. signature:: problem
+
+   | :fn:`many_numbers_please <G.234>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`) → :g:`E <g1:E>`, :g:`F <g1:F>`
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` be the given numbers, as many as we please
+   | **construct** :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>` are the least of those which have the same ratio with :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`
+
 .. picture:: g1.svg
    :alt: Proposition 33 diagram
 
@@ -35,19 +41,19 @@ G.234
 
    :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` are either prime to one another or not.
 
-.. step:: assert [G.221] <G.221>
+.. step:: assert ∵ numbers_prime_least <G.221>
 
    If :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` are prime to one another, they are the least of those which have the same ratio with them.
 
-.. step:: construct [G.202] <G.202>
+.. step:: construct
 
-   But, if not, let :g:`D <g1:D>` the greatest common measure of :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` be taken, and, as many times as :g:`D <g1:D>` measures the numbers :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` respectively, so many units let there be in the numbers :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>` respectively.
+   :fn:`numbers_prime_find_vii_3 <G.202>`: But, if not, let :g:`D <g1:D>` the greatest common measure of :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` be taken, and, as many times as :g:`D <g1:D>` measures the numbers :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` respectively, so many units let there be in the numbers :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>` respectively.
 
-.. step:: assert [G.216] <G.216>
+.. step:: assert ∵ numbers_multiplying_make <G.216>
 
    Therefore the numbers :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>` measure the numbers :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` respectively according to the units in :g:`D <g1:D>`.
 
-.. step:: assert [G.210] <G.210>
+.. step:: assert ∵ numbers_proportional_multiple_def <G.210>
 
    Therefore :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>` measure :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` the same number of times; therefore :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>` are in the same ratio with :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`.
 
@@ -79,7 +85,7 @@ G.234
 
    And, since :g:`H <g1:H>` measures :g:`A <g1:A>` according to the units in :g:`M <g1:M>`,
 
-.. step:: assert [G.216] <G.216>
+.. step:: assert ∵ numbers_multiplying_make <G.216>
 
    Therefore :g:`M <g1:M>` also measures :g:`A <g1:A>` according to the units in :g:`H <g1:H>`.
 
@@ -95,7 +101,7 @@ G.234
 
    Since :g:`H <g1:H>` measures :g:`A <g1:A>` according to the units in :g:`M <g1:M>`,
 
-.. step:: assert [G.222] <G.222>
+.. step:: assert ∵ number_said_multiply_def <G.222>
 
    Therefore :g:`H <g1:H>` by multiplying :g:`M <g1:M>` has made :g:`A <g1:A>`.
 
@@ -111,7 +117,7 @@ G.234
 
    Therefore the product of :g:`E <g1:E>`, :g:`D <g1:D>` is equal to the product of :g:`H <g1:H>`, :g:`M <g1:M>`.
 
-.. step:: assert [G.219] <G.219>
+.. step:: assert ∵ numbers_proportional_number <G.219>
 
    Therefore, as :g:`E <g1:E>` is to :g:`H <g1:H>`, so is :g:`M <g1:M>` to :g:`D <g1:D>`.
 

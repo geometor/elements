@@ -24,6 +24,12 @@ G.134
 
    Inscribe in a given circle a fifteen-angled figure which shall be both equilateral and equiangular.
 
+.. signature:: problem
+
+   | :fn:`inscribe_pentadecagon_in_circle <G.134>`\ (:g:`( A B C D ) <g1:( A B C D )>`) → :g:`E <g1:E>`
+   | **given** :g:`( A B C D ) <g1:( A B C D )>`
+   | **construct** Further, by proofs similar to those in the case of the pentagon, we can both inscribe a circle in the given fifteen-angled figure and circumscribe one about it
+
 .. picture:: g1.svg
    :alt: Book IV Proposition 16: Fifteen-angled figure inscribed in circle ABCD using triangle side AC and pentagon side AB
 
@@ -31,7 +37,7 @@ G.134
 
    :g:`( A B C D ) <g1:( A B C D )>`
 
-.. step:: assert
+.. step:: construct
 
    In :g:`( A B C D ) <g1:( A B C D )>` let there be inscribed a side :g:`/ A C / <g1:/ A C />` of the equilateral triangle inscribed in it, and a side :g:`/ A B / <g1:/ A B />` of an equilateral pentagon
 
@@ -43,9 +49,9 @@ G.134
 
    Therefore in the remainder :g:`( B C ) <g1:( B C )>` there will be two of the equal segments.
 
-.. step:: assert [G.109] <G.109>
+.. step:: construct
 
-   Let :g:`( B C ) <g1:( B C )>` be :eq:`bisected <g1:( B E ) = g1:( E C )>` at :g:`E <g1:E>`
+   :fn:`bisect_segment <G.17>`\ (:g:`( B C ) <g1:( B C )>`) → :g:`E <g1:E>` (:eq:`bisected <g1:( B E ) = g1:( E C )>`)
 
 .. step:: assert
 

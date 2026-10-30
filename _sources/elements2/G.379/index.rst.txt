@@ -24,12 +24,17 @@ G.379
 
    If an area be contained by a rational straight line and the sixth binomial, the "side" of the area is the irrational straight line called the side of the sum of two medial areas.
 
+.. signature:: theorem
+
+   | :fn:`area_contained_rational_x_59 <G.379>`\ ()
+   | **prove** the "side" of :g:`< A C > <g1:< A C >>` is the side of the sum of two medial areas
+
 .. picture:: g1.svg
    :alt: Proposition 59
 
 .. step:: assert
 
-   For let the area :g:`< A B C D > <g1:< A B C D >>` be contained by the rational straight line :g:`/ A B / <g1:/ A B />` and the sixth binomial :g:`/ A D / <g1:/ A D />`, divided into its terms at :g:`E <g1:E>`, so that :g:`/ A E / <g1:/ A E />` is the greater term
+   Let the area :g:`< A B C D > <g1:< A B C D >>` be contained by the rational straight line :g:`/ A B / <g1:/ A B />` and the sixth binomial :g:`/ A D / <g1:/ A D />`, divided into its terms at :g:`E <g1:E>`, so that :g:`/ A E / <g1:/ A E />` is the greater term
 
 .. step:: construct
 
@@ -43,7 +48,7 @@ G.379
 
    Since :g:`/ E A / <g1:/ E A />` is incommensurable in length with :g:`/ A B / <g1:/ A B />`,
 
-.. step:: assert [G.335] <G.335>
+.. step:: assert ∵ rectangle_contained_rational_x_21 <G.335>
 
    Therefore :g:`/ E A / <g1:/ E A />`, :g:`/ A B / <g1:/ A B />` are rational straight lines commensurable in square only ; therefore :g:`< A K > <g1:< A K >>`, that is, the sum of the squares on :g:`/ M N / <g1:/ M N />`, :g:`/ N O / <g1:/ N O />`, is medial.
 
@@ -51,7 +56,7 @@ G.379
 
    Since :g:`/ E D / <g1:/ E D />` is incommensurable in length with :g:`/ A B / <g1:/ A B />`,
 
-.. step:: assert [G.326, G.335] <G.326, G.335>
+.. step:: assert ∵ magnitudes_commensurable_incommensurable, rectangle_contained_rational_x_21 <G.326, G.335>
 
    Therefore :g:`/ F E / <g1:/ F E />` is also incommensurable with :g:`/ E K / <g1:/ E K />` ; therefore :g:`/ F E / <g1:/ F E />`, :g:`/ E K / <g1:/ E K />` are rational straight lines commensurable in square only ; therefore :g:`< E L > <g1:< E L >>`, that is, :g:`< M R > <g1:< M R >>`, that is, the rectangle :g:`/ M N / <g1:/ M N />`, :g:`/ N O / <g1:/ N O />`, is medial.
 
@@ -59,7 +64,7 @@ G.379
 
    And, since :g:`/ A E / <g1:/ A E />` is incommensurable with :g:`/ E F / <g1:/ E F />`,
 
-.. step:: assert [G.163, G.323] <G.163, G.323>
+.. step:: assert ∵ triangles_parallelograms_height, magnitudes_proportional_commensurable <G.163, G.323>
 
    :g:`< A K > <g1:< A K >>` is also incommensurable with :g:`< E L > <g1:< E L >>`.
 

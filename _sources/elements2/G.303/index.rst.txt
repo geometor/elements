@@ -24,12 +24,17 @@ G.303
 
    If an odd number measure an even number, it will also measure the half of it.
 
+.. signature:: theorem
+
+   | :fn:`odd_number_measure <G.303>`\ ()
+   | **prove** it will also measure the half of it; :g:`C <g1:C>` is not odd
+
 .. picture:: g1.svg
    :alt: Book IX, Proposition 30
 
 .. step:: assert
 
-   For let the odd number :g:`A <g1:A>` measure the even number :g:`B <g1:B>`
+   Let the odd number :g:`A <g1:A>` measure the even number :g:`B <g1:B>`
 
 .. step:: assert
 
@@ -51,7 +56,7 @@ G.303
 
    Therefore :g:`B <g1:B>` is made up of odd numbers the multitude of which is odd.
 
-.. step:: assert [G.296] <G.296>
+.. step:: assert ∵ many_odd_numbers_ix_23 <G.296>
 
    Therefore :g:`B <g1:B>` is odd: which is absurd, for by hypothesis it is even.
 

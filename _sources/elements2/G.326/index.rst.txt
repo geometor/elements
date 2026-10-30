@@ -24,29 +24,27 @@ G.326
 
    If two magnitudes be commensurable, and the one of them be incommensurable with any magnitude, the remaining one is incommensurable with the same.
 
+.. signature:: theorem
+
+   | :fn:`magnitudes_commensurable_incommensurable <G.326>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`/ A B / <g2:/ A B />`)
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>` be two commensurable magnitudes, let one of them, :g:`A <g1:A>`, be incommensurable with any other magnitude :g:`C <g1:C>`; :g:`/ A B / <g2:/ A B />`, :g:`C <g2:C>` be the given two unequal straight lines, let :g:`/ A B / <g2:/ A B />` be the greater of them; :g:`/ A D / <g2:/ A D />`, :g:`/ D B / <g2:/ D B />` be the given two straight lines, let it be required to find the straight line the square on which is equal to the sum of the squares on them
+   | **prove** the remaining one, :g:`B <g1:B>`, will also be incommensurable with :g:`C <g1:C>`; find by what square the square on :g:`/ A B / <g2:/ A B />` is greater than the square on :g:`C <g2:C>`
+
 .. picture:: g1.svg
    :alt: Proposition 13 Diagram
-
-.. enunciation::
-
-   Given two unequal straight lines, to find by what square the square on the greater is greater than the square on the less.
 
 .. picture:: g2.svg
    :alt: Lemma Diagram
 
 .. step:: given
 
-   :g:`A <g1:A>`, :g:`B <g1:B>` be two commensurable magnitudes
-
-.. step:: assert
-
-   Let one of them, :g:`A <g1:A>`, be incommensurable with any other magnitude :g:`C <g1:C>`
+   :g:`A <g1:A>`, :g:`B <g1:B>` be two commensurable magnitudes, let one of them, :g:`A <g1:A>`, be incommensurable with any other magnitude :g:`C <g1:C>`
 
 .. step:: assert
 
    If :g:`B <g1:B>` is commensurable with :g:`C <g1:C>`, while :g:`A <g1:A>` is also commensurable with :g:`B <g1:B>`,
 
-.. step:: assert [G.325] <G.325>
+.. step:: assert ∵ magnitudes_commensurable_magnitude <G.325>
 
    :g:`A <g1:A>` is also commensurable with :g:`C <g1:C>`.
 
@@ -68,25 +66,21 @@ G.326
 
 .. step:: given
 
-   :g:`/ A B / <g2:/ A B />`, :g:`C <g2:C>` be the given two unequal straight lines
-
-.. step:: assert
-
-   Let :g:`/ A B / <g2:/ A B />` be the greater of them
+   :g:`/ A B / <g2:/ A B />`, :g:`C <g2:C>` be the given two unequal straight lines, let :g:`/ A B / <g2:/ A B />` be the greater of them
 
 .. step:: construct
 
    Let the semicircle :g:`( A D B ) <g2:( A D B )>` be described on :g:`/ A B / <g2:/ A B />`
 
-.. step:: assert [G.117] <G.117>
+.. step:: assert ∵ fit_chord_in_circle <G.117>
 
    Let :g:`/ A D / <g2:/ A D />` be fitted into it :eq:`equal <g2:/ A D / = g2:C>` to :g:`C <g2:C>`
 
 .. step:: construct
 
-   **segment** :g:`/ D B / <g2:/ D B />`
+   :fn:`segment <G.3>`\ (:g:`D <g2:D>`, :g:`B <g2:B>`) → :g:`/ D B / <g2:/ D B />`
 
-.. step:: assert [G.110, G.60] <G.110, G.60>
+.. step:: assert ∵ thales_semicircle_theorem, pythagorean_theorem <G.110, G.60>
 
    It is then manifest that :g:`< A D B ) <g2:< A D B )>` is right, and that the square on :g:`/ A B / <g2:/ A B />` is greater than the square on :g:`/ A D / <g2:/ A D />`, that is, :g:`C <g2:C>`, by the square on :g:`/ D B / <g2:/ D B />`.
 
@@ -96,11 +90,7 @@ G.326
 
 .. step:: given
 
-   :g:`/ A D / <g2:/ A D />`, :g:`/ D B / <g2:/ D B />` be the given two straight lines
-
-.. step:: assert
-
-   Let it be required to find the straight line the square on which is equal to the sum of the squares on them.
+   :g:`/ A D / <g2:/ A D />`, :g:`/ D B / <g2:/ D B />` be the given two straight lines, let it be required to find the straight line the square on which is equal to the sum of the squares on them
 
 .. step:: construct
 
@@ -108,11 +98,15 @@ G.326
 
 .. step:: construct
 
-   **segment** :g:`/ A B / <g2:/ A B />`
+   :fn:`segment <G.3>`\ (:g:`A <g2:A>`, :g:`B <g2:B>`) → :g:`/ A B / <g2:/ A B />`
 
-.. step:: conclude [G.60] <G.60>
+.. step:: conclude ∵ pythagorean_theorem <G.60>
 
    It is again manifest that the straight line the square on which is equal to the sum of the squares on :g:`/ A D / <g2:/ A D />`, :g:`/ D B / <g2:/ D B />` is :g:`/ A B / <g2:/ A B />`.
+
+.. enunciation::
+
+   Given two unequal straight lines, to find by what square the square on the greater is greater than the square on the less.
 
 Dependency Graph
 ----------------

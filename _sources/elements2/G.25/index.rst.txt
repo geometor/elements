@@ -24,22 +24,23 @@ G.25
 
    Intersecting lines make their vertical angles equal.
 
+.. signature:: theorem
+
+   | :fn:`vertical_angles_equal <G.25>`\ ()
+   | **prove** :g:`< A E C ) <g1:< A E C )>` is :eq:`equal <g1:< A E C ) = g1:< D E B ); g1:< C E B ) = g1:< A E D )>` to :g:`< D E B ) <g1:< D E B )>`, and :g:`< C E B ) <g1:< C E B )>` to :g:`< A E D ) <g1:< A E D )>`
+
 .. picture:: g1.svg
    :alt: Proposition 15 figure
 
 .. step:: intersect
 
-   For let :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` cut one another at :g:`E <g1:E>`
+   Let :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` cut one another at :g:`E <g1:E>`
 
-.. step:: assert
-
-   :g:`< A E C ) <g1:< A E C )>` is :eq:`equal <g1:< A E C ) = g1:< D E B ); g1:< C E B ) = g1:< A E D )>` to :g:`< D E B ) <g1:< D E B )>`, and :g:`< C E B ) <g1:< C E B )>` to :g:`< A E D ) <g1:< A E D )>`.
-
-.. step:: assert [G.22] <G.22>
+.. step:: assert ∵ adjacent_angles_supplementary <G.22>
 
    Since :g:`/ A E / <g1:/ A E />` stands on :g:`/ C D / <g1:/ C D />`, making :g:`< C E A ) <g1:< C E A )>`, :g:`< A E D ) <g1:< A E D )>` → :g:`< C E A ) <g1:< C E A )>`, :g:`< A E D ) <g1:< A E D )>` are equal to two right angles.
 
-.. step:: assert [G.22] <G.22>
+.. step:: assert ∵ adjacent_angles_supplementary <G.22>
 
    Since :g:`/ D E / <g1:/ D E />` stands on :g:`/ A B / <g1:/ A B />`, making :g:`< A E D ) <g1:< A E D )>`, :g:`< D E B ) <g1:< D E B )>` → :g:`< A E D ) <g1:< A E D )>`, :g:`< D E B ) <g1:< D E B )>` are equal to two right angles.
 
@@ -47,15 +48,15 @@ G.25
 
    :g:`< C E A ) <g1:< C E A )>`, :g:`< A E D ) <g1:< A E D )>` were also proved equal to two right angles
 
-.. step:: assert [G.23, G.1] <G.23, G.1>
+.. step:: assert ∵ right_angles_equal, equal_transitive <G.23, G.1>
 
    Therefore :g:`< C E A ) <g1:< C E A )>`, :g:`< A E D ) <g1:< A E D )>` are equal to :g:`< A E D ) <g1:< A E D )>` :g:`< D E B ) <g1:< D E B )>`.
 
-.. step:: assert
+.. step:: construct
 
    Let :g:`< A E D ) <g1:< A E D )>` be subtracted from each;
 
-.. step:: assert [G.6] <G.6>
+.. step:: assert ∵ subtract_equals <G.6>
 
    Therefore the remaining angle :g:`< C E A ) <g1:< C E A )>` is :eq:`equal <g1:< C E A ) = g1:< B E D )>` to the remaining angle :g:`< B E D ) <g1:< B E D )>`.
 

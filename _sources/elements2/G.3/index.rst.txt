@@ -23,6 +23,12 @@ G.3
 
    Construct a segment between any two points.
 
+.. signature:: postulate
+
+   | :fn:`segment <G.3>`\ (A, B) → / A B /
+   | **given** A, B
+   | **construct** / A B /
+
 Required for
 ------------
 

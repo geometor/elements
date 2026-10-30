@@ -24,18 +24,19 @@ G.146
 
    Magnitudes which have the same ratio to the same are equal; and magnitudes to which the same has the same ratio are equal.
 
+.. signature:: theorem
+
+   | :fn:`magnitudes_ratio_equal <G.146>`\ ()
+   | **prove** :g:`A <g1:A>` is :eq:`equal <g1:A = g1:B>` to :g:`B <g1:B>`; :g:`A <g1:A>` is :eq:`equal <g1:A = g1:B>` to :g:`B <g1:B>`
+
 .. picture:: g1.svg
    :alt: Folio 0160 Figure 1
 
 .. step:: assert
 
-   For let each of the magnitudes :g:`A <g1:A>`, :g:`B <g1:B>` have the same ratio to :g:`C <g1:C>`
+   Let each of the magnitudes :g:`A <g1:A>`, :g:`B <g1:B>` have the same ratio to :g:`C <g1:C>`
 
-.. step:: assert
-
-   :g:`A <g1:A>` is :eq:`equal <g1:A = g1:B>` to :g:`B <g1:B>`.
-
-.. step:: assert [G.145] <G.145>
+.. step:: assert ∵ unequal_magnitudes_greater <G.145>
 
    Otherwise, each of the magnitudes :g:`A <g1:A>`, :g:`B <g1:B>` would not have had the same ratio to :g:`C <g1:C>`
 
@@ -51,11 +52,7 @@ G.146
 
    Let :g:`C <g1:C>` have the same ratio to each of the magnitudes :g:`A <g1:A>`, :g:`B <g1:B>`
 
-.. step:: assert
-
-   :g:`A <g1:A>` is :eq:`equal <g1:A = g1:B>` to :g:`B <g1:B>`.
-
-.. step:: assert [G.145] <G.145>
+.. step:: assert ∵ unequal_magnitudes_greater <G.145>
 
    Otherwise, :g:`C <g1:C>` would not have had the same ratio to each of the magnitudes :g:`A <g1:A>`, :g:`B <g1:B>`
 

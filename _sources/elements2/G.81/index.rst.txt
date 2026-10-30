@@ -24,12 +24,17 @@ G.81
 
    If two circles touch one another, they will not have the same centre.
 
+.. signature:: theorem
+
+   | :fn:`circles_touch_centre <G.81>`\ ()
+   | **prove** they will not have the same center
+
 .. picture:: g1.svg
    :alt: Proposition 6 Diagram
 
 .. step:: assert
 
-   For let the two circles :g:`( A B C ) <g1:( A B C )>`, :g:`( C D E ) <g1:( C D E )>` touch one another at :g:`C <g1:C>`
+   Let the two circles :g:`( A B C ) <g1:( A B C )>`, :g:`( C D E ) <g1:( C D E )>` touch one another at :g:`C <g1:C>`
 
 .. step:: assert
 
@@ -37,17 +42,17 @@ G.81
 
 .. step:: construct
 
-   **segment** :g:`/ F C / <g1:/ F C />`
+   :fn:`segment <G.3>`\ (:g:`F <g1:F>`, :g:`C <g1:C>`) → :g:`/ F C / <g1:/ F C />`
 
 .. step:: construct
 
    Let :g:`/ F E B / <g1:/ F E B />` be drawn through at random.
 
-.. step:: assert
+.. step:: assert ∵ circle_radii <G.2>
 
    Since :g:`F <g1:F>` is the center of :g:`( A B C ) <g1:( A B C )>` → :g:`/ F C / <g1:/ F C />` is :eq:`equal <g1:/ F C / = g1:/ F B />` to :g:`/ F B / <g1:/ F B />`.
 
-.. step:: assert
+.. step:: assert ∵ circle_radii <G.2>
 
    Since :g:`F <g1:F>` is the center of :g:`( C D E ) <g1:( C D E )>` → :g:`/ F C / <g1:/ F C />` is :eq:`equal <g1:/ F C / = g1:/ F E />` to :g:`/ F E / <g1:/ F E />`.
 

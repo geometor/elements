@@ -24,16 +24,17 @@ G.441
 
    If an area be contained by an apotome and the binomial straight line the terms of which are commensurable with the terms of the apotome and in the same ratio, the “side” of the area is rational.
 
+.. signature:: theorem
+
+   | :fn:`area_contained_apotome <G.441>`\ ()
+   | **prove** :g:`G <g1:G>` is rational
+
 .. picture:: g1.svg
    :alt: Proposition 114 diagram
 
 .. step:: assert
 
-   For let an area, the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`, be contained by the apotome :g:`/ A B / <g1:/ A B />` and the binomial straight line :g:`/ C D / <g1:/ C D />`
-
-.. step:: assert
-
-   Let :g:`/ C E / <g1:/ C E />` be the greater term of the latter
+   Let an area, the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`, be contained by the apotome :g:`/ A B / <g1:/ A B />` and the binomial straight line :g:`/ C D / <g1:/ C D />`, and let :g:`/ C E / <g1:/ C E />` be the greater term of the latter
 
 .. step:: assert
 
@@ -45,13 +46,13 @@ G.441
 
 .. step:: construct
 
-   For let a rational straight line :g:`H <g1:H>` be set out, and to :g:`/ C D / <g1:/ C D />` let there be applied a rectangle equal to the square on :g:`H <g1:H>` and producing :g:`/ K L / <g1:/ K L />` as breadth.
+   Let a rational straight line :g:`H <g1:H>` be set out, and to :g:`/ C D / <g1:/ C D />` let there be applied a rectangle equal to the square on :g:`H <g1:H>` and producing :g:`/ K L / <g1:/ K L />` as breadth.
 
 .. step:: assert
 
    Therefore :g:`/ K L / <g1:/ K L />` is an apotome.
 
-.. step:: assert [G.439] <G.439>
+.. step:: assert ∵ square_rational_straight <G.439>
 
    Let its terms be :g:`/ K M / <g1:/ K M />`, :g:`/ M L / <g1:/ M L />` commensurable with the terms :g:`/ C E / <g1:/ C E />`, :g:`/ E D / <g1:/ E D />` of the binomial straight line and in the same ratio.
 
@@ -63,23 +64,23 @@ G.441
 
    Therefore, as :g:`/ A F / <g1:/ A F />` is to :g:`/ F B / <g1:/ F B />`, so is :g:`/ K M / <g1:/ K M />` to :g:`/ M L / <g1:/ M L />`.
 
-.. step:: assert [G.156] <G.156>
+.. step:: assert ∵ whole_whole_part <G.156>
 
    Therefore, alternately, as :g:`/ A F / <g1:/ A F />` is to :g:`/ K M / <g1:/ K M />`, so is :g:`/ B F / <g1:/ B F />` to :g:`/ L M / <g1:/ L M />`; therefore also the remainder :g:`/ A B / <g1:/ A B />` is to the remainder :g:`/ K L / <g1:/ K L />` as :g:`/ A F / <g1:/ A F />` is to :g:`/ K M / <g1:/ K M />`.
 
-.. step:: assert [G.325] <G.325>
+.. step:: assert ∵ magnitudes_commensurable_magnitude <G.325>
 
    :g:`/ A F / <g1:/ A F />` is commensurable with :g:`/ K M / <g1:/ K M />`;
 
-.. step:: assert [G.323] <G.323>
+.. step:: assert ∵ magnitudes_proportional_commensurable <G.323>
 
    Therefore :g:`/ A B / <g1:/ A B />` is also commensurable with :g:`/ K L / <g1:/ K L />`.
 
-.. step:: assert [G.163] <G.163>
+.. step:: assert ∵ triangles_parallelograms_height <G.163>
 
    And, as :g:`/ A B / <g1:/ A B />` is to :g:`/ K L / <g1:/ K L />`, so is the rectangle :g:`/ C D / <g1:/ C D />`, :g:`/ A B / <g1:/ A B />` to the rectangle :g:`/ C D / <g1:/ C D />`, :g:`/ K L / <g1:/ K L />`.
 
-.. step:: assert [G.323] <G.323>
+.. step:: assert ∵ magnitudes_proportional_commensurable <G.323>
 
    Therefore the rectangle :g:`/ C D / <g1:/ C D />`, :g:`/ A B / <g1:/ A B />` is also commensurable with the rectangle :g:`/ C D / <g1:/ C D />`, :g:`/ K L / <g1:/ K L />`.
 
@@ -111,7 +112,7 @@ G.441
 
    It is the "side" of the rectangle :g:`/ C D / <g1:/ C D />`, :g:`/ A B / <g1:/ A B />`.
 
-.. step:: conclude [Q. E. D.] <Q. E. D.>
+.. step:: conclude ∵ Q. E. D. <Q. E. D.>
 
    PORISM. And it is made manifest to us by this also that it is possible for a rational area to be contained by irrational straight lines.
 

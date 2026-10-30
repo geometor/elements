@@ -24,6 +24,12 @@ G.169
 
    If two triangles have one angle equal to one angle, the sides about other angles proportional, and the remaining angles either both less or both not less than a right angle, the triangles is equiangular and will have those angles equal, the sides about which are proportional.
 
+.. signature:: theorem
+
+   | :fn:`triangles_angle_equal_vi_7 <G.169>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>`, :g:`< B A C ) <g1:< B A C )>`, :g:`< E D F ) <g1:< E D F )>`)
+   | **given** :g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>` be two triangles having one angle :eq:`equal <g1:< B A C ) = g1:< E D F )>` to one angle, :g:`< B A C ) <g1:< B A C )>` to :g:`< E D F ) <g1:< E D F )>`, the sides about other angles :g:`< A B C ) <g1:< A B C )>`, :g:`< D E F ) <g1:< D E F )>` proportional , so that, as :g:`/ A B / <g1:/ A B />` is to :g:`/ B C / <g1:/ B C />`, so is :g:`/ D E / <g1:/ D E />` to :g:`/ E F / <g1:/ E F />`, and, first, each of the remaining angles at :g:`< C ) <g1:< C )>`, :g:`< F ) <g1:< F )>` less than a right angle
+   | **prove** :g:`< A B C > <g1:< A B C >>` is :eq:`equiangular <g1:< B A C ) = g1:< E D F ); g1:< A B C ) = g1:< D E F ); g1:< C ) = g1:< F )>` with :g:`< D E F > <g1:< D E F >>`, :g:`< A B C ) <g1:< A B C )>` will be :eq:`equal <g1:< A B C ) = g1:< D E F )>` to :g:`< D E F ) <g1:< D E F )>`, and the remaining angle, namely the angle at :g:`< C ) <g1:< C )>`, :eq:`equal <g1:< C ) = g1:< F )>` to the remaining angle, the angle at :g:`< F ) <g1:< F )>`
+
 .. picture:: g1.svg
    :alt: Proposition 7 diagram, Case 1
 
@@ -36,25 +42,17 @@ G.169
 
 .. step:: assert
 
-   :g:`< A B C > <g1:< A B C >>` is :eq:`equiangular <g1:< B A C ) = g1:< E D F ); g1:< A B C ) = g1:< D E F ); g1:< C ) = g1:< F )>` with :g:`< D E F > <g1:< D E F >>`, :g:`< A B C ) <g1:< A B C )>` will be :eq:`equal <g1:< A B C ) = g1:< D E F )>` to :g:`< D E F ) <g1:< D E F )>`, and the remaining angle, namely the angle at :g:`< C ) <g1:< C )>`, :eq:`equal <g1:< C ) = g1:< F )>` to the remaining angle, the angle at :g:`< F ) <g1:< F )>`.
-
-.. step:: assert
-
    If :g:`< A B C ) <g1:< A B C )>` is unequal to :g:`< D E F ) <g1:< D E F )>`, one of them is greater.
 
 .. step:: assert
 
    Let :g:`< A B C ) <g1:< A B C )>` be greater
 
-.. step:: assert
+.. step:: construct
 
-   And on :g:`/ A B / <g1:/ A B />`
+   :fn:`copy_angle <G.34>`\ (:g:`/ A B / <g1:/ A B />`, :g:`B <g1:B>`, :g:`< D E F ) <g1:< D E F )>`) → :g:`< A B G ) <g1:< A B G )>` (:eq:`equal <g1:< A B G ) = g1:< D E F )>`)
 
-.. step:: construct [G.34] <G.34>
-
-   At :g:`B <g1:B>` on it, let :g:`< A B G ) <g1:< A B G )>` be constructed :eq:`equal <g1:< A B G ) = g1:< D E F )>` to :g:`< D E F ) <g1:< D E F )>`.
-
-.. step:: assert [G.45] <G.45>
+.. step:: assert ∵ triangle_angle_sum <G.45>
 
    Since :g:`< A ) <g1:< A )>` is :eq:`equal <g1:< A ) = g1:< D ); g1:< A B G ) = g1:< D E F )>` to :g:`< D ) <g1:< D )>`, and :g:`< A B G ) <g1:< A B G )>` to :g:`< D E F ) <g1:< D E F )>` → therefore the remaining angle :g:`< A G B ) <g1:< A G B )>` is :eq:`equal <g1:< A G B ) = g1:< D F E )>` to the remaining angle :g:`< D F E ) <g1:< D F E )>`.
 
@@ -62,7 +60,7 @@ G.169
 
    Therefore :g:`< A B G > <g1:< A B G >>` is :eq:`equiangular <g1:< A ) = g1:< D ); g1:< A B G ) = g1:< D E F ); g1:< A G B ) = g1:< D F E )>` with :g:`< D E F > <g1:< D E F >>`.
 
-.. step:: assert [G.166] <G.166>
+.. step:: assert ∵ equiangular_triangles_sides <G.166>
 
    Therefore, as :g:`/ A B / <g1:/ A B />` is to :g:`/ B G / <g1:/ B G />`, so is :g:`/ D E / <g1:/ D E />` to :g:`/ E F / <g1:/ E F />`.
 
@@ -70,15 +68,15 @@ G.169
 
    But, as :g:`/ D E / <g1:/ D E />` is to :g:`/ E F / <g1:/ E F />`, so by hypothesis is :g:`/ A B / <g1:/ A B />` to :g:`/ B C / <g1:/ B C />`
 
-.. step:: assert [G.148] <G.148>
+.. step:: assert ∵ ratios_ratio <G.148>
 
    Therefore :g:`/ A B / <g1:/ A B />` has the same ratio to each of :g:`/ B C / <g1:/ B C />`, :g:`/ B G / <g1:/ B G />`.
 
-.. step:: assert [G.146] <G.146>
+.. step:: assert ∵ magnitudes_ratio_equal <G.146>
 
    Therefore :g:`/ B C / <g1:/ B C />` is :eq:`equal <g1:/ B C / = g1:/ B G />` to :g:`/ B G / <g1:/ B G />`,
 
-.. step:: assert [G.12] <G.12>
+.. step:: assert ∵ isosceles_base_angles <G.12>
 
    So that the angle at :g:`< C ) <g1:< C )>` is also :eq:`equal <g1:< C ) = g1:< B G C )>` to :g:`< B G C ) <g1:< B G C )>`.
 
@@ -90,7 +88,7 @@ G.169
 
    Therefore :g:`< B G C ) <g1:< B G C )>` is also less than a right angle;
 
-.. step:: assert [G.22] <G.22>
+.. step:: assert ∵ adjacent_angles_supplementary <G.22>
 
    So that :g:`< A G B ) <g1:< A G B )>` adjacent to it is greater than a right angle.
 
@@ -118,7 +116,7 @@ G.169
 
    The angle at :g:`< B A C ) <g1:< B A C )>` is also :eq:`equal <g1:< B A C ) = g1:< E D F )>` to the angle at :g:`< E D F ) <g1:< E D F )>`
 
-.. step:: assert [G.45] <G.45>
+.. step:: assert ∵ triangle_angle_sum <G.45>
 
    Therefore the remaining angle at :g:`< B C A ) <g1:< B C A )>` is :eq:`equal <g1:< B C A ) = g1:< D F E )>` to the remaining angle at :g:`< D F E ) <g1:< D F E )>`.
 
@@ -142,7 +140,7 @@ G.169
 
    :g:`/ B C / <g2:/ B C />` is :eq:`equal <g2:/ B C / = g2:/ B G />` to :g:`/ B G / <g2:/ B G />`;
 
-.. step:: assert [G.12] <G.12>
+.. step:: assert ∵ isosceles_base_angles <G.12>
 
    So that the angle at :g:`< B C A ) <g2:< B C A )>` is also :eq:`equal <g2:< B C A ) = g2:< B G C )>` to :g:`< B G C ) <g2:< B G C )>`.
 
@@ -154,7 +152,7 @@ G.169
 
    Therefore neither is :g:`< B G C ) <g2:< B G C )>` less than a right angle.
 
-.. step:: assert [G.28] <G.28>
+.. step:: assert ∵ two_angles_less_than_two_right <G.28>
 
    Thus in :g:`< B G C > <g2:< B G C >>` the two angles are not less than two right angles: which is impossible.
 
@@ -170,7 +168,7 @@ G.169
 
    The angle at :g:`< B A C ) <g2:< B A C )>` is also :eq:`equal <g2:< B A C ) = g2:< E D F )>` to the angle at :g:`< E D F ) <g2:< E D F )>`
 
-.. step:: assert [G.45] <G.45>
+.. step:: assert ∵ triangle_angle_sum <G.45>
 
    Therefore the remaining angle at :g:`< B C A ) <g2:< B C A )>` is :eq:`equal <g2:< B C A ) = g2:< D F E )>` to the remaining angle at :g:`< D F E ) <g2:< D F E )>`.
 

@@ -24,6 +24,12 @@ G.233
 
    Any number either is prime or is measured by some prime number.
 
+.. signature:: theorem
+
+   | :fn:`number_prime_measured <G.233>`\ (:g:`A <g1:A>`)
+   | **given** :g:`A <g1:A>` be a number
+   | **prove** :g:`A <g1:A>` either is prime or is measured by some prime number
+
 .. picture:: g1.svg
    :alt: Proposition 32 diagram
 
@@ -35,7 +41,7 @@ G.233
 
    If now :g:`A <g1:A>` is prime, that which was enjoined will have been done.
 
-.. step:: assert [G.232] <G.232>
+.. step:: assert ∵ composite_number_measured <G.232>
 
    If it is composite, some prime number will measure it.
 

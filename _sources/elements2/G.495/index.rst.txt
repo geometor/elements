@@ -24,16 +24,21 @@ G.495
 
    In equal pyramids which have triangular bases the bases are reciprocally proportional to the heights; and those pyramids in which the bases are reciprocally proportional to the heights are equal.
 
+.. signature:: theorem
+
+   | :fn:`equal_pyramids_triangular <G.495>`\ ()
+   | **prove** in the pyramids :g:`< A B C G > <g1:< A B C G >>`, :g:`< D E F H > <g1:< D E F H >>` the bases are reciprocally proportional to the heights, that is, as the base :g:`< A B C > <g1:< A B C >>` is to the base :g:`< D E F > <g1:< D E F >>`, so is the height of the pyramid :g:`< D E F H > <g1:< D E F H >>` to the height of the pyramid :g:`< A B C G > <g1:< A B C G >>`; the pyramid :g:`< A B C G > <g1:< A B C G >>` is :eq:`equal <g1:< A B C G > = g1:< D E F H >>` to the pyramid :g:`< D E F H > <g1:< D E F H >>`
+
 .. picture:: g1.svg
    :alt: Book XII, Proposition 9
 
 .. step:: assert
 
-   For let there be :eq:`equal <g1:< A B C G > = g1:< D E F H >>` pyramids which have the triangular bases :g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>` and vertices :g:`G <g1:G>`, :g:`H <g1:H>`
+   Let there be :eq:`equal <g1:< A B C G > = g1:< D E F H >>` pyramids which have the triangular bases :g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>` and vertices :g:`G <g1:G>`, :g:`H <g1:H>`
 
 .. step:: assert
 
-   For let the parallelepipedal solids :g:`< B G M L > <g1:< B G M L >>`, :g:`< E H Q P > <g1:< E H Q P >>` be completed.
+   Let the parallelepipedal solids :g:`< B G M L > <g1:< B G M L >>`, :g:`< E H Q P > <g1:< E H Q P >>` be completed.
 
 .. step:: assert
 
@@ -43,7 +48,7 @@ G.495
 
    Therefore the solid :g:`< B G M L > <g1:< B G M L >>` is :eq:`equal <g1:< B G M L > = g1:< E H Q P >>` to the solid :g:`< E H Q P > <g1:< E H Q P >>`.
 
-.. step:: assert [G.481] <G.481>
+.. step:: assert ∵ equal_parallelepipedal_solids <G.481>
 
    In equal parallelepipedal solids the bases are reciprocally proportional to the heights.
 
@@ -51,11 +56,11 @@ G.495
 
    Therefore, as the base :g:`< B C M A > <g1:< B C M A >>` is to the base :g:`< E F Q D > <g1:< E F Q D >>`, so is the height of the solid :g:`< E H Q P > <g1:< E H Q P >>` to the height of the solid :g:`< B G M L > <g1:< B G M L >>`.
 
-.. step:: assert [G.47] <G.47>
+.. step:: assert ∵ parallelogram_properties <G.47>
 
    But, as the base :g:`< B C M A > <g1:< B C M A >>` is to :g:`< E F Q D > <g1:< E F Q D >>`, so is :g:`< A B C > <g1:< A B C >>` to :g:`< D E F > <g1:< D E F >>`.
 
-.. step:: assert [G.148] <G.148>
+.. step:: assert ∵ ratios_ratio <G.148>
 
    Therefore also, as :g:`< A B C > <g1:< A B C >>` is to :g:`< D E F > <g1:< D E F >>`, so is the height of the solid :g:`< E H Q P > <g1:< E H Q P >>` to the height of the solid :g:`< B G M L > <g1:< B G M L >>`.
 
@@ -81,13 +86,9 @@ G.495
 
 .. step:: assert
 
-   The pyramid :g:`< A B C G > <g1:< A B C G >>` is :eq:`equal <g1:< A B C G > = g1:< D E F H >>` to the pyramid :g:`< D E F H > <g1:< D E F H >>`.
-
-.. step:: assert
-
    With the same construction, since, as the base :g:`< A B C > <g1:< A B C >>` is to the base :g:`< D E F > <g1:< D E F >>`, so is the height of the pyramid :g:`< D E F H > <g1:< D E F H >>` to the height of the pyramid :g:`< A B C G > <g1:< A B C G >>`, while, as the base :g:`< A B C > <g1:< A B C >>` is to the base :g:`< D E F > <g1:< D E F >>`, so is the parallelogram :g:`< B C M A > <g1:< B C M A >>` to the parallelogram :g:`< E F Q D > <g1:< E F Q D >>`,
 
-.. step:: assert [G.148] <G.148>
+.. step:: assert ∵ ratios_ratio <G.148>
 
    Therefore also, as the parallelogram :g:`< B C M A > <g1:< B C M A >>` is to the parallelogram :g:`< E F Q D > <g1:< E F Q D >>`, so is the height of the pyramid :g:`< D E F H > <g1:< D E F H >>` to the height of the pyramid :g:`< A B C G > <g1:< A B C G >>`.
 
@@ -99,7 +100,7 @@ G.495
 
    Therefore, as the base :g:`< B C M A > <g1:< B C M A >>` is to the base :g:`< E F Q D > <g1:< E F Q D >>`, so is the height of the parallelepiped :g:`< E H Q P > <g1:< E H Q P >>` to the height of the parallelepiped :g:`< B G M L > <g1:< B G M L >>`.
 
-.. step:: assert [G.481] <G.481>
+.. step:: assert ∵ equal_parallelepipedal_solids <G.481>
 
    Those parallelepipedal solids in which the bases are reciprocally proportional to the heights are equal .
 

@@ -24,6 +24,12 @@ G.72
 
    Cut a given straight line so that the rectangle contained by the whole and one of the segments is equal to the square on the remaining segment.
 
+.. signature:: problem
+
+   | :fn:`cut_extreme_and_mean_ratio <G.72>`\ (:g:`/ A B / <g1:/ A B />`) → :g:`H <g1:H>`, :g:`/ B H / <g1:/ B H />`
+   | **given** :g:`/ A B / <g1:/ A B />`
+   | **construct** :g:`/ A B / <g1:/ A B />` has been cut at :g:`H <g1:H>` so as to make the rectangle contained by :g:`/ A B / <g1:/ A B />`, :g:`/ B H / <g1:/ B H />` :eq:`equal <g1:< H B D K > = g1:< A F G H >>` to the square on :g:`/ A H / <g1:/ A H />`
+
 .. picture:: g1.svg
    :alt: 0416.g1
 
@@ -31,25 +37,21 @@ G.72
 
    :g:`/ A B / <g1:/ A B />`
 
-.. step:: construct [G.59] <G.59>
+.. step:: construct
 
-   For let the square :g:`< A B D C > <g1:< A B D C >>` be described on :g:`/ A B / <g1:/ A B />`
-
-.. step:: assert
-
-   Let :g:`/ A C / <g1:/ A C />` be :eq:`bisected <g1:/ A E / = g1:/ E C />` at :g:`E <g1:E>`
+   :fn:`square_on_segment <G.59>`: Let the square :g:`< A B D C > <g1:< A B D C >>` be described on :g:`/ A B / <g1:/ A B />`
 
 .. step:: construct
 
-   **segment** :g:`/ B E / <g1:/ B E />`
+   :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`C <g1:C>`) → :g:`/ A C / <g1:/ A C />`, :fn:`segment <G.3>`\ () → :g:`E <g1:E>`, :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`E <g1:E>`) → :g:`/ B E / <g1:/ B E />`
 
 .. step:: construct
 
-   Let :g:`/ C A / <g1:/ C A />` be drawn through to :g:`F <g1:F>`
+   :fn:`extend <G.7>`\ (:g:`/ C A / <g1:/ C A />`) → :g:`F <g1:F>`
 
 .. step:: construct
 
-   Let :g:`/ E F / <g1:/ E F />` be made :eq:`equal <g1:/ E F / = g1:/ B E />` to :g:`/ B E / <g1:/ B E />`
+   :fn:`cut_equal_segment <G.9>`\ (:g:`/ B E / <g1:/ B E />`) → :g:`/ E F / <g1:/ E F />` (:eq:`equal <g1:/ E F / = g1:/ B E />`)
 
 .. step:: construct
 
@@ -57,13 +59,9 @@ G.72
 
 .. step:: construct
 
-   Let :g:`/ G H / <g1:/ G H />` be drawn through to :g:`K <g1:K>`.
+   :fn:`extend <G.7>`\ (:g:`/ G H / <g1:/ G H />`) → :g:`K <g1:K>`
 
-.. step:: assert
-
-   :g:`/ A B / <g1:/ A B />` has been cut at :g:`H <g1:H>` so as to make the rectangle contained by :g:`/ A B / <g1:/ A B />`, :g:`/ B H / <g1:/ B H />` :eq:`equal <g1:< H B D K > = g1:< A F G H >>` to the square on :g:`/ A H / <g1:/ A H />`.
-
-.. step:: assert [G.67] <G.67>
+.. step:: assert ∵ bisected_and_extended_segment <G.67>
 
    Since :g:`/ A C / <g1:/ A C />` has been :eq:`bisected <g1:/ A E / = g1:/ E C />` at :g:`E <g1:E>`, and :g:`/ F A / <g1:/ F A />` is added to it → the rectangle contained by :g:`/ C F / <g1:/ C F />`, :g:`/ F A / <g1:/ F A />` together with the square on :g:`/ A E / <g1:/ A E />` is equal to the square on :g:`/ E F / <g1:/ E F />`.
 
@@ -75,7 +73,7 @@ G.72
 
    Therefore the rectangle :g:`/ C F / <g1:/ C F />`, :g:`/ F A / <g1:/ F A />` together with the square on :g:`/ A E / <g1:/ A E />` is equal to the square on :g:`/ E B / <g1:/ E B />`.
 
-.. step:: assert [G.60] <G.60>
+.. step:: assert ∵ pythagorean_theorem <G.60>
 
    The squares on :g:`/ B A / <g1:/ B A />`, :g:`/ A E / <g1:/ A E />` are equal to the square on :g:`/ E B / <g1:/ E B />`, for the angle at :g:`< B A E ) <g1:< B A E )>` is right:
 
@@ -83,7 +81,7 @@ G.72
 
    Therefore the rectangle :g:`/ C F / <g1:/ C F />`, :g:`/ F A / <g1:/ F A />` together with the square on :g:`/ A E / <g1:/ A E />` is equal to the squares on :g:`/ B A / <g1:/ B A />`, :g:`/ A E / <g1:/ A E />`.
 
-.. step:: assert
+.. step:: construct
 
    Let the square on :g:`/ A E / <g1:/ A E />` be subtracted from each
 
@@ -103,7 +101,7 @@ G.72
 
    Therefore :g:`< C F G K > <g1:< C F G K >>` is :eq:`equal <g1:< C F G K > = g1:< A B D C >>` to :g:`< A B D C > <g1:< A B D C >>`.
 
-.. step:: assert
+.. step:: construct
 
    Let :g:`< A H K C > <g1:< A H K C >>` be subtracted from each
 

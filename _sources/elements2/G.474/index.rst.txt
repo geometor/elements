@@ -23,6 +23,10 @@ G.474
 
    :term:`**Equal and similar solid figures** <equal-and-similar-solid-figures>` are those contained by similar planes equal in multitude and in magnitude.
 
+.. signature:: def
+
+   | :fn:`equal_similar_solid_def <G.474>`
+
 Required for
 ------------
 

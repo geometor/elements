@@ -24,6 +24,11 @@ G.315
 
    If, when the less of two unequal magnitudes is continually subtracted in turn from the greater, that which is left never measures the one before it, the magnitudes is incommensurable.
 
+.. signature:: theorem
+
+   | :fn:`less_unequal_magnitudes <G.315>`\ ()
+   | **prove** the magnitudes :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` are incommensurable
+
 .. picture:: g1.svg
    :alt: Book X, Proposition 2
 
@@ -37,27 +42,15 @@ G.315
 
 .. step:: assert
 
-   Let a magnitude measure them, if possible
+   Let a magnitude measure them, if possible, and let it be :g:`E <g1:E>`
 
 .. step:: assert
 
-   Let it be :g:`E <g1:E>`
+   Let :g:`/ A B / <g1:/ A B />`, measuring :g:`/ F D / <g1:/ F D />`, leave :g:`/ C F / <g1:/ C F />` less than itself, let :g:`/ C F / <g1:/ C F />` measuring :g:`/ B G / <g1:/ B G />`, leave :g:`/ A G / <g1:/ A G />` less than itself, and let this process be repeated continually, until there is left some magnitude which is less than :g:`E <g1:E>`.
 
 .. step:: assert
 
-   Let :g:`/ A B / <g1:/ A B />`, measuring :g:`/ F D / <g1:/ F D />`, leave :g:`/ C F / <g1:/ C F />` less than itself, let :g:`/ C F / <g1:/ C F />` measuring :g:`/ B G / <g1:/ B G />`, leave :g:`/ A G / <g1:/ A G />` less than itself
-
-.. step:: assert
-
-   Let this process be repeated continually, until there is left some magnitude which is less than :g:`E <g1:E>`.
-
-.. step:: assert
-
-   Suppose this done
-
-.. step:: assert
-
-   Let there be left :g:`/ A G / <g1:/ A G />` less than :g:`E <g1:E>`.
+   Suppose this done, and let there be left :g:`/ A G / <g1:/ A G />` less than :g:`E <g1:E>`.
 
 .. step:: assert
 
@@ -95,7 +88,7 @@ G.315
 
    Which is impossible.
 
-.. step:: conclude [G.314] <G.314>
+.. step:: conclude ∵ magnitudes_said_commensurable_def <G.314>
 
    Therefore no magnitude will measure the magnitudes :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`; therefore the magnitudes :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` are incommensurable.
 

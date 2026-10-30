@@ -24,6 +24,12 @@ G.219
 
    If four numbers be proportional, the number produced from the first and fourth will equals the number produced from the second and third; and, if the number produced from the first and fourth equals that produced from the second and third, the four numbers is proportional.
 
+.. signature:: theorem
+
+   | :fn:`numbers_proportional_number <G.219>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`)
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` be four numbers in proportion, so that, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`
+   | **prove** :g:`E <g1:E>` is :eq:`equal <g1:E = g1:F>` to :g:`F <g1:F>`
+
 .. picture:: g1.svg
    :alt: Book VII, Proposition 19
 
@@ -33,25 +39,17 @@ G.219
 
 .. step:: assert
 
-   And let :g:`A <g1:A>` by multiplying :g:`D <g1:D>` make :g:`E <g1:E>`
+   And let :g:`A <g1:A>` by multiplying :g:`D <g1:D>` make :g:`E <g1:E>`, and let :g:`B <g1:B>` by multiplying :g:`C <g1:C>` make :g:`F <g1:F>`
 
 .. step:: assert
 
-   Let :g:`B <g1:B>` by multiplying :g:`C <g1:C>` make :g:`F <g1:F>`
-
-.. step:: assert
-
-   :g:`E <g1:E>` is :eq:`equal <g1:E = g1:F>` to :g:`F <g1:F>`.
-
-.. step:: assert
-
-   For let :g:`A <g1:A>` by multiplying :g:`C <g1:C>` make :g:`G <g1:G>`.
+   Let :g:`A <g1:A>` by multiplying :g:`C <g1:C>` make :g:`G <g1:G>`.
 
 .. step:: assert
 
    Since, then, :g:`A <g1:A>` by multiplying :g:`C <g1:C>` has made :g:`G <g1:G>`, and by multiplying :g:`D <g1:D>` has made :g:`E <g1:E>`, the number :g:`A <g1:A>` by multiplying the two numbers :g:`C <g1:C>`, :g:`D <g1:D>` has made :g:`G <g1:G>`, :g:`E <g1:E>`.
 
-.. step:: assert [G.217] <G.217>
+.. step:: assert ∵ number_multiplying_numbers <G.217>
 
    Therefore, as :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`G <g1:G>` to :g:`E <g1:E>`.
 
@@ -67,7 +65,7 @@ G.219
 
    Since :g:`A <g1:A>` by multiplying :g:`C <g1:C>` has made :g:`G <g1:G>`, but, further, :g:`B <g1:B>` has also by multiplying :g:`C <g1:C>` made :g:`F <g1:F>`, the two numbers :g:`A <g1:A>`, :g:`B <g1:B>` by multiplying a certain number :g:`C <g1:C>` have made :g:`G <g1:G>`, :g:`F <g1:F>`.
 
-.. step:: assert [G.218] <G.218>
+.. step:: assert ∵ numbers_multiplying_number <G.218>
 
    Therefore, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`G <g1:G>` to :g:`F <g1:F>`.
 
@@ -83,7 +81,7 @@ G.219
 
    Therefore :g:`G <g1:G>` has to each of the numbers :g:`E <g1:E>`, :g:`F <g1:F>` the same ratio;
 
-.. step:: assert [G.146] <G.146>
+.. step:: assert ∵ magnitudes_ratio_equal <G.146>
 
    Therefore :g:`E <g1:E>` is :eq:`equal <g1:E = g1:F>` to :g:`F <g1:F>`.
 
@@ -93,13 +91,17 @@ G.219
 
 .. step:: assert
 
+   I say that, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`.
+
+.. step:: assert
+
    With the same construction → since :g:`E <g1:E>` is :eq:`equal <g1:E = g1:F>` to :g:`F <g1:F>`,
 
-.. step:: assert [G.142] <G.142>
+.. step:: assert ∵ equal_magnitudes_ratio <G.142>
 
    Therefore, as :g:`G <g1:G>` is to :g:`E <g1:E>`, so is :g:`G <g1:G>` to :g:`F <g1:F>`.
 
-.. step:: assert [G.217, G.218] <G.217, G.218>
+.. step:: assert ∵ number_multiplying_numbers, numbers_multiplying_number <G.217, G.218>
 
    But, as :g:`G <g1:G>` is to :g:`E <g1:E>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`, and, as :g:`G <g1:G>` is to :g:`F <g1:F>`, so is :g:`A <g1:A>` to :g:`B <g1:B>`.
 

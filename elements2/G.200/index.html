@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=156d9f89" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=3d8cc37d" />
   <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -49,7 +49,7 @@
           <a href="../../log/index.html"  >log</a>
         </li>
         <li>
-          <a href="../index.html"  >Elements 2.0 (G Index)</a>
+          <a href="../index.html" class="is-active" aria-selected="true" >Elements 2.0 (G Index)</a>
         </li>
       </ul>
     </nav>
@@ -92,6 +92,12 @@
         <span id="g-200"></span><span id="id1"></span><h1>G.200<a class="headerlink" href="#vii-1" title="Link to this heading">¶</a></h1>
         <p class="rubric"><a class="reference external" href="https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/01/" title="VII.1: Two unequal numbers being set out, and the less being continually subtracted in turn from the greater, if the number which is left never measures the one before it until an unit…">VII.1</a></p>
         <div class="enunciation">Two unequal numbers being set out, and the less being continually subtracted in turn from the greater, if the number which is left never measures the one before it until an unit is left, the original numbers is prime to one another.</div>
+        <div class="geom-signature geom-signature-theorem">
+        <div class="line-block">
+        <div class="line"><span class="geom-fn geom-fn-def" data-ref-target="G.200" title="G.200: Two unequal numbers being set out, and the less being continually subtracted in turn from the greater, if the number which is left never measures the one before it until an unit…">unequal_numbers_set</span>()</div>
+        <div class="line"><strong>prove</strong> <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span>, <span class="geom-ref" data-ref="g1:/ C D /" title="/ C D /">/ C D /</span> are prime to one another, that is, that an unit alone measures <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span>, <span class="geom-ref" data-ref="g1:/ C D /" title="/ C D /">/ C D /</span></div>
+        </div>
+        </div>
         <figure class="photon-picture photon-svg">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 -12 135 198" width="135" height="198" class="euclid-graphic" data-graphic-id="g1" data-graphic="g1" data-proposition="VII.1">
           <defs>
@@ -170,10 +176,8 @@
         </figure>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> The less of two unequal numbers <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span>, <span class="geom-ref" data-ref="g1:/ C D /" title="/ C D /">/ C D /</span> being continually subtracted from the greater, let the number which is left never measure the one before it until an unit is left</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> If <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span>, <span class="geom-ref" data-ref="g1:/ C D /" title="/ C D /">/ C D /</span> are not prime to one another, some number will measure them.</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Let a number measure them</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Let it be <span class="geom-ref" data-ref="g1:E" title="E">E</span></div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Let <span class="geom-ref" data-ref="g1:/ C D /" title="/ C D /">/ C D /</span>, measuring <span class="geom-ref" data-ref="g1:/ F B /" title="/ F B /">/ F B /</span>, leave <span class="geom-ref" data-ref="g1:/ A F /" title="/ A F /">/ A F /</span> less than itself, let <span class="geom-ref" data-ref="g1:/ A F /" title="/ A F /">/ A F /</span>, measuring <span class="geom-ref" data-ref="g1:/ G D /" title="/ G D /">/ G D /</span>, leave <span class="geom-ref" data-ref="g1:/ C G /" title="/ C G /">/ C G /</span> less than itself</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Let <span class="geom-ref" data-ref="g1:/ C G /" title="/ C G /">/ C G /</span>, measuring <span class="geom-ref" data-ref="g1:/ H F /" title="/ H F /">/ H F /</span>, leave an unit <span class="geom-ref" data-ref="g1:/ A H /" title="/ A H /">/ A H /</span>.</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Let a number measure them, and let it be <span class="geom-ref" data-ref="g1:E" title="E">E</span></div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Let <span class="geom-ref" data-ref="g1:/ C D /" title="/ C D /">/ C D /</span>, measuring <span class="geom-ref" data-ref="g1:/ F B /" title="/ F B /">/ F B /</span>, leave <span class="geom-ref" data-ref="g1:/ A F /" title="/ A F /">/ A F /</span> less than itself, let <span class="geom-ref" data-ref="g1:/ A F /" title="/ A F /">/ A F /</span>, measuring <span class="geom-ref" data-ref="g1:/ G D /" title="/ G D /">/ G D /</span>, leave <span class="geom-ref" data-ref="g1:/ C G /" title="/ C G /">/ C G /</span> less than itself, and let <span class="geom-ref" data-ref="g1:/ C G /" title="/ C G /">/ C G /</span>, measuring <span class="geom-ref" data-ref="g1:/ H F /" title="/ H F /">/ H F /</span>, leave an unit <span class="geom-ref" data-ref="g1:/ A H /" title="/ A H /">/ A H /</span>.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Since, then, <span class="geom-ref" data-ref="g1:E" title="E">E</span> measures <span class="geom-ref" data-ref="g1:/ C D /" title="/ C D /">/ C D /</span>, and <span class="geom-ref" data-ref="g1:/ C D /" title="/ C D /">/ C D /</span> measures <span class="geom-ref" data-ref="g1:/ F B /" title="/ F B /">/ F B /</span>,</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore <span class="geom-ref" data-ref="g1:E" title="E">E</span> also measures <span class="geom-ref" data-ref="g1:/ F B /" title="/ F B /">/ F B /</span>.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> It also measures the whole <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span>;</div>
@@ -186,7 +190,7 @@
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore <span class="geom-ref" data-ref="g1:E" title="E">E</span> also measures <span class="geom-ref" data-ref="g1:/ H F /" title="/ H F /">/ H F /</span>.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> It also measures the whole <span class="geom-ref" data-ref="g1:/ A F /" title="/ A F /">/ A F /</span>;</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore it will also measure the remainder, the unit <span class="geom-ref" data-ref="g1:/ A H /" title="/ A H /">/ A H /</span>, though it is a number: which is impossible.</div>
-        <div class="geom-step geom-step-conclude" data-step-kind="conclude"><a class="justification" href="../G.199/index.html#g-199" data-ref-target="G.199" title="G.199: Numbers prime to one another are those which are measured by an unit alone as a common measure.">[G.199]</a><span class="geom-step-badge geom-badge-conclude">conclude</span> Therefore no number will measure the numbers <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span>, <span class="geom-ref" data-ref="g1:/ C D /" title="/ C D /">/ C D /</span>; therefore <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span>, <span class="geom-ref" data-ref="g1:/ C D /" title="/ C D /">/ C D /</span> are prime to one another.</div>
+        <div class="geom-step geom-step-conclude" data-step-kind="conclude"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.199/index.html#g-199" data-ref-target="G.199" title="G.199: Numbers prime to one another are those which are measured by an unit alone as a common measure.">numbers_prime_measured_def</a></span><span class="geom-step-badge geom-badge-conclude">conclude</span> Therefore no number will measure the numbers <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span>, <span class="geom-ref" data-ref="g1:/ C D /" title="/ C D /">/ C D /</span>; therefore <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span>, <span class="geom-ref" data-ref="g1:/ C D /" title="/ C D /">/ C D /</span> are prime to one another.</div>
         <section class="level-2" id="dependency-graph">
         <h2>Dependency Graph<a class="headerlink" href="#dependency-graph" title="Link to this heading">¶</a></h2>
         <div class="graphviz"><object data="../../_images/graphviz-235c2e6d52cd7b2f10df771bac17c5e2a1c3c914.svg" type="image/svg+xml" class="graphviz">
@@ -448,28 +452,28 @@
   <footer>
     <div class="footer-nav">
       <ul>
-        <li><a href="../../about.html">about</a></li>
-        <li><a href="../../connect.html">connect</a></li>
-        <li><a href="../../glossary.html">glossary</a></li>
-        <li><a href="../../todos/index.html">todos</a></li>
-        <li><a href="../../changelog.html">changelog</a></li>
+        <li><a href="../../about.html"  >about</a></li>
+        <li><a href="../../connect.html"  >connect</a></li>
+        <li><a href="../../glossary.html"  >glossary</a></li>
+        <li><a href="../../todos/index.html"  >todos</a></li>
+        <li><a href="../../changelog.html"  >changelog</a></li>
       </ul>
     </div>
     <hr />
     <div role="contentinfo">
       <p>
-        &copy; Copyright .
+        &copy; Copyright 2026, GEOMETOR.
       </p>
     </div>
   </footer>
 
   <script src="../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+  <script src="../../_static/documentation_options.js?v=d5a15cff"></script>
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
-  <script src="../../_static/js/geometor_interactive.js?v=421e4467"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=4430a5d4"></script>
   <script src="../../_static/js/search_highlight.js"></script>
 
 </body>

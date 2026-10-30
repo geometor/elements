@@ -24,6 +24,12 @@ G.468
 
    Construct a solid angle out of three plane angles two of which, taken together in any manner, are greater than the remaining one: thus the three angles must be less than four right angles.
 
+.. signature:: problem
+
+   | :fn:`construct_solid_angle <G.468>`\ (:g:`< A B C ) <g1:< A B C )>`, :g:`< D E F ) <g1:< D E F )>`, :g:`< G H K ) <g1:< G H K )>`) → :g:`/ O R / <g2:/ O R />`, :g:`/ B C / <g3:/ B C />`
+   | **given** :g:`< A B C ) <g1:< A B C )>`, :g:`< D E F ) <g1:< D E F )>`, :g:`< G H K ) <g1:< G H K )>` be the three given plane angles, let two of these, taken together in any manner, be greater than the remaining one, while, further, the three are less than four right angles
+   | **construct** If then we cut off :g:`/ O R / <g2:/ O R />` :eq:`equal <g2:/ O R / = g3:/ B C />` to :g:`/ B C / <g3:/ B C />`, the square on :g:`/ A B / <g3:/ A B />` will be greater than the square on :g:`/ L O / <g2:/ L O />` by the square on :g:`/ O R / <g2:/ O R />`
+
 .. picture:: g1.svg
    :alt: Proposition 23, Figure 1
 
@@ -35,11 +41,7 @@ G.468
 
 .. step:: given
 
-   :g:`< A B C ) <g1:< A B C )>`, :g:`< D E F ) <g1:< D E F )>`, :g:`< G H K ) <g1:< G H K )>` be the three given plane angles
-
-.. step:: assert
-
-   Let two of these, taken together in any manner, be greater than the remaining one, while, further, the three are less than four right angles
+   :g:`< A B C ) <g1:< A B C )>`, :g:`< D E F ) <g1:< D E F )>`, :g:`< G H K ) <g1:< G H K )>` be the three given plane angles, let two of these, taken together in any manner, be greater than the remaining one, while, further, the three are less than four right angles
 
 .. step:: construct
 
@@ -47,15 +49,19 @@ G.468
 
 .. step:: construct
 
-   **segment** :g:`/ A C / <g1:/ A C />`, :g:`/ D F / <g1:/ D F />`, :g:`/ G K / <g1:/ G K />`
+   :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`C <g1:C>`) → :g:`/ A C / <g1:/ A C />`, :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`F <g1:F>`) → :g:`/ D F / <g1:/ D F />`, :fn:`segment <G.3>`\ (:g:`G <g1:G>`, :g:`K <g1:K>`) → :g:`/ G K / <g1:/ G K />`
 
-.. step:: assert [G.467] <G.467>
+.. step:: assert ∵ there_plane_angles <G.467>
 
    It is therefore possible to construct a triangle out of straight lines equal to :g:`/ A C / <g1:/ A C />`, :g:`/ D F / <g1:/ D F />`, :g:`/ G K / <g1:/ G K />`.
 
 .. step:: construct
 
-   Let :g:`< L M N > <g2:< L M N >>` be so constructed that :g:`/ A C / <g1:/ A C />` is :eq:`equal <g1:/ A C / = g2:/ L M /; g1:/ D F / = g2:/ M N /; g1:/ G K / = g2:/ N L />` to :g:`/ L M / <g2:/ L M />`, :g:`/ D F / <g1:/ D F />` to :g:`/ M N / <g2:/ M N />`, and further :g:`/ G K / <g1:/ G K />` to :g:`/ N L / <g2:/ N L />`, let :g:`( L M N ) <g2:( L M N )>` be described about :g:`< L M N > <g2:< L M N >>`, let its center be taken
+   Let :g:`< L M N > <g2:< L M N >>` be so constructed that :g:`/ A C / <g1:/ A C />` is :eq:`equal <g1:/ A C / = g2:/ L M /; g1:/ D F / = g2:/ M N /; g1:/ G K / = g2:/ N L />` to :g:`/ L M / <g2:/ L M />`, :g:`/ D F / <g1:/ D F />` to :g:`/ M N / <g2:/ M N />`, and further :g:`/ G K / <g1:/ G K />` to :g:`/ N L / <g2:/ N L />`, let :g:`( L M N ) <g2:( L M N )>` be described about :g:`< L M N > <g2:< L M N >>`
+
+.. step:: construct
+
+   Let its center be taken
 
 .. step:: assert
 
@@ -63,7 +69,7 @@ G.468
 
 .. step:: construct
 
-   **segment** :g:`/ L O / <g2:/ L O />`, :g:`/ M O / <g2:/ M O />`, :g:`/ N O / <g2:/ N O />`
+   :fn:`segment <G.3>`\ (:g:`L <g2:L>`, :g:`O <g2:O>`) → :g:`/ L O / <g2:/ L O />`, :fn:`segment <G.3>`\ (:g:`M <g2:M>`, :g:`O <g2:O>`) → :g:`/ M O / <g2:/ M O />`, :fn:`segment <G.3>`\ (:g:`N <g2:N>`, :g:`O <g2:O>`) → :g:`/ N O / <g2:/ N O />`
 
 .. step:: assert
 
@@ -77,7 +83,7 @@ G.468
 
    Since :g:`/ A B / <g1:/ A B />` is :eq:`equal <g1:/ A B / = g2:/ L O />` to :g:`/ L O / <g2:/ L O />`, while :g:`/ A B / <g1:/ A B />` is :eq:`equal <g1:/ A B / = g1:/ B C /; g2:/ O L / = g2:/ O M />` to :g:`/ B C / <g1:/ B C />`, and :g:`/ O L / <g2:/ O L />` to :g:`/ O M / <g2:/ O M />`, the two sides :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are :eq:`equal <g1:/ A B / = g2:/ L O /; g1:/ B C / = g2:/ O M />` to the two sides :g:`/ L O / <g2:/ L O />`, :g:`/ O M / <g2:/ O M />` respectively; and, by hypothesis, the base :g:`/ A C / <g1:/ A C />` is :eq:`equal <g1:/ A C / = g2:/ L M />` to the base :g:`/ L M / <g2:/ L M />`;
 
-.. step:: assert [G.15] <G.15>
+.. step:: assert ∵ sss_congruence <G.15>
 
    Therefore :g:`< A B C ) <g1:< A B C )>` is :eq:`equal <g1:< A B C ) = g2:< L O M )>` to :g:`< L O M ) <g2:< L O M )>`.
 
@@ -109,23 +115,15 @@ G.468
 
    I say next that neither is :g:`/ A B / <g1:/ A B />` less than :g:`/ L O / <g2:/ L O />`.
 
-.. step:: assert
-
-   If possible, let it be so
-
 .. step:: construct
 
-   Let :g:`/ O P / <g2:/ O P />` be made :eq:`equal <g2:/ O P / = g1:/ A B />` to :g:`/ A B / <g1:/ A B />`, and :g:`/ O Q / <g2:/ O Q />` :eq:`equal <g2:/ O Q / = g1:/ B C />` to :g:`/ B C / <g1:/ B C />`
-
-.. step:: construct
-
-   **segment** :g:`/ P Q / <g2:/ P Q />`
+   If possible, let it be so, and let :g:`/ O P / <g2:/ O P />` be made :eq:`equal <g2:/ O P / = g1:/ A B />` to :g:`/ A B / <g1:/ A B />`, and :g:`/ O Q / <g2:/ O Q />` :eq:`equal <g2:/ O Q / = g1:/ B C />` to :g:`/ B C / <g1:/ B C />`, and let :g:`/ P Q / <g2:/ P Q />` be joined.
 
 .. step:: assert
 
    Since :g:`/ A B / <g1:/ A B />` is :eq:`equal <g1:/ A B / = g1:/ B C />` to :g:`/ B C / <g1:/ B C />`, :g:`/ O P / <g2:/ O P />` is also :eq:`equal <g2:/ O P / = g2:/ O Q />` to :g:`/ O Q / <g2:/ O Q />`, so that the remainder :g:`/ L P / <g2:/ L P />` is :eq:`equal <g2:/ L P / = g2:/ Q M />` to :g:`/ Q M / <g2:/ Q M />`.
 
-.. step:: assert [G.164, G.42, G.166, G.153] <G.164, G.42, G.166, G.153>
+.. step:: assert ∵ straight_line_drawn_vi_2, parallel_transversal_angles, equiangular_triangles_sides, magnitudes_proportional_proportional <G.164, G.42, G.166, G.153>
 
    Therefore :g:`/ L M / <g2:/ L M />` is parallel to :g:`/ P Q / <g2:/ P Q />`, and :g:`< L M O > <g2:< L M O >>` is equiangular with :g:`< P Q O > <g2:< P Q O >>`; therefore, as :g:`/ O L / <g2:/ O L />` is to :g:`/ L M / <g2:/ L M />`, so is :g:`/ O P / <g2:/ O P />` to :g:`/ P Q / <g2:/ P Q />`; and alternately, as :g:`/ L O / <g2:/ L O />` is to :g:`/ O P / <g2:/ O P />`, so is :g:`/ L M / <g2:/ L M />` to :g:`/ P Q / <g2:/ P Q />`.
 
@@ -149,7 +147,7 @@ G.468
 
    Since, then, the two sides :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are :eq:`equal <g1:/ A B / = g2:/ P O /; g1:/ B C / = g2:/ O Q />` to the two sides :g:`/ P O / <g2:/ P O />`, :g:`/ O Q / <g2:/ O Q />`, and the base :g:`/ A C / <g1:/ A C />` is greater than the base :g:`/ P Q / <g2:/ P Q />`,
 
-.. step:: assert [G.36] <G.36>
+.. step:: assert ∵ converse_hinge_theorem <G.36>
 
    Therefore :g:`< A B C ) <g1:< A B C )>` is greater than :g:`< P O Q ) <g2:< P O Q )>`.
 
@@ -185,13 +183,13 @@ G.468
 
    Therefore :g:`/ A B / <g1:/ A B />` is greater than :g:`/ L O / <g2:/ L O />`.
 
-.. step:: construct [G.455, Lemma] <G.455, Lemma>
+.. step:: construct
 
-   Let then :g:`/ O R / <g2:/ O R />` be set up from :g:`O <g2:O>` at right angles to the plane of :g:`( L M N ) <g2:( L M N )>`, and let the square on :g:`/ O R / <g2:/ O R />` be equal to that area by which the square on :g:`/ A B / <g1:/ A B />` is greater than the square on :g:`/ L O / <g2:/ L O />`
+   :fn:`set_straight_line <G.455>`: Let then :g:`/ O R / <g2:/ O R />` be set up from :g:`O <g2:O>` at right angles to the plane of :g:`( L M N ) <g2:( L M N )>`, and let the square on :g:`/ O R / <g2:/ O R />` be equal to that area by which the square on :g:`/ A B / <g1:/ A B />` is greater than the square on :g:`/ L O / <g2:/ L O />`
 
 .. step:: construct
 
-   **segment** :g:`/ R L / <g2:/ R L />`, :g:`/ R M / <g2:/ R M />`, :g:`/ R N / <g2:/ R N />`
+   :fn:`segment <G.3>`\ (:g:`R <g2:R>`, :g:`L <g2:L>`) → :g:`/ R L / <g2:/ R L />`, :fn:`segment <G.3>`\ (:g:`R <g2:R>`, :g:`M <g2:M>`) → :g:`/ R M / <g2:/ R M />`, :fn:`segment <G.3>`\ (:g:`R <g2:R>`, :g:`N <g2:N>`) → :g:`/ R N / <g2:/ R N />`
 
 .. step:: assert
 
@@ -205,7 +203,7 @@ G.468
 
    And, since :g:`/ L O / <g2:/ L O />` is :eq:`equal <g2:/ L O / = g2:/ O M />` to :g:`/ O M / <g2:/ O M />`, while :g:`/ O R / <g2:/ O R />` is common and at right angles,
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    Therefore the base :g:`/ R L / <g2:/ R L />` is :eq:`equal <g2:/ R L / = g2:/ R M />` to the base :g:`/ R M / <g2:/ R M />`.
 
@@ -225,7 +223,7 @@ G.468
 
    Therefore the square on :g:`/ A B / <g1:/ A B />` is equal to the squares on :g:`/ L O / <g2:/ L O />`, :g:`/ O R / <g2:/ O R />`.
 
-.. step:: assert [G.60] <G.60>
+.. step:: assert ∵ pythagorean_theorem <G.60>
 
    The square on :g:`/ L R / <g2:/ L R />` is equal to the squares on :g:`/ L O / <g2:/ L O />`, :g:`/ O R / <g2:/ O R />`, for :g:`< L O R ) <g2:< L O R )>` is right.
 
@@ -245,7 +243,7 @@ G.468
 
    And, since the two sides :g:`/ L R / <g2:/ L R />`, :g:`/ R M / <g2:/ R M />` are :eq:`equal <g2:/ L R / = g1:/ A B /; g2:/ R M / = g1:/ B C />` to the two sides :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, and the base :g:`/ L M / <g2:/ L M />` is by hypothesis :eq:`equal <g2:/ L M / = g1:/ A C />` to the base :g:`/ A C / <g1:/ A C />`,
 
-.. step:: assert [G.15] <G.15>
+.. step:: assert ∵ sss_congruence <G.15>
 
    Therefore :g:`< L R M ) <g2:< L R M )>` is :eq:`equal <g2:< L R M ) = g1:< A B C )>` to :g:`< A B C ) <g1:< A B C )>`.
 
@@ -271,29 +269,25 @@ G.468
 
 .. step:: assert
 
-   Let :g:`/ A B / <g3:/ A B />`, :g:`/ L O / <g2:/ L O />` be set out
-
-.. step:: assert
-
-   Let :g:`/ A B / <g3:/ A B />` be the greater
-
-.. step:: construct [G.117] <G.117>
-
-   Let the semicircle :g:`( A B C ) <g3:( A B C )>` be described on :g:`/ A B / <g3:/ A B />`, and into the semicircle :g:`( A B C ) <g3:( A B C )>` let :g:`/ A C / <g3:/ A C />` be fitted :eq:`equal <g3:/ A C / = g2:/ L O />` to :g:`/ L O / <g2:/ L O />`, not being greater than the diameter :g:`/ A B / <g3:/ A B />`
+   Let :g:`/ A B / <g3:/ A B />`, :g:`/ L O / <g2:/ L O />` be set out, and let :g:`/ A B / <g3:/ A B />` be the greater
 
 .. step:: construct
 
-   **segment** :g:`/ C B / <g3:/ C B />`
+   :fn:`fit_chord_in_circle <G.117>`: Let the semicircle :g:`( A B C ) <g3:( A B C )>` be described on :g:`/ A B / <g3:/ A B />`, and into the semicircle :g:`( A B C ) <g3:( A B C )>` let :g:`/ A C / <g3:/ A C />` be fitted :eq:`equal <g3:/ A C / = g2:/ L O />` to :g:`/ L O / <g2:/ L O />`, not being greater than the diameter :g:`/ A B / <g3:/ A B />`
+
+.. step:: construct
+
+   :fn:`segment <G.3>`\ (:g:`C <g3:C>`, :g:`B <g3:B>`) → :g:`/ C B / <g3:/ C B />`
 
 .. step:: assert
 
    Since then :g:`< A C B ) <g3:< A C B )>` is an angle in the semicircle :g:`( A C B ) <g3:( A C B )>`,
 
-.. step:: assert [G.110] <G.110>
+.. step:: assert ∵ thales_semicircle_theorem <G.110>
 
    Therefore :g:`< A C B ) <g3:< A C B )>` is right.
 
-.. step:: assert [G.60] <G.60>
+.. step:: assert ∵ pythagorean_theorem <G.60>
 
    Therefore the square on :g:`/ A B / <g3:/ A B />` is equal to the squares on :g:`/ A C / <g3:/ A C />`, :g:`/ C B / <g3:/ C B />`.
 

@@ -24,18 +24,23 @@ G.423
 
    If an area be contained by a rational straight line and a sixth apotome, the “side” of the area is a straight line which produces with a medial area a medial whole.
 
+.. signature:: theorem
+
+   | :fn:`area_contained_rational_x_96 <G.423>`\ ()
+   | **prove** the “side” of the area :g:`< A B > <g1:< A B >>` is a straight line which produces with a medial area a medial whole; :g:`/ L N / <g1:/ L N />` is a straight line which produces with a medial area a medial whole
+
 .. picture:: g1.svg
    :alt: Proposition 96 Diagram
 
 .. step:: assert
 
-   For let the area :g:`< A B > <g1:< A B >>` be contained by the rational straight line :g:`/ A C / <g1:/ A C />` and the sixth apotome :g:`/ A D / <g1:/ A D />`
+   Let the area :g:`< A B > <g1:< A B >>` be contained by the rational straight line :g:`/ A C / <g1:/ A C />` and the sixth apotome :g:`/ A D / <g1:/ A D />`
 
 .. step:: assert
 
    For let :g:`/ D G / <g1:/ D G />` be the annex to :g:`/ A D / <g1:/ A D />`;
 
-.. step:: assert [G.416] <G.416>
+.. step:: assert ∵ sixth_def <G.416>
 
    Therefore :g:`/ A G / <g1:/ A G />`, :g:`/ G D / <g1:/ G D />` are rational straight lines commensurable in square only, neither of them is commensurable in length with the rational straight line :g:`/ A C / <g1:/ A C />` set out, and the square on the whole :g:`/ A G / <g1:/ A G />` is greater than the square on the annex :g:`/ D G / <g1:/ D G />` by the square on a straight line incommensurable in length with :g:`/ A G / <g1:/ A G />`.
 
@@ -43,7 +48,7 @@ G.423
 
    Since then the square on :g:`/ A G / <g1:/ A G />` is greater than the square on :g:`/ G D / <g1:/ G D />` by the square on a straight line incommensurable in length with :g:`/ A G / <g1:/ A G />`,
 
-.. step:: assert [G.331] <G.331>
+.. step:: assert ∵ there_unequal_straight_x_18 <G.331>
 
    Therefore, if there be applied to :g:`/ A G / <g1:/ A G />` a parallelogram equal to the fourth part of the square on :g:`/ D G / <g1:/ D G />` and deficient by a square figure, it will divide it into incommensurable parts.
 
@@ -59,11 +64,11 @@ G.423
 
    Therefore :g:`/ A F / <g1:/ A F />` is incommensurable in length with :g:`/ F G / <g1:/ F G />`.
 
-.. step:: assert [G.163] <G.163>
+.. step:: assert ∵ triangles_parallelograms_height <G.163>
 
    But, as :g:`/ A F / <g1:/ A F />` is to :g:`/ F G / <g1:/ F G />`, so is :g:`< A I > <g1:< A I >>` to :g:`< F K > <g1:< F K >>`;
 
-.. step:: assert [G.323] <G.323>
+.. step:: assert ∵ magnitudes_proportional_commensurable <G.323>
 
    Therefore :g:`< A I > <g1:< A I >>` is incommensurable with :g:`< F K > <g1:< F K >>`.
 
@@ -71,7 +76,7 @@ G.423
 
    And, since :g:`/ A G / <g1:/ A G />`, :g:`/ A C / <g1:/ A C />` are rational straight lines commensurable in square only,
 
-.. step:: assert [G.335] <G.335>
+.. step:: assert ∵ rectangle_contained_rational_x_21 <G.335>
 
    :g:`< A K > <g1:< A K >>` is medial.
 
@@ -79,7 +84,7 @@ G.423
 
    Since :g:`/ A C / <g1:/ A C />`, :g:`/ D G / <g1:/ D G />` are rational straight lines and incommensurable in length,
 
-.. step:: assert [G.335] <G.335>
+.. step:: assert ∵ rectangle_contained_rational_x_21 <G.335>
 
    :g:`< D K > <g1:< D K >>` is also medial.
 
@@ -91,11 +96,11 @@ G.423
 
    Therefore :g:`/ A G / <g1:/ A G />` is incommensurable in length with :g:`/ G D / <g1:/ G D />`.
 
-.. step:: assert [G.163] <G.163>
+.. step:: assert ∵ triangles_parallelograms_height <G.163>
 
    But, as :g:`/ A G / <g1:/ A G />` is to :g:`/ G D / <g1:/ G D />`, so is :g:`< A K > <g1:< A K >>` to :g:`< K D > <g1:< K D >>` ;
 
-.. step:: assert [G.323] <G.323>
+.. step:: assert ∵ magnitudes_proportional_commensurable <G.323>
 
    Therefore :g:`< A K > <g1:< A K >>` is incommensurable with :g:`< K D > <g1:< K D >>`.
 
@@ -103,21 +108,17 @@ G.423
 
    Now let the square :g:`< L M > <g1:< L M >>` be constructed :eq:`equal <g1:< L M > = g1:< A I >>` to :g:`< A I > <g1:< A I >>`
 
-.. step:: assert
+.. step:: construct
 
    Let :g:`< N O > <g1:< N O >>` :eq:`equal <g1:< N O > = g1:< F K >>` to :g:`< F K > <g1:< F K >>`, and about the same angle, be subtracted
 
-.. step:: assert [G.191] <G.191>
+.. step:: assert ∵ parallelogram_there_taken <G.191>
 
    Therefore the squares :g:`< L M > <g1:< L M >>`, :g:`< N O > <g1:< N O >>` are about the same diameter.
 
-.. step:: assert
-
-   Let :g:`/ P R / <g1:/ P R />` be their diameter
-
 .. step:: construct
 
-   Let the figure be drawn.
+   Let :g:`/ P R / <g1:/ P R />` be their diameter, and let the figure be drawn.
 
 .. step:: assert
 
@@ -159,7 +160,7 @@ G.423
 
    Square which make the sum of the squares on them medial, twice the rectangle contained by them medial, and further the squares on them incommensurable with twice the rectangle contained by them.
 
-.. step:: conclude [G.399] <G.399>
+.. step:: conclude ∵ straight_line_there_x_78 <G.399>
 
    Therefore :g:`/ L N / <g1:/ L N />` is the irrational straight line called that which produces with a medial area a medial whole; and it is the “side” of the area :g:`< A B > <g1:< A B >>`.
 

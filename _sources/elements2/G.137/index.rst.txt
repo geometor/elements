@@ -24,16 +24,17 @@ G.137
 
    If a first magnitude be the same multiple of a second that a third is of a fourth, and if equimultiples be taken of the first and third, then also:term:`*ex aequali* <ex-aequali>` the magnitudes taken is equimultiples respectively, the one of the second and the other of the fourth.
 
+.. signature:: theorem
+
+   | :fn:`magnitude_multiple_equimultiples <G.137>`\ ()
+   | **prove** :g:`/ E F / <g1:/ E F />` is the same multiple of :g:`B <g1:B>` that :g:`/ G H / <g1:/ G H />` is of :g:`D <g1:D>`
+
 .. picture:: g1.svg
    :alt: Proposition 3 diagram
 
-.. step:: given
-
-   a first magnitude :g:`A <g1:A>` be the same multiple of a second :g:`B <g1:B>` that a third :g:`C <g1:C>` is of a fourth :g:`D <g1:D>`
-
 .. step:: construct
 
-   Let equimultiples :g:`/ E F / <g1:/ E F />`, :g:`/ G H / <g1:/ G H />` be taken of :g:`A <g1:A>`, :g:`C <g1:C>`
+   Let a first magnitude :g:`A <g1:A>` be the same multiple of a second :g:`B <g1:B>` that a third :g:`C <g1:C>` is of a fourth :g:`D <g1:D>`, and let equimultiples :g:`/ E F / <g1:/ E F />`, :g:`/ G H / <g1:/ G H />` be taken of :g:`A <g1:A>`, :g:`C <g1:C>`
 
 .. step:: assert
 
@@ -61,13 +62,13 @@ G.137
 
 .. step:: assert
 
-   For the same reason
+   The same reason
 
 .. step:: assert
 
    :g:`/ K F / <g1:/ K F />` is the same multiple of :g:`B <g1:B>` that :g:`/ L H / <g1:/ L H />` is of :g:`D <g1:D>`.
 
-.. step:: conclude [G.136] <G.136>
+.. step:: conclude ∵ magnitude_multiple_fifth <G.136>
 
    Since, then, a first magnitude :g:`/ E K / <g1:/ E K />` is the same multiple of a second :g:`B <g1:B>` that a third :g:`/ G L / <g1:/ G L />` is of a fourth :g:`D <g1:D>`, and a fifth :g:`/ K F / <g1:/ K F />` is also the same multiple of the second :g:`B <g1:B>` that a sixth :g:`/ L H / <g1:/ L H />` is of the fourth :g:`D <g1:D>` → therefore the sum of the first and fifth, :g:`/ E F / <g1:/ E F />`, is also the same multiple of the second :g:`B <g1:B>` that the sum of the third and sixth, :g:`/ G H / <g1:/ G H />`, is of the fourth :g:`D <g1:D>`.
 

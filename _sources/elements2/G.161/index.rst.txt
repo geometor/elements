@@ -24,6 +24,12 @@ G.161
 
    If a first magnitude have to a second the same ratio as a third has to a fourth, and also a fifth have to the second the same ratio as a sixth to the fourth, the first and fifth added together will have to the second the same ratio as the third and sixth have to the fourth.
 
+.. signature:: theorem
+
+   | :fn:`magnitude_ratio_fifth <G.161>`\ (:g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`, :g:`/ D E / <g1:/ D E />`, :g:`F <g1:F>`)
+   | **given** a first magnitude :g:`/ A B / <g1:/ A B />` have to a second :g:`C <g1:C>` the same ratio as a third :g:`/ D E / <g1:/ D E />` has to a fourth :g:`F <g1:F>`
+   | **prove** the first and fifth added together, :g:`/ A G / <g1:/ A G />`, will have to the second :g:`C <g1:C>` the same ratio as the third and sixth, :g:`/ D H / <g1:/ D H />`, has to the fourth :g:`F <g1:F>`
+
 .. picture:: g1.svg
    :alt: Book V, Proposition 24, Line Segments
 
@@ -37,7 +43,7 @@ G.161
 
 .. step:: assert
 
-   For since, as :g:`/ B G / <g1:/ B G />` is to :g:`C <g1:C>`, so is :g:`/ E H / <g1:/ E H />` to :g:`F <g1:F>`,
+   Since, as :g:`/ B G / <g1:/ B G />` is to :g:`C <g1:C>`, so is :g:`/ E H / <g1:/ E H />` to :g:`F <g1:F>`,
 
 .. step:: assert
 
@@ -47,11 +53,11 @@ G.161
 
    Since, then, as :g:`/ A B / <g1:/ A B />` is to :g:`C <g1:C>`, so is :g:`/ D E / <g1:/ D E />` to :g:`F <g1:F>`, and, as :g:`C <g1:C>` is to :g:`/ B G / <g1:/ B G />`, so is :g:`F <g1:F>` to :g:`/ E H / <g1:/ E H />`,
 
-.. step:: assert [G.159] <G.159>
+.. step:: assert ∵ there_number_magnitudes_v_22 <G.159>
 
    Therefore, :term:`*ex aequali* <ex-aequali>`, as :g:`/ A B / <g1:/ A B />` is to :g:`/ B G / <g1:/ B G />`, so is :g:`/ D E / <g1:/ D E />` to :g:`/ E H / <g1:/ E H />`.
 
-.. step:: assert [G.155] <G.155>
+.. step:: assert ∵ magnitudes_proportional_separando <G.155>
 
    And, since the magnitudes are proportional :term:`*separando* <separando>`, they will also be proportional :term:`*componendo* <componendo>`
 
@@ -63,7 +69,7 @@ G.161
 
    Also, as :g:`/ B G / <g1:/ B G />` is to :g:`C <g1:C>`, so is :g:`/ E H / <g1:/ E H />` to :g:`F <g1:F>`
 
-.. step:: conclude [G.159] <G.159>
+.. step:: conclude ∵ there_number_magnitudes_v_22 <G.159>
 
    Therefore, :term:`*ex aequali* <ex-aequali>`, as :g:`/ A G / <g1:/ A G />` is to :g:`C <g1:C>`, so is :g:`/ D H / <g1:/ D H />` to :g:`F <g1:F>`.
 

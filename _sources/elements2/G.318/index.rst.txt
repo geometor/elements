@@ -24,6 +24,12 @@ G.318
 
    Commensurable magnitudes have to one another the ratio which a number has to a number.
 
+.. signature:: theorem
+
+   | :fn:`commensurable_magnitudes_ratio <G.318>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`)
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>` be commensurable magnitudes
+   | **prove** :g:`A <g1:A>` has to :g:`B <g1:B>` the ratio which a number has to a number
+
 .. picture:: g1.svg
    :alt: Proposition 5 diagram
 
@@ -33,11 +39,11 @@ G.318
 
 .. step:: assert
 
-   Since :g:`A <g1:A>`, :g:`B <g1:B>` are commensurable, some magnitude will measure them. Let it measure them
+   Since :g:`A <g1:A>`, :g:`B <g1:B>` are commensurable, some magnitude will measure them
 
 .. step:: assert
 
-   Let it be :g:`C <g1:C>`.
+   Let it measure them, and let it be :g:`C <g1:C>`.
 
 .. step:: assert
 
@@ -55,11 +61,11 @@ G.318
 
    Therefore the unit measures the number :g:`D <g1:D>` the same number of times as the magnitude :g:`C <g1:C>` measures :g:`A <g1:A>`;
 
-.. step:: assert [G.210] <G.210>
+.. step:: assert ∵ numbers_proportional_multiple_def <G.210>
 
    Therefore, as :g:`C <g1:C>` is to :g:`A <g1:A>`, so is the unit to :g:`D <g1:D>`;
 
-.. step:: assert [G.142] <G.142>
+.. step:: assert ∵ equal_magnitudes_ratio <G.142>
 
    Therefore, inversely, as :g:`A <g1:A>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to the unit.
 
@@ -79,7 +85,7 @@ G.318
 
    It was also proved that, as :g:`A <g1:A>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to the unit;
 
-.. step:: conclude [G.159] <G.159>
+.. step:: conclude ∵ there_number_magnitudes_v_22 <G.159>
 
    Therefore, :term:`*ex aequali* <ex-aequali>`, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is the number :g:`D <g1:D>` to :g:`E <g1:E>`.
 

@@ -24,30 +24,32 @@ G.184
 
    Similar triangles are to one another in the duplicate ratio of the corresponding sides.
 
+.. signature:: theorem
+
+   | :fn:`similar_triangles_duplicate <G.184>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>`, :g:`< A B C ) <g1:< A B C )>`, :g:`< D E F ) <g1:< D E F )>`)
+   | **given** :g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>` be similar triangles having the angle at :g:`< A B C ) <g1:< A B C )>` :eq:`equal <g1:< A B C ) = g1:< D E F )>` to the angle at :g:`< D E F ) <g1:< D E F )>`, such that, as :g:`/ A B / <g1:/ A B />` is to :g:`/ B C / <g1:/ B C />`, so is :g:`/ D E / <g1:/ D E />` to :g:`/ E F / <g1:/ E F />`, so that :g:`/ B C / <g1:/ B C />` corresponds to :g:`/ E F / <g1:/ E F />`
+   | **prove** :g:`< A B C > <g1:< A B C >>` has to :g:`< D E F > <g1:< D E F >>` a ratio duplicate of that which :g:`/ B C / <g1:/ B C />` has to :g:`/ E F / <g1:/ E F />`
+
 .. picture:: g1.svg
    :alt: Book VI Proposition 19 Diagram
 
-.. enunciation::
-
-   PORISM. From this it is manifest that, if three straight lines be proportional, then, as the first is to the third, so is the figure described on the first to that which is similar and similarly described on the second.:just:`Q. E. D.`
-
-.. step:: given [G.183] <G.183>
+.. step:: given
 
    :g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>` be similar triangles having the angle at :g:`< A B C ) <g1:< A B C )>` :eq:`equal <g1:< A B C ) = g1:< D E F )>` to the angle at :g:`< D E F ) <g1:< D E F )>`, such that, as :g:`/ A B / <g1:/ A B />` is to :g:`/ B C / <g1:/ B C />`, so is :g:`/ D E / <g1:/ D E />` to :g:`/ E F / <g1:/ E F />`, so that :g:`/ B C / <g1:/ B C />` corresponds to :g:`/ E F / <g1:/ E F />`
 
-.. step:: construct [G.174] <G.174>
+.. step:: construct
 
-   For let a third proportional :g:`/ B G / <g1:/ B G />` be taken to :g:`/ B C / <g1:/ B C />`, :g:`/ E F / <g1:/ E F />`, so that, as :g:`/ B C / <g1:/ B C />` is to :g:`/ E F / <g1:/ E F />`, so is :g:`/ E F / <g1:/ E F />` to :g:`/ B G / <g1:/ B G />`
+   :fn:`third_proportional <G.174>`: Let a third proportional :g:`/ B G / <g1:/ B G />` be taken to :g:`/ B C / <g1:/ B C />`, :g:`/ E F / <g1:/ E F />`, so that, as :g:`/ B C / <g1:/ B C />` is to :g:`/ E F / <g1:/ E F />`, so is :g:`/ E F / <g1:/ E F />` to :g:`/ B G / <g1:/ B G />`
 
 .. step:: construct
 
-   **segment** :g:`/ A G / <g1:/ A G />`
+   :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`G <g1:G>`) → :g:`/ A G / <g1:/ A G />`
 
 .. step:: assert
 
    Since then, as :g:`/ A B / <g1:/ A B />` is to :g:`/ B C / <g1:/ B C />`, so is :g:`/ D E / <g1:/ D E />` to :g:`/ E F / <g1:/ E F />`,
 
-.. step:: assert [G.153] <G.153>
+.. step:: assert ∵ magnitudes_proportional_proportional <G.153>
 
    Therefore, alternately, as :g:`/ A B / <g1:/ A B />` is to :g:`/ D E / <g1:/ D E />`, so is :g:`/ B C / <g1:/ B C />` to :g:`/ E F / <g1:/ E F />`.
 
@@ -55,7 +57,7 @@ G.184
 
    But, as :g:`/ B C / <g1:/ B C />` is to :g:`/ E F / <g1:/ E F />`, so is :g:`/ E F / <g1:/ E F />` to :g:`/ B G / <g1:/ B G />`;
 
-.. step:: assert [G.148] <G.148>
+.. step:: assert ∵ ratios_ratio <G.148>
 
    Therefore also, as :g:`/ A B / <g1:/ A B />` is to :g:`/ D E / <g1:/ D E />`, so is :g:`/ E F / <g1:/ E F />` to :g:`/ B G / <g1:/ B G />`.
 
@@ -63,7 +65,7 @@ G.184
 
    Therefore in :g:`< A B G > <g1:< A B G >>`, :g:`< D E F > <g1:< D E F >>` the sides about the equal angles are reciprocally proportional.
 
-.. step:: assert [G.178] <G.178>
+.. step:: assert ∵ equal_triangles_angle <G.178>
 
    Those triangles which have one angle equal to one angle, and in which the sides about the equal angles are reciprocally proportional, are equal.
 
@@ -71,7 +73,7 @@ G.184
 
    Therefore :g:`< A B G > <g1:< A B G >>` is :eq:`equal <g1:< A B G > = g1:< D E F >>` to :g:`< D E F > <g1:< D E F >>`.
 
-.. step:: assert [G.182] <G.182>
+.. step:: assert ∵ magnitudes_proportional_said_def <G.182>
 
    Now since, as :g:`/ B C / <g1:/ B C />` is to :g:`/ E F / <g1:/ E F />`, so is :g:`/ E F / <g1:/ E F />` to :g:`/ B G / <g1:/ B G />`, and, if three straight lines be proportional, the first has to the third a ratio duplicate of that which it has to the second.
 
@@ -79,7 +81,7 @@ G.184
 
    Therefore :g:`/ B C / <g1:/ B C />` has to :g:`/ B G / <g1:/ B G />` a ratio duplicate of that which :g:`/ C B / <g1:/ C B />` has to :g:`/ E F / <g1:/ E F />`.
 
-.. step:: assert [G.163] <G.163>
+.. step:: assert ∵ triangles_parallelograms_height <G.163>
 
    But, as :g:`/ C B / <g1:/ C B />` is to :g:`/ B G / <g1:/ B G />`, so is :g:`< A B C > <g1:< A B C >>` to :g:`< A B G > <g1:< A B G >>`.
 
@@ -94,6 +96,10 @@ G.184
 .. step:: conclude
 
    Therefore :g:`< A B C > <g1:< A B C >>` also has to :g:`< D E F > <g1:< D E F >>` a ratio duplicate of that which :g:`/ B C / <g1:/ B C />` has to :g:`/ E F / <g1:/ E F />`.
+
+.. enunciation::
+
+   PORISM. From this it is manifest that, if three straight lines be proportional, then, as the first is to the third, so is the figure described on the first to that which is similar and similarly described on the second. :just:`Q. E. D.`
 
 Dependency Graph
 ----------------

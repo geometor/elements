@@ -24,16 +24,21 @@ G.448
 
    If a straight line be set up at right angles to three straight lines which meet one another, at their common point of section, the three straight lines are in one plane.
 
+.. signature:: theorem
+
+   | :fn:`straight_line_set_xi_5 <G.448>`\ ()
+   | **prove** :g:`/ B C / <g1:/ B C />`, :g:`/ B D / <g1:/ B D />`, :g:`/ B E / <g1:/ B E />` are in one plane
+
 .. picture:: g1.svg
    :alt: Book XI, Proposition 5
 
 .. step:: construct
 
-   For let a straight line :g:`/ A B / <g1:/ A B />` be set up at right angles to :g:`/ B C / <g1:/ B C />`, :g:`/ B D / <g1:/ B D />`, :g:`/ B E / <g1:/ B E />`, at their point of meeting at :g:`B <g1:B>`
+   Let a straight line :g:`/ A B / <g1:/ A B />` be set up at right angles to :g:`/ B C / <g1:/ B C />`, :g:`/ B D / <g1:/ B D />`, :g:`/ B E / <g1:/ B E />`, at their point of meeting at :g:`B <g1:B>`
 
-.. step:: assert [G.445] <G.445>
+.. step:: construct
 
-   For suppose they are not, but, if possible, let :g:`/ B D / <g1:/ B D />`, :g:`/ B E / <g1:/ B E />` be in the plane of reference and :g:`/ B C / <g1:/ B C />` in one more elevated; let the plane through :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` be produced; it will thus make, as common section in the plane of reference, a straight line.
+   :fn:`planes_cut_common <G.445>`: Suppose they are not, but, if possible, let :g:`/ B D / <g1:/ B D />`, :g:`/ B E / <g1:/ B E />` be in the plane of reference and :g:`/ B C / <g1:/ B C />` in one more elevated; let the plane through :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` be produced; it will thus make, as common section in the plane of reference, a straight line.
 
 .. step:: assert
 
@@ -47,7 +52,7 @@ G.448
 
    Since :g:`/ A B / <g1:/ A B />` is at right angles to each of :g:`/ B D / <g1:/ B D />`, :g:`/ B E / <g1:/ B E />`,
 
-.. step:: assert [G.447] <G.447>
+.. step:: assert ∵ straight_line_set <G.447>
 
    Therefore :g:`/ A B / <g1:/ A B />` is also at right angles to the plane through :g:`/ B D / <g1:/ B D />`, :g:`/ B E / <g1:/ B E />`.
 
@@ -59,7 +64,7 @@ G.448
 
    Therefore :g:`/ A B / <g1:/ A B />` is at right angles to the plane of reference.
 
-.. step:: assert [G.446] <G.446>
+.. step:: assert ∵ straight_line_right_def <G.446>
 
    Thus :g:`/ A B / <g1:/ A B />` will also make right angles with all the straight lines which meet it and are in the plane of reference.
 

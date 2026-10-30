@@ -24,6 +24,12 @@ G.391
 
    A straight line commensurable with the side of the sum of two medial areas is the side of the sum of two medial areas.
 
+.. signature:: theorem
+
+   | :fn:`straight_line_commensurable_x_70 <G.391>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`)
+   | **given** :g:`/ A B / <g1:/ A B />` be the side of the sum of two medial areas, :g:`/ C D / <g1:/ C D />` commensurable with :g:`/ A B / <g1:/ A B />`
+   | **prove** We can then prove similarly that :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />` are also incommensurable in square, the sum of the squares on :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />` is commensurable with the sum of the squares on :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />`, and the rectangle :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />` with the rectangle :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />`; so that the sum of the squares on :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />` is also medial, the rectangle :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />` is medial, and moreover the sum of the squares on :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />` is incommensurable with the rectangle :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />`
+
 .. picture:: g1.svg
    :alt: Proposition 70
 
@@ -43,7 +49,7 @@ G.391
 
    Let it be divided into its straight lines at :g:`E <g1:E>`
 
-.. step:: assert [G.356] <G.356>
+.. step:: assert ∵ straight_lines_incommensurable_x_41 <G.356>
 
    Therefore :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />` are straight lines incommensurable in square which make the sum of the squares on them medial, the rectangle contained by them medial, and furthermore the sum of the squares on :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />` incommensurable with the rectangle :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />`.
 

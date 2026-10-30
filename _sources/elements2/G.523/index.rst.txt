@@ -24,28 +24,33 @@ G.523
 
    Construct an icosahedron and comprehend it in a sphere, like the aforesaid figures; and to prove that the side of the icosahedron is the irrational straight line called minor.
 
+.. signature:: problem
+
+   | :fn:`construct_icosahedron_comprehend <G.523>`\ () → :g:`A' <g1:A'>`
+   | **construct** **Porism.** From this it is manifest that the square on the diameter of the sphere is five times the square on the radius of the circle from which the icosahedron has been described, and that the diameter of the sphere is composed of the side of the hexagon and two of the sides of the decagon inscribed in the same circle
+
 .. picture:: g1.svg
    :alt: Book XIII, Proposition 16
 
-.. step:: given
+.. step:: construct
 
-   the diameter :g:`/ A B / <g1:/ A B />` of the given sphere be set out
+   Let the diameter :g:`/ A B / <g1:/ A B />` of the given sphere be set out, and let it be cut at :g:`C <g1:C>` so that :g:`/ A C / <g1:/ A C />` is quadruple of :g:`/ C B / <g1:/ C B />`
 
 .. step:: construct
 
-   Let it be cut at :g:`C <g1:C>` so that :g:`/ A C / <g1:/ A C />` is quadruple of :g:`/ C B / <g1:/ C B />`, let the semicircle :g:`( A D B ) <g1:( A D B )>` be described on :g:`/ A B / <g1:/ A B />`, let :g:`/ C D / <g1:/ C D />` be drawn from :g:`C <g1:C>` at right angles to :g:`/ A B / <g1:/ A B />`
+   Let the semicircle :g:`( A D B ) <g1:( A D B )>` be described on :g:`/ A B / <g1:/ A B />`
 
 .. step:: construct
 
-   **segment** :g:`/ D B / <g1:/ D B />`
+   :fn:`perpendicular_at <G.19>`\ (:g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`) → :g:`/ C D / <g1:/ C D />`
 
 .. step:: construct
 
-   Let :g:`( E F G H K ) <g1:( E F G H K )>` be set out and let its radius be :eq:`equal <g1:/ E V / = g1:/ D B />` to :g:`/ D B / <g1:/ D B />`, let the :eq:`equilateral <g1:/ E F / = g1:/ F G / = g1:/ G H / = g1:/ H K / = g1:/ K E />` and equiangular pentagon :g:`< E F G H K > <g1:< E F G H K >>` be inscribed in :g:`( E F G H K ) <g1:( E F G H K )>`, let the circumferences :g:`( E F ) <g1:( E F )>`, :g:`( F G ) <g1:( F G )>`, :g:`( G H ) <g1:( G H )>`, :g:`( H K ) <g1:( H K )>`, :g:`( K E ) <g1:( K E )>` be bisected at :g:`L <g1:L>`, :g:`M <g1:M>`, :g:`N <g1:N>`, :g:`O <g1:O>`, :g:`P <g1:P>`
+   :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`B <g1:B>`) → :g:`/ D B / <g1:/ D B />`
 
 .. step:: construct
 
-   **segment** :g:`/ L M / <g1:/ L M />`, :g:`/ M N / <g1:/ M N />`, :g:`/ N O / <g1:/ N O />`, :g:`/ O P / <g1:/ O P />`, :g:`/ P L / <g1:/ P L />`, :g:`/ E P / <g1:/ E P />`
+   :fn:`segment <G.3>`\ () → :g:`( E F G H K ) <g1:( E F G H K )>`, :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`B <g1:B>`) → :g:`/ D B / <g1:/ D B />`, :fn:`segment <G.3>`\ () → :g:`< E F G H K > <g1:< E F G H K >>`, :fn:`segment <G.3>`\ () → :g:`( E F G H K ) <g1:( E F G H K )>`, :fn:`segment <G.3>`\ () → :g:`( E F ) <g1:( E F )>`, :fn:`segment <G.3>`\ () → :g:`( F G ) <g1:( F G )>`, :fn:`segment <G.3>`\ () → :g:`( G H ) <g1:( G H )>`, :fn:`segment <G.3>`\ () → :g:`( H K ) <g1:( H K )>`, :fn:`segment <G.3>`\ () → :g:`( K E ) <g1:( K E )>`, :fn:`segment <G.3>`\ () → :g:`L <g1:L>`, :fn:`segment <G.3>`\ () → :g:`M <g1:M>`, :fn:`segment <G.3>`\ () → :g:`N <g1:N>`, :fn:`segment <G.3>`\ () → :g:`O <g1:O>`, :fn:`segment <G.3>`\ () → :g:`P <g1:P>`, :fn:`segment <G.3>`\ (:g:`L <g1:L>`, :g:`M <g1:M>`) → :g:`/ L M / <g1:/ L M />`, :fn:`segment <G.3>`\ (:g:`M <g1:M>`, :g:`N <g1:N>`) → :g:`/ M N / <g1:/ M N />`, :fn:`segment <G.3>`\ (:g:`N <g1:N>`, :g:`O <g1:O>`) → :g:`/ N O / <g1:/ N O />`, :fn:`segment <G.3>`\ (:g:`O <g1:O>`, :g:`P <g1:P>`) → :g:`/ O P / <g1:/ O P />`, :fn:`segment <G.3>`\ (:g:`P <g1:P>`, :g:`L <g1:L>`) → :g:`/ P L / <g1:/ P L />`, :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`P <g1:P>`) → :g:`/ E P / <g1:/ E P />`
 
 .. step:: assert
 
@@ -53,13 +58,9 @@ G.523
 
 .. step:: construct
 
-   Now from :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`K <g1:K>` let :g:`/ E Q / <g1:/ E Q />`, :g:`/ F R / <g1:/ F R />`, :g:`/ G S / <g1:/ G S />`, :g:`/ H T / <g1:/ H T />`, :g:`/ K U / <g1:/ K U />` be set up at right angles to the plane of the circle
+   Now from :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`K <g1:K>` let :g:`/ E Q / <g1:/ E Q />`, :g:`/ F R / <g1:/ F R />`, :g:`/ G S / <g1:/ G S />`, :g:`/ H T / <g1:/ H T />`, :g:`/ K U / <g1:/ K U />` be set up at right angles to the plane of the circle, and let them be :eq:`equal <g1:/ E Q / = g1:/ F R / = g1:/ G S / = g1:/ H T / = g1:/ K U / = g1:/ E V />` to the radius of :g:`( E F G H K ) <g1:( E F G H K )>`, let :g:`/ Q R / <g1:/ Q R />`, :g:`/ R S / <g1:/ R S />`, :g:`/ S T / <g1:/ S T />`, :g:`/ T U / <g1:/ T U />`, :g:`/ U Q / <g1:/ U Q />`, :g:`/ Q L / <g1:/ Q L />`, :g:`/ L R / <g1:/ L R />`, :g:`/ R M / <g1:/ R M />`, :g:`/ M S / <g1:/ M S />`, :g:`/ S N / <g1:/ S N />`, :g:`/ N T / <g1:/ N T />`, :g:`/ T O / <g1:/ T O />`, :g:`/ O U / <g1:/ O U />`, :g:`/ U P / <g1:/ U P />`, :g:`/ P Q / <g1:/ P Q />` be joined.
 
-.. step:: construct
-
-   **segment** them be :eq:`equal <g1:/ E Q / = g1:/ F R / = g1:/ G S / = g1:/ H T / = g1:/ K U / = g1:/ E V />` to the radius of :g:`( E F G H K ) <g1:( E F G H K )>`, let :g:`/ Q R / <g1:/ Q R />`, :g:`/ R S / <g1:/ R S />`, :g:`/ S T / <g1:/ S T />`, :g:`/ T U / <g1:/ T U />`, :g:`/ U Q / <g1:/ U Q />`, :g:`/ Q L / <g1:/ Q L />`, :g:`/ L R / <g1:/ L R />`, :g:`/ R M / <g1:/ R M />`, :g:`/ M S / <g1:/ M S />`, :g:`/ S N / <g1:/ S N />`, :g:`/ N T / <g1:/ N T />`, :g:`/ T O / <g1:/ T O />`, :g:`/ O U / <g1:/ O U />`, :g:`/ U P / <g1:/ U P />`, :g:`/ P Q / <g1:/ P Q />`
-
-.. step:: assert [G.449] <G.449>
+.. step:: assert ∵ straight_lines_right <G.449>
 
    Since each of :g:`/ E Q / <g1:/ E Q />`, :g:`/ K U / <g1:/ K U />` is at right angles to the same plane → therefore :g:`/ E Q / <g1:/ E Q />` is parallel to :g:`/ K U / <g1:/ K U />`.
 
@@ -67,7 +68,7 @@ G.523
 
    It is also :eq:`equal <g1:/ E Q / = g1:/ K U />` to it
 
-.. step:: assert [G.46] <G.46>
+.. step:: assert ∵ join_equal_parallels <G.46>
 
    And the straight lines joining those extremities of equal and parallel straight lines which are in the same direction are equal and parallel.
 
@@ -99,7 +100,7 @@ G.523
 
    Therefore :g:`/ Q P / <g1:/ Q P />` belongs to a pentagon;
 
-.. step:: assert [G.517] <G.517>
+.. step:: assert ∵ equilateral_pentagon_inscribed <G.517>
 
    For the square on the side of the pentagon is equal to the square on the side of the hexagon and the square on the side of the decagon inscribed in the same circle.
 
@@ -137,13 +138,9 @@ G.523
 
 .. step:: construct
 
-   From :g:`V <g1:V>` let :g:`/ V Z / <g1:/ V Z />` be set up at right angles to the plane of the circle, let it be produced in the other direction, as :g:`/ V X / <g1:/ V X />`, let there be cut off :g:`/ V W / <g1:/ V W />`, the side of a hexagon, and each of :g:`/ V X / <g1:/ V X />`, :g:`/ W Z / <g1:/ W Z />`, being sides of a decagon
+   From :g:`V <g1:V>` let :g:`/ V Z / <g1:/ V Z />` be set up at right angles to the plane of the circle, let it be produced in the other direction, as :g:`/ V X / <g1:/ V X />`, let there be cut off :g:`/ V W / <g1:/ V W />`, the side of a hexagon, and each of :g:`/ V X / <g1:/ V X />`, :g:`/ W Z / <g1:/ W Z />`, being sides of a decagon, and let :g:`/ Q Z / <g1:/ Q Z />`, :g:`/ Q W / <g1:/ Q W />`, :g:`/ U Z / <g1:/ U Z />`, :g:`/ E V / <g1:/ E V />`, :g:`/ L V / <g1:/ L V />`, :g:`/ L X / <g1:/ L X />`, :g:`/ X M / <g1:/ X M />` be joined.
 
-.. step:: construct
-
-   **segment** :g:`/ Q Z / <g1:/ Q Z />`, :g:`/ Q W / <g1:/ Q W />`, :g:`/ U Z / <g1:/ U Z />`, :g:`/ E V / <g1:/ E V />`, :g:`/ L V / <g1:/ L V />`, :g:`/ L X / <g1:/ L X />`, :g:`/ X M / <g1:/ X M />`
-
-.. step:: assert [G.449] <G.449>
+.. step:: assert ∵ straight_lines_right <G.449>
 
    Since each of :g:`/ V W / <g1:/ V W />`, :g:`/ Q E / <g1:/ Q E />` is at right angles to the plane of the circle → therefore :g:`/ V W / <g1:/ V W />` is parallel to :g:`/ Q E / <g1:/ Q E />`.
 
@@ -151,7 +148,7 @@ G.523
 
    They are also :eq:`equal <g1:/ V W / = g1:/ Q E />`
 
-.. step:: assert [G.46] <G.46>
+.. step:: assert ∵ join_equal_parallels <G.46>
 
    Therefore :g:`/ E V / <g1:/ E V />`, :g:`/ Q W / <g1:/ Q W />` are also :eq:`equal <g1:/ E V / = g1:/ Q W />` and parallel.
 
@@ -167,11 +164,11 @@ G.523
 
    And, since :g:`/ Q W / <g1:/ Q W />` belongs to a hexagon, and :g:`/ W Z / <g1:/ W Z />` to a decagon, and :g:`< Q W Z ) <g1:< Q W Z )>` is right,
 
-.. step:: assert [G.517] <G.517>
+.. step:: assert ∵ equilateral_pentagon_inscribed <G.517>
 
    Therefore :g:`/ Q Z / <g1:/ Q Z />` belongs to a pentagon.
 
-.. step:: assert [G.133] <G.133>
+.. step:: assert ∵ inscribe_hexagon_in_circle <G.133>
 
    For the same reason :g:`/ U Z / <g1:/ U Z />` also belongs to a pentagon, inasmuch as, if we join :g:`/ V K / <g1:/ V K />`, :g:`/ W U / <g1:/ W U />`, they will be :eq:`equal <g1:/ V K / = g1:/ W U />` and opposite, and :g:`/ V K / <g1:/ V K />`, being a radius, belongs to a hexagon; therefore :g:`/ W U / <g1:/ W U />` also belongs to a hexagon.
 
@@ -179,7 +176,7 @@ G.523
 
    :g:`/ W Z / <g1:/ W Z />` belongs to a decagon, and :g:`< U W Z ) <g1:< U W Z )>` is right;
 
-.. step:: assert [G.517] <G.517>
+.. step:: assert ∵ equilateral_pentagon_inscribed <G.517>
 
    Therefore :g:`/ U Z / <g1:/ U Z />` belongs to a pentagon.
 
@@ -195,7 +192,7 @@ G.523
 
    For the same reason each of the remaining triangles of which :g:`/ Q R / <g1:/ Q R />`, :g:`/ R S / <g1:/ R S />`, :g:`/ S T / <g1:/ S T />`, :g:`/ T U / <g1:/ T U />` are the bases, and :g:`Z <g1:Z>` the vertex, is also equilateral.
 
-.. step:: assert [G.517] <G.517>
+.. step:: assert ∵ equilateral_pentagon_inscribed <G.517>
 
    Since :g:`/ V L / <g1:/ V L />` belongs to a hexagon, and :g:`/ V X / <g1:/ V X />` to a decagon, and :g:`< L V X ) <g1:< L V X )>` is right → therefore :g:`/ L X / <g1:/ L X />` belongs to a pentagon.
 
@@ -223,7 +220,7 @@ G.523
 
    It is next required to comprehend it in the given sphere, and to prove that the side of the icosahedron is the irrational straight line called minor.
 
-.. step:: assert [G.516] <G.516>
+.. step:: assert ∵ side_hexagon_decagon <G.516>
 
    Since :g:`/ V W / <g1:/ V W />` belongs to a hexagon, and :g:`/ W Z / <g1:/ W Z />` to a decagon, therefore :g:`/ V Z / <g1:/ V Z />` has been cut in extreme and mean ratio at :g:`W <g1:W>`, and :g:`/ V W / <g1:/ V W />` is its greater segment
 
@@ -255,11 +252,11 @@ G.523
 
    Therefore, as :g:`/ X W / <g1:/ X W />` is to :g:`/ W Q / <g1:/ W Q />`, so is :g:`/ Q W / <g1:/ Q W />` to :g:`/ W Z / <g1:/ W Z />`.
 
-.. step:: assert [G.171] <G.171>
+.. step:: assert ∵ right_angled_triangle <G.171>
 
    For this reason again, if we join :g:`/ Q X / <g1:/ Q X />`, the angle at :g:`Q <g1:Q>` will be right.
 
-.. step:: assert [G.110] <G.110>
+.. step:: assert ∵ thales_semicircle_theorem <G.110>
 
    Therefore the semicircle described on :g:`/ X Z / <g1:/ X Z />` will also pass through :g:`Q <g1:Q>`.
 
@@ -273,13 +270,13 @@ G.523
 
 .. step:: construct
 
-   For let :g:`/ V W / <g1:/ V W />` be bisected at :g:`A' <g1:A'>`.
+   :fn:`bisect_segment <G.17>`\ (:g:`/ V W / <g1:/ V W />`) → :g:`A' <g1:A'>` (bisected)
 
 .. step:: assert
 
    Since :g:`/ V Z / <g1:/ V Z />` has been cut in extreme and mean ratio at :g:`W <g1:W>`, and :g:`/ Z W / <g1:/ Z W />` is its lesser segment,
 
-.. step:: assert [G.510] <G.510>
+.. step:: assert ∵ straight_line_cut_xiii_3 <G.510>
 
    Therefore the square on :g:`/ Z W / <g1:/ Z W />` added to the half of the greater segment, that is :g:`/ W A' / <g1:/ W A' />`, is five times the square on the half of the greater segment; therefore the square on :g:`/ Z A' / <g1:/ Z A' />` is five times the square on :g:`/ A' W / <g1:/ A' W />`.
 
@@ -299,7 +296,7 @@ G.523
 
    Therefore :g:`/ A B / <g1:/ A B />` is five times :g:`/ B C / <g1:/ B C />`.
 
-.. step:: assert [G.171, G.182] <G.171, G.182>
+.. step:: assert ∵ right_angled_triangle, magnitudes_proportional_said_def <G.171, G.182>
 
    But, as :g:`/ A B / <g1:/ A B />` is to :g:`/ B C / <g1:/ B C />`, so is the square on :g:`/ A B / <g1:/ A B />` to the square on :g:`/ B D / <g1:/ B D />`.
 
@@ -343,7 +340,7 @@ G.523
 
    Therefore the radius of :g:`( E F G H K ) <g1:( E F G H K )>` is also rational; hence its diameter is also rational.
 
-.. step:: assert [G.518] <G.518>
+.. step:: assert ∵ circle_diameter_rational <G.518>
 
    But, if an equilateral pentagon be inscribed in a circle which has its diameter rational, the side of the pentagon is the irrational straight line called minor.
 

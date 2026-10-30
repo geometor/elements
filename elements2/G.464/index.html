@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=156d9f89" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=3d8cc37d" />
   <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -49,7 +49,7 @@
           <a href="../../log/index.html"  >log</a>
         </li>
         <li>
-          <a href="../index.html"  >Elements 2.0 (G Index)</a>
+          <a href="../index.html" class="is-active" aria-selected="true" >Elements 2.0 (G Index)</a>
         </li>
       </ul>
     </nav>
@@ -92,6 +92,12 @@
         <span id="g-464"></span><span id="id1"></span><h1>G.464<a class="headerlink" href="#xi-19" title="Link to this heading">¶</a></h1>
         <p class="rubric"><a class="reference external" href="https://geometor.github.io/euclid/heath/volume_III/book_xi/propositions/19/" title="XI.19: If two planes which cut one another be at right angles to any plane, their common section is at right angles to the same plane.">XI.19</a></p>
         <div class="enunciation">If two planes which cut one another be at right angles to any plane, their common section is at right angles to the same plane.</div>
+        <div class="geom-signature geom-signature-theorem">
+        <div class="line-block">
+        <div class="line"><span class="geom-fn geom-fn-def" data-ref-target="G.464" title="G.464: If two planes which cut one another be at right angles to any plane, their common section is at right angles to the same plane.">planes_cut_right</span>()</div>
+        <div class="line"><strong>prove</strong> <span class="geom-ref" data-ref="g1:/ B D /" title="/ B D /">/ B D /</span> is at right angles to the plane of reference</div>
+        </div>
+        </div>
         <figure class="photon-picture photon-svg">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="9 9 211 219" width="211" height="219" class="euclid-graphic" data-graphic-id="g1" data-graphic="g1" data-proposition="XI.19">
           <defs>
@@ -165,14 +171,12 @@
           </g>
         </svg>
         </figure>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> For let the two planes <span class="geom-ref" data-ref="g1:&lt; A B &gt;" title="&lt; A B &gt;">&lt; A B &gt;</span>, <span class="geom-ref" data-ref="g1:&lt; B C &gt;" title="&lt; B C &gt;">&lt; B C &gt;</span> be at right angles to the plane of reference</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Let <span class="geom-ref" data-ref="g1:/ B D /" title="/ B D /">/ B D /</span> be their common section</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> For suppose it is not</div>
-        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> From <span class="geom-ref" data-ref="g1:D" title="D">D</span> let <span class="geom-ref" data-ref="g1:/ D E /" title="/ D E /">/ D E /</span> be drawn in the plane <span class="geom-ref" data-ref="g1:&lt; A B &gt;" title="&lt; A B &gt;">&lt; A B &gt;</span> at right angles to <span class="geom-ref" data-ref="g1:/ A D /" title="/ A D /">/ A D /</span>, and <span class="geom-ref" data-ref="g1:/ D F /" title="/ D F /">/ D F /</span> in the plane <span class="geom-ref" data-ref="g1:&lt; B C &gt;" title="&lt; B C &gt;">&lt; B C &gt;</span> at right angles to <span class="geom-ref" data-ref="g1:/ C D /" title="/ C D /">/ C D /</span>.</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Let the two planes <span class="geom-ref" data-ref="g1:&lt; A B &gt;" title="&lt; A B &gt;">&lt; A B &gt;</span>, <span class="geom-ref" data-ref="g1:&lt; B C &gt;" title="&lt; B C &gt;">&lt; B C &gt;</span> be at right angles to the plane of reference, and let <span class="geom-ref" data-ref="g1:/ B D /" title="/ B D /">/ B D /</span> be their common section</div>
+        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> Suppose it is not, and from <span class="geom-ref" data-ref="g1:D" title="D">D</span> let <span class="geom-ref" data-ref="g1:/ D E /" title="/ D E /">/ D E /</span> be drawn in the plane <span class="geom-ref" data-ref="g1:&lt; A B &gt;" title="&lt; A B &gt;">&lt; A B &gt;</span> at right angles to <span class="geom-ref" data-ref="g1:/ A D /" title="/ A D /">/ A D /</span>, and <span class="geom-ref" data-ref="g1:/ D F /" title="/ D F /">/ D F /</span> in the plane <span class="geom-ref" data-ref="g1:&lt; B C &gt;" title="&lt; B C &gt;">&lt; B C &gt;</span> at right angles to <span class="geom-ref" data-ref="g1:/ C D /" title="/ C D /">/ C D /</span>.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Since the plane <span class="geom-ref" data-ref="g1:&lt; A B &gt;" title="&lt; A B &gt;">&lt; A B &gt;</span> is at right angles to the plane of reference, and <span class="geom-ref" data-ref="g1:/ D E /" title="/ D E /">/ D E /</span> has been drawn in the plane <span class="geom-ref" data-ref="g1:&lt; A B &gt;" title="&lt; A B &gt;">&lt; A B &gt;</span> at right angles to <span class="geom-ref" data-ref="g1:/ A D /" title="/ A D /">/ A D /</span>, their common section,</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><a class="justification" href="../G.462/index.html#g-462" data-ref-target="G.462" title="G.462: Aplane is at right angles to a plane when the straight lines drawn, in one of the planes, at right angles to the common section of the planes are at right angles to the remaining…">[G.462]</a><span class="geom-step-badge geom-badge-assert">assert</span> Therefore <span class="geom-ref" data-ref="g1:/ D E /" title="/ D E /">/ D E /</span> is at right angles to the plane of reference.</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.462/index.html#g-462" data-ref-target="G.462" title="G.462: Aplane is at right angles to a plane when the straight lines drawn, in one of the planes, at right angles to the common section of the planes are at right angles to the remaining…">plane_right_angles_def</a></span><span class="geom-step-badge geom-badge-assert">assert</span> Therefore <span class="geom-ref" data-ref="g1:/ D E /" title="/ D E /">/ D E /</span> is at right angles to the plane of reference.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Similarly we can prove that <span class="geom-ref" data-ref="g1:/ D F /" title="/ D F /">/ D F /</span> is also at right angles to the plane of reference.</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><a class="justification" href="../G.456/index.html#g-456" data-ref-target="G.456" title="G.456: From the same point two straight lines cannot be set up at right angles to the same plane on the same side.">[G.456]</a><span class="geom-step-badge geom-badge-assert">assert</span> Therefore from the same point <span class="geom-ref" data-ref="g1:D" title="D">D</span> two straight lines have been set up at right angles to the plane of reference on the same side: which is impossible.</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.456/index.html#g-456" data-ref-target="G.456" title="G.456: From the same point two straight lines cannot be set up at right angles to the same plane on the same side.">point_straight_lines</a></span><span class="geom-step-badge geom-badge-assert">assert</span> Therefore from the same point <span class="geom-ref" data-ref="g1:D" title="D">D</span> two straight lines have been set up at right angles to the plane of reference on the same side: which is impossible.</div>
         <div class="geom-step geom-step-conclude" data-step-kind="conclude"><span class="geom-step-badge geom-badge-conclude">conclude</span> Therefore no straight line except the common section <span class="geom-ref" data-ref="g1:/ D B /" title="/ D B /">/ D B /</span> of the planes <span class="geom-ref" data-ref="g1:&lt; A B &gt;" title="&lt; A B &gt;">&lt; A B &gt;</span>, <span class="geom-ref" data-ref="g1:&lt; B C &gt;" title="&lt; B C &gt;">&lt; B C &gt;</span> can be set up from <span class="geom-ref" data-ref="g1:D" title="D">D</span> at right angles to the plane of reference.</div>
         <section class="level-2" id="dependency-graph">
         <h2>Dependency Graph<a class="headerlink" href="#dependency-graph" title="Link to this heading">¶</a></h2>
@@ -437,28 +441,28 @@
   <footer>
     <div class="footer-nav">
       <ul>
-        <li><a href="../../about.html">about</a></li>
-        <li><a href="../../connect.html">connect</a></li>
-        <li><a href="../../glossary.html">glossary</a></li>
-        <li><a href="../../todos/index.html">todos</a></li>
-        <li><a href="../../changelog.html">changelog</a></li>
+        <li><a href="../../about.html"  >about</a></li>
+        <li><a href="../../connect.html"  >connect</a></li>
+        <li><a href="../../glossary.html"  >glossary</a></li>
+        <li><a href="../../todos/index.html"  >todos</a></li>
+        <li><a href="../../changelog.html"  >changelog</a></li>
       </ul>
     </div>
     <hr />
     <div role="contentinfo">
       <p>
-        &copy; Copyright .
+        &copy; Copyright 2026, GEOMETOR.
       </p>
     </div>
   </footer>
 
   <script src="../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+  <script src="../../_static/documentation_options.js?v=d5a15cff"></script>
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
-  <script src="../../_static/js/geometor_interactive.js?v=421e4467"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=4430a5d4"></script>
   <script src="../../_static/js/search_highlight.js"></script>
 
 </body>

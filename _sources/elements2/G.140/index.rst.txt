@@ -24,18 +24,23 @@ G.140
 
    If a magnitude be the same multiple of a magnitude that a part subtracted is of a part subtracted, the remainder is the same multiple of the remainder that the whole is of the whole.
 
+.. signature:: theorem
+
+   | :fn:`magnitude_multiple_magnitude <G.140>`\ ()
+   | **prove** the remainder :g:`/ E B / <g1:/ E B />` is also the same multiple of the remainder :g:`/ F D / <g1:/ F D />` that the whole :g:`/ A B / <g1:/ A B />` is of the whole :g:`/ C D / <g1:/ C D />`
+
 .. picture:: g1.svg
    :alt: Proposition 5 Diagram
 
 .. step:: assert
 
-   For let the magnitude :g:`/ A B / <g1:/ A B />` be the same multiple of the magnitude :g:`/ C D / <g1:/ C D />` that the part :g:`/ A E / <g1:/ A E />` subtracted is of the part :g:`/ C F / <g1:/ C F />` subtracted
+   Let the magnitude :g:`/ A B / <g1:/ A B />` be the same multiple of the magnitude :g:`/ C D / <g1:/ C D />` that the part :g:`/ A E / <g1:/ A E />` subtracted is of the part :g:`/ C F / <g1:/ C F />` subtracted
 
 .. step:: construct
 
    Whatever multiple :g:`/ A E / <g1:/ A E />` is of :g:`/ C F / <g1:/ C F />`, let :g:`/ E B / <g1:/ E B />` be made that multiple of :g:`/ C G / <g1:/ C G />`.
 
-.. step:: assert [G.135] <G.135>
+.. step:: assert ∵ there_number_magnitudes <G.135>
 
    Since :g:`/ A E / <g1:/ A E />` is the same multiple of :g:`/ C F / <g1:/ C F />` that :g:`/ E B / <g1:/ E B />` is of :g:`/ C G / <g1:/ C G />` → therefore :g:`/ A E / <g1:/ A E />` is the same multiple of :g:`/ C F / <g1:/ C F />` that :g:`/ A B / <g1:/ A B />` is of :g:`/ G F / <g1:/ G F />`.
 
@@ -51,7 +56,7 @@ G.140
 
    Therefore :g:`/ G F / <g1:/ G F />` is :eq:`equal <g1:/ G F / = g1:/ C D />` to :g:`/ C D / <g1:/ C D />`.
 
-.. step:: assert
+.. step:: construct
 
    Let :g:`/ C F / <g1:/ C F />` be subtracted from each;
 

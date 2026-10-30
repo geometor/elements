@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=156d9f89" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=3d8cc37d" />
   <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -49,7 +49,7 @@
           <a href="../../log/index.html"  >log</a>
         </li>
         <li>
-          <a href="../index.html"  >Elements 2.0 (G Index)</a>
+          <a href="../index.html" class="is-active" aria-selected="true" >Elements 2.0 (G Index)</a>
         </li>
       </ul>
     </nav>
@@ -92,6 +92,12 @@
         <span id="g-465"></span><span id="id1"></span><h1>G.465<a class="headerlink" href="#xi-20" title="Link to this heading">¶</a></h1>
         <p class="rubric"><a class="reference external" href="https://geometor.github.io/euclid/heath/volume_III/book_xi/propositions/20/" title="XI.20: If a solid angle be contained by three plane angles, any two, taken together in any manner, are greater than the remaining one.">XI.20</a></p>
         <div class="enunciation">If a solid angle be contained by three plane angles, any two, taken together in any manner, are greater than the remaining one.</div>
+        <div class="geom-signature geom-signature-theorem">
+        <div class="line-block">
+        <div class="line"><span class="geom-fn geom-fn-def" data-ref-target="G.465" title="G.465: If a solid angle be contained by three plane angles, any two, taken together in any manner, are greater than the remaining one.">solid_angle_contained</span>()</div>
+        <div class="line"><strong>prove</strong> any two of <span class="geom-ref" data-ref="g1:&lt; B A C )" title="&lt; B A C )">&lt; B A C )</span>, <span class="geom-ref" data-ref="g1:&lt; C A D )" title="&lt; C A D )">&lt; C A D )</span>, <span class="geom-ref" data-ref="g1:&lt; D A B )" title="&lt; D A B )">&lt; D A B )</span>, taken together in any manner, are greater than the remaining one</div>
+        </div>
+        </div>
         <figure class="photon-picture photon-svg">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="7 -8 258 167" width="258" height="167" class="euclid-graphic" data-graphic-id="g1" data-graphic="g1" data-proposition="XI.20">
           <defs>
@@ -174,21 +180,20 @@
           </g>
         </svg>
         </figure>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> For let the solid angle at <span class="geom-ref" data-ref="g1:A" title="A">A</span> be contained by the three plane angles <span class="geom-ref" data-ref="g1:&lt; B A C )" title="&lt; B A C )">&lt; B A C )</span>, <span class="geom-ref" data-ref="g1:&lt; C A D )" title="&lt; C A D )">&lt; C A D )</span>, <span class="geom-ref" data-ref="g1:&lt; D A B )" title="&lt; D A B )">&lt; D A B )</span></div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Let the solid angle at <span class="geom-ref" data-ref="g1:A" title="A">A</span> be contained by the three plane angles <span class="geom-ref" data-ref="g1:&lt; B A C )" title="&lt; B A C )">&lt; B A C )</span>, <span class="geom-ref" data-ref="g1:&lt; C A D )" title="&lt; C A D )">&lt; C A D )</span>, <span class="geom-ref" data-ref="g1:&lt; D A B )" title="&lt; D A B )">&lt; D A B )</span></div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> If now <span class="geom-ref" data-ref="g1:&lt; B A C )" title="&lt; B A C )">&lt; B A C )</span>, <span class="geom-ref" data-ref="g1:&lt; C A D )" title="&lt; C A D )">&lt; C A D )</span>, <span class="geom-ref" data-ref="g1:&lt; D A B )" title="&lt; D A B )">&lt; D A B )</span> are <span class="geom-eq-ref" data-assert-equal="g1:&lt; B A C ) = g1:&lt; C A D ) = g1:&lt; D A B )" title="&lt; B A C ) = &lt; C A D ) = &lt; D A B )">equal</span> to one another,</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> It is manifest that any two are greater than the remaining one.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> But, if not, let <span class="geom-ref" data-ref="g1:&lt; B A C )" title="&lt; B A C )">&lt; B A C )</span> be greater,</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> And on <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span></div>
-        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> At <span class="geom-ref" data-ref="g1:A" title="A">A</span> on it, let <span class="geom-ref" data-ref="g1:&lt; B A E )" title="&lt; B A E )">&lt; B A E )</span> be constructed, in the plane through <span class="geom-ref" data-ref="g1:/ B A /" title="/ B A /">/ B A /</span>, <span class="geom-ref" data-ref="g1:/ A C /" title="/ A C /">/ A C /</span>, <span class="geom-eq-ref" data-assert-equal="g1:&lt; B A E ) = g1:&lt; D A B )" title="&lt; B A E ) = &lt; D A B )">equal</span> to <span class="geom-ref" data-ref="g1:&lt; D A B )" title="&lt; D A B )">&lt; D A B )</span></div>
-        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> Let <span class="geom-ref" data-ref="g1:/ A E /" title="/ A E /">/ A E /</span> be made <span class="geom-eq-ref" data-assert-equal="g1:/ A E / = g1:/ A D /" title="/ A E / = / A D /">equal</span> to <span class="geom-ref" data-ref="g1:/ A D /" title="/ A D /">/ A D /</span></div>
+        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> And on <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span>, and at <span class="geom-ref" data-ref="g1:A" title="A">A</span> on it, let <span class="geom-ref" data-ref="g1:&lt; B A E )" title="&lt; B A E )">&lt; B A E )</span> be constructed, in the plane through <span class="geom-ref" data-ref="g1:/ B A /" title="/ B A /">/ B A /</span>, <span class="geom-ref" data-ref="g1:/ A C /" title="/ A C /">/ A C /</span>, <span class="geom-eq-ref" data-assert-equal="g1:&lt; B A E ) = g1:&lt; D A B )" title="&lt; B A E ) = &lt; D A B )">equal</span> to <span class="geom-ref" data-ref="g1:&lt; D A B )" title="&lt; D A B )">&lt; D A B )</span></div>
+        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> <a class="geom-fn" href="../G.9/index.html#g-9" data-ref-target="G.9" title="G.9: Cut off from the greater of two unequal segments a segment equal to the less.">cut_equal_segment</a>(<span class="geom-ref" data-ref="g1:/ A D /" title="/ A D /">/ A D /</span>) → <span class="geom-ref" data-ref="g1:/ A E /" title="/ A E /">/ A E /</span> (<span class="geom-eq-ref" data-assert-equal="g1:/ A E / = g1:/ A D /" title="/ A E / = / A D /">equal</span>)</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Let <span class="geom-ref" data-ref="g1:/ B E C /" title="/ B E C /">/ B E C /</span>, drawn across through <span class="geom-ref" data-ref="g1:E" title="E">E</span>, cut <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span>, <span class="geom-ref" data-ref="g1:/ A C /" title="/ A C /">/ A C /</span> at <span class="geom-ref" data-ref="g1:B" title="B">B</span>, <span class="geom-ref" data-ref="g1:C" title="C">C</span></div>
-        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> <strong>segment</strong> <span class="geom-ref" data-ref="g1:/ D B /" title="/ D B /">/ D B /</span>, <span class="geom-ref" data-ref="g1:/ D C /" title="/ D C /">/ D C /</span></div>
+        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> <a class="geom-fn" href="../G.3/index.html#g-3" data-ref-target="G.3" title="G.3: Construct a segment between any two points.">segment</a>(<span class="geom-ref" data-ref="g1:D" title="D">D</span>, <span class="geom-ref" data-ref="g1:B" title="B">B</span>) → <span class="geom-ref" data-ref="g1:/ D B /" title="/ D B /">/ D B /</span>, <a class="geom-fn" href="../G.3/index.html#g-3" data-ref-target="G.3" title="G.3: Construct a segment between any two points.">segment</a>(<span class="geom-ref" data-ref="g1:D" title="D">D</span>, <span class="geom-ref" data-ref="g1:C" title="C">C</span>) → <span class="geom-ref" data-ref="g1:/ D C /" title="/ D C /">/ D C /</span></div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Since <span class="geom-ref" data-ref="g1:/ D A /" title="/ D A /">/ D A /</span> is <span class="geom-eq-ref" data-assert-equal="g1:/ D A / = g1:/ A E /" title="/ D A / = / A E /">equal</span> to <span class="geom-ref" data-ref="g1:/ A E /" title="/ A E /">/ A E /</span>, and <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span> is common, two sides are <span class="geom-eq-ref" data-assert-equal="g1:/ D A / = g1:/ A E /" title="/ D A / = / A E /">equal</span> to two sides ; and <span class="geom-ref" data-ref="g1:&lt; D A B )" title="&lt; D A B )">&lt; D A B )</span> is <span class="geom-eq-ref" data-assert-equal="g1:&lt; D A B ) = g1:&lt; B A E )" title="&lt; D A B ) = &lt; B A E )">equal</span> to <span class="geom-ref" data-ref="g1:&lt; B A E )" title="&lt; B A E )">&lt; B A E )</span>;</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><a class="justification" href="../G.11/index.html#g-11" data-ref-target="G.11" title="G.11: Triangles with two sides and the included angle equal are congruent (SAS).">[G.11]</a><span class="geom-step-badge geom-badge-assert">assert</span> Therefore the base <span class="geom-ref" data-ref="g1:/ D B /" title="/ D B /">/ D B /</span> is <span class="geom-eq-ref" data-assert-equal="g1:/ D B / = g1:/ B E /" title="/ D B / = / B E /">equal</span> to the base <span class="geom-ref" data-ref="g1:/ B E /" title="/ B E /">/ B E /</span>.</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><a class="justification" href="../G.31/index.html#g-31" data-ref-target="G.31" title="G.31: In any triangle, the sum of any two sides is greater than the remaining side.">[G.31]</a><span class="geom-step-badge geom-badge-assert">assert</span> And, since the two sides <span class="geom-ref" data-ref="g1:/ B D /" title="/ B D /">/ B D /</span>, <span class="geom-ref" data-ref="g1:/ D C /" title="/ D C /">/ D C /</span> are greater than <span class="geom-ref" data-ref="g1:/ B C /" title="/ B C /">/ B C /</span>, and of these <span class="geom-ref" data-ref="g1:/ D B /" title="/ D B /">/ D B /</span> was proved <span class="geom-eq-ref" data-assert-equal="g1:/ D B / = g1:/ B E /" title="/ D B / = / B E /">equal</span> to <span class="geom-ref" data-ref="g1:/ B E /" title="/ B E /">/ B E /</span>.</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.11/index.html#g-11" data-ref-target="G.11" title="G.11: Triangles with two sides and the included angle equal are congruent (SAS).">sas_congruence</a></span><span class="geom-step-badge geom-badge-assert">assert</span> Therefore the base <span class="geom-ref" data-ref="g1:/ D B /" title="/ D B /">/ D B /</span> is <span class="geom-eq-ref" data-assert-equal="g1:/ D B / = g1:/ B E /" title="/ D B / = / B E /">equal</span> to the base <span class="geom-ref" data-ref="g1:/ B E /" title="/ B E /">/ B E /</span>.</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.31/index.html#g-31" data-ref-target="G.31" title="G.31: In any triangle, the sum of any two sides is greater than the remaining side.">triangle_inequality</a></span><span class="geom-step-badge geom-badge-assert">assert</span> And, since the two sides <span class="geom-ref" data-ref="g1:/ B D /" title="/ B D /">/ B D /</span>, <span class="geom-ref" data-ref="g1:/ D C /" title="/ D C /">/ D C /</span> are greater than <span class="geom-ref" data-ref="g1:/ B C /" title="/ B C /">/ B C /</span>, and of these <span class="geom-ref" data-ref="g1:/ D B /" title="/ D B /">/ D B /</span> was proved <span class="geom-eq-ref" data-assert-equal="g1:/ D B / = g1:/ B E /" title="/ D B / = / B E /">equal</span> to <span class="geom-ref" data-ref="g1:/ B E /" title="/ B E /">/ B E /</span>.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore the remainder <span class="geom-ref" data-ref="g1:/ D C /" title="/ D C /">/ D C /</span> is greater than the remainder <span class="geom-ref" data-ref="g1:/ E C /" title="/ E C /">/ E C /</span>.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Since <span class="geom-ref" data-ref="g1:/ D A /" title="/ D A /">/ D A /</span> is <span class="geom-eq-ref" data-assert-equal="g1:/ D A / = g1:/ A E /" title="/ D A / = / A E /">equal</span> to <span class="geom-ref" data-ref="g1:/ A E /" title="/ A E /">/ A E /</span>, and <span class="geom-ref" data-ref="g1:/ A C /" title="/ A C /">/ A C /</span> is common, and the base <span class="geom-ref" data-ref="g1:/ D C /" title="/ D C /">/ D C /</span> is greater than the base <span class="geom-ref" data-ref="g1:/ E C /" title="/ E C /">/ E C /</span>,</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><a class="justification" href="../G.36/index.html#g-36" data-ref-target="G.36" title="G.36: If two triangles have two sides equal to two sides respectively, the one with the greater base has the greater included angle.">[G.36]</a><span class="geom-step-badge geom-badge-assert">assert</span> Therefore <span class="geom-ref" data-ref="g1:&lt; D A C )" title="&lt; D A C )">&lt; D A C )</span> is greater than <span class="geom-ref" data-ref="g1:&lt; E A C )" title="&lt; E A C )">&lt; E A C )</span>.</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.36/index.html#g-36" data-ref-target="G.36" title="G.36: If two triangles have two sides equal to two sides respectively, the one with the greater base has the greater included angle.">converse_hinge_theorem</a></span><span class="geom-step-badge geom-badge-assert">assert</span> Therefore <span class="geom-ref" data-ref="g1:&lt; D A C )" title="&lt; D A C )">&lt; D A C )</span> is greater than <span class="geom-ref" data-ref="g1:&lt; E A C )" title="&lt; E A C )">&lt; E A C )</span>.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> <span class="geom-ref" data-ref="g1:&lt; D A B )" title="&lt; D A B )">&lt; D A B )</span> was also proved <span class="geom-eq-ref" data-assert-equal="g1:&lt; D A B ) = g1:&lt; B A E )" title="&lt; D A B ) = &lt; B A E )">equal</span> to <span class="geom-ref" data-ref="g1:&lt; B A E )" title="&lt; B A E )">&lt; B A E )</span> ;</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore <span class="geom-ref" data-ref="g1:&lt; D A B )" title="&lt; D A B )">&lt; D A B )</span>, <span class="geom-ref" data-ref="g1:&lt; D A C )" title="&lt; D A C )">&lt; D A C )</span> are greater than <span class="geom-ref" data-ref="g1:&lt; B A C )" title="&lt; B A C )">&lt; B A C )</span>.</div>
         <div class="geom-step geom-step-conclude" data-step-kind="conclude"><span class="geom-step-badge geom-badge-conclude">conclude</span> Similarly we can prove that the remaining angles also, taken together two and two, are greater than the remaining one.</div>
@@ -548,28 +553,28 @@
   <footer>
     <div class="footer-nav">
       <ul>
-        <li><a href="../../about.html">about</a></li>
-        <li><a href="../../connect.html">connect</a></li>
-        <li><a href="../../glossary.html">glossary</a></li>
-        <li><a href="../../todos/index.html">todos</a></li>
-        <li><a href="../../changelog.html">changelog</a></li>
+        <li><a href="../../about.html"  >about</a></li>
+        <li><a href="../../connect.html"  >connect</a></li>
+        <li><a href="../../glossary.html"  >glossary</a></li>
+        <li><a href="../../todos/index.html"  >todos</a></li>
+        <li><a href="../../changelog.html"  >changelog</a></li>
       </ul>
     </div>
     <hr />
     <div role="contentinfo">
       <p>
-        &copy; Copyright .
+        &copy; Copyright 2026, GEOMETOR.
       </p>
     </div>
   </footer>
 
   <script src="../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+  <script src="../../_static/documentation_options.js?v=d5a15cff"></script>
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
-  <script src="../../_static/js/geometor_interactive.js?v=421e4467"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=4430a5d4"></script>
   <script src="../../_static/js/search_highlight.js"></script>
 
 </body>

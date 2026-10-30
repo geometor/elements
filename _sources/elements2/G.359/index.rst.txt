@@ -24,10 +24,16 @@ G.359
 
    A second bimedial straight line is divided at one point only.
 
+.. signature:: theorem
+
+   | :fn:`bimedial_straight_line_x_44 <G.359>`\ (:g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`, :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />`)
+   | **given** :g:`/ A B / <g1:/ A B />` be a second bimedial straight line divided at :g:`C <g1:C>`, so that :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` are medial straight lines commensurable in square only and containing a medial rectangle
+   | **prove** :g:`/ A B / <g1:/ A B />` is not so divided at another point
+
 .. picture:: g1.svg
    :alt: Proposition 44 diagram
 
-.. step:: given [G.353] <G.353>
+.. step:: given
 
    :g:`/ A B / <g1:/ A B />` be a second bimedial straight line divided at :g:`C <g1:C>`, so that :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` are medial straight lines commensurable in square only and containing a medial rectangle
 
@@ -39,7 +45,7 @@ G.359
 
    If possible, let it be divided at :g:`D <g1:D>` also, so that :g:`/ A C / <g1:/ A C />` is not the same with :g:`/ D B / <g1:/ D B />`, but :g:`/ A C / <g1:/ A C />` is supposed greater
 
-.. step:: assert [Lemma] <Lemma>
+.. step:: assert ∵ Lemma <Lemma>
 
    It is then clear that the squares on :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` are also, as we proved above, less than the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />`
 
@@ -51,17 +57,17 @@ G.359
 
    Now let a rational straight line :g:`/ E F / <g1:/ E F />` be set out, let there be applied to :g:`/ E F / <g1:/ E F />` the rectangular parallelogram :g:`< E K > <g1:< E K >>` equal to the square on :g:`/ A B / <g1:/ A B />`
 
-.. step:: assert
+.. step:: construct
 
    Let :g:`< E G > <g1:< E G >>` equal to the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` be subtracted
 
-.. step:: assert [G.65] <G.65>
+.. step:: assert ∵ square_of_sum <G.65>
 
    Therefore the remainder :g:`< H K > <g1:< H K >>` is equal to twice the rectangle :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />`.
 
-.. step:: assert [Lemma] <Lemma>
+.. step:: construct
 
-   Let there be subtracted :g:`< E L > <g1:< E L >>`, equal to the squares on :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />`, which were proved less than the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />`
+   :fn:`Lemma <Lemma>`: Let there be subtracted :g:`< E L > <g1:< E L >>`, equal to the squares on :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />`, which were proved less than the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />`
 
 .. step:: assert
 
@@ -79,7 +85,7 @@ G.359
 
    It is applied to the rational straight line :g:`/ E F / <g1:/ E F />`;
 
-.. step:: assert [G.336] <G.336>
+.. step:: assert ∵ square_medial_straight <G.336>
 
    Therefore :g:`/ E H / <g1:/ E H />` is rational and incommensurable in length with :g:`/ E F / <g1:/ E F />`.
 
@@ -103,19 +109,19 @@ G.359
 
    But, as :g:`/ A C / <g1:/ A C />` is to :g:`/ C B / <g1:/ C B />`, so is the square on :g:`/ A C / <g1:/ A C />` to the rectangle :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />`;
 
-.. step:: assert [G.323] <G.323>
+.. step:: assert ∵ magnitudes_proportional_commensurable <G.323>
 
    Therefore the square on :g:`/ A C / <g1:/ A C />` is incommensurable with the rectangle :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />`.
 
-.. step:: assert [G.328] <G.328>
+.. step:: assert ∵ commensurable_magnitudes_added <G.328>
 
    The squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` are commensurable with the square on :g:`/ A C / <g1:/ A C />`; for :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` are commensurable in square.
 
-.. step:: assert [G.319] <G.319>
+.. step:: assert ∵ magnitudes_ratio_number <G.319>
 
    Twice the rectangle :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` is commensurable with the rectangle :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />`.
 
-.. step:: assert [G.326] <G.326>
+.. step:: assert ∵ magnitudes_commensurable_incommensurable <G.326>
 
    Therefore the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` are also incommensurable with twice the rectangle :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />`.
 
@@ -123,7 +129,7 @@ G.359
 
    :g:`< E G > <g1:< E G >>` is equal to the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />`, and :g:`< H K > <g1:< H K >>` is equal to twice the rectangle :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />`;
 
-.. step:: assert [G.163, G.323] <G.163, G.323>
+.. step:: assert ∵ triangles_parallelograms_height, magnitudes_proportional_commensurable <G.163, G.323>
 
    Therefore :g:`< E G > <g1:< E G >>` is incommensurable with :g:`< H K > <g1:< H K >>`, so that :g:`/ E H / <g1:/ E H />` is also incommensurable in length with :g:`/ H N / <g1:/ H N />`.
 
@@ -135,7 +141,7 @@ G.359
 
    Therefore :g:`/ E H / <g1:/ E H />`, :g:`/ H N / <g1:/ H N />` are rational straight lines commensurable in square only.
 
-.. step:: assert [G.351] <G.351>
+.. step:: assert ∵ rational_straight_lines <G.351>
 
    But, if two rational straight lines commensurable in square only be added together, the whole is the irrational which is called binomial.
 

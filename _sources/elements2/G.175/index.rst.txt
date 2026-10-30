@@ -24,12 +24,18 @@ G.175
 
    To three given straight lines to find a fourth proportional.
 
+.. signature:: problem
+
+   | :fn:`fourth_proportional <G.175>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`) → :g:`/ H F / <g1:/ H F />`
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`
+   | **construct** as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`/ H F / <g1:/ H F />`
+
 .. picture:: g1.svg
    :alt: Proposition 12
 
 .. step:: given
 
-   :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` be the three
+   :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`
 
 .. step:: assert
 
@@ -37,21 +43,21 @@ G.175
 
 .. step:: construct
 
-   Let :g:`/ D G / <g1:/ D G />` be made :eq:`equal <g1:/ D G / = g1:A>` to :g:`A <g1:A>`, :g:`/ G E / <g1:/ G E />` :eq:`equal <g1:/ G E / = g1:B>` to :g:`B <g1:B>`, and further :g:`/ D H / <g1:/ D H />` :eq:`equal <g1:/ D H / = g1:C>` to :g:`C <g1:C>`
+   :fn:`cut_equal_segment <G.9>`\ (:g:`A <g1:A>`, :g:`/ G E / <g1:/ G E />` :eq:`equal <g1:/ G E / = g1:B>` to :g:`B <g1:B>`, and further :g:`/ D H / <g1:/ D H />` :eq:`equal <g1:/ D H / = g1:C>` to :g:`C <g1:C>`) → :g:`/ D G / <g1:/ D G />` (:eq:`equal <g1:/ D G / = g1:A>`)
 
 .. step:: construct
 
-   **segment** :g:`/ G H / <g1:/ G H />`
+   :fn:`segment <G.3>`\ (:g:`G <g1:G>`, :g:`H <g1:H>`) → :g:`/ G H / <g1:/ G H />`
 
-.. step:: construct [G.44] <G.44>
+.. step:: construct
 
-   Let :g:`/ E F / <g1:/ E F />` be drawn through :g:`E <g1:E>` parallel to it.
+   :fn:`parallel_line <G.44>`\ (:g:`E <g1:E>`, it) → :g:`/ E F / <g1:/ E F />`
 
 .. step:: assert
 
    Since, then, :g:`/ G H / <g1:/ G H />` has been drawn parallel to :g:`/ E F / <g1:/ E F />`, one of the sides of :g:`< D E F > <g1:< D E F >>`,
 
-.. step:: assert [G.164] <G.164>
+.. step:: assert ∵ straight_line_drawn_vi_2 <G.164>
 
    Therefore, as :g:`/ D G / <g1:/ D G />` is to :g:`/ G E / <g1:/ G E />`, so is :g:`/ D H / <g1:/ D H />` to :g:`/ H F / <g1:/ H F />`.
 

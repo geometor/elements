@@ -24,6 +24,12 @@ G.56
 
    In any parallelogram, the complements of the parallelograms about the diagonal are equal in area.
 
+.. signature:: theorem
+
+   | :fn:`parallelogram_complements <G.56>`\ (:g:`< A B C D > <g1:< A B C D >>`, :g:`/ A C / <g1:/ A C />`)
+   | **given** :g:`< A B C D > <g1:< A B C D >>` be a parallelogram, :g:`/ A C / <g1:/ A C />` its diameter
+   | **prove** the complement :g:`< E B F K > <g1:< E B F K >>` is :eq:`equal <g1:< E B F K > = g1:< H K G D >>` to the complement :g:`< H K G D > <g1:< H K G D >>`
+
 .. picture:: g1.svg
    :alt: Folio 0354 Figure 1 - Proposition 43
 
@@ -35,11 +41,7 @@ G.56
 
    And about :g:`/ A C / <g1:/ A C />` let :g:`< A E K H > <g1:< A E K H >>`, :g:`< K F C G > <g1:< K F C G >>` be parallelograms, and :g:`< E B F K > <g1:< E B F K >>`, :g:`< H K G D > <g1:< H K G D >>` the so-called complements
 
-.. step:: assert
-
-   The complement :g:`< E B F K > <g1:< E B F K >>` is :eq:`equal <g1:< E B F K > = g1:< H K G D >>` to the complement :g:`< H K G D > <g1:< H K G D >>`.
-
-.. step:: assert [G.47] <G.47>
+.. step:: assert ∵ parallelogram_properties <G.47>
 
    Since :g:`< A B C D > <g1:< A B C D >>` is a parallelogram, and :g:`/ A C / <g1:/ A C />` its diameter, :g:`< A B C > <g1:< A B C >>` is :eq:`equal <g1:< A B C > = g1:< A C D >>` to :g:`< A C D > <g1:< A C D >>`.
 
@@ -49,9 +51,9 @@ G.56
 
 .. step:: assert
 
-   For the same reason :g:`< K F C > <g1:< K F C >>` is also :eq:`equal <g1:< K F C > = g1:< K G C >>` to :g:`< K G C > <g1:< K G C >>`.
+   The same reason :g:`< K F C > <g1:< K F C >>` is also :eq:`equal <g1:< K F C > = g1:< K G C >>` to :g:`< K G C > <g1:< K G C >>`.
 
-.. step:: assert [G.21] <G.21>
+.. step:: assert ∵ add_equals <G.21>
 
    Since :g:`< A E K > <g1:< A E K >>` is :eq:`equal <g1:< A E K > = g1:< A H K >; g1:< K F C > = g1:< K G C >>` to :g:`< A H K > <g1:< A H K >>`, and :g:`< K F C > <g1:< K F C >>` to :g:`< K G C > <g1:< K G C >>` → :g:`< A E K > <g1:< A E K >>` together with :g:`< K G C > <g1:< K G C >>` is equal to :g:`< A H K > <g1:< A H K >>` together with :g:`< K F C > <g1:< K F C >>`.
 
@@ -59,7 +61,7 @@ G.56
 
    The whole triangle :g:`< A B C > <g1:< A B C >>` is also :eq:`equal <g1:< A B C > = g1:< A D C >>` to the whole :g:`< A D C > <g1:< A D C >>`
 
-.. step:: conclude [G.6] <G.6>
+.. step:: conclude ∵ subtract_equals <G.6>
 
    Therefore the complement :g:`< E B F K > <g1:< E B F K >>` which remains is :eq:`equal <g1:< E B F K > = g1:< H K G D >>` to the complement :g:`< H K G D > <g1:< H K G D >>` which remains.
 

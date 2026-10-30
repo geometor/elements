@@ -23,6 +23,10 @@ G.2
 
    A circle is a plane figure contained by one line such that all segments falling upon it from its center are equal.
 
+.. signature:: def
+
+   | :fn:`circle_radii <G.2>`
+
 Required for
 ------------
 

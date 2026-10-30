@@ -10,7 +10,7 @@
 :category: theorem, proof, plane-geometry, proportions, similar-figures
 :tags: book-vi, point, segment, angle, triangle, bisect, ratio, equality
 :dependencies: G.12, G.13, G.42, G.146, G.148, G.164
-:excerpt: If an angle of a triangle be bisected and the straight line cutting the angle cut the base also, the segments of the base will have the same ratio as the remaining sides of the triangle; and, if the segments of the base have the same ratio as the
+:excerpt: If an angle of a triangle be bisected and the straight line cutting the angle cut the base also, the segments of the base will have the same ratio as the remaining sides of the triangle; and, if the segments of the base have the same ratio as the remaining sides of the triangle, the straight line joined from the vertex to the point of section will bisect the angle of the triangle.
 
 .. _G.165:
 .. _VI.3:
@@ -22,32 +22,34 @@ G.165
 
 .. enunciation::
 
-   If an angle of a triangle be bisected and the straight line cutting the angle cut the base also, the segments of the base will have the same ratio as the remaining sides of the triangle; and, if the segments of the base have the same ratio as the
+   If an angle of a triangle be bisected and the straight line cutting the angle cut the base also, the segments of the base will have the same ratio as the remaining sides of the triangle; and, if the segments of the base have the same ratio as the remaining sides of the triangle, the straight line joined from the vertex to the point of section will bisect the angle of the triangle.
 
-.. enunciation::
+.. signature:: theorem
 
-   Remaining sides of the triangle, the straight line joined from the vertex to the point of section will bisect the angle of the triangle.
+   | :fn:`angle_triangle_bisected <G.165>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`< B A C ) <g1:< B A C )>`, :g:`/ A D / <g1:/ A D />`)
+   | **given** :g:`< A B C > <g1:< A B C >>` be a triangle, let :g:`< B A C ) <g1:< B A C )>` be :eq:`bisected <g1:< B A D ) = g1:< C A D )>` by :g:`/ A D / <g1:/ A D />`
+   | **prove** :g:`< B A C ) <g1:< B A C )>` has been :eq:`bisected <g1:< B A D ) = g1:< C A D )>` by :g:`/ A D / <g1:/ A D />`
 
 .. picture:: g1.svg
    :alt: Proposition 3
 
 .. step:: given
 
-   :g:`< A B C > <g1:< A B C >>` be a triangle
+   :g:`< A B C > <g1:< A B C >>` be a triangle, let :g:`< B A C ) <g1:< B A C )>` be :eq:`bisected <g1:< B A D ) = g1:< C A D )>` by :g:`/ A D / <g1:/ A D />`
 
 .. step:: assert
 
-   Let :g:`< B A C ) <g1:< B A C )>` be :eq:`bisected <g1:< B A D ) = g1:< C A D )>` by :g:`/ A D / <g1:/ A D />`
+   I say that, as :g:`/ B D / <g1:/ B D />` is to :g:`/ C D / <g1:/ C D />`, so is :g:`/ B A / <g1:/ B A />` to :g:`/ A C / <g1:/ A C />`.
 
 .. step:: construct
 
-   For let :g:`/ C E / <g1:/ C E />` be drawn through :g:`C <g1:C>` parallel to :g:`/ D A / <g1:/ D A />`
+   :fn:`parallel_line <G.44>`\ (:g:`C <g1:C>`, :g:`/ D A / <g1:/ D A />`) → :g:`/ C E / <g1:/ C E />`
 
 .. step:: assert
 
    Let :g:`/ B A / <g1:/ B A />` be carried through and meet it at :g:`E <g1:E>`.
 
-.. step:: assert [G.42] <G.42>
+.. step:: assert ∵ parallel_transversal_angles <G.42>
 
    Since :g:`/ A C / <g1:/ A C />` falls upon the parallels :g:`/ A D / <g1:/ A D />`, :g:`/ E C / <g1:/ E C />` → :g:`< A C E ) <g1:< A C E )>` is :eq:`equal <g1:< A C E ) = g1:< C A D )>` to :g:`< C A D ) <g1:< C A D )>`.
 
@@ -59,7 +61,7 @@ G.165
 
    Therefore :g:`< B A D ) <g1:< B A D )>` is also :eq:`equal <g1:< B A D ) = g1:< A C E )>` to :g:`< A C E ) <g1:< A C E )>`.
 
-.. step:: assert [G.42] <G.42>
+.. step:: assert ∵ parallel_transversal_angles <G.42>
 
    Since :g:`/ B A E / <g1:/ B A E />` falls upon the parallels :g:`/ A D / <g1:/ A D />`, :g:`/ E C / <g1:/ E C />` → the exterior angle :g:`< B A D ) <g1:< B A D )>` is :eq:`equal <g1:< B A D ) = g1:< A E C )>` to the interior angle :g:`< A E C ) <g1:< A E C )>`.
 
@@ -71,7 +73,7 @@ G.165
 
    Therefore :g:`< A C E ) <g1:< A C E )>` is also :eq:`equal <g1:< A C E ) = g1:< A E C )>` to :g:`< A E C ) <g1:< A E C )>`,
 
-.. step:: assert [G.13] <G.13>
+.. step:: assert ∵ equal_angles_isosceles <G.13>
 
    So that the side :g:`/ A E / <g1:/ A E />` is also :eq:`equal <g1:/ A E / = g1:/ A C />` to the side :g:`/ A C / <g1:/ A C />`.
 
@@ -79,7 +81,7 @@ G.165
 
    And, since :g:`/ A D / <g1:/ A D />` has been drawn parallel to :g:`/ E C / <g1:/ E C />`, one of the sides of :g:`< B C E > <g1:< B C E >>`,
 
-.. step:: assert [G.164] <G.164>
+.. step:: assert ∵ straight_line_drawn_vi_2 <G.164>
 
    Therefore, proportionally, as :g:`/ B D / <g1:/ B D />` is to :g:`/ D C / <g1:/ D C />`, so is :g:`/ B A / <g1:/ B A />` to :g:`/ A E / <g1:/ A E />`.
 
@@ -91,35 +93,27 @@ G.165
 
    Therefore, as :g:`/ B D / <g1:/ B D />` is to :g:`/ D C / <g1:/ D C />`, so is :g:`/ B A / <g1:/ B A />` to :g:`/ A C / <g1:/ A C />`.
 
-.. step:: assert
-
-   Let :g:`/ B A / <g1:/ B A />` be to :g:`/ A C / <g1:/ A C />` as :g:`/ B D / <g1:/ B D />` to :g:`/ D C / <g1:/ D C />`
-
 .. step:: construct
 
-   **segment** :g:`/ A D / <g1:/ A D />`
+   :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`A <g1:A>`) → :g:`/ B A / <g1:/ B A />`, :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`C <g1:C>`) → :g:`/ A C / <g1:/ A C />`, :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`D <g1:D>`) → :g:`/ B D / <g1:/ B D />`, :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`C <g1:C>`) → :g:`/ D C / <g1:/ D C />`, :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`D <g1:D>`) → :g:`/ A D / <g1:/ A D />`
 
-.. step:: assert
-
-   :g:`< B A C ) <g1:< B A C )>` has been :eq:`bisected <g1:< B A D ) = g1:< C A D )>` by :g:`/ A D / <g1:/ A D />`.
-
-.. step:: assert [G.164] <G.164>
+.. step:: assert ∵ straight_line_drawn_vi_2 <G.164>
 
    With the same construction, since, as :g:`/ B D / <g1:/ B D />` is to :g:`/ D C / <g1:/ D C />`, so is :g:`/ B A / <g1:/ B A />` to :g:`/ A C / <g1:/ A C />`, and also, as :g:`/ B D / <g1:/ B D />` is to :g:`/ D C / <g1:/ D C />`, so is :g:`/ B A / <g1:/ B A />` to :g:`/ A E / <g1:/ A E />`: for :g:`/ A D / <g1:/ A D />` has been drawn parallel to :g:`/ E C / <g1:/ E C />`, one of the sides of :g:`< B C E > <g1:< B C E >>`:
 
-.. step:: assert [G.148] <G.148>
+.. step:: assert ∵ ratios_ratio <G.148>
 
    Therefore also, as :g:`/ B A / <g1:/ B A />` is to :g:`/ A C / <g1:/ A C />`, so is :g:`/ B A / <g1:/ B A />` to :g:`/ A E / <g1:/ A E />`.
 
-.. step:: assert [G.146, G.12] <G.146, G.12>
+.. step:: assert ∵ magnitudes_ratio_equal, isosceles_base_angles <G.146, G.12>
 
    Therefore :g:`/ A C / <g1:/ A C />` is :eq:`equal <g1:/ A C / = g1:/ A E />` to :g:`/ A E / <g1:/ A E />`, so that :g:`< A E C ) <g1:< A E C )>` is also :eq:`equal <g1:< A E C ) = g1:< A C E )>` to :g:`< A C E ) <g1:< A C E )>`.
 
-.. step:: assert [G.42] <G.42>
+.. step:: assert ∵ parallel_transversal_angles <G.42>
 
    :g:`< A E C ) <g1:< A E C )>` is :eq:`equal <g1:< A E C ) = g1:< B A D )>` to the exterior angle :g:`< B A D ) <g1:< B A D )>`.
 
-.. step:: assert [G.42] <G.42>
+.. step:: assert ∵ parallel_transversal_angles <G.42>
 
    And :g:`< A C E ) <g1:< A C E )>` is :eq:`equal <g1:< A C E ) = g1:< C A D )>` to the alternate angle :g:`< C A D ) <g1:< C A D )>`
 

@@ -23,6 +23,10 @@ G.369
 
    Given a rational straight line and a binomial, divided into its terms, such that the square on the greater term is greater than the square on the lesser by the square on a straight line commensurable in length with the greater, then, if the greater term be commensurable in length with the rational straight line set out, let the whole be called a:term:`**first binomial straight line** <first-binomial-straight-line>`;
 
+.. signature:: def
+
+   | :fn:`rational_straight_line_def <G.369>`
+
 Required for
 ------------
 

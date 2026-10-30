@@ -24,20 +24,22 @@ G.251
 
    Between two square numbers there is one mean proportional number, and the square has to the square the ratio duplicate of that which the side has to the side.
 
+.. signature:: theorem
+
+   | :fn:`square_numbers_there <G.251>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`)
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>` be square numbers, let :g:`C <g1:C>` be the side of :g:`A <g1:A>`, :g:`D <g1:D>` of :g:`B <g1:B>`
+   | **prove** between :g:`A <g1:A>`, :g:`B <g1:B>` there is one mean proportional number, and :g:`A <g1:A>` has to :g:`B <g1:B>` the ratio duplicate of that which :g:`C <g1:C>` has to :g:`D <g1:D>`
+
 .. picture:: g1.svg
    :alt: Book VIII, Proposition 11
 
 .. step:: given
 
-   :g:`A <g1:A>`, :g:`B <g1:B>` be square numbers
+   :g:`A <g1:A>`, :g:`B <g1:B>` be square numbers, let :g:`C <g1:C>` be the side of :g:`A <g1:A>`, :g:`D <g1:D>` of :g:`B <g1:B>`
 
 .. step:: assert
 
-   Let :g:`C <g1:C>` be the side of :g:`A <g1:A>`, and :g:`D <g1:D>` of :g:`B <g1:B>`
-
-.. step:: assert
-
-   For let :g:`C <g1:C>` by multiplying :g:`D <g1:D>` make :g:`E <g1:E>`.
+   Let :g:`C <g1:C>` by multiplying :g:`D <g1:D>` make :g:`E <g1:E>`.
 
 .. step:: assert
 
@@ -59,7 +61,7 @@ G.251
 
    Since then :g:`C <g1:C>` by multiplying the numbers :g:`C <g1:C>`, :g:`D <g1:D>` has made :g:`A <g1:A>`, :g:`E <g1:E>` respectively,
 
-.. step:: assert [G.217] <G.217>
+.. step:: assert ∵ number_multiplying_numbers <G.217>
 
    Therefore, as :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`A <g1:A>` to :g:`E <g1:E>`.
 
@@ -67,7 +69,7 @@ G.251
 
    For the same reason also,
 
-.. step:: assert [G.218] <G.218>
+.. step:: assert ∵ numbers_multiplying_number <G.218>
 
    As :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`E <g1:E>` to :g:`B <g1:B>`.
 
@@ -87,7 +89,7 @@ G.251
 
    Since :g:`A <g1:A>`, :g:`E <g1:E>`, :g:`B <g1:B>` are three numbers in proportion,
 
-.. step:: assert [G.182] <G.182>
+.. step:: assert ∵ magnitudes_proportional_said_def <G.182>
 
    Therefore :g:`A <g1:A>` has to :g:`B <g1:B>` the ratio duplicate of that which :g:`A <g1:A>` has to :g:`E <g1:E>`.
 

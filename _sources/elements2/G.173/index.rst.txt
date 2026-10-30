@@ -24,6 +24,12 @@ G.173
 
    Cut a given uncut straight line similarly to a given cut straight line.
 
+.. signature:: problem
+
+   | :fn:`cut_similarly <G.173>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />`, :g:`D <g1:D>`, :g:`E <g1:E>`) → :g:`/ C E / <g1:/ C E />`, :g:`/ E D / <g1:/ E D />`
+   | **given** :g:`/ A B / <g1:/ A B />` be the given uncut straight line, :g:`/ A C / <g1:/ A C />` the straight line cut at :g:`D <g1:D>`, :g:`E <g1:E>`
+   | **construct** as :g:`/ C E / <g1:/ C E />` is to :g:`/ E D / <g1:/ E D />`, so is :g:`/ B G / <g1:/ B G />` to :g:`/ G F / <g1:/ G F />`, and, as :g:`/ E D / <g1:/ E D />` is to :g:`/ D A / <g1:/ D A />`, so is :g:`/ G F / <g1:/ G F />` to :g:`/ F A / <g1:/ F A />`
+
 .. picture:: g1.svg
    :alt: Proposition 10
 
@@ -37,25 +43,25 @@ G.173
 
 .. step:: construct
 
-   **segment** :g:`/ C B / <g1:/ C B />`
+   :fn:`segment <G.3>`\ (:g:`C <g1:C>`, :g:`B <g1:B>`) → :g:`/ C B / <g1:/ C B />`
 
 .. step:: construct
 
    Through :g:`D <g1:D>`, :g:`E <g1:E>` let :g:`/ D F / <g1:/ D F />`, :g:`/ E G / <g1:/ E G />` be drawn parallel to :g:`/ B C / <g1:/ B C />`
 
-.. step:: construct [G.44] <G.44>
+.. step:: construct
 
-   Through :g:`D <g1:D>` let :g:`/ D H K / <g1:/ D H K />` be drawn parallel to :g:`/ A B / <g1:/ A B />`.
+   :fn:`parallel_line <G.44>`\ (:g:`D <g1:D>`, :g:`/ A B / <g1:/ A B />`) → :g:`/ D H K / <g1:/ D H K />`
 
 .. step:: assert
 
    Therefore each of the figures :g:`< F H > <g1:< F H >>`, :g:`< H B > <g1:< H B >>` is a parallelogram;
 
-.. step:: assert [G.47] <G.47>
+.. step:: assert ∵ parallelogram_properties <G.47>
 
    Therefore :g:`/ D H / <g1:/ D H />` is :eq:`equal <g1:/ D H / = g1:/ F G /; g1:/ H K / = g1:/ G B />` to :g:`/ F G / <g1:/ F G />` and :g:`/ H K / <g1:/ H K />` to :g:`/ G B / <g1:/ G B />`.
 
-.. step:: assert [G.164] <G.164>
+.. step:: assert ∵ straight_line_drawn_vi_2 <G.164>
 
    Since :g:`/ H E / <g1:/ H E />` has been drawn parallel to :g:`/ K C / <g1:/ K C />`, one of the sides of :g:`< D K C > <g1:< D K C >>` → therefore, proportionally, as :g:`/ C E / <g1:/ C E />` is to :g:`/ E D / <g1:/ E D />`, so is :g:`/ K H / <g1:/ K H />` to :g:`/ H D / <g1:/ H D />`.
 
@@ -63,7 +69,7 @@ G.173
 
    :g:`/ K H / <g1:/ K H />` is :eq:`equal <g1:/ K H / = g1:/ B G /; g1:/ H D / = g1:/ G F />` to :g:`/ B G / <g1:/ B G />`, and :g:`/ H D / <g1:/ H D />` to :g:`/ G F / <g1:/ G F />`; therefore, as :g:`/ C E / <g1:/ C E />` is to :g:`/ E D / <g1:/ E D />`, so is :g:`/ B G / <g1:/ B G />` to :g:`/ G F / <g1:/ G F />`.
 
-.. step:: assert [G.164] <G.164>
+.. step:: assert ∵ straight_line_drawn_vi_2 <G.164>
 
    Since :g:`/ F D / <g1:/ F D />` has been drawn parallel to :g:`/ G E / <g1:/ G E />`, one of the sides of :g:`< A G E > <g1:< A G E >>` → therefore, proportionally, as :g:`/ E D / <g1:/ E D />` is to :g:`/ D A / <g1:/ D A />`, so is :g:`/ G F / <g1:/ G F />` to :g:`/ F A / <g1:/ F A />`.
 

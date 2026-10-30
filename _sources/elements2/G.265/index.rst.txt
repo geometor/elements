@@ -24,22 +24,24 @@ G.265
 
    If four numbers be in continued proportion, and the first be cube, the fourth is cube.
 
+.. signature:: theorem
+
+   | :fn:`numbers_continued_proportion_viii_23 <G.265>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`)
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` be four numbers in continued proportion, let :g:`A <g1:A>` be cube
+   | **prove** :g:`D <g1:D>` is also cube
+
 .. picture:: g1.svg
    :alt: Proposition 23
 
 .. step:: given
 
-   :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` be four numbers in continued proportion
-
-.. step:: assert
-
-   Let :g:`A <g1:A>` be cube
+   :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` be four numbers in continued proportion, let :g:`A <g1:A>` be cube
 
 .. step:: assert
 
    Since between :g:`A <g1:A>`, :g:`D <g1:D>` there are two mean proportional numbers :g:`B <g1:B>`, :g:`C <g1:C>`,
 
-.. step:: assert [G.263] <G.263>
+.. step:: assert ∵ mean_proportional_numbers <G.263>
 
    Therefore :g:`A <g1:A>`, :g:`D <g1:D>` are similar solid numbers.
 

@@ -24,18 +24,23 @@ G.429
 
    The square on the straight line which produces with a medial area a medial whole, if applied to a rational straight line, produces as breadth a sixth apotome.
 
+.. signature:: theorem
+
+   | :fn:`square_straight_line_x_102 <G.429>`\ ()
+   | **prove** :g:`/ C F / <g1:/ C F />` is a sixth apotome
+
 .. picture:: g1.svg
    :alt: Proposition 102 Diagram
 
-.. step:: given
+.. step:: construct
 
-   :g:`/ A B / <g1:/ A B />` be the straight line which produces with a medial area a medial whole, :g:`/ C D / <g1:/ C D />` a rational straight line, to :g:`/ C D / <g1:/ C D />` let :g:`< C E > <g1:< C E >>` be applied equal to the square on :g:`/ A B / <g1:/ A B />` and producing :g:`/ C F / <g1:/ C F />` as breadth
+   Let :g:`/ A B / <g1:/ A B />` be the straight line which produces with a medial area a medial whole, and :g:`/ C D / <g1:/ C D />` a rational straight line, and to :g:`/ C D / <g1:/ C D />` let :g:`< C E > <g1:< C E >>` be applied equal to the square on :g:`/ A B / <g1:/ A B />` and producing :g:`/ C F / <g1:/ C F />` as breadth
 
 .. step:: assert
 
    For let :g:`/ B G / <g1:/ B G />` be the annex to :g:`/ A B / <g1:/ A B />`;
 
-.. step:: assert [G.399] <G.399>
+.. step:: assert ∵ straight_line_there_x_78 <G.399>
 
    Therefore :g:`/ A G / <g1:/ A G />`, :g:`/ G B / <g1:/ G B />` are straight lines incommensurable in square which make the sum of the squares on them medial, twice the rectangle :g:`/ A G / <g1:/ A G />`, :g:`/ G B / <g1:/ G B />` medial, and the squares on :g:`/ A G / <g1:/ A G />`, :g:`/ G B / <g1:/ G B />` incommensurable with twice the rectangle :g:`/ A G / <g1:/ A G />`, :g:`/ G B / <g1:/ G B />`.
 
@@ -51,7 +56,7 @@ G.429
 
    It is applied to the rational straight line :g:`/ C D / <g1:/ C D />`, producing :g:`/ C M / <g1:/ C M />` as breadth;
 
-.. step:: assert [G.336] <G.336>
+.. step:: assert ∵ square_medial_straight <G.336>
 
    Therefore :g:`/ C M / <g1:/ C M />` is rational and incommensurable in length with :g:`/ C D / <g1:/ C D />`.
 
@@ -59,7 +64,7 @@ G.429
 
    Since now :g:`< C L > <g1:< C L >>` is equal to the squares on :g:`/ A G / <g1:/ A G />`, :g:`/ G B / <g1:/ G B />`, and, in these, :g:`< C E > <g1:< C E >>` is equal to the square on :g:`/ A B / <g1:/ A B />`,
 
-.. step:: assert [G.68] <G.68>
+.. step:: assert ∵ square_of_difference <G.68>
 
    Therefore the remainder :g:`< F L > <g1:< F L >>` is equal to twice the rectangle :g:`/ A G / <g1:/ A G />`, :g:`/ G B / <g1:/ G B />`.
 
@@ -75,7 +80,7 @@ G.429
 
    It is applied to the rational straight line :g:`/ F E / <g1:/ F E />`, producing :g:`/ F M / <g1:/ F M />` as breadth;
 
-.. step:: assert [G.336] <G.336>
+.. step:: assert ∵ square_medial_straight <G.336>
 
    Therefore :g:`/ F M / <g1:/ F M />` is rational and incommensurable in length with :g:`/ C D / <g1:/ C D />`.
 
@@ -87,11 +92,11 @@ G.429
 
    Therefore :g:`< C L > <g1:< C L >>` is incommensurable with :g:`< F L > <g1:< F L >>`.
 
-.. step:: assert [G.163] <G.163>
+.. step:: assert ∵ triangles_parallelograms_height <G.163>
 
    But, as :g:`< C L > <g1:< C L >>` is to :g:`< F L > <g1:< F L >>`, so is :g:`/ C M / <g1:/ C M />` to :g:`/ M F / <g1:/ M F />`;
 
-.. step:: assert [G.323] <G.323>
+.. step:: assert ∵ magnitudes_proportional_commensurable <G.323>
 
    Therefore :g:`/ C M / <g1:/ C M />` is incommensurable in length with :g:`/ M F / <g1:/ M F />`.
 
@@ -99,7 +104,7 @@ G.429
 
    Both are rational.
 
-.. step:: assert [G.394] <G.394>
+.. step:: assert ∵ rational_straight_line <G.394>
 
    Therefore :g:`/ C M / <g1:/ C M />`, :g:`/ M F / <g1:/ M F />` are rational straight lines commensurable in square only; therefore :g:`/ C F / <g1:/ C F />` is an apotome.
 
@@ -107,13 +112,9 @@ G.429
 
    I say next that it is also a sixth apotome.
 
-.. step:: assert
-
-   Since :g:`< F L > <g1:< F L >>` is equal to twice the rectangle :g:`/ A G / <g1:/ A G />`, :g:`/ G B / <g1:/ G B />`, let :g:`/ F M / <g1:/ F M />` be :eq:`bisected <g1:/ F N / = g1:/ N M />` at :g:`N <g1:N>`
-
 .. step:: construct
 
-   Let :g:`/ N O / <g1:/ N O />` be drawn through :g:`N <g1:N>` parallel to :g:`/ C D / <g1:/ C D />`
+   Since :g:`< F L > <g1:< F L >>` is equal to twice the rectangle :g:`/ A G / <g1:/ A G />`, :g:`/ G B / <g1:/ G B />`, let :g:`/ F M / <g1:/ F M />` be :eq:`bisected <g1:/ F N / = g1:/ N M />` at :g:`N <g1:N>`, and let :g:`/ N O / <g1:/ N O />` be drawn through :g:`N <g1:N>` parallel to :g:`/ C D / <g1:/ C D />`
 
 .. step:: assert
 
@@ -135,11 +136,11 @@ G.429
 
    Therefore :g:`< C H > <g1:< C H >>` is incommensurable with :g:`< K L > <g1:< K L >>`.
 
-.. step:: assert [G.163] <G.163>
+.. step:: assert ∵ triangles_parallelograms_height <G.163>
 
    But, as :g:`< C H > <g1:< C H >>` is to :g:`< K L > <g1:< K L >>`, so is :g:`/ C K / <g1:/ C K />` to :g:`/ K M / <g1:/ K M />`;
 
-.. step:: assert [G.323] <G.323>
+.. step:: assert ∵ magnitudes_proportional_commensurable <G.323>
 
    Therefore :g:`/ C K / <g1:/ C K />` is incommensurable with :g:`/ K M / <g1:/ K M />`.
 
@@ -151,7 +152,7 @@ G.429
 
    Therefore :g:`< N L > <g1:< N L >>` is also a mean proportional between :g:`< C H > <g1:< C H >>`, :g:`< K L > <g1:< K L >>`; therefore, as :g:`< C H > <g1:< C H >>` is to :g:`< N L > <g1:< N L >>`, so is :g:`< N L > <g1:< N L >>` to :g:`< K L > <g1:< K L >>`.
 
-.. step:: assert [G.331] <G.331>
+.. step:: assert ∵ there_unequal_straight_x_18 <G.331>
 
    For the same reason as before the square on :g:`/ C M / <g1:/ C M />` is greater than the square on :g:`/ M F / <g1:/ M F />` by the square on a straight line incommensurable with :g:`/ C M / <g1:/ C M />`.
 
@@ -159,7 +160,7 @@ G.429
 
    Neither of them is commensurable with the rational straight line :g:`/ C D / <g1:/ C D />` set out;
 
-.. step:: conclude [G.416] <G.416>
+.. step:: conclude ∵ sixth_def <G.416>
 
    Therefore :g:`/ C F / <g1:/ C F />` is a sixth apotome.
 

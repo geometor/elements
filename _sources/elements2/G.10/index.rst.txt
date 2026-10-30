@@ -23,6 +23,10 @@ G.10
 
    Things that coincide with one another are equal.
 
+.. signature:: rule
+
+   | :fn:`coinciding_equal <G.10>`
+
 Required for
 ------------
 

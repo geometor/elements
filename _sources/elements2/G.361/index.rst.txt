@@ -24,10 +24,16 @@ G.361
 
    The side of a rational plus a medial area is divided at one point only.
 
+.. signature:: theorem
+
+   | :fn:`side_rational_plus <G.361>`\ (:g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`, :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />`)
+   | **given** :g:`/ A B / <g1:/ A B />` be the side of a rational plus a medial area divided at :g:`C <g1:C>`, so that :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` are incommensurable in square and make the sum of the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` medial, but twice the rectangle :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` rational
+   | **prove** :g:`/ A B / <g1:/ A B />` is not so divided at another point
+
 .. picture:: g1.svg
    :alt: Proposition 46 diagram
 
-.. step:: given [G.355] <G.355>
+.. step:: given
 
    :g:`/ A B / <g1:/ A B />` be the side of a rational plus a medial area divided at :g:`C <g1:C>`, so that :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` are incommensurable in square and make the sum of the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` medial, but twice the rectangle :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` rational
 
@@ -47,7 +53,7 @@ G.361
 
    Therefore the squares on :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` also exceed the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` by a rational area, though they are medial:
 
-.. step:: conclude [G.341] <G.341>
+.. step:: conclude ∵ medial_area_exceed <G.341>
 
    Which is impossible.
 

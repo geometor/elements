@@ -24,6 +24,12 @@ G.483
 
    If three straight lines be proportional, the parallelepipedal solid formed out of the three is equal to the parallelepipedal solid on the mean which is equilateral, but equiangular with the aforesaid solid.
 
+.. signature:: theorem
+
+   | :fn:`straight_lines_proportional_xi_36 <G.483>`\ (:g:`/ A / <g1:/ A />`, :g:`/ B / <g1:/ B />`, :g:`/ C / <g1:/ C />`)
+   | **given** :g:`/ A / <g1:/ A />`, :g:`/ B / <g1:/ B />`, :g:`/ C / <g1:/ C />` be three straight lines in proportion, so that, as :g:`/ A / <g1:/ A />` is to :g:`/ B / <g1:/ B />`, so is :g:`/ B / <g1:/ B />` to :g:`/ C / <g1:/ C />`
+   | **prove** the solid formed out of :g:`/ A / <g1:/ A />`, :g:`/ B / <g1:/ B />`, :g:`/ C / <g1:/ C />` is equal to the solid on :g:`/ B / <g1:/ B />` which is equilateral, but equiangular with the aforesaid solid
+
 .. picture:: g1.svg
    :alt: Proposition 36 diagram
 
@@ -45,7 +51,7 @@ G.483
 
 .. step:: construct
 
-   Let :g:`/ L O / <g1:/ L O />` be made :eq:`equal <g1:/ L O / = g1:/ B />` to :g:`/ B / <g1:/ B />`, and :g:`/ L N / <g1:/ L N />` :eq:`equal <g1:/ L N / = g1:/ C />` to :g:`/ C / <g1:/ C />`.
+   :fn:`cut_equal_segment <G.9>`\ (:g:`/ B / <g1:/ B />`, and :g:`/ L N / <g1:/ L N />` :eq:`equal <g1:/ L N / = g1:/ C />` to :g:`/ C / <g1:/ C />`) → :g:`/ L O / <g1:/ L O />` (:eq:`equal <g1:/ L O / = g1:/ B />`)
 
 .. step:: assert
 
@@ -59,7 +65,7 @@ G.483
 
    Thus the sides about the :eq:`equal <g1:< N L M ) = g1:< D E F )>` angles :g:`< N L M ) <g1:< N L M )>`, :g:`< D E F ) <g1:< D E F )>` are reciprocally proportional;
 
-.. step:: assert [G.177] <G.177>
+.. step:: assert ∵ equal_equiangular_parallelograms <G.177>
 
    Therefore the parallelogram :g:`< M N > <g1:< M N >>` is :eq:`equal <g1:< M N > = g1:< D F >>` to the parallelogram :g:`< D F > <g1:< D F >>`.
 
@@ -67,11 +73,11 @@ G.483
 
    And, since :g:`< D E F ) <g1:< D E F )>`, :g:`< N L M ) <g1:< N L M )>` are two plane rectilineal angles, and on them the elevated straight lines :g:`/ L O / <g1:/ L O />`, :g:`/ E G / <g1:/ E G />` are set up which are :eq:`equal <g1:/ L O / = g1:/ E G />` to one another and contain equal angles with the original straight lines respectively,
 
-.. step:: assert [G.482] <G.482>
+.. step:: assert ∵ there_equal_plane <G.482>
 
    Therefore the perpendiculars drawn from :g:`G <g1:G>`, :g:`O <g1:O>` to the planes through :g:`/ N L / <g1:/ N L />`, :g:`/ L M / <g1:/ L M />` and :g:`/ D E / <g1:/ D E />`, :g:`/ E F / <g1:/ E F />` are equal to one another; hence the solids :g:`< L H > <g1:< L H >>`, :g:`< E K > <g1:< E K >>` are of the same height.
 
-.. step:: assert [G.478] <G.478>
+.. step:: assert ∵ parallelepipedal_solids_equal <G.478>
 
    Parallelepipedal solids on equal bases and of the same height are equal to one another.
 

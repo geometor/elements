@@ -24,16 +24,21 @@ G.378
 
    If an area be contained by a rational straight line and the fifth binomial, the "side" of the area is the irrational straight line called the side of a rational plus a medial area.
 
+.. signature:: theorem
+
+   | :fn:`area_contained_rational_x_58 <G.378>`\ ()
+   | **prove** the "side" of the area :g:`< A B C D > <g1:< A B C D >>` is the irrational straight line called the side of a rational plus a medial area
+
 .. picture:: g1.svg
    :alt: Proposition 58
 
 .. step:: assert
 
-   For let the area :g:`< A B C D > <g1:< A B C D >>` be contained by the rational straight line :g:`/ A B / <g1:/ A B />` and the fifth binomial :g:`/ A D / <g1:/ A D />` divided into its terms at :g:`E <g1:E>`, so that :g:`/ A E / <g1:/ A E />` is the greater term
+   Let the area :g:`< A B C D > <g1:< A B C D >>` be contained by the rational straight line :g:`/ A B / <g1:/ A B />` and the fifth binomial :g:`/ A D / <g1:/ A D />` divided into its terms at :g:`E <g1:E>`, so that :g:`/ A E / <g1:/ A E />` is the greater term
 
 .. step:: construct
 
-   For let the same construction be made as before shown
+   Let the same construction be made as before shown
 
 .. step:: assert
 
@@ -43,11 +48,11 @@ G.378
 
    It is then to be proved that :g:`/ M O / <g1:/ M O />` is the side of a rational plus a medial area.
 
-.. step:: assert [G.331] <G.331>
+.. step:: assert ∵ there_unequal_straight_x_18 <G.331>
 
    Since :g:`/ A G / <g1:/ A G />` is incommensurable with :g:`/ G E / <g1:/ G E />`,
 
-.. step:: assert [G.163, G.323] <G.163, G.323>
+.. step:: assert ∵ triangles_parallelograms_height, magnitudes_proportional_commensurable <G.163, G.323>
 
    Therefore :g:`< A B H G > <g1:< A B H G >>` is also commensurable with :g:`< G H K E > <g1:< G H K E >>`, that is, the square on :g:`/ M N / <g1:/ M N />` with the square on :g:`/ N O / <g1:/ N O />`; therefore :g:`/ M N / <g1:/ M N />`, :g:`/ N O / <g1:/ N O />` are incommensurable in square.
 
@@ -55,7 +60,7 @@ G.378
 
    And, since :g:`/ A D / <g1:/ A D />` is a fifth binomial straight line, and :g:`/ E D / <g1:/ E D />` the lesser segment,
 
-.. step:: assert [G.377] <G.377>
+.. step:: assert ∵ lesser_fifth_binomial_def <G.377>
 
    Therefore :g:`/ E D / <g1:/ E D />` is commensurable in length with :g:`/ A B / <g1:/ A B />`.
 
@@ -63,11 +68,11 @@ G.378
 
    :g:`/ A E / <g1:/ A E />` is incommensurable with :g:`/ E D / <g1:/ E D />`;
 
-.. step:: assert [G.326] <G.326>
+.. step:: assert ∵ magnitudes_commensurable_incommensurable <G.326>
 
    Therefore :g:`/ A B / <g1:/ A B />` is also incommensurable in length with :g:`/ A E / <g1:/ A E />`.
 
-.. step:: assert [G.335] <G.335>
+.. step:: assert ∵ rectangle_contained_rational_x_21 <G.335>
 
    Therefore :g:`< A B K E > <g1:< A B K E >>`, that is, the sum of the squares on :g:`/ M N / <g1:/ M N />`, :g:`/ N O / <g1:/ N O />`, is medial.
 
@@ -75,7 +80,7 @@ G.378
 
    And, since :g:`/ E D / <g1:/ E D />` is commensurable in length with :g:`/ A B / <g1:/ A B />`, that is, with :g:`/ E K / <g1:/ E K />`, while :g:`/ E D / <g1:/ E D />` is commensurable with :g:`/ E F / <g1:/ E F />`,
 
-.. step:: assert [G.325] <G.325>
+.. step:: assert ∵ magnitudes_commensurable_magnitude <G.325>
 
    Therefore :g:`/ E F / <g1:/ E F />` is also commensurable with :g:`/ E K / <g1:/ E K />`.
 
@@ -83,7 +88,7 @@ G.378
 
    :g:`/ E K / <g1:/ E K />` is rational ;
 
-.. step:: assert [G.333] <G.333>
+.. step:: assert ∵ rectangle_contained_rational <G.333>
 
    Therefore :g:`< E K L F > <g1:< E K L F >>`, that is, :g:`< TL M N R > <g1:< TL M N R >>`, that is, the rectangle :g:`/ M N / <g1:/ M N />`, :g:`/ N O / <g1:/ N O />`, is also rational.
 

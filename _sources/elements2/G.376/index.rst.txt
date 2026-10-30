@@ -24,30 +24,31 @@ G.376
 
    If an area be contained by a rational straight line and the fourth binomial, the "side" of the area is the irrational straight line called major.
 
+.. signature:: theorem
+
+   | :fn:`area_contained_rational_x_57 <G.376>`\ ()
+   | **prove** the "side" of the area :g:`< A C > <g1:< A C >>` is the irrational straight line called major
+
 .. picture:: g1.svg
    :alt: Proposition 57
 
 .. step:: assert
 
-   For let the area :g:`< A C > <g1:< A C >>` be contained by the rational straight line :g:`/ A B / <g1:/ A B />` and the fourth binomial :g:`/ A D / <g1:/ A D />` divided into its terms at :g:`E <g1:E>`, of which terms let :g:`/ A E / <g1:/ A E />` be the greater
+   Let the area :g:`< A C > <g1:< A C >>` be contained by the rational straight line :g:`/ A B / <g1:/ A B />` and the fourth binomial :g:`/ A D / <g1:/ A D />` divided into its terms at :g:`E <g1:E>`, of which terms let :g:`/ A E / <g1:/ A E />` be the greater
 
 .. step:: assert
 
    Since :g:`/ A D / <g1:/ A D />` is a fourth binomial straight line,
 
-.. step:: assert [G.375] <G.375>
+.. step:: assert ∵ again_square_greater_def <G.375>
 
    Therefore :g:`/ A E / <g1:/ A E />`, :g:`/ E D / <g1:/ E D />` are rational straight lines commensurable in square only, the square on :g:`/ A E / <g1:/ A E />` is greater than the square on :g:`/ E D / <g1:/ E D />` by the square on a straight line incommensurable with :g:`/ A E / <g1:/ A E />`, and :g:`/ A E / <g1:/ A E />` is commensurable in length with :g:`/ A B / <g1:/ A B />`.
 
-.. step:: assert
-
-   Let :g:`/ E D / <g1:/ E D />` be :eq:`bisected <g1:/ E F / = g1:/ F D />` at :g:`F <g1:F>`
-
 .. step:: construct
 
-   Let there be applied to :g:`/ A E / <g1:/ A E />` a parallelogram, the rectangle :g:`/ A G / <g1:/ A G />`, :g:`/ G E / <g1:/ G E />`, equal to the square on :g:`/ E F / <g1:/ E F />`
+   Let :g:`/ E D / <g1:/ E D />` be :eq:`bisected <g1:/ E F / = g1:/ F D />` at :g:`F <g1:F>`, and let there be applied to :g:`/ A E / <g1:/ A E />` a parallelogram, the rectangle :g:`/ A G / <g1:/ A G />`, :g:`/ G E / <g1:/ G E />`, equal to the square on :g:`/ E F / <g1:/ E F />`
 
-.. step:: assert [G.331] <G.331>
+.. step:: assert ∵ there_unequal_straight_x_18 <G.331>
 
    Therefore :g:`/ A G / <g1:/ A G />` is incommensurable in length with :g:`/ G E / <g1:/ G E />`.
 
@@ -71,7 +72,7 @@ G.376
 
    Since :g:`/ A G / <g1:/ A G />` is incommensurable with :g:`/ G E / <g1:/ G E />`,
 
-.. step:: assert [G.163, G.323] <G.163, G.323>
+.. step:: assert ∵ triangles_parallelograms_height, magnitudes_proportional_commensurable <G.163, G.323>
 
    :g:`< A H > <g1:< A H >>` is also incommensurable with :g:`< G K > <g1:< G K >>`, that is, :g:`< S N > <g1:< S N >>` with :g:`< N Q > <g1:< N Q >>`; therefore :g:`/ M N / <g1:/ M N />`, :g:`/ N O / <g1:/ N O />` are incommensurable in square.
 
@@ -79,7 +80,7 @@ G.376
 
    And, since :g:`/ A E / <g1:/ A E />` is commensurable with :g:`/ A B / <g1:/ A B />`,
 
-.. step:: assert [G.333] <G.333>
+.. step:: assert ∵ rectangle_contained_rational <G.333>
 
    :g:`< A K > <g1:< A K >>` is rational; and it is equal to the squares on :g:`/ M N / <g1:/ M N />`, :g:`/ N O / <g1:/ N O />`; therefore the sum of the squares on :g:`/ M N / <g1:/ M N />`, :g:`/ N O / <g1:/ N O />` is also rational.
 
@@ -87,11 +88,11 @@ G.376
 
    And, since :g:`/ E D / <g1:/ E D />` is incommensurable in length with :g:`/ A B / <g1:/ A B />`, that is, with :g:`/ E K / <g1:/ E K />`, while :g:`/ E D / <g1:/ E D />` is commensurable with :g:`/ E F / <g1:/ E F />`,
 
-.. step:: assert [G.326] <G.326>
+.. step:: assert ∵ magnitudes_commensurable_incommensurable <G.326>
 
    Therefore :g:`/ E F / <g1:/ E F />` is incommensurable in length with :g:`/ E K / <g1:/ E K />`.
 
-.. step:: assert [G.335] <G.335>
+.. step:: assert ∵ rectangle_contained_rational_x_21 <G.335>
 
    Therefore :g:`/ E K / <g1:/ E K />`, :g:`/ E F / <g1:/ E F />` are rational straight lines commensurable in square only; therefore :g:`< E L > <g1:< E L >>`, that is, :g:`< M R > <g1:< M R >>`, is medial.
 
@@ -107,7 +108,7 @@ G.376
 
    The [sum] of the squares on :g:`/ M N / <g1:/ M N />`, :g:`/ N O / <g1:/ N O />` is rational, and :g:`/ M N / <g1:/ M N />`, :g:`/ N O / <g1:/ N O />` are incommensurable in square.
 
-.. step:: conclude [G.354] <G.354>
+.. step:: conclude ∵ straight_lines_incommensurable <G.354>
 
    But, if two straight lines incommensurable in square and making the sum of the squares on them rational, but the rectangle contained by them medial, be added together, the whole is irrational and is called major.
 

@@ -24,6 +24,12 @@ G.237
 
    Given three numbers, to find the least number which they measure.
 
+.. signature:: problem
+
+   | :fn:`numbers_find_least_vii_36 <G.237>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`) → :g:`E <g2:E>`, :g:`A <g2:A>`
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` be the three given numbers
+   | **construct** :g:`E <g2:E>` is the least that is measured by :g:`A <g2:A>`, :g:`B <g2:B>`, :g:`C <g2:C>`
+
 .. picture:: g1.svg
    :alt: Proposition 36
 
@@ -34,9 +40,9 @@ G.237
 
    :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` be the three given numbers
 
-.. step:: construct [G.235] <G.235>
+.. step:: construct
 
-   Let :g:`D <g1:D>`, the least number measured by the two numbers :g:`A <g1:A>`, :g:`B <g1:B>`, be taken.
+   :fn:`numbers_find_least <G.235>`: Let :g:`D <g1:D>`, the least number measured by the two numbers :g:`A <g1:A>`, :g:`B <g1:B>`, be taken.
 
 .. step:: assert
 
@@ -74,7 +80,7 @@ G.237
 
    Therefore also :g:`A <g1:A>`, :g:`B <g1:B>` measure :g:`E <g1:E>`.
 
-.. step:: assert [G.236] <G.236>
+.. step:: assert ∵ numbers_measure_number <G.236>
 
    Therefore the least number measured by :g:`A <g1:A>`, :g:`B <g1:B>` will also measure :g:`E <g1:E>`.
 
@@ -94,13 +100,9 @@ G.237
 
    Therefore :g:`D <g1:D>` is the least that :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` measure.
 
-.. step:: assert
+.. step:: construct
 
-   Let :g:`C <g2:C>` not measure :g:`D <g2:D>`
-
-.. step:: construct [G.235] <G.235>
-
-   Let :g:`E <g2:E>`, the least number measured by :g:`C <g2:C>`, :g:`D <g2:D>`, be taken.
+   :fn:`numbers_find_least <G.235>`: Let :g:`C <g2:C>` not measure :g:`D <g2:D>`, and let :g:`E <g2:E>`, the least number measured by :g:`C <g2:C>`, :g:`D <g2:D>`, be taken.
 
 .. step:: assert
 
@@ -138,7 +140,7 @@ G.237
 
    Therefore also :g:`A <g2:A>`, :g:`B <g2:B>` measure :g:`F <g2:F>`;
 
-.. step:: assert [G.236] <G.236>
+.. step:: assert ∵ numbers_measure_number <G.236>
 
    Therefore the least number measured by :g:`A <g2:A>`, :g:`B <g2:B>` will also measure :g:`F <g2:F>`.
 

@@ -24,6 +24,11 @@ G.156
 
    If, as a whole is to a whole, so is a part subtracted to a part subtracted, the remainder is to the remainder as whole to whole.
 
+.. signature:: theorem
+
+   | :fn:`whole_whole_part <G.156>`\ ()
+   | **prove** the remainder :g:`/ E B / <g1:/ E B />` will also be to the remainder :g:`/ F D / <g1:/ F D />` as the whole :g:`/ A B / <g1:/ A B />` to the whole :g:`/ C D / <g1:/ C D />`
+
 .. picture:: g1.svg
    :alt: Proposition 19
 
@@ -33,13 +38,13 @@ G.156
 
 .. step:: assert
 
-   For since, as :g:`/ A B / <g1:/ A B />` is to :g:`/ C D / <g1:/ C D />`, so is :g:`/ A E / <g1:/ A E />` to :g:`/ C F / <g1:/ C F />`,
+   Since, as :g:`/ A B / <g1:/ A B />` is to :g:`/ C D / <g1:/ C D />`, so is :g:`/ A E / <g1:/ A E />` to :g:`/ C F / <g1:/ C F />`,
 
-.. step:: assert [G.153] <G.153>
+.. step:: assert ∵ magnitudes_proportional_proportional <G.153>
 
    Alternately also, as :g:`/ A B / <g1:/ A B />` is to :g:`/ A E / <g1:/ A E />`, so is :g:`/ C D / <g1:/ C D />` to :g:`/ C F / <g1:/ C F />`.
 
-.. step:: assert [G.154] <G.154>
+.. step:: assert ∵ magnitudes_proportional_componendo <G.154>
 
    And, since the magnitudes are proportional :term:`*componendo* <componendo>`, they will also be proportional :term:`*separando* <separando>`.
 
@@ -47,7 +52,7 @@ G.156
 
    That is, as :g:`/ E B / <g1:/ E B />` is to :g:`/ A E / <g1:/ A E />`, so is :g:`/ F D / <g1:/ F D />` to :g:`/ C F / <g1:/ C F />`, and, alternately,
 
-.. step:: assert [G.153] <G.153>
+.. step:: assert ∵ magnitudes_proportional_proportional <G.153>
 
    As :g:`/ E B / <g1:/ E B />` is to :g:`/ F D / <g1:/ F D />`, so is :g:`/ A E / <g1:/ A E />` to :g:`/ C F / <g1:/ C F />`.
 
@@ -55,13 +60,9 @@ G.156
 
    But, as :g:`/ A E / <g1:/ A E />` is to :g:`/ C F / <g1:/ C F />`, so by hypothesis is the whole :g:`/ A B / <g1:/ A B />` to the whole :g:`/ C D / <g1:/ C D />`.
 
-.. step:: assert [G.148] <G.148>
+.. step:: conclude ∵ ratios_ratio <G.148>
 
    Therefore also the remainder :g:`/ E B / <g1:/ E B />` will be to the remainder :g:`/ F D / <g1:/ F D />` as the whole :g:`/ A B / <g1:/ A B />` is to the whole :g:`/ C D / <g1:/ C D />`.
-
-.. step:: conclude
-
-   Therefore etc.
 
 .. porism::
 

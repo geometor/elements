@@ -23,6 +23,10 @@ G.1
 
    Things equal to the same thing are equal to one another.
 
+.. signature:: rule
+
+   | :fn:`equal_transitive <G.1>`
+
 Required for
 ------------
 

@@ -24,6 +24,12 @@ G.130
 
    Circumscribe about a given circle an equilateral and equiangular pentagon.
 
+.. signature:: problem
+
+   | :fn:`circumscribe_circle_equilateral <G.130>`\ (:g:`( A B C D E ) <g1:( A B C D E )>`) → :g:`/ F B / <g1:/ F B />`
+   | **given** :g:`( A B C D E ) <g1:( A B C D E )>`
+   | **construct** It was also proved :eq:`equilateral <g1:/ G H / = g1:/ H K / = g1:/ K L / = g1:/ L M / = g1:/ M G />`, and it has been circumscribed about :g:`( A B C D E ) <g1:( A B C D E )>`
+
 .. picture:: g1.svg
    :alt: Proposition 12 diagram
 
@@ -31,23 +37,23 @@ G.130
 
    :g:`( A B C D E ) <g1:( A B C D E )>`
 
-.. step:: assert [G.129] <G.129>
+.. step:: assert ∵ inscribe_pentagon_in_circle <G.129>
 
    Let :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`E <g1:E>` be conceived to be the angular points of the inscribed pentagon, so that the circumferences :g:`( A B ) <g1:( A B )>`, :g:`( B C ) <g1:( B C )>`, :g:`( C D ) <g1:( C D )>`, :g:`( D E ) <g1:( D E )>`, :g:`( E A ) <g1:( E A )>` are :eq:`equal <g1:( A B ) = g1:( B C ) = g1:( C D ) = g1:( D E ) = g1:( E A )>`
 
-.. step:: construct [G.94] <G.94>
+.. step:: construct
 
-   Through :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`E <g1:E>` let :g:`/ G H / <g1:/ G H />`, :g:`/ H K / <g1:/ H K />`, :g:`/ K L / <g1:/ K L />`, :g:`/ L M / <g1:/ L M />`, :g:`/ M G / <g1:/ M G />` be drawn touching the circle
-
-.. step:: construct [G.76] <G.76>
-
-   Let the center :g:`F <g1:F>` of :g:`( A B C D E ) <g1:( A B C D E )>` be taken
+   :fn:`straight_line_drawn <G.94>`: Through :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`E <g1:E>` let :g:`/ G H / <g1:/ G H />`, :g:`/ H K / <g1:/ H K />`, :g:`/ K L / <g1:/ K L />`, :g:`/ L M / <g1:/ L M />`, :g:`/ M G / <g1:/ M G />` be drawn touching the circle
 
 .. step:: construct
 
-   **segment** :g:`/ F B / <g1:/ F B />`, :g:`/ F K / <g1:/ F K />`, :g:`/ F C / <g1:/ F C />`, :g:`/ F L / <g1:/ F L />`, :g:`/ F D / <g1:/ F D />`
+   :fn:`find_circle_center <G.76>`: Let the center :g:`F <g1:F>` of :g:`( A B C D E ) <g1:( A B C D E )>` be taken
 
-.. step:: assert [G.96] <G.96>
+.. step:: construct
+
+   :fn:`segment <G.3>`\ (:g:`F <g1:F>`, :g:`B <g1:B>`) → :g:`/ F B / <g1:/ F B />`, :fn:`segment <G.3>`\ (:g:`F <g1:F>`, :g:`K <g1:K>`) → :g:`/ F K / <g1:/ F K />`, :fn:`segment <G.3>`\ (:g:`F <g1:F>`, :g:`C <g1:C>`) → :g:`/ F C / <g1:/ F C />`, :fn:`segment <G.3>`\ (:g:`F <g1:F>`, :g:`L <g1:L>`) → :g:`/ F L / <g1:/ F L />`, :fn:`segment <G.3>`\ (:g:`F <g1:F>`, :g:`D <g1:D>`) → :g:`/ F D / <g1:/ F D />`
+
+.. step:: assert ∵ straight_line_touch <G.96>
 
    Since :g:`/ K L / <g1:/ K L />` touches :g:`( A B C D E ) <g1:( A B C D E )>` at :g:`C <g1:C>`, and :g:`/ F C / <g1:/ F C />` has been joined from the center :g:`F <g1:F>` to the point of contact at :g:`C <g1:C>` → therefore :g:`/ F C / <g1:/ F C />` is perpendicular to :g:`/ K L / <g1:/ K L />`;
 
@@ -57,7 +63,7 @@ G.130
 
 .. step:: assert
 
-   For the same reason
+   The same reason
 
 .. step:: assert
 
@@ -71,9 +77,9 @@ G.130
 
    Therefore the square on :g:`/ F K / <g1:/ F K />` is equal to the squares on :g:`/ F C / <g1:/ F C />`, :g:`/ C K / <g1:/ C K />`.
 
-.. step:: assert [G.60] <G.60>
+.. step:: assert ∵ pythagorean_theorem <G.60>
 
-   For the same reason
+   The same reason
 
 .. step:: assert
 
@@ -103,7 +109,7 @@ G.130
 
    And the base :g:`/ B K / <g1:/ B K />` :eq:`equal <g1:/ B K / = g1:/ C K />` to the base :g:`/ C K / <g1:/ C K />`
 
-.. step:: assert [G.15] <G.15>
+.. step:: assert ∵ sss_congruence <G.15>
 
    Therefore :g:`< B F K ) <g1:< B F K )>` is :eq:`equal <g1:< B F K ) = g1:< K F C )>` to :g:`< K F C ) <g1:< K F C )>`, and :g:`< B K F ) <g1:< B K F )>` :eq:`to <g1:< B K F ) = g1:< F K C )>` :g:`< F K C ) <g1:< F K C )>`.
 
@@ -113,13 +119,13 @@ G.130
 
 .. step:: assert
 
-   For the same reason
+   The same reason
 
 .. step:: assert
 
    :g:`< C F D ) <g1:< C F D )>` is also double of :g:`< C F L ) <g1:< C F L )>`, and :g:`< D L C ) <g1:< D L C )>` of :g:`< F L C ) <g1:< F L C )>`.
 
-.. step:: assert [G.106] <G.106>
+.. step:: assert ∵ equal_circles_angles <G.106>
 
    Since the circumference :g:`( B C ) <g1:( B C )>` is :eq:`equal <g1:( B C ) = g1:( C D )>` to :g:`( C D ) <g1:( C D )>` → :g:`< B F C ) <g1:< B F C )>` is also :eq:`equal <g1:< B F C ) = g1:< C F D )>` to :g:`< C F D ) <g1:< C F D )>`.
 
@@ -139,7 +145,7 @@ G.130
 
    Therefore :g:`< F K C > <g1:< F K C >>`, :g:`< F L C > <g1:< F L C >>` are two triangles having two angles equal to two angles and one side equal to one side, namely :g:`/ F C / <g1:/ F C />` which is common to them
 
-.. step:: assert [G.37] <G.37>
+.. step:: assert ∵ asa_aas_congruence <G.37>
 
    Therefore they will also have the remaining sides equal to the remaining sides, and the remaining angle to the remaining angle
 
@@ -157,7 +163,7 @@ G.130
 
 .. step:: assert
 
-   For the same reason it can be proved that
+   The same reason it can be proved that
 
 .. step:: assert
 

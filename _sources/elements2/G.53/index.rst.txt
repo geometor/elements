@@ -24,6 +24,12 @@ G.53
 
    Equal triangles on equal bases and on the same side lie in the same parallels.
 
+.. signature:: theorem
+
+   | :fn:`equal_triangles_equal_bases_parallel <G.53>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`< C D E > <g1:< C D E >>`, :g:`/ B C / <g1:/ B C />`, :g:`/ C E / <g1:/ C E />`)
+   | **given** :g:`< A B C > <g1:< A B C >>`, :g:`< C D E > <g1:< C D E >>` be :eq:`equal <g1:< A B C > = g1:< C D E >>` triangles on :eq:`equal <g1:/ B C / = g1:/ C E />` bases :g:`/ B C / <g1:/ B C />`, :g:`/ C E / <g1:/ C E />` and on the same side
+   | **prove** they are also in the same parallels; :g:`/ A D / <g1:/ A D />` is parallel to :g:`/ B E / <g1:/ B E />`
+
 .. picture:: g1.svg
    :alt: Folio 0351 Figure 1 - Proposition 40
 
@@ -33,21 +39,21 @@ G.53
 
 .. step:: construct
 
-   For let :g:`/ A D / <g1:/ A D />` be joined
-
-.. step:: construct [G.44] <G.44>
-
-   If not, let :g:`/ A F / <g1:/ A F />` be drawn through :g:`A <g1:A>` parallel to :g:`/ B E / <g1:/ B E />`
+   :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`D <g1:D>`) → :g:`/ A D / <g1:/ A D />`
 
 .. step:: construct
 
-   **segment** :g:`/ F E / <g1:/ F E />`
+   :fn:`parallel_line <G.44>`: If not, let :g:`/ A F / <g1:/ A F />` be drawn through :g:`A <g1:A>` parallel to :g:`/ B E / <g1:/ B E />`
+
+.. step:: construct
+
+   :fn:`segment <G.3>`\ (:g:`F <g1:F>`, :g:`E <g1:E>`) → :g:`/ F E / <g1:/ F E />`
 
 .. step:: assert
 
    Therefore :g:`< A B C > <g1:< A B C >>` is :eq:`equal <g1:< A B C > = g1:< F C E >>` to :g:`< F C E > <g1:< F C E >>`
 
-.. step:: assert [G.51] <G.51>
+.. step:: assert ∵ triangles_equal_bases <G.51>
 
    For they are on :eq:`equal <g1:/ B C / = g1:/ C E />` bases :g:`/ B C / <g1:/ B C />`, :g:`/ C E / <g1:/ C E />` and in the same parallels :g:`/ B E / <g1:/ B E />`, :g:`/ A F / <g1:/ A F />`.
 
@@ -55,7 +61,7 @@ G.53
 
    :g:`< A B C > <g1:< A B C >>` is :eq:`equal <g1:< A B C > = g1:< D C E >>` to :g:`< D C E > <g1:< D C E >>`
 
-.. step:: assert [G.1] <G.1>
+.. step:: assert ∵ equal_transitive <G.1>
 
    Therefore :g:`< D C E > <g1:< D C E >>` is also :eq:`equal <g1:< D C E > = g1:< F C E >>` to :g:`< F C E > <g1:< F C E >>`, the greater to the less: which is impossible.
 

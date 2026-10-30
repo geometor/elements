@@ -23,6 +23,12 @@ G.4
 
    Construct a circle with any center and radius.
 
+.. signature:: postulate
+
+   | :fn:`circle <G.4>`\ (A, / A B /) → ( B C D )
+   | **given** A, / A B /
+   | **construct** ( B C D )
+
 Required for
 ------------
 

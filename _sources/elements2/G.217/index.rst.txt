@@ -24,12 +24,21 @@ G.217
 
    If a number by multiplying two numbers make certain numbers, the numbers so produced will have the same ratio as the numbers multiplied.
 
+.. signature:: theorem
+
+   | :fn:`number_multiplying_numbers <G.217>`\ ()
+   | **prove** alternately, as :g:`B <g1:B>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to :g:`E <g1:E>`
+
 .. picture:: g1.svg
    :alt: Proposition 17 Diagram
 
 .. step:: assert
 
-   For let the number :g:`A <g1:A>` by multiplying the two numbers :g:`B <g1:B>`, :g:`C <g1:C>` make :g:`D <g1:D>`, :g:`E <g1:E>`
+   Let the number :g:`A <g1:A>` by multiplying the two numbers :g:`B <g1:B>`, :g:`C <g1:C>` make :g:`D <g1:D>`, :g:`E <g1:E>`
+
+.. step:: assert
+
+   I say that, as :g:`B <g1:B>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to :g:`E <g1:E>`.
 
 .. step:: assert
 
@@ -47,7 +56,7 @@ G.217
 
    Therefore the unit :g:`F <g1:F>` measures the number :g:`A <g1:A>` the same number of times that :g:`B <g1:B>` measures :g:`D <g1:D>`.
 
-.. step:: assert [G.210] <G.210>
+.. step:: assert ∵ numbers_proportional_multiple_def <G.210>
 
    Therefore, as the unit :g:`F <g1:F>` is to the number :g:`A <g1:A>`, so is :g:`B <g1:B>` to :g:`D <g1:D>`.
 
@@ -63,7 +72,7 @@ G.217
 
    Therefore also, as :g:`B <g1:B>` is to :g:`D <g1:D>`, so is :g:`C <g1:C>` to :g:`E <g1:E>`.
 
-.. step:: conclude [G.213] <G.213>
+.. step:: conclude ∵ numbers_proportional_proportional <G.213>
 
    Therefore, alternately, as :g:`B <g1:B>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to :g:`E <g1:E>`.
 

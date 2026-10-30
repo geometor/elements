@@ -23,6 +23,10 @@ G.41
 
    Two lines intersected by a transversal with interior angles on one side summing to less than two right angles meet on that side.
 
+.. signature:: rule
+
+   | :fn:`parallel_postulate <G.41>`
+
 Required for
 ------------
 

@@ -24,24 +24,25 @@ G.524
 
    Construct a dodecahedron and comprehend it in a sphere, like the aforesaid figures, and to prove that the side of the dodecahedron is the irrational straight line called apotome.
 
+.. signature:: problem
+
+   | :fn:`construct_dodecahedron_comprehend <G.524>`\ () → :g:`/ X H W / <g1:/ X H W />`
+   | **construct** PORISM. From this it is manifest that, when the side of the cube is cut in extreme and mean ratio, the greater segment is the side of the dodecahedron
+
 .. picture:: g1.svg
    :alt: Proposition 17: Construction of pentagon on cube faces
 
 .. step:: construct
 
-   Let :g:`< A B C D > <g1:< A B C D >>`, :g:`< C B E F > <g1:< C B E F >>`, two planes of the aforesaid cube at right angles to one another, be set out, let the sides :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ C D / <g1:/ C D />`, :g:`/ D A / <g1:/ D A />`, :g:`/ E F / <g1:/ E F />`, :g:`/ E B / <g1:/ E B />`, :g:`/ F C / <g1:/ F C />` be :eq:`bisected <g1:/ A G / = g1:/ G B /; g1:/ B H / = g1:/ H C /; g1:/ C K / = g1:/ K D /; g1:/ D L / = g1:/ L A /; g1:/ E M / = g1:/ M F /; g1:/ E N / = g1:/ N B /; g1:/ F O / = g1:/ O C />` at :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`K <g1:K>`, :g:`L <g1:L>`, :g:`M <g1:M>`, :g:`N <g1:N>`, :g:`O <g1:O>` respectively, let :g:`/ G K / <g1:/ G K />`, :g:`/ H L / <g1:/ H L />`, :g:`/ M H / <g1:/ M H />`, :g:`/ N O / <g1:/ N O />` be joined, let :g:`/ N P / <g1:/ N P />`, :g:`/ P O / <g1:/ P O />`, :g:`/ H Q / <g1:/ H Q />` be cut in extreme and mean ratio at :g:`R <g1:R>`, :g:`S <g1:S>`, :g:`T <g1:T>` respectively
-
-.. step:: assert
-
-   Let :g:`/ R P / <g1:/ R P />`, :g:`/ P S / <g1:/ P S />`, :g:`/ T Q / <g1:/ T Q />` be their greater segments
+   :fn:`segment <G.3>`\ () → :g:`< A B C D > <g1:< A B C D >>`, :fn:`segment <G.3>`\ () → :g:`< C B E F > <g1:< C B E F >>`, :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`) → :g:`/ A B / <g1:/ A B />`, :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`C <g1:C>`) → :g:`/ B C / <g1:/ B C />`, :fn:`segment <G.3>`\ (:g:`C <g1:C>`, :g:`D <g1:D>`) → :g:`/ C D / <g1:/ C D />`, :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`A <g1:A>`) → :g:`/ D A / <g1:/ D A />`, :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`F <g1:F>`) → :g:`/ E F / <g1:/ E F />`, :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`B <g1:B>`) → :g:`/ E B / <g1:/ E B />`, :fn:`segment <G.3>`\ (:g:`F <g1:F>`, :g:`C <g1:C>`) → :g:`/ F C / <g1:/ F C />`, :fn:`segment <G.3>`\ () → :g:`G <g1:G>`, :fn:`segment <G.3>`\ () → :g:`H <g1:H>`, :fn:`segment <G.3>`\ () → :g:`K <g1:K>`, :fn:`segment <G.3>`\ () → :g:`L <g1:L>`, :fn:`segment <G.3>`\ () → :g:`M <g1:M>`, :fn:`segment <G.3>`\ () → :g:`N <g1:N>`, :fn:`segment <G.3>`\ () → :g:`O <g1:O>`, :fn:`segment <G.3>`\ (:g:`G <g1:G>`, :g:`K <g1:K>`) → :g:`/ G K / <g1:/ G K />`, :fn:`segment <G.3>`\ (:g:`H <g1:H>`, :g:`L <g1:L>`) → :g:`/ H L / <g1:/ H L />`, :fn:`segment <G.3>`\ (:g:`M <g1:M>`, :g:`H <g1:H>`) → :g:`/ M H / <g1:/ M H />`, :fn:`segment <G.3>`\ (:g:`N <g1:N>`, :g:`O <g1:O>`) → :g:`/ N O / <g1:/ N O />`
 
 .. step:: construct
 
-   From :g:`R <g1:R>`, :g:`S <g1:S>`, :g:`T <g1:T>` let :g:`/ R U / <g1:/ R U />`, :g:`/ S V / <g1:/ S V />`, :g:`/ T W / <g1:/ T W />` be set up at right angles to the planes of the cube towards the outside of the cube, let them be made :eq:`equal <g1:/ R U / = g1:/ R P /; g1:/ S V / = g1:/ P S /; g1:/ T W / = g1:/ T Q />` to :g:`/ R P / <g1:/ R P />`, :g:`/ P S / <g1:/ P S />`, :g:`/ T Q / <g1:/ T Q />`
+   Let :g:`/ N P / <g1:/ N P />`, :g:`/ P O / <g1:/ P O />`, :g:`/ H Q / <g1:/ H Q />` be cut in extreme and mean ratio at :g:`R <g1:R>`, :g:`S <g1:S>`, :g:`T <g1:T>` respectively, and let :g:`/ R P / <g1:/ R P />`, :g:`/ P S / <g1:/ P S />`, :g:`/ T Q / <g1:/ T Q />` be their greater segments
 
 .. step:: construct
 
-   **segment** :g:`/ U B / <g1:/ U B />`, :g:`/ B W / <g1:/ B W />`, :g:`/ W C / <g1:/ W C />`, :g:`/ C V / <g1:/ C V />`, :g:`/ V U / <g1:/ V U />`
+   From :g:`R <g1:R>`, :g:`S <g1:S>`, :g:`T <g1:T>` let :g:`/ R U / <g1:/ R U />`, :g:`/ S V / <g1:/ S V />`, :g:`/ T W / <g1:/ T W />` be set up at right angles to the planes of the cube towards the outside of the cube, let them be made :eq:`equal <g1:/ R U / = g1:/ R P /; g1:/ S V / = g1:/ P S /; g1:/ T W / = g1:/ T Q />` to :g:`/ R P / <g1:/ R P />`, :g:`/ P S / <g1:/ P S />`, :g:`/ T Q / <g1:/ T Q />`, and let :g:`/ U B / <g1:/ U B />`, :g:`/ B W / <g1:/ B W />`, :g:`/ W C / <g1:/ W C />`, :g:`/ C V / <g1:/ C V />`, :g:`/ V U / <g1:/ V U />` be joined.
 
 .. step:: assert
 
@@ -49,13 +50,13 @@ G.524
 
 .. step:: construct
 
-   For let :g:`/ R B / <g1:/ R B />`, :g:`/ S B / <g1:/ S B />`, :g:`/ V B / <g1:/ V B />` be joined.
+   :fn:`segment <G.3>`\ (:g:`R <g1:R>`, :g:`B <g1:B>`) → :g:`/ R B / <g1:/ R B />`, :fn:`segment <G.3>`\ (:g:`S <g1:S>`, :g:`B <g1:B>`) → :g:`/ S B / <g1:/ S B />`, :fn:`segment <G.3>`\ (:g:`V <g1:V>`, :g:`B <g1:B>`) → :g:`/ V B / <g1:/ V B />`
 
 .. step:: assert
 
    Since :g:`/ N P / <g1:/ N P />` has been cut in extreme and mean ratio at :g:`R <g1:R>`, and :g:`/ R P / <g1:/ R P />` is the greater segment,
 
-.. step:: assert [G.511] <G.511>
+.. step:: assert ∵ straight_line_cut_xiii_4 <G.511>
 
    Therefore the squares on :g:`/ P N / <g1:/ P N />`, :g:`/ N R / <g1:/ N R />` are triple of the square on :g:`/ R P / <g1:/ R P />`.
 
@@ -67,7 +68,7 @@ G.524
 
    Therefore the squares on :g:`/ B N / <g1:/ B N />`, :g:`/ N R / <g1:/ N R />` are triple of the square on :g:`/ R U / <g1:/ R U />`.
 
-.. step:: assert [G.60] <G.60>
+.. step:: assert ∵ pythagorean_theorem <G.60>
 
    The square on :g:`/ B R / <g1:/ B R />` is equal to the squares on :g:`/ B N / <g1:/ B N />`, :g:`/ N R / <g1:/ N R />`.
 
@@ -105,11 +106,7 @@ G.524
 
 .. step:: construct
 
-   For let :g:`/ P X / <g1:/ P X />` be drawn from :g:`P <g1:P>` parallel to each of :g:`/ R U / <g1:/ R U />`, :g:`/ S V / <g1:/ S V />` and towards the outside of the cube
-
-.. step:: construct
-
-   **segment** :g:`/ X H / <g1:/ X H />`, :g:`/ H W / <g1:/ H W />`
+   :fn:`segment <G.3>`\ (:g:`P <g1:P>`, :g:`X <g1:X>`) → :g:`/ P X / <g1:/ P X />`, :fn:`segment <G.3>`\ () → :g:`P <g1:P>`, :fn:`segment <G.3>`\ (:g:`R <g1:R>`, :g:`U <g1:U>`) → :g:`/ R U / <g1:/ R U />`, :fn:`segment <G.3>`\ (:g:`S <g1:S>`, :g:`V <g1:V>`) → :g:`/ S V / <g1:/ S V />`, :fn:`segment <G.3>`\ (:g:`X <g1:X>`, :g:`H <g1:H>`) → :g:`/ X H / <g1:/ X H />`, :fn:`segment <G.3>`\ (:g:`H <g1:H>`, :g:`W <g1:W>`) → :g:`/ H W / <g1:/ H W />`
 
 .. step:: assert
 
@@ -127,11 +124,11 @@ G.524
 
    Therefore, as :g:`/ H P / <g1:/ H P />` is to :g:`/ P X / <g1:/ P X />`, so is :g:`/ W T / <g1:/ W T />` to :g:`/ T H / <g1:/ T H />`.
 
-.. step:: assert [G.449] <G.449>
+.. step:: assert ∵ straight_lines_right <G.449>
 
    :g:`/ H P / <g1:/ H P />` is parallel to :g:`/ T W / <g1:/ T W />`, for each of them is at right angles to the plane :g:`< B D > <g1:< B D >>`; and :g:`/ T H / <g1:/ T H />` is parallel to :g:`/ P X / <g1:/ P X />`, for each of them is at right angles to the plane :g:`< B F > <g1:< B F >>`.
 
-.. step:: assert [G.197] <G.197>
+.. step:: assert ∵ triangles_sides_proportional_vi_32 <G.197>
 
    If two triangles, as :g:`< X P H > <g1:< X P H >>`, :g:`< H T W > <g1:< H T W >>`, which have two sides proportional to two sides be placed together at one angle so that their corresponding sides are also parallel, the remaining straight lines will be in a straight line.
 
@@ -139,7 +136,7 @@ G.524
 
    Therefore :g:`/ X H / <g1:/ X H />` is in a straight line with :g:`/ H W / <g1:/ H W />`.
 
-.. step:: assert [G.443] <G.443>
+.. step:: assert ∵ part_straight_line <G.443>
 
    Every straight line is in one plane;
 
@@ -155,7 +152,7 @@ G.524
 
    Since :g:`/ N P / <g1:/ N P />` has been cut in extreme and mean ratio at :g:`R <g1:R>`, and :g:`/ P R / <g1:/ P R />` is the greater segment, while :g:`/ P R / <g1:/ P R />` is :eq:`equal <g1:/ R P / = g1:/ P S />` to :g:`/ P S / <g1:/ P S />`,
 
-.. step:: assert [G.512, G.511] <G.512, G.511>
+.. step:: assert ∵ straight_line_cut_xiii_5, straight_line_cut_xiii_4 <G.512, G.511>
 
    Therefore :g:`/ N S / <g1:/ N S />` has also been cut in extreme and mean ratio at :g:`P <g1:P>`, and :g:`/ N P / <g1:/ N P />` is the greater segment; therefore the squares on :g:`/ N S / <g1:/ N S />`, :g:`/ S P / <g1:/ S P />` are triple of the square on :g:`/ N P / <g1:/ N P />`.
 
@@ -187,7 +184,7 @@ G.524
 
    And, since the two sides :g:`/ B U / <g1:/ B U />`, :g:`/ U V / <g1:/ U V />` are :eq:`equal <g1:/ U B / = g1:/ B W /; g1:/ V U / = g1:/ W C />` to the two sides :g:`/ B W / <g1:/ B W />`, :g:`/ W C / <g1:/ W C />`, and the base :g:`/ B V / <g1:/ B V />` is :eq:`equal <g1:/ V B / = g1:/ B C />` to the base :g:`/ B C / <g1:/ B C />`,
 
-.. step:: assert [G.15] <G.15>
+.. step:: assert ∵ sss_congruence <G.15>
 
    Therefore :g:`< B U V ) <g1:< B U V )>` is :eq:`equal <g1:< B U V ) = g1:< B W C )>` to :g:`< B W C ) <g1:< B W C )>`.
 
@@ -195,7 +192,7 @@ G.524
 
    Similarly we can prove that :g:`< U V C ) <g1:< U V C )>` is also :eq:`equal <g1:< U V C ) = g1:< B W C )>` to :g:`< B W C ) <g1:< B W C )>`; therefore the three angles :g:`< B W C ) <g1:< B W C )>`, :g:`< B U V ) <g1:< B U V )>`, :g:`< U V C ) <g1:< U V C )>` are :eq:`equal <g1:< B W C ) = g1:< B U V ) = g1:< U V C )>` to one another.
 
-.. step:: assert [G.514] <G.514>
+.. step:: assert ∵ angles_equilateral_pentagon <G.514>
 
    If in an equilateral pentagon three angles are equal to one another, the pentagon will be equiangular.
 
@@ -225,13 +222,13 @@ G.524
 
 .. step:: construct
 
-   For let :g:`/ X P / <g1:/ X P />` be produced
+   Let :g:`/ X P / <g1:/ X P />` be produced
 
 .. step:: assert
 
    Let the produced straight line be :g:`/ X Z / <g1:/ X Z />`
 
-.. step:: assert [G.485] <G.485>
+.. step:: assert ∵ sides_opposite_planes <G.485>
 
    Therefore :g:`/ P Z / <g1:/ P Z />` meets the diameter of the cube, and they bisect one another, for this has been proved in the last theorem but one of the eleventh book.
 
@@ -239,19 +236,19 @@ G.524
 
    Let them cut at :g:`Z <g1:Z>`
 
-.. step:: assert
+.. step:: assert ∵ circle_radii <G.2>
 
    Therefore :g:`Z <g1:Z>` is the center of the sphere which comprehends the cube, and :g:`/ Z P / <g1:/ Z P />` is half of the side of the cube.
 
 .. step:: construct
 
-   **segment** :g:`/ U Z / <g1:/ U Z />`
+   :fn:`segment <G.3>`\ (:g:`U <g1:U>`, :g:`Z <g1:Z>`) → :g:`/ U Z / <g1:/ U Z />`
 
 .. step:: assert
 
    Since :g:`/ N S / <g1:/ N S />` has been cut in extreme and mean ratio at :g:`P <g1:P>`, and :g:`/ N P / <g1:/ N P />` is its greater segment,
 
-.. step:: assert [G.511] <G.511>
+.. step:: assert ∵ straight_line_cut_xiii_4 <G.511>
 
    Therefore the squares on :g:`/ N S / <g1:/ N S />`, :g:`/ S P / <g1:/ S P />` are triple of the square on :g:`/ N P / <g1:/ N P />`.
 
@@ -275,7 +272,7 @@ G.524
 
    Therefore the square on :g:`/ U Z / <g1:/ U Z />` is triple of the square on :g:`/ N P / <g1:/ N P />`.
 
-.. step:: assert [G.522] <G.522>
+.. step:: assert ∵ construct_cube_comprehend <G.522>
 
    The square on the radius of the sphere which comprehends the cube is also triple of the square on the half of the side of the cube, for it has previously been shown how to construct a cube and comprehend it in a sphere, and to prove that the square on the diameter of the sphere is triple of the square on the side of the cube.
 
@@ -287,7 +284,7 @@ G.524
 
    Therefore :g:`/ U Z / <g1:/ U Z />` is equal to the radius of the sphere which comprehends the cube.
 
-.. step:: assert
+.. step:: assert ∵ circle_radii <G.2>
 
    :g:`Z <g1:Z>` is the center of the sphere which comprehends the cube ;
 
@@ -311,7 +308,7 @@ G.524
 
    Therefore, when the whole :g:`/ N O / <g1:/ N O />` is cut in extreme and mean ratio, :g:`/ R S / <g1:/ R S />` is the greater segment.
 
-.. step:: assert [G.152] <G.152>
+.. step:: assert ∵ parts_ratio_multiples <G.152>
 
    [Thus, since, as :g:`/ N P / <g1:/ N P />` is to :g:`/ P R / <g1:/ P R />`, so is :g:`/ P R / <g1:/ P R />` to :g:`/ R N / <g1:/ R N />`, the same is true of the doubles also, for parts have the same ratio as their equimultiples
 
@@ -343,7 +340,7 @@ G.524
 
    And, since the diameter of the sphere is rational, and the square on it is triple of the square on the side of the cube, therefore :g:`/ N O / <g1:/ N O />`, being a side of the cube, is rational.
 
-.. step:: assert [G.513] <G.513>
+.. step:: assert ∵ rational_straight_line_xiii_6 <G.513>
 
    [But if a rational line be cut in extreme and mean ratio, each of the segments is an irrational apotome.] Therefore :g:`/ U V / <g1:/ U V />`, being a side of the dodecahedron, is an irrational apotome.
 

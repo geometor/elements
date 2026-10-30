@@ -24,6 +24,12 @@ G.324
 
    Find two straight lines incommensurable, the one in length only, and the other in square also, with an assigned straight line.
 
+.. signature:: problem
+
+   | :fn:`find_straight_lines <G.324>`\ (:g:`A <g1:A>`) → :g:`E <g1:E>`
+   | **given** :g:`A <g1:A>` be the assigned straight line
+   | **construct** the square on :g:`A <g1:A>` is also incommensurable with the square on :g:`E <g1:E>` ; therefore :g:`A <g1:A>` is incommensurable in square with :g:`E <g1:E>`
+
 .. picture:: g1.svg
    :alt: Proposition 10 diagram
 
@@ -35,11 +41,11 @@ G.324
 
    Let two numbers :g:`B <g1:B>`, :g:`C <g1:C>` be set out which have not to one another the ratio which a square number has to a square number, that is, which are not similar plane numbers
 
-.. step:: assert [G.319] <G.319>
+.. step:: assert ∵ magnitudes_ratio_number <G.319>
 
    And let it be contrived that, as :g:`B <g1:B>` is to :g:`C <g1:C>`, so is the square on :g:`A <g1:A>` to the square on :g:`D <g1:D>` —for we have learnt how to do this—
 
-.. step:: assert [G.319] <G.319>
+.. step:: assert ∵ magnitudes_ratio_number <G.319>
 
    Therefore the square on :g:`A <g1:A>` is commensurable with the square on :g:`D <g1:D>`.
 
@@ -47,7 +53,7 @@ G.324
 
    And, since :g:`B <g1:B>` has not to :g:`C <g1:C>` the ratio which a square number has to a square number,
 
-.. step:: assert [G.322] <G.322>
+.. step:: assert ∵ squares_straight_lines <G.322>
 
    Therefore neither has the square on :g:`A <g1:A>` to the square on :g:`D <g1:D>` the ratio which a square number has to a square number ; therefore :g:`A <g1:A>` is incommensurable in length with :g:`D <g1:D>`.
 
@@ -55,7 +61,7 @@ G.324
 
    Let :g:`E <g1:E>` be taken a mean proportional between :g:`A <g1:A>`, :g:`D <g1:D>`
 
-.. step:: assert [G.182] <G.182>
+.. step:: assert ∵ magnitudes_proportional_said_def <G.182>
 
    Therefore, as :g:`A <g1:A>` is to :g:`D <g1:D>`, so is the square on :g:`A <g1:A>` to the square on :g:`E <g1:E>`.
 
@@ -63,7 +69,7 @@ G.324
 
    :g:`A <g1:A>` is incommensurable in length with :g:`D <g1:D>` ;
 
-.. step:: conclude [G.323] <G.323>
+.. step:: conclude ∵ magnitudes_proportional_commensurable <G.323>
 
    Therefore the square on :g:`A <g1:A>` is also incommensurable with the square on :g:`E <g1:E>` ; therefore :g:`A <g1:A>` is incommensurable in square with :g:`E <g1:E>`.
 

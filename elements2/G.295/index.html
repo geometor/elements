@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=156d9f89" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=3d8cc37d" />
   <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -49,7 +49,7 @@
           <a href="../../log/index.html"  >log</a>
         </li>
         <li>
-          <a href="../index.html"  >Elements 2.0 (G Index)</a>
+          <a href="../index.html" class="is-active" aria-selected="true" >Elements 2.0 (G Index)</a>
         </li>
       </ul>
     </nav>
@@ -92,6 +92,12 @@
         <span id="g-295"></span><span id="id1"></span><h1>G.295<a class="headerlink" href="#ix-22" title="Link to this heading">¶</a></h1>
         <p class="rubric"><a class="reference external" href="https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/22/" title="IX.22: If as many odd numbers as we please be added together, and their multitude be even, the whole is even.">IX.22</a></p>
         <div class="enunciation">If as many odd numbers as we please be added together, and their multitude be even, the whole is even.</div>
+        <div class="geom-signature geom-signature-theorem">
+        <div class="line-block">
+        <div class="line"><span class="geom-fn geom-fn-def" data-ref-target="G.295" title="G.295: If as many odd numbers as we please be added together, and their multitude be even, the whole is even.">many_odd_numbers</span>()</div>
+        <div class="line"><strong>prove</strong> the whole <span class="geom-ref" data-ref="g1:/ A E /" title="/ A E /">/ A E /</span> is even</div>
+        </div>
+        </div>
         <figure class="photon-picture photon-svg">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -6 325 49" width="325" height="49" class="euclid-graphic" data-graphic-id="g1" data-graphic="g1" data-proposition="IX.22">
           <defs>
@@ -162,11 +168,11 @@
           </g>
         </svg>
         </figure>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> For let as many odd numbers as we please, <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span>, <span class="geom-ref" data-ref="g1:/ B C /" title="/ B C /">/ B C /</span>, <span class="geom-ref" data-ref="g1:/ C D /" title="/ C D /">/ C D /</span>, <span class="geom-ref" data-ref="g1:/ D E /" title="/ D E /">/ D E /</span>, even in multitude, be added together</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><a class="justification" href="../G.294/index.html#g-294" data-ref-target="G.294" title="G.294: Anodd number is that which is not divisible into two equal parts, or that which differs by an unit from an even number.">[G.294]</a><span class="geom-step-badge geom-badge-assert">assert</span> Since each of the numbers <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span>, <span class="geom-ref" data-ref="g1:/ B C /" title="/ B C /">/ B C /</span>, <span class="geom-ref" data-ref="g1:/ C D /" title="/ C D /">/ C D /</span>, <span class="geom-ref" data-ref="g1:/ D E /" title="/ D E /">/ D E /</span> is odd, if an unit be subtracted from each, each of the remainders will be even .</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><a class="justification" href="../G.293/index.html#g-293" data-ref-target="G.293" title="G.293: If as many even numbers as we please be added together, the whole is even.">[G.293]</a><span class="geom-step-badge geom-badge-assert">assert</span> So that the sum of them will be even.</div>
+        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> Let as many odd numbers as we please, <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span>, <span class="geom-ref" data-ref="g1:/ B C /" title="/ B C /">/ B C /</span>, <span class="geom-ref" data-ref="g1:/ C D /" title="/ C D /">/ C D /</span>, <span class="geom-ref" data-ref="g1:/ D E /" title="/ D E /">/ D E /</span>, even in multitude, be added together</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.294/index.html#g-294" data-ref-target="G.294" title="G.294: Anodd number is that which is not divisible into two equal parts, or that which differs by an unit from an even number.">odd_number_divisible_def</a></span><span class="geom-step-badge geom-badge-assert">assert</span> Since each of the numbers <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span>, <span class="geom-ref" data-ref="g1:/ B C /" title="/ B C /">/ B C /</span>, <span class="geom-ref" data-ref="g1:/ C D /" title="/ C D /">/ C D /</span>, <span class="geom-ref" data-ref="g1:/ D E /" title="/ D E /">/ D E /</span> is odd, if an unit be subtracted from each, each of the remainders will be even .</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.293/index.html#g-293" data-ref-target="G.293" title="G.293: If as many even numbers as we please be added together, the whole is even.">many_even_numbers</a></span><span class="geom-step-badge geom-badge-assert">assert</span> So that the sum of them will be even.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> The multitude of the units is also even.</div>
-        <div class="geom-step geom-step-conclude" data-step-kind="conclude"><a class="justification" href="../G.293/index.html#g-293" data-ref-target="G.293" title="G.293: If as many even numbers as we please be added together, the whole is even.">[G.293]</a><span class="geom-step-badge geom-badge-conclude">conclude</span> Therefore the whole <span class="geom-ref" data-ref="g1:/ A E /" title="/ A E /">/ A E /</span> is also even.</div>
+        <div class="geom-step geom-step-conclude" data-step-kind="conclude"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.293/index.html#g-293" data-ref-target="G.293" title="G.293: If as many even numbers as we please be added together, the whole is even.">many_even_numbers</a></span><span class="geom-step-badge geom-badge-conclude">conclude</span> Therefore the whole <span class="geom-ref" data-ref="g1:/ A E /" title="/ A E /">/ A E /</span> is also even.</div>
         <section class="level-2" id="dependency-graph">
         <h2>Dependency Graph<a class="headerlink" href="#dependency-graph" title="Link to this heading">¶</a></h2>
         <div class="graphviz"><object data="../../_images/graphviz-72bd8aad9ed8b4f296086bbd074eccee5913fa3a.svg" type="image/svg+xml" class="graphviz">
@@ -430,28 +436,28 @@
   <footer>
     <div class="footer-nav">
       <ul>
-        <li><a href="../../about.html">about</a></li>
-        <li><a href="../../connect.html">connect</a></li>
-        <li><a href="../../glossary.html">glossary</a></li>
-        <li><a href="../../todos/index.html">todos</a></li>
-        <li><a href="../../changelog.html">changelog</a></li>
+        <li><a href="../../about.html"  >about</a></li>
+        <li><a href="../../connect.html"  >connect</a></li>
+        <li><a href="../../glossary.html"  >glossary</a></li>
+        <li><a href="../../todos/index.html"  >todos</a></li>
+        <li><a href="../../changelog.html"  >changelog</a></li>
       </ul>
     </div>
     <hr />
     <div role="contentinfo">
       <p>
-        &copy; Copyright .
+        &copy; Copyright 2026, GEOMETOR.
       </p>
     </div>
   </footer>
 
   <script src="../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+  <script src="../../_static/documentation_options.js?v=d5a15cff"></script>
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
-  <script src="../../_static/js/geometor_interactive.js?v=421e4467"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=4430a5d4"></script>
   <script src="../../_static/js/search_highlight.js"></script>
 
 </body>

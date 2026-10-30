@@ -24,6 +24,12 @@ G.481
 
    In equal parallelepipedal solids the bases are reciprocally proportional to the heights; and those parallelepipedal solids in which the bases are reciprocally proportional to the heights are equal.
 
+.. signature:: theorem
+
+   | :fn:`equal_parallelepipedal_solids <G.481>`\ (:g:`< A B > <g1:< A B >>`, :g:`< C D > <g1:< C D >>`)
+   | **given** :g:`< A B > <g1:< A B >>`, :g:`< C D > <g1:< C D >>` be :eq:`equal <g1:< A B > = g1:< C D >>` parallelepipedal solids
+   | **prove** in the parallelepipedal solids :g:`< A B > <g1:< A B >>`, :g:`< C D > <g1:< C D >>` the bases are reciprocally proportional to the heights, that is, as the base :g:`< E H > <g1:< E H >>` is to the base :g:`< N Q > <g1:< N Q >>`, so is the height of the solid :g:`< C D > <g1:< C D >>` to the height of the solid :g:`< A B > <g1:< A B >>`; the solid :g:`< A B > <g1:< A B >>` is :eq:`equal <g1:< A B > = g1:< C D >>` to the solid :g:`< C D > <g1:< C D >>`; the solid :g:`< A B > <g2:< A B >>` is :eq:`equal <g2:< A B > = g2:< C D >>` to the solid :g:`< C D > <g2:< C D >>`
+
 .. picture:: g1.svg
    :alt: Proposition 34, Diagram 1
 
@@ -40,13 +46,17 @@ G.481
 
 .. step:: assert
 
+   I say that, as the base :g:`< E H > <g1:< E H >>` is to the base :g:`< N Q > <g1:< N Q >>`, so is :g:`/ C M / <g1:/ C M />` to :g:`/ A G / <g1:/ A G />`.
+
+.. step:: assert
+
    If now the base :g:`< E H > <g1:< E H >>` is :eq:`equal <g1:< E H > = g1:< N Q >>` to the base :g:`< N Q > <g1:< N Q >>`, while the solid :g:`< A B > <g1:< A B >>` is also :eq:`equal <g1:< A B > = g1:< C D >>` to the solid :g:`< C D > <g1:< C D >>`,
 
 .. step:: assert
 
    :g:`/ C M / <g1:/ C M />` will also be :eq:`equal <g1:/ C M / = g1:/ A G />` to :g:`/ A G / <g1:/ A G />`.
 
-.. step:: assert [G.479] <G.479>
+.. step:: assert ∵ parallelepipedal_solids_height <G.479>
 
    For parallelepipedal solids of the same height are to one another as the bases; and, as the base :g:`< E H > <g1:< E H >>` is to :g:`< N Q > <g1:< N Q >>`, so will :g:`/ C M / <g1:/ C M />` be to :g:`/ A G / <g1:/ A G />`, and it is manifest that in the parallelepipedal solids :g:`< A B > <g1:< A B >>`, :g:`< C D > <g1:< C D >>` the bases are reciprocally proportional to the heights.
 
@@ -70,7 +80,7 @@ G.481
 
    Let the parallelepipedal solid :g:`< V C > <g1:< V C >>` be completed on :g:`< N Q > <g1:< N Q >>` as base and with :g:`/ C T / <g1:/ C T />` as height.
 
-.. step:: assert [G.142] <G.142>
+.. step:: assert ∵ equal_magnitudes_ratio <G.142>
 
    Since the solid :g:`< A B > <g1:< A B >>` is :eq:`equal <g1:< A B > = g1:< C D >>` to the solid :g:`< C D > <g1:< C D >>`, and :g:`< C V > <g1:< C V >>` is outside them, while equals have to the same the same ratio.
 
@@ -78,7 +88,7 @@ G.481
 
    Therefore, as the solid :g:`< A B > <g1:< A B >>` is to the solid :g:`< C V > <g1:< C V >>`, so is the solid :g:`< C D > <g1:< C D >>` to the solid :g:`< C V > <g1:< C V >>`.
 
-.. step:: assert [G.479, G.470, G.163] <G.479, G.470, G.163>
+.. step:: assert ∵ parallelepipedal_solids_height, parallelepipedal_solid_cut, triangles_parallelograms_height <G.479, G.470, G.163>
 
    But, as the solid :g:`< A B > <g1:< A B >>` is to the solid :g:`< C V > <g1:< C V >>`, so is the base :g:`< E H > <g1:< E H >>` to the base :g:`< N Q > <g1:< N Q >>`, for the solids :g:`< A B > <g1:< A B >>`, :g:`< C V > <g1:< C V >>` are of equal height; and, as the solid :g:`< C D > <g1:< C D >>` is to the solid :g:`< C V > <g1:< C V >>`, so is the base :g:`< M Q > <g1:< M Q >>` to the base :g:`< T Q > <g1:< T Q >>` and :g:`/ C M / <g1:/ C M />` to :g:`/ C T / <g1:/ C T />`.
 
@@ -104,10 +114,6 @@ G.481
 
 .. step:: assert
 
-   The solid :g:`< A B > <g1:< A B >>` is :eq:`equal <g1:< A B > = g1:< C D >>` to the solid :g:`< C D > <g1:< C D >>`.
-
-.. step:: assert
-
    Let the sides which stand up be again at right angles to the bases.
 
 .. step:: assert
@@ -118,7 +124,7 @@ G.481
 
    Therefore the height of the solid :g:`< C D > <g1:< C D >>` is also equal to the height of the solid :g:`< A B > <g1:< A B >>`.
 
-.. step:: assert [G.478] <G.478>
+.. step:: assert ∵ parallelepipedal_solids_equal <G.478>
 
    Parallelepipedal solids on equal bases and of the same height are equal to one another.
 
@@ -136,11 +142,7 @@ G.481
 
 .. step:: assert
 
-   Let :g:`/ C T / <g1:/ C T />` be again made :eq:`equal <g1:/ C T / = g1:/ A G />` to :g:`/ A G / <g1:/ A G />`
-
-.. step:: assert
-
-   Let the solid :g:`< C V > <g1:< C V >>` be similarly completed.
+   Let :g:`/ C T / <g1:/ C T />` be again made :eq:`equal <g1:/ C T / = g1:/ A G />` to :g:`/ A G / <g1:/ A G />`, and let the solid :g:`< C V > <g1:< C V >>` be similarly completed.
 
 .. step:: assert
 
@@ -150,7 +152,7 @@ G.481
 
    Therefore, as the base :g:`< E H > <g1:< E H >>` is to the base :g:`< N Q > <g1:< N Q >>`, so is :g:`/ C M / <g1:/ C M />` to :g:`/ C T / <g1:/ C T />`.
 
-.. step:: assert [G.479, G.163, G.470] <G.479, G.163, G.470>
+.. step:: assert ∵ parallelepipedal_solids_height, triangles_parallelograms_height, parallelepipedal_solid_cut <G.479, G.163, G.470>
 
    But, as the base :g:`< E H > <g1:< E H >>` is to the base :g:`< N Q > <g1:< N Q >>`, so is the solid :g:`< A B > <g1:< A B >>` to the solid :g:`< C V > <g1:< C V >>`, for the solids :g:`< A B > <g1:< A B >>`, :g:`< C V > <g1:< C V >>` are of equal height; and, as :g:`/ C M / <g1:/ C M />` is to :g:`/ C T / <g1:/ C T />`, so is the base :g:`< M Q > <g1:< M Q >>` to the base :g:`< Q T > <g1:< Q T >>` and the solid :g:`< C D > <g1:< C D >>` to the solid :g:`< C V > <g1:< C V >>`.
 
@@ -158,7 +160,7 @@ G.481
 
    Therefore also, as the solid :g:`< A B > <g1:< A B >>` is to the solid :g:`< C V > <g1:< C V >>`, so is the solid :g:`< C D > <g1:< C D >>` to the solid :g:`< C V > <g1:< C V >>`; therefore each of the solids :g:`< A B > <g1:< A B >>`, :g:`< C D > <g1:< C D >>` has to :g:`< C V > <g1:< C V >>` the same ratio.
 
-.. step:: assert [G.146] <G.146>
+.. step:: assert ∵ magnitudes_ratio_equal <G.146>
 
    Therefore the solid :g:`< A B > <g2:< A B >>` is :eq:`equal <g2:< A B > = g2:< C D >>` to the solid :g:`< C D > <g2:< C D >>`.
 
@@ -168,21 +170,13 @@ G.481
 
 .. step:: construct
 
-   Let perpendiculars be drawn from :g:`F <g2:F>`, :g:`G <g2:G>`, :g:`B <g2:B>`, :g:`K <g2:K>`, :g:`O <g2:O>`, :g:`M <g2:M>`, :g:`D <g2:D>`, :g:`R <g2:R>` to the planes through :g:`< E H > <g2:< E H >>`, :g:`< N Q > <g2:< N Q >>`
-
-.. step:: assert
-
-   Let them meet the planes at :g:`S <g2:S>`, :g:`T <g2:T>`, :g:`U <g2:U>`, :g:`V <g2:V>`, :g:`W <g2:W>`, :g:`X <g2:X>`, :g:`Y <g2:Y>`, :g:`a <g2:a>`
-
-.. step:: assert
-
-   Let the solids :g:`< F V > <g2:< F V >>`, :g:`< O a > <g2:< O a >>` be completed
+   Let perpendiculars be drawn from :g:`F <g2:F>`, :g:`G <g2:G>`, :g:`B <g2:B>`, :g:`K <g2:K>`, :g:`O <g2:O>`, :g:`M <g2:M>`, :g:`D <g2:D>`, :g:`R <g2:R>` to the planes through :g:`< E H > <g2:< E H >>`, :g:`< N Q > <g2:< N Q >>`, and let them meet the planes at :g:`S <g2:S>`, :g:`T <g2:T>`, :g:`U <g2:U>`, :g:`V <g2:V>`, :g:`W <g2:W>`, :g:`X <g2:X>`, :g:`Y <g2:Y>`, :g:`a <g2:a>`, and let the solids :g:`< F V > <g2:< F V >>`, :g:`< O a > <g2:< O a >>` be completed
 
 .. step:: assert
 
    I say that, in this case too, if the solids :g:`< A B > <g2:< A B >>`, :g:`< C D > <g2:< C D >>` are :eq:`equal <g2:< A B > = g2:< C D >>`, the bases are reciprocally proportional to the heights, that is, as the base :g:`< E H > <g2:< E H >>` is to the base :g:`< N Q > <g2:< N Q >>`, so is the height of the solid :g:`< C D > <g2:< C D >>` to the height of the solid :g:`< A B > <g2:< A B >>`.
 
-.. step:: assert [G.476, G.477] <G.476, G.477>
+.. step:: assert ∵ parallelepipedal_solids_base, parallelepipedal_solids_base_xi_30 <G.476, G.477>
 
    Since the solid :g:`< A B > <g2:< A B >>` is :eq:`equal <g2:< A B > = g2:< C D >>` to the solid :g:`< C D > <g2:< C D >>`, while :g:`< A B > <g2:< A B >>` is :eq:`equal <g2:< A B > = g2:< B T >>` to :g:`< B T > <g2:< B T >>`, for they are on the same base :g:`< F K > <g2:< F K >>` and of the same height; and the solid :g:`< C D > <g2:< C D >>` is :eq:`equal <g2:< C D > = g2:< D X >>` to :g:`< D X > <g2:< D X >>`, for they are again on the same base :g:`< R O > <g2:< R O >>` and of the same height.
 
@@ -190,7 +184,7 @@ G.481
 
    Therefore the solid :g:`< B T > <g2:< B T >>` is also :eq:`equal <g2:< B T > = g2:< D X >>` to the solid :g:`< D X > <g2:< D X >>`.
 
-.. step:: assert [Part 1.] <Part 1.>
+.. step:: assert ∵ Part 1. <Part 1.>
 
    Therefore, as the base :g:`< F K > <g2:< F K >>` is to the base :g:`< O R > <g2:< O R >>`, so is the height of the solid :g:`< D X > <g2:< D X >>` to the height of the solid :g:`< B T > <g2:< B T >>`.
 
@@ -220,10 +214,6 @@ G.481
 
 .. step:: assert
 
-   The solid :g:`< A B > <g2:< A B >>` is :eq:`equal <g2:< A B > = g2:< C D >>` to the solid :g:`< C D > <g2:< C D >>`.
-
-.. step:: assert
-
    With the same construction, since, as the base :g:`< E H > <g2:< E H >>` is to the base :g:`< N Q > <g2:< N Q >>`, so is the height of the solid :g:`< C D > <g2:< C D >>` to the height of the solid :g:`< A B > <g2:< A B >>`, while the base :g:`< E H > <g2:< E H >>` is :eq:`equal <g2:< E H > = g2:< F K >; g2:< N Q > = g2:< O R >>` to the base :g:`< F K > <g2:< F K >>`, and :g:`< N Q > <g2:< N Q >>` to :g:`< O R > <g2:< O R >>`,
 
 .. step:: assert
@@ -238,11 +228,11 @@ G.481
 
    Therefore, as the base :g:`< F K > <g2:< F K >>` is to the base :g:`< O R > <g2:< O R >>`, so is the height of the solid :g:`< D X > <g2:< D X >>` to the height of the solid :g:`< B T > <g2:< B T >>`.
 
-.. step:: assert [Part 1.] <Part 1.>
+.. step:: assert ∵ Part 1. <Part 1.>
 
    Therefore in the parallelepipedal solids :g:`< B T > <g2:< B T >>`, :g:`< D X > <g2:< D X >>` the bases are reciprocally proportional to the heights; therefore the solid :g:`< B T > <g2:< B T >>` is :eq:`equal <g2:< B T > = g2:< D X >>` to the solid :g:`< D X > <g2:< D X >>`.
 
-.. step:: conclude [G.476, G.477] <G.476, G.477>
+.. step:: conclude ∵ parallelepipedal_solids_base, parallelepipedal_solids_base_xi_30 <G.476, G.477>
 
    :g:`< B T > <g2:< B T >>` is :eq:`equal <g2:< B T > = g2:< B A >>` to :g:`< B A > <g2:< B A >>`, for they are on the same base :g:`< F K > <g2:< F K >>` and of the same height; and the solid :g:`< D X > <g2:< D X >>` is :eq:`equal <g2:< D X > = g2:< D C >>` to the solid :g:`< D C > <g2:< D C >>`.
 

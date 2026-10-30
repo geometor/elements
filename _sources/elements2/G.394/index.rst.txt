@@ -24,30 +24,35 @@ G.394
 
    If from a rational straight line there be subtracted a rational straight line commensurable with the whole in square only, the remainder is irrational; and let it be called an:term:`**apotome** <apotome>`.
 
+.. signature:: theorem
+
+   | :fn:`rational_straight_line <G.394>`\ ()
+   | **prove** the remainder :g:`/ A C / <g1:/ A C />` is the irrational straight line called :term:`**apotome** <apotome>`
+
 .. picture:: g1.svg
    :alt: Proposition 73
 
-.. step:: assert
+.. step:: construct
 
-   For from the rational straight line :g:`/ A B / <g1:/ A B />` let the rational straight line :g:`/ B C / <g1:/ B C />`, commensurable with the whole in square only, be subtracted
+   From the rational straight line :g:`/ A B / <g1:/ A B />` let the rational straight line :g:`/ B C / <g1:/ B C />`, commensurable with the whole in square only, be subtracted
 
 .. step:: assert
 
    Since :g:`/ A B / <g1:/ A B />` is incommensurable in length with :g:`/ B C / <g1:/ B C />`, and, as :g:`/ A B / <g1:/ A B />` is to :g:`/ B C / <g1:/ B C />`, so is the square on :g:`/ A B / <g1:/ A B />` to the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`,
 
-.. step:: assert [G.323] <G.323>
+.. step:: assert ∵ magnitudes_proportional_commensurable <G.323>
 
    Therefore the square on :g:`/ A B / <g1:/ A B />` is incommensurable with the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`.
 
-.. step:: assert [G.328, G.319] <G.328, G.319>
+.. step:: assert ∵ commensurable_magnitudes_added, magnitudes_ratio_number <G.328, G.319>
 
    The squares on :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are commensurable with the square on :g:`/ A B / <g1:/ A B />`, and twice the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` is commensurable with the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`.
 
-.. step:: assert [G.68] <G.68>
+.. step:: assert ∵ square_of_difference <G.68>
 
    And, inasmuch as the squares on :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are equal to twice the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` together with the square on :g:`/ C A / <g1:/ C A />`.
 
-.. step:: assert [G.326, G.329] <G.326, G.329>
+.. step:: assert ∵ magnitudes_commensurable_incommensurable, incommensurable_magnitudes_added <G.326, G.329>
 
    Therefore the squares on :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are also incommensurable with the remainder, the square on :g:`/ A C / <g1:/ A C />`.
 
@@ -55,7 +60,7 @@ G.394
 
    The squares on :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are rational;
 
-.. step:: conclude [G.332] <G.332>
+.. step:: conclude ∵ square_assigned_straight_def <G.332>
 
    Therefore :g:`/ A C / <g1:/ A C />` is irrational.
 

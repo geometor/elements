@@ -23,6 +23,10 @@ G.507
 
    :term:`**A straight line is said to have been cut in extreme and mean ratio** <extreme-and-mean-ratio>` when, as the whole line is to the greater segment, so is the greater to the less.
 
+.. signature:: def
+
+   | :fn:`straight_line_said_def_vi_def_3 <G.507>`
+
 Required for
 ------------
 

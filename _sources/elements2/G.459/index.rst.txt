@@ -24,30 +24,31 @@ G.459
 
    If two straight lines meeting one another be parallel to two straight lines meeting one another, not being in the same plane, the planes through them are parallel.
 
+.. signature:: theorem
+
+   | :fn:`straight_lines_meeting_xi_15 <G.459>`\ ()
+   | **prove** the planes produced through :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` and :g:`/ D E / <g1:/ D E />`, :g:`/ E F / <g1:/ E F />` will not meet one another
+
 .. picture:: g1.svg
    :alt: Book XI, Proposition 15
 
 .. step:: assert
 
-   For let :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` meeting one another be parallel to :g:`/ D E / <g1:/ D E />`, :g:`/ E F / <g1:/ E F />` meeting one another, not being in the same plane
+   Let :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` meeting one another be parallel to :g:`/ D E / <g1:/ D E />`, :g:`/ E F / <g1:/ E F />` meeting one another, not being in the same plane
 
-.. step:: construct [G.454] <G.454>
+.. step:: construct
 
-   For let :g:`/ B G / <g1:/ B G />` be drawn from :g:`B <g1:B>` perpendicular to the plane through :g:`/ D E / <g1:/ D E />`, :g:`/ E F / <g1:/ E F />`
+   :fn:`elevated_point_draw <G.454>`: Let :g:`/ B G / <g1:/ B G />` be drawn from :g:`B <g1:B>` perpendicular to the plane through :g:`/ D E / <g1:/ D E />`, :g:`/ E F / <g1:/ E F />`, and let it meet the plane at :g:`G <g1:G>`
 
-.. step:: assert
+.. step:: construct
 
-   Let it meet the plane at :g:`G <g1:G>`
-
-.. step:: construct [G.44] <G.44>
-
-   Through :g:`G <g1:G>` let :g:`/ G H / <g1:/ G H />` be drawn parallel to :g:`/ E D / <g1:/ E D />`, and :g:`/ G K / <g1:/ G K />` parallel to :g:`/ E F / <g1:/ E F />`.
+   :fn:`parallel_line <G.44>`\ (:g:`G <g1:G>`, :g:`/ E D / <g1:/ E D />`, and :g:`/ G K / <g1:/ G K />` parallel to :g:`/ E F / <g1:/ E F />`) → :g:`/ G H / <g1:/ G H />`
 
 .. step:: assert
 
    Since :g:`/ B G / <g1:/ B G />` is at right angles to the plane through :g:`/ D E / <g1:/ D E />`, :g:`/ E F / <g1:/ E F />`,
 
-.. step:: assert [G.446] <G.446>
+.. step:: assert ∵ straight_line_right_def <G.446>
 
    Therefore it will also make right angles with all the straight lines which meet it and are in the plane through :g:`/ D E / <g1:/ D E />`, :g:`/ E F / <g1:/ E F />`.
 
@@ -59,11 +60,11 @@ G.459
 
    Therefore each of :g:`< B G H ) <g1:< B G H )>`, :g:`< B G K ) <g1:< B G K )>` is :eq:`right <g1:< B G H ) = g1:< B G K )>`.
 
-.. step:: assert [G.452] <G.452>
+.. step:: assert ∵ straight_lines_parallel_xi_9 <G.452>
 
    And, since :g:`/ B A / <g1:/ B A />` is parallel to :g:`/ G H / <g1:/ G H />`,
 
-.. step:: assert [G.42] <G.42>
+.. step:: assert ∵ parallel_transversal_angles <G.42>
 
    Therefore :g:`< G B A ) <g1:< G B A )>`, :g:`< B G H ) <g1:< B G H )>` are equal to two right angles.
 
@@ -83,11 +84,11 @@ G.459
 
    Since then :g:`/ G B / <g1:/ G B />` is set up at right angles to :g:`/ B A / <g1:/ B A />`, :g:`/ B C / <g1:/ B C />` which cut one another,
 
-.. step:: assert [G.447] <G.447>
+.. step:: assert ∵ straight_line_set <G.447>
 
    Therefore :g:`/ G B / <g1:/ G B />` is also at right angles to the plane through :g:`/ B A / <g1:/ B A />`, :g:`/ B C / <g1:/ B C />`.
 
-.. step:: assert [G.458] <G.458>
+.. step:: assert ∵ planes_straight_line <G.458>
 
    Planes to which the same straight line is at right angles are parallel .
 

@@ -23,6 +23,10 @@ G.21
 
    If equals are added to equals, the wholes are equal.
 
+.. signature:: rule
+
+   | :fn:`add_equals <G.21>`
+
 Required for
 ------------
 

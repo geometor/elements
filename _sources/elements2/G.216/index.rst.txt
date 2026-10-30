@@ -24,20 +24,18 @@ G.216
 
    If two numbers by multiplying one another make certain numbers, the numbers so produced are equal.
 
+.. signature:: theorem
+
+   | :fn:`numbers_multiplying_make <G.216>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`)
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>` be two numbers, let :g:`A <g1:A>` by multiplying :g:`B <g1:B>` make :g:`C <g1:C>`, :g:`B <g1:B>` by multiplying :g:`A <g1:A>` make :g:`D <g1:D>`
+   | **prove** :g:`C <g1:C>` is :eq:`equal <g1:C = g1:D>` to :g:`D <g1:D>`
+
 .. picture:: g1.svg
    :alt: Proposition 16 Diagram
 
 .. step:: given
 
-   :g:`A <g1:A>`, :g:`B <g1:B>` be two numbers
-
-.. step:: assert
-
-   Let :g:`A <g1:A>` by multiplying :g:`B <g1:B>` make :g:`C <g1:C>`, and :g:`B <g1:B>` by multiplying :g:`A <g1:A>` make :g:`D <g1:D>`
-
-.. step:: assert
-
-   :g:`C <g1:C>` is :eq:`equal <g1:C = g1:D>` to :g:`D <g1:D>`.
+   :g:`A <g1:A>`, :g:`B <g1:B>` be two numbers, let :g:`A <g1:A>` by multiplying :g:`B <g1:B>` make :g:`C <g1:C>`, :g:`B <g1:B>` by multiplying :g:`A <g1:A>` make :g:`D <g1:D>`
 
 .. step:: assert
 
@@ -55,7 +53,7 @@ G.216
 
    Therefore the unit :g:`E <g1:E>` measures :g:`A <g1:A>` the same number of times that :g:`B <g1:B>` measures :g:`C <g1:C>`.
 
-.. step:: assert [G.215] <G.215>
+.. step:: assert ∵ unit_measure_number <G.215>
 
    Therefore, alternately, the unit :g:`E <g1:E>` measures the number :g:`B <g1:B>` the same number of times that :g:`A <g1:A>` measures :g:`C <g1:C>`.
 

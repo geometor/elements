@@ -24,6 +24,12 @@ G.129
 
    Inscribe in a given circle an equilateral and equiangular pentagon.
 
+.. signature:: problem
+
+   | :fn:`inscribe_pentagon_in_circle <G.129>`\ (:g:`( A B C D E ) <g1:( A B C D E )>`)
+   | **given** :g:`( A B C D E ) <g1:( A B C D E )>`
+   | **construct** It was also proved :eq:`equilateral <g1:/ A B / = g1:/ B C / = g1:/ C D / = g1:/ D E / = g1:/ E A />`
+
 .. picture:: g1.svg
    :alt: Proposition 11 diagram
 
@@ -31,31 +37,27 @@ G.129
 
    :g:`( A B C D E ) <g1:( A B C D E )>`
 
-.. step:: assert [G.128] <G.128>
+.. step:: assert ∵ golden_isosceles_triangle <G.128>
 
    Let the isosceles triangle :g:`< F G H > <g1:< F G H >>` be set out having each of the angles at :g:`< F G H ) <g1:< F G H )>`, :g:`< F H G ) <g1:< F H G )>` double of the angle at :g:`< G F H ) <g1:< G F H )>`
 
-.. step:: assert [G.118] <G.118>
+.. step:: construct
 
-   Let there be inscribed in :g:`( A B C D E ) <g1:( A B C D E )>` :g:`< A C D > <g1:< A C D >>` :eq:`equiangular <g1:< C A D ) = g1:< G F H ); g1:< A C D ) = g1:< F G H ); g1:< C D A ) = g1:< F H G )>` with :g:`< F G H > <g1:< F G H >>`, so that :g:`< C A D ) <g1:< C A D )>` is :eq:`equal <g1:< C A D ) = g1:< G F H )>` to the angle at :g:`< G F H ) <g1:< G F H )>` and the angles at :g:`< F G H ) <g1:< F G H )>`, :g:`< F H G ) <g1:< F H G )>` respectively :eq:`equal <g1:< F G H ) = g1:< A C D ); g1:< F H G ) = g1:< C D A )>` to :g:`< A C D ) <g1:< A C D )>`, :g:`< C D A ) <g1:< C D A )>`
+   :fn:`inscribe_triangle_in_circle <G.118>`: Let there be inscribed in :g:`( A B C D E ) <g1:( A B C D E )>` :g:`< A C D > <g1:< A C D >>` :eq:`equiangular <g1:< C A D ) = g1:< G F H ); g1:< A C D ) = g1:< F G H ); g1:< C D A ) = g1:< F H G )>` with :g:`< F G H > <g1:< F G H >>`, so that :g:`< C A D ) <g1:< C A D )>` is :eq:`equal <g1:< C A D ) = g1:< G F H )>` to the angle at :g:`< G F H ) <g1:< G F H )>` and the angles at :g:`< F G H ) <g1:< F G H )>`, :g:`< F H G ) <g1:< F H G )>` respectively :eq:`equal <g1:< F G H ) = g1:< A C D ); g1:< F H G ) = g1:< C D A )>` to :g:`< A C D ) <g1:< A C D )>`, :g:`< C D A ) <g1:< C D A )>`
 
 .. step:: assert
 
    Therefore each of :g:`< A C D ) <g1:< A C D )>`, :g:`< C D A ) <g1:< C D A )>` is also double of :g:`< C A D ) <g1:< C A D )>`.
 
-.. step:: assert [G.16] <G.16>
-
-   Now let :g:`< A C D ) <g1:< A C D )>`, :g:`< C D A ) <g1:< C D A )>` be :eq:`bisected <g1:< A C E ) = g1:< E C D ); g1:< C D B ) = g1:< B D A )>` respectively by :g:`/ C E / <g1:/ C E />`, :g:`/ D B / <g1:/ D B />`
-
 .. step:: construct
 
-   **segment** :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ D E / <g1:/ D E />`, :g:`/ E A / <g1:/ E A />`
+   :fn:`segment <G.3>`\ () → :g:`< A C D ) <g1:< A C D )>`, :fn:`segment <G.3>`\ () → :g:`< C D A ) <g1:< C D A )>`, :fn:`segment <G.3>`\ (:g:`C <g1:C>`, :g:`E <g1:E>`) → :g:`/ C E / <g1:/ C E />`, :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`B <g1:B>`) → :g:`/ D B / <g1:/ D B />`, :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`) → :g:`/ A B / <g1:/ A B />`, :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`C <g1:C>`) → :g:`/ B C / <g1:/ B C />`, :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`E <g1:E>`) → :g:`/ D E / <g1:/ D E />`, :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`A <g1:A>`) → :g:`/ E A / <g1:/ E A />`
 
 .. step:: assert
 
    Since each of :g:`< A C D ) <g1:< A C D )>`, :g:`< C D A ) <g1:< C D A )>` is double of :g:`< C A D ) <g1:< C A D )>`, and they have been :eq:`bisected <g1:< A C E ) = g1:< E C D ); g1:< C D B ) = g1:< B D A )>` by :g:`/ C E / <g1:/ C E />`, :g:`/ D B / <g1:/ D B />` → therefore the five angles :g:`< D A C ) <g1:< D A C )>`, :g:`< A C E ) <g1:< A C E )>`, :g:`< E C D ) <g1:< E C D )>`, :g:`< C D B ) <g1:< C D B )>`, :g:`< B D A ) <g1:< B D A )>` are :eq:`equal <g1:< D A C ) = g1:< A C E ) = g1:< E C D ) = g1:< C D B ) = g1:< B D A )>` to one another.
 
-.. step:: assert [G.105] <G.105>
+.. step:: assert ∵ equal_circles_equal <G.105>
 
    Equal angles stand on equal circumferences
 
@@ -63,7 +65,7 @@ G.129
 
    Therefore the five circumferences :g:`( A B ) <g1:( A B )>`, :g:`( B C ) <g1:( B C )>`, :g:`( C D ) <g1:( C D )>`, :g:`( D E ) <g1:( D E )>`, :g:`( E A ) <g1:( E A )>` are :eq:`equal <g1:( A B ) = g1:( B C ) = g1:( C D ) = g1:( D E ) = g1:( E A )>` to one another.
 
-.. step:: assert [G.108] <G.108>
+.. step:: assert ∵ equal_circles_equal_iii_29 <G.108>
 
    Equal circumferences are subtended by equal straight lines
 
@@ -79,7 +81,7 @@ G.129
 
    I say next that it is also :eq:`equiangular <g1:< B A E ) = g1:< A B C ) = g1:< B C D ) = g1:< C D E ) = g1:< A E D )>`.
 
-.. step:: assert
+.. step:: construct
 
    Since the circumference :g:`( A B ) <g1:( A B )>` is :eq:`equal <g1:( A B ) = g1:( D E )>` to the circumference :g:`( D E ) <g1:( D E )>`, let :g:`( B C D ) <g1:( B C D )>` be added to each
 
@@ -91,13 +93,13 @@ G.129
 
    :g:`< A E D ) <g1:< A E D )>` stands on the circumference :g:`( A B C D ) <g1:( A B C D )>`, and :g:`< B A E ) <g1:< B A E )>` on the circumference :g:`( E D C B ) <g1:( E D C B )>`
 
-.. step:: assert [G.106] <G.106>
+.. step:: assert ∵ equal_circles_angles <G.106>
 
    Therefore :g:`< B A E ) <g1:< B A E )>` is also :eq:`equal <g1:< B A E ) = g1:< A E D )>` to :g:`< A E D ) <g1:< A E D )>`.
 
 .. step:: assert
 
-   For the same reason each of :g:`< A B C ) <g1:< A B C )>`, :g:`< B C D ) <g1:< B C D )>`, :g:`< C D E ) <g1:< C D E )>` is also :eq:`equal <g1:< A B C ) = g1:< B C D ) = g1:< C D E ) = g1:< B A E ) = g1:< A E D )>` to each of :g:`< B A E ) <g1:< B A E )>`, :g:`< A E D ) <g1:< A E D )>`
+   The same reason each of :g:`< A B C ) <g1:< A B C )>`, :g:`< B C D ) <g1:< B C D )>`, :g:`< C D E ) <g1:< C D E )>` is also :eq:`equal <g1:< A B C ) = g1:< B C D ) = g1:< C D E ) = g1:< B A E ) = g1:< A E D )>` to each of :g:`< B A E ) <g1:< B A E )>`, :g:`< A E D ) <g1:< A E D )>`
 
 .. step:: assert
 

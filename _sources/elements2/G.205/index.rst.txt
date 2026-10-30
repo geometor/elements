@@ -24,12 +24,17 @@ G.205
 
    If a number be parts of a number, and another be the same parts of another, the sum is the same parts of the sum that the one is of the one.
 
+.. signature:: theorem
+
+   | :fn:`number_parts_number <G.205>`\ ()
+   | **prove** the sum of :g:`/ A B / <g1:/ A B />`, :g:`/ D E / <g1:/ D E />` is also the same parts of the sum of :g:`C <g1:C>`, :g:`F <g1:F>` that :g:`/ A B / <g1:/ A B />` is of :g:`C <g1:C>`
+
 .. picture:: g1.svg
    :alt: Book VII, Proposition 6
 
 .. step:: assert
 
-   For let the number :g:`/ A B / <g1:/ A B />` be parts of the number :g:`C <g1:C>`, and another, :g:`/ D E / <g1:/ D E />`, the same parts of another, :g:`F <g1:F>`, that :g:`/ A B / <g1:/ A B />` is of :g:`C <g1:C>`
+   Let the number :g:`/ A B / <g1:/ A B />` be parts of the number :g:`C <g1:C>`, and another, :g:`/ D E / <g1:/ D E />`, the same parts of another, :g:`F <g1:F>`, that :g:`/ A B / <g1:/ A B />` is of :g:`C <g1:C>`
 
 .. step:: assert
 
@@ -51,7 +56,7 @@ G.205
 
    Since, whatever part :g:`/ A G / <g1:/ A G />` is of :g:`C <g1:C>`, the same part is :g:`/ D H / <g1:/ D H />` of :g:`F <g1:F>` also,
 
-.. step:: assert [G.204] <G.204>
+.. step:: assert ∵ number_part_number <G.204>
 
    Therefore, whatever part :g:`/ A G / <g1:/ A G />` is of :g:`C <g1:C>`, the same part also is the sum of :g:`/ A G / <g1:/ A G />`, :g:`/ D H / <g1:/ D H />` of the sum of :g:`C <g1:C>`, :g:`F <g1:F>`.
 

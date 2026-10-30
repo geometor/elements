@@ -24,32 +24,34 @@ G.19
 
    Construct a line at right angles to a given line from a given point on it.
 
+.. signature:: problem
+
+   | :fn:`perpendicular_at <G.19>`\ (:g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`) → :g:`/ C F / <g1:/ C F />`
+   | **given** :g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>` on it
+   | **construct** :g:`/ F C / <g1:/ F C />` has been drawn at :eq:`right angles <g1:< D C F ) = g1:< E C F )>` to :g:`/ A B / <g1:/ A B />` from :g:`C <g1:C>` the given point on it
+
 .. picture:: g1.svg
    :alt: Proposition 11 figure
 
 .. step:: given
 
-   :g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>` the given point on it
+   :g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>` on it
 
 .. step:: construct
 
-   **point** :g:`D <g1:D>` on :g:`/ A C / <g1:/ A C />`
-
-.. step:: construct [G.9] <G.9>
-
-   Let :g:`/ C E / <g1:/ C E />` be made :eq:`equal <g1:/ C E / = g1:/ C D />` to :g:`/ C D / <g1:/ C D />`
-
-.. step:: construct [G.5] <G.5>
-
-   **triangle** :g:`< F D E > <g1:< F D E >>` (:eq:`equilateral <g1:/ D E / = g1:/ D F / = g1:/ F E />`) on :g:`/ D E / <g1:/ D E />`
+   **point**\ (:g:`/ A C / <g1:/ A C />`) → :g:`D <g1:D>`
 
 .. step:: construct
 
-   **segment** :g:`/ F C / <g1:/ F C />`
+   :fn:`cut_equal_segment <G.9>`\ (:g:`/ C D / <g1:/ C D />`) → :g:`/ C E / <g1:/ C E />` (:eq:`equal <g1:/ C E / = g1:/ C D />`)
 
-.. step:: assert
+.. step:: construct
 
-   :g:`/ F C / <g1:/ F C />` has been drawn at :eq:`right angles <g1:< D C F ) = g1:< E C F )>` to :g:`/ A B / <g1:/ A B />` from :g:`C <g1:C>` the given point on it.
+   :fn:`equilateral_triangle <G.5>`\ (:g:`/ D E / <g1:/ D E />`) → :g:`< F D E > <g1:< F D E >>` (:eq:`equilateral <g1:/ D E / = g1:/ D F / = g1:/ F E />`)
+
+.. step:: construct
+
+   :fn:`segment <G.3>`\ (:g:`F <g1:F>`, :g:`C <g1:C>`) → :g:`/ F C / <g1:/ F C />`
 
 .. step:: assert
 
@@ -59,7 +61,7 @@ G.19
 
    And the base :g:`/ D F / <g1:/ D F />` is :eq:`equal <g1:/ D F / = g1:/ F E />` to the base :g:`/ F E / <g1:/ F E />`
 
-.. step:: assert [G.15] <G.15>
+.. step:: assert ∵ sss_congruence <G.15>
 
    Therefore :g:`< D C F ) <g1:< D C F )>` is :eq:`equal <g1:< D C F ) = g1:< E C F )>` to :g:`< E C F ) <g1:< E C F )>`;
 
@@ -67,7 +69,7 @@ G.19
 
    And they are adjacent angles.
 
-.. step:: assert [G.18] <G.18>
+.. step:: assert ∵ right_angle_perpendicular <G.18>
 
    But, when a straight line set up on a straight line makes the adjacent angles equal to one another, each of the equal angles is right
 

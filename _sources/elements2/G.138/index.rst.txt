@@ -23,6 +23,10 @@ G.138
 
    Magnitudes are said to:term:`**be in the same ratio** <in-the-same-ratio>`, the first to the second and the third to the fourth, when, if any equimultiples whatever be taken of the first and third, and any equimultiples whatever of the second and fourth, the former equimultiples alike exceed, are alike equal to, or alike fall short of, the latter equimultiples respectively taken in corresponding order.
 
+.. signature:: def
+
+   | :fn:`magnitudes_said_ratio_def <G.138>`
+
 Required for
 ------------
 

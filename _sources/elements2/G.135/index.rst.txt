@@ -24,12 +24,22 @@ G.135
 
    If there be any number of magnitudes whatever which are, respectively, equimultiples of any magnitudes equal in multitude, then, whatever multiple one of the magnitudes is of one, that multiple also will all be of all.
 
+.. signature:: theorem
+
+   | :fn:`there_number_magnitudes <G.135>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`, :g:`E <g1:E>`, :g:`F <g1:F>`)
+   | **given** any number of magnitudes whatever :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` be respectively equimultiples of any magnitudes :g:`E <g1:E>`, :g:`F <g1:F>` equal in multitude
+   | **prove** whatever multiple :g:`/ A B / <g1:/ A B />` is of :g:`E <g1:E>`, that multiple will :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` also be of :g:`E <g1:E>`, :g:`F <g1:F>`
+
 .. picture:: g1.svg
    :alt: Proposition 1 diagram
 
 .. step:: given
 
    any number of magnitudes whatever :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` be respectively equimultiples of any magnitudes :g:`E <g1:E>`, :g:`F <g1:F>` equal in multitude
+
+.. step:: assert
+
+   I say that, whatever multiple :g:`/ A B / <g1:/ A B />` is of :g:`E <g1:E>`, that multiple will :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` also be of :g:`E <g1:E>`, :g:`F <g1:F>`.
 
 .. step:: assert
 
@@ -49,7 +59,7 @@ G.135
 
 .. step:: assert
 
-   For the same reason
+   The same reason
 
 .. step:: assert
 

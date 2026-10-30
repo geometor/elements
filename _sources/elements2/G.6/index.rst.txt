@@ -23,6 +23,10 @@ G.6
 
    If equals are subtracted from equals, the remainders are equal.
 
+.. signature:: rule
+
+   | :fn:`subtract_equals <G.6>`
+
 Required for
 ------------
 

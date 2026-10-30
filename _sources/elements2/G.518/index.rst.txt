@@ -24,16 +24,25 @@ G.518
 
    If in a circle which has its diameter rational an equilateral pentagon be inscribed, the side of the pentagon is the irrational straight line called minor.
 
+.. signature:: theorem
+
+   | :fn:`circle_diameter_rational <G.518>`\ ()
+   | **prove** the side of the pentagon is the irrational straight line called minor
+
 .. picture:: g1.svg
    :alt: Proposition 11
 
-.. step:: assert
+.. step:: construct
 
-   For in :g:`( A B C D E ) <g1:( A B C D E )>` which has its diameter rational let the :eq:`equilateral <g1:/ A B / = g1:/ B C / = g1:/ C D / = g1:/ D E / = g1:/ E A />` pentagon :g:`< A B C D E > <g1:< A B C D E >>` be inscribed
+   In :g:`( A B C D E ) <g1:( A B C D E )>` which has its diameter rational let the :eq:`equilateral <g1:/ A B / = g1:/ B C / = g1:/ C D / = g1:/ D E / = g1:/ E A />` pentagon :g:`< A B C D E > <g1:< A B C D E >>` be inscribed
 
 .. step:: construct
 
-   For let the center of the circle, :g:`F <g1:F>`, be taken, let :g:`/ A F / <g1:/ A F />`, :g:`/ F B / <g1:/ F B />` be joined and carried through to the points, :g:`G <g1:G>`, :g:`H <g1:H>`, let :g:`/ A C / <g1:/ A C />` be joined
+   Let the center of the circle, :g:`F <g1:F>`, be taken
+
+.. step:: construct
+
+   :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`F <g1:F>`) → :g:`/ A F / <g1:/ A F />`, :fn:`segment <G.3>`\ (:g:`F <g1:F>`, :g:`B <g1:B>`) → :g:`/ F B / <g1:/ F B />`, :fn:`segment <G.3>`\ () → :g:`G <g1:G>`, :fn:`segment <G.3>`\ () → :g:`H <g1:H>`, :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`C <g1:C>`) → :g:`/ A C / <g1:/ A C />`
 
 .. step:: construct
 
@@ -75,7 +84,7 @@ G.518
 
    Since then :g:`< A L C ) <g1:< A L C )>` is :eq:`equal <g1:< A L C ) = g1:< A M F )>` to :g:`< A M F ) <g1:< A M F )>`, and :g:`< L A C ) <g1:< L A C )>` is common to the two triangles :g:`< A C L > <g1:< A C L >>` and :g:`< A M F > <g1:< A M F >>`,
 
-.. step:: assert [G.45] <G.45>
+.. step:: assert ∵ triangle_angle_sum <G.45>
 
    Therefore the remaining angle :g:`< A C L ) <g1:< A C L )>` is :eq:`equal <g1:< A C L ) = g1:< M F A )>` to the remaining angle :g:`< M F A ) <g1:< M F A )>`; therefore :g:`< A C L > <g1:< A C L >>` is equiangular with :g:`< A M F > <g1:< A M F >>`; therefore, proportionally, as :g:`/ L C / <g1:/ L C />` is to :g:`/ C A / <g1:/ C A />`, so is :g:`/ M F / <g1:/ M F />` to :g:`/ F A / <g1:/ F A />`.
 
@@ -111,7 +120,7 @@ G.518
 
    Therefore, as :g:`/ D C / <g1:/ D C />` is to :g:`/ C M / <g1:/ C M />`, so is :g:`/ M F / <g1:/ M F />` to :g:`/ F K / <g1:/ F K />`.
 
-.. step:: assert [G.155] <G.155>
+.. step:: assert ∵ magnitudes_proportional_separando <G.155>
 
    :term:`*Componendo* <componendo>` also, as the sum of :g:`/ D C / <g1:/ D C />`, :g:`/ C M / <g1:/ C M />` is to :g:`/ C M / <g1:/ C M />`, so is :g:`/ M K / <g1:/ M K />` to :g:`/ K F / <g1:/ K F />`.
 
@@ -119,7 +128,7 @@ G.518
 
    Therefore also, as the square on the sum of :g:`/ D C / <g1:/ D C />`, :g:`/ C M / <g1:/ C M />` is to the square on :g:`/ C M / <g1:/ C M />`, so is the square on :g:`/ M K / <g1:/ M K />` to the square on :g:`/ K F / <g1:/ K F />`.
 
-.. step:: assert [G.515, G.508] <G.515, G.508>
+.. step:: assert ∵ equilateral_equiangular_pentagon, straight_line_cut <G.515, G.508>
 
    Since, when the straight line subtending two sides of the pentagon, as :g:`/ A C / <g1:/ A C />`, is cut in extreme and mean ratio, the greater segment is equal to the side of the pentagon, that is, to :g:`/ D C / <g1:/ D C />`, while the square on the greater segment added to the half of the whole is five times the square on the half of the whole, and :g:`/ C M / <g1:/ C M />` is half of the whole :g:`/ A C / <g1:/ A C />`.
 
@@ -155,7 +164,7 @@ G.518
 
    The square on :g:`/ M K / <g1:/ M K />` is five times the square on :g:`/ K F / <g1:/ K F />`;
 
-.. step:: assert [G.322] <G.322>
+.. step:: assert ∵ squares_straight_lines <G.322>
 
    Therefore the square on :g:`/ B K / <g1:/ B K />` is five times the square on :g:`/ K M / <g1:/ K M />`; therefore the square on :g:`/ B K / <g1:/ B K />` has not to the square on :g:`/ K M / <g1:/ K M />` the ratio which a square number has to a square number; therefore :g:`/ B K / <g1:/ B K />` is incommensurable in length with :g:`/ K M / <g1:/ K M />`.
 
@@ -171,7 +180,7 @@ G.518
 
    But, if from a rational straight line there be subtracted a rational straight line which is commensurable with the whole in square only, the remainder is irrational, namely an apotome;
 
-.. step:: assert [G.394] <G.394>
+.. step:: assert ∵ rational_straight_line <G.394>
 
    Therefore :g:`/ M B / <g1:/ M B />` is an apotome and :g:`/ M K / <g1:/ M K />` the annex to it.
 
@@ -191,7 +200,7 @@ G.518
 
    And, since :g:`/ K F / <g1:/ K F />` is commensurable with :g:`/ F B / <g1:/ F B />`,
 
-.. step:: assert [G.328] <G.328>
+.. step:: assert ∵ commensurable_magnitudes_added <G.328>
 
    :term:`*componendo* <componendo>` also, :g:`/ K B / <g1:/ K B />` is commensurable with :g:`/ F B / <g1:/ F B />`.
 
@@ -199,7 +208,7 @@ G.518
 
    :g:`/ B F / <g1:/ B F />` is commensurable with :g:`/ B H / <g1:/ B H />`;
 
-.. step:: assert [G.325] <G.325>
+.. step:: assert ∵ magnitudes_commensurable_magnitude <G.325>
 
    Therefore :g:`/ B K / <g1:/ B K />` is also commensurable with :g:`/ B H / <g1:/ B H />`.
 
@@ -211,7 +220,7 @@ G.518
 
    Therefore the square on :g:`/ B K / <g1:/ B K />` has to the square on :g:`/ K M / <g1:/ K M />` the ratio which $5$ has to $1$.
 
-.. step:: assert [G.156, G.322] <G.156, G.322>
+.. step:: assert ∵ whole_whole_part, squares_straight_lines <G.156, G.322>
 
    Therefore, :term:`*convertendo* <convertendo>`, the square on :g:`/ B K / <g1:/ B K />` has to the square on :g:`/ N / <g1:/ N />` the ratio which $5$ has to $4$, and this is not the ratio which a square number has to a square number; therefore :g:`/ B K / <g1:/ B K />` is incommensurable with :g:`/ N / <g1:/ N />`; therefore the square on :g:`/ B K / <g1:/ B K />` is greater than the square on :g:`/ K M / <g1:/ K M />` by the square on a straight line incommensurable with :g:`/ B K / <g1:/ B K />`.
 
@@ -219,11 +228,11 @@ G.518
 
    Since then the square on the whole :g:`/ B K / <g1:/ B K />` is greater than the square on the annex :g:`/ K M / <g1:/ K M />` by the square on a straight line incommensurable with :g:`/ B K / <g1:/ B K />`, and the whole :g:`/ B K / <g1:/ B K />` is commensurable with the rational straight line, :g:`/ B H / <g1:/ B H />`, set out,
 
-.. step:: assert [G.412] <G.412>
+.. step:: assert ∵ again_square_whole_def <G.412>
 
    Therefore :g:`/ M B / <g1:/ M B />` is a fourth apotome.
 
-.. step:: assert [G.421] <G.421>
+.. step:: assert ∵ area_contained_rational_x_94 <G.421>
 
    The rectangle contained by a rational straight line and a fourth apotome is irrational, and its square root is irrational, and is called minor.
 

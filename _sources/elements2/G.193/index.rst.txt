@@ -24,6 +24,12 @@ G.193
 
    To a given straight line to apply a parallelogram equal to a given polygon and deficient by a parallelogrammic figure similar to a given one: thus the given polygon must not be greater than the parallelogram described on the half of the straight line and similar to the defect.
 
+.. signature:: problem
+
+   | :fn:`straight_line_apply <G.193>`\ (:g:`/ A B / <g1:/ A B />`, :g:`< C > <g1:< C >>`, :g:`< D > <g1:< D >>`) → :g:`< T S > <g1:< T S >>`
+   | **given** :g:`/ A B / <g1:/ A B />` , :g:`< C > <g1:< C >>` the given rectilineal figure to which the figure to be applied to :g:`/ A B / <g1:/ A B />` is required to be equal, not being greater than the parallelogram described on the half of :g:`/ A B / <g1:/ A B />` and similar to the defect, :g:`< D > <g1:< D >>` the parallelogram to which the defect is required to be similar
+   | **construct** :g:`< T S > <g1:< T S >>` is also :eq:`equal <g1:< T S > = g1:< C >>` to :g:`< C > <g1:< C >>`
+
 .. picture:: g1.svg
    :alt: Book VI Proposition 28
 
@@ -31,9 +37,9 @@ G.193
 
    :g:`/ A B / <g1:/ A B />` , :g:`< C > <g1:< C >>` the given rectilineal figure to which the figure to be applied to :g:`/ A B / <g1:/ A B />` is required to be equal, not being greater than the parallelogram described on the half of :g:`/ A B / <g1:/ A B />` and similar to the defect, :g:`< D > <g1:< D >>` the parallelogram to which the defect is required to be similar
 
-.. step:: assert [G.181] <G.181>
+.. step:: construct
 
-   Let :g:`/ A B / <g1:/ A B />` be :eq:`bisected <g1:/ A E / = g1:/ E B />` at :g:`E <g1:E>`, and on :g:`/ E B / <g1:/ E B />` let :g:`< E B F G > <g1:< E B F G >>` be described similar and similarly situated to :g:`< D > <g1:< D >>` ; let the parallelogram :g:`< A G > <g1:< A G >>` be completed.
+   :fn:`describe_segment_rectilinear <G.181>`: Let :g:`/ A B / <g1:/ A B />` be :eq:`bisected <g1:/ A E / = g1:/ E B />` at :g:`E <g1:E>`, and on :g:`/ E B / <g1:/ E B />` let :g:`< E B F G > <g1:< E B F G >>` be described similar and similarly situated to :g:`< D > <g1:< D >>` ; let the parallelogram :g:`< A G > <g1:< A G >>` be completed.
 
 .. step:: assert
 
@@ -51,15 +57,15 @@ G.193
 
    Therefore :g:`< G B > <g1:< G B >>` is also greater than :g:`< C > <g1:< C >>`.
 
-.. step:: assert [G.190] <G.190>
+.. step:: construct
 
-   Let :g:`< K L M N > <g1:< K L M N >>` be constructed at once equal to the excess by which :g:`< G B > <g1:< G B >>` is greater than :g:`< C > <g1:< C >>` and similar and similarly situated to :g:`< D > <g1:< D >>`.
+   :fn:`construct_figure_similar <G.190>`: Let :g:`< K L M N > <g1:< K L M N >>` be constructed at once equal to the excess by which :g:`< G B > <g1:< G B >>` is greater than :g:`< C > <g1:< C >>` and similar and similarly situated to :g:`< D > <g1:< D >>`.
 
 .. step:: assert
 
    :g:`< D > <g1:< D >>` is similar to :g:`< G B > <g1:< G B >>` ;
 
-.. step:: assert [G.186] <G.186>
+.. step:: assert ∵ figures_similar_polygon <G.186>
 
    Therefore :g:`< K M > <g1:< K M >>` is also similar to :g:`< G B > <g1:< G B >>`.
 
@@ -79,23 +85,23 @@ G.193
 
    Therefore also :g:`/ G E / <g1:/ G E />` is greater than :g:`/ K L / <g1:/ K L />`, and :g:`/ G F / <g1:/ G F />` than :g:`/ L M / <g1:/ L M />`.
 
-.. step:: assert
+.. step:: construct
 
-   Let :g:`/ G O / <g1:/ G O />` be made :eq:`equal <g1:/ G O / = g1:/ K L />` to :g:`/ K L / <g1:/ K L />`, and :g:`/ G P / <g1:/ G P />` :eq:`equal <g1:/ G P / = g1:/ L M />` to :g:`/ L M / <g1:/ L M />` ; and let the parallelogram :g:`< O G P Q > <g1:< O G P Q >>` be completed ;
+   :fn:`cut_equal_segment <G.9>`\ (:g:`/ K L / <g1:/ K L />`, and :g:`/ G P / <g1:/ G P />` :eq:`equal <g1:/ G P / = g1:/ L M />` to :g:`/ L M / <g1:/ L M />` ; and let the parallelogram :g:`< O G P Q > <g1:< O G P Q >>` be completed ;) → :g:`/ G O / <g1:/ G O />` (:eq:`equal <g1:/ G O / = g1:/ K L />`)
 
 .. step:: assert
 
    Therefore it is :eq:`equal <g1:< O G P Q > = g1:< K M >>` and similar to :g:`< K M > <g1:< K M >>`.
 
-.. step:: assert [G.186] <G.186>
+.. step:: assert ∵ figures_similar_polygon <G.186>
 
    Therefore :g:`< G Q > <g1:< G Q >>` is also similar to :g:`< G B > <g1:< G B >>` ;
 
-.. step:: assert [G.191] <G.191>
+.. step:: assert ∵ parallelogram_there_taken <G.191>
 
    Therefore :g:`< G Q > <g1:< G Q >>` is about the same diameter with :g:`< G B > <g1:< G B >>`.
 
-.. step:: assert
+.. step:: construct
 
    Let :g:`/ G Q B / <g1:/ G Q B />` be their diameter, and let the figure be described.
 
@@ -107,7 +113,7 @@ G.193
 
    Therefore the remainder, the gnomon :g:`< U W V > <g1:< U W V >>`, is :eq:`equal <g1:< U W V > = g1:< C >>` to the remainder :g:`< C > <g1:< C >>`.
 
-.. step:: assert
+.. step:: construct
 
    And, since :g:`< P R > <g1:< P R >>` is :eq:`equal <g1:< P R > = g1:< O S >>` to :g:`< O S > <g1:< O S >>`, let :g:`< Q B > <g1:< Q B >>` be added to each ;
 
@@ -115,7 +121,7 @@ G.193
 
    Therefore the whole :g:`< P B > <g1:< P B >>` is :eq:`equal <g1:< P B > = g1:< O B >>` to the whole :g:`< O B > <g1:< O B >>`.
 
-.. step:: assert [G.49] <G.49>
+.. step:: assert ∵ parallelograms_equal_bases <G.49>
 
    :g:`< O B > <g1:< O B >>` is :eq:`equal <g1:< O B > = g1:< T E >>` to :g:`< T E > <g1:< T E >>`, since the side :g:`/ A E / <g1:/ A E />` is also :eq:`equal <g1:/ A E / = g1:/ E B />` to the side :g:`/ E B / <g1:/ E B />` .
 
@@ -123,7 +129,7 @@ G.193
 
    Therefore :g:`< T E > <g1:< T E >>` is also :eq:`equal <g1:< T E > = g1:< P B >>` to :g:`< P B > <g1:< P B >>`.
 
-.. step:: assert
+.. step:: construct
 
    Let :g:`< O S > <g1:< O S >>` be added to each ;
 

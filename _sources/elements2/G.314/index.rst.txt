@@ -23,6 +23,10 @@ G.314
 
    Those magnitudes are said to be:term:`**commensurable** <commensurable>` which are measured by the same measure, and those:term:`**incommensurable** <incommensurable>` which cannot have any common measure.
 
+.. signature:: def
+
+   | :fn:`magnitudes_said_commensurable_def <G.314>`
+
 Required for
 ------------
 

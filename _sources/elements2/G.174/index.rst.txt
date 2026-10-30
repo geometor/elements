@@ -24,34 +24,32 @@ G.174
 
    To two given straight lines to find a third proportional.
 
+.. signature:: problem
+
+   | :fn:`third_proportional <G.174>`\ (:g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />`) → :g:`/ B D / <g1:/ B D />`, :g:`/ A B / <g1:/ A B />`
+   | **given** :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />`, let them be placed so as to contain any angle
+   | **construct** :g:`/ B D / <g1:/ B D />` is :eq:`equal <g1:/ B D / = g1:/ A C />` to :g:`/ A C / <g1:/ A C />`; therefore, as :g:`/ A B / <g1:/ A B />` is to :g:`/ A C / <g1:/ A C />`, so is :g:`/ A C / <g1:/ A C />` to :g:`/ C E / <g1:/ C E />`
+
 .. picture:: g1.svg
    :alt: Proposition 11
 
 .. step:: given
 
-   :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />` be the two
+   :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />`, let them be placed so as to contain any angle
 
 .. step:: construct
 
-   Let them be placed so as to contain any angle
+   :fn:`extend <G.7>`\ (them) → :g:`D <g1:D>`, :g:`E <g1:E>`, and let :g:`/ B D / <g1:/ B D />` be made :eq:`equal <g1:/ B D / = g1:/ A C />` to :g:`/ A C / <g1:/ A C />`
 
 .. step:: construct
 
-   For let them be produced to :g:`D <g1:D>`, :g:`E <g1:E>`
-
-.. step:: construct [G.9] <G.9>
-
-   Let :g:`/ B D / <g1:/ B D />` be made :eq:`equal <g1:/ B D / = g1:/ A C />` to :g:`/ A C / <g1:/ A C />`
+   :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`C <g1:C>`) → :g:`/ B C / <g1:/ B C />`
 
 .. step:: construct
 
-   **segment** :g:`/ B C / <g1:/ B C />`
+   :fn:`parallel_line <G.44>`\ (:g:`D <g1:D>`, it) → :g:`/ D E / <g1:/ D E />`
 
-.. step:: construct [G.44] <G.44>
-
-   Through :g:`D <g1:D>` let :g:`/ D E / <g1:/ D E />` be drawn parallel to it.
-
-.. step:: assert [G.164] <G.164>
+.. step:: assert ∵ straight_line_drawn_vi_2 <G.164>
 
    Since, then, :g:`/ B C / <g1:/ B C />` has been drawn parallel to :g:`/ D E / <g1:/ D E />`, one of the sides of :g:`< A D E > <g1:< A D E >>` → proportionally, as :g:`/ A B / <g1:/ A B />` is to :g:`/ B D / <g1:/ B D />`, so is :g:`/ A C / <g1:/ A C />` to :g:`/ C E / <g1:/ C E />`.
 

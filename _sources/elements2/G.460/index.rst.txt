@@ -24,18 +24,23 @@ G.460
 
    If two parallel planes be cut by any plane, their common sections are parallel.
 
+.. signature:: theorem
+
+   | :fn:`parallel_planes_cut <G.460>`\ ()
+   | **prove** :g:`/ E F / <g1:/ E F />` is parallel to :g:`/ G H / <g1:/ G H />`
+
 .. picture:: g1.svg
    :alt: Book XI, Proposition 16
 
 .. step:: construct
 
-   For let the two parallel planes :g:`< A B > <g1:< A B >>`, :g:`< C D > <g1:< C D >>` be cut by the plane :g:`< E F G H > <g1:< E F G H >>`
+   Let the two parallel planes :g:`< A B > <g1:< A B >>`, :g:`< C D > <g1:< C D >>` be cut by the plane :g:`< E F G H > <g1:< E F G H >>`
 
 .. step:: assert
 
    Let :g:`/ E F / <g1:/ E F />`, :g:`/ G H / <g1:/ G H />` be their common sections
 
-.. step:: assert
+.. step:: construct
 
    If not, :g:`/ E F / <g1:/ E F />`, :g:`/ G H / <g1:/ G H />` will, when produced, meet either in the direction of :g:`F <g1:F>`, :g:`H <g1:H>` or of :g:`E <g1:E>`, :g:`G <g1:G>`. Let them be produced, as in the direction of :g:`F <g1:F>`, :g:`H <g1:H>`, and let them, first, meet at :g:`K <g1:K>`.
 
@@ -43,7 +48,7 @@ G.460
 
    Since :g:`/ E F K / <g1:/ E F K />` is in the plane :g:`< A B > <g1:< A B >>`,
 
-.. step:: assert [G.443] <G.443>
+.. step:: assert ∵ part_straight_line <G.443>
 
    Therefore all the points on :g:`/ E F K / <g1:/ E F K />` are also in the plane :g:`< A B > <g1:< A B >>`.
 
@@ -75,7 +80,7 @@ G.460
 
    Similarly we can prove that neither will :g:`/ E F / <g1:/ E F />`, :g:`/ G H / <g1:/ G H />` meet when produced in the direction of :g:`E <g1:E>`, :g:`G <g1:G>`.
 
-.. step:: assert [G.38] <G.38>
+.. step:: assert ∵ parallel_lines_def <G.38>
 
    Straight lines which do not meet in either direction are parallel.
 

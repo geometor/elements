@@ -24,6 +24,11 @@ G.443
 
    A part of a straight line cannot be in the plane of reference and a part in a plane more elevated.
 
+.. signature:: theorem
+
+   | :fn:`part_straight_line <G.443>`\ ()
+   | **prove** a part of a straight line cannot be in the plane of reference, and a part in a plane more elevated
+
 .. picture:: g1.svg
    :alt: Book XI, Proposition 1
 

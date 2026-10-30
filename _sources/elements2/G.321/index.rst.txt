@@ -24,14 +24,19 @@ G.321
 
    If two magnitudes have not to one another the ratio which a number has to a number, the magnitudes is incommensurable.
 
+.. signature:: theorem
+
+   | :fn:`magnitudes_ratio_number_x_8 <G.321>`\ ()
+   | **prove** the magnitudes :g:`A <g1:A>`, :g:`B <g1:B>` are incommensurable
+
 .. picture:: g1.svg
    :alt: Proposition 8 diagram
 
 .. step:: assert
 
-   For let the two magnitudes :g:`A <g1:A>`, :g:`B <g1:B>` not have to one another the ratio which a number has to a number
+   Let the two magnitudes :g:`A <g1:A>`, :g:`B <g1:B>` not have to one another the ratio which a number has to a number
 
-.. step:: assert [G.318] <G.318>
+.. step:: assert ∵ commensurable_magnitudes_ratio <G.318>
 
    If they are commensurable, :g:`A <g1:A>` will have to :g:`B <g1:B>` the ratio which a number has to a number.
 

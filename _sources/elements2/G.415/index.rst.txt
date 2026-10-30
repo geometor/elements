@@ -24,16 +24,18 @@ G.415
 
    Find the fifth apotome.
 
+.. signature:: problem
+
+   | :fn:`find_fifth_apotome <G.415>`\ (:g:`A <g1:A>`, :g:`/ C G / <g1:/ C G />`) → :g:`/ B C / <g1:/ B C />`
+   | **given** a rational straight line :g:`A <g1:A>` be set out, let :g:`/ C G / <g1:/ C G />` be commensurable in length with :g:`A <g1:A>`
+   | **construct** :g:`/ B C / <g1:/ B C />` is a fifth apotome
+
 .. picture:: g1.svg
    :alt: Proposition 89 Diagram
 
 .. step:: given
 
-   a rational straight line :g:`A <g1:A>` be set out
-
-.. step:: assert
-
-   Let :g:`/ C G / <g1:/ C G />` be commensurable in length with :g:`A <g1:A>`
+   a rational straight line :g:`A <g1:A>` be set out, let :g:`/ C G / <g1:/ C G />` be commensurable in length with :g:`A <g1:A>`
 
 .. step:: assert
 
@@ -47,7 +49,7 @@ G.415
 
    And let it be contrived that, as :g:`/ F E / <g1:/ F E />` is to :g:`/ E D / <g1:/ E D />`, so is the square on :g:`/ C G / <g1:/ C G />` to the square on :g:`/ G B / <g1:/ G B />`.
 
-.. step:: assert [G.319] <G.319>
+.. step:: assert ∵ magnitudes_ratio_number <G.319>
 
    Therefore the square on :g:`/ G B / <g1:/ G B />` is also rational; therefore :g:`/ B G / <g1:/ B G />` is also rational.
 
@@ -55,7 +57,7 @@ G.415
 
    Now since, as :g:`/ D E / <g1:/ D E />` is to :g:`/ E F / <g1:/ E F />`, so is the square on :g:`/ B G / <g1:/ B G />` to the square on :g:`/ G C / <g1:/ G C />`, while :g:`/ D E / <g1:/ D E />` has not to :g:`/ E F / <g1:/ E F />` the ratio which a square number has to a square number,
 
-.. step:: assert [G.322] <G.322>
+.. step:: assert ∵ squares_straight_lines <G.322>
 
    Therefore neither has the square on :g:`/ B G / <g1:/ B G />` to the square on :g:`/ G C / <g1:/ G C />` the ratio which a square number has to a square number; therefore :g:`/ B G / <g1:/ B G />` is incommensurable in length with :g:`/ G C / <g1:/ G C />`.
 
@@ -63,7 +65,7 @@ G.415
 
    Both are rational ;
 
-.. step:: assert [G.394] <G.394>
+.. step:: assert ∵ rational_straight_line <G.394>
 
    Therefore :g:`/ B G / <g1:/ B G />`, :g:`/ G C / <g1:/ G C />` are rational straight lines commensurable in square only; therefore :g:`/ B C / <g1:/ B C />` is an apotome.
 
@@ -73,13 +75,13 @@ G.415
 
 .. step:: assert
 
-   For let the square on :g:`H <g1:H>` be that by which the square on :g:`/ B G / <g1:/ B G />` is greater than the square on :g:`/ G C / <g1:/ G C />`.
+   Let the square on :g:`H <g1:H>` be that by which the square on :g:`/ B G / <g1:/ B G />` is greater than the square on :g:`/ G C / <g1:/ G C />`.
 
 .. step:: assert
 
    Since then, as the square on :g:`/ B G / <g1:/ B G />` is to the square on :g:`/ G C / <g1:/ G C />`, so is :g:`/ D E / <g1:/ D E />` to :g:`/ E F / <g1:/ E F />`,
 
-.. step:: assert [G.156] <G.156>
+.. step:: assert ∵ whole_whole_part <G.156>
 
    Therefore, :term:`*convertendo* <convertendo>`, as :g:`/ E D / <g1:/ E D />` is to :g:`/ D F / <g1:/ D F />`, so is the square on :g:`/ B G / <g1:/ B G />` to the square on :g:`H <g1:H>`.
 
@@ -87,7 +89,7 @@ G.415
 
    :g:`/ E D / <g1:/ E D />` has not to :g:`/ D F / <g1:/ D F />` the ratio which a square number has to a square number;
 
-.. step:: assert [G.322] <G.322>
+.. step:: assert ∵ squares_straight_lines <G.322>
 
    Therefore neither has the square on :g:`/ B G / <g1:/ B G />` to the square on :g:`H <g1:H>` the ratio which a square number has to a square number; therefore :g:`/ B G / <g1:/ B G />` is incommensurable in length with :g:`H <g1:H>`.
 
@@ -103,7 +105,7 @@ G.415
 
    The annex :g:`/ C G / <g1:/ C G />` is commensurable in length with the rational straight line :g:`A <g1:A>` set out;
 
-.. step:: conclude [G.414] <G.414>
+.. step:: conclude ∵ annex_commensurable_fifth_def <G.414>
 
    Therefore :g:`/ B C / <g1:/ B C />` is a fifth apotome.
 

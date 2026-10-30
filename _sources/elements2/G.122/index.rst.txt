@@ -24,6 +24,12 @@ G.122
 
    Circumscribe about a given triangle a circle.
 
+.. signature:: problem
+
+   | :fn:`circumscribe_circle_about_triangle <G.122>`\ (:g:`< A B C > <g1:< A B C >>`) → :g:`< B A C ) <g1:< B A C )>`
+   | **given** :g:`< A B C > <g1:< A B C >>`
+   | **construct** And when the center of the circle falls outside the triangle, :g:`< B A C ) <g1:< B A C )>`, being in a segment less than the semicircle, is greater than a right angle
+
 .. picture:: g1.svg
    :alt: Proposition 5 diagrams
 
@@ -31,27 +37,19 @@ G.122
 
    :g:`< A B C > <g1:< A B C >>`
 
-.. step:: construct [G.17] <G.17>
-
-   Let :g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />` be bisected at :g:`D <g1:D>`, :g:`E <g1:E>`
-
 .. step:: construct
 
-   From :g:`D <g1:D>`, :g:`E <g1:E>` let :g:`/ D F / <g1:/ D F />`, :g:`/ E F / <g1:/ E F />` be drawn at right angles to :g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />`
+   :fn:`bisect_segment <G.17>`: Let :g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />` be bisected at :g:`D <g1:D>`, :g:`E <g1:E>`, and from :g:`D <g1:D>`, :g:`E <g1:E>` let :g:`/ D F / <g1:/ D F />`, :g:`/ E F / <g1:/ E F />` be drawn at right angles to :g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />`
 
 .. step:: assert
 
    They will then meet within :g:`< A B C > <g1:< A B C >>`, or on :g:`/ B C / <g1:/ B C />`, or outside :g:`/ B C / <g1:/ B C />`.
 
-.. step:: assert
-
-   First let them meet within at :g:`F <g1:F>`
-
 .. step:: construct
 
-   **segment** :g:`/ F B / <g1:/ F B />`, :g:`/ F C / <g1:/ F C />`, :g:`/ F A / <g1:/ F A />`
+   First let them meet within at :g:`F <g1:F>`, and let :g:`/ F B / <g1:/ F B />`, :g:`/ F C / <g1:/ F C />`, :g:`/ F A / <g1:/ F A />` be joined.
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    Since :g:`/ A D / <g1:/ A D />` is :eq:`equal <g1:/ A D / = g1:/ D B />` to :g:`/ D B / <g1:/ D B />`, and :g:`/ D F / <g1:/ D F />` is common and at right angles, therefore the base :g:`/ A F / <g1:/ A F />` is :eq:`equal <g1:/ A F / = g1:/ F B />` to the base :g:`/ F B / <g1:/ F B />`.
 
@@ -75,7 +73,7 @@ G.122
 
    Therefore the circle described with center :g:`F <g1:F>` and distance one of :g:`/ F A / <g1:/ F A />`, :g:`/ F B / <g1:/ F B />`, :g:`/ F C / <g1:/ F C />` will pass also through the remaining points, and the circle will have been circumscribed about :g:`< A B C > <g1:< A B C >>`.
 
-.. step:: assert
+.. step:: construct
 
    Let it be circumscribed, as :g:`( A B C ) <g1:( A B C )>`.
 
@@ -85,21 +83,17 @@ G.122
 
 .. step:: construct
 
-   **segment** :g:`/ A F / <g1:/ A F />`
+   :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`F <g1:F>`) → :g:`/ A F / <g1:/ A F />`
 
-.. step:: assert
+.. step:: assert ∵ circle_radii <G.2>
 
    Similarly, we shall prove that :g:`F <g1:F>` is the center of the circle circumscribed about :g:`< A B C > <g1:< A B C >>`.
 
-.. step:: assert
-
-   Let :g:`/ D F / <g1:/ D F />`, :g:`/ E F / <g1:/ E F />` meet outside :g:`< A B C > <g1:< A B C >>` at :g:`F <g1:F>`, as is the case in the third figure
-
 .. step:: construct
 
-   **segment** :g:`/ A F / <g1:/ A F />`, :g:`/ B F / <g1:/ B F />`, :g:`/ C F / <g1:/ C F />`
+   :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`F <g1:F>`) → :g:`/ D F / <g1:/ D F />`, :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`F <g1:F>`) → :g:`/ E F / <g1:/ E F />`, :fn:`segment <G.3>`\ () → :g:`< A B C > <g1:< A B C >>`, :fn:`segment <G.3>`\ () → :g:`F <g1:F>`, :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`F <g1:F>`) → :g:`/ A F / <g1:/ A F />`, :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`F <g1:F>`) → :g:`/ B F / <g1:/ B F />`, :fn:`segment <G.3>`\ (:g:`C <g1:C>`, :g:`F <g1:F>`) → :g:`/ C F / <g1:/ C F />`
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    Then again, since :g:`/ A D / <g1:/ A D />` is :eq:`equal <g1:/ A D / = g1:/ D B />` to :g:`/ D B / <g1:/ D B />`, and :g:`/ D F / <g1:/ D F />` is common and at right angles, therefore the base :g:`/ A F / <g1:/ A F />` is :eq:`equal <g1:/ A F / = g1:/ F B />` to the base :g:`/ F B / <g1:/ F B />`.
 
@@ -131,7 +125,7 @@ G.122
 
    When the center falls on :g:`/ B C / <g1:/ B C />`, :g:`< B A C ) <g1:< B A C )>`, being in a semicircle, is right
 
-.. step:: conclude [G.110] <G.110>
+.. step:: conclude ∵ thales_semicircle_theorem <G.110>
 
    And when the center of the circle falls outside the triangle, :g:`< B A C ) <g1:< B A C )>`, being in a segment less than the semicircle, is greater than a right angle.
 

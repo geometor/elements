@@ -24,6 +24,12 @@ G.269
 
    Similar solid numbers have to one another the ratio which a cube number has to a cube number.
 
+.. signature:: theorem
+
+   | :fn:`similar_solid_numbers_viii_27 <G.269>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`)
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>` be similar solid numbers
+   | **prove** :g:`A <g1:A>` has to :g:`B <g1:B>` the ratio which a cube number has to a cube number
+
 .. picture:: g1.svg
    :alt: Proposition 27
 
@@ -35,19 +41,15 @@ G.269
 
    Since :g:`A <g1:A>`, :g:`B <g1:B>` are similar solid numbers,
 
-.. step:: assert [G.261] <G.261>
+.. step:: assert ∵ similar_solid_numbers <G.261>
 
    Therefore two mean proportional numbers fall between :g:`A <g1:A>`, :g:`B <g1:B>`.
 
-.. step:: assert
+.. step:: construct
 
-   Let :g:`C <g1:C>`, :g:`D <g1:D>` so fall
+   :fn:`many_numbers_please <G.234>`: Let :g:`C <g1:C>`, :g:`D <g1:D>` so fall, and let :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>`, :g:`H <g1:H>`, the least numbers of those which have the same ratio with :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`B <g1:B>`, and equal with them in multitude, be taken
 
-.. step:: construct [G.234, G.242] <G.234, G.242>
-
-   Let :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>`, :g:`H <g1:H>`, the least numbers of those which have the same ratio with :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`B <g1:B>`, and equal with them in multitude, be taken
-
-.. step:: assert [G.242] <G.242>
+.. step:: assert ∵ find_numbers_continued <G.242>
 
    Therefore the extremes of them :g:`E <g1:E>`, :g:`H <g1:H>` are cube.
 

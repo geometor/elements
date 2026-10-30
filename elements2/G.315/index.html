@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=156d9f89" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=3d8cc37d" />
   <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -49,7 +49,7 @@
           <a href="../../log/index.html"  >log</a>
         </li>
         <li>
-          <a href="../index.html"  >Elements 2.0 (G Index)</a>
+          <a href="../index.html" class="is-active" aria-selected="true" >Elements 2.0 (G Index)</a>
         </li>
       </ul>
     </nav>
@@ -92,6 +92,12 @@
         <span id="g-315"></span><span id="id1"></span><h1>G.315<a class="headerlink" href="#x-2" title="Link to this heading">¶</a></h1>
         <p class="rubric"><a class="reference external" href="https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/002/" title="X.2: If, when the less of two unequal magnitudes is continually subtracted in turn from the greater, that which is left never measures the one before it, the magnitudes is…">X.2</a></p>
         <div class="enunciation">If, when the less of two unequal magnitudes is continually subtracted in turn from the greater, that which is left never measures the one before it, the magnitudes is incommensurable.</div>
+        <div class="geom-signature geom-signature-theorem">
+        <div class="line-block">
+        <div class="line"><span class="geom-fn geom-fn-def" data-ref-target="G.315" title="G.315: If, when the less of two unequal magnitudes is continually subtracted in turn from the greater, that which is left never measures the one before it, the magnitudes is…">less_unequal_magnitudes</span>()</div>
+        <div class="line"><strong>prove</strong> the magnitudes <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span>, <span class="geom-ref" data-ref="g1:/ C D /" title="/ C D /">/ C D /</span> are incommensurable</div>
+        </div>
+        </div>
         <figure class="photon-picture photon-svg">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="-11 -9 377 91" width="377" height="91" class="euclid-graphic" data-graphic-id="g1" data-graphic="g1" data-proposition="X.2">
           <defs>
@@ -155,12 +161,9 @@
         </figure>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> There being two unequal magnitudes <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span>, <span class="geom-ref" data-ref="g1:/ C D /" title="/ C D /">/ C D /</span>, and <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span> being the less, when the less is continually subtracted in turn from the greater, let that which is left over never measure the one before it</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> If they are commensurable, some magnitude will measure them.</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Let a magnitude measure them, if possible</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Let it be <span class="geom-ref" data-ref="g1:E" title="E">E</span></div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Let <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span>, measuring <span class="geom-ref" data-ref="g1:/ F D /" title="/ F D /">/ F D /</span>, leave <span class="geom-ref" data-ref="g1:/ C F /" title="/ C F /">/ C F /</span> less than itself, let <span class="geom-ref" data-ref="g1:/ C F /" title="/ C F /">/ C F /</span> measuring <span class="geom-ref" data-ref="g1:/ B G /" title="/ B G /">/ B G /</span>, leave <span class="geom-ref" data-ref="g1:/ A G /" title="/ A G /">/ A G /</span> less than itself</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Let this process be repeated continually, until there is left some magnitude which is less than <span class="geom-ref" data-ref="g1:E" title="E">E</span>.</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Suppose this done</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Let there be left <span class="geom-ref" data-ref="g1:/ A G /" title="/ A G /">/ A G /</span> less than <span class="geom-ref" data-ref="g1:E" title="E">E</span>.</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Let a magnitude measure them, if possible, and let it be <span class="geom-ref" data-ref="g1:E" title="E">E</span></div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Let <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span>, measuring <span class="geom-ref" data-ref="g1:/ F D /" title="/ F D /">/ F D /</span>, leave <span class="geom-ref" data-ref="g1:/ C F /" title="/ C F /">/ C F /</span> less than itself, let <span class="geom-ref" data-ref="g1:/ C F /" title="/ C F /">/ C F /</span> measuring <span class="geom-ref" data-ref="g1:/ B G /" title="/ B G /">/ B G /</span>, leave <span class="geom-ref" data-ref="g1:/ A G /" title="/ A G /">/ A G /</span> less than itself, and let this process be repeated continually, until there is left some magnitude which is less than <span class="geom-ref" data-ref="g1:E" title="E">E</span>.</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Suppose this done, and let there be left <span class="geom-ref" data-ref="g1:/ A G /" title="/ A G /">/ A G /</span> less than <span class="geom-ref" data-ref="g1:E" title="E">E</span>.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Since <span class="geom-ref" data-ref="g1:E" title="E">E</span> measures <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span>, while <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span> measures <span class="geom-ref" data-ref="g1:/ D F /" title="/ D F /">/ D F /</span>,</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore <span class="geom-ref" data-ref="g1:E" title="E">E</span> will also measure <span class="geom-ref" data-ref="g1:/ F D /" title="/ F D /">/ F D /</span>.</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> It measures the whole <span class="geom-ref" data-ref="g1:/ C D /" title="/ C D /">/ C D /</span> also;</div>
@@ -170,7 +173,7 @@
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> It measures the whole <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span> also;</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore it will also measure the remainder <span class="geom-ref" data-ref="g1:/ A G /" title="/ A G /">/ A G /</span>, the greater the less :</div>
         <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Which is impossible.</div>
-        <div class="geom-step geom-step-conclude" data-step-kind="conclude"><a class="justification" href="../G.314/index.html#g-314" data-ref-target="G.314" title="G.314: Those magnitudes are said to becommensurable which are measured by the same measure, and thoseincommensurable which cannot have any common measure.">[G.314]</a><span class="geom-step-badge geom-badge-conclude">conclude</span> Therefore no magnitude will measure the magnitudes <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span>, <span class="geom-ref" data-ref="g1:/ C D /" title="/ C D /">/ C D /</span>; therefore the magnitudes <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span>, <span class="geom-ref" data-ref="g1:/ C D /" title="/ C D /">/ C D /</span> are incommensurable.</div>
+        <div class="geom-step geom-step-conclude" data-step-kind="conclude"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.314/index.html#g-314" data-ref-target="G.314" title="G.314: Those magnitudes are said to becommensurable which are measured by the same measure, and thoseincommensurable which cannot have any common measure.">magnitudes_said_commensurable_def</a></span><span class="geom-step-badge geom-badge-conclude">conclude</span> Therefore no magnitude will measure the magnitudes <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span>, <span class="geom-ref" data-ref="g1:/ C D /" title="/ C D /">/ C D /</span>; therefore the magnitudes <span class="geom-ref" data-ref="g1:/ A B /" title="/ A B /">/ A B /</span>, <span class="geom-ref" data-ref="g1:/ C D /" title="/ C D /">/ C D /</span> are incommensurable.</div>
         <section class="level-2" id="dependency-graph">
         <h2>Dependency Graph<a class="headerlink" href="#dependency-graph" title="Link to this heading">¶</a></h2>
         <div class="graphviz"><object data="../../_images/graphviz-76d15dbf1312c1728a25e674365c646b265d6a33.svg" type="image/svg+xml" class="graphviz">
@@ -431,28 +434,28 @@
   <footer>
     <div class="footer-nav">
       <ul>
-        <li><a href="../../about.html">about</a></li>
-        <li><a href="../../connect.html">connect</a></li>
-        <li><a href="../../glossary.html">glossary</a></li>
-        <li><a href="../../todos/index.html">todos</a></li>
-        <li><a href="../../changelog.html">changelog</a></li>
+        <li><a href="../../about.html"  >about</a></li>
+        <li><a href="../../connect.html"  >connect</a></li>
+        <li><a href="../../glossary.html"  >glossary</a></li>
+        <li><a href="../../todos/index.html"  >todos</a></li>
+        <li><a href="../../changelog.html"  >changelog</a></li>
       </ul>
     </div>
     <hr />
     <div role="contentinfo">
       <p>
-        &copy; Copyright .
+        &copy; Copyright 2026, GEOMETOR.
       </p>
     </div>
   </footer>
 
   <script src="../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+  <script src="../../_static/documentation_options.js?v=d5a15cff"></script>
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
-  <script src="../../_static/js/geometor_interactive.js?v=421e4467"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=4430a5d4"></script>
   <script src="../../_static/js/search_highlight.js"></script>
 
 </body>

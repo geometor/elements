@@ -24,6 +24,12 @@ G.94
 
    The straight line drawn at right angles to the diameter of a circle from its extremity will fall outside the circle, and into the space between the straight line and the circumference another straight line cannot be interposed; further the angle of the semicircle is greater, and the remaining angle less, than any acute angle.
 
+.. signature:: theorem
+
+   | :fn:`straight_line_drawn <G.94>`\ (:g:`( A B C ) <g1:( A B C )>`, :g:`D <g1:D>`, :g:`/ A B / <g1:/ A B />`)
+   | **given** :g:`( A B C ) <g1:( A B C )>` be a circle about :g:`D <g1:D>` as center and :g:`/ A B / <g1:/ A B />` as diameter
+   | **prove** the straight line drawn from :g:`A <g1:A>` at right angles to :g:`/ A B / <g1:/ A B />` from its extremity will fall outside the circle
+
 .. picture:: g1.svg
    :alt: Diagram for Proposition 16
 
@@ -31,15 +37,11 @@ G.94
 
    :g:`( A B C ) <g1:( A B C )>` be a circle about :g:`D <g1:D>` as center and :g:`/ A B / <g1:/ A B />` as diameter
 
-.. step:: assert
-
-   For suppose it does not, but, if possible, let it fall within as :g:`/ C A / <g1:/ C A />`
-
 .. step:: construct
 
-   **segment** :g:`/ D C / <g1:/ D C />`
+   Suppose it does not, but, if possible, let it fall within as :g:`/ C A / <g1:/ C A />`, and let :g:`/ D C / <g1:/ D C />` be joined.
 
-.. step:: assert [G.12] <G.12>
+.. step:: assert ∵ isosceles_base_angles <G.12>
 
    Since :g:`/ D A / <g1:/ D A />` is :eq:`equal <g1:/ D A / = g1:/ D C />` to :g:`/ D C / <g1:/ D C />`, :g:`< D A C ) <g1:< D A C )>` is also :eq:`equal <g1:< D A C ) = g1:< A C D )>` to :g:`< A C D ) <g1:< A C D )>`.
 
@@ -51,7 +53,7 @@ G.94
 
    Therefore :g:`< A C D ) <g1:< A C D )>` is also right:
 
-.. step:: assert [G.28] <G.28>
+.. step:: assert ∵ two_angles_less_than_two_right <G.28>
 
    Thus, in :g:`< A C D > <g1:< A C D >>`, the two angles :g:`< D A C ) <g1:< D A C )>`, :g:`< A C D ) <g1:< A C D )>` are equal to two right angles: which is impossible.
 
@@ -75,19 +77,15 @@ G.94
 
    I say next that into the space between :g:`/ A E / <g1:/ A E />` and the circumference :g:`( C H A ) <g1:( C H A )>` another straight line cannot be interposed.
 
-.. step:: assert
-
-   If possible, let another straight line be so interposed, as :g:`/ F A / <g1:/ F A />`
-
 .. step:: construct
 
-   Let :g:`/ D G / <g1:/ D G />` be drawn from :g:`D <g1:D>` perpendicular to :g:`/ F A / <g1:/ F A />`.
+   If possible, let another straight line be so interposed, as :g:`/ F A / <g1:/ F A />`, and let :g:`/ D G / <g1:/ D G />` be drawn from :g:`D <g1:D>` perpendicular to :g:`/ F A / <g1:/ F A />`.
 
 .. step:: assert
 
    Since :g:`< A G D ) <g1:< A G D )>` is right → and :g:`< D A G ) <g1:< D A G )>` is less than a right angle,
 
-.. step:: assert [G.30] <G.30>
+.. step:: assert ∵ greater_angle_greater_side <G.30>
 
    :g:`/ A D / <g1:/ A D />` is greater than :g:`/ D G / <g1:/ D G />`.
 

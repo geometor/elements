@@ -24,24 +24,22 @@ G.78
 
    If in a circle a straight line through the centre bisect a straight line not through the centre, it also cuts it at right angles; and if it cut it at right angles, it also bisects it.
 
+.. signature:: theorem
+
+   | :fn:`circle_straight_line <G.78>`\ (:g:`( A B C ) <g1:( A B C )>`, :g:`/ C D / <g1:/ C D />`, :g:`/ A B / <g1:/ A B />`, :g:`F <g1:F>`)
+   | **given** :g:`( A B C ) <g1:( A B C )>` be a circle, in it let a straight line :g:`/ C D / <g1:/ C D />` through the center :eq:`bisect <g1:/ A F / = g1:/ F B />` a straight line :g:`/ A B / <g1:/ A B />` not through the center at :g:`F <g1:F>`
+   | **prove** it also cuts it at :eq:`right angles <g1:< A F E ) = g1:< B F E )>`; it also :eq:`bisects <g1:/ A F / = g1:/ F B />` it, that is, that :g:`/ A F / <g1:/ A F />` is :eq:`equal <g1:/ A F / = g1:/ F B />` to :g:`/ F B / <g1:/ F B />`
+
 .. picture:: g1.svg
    :alt: Proposition 3
 
 .. step:: given
 
-   :g:`( A B C ) <g1:( A B C )>` be a circle
-
-.. step:: assert
-
-   In it let a straight line :g:`/ C D / <g1:/ C D />` through the center :eq:`bisect <g1:/ A F / = g1:/ F B />` a straight line :g:`/ A B / <g1:/ A B />` not through the center at :g:`F <g1:F>`
-
-.. step:: assert
-
-   It also cuts it at :eq:`right angles <g1:< A F E ) = g1:< B F E )>`.
+   :g:`( A B C ) <g1:( A B C )>` be a circle, in it let a straight line :g:`/ C D / <g1:/ C D />` through the center :eq:`bisect <g1:/ A F / = g1:/ F B />` a straight line :g:`/ A B / <g1:/ A B />` not through the center at :g:`F <g1:F>`
 
 .. step:: construct
 
-   For let the center of :g:`( A B C ) <g1:( A B C )>` be taken
+   Let the center of :g:`( A B C ) <g1:( A B C )>` be taken
 
 .. step:: assert
 
@@ -49,7 +47,7 @@ G.78
 
 .. step:: construct
 
-   **segment** :g:`/ E A / <g1:/ E A />`, :g:`/ E B / <g1:/ E B />`
+   :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`A <g1:A>`) → :g:`/ E A / <g1:/ E A />`, :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`B <g1:B>`) → :g:`/ E B / <g1:/ E B />`
 
 .. step:: assert
 
@@ -59,11 +57,11 @@ G.78
 
    And the base :g:`/ E A / <g1:/ E A />` is :eq:`equal <g1:/ E A / = g1:/ E B />` to the base :g:`/ E B / <g1:/ E B />`
 
-.. step:: assert [G.15] <G.15>
+.. step:: assert ∵ sss_congruence <G.15>
 
    Therefore :g:`< A F E ) <g1:< A F E )>` is :eq:`equal <g1:< A F E ) = g1:< B F E )>` to :g:`< B F E ) <g1:< B F E )>`.
 
-.. step:: assert [G.18] <G.18>
+.. step:: assert ∵ right_angle_perpendicular <G.18>
 
    But, when a straight line set up on a straight line makes the adjacent angles equal to one another, each of the equal angles is right
 
@@ -81,13 +79,9 @@ G.78
 
 .. step:: assert
 
-   It also :eq:`bisects <g1:/ A F / = g1:/ F B />` it, that is, that :g:`/ A F / <g1:/ A F />` is :eq:`equal <g1:/ A F / = g1:/ F B />` to :g:`/ F B / <g1:/ F B />`.
-
-.. step:: assert
-
    With the same construction → since :g:`/ E A / <g1:/ E A />` is :eq:`equal <g1:/ E A / = g1:/ E B />` to :g:`/ E B / <g1:/ E B />`,
 
-.. step:: assert [G.12] <G.12>
+.. step:: assert ∵ isosceles_base_angles <G.12>
 
    :g:`< E A F ) <g1:< E A F )>` is also :eq:`equal <g1:< E A F ) = g1:< E B F )>` to :g:`< E B F ) <g1:< E B F )>`.
 
@@ -95,7 +89,7 @@ G.78
 
    The right angle :g:`< A F E ) <g1:< A F E )>` is :eq:`equal <g1:< A F E ) = g1:< B F E )>` to the right angle :g:`< B F E ) <g1:< B F E )>`, therefore :g:`< E A F > <g1:< E A F >>`, :g:`< E B F > <g1:< E B F >>` are two triangles having two angles :eq:`equal <g1:< E A F ) = g1:< E B F ); g1:< A F E ) = g1:< B F E )>` to two angles and one side equal to one side, namely :g:`/ E F / <g1:/ E F />`, which is common to them, and subtends one of the :eq:`equal <g1:< E A F ) = g1:< E B F )>` angles
 
-.. step:: assert [G.37] <G.37>
+.. step:: assert ∵ asa_aas_congruence <G.37>
 
    Therefore they will also have the remaining sides :eq:`equal <g1:/ A F / = g1:/ F B /; g1:/ E A / = g1:/ E B />` to the remaining sides
 

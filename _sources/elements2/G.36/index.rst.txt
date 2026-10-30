@@ -24,6 +24,12 @@ G.36
 
    If two triangles have two sides equal to two sides respectively, the one with the greater base has the greater included angle.
 
+.. signature:: theorem
+
+   | :fn:`converse_hinge_theorem <G.36>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>`, :g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />`)
+   | **given** :g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>` be two triangles having the two sides :g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />` :eq:`equal <g1:/ A B / = g1:/ D E /; g1:/ A C / = g1:/ D F />` to the two sides :g:`/ D E / <g1:/ D E />`, :g:`/ D F / <g1:/ D F />` respectively, namely :g:`/ A B / <g1:/ A B />` to :g:`/ D E / <g1:/ D E />`, :g:`/ A C / <g1:/ A C />` to :g:`/ D F / <g1:/ D F />`
+   | **prove** :g:`< B A C ) <g1:< B A C )>` is also greater than :g:`< E D F ) <g1:< E D F )>`
+
 .. picture:: g1.svg
    :alt: Folio 0313 Figure 1 - Proposition 25
 
@@ -43,7 +49,7 @@ G.36
 
    Now :g:`< B A C ) <g1:< B A C )>` is not :eq:`equal <g1:< B A C ) = g1:< E D F )>` to :g:`< E D F ) <g1:< E D F )>`
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    For then the base :g:`/ B C / <g1:/ B C />` would also have been :eq:`equal <g1:/ B C / = g1:/ E F />` to the base :g:`/ E F / <g1:/ E F />`,
 
@@ -59,7 +65,7 @@ G.36
 
    Neither again is :g:`< B A C ) <g1:< B A C )>` less than :g:`< E D F ) <g1:< E D F )>`
 
-.. step:: assert [G.35] <G.35>
+.. step:: assert ∵ hinge_theorem <G.35>
 
    For then the base :g:`/ B C / <g1:/ B C />` would also have been less than the base :g:`/ E F / <g1:/ E F />`,
 

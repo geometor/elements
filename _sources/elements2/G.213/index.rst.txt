@@ -24,6 +24,12 @@ G.213
 
    If four numbers be proportional, they is proportional alternately.
 
+.. signature:: theorem
+
+   | :fn:`numbers_proportional_proportional <G.213>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`)
+   | **given** the four numbers :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` be proportional, so that, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`
+   | **prove** they will also be proportional alternately, so that, as :g:`A <g1:A>` is to :g:`C <g1:C>`, so will :g:`B <g1:B>` be to :g:`D <g1:D>`
+
 .. picture:: g1.svg
    :alt: Proposition 13 Diagram
 
@@ -35,15 +41,15 @@ G.213
 
    For since, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`,
 
-.. step:: assert [G.210] <G.210>
+.. step:: assert ∵ numbers_proportional_multiple_def <G.210>
 
    Therefore, whatever part or parts :g:`A <g1:A>` is of :g:`B <g1:B>`, the same part or the same parts is :g:`C <g1:C>` of :g:`D <g1:D>` also.
 
-.. step:: assert [G.209] <G.209>
+.. step:: assert ∵ number_parts_number_vii_10 <G.209>
 
    Therefore, alternately, whatever part or parts :g:`A <g1:A>` is of :g:`C <g1:C>`, the same part or the same parts is :g:`B <g1:B>` of :g:`D <g1:D>` also.
 
-.. step:: conclude [G.210] <G.210>
+.. step:: conclude ∵ numbers_proportional_multiple_def <G.210>
 
    Therefore, as :g:`A <g1:A>` is to :g:`C <g1:C>`, so is :g:`B <g1:B>` to :g:`D <g1:D>`.
 

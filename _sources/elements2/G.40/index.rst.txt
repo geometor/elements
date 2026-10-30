@@ -24,14 +24,19 @@ G.40
 
    If a transversal cutting two lines makes the exterior angle equal to the opposite interior angle, or interior angles on the same side supplementary, the lines are parallel.
 
+.. signature:: theorem
+
+   | :fn:`corresponding_angles_parallel <G.40>`\ ()
+   | **prove** :g:`/ A B / <g1:/ A B />` is parallel to :g:`/ C D / <g1:/ C D />`
+
 .. picture:: g1.svg
    :alt: Folio 0324 Figure 1 - Proposition 28
 
 .. step:: assert
 
-   For let :g:`/ E F / <g1:/ E F />` falling on :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` make the exterior angle :g:`< E G B ) <g1:< E G B )>` :eq:`equal <g1:< E G B ) = g1:< G H D )>` to the interior and opposite angle :g:`< G H D ) <g1:< G H D )>`, or the interior angles on the same side, namely :g:`< B G H ) <g1:< B G H )>`, :g:`< G H D ) <g1:< G H D )>`, equal to two right angles
+   Let :g:`/ E F / <g1:/ E F />` falling on :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` make the exterior angle :g:`< E G B ) <g1:< E G B )>` :eq:`equal <g1:< E G B ) = g1:< G H D )>` to the interior and opposite angle :g:`< G H D ) <g1:< G H D )>`, or the interior angles on the same side, namely :g:`< B G H ) <g1:< B G H )>`, :g:`< G H D ) <g1:< G H D )>`, equal to two right angles
 
-.. step:: assert [G.25] <G.25>
+.. step:: assert ∵ vertical_angles_equal <G.25>
 
    Since :g:`< E G B ) <g1:< E G B )>` is :eq:`equal <g1:< E G B ) = g1:< G H D )>` to :g:`< G H D ) <g1:< G H D )>`, while :g:`< E G B ) <g1:< E G B )>` is :eq:`equal <g1:< E G B ) = g1:< A G H )>` to :g:`< A G H ) <g1:< A G H )>`.
 
@@ -43,11 +48,11 @@ G.40
 
    And they are alternate;
 
-.. step:: assert [G.39] <G.39>
+.. step:: assert ∵ alternate_angles_parallel <G.39>
 
    Therefore :g:`/ A B / <g1:/ A B />` is parallel to :g:`/ C D / <g1:/ C D />`.
 
-.. step:: assert [G.22] <G.22>
+.. step:: assert ∵ adjacent_angles_supplementary <G.22>
 
    Since :g:`< B G H ) <g1:< B G H )>`, :g:`< G H D ) <g1:< G H D )>` are equal to two right angles, and :g:`< A G H ) <g1:< A G H )>`, :g:`< B G H ) <g1:< B G H )>` are also equal to two right angles.
 
@@ -55,7 +60,7 @@ G.40
 
    :g:`< A G H ) <g1:< A G H )>`, :g:`< B G H ) <g1:< B G H )>` are equal to :g:`< B G H ) <g1:< B G H )>`, :g:`< G H D ) <g1:< G H D )>`.
 
-.. step:: assert
+.. step:: construct
 
    Let :g:`< B G H ) <g1:< B G H )>` be subtracted from each
 
@@ -67,7 +72,7 @@ G.40
 
    And they are alternate;
 
-.. step:: conclude [G.39] <G.39>
+.. step:: conclude ∵ alternate_angles_parallel <G.39>
 
    Therefore :g:`/ A B / <g1:/ A B />` is parallel to :g:`/ C D / <g1:/ C D />`.
 

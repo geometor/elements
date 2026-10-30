@@ -24,26 +24,35 @@ G.461
 
    If two straight lines be cut by parallel planes, they is cut in the same ratios.
 
+.. signature:: theorem
+
+   | :fn:`straight_lines_cut_xi_17 <G.461>`\ ()
+   | **prove** also, as :g:`/ A E / <g1:/ A E />` is to :g:`/ E B / <g1:/ E B />`, so is :g:`/ C F / <g1:/ C F />` to :g:`/ F D / <g1:/ F D />`
+
 .. picture:: g1.svg
    :alt: Book XI, Proposition 17
 
 .. step:: construct
 
-   For let :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` be cut by the parallel planes :g:`< G H > <g1:< G H >>`, :g:`< K L > <g1:< K L >>`, :g:`< M N > <g1:< M N >>` at :g:`A <g1:A>`, :g:`E <g1:E>`, :g:`B <g1:B>` and :g:`C <g1:C>`, :g:`F <g1:F>`, :g:`D <g1:D>`
+   Let :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` be cut by the parallel planes :g:`< G H > <g1:< G H >>`, :g:`< K L > <g1:< K L >>`, :g:`< M N > <g1:< M N >>` at :g:`A <g1:A>`, :g:`E <g1:E>`, :g:`B <g1:B>` and :g:`C <g1:C>`, :g:`F <g1:F>`, :g:`D <g1:D>`
+
+.. step:: assert
+
+   I say that, as :g:`/ A E / <g1:/ A E />` is to :g:`/ E B / <g1:/ E B />`, so is :g:`/ C F / <g1:/ C F />` to :g:`/ F D / <g1:/ F D />`.
 
 .. step:: construct
 
-   For let :g:`/ A C / <g1:/ A C />`, :g:`/ B D / <g1:/ B D />`, :g:`/ A D / <g1:/ A D />` be joined, let :g:`/ A D / <g1:/ A D />` meet the plane :g:`< K L > <g1:< K L >>` at :g:`O <g1:O>`
+   :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`C <g1:C>`) → :g:`/ A C / <g1:/ A C />`, :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`D <g1:D>`) → :g:`/ B D / <g1:/ B D />`, :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`D <g1:D>`) → :g:`/ A D / <g1:/ A D />`
 
 .. step:: construct
 
-   **segment** :g:`/ E O / <g1:/ E O />`, :g:`/ O F / <g1:/ O F />`
+   :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`D <g1:D>`) → :g:`/ A D / <g1:/ A D />`, :fn:`segment <G.3>`\ () → :g:`< K L > <g1:< K L >>`, :fn:`segment <G.3>`\ () → :g:`O <g1:O>`, :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`O <g1:O>`) → :g:`/ E O / <g1:/ E O />`, :fn:`segment <G.3>`\ (:g:`O <g1:O>`, :g:`F <g1:F>`) → :g:`/ O F / <g1:/ O F />`
 
 .. step:: assert
 
    Since the two parallel planes :g:`< K L > <g1:< K L >>`, :g:`< M N > <g1:< M N >>` are cut by the plane :g:`< E B D O > <g1:< E B D O >>`,
 
-.. step:: assert [G.460] <G.460>
+.. step:: assert ∵ parallel_planes_cut <G.460>
 
    Their common sections :g:`/ E O / <g1:/ E O />`, :g:`/ B D / <g1:/ B D />` are parallel.
 
@@ -51,7 +60,7 @@ G.461
 
    For the same reason, since the two parallel planes :g:`< G H > <g1:< G H >>`, :g:`< K L > <g1:< K L >>` are cut by the plane :g:`< A O F C > <g1:< A O F C >>`,
 
-.. step:: assert [G.460] <G.460>
+.. step:: assert ∵ parallel_planes_cut <G.460>
 
    Their common sections :g:`/ A C / <g1:/ A C />`, :g:`/ O F / <g1:/ O F />` are parallel.
 
@@ -59,7 +68,7 @@ G.461
 
    And, since :g:`/ E O / <g1:/ E O />` has been drawn parallel to :g:`/ B D / <g1:/ B D />`, one of the sides of :g:`< A B D > <g1:< A B D >>`,
 
-.. step:: assert [G.164] <G.164>
+.. step:: assert ∵ straight_line_drawn_vi_2 <G.164>
 
    Therefore, proportionally, as :g:`/ A E / <g1:/ A E />` is to :g:`/ E B / <g1:/ E B />`, so is :g:`/ A O / <g1:/ A O />` to :g:`/ O D / <g1:/ O D />`.
 
@@ -67,7 +76,7 @@ G.461
 
    Since :g:`/ O F / <g1:/ O F />` has been drawn parallel to :g:`/ A C / <g1:/ A C />`, one of the sides of :g:`< A D C > <g1:< A D C >>`,
 
-.. step:: assert [G.164] <G.164>
+.. step:: assert ∵ straight_line_drawn_vi_2 <G.164>
 
    Proportionally, as :g:`/ A O / <g1:/ A O />` is to :g:`/ O D / <g1:/ O D />`, so is :g:`/ C F / <g1:/ C F />` to :g:`/ F D / <g1:/ F D />`.
 
@@ -75,7 +84,7 @@ G.461
 
    It was also proved that, as :g:`/ A O / <g1:/ A O />` is to :g:`/ O D / <g1:/ O D />`, so is :g:`/ A E / <g1:/ A E />` to :g:`/ E B / <g1:/ E B />`;
 
-.. step:: conclude [G.148] <G.148>
+.. step:: conclude ∵ ratios_ratio <G.148>
 
    Therefore also, as :g:`/ A E / <g1:/ A E />` is to :g:`/ E B / <g1:/ E B />`, so is :g:`/ C F / <g1:/ C F />` to :g:`/ F D / <g1:/ F D />`.
 

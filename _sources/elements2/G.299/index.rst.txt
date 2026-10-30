@@ -24,26 +24,31 @@ G.299
 
    If from an odd number an odd number be subtracted, the remainder is even.
 
+.. signature:: theorem
+
+   | :fn:`odd_number_odd <G.299>`\ ()
+   | **prove** the remainder :g:`/ A C / <g1:/ A C />` is even
+
 .. picture:: g1.svg
    :alt: Book IX, Proposition 26
 
-.. step:: assert
+.. step:: construct
 
-   For from the odd number :g:`/ A B / <g1:/ A B />` let the odd number :g:`/ B C / <g1:/ B C />` be subtracted
+   From the odd number :g:`/ A B / <g1:/ A B />` let the odd number :g:`/ B C / <g1:/ B C />` be subtracted
 
-.. step:: assert
+.. step:: construct
 
    Since :g:`/ A B / <g1:/ A B />` is odd, let the unit :g:`/ B D / <g1:/ B D />` be subtracted ;
 
-.. step:: assert [G.294] <G.294>
+.. step:: assert ∵ odd_number_divisible_def <G.294>
 
    Therefore the remainder :g:`/ A D / <g1:/ A D />` is even.
 
-.. step:: assert [G.294] <G.294>
+.. step:: assert ∵ odd_number_divisible_def <G.294>
 
    For the same reason :g:`/ C D / <g1:/ C D />` is also even ;
 
-.. step:: conclude [G.297] <G.297>
+.. step:: conclude ∵ even_number_even <G.297>
 
    So that the remainder :g:`/ A C / <g1:/ A C />` is also even.
 

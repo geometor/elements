@@ -24,16 +24,22 @@ G.490
 
    If there be two pyramids of the same height which have triangular bases, and each of them be divided into two pyramids equal to one another and similar to the whole, and into two equal prisms, then, as the base of the one pyramid is to the base of the other pyramid, so will all the prisms in the one pyramid be to all the prisms, being equal in multitude, in the other pyramid.
 
+.. signature:: theorem
+
+   | :fn:`there_pyramids_height <G.490>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>`, :g:`G <g1:G>`, :g:`H <g1:H>`)
+   | **given** there be two pyramids of the same height which have the triangular bases :g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>`, vertices :g:`G <g1:G>`, :g:`H <g1:H>`, let each of them be divided into two pyramids equal to one another and similar to the whole and into two equal prisms
+   | **prove** also, as the base :g:`< A B C > <g1:< A B C >>` is to the base :g:`< D E F > <g1:< D E F >>`, so are the four prisms to the four prisms
+
 .. picture:: g1.svg
    :alt: Proposition 4
 
 .. step:: given
 
-   there be two pyramids of the same height which have the triangular bases :g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>`, vertices :g:`G <g1:G>`, :g:`H <g1:H>`
+   there be two pyramids of the same height which have the triangular bases :g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>`, vertices :g:`G <g1:G>`, :g:`H <g1:H>`, let each of them be divided into two pyramids equal to one another and similar to the whole and into two equal prisms
 
-.. step:: assert [G.489] <G.489>
+.. step:: assert
 
-   Let each of them be divided into two pyramids equal to one another and similar to the whole and into two equal prisms
+   I say that, as the base :g:`< A B C > <g1:< A B C >>` is to the base :g:`< D E F > <g1:< D E F >>`, so are all the prisms in the pyramid :g:`< A B C G > <g1:< A B C G >>` to all the prisms, being equal in multitude, in the pyramid :g:`< D E F H > <g1:< D E F H >>`,
 
 .. step:: assert
 
@@ -59,11 +65,11 @@ G.490
 
    On :g:`/ B C / <g1:/ B C />`, :g:`/ C O / <g1:/ C O />` are described the similar and similarly situated rectilineal figures :g:`< A B C > <g1:< A B C >>`, :g:`< L O C > <g1:< L O C >>`, and on :g:`/ E F / <g1:/ E F />`, :g:`/ F V / <g1:/ F V />` the similar and similarly situated figures :g:`< D E F > <g1:< D E F >>`, :g:`< R V F > <g1:< R V F >>`;
 
-.. step:: assert [G.187, G.153] <G.187, G.153>
+.. step:: assert ∵ straight_lines_proportional_vi_22, magnitudes_proportional_proportional <G.187, G.153>
 
    Therefore, as :g:`< A B C > <g1:< A B C >>` is to :g:`< L O C > <g1:< L O C >>`, so is :g:`< D E F > <g1:< D E F >>` to :g:`< R V F > <g1:< R V F >>`; therefore, alternately, as :g:`< A B C > <g1:< A B C >>` is to :g:`< D E F > <g1:< D E F >>`, so is :g:`< L O C > <g1:< L O C >>` to :g:`< R V F > <g1:< R V F >>`.
 
-.. step:: assert [Lemma following] <Lemma following>
+.. step:: assert ∵ Lemma following <Lemma following>
 
    But, as :g:`< L O C > <g1:< L O C >>` is to :g:`< R V F > <g1:< R V F >>`, so is the prism in which :g:`< L O C > <g1:< L O C >>` is the base and :g:`< P M N > <g1:< P M N >>` its opposite to the prism in which :g:`< R V F > <g1:< R V F >>` is the base and :g:`< S T U > <g1:< S T U >>` its opposite.
 
@@ -71,11 +77,11 @@ G.490
 
    Therefore also, as :g:`< A B C > <g1:< A B C >>` is to :g:`< D E F > <g1:< D E F >>`, so is the prism in which :g:`< L O C > <g1:< L O C >>` is the base and :g:`< P M N > <g1:< P M N >>` its opposite to the prism in which :g:`< R V F > <g1:< R V F >>` is the base and :g:`< S T U > <g1:< S T U >>` its opposite.
 
-.. step:: assert [G.486, G.489] <G.486, G.489>
+.. step:: assert ∵ there_prisms_equal, pyramid_triangular_base <G.486, G.489>
 
    But, as the said prisms are to one another, so is the prism in which the parallelogram :g:`< K B O L > <g1:< K B O L >>` is the base and :g:`/ P M / <g1:/ P M />` its opposite to the prism in which the parallelogram :g:`< Q E V R > <g1:< Q E V R >>` is the base and :g:`/ S T / <g1:/ S T />` its opposite.
 
-.. step:: assert [G.149] <G.149>
+.. step:: assert ∵ number_magnitudes_proportional <G.149>
 
    Therefore also the two prisms, that in which the parallelogram :g:`< K B O L > <g1:< K B O L >>` is the base and :g:`/ P M / <g1:/ P M />` its opposite, and that in which :g:`< L O C > <g1:< L O C >>` is the base and :g:`< P M N > <g1:< P M N >>` its opposite, are to the prisms in which :g:`< Q E V R > <g1:< Q E V R >>` is the base and :g:`/ S T / <g1:/ S T />` its opposite and in which :g:`< R V F > <g1:< R V F >>` is the base and :g:`< S T U > <g1:< S T U >>` its opposite in the same ratio.
 

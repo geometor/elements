@@ -24,20 +24,25 @@ G.328
 
    If two commensurable magnitudes be added together, the whole is commensurable with each of them; and, if the whole be commensurable with one of them, the original magnitudes is commensurable.
 
+.. signature:: theorem
+
+   | :fn:`commensurable_magnitudes_added <G.328>`\ ()
+   | **prove** the whole :g:`/ A C / <g1:/ A C />` is also commensurable with each of the magnitudes :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`; :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are also commensurable
+
 .. picture:: g1.svg
    :alt: Proposition 15 Diagram
 
-.. step:: assert
+.. step:: construct
 
-   For let the two commensurable magnitudes :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` be added together
-
-.. step:: assert
-
-   Since :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are commensurable, some magnitude will measure them. Let it measure them
+   Let the two commensurable magnitudes :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` be added together
 
 .. step:: assert
 
-   Let it be :g:`D <g1:D>`.
+   Since :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are commensurable, some magnitude will measure them
+
+.. step:: assert
+
+   Let it measure them, and let it be :g:`D <g1:D>`.
 
 .. step:: assert
 
@@ -47,7 +52,7 @@ G.328
 
    It measures :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` also;
 
-.. step:: assert [G.314] <G.314>
+.. step:: assert ∵ magnitudes_said_commensurable_def <G.314>
 
    Therefore :g:`D <g1:D>` measures :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ A C / <g1:/ A C />`; therefore :g:`/ A C / <g1:/ A C />` is commensurable with each of the magnitudes :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`.
 
@@ -57,11 +62,11 @@ G.328
 
 .. step:: assert
 
-   Since :g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />` are commensurable, some magnitude will measure them. Let it measure them
+   Since :g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />` are commensurable, some magnitude will measure them
 
 .. step:: assert
 
-   Let it be :g:`D <g1:D>`.
+   Let it measure them, and let it be :g:`D <g1:D>`.
 
 .. step:: assert
 
@@ -71,7 +76,7 @@ G.328
 
    It measures :g:`/ A B / <g1:/ A B />` also;
 
-.. step:: conclude [G.314] <G.314>
+.. step:: conclude ∵ magnitudes_said_commensurable_def <G.314>
 
    Therefore :g:`D <g1:D>` will measure :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`; therefore :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are commensurable.
 

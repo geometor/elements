@@ -24,18 +24,23 @@ G.421
 
    If an area be contained by a rational straight line and a fourth apotome, the “side” of the area is minor.
 
+.. signature:: theorem
+
+   | :fn:`area_contained_rational_x_94 <G.421>`\ ()
+   | **prove** the “side” of the area :g:`< A B > <g1:< A B >>` is minor; :g:`/ L N / <g1:/ L N />` is the irrational straight line called minor
+
 .. picture:: g1.svg
    :alt: Proposition 94
 
 .. step:: assert
 
-   For let the area :g:`< A B > <g1:< A B >>` be contained by the rational straight line :g:`/ A C / <g1:/ A C />` and the fourth apotome :g:`/ A D / <g1:/ A D />`
+   Let the area :g:`< A B > <g1:< A B >>` be contained by the rational straight line :g:`/ A C / <g1:/ A C />` and the fourth apotome :g:`/ A D / <g1:/ A D />`
 
 .. step:: assert
 
    For let :g:`/ D G / <g1:/ D G />` be the annex to :g:`/ A D / <g1:/ A D />`;
 
-.. step:: assert [G.412] <G.412>
+.. step:: assert ∵ again_square_whole_def <G.412>
 
    Therefore :g:`/ A G / <g1:/ A G />`, :g:`/ G D / <g1:/ G D />` are rational straight lines commensurable in square only, :g:`/ A G / <g1:/ A G />` is commensurable in length with the rational straight line :g:`/ A C / <g1:/ A C />` set out, and the square on the whole :g:`/ A G / <g1:/ A G />` is greater than the square on the annex :g:`/ D G / <g1:/ D G />` by the square on a straight line incommensurable in length with :g:`/ A G / <g1:/ A G />`.
 
@@ -43,7 +48,7 @@ G.421
 
    Since then the square on :g:`/ A G / <g1:/ A G />` is greater than the square on :g:`/ G D / <g1:/ G D />` by the square on a straight line incommensurable in length with :g:`/ A G / <g1:/ A G />`,
 
-.. step:: assert [G.331] <G.331>
+.. step:: assert ∵ there_unequal_straight_x_18 <G.331>
 
    Therefore, if there be applied to :g:`/ A G / <g1:/ A G />` a parallelogram equal to the fourth part of the square on :g:`/ G D / <g1:/ G D />` and deficient by a square figure, it will divide it into incommensurable parts.
 
@@ -67,7 +72,7 @@ G.421
 
    Since then :g:`/ A G / <g1:/ A G />` is rational and commensurable in length with :g:`/ A C / <g1:/ A C />`,
 
-.. step:: assert [G.333] <G.333>
+.. step:: assert ∵ rectangle_contained_rational <G.333>
 
    Therefore the whole :g:`< A K > <g1:< A K >>` is rational.
 
@@ -75,7 +80,7 @@ G.421
 
    Since :g:`/ D G / <g1:/ D G />` is incommensurable in length with :g:`/ A C / <g1:/ A C />`, and both are rational,
 
-.. step:: assert [G.335] <G.335>
+.. step:: assert ∵ rectangle_contained_rational_x_21 <G.335>
 
    Therefore :g:`< D K > <g1:< D K >>` is medial.
 
@@ -83,7 +88,7 @@ G.421
 
    Since :g:`/ A F / <g1:/ A F />` is incommensurable in length with :g:`/ F G / <g1:/ F G />`,
 
-.. step:: assert [G.163, G.323] <G.163, G.323>
+.. step:: assert ∵ triangles_parallelograms_height, magnitudes_proportional_commensurable <G.163, G.323>
 
    Therefore :g:`< A I > <g1:< A I >>` is also incommensurable with :g:`< F K > <g1:< F K >>`.
 
@@ -91,27 +96,31 @@ G.421
 
    Now let the square :g:`< L M > <g1:< L M >>` be constructed :eq:`equal <g1:< L M > = g1:< A I >>` to :g:`< A I > <g1:< A I >>`
 
-.. step:: assert [G.191] <G.191>
+.. step:: construct
 
-   Let there be subtracted :g:`< N O > <g1:< N O >>` :eq:`equal <g1:< N O > = g1:< F K >>` to :g:`< F K > <g1:< F K >>` and about the same angle, :g:`< L P M ) <g1:< L P M )>`. Therefore the squares :g:`< L M > <g1:< L M >>`, :g:`< N O > <g1:< N O >>` are about the same diameter. Let :g:`/ P R / <g1:/ P R />` be their diameter
+   Let there be subtracted :g:`< N O > <g1:< N O >>` :eq:`equal <g1:< N O > = g1:< F K >>` to :g:`< F K > <g1:< F K >>` and about the same angle, :g:`< L P M ) <g1:< L P M )>`
+
+.. step:: assert ∵ parallelogram_there_taken <G.191>
+
+   Therefore the squares :g:`< L M > <g1:< L M >>`, :g:`< N O > <g1:< N O >>` are about the same diameter
 
 .. step:: construct
 
-   Let the figure be drawn.
+   Let :g:`/ P R / <g1:/ P R />` be their diameter, and let the figure be drawn.
 
 .. step:: assert
 
    Since then the rectangle :g:`/ A F / <g1:/ A F />`, :g:`/ F G / <g1:/ F G />` is equal to the square on :g:`/ E G / <g1:/ E G />`,
 
-.. step:: assert [G.180] <G.180>
+.. step:: assert ∵ straight_lines_proportional_vi_17 <G.180>
 
    Therefore, proportionally, as :g:`/ A F / <g1:/ A F />` is to :g:`/ E G / <g1:/ E G />`, so is :g:`/ E G / <g1:/ E G />` to :g:`/ F G / <g1:/ F G />`.
 
-.. step:: assert [G.163] <G.163>
+.. step:: assert ∵ triangles_parallelograms_height <G.163>
 
    But, as :g:`/ A F / <g1:/ A F />` is to :g:`/ E G / <g1:/ E G />`, so is :g:`< A I > <g1:< A I >>` to :g:`< E K > <g1:< E K >>`, and, as :g:`/ E G / <g1:/ E G />` is to :g:`/ F G / <g1:/ F G />`, so is :g:`< E K > <g1:< E K >>` to :g:`< F K > <g1:< F K >>`.
 
-.. step:: assert [G.148] <G.148>
+.. step:: assert ∵ ratios_ratio <G.148>
 
    Therefore :g:`< E K > <g1:< E K >>` is a mean proportional between :g:`< A I > <g1:< A I >>`, :g:`< F K > <g1:< F K >>`.
 
@@ -167,7 +176,7 @@ G.421
 
    Therefore :g:`/ L P / <g1:/ L P />`, :g:`/ P N / <g1:/ P N />` are straight lines incommensurable in square which make the sum of the squares on them rational, but twice the rectangle contained by them medial.
 
-.. step:: conclude [G.397] <G.397>
+.. step:: conclude ∵ straight_line_there_x_76 <G.397>
 
    Therefore :g:`/ L N / <g1:/ L N />` is the irrational straight line called minor; and it is the “side” of the area :g:`< A B > <g1:< A B >>`.
 

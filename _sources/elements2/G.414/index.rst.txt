@@ -23,6 +23,10 @@ G.414
 
    If the annex be so commensurable, a:term:`**fifth** <fifth-apotome>`;
 
+.. signature:: def
+
+   | :fn:`annex_commensurable_fifth_def <G.414>`
+
 Required for
 ------------
 

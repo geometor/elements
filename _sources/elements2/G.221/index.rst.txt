@@ -24,6 +24,12 @@ G.221
 
    Numbers prime to one another are the least of those which have the same ratio with them.
 
+.. signature:: theorem
+
+   | :fn:`numbers_prime_least <G.221>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`)
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>` be numbers prime to one another
+   | **prove** :g:`A <g1:A>`, :g:`B <g1:B>` are the least of those which have the same ratio with them
+
 .. picture:: g1.svg
    :alt: Book VII, Proposition 21
 
@@ -39,7 +45,7 @@ G.221
 
    Let them be :g:`C <g1:C>`, :g:`D <g1:D>`.
 
-.. step:: assert [G.220] <G.220>
+.. step:: assert ∵ least_numbers_ratio <G.220>
 
    Since, then, the least numbers of those which have the same ratio measure those which have the same ratio the same number of times, the greater the greater and the less the less, that is, the antecedent the antecedent and the consequent the consequent.
 
@@ -59,7 +65,7 @@ G.221
 
    And, since :g:`C <g1:C>` measures :g:`A <g1:A>` according to the units in :g:`E <g1:E>`,
 
-.. step:: assert [G.216] <G.216>
+.. step:: assert ∵ numbers_multiplying_make <G.216>
 
    Therefore :g:`E <g1:E>` also measures :g:`A <g1:A>` according to the units in :g:`C <g1:C>`.
 
@@ -67,11 +73,11 @@ G.221
 
    For the same reason
 
-.. step:: assert [G.216] <G.216>
+.. step:: assert ∵ numbers_multiplying_make <G.216>
 
    :g:`E <g1:E>` also measures :g:`B <g1:B>` according to the units in :g:`D <g1:D>`.
 
-.. step:: assert [G.199] <G.199>
+.. step:: assert ∵ numbers_prime_measured_def <G.199>
 
    Therefore :g:`E <g1:E>` measures :g:`A <g1:A>`, :g:`B <g1:B>` which are prime to one another : which is impossible.
 

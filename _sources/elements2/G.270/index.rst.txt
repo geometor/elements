@@ -24,20 +24,22 @@ G.270
 
    If two similar plane numbers by multiplying one another make some number, the product is square.
 
+.. signature:: theorem
+
+   | :fn:`similar_plane_numbers_ix_1 <G.270>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`)
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>` be two similar plane numbers, let :g:`A <g1:A>` by multiplying :g:`B <g1:B>` make :g:`C <g1:C>`
+   | **prove** :g:`C <g1:C>` is square
+
 .. picture:: g1.svg
    :alt: Proposition 1 Diagram
 
 .. step:: given
 
-   :g:`A <g1:A>`, :g:`B <g1:B>` be two similar plane numbers
+   :g:`A <g1:A>`, :g:`B <g1:B>` be two similar plane numbers, let :g:`A <g1:A>` by multiplying :g:`B <g1:B>` make :g:`C <g1:C>`
 
 .. step:: assert
 
-   Let :g:`A <g1:A>` by multiplying :g:`B <g1:B>` make :g:`C <g1:C>`
-
-.. step:: assert
-
-   For let :g:`A <g1:A>` by multiplying itself make :g:`D <g1:D>`.
+   Let :g:`A <g1:A>` by multiplying itself make :g:`D <g1:D>`.
 
 .. step:: assert
 
@@ -47,7 +49,7 @@ G.270
 
    Since then :g:`A <g1:A>` by multiplying itself has made :g:`D <g1:D>`, and by multiplying :g:`B <g1:B>` has made :g:`C <g1:C>`,
 
-.. step:: assert [G.217] <G.217>
+.. step:: assert ∵ number_multiplying_numbers <G.217>
 
    Therefore, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`D <g1:D>` to :g:`C <g1:C>`.
 
@@ -55,11 +57,11 @@ G.270
 
    And, since :g:`A <g1:A>`, :g:`B <g1:B>` are similar plane numbers,
 
-.. step:: assert [G.260] <G.260>
+.. step:: assert ∵ similar_plane_numbers <G.260>
 
    Therefore one mean proportional number falls between :g:`A <g1:A>`, :g:`B <g1:B>`.
 
-.. step:: assert [G.248] <G.248>
+.. step:: assert ∵ numbers_there_fall <G.248>
 
    But, if numbers fall between two numbers in continued proportion, as many as fall between them, so many also fall between those which have the same ratio.
 
@@ -71,7 +73,7 @@ G.270
 
    :g:`D <g1:D>` is square;
 
-.. step:: conclude [G.264] <G.264>
+.. step:: conclude ∵ numbers_continued_proportion <G.264>
 
    Therefore :g:`C <g1:C>` is also square.
 

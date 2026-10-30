@@ -11,7 +11,7 @@ G.73 — Code
 
 .. enunciation::
 
-   In obtuse-angled triangles the square on the side subtending the obtuse angle is greater than the squares on the sides con- taining the obtuse angle by twice the rectangle contained by one of the sides about the obtuse angle, namely that on which the
+   In obtuse-angled triangles the square on the side subtending the obtuse angle is greater than the squares on the sides containing the obtuse angle by twice the rectangle contained by one of the sides about the obtuse angle, namely that on which the perpendicular falls, and the straight line cut off outside by the perpendicular towards the obtuse angle.
 
 .. picture:: g1.svg
 

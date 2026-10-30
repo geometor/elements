@@ -24,12 +24,17 @@ G.397
 
    If from a straight line there be subtracted a straight line which is incommensurable in square with the whole and which with the whole makes the squares on them added together rational, but the rectangle contained by them medial, the remainder is irrational; and let it be called minor.
 
+.. signature:: theorem
+
+   | :fn:`straight_line_there_x_76 <G.397>`\ ()
+   | **prove** the remainder :g:`/ A C / <g1:/ A C />` is the irrational straight line called minor
+
 .. picture:: g1.svg
    :alt: Proposition 76 Diagram
 
-.. step:: assert [G.348] <G.348>
+.. step:: construct
 
-   For from :g:`/ A B / <g1:/ A B />` let there be subtracted :g:`/ B C / <g1:/ B C />` which is incommensurable in square with the whole and fulfils the given conditions.
+   :fn:`find_straight_lines_x_33 <G.348>`: From :g:`/ A B / <g1:/ A B />` let there be subtracted :g:`/ B C / <g1:/ B C />` which is incommensurable in square with the whole and fulfils the given conditions.
 
 .. step:: assert
 
@@ -39,7 +44,7 @@ G.397
 
    Therefore the squares on :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are incommensurable with twice the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`;
 
-.. step:: assert [G.68, G.329] <G.68, G.329>
+.. step:: assert ∵ square_of_difference, incommensurable_magnitudes_added <G.68, G.329>
 
    And, :term:`*convertendo* <convertendo>`, the squares on :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are incommensurable with the remainder, the square on :g:`/ A C / <g1:/ A C />`.
 

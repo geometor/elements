@@ -24,20 +24,22 @@ G.271
 
    If two numbers by multiplying one another make a square number, they are similar plane numbers.
 
+.. signature:: theorem
+
+   | :fn:`numbers_multiplying_make_ix_2 <G.271>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`)
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>` be two numbers, let :g:`A <g1:A>` by multiplying :g:`B <g1:B>` make the square number :g:`C <g1:C>`
+   | **prove** :g:`A <g1:A>`, :g:`B <g1:B>` are similar plane numbers
+
 .. picture:: g1.svg
    :alt: Proposition 2 Diagram
 
 .. step:: given
 
-   :g:`A <g1:A>`, :g:`B <g1:B>` be two numbers
+   :g:`A <g1:A>`, :g:`B <g1:B>` be two numbers, let :g:`A <g1:A>` by multiplying :g:`B <g1:B>` make the square number :g:`C <g1:C>`
 
 .. step:: assert
 
-   Let :g:`A <g1:A>` by multiplying :g:`B <g1:B>` make the square number :g:`C <g1:C>`
-
-.. step:: assert
-
-   For let :g:`A <g1:A>` by multiplying itself make :g:`D <g1:D>`
+   Let :g:`A <g1:A>` by multiplying itself make :g:`D <g1:D>`
 
 .. step:: assert
 
@@ -47,7 +49,7 @@ G.271
 
    Since :g:`A <g1:A>` by multiplying itself has made :g:`D <g1:D>`, and by multiplying :g:`B <g1:B>` has made :g:`C <g1:C>`,
 
-.. step:: assert [G.217] <G.217>
+.. step:: assert ∵ number_multiplying_numbers <G.217>
 
    Therefore, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`D <g1:D>` to :g:`C <g1:C>`.
 
@@ -59,7 +61,7 @@ G.271
 
    Therefore :g:`D <g1:D>`, :g:`C <g1:C>` are similar plane numbers.
 
-.. step:: assert [G.260] <G.260>
+.. step:: assert ∵ similar_plane_numbers <G.260>
 
    Therefore one mean proportional number falls between :g:`D <g1:D>`, :g:`C <g1:C>`.
 
@@ -67,11 +69,11 @@ G.271
 
    And, as :g:`D <g1:D>` is to :g:`C <g1:C>`, so is :g:`A <g1:A>` to :g:`B <g1:B>`;
 
-.. step:: assert [G.248] <G.248>
+.. step:: assert ∵ numbers_there_fall <G.248>
 
    Therefore one mean proportional number falls between :g:`A <g1:A>`, :g:`B <g1:B>` also.
 
-.. step:: assert [G.262] <G.262>
+.. step:: assert ∵ mean_proportional_number <G.262>
 
    But, if one mean proportional number fall between two numbers, they are similar plane numbers.
 

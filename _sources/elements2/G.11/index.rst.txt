@@ -24,16 +24,18 @@ G.11
 
    Triangles with two sides and the included angle equal are congruent (SAS).
 
+.. signature:: theorem
+
+   | :fn:`sas_congruence <G.11>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>`, :g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />`)
+   | **given** :g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>` be two triangles having the two sides :g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />` :eq:`equal <g1:/ A B / = g1:/ D E /; g1:/ A C / = g1:/ D F />` to the two sides :g:`/ D E / <g1:/ D E />`, :g:`/ D F / <g1:/ D F />` respectively, namely :g:`/ A B / <g1:/ A B />` to :g:`/ D E / <g1:/ D E />` and :g:`/ A C / <g1:/ A C />` to :g:`/ D F / <g1:/ D F />`, :g:`< B A C ) <g1:< B A C )>` :eq:`equal <g1:< B A C ) = g1:< E D F )>` to :g:`< E D F ) <g1:< E D F )>`
+   | **prove** the base :g:`/ B C / <g1:/ B C />` is also :eq:`equal <g1:/ B C / = g1:/ E F />` to the base :g:`/ E F / <g1:/ E F />`, :g:`< A B C > <g1:< A B C >>` will be :eq:`equal <g1:< A B C > = g1:< D E F >>` to :g:`< D E F > <g1:< D E F >>`, and the remaining angles will be :eq:`equal <g1:< A B C ) = g1:< D E F ); g1:< A C B ) = g1:< D F E )>` to the remaining angles respectively, namely those which the equal sides subtend, that is, :g:`< A B C ) <g1:< A B C )>` to :g:`< D E F ) <g1:< D E F )>`, and :g:`< A C B ) <g1:< A C B )>` to :g:`< D F E ) <g1:< D F E )>`
+
 .. picture:: g1.svg
    :alt: Proposition 4 figure
 
 .. step:: given
 
    :g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>` be two triangles having the two sides :g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />` :eq:`equal <g1:/ A B / = g1:/ D E /; g1:/ A C / = g1:/ D F />` to the two sides :g:`/ D E / <g1:/ D E />`, :g:`/ D F / <g1:/ D F />` respectively, namely :g:`/ A B / <g1:/ A B />` to :g:`/ D E / <g1:/ D E />` and :g:`/ A C / <g1:/ A C />` to :g:`/ D F / <g1:/ D F />`, :g:`< B A C ) <g1:< B A C )>` :eq:`equal <g1:< B A C ) = g1:< E D F )>` to :g:`< E D F ) <g1:< E D F )>`
-
-.. step:: assert
-
-   The base :g:`/ B C / <g1:/ B C />` is also :eq:`equal <g1:/ B C / = g1:/ E F />` to the base :g:`/ E F / <g1:/ E F />`, :g:`< A B C > <g1:< A B C >>` will be :eq:`equal <g1:< A B C > = g1:< D E F >>` to :g:`< D E F > <g1:< D E F >>`, and the remaining angles will be :eq:`equal <g1:< A B C ) = g1:< D E F ); g1:< A C B ) = g1:< D F E )>` to the remaining angles respectively, namely those which the equal sides subtend, that is, :g:`< A B C ) <g1:< A B C )>` to :g:`< D E F ) <g1:< D E F )>`, and :g:`< A C B ) <g1:< A C B )>` to :g:`< D F E ) <g1:< D F E )>`.
 
 .. step:: assert
 
@@ -51,9 +53,13 @@ G.11
 
    :g:`B <g1:B>` also coincided with :g:`E <g1:E>`
 
-.. step:: assert [G.10] <G.10>
+.. step:: assert
 
-   Hence the base :g:`/ B C / <g1:/ B C />` will coincide with the base :g:`/ E F / <g1:/ E F />` [For if, when :g:`B <g1:B>` coincides with :g:`E <g1:E>` and :g:`C <g1:C>` with :g:`F <g1:F>`, the base :g:`/ B C / <g1:/ B C />` does not coincide with the base :g:`/ E F / <g1:/ E F />`, two straight lines will enclose a space: which is impossible. Therefore the base :g:`/ B C / <g1:/ B C />` will coincide with :g:`/ E F / <g1:/ E F />`] and will be :eq:`equal <g1:/ B C / = g1:/ E F />` to it.
+   Hence the base :g:`/ B C / <g1:/ B C />` will coincide with the base :g:`/ E F / <g1:/ E F />` [For if, when :g:`B <g1:B>` coincides with :g:`E <g1:E>` and :g:`C <g1:C>` with :g:`F <g1:F>`, the base :g:`/ B C / <g1:/ B C />` does not coincide with the base :g:`/ E F / <g1:/ E F />`, two straight lines will enclose a space: which is impossible
+
+.. step:: assert ∵ coinciding_equal <G.10>
+
+   Therefore the base :g:`/ B C / <g1:/ B C />` will coincide with :g:`/ E F / <g1:/ E F />`] and will be :eq:`equal <g1:/ B C / = g1:/ E F />` to it.
 
 .. step:: assert
 
@@ -71,13 +77,9 @@ G.11
 
    :g:`< A B C ) <g1:< A B C )>` to :g:`< D E F ) <g1:< D E F )>`,
 
-.. step:: assert
-
-   And :g:`< A C B ) <g1:< A C B )>` to :g:`< D F E ) <g1:< D F E )>`.
-
 .. step:: conclude
 
-   Therefore etc.
+   And :g:`< A C B ) <g1:< A C B )>` to :g:`< D F E ) <g1:< D F E )>`.
 
 Dependency Graph
 ----------------

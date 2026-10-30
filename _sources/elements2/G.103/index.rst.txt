@@ -24,16 +24,17 @@ G.103
 
    Similar segments of circles on equal straight lines are equal.
 
+.. signature:: theorem
+
+   | :fn:`similar_segments_circles <G.103>`\ ()
+   | **prove** the segment :g:`( A E B ) <g1:( A E B )>` is :eq:`equal <g1:( A E B ) = g1:( C F D )>` to the segment :g:`( C F D ) <g1:( C F D )>`
+
 .. picture:: g1.svg
    :alt: Diagram for Proposition 24
 
 .. step:: assert
 
-   For let :g:`( A E B ) <g1:( A E B )>`, :g:`( C F D ) <g1:( C F D )>` be similar segments of circles on :eq:`equal <g1:/ A B / = g1:/ C D />` straight lines :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`
-
-.. step:: assert
-
-   The segment :g:`( A E B ) <g1:( A E B )>` is :eq:`equal <g1:( A E B ) = g1:( C F D )>` to the segment :g:`( C F D ) <g1:( C F D )>`.
+   Let :g:`( A E B ) <g1:( A E B )>`, :g:`( C F D ) <g1:( C F D )>` be similar segments of circles on :eq:`equal <g1:/ A B / = g1:/ C D />` straight lines :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`
 
 .. step:: assert
 
@@ -51,7 +52,7 @@ G.103
 
    If :g:`/ A B / <g1:/ A B />` coincide with :g:`/ C D / <g1:/ C D />` but the segment :g:`( A E B ) <g1:( A E B )>` do not coincide with :g:`( C F D ) <g1:( C F D )>`, it will either fall within it, or outside it
 
-.. step:: assert [G.85] <G.85>
+.. step:: assert ∵ circle_cut_circle <G.85>
 
    Or it will fall awry, as :g:`( C G D ) <g1:( C G D )>`, and a circle cuts a circle at more points than two: which is impossible.
 

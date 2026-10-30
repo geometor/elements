@@ -24,14 +24,19 @@ G.308
 
    If a number have its half odd, it is even-times odd only.
 
+.. signature:: theorem
+
+   | :fn:`number_half_odd <G.308>`\ ()
+   | **prove** :g:`A <g1:A>` is even-times odd only
+
 .. picture:: g1.svg
    :alt: Proposition 33 Diagram
 
 .. step:: assert
 
-   For let the number :g:`A <g1:A>` have its half odd
+   Let the number :g:`A <g1:A>` have its half odd
 
-.. step:: assert [G.307] <G.307>
+.. step:: assert ∵ even_times_odd_def <G.307>
 
    Now that it is even-times odd is manifest; for the half of it, being odd, measures it an even number of times.
 
@@ -43,7 +48,7 @@ G.308
 
    If :g:`A <g1:A>` is even-times even also,
 
-.. step:: assert [G.305] <G.305>
+.. step:: assert ∵ even_times_even_def <G.305>
 
    It will be measured by an even number according to an even number.
 

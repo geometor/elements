@@ -24,30 +24,31 @@ G.54
 
    If a parallelogram shares the same base with a triangle and lies in the same parallels, the parallelogram is double the triangle.
 
+.. signature:: theorem
+
+   | :fn:`parallelogram_double_triangle <G.54>`\ ()
+   | **prove** the parallelogram :g:`< A B C D > <g1:< A B C D >>` is double of :g:`< B E C > <g1:< B E C >>`
+
 .. picture:: g1.svg
    :alt: Folio 0352 Figure 1 - Proposition 41
 
 .. step:: assert
 
-   For let the parallelogram :g:`< A B C D > <g1:< A B C D >>` have the same base :g:`/ B C / <g1:/ B C />` with :g:`< E B C > <g1:< E B C >>`
-
-.. step:: assert
-
-   Let it be in the same parallels :g:`/ B C / <g1:/ B C />`, :g:`/ A E / <g1:/ A E />`
+   Let the parallelogram :g:`< A B C D > <g1:< A B C D >>` have the same base :g:`/ B C / <g1:/ B C />` with :g:`< E B C > <g1:< E B C >>`, and let it be in the same parallels :g:`/ B C / <g1:/ B C />`, :g:`/ A E / <g1:/ A E />`
 
 .. step:: construct
 
-   For let :g:`/ A C / <g1:/ A C />` be joined.
+   :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`C <g1:C>`) → :g:`/ A C / <g1:/ A C />`
 
 .. step:: assert
 
    Then :g:`< A B C > <g1:< A B C >>` is :eq:`equal <g1:< A B C > = g1:< E B C >>` to :g:`< E B C > <g1:< E B C >>`
 
-.. step:: assert [G.50] <G.50>
+.. step:: assert ∵ triangles_same_base <G.50>
 
    For it is on the same base :g:`/ B C / <g1:/ B C />` with it and in the same parallels :g:`/ B C / <g1:/ B C />`, :g:`/ A E / <g1:/ A E />`.
 
-.. step:: assert [G.47] <G.47>
+.. step:: assert ∵ parallelogram_properties <G.47>
 
    The parallelogram :g:`< A B C D > <g1:< A B C D >>` is double of :g:`< A B C > <g1:< A B C >>`; for the diameter :g:`/ A C / <g1:/ A C />` bisects it.
 

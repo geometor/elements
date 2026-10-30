@@ -24,18 +24,23 @@ G.302
 
    If an odd number by multiplying an odd number make some number, the product is odd.
 
+.. signature:: theorem
+
+   | :fn:`odd_number_multiplying_ix_29 <G.302>`\ ()
+   | **prove** :g:`C <g1:C>` is odd
+
 .. picture:: g1.svg
    :alt: Book IX, Proposition 29
 
 .. step:: assert
 
-   For let the odd number :g:`A <g1:A>` by multiplying the odd number :g:`B <g1:B>` make :g:`C <g1:C>`
+   Let the odd number :g:`A <g1:A>` by multiplying the odd number :g:`B <g1:B>` make :g:`C <g1:C>`
 
 .. step:: assert
 
    Since :g:`A <g1:A>` by multiplying :g:`B <g1:B>` has made :g:`C <g1:C>`,
 
-.. step:: assert [G.222] <G.222>
+.. step:: assert ∵ number_said_multiply_def <G.222>
 
    Therefore :g:`C <g1:C>` is made up of as many numbers equal to :g:`B <g1:B>` as there are units in :g:`A <g1:A>`.
 
@@ -47,7 +52,7 @@ G.302
 
    Therefore :g:`C <g1:C>` is made up of odd numbers the multitude of which is odd.
 
-.. step:: conclude [G.296] <G.296>
+.. step:: conclude ∵ many_odd_numbers_ix_23 <G.296>
 
    Thus :g:`C <g1:C>` is odd.
 

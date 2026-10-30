@@ -10,7 +10,7 @@
 :category: theorem, proof, plane-geometry, geometric-algebra
 :tags: book-ii, point, segment, line, angle, triangle, obtuse-angle, square, rectangle
 :dependencies: G.60, G.65
-:excerpt: In obtuse-angled triangles the square on the side subtending the obtuse angle is greater than the squares on the sides con- taining the obtuse angle by twice the rectangle contained by one of the sides about the obtuse angle, namely that on which the
+:excerpt: In obtuse-angled triangles the square on the side subtending the obtuse angle is greater than the squares on the sides containing the obtuse angle by twice the rectangle contained by one of the sides about the obtuse angle, namely that on which the perpendicular falls, and the straight line cut off outside by the perpendicular towards the obtuse angle.
 
 .. _G.73:
 .. _II.12:
@@ -22,28 +22,25 @@ G.73
 
 .. enunciation::
 
-   In obtuse-angled triangles the square on the side subtending the obtuse angle is greater than the squares on the sides con- taining the obtuse angle by twice the rectangle contained by one of the sides about the obtuse angle, namely that on which the
+   In obtuse-angled triangles the square on the side subtending the obtuse angle is greater than the squares on the sides containing the obtuse angle by twice the rectangle contained by one of the sides about the obtuse angle, namely that on which the perpendicular falls, and the straight line cut off outside by the perpendicular towards the obtuse angle.
 
-.. enunciation::
+.. signature:: theorem
 
-   Perpendicular falls, and the straight line cut off outside by the perpendicular towards the obtuse angle.
+   | :fn:`law_of_cosines_obtuse <G.73>`\ ()
+   | **prove** the square on :g:`/ B C / <g1:/ B C />` is greater than the squares on :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />` by twice the rectangle contained by :g:`/ C A / <g1:/ C A />`, :g:`/ A D / <g1:/ A D />`
 
 .. picture:: g1.svg
    :alt: 0418.g1
 
-.. step:: given
-
-   :g:`< A B C > <g1:< A B C >>` be an obtuse-angled triangle having :g:`< B A C ) <g1:< B A C )>` obtuse
-
 .. step:: construct
 
-   Let :g:`/ B D / <g1:/ B D />` be drawn from :g:`B <g1:B>` perpendicular to :g:`[ C A ] <g1:[ C A ]>` produced
+   Let :g:`< A B C > <g1:< A B C >>` be an obtuse-angled triangle having :g:`< B A C ) <g1:< B A C )>` obtuse, and let :g:`/ B D / <g1:/ B D />` be drawn from :g:`B <g1:B>` perpendicular to :g:`[ C A ] <g1:[ C A ]>` produced
 
-.. step:: assert [G.65] <G.65>
+.. step:: assert ∵ square_of_sum <G.65>
 
    Since :g:`/ C D / <g1:/ C D />` has been cut at random at :g:`A <g1:A>`, the square on :g:`/ D C / <g1:/ D C />` is equal to the squares on :g:`/ C A / <g1:/ C A />`, :g:`/ A D / <g1:/ A D />` and twice the rectangle contained by :g:`/ C A / <g1:/ C A />`, :g:`/ A D / <g1:/ A D />`.
 
-.. step:: assert
+.. step:: construct
 
    Let the square on :g:`/ D B / <g1:/ D B />` be added to each
 
@@ -51,11 +48,11 @@ G.73
 
    Therefore the squares on :g:`/ C D / <g1:/ C D />`, :g:`/ D B / <g1:/ D B />` are equal to the squares on :g:`/ C A / <g1:/ C A />`, :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` and twice the rectangle :g:`/ C A / <g1:/ C A />`, :g:`/ A D / <g1:/ A D />`.
 
-.. step:: assert [G.60] <G.60>
+.. step:: assert ∵ pythagorean_theorem <G.60>
 
    The square on :g:`/ C B / <g1:/ C B />` is equal to the squares on :g:`/ C D / <g1:/ C D />`, :g:`/ D B / <g1:/ D B />`, for the angle at :g:`< C D B ) <g1:< C D B )>` is right
 
-.. step:: assert [G.60] <G.60>
+.. step:: assert ∵ pythagorean_theorem <G.60>
 
    And the square on :g:`/ A B / <g1:/ A B />` is equal to the squares on :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />`
 
@@ -121,7 +118,7 @@ Dependency Graph
      "G.59" [label="G.59", tooltip="G.59 (I.46): Construct a square on a given segment.", fillcolor="#222244", URL="../G.59/index.html", target="_top"];
      "G.60" [label="G.60", tooltip="G.60 (I.47): In a right-angled triangle, the square on the hypotenuse equals the sum of the squares on the two legs (Pythagorean Theorem).", fillcolor="#222244", URL="../G.60/index.html", target="_top"];
      "G.65" [label="G.65", tooltip="G.65 (II.4): If a straight line be cut at random, the square on the whole is equal to the squares on the segments and twice the rectangle contained by the segments.", fillcolor="#222244", URL="../G.65/index.html", target="_top"];
-     "G.73" [label="G.73", tooltip="G.73 (II.12): In obtuse-angled triangles the square on the side subtending the obtuse angle is greater than the squares on the sides con- taining the obtuse angle by twice the rectangle containe...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.73" [label="G.73", tooltip="G.73 (II.12): In obtuse-angled triangles the square on the side subtending the obtuse angle is greater than the squares on the sides containing the obtuse angle by twice the rectangle contained ...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.5" -> "G.1";
      "G.8" -> "G.1";
      "G.9" -> "G.1";

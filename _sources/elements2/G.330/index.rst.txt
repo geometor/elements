@@ -10,7 +10,7 @@
 :category: theorem, proof, incommensurables, magnitudes
 :tags: book-x, point, segment, separando, parallelogram, square, commensurable, equality
 :dependencies: G.66, G.319, G.325, G.328
-:excerpt: If there be two unequal straight lines, and to the greater there be applied a parallelogram equal to the fourth part of the square on the less and deficient by a square figure, and if it divide it into parts which are commensurable in length, then the square on the greater is greater than the square on the less by the square on a straight line commensurable with the greater.
+:excerpt: If there be two unequal straight lines, and to the greater there be applied a parallelogram equal to the fourth part of the square on the less and deficient by a square figure, and if it divide it into parts which are commensurable in length, then the square on the greater is greater than the square on the less by the square on a straight line commensurable with the greater. And, if the square on the greater be greater than the square on the less by the square on a straight line commensurable with the greater, and if there be applied to the greater a parallelogram equal to the fourth part of the square on the less and deficient by a square figure, it will divide it into parts which are commensurable in length.
 
 .. _G.330:
 .. _X.17:
@@ -22,34 +22,27 @@ G.330
 
 .. enunciation::
 
-   If there be two unequal straight lines, and to the greater there be applied a parallelogram equal to the fourth part of the square on the less and deficient by a square figure, and if it divide it into parts which are commensurable in length, then the square on the greater is greater than the square on the less by the square on a straight line commensurable with the greater.
+   If there be two unequal straight lines, and to the greater there be applied a parallelogram equal to the fourth part of the square on the less and deficient by a square figure, and if it divide it into parts which are commensurable in length, then the square on the greater is greater than the square on the less by the square on a straight line commensurable with the greater. And, if the square on the greater be greater than the square on the less by the square on a straight line commensurable with the greater, and if there be applied to the greater a parallelogram equal to the fourth part of the square on the less and deficient by a square figure, it will divide it into parts which are commensurable in length.
 
-.. enunciation::
+.. signature:: theorem
 
-   And, if the square on the greater be greater than the square on the less by the square on a straight line commensurable with
-
-.. enunciation::
-
-   The greater, and if there be applied to the greater a parallelogram equal to the fourth part of the square on the less and deficient by a square figure, it will divide it into parts which are commensurable in length.
+   | :fn:`there_unequal_straight <G.330>`\ ()
+   | **prove** the square on :g:`/ B C / <g1:/ B C />` is greater than the square on :g:`A <g1:A>` by the square on a straight line commensurable with :g:`/ B C / <g1:/ B C />`
 
 .. picture:: g1.svg
    :alt: Proposition 17
 
-.. step:: given
+.. step:: construct
 
-   :g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />` be two unequal straight lines, of which :g:`/ B C / <g1:/ B C />` is the greater
+   Let :g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />` be two unequal straight lines, of which :g:`/ B C / <g1:/ B C />` is the greater, and let there be applied to :g:`/ B C / <g1:/ B C />` a parallelogram equal to the fourth part of the square on the less, :g:`A <g1:A>`, that is, equal to the square on the half of :g:`A <g1:A>`, and deficient by a square figure
 
-.. step:: construct [cf. Lemma] <cf. Lemma>
+.. step:: assert ∵ cf. Lemma <cf. Lemma>
 
-   Let there be applied to :g:`/ B C / <g1:/ B C />` a parallelogram equal to the fourth part of the square on the less, :g:`A <g1:A>`, that is, equal to the square on the half of :g:`A <g1:A>`, and deficient by a square figure. Let this be the rectangle :g:`/ B D / <g1:/ B D />`, :g:`/ D C / <g1:/ D C />`, and let :g:`/ B D / <g1:/ B D />` be commensurable in length with :g:`/ D C / <g1:/ D C />`
-
-.. step:: assert
-
-   For let :g:`/ B C / <g1:/ B C />` be :eq:`bisected <g1:/ B E / = g1:/ E C />` at :g:`E <g1:E>`
+   Let this be the rectangle :g:`/ B D / <g1:/ B D />`, :g:`/ D C / <g1:/ D C />`, and let :g:`/ B D / <g1:/ B D />` be commensurable in length with :g:`/ D C / <g1:/ D C />`
 
 .. step:: construct
 
-   Let :g:`/ F E / <g1:/ F E />` be made :eq:`equal <g1:/ F E / = g1:/ E D />` to :g:`/ E D / <g1:/ E D />`.
+   Let :g:`/ B C / <g1:/ B C />` be :eq:`bisected <g1:/ B E / = g1:/ E C />` at :g:`E <g1:E>`, and let :g:`/ F E / <g1:/ F E />` be made :eq:`equal <g1:/ F E / = g1:/ E D />` to :g:`/ E D / <g1:/ E D />`.
 
 .. step:: assert
 
@@ -59,7 +52,7 @@ G.330
 
    And, since :g:`/ B C / <g1:/ B C />` has been cut into :eq:`equal <g1:/ B E / = g1:/ E C />` parts at :g:`E <g1:E>`, and into unequal parts at :g:`D <g1:D>`,
 
-.. step:: assert [G.66] <G.66>
+.. step:: assert ∵ difference_of_squares_equal_unequal <G.66>
 
    Therefore the rectangle contained by :g:`/ B D / <g1:/ B D />`, :g:`/ D C / <g1:/ D C />`, together with the square on :g:`/ E D / <g1:/ E D />`, is equal to the square on :g:`/ E C / <g1:/ E C />`.
 
@@ -91,15 +84,15 @@ G.330
 
    Since :g:`/ B D / <g1:/ B D />` is commensurable in length with :g:`/ D C / <g1:/ D C />`,
 
-.. step:: assert [G.328] <G.328>
+.. step:: assert ∵ commensurable_magnitudes_added <G.328>
 
    Therefore :g:`/ B C / <g1:/ B C />` is also commensurable in length with :g:`/ D C / <g1:/ D C />`.
 
-.. step:: assert [G.319] <G.319>
+.. step:: assert ∵ magnitudes_ratio_number <G.319>
 
    :g:`/ D C / <g1:/ D C />` is commensurable in length with :g:`/ D C / <g1:/ D C />`, :g:`/ B F / <g1:/ B F />`, for :g:`/ D C / <g1:/ D C />` is :eq:`equal <g1:/ D C / = g1:/ B F />` to :g:`/ B F / <g1:/ B F />`.
 
-.. step:: assert [G.325, G.328] <G.325, G.328>
+.. step:: assert ∵ magnitudes_commensurable_magnitude, commensurable_magnitudes_added <G.325, G.328>
 
    Therefore :g:`/ B C / <g1:/ B C />` is also commensurable in length with :g:`/ B F / <g1:/ B F />`, :g:`/ D C / <g1:/ D C />`, so that :g:`/ B C / <g1:/ B C />` is also commensurable in length with the remainder :g:`/ D F / <g1:/ D F />`; therefore the square on :g:`/ B C / <g1:/ B C />` is greater than the square on :g:`A <g1:A>` by the square on a straight line commensurable with :g:`/ B C / <g1:/ B C />`.
 
@@ -123,15 +116,15 @@ G.330
 
    The square on :g:`/ B C / <g1:/ B C />` is greater than the square on :g:`A <g1:A>` by the square on a straight line commensurable with :g:`/ B C / <g1:/ B C />`.
 
-.. step:: assert [G.328] <G.328>
+.. step:: assert ∵ commensurable_magnitudes_added <G.328>
 
    Therefore :g:`/ B C / <g1:/ B C />` is commensurable in length with :g:`/ D F / <g1:/ D F />`, so that :g:`/ B C / <g1:/ B C />` is also commensurable in length with the remainder, the sum of :g:`/ B F / <g1:/ B F />`, :g:`/ D C / <g1:/ D C />`.
 
-.. step:: assert [G.319] <G.319>
+.. step:: assert ∵ magnitudes_ratio_number <G.319>
 
    The sum of :g:`/ B F / <g1:/ B F />`, :g:`/ D C / <g1:/ D C />` is commensurable with :g:`/ D C / <g1:/ D C />`,
 
-.. step:: conclude [G.325, G.328] <G.325, G.328>
+.. step:: conclude ∵ magnitudes_commensurable_magnitude, commensurable_magnitudes_added <G.325, G.328>
 
    So that :g:`/ B C / <g1:/ B C />` is also commensurable in length with :g:`/ D C / <g1:/ D C />`; and therefore, :term:`*separando* <separando>`, :g:`/ B D / <g1:/ B D />` is commensurable in length with :g:`/ D C / <g1:/ D C />`.
 

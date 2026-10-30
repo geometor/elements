@@ -24,18 +24,20 @@ G.261
 
    Between two similar solid numbers there fall two mean proportional numbers; and the solid number has to the similar solid number the ratio triplicate of that which the corresponding side has to the corresponding side.
 
+.. signature:: theorem
+
+   | :fn:`similar_solid_numbers <G.261>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`)
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>` be two similar solid numbers, let :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`E <g1:E>` be the sides of :g:`A <g1:A>`, :g:`F <g1:F>`, :g:`G <g1:G>`, :g:`H <g1:H>` of :g:`B <g1:B>`
+   | **prove** between :g:`A <g1:A>`, :g:`B <g1:B>` there fall two mean proportional numbers, and :g:`A <g1:A>` has to :g:`B <g1:B>` the ratio triplicate of that which :g:`C <g1:C>` has to :g:`F <g1:F>`, :g:`D <g1:D>` to :g:`G <g1:G>`, and also :g:`E <g1:E>` to :g:`H <g1:H>`; :g:`A <g1:A>` also has to :g:`B <g1:B>` the ratio triplicate of that which the corresponding side has to the corresponding side, that is, of the ratio which the number :g:`C <g1:C>` has to :g:`F <g1:F>`, or :g:`D <g1:D>` to :g:`G <g1:G>`, and also :g:`E <g1:E>` to :g:`H <g1:H>`
+
 .. picture:: g1.svg
    :alt: Book VIII, Proposition 19
 
 .. step:: given
 
-   :g:`A <g1:A>`, :g:`B <g1:B>` be two similar solid numbers
+   :g:`A <g1:A>`, :g:`B <g1:B>` be two similar solid numbers, let :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`E <g1:E>` be the sides of :g:`A <g1:A>`, :g:`F <g1:F>`, :g:`G <g1:G>`, :g:`H <g1:H>` of :g:`B <g1:B>`
 
-.. step:: assert
-
-   Let :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`E <g1:E>` be the sides of :g:`A <g1:A>`, and :g:`F <g1:F>`, :g:`G <g1:G>`, :g:`H <g1:H>` of :g:`B <g1:B>`.
-
-.. step:: assert [G.259] <G.259>
+.. step:: assert ∵ similar_plane_solid_def <G.259>
 
    Since similar solid numbers are those which have their sides proportional.
 
@@ -45,17 +47,13 @@ G.261
 
 .. step:: assert
 
-   For let :g:`C <g1:C>` by multiplying :g:`D <g1:D>` make :g:`K <g1:K>`
+   Let :g:`C <g1:C>` by multiplying :g:`D <g1:D>` make :g:`K <g1:K>`, and let :g:`F <g1:F>` by multiplying :g:`G <g1:G>` make :g:`L <g1:L>`.
 
-.. step:: assert
-
-   Let :g:`F <g1:F>` by multiplying :g:`G <g1:G>` make :g:`L <g1:L>`.
-
-.. step:: assert [G.259] <G.259>
+.. step:: assert ∵ similar_plane_solid_def <G.259>
 
    Since :g:`C <g1:C>`, :g:`D <g1:D>` are in the same ratio with :g:`F <g1:F>`, :g:`G <g1:G>`, and :g:`K <g1:K>` is the product of :g:`C <g1:C>`, :g:`D <g1:D>`, and :g:`L <g1:L>` the product of :g:`F <g1:F>`, :g:`G <g1:G>`, :g:`K <g1:K>`, :g:`L <g1:L>` are similar plane numbers.
 
-.. step:: assert [G.260] <G.260>
+.. step:: assert ∵ similar_plane_numbers <G.260>
 
    Therefore between :g:`K <g1:K>`, :g:`L <g1:L>` there is one mean proportional number.
 
@@ -63,7 +61,7 @@ G.261
 
    Let it be :g:`M <g1:M>`.
 
-.. step:: assert [G.260] <G.260>
+.. step:: assert ∵ similar_plane_numbers <G.260>
 
    Therefore :g:`M <g1:M>` is the product of :g:`D <g1:D>`, :g:`F <g1:F>`, as was proved in the theorem preceding this.
 
@@ -71,7 +69,7 @@ G.261
 
    Since :g:`D <g1:D>` by multiplying :g:`C <g1:C>` has made :g:`K <g1:K>`, and by multiplying :g:`F <g1:F>` has made :g:`M <g1:M>`,
 
-.. step:: assert [G.217] <G.217>
+.. step:: assert ∵ number_multiplying_numbers <G.217>
 
    Therefore, as :g:`C <g1:C>` is to :g:`F <g1:F>`, so is :g:`K <g1:K>` to :g:`M <g1:M>`.
 
@@ -87,7 +85,7 @@ G.261
 
    Since, as :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`F <g1:F>` to :g:`G <g1:G>`,
 
-.. step:: assert [G.213] <G.213>
+.. step:: assert ∵ numbers_proportional_proportional <G.213>
 
    Alternately therefore, as :g:`C <g1:C>` is to :g:`F <g1:F>`, so is :g:`D <g1:D>` to :g:`G <g1:G>`.
 
@@ -135,7 +133,7 @@ G.261
 
    Since :g:`E <g1:E>` by multiplying :g:`K <g1:K>` has made :g:`A <g1:A>`, and further also by multiplying :g:`M <g1:M>` has made :g:`N <g1:N>`,
 
-.. step:: assert [G.217] <G.217>
+.. step:: assert ∵ number_multiplying_numbers <G.217>
 
    Therefore, as :g:`K <g1:K>` is to :g:`M <g1:M>`, so is :g:`A <g1:A>` to :g:`N <g1:N>`.
 
@@ -151,7 +149,7 @@ G.261
 
    Since :g:`E <g1:E>`, :g:`H <g1:H>` by multiplying :g:`M <g1:M>` have made :g:`N <g1:N>`, :g:`O <g1:O>` respectively,
 
-.. step:: assert [G.218] <G.218>
+.. step:: assert ∵ numbers_multiplying_number <G.218>
 
    Therefore, as :g:`E <g1:E>` is to :g:`H <g1:H>`, so is :g:`N <g1:N>` to :g:`O <g1:O>`.
 
@@ -167,7 +165,7 @@ G.261
 
    Since :g:`H <g1:H>` by multiplying :g:`M <g1:M>` has made :g:`O <g1:O>`, and further also by multiplying :g:`L <g1:L>` has made :g:`B <g1:B>`,
 
-.. step:: assert [G.217] <G.217>
+.. step:: assert ∵ number_multiplying_numbers <G.217>
 
    Therefore, as :g:`M <g1:M>` is to :g:`L <g1:L>`, so is :g:`O <g1:O>` to :g:`B <g1:B>`.
 
@@ -187,7 +185,7 @@ G.261
 
    Since :g:`A <g1:A>`, :g:`N <g1:N>`, :g:`O <g1:O>`, :g:`B <g1:B>` are four numbers in continued proportion,
 
-.. step:: assert [G.252] <G.252>
+.. step:: assert ∵ magnitudes_proportional_said_def_v_def_10 <G.252>
 
    Therefore :g:`A <g1:A>` has to :g:`B <g1:B>` the ratio triplicate of that which :g:`A <g1:A>` has to :g:`N <g1:N>`.
 
