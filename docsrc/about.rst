@@ -1,15 +1,10 @@
 :navigation: footer
-:order: 1
+:order: 10
 
-.. _about:
-
-
+=====
 about
 =====
 
+``geometor.elements`` is the symbolic dependency mapping and G-Index compilation layer of the **GEOMETOR** Euclid project, created and maintained by **phi ARCHITECT**.
 
-I have always been deeply interested in architecture and have had the privilege of practicing it in many different domains. 
-
-Architecture is order. 
-
-.. It can be in the material world. 
+It bridges the historical scholarship of ``geometor.euclid`` with the symbolic constructive engine of ``geometor.model``, sequencing Euclid's *Elements* into a computable genealogical graph (``G.1``..``G.N``).
