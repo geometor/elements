@@ -23,6 +23,10 @@ G.294
 
    An:term:`**odd number** <odd-number>` is that which is not divisible into two equal parts, or that which differs by an unit from an even number.
 
+.. signature:: def
+
+   | :fn:`odd_number_divisible_def <G.294>`
+
 Required for
 ------------
 

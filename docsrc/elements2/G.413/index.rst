@@ -24,6 +24,12 @@ G.413
 
    Find the fourth apotome.
 
+.. signature:: problem
+
+   | :fn:`find_apotome_x_88 <G.413>`\ (:g:`A <g1:A>`, :g:`/ B G / <g1:/ B G />`) → :g:`/ B C / <g1:/ B C />`
+   | **given** a rational straight line :g:`A <g1:A>` be set out, :g:`/ B G / <g1:/ B G />` commensurable in length with it
+   | **construct** :g:`/ B C / <g1:/ B C />` is a fourth apotome
+
 .. picture:: g1.svg
    :alt: Proposition 88
 
@@ -39,11 +45,11 @@ G.413
 
    Let two numbers :g:`/ D F / <g1:/ D F />`, :g:`/ F E / <g1:/ F E />` be set out such that the whole :g:`/ D E / <g1:/ D E />` has not to either of the numbers :g:`/ D F / <g1:/ D F />`, :g:`/ E F / <g1:/ E F />` the ratio which a square number has to a square number.
 
-.. step:: assert [G.319] <G.319>
+.. step:: assert ∵ magnitudes_ratio_number <G.319>
 
    Let it be contrived that, as :g:`/ D E / <g1:/ D E />` is to :g:`/ E F / <g1:/ E F />`, so is the square on :g:`/ B G / <g1:/ B G />` to the square on :g:`/ G C / <g1:/ G C />`
 
-.. step:: assert [G.319] <G.319>
+.. step:: assert ∵ magnitudes_ratio_number <G.319>
 
    Therefore the square on :g:`/ B G / <g1:/ B G />` is commensurable with the square on :g:`/ G C / <g1:/ G C />`.
 
@@ -59,7 +65,7 @@ G.413
 
    Since :g:`/ D E / <g1:/ D E />` has not to :g:`/ E F / <g1:/ E F />` the ratio which a square number has to a square number,
 
-.. step:: assert [G.322] <G.322>
+.. step:: assert ∵ squares_straight_lines <G.322>
 
    Therefore neither has the square on :g:`/ B G / <g1:/ B G />` to the square on :g:`/ G C / <g1:/ G C />` the ratio which a square number has to a square number; therefore :g:`/ B G / <g1:/ B G />` is incommensurable in length with :g:`/ G C / <g1:/ G C />`.
 
@@ -67,7 +73,7 @@ G.413
 
    Both are rational;
 
-.. step:: assert [G.394] <G.394>
+.. step:: assert ∵ rational_straight_line <G.394>
 
    Therefore :g:`/ B G / <g1:/ B G />`, :g:`/ G C / <g1:/ G C />` are rational straight lines commensurable in square only; therefore :g:`/ B C / <g1:/ B C />` is an apotome.
 
@@ -79,7 +85,7 @@ G.413
 
    Since then, as :g:`/ D E / <g1:/ D E />` is to :g:`/ E F / <g1:/ E F />`, so is the square on :g:`/ B G / <g1:/ B G />` to the square on :g:`/ G C / <g1:/ G C />`,
 
-.. step:: assert [G.156] <G.156>
+.. step:: assert ∵ whole_whole_part <G.156>
 
    Therefore also, :term:`*convertendo* <convertendo>`, as :g:`/ E D / <g1:/ E D />` is to :g:`/ D F / <g1:/ D F />`, so is the square on :g:`/ G B / <g1:/ G B />` to the square on :g:`H <g1:H>`.
 
@@ -87,7 +93,7 @@ G.413
 
    :g:`/ E D / <g1:/ E D />` has not to :g:`/ D F / <g1:/ D F />` the ratio which a square number has to a square number;
 
-.. step:: assert [G.322] <G.322>
+.. step:: assert ∵ squares_straight_lines <G.322>
 
    Therefore neither has the square on :g:`/ G B / <g1:/ G B />` to the square on :g:`H <g1:H>` the ratio which a square number has to a square number; therefore :g:`/ B G / <g1:/ B G />` is incommensurable in length with :g:`H <g1:H>`.
 
@@ -103,7 +109,7 @@ G.413
 
    The whole :g:`/ B G / <g1:/ B G />` is commensurable in length with the rational straight line :g:`A <g1:A>` set out.
 
-.. step:: conclude [G.412] <G.412>
+.. step:: conclude ∵ again_square_whole_def <G.412>
 
    Therefore :g:`/ B C / <g1:/ B C />` is a fourth apotome.
 

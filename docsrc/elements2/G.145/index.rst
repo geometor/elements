@@ -24,6 +24,12 @@ G.145
 
    Of unequal magnitudes, the greater has to the same a greater ratio than the less has; and the same has to the less a greater ratio than it has to the greater.
 
+.. signature:: theorem
+
+   | :fn:`unequal_magnitudes_greater <G.145>`\ (:g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`)
+   | **given** :g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>` be unequal magnitudes, let :g:`/ A B / <g1:/ A B />` be greater
+   | **prove** :g:`/ A B / <g1:/ A B />` has to :g:`D <g1:D>` a greater ratio than :g:`C <g1:C>` has to :g:`D <g1:D>`, and :g:`D <g1:D>` has to :g:`C <g1:C>` a greater ratio than it has to :g:`/ A B / <g1:/ A B />`
+
 .. picture:: g1.svg
    :alt: Proposition 8 Diagram (Case 1)
 
@@ -32,11 +38,7 @@ G.145
 
 .. step:: given
 
-   :g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>` be unequal magnitudes
-
-.. step:: assert
-
-   Let :g:`/ A B / <g1:/ A B />` be greater
+   :g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>` be unequal magnitudes, let :g:`/ A B / <g1:/ A B />` be greater
 
 .. step:: assert
 
@@ -46,7 +48,7 @@ G.145
 
    Since :g:`/ A B / <g1:/ A B />` is greater than :g:`C <g1:C>`, let :g:`/ E B / <g1:/ E B />` be made :eq:`equal <g1:/ E B / = g1:C>` to :g:`C <g1:C>`
 
-.. step:: assert [G.143] <G.143>
+.. step:: assert ∵ magnitudes_said_ratio_def_v_def_4 <G.143>
 
    Then the less of the magnitudes :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />`, if multiplied, will sometime be greater than :g:`D <g1:D>`.
 
@@ -60,11 +62,7 @@ G.145
 
 .. step:: assert
 
-   Let :g:`/ A E / <g1:/ A E />` be multiplied
-
-.. step:: assert
-
-   Let :g:`/ F G / <g1:/ F G />` be a multiple of it which is greater than :g:`D <g1:D>`
+   Let :g:`/ A E / <g1:/ A E />` be multiplied, and let :g:`/ F G / <g1:/ F G />` be a multiple of it which is greater than :g:`D <g1:D>`
 
 .. step:: construct
 
@@ -72,7 +70,11 @@ G.145
 
 .. step:: construct
 
-   And let :g:`L <g1:L>` be taken double of :g:`D <g1:D>`, :g:`M <g1:M>` triple of it, and successive multiples increasing by one, until what is taken is a multiple of :g:`D <g1:D>` and the first that is greater than :g:`K <g1:K>`. Let it be taken
+   And let :g:`L <g1:L>` be taken double of :g:`D <g1:D>`, :g:`M <g1:M>` triple of it, and successive multiples increasing by one, until what is taken is a multiple of :g:`D <g1:D>` and the first that is greater than :g:`K <g1:K>`
+
+.. step:: construct
+
+   Let it be taken
 
 .. step:: assert
 
@@ -86,7 +88,7 @@ G.145
 
    And, since :g:`/ F G / <g1:/ F G />` is the same multiple of :g:`/ A E / <g1:/ A E />` that :g:`/ G H / <g1:/ G H />` is of :g:`/ E B / <g1:/ E B />`,
 
-.. step:: assert [G.135] <G.135>
+.. step:: assert ∵ there_number_magnitudes <G.135>
 
    Therefore :g:`/ F G / <g1:/ F G />` is the same multiple of :g:`/ A E / <g1:/ A E />` that :g:`/ F H / <g1:/ F H />` is of :g:`/ A B / <g1:/ A B />`.
 
@@ -142,7 +144,7 @@ G.145
 
    :g:`/ F H / <g1:/ F H />`, :g:`K <g1:K>` are equimultiples of :g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`, while :g:`N <g1:N>` is another, chance, multiple of :g:`D <g1:D>`
 
-.. step:: assert [G.144] <G.144>
+.. step:: assert ∵ equimultiples_multiple_magnitude_def <G.144>
 
    Therefore :g:`/ A B / <g1:/ A B />` has to :g:`D <g1:D>` a greater ratio than :g:`C <g1:C>` has to :g:`D <g1:D>`.
 
@@ -158,7 +160,7 @@ G.145
 
    :g:`N <g1:N>` is a multiple of :g:`D <g1:D>`, while :g:`/ F H / <g1:/ F H />`, :g:`K <g1:K>` are other, chance, equimultiples of :g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`
 
-.. step:: assert [G.144] <G.144>
+.. step:: assert ∵ equimultiples_multiple_magnitude_def <G.144>
 
    Therefore :g:`D <g1:D>` has to :g:`C <g1:C>` a greater ratio than :g:`D <g1:D>` has to :g:`/ A B / <g1:/ A B />`.
 
@@ -170,17 +172,13 @@ G.145
 
    Let :g:`/ A E / <g2:/ A E />` be greater than :g:`/ E B / <g2:/ E B />`.
 
-.. step:: assert [G.143] <G.143>
+.. step:: assert ∵ magnitudes_said_ratio_def_v_def_4 <G.143>
 
    Then the less, :g:`/ E B / <g2:/ E B />`, if multiplied, will sometime be greater than :g:`D <g2:D>`.
 
 .. step:: assert
 
-   Let it be multiplied
-
-.. step:: assert
-
-   Let :g:`/ G H / <g2:/ G H />` be a multiple of :g:`/ E B / <g2:/ E B />` and greater than :g:`D <g2:D>`
+   Let it be multiplied, and let :g:`/ G H / <g2:/ G H />` be a multiple of :g:`/ E B / <g2:/ E B />` and greater than :g:`D <g2:D>`
 
 .. step:: construct
 

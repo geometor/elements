@@ -24,12 +24,21 @@ G.209
 
    If a number be parts of a number, and another be the same parts of another, alternately also, whatever parts or part the first is of the third, the same parts or the same part will the second also be of the fourth.
 
+.. signature:: theorem
+
+   | :fn:`number_parts_number_vii_10 <G.209>`\ ()
+   | **prove** So that, in addition, whatever parts or part :g:`/ A B / <g1:/ A B />` is of :g:`/ D E / <g1:/ D E />`, the same parts also, or the same part, is :g:`C <g1:C>` of :g:`F <g1:F>`
+
 .. picture:: g1.svg
    :alt: Book VII, Proposition 10
 
 .. step:: assert
 
-   For let the number :g:`/ A B / <g1:/ A B />` be parts of the number :g:`C <g1:C>`, and another, :g:`/ D E / <g1:/ D E />`, the same parts of another, :g:`F <g1:F>`
+   Let the number :g:`/ A B / <g1:/ A B />` be parts of the number :g:`C <g1:C>`, and another, :g:`/ D E / <g1:/ D E />`, the same parts of another, :g:`F <g1:F>`
+
+.. step:: assert
+
+   I say that, alternately also, whatever parts or part :g:`/ A B / <g1:/ A B />` is of :g:`/ D E / <g1:/ D E />`, the same parts or the same part is :g:`C <g1:C>` of :g:`F <g1:F>` also.
 
 .. step:: assert
 
@@ -51,7 +60,7 @@ G.209
 
    Now since, whatever part :g:`/ A G / <g1:/ A G />` is of :g:`C <g1:C>`, the same part also is :g:`/ D H / <g1:/ D H />` of :g:`F <g1:F>`,
 
-.. step:: assert [G.208] <G.208>
+.. step:: assert ∵ number_part_number_vii_9 <G.208>
 
    Alternately also, whatever part or parts :g:`/ A G / <g1:/ A G />` is of :g:`/ D H / <g1:/ D H />`, the same part or the same parts is :g:`C <g1:C>` of :g:`F <g1:F>` also.
 
@@ -63,7 +72,7 @@ G.209
 
    Whatever part or parts :g:`/ G B / <g1:/ G B />` is of :g:`/ H E / <g1:/ H E />`, the same part or the same parts is :g:`C <g1:C>` of :g:`F <g1:F>` also;
 
-.. step:: conclude [G.204, G.205] <G.204, G.205>
+.. step:: conclude ∵ number_part_number, number_parts_number <G.204, G.205>
 
    So that, in addition, whatever parts or part :g:`/ A B / <g1:/ A B />` is of :g:`/ D E / <g1:/ D E />`, the same parts also, or the same part, is :g:`C <g1:C>` of :g:`F <g1:F>`.
 

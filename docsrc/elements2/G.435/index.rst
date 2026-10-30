@@ -24,18 +24,23 @@ G.435
 
    If from a rational area a medial area be subtracted, the “side” of the remaining area becomes one of two irrational straight lines, either an apotome or a minor straight line.
 
+.. signature:: theorem
+
+   | :fn:`rational_area_medial <G.435>`\ ()
+   | **prove** the “side” of the remainder :g:`< E C > <g1:< E C >>` becomes one of two irrational straight lines, either an apotome or a minor straight line
+
 .. picture:: g1.svg
    :alt: Proposition 108 diagrams
 
-.. step:: assert
+.. step:: construct
 
-   For from the rational area :g:`< B C > <g1:< B C >>` let the medial area :g:`< B D > <g1:< B D >>` be subtracted
+   From the rational area :g:`< B C > <g1:< B C >>` let the medial area :g:`< B D > <g1:< B D >>` be subtracted
 
 .. step:: construct
 
-   For let a rational straight line :g:`/ F G / <g1:/ F G />` be set out, to :g:`/ F G / <g1:/ F G />` let there be applied the rectangular parallelogram :g:`< G H > <g1:< G H >>` :eq:`equal <g1:< G H > = g1:< B C >>` to :g:`< B C > <g1:< B C >>`
+   Let a rational straight line :g:`/ F G / <g1:/ F G />` be set out, to :g:`/ F G / <g1:/ F G />` let there be applied the rectangular parallelogram :g:`< G H > <g1:< G H >>` :eq:`equal <g1:< G H > = g1:< B C >>` to :g:`< B C > <g1:< B C >>`
 
-.. step:: assert
+.. step:: construct
 
    Let :g:`< G K > <g1:< G K >>` :eq:`equal <g1:< G K > = g1:< D B >>` to :g:`< D B > <g1:< D B >>` be subtracted
 
@@ -55,11 +60,11 @@ G.435
 
    They are applied to the rational straight line :g:`/ F G / <g1:/ F G />`;
 
-.. step:: assert [G.334, G.336, G.326] <G.334, G.336, G.326>
+.. step:: assert ∵ rational_area_applied, square_medial_straight, magnitudes_commensurable_incommensurable <G.334, G.336, G.326>
 
    Therefore :g:`/ F H / <g1:/ F H />` is rational and commensurable in length with :g:`/ F G / <g1:/ F G />`, while :g:`/ F K / <g1:/ F K />` is rational and incommensurable in length with :g:`/ F G / <g1:/ F G />`; therefore :g:`/ F H / <g1:/ F H />` is incommensurable in length with :g:`/ F K / <g1:/ F K />`.
 
-.. step:: assert [G.394] <G.394>
+.. step:: assert ∵ rational_straight_line <G.394>
 
    Therefore :g:`/ F H / <g1:/ F H />`, :g:`/ F K / <g1:/ F K />` are rational straight lines commensurable in square only; therefore :g:`/ K H / <g1:/ K H />` is an apotome, and :g:`/ K F / <g1:/ K F />` the annex to it.
 
@@ -75,11 +80,11 @@ G.435
 
    Now the whole :g:`/ H F / <g1:/ H F />` is commensurable in length with the rational straight line :g:`/ F G / <g1:/ F G />` set out;
 
-.. step:: assert [G.406] <G.406>
+.. step:: assert ∵ rational_straight_line_def_x_def_iii_1 <G.406>
 
    Therefore :g:`/ K H / <g1:/ K H />` is a first apotome.
 
-.. step:: assert [G.418] <G.418>
+.. step:: assert ∵ area_contained_rational_x_91 <G.418>
 
    The “side” of the rectangle contained by a rational straight line and a first apotome is an apotome.
 
@@ -91,11 +96,11 @@ G.435
 
    But, if the square on :g:`/ H F / <g1:/ H F />` is greater than the square on :g:`/ F K / <g1:/ F K />` by the square on a straight line incommensurable with :g:`/ H F / <g1:/ H F />`, while the whole :g:`/ F H / <g1:/ F H />` is commensurable in length with the rational straight line :g:`/ F G / <g1:/ F G />` set out,
 
-.. step:: assert [G.412] <G.412>
+.. step:: assert ∵ again_square_whole_def <G.412>
 
    :g:`/ K H / <g1:/ K H />` is a fourth apotome.
 
-.. step:: conclude [G.421] <G.421>
+.. step:: conclude ∵ area_contained_rational_x_94 <G.421>
 
    The “side” of the rectangle contained by a rational straight line and a fourth apotome is minor.
 

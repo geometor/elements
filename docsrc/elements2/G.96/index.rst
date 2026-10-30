@@ -24,12 +24,17 @@ G.96
 
    If a straight line touch a circle, and a straight line be joined from the centre to the point of contact, the straight line so joined is perpendicular to the tangent.
 
+.. signature:: theorem
+
+   | :fn:`straight_line_touch <G.96>`\ ()
+   | **prove** :g:`/ F C / <g1:/ F C />` is perpendicular to :g:`/ D E / <g1:/ D E />`
+
 .. picture:: g1.svg
    :alt: Diagram for Proposition 18
 
 .. step:: construct
 
-   For let a straight line :g:`/ D E / <g1:/ D E />` touch :g:`( A B C ) <g1:( A B C )>` at :g:`C <g1:C>`, let the center :g:`F <g1:F>` of :g:`( A B C ) <g1:( A B C )>` be taken
+   Let a straight line :g:`/ D E / <g1:/ D E />` touch :g:`( A B C ) <g1:( A B C )>` at :g:`C <g1:C>`, let the center :g:`F <g1:F>` of :g:`( A B C ) <g1:( A B C )>` be taken
 
 .. step:: construct
 
@@ -39,11 +44,11 @@ G.96
 
    If not, let :g:`/ F G / <g1:/ F G />` be drawn from :g:`F <g1:F>` perpendicular to :g:`/ D E / <g1:/ D E />`.
 
-.. step:: assert [G.28] <G.28>
+.. step:: assert ∵ two_angles_less_than_two_right <G.28>
 
    Since :g:`< F G C ) <g1:< F G C )>` is right → :g:`< F C G ) <g1:< F C G )>` is acute;
 
-.. step:: assert [G.30] <G.30>
+.. step:: assert ∵ greater_angle_greater_side <G.30>
 
    And the greater angle is subtended by the greater side
 

@@ -23,6 +23,10 @@ G.92
 
    And that straight line is said to be:term:`**at a greater distance** <greater-distance-from-centre>` on which the greater perpendicular falls.
 
+.. signature:: def
+
+   | :fn:`straight_line_said_def <G.92>`
+
 Required for
 ------------
 

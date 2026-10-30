@@ -24,22 +24,24 @@ G.228
 
    If two numbers be prime to one another, and each by multiplying itself make a certain number, the products is prime to one another; and, if the original numbers by multiplying the products make certain numbers, the latter is prime to one another [and this is always the case with the extremes].
 
+.. signature:: theorem
+
+   | :fn:`numbers_prime_multiplying <G.228>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`)
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>` be two numbers prime to one another, let :g:`A <g1:A>` by multiplying itself make :g:`C <g1:C>`, by multiplying :g:`C <g1:C>` make :g:`D <g1:D>`, let :g:`B <g1:B>` by multiplying itself make :g:`E <g1:E>`, by multiplying :g:`E <g1:E>` make :g:`F <g1:F>`
+   | **prove** both :g:`C <g1:C>`, :g:`E <g1:E>` and :g:`D <g1:D>`, :g:`F <g1:F>` are prime to one another
+
 .. picture:: g1.svg
    :alt: Book VII, Proposition 27
 
 .. step:: given
 
-   :g:`A <g1:A>`, :g:`B <g1:B>` be two numbers prime to one another, let :g:`A <g1:A>` by multiplying itself make :g:`C <g1:C>`, by multiplying :g:`C <g1:C>` make :g:`D <g1:D>`
-
-.. step:: assert
-
-   Let :g:`B <g1:B>` by multiplying itself make :g:`E <g1:E>`, and by multiplying :g:`E <g1:E>` make :g:`F <g1:F>`
+   :g:`A <g1:A>`, :g:`B <g1:B>` be two numbers prime to one another, let :g:`A <g1:A>` by multiplying itself make :g:`C <g1:C>`, by multiplying :g:`C <g1:C>` make :g:`D <g1:D>`, let :g:`B <g1:B>` by multiplying itself make :g:`E <g1:E>`, by multiplying :g:`E <g1:E>` make :g:`F <g1:F>`
 
 .. step:: assert
 
    Since :g:`A <g1:A>`, :g:`B <g1:B>` are prime to one another, and :g:`A <g1:A>` by multiplying itself has made :g:`C <g1:C>`,
 
-.. step:: assert [G.226] <G.226>
+.. step:: assert ∵ numbers_prime_product <G.226>
 
    Therefore :g:`C <g1:C>`, :g:`B <g1:B>` are prime to one another.
 
@@ -47,7 +49,7 @@ G.228
 
    Since then :g:`C <g1:C>`, :g:`B <g1:B>` are prime to one another, and :g:`B <g1:B>` by multiplying itself has made :g:`E <g1:E>`,
 
-.. step:: assert [G.226] <G.226>
+.. step:: assert ∵ numbers_prime_product <G.226>
 
    Therefore :g:`C <g1:C>`, :g:`E <g1:E>` are prime to one another.
 
@@ -55,7 +57,7 @@ G.228
 
    Since :g:`A <g1:A>`, :g:`B <g1:B>` are prime to one another, and :g:`B <g1:B>` by multiplying itself has made :g:`E <g1:E>`,
 
-.. step:: assert [G.226] <G.226>
+.. step:: assert ∵ numbers_prime_product <G.226>
 
    Therefore :g:`A <g1:A>`, :g:`E <g1:E>` are prime to one another.
 
@@ -63,7 +65,7 @@ G.228
 
    Since then the two numbers :g:`A <g1:A>`, :g:`C <g1:C>` are prime to the two numbers :g:`B <g1:B>`, :g:`E <g1:E>`, both to each,
 
-.. step:: assert [G.227] <G.227>
+.. step:: assert ∵ numbers_prime_numbers <G.227>
 
    Therefore also the product of :g:`A <g1:A>`, :g:`C <g1:C>` is prime to the product of :g:`B <g1:B>`, :g:`E <g1:E>`.
 

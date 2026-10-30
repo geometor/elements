@@ -24,6 +24,12 @@ G.268
 
    Similar plane numbers have to one another the ratio which a square number has to a square number.
 
+.. signature:: theorem
+
+   | :fn:`similar_plane_numbers_viii_26 <G.268>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`)
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>` be similar plane numbers
+   | **prove** :g:`A <g1:A>` has to :g:`B <g1:B>` the ratio which a square number has to a square number
+
 .. picture:: g1.svg
    :alt: Proposition 26
 
@@ -35,23 +41,19 @@ G.268
 
    Since :g:`A <g1:A>`, :g:`B <g1:B>` are similar plane numbers,
 
-.. step:: assert [G.260] <G.260>
+.. step:: assert ∵ similar_plane_numbers <G.260>
 
    Therefore one mean proportional number falls between :g:`A <g1:A>`, :g:`B <g1:B>`.
 
 .. step:: assert
 
-   Let it so fall
+   Let it so fall, and let it be :g:`C <g1:C>`
 
-.. step:: assert
+.. step:: construct
 
-   Let it be :g:`C <g1:C>`
+   :fn:`many_numbers_please <G.234>`: And let :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`F <g1:F>`, the least numbers of those which have the same ratio with :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`B <g1:B>`, be taken
 
-.. step:: construct [G.234, G.242] <G.234, G.242>
-
-   And let :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`F <g1:F>`, the least numbers of those which have the same ratio with :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`B <g1:B>`, be taken
-
-.. step:: assert [G.242] <G.242>
+.. step:: assert ∵ find_numbers_continued <G.242>
 
    Therefore the extremes of them :g:`D <g1:D>`, :g:`F <g1:F>` are square.
 

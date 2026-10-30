@@ -24,6 +24,12 @@ G.132
 
    About a given pentagon, which is equilateral and equiangular, to circumscribe a circle.
 
+.. signature:: problem
+
+   | :fn:`pentagon_equilateral_equiangular_iv_14 <G.132>`\ (:g:`< A B C D E > <g1:< A B C D E >>`)
+   | **given** :g:`< A B C D E > <g1:< A B C D E >>` be the given pentagon, which is equilateral and equiangular
+   | **construct** circumscribe a circle about the pentagon :g:`< A B C D E > <g1:< A B C D E >>`
+
 .. picture:: g1.svg
    :alt: Book IV Proposition 14: Circle circumscribed about regular pentagon ABCDE
 
@@ -33,11 +39,7 @@ G.132
 
 .. step:: construct
 
-   Let :g:`< B C D ) <g1:< B C D )>`, :g:`< C D E ) <g1:< C D E )>` be bisected by :g:`/ F C / <g1:/ F C />`, :g:`/ F D / <g1:/ F D />` respectively
-
-.. step:: construct
-
-   From :g:`F <g1:F>`, at which the straight lines meet, let :g:`/ F B / <g1:/ F B />`, :g:`/ F A / <g1:/ F A />`, :g:`/ F E / <g1:/ F E />` be joined to :g:`B <g1:B>`, :g:`A <g1:A>`, :g:`E <g1:E>`.
+   Let :g:`< B C D ) <g1:< B C D )>`, :g:`< C D E ) <g1:< C D E )>` be bisected by :g:`/ F C / <g1:/ F C />`, :g:`/ F D / <g1:/ F D />` respectively, and from :g:`F <g1:F>`, at which the straight lines meet, let :g:`/ F B / <g1:/ F B />`, :g:`/ F A / <g1:/ F A />`, :g:`/ F E / <g1:/ F E />` be joined to :g:`B <g1:B>`, :g:`A <g1:A>`, :g:`E <g1:E>`.
 
 .. step:: assert
 
@@ -47,7 +49,7 @@ G.132
 
    Since :g:`< B C D ) <g1:< B C D )>` is :eq:`equal <g1:< B C D ) = g1:< C D E )>` to :g:`< C D E ) <g1:< C D E )>`, and :g:`< F C D ) <g1:< F C D )>` is half of :g:`< B C D ) <g1:< B C D )>`, and :g:`< C D F ) <g1:< C D F )>` half of :g:`< C D E ) <g1:< C D E )>` → therefore :g:`< F C D ) <g1:< F C D )>` is also :eq:`equal <g1:< F C D ) = g1:< C D F )>` to :g:`< C D F ) <g1:< C D F )>`,
 
-.. step:: assert [G.13] <G.13>
+.. step:: assert ∵ equal_angles_isosceles <G.13>
 
    So that the side :g:`/ F C / <g1:/ F C />` is also :eq:`equal <g1:/ F C / = g1:/ F D />` to the side :g:`/ F D / <g1:/ F D />`.
 
@@ -63,13 +65,13 @@ G.132
 
    Therefore the circle described with center :g:`F <g1:F>` and distance one of :g:`/ F A / <g1:/ F A />`, :g:`/ F B / <g1:/ F B />`, :g:`/ F C / <g1:/ F C />`, :g:`/ F D / <g1:/ F D />`, :g:`/ F E / <g1:/ F E />` will pass also through the remaining points, and will have been circumscribed.
 
-.. step:: assert
+.. step:: construct
 
-   Let it be circumscribed
+   Let it be circumscribed, and let it be :g:`( A B C D E ) <g1:( A B C D E )>`.
 
 .. step:: conclude
 
-   Let it be :g:`( A B C D E ) <g1:( A B C D E )>`.
+   circumscribe a circle about the pentagon :g:`< A B C D E > <g1:< A B C D E >>`
 
 Dependency Graph
 ----------------

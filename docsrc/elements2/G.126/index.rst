@@ -24,6 +24,12 @@ G.126
 
    In a given square to inscribe a circle.
 
+.. signature:: problem
+
+   | :fn:`square_inscribe_circle <G.126>`\ (:g:`< A B C D > <g1:< A B C D >>`) → :g:`/ F K / <g1:/ F K />`
+   | **given** :g:`< A B C D > <g1:< A B C D >>` be the given square
+   | **construct** in the given square a circle has been inscribed
+
 .. picture:: g1.svg
    :alt: Proposition IV. 8 Diagram
 
@@ -31,15 +37,15 @@ G.126
 
    :g:`< A B C D > <g1:< A B C D >>` be the given square
 
-.. step:: construct [G.17] <G.17>
+.. step:: construct
 
-   Let :g:`/ A D / <g1:/ A D />`, :g:`/ A B / <g1:/ A B />` be bisected at :g:`E <g1:E>`, :g:`F <g1:F>` respectively, through :g:`E <g1:E>` let :g:`/ E H / <g1:/ E H />` be drawn parallel to either :g:`/ A B / <g1:/ A B />` or :g:`/ C D / <g1:/ C D />`
+   :fn:`bisect_segment <G.17>`: Let :g:`/ A D / <g1:/ A D />`, :g:`/ A B / <g1:/ A B />` be bisected at :g:`E <g1:E>`, :g:`F <g1:F>` respectively, through :g:`E <g1:E>` let :g:`/ E H / <g1:/ E H />` be drawn parallel to either :g:`/ A B / <g1:/ A B />` or :g:`/ C D / <g1:/ C D />`
 
-.. step:: construct [G.44] <G.44>
+.. step:: construct
 
-   Through :g:`F <g1:F>` let :g:`/ F K / <g1:/ F K />` be drawn parallel to either :g:`/ A D / <g1:/ A D />` or :g:`/ B C / <g1:/ B C />`
+   :fn:`parallel_line <G.44>`\ (:g:`F <g1:F>`, :g:`/ A D / <g1:/ A D />` or :g:`/ B C / <g1:/ B C />`) → :g:`/ F K / <g1:/ F K />`
 
-.. step:: assert [G.47] <G.47>
+.. step:: assert ∵ parallelogram_properties <G.47>
 
    Therefore each of the figures :g:`< A F K D > <g1:< A F K D >>`, :g:`< F B C K > <g1:< F B C K >>`, :g:`< A B H E > <g1:< A B H E >>`, :g:`< E H C D > <g1:< E H C D >>`, :g:`< A F G E > <g1:< A F G E >>`, :g:`< G H C K > <g1:< G H C K >>`, :g:`< F B H G > <g1:< F B H G >>`, :g:`< E G K D > <g1:< E G K D >>` is a parallelogram, and their opposite sides are evidently equal.
 
@@ -71,7 +77,7 @@ G.126
 
    It will touch :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ C D / <g1:/ C D />`, :g:`/ D A / <g1:/ D A />`, because the angles at :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`H <g1:H>`, :g:`K <g1:K>` are right.
 
-.. step:: assert [G.94] <G.94>
+.. step:: assert ∵ straight_line_drawn <G.94>
 
    If the circle cuts :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ C D / <g1:/ C D />`, :g:`/ D A / <g1:/ D A />`, the straight line drawn at right angles to the diameter of the circle from its extremity will fall within the circle: which was proved absurd
 

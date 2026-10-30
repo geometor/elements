@@ -24,18 +24,23 @@ G.273
 
    If a cube number by multiplying a cube number make some number, the product is cube.
 
+.. signature:: theorem
+
+   | :fn:`cube_number_multiplying_ix_4 <G.273>`\ ()
+   | **prove** :g:`C <g1:C>` is cube
+
 .. picture:: g1.svg
    :alt: Proposition 4 Diagram
 
 .. step:: assert
 
-   For let the cube number :g:`A <g1:A>` by multiplying the cube number :g:`B <g1:B>` make :g:`C <g1:C>`
+   Let the cube number :g:`A <g1:A>` by multiplying the cube number :g:`B <g1:B>` make :g:`C <g1:C>`
 
 .. step:: assert
 
-   For let :g:`A <g1:A>` by multiplying itself make :g:`D <g1:D>`
+   Let :g:`A <g1:A>` by multiplying itself make :g:`D <g1:D>`
 
-.. step:: assert [G.272] <G.272>
+.. step:: assert ∵ cube_number_multiplying <G.272>
 
    Therefore :g:`D <g1:D>` is cube.
 
@@ -43,7 +48,7 @@ G.273
 
    And, since :g:`A <g1:A>` by multiplying itself has made :g:`D <g1:D>`, and by multiplying :g:`B <g1:B>` has made :g:`C <g1:C>`,
 
-.. step:: assert [G.217] <G.217>
+.. step:: assert ∵ number_multiplying_numbers <G.217>
 
    Therefore, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`D <g1:D>` to :g:`C <g1:C>`.
 
@@ -55,11 +60,11 @@ G.273
 
    :g:`A <g1:A>`, :g:`B <g1:B>` are similar solid numbers.
 
-.. step:: assert [G.261] <G.261>
+.. step:: assert ∵ similar_solid_numbers <G.261>
 
    Therefore two mean proportional numbers fall between :g:`A <g1:A>`, :g:`B <g1:B>`.
 
-.. step:: assert [G.248] <G.248>
+.. step:: assert ∵ numbers_there_fall <G.248>
 
    So that two mean proportional numbers will fall between :g:`D <g1:D>`, :g:`C <g1:C>` also.
 
@@ -67,7 +72,7 @@ G.273
 
    :g:`D <g1:D>` is cube;
 
-.. step:: conclude [G.265] <G.265>
+.. step:: conclude ∵ numbers_continued_proportion_viii_23 <G.265>
 
    Therefore :g:`C <g1:C>` is also cube.
 

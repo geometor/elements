@@ -24,14 +24,19 @@ G.309
 
    If a number neither be one of those which are continually doubled from a dyad, nor have its half odd, it is both even-times even and even-times odd.
 
+.. signature:: theorem
+
+   | :fn:`number_continually_doubled <G.309>`\ ()
+   | **prove** :g:`A <g1:A>` is both even-times even and even-times odd
+
 .. picture:: g1.svg
    :alt: Proposition 34 Diagram
 
 .. step:: assert
 
-   For let the number :g:`A <g1:A>` neither be one of those doubled from a dyad, nor have its half odd
+   Let the number :g:`A <g1:A>` neither be one of those doubled from a dyad, nor have its half odd
 
-.. step:: assert [G.305] <G.305>
+.. step:: assert ∵ even_times_even_def <G.305>
 
    Now that :g:`A <g1:A>` is even-times even is manifest; for it has not its half odd.
 

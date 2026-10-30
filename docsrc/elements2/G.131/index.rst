@@ -24,6 +24,12 @@ G.131
 
    In a given pentagon, which is equilateral and equiangular, to inscribe a circle.
 
+.. signature:: problem
+
+   | :fn:`pentagon_equilateral_equiangular <G.131>`\ (:g:`< A B C D E > <g1:< A B C D E >>`)
+   | **given** :g:`< A B C D E > <g1:< A B C D E >>` be the given equilateral and equiangular pentagon
+   | **construct** inscribe a circle in the pentagon :g:`< A B C D E > <g1:< A B C D E >>`
+
 .. picture:: g1.svg
    :alt: Book IV Proposition 13: Circle GHKLM inscribed in regular pentagon ABCDE
 
@@ -33,7 +39,7 @@ G.131
 
 .. step:: construct
 
-   For let :g:`< B C D ) <g1:< B C D )>`, :g:`< C D E ) <g1:< C D E )>` be bisected by :g:`/ C F / <g1:/ C F />`, :g:`/ D F / <g1:/ D F />` respectively
+   Let :g:`< B C D ) <g1:< B C D )>`, :g:`< C D E ) <g1:< C D E )>` be bisected by :g:`/ C F / <g1:/ C F />`, :g:`/ D F / <g1:/ D F />` respectively
 
 .. step:: construct
 
@@ -47,7 +53,7 @@ G.131
 
    And :g:`< B C F ) <g1:< B C F )>` is :eq:`equal <g1:< B C F ) = g1:< D C F )>` to :g:`< D C F ) <g1:< D C F )>`
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    Therefore the base :g:`/ B F / <g1:/ B F />` is :eq:`equal <g1:/ B F / = g1:/ D F />` to the base :g:`/ D F / <g1:/ D F />`, and :g:`< B C F > <g1:< B C F >>` is :eq:`equal <g1:< B C F > = g1:< D C F >>` to :g:`< D C F > <g1:< D C F >>`, and the remaining angles will be equal to the remaining angles, namely those which the equal sides subtend.
 
@@ -87,7 +93,7 @@ G.131
 
    Since :g:`< H C F ) <g1:< H C F )>` is :eq:`equal <g1:< H C F ) = g1:< K C F )>` to :g:`< K C F ) <g1:< K C F )>`, and the right angle :g:`< F H C ) <g1:< F H C )>` is also :eq:`equal <g1:< F H C ) = g1:< F K C )>` to :g:`< F K C ) <g1:< F K C )>`, :g:`< F H C > <g1:< F H C >>`, :g:`< F K C > <g1:< F K C >>` are two triangles having two angles equal to two angles and one side equal to one side, namely :g:`/ F C / <g1:/ F C />` which is common to them and subtends one of the equal angles
 
-.. step:: assert [G.37] <G.37>
+.. step:: assert ∵ asa_aas_congruence <G.37>
 
    Therefore they will also have the remaining sides equal to the remaining sides
 
@@ -111,7 +117,7 @@ G.131
 
    And it will touch :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ C D / <g1:/ C D />`, :g:`/ D E / <g1:/ D E />`, :g:`/ E A / <g1:/ E A />`, because the angles at :g:`< F G B ) <g1:< F G B )>`, :g:`< F H C ) <g1:< F H C )>`, :g:`< F K C ) <g1:< F K C )>`, :g:`< F L D ) <g1:< F L D )>`, :g:`< F M E ) <g1:< F M E )>` are right.
 
-.. step:: assert [G.94] <G.94>
+.. step:: assert ∵ straight_line_drawn <G.94>
 
    If it does not touch them, but cuts them, it will result that the straight line drawn at right angles to the diameter of the circle from its extremity falls within the circle: which was proved absurd.
 
@@ -126,6 +132,10 @@ G.131
 .. step:: construct
 
    Let it be described, as :g:`( G H K L M ) <g1:( G H K L M )>`.
+
+.. step:: conclude
+
+   inscribe a circle in the pentagon :g:`< A B C D E > <g1:< A B C D E >>`
 
 Dependency Graph
 ----------------

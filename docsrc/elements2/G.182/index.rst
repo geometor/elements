@@ -23,6 +23,10 @@ G.182
 
    When three magnitudes are proportional, the first is said to have to the third the:term:`**duplicate ratio** <duplicate-ratio>` of that which it has to the second.
 
+.. signature:: def
+
+   | :fn:`magnitudes_proportional_said_def <G.182>`
+
 Required for
 ------------
 

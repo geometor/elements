@@ -24,18 +24,19 @@ G.456
 
    From the same point two straight lines cannot be set up at right angles to the same plane on the same side.
 
+.. signature:: theorem
+
+   | :fn:`point_straight_lines <G.456>`\ ()
+   | **prove** They are in one plane: which is impossible
+
 .. picture:: g1.svg
    :alt: Proposition 13
 
 .. step:: construct
 
-   If possible, from the same point :g:`A <g1:A>` let :g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />` be set up at right angles to the plane of reference and on the same side
+   If possible, from the same point :g:`A <g1:A>` let :g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />` be set up at right angles to the plane of reference and on the same side, and let a plane be drawn through :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />`
 
-.. step:: construct
-
-   Let a plane be drawn through :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />`
-
-.. step:: assert [G.445] <G.445>
+.. step:: assert ∵ planes_cut_common <G.445>
 
    It will then make, as section through :g:`A <g1:A>` in the plane of reference, a straight line.
 
@@ -47,7 +48,7 @@ G.456
 
    Therefore :g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />`, :g:`/ D A E / <g1:/ D A E />` are in one plane.
 
-.. step:: assert [G.446] <G.446>
+.. step:: assert ∵ straight_line_right_def <G.446>
 
    And, since :g:`/ C A / <g1:/ C A />` is at right angles to the plane of reference, it will also make right angles with all the straight lines which meet it and are in the plane of reference.
 

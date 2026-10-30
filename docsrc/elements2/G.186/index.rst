@@ -24,18 +24,23 @@ G.186
 
    Figures which are similar to the same polygon are also similar to one another.
 
+.. signature:: theorem
+
+   | :fn:`figures_similar_polygon <G.186>`\ ()
+   | **prove** :g:`A <g1:A>` is also similar to :g:`B <g1:B>`
+
 .. picture:: g1.svg
    :alt: Book VI, Proposition 21
 
 .. step:: assert
 
-   For let each of the rectilineal figures :g:`A <g1:A>`, :g:`B <g1:B>` be similar to :g:`C <g1:C>`
+   Let each of the rectilineal figures :g:`A <g1:A>`, :g:`B <g1:B>` be similar to :g:`C <g1:C>`
 
 .. step:: assert
 
    Since :g:`A <g1:A>` is similar to :g:`C <g1:C>`,
 
-.. step:: assert [G.170] <G.170>
+.. step:: assert ∵ similar_polygons_angles_def <G.170>
 
    It is equiangular with it and has the sides about the equal angles proportional.
 

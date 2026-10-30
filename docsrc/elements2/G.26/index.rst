@@ -23,6 +23,10 @@ G.26
 
    The whole is greater than the part.
 
+.. signature:: rule
+
+   | :fn:`whole_greater_than_part <G.26>`
+
 Required for
 ------------
 

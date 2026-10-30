@@ -24,6 +24,12 @@ G.109
 
    Bisect a given circumference.
 
+.. signature:: problem
+
+   | :fn:`bisect_circumference <G.109>`\ (:g:`( A D B ) <g1:( A D B )>`) → :g:`D <g1:D>`
+   | **given** :g:`( A D B ) <g1:( A D B )>` be the given circumference
+   | **construct** the given circumference has been bisected at :g:`D <g1:D>`
+
 .. picture:: g1.svg
    :alt: Diagram
 
@@ -41,7 +47,7 @@ G.109
 
 .. step:: construct
 
-   **segment** :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />`
+   :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`D <g1:D>`) → :g:`/ A D / <g1:/ A D />`, :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`B <g1:B>`) → :g:`/ D B / <g1:/ D B />`
 
 .. step:: assert
 
@@ -51,11 +57,11 @@ G.109
 
    And :g:`< A C D ) <g1:< A C D )>` is :eq:`equal <g1:< A C D ) = g1:< B C D )>` to :g:`< B C D ) <g1:< B C D )>`, for each is right
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    Therefore the base :g:`/ A D / <g1:/ A D />` is :eq:`equal <g1:/ A D / = g1:/ D B />` to the base :g:`/ D B / <g1:/ D B />`.
 
-.. step:: assert [G.107] <G.107>
+.. step:: assert ∵ equal_circles_equal_iii_28 <G.107>
 
    Equal straight lines cut off equal circumferences, the greater equal to the greater, and the less to the less
 

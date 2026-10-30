@@ -24,10 +24,16 @@ G.346
 
    Find two medial straight lines commensurable in square only, containing a rational rectangle, and such that the square on the greater is greater than the square on the less by the square on a straight line commensurable in length with the greater.
 
+.. signature:: problem
+
+   | :fn:`find_medial_straight_x_31 <G.346>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`) → :g:`C <g1:C>`, :g:`D <g1:D>`
+   | **given** there be set out two rational straight lines :g:`A <g1:A>`, :g:`B <g1:B>` commensurable in square only and such that the square on :g:`A <g1:A>`, being the greater, is greater than the square on :g:`B <g1:B>` the less by the square on a straight line commensurable in length with :g:`A <g1:A>`
+   | **construct** Similarly also it can be proved that the square on :g:`C <g1:C>` exceeds the square on :g:`D <g1:D>` by the square on a straight line incommensurable with :g:`C <g1:C>`, when the square on :g:`A <g1:A>` is greater than the square on :g:`B <g1:B>` by the square on a straight line incommensurable with :g:`A <g1:A>`
+
 .. picture:: g1.svg
    :alt: Proposition 31
 
-.. step:: given [G.344] <G.344>
+.. step:: given
 
    there be set out two rational straight lines :g:`A <g1:A>`, :g:`B <g1:B>` commensurable in square only and such that the square on :g:`A <g1:A>`, being the greater, is greater than the square on :g:`B <g1:B>` the less by the square on a straight line commensurable in length with :g:`A <g1:A>`
 
@@ -35,11 +41,11 @@ G.346
 
    Let the square on :g:`C <g1:C>` be equal to the rectangle :g:`A <g1:A>`, :g:`B <g1:B>`.
 
-.. step:: assert [G.335] <G.335>
+.. step:: assert ∵ rectangle_contained_rational_x_21 <G.335>
 
    Now the rectangle :g:`A <g1:A>`, :g:`B <g1:B>` is medial;
 
-.. step:: assert [G.335] <G.335>
+.. step:: assert ∵ rectangle_contained_rational_x_21 <G.335>
 
    Therefore the square on :g:`C <g1:C>` is also medial; therefore :g:`C <g1:C>` is also medial.
 
@@ -75,7 +81,7 @@ G.346
 
    :g:`A <g1:A>` is commensurable with :g:`B <g1:B>` in square only ;
 
-.. step:: assert [G.323] <G.323>
+.. step:: assert ∵ magnitudes_proportional_commensurable <G.323>
 
    Therefore :g:`C <g1:C>` is also commensurable with :g:`D <g1:D>` in square only.
 
@@ -83,7 +89,7 @@ G.346
 
    :g:`C <g1:C>` is medial ;
 
-.. step:: assert [G.338] <G.338>
+.. step:: assert ∵ straight_line_commensurable <G.338>
 
    Therefore :g:`D <g1:D>` is also medial.
 
@@ -91,11 +97,11 @@ G.346
 
    Since, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`, and the square on :g:`A <g1:A>` is greater than the square on :g:`B <g1:B>` by the square on a straight line commensurable with :g:`A <g1:A>`,
 
-.. step:: assert [G.327] <G.327>
+.. step:: assert ∵ straight_lines_proportional_x_14 <G.327>
 
    Therefore also the square on :g:`C <g1:C>` is greater than the square on :g:`D <g1:D>` by the square on a straight line commensurable with :g:`C <g1:C>`.
 
-.. step:: conclude [G.345] <G.345>
+.. step:: conclude ∵ find_rational_straight_x_30 <G.345>
 
    Similarly also it can be proved that the square on :g:`C <g1:C>` exceeds the square on :g:`D <g1:D>` by the square on a straight line incommensurable with :g:`C <g1:C>`, when the square on :g:`A <g1:A>` is greater than the square on :g:`B <g1:B>` by the square on a straight line incommensurable with :g:`A <g1:A>`.
 

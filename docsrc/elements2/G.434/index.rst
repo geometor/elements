@@ -24,26 +24,24 @@ G.434
 
    A straight line commensurable with that which produces with a medial area a medial whole is itself also a straight line which produces with a medial area a medial whole.
 
+.. signature:: theorem
+
+   | :fn:`straight_line_commensurable_x_107 <G.434>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`)
+   | **given** :g:`/ A B / <g1:/ A B />` be a straight line which produces with a medial area a medial whole, let :g:`/ C D / <g1:/ C D />` be commensurable with :g:`/ A B / <g1:/ A B />`
+   | **prove** :g:`/ C D / <g1:/ C D />` is also a straight line which produces with a medial area a medial whole
+
 .. picture:: g1.svg
    :alt: Proposition 107 diagram
 
 .. step:: given
 
-   :g:`/ A B / <g1:/ A B />` be a straight line which produces with a medial area a medial whole
-
-.. step:: assert
-
-   Let :g:`/ C D / <g1:/ C D />` be commensurable with :g:`/ A B / <g1:/ A B />`
-
-.. step:: assert
-
-   For let :g:`/ B E / <g1:/ B E />` be the annex to :g:`/ A B / <g1:/ A B />`
+   :g:`/ A B / <g1:/ A B />` be a straight line which produces with a medial area a medial whole, let :g:`/ C D / <g1:/ C D />` be commensurable with :g:`/ A B / <g1:/ A B />`
 
 .. step:: construct
 
-   Let the same construction be made
+   Let :g:`/ B E / <g1:/ B E />` be the annex to :g:`/ A B / <g1:/ A B />`, and let the same construction be made
 
-.. step:: assert [G.399] <G.399>
+.. step:: assert ∵ straight_line_there_x_78 <G.399>
 
    Therefore :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />` are straight lines incommensurable in square which make the sum of the squares on them medial, the rectangle contained by them medial, and further the sum of the squares on them incommensurable with the rectangle contained by them.
 
@@ -55,7 +53,7 @@ G.434
 
    Therefore :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />` are also straight lines incommensurable in square which make the sum of the squares on them medial, the rectangle contained by them medial, and further the sum of the squares on them incommensurable with the rectangle contained by them.
 
-.. step:: conclude [G.399] <G.399>
+.. step:: conclude ∵ straight_line_there_x_78 <G.399>
 
    Therefore :g:`/ C D / <g1:/ C D />` is a straight line which produces with a medial area a medial whole.
 

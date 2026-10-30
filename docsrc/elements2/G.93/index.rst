@@ -24,6 +24,12 @@ G.93
 
    Of straight lines in a circle the diameter is greatest, and of the rest the nearer to the centre is always greater than the more remote.
 
+.. signature:: theorem
+
+   | :fn:`straight_lines_circle <G.93>`\ (:g:`( A B C D ) <g1:( A B C D )>`, :g:`/ A D / <g1:/ A D />`, :g:`E <g1:E>`)
+   | **given** :g:`( A B C D ) <g1:( A B C D )>` be a circle, let :g:`/ A D / <g1:/ A D />` be its diameter and :g:`E <g1:E>` the center
+   | **prove** :g:`/ A D / <g1:/ A D />` is greatest and :g:`/ B C / <g1:/ B C />` greater than :g:`/ F G / <g1:/ F G />`
+
 .. picture:: g1.svg
    :alt: Diagram for Proposition 15
 
@@ -37,21 +43,25 @@ G.93
 
 .. step:: construct
 
-   For from the center :g:`E <g1:E>` let :g:`/ E H / <g1:/ E H />`, :g:`/ E K / <g1:/ E K />` be drawn perpendicular to :g:`/ B C / <g1:/ B C />`, :g:`/ F G / <g1:/ F G />`.
+   From the center :g:`E <g1:E>` let :g:`/ E H / <g1:/ E H />`, :g:`/ E K / <g1:/ E K />` be drawn perpendicular to :g:`/ B C / <g1:/ B C />`, :g:`/ F G / <g1:/ F G />`.
 
-.. step:: assert [G.92] <G.92>
+.. step:: assert ∵ straight_line_said_def <G.92>
 
    Since :g:`/ B C / <g1:/ B C />` is nearer to the center and :g:`/ F G / <g1:/ F G />` more remote, :g:`/ E K / <g1:/ E K />` is greater than :g:`/ E H / <g1:/ E H />`.
 
 .. step:: construct
 
-   Let :g:`/ E L / <g1:/ E L />` be made :eq:`equal <g1:/ E L / = g1:/ E H />` to :g:`/ E H / <g1:/ E H />`, through :g:`L <g1:L>` let :g:`/ L M / <g1:/ L M />` be drawn at right angles to :g:`/ E K / <g1:/ E K />` and carried through to :g:`N <g1:N>`
+   :fn:`cut_equal_segment <G.9>`\ (:g:`/ E H / <g1:/ E H />`) → :g:`/ E L / <g1:/ E L />` (:eq:`equal <g1:/ E L / = g1:/ E H />`)
 
 .. step:: construct
 
-   **segment** :g:`/ M E / <g1:/ M E />`, :g:`/ E N / <g1:/ E N />`, :g:`/ F E / <g1:/ F E />`, :g:`/ E G / <g1:/ E G />`
+   Through :g:`L <g1:L>` let :g:`/ L M / <g1:/ L M />` be drawn at right angles to :g:`/ E K / <g1:/ E K />` and carried through to :g:`N <g1:N>`
 
-.. step:: assert [G.91] <G.91>
+.. step:: construct
+
+   :fn:`segment <G.3>`\ (:g:`M <g1:M>`, :g:`E <g1:E>`) → :g:`/ M E / <g1:/ M E />`, :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`N <g1:N>`) → :g:`/ E N / <g1:/ E N />`, :fn:`segment <G.3>`\ (:g:`F <g1:F>`, :g:`E <g1:E>`) → :g:`/ F E / <g1:/ F E />`, :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`G <g1:G>`) → :g:`/ E G / <g1:/ E G />`
+
+.. step:: assert ∵ circle_equal_straight <G.91>
 
    Since :g:`/ E H / <g1:/ E H />` is :eq:`equal <g1:/ E H / = g1:/ E L />` to :g:`/ E L / <g1:/ E L />` → :g:`/ B C / <g1:/ B C />` is also :eq:`equal <g1:/ B C / = g1:/ M N />` to :g:`/ M N / <g1:/ M N />`.
 
@@ -59,7 +69,7 @@ G.93
 
    Since :g:`/ A E / <g1:/ A E />` is :eq:`equal <g1:/ A E / = g1:/ E M /; g1:/ E D / = g1:/ E N />` to :g:`/ E M / <g1:/ E M />`, and :g:`/ E D / <g1:/ E D />` to :g:`/ E N / <g1:/ E N />` → :g:`/ A D / <g1:/ A D />` is equal to :g:`/ M E / <g1:/ M E />`, :g:`/ E N / <g1:/ E N />`.
 
-.. step:: assert [G.31] <G.31>
+.. step:: assert ∵ triangle_inequality <G.31>
 
    :g:`/ M E / <g1:/ M E />`, :g:`/ E N / <g1:/ E N />` are greater than :g:`/ M N / <g1:/ M N />`, and :g:`/ M N / <g1:/ M N />` is :eq:`equal <g1:/ M N / = g1:/ B C />` to :g:`/ B C / <g1:/ B C />`
 
@@ -67,13 +77,17 @@ G.93
 
    Therefore :g:`/ A D / <g1:/ A D />` is greater than :g:`/ B C / <g1:/ B C />`.
 
-.. step:: assert [G.35] <G.35>
+.. step:: assert ∵ hinge_theorem <G.35>
 
    And, since the two sides :g:`/ M E / <g1:/ M E />`, :g:`/ E N / <g1:/ E N />` are :eq:`equal <g1:/ M E / = g1:/ F E /; g1:/ E N / = g1:/ E G />` to the two sides :g:`/ F E / <g1:/ F E />`, :g:`/ E G / <g1:/ E G />`, and :g:`< M E N ) <g1:< M E N )>` greater than :g:`< F E G ) <g1:< F E G )>`, therefore the base :g:`/ M N / <g1:/ M N />` is greater than the base :g:`/ F G / <g1:/ F G />`.
 
+.. step:: assert
+
+   :g:`/ M N / <g1:/ M N />` was proved :eq:`equal <g1:/ M N / = g1:/ B C />` to :g:`/ B C / <g1:/ B C />`
+
 .. step:: conclude
 
-   :g:`/ M N / <g1:/ M N />` was proved :eq:`equal <g1:/ M N / = g1:/ B C />` to :g:`/ B C / <g1:/ B C />`. Therefore the diameter :g:`/ A D / <g1:/ A D />` is greatest and :g:`/ B C / <g1:/ B C />` greater than :g:`/ F G / <g1:/ F G />`.
+   Therefore the diameter :g:`/ A D / <g1:/ A D />` is greatest and :g:`/ B C / <g1:/ B C />` greater than :g:`/ F G / <g1:/ F G />`.
 
 Dependency Graph
 ----------------

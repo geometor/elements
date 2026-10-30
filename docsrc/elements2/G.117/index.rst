@@ -24,12 +24,18 @@ G.117
 
    Into a given circle to fit a straight line equal to a given straight line which is not greater than the diameter of the circle.
 
+.. signature:: theorem
+
+   | :fn:`fit_chord_in_circle <G.117>`\ (:g:`( A B C ) <g1:( A B C )>`, :g:`D <g1:D>`)
+   | **given** :g:`( A B C ) <g1:( A B C )>`, :g:`D <g1:D>` not greater than the diameter of the circle
+   | **prove** fit into :g:`( A B C ) <g1:( A B C )>` a straight line :eq:`equal <g1:/ C A / = g1:D>` to :g:`D <g1:D>`
+
 .. picture:: g1.svg
    :alt: Diagram for Proposition 1
 
 .. step:: given
 
-   :g:`( A B C ) <g1:( A B C )>`, :g:`D <g1:D>` the given straight line not greater than the diameter of the circle
+   :g:`( A B C ) <g1:( A B C )>`, :g:`D <g1:D>` not greater than the diameter of the circle
 
 .. step:: construct
 
@@ -49,13 +55,13 @@ G.117
 
 .. step:: construct
 
-   **circle** :g:`( E A F ) <g1:( E A F )>` with center :g:`C <g1:C>` and radius :g:`/ C E / <g1:/ C E />`
+   :fn:`circle <G.4>`\ (:g:`C <g1:C>`, :g:`/ C E / <g1:/ C E />`) → :g:`( E A F ) <g1:( E A F )>`
 
 .. step:: construct
 
-   **segment** :g:`/ C A / <g1:/ C A />`
+   :fn:`segment <G.3>`\ (:g:`C <g1:C>`, :g:`A <g1:A>`) → :g:`/ C A / <g1:/ C A />`
 
-.. step:: assert
+.. step:: assert ∵ circle_radii <G.2>
 
    Since :g:`C <g1:C>` is the center of :g:`( E A F ) <g1:( E A F )>` → :g:`/ C A / <g1:/ C A />` is :eq:`equal <g1:/ C A / = g1:/ C E />` to :g:`/ C E / <g1:/ C E />`.
 

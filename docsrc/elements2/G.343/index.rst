@@ -24,6 +24,12 @@ G.343
 
    Find medial straight lines commensurable in square only which contain a medial rectangle.
 
+.. signature:: problem
+
+   | :fn:`find_medial_straight_x_28 <G.343>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`) → :g:`D <g1:D>`, :g:`E <g1:E>`
+   | **given** the rational straight lines :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` commensurable in square only be set out
+   | **construct** the rectangle :g:`D <g1:D>`, :g:`E <g1:E>` is also medial
+
 .. picture:: g1.svg
    :alt: Proposition 28 diagram
 
@@ -31,19 +37,19 @@ G.343
 
    the rational straight lines :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` commensurable in square only be set out
 
-.. step:: construct [G.176, G.175] <G.176, G.175>
+.. step:: construct
 
-   Let :g:`D <g1:D>` be taken a mean proportional between :g:`A <g1:A>`, :g:`B <g1:B>`, and let it be contrived that, as :g:`B <g1:B>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to :g:`E <g1:E>`.
+   :fn:`mean_proportional <G.176>`: Let :g:`D <g1:D>` be taken a mean proportional between :g:`A <g1:A>`, :g:`B <g1:B>`, and let it be contrived that, as :g:`B <g1:B>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to :g:`E <g1:E>`.
 
 .. step:: assert
 
    Since :g:`A <g1:A>`, :g:`B <g1:B>` are rational straight lines commensurable in square only,
 
-.. step:: assert [G.180, G.335] <G.180, G.335>
+.. step:: assert ∵ straight_lines_proportional_vi_17, rectangle_contained_rational_x_21 <G.180, G.335>
 
    Therefore the rectangle :g:`A <g1:A>`, :g:`B <g1:B>`, that is, the square on :g:`D <g1:D>`, is medial.
 
-.. step:: assert [G.335] <G.335>
+.. step:: assert ∵ rectangle_contained_rational_x_21 <G.335>
 
    Therefore :g:`D <g1:D>` is medial.
 
@@ -51,7 +57,7 @@ G.343
 
    Since :g:`B <g1:B>`, :g:`C <g1:C>` are commensurable in square only, and, as :g:`B <g1:B>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to :g:`E <g1:E>`,
 
-.. step:: assert [G.323] <G.323>
+.. step:: assert ∵ magnitudes_proportional_commensurable <G.323>
 
    Therefore :g:`D <g1:D>`, :g:`E <g1:E>` are also commensurable in square only.
 
@@ -59,7 +65,7 @@ G.343
 
    :g:`D <g1:D>` is medial;
 
-.. step:: assert [G.338] <G.338>
+.. step:: assert ∵ straight_line_commensurable <G.338>
 
    Therefore :g:`E <g1:E>` is also medial.
 
@@ -75,7 +81,7 @@ G.343
 
    For since, as :g:`B <g1:B>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to :g:`E <g1:E>`,
 
-.. step:: assert [G.153] <G.153>
+.. step:: assert ∵ magnitudes_proportional_proportional <G.153>
 
    Therefore, alternately, as :g:`B <g1:B>` is to :g:`D <g1:D>`, so is :g:`C <g1:C>` to :g:`E <g1:E>`.
 
@@ -87,11 +93,11 @@ G.343
 
    Therefore also, as :g:`D <g1:D>` is to :g:`A <g1:A>`, so is :g:`C <g1:C>` to :g:`E <g1:E>`;
 
-.. step:: assert [G.179] <G.179>
+.. step:: assert ∵ straight_lines_proportional <G.179>
 
    Therefore the rectangle :g:`A <g1:A>`, :g:`C <g1:C>` is equal to the rectangle :g:`D <g1:D>`, :g:`E <g1:E>`.
 
-.. step:: assert [G.335] <G.335>
+.. step:: assert ∵ rectangle_contained_rational_x_21 <G.335>
 
    The rectangle :g:`A <g1:A>`, :g:`C <g1:C>` is medial;
 

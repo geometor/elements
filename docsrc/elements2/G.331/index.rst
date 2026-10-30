@@ -10,7 +10,7 @@
 :category: theorem, proof, incommensurables, magnitudes
 :tags: book-x, point, segment, separando, parallelogram, square, incommensurable
 :dependencies: G.319, G.326, G.329, G.330
-:excerpt: If there be two unequal straight lines, and to the greater there be applied a parallelogram equal to the fourth part of the square on the less and deficient by a square figure, and if it divide it into parts which are incommensurable, the square on the greater is greater than the square on the less by the square on a straight line incommensurable with the greater.
+:excerpt: If there be two unequal straight lines, and to the greater there be applied a parallelogram equal to the fourth part of the square on the less and deficient by a square figure, and if it divide it into parts which are incommensurable, the square on the greater is greater than the square on the less by the square on a straight line incommensurable with the greater. And, if the square on the greater be greater than the square on the less by the square on a straight line incommensurable with the greater, and if there be applied to the greater a parallelogram equal to the fourth part of the square on the less and deficient by a square figure, it divides it into parts which are incommensurable.
 
 .. _G.331:
 .. _X.18:
@@ -22,18 +22,23 @@ G.331
 
 .. enunciation::
 
-   If there be two unequal straight lines, and to the greater there be applied a parallelogram equal to the fourth part of the square on the less and deficient by a square figure, and if it divide it into parts which are incommensurable, the square on the greater is greater than the square on the less by the square on a straight line incommensurable with the greater.
+   If there be two unequal straight lines, and to the greater there be applied a parallelogram equal to the fourth part of the square on the less and deficient by a square figure, and if it divide it into parts which are incommensurable, the square on the greater is greater than the square on the less by the square on a straight line incommensurable with the greater. And, if the square on the greater be greater than the square on the less by the square on a straight line incommensurable with the greater, and if there be applied to the greater a parallelogram equal to the fourth part of the square on the less and deficient by a square figure, it divides it into parts which are incommensurable.
 
-.. enunciation::
+.. signature:: theorem
 
-   And, if the square on the greater be greater than the square on the less by the square on a straight line incommensurable with the greater, and if there be applied to the greater a parallelogram equal to the fourth part of the square on the less and deficient by a square figure, it divides it into parts which are incommensurable.
+   | :fn:`there_unequal_straight_x_18 <G.331>`\ ()
+   | **prove** the square on :g:`/ B C / <g1:/ B C />` is greater than the square on :g:`A <g1:A>` by the square on a straight line incommensurable with :g:`/ B C / <g1:/ B C />`
 
 .. picture:: g1.svg
    :alt: Proposition 18
 
-.. step:: given [G.330] <G.330>
+.. step:: construct
 
-   :g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />` be two unequal straight lines, of which :g:`/ B C / <g1:/ B C />` is the greater, to :g:`/ B C / <g1:/ B C />` let there be applied a parallelogram equal to the fourth part of the square on the less, :g:`A <g1:A>`, deficient by a square figure. Let this be the rectangle :g:`/ B D / <g1:/ B D />`, :g:`/ D C / <g1:/ D C />`, let :g:`/ B D / <g1:/ B D />` be incommensurable in length with :g:`/ D C / <g1:/ D C />`
+   Let :g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />` be two unequal straight lines, of which :g:`/ B C / <g1:/ B C />` is the greater, and to :g:`/ B C / <g1:/ B C />` let there be applied a parallelogram equal to the fourth part of the square on the less, :g:`A <g1:A>`, and deficient by a square figure
+
+.. step:: assert ∵ there_unequal_straight <G.330>
+
+   Let this be the rectangle :g:`/ B D / <g1:/ B D />`, :g:`/ D C / <g1:/ D C />`, and let :g:`/ B D / <g1:/ B D />` be incommensurable in length with :g:`/ D C / <g1:/ D C />`
 
 .. step:: assert
 
@@ -47,15 +52,15 @@ G.331
 
    Since :g:`/ B D / <g1:/ B D />` is incommensurable in length with :g:`/ D C / <g1:/ D C />`,
 
-.. step:: assert [G.329] <G.329>
+.. step:: assert ∵ incommensurable_magnitudes_added <G.329>
 
    Therefore :g:`/ B C / <g1:/ B C />` is also incommensurable in length with :g:`/ C D / <g1:/ C D />`.
 
-.. step:: assert [G.319] <G.319>
+.. step:: assert ∵ magnitudes_ratio_number <G.319>
 
    :g:`/ D C / <g1:/ D C />` is commensurable with the sum of :g:`/ B F / <g1:/ B F />`, :g:`/ D C / <g1:/ D C />`;
 
-.. step:: assert [G.326, G.329] <G.326, G.329>
+.. step:: assert ∵ magnitudes_commensurable_incommensurable, incommensurable_magnitudes_added <G.326, G.329>
 
    Therefore :g:`/ B C / <g1:/ B C />` is also incommensurable with the sum of :g:`/ B F / <g1:/ B F />`, :g:`/ D C / <g1:/ D C />`; so that :g:`/ B C / <g1:/ B C />` is also incommensurable in length with the remainder :g:`/ F D / <g1:/ F D />`.
 
@@ -67,13 +72,13 @@ G.331
 
    Therefore the square on :g:`/ B C / <g1:/ B C />` is greater than the square on :g:`A <g1:A>` by the square on a straight line incommensurable with :g:`/ B C / <g1:/ B C />`.
 
-.. step:: assert
-
-   Let the square on :g:`/ B C / <g1:/ B C />` be greater than the square on :g:`A <g1:A>` by the square on a straight line incommensurable with :g:`/ B C / <g1:/ B C />`
-
 .. step:: construct
 
-   Let there be applied to :g:`/ B C / <g1:/ B C />` a parallelogram equal to the fourth part of the square on :g:`A <g1:A>` and deficient by a square figure. Let this be the rectangle :g:`/ B D / <g1:/ B D />`, :g:`/ D C / <g1:/ D C />`.
+   Let the square on :g:`/ B C / <g1:/ B C />` be greater than the square on :g:`A <g1:A>` by the square on a straight line incommensurable with :g:`/ B C / <g1:/ B C />`, and let there be applied to :g:`/ B C / <g1:/ B C />` a parallelogram equal to the fourth part of the square on :g:`A <g1:A>` and deficient by a square figure
+
+.. step:: assert
+
+   Let this be the rectangle :g:`/ B D / <g1:/ B D />`, :g:`/ D C / <g1:/ D C />`.
 
 .. step:: assert
 
@@ -87,15 +92,15 @@ G.331
 
    The square on :g:`/ B C / <g1:/ B C />` is greater than the square on :g:`A <g1:A>` by the square on a straight line incommensurable with :g:`/ B C / <g1:/ B C />`;
 
-.. step:: assert [G.329] <G.329>
+.. step:: assert ∵ incommensurable_magnitudes_added <G.329>
 
    Therefore :g:`/ B C / <g1:/ B C />` is incommensurable in length with :g:`/ F D / <g1:/ F D />`, so that :g:`/ B C / <g1:/ B C />` is also incommensurable with the remainder, the sum of :g:`/ B F / <g1:/ B F />`, :g:`/ D C / <g1:/ D C />`.
 
-.. step:: assert [G.319] <G.319>
+.. step:: assert ∵ magnitudes_ratio_number <G.319>
 
    The sum of :g:`/ B F / <g1:/ B F />`, :g:`/ D C / <g1:/ D C />` is commensurable in length with :g:`/ D C / <g1:/ D C />`.
 
-.. step:: conclude [G.326, G.329] <G.326, G.329>
+.. step:: conclude ∵ magnitudes_commensurable_incommensurable, incommensurable_magnitudes_added <G.326, G.329>
 
    Therefore :g:`/ B C / <g1:/ B C />` is also incommensurable in length with :g:`/ D C / <g1:/ D C />`, so that, :term:`*separando* <separando>`, :g:`/ B D / <g1:/ B D />` is also incommensurable in length with :g:`/ D C / <g1:/ D C />`.
 

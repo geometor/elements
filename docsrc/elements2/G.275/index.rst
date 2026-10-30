@@ -24,16 +24,21 @@ G.275
 
    If a number by multiplying itself make a cube number, it will itself also be cube.
 
+.. signature:: theorem
+
+   | :fn:`number_multiplying_itself <G.275>`\ ()
+   | **prove** :g:`A <g1:A>` is also cube
+
 .. picture:: g1.svg
    :alt: Proposition 6 Diagram
 
 .. step:: assert
 
-   For let the number :g:`A <g1:A>` by multiplying itself make the cube number :g:`B <g1:B>`
+   Let the number :g:`A <g1:A>` by multiplying itself make the cube number :g:`B <g1:B>`
 
 .. step:: assert
 
-   For let :g:`A <g1:A>` by multiplying :g:`B <g1:B>` make :g:`C <g1:C>`.
+   Let :g:`A <g1:A>` by multiplying :g:`B <g1:B>` make :g:`C <g1:C>`.
 
 .. step:: assert
 
@@ -55,7 +60,7 @@ G.275
 
    The unit also measures :g:`A <g1:A>` according to the units in it.
 
-.. step:: assert [G.210] <G.210>
+.. step:: assert ∵ numbers_proportional_multiple_def <G.210>
 
    Therefore, as the unit is to :g:`A <g1:A>`, so is :g:`A <g1:A>` to :g:`B <g1:B>`.
 
@@ -71,7 +76,7 @@ G.275
 
    The unit also measures :g:`A <g1:A>` according to the units in it.
 
-.. step:: assert [G.210] <G.210>
+.. step:: assert ∵ numbers_proportional_multiple_def <G.210>
 
    Therefore, as the unit is to :g:`A <g1:A>`, so is :g:`B <g1:B>` to :g:`C <g1:C>`.
 
@@ -91,7 +96,7 @@ G.275
 
    They are similar solid numbers.
 
-.. step:: assert [G.261] <G.261>
+.. step:: assert ∵ similar_solid_numbers <G.261>
 
    Therefore there are two mean proportional numbers between :g:`B <g1:B>`, :g:`C <g1:C>`.
 
@@ -99,7 +104,7 @@ G.275
 
    And, as :g:`B <g1:B>` is to :g:`C <g1:C>`, so is :g:`A <g1:A>` to :g:`B <g1:B>`.
 
-.. step:: assert [G.248] <G.248>
+.. step:: assert ∵ numbers_there_fall <G.248>
 
    Therefore there are two mean proportional numbers between :g:`A <g1:A>`, :g:`B <g1:B>` also.
 
@@ -107,7 +112,7 @@ G.275
 
    :g:`B <g1:B>` is cube;
 
-.. step:: conclude [G.265] <G.265>
+.. step:: conclude ∵ numbers_continued_proportion_viii_23 <G.265>
 
    Therefore :g:`A <g1:A>` is also cube.
 

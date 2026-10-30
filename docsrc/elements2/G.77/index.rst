@@ -24,24 +24,25 @@ G.77
 
    If on the circumference of a circle two points be taken at random, the straight line joining the points will fall within the circle.
 
+.. signature:: theorem
+
+   | :fn:`circumference_circle_points <G.77>`\ ()
+   | **prove** the straight line joined from :g:`A <g1:A>` to :g:`B <g1:B>` will fall within the circle
+
 .. picture:: g1.svg
    :alt: Proposition 2
 
-.. step:: given
-
-   :g:`( A B C ) <g1:( A B C )>` be a circle
-
 .. step:: construct
 
-   Let two points :g:`A <g1:A>`, :g:`B <g1:B>` be taken at random on its circumference
+   Let :g:`( A B C ) <g1:( A B C )>` be a circle, and let two points :g:`A <g1:A>`, :g:`B <g1:B>` be taken at random on its circumference
 
 .. step:: assert
 
-   For suppose it does not, but, if possible, let it fall outside, as :g:`/ A E B / <g1:/ A E B />`
+   Suppose it does not, but, if possible, let it fall outside, as :g:`/ A E B / <g1:/ A E B />`
 
-.. step:: construct [G.76] <G.76>
+.. step:: construct
 
-   Let the center of :g:`( A B C ) <g1:( A B C )>` be taken
+   :fn:`find_circle_center <G.76>`: Let the center of :g:`( A B C ) <g1:( A B C )>` be taken
 
 .. step:: assert
 
@@ -49,13 +50,13 @@ G.77
 
 .. step:: construct
 
-   **segment** :g:`/ D A / <g1:/ D A />`, :g:`/ D B / <g1:/ D B />`
+   :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`A <g1:A>`) → :g:`/ D A / <g1:/ D A />`, :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`B <g1:B>`) → :g:`/ D B / <g1:/ D B />`
 
 .. step:: construct
 
    Let :g:`/ D F E / <g1:/ D F E />` be drawn through.
 
-.. step:: assert [G.12] <G.12>
+.. step:: assert ∵ isosceles_base_angles <G.12>
 
    Since :g:`/ D A / <g1:/ D A />` is :eq:`equal <g1:/ D A / = g1:/ D B />` to :g:`/ D B / <g1:/ D B />` → :g:`< D A E ) <g1:< D A E )>` is also :eq:`equal <g1:< D A E ) = g1:< D B E )>` to :g:`< D B E ) <g1:< D B E )>`.
 
@@ -63,7 +64,7 @@ G.77
 
    And, since one side :g:`/ A E B / <g1:/ A E B />` of :g:`< D A E > <g1:< D A E >>` is produced,
 
-.. step:: assert [G.27] <G.27>
+.. step:: assert ∵ exterior_angle_greater <G.27>
 
    :g:`< D E B ) <g1:< D E B )>` is greater than :g:`< D A E ) <g1:< D A E )>`.
 
@@ -75,7 +76,7 @@ G.77
 
    Therefore :g:`< D E B ) <g1:< D E B )>` is greater than :g:`< D B E ) <g1:< D B E )>`.
 
-.. step:: assert [G.30] <G.30>
+.. step:: assert ∵ greater_angle_greater_side <G.30>
 
    The greater angle is subtended by the greater side
 

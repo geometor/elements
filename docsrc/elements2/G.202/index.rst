@@ -24,6 +24,12 @@ G.202
 
    Given three numbers not prime to one another, to find their greatest common measure.
 
+.. signature:: problem
+
+   | :fn:`numbers_prime_find_vii_3 <G.202>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`) → :g:`E <g1:E>`
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` be the three given numbers not prime to one another
+   | **construct** :g:`E <g1:E>` is the greatest common measure of :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`
+
 .. picture:: g1.svg
    :alt: Proposition 3 Diagram
 
@@ -31,9 +37,9 @@ G.202
 
    :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` be the three given numbers not prime to one another
 
-.. step:: construct [G.201] <G.201>
+.. step:: construct
 
-   For let the greatest common measure, :g:`D <g1:D>`, of the two numbers :g:`A <g1:A>`, :g:`B <g1:B>` be taken
+   :fn:`numbers_prime_find <G.201>`: Let the greatest common measure, :g:`D <g1:D>`, of the two numbers :g:`A <g1:A>`, :g:`B <g1:B>` be taken
 
 .. step:: assert
 
@@ -61,17 +67,13 @@ G.202
 
 .. step:: assert
 
-   Let such a number measure them
-
-.. step:: assert
-
-   Let it be :g:`E <g1:E>`.
+   Let such a number measure them, and let it be :g:`E <g1:E>`.
 
 .. step:: assert
 
    Since then :g:`E <g1:E>` measures :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, it will also measure :g:`A <g1:A>`, :g:`B <g1:B>` ;
 
-.. step:: assert [G.201] <G.201>
+.. step:: assert ∵ numbers_prime_find <G.201>
 
    Therefore it will also measure the greatest common measure of :g:`A <g1:A>`, :g:`B <g1:B>`.
 
@@ -103,7 +105,7 @@ G.202
 
    Since :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` are not prime to one another, some number will measure them.
 
-.. step:: assert [G.201] <G.201>
+.. step:: assert ∵ numbers_prime_find <G.201>
 
    Now that which measures :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` will also measure :g:`A <g1:A>`, :g:`B <g1:B>`, and will measure :g:`D <g1:D>`, the greatest common measure of :g:`A <g1:A>`, :g:`B <g1:B>`.
 
@@ -119,9 +121,9 @@ G.202
 
    Therefore :g:`D <g1:D>`, :g:`C <g1:C>` are not prime to one another.
 
-.. step:: construct [G.201] <G.201>
+.. step:: construct
 
-   Let then their greatest common measure :g:`E <g1:E>` be taken.
+   :fn:`numbers_prime_find <G.201>`: Let then their greatest common measure :g:`E <g1:E>` be taken.
 
 .. step:: assert
 
@@ -153,17 +155,13 @@ G.202
 
 .. step:: assert
 
-   Let such a number measure them
-
-.. step:: assert
-
-   Let it be :g:`F <g1:F>`.
+   Let such a number measure them, and let it be :g:`F <g1:F>`.
 
 .. step:: assert
 
    Since :g:`F <g1:F>` measures :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, it also measures :g:`A <g1:A>`, :g:`B <g1:B>` ;
 
-.. step:: assert [G.201] <G.201>
+.. step:: assert ∵ numbers_prime_find <G.201>
 
    Therefore it will also measure the greatest common measure of :g:`A <g1:A>`, :g:`B <g1:B>`.
 
@@ -183,7 +181,7 @@ G.202
 
    Therefore :g:`F <g1:F>` measures :g:`D <g1:D>`, :g:`C <g1:C>` ;
 
-.. step:: assert [G.201] <G.201>
+.. step:: assert ∵ numbers_prime_find <G.201>
 
    Therefore it will also measure the greatest common measure of :g:`D <g1:D>`, :g:`C <g1:C>`.
 

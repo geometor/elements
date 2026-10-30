@@ -24,6 +24,12 @@ G.499
 
    Similar cones and cylinders are to one another in the triplicate ratio of the diameters in their bases.
 
+.. signature:: theorem
+
+   | :fn:`similar_cones_cylinders <G.499>`\ (:g:`( A B C D ) <g1:( A B C D )>`, :g:`( E F G H ) <g1:( E F G H )>`, :g:`/ B D / <g1:/ B D />`, :g:`/ F H / <g1:/ F H />`)
+   | **given** there be similar cones and cylinders, let :g:`( A B C D ) <g1:( A B C D )>`, :g:`( E F G H ) <g1:( E F G H )>` be their bases, :g:`/ B D / <g1:/ B D />`, :g:`/ F H / <g1:/ F H />` the diameters of the bases, :g:`/ K L / <g1:/ K L />`, :g:`/ M N / <g1:/ M N />` the axes of the cones and cylinders
+   | **prove** the cone of which :g:`( A B C D ) <g1:( A B C D )>` is the base and :g:`L <g1:L>` the vertex has to the cone of which :g:`( E F G H ) <g1:( E F G H )>` is the base and :g:`N <g1:N>` the vertex the ratio triplicate of that which :g:`/ B D / <g1:/ B D />` has to :g:`/ F H / <g1:/ F H />`
+
 .. picture:: g1.svg
    :alt: Proposition 12
 
@@ -43,9 +49,9 @@ G.499
 
    First, let it have that triplicate ratio to a less solid :g:`O <g1:O>`.
 
-.. step:: assert [G.124] <G.124>
+.. step:: construct
 
-   Let the square :g:`< E F G H > <g1:< E F G H >>` be inscribed in :g:`( E F G H ) <g1:( E F G H )>`
+   :fn:`inscribe_square_in_circle <G.124>`: Let the square :g:`< E F G H > <g1:< E F G H >>` be inscribed in :g:`( E F G H ) <g1:( E F G H )>`
 
 .. step:: assert
 
@@ -61,11 +67,7 @@ G.499
 
 .. step:: construct
 
-   Let the circumferences :g:`( E P F ) <g1:( E P F )>`, :g:`( F Q G ) <g1:( F Q G )>`, :g:`( G R H ) <g1:( G R H )>`, :g:`( H S E ) <g1:( H S E )>` be bisected at :g:`P <g1:P>`, :g:`Q <g1:Q>`, :g:`R <g1:R>`, :g:`S <g1:S>`
-
-.. step:: construct
-
-   **segment** :g:`/ E P / <g1:/ E P />`, :g:`/ P F / <g1:/ P F />`, :g:`/ F Q / <g1:/ F Q />`, :g:`/ Q G / <g1:/ Q G />`, :g:`/ G R / <g1:/ G R />`, :g:`/ R H / <g1:/ R H />`, :g:`/ H S / <g1:/ H S />`, :g:`/ S E / <g1:/ S E />`
+   :fn:`segment <G.3>`\ () → :g:`( E P F ) <g1:( E P F )>`, :fn:`segment <G.3>`\ () → :g:`( F Q G ) <g1:( F Q G )>`, :fn:`segment <G.3>`\ () → :g:`( G R H ) <g1:( G R H )>`, :fn:`segment <G.3>`\ () → :g:`( H S E ) <g1:( H S E )>`, :fn:`segment <G.3>`\ () → :g:`P <g1:P>`, :fn:`segment <G.3>`\ () → :g:`Q <g1:Q>`, :fn:`segment <G.3>`\ () → :g:`R <g1:R>`, :fn:`segment <G.3>`\ () → :g:`S <g1:S>`, :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`P <g1:P>`) → :g:`/ E P / <g1:/ E P />`, :fn:`segment <G.3>`\ (:g:`P <g1:P>`, :g:`F <g1:F>`) → :g:`/ P F / <g1:/ P F />`, :fn:`segment <G.3>`\ (:g:`F <g1:F>`, :g:`Q <g1:Q>`) → :g:`/ F Q / <g1:/ F Q />`, :fn:`segment <G.3>`\ (:g:`Q <g1:Q>`, :g:`G <g1:G>`) → :g:`/ Q G / <g1:/ Q G />`, :fn:`segment <G.3>`\ (:g:`G <g1:G>`, :g:`R <g1:R>`) → :g:`/ G R / <g1:/ G R />`, :fn:`segment <G.3>`\ (:g:`R <g1:R>`, :g:`H <g1:H>`) → :g:`/ R H / <g1:/ R H />`, :fn:`segment <G.3>`\ (:g:`H <g1:H>`, :g:`S <g1:S>`) → :g:`/ H S / <g1:/ H S />`, :fn:`segment <G.3>`\ (:g:`S <g1:S>`, :g:`E <g1:E>`) → :g:`/ S E / <g1:/ S E />`
 
 .. step:: assert
 
@@ -83,29 +85,21 @@ G.499
 
    Thus, bisecting the circumferences so left, joining straight lines, setting up on each of the triangles pyramids having the same vertex with the cone, and doing this continually,
 
-.. step:: assert [G.313] <G.313>
+.. step:: assert ∵ unequal_magnitudes_set <G.313>
 
    We shall leave some segments of the cone which will be less than the excess by which the cone :g:`< E F G H N > <g1:< E F G H N >>` exceeds the solid :g:`O <g1:O>`.
 
 .. step:: assert
 
-   Let such be left
-
-.. step:: assert
-
-   Let them be the segments on :g:`/ E P / <g1:/ E P />`, :g:`/ P F / <g1:/ P F />`, :g:`/ F Q / <g1:/ F Q />`, :g:`/ Q G / <g1:/ Q G />`, :g:`/ G R / <g1:/ G R />`, :g:`/ R H / <g1:/ R H />`, :g:`/ H S / <g1:/ H S />`, :g:`/ S E / <g1:/ S E />`
+   Let such be left, and let them be the segments on :g:`/ E P / <g1:/ E P />`, :g:`/ P F / <g1:/ P F />`, :g:`/ F Q / <g1:/ F Q />`, :g:`/ Q G / <g1:/ Q G />`, :g:`/ G R / <g1:/ G R />`, :g:`/ R H / <g1:/ R H />`, :g:`/ H S / <g1:/ H S />`, :g:`/ S E / <g1:/ S E />`
 
 .. step:: assert
 
    Therefore the remainder, the pyramid of which the polygon :g:`< E P F Q G R H S > <g1:< E P F Q G R H S >>` is the base and :g:`N <g1:N>` the vertex, is greater than the solid :g:`O <g1:O>`.
 
-.. step:: assert
-
-   Let there be also inscribed in :g:`( A B C D ) <g1:( A B C D )>` the polygon :g:`< A T B U C V D W > <g1:< A T B U C V D W >>` similar and similarly situated to the polygon :g:`< E P F Q G R H S > <g1:< E P F Q G R H S >>`
-
 .. step:: construct
 
-   Let there be set up on the polygon :g:`< A T B U C V D W > <g1:< A T B U C V D W >>` a pyramid having the same vertex with the cone
+   Let there be also inscribed in :g:`( A B C D ) <g1:( A B C D )>` the polygon :g:`< A T B U C V D W > <g1:< A T B U C V D W >>` similar and similarly situated to the polygon :g:`< E P F Q G R H S > <g1:< E P F Q G R H S >>`, and let there be set up on the polygon :g:`< A T B U C V D W > <g1:< A T B U C V D W >>` a pyramid having the same vertex with the cone
 
 .. step:: assert
 
@@ -113,13 +107,13 @@ G.499
 
 .. step:: construct
 
-   **segment** :g:`/ K T / <g1:/ K T />`, :g:`/ M P / <g1:/ M P />`
+   :fn:`segment <G.3>`\ (:g:`K <g1:K>`, :g:`T <g1:T>`) → :g:`/ K T / <g1:/ K T />`, :fn:`segment <G.3>`\ (:g:`M <g1:M>`, :g:`P <g1:P>`) → :g:`/ M P / <g1:/ M P />`
 
 .. step:: assert
 
    Since the cone :g:`< A B C D L > <g1:< A B C D L >>` is similar to the cone :g:`< E F G H N > <g1:< E F G H N >>`,
 
-.. step:: assert [G.498] <G.498>
+.. step:: assert ∵ similar_cones_cylinders_def <G.498>
 
    Therefore, as :g:`/ B D / <g1:/ B D />` is to :g:`/ F H / <g1:/ F H />`, so is the axis :g:`/ K L / <g1:/ K L />` to the axis :g:`/ M N / <g1:/ M N />`.
 
@@ -131,7 +125,7 @@ G.499
 
    Therefore also, as :g:`/ B K / <g1:/ B K />` is to :g:`/ F M / <g1:/ F M />`, so is :g:`/ K L / <g1:/ K L />` to :g:`/ M N / <g1:/ M N />`.
 
-.. step:: assert [G.153] <G.153>
+.. step:: assert ∵ magnitudes_proportional_proportional <G.153>
 
    And, alternately, as :g:`/ B K / <g1:/ B K />` is to :g:`/ K L / <g1:/ K L />`, so is :g:`/ F M / <g1:/ F M />` to :g:`/ M N / <g1:/ M N />`.
 
@@ -139,7 +133,7 @@ G.499
 
    The sides are proportional about :eq:`equal <g1:< B K L ) = g1:< F M N )>` angles, namely :g:`< B K L ) <g1:< B K L )>`, :g:`< F M N ) <g1:< F M N )>`;
 
-.. step:: assert [G.168] <G.168>
+.. step:: assert ∵ triangles_angle_equal <G.168>
 
    Therefore :g:`< B K L > <g1:< B K L >>` is similar to :g:`< F M N > <g1:< F M N >>`.
 
@@ -147,7 +141,7 @@ G.499
 
    Since, as :g:`/ B K / <g1:/ B K />` is to :g:`/ K T / <g1:/ K T />`, so is :g:`/ F M / <g1:/ F M />` to :g:`/ M P / <g1:/ M P />`, and they are about :eq:`equal <g1:< B K T ) = g1:< F M P )>` angles, namely :g:`< B K T ) <g1:< B K T )>`, :g:`< F M P ) <g1:< F M P )>`, inasmuch as, whatever part :g:`< B K T ) <g1:< B K T )>` is of the four right angles at the center :g:`K <g1:K>`, the same part also is :g:`< F M P ) <g1:< F M P )>` of the four right angles at the center :g:`M <g1:M>`; since then the sides are proportional about :eq:`equal <g1:< B K T ) = g1:< F M P )>` angles,
 
-.. step:: assert [G.168] <G.168>
+.. step:: assert ∵ triangles_angle_equal <G.168>
 
    Therefore :g:`< B K T > <g1:< B K T >>` is similar to :g:`< F M P > <g1:< F M P >>`.
 
@@ -163,7 +157,7 @@ G.499
 
    And the sides are proportional about :eq:`equal <g1:< T K L ) = g1:< P M N )>` angles, namely :g:`< T K L ) <g1:< T K L )>`, :g:`< P M N ) <g1:< P M N )>`, for they are :eq:`right <g1:< T K L ) = g1:< P M N )>`;
 
-.. step:: assert [G.168] <G.168>
+.. step:: assert ∵ triangles_angle_equal <G.168>
 
    Therefore :g:`< L K T > <g1:< L K T >>` is similar to :g:`< N M P > <g1:< N M P >>`.
 
@@ -171,7 +165,7 @@ G.499
 
    Since, owing to the similarity of :g:`< L K B > <g1:< L K B >>`, :g:`< N M F > <g1:< N M F >>`, as :g:`/ L B / <g1:/ L B />` is to :g:`/ B K / <g1:/ B K />`, so is :g:`/ N F / <g1:/ N F />` to :g:`/ F M / <g1:/ F M />`, and, owing to the similarity of :g:`< B K T > <g1:< B K T >>`, :g:`< F M P > <g1:< F M P >>`, as :g:`/ K B / <g1:/ K B />` is to :g:`/ B T / <g1:/ B T />`, so is :g:`/ M F / <g1:/ M F />` to :g:`/ F P / <g1:/ F P />`,
 
-.. step:: assert [G.159] <G.159>
+.. step:: assert ∵ there_number_magnitudes_v_22 <G.159>
 
    Therefore, :term:`*ex aequali* <ex-aequali>`, as :g:`/ L B / <g1:/ L B />` is to :g:`/ B T / <g1:/ B T />`, so is :g:`/ N F / <g1:/ N F />` to :g:`/ F P / <g1:/ F P />`.
 
@@ -179,7 +173,7 @@ G.499
 
    Again since, owing to the similarity of :g:`< L T K > <g1:< L T K >>`, :g:`< N P M > <g1:< N P M >>`, as :g:`/ L T / <g1:/ L T />` is to :g:`/ T K / <g1:/ T K />`, so is :g:`/ N P / <g1:/ N P />` to :g:`/ P M / <g1:/ P M />`, and, owing to the similarity of :g:`< T K B > <g1:< T K B >>`, :g:`< P M F > <g1:< P M F >>`, as :g:`/ K T / <g1:/ K T />` is to :g:`/ T B / <g1:/ T B />`, so is :g:`/ M P / <g1:/ M P />` to :g:`/ P F / <g1:/ P F />` ;
 
-.. step:: assert [G.159] <G.159>
+.. step:: assert ∵ there_number_magnitudes_v_22 <G.159>
 
    Therefore, :term:`*ex aequali* <ex-aequali>`, as :g:`/ L T / <g1:/ L T />` is to :g:`/ T B / <g1:/ T B />`, so is :g:`/ N P / <g1:/ N P />` to :g:`/ P F / <g1:/ P F />`.
 
@@ -187,19 +181,19 @@ G.499
 
    It was also proved that, as :g:`/ T B / <g1:/ T B />` is to :g:`/ B L / <g1:/ B L />`, so is :g:`/ P F / <g1:/ P F />` to :g:`/ F N / <g1:/ F N />`.
 
-.. step:: assert [G.159] <G.159>
+.. step:: assert ∵ there_number_magnitudes_v_22 <G.159>
 
    Therefore, :term:`*ex aequali* <ex-aequali>`, as :g:`/ T L / <g1:/ T L />` is to :g:`/ L B / <g1:/ L B />`, so is :g:`/ P N / <g1:/ P N />` to :g:`/ N F / <g1:/ N F />`.
 
-.. step:: assert [G.167, G.170] <G.167, G.170>
+.. step:: assert ∵ triangles_sides_proportional, similar_polygons_angles_def <G.167, G.170>
 
    Therefore in :g:`< L T B > <g1:< L T B >>`, :g:`< N P F > <g1:< N P F >>` the sides are proportional ; therefore :g:`< L T B > <g1:< L T B >>`, :g:`< N P F > <g1:< N P F >>` are equiangular ; hence they are also similar.
 
-.. step:: assert [G.472] <G.472>
+.. step:: assert ∵ similar_solid_figures_def <G.472>
 
    Therefore the pyramid of which :g:`< B K T > <g1:< B K T >>` is the base and :g:`L <g1:L>` the vertex is also similar to the pyramid of which :g:`< F M P > <g1:< F M P >>` is the base and :g:`N <g1:N>` the vertex, for they are contained by similar planes equal in multitude.
 
-.. step:: assert [G.494] <G.494>
+.. step:: assert ∵ similar_pyramids_triangular <G.494>
 
    Similar pyramids which have triangular bases are to one another in the triplicate ratio of their corresponding sides.
 
@@ -211,7 +205,7 @@ G.499
 
    Similarly, by joining straight lines from :g:`A <g1:A>`, :g:`W <g1:W>`, :g:`D <g1:D>`, :g:`V <g1:V>`, :g:`C <g1:C>`, :g:`U <g1:U>` to :g:`K <g1:K>`, and from :g:`E <g1:E>`, :g:`S <g1:S>`, :g:`H <g1:H>`, :g:`R <g1:R>`, :g:`G <g1:G>`, :g:`Q <g1:Q>` to :g:`M <g1:M>`, and setting up on each of the triangles pyramids which have the same vertex with the cones, we can prove that each of the similarly arranged pyramids will also have to each similarly arranged pyramid the ratio triplicate of that which the corresponding side :g:`/ B K / <g1:/ B K />` has to the corresponding side :g:`/ F M / <g1:/ F M />`, that is, which :g:`/ B D / <g1:/ B D />` has to :g:`/ F H / <g1:/ F H />`.
 
-.. step:: assert [G.149] <G.149>
+.. step:: assert ∵ number_magnitudes_proportional <G.149>
 
    And, as one of the antecedents is to one of the consequents, so are all the antecedents to all the consequents .
 
@@ -227,7 +221,7 @@ G.499
 
    Is the base and :g:`L <g1:L>` the vertex has also to the solid :g:`O <g1:O>` the ratio triplicate of that which :g:`/ B D / <g1:/ B D />` has to :g:`/ F H / <g1:/ F H />`;
 
-.. step:: assert [G.153] <G.153>
+.. step:: assert ∵ magnitudes_proportional_proportional <G.153>
 
    Therefore, as the cone of which :g:`( A B C D ) <g1:( A B C D )>` is the base and :g:`L <g1:L>` the vertex is to the solid :g:`O <g1:O>`, so is the pyramid of which the polygon :g:`< A T B U C V D W > <g1:< A T B U C V D W >>` is the base and :g:`L <g1:L>` the vertex to the pyramid of which the polygon :g:`< E P F Q G R H S > <g1:< E P F Q G R H S >>` is the base and :g:`N <g1:N>` the vertex ; therefore, alternately, as the cone of which :g:`( A B C D ) <g1:( A B C D )>` is the base and :g:`L <g1:L>` the vertex is to the pyramid contained in it of which the polygon :g:`< A T B U C V D W > <g1:< A T B U C V D W >>` is the base and :g:`L <g1:L>` the vertex, so is the solid :g:`O <g1:O>` to the pyramid of which the polygon :g:`< E P F Q G R H S > <g1:< E P F Q G R H S >>` is the base and :g:`N <g1:N>` the vertex.
 
@@ -287,7 +281,7 @@ G.499
 
    Therefore the cone :g:`< A B C D L > <g1:< A B C D L >>` has to the cone :g:`< E F G H N > <g1:< E F G H N >>` the ratio triplicate of that which :g:`/ B D / <g1:/ B D />` has to :g:`/ F H / <g1:/ F H />`.
 
-.. step:: assert [G.496] <G.496>
+.. step:: assert ∵ cone_part_cylinder <G.496>
 
    But, as the cone is to the cone, so is the cylinder to the cylinder, for the cylinder which is on the same base as the cone and of equal height with it is triple of the cone.
 

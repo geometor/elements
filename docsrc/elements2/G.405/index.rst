@@ -10,7 +10,7 @@
 :category: theorem, proof, incommensurables, magnitudes
 :tags: book-x, segment, polygon, square, incommensurable, medial, reductio-ad-absurdum
 :dependencies: G.68, G.163, G.323, G.336, G.394, G.399, G.400
-:excerpt: To a straight line which produces with a medial area a medial whole only one straight line can be annexed which is incommensurable in square with the whole straight line and which with the whole straight line makes the sum of the squares
+:excerpt: To a straight line which produces with a medial area a medial whole only one straight line can be annexed which is incommensurable in square with the whole straight line and which with the whole straight line makes the sum of the squares on them medial and twice the rectangle contained by them both medial and also incommensurable with the sum of the squares on them.
 
 .. _G.405:
 .. _X.84:
@@ -22,11 +22,13 @@ G.405
 
 .. enunciation::
 
-   To a straight line which produces with a medial area a medial whole only one straight line can be annexed which is incommensurable in square with the whole straight line and which with the whole straight line makes the sum of the squares
+   To a straight line which produces with a medial area a medial whole only one straight line can be annexed which is incommensurable in square with the whole straight line and which with the whole straight line makes the sum of the squares on them medial and twice the rectangle contained by them both medial and also incommensurable with the sum of the squares on them.
 
-.. enunciation::
+.. signature:: theorem
 
-   On them medial and twice the rectangle contained by them both medial and also incommensurable with the sum of the squares on them.
+   | :fn:`straight_line_produces_x_84 <G.405>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`)
+   | **given** :g:`/ A B / <g1:/ A B />` be the straight line which produces with a medial area a medial whole, :g:`/ B C / <g1:/ B C />` an annex to it
+   | **prove** no other straight line can be annexed to :g:`/ A B / <g1:/ A B />` which fulfils the aforesaid conditions
 
 .. picture:: g1.svg
    :alt: Proposition 84
@@ -35,23 +37,19 @@ G.405
 
    :g:`/ A B / <g1:/ A B />` be the straight line which produces with a medial area a medial whole, :g:`/ B C / <g1:/ B C />` an annex to it
 
-.. step:: assert [G.399] <G.399>
+.. step:: assert ∵ straight_line_there_x_78 <G.399>
 
    Therefore :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` are straight lines incommensurable in square which fulfil the aforesaid conditions.
 
-.. step:: assert [G.399] <G.399>
+.. step:: assert ∵ straight_line_there_x_78 <G.399>
 
    If possible, let :g:`/ B D / <g1:/ B D />` be so annexed → so that :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` are also straight lines incommensurable in square which make the squares on :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` added together medial, twice the rectangle :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` medial, and also the squares on :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` incommensurable with twice the rectangle :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />`.
 
 .. step:: construct
 
-   Let a rational straight line :g:`/ E F / <g1:/ E F />` be set out, let :g:`< E G > <g1:< E G >>` equal to the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` be applied to :g:`/ E F / <g1:/ E F />`, producing :g:`/ E M / <g1:/ E M />` as breadth
+   Let a rational straight line :g:`/ E F / <g1:/ E F />` be set out, let :g:`< E G > <g1:< E G >>` equal to the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` be applied to :g:`/ E F / <g1:/ E F />`, producing :g:`/ E M / <g1:/ E M />` as breadth, and let :g:`< H G > <g1:< H G >>` equal to twice the rectangle :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` be applied to :g:`/ E F / <g1:/ E F />`, producing :g:`/ H M / <g1:/ H M />` as breadth
 
-.. step:: construct
-
-   Let :g:`< H G > <g1:< H G >>` equal to twice the rectangle :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` be applied to :g:`/ E F / <g1:/ E F />`, producing :g:`/ H M / <g1:/ H M />` as breadth
-
-.. step:: assert [G.68] <G.68>
+.. step:: assert ∵ square_of_difference <G.68>
 
    Therefore the remainder, the square on :g:`/ A B / <g1:/ A B />`, is equal to :g:`< E L > <g1:< E L >>`.
 
@@ -67,7 +65,7 @@ G.405
 
    The square on :g:`/ A B / <g1:/ A B />` is also equal to :g:`< E L > <g1:< E L >>`;
 
-.. step:: assert [G.68] <G.68>
+.. step:: assert ∵ square_of_difference <G.68>
 
    Therefore the remainder, twice the rectangle :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />`, is equal to :g:`< H I > <g1:< H I >>`.
 
@@ -83,7 +81,7 @@ G.405
 
    It is applied to the rational straight line :g:`/ E F / <g1:/ E F />`, producing :g:`/ E M / <g1:/ E M />` as breadth ;
 
-.. step:: assert [G.336] <G.336>
+.. step:: assert ∵ square_medial_straight <G.336>
 
    Therefore :g:`/ E M / <g1:/ E M />` is rational and incommensurable in length with :g:`/ E F / <g1:/ E F />`.
 
@@ -99,7 +97,7 @@ G.405
 
    It is applied to the rational straight line :g:`/ E F / <g1:/ E F />`, producing :g:`/ H M / <g1:/ H M />` as breadth ;
 
-.. step:: assert [G.336] <G.336>
+.. step:: assert ∵ square_medial_straight <G.336>
 
    Therefore :g:`/ H M / <g1:/ H M />` is rational and incommensurable in length with :g:`/ E F / <g1:/ E F />`.
 
@@ -107,7 +105,7 @@ G.405
 
    And, since the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` are incommensurable with twice the rectangle :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />`, :g:`< E G > <g1:< E G >>` is also incommensurable with :g:`< H G > <g1:< H G >>` ;
 
-.. step:: assert [G.163, G.323] <G.163, G.323>
+.. step:: assert ∵ triangles_parallelograms_height, magnitudes_proportional_commensurable <G.163, G.323>
 
    Therefore :g:`/ E M / <g1:/ E M />` is also incommensurable in length with :g:`/ M H / <g1:/ M H />`.
 
@@ -115,7 +113,7 @@ G.405
 
    Both are rational ;
 
-.. step:: assert [G.394] <G.394>
+.. step:: assert ∵ rational_straight_line <G.394>
 
    Therefore :g:`/ E M / <g1:/ E M />`, :g:`/ M H / <g1:/ M H />` are rational straight lines commensurable in square only ; therefore :g:`/ E H / <g1:/ E H />` is an apotome, and :g:`/ H M / <g1:/ H M />` an annex to it.
 
@@ -123,7 +121,7 @@ G.405
 
    Similarly we can prove that :g:`/ E H / <g1:/ E H />` is again an apotome and :g:`/ H N / <g1:/ H N />` an annex to it.
 
-.. step:: assert [G.400] <G.400>
+.. step:: assert ∵ apotome_only_rational <G.400>
 
    Therefore to an apotome different rational straight lines are annexed which are commensurable with the wholes in square only : which was proved impossible.
 

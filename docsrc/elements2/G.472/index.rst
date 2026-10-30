@@ -23,6 +23,10 @@ G.472
 
    :term:`**Similar solid figures** <similar-solid-figures>` are those contained by similar planes equal in multitude.
 
+.. signature:: def
+
+   | :fn:`similar_solid_figures_def <G.472>`
+
 Required for
 ------------
 

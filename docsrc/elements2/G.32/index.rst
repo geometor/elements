@@ -24,6 +24,11 @@ G.32
 
    Segments constructed from the endpoints of one side of a triangle to an interior point have a lesser sum but contain a greater angle than the other two sides.
 
+.. signature:: theorem
+
+   | :fn:`interior_triangle_bounds <G.32>`\ ()
+   | **prove** :g:`/ B D / <g1:/ B D />`, :g:`/ D C / <g1:/ D C />` are less than the remaining two sides of :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />`, but contain an angle :g:`< B D C ) <g1:< B D C )>` greater than :g:`< B A C ) <g1:< B A C )>`
+
 .. picture:: g1.svg
    :alt: Folio 0303 Figure 1 - Proposition 21
 
@@ -31,15 +36,19 @@ G.32
 
    On :g:`/ B C / <g1:/ B C />`, one of the sides of :g:`< A B C > <g1:< A B C >>`, from its extremities :g:`B <g1:B>`, :g:`C <g1:C>`, let :g:`/ B D / <g1:/ B D />`, :g:`/ D C / <g1:/ D C />` be constructed meeting within the triangle
 
-.. step:: construct [G.31] <G.31>
+.. step:: construct
 
-   For let :g:`[ B D ] <g1:[ B D ]>` be drawn through to :g:`E <g1:E>`. Then, since in any triangle two sides are greater than the remaining one.
+   :fn:`extend <G.7>`\ (:g:`[ B D ] <g1:[ B D ]>`) → :g:`E <g1:E>`
+
+.. step:: assert ∵ triangle_inequality <G.31>
+
+   Since in any triangle two sides are greater than the remaining one.
 
 .. step:: assert
 
    Therefore, in :g:`< A B E > <g1:< A B E >>`, the two sides :g:`/ A B / <g1:/ A B />`, :g:`/ A E / <g1:/ A E />` are greater than :g:`/ B E / <g1:/ B E />`.
 
-.. step:: assert
+.. step:: construct
 
    Let :g:`/ E C / <g1:/ E C />` be added to each;
 
@@ -51,7 +60,7 @@ G.32
 
    Since, in :g:`< C E D > <g1:< C E D >>` → the two sides :g:`/ C E / <g1:/ C E />`, :g:`/ E D / <g1:/ E D />` are greater than :g:`/ C D / <g1:/ C D />`,
 
-.. step:: assert
+.. step:: construct
 
    Let :g:`/ D B / <g1:/ D B />` be added to each;
 
@@ -67,7 +76,7 @@ G.32
 
    Therefore :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />` are much greater than :g:`/ B D / <g1:/ B D />`, :g:`/ D C / <g1:/ D C />`.
 
-.. step:: assert [G.27] <G.27>
+.. step:: assert ∵ exterior_angle_greater <G.27>
 
    Since in any triangle the exterior angle is greater than the interior and opposite angle.
 
@@ -81,7 +90,7 @@ G.32
 
 .. step:: assert
 
-   For the same reason, moreover, in :g:`< A B E > <g1:< A B E >>` also,
+   The same reason, moreover, in :g:`< A B E > <g1:< A B E >>` also,
 
 .. step:: assert
 

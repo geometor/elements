@@ -23,6 +23,10 @@ G.143
 
    Magnitudes are said to:term:`**have a ratio** <have-a-ratio>` to one another which are capable, when multiplied, of exceeding one another.
 
+.. signature:: def
+
+   | :fn:`magnitudes_said_ratio_def_v_def_4 <G.143>`
+
 Required for
 ------------
 

@@ -24,26 +24,31 @@ G.68
 
    If a straight line be cut at random, the square on the whole and that on one of the segments both together are equal to twice the rectangle contained by the whole and the said segment and the square on the remaining segment.
 
+.. signature:: theorem
+
+   | :fn:`square_of_difference <G.68>`\ ()
+   | **prove** the squares on :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are equal to twice the rectangle contained by :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` and the square on :g:`/ C A / <g1:/ C A />`
+
 .. picture:: g1.svg
    :alt: Diagram
 
 .. step:: construct
 
-   For let a straight line :g:`/ A B / <g1:/ A B />` be cut at random at :g:`C <g1:C>`
+   Let a straight line :g:`/ A B / <g1:/ A B />` be cut at random at :g:`C <g1:C>`
 
-.. step:: construct [G.59] <G.59>
+.. step:: construct
 
-   For let the square :g:`< A D E B > <g1:< A D E B >>` be described on :g:`/ A B / <g1:/ A B />`.
+   :fn:`square_on_segment <G.59>`: Let the square :g:`< A D E B > <g1:< A D E B >>` be described on :g:`/ A B / <g1:/ A B />`.
 
 .. step:: construct
 
    And let the figure be drawn.
 
-.. step:: assert [G.56] <G.56>
+.. step:: assert ∵ parallelogram_complements <G.56>
 
    Since :g:`< A G > <g1:< A G >>` is :eq:`equal <g1:< A G > = g1:< G E >>` to :g:`< G E > <g1:< G E >>`.
 
-.. step:: assert
+.. step:: construct
 
    Let :g:`< C F > <g1:< C F >>` be added to each
 
@@ -75,7 +80,7 @@ G.68
 
    Therefore the gnomon :g:`< K L M > <g1:< K L M >>` and the square :g:`< C F > <g1:< C F >>` are equal to twice the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`.
 
-.. step:: assert
+.. step:: construct
 
    Let :g:`< D G > <g1:< D G >>`, which is the square on :g:`/ A C / <g1:/ A C />`, be added to each
 

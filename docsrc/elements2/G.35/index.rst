@@ -24,28 +24,26 @@ G.35
 
    If two triangles have two sides equal to two sides respectively, the one with the greater included angle has the greater base.
 
+.. signature:: theorem
+
+   | :fn:`hinge_theorem <G.35>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>`, :g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />`)
+   | **given** :g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>` be two triangles having the two sides :g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />` :eq:`equal <g1:/ A B / = g1:/ D E /; g1:/ A C / = g1:/ D F />` to the two sides :g:`/ D E / <g1:/ D E />`, :g:`/ D F / <g1:/ D F />` respectively, namely :g:`/ A B / <g1:/ A B />` to :g:`/ D E / <g1:/ D E />`, :g:`/ A C / <g1:/ A C />` to :g:`/ D F / <g1:/ D F />`, let the angle at :g:`< B A C ) <g1:< B A C )>` be greater than the angle at :g:`< E D F ) <g1:< E D F )>`
+   | **prove** the base :g:`/ B C / <g1:/ B C />` is also greater than the base :g:`/ E F / <g1:/ E F />`
+
 .. picture:: g1.svg
    :alt: Folio 0310 Figure 2 - Proposition 24
 
 .. step:: given
 
-   :g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>` be two triangles having the two sides :g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />` :eq:`equal <g1:/ A B / = g1:/ D E /; g1:/ A C / = g1:/ D F />` to the two sides :g:`/ D E / <g1:/ D E />`, :g:`/ D F / <g1:/ D F />` respectively, namely :g:`/ A B / <g1:/ A B />` to :g:`/ D E / <g1:/ D E />`, :g:`/ A C / <g1:/ A C />` to :g:`/ D F / <g1:/ D F />`
-
-.. step:: assert
-
-   Let the angle at :g:`< B A C ) <g1:< B A C )>` be greater than the angle at :g:`< E D F ) <g1:< E D F )>`
-
-.. step:: construct [G.34] <G.34>
-
-   Since :g:`< B A C ) <g1:< B A C )>` is greater than :g:`< E D F ) <g1:< E D F )>`, let there be constructed, on :g:`/ D E / <g1:/ D E />`, and at :g:`D <g1:D>` on it, :g:`< E D G ) <g1:< E D G )>` :eq:`equal <g1:< E D G ) = g1:< B A C )>` to :g:`< B A C ) <g1:< B A C )>`
+   :g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>` be two triangles having the two sides :g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />` :eq:`equal <g1:/ A B / = g1:/ D E /; g1:/ A C / = g1:/ D F />` to the two sides :g:`/ D E / <g1:/ D E />`, :g:`/ D F / <g1:/ D F />` respectively, namely :g:`/ A B / <g1:/ A B />` to :g:`/ D E / <g1:/ D E />`, :g:`/ A C / <g1:/ A C />` to :g:`/ D F / <g1:/ D F />`, let the angle at :g:`< B A C ) <g1:< B A C )>` be greater than the angle at :g:`< E D F ) <g1:< E D F )>`
 
 .. step:: construct
 
-   Let :g:`/ D G / <g1:/ D G />` be made :eq:`equal <g1:/ D G / = g1:/ A C / = g1:/ D F />` to either of :g:`/ A C / <g1:/ A C />`, :g:`/ D F / <g1:/ D F />`
+   :fn:`copy_angle <G.34>`: Since :g:`< B A C ) <g1:< B A C )>` is greater than :g:`< E D F ) <g1:< E D F )>`, let there be constructed, on :g:`/ D E / <g1:/ D E />`, and at :g:`D <g1:D>` on it, :g:`< E D G ) <g1:< E D G )>` :eq:`equal <g1:< E D G ) = g1:< B A C )>` to :g:`< B A C ) <g1:< B A C )>`
 
 .. step:: construct
 
-   **segment** :g:`/ E G / <g1:/ E G />`, :g:`/ F G / <g1:/ F G />`
+   :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`G <g1:G>`) → :g:`/ D G / <g1:/ D G />`, :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`C <g1:C>`) → :g:`/ A C / <g1:/ A C />`, :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`F <g1:F>`) → :g:`/ D F / <g1:/ D F />`, :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`G <g1:G>`) → :g:`/ E G / <g1:/ E G />`, :fn:`segment <G.3>`\ (:g:`F <g1:F>`, :g:`G <g1:G>`) → :g:`/ F G / <g1:/ F G />`
 
 .. step:: assert
 
@@ -55,11 +53,11 @@ G.35
 
    And :g:`< B A C ) <g1:< B A C )>` is :eq:`equal <g1:< B A C ) = g1:< E D G )>` to :g:`< E D G ) <g1:< E D G )>`
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    Therefore the base :g:`/ B C / <g1:/ B C />` is :eq:`equal <g1:/ B C / = g1:/ E G />` to the base :g:`/ E G / <g1:/ E G />`.
 
-.. step:: assert [G.12] <G.12>
+.. step:: assert ∵ isosceles_base_angles <G.12>
 
    Since :g:`/ D F / <g1:/ D F />` is :eq:`equal <g1:/ D F / = g1:/ D G />` to :g:`/ D G / <g1:/ D G />` → :g:`< D G F ) <g1:< D G F )>` is also :eq:`equal <g1:< D G F ) = g1:< D F G )>` to :g:`< D F G ) <g1:< D F G )>`;
 
@@ -75,7 +73,7 @@ G.35
 
    And, since :g:`< E F G > <g1:< E F G >>` is a triangle having :g:`< E F G ) <g1:< E F G )>` greater than :g:`< E G F ) <g1:< E G F )>`,
 
-.. step:: assert [G.30] <G.30>
+.. step:: assert ∵ greater_angle_greater_side <G.30>
 
    And the greater angle is subtended by the greater side,
 

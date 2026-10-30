@@ -24,6 +24,12 @@ G.75
 
    Construct a square equal to a given polygon.
 
+.. signature:: problem
+
+   | :fn:`square_from_polygon <G.75>`\ (:g:`A <g1:A>`) → :g:`/ E H / <g1:/ E H />`
+   | **given** :g:`A <g1:A>` be the given rectilineal figure
+   | **construct** a square, namely that which can be described on :g:`/ E H / <g1:/ E H />`, has been constructed :eq:`equal <g1:/ E H / = g1:A>` to the given rectilineal figure :g:`A <g1:A>`
+
 .. picture:: g1.svg
    :alt: Diagram
 
@@ -31,9 +37,9 @@ G.75
 
    :g:`A <g1:A>` be the given rectilineal figure
 
-.. step:: construct [G.58] <G.58>
+.. step:: construct
 
-   For let there be constructed the rectangular parallelogram :g:`< B D E C > <g1:< B D E C >>` :eq:`equal <g1:< B D E C > = g1:A>` to the rectilineal figure :g:`A <g1:A>`.
+   :fn:`parallelogram_from_polygon <G.58>`: Let there be constructed the rectangular parallelogram :g:`< B D E C > <g1:< B D E C >>` :eq:`equal <g1:< B D E C > = g1:A>` to the rectilineal figure :g:`A <g1:A>`.
 
 .. step:: assert
 
@@ -47,21 +53,17 @@ G.75
 
    But, if not, one of :g:`/ B E / <g1:/ B E />`, :g:`/ E D / <g1:/ E D />` is greater.
 
-.. step:: assert
+.. step:: construct
 
-   Let :g:`/ B E / <g1:/ B E />` be greater
+   :fn:`extend <G.7>`\ (:g:`/ B E / <g1:/ B E />` be greater, and let it) → :g:`F <g1:F>`
 
 .. step:: construct
 
-   Let it be produced to :g:`F <g1:F>`
+   :fn:`cut_equal_segment <G.9>`\ (:g:`/ E D / <g1:/ E D />`) → :g:`/ E F / <g1:/ E F />` (:eq:`equal <g1:/ E F / = g1:/ E D />`)
 
 .. step:: construct
 
-   Let :g:`/ E F / <g1:/ E F />` be made :eq:`equal <g1:/ E F / = g1:/ E D />` to :g:`/ E D / <g1:/ E D />`
-
-.. step:: assert
-
-   Let :g:`/ B F / <g1:/ B F />` be :eq:`bisected <g1:/ G B / = g1:/ G F />` at :g:`G <g1:G>`.
+   :fn:`bisect_segment <G.17>`\ (:g:`/ B F / <g1:/ B F />`) → :g:`G <g1:G>` (:eq:`bisected <g1:/ G B / = g1:/ G F />`)
 
 .. step:: construct
 
@@ -69,13 +71,13 @@ G.75
 
 .. step:: construct
 
-   Let :g:`[ D E ] <g1:[ D E ]>` be produced to :g:`H <g1:H>`
+   :fn:`extend <G.7>`\ (:g:`[ D E ] <g1:[ D E ]>`) → :g:`H <g1:H>`
 
 .. step:: construct
 
-   **segment** :g:`/ G H / <g1:/ G H />`
+   :fn:`segment <G.3>`\ (:g:`G <g1:G>`, :g:`H <g1:H>`) → :g:`/ G H / <g1:/ G H />`
 
-.. step:: assert [G.66] <G.66>
+.. step:: assert ∵ difference_of_squares_equal_unequal <G.66>
 
    Since :g:`/ B F / <g1:/ B F />` has been cut into :eq:`equal <g1:/ G B / = g1:/ G F />` segments at :g:`G <g1:G>`, and into unequal segments at :g:`E <g1:E>` → the rectangle contained by :g:`/ B E / <g1:/ B E />`, :g:`/ E F / <g1:/ E F />` together with the square on :g:`/ E G / <g1:/ E G />` is equal to the square on :g:`/ G F / <g1:/ G F />`.
 
@@ -87,7 +89,7 @@ G.75
 
    Therefore the rectangle :g:`/ B E / <g1:/ B E />`, :g:`/ E F / <g1:/ E F />` together with the square on :g:`/ G E / <g1:/ G E />` is equal to the square on :g:`/ G H / <g1:/ G H />`.
 
-.. step:: assert [G.60] <G.60>
+.. step:: assert ∵ pythagorean_theorem <G.60>
 
    The squares on :g:`/ H E / <g1:/ H E />`, :g:`/ E G / <g1:/ E G />` are equal to the square on :g:`/ G H / <g1:/ G H />`
 
@@ -95,7 +97,7 @@ G.75
 
    Therefore the rectangle :g:`/ B E / <g1:/ B E />`, :g:`/ E F / <g1:/ E F />` together with the square on :g:`/ G E / <g1:/ G E />` is equal to the squares on :g:`/ H E / <g1:/ H E />`, :g:`/ E G / <g1:/ E G />`.
 
-.. step:: assert
+.. step:: construct
 
    Let the square on :g:`/ G E / <g1:/ G E />` be subtracted from each
 

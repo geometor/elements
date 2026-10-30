@@ -24,16 +24,18 @@ G.136
 
    If a first magnitude be the same multiple of a second that a third is of a fourth, and a fifth also be the same multiple of the second that a sixth is of the fourth, the sum of the first and fifth is the same multiple of the second that the sum of the third and sixth is of the fourth.
 
+.. signature:: theorem
+
+   | :fn:`magnitude_multiple_fifth <G.136>`\ (:g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`, :g:`/ D E / <g1:/ D E />`, :g:`F <g1:F>`)
+   | **given** a first magnitude, :g:`/ A B / <g1:/ A B />`, be the same multiple of a second, :g:`C <g1:C>`, that a third, :g:`/ D E / <g1:/ D E />`, is of a fourth, :g:`F <g1:F>`, let a fifth, :g:`/ B G / <g1:/ B G />`, also be the same multiple of the second, :g:`C <g1:C>`, that a sixth, :g:`/ E H / <g1:/ E H />`, is of the fourth :g:`F <g1:F>`
+   | **prove** the sum of the first and fifth, :g:`/ A G / <g1:/ A G />`, will be the same multiple of the second, :g:`C <g1:C>`, that the sum of the third and sixth, :g:`/ D H / <g1:/ D H />`, is of the fourth, :g:`F <g1:F>`
+
 .. picture:: g1.svg
    :alt: Proposition 2 diagram
 
 .. step:: given
 
-   a first magnitude, :g:`/ A B / <g1:/ A B />`, be the same multiple of a second, :g:`C <g1:C>`, that a third, :g:`/ D E / <g1:/ D E />`, is of a fourth, :g:`F <g1:F>`
-
-.. step:: assert
-
-   Let a fifth, :g:`/ B G / <g1:/ B G />`, also be the same multiple of the second, :g:`C <g1:C>`, that a sixth, :g:`/ E H / <g1:/ E H />`, is of the fourth :g:`F <g1:F>`
+   a first magnitude, :g:`/ A B / <g1:/ A B />`, be the same multiple of a second, :g:`C <g1:C>`, that a third, :g:`/ D E / <g1:/ D E />`, is of a fourth, :g:`F <g1:F>`, let a fifth, :g:`/ B G / <g1:/ B G />`, also be the same multiple of the second, :g:`C <g1:C>`, that a sixth, :g:`/ E H / <g1:/ E H />`, is of the fourth :g:`F <g1:F>`
 
 .. step:: assert
 
@@ -41,7 +43,7 @@ G.136
 
 .. step:: assert
 
-   For the same reason also,
+   The same reason also,
 
 .. step:: assert
 

@@ -24,12 +24,18 @@ G.176
 
    To two given straight lines to find a mean proportional.
 
+.. signature:: problem
+
+   | :fn:`mean_proportional <G.176>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`) → :g:`/ D B / <g1:/ D B />`
+   | **given** :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`
+   | **construct** :g:`/ D B / <g1:/ D B />` is a mean proportional between the segments of the base, :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`
+
 .. picture:: g1.svg
    :alt: Book VI Proposition 13
 
 .. step:: given
 
-   :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` be the two
+   :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`
 
 .. step:: construct
 
@@ -41,13 +47,13 @@ G.176
 
 .. step:: construct
 
-   Let :g:`/ B D / <g1:/ B D />` be drawn from :g:`B <g1:B>` at right angles to :g:`/ A C / <g1:/ A C />`
+   :fn:`perpendicular_at <G.19>`\ (:g:`/ A C / <g1:/ A C />`, :g:`B <g1:B>`) → :g:`/ B D / <g1:/ B D />`
 
 .. step:: construct
 
-   **segment** :g:`/ A D / <g1:/ A D />`, :g:`/ D C / <g1:/ D C />`
+   :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`D <g1:D>`) → :g:`/ A D / <g1:/ A D />`, :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`C <g1:C>`) → :g:`/ D C / <g1:/ D C />`
 
-.. step:: assert [G.110] <G.110>
+.. step:: assert ∵ thales_semicircle_theorem <G.110>
 
    Since :g:`< A D C ) <g1:< A D C )>` is an angle in a semicircle, it is right.
 
@@ -55,7 +61,7 @@ G.176
 
    And, since, in the right-angled triangle :g:`< A D C > <g1:< A D C >>`, :g:`/ D B / <g1:/ D B />` has been drawn from the right angle perpendicular to the base,
 
-.. step:: conclude [G.171] <G.171>
+.. step:: conclude ∵ right_angled_triangle <G.171>
 
    Therefore :g:`/ D B / <g1:/ D B />` is a mean proportional between the segments of the base, :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`.
 

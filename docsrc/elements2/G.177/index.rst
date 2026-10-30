@@ -24,24 +24,29 @@ G.177
 
    In equal and equiangular parallelograms the sides about the equal angles are reciprocally proportional; and equiangular parallelograms in which the sides about the equal angles are reciprocally proportional are equal.
 
+.. signature:: theorem
+
+   | :fn:`equal_equiangular_parallelograms <G.177>`\ ()
+   | **prove** the parallelogram :g:`< A B > <g1:< A B >>` is :eq:`equal <g1:< A B > = g1:< B C >>` to the parallelogram :g:`< B C > <g1:< B C >>`
+
 .. picture:: g1.svg
    :alt: Book VI Proposition 14
 
-.. step:: given
-
-   :g:`< A B > <g1:< A B >>`, :g:`< B C > <g1:< B C >>` be :eq:`equal <g1:< A B > = g1:< B C >>` and equiangular parallelograms having the angles at :g:`< D B F ) <g1:< D B F )>` :eq:`equal <g1:< D B F ) = g1:< G B E )>`
-
 .. step:: construct
 
-   Let :g:`/ D B / <g1:/ D B />`, :g:`/ B E / <g1:/ B E />` be placed in a straight line
+   Let :g:`< A B > <g1:< A B >>`, :g:`< B C > <g1:< B C >>` be :eq:`equal <g1:< A B > = g1:< B C >>` and equiangular parallelograms having the angles at :g:`< D B F ) <g1:< D B F )>` :eq:`equal <g1:< D B F ) = g1:< G B E )>`, and let :g:`/ D B / <g1:/ D B />`, :g:`/ B E / <g1:/ B E />` be placed in a straight line
 
-.. step:: assert [G.24] <G.24>
+.. step:: assert ∵ supplementary_angles_collinear <G.24>
 
    Therefore :g:`/ F B / <g1:/ F B />`, :g:`/ B G / <g1:/ B G />` are also in a straight line.
 
 .. step:: assert
 
-   For let the parallelogram :g:`< F E > <g1:< F E >>` be completed.
+   I say that, in :g:`< A B > <g1:< A B >>`, :g:`< B C > <g1:< B C >>`, the sides about the equal angles are reciprocally proportional, that is to say, that, as :g:`/ D B / <g1:/ D B />` is to :g:`/ B E / <g1:/ B E />`, so is :g:`/ G B / <g1:/ G B />` to :g:`/ B F / <g1:/ B F />`.
+
+.. step:: assert
+
+   Let the parallelogram :g:`< F E > <g1:< F E >>` be completed.
 
 .. step:: assert
 
@@ -51,15 +56,15 @@ G.177
 
    And :g:`< F E > <g1:< F E >>` is another area,
 
-.. step:: assert [G.142] <G.142>
+.. step:: assert ∵ equal_magnitudes_ratio <G.142>
 
    Therefore, as :g:`< A B > <g1:< A B >>` is to :g:`< F E > <g1:< F E >>`, so is :g:`< B C > <g1:< B C >>` to :g:`< F E > <g1:< F E >>`.
 
-.. step:: assert [G.163] <G.163>
+.. step:: assert ∵ triangles_parallelograms_height <G.163>
 
    But, as :g:`< A B > <g1:< A B >>` is to :g:`< F E > <g1:< F E >>`, so is :g:`/ D B / <g1:/ D B />` to :g:`/ B E / <g1:/ B E />`, and, as :g:`< B C > <g1:< B C >>` is to :g:`< F E > <g1:< F E >>`, so is :g:`/ G B / <g1:/ G B />` to :g:`/ B F / <g1:/ B F />`.
 
-.. step:: assert [G.148] <G.148>
+.. step:: assert ∵ ratios_ratio <G.148>
 
    Therefore also, as :g:`/ D B / <g1:/ D B />` is to :g:`/ B E / <g1:/ B E />`, so is :g:`/ G B / <g1:/ G B />` to :g:`/ B F / <g1:/ B F />`.
 
@@ -71,19 +76,15 @@ G.177
 
    Next, let :g:`/ G B / <g1:/ G B />` be to :g:`/ B F / <g1:/ B F />` as :g:`/ D B / <g1:/ D B />` to :g:`/ B E / <g1:/ B E />`
 
-.. step:: assert
-
-   The parallelogram :g:`< A B > <g1:< A B >>` is :eq:`equal <g1:< A B > = g1:< B C >>` to the parallelogram :g:`< B C > <g1:< B C >>`.
-
-.. step:: assert [G.163] <G.163>
+.. step:: assert ∵ triangles_parallelograms_height <G.163>
 
    For since, as :g:`/ D B / <g1:/ D B />` is to :g:`/ B E / <g1:/ B E />`, so is :g:`/ G B / <g1:/ G B />` to :g:`/ B F / <g1:/ B F />`, while, as :g:`/ D B / <g1:/ D B />` is to :g:`/ B E / <g1:/ B E />`, so is the parallelogram :g:`< A B > <g1:< A B >>` to the parallelogram :g:`< F E > <g1:< F E >>`, and, as :g:`/ G B / <g1:/ G B />` is to :g:`/ B F / <g1:/ B F />`, so is the parallelogram :g:`< B C > <g1:< B C >>` to the parallelogram :g:`< F E > <g1:< F E >>`.
 
-.. step:: assert [G.148] <G.148>
+.. step:: assert ∵ ratios_ratio <G.148>
 
    Therefore also, as :g:`< A B > <g1:< A B >>` is to :g:`< F E > <g1:< F E >>`, so is :g:`< B C > <g1:< B C >>` to :g:`< F E > <g1:< F E >>`;
 
-.. step:: conclude [G.146] <G.146>
+.. step:: conclude ∵ magnitudes_ratio_equal <G.146>
 
    Therefore the parallelogram :g:`< A B > <g1:< A B >>` is :eq:`equal <g1:< A B > = g1:< B C >>` to the parallelogram :g:`< B C > <g1:< B C >>`.
 

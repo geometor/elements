@@ -24,10 +24,16 @@ G.358
 
    A first bimedial straight line is divided at one point only.
 
+.. signature:: theorem
+
+   | :fn:`bimedial_straight_line <G.358>`\ (:g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`, :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />`)
+   | **given** :g:`/ A B / <g1:/ A B />` be a first bimedial straight line divided at :g:`C <g1:C>`, so that :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` are medial straight lines commensurable in square only and containing a rational rectangle
+   | **prove** :g:`/ A B / <g1:/ A B />` is not so divided at another point
+
 .. picture:: g1.svg
    :alt: Proposition 43 diagram
 
-.. step:: given [G.352] <G.352>
+.. step:: given
 
    :g:`/ A B / <g1:/ A B />` be a first bimedial straight line divided at :g:`C <g1:C>`, so that :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` are medial straight lines commensurable in square only and containing a rational rectangle
 
@@ -39,7 +45,7 @@ G.358
 
    Since, then, that by which twice the rectangle :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` differs from twice the rectangle :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` is that by which the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` differ from the squares on :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />`, while twice the rectangle :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` differs from twice the rectangle :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` by a rational area—for both are rational—
 
-.. step:: assert [G.341] <G.341>
+.. step:: assert ∵ medial_area_exceed <G.341>
 
    Therefore the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` also differ from the squares on :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` by a rational area, though they are medial : which is absurd.
 

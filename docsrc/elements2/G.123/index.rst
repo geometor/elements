@@ -23,6 +23,10 @@ G.123
 
    Of quadrilateral figures, a square is equilateral and right-angled; an oblong is right-angled but not equilateral; a rhombus is equilateral but not right-angled; a rhomboid has opposite sides and angles equal but is neither equilateral nor right-angled.
 
+.. signature:: def
+
+   | :fn:`quadrilateral_def <G.123>`
+
 Required for
 ------------
 

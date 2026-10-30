@@ -102,7 +102,7 @@ Dependency Graph
      "G.59" [label="G.59", tooltip="G.59 (I.46): Construct a square on a given segment.", fillcolor="#222244", URL="../G.59/index.html", target="_top"];
      "G.60" [label="G.60", tooltip="G.60 (I.47): In a right-angled triangle, the square on the hypotenuse equals the sum of the squares on the two legs (Pythagorean Theorem).", fillcolor="#222244", URL="../G.60/index.html", target="_top"];
      "G.65" [label="G.65", tooltip="G.65 (II.4): If a straight line be cut at random, the square on the whole is equal to the squares on the segments and twice the rectangle contained by the segments.", fillcolor="#222244", URL="../G.65/index.html", target="_top"];
-     "G.73" [label="G.73", tooltip="G.73 (II.12): In obtuse-angled triangles the square on the side subtending the obtuse angle is greater than the squares on the sides con- taining the obtuse angle by twice the rectangle containe...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.73" [label="G.73", tooltip="G.73 (II.12): In obtuse-angled triangles the square on the side subtending the obtuse angle is greater than the squares on the sides containing the obtuse angle by twice the rectangle contained ...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.5" -> "G.1";
      "G.8" -> "G.1";
      "G.9" -> "G.1";

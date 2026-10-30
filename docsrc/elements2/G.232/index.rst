@@ -24,6 +24,12 @@ G.232
 
    Any composite number is measured by some prime number.
 
+.. signature:: theorem
+
+   | :fn:`composite_number_measured <G.232>`\ (:g:`A <g1:A>`)
+   | **given** :g:`A <g1:A>` be a composite number
+   | **prove** :g:`A <g1:A>` is measured by some prime number
+
 .. picture:: g1.svg
    :alt: Proposition 31 diagram
 
@@ -37,11 +43,7 @@ G.232
 
 .. step:: assert
 
-   Let a number measure it
-
-.. step:: assert
-
-   Let it be :g:`B <g1:B>`.
+   Let a number measure it, and let it be :g:`B <g1:B>`.
 
 .. step:: assert
 
@@ -53,11 +55,7 @@ G.232
 
 .. step:: assert
 
-   Let a number measure it
-
-.. step:: assert
-
-   Let it be :g:`C <g1:C>`.
+   Let a number measure it, and let it be :g:`C <g1:C>`.
 
 .. step:: assert
 

@@ -24,6 +24,12 @@ G.194
 
    To a given straight line to apply a parallelogram equal to a given polygon and exceeding by a parallelogrammic figure similar to a given one.
 
+.. signature:: problem
+
+   | :fn:`straight_line_apply_vi_29 <G.194>`\ (:g:`/ A B / <g1:/ A B />`, :g:`< C > <g1:< C >>`, :g:`< D > <g1:< D >>`) → :g:`< A O > <g1:< A O >>`, :g:`< Q P > <g1:< Q P >>`
+   | **given** :g:`/ A B / <g1:/ A B />` , :g:`< C > <g1:< C >>` the given rectilineal figure to which the figure to be applied to :g:`/ A B / <g1:/ A B />` is required to be equal, :g:`< D > <g1:< D >>` that to which the excess is required to be similar
+   | **construct** to :g:`/ A B / <g1:/ A B />` there has been applied the parallelogram :g:`< A O > <g1:< A O >>` :eq:`equal <g1:< A O > = g1:< C >>` to the given rectilineal figure :g:`< C > <g1:< C >>` and exceeding by a parallelogrammic figure :g:`< Q P > <g1:< Q P >>` which is similar to :g:`< D > <g1:< D >>`, since :g:`< P Q > <g1:< P Q >>` is also similar to :g:`< E L > <g1:< E L >>`
+
 .. picture:: g1.svg
    :alt: Book VI Proposition 29
 
@@ -31,9 +37,9 @@ G.194
 
    :g:`/ A B / <g1:/ A B />` , :g:`< C > <g1:< C >>` the given rectilineal figure to which the figure to be applied to :g:`/ A B / <g1:/ A B />` is required to be equal, :g:`< D > <g1:< D >>` that to which the excess is required to be similar
 
-.. step:: assert [G.190] <G.190>
+.. step:: construct
 
-   Let :g:`/ A B / <g1:/ A B />` be :eq:`bisected <g1:/ A E / = g1:/ E B />` at :g:`E <g1:E>` ; let there be described on :g:`/ E B / <g1:/ E B />` the parallelogram :g:`< B F > <g1:< B F >>` similar and similarly situated to :g:`< D > <g1:< D >>` ; and let :g:`< G H > <g1:< G H >>` be constructed at once equal to the sum of :g:`< B F > <g1:< B F >>`, :g:`< C > <g1:< C >>` and similar and similarly situated to :g:`< D > <g1:< D >>`.
+   :fn:`construct_figure_similar <G.190>`: Let :g:`/ A B / <g1:/ A B />` be :eq:`bisected <g1:/ A E / = g1:/ E B />` at :g:`E <g1:E>` ; let there be described on :g:`/ E B / <g1:/ E B />` the parallelogram :g:`< B F > <g1:< B F >>` similar and similarly situated to :g:`< D > <g1:< D >>` ; and let :g:`< G H > <g1:< G H >>` be constructed at once equal to the sum of :g:`< B F > <g1:< B F >>`, :g:`< C > <g1:< C >>` and similar and similarly situated to :g:`< D > <g1:< D >>`.
 
 .. step:: assert
 
@@ -47,7 +53,7 @@ G.194
 
    Therefore :g:`/ K H / <g1:/ K H />` is also greater than :g:`/ F L / <g1:/ F L />`, and :g:`/ K G / <g1:/ K G />` than :g:`/ F E / <g1:/ F E />`.
 
-.. step:: assert
+.. step:: construct
 
    Let :g:`[ F L ] <g1:[ F L ]>`, :g:`[ F E ] <g1:[ F E ]>` be produced, let :g:`/ F L M / <g1:/ F L M />` be :eq:`equal <g1:/ F L M / = g1:/ K H />; g1:/ F E N / = g1:/ K G />` to :g:`/ K H / <g1:/ K H />`, and :g:`/ F E N / <g1:/ F E N />` to :g:`/ K G / <g1:/ K G />`, and let :g:`< M N > <g1:< M N >>` be completed ;
 
@@ -59,15 +65,15 @@ G.194
 
    :g:`< G H > <g1:< G H >>` is similar to :g:`< E L > <g1:< E L >>` ;
 
-.. step:: assert [G.186] <G.186>
+.. step:: assert ∵ figures_similar_polygon <G.186>
 
    Therefore :g:`< M N > <g1:< M N >>` is also similar to :g:`< E L > <g1:< E L >>` ;
 
-.. step:: assert [G.191] <G.191>
+.. step:: assert ∵ parallelogram_there_taken <G.191>
 
    Therefore :g:`< E L > <g1:< E L >>` is about the same diameter with :g:`< M N > <g1:< M N >>`.
 
-.. step:: assert
+.. step:: construct
 
    Let their diameter :g:`/ F O / <g1:/ F O />` be drawn, and let the figure be described.
 
@@ -79,7 +85,7 @@ G.194
 
    Therefore :g:`< M N > <g1:< M N >>` is also equal to :g:`< E L > <g1:< E L >>`, :g:`< C > <g1:< C >>`.
 
-.. step:: assert
+.. step:: construct
 
    Let :g:`< E L > <g1:< E L >>` be subtracted from each ;
 
@@ -91,11 +97,11 @@ G.194
 
    Since :g:`/ A E / <g1:/ A E />` is :eq:`equal <g1:/ A E / = g1:/ E B />` to :g:`/ E B / <g1:/ E B />`,
 
-.. step:: assert [G.49, G.56] <G.49, G.56>
+.. step:: assert ∵ parallelograms_equal_bases, parallelogram_complements <G.49, G.56>
 
    :g:`< A N > <g1:< A N >>` is also :eq:`equal <g1:< A N > = g1:< N B > = g1:< L P >>` to :g:`< N B > <g1:< N B >>`, that is, to :g:`< L P > <g1:< L P >>`.
 
-.. step:: assert
+.. step:: construct
 
    Let :g:`< E O > <g1:< E O >>` be added to each ;
 
@@ -111,7 +117,7 @@ G.194
 
    Therefore :g:`< A O > <g1:< A O >>` is also :eq:`equal <g1:< A O > = g1:< C >>` to :g:`< C > <g1:< C >>`.
 
-.. step:: conclude [G.189] <G.189>
+.. step:: conclude ∵ parallelogram_parallelograms_diameter <G.189>
 
    Therefore to :g:`/ A B / <g1:/ A B />` there has been applied the parallelogram :g:`< A O > <g1:< A O >>` :eq:`equal <g1:< A O > = g1:< C >>` to the given rectilineal figure :g:`< C > <g1:< C >>` and exceeding by a parallelogrammic figure :g:`< Q P > <g1:< Q P >>` which is similar to :g:`< D > <g1:< D >>`, since :g:`< P Q > <g1:< P Q >>` is also similar to :g:`< E L > <g1:< E L >>`.
 

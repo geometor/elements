@@ -24,20 +24,25 @@ G.63
 
    If a straight line be cut at random, the rectangle contained by the whole and both of the segments is equal to the square on the whole.
 
+.. signature:: theorem
+
+   | :fn:`square_sum_rectangles <G.63>`\ ()
+   | **prove** the rectangle contained by :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` together with the rectangle contained by :g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />` is equal to the square on :g:`/ A B / <g1:/ A B />`
+
 .. picture:: g1.svg
    :alt: Diagram
 
 .. step:: construct
 
-   For let :g:`/ A B / <g1:/ A B />` be cut at random at :g:`C <g1:C>`
+   Let :g:`/ A B / <g1:/ A B />` be cut at random at :g:`C <g1:C>`
 
-.. step:: construct [G.59] <G.59>
+.. step:: construct
 
-   For let the square :g:`< A D E B > <g1:< A D E B >>` be described on :g:`/ A B / <g1:/ A B />`
+   :fn:`square_on_segment <G.59>`: Let the square :g:`< A D E B > <g1:< A D E B >>` be described on :g:`/ A B / <g1:/ A B />`
 
-.. step:: construct [G.44] <G.44>
+.. step:: construct
 
-   Let :g:`/ C F / <g1:/ C F />` be drawn through :g:`C <g1:C>` parallel to either :g:`/ A D / <g1:/ A D />` or :g:`/ B E / <g1:/ B E />`.
+   :fn:`parallel_line <G.44>`\ (:g:`C <g1:C>`, :g:`/ A D / <g1:/ A D />` or :g:`/ B E / <g1:/ B E />`) → :g:`/ C F / <g1:/ C F />`
 
 .. step:: assert
 

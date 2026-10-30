@@ -11,7 +11,7 @@ G.115 — Code
 
 .. enunciation::
 
-   If a point be taken outside a circle and from it there fall on the circle two straight lines, and if one of them cut the circle and the other touch it, the rectangle contained by the whole of the straight line which cuts the circle and the straight
+   If a point be taken outside a circle and from it there fall on the circle two straight lines, and if one of them cut the circle and the other touch it, the rectangle contained by the whole of the straight line which cuts the circle and the straight line intercepted on it outside between the point and the convex circumference will equals the square on the tangent.
 
 .. rubric:: ``g1.py``
 

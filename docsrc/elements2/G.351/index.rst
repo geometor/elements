@@ -24,30 +24,35 @@ G.351
 
    If two rational straight lines commensurable in square only be added together, the whole is irrational; and let it be called:term:`**binomial** <binomial>`.
 
+.. signature:: theorem
+
+   | :fn:`rational_straight_lines <G.351>`\ ()
+   | **prove** the whole :g:`/ A C / <g1:/ A C />` is irrational
+
 .. picture:: g1.svg
    :alt: Proposition 36
 
-.. step:: assert
+.. step:: construct
 
-   For let two rational straight lines :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` commensurable in square only be added together
+   Let two rational straight lines :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` commensurable in square only be added together
 
 .. step:: assert
 
    Since :g:`/ A B / <g1:/ A B />` is incommensurable in length with :g:`/ B C / <g1:/ B C />`— for they are commensurable in square only— and, as :g:`/ A B / <g1:/ A B />` is to :g:`/ B C / <g1:/ B C />`, so is the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` to the square on :g:`/ B C / <g1:/ B C />`,
 
-.. step:: assert [G.323] <G.323>
+.. step:: assert ∵ magnitudes_proportional_commensurable <G.323>
 
    Therefore the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` is incommensurable with the square on :g:`/ B C / <g1:/ B C />`.
 
-.. step:: assert [G.319, G.328] <G.319, G.328>
+.. step:: assert ∵ magnitudes_ratio_number, commensurable_magnitudes_added <G.319, G.328>
 
    Twice the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` is commensurable with the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, and the squares on :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are commensurable with the square on :g:`/ B C / <g1:/ B C />`—for :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are rational straight lines commensurable in square only—
 
-.. step:: assert [G.326] <G.326>
+.. step:: assert ∵ magnitudes_commensurable_incommensurable <G.326>
 
    Therefore twice the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` is incommensurable with the squares on :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`.
 
-.. step:: assert [G.65, G.329] <G.65, G.329>
+.. step:: assert ∵ square_of_sum, incommensurable_magnitudes_added <G.65, G.329>
 
    And, :term:`*componendo* <componendo>`, twice the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` together with the squares on :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, that is, the square on :g:`/ A C / <g1:/ A C />`, is incommensurable with the sum of the squares on :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`.
 
@@ -55,7 +60,7 @@ G.351
 
    The sum of the squares on :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` is rational;
 
-.. step:: conclude [G.332] <G.332>
+.. step:: conclude ∵ square_assigned_straight_def <G.332>
 
    Therefore the square on :g:`/ A C / <g1:/ A C />` is irrational, so that :g:`/ A C / <g1:/ A C />` is also irrational.
 

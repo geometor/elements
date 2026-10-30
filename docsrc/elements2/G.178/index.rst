@@ -24,6 +24,12 @@ G.178
 
    In equal triangles which have one angle equal to one angle the sides about the equal angles are reciprocally proportional; and those triangles which have one angle equal to one angle, and in which the sides about the equal angles are reciprocally proportional, are equal.
 
+.. signature:: theorem
+
+   | :fn:`equal_triangles_angle <G.178>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`< A D E > <g1:< A D E >>`, :g:`< B A C ) <g1:< B A C )>`, :g:`< D A E ) <g1:< D A E )>`)
+   | **given** :g:`< A B C > <g1:< A B C >>`, :g:`< A D E > <g1:< A D E >>` be :eq:`equal <g1:< A B C > = g1:< A D E >>` triangles having one angle :eq:`equal <g1:< B A C ) = g1:< D A E )>` to one angle, namely :g:`< B A C ) <g1:< B A C )>` to :g:`< D A E ) <g1:< D A E )>`
+   | **prove** in :g:`< A B C > <g1:< A B C >>`, :g:`< A D E > <g1:< A D E >>` the sides about the equal angles are reciprocally proportional, that is to say, that,; :g:`< A B C > <g1:< A B C >>` is :eq:`equal <g1:< A B C > = g1:< A D E >>` to :g:`< A D E > <g1:< A D E >>`
+
 .. picture:: g1.svg
    :alt: Book VI Proposition 15
 
@@ -37,25 +43,25 @@ G.178
 
 .. step:: construct
 
-   For let them be placed so that :g:`/ C A / <g1:/ C A />` is in a straight line with :g:`/ A D / <g1:/ A D />`
+   Let them be placed so that :g:`/ C A / <g1:/ C A />` is in a straight line with :g:`/ A D / <g1:/ A D />`
 
-.. step:: assert [G.24] <G.24>
+.. step:: assert ∵ supplementary_angles_collinear <G.24>
 
    Therefore :g:`/ E A / <g1:/ E A />` is also in a straight line with :g:`/ A B / <g1:/ A B />`.
 
 .. step:: construct
 
-   **segment** :g:`/ B D / <g1:/ B D />`
+   :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`D <g1:D>`) → :g:`/ B D / <g1:/ B D />`
 
-.. step:: assert [G.142] <G.142>
+.. step:: assert ∵ equal_magnitudes_ratio <G.142>
 
    Since then :g:`< A B C > <g1:< A B C >>` is :eq:`equal <g1:< A B C > = g1:< A D E >>` to :g:`< A D E > <g1:< A D E >>`, and :g:`< B A D > <g1:< B A D >>` is another area → therefore, as :g:`< C A B > <g1:< C A B >>` is to :g:`< B A D > <g1:< B A D >>`, so is :g:`< E A D > <g1:< E A D >>` to :g:`< B A D > <g1:< B A D >>`.
 
-.. step:: assert [G.163] <G.163>
+.. step:: assert ∵ triangles_parallelograms_height <G.163>
 
    But, as :g:`< C A B > <g1:< C A B >>` is to :g:`< B A D > <g1:< B A D >>`, so is :g:`/ C A / <g1:/ C A />` to :g:`/ A D / <g1:/ A D />`, and, as :g:`< E A D > <g1:< E A D >>` is to :g:`< B A D > <g1:< B A D >>`, so is :g:`/ E A / <g1:/ E A />` to :g:`/ A B / <g1:/ A B />`.
 
-.. step:: assert [G.148] <G.148>
+.. step:: assert ∵ ratios_ratio <G.148>
 
    Therefore also, as :g:`/ C A / <g1:/ C A />` is to :g:`/ A D / <g1:/ A D />`, so is :g:`/ E A / <g1:/ E A />` to :g:`/ A B / <g1:/ A B />`.
 
@@ -67,15 +73,11 @@ G.178
 
    Next, let the sides of :g:`< A B C > <g1:< A B C >>`, :g:`< A D E > <g1:< A D E >>` be reciprocally proportional, that is to say, let :g:`/ E A / <g1:/ E A />` be to :g:`/ A B / <g1:/ A B />` as :g:`/ C A / <g1:/ C A />` to :g:`/ A D / <g1:/ A D />`
 
-.. step:: assert
-
-   :g:`< A B C > <g1:< A B C >>` is :eq:`equal <g1:< A B C > = g1:< A D E >>` to :g:`< A D E > <g1:< A D E >>`.
-
-.. step:: assert [G.163] <G.163>
+.. step:: assert ∵ triangles_parallelograms_height <G.163>
 
    If :g:`/ B D / <g1:/ B D />` be again joined, since, as :g:`/ C A / <g1:/ C A />` is to :g:`/ A D / <g1:/ A D />`, so is :g:`/ E A / <g1:/ E A />` to :g:`/ A B / <g1:/ A B />`, while, as :g:`/ C A / <g1:/ C A />` is to :g:`/ A D / <g1:/ A D />`, so is :g:`< A B C > <g1:< A B C >>` to :g:`< B A D > <g1:< B A D >>`, and, as :g:`/ E A / <g1:/ E A />` is to :g:`/ A B / <g1:/ A B />`, so is :g:`< E A D > <g1:< E A D >>` to :g:`< B A D > <g1:< B A D >>`.
 
-.. step:: assert [G.148] <G.148>
+.. step:: assert ∵ ratios_ratio <G.148>
 
    Therefore, as :g:`< A B C > <g1:< A B C >>` is to :g:`< B A D > <g1:< B A D >>`, so is :g:`< E A D > <g1:< E A D >>` to :g:`< B A D > <g1:< B A D >>`.
 
@@ -83,7 +85,7 @@ G.178
 
    Therefore each of :g:`< A B C > <g1:< A B C >>`, :g:`< E A D > <g1:< E A D >>` has the same ratio to :g:`< B A D > <g1:< B A D >>`.
 
-.. step:: conclude [G.146] <G.146>
+.. step:: conclude ∵ magnitudes_ratio_equal <G.146>
 
    Therefore :g:`< A B C > <g1:< A B C >>` is :eq:`equal <g1:< A B C > = g1:< E A D >>` to :g:`< E A D > <g1:< E A D >>`.
 

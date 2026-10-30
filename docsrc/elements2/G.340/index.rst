@@ -24,16 +24,21 @@ G.340
 
    The rectangle contained by medial straight lines commensurable in square only is either rational or medial.
 
+.. signature:: theorem
+
+   | :fn:`rectangle_contained_medial_x_25 <G.340>`\ ()
+   | **prove** :g:`< A C > <g1:< A C >>` is either rational or medial
+
 .. picture:: g1.svg
    :alt: Proposition 25
 
 .. step:: assert
 
-   For let the rectangle :g:`< A C > <g1:< A C >>` be contained by the medial straight lines :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` which are commensurable in square only
+   Let the rectangle :g:`< A C > <g1:< A C >>` be contained by the medial straight lines :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` which are commensurable in square only
 
 .. step:: construct
 
-   For on :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` let the squares :g:`< A D > <g1:< A D >>`, :g:`< B E > <g1:< B E >>` be described
+   On :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` let the squares :g:`< A D > <g1:< A D >>`, :g:`< B E > <g1:< B E >>` be described
 
 .. step:: assert
 
@@ -59,7 +64,7 @@ G.340
 
    They are applied to the rational straight line :g:`/ F G / <g1:/ F G />`;
 
-.. step:: assert [G.336] <G.336>
+.. step:: assert ∵ square_medial_straight <G.336>
 
    Therefore each of :g:`/ F H / <g1:/ F H />`, :g:`/ K L / <g1:/ K L />` is rational and incommensurable in length with :g:`/ F G / <g1:/ F G />`.
 
@@ -71,11 +76,11 @@ G.340
 
    Therefore :g:`< G H > <g1:< G H >>` is also commensurable with :g:`< N L > <g1:< N L >>`.
 
-.. step:: assert [G.163] <G.163>
+.. step:: assert ∵ triangles_parallelograms_height <G.163>
 
    And, as :g:`< G H > <g1:< G H >>` is to :g:`< N L > <g1:< N L >>`, so is :g:`/ F H / <g1:/ F H />` to :g:`/ K L / <g1:/ K L />`;
 
-.. step:: assert [G.323] <G.323>
+.. step:: assert ∵ magnitudes_proportional_commensurable <G.323>
 
    Therefore :g:`/ F H / <g1:/ F H />` is commensurable in length with :g:`/ K L / <g1:/ K L />`.
 
@@ -83,7 +88,7 @@ G.340
 
    Therefore :g:`/ F H / <g1:/ F H />`, :g:`/ K L / <g1:/ K L />` are rational straight lines commensurable in length;
 
-.. step:: assert [G.333] <G.333>
+.. step:: assert ∵ rectangle_contained_rational <G.333>
 
    Therefore the rectangle :g:`/ F H / <g1:/ F H />`, :g:`/ K L / <g1:/ K L />` is rational.
 
@@ -95,7 +100,7 @@ G.340
 
    Therefore, as :g:`/ D B / <g1:/ D B />` is to :g:`/ B C / <g1:/ B C />`, so is :g:`/ A B / <g1:/ A B />` to :g:`/ B O / <g1:/ B O />`.
 
-.. step:: assert [G.163] <G.163>
+.. step:: assert ∵ triangles_parallelograms_height <G.163>
 
    But, as :g:`/ D B / <g1:/ D B />` is to :g:`/ B C / <g1:/ B C />`, so is :g:`< D A > <g1:< D A >>` to :g:`< A C > <g1:< A C >>`, and, as :g:`/ A B / <g1:/ A B />` is to :g:`/ B O / <g1:/ B O />`, so is :g:`< A C > <g1:< A C >>` to :g:`< C O > <g1:< C O >>`.
 
@@ -111,7 +116,7 @@ G.340
 
    Therefore, as :g:`< G H > <g1:< G H >>` is to :g:`< M K > <g1:< M K >>`, so is :g:`< M K > <g1:< M K >>` to :g:`< N L > <g1:< N L >>`;
 
-.. step:: assert [G.163, G.148, G.180] <G.163, G.148, G.180>
+.. step:: assert ∵ triangles_parallelograms_height, ratios_ratio, straight_lines_proportional_vi_17 <G.163, G.148, G.180>
 
    Therefore also, as :g:`/ F H / <g1:/ F H />` is to :g:`/ H K / <g1:/ H K />`, so is :g:`/ H K / <g1:/ H K />` to :g:`/ K L / <g1:/ K L />`; therefore the rectangle :g:`/ F H / <g1:/ F H />`, :g:`/ K L / <g1:/ K L />` is equal to the square on :g:`/ H K / <g1:/ H K />`.
 
@@ -131,7 +136,7 @@ G.340
 
    And, if it is commensurable in length with :g:`/ F G / <g1:/ F G />`,
 
-.. step:: assert [G.333] <G.333>
+.. step:: assert ∵ rectangle_contained_rational <G.333>
 
    :g:`< H N > <g1:< H N >>` is rational;
 
@@ -139,7 +144,7 @@ G.340
 
    But, if it is incommensurable in length with :g:`/ F G / <g1:/ F G />`,
 
-.. step:: assert [G.335] <G.335>
+.. step:: assert ∵ rectangle_contained_rational_x_21 <G.335>
 
    :g:`/ K H / <g1:/ K H />`, :g:`/ H M / <g1:/ H M />` are rational straight lines commensurable in square only, and therefore :g:`< H N > <g1:< H N >>` is medial.
 

@@ -23,6 +23,10 @@ G.462
 
    A:term:`**plane is at right angles to a plane** <plane-at-right-angles-to-plane>` when the straight lines drawn, in one of the planes, at right angles to the common section of the planes are at right angles to the remaining plane.
 
+.. signature:: def
+
+   | :fn:`plane_right_angles_def <G.462>`
+
 Required for
 ------------
 

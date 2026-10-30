@@ -24,12 +24,17 @@ G.395
 
    If from a medial straight line there be subtracted a medial straight line which is commensurable with the whole in square only, and which contains with the whole a rational rectangle, the remainder is irrational. And let it be called a first apotome of a medial straight line.
 
+.. signature:: theorem
+
+   | :fn:`medial_straight_line <G.395>`\ ()
+   | **prove** the remainder :g:`/ A C / <g1:/ A C />` is irrational
+
 .. picture:: g1.svg
    :alt: Proposition 74
 
-.. step:: assert
+.. step:: construct
 
-   For from the medial straight line :g:`/ A B / <g1:/ A B />` let there be subtracted the medial straight line :g:`/ B C / <g1:/ B C />` which is commensurable with :g:`/ A B / <g1:/ A B />` in square only and with :g:`/ A B / <g1:/ A B />` makes the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` rational
+   From the medial straight line :g:`/ A B / <g1:/ A B />` let there be subtracted the medial straight line :g:`/ B C / <g1:/ B C />` which is commensurable with :g:`/ A B / <g1:/ A B />` in square only and with :g:`/ A B / <g1:/ A B />` makes the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` rational
 
 .. step:: assert
 
@@ -51,7 +56,7 @@ G.395
 
    Therefore the squares on :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are incommensurable with twice the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`;
 
-.. step:: assert [G.68, G.329] <G.68, G.329>
+.. step:: assert ∵ square_of_difference, incommensurable_magnitudes_added <G.68, G.329>
 
    Therefore twice the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` is also incommensurable with the remainder, the square on :g:`/ A C / <g1:/ A C />`, since, if the whole is incommensurable with one of the magnitudes, the original magnitudes will also be incommensurable.
 
@@ -59,7 +64,7 @@ G.395
 
    Twice the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` is rational;
 
-.. step:: conclude [G.332] <G.332>
+.. step:: conclude ∵ square_assigned_straight_def <G.332>
 
    Therefore the square on :g:`/ A C / <g1:/ A C />` is irrational; therefore :g:`/ A C / <g1:/ A C />` is irrational.
 

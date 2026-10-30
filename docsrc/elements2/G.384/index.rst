@@ -24,6 +24,12 @@ G.384
 
    The square on the side of a rational plus a medial area applied to a rational straight line produces as breadth the fifth binomial.
 
+.. signature:: theorem
+
+   | :fn:`square_side_rational <G.384>`\ (:g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`, :g:`/ A C / <g1:/ A C />`)
+   | **given** :g:`/ A B / <g1:/ A B />` be the side of a rational plus a medial area, divided into its straight lines at :g:`C <g1:C>`, so that :g:`/ A C / <g1:/ A C />` is the greater
+   | **prove** :g:`/ D G / <g1:/ D G />` is a fifth binomial straight line
+
 .. picture:: g1.svg
    :alt: Proposition 64 Diagram
 
@@ -31,13 +37,9 @@ G.384
 
    :g:`/ A B / <g1:/ A B />` be the side of a rational plus a medial area, divided into its straight lines at :g:`C <g1:C>`, so that :g:`/ A C / <g1:/ A C />` is the greater
 
-.. step:: assert
-
-   Let a rational straight line :g:`/ D E / <g1:/ D E />` be set out
-
 .. step:: construct
 
-   Let there be applied to :g:`/ D E / <g1:/ D E />` the parallelogram :g:`< D F > <g1:< D F >>` equal to the square on :g:`/ A B / <g1:/ A B />`, producing :g:`/ D G / <g1:/ D G />` as its breadth
+   Let a rational straight line :g:`/ D E / <g1:/ D E />` be set out, and let there be applied to :g:`/ D E / <g1:/ D E />` the parallelogram :g:`< D F > <g1:< D F >>` equal to the square on :g:`/ A B / <g1:/ A B />`, producing :g:`/ D G / <g1:/ D G />` as its breadth
 
 .. step:: construct
 
@@ -47,7 +49,7 @@ G.384
 
    Since then :g:`/ A B / <g1:/ A B />` is the side of a rational plus a medial area, divided at :g:`C <g1:C>`,
 
-.. step:: assert [G.355] <G.355>
+.. step:: assert ∵ straight_lines_incommensurable_x_40 <G.355>
 
    Therefore :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` are straight lines incommensurable in square which make the sum of the squares on them medial, but the rectangle contained by them rational.
 
@@ -55,7 +57,7 @@ G.384
 
    Since then the sum of the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` is medial,
 
-.. step:: assert [G.336] <G.336>
+.. step:: assert ∵ square_medial_straight <G.336>
 
    Therefore :g:`< D L > <g1:< D L >>` is medial, so that :g:`/ D M / <g1:/ D M />` is rational and incommensurable in length with :g:`/ D E / <g1:/ D E />`.
 
@@ -63,11 +65,11 @@ G.384
 
    Since twice the rectangle :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />`, that is, :g:`< M F > <g1:< M F >>`, is rational,
 
-.. step:: assert [G.334] <G.334>
+.. step:: assert ∵ rational_area_applied <G.334>
 
    Therefore :g:`/ M G / <g1:/ M G />` is rational and commensurable with :g:`/ D E / <g1:/ D E />`.
 
-.. step:: assert [G.326, G.351] <G.326, G.351>
+.. step:: assert ∵ magnitudes_commensurable_incommensurable, rational_straight_lines <G.326, G.351>
 
    Therefore :g:`/ D M / <g1:/ D M />` is incommensurable with :g:`/ M G / <g1:/ M G />` ; therefore :g:`/ D M / <g1:/ D M />`, :g:`/ M G / <g1:/ M G />` are rational straight lines commensurable in square only ; therefore :g:`/ D G / <g1:/ D G />` is binomial.
 
@@ -79,7 +81,7 @@ G.384
 
    For it can be proved similarly that the rectangle :g:`/ D K / <g1:/ D K />`, :g:`/ K M / <g1:/ K M />` is equal to the square on :g:`/ M N / <g1:/ M N />`, and that :g:`/ D K / <g1:/ D K />` is incommensurable in length with :g:`/ K M / <g1:/ K M />` ;
 
-.. step:: assert [G.331] <G.331>
+.. step:: assert ∵ there_unequal_straight_x_18 <G.331>
 
    Therefore the square on :g:`/ D M / <g1:/ D M />` is greater than the square on :g:`/ M G / <g1:/ M G />` by the square on a straight line incommensurable with :g:`/ D M / <g1:/ D M />`.
 

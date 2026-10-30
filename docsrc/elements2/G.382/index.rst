@@ -24,6 +24,12 @@ G.382
 
    The square on the second bimedial straight line applied to a rational straight line produces as breadth the third binomial.
 
+.. signature:: theorem
+
+   | :fn:`square_bimedial_straight_x_62 <G.382>`\ (:g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`, :g:`/ A C / <g1:/ A C />`)
+   | **given** :g:`/ A B / <g1:/ A B />` be a second bimedial straight line divided into its medials at :g:`C <g1:C>`, so that :g:`/ A C / <g1:/ A C />` is the greater segment
+   | **prove** :g:`/ D G / <g1:/ D G />` is a third binomial straight line
+
 .. picture:: g1.svg
    :alt: Proposition 62
 
@@ -43,7 +49,7 @@ G.382
 
    Since :g:`/ A B / <g1:/ A B />` is a second bimedial divided at :g:`C <g1:C>`,
 
-.. step:: assert [G.353, G.328, G.338] <G.353, G.328, G.338>
+.. step:: assert ∵ medial_straight_lines_x_38, commensurable_magnitudes_added, straight_line_commensurable <G.353, G.328, G.338>
 
    Therefore :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` are medial straight lines commensurable in square only and containing a medial rectangle, so that the sum of the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` is also medial.
 
@@ -59,7 +65,7 @@ G.382
 
    It is applied to the rational straight line :g:`/ D E / <g1:/ D E />`;
 
-.. step:: assert [G.336] <G.336>
+.. step:: assert ∵ square_medial_straight <G.336>
 
    Therefore :g:`/ M D / <g1:/ M D />` is also rational and incommensurable in length with :g:`/ D E / <g1:/ D E />`.
 
@@ -75,11 +81,11 @@ G.382
 
    And, since :g:`/ A C / <g1:/ A C />` is incommensurable in length with :g:`/ C B / <g1:/ C B />`, and, as :g:`/ A C / <g1:/ A C />` is to :g:`/ C B / <g1:/ C B />`, so is the square on :g:`/ A C / <g1:/ A C />` to the rectangle :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />`,
 
-.. step:: assert [G.323] <G.323>
+.. step:: assert ∵ magnitudes_proportional_commensurable <G.323>
 
    Therefore the square on :g:`/ A C / <g1:/ A C />` is also incommensurable with the rectangle :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />`.
 
-.. step:: assert [G.325, G.326, G.163, G.323] <G.325, G.326, G.163, G.323>
+.. step:: assert ∵ magnitudes_commensurable_magnitude, magnitudes_commensurable_incommensurable, triangles_parallelograms_height, magnitudes_proportional_commensurable <G.325, G.326, G.163, G.323>
 
    Hence the sum of the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` is incommensurable with twice the rectangle :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />`, that is, :g:`< D L > <g1:< D L >>` is incommensurable with :g:`< M F > <g1:< M F >>`, so that :g:`/ D M / <g1:/ D M />` is also incommensurable with :g:`/ M G / <g1:/ M G />`.
 
@@ -87,7 +93,7 @@ G.382
 
    They are rational;
 
-.. step:: assert [G.351] <G.351>
+.. step:: assert ∵ rational_straight_lines <G.351>
 
    Therefore :g:`/ D G / <g1:/ D G />` is binomial.
 
@@ -111,7 +117,7 @@ G.382
 
    Neither of :g:`/ D M / <g1:/ D M />`, :g:`/ M G / <g1:/ M G />` is commensurable in length with :g:`/ D E / <g1:/ D E />`.
 
-.. step:: conclude [G.373] <G.373>
+.. step:: conclude ∵ terms_commensurable_length_def <G.373>
 
    Therefore :g:`/ D G / <g1:/ D G />` is a third binomial straight line.
 

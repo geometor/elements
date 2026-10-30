@@ -23,6 +23,10 @@ G.498
 
    :term:`**Similar cones and cylinders** <similar-cones-and-cylinders>` are those in which the axes and the diameters of the bases are proportional.
 
+.. signature:: def
+
+   | :fn:`similar_cones_cylinders_def <G.498>`
+
 Required for
 ------------
 

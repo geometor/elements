@@ -24,6 +24,12 @@ G.60
 
    In a right-angled triangle, the square on the hypotenuse equals the sum of the squares on the two legs (Pythagorean Theorem).
 
+.. signature:: theorem
+
+   | :fn:`pythagorean_theorem <G.60>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`< B A C ) <g1:< B A C )>`)
+   | **given** :g:`< A B C > <g1:< A B C >>` be a right-angled triangle having :g:`< B A C ) <g1:< B A C )>` right
+   | **prove** the square on :g:`/ B C / <g1:/ B C />` is equal to the squares on :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />`
+
 .. picture:: g1.svg
    :alt: Folio 0363 Figure 1 - Proposition 47
 
@@ -31,23 +37,23 @@ G.60
 
    :g:`< A B C > <g1:< A B C >>` be a right-angled triangle having :g:`< B A C ) <g1:< B A C )>` right
 
-.. step:: construct [G.59] <G.59>
+.. step:: construct
 
-   For let there be described on :g:`/ B C / <g1:/ B C />` the square :g:`< B D E C > <g1:< B D E C >>`, and on :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />` the squares :g:`< G B > <g1:< G B >>`, :g:`< H C > <g1:< H C >>`
+   :fn:`square_on_segment <G.59>`\ (:g:`/ B C / <g1:/ B C />`) → :g:`< B D E C > <g1:< B D E C >>`, :fn:`square_on_segment <G.59>`\ (:g:`/ B A / <g1:/ B A />`) → :g:`< G B > <g1:< G B >>`, :fn:`square_on_segment <G.59>`\ (:g:`/ A C / <g1:/ A C />`) → :g:`< H C > <g1:< H C >>`
 
 .. step:: construct
 
-   Through :g:`A <g1:A>` let :g:`/ A L / <g1:/ A L />` be drawn parallel to either :g:`/ B D / <g1:/ B D />` or :g:`/ C E / <g1:/ C E />`
+   :fn:`parallel_line <G.44>`\ (:g:`A <g1:A>`, :g:`/ B D / <g1:/ B D />` or :g:`/ C E / <g1:/ C E />`) → :g:`/ A L / <g1:/ A L />`
 
 .. step:: construct
 
-   **segment** :g:`/ A D / <g1:/ A D />`, :g:`/ F C / <g1:/ F C />`
+   :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`D <g1:D>`) → :g:`/ A D / <g1:/ A D />`, :fn:`segment <G.3>`\ (:g:`F <g1:F>`, :g:`C <g1:C>`) → :g:`/ F C / <g1:/ F C />`
 
 .. step:: assert
 
    Since each of :g:`< B A C ) <g1:< B A C )>`, :g:`< B A G ) <g1:< B A G )>` is :eq:`right <g1:< B A C ) = g1:< B A G )>`, it follows that with a straight line :g:`/ B A / <g1:/ B A />`, and at :g:`A <g1:A>` on it, :g:`/ A C / <g1:/ A C />`, :g:`/ A G / <g1:/ A G />` not lying on the same side make the adjacent angles equal to two right angles
 
-.. step:: assert [G.24] <G.24>
+.. step:: assert ∵ supplementary_angles_collinear <G.24>
 
    Therefore :g:`/ C A / <g1:/ C A />` is in a straight line with :g:`/ A G / <g1:/ A G />`.
 
@@ -55,11 +61,11 @@ G.60
 
    For the same reason :g:`/ B A / <g1:/ B A />` is also in a straight line with :g:`/ A H / <g1:/ A H />`.
 
-.. step:: assert
+.. step:: construct
 
    And, since :g:`< D B C ) <g1:< D B C )>` is :eq:`equal <g1:< D B C ) = g1:< F B A )>` to :g:`< F B A ) <g1:< F B A )>`: for each is right: let :g:`< A B C ) <g1:< A B C )>` be added to each
 
-.. step:: assert [G.21] <G.21>
+.. step:: assert ∵ add_equals <G.21>
 
    Therefore the whole angle :g:`< D B A ) <g1:< D B A )>` is :eq:`equal <g1:< D B A ) = g1:< F B C )>` to the whole angle :g:`< F B C ) <g1:< F B C )>`.
 
@@ -71,15 +77,15 @@ G.60
 
    Therefore the base :g:`/ A D / <g1:/ A D />` is :eq:`equal <g1:/ A D / = g1:/ F C />` to the base :g:`/ F C / <g1:/ F C />`,
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    And :g:`< A B D > <g1:< A B D >>` is :eq:`equal <g1:< A B D > = g1:< F B C >>` to :g:`< F B C > <g1:< F B C >>`.
 
-.. step:: assert [G.54] <G.54>
+.. step:: assert ∵ parallelogram_double_triangle <G.54>
 
    Now the parallelogram :g:`< B L > <g1:< B L >>` is double of :g:`< A B D > <g1:< A B D >>`, for they have the same base :g:`/ B D / <g1:/ B D />` and are in the same parallels :g:`/ B D / <g1:/ B D />`, :g:`/ A L / <g1:/ A L />`.
 
-.. step:: assert [G.54] <G.54>
+.. step:: assert ∵ parallelogram_double_triangle <G.54>
 
    The square :g:`< G B > <g1:< G B >>` is double of :g:`< F B C > <g1:< F B C >>`, for they again have the same base :g:`/ F B / <g1:/ F B />` and are in the same parallels :g:`/ F B / <g1:/ F B />`, :g:`/ G C / <g1:/ G C />`.
 
@@ -95,7 +101,7 @@ G.60
 
    Similarly, if :g:`/ A E / <g1:/ A E />`, :g:`/ B K / <g1:/ B K />` be joined, the parallelogram :g:`< C L > <g1:< C L >>` can also be proved :eq:`equal <g1:< C L > = g1:< H C >>` to the square :g:`< H C > <g1:< H C >>`
 
-.. step:: assert [G.21] <G.21>
+.. step:: assert ∵ add_equals <G.21>
 
    Therefore the whole square :g:`< B D E C > <g1:< B D E C >>` is equal to the two squares :g:`< G B > <g1:< G B >>`, :g:`< H C > <g1:< H C >>`.
 

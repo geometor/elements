@@ -24,16 +24,22 @@ G.57
 
    Apply to a given segment, in a given angle, a parallelogram equal in area to a given triangle.
 
+.. signature:: problem
+
+   | :fn:`apply_parallelogram_on_segment <G.57>`\ (:g:`/ A B / <g1:/ A B />`, :g:`< C > <g1:< C >>`, :g:`< D ) <g1:< D )>`) → :g:`< A B M ) <g1:< A B M )>`
+   | **given** :g:`/ A B / <g1:/ A B />` , :g:`< C > <g1:< C >>` and :g:`< D ) <g1:< D )>`
+   | **construct** apply to :g:`/ A B / <g1:/ A B />`, in an angle :eq:`equal <g1:< A B M ) = g1:< D )>` to :g:`< D ) <g1:< D )>`, a parallelogram :eq:`equal <g1:< A B M L > = g1:< C >>` to the given triangle :g:`< C > <g1:< C >>`
+
 .. picture:: g1.svg
    :alt: Folio 0356 Figure 1 - Proposition 44
 
 .. step:: given
 
-   :g:`/ A B / <g1:/ A B />` , :g:`< C > <g1:< C >>` the given triangle and :g:`< D ) <g1:< D )>`
+   :g:`/ A B / <g1:/ A B />` , :g:`< C > <g1:< C >>` and :g:`< D ) <g1:< D )>`
 
-.. step:: construct [G.55] <G.55>
+.. step:: construct
 
-   Let the parallelogram :g:`< B E F G > <g1:< B E F G >>` be constructed :eq:`equal <g1:< B E F G > = g1:< C >>` to :g:`< C > <g1:< C >>`, in :g:`< E B G ) <g1:< E B G )>` which is :eq:`equal <g1:< E B G ) = g1:< D )>` to :g:`< D ) <g1:< D )>`
+   :fn:`parallelogram_from_triangle <G.55>`\ (:g:`< C > <g1:< C >>`, :g:`< D ) <g1:< D )>`) → :g:`< B E F G > <g1:< B E F G >>` (:eq:`equal <g1:< B E F G > = g1:< C >>`, :g:`< E B G ) <g1:< E B G )>` :eq:`equal <g1:< E B G ) = g1:< D )>`)
 
 .. step:: construct
 
@@ -41,17 +47,17 @@ G.57
 
 .. step:: construct
 
-   Let :g:`/ F G / <g1:/ F G />` be drawn through to :g:`H <g1:H>`
-
-.. step:: construct [G.44] <G.44>
-
-   Let :g:`/ A H / <g1:/ A H />` be drawn through :g:`A <g1:A>` parallel to either :g:`/ B G / <g1:/ B G />` or :g:`/ E F / <g1:/ E F />`.
+   :fn:`extend <G.7>`\ (:g:`/ F G / <g1:/ F G />`) → :g:`H <g1:H>`
 
 .. step:: construct
 
-   **segment** :g:`/ H B / <g1:/ H B />`
+   :fn:`parallel_line <G.44>`\ (:g:`A <g1:A>`, :g:`/ B G / <g1:/ B G />` or :g:`/ E F / <g1:/ E F />`) → :g:`/ A H / <g1:/ A H />`
 
-.. step:: assert [G.42] <G.42>
+.. step:: construct
+
+   :fn:`segment <G.3>`\ (:g:`H <g1:H>`, :g:`B <g1:B>`) → :g:`/ H B / <g1:/ H B />`
+
+.. step:: assert ∵ parallel_transversal_angles <G.42>
 
    Since :g:`/ H F / <g1:/ H F />` falls upon the parallels :g:`/ A H / <g1:/ A H />`, :g:`/ E F / <g1:/ E F />` → :g:`< A H F ) <g1:< A H F )>`, :g:`< H F E ) <g1:< H F E )>` are equal to two right angles.
 
@@ -59,7 +65,7 @@ G.57
 
    Therefore :g:`< B H G ) <g1:< B H G )>`, :g:`< G F E ) <g1:< G F E )>` are less than two right angles
 
-.. step:: assert [G.41] <G.41>
+.. step:: assert ∵ parallel_postulate <G.41>
 
    And straight lines produced indefinitely from angles less than two right angles meet
 
@@ -71,19 +77,19 @@ G.57
 
    Let them be produced and meet at :g:`K <g1:K>`
 
-.. step:: construct [G.44] <G.44>
+.. step:: construct
 
-   Through :g:`K <g1:K>` let :g:`/ K L / <g1:/ K L />` be drawn parallel to either :g:`/ E A / <g1:/ E A />` or :g:`/ F H / <g1:/ F H />`.
+   :fn:`parallel_line <G.44>`\ (:g:`K <g1:K>`, :g:`/ E A / <g1:/ E A />` or :g:`/ F H / <g1:/ F H />`) → :g:`/ K L / <g1:/ K L />`
 
 .. step:: construct
 
-   And let :g:`/ H A / <g1:/ H A />`, :g:`/ G B / <g1:/ G B />` be produced to :g:`L <g1:L>`, :g:`M <g1:M>`.
+   :fn:`extend <G.7>`\ (:g:`/ H A / <g1:/ H A />`, :g:`/ G B / <g1:/ G B />`) → :g:`L <g1:L>`, :g:`M <g1:M>`
 
 .. step:: assert
 
    Then :g:`< H L K F > <g1:< H L K F >>` is a parallelogram, :g:`/ H K / <g1:/ H K />` is its diameter, and :g:`< H A B G > <g1:< H A B G >>`, :g:`< B M K E > <g1:< B M K E >>` are parallelograms, and :g:`< A B M L > <g1:< A B M L >>`, :g:`< B E F G > <g1:< B E F G >>` the so-called complements, about :g:`/ H K / <g1:/ H K />`
 
-.. step:: assert [G.56] <G.56>
+.. step:: assert ∵ parallelogram_complements <G.56>
 
    Therefore :g:`< A B M L > <g1:< A B M L >>` is :eq:`equal <g1:< A B M L > = g1:< B E F G >>` to :g:`< B E F G > <g1:< B E F G >>`.
 
@@ -91,11 +97,11 @@ G.57
 
    :g:`< B E F G > <g1:< B E F G >>` is :eq:`equal <g1:< B E F G > = g1:< C >>` to :g:`< C > <g1:< C >>`
 
-.. step:: assert [G.1] <G.1>
+.. step:: assert ∵ equal_transitive <G.1>
 
    Therefore :g:`< A B M L > <g1:< A B M L >>` is also :eq:`equal <g1:< A B M L > = g1:< C >>` to :g:`< C > <g1:< C >>`.
 
-.. step:: assert [G.25] <G.25>
+.. step:: assert ∵ vertical_angles_equal <G.25>
 
    And, since :g:`< G B E ) <g1:< G B E )>` is :eq:`equal <g1:< G B E ) = g1:< A B M )>` to :g:`< A B M ) <g1:< A B M )>`.
 

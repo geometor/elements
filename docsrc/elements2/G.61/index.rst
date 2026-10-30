@@ -24,26 +24,35 @@ G.61
 
    If the square on one side of a triangle equals the sum of the squares on the other two sides, the angle contained by those two sides is right.
 
+.. signature:: theorem
+
+   | :fn:`converse_pythagorean <G.61>`\ ()
+   | **prove** :g:`< B A C ) <g1:< B A C )>` is right
+
 .. picture:: g1.svg
    :alt: Folio 0382 Figure 2 - Proposition 48
 
 .. step:: assert
 
-   For in :g:`< A B C > <g1:< A B C >>` let the square on one side :g:`/ B C / <g1:/ B C />` be equal to the squares on the sides :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />`
+   In :g:`< A B C > <g1:< A B C >>` let the square on one side :g:`/ B C / <g1:/ B C />` be equal to the squares on the sides :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />`
 
 .. step:: construct
 
-   For let :g:`/ A D / <g1:/ A D />` be drawn from :g:`A <g1:A>` at right angles to :g:`/ A C / <g1:/ A C />`, let :g:`/ A D / <g1:/ A D />` be made :eq:`equal <g1:/ A D / = g1:/ B A />` to :g:`/ B A / <g1:/ B A />`
+   :fn:`perpendicular_at <G.19>`\ (:g:`/ A C / <g1:/ A C />`, :g:`A <g1:A>`) → :g:`/ A D / <g1:/ A D />`
 
 .. step:: construct
 
-   **segment** :g:`/ D C / <g1:/ D C />`
+   :fn:`cut_equal_segment <G.9>`\ (:g:`/ B A / <g1:/ B A />`) → :g:`/ A D / <g1:/ A D />` (:eq:`equal <g1:/ A D / = g1:/ B A />`)
+
+.. step:: construct
+
+   :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`C <g1:C>`) → :g:`/ D C / <g1:/ D C />`
 
 .. step:: assert
 
    Since :g:`/ D A / <g1:/ D A />` is :eq:`equal <g1:/ D A / = g1:/ A B />` to :g:`/ A B / <g1:/ A B />`, the square on :g:`/ D A / <g1:/ D A />` is also equal to the square on :g:`/ A B / <g1:/ A B />`.
 
-.. step:: assert
+.. step:: construct
 
    Let the square on :g:`/ A C / <g1:/ A C />` be added to each
 
@@ -51,7 +60,7 @@ G.61
 
    Therefore the squares on :g:`/ D A / <g1:/ D A />`, :g:`/ A C / <g1:/ A C />` are equal to the squares on :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />`.
 
-.. step:: assert [G.60] <G.60>
+.. step:: assert ∵ pythagorean_theorem <G.60>
 
    The square on :g:`/ D C / <g1:/ D C />` is equal to the squares on :g:`/ D A / <g1:/ D A />`, :g:`/ A C / <g1:/ A C />`, for :g:`< D A C ) <g1:< D A C )>` is right
 
@@ -71,7 +80,7 @@ G.61
 
    And the base :g:`/ D C / <g1:/ D C />` is :eq:`equal <g1:/ D C / = g1:/ B C />` to the base :g:`/ B C / <g1:/ B C />`
 
-.. step:: assert [G.15] <G.15>
+.. step:: assert ∵ sss_congruence <G.15>
 
    Therefore :g:`< D A C ) <g1:< D A C )>` is :eq:`equal <g1:< D A C ) = g1:< B A C )>` to :g:`< B A C ) <g1:< B A C )>`.
 

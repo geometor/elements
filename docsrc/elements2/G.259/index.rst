@@ -23,6 +23,10 @@ G.259
 
    :term:`**Similar plane and solid numbers** <similar-plane-and-solid-numbers>` are those which have their sides proportional.
 
+.. signature:: def
+
+   | :fn:`similar_plane_solid_def <G.259>`
+
 Required for
 ------------
 

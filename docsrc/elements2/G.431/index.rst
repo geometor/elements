@@ -24,30 +24,32 @@ G.431
 
    A straight line commensurable with an apotome of a medial straight line is an apotome of a medial straight line and the same in order.
 
+.. signature:: theorem
+
+   | :fn:`straight_line_commensurable_x_104 <G.431>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`)
+   | **given** :g:`/ A B / <g1:/ A B />` be an apotome of a medial straight line, let :g:`/ C D / <g1:/ C D />` be commensurable in length with :g:`/ A B / <g1:/ A B />`
+   | **prove** :g:`/ C D / <g1:/ C D />` is also an apotome of a medial straight line and the same in order with :g:`/ A B / <g1:/ A B />`
+
 .. picture:: g1.svg
    :alt: Proposition 104 diagram
 
 .. step:: given
 
-   :g:`/ A B / <g1:/ A B />` be an apotome of a medial straight line
-
-.. step:: assert
-
-   Let :g:`/ C D / <g1:/ C D />` be commensurable in length with :g:`/ A B / <g1:/ A B />`
+   :g:`/ A B / <g1:/ A B />` be an apotome of a medial straight line, let :g:`/ C D / <g1:/ C D />` be commensurable in length with :g:`/ A B / <g1:/ A B />`
 
 .. step:: assert
 
    Since :g:`/ A B / <g1:/ A B />` is an apotome of a medial straight line, let :g:`/ E B / <g1:/ E B />` be the annex to it.
 
-.. step:: assert [G.395, G.396] <G.395, G.396>
+.. step:: assert ∵ medial_straight_line, medial_straight_line_x_75 <G.395, G.396>
 
    Therefore :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />` are medial straight lines commensurable in square only.
 
-.. step:: assert [G.175] <G.175>
+.. step:: assert ∵ fourth_proportional <G.175>
 
    Let it be contrived that, as :g:`/ A B / <g1:/ A B />` is to :g:`/ C D / <g1:/ C D />`, so is :g:`/ B E / <g1:/ B E />` to :g:`/ D F / <g1:/ D F />`
 
-.. step:: assert [G.149, G.323] <G.149, G.323>
+.. step:: assert ∵ number_magnitudes_proportional, magnitudes_proportional_commensurable <G.149, G.323>
 
    Therefore :g:`/ A E / <g1:/ A E />` is also commensurable with :g:`/ C F / <g1:/ C F />`, and :g:`/ B E / <g1:/ B E />` with :g:`/ D F / <g1:/ D F />`.
 
@@ -55,7 +57,7 @@ G.431
 
    :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />` are medial straight lines commensurable in square only;
 
-.. step:: assert [G.338, G.326, G.395, G.396] <G.338, G.326, G.395, G.396>
+.. step:: assert ∵ straight_line_commensurable, magnitudes_commensurable_incommensurable, medial_straight_line, medial_straight_line_x_75 <G.338, G.326, G.395, G.396>
 
    Therefore :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />` are also medial straight lines commensurable in square only; therefore :g:`/ C D / <g1:/ C D />` is an apotome of a medial straight line.
 
@@ -75,15 +77,15 @@ G.431
 
    The square on :g:`/ A E / <g1:/ A E />` is commensurable with the square on :g:`/ C F / <g1:/ C F />`;
 
-.. step:: assert [G.153, G.323] <G.153, G.323>
+.. step:: assert ∵ magnitudes_proportional_proportional, magnitudes_proportional_commensurable <G.153, G.323>
 
    Therefore the rectangle :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />` is also commensurable with the rectangle :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />`.
 
-.. step:: assert [G.332, G.338] <G.332, G.338>
+.. step:: assert ∵ square_assigned_straight_def, straight_line_commensurable <G.332, G.338>
 
    Therefore, if the rectangle :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />` is rational, the rectangle :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />` will also be rational, and if the rectangle :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />` is medial, the rectangle :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />` is also medial.
 
-.. step:: conclude [G.395, G.396] <G.395, G.396>
+.. step:: conclude ∵ medial_straight_line, medial_straight_line_x_75 <G.395, G.396>
 
    Therefore :g:`/ C D / <g1:/ C D />` is an apotome of a medial straight line and the same in order with :g:`/ A B / <g1:/ A B />`.
 

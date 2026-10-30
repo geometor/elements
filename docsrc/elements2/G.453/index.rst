@@ -24,30 +24,31 @@ G.453
 
    If two straight lines meeting one another be parallel to two straight lines meeting one another not in the same plane, they will contain equal angles.
 
+.. signature:: theorem
+
+   | :fn:`straight_lines_meeting <G.453>`\ ()
+   | **prove** :g:`< A B C ) <g1:< A B C )>` is :eq:`equal <g1:< A B C ) = g1:< D E F )>` to :g:`< D E F ) <g1:< D E F )>`
+
 .. picture:: g1.svg
    :alt: Proposition 10
 
 .. step:: assert
 
-   For let :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` meeting one another be parallel to :g:`/ D E / <g1:/ D E />`, :g:`/ E F / <g1:/ E F />` meeting one another, not in the same plane
-
-.. step:: assert
-
-   :g:`< A B C ) <g1:< A B C )>` is :eq:`equal <g1:< A B C ) = g1:< D E F )>` to :g:`< D E F ) <g1:< D E F )>`.
+   Let :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` meeting one another be parallel to :g:`/ D E / <g1:/ D E />`, :g:`/ E F / <g1:/ E F />` meeting one another, not in the same plane
 
 .. step:: construct
 
-   For let :g:`/ B A / <g1:/ B A />`, :g:`/ B C / <g1:/ B C />`, :g:`/ E D / <g1:/ E D />`, :g:`/ E F / <g1:/ E F />` be cut off :eq:`equal <g1:/ B A / = g1:/ B C / = g1:/ E D / = g1:/ E F />` to one another
+   Let :g:`/ B A / <g1:/ B A />`, :g:`/ B C / <g1:/ B C />`, :g:`/ E D / <g1:/ E D />`, :g:`/ E F / <g1:/ E F />` be cut off :eq:`equal <g1:/ B A / = g1:/ B C / = g1:/ E D / = g1:/ E F />` to one another
 
 .. step:: construct
 
-   **segment** :g:`/ A D / <g1:/ A D />`, :g:`/ C F / <g1:/ C F />`, :g:`/ B E / <g1:/ B E />`, :g:`/ A C / <g1:/ A C />`, :g:`/ D F / <g1:/ D F />`
+   :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`D <g1:D>`) → :g:`/ A D / <g1:/ A D />`, :fn:`segment <G.3>`\ (:g:`C <g1:C>`, :g:`F <g1:F>`) → :g:`/ C F / <g1:/ C F />`, :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`E <g1:E>`) → :g:`/ B E / <g1:/ B E />`, :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`C <g1:C>`) → :g:`/ A C / <g1:/ A C />`, :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`F <g1:F>`) → :g:`/ D F / <g1:/ D F />`
 
 .. step:: assert
 
    Since :g:`/ B A / <g1:/ B A />` is :eq:`equal <g1:/ B A / = g1:/ E D />` and parallel to :g:`/ E D / <g1:/ E D />`,
 
-.. step:: assert [G.46] <G.46>
+.. step:: assert ∵ join_equal_parallels <G.46>
 
    Therefore :g:`/ A D / <g1:/ A D />` is also :eq:`equal <g1:/ A D / = g1:/ B E />` and parallel to :g:`/ B E / <g1:/ B E />`.
 
@@ -59,7 +60,7 @@ G.453
 
    Therefore each of :g:`/ A D / <g1:/ A D />`, :g:`/ C F / <g1:/ C F />` is :eq:`equal <g1:/ A D / = g1:/ B E / = g1:/ C F />` and parallel to :g:`/ B E / <g1:/ B E />`.
 
-.. step:: assert [G.452] <G.452>
+.. step:: assert ∵ straight_lines_parallel_xi_9 <G.452>
 
    Straight lines which are parallel to the same straight line and are not in the same plane with it are parallel to one another.
 
@@ -71,7 +72,7 @@ G.453
 
    :g:`/ A C / <g1:/ A C />`, :g:`/ D F / <g1:/ D F />` join them;
 
-.. step:: assert [G.46] <G.46>
+.. step:: assert ∵ join_equal_parallels <G.46>
 
    Therefore :g:`/ A C / <g1:/ A C />` is also :eq:`equal <g1:/ A C / = g1:/ D F />` and, parallel to :g:`/ D F / <g1:/ D F />`.
 
@@ -79,7 +80,7 @@ G.453
 
    Since the two sides :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are :eq:`equal <g1:/ A B / = g1:/ D E /; g1:/ B C / = g1:/ E F />` to the two sides :g:`/ D E / <g1:/ D E />`, :g:`/ E F / <g1:/ E F />`, and the base :g:`/ A C / <g1:/ A C />` is :eq:`equal <g1:/ A C / = g1:/ D F />` to the base :g:`/ D F / <g1:/ D F />`,
 
-.. step:: conclude [G.15] <G.15>
+.. step:: conclude ∵ sss_congruence <G.15>
 
    Therefore :g:`< A B C ) <g1:< A B C )>` is :eq:`equal <g1:< A B C ) = g1:< D E F )>` to :g:`< D E F ) <g1:< D E F )>`.
 

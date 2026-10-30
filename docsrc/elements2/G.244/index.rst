@@ -24,6 +24,12 @@ G.244
 
    Given as many ratios as we please in least numbers, to find numbers in continued proportion which are the least in the given ratios.
 
+.. signature:: problem
+
+   | :fn:`many_ratios_please <G.244>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`) → :g:`N <g2:N>`, :g:`O <g2:O>`
+   | **given** the given ratios in least numbers be that of :g:`A <g1:A>` to :g:`B <g1:B>`, that of :g:`C <g1:C>` to :g:`D <g1:D>`, that of :g:`E <g1:E>` to :g:`F <g1:F>`
+   | **construct** :g:`N <g2:N>`, :g:`O <g2:O>`, :g:`M <g2:M>`, :g:`P <g2:P>` are the least numbers continuously proportional in the ratios :g:`A <g2:A>` : :g:`B <g2:B>`, :g:`C <g2:C>` : :g:`D <g2:D>`, :g:`E <g2:E>` : :g:`F <g2:F>`
+
 .. picture:: g1.svg
    :alt: Proposition 4 Diagram 1
 
@@ -34,9 +40,9 @@ G.244
 
    the given ratios in least numbers be that of :g:`A <g1:A>` to :g:`B <g1:B>`, that of :g:`C <g1:C>` to :g:`D <g1:D>`, that of :g:`E <g1:E>` to :g:`F <g1:F>`
 
-.. step:: construct [G.235] <G.235>
+.. step:: construct
 
-   Let :g:`G <g1:G>`, the least number measured by :g:`B <g1:B>`, :g:`C <g1:C>`, be taken.
+   :fn:`numbers_find_least <G.235>`: Let :g:`G <g1:G>`, the least number measured by :g:`B <g1:B>`, :g:`C <g1:C>`, be taken.
 
 .. step:: assert
 
@@ -58,7 +64,7 @@ G.244
 
    Since :g:`A <g1:A>` measures :g:`H <g1:H>` the same number of times that :g:`B <g1:B>` measures :g:`G <g1:G>`,
 
-.. step:: assert [G.210, G.213] <G.210, G.213>
+.. step:: assert ∵ numbers_proportional_multiple_def, numbers_proportional_proportional <G.210, G.213>
 
    Therefore, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`H <g1:H>` to :g:`G <g1:G>`.
 
@@ -82,7 +88,7 @@ G.244
 
    Then since, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`N <g1:N>` to :g:`O <g1:O>`, while :g:`A <g1:A>`, :g:`B <g1:B>` are least, and the least numbers measure those which have the same ratio the same number of times, the greater the greater and the less the less, that is, the antecedent the antecedent and the consequent the consequent;
 
-.. step:: assert [G.220] <G.220>
+.. step:: assert ∵ least_numbers_ratio <G.220>
 
    Therefore :g:`B <g1:B>` measures :g:`O <g1:O>`.
 
@@ -94,7 +100,7 @@ G.244
 
    Therefore :g:`B <g1:B>`, :g:`C <g1:C>` measure :g:`O <g1:O>`;
 
-.. step:: assert [G.236] <G.236>
+.. step:: assert ∵ numbers_measure_number <G.236>
 
    Therefore the least number measured by :g:`B <g1:B>`, :g:`C <g1:C>` will also measure :g:`O <g1:O>`.
 
@@ -126,7 +132,7 @@ G.244
 
    Since :g:`H <g2:H>` measures :g:`N <g2:N>` the same number of times that :g:`G <g2:G>` measures :g:`O <g2:O>`,
 
-.. step:: assert [G.213, G.210] <G.213, G.210>
+.. step:: assert ∵ numbers_proportional_proportional, numbers_proportional_multiple_def <G.213, G.210>
 
    Therefore, as :g:`H <g2:H>` is to :g:`G <g2:G>`, so is :g:`N <g2:N>` to :g:`O <g2:O>`.
 
@@ -146,7 +152,7 @@ G.244
 
    Since :g:`E <g2:E>` measures :g:`M <g2:M>` the same number of times that :g:`F <g2:F>` measures :g:`P <g2:P>`,
 
-.. step:: assert [G.213, G.210] <G.213, G.210>
+.. step:: assert ∵ numbers_proportional_proportional, numbers_proportional_multiple_def <G.213, G.210>
 
    Therefore, as :g:`E <g2:E>` is to :g:`F <g2:F>`, so is :g:`M <g2:M>` to :g:`P <g2:P>`;
 
@@ -166,7 +172,7 @@ G.244
 
    Let them be :g:`Q <g2:Q>`, :g:`R <g2:R>`, :g:`S <g2:S>`, :g:`T <g2:T>`.
 
-.. step:: assert [G.220] <G.220>
+.. step:: assert ∵ least_numbers_ratio <G.220>
 
    Now since, as :g:`Q <g2:Q>` is to :g:`R <g2:R>`, so is :g:`A <g2:A>` to :g:`B <g2:B>`, while :g:`A <g2:A>`, :g:`B <g2:B>` are least, and the least numbers measure those which have the same ratio with them the same number of times, the antecedent the antecedent and the consequent the consequent.
 
@@ -182,7 +188,7 @@ G.244
 
    Therefore :g:`B <g2:B>`, :g:`C <g2:C>` measure :g:`R <g2:R>`.
 
-.. step:: assert [G.236] <G.236>
+.. step:: assert ∵ numbers_measure_number <G.236>
 
    Therefore the least number measured by :g:`B <g2:B>`, :g:`C <g2:C>` will also measure :g:`R <g2:R>`.
 
@@ -194,7 +200,7 @@ G.244
 
    Therefore :g:`G <g2:G>` measures :g:`R <g2:R>`.
 
-.. step:: assert [G.213] <G.213>
+.. step:: assert ∵ numbers_proportional_proportional <G.213>
 
    And, as :g:`G <g2:G>` is to :g:`R <g2:R>`, so is :g:`K <g2:K>` to :g:`S <g2:S>` :
 
@@ -210,7 +216,7 @@ G.244
 
    Therefore :g:`E <g2:E>`, :g:`K <g2:K>` measure :g:`S <g2:S>`.
 
-.. step:: assert [G.236] <G.236>
+.. step:: assert ∵ numbers_measure_number <G.236>
 
    Therefore the least number measured by :g:`E <g2:E>`, :g:`K <g2:K>` will also measure :g:`S <g2:S>`.
 

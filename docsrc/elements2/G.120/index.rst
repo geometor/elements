@@ -23,6 +23,10 @@ G.120
 
    Similarly a circle is said to be:term:`**inscribed in a figure** <circle-inscribed-in-figure>` when the circumference of the circle touches each side of the figure in which it is inscribed.
 
+.. signature:: def
+
+   | :fn:`similarly_circle_said_def <G.120>`
+
 Required for
 ------------
 

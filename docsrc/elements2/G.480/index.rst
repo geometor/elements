@@ -24,24 +24,22 @@ G.480
 
    Similar parallelepipedal solids are to one another in the triplicate ratio of their corresponding sides.
 
+.. signature:: theorem
+
+   | :fn:`similar_parallelepipedal_solids <G.480>`\ (:g:`< A B > <g1:< A B >>`, :g:`< C D > <g1:< C D >>`, :g:`/ A E / <g1:/ A E />`, :g:`/ C F / <g1:/ C F />`)
+   | **given** :g:`< A B > <g1:< A B >>`, :g:`< C D > <g1:< C D >>` be similar parallelepipedal solids, let :g:`/ A E / <g1:/ A E />` be the side corresponding to :g:`/ C F / <g1:/ C F />`
+   | **prove** the solid :g:`< A B > <g1:< A B >>` has to the solid :g:`< C D > <g1:< C D >>` the ratio triplicate of that which :g:`/ A E / <g1:/ A E />` has to :g:`/ C F / <g1:/ C F />`
+
 .. picture:: g1.svg
    :alt: Book XI, Proposition 33
 
 .. step:: given
 
-   :g:`< A B > <g1:< A B >>`, :g:`< C D > <g1:< C D >>` be similar parallelepipedal solids
-
-.. step:: assert
-
-   Let :g:`/ A E / <g1:/ A E />` be the side corresponding to :g:`/ C F / <g1:/ C F />`
+   :g:`< A B > <g1:< A B >>`, :g:`< C D > <g1:< C D >>` be similar parallelepipedal solids, let :g:`/ A E / <g1:/ A E />` be the side corresponding to :g:`/ C F / <g1:/ C F />`
 
 .. step:: construct
 
-   For let :g:`/ E K / <g1:/ E K />`, :g:`/ E L / <g1:/ E L />`, :g:`/ E M / <g1:/ E M />` be produced in a straight line with :g:`/ A E / <g1:/ A E />`, :g:`/ G E / <g1:/ G E />`, :g:`/ H E / <g1:/ H E />`, let :g:`/ E K / <g1:/ E K />` be made :eq:`equal <g1:/ E K / = g1:/ C F />` to :g:`/ C F / <g1:/ C F />`, :g:`/ E L / <g1:/ E L />` :eq:`equal <g1:/ E L / = g1:/ F N />` to :g:`/ F N / <g1:/ F N />`, and further :g:`/ E M / <g1:/ E M />` :eq:`equal <g1:/ E M / = g1:/ F R />` to :g:`/ F R / <g1:/ F R />`
-
-.. step:: assert
-
-   Let the parallelogram :g:`< K L > <g1:< K L >>` and the solid :g:`< K P > <g1:< K P >>` be completed.
+   :fn:`extend <G.7>`\ (:g:`/ A E / <g1:/ A E />`, :g:`/ G E / <g1:/ G E />`, :g:`/ H E / <g1:/ H E />`, let :g:`/ E K / <g1:/ E K />` be made :eq:`equal <g1:/ E K / = g1:/ C F />` to :g:`/ C F / <g1:/ C F />`, :g:`/ E L / <g1:/ E L />` :eq:`equal <g1:/ E L / = g1:/ F N />` to :g:`/ F N / <g1:/ F N />`, and further :g:`/ E M / <g1:/ E M />` :eq:`equal <g1:/ E M / = g1:/ F R />` to :g:`/ F R / <g1:/ F R />`, and let the parallelogram :g:`< K L > <g1:< K L >>` and the solid :g:`< K P > <g1:< K P >>` be completed) → :g:`/ E K / <g1:/ E K />`, :g:`/ E L / <g1:/ E L />`, :g:`/ E M / <g1:/ E M />`
 
 .. step:: assert
 
@@ -55,21 +53,17 @@ G.480
 
    For the same reason the parallelogram :g:`< K M > <g1:< K M >>` is also :eq:`equal <g1:< K M > = g1:< C R >; g1:< E P > = g1:< D F >>` and similar to :g:`< C R > <g1:< C R >>`, and further :g:`< E P > <g1:< E P >>` to :g:`< D F > <g1:< D F >>`; therefore three parallelograms of the solid :g:`< K P > <g1:< K P >>` are equal and similar to three parallelograms of the solid :g:`< C D > <g1:< C D >>`.
 
-.. step:: assert [G.469] <G.469>
+.. step:: assert ∵ solid_contained_parallel <G.469>
 
    The former three parallelograms are equal and similar to their opposites, and the latter three to their opposites.
 
-.. step:: assert [G.474] <G.474>
+.. step:: assert ∵ equal_similar_solid_def <G.474>
 
    Therefore the whole solid :g:`< K P > <g1:< K P >>` is :eq:`equal <g1:< K P > = g1:< C D >>` and similar to the whole solid :g:`< C D > <g1:< C D >>`.
 
 .. step:: assert
 
-   Let the parallelogram :g:`< G K > <g1:< G K >>` be completed
-
-.. step:: assert
-
-   On the parallelograms :g:`< G K > <g1:< G K >>`, :g:`< K L > <g1:< K L >>` as bases, and with the same height as that of :g:`< A B > <g1:< A B >>`, let the solids :g:`< E O > <g1:< E O >>`, :g:`< L Q > <g1:< L Q >>` be completed.
+   Let the parallelogram :g:`< G K > <g1:< G K >>` be completed, and on the parallelograms :g:`< G K > <g1:< G K >>`, :g:`< K L > <g1:< K L >>` as bases, and with the same height as that of :g:`< A B > <g1:< A B >>`, let the solids :g:`< E O > <g1:< E O >>`, :g:`< L Q > <g1:< L Q >>` be completed.
 
 .. step:: assert
 
@@ -79,7 +73,7 @@ G.480
 
    Therefore, as :g:`/ A E / <g1:/ A E />` is to :g:`/ E K / <g1:/ E K />`, so is :g:`/ G E / <g1:/ G E />` to :g:`/ E L / <g1:/ E L />`, and :g:`/ H E / <g1:/ H E />` to :g:`/ E M / <g1:/ E M />`.
 
-.. step:: assert [G.163] <G.163>
+.. step:: assert ∵ triangles_parallelograms_height <G.163>
 
    But, as :g:`/ A E / <g1:/ A E />` is to :g:`/ E K / <g1:/ E K />`, so is :g:`< A G > <g1:< A G >>` to the parallelogram :g:`< G K > <g1:< G K >>`, as :g:`/ G E / <g1:/ G E />` is to :g:`/ E L / <g1:/ E L />`, so is :g:`< G K > <g1:< G K >>` to :g:`< K L > <g1:< K L >>`, and, as :g:`/ H E / <g1:/ H E />` is to :g:`/ E M / <g1:/ E M />`, so is :g:`< Q E > <g1:< Q E >>` to :g:`< K M > <g1:< K M >>`.
 
@@ -87,7 +81,7 @@ G.480
 
    Therefore also, as the parallelogram :g:`< A G > <g1:< A G >>` is to :g:`< G K > <g1:< G K >>`, so is :g:`< G K > <g1:< G K >>` to :g:`< K L > <g1:< K L >>`, and :g:`< Q E > <g1:< Q E >>` to :g:`< K M > <g1:< K M >>`.
 
-.. step:: assert [G.479] <G.479>
+.. step:: assert ∵ parallelepipedal_solids_height <G.479>
 
    But, as :g:`< A G > <g1:< A G >>` is to :g:`< G K > <g1:< G K >>`, so is the solid :g:`< A B > <g1:< A B >>` to the solid :g:`< E O > <g1:< E O >>`, as :g:`< G K > <g1:< G K >>` is to :g:`< K L > <g1:< K L >>`, so is the solid :g:`< O E > <g1:< O E >>` to the solid :g:`< Q L > <g1:< Q L >>`, and, as :g:`< Q E > <g1:< Q E >>` is to :g:`< K M > <g1:< K M >>`, so is the solid :g:`< Q L > <g1:< Q L >>` to the solid :g:`< K P > <g1:< K P >>`.
 
@@ -95,7 +89,7 @@ G.480
 
    Therefore also, as the solid :g:`< A B > <g1:< A B >>` is to :g:`< E O > <g1:< E O >>`, so is :g:`< E O > <g1:< E O >>` to :g:`< Q L > <g1:< Q L >>`, and :g:`< Q L > <g1:< Q L >>` to :g:`< K P > <g1:< K P >>`.
 
-.. step:: assert [G.252] <G.252>
+.. step:: assert ∵ magnitudes_proportional_said_def_v_def_10 <G.252>
 
    But, if four magnitudes be continuously proportional, the first has to the fourth the ratio triplicate of that which it has to the second.
 
@@ -103,7 +97,7 @@ G.480
 
    Therefore the solid :g:`< A B > <g1:< A B >>` has to :g:`< K P > <g1:< K P >>` the ratio triplicate of that which :g:`< A B > <g1:< A B >>` has to :g:`< E O > <g1:< E O >>`.
 
-.. step:: assert [G.163] <G.163>
+.. step:: assert ∵ triangles_parallelograms_height <G.163>
 
    But, as :g:`< A B > <g1:< A B >>` is to :g:`< E O > <g1:< E O >>`, so is the parallelogram :g:`< A G > <g1:< A G >>` to :g:`< G K > <g1:< G K >>`, and :g:`/ A E / <g1:/ A E />` to :g:`/ E K / <g1:/ E K />`.
 

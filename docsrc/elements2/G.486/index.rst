@@ -24,26 +24,24 @@ G.486
 
    If there be two prisms of equal height, and one have a parallelogram as base and the other a triangle, and if the parallelogram be double of the triangle, the prisms is equal.
 
+.. signature:: theorem
+
+   | :fn:`there_prisms_equal <G.486>`\ (:g:`< A B C D E F > <g1:< A B C D E F >>`, :g:`< G H K L M N > <g1:< G H K L M N >>`, :g:`< A F > <g1:< A F >>`, :g:`< G H K > <g1:< G H K >>`)
+   | **given** :g:`< A B C D E F > <g1:< A B C D E F >>`, :g:`< G H K L M N > <g1:< G H K L M N >>` be two prisms of equal height, let one have the parallelogram :g:`< A F > <g1:< A F >>` as base, the other :g:`< G H K > <g1:< G H K >>`, let the parallelogram :g:`< A F > <g1:< A F >>` be double of :g:`< G H K > <g1:< G H K >>`
+   | **prove** the prism :g:`< A B C D E F > <g1:< A B C D E F >>` is :eq:`equal <g1:< A B C D E F > = g1:< G H K L M N >>` to the prism :g:`< G H K L M N > <g1:< G H K L M N >>`
+
 .. picture:: g1.svg
    :alt: Proposition 39 diagram
 
 .. step:: given
 
-   :g:`< A B C D E F > <g1:< A B C D E F >>`, :g:`< G H K L M N > <g1:< G H K L M N >>` be two prisms of equal height, let one have the parallelogram :g:`< A F > <g1:< A F >>` as base, the other :g:`< G H K > <g1:< G H K >>`
+   :g:`< A B C D E F > <g1:< A B C D E F >>`, :g:`< G H K L M N > <g1:< G H K L M N >>` be two prisms of equal height, let one have the parallelogram :g:`< A F > <g1:< A F >>` as base, the other :g:`< G H K > <g1:< G H K >>`, let the parallelogram :g:`< A F > <g1:< A F >>` be double of :g:`< G H K > <g1:< G H K >>`
 
 .. step:: assert
 
-   Let the parallelogram :g:`< A F > <g1:< A F >>` be double of :g:`< G H K > <g1:< G H K >>`
+   Let the solids :g:`< A O > <g1:< A O >>`, :g:`< G P > <g1:< G P >>` be completed.
 
-.. step:: assert
-
-   The prism :g:`< A B C D E F > <g1:< A B C D E F >>` is :eq:`equal <g1:< A B C D E F > = g1:< G H K L M N >>` to the prism :g:`< G H K L M N > <g1:< G H K L M N >>`.
-
-.. step:: assert
-
-   For let the solids :g:`< A O > <g1:< A O >>`, :g:`< G P > <g1:< G P >>` be completed.
-
-.. step:: assert [G.47] <G.47>
+.. step:: assert ∵ parallelogram_properties <G.47>
 
    Since the parallelogram :g:`< A F > <g1:< A F >>` is double of :g:`< G H K > <g1:< G H K >>`, while the parallelogram :g:`< H K > <g1:< H K >>` is also double of :g:`< G H K > <g1:< G H K >>`.
 
@@ -51,7 +49,7 @@ G.486
 
    Therefore the parallelogram :g:`< A F > <g1:< A F >>` is :eq:`equal <g1:< A F > = g1:< H K >>` to the parallelogram :g:`< H K > <g1:< H K >>`.
 
-.. step:: assert [G.478] <G.478>
+.. step:: assert ∵ parallelepipedal_solids_equal <G.478>
 
    Parallelepipedal solids which are on equal bases and of the same height are equal to one another .
 
@@ -59,7 +57,7 @@ G.486
 
    Therefore the solid :g:`< A O > <g1:< A O >>` is :eq:`equal <g1:< A O > = g1:< G P >>` to the solid :g:`< G P > <g1:< G P >>`.
 
-.. step:: assert [G.475] <G.475>
+.. step:: assert ∵ parallelepipedal_solid_cut_xi_28 <G.475>
 
    The prism :g:`< A B C D E F > <g1:< A B C D E F >>` is half of the solid :g:`< A O > <g1:< A O >>`, and the prism :g:`< G H K L M N > <g1:< G H K L M N >>` is half of the solid :g:`< G P > <g1:< G P >>` .
 

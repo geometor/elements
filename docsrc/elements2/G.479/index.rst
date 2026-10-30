@@ -24,6 +24,12 @@ G.479
 
    Parallelepipedal solids which are of the same height are to one another as their bases.
 
+.. signature:: theorem
+
+   | :fn:`parallelepipedal_solids_height <G.479>`\ (:g:`< A B > <g1:< A B >>`, :g:`< C D > <g1:< C D >>`)
+   | **given** :g:`< A B > <g1:< A B >>`, :g:`< C D > <g1:< C D >>` be parallelepipedal solids of the same height
+   | **prove** the parallelepipedal solids :g:`< A B > <g1:< A B >>`, :g:`< C D > <g1:< C D >>` are to one another as their bases, that is, that, as the base :g:`< A E > <g1:< A E >>` is to the base :g:`< C F > <g1:< C F >>`, so is the solid :g:`< A B > <g1:< A B >>` to the solid :g:`< C D > <g1:< C D >>`
+
 .. picture:: g1.svg
    :alt: Book XI, Proposition 32
 
@@ -31,15 +37,11 @@ G.479
 
    :g:`< A B > <g1:< A B >>`, :g:`< C D > <g1:< C D >>` be parallelepipedal solids of the same height
 
-.. step:: construct [G.58] <G.58>
+.. step:: construct
 
-   For let :g:`< F H > <g1:< F H >>` :eq:`equal <g1:< F H > = g1:< A E >>` to :g:`< A E > <g1:< A E >>` be applied to :g:`/ F G / <g1:/ F G />`, and on :g:`< F H > <g1:< F H >>` as base
+   :fn:`parallelogram_from_polygon <G.58>`: Let :g:`< F H > <g1:< F H >>` :eq:`equal <g1:< F H > = g1:< A E >>` to :g:`< A E > <g1:< A E >>` be applied to :g:`/ F G / <g1:/ F G />`, and on :g:`< F H > <g1:< F H >>` as base, and with the same height as that of :g:`< C D > <g1:< C D >>`, let the parallelepipedal solid :g:`< G K > <g1:< G K >>` be completed.
 
-.. step:: assert
-
-   With the same height as that of :g:`< C D > <g1:< C D >>`, let the parallelepipedal solid :g:`< G K > <g1:< G K >>` be completed.
-
-.. step:: assert [G.478] <G.478>
+.. step:: assert ∵ parallelepipedal_solids_equal <G.478>
 
    Then the solid :g:`< A B > <g1:< A B >>` is :eq:`equal <g1:< A B > = g1:< G K >>` to the solid :g:`< G K > <g1:< G K >>`; for they are on :eq:`equal <g1:< A E > = g1:< F H >>` bases :g:`< A E > <g1:< A E >>`, :g:`< F H > <g1:< F H >>` and of the same height.
 
@@ -47,7 +49,7 @@ G.479
 
    And, since the parallelepipedal solid :g:`< C K > <g1:< C K >>` is cut by the plane :g:`< D G > <g1:< D G >>` which is parallel to opposite planes,
 
-.. step:: assert [G.470] <G.470>
+.. step:: assert ∵ parallelepipedal_solid_cut <G.470>
 
    Therefore, as the base :g:`< C F > <g1:< C F >>` is to the base :g:`< F H > <g1:< F H >>`, so is the solid :g:`< C D > <g1:< C D >>` to the solid :g:`< D H > <g1:< D H >>`.
 

@@ -24,34 +24,44 @@ G.349
 
    Find two straight lines incommensurable in square which make the sum of the squares on them medial but the rectangle contained by them rational.
 
+.. signature:: problem
+
+   | :fn:`find_straight_lines_x_34 <G.349>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`) → :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />`
+   | **given** there be set out two medial straight lines :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, commensurable in square only, such that the rectangle which they contain is rational, the square on :g:`/ A B / <g1:/ A B />` is greater than the square on :g:`/ B C / <g1:/ B C />` by the square on a straight line incommensurable with :g:`/ A B / <g1:/ A B />`
+   | **construct** the rectangle :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` is also rational
+
 .. picture:: g1.svg
    :alt: Proposition 34 diagram
 
-.. step:: given [G.346] <G.346>
+.. step:: given
 
    there be set out two medial straight lines :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, commensurable in square only, such that the rectangle which they contain is rational, the square on :g:`/ A B / <g1:/ A B />` is greater than the square on :g:`/ B C / <g1:/ B C />` by the square on a straight line incommensurable with :g:`/ A B / <g1:/ A B />`
 
-.. step:: construct [G.193] <G.193>
+.. step:: construct
 
-   Let the semicircle :g:`( A D B ) <g1:( A D B )>` be described on :g:`/ A B / <g1:/ A B />`, let :g:`/ B C / <g1:/ B C />` be :eq:`bisected <g1:/ B E / = g1:/ E C />` at :g:`E <g1:E>`, let there be applied to :g:`/ A B / <g1:/ A B />` a parallelogram equal to the square on :g:`/ B E / <g1:/ B E />` and deficient by a square figure, namely the rectangle :g:`/ A F / <g1:/ A F />`, :g:`/ F B / <g1:/ F B />`
+   Let the semicircle :g:`( A D B ) <g1:( A D B )>` be described on :g:`/ A B / <g1:/ A B />`
 
-.. step:: assert [G.331] <G.331>
+.. step:: construct
+
+   :fn:`straight_line_apply <G.193>`: Let :g:`/ B C / <g1:/ B C />` be :eq:`bisected <g1:/ B E / = g1:/ E C />` at :g:`E <g1:E>`, let there be applied to :g:`/ A B / <g1:/ A B />` a parallelogram equal to the square on :g:`/ B E / <g1:/ B E />` and deficient by a square figure, namely the rectangle :g:`/ A F / <g1:/ A F />`, :g:`/ F B / <g1:/ F B />`
+
+.. step:: assert ∵ there_unequal_straight_x_18 <G.331>
 
    Therefore :g:`/ A F / <g1:/ A F />` is incommensurable in length with :g:`/ F B / <g1:/ F B />`.
 
 .. step:: construct
 
-   Let :g:`/ F D / <g1:/ F D />` be drawn from :g:`F <g1:F>` at :eq:`right angles <g1:< A F D ) = g1:< B F D )>` to :g:`/ A B / <g1:/ A B />`
+   :fn:`perpendicular_at <G.19>`\ (:g:`/ A B / <g1:/ A B />`, :g:`F <g1:F>`) → :g:`/ F D / <g1:/ F D />`
 
 .. step:: construct
 
-   **segment** :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />`
+   :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`D <g1:D>`) → :g:`/ A D / <g1:/ A D />`, :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`B <g1:B>`) → :g:`/ D B / <g1:/ D B />`
 
 .. step:: assert
 
    Since :g:`/ A F / <g1:/ A F />` is incommensurable in length with :g:`/ F B / <g1:/ F B />`,
 
-.. step:: assert [G.323] <G.323>
+.. step:: assert ∵ magnitudes_proportional_commensurable <G.323>
 
    Therefore the rectangle :g:`/ B A / <g1:/ B A />`, :g:`/ A F / <g1:/ A F />` is also incommensurable with the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B F / <g1:/ B F />`.
 
@@ -67,7 +77,7 @@ G.349
 
    And, since the square on :g:`/ A B / <g1:/ A B />` is medial,
 
-.. step:: assert [G.110, G.60] <G.110, G.60>
+.. step:: assert ∵ thales_semicircle_theorem, pythagorean_theorem <G.110, G.60>
 
    Therefore the sum of the squares on :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` is also medial.
 
@@ -83,11 +93,11 @@ G.349
 
    The rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` is rational;
 
-.. step:: assert [G.319] <G.319>
+.. step:: assert ∵ magnitudes_ratio_number <G.319>
 
    Therefore the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ F D / <g1:/ F D />` is also rational.
 
-.. step:: assert [Lemma] <Lemma>
+.. step:: assert ∵ Lemma <Lemma>
 
    The rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ F D / <g1:/ F D />` is equal to the rectangle :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />`.
 

@@ -24,22 +24,24 @@ G.98
 
    In a circle the angle at the centre is double of the angle at the circumference, when the angles have the same circumference as base.
 
+.. signature:: theorem
+
+   | :fn:`inscribed_angle_theorem <G.98>`\ (:g:`( A B C ) <g1:( A B C )>`, :g:`< B E C ) <g1:< B E C )>`, :g:`< B A C ) <g1:< B A C )>`, :g:`( B C ) <g1:( B C )>`)
+   | **given** :g:`( A B C ) <g1:( A B C )>` be a circle, let :g:`< B E C ) <g1:< B E C )>` be an angle at its center, :g:`< B A C ) <g1:< B A C )>` an angle at the circumference, let them have the same circumference :g:`( B C ) <g1:( B C )>` as base
+   | **prove** :g:`< B E C ) <g1:< B E C )>` is double of :g:`< B A C ) <g1:< B A C )>`
+
 .. picture:: g1.svg
    :alt: Diagram for Proposition 20
 
 .. step:: given
 
-   :g:`( A B C ) <g1:( A B C )>` be a circle, let :g:`< B E C ) <g1:< B E C )>` be an angle at its center, :g:`< B A C ) <g1:< B A C )>` an angle at the circumference
-
-.. step:: assert
-
-   Let them have the same circumference :g:`( B C ) <g1:( B C )>` as base
+   :g:`( A B C ) <g1:( A B C )>` be a circle, let :g:`< B E C ) <g1:< B E C )>` be an angle at its center, :g:`< B A C ) <g1:< B A C )>` an angle at the circumference, let them have the same circumference :g:`( B C ) <g1:( B C )>` as base
 
 .. step:: construct
 
-   For let :g:`/ A E / <g1:/ A E />` be joined and drawn through to :g:`F <g1:F>`.
+   Let :g:`/ A E / <g1:/ A E />` be joined and drawn through to :g:`F <g1:F>`.
 
-.. step:: assert [G.12] <G.12>
+.. step:: assert ∵ isosceles_base_angles <G.12>
 
    Since :g:`/ E A / <g1:/ E A />` is :eq:`equal <g1:/ E A / = g1:/ E B />` to :g:`/ E B / <g1:/ E B />` → :g:`< E A B ) <g1:< E A B )>` is also :eq:`equal <g1:< E A B ) = g1:< E B A )>` to :g:`< E B A ) <g1:< E B A )>`.
 
@@ -47,7 +49,7 @@ G.98
 
    Therefore :g:`< E A B ) <g1:< E A B )>`, :g:`< E B A ) <g1:< E B A )>` are double of :g:`< E A B ) <g1:< E A B )>`.
 
-.. step:: assert [G.45] <G.45>
+.. step:: assert ∵ triangle_angle_sum <G.45>
 
    :g:`< B E F ) <g1:< B E F )>` is equal to :g:`< E A B ) <g1:< E A B )>`, :g:`< E B A ) <g1:< E B A )>`
 
@@ -57,7 +59,7 @@ G.98
 
 .. step:: assert
 
-   For the same reason
+   The same reason
 
 .. step:: assert
 
@@ -69,15 +71,11 @@ G.98
 
 .. step:: assert
 
-   Again let another straight line be inflected
-
-.. step:: assert
-
-   Let there be another angle :g:`< B D C ) <g1:< B D C )>`
+   Again let another straight line be inflected, and let there be another angle :g:`< B D C ) <g1:< B D C )>`
 
 .. step:: construct
 
-   Let :g:`/ D E / <g1:/ D E />` be joined and produced to :g:`G <g1:G>`.
+   :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`E <g1:E>`) → :g:`/ D E / <g1:/ D E />`, :fn:`extend <G.7>`\ (:g:`/ D E / <g1:/ D E />`) → :g:`G <g1:G>`
 
 .. step:: assert
 

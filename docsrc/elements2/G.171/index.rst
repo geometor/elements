@@ -24,22 +24,19 @@ G.171
 
    If in a right-angled triangle a perpendicular be drawn from the right angle to the base, the triangles adjoining the perpendicular are similar both to the whole and to one another.
 
+.. signature:: theorem
+
+   | :fn:`right_angled_triangle <G.171>`\ ()
+   | **prove** each of :g:`< A B D > <g1:< A B D >>`, :g:`< A D C > <g1:< A D C >>` is similar to the whole :g:`< A B C > <g1:< A B C >>` and, further, they are similar to one another
+
 .. picture:: g1.svg
    :alt: Proposition 8
 
-.. enunciation::
-
-   PORISM. From this it is clear that, if in a right-angled triangle a perpendicular be drawn from the right angle to the base, the straight line so drawn is a mean proportional between the segments of the base.:just:`Q. E. D.`
-
-.. step:: given
-
-   :g:`< A B C > <g1:< A B C >>` be a right-angled triangle having :g:`< B A C ) <g1:< B A C )>` right
-
 .. step:: construct
 
-   Let :g:`/ A D / <g1:/ A D />` be drawn from :g:`A <g1:A>` :eq:`perpendicular <g1:< B D A ) = g1:< A D C )>` to :g:`/ B C / <g1:/ B C />`
+   Let :g:`< A B C > <g1:< A B C >>` be a right-angled triangle having :g:`< B A C ) <g1:< B A C )>` right, and let :g:`/ A D / <g1:/ A D />` be drawn from :g:`A <g1:A>` :eq:`perpendicular <g1:< B D A ) = g1:< A D C )>` to :g:`/ B C / <g1:/ B C />`
 
-.. step:: assert [G.45] <G.45>
+.. step:: assert ∵ triangle_angle_sum <G.45>
 
    Since :g:`< B A C ) <g1:< B A C )>` is :eq:`equal <g1:< B A C ) = g1:< A D B )>` to :g:`< A D B ) <g1:< A D B )>`, for each is right, and the angle at :g:`< A B C ) <g1:< A B C )>` is common to the two triangles :g:`< A B C > <g1:< A B C >>` and :g:`< A B D > <g1:< A B D >>` → therefore the remaining angle :g:`< A C B ) <g1:< A C B )>` is :eq:`equal <g1:< A C B ) = g1:< B A D )>` to the remaining angle :g:`< B A D ) <g1:< B A D )>`.
 
@@ -47,7 +44,7 @@ G.171
 
    Therefore :g:`< A B C > <g1:< A B C >>` is :eq:`equiangular <g1:< B A C ) = g1:< A D B ); g1:< A B C ) = g1:< A B C ); g1:< A C B ) = g1:< B A D )>` with :g:`< A B D > <g1:< A B D >>`.
 
-.. step:: assert [G.166] <G.166>
+.. step:: assert ∵ equiangular_triangles_sides <G.166>
 
    Therefore, as :g:`/ B C / <g1:/ B C />` which subtends the right angle in :g:`< A B C > <g1:< A B C >>` is to :g:`/ B A / <g1:/ B A />` which subtends the right angle in :g:`< A B D > <g1:< A B D >>`, so is :g:`/ A B / <g1:/ A B />` itself which subtends the angle at :g:`< A C B ) <g1:< A C B )>` in :g:`< A B C > <g1:< A B C >>` to :g:`/ B D / <g1:/ B D />` which subtends the :eq:`equal <g1:< A C B ) = g1:< B A D )>` angle :g:`< B A D ) <g1:< B A D )>` in :g:`< A B D > <g1:< A B D >>`, and so also is :g:`/ A C / <g1:/ A C />` to :g:`/ A D / <g1:/ A D />` which subtends the angle at :g:`< A B C ) <g1:< A B C )>` common to the two triangles.
 
@@ -55,7 +52,7 @@ G.171
 
    Therefore :g:`< A B C > <g1:< A B C >>` is both :eq:`equiangular <g1:< B A C ) = g1:< A D B ); g1:< A B C ) = g1:< A B C ); g1:< A C B ) = g1:< B A D )>` to :g:`< A B D > <g1:< A B D >>` and has the sides about the equal angles proportional.
 
-.. step:: assert [G.170] <G.170>
+.. step:: assert ∵ similar_polygons_angles_def <G.170>
 
    Therefore :g:`< A B C > <g1:< A B C >>` is similar to :g:`< A B D > <g1:< A B D >>`.
 
@@ -71,7 +68,7 @@ G.171
 
    I say next that :g:`< A B D > <g1:< A B D >>`, :g:`< A D C > <g1:< A D C >>` are also similar to one another.
 
-.. step:: assert [G.45] <G.45>
+.. step:: assert ∵ triangle_angle_sum <G.45>
 
    Since the right angle :g:`< B D A ) <g1:< B D A )>` is :eq:`equal <g1:< B D A ) = g1:< A D C )>` to the right angle :g:`< A D C ) <g1:< A D C )>`, and moreover :g:`< B A D ) <g1:< B A D )>` was also proved :eq:`equal <g1:< B A D ) = g1:< A C B )>` to the angle at :g:`< A C B ) <g1:< A C B )>` → therefore the remaining angle at :g:`< A B D ) <g1:< A B D )>` is also :eq:`equal <g1:< A B D ) = g1:< D A C )>` to the remaining angle :g:`< D A C ) <g1:< D A C )>`.
 
@@ -83,13 +80,17 @@ G.171
 
    Therefore, as :g:`/ B D / <g1:/ B D />` which subtends :g:`< B A D ) <g1:< B A D )>` in :g:`< A B D > <g1:< A B D >>` is to :g:`/ D A / <g1:/ D A />` which subtends the angle at :g:`< A C D ) <g1:< A C D )>` in :g:`< A D C > <g1:< A D C >>` :eq:`equal <g1:< A C D ) = g1:< B A D )>` to :g:`< B A D ) <g1:< B A D )>`, so is :g:`/ A D / <g1:/ A D />` itself which subtends the angle at :g:`< A B D ) <g1:< A B D )>` in :g:`< A B D > <g1:< A B D >>` to :g:`/ D C / <g1:/ D C />` which subtends :g:`< D A C ) <g1:< D A C )>` in :g:`< A D C > <g1:< A D C >>` :eq:`equal <g1:< D A C ) = g1:< A B D )>`
 
-.. step:: assert [G.166] <G.166>
+.. step:: assert ∵ equiangular_triangles_sides <G.166>
 
    To the angle at :g:`< A B D ) <g1:< A B D )>`, and so also is :g:`/ B A / <g1:/ B A />` to :g:`/ A C / <g1:/ A C />`, these sides subtending the right angles.
 
-.. step:: conclude [G.170] <G.170>
+.. step:: conclude ∵ similar_polygons_angles_def <G.170>
 
    Therefore :g:`< A B D > <g1:< A B D >>` is similar to :g:`< A D C > <g1:< A D C >>`.
+
+.. enunciation::
+
+   PORISM. From this it is clear that, if in a right-angled triangle a perpendicular be drawn from the right angle to the base, the straight line so drawn is a mean proportional between the segments of the base. :just:`Q. E. D.`
 
 Dependency Graph
 ----------------

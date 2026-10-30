@@ -24,6 +24,12 @@ G.505
 
    Given two spheres about the same centre, to inscribe in the greater sphere a polyhedral solid which does not touch the lesser sphere at its surface.
 
+.. signature:: problem
+
+   | :fn:`spheres_centre_inscribe <G.505>`\ (:g:`A <g1:A>`) → :g:`( F G H ) <g1:( F G H )>`
+   | **given** two spheres be conceived about the same center :g:`A <g1:A>`
+   | **construct** And, as one of the antecedents is to one of the consequents, so are all the antecedents to all the consequents
+
 .. picture:: g1.svg
    :alt: Proposition 17
 
@@ -35,7 +41,7 @@ G.505
 
    Let the spheres be cut by any plane through the center
 
-.. step:: assert [G.504] <G.504>
+.. step:: assert ∵ diameter_semicircle_remaining_def <G.504>
 
    Then the sections will be circles, inasmuch as the sphere was produced by the diameter remaining fixed and the semicircle being carried round it
 
@@ -57,29 +63,25 @@ G.505
 
 .. step:: construct
 
-   Then, given the two circles :g:`( B C D E ) <g1:( B C D E )>`, :g:`( F G H ) <g1:( F G H )>` about the same center, let there be inscribed in the greater circle :g:`( B C D E ) <g1:( B C D E )>` an :eq:`equilateral <g1:/ B K / = g1:/ K L / = g1:/ L M / = g1:/ M E />` polygon with an even number of sides which does not touch the lesser circle :g:`( F G H ) <g1:( F G H )>`, let :g:`/ B K / <g1:/ B K />`, :g:`/ K L / <g1:/ K L />`, :g:`/ L M / <g1:/ L M />`, :g:`/ M E / <g1:/ M E />` be its sides in the quadrant :g:`( B E ) <g1:( B E )>`, let :g:`/ K A / <g1:/ K A />` be joined and carried through to :g:`N <g1:N>`, let :g:`/ A O / <g1:/ A O />` be set up from :g:`A <g1:A>` at right angles to the plane of :g:`( B C D E ) <g1:( B C D E )>`
+   Then, given the two circles :g:`( B C D E ) <g1:( B C D E )>`, :g:`( F G H ) <g1:( F G H )>` about the same center, let there be inscribed in the greater circle :g:`( B C D E ) <g1:( B C D E )>` an :eq:`equilateral <g1:/ B K / = g1:/ K L / = g1:/ L M / = g1:/ M E />` polygon with an even number of sides which does not touch the lesser circle :g:`( F G H ) <g1:( F G H )>`, let :g:`/ B K / <g1:/ B K />`, :g:`/ K L / <g1:/ K L />`, :g:`/ L M / <g1:/ L M />`, :g:`/ M E / <g1:/ M E />` be its sides in the quadrant :g:`( B E ) <g1:( B E )>`, let :g:`/ K A / <g1:/ K A />` be joined and carried through to :g:`N <g1:N>`
+
+.. step:: construct
+
+   Let :g:`/ A O / <g1:/ A O />` be set up from :g:`A <g1:A>` at right angles to the plane of :g:`( B C D E ) <g1:( B C D E )>`, and let it meet the surface of the sphere at :g:`O <g1:O>`, and through :g:`/ A O / <g1:/ A O />` and each of :g:`/ B D / <g1:/ B D />`, :g:`/ K N / <g1:/ K N />` let planes be carried
 
 .. step:: assert
 
-   Let it meet the surface of the sphere at :g:`O <g1:O>`
+   They will then make greatest circles on the surface of the sphere, for the reason stated
 
 .. step:: assert
 
-   Through :g:`/ A O / <g1:/ A O />` and each of :g:`/ B D / <g1:/ B D />`, :g:`/ K N / <g1:/ K N />` let planes be carried
-
-.. step:: assert
-
-   They will then make greatest circles on the surface of the sphere, for the reason stated. Let them make such
-
-.. step:: assert
-
-   In them let :g:`( B O D ) <g1:( B O D )>`, :g:`( K O N ) <g1:( K O N )>` be the semicircles on :g:`/ B D / <g1:/ B D />`, :g:`/ K N / <g1:/ K N />`.
+   Let them make such, and in them let :g:`( B O D ) <g1:( B O D )>`, :g:`( K O N ) <g1:( K O N )>` be the semicircles on :g:`/ B D / <g1:/ B D />`, :g:`/ K N / <g1:/ K N />`.
 
 .. step:: assert
 
    Since :g:`/ O A / <g1:/ O A />` is at right angles to the plane of :g:`( B C D E ) <g1:( B C D E )>`,
 
-.. step:: assert [G.463] <G.463>
+.. step:: assert ∵ straight_line_right <G.463>
 
    Therefore all the planes through :g:`/ O A / <g1:/ O A />` are also at right angles to the plane of :g:`( B C D E ) <g1:( B C D E )>` ; hence the semicircles :g:`( B O D ) <g1:( B O D )>`, :g:`( K O N ) <g1:( K O N )>` are also at right angles to the plane of :g:`( B C D E ) <g1:( B C D E )>`.
 
@@ -95,35 +97,27 @@ G.505
 
    Therefore there are as many straight lines in the quadrants :g:`( B O ) <g1:( B O )>`, :g:`( K O ) <g1:( K O )>` :eq:`equal <g1:/ B P / = g1:/ P Q / = g1:/ Q R / = g1:/ R O / = g1:/ K S / = g1:/ S T / = g1:/ T U / = g1:/ U O / = g1:/ B K / = g1:/ K L / = g1:/ L M / = g1:/ M E />` to :g:`/ B K / <g1:/ B K />`, :g:`/ K L / <g1:/ K L />`, :g:`/ L M / <g1:/ L M />`, :g:`/ M E / <g1:/ M E />` as there are sides of the polygon in the quadrant :g:`( B E ) <g1:( B E )>`.
 
-.. step:: assert
+.. step:: construct
 
-   Let them be inscribed
+   :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`P <g1:P>`) → :g:`/ B P / <g1:/ B P />`, :fn:`segment <G.3>`\ (:g:`P <g1:P>`, :g:`Q <g1:Q>`) → :g:`/ P Q / <g1:/ P Q />`, :fn:`segment <G.3>`\ (:g:`Q <g1:Q>`, :g:`R <g1:R>`) → :g:`/ Q R / <g1:/ Q R />`, :fn:`segment <G.3>`\ (:g:`R <g1:R>`, :g:`O <g1:O>`) → :g:`/ R O / <g1:/ R O />`, :fn:`segment <G.3>`\ (:g:`K <g1:K>`, :g:`S <g1:S>`) → :g:`/ K S / <g1:/ K S />`, :fn:`segment <G.3>`\ (:g:`S <g1:S>`, :g:`T <g1:T>`) → :g:`/ S T / <g1:/ S T />`, :fn:`segment <G.3>`\ (:g:`T <g1:T>`, :g:`U <g1:U>`) → :g:`/ T U / <g1:/ T U />`, :fn:`segment <G.3>`\ (:g:`U <g1:U>`, :g:`O <g1:O>`) → :g:`/ U O / <g1:/ U O />`, :fn:`segment <G.3>`\ (:g:`S <g1:S>`, :g:`P <g1:P>`) → :g:`/ S P / <g1:/ S P />`, :fn:`segment <G.3>`\ (:g:`T <g1:T>`, :g:`Q <g1:Q>`) → :g:`/ T Q / <g1:/ T Q />`, :fn:`segment <G.3>`\ (:g:`U <g1:U>`, :g:`R <g1:R>`) → :g:`/ U R / <g1:/ U R />`
 
 .. step:: construct
 
-   **segment** them be :g:`/ B P / <g1:/ B P />`, :g:`/ P Q / <g1:/ P Q />`, :g:`/ Q R / <g1:/ Q R />`, :g:`/ R O / <g1:/ R O />` and :g:`/ K S / <g1:/ K S />`, :g:`/ S T / <g1:/ S T />`, :g:`/ T U / <g1:/ T U />`, :g:`/ U O / <g1:/ U O />`, let :g:`/ S P / <g1:/ S P />`, :g:`/ T Q / <g1:/ T Q />`, :g:`/ U R / <g1:/ U R />`
+   :fn:`elevated_point_draw <G.454>`: From :g:`P <g1:P>`, :g:`S <g1:S>` let perpendiculars be drawn to the plane of :g:`( B C D E ) <g1:( B C D E )>`
 
-.. step:: construct [G.454] <G.454>
+.. step:: assert ∵ plane_right_angles_def <G.462>
 
-   From :g:`P <g1:P>`, :g:`S <g1:S>` let perpendiculars be drawn to the plane of :g:`( B C D E ) <g1:( B C D E )>`
-
-.. step:: assert [G.462] <G.462>
-
-   These will fall on :g:`/ B D / <g1:/ B D />`, :g:`/ K N / <g1:/ K N />`, the common sections of the planes, inasmuch as the planes of :g:`( B O D ) <g1:( B O D )>`, :g:`( K O N ) <g1:( K O N )>` are also at right angles to the plane of :g:`( B C D E ) <g1:( B C D E )>`. Let them so fall
-
-.. step:: assert
-
-   Let them be :g:`/ P V / <g1:/ P V />`, :g:`/ S W / <g1:/ S W />`
+   These will fall on :g:`/ B D / <g1:/ B D />`, :g:`/ K N / <g1:/ K N />`, the common sections of the planes, inasmuch as the planes of :g:`( B O D ) <g1:( B O D )>`, :g:`( K O N ) <g1:( K O N )>` are also at right angles to the plane of :g:`( B C D E ) <g1:( B C D E )>`
 
 .. step:: construct
 
-   **segment** :g:`/ W V / <g1:/ W V />`
+   :fn:`segment <G.3>`\ (:g:`P <g1:P>`, :g:`V <g1:V>`) → :g:`/ P V / <g1:/ P V />`, :fn:`segment <G.3>`\ (:g:`S <g1:S>`, :g:`W <g1:W>`) → :g:`/ S W / <g1:/ S W />`, :fn:`segment <G.3>`\ (:g:`W <g1:W>`, :g:`V <g1:V>`) → :g:`/ W V / <g1:/ W V />`
 
 .. step:: assert
 
    Now since, in the :eq:`equal <g1:( B O D ) = g1:( K O N )>` semicircles :g:`( B O D ) <g1:( B O D )>`, :g:`( K O N ) <g1:( K O N )>`, :eq:`equal <g1:/ B P / = g1:/ K S />` straight lines :g:`/ B P / <g1:/ B P />`, :g:`/ K S / <g1:/ K S />` have been cut off, and the perpendiculars :g:`/ P V / <g1:/ P V />`, :g:`/ S W / <g1:/ S W />` have been drawn,
 
-.. step:: assert [G.106, G.37] <G.106, G.37>
+.. step:: assert ∵ equal_circles_angles, asa_aas_congruence <G.106, G.37>
 
    Therefore :g:`/ P V / <g1:/ P V />` is :eq:`equal <g1:/ P V / = g1:/ S W /; g1:/ B V / = g1:/ K W />` to :g:`/ S W / <g1:/ S W />`, and :g:`/ B V / <g1:/ B V />` to :g:`/ K W / <g1:/ K W />`.
 
@@ -131,7 +125,7 @@ G.505
 
    The whole :g:`/ B A / <g1:/ B A />` is also :eq:`equal <g1:/ B A / = g1:/ K A />` to the whole :g:`/ K A / <g1:/ K A />` ;
 
-.. step:: assert [G.164] <G.164>
+.. step:: assert ∵ straight_line_drawn_vi_2 <G.164>
 
    Therefore the remainder :g:`/ V A / <g1:/ V A />` is also :eq:`equal <g1:/ V A / = g1:/ W A />` to the remainder :g:`/ W A / <g1:/ W A />` ; therefore, as :g:`/ B V / <g1:/ B V />` is to :g:`/ V A / <g1:/ V A />`, so is :g:`/ K W / <g1:/ K W />` to :g:`/ W A / <g1:/ W A />` ; therefore :g:`/ W V / <g1:/ W V />` is parallel to :g:`/ K B / <g1:/ K B />`.
 
@@ -139,7 +133,7 @@ G.505
 
    And, since each of :g:`/ P V / <g1:/ P V />`, :g:`/ S W / <g1:/ S W />` is at right angles to the plane of :g:`( B C D E ) <g1:( B C D E )>`,
 
-.. step:: assert [G.449] <G.449>
+.. step:: assert ∵ straight_lines_right <G.449>
 
    Therefore :g:`/ P V / <g1:/ P V />` is parallel to :g:`/ S W / <g1:/ S W />`.
 
@@ -147,7 +141,7 @@ G.505
 
    It was also proved :eq:`equal <g1:/ P V / = g1:/ S W />` to it ;
 
-.. step:: assert [G.46] <G.46>
+.. step:: assert ∵ join_equal_parallels <G.46>
 
    Therefore :g:`/ W V / <g1:/ W V />`, :g:`/ S P / <g1:/ S P />` are also :eq:`equal <g1:/ W V / = g1:/ S P />` and parallel.
 
@@ -155,7 +149,7 @@ G.505
 
    And, since :g:`/ W V / <g1:/ W V />` is parallel to :g:`/ S P / <g1:/ S P />`, while :g:`/ W V / <g1:/ W V />` is parallel to :g:`/ K B / <g1:/ K B />`,
 
-.. step:: assert [G.452] <G.452>
+.. step:: assert ∵ straight_lines_parallel_xi_9 <G.452>
 
    Therefore :g:`/ S P / <g1:/ S P />` is also parallel to :g:`/ K B / <g1:/ K B />`.
 
@@ -163,7 +157,7 @@ G.505
 
    :g:`/ B P / <g1:/ B P />`, :g:`/ K S / <g1:/ K S />` join their extremities ;
 
-.. step:: assert [G.450] <G.450>
+.. step:: assert ∵ straight_lines_parallel <G.450>
 
    Therefore the quadrilateral :g:`< K B P S > <g1:< K B P S >>` is in one plane, inasmuch as, if two straight lines be parallel, and points be taken at random on each of them, the straight line joining the points is in the same plane with the parallels.
 
@@ -171,7 +165,7 @@ G.505
 
    For the same reason each of the quadrilaterals :g:`< S P Q T > <g1:< S P Q T >>`, :g:`< T Q R U > <g1:< T Q R U >>` is also in one plane.
 
-.. step:: assert [G.444] <G.444>
+.. step:: assert ∵ straight_lines_cut <G.444>
 
    :g:`< U R O > <g1:< U R O >>` is also in one plane.
 
@@ -187,19 +181,19 @@ G.505
 
    Let :g:`/ A X / <g1:/ A X />` be drawn from :g:`A <g1:A>` perpendicular to the plane of the quadrilateral :g:`< K B P S > <g1:< K B P S >>`
 
-.. step:: assert [G.454] <G.454>
+.. step:: assert ∵ elevated_point_draw <G.454>
 
    Let it meet the plane at :g:`X <g1:X>`
 
 .. step:: construct
 
-   **segment** :g:`/ X B / <g1:/ X B />`, :g:`/ X K / <g1:/ X K />`
+   :fn:`segment <G.3>`\ (:g:`X <g1:X>`, :g:`B <g1:B>`) → :g:`/ X B / <g1:/ X B />`, :fn:`segment <G.3>`\ (:g:`X <g1:X>`, :g:`K <g1:K>`) → :g:`/ X K / <g1:/ X K />`
 
 .. step:: assert
 
    Since :g:`/ A X / <g1:/ A X />` is at right angles to the plane of the quadrilateral :g:`< K B P S > <g1:< K B P S >>`,
 
-.. step:: assert [G.446] <G.446>
+.. step:: assert ∵ straight_line_right_def <G.446>
 
    Therefore it is also at right angles to all the straight lines which meet it and are in the plane of the quadrilateral. Therefore :g:`/ A X / <g1:/ A X />` is at right angles to each of :g:`/ B X / <g1:/ B X />`, :g:`/ X K / <g1:/ X K />`.
 
@@ -211,7 +205,7 @@ G.505
 
    The square on :g:`/ A B / <g1:/ A B />` is also :eq:`equal <g1:/ A B / = g1:/ A K />` to the square on :g:`/ A K / <g1:/ A K />`.
 
-.. step:: assert [G.60] <G.60>
+.. step:: assert ∵ pythagorean_theorem <G.60>
 
    The squares on :g:`/ A X / <g1:/ A X />`, :g:`/ X B / <g1:/ X B />` are equal to the square on :g:`/ A B / <g1:/ A B />`, for the angle at :g:`X <g1:X>` is right ; and the squares on :g:`/ A X / <g1:/ A X />`, :g:`/ X K / <g1:/ X K />` are equal to the square on :g:`/ A K / <g1:/ A K />`.
 
@@ -219,7 +213,7 @@ G.505
 
    Therefore the squares on :g:`/ A X / <g1:/ A X />`, :g:`/ X B / <g1:/ X B />` are equal to the squares on :g:`/ A X / <g1:/ A X />`, :g:`/ X K / <g1:/ X K />`.
 
-.. step:: assert
+.. step:: construct
 
    Let the square on :g:`/ A X / <g1:/ A X />` be subtracted from each
 
@@ -271,7 +265,7 @@ G.505
 
    Then the rectangle :g:`/ D B / <g1:/ D B />`, :g:`/ B Z / <g1:/ B Z />` is also less than double of the rectangle :g:`/ D Z / <g1:/ D Z />`, :g:`/ Z B / <g1:/ Z B />`.
 
-.. step:: assert [G.110, G.171] <G.110, G.171>
+.. step:: assert ∵ thales_semicircle_theorem, right_angled_triangle <G.110, G.171>
 
    And, if :g:`/ K D / <g1:/ K D />` be joined, the rectangle :g:`/ D B / <g1:/ D B />`, :g:`/ B Z / <g1:/ B Z />` is equal to the square on :g:`/ B K / <g1:/ B K />`, and the rectangle :g:`/ D Z / <g1:/ D Z />`, :g:`/ Z B / <g1:/ Z B />` equal to the square on :g:`/ K Z / <g1:/ K Z />`.
 
@@ -295,7 +289,7 @@ G.505
 
    The square on :g:`/ B A / <g1:/ B A />` is :eq:`equal <g1:/ B A / = g1:/ A K />` to the square on :g:`/ A K / <g1:/ A K />`.
 
-.. step:: assert [G.60] <G.60>
+.. step:: assert ∵ pythagorean_theorem <G.60>
 
    The squares on :g:`/ B X / <g1:/ B X />`, :g:`/ X A / <g1:/ X A />` are equal to the square on :g:`/ B A / <g1:/ B A />`, and the squares on :g:`/ K Z / <g1:/ K Z />`, :g:`/ Z A / <g1:/ Z A />` equal to the square on :g:`/ K A / <g1:/ K A />`.
 
@@ -327,7 +321,7 @@ G.505
 
    The solids being divided into their pyramids similar in multitude and arrangement, the pyramids will be similar.
 
-.. step:: assert [G.494] <G.494>
+.. step:: assert ∵ similar_pyramids_triangular <G.494>
 
    Similar pyramids are to one another in the triplicate ratio of their corresponding sides.
 
@@ -339,7 +333,7 @@ G.505
 
    Similarly also each pyramid of those in the sphere about :g:`A <g1:A>` as center has to each similarly arranged pyramid of those in the other sphere the ratio triplicate of that which :g:`/ A B / <g1:/ A B />` has to the radius of the other sphere.
 
-.. step:: conclude [G.149] <G.149>
+.. step:: conclude ∵ number_magnitudes_proportional <G.149>
 
    And, as one of the antecedents is to one of the consequents, so are all the antecedents to all the consequents.
 

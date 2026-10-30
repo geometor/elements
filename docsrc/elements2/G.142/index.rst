@@ -24,6 +24,12 @@ G.142
 
    Equal magnitudes have to the same the same ratio, as also has the same to equal magnitudes.
 
+.. signature:: theorem
+
+   | :fn:`equal_magnitudes_ratio <G.142>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`)
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>` be :eq:`equal <g1:A = g1:B>` magnitudes and :g:`C <g1:C>` any other, chance, magnitude
+   | **prove** each of the magnitudes :g:`A <g1:A>`, :g:`B <g1:B>` has the same ratio to :g:`C <g1:C>`, and :g:`C <g1:C>` has the same ratio to each of the magnitudes :g:`A <g1:A>`, :g:`B <g1:B>`
+
 .. picture:: g1.svg
    :alt: Proposition 7 Diagram
 
@@ -33,7 +39,7 @@ G.142
 
 .. step:: construct
 
-   For let equimultiples :g:`D <g1:D>`, :g:`E <g1:E>` of :g:`A <g1:A>`, :g:`B <g1:B>` be taken, and of :g:`C <g1:C>` another, chance, multiple :g:`F <g1:F>`.
+   Let equimultiples :g:`D <g1:D>`, :g:`E <g1:E>` of :g:`A <g1:A>`, :g:`B <g1:B>` be taken, and of :g:`C <g1:C>` another, chance, multiple :g:`F <g1:F>`.
 
 .. step:: assert
 
@@ -59,7 +65,7 @@ G.142
 
    :g:`D <g1:D>`, :g:`E <g1:E>` are equimultiples of :g:`A <g1:A>`, :g:`B <g1:B>`, while :g:`F <g1:F>` is another, chance, multiple of :g:`C <g1:C>`
 
-.. step:: assert [G.138] <G.138>
+.. step:: assert ∵ magnitudes_said_ratio_def <G.138>
 
    Therefore, as :g:`A <g1:A>` is to :g:`C <g1:C>`, so is :g:`B <g1:B>` to :g:`C <g1:C>`.
 
@@ -87,13 +93,9 @@ G.142
 
    :g:`F <g1:F>` is a multiple of :g:`C <g1:C>`, while :g:`D <g1:D>`, :g:`E <g1:E>` are other, chance, equimultiples of :g:`A <g1:A>`, :g:`B <g1:B>`
 
-.. step:: assert [G.138] <G.138>
+.. step:: conclude ∵ magnitudes_said_ratio_def <G.138>
 
    Therefore, as :g:`C <g1:C>` is to :g:`A <g1:A>`, so is :g:`C <g1:C>` to :g:`B <g1:B>`.
-
-.. step:: conclude
-
-   Therefore etc.
 
 .. porism::
 

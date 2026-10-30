@@ -24,16 +24,26 @@ G.345
 
    Find two rational straight lines commensurable in square only and such that the square on the greater is greater than the square on the less by the square on a straight line incommensurable in length with the greater.
 
+.. signature:: problem
+
+   | :fn:`find_rational_straight_x_30 <G.345>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ C E / <g1:/ C E />`, :g:`/ E D / <g1:/ E D />`, :g:`/ C D / <g1:/ C D />`) → :g:`/ A F / <g1:/ A F />`, :g:`/ F B / <g1:/ F B />`
+   | **given** there be set out a rational straight line :g:`/ A B / <g1:/ A B />`, two square numbers :g:`/ C E / <g1:/ C E />`, :g:`/ E D / <g1:/ E D />` such that their sum :g:`/ C D / <g1:/ C D />` is not square
+   | **construct** The square on :g:`/ A B / <g1:/ A B />` is greater than the square on :g:`/ A F / <g1:/ A F />` by the square on :g:`/ F B / <g1:/ F B />` incommensurable with :g:`/ A B / <g1:/ A B />`
+
 .. picture:: g1.svg
    :alt: Proposition 30
 
-.. step:: given [Lemma 2] <Lemma 2>
+.. step:: given
 
    there be set out a rational straight line :g:`/ A B / <g1:/ A B />`, two square numbers :g:`/ C E / <g1:/ C E />`, :g:`/ E D / <g1:/ E D />` such that their sum :g:`/ C D / <g1:/ C D />` is not square
 
-.. step:: construct [G.319] <G.319>
+.. step:: construct
 
-   **segment** there be described on :g:`/ A B / <g1:/ A B />` the semicircle :g:`( A F B ) <g1:( A F B )>`, let it be contrived that, as :g:`/ D C / <g1:/ D C />` is to :g:`/ C E / <g1:/ C E />`, so is the square on :g:`/ B A / <g1:/ B A />` to the square on :g:`/ A F / <g1:/ A F />`, and let :g:`/ F B / <g1:/ F B />`
+   Let there be described on :g:`/ A B / <g1:/ A B />` the semicircle :g:`( A F B ) <g1:( A F B )>`
+
+.. step:: construct
+
+   :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`C <g1:C>`) → :g:`/ D C / <g1:/ D C />`, :fn:`segment <G.3>`\ (:g:`C <g1:C>`, :g:`E <g1:E>`) → :g:`/ C E / <g1:/ C E />`, :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`A <g1:A>`) → :g:`/ B A / <g1:/ B A />`, :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`F <g1:F>`) → :g:`/ A F / <g1:/ A F />`, :fn:`segment <G.3>`\ (:g:`F <g1:F>`, :g:`B <g1:B>`) → :g:`/ F B / <g1:/ F B />`
 
 .. step:: assert
 
@@ -43,7 +53,7 @@ G.345
 
    Since, as :g:`/ D C / <g1:/ D C />` is to :g:`/ C E / <g1:/ C E />`, so is the square on :g:`/ B A / <g1:/ B A />` to the square on :g:`/ A F / <g1:/ A F />`,
 
-.. step:: assert [G.156, G.110, G.60] <G.156, G.110, G.60>
+.. step:: assert ∵ whole_whole_part, thales_semicircle_theorem, pythagorean_theorem <G.156, G.110, G.60>
 
    Therefore, :term:`*convertendo* <convertendo>`, as :g:`/ C D / <g1:/ C D />` is to :g:`/ E D / <g1:/ E D />`, so is the square on :g:`/ A B / <g1:/ A B />` to the square on :g:`/ B F / <g1:/ B F />`.
 
@@ -51,7 +61,7 @@ G.345
 
    :g:`/ C D / <g1:/ C D />` has not to :g:`/ E D / <g1:/ E D />` the ratio which a square number has to a square number;
 
-.. step:: assert [G.322] <G.322>
+.. step:: assert ∵ squares_straight_lines <G.322>
 
    Therefore neither has the square on :g:`/ A B / <g1:/ A B />` to the square on :g:`/ B F / <g1:/ B F />` the ratio which a square number has to a square number ; therefore :g:`/ A B / <g1:/ A B />` is incommensurable in length with :g:`/ B F / <g1:/ B F />`.
 

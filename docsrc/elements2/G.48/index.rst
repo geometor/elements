@@ -24,6 +24,12 @@ G.48
 
    Parallelograms on the same base and in the same parallels are equal in area.
 
+.. signature:: theorem
+
+   | :fn:`parallelograms_same_base <G.48>`\ (:g:`< A B C D > <g1:< A B C D >>`, :g:`< E B C F > <g1:< E B C F >>`, :g:`/ B C / <g1:/ B C />`, :g:`/ A F / <g1:/ A F />`)
+   | **given** :g:`< A B C D > <g1:< A B C D >>`, :g:`< E B C F > <g1:< E B C F >>` be parallelograms on the same base :g:`/ B C / <g1:/ B C />` and in the same parallels :g:`/ A F / <g1:/ A F />`, :g:`/ B C / <g1:/ B C />`
+   | **prove** :g:`< A B C D > <g1:< A B C D >>` is :eq:`equal <g1:< A B C D > = g1:< E B C F >>` to the parallelogram :g:`< E B C F > <g1:< E B C F >>`
+
 .. picture:: g1.svg
    :alt: Folio 0341 Figure 1 - Proposition 35
 
@@ -31,15 +37,15 @@ G.48
 
    :g:`< A B C D > <g1:< A B C D >>`, :g:`< E B C F > <g1:< E B C F >>` be parallelograms on the same base :g:`/ B C / <g1:/ B C />` and in the same parallels :g:`/ A F / <g1:/ A F />`, :g:`/ B C / <g1:/ B C />`
 
+.. step:: assert ∵ parallelogram_properties <G.47>
+
+   Since :g:`< A B C D > <g1:< A B C D >>` is a parallelogram, :g:`/ A D / <g1:/ A D />` is :eq:`equal <g1:/ A D / = g1:/ B C />` to :g:`/ B C / <g1:/ B C />`
+
 .. step:: assert
 
-   :g:`< A B C D > <g1:< A B C D >>` is :eq:`equal <g1:< A B C D > = g1:< E B C F >>` to the parallelogram :g:`< E B C F > <g1:< E B C F >>`.
+   The same reason also :g:`/ E F / <g1:/ E F />` is :eq:`equal <g1:/ E F / = g1:/ B C />` to :g:`/ B C / <g1:/ B C />`,
 
-.. step:: assert [G.47] <G.47>
-
-   Since :g:`< A B C D > <g1:< A B C D >>` is a parallelogram, :g:`/ A D / <g1:/ A D />` is :eq:`equal <g1:/ A D / = g1:/ B C />` to :g:`/ B C / <g1:/ B C />`. For the same reason also :g:`/ E F / <g1:/ E F />` is :eq:`equal <g1:/ E F / = g1:/ B C />` to :g:`/ B C / <g1:/ B C />`.
-
-.. step:: assert [G.1] <G.1>
+.. step:: assert ∵ equal_transitive <G.1>
 
    So that :g:`/ A D / <g1:/ A D />` is also :eq:`equal <g1:/ A D / = g1:/ E F />` to :g:`/ E F / <g1:/ E F />`;
 
@@ -47,11 +53,11 @@ G.48
 
    And :g:`/ D E / <g1:/ D E />` is common
 
-.. step:: assert [G.21] <G.21>
+.. step:: assert ∵ add_equals <G.21>
 
    Therefore the whole :g:`/ A E / <g1:/ A E />` is :eq:`equal <g1:/ A E / = g1:/ D F />` to the whole :g:`/ D F / <g1:/ D F />`.
 
-.. step:: assert [G.47] <G.47>
+.. step:: assert ∵ parallelogram_properties <G.47>
 
    :g:`/ A B / <g1:/ A B />` is also :eq:`equal <g1:/ A B / = g1:/ D C />` to :g:`/ D C / <g1:/ D C />`
 
@@ -59,7 +65,7 @@ G.48
 
    Therefore the two sides :g:`/ E A / <g1:/ E A />`, :g:`/ A B / <g1:/ A B />` are :eq:`equal <g1:/ E A / = g1:/ F D /; g1:/ A B / = g1:/ D C />` to the two sides :g:`/ F D / <g1:/ F D />`, :g:`/ D C / <g1:/ D C />` respectively,
 
-.. step:: assert [G.42] <G.42>
+.. step:: assert ∵ parallel_transversal_angles <G.42>
 
    And :g:`< F D C ) <g1:< F D C )>` is :eq:`equal <g1:< F D C ) = g1:< E A B )>` to :g:`< E A B ) <g1:< E A B )>`, the exterior to the interior
 
@@ -67,23 +73,23 @@ G.48
 
    Therefore the base :g:`/ E B / <g1:/ E B />` is :eq:`equal <g1:/ E B / = g1:/ F C />` to the base :g:`/ F C / <g1:/ F C />`,
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    And :g:`< E A B > <g1:< E A B >>` will be :eq:`equal <g1:< E A B > = g1:< F D C >>` to :g:`< F D C > <g1:< F D C >>`.
 
-.. step:: assert
+.. step:: construct
 
    Let :g:`< D G E > <g1:< D G E >>` be subtracted from each
 
-.. step:: assert [G.6] <G.6>
+.. step:: assert ∵ subtract_equals <G.6>
 
    Therefore the trapezium :g:`< A B G D > <g1:< A B G D >>` which remains is :eq:`equal <g1:< A B G D > = g1:< E G C F >>` to the trapezium :g:`< E G C F > <g1:< E G C F >>` which remains.
 
-.. step:: assert
+.. step:: construct
 
    Let :g:`< G B C > <g1:< G B C >>` be added to each
 
-.. step:: conclude [G.21] <G.21>
+.. step:: conclude ∵ add_equals <G.21>
 
    Therefore the whole parallelogram :g:`< A B C D > <g1:< A B C D >>` is :eq:`equal <g1:< A B C D > = g1:< E B C F >>` to the whole parallelogram :g:`< E B C F > <g1:< E B C F >>`.
 

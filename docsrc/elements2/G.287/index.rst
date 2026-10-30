@@ -24,18 +24,23 @@ G.287
 
    If two numbers be prime to one another, the second will not be to any other number as the first is to the second.
 
+.. signature:: theorem
+
+   | :fn:`numbers_prime_number_ix_16 <G.287>`\ ()
+   | **prove** :g:`B <g1:B>` is not to any other number as :g:`A <g1:A>` is to :g:`B <g1:B>`
+
 .. picture:: g1.svg
    :alt: Proposition 16
 
 .. step:: assert
 
-   For let the two numbers :g:`A <g1:A>`, :g:`B <g1:B>` be prime to one another
+   Let the two numbers :g:`A <g1:A>`, :g:`B <g1:B>` be prime to one another
 
 .. step:: assert
 
    If possible, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so let :g:`B <g1:B>` be to :g:`C <g1:C>`.
 
-.. step:: assert [G.221, G.220] <G.221, G.220>
+.. step:: assert ∵ numbers_prime_least, least_numbers_ratio <G.221, G.220>
 
    Now :g:`A <g1:A>`, :g:`B <g1:B>` are prime, primes are also least, and the least numbers measure those which have the same ratio the same number of times, the antecedent the antecedent and the consequent the consequent .
 

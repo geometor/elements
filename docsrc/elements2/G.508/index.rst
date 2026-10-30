@@ -24,12 +24,17 @@ G.508
 
    If a straight line be cut in extreme and mean ratio, the square on the greater segment added to the half of the whole is five times the square on the half.
 
+.. signature:: theorem
+
+   | :fn:`straight_line_cut <G.508>`\ ()
+   | **prove** the square on :g:`/ C D / <g1:/ C D />` is five times the square on :g:`/ A D / <g1:/ A D />`
+
 .. picture:: g1.svg
    :alt: Book XIII, Proposition 1
 
 .. step:: construct
 
-   For let :g:`/ A B / <g1:/ A B />` be cut in extreme and mean ratio at :g:`C <g1:C>`
+   Let :g:`/ A B / <g1:/ A B />` be cut in extreme and mean ratio at :g:`C <g1:C>`
 
 .. step:: assert
 
@@ -37,7 +42,7 @@ G.508
 
 .. step:: construct
 
-   **extend** :g:`/ C A / <g1:/ C A />` to :g:`/ A D / <g1:/ A D />`
+   :fn:`extend <G.7>`\ (:g:`/ C A / <g1:/ C A />`) → :g:`/ A D / <g1:/ A D />`
 
 .. step:: construct
 
@@ -45,11 +50,7 @@ G.508
 
 .. step:: construct
 
-   For let the squares :g:`< A E > <g1:< A E >>`, :g:`< D F > <g1:< D F >>` be described on :g:`/ A B / <g1:/ A B />`, :g:`/ D C / <g1:/ D C />`
-
-.. step:: construct
-
-   Let the figure in :g:`< D F > <g1:< D F >>` be drawn
+   Let the squares :g:`< A E > <g1:< A E >>`, :g:`< D F > <g1:< D F >>` be described on :g:`/ A B / <g1:/ A B />`, :g:`/ D C / <g1:/ D C />`, and let the figure in :g:`< D F > <g1:< D F >>` be drawn
 
 .. step:: assert
 
@@ -59,7 +60,7 @@ G.508
 
    Since :g:`/ A B / <g1:/ A B />` has been cut in extreme and mean ratio at :g:`C <g1:C>`,
 
-.. step:: assert [G.507, G.180] <G.507, G.180>
+.. step:: assert ∵ straight_line_said_def_vi_def_3, straight_lines_proportional_vi_17 <G.507, G.180>
 
    Therefore the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` is equal to the square on :g:`/ A C / <g1:/ A C />`.
 
@@ -79,7 +80,7 @@ G.508
 
    Therefore :g:`/ K A / <g1:/ K A />` is also double of :g:`/ A H / <g1:/ A H />`.
 
-.. step:: assert [G.163] <G.163>
+.. step:: assert ∵ triangles_parallelograms_height <G.163>
 
    But, as :g:`/ K A / <g1:/ K A />` is to :g:`/ A H / <g1:/ A H />`, so is :g:`< C K > <g1:< C K >>` to :g:`< C H > <g1:< C H >>`;
 

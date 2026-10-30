@@ -24,6 +24,12 @@ G.15
 
    Triangles with all three corresponding sides equal have their corresponding angles equal (SSS).
 
+.. signature:: theorem
+
+   | :fn:`sss_congruence <G.15>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>`, :g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />`)
+   | **given** :g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>` be two triangles having the two sides :g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />` :eq:`equal <g1:/ A B / = g1:/ D E /; g1:/ A C / = g1:/ D F />` to the two sides :g:`/ D E / <g1:/ D E />`, :g:`/ D F / <g1:/ D F />` respectively, namely :g:`/ A B / <g1:/ A B />` to :g:`/ D E / <g1:/ D E />`, :g:`/ A C / <g1:/ A C />` to :g:`/ D F / <g1:/ D F />`
+   | **prove** :g:`< B A C ) <g1:< B A C )>` is also :eq:`equal <g1:< B A C ) = g1:< E D F )>` to :g:`< E D F ) <g1:< E D F )>`
+
 .. picture:: g1.svg
    :alt: Proposition 8 figure
 
@@ -34,10 +40,6 @@ G.15
 .. step:: assert
 
    And let them have the base :g:`/ B C / <g1:/ B C />` :eq:`equal <g1:/ B C / = g1:/ E F />` to the base :g:`/ E F / <g1:/ E F />`
-
-.. step:: assert
-
-   :g:`< B A C ) <g1:< B A C )>` is also :eq:`equal <g1:< B A C ) = g1:< E D F )>` to :g:`< E D F ) <g1:< E D F )>`.
 
 .. step:: assert
 
@@ -55,7 +57,7 @@ G.15
 
    For, if the base :g:`/ B C / <g1:/ B C />` coincides with the base :g:`/ E F / <g1:/ E F />`, and the sides :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />` do not coincide with :g:`/ E D / <g1:/ E D />`, :g:`/ D F / <g1:/ D F />` but fall beside them as :g:`/ E G / <g1:/ E G />`, :g:`/ G F / <g1:/ G F />` → then, given two straight lines constructed on a straight line (from its extremities) and meeting in a point, there will have been constructed on the same straight line (from its extremities), and on the same side of it, two other straight lines meeting in another point and :eq:`equal <g1:/ E D / = g1:/ E G /; g1:/ D F / = g1:/ G F />` to the former two respectively, namely each to that which has the same extremity with it.
 
-.. step:: assert [G.14] <G.14>
+.. step:: assert ∵ unique_triangle_sides <G.14>
 
    They cannot be so constructed.
 

@@ -24,6 +24,12 @@ G.455
 
    To set up a straight line at right angles to a given plane from a given point in it.
 
+.. signature:: theorem
+
+   | :fn:`set_straight_line <G.455>`\ (:g:`A <g1:A>`)
+   | **given** the plane of reference be the given plane, :g:`A <g1:A>` the point in it
+   | **prove** set up from :g:`A <g1:A>` a straight line at right angles to the plane of reference
+
 .. picture:: g1.svg
    :alt: Proposition 12
 
@@ -31,11 +37,11 @@ G.455
 
    the plane of reference be the given plane, :g:`A <g1:A>` the point in it
 
-.. step:: construct [G.454, G.44] <G.454, G.44>
+.. step:: construct
 
-   Let any elevated point :g:`B <g1:B>` be conceived, from :g:`B <g1:B>` let :g:`/ B C / <g1:/ B C />` be drawn perpendicular to the plane of reference, and through :g:`A <g1:A>` let :g:`/ A D / <g1:/ A D />` be drawn parallel to :g:`/ B C / <g1:/ B C />`.
+   :fn:`elevated_point_draw <G.454>`: Let any elevated point :g:`B <g1:B>` be conceived, from :g:`B <g1:B>` let :g:`/ B C / <g1:/ B C />` be drawn perpendicular to the plane of reference, and through :g:`A <g1:A>` let :g:`/ A D / <g1:/ A D />` be drawn parallel to :g:`/ B C / <g1:/ B C />`.
 
-.. step:: assert [G.451] <G.451>
+.. step:: assert ∵ straight_lines_parallel_xi_8 <G.451>
 
    Since :g:`/ A D / <g1:/ A D />`, :g:`/ C B / <g1:/ C B />` are two parallel straight lines, while one of them, :g:`/ B C / <g1:/ B C />`, is at right angles to the plane of reference → therefore the remaining one, :g:`/ A D / <g1:/ A D />`, is also at right angles to the plane of reference.
 

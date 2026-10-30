@@ -24,6 +24,12 @@ G.466
 
    Any solid angle is contained by plane angles less than four right angles.
 
+.. signature:: theorem
+
+   | :fn:`solid_angle_contained_xi_21 <G.466>`\ (:g:`A <g1:A>`, :g:`< B A C ) <g1:< B A C )>`, :g:`< C A D ) <g1:< C A D )>`, :g:`< D A B ) <g1:< D A B )>`)
+   | **given** the angle at :g:`A <g1:A>` be a solid angle contained by the plane angles :g:`< B A C ) <g1:< B A C )>`, :g:`< C A D ) <g1:< C A D )>`, :g:`< D A B ) <g1:< D A B )>`
+   | **prove** :g:`< B A C ) <g1:< B A C )>`, :g:`< C A D ) <g1:< C A D )>`, :g:`< D A B ) <g1:< D A B )>` are less than four right angles
+
 .. picture:: g1.svg
    :alt: Book XI, Proposition 21
 
@@ -33,17 +39,13 @@ G.466
 
 .. step:: construct
 
-   For let points :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` be taken at random on :g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />`, :g:`/ A D / <g1:/ A D />` respectively
-
-.. step:: construct
-
-   **segment** :g:`/ B C / <g1:/ B C />`, :g:`/ C D / <g1:/ C D />`, :g:`/ D B / <g1:/ D B />`
+   :fn:`segment <G.3>`\ () → :g:`B <g1:B>`, :fn:`segment <G.3>`\ () → :g:`C <g1:C>`, :fn:`segment <G.3>`\ () → :g:`D <g1:D>`, :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`) → :g:`/ A B / <g1:/ A B />`, :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`C <g1:C>`) → :g:`/ A C / <g1:/ A C />`, :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`D <g1:D>`) → :g:`/ A D / <g1:/ A D />`, :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`C <g1:C>`) → :g:`/ B C / <g1:/ B C />`, :fn:`segment <G.3>`\ (:g:`C <g1:C>`, :g:`D <g1:D>`) → :g:`/ C D / <g1:/ C D />`, :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`B <g1:B>`) → :g:`/ D B / <g1:/ D B />`
 
 .. step:: assert
 
    Since the solid angle at :g:`B <g1:B>` is contained by the three plane angles :g:`< C B A ) <g1:< C B A )>`, :g:`< A B D ) <g1:< A B D )>`, :g:`< C B D ) <g1:< C B D )>`,
 
-.. step:: assert [G.465] <G.465>
+.. step:: assert ∵ solid_angle_contained <G.465>
 
    Any two are greater than the remaining one; therefore :g:`< C B A ) <g1:< C B A )>`, :g:`< A B D ) <g1:< A B D )>` are greater than :g:`< C B D ) <g1:< C B D )>`.
 
@@ -51,7 +53,7 @@ G.466
 
    For the same reason :g:`< B C A ) <g1:< B C A )>`, :g:`< A C D ) <g1:< A C D )>` are also greater than :g:`< B C D ) <g1:< B C D )>`, and :g:`< C D A ) <g1:< C D A )>`, :g:`< A D B ) <g1:< A D B )>` are greater than :g:`< C D B ) <g1:< C D B )>`; therefore the six angles :g:`< C B A ) <g1:< C B A )>`, :g:`< A B D ) <g1:< A B D )>`, :g:`< B C A ) <g1:< B C A )>`, :g:`< A C D ) <g1:< A C D )>`, :g:`< C D A ) <g1:< C D A )>`, :g:`< A D B ) <g1:< A D B )>` are greater than the three angles :g:`< C B D ) <g1:< C B D )>`, :g:`< B C D ) <g1:< B C D )>`, :g:`< C D B ) <g1:< C D B )>`.
 
-.. step:: assert [G.45] <G.45>
+.. step:: assert ∵ triangle_angle_sum <G.45>
 
    The three angles :g:`< C B D ) <g1:< C B D )>`, :g:`< B D C ) <g1:< B D C )>`, :g:`< B C D ) <g1:< B C D )>` are equal to two right angles.
 

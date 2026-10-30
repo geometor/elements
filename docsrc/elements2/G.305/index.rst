@@ -23,6 +23,10 @@ G.305
 
    An:term:`**even-times even number** <even-times-even-number>` is that which is measured by an even number according to an even number.
 
+.. signature:: def
+
+   | :fn:`even_times_even_def <G.305>`
+
 Required for
 ------------
 

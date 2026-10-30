@@ -24,18 +24,23 @@ G.333
 
    The rectangle contained by rational straight lines commensurable in length is rational.
 
+.. signature:: theorem
+
+   | :fn:`rectangle_contained_rational <G.333>`\ ()
+   | **prove** :g:`< A C > <g1:< A C >>` is rational
+
 .. picture:: g1.svg
    :alt: Proposition 19
 
 .. step:: assert
 
-   For let the rectangle :g:`< A C > <g1:< A C >>` be contained by the rational straight lines :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` commensurable in length
+   Let the rectangle :g:`< A C > <g1:< A C >>` be contained by the rational straight lines :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` commensurable in length
 
 .. step:: construct
 
-   For on :g:`/ A B / <g1:/ A B />` let the square :g:`< A D > <g1:< A D >>` be described
+   On :g:`/ A B / <g1:/ A B />` let the square :g:`< A D > <g1:< A D >>` be described
 
-.. step:: assert [G.332] <G.332>
+.. step:: assert ∵ square_assigned_straight_def <G.332>
 
    Therefore :g:`< A D > <g1:< A D >>` is rational.
 
@@ -47,11 +52,11 @@ G.333
 
    Therefore :g:`/ B D / <g1:/ B D />` is commensurable in length with :g:`/ B C / <g1:/ B C />`.
 
-.. step:: assert [G.163] <G.163>
+.. step:: assert ∵ triangles_parallelograms_height <G.163>
 
    And, as :g:`/ B D / <g1:/ B D />` is to :g:`/ B C / <g1:/ B C />`, so is :g:`< D A > <g1:< D A >>` to :g:`< A C > <g1:< A C >>`.
 
-.. step:: assert [G.323] <G.323>
+.. step:: assert ∵ magnitudes_proportional_commensurable <G.323>
 
    Therefore :g:`< D A > <g1:< D A >>` is commensurable with :g:`< A C > <g1:< A C >>`.
 
@@ -59,7 +64,7 @@ G.333
 
    :g:`< D A > <g1:< D A >>` is rational;
 
-.. step:: conclude [G.332] <G.332>
+.. step:: conclude ∵ square_assigned_straight_def <G.332>
 
    Therefore :g:`< A C > <g1:< A C >>` is also rational.
 

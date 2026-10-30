@@ -24,30 +24,39 @@ G.66
 
    If a straight line be cut into equal and unequal segments, the rectangle contained by the unequal segments of the whole together with the square on the straight line between the points of section is equal to the square on the half.
 
+.. signature:: theorem
+
+   | :fn:`difference_of_squares_equal_unequal <G.66>`\ ()
+   | **prove** the rectangle contained by :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` together with the square on :g:`/ C D / <g1:/ C D />` is equal to the square on :g:`/ C B / <g1:/ C B />`
+
 .. picture:: g1.svg
    :alt: 0396.g1
 
 .. step:: construct
 
-   For let a straight line :g:`/ A B / <g1:/ A B />` be cut into :eq:`equal <g1:/ A C / = g1:/ C B />` segments at :g:`C <g1:C>` and into unequal segments at :g:`D <g1:D>`
-
-.. step:: construct [G.59] <G.59>
-
-   For let the square :g:`< C E F B > <g1:< C E F B >>` be described on :g:`/ C B / <g1:/ C B />`.
+   Let a straight line :g:`/ A B / <g1:/ A B />` be cut into :eq:`equal <g1:/ A C / = g1:/ C B />` segments at :g:`C <g1:C>` and into unequal segments at :g:`D <g1:D>`
 
 .. step:: construct
 
-   **segment** :g:`/ B E / <g1:/ B E />`
+   :fn:`square_on_segment <G.59>`: Let the square :g:`< C E F B > <g1:< C E F B >>` be described on :g:`/ C B / <g1:/ C B />`.
 
-.. step:: construct [G.44] <G.44>
+.. step:: construct
 
-   Through :g:`D <g1:D>` let :g:`/ D G / <g1:/ D G />` be drawn parallel to either :g:`/ C E / <g1:/ C E />` or :g:`/ B F / <g1:/ B F />`, through :g:`H <g1:H>` again let :g:`/ K M / <g1:/ K M />` be drawn parallel to either :g:`/ A B / <g1:/ A B />` or :g:`/ E F / <g1:/ E F />`, and again through :g:`A <g1:A>` let :g:`/ A K / <g1:/ A K />` be drawn parallel to either :g:`/ C L / <g1:/ C L />` or :g:`/ B M / <g1:/ B M />`.
+   :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`E <g1:E>`) → :g:`/ B E / <g1:/ B E />`
 
-.. step:: assert [G.56] <G.56>
+.. step:: construct
+
+   :fn:`parallel_line <G.44>`\ (:g:`D <g1:D>`, :g:`/ C E / <g1:/ C E />` or :g:`/ B F / <g1:/ B F />`) → :g:`/ D G / <g1:/ D G />`
+
+.. step:: construct
+
+   :fn:`parallel_line <G.44>`: Through :g:`H <g1:H>` again let :g:`/ K M / <g1:/ K M />` be drawn parallel to either :g:`/ A B / <g1:/ A B />` or :g:`/ E F / <g1:/ E F />`, and again through :g:`A <g1:A>` let :g:`/ A K / <g1:/ A K />` be drawn parallel to either :g:`/ C L / <g1:/ C L />` or :g:`/ B M / <g1:/ B M />`.
+
+.. step:: assert ∵ parallelogram_complements <G.56>
 
    Since the complement :g:`< C H > <g1:< C H >>` is :eq:`equal <g1:< C H > = g1:< H F >>` to the complement :g:`< H F > <g1:< H F >>`.
 
-.. step:: assert
+.. step:: construct
 
    Let :g:`< D M > <g1:< D M >>` be added to each
 
@@ -59,7 +68,7 @@ G.66
 
    :g:`< C M > <g1:< C M >>` is :eq:`equal <g1:< C M > = g1:< A L >>` to :g:`< A L > <g1:< A L >>`,
 
-.. step:: assert [G.49] <G.49>
+.. step:: assert ∵ parallelograms_equal_bases <G.49>
 
    Since :g:`/ A C / <g1:/ A C />` is also :eq:`equal <g1:/ A C / = g1:/ C B />` to :g:`/ C B / <g1:/ C B />`;
 
@@ -67,7 +76,7 @@ G.66
 
    Therefore :g:`< A L > <g1:< A L >>` is also :eq:`equal <g1:< A L > = g1:< D F >>` to :g:`< D F > <g1:< D F >>`.
 
-.. step:: assert
+.. step:: construct
 
    Let :g:`< C H > <g1:< C H >>` be added to each
 
@@ -83,7 +92,7 @@ G.66
 
    Therefore the gnomon :g:`< N O P > <g1:< N O P >>` is also equal to the rectangle :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />`.
 
-.. step:: assert
+.. step:: construct
 
    Let :g:`< L G > <g1:< L G >>`, which is equal to the square on :g:`/ C D / <g1:/ C D />`, be added to each
 

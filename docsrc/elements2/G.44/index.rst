@@ -24,6 +24,12 @@ G.44
 
    Construct through a given point a line parallel to a given line.
 
+.. signature:: problem
+
+   | :fn:`parallel_line <G.44>`\ (:g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />`) → :g:`/ E A F / <g1:/ E A F />`
+   | **given** :g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />`
+   | **construct** through :g:`A <g1:A>` :g:`/ E A F / <g1:/ E A F />` has been drawn parallel to :g:`/ B C / <g1:/ B C />`
+
 .. picture:: g1.svg
    :alt: Folio 0330 Figure 1 - Proposition 31
 
@@ -33,25 +39,21 @@ G.44
 
 .. step:: construct
 
-   **point** :g:`D <g1:D>` on :g:`/ B C / <g1:/ B C />`
+   **point**\ (:g:`/ B C / <g1:/ B C />`) → :g:`D <g1:D>`
 
 .. step:: construct
 
-   **segment** :g:`/ A D / <g1:/ A D />`
-
-.. step:: assert
-
-   On :g:`/ D A / <g1:/ D A />`
-
-.. step:: construct [G.34] <G.34>
-
-   At :g:`A <g1:A>` on it, let :g:`< D A E ) <g1:< D A E )>` be constructed :eq:`equal <g1:< D A E ) = g1:< A D C )>` to :g:`< A D C ) <g1:< A D C )>`
+   :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`D <g1:D>`) → :g:`/ A D / <g1:/ A D />`
 
 .. step:: construct
 
-   **extend** :g:`/ E A / <g1:/ E A />` to :g:`/ A F / <g1:/ A F />`
+   :fn:`copy_angle <G.34>`\ (:g:`/ D A / <g1:/ D A />`, :g:`A <g1:A>`, :g:`< A D C ) <g1:< A D C )>`) → :g:`< D A E ) <g1:< D A E )>` (:eq:`equal <g1:< D A E ) = g1:< A D C )>`)
 
-.. step:: assert [G.39] <G.39>
+.. step:: construct
+
+   :fn:`extend <G.7>`\ (:g:`/ E A / <g1:/ E A />`) → :g:`/ A F / <g1:/ A F />`
+
+.. step:: assert ∵ alternate_angles_parallel <G.39>
 
    Since :g:`/ A D / <g1:/ A D />` falling on :g:`/ B C / <g1:/ B C />`, :g:`[ E F ] <g1:[ E F ]>` has made the alternate angles :g:`< E A D ) <g1:< E A D )>`, :g:`< A D C ) <g1:< A D C )>` :eq:`equal <g1:< E A D ) = g1:< A D C )>` to one another → therefore :g:`/ E A F / <g1:/ E A F />` is parallel to :g:`/ B C / <g1:/ B C />`.
 

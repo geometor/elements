@@ -24,38 +24,31 @@ G.141
 
    If two magnitudes be equimultiples of two magnitudes, and any magnitudes subtracted from them be equimultiples of the same, the remainders also are either equal to the same or equimultiples of them.
 
+.. signature:: theorem
+
+   | :fn:`magnitudes_equimultiples_magnitudes <G.141>`\ ()
+   | **prove** the remainders also, :g:`/ G B / <g1:/ G B />`, :g:`/ H D / <g1:/ H D />`, are either :eq:`equal <g1:/ G B / = g1:E; g1:/ H D / = g1:F>` to :g:`E <g1:E>`, :g:`F <g1:F>` or equimultiples of them; :g:`/ H D / <g1:/ H D />` is also :eq:`equal <g1:/ H D / = g1:F>` to :g:`F <g1:F>`
+
 .. picture:: g1.svg
    :alt: Proposition 6 Diagram
 
 .. step:: assert
 
-   For let two magnitudes :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` be equimultiples of two magnitudes :g:`E <g1:E>`, :g:`F <g1:F>`
-
-.. step:: assert
-
-   Let :g:`/ A G / <g1:/ A G />`, :g:`/ C H / <g1:/ C H />` subtracted from them be equimultiples of the same two :g:`E <g1:E>`, :g:`F <g1:F>`
-
-.. step:: assert
-
-   The remainders also, :g:`/ G B / <g1:/ G B />`, :g:`/ H D / <g1:/ H D />`, are either :eq:`equal <g1:/ G B / = g1:E; g1:/ H D / = g1:F>` to :g:`E <g1:E>`, :g:`F <g1:F>` or equimultiples of them.
+   Let two magnitudes :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` be equimultiples of two magnitudes :g:`E <g1:E>`, :g:`F <g1:F>`, and let :g:`/ A G / <g1:/ A G />`, :g:`/ C H / <g1:/ C H />` subtracted from them be equimultiples of the same two :g:`E <g1:E>`, :g:`F <g1:F>`
 
 .. step:: assert
 
    First, let :g:`/ G B / <g1:/ G B />` be :eq:`equal <g1:/ G B / = g1:E>` to :g:`E <g1:E>`
 
-.. step:: assert
-
-   :g:`/ H D / <g1:/ H D />` is also :eq:`equal <g1:/ H D / = g1:F>` to :g:`F <g1:F>`.
-
 .. step:: construct
 
-   For let :g:`/ C K / <g1:/ C K />` be made :eq:`equal <g1:/ C K / = g1:F>` to :g:`F <g1:F>`.
+   :fn:`cut_equal_segment <G.9>`\ (:g:`F <g1:F>`) → :g:`/ C K / <g1:/ C K />` (:eq:`equal <g1:/ C K / = g1:F>`)
 
 .. step:: assert
 
    Since :g:`/ A G / <g1:/ A G />` is the same multiple of :g:`E <g1:E>` that :g:`/ C H / <g1:/ C H />` is of :g:`F <g1:F>` → while :g:`/ G B / <g1:/ G B />` is :eq:`equal <g1:/ G B / = g1:E; g1:/ C K / = g1:F>` to :g:`E <g1:E>` and :g:`/ C K / <g1:/ C K />` to :g:`F <g1:F>`,
 
-.. step:: assert [G.136] <G.136>
+.. step:: assert ∵ magnitude_multiple_fifth <G.136>
 
    Therefore :g:`/ A B / <g1:/ A B />` is the same multiple of :g:`E <g1:E>` that :g:`/ K H / <g1:/ K H />` is of :g:`F <g1:F>`.
 
@@ -71,7 +64,7 @@ G.141
 
    Since then each of the magnitudes :g:`/ K H / <g1:/ K H />`, :g:`/ C D / <g1:/ C D />` is the same multiple of :g:`F <g1:F>` → therefore :g:`/ K H / <g1:/ K H />` is :eq:`equal <g1:/ K H / = g1:/ C D />` to :g:`/ C D / <g1:/ C D />`.
 
-.. step:: assert
+.. step:: construct
 
    Let :g:`/ C H / <g1:/ C H />` be subtracted from each;
 

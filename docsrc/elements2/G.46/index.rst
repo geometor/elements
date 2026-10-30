@@ -24,26 +24,24 @@ G.46
 
    Segments joining the endpoints of equal and parallel segments in the same directions are themselves equal and parallel.
 
+.. signature:: theorem
+
+   | :fn:`join_equal_parallels <G.46>`\ (:g:`/ A B /; g1:/ A B / <g1:/ A B /; g1:/ A B />`, :g:`/ C D /; g1:/ C D / <g1:/ C D /; g1:/ C D />`, :g:`/ A C /; g1:/ A C / <g1:/ A C /; g1:/ A C />`, :g:`/ B D /; g1:/ B D / <g1:/ B D /; g1:/ B D />`)
+   | **given** :g:`/ A B /; g1:/ A B / <g1:/ A B /; g1:/ A B />`, :g:`/ C D /; g1:/ C D / <g1:/ C D /; g1:/ C D />` be :eq:`equal <g1:/ A B / = g1:/ C D />` and parallel, let :g:`/ A C /; g1:/ A C / <g1:/ A C /; g1:/ A C />`, :g:`/ B D /; g1:/ B D / <g1:/ B D /; g1:/ B D />` join them (at the extremities which are) in the same directions (respectively)
+   | **prove** :g:`/ A C / <g1:/ A C />`, :g:`/ B D / <g1:/ B D />` are also :eq:`equal <g1:/ A C / = g1:/ B D />` and parallel
+
 .. picture:: g1.svg
    :alt: Folio 0337 Figure 1 - Proposition 33
 
 .. step:: given
 
-   :g:`/ A B /; g1:/ A B / <g1:/ A B /; g1:/ A B />`, :g:`/ C D /; g1:/ C D / <g1:/ C D /; g1:/ C D />` be :eq:`equal <g1:/ A B / = g1:/ C D />` and parallel
-
-.. step:: assert
-
-   Let :g:`/ A C /; g1:/ A C / <g1:/ A C /; g1:/ A C />`, :g:`/ B D /; g1:/ B D / <g1:/ B D /; g1:/ B D />` join them (at the extremities which are) in the same directions (respectively)
-
-.. step:: assert
-
-   :g:`/ A C / <g1:/ A C />`, :g:`/ B D / <g1:/ B D />` are also :eq:`equal <g1:/ A C / = g1:/ B D />` and parallel.
+   :g:`/ A B /; g1:/ A B / <g1:/ A B /; g1:/ A B />`, :g:`/ C D /; g1:/ C D / <g1:/ C D /; g1:/ C D />` be :eq:`equal <g1:/ A B / = g1:/ C D />` and parallel, let :g:`/ A C /; g1:/ A C / <g1:/ A C /; g1:/ A C />`, :g:`/ B D /; g1:/ B D / <g1:/ B D /; g1:/ B D />` join them (at the extremities which are) in the same directions (respectively)
 
 .. step:: construct
 
-   **segment** :g:`/ B C / <g1:/ B C />`
+   :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`C <g1:C>`) → :g:`/ B C / <g1:/ B C />`
 
-.. step:: assert [G.42] <G.42>
+.. step:: assert ∵ parallel_transversal_angles <G.42>
 
    Since :g:`/ A B / <g1:/ A B />` is parallel to :g:`/ C D / <g1:/ C D />`, and :g:`/ B C / <g1:/ B C />` has fallen upon them → the alternate angles :g:`< A B C ) <g1:< A B C )>`, :g:`< B C D ) <g1:< B C D )>` are :eq:`equal <g1:< A B C ) = g1:< B C D )>` to one another.
 
@@ -63,7 +61,7 @@ G.46
 
    And :g:`< A B C > <g1:< A B C >>` is :eq:`equal <g1:< A B C > = g1:< D C B >>` to :g:`< D C B > <g1:< D C B >>`,
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    And the remaining angles will be :eq:`equal <g1:< A C B ) = g1:< C B D ); g1:< B A C ) = g1:< C D B )>` to the remaining angles respectively, namely those which the :eq:`equal <g1:/ A B / = g1:/ C D /; g1:/ B C / = g1:/ C B />` sides subtend.
 
@@ -75,7 +73,7 @@ G.46
 
    And, since :g:`/ B C / <g1:/ B C />` falling on :g:`/ A C / <g1:/ A C />`, :g:`/ B D / <g1:/ B D />` has made the alternate angles :eq:`equal <g1:< A C B ) = g1:< C B D )>` to one another,
 
-.. step:: assert [G.39] <G.39>
+.. step:: assert ∵ alternate_angles_parallel <G.39>
 
    :g:`/ A C / <g1:/ A C />` is parallel to :g:`/ B D / <g1:/ B D />`.
 

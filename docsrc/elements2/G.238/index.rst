@@ -24,12 +24,17 @@ G.238
 
    If a number be measured by any number, the number which is measured will have a part called by the same name as the measuring number.
 
+.. signature:: theorem
+
+   | :fn:`number_measured_number <G.238>`\ ()
+   | **prove** :g:`A <g1:A>` has a part called by the same name as :g:`B <g1:B>`
+
 .. picture:: g1.svg
    :alt: Proposition 37
 
-.. step:: assert
+.. step:: construct
 
-   For let the number :g:`A <g1:A>` be measured by any number :g:`B <g1:B>`
+   Let the number :g:`A <g1:A>` be measured by any number :g:`B <g1:B>`
 
 .. step:: assert
 
@@ -43,7 +48,7 @@ G.238
 
    Therefore the unit :g:`D <g1:D>` measures the number :g:`C <g1:C>` the same number of times as :g:`B <g1:B>` measures :g:`A <g1:A>`.
 
-.. step:: assert [G.215] <G.215>
+.. step:: assert ∵ unit_measure_number <G.215>
 
    Therefore, alternately, the unit :g:`D <g1:D>` measures the number :g:`B <g1:B>` the same number of times as :g:`C <g1:C>` measures :g:`A <g1:A>`; therefore, whatever part the unit :g:`D <g1:D>` is of the number :g:`B <g1:B>`, the same part is :g:`C <g1:C>` of :g:`A <g1:A>` also.
 

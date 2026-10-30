@@ -24,6 +24,12 @@ G.133
 
    Inscribe in a given circle an equilateral and equiangular hexagon.
 
+.. signature:: problem
+
+   | :fn:`inscribe_hexagon_in_circle <G.133>`\ (:g:`( A B C D E F ) <g1:( A B C D E F )>`) → :g:`/ G E / <g1:/ G E />`
+   | **given** :g:`( A B C D E F ) <g1:( A B C D E F )>`
+   | **construct** the hexagon $ABCDEF$ is :eq:`equilateral <g1:/ A B / = g1:/ B C / = g1:/ C D / = g1:/ D E / = g1:/ E F / = g1:/ F A />` and equiangular
+
 .. picture:: g1.svg
    :alt: Book IV Proposition 15: Regular hexagon :g:`< A B C D E F > <g1:< A B C D E F >>` inscribed in circle with auxiliary circle EGCH
 
@@ -41,25 +47,17 @@ G.133
 
 .. step:: construct
 
-   **circle** :g:`( E G C H ) <g1:( E G C H )>` with center :g:`D <g1:D>` and radius :g:`/ G D / <g1:/ G D />`
+   :fn:`circle <G.4>`\ (:g:`D <g1:D>`, :g:`/ G D / <g1:/ G D />`) → :g:`( E G C H ) <g1:( E G C H )>`
 
 .. step:: construct
 
-   Let :g:`/ G E / <g1:/ G E />`, :g:`/ G C / <g1:/ G C />` be joined and carried through to :g:`B <g1:B>`, :g:`F <g1:F>`
+   :fn:`segment <G.3>`\ (:g:`G <g1:G>`, :g:`E <g1:E>`) → :g:`/ G E / <g1:/ G E />`, :fn:`segment <G.3>`\ (:g:`G <g1:G>`, :g:`C <g1:C>`) → :g:`/ G C / <g1:/ G C />`, :fn:`segment <G.3>`\ () → :g:`B <g1:B>`, :fn:`segment <G.3>`\ () → :g:`F <g1:F>`, :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`) → :g:`/ A B / <g1:/ A B />`, :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`C <g1:C>`) → :g:`/ B C / <g1:/ B C />`, :fn:`segment <G.3>`\ (:g:`C <g1:C>`, :g:`D <g1:D>`) → :g:`/ C D / <g1:/ C D />`, :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`E <g1:E>`) → :g:`/ D E / <g1:/ D E />`, :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`F <g1:F>`) → :g:`/ E F / <g1:/ E F />`, :fn:`segment <G.3>`\ (:g:`F <g1:F>`, :g:`A <g1:A>`) → :g:`/ F A / <g1:/ F A />`
 
-.. step:: construct
-
-   **segment** :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ C D / <g1:/ C D />`, :g:`/ D E / <g1:/ D E />`, :g:`/ E F / <g1:/ E F />`, :g:`/ F A / <g1:/ F A />`
-
-.. step:: assert
-
-   The hexagon $ABCDEF$ is :eq:`equilateral <g1:/ A B / = g1:/ B C / = g1:/ C D / = g1:/ D E / = g1:/ E F / = g1:/ F A />` and equiangular.
-
-.. step:: assert
+.. step:: assert ∵ circle_radii <G.2>
 
    Since :g:`G <g1:G>` is the center of :g:`( A B C D E F ) <g1:( A B C D E F )>` → :g:`/ G E / <g1:/ G E />` is :eq:`equal <g1:/ G E / = g1:/ G D />` to :g:`/ G D / <g1:/ G D />`.
 
-.. step:: assert
+.. step:: assert ∵ circle_radii <G.2>
 
    Since :g:`D <g1:D>` is the center of :g:`( G C H ) <g1:( G C H )>` → :g:`/ D E / <g1:/ D E />` is :eq:`equal <g1:/ D E / = g1:/ G D />` to :g:`/ G D / <g1:/ G D />`.
 
@@ -75,11 +73,11 @@ G.133
 
    Therefore :g:`< E G D > <g1:< E G D >>` is :eq:`equilateral <g1:/ G E / = g1:/ G D / = g1:/ D E />`;
 
-.. step:: assert [G.12] <G.12>
+.. step:: assert ∵ isosceles_base_angles <G.12>
 
    And therefore its three angles :g:`< E G D ) <g1:< E G D )>`, :g:`< G D E ) <g1:< G D E )>`, :g:`< D E G ) <g1:< D E G )>` are :eq:`equal <g1:< E G D ) = g1:< G D E ) = g1:< D E G )>` to one another, inasmuch as, in isosceles triangles, the angles at the base are equal to one another.
 
-.. step:: assert [G.45] <G.45>
+.. step:: assert ∵ triangle_angle_sum <G.45>
 
    The three angles of the triangle are equal to two right angles
 
@@ -103,7 +101,7 @@ G.133
 
    Therefore :g:`< E G D ) <g1:< E G D )>`, :g:`< D G C ) <g1:< D G C )>`, :g:`< C G B ) <g1:< C G B )>` are :eq:`equal <g1:< E G D ) = g1:< D G C ) = g1:< C G B )>` to one another
 
-.. step:: assert [G.25] <G.25>
+.. step:: assert ∵ vertical_angles_equal <G.25>
 
    So that the angles vertical to them, :g:`< B G A ) <g1:< B G A )>`, :g:`< A G F ) <g1:< A G F )>`, :g:`< F G E ) <g1:< F G E )>` are :eq:`equal <g1:< B G A ) = g1:< A G F ) = g1:< F G E )>`.
 
@@ -111,7 +109,7 @@ G.133
 
    Therefore the six angles :g:`< E G D ) <g1:< E G D )>`, :g:`< D G C ) <g1:< D G C )>`, :g:`< C G B ) <g1:< C G B )>`, :g:`< B G A ) <g1:< B G A )>`, :g:`< A G F ) <g1:< A G F )>`, :g:`< F G E ) <g1:< F G E )>` are :eq:`equal <g1:< E G D ) = g1:< D G C ) = g1:< C G B ) = g1:< B G A ) = g1:< A G F ) = g1:< F G E )>` to one another.
 
-.. step:: assert [G.105] <G.105>
+.. step:: assert ∵ equal_circles_equal <G.105>
 
    Equal angles stand on equal circumferences
 
@@ -119,7 +117,7 @@ G.133
 
    Therefore the six circumferences :g:`( A B ) <g1:( A B )>`, :g:`( B C ) <g1:( B C )>`, :g:`( C D ) <g1:( C D )>`, :g:`( D E ) <g1:( D E )>`, :g:`( E F ) <g1:( E F )>`, :g:`( F A ) <g1:( F A )>` are :eq:`equal <g1:( A B ) = g1:( B C ) = g1:( C D ) = g1:( D E ) = g1:( E F ) = g1:( F A )>` to one another.
 
-.. step:: assert [G.108] <G.108>
+.. step:: assert ∵ equal_circles_equal_iii_29 <G.108>
 
    Equal circumferences are subtended by equal straight lines
 
@@ -147,7 +145,7 @@ G.133
 
    And :g:`< F E D ) <g1:< F E D )>` stands on the circumference :g:`( F A B C D ) <g1:( F A B C D )>`, and :g:`< A F E ) <g1:< A F E )>` on the circumference :g:`( E D C B A ) <g1:( E D C B A )>`
 
-.. step:: assert [G.106] <G.106>
+.. step:: assert ∵ equal_circles_angles <G.106>
 
    Therefore :g:`< A F E ) <g1:< A F E )>` is :eq:`equal <g1:< A F E ) = g1:< D E F )>` to :g:`< D E F ) <g1:< D E F )>`.
 

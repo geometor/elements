@@ -24,24 +24,30 @@ G.519
 
    *If an equilateral triangle be inscribed in a circle, the square on the side of the triangle is triple of the square on the radius of the circle.*
 
+.. signature:: theorem
+
+   | :fn:`equilateral_triangle_inscribed <G.519>`\ (:g:`( A B C ) <g1:( A B C )>`, :g:`< A B C > <g1:< A B C >>`)
+   | **given** :g:`( A B C ) <g1:( A B C )>` be a circle, let the :eq:`equilateral <g1:/ A B / = g1:/ B C / = g1:/ C A />` triangle :g:`< A B C > <g1:< A B C >>` be inscribed in it
+   | **prove** the square on one side of :g:`< A B C > <g1:< A B C >>` is triple of the square on the radius of the circle
+
 .. picture:: g1.svg
    :alt: Proposition 12 Diagram
 
 .. step:: given
 
-   :g:`( A B C ) <g1:( A B C )>` be a circle
-
-.. step:: assert
-
-   Let the :eq:`equilateral <g1:/ A B / = g1:/ B C / = g1:/ C A />` triangle :g:`< A B C > <g1:< A B C >>` be inscribed in it
+   :g:`( A B C ) <g1:( A B C )>` be a circle, let the :eq:`equilateral <g1:/ A B / = g1:/ B C / = g1:/ C A />` triangle :g:`< A B C > <g1:< A B C >>` be inscribed in it
 
 .. step:: construct
 
-   For let the center :g:`D <g1:D>` of :g:`( A B C ) <g1:( A B C )>` be taken, let :g:`/ A D / <g1:/ A D />` be joined and carried through to :g:`E <g1:E>`
+   Let the center :g:`D <g1:D>` of :g:`( A B C ) <g1:( A B C )>` be taken
 
 .. step:: construct
 
-   **segment** :g:`/ B E / <g1:/ B E />`
+   Let :g:`/ A D / <g1:/ A D />` be joined and carried through to :g:`E <g1:E>`
+
+.. step:: construct
+
+   :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`E <g1:E>`) → :g:`/ B E / <g1:/ B E />`
 
 .. step:: assert
 
@@ -51,7 +57,7 @@ G.519
 
    Therefore the circumference :g:`( B E C ) <g1:( B E C )>` is a third part of the circumference of :g:`( A B C ) <g1:( A B C )>`.
 
-.. step:: assert [G.133] <G.133>
+.. step:: assert ∵ inscribe_hexagon_in_circle <G.133>
 
    Therefore the circumference :g:`( B E ) <g1:( B E )>` is a sixth part of the circumference of the circle; therefore :g:`/ B E / <g1:/ B E />` belongs to a hexagon; therefore it is :eq:`equal <g1:/ B E / = g1:/ D E />` to the radius :g:`/ D E / <g1:/ D E />`.
 
@@ -63,7 +69,7 @@ G.519
 
    The square on :g:`/ A E / <g1:/ A E />` is quadruple of the square on :g:`/ E D / <g1:/ E D />`, that is, of the square on :g:`/ B E / <g1:/ B E />`.
 
-.. step:: assert [G.110, G.60] <G.110, G.60>
+.. step:: assert ∵ thales_semicircle_theorem, pythagorean_theorem <G.110, G.60>
 
    The square on :g:`/ A E / <g1:/ A E />` is equal to the squares on :g:`/ A B / <g1:/ A B />`, :g:`/ B E / <g1:/ B E />`.
 

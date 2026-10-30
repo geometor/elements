@@ -24,26 +24,28 @@ G.100
 
    The opposite angles of quadrilaterals in circles are equal to two right angles.
 
+.. signature:: theorem
+
+   | :fn:`opposite_angles_quadrilaterals <G.100>`\ (:g:`( A B C D ) <g1:( A B C D )>`, :g:`< A B C D > <g1:< A B C D >>`)
+   | **given** :g:`( A B C D ) <g1:( A B C D )>` be a circle, let :g:`< A B C D > <g1:< A B C D >>` be a quadrilateral in it
+   | **prove** the opposite angles are equal to two right angles
+
 .. picture:: g1.svg
    :alt: Diagram for Proposition 22
 
 .. step:: given
 
-   :g:`( A B C D ) <g1:( A B C D )>` be a circle
-
-.. step:: assert
-
-   Let :g:`< A B C D > <g1:< A B C D >>` be a quadrilateral in it
+   :g:`( A B C D ) <g1:( A B C D )>` be a circle, let :g:`< A B C D > <g1:< A B C D >>` be a quadrilateral in it
 
 .. step:: construct
 
-   **segment** :g:`/ A C / <g1:/ A C />`, :g:`/ B D / <g1:/ B D />`
+   :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`C <g1:C>`) → :g:`/ A C / <g1:/ A C />`, :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`D <g1:D>`) → :g:`/ B D / <g1:/ B D />`
 
-.. step:: assert [G.45] <G.45>
+.. step:: assert ∵ triangle_angle_sum <G.45>
 
    Since in any triangle the three angles are equal to two right angles, the three angles :g:`< C A B ) <g1:< C A B )>`, :g:`< A B C ) <g1:< A B C )>`, :g:`< B C A ) <g1:< B C A )>` of :g:`< A B C > <g1:< A B C >>` are equal to two right angles.
 
-.. step:: assert [G.99] <G.99>
+.. step:: assert ∵ circle_angles_segment <G.99>
 
    :g:`< C A B ) <g1:< C A B )>` is :eq:`equal <g1:< C A B ) = g1:< B D C )>` to :g:`< B D C ) <g1:< B D C )>`, for they are in the same segment :g:`( B A D C ) <g1:( B A D C )>`
 
@@ -55,13 +57,17 @@ G.100
 
    Therefore the whole angle :g:`< A D C ) <g1:< A D C )>` is equal to :g:`< B A C ) <g1:< B A C )>`, :g:`< A C B ) <g1:< A C B )>`.
 
-.. step:: assert
+.. step:: construct
 
    Let :g:`< A B C ) <g1:< A B C )>` be added to each
 
 .. step:: assert
 
-   Therefore :g:`< A B C ) <g1:< A B C )>`, :g:`< B A C ) <g1:< B A C )>`, :g:`< A C B ) <g1:< A C B )>` are equal to :g:`< A B C ) <g1:< A B C )>`, :g:`< A D C ) <g1:< A D C )>`. But :g:`< A B C ) <g1:< A B C )>`, :g:`< B A C ) <g1:< B A C )>`, :g:`< A C B ) <g1:< A C B )>` are equal to two right angles
+   Therefore :g:`< A B C ) <g1:< A B C )>`, :g:`< B A C ) <g1:< B A C )>`, :g:`< A C B ) <g1:< A C B )>` are equal to :g:`< A B C ) <g1:< A B C )>`, :g:`< A D C ) <g1:< A D C )>`
+
+.. step:: assert
+
+   :g:`< A B C ) <g1:< A B C )>`, :g:`< B A C ) <g1:< B A C )>`, :g:`< A C B ) <g1:< A C B )>` are equal to two right angles
 
 .. step:: assert
 

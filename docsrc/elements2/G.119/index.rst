@@ -24,6 +24,12 @@ G.119
 
    Circumscribe about a given circle a triangle equiangular with a given triangle.
 
+.. signature:: problem
+
+   | :fn:`circumscribe_triangle_about_circle <G.119>`\ (:g:`( A B C ) <g1:( A B C )>`, :g:`< D E F > <g1:< D E F >>`)
+   | **given** :g:`( A B C ) <g1:( A B C )>`, :g:`< D E F > <g1:< D E F >>`
+   | **construct** about a given circle there has been circumscribed a triangle equiangular with the given triangle
+
 .. picture:: g1.svg
    :alt: Diagram for Proposition 3
 
@@ -31,27 +37,23 @@ G.119
 
    :g:`( A B C ) <g1:( A B C )>`, :g:`< D E F > <g1:< D E F >>`
 
-.. step:: construct [G.76] <G.76>
+.. step:: construct
 
-   Let :g:`/ E F / <g1:/ E F />` be produced in both directions to :g:`G <g1:G>`, :g:`H <g1:H>`, let the center :g:`K <g1:K>` of :g:`( A B C ) <g1:( A B C )>` be taken
+   :fn:`extend <G.7>`\ (:g:`/ E F / <g1:/ E F />`) → :g:`G <g1:G>`, :g:`H <g1:H>`, let the center :g:`K <g1:K>` of :g:`( A B C ) <g1:( A B C )>` be taken
 
 .. step:: construct
 
    Let :g:`/ K B / <g1:/ K B />` be drawn across at random
 
-.. step:: assert
+.. step:: construct
 
-   On :g:`/ K B / <g1:/ K B />`
+   :fn:`copy_angle <G.34>`: On :g:`/ K B / <g1:/ K B />`, and at :g:`K <g1:K>` on it, let :g:`< B K A ) <g1:< B K A )>` be constructed :eq:`equal <g1:< B K A ) = g1:< D E G )>` to :g:`< D E G ) <g1:< D E G )>`, and :g:`< B K C ) <g1:< B K C )>` :eq:`equal <g1:< B K C ) = g1:< D F H )>` to :g:`< D F H ) <g1:< D F H )>`
 
-.. step:: construct [G.34] <G.34>
+.. step:: construct
 
-   At :g:`K <g1:K>` on it, let :g:`< B K A ) <g1:< B K A )>` be constructed :eq:`equal <g1:< B K A ) = g1:< D E G )>` to :g:`< D E G ) <g1:< D E G )>`, and :g:`< B K C ) <g1:< B K C )>` :eq:`equal <g1:< B K C ) = g1:< D F H )>` to :g:`< D F H ) <g1:< D F H )>`
+   :fn:`straight_line_drawn <G.94>`: And through :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` let :g:`/ L A M / <g1:/ L A M />`, :g:`/ M B N / <g1:/ M B N />`, :g:`/ N C L / <g1:/ N C L />` be drawn touching :g:`( A B C ) <g1:( A B C )>`.
 
-.. step:: construct [G.94] <G.94>
-
-   And through :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` let :g:`/ L A M / <g1:/ L A M />`, :g:`/ M B N / <g1:/ M B N />`, :g:`/ N C L / <g1:/ N C L />` be drawn touching :g:`( A B C ) <g1:( A B C )>`.
-
-.. step:: assert [G.96] <G.96>
+.. step:: assert ∵ straight_line_touch <G.96>
 
    Since :g:`/ L M / <g1:/ L M />`, :g:`/ M N / <g1:/ M N />`, :g:`/ N L / <g1:/ N L />` touch :g:`( A B C ) <g1:( A B C )>` at :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, and :g:`/ K A / <g1:/ K A />`, :g:`/ K B / <g1:/ K B />`, :g:`/ K C / <g1:/ K C />` have been joined from the center :g:`K <g1:K>` to :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, therefore the angles at :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` are right.
 
@@ -67,7 +69,7 @@ G.119
 
    Therefore the remaining angles :g:`< A K B ) <g1:< A K B )>`, :g:`< A M B ) <g1:< A M B )>` are equal to two right angles.
 
-.. step:: assert [G.22] <G.22>
+.. step:: assert ∵ adjacent_angles_supplementary <G.22>
 
    :g:`< D E G ) <g1:< D E G )>`, :g:`< D E F ) <g1:< D E F )>` are also equal to two right angles
 
@@ -83,7 +85,7 @@ G.119
 
    Similarly it can be proved that :g:`< L N B ) <g1:< L N B )>` is also :eq:`equal <g1:< L N B ) = g1:< D F E )>` to :g:`< D F E ) <g1:< D F E )>`
 
-.. step:: assert [G.45] <G.45>
+.. step:: assert ∵ triangle_angle_sum <G.45>
 
    Therefore the remaining angle :g:`< M L N ) <g1:< M L N )>` is :eq:`equal <g1:< M L N ) = g1:< E D F )>` to :g:`< E D F ) <g1:< E D F )>`.
 

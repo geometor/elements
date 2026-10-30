@@ -24,6 +24,11 @@ G.102
 
    On the same straight line there cannot be constructed two similar and unequal segments of circles on the same side.
 
+.. signature:: theorem
+
+   | :fn:`straight_line_there <G.102>`\ ()
+   | **prove** Since the segment :g:`( A C B ) <g1:( A C B )>` is similar to the segment :g:`( A D B ) <g1:( A D B )>`, and similar segments of circles are those which admit equal angles, :g:`< A C B ) <g1:< A C B )>` is :eq:`equal <g1:< A C B ) = g1:< A D B )>` to :g:`< A D B ) <g1:< A D B )>`, the exterior to the interior: which is impossible
+
 .. picture:: g1.svg
    :alt: Diagram for Proposition 23
 
@@ -37,9 +42,9 @@ G.102
 
 .. step:: construct
 
-   **segment** :g:`/ C B / <g1:/ C B />`, :g:`/ D B / <g1:/ D B />`
+   :fn:`segment <G.3>`\ (:g:`C <g1:C>`, :g:`B <g1:B>`) → :g:`/ C B / <g1:/ C B />`, :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`B <g1:B>`) → :g:`/ D B / <g1:/ D B />`
 
-.. step:: conclude [G.101, G.27] <G.101, G.27>
+.. step:: conclude ∵ similar_segments_circles_def, exterior_angle_greater <G.101, G.27>
 
    Since the segment :g:`( A C B ) <g1:( A C B )>` is similar to the segment :g:`( A D B ) <g1:( A D B )>`, and similar segments of circles are those which admit equal angles, :g:`< A C B ) <g1:< A C B )>` is :eq:`equal <g1:< A C B ) = g1:< A D B )>` to :g:`< A D B ) <g1:< A D B )>`, the exterior to the interior: which is impossible.
 

@@ -24,6 +24,12 @@ G.316
 
    Given two commensurable magnitudes, to find their greatest common measure.
 
+.. signature:: problem
+
+   | :fn:`commensurable_magnitudes_find <G.316>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`)
+   | **given** the two given commensurable magnitudes be :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` of which :g:`/ A B / <g1:/ A B />` is the less
+   | **construct** PORISM. From this it is manifest that, if a magnitude measure two magnitudes, it will also measure their greatest common measure
+
 .. picture:: g1.svg
    :alt: Book X, Proposition 3
 
@@ -43,17 +49,17 @@ G.316
 
    It is manifest that it is also the greatest ; for a greater magnitude than the magnitude :g:`/ A B / <g1:/ A B />` will not measure :g:`/ A B / <g1:/ A B />`.
 
-.. step:: assert [G.315] <G.315>
+.. step:: assert
 
-   Next, let :g:`/ A B / <g1:/ A B />` not measure :g:`/ C D / <g1:/ C D />`. Then, if the less be continually subtracted in turn from the greater, that which is left over will sometime measure the one before it, because :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` are not incommensurable
+   Next, let :g:`/ A B / <g1:/ A B />` not measure :g:`/ C D / <g1:/ C D />`
+
+.. step:: assert ∵ less_unequal_magnitudes <G.315>
+
+   If the less be continually subtracted in turn from the greater, that which is left over will sometime measure the one before it, because :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` are not incommensurable
 
 .. step:: assert
 
-   Let :g:`/ A B / <g1:/ A B />`, measuring :g:`/ E D / <g1:/ E D />`, leave :g:`/ E C / <g1:/ E C />` less than itself, let :g:`/ E C / <g1:/ E C />`, measuring :g:`/ F B / <g1:/ F B />`, leave :g:`/ A F / <g1:/ A F />` less than itself
-
-.. step:: assert
-
-   Let :g:`/ A F / <g1:/ A F />` measure :g:`/ C E / <g1:/ C E />`.
+   Let :g:`/ A B / <g1:/ A B />`, measuring :g:`/ E D / <g1:/ E D />`, leave :g:`/ E C / <g1:/ E C />` less than itself, let :g:`/ E C / <g1:/ E C />`, measuring :g:`/ F B / <g1:/ F B />`, leave :g:`/ A F / <g1:/ A F />` less than itself, and let :g:`/ A F / <g1:/ A F />` measure :g:`/ C E / <g1:/ C E />`.
 
 .. step:: assert
 
@@ -97,7 +103,11 @@ G.316
 
 .. step:: assert
 
-   If not, there will be some magnitude greater than :g:`/ A F / <g1:/ A F />` which will measure :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`. Let it be :g:`G <g1:G>`.
+   If not, there will be some magnitude greater than :g:`/ A F / <g1:/ A F />` which will measure :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`
+
+.. step:: assert
+
+   Let it be :g:`G <g1:G>`.
 
 .. step:: assert
 

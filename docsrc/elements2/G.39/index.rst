@@ -24,22 +24,31 @@ G.39
 
    If a transversal cutting two lines makes the alternate interior angles equal, the lines are parallel.
 
+.. signature:: theorem
+
+   | :fn:`alternate_angles_parallel <G.39>`\ ()
+   | **prove** :g:`/ A B / <g1:/ A B />` is parallel to :g:`/ C D / <g1:/ C D />`
+
 .. picture:: g1.svg
    :alt: Folio 0321 Figure 1 - Proposition 27
 
 .. step:: assert
 
-   For let :g:`/ E F / <g1:/ E F />` falling on :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` make the alternate angles :g:`< A E F ) <g1:< A E F )>`, :g:`< E F D ) <g1:< E F D )>` :eq:`equal <g1:< A E F ) = g1:< E F D )>` to one another
+   Let :g:`/ E F / <g1:/ E F />` falling on :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` make the alternate angles :g:`< A E F ) <g1:< A E F )>`, :g:`< E F D ) <g1:< E F D )>` :eq:`equal <g1:< A E F ) = g1:< E F D )>` to one another
+
+.. step:: assert
+
+   If not, :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` when produced will meet either in the direction of :g:`B <g1:B>`, :g:`D <g1:D>` or towards :g:`A <g1:A>`, :g:`C <g1:C>`
 
 .. step:: construct
 
-   If not, :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` when produced will meet either in the direction of :g:`B <g1:B>`, :g:`D <g1:D>` or towards :g:`A <g1:A>`, :g:`C <g1:C>`. Let them be produced and meet, in the direction of :g:`B <g1:B>`, :g:`D <g1:D>`, at :g:`G <g1:G>`.
+   Let them be produced and meet, in the direction of :g:`B <g1:B>`, :g:`D <g1:D>`, at :g:`G <g1:G>`.
 
 .. step:: assert
 
    In :g:`< G E F > <g1:< G E F >>`, the exterior angle :g:`< A E F ) <g1:< A E F )>` is :eq:`equal <g1:< A E F ) = g1:< E F G )>` to the interior and opposite angle :g:`< E F G ) <g1:< E F G )>`:
 
-.. step:: assert [G.27] <G.27>
+.. step:: assert ∵ exterior_angle_greater <G.27>
 
    Which is impossible.
 
@@ -51,7 +60,7 @@ G.39
 
    Similarly it can be proved that neither will they meet towards :g:`A <g1:A>`, :g:`C <g1:C>`.
 
-.. step:: assert [G.38] <G.38>
+.. step:: assert ∵ parallel_lines_def <G.38>
 
    Straight lines which do not meet in either direction are parallel
 

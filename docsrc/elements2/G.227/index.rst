@@ -24,30 +24,27 @@ G.227
 
    If two numbers be prime to two numbers, both to each, their products also is prime to one another.
 
+.. signature:: theorem
+
+   | :fn:`numbers_prime_numbers <G.227>`\ ()
+   | **prove** :g:`E <g1:E>`, :g:`F <g1:F>` are prime to one another
+
 .. picture:: g1.svg
    :alt: Book VII, Proposition 26
 
 .. step:: assert
 
-   For let the two numbers :g:`A <g1:A>`, :g:`B <g1:B>` be prime to the two numbers :g:`C <g1:C>`, :g:`D <g1:D>`
+   Let the two numbers :g:`A <g1:A>`, :g:`B <g1:B>` be prime to the two numbers :g:`C <g1:C>`, :g:`D <g1:D>`
 
 .. step:: assert
 
-   Both to each
-
-.. step:: assert
-
-   Let :g:`A <g1:A>` by multiplying :g:`B <g1:B>` make :g:`E <g1:E>`
-
-.. step:: assert
-
-   Let :g:`C <g1:C>` by multiplying :g:`D <g1:D>` make :g:`F <g1:F>`
+   Both to each, and let :g:`A <g1:A>` by multiplying :g:`B <g1:B>` make :g:`E <g1:E>`, and let :g:`C <g1:C>` by multiplying :g:`D <g1:D>` make :g:`F <g1:F>`
 
 .. step:: assert
 
    Since each of the numbers :g:`A <g1:A>`, :g:`B <g1:B>` is prime to :g:`C <g1:C>`,
 
-.. step:: assert [G.225] <G.225>
+.. step:: assert ∵ numbers_prime_number_vii_24 <G.225>
 
    Therefore the product of :g:`A <g1:A>`, :g:`B <g1:B>` will also be prime to :g:`C <g1:C>`.
 
@@ -71,7 +68,7 @@ G.227
 
    Therefore each of the numbers :g:`C <g1:C>`, :g:`D <g1:D>` is prime to :g:`E <g1:E>`.
 
-.. step:: assert [G.225] <G.225>
+.. step:: assert ∵ numbers_prime_number_vii_24 <G.225>
 
    Therefore the product of :g:`C <g1:C>`, :g:`D <g1:D>` will also be prime to :g:`E <g1:E>`.
 

@@ -26,7 +26,11 @@ from .graph import (
     g_dependency_sort_key,
     parse_justification_arg,
 )
-from .pseudocode import generate_pseudocode_rst
+from .pseudocode import (
+    generate_pseudocode_rst,
+    get_semantic_name,
+    tighten_enunciation_text,
+)
 
 _G_ROLE_RE = re.compile(r":g:`([^`]+)`")
 _TERM_ROLE_RE = re.compile(r":term:`([^`]+)`")
@@ -338,10 +342,27 @@ def generate_g_index(
         shutil.rmtree(output_path)
     output_path.mkdir(parents=True, exist_ok=True)
 
-    # 1. Build ID Map (Euclid Canonical ID -> G.<n>)
+    # 1. Build ID Map (Euclid Canonical ID -> G.<n>) and Semantic Function/Rule Name Map
     id_map: Dict[str, str] = {}
+    g_to_sem_name: Dict[str, str] = {}
+    used_sem_names: Set[str] = set()
     for i, node_ref in enumerate(g_sequence):
-        id_map[node_ref] = f"G.{i + 1}"
+        g_label = f"G.{i + 1}"
+        id_map[node_ref] = g_label
+        nd = G.nodes[node_ref]
+        raw_ex = nd.get("excerpt", "") or clean_plain_excerpt(nd.get("content_rst", ""))
+        tight_ex = tighten_enunciation_text(raw_ex, node_ref)
+        sem_name = get_semantic_name(
+            node_ref,
+            nd.get("type", "prop"),
+            nd.get("subtype"),
+            tight_ex,
+        )
+        if sem_name in used_sem_names:
+            ref_suffix = re.sub(r"[^a-z0-9]+", "_", node_ref.lower()).strip("_")
+            sem_name = f"{sem_name}_{ref_suffix}"
+        used_sem_names.add(sem_name)
+        g_to_sem_name[g_label] = sem_name
 
     # 2. Generate RST files for each G-node
     print(f"Generating RST files for {len(g_sequence)} G-nodes...")
@@ -417,8 +438,16 @@ def generate_g_index(
         heath_content = transform_justifications(heath_content, book_roman, id_map)
         heath_content = transform_refs(heath_content, id_map)
 
-        # Generate Pseudocode track content with tightened enunciation and .. step:: sequence
-        pseudo_content = generate_pseudocode_rst(heath_content, node_ref, node_type)
+        # Generate Pseudocode track content with tightened enunciation, .. signature::, and .. step:: sequence
+        pseudo_content = generate_pseudocode_rst(
+            heath_content,
+            node_ref,
+            node_type,
+            g_name=g_name,
+            subtype=subtype,
+            id_map=id_map,
+            g_to_sem_name=g_to_sem_name,
+        )
 
         excerpt = clean_plain_excerpt(pseudo_content)
         node_data["g_excerpt"] = excerpt

@@ -24,34 +24,35 @@ G.370
 
    If an area be contained by a rational straight line and the first binomial, the "side" of the area is the irrational straight line which is called binomial.
 
+.. signature:: theorem
+
+   | :fn:`area_contained_rational <G.370>`\ ()
+   | **prove** the "side" of the area :g:`< A C > <g1:< A C >>` is the irrational straight line which is called binomial
+
 .. picture:: g1.svg
    :alt: Proposition 54
 
 .. step:: assert
 
-   For let the area :g:`< A C > <g1:< A C >>` be contained by the rational straight line :g:`/ A B / <g1:/ A B />` and the first binomial :g:`/ A D / <g1:/ A D />`
+   Let the area :g:`< A C > <g1:< A C >>` be contained by the rational straight line :g:`/ A B / <g1:/ A B />` and the first binomial :g:`/ A D / <g1:/ A D />`
 
 .. step:: assert
 
-   Since :g:`/ A D / <g1:/ A D />` is a first binomial straight line, let it be divided into its terms at :g:`E <g1:E>`
+   Since :g:`/ A D / <g1:/ A D />` is a first binomial straight line, let it be divided into its terms at :g:`E <g1:E>`, and let :g:`/ A E / <g1:/ A E />` be the greater term.
 
-.. step:: assert
-
-   Let :g:`/ A E / <g1:/ A E />` be the greater term.
-
-.. step:: assert [G.369] <G.369>
+.. step:: assert ∵ rational_straight_line_def <G.369>
 
    It is then manifest that :g:`/ A E / <g1:/ A E />`, :g:`/ E D / <g1:/ E D />` are rational straight lines commensurable in square only, the square on :g:`/ A E / <g1:/ A E />` is greater than the square on :g:`/ E D / <g1:/ E D />` by the square on a straight line commensurable with :g:`/ A E / <g1:/ A E />`, and :g:`/ A E / <g1:/ A E />` is commensurable in length with the rational straight line :g:`/ A B / <g1:/ A B />` set out.
 
-.. step:: assert
+.. step:: construct
 
-   Let :g:`/ E D / <g1:/ E D />` be :eq:`bisected <g1:/ E F / = g1:/ F D />` at :g:`F <g1:F>`.
+   :fn:`bisect_segment <G.17>`\ (:g:`/ E D / <g1:/ E D />`) → :g:`F <g1:F>` (:eq:`bisected <g1:/ E F / = g1:/ F D />`)
 
 .. step:: assert
 
    Since the square on :g:`/ A E / <g1:/ A E />` is greater than the square on :g:`/ E D / <g1:/ E D />` by the square on a straight line commensurable with :g:`/ A E / <g1:/ A E />`,
 
-.. step:: assert [G.330] <G.330>
+.. step:: assert ∵ there_unequal_straight <G.330>
 
    Therefore, if there be applied to the greater :g:`/ A E / <g1:/ A E />` a parallelogram equal to the fourth part of the square on the less, that is, to the square on :g:`/ E F / <g1:/ E F />`, and deficient by a square figure, it divides it into commensurable parts.
 
@@ -67,9 +68,9 @@ G.370
 
    Let :g:`/ G H / <g1:/ G H />`, :g:`/ E K / <g1:/ E K />`, :g:`/ F L / <g1:/ F L />` be drawn from :g:`G <g1:G>`, :g:`E <g1:E>`, :g:`F <g1:F>` parallel to either of :g:`/ A B / <g1:/ A B />`, :g:`/ D C / <g1:/ D C />`
 
-.. step:: construct [G.75] <G.75>
+.. step:: construct
 
-   Let the square :g:`< S N > <g1:< S N >>` be constructed :eq:`equal <g1:< S N > = g1:< A H >>` to the parallelogram :g:`< A H > <g1:< A H >>`, and the square :g:`< N Q > <g1:< N Q >>` :eq:`equal <g1:< N Q > = g1:< G K >>` to :g:`< G K > <g1:< G K >>`, and let them be placed so that :g:`/ M N / <g1:/ M N />` is in a straight line with :g:`/ N O / <g1:/ N O />`
+   :fn:`square_from_polygon <G.75>`: Let the square :g:`< S N > <g1:< S N >>` be constructed :eq:`equal <g1:< S N > = g1:< A H >>` to the parallelogram :g:`< A H > <g1:< A H >>`, and the square :g:`< N Q > <g1:< N Q >>` :eq:`equal <g1:< N Q > = g1:< G K >>` to :g:`< G K > <g1:< G K >>`, and let them be placed so that :g:`/ M N / <g1:/ M N />` is in a straight line with :g:`/ N O / <g1:/ N O />`
 
 .. step:: assert
 
@@ -79,7 +80,7 @@ G.370
 
    Let the parallelogram :g:`< S Q > <g1:< S Q >>` be completed
 
-.. step:: assert [Lemma]
+.. step:: assert ∵ Lemma <Lemma>
 
    Therefore :g:`< S Q > <g1:< S Q >>` is a square.
 
@@ -87,11 +88,11 @@ G.370
 
    Since the rectangle :g:`/ A G / <g1:/ A G />`, :g:`/ G E / <g1:/ G E />` is equal to the square on :g:`/ E F / <g1:/ E F />`,
 
-.. step:: assert [G.180] <G.180>
+.. step:: assert ∵ straight_lines_proportional_vi_17 <G.180>
 
    Therefore, as :g:`/ A G / <g1:/ A G />` is to :g:`/ E F / <g1:/ E F />`, so is :g:`/ E F / <g1:/ E F />` to :g:`/ G E / <g1:/ G E />`;
 
-.. step:: assert [G.163] <G.163>
+.. step:: assert ∵ triangles_parallelograms_height <G.163>
 
    Therefore also, as :g:`< A H > <g1:< A H >>` is to :g:`< E L > <g1:< E L >>`, so is :g:`< E L > <g1:< E L >>` to :g:`< G K > <g1:< G K >>`;
 
@@ -107,7 +108,7 @@ G.370
 
    Therefore :g:`< E L > <g1:< E L >>` is a mean proportional between :g:`< S N > <g1:< S N >>`, :g:`< N Q > <g1:< N Q >>`.
 
-.. step:: assert [Lemma] <Lemma>
+.. step:: assert ∵ Lemma <Lemma>
 
    :g:`< M R > <g1:< M R >>` is also a mean proportional between the same :g:`< S N > <g1:< S N >>`, :g:`< N Q > <g1:< N Q >>`.
 
@@ -139,7 +140,7 @@ G.370
 
    Since :g:`/ A G / <g1:/ A G />` is commensurable with :g:`/ G E / <g1:/ G E />`,
 
-.. step:: assert [G.328] <G.328>
+.. step:: assert ∵ commensurable_magnitudes_added <G.328>
 
    Therefore :g:`/ A E / <g1:/ A E />` is also commensurable with each of :g:`/ A G / <g1:/ A G />`, :g:`/ G E / <g1:/ G E />`.
 
@@ -147,7 +148,7 @@ G.370
 
    :g:`/ A E / <g1:/ A E />` is also, by hypothesis, commensurable with :g:`/ A B / <g1:/ A B />`;
 
-.. step:: assert [G.325] <G.325>
+.. step:: assert ∵ magnitudes_commensurable_magnitude <G.325>
 
    Therefore :g:`/ A G / <g1:/ A G />`, :g:`/ G E / <g1:/ G E />` are also commensurable with :g:`/ A B / <g1:/ A B />`.
 
@@ -159,7 +160,7 @@ G.370
 
    Therefore each of :g:`/ A G / <g1:/ A G />`, :g:`/ G E / <g1:/ G E />` is also rational;
 
-.. step:: assert [G.333] <G.333>
+.. step:: assert ∵ rectangle_contained_rational <G.333>
 
    Therefore each of the rectangles :g:`< A H > <g1:< A H >>`, :g:`< G K > <g1:< G K >>` is rational, and :g:`< A H > <g1:< A H >>` is commensurable with :g:`< G K > <g1:< G K >>`.
 
@@ -175,11 +176,11 @@ G.370
 
    And, since :g:`/ A E / <g1:/ A E />` is incommensurable in length with :g:`/ E D / <g1:/ E D />`, while :g:`/ A E / <g1:/ A E />` is commensurable with :g:`/ A G / <g1:/ A G />`, and :g:`/ E D / <g1:/ E D />` is commensurable with :g:`/ E F / <g1:/ E F />`,
 
-.. step:: assert [G.326] <G.326>
+.. step:: assert ∵ magnitudes_commensurable_incommensurable <G.326>
 
    Therefore :g:`/ A G / <g1:/ A G />` is also incommensurable with :g:`/ E F / <g1:/ E F />`,
 
-.. step:: assert [G.163, G.323] <G.163, G.323>
+.. step:: assert ∵ triangles_parallelograms_height, magnitudes_proportional_commensurable <G.163, G.323>
 
    So that :g:`< A H > <g1:< A H >>` is also incommensurable with :g:`< E L > <g1:< E L >>`.
 
@@ -191,11 +192,11 @@ G.370
 
    Therefore :g:`< S N > <g1:< S N >>` is also incommensurable with :g:`< M R > <g1:< M R >>`.
 
-.. step:: assert [G.163] <G.163>
+.. step:: assert ∵ triangles_parallelograms_height <G.163>
 
    But, as :g:`< S N > <g1:< S N >>` is to :g:`< M R > <g1:< M R >>`, so is :g:`/ N P / <g1:/ N P />` to :g:`/ R N / <g1:/ R N />`;
 
-.. step:: assert [G.323] <G.323>
+.. step:: assert ∵ magnitudes_proportional_commensurable <G.323>
 
    Therefore :g:`/ N P / <g1:/ N P />` is incommensurable with :g:`/ R N / <g1:/ R N />`.
 

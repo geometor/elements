@@ -24,20 +24,21 @@ G.285
 
    If a number be the least that is measured by prime numbers, it will not be measured by any other prime number except those originally measuring it.
 
+.. signature:: theorem
+
+   | :fn:`number_least_measured <G.285>`\ ()
+   | **prove** :g:`A <g1:A>` will not be measured by any other prime number except :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`
+
 .. picture:: g1.svg
    :alt: Proposition 14 diagram
 
 .. step:: assert
 
-   For let the number :g:`A <g1:A>` be the least that is measured by the prime numbers :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`
+   Let the number :g:`A <g1:A>` be the least that is measured by the prime numbers :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`
 
-.. step:: assert
+.. step:: construct
 
-   If possible, let it be measured by the prime number :g:`E <g1:E>`
-
-.. step:: assert
-
-   Let :g:`E <g1:E>` not be the same with any one of the numbers :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`.
+   If possible, let it be measured by the prime number :g:`E <g1:E>`, and let :g:`E <g1:E>` not be the same with any one of the numbers :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`.
 
 .. step:: assert
 
@@ -51,7 +52,7 @@ G.285
 
    :g:`A <g1:A>` is measured by the prime numbers :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`.
 
-.. step:: assert [G.231] <G.231>
+.. step:: assert ∵ numbers_multiplying_make_vii_30 <G.231>
 
    But, if two numbers by multiplying one another make some number, and any prime number measure the product, it will also measure one of the original numbers .
 

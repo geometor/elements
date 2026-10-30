@@ -24,12 +24,18 @@ G.33
 
    Construct a triangle from three segments equal to three given segments satisfying the triangle inequality.
 
+.. signature:: problem
+
+   | :fn:`triangle_from_segments <G.33>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`) → :g:`/ K F / <g1:/ K F />`, :g:`/ F G / <g1:/ F G />`
+   | **given** the three be :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, of these let two taken together in any manner be greater than the remaining one, namely
+   | **construct** :g:`< K F G > <g1:< K F G >>` has been constructed out of three straight lines :eq:`equal <g1:/ K F / = g1:A; g1:/ F G / = g1:B; g1:/ K G / = g1:C>` to :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`
+
 .. picture:: g1.svg
    :alt: Folio 0306 Figure 1 - Proposition 22
 
 .. step:: given
 
-   the three given straight lines be :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, of these let two taken together in any manner be greater than the remaining one, namely
+   the three be :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, of these let two taken together in any manner be greater than the remaining one, namely
 
 .. step:: assert
 
@@ -43,31 +49,23 @@ G.33
 
    And :g:`B <g1:B>`, :g:`C <g1:C>` greater than :g:`A <g1:A>`;
 
-.. step:: assert
+.. step:: construct
 
-   Let there be set out a straight line :g:`[ D E ] <g1:[ D E ]>`, terminated at :g:`D <g1:D>` but of infinite length in the direction of :g:`E <g1:E>`
-
-.. step:: construct [G.9] <G.9>
-
-   Let :g:`/ D F / <g1:/ D F />` be made :eq:`equal <g1:/ D F / = g1:A>` to :g:`A <g1:A>`, :g:`/ F G / <g1:/ F G />` :eq:`equal <g1:/ F G / = g1:B>` to :g:`B <g1:B>`, and :g:`/ G H / <g1:/ G H />` :eq:`equal <g1:/ G H / = g1:C>` to :g:`C <g1:C>`.
+   :fn:`cut_equal_segment <G.9>`: Let there be set out a straight line :g:`[ D E ] <g1:[ D E ]>`, terminated at :g:`D <g1:D>` but of infinite length in the direction of :g:`E <g1:E>`, and let :g:`/ D F / <g1:/ D F />` be made :eq:`equal <g1:/ D F / = g1:A>` to :g:`A <g1:A>`, :g:`/ F G / <g1:/ F G />` :eq:`equal <g1:/ F G / = g1:B>` to :g:`B <g1:B>`, and :g:`/ G H / <g1:/ G H />` :eq:`equal <g1:/ G H / = g1:C>` to :g:`C <g1:C>`.
 
 .. step:: construct
 
-   **circle** :g:`( D K L ) <g1:( D K L )>` with center :g:`F <g1:F>` and radius :g:`/ F D / <g1:/ F D />`
+   :fn:`circle <G.4>`\ (:g:`F <g1:F>`, :g:`/ F D / <g1:/ F D />`) → :g:`( D K L ) <g1:( D K L )>`
 
 .. step:: construct
 
-   **circle** :g:`( K L H ) <g1:( K L H )>` with center :g:`G <g1:G>` and radius :g:`/ G H / <g1:/ G H />`
+   :fn:`circle <G.4>`\ (:g:`G <g1:G>`, :g:`/ G H / <g1:/ G H />`) → :g:`( K L H ) <g1:( K L H )>`
 
 .. step:: construct
 
-   **segment** :g:`/ K F / <g1:/ K F />`, :g:`/ K G / <g1:/ K G />`
+   :fn:`segment <G.3>`\ (:g:`K <g1:K>`, :g:`F <g1:F>`) → :g:`/ K F / <g1:/ K F />`, :fn:`segment <G.3>`\ (:g:`K <g1:K>`, :g:`G <g1:G>`) → :g:`/ K G / <g1:/ K G />`
 
-.. step:: assert
-
-   :g:`< K F G > <g1:< K F G >>` has been constructed out of three straight lines :eq:`equal <g1:/ K F / = g1:A; g1:/ F G / = g1:B; g1:/ K G / = g1:C>` to :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`.
-
-.. step:: assert
+.. step:: assert ∵ circle_radii <G.2>
 
    Since :g:`F <g1:F>` is the center of :g:`( D K L ) <g1:( D K L )>` → :g:`/ F D / <g1:/ F D />` is :eq:`equal <g1:/ F D / = g1:/ F K />` to :g:`/ F K / <g1:/ F K />`.
 
@@ -79,7 +77,7 @@ G.33
 
    Therefore :g:`/ K F / <g1:/ K F />` is also :eq:`equal <g1:/ K F / = g1:A>` to :g:`A <g1:A>`.
 
-.. step:: assert
+.. step:: assert ∵ circle_radii <G.2>
 
    Since :g:`G <g1:G>` is the center of :g:`( L K H ) <g1:( L K H )>` → :g:`/ G H / <g1:/ G H />` is :eq:`equal <g1:/ G H / = g1:/ G K />` to :g:`/ G K / <g1:/ G K />`.
 

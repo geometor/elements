@@ -24,24 +24,21 @@ G.86
 
    If two circles touch one another internally, and their centres be taken, the straight line joining their centres, if it be also produced, will fall on the point of contact of the circles.
 
+.. signature:: theorem
+
+   | :fn:`circles_touch_internally <G.86>`\ ()
+   | **prove** the straight line joined from :g:`G <g1:G>` to :g:`F <g1:F>` and produced will fall on :g:`A <g1:A>`
+
 .. picture:: g1.svg
    :alt: Diagram for Proposition 11 showing circles ABC and ADE touching internally at A
 
-.. step:: assert
+.. step:: construct
 
-   For let the two circles :g:`( A B C ) <g1:( A B C )>`, :g:`( A D E ) <g1:( A D E )>` touch one another internally at :g:`A <g1:A>`
+   Let the two circles :g:`( A B C ) <g1:( A B C )>`, :g:`( A D E ) <g1:( A D E )>` touch one another internally at :g:`A <g1:A>`, and let the center :g:`F <g1:F>` of :g:`( A B C ) <g1:( A B C )>`, and the center :g:`G <g1:G>` of :g:`( A D E ) <g1:( A D E )>`, be taken
 
 .. step:: construct
 
-   Let the center :g:`F <g1:F>` of :g:`( A B C ) <g1:( A B C )>`, and the center :g:`G <g1:G>` of :g:`( A D E ) <g1:( A D E )>`, be taken
-
-.. step:: assert
-
-   For suppose it does not, but, if possible, let it fall as :g:`/ F G H / <g1:/ F G H />`
-
-.. step:: construct
-
-   **segment** :g:`/ A F / <g1:/ A F />`, :g:`/ A G / <g1:/ A G />`
+   Suppose it does not, but, if possible, let it fall as :g:`/ F G H / <g1:/ F G H />`, and let :g:`/ A F / <g1:/ A F />`, :g:`/ A G / <g1:/ A G />` be joined.
 
 .. step:: assert
 

@@ -24,6 +24,12 @@ G.180
 
    If three straight lines be proportional, the rectangle contained by the extremes is equal to the square on the mean; and, if the rectangle contained by the extremes equals the square on the mean, the three straight lines is proportional.
 
+.. signature:: theorem
+
+   | :fn:`straight_lines_proportional_vi_17 <G.180>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`)
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` be proportional, so that, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`B <g1:B>` to :g:`C <g1:C>`
+   | **prove** the rectangle contained by :g:`A <g1:A>`, :g:`C <g1:C>` is equal to the square on :g:`B <g1:B>`
+
 .. picture:: g1.svg
    :alt: Proposition 17
 
@@ -33,7 +39,7 @@ G.180
 
 .. step:: construct
 
-   Let :g:`D <g1:D>` be made :eq:`equal <g1:D = g1:B>` to :g:`B <g1:B>`.
+   :fn:`cut_equal_segment <G.9>`\ (:g:`B <g1:B>`) → :g:`D <g1:D>` (:eq:`equal <g1:D = g1:B>`)
 
 .. step:: assert
 
@@ -43,7 +49,7 @@ G.180
 
    Therefore, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`D <g1:D>` to :g:`C <g1:C>`.
 
-.. step:: assert [G.179] <G.179>
+.. step:: assert ∵ straight_lines_proportional <G.179>
 
    But, if four straight lines be proportional, the rectangle contained by the extremes is equal to the rectangle contained by the means.
 
@@ -65,13 +71,17 @@ G.180
 
 .. step:: assert
 
+   I say that, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`B <g1:B>` to :g:`C <g1:C>`.
+
+.. step:: assert
+
    With the same construction, since the rectangle :g:`A <g1:A>`, :g:`C <g1:C>` is equal to the square on :g:`B <g1:B>` → while the square on :g:`B <g1:B>` is the rectangle :g:`B <g1:B>`, :g:`D <g1:D>`, for :g:`B <g1:B>` is :eq:`equal <g1:B = g1:D>` to :g:`D <g1:D>`,
 
 .. step:: assert
 
    Therefore the rectangle :g:`A <g1:A>`, :g:`C <g1:C>` is equal to the rectangle :g:`B <g1:B>`, :g:`D <g1:D>`.
 
-.. step:: assert [G.179] <G.179>
+.. step:: assert ∵ straight_lines_proportional <G.179>
 
    But, if the rectangle contained by the extremes be equal to that contained by the means, the four straight lines are proportional.
 

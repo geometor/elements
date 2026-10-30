@@ -24,30 +24,31 @@ G.110
 
    In a circle the angle in the semicircle is right, that in a greater segment less than a right angle, and that in a less segment greater than a right angle; and further the angle of the greater segment is greater than a right angle, and the angle of the less segment less than a right angle.
 
+.. signature:: theorem
+
+   | :fn:`thales_semicircle_theorem <G.110>`\ ()
+   | **prove** :g:`< B A C ) <g1:< B A C )>` in the semicircle :g:`( B A C ) <g1:( B A C )>` is right, :g:`< A B C ) <g1:< A B C )>` in the segment :g:`( A B C ) <g1:( A B C )>` greater than the semicircle is less than a right angle, and :g:`< A D C ) <g1:< A D C )>` in the segment :g:`( A D C ) <g1:( A D C )>` less than the semicircle is greater than a right angle
+
 .. picture:: g1.svg
    :alt: Diagram
 
-.. step:: given
+.. step:: construct
 
-   :g:`( A B C D ) <g1:( A B C D )>` be a circle, let :g:`/ B C / <g1:/ B C />` be its diameter, :g:`E <g1:E>` its center
+   :fn:`segment <G.3>`\ () → :g:`( A B C D ) <g1:( A B C D )>`, :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`C <g1:C>`) → :g:`/ B C / <g1:/ B C />`, :fn:`segment <G.3>`\ () → :g:`E <g1:E>`, :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`A <g1:A>`) → :g:`/ B A / <g1:/ B A />`, :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`C <g1:C>`) → :g:`/ A C / <g1:/ A C />`, :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`D <g1:D>`) → :g:`/ A D / <g1:/ A D />`, :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`C <g1:C>`) → :g:`/ D C / <g1:/ D C />`
 
 .. step:: construct
 
-   **segment** :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />`, :g:`/ A D / <g1:/ A D />`, :g:`/ D C / <g1:/ D C />`
-
-.. step:: construct
-
-   **segment** :g:`/ A E / <g1:/ A E />`
+   :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`E <g1:E>`) → :g:`/ A E / <g1:/ A E />`
 
 .. step:: assert
 
    Let :g:`/ B A / <g1:/ B A />` be carried through to :g:`F <g1:F>`.
 
-.. step:: assert [G.12] <G.12>
+.. step:: assert ∵ isosceles_base_angles <G.12>
 
    Since :g:`/ B E / <g1:/ B E />` is :eq:`equal <g1:/ B E / = g1:/ E A />` to :g:`/ E A / <g1:/ E A />` → :g:`< A B E ) <g1:< A B E )>` is also :eq:`equal <g1:< A B E ) = g1:< B A E )>` to :g:`< B A E ) <g1:< B A E )>`.
 
-.. step:: assert [G.12] <G.12>
+.. step:: assert ∵ isosceles_base_angles <G.12>
 
    Since :g:`/ C E / <g1:/ C E />` is :eq:`equal <g1:/ C E / = g1:/ E A />` to :g:`/ E A / <g1:/ E A />` → :g:`< A C E ) <g1:< A C E )>` is also :eq:`equal <g1:< A C E ) = g1:< C A E )>` to :g:`< C A E ) <g1:< C A E )>`.
 
@@ -55,7 +56,7 @@ G.110
 
    Therefore the whole angle :g:`< B A C ) <g1:< B A C )>` is equal to the two angles :g:`< A B C ) <g1:< A B C )>`, :g:`< A C B ) <g1:< A C B )>`.
 
-.. step:: assert [G.45] <G.45>
+.. step:: assert ∵ triangle_angle_sum <G.45>
 
    :g:`< F A C ) <g1:< F A C )>` exterior to :g:`< A B C > <g1:< A B C >>` is also equal to the two angles :g:`< A B C ) <g1:< A B C )>`, :g:`< A C B ) <g1:< A C B )>`
 
@@ -63,7 +64,7 @@ G.110
 
    Therefore :g:`< B A C ) <g1:< B A C )>` is also :eq:`equal <g1:< B A C ) = g1:< F A C )>` to :g:`< F A C ) <g1:< F A C )>`;
 
-.. step:: assert [G.18] <G.18>
+.. step:: assert ∵ right_angle_perpendicular <G.18>
 
    Therefore each is right;
 
@@ -71,7 +72,7 @@ G.110
 
    Therefore :g:`< B A C ) <g1:< B A C )>` in the semicircle :g:`( B A C ) <g1:( B A C )>` is right.
 
-.. step:: assert [G.28] <G.28>
+.. step:: assert ∵ two_angles_less_than_two_right <G.28>
 
    Next, since in :g:`< A B C > <g1:< A B C >>` the two angles :g:`< A B C ) <g1:< A B C )>`, :g:`< B A C ) <g1:< B A C )>` are less than two right angles, and :g:`< B A C ) <g1:< B A C )>` is a right angle.
 
@@ -83,7 +84,7 @@ G.110
 
    And it is the angle in the segment :g:`( A B C ) <g1:( A B C )>` greater than the semicircle.
 
-.. step:: assert [G.100] <G.100>
+.. step:: assert ∵ opposite_angles_quadrilaterals <G.100>
 
    Next, since :g:`< A B C D > <g1:< A B C D >>` is a quadrilateral in a circle, and the opposite angles of quadrilaterals in circles are equal to two right angles, while :g:`< A B C ) <g1:< A B C )>` is less than a right angle, therefore :g:`< A D C ) <g1:< A D C )>` which remains is greater than a right angle
 
@@ -101,11 +102,11 @@ G.110
 
 .. step:: assert
 
-   This is at once manifest. For, since the angle contained by :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />` is right,
+   This is at once manifest
 
 .. step:: assert
 
-   The angle contained by the circumference :g:`( A B C ) <g1:( A B C )>` and :g:`/ A C / <g1:/ A C />` is greater than a right angle.
+   Since the angle contained by :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />` is right → the angle contained by the circumference :g:`( A B C ) <g1:( A B C )>` and :g:`/ A C / <g1:/ A C />` is greater than a right angle.
 
 .. step:: conclude
 

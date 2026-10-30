@@ -24,6 +24,12 @@ G.454
 
    From a given elevated point to draw a straight line perpendicular to a given plane.
 
+.. signature:: problem
+
+   | :fn:`elevated_point_draw <G.454>`\ (:g:`A <g1:A>`) → :g:`/ A F / <g1:/ A F />`
+   | **given** :g:`A <g1:A>` be the given elevated point, the plane of reference the given plane
+   | **construct** from the given elevated point :g:`A <g1:A>` :g:`/ A F / <g1:/ A F />` has been drawn perpendicular to the plane of reference
+
 .. picture:: g1.svg
    :alt: Proposition 11
 
@@ -33,21 +39,21 @@ G.454
 
 .. step:: construct
 
-   Let any straight line :g:`/ B C / <g1:/ B C />` be drawn, at random, in the plane of reference
+   Let any straight line :g:`/ B C / <g1:/ B C />` be drawn
 
-.. step:: construct [G.20] <G.20>
+.. step:: construct
 
-   Let :g:`/ A D / <g1:/ A D />` be drawn from :g:`A <g1:A>` perpendicular to :g:`/ B C / <g1:/ B C />`.
+   :fn:`perpendicular_from <G.20>`: At random, in the plane of reference, and let :g:`/ A D / <g1:/ A D />` be drawn from :g:`A <g1:A>` perpendicular to :g:`/ B C / <g1:/ B C />`.
 
 .. step:: assert
 
    If then :g:`/ A D / <g1:/ A D />` is also perpendicular to the plane of reference, that which was enjoined will have been done.
 
-.. step:: construct [G.19, G.20, G.44] <G.19, G.20, G.44>
+.. step:: construct
 
-   But, if not, let :g:`/ D E / <g1:/ D E />` be drawn from :g:`D <g1:D>` at right angles to :g:`/ B C / <g1:/ B C />` and in the plane of reference, let :g:`/ A F / <g1:/ A F />` be drawn from :g:`A <g1:A>` perpendicular to :g:`/ D E / <g1:/ D E />`, and let :g:`/ G H / <g1:/ G H />` be drawn through :g:`F <g1:F>` parallel to :g:`/ B C / <g1:/ B C />`.
+   :fn:`perpendicular_at <G.19>`: But, if not, let :g:`/ D E / <g1:/ D E />` be drawn from :g:`D <g1:D>` at right angles to :g:`/ B C / <g1:/ B C />` and in the plane of reference, let :g:`/ A F / <g1:/ A F />` be drawn from :g:`A <g1:A>` perpendicular to :g:`/ D E / <g1:/ D E />`, and let :g:`/ G H / <g1:/ G H />` be drawn through :g:`F <g1:F>` parallel to :g:`/ B C / <g1:/ B C />`.
 
-.. step:: assert [G.447] <G.447>
+.. step:: assert ∵ straight_line_set <G.447>
 
    Since :g:`/ B C / <g1:/ B C />` is at right angles to each of :g:`/ D A / <g1:/ D A />`, :g:`/ D E / <g1:/ D E />` → therefore :g:`/ B C / <g1:/ B C />` is also at right angles to the plane through :g:`/ E D / <g1:/ E D />`, :g:`/ D A / <g1:/ D A />`.
 
@@ -55,7 +61,7 @@ G.454
 
    :g:`/ G H / <g1:/ G H />` is parallel to it;
 
-.. step:: assert [G.451] <G.451>
+.. step:: assert ∵ straight_lines_parallel_xi_8 <G.451>
 
    But, if two straight lines be parallel, and one of them be at right angles to any plane, the remaining one will also be at right angles to the same plane
 
@@ -63,7 +69,7 @@ G.454
 
    Therefore :g:`/ G H / <g1:/ G H />` is also at right angles to the plane through :g:`/ E D / <g1:/ E D />`, :g:`/ D A / <g1:/ D A />`.
 
-.. step:: assert [G.446] <G.446>
+.. step:: assert ∵ straight_line_right_def <G.446>
 
    Therefore :g:`/ G H / <g1:/ G H />` is also at right angles to all the straight lines which meet it and are in the plane through :g:`/ E D / <g1:/ E D />`, :g:`/ D A / <g1:/ D A />`.
 
@@ -83,7 +89,7 @@ G.454
 
    Therefore :g:`/ A F / <g1:/ A F />` is at right angles to each of :g:`/ G H / <g1:/ G H />`, :g:`/ D E / <g1:/ D E />`.
 
-.. step:: assert [G.447] <G.447>
+.. step:: assert ∵ straight_line_set <G.447>
 
    But, if a straight line be set up at right angles to two straight lines which cut one another, at the point of section, it will also be at right angles to the plane through them
 

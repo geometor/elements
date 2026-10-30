@@ -24,6 +24,12 @@ G.121
 
    Inscribe in a given triangle a circle.
 
+.. signature:: problem
+
+   | :fn:`inscribe_circle_in_triangle <G.121>`\ (:g:`< A B C > <g1:< A B C >>`) → :g:`( E F G ) <g1:( E F G )>`
+   | **given** :g:`< A B C > <g1:< A B C >>`
+   | **construct** in the given triangle :g:`< A B C > <g1:< A B C >>` :g:`( E F G ) <g1:( E F G )>` has been inscribed
+
 .. picture:: g1.svg
    :alt: Proposition 4 diagram
 
@@ -31,13 +37,9 @@ G.121
 
    :g:`< A B C > <g1:< A B C >>`
 
-.. step:: construct [G.16] <G.16>
+.. step:: construct
 
-   Let :g:`< A B C ) <g1:< A B C )>`, :g:`< A C B ) <g1:< A C B )>` be bisected by :g:`/ B D / <g1:/ B D />`, :g:`/ C D / <g1:/ C D />`
-
-.. step:: intersect
-
-   Let these meet one another at :g:`D <g1:D>`
+   :fn:`bisect_angle <G.16>`: Let :g:`< A B C ) <g1:< A B C )>`, :g:`< A C B ) <g1:< A C B )>` be bisected by :g:`/ B D / <g1:/ B D />`, :g:`/ C D / <g1:/ C D />`, and let these meet one another at :g:`D <g1:D>`
 
 .. step:: construct
 
@@ -47,7 +49,7 @@ G.121
 
    Since :g:`< A B D ) <g1:< A B D )>` is :eq:`equal <g1:< A B D ) = g1:< C B D )>` to :g:`< C B D ) <g1:< C B D )>`, and the right angle :g:`< B E D ) <g1:< B E D )>` is also :eq:`equal <g1:< B E D ) = g1:< B F D )>` to the right angle :g:`< B F D ) <g1:< B F D )>`, :g:`< E B D > <g1:< E B D >>`, :g:`< F B D > <g1:< F B D >>` are two triangles having two angles equal to two angles and one side equal to one side, namely that subtending one of the equal angles, which is :g:`/ B D / <g1:/ B D />` common to the triangles
 
-.. step:: assert [G.37] <G.37>
+.. step:: assert ∵ asa_aas_congruence <G.37>
 
    Therefore they will also have the remaining sides equal to the remaining sides
 
@@ -57,7 +59,7 @@ G.121
 
 .. step:: assert
 
-   For the same reason
+   The same reason
 
 .. step:: assert
 
@@ -71,7 +73,7 @@ G.121
 
    Therefore the circle described with center :g:`D <g1:D>` and distance one of :g:`/ D E / <g1:/ D E />`, :g:`/ D F / <g1:/ D F />`, :g:`/ D G / <g1:/ D G />` will pass also through the remaining points, and will touch :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ C A / <g1:/ C A />`, because the angles at :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>` are right.
 
-.. step:: assert [G.94] <G.94>
+.. step:: assert ∵ straight_line_drawn <G.94>
 
    If it cuts them, the straight line drawn at right angles to the diameter of the circle from its extremity will be found to fall within the circle: which was proved absurd
 
@@ -79,11 +81,11 @@ G.121
 
    Therefore the circle described with center :g:`D <g1:D>` and distance one of :g:`/ D E / <g1:/ D E />`, :g:`/ D F / <g1:/ D F />`, :g:`/ D G / <g1:/ D G />` will not cut :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ C A / <g1:/ C A />`
 
-.. step:: assert [G.120] <G.120>
+.. step:: assert ∵ similarly_circle_said_def <G.120>
 
    Therefore it will touch them, and will be the circle inscribed in :g:`< A B C > <g1:< A B C >>`.
 
-.. step:: assert
+.. step:: construct
 
    Let it be inscribed, as :g:`( F G E ) <g1:( F G E )>`.
 

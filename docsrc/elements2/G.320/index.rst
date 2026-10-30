@@ -24,6 +24,12 @@ G.320
 
    Incommensurable magnitudes have not to one another the ratio which a number has to a number.
 
+.. signature:: theorem
+
+   | :fn:`incommensurable_magnitudes_ratio <G.320>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`)
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>` be incommensurable magnitudes
+   | **prove** :g:`A <g1:A>` has not to :g:`B <g1:B>` the ratio which a number has to a number
+
 .. picture:: g1.svg
    :alt: Proposition 7 diagram
 
@@ -31,7 +37,7 @@ G.320
 
    :g:`A <g1:A>`, :g:`B <g1:B>` be incommensurable magnitudes
 
-.. step:: assert [G.319] <G.319>
+.. step:: assert ∵ magnitudes_ratio_number <G.319>
 
    If :g:`A <g1:A>` has to :g:`B <g1:B>` the ratio which a number has to a number, :g:`A <g1:A>` will be commensurable with :g:`B <g1:B>`.
 

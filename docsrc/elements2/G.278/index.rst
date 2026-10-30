@@ -24,6 +24,12 @@ G.278
 
    If as many numbers as we please beginning from an unit be in continued proportion, the third from the unit is square, as will also those which successively leave out one; the fourth is cube, as will also all those which leave out two; and the seventh is at once cube and square, as will also those which leave out five.
 
+.. signature:: theorem
+
+   | :fn:`many_numbers_please_ix_8 <G.278>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`)
+   | **given** there be as many numbers as we please, :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`F <g1:F>`, beginning from an unit and in continued proportion
+   | **prove** :g:`B <g1:B>`, the third from the unit, is square, as are also all those which leave out one
+
 .. picture:: g1.svg
    :alt: Proposition 8 Diagram
 
@@ -43,7 +49,7 @@ G.278
 
    For since, as the unit is to :g:`A <g1:A>`, so is :g:`A <g1:A>` to :g:`B <g1:B>`,
 
-.. step:: assert [G.210] <G.210>
+.. step:: assert ∵ numbers_proportional_multiple_def <G.210>
 
    Therefore the unit measures the number :g:`A <g1:A>` the same number of times that :g:`A <g1:A>` measures :g:`B <g1:B>`.
 
@@ -67,7 +73,7 @@ G.278
 
    And, since :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` are in continued proportion, and :g:`B <g1:B>` is square,
 
-.. step:: assert [G.264] <G.264>
+.. step:: assert ∵ numbers_continued_proportion <G.264>
 
    Therefore :g:`D <g1:D>` is also square.
 
@@ -119,7 +125,7 @@ G.278
 
    And, since :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`F <g1:F>` are in continued proportion, and :g:`C <g1:C>` is cube,
 
-.. step:: assert [G.265] <G.265>
+.. step:: assert ∵ numbers_continued_proportion_viii_23 <G.265>
 
    Therefore :g:`F <g1:F>` is also cube.
 

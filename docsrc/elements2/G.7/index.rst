@@ -23,6 +23,12 @@ G.7
 
    Extend a finite segment continuously in a straight line.
 
+.. signature:: postulate
+
+   | :fn:`extend <G.7>`\ (/ A B /) → / B C /
+   | **given** / A B /
+   | **construct** / B C /
+
 Required for
 ------------
 

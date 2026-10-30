@@ -24,6 +24,12 @@ G.492
 
    Pyramids which are of the same height and have polygonal bases are to one another as the bases.
 
+.. signature:: theorem
+
+   | :fn:`pyramids_height_polygonal <G.492>`\ (:g:`< A B C D E > <g1:< A B C D E >>`, :g:`< F G H K L > <g1:< F G H K L >>`, :g:`M <g1:M>`, :g:`N <g1:N>`)
+   | **given** there be pyramids of the same height of which the polygons :g:`< A B C D E > <g1:< A B C D E >>`, :g:`< F G H K L > <g1:< F G H K L >>` are the bases and :g:`M <g1:M>`, :g:`N <g1:N>` the vertices
+   | **prove** also, :term:`*ex aequali* <ex-aequali>`, as the base :g:`< A B C D E > <g1:< A B C D E >>` is to the base :g:`< F G H K L > <g1:< F G H K L >>`, so is the pyramid :g:`< A B C D E M > <g1:< A B C D E M >>` to the pyramid :g:`< F G H K L N > <g1:< F G H K L N >>`
+
 .. picture:: g1.svg
    :alt: Proposition 6
 
@@ -31,11 +37,15 @@ G.492
 
    there be pyramids of the same height of which the polygons :g:`< A B C D E > <g1:< A B C D E >>`, :g:`< F G H K L > <g1:< F G H K L >>` are the bases and :g:`M <g1:M>`, :g:`N <g1:N>` the vertices
 
+.. step:: assert
+
+   I say that, as the base :g:`< A B C D E > <g1:< A B C D E >>` is to the base :g:`< F G H K L > <g1:< F G H K L >>`, so is the pyramid :g:`< A B C D E M > <g1:< A B C D E M >>` to the pyramid :g:`< F G H K L N > <g1:< F G H K L N >>`.
+
 .. step:: construct
 
-   For let :g:`/ A C / <g1:/ A C />`, :g:`/ A D / <g1:/ A D />`, :g:`/ F H / <g1:/ F H />`, :g:`/ F K / <g1:/ F K />` be joined.
+   :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`C <g1:C>`) → :g:`/ A C / <g1:/ A C />`, :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`D <g1:D>`) → :g:`/ A D / <g1:/ A D />`, :fn:`segment <G.3>`\ (:g:`F <g1:F>`, :g:`H <g1:H>`) → :g:`/ F H / <g1:/ F H />`, :fn:`segment <G.3>`\ (:g:`F <g1:F>`, :g:`K <g1:K>`) → :g:`/ F K / <g1:/ F K />`
 
-.. step:: assert [G.491] <G.491>
+.. step:: assert ∵ pyramids_height_triangular <G.491>
 
    Since then :g:`< A B C M > <g1:< A B C M >>`, :g:`< A C D M > <g1:< A C D M >>` are two pyramids which have triangular bases and equal height, they are to one another as the bases
 
@@ -43,19 +53,19 @@ G.492
 
    Therefore, as the base :g:`< A B C > <g1:< A B C >>` is to the base :g:`< A C D > <g1:< A C D >>`, so is the pyramid :g:`< A B C M > <g1:< A B C M >>` to the pyramid :g:`< A C D M > <g1:< A C D M >>`.
 
-.. step:: assert [G.155] <G.155>
+.. step:: assert ∵ magnitudes_proportional_separando <G.155>
 
    And, :term:`*componendo* <componendo>`, as the base :g:`< A B C D > <g1:< A B C D >>` is to the base :g:`< A C D > <g1:< A C D >>`, so is the pyramid :g:`< A B C D M > <g1:< A B C D M >>` to the pyramid :g:`< A C D M > <g1:< A C D M >>`.
 
-.. step:: assert [G.491] <G.491>
+.. step:: assert ∵ pyramids_height_triangular <G.491>
 
    Also, as the base :g:`< A C D > <g1:< A C D >>` is to the base :g:`< A D E > <g1:< A D E >>`, so is the pyramid :g:`< A C D M > <g1:< A C D M >>` to the pyramid :g:`< A D E M > <g1:< A D E M >>`.
 
-.. step:: assert [G.159] <G.159>
+.. step:: assert ∵ there_number_magnitudes_v_22 <G.159>
 
    Therefore, :term:`*ex aequali* <ex-aequali>`, as the base :g:`< A B C D > <g1:< A B C D >>` is to the base :g:`< A D E > <g1:< A D E >>`, so is the pyramid :g:`< A B C D M > <g1:< A B C D M >>` to the pyramid :g:`< A D E M > <g1:< A D E M >>`.
 
-.. step:: assert [G.155] <G.155>
+.. step:: assert ∵ magnitudes_proportional_separando <G.155>
 
    Again :term:`*componendo* <componendo>`, as the base :g:`< A B C D E > <g1:< A B C D E >>` is to the base :g:`< A D E > <g1:< A D E >>`, so is the pyramid :g:`< A B C D E M > <g1:< A B C D E M >>` to the pyramid :g:`< A D E M > <g1:< A D E M >>`.
 
@@ -63,7 +73,7 @@ G.492
 
    Similarly also it can be proved that, as the base :g:`< F G H K L > <g1:< F G H K L >>` is to the base :g:`< F G H > <g1:< F G H >>`, so is the pyramid :g:`< F G H K L N > <g1:< F G H K L N >>` to the pyramid :g:`< F G H N > <g1:< F G H N >>`.
 
-.. step:: assert [G.491] <G.491>
+.. step:: assert ∵ pyramids_height_triangular <G.491>
 
    And, since :g:`< A D E M > <g1:< A D E M >>`, :g:`< F G H N > <g1:< F G H N >>` are two pyramids which have triangular bases and equal height, therefore, as the base :g:`< A D E > <g1:< A D E >>` is to the base :g:`< F G H > <g1:< F G H >>`, so is the pyramid :g:`< A D E M > <g1:< A D E M >>` to the pyramid :g:`< F G H N > <g1:< F G H N >>`.
 
@@ -71,7 +81,7 @@ G.492
 
    But, as the base :g:`< A D E > <g1:< A D E >>` is to the base :g:`< A B C D E > <g1:< A B C D E >>`, so was the pyramid :g:`< A D E M > <g1:< A D E M >>` to the pyramid :g:`< A B C D E M > <g1:< A B C D E M >>`.
 
-.. step:: assert [G.159] <G.159>
+.. step:: assert ∵ there_number_magnitudes_v_22 <G.159>
 
    Therefore also, :term:`*ex aequali* <ex-aequali>`, as the base :g:`< A B C D E > <g1:< A B C D E >>` is to the base :g:`< F G H > <g1:< F G H >>`, so is the pyramid :g:`< A B C D E M > <g1:< A B C D E M >>` to the pyramid :g:`< F G H N > <g1:< F G H N >>`.
 
@@ -79,7 +89,7 @@ G.492
 
    Further, as the base :g:`< F G H > <g1:< F G H >>` is to the base :g:`< F G H K L > <g1:< F G H K L >>`, so also was the pyramid :g:`< F G H N > <g1:< F G H N >>` to the pyramid :g:`< F G H K L N > <g1:< F G H K L N >>`.
 
-.. step:: conclude [G.159] <G.159>
+.. step:: conclude ∵ there_number_magnitudes_v_22 <G.159>
 
    Therefore also, :term:`*ex aequali* <ex-aequali>`, as the base :g:`< A B C D E > <g1:< A B C D E >>` is to the base :g:`< F G H K L > <g1:< F G H K L >>`, so is the pyramid :g:`< A B C D E M > <g1:< A B C D E M >>` to the pyramid :g:`< F G H K L N > <g1:< F G H K L N >>`.
 

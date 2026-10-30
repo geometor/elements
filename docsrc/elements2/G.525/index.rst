@@ -24,24 +24,29 @@ G.525
 
    To set out the sides of the five figures and to compare them with one another.
 
+.. signature:: problem
+
+   | :fn:`set_out_sides <G.525>`\ () → :g:`/ M B / <g1:/ M B />`, :g:`/ N B / <g1:/ N B />`
+   | **construct** :g:`/ M B / <g1:/ M B />`, which is a side of the icosahedron, is by far greater than :g:`/ N B / <g1:/ N B />` which is a side of the dodecahedron
+
 .. picture:: g1.svg
    :alt: Proposition 18 Semicircle Construction Diagram
 
-.. step:: given
+.. step:: construct
 
-   :g:`/ A B / <g1:/ A B />`, the diameter of the given sphere, be set out
+   Let :g:`/ A B / <g1:/ A B />`, the diameter of the given sphere, be set out, and let it be cut at :g:`C <g1:C>` so that :g:`/ A C / <g1:/ A C />` is :eq:`equal <g1:/ A C / = g1:/ C B />` to :g:`/ C B / <g1:/ C B />`, and at :g:`D <g1:D>` so that :g:`/ A D / <g1:/ A D />` is double of :g:`/ D B / <g1:/ D B />`
 
 .. step:: construct
 
-   Let it be cut at :g:`C <g1:C>` so that :g:`/ A C / <g1:/ A C />` is :eq:`equal <g1:/ A C / = g1:/ C B />` to :g:`/ C B / <g1:/ C B />`, and at :g:`D <g1:D>` so that :g:`/ A D / <g1:/ A D />` is double of :g:`/ D B / <g1:/ D B />`
+   Let the semicircle :g:`( A E B ) <g1:( A E B )>` be described on :g:`/ A B / <g1:/ A B />`
 
 .. step:: construct
 
-   Let the semicircle :g:`( A E B ) <g1:( A E B )>` be described on :g:`/ A B / <g1:/ A B />`, from :g:`C <g1:C>`, :g:`D <g1:D>` let :g:`/ C E / <g1:/ C E />`, :g:`/ D F / <g1:/ D F />` be drawn at right angles to :g:`/ A B / <g1:/ A B />`
+   From :g:`C <g1:C>`, :g:`D <g1:D>` let :g:`/ C E / <g1:/ C E />`, :g:`/ D F / <g1:/ D F />` be drawn at right angles to :g:`/ A B / <g1:/ A B />`
 
 .. step:: construct
 
-   **segment** :g:`/ A F / <g1:/ A F />`, :g:`/ F B / <g1:/ F B />`, :g:`/ E B / <g1:/ E B />`
+   :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`F <g1:F>`) → :g:`/ A F / <g1:/ A F />`, :fn:`segment <G.3>`\ (:g:`F <g1:F>`, :g:`B <g1:B>`) → :g:`/ F B / <g1:/ F B />`, :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`B <g1:B>`) → :g:`/ E B / <g1:/ E B />`
 
 .. step:: assert
 
@@ -51,7 +56,7 @@ G.525
 
    *Convertendo*, therefore, :g:`/ A B / <g1:/ A B />` is one and a half times :g:`/ A D / <g1:/ A D />`.
 
-.. step:: assert [G.182, G.171] <G.182, G.171>
+.. step:: assert ∵ magnitudes_proportional_said_def, right_angled_triangle <G.182, G.171>
 
    But, as :g:`/ A B / <g1:/ A B />` is to :g:`/ A D / <g1:/ A D />`, so is the square on :g:`/ A B / <g1:/ A B />` to the square on :g:`/ A F / <g1:/ A F />`, for :g:`< A F B > <g1:< A F B >>` is equiangular with :g:`< A F D > <g1:< A F D >>`.
 
@@ -59,7 +64,7 @@ G.525
 
    Therefore the square on :g:`/ A B / <g1:/ A B />` is one and a half times the square on :g:`/ A F / <g1:/ A F />`.
 
-.. step:: assert [G.520] <G.520>
+.. step:: assert ∵ construct_pyramid_comprehend <G.520>
 
    The square on the diameter of the sphere is also one and a half times the square on the side of the pyramid.
 
@@ -79,7 +84,7 @@ G.525
 
    Therefore :g:`/ A B / <g1:/ A B />` is triple of :g:`/ D B / <g1:/ D B />`.
 
-.. step:: assert [G.171, G.182] <G.171, G.182>
+.. step:: assert ∵ right_angled_triangle, magnitudes_proportional_said_def <G.171, G.182>
 
    But, as :g:`/ A B / <g1:/ A B />` is to :g:`/ D B / <g1:/ D B />`, so is the square on :g:`/ A B / <g1:/ A B />` to the square on :g:`/ F B / <g1:/ F B />`.
 
@@ -87,7 +92,7 @@ G.525
 
    Therefore the square on :g:`/ A B / <g1:/ A B />` is triple of the square on :g:`/ F B / <g1:/ F B />`.
 
-.. step:: assert [G.522] <G.522>
+.. step:: assert ∵ construct_cube_comprehend <G.522>
 
    The square on the diameter of the sphere is also triple of the square on the side of the cube.
 
@@ -115,7 +120,7 @@ G.525
 
    Therefore the square on :g:`/ A B / <g1:/ A B />` is double of the square on :g:`/ E B / <g1:/ E B />`.
 
-.. step:: assert [G.521] <G.521>
+.. step:: assert ∵ construct_octahedron_comprehend <G.521>
 
    The square on the diameter of the sphere is also double of the square on the side of the octahedron.
 
@@ -129,7 +134,15 @@ G.525
 
 .. step:: construct
 
-   Next, let :g:`/ A G / <g1:/ A G />` be drawn from :g:`A <g1:A>` at right angles to :g:`/ A B / <g1:/ A B />`, let :g:`/ A G / <g1:/ A G />` be made :eq:`equal <g1:/ A G / = g1:/ A B />` to :g:`/ A B / <g1:/ A B />`, let :g:`/ G C / <g1:/ G C />` be joined
+   Next, let :g:`/ A G / <g1:/ A G />` be drawn from :g:`A <g1:A>` at right angles to :g:`/ A B / <g1:/ A B />`
+
+.. step:: construct
+
+   :fn:`cut_equal_segment <G.9>`\ (:g:`/ A B / <g1:/ A B />`) → :g:`/ A G / <g1:/ A G />` (:eq:`equal <g1:/ A G / = g1:/ A B />`)
+
+.. step:: construct
+
+   :fn:`segment <G.3>`\ (:g:`G <g1:G>`, :g:`C <g1:C>`) → :g:`/ G C / <g1:/ G C />`
 
 .. step:: construct
 
@@ -177,11 +190,15 @@ G.525
 
 .. step:: construct
 
-   Let :g:`/ C L / <g1:/ C L />` be made :eq:`equal <g1:/ C L / = g1:/ C K />` to :g:`/ C K / <g1:/ C K />`, from :g:`L <g1:L>` let :g:`/ L M / <g1:/ L M />` be drawn at right angles to :g:`/ A B / <g1:/ A B />`
+   :fn:`cut_equal_segment <G.9>`\ (:g:`/ C K / <g1:/ C K />`) → :g:`/ C L / <g1:/ C L />` (:eq:`equal <g1:/ C L / = g1:/ C K />`)
 
 .. step:: construct
 
-   **segment** :g:`/ M B / <g1:/ M B />`
+   From :g:`L <g1:L>` let :g:`/ L M / <g1:/ L M />` be drawn at right angles to :g:`/ A B / <g1:/ A B />`
+
+.. step:: construct
+
+   :fn:`segment <G.3>`\ (:g:`M <g1:M>`, :g:`B <g1:B>`) → :g:`/ M B / <g1:/ M B />`
 
 .. step:: assert
 
@@ -191,7 +208,7 @@ G.525
 
    Therefore the square on :g:`/ A B / <g1:/ A B />` is five times the square on :g:`/ K L / <g1:/ K L />`.
 
-.. step:: assert [G.523] <G.523>
+.. step:: assert ∵ construct_icosahedron_comprehend <G.523>
 
    The square on the diameter of the sphere is also five times the square on the radius of the circle from which the icosahedron has been described.
 
@@ -199,11 +216,11 @@ G.525
 
    :g:`/ A B / <g1:/ A B />` is the diameter of the sphere;
 
-.. step:: assert [G.133] <G.133>
+.. step:: assert ∵ inscribe_hexagon_in_circle <G.133>
 
    Therefore :g:`/ K L / <g1:/ K L />` is the radius of the circle from which the icosahedron has been described; therefore :g:`/ K L / <g1:/ K L />` is a side of the hexagon in the said circle.
 
-.. step:: assert [G.523] <G.523>
+.. step:: assert ∵ construct_icosahedron_comprehend <G.523>
 
    And, since the diameter of the sphere is made up of the side of the hexagon and two of the sides of the decagon inscribed in the same circle, and :g:`/ A B / <g1:/ A B />` is the diameter of the sphere, while :g:`/ K L / <g1:/ K L />` is a side of the hexagon, and :g:`/ A K / <g1:/ A K />` is :eq:`equal <g1:/ A K / = g1:/ L B />` to :g:`/ L B / <g1:/ L B />`.
 
@@ -215,11 +232,11 @@ G.525
 
    And, since :g:`/ L B / <g1:/ L B />` belongs to a decagon, and :g:`/ L M / <g1:/ L M />` to a hexagon, for :g:`/ L M / <g1:/ L M />` is :eq:`equal <g1:/ L M / = g1:/ K L />` to :g:`/ K L / <g1:/ K L />`, since it is also :eq:`equal <g1:/ L M / = g1:/ H K />` to :g:`/ H K / <g1:/ H K />`, being the same distance from the center, and each of :g:`/ H K / <g1:/ H K />`, :g:`/ K L / <g1:/ K L />` is double of :g:`/ C K / <g1:/ C K />`,
 
-.. step:: assert [G.517] <G.517>
+.. step:: assert ∵ equilateral_pentagon_inscribed <G.517>
 
    Therefore :g:`/ M B / <g1:/ M B />` belongs to a pentagon.
 
-.. step:: assert [G.523] <G.523>
+.. step:: assert ∵ construct_icosahedron_comprehend <G.523>
 
    The side of the pentagon is the side of the icosahedron .
 
@@ -227,11 +244,11 @@ G.525
 
    Therefore :g:`/ M B / <g1:/ M B />` belongs to the icosahedron.
 
-.. step:: assert
+.. step:: construct
 
    Since :g:`/ F B / <g1:/ F B />` is a side of the cube, let it be cut in extreme and mean ratio at :g:`N <g1:N>`, and let :g:`/ N B / <g1:/ N B />` be the greater segment ;
 
-.. step:: assert [G.524] <G.524>
+.. step:: assert ∵ construct_dodecahedron_comprehend <G.524>
 
    Therefore :g:`/ N B / <g1:/ N B />` is a side of the dodecahedron.
 
@@ -251,7 +268,7 @@ G.525
 
    The said sides, therefore, of the three figures, I mean the pyramid, the octahedron and the cube, are to one another in rational ratios.
 
-.. step:: assert [G.523, G.524] <G.523, G.524>
+.. step:: assert ∵ construct_icosahedron_comprehend, construct_dodecahedron_comprehend <G.523, G.524>
 
    The remaining two, I mean the side of the icosahedron and the side of the dodecahedron, are not in rational ratios either to one another or to the aforesaid sides ; for they are irrational, the one being minor and the other an apotome.
 
@@ -259,15 +276,15 @@ G.525
 
    That the side :g:`/ M B / <g1:/ M B />` of the icosahedron is greater than the side :g:`/ N B / <g1:/ N B />` of the dodecahedron we can prove thus.
 
-.. step:: assert [G.171] <G.171>
+.. step:: assert ∵ right_angled_triangle <G.171>
 
    Since :g:`< F D B > <g1:< F D B >>` is equiangular with :g:`< A F B > <g1:< A F B >>`.
 
-.. step:: assert [G.166] <G.166>
+.. step:: assert ∵ equiangular_triangles_sides <G.166>
 
    Proportionally, as :g:`/ D B / <g1:/ D B />` is to :g:`/ F B / <g1:/ F B />`, so is :g:`/ F B / <g1:/ F B />` to :g:`/ A B / <g1:/ A B />`.
 
-.. step:: assert [G.182, G.185] <G.182, G.185>
+.. step:: assert ∵ magnitudes_proportional_said_def, similar_polygons_divided <G.182, G.185>
 
    And, since the three straight lines are proportional, as the first is to the third, so is the square on the first to the square on the second .
 
@@ -295,7 +312,7 @@ G.525
 
    Therefore the square on :g:`/ A D / <g1:/ A D />` is greater than the square on :g:`/ F B / <g1:/ F B />` ; therefore :g:`/ A D / <g1:/ A D />` is greater than :g:`/ F B / <g1:/ F B />` ; therefore :g:`/ A L / <g1:/ A L />` is by far greater than :g:`/ F B / <g1:/ F B />`.
 
-.. step:: assert [G.516] <G.516>
+.. step:: assert ∵ side_hexagon_decagon <G.516>
 
    And, when :g:`/ A L / <g1:/ A L />` is cut in extreme and mean ratio, :g:`/ K L / <g1:/ K L />` is the greater segment, inasmuch as :g:`/ K L / <g1:/ K L />` belongs to a hexagon, and :g:`/ A K / <g1:/ A K />` to a decagon ; and, when :g:`/ F B / <g1:/ F B />` is cut in extreme and mean ratio, :g:`/ N B / <g1:/ N B />` is the greater segment .
 

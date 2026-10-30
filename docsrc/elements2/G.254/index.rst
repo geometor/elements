@@ -24,6 +24,12 @@ G.254
 
    If there be as many numbers as we please in continued proportion, and each by multiplying itself make some number, the products is proportional; and, if the original numbers by multiplying the products make certain numbers, the latter is proportional.
 
+.. signature:: theorem
+
+   | :fn:`there_many_numbers_viii_13 <G.254>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`)
+   | **given** there be as many numbers as we please, :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, in continued proportion, so that, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`B <g1:B>` to :g:`C <g1:C>`
+   | **prove** :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`F <g1:F>` and :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`K <g1:K>` are in continued proportion
+
 .. picture:: g1.svg
    :alt: Book VIII, Proposition 13
 
@@ -37,19 +43,11 @@ G.254
 
 .. step:: assert
 
-   For let :g:`A <g1:A>` by multiplying :g:`B <g1:B>` make :g:`L <g1:L>`
+   Let :g:`A <g1:A>` by multiplying :g:`B <g1:B>` make :g:`L <g1:L>`, and let the numbers :g:`A <g1:A>`, :g:`B <g1:B>` by multiplying :g:`L <g1:L>` make :g:`M <g1:M>`, :g:`N <g1:N>` respectively.
 
 .. step:: assert
 
-   Let the numbers :g:`A <g1:A>`, :g:`B <g1:B>` by multiplying :g:`L <g1:L>` make :g:`M <g1:M>`, :g:`N <g1:N>` respectively.
-
-.. step:: assert
-
-   Again let :g:`B <g1:B>` by multiplying :g:`C <g1:C>` make :g:`O <g1:O>`
-
-.. step:: assert
-
-   Let the numbers :g:`B <g1:B>`, :g:`C <g1:C>` by multiplying :g:`O <g1:O>` make :g:`P <g1:P>`, :g:`Q <g1:Q>` respectively.
+   Again let :g:`B <g1:B>` by multiplying :g:`C <g1:C>` make :g:`O <g1:O>`, and let the numbers :g:`B <g1:B>`, :g:`C <g1:C>` by multiplying :g:`O <g1:O>` make :g:`P <g1:P>`, :g:`Q <g1:Q>` respectively.
 
 .. step:: assert
 
@@ -67,7 +65,7 @@ G.254
 
    The multitude of :g:`D <g1:D>`, :g:`L <g1:L>`, :g:`E <g1:E>` is equal to the multitude of :g:`E <g1:E>`, :g:`O <g1:O>`, :g:`F <g1:F>`, and that of :g:`G <g1:G>`, :g:`M <g1:M>`, :g:`N <g1:N>`, :g:`H <g1:H>` to that of :g:`H <g1:H>`, :g:`P <g1:P>`, :g:`Q <g1:Q>`, :g:`K <g1:K>`;
 
-.. step:: assert [G.214] <G.214>
+.. step:: assert ∵ there_many_numbers_vii_14 <G.214>
 
    Therefore, :term:`*ex aequali* <ex-aequali>`, as :g:`D <g1:D>` is to :g:`E <g1:E>`, so is :g:`E <g1:E>` to :g:`F <g1:F>`, and, as :g:`G <g1:G>` is to :g:`H <g1:H>`, so is :g:`H <g1:H>` to :g:`K <g1:K>`.
 

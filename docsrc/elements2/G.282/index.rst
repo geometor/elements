@@ -23,6 +23,10 @@ G.282
 
    :term:`**Numbers composite to one another** <composite-to-one-another>` are those which are measured by some number as a common measure.
 
+.. signature:: def
+
+   | :fn:`numbers_composite_measured_def <G.282>`
+
 Required for
 ------------
 

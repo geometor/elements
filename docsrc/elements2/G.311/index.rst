@@ -23,6 +23,10 @@ G.311
 
    A:term:`**perfect number** <perfect-number>` is that which is equal to its own parts.
 
+.. signature:: def
+
+   | :fn:`perfect_number_equal_def <G.311>`
+
 Required for
 ------------
 

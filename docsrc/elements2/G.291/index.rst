@@ -24,6 +24,12 @@ G.291
 
    Prime numbers are more than any assigned multitude of prime numbers.
 
+.. signature:: theorem
+
+   | :fn:`prime_numbers_more <G.291>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`)
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` be the assigned prime numbers
+   | **prove** there are more prime numbers than :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`; :g:`G <g1:G>` is not the same with any of the numbers :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`
+
 .. picture:: g1.svg
    :alt: Book IX, Proposition 20
 
@@ -33,13 +39,13 @@ G.291
 
 .. step:: construct
 
-   For let the least number measured by :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` be taken
+   Let the least number measured by :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` be taken
 
 .. step:: assert
 
    Let it be :g:`/ D E / <g1:/ D E />`
 
-.. step:: assert
+.. step:: construct
 
    Let the unit :g:`/ D F / <g1:/ D F />` be added to :g:`/ D E / <g1:/ D E />`.
 
@@ -59,11 +65,11 @@ G.291
 
    Next, let :g:`/ E F / <g1:/ E F />` not be prime
 
-.. step:: assert [G.232] <G.232>
+.. step:: assert ∵ composite_number_measured <G.232>
 
    Therefore it is measured by some prime number.
 
-.. step:: assert
+.. step:: construct
 
    Let it be measured by the prime number :g:`G <g1:G>`.
 

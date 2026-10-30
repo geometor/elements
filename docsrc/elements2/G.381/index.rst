@@ -24,6 +24,12 @@ G.381
 
    The square on the first bimedial straight line applied to a rational straight line produces as breadth the second binomial.
 
+.. signature:: theorem
+
+   | :fn:`square_bimedial_straight <G.381>`\ (:g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`, :g:`/ A C / <g1:/ A C />`)
+   | **given** :g:`/ A B / <g1:/ A B />` be a first bimedial straight line divided into its medials at :g:`C <g1:C>`, of which medials :g:`/ A C / <g1:/ A C />` is the greater
+   | **prove** :g:`/ D G / <g1:/ D G />` is a second binomial straight line
+
 .. picture:: g1.svg
    :alt: Proposition 61
 
@@ -31,27 +37,23 @@ G.381
 
    :g:`/ A B / <g1:/ A B />` be a first bimedial straight line divided into its medials at :g:`C <g1:C>`, of which medials :g:`/ A C / <g1:/ A C />` is the greater
 
-.. step:: assert
+.. step:: construct
 
-   Let a rational straight line :g:`/ D E / <g1:/ D E />` be set out
+   Let a rational straight line :g:`/ D E / <g1:/ D E />` be set out, and let there be applied to :g:`/ D E / <g1:/ D E />` the parallelogram :g:`< D F > <g1:< D F >>` equal to the square on :g:`/ A B / <g1:/ A B />`, producing :g:`/ D G / <g1:/ D G />` as its breadth
 
 .. step:: construct
 
-   Let there be applied to :g:`/ D E / <g1:/ D E />` the parallelogram :g:`< D F > <g1:< D F >>` equal to the square on :g:`/ A B / <g1:/ A B />`, producing :g:`/ D G / <g1:/ D G />` as its breadth
-
-.. step:: construct
-
-   For let the same construction as before be made.
+   Let the same construction as before be made.
 
 .. step:: assert
 
    Since :g:`/ A B / <g1:/ A B />` is a first bimedial divided at :g:`C <g1:C>`,
 
-.. step:: assert [G.352, G.335] <G.352, G.335>
+.. step:: assert ∵ medial_straight_lines, rectangle_contained_rational_x_21 <G.352, G.335>
 
    Therefore :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` are medial straight lines commensurable in square only, and containing a rational rectangle, so that the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` are also medial.
 
-.. step:: assert [G.328, G.338] <G.328, G.338>
+.. step:: assert ∵ commensurable_magnitudes_added, straight_line_commensurable <G.328, G.338>
 
    Therefore :g:`< D L > <g1:< D L >>` is medial.
 
@@ -59,7 +61,7 @@ G.381
 
    It has been applied to the rational straight line :g:`/ D E / <g1:/ D E />`;
 
-.. step:: assert [G.336] <G.336>
+.. step:: assert ∵ square_medial_straight <G.336>
 
    Therefore :g:`/ M D / <g1:/ M D />` is rational and incommensurable in length with :g:`/ D E / <g1:/ D E />`.
 
@@ -75,11 +77,11 @@ G.381
 
    It is applied to the rational straight line :g:`/ M L / <g1:/ M L />`;
 
-.. step:: assert [G.334] <G.334>
+.. step:: assert ∵ rational_area_applied <G.334>
 
    Therefore :g:`/ M G / <g1:/ M G />` is also rational and commensurable in length with :g:`/ M L / <g1:/ M L />`, that is, :g:`/ D E / <g1:/ D E />`.
 
-.. step:: assert [G.326] <G.326>
+.. step:: assert ∵ magnitudes_commensurable_incommensurable <G.326>
 
    Therefore :g:`/ D M / <g1:/ D M />` is incommensurable in length with :g:`/ M G / <g1:/ M G />`.
 
@@ -91,7 +93,7 @@ G.381
 
    Therefore :g:`/ D M / <g1:/ D M />`, :g:`/ M G / <g1:/ M G />` are rational straight lines commensurable in square only;
 
-.. step:: assert [G.351] <G.351>
+.. step:: assert ∵ rational_straight_lines <G.351>
 
    Therefore :g:`/ D G / <g1:/ D G />` is binomial.
 
@@ -103,7 +105,7 @@ G.381
 
    Since the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` are greater than twice the rectangle :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />`,
 
-.. step:: assert [G.163] <G.163>
+.. step:: assert ∵ triangles_parallelograms_height <G.163>
 
    Therefore :g:`< D L > <g1:< D L >>` is also greater than :g:`< M F > <g1:< M F >>`, so that :g:`/ D M / <g1:/ D M />` is also greater than :g:`/ M G / <g1:/ M G />`.
 
@@ -111,7 +113,7 @@ G.381
 
    And, since the square on :g:`/ A C / <g1:/ A C />` is commensurable with the square on :g:`/ C B / <g1:/ C B />`,
 
-.. step:: assert [G.163, G.323] <G.163, G.323>
+.. step:: assert ∵ triangles_parallelograms_height, magnitudes_proportional_commensurable <G.163, G.323>
 
    :g:`< D H > <g1:< D H >>` is also commensurable with :g:`< K L > <g1:< K L >>`, so that :g:`/ D K / <g1:/ D K />` is also commensurable with :g:`/ K M / <g1:/ K M />`.
 
@@ -119,7 +121,7 @@ G.381
 
    The rectangle :g:`/ D K / <g1:/ D K />`, :g:`/ K M / <g1:/ K M />` is equal to the square on :g:`/ M N / <g1:/ M N />`;
 
-.. step:: assert [G.330] <G.330>
+.. step:: assert ∵ there_unequal_straight <G.330>
 
    Therefore the square on :g:`/ D M / <g1:/ D M />` is greater than the square on :g:`/ M G / <g1:/ M G />` by the square on a straight line commensurable with :g:`/ D M / <g1:/ D M />`.
 
@@ -127,7 +129,7 @@ G.381
 
    :g:`/ M G / <g1:/ M G />` is commensurable in length with :g:`/ D E / <g1:/ D E />`.
 
-.. step:: conclude [G.371] <G.371>
+.. step:: conclude ∵ lesser_term_commensurable_def <G.371>
 
    Therefore :g:`/ D G / <g1:/ D G />` is a second binomial straight line.
 

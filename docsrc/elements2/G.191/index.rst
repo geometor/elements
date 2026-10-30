@@ -24,22 +24,27 @@ G.191
 
    If from a parallelogram there be taken away a parallelogram similar and similarly situated to the whole and having a common angle with it, it is about the same diameter with the whole.
 
+.. signature:: theorem
+
+   | :fn:`parallelogram_there_taken <G.191>`\ ()
+   | **prove** :g:`< A B C D > <g1:< A B C D >>` is about the same diameter with :g:`< A E F G > <g1:< A E F G >>`
+
 .. picture:: g1.svg
    :alt: Proposition 26
 
 .. step:: construct
 
-   For from the parallelogram :g:`< A B C D > <g1:< A B C D >>` let there be taken away the parallelogram :g:`< A E F G > <g1:< A E F G >>` similar and similarly situated to :g:`< A B C D > <g1:< A B C D >>`, and having :g:`< D A B ) <g1:< D A B )>` common with it
+   From the parallelogram :g:`< A B C D > <g1:< A B C D >>` let there be taken away the parallelogram :g:`< A E F G > <g1:< A E F G >>` similar and similarly situated to :g:`< A B C D > <g1:< A B C D >>`, and having :g:`< D A B ) <g1:< D A B )>` common with it
 
-.. step:: assert [G.44] <G.44>
+.. step:: construct
 
-   For suppose it is not, but, if possible, let :g:`/ A H C / <g1:/ A H C />` be the diameter &lt;*of* :g:`< A B C D > <g1:< A B C D >>` &gt;, let :g:`/ G F / <g1:/ G F />` be produced and carried through to :g:`H <g1:H>`, and let :g:`/ K H / <g1:/ K H />` be drawn through :g:`H <g1:H>` parallel to either of :g:`/ A D / <g1:/ A D />`, :g:`/ B C / <g1:/ B C />`.
+   :fn:`parallel_line <G.44>`: Suppose it is not, but, if possible, let :g:`/ A H C / <g1:/ A H C />` be the diameter &lt;*of* :g:`< A B C D > <g1:< A B C D >>` &gt;, let :g:`/ G F / <g1:/ G F />` be produced and carried through to :g:`H <g1:H>`, and let :g:`/ K H / <g1:/ K H />` be drawn through :g:`H <g1:H>` parallel to either of :g:`/ A D / <g1:/ A D />`, :g:`/ B C / <g1:/ B C />`.
 
 .. step:: assert
 
    Since, then, :g:`< A B C D > <g1:< A B C D >>` is about the same diameter with :g:`< A K H G > <g1:< A K H G >>`,
 
-.. step:: assert [G.189] <G.189>
+.. step:: assert ∵ parallelogram_parallelograms_diameter <G.189>
 
    Therefore, as :g:`/ A D / <g1:/ A D />` is to :g:`/ A B / <g1:/ A B />`, so is :g:`/ A G / <g1:/ A G />` to :g:`/ A K / <g1:/ A K />`.
 
@@ -51,7 +56,7 @@ G.191
 
    As :g:`/ A D / <g1:/ A D />` is to :g:`/ A B / <g1:/ A B />`, so is :g:`/ A G / <g1:/ A G />` to :g:`/ A E / <g1:/ A E />` ;
 
-.. step:: assert [G.148] <G.148>
+.. step:: assert ∵ ratios_ratio <G.148>
 
    Therefore also, as :g:`/ A G / <g1:/ A G />` is to :g:`/ A K / <g1:/ A K />`, so is :g:`/ A G / <g1:/ A G />` to :g:`/ A E / <g1:/ A E />`.
 
@@ -59,7 +64,7 @@ G.191
 
    Therefore :g:`/ A G / <g1:/ A G />` has the same ratio to each of :g:`/ A K / <g1:/ A K />`, :g:`/ A E / <g1:/ A E />`.
 
-.. step:: assert [G.146] <G.146>
+.. step:: assert ∵ magnitudes_ratio_equal <G.146>
 
    Therefore :g:`/ A E / <g1:/ A E />` is :eq:`equal <g1:/ A E / = g1:/ A K />` to :g:`/ A K / <g1:/ A K />`, the less to the greater : which is impossible.
 

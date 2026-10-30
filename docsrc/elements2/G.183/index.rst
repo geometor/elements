@@ -23,6 +23,10 @@ G.183
 
    The term:term:`**corresponding magnitudes** <corresponding-magnitudes>` is used of antecedents in relation to antecedents, and of consequents in relation to consequents.
 
+.. signature:: def
+
+   | :fn:`term_corresponding_magnitudes_def <G.183>`
+
 Required for
 ------------
 

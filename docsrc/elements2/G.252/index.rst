@@ -23,6 +23,10 @@ G.252
 
    When four magnitudes are < continuously > proportional, the first is said to have to the fourth the:term:`**triplicate ratio** <triplicate-ratio>` of that which it has to the second, and so on continually, whatever be the proportion.
 
+.. signature:: def
+
+   | :fn:`magnitudes_proportional_said_def_v_def_10 <G.252>`
+
 Required for
 ------------
 

@@ -24,6 +24,12 @@ G.223
 
    The least numbers of those which have the same ratio with them are prime to one another.
 
+.. signature:: theorem
+
+   | :fn:`least_numbers_ratio_vii_22 <G.223>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`)
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>` be the least numbers of those which have the same ratio with them
+   | **prove** :g:`A <g1:A>`, :g:`B <g1:B>` are prime to one another
+
 .. picture:: g1.svg
    :alt: Book VII, Proposition 22
 
@@ -37,11 +43,7 @@ G.223
 
 .. step:: assert
 
-   Let some number measure them
-
-.. step:: assert
-
-   Let it be :g:`C <g1:C>`.
+   Let some number measure them, and let it be :g:`C <g1:C>`.
 
 .. step:: assert
 
@@ -51,7 +53,7 @@ G.223
 
    Since :g:`C <g1:C>` measures :g:`A <g1:A>` according to the units in :g:`D <g1:D>`,
 
-.. step:: assert [G.222] <G.222>
+.. step:: assert ∵ number_said_multiply_def <G.222>
 
    Therefore :g:`C <g1:C>` by multiplying :g:`D <g1:D>` has made :g:`A <g1:A>`.
 
@@ -67,7 +69,7 @@ G.223
 
    Thus the number :g:`C <g1:C>` by multiplying the two numbers :g:`D <g1:D>`, :g:`E <g1:E>` has made :g:`A <g1:A>`, :g:`B <g1:B>` ;
 
-.. step:: assert [G.217] <G.217>
+.. step:: assert ∵ number_multiplying_numbers <G.217>
 
    Therefore, as :g:`D <g1:D>` is to :g:`E <g1:E>`, so is :g:`A <g1:A>` to :g:`B <g1:B>` ;
 

@@ -24,32 +24,34 @@ G.20
 
    Construct a perpendicular to a given infinite line from a given point not on it.
 
+.. signature:: problem
+
+   | :fn:`perpendicular_from <G.20>`\ (:g:`[ A B ] <g1:[ A B ]>`, :g:`C <g1:C>`) → :g:`/ C H / <g1:/ C H />`
+   | **given** :g:`[ A B ] <g1:[ A B ]>`, :g:`C <g1:C>` which is not on it
+   | **construct** :g:`/ C H / <g1:/ C H />` has been drawn :eq:`perpendicular <g1:< C H G ) = g1:< E H C )>` to :g:`[ A B ] <g1:[ A B ]>` from :g:`C <g1:C>` which is not on it
+
 .. picture:: g1.svg
    :alt: Proposition 12 figure
 
 .. step:: given
 
-   :g:`[ A B ] <g1:[ A B ]>` be the given infinite straight line, :g:`C <g1:C>` the given point which is not on it
+   :g:`[ A B ] <g1:[ A B ]>`, :g:`C <g1:C>` which is not on it
 
 .. step:: construct
 
-   For let a point :g:`D <g1:D>` be taken at random on the other side of :g:`[ A B ] <g1:[ A B ]>`
+   **point**\ (:g:`[ A B ] <g1:[ A B ]>`) → :g:`D <g1:D>`
 
-.. step:: construct [G.4] <G.4>
+.. step:: construct
 
-   **circle** :g:`( C D ) <g1:( C D )>` with center :g:`C <g1:C>` and radius :g:`/ C D / <g1:/ C D />`
+   :fn:`circle <G.4>`\ (:g:`C <g1:C>`, :g:`/ C D / <g1:/ C D />`) → :g:`( C D ) <g1:( C D )>`
 
-.. step:: assert [G.17] <G.17>
+.. step:: construct
 
-   Let :g:`/ E G / <g1:/ E G />` be :eq:`bisected <g1:/ G H / = g1:/ H E />` at :g:`H <g1:H>`.
+   :fn:`bisect_segment <G.17>`\ (:g:`/ E G / <g1:/ E G />`) → :g:`H <g1:H>` (:eq:`bisected <g1:/ G H / = g1:/ H E />`)
 
-.. step:: construct [G.3] <G.3>
+.. step:: construct
 
-   **segment** :g:`/ C G / <g1:/ C G />`, :g:`/ C H / <g1:/ C H />`, :g:`/ C E / <g1:/ C E />`
-
-.. step:: assert
-
-   :g:`/ C H / <g1:/ C H />` has been drawn :eq:`perpendicular <g1:< C H G ) = g1:< E H C )>` to the given infinite straight line :g:`[ A B ] <g1:[ A B ]>` from :g:`C <g1:C>` which is not on it.
+   :fn:`segment <G.3>`\ (:g:`C <g1:C>`, :g:`G <g1:G>`) → :g:`/ C G / <g1:/ C G />`, :fn:`segment <G.3>`\ (:g:`C <g1:C>`, :g:`H <g1:H>`) → :g:`/ C H / <g1:/ C H />`, :fn:`segment <G.3>`\ (:g:`C <g1:C>`, :g:`E <g1:E>`) → :g:`/ C E / <g1:/ C E />`
 
 .. step:: assert
 
@@ -59,7 +61,7 @@ G.20
 
    And the base :g:`/ C G / <g1:/ C G />` is :eq:`equal <g1:/ C G / = g1:/ C E />` to the base :g:`/ C E / <g1:/ C E />`
 
-.. step:: assert [G.15] <G.15>
+.. step:: assert ∵ sss_congruence <G.15>
 
    Therefore :g:`< C H G ) <g1:< C H G )>` is :eq:`equal <g1:< C H G ) = g1:< E H C )>` to :g:`< E H C ) <g1:< E H C )>`.
 
@@ -67,13 +69,13 @@ G.20
 
    They are adjacent angles.
 
-.. step:: assert [G.18] <G.18>
+.. step:: assert ∵ right_angle_perpendicular <G.18>
 
    But, when a straight line set up on a straight line makes the adjacent angles equal to one another, each of the equal angles is right, and the straight line standing on the other is called a perpendicular to that on which it stands.
 
 .. step:: conclude
 
-   Therefore :g:`/ C H / <g1:/ C H />` has been drawn :eq:`perpendicular <g1:< C H G ) = g1:< E H C )>` to the given infinite straight line :g:`[ A B ] <g1:[ A B ]>` from :g:`C <g1:C>` which is not on it.
+   Therefore :g:`/ C H / <g1:/ C H />` has been drawn :eq:`perpendicular <g1:< C H G ) = g1:< E H C )>` to :g:`[ A B ] <g1:[ A B ]>` from :g:`C <g1:C>` which is not on it.
 
 Dependency Graph
 ----------------

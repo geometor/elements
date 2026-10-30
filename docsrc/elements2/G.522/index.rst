@@ -24,32 +24,37 @@ G.522
 
    Construct a cube and comprehend it in a sphere, like the pyramid; and to prove that the square on the diameter of the sphere is triple of the square on the side of the cube.
 
+.. signature:: problem
+
+   | :fn:`construct_cube_comprehend <G.522>`\ () → :g:`/ K G / <g1:/ K G />`
+   | **construct** the cube has been comprehended in the given sphere, and it has been demonstrated at the same time that the square on the diameter of the sphere is triple of the square on the side of the cube
+
 .. picture:: g1.svg
    :alt: Book XIII, Proposition 15
 
-.. step:: given
+.. step:: construct
 
-   the diameter :g:`/ A B / <g1:/ A B />` of the given sphere be set out
+   Let the diameter :g:`/ A B / <g1:/ A B />` of the given sphere be set out, and let it be cut at :g:`C <g1:C>` so that :g:`/ A C / <g1:/ A C />` is double of :g:`/ C B / <g1:/ C B />`
 
 .. step:: construct
 
-   Let it be cut at :g:`C <g1:C>` so that :g:`/ A C / <g1:/ A C />` is double of :g:`/ C B / <g1:/ C B />`
+   Let the semicircle :g:`( A D B ) <g1:( A D B )>` be described on :g:`/ A B / <g1:/ A B />`
 
 .. step:: construct
 
-   Let the semicircle :g:`( A D B ) <g1:( A D B )>` be described on :g:`/ A B / <g1:/ A B />`, let :g:`/ C D / <g1:/ C D />` be drawn from :g:`C <g1:C>` at right angles to :g:`/ A B / <g1:/ A B />`
+   :fn:`perpendicular_at <G.19>`\ (:g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`) → :g:`/ C D / <g1:/ C D />`
 
 .. step:: construct
 
-   **segment** :g:`/ D B / <g1:/ D B />`
+   :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`B <g1:B>`) → :g:`/ D B / <g1:/ D B />`
 
 .. step:: construct
 
-   Let the square :g:`< E F G H > <g1:< E F G H >>` having its side :eq:`equal <g1:/ E F / = g1:/ F G / = g1:/ G H / = g1:/ H E / = g1:/ D B />` to :g:`/ D B / <g1:/ D B />` be set out, from :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>`, :g:`H <g1:H>` let :g:`/ E K / <g1:/ E K />`, :g:`/ F L / <g1:/ F L />`, :g:`/ G M / <g1:/ G M />`, :g:`/ H N / <g1:/ H N />` be drawn at right angles to the plane of the square :g:`< E F G H > <g1:< E F G H >>`, from :g:`/ E K / <g1:/ E K />`, :g:`/ F L / <g1:/ F L />`, :g:`/ G M / <g1:/ G M />`, :g:`/ H N / <g1:/ H N />` let :g:`/ E K / <g1:/ E K />`, :g:`/ F L / <g1:/ F L />`, :g:`/ G M / <g1:/ G M />`, :g:`/ H N / <g1:/ H N />` respectively be cut off :eq:`equal <g1:/ E K / = g1:/ F L / = g1:/ G M / = g1:/ H N / = g1:/ E F / = g1:/ F G / = g1:/ G H / = g1:/ H E />` to one of :g:`/ E F / <g1:/ E F />`, :g:`/ F G / <g1:/ F G />`, :g:`/ G H / <g1:/ G H />`, :g:`/ H E / <g1:/ H E />`
+   Let the square :g:`< E F G H > <g1:< E F G H >>` having its side :eq:`equal <g1:/ E F / = g1:/ F G / = g1:/ G H / = g1:/ H E / = g1:/ D B />` to :g:`/ D B / <g1:/ D B />` be set out, from :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>`, :g:`H <g1:H>` let :g:`/ E K / <g1:/ E K />`, :g:`/ F L / <g1:/ F L />`, :g:`/ G M / <g1:/ G M />`, :g:`/ H N / <g1:/ H N />` be drawn at right angles to the plane of the square :g:`< E F G H > <g1:< E F G H >>`
 
 .. step:: construct
 
-   **segment** :g:`/ K L / <g1:/ K L />`, :g:`/ L M / <g1:/ L M />`, :g:`/ M N / <g1:/ M N />`, :g:`/ N K / <g1:/ N K />`
+   From :g:`/ E K / <g1:/ E K />`, :g:`/ F L / <g1:/ F L />`, :g:`/ G M / <g1:/ G M />`, :g:`/ H N / <g1:/ H N />` let :g:`/ E K / <g1:/ E K />`, :g:`/ F L / <g1:/ F L />`, :g:`/ G M / <g1:/ G M />`, :g:`/ H N / <g1:/ H N />` respectively be cut off :eq:`equal <g1:/ E K / = g1:/ F L / = g1:/ G M / = g1:/ H N / = g1:/ E F / = g1:/ F G / = g1:/ G H / = g1:/ H E />` to one of :g:`/ E F / <g1:/ E F />`, :g:`/ F G / <g1:/ F G />`, :g:`/ G H / <g1:/ G H />`, :g:`/ H E / <g1:/ H E />`, and let :g:`/ K L / <g1:/ K L />`, :g:`/ L M / <g1:/ L M />`, :g:`/ M N / <g1:/ M N />`, :g:`/ N K / <g1:/ N K />` be joined
 
 .. step:: assert
 
@@ -61,9 +66,9 @@ G.522
 
 .. step:: construct
 
-   For let :g:`/ K G / <g1:/ K G />`, :g:`/ E G / <g1:/ E G />` be joined.
+   :fn:`segment <G.3>`\ (:g:`K <g1:K>`, :g:`G <g1:G>`) → :g:`/ K G / <g1:/ K G />`, :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`G <g1:G>`) → :g:`/ E G / <g1:/ E G />`
 
-.. step:: assert [G.446] <G.446>
+.. step:: assert ∵ straight_line_right_def <G.446>
 
    Since :g:`< K E G ) <g1:< K E G )>` is right, because :g:`/ K E / <g1:/ K E />` is also at right angles to the plane :g:`< E F G H > <g1:< E F G H >>` and of course to :g:`/ E G / <g1:/ E G />` also, therefore the semicircle described on :g:`/ K G / <g1:/ K G />` will also pass through :g:`E <g1:E>`.
 
@@ -103,7 +108,7 @@ G.522
 
    Therefore the square on :g:`/ E G / <g1:/ E G />` is double of the square on :g:`/ E K / <g1:/ E K />`
 
-.. step:: assert [G.60] <G.60>
+.. step:: assert ∵ pythagorean_theorem <G.60>
 
    Hence the squares on :g:`/ G E / <g1:/ G E />`, :g:`/ E K / <g1:/ E K />`, that is the square on :g:`/ G K / <g1:/ G K />`, is triple of the square on :g:`/ E K / <g1:/ E K />`.
 

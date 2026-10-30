@@ -24,12 +24,17 @@ G.229
 
    If two numbers be prime to one another, the sum is prime to each of them; and, if the sum of two numbers be prime to any one of them, the original numbers is prime to one another.
 
+.. signature:: theorem
+
+   | :fn:`numbers_prime_sum <G.229>`\ ()
+   | **prove** the sum :g:`/ A C / <g1:/ A C />` is also prime to each of the numbers :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`; :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are also prime to one another
+
 .. picture:: g1.svg
    :alt: Book VII, Proposition 28
 
-.. step:: assert
+.. step:: construct
 
-   For let two numbers :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` prime to one another be added
+   Let two numbers :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` prime to one another be added
 
 .. step:: assert
 
@@ -37,11 +42,7 @@ G.229
 
 .. step:: assert
 
-   Let a number measure them
-
-.. step:: assert
-
-   Let it be :g:`D <g1:D>`.
+   Let a number measure them, and let it be :g:`D <g1:D>`.
 
 .. step:: assert
 
@@ -55,7 +56,7 @@ G.229
 
    It also measures :g:`/ A B / <g1:/ A B />` ;
 
-.. step:: assert [G.199] <G.199>
+.. step:: assert ∵ numbers_prime_measured_def <G.199>
 
    Therefore :g:`D <g1:D>` measures :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` which are prime to one another : which is impossible.
 
@@ -85,11 +86,7 @@ G.229
 
 .. step:: assert
 
-   Let a number measure them
-
-.. step:: assert
-
-   Let it be :g:`D <g1:D>`.
+   Let a number measure them, and let it be :g:`D <g1:D>`.
 
 .. step:: assert
 
@@ -103,7 +100,7 @@ G.229
 
    It also measures :g:`/ A B / <g1:/ A B />` ;
 
-.. step:: assert [G.199] <G.199>
+.. step:: assert ∵ numbers_prime_measured_def <G.199>
 
    Therefore :g:`D <g1:D>` measures :g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />` which are prime to one another : which is impossible.
 

@@ -24,22 +24,27 @@ G.248
 
    If between two numbers there fall numbers in continued proportion with them, then, however many numbers fall between them in continued proportion, so many will also fall in continued proportion between the numbers which have the same ratio with the original numbers.
 
+.. signature:: theorem
+
+   | :fn:`numbers_there_fall <G.248>`\ ()
+   | **prove** as many numbers as have fallen between :g:`A <g1:A>`, :g:`B <g1:B>` in continued proportion with them, so many numbers have also fallen between :g:`E <g1:E>`, :g:`F <g1:F>` in continued proportion
+
 .. picture:: g1.svg
    :alt: Book VIII Proposition 8
 
-.. step:: given
+.. step:: construct
 
-   the numbers :g:`C <g1:C>`, :g:`D <g1:D>` fall between the two numbers :g:`A <g1:A>`, :g:`B <g1:B>` in continued proportion with them
+   Let the numbers :g:`C <g1:C>`, :g:`D <g1:D>` fall between the two numbers :g:`A <g1:A>`, :g:`B <g1:B>` in continued proportion with them, and let :g:`E <g1:E>` be made in the same ratio to :g:`F <g1:F>` as :g:`A <g1:A>` is to :g:`B <g1:B>`
+
+.. step:: assert
+
+   I say that, as many numbers as have fallen between :g:`A <g1:A>`, :g:`B <g1:B>` in continued proportion, so many will also fall between :g:`E <g1:E>`, :g:`F <g1:F>` in continued proportion.
 
 .. step:: construct
 
-   Let :g:`E <g1:E>` be made in the same ratio to :g:`F <g1:F>` as :g:`A <g1:A>` is to :g:`B <g1:B>`
+   :fn:`many_numbers_please <G.234>`: As many as :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` are in multitude, let so many numbers :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`K <g1:K>`, :g:`L <g1:L>`, the least of those which have the same ratio with :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`B <g1:B>`, be taken
 
-.. step:: construct [G.234] <G.234>
-
-   As many as :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` are in multitude, let so many numbers :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`K <g1:K>`, :g:`L <g1:L>`, the least of those which have the same ratio with :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`B <g1:B>`, be taken
-
-.. step:: assert [G.243] <G.243>
+.. step:: assert ∵ many_numbers_please_viii_3 <G.243>
 
    Therefore the extremes of them :g:`G <g1:G>`, :g:`L <g1:L>` are prime to one another.
 
@@ -47,7 +52,7 @@ G.248
 
    Since :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`B <g1:B>` are in the same ratio with :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`K <g1:K>`, :g:`L <g1:L>`, and the multitude of the numbers :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`B <g1:B>` is equal to the multitude of the numbers :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`K <g1:K>`, :g:`L <g1:L>`,
 
-.. step:: assert [G.214] <G.214>
+.. step:: assert ∵ there_many_numbers_vii_14 <G.214>
 
    Therefore, :term:`*ex aequali* <ex-aequali>`, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`G <g1:G>` to :g:`L <g1:L>`.
 
@@ -59,7 +64,7 @@ G.248
 
    Therefore also, as :g:`G <g1:G>` is to :g:`L <g1:L>`, so is :g:`E <g1:E>` to :g:`F <g1:F>`.
 
-.. step:: assert [G.221, G.220] <G.221, G.220>
+.. step:: assert ∵ numbers_prime_least, least_numbers_ratio <G.221, G.220>
 
    :g:`G <g1:G>`, :g:`L <g1:L>` are prime, primes are also least, and the least numbers measure those which have the same ratio the same number of times, the greater the greater and the less the less, that is, the antecedent the antecedent and the consequent the consequent.
 
@@ -75,7 +80,7 @@ G.248
 
    Therefore :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`K <g1:K>`, :g:`L <g1:L>` measure :g:`E <g1:E>`, :g:`M <g1:M>`, :g:`N <g1:N>`, :g:`F <g1:F>` the same number of times.
 
-.. step:: assert [G.210] <G.210>
+.. step:: assert ∵ numbers_proportional_multiple_def <G.210>
 
    Therefore :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`K <g1:K>`, :g:`L <g1:L>` are in the same ratio with :g:`E <g1:E>`, :g:`M <g1:M>`, :g:`N <g1:N>`, :g:`F <g1:F>`.
 

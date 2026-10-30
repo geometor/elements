@@ -24,27 +24,28 @@ G.329
 
    If two incommensurable magnitudes be added together, the whole is incommensurable with each of them; and, if the whole be incommensurable with one of them, the original magnitudes is incommensurable.
 
+.. signature:: theorem
+
+   | :fn:`incommensurable_magnitudes_added <G.329>`\ ()
+   | **prove** the whole :g:`/ A C / <g1:/ A C />` is also incommensurable with each of the magnitudes :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`; :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are also incommensurable; :g:`< A C D E > <g2:< A C D E >>` is equal to the rectangle contained by :g:`/ A C / <g2:/ A C />`, :g:`/ C B / <g2:/ C B />`
+
 .. picture:: g1.svg
    :alt: Proposition 16 Diagram
-
-.. enunciation::
-
-   If to any straight line there be applied a parallelogram deficient by a square figure, the applied parallelogram is equal to the rectangle contained by the segments of the straight line resulting from the application.
 
 .. picture:: g2.svg
    :alt: Lemma Diagram
 
-.. step:: assert
+.. step:: construct
 
-   For let the two incommensurable magnitudes :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` be added together
-
-.. step:: assert
-
-   If :g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />` are not incommensurable, some magnitude will measure them. Let it measure them, if possible
+   Let the two incommensurable magnitudes :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` be added together
 
 .. step:: assert
 
-   Let it be :g:`D <g1:D>`.
+   If :g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />` are not incommensurable, some magnitude will measure them
+
+.. step:: assert
+
+   Let it measure them, if possible, and let it be :g:`D <g1:D>`.
 
 .. step:: assert
 
@@ -74,7 +75,7 @@ G.329
 
    Which is impossible.
 
-.. step:: assert [G.314] <G.314>
+.. step:: assert ∵ magnitudes_said_commensurable_def <G.314>
 
    Therefore no magnitude will measure :g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />`; therefore :g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />` are incommensurable.
 
@@ -96,11 +97,11 @@ G.329
 
 .. step:: assert
 
-   If they are commensurable, some magnitude will measure them. Let it measure them
+   If they are commensurable, some magnitude will measure them
 
 .. step:: assert
 
-   Let it be :g:`D <g1:D>`.
+   Let it measure them, and let it be :g:`D <g1:D>`.
 
 .. step:: assert
 
@@ -130,7 +131,7 @@ G.329
 
    Which is impossible.
 
-.. step:: assert [G.314] <G.314>
+.. step:: assert ∵ magnitudes_said_commensurable_def <G.314>
 
    Therefore no magnitude will measure :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`; therefore :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are incommensurable.
 
@@ -140,7 +141,7 @@ G.329
 
 .. step:: construct
 
-   For let there be applied to :g:`/ A B / <g2:/ A B />` the parallelogram :g:`< A C D E > <g2:< A C D E >>` deficient by the square figure :g:`< C B F D > <g2:< C B F D >>`
+   Let there be applied to :g:`/ A B / <g2:/ A B />` the parallelogram :g:`< A C D E > <g2:< A C D E >>` deficient by the square figure :g:`< C B F D > <g2:< C B F D >>`
 
 .. step:: assert
 
@@ -157,6 +158,10 @@ G.329
 .. step:: conclude
 
    And :g:`< A C D E > <g2:< A C D E >>` is the rectangle :g:`/ A C / <g2:/ A C />`, :g:`/ C D / <g2:/ C D />`, that is, the rectangle :g:`/ A C / <g2:/ A C />`, :g:`/ C B / <g2:/ C B />`.
+
+.. enunciation::
+
+   If to any straight line there be applied a parallelogram deficient by a square figure, the applied parallelogram is equal to the rectangle contained by the segments of the straight line resulting from the application.
 
 Dependency Graph
 ----------------

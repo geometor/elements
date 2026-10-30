@@ -24,14 +24,19 @@ G.297
 
    If from an even number an even number be subtracted, the remainder is even.
 
+.. signature:: theorem
+
+   | :fn:`even_number_even <G.297>`\ ()
+   | **prove** the remainder :g:`/ A C / <g1:/ A C />` is even
+
 .. picture:: g1.svg
    :alt: Book IX, Proposition 24
 
-.. step:: assert
+.. step:: construct
 
-   For from the even number :g:`/ A B / <g1:/ A B />` let the even number :g:`/ B C / <g1:/ B C />` be subtracted :
+   From the even number :g:`/ A B / <g1:/ A B />` let the even number :g:`/ B C / <g1:/ B C />` be subtracted :
 
-.. step:: assert [G.292] <G.292>
+.. step:: assert ∵ even_number_divisible_def <G.292>
 
    Since :g:`/ A B / <g1:/ A B />` is even, it has a half part.
 

@@ -23,6 +23,10 @@ G.144
 
    When, of the equimultiples, the multiple of the first magnitude exceeds the multiple of the second, but the multiple of the third does not exceed the multiple of the fourth, then the first is said to:term:`**have a greater ratio** <greater-ratio>` to the second than the third has to the fourth.
 
+.. signature:: def
+
+   | :fn:`equimultiples_multiple_magnitude_def <G.144>`
+
 Required for
 ------------
 

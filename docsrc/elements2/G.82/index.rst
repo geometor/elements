@@ -24,30 +24,32 @@ G.82
 
    If on the diameter of a circle a point be taken which is not the centre of the circle, and from the point straight lines fall upon the circle, that is greatest on which the centre is, the remainder of the same diameter is least, and of the rest the nearer to the straight line through the centre is always greater than the more remote, and only two equal straight lines will fall from the point on the circle, one on each side of the least straight line.
 
+.. signature:: theorem
+
+   | :fn:`diameter_circle_point <G.82>`\ (:g:`( A B C D ) <g1:( A B C D )>`, :g:`/ A D / <g1:/ A D />`)
+   | **given** :g:`( A B C D ) <g1:( A B C D )>` be a circle, let :g:`/ A D / <g1:/ A D />` be a diameter of it
+   | **prove** :g:`/ F A / <g1:/ F A />` is greatest, :g:`/ F D / <g1:/ F D />` is least, and of the rest :g:`/ F B / <g1:/ F B />` is greater than :g:`/ F C / <g1:/ F C />`, and :g:`/ F C / <g1:/ F C />` than :g:`/ F G / <g1:/ F G />`
+
 .. picture:: g1.svg
    :alt: Proposition 7 Diagram
 
 .. step:: given
 
-   :g:`( A B C D ) <g1:( A B C D )>` be a circle
-
-.. step:: assert
-
-   Let :g:`/ A D / <g1:/ A D />` be a diameter of it
+   :g:`( A B C D ) <g1:( A B C D )>` be a circle, let :g:`/ A D / <g1:/ A D />` be a diameter of it
 
 .. step:: construct
 
-   On :g:`/ A D / <g1:/ A D />` let a point :g:`F <g1:F>` be taken which is not the center of the circle, let :g:`E <g1:E>` be the center of the circle
+   On :g:`/ A D / <g1:/ A D />` let a point :g:`F <g1:F>` be taken which is not the center of the circle
 
 .. step:: assert
 
-   From :g:`F <g1:F>` let straight lines :g:`/ F B / <g1:/ F B />`, :g:`/ F C / <g1:/ F C />`, :g:`/ F G / <g1:/ F G />` fall upon :g:`( A B C D ) <g1:( A B C D )>`
+   Let :g:`E <g1:E>` be the center of the circle, and from :g:`F <g1:F>` let straight lines :g:`/ F B / <g1:/ F B />`, :g:`/ F C / <g1:/ F C />`, :g:`/ F G / <g1:/ F G />` fall upon :g:`( A B C D ) <g1:( A B C D )>`
 
 .. step:: construct
 
-   For let :g:`/ B E / <g1:/ B E />`, :g:`/ C E / <g1:/ C E />`, :g:`/ G E / <g1:/ G E />` be joined.
+   :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`E <g1:E>`) → :g:`/ B E / <g1:/ B E />`, :fn:`segment <G.3>`\ (:g:`C <g1:C>`, :g:`E <g1:E>`) → :g:`/ C E / <g1:/ C E />`, :fn:`segment <G.3>`\ (:g:`G <g1:G>`, :g:`E <g1:E>`) → :g:`/ G E / <g1:/ G E />`
 
-.. step:: assert [G.31] <G.31>
+.. step:: assert ∵ triangle_inequality <G.31>
 
    Since in any triangle two sides are greater than the remaining one.
 
@@ -65,15 +67,19 @@ G.82
 
 .. step:: assert
 
-   Since :g:`/ B E / <g1:/ B E />` is :eq:`equal <g1:/ B E / = g1:/ C E />` to :g:`/ C E / <g1:/ C E />`, and :g:`/ F E / <g1:/ F E />` is common, the two sides :g:`/ B E / <g1:/ B E />`, :g:`/ E F / <g1:/ E F />` are :eq:`equal <g1:/ B E / = g1:/ C E />` to the two sides :g:`/ C E / <g1:/ C E />`, :g:`/ E F / <g1:/ E F />`. But :g:`< B E F ) <g1:< B E F )>` is also greater than :g:`< C E F ) <g1:< C E F )>`
+   Since :g:`/ B E / <g1:/ B E />` is :eq:`equal <g1:/ B E / = g1:/ C E />` to :g:`/ C E / <g1:/ C E />`, and :g:`/ F E / <g1:/ F E />` is common, the two sides :g:`/ B E / <g1:/ B E />`, :g:`/ E F / <g1:/ E F />` are :eq:`equal <g1:/ B E / = g1:/ C E />` to the two sides :g:`/ C E / <g1:/ C E />`, :g:`/ E F / <g1:/ E F />`
 
-.. step:: assert [G.35] <G.35>
+.. step:: assert
+
+   :g:`< B E F ) <g1:< B E F )>` is also greater than :g:`< C E F ) <g1:< C E F )>`
+
+.. step:: assert ∵ hinge_theorem <G.35>
 
    Therefore the base :g:`/ B F / <g1:/ B F />` is greater than the base :g:`/ C F / <g1:/ C F />`.
 
 .. step:: assert
 
-   For the same reason
+   The same reason
 
 .. step:: assert
 
@@ -83,7 +89,7 @@ G.82
 
    Since :g:`/ G F / <g1:/ G F />`, :g:`/ F E / <g1:/ F E />` are greater than :g:`/ E G / <g1:/ E G />`, and :g:`/ E G / <g1:/ E G />` is :eq:`equal <g1:/ E G / = g1:/ E D />` to :g:`/ E D / <g1:/ E D />` → :g:`/ G F / <g1:/ G F />`, :g:`/ F E / <g1:/ F E />` are greater than :g:`/ E D / <g1:/ E D />`.
 
-.. step:: assert
+.. step:: construct
 
    Let :g:`/ E F / <g1:/ E F />` be subtracted from each
 
@@ -99,17 +105,13 @@ G.82
 
    I say also that from :g:`F <g1:F>` only two equal straight lines will fall on :g:`( A B C D ) <g1:( A B C D )>`, one on each side of the least :g:`/ F D / <g1:/ F D />`.
 
-.. step:: assert
+.. step:: construct
 
-   For on :g:`/ E F / <g1:/ E F />`
-
-.. step:: construct [G.34] <G.34>
-
-   At :g:`E <g1:E>` on it, let :g:`< F E H ) <g1:< F E H )>` be constructed :eq:`equal <g1:< F E H ) = g1:< G E F )>` to :g:`< G E F ) <g1:< G E F )>`
+   :fn:`copy_angle <G.34>`\ (:g:`/ E F / <g1:/ E F />`, :g:`E <g1:E>`, :g:`< G E F ) <g1:< G E F )>`) → :g:`< F E H ) <g1:< F E H )>` (:eq:`equal <g1:< F E H ) = g1:< G E F )>`)
 
 .. step:: construct
 
-   **segment** :g:`/ F H / <g1:/ F H />`
+   :fn:`segment <G.3>`\ (:g:`F <g1:F>`, :g:`H <g1:H>`) → :g:`/ F H / <g1:/ F H />`
 
 .. step:: assert
 
@@ -119,7 +121,7 @@ G.82
 
    And :g:`< G E F ) <g1:< G E F )>` is :eq:`equal <g1:< G E F ) = g1:< H E F )>` to :g:`< H E F ) <g1:< H E F )>`
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    Therefore the base :g:`/ F G / <g1:/ F G />` is :eq:`equal <g1:/ F G / = g1:/ F H />` to the base :g:`/ F H / <g1:/ F H />`.
 

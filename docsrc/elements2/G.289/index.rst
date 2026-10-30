@@ -24,32 +24,30 @@ G.289
 
    Given two numbers, to investigate whether it is possible to find a third proportional to them.
 
+.. signature:: problem
+
+   | :fn:`numbers_investigate_whether <G.289>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`) → :g:`C <g1:C>`
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>` be the given two numbers, let it be required to investigate whether it is possible to find a third proportional to them
+   | **construct** it is not possible to find a third proportional number to :g:`A <g1:A>`, :g:`B <g1:B>` when :g:`A <g1:A>` does not measure :g:`C <g1:C>`
+
 .. picture:: g1.svg
    :alt: Proposition 18
 
 .. step:: given
 
-   :g:`A <g1:A>`, :g:`B <g1:B>` be the given two numbers
-
-.. step:: assert
-
-   Let it be required to investigate whether it is possible to find a third proportional to them.
+   :g:`A <g1:A>`, :g:`B <g1:B>` be the given two numbers, let it be required to investigate whether it is possible to find a third proportional to them
 
 .. step:: assert
 
    Now :g:`A <g1:A>`, :g:`B <g1:B>` are either prime to one another or not.
 
-.. step:: assert [G.287] <G.287>
+.. step:: assert ∵ numbers_prime_number_ix_16 <G.287>
 
    And, if they are prime to one another, it has been proved that it is impossible to find a third proportional to them.
 
 .. step:: assert
 
-   Next, let :g:`A <g1:A>`, :g:`B <g1:B>` not be prime to one another
-
-.. step:: assert
-
-   Let :g:`B <g1:B>` by multiplying itself make :g:`C <g1:C>`.
+   Next, let :g:`A <g1:A>`, :g:`B <g1:B>` not be prime to one another, and let :g:`B <g1:B>` by multiplying itself make :g:`C <g1:C>`.
 
 .. step:: assert
 
@@ -71,7 +69,7 @@ G.289
 
    Therefore the product of :g:`A <g1:A>`, :g:`D <g1:D>` is equal to the square on :g:`B <g1:B>`.
 
-.. step:: assert [G.219] <G.219>
+.. step:: assert ∵ numbers_proportional_number <G.219>
 
    Therefore, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`B <g1:B>` to :g:`D <g1:D>` ; therefore a third proportional number :g:`D <g1:D>` has been found to :g:`A <g1:A>`, :g:`B <g1:B>`.
 

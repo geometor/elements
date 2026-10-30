@@ -24,6 +24,12 @@ G.243
 
    If as many numbers as we please in continued proportion be the least of those which have the same ratio with them, the extremes of them are prime to one another.
 
+.. signature:: theorem
+
+   | :fn:`many_numbers_please_viii_3 <G.243>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`)
+   | **given** as many numbers as we please, :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, in continued proportion be the least of those which have the same ratio with them
+   | **prove** the extremes of them :g:`A <g1:A>`, :g:`D <g1:D>` are prime to one another
+
 .. picture:: g1.svg
    :alt: Proposition 3 Diagram
 
@@ -31,15 +37,15 @@ G.243
 
    as many numbers as we please, :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, in continued proportion be the least of those which have the same ratio with them
 
-.. step:: construct [G.234] <G.234>
+.. step:: construct
 
-   For let two numbers :g:`E <g1:E>`, :g:`F <g1:F>`, the least that are in the ratio of :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, be taken.
+   :fn:`many_numbers_please <G.234>`: Let two numbers :g:`E <g1:E>`, :g:`F <g1:F>`, the least that are in the ratio of :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, be taken.
 
 .. step:: assert
 
    Then three others :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`K <g1:K>` with the same property
 
-.. step:: assert [G.242] <G.242>
+.. step:: assert ∵ find_numbers_continued <G.242>
 
    And others, more by one continually.
 
@@ -55,15 +61,15 @@ G.243
 
    Let them be :g:`L <g1:L>`, :g:`M <g1:M>`, :g:`N <g1:N>`, :g:`O <g1:O>`.
 
-.. step:: assert [G.223] <G.223>
+.. step:: assert ∵ least_numbers_ratio_vii_22 <G.223>
 
    Since :g:`E <g1:E>`, :g:`F <g1:F>` are the least of those which have the same ratio with them, they are prime to one another.
 
-.. step:: assert [G.242] <G.242>
+.. step:: assert ∵ find_numbers_continued <G.242>
 
    And, since the numbers :g:`E <g1:E>`, :g:`F <g1:F>` by multiplying themselves respectively have made the numbers :g:`G <g1:G>`, :g:`K <g1:K>`, and by multiplying the numbers :g:`G <g1:G>`, :g:`K <g1:K>` respectively have made the numbers :g:`L <g1:L>`, :g:`O <g1:O>`.
 
-.. step:: assert [G.228] <G.228>
+.. step:: assert ∵ numbers_prime_multiplying <G.228>
 
    Therefore both :g:`G <g1:G>`, :g:`K <g1:K>` and :g:`L <g1:L>`, :g:`O <g1:O>` are prime to one another.
 

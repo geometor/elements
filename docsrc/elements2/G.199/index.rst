@@ -23,6 +23,10 @@ G.199
 
    :term:`**Numbers prime to one another** <prime-to-one-another>` are those which are measured by an unit alone as a common measure.
 
+.. signature:: def
+
+   | :fn:`numbers_prime_measured_def <G.199>`
+
 Required for
 ------------
 

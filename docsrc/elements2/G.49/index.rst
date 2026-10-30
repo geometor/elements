@@ -24,6 +24,12 @@ G.49
 
    Parallelograms on equal bases and in the same parallels are equal in area.
 
+.. signature:: theorem
+
+   | :fn:`parallelograms_equal_bases <G.49>`\ (:g:`< A B C D > <g1:< A B C D >>`, :g:`< E F G H > <g1:< E F G H >>`, :g:`/ B C / <g1:/ B C />`, :g:`/ F G / <g1:/ F G />`)
+   | **given** :g:`< A B C D > <g1:< A B C D >>`, :g:`< E F G H > <g1:< E F G H >>` be parallelograms which are on :eq:`equal <g1:/ B C / = g1:/ F G />` bases :g:`/ B C / <g1:/ B C />`, :g:`/ F G / <g1:/ F G />` and in the same parallels :g:`/ A H / <g1:/ A H />`, :g:`/ B G / <g1:/ B G />`
+   | **prove** the parallelogram :g:`< A B C D > <g1:< A B C D >>` is :eq:`equal <g1:< A B C D > = g1:< E F G H >>` to :g:`< E F G H > <g1:< E F G H >>`
+
 .. picture:: g1.svg
    :alt: Folio 0345 Figure 1 - Proposition 36
 
@@ -31,35 +37,31 @@ G.49
 
    :g:`< A B C D > <g1:< A B C D >>`, :g:`< E F G H > <g1:< E F G H >>` be parallelograms which are on :eq:`equal <g1:/ B C / = g1:/ F G />` bases :g:`/ B C / <g1:/ B C />`, :g:`/ F G / <g1:/ F G />` and in the same parallels :g:`/ A H / <g1:/ A H />`, :g:`/ B G / <g1:/ B G />`
 
-.. step:: assert
-
-   The parallelogram :g:`< A B C D > <g1:< A B C D >>` is :eq:`equal <g1:< A B C D > = g1:< E F G H >>` to :g:`< E F G H > <g1:< E F G H >>`.
-
 .. step:: construct
 
-   For let :g:`/ B E / <g1:/ B E />`, :g:`/ C H / <g1:/ C H />` be joined.
+   :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`E <g1:E>`) → :g:`/ B E / <g1:/ B E />`, :fn:`segment <G.3>`\ (:g:`C <g1:C>`, :g:`H <g1:H>`) → :g:`/ C H / <g1:/ C H />`
 
-.. step:: assert [G.1] <G.1>
+.. step:: assert ∵ equal_transitive <G.1>
 
    Since :g:`/ B C / <g1:/ B C />` is :eq:`equal <g1:/ B C / = g1:/ F G />` to :g:`/ F G / <g1:/ F G />` while :g:`/ F G / <g1:/ F G />` is :eq:`equal <g1:/ F G / = g1:/ E H />` to :g:`/ E H / <g1:/ E H />` → :g:`/ B C / <g1:/ B C />` is also :eq:`equal <g1:/ B C / = g1:/ E H />` to :g:`/ E H / <g1:/ E H />`.
 
-.. step:: assert [G.46] <G.46>
+.. step:: assert ∵ join_equal_parallels <G.46>
 
    They are also parallel. And :g:`/ E B / <g1:/ E B />`, :g:`/ H C / <g1:/ H C />` join them; but straight lines joining equal and parallel straight lines (at the extremities which are) in the same directions (respectively) are :eq:`equal <g1:/ E B / = g1:/ H C />` and parallel.
 
-.. step:: assert [G.47] <G.47>
+.. step:: assert ∵ parallelogram_properties <G.47>
 
    Therefore :g:`< E B C H > <g1:< E B C H >>` is a parallelogram.
 
-.. step:: assert [G.48] <G.48>
+.. step:: assert ∵ parallelograms_same_base <G.48>
 
    It is :eq:`equal <g1:< E B C H > = g1:< A B C D >>` to :g:`< A B C D > <g1:< A B C D >>`; for it has the same base :g:`/ B C / <g1:/ B C />` with it, and is in the same parallels :g:`/ B C / <g1:/ B C />`, :g:`/ A H / <g1:/ A H />` with it.
 
-.. step:: assert [G.48] <G.48>
+.. step:: assert ∵ parallelograms_same_base <G.48>
 
    For the same reason also :g:`< E F G H > <g1:< E F G H >>` is :eq:`equal <g1:< E F G H > = g1:< E B C H >>` to the same :g:`< E B C H > <g1:< E B C H >>`;
 
-.. step:: conclude [G.1] <G.1>
+.. step:: conclude ∵ equal_transitive <G.1>
 
    So that the parallelogram :g:`< A B C D > <g1:< A B C D >>` is also :eq:`equal <g1:< A B C D > = g1:< E F G H >>` to :g:`< E F G H > <g1:< E F G H >>`.
 

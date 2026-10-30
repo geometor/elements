@@ -24,42 +24,47 @@ G.520
 
    *To construct a pyramid, to comprehend it in a given sphere, and to prove that the square on the diameter of the sphere is one and a half times the square on the side of the pyramid.*
 
+.. signature:: problem
+
+   | :fn:`construct_pyramid_comprehend <G.520>`\ () → :g:`/ B A / <g1:/ B A />`, :g:`/ A D / <g1:/ A D />`
+   | **construct** :g:`/ B A / <g1:/ B A />` is the diameter of the given sphere, and :g:`/ A D / <g1:/ A D />` is :eq:`equal <g1:/ A D / = g1:/ E F / = g1:/ F G / = g1:/ G E / = g1:/ K E / = g1:/ K F / = g1:/ K G />` to the side of the pyramid
+
 .. picture:: g1.svg
    :alt: Proposition 13 Diagrams
 
-.. step:: given
+.. step:: construct
 
-   the diameter :g:`/ A B / <g1:/ A B />` of the given sphere be set out
+   Let the diameter :g:`/ A B / <g1:/ A B />` of the given sphere be set out, and let it be cut at :g:`C <g1:C>` so that :g:`/ A C / <g1:/ A C />` is double of :g:`/ C B / <g1:/ C B />`
 
 .. step:: construct
 
-   Let it be cut at :g:`C <g1:C>` so that :g:`/ A C / <g1:/ A C />` is double of :g:`/ C B / <g1:/ C B />`
+   Let the semicircle :g:`( A D B ) <g1:( A D B )>` be described on :g:`/ A B / <g1:/ A B />`
 
 .. step:: construct
 
-   Let the semicircle :g:`( A D B ) <g1:( A D B )>` be described on :g:`/ A B / <g1:/ A B />`, let :g:`/ C D / <g1:/ C D />` be drawn from :g:`C <g1:C>` at right angles to :g:`/ A B / <g1:/ A B />`
+   :fn:`perpendicular_at <G.19>`\ (:g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`) → :g:`/ C D / <g1:/ C D />`
 
 .. step:: construct
 
-   **segment** :g:`/ D A / <g1:/ D A />`
-
-.. step:: construct [G.118, G.76] <G.118, G.76>
-
-   **segment** :g:`( E F G ) <g1:( E F G )>` which has its radius :eq:`equal <g1:/ E H / = g1:/ H F / = g1:/ H G / = g1:/ D C />` to :g:`/ D C / <g1:/ D C />` be set out, let the :eq:`equilateral <g1:/ E F / = g1:/ F G / = g1:/ G E />` triangle :g:`< E F G > <g1:< E F G >>` be inscribed in :g:`( E F G ) <g1:( E F G )>`, let the center of the circle, :g:`H <g1:H>`, be taken, let :g:`/ E H / <g1:/ E H />`, :g:`/ H F / <g1:/ H F />`, :g:`/ H G / <g1:/ H G />`
-
-.. step:: construct [G.455] <G.455>
-
-   From :g:`H <g1:H>` let :g:`/ H K / <g1:/ H K />` be set up at right angles to the plane of :g:`( E F G ) <g1:( E F G )>`, let :g:`/ H K / <g1:/ H K />` :eq:`equal <g1:/ H K / = g1:/ A C />` to :g:`/ A C / <g1:/ A C />` be cut off from :g:`/ H K / <g1:/ H K />`
+   :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`A <g1:A>`) → :g:`/ D A / <g1:/ D A />`
 
 .. step:: construct
 
-   **segment** :g:`/ K E / <g1:/ K E />`, :g:`/ K F / <g1:/ K F />`, :g:`/ K G / <g1:/ K G />`
+   :fn:`segment <G.3>`\ () → :g:`( E F G ) <g1:( E F G )>`, :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`C <g1:C>`) → :g:`/ D C / <g1:/ D C />`, :fn:`segment <G.3>`\ () → :g:`< E F G > <g1:< E F G >>`, :fn:`segment <G.3>`\ () → :g:`( E F G ) <g1:( E F G )>`, :fn:`segment <G.3>`\ () → :g:`H <g1:H>`, :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`H <g1:H>`) → :g:`/ E H / <g1:/ E H />`, :fn:`segment <G.3>`\ (:g:`H <g1:H>`, :g:`F <g1:F>`) → :g:`/ H F / <g1:/ H F />`, :fn:`segment <G.3>`\ (:g:`H <g1:H>`, :g:`G <g1:G>`) → :g:`/ H G / <g1:/ H G />`
+
+.. step:: construct
+
+   :fn:`set_straight_line <G.455>`: From :g:`H <g1:H>` let :g:`/ H K / <g1:/ H K />` be set up at right angles to the plane of :g:`( E F G ) <g1:( E F G )>`, let :g:`/ H K / <g1:/ H K />` :eq:`equal <g1:/ H K / = g1:/ A C />` to :g:`/ A C / <g1:/ A C />` be cut off from :g:`/ H K / <g1:/ H K />`
+
+.. step:: construct
+
+   :fn:`segment <G.3>`\ (:g:`K <g1:K>`, :g:`E <g1:E>`) → :g:`/ K E / <g1:/ K E />`, :fn:`segment <G.3>`\ (:g:`K <g1:K>`, :g:`F <g1:F>`) → :g:`/ K F / <g1:/ K F />`, :fn:`segment <G.3>`\ (:g:`K <g1:K>`, :g:`G <g1:G>`) → :g:`/ K G / <g1:/ K G />`
 
 .. step:: assert
 
    Since :g:`/ K H / <g1:/ K H />` is at right angles to the plane of :g:`( E F G ) <g1:( E F G )>`,
 
-.. step:: assert [G.446] <G.446>
+.. step:: assert ∵ straight_line_right_def <G.446>
 
    Therefore it will also make right angles with all the straight lines which meet it and are in the plane of :g:`( E F G ) <g1:( E F G )>`.
 
@@ -75,7 +80,7 @@ G.520
 
    And, since :g:`/ A C / <g1:/ A C />` is :eq:`equal <g1:/ A C / = g1:/ H K /; g1:/ C D / = g1:/ H E />` to :g:`/ H K / <g1:/ H K />`, and :g:`/ C D / <g1:/ C D />` to :g:`/ H E / <g1:/ H E />`, and they contain :eq:`right angles <g1:< A C D ) = g1:< K H E )>`,
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    Therefore the base :g:`/ D A / <g1:/ D A />` is :eq:`equal <g1:/ D A / = g1:/ K E />` to the base :g:`/ K E / <g1:/ K E />`.
 
@@ -99,7 +104,7 @@ G.520
 
    Therefore the square on :g:`/ A D / <g1:/ A D />` is triple of the square on :g:`/ D C / <g1:/ D C />`.
 
-.. step:: assert [G.519] <G.519>
+.. step:: assert ∵ equilateral_triangle_inscribed <G.519>
 
    The square on :g:`/ F E / <g1:/ F E />` is also triple of the square on :g:`/ E H / <g1:/ E H />`, and :g:`/ D C / <g1:/ D C />` is :eq:`equal <g1:/ D C / = g1:/ E H />` to :g:`/ E H / <g1:/ E H />`.
 
@@ -125,17 +130,17 @@ G.520
 
 .. step:: construct
 
-   For let :g:`/ H L / <g1:/ H L />` be produced in a straight line with :g:`/ K H / <g1:/ K H />`
+   :fn:`extend <G.7>`\ (:g:`/ K H / <g1:/ K H />`) → :g:`/ H L / <g1:/ H L />`
 
 .. step:: construct
 
-   Let :g:`/ H L / <g1:/ H L />` be made :eq:`equal <g1:/ H L / = g1:/ C B />` to :g:`/ C B / <g1:/ C B />`.
+   :fn:`cut_equal_segment <G.9>`\ (:g:`/ C B / <g1:/ C B />`) → :g:`/ H L / <g1:/ H L />` (:eq:`equal <g1:/ H L / = g1:/ C B />`)
 
-.. step:: assert [G.171] <G.171>
+.. step:: assert ∵ right_angled_triangle <G.171>
 
    Since, as :g:`/ A C / <g1:/ A C />` is to :g:`/ C D / <g1:/ C D />`, so is :g:`/ C D / <g1:/ C D />` to :g:`/ C B / <g1:/ C B />`, while :g:`/ A C / <g1:/ A C />` is :eq:`equal <g1:/ A C / = g1:/ K H /; g1:/ C D / = g1:/ H E /; g1:/ C B / = g1:/ H L />` to :g:`/ K H / <g1:/ K H />`, :g:`/ C D / <g1:/ C D />` to :g:`/ H E / <g1:/ H E />`, and :g:`/ C B / <g1:/ C B />` to :g:`/ H L / <g1:/ H L />`.
 
-.. step:: assert [G.180] <G.180>
+.. step:: assert ∵ straight_lines_proportional_vi_17 <G.180>
 
    Therefore, as :g:`/ K H / <g1:/ K H />` is to :g:`/ H E / <g1:/ H E />`, so is :g:`/ E H / <g1:/ E H />` to :g:`/ H L / <g1:/ H L />`; therefore the rectangle :g:`/ K H / <g1:/ K H />`, :g:`/ H L / <g1:/ H L />` is equal to the square on :g:`/ E H / <g1:/ E H />`.
 
@@ -143,7 +148,7 @@ G.520
 
    Each of :g:`< K H E ) <g1:< K H E )>`, :g:`< E H L ) <g1:< E H L )>` is :eq:`right <g1:< K H E ) = g1:< E H L )>`;
 
-.. step:: assert [G.171, G.110] <G.171, G.110>
+.. step:: assert ∵ right_angled_triangle, thales_semicircle_theorem <G.171, G.110>
 
    Therefore the semicircle described on :g:`/ K L / <g1:/ K L />` will pass through :g:`E <g1:E>` also.
 

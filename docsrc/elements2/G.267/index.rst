@@ -24,26 +24,27 @@ G.267
 
    If two numbers have to one another the ratio which a cube number has to a cube number, and the first be cube, the second is cube.
 
+.. signature:: theorem
+
+   | :fn:`numbers_ratio_cube <G.267>`\ ()
+   | **prove** :g:`B <g1:B>` is also cube
+
 .. picture:: g1.svg
    :alt: Proposition 25
 
 .. step:: assert
 
-   For let the two numbers :g:`A <g1:A>`, :g:`B <g1:B>` have to one another the ratio which the cube number :g:`C <g1:C>` has to the cube number :g:`D <g1:D>`
-
-.. step:: assert
-
-   Let :g:`A <g1:A>` be cube
+   Let the two numbers :g:`A <g1:A>`, :g:`B <g1:B>` have to one another the ratio which the cube number :g:`C <g1:C>` has to the cube number :g:`D <g1:D>`, and let :g:`A <g1:A>` be cube
 
 .. step:: assert
 
    Since :g:`C <g1:C>`, :g:`D <g1:D>` are cube, :g:`C <g1:C>`, :g:`D <g1:D>` are similar solid numbers.
 
-.. step:: assert [G.261] <G.261>
+.. step:: assert ∵ similar_solid_numbers <G.261>
 
    Therefore two mean proportional numbers fall between :g:`C <g1:C>`, :g:`D <g1:D>`.
 
-.. step:: assert [G.248] <G.248>
+.. step:: assert ∵ numbers_there_fall <G.248>
 
    And, as many numbers as fall between :g:`C <g1:C>`, :g:`D <g1:D>` in continued proportion, so many will also fall between those which have the same ratio with them.
 
@@ -59,7 +60,7 @@ G.267
 
    Since, then, the four numbers :g:`A <g1:A>`, :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`B <g1:B>` are in continued proportion, and :g:`A <g1:A>` is cube,
 
-.. step:: conclude [G.265] <G.265>
+.. step:: conclude ∵ numbers_continued_proportion_viii_23 <G.265>
 
    Therefore :g:`B <g1:B>` is also cube.
 

@@ -24,34 +24,39 @@ G.187
 
    If four straight lines be proportional, the polygons similar and similarly described upon them is proportional; and, if the polygons similar and similarly described upon them be proportional, the straight lines will themselves also be proportional.
 
+.. signature:: theorem
+
+   | :fn:`straight_lines_proportional_vi_22 <G.187>`\ ()
+   | **prove** as :g:`/ A B / <g1:/ A B />` is to :g:`/ C D / <g1:/ C D />`, so is :g:`/ E F / <g1:/ E F />` to :g:`/ G H / <g1:/ G H />`
+
 .. picture:: g1.svg
    :alt: Book VI, Proposition 22
 
-.. step:: given
+.. step:: construct
 
-   the four straight lines :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`, :g:`/ E F / <g1:/ E F />`, :g:`/ G H / <g1:/ G H />` be proportional, so that, as :g:`/ A B / <g1:/ A B />` is to :g:`/ C D / <g1:/ C D />`, so is :g:`/ E F / <g1:/ E F />` to :g:`/ G H / <g1:/ G H />`
+   Let the four straight lines :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`, :g:`/ E F / <g1:/ E F />`, :g:`/ G H / <g1:/ G H />` be proportional, so that, as :g:`/ A B / <g1:/ A B />` is to :g:`/ C D / <g1:/ C D />`, so is :g:`/ E F / <g1:/ E F />` to :g:`/ G H / <g1:/ G H />`, and let there be described on :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` the similar and similarly situated rectilineal figures :g:`< K A B > <g1:< K A B >>`, :g:`< L C D > <g1:< L C D >>`, and on :g:`/ E F / <g1:/ E F />`, :g:`/ G H / <g1:/ G H />` the similar and similarly situated rectilineal figures :g:`< M F > <g1:< M F >>`, :g:`< N H > <g1:< N H >>`
+
+.. step:: assert
+
+   I say that, as :g:`< K A B > <g1:< K A B >>` is to :g:`< L C D > <g1:< L C D >>`, so is :g:`< M F > <g1:< M F >>` to :g:`< N H > <g1:< N H >>`.
 
 .. step:: construct
 
-   Let there be described on :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` the similar and similarly situated rectilineal figures :g:`< K A B > <g1:< K A B >>`, :g:`< L C D > <g1:< L C D >>`, and on :g:`/ E F / <g1:/ E F />`, :g:`/ G H / <g1:/ G H />` the similar and similarly situated rectilineal figures :g:`< M F > <g1:< M F >>`, :g:`< N H > <g1:< N H >>`
-
-.. step:: construct [G.174] <G.174>
-
-   For let there be taken a third proportional :g:`O <g1:O>` to :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`, and a third proportional :g:`P <g1:P>` to :g:`/ E F / <g1:/ E F />`, :g:`/ G H / <g1:/ G H />`.
+   :fn:`third_proportional <G.174>`: Let there be taken a third proportional :g:`O <g1:O>` to :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`, and a third proportional :g:`P <g1:P>` to :g:`/ E F / <g1:/ E F />`, :g:`/ G H / <g1:/ G H />`.
 
 .. step:: assert
 
    Then since, as :g:`/ A B / <g1:/ A B />` is to :g:`/ C D / <g1:/ C D />`, so is :g:`/ E F / <g1:/ E F />` to :g:`/ G H / <g1:/ G H />`, and, as :g:`/ C D / <g1:/ C D />` is to :g:`O <g1:O>`, so is :g:`/ G H / <g1:/ G H />` to :g:`P <g1:P>`,
 
-.. step:: assert [G.159] <G.159>
+.. step:: assert ∵ there_number_magnitudes_v_22 <G.159>
 
    Therefore, :term:`*ex aequali* <ex-aequali>`, as :g:`/ A B / <g1:/ A B />` is to :g:`O <g1:O>`, so is :g:`/ E F / <g1:/ E F />` to :g:`P <g1:P>`.
 
-.. step:: assert [G.184] <G.184>
+.. step:: assert ∵ similar_triangles_duplicate <G.184>
 
    But, as :g:`/ A B / <g1:/ A B />` is to :g:`O <g1:O>`, so is :g:`< K A B > <g1:< K A B >>` to :g:`< L C D > <g1:< L C D >>`, and, as :g:`/ E F / <g1:/ E F />` is to :g:`P <g1:P>`, so is :g:`< M F > <g1:< M F >>` to :g:`< N H > <g1:< N H >>`.
 
-.. step:: assert [G.148] <G.148>
+.. step:: assert ∵ ratios_ratio <G.148>
 
    Therefore also, as :g:`< K A B > <g1:< K A B >>` is to :g:`< L C D > <g1:< L C D >>`, so is :g:`< M F > <g1:< M F >>` to :g:`< N H > <g1:< N H >>`.
 
@@ -67,9 +72,9 @@ G.187
 
    If :g:`/ E F / <g1:/ E F />` is not to :g:`/ G H / <g1:/ G H />` as :g:`/ A B / <g1:/ A B />` to :g:`/ C D / <g1:/ C D />`,
 
-.. step:: assert [G.175, G.181] <G.175, G.181>
+.. step:: construct
 
-   Let :g:`/ E F / <g1:/ E F />` be to :g:`/ Q R / <g1:/ Q R />` as :g:`/ A B / <g1:/ A B />` to :g:`/ C D / <g1:/ C D />`, and on :g:`/ Q R / <g1:/ Q R />` let the rectilineal figure :g:`< S R > <g1:< S R >>` be described similar and similarly situated to either of the two :g:`< M F > <g1:< M F >>`, :g:`< N H > <g1:< N H >>`.
+   :fn:`fourth_proportional <G.175>`: Let :g:`/ E F / <g1:/ E F />` be to :g:`/ Q R / <g1:/ Q R />` as :g:`/ A B / <g1:/ A B />` to :g:`/ C D / <g1:/ C D />`, and on :g:`/ Q R / <g1:/ Q R />` let the rectilineal figure :g:`< S R > <g1:< S R >>` be described similar and similarly situated to either of the two :g:`< M F > <g1:< M F >>`, :g:`< N H > <g1:< N H >>`.
 
 .. step:: assert
 
@@ -83,7 +88,7 @@ G.187
 
    Also, by hypothesis, as :g:`< K A B > <g1:< K A B >>` is to :g:`< L C D > <g1:< L C D >>`, so is :g:`< M F > <g1:< M F >>` to :g:`< N H > <g1:< N H >>`;
 
-.. step:: assert [G.148] <G.148>
+.. step:: assert ∵ ratios_ratio <G.148>
 
    Therefore also, as :g:`< M F > <g1:< M F >>` is to :g:`< S R > <g1:< S R >>`, so is :g:`< M F > <g1:< M F >>` to :g:`< N H > <g1:< N H >>`.
 
@@ -91,7 +96,7 @@ G.187
 
    Therefore :g:`< M F > <g1:< M F >>` has the same ratio to each of the figures :g:`< N H > <g1:< N H >>`, :g:`< S R > <g1:< S R >>`;
 
-.. step:: assert [G.146] <G.146>
+.. step:: assert ∵ magnitudes_ratio_equal <G.146>
 
    Therefore :g:`< N H > <g1:< N H >>` is :eq:`equal <g1:< N H > = g1:< S R >>` to :g:`< S R > <g1:< S R >>`.
 

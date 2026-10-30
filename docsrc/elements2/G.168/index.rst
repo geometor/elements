@@ -24,6 +24,12 @@ G.168
 
    If two triangles have one angle equal to one angle and the sides about the equal angles proportional, the triangles is equiangular and will have those angles equal which the corresponding sides subtend.
 
+.. signature:: theorem
+
+   | :fn:`triangles_angle_equal <G.168>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>`, :g:`< B A C ) <g1:< B A C )>`, :g:`< E D F ) <g1:< E D F )>`)
+   | **given** :g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>` be two triangles having one angle :g:`< B A C ) <g1:< B A C )>` :eq:`equal <g1:< B A C ) = g1:< E D F )>` to one angle :g:`< E D F ) <g1:< E D F )>` and the sides about the equal angles proportional, so that
+   | **prove** :g:`< A B C > <g1:< A B C >>` is :eq:`equiangular <g1:< B A C ) = g1:< E D F ); g1:< A B C ) = g1:< D E F ); g1:< A C B ) = g1:< D F E )>` with :g:`< D E F > <g1:< D E F >>`, and will have :g:`< A B C ) <g1:< A B C )>` :eq:`equal <g1:< A B C ) = g1:< D E F ); g1:< A C B ) = g1:< D F E )>` to :g:`< D E F ) <g1:< D E F )>`, and :g:`< A C B ) <g1:< A C B )>` to :g:`< D F E ) <g1:< D F E )>`
+
 .. picture:: g1.svg
    :alt: Proposition 6 diagram
 
@@ -35,19 +41,11 @@ G.168
 
    As :g:`/ B A / <g1:/ B A />` is to :g:`/ A C / <g1:/ A C />`, so is :g:`/ E D / <g1:/ E D />` to :g:`/ D F / <g1:/ D F />`;
 
-.. step:: assert
+.. step:: construct
 
-   :g:`< A B C > <g1:< A B C >>` is :eq:`equiangular <g1:< B A C ) = g1:< E D F ); g1:< A B C ) = g1:< D E F ); g1:< A C B ) = g1:< D F E )>` with :g:`< D E F > <g1:< D E F >>`, and will have :g:`< A B C ) <g1:< A B C )>` :eq:`equal <g1:< A B C ) = g1:< D E F ); g1:< A C B ) = g1:< D F E )>` to :g:`< D E F ) <g1:< D E F )>`, and :g:`< A C B ) <g1:< A C B )>` to :g:`< D F E ) <g1:< D F E )>`.
+   :fn:`copy_angle <G.34>`: On :g:`/ D F / <g1:/ D F />`, and at :g:`D <g1:D>`, :g:`F <g1:F>` on it, let there be constructed :g:`< F D G ) <g1:< F D G )>` :eq:`equal <g1:< F D G ) = g1:< B A C ) = g1:< E D F )>` to either of :g:`< B A C ) <g1:< B A C )>`, :g:`< E D F ) <g1:< E D F )>`, and :g:`< D F G ) <g1:< D F G )>` :eq:`equal <g1:< D F G ) = g1:< A C B )>` to :g:`< A C B ) <g1:< A C B )>`
 
-.. step:: assert
-
-   For on :g:`/ D F / <g1:/ D F />`
-
-.. step:: construct [G.34] <G.34>
-
-   At :g:`D <g1:D>`, :g:`F <g1:F>` on it, let there be constructed :g:`< F D G ) <g1:< F D G )>` :eq:`equal <g1:< F D G ) = g1:< B A C ) = g1:< E D F )>` to either of :g:`< B A C ) <g1:< B A C )>`, :g:`< E D F ) <g1:< E D F )>`, and :g:`< D F G ) <g1:< D F G )>` :eq:`equal <g1:< D F G ) = g1:< A C B )>` to :g:`< A C B ) <g1:< A C B )>`
-
-.. step:: assert [G.45] <G.45>
+.. step:: assert ∵ triangle_angle_sum <G.45>
 
    Therefore the remaining angle at :g:`< B ) <g1:< B )>` is :eq:`equal <g1:< B ) = g1:< G )>` to the remaining angle at :g:`< G ) <g1:< G )>`.
 
@@ -55,7 +53,7 @@ G.168
 
    Therefore :g:`< A B C > <g1:< A B C >>` is :eq:`equiangular <g1:< B A C ) = g1:< F D G ); g1:< A C B ) = g1:< D F G ); g1:< B ) = g1:< G )>` with :g:`< D G F > <g1:< D G F >>`.
 
-.. step:: assert [G.166] <G.166>
+.. step:: assert ∵ equiangular_triangles_sides <G.166>
 
    Therefore, proportionally, as :g:`/ B A / <g1:/ B A />` is to :g:`/ A C / <g1:/ A C />`, so is :g:`/ G D / <g1:/ G D />` to :g:`/ D F / <g1:/ D F />`.
 
@@ -63,11 +61,11 @@ G.168
 
    But, by hypothesis, as :g:`/ B A / <g1:/ B A />` is to :g:`/ A C / <g1:/ A C />`, so also is :g:`/ E D / <g1:/ E D />` to :g:`/ D F / <g1:/ D F />`
 
-.. step:: assert [G.148] <G.148>
+.. step:: assert ∵ ratios_ratio <G.148>
 
    Therefore also, as :g:`/ E D / <g1:/ E D />` is to :g:`/ D F / <g1:/ D F />`, so is :g:`/ G D / <g1:/ G D />` to :g:`/ D F / <g1:/ D F />`.
 
-.. step:: assert [G.146] <G.146>
+.. step:: assert ∵ magnitudes_ratio_equal <G.146>
 
    Therefore :g:`/ E D / <g1:/ E D />` is :eq:`equal <g1:/ E D / = g1:/ D G />` to :g:`/ D G / <g1:/ D G />`;
 
@@ -83,7 +81,7 @@ G.168
 
    Therefore the base :g:`/ E F / <g1:/ E F />` is :eq:`equal <g1:/ E F / = g1:/ G F />` to the base :g:`/ G F / <g1:/ G F />`,
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    And :g:`< D E F > <g1:< D E F >>` is :eq:`equal <g1:< D E F > = g1:< D G F >>` to :g:`< D G F > <g1:< D G F >>`, and the remaining angles will be :eq:`equal <g1:< D F G ) = g1:< D F E ); g1:< D G F ) = g1:< D E F )>` to the remaining angles, namely those which the equal sides subtend.
 
@@ -103,7 +101,7 @@ G.168
 
    And, by hypothesis, :g:`< B A C ) <g1:< B A C )>` is also :eq:`equal <g1:< B A C ) = g1:< E D F )>` to :g:`< E D F ) <g1:< E D F )>`
 
-.. step:: assert [G.45] <G.45>
+.. step:: assert ∵ triangle_angle_sum <G.45>
 
    Therefore the remaining angle at :g:`< B ) <g1:< B )>` is also :eq:`equal <g1:< B ) = g1:< E )>` to the remaining angle at :g:`< E ) <g1:< E )>`.
 

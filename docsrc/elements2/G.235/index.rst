@@ -24,6 +24,12 @@ G.235
 
    Given two numbers, to find the least number which they measure.
 
+.. signature:: problem
+
+   | :fn:`numbers_find_least <G.235>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`) → :g:`C <g2:C>`, :g:`A <g2:A>`
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>` be the two given numbers
+   | **construct** :g:`C <g2:C>` is the least that is measured by :g:`A <g2:A>`, :g:`B <g2:B>`
+
 .. picture:: g1.svg
    :alt: Proposition 34 diagram
 
@@ -40,13 +46,9 @@ G.235
 
 .. step:: assert
 
-   First, let :g:`A <g1:A>`, :g:`B <g1:B>` be prime to one another
+   First, let :g:`A <g1:A>`, :g:`B <g1:B>` be prime to one another, and let :g:`A <g1:A>` by multiplying :g:`B <g1:B>` make :g:`C <g1:C>`
 
-.. step:: assert
-
-   Let :g:`A <g1:A>` by multiplying :g:`B <g1:B>` make :g:`C <g1:C>`
-
-.. step:: assert [G.216] <G.216>
+.. step:: assert ∵ numbers_multiplying_make <G.216>
 
    Therefore also :g:`B <g1:B>` by multiplying :g:`A <g1:A>` has made :g:`C <g1:C>`.
 
@@ -70,7 +72,7 @@ G.235
 
    As many times as :g:`A <g1:A>` measures :g:`D <g1:D>`, so many units let there be in :g:`E <g1:E>`, and, as many times as :g:`B <g1:B>` measures :g:`D <g1:D>`, so many units let there be in :g:`F <g1:F>`
 
-.. step:: assert [G.222] <G.222>
+.. step:: assert ∵ number_said_multiply_def <G.222>
 
    Therefore :g:`A <g1:A>` by multiplying :g:`E <g1:E>` has made :g:`D <g1:D>`, and :g:`B <g1:B>` by multiplying :g:`F <g1:F>` has made :g:`D <g1:D>`.
 
@@ -78,11 +80,11 @@ G.235
 
    Therefore the product of :g:`A <g1:A>`, :g:`E <g1:E>` is equal to the product of :g:`B <g1:B>`, :g:`F <g1:F>`.
 
-.. step:: assert [G.219] <G.219>
+.. step:: assert ∵ numbers_proportional_number <G.219>
 
    Therefore, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`F <g1:F>` to :g:`E <g1:E>`.
 
-.. step:: assert [G.221, G.220] <G.221, G.220>
+.. step:: assert ∵ numbers_prime_least, least_numbers_ratio <G.221, G.220>
 
    :g:`A <g1:A>`, :g:`B <g1:B>` are prime, primes are also least, and the least measure the numbers which have the same ratio the same number of times, the greater the greater and the less the less.
 
@@ -94,7 +96,7 @@ G.235
 
    And, since :g:`A <g1:A>` by multiplying :g:`B <g1:B>`, :g:`E <g1:E>` has made :g:`C <g1:C>`, :g:`D <g1:D>`,
 
-.. step:: assert [G.217] <G.217>
+.. step:: assert ∵ number_multiplying_numbers <G.217>
 
    Therefore, as :g:`B <g1:B>` is to :g:`E <g1:E>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`.
 
@@ -110,15 +112,11 @@ G.235
 
    Therefore :g:`A <g1:A>`, :g:`B <g1:B>` do not measure any number less than :g:`C <g1:C>`; therefore :g:`C <g1:C>` is the least that is measured by :g:`A <g1:A>`, :g:`B <g1:B>`.
 
-.. step:: assert
+.. step:: construct
 
-   Next, let :g:`A <g2:A>`, :g:`B <g2:B>` not be prime to one another
+   :fn:`many_numbers_please <G.234>`: Next, let :g:`A <g2:A>`, :g:`B <g2:B>` not be prime to one another, and let :g:`F <g2:F>`, :g:`E <g2:E>`, the least numbers of those which have the same ratio with :g:`A <g2:A>`, :g:`B <g2:B>`, be taken
 
-.. step:: construct [G.234] <G.234>
-
-   Let :g:`F <g2:F>`, :g:`E <g2:E>`, the least numbers of those which have the same ratio with :g:`A <g2:A>`, :g:`B <g2:B>`, be taken
-
-.. step:: assert [G.219] <G.219>
+.. step:: assert ∵ numbers_proportional_number <G.219>
 
    Therefore the product of :g:`A <g2:A>`, :g:`E <g2:E>` is equal to the product of :g:`B <g2:B>`, :g:`F <g2:F>`.
 
@@ -158,7 +156,7 @@ G.235
 
    Therefore the product of :g:`A <g2:A>`, :g:`G <g2:G>` is equal to the product of :g:`B <g2:B>`, :g:`H <g2:H>`;
 
-.. step:: assert [G.219] <G.219>
+.. step:: assert ∵ numbers_proportional_number <G.219>
 
    Therefore, as :g:`A <g2:A>` is to :g:`B <g2:B>`, so is :g:`H <g2:H>` to :g:`G <g2:G>`.
 
@@ -170,7 +168,7 @@ G.235
 
    Therefore also, as :g:`F <g2:F>` is to :g:`E <g2:E>`, so is :g:`H <g2:H>` to :g:`G <g2:G>`.
 
-.. step:: assert [G.220] <G.220>
+.. step:: assert ∵ least_numbers_ratio <G.220>
 
    :g:`F <g2:F>`, :g:`E <g2:E>` are least, and the least measure the numbers which have the same ratio the same number of times, the greater the greater and the less the less.
 
@@ -182,7 +180,7 @@ G.235
 
    And, since :g:`A <g2:A>` by multiplying :g:`E <g2:E>`, :g:`G <g2:G>` has made :g:`C <g2:C>`, :g:`D <g2:D>`,
 
-.. step:: assert [G.217] <G.217>
+.. step:: assert ∵ number_multiplying_numbers <G.217>
 
    Therefore, as :g:`E <g2:E>` is to :g:`G <g2:G>`, so is :g:`C <g2:C>` to :g:`D <g2:D>`.
 

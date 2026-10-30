@@ -24,6 +24,12 @@ G.313
 
    Two unequal magnitudes being set out, if from the greater there be subtracted a magnitude greater than its half, and from that which is left a magnitude greater than its half, and if this process be repeated continually, there is left some magnitude which is less than the lesser magnitude set out.
 
+.. signature:: theorem
+
+   | :fn:`unequal_magnitudes_set <G.313>`\ (:g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`)
+   | **given** :g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>` be two unequal magnitudes of which :g:`/ A B / <g1:/ A B />` is the greater : I say that, if from :g:`/ A B / <g1:/ A B />` there be subtracted a magnitude greater than its half, from that which is left a magnitude greater than its half, if this process be repeated continually, there will be left some magnitude which will be less than the magnitude :g:`C <g1:C>`
+   | **prove** The theorem can be similarly proved even if the parts subtracted be halves
+
 .. picture:: g1.svg
    :alt: Book X, Proposition 1
 
@@ -31,25 +37,17 @@ G.313
 
    :g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>` be two unequal magnitudes of which :g:`/ A B / <g1:/ A B />` is the greater : I say that, if from :g:`/ A B / <g1:/ A B />` there be subtracted a magnitude greater than its half, from that which is left a magnitude greater than its half, if this process be repeated continually, there will be left some magnitude which will be less than the magnitude :g:`C <g1:C>`
 
-.. step:: assert [G.143] <G.143>
+.. step:: assert ∵ magnitudes_said_ratio_def_v_def_4 <G.143>
 
-   For :g:`C <g1:C>` if multiplied will sometime be greater than :g:`/ A B / <g1:/ A B />`.
-
-.. step:: assert
-
-   Let it be multiplied
+   :g:`C <g1:C>` if multiplied will sometime be greater than :g:`/ A B / <g1:/ A B />`.
 
 .. step:: assert
 
-   Let :g:`/ D E / <g1:/ D E />` be a multiple of :g:`C <g1:C>`, and greater than :g:`/ A B / <g1:/ A B />`
+   Let it be multiplied, and let :g:`/ D E / <g1:/ D E />` be a multiple of :g:`C <g1:C>`, and greater than :g:`/ A B / <g1:/ A B />`
 
-.. step:: assert
+.. step:: construct
 
-   Let :g:`/ D E / <g1:/ D E />` be divided into the parts :g:`/ D F / <g1:/ D F />`, :g:`/ F G / <g1:/ F G />`, :g:`/ G E / <g1:/ G E />` :eq:`equal <g1:/ D F / = g1:/ F G / = g1:/ G E / = g1:C>` to :g:`C <g1:C>`, from :g:`/ A B / <g1:/ A B />` let there be subtracted :g:`/ B H / <g1:/ B H />` greater than its half, and, from :g:`/ A H / <g1:/ A H />`, :g:`/ H K / <g1:/ H K />` greater than its half
-
-.. step:: assert
-
-   Let this process be repeated continually until the divisions in :g:`/ A B / <g1:/ A B />` are equal in multitude with the divisions in :g:`/ D E / <g1:/ D E />`.
+   Let :g:`/ D E / <g1:/ D E />` be divided into the parts :g:`/ D F / <g1:/ D F />`, :g:`/ F G / <g1:/ F G />`, :g:`/ G E / <g1:/ G E />` :eq:`equal <g1:/ D F / = g1:/ F G / = g1:/ G E / = g1:C>` to :g:`C <g1:C>`, from :g:`/ A B / <g1:/ A B />` let there be subtracted :g:`/ B H / <g1:/ B H />` greater than its half, and, from :g:`/ A H / <g1:/ A H />`, :g:`/ H K / <g1:/ H K />` greater than its half, and let this process be repeated continually until the divisions in :g:`/ A B / <g1:/ A B />` are equal in multitude with the divisions in :g:`/ D E / <g1:/ D E />`.
 
 .. step:: assert
 

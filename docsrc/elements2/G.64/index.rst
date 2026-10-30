@@ -24,24 +24,29 @@ G.64
 
    If a straight line be cut at random, the rectangle contained by the whole and one of the segments is equal to the rectangle contained by the segments and the square on the aforesaid segment.
 
+.. signature:: theorem
+
+   | :fn:`rectangle_whole_and_part <G.64>`\ ()
+   | **prove** the rectangle contained by :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` is equal to the rectangle contained by :g:`/ A C / <g1:/ A C />`, :g:`/ B C / <g1:/ B C />` together with the square on :g:`/ B C / <g1:/ B C />`
+
 .. picture:: g1.svg
    :alt: Diagram
 
 .. step:: construct
 
-   For let :g:`/ A B / <g1:/ A B />` be cut at random at :g:`C <g1:C>`
-
-.. step:: construct [G.59] <G.59>
-
-   For let the square :g:`< C D E B > <g1:< C D E B >>` be described on :g:`/ B C / <g1:/ B C />`
+   Let :g:`/ A B / <g1:/ A B />` be cut at random at :g:`C <g1:C>`
 
 .. step:: construct
 
-   Let :g:`/ D E / <g1:/ D E />` be drawn through to :g:`F <g1:F>`
+   :fn:`square_on_segment <G.59>`: Let the square :g:`< C D E B > <g1:< C D E B >>` be described on :g:`/ B C / <g1:/ B C />`
 
-.. step:: construct [G.44] <G.44>
+.. step:: construct
 
-   Through :g:`A <g1:A>` let :g:`/ A F / <g1:/ A F />` be drawn parallel to either :g:`/ C D / <g1:/ C D />` or :g:`/ B E / <g1:/ B E />`.
+   :fn:`extend <G.7>`\ (:g:`/ D E / <g1:/ D E />`) → :g:`F <g1:F>`
+
+.. step:: construct
+
+   :fn:`parallel_line <G.44>`\ (:g:`A <g1:A>`, :g:`/ C D / <g1:/ C D />` or :g:`/ B E / <g1:/ B E />`) → :g:`/ A F / <g1:/ A F />`
 
 .. step:: assert
 

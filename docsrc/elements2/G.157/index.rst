@@ -24,6 +24,12 @@ G.157
 
    If there be three magnitudes, and others equal to them in multitude, which taken two and two are in the same ratio, and if:term:`*ex aequali* <ex-aequali>` the first be greater than the third, the fourth is greater than the sixth; if equal, equal; and, if less, less.
 
+.. signature:: theorem
+
+   | :fn:`there_magnitudes_others <G.157>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`)
+   | **given** there be three magnitudes :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, others :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`F <g1:F>` equal to them in multitude, which taken two and two are in the same ratio, so that
+   | **prove** :g:`D <g1:D>` will also be greater than :g:`F <g1:F>`
+
 .. picture:: g1.svg
    :alt: Proposition 20
 
@@ -55,7 +61,7 @@ G.157
 
    And, if less, less.
 
-.. step:: assert [G.145] <G.145>
+.. step:: assert ∵ unequal_magnitudes_greater <G.145>
 
    Since :g:`A <g1:A>` is greater than :g:`C <g1:C>`, and :g:`B <g1:B>` is some other magnitude, and the greater has to the same a greater ratio than the less has.
 
@@ -67,11 +73,11 @@ G.157
 
    But, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`D <g1:D>` to :g:`E <g1:E>`, and, as :g:`C <g1:C>` is to :g:`B <g1:B>`, inversely, so is :g:`F <g1:F>` to :g:`E <g1:E>`
 
-.. step:: assert [G.150] <G.150>
+.. step:: assert ∵ magnitude_ratio_greater <G.150>
 
    Therefore :g:`D <g1:D>` has also to :g:`E <g1:E>` a greater ratio than :g:`F <g1:F>` has to :g:`E <g1:E>`.
 
-.. step:: assert [G.147] <G.147>
+.. step:: assert ∵ magnitudes_ratio_greater <G.147>
 
    But, of magnitudes which have a ratio to the same, that which has a greater ratio is greater .
 

@@ -23,6 +23,10 @@ G.170
 
    :term:`**Similar polygons** <similar-rectilineal-figures>` are such as have their angles severally equal and the sides about the equal angles proportional.
 
+.. signature:: def
+
+   | :fn:`similar_polygons_angles_def <G.170>`
+
 Required for
 ------------
 

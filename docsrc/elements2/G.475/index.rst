@@ -24,14 +24,19 @@ G.475
 
    If a parallelepipedal solid be cut by a plane through the diagonals of the opposite planes, the solid is bisected by the plane.
 
+.. signature:: theorem
+
+   | :fn:`parallelepipedal_solid_cut_xi_28 <G.475>`\ ()
+   | **prove** the solid :g:`< A B > <g1:< A B >>` will be bisected by the plane :g:`< C D E F > <g1:< C D E F >>`
+
 .. picture:: g1.svg
    :alt: Proposition 28
 
 .. step:: construct
 
-   For let the parallelepipedal solid :g:`< A B > <g1:< A B >>` be cut by the plane :g:`< C D E F > <g1:< C D E F >>` through the diagonals :g:`/ C F / <g1:/ C F />`, :g:`/ D E / <g1:/ D E />` of opposite planes
+   Let the parallelepipedal solid :g:`< A B > <g1:< A B >>` be cut by the plane :g:`< C D E F > <g1:< C D E F >>` through the diagonals :g:`/ C F / <g1:/ C F />`, :g:`/ D E / <g1:/ D E />` of opposite planes
 
-.. step:: assert [G.47] <G.47>
+.. step:: assert ∵ parallelogram_properties <G.47>
 
    Since :g:`< C G F > <g1:< C G F >>` is :eq:`equal <g1:< C G F > = g1:< C F B >; g1:< A D E > = g1:< D E H >>` to :g:`< C F B > <g1:< C F B >>`, and :g:`< A D E > <g1:< A D E >>` to :g:`< D E H > <g1:< D E H >>`, while the parallelogram :g:`< C A > <g1:< C A >>` is also :eq:`equal <g1:< C A > = g1:< E B >; g1:< G E > = g1:< C H >>` to the parallelogram :g:`< E B > <g1:< E B >>`, for they are opposite, and :g:`< G E > <g1:< G E >>` to :g:`< C H > <g1:< C H >>`.
 
@@ -39,11 +44,11 @@ G.475
 
    Therefore the prism contained by the two triangles :g:`< C G F > <g1:< C G F >>`, :g:`< A D E > <g1:< A D E >>` and the three parallelograms :g:`< G E > <g1:< G E >>`, :g:`< A C > <g1:< A C >>`, :g:`< C E > <g1:< C E >>` is also equal to the prism contained by the two triangles :g:`< C F B > <g1:< C F B >>`, :g:`< D E H > <g1:< D E H >>` and the three parallelograms :g:`< C H > <g1:< C H >>`, :g:`< B E > <g1:< B E >>`, :g:`< C E > <g1:< C E >>` ;
 
-.. step:: assert [G.474] <G.474>
+.. step:: assert ∵ equal_similar_solid_def <G.474>
 
    For they are contained by planes equal both in multitude and in magnitude.
 
-.. step:: conclude Q. E. D.
+.. step:: conclude ∵ Q. E. D. <Q. E. D.>
 
    Hence the whole solid :g:`< A B > <g1:< A B >>` is bisected by the plane :g:`< C D E F > <g1:< C D E F >>`.
 

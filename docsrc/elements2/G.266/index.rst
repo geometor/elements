@@ -24,16 +24,17 @@ G.266
 
    If two numbers have to one another the ratio which a square number has to a square number, and the first be square, the second is square.
 
+.. signature:: theorem
+
+   | :fn:`numbers_ratio_square <G.266>`\ ()
+   | **prove** :g:`B <g1:B>` is also square
+
 .. picture:: g1.svg
    :alt: Proposition 24
 
 .. step:: assert
 
-   For let the two numbers :g:`A <g1:A>`, :g:`B <g1:B>` have to one another the ratio which the square number :g:`C <g1:C>` has to the square number :g:`D <g1:D>`
-
-.. step:: assert
-
-   Let :g:`A <g1:A>` be square
+   Let the two numbers :g:`A <g1:A>`, :g:`B <g1:B>` have to one another the ratio which the square number :g:`C <g1:C>` has to the square number :g:`D <g1:D>`, and let :g:`A <g1:A>` be square
 
 .. step:: assert
 
@@ -43,7 +44,7 @@ G.266
 
    :g:`C <g1:C>`, :g:`D <g1:D>` are similar plane numbers.
 
-.. step:: assert [G.260] <G.260>
+.. step:: assert ∵ similar_plane_numbers <G.260>
 
    Therefore one mean proportional number falls between :g:`C <g1:C>`, :g:`D <g1:D>`.
 
@@ -51,7 +52,7 @@ G.266
 
    And, as :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`A <g1:A>` to :g:`B <g1:B>`;
 
-.. step:: assert [G.248] <G.248>
+.. step:: assert ∵ numbers_there_fall <G.248>
 
    Therefore one mean proportional number falls between :g:`A <g1:A>`, :g:`B <g1:B>` also.
 
@@ -59,7 +60,7 @@ G.266
 
    :g:`A <g1:A>` is square;
 
-.. step:: conclude [G.264] <G.264>
+.. step:: conclude ∵ numbers_continued_proportion <G.264>
 
    Therefore :g:`B <g1:B>` is also square.
 

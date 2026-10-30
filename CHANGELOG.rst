@@ -2,6 +2,17 @@ changelog
 =========
 
 
+0.3.3
+-----
+*2026-10-29*
+
+**added**
+
+-   Added formal proposition and rule signatures (`.. signature:: <kind>`) with `given` and `construct` / `prove` contracts across all G-Index entries in `pseudocode.py`.
+-   Converted `construct` steps to composable `:fn:` function invocations (`:fn:\`circle <G.4>\`(...) → ...`), `intersect` steps to symbolic `∩` intersections, and `assert` / `conclude` justifications to semantic rule names (`∵ circle_radii <G.2>`).
+-   Merged multi-block enunciations split across folio breaks while preserving trailing Porism blocks in `footer_blocks`.
+
+
 0.3.2
 -----
 *2026-10-29*

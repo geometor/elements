@@ -24,16 +24,21 @@ G.509
 
    If the square on a straight line be five times the square on a segment of it, then, when the double of the said segment is cut in extreme and mean ratio, the greater segment is the remaining part of the original straight line.
 
+.. signature:: theorem
+
+   | :fn:`square_straight_line_xiii_2 <G.509>`\ ()
+   | **prove** etc
+
 .. picture:: g1.svg
    :alt: Book XIII, Proposition 2
 
 .. step:: assert
 
-   For let the square on :g:`/ A B / <g1:/ A B />` be five times the square on the segment :g:`/ A C / <g1:/ A C />` of it
+   Let the square on :g:`/ A B / <g1:/ A B />` be five times the square on the segment :g:`/ A C / <g1:/ A C />` of it, and let :g:`/ C D / <g1:/ C D />` be double of :g:`/ A C / <g1:/ A C />`
 
 .. step:: assert
 
-   Let :g:`/ C D / <g1:/ C D />` be double of :g:`/ A C / <g1:/ A C />`
+   I say that, when :g:`/ C D / <g1:/ C D />` is cut in extreme and mean ratio, the greater segment is :g:`/ C B / <g1:/ C B />`.
 
 .. step:: construct
 
@@ -75,7 +80,7 @@ G.509
 
    And, since :g:`/ D C / <g1:/ D C />` is double of :g:`/ C A / <g1:/ C A />`, while :g:`/ D C / <g1:/ D C />` is :eq:`equal <g1:/ D C / = g1:/ C K /; g1:/ A C / = g1:/ C H />` to :g:`/ C K / <g1:/ C K />`, and :g:`/ A C / <g1:/ A C />` to :g:`/ C H / <g1:/ C H />`,
 
-.. step:: assert [G.163] <G.163>
+.. step:: assert ∵ triangles_parallelograms_height <G.163>
 
    Therefore :g:`< K B > <g1:< K B >>` is also double of :g:`< B H > <g1:< B H >>`.
 

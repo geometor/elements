@@ -24,54 +24,39 @@ G.482
 
    If there be two equal plane angles, and on their vertices there be set up elevated straight lines containing equal angles with the original straight lines respectively, if on the elevated straight lines points be taken at random and perpendiculars be drawn from them to the planes in which the original angles are, and if from the points so arising in the planes straight lines be joined to the vertices of the original angles, they will contain, with the elevated straight lines, equal angles.
 
+.. signature:: theorem
+
+   | :fn:`there_equal_plane <G.482>`\ ()
+   | **prove** :g:`< G A L ) <g1:< G A L )>` is :eq:`equal <g1:< G A L ) = g1:< M D N )>` to :g:`< M D N ) <g1:< M D N )>`
+
 .. picture:: g1.svg
    :alt: Book XI, Proposition 35
 
-.. step:: given
+.. step:: construct
 
-   :g:`< B A C ) <g1:< B A C )>`, :g:`< E D F ) <g1:< E D F )>` be two :eq:`equal <g1:< B A C ) = g1:< E D F )>` rectilineal angles
+   :fn:`segment <G.3>`\ () → :g:`< B A C ) <g1:< B A C )>`, :fn:`segment <G.3>`\ () → :g:`< E D F ) <g1:< E D F )>`, :fn:`segment <G.3>`\ () → :g:`A <g1:A>`, :fn:`segment <G.3>`\ () → :g:`D <g1:D>`, :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`G <g1:G>`) → :g:`/ A G / <g1:/ A G />`, :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`M <g1:M>`) → :g:`/ D M / <g1:/ D M />`, :fn:`segment <G.3>`\ () → :g:`< M D E ) <g1:< M D E )>`, :fn:`segment <G.3>`\ () → :g:`< G A B ) <g1:< G A B )>`, :fn:`segment <G.3>`\ () → :g:`< M D F ) <g1:< M D F )>`, :fn:`segment <G.3>`\ () → :g:`< G A C ) <g1:< G A C )>`, :fn:`segment <G.3>`\ () → :g:`G <g1:G>`, :fn:`segment <G.3>`\ () → :g:`M <g1:M>`, :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`G <g1:G>`) → :g:`/ A G / <g1:/ A G />`, :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`M <g1:M>`) → :g:`/ D M / <g1:/ D M />`, :fn:`segment <G.3>`\ (:g:`G <g1:G>`, :g:`L <g1:L>`) → :g:`/ G L / <g1:/ G L />`, :fn:`segment <G.3>`\ (:g:`M <g1:M>`, :g:`N <g1:N>`) → :g:`/ M N / <g1:/ M N />`, :fn:`segment <G.3>`\ () → :g:`G <g1:G>`, :fn:`segment <G.3>`\ () → :g:`M <g1:M>`, :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`A <g1:A>`) → :g:`/ B A / <g1:/ B A />`, :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`C <g1:C>`) → :g:`/ A C / <g1:/ A C />`, :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`D <g1:D>`) → :g:`/ E D / <g1:/ E D />`, :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`F <g1:F>`) → :g:`/ D F / <g1:/ D F />`, :fn:`segment <G.3>`\ () → :g:`L <g1:L>`, :fn:`segment <G.3>`\ () → :g:`N <g1:N>`, :fn:`segment <G.3>`\ (:g:`L <g1:L>`, :g:`A <g1:A>`) → :g:`/ L A / <g1:/ L A />`, :fn:`segment <G.3>`\ (:g:`N <g1:N>`, :g:`D <g1:D>`) → :g:`/ N D / <g1:/ N D />`
 
 .. step:: construct
 
-   From :g:`A <g1:A>`, :g:`D <g1:D>` let the elevated straight lines :g:`/ A G / <g1:/ A G />`, :g:`/ D M / <g1:/ D M />` be set up containing, with the original straight lines, :eq:`equal <g1:< M D E ) = g1:< G A B ); g1:< M D F ) = g1:< G A C )>` angles respectively, namely, :g:`< M D E ) <g1:< M D E )>` to :g:`< G A B ) <g1:< G A B )>` and :g:`< M D F ) <g1:< M D F )>` to :g:`< G A C ) <g1:< G A C )>`, let points :g:`G <g1:G>`, :g:`M <g1:M>` be taken at random on :g:`/ A G / <g1:/ A G />`, :g:`/ D M / <g1:/ D M />`, let :g:`/ G L / <g1:/ G L />`, :g:`/ M N / <g1:/ M N />` be drawn from :g:`G <g1:G>`, :g:`M <g1:M>` perpendicular to the planes through :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />` and :g:`/ E D / <g1:/ E D />`, :g:`/ D F / <g1:/ D F />`
-
-.. step:: assert
-
-   Let them meet the planes at :g:`L <g1:L>`, :g:`N <g1:N>`
+   :fn:`cut_equal_segment <G.9>`\ (:g:`/ D M / <g1:/ D M />`) → :g:`/ A H / <g1:/ A H />` (:eq:`equal <g1:/ A H / = g1:/ D M />`)
 
 .. step:: construct
 
-   **segment** :g:`/ L A / <g1:/ L A />`, :g:`/ N D / <g1:/ N D />`
-
-.. step:: assert
-
-   :g:`< G A L ) <g1:< G A L )>` is :eq:`equal <g1:< G A L ) = g1:< M D N )>` to :g:`< M D N ) <g1:< M D N )>`.
-
-.. step:: construct
-
-   Let :g:`/ A H / <g1:/ A H />` be made :eq:`equal <g1:/ A H / = g1:/ D M />` to :g:`/ D M / <g1:/ D M />`
-
-.. step:: construct
-
-   Let :g:`/ H K / <g1:/ H K />` be drawn through :g:`H <g1:H>` parallel to :g:`/ G L / <g1:/ G L />`.
+   :fn:`parallel_line <G.44>`\ (:g:`H <g1:H>`, :g:`/ G L / <g1:/ G L />`) → :g:`/ H K / <g1:/ H K />`
 
 .. step:: assert
 
    :g:`/ G L / <g1:/ G L />` is perpendicular to the plane through :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />`;
 
-.. step:: assert [G.451] <G.451>
+.. step:: assert ∵ straight_lines_parallel_xi_8 <G.451>
 
    Therefore :g:`/ H K / <g1:/ H K />` is also perpendicular to the plane through :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />`.
 
 .. step:: construct
 
-   From :g:`K <g1:K>`, :g:`N <g1:N>` let :g:`/ K C / <g1:/ K C />`, :g:`/ N F / <g1:/ N F />`, :g:`/ K B / <g1:/ K B />`, :g:`/ N E / <g1:/ N E />` be drawn :eq:`perpendicular <g1:/ K C / = g1:/ A C /; g1:/ N F / = g1:/ D F /; g1:/ K B / = g1:/ A B /; g1:/ N E / = g1:/ D E />` to :g:`/ A C / <g1:/ A C />`, :g:`/ D F / <g1:/ D F />`, :g:`/ A B / <g1:/ A B />`, :g:`/ D E / <g1:/ D E />`
+   From :g:`K <g1:K>`, :g:`N <g1:N>` let :g:`/ K C / <g1:/ K C />`, :g:`/ N F / <g1:/ N F />`, :g:`/ K B / <g1:/ K B />`, :g:`/ N E / <g1:/ N E />` be drawn :eq:`perpendicular <g1:/ K C / = g1:/ A C /; g1:/ N F / = g1:/ D F /; g1:/ K B / = g1:/ A B /; g1:/ N E / = g1:/ D E />` to :g:`/ A C / <g1:/ A C />`, :g:`/ D F / <g1:/ D F />`, :g:`/ A B / <g1:/ A B />`, :g:`/ D E / <g1:/ D E />`, and let :g:`/ H C / <g1:/ H C />`, :g:`/ C B / <g1:/ C B />`, :g:`/ M F / <g1:/ M F />`, :g:`/ F E / <g1:/ F E />` be joined.
 
-.. step:: construct
-
-   **segment** :g:`/ H C / <g1:/ H C />`, :g:`/ C B / <g1:/ C B />`, :g:`/ M F / <g1:/ M F />`, :g:`/ F E / <g1:/ F E />`
-
-.. step:: assert [G.60] <G.60>
+.. step:: assert ∵ pythagorean_theorem <G.60>
 
    Since the square on :g:`/ H A / <g1:/ H A />` is equal to the squares on :g:`/ H K / <g1:/ H K />`, :g:`/ K A / <g1:/ K A />`, and the squares on :g:`/ K C / <g1:/ K C />`, :g:`/ C A / <g1:/ C A />` are equal to the square on :g:`/ K A / <g1:/ K A />`.
 
@@ -79,7 +64,7 @@ G.482
 
    Therefore the square on :g:`/ H A / <g1:/ H A />` is also equal to the squares on :g:`/ H K / <g1:/ H K />`, :g:`/ K C / <g1:/ K C />`, :g:`/ C A / <g1:/ C A />`.
 
-.. step:: assert [G.60] <G.60>
+.. step:: assert ∵ pythagorean_theorem <G.60>
 
    The square on :g:`/ H C / <g1:/ H C />` is equal to the squares on :g:`/ H K / <g1:/ H K />`, :g:`/ K C / <g1:/ K C />`.
 
@@ -87,7 +72,7 @@ G.482
 
    Therefore the square on :g:`/ H A / <g1:/ H A />` is equal to the squares on :g:`/ H C / <g1:/ H C />`, :g:`/ C A / <g1:/ C A />`.
 
-.. step:: assert [G.61] <G.61>
+.. step:: assert ∵ converse_pythagorean <G.61>
 
    Therefore :g:`< H C A ) <g1:< H C A )>` is :eq:`right <g1:< H C A )>`.
 
@@ -103,7 +88,7 @@ G.482
 
    :g:`< H A C ) <g1:< H A C )>` is also :eq:`equal <g1:< H A C ) = g1:< M D F )>` to :g:`< M D F ) <g1:< M D F )>`.
 
-.. step:: assert [G.37] <G.37>
+.. step:: assert ∵ asa_aas_congruence <G.37>
 
    Therefore :g:`< M D F > <g1:< M D F >>`, :g:`< H A C > <g1:< H A C >>` are two triangles which have two angles equal to two angles respectively, and one side equal to one side, namely, that subtending one of the equal angles, that is, :g:`/ H A / <g1:/ H A />` :eq:`equal <g1:/ H A / = g1:/ M D />` to :g:`/ M D / <g1:/ M D />`; therefore they will also have the remaining sides equal to the remaining sides respectively.
 
@@ -123,7 +108,7 @@ G.482
 
    :g:`< C A B ) <g1:< C A B )>` is also :eq:`equal <g1:< C A B ) = g1:< F D E )>` to :g:`< F D E ) <g1:< F D E )>`;
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    Therefore the base :g:`/ B C / <g1:/ B C />` is :eq:`equal <g1:/ B C / = g1:/ E F />` to the base :g:`/ E F / <g1:/ E F />`, the triangle to the triangle, and the remaining angles to the remaining angles; therefore :g:`< A C B ) <g1:< A C B )>` is :eq:`equal <g1:< A C B ) = g1:< D F E )>` to :g:`< D F E ) <g1:< D F E )>`.
 
@@ -139,7 +124,7 @@ G.482
 
    For the same reason :g:`< C B K ) <g1:< C B K )>` is also :eq:`equal <g1:< C B K ) = g1:< F E N )>` to :g:`< F E N ) <g1:< F E N )>`.
 
-.. step:: assert [G.37] <G.37>
+.. step:: assert ∵ asa_aas_congruence <G.37>
 
    Therefore :g:`< B C K > <g1:< B C K >>`, :g:`< E F N > <g1:< E F N >>` are two triangles which have two angles equal to two angles respectively, and one side equal to one side, namely, that adjacent to the equal angles, that is, :g:`/ B C / <g1:/ B C />` :eq:`equal <g1:/ B C / = g1:/ E F />` to :g:`/ E F / <g1:/ E F />`; therefore they will also have the remaining sides equal to the remaining sides.
 
@@ -155,7 +140,7 @@ G.482
 
    Therefore the two sides :g:`/ A C / <g1:/ A C />`, :g:`/ C K / <g1:/ C K />` are :eq:`equal <g1:/ A C / = g1:/ D F /; g1:/ C K / = g1:/ F N />` to the two sides :g:`/ D F / <g1:/ D F />`, :g:`/ F N / <g1:/ F N />`; and they contain right angles.
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    Therefore the base :g:`/ A K / <g1:/ A K />` is :eq:`equal <g1:/ A K / = g1:/ D N />` to the base :g:`/ D N / <g1:/ D N />`.
 
@@ -167,7 +152,7 @@ G.482
 
    The square on :g:`/ A H / <g1:/ A H />` is also :eq:`equal <g1:/ A H / = g1:/ D M />` to the square on :g:`/ D M / <g1:/ D M />`.
 
-.. step:: assert [G.60] <G.60>
+.. step:: assert ∵ pythagorean_theorem <G.60>
 
    The squares on :g:`/ A K / <g1:/ A K />`, :g:`/ K H / <g1:/ K H />` are equal to the square on :g:`/ A H / <g1:/ A H />`, for :g:`< A K H ) <g1:< A K H )>` is :eq:`right <g1:< A K H )>`; and the squares on :g:`/ D N / <g1:/ D N />`, :g:`/ N M / <g1:/ N M />` are equal to the square on :g:`/ D M / <g1:/ D M />`, for :g:`< D N M ) <g1:< D N M )>` is :eq:`right <g1:< D N M )>`.
 
@@ -179,7 +164,7 @@ G.482
 
    And, since the two sides :g:`/ H A / <g1:/ H A />`, :g:`/ A K / <g1:/ A K />` are :eq:`equal <g1:/ H A / = g1:/ M D /; g1:/ A K / = g1:/ D N />` to the two sides :g:`/ M D / <g1:/ M D />`, :g:`/ D N / <g1:/ D N />` respectively, and the base :g:`/ H K / <g1:/ H K />` was proved :eq:`equal <g1:/ H K / = g1:/ M N />` to the base :g:`/ M N / <g1:/ M N />`,
 
-.. step:: assert [G.15] <G.15>
+.. step:: assert ∵ sss_congruence <G.15>
 
    Therefore :g:`< H A K ) <g1:< H A K )>` is :eq:`equal <g1:< H A K ) = g1:< M D N )>` to :g:`< M D N ) <g1:< M D N )>`.
 

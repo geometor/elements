@@ -24,6 +24,12 @@ G.195
 
    Cut a given segment in extreme and mean ratio.
 
+.. signature:: problem
+
+   | :fn:`extreme_and_mean_ratio <G.195>`\ (:g:`/ A B / <g1:/ A B />`) → :g:`E <g1:E>`, :g:`/ A E / <g1:/ A E />`
+   | **given** :g:`/ A B / <g1:/ A B />`
+   | **construct** :g:`/ A B / <g1:/ A B />` has been cut in extreme and mean ratio at :g:`E <g1:E>`, and the greater segment of it is :g:`/ A E / <g1:/ A E />`
+
 .. picture:: g1.svg
    :alt: Book VI Proposition 30
 
@@ -31,9 +37,9 @@ G.195
 
    :g:`/ A B / <g1:/ A B />`
 
-.. step:: assert [G.194] <G.194>
+.. step:: construct
 
-   On :g:`/ A B / <g1:/ A B />` let the square :g:`< B C > <g1:< B C >>` be described ; and let there be applied to :g:`/ A C / <g1:/ A C />` the parallelogram :g:`< C D > <g1:< C D >>` :eq:`equal <g1:< C D > = g1:< B C >>` to :g:`< B C > <g1:< B C >>` and exceeding by the figure :g:`< A D > <g1:< A D >>` similar to :g:`< B C > <g1:< B C >>`.
+   :fn:`straight_line_apply_vi_29 <G.194>`: On :g:`/ A B / <g1:/ A B />` let the square :g:`< B C > <g1:< B C >>` be described ; and let there be applied to :g:`/ A C / <g1:/ A C />` the parallelogram :g:`< C D > <g1:< C D >>` :eq:`equal <g1:< C D > = g1:< B C >>` to :g:`< B C > <g1:< B C >>` and exceeding by the figure :g:`< A D > <g1:< A D >>` similar to :g:`< B C > <g1:< B C >>`.
 
 .. step:: assert
 
@@ -43,7 +49,7 @@ G.195
 
    Therefore :g:`< A D > <g1:< A D >>` is also a square.
 
-.. step:: assert
+.. step:: construct
 
    And, since :g:`< B C > <g1:< B C >>` is :eq:`equal <g1:< B C > = g1:< C D >>` to :g:`< C D > <g1:< C D >>`, let :g:`< C E > <g1:< C E >>` be subtracted from each ;
 
@@ -55,7 +61,7 @@ G.195
 
    It is also equiangular with it ;
 
-.. step:: assert [G.177] <G.177>
+.. step:: assert ∵ equal_equiangular_parallelograms <G.177>
 
    Therefore in :g:`< B F > <g1:< B F >>`, :g:`< A D > <g1:< A D >>` the sides about the equal angles are reciprocally proportional .
 

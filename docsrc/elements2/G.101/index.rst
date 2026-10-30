@@ -23,6 +23,10 @@ G.101
 
    :term:`**Similar segments of circles** <similar-segments-of-circles>` are those which admit equal angles, or in which the angles are equal.
 
+.. signature:: def
+
+   | :fn:`similar_segments_circles_def <G.101>`
+
 Required for
 ------------
 

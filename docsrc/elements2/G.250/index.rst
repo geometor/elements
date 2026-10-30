@@ -24,26 +24,31 @@ G.250
 
    If numbers fall between each of two numbers and an unit in continued proportion, however many numbers fall between each of them and an unit in continued proportion, so many also will fall between the numbers themselves in continued proportion.
 
+.. signature:: theorem
+
+   | :fn:`numbers_fall_numbers <G.250>`\ ()
+   | **prove** as many numbers as fall between each of the numbers :g:`A <g1:A>`, :g:`B <g1:B>` and the unit :g:`C <g1:C>` in continued proportion, so many also will fall between :g:`A <g1:A>`, :g:`B <g1:B>` in continued proportion
+
 .. picture:: g1.svg
    :alt: Book VIII, Proposition 10
 
 .. step:: assert
 
-   For let the numbers :g:`D <g1:D>`, :g:`E <g1:E>` and :g:`F <g1:F>`, :g:`G <g1:G>` respectively fall between the two numbers :g:`A <g1:A>`, :g:`B <g1:B>` and the unit :g:`C <g1:C>` in continued proportion
+   Let the numbers :g:`D <g1:D>`, :g:`E <g1:E>` and :g:`F <g1:F>`, :g:`G <g1:G>` respectively fall between the two numbers :g:`A <g1:A>`, :g:`B <g1:B>` and the unit :g:`C <g1:C>` in continued proportion
 
 .. step:: assert
 
-   For let :g:`D <g1:D>` by multiplying :g:`F <g1:F>` make :g:`H <g1:H>`
+   I say that, as many numbers as have fallen between each of the numbers :g:`A <g1:A>`, :g:`B <g1:B>` and the unit :g:`C <g1:C>` in continued proportion, so many numbers will also fall between :g:`A <g1:A>`, :g:`B <g1:B>` in continued proportion.
 
 .. step:: assert
 
-   Let the numbers :g:`D <g1:D>`, :g:`F <g1:F>` by multiplying :g:`H <g1:H>` make :g:`K <g1:K>`, :g:`L <g1:L>` respectively.
+   Let :g:`D <g1:D>` by multiplying :g:`F <g1:F>` make :g:`H <g1:H>`, and let the numbers :g:`D <g1:D>`, :g:`F <g1:F>` by multiplying :g:`H <g1:H>` make :g:`K <g1:K>`, :g:`L <g1:L>` respectively.
 
 .. step:: assert
 
    Since, as the unit :g:`C <g1:C>` is to the number :g:`D <g1:D>`, so is :g:`D <g1:D>` to :g:`E <g1:E>`,
 
-.. step:: assert [G.210] <G.210>
+.. step:: assert ∵ numbers_proportional_multiple_def <G.210>
 
    Therefore the unit :g:`C <g1:C>` measures the number :g:`D <g1:D>` the same number of times as :g:`D <g1:D>` measures :g:`E <g1:E>`.
 
@@ -91,7 +96,7 @@ G.250
 
    And, since :g:`D <g1:D>` by multiplying itself has made :g:`E <g1:E>` and by multiplying :g:`F <g1:F>` has made :g:`H <g1:H>`,
 
-.. step:: assert [G.217] <G.217>
+.. step:: assert ∵ number_multiplying_numbers <G.217>
 
    Therefore, as :g:`D <g1:D>` is to :g:`F <g1:F>`, so is :g:`E <g1:E>` to :g:`H <g1:H>`.
 
@@ -99,7 +104,7 @@ G.250
 
    For the same reason also,
 
-.. step:: assert [G.218] <G.218>
+.. step:: assert ∵ numbers_multiplying_number <G.218>
 
    As :g:`D <g1:D>` is to :g:`F <g1:F>`, so is :g:`H <g1:H>` to :g:`G <g1:G>`.
 
@@ -111,7 +116,7 @@ G.250
 
    Since :g:`D <g1:D>` by multiplying the numbers :g:`E <g1:E>`, :g:`H <g1:H>` has made :g:`A <g1:A>`, :g:`K <g1:K>` respectively,
 
-.. step:: assert [G.217] <G.217>
+.. step:: assert ∵ number_multiplying_numbers <G.217>
 
    Therefore, as :g:`E <g1:E>` is to :g:`H <g1:H>`, so is :g:`A <g1:A>` to :g:`K <g1:K>`.
 
@@ -127,7 +132,7 @@ G.250
 
    Since the numbers :g:`D <g1:D>`, :g:`F <g1:F>` by multiplying :g:`H <g1:H>` have made :g:`K <g1:K>`, :g:`L <g1:L>` respectively,
 
-.. step:: assert [G.218] <G.218>
+.. step:: assert ∵ numbers_multiplying_number <G.218>
 
    Therefore, as :g:`D <g1:D>` is to :g:`F <g1:F>`, so is :g:`K <g1:K>` to :g:`L <g1:L>`.
 
@@ -143,7 +148,7 @@ G.250
 
    Further, since :g:`F <g1:F>` by multiplying the numbers :g:`H <g1:H>`, :g:`G <g1:G>` has made :g:`L <g1:L>`, :g:`B <g1:B>` respectively,
 
-.. step:: assert [G.217] <G.217>
+.. step:: assert ∵ number_multiplying_numbers <G.217>
 
    Therefore, as :g:`H <g1:H>` is to :g:`G <g1:G>`, so is :g:`L <g1:L>` to :g:`B <g1:B>`.
 

@@ -24,6 +24,12 @@ G.214
 
    If there be as many numbers as we please, and others equal to them in multitude, which taken two and two are in the same ratio, they is in the same ratio ex aequali.
 
+.. signature:: theorem
+
+   | :fn:`there_many_numbers_vii_14 <G.214>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`)
+   | **given** there be as many numbers as we please :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, others equal to them in multitude :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`F <g1:F>`, which taken two and two are in the same ratio, so that, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`D <g1:D>` to :g:`E <g1:E>`, and, as :g:`B <g1:B>` is to :g:`C <g1:C>`, so is :g:`E <g1:E>` to :g:`F <g1:F>`
+   | **prove** alternately, as :g:`A <g1:A>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to :g:`F <g1:F>`
+
 .. picture:: g1.svg
    :alt: Proposition 14 Diagram
 
@@ -33,9 +39,13 @@ G.214
 
 .. step:: assert
 
+   I say that, :term:`*ex aequali* <ex-aequali>`, as :g:`A <g1:A>` is to :g:`C <g1:C>`, so also is :g:`D <g1:D>` to :g:`F <g1:F>`.
+
+.. step:: assert
+
    Since, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`D <g1:D>` to :g:`E <g1:E>`,
 
-.. step:: assert [G.213] <G.213>
+.. step:: assert ∵ numbers_proportional_proportional <G.213>
 
    Therefore, alternately, as :g:`A <g1:A>` is to :g:`D <g1:D>`, so is :g:`B <g1:B>` to :g:`E <g1:E>`.
 
@@ -43,7 +53,7 @@ G.214
 
    Since, as :g:`B <g1:B>` is to :g:`C <g1:C>`, so is :g:`E <g1:E>` to :g:`F <g1:F>`,
 
-.. step:: assert [G.213] <G.213>
+.. step:: assert ∵ numbers_proportional_proportional <G.213>
 
    Therefore, alternately, as :g:`B <g1:B>` is to :g:`E <g1:E>`, so is :g:`C <g1:C>` to :g:`F <g1:F>`.
 
@@ -55,7 +65,7 @@ G.214
 
    Therefore also, as :g:`A <g1:A>` is to :g:`D <g1:D>`, so is :g:`C <g1:C>` to :g:`F <g1:F>`.
 
-.. step:: conclude [G.213] <G.213>
+.. step:: conclude ∵ numbers_proportional_proportional <G.213>
 
    Therefore, alternately, as :g:`A <g1:A>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to :g:`F <g1:F>`.
 

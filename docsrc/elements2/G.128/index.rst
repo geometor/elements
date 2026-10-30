@@ -24,32 +24,33 @@ G.128
 
    Construct an isosceles triangle having each of the angles at the base double of the remaining one.
 
+.. signature:: problem
+
+   | :fn:`golden_isosceles_triangle <G.128>`\ () → :g:`< B D A ) <g1:< B D A )>`, :g:`< D B A ) <g1:< D B A )>`
+   | **construct** each of :g:`< B D A ) <g1:< B D A )>`, :g:`< D B A ) <g1:< D B A )>` is also double of :g:`< D A B ) <g1:< D A B )>`
+
 .. picture:: g1.svg
    :alt: Proposition IV. 10 Diagram
 
-.. step:: given
+.. step:: construct
 
-   any straight line :g:`/ A B / <g1:/ A B />` be set out
-
-.. step:: construct [G.72] <G.72>
-
-   Let it be cut at :g:`C <g1:C>` so that the rectangle contained by :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` is equal to the square on :g:`/ C A / <g1:/ C A />`
+   :fn:`cut_extreme_and_mean_ratio <G.72>`: Let any straight line :g:`/ A B / <g1:/ A B />` be set out, and let it be cut at :g:`C <g1:C>` so that the rectangle contained by :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` is equal to the square on :g:`/ C A / <g1:/ C A />`
 
 .. step:: construct
 
-   **circle** :g:`( B D E ) <g1:( B D E )>` with center :g:`A <g1:A>` and radius :g:`/ A B / <g1:/ A B />`
+   :fn:`circle <G.4>`\ (:g:`A <g1:A>`, :g:`/ A B / <g1:/ A B />`) → :g:`( B D E ) <g1:( B D E )>`
 
-.. step:: assert [G.117] <G.117>
+.. step:: assert ∵ fit_chord_in_circle <G.117>
 
    Let there be fitted in :g:`( B D E ) <g1:( B D E )>` :g:`/ B D / <g1:/ B D />` :eq:`equal <g1:/ B D / = g1:/ A C />` to :g:`/ A C / <g1:/ A C />` which is not greater than the diameter of :g:`( B D E ) <g1:( B D E )>`.
 
 .. step:: construct
 
-   **segment** :g:`/ A D / <g1:/ A D />`, :g:`/ D C / <g1:/ D C />`
+   :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`D <g1:D>`) → :g:`/ A D / <g1:/ A D />`, :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`C <g1:C>`) → :g:`/ D C / <g1:/ D C />`
 
-.. step:: assert [G.122] <G.122>
+.. step:: construct
 
-   Let :g:`( A C D ) <g1:( A C D )>` be circumscribed about :g:`< A C D > <g1:< A C D >>`.
+   :fn:`circumscribe_circle_about_triangle <G.122>`: Let :g:`( A C D ) <g1:( A C D )>` be circumscribed about :g:`< A C D > <g1:< A C D >>`.
 
 .. step:: assert
 
@@ -59,11 +60,11 @@ G.128
 
    And, since a point :g:`B <g1:B>` has been taken outside :g:`( A C D ) <g1:( A C D )>`, and from :g:`B <g1:B>` :g:`/ B A / <g1:/ B A />`, :g:`/ B D / <g1:/ B D />` have fallen on :g:`( A C D ) <g1:( A C D )>`, and one of them cuts it, while the other falls on it, and the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` is equal to the square on :g:`/ B D / <g1:/ B D />`,
 
-.. step:: assert [G.116] <G.116>
+.. step:: assert ∵ point_taken_outside_iii_37 <G.116>
 
    Therefore :g:`/ B D / <g1:/ B D />` touches :g:`( A C D ) <g1:( A C D )>`.
 
-.. step:: assert [G.111] <G.111>
+.. step:: assert ∵ straight_line_touch_iii_32 <G.111>
 
    Since, then, :g:`/ B D / <g1:/ B D />` touches it, and :g:`/ D C / <g1:/ D C />` is drawn across from the point of contact at :g:`D <g1:D>` → therefore :g:`< B D C ) <g1:< B D C )>` is :eq:`equal <g1:< B D C ) = g1:< D A C )>` to :g:`< D A C ) <g1:< D A C )>` in the alternate segment of the circle.
 
@@ -75,7 +76,7 @@ G.128
 
    Therefore the whole angle :g:`< B D A ) <g1:< B D A )>` is equal to the two angles :g:`< C D A ) <g1:< C D A )>`, :g:`< D A C ) <g1:< D A C )>`.
 
-.. step:: assert [G.45] <G.45>
+.. step:: assert ∵ triangle_angle_sum <G.45>
 
    The exterior angle :g:`< B C D ) <g1:< B C D )>` is equal to :g:`< C D A ) <g1:< C D A )>`, :g:`< D A C ) <g1:< D A C )>`
 
@@ -83,7 +84,7 @@ G.128
 
    Therefore :g:`< B D A ) <g1:< B D A )>` is also :eq:`equal <g1:< B D A ) = g1:< B C D )>` to :g:`< B C D ) <g1:< B C D )>`.
 
-.. step:: assert [G.12] <G.12>
+.. step:: assert ∵ isosceles_base_angles <G.12>
 
    :g:`< B D A ) <g1:< B D A )>` is :eq:`equal <g1:< B D A ) = g1:< C B D )>` to :g:`< C B D ) <g1:< C B D )>`, since the side :g:`/ A D / <g1:/ A D />` is also :eq:`equal <g1:/ A D / = g1:/ A B />` to :g:`/ A B / <g1:/ A B />`
 
@@ -99,7 +100,7 @@ G.128
 
    And, since :g:`< D B C ) <g1:< D B C )>` is :eq:`equal <g1:< D B C ) = g1:< B C D )>` to :g:`< B C D ) <g1:< B C D )>`,
 
-.. step:: assert [G.13] <G.13>
+.. step:: assert ∵ equal_angles_isosceles <G.13>
 
    The side :g:`/ B D / <g1:/ B D />` is also :eq:`equal <g1:/ B D / = g1:/ D C />` to the side :g:`/ D C / <g1:/ D C />`.
 
@@ -111,7 +112,7 @@ G.128
 
    Therefore :g:`/ C A / <g1:/ C A />` is also :eq:`equal <g1:/ C A / = g1:/ C D />` to :g:`/ C D / <g1:/ C D />`,
 
-.. step:: assert [G.12] <G.12>
+.. step:: assert ∵ isosceles_base_angles <G.12>
 
    So that :g:`< C D A ) <g1:< C D A )>` is also :eq:`equal <g1:< C D A ) = g1:< D A C )>` to :g:`< D A C ) <g1:< D A C )>`;
 

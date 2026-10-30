@@ -24,6 +24,12 @@ G.181
 
    Describe on a given segment a rectilinear figure similar and similarly situated to a given rectilinear figure.
 
+.. signature:: problem
+
+   | :fn:`describe_segment_rectilinear <G.181>`\ (:g:`/ A B / <g2:/ A B />`, :g:`< C E > <g1:< C E >>`) → :g:`< A H > <g2:< A H >>`
+   | **given** :g:`/ A B / <g2:/ A B />` and :g:`< C E > <g1:< C E >>` the given rectilinear figure
+   | **construct** the rectilinear figure :g:`< A H > <g2:< A H >>` is similar to the rectilineal figure :g:`< C E > <g1:< C E >>`
+
 .. picture:: g1.svg
    :alt: Proposition 18 (figure CE)
 
@@ -36,13 +42,13 @@ G.181
 
 .. step:: construct
 
-   **segment** :g:`/ D F / <g1:/ D F />`
+   :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`F <g1:F>`) → :g:`/ D F / <g1:/ D F />`
 
-.. step:: construct [G.34] <G.34>
+.. step:: construct
 
-   On :g:`/ A B / <g2:/ A B />`, and at :g:`A <g2:A>`, :g:`B <g2:B>` on it, let :g:`< G A B ) <g2:< G A B )>` be constructed :eq:`equal <g2:< G A B ) = g1:< F C D )>` to the angle at :g:`< F C D ) <g1:< F C D )>`, and :g:`< A B G ) <g2:< A B G )>` :eq:`equal <g2:< A B G ) = g1:< C D F )>` to :g:`< C D F ) <g1:< C D F )>`.
+   :fn:`copy_angle <G.34>`: On :g:`/ A B / <g2:/ A B />`, and at :g:`A <g2:A>`, :g:`B <g2:B>` on it, let :g:`< G A B ) <g2:< G A B )>` be constructed :eq:`equal <g2:< G A B ) = g1:< F C D )>` to the angle at :g:`< F C D ) <g1:< F C D )>`, and :g:`< A B G ) <g2:< A B G )>` :eq:`equal <g2:< A B G ) = g1:< C D F )>` to :g:`< C D F ) <g1:< C D F )>`.
 
-.. step:: assert [G.45] <G.45>
+.. step:: assert ∵ triangle_angle_sum <G.45>
 
    Therefore the remaining angle :g:`< C F D ) <g1:< C F D )>` is :eq:`equal <g1:< C F D ) = g2:< A G B )>` to :g:`< A G B ) <g2:< A G B )>`.
 
@@ -54,15 +60,11 @@ G.181
 
    Therefore, proportionally, as :g:`/ F D / <g1:/ F D />` is to :g:`/ G B / <g2:/ G B />`, so is :g:`/ F C / <g1:/ F C />` to :g:`/ G A / <g2:/ G A />`, and :g:`/ C D / <g1:/ C D />` to :g:`/ A B / <g2:/ A B />`.
 
-.. step:: assert
+.. step:: construct
 
-   On :g:`/ B G / <g2:/ B G />`
+   :fn:`copy_angle <G.34>`: On :g:`/ B G / <g2:/ B G />`, and at :g:`B <g2:B>`, :g:`G <g2:G>` on it, let :g:`< B G H ) <g2:< B G H )>` be constructed :eq:`equal <g2:< B G H ) = g1:< D F E )>` to :g:`< D F E ) <g1:< D F E )>`, and :g:`< G B H ) <g2:< G B H )>` :eq:`equal <g2:< G B H ) = g1:< F D E )>` to :g:`< F D E ) <g1:< F D E )>`.
 
-.. step:: construct [G.34] <G.34>
-
-   At :g:`B <g2:B>`, :g:`G <g2:G>` on it, let :g:`< B G H ) <g2:< B G H )>` be constructed :eq:`equal <g2:< B G H ) = g1:< D F E )>` to :g:`< D F E ) <g1:< D F E )>`, and :g:`< G B H ) <g2:< G B H )>` :eq:`equal <g2:< G B H ) = g1:< F D E )>` to :g:`< F D E ) <g1:< F D E )>`.
-
-.. step:: assert [G.45] <G.45>
+.. step:: assert ∵ triangle_angle_sum <G.45>
 
    Therefore the remaining angle at :g:`< F E D ) <g1:< F E D )>` is :eq:`equal <g1:< F E D ) = g2:< G H B )>` to the remaining angle at :g:`< G H B ) <g2:< G H B )>`.
 
@@ -70,7 +72,7 @@ G.181
 
    Therefore :g:`< F D E > <g1:< F D E >>` is :eq:`equiangular <g1:< D F E ) = g2:< B G H ); g1:< F D E ) = g2:< G B H ); g1:< F E D ) = g2:< G H B )>` with :g:`< G B H > <g2:< G B H >>`;
 
-.. step:: assert [G.166] <G.166>
+.. step:: assert ∵ equiangular_triangles_sides <G.166>
 
    Therefore, proportionally, as :g:`/ F D / <g1:/ F D />` is to :g:`/ G B / <g2:/ G B />`, so is :g:`/ F E / <g1:/ F E />` to :g:`/ G H / <g2:/ G H />`, and :g:`/ E D / <g1:/ E D />` to :g:`/ H B / <g2:/ H B />`.
 
@@ -92,7 +94,7 @@ G.181
 
 .. step:: assert
 
-   For the same reason
+   The same reason
 
 .. step:: assert
 
@@ -110,7 +112,7 @@ G.181
 
    And they have the sides about their equal angles proportional;
 
-.. step:: conclude [G.170] <G.170>
+.. step:: conclude ∵ similar_polygons_angles_def <G.170>
 
    Therefore the rectilinear figure :g:`< A H > <g2:< A H >>` is similar to the rectilineal figure :g:`< C E > <g1:< C E >>`.
 

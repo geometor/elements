@@ -24,6 +24,12 @@ G.125
 
    Circumscribe about a given circle a square.
 
+.. signature:: problem
+
+   | :fn:`circumscribe_circle_square <G.125>`\ (:g:`( A B C D ) <g1:( A B C D )>`)
+   | **given** :g:`( A B C D ) <g1:( A B C D )>`
+   | **construct** about the given circle a square has been circumscribed
+
 .. picture:: g1.svg
    :alt: Proposition IV. 7 Diagram
 
@@ -35,35 +41,35 @@ G.125
 
    Let two diameters :g:`/ A C / <g1:/ A C />`, :g:`/ B D / <g1:/ B D />` of :g:`( A B C D ) <g1:( A B C D )>` be drawn at right angles to one another
 
-.. step:: construct [G.94] <G.94>
+.. step:: construct
 
-   Through :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` let :g:`/ F G / <g1:/ F G />`, :g:`/ G H / <g1:/ G H />`, :g:`/ H K / <g1:/ H K />`, :g:`/ K F / <g1:/ K F />` be drawn touching :g:`( A B C D ) <g1:( A B C D )>`.
+   :fn:`straight_line_drawn <G.94>`: Through :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` let :g:`/ F G / <g1:/ F G />`, :g:`/ G H / <g1:/ G H />`, :g:`/ H K / <g1:/ H K />`, :g:`/ K F / <g1:/ K F />` be drawn touching :g:`( A B C D ) <g1:( A B C D )>`.
 
-.. step:: assert [G.96] <G.96>
+.. step:: assert ∵ straight_line_touch <G.96>
 
    Since :g:`/ F G / <g1:/ F G />` touches :g:`( A B C D ) <g1:( A B C D )>`, and :g:`/ E A / <g1:/ E A />` has been joined from the center :g:`E <g1:E>` to the point of contact at :g:`A <g1:A>` → therefore the angles at :g:`A <g1:A>` are right.
 
 .. step:: assert
 
-   For the same reason
+   The same reason
 
 .. step:: assert
 
    The angles at :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` are also right.
 
-.. step:: assert [G.40] <G.40>
+.. step:: assert ∵ corresponding_angles_parallel <G.40>
 
    Since :g:`< A E B ) <g1:< A E B )>` is right, and :g:`< E B G ) <g1:< E B G )>` is also :eq:`right <g1:< A E B ) = g1:< E B G )>` → therefore :g:`/ G H / <g1:/ G H />` is parallel to :g:`/ A C / <g1:/ A C />`.
 
 .. step:: assert
 
-   For the same reason
+   The same reason
 
 .. step:: assert
 
    :g:`/ A C / <g1:/ A C />` is also parallel to :g:`/ F K / <g1:/ F K />`,
 
-.. step:: assert [G.43] <G.43>
+.. step:: assert ∵ parallel_transitive <G.43>
 
    So that :g:`/ G H / <g1:/ G H />` is also parallel to :g:`/ F K / <g1:/ F K />`.
 
@@ -79,7 +85,7 @@ G.125
 
    Therefore :g:`< F G H K > <g1:< F G H K >>`, :g:`< G H C A > <g1:< G H C A >>`, :g:`< A C K F > <g1:< A C K F >>`, :g:`< F G B D > <g1:< F G B D >>`, :g:`< B H K D > <g1:< B H K D >>` are parallelograms
 
-.. step:: assert [G.47] <G.47>
+.. step:: assert ∵ parallelogram_properties <G.47>
 
    Therefore :g:`/ G F / <g1:/ G F />` is :eq:`equal <g1:/ G F / = g1:/ H K />` to :g:`/ H K / <g1:/ H K />`, and :g:`/ G H / <g1:/ G H />` :eq:`to <g1:/ G H / = g1:/ F K />` :g:`/ F K / <g1:/ F K />`.
 
@@ -87,7 +93,7 @@ G.125
 
    And, since :g:`/ A C / <g1:/ A C />` is :eq:`equal <g1:/ A C / = g1:/ B D />` to :g:`/ B D / <g1:/ B D />`, and :g:`/ A C / <g1:/ A C />` is also :eq:`equal <g1:/ A C / = g1:/ G H / = g1:/ F K />` to each of :g:`/ G H / <g1:/ G H />`, :g:`/ F K / <g1:/ F K />`,
 
-.. step:: assert [G.47] <G.47>
+.. step:: assert ∵ parallelogram_properties <G.47>
 
    While :g:`/ B D / <g1:/ B D />` is :eq:`equal <g1:/ B D / = g1:/ G F / = g1:/ H K />` to each of :g:`/ G F / <g1:/ G F />`, :g:`/ H K / <g1:/ H K />`,
 
@@ -99,7 +105,7 @@ G.125
 
    I say next that it is also right-angled.
 
-.. step:: assert [G.47] <G.47>
+.. step:: assert ∵ parallelogram_properties <G.47>
 
    Since :g:`< G B E A > <g1:< G B E A >>` is a parallelogram, and :g:`< A E B ) <g1:< A E B )>` is right, therefore :g:`< A G B ) <g1:< A G B )>` is also :eq:`right <g1:< A E B ) = g1:< A G B )>`.
 

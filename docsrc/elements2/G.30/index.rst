@@ -24,6 +24,12 @@ G.30
 
    In any triangle, the greater angle is subtended by the greater side.
 
+.. signature:: theorem
+
+   | :fn:`greater_angle_greater_side <G.30>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`< A B C ) <g1:< A B C )>`, :g:`< B C A ) <g1:< B C A )>`)
+   | **given** :g:`< A B C > <g1:< A B C >>` be a triangle having :g:`< A B C ) <g1:< A B C )>` greater than :g:`< B C A ) <g1:< B C A )>`
+   | **prove** the side :g:`/ A C / <g1:/ A C />` is also greater than the side :g:`/ A B / <g1:/ A B />`
+
 .. picture:: g1.svg
    :alt: Proposition 19 figure
 
@@ -39,7 +45,7 @@ G.30
 
    Now :g:`/ A C / <g1:/ A C />` is not :eq:`equal <g1:/ A C / = g1:/ A B />` to :g:`/ A B / <g1:/ A B />`
 
-.. step:: assert [G.12] <G.12>
+.. step:: assert ∵ isosceles_base_angles <G.12>
 
    For then :g:`< A B C ) <g1:< A B C )>` would also have been :eq:`equal <g1:< A B C ) = g1:< A C B )>` to :g:`< A C B ) <g1:< A C B )>`
 
@@ -51,7 +57,7 @@ G.30
 
    Therefore :g:`/ A C / <g1:/ A C />` is not :eq:`equal <g1:/ A C / = g1:/ A B />` to :g:`/ A B / <g1:/ A B />`.
 
-.. step:: assert [G.29] <G.29>
+.. step:: assert ∵ greater_side_greater_angle <G.29>
 
    Neither is :g:`/ A C / <g1:/ A C />` less than :g:`/ A B / <g1:/ A B />`, for then :g:`< A B C ) <g1:< A B C )>` would also have been less than :g:`< A C B ) <g1:< A C B )>`
 

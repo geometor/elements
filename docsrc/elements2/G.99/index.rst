@@ -24,24 +24,22 @@ G.99
 
    In a circle the angles in the same segment are equal.
 
+.. signature:: theorem
+
+   | :fn:`circle_angles_segment <G.99>`\ (:g:`( A B C D ) <g1:( A B C D )>`, :g:`< B A D ) <g1:< B A D )>`, :g:`< B E D ) <g1:< B E D )>`, :g:`< B A E D ) <g1:< B A E D )>`)
+   | **given** :g:`( A B C D ) <g1:( A B C D )>` be a circle, let :g:`< B A D ) <g1:< B A D )>`, :g:`< B E D ) <g1:< B E D )>` be angles in the same segment :g:`< B A E D ) <g1:< B A E D )>`
+   | **prove** :g:`< B A D ) <g1:< B A D )>`, :g:`< B E D ) <g1:< B E D )>` are :eq:`equal <g1:< B A D ) = g1:< B E D )>` to one another
+
 .. picture:: g1.svg
    :alt: Diagram for Proposition 21
 
 .. step:: given
 
-   :g:`( A B C D ) <g1:( A B C D )>` be a circle
-
-.. step:: assert
-
-   Let :g:`< B A D ) <g1:< B A D )>`, :g:`< B E D ) <g1:< B E D )>` be angles in the same segment :g:`< B A E D ) <g1:< B A E D )>`
-
-.. step:: assert
-
-   :g:`< B A D ) <g1:< B A D )>`, :g:`< B E D ) <g1:< B E D )>` are :eq:`equal <g1:< B A D ) = g1:< B E D )>` to one another.
+   :g:`( A B C D ) <g1:( A B C D )>` be a circle, let :g:`< B A D ) <g1:< B A D )>`, :g:`< B E D ) <g1:< B E D )>` be angles in the same segment :g:`< B A E D ) <g1:< B A E D )>`
 
 .. step:: construct
 
-   For let the center of :g:`( A B C D ) <g1:( A B C D )>` be taken
+   Let the center of :g:`( A B C D ) <g1:( A B C D )>` be taken
 
 .. step:: assert
 
@@ -49,19 +47,19 @@ G.99
 
 .. step:: construct
 
-   **segment** :g:`/ B F / <g1:/ B F />`, :g:`/ F D / <g1:/ F D />`
+   :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`F <g1:F>`) → :g:`/ B F / <g1:/ B F />`, :fn:`segment <G.3>`\ (:g:`F <g1:F>`, :g:`D <g1:D>`) → :g:`/ F D / <g1:/ F D />`
 
 .. step:: assert
 
    Since :g:`< B F D ) <g1:< B F D )>` is at the center, and :g:`< B A D ) <g1:< B A D )>` at the circumference → and they have the same circumference :g:`( B C D ) <g1:( B C D )>` as base,
 
-.. step:: assert [G.98] <G.98>
+.. step:: assert ∵ inscribed_angle_theorem <G.98>
 
    Therefore :g:`< B F D ) <g1:< B F D )>` is double of :g:`< B A D ) <g1:< B A D )>`.
 
 .. step:: assert
 
-   For the same reason
+   The same reason
 
 .. step:: conclude
 

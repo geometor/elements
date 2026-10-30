@@ -24,6 +24,12 @@ G.58
 
    Construct, in a given angle, a parallelogram equal in area to a given polygon.
 
+.. signature:: problem
+
+   | :fn:`parallelogram_from_polygon <G.58>`\ (:g:`< A B C D > <g1:< A B C D >>`, :g:`< E ) <g1:< E )>`) → :g:`< K F L M > <g1:< K F L M >>`
+   | **given** :g:`< A B C D > <g1:< A B C D >>` be the given rectilineal figure and :g:`< E ) <g1:< E )>`
+   | **construct** construct, in the given angle :g:`< E ) <g1:< E )>`, a parallelogram :eq:`equal <g1:< K F L M > = g1:< A B C D >>` to the rectilineal figure :g:`< A B C D > <g1:< A B C D >>`
+
 .. picture:: g1.svg
    :alt: Folio 0359 Figure 1 - Proposition 45
 
@@ -33,21 +39,21 @@ G.58
 
 .. step:: construct
 
-   **segment** :g:`/ D B / <g1:/ D B />`
+   :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`B <g1:B>`) → :g:`/ D B / <g1:/ D B />`
 
-.. step:: construct [G.55] <G.55>
+.. step:: construct
 
-   Let the parallelogram :g:`< F K H G > <g1:< F K H G >>` be constructed :eq:`equal <g1:< F K H G > = g1:< A B D >>` to :g:`< A B D > <g1:< A B D >>`, in :g:`< H K F ) <g1:< H K F )>` which is :eq:`equal <g1:< H K F ) = g1:< E )>` to :g:`< E ) <g1:< E )>`
+   :fn:`parallelogram_from_triangle <G.55>`\ (:g:`< A B D > <g1:< A B D >>`, :g:`< E ) <g1:< E )>`) → :g:`< F K H G > <g1:< F K H G >>` (:eq:`equal <g1:< F K H G > = g1:< A B D >>`, :g:`< H K F ) <g1:< H K F )>` :eq:`equal <g1:< H K F ) = g1:< E )>`)
 
-.. step:: construct [G.57] <G.57>
+.. step:: construct
 
-   Let the parallelogram :g:`< G H M L > <g1:< G H M L >>` :eq:`equal <g1:< G H M L > = g1:< D B C >>` to :g:`< D B C > <g1:< D B C >>` be applied to :g:`/ G H / <g1:/ G H />`, in :g:`< G H M ) <g1:< G H M )>` which is :eq:`equal <g1:< G H M ) = g1:< E )>` to :g:`< E ) <g1:< E )>`.
+   :fn:`apply_parallelogram_on_segment <G.57>`\ (:g:`/ G H / <g1:/ G H />`, :g:`< D B C > <g1:< D B C >>`, :g:`< E ) <g1:< E )>`) → :g:`< G H M L > <g1:< G H M L >>` (:eq:`equal <g1:< G H M L > = g1:< D B C >>`, :g:`< G H M ) <g1:< G H M )>` :eq:`equal <g1:< G H M ) = g1:< E )>`)
 
-.. step:: assert [G.1] <G.1>
+.. step:: assert ∵ equal_transitive <G.1>
 
    Since :g:`< E ) <g1:< E )>` is :eq:`equal <g1:< E ) = g1:< H K F ) = g1:< G H M )>` to each of :g:`< H K F ) <g1:< H K F )>`, :g:`< G H M ) <g1:< G H M )>` → :g:`< H K F ) <g1:< H K F )>` is also :eq:`equal <g1:< H K F ) = g1:< G H M )>` to :g:`< G H M ) <g1:< G H M )>`.
 
-.. step:: assert
+.. step:: construct
 
    Let :g:`< K H G ) <g1:< K H G )>` be added to each
 
@@ -55,7 +61,7 @@ G.58
 
    Therefore :g:`< F K H ) <g1:< F K H )>`, :g:`< K H G ) <g1:< K H G )>` are equal to :g:`< K H G ) <g1:< K H G )>`, :g:`< G H M ) <g1:< G H M )>`.
 
-.. step:: assert [G.42] <G.42>
+.. step:: assert ∵ parallel_transversal_angles <G.42>
 
    :g:`< F K H ) <g1:< F K H )>`, :g:`< K H G ) <g1:< K H G )>` are equal to two right angles
 
@@ -67,39 +73,39 @@ G.58
 
    Thus, with a straight line :g:`/ G H / <g1:/ G H />`, and at :g:`H <g1:H>` on it, two straight lines :g:`/ K H / <g1:/ K H />`, :g:`/ H M / <g1:/ H M />` not lying on the same side make the adjacent angles equal to two right angles
 
-.. step:: assert [G.24] <G.24>
+.. step:: assert ∵ supplementary_angles_collinear <G.24>
 
    Therefore :g:`/ K H / <g1:/ K H />` is in a straight line with :g:`/ H M / <g1:/ H M />`.
 
-.. step:: assert [G.42] <G.42>
+.. step:: assert ∵ parallel_transversal_angles <G.42>
 
    And, since :g:`/ H G / <g1:/ H G />` falls upon the parallels :g:`/ K M / <g1:/ K M />`, :g:`/ F G / <g1:/ F G />`, the alternate angles :g:`< M H G ) <g1:< M H G )>`, :g:`< H G F ) <g1:< H G F )>` are :eq:`equal <g1:< M H G ) = g1:< H G F )>` to one another.
 
-.. step:: assert
+.. step:: construct
 
    Let :g:`< H G L ) <g1:< H G L )>` be added to each
 
-.. step:: assert [G.21] <G.21>
+.. step:: assert ∵ add_equals <G.21>
 
    Therefore :g:`< M H G ) <g1:< M H G )>`, :g:`< H G L ) <g1:< H G L )>` are equal to :g:`< H G F ) <g1:< H G F )>`, :g:`< H G L ) <g1:< H G L )>`.
 
-.. step:: assert [G.42] <G.42>
+.. step:: assert ∵ parallel_transversal_angles <G.42>
 
    :g:`< M H G ) <g1:< M H G )>`, :g:`< H G L ) <g1:< H G L )>` are equal to two right angles
 
-.. step:: assert [G.1] <G.1>
+.. step:: assert ∵ equal_transitive <G.1>
 
    Therefore :g:`< H G F ) <g1:< H G F )>`, :g:`< H G L ) <g1:< H G L )>` are also equal to two right angles.
 
-.. step:: assert [G.24] <G.24>
+.. step:: assert ∵ supplementary_angles_collinear <G.24>
 
    Therefore :g:`/ F G / <g1:/ F G />` is in a straight line with :g:`/ G L / <g1:/ G L />`.
 
-.. step:: assert [G.47] <G.47>
+.. step:: assert ∵ parallelogram_properties <G.47>
 
    And, since :g:`/ F K / <g1:/ F K />` is :eq:`equal <g1:/ F K / = g1:/ H G / = g1:/ M L />` and parallel to :g:`/ H G / <g1:/ H G />`.
 
-.. step:: assert [G.1, G.43] <G.1, G.43>
+.. step:: assert ∵ equal_transitive, parallel_transitive <G.1, G.43>
 
    And :g:`/ H G / <g1:/ H G />` to :g:`/ M L / <g1:/ M L />` also, :g:`/ K F / <g1:/ K F />` is also :eq:`equal <g1:/ K F / = g1:/ M L />` and parallel to :g:`/ M L / <g1:/ M L />`
 
@@ -107,7 +113,7 @@ G.58
 
    And :g:`/ K M / <g1:/ K M />`, :g:`/ F L / <g1:/ F L />` join them (at their extremities)
 
-.. step:: assert [G.46] <G.46>
+.. step:: assert ∵ join_equal_parallels <G.46>
 
    Therefore :g:`/ K M / <g1:/ K M />`, :g:`/ F L / <g1:/ F L />` are also :eq:`equal <g1:/ K M / = g1:/ F L />` and parallel.
 

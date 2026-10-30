@@ -24,6 +24,12 @@ G.317
 
    Given three commensurable magnitudes, to find their greatest common measure.
 
+.. signature:: problem
+
+   | :fn:`commensurable_magnitudes_find_x_4 <G.317>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`)
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` be the three given commensurable magnitudes
+   | **construct** PORISM. From this it is manifest that, if a magnitude measure three magnitudes, it will also measure their greatest common measure
+
 .. picture:: g1.svg
    :alt: Proposition 4 diagram
 
@@ -35,7 +41,7 @@ G.317
 
    Let the greatest common measure of the two magnitudes :g:`A <g1:A>`, :g:`B <g1:B>` be taken
 
-.. step:: assert [G.316] <G.316>
+.. step:: assert ∵ commensurable_magnitudes_find <G.316>
 
    Let it be :g:`D <g1:D>`
 
@@ -71,7 +77,7 @@ G.317
 
    Since :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` are commensurable, some magnitude will measure them, and this will of course measure :g:`A <g1:A>`, :g:`B <g1:B>` also ;
 
-.. step:: assert [G.316] <G.316>
+.. step:: assert ∵ commensurable_magnitudes_find <G.316>
 
    So that it will also measure the greatest common measure of :g:`A <g1:A>`, :g:`B <g1:B>`, namely :g:`D <g1:D>`.
 
@@ -87,7 +93,7 @@ G.317
 
    Now let their greatest common measure be taken
 
-.. step:: assert [G.316] <G.316>
+.. step:: assert ∵ commensurable_magnitudes_find <G.316>
 
    Let it be :g:`E <g1:E>`.
 
@@ -113,13 +119,9 @@ G.317
 
 .. step:: assert
 
-   If possible, let there be some magnitude :g:`F <g1:F>` greater than :g:`E <g1:E>`
+   If possible, let there be some magnitude :g:`F <g1:F>` greater than :g:`E <g1:E>`, and let it measure :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`.
 
-.. step:: assert
-
-   Let it measure :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`.
-
-.. step:: assert [G.316] <G.316>
+.. step:: assert ∵ commensurable_magnitudes_find <G.316>
 
    Since :g:`F <g1:F>` measures :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, it will also measure :g:`A <g1:A>`, :g:`B <g1:B>`, and will measure the greatest common measure of :g:`A <g1:A>`, :g:`B <g1:B>`.
 
@@ -135,7 +137,7 @@ G.317
 
    It measures :g:`C <g1:C>` also ;
 
-.. step:: assert [G.316] <G.316>
+.. step:: assert ∵ commensurable_magnitudes_find <G.316>
 
    Therefore :g:`F <g1:F>` measures :g:`C <g1:C>`, :g:`D <g1:D>` ; therefore :g:`F <g1:F>` will also measure the greatest common measure of :g:`C <g1:C>`, :g:`D <g1:D>`.
 

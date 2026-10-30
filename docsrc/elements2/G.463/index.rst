@@ -24,26 +24,35 @@ G.463
 
    If a straight line be at right angles to any plane, all the planes through it is at right angles to the same plane.
 
+.. signature:: theorem
+
+   | :fn:`straight_line_right <G.463>`\ ()
+   | **prove** all the planes through :g:`/ A B / <g1:/ A B />` are also at right angles to the plane of reference
+
 .. picture:: g1.svg
    :alt: Book XI, Proposition 18
 
 .. step:: assert
 
-   For let any straight line :g:`/ A B / <g1:/ A B />` be at right angles to the plane of reference
+   Let any straight line :g:`/ A B / <g1:/ A B />` be at right angles to the plane of reference
 
 .. step:: construct
 
-   For let the plane :g:`< D E > <g1:< D E >>` be drawn through :g:`/ A B / <g1:/ A B />`, let :g:`/ C E / <g1:/ C E />` be the common section of the plane :g:`< D E > <g1:< D E >>` and the plane of reference, let a point :g:`F <g1:F>` be taken at random on :g:`/ C E / <g1:/ C E />`
+   Let the plane :g:`< D E > <g1:< D E >>` be drawn through :g:`/ A B / <g1:/ A B />`
 
-.. step:: construct [G.19] <G.19>
+.. step:: construct
 
-   From :g:`F <g1:F>` let :g:`/ F G / <g1:/ F G />` be drawn in the plane :g:`< D E > <g1:< D E >>` at right angles to :g:`/ C E / <g1:/ C E />`.
+   Let :g:`/ C E / <g1:/ C E />` be the common section of the plane :g:`< D E > <g1:< D E >>` and the plane of reference, let a point :g:`F <g1:F>` be taken at random on :g:`/ C E / <g1:/ C E />`
+
+.. step:: construct
+
+   :fn:`perpendicular_at <G.19>`: From :g:`F <g1:F>` let :g:`/ F G / <g1:/ F G />` be drawn in the plane :g:`< D E > <g1:< D E >>` at right angles to :g:`/ C E / <g1:/ C E />`.
 
 .. step:: assert
 
    Since :g:`/ A B / <g1:/ A B />` is at right angles to the plane of reference,
 
-.. step:: assert [G.446] <G.446>
+.. step:: assert ∵ straight_line_right_def <G.446>
 
    :g:`/ A B / <g1:/ A B />` is also at right angles to all the straight lines which meet it and are in the plane of reference; so that it is also at right angles to :g:`/ C E / <g1:/ C E />`; therefore :g:`< A B F ) <g1:< A B F )>` is right.
 
@@ -51,7 +60,7 @@ G.463
 
    :g:`< G F B ) <g1:< G F B )>` is also right;
 
-.. step:: assert [G.40] <G.40>
+.. step:: assert ∵ corresponding_angles_parallel <G.40>
 
    Therefore :g:`/ A B / <g1:/ A B />` is parallel to :g:`/ F G / <g1:/ F G />`.
 
@@ -59,11 +68,11 @@ G.463
 
    :g:`/ A B / <g1:/ A B />` is at right angles to the plane of reference;
 
-.. step:: assert [G.451] <G.451>
+.. step:: assert ∵ straight_lines_parallel_xi_8 <G.451>
 
    Therefore :g:`/ F G / <g1:/ F G />` is also at right angles to the plane of reference.
 
-.. step:: assert [G.462] <G.462>
+.. step:: assert ∵ plane_right_angles_def <G.462>
 
    Now a plane is at right angles to a plane, when the straight lines drawn, in one of the planes, at right angles to the common section of the planes are at right angles to the remaining plane.
 

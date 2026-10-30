@@ -24,24 +24,22 @@ G.84
 
    If a point be taken within a circle, and more than two equal straight lines fall from the point on the circle, the point taken is the centre of the circle.
 
+.. signature:: theorem
+
+   | :fn:`point_taken_within <G.84>`\ (:g:`( A B C ) <g1:( A B C )>`, :g:`D <g1:D>`, :g:`/ D A / <g1:/ D A />`, :g:`/ D B / <g1:/ D B />`)
+   | **given** :g:`( A B C ) <g1:( A B C )>` be a circle and :g:`D <g1:D>` a point within it, from :g:`D <g1:D>` let more than two :eq:`equal <g1:/ D A / = g1:/ D B / = g1:/ D C />` straight lines, namely :g:`/ D A / <g1:/ D A />`, :g:`/ D B / <g1:/ D B />`, :g:`/ D C / <g1:/ D C />`, fall on :g:`( A B C ) <g1:( A B C )>`
+   | **prove** :g:`D <g1:D>` is the center of :g:`( A B C ) <g1:( A B C )>`
+
 .. picture:: g1.svg
    :alt: Diagram for Proposition 9
 
 .. step:: given
 
-   :g:`( A B C ) <g1:( A B C )>` be a circle and :g:`D <g1:D>` a point within it
-
-.. step:: assert
-
-   From :g:`D <g1:D>` let more than two :eq:`equal <g1:/ D A / = g1:/ D B / = g1:/ D C />` straight lines, namely :g:`/ D A / <g1:/ D A />`, :g:`/ D B / <g1:/ D B />`, :g:`/ D C / <g1:/ D C />`, fall on :g:`( A B C ) <g1:( A B C )>`
+   :g:`( A B C ) <g1:( A B C )>` be a circle and :g:`D <g1:D>` a point within it, from :g:`D <g1:D>` let more than two :eq:`equal <g1:/ D A / = g1:/ D B / = g1:/ D C />` straight lines, namely :g:`/ D A / <g1:/ D A />`, :g:`/ D B / <g1:/ D B />`, :g:`/ D C / <g1:/ D C />`, fall on :g:`( A B C ) <g1:( A B C )>`
 
 .. step:: construct
 
-   For let :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` be joined and :eq:`bisected <g1:/ A E / = g1:/ E B /; g1:/ B F / = g1:/ F C />` at :g:`E <g1:E>`, :g:`F <g1:F>`
-
-.. step:: construct
-
-   Let :g:`/ E D / <g1:/ E D />`, :g:`/ F D / <g1:/ F D />` be joined and drawn through to :g:`G <g1:G>`, :g:`K <g1:K>`, :g:`H <g1:H>`, :g:`L <g1:L>`.
+   Let :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` be joined and :eq:`bisected <g1:/ A E / = g1:/ E B /; g1:/ B F / = g1:/ F C />` at :g:`E <g1:E>`, :g:`F <g1:F>`, and let :g:`/ E D / <g1:/ E D />`, :g:`/ F D / <g1:/ F D />` be joined and drawn through to :g:`G <g1:G>`, :g:`K <g1:K>`, :g:`H <g1:H>`, :g:`L <g1:L>`.
 
 .. step:: assert
 
@@ -51,11 +49,11 @@ G.84
 
    And the base :g:`/ D A / <g1:/ D A />` is :eq:`equal <g1:/ D A / = g1:/ D B />` to the base :g:`/ D B / <g1:/ D B />`
 
-.. step:: assert [G.15] <G.15>
+.. step:: assert ∵ sss_congruence <G.15>
 
    Therefore :g:`< A E D ) <g1:< A E D )>` is :eq:`equal <g1:< A E D ) = g1:< B E D )>` to :g:`< B E D ) <g1:< B E D )>`.
 
-.. step:: assert [G.18] <G.18>
+.. step:: assert ∵ right_angle_perpendicular <G.18>
 
    Therefore each of :g:`< A E D ) <g1:< A E D )>`, :g:`< B E D ) <g1:< B E D )>` is :eq:`right <g1:< A E D ) = g1:< B E D )>`;
 
@@ -63,7 +61,7 @@ G.84
 
    Therefore :g:`/ G K / <g1:/ G K />` cuts :g:`/ A B / <g1:/ A B />` into two :eq:`equal <g1:/ A E / = g1:/ E B />` parts and at :eq:`right angles <g1:< A E D ) = g1:< B E D )>`.
 
-.. step:: assert [G.76] <G.76>
+.. step:: assert ∵ find_circle_center <G.76>
 
    Since, if in a circle a straight line cut a straight line into two equal parts and at right angles, the center of the circle is on the cutting straight line.
 
@@ -73,7 +71,7 @@ G.84
 
 .. step:: assert
 
-   For the same reason
+   The same reason
 
 .. step:: assert
 
@@ -83,7 +81,7 @@ G.84
 
    :g:`/ G K / <g1:/ G K />`, :g:`/ H L / <g1:/ H L />` have no other point common but :g:`D <g1:D>`
 
-.. step:: conclude
+.. step:: conclude ∵ circle_radii <G.2>
 
    Therefore :g:`D <g1:D>` is the center of :g:`( A B C ) <g1:( A B C )>`.
 

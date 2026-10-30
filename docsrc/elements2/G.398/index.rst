@@ -24,18 +24,23 @@ G.398
 
    If from a straight line there be subtracted a straight line which is incommensurable in square with the whole, and which with the whole makes the sum of the squares on them medial, but twice the rectangle contained by them rational, the remainder is irrational: and let it be called:term:`**that which produces with a rational area a medial whole** <side-of-a-medial-minus-a-rational-area>`.
 
+.. signature:: theorem
+
+   | :fn:`straight_line_there_x_77 <G.398>`\ ()
+   | **prove** the remainder :g:`/ A C / <g1:/ A C />` is the irrational straight line aforesaid
+
 .. picture:: g1.svg
    :alt: Proposition 77 Diagram
 
-.. step:: assert [G.349] <G.349>
+.. step:: construct
 
-   For from :g:`/ A B / <g1:/ A B />` let there be subtracted :g:`/ B C / <g1:/ B C />` which is incommensurable in square with :g:`/ A B / <g1:/ A B />` and fulfils the given conditions
+   :fn:`find_straight_lines_x_34 <G.349>`: From :g:`/ A B / <g1:/ A B />` let there be subtracted :g:`/ B C / <g1:/ B C />` which is incommensurable in square with :g:`/ A B / <g1:/ A B />` and fulfils the given conditions
 
 .. step:: assert
 
    Since the sum of the squares on :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` is medial, while twice the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` is rational,
 
-.. step:: assert [G.68, G.329] <G.68, G.329>
+.. step:: assert ∵ square_of_difference, incommensurable_magnitudes_added <G.68, G.329>
 
    Therefore the squares on :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are incommensurable with twice the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` ; therefore the remainder also, the square on :g:`/ A C / <g1:/ A C />`, is incommensurable with twice the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`.
 

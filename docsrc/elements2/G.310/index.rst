@@ -24,20 +24,26 @@ G.310
 
    If as many numbers as we please be in continued proportion, and there be subtracted from the second and the last numbers equal to the first, then, as the excess of the second is to the first, so will the excess of the last be to all those before it.
 
+.. signature:: theorem
+
+   | :fn:`many_numbers_please_ix_35 <G.310>`\ (:g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />`, :g:`D <g1:D>`, :g:`/ E F / <g1:/ E F />`)
+   | **given** there be as many numbers as we please in continued proportion, :g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />`, :g:`D <g1:D>`, :g:`/ E F / <g1:/ E F />`, beginning from :g:`A <g1:A>` as least, let there be subtracted from :g:`/ B C / <g1:/ B C />` and :g:`/ E F / <g1:/ E F />` the numbers :g:`/ B G / <g1:/ B G />`, :g:`/ F H / <g1:/ F H />`, each :eq:`equal <g1:/ B G / = g1:/ F H / = g1:A>` to :g:`A <g1:A>`
+   | **prove** as the excess of the second is to the first, so is the excess of the last to all those before it
+
 .. picture:: g1.svg
    :alt: Proposition 35 Diagram
 
 .. step:: given
 
-   there be as many numbers as we please in continued proportion, :g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />`, :g:`D <g1:D>`, :g:`/ E F / <g1:/ E F />`, beginning from :g:`A <g1:A>` as least
+   there be as many numbers as we please in continued proportion, :g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />`, :g:`D <g1:D>`, :g:`/ E F / <g1:/ E F />`, beginning from :g:`A <g1:A>` as least, let there be subtracted from :g:`/ B C / <g1:/ B C />` and :g:`/ E F / <g1:/ E F />` the numbers :g:`/ B G / <g1:/ B G />`, :g:`/ F H / <g1:/ F H />`, each :eq:`equal <g1:/ B G / = g1:/ F H / = g1:A>` to :g:`A <g1:A>`
 
 .. step:: assert
 
-   Let there be subtracted from :g:`/ B C / <g1:/ B C />` and :g:`/ E F / <g1:/ E F />` the numbers :g:`/ B G / <g1:/ B G />`, :g:`/ F H / <g1:/ F H />`, each :eq:`equal <g1:/ B G / = g1:/ F H / = g1:A>` to :g:`A <g1:A>`
+   I say that, as :g:`/ C G / <g1:/ C G />` is to :g:`A <g1:A>`, so is :g:`/ E H / <g1:/ E H />` to :g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />`, :g:`D <g1:D>`.
 
 .. step:: construct
 
-   For let :g:`/ F K / <g1:/ F K />` be made :eq:`equal <g1:/ F K / = g1:/ B C />` to :g:`/ B C / <g1:/ B C />`, and :g:`/ F L / <g1:/ F L />` :eq:`equal <g1:/ F L / = g1:D>` to :g:`D <g1:D>`.
+   :fn:`cut_equal_segment <G.9>`\ (:g:`/ B C / <g1:/ B C />`, and :g:`/ F L / <g1:/ F L />` :eq:`equal <g1:/ F L / = g1:D>` to :g:`D <g1:D>`) → :g:`/ F K / <g1:/ F K />` (:eq:`equal <g1:/ F K / = g1:/ B C />`)
 
 .. step:: assert
 
@@ -55,11 +61,11 @@ G.310
 
    Therefore, as :g:`/ E F / <g1:/ E F />` is to :g:`/ F L / <g1:/ F L />`, so is :g:`/ F L / <g1:/ F L />` to :g:`/ F K / <g1:/ F K />`, and :g:`/ F K / <g1:/ F K />` to :g:`/ F H / <g1:/ F H />`.
 
-.. step:: assert [G.211, G.213] <G.211, G.213>
+.. step:: assert ∵ whole_whole_number, numbers_proportional_proportional <G.211, G.213>
 
    Separando, as :g:`/ E L / <g1:/ E L />` is to :g:`/ F L / <g1:/ F L />`, so is :g:`/ K L / <g1:/ K L />` to :g:`/ F K / <g1:/ F K />`, and :g:`/ H K / <g1:/ H K />` to :g:`/ F H / <g1:/ F H />`.
 
-.. step:: assert [G.212] <G.212>
+.. step:: assert ∵ there_many_numbers <G.212>
 
    Therefore also, as one of the antecedents is to one of the consequents, so are all the antecedents to all the consequents; therefore, as :g:`/ H K / <g1:/ H K />` is to :g:`/ F H / <g1:/ F H />`, so are :g:`/ E L / <g1:/ E L />`, :g:`/ K L / <g1:/ K L />`, :g:`/ H K / <g1:/ H K />` to :g:`/ F L / <g1:/ F L />`, :g:`/ F K / <g1:/ F K />`, :g:`/ F H / <g1:/ F H />`.
 

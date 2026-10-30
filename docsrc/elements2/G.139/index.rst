@@ -24,28 +24,37 @@ G.139
 
    If a first magnitude have to a second the same ratio as a third to a fourth, any equimultiples whatever of the first and third will also have the same ratio to any equimultiples whatever of the second and fourth respectively, taken in corresponding order.
 
+.. signature:: theorem
+
+   | :fn:`magnitude_ratio_equimultiples <G.139>`\ ()
+   | **prove** as :g:`E <g1:E>` is to :g:`G <g1:G>`, so is :g:`F <g1:F>` to :g:`H <g1:H>`
+
 .. picture:: g1.svg
    :alt: Proposition 4 diagram
 
 .. step:: assert
 
-   For let a first magnitude :g:`A <g1:A>` have to a second :g:`B <g1:B>` the same ratio as a third :g:`C <g1:C>` to a fourth :g:`D <g1:D>`
+   Let a first magnitude :g:`A <g1:A>` have to a second :g:`B <g1:B>` the same ratio as a third :g:`C <g1:C>` to a fourth :g:`D <g1:D>`
 
 .. step:: construct
 
    And let equimultiples :g:`E <g1:E>`, :g:`F <g1:F>` be taken of :g:`A <g1:A>`, :g:`C <g1:C>`, and :g:`G <g1:G>`, :g:`H <g1:H>` other, chance, equimultiples of :g:`B <g1:B>`, :g:`D <g1:D>`
 
+.. step:: assert
+
+   I say that, as :g:`E <g1:E>` is to :g:`G <g1:G>`, so is :g:`F <g1:F>` to :g:`H <g1:H>`.
+
 .. step:: construct
 
-   For let equimultiples :g:`K <g1:K>`, :g:`L <g1:L>` be taken of :g:`E <g1:E>`, :g:`F <g1:F>`, and other, chance, equimultiples :g:`M <g1:M>`, :g:`N <g1:N>` of :g:`G <g1:G>`, :g:`H <g1:H>`.
+   Let equimultiples :g:`K <g1:K>`, :g:`L <g1:L>` be taken of :g:`E <g1:E>`, :g:`F <g1:F>`, and other, chance, equimultiples :g:`M <g1:M>`, :g:`N <g1:N>` of :g:`G <g1:G>`, :g:`H <g1:H>`.
 
-.. step:: assert [G.137] <G.137>
+.. step:: assert ∵ magnitude_multiple_equimultiples <G.137>
 
    Since :g:`E <g1:E>` is the same multiple of :g:`A <g1:A>` that :g:`F <g1:F>` is of :g:`C <g1:C>`, and equimultiples :g:`K <g1:K>`, :g:`L <g1:L>` of :g:`E <g1:E>`, :g:`F <g1:F>` have been taken → therefore :g:`K <g1:K>` is the same multiple of :g:`A <g1:A>` that :g:`L <g1:L>` is of :g:`C <g1:C>`.
 
 .. step:: assert
 
-   For the same reason
+   The same reason
 
 .. step:: assert
 
@@ -55,7 +64,7 @@ G.139
 
    And, since, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`, and of :g:`A <g1:A>`, :g:`C <g1:C>` equimultiples :g:`K <g1:K>`, :g:`L <g1:L>` have been taken, and of :g:`B <g1:B>`, :g:`D <g1:D>` other, chance, equimultiples :g:`M <g1:M>`, :g:`N <g1:N>`,
 
-.. step:: assert [G.138] <G.138>
+.. step:: assert ∵ magnitudes_said_ratio_def <G.138>
 
    Therefore, if :g:`K <g1:K>` is in excess of :g:`M <g1:M>`, :g:`L <g1:L>` also is in excess of :g:`N <g1:N>`, if it is :eq:`equal <g1:K = g1:M>`, :eq:`equal <g1:L = g1:N>`, and if less, less.
 
@@ -63,7 +72,7 @@ G.139
 
    :g:`K <g1:K>`, :g:`L <g1:L>` are equimultiples of :g:`E <g1:E>`, :g:`F <g1:F>`, and :g:`M <g1:M>`, :g:`N <g1:N>` other, chance, equimultiples of :g:`G <g1:G>`, :g:`H <g1:H>`
 
-.. step:: conclude [G.138] <G.138>
+.. step:: conclude ∵ magnitudes_said_ratio_def <G.138>
 
    Therefore, as :g:`E <g1:E>` is to :g:`G <g1:G>`, so is :g:`F <g1:F>` to :g:`H <g1:H>`.
 

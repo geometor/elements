@@ -24,12 +24,17 @@ G.206
 
    If a number be that part of a number, which a number subtracted is of a number subtracted, the remainder is the same part of the remainder that the whole is of the whole.
 
+.. signature:: theorem
+
+   | :fn:`number_part_number_vii_7 <G.206>`\ ()
+   | **prove** the remainder :g:`/ E B / <g1:/ E B />` is also the same part of the remainder :g:`/ F D / <g1:/ F D />` that the whole :g:`/ A B / <g1:/ A B />` is of the whole :g:`/ C D / <g1:/ C D />`
+
 .. picture:: g1.svg
    :alt: Book VII, Proposition 7
 
 .. step:: assert
 
-   For let the number :g:`/ A B / <g1:/ A B />` be that part of the number :g:`/ C D / <g1:/ C D />` which :g:`/ A E / <g1:/ A E />` subtracted is of :g:`/ C F / <g1:/ C F />` subtracted
+   Let the number :g:`/ A B / <g1:/ A B />` be that part of the number :g:`/ C D / <g1:/ C D />` which :g:`/ A E / <g1:/ A E />` subtracted is of :g:`/ C F / <g1:/ C F />` subtracted
 
 .. step:: assert
 
@@ -39,7 +44,7 @@ G.206
 
    Now since, whatever part :g:`/ A E / <g1:/ A E />` is of :g:`/ C F / <g1:/ C F />`, the same part also is :g:`/ E B / <g1:/ E B />` of :g:`/ G C / <g1:/ G C />`,
 
-.. step:: assert [G.204] <G.204>
+.. step:: assert ∵ number_part_number <G.204>
 
    Therefore, whatever part :g:`/ A E / <g1:/ A E />` is of :g:`/ C F / <g1:/ C F />`, the same part also is :g:`/ A B / <g1:/ A B />` of :g:`/ G F / <g1:/ G F />`.
 
@@ -55,7 +60,7 @@ G.206
 
    Therefore :g:`/ G F / <g1:/ G F />` is :eq:`equal <g1:/ G F / = g1:/ C D />` to :g:`/ C D / <g1:/ C D />`.
 
-.. step:: assert
+.. step:: construct
 
    Let :g:`/ C F / <g1:/ C F />` be subtracted from each
 

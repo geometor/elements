@@ -11,7 +11,7 @@ G.327 — Code
 
 .. enunciation::
 
-   If four straight lines be proportional, and the square on the first be greater than the square on the second by the square on a straight line commensurable with the first, the square on the third is greater than the square on the fourth by the square on a straight line commensurable with the third.
+   If four straight lines be proportional, and the square on the first be greater than the square on the second by the square on a straight line commensurable with the first, the square on the third is greater than the square on the fourth by the square on a straight line commensurable with the third. And, if the square on the first be greater than the square on the second by the square on a straight line incommensurable with the first, the square on the third is greater than the square on the fourth by the square on a straight line incommensurable with the third.
 
 .. picture:: g1.svg
 

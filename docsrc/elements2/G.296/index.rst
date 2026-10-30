@@ -24,26 +24,31 @@ G.296
 
    If as many odd numbers as we please be added together, and their multitude be odd, the whole is odd.
 
+.. signature:: theorem
+
+   | :fn:`many_odd_numbers_ix_23 <G.296>`\ ()
+   | **prove** the whole :g:`/ A D / <g1:/ A D />` is also odd
+
 .. picture:: g1.svg
    :alt: Book IX, Proposition 23
 
-.. step:: assert
+.. step:: construct
 
-   For let as many odd numbers as we please, :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ C D / <g1:/ C D />`, the multitude of which is odd, be added together
+   Let as many odd numbers as we please, :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ C D / <g1:/ C D />`, the multitude of which is odd, be added together
 
-.. step:: assert
+.. step:: construct
 
    Let the unit :g:`/ D E / <g1:/ D E />` be subtracted from :g:`/ C D / <g1:/ C D />`
 
-.. step:: assert [G.294] <G.294>
+.. step:: assert ∵ odd_number_divisible_def <G.294>
 
    Therefore the remainder :g:`/ C E / <g1:/ C E />` is even.
 
-.. step:: assert [G.295] <G.295>
+.. step:: assert ∵ many_odd_numbers <G.295>
 
    :g:`/ A C / <g1:/ A C />` is also even ;
 
-.. step:: assert [G.293] <G.293>
+.. step:: assert ∵ many_even_numbers <G.293>
 
    Therefore the whole :g:`/ A E / <g1:/ A E />` is also even.
 
@@ -51,7 +56,7 @@ G.296
 
    :g:`/ D E / <g1:/ D E />` is an unit.
 
-.. step:: conclude [G.294] <G.294>
+.. step:: conclude ∵ odd_number_divisible_def <G.294>
 
    Therefore :g:`/ A D / <g1:/ A D />` is odd.
 

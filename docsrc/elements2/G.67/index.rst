@@ -24,34 +24,39 @@ G.67
 
    If a straight line be bisected and a straight line be added to it in a straight line, the rectangle contained by the whole with the added straight line and the added straight line together with the square on the half is equal to the square on the straight line made up of the half and the added straight line.
 
+.. signature:: theorem
+
+   | :fn:`bisected_and_extended_segment <G.67>`\ ()
+   | **prove** the rectangle contained by :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` together with the square on :g:`/ C B / <g1:/ C B />` is equal to the square on :g:`/ C D / <g1:/ C D />`
+
 .. picture:: g1.svg
    :alt: Diagram
 
-.. step:: assert
+.. step:: construct
 
-   For let a straight line :g:`/ A B / <g1:/ A B />` be :eq:`bisected <g1:/ A C / = g1:/ C B />` at :g:`C <g1:C>`
-
-.. step:: assert
-
-   Let a straight line :g:`/ B D / <g1:/ B D />` be added to it in a straight line
-
-.. step:: construct [G.59] <G.59>
-
-   For let the square :g:`< C E F D > <g1:< C E F D >>` be described on :g:`/ C D / <g1:/ C D />`.
+   Let a straight line :g:`/ A B / <g1:/ A B />` be :eq:`bisected <g1:/ A C / = g1:/ C B />` at :g:`C <g1:C>`, and let a straight line :g:`/ B D / <g1:/ B D />` be added to it in a straight line
 
 .. step:: construct
 
-   **segment** :g:`/ D E / <g1:/ D E />`
+   :fn:`square_on_segment <G.59>`: Let the square :g:`< C E F D > <g1:< C E F D >>` be described on :g:`/ C D / <g1:/ C D />`.
 
-.. step:: construct [G.44] <G.44>
+.. step:: construct
 
-   Through :g:`B <g1:B>` let :g:`/ B G / <g1:/ B G />` be drawn parallel to either :g:`/ E C / <g1:/ E C />` or :g:`/ D F / <g1:/ D F />`, through :g:`H <g1:H>` let :g:`/ K M / <g1:/ K M />` be drawn parallel to either :g:`/ A B / <g1:/ A B />` or :g:`/ E F / <g1:/ E F />`, and further through :g:`A <g1:A>` let :g:`/ A K / <g1:/ A K />` be drawn parallel to either :g:`/ C L / <g1:/ C L />` or :g:`/ D M / <g1:/ D M />`.
+   :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`E <g1:E>`) → :g:`/ D E / <g1:/ D E />`
 
-.. step:: assert [G.49] <G.49>
+.. step:: construct
+
+   :fn:`parallel_line <G.44>`\ (:g:`B <g1:B>`, :g:`/ E C / <g1:/ E C />` or :g:`/ D F / <g1:/ D F />`) → :g:`/ B G / <g1:/ B G />`
+
+.. step:: construct
+
+   :fn:`parallel_line <G.44>`\ (:g:`H <g1:H>`, :g:`/ A B / <g1:/ A B />` or :g:`/ E F / <g1:/ E F />`, and further through :g:`A <g1:A>` let :g:`/ A K / <g1:/ A K />` be drawn parallel to either :g:`/ C L / <g1:/ C L />` or :g:`/ D M / <g1:/ D M />`) → :g:`/ K M / <g1:/ K M />`
+
+.. step:: assert ∵ parallelograms_equal_bases <G.49>
 
    Since :g:`/ A C / <g1:/ A C />` is :eq:`equal <g1:/ A C / = g1:/ C B />` to :g:`/ C B / <g1:/ C B />` → :g:`< A L > <g1:< A L >>` is also :eq:`equal <g1:< A L > = g1:< C H >>` to :g:`< C H > <g1:< C H >>`.
 
-.. step:: assert [G.56] <G.56>
+.. step:: assert ∵ parallelogram_complements <G.56>
 
    :g:`< C H > <g1:< C H >>` is :eq:`equal <g1:< C H > = g1:< H F >>` to :g:`< H F > <g1:< H F >>`.
 
@@ -59,7 +64,7 @@ G.67
 
    Therefore :g:`< A L > <g1:< A L >>` is also :eq:`equal <g1:< A L > = g1:< H F >>` to :g:`< H F > <g1:< H F >>`.
 
-.. step:: assert
+.. step:: construct
 
    Let :g:`< C M > <g1:< C M >>` be added to each
 
@@ -75,7 +80,7 @@ G.67
 
    Therefore the gnomon :g:`< N O P > <g1:< N O P >>` is also equal to the rectangle :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />`.
 
-.. step:: assert
+.. step:: construct
 
    Let :g:`< L G > <g1:< L G >>`, which is equal to the square on :g:`/ B C / <g1:/ B C />`, be added to each
 

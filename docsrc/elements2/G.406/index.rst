@@ -23,6 +23,10 @@ G.406
 
    Given a rational straight line and an apotome, if the square on the whole be greater than the square on the annex by the square on a straight line commensurable in length with the whole, and the whole be commensurable in length with the rational straight line set out, let the apotome be called a:term:`**first apotome** <first-apotome>`.
 
+.. signature:: def
+
+   | :fn:`rational_straight_line_def_x_def_iii_1 <G.406>`
+
 Required for
 ------------
 

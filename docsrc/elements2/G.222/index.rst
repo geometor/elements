@@ -23,6 +23,10 @@ G.222
 
    A number is said to:term:`**multiply** <multiply>` a number when that which is multiplied is added to itself as many times as there are units in the other, and thus some number is produced.
 
+.. signature:: def
+
+   | :fn:`number_said_multiply_def <G.222>`
+
 Required for
 ------------
 

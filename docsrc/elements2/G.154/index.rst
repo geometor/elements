@@ -24,6 +24,12 @@ G.154
 
    If magnitudes be proportional componendo, they is proportional separando.
 
+.. signature:: theorem
+
+   | :fn:`magnitudes_proportional_componendo <G.154>`\ (:g:`/ E B / <g1:/ E B />`, :g:`/ C D / <g1:/ C D />`, :g:`/ F D / <g1:/ F D />`, :g:`/ A B / <g1:/ A B />`)
+   | **given** $AB$, :g:`/ E B / <g1:/ E B />`, :g:`/ C D / <g1:/ C D />`, :g:`/ F D / <g1:/ F D />` be magnitudes proportional *componendo*, so that, as :g:`/ A B / <g1:/ A B />` is to :g:`/ E B / <g1:/ E B />`, so is :g:`/ C D / <g1:/ C D />` to :g:`/ F D / <g1:/ F D />`
+   | **prove** they will also be proportional :term:`*separando* <separando>`, that is, as :g:`/ A E / <g1:/ A E />` is to :g:`/ E B / <g1:/ E B />`, so is :g:`/ C F / <g1:/ C F />` to :g:`/ F D / <g1:/ F D />`
+
 .. picture:: g1.svg
    :alt: Proposition 17 diagram of line segments
 
@@ -33,9 +39,9 @@ G.154
 
 .. step:: construct
 
-   For of :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />`, :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />` let equimultiples :g:`/ G H / <g1:/ G H />`, :g:`/ H K / <g1:/ H K />`, :g:`/ L M / <g1:/ L M />`, :g:`/ M N / <g1:/ M N />` be taken, and of :g:`/ E B / <g1:/ E B />`, :g:`/ F D / <g1:/ F D />` other, chance, equimultiples, :g:`/ K O / <g1:/ K O />`, :g:`/ N P / <g1:/ N P />`.
+   Of :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />`, :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />` let equimultiples :g:`/ G H / <g1:/ G H />`, :g:`/ H K / <g1:/ H K />`, :g:`/ L M / <g1:/ L M />`, :g:`/ M N / <g1:/ M N />` be taken, and of :g:`/ E B / <g1:/ E B />`, :g:`/ F D / <g1:/ F D />` other, chance, equimultiples, :g:`/ K O / <g1:/ K O />`, :g:`/ N P / <g1:/ N P />`.
 
-.. step:: assert [G.135] <G.135>
+.. step:: assert ∵ there_number_magnitudes <G.135>
 
    Since :g:`/ G H / <g1:/ G H />` is the same multiple of :g:`/ A E / <g1:/ A E />` that :g:`/ H K / <g1:/ H K />` is of :g:`/ E B / <g1:/ E B />` → therefore :g:`/ G H / <g1:/ G H />` is the same multiple of :g:`/ A E / <g1:/ A E />` that :g:`/ G K / <g1:/ G K />` is of :g:`/ A B / <g1:/ A B />`.
 
@@ -47,7 +53,7 @@ G.154
 
    Therefore :g:`/ G K / <g1:/ G K />` is the same multiple of :g:`/ A B / <g1:/ A B />` that :g:`/ L M / <g1:/ L M />` is of :g:`/ C F / <g1:/ C F />`.
 
-.. step:: assert [G.135] <G.135>
+.. step:: assert ∵ there_number_magnitudes <G.135>
 
    Since :g:`/ L M / <g1:/ L M />` is the same multiple of :g:`/ C F / <g1:/ C F />` that :g:`/ M N / <g1:/ M N />` is of :g:`/ F D / <g1:/ F D />` → therefore :g:`/ L M / <g1:/ L M />` is the same multiple of :g:`/ C F / <g1:/ C F />` that :g:`/ L N / <g1:/ L N />` is of :g:`/ C D / <g1:/ C D />`.
 
@@ -63,7 +69,7 @@ G.154
 
    Therefore :g:`/ G K / <g1:/ G K />`, :g:`/ L N / <g1:/ L N />` are equimultiples of :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`.
 
-.. step:: assert [G.136] <G.136>
+.. step:: assert ∵ magnitude_multiple_fifth <G.136>
 
    Since :g:`/ H K / <g1:/ H K />` is the same multiple of :g:`/ E B / <g1:/ E B />` that :g:`/ M N / <g1:/ M N />` is of :g:`/ F D / <g1:/ F D />`, and :g:`/ K O / <g1:/ K O />` is also the same multiple of :g:`/ E B / <g1:/ E B />` that :g:`/ N P / <g1:/ N P />` is of :g:`/ F D / <g1:/ F D />` → therefore the sum :g:`/ H O / <g1:/ H O />` is also the same multiple of :g:`/ E B / <g1:/ E B />` that :g:`/ M P / <g1:/ M P />` is of :g:`/ F D / <g1:/ F D />`.
 
@@ -75,7 +81,7 @@ G.154
 
    Therefore, if :g:`/ G K / <g1:/ G K />` is in excess of :g:`/ H O / <g1:/ H O />`, :g:`/ L N / <g1:/ L N />` is also in excess of :g:`/ M P / <g1:/ M P />`, if :eq:`equal <g1:/ G K / = g1:/ H O />`, :eq:`equal <g1:/ L N / = g1:/ M P />`, and if less, less.
 
-.. step:: assert
+.. step:: construct
 
    Let :g:`/ G K / <g1:/ G K />` be in excess of :g:`/ H O / <g1:/ H O />`; then, if :g:`/ H K / <g1:/ H K />` be subtracted from each,
 

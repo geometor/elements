@@ -24,16 +24,18 @@ G.241
 
    If there be as many numbers as we please in continued proportion, and the extremes of them be prime to one another, the numbers are the least of those which have the same ratio with them.
 
+.. signature:: theorem
+
+   | :fn:`there_many_numbers_viii_1 <G.241>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`)
+   | **given** there be as many numbers as we please, :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, in continued proportion, let the extremes of them :g:`A <g1:A>`, :g:`D <g1:D>` be prime to one another
+   | **prove** :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` are the least of those which have the same ratio with them
+
 .. picture:: g1.svg
    :alt: Proposition 1 Diagram
 
 .. step:: given
 
-   there be as many numbers as we please, :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, in continued proportion
-
-.. step:: assert
-
-   Let the extremes of them :g:`A <g1:A>`, :g:`D <g1:D>` be prime to one another
+   there be as many numbers as we please, :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, in continued proportion, let the extremes of them :g:`A <g1:A>`, :g:`D <g1:D>` be prime to one another
 
 .. step:: assert
 
@@ -43,11 +45,11 @@ G.241
 
    Since :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` are in the same ratio with :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>`, :g:`H <g1:H>`, and the multitude of the numbers :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` is equal to the multitude of the numbers :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>`, :g:`H <g1:H>`,
 
-.. step:: assert [G.214] <G.214>
+.. step:: assert ∵ there_many_numbers_vii_14 <G.214>
 
    Therefore, :term:`*ex aequali* <ex-aequali>`, as :g:`A <g1:A>` is to :g:`D <g1:D>`, so is :g:`E <g1:E>` to :g:`H <g1:H>`.
 
-.. step:: assert [G.221, G.220] <G.221, G.220>
+.. step:: assert ∵ numbers_prime_least, least_numbers_ratio <G.221, G.220>
 
    :g:`A <g1:A>`, :g:`D <g1:D>` are prime, primes are also least, and the least numbers measure those which have the same ratio the same number of times, the greater the greater and the less the less, that is, the antecedent the antecedent and the consequent the consequent.
 

@@ -24,6 +24,12 @@ G.286
 
    If three numbers in continued proportion be the least of those which have the same ratio with them, any two whatever added together is prime to the remaining number.
 
+.. signature:: theorem
+
+   | :fn:`numbers_continued_proportion_ix_15 <G.286>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`)
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, three numbers in continued proportion, be the least of those which have the same ratio with them
+   | **prove** any two of the numbers :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` whatever added together are prime to the remaining number, namely :g:`A <g1:A>`, :g:`B <g1:B>` to :g:`C <g1:C>`
+
 .. picture:: g1.svg
    :alt: Proposition 15 diagram
 
@@ -39,11 +45,11 @@ G.286
 
    And further :g:`A <g1:A>`, :g:`C <g1:C>` to :g:`B <g1:B>`.
 
-.. step:: construct [G.242] <G.242>
+.. step:: construct
 
-   For let two numbers :g:`/ D E / <g1:/ D E />`, :g:`/ E F / <g1:/ E F />`, the least of those which have the same ratio with :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, be taken.
+   :fn:`find_numbers_continued <G.242>`: Let two numbers :g:`/ D E / <g1:/ D E />`, :g:`/ E F / <g1:/ E F />`, the least of those which have the same ratio with :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, be taken.
 
-.. step:: assert [G.242] <G.242>
+.. step:: assert ∵ find_numbers_continued <G.242>
 
    It is then manifest that :g:`/ D E / <g1:/ D E />` by multiplying itself has made :g:`A <g1:A>`, and by multiplying :g:`/ E F / <g1:/ E F />` has made :g:`B <g1:B>`, and, further, :g:`/ E F / <g1:/ E F />` by multiplying itself has made :g:`C <g1:C>`.
 
@@ -51,11 +57,11 @@ G.286
 
    Since :g:`/ D E / <g1:/ D E />`, :g:`/ E F / <g1:/ E F />` are least,
 
-.. step:: assert [G.223] <G.223>
+.. step:: assert ∵ least_numbers_ratio_vii_22 <G.223>
 
    They are prime to one another.
 
-.. step:: assert [G.229] <G.229>
+.. step:: assert ∵ numbers_prime_sum <G.229>
 
    But, if two numbers be prime to one another, their sum is also prime to each .
 
@@ -71,15 +77,15 @@ G.286
 
    Therefore :g:`/ D F / <g1:/ D F />`, :g:`/ D E / <g1:/ D E />` are prime to :g:`/ E F / <g1:/ E F />`.
 
-.. step:: assert [G.225] <G.225>
+.. step:: assert ∵ numbers_prime_number_vii_24 <G.225>
 
    But, if two numbers be prime to any number, their product is also prime to the other .
 
-.. step:: assert [G.226] <G.226>
+.. step:: assert ∵ numbers_prime_product <G.226>
 
    So that the product of :g:`/ D F / <g1:/ D F />`, :g:`/ D E / <g1:/ D E />` is prime to :g:`/ E F / <g1:/ E F />` ; hence the product of :g:`/ D F / <g1:/ D F />`, :g:`/ D E / <g1:/ D E />` is also prime to the square on :g:`/ E F / <g1:/ E F />`.
 
-.. step:: assert [G.64] <G.64>
+.. step:: assert ∵ rectangle_whole_and_part <G.64>
 
    The product of :g:`/ D F / <g1:/ D F />`, :g:`/ D E / <g1:/ D E />` is the square on :g:`/ D E / <g1:/ D E />` together with the product of :g:`/ D E / <g1:/ D E />`, :g:`/ E F / <g1:/ E F />` .
 
@@ -107,11 +113,11 @@ G.286
 
    Since :g:`/ D F / <g1:/ D F />` is prime to each of the numbers :g:`/ D E / <g1:/ D E />`, :g:`/ E F / <g1:/ E F />`,
 
-.. step:: assert [G.225, G.226] <G.225, G.226>
+.. step:: assert ∵ numbers_prime_number_vii_24, numbers_prime_product <G.225, G.226>
 
    The square on :g:`/ D F / <g1:/ D F />` is also prime to the product of :g:`/ D E / <g1:/ D E />`, :g:`/ E F / <g1:/ E F />`.
 
-.. step:: assert [G.65] <G.65>
+.. step:: assert ∵ square_of_sum <G.65>
 
    The squares on :g:`/ D E / <g1:/ D E />`, :g:`/ E F / <g1:/ E F />` together with twice the product of :g:`/ D E / <g1:/ D E />`, :g:`/ E F / <g1:/ E F />` are equal to the square on :g:`/ D F / <g1:/ D F />` .
 

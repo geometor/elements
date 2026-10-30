@@ -24,28 +24,29 @@ G.62
 
    If there be two straight lines, and one of them be cut into any number of segments whatever, the rectangle contained by the two straight lines is equal to the rectangles contained by the uncut straight line and each of the segments.
 
+.. signature:: theorem
+
+   | :fn:`distribute_rectangle <G.62>`\ ()
+   | **prove** the rectangle contained by :g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />` is equal to the rectangle contained by :g:`A <g1:A>`, :g:`/ B D / <g1:/ B D />`, that contained by :g:`A <g1:A>`, :g:`/ D E / <g1:/ D E />` and that contained by :g:`A <g1:A>`, :g:`/ E C / <g1:/ E C />`
+
 .. picture:: g1.svg
    :alt: Diagram
 
-.. step:: given
+.. step:: construct
 
-   :g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />` be two straight lines
+   Let :g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />` be two straight lines, and let :g:`/ B C / <g1:/ B C />` be cut at random at :g:`D <g1:D>`, :g:`E <g1:E>`
 
 .. step:: construct
 
-   Let :g:`/ B C / <g1:/ B C />` be cut at random at :g:`D <g1:D>`, :g:`E <g1:E>`
+   :fn:`perpendicular_at <G.19>`\ (:g:`/ B C / <g1:/ B C />`, :g:`B <g1:B>`) → :g:`/ B F / <g1:/ B F />`
 
-.. step:: construct [G.19] <G.19>
+.. step:: construct
 
-   For let :g:`/ B F / <g1:/ B F />` be drawn from :g:`B <g1:B>` at right angles to :g:`/ B C / <g1:/ B C />`
+   :fn:`cut_equal_segment <G.9>`\ (:g:`A <g1:A>`) → :g:`/ B G / <g1:/ B G />` (:eq:`equal <g1:/ B G / = g1:A>`)
 
-.. step:: construct [G.9] <G.9>
+.. step:: construct
 
-   Let :g:`/ B G / <g1:/ B G />` be made :eq:`equal <g1:/ B G / = g1:A>` to :g:`A <g1:A>`.
-
-.. step:: construct [G.44] <G.44>
-
-   Through :g:`G <g1:G>` let :g:`/ G H / <g1:/ G H />` be drawn parallel to :g:`/ B C / <g1:/ B C />`.
+   :fn:`parallel_line <G.44>`\ (:g:`G <g1:G>`, :g:`/ B C / <g1:/ B C />`) → :g:`/ G H / <g1:/ G H />`
 
 .. step:: construct
 
@@ -63,7 +64,7 @@ G.62
 
    :g:`< B K > <g1:< B K >>` is the rectangle :g:`A <g1:A>`, :g:`/ B D / <g1:/ B D />`, for it is contained by :g:`/ B G / <g1:/ B G />`, :g:`/ B D / <g1:/ B D />`, and :g:`/ B G / <g1:/ B G />` is :eq:`equal <g1:/ B G / = g1:A>` to :g:`A <g1:A>`;
 
-.. step:: assert [G.47] <G.47>
+.. step:: assert ∵ parallelogram_properties <G.47>
 
    And :g:`< D L > <g1:< D L >>` is the rectangle :g:`A <g1:A>`, :g:`/ D E / <g1:/ D E />`, for :g:`/ D K / <g1:/ D K />`, that is :g:`/ B G / <g1:/ B G />`, is :eq:`equal <g1:/ D K / = g1:/ B G / = g1:A>` to :g:`A <g1:A>`.
 

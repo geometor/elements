@@ -24,26 +24,27 @@ G.231
 
    If two numbers by multiplying one another make some number, and any prime number measure the product, it will also measure one of the original numbers.
 
+.. signature:: theorem
+
+   | :fn:`numbers_multiplying_make_vii_30 <G.231>`\ ()
+   | **prove** :g:`D <g1:D>` measures one of the numbers :g:`A <g1:A>`, :g:`B <g1:B>`
+
 .. picture:: g1.svg
    :alt: Book VII, Proposition 30
 
 .. step:: assert
 
-   For let the two numbers :g:`A <g1:A>`, :g:`B <g1:B>` by multiplying one another make :g:`C <g1:C>`
+   Let the two numbers :g:`A <g1:A>`, :g:`B <g1:B>` by multiplying one another make :g:`C <g1:C>`, and let any prime number :g:`D <g1:D>` measure :g:`C <g1:C>`
 
 .. step:: assert
 
-   Let any prime number :g:`D <g1:D>` measure :g:`C <g1:C>`
-
-.. step:: assert
-
-   For let it not measure :g:`A <g1:A>`.
+   Let it not measure :g:`A <g1:A>`.
 
 .. step:: assert
 
    Now :g:`D <g1:D>` is prime ;
 
-.. step:: assert [G.230] <G.230>
+.. step:: assert ∵ prime_number_prime <G.230>
 
    Therefore :g:`A <g1:A>`, :g:`D <g1:D>` are prime to one another.
 
@@ -55,7 +56,7 @@ G.231
 
    Since then :g:`D <g1:D>` measures :g:`C <g1:C>` according to the units in :g:`E <g1:E>`,
 
-.. step:: assert [G.222] <G.222>
+.. step:: assert ∵ number_said_multiply_def <G.222>
 
    Therefore :g:`D <g1:D>` by multiplying :g:`E <g1:E>` has made :g:`C <g1:C>`.
 
@@ -67,11 +68,11 @@ G.231
 
    Therefore the product of :g:`D <g1:D>`, :g:`E <g1:E>` is equal to the product of :g:`A <g1:A>`, :g:`B <g1:B>`.
 
-.. step:: assert [G.219] <G.219>
+.. step:: assert ∵ numbers_proportional_number <G.219>
 
    Therefore, as :g:`D <g1:D>` is to :g:`A <g1:A>`, so is :g:`B <g1:B>` to :g:`E <g1:E>`.
 
-.. step:: assert [G.221, G.220] <G.221, G.220>
+.. step:: assert ∵ numbers_prime_least, least_numbers_ratio <G.221, G.220>
 
    :g:`D <g1:D>`, :g:`A <g1:A>` are prime to one another, primes are also least, and the least measure the numbers which have the same ratio the same number of times, the greater the greater and the less the less, that is, the antecedent the antecedent and the consequent the consequent .
 

@@ -24,6 +24,12 @@ G.281
 
    If as many numbers as we please beginning from an unit be in continued proportion, the less measures the greater according to some one of the numbers which have place among the proportional numbers.
 
+.. signature:: theorem
+
+   | :fn:`many_numbers_please_ix_11 <G.281>`\ (:g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`E <g1:E>`)
+   | **given** there be as many numbers as we please, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`E <g1:E>`, beginning from the unit :g:`A <g1:A>` and in continued proportion
+   | **prove** :g:`B <g1:B>`, the least of the numbers :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`E <g1:E>`, measures :g:`E <g1:E>` according to some one of the numbers :g:`C <g1:C>`, :g:`D <g1:D>`
+
 .. picture:: g1.svg
    :alt: Proposition 11 Diagram
 
@@ -39,7 +45,7 @@ G.281
 
    Therefore the unit :g:`A <g1:A>` measures the number :g:`B <g1:B>` the same number of times as :g:`D <g1:D>` measures :g:`E <g1:E>`;
 
-.. step:: assert [G.215] <G.215>
+.. step:: assert ∵ unit_measure_number <G.215>
 
    Therefore, alternately, the unit :g:`A <g1:A>` measures :g:`D <g1:D>` the same number of times as :g:`B <g1:B>` measures :g:`E <g1:E>`.
 

@@ -24,26 +24,31 @@ G.111
 
    If a straight line touch a circle, and from the point of contact there be drawn across, in the circle, a straight line cutting the circle, the angles which it makes with the tangent will equals the angles in the alternate segments of the circle.
 
+.. signature:: theorem
+
+   | :fn:`straight_line_touch_iii_32 <G.111>`\ ()
+   | **prove** the angles which :g:`/ B D / <g1:/ B D />` makes with the tangent :g:`/ E F / <g1:/ E F />` will be equal to the angles in the alternate segments of the circle, that is, that :g:`< F B D ) <g1:< F B D )>` is equal to the angle constructed in the segment :g:`( B A D ) <g1:( B A D )>`, and :g:`< E B D ) <g1:< E B D )>` is equal to the angle constructed in the segment :g:`( D C B ) <g1:( D C B )>`
+
 .. picture:: g1.svg
    :alt: Proposition 32 diagram
 
-.. step:: assert
+.. step:: construct
 
-   For let a straight line :g:`/ E F / <g1:/ E F />` touch :g:`( A B C D ) <g1:( A B C D )>` at :g:`B <g1:B>`
+   Let a straight line :g:`/ E F / <g1:/ E F />` touch :g:`( A B C D ) <g1:( A B C D )>` at :g:`B <g1:B>`, and from :g:`B <g1:B>` let there be drawn across, in :g:`( A B C D ) <g1:( A B C D )>`, a straight line :g:`/ B D / <g1:/ B D />` cutting it
 
 .. step:: construct
 
-   From :g:`B <g1:B>` let there be drawn across, in :g:`( A B C D ) <g1:( A B C D )>`, a straight line :g:`/ B D / <g1:/ B D />` cutting it
+   :fn:`perpendicular_at <G.19>`\ (:g:`/ E F / <g1:/ E F />`, :g:`B <g1:B>`) → :g:`/ B A / <g1:/ B A />`
 
 .. step:: construct
 
-   For let :g:`/ B A / <g1:/ B A />` be drawn from :g:`B <g1:B>` at right angles to :g:`/ E F / <g1:/ E F />`, let a point :g:`C <g1:C>` be taken at random on the circumference :g:`( B D ) <g1:( B D )>`
+   **point**\ (the circumference :g:`( B D ) <g1:( B D )>`) → :g:`C <g1:C>`
 
 .. step:: construct
 
-   **segment** :g:`/ A D / <g1:/ A D />`, :g:`/ D C / <g1:/ D C />`, :g:`/ C B / <g1:/ C B />`
+   :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`D <g1:D>`) → :g:`/ A D / <g1:/ A D />`, :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`C <g1:C>`) → :g:`/ D C / <g1:/ D C />`, :fn:`segment <G.3>`\ (:g:`C <g1:C>`, :g:`B <g1:B>`) → :g:`/ C B / <g1:/ C B />`
 
-.. step:: assert [G.97] <G.97>
+.. step:: assert ∵ straight_line_touch_iii_19 <G.97>
 
    Since a straight line :g:`/ E F / <g1:/ E F />` touches :g:`( A B C D ) <g1:( A B C D )>` at :g:`B <g1:B>`, and :g:`/ B A / <g1:/ B A />` has been drawn from the point of contact at right angles to the tangent, the center of :g:`( A B C D ) <g1:( A B C D )>` is on :g:`/ B A / <g1:/ B A />`.
 
@@ -51,11 +56,11 @@ G.111
 
    Therefore :g:`/ B A / <g1:/ B A />` is a diameter of :g:`( A B C D ) <g1:( A B C D )>`
 
-.. step:: assert [G.110] <G.110>
+.. step:: assert ∵ thales_semicircle_theorem <G.110>
 
    Therefore :g:`< A D B ) <g1:< A D B )>`, being an angle in a semicircle, is right.
 
-.. step:: assert [G.45] <G.45>
+.. step:: assert ∵ triangle_angle_sum <G.45>
 
    Therefore the remaining angles :g:`< B A D ) <g1:< B A D )>`, :g:`< A B D ) <g1:< A B D )>` are equal to one right angle.
 
@@ -67,7 +72,7 @@ G.111
 
    Therefore :g:`< A B F ) <g1:< A B F )>` is equal to :g:`< B A D ) <g1:< B A D )>`, :g:`< A B D ) <g1:< A B D )>`.
 
-.. step:: assert
+.. step:: construct
 
    Let :g:`< A B D ) <g1:< A B D )>` be subtracted from each
 
@@ -75,7 +80,7 @@ G.111
 
    Therefore :g:`< D B F ) <g1:< D B F )>` which remains is :eq:`equal <g1:< D B F ) = g1:< B A D )>` to :g:`< B A D ) <g1:< B A D )>` in the alternate segment of the circle.
 
-.. step:: assert [G.100] <G.100>
+.. step:: assert ∵ opposite_angles_quadrilaterals <G.100>
 
    Next, since :g:`< A B C D > <g1:< A B C D >>` is a quadrilateral in a circle, its opposite angles are equal to two right angles.
 

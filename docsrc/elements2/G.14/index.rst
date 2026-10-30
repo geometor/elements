@@ -24,6 +24,11 @@ G.14
 
    On the same segment and on the same side, there cannot be constructed two distinct triangles with both pairs of conterminous sides equal.
 
+.. signature:: theorem
+
+   | :fn:`unique_triangle_sides <G.14>`\ ()
+   | **prove** Which is impossible
+
 .. picture:: g1.svg
    :alt: Proposition 7 figure
 
@@ -31,11 +36,11 @@ G.14
 
    If possible, given two straight lines :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` constructed on :g:`/ A B / <g1:/ A B />` and meeting at :g:`C <g1:C>`, let two other straight lines :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` be constructed on the same straight line :g:`/ A B / <g1:/ A B />`, on the same side of it, meeting in another point :g:`D <g1:D>` and :eq:`equal <g1:/ C A / = g1:/ D A /; g1:/ C B / = g1:/ D B />` to the former two respectively, namely each to that which has the same extremity with it, so that :g:`/ C A / <g1:/ C A />` is :eq:`equal <g1:/ C A / = g1:/ D A />` to :g:`/ D A / <g1:/ D A />` which has the same extremity :g:`A <g1:A>` with it, and :g:`/ C B / <g1:/ C B />` to :g:`/ D B / <g1:/ D B />` which has the same extremity :g:`B <g1:B>` with it
 
-.. step:: construct [G.3] <G.3>
+.. step:: construct
 
-   **segment** :g:`/ C D / <g1:/ C D />`
+   :fn:`segment <G.3>`\ (:g:`C <g1:C>`, :g:`D <g1:D>`) → :g:`/ C D / <g1:/ C D />`
 
-.. step:: assert [G.12] <G.12>
+.. step:: assert ∵ isosceles_base_angles <G.12>
 
    Since :g:`/ A C / <g1:/ A C />` is :eq:`equal <g1:/ A C / = g1:/ A D />` to :g:`/ A D / <g1:/ A D />` → :g:`< A C D ) <g1:< A C D )>` is also :eq:`equal <g1:< A C D ) = g1:< A D C )>` to :g:`< A D C ) <g1:< A D C )>`;
 

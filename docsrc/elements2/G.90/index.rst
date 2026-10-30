@@ -23,6 +23,10 @@ G.90
 
    In a circle straight lines are said to be:term:`**equally distant from the centre** <equally-distant-from-centre>` when the perpendiculars drawn to them from the centre are equal.
 
+.. signature:: def
+
+   | :fn:`circle_straight_lines_def <G.90>`
+
 Required for
 ------------
 

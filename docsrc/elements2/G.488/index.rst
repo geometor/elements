@@ -24,6 +24,12 @@ G.488
 
    Circles are to one another as the squares on the diameters.
 
+.. signature:: theorem
+
+   | :fn:`circles_squares_diameters <G.488>`\ (:g:`( A B C D ) <g1:( A B C D )>`, :g:`( E F G H ) <g1:( E F G H )>`, :g:`/ B D / <g1:/ B D />`, :g:`/ F H / <g1:/ F H />`)
+   | **given** :g:`( A B C D ) <g1:( A B C D )>`, :g:`( E F G H ) <g1:( E F G H )>` be circles, :g:`/ B D / <g1:/ B D />`, :g:`/ F H / <g1:/ F H />` their diameters
+   | **prove** the area :g:`T <g1:T>` is less than :g:`( A B C D ) <g1:( A B C D )>`
+
 .. picture:: g1.svg
    :alt: Circles and inscribed polygons with areas S and T
 
@@ -33,13 +39,17 @@ G.488
 
 .. step:: assert
 
+   I say that, as :g:`( A B C D ) <g1:( A B C D )>` is to :g:`( E F G H ) <g1:( E F G H )>`, so is the square on :g:`/ B D / <g1:/ B D />` to the square on :g:`/ F H / <g1:/ F H />`.
+
+.. step:: assert
+
    If the square on :g:`/ B D / <g1:/ B D />` is not to the square on :g:`/ F H / <g1:/ F H />` as :g:`( A B C D ) <g1:( A B C D )>` is to :g:`( E F G H ) <g1:( E F G H )>`, then, as the square on :g:`/ B D / <g1:/ B D />` is to the square on :g:`/ F H / <g1:/ F H />`, so will :g:`( A B C D ) <g1:( A B C D )>` be either to some less area than :g:`( E F G H ) <g1:( E F G H )>`, or to a greater.
 
 .. step:: assert
 
    First, let it be in that ratio to a less area :g:`S <g1:S>`.
 
-.. step:: assert
+.. step:: construct
 
    Let the square :g:`< E F G H > <g1:< E F G H >>` be inscribed in :g:`( E F G H ) <g1:( E F G H )>`
 
@@ -51,13 +61,9 @@ G.488
 
    Hence the inscribed square :g:`< E F G H > <g1:< E F G H >>` is greater than the half of :g:`( E F G H ) <g1:( E F G H )>`.
 
-.. step:: assert
-
-   Let the circumferences :g:`( E F ) <g1:( E F )>`, :g:`( F G ) <g1:( F G )>`, :g:`( G H ) <g1:( G H )>`, :g:`( H E ) <g1:( H E )>` be :eq:`bisected <g1:/ E K / = g1:/ K F / = g1:/ F L / = g1:/ L G / = g1:/ G M / = g1:/ M H / = g1:/ H N / = g1:/ N E />` at :g:`K <g1:K>`, :g:`L <g1:L>`, :g:`M <g1:M>`, :g:`N <g1:N>`
-
 .. step:: construct
 
-   **segment** :g:`/ E K / <g1:/ E K />`, :g:`/ K F / <g1:/ K F />`, :g:`/ F L / <g1:/ F L />`, :g:`/ L G / <g1:/ L G />`, :g:`/ G M / <g1:/ G M />`, :g:`/ M H / <g1:/ M H />`, :g:`/ H N / <g1:/ H N />`, :g:`/ N E / <g1:/ N E />`
+   :fn:`segment <G.3>`\ () → :g:`( E F ) <g1:( E F )>`, :fn:`segment <G.3>`\ () → :g:`( F G ) <g1:( F G )>`, :fn:`segment <G.3>`\ () → :g:`( G H ) <g1:( G H )>`, :fn:`segment <G.3>`\ () → :g:`( H E ) <g1:( H E )>`, :fn:`segment <G.3>`\ () → :g:`K <g1:K>`, :fn:`segment <G.3>`\ () → :g:`L <g1:L>`, :fn:`segment <G.3>`\ () → :g:`M <g1:M>`, :fn:`segment <G.3>`\ () → :g:`N <g1:N>`, :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`K <g1:K>`) → :g:`/ E K / <g1:/ E K />`, :fn:`segment <G.3>`\ (:g:`K <g1:K>`, :g:`F <g1:F>`) → :g:`/ K F / <g1:/ K F />`, :fn:`segment <G.3>`\ (:g:`F <g1:F>`, :g:`L <g1:L>`) → :g:`/ F L / <g1:/ F L />`, :fn:`segment <G.3>`\ (:g:`L <g1:L>`, :g:`G <g1:G>`) → :g:`/ L G / <g1:/ L G />`, :fn:`segment <G.3>`\ (:g:`G <g1:G>`, :g:`M <g1:M>`) → :g:`/ G M / <g1:/ G M />`, :fn:`segment <G.3>`\ (:g:`M <g1:M>`, :g:`H <g1:H>`) → :g:`/ M H / <g1:/ M H />`, :fn:`segment <G.3>`\ (:g:`H <g1:H>`, :g:`N <g1:N>`) → :g:`/ H N / <g1:/ H N />`, :fn:`segment <G.3>`\ (:g:`N <g1:N>`, :g:`E <g1:E>`) → :g:`/ N E / <g1:/ N E />`
 
 .. step:: assert
 
@@ -73,7 +79,11 @@ G.488
 
 .. step:: assert
 
-   Thus, by bisecting the remaining circumferences and joining straight lines, and by doing this continually, we shall leave some segments of the circle which will be less than the excess by which :g:`( E F G H ) <g1:( E F G H )>` exceeds the area :g:`S <g1:S>`. For it was proved in the first theorem of the tenth book that, if two unequal magnitudes be set out, and if from the greater there be subtracted a magnitude greater than the half, and from that which is left a greater than the half, and if this be done continually, there will be left some magnitude which will be less than the lesser magnitude set out.
+   Thus, by bisecting the remaining circumferences and joining straight lines, and by doing this continually, we shall leave some segments of the circle which will be less than the excess by which :g:`( E F G H ) <g1:( E F G H )>` exceeds the area :g:`S <g1:S>`
+
+.. step:: assert
+
+   It was proved in the first theorem of the tenth book that, if two unequal magnitudes be set out, and if from the greater there be subtracted a magnitude greater than the half, and from that which is left a greater than the half, and if this be done continually, there will be left some magnitude which will be less than the lesser magnitude set out.
 
 .. step:: assert
 
@@ -83,11 +93,11 @@ G.488
 
    Therefore the remainder, the polygon :g:`< E K F L G M H N > <g1:< E K F L G M H N >>`, is greater than the area :g:`S <g1:S>`.
 
-.. step:: assert
+.. step:: construct
 
    Let there be inscribed, also, in :g:`( A B C D ) <g1:( A B C D )>` the polygon :g:`< A O B P C Q D R > <g1:< A O B P C Q D R >>` similar to the polygon :g:`< E K F L G M H N > <g1:< E K F L G M H N >>`
 
-.. step:: assert [G.487] <G.487>
+.. step:: assert ∵ similar_polygons_inscribed <G.487>
 
    Therefore, as the square on :g:`/ B D / <g1:/ B D />` is to the square on :g:`/ F H / <g1:/ F H />`, so is the polygon :g:`< A O B P C Q D R > <g1:< A O B P C Q D R >>` to the polygon :g:`< E K F L G M H N > <g1:< E K F L G M H N >>`.
 
@@ -95,11 +105,11 @@ G.488
 
    But, as the square on :g:`/ B D / <g1:/ B D />` is to the square on :g:`/ F H / <g1:/ F H />`, so also is :g:`( A B C D ) <g1:( A B C D )>` to the area :g:`S <g1:S>`;
 
-.. step:: assert [G.148] <G.148>
+.. step:: assert ∵ ratios_ratio <G.148>
 
    Therefore also, as :g:`( A B C D ) <g1:( A B C D )>` is to the area :g:`S <g1:S>`, so is the polygon :g:`< A O B P C Q D R > <g1:< A O B P C Q D R >>` to the polygon :g:`< E K F L G M H N > <g1:< E K F L G M H N >>`.
 
-.. step:: assert [G.153] <G.153>
+.. step:: assert ∵ magnitudes_proportional_proportional <G.153>
 
    Therefore, alternately, as :g:`( A B C D ) <g1:( A B C D )>` is to the polygon inscribed in it, so is the area :g:`S <g1:S>` to the polygon :g:`< E K F L G M H N > <g1:< E K F L G M H N >>`.
 
@@ -139,7 +149,7 @@ G.488
 
    But, as the area :g:`S <g1:S>` is to :g:`( A B C D ) <g1:( A B C D )>`, so is :g:`( E F G H ) <g1:( E F G H )>` to some area less than :g:`( A B C D ) <g1:( A B C D )>`;
 
-.. step:: assert [G.148] <G.148>
+.. step:: assert ∵ ratios_ratio <G.148>
 
    Therefore also, as the square on :g:`/ F H / <g1:/ F H />` is to the square on :g:`/ B D / <g1:/ B D />`, so is :g:`( E F G H ) <g1:( E F G H )>` to some area less than :g:`( A B C D ) <g1:( A B C D )>`: which was proved impossible.
 
@@ -161,13 +171,17 @@ G.488
 
 .. step:: assert
 
-   For let it be contrived that, as the area :g:`S <g1:S>` is to :g:`( A B C D ) <g1:( A B C D )>`, so is :g:`( E F G H ) <g1:( E F G H )>` to the area :g:`T <g1:T>`.
+   I say that, the area :g:`S <g1:S>` being greater than :g:`( E F G H ) <g1:( E F G H )>`, as the area :g:`S <g1:S>` is to :g:`( A B C D ) <g1:( A B C D )>`, so is :g:`( E F G H ) <g1:( E F G H )>` to some area less than :g:`( A B C D ) <g1:( A B C D )>`.
+
+.. step:: assert
+
+   Let it be contrived that, as the area :g:`S <g1:S>` is to :g:`( A B C D ) <g1:( A B C D )>`, so is :g:`( E F G H ) <g1:( E F G H )>` to the area :g:`T <g1:T>`.
 
 .. step:: assert
 
    For since, as the area :g:`S <g1:S>` is to :g:`( A B C D ) <g1:( A B C D )>`, so is :g:`( E F G H ) <g1:( E F G H )>` to the area :g:`T <g1:T>`,
 
-.. step:: assert [G.153] <G.153>
+.. step:: assert ∵ magnitudes_proportional_proportional <G.153>
 
    Therefore, alternately, as the area :g:`S <g1:S>` is to :g:`( E F G H ) <g1:( E F G H )>`, so is :g:`( A B C D ) <g1:( A B C D )>` to the area :g:`T <g1:T>`.
 

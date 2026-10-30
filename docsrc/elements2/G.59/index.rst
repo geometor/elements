@@ -24,6 +24,12 @@ G.59
 
    Construct a square on a given segment.
 
+.. signature:: problem
+
+   | :fn:`square_on_segment <G.59>`\ (:g:`/ A B / <g1:/ A B />`) → :g:`/ B E / <g1:/ B E />`
+   | **given** :g:`/ A B / <g1:/ A B />`
+   | **construct** it is a square; and it is described on :g:`/ A B / <g1:/ A B />`
+
 .. picture:: g1.svg
    :alt: Folio 0361 Figure 1 - Proposition 46
 
@@ -31,23 +37,27 @@ G.59
 
    :g:`/ A B / <g1:/ A B />`
 
-.. step:: construct [G.19] <G.19>
+.. step:: construct
 
-   Let :g:`/ A C / <g1:/ A C />` be drawn at right angles to :g:`/ A B / <g1:/ A B />` from :g:`A <g1:A>` on it
+   :fn:`perpendicular_at <G.19>`\ (:g:`/ A B / <g1:/ A B />`, :g:`A <g1:A>`) → :g:`/ A C / <g1:/ A C />`
 
 .. step:: construct
 
-   Let :g:`/ A D / <g1:/ A D />` be made :eq:`equal <g1:/ A D / = g1:/ A B />` to :g:`/ A B / <g1:/ A B />`
+   :fn:`cut_equal_segment <G.9>`\ (:g:`/ A B / <g1:/ A B />`) → :g:`/ A D / <g1:/ A D />` (:eq:`equal <g1:/ A D / = g1:/ A B />`)
 
 .. step:: construct
 
-   Through :g:`D <g1:D>` let :g:`/ D E / <g1:/ D E />` be drawn parallel to :g:`/ A B / <g1:/ A B />`
+   :fn:`parallel_line <G.44>`\ (:g:`D <g1:D>`, :g:`/ A B / <g1:/ A B />`) → :g:`/ D E / <g1:/ D E />`
 
-.. step:: construct [G.44] <G.44>
+.. step:: construct
 
-   Through :g:`B <g1:B>` let :g:`/ B E / <g1:/ B E />` be drawn parallel to :g:`/ A D / <g1:/ A D />`. Therefore :g:`< A D E B > <g1:< A D E B >>` is a parallelogram
+   :fn:`parallel_line <G.44>`\ (:g:`B <g1:B>`, :g:`/ A D / <g1:/ A D />`) → :g:`/ B E / <g1:/ B E />`
 
-.. step:: assert [G.47] <G.47>
+.. step:: assert
+
+   Therefore :g:`< A D E B > <g1:< A D E B >>` is a parallelogram
+
+.. step:: assert ∵ parallelogram_properties <G.47>
 
    Therefore :g:`/ A B / <g1:/ A B />` is :eq:`equal <g1:/ A B / = g1:/ D E /; g1:/ A D / = g1:/ B E />` to :g:`/ D E / <g1:/ D E />`, and :g:`/ A D / <g1:/ A D />` to :g:`/ B E / <g1:/ B E />`.
 
@@ -65,11 +75,11 @@ G.59
 
 .. step:: assert
 
-   I say next that it is also right-angled. For, since :g:`/ A D / <g1:/ A D />` falls upon the parallels :g:`/ A B / <g1:/ A B />`, :g:`/ D E / <g1:/ D E />`,
+   I say next that it is also right-angled
 
-.. step:: assert [G.42] <G.42>
+.. step:: assert ∵ parallel_transversal_angles <G.42>
 
-   :g:`< B A D ) <g1:< B A D )>`, :g:`< A D E ) <g1:< A D E )>` are equal to two right angles.
+   Since :g:`/ A D / <g1:/ A D />` falls upon the parallels :g:`/ A B / <g1:/ A B />`, :g:`/ D E / <g1:/ D E />` → :g:`< B A D ) <g1:< B A D )>`, :g:`< A D E ) <g1:< A D E )>` are equal to two right angles.
 
 .. step:: assert
 
@@ -79,7 +89,7 @@ G.59
 
    Therefore :g:`< A D E ) <g1:< A D E )>` is also :eq:`right <g1:< A D E ) = g1:< B A D )>`.
 
-.. step:: assert [G.47] <G.47>
+.. step:: assert ∵ parallelogram_properties <G.47>
 
    In parallelogrammic areas the opposite sides and angles are equal to one another
 

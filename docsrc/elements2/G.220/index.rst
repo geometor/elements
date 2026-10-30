@@ -24,12 +24,17 @@ G.220
 
    The least numbers of those which have the same ratio with them measure those which have the same ratio the same number of times, the greater the greater and the less the less.
 
+.. signature:: theorem
+
+   | :fn:`least_numbers_ratio <G.220>`\ ()
+   | **prove** :g:`/ C D / <g1:/ C D />` measures :g:`A <g1:A>` the same number of times that :g:`/ E F / <g1:/ E F />` measures :g:`B <g1:B>`
+
 .. picture:: g1.svg
    :alt: Book VII, Proposition 20
 
 .. step:: assert
 
-   For let :g:`/ C D / <g1:/ C D />`, :g:`/ E F / <g1:/ E F />` be the least numbers of those which have the same ratio with :g:`A <g1:A>`, :g:`B <g1:B>`
+   Let :g:`/ C D / <g1:/ C D />`, :g:`/ E F / <g1:/ E F />` be the least numbers of those which have the same ratio with :g:`A <g1:A>`, :g:`B <g1:B>`
 
 .. step:: assert
 
@@ -39,7 +44,7 @@ G.220
 
    If possible, let it be so;
 
-.. step:: assert [G.213, G.210] <G.213, G.210>
+.. step:: assert ∵ numbers_proportional_proportional, numbers_proportional_multiple_def <G.213, G.210>
 
    Therefore :g:`/ E F / <g1:/ E F />` is also the same parts of :g:`B <g1:B>` that :g:`/ C D / <g1:/ C D />` is of :g:`A <g1:A>`.
 
@@ -63,7 +68,7 @@ G.220
 
    Therefore, as :g:`/ C G / <g1:/ C G />` is to :g:`/ E H / <g1:/ E H />`, so is :g:`/ G D / <g1:/ G D />` to :g:`/ H F / <g1:/ H F />`.
 
-.. step:: assert [G.212] <G.212>
+.. step:: assert ∵ there_many_numbers <G.212>
 
    Therefore also, as one of the antecedents is to one of the consequents, so will all the antecedents be to all the consequents.
 
@@ -75,11 +80,11 @@ G.220
 
    Therefore :g:`/ C G / <g1:/ C G />`, :g:`/ E H / <g1:/ E H />` are in the same ratio with :g:`/ C D / <g1:/ C D />`, :g:`/ E F / <g1:/ E F />`, being less than they : which is impossible, for by hypothesis :g:`/ C D / <g1:/ C D />`, :g:`/ E F / <g1:/ E F />` are the least numbers of those which have the same ratio with them.
 
-.. step:: assert [G.203] <G.203>
+.. step:: assert ∵ number_part_parts <G.203>
 
    Therefore :g:`/ C D / <g1:/ C D />` is not parts of :g:`A <g1:A>` ; therefore it is a part of it.
 
-.. step:: assert [G.213, G.210] <G.213, G.210>
+.. step:: assert ∵ numbers_proportional_proportional, numbers_proportional_multiple_def <G.213, G.210>
 
    :g:`/ E F / <g1:/ E F />` is the same part of :g:`B <g1:B>` that :g:`/ C D / <g1:/ C D />` is of :g:`A <g1:A>` .
 

@@ -24,26 +24,27 @@ G.436
 
    If from a medial area a rational area be subtracted, there arise two other irrational straight lines, either a first apotome of a medial straight line or a straight line which produces with a rational area a medial whole.
 
+.. signature:: theorem
+
+   | :fn:`medial_area_rational <G.436>`\ ()
+   | **prove** the “side” of the remainder :g:`< E C > <g1:< E C >>` becomes one of two irrational straight lines, either a first apotome of a medial straight line or a straight line which produces with a rational area a medial whole
+
 .. picture:: g1.svg
    :alt: Propositions 108, 109
 
-.. step:: assert
+.. step:: construct
 
-   For from the medial area :g:`< B C > <g1:< B C >>` let the rational area :g:`< B D > <g1:< B D >>` be subtracted.
-
-.. step:: assert
-
-   For let a rational straight line :g:`/ F G / <g1:/ F G />` be set out
+   From the medial area :g:`< B C > <g1:< B C >>` let the rational area :g:`< B D > <g1:< B D >>` be subtracted.
 
 .. step:: assert
 
-   Let the areas be similarly applied.
+   Let a rational straight line :g:`/ F G / <g1:/ F G />` be set out, and let the areas be similarly applied.
 
 .. step:: assert
 
    It follows then that :g:`/ F H / <g1:/ F H />` is rational and incommensurable in length with :g:`/ F G / <g1:/ F G />`, while :g:`/ K F / <g1:/ K F />` is rational and commensurable in length with :g:`/ F G / <g1:/ F G />`;
 
-.. step:: assert [G.326, G.394] <G.326, G.394>
+.. step:: assert ∵ magnitudes_commensurable_incommensurable, rational_straight_line <G.326, G.394>
 
    Therefore :g:`/ F H / <g1:/ F H />`, :g:`/ F K / <g1:/ F K />` are rational straight lines commensurable in square only; therefore :g:`/ K H / <g1:/ K H />` is an apotome, and :g:`/ F K / <g1:/ F K />` the annex to it.
 
@@ -55,7 +56,7 @@ G.436
 
    If then the square on :g:`/ H F / <g1:/ H F />` is greater than the square on :g:`/ F K / <g1:/ F K />` by the square on a straight line commensurable with :g:`/ H F / <g1:/ H F />`, while the annex :g:`/ F K / <g1:/ F K />` is commensurable in length with the rational straight line :g:`/ F G / <g1:/ F G />` set out,
 
-.. step:: assert [G.408] <G.408>
+.. step:: assert ∵ annex_commensurable_length_def <G.408>
 
    :g:`/ K H / <g1:/ K H />` is a second apotome.
 
@@ -63,7 +64,7 @@ G.436
 
    :g:`/ F G / <g1:/ F G />` is rational;
 
-.. step:: assert [G.419] <G.419>
+.. step:: assert ∵ area_contained_rational_x_92 <G.419>
 
    So that the “side” of :g:`< L H > <g1:< L H >>`, that is, of :g:`< E C > <g1:< E C >>`, is a first apotome of a medial straight line.
 
@@ -71,7 +72,7 @@ G.436
 
    But, if the square on :g:`/ H F / <g1:/ H F />` is greater than the square on :g:`/ F K / <g1:/ F K />` by the square on a straight line incommensurable with :g:`/ H F / <g1:/ H F />`, while the annex :g:`/ F K / <g1:/ F K />` is commensurable in length with the rational straight line :g:`/ F G / <g1:/ F G />` set out,
 
-.. step:: assert [G.414, G.422] <G.414, G.422>
+.. step:: assert ∵ annex_commensurable_fifth_def, area_contained_rational_x_95 <G.414, G.422>
 
    :g:`/ K H / <g1:/ K H />` is a fifth apotome; so that the “side” of :g:`< E C > <g1:< E C >>` is a straight line which produces with a rational area a medial whole.
 
@@ -111,7 +112,7 @@ G.436
 
    (1) $\sqrt{u^2 - v^2} \mathbin{\Cap} u$, or (2) $\sqrt{u^2 - v^2} \smile u$, while in both cases $v$ is commensurable with $\sigma$.
 
-.. step:: conclude [G.419, G.422] <G.419, G.422>
+.. step:: conclude ∵ area_contained_rational_x_92, area_contained_rational_x_95 <G.419, G.422>
 
    Therefore $(u - v)$ is either (1) a second apotome, or (2) a fifth apotome, and hence in case (1) $\sqrt{\sigma (u - v)}$ is the :term:`*first apotome of a medial straight line* <first-apotome-of-a-medial-straight-line>`, and in case (2) $\sqrt{\sigma (u - v)}$ is the "*side" of a medial, minus a rational, area*.
 

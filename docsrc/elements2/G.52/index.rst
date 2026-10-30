@@ -24,6 +24,12 @@ G.52
 
    Equal triangles on the same base and on the same side lie in the same parallels.
 
+.. signature:: theorem
+
+   | :fn:`equal_triangles_same_base_parallel <G.52>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`< D B C > <g1:< D B C >>`, :g:`/ B C / <g1:/ B C />`)
+   | **given** :g:`< A B C > <g1:< A B C >>`, :g:`< D B C > <g1:< D B C >>` be :eq:`equal <g1:< A B C > = g1:< D B C >>` triangles which are on the same base :g:`/ B C / <g1:/ B C />` and on the same side of it
+   | **prove** :g:`/ A D / <g1:/ A D />` is parallel to :g:`/ B C / <g1:/ B C />`
+
 .. picture:: g1.svg
    :alt: Folio 0350 Figure 2 - Proposition 39
 
@@ -33,21 +39,21 @@ G.52
 
 .. step:: construct
 
-   [I say that they are also in the same parallels.] And [For] let :g:`/ A D / <g1:/ A D />` be joined
-
-.. step:: construct [G.44] <G.44>
-
-   If not, let :g:`/ A E / <g1:/ A E />` be drawn through :g:`A <g1:A>` parallel to :g:`/ B C / <g1:/ B C />`.
+   :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`D <g1:D>`) → :g:`/ A D / <g1:/ A D />`
 
 .. step:: construct
 
-   **segment** :g:`/ E C / <g1:/ E C />`
+   :fn:`parallel_line <G.44>`: If not, let :g:`/ A E / <g1:/ A E />` be drawn through :g:`A <g1:A>` parallel to :g:`/ B C / <g1:/ B C />`.
+
+.. step:: construct
+
+   :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`C <g1:C>`) → :g:`/ E C / <g1:/ E C />`
 
 .. step:: assert
 
    Therefore :g:`< A B C > <g1:< A B C >>` is :eq:`equal <g1:< A B C > = g1:< E B C >>` to :g:`< E B C > <g1:< E B C >>`
 
-.. step:: assert [G.50] <G.50>
+.. step:: assert ∵ triangles_same_base <G.50>
 
    For it is on the same base :g:`/ B C / <g1:/ B C />` with it and in the same parallels.
 
@@ -55,7 +61,7 @@ G.52
 
    :g:`< A B C > <g1:< A B C >>` is :eq:`equal <g1:< A B C > = g1:< D B C >>` to :g:`< D B C > <g1:< D B C >>`
 
-.. step:: assert [G.1] <G.1>
+.. step:: assert ∵ equal_transitive <G.1>
 
    Therefore :g:`< D B C > <g1:< D B C >>` is also :eq:`equal <g1:< D B C > = g1:< E B C >>` to :g:`< E B C > <g1:< E B C >>`, the greater to the less: which is impossible.
 

@@ -24,38 +24,39 @@ G.71
 
    If a straight line be bisected, and a straight line be added to it in a straight line, the square on the whole with the added straight line and the square on the added straight line both together are double of the square on the half and of the square described on the straight line made up of the half and the added straight line as on one straight line.
 
+.. signature:: theorem
+
+   | :fn:`sum_of_squares_bisected_extended <G.71>`\ ()
+   | **prove** the squares on :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` are double of the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C D / <g1:/ C D />`
+
 .. picture:: g1.svg
    :alt: 0409.g1
 
-.. step:: assert
+.. step:: construct
 
-   For let a straight line :g:`/ A B / <g1:/ A B />` be :eq:`bisected <g1:/ A C / = g1:/ C B />` at :g:`C <g1:C>`
-
-.. step:: assert
-
-   Let a straight line :g:`/ B D / <g1:/ B D />` be added to it in a straight line
-
-.. step:: construct [G.19] <G.19>
-
-   For let :g:`/ C E / <g1:/ C E />` be drawn from :g:`C <g1:C>` at right angles to :g:`/ A B / <g1:/ A B />`
-
-.. step:: construct [G.9] <G.9>
-
-   Let it be made :eq:`equal <g1:/ C E / = g1:/ A C / = g1:/ C B />` to either :g:`/ A C / <g1:/ A C />` or :g:`/ C B / <g1:/ C B />`
+   Let a straight line :g:`/ A B / <g1:/ A B />` be :eq:`bisected <g1:/ A C / = g1:/ C B />` at :g:`C <g1:C>`, and let a straight line :g:`/ B D / <g1:/ B D />` be added to it in a straight line
 
 .. step:: construct
 
-   **segment** :g:`/ E A / <g1:/ E A />`, :g:`/ E B / <g1:/ E B />`
+   :fn:`perpendicular_at <G.19>`\ (:g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`) → :g:`/ C E / <g1:/ C E />`
 
 .. step:: construct
 
-   Through :g:`E <g1:E>` let :g:`/ E F / <g1:/ E F />` be drawn parallel to :g:`/ A D / <g1:/ A D />`
+   :fn:`cut_equal_segment <G.9>`: Let it be made :eq:`equal <g1:/ C E / = g1:/ A C / = g1:/ C B />` to either :g:`/ A C / <g1:/ A C />` or :g:`/ C B / <g1:/ C B />`
 
-.. step:: construct [G.44] <G.44>
+.. step:: construct
 
-   Through :g:`D <g1:D>` let :g:`/ F D / <g1:/ F D />` be drawn parallel to :g:`/ C E / <g1:/ C E />`.
+   :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`A <g1:A>`) → :g:`/ E A / <g1:/ E A />`, :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`B <g1:B>`) → :g:`/ E B / <g1:/ E B />`
 
-.. step:: assert [G.42] <G.42>
+.. step:: construct
+
+   :fn:`parallel_line <G.44>`\ (:g:`E <g1:E>`, :g:`/ A D / <g1:/ A D />`) → :g:`/ E F / <g1:/ E F />`
+
+.. step:: construct
+
+   :fn:`parallel_line <G.44>`\ (:g:`D <g1:D>`, :g:`/ C E / <g1:/ C E />`) → :g:`/ F D / <g1:/ F D />`
+
+.. step:: assert ∵ parallel_transversal_angles <G.42>
 
    Since a straight line :g:`/ E F / <g1:/ E F />` falls on the parallel straight lines :g:`/ E C / <g1:/ E C />`, :g:`/ F D / <g1:/ F D />`, :g:`< C E F ) <g1:< C E F )>`, :g:`< E F D ) <g1:< E F D )>` are equal to two right angles
 
@@ -63,7 +64,7 @@ G.71
 
    Therefore :g:`< F E B ) <g1:< F E B )>`, :g:`< E F D ) <g1:< E F D )>` are less than two right angles.
 
-.. step:: assert [G.41] <G.41>
+.. step:: assert ∵ parallel_postulate <G.41>
 
    Straight lines produced from angles less than two right angles meet
 
@@ -77,9 +78,9 @@ G.71
 
 .. step:: construct
 
-   **segment** :g:`/ A G / <g1:/ A G />`
+   :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`G <g1:G>`) → :g:`/ A G / <g1:/ A G />`
 
-.. step:: assert [G.12] <G.12>
+.. step:: assert ∵ isosceles_base_angles <G.12>
 
    Since :g:`/ A C / <g1:/ A C />` is :eq:`equal <g1:/ A C / = g1:/ C E />` to :g:`/ C E / <g1:/ C E />`, :g:`< E A C ) <g1:< E A C )>` is also :eq:`equal <g1:< E A C ) = g1:< A E C )>` to :g:`< A E C ) <g1:< A E C )>`
 
@@ -87,27 +88,27 @@ G.71
 
    And the angle at :g:`< A C E ) <g1:< A C E )>` is right
 
-.. step:: assert [G.45] <G.45>
+.. step:: assert ∵ triangle_angle_sum <G.45>
 
    Therefore each of :g:`< E A C ) <g1:< E A C )>`, :g:`< A E C ) <g1:< A E C )>` is half a right angle.
 
 .. step:: assert
 
-   For the same reason each of :g:`< C E B ) <g1:< C E B )>`, :g:`< E B C ) <g1:< E B C )>` is also half a right angle
+   The same reason each of :g:`< C E B ) <g1:< C E B )>`, :g:`< E B C ) <g1:< E B C )>` is also half a right angle
 
 .. step:: assert
 
    Therefore :g:`< A E B ) <g1:< A E B )>` is right.
 
-.. step:: assert [G.25] <G.25>
+.. step:: assert ∵ vertical_angles_equal <G.25>
 
    And, since :g:`< E B C ) <g1:< E B C )>` is half a right angle, :g:`< D B G ) <g1:< D B G )>` is also half a right angle.
 
-.. step:: assert [G.42] <G.42>
+.. step:: assert ∵ parallel_transversal_angles <G.42>
 
    :g:`< B D G ) <g1:< B D G )>` is also :eq:`right <g1:< B D G ) = g1:< D C E )>`, for it is :eq:`equal <g1:< B D G ) = g1:< D C E )>` to :g:`< D C E ) <g1:< D C E )>`, they being alternate
 
-.. step:: assert [G.45] <G.45>
+.. step:: assert ∵ triangle_angle_sum <G.45>
 
    Therefore the remaining angle :g:`< D G B ) <g1:< D G B )>` is half a right angle;
 
@@ -115,15 +116,15 @@ G.71
 
    Therefore :g:`< D G B ) <g1:< D G B )>` is :eq:`equal <g1:< D G B ) = g1:< D B G )>` to :g:`< D B G ) <g1:< D B G )>`,
 
-.. step:: assert [G.13] <G.13>
+.. step:: assert ∵ equal_angles_isosceles <G.13>
 
    So that the side :g:`/ B D / <g1:/ B D />` is also :eq:`equal <g1:/ B D / = g1:/ G D />` to the side :g:`/ G D / <g1:/ G D />`.
 
-.. step:: assert [G.47] <G.47>
+.. step:: assert ∵ parallelogram_properties <G.47>
 
    Since :g:`< E G F ) <g1:< E G F )>` is half a right angle, and the angle at :g:`< E F G ) <g1:< E F G )>` is :eq:`right <g1:< E F G ) = g1:< D C E )>`, for it is :eq:`equal <g1:< E F G ) = g1:< D C E )>` to the opposite angle, the angle at :g:`< D C E ) <g1:< D C E )>`.
 
-.. step:: assert [G.45] <G.45>
+.. step:: assert ∵ triangle_angle_sum <G.45>
 
    The remaining angle :g:`< F E G ) <g1:< F E G )>` is half a right angle;
 
@@ -131,7 +132,7 @@ G.71
 
    Therefore :g:`< E G F ) <g1:< E G F )>` is :eq:`equal <g1:< E G F ) = g1:< F E G )>` to :g:`< F E G ) <g1:< F E G )>`,
 
-.. step:: assert [G.13] <G.13>
+.. step:: assert ∵ equal_angles_isosceles <G.13>
 
    So that the side :g:`/ G F / <g1:/ G F />` is also :eq:`equal <g1:/ G F / = g1:/ E F />` to the side :g:`/ E F / <g1:/ E F />`.
 
@@ -139,11 +140,11 @@ G.71
 
    Since the square on :g:`/ E C / <g1:/ E C />` is :eq:`equal <g1:/ E C / = g1:/ C A />` to the square on :g:`/ C A / <g1:/ C A />`, the squares on :g:`/ E C / <g1:/ E C />`, :g:`/ C A / <g1:/ C A />` are double of the square on :g:`/ C A / <g1:/ C A />`.
 
-.. step:: assert [G.60] <G.60>
+.. step:: assert ∵ pythagorean_theorem <G.60>
 
    The square on :g:`/ E A / <g1:/ E A />` is equal to the squares on :g:`/ E C / <g1:/ E C />`, :g:`/ C A / <g1:/ C A />`
 
-.. step:: assert [G.1] <G.1>
+.. step:: assert ∵ equal_transitive <G.1>
 
    Therefore the square on :g:`/ E A / <g1:/ E A />` is double of the square on :g:`/ A C / <g1:/ A C />`.
 
@@ -155,7 +156,7 @@ G.71
 
    Therefore the squares on :g:`/ G F / <g1:/ G F />`, :g:`/ F E / <g1:/ F E />` are double of the square on :g:`/ E F / <g1:/ E F />`.
 
-.. step:: assert [G.60] <G.60>
+.. step:: assert ∵ pythagorean_theorem <G.60>
 
    The square on :g:`/ E G / <g1:/ E G />` is equal to the squares on :g:`/ G F / <g1:/ G F />`, :g:`/ F E / <g1:/ F E />`
 
@@ -163,7 +164,7 @@ G.71
 
    Therefore the square on :g:`/ E G / <g1:/ E G />` is double of the square on :g:`/ E F / <g1:/ E F />`.
 
-.. step:: assert [G.47] <G.47>
+.. step:: assert ∵ parallelogram_properties <G.47>
 
    :g:`/ E F / <g1:/ E F />` is :eq:`equal <g1:/ E F / = g1:/ C D />` to :g:`/ C D / <g1:/ C D />`
 
@@ -179,7 +180,7 @@ G.71
 
    Therefore the squares on :g:`/ A E / <g1:/ A E />`, :g:`/ E G / <g1:/ E G />` are double of the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C D / <g1:/ C D />`.
 
-.. step:: assert [G.60] <G.60>
+.. step:: assert ∵ pythagorean_theorem <G.60>
 
    The square on :g:`/ A G / <g1:/ A G />` is equal to the squares on :g:`/ A E / <g1:/ A E />`, :g:`/ E G / <g1:/ E G />`
 
@@ -187,7 +188,7 @@ G.71
 
    Therefore the square on :g:`/ A G / <g1:/ A G />` is double of the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C D / <g1:/ C D />`.
 
-.. step:: assert [G.60] <G.60>
+.. step:: assert ∵ pythagorean_theorem <G.60>
 
    The squares on :g:`/ A D / <g1:/ A D />`, :g:`/ D G / <g1:/ D G />` are equal to the square on :g:`/ A G / <g1:/ A G />`
 

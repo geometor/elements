@@ -24,22 +24,24 @@ G.323
 
    If four magnitudes be proportional, and the first be commensurable with the second, the third is commensurable with the fourth; and, if the first be incommensurable with the second, the third is incommensurable with the fourth.
 
+.. signature:: theorem
+
+   | :fn:`magnitudes_proportional_commensurable <G.323>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`)
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` be four magnitudes in proportion, so that, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`, let :g:`A <g1:A>` be commensurable with :g:`B <g1:B>`
+   | **prove** :g:`C <g1:C>` will also be commensurable with :g:`D <g1:D>`; :g:`C <g1:C>` will also be incommensurable with :g:`D <g1:D>`
+
 .. picture:: g1.svg
    :alt: Proposition 11 diagram
 
 .. step:: given
 
-   :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` be four magnitudes in proportion, so that, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`
-
-.. step:: assert
-
-   Let :g:`A <g1:A>` be commensurable with :g:`B <g1:B>`
+   :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` be four magnitudes in proportion, so that, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`, let :g:`A <g1:A>` be commensurable with :g:`B <g1:B>`
 
 .. step:: assert
 
    Since :g:`A <g1:A>` is commensurable with :g:`B <g1:B>`,
 
-.. step:: assert [G.318] <G.318>
+.. step:: assert ∵ commensurable_magnitudes_ratio <G.318>
 
    Therefore :g:`A <g1:A>` has to :g:`B <g1:B>` the ratio which a number has to a number.
 
@@ -47,7 +49,7 @@ G.323
 
    And, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`D <g1:D>` ;
 
-.. step:: assert [G.319] <G.319>
+.. step:: assert ∵ magnitudes_ratio_number <G.319>
 
    Therefore :g:`C <g1:C>` also has to :g:`D <g1:D>` the ratio which a number has to a number ; therefore :g:`C <g1:C>` is commensurable with :g:`D <g1:D>`.
 
@@ -59,7 +61,7 @@ G.323
 
    Since :g:`A <g1:A>` is incommensurable with :g:`B <g1:B>`,
 
-.. step:: assert [G.320] <G.320>
+.. step:: assert ∵ incommensurable_magnitudes_ratio <G.320>
 
    Therefore :g:`A <g1:A>` has not to :g:`B <g1:B>` the ratio which a number has to a number.
 
@@ -67,7 +69,7 @@ G.323
 
    And, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`;
 
-.. step:: conclude [G.321] <G.321>
+.. step:: conclude ∵ magnitudes_ratio_number_x_8 <G.321>
 
    Therefore neither has :g:`C <g1:C>` to :g:`D <g1:D>` the ratio which a number has to a number; therefore :g:`C <g1:C>` is incommensurable with :g:`D <g1:D>`.
 

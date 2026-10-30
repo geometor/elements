@@ -24,20 +24,25 @@ G.512
 
    If a straight line be cut in extreme and mean ratio, and there be added to it a straight line equal to the greater segment, the whole straight line has been cut in extreme and mean ratio, and the original straight line is the greater segment.
 
+.. signature:: theorem
+
+   | :fn:`straight_line_cut_xiii_5 <G.512>`\ ()
+   | **prove** :g:`/ D B / <g1:/ D B />` has been cut in extreme and mean ratio at :g:`A <g1:A>`, and the original straight line :g:`/ A B / <g1:/ A B />` is the greater segment
+
 .. picture:: g1.svg
    :alt: Book XIII, Proposition 5
 
 .. step:: construct
 
-   For let :g:`/ A B / <g1:/ A B />` be cut in extreme and mean ratio at :g:`C <g1:C>`, let :g:`/ A C / <g1:/ A C />` be the greater segment
+   Let :g:`/ A B / <g1:/ A B />` be cut in extreme and mean ratio at :g:`C <g1:C>`
 
 .. step:: assert
 
-   Let :g:`/ A D / <g1:/ A D />` be :eq:`equal <g1:/ A D / = g1:/ A C />` to :g:`/ A C / <g1:/ A C />`.
+   Let :g:`/ A C / <g1:/ A C />` be the greater segment, and let :g:`/ A D / <g1:/ A D />` be :eq:`equal <g1:/ A D / = g1:/ A C />` to :g:`/ A C / <g1:/ A C />`.
 
 .. step:: construct
 
-   For let the square :g:`< A E > <g1:< A E >>` be described on :g:`/ A B / <g1:/ A B />`
+   Let the square :g:`< A E > <g1:< A E >>` be described on :g:`/ A B / <g1:/ A B />`
 
 .. step:: construct
 
@@ -47,7 +52,7 @@ G.512
 
    Since :g:`/ A B / <g1:/ A B />` has been cut in extreme and mean ratio at :g:`C <g1:C>`,
 
-.. step:: assert [G.507, G.180] <G.507, G.180>
+.. step:: assert ∵ straight_line_said_def_vi_def_3, straight_lines_proportional_vi_17 <G.507, G.180>
 
    Therefore the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` is equal to the square on :g:`/ A C / <g1:/ A C />`.
 
@@ -79,7 +84,7 @@ G.512
 
    Therefore the rectangle :g:`/ B D / <g1:/ B D />`, :g:`/ D A / <g1:/ D A />` is equal to the square on :g:`/ A B / <g1:/ A B />`.
 
-.. step:: assert [G.180] <G.180>
+.. step:: assert ∵ straight_lines_proportional_vi_17 <G.180>
 
    Therefore, as :g:`/ D B / <g1:/ D B />` is to :g:`/ B A / <g1:/ B A />`, so is :g:`/ B A / <g1:/ B A />` to :g:`/ A D / <g1:/ A D />`.
 
@@ -87,7 +92,7 @@ G.512
 
    :g:`/ D B / <g1:/ D B />` is greater than :g:`/ B A / <g1:/ B A />`;
 
-.. step:: assert [G.151] <G.151>
+.. step:: assert ∵ magnitude_ratio_greater_v_14 <G.151>
 
    Therefore :g:`/ B A / <g1:/ B A />` is also greater than :g:`/ A D / <g1:/ A D />`.
 

@@ -24,22 +24,31 @@ G.164
 
    If a straight line be drawn parallel to one of the sides of a triangle, it will cut the sides of the triangle proportionally; and, if the sides of the triangle be cut proportionally, the line joining the points of section is parallel to the remaining side of the triangle.
 
+.. signature:: theorem
+
+   | :fn:`straight_line_drawn_vi_2 <G.164>`\ ()
+   | **prove** :g:`/ D E / <g1:/ D E />` is parallel to :g:`/ B C / <g1:/ B C />`
+
 .. picture:: g1.svg
    :alt: Book VI Proposition 2
 
 .. step:: construct
 
-   For let :g:`/ D E / <g1:/ D E />` be drawn parallel to :g:`/ B C / <g1:/ B C />`, one of the sides of :g:`< A B C > <g1:< A B C >>`
+   Let :g:`/ D E / <g1:/ D E />` be drawn parallel to :g:`/ B C / <g1:/ B C />`, one of the sides of :g:`< A B C > <g1:< A B C >>`
+
+.. step:: assert
+
+   I say that, as :g:`/ B D / <g1:/ B D />` is to :g:`/ D A / <g1:/ D A />`, so is :g:`/ C E / <g1:/ C E />` to :g:`/ E A / <g1:/ E A />`.
 
 .. step:: construct
 
-   For let :g:`/ B E / <g1:/ B E />`, :g:`/ C D / <g1:/ C D />` be joined.
+   :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`E <g1:E>`) → :g:`/ B E / <g1:/ B E />`, :fn:`segment <G.3>`\ (:g:`C <g1:C>`, :g:`D <g1:D>`) → :g:`/ C D / <g1:/ C D />`
 
 .. step:: assert
 
    Therefore :g:`< B D E > <g1:< B D E >>` is :eq:`equal <g1:< B D E > = g1:< C D E >>` to :g:`< C D E > <g1:< C D E >>`;
 
-.. step:: assert [G.51] <G.51>
+.. step:: assert ∵ triangles_equal_bases <G.51>
 
    For they are on the same base :g:`/ D E / <g1:/ D E />` and in the same parallels :g:`/ D E / <g1:/ D E />`, :g:`/ B C / <g1:/ B C />`.
 
@@ -47,7 +56,7 @@ G.164
 
    :g:`< A D E > <g1:< A D E >>` is another area.
 
-.. step:: assert [G.142] <G.142>
+.. step:: assert ∵ equal_magnitudes_ratio <G.142>
 
    Equals have the same ratio to the same
 
@@ -55,7 +64,7 @@ G.164
 
    Therefore, as :g:`< B D E > <g1:< B D E >>` is to :g:`< A D E > <g1:< A D E >>`, so is :g:`< C D E > <g1:< C D E >>` to :g:`< A D E > <g1:< A D E >>`.
 
-.. step:: assert [G.163] <G.163>
+.. step:: assert ∵ triangles_parallelograms_height <G.163>
 
    But, as :g:`< B D E > <g1:< B D E >>` is to :g:`< A D E > <g1:< A D E >>`, so is :g:`/ B D / <g1:/ B D />` to :g:`/ D A / <g1:/ D A />`; for, being under the same height, the perpendicular drawn from :g:`E <g1:E>` to :g:`/ A B / <g1:/ A B />`, they are to one another as their bases.
 
@@ -63,7 +72,7 @@ G.164
 
    For the same reason also, as :g:`< C D E > <g1:< C D E >>` is to :g:`< A D E > <g1:< A D E >>`, so is :g:`/ C E / <g1:/ C E />` to :g:`/ E A / <g1:/ E A />`.
 
-.. step:: assert [G.148] <G.148>
+.. step:: assert ∵ ratios_ratio <G.148>
 
    Therefore also, as :g:`/ B D / <g1:/ B D />` is to :g:`/ D A / <g1:/ D A />`, so is :g:`/ C E / <g1:/ C E />` to :g:`/ E A / <g1:/ E A />`.
 
@@ -73,9 +82,9 @@ G.164
 
 .. step:: construct
 
-   **segment** :g:`/ D E / <g1:/ D E />`
+   :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`E <g1:E>`) → :g:`/ D E / <g1:/ D E />`
 
-.. step:: assert [G.163] <G.163>
+.. step:: assert ∵ triangles_parallelograms_height <G.163>
 
    With the same construction, since, as :g:`/ B D / <g1:/ B D />` is to :g:`/ D A / <g1:/ D A />`, so is :g:`/ C E / <g1:/ C E />` to :g:`/ E A / <g1:/ E A />`, but, as :g:`/ B D / <g1:/ B D />` is to :g:`/ D A / <g1:/ D A />`, so is :g:`< B D E > <g1:< B D E >>` to :g:`< A D E > <g1:< A D E >>`, and, as :g:`/ C E / <g1:/ C E />` is to :g:`/ E A / <g1:/ E A />`, so is :g:`< C D E > <g1:< C D E >>` to :g:`< A D E > <g1:< A D E >>`.
 
@@ -83,7 +92,7 @@ G.164
 
    Therefore also,
 
-.. step:: assert [G.148] <G.148>
+.. step:: assert ∵ ratios_ratio <G.148>
 
    As :g:`< B D E > <g1:< B D E >>` is to :g:`< A D E > <g1:< A D E >>`, so is :g:`< C D E > <g1:< C D E >>` to :g:`< A D E > <g1:< A D E >>`.
 
@@ -91,7 +100,7 @@ G.164
 
    Therefore each of :g:`< B D E > <g1:< B D E >>`, :g:`< C D E > <g1:< C D E >>` has the same ratio to :g:`< A D E > <g1:< A D E >>`.
 
-.. step:: assert [G.146] <G.146>
+.. step:: assert ∵ magnitudes_ratio_equal <G.146>
 
    Therefore :g:`< B D E > <g1:< B D E >>` is :eq:`equal <g1:< B D E > = g1:< C D E >>` to :g:`< C D E > <g1:< C D E >>`;
 
@@ -99,7 +108,7 @@ G.164
 
    And they are on the same base :g:`/ D E / <g1:/ D E />`.
 
-.. step:: assert [G.52] <G.52>
+.. step:: assert ∵ equal_triangles_same_base_parallel <G.52>
 
    Equal triangles which are on the same base are also in the same parallels.
 

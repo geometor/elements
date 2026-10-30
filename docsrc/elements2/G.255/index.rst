@@ -24,22 +24,24 @@ G.255
 
    If a square measure a square, the side will also measure the side; and, if the side measure the side, the square will also measure the square.
 
+.. signature:: theorem
+
+   | :fn:`square_measure_square <G.255>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`)
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>` be square numbers, let :g:`C <g1:C>`, :g:`D <g1:D>` be their sides, let :g:`A <g1:A>` measure :g:`B <g1:B>`
+   | **prove** :g:`C <g1:C>` also measures :g:`D <g1:D>`; :g:`A <g1:A>` also measures :g:`B <g1:B>`
+
 .. picture:: g1.svg
    :alt: Book VIII, Proposition 14
 
 .. step:: given
 
-   :g:`A <g1:A>`, :g:`B <g1:B>` be square numbers, let :g:`C <g1:C>`, :g:`D <g1:D>` be their sides
+   :g:`A <g1:A>`, :g:`B <g1:B>` be square numbers, let :g:`C <g1:C>`, :g:`D <g1:D>` be their sides, let :g:`A <g1:A>` measure :g:`B <g1:B>`
 
 .. step:: assert
 
-   Let :g:`A <g1:A>` measure :g:`B <g1:B>`
+   Let :g:`C <g1:C>` by multiplying :g:`D <g1:D>` make :g:`E <g1:E>`
 
-.. step:: assert
-
-   For let :g:`C <g1:C>` by multiplying :g:`D <g1:D>` make :g:`E <g1:E>`
-
-.. step:: assert [G.251] <G.251>
+.. step:: assert ∵ square_numbers_there <G.251>
 
    Therefore :g:`A <g1:A>`, :g:`E <g1:E>`, :g:`B <g1:B>` are continuously proportional in the ratio of :g:`C <g1:C>` to :g:`D <g1:D>`.
 
@@ -47,7 +49,7 @@ G.255
 
    And, since :g:`A <g1:A>`, :g:`E <g1:E>`, :g:`B <g1:B>` are continuously proportional, and :g:`A <g1:A>` measures :g:`B <g1:B>`,
 
-.. step:: assert [G.247] <G.247>
+.. step:: assert ∵ there_many_numbers_viii_7 <G.247>
 
    Therefore :g:`A <g1:A>` also measures :g:`E <g1:E>`.
 
@@ -55,7 +57,7 @@ G.255
 
    And, as :g:`A <g1:A>` is to :g:`E <g1:E>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`;
 
-.. step:: assert [G.210] <G.210>
+.. step:: assert ∵ numbers_proportional_multiple_def <G.210>
 
    Therefore also :g:`C <g1:C>` measures :g:`D <g1:D>`.
 
@@ -71,7 +73,7 @@ G.255
 
    Since, as :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`A <g1:A>` to :g:`E <g1:E>`, and :g:`C <g1:C>` measures :g:`D <g1:D>`,
 
-.. step:: assert [G.210] <G.210>
+.. step:: assert ∵ numbers_proportional_multiple_def <G.210>
 
    Therefore :g:`A <g1:A>` also measures :g:`E <g1:E>`.
 

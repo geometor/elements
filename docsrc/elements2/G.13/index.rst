@@ -24,16 +24,18 @@ G.13
 
    If two angles of a triangle are equal, the sides subtending the equal angles are also equal.
 
+.. signature:: theorem
+
+   | :fn:`equal_angles_isosceles <G.13>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`< A B C ) <g1:< A B C )>`, :g:`< A C B ) <g1:< A C B )>`)
+   | **given** :g:`< A B C > <g1:< A B C >>` be a triangle having :g:`< A B C ) <g1:< A B C )>` :eq:`equal <g1:< A B C ) = g1:< A C B )>` to :g:`< A C B ) <g1:< A C B )>`
+   | **prove** the side :g:`/ A B / <g1:/ A B />` is also :eq:`equal <g1:/ A B / = g1:/ A C />` to the side :g:`/ A C / <g1:/ A C />`
+
 .. picture:: g1.svg
    :alt: Proposition 6 figure
 
 .. step:: given
 
    :g:`< A B C > <g1:< A B C >>` be a triangle having :g:`< A B C ) <g1:< A B C )>` :eq:`equal <g1:< A B C ) = g1:< A C B )>` to :g:`< A C B ) <g1:< A C B )>`
-
-.. step:: assert
-
-   The side :g:`/ A B / <g1:/ A B />` is also :eq:`equal <g1:/ A B / = g1:/ A C />` to the side :g:`/ A C / <g1:/ A C />`.
 
 .. step:: assert
 
@@ -45,11 +47,11 @@ G.13
 
 .. step:: construct
 
-   And from :g:`/ A B / <g1:/ A B />` the greater let :g:`/ D B / <g1:/ D B />` be cut off :eq:`equal <g1:/ D B / = g1:/ A C />` to :g:`/ A C / <g1:/ A C />` the less
+   :fn:`cut_equal_segment <G.9>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />`) → :g:`/ D B / <g1:/ D B />` (:eq:`equal <g1:/ D B / = g1:/ A C />`)
 
 .. step:: construct
 
-   **segment** :g:`/ D C / <g1:/ D C />`
+   :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`C <g1:C>`) → :g:`/ D C / <g1:/ D C />`
 
 .. step:: assert
 

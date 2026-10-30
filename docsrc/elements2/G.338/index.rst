@@ -24,22 +24,24 @@ G.338
 
    A straight line commensurable with a medial straight line is medial.
 
+.. signature:: theorem
+
+   | :fn:`straight_line_commensurable <G.338>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`)
+   | **given** :g:`A <g1:A>` be medial, let :g:`B <g1:B>` be commensurable with :g:`A <g1:A>`
+   | **prove** :g:`B <g1:B>` is also medial
+
 .. picture:: g1.svg
    :alt: Proposition 23
 
 .. step:: given
 
-   :g:`A <g1:A>` be medial
-
-.. step:: assert
-
-   Let :g:`B <g1:B>` be commensurable with :g:`A <g1:A>`
+   :g:`A <g1:A>` be medial, let :g:`B <g1:B>` be commensurable with :g:`A <g1:A>`
 
 .. step:: construct
 
-   For let a rational straight line :g:`/ C D / <g1:/ C D />` be set out, and to :g:`/ C D / <g1:/ C D />` let the rectangular area :g:`< C E > <g1:< C E >>` equal to the square on :g:`A <g1:A>` be applied, producing :g:`/ E D / <g1:/ E D />` as breadth
+   Let a rational straight line :g:`/ C D / <g1:/ C D />` be set out, and to :g:`/ C D / <g1:/ C D />` let the rectangular area :g:`< C E > <g1:< C E >>` equal to the square on :g:`A <g1:A>` be applied, producing :g:`/ E D / <g1:/ E D />` as breadth
 
-.. step:: assert [G.336] <G.336>
+.. step:: assert ∵ square_medial_straight <G.336>
 
    Therefore :g:`/ E D / <g1:/ E D />` is rational and incommensurable in length with :g:`/ C D / <g1:/ C D />`.
 
@@ -63,11 +65,11 @@ G.338
 
    Therefore :g:`< E C > <g1:< E C >>` is commensurable with :g:`< C F > <g1:< C F >>`.
 
-.. step:: assert [G.163] <G.163>
+.. step:: assert ∵ triangles_parallelograms_height <G.163>
 
    And, as :g:`< E C > <g1:< E C >>` is to :g:`< C F > <g1:< C F >>`, so is :g:`/ E D / <g1:/ E D />` to :g:`/ D F / <g1:/ D F />`;
 
-.. step:: assert [G.323] <G.323>
+.. step:: assert ∵ magnitudes_proportional_commensurable <G.323>
 
    Therefore :g:`/ E D / <g1:/ E D />` is commensurable in length with :g:`/ D F / <g1:/ D F />`.
 
@@ -75,7 +77,7 @@ G.338
 
    :g:`/ E D / <g1:/ E D />` is rational and incommensurable in length with :g:`/ D C / <g1:/ D C />`;
 
-.. step:: assert [G.337, G.326] <G.337, G.326>
+.. step:: assert ∵ hypotheses_proved_there_def, magnitudes_commensurable_incommensurable <G.337, G.326>
 
    Therefore :g:`/ D F / <g1:/ D F />` is also rational and incommensurable in length with :g:`/ D C / <g1:/ D C />`.
 
@@ -83,7 +85,7 @@ G.338
 
    Therefore :g:`/ C D / <g1:/ C D />`, :g:`/ D F / <g1:/ D F />` are rational and commensurable in square only.
 
-.. step:: assert [G.335] <G.335>
+.. step:: assert ∵ rectangle_contained_rational_x_21 <G.335>
 
    The straight line the square on which is equal to the rectangle contained by rational straight lines commensurable in square only is medial.
 

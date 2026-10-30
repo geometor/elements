@@ -24,20 +24,25 @@ G.69
 
    If a straight line be cut at random, four times the rectangle contained by the whole and one of the segments together with the square on the remaining segment is equal to the square described on the whole and the aforesaid segment as on one straight line.
 
+.. signature:: theorem
+
+   | :fn:`four_rectangles_plus_square <G.69>`\ ()
+   | **prove** four times the rectangle contained by :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` together with the square on :g:`/ A C / <g1:/ A C />` is equal to the square described on :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` as on one straight line
+
 .. picture:: g1.svg
    :alt: Diagram
 
 .. step:: construct
 
-   For let a straight line :g:`/ A B / <g1:/ A B />` be cut at random at :g:`C <g1:C>`
+   Let a straight line :g:`/ A B / <g1:/ A B />` be cut at random at :g:`C <g1:C>`
 
 .. step:: construct
 
-   For let [the straight line] :g:`/ B D / <g1:/ B D />` be produced in a straight line [with :g:`/ A B / <g1:/ A B />`]
+   Let [the straight line] :g:`/ B D / <g1:/ B D />` be produced in a straight line [with :g:`/ A B / <g1:/ A B />`]
 
 .. step:: construct
 
-   Let :g:`/ B D / <g1:/ B D />` be made :eq:`equal <g1:/ B D / = g1:/ C B />` to :g:`/ C B / <g1:/ C B />`
+   :fn:`cut_equal_segment <G.9>`\ (:g:`/ C B / <g1:/ C B />`) → :g:`/ B D / <g1:/ B D />` (:eq:`equal <g1:/ B D / = g1:/ C B />`)
 
 .. step:: construct
 
@@ -55,11 +60,11 @@ G.69
 
    For the same reason :g:`/ Q R / <g1:/ Q R />` is also :eq:`equal <g1:/ Q R / = g1:/ R P />` to :g:`/ R P / <g1:/ R P />`.
 
-.. step:: assert [G.49] <G.49>
+.. step:: assert ∵ parallelograms_equal_bases <G.49>
 
    And, since :g:`/ B C / <g1:/ B C />` is :eq:`equal <g1:/ B C / = g1:/ B D /; g1:/ G K / = g1:/ K N />` to :g:`/ B D / <g1:/ B D />`, and :g:`/ G K / <g1:/ G K />` to :g:`/ K N / <g1:/ K N />`, therefore :g:`< C K > <g1:< C K >>` is also :eq:`equal <g1:< C K > = g1:< K D >; g1:< G R > = g1:< R N >>` to :g:`< K D > <g1:< K D >>`, and :g:`< G R > <g1:< G R >>` to :g:`< R N > <g1:< R N >>`.
 
-.. step:: assert [G.56] <G.56>
+.. step:: assert ∵ parallelogram_complements <G.56>
 
    :g:`< C K > <g1:< C K >>` is :eq:`equal <g1:< C K > = g1:< R N >>` to :g:`< R N > <g1:< R N >>`, for they are complements of the parallelogram :g:`< C P > <g1:< C P >>`
 
@@ -79,11 +84,11 @@ G.69
 
    Since :g:`/ C B / <g1:/ C B />` is :eq:`equal <g1:/ C B / = g1:/ B D />` to :g:`/ B D / <g1:/ B D />`, while :g:`/ B D / <g1:/ B D />` is :eq:`equal <g1:/ B D / = g1:/ B K / = g1:/ C G />` to :g:`/ B K / <g1:/ B K />`, that is :g:`/ C G / <g1:/ C G />`, and :g:`/ C B / <g1:/ C B />` is :eq:`equal <g1:/ C B / = g1:/ G K / = g1:/ G Q />` to :g:`/ G K / <g1:/ G K />`, that is :g:`/ G Q / <g1:/ G Q />` → therefore :g:`/ C G / <g1:/ C G />` is also :eq:`equal <g1:/ C G / = g1:/ G Q />` to :g:`/ G Q / <g1:/ G Q />`.
 
-.. step:: assert [G.49] <G.49>
+.. step:: assert ∵ parallelograms_equal_bases <G.49>
 
    And, since :g:`/ C G / <g1:/ C G />` is :eq:`equal <g1:/ C G / = g1:/ G Q /; g1:/ Q R / = g1:/ R P />` to :g:`/ G Q / <g1:/ G Q />`, and :g:`/ Q R / <g1:/ Q R />` to :g:`/ R P / <g1:/ R P />`, :g:`< A G > <g1:< A G >>` is also :eq:`equal <g1:< A G > = g1:< M Q >; g1:< Q L > = g1:< R F >>` to :g:`< M Q > <g1:< M Q >>`, and :g:`< Q L > <g1:< Q L >>` to :g:`< R F > <g1:< R F >>`.
 
-.. step:: assert [G.56] <G.56>
+.. step:: assert ∵ parallelogram_complements <G.56>
 
    :g:`< M Q > <g1:< M Q >>` is :eq:`equal <g1:< M Q > = g1:< Q L >>` to :g:`< Q L > <g1:< Q L >>`, for they are complements of the parallelogram :g:`< M L > <g1:< M L >>`
 
@@ -119,7 +124,7 @@ G.69
 
    Therefore four times the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B D / <g1:/ B D />` is equal to the gnomon :g:`< S T U > <g1:< S T U >>`.
 
-.. step:: assert
+.. step:: construct
 
    Let :g:`< O H > <g1:< O H >>`, which is equal to the square on :g:`/ A C / <g1:/ A C />`, be added to each
 

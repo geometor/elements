@@ -24,16 +24,21 @@ G.339
 
    The rectangle contained by medial straight lines commensurable in length is medial.
 
+.. signature:: theorem
+
+   | :fn:`rectangle_contained_medial <G.339>`\ ()
+   | **prove** :g:`< A C > <g1:< A C >>` is medial
+
 .. picture:: g1.svg
    :alt: Proposition 24
 
 .. step:: assert
 
-   For let the rectangle :g:`< A C > <g1:< A C >>` be contained by the medial straight lines :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` which are commensurable in length
+   Let the rectangle :g:`< A C > <g1:< A C >>` be contained by the medial straight lines :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` which are commensurable in length
 
 .. step:: construct
 
-   For on :g:`/ A B / <g1:/ A B />` let the square :g:`< A D > <g1:< A D >>` be described
+   On :g:`/ A B / <g1:/ A B />` let the square :g:`< A D > <g1:< A D >>` be described
 
 .. step:: assert
 
@@ -43,7 +48,7 @@ G.339
 
    And, since :g:`/ A B / <g1:/ A B />` is commensurable in length with :g:`/ B C / <g1:/ B C />`, while :g:`/ A B / <g1:/ A B />` is :eq:`equal <g1:/ A B / = g1:/ B D />` to :g:`/ B D / <g1:/ B D />`,
 
-.. step:: assert [G.163, G.323] <G.163, G.323>
+.. step:: assert ∵ triangles_parallelograms_height, magnitudes_proportional_commensurable <G.163, G.323>
 
    Therefore :g:`/ D B / <g1:/ D B />` is also commensurable in length with :g:`/ B C / <g1:/ B C />`; so that :g:`< D A > <g1:< D A >>` is also commensurable with :g:`< A C > <g1:< A C >>`.
 
@@ -51,7 +56,7 @@ G.339
 
    :g:`< D A > <g1:< D A >>` is medial;
 
-.. step:: conclude [G.338] <G.338>
+.. step:: conclude ∵ straight_line_commensurable <G.338>
 
    Therefore :g:`< A C > <g1:< A C >>` is also medial.
 

@@ -24,30 +24,43 @@ G.458
 
    Planes to which the same straight line is at right angles is parallel.
 
+.. signature:: theorem
+
+   | :fn:`planes_straight_line <G.458>`\ ()
+   | **prove** the planes are parallel
+
 .. picture:: g1.svg
    :alt: Book XI, Proposition 14
 
 .. step:: assert
 
-   For let any straight line :g:`/ A B / <g1:/ A B />` be at right angles to each of the planes :g:`< C D > <g1:< C D >>`, :g:`< E F > <g1:< E F >>`
+   Let any straight line :g:`/ A B / <g1:/ A B />` be at right angles to each of the planes :g:`< C D > <g1:< C D >>`, :g:`< E F > <g1:< E F >>`
 
 .. step:: assert
 
-   If not, they will meet when produced. Let them meet
+   If not, they will meet when produced
 
-.. step:: assert [G.445] <G.445>
+.. step:: assert
 
-   They will then make, as common section, a straight line. Let them make :g:`/ G H / <g1:/ G H />`
+   Let them meet
+
+.. step:: assert ∵ planes_cut_common <G.445>
+
+   They will then make, as common section, a straight line
+
+.. step:: assert
+
+   Let them make :g:`/ G H / <g1:/ G H />`
 
 .. step:: construct
 
-   **point** :g:`K <g1:K>` on :g:`/ G H / <g1:/ G H />`
+   **point**\ (:g:`/ G H / <g1:/ G H />`) → :g:`K <g1:K>`
 
 .. step:: construct
 
-   **segment** :g:`/ A K / <g1:/ A K />`, :g:`/ B K / <g1:/ B K />`
+   :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`K <g1:K>`) → :g:`/ A K / <g1:/ A K />`, :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`K <g1:K>`) → :g:`/ B K / <g1:/ B K />`
 
-.. step:: assert [G.446] <G.446>
+.. step:: assert ∵ straight_line_right_def <G.446>
 
    Since :g:`/ A B / <g1:/ A B />` is at right angles to the plane :g:`< E F > <g1:< E F >>`, therefore :g:`/ A B / <g1:/ A B />` is also at right angles to :g:`/ B K / <g1:/ B K />` which is a straight line in the plane :g:`< E F > <g1:< E F >>` produced
 
@@ -63,7 +76,7 @@ G.458
 
    Thus, in :g:`< A B K > <g1:< A B K >>`, the two angles :g:`< A B K ) <g1:< A B K )>`, :g:`< B A K ) <g1:< B A K )>` are equal to two right angles:
 
-.. step:: assert [G.28] <G.28>
+.. step:: assert ∵ two_angles_less_than_two_right <G.28>
 
    Which is impossible.
 
@@ -71,7 +84,7 @@ G.458
 
    Therefore the planes :g:`< C D > <g1:< C D >>`, :g:`< E F > <g1:< E F >>` will not meet when produced
 
-.. step:: assert [G.457] <G.457>
+.. step:: assert ∵ parallel_planes_meet_def <G.457>
 
    Therefore the planes :g:`< C D > <g1:< C D >>`, :g:`< E F > <g1:< E F >>` are parallel.
 

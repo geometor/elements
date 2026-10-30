@@ -24,24 +24,25 @@ G.500
 
    If a cylinder be cut by a plane which is parallel to its opposite planes, then, as the cylinder is to the cylinder, so will the axis be to the axis.
 
+.. signature:: theorem
+
+   | :fn:`cylinder_cut_plane <G.500>`\ ()
+   | **prove** as the axis :g:`/ E K / <g1:/ E K />` is to the axis :g:`/ K F / <g1:/ K F />`, so is the cylinder :g:`< B G > <g1:< B G >>` to the cylinder :g:`< G D > <g1:< G D >>`
+
 .. picture:: g1.svg
    :alt: Proposition 13
 
 .. step:: construct
 
-   For let the cylinder :g:`< A D > <g1:< A D >>` be cut by the plane :g:`( G H ) <g1:( G H )>` which is parallel to the opposite planes :g:`( A B ) <g1:( A B )>`, :g:`( C D ) <g1:( C D )>`
+   Let the cylinder :g:`< A D > <g1:< A D >>` be cut by the plane :g:`( G H ) <g1:( G H )>` which is parallel to the opposite planes :g:`( A B ) <g1:( A B )>`, :g:`( C D ) <g1:( C D )>`, and let the plane :g:`( G H ) <g1:( G H )>` meet the axis at :g:`K <g1:K>`
 
 .. step:: assert
 
-   Let the plane :g:`( G H ) <g1:( G H )>` meet the axis at :g:`K <g1:K>`
+   I say that, as the cylinder :g:`< B G > <g1:< B G >>` is to the cylinder :g:`< G D > <g1:< G D >>`, so is the axis :g:`/ E K / <g1:/ E K />` to the axis :g:`/ K F / <g1:/ K F />`.
 
 .. step:: construct
 
-   For let the axis :g:`/ E F / <g1:/ E F />` be produced in both directions to :g:`L <g1:L>`, :g:`M <g1:M>`
-
-.. step:: assert
-
-   Let there be set out any number whatever of axes :g:`/ E N / <g1:/ E N />`, :g:`/ N L / <g1:/ N L />` :eq:`equal <g1:/ E N / = g1:/ N L / = g1:/ E K />` to the axis :g:`/ E K / <g1:/ E K />`, and any number whatever :g:`/ F O / <g1:/ F O />`, :g:`/ O M / <g1:/ O M />` :eq:`equal <g1:/ F O / = g1:/ O M / = g1:/ F K />` to :g:`/ F K / <g1:/ F K />`
+   :fn:`extend <G.7>`\ (the axis :g:`/ E F / <g1:/ E F />`) → :g:`L <g1:L>`, :g:`M <g1:M>`, and let there be set out any number whatever of axes :g:`/ E N / <g1:/ E N />`, :g:`/ N L / <g1:/ N L />` :eq:`equal <g1:/ E N / = g1:/ N L / = g1:/ E K />` to the axis :g:`/ E K / <g1:/ E K />`, and any number whatever :g:`/ F O / <g1:/ F O />`, :g:`/ O M / <g1:/ O M />` :eq:`equal <g1:/ F O / = g1:/ O M / = g1:/ F K />` to :g:`/ F K / <g1:/ F K />`
 
 .. step:: assert
 
@@ -49,17 +50,13 @@ G.500
 
 .. step:: assert
 
-   Let planes be carried through :g:`N <g1:N>`, :g:`O <g1:O>` parallel to :g:`( A B ) <g1:( A B )>`, :g:`( C D ) <g1:( C D )>` and to the bases of the cylinder :g:`< P W > <g1:< P W >>`
-
-.. step:: assert
-
-   Let them produce :g:`( R S ) <g1:( R S )>`, :g:`( T U ) <g1:( T U )>` about the centres :g:`N <g1:N>`, :g:`O <g1:O>`.
+   Let planes be carried through :g:`N <g1:N>`, :g:`O <g1:O>` parallel to :g:`( A B ) <g1:( A B )>`, :g:`( C D ) <g1:( C D )>` and to the bases of the cylinder :g:`< P W > <g1:< P W >>`, and let them produce :g:`( R S ) <g1:( R S )>`, :g:`( T U ) <g1:( T U )>` about the centres :g:`N <g1:N>`, :g:`O <g1:O>`.
 
 .. step:: assert
 
    Since the axes :g:`/ L N / <g1:/ L N />`, :g:`/ N E / <g1:/ N E />`, :g:`/ E K / <g1:/ E K />` are :eq:`equal <g1:/ L N / = g1:/ N E / = g1:/ E K />` to one another,
 
-.. step:: assert [G.497] <G.497>
+.. step:: assert ∵ cones_cylinders_height <G.497>
 
    Therefore the cylinders :g:`< Q R > <g1:< Q R >>`, :g:`< R B > <g1:< R B >>`, :g:`< B G > <g1:< B G >>` are to one another as their bases.
 
@@ -91,7 +88,7 @@ G.500
 
    Thus, there being four magnitudes, the axes :g:`/ E K / <g1:/ E K />`, :g:`/ K F / <g1:/ K F />` and the cylinders :g:`< B G > <g1:< B G >>`, :g:`< G D > <g1:< G D >>`, there have been taken equimultiples of the axis :g:`/ E K / <g1:/ E K />` and of the cylinder :g:`< B G > <g1:< B G >>`, namely the axis :g:`/ L K / <g1:/ L K />` and the cylinder :g:`< Q G > <g1:< Q G >>`, and equimultiples of the axis :g:`/ K F / <g1:/ K F />` and of the cylinder :g:`< G D > <g1:< G D >>`, namely the axis :g:`/ K M / <g1:/ K M />` and the cylinder :g:`< G W > <g1:< G W >>`; and it has been proved that, if the axis :g:`/ K L / <g1:/ K L />` is in excess of the axis :g:`/ K M / <g1:/ K M />`, the cylinder :g:`< Q G > <g1:< Q G >>` is also in excess of the cylinder :g:`< G W > <g1:< G W >>`, if :eq:`equal <g1:/ K L / = g1:/ K M />`, :eq:`equal <g1:< Q G > = g1:< G W >>`, and if less, less.
 
-.. step:: conclude [G.138] <G.138>
+.. step:: conclude ∵ magnitudes_said_ratio_def <G.138>
 
    Therefore, as the axis :g:`/ E K / <g1:/ E K />` is to the axis :g:`/ K F / <g1:/ K F />`, so is the cylinder :g:`< B G > <g1:< B G >>` to the cylinder :g:`< G D > <g1:< G D >>`.
 

@@ -24,16 +24,18 @@ G.230
 
    Any prime number is prime to any number which it does not measure.
 
+.. signature:: theorem
+
+   | :fn:`prime_number_prime <G.230>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`)
+   | **given** :g:`A <g1:A>` be a prime number, let it not measure :g:`B <g1:B>`
+   | **prove** :g:`B <g1:B>`, :g:`A <g1:A>` are prime to one another
+
 .. picture:: g1.svg
    :alt: Book VII, Proposition 29
 
 .. step:: given
 
-   :g:`A <g1:A>` be a prime number
-
-.. step:: assert
-
-   Let it not measure :g:`B <g1:B>`
+   :g:`A <g1:A>` be a prime number, let it not measure :g:`B <g1:B>`
 
 .. step:: assert
 

@@ -24,34 +24,31 @@ G.485
 
    If the sides of the opposite planes of a cube be bisected, and planes be carried through the points of section, the common section of the planes and the diameter of the cube bisect one another.
 
+.. signature:: theorem
+
+   | :fn:`sides_opposite_planes <G.485>`\ ()
+   | **prove** :g:`/ U T / <g1:/ U T />` is :eq:`equal <g1:/ U T / = g1:/ T S /; g1:/ D T / = g1:/ T G />` to :g:`/ T S / <g1:/ T S />`, and :g:`/ D T / <g1:/ D T />` to :g:`/ T G / <g1:/ T G />`
+
 .. picture:: g1.svg
    :alt: Proposition 38 diagram
 
 .. step:: construct
 
-   For let the sides of the opposite planes :g:`< C F > <g1:< C F >>`, :g:`< A H > <g1:< A H >>` of the cube :g:`< A F > <g1:< A F >>` be bisected at :g:`K <g1:K>`, :g:`L <g1:L>`, :g:`M <g1:M>`, :g:`N <g1:N>`, :g:`O <g1:O>`, :g:`Q <g1:Q>`, :g:`P <g1:P>`, :g:`R <g1:R>`
-
-.. step:: assert
-
-   Through the points of section let the planes :g:`< K N > <g1:< K N >>`, :g:`< O R > <g1:< O R >>` be carried
+   Let the sides of the opposite planes :g:`< C F > <g1:< C F >>`, :g:`< A H > <g1:< A H >>` of the cube :g:`< A F > <g1:< A F >>` be bisected at :g:`K <g1:K>`, :g:`L <g1:L>`, :g:`M <g1:M>`, :g:`N <g1:N>`, :g:`O <g1:O>`, :g:`Q <g1:Q>`, :g:`P <g1:P>`, :g:`R <g1:R>`, and through the points of section let the planes :g:`< K N > <g1:< K N >>`, :g:`< O R > <g1:< O R >>` be carried
 
 .. step:: assert
 
    Let :g:`/ U S / <g1:/ U S />` be the common section of the planes, and :g:`/ D G / <g1:/ D G />` the diameter of the cube :g:`< A F > <g1:< A F >>`.
 
-.. step:: assert
-
-   :g:`/ U T / <g1:/ U T />` is :eq:`equal <g1:/ U T / = g1:/ T S /; g1:/ D T / = g1:/ T G />` to :g:`/ T S / <g1:/ T S />`, and :g:`/ D T / <g1:/ D T />` to :g:`/ T G / <g1:/ T G />`.
-
 .. step:: construct
 
-   For let :g:`/ D U / <g1:/ D U />`, :g:`/ U E / <g1:/ U E />`, :g:`/ B S / <g1:/ B S />`, :g:`/ S G / <g1:/ S G />` be joined.
+   :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`U <g1:U>`) → :g:`/ D U / <g1:/ D U />`, :fn:`segment <G.3>`\ (:g:`U <g1:U>`, :g:`E <g1:E>`) → :g:`/ U E / <g1:/ U E />`, :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`S <g1:S>`) → :g:`/ B S / <g1:/ B S />`, :fn:`segment <G.3>`\ (:g:`S <g1:S>`, :g:`G <g1:G>`) → :g:`/ S G / <g1:/ S G />`
 
 .. step:: assert
 
    Since :g:`/ D O / <g1:/ D O />` is parallel to :g:`/ P E / <g1:/ P E />`,
 
-.. step:: assert [G.42] <G.42>
+.. step:: assert ∵ parallel_transversal_angles <G.42>
 
    The alternate angles :g:`< D O U ) <g1:< D O U )>`, :g:`< U P E ) <g1:< U P E )>` are :eq:`equal <g1:< D O U ) = g1:< U P E )>` to one another.
 
@@ -59,11 +56,11 @@ G.485
 
    And, since :g:`/ D O / <g1:/ D O />` is :eq:`equal <g1:/ D O / = g1:/ P E /; g1:/ O U / = g1:/ U P />` to :g:`/ P E / <g1:/ P E />`, and :g:`/ O U / <g1:/ O U />` to :g:`/ U P / <g1:/ U P />`, and they contain equal angles,
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    Therefore the base :g:`/ D U / <g1:/ D U />` is :eq:`equal <g1:/ D U / = g1:/ U E />` to the base :g:`/ U E / <g1:/ U E />`, :g:`< D O U > <g1:< D O U >>` is :eq:`equal <g1:< D O U > = g1:< P U E >>` to :g:`< P U E > <g1:< P U E >>`, and the remaining angles are equal to the remaining angles; therefore :g:`< O U D ) <g1:< O U D )>` is :eq:`equal <g1:< O U D ) = g1:< P U E )>` to :g:`< P U E ) <g1:< P U E )>`.
 
-.. step:: assert [G.24] <G.24>
+.. step:: assert ∵ supplementary_angles_collinear <G.24>
 
    For this reason :g:`/ D U E / <g1:/ D U E />` is a straight line.
 
@@ -75,7 +72,7 @@ G.485
 
    Since :g:`/ C A / <g1:/ C A />` is :eq:`equal <g1:/ C A / = g1:/ D B />` and parallel to :g:`/ D B / <g1:/ D B />`, while :g:`/ C A / <g1:/ C A />` is also :eq:`equal <g1:/ C A / = g1:/ E G />` and parallel to :g:`/ E G / <g1:/ E G />`,
 
-.. step:: assert [G.452] <G.452>
+.. step:: assert ∵ straight_lines_parallel_xi_9 <G.452>
 
    Therefore :g:`/ D B / <g1:/ D B />` is also :eq:`equal <g1:/ D B / = g1:/ E G />` and parallel to :g:`/ E G / <g1:/ E G />`.
 
@@ -83,15 +80,15 @@ G.485
 
    :g:`/ D E / <g1:/ D E />`, :g:`/ B G / <g1:/ B G />` join their extremities ;
 
-.. step:: assert [G.46] <G.46>
+.. step:: assert ∵ join_equal_parallels <G.46>
 
    Therefore :g:`/ D E / <g1:/ D E />` is parallel to :g:`/ B G / <g1:/ B G />`.
 
-.. step:: assert [G.42, G.25] <G.42, G.25>
+.. step:: assert ∵ parallel_transversal_angles, vertical_angles_equal <G.42, G.25>
 
    Therefore :g:`< E D T ) <g1:< E D T )>` is :eq:`equal <g1:< E D T ) = g1:< B G T )>` to :g:`< B G T ) <g1:< B G T )>`, for they are alternate ; and :g:`< D T U ) <g1:< D T U )>` is :eq:`equal <g1:< D T U ) = g1:< G T S )>` to :g:`< G T S ) <g1:< G T S )>`.
 
-.. step:: assert [G.37] <G.37>
+.. step:: assert ∵ asa_aas_congruence <G.37>
 
    Therefore :g:`< D T U > <g1:< D T U >>`, :g:`< G T S > <g1:< G T S >>` are two triangles which have two angles equal to two angles, and one side equal to one side, namely that subtending one of the equal angles, that is, :g:`/ D U / <g1:/ D U />` :eq:`equal <g1:/ D U / = g1:/ G S />` to :g:`/ G S / <g1:/ G S />`, for they are the halves of :g:`/ D E / <g1:/ D E />`, :g:`/ B G / <g1:/ B G />` ; therefore they will also have the remaining sides equal to the remaining sides.
 

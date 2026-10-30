@@ -24,6 +24,12 @@ G.197
 
    If two triangles having two sides proportional to two sides be placed together at one angle so that their corresponding sides are also parallel, the remaining sides of the triangles is in a straight line.
 
+.. signature:: theorem
+
+   | :fn:`triangles_sides_proportional_vi_32 <G.197>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`< D C E > <g1:< D C E >>`, :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />`)
+   | **given** :g:`< A B C > <g1:< A B C >>`, :g:`< D C E > <g1:< D C E >>` be two triangles having the two sides :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />` proportional to the two sides :g:`/ D C / <g1:/ D C />`, :g:`/ D E / <g1:/ D E />`, so that, as :g:`/ A B / <g1:/ A B />` is to :g:`/ A C / <g1:/ A C />`, so is :g:`/ D C / <g1:/ D C />` to :g:`/ D E / <g1:/ D E />`, :g:`/ A B / <g1:/ A B />` parallel to :g:`/ D C / <g1:/ D C />`, :g:`/ A C / <g1:/ A C />` to :g:`/ D E / <g1:/ D E />`
+   | **prove** :g:`/ B C / <g1:/ B C />` is in a straight line with :g:`/ C E / <g1:/ C E />`
+
 .. picture:: g1.svg
    :alt: Proposition 32
 
@@ -35,7 +41,7 @@ G.197
 
    Since :g:`/ A B / <g1:/ A B />` is parallel to :g:`/ D C / <g1:/ D C />`, and :g:`/ A C / <g1:/ A C />` has fallen upon them,
 
-.. step:: assert [G.42] <G.42>
+.. step:: assert ∵ parallel_transversal_angles <G.42>
 
    The alternate angles :g:`< B A C ) <g1:< B A C )>`, :g:`< A C D ) <g1:< A C D )>` are :eq:`equal <g1:< B A C ) = g1:< A C D )>` to one another.
 
@@ -55,7 +61,7 @@ G.197
 
    And, since :g:`< A B C > <g1:< A B C >>`, :g:`< D C E > <g1:< D C E >>` are two triangles having one angle, the angle at :g:`A <g1:A>`, :eq:`equal <g1:< B A C ) = g1:< C D E )>` to one angle, the angle at :g:`D <g1:D>`, and the sides about the equal angles proportional, so that, as :g:`/ B A / <g1:/ B A />` is to :g:`/ A C / <g1:/ A C />`, so is :g:`/ C D / <g1:/ C D />` to :g:`/ D E / <g1:/ D E />`,
 
-.. step:: assert [G.168] <G.168>
+.. step:: assert ∵ triangles_angle_equal <G.168>
 
    Therefore :g:`< A B C > <g1:< A B C >>` is :eq:`equiangular <g1:< B A C ) = g1:< C D E ); g1:< A B C ) = g1:< D C E )>` with :g:`< D C E > <g1:< D C E >>`.
 
@@ -71,7 +77,7 @@ G.197
 
    Therefore the whole angle :g:`< A C E ) <g1:< A C E )>` is equal to the two angles :g:`< A B C ) <g1:< A B C )>`, :g:`< B A C ) <g1:< B A C )>`.
 
-.. step:: assert
+.. step:: construct
 
    Let :g:`< A C B ) <g1:< A C B )>` be added to each;
 
@@ -79,7 +85,7 @@ G.197
 
    Therefore :g:`< A C E ) <g1:< A C E )>`, :g:`< A C B ) <g1:< A C B )>` are equal to :g:`< B A C ) <g1:< B A C )>`, :g:`< A C B ) <g1:< A C B )>`, :g:`< C B A ) <g1:< C B A )>`.
 
-.. step:: assert [G.45] <G.45>
+.. step:: assert ∵ triangle_angle_sum <G.45>
 
    :g:`< B A C ) <g1:< B A C )>`, :g:`< A B C ) <g1:< A B C )>`, :g:`< A C B ) <g1:< A C B )>` are equal to two right angles.
 
@@ -91,7 +97,7 @@ G.197
 
    Therefore with a straight line :g:`/ A C / <g1:/ A C />`, and at :g:`C <g1:C>` on it, :g:`/ B C / <g1:/ B C />`, :g:`/ C E / <g1:/ C E />` not lying on the same side make the adjacent angles :g:`< A C E ) <g1:< A C E )>`, :g:`< A C B ) <g1:< A C B )>` equal to two right angles;
 
-.. step:: conclude [G.24] <G.24>
+.. step:: conclude ∵ supplementary_angles_collinear <G.24>
 
    Therefore :g:`/ B C / <g1:/ B C />` is in a straight line with :g:`/ C E / <g1:/ C E />`.
 

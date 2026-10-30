@@ -24,10 +24,16 @@ G.360
 
    A major straight line is divided at one and the same point only.
 
+.. signature:: theorem
+
+   | :fn:`major_straight_line <G.360>`\ (:g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`, :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />`)
+   | **given** :g:`/ A B / <g1:/ A B />` be a major straight line divided at :g:`C <g1:C>`, so that :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` are incommensurable in square and make the sum of the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` rational, but the rectangle :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` medial
+   | **prove** :g:`/ A B / <g1:/ A B />` is not so divided at another point
+
 .. picture:: g1.svg
    :alt: Proposition 45 diagram
 
-.. step:: given [G.354] <G.354>
+.. step:: given
 
    :g:`/ A B / <g1:/ A B />` be a major straight line divided at :g:`C <g1:C>`, so that :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` are incommensurable in square and make the sum of the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` rational, but the rectangle :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` medial
 
@@ -39,7 +45,7 @@ G.360
 
    Since that by which the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` differ from the squares on :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` is also that by which twice the rectangle :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` differs from twice the rectangle :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />`, while the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` exceed the squares on :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` by a rational area—for both are rational—
 
-.. step:: conclude [G.341] <G.341>
+.. step:: conclude ∵ medial_area_exceed <G.341>
 
    Therefore twice the rectangle :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` also exceeds twice the rectangle :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` by a rational area, though they are medial : which is impossible.
 

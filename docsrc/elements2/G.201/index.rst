@@ -24,6 +24,12 @@ G.201
 
    Given two numbers not prime to one another, to find their greatest common measure.
 
+.. signature:: problem
+
+   | :fn:`numbers_prime_find <G.201>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`)
+   | **given** :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` be the two given numbers not prime to one another
+   | **construct** PORISM. From this it is manifest that, if a number measure two numbers, it will also measure their greatest common measure
+
 .. picture:: g1.svg
    :alt: Proposition 2 Diagram
 
@@ -47,7 +53,7 @@ G.201
 
    But, if :g:`/ C D / <g1:/ C D />` does not measure :g:`/ A B / <g1:/ A B />`, then, the less of the numbers :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` being continually subtracted from the greater, some number will be left which will measure the one before it.
 
-.. step:: assert [G.200] <G.200>
+.. step:: assert ∵ unequal_numbers_set <G.200>
 
    For an unit will not be left; otherwise :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` will be prime to one another, which is contrary to the hypothesis.
 
@@ -57,11 +63,7 @@ G.201
 
 .. step:: assert
 
-   Now let :g:`/ C D / <g1:/ C D />`, measuring :g:`/ E B / <g1:/ E B />`, leave :g:`/ A E / <g1:/ A E />` less than itself, let :g:`/ A E / <g1:/ A E />`, measuring :g:`/ F D / <g1:/ F D />`, leave :g:`/ C F / <g1:/ C F />` less than itself
-
-.. step:: assert
-
-   Let :g:`/ C F / <g1:/ C F />` measure :g:`/ A E / <g1:/ A E />`.
+   Now let :g:`/ C D / <g1:/ C D />`, measuring :g:`/ E B / <g1:/ E B />`, leave :g:`/ A E / <g1:/ A E />` less than itself, let :g:`/ A E / <g1:/ A E />`, measuring :g:`/ F D / <g1:/ F D />`, leave :g:`/ C F / <g1:/ C F />` less than itself, and let :g:`/ C F / <g1:/ C F />` measure :g:`/ A E / <g1:/ A E />`.
 
 .. step:: assert
 
@@ -117,11 +119,7 @@ G.201
 
 .. step:: assert
 
-   Let such a number measure them
-
-.. step:: assert
-
-   Let it be :g:`G <g1:G>`.
+   Let such a number measure them, and let it be :g:`G <g1:G>`.
 
 .. step:: assert
 

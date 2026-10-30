@@ -24,20 +24,22 @@ G.226
 
    If two numbers be prime to one another, the product of one of them into itself is prime to the remaining one.
 
+.. signature:: theorem
+
+   | :fn:`numbers_prime_product <G.226>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`)
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>` be two numbers prime to one another, let :g:`A <g1:A>` by multiplying itself make :g:`C <g1:C>`:
+   | **prove** :g:`B <g1:B>`, :g:`C <g1:C>` are prime to one another
+
 .. picture:: g1.svg
    :alt: Book VII, Proposition 25
 
 .. step:: given
 
-   :g:`A <g1:A>`, :g:`B <g1:B>` be two numbers prime to one another
-
-.. step:: assert
-
-   Let :g:`A <g1:A>` by multiplying itself make :g:`C <g1:C>`:
+   :g:`A <g1:A>`, :g:`B <g1:B>` be two numbers prime to one another, let :g:`A <g1:A>` by multiplying itself make :g:`C <g1:C>`:
 
 .. step:: construct
 
-   For let :g:`D <g1:D>` be made :eq:`equal <g1:D = g1:A>` to :g:`A <g1:A>`.
+   :fn:`cut_equal_segment <G.9>`\ (:g:`A <g1:A>`) → :g:`D <g1:D>` (:eq:`equal <g1:D = g1:A>`)
 
 .. step:: assert
 
@@ -51,7 +53,7 @@ G.226
 
    Therefore each of the two numbers :g:`D <g1:D>`, :g:`A <g1:A>` is prime to :g:`B <g1:B>` ;
 
-.. step:: assert [G.225] <G.225>
+.. step:: assert ∵ numbers_prime_number_vii_24 <G.225>
 
    Therefore the product of :g:`D <g1:D>`, :g:`A <g1:A>` will also be prime to :g:`B <g1:B>`.
 

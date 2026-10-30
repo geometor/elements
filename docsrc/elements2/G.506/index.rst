@@ -24,16 +24,18 @@ G.506
 
    Spheres are to one another in the triplicate ratio of their respective diameters.
 
+.. signature:: theorem
+
+   | :fn:`spheres_triplicate_ratio <G.506>`\ (:g:`( A B C ) <g1:( A B C )>`, :g:`( D E F ) <g1:( D E F )>`, :g:`/ B C / <g1:/ B C />`, :g:`/ E F / <g1:/ E F />`)
+   | **given** the spheres :g:`( A B C ) <g1:( A B C )>`, :g:`( D E F ) <g1:( D E F )>` be conceived, let :g:`/ B C / <g1:/ B C />`, :g:`/ E F / <g1:/ E F />` be their diameters
+   | **prove** the sphere :g:`( A B C ) <g1:( A B C )>` has to the sphere :g:`( D E F ) <g1:( D E F )>` the ratio triplicate of that which :g:`/ B C / <g1:/ B C />` has to :g:`/ E F / <g1:/ E F />`
+
 .. picture:: g1.svg
    :alt: Book XII, Proposition 18
 
 .. step:: given
 
-   the spheres :g:`( A B C ) <g1:( A B C )>`, :g:`( D E F ) <g1:( D E F )>` be conceived
-
-.. step:: assert
-
-   Let :g:`/ B C / <g1:/ B C />`, :g:`/ E F / <g1:/ E F />` be their diameters
+   the spheres :g:`( A B C ) <g1:( A B C )>`, :g:`( D E F ) <g1:( D E F )>` be conceived, let :g:`/ B C / <g1:/ B C />`, :g:`/ E F / <g1:/ E F />` be their diameters
 
 .. step:: assert
 
@@ -43,11 +45,11 @@ G.506
 
    Then the sphere :g:`( A B C ) <g1:( A B C )>` will have either to some less sphere than the sphere :g:`( D E F ) <g1:( D E F )>`, or to a greater, the ratio triplicate of that which :g:`/ B C / <g1:/ B C />` has to :g:`/ E F / <g1:/ E F />`.
 
-.. step:: assert [G.505] <G.505>
+.. step:: construct
 
-   First, let it have that ratio to a less sphere :g:`( G H K ) <g1:( G H K )>`, let :g:`( D E F ) <g1:( D E F )>` be conceived about the same center with :g:`( G H K ) <g1:( G H K )>`, let there be inscribed in the greater sphere :g:`( D E F ) <g1:( D E F )>` a polyhedral solid which does not touch the lesser sphere :g:`( G H K ) <g1:( G H K )>` at its surface, and let there also be inscribed in the sphere :g:`( A B C ) <g1:( A B C )>` a polyhedral solid similar to the polyhedral solid in the sphere :g:`( D E F ) <g1:( D E F )>`
+   :fn:`spheres_centre_inscribe <G.505>`: First, let it have that ratio to a less sphere :g:`( G H K ) <g1:( G H K )>`, let :g:`( D E F ) <g1:( D E F )>` be conceived about the same center with :g:`( G H K ) <g1:( G H K )>`, let there be inscribed in the greater sphere :g:`( D E F ) <g1:( D E F )>` a polyhedral solid which does not touch the lesser sphere :g:`( G H K ) <g1:( G H K )>` at its surface, and let there also be inscribed in the sphere :g:`( A B C ) <g1:( A B C )>` a polyhedral solid similar to the polyhedral solid in the sphere :g:`( D E F ) <g1:( D E F )>`
 
-.. step:: assert [G.505] <G.505>
+.. step:: assert ∵ spheres_centre_inscribe <G.505>
 
    Therefore the polyhedral solid in :g:`( A B C ) <g1:( A B C )>` has to the polyhedral solid in :g:`( D E F ) <g1:( D E F )>` the ratio triplicate of that which :g:`/ B C / <g1:/ B C />` has to :g:`/ E F / <g1:/ E F />`.
 
@@ -55,7 +57,7 @@ G.506
 
    The sphere :g:`( A B C ) <g1:( A B C )>` also has to the sphere :g:`( G H K ) <g1:( G H K )>` the ratio triplicate of that which :g:`/ B C / <g1:/ B C />` has to :g:`/ E F / <g1:/ E F />`;
 
-.. step:: assert [G.153] <G.153>
+.. step:: assert ∵ magnitudes_proportional_proportional <G.153>
 
    Therefore, as the sphere :g:`( A B C ) <g1:( A B C )>` is to the sphere :g:`( G H K ) <g1:( G H K )>`, so is the polyhedral solid in the sphere :g:`( A B C ) <g1:( A B C )>` to the polyhedral solid in the sphere :g:`( D E F ) <g1:( D E F )>`; and, alternately, as the sphere :g:`( A B C ) <g1:( A B C )>` is to the polyhedron in it, so is the sphere :g:`( G H K ) <g1:( G H K )>` to the polyhedral solid in the sphere :g:`( D E F ) <g1:( D E F )>`.
 
@@ -95,7 +97,7 @@ G.506
 
    But, inasmuch as :g:`( L M N ) <g1:( L M N )>` is greater than :g:`( D E F ) <g1:( D E F )>`,
 
-.. step:: assert [G.488] <G.488>
+.. step:: assert ∵ circles_squares_diameters <G.488>
 
    Therefore, as the sphere :g:`( L M N ) <g1:( L M N )>` is to the sphere :g:`( A B C ) <g1:( A B C )>`, so is the sphere :g:`( D E F ) <g1:( D E F )>` to some less sphere than the sphere :g:`( A B C ) <g1:( A B C )>`, as was before proved.
 

@@ -24,32 +24,38 @@ G.503
 
    Given two circles about the same centre, to inscribe in the greater circle an equilateral polygon with an even number of sides which does not touch the lesser circle.
 
+.. signature:: problem
+
+   | :fn:`circles_centre_inscribe <G.503>`\ (:g:`( A B C D ) <g1:( A B C D )>`, :g:`( E F G H ) <g1:( E F G H )>`, :g:`K <g1:K>`) → :g:`/ L N / <g1:/ L N />`, :g:`/ L D / <g1:/ L D />`
+   | **given** :g:`( A B C D ) <g1:( A B C D )>`, :g:`( E F G H ) <g1:( E F G H )>` about the same center :g:`K <g1:K>`
+   | **construct** :g:`/ L N / <g1:/ L N />` does not touch :g:`( E F G H ) <g1:( E F G H )>` ; therefore :g:`/ L D / <g1:/ L D />`, :g:`/ D N / <g1:/ D N />` are far from touching :g:`( E F G H ) <g1:( E F G H )>`
+
 .. picture:: g1.svg
    :alt: Proposition 16
 
 .. step:: given
 
-   :g:`( A B C D ) <g1:( A B C D )>`, :g:`( E F G H ) <g1:( E F G H )>` be the two given circles about the same center :g:`K <g1:K>`
+   :g:`( A B C D ) <g1:( A B C D )>`, :g:`( E F G H ) <g1:( E F G H )>` about the same center :g:`K <g1:K>`
 
 .. step:: construct
 
-   For let :g:`/ B K D / <g1:/ B K D />` be drawn through the center :g:`K <g1:K>`
+   Let :g:`/ B K D / <g1:/ B K D />` be drawn through the center :g:`K <g1:K>`
 
 .. step:: construct
 
    From :g:`G <g1:G>` let :g:`/ G A / <g1:/ G A />` be drawn at right angles to :g:`/ B D / <g1:/ B D />` and carried through to :g:`C <g1:C>`
 
-.. step:: assert [G.94] <G.94>
+.. step:: assert ∵ straight_line_drawn <G.94>
 
    Therefore :g:`/ A C / <g1:/ A C />` touches :g:`( E F G H ) <g1:( E F G H )>`.
 
-.. step:: assert [G.313] <G.313>
+.. step:: assert ∵ unequal_magnitudes_set <G.313>
 
-   Bisecting the circumference :g:`( B A D ) <g1:( B A D )>`, bisecting the half of it, and doing this continually, we shall leave a circumference less than :g:`( A D ) <g1:( A D )>`. Let such be left
+   Bisecting the circumference :g:`( B A D ) <g1:( B A D )>`, bisecting the half of it, and doing this continually, we shall leave a circumference less than :g:`( A D ) <g1:( A D )>`
 
 .. step:: assert
 
-   Let it be :g:`( L D ) <g1:( L D )>`
+   Let such be left, and let it be :g:`( L D ) <g1:( L D )>`
 
 .. step:: construct
 
@@ -57,9 +63,9 @@ G.503
 
 .. step:: construct
 
-   **segment** :g:`/ L D / <g1:/ L D />`, :g:`/ D N / <g1:/ D N />`
+   :fn:`segment <G.3>`\ (:g:`L <g1:L>`, :g:`D <g1:D>`) → :g:`/ L D / <g1:/ L D />`, :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`N <g1:N>`) → :g:`/ D N / <g1:/ D N />`
 
-.. step:: assert [G.78, G.11] <G.78, G.11>
+.. step:: assert ∵ circle_straight_line, sas_congruence <G.78, G.11>
 
    Therefore :g:`/ L D / <g1:/ L D />` is :eq:`equal <g1:/ L D / = g1:/ D N />` to :g:`/ D N / <g1:/ D N />`.
 

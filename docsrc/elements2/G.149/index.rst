@@ -24,6 +24,12 @@ G.149
 
    If any number of magnitudes be proportional, as one of the antecedents is to one of the consequents, so will all the antecedents be to all the consequents.
 
+.. signature:: theorem
+
+   | :fn:`number_magnitudes_proportional <G.149>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`)
+   | **given** any number of magnitudes :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`F <g1:F>` be proportional, so that, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`D <g1:D>` and :g:`E <g1:E>` to :g:`F <g1:F>`
+   | **prove** as :g:`A <g1:A>` is to :g:`B <g1:B>`, so are :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`E <g1:E>` to :g:`B <g1:B>`, :g:`D <g1:D>`, :g:`F <g1:F>`
+
 .. picture:: g1.svg
    :alt: Proposition 12 diagram
 
@@ -31,9 +37,13 @@ G.149
 
    any number of magnitudes :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`F <g1:F>` be proportional, so that, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`D <g1:D>` and :g:`E <g1:E>` to :g:`F <g1:F>`
 
+.. step:: assert
+
+   I say that, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so are :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`E <g1:E>` to :g:`B <g1:B>`, :g:`D <g1:D>`, :g:`F <g1:F>`.
+
 .. step:: construct
 
-   For of :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`E <g1:E>` let equimultiples :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`K <g1:K>` be taken, and of :g:`B <g1:B>`, :g:`D <g1:D>`, :g:`F <g1:F>` other, chance, equimultiples :g:`L <g1:L>`, :g:`M <g1:M>`, :g:`N <g1:N>`.
+   Of :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`E <g1:E>` let equimultiples :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`K <g1:K>` be taken, and of :g:`B <g1:B>`, :g:`D <g1:D>`, :g:`F <g1:F>` other, chance, equimultiples :g:`L <g1:L>`, :g:`M <g1:M>`, :g:`N <g1:N>`.
 
 .. step:: assert
 
@@ -47,15 +57,15 @@ G.149
 
    So that, in addition, if :g:`G <g1:G>` is in excess of :g:`L <g1:L>`, then :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`K <g1:K>` are in excess of :g:`L <g1:L>`, :g:`M <g1:M>`, :g:`N <g1:N>`, if :eq:`equal <g1:G = g1:L>`, equal, and if less, less.
 
-.. step:: assert [G.135] <G.135>
+.. step:: assert ∵ there_number_magnitudes <G.135>
 
    Now :g:`G <g1:G>` and :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`K <g1:K>` are equimultiples of :g:`A <g1:A>` and :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`E <g1:E>`, since, if any number of magnitudes whatever are respectively equimultiples of any magnitudes equal in multitude, whatever multiple one of the magnitudes is of one, that multiple also will all be of all.
 
 .. step:: assert
 
-   For the same reason :g:`L <g1:L>` and :g:`L <g1:L>`, :g:`M <g1:M>`, :g:`N <g1:N>` are also equimultiples of :g:`B <g1:B>` and :g:`B <g1:B>`, :g:`D <g1:D>`, :g:`F <g1:F>`
+   The same reason :g:`L <g1:L>` and :g:`L <g1:L>`, :g:`M <g1:M>`, :g:`N <g1:N>` are also equimultiples of :g:`B <g1:B>` and :g:`B <g1:B>`, :g:`D <g1:D>`, :g:`F <g1:F>`
 
-.. step:: conclude [G.138] <G.138>
+.. step:: conclude ∵ magnitudes_said_ratio_def <G.138>
 
    Therefore, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so are :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`E <g1:E>` to :g:`B <g1:B>`, :g:`D <g1:D>`, :g:`F <g1:F>`.
 

@@ -24,26 +24,27 @@ G.288
 
    If there be as many numbers as we please in continued proportion, and the extremes of them be prime to one another, the last will not be to any other number as the first to the second.
 
+.. signature:: theorem
+
+   | :fn:`there_many_numbers_ix_17 <G.288>`\ ()
+   | **prove** :g:`D <g1:D>` is not to any other number as :g:`A <g1:A>` is to :g:`B <g1:B>`
+
 .. picture:: g1.svg
    :alt: Proposition 17
 
 .. step:: assert
 
-   For let there be as many numbers as we please, :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, in continued proportion
-
-.. step:: assert
-
-   Let the extremes of them, :g:`A <g1:A>`, :g:`D <g1:D>`, be prime to one another
+   Let there be as many numbers as we please, :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, in continued proportion, and let the extremes of them, :g:`A <g1:A>`, :g:`D <g1:D>`, be prime to one another
 
 .. step:: assert
 
    If possible, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so let :g:`D <g1:D>` be to :g:`E <g1:E>`
 
-.. step:: assert [G.213] <G.213>
+.. step:: assert ∵ numbers_proportional_proportional <G.213>
 
    Therefore, alternately, as :g:`A <g1:A>` is to :g:`D <g1:D>`, so is :g:`B <g1:B>` to :g:`E <g1:E>`.
 
-.. step:: assert [G.221, G.220] <G.221, G.220>
+.. step:: assert ∵ numbers_prime_least, least_numbers_ratio <G.221, G.220>
 
    :g:`A <g1:A>`, :g:`D <g1:D>` are prime, primes are also least, and the least numbers measure those which have the same ratio the same number of times, the antecedent the antecedent and the consequent the consequent.
 

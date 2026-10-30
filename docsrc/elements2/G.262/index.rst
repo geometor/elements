@@ -24,18 +24,23 @@ G.262
 
    If one mean proportional number fall between two numbers, the numbers is similar plane numbers.
 
+.. signature:: theorem
+
+   | :fn:`mean_proportional_number <G.262>`\ ()
+   | **prove** :g:`A <g1:A>`, :g:`B <g1:B>` are similar plane numbers
+
 .. picture:: g1.svg
    :alt: Book VIII, Proposition 20
 
 .. step:: assert
 
-   For let one mean proportional number :g:`C <g1:C>` fall between the two numbers :g:`A <g1:A>`, :g:`B <g1:B>`
+   Let one mean proportional number :g:`C <g1:C>` fall between the two numbers :g:`A <g1:A>`, :g:`B <g1:B>`
 
-.. step:: construct [G.234] <G.234>
+.. step:: construct
 
-   Let :g:`D <g1:D>`, :g:`E <g1:E>`, the least numbers of those which have the same ratio with :g:`A <g1:A>`, :g:`C <g1:C>`, be taken
+   :fn:`many_numbers_please <G.234>`: Let :g:`D <g1:D>`, :g:`E <g1:E>`, the least numbers of those which have the same ratio with :g:`A <g1:A>`, :g:`C <g1:C>`, be taken
 
-.. step:: assert [G.220] <G.220>
+.. step:: assert ∵ least_numbers_ratio <G.220>
 
    Therefore :g:`D <g1:D>` measures :g:`A <g1:A>` the same number of times that :g:`E <g1:E>` measures :g:`C <g1:C>`.
 
@@ -51,7 +56,7 @@ G.262
 
    Since :g:`D <g1:D>`, :g:`E <g1:E>` are the least of the numbers which have the same ratio with :g:`C <g1:C>`, :g:`B <g1:B>`,
 
-.. step:: assert [G.220] <G.220>
+.. step:: assert ∵ least_numbers_ratio <G.220>
 
    Therefore :g:`D <g1:D>` measures :g:`C <g1:C>` the same number of times that :g:`E <g1:E>` measures :g:`B <g1:B>`.
 
@@ -79,7 +84,7 @@ G.262
 
    † since :g:`F <g1:F>` by multiplying :g:`D <g1:D>` has made :g:`A <g1:A>`, and by multiplying :g:`E <g1:E>` has made :g:`C <g1:C>`,
 
-.. step:: assert [G.217] <G.217>
+.. step:: assert ∵ number_multiplying_numbers <G.217>
 
    Therefore, as :g:`D <g1:D>` is to :g:`E <g1:E>`, so is :g:`A <g1:A>` to :g:`C <g1:C>`, that is, :g:`C <g1:C>` to :g:`B <g1:B>`.
 
@@ -87,7 +92,7 @@ G.262
 
    † since :g:`E <g1:E>` by multiplying :g:`F <g1:F>`, :g:`G <g1:G>` has made :g:`C <g1:C>`, :g:`B <g1:B>` respectively,
 
-.. step:: assert [G.217] <G.217>
+.. step:: assert ∵ number_multiplying_numbers <G.217>
 
    Therefore, as :g:`F <g1:F>` is to :g:`G <g1:G>`, so is :g:`C <g1:C>` to :g:`B <g1:B>`.
 
@@ -99,7 +104,7 @@ G.262
 
    Therefore also, as :g:`D <g1:D>` is to :g:`E <g1:E>`, so is :g:`F <g1:F>` to :g:`G <g1:G>`.
 
-.. step:: assert [G.213] <G.213>
+.. step:: assert ∵ numbers_proportional_proportional <G.213>
 
    Alternately, as :g:`D <g1:D>` is to :g:`F <g1:F>`, so is :g:`E <g1:E>` to :g:`G <g1:G>`.
 

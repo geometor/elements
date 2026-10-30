@@ -24,22 +24,27 @@ G.352
 
    If two medial straight lines commensurable in square only and containing a rational rectangle be added together, the whole is irrational; and let it be called a:term:`**first bimedial straight line** <first-bimedial>`.
 
+.. signature:: theorem
+
+   | :fn:`medial_straight_lines <G.352>`\ ()
+   | **prove** the whole :g:`/ A C / <g1:/ A C />` is irrational
+
 .. picture:: g1.svg
    :alt: Proposition 37
 
-.. step:: assert
+.. step:: construct
 
-   For let two medial straight lines :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` commensurable in square only and containing a rational rectangle be added together
+   Let two medial straight lines :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` commensurable in square only and containing a rational rectangle be added together
 
 .. step:: assert
 
    Since :g:`/ A B / <g1:/ A B />` is incommensurable in length with :g:`/ B C / <g1:/ B C />`,
 
-.. step:: assert [G.351] <G.351>
+.. step:: assert ∵ rational_straight_lines <G.351>
 
    Therefore the squares on :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are also incommensurable with twice the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`.
 
-.. step:: assert [G.65, G.329] <G.65, G.329>
+.. step:: assert ∵ square_of_sum, incommensurable_magnitudes_added <G.65, G.329>
 
    And, :term:`*componendo* <componendo>`, the squares on :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` together with twice the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, that is, the square on :g:`/ A C / <g1:/ A C />`, is incommensurable with the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`.
 
@@ -47,7 +52,7 @@ G.352
 
    The rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` is rational, for, by hypothesis, :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are straight lines containing a rational rectangle;
 
-.. step:: conclude [G.332] <G.332>
+.. step:: conclude ∵ square_assigned_straight_def <G.332>
 
    Therefore the square on :g:`/ A C / <g1:/ A C />` is irrational; therefore :g:`/ A C / <g1:/ A C />` is irrational.
 

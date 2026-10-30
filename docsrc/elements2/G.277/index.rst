@@ -24,22 +24,27 @@ G.277
 
    If a composite number by multiplying any number make some number, the product is solid.
 
+.. signature:: theorem
+
+   | :fn:`composite_number_multiplying <G.277>`\ ()
+   | **prove** :g:`C <g1:C>` is solid
+
 .. picture:: g1.svg
    :alt: Proposition 7 Diagram
 
 .. step:: assert
 
-   For let the composite number :g:`A <g1:A>` by multiplying any number :g:`B <g1:B>` make :g:`C <g1:C>`
+   Let the composite number :g:`A <g1:A>` by multiplying any number :g:`B <g1:B>` make :g:`C <g1:C>`
 
 .. step:: assert
 
    Since :g:`A <g1:A>` is composite,
 
-.. step:: assert [G.276] <G.276>
+.. step:: assert ∵ composite_number_measured_def <G.276>
 
    It will be measured by some number.
 
-.. step:: assert
+.. step:: construct
 
    Let it be measured by :g:`D <g1:D>`
 
@@ -51,7 +56,7 @@ G.277
 
    Since then :g:`D <g1:D>` measures :g:`A <g1:A>` according to the units in :g:`E <g1:E>`,
 
-.. step:: assert [G.222] <G.222>
+.. step:: assert ∵ number_said_multiply_def <G.222>
 
    Therefore :g:`E <g1:E>` by multiplying :g:`D <g1:D>` has made :g:`A <g1:A>`.
 

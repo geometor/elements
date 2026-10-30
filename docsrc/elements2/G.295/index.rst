@@ -24,18 +24,23 @@ G.295
 
    If as many odd numbers as we please be added together, and their multitude be even, the whole is even.
 
+.. signature:: theorem
+
+   | :fn:`many_odd_numbers <G.295>`\ ()
+   | **prove** the whole :g:`/ A E / <g1:/ A E />` is even
+
 .. picture:: g1.svg
    :alt: Book IX, Proposition 22
 
-.. step:: assert
+.. step:: construct
 
-   For let as many odd numbers as we please, :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ C D / <g1:/ C D />`, :g:`/ D E / <g1:/ D E />`, even in multitude, be added together
+   Let as many odd numbers as we please, :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ C D / <g1:/ C D />`, :g:`/ D E / <g1:/ D E />`, even in multitude, be added together
 
-.. step:: assert [G.294] <G.294>
+.. step:: assert ∵ odd_number_divisible_def <G.294>
 
    Since each of the numbers :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ C D / <g1:/ C D />`, :g:`/ D E / <g1:/ D E />` is odd, if an unit be subtracted from each, each of the remainders will be even .
 
-.. step:: assert [G.293] <G.293>
+.. step:: assert ∵ many_even_numbers <G.293>
 
    So that the sum of them will be even.
 
@@ -43,7 +48,7 @@ G.295
 
    The multitude of the units is also even.
 
-.. step:: conclude [G.293] <G.293>
+.. step:: conclude ∵ many_even_numbers <G.293>
 
    Therefore the whole :g:`/ A E / <g1:/ A E />` is also even.
 

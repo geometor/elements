@@ -24,16 +24,17 @@ G.445
 
    If two planes cut one another, their common section is a straight line.
 
+.. signature:: theorem
+
+   | :fn:`planes_cut_common <G.445>`\ ()
+   | **prove** the line :g:`/ D B / <g1:/ D B />` is a straight line
+
 .. picture:: g1.svg
    :alt: Book XI, Proposition 3
 
 .. step:: assert
 
-   For let the two planes :g:`< A B > <g1:< A B >>`, :g:`< B C > <g1:< B C >>` cut one another
-
-.. step:: assert
-
-   Let the line :g:`/ D B / <g1:/ D B />` be their common section
+   Let the two planes :g:`< A B > <g1:< A B >>`, :g:`< B C > <g1:< B C >>` cut one another, and let the line :g:`/ D B / <g1:/ D B />` be their common section
 
 .. step:: construct
 

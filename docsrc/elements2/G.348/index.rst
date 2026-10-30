@@ -24,34 +24,40 @@ G.348
 
    Find two straight lines incommensurable in square which make the sum of the squares on them rational but the rectangle contained by them medial.
 
+.. signature:: problem
+
+   | :fn:`find_straight_lines_x_33 <G.348>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`) → :g:`/ A F / <g1:/ A F />`
+   | **given** there be set out two rational straight lines :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` commensurable in square only and such that the square on the greater :g:`/ A B / <g1:/ A B />` is greater than the square on the less :g:`/ B C / <g1:/ B C />` by the square on a straight line incommensurable with :g:`/ A B / <g1:/ A B />`
+   | **construct** It was also proved that the sum of the squares on these straight lines is rational
+
 .. picture:: g1.svg
    :alt: Proposition 33 diagram
 
-.. step:: given [G.345] <G.345>
+.. step:: given
 
    there be set out two rational straight lines :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` commensurable in square only and such that the square on the greater :g:`/ A B / <g1:/ A B />` is greater than the square on the less :g:`/ B C / <g1:/ B C />` by the square on a straight line incommensurable with :g:`/ A B / <g1:/ A B />`
 
 .. step:: construct
 
-   Let :g:`/ B C / <g1:/ B C />` be :eq:`bisected <g1:/ B D / = g1:/ D C />` at :g:`D <g1:D>`, let there be applied to :g:`/ A B / <g1:/ A B />` a parallelogram equal to the square on either of :g:`/ B D / <g1:/ B D />`, :g:`/ D C / <g1:/ D C />` and deficient by a square figure
-
-.. step:: assert [G.193] <G.193>
-
-   Let it be the rectangle :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />`
+   :fn:`straight_line_apply <G.193>`: Let :g:`/ B C / <g1:/ B C />` be :eq:`bisected <g1:/ B D / = g1:/ D C />` at :g:`D <g1:D>`, let there be applied to :g:`/ A B / <g1:/ A B />` a parallelogram equal to the square on either of :g:`/ B D / <g1:/ B D />`, :g:`/ D C / <g1:/ D C />` and deficient by a square figure, and let it be the rectangle :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />`
 
 .. step:: construct
 
-   Let the semicircle :g:`( A F B ) <g1:( A F B )>` be described on :g:`/ A B / <g1:/ A B />`, let :g:`/ E F / <g1:/ E F />` be drawn at :eq:`right angles <g1:< A E F ) = g1:< B E F )>` to :g:`/ A B / <g1:/ A B />`
+   Let the semicircle :g:`( A F B ) <g1:( A F B )>` be described on :g:`/ A B / <g1:/ A B />`
 
 .. step:: construct
 
-   **segment** :g:`/ A F / <g1:/ A F />`, :g:`/ F B / <g1:/ F B />`
+   :fn:`perpendicular_at <G.19>`\ (:g:`/ A B / <g1:/ A B />`) → :g:`/ E F / <g1:/ E F />`
+
+.. step:: construct
+
+   :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`F <g1:F>`) → :g:`/ A F / <g1:/ A F />`, :fn:`segment <G.3>`\ (:g:`F <g1:F>`, :g:`B <g1:B>`) → :g:`/ F B / <g1:/ F B />`
 
 .. step:: assert
 
    Since :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are unequal straight lines, and the square on :g:`/ A B / <g1:/ A B />` is greater than the square on :g:`/ B C / <g1:/ B C />` by the square on a straight line incommensurable with :g:`/ A B / <g1:/ A B />`, while there has been applied to :g:`/ A B / <g1:/ A B />` a parallelogram equal to the fourth part of the square on :g:`/ B C / <g1:/ B C />`, that is, to the square on half of it, and deficient by a square figure, making the rectangle :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />`,
 
-.. step:: assert [G.331] <G.331>
+.. step:: assert ∵ there_unequal_straight_x_18 <G.331>
 
    Therefore :g:`/ A E / <g1:/ A E />` is incommensurable with :g:`/ E B / <g1:/ E B />`.
 
@@ -67,7 +73,7 @@ G.348
 
    And, since :g:`/ A B / <g1:/ A B />` is rational,
 
-.. step:: assert [G.60] <G.60>
+.. step:: assert ∵ pythagorean_theorem <G.60>
 
    Therefore the square on :g:`/ A B / <g1:/ A B />` is also rational ; so that the sum of the squares on :g:`/ A F / <g1:/ A F />`, :g:`/ F B / <g1:/ F B />` is also rational.
 
@@ -79,15 +85,15 @@ G.348
 
    Therefore :g:`/ F E / <g1:/ F E />` is :eq:`equal <g1:/ F E / = g1:/ B D />` to :g:`/ B D / <g1:/ B D />` ; therefore :g:`/ B C / <g1:/ B C />` is double of :g:`/ F E / <g1:/ F E />`, so that the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` is also commensurable with the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ E F / <g1:/ E F />`.
 
-.. step:: assert [G.335] <G.335>
+.. step:: assert ∵ rectangle_contained_rational_x_21 <G.335>
 
    The rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` is medial ;
 
-.. step:: assert [G.338] <G.338>
+.. step:: assert ∵ straight_line_commensurable <G.338>
 
    Therefore the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ E F / <g1:/ E F />` is also medial.
 
-.. step:: assert [Lemma] <Lemma>
+.. step:: assert ∵ Lemma <Lemma>
 
    The rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ E F / <g1:/ E F />` is equal to the rectangle :g:`/ A F / <g1:/ A F />`, :g:`/ F B / <g1:/ F B />` .
 

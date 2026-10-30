@@ -24,18 +24,23 @@ G.355
 
    If two straight lines incommensurable in square which make the sum of the squares on them medial, but the rectangle contained by them rational, be added together, the whole straight line is irrational; and let it be called the:term:`**side of a rational plus a medial area** <side-of-a-rational-plus-a-medial-area>`.
 
+.. signature:: theorem
+
+   | :fn:`straight_lines_incommensurable_x_40 <G.355>`\ ()
+   | **prove** :g:`/ A C / <g1:/ A C />` is irrational
+
 .. picture:: g1.svg
    :alt: Proposition 40 diagram
 
-.. step:: assert [G.349] <G.349>
+.. step:: construct
 
-   For let two straight lines :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` incommensurable in square, and fulfilling the given conditions, be added together
+   :fn:`find_straight_lines_x_34 <G.349>`: Let two straight lines :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` incommensurable in square, and fulfilling the given conditions, be added together
 
 .. step:: assert
 
    Since the sum of the squares on :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` is medial, while twice the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` is rational,
 
-.. step:: assert [G.329] <G.329>
+.. step:: assert ∵ incommensurable_magnitudes_added <G.329>
 
    Therefore the sum of the squares on :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` is incommensurable with twice the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`; so that the square on :g:`/ A C / <g1:/ A C />` is also incommensurable with twice the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`.
 
@@ -47,7 +52,7 @@ G.355
 
    Therefore the square on :g:`/ A C / <g1:/ A C />` is irrational.
 
-.. step:: assert [G.332] <G.332>
+.. step:: assert ∵ square_assigned_straight_def <G.332>
 
    Therefore :g:`/ A C / <g1:/ A C />` is irrational.
 

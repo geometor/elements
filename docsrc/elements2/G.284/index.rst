@@ -24,30 +24,28 @@ G.284
 
    If as many numbers as we please beginning from an unit be in continued proportion, and the number after the unit be prime, the greatest will not be measured by any except those which have a place among the proportional numbers.
 
+.. signature:: theorem
+
+   | :fn:`many_numbers_please_ix_13 <G.284>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`)
+   | **given** there be as many numbers as we please, :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, beginning from an unit and in continued proportion, let :g:`A <g1:A>`, the number after the unit, be prime
+   | **prove** :g:`D <g1:D>`, the greatest of them, will not be measured by any other number except :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`; :g:`F <g1:F>` is not the same with any of the numbers :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`
+
 .. picture:: g1.svg
    :alt: Proposition 13 diagram
 
 .. step:: given
 
-   there be as many numbers as we please, :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, beginning from an unit and in continued proportion
+   there be as many numbers as we please, :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, beginning from an unit and in continued proportion, let :g:`A <g1:A>`, the number after the unit, be prime
 
-.. step:: assert
+.. step:: construct
 
-   Let :g:`A <g1:A>`, the number after the unit, be prime
-
-.. step:: assert
-
-   If possible, let it be measured by :g:`E <g1:E>`
-
-.. step:: assert
-
-   Let :g:`E <g1:E>` not be the same with any of the numbers :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`.
+   If possible, let it be measured by :g:`E <g1:E>`, and let :g:`E <g1:E>` not be the same with any of the numbers :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`.
 
 .. step:: assert
 
    It is then manifest that :g:`E <g1:E>` is not prime.
 
-.. step:: assert [G.283] <G.283>
+.. step:: assert ∵ many_numbers_please_ix_12 <G.283>
 
    If :g:`E <g1:E>` is prime and measures :g:`D <g1:D>`, it will also measure :g:`A <g1:A>`, which is prime, though it is not the same with it:
 
@@ -63,7 +61,7 @@ G.284
 
    Therefore it is composite.
 
-.. step:: assert [G.232] <G.232>
+.. step:: assert ∵ composite_number_measured <G.232>
 
    Any composite number is measured by some prime number .
 
@@ -79,7 +77,7 @@ G.284
 
    If :g:`E <g1:E>` is measured by another, and :g:`E <g1:E>` measures :g:`D <g1:D>`,
 
-.. step:: assert [G.283] <G.283>
+.. step:: assert ∵ many_numbers_please_ix_12 <G.283>
 
    That other will also measure :g:`D <g1:D>` ; so that it will also measure :g:`A <g1:A>`, which is prime, though it is not the same with it : which is impossible.
 
@@ -99,7 +97,7 @@ G.284
 
    Therefore one of the numbers :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` also measures :g:`D <g1:D>` according to :g:`E <g1:E>`.
 
-.. step:: assert [G.281] <G.281>
+.. step:: assert ∵ many_numbers_please_ix_11 <G.281>
 
    One of the numbers :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` measures :g:`D <g1:D>` according to some one of the numbers :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` .
 
@@ -119,7 +117,7 @@ G.284
 
    If it is, and measures :g:`D <g1:D>`,
 
-.. step:: assert [G.283] <G.283>
+.. step:: assert ∵ many_numbers_please_ix_12 <G.283>
 
    It will also measure :g:`A <g1:A>`, which is prime, though it is not the same with it : which is impossible ; therefore :g:`F <g1:F>` is not prime.
 
@@ -127,7 +125,7 @@ G.284
 
    Therefore it is composite.
 
-.. step:: assert [G.232] <G.232>
+.. step:: assert ∵ composite_number_measured <G.232>
 
    Any composite number is measured by some prime number .
 
@@ -143,7 +141,7 @@ G.284
 
    If any other prime number measures :g:`F <g1:F>`, and :g:`F <g1:F>` measures :g:`D <g1:D>`,
 
-.. step:: assert [G.283] <G.283>
+.. step:: assert ∵ many_numbers_please_ix_12 <G.283>
 
    That other will also measure :g:`D <g1:D>` ; so that it will also measure :g:`A <g1:A>`, which is prime, though it is not the same with it : which is impossible.
 
@@ -159,7 +157,7 @@ G.284
 
    Therefore :g:`E <g1:E>` by multiplying :g:`F <g1:F>` has made :g:`D <g1:D>`.
 
-.. step:: assert [G.281] <G.281>
+.. step:: assert ∵ many_numbers_please_ix_11 <G.281>
 
    But, further, :g:`A <g1:A>` has also by multiplying :g:`C <g1:C>` made :g:`D <g1:D>` ;
 
@@ -167,7 +165,7 @@ G.284
 
    Therefore the product of :g:`A <g1:A>`, :g:`C <g1:C>` is equal to the product of :g:`E <g1:E>`, :g:`F <g1:F>`.
 
-.. step:: assert [G.219] <G.219>
+.. step:: assert ∵ numbers_proportional_number <G.219>
 
    Therefore, proportionally, as :g:`A <g1:A>` is to :g:`E <g1:E>`, so is :g:`F <g1:F>` to :g:`C <g1:C>`.
 
@@ -195,7 +193,7 @@ G.284
 
    Therefore :g:`F <g1:F>` by multiplying :g:`G <g1:G>` has made :g:`C <g1:C>`.
 
-.. step:: assert [G.281] <G.281>
+.. step:: assert ∵ many_numbers_please_ix_11 <G.281>
 
    But, further, :g:`A <g1:A>` has also by multiplying :g:`B <g1:B>` made :g:`C <g1:C>` ;
 
@@ -203,7 +201,7 @@ G.284
 
    Therefore the product of :g:`A <g1:A>`, :g:`B <g1:B>` is equal to the product of :g:`F <g1:F>`, :g:`G <g1:G>`.
 
-.. step:: assert [G.219] <G.219>
+.. step:: assert ∵ numbers_proportional_number <G.219>
 
    Therefore, proportionally, as :g:`A <g1:A>` is to :g:`F <g1:F>`, so is :g:`G <g1:G>` to :g:`B <g1:B>`.
 
@@ -231,7 +229,7 @@ G.284
 
    Therefore :g:`G <g1:G>` by multiplying :g:`H <g1:H>` has made :g:`B <g1:B>`.
 
-.. step:: assert [G.278] <G.278>
+.. step:: assert ∵ many_numbers_please_ix_8 <G.278>
 
    Further :g:`A <g1:A>` has also by multiplying itself made :g:`B <g1:B>` ;
 
@@ -239,7 +237,7 @@ G.284
 
    Therefore the product of :g:`H <g1:H>`, :g:`G <g1:G>` is equal to the square on :g:`A <g1:A>`.
 
-.. step:: assert [G.219] <G.219>
+.. step:: assert ∵ numbers_proportional_number <G.219>
 
    Therefore, as :g:`H <g1:H>` is to :g:`A <g1:A>`, so is :g:`A <g1:A>` to :g:`G <g1:G>`.
 

@@ -24,14 +24,20 @@ G.347
 
    Find two medial straight lines commensurable in square only, containing a medial rectangle, and such that the square on the greater is greater than the square on the less by the square on a straight line commensurable with the greater.
 
+.. signature:: problem
+
+   | :fn:`find_medial_straight_x_32 <G.347>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`) → :g:`E <g1:E>`
+   | **given** there be set out three rational straight lines :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` commensurable in square only, such that the square on :g:`A <g1:A>` is greater than the square on :g:`C <g1:C>` by the square on a straight line commensurable with :g:`A <g1:A>`, let the square on :g:`D <g1:D>` be equal to the rectangle :g:`A <g1:A>`, :g:`B <g1:B>`
+   | **construct** Similarly again it can be proved that the square on :g:`D <g1:D>` is greater than the square on :g:`E <g1:E>` by the square on a straight line *incommensurable* with :g:`D <g1:D>`, when the square on :g:`A <g1:A>` is greater than the square on :g:`C <g1:C>` by the square on a straight line incommensurable with :g:`A <g1:A>`
+
 .. picture:: g1.svg
    :alt: Proposition 32 diagram
 
-.. step:: given [G.344] <G.344>
+.. step:: given
 
    there be set out three rational straight lines :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` commensurable in square only, such that the square on :g:`A <g1:A>` is greater than the square on :g:`C <g1:C>` by the square on a straight line commensurable with :g:`A <g1:A>`, let the square on :g:`D <g1:D>` be equal to the rectangle :g:`A <g1:A>`, :g:`B <g1:B>`
 
-.. step:: assert [G.335] <G.335>
+.. step:: assert ∵ rectangle_contained_rational_x_21 <G.335>
 
    Therefore the square on :g:`D <g1:D>` is medial ; therefore :g:`D <g1:D>` is also medial.
 
@@ -59,7 +65,7 @@ G.347
 
    :g:`A <g1:A>` is commensurable with :g:`C <g1:C>` in square only ;
 
-.. step:: assert [G.323] <G.323>
+.. step:: assert ∵ magnitudes_proportional_commensurable <G.323>
 
    Therefore :g:`D <g1:D>` is also commensurable with :g:`E <g1:E>` in square only.
 
@@ -67,7 +73,7 @@ G.347
 
    :g:`D <g1:D>` is medial ;
 
-.. step:: assert [G.338] <G.338>
+.. step:: assert ∵ straight_line_commensurable <G.338>
 
    Therefore :g:`E <g1:E>` is also medial.
 
@@ -75,7 +81,7 @@ G.347
 
    And, since, as :g:`A <g1:A>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to :g:`E <g1:E>`, while the square on :g:`A <g1:A>` is greater than the square on :g:`C <g1:C>` by the square on a straight line commensurable with :g:`A <g1:A>`,
 
-.. step:: assert [G.327] <G.327>
+.. step:: assert ∵ straight_lines_proportional_x_14 <G.327>
 
    Therefore also the square on :g:`D <g1:D>` will be greater than the square on :g:`E <g1:E>` by the square on a straight line commensurable with :g:`D <g1:D>`.
 
@@ -83,7 +89,7 @@ G.347
 
    I say next that the rectangle :g:`D <g1:D>`, :g:`E <g1:E>` is also medial.
 
-.. step:: assert [G.335] <G.335>
+.. step:: assert ∵ rectangle_contained_rational_x_21 <G.335>
 
    Since the rectangle :g:`B <g1:B>`, :g:`C <g1:C>` is equal to the rectangle :g:`D <g1:D>`, :g:`E <g1:E>`, while the rectangle :g:`B <g1:B>`, :g:`C <g1:C>` is medial.
 
@@ -91,7 +97,7 @@ G.347
 
    Therefore the rectangle :g:`D <g1:D>`, :g:`E <g1:E>` is also medial.
 
-.. step:: conclude [G.345] <G.345>
+.. step:: conclude ∵ find_rational_straight_x_30 <G.345>
 
    Similarly again it can be proved that the square on :g:`D <g1:D>` is greater than the square on :g:`E <g1:E>` by the square on a straight line *incommensurable* with :g:`D <g1:D>`, when the square on :g:`A <g1:A>` is greater than the square on :g:`C <g1:C>` by the square on a straight line incommensurable with :g:`A <g1:A>`.
 

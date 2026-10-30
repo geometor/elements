@@ -24,6 +24,12 @@ G.160
 
    If there be three magnitudes, and others equal to them in multitude, which taken two and two together are in the same ratio, and the proportion of them be perturbed, they is in the same ratio ex aequali.
 
+.. signature:: theorem
+
+   | :fn:`there_magnitudes_others_v_23 <G.160>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`)
+   | **given** there be three magnitudes :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, others equal to them in multitude, which, taken two and two together, are in the same proportion, namely :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`F <g1:F>`
+   | **prove** as :g:`A <g1:A>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to :g:`F <g1:F>`
+
 .. picture:: g1.svg
    :alt: Book V, Proposition 23, Line Segments
 
@@ -43,11 +49,15 @@ G.160
 
    And, as :g:`B <g1:B>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to :g:`E <g1:E>`;
 
+.. step:: assert
+
+   I say that, as :g:`A <g1:A>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to :g:`F <g1:F>`.
+
 .. step:: construct
 
    Of :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`D <g1:D>` let equimultiples :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`K <g1:K>` be taken, and of :g:`C <g1:C>`, :g:`E <g1:E>`, :g:`F <g1:F>` other, chance, equimultiples :g:`L <g1:L>`, :g:`M <g1:M>`, :g:`N <g1:N>`.
 
-.. step:: assert [G.152] <G.152>
+.. step:: assert ∵ parts_ratio_multiples <G.152>
 
    Since :g:`G <g1:G>`, :g:`H <g1:H>` are equimultiples of :g:`A <g1:A>`, :g:`B <g1:B>`, and parts have the same ratio as the same multiples of them.
 
@@ -57,7 +67,7 @@ G.160
 
 .. step:: assert
 
-   For the same reason also,
+   The same reason also,
 
 .. step:: assert
 
@@ -67,7 +77,7 @@ G.160
 
    And, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`E <g1:E>` to :g:`F <g1:F>`
 
-.. step:: assert [G.148] <G.148>
+.. step:: assert ∵ ratios_ratio <G.148>
 
    Therefore also, as :g:`G <g1:G>` is to :g:`H <g1:H>`, so is :g:`M <g1:M>` to :g:`N <g1:N>`.
 
@@ -75,7 +85,7 @@ G.160
 
    Next, since, as :g:`B <g1:B>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to :g:`E <g1:E>`,
 
-.. step:: assert [G.153] <G.153>
+.. step:: assert ∵ magnitudes_proportional_proportional <G.153>
 
    Alternately, also, as :g:`B <g1:B>` is to :g:`D <g1:D>`, so is :g:`C <g1:C>` to :g:`E <g1:E>`.
 
@@ -83,7 +93,7 @@ G.160
 
    And, since :g:`H <g1:H>`, :g:`K <g1:K>` are equimultiples of :g:`B <g1:B>`, :g:`D <g1:D>`, and parts have the same ratio as their equimultiples,
 
-.. step:: assert [G.152] <G.152>
+.. step:: assert ∵ parts_ratio_multiples <G.152>
 
    Therefore, as :g:`B <g1:B>` is to :g:`D <g1:D>`, so is :g:`H <g1:H>` to :g:`K <g1:K>`.
 
@@ -91,11 +101,11 @@ G.160
 
    But, as :g:`B <g1:B>` is to :g:`D <g1:D>`, so is :g:`C <g1:C>` to :g:`E <g1:E>`
 
-.. step:: assert [G.148] <G.148>
+.. step:: assert ∵ ratios_ratio <G.148>
 
    Therefore also, as :g:`H <g1:H>` is to :g:`K <g1:K>`, so is :g:`C <g1:C>` to :g:`E <g1:E>`.
 
-.. step:: assert [G.152] <G.152>
+.. step:: assert ∵ parts_ratio_multiples <G.152>
 
    Since :g:`L <g1:L>`, :g:`M <g1:M>` are equimultiples of :g:`C <g1:C>`, :g:`E <g1:E>` → therefore, as :g:`C <g1:C>` is to :g:`E <g1:E>`, so is :g:`L <g1:L>` to :g:`M <g1:M>`.
 
@@ -103,7 +113,7 @@ G.160
 
    But, as :g:`C <g1:C>` is to :g:`E <g1:E>`, so is :g:`H <g1:H>` to :g:`K <g1:K>`
 
-.. step:: assert [G.148, G.153] <G.148, G.153>
+.. step:: assert ∵ ratios_ratio, magnitudes_proportional_proportional <G.148, G.153>
 
    Therefore also, as :g:`H <g1:H>` is to :g:`K <g1:K>`, so is :g:`L <g1:L>` to :g:`M <g1:M>`, and, alternately, as :g:`H <g1:H>` is to :g:`L <g1:L>`, so is :g:`K <g1:K>` to :g:`M <g1:M>`.
 
@@ -119,7 +129,7 @@ G.160
 
    Since, then, there are three magnitudes :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`L <g1:L>`, and others equal to them in multitude :g:`K <g1:K>`, :g:`M <g1:M>`, :g:`N <g1:N>`, which taken two and two together are in the same ratio, and the proportion of them is perturbed,
 
-.. step:: assert [G.158] <G.158>
+.. step:: assert ∵ there_magnitudes_others_v_21 <G.158>
 
    Therefore, :term:`*ex aequali* <ex-aequali>`, if :g:`G <g1:G>` is in excess of :g:`L <g1:L>`, :g:`K <g1:K>` is also in excess of :g:`N <g1:N>`; if :eq:`equal <g1:G = g1:L>`, :eq:`equal <g1:K = g1:N>`; and if less, less.
 

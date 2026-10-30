@@ -24,12 +24,22 @@ G.497
 
    *Cones and cylinders which are of the same height are to* *one another as their bases.*
 
+.. signature:: theorem
+
+   | :fn:`cones_cylinders_height <G.497>`\ (:g:`( A B C D ) <g1:( A B C D )>`, :g:`( E F G H ) <g1:( E F G H )>`, :g:`/ K L / <g1:/ K L />`, :g:`/ M N / <g1:/ M N />`)
+   | **given** there be cones and cylinders of the same height, let :g:`( A B C D ) <g1:( A B C D )>`, :g:`( E F G H ) <g1:( E F G H )>` be their bases, :g:`/ K L / <g1:/ K L />`, :g:`/ M N / <g1:/ M N />` their axes and :g:`/ A C / <g1:/ A C />`, :g:`/ E G / <g1:/ E G />` the diameters of their bases
+   | **prove** also, as :g:`( A B C D ) <g1:( A B C D )>` is to :g:`( E F G H ) <g1:( E F G H )>`, so are the cylinders on them which are of equal height
+
 .. picture:: g1.svg
    :alt: Book XII, Proposition 11 Diagram
 
 .. step:: given
 
    there be cones and cylinders of the same height, let :g:`( A B C D ) <g1:( A B C D )>`, :g:`( E F G H ) <g1:( E F G H )>` be their bases, :g:`/ K L / <g1:/ K L />`, :g:`/ M N / <g1:/ M N />` their axes and :g:`/ A C / <g1:/ A C />`, :g:`/ E G / <g1:/ E G />` the diameters of their bases
+
+.. step:: assert
+
+   I say that, as :g:`( A B C D ) <g1:( A B C D )>` is to :g:`( E F G H ) <g1:( E F G H )>`, so is the cone :g:`< A L > <g1:< A L >>` to the cone :g:`< E N > <g1:< E N >>`.
 
 .. step:: assert
 
@@ -43,7 +53,7 @@ G.497
 
    Therefore the cone :g:`< E N > <g1:< E N >>` is equal to the solids :g:`O <g1:O>`, :g:`X <g1:X>`.
 
-.. step:: assert
+.. step:: construct
 
    Let the square :g:`< E F G H > <g1:< E F G H >>` be inscribed in :g:`( E F G H ) <g1:( E F G H )>`
 
@@ -55,17 +65,13 @@ G.497
 
    Let there be set up from the square :g:`< E F G H > <g1:< E F G H >>` a pyramid of equal height with the cone
 
-.. step:: assert [G.492] <G.492>
+.. step:: assert ∵ pyramids_height_polygonal <G.492>
 
    Therefore the pyramid so set up is greater than the half of the cone, inasmuch as, if we circumscribe a square about the circle, and set up from it a pyramid of equal height with the cone, the inscribed pyramid is half of the circumscribed pyramid, for they are to one another as their bases, while the cone is less than the circumscribed pyramid.
 
 .. step:: construct
 
-   Let the circumferences :g:`( E Q F ) <g1:( E Q F )>`, :g:`( F R G ) <g1:( F R G )>`, :g:`( G S H ) <g1:( G S H )>`, :g:`( H P E ) <g1:( H P E )>` be bisected at :g:`P <g1:P>`, :g:`Q <g1:Q>`, :g:`R <g1:R>`, :g:`S <g1:S>`
-
-.. step:: construct
-
-   **segment** :g:`/ H P / <g1:/ H P />`, :g:`/ P E / <g1:/ P E />`, :g:`/ E Q / <g1:/ E Q />`, :g:`/ Q F / <g1:/ Q F />`, :g:`/ F R / <g1:/ F R />`, :g:`/ R G / <g1:/ R G />`, :g:`/ G S / <g1:/ G S />`, :g:`/ S H / <g1:/ S H />`
+   :fn:`segment <G.3>`\ () → :g:`( E Q F ) <g1:( E Q F )>`, :fn:`segment <G.3>`\ () → :g:`( F R G ) <g1:( F R G )>`, :fn:`segment <G.3>`\ () → :g:`( G S H ) <g1:( G S H )>`, :fn:`segment <G.3>`\ () → :g:`( H P E ) <g1:( H P E )>`, :fn:`segment <G.3>`\ () → :g:`P <g1:P>`, :fn:`segment <G.3>`\ () → :g:`Q <g1:Q>`, :fn:`segment <G.3>`\ () → :g:`R <g1:R>`, :fn:`segment <G.3>`\ () → :g:`S <g1:S>`, :fn:`segment <G.3>`\ (:g:`H <g1:H>`, :g:`P <g1:P>`) → :g:`/ H P / <g1:/ H P />`, :fn:`segment <G.3>`\ (:g:`P <g1:P>`, :g:`E <g1:E>`) → :g:`/ P E / <g1:/ P E />`, :fn:`segment <G.3>`\ (:g:`E <g1:E>`, :g:`Q <g1:Q>`) → :g:`/ E Q / <g1:/ E Q />`, :fn:`segment <G.3>`\ (:g:`Q <g1:Q>`, :g:`F <g1:F>`) → :g:`/ Q F / <g1:/ Q F />`, :fn:`segment <G.3>`\ (:g:`F <g1:F>`, :g:`R <g1:R>`) → :g:`/ F R / <g1:/ F R />`, :fn:`segment <G.3>`\ (:g:`R <g1:R>`, :g:`G <g1:G>`) → :g:`/ R G / <g1:/ R G />`, :fn:`segment <G.3>`\ (:g:`G <g1:G>`, :g:`S <g1:S>`) → :g:`/ G S / <g1:/ G S />`, :fn:`segment <G.3>`\ (:g:`S <g1:S>`, :g:`H <g1:H>`) → :g:`/ S H / <g1:/ S H />`
 
 .. step:: assert
 
@@ -79,31 +85,23 @@ G.497
 
    Therefore, also, each of the pyramids so set up is greater than the half of that segment of the cone which is about it.
 
-.. step:: assert [G.313] <G.313>
+.. step:: assert ∵ unequal_magnitudes_set <G.313>
 
    Thus, bisecting the circumferences which are left, joining straight lines, setting up on each of the triangles pyramids of equal height with the cone, and doing this continually, we shall leave some segments of the cone which will be less than the solid :g:`X <g1:X>`.
 
 .. step:: assert
 
-   Let such be left
-
-.. step:: assert
-
-   Let them be the segments on :g:`/ H P / <g1:/ H P />`, :g:`/ P E / <g1:/ P E />`, :g:`/ E Q / <g1:/ E Q />`, :g:`/ Q F / <g1:/ Q F />`, :g:`/ F R / <g1:/ F R />`, :g:`/ R G / <g1:/ R G />`, :g:`/ G S / <g1:/ G S />`, :g:`/ S H / <g1:/ S H />`
+   Let such be left, and let them be the segments on :g:`/ H P / <g1:/ H P />`, :g:`/ P E / <g1:/ P E />`, :g:`/ E Q / <g1:/ E Q />`, :g:`/ Q F / <g1:/ Q F />`, :g:`/ F R / <g1:/ F R />`, :g:`/ R G / <g1:/ R G />`, :g:`/ G S / <g1:/ G S />`, :g:`/ S H / <g1:/ S H />`
 
 .. step:: assert
 
    Therefore the remainder, the pyramid of which the polygon :g:`< H P E Q F R G S > <g1:< H P E Q F R G S >>` is the base and the height the same with that of the cone, is greater than the solid :g:`O <g1:O>`.
 
-.. step:: assert
-
-   Let there also be inscribed in :g:`( A B C D ) <g1:( A B C D )>` the polygon :g:`< D T A U B V C W > <g1:< D T A U B V C W >>` similar and similarly situated to the polygon :g:`< H P E Q F R G S > <g1:< H P E Q F R G S >>`
-
 .. step:: construct
 
-   On it let a pyramid be set up of equal height with the cone :g:`< A L > <g1:< A L >>`.
+   Let there also be inscribed in :g:`( A B C D ) <g1:( A B C D )>` the polygon :g:`< D T A U B V C W > <g1:< D T A U B V C W >>` similar and similarly situated to the polygon :g:`< H P E Q F R G S > <g1:< H P E Q F R G S >>`, and on it let a pyramid be set up of equal height with the cone :g:`< A L > <g1:< A L >>`.
 
-.. step:: assert [G.487, G.488] <G.487, G.488>
+.. step:: assert ∵ similar_polygons_inscribed, circles_squares_diameters <G.487, G.488>
 
    Since then, as the square on :g:`/ A C / <g1:/ A C />` is to the square on :g:`/ E G / <g1:/ E G />`, so is the polygon :g:`< D T A U B V C W > <g1:< D T A U B V C W >>` to the polygon :g:`< H P E Q F R G S > <g1:< H P E Q F R G S >>`, while, as the square on :g:`/ A C / <g1:/ A C />` is to the square on :g:`/ E G / <g1:/ E G />`, so is :g:`( A B C D ) <g1:( A B C D )>` to :g:`( E F G H ) <g1:( E F G H )>`.
 
@@ -111,11 +109,11 @@ G.497
 
    Therefore also, as :g:`( A B C D ) <g1:( A B C D )>` is to :g:`( E F G H ) <g1:( E F G H )>`, so is the polygon :g:`< D T A U B V C W > <g1:< D T A U B V C W >>` to the polygon :g:`< H P E Q F R G S > <g1:< H P E Q F R G S >>`.
 
-.. step:: assert [G.492] <G.492>
+.. step:: assert ∵ pyramids_height_polygonal <G.492>
 
    But, as :g:`( A B C D ) <g1:( A B C D )>` is to :g:`( E F G H ) <g1:( E F G H )>`, so is the cone :g:`< A L > <g1:< A L >>` to the solid :g:`O <g1:O>`, and, as the polygon :g:`< D T A U B V C W > <g1:< D T A U B V C W >>` is to the polygon :g:`< H P E Q F R G S > <g1:< H P E Q F R G S >>`, so is the pyramid of which the polygon :g:`< D T A U B V C W > <g1:< D T A U B V C W >>` is the base and :g:`L <g1:L>` the vertex to the pyramid of which the polygon :g:`< H P E Q F R G S > <g1:< H P E Q F R G S >>` is the base and :g:`N <g1:N>` the vertex.
 
-.. step:: assert [G.148, G.153] <G.148, G.153>
+.. step:: assert ∵ ratios_ratio, magnitudes_proportional_proportional <G.148, G.153>
 
    Therefore also, as the cone :g:`< A L > <g1:< A L >>` is to the solid :g:`O <g1:O>`, so is the pyramid of which the polygon :g:`< D T A U B V C W > <g1:< D T A U B V C W >>` is the base and :g:`L <g1:L>` the vertex to the pyramid of which the polygon :g:`< H P E Q F R G S > <g1:< H P E Q F R G S >>` is the base and :g:`N <g1:N>` the vertex; therefore, alternately, as the cone :g:`< A L > <g1:< A L >>` is to the pyramid in it, so is the solid :g:`O <g1:O>` to the pyramid in the cone :g:`< E N > <g1:< E N >>`.
 
@@ -171,7 +169,7 @@ G.497
 
    Therefore, as :g:`( A B C D ) <g1:( A B C D )>` is to :g:`( E F G H ) <g1:( E F G H )>`, so is the cone :g:`< A L > <g1:< A L >>` to the cone :g:`< E N > <g1:< E N >>`.
 
-.. step:: assert [G.496] <G.496>
+.. step:: assert ∵ cone_part_cylinder <G.496>
 
    But, as the cone is to the cone, so is the cylinder to the cylinder, for each is triple of each.
 

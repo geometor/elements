@@ -24,20 +24,21 @@ G.319
 
    If two magnitudes have to one another the ratio which a number has to a number, the magnitudes is commensurable.
 
+.. signature:: theorem
+
+   | :fn:`magnitudes_ratio_number <G.319>`\ ()
+   | **prove** the magnitudes :g:`A <g1:A>`, :g:`B <g1:B>` are commensurable
+
 .. picture:: g1.svg
    :alt: Proposition 6 diagram
 
 .. step:: assert
 
-   For let the two magnitudes :g:`A <g1:A>`, :g:`B <g1:B>` have to one another the ratio which the number :g:`D <g1:D>` has to the number :g:`E <g1:E>`
+   Let the two magnitudes :g:`A <g1:A>`, :g:`B <g1:B>` have to one another the ratio which the number :g:`D <g1:D>` has to the number :g:`E <g1:E>`
 
 .. step:: assert
 
-   For let :g:`A <g1:A>` be divided into as many equal parts as there are units in :g:`D <g1:D>`
-
-.. step:: assert
-
-   Let :g:`C <g1:C>` be equal to one of them
+   Let :g:`A <g1:A>` be divided into as many equal parts as there are units in :g:`D <g1:D>`, and let :g:`C <g1:C>` be equal to one of them
 
 .. step:: construct
 
@@ -47,7 +48,7 @@ G.319
 
    Since then there are in :g:`A <g1:A>` as many magnitudes equal to :g:`C <g1:C>` as there are units in :g:`D <g1:D>`, whatever part the unit is of :g:`D <g1:D>`, the same part is :g:`C <g1:C>` of :g:`A <g1:A>` also;
 
-.. step:: assert [G.210] <G.210>
+.. step:: assert ∵ numbers_proportional_multiple_def <G.210>
 
    Therefore, as :g:`C <g1:C>` is to :g:`A <g1:A>`, so is the unit to :g:`D <g1:D>`.
 
@@ -63,7 +64,7 @@ G.319
 
    Since, as :g:`C <g1:C>` is to :g:`A <g1:A>`, so is the unit to :g:`D <g1:D>`,
 
-.. step:: assert [G.142] <G.142>
+.. step:: assert ∵ equal_magnitudes_ratio <G.142>
 
    Therefore, inversely, as :g:`A <g1:A>` is to :g:`C <g1:C>`, so is the number :g:`D <g1:D>` to the unit.
 
@@ -71,7 +72,7 @@ G.319
 
    Since there are in :g:`F <g1:F>` as many magnitudes equal to :g:`C <g1:C>` as there are units in :g:`E <g1:E>`,
 
-.. step:: assert [G.210] <G.210>
+.. step:: assert ∵ numbers_proportional_multiple_def <G.210>
 
    Therefore, as :g:`C <g1:C>` is to :g:`F <g1:F>`, so is the unit to :g:`E <g1:E>`.
 
@@ -79,7 +80,7 @@ G.319
 
    It was also proved that, as :g:`A <g1:A>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to the unit;
 
-.. step:: assert [G.159] <G.159>
+.. step:: assert ∵ there_number_magnitudes_v_22 <G.159>
 
    Therefore, :term:`*ex aequali* <ex-aequali>`, as :g:`A <g1:A>` is to :g:`F <g1:F>`, so is :g:`D <g1:D>` to :g:`E <g1:E>`.
 
@@ -87,7 +88,7 @@ G.319
 
    But, as :g:`D <g1:D>` is to :g:`E <g1:E>`, so is :g:`A <g1:A>` to :g:`B <g1:B>`;
 
-.. step:: assert [G.148] <G.148>
+.. step:: assert ∵ ratios_ratio <G.148>
 
    Therefore also, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is it to :g:`F <g1:F>` also.
 
@@ -95,7 +96,7 @@ G.319
 
    Therefore :g:`A <g1:A>` has the same ratio to each of the magnitudes :g:`B <g1:B>`, :g:`F <g1:F>`;
 
-.. step:: assert [G.146] <G.146>
+.. step:: assert ∵ magnitudes_ratio_equal <G.146>
 
    Therefore :g:`B <g1:B>` is :eq:`equal <g1:B = g1:F>` to :g:`F <g1:F>`.
 
@@ -127,7 +128,7 @@ G.319
 
    And, if a mean proportional be also taken between :g:`A <g1:A>`, :g:`F <g1:F>`, as :g:`B <g1:B>`,
 
-.. step:: assert [G.184] <G.184>
+.. step:: assert ∵ similar_triangles_duplicate <G.184>
 
    As :g:`A <g1:A>` is to :g:`F <g1:F>`, so will the square on :g:`A <g1:A>` be to the square on :g:`B <g1:B>`, that is, as the first is to the third, so is the figure on the first to that which is similar and similarly described on the second.
 
@@ -135,7 +136,7 @@ G.319
 
    But, as :g:`A <g1:A>` is to :g:`F <g1:F>`, so is the number :g:`D <g1:D>` to the number :g:`E <g1:E>`;
 
-.. step:: conclude [Q. E. D.] <Q. E. D.>
+.. step:: conclude ∵ Q. E. D. <Q. E. D.>
 
    Therefore it has been contrived that, as the number :g:`D <g1:D>` is to the number :g:`E <g1:E>`, so also is the figure on :g:`A <g1:A>` to the figure on :g:`B <g1:B>`.
 

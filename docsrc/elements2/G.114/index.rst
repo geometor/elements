@@ -24,6 +24,11 @@ G.114
 
    If in a circle two straight lines cut one another, the rectangle contained by the segments of the one is equal to the rectangle contained by the segments of the other.
 
+.. signature:: theorem
+
+   | :fn:`circle_straight_lines_iii_35 <G.114>`\ ()
+   | **prove** the rectangle contained by :g:`/ A E / <g1:/ A E />`, :g:`/ E C / <g1:/ E C />` is equal to the rectangle contained by :g:`/ D E / <g1:/ D E />`, :g:`/ E B / <g1:/ E B />`
+
 .. picture:: g1.svg
    :alt: Proposition 35 Case 1 diagram
 
@@ -32,9 +37,9 @@ G.114
 
 .. step:: intersect
 
-   For in :g:`( A B C D ) <g1:( A B C D )>` let :g:`/ A C / <g1:/ A C />`, :g:`/ B D / <g1:/ B D />` cut one another at :g:`E <g1:E>`
+   In :g:`( A B C D ) <g1:( A B C D )>` let :g:`/ A C / <g1:/ A C />`, :g:`/ B D / <g1:/ B D />` cut one another at :g:`E <g1:E>`
 
-.. step:: assert
+.. step:: assert ∵ circle_radii <G.2>
 
    If now :g:`/ A C / <g1:/ A C />`, :g:`/ B D / <g1:/ B D />` are through the center, so that :g:`E <g1:E>` is the center of :g:`( A B C D ) <g1:( A B C D )>`, it is manifest that, :g:`/ A E / <g1:/ A E />`, :g:`/ E C / <g1:/ E C />`, :g:`/ D E / <g1:/ D E />`, :g:`/ E B / <g1:/ E B />` being :eq:`equal <g1:/ A E / = g1:/ E C / = g1:/ D E / = g1:/ E B />`, the rectangle contained by :g:`/ A E / <g1:/ A E />`, :g:`/ E C / <g1:/ E C />` is also equal to the rectangle contained by :g:`/ D E / <g1:/ D E />`, :g:`/ E B / <g1:/ E B />`.
 
@@ -52,13 +57,9 @@ G.114
 
 .. step:: construct
 
-   From :g:`F <g2:F>` let :g:`/ F G / <g2:/ F G />`, :g:`/ F H / <g2:/ F H />` be drawn perpendicular to :g:`/ A C / <g2:/ A C />`, :g:`/ D B / <g2:/ D B />`
+   From :g:`F <g2:F>` let :g:`/ F G / <g2:/ F G />`, :g:`/ F H / <g2:/ F H />` be drawn perpendicular to :g:`/ A C / <g2:/ A C />`, :g:`/ D B / <g2:/ D B />`, and let :g:`/ F B / <g2:/ F B />`, :g:`/ F C / <g2:/ F C />`, :g:`/ F E / <g2:/ F E />` be joined.
 
-.. step:: construct
-
-   **segment** :g:`/ F B / <g2:/ F B />`, :g:`/ F C / <g2:/ F C />`, :g:`/ F E / <g2:/ F E />`
-
-.. step:: assert [G.78] <G.78>
+.. step:: assert ∵ circle_straight_line <G.78>
 
    Since a straight line :g:`/ G F / <g2:/ G F />` through the center cuts a straight line :g:`/ A C / <g2:/ A C />` not through the center at right angles → it also bisects it;
 
@@ -66,11 +67,11 @@ G.114
 
    Therefore :g:`/ A G / <g2:/ A G />` is :eq:`equal <g2:/ A G / = g2:/ G C />` to :g:`/ G C / <g2:/ G C />`.
 
-.. step:: assert [G.66] <G.66>
+.. step:: assert ∵ difference_of_squares_equal_unequal <G.66>
 
    Since, then, :g:`/ A C / <g2:/ A C />` has been cut into equal parts at :g:`G <g2:G>` and into unequal parts at :g:`E <g2:E>`, the rectangle contained by :g:`/ A E / <g2:/ A E />`, :g:`/ E C / <g2:/ E C />` together with the square on :g:`/ E G / <g2:/ E G />` is equal to the square on :g:`/ G C / <g2:/ G C />`
 
-.. step:: assert
+.. step:: construct
 
    Let the square on :g:`/ G F / <g2:/ G F />` be added
 
@@ -78,7 +79,7 @@ G.114
 
    Therefore the rectangle :g:`/ A E / <g2:/ A E />`, :g:`/ E C / <g2:/ E C />` together with the squares on :g:`/ G E / <g2:/ G E />`, :g:`/ G F / <g2:/ G F />` is equal to the squares on :g:`/ C G / <g2:/ C G />`, :g:`/ G F / <g2:/ G F />`.
 
-.. step:: assert [G.60] <G.60>
+.. step:: assert ∵ pythagorean_theorem <G.60>
 
    The square on :g:`/ F E / <g2:/ F E />` is equal to the squares on :g:`/ E G / <g2:/ E G />`, :g:`/ G F / <g2:/ G F />`, and the square on :g:`/ F C / <g2:/ F C />` is equal to the squares on :g:`/ C G / <g2:/ C G />`, :g:`/ G F / <g2:/ G F />`
 
@@ -96,7 +97,7 @@ G.114
 
 .. step:: assert
 
-   For the same reason, also, the rectangle :g:`/ D E / <g2:/ D E />`, :g:`/ E B / <g2:/ E B />` together with the square on :g:`/ F E / <g2:/ F E />` is equal to the square on :g:`/ F B / <g2:/ F B />`.
+   The same reason, also, the rectangle :g:`/ D E / <g2:/ D E />`, :g:`/ E B / <g2:/ E B />` together with the square on :g:`/ F E / <g2:/ F E />` is equal to the square on :g:`/ F B / <g2:/ F B />`.
 
 .. step:: assert
 
@@ -106,7 +107,7 @@ G.114
 
    Therefore the rectangle :g:`/ A E / <g2:/ A E />`, :g:`/ E C / <g2:/ E C />` together with the square on :g:`/ F E / <g2:/ F E />` is equal to the rectangle :g:`/ D E / <g2:/ D E />`, :g:`/ E B / <g2:/ E B />` together with the square on :g:`/ F E / <g2:/ F E />`.
 
-.. step:: assert
+.. step:: construct
 
    Let the square on :g:`/ F E / <g2:/ F E />` be subtracted from each
 

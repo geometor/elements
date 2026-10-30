@@ -24,18 +24,20 @@ G.260
 
    Between two similar plane numbers there is one mean proportional number; and the plane number has to the plane number the ratio duplicate of that which the corresponding side has to the corresponding side.
 
+.. signature:: theorem
+
+   | :fn:`similar_plane_numbers <G.260>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`)
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>` be two similar plane numbers, let the numbers :g:`C <g1:C>`, :g:`D <g1:D>` be the sides of :g:`A <g1:A>`, :g:`E <g1:E>`, :g:`F <g1:F>` of :g:`B <g1:B>`
+   | **prove** :g:`A <g1:A>` also has to :g:`B <g1:B>` the ratio duplicate of that which :g:`C <g1:C>` has to :g:`E <g1:E>` or :g:`D <g1:D>` to :g:`F <g1:F>`
+
 .. picture:: g1.svg
    :alt: Book VIII, Proposition 18
 
 .. step:: given
 
-   :g:`A <g1:A>`, :g:`B <g1:B>` be two similar plane numbers
+   :g:`A <g1:A>`, :g:`B <g1:B>` be two similar plane numbers, let the numbers :g:`C <g1:C>`, :g:`D <g1:D>` be the sides of :g:`A <g1:A>`, :g:`E <g1:E>`, :g:`F <g1:F>` of :g:`B <g1:B>`
 
-.. step:: assert
-
-   Let the numbers :g:`C <g1:C>`, :g:`D <g1:D>` be the sides of :g:`A <g1:A>`, and :g:`E <g1:E>`, :g:`F <g1:F>` of :g:`B <g1:B>`.
-
-.. step:: assert [G.259] <G.259>
+.. step:: assert ∵ similar_plane_solid_def <G.259>
 
    Since similar plane numbers are those which have their sides proportional.
 
@@ -51,7 +53,7 @@ G.260
 
    Now since, as :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`E <g1:E>` to :g:`F <g1:F>`,
 
-.. step:: assert [G.213] <G.213>
+.. step:: assert ∵ numbers_proportional_proportional <G.213>
 
    Therefore, alternately, as :g:`C <g1:C>` is to :g:`E <g1:E>`, so is :g:`D <g1:D>` to :g:`F <g1:F>`.
 
@@ -79,7 +81,7 @@ G.260
 
    Since :g:`D <g1:D>` by multiplying :g:`C <g1:C>` has made :g:`A <g1:A>`, and by multiplying :g:`E <g1:E>` has made :g:`G <g1:G>`,
 
-.. step:: assert [G.217] <G.217>
+.. step:: assert ∵ number_multiplying_numbers <G.217>
 
    Therefore, as :g:`C <g1:C>` is to :g:`E <g1:E>`, so is :g:`A <g1:A>` to :g:`G <g1:G>`.
 
@@ -95,7 +97,7 @@ G.260
 
    Since :g:`E <g1:E>` by multiplying :g:`D <g1:D>` has made :g:`G <g1:G>`, and by multiplying :g:`F <g1:F>` has made :g:`B <g1:B>`,
 
-.. step:: assert [G.217] <G.217>
+.. step:: assert ∵ number_multiplying_numbers <G.217>
 
    Therefore, as :g:`D <g1:D>` is to :g:`F <g1:F>`, so is :g:`G <g1:G>` to :g:`B <g1:B>`.
 
@@ -123,7 +125,7 @@ G.260
 
    Since :g:`A <g1:A>`, :g:`G <g1:G>`, :g:`B <g1:B>` are in continued proportion,
 
-.. step:: assert [G.182] <G.182>
+.. step:: assert ∵ magnitudes_proportional_said_def <G.182>
 
    :g:`A <g1:A>` has to :g:`B <g1:B>` the ratio duplicate of that which it has to :g:`G <g1:G>`.
 

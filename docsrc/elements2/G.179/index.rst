@@ -24,6 +24,12 @@ G.179
 
    If four straight lines be proportional, the rectangle contained by the extremes is equal to the rectangle contained by the means; and, if the rectangle contained by the extremes equals the rectangle contained by the means, the four straight lines is proportional.
 
+.. signature:: theorem
+
+   | :fn:`straight_lines_proportional <G.179>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g2:/ C D />`, :g:`/ E / <g1:/ E />`, :g:`/ F / <g2:/ F />`)
+   | **given** the four straight lines :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g2:/ C D />`, :g:`/ E / <g1:/ E />`, :g:`/ F / <g2:/ F />` be proportional, so that
+   | **prove** the rectangle contained by :g:`/ A B / <g1:/ A B />`, :g:`/ F / <g2:/ F />` is :eq:`equal <g1:< B G > = g2:< D H >>` to the rectangle contained by :g:`/ C D / <g2:/ C D />`, :g:`/ E / <g1:/ E />`; the four straight lines will be proportional, so that, as :g:`/ A B / <g1:/ A B />` is to :g:`/ C D / <g2:/ C D />`, so is :g:`/ E / <g1:/ E />` to :g:`/ F / <g2:/ F />`
+
 .. picture:: g1.svg
    :alt: Book VI Proposition 16 (BG and E)
 
@@ -38,17 +44,9 @@ G.179
 
    As :g:`/ A B / <g1:/ A B />` is to :g:`/ C D / <g2:/ C D />`, so is :g:`/ E / <g1:/ E />` to :g:`/ F / <g2:/ F />`;
 
-.. step:: assert
-
-   The rectangle contained by :g:`/ A B / <g1:/ A B />`, :g:`/ F / <g2:/ F />` is :eq:`equal <g1:< B G > = g2:< D H >>` to the rectangle contained by :g:`/ C D / <g2:/ C D />`, :g:`/ E / <g1:/ E />`.
-
 .. step:: construct
 
-   Let :g:`/ A G / <g1:/ A G />`, :g:`/ C H / <g2:/ C H />` be drawn from :g:`A <g1:A>`, :g:`C <g2:C>` at right angles to :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g2:/ C D />`
-
-.. step:: construct
-
-   Let :g:`/ A G / <g1:/ A G />` be made :eq:`equal <g1:/ A G / = g2:/ F />` to :g:`/ F / <g2:/ F />`, and :g:`/ C H / <g2:/ C H />` :eq:`equal <g2:/ C H / = g1:/ E />` to :g:`/ E / <g1:/ E />`.
+   Let :g:`/ A G / <g1:/ A G />`, :g:`/ C H / <g2:/ C H />` be drawn from :g:`A <g1:A>`, :g:`C <g2:C>` at right angles to :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g2:/ C D />`, and let :g:`/ A G / <g1:/ A G />` be made :eq:`equal <g1:/ A G / = g2:/ F />` to :g:`/ F / <g2:/ F />`, and :g:`/ C H / <g2:/ C H />` :eq:`equal <g2:/ C H / = g1:/ E />` to :g:`/ E / <g1:/ E />`.
 
 .. step:: assert
 
@@ -70,7 +68,7 @@ G.179
 
    Therefore in the parallelograms :g:`< B G > <g1:< B G >>`, :g:`< D H > <g2:< D H >>` the sides about the equal angles are reciprocally proportional.
 
-.. step:: assert [G.177] <G.177>
+.. step:: assert ∵ equal_equiangular_parallelograms <G.177>
 
    Those equiangular parallelograms in which the sides about the equal angles are reciprocally proportional are equal
 
@@ -98,7 +96,7 @@ G.179
 
    They are equiangular
 
-.. step:: assert [G.177] <G.177>
+.. step:: assert ∵ equal_equiangular_parallelograms <G.177>
 
    In equal and equiangular parallelograms the sides about the equal angles are reciprocally proportional.
 

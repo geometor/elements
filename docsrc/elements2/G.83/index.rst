@@ -10,7 +10,7 @@
 :category: theorem, proof, plane-geometry, circles
 :tags: book-iii, point, segment, circle, angle, triangle, arc, equality, reductio-ad-absurdum
 :dependencies: G.11, G.31, G.32, G.35, G.76
-:excerpt: If a point be taken outside a circle and from the point straight lines be drawn through to the circle, one of which is through the centre and the others are drawn at random, then, of the straight lines which fall on the concave circumference, that through the centre is greatest, while of the rest
+:excerpt: If a point be taken outside a circle and from the point straight lines be drawn through to the circle, one of which is through the centre and the others are drawn at random, then, of the straight lines which fall on the concave circumference, that through the centre is greatest, while of the rest the nearer to that through the centre is always greater than the more remote, but, of the straight lines falling on the convex circumference, that between the point and the diameter is least, while of the rest the nearer to the least is always less than the more remote, and only two equal straight lines will fall on the circle from the point, one on each side of the least.
 
 .. _G.83:
 .. _III.8:
@@ -22,30 +22,27 @@ G.83
 
 .. enunciation::
 
-   If a point be taken outside a circle and from the point straight lines be drawn through to the circle, one of which is through the centre and the others are drawn at random, then, of the straight lines which fall on the concave circumference, that through the centre is greatest, while of the rest
+   If a point be taken outside a circle and from the point straight lines be drawn through to the circle, one of which is through the centre and the others are drawn at random, then, of the straight lines which fall on the concave circumference, that through the centre is greatest, while of the rest the nearer to that through the centre is always greater than the more remote, but, of the straight lines falling on the convex circumference, that between the point and the diameter is least, while of the rest the nearer to the least is always less than the more remote, and only two equal straight lines will fall on the circle from the point, one on each side of the least.
 
-.. enunciation::
+.. signature:: theorem
 
-   The nearer to that through the centre is always greater than the more remote, but, of the straight lines falling on the convex circumference, that between the point and the diameter is least, while of the rest the nearer to the least is always less than the more remote, and only two equal straight lines will fall on the circle from the point, one on each side of the least.
+   | :fn:`point_taken_outside <G.83>`\ ()
+   | **prove** no other straight line equal to :g:`/ D K / <g1:/ D K />` will fall on the circle from :g:`D <g1:D>`
 
 .. picture:: g1.svg
    :alt: Diagram for Proposition 8
 
-.. step:: given
+.. step:: construct
 
-   :g:`( A B C ) <g1:( A B C )>` be a circle
+   Let :g:`( A B C ) <g1:( A B C )>` be a circle, and let a point :g:`D <g1:D>` be taken outside :g:`( A B C ) <g1:( A B C )>`
 
 .. step:: construct
 
-   Let a point :g:`D <g1:D>` be taken outside :g:`( A B C ) <g1:( A B C )>`
-
-.. step:: construct
-
-   Let there be drawn through from it straight lines :g:`/ D A / <g1:/ D A />`, :g:`/ D E / <g1:/ D E />`, :g:`/ D F / <g1:/ D F />`, :g:`/ D C / <g1:/ D C />`
+   Let there be drawn through from it straight lines :g:`/ D A / <g1:/ D A />`, :g:`/ D E / <g1:/ D E />`, :g:`/ D F / <g1:/ D F />`, :g:`/ D C / <g1:/ D C />`, and let :g:`/ D A / <g1:/ D A />` be through the center
 
 .. step:: assert
 
-   Let :g:`/ D A / <g1:/ D A />` be through the center
+   I say that, of the straight lines falling on the concave circumference :g:`( A E F C ) <g1:( A E F C )>`, :g:`/ D A / <g1:/ D A />` through the center is greatest, while :g:`/ D E / <g1:/ D E />` is greater than :g:`/ D F / <g1:/ D F />` and :g:`/ D F / <g1:/ D F />` than :g:`/ D C / <g1:/ D C />`
 
 .. step:: assert
 
@@ -55,9 +52,9 @@ G.83
 
    And the nearer to the least :g:`/ D G / <g1:/ D G />` is always less than the more remote, namely :g:`/ D K / <g1:/ D K />` than :g:`/ D L / <g1:/ D L />`, and :g:`/ D L / <g1:/ D L />` than :g:`/ D H / <g1:/ D H />`.
 
-.. step:: construct [G.76] <G.76>
+.. step:: construct
 
-   For let the center of :g:`( A B C ) <g1:( A B C )>` be taken
+   :fn:`find_circle_center <G.76>`: Let the center of :g:`( A B C ) <g1:( A B C )>` be taken
 
 .. step:: assert
 
@@ -65,9 +62,9 @@ G.83
 
 .. step:: construct
 
-   **segment** :g:`/ M E / <g1:/ M E />`, :g:`/ M F / <g1:/ M F />`, :g:`/ M C / <g1:/ M C />`, :g:`/ M K / <g1:/ M K />`, :g:`/ M L / <g1:/ M L />`, :g:`/ M H / <g1:/ M H />`
+   :fn:`segment <G.3>`\ (:g:`M <g1:M>`, :g:`E <g1:E>`) → :g:`/ M E / <g1:/ M E />`, :fn:`segment <G.3>`\ (:g:`M <g1:M>`, :g:`F <g1:F>`) → :g:`/ M F / <g1:/ M F />`, :fn:`segment <G.3>`\ (:g:`M <g1:M>`, :g:`C <g1:C>`) → :g:`/ M C / <g1:/ M C />`, :fn:`segment <G.3>`\ (:g:`M <g1:M>`, :g:`K <g1:K>`) → :g:`/ M K / <g1:/ M K />`, :fn:`segment <G.3>`\ (:g:`M <g1:M>`, :g:`L <g1:L>`) → :g:`/ M L / <g1:/ M L />`, :fn:`segment <G.3>`\ (:g:`M <g1:M>`, :g:`H <g1:H>`) → :g:`/ M H / <g1:/ M H />`
 
-.. step:: assert
+.. step:: construct
 
    Since :g:`/ A M / <g1:/ A M />` is :eq:`equal <g1:/ A M / = g1:/ E M />` to :g:`/ E M / <g1:/ E M />`, let :g:`/ M D / <g1:/ M D />` be added to each
 
@@ -75,7 +72,7 @@ G.83
 
    Therefore :g:`/ A D / <g1:/ A D />` is equal to :g:`/ E M / <g1:/ E M />`, :g:`/ M D / <g1:/ M D />`.
 
-.. step:: assert [G.31] <G.31>
+.. step:: assert ∵ triangle_inequality <G.31>
 
    :g:`/ E M / <g1:/ E M />`, :g:`/ M D / <g1:/ M D />` are greater than :g:`/ E D / <g1:/ E D />`
 
@@ -91,7 +88,7 @@ G.83
 
    And :g:`< E M D ) <g1:< E M D )>` is greater than :g:`< F M D ) <g1:< F M D )>`
 
-.. step:: assert [G.35] <G.35>
+.. step:: assert ∵ hinge_theorem <G.35>
 
    Therefore the base :g:`/ E D / <g1:/ E D />` is greater than the base :g:`/ F D / <g1:/ F D />`.
 
@@ -103,7 +100,7 @@ G.83
 
    Therefore :g:`/ D A / <g1:/ D A />` is greatest, while :g:`/ D E / <g1:/ D E />` is greater than :g:`/ D F / <g1:/ D F />`, and :g:`/ D F / <g1:/ D F />` than :g:`/ D C / <g1:/ D C />`.
 
-.. step:: assert [G.31] <G.31>
+.. step:: assert ∵ triangle_inequality <G.31>
 
    Next, since :g:`/ M K / <g1:/ M K />`, :g:`/ K D / <g1:/ K D />` are greater than :g:`/ M D / <g1:/ M D />`.
 
@@ -115,7 +112,7 @@ G.83
 
    So that :g:`/ G D / <g1:/ G D />` is less than :g:`/ K D / <g1:/ K D />`.
 
-.. step:: assert [G.32] <G.32>
+.. step:: assert ∵ interior_triangle_bounds <G.32>
 
    And, since on :g:`/ M D / <g1:/ M D />`, one of the sides of :g:`< M L D > <g1:< M L D >>`, two straight lines :g:`/ M K / <g1:/ M K />`, :g:`/ K D / <g1:/ K D />` were constructed meeting within the triangle, therefore :g:`/ M K / <g1:/ M K />`, :g:`/ K D / <g1:/ K D />` are less than :g:`/ M L / <g1:/ M L />`, :g:`/ L D / <g1:/ L D />`
 
@@ -139,17 +136,13 @@ G.83
 
    I say also that only two equal straight lines will fall from :g:`D <g1:D>` on the circle, one on each side of the least :g:`/ D G / <g1:/ D G />`.
 
-.. step:: assert
+.. step:: construct
 
-   On :g:`/ M D / <g1:/ M D />`
+   :fn:`copy_angle <G.34>`\ (:g:`/ M D / <g1:/ M D />`, :g:`M <g1:M>`, :g:`< K M D ) <g1:< K M D )>`) → :g:`< D M B ) <g1:< D M B )>` (:eq:`equal <g1:< D M B ) = g1:< K M D )>`)
 
 .. step:: construct
 
-   At :g:`M <g1:M>` on it, let :g:`< D M B ) <g1:< D M B )>` be constructed :eq:`equal <g1:< D M B ) = g1:< K M D )>` to :g:`< K M D ) <g1:< K M D )>`
-
-.. step:: construct
-
-   **segment** :g:`/ D B / <g1:/ D B />`
+   :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`B <g1:B>`) → :g:`/ D B / <g1:/ D B />`
 
 .. step:: assert
 
@@ -159,21 +152,17 @@ G.83
 
    And :g:`< K M D ) <g1:< K M D )>` is :eq:`equal <g1:< K M D ) = g1:< B M D )>` to :g:`< B M D ) <g1:< B M D )>`
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    Therefore the base :g:`/ D K / <g1:/ D K />` is :eq:`equal <g1:/ D K / = g1:/ D B />` to the base :g:`/ D B / <g1:/ D B />`.
 
 .. step:: assert
 
-   If possible, let a straight line so fall
+   If possible, let a straight line so fall, and let it be :g:`/ D N / <g1:/ D N />`
 
 .. step:: assert
 
-   Let it be :g:`/ D N / <g1:/ D N />`. Then, since :g:`/ D K / <g1:/ D K />` is :eq:`equal <g1:/ D K / = g1:/ D N />` to :g:`/ D N / <g1:/ D N />`, while :g:`/ D K / <g1:/ D K />` is :eq:`equal <g1:/ D K / = g1:/ D B />` to :g:`/ D B / <g1:/ D B />`,
-
-.. step:: assert
-
-   :g:`/ D B / <g1:/ D B />` is also :eq:`equal <g1:/ D B / = g1:/ D N />` to :g:`/ D N / <g1:/ D N />`,
+   Since :g:`/ D K / <g1:/ D K />` is :eq:`equal <g1:/ D K / = g1:/ D N />` to :g:`/ D N / <g1:/ D N />`, while :g:`/ D K / <g1:/ D K />` is :eq:`equal <g1:/ D K / = g1:/ D B />` to :g:`/ D B / <g1:/ D B />` → :g:`/ D B / <g1:/ D B />` is also :eq:`equal <g1:/ D B / = g1:/ D N />` to :g:`/ D N / <g1:/ D N />`,
 
 .. step:: assert
 

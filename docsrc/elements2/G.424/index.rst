@@ -24,18 +24,23 @@ G.424
 
    The square on an apotome applied to a rational straight line produces as breadth a first apotome.
 
+.. signature:: theorem
+
+   | :fn:`square_apotome_applied <G.424>`\ ()
+   | **prove** :g:`/ C F / <g1:/ C F />` is a first apotome
+
 .. picture:: g1.svg
    :alt: Proposition 97 Diagram
 
-.. step:: given
+.. step:: construct
 
-   :g:`/ A B / <g1:/ A B />` be an apotome, :g:`/ C D / <g1:/ C D />` rational, to :g:`/ C D / <g1:/ C D />` let there be applied :g:`< C F E D > <g1:< C F E D >>` equal to the square on :g:`/ A B / <g1:/ A B />` and producing :g:`/ C F / <g1:/ C F />` as breadth
+   Let :g:`/ A B / <g1:/ A B />` be an apotome, and :g:`/ C D / <g1:/ C D />` rational, and to :g:`/ C D / <g1:/ C D />` let there be applied :g:`< C F E D > <g1:< C F E D >>` equal to the square on :g:`/ A B / <g1:/ A B />` and producing :g:`/ C F / <g1:/ C F />` as breadth
 
 .. step:: assert
 
    For let :g:`/ B G / <g1:/ B G />` be the annex to :g:`/ A B / <g1:/ A B />`;
 
-.. step:: assert [G.394] <G.394>
+.. step:: assert ∵ rational_straight_line <G.394>
 
    Therefore :g:`/ A G / <g1:/ A G />`, :g:`/ B G / <g1:/ B G />` are rational straight lines commensurable in square only.
 
@@ -43,17 +48,13 @@ G.424
 
    To :g:`/ C D / <g1:/ C D />` let there be applied :g:`< C K H D > <g1:< C K H D >>` equal to the square on :g:`/ A G / <g1:/ A G />`, and :g:`< K M L H > <g1:< K M L H >>` equal to the square on :g:`/ B G / <g1:/ B G />`.
 
-.. step:: assert [G.68] <G.68>
+.. step:: assert ∵ square_of_difference <G.68>
 
    Therefore the whole :g:`< C M L D > <g1:< C M L D >>` is equal to the squares on :g:`/ A G / <g1:/ A G />`, :g:`/ B G / <g1:/ B G />`, and, in these, :g:`< C F E D > <g1:< C F E D >>` is equal to the square on :g:`/ A B / <g1:/ A B />`; therefore the remainder :g:`< F M L E > <g1:< F M L E >>` is equal to twice the rectangle :g:`/ A G / <g1:/ A G />`, :g:`/ B G / <g1:/ B G />`.
 
-.. step:: assert
-
-   Let :g:`/ F M / <g1:/ F M />` be :eq:`bisected <g1:/ F N / = g1:/ N M />` at :g:`N <g1:N>`
-
 .. step:: construct
 
-   Let :g:`/ N O / <g1:/ N O />` be drawn through :g:`N <g1:N>` parallel to :g:`/ C D / <g1:/ C D />`
+   Let :g:`/ F M / <g1:/ F M />` be :eq:`bisected <g1:/ F N / = g1:/ N M />` at :g:`N <g1:N>`, and let :g:`/ N O / <g1:/ N O />` be drawn through :g:`N <g1:N>` parallel to :g:`/ C D / <g1:/ C D />`
 
 .. step:: assert
 
@@ -71,7 +72,7 @@ G.424
 
    It has been applied to the rational straight line :g:`/ C D / <g1:/ C D />`, producing :g:`/ C M / <g1:/ C M />` as breadth;
 
-.. step:: assert [G.334] <G.334>
+.. step:: assert ∵ rational_area_applied <G.334>
 
    Therefore :g:`/ C M / <g1:/ C M />` is rational and commensurable in length with :g:`/ C D / <g1:/ C D />`.
 
@@ -87,7 +88,7 @@ G.424
 
    It is applied to the rational straight line :g:`/ C D / <g1:/ C D />`, producing :g:`/ F M / <g1:/ F M />` as breadth;
 
-.. step:: assert [G.336] <G.336>
+.. step:: assert ∵ square_medial_straight <G.336>
 
    Therefore :g:`/ F M / <g1:/ F M />` is rational and incommensurable in length with :g:`/ C D / <g1:/ C D />`.
 
@@ -107,11 +108,11 @@ G.424
 
    Therefore :g:`< C M L D > <g1:< C M L D >>` is incommensurable with :g:`< F M L E > <g1:< F M L E >>`.
 
-.. step:: assert [G.163] <G.163>
+.. step:: assert ∵ triangles_parallelograms_height <G.163>
 
    But, as :g:`< C M L D > <g1:< C M L D >>` is to :g:`< F M L E > <g1:< F M L E >>`, so is :g:`/ C M / <g1:/ C M />` to :g:`/ F M / <g1:/ F M />`;
 
-.. step:: assert [G.323] <G.323>
+.. step:: assert ∵ magnitudes_proportional_commensurable <G.323>
 
    Therefore :g:`/ C M / <g1:/ C M />` is incommensurable in length with :g:`/ F M / <g1:/ F M />`.
 
@@ -119,7 +120,7 @@ G.424
 
    Both are rational;
 
-.. step:: assert [G.394] <G.394>
+.. step:: assert ∵ rational_straight_line <G.394>
 
    Therefore :g:`/ C M / <g1:/ C M />`, :g:`/ F M / <g1:/ F M />` are rational straight lines commensurable in square only; therefore :g:`/ C F / <g1:/ C F />` is an apotome.
 
@@ -135,11 +136,11 @@ G.424
 
    Therefore :g:`< N M L O > <g1:< N M L O >>` is also a mean proportional between :g:`< C K H D > <g1:< C K H D >>`, :g:`< K M L H > <g1:< K M L H >>`; therefore, as :g:`< C K H D > <g1:< C K H D >>` is to :g:`< N M L O > <g1:< N M L O >>`, so is :g:`< N M L O > <g1:< N M L O >>` to :g:`< K M L H > <g1:< K M L H >>`.
 
-.. step:: assert [G.163] <G.163>
+.. step:: assert ∵ triangles_parallelograms_height <G.163>
 
    But, as :g:`< C K H D > <g1:< C K H D >>` is to :g:`< N M L O > <g1:< N M L O >>`, so is :g:`/ C K / <g1:/ C K />` to :g:`/ N M / <g1:/ N M />`, and, as :g:`< N M L O > <g1:< N M L O >>` is to :g:`< K M L H > <g1:< K M L H >>`, so is :g:`/ N M / <g1:/ N M />` to :g:`/ K M / <g1:/ K M />`.
 
-.. step:: assert [G.180] <G.180>
+.. step:: assert ∵ straight_lines_proportional_vi_17 <G.180>
 
    Therefore the rectangle :g:`/ C K / <g1:/ C K />`, :g:`/ K M / <g1:/ K M />` is equal to the square on :g:`/ N M / <g1:/ N M />`, that is, to the fourth part of the square on :g:`/ F M / <g1:/ F M />`.
 
@@ -151,11 +152,11 @@ G.424
 
    :g:`< C K H D > <g1:< C K H D >>` is also commensurable with :g:`< K M L H > <g1:< K M L H >>`.
 
-.. step:: assert [G.163] <G.163>
+.. step:: assert ∵ triangles_parallelograms_height <G.163>
 
    But, as :g:`< C K H D > <g1:< C K H D >>` is to :g:`< K M L H > <g1:< K M L H >>`, so is :g:`/ C K / <g1:/ C K />` to :g:`/ K M / <g1:/ K M />`;
 
-.. step:: assert [G.323] <G.323>
+.. step:: assert ∵ magnitudes_proportional_commensurable <G.323>
 
    Therefore :g:`/ C K / <g1:/ C K />` is commensurable with :g:`/ K M / <g1:/ K M />`.
 
@@ -167,7 +168,7 @@ G.424
 
    And to :g:`/ C M / <g1:/ C M />` there has been applied the rectangle :g:`/ C K / <g1:/ C K />`, :g:`/ K M / <g1:/ K M />` equal to the fourth part of the square on :g:`/ F M / <g1:/ F M />` and deficient by a square figure, while :g:`/ C K / <g1:/ C K />` is commensurable with :g:`/ K M / <g1:/ K M />`,
 
-.. step:: assert [G.330] <G.330>
+.. step:: assert ∵ there_unequal_straight <G.330>
 
    Therefore the square on :g:`/ C M / <g1:/ C M />` is greater than the square on :g:`/ F M / <g1:/ F M />` by the square on a straight line commensurable in length with :g:`/ C M / <g1:/ C M />`.
 
@@ -175,7 +176,7 @@ G.424
 
    :g:`/ C M / <g1:/ C M />` is commensurable in length with the rational straight line :g:`/ C D / <g1:/ C D />` set out;
 
-.. step:: conclude [G.406] <G.406>
+.. step:: conclude ∵ rational_straight_line_def_x_def_iii_1 <G.406>
 
    Therefore :g:`/ C F / <g1:/ C F />` is a first apotome.
 

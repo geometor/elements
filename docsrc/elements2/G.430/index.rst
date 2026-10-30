@@ -24,30 +24,32 @@ G.430
 
    A straight line commensurable in length with an apotome is an apotome and the same in order.
 
+.. signature:: theorem
+
+   | :fn:`straight_line_commensurable_x_103 <G.430>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`)
+   | **given** :g:`/ A B / <g1:/ A B />` be an apotome, let :g:`/ C D / <g1:/ C D />` be commensurable in length with :g:`/ A B / <g1:/ A B />`
+   | **prove** :g:`/ C D / <g1:/ C D />` is also an apotome and the same in order with :g:`/ A B / <g1:/ A B />`
+
 .. picture:: g1.svg
    :alt: Proposition 103 Diagram
 
 .. step:: given
 
-   :g:`/ A B / <g1:/ A B />` be an apotome
-
-.. step:: assert
-
-   Let :g:`/ C D / <g1:/ C D />` be commensurable in length with :g:`/ A B / <g1:/ A B />`
+   :g:`/ A B / <g1:/ A B />` be an apotome, let :g:`/ C D / <g1:/ C D />` be commensurable in length with :g:`/ A B / <g1:/ A B />`
 
 .. step:: assert
 
    Since :g:`/ A B / <g1:/ A B />` is an apotome, let :g:`/ B E / <g1:/ B E />` be the annex to it;
 
-.. step:: assert [G.394] <G.394>
+.. step:: assert ∵ rational_straight_line <G.394>
 
    Therefore :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />` are rational straight lines commensurable in square only.
 
-.. step:: assert [G.175] <G.175>
+.. step:: assert ∵ fourth_proportional <G.175>
 
    Let it be contrived that the ratio of :g:`/ B E / <g1:/ B E />` to :g:`/ D F / <g1:/ D F />` is the same as the ratio of :g:`/ A B / <g1:/ A B />` to :g:`/ C D / <g1:/ C D />`
 
-.. step:: assert [G.149] <G.149>
+.. step:: assert ∵ number_magnitudes_proportional <G.149>
 
    Therefore also, as one is to one, so are all to all; therefore also, as the whole :g:`/ A E / <g1:/ A E />` is to the whole :g:`/ C F / <g1:/ C F />`, so is :g:`/ A B / <g1:/ A B />` to :g:`/ C D / <g1:/ C D />`.
 
@@ -55,7 +57,7 @@ G.430
 
    :g:`/ A B / <g1:/ A B />` is commensurable in length with :g:`/ C D / <g1:/ C D />`.
 
-.. step:: assert [G.323] <G.323>
+.. step:: assert ∵ magnitudes_proportional_commensurable <G.323>
 
    Therefore :g:`/ A E / <g1:/ A E />` is also commensurable with :g:`/ C F / <g1:/ C F />`, and :g:`/ B E / <g1:/ B E />` with :g:`/ D F / <g1:/ D F />`.
 
@@ -63,7 +65,7 @@ G.430
 
    :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />` are rational straight lines commensurable in square only;
 
-.. step:: assert [G.326] <G.326>
+.. step:: assert ∵ magnitudes_commensurable_incommensurable <G.326>
 
    Therefore :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />` are also rational straight lines commensurable in square only.
 
@@ -71,7 +73,7 @@ G.430
 
    Now since, as :g:`/ A E / <g1:/ A E />` is to :g:`/ C F / <g1:/ C F />`, so is :g:`/ B E / <g1:/ B E />` to :g:`/ D F / <g1:/ D F />`,
 
-.. step:: assert [G.153] <G.153>
+.. step:: assert ∵ magnitudes_proportional_proportional <G.153>
 
    Alternately therefore, as :g:`/ A E / <g1:/ A E />` is to :g:`/ E B / <g1:/ E B />`, so is :g:`/ C F / <g1:/ C F />` to :g:`/ F D / <g1:/ F D />`.
 
@@ -83,11 +85,11 @@ G.430
 
    If then the square on :g:`/ A E / <g1:/ A E />` is greater than the square on :g:`/ E B / <g1:/ E B />` by the square on a straight line commensurable with :g:`/ A E / <g1:/ A E />`,
 
-.. step:: assert [G.327] <G.327>
+.. step:: assert ∵ straight_lines_proportional_x_14 <G.327>
 
    The square on :g:`/ C F / <g1:/ C F />` will also be greater than the square on :g:`/ F D / <g1:/ F D />` by the square on a straight line commensurable with :g:`/ C F / <g1:/ C F />`.
 
-.. step:: assert [G.325, G.326] <G.325, G.326>
+.. step:: assert ∵ magnitudes_commensurable_magnitude, magnitudes_commensurable_incommensurable <G.325, G.326>
 
    And, if :g:`/ A E / <g1:/ A E />` is commensurable in length with the rational straight line set out, :g:`/ C F / <g1:/ C F />` is so also, if :g:`/ B E / <g1:/ B E />`, then :g:`/ D F / <g1:/ D F />` also, and, if neither of :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />`, then neither of :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />`.
 
@@ -95,11 +97,11 @@ G.430
 
    But, if the square on :g:`/ A E / <g1:/ A E />` is greater than the square on :g:`/ E B / <g1:/ E B />` by the square on a straight line incommensurable with :g:`/ A E / <g1:/ A E />`,
 
-.. step:: assert [G.327] <G.327>
+.. step:: assert ∵ straight_lines_proportional_x_14 <G.327>
 
    The square on :g:`/ C F / <g1:/ C F />` will also be greater than the square on :g:`/ F D / <g1:/ F D />` by the square on a straight line incommensurable with :g:`/ C F / <g1:/ C F />`.
 
-.. step:: assert [G.325, G.326] <G.325, G.326>
+.. step:: assert ∵ magnitudes_commensurable_magnitude, magnitudes_commensurable_incommensurable <G.325, G.326>
 
    And, if :g:`/ A E / <g1:/ A E />` is commensurable in length with the rational straight line set out, :g:`/ C F / <g1:/ C F />` is so also, if :g:`/ B E / <g1:/ B E />`, then :g:`/ D F / <g1:/ D F />` also, and, if neither of :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />`, then neither of :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />`.
 

@@ -24,28 +24,26 @@ G.107
 
    In equal circles equal straight lines cut off equal circumferences, the greater equal to the greater and the less to the less.
 
+.. signature:: theorem
+
+   | :fn:`equal_circles_equal_iii_28 <G.107>`\ (:g:`( A B C ) <g1:( A B C )>`, :g:`( D E F ) <g1:( D E F )>`, :g:`/ A B / <g1:/ A B />`, :g:`/ D E / <g1:/ D E />`)
+   | **given** :g:`( A B C ) <g1:( A B C )>`, :g:`( D E F ) <g1:( D E F )>` be :eq:`equal <g1:( A B C ) = g1:( D E F )>` circles, in the circles let :g:`/ A B / <g1:/ A B />`, :g:`/ D E / <g1:/ D E />` be :eq:`equal <g1:/ A B / = g1:/ D E />` straight lines cutting off :g:`( A C B ) <g1:( A C B )>`, :g:`( D F E ) <g1:( D F E )>` as greater circumferences and :g:`( A G B ) <g1:( A G B )>`, :g:`( D H E ) <g1:( D H E )>` as lesser
+   | **prove** the greater circumference :g:`( A C B ) <g1:( A C B )>` is :eq:`equal <g1:( A C B ) = g1:( D F E ); g1:( A G B ) = g1:( D H E )>` to the greater circumference :g:`( D F E ) <g1:( D F E )>`, and the less circumference :g:`( A G B ) <g1:( A G B )>` to :g:`( D H E ) <g1:( D H E )>`
+
 .. picture:: g1.svg
    :alt: Diagram
 
 .. step:: given
 
-   :g:`( A B C ) <g1:( A B C )>`, :g:`( D E F ) <g1:( D E F )>` be :eq:`equal <g1:( A B C ) = g1:( D E F )>` circles
-
-.. step:: assert
-
-   In the circles let :g:`/ A B / <g1:/ A B />`, :g:`/ D E / <g1:/ D E />` be :eq:`equal <g1:/ A B / = g1:/ D E />` straight lines cutting off :g:`( A C B ) <g1:( A C B )>`, :g:`( D F E ) <g1:( D F E )>` as greater circumferences and :g:`( A G B ) <g1:( A G B )>`, :g:`( D H E ) <g1:( D H E )>` as lesser
-
-.. step:: assert
-
-   The greater circumference :g:`( A C B ) <g1:( A C B )>` is :eq:`equal <g1:( A C B ) = g1:( D F E ); g1:( A G B ) = g1:( D H E )>` to the greater circumference :g:`( D F E ) <g1:( D F E )>`, and the less circumference :g:`( A G B ) <g1:( A G B )>` to :g:`( D H E ) <g1:( D H E )>`.
+   :g:`( A B C ) <g1:( A B C )>`, :g:`( D E F ) <g1:( D E F )>` be :eq:`equal <g1:( A B C ) = g1:( D E F )>` circles, in the circles let :g:`/ A B / <g1:/ A B />`, :g:`/ D E / <g1:/ D E />` be :eq:`equal <g1:/ A B / = g1:/ D E />` straight lines cutting off :g:`( A C B ) <g1:( A C B )>`, :g:`( D F E ) <g1:( D F E )>` as greater circumferences and :g:`( A G B ) <g1:( A G B )>`, :g:`( D H E ) <g1:( D H E )>` as lesser
 
 .. step:: construct
 
-   For let the centres :g:`K <g1:K>`, :g:`L <g1:L>` of the circles be taken
+   Let the centres :g:`K <g1:K>`, :g:`L <g1:L>` of the circles be taken
 
 .. step:: construct
 
-   **segment** :g:`/ A K / <g1:/ A K />`, :g:`/ K B / <g1:/ K B />`, :g:`/ D L / <g1:/ D L />`, :g:`/ L E / <g1:/ L E />`
+   :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`K <g1:K>`) → :g:`/ A K / <g1:/ A K />`, :fn:`segment <G.3>`\ (:g:`K <g1:K>`, :g:`B <g1:B>`) → :g:`/ K B / <g1:/ K B />`, :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`L <g1:L>`) → :g:`/ D L / <g1:/ D L />`, :fn:`segment <G.3>`\ (:g:`L <g1:L>`, :g:`E <g1:E>`) → :g:`/ L E / <g1:/ L E />`
 
 .. step:: assert
 
@@ -59,11 +57,11 @@ G.107
 
    And the base :g:`/ A B / <g1:/ A B />` is :eq:`equal <g1:/ A B / = g1:/ D E />` to the base :g:`/ D E / <g1:/ D E />`
 
-.. step:: assert [G.15] <G.15>
+.. step:: assert ∵ sss_congruence <G.15>
 
    Therefore :g:`< A K B ) <g1:< A K B )>` is :eq:`equal <g1:< A K B ) = g1:< D L E )>` to :g:`< D L E ) <g1:< D L E )>`.
 
-.. step:: assert [G.105] <G.105>
+.. step:: assert ∵ equal_circles_equal <G.105>
 
    Equal angles stand on equal circumferences, when they are at the centres
 

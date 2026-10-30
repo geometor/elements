@@ -24,20 +24,22 @@ G.91
 
    In a circle equal straight lines are equally distant from the centre, and those which are equally distant from the centre are equal.
 
+.. signature:: theorem
+
+   | :fn:`circle_equal_straight <G.91>`\ (:g:`( A B D C ) <g1:( A B D C )>`, :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`)
+   | **given** :g:`( A B D C ) <g1:( A B D C )>` be a circle, let :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` be :eq:`equal <g1:/ A B / = g1:/ C D />` straight lines in it
+   | **prove** :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` are equally distant from the center; :g:`/ A B / <g1:/ A B />` is also :eq:`equal <g1:/ A B / = g1:/ C D />` to :g:`/ C D / <g1:/ C D />`
+
 .. picture:: g1.svg
    :alt: Proposition 14 diagram
 
 .. step:: given
 
-   :g:`( A B D C ) <g1:( A B D C )>` be a circle
+   :g:`( A B D C ) <g1:( A B D C )>` be a circle, let :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` be :eq:`equal <g1:/ A B / = g1:/ C D />` straight lines in it
 
-.. step:: assert
+.. step:: construct
 
-   Let :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` be :eq:`equal <g1:/ A B / = g1:/ C D />` straight lines in it
-
-.. step:: construct [G.76] <G.76>
-
-   For let the center of :g:`( A B D C ) <g1:( A B D C )>` be taken
+   :fn:`find_circle_center <G.76>`: Let the center of :g:`( A B D C ) <g1:( A B D C )>` be taken
 
 .. step:: assert
 
@@ -45,13 +47,9 @@ G.91
 
 .. step:: construct
 
-   From :g:`E <g1:E>` let :g:`/ E F / <g1:/ E F />`, :g:`/ E G / <g1:/ E G />` be drawn perpendicular to :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`
+   From :g:`E <g1:E>` let :g:`/ E F / <g1:/ E F />`, :g:`/ E G / <g1:/ E G />` be drawn perpendicular to :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`, and let :g:`/ A E / <g1:/ A E />`, :g:`/ E C / <g1:/ E C />` be joined.
 
-.. step:: construct
-
-   **segment** :g:`/ A E / <g1:/ A E />`, :g:`/ E C / <g1:/ E C />`
-
-.. step:: assert [G.78] <G.78>
+.. step:: assert ∵ circle_straight_line <G.78>
 
    Since a straight line :g:`/ E F / <g1:/ E F />` through the center cuts a straight line :g:`/ A B / <g1:/ A B />` not through the center at right angles, it also :eq:`bisects <g1:/ A F / = g1:/ F B />` it.
 
@@ -61,7 +59,7 @@ G.91
 
 .. step:: assert
 
-   For the same reason
+   The same reason
 
 .. step:: assert
 
@@ -87,7 +85,7 @@ G.91
 
    The squares on :g:`/ A F / <g1:/ A F />`, :g:`/ E F / <g1:/ E F />` are equal to the square on :g:`/ A E / <g1:/ A E />`, for the angle at :g:`< E F A ) <g1:< E F A )>` is right
 
-.. step:: assert [G.60] <G.60>
+.. step:: assert ∵ pythagorean_theorem <G.60>
 
    And the squares on :g:`/ E G / <g1:/ E G />`, :g:`/ G C / <g1:/ G C />` are equal to the square on :g:`/ E C / <g1:/ E C />`, for the angle at :g:`< E G C ) <g1:< E G C )>` is right
 
@@ -107,7 +105,7 @@ G.91
 
    Therefore :g:`/ E F / <g1:/ E F />` is :eq:`equal <g1:/ E F / = g1:/ E G />` to :g:`/ E G / <g1:/ E G />`.
 
-.. step:: assert [G.90] <G.90>
+.. step:: assert ∵ circle_straight_lines_def <G.90>
 
    In a circle straight lines are said to be equally distant from the center when the perpendiculars drawn to them from the center are equal
 
@@ -125,10 +123,6 @@ G.91
 
 .. step:: assert
 
-   :g:`/ A B / <g1:/ A B />` is also :eq:`equal <g1:/ A B / = g1:/ C D />` to :g:`/ C D / <g1:/ C D />`.
-
-.. step:: assert
-
    With the same construction, we can prove, similarly, that :g:`/ A B / <g1:/ A B />` is :eq:`double <g1:/ A F / = g1:/ F B /; g1:/ C G / = g1:/ G D />` of :g:`/ A F / <g1:/ A F />`, and :g:`/ C D / <g1:/ C D />` of :g:`/ C G / <g1:/ C G />`.
 
 .. step:: assert
@@ -139,9 +133,13 @@ G.91
 
    The square on :g:`/ A E / <g1:/ A E />` is :eq:`equal <g1:/ A E / = g1:/ C E />` to the square on :g:`/ C E / <g1:/ C E />`.
 
-.. step:: assert [G.60] <G.60>
+.. step:: assert ∵ pythagorean_theorem <G.60>
 
-   The squares on :g:`/ E F / <g1:/ E F />`, :g:`/ F A / <g1:/ F A />` are equal to the square on :g:`/ A E / <g1:/ A E />`, and the squares on :g:`/ E G / <g1:/ E G />`, :g:`/ G C / <g1:/ G C />` equal to the square on :g:`/ C E / <g1:/ C E />`. Therefore the squares on :g:`/ E F / <g1:/ E F />`, :g:`/ F A / <g1:/ F A />` are equal to the squares on :g:`/ E G / <g1:/ E G />`, :g:`/ G C / <g1:/ G C />`, of which the square on :g:`/ E F / <g1:/ E F />` is :eq:`equal <g1:/ E F / = g1:/ E G />` to the square on :g:`/ E G / <g1:/ E G />`, for :g:`/ E F / <g1:/ E F />` is :eq:`equal <g1:/ E F / = g1:/ E G />` to :g:`/ E G / <g1:/ E G />`
+   The squares on :g:`/ E F / <g1:/ E F />`, :g:`/ F A / <g1:/ F A />` are equal to the square on :g:`/ A E / <g1:/ A E />`, and the squares on :g:`/ E G / <g1:/ E G />`, :g:`/ G C / <g1:/ G C />` equal to the square on :g:`/ C E / <g1:/ C E />`
+
+.. step:: assert
+
+   Therefore the squares on :g:`/ E F / <g1:/ E F />`, :g:`/ F A / <g1:/ F A />` are equal to the squares on :g:`/ E G / <g1:/ E G />`, :g:`/ G C / <g1:/ G C />`, of which the square on :g:`/ E F / <g1:/ E F />` is :eq:`equal <g1:/ E F / = g1:/ E G />` to the square on :g:`/ E G / <g1:/ E G />`, for :g:`/ E F / <g1:/ E F />` is :eq:`equal <g1:/ E F / = g1:/ E G />` to :g:`/ E G / <g1:/ E G />`
 
 .. step:: assert
 

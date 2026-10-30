@@ -24,16 +24,21 @@ G.215
 
    If an unit measure any number, and another number measure any other number the same number of times, alternately also, the unit will measure the third number the same number of times that the second measures the fourth.
 
+.. signature:: theorem
+
+   | :fn:`unit_measure_number <G.215>`\ ()
+   | **prove** the unit :g:`A <g1:A>` measures the number :g:`D <g1:D>` the same number of times that :g:`/ B C / <g1:/ B C />` measures :g:`/ E F / <g1:/ E F />`
+
 .. picture:: g1.svg
    :alt: Proposition 15 Diagram
 
 .. step:: assert
 
-   For let the unit :g:`A <g1:A>` measure any number :g:`/ B C / <g1:/ B C />`
+   Let the unit :g:`A <g1:A>` measure any number :g:`/ B C / <g1:/ B C />`, and let another number :g:`D <g1:D>` measure any other number :g:`/ E F / <g1:/ E F />` the same number of times
 
 .. step:: assert
 
-   Let another number :g:`D <g1:D>` measure any other number :g:`/ E F / <g1:/ E F />` the same number of times
+   I say that, alternately also, the unit :g:`A <g1:A>` measures the number :g:`D <g1:D>` the same number of times that :g:`/ B C / <g1:/ B C />` measures :g:`/ E F / <g1:/ E F />`.
 
 .. step:: assert
 
@@ -59,7 +64,7 @@ G.215
 
    Therefore, as the unit :g:`/ B G / <g1:/ B G />` is to the number :g:`/ E K / <g1:/ E K />`, so will the unit :g:`/ G H / <g1:/ G H />` be to the number :g:`/ K L / <g1:/ K L />`, and the unit :g:`/ H C / <g1:/ H C />` to the number :g:`/ L F / <g1:/ L F />`.
 
-.. step:: assert [G.212] <G.212>
+.. step:: assert ∵ there_many_numbers <G.212>
 
    Therefore also, as one of the antecedents is to one of the consequents, so will all the antecedents be to all the consequents; therefore, as the unit :g:`/ B G / <g1:/ B G />` is to the number :g:`/ E K / <g1:/ E K />`, so is :g:`/ B C / <g1:/ B C />` to :g:`/ E F / <g1:/ E F />`.
 

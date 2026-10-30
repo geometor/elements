@@ -24,26 +24,27 @@ G.45
 
    In any triangle, an exterior angle equals the sum of the two opposite interior angles, and the three interior angles sum to two right angles.
 
+.. signature:: theorem
+
+   | :fn:`triangle_angle_sum <G.45>`\ ()
+   | **prove** the exterior angle :g:`< A C D ) <g1:< A C D )>` is equal to the two interior and opposite angles :g:`< C A B ) <g1:< C A B )>`, :g:`< A B C ) <g1:< A B C )>`, and the three interior angles of :g:`< A B C ) <g1:< A B C )>`, :g:`< B C A ) <g1:< B C A )>`, :g:`< C A B ) <g1:< C A B )>` are equal to two right angles
+
 .. picture:: g1.svg
    :alt: Folio 0331 Figure 1 - Proposition 32
 
-.. step:: given
+.. step:: construct
 
-   :g:`< A B C > <g1:< A B C >>` be a triangle
+   :fn:`extend <G.7>`\ (:g:`< A B C > <g1:< A B C >>` be a triangle, and let one side of it :g:`[ B D ] <g1:[ B D ]>`) → :g:`D <g1:D>`
 
 .. step:: construct
 
-   Let one side of it :g:`[ B D ] <g1:[ B D ]>` be produced to :g:`D <g1:D>`
+   :fn:`parallel_line <G.44>`\ (:g:`C <g1:C>`, :g:`/ A B / <g1:/ A B />`) → :g:`/ C E / <g1:/ C E />`
 
-.. step:: construct [G.44] <G.44>
-
-   For let :g:`/ C E / <g1:/ C E />` be drawn through :g:`C <g1:C>` parallel to :g:`/ A B / <g1:/ A B />`.
-
-.. step:: assert [G.42] <G.42>
+.. step:: assert ∵ parallel_transversal_angles <G.42>
 
    Since :g:`/ A B / <g1:/ A B />` is parallel to :g:`/ C E / <g1:/ C E />`, and :g:`/ A C / <g1:/ A C />` has fallen upon them → the alternate angles :g:`< B A C ) <g1:< B A C )>`, :g:`< A C E ) <g1:< A C E )>` are :eq:`equal <g1:< B A C ) = g1:< A C E )>` to one another.
 
-.. step:: assert [G.42] <G.42>
+.. step:: assert ∵ parallel_transversal_angles <G.42>
 
    Since :g:`/ A B / <g1:/ A B />` is parallel to :g:`/ C E / <g1:/ C E />`, and :g:`/ B D / <g1:/ B D />` has fallen upon them → the exterior angle :g:`< E C D ) <g1:< E C D )>` is :eq:`equal <g1:< E C D ) = g1:< A B C )>` to the interior and opposite angle :g:`< A B C ) <g1:< A B C )>`.
 
@@ -55,7 +56,7 @@ G.45
 
    Therefore the whole angle :g:`< A C D ) <g1:< A C D )>` is equal to the two interior and opposite angles :g:`< B A C ) <g1:< B A C )>`, :g:`< A B C ) <g1:< A B C )>`.
 
-.. step:: assert
+.. step:: construct
 
    Let :g:`< A C B ) <g1:< A C B )>` be added to each
 
@@ -63,7 +64,7 @@ G.45
 
    Therefore :g:`< A C D ) <g1:< A C D )>`, :g:`< A C B ) <g1:< A C B )>` are equal to the three angles :g:`< A B C ) <g1:< A B C )>`, :g:`< B C A ) <g1:< B C A )>`, :g:`< C A B ) <g1:< C A B )>`.
 
-.. step:: assert [G.22] <G.22>
+.. step:: assert ∵ adjacent_angles_supplementary <G.22>
 
    :g:`< A C D ) <g1:< A C D )>`, :g:`< A C B ) <g1:< A C B )>` are equal to two right angles
 

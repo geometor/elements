@@ -23,6 +23,10 @@ G.88
 
    **Circles** are said to:term:`**touch one another** <circles-touching>` which, meeting one another, do not cut one another.
 
+.. signature:: def
+
+   | :fn:`circles_said_touch_def <G.88>`
+
 Required for
 ------------
 

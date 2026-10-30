@@ -24,20 +24,25 @@ G.22
 
    A ray standing on a line makes either two right angles or adjacent angles summing to two right angles.
 
+.. signature:: theorem
+
+   | :fn:`adjacent_angles_supplementary <G.22>`\ ()
+   | **prove** :g:`< C B A ) <g1:< C B A )>`, :g:`< A B D ) <g1:< A B D )>` are either two right angles or equal to two right angles
+
 .. picture:: g1.svg
    :alt: Proposition 13 figure
 
 .. step:: assert
 
-   For let any straight line :g:`/ A B / <g1:/ A B />` set up on :g:`/ C D / <g1:/ C D />` make :g:`< C B A ) <g1:< C B A )>`, :g:`< A B D ) <g1:< A B D )>`
+   Let any straight line :g:`/ A B / <g1:/ A B />` set up on :g:`/ C D / <g1:/ C D />` make :g:`< C B A ) <g1:< C B A )>`, :g:`< A B D ) <g1:< A B D )>`
 
-.. step:: assert [G.18] <G.18>
+.. step:: assert ∵ right_angle_perpendicular <G.18>
 
    If :g:`< C B A ) <g1:< C B A )>` is :eq:`equal <g1:< C B A ) = g1:< A B D )>` to :g:`< A B D ) <g1:< A B D )>` → they are :eq:`two right angles <g1:< C B A ) = g1:< A B D )>`.
 
-.. step:: construct [G.19] <G.19>
+.. step:: construct
 
-   But, if not, let :g:`/ B E / <g1:/ B E />` be drawn from :g:`B <g1:B>` at right angles to :g:`/ C D / <g1:/ C D />`
+   :fn:`perpendicular_at <G.19>`\ (:g:`/ C D / <g1:/ C D />`, :g:`B <g1:B>`) → :g:`/ B E / <g1:/ B E />`
 
 .. step:: assert
 
@@ -47,7 +52,7 @@ G.22
 
    Since :g:`< C B E ) <g1:< C B E )>` is equal to the two angles :g:`< C B A ) <g1:< C B A )>`, :g:`< A B E ) <g1:< A B E )>` → let :g:`< E B D ) <g1:< E B D )>` be added to each;
 
-.. step:: assert [G.21] <G.21>
+.. step:: assert ∵ add_equals <G.21>
 
    Therefore :g:`< C B E ) <g1:< C B E )>`, :g:`< E B D ) <g1:< E B D )>` are equal to the three angles :g:`< C B A ) <g1:< C B A )>`, :g:`< A B E ) <g1:< A B E )>`, :g:`< E B D ) <g1:< E B D )>`.
 
@@ -55,7 +60,7 @@ G.22
 
    Since :g:`< D B A ) <g1:< D B A )>` is equal to the two angles :g:`< D B E ) <g1:< D B E )>`, :g:`< E B A ) <g1:< E B A )>` → let :g:`< A B C ) <g1:< A B C )>` be added to each;
 
-.. step:: assert [G.21] <G.21>
+.. step:: assert ∵ add_equals <G.21>
 
    Therefore :g:`< D B A ) <g1:< D B A )>`, :g:`< A B C ) <g1:< A B C )>` are equal to the three angles :g:`< D B E ) <g1:< D B E )>`, :g:`< E B A ) <g1:< E B A )>`, :g:`< A B C ) <g1:< A B C )>`.
 
@@ -63,7 +68,7 @@ G.22
 
    :g:`< C B E ) <g1:< C B E )>`, :g:`< E B D ) <g1:< E B D )>` were also proved equal to the same three angles
 
-.. step:: assert [G.1] <G.1>
+.. step:: assert ∵ equal_transitive <G.1>
 
    Therefore :g:`< C B E ) <g1:< C B E )>`, :g:`< E B D ) <g1:< E B D )>` are also equal to :g:`< D B A ) <g1:< D B A )>`, :g:`< A B C ) <g1:< A B C )>`.
 
@@ -71,13 +76,9 @@ G.22
 
    :g:`< C B E ) <g1:< C B E )>`, :g:`< E B D ) <g1:< E B D )>` are :eq:`two right angles <g1:< C B E ) = g1:< E B D )>`
 
-.. step:: assert
-
-   Therefore :g:`< D B A ) <g1:< D B A )>`, :g:`< A B C ) <g1:< A B C )>` are also equal to two right angles.
-
 .. step:: conclude
 
-   Therefore etc.
+   Therefore :g:`< D B A ) <g1:< D B A )>`, :g:`< A B C ) <g1:< A B C )>` are also equal to two right angles.
 
 Dependency Graph
 ----------------

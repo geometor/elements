@@ -24,22 +24,24 @@ G.388
 
    A straight line commensurable in length with a bimedial straight line is itself also bimedial and the same in order.
 
+.. signature:: theorem
+
+   | :fn:`straight_line_commensurable_x_67 <G.388>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`)
+   | **given** :g:`/ A B / <g1:/ A B />` be bimedial, let :g:`/ C D / <g1:/ C D />` be commensurable in length with :g:`/ A B / <g1:/ A B />`
+   | **prove** :g:`/ C D / <g1:/ C D />` is bimedial and the same in order with :g:`/ A B / <g1:/ A B />`
+
 .. picture:: g1.svg
    :alt: Proposition 67
 
 .. step:: given
 
-   :g:`/ A B / <g1:/ A B />` be bimedial
-
-.. step:: assert
-
-   Let :g:`/ C D / <g1:/ C D />` be commensurable in length with :g:`/ A B / <g1:/ A B />`
+   :g:`/ A B / <g1:/ A B />` be bimedial, let :g:`/ C D / <g1:/ C D />` be commensurable in length with :g:`/ A B / <g1:/ A B />`
 
 .. step:: assert
 
    Since :g:`/ A B / <g1:/ A B />` is bimedial, let it be divided into its medials at :g:`E <g1:E>`
 
-.. step:: assert [G.352, G.353] <G.352, G.353>
+.. step:: assert ∵ medial_straight_lines, medial_straight_lines_x_38 <G.352, G.353>
 
    Therefore :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />` are medial straight lines commensurable in square only.
 
@@ -47,7 +49,7 @@ G.388
 
    Let it be contrived that, as :g:`/ A B / <g1:/ A B />` is to :g:`/ C D / <g1:/ C D />`, so is :g:`/ A E / <g1:/ A E />` to :g:`/ C F / <g1:/ C F />`
 
-.. step:: assert [G.156] <G.156>
+.. step:: assert ∵ whole_whole_part <G.156>
 
    Therefore also the remainder :g:`/ E B / <g1:/ E B />` is to the remainder :g:`/ F D / <g1:/ F D />` as :g:`/ A B / <g1:/ A B />` is to :g:`/ C D / <g1:/ C D />`.
 
@@ -55,7 +57,7 @@ G.388
 
    :g:`/ A B / <g1:/ A B />` is commensurable in length with :g:`/ C D / <g1:/ C D />`;
 
-.. step:: assert [G.323] <G.323>
+.. step:: assert ∵ magnitudes_proportional_commensurable <G.323>
 
    Therefore :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />` are also commensurable with :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />` respectively.
 
@@ -63,15 +65,15 @@ G.388
 
    :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />` are medial;
 
-.. step:: assert [G.338] <G.338>
+.. step:: assert ∵ straight_line_commensurable <G.338>
 
    Therefore :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />` are also medial.
 
-.. step:: assert [G.148] <G.148>
+.. step:: assert ∵ ratios_ratio <G.148>
 
    Since, as :g:`/ A E / <g1:/ A E />` is to :g:`/ E B / <g1:/ E B />`, so is :g:`/ C F / <g1:/ C F />` to :g:`/ F D / <g1:/ F D />`, and :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />` are commensurable in square only.
 
-.. step:: assert [G.323] <G.323>
+.. step:: assert ∵ magnitudes_proportional_commensurable <G.323>
 
    :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />` are also commensurable in square only.
 
@@ -91,7 +93,7 @@ G.388
 
    For since, as :g:`/ A E / <g1:/ A E />` is to :g:`/ E B / <g1:/ E B />`, so is :g:`/ C F / <g1:/ C F />` to :g:`/ F D / <g1:/ F D />`,
 
-.. step:: assert [G.153] <G.153>
+.. step:: assert ∵ magnitudes_proportional_proportional <G.153>
 
    Therefore also, as the square on :g:`/ A E / <g1:/ A E />` is to the rectangle :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />`, so is the square on :g:`/ C F / <g1:/ C F />` to the rectangle :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />`; therefore, alternately, as the square on :g:`/ A E / <g1:/ A E />` is to the square on :g:`/ C F / <g1:/ C F />`, so is the rectangle :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />` to the rectangle :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />`.
 
@@ -107,7 +109,7 @@ G.388
 
    If therefore the rectangle :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />` is rational,
 
-.. step:: conclude [G.352, G.338, G.353] <G.352, G.338, G.353>
+.. step:: conclude ∵ medial_straight_lines, straight_line_commensurable, medial_straight_lines_x_38 <G.352, G.338, G.353>
 
    The rectangle :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />` is also rational, [and for this reason :g:`/ C D / <g1:/ C D />` is a first bimedial]; but if medial, medial, and each of :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` is a second bimedial.
 

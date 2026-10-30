@@ -23,6 +23,10 @@ G.375
 
    Again, if the square on the greater term be greater than the square on the lesser by the square on a straight line incommensurable in length with the greater, then, if the greater term be commensurable in length with the rational straight line set out, let the whole be called a:term:`**fourth binomial** <fourth-binomial>`;
 
+.. signature:: def
+
+   | :fn:`again_square_greater_def <G.375>`
+
 Required for
 ------------
 

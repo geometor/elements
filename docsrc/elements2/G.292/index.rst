@@ -23,6 +23,10 @@ G.292
 
    An:term:`**even number** <even-number>` is that which is divisible into two equal parts.
 
+.. signature:: def
+
+   | :fn:`even_number_divisible_def <G.292>`
+
 Required for
 ------------
 

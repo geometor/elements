@@ -24,26 +24,23 @@ G.97
 
    If a straight line touch a circle, and from the point of contact a straight line be drawn at right angles to the tangent, the centre of the circle is on the straight line so drawn.
 
+.. signature:: theorem
+
+   | :fn:`straight_line_touch_iii_19 <G.97>`\ ()
+   | **prove** the center of the circle is on :g:`/ A C / <g1:/ A C />`
+
 .. picture:: g1.svg
    :alt: Diagram for Proposition 19
 
-.. step:: assert
+.. step:: construct
 
-   For let a straight line :g:`/ D E / <g1:/ D E />` touch :g:`( A B C ) <g1:( A B C )>` at :g:`C <g1:C>`
+   Let a straight line :g:`/ D E / <g1:/ D E />` touch :g:`( A B C ) <g1:( A B C )>` at :g:`C <g1:C>`, and from :g:`C <g1:C>` let :g:`/ C A / <g1:/ C A />` be drawn at right angles to :g:`/ D E / <g1:/ D E />`
 
 .. step:: construct
 
-   From :g:`C <g1:C>` let :g:`/ C A / <g1:/ C A />` be drawn at right angles to :g:`/ D E / <g1:/ D E />`
+   Suppose it is not, but, if possible, let :g:`F <g1:F>` be the center, and let :g:`/ C F / <g1:/ C F />` be joined.
 
-.. step:: assert
-
-   For suppose it is not, but, if possible, let :g:`F <g1:F>` be the center
-
-.. step:: construct
-
-   **segment** :g:`/ C F / <g1:/ C F />`
-
-.. step:: assert [G.96] <G.96>
+.. step:: assert ∵ straight_line_touch <G.96>
 
    Since a straight line :g:`/ D E / <g1:/ D E />` touches :g:`( A B C ) <g1:( A B C )>`, and :g:`/ F C / <g1:/ F C />` has been joined from the center to the point of contact → :g:`/ F C / <g1:/ F C />` is perpendicular to :g:`/ D E / <g1:/ D E />`; therefore :g:`< F C E ) <g1:< F C E )>` is right.
 

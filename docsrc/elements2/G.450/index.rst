@@ -24,26 +24,23 @@ G.450
 
    If two straight lines be parallel and points be taken at random on each of them, the straight line joining the points is in the same plane with the parallel straight lines.
 
+.. signature:: theorem
+
+   | :fn:`straight_lines_parallel <G.450>`\ ()
+   | **prove** the straight line joining :g:`E <g1:E>`, :g:`F <g1:F>` is in the same plane with the parallel straight lines
+
 .. picture:: g1.svg
    :alt: Book XI - Proposition 7
 
-.. step:: given
+.. step:: construct
 
-   :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` be two parallel straight lines
+   Let :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` be two parallel straight lines, and let points :g:`E <g1:E>`, :g:`F <g1:F>` be taken at random on them respectively
 
 .. step:: construct
 
-   Let points :g:`E <g1:E>`, :g:`F <g1:F>` be taken at random on them respectively
+   Suppose it is not, but, if possible, let it be in a more elevated plane as :g:`( E G F ) <g1:( E G F )>`, and let a plane be drawn through :g:`( E G F ) <g1:( E G F )>`
 
-.. step:: assert
-
-   For suppose it is not, but, if possible, let it be in a more elevated plane as :g:`( E G F ) <g1:( E G F )>`
-
-.. step:: construct
-
-   Let a plane be drawn through :g:`( E G F ) <g1:( E G F )>`
-
-.. step:: assert [G.445] <G.445>
+.. step:: assert ∵ planes_cut_common <G.445>
 
    It will then make, as section in the plane of reference, a straight line.
 

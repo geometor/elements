@@ -24,16 +24,21 @@ G.447
 
    If a straight line be set up at right angles to two straight lines which cut one another, at their common point of section, it is at right angles to the plane through them.
 
+.. signature:: theorem
+
+   | :fn:`straight_line_set <G.447>`\ ()
+   | **prove** :g:`/ E F / <g1:/ E F />` is also at right angles to the plane through :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`
+
 .. picture:: g1.svg
    :alt: Book XI, Proposition 4
 
 .. step:: construct
 
-   For let a straight line :g:`/ E F / <g1:/ E F />` be set up at right angles to :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`, which cut one another at :g:`E <g1:E>`, from :g:`E <g1:E>`
+   Let a straight line :g:`/ E F / <g1:/ E F />` be set up at right angles to :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`, which cut one another at :g:`E <g1:E>`, from :g:`E <g1:E>`
 
 .. step:: construct
 
-   For let :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />`, :g:`/ C E / <g1:/ C E />`, :g:`/ E D / <g1:/ E D />` be cut off :eq:`equal <g1:/ A E / = g1:/ E B / = g1:/ C E / = g1:/ E D />` to one another
+   Let :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />`, :g:`/ C E / <g1:/ C E />`, :g:`/ E D / <g1:/ E D />` be cut off :eq:`equal <g1:/ A E / = g1:/ E B / = g1:/ C E / = g1:/ E D />` to one another
 
 .. step:: construct
 
@@ -51,19 +56,19 @@ G.447
 
    .
 
-.. step:: assert [G.25] <G.25>
+.. step:: assert ∵ vertical_angles_equal <G.25>
 
    Since :g:`/ A E / <g1:/ A E />`, :g:`/ E D / <g1:/ E D />` are :eq:`equal <g1:/ A E / = g1:/ C E /; g1:/ E D / = g1:/ E B />` to :g:`/ C E / <g1:/ C E />`, :g:`/ E B / <g1:/ E B />`, and contain :eq:`equal <g1:< A E D ) = g1:< C E B )>` angles.
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    Therefore the base :g:`/ A D / <g1:/ A D />` is :eq:`equal <g1:/ A D / = g1:/ C B />` to the base :g:`/ C B / <g1:/ C B />`, and :g:`< A E D > <g1:< A E D >>` will be :eq:`equal <g1:< A E D > = g1:< C E B >>` to :g:`< C E B > <g1:< C E B >>`; so that :g:`< D A E ) <g1:< D A E )>` is also :eq:`equal <g1:< D A E ) = g1:< E B C )>` to :g:`< E B C ) <g1:< E B C )>`.
 
-.. step:: assert [G.25] <G.25>
+.. step:: assert ∵ vertical_angles_equal <G.25>
 
    :g:`< A E G ) <g1:< A E G )>` is also :eq:`equal <g1:< A E G ) = g1:< B E H )>` to :g:`< B E H ) <g1:< B E H )>`;
 
-.. step:: assert [G.37] <G.37>
+.. step:: assert ∵ asa_aas_congruence <G.37>
 
    Therefore :g:`< A G E > <g1:< A G E >>`, :g:`< B E H > <g1:< B E H >>` are two triangles which have two angles :eq:`equal <g1:< D A E ) = g1:< E B C ); g1:< A E G ) = g1:< B E H )>` to two angles respectively, and one side :eq:`equal <g1:/ A E / = g1:/ E B />` to one side, namely that adjacent to the :eq:`equal <g1:< D A E ) = g1:< E B C ); g1:< A E G ) = g1:< B E H )>` angles, that is to say, :g:`/ A E / <g1:/ A E />` to :g:`/ E B / <g1:/ E B />`; therefore they will also have the remaining sides :eq:`equal <g1:/ G E / = g1:/ E H /; g1:/ A G / = g1:/ B H />` to the remaining sides.
 
@@ -75,7 +80,7 @@ G.447
 
    And, since :g:`/ A E / <g1:/ A E />` is :eq:`equal <g1:/ A E / = g1:/ E B />` to :g:`/ E B / <g1:/ E B />`, while :g:`/ F E / <g1:/ F E />` is common and at right angles,
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    Therefore the base :g:`/ F A / <g1:/ F A />` is :eq:`equal <g1:/ F A / = g1:/ F B />` to the base :g:`/ F B / <g1:/ F B />`.
 
@@ -87,7 +92,7 @@ G.447
 
    And, since :g:`/ A D / <g1:/ A D />` is :eq:`equal <g1:/ A D / = g1:/ C B />` to :g:`/ C B / <g1:/ C B />`, and :g:`/ F A / <g1:/ F A />` is also :eq:`equal <g1:/ F A / = g1:/ F B />` to :g:`/ F B / <g1:/ F B />`, the two sides :g:`/ F A / <g1:/ F A />`, :g:`/ A D / <g1:/ A D />` are :eq:`equal <g1:/ F A / = g1:/ F B /; g1:/ A D / = g1:/ B C />` to the two sides :g:`/ F B / <g1:/ F B />`, :g:`/ B C / <g1:/ B C />` respectively; and the base :g:`/ F D / <g1:/ F D />` was proved :eq:`equal <g1:/ F D / = g1:/ F C />` to the base :g:`/ F C / <g1:/ F C />`;
 
-.. step:: assert [G.15] <G.15>
+.. step:: assert ∵ sss_congruence <G.15>
 
    Therefore :g:`< F A D ) <g1:< F A D )>` is also :eq:`equal <g1:< F A D ) = g1:< F B C )>` to :g:`< F B C ) <g1:< F B C )>`.
 
@@ -95,7 +100,7 @@ G.447
 
    Since, again, :g:`/ A G / <g1:/ A G />` was proved :eq:`equal <g1:/ A G / = g1:/ B H />` to :g:`/ B H / <g1:/ B H />`, and further :g:`/ F A / <g1:/ F A />` also :eq:`equal <g1:/ F A / = g1:/ F B />` to :g:`/ F B / <g1:/ F B />`, the two sides :g:`/ F A / <g1:/ F A />`, :g:`/ A G / <g1:/ A G />` are :eq:`equal <g1:/ F A / = g1:/ F B /; g1:/ A G / = g1:/ B H />` to the two sides :g:`/ F B / <g1:/ F B />`, :g:`/ B H / <g1:/ B H />`. And :g:`< F A G ) <g1:< F A G )>` was proved :eq:`equal <g1:< F A G ) = g1:< F B H )>` to :g:`< F B H ) <g1:< F B H )>`;
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    Therefore the base :g:`/ F G / <g1:/ F G />` is :eq:`equal <g1:/ F G / = g1:/ F H />` to the base :g:`/ F H / <g1:/ F H />`.
 
@@ -103,7 +108,7 @@ G.447
 
    Now since, again, :g:`/ G E / <g1:/ G E />` was proved :eq:`equal <g1:/ G E / = g1:/ E H />` to :g:`/ E H / <g1:/ E H />`, and :g:`/ E F / <g1:/ E F />` is common, the two sides :g:`/ G E / <g1:/ G E />`, :g:`/ E F / <g1:/ E F />` are :eq:`equal <g1:/ G E / = g1:/ H E />` to the two sides :g:`/ H E / <g1:/ H E />`, :g:`/ E F / <g1:/ E F />`; and the base :g:`/ F G / <g1:/ F G />` is :eq:`equal <g1:/ F G / = g1:/ F H />` to the base :g:`/ F H / <g1:/ F H />`;
 
-.. step:: assert [G.15] <G.15>
+.. step:: assert ∵ sss_congruence <G.15>
 
    Therefore :g:`< G E F ) <g1:< G E F )>` is :eq:`equal <g1:< G E F ) = g1:< H E F )>` to :g:`< H E F ) <g1:< H E F )>`.
 
@@ -119,7 +124,7 @@ G.447
 
    Similarly we can prove that :g:`/ F E / <g1:/ F E />` will also make right angles with all the straight lines which meet it and are in the plane of reference.
 
-.. step:: assert [G.446] <G.446>
+.. step:: assert ∵ straight_line_right_def <G.446>
 
    A straight line is at right angles to a plane when it makes right angles with all the straight lines which meet it and are in that same plane.
 

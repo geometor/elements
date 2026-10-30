@@ -24,6 +24,12 @@ G.502
 
    In equal cones and cylinders the bases are reciprocally proportional to the heights; and those cones and cylinders in which the bases are reciprocally proportional to the heights are equal.
 
+.. signature:: theorem
+
+   | :fn:`equal_cones_cylinders <G.502>`\ (:g:`( A B C D ) <g1:( A B C D )>`, :g:`( E F G H ) <g1:( E F G H )>`)
+   | **given** there be :eq:`equal <g1:< A O > = g1:< E P >>` cones and cylinders of which :g:`( A B C D ) <g1:( A B C D )>`, :g:`( E F G H ) <g1:( E F G H )>` are the bases
+   | **prove** in the cylinders :g:`< A O > <g1:< A O >>`, :g:`< E P > <g1:< E P >>` the bases are reciprocally proportional to the heights, that is, as the base :g:`( A B C D ) <g1:( A B C D )>` is to the base :g:`( E F G H ) <g1:( E F G H )>`, so is the height :g:`/ M N / <g1:/ M N />` to the height :g:`/ K L / <g1:/ K L />`; the cylinder :g:`< A O > <g1:< A O >>` is :eq:`equal <g1:< A O > = g1:< E P >>` to the cylinder :g:`< E P > <g1:< E P >>`
+
 .. picture:: g1.svg
    :alt: Proposition 15 Diagram
 
@@ -37,13 +43,13 @@ G.502
 
 .. step:: assert
 
-   Let the cylinders :g:`< A O > <g1:< A O >>`, :g:`< E P > <g1:< E P >>` be completed. I say that in the cylinders :g:`< A O > <g1:< A O >>`, :g:`< E P > <g1:< E P >>` the bases are reciprocally proportional to the heights, that is, as the base :g:`( A B C D ) <g1:( A B C D )>` is to the base :g:`( E F G H ) <g1:( E F G H )>`, so is the height :g:`/ M N / <g1:/ M N />` to the height :g:`/ K L / <g1:/ K L />`.
+   Let the cylinders :g:`< A O > <g1:< A O >>`, :g:`< E P > <g1:< E P >>` be completed
 
 .. step:: assert
 
-   For the height :g:`/ L K / <g1:/ L K />` is either :eq:`equal <g1:/ L K / = g1:/ M N />` to the height :g:`/ M N / <g1:/ M N />` or not equal. First, let it be :eq:`equal <g1:/ L K / = g1:/ M N />`.
+   The height :g:`/ L K / <g1:/ L K />` is either :eq:`equal <g1:/ L K / = g1:/ M N />` to the height :g:`/ M N / <g1:/ M N />` or not equal. First, let it be :eq:`equal <g1:/ L K / = g1:/ M N />`.
 
-.. step:: assert [G.497] <G.497>
+.. step:: assert ∵ cones_cylinders_height <G.497>
 
    Now the cylinder :g:`< A O > <g1:< A O >>` is also :eq:`equal <g1:< A O > = g1:< E P >>` to the cylinder :g:`< E P > <g1:< E P >>`. But cones and cylinders which are of the same height are to one another as their bases.
 
@@ -57,25 +63,25 @@ G.502
 
 .. step:: construct
 
-   From the height :g:`/ M N / <g1:/ M N />` let :g:`/ Q N / <g1:/ Q N />` be cut off :eq:`equal <g1:/ Q N / = g1:/ K L />` to :g:`/ K L / <g1:/ K L />`, through :g:`Q <g1:Q>` let the cylinder :g:`< E P > <g1:< E P >>` be cut by the plane :g:`( T U S ) <g1:( T U S )>` parallel to the planes of :g:`( E F G H ) <g1:( E F G H )>`, :g:`( R P ) <g1:( R P )>`
+   From the height :g:`/ M N / <g1:/ M N />` let :g:`/ Q N / <g1:/ Q N />` be cut off :eq:`equal <g1:/ Q N / = g1:/ K L />` to :g:`/ K L / <g1:/ K L />`
 
-.. step:: assert
+.. step:: construct
 
-   Let the cylinder :g:`< E S > <g1:< E S >>` be conceived erected from :g:`( E F G H ) <g1:( E F G H )>` as base and with height :g:`/ N Q / <g1:/ N Q />`.
+   Through :g:`Q <g1:Q>` let the cylinder :g:`< E P > <g1:< E P >>` be cut by the plane :g:`( T U S ) <g1:( T U S )>` parallel to the planes of :g:`( E F G H ) <g1:( E F G H )>`, :g:`( R P ) <g1:( R P )>`, and let the cylinder :g:`< E S > <g1:< E S >>` be conceived erected from :g:`( E F G H ) <g1:( E F G H )>` as base and with height :g:`/ N Q / <g1:/ N Q />`.
 
 .. step:: assert
 
    Since the cylinder :g:`< A O > <g1:< A O >>` is :eq:`equal <g1:< A O > = g1:< E P >>` to the cylinder :g:`< E P > <g1:< E P >>`,
 
-.. step:: assert [G.142] <G.142>
+.. step:: assert ∵ equal_magnitudes_ratio <G.142>
 
    Therefore, as the cylinder :g:`< A O > <g1:< A O >>` is to the cylinder :g:`< E S > <g1:< E S >>`, so is the cylinder :g:`< E P > <g1:< E P >>` to the cylinder :g:`< E S > <g1:< E S >>`.
 
-.. step:: assert [G.497, G.500] <G.497, G.500>
+.. step:: assert ∵ cones_cylinders_height, cylinder_cut_plane <G.497, G.500>
 
    But, as the cylinder :g:`< A O > <g1:< A O >>` is to the cylinder :g:`< E S > <g1:< E S >>`, so is the base :g:`( A B C D ) <g1:( A B C D )>` to the base :g:`( E F G H ) <g1:( E F G H )>`, for the cylinders :g:`< A O > <g1:< A O >>`, :g:`< E S > <g1:< E S >>` are of the same height; and, as the cylinder :g:`< E P > <g1:< E P >>` is to the cylinder :g:`< E S > <g1:< E S >>`, so is the height :g:`/ M N / <g1:/ M N />` to the height :g:`/ Q N / <g1:/ Q N />`, for the cylinder :g:`< E P > <g1:< E P >>` has been cut by a plane which is parallel to its opposite planes.
 
-.. step:: assert [G.148] <G.148>
+.. step:: assert ∵ ratios_ratio <G.148>
 
    Therefore also, as the base :g:`( A B C D ) <g1:( A B C D )>` is to the base :g:`( E F G H ) <g1:( E F G H )>`, so is the height :g:`/ M N / <g1:/ M N />` to the height :g:`/ Q N / <g1:/ Q N />`.
 
@@ -97,25 +103,21 @@ G.502
 
 .. step:: assert
 
-   The cylinder :g:`< A O > <g1:< A O >>` is :eq:`equal <g1:< A O > = g1:< E P >>` to the cylinder :g:`< E P > <g1:< E P >>`.
-
-.. step:: assert
-
    With the same construction, since, as the base :g:`( A B C D ) <g1:( A B C D )>` is to the base :g:`( E F G H ) <g1:( E F G H )>`, so is the height :g:`/ M N / <g1:/ M N />` to the height :g:`/ K L / <g1:/ K L />`, while the height :g:`/ K L / <g1:/ K L />` is :eq:`equal <g1:/ K L / = g1:/ Q N />` to the height :g:`/ Q N / <g1:/ Q N />`,
 
 .. step:: assert
 
    Therefore, as the base :g:`( A B C D ) <g1:( A B C D )>` is to the base :g:`( E F G H ) <g1:( E F G H )>`, so is the height :g:`/ M N / <g1:/ M N />` to the height :g:`/ Q N / <g1:/ Q N />`
 
-.. step:: assert [G.497, G.500] <G.497, G.500>
+.. step:: assert ∵ cones_cylinders_height, cylinder_cut_plane <G.497, G.500>
 
    But, as the base :g:`( A B C D ) <g1:( A B C D )>` is to the base :g:`( E F G H ) <g1:( E F G H )>`, so is the cylinder :g:`< A O > <g1:< A O >>` to the cylinder :g:`< E S > <g1:< E S >>`, for they are of the same height; and, as the height :g:`/ M N / <g1:/ M N />` is to :g:`/ Q N / <g1:/ Q N />`, so is the cylinder :g:`< E P > <g1:< E P >>` to the cylinder :g:`< E S > <g1:< E S >>`.
 
-.. step:: assert [G.148] <G.148>
+.. step:: assert ∵ ratios_ratio <G.148>
 
    Therefore, as the cylinder :g:`< A O > <g1:< A O >>` is to the cylinder :g:`< E S > <g1:< E S >>`, so is the cylinder :g:`< E P > <g1:< E P >>` to the cylinder :g:`< E S > <g1:< E S >>`.
 
-.. step:: conclude [G.146] <G.146>
+.. step:: conclude ∵ magnitudes_ratio_equal <G.146>
 
    Therefore the cylinder :g:`< A O > <g1:< A O >>` is :eq:`equal <g1:< A O > = g1:< E P >>` to the cylinder :g:`< E P > <g1:< E P >>`. And the same is true for the cones also.
 

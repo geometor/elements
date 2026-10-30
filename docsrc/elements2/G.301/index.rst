@@ -24,18 +24,23 @@ G.301
 
    If an odd number by multiplying an even number make some number, the product is even.
 
+.. signature:: theorem
+
+   | :fn:`odd_number_multiplying <G.301>`\ ()
+   | **prove** :g:`C <g1:C>` is even
+
 .. picture:: g1.svg
    :alt: Book IX, Proposition 28
 
 .. step:: assert
 
-   For let the odd number :g:`A <g1:A>` by multiplying the even number :g:`B <g1:B>` make :g:`C <g1:C>`
+   Let the odd number :g:`A <g1:A>` by multiplying the even number :g:`B <g1:B>` make :g:`C <g1:C>`
 
 .. step:: assert
 
    Since :g:`A <g1:A>` by multiplying :g:`B <g1:B>` has made :g:`C <g1:C>`,
 
-.. step:: assert [G.222] <G.222>
+.. step:: assert ∵ number_said_multiply_def <G.222>
 
    Therefore :g:`C <g1:C>` is made up of as many numbers equal to :g:`B <g1:B>` as there are units in :g:`A <g1:A>`.
 
@@ -47,7 +52,7 @@ G.301
 
    Therefore :g:`C <g1:C>` is made up of even numbers.
 
-.. step:: assert [G.293] <G.293>
+.. step:: assert ∵ many_even_numbers <G.293>
 
    But, if as many even numbers as we please be added together, the whole is even.
 

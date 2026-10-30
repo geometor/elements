@@ -24,6 +24,12 @@ G.247
 
    If there be as many numbers as we please in continued proportion, and the first measure the last, it will measure the second also.
 
+.. signature:: theorem
+
+   | :fn:`there_many_numbers_viii_7 <G.247>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`)
+   | **given** there be as many numbers as we please, :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, in continued proportion
+   | **prove** :g:`A <g1:A>` also measures :g:`B <g1:B>`
+
 .. picture:: g1.svg
    :alt: Book VIII Proposition 7
 
@@ -35,7 +41,7 @@ G.247
 
    And let :g:`A <g1:A>` measure :g:`D <g1:D>`
 
-.. step:: assert [G.246] <G.246>
+.. step:: assert ∵ there_many_numbers_viii_6 <G.246>
 
    If :g:`A <g1:A>` does not measure :g:`B <g1:B>`, neither will any other of the numbers measure any other.
 

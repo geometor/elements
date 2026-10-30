@@ -24,22 +24,27 @@ G.29
 
    In any triangle, the greater side subtends the greater angle.
 
+.. signature:: theorem
+
+   | :fn:`greater_side_greater_angle <G.29>`\ ()
+   | **prove** :g:`< A B C ) <g1:< A B C )>` is also greater than :g:`< B C A ) <g1:< B C A )>`
+
 .. picture:: g1.svg
    :alt: Proposition 18 figure
 
 .. step:: assert
 
-   For let :g:`< A B C > <g1:< A B C >>` be a triangle having the side :g:`/ A C / <g1:/ A C />` greater than :g:`/ A B / <g1:/ A B />`
-
-.. step:: construct [G.9] <G.9>
-
-   Since :g:`/ A C / <g1:/ A C />` is greater than :g:`/ A B / <g1:/ A B />`, let :g:`/ A D / <g1:/ A D />` be made :eq:`equal <g1:/ A D / = g1:/ A B />` to :g:`/ A B / <g1:/ A B />`
+   Let :g:`< A B C > <g1:< A B C >>` be a triangle having the side :g:`/ A C / <g1:/ A C />` greater than :g:`/ A B / <g1:/ A B />`
 
 .. step:: construct
 
-   **segment** :g:`/ B D / <g1:/ B D />`
+   :fn:`cut_equal_segment <G.9>`: Since :g:`/ A C / <g1:/ A C />` is greater than :g:`/ A B / <g1:/ A B />`, let :g:`/ A D / <g1:/ A D />` be made :eq:`equal <g1:/ A D / = g1:/ A B />` to :g:`/ A B / <g1:/ A B />`
 
-.. step:: assert [G.27] <G.27>
+.. step:: construct
+
+   :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`D <g1:D>`) → :g:`/ B D / <g1:/ B D />`
+
+.. step:: assert ∵ exterior_angle_greater <G.27>
 
    Since :g:`< A D B ) <g1:< A D B )>` is an exterior angle of :g:`< B C D > <g1:< B C D >>` → it is greater than the interior and opposite angle :g:`< D C B ) <g1:< D C B )>`.
 

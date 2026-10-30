@@ -23,6 +23,10 @@ G.446
 
    A straight line is:term:`**at right angles to a plane** <right-angles-to-plane>`, when it makes right angles with all the straight lines which meet it and are in the plane.
 
+.. signature:: def
+
+   | :fn:`straight_line_right_def <G.446>`
+
 Required for
 ------------
 

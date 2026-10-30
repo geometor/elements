@@ -24,6 +24,12 @@ G.400
 
    To an apotome only one rational straight line can be annexed which is commensurable with the whole in square only.
 
+.. signature:: theorem
+
+   | :fn:`apotome_only_rational <G.400>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`)
+   | **given** :g:`/ A B / <g1:/ A B />` be an apotome, :g:`/ B C / <g1:/ B C />` an annex to it
+   | **prove** no other rational straight line can be annexed to :g:`/ A B / <g1:/ A B />` which is commensurable with the whole in square only
+
 .. picture:: g1.svg
    :alt: Proposition 79 Diagram
 
@@ -31,7 +37,7 @@ G.400
 
    :g:`/ A B / <g1:/ A B />` be an apotome, :g:`/ B C / <g1:/ B C />` an annex to it
 
-.. step:: assert [G.394] <G.394>
+.. step:: assert ∵ rational_straight_line <G.394>
 
    Therefore :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` are rational straight lines commensurable in square only.
 
@@ -39,11 +45,11 @@ G.400
 
    If possible, let :g:`/ B D / <g1:/ B D />` be so annexed ;
 
-.. step:: assert [G.394] <G.394>
+.. step:: assert ∵ rational_straight_line <G.394>
 
    Therefore :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` are also rational straight lines commensurable in square only.
 
-.. step:: assert [G.68] <G.68>
+.. step:: assert ∵ square_of_difference <G.68>
 
    Since the excess of the squares on :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` over twice the rectangle :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` is also the excess of the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` over twice the rectangle :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />`, for both exceed by the same, the square on :g:`/ A B / <g1:/ A B />`.
 
@@ -55,7 +61,7 @@ G.400
 
    The squares on :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` exceed the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` by a rational area, for both are rational ;
 
-.. step:: assert [G.335, G.341] <G.335, G.341>
+.. step:: assert ∵ rectangle_contained_rational_x_21, medial_area_exceed <G.335, G.341>
 
    Therefore twice the rectangle :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` also exceeds twice the rectangle :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` by a rational area : which is impossible, for both are medial, and a medial area does not exceed a medial by a rational area.
 

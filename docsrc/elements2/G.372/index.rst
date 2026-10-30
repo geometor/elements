@@ -24,40 +24,37 @@ G.372
 
    If an area be contained by a rational straight line and the second binomial, the "side" of the area is the irrational straight line which is called a first bimedial.
 
+.. signature:: theorem
+
+   | :fn:`area_contained_rational_x_55 <G.372>`\ ()
+   | **prove** the "side" of the area :g:`< A C > <g1:< A C >>` is a first bimedial straight line
+
 .. picture:: g1.svg
    :alt: Proposition 55
 
 .. step:: assert
 
-   For let the area :g:`< A B C D > <g1:< A B C D >>` be contained by the rational straight line :g:`/ A B / <g1:/ A B />` and the second binomial :g:`/ A D / <g1:/ A D />`
+   Let the area :g:`< A B C D > <g1:< A B C D >>` be contained by the rational straight line :g:`/ A B / <g1:/ A B />` and the second binomial :g:`/ A D / <g1:/ A D />`
 
 .. step:: assert
 
    Since :g:`/ A D / <g1:/ A D />` is a second binomial straight line, let it be divided into its terms at :g:`E <g1:E>`, so that :g:`/ A E / <g1:/ A E />` is the greater term ;
 
-.. step:: assert [G.371] <G.371>
+.. step:: assert ∵ lesser_term_commensurable_def <G.371>
 
    Therefore :g:`/ A E / <g1:/ A E />`, :g:`/ E D / <g1:/ E D />` are rational straight lines commensurable in square only, the square on :g:`/ A E / <g1:/ A E />` is greater than the square on :g:`/ E D / <g1:/ E D />` by the square on a straight line commensurable with :g:`/ A E / <g1:/ A E />`, and the lesser term :g:`/ E D / <g1:/ E D />` is commensurable in length with :g:`/ A B / <g1:/ A B />`.
 
-.. step:: assert
-
-   Let :g:`/ E D / <g1:/ E D />` be :eq:`bisected <g1:/ E F / = g1:/ F D />` at :g:`F <g1:F>`
-
 .. step:: construct
 
-   Let there be applied to :g:`/ A E / <g1:/ A E />` the rectangle :g:`/ A G / <g1:/ A G />`, :g:`/ G E / <g1:/ G E />` equal to the square on :g:`/ E F / <g1:/ E F />` and deficient by a square figure
+   Let :g:`/ E D / <g1:/ E D />` be :eq:`bisected <g1:/ E F / = g1:/ F D />` at :g:`F <g1:F>`, and let there be applied to :g:`/ A E / <g1:/ A E />` the rectangle :g:`/ A G / <g1:/ A G />`, :g:`/ G E / <g1:/ G E />` equal to the square on :g:`/ E F / <g1:/ E F />` and deficient by a square figure
 
-.. step:: assert [G.330] <G.330>
+.. step:: assert ∵ there_unequal_straight <G.330>
 
    Therefore :g:`/ A G / <g1:/ A G />` is commensurable in length with :g:`/ G E / <g1:/ G E />`.
 
 .. step:: construct
 
-   Through :g:`G <g1:G>`, :g:`E <g1:E>`, :g:`F <g1:F>` let :g:`/ G H / <g1:/ G H />`, :g:`/ E K / <g1:/ E K />`, :g:`/ F L / <g1:/ F L />` be drawn parallel to :g:`/ A B / <g1:/ A B />`, :g:`/ D C / <g1:/ D C />`, let the square :g:`< S N > <g1:< S N >>` be constructed :eq:`equal <g1:< S N > = g1:< A H >>` to the parallelogram :g:`< A H > <g1:< A H >>`, and the square :g:`< N Q > <g1:< N Q >>` :eq:`equal <g1:< N Q > = g1:< G K >>` to :g:`< G K > <g1:< G K >>`
-
-.. step:: construct
-
-   Let them be placed so that :g:`/ M N / <g1:/ M N />` is in a straight line with :g:`/ N O / <g1:/ N O />`
+   Through :g:`G <g1:G>`, :g:`E <g1:E>`, :g:`F <g1:F>` let :g:`/ G H / <g1:/ G H />`, :g:`/ E K / <g1:/ E K />`, :g:`/ F L / <g1:/ F L />` be drawn parallel to :g:`/ A B / <g1:/ A B />`, :g:`/ D C / <g1:/ D C />`, let the square :g:`< S N > <g1:< S N >>` be constructed :eq:`equal <g1:< S N > = g1:< A H >>` to the parallelogram :g:`< A H > <g1:< A H >>`, and the square :g:`< N Q > <g1:< N Q >>` :eq:`equal <g1:< N Q > = g1:< G K >>` to :g:`< G K > <g1:< G K >>`, and let them be placed so that :g:`/ M N / <g1:/ M N />` is in a straight line with :g:`/ N O / <g1:/ N O />`
 
 .. step:: assert
 
@@ -79,7 +76,7 @@ G.372
 
    Since :g:`/ A E / <g1:/ A E />` is incommensurable in length with :g:`/ E D / <g1:/ E D />`, while :g:`/ E D / <g1:/ E D />` is commensurable with :g:`/ A B / <g1:/ A B />`,
 
-.. step:: assert [G.326] <G.326>
+.. step:: assert ∵ magnitudes_commensurable_incommensurable <G.326>
 
    Therefore :g:`/ A E / <g1:/ A E />` is incommensurable with :g:`/ A B / <g1:/ A B />`.
 
@@ -87,7 +84,7 @@ G.372
 
    And, since :g:`/ A G / <g1:/ A G />` is commensurable with :g:`/ G E / <g1:/ G E />`,
 
-.. step:: assert [G.328] <G.328>
+.. step:: assert ∵ commensurable_magnitudes_added <G.328>
 
    :g:`/ A E / <g1:/ A E />` is also commensurable with each of :g:`/ A G / <g1:/ A G />`, :g:`/ G E / <g1:/ G E />`.
 
@@ -95,11 +92,11 @@ G.372
 
    :g:`/ A E / <g1:/ A E />` is incommensurable in length with :g:`/ A B / <g1:/ A B />` ;
 
-.. step:: assert [G.326] <G.326>
+.. step:: assert ∵ magnitudes_commensurable_incommensurable <G.326>
 
    Therefore :g:`/ A G / <g1:/ A G />`, :g:`/ G E / <g1:/ G E />` are also incommensurable with :g:`/ A B / <g1:/ A B />`.
 
-.. step:: assert [G.335] <G.335>
+.. step:: assert ∵ rectangle_contained_rational_x_21 <G.335>
 
    Therefore :g:`/ A B / <g1:/ A B />`, :g:`/ A G / <g1:/ A G />` and :g:`/ A B / <g1:/ A B />`, :g:`/ G E / <g1:/ G E />` are pairs of rational straight lines commensurable in square only ; so that each of the rectangles :g:`< A H > <g1:< A H >>`, :g:`< G K > <g1:< G K >>` is medial.
 
@@ -115,7 +112,7 @@ G.372
 
    And, since :g:`/ A G / <g1:/ A G />` is commensurable in length with :g:`/ G E / <g1:/ G E />`,
 
-.. step:: assert [G.163, G.323] <G.163, G.323>
+.. step:: assert ∵ triangles_parallelograms_height, magnitudes_proportional_commensurable <G.163, G.323>
 
    :g:`< A H > <g1:< A H >>` is also commensurable with :g:`< G K > <g1:< G K >>`, that is, :g:`< S N > <g1:< S N >>` is commensurable with :g:`< N Q > <g1:< N Q >>`, that is, the square on :g:`/ M N / <g1:/ M N />` with the square on :g:`/ N O / <g1:/ N O />`.
 
@@ -123,7 +120,7 @@ G.372
 
    And, since :g:`/ A E / <g1:/ A E />` is incommensurable in length with :g:`/ E D / <g1:/ E D />`, while :g:`/ A E / <g1:/ A E />` is commensurable with :g:`/ A G / <g1:/ A G />`, and :g:`/ E D / <g1:/ E D />` is commensurable with :g:`/ E F / <g1:/ E F />`,
 
-.. step:: assert [G.326, G.163, G.323] <G.326, G.163, G.323>
+.. step:: assert ∵ magnitudes_commensurable_incommensurable, triangles_parallelograms_height, magnitudes_proportional_commensurable <G.326, G.163, G.323>
 
    Therefore :g:`/ A G / <g1:/ A G />` is incommensurable with :g:`/ E F / <g1:/ E F />` ; so that :g:`< A H > <g1:< A H >>` is also incommensurable with :g:`< E L > <g1:< E L >>`, that is, :g:`< S N > <g1:< S N >>` is incommensurable with :g:`< M R > <g1:< M R >>`, that is, :g:`/ N P / <g1:/ N P />` with :g:`/ R N / <g1:/ R N />`, that is, :g:`/ M N / <g1:/ M N />` is incommensurable in length with :g:`/ N O / <g1:/ N O />`.
 
@@ -143,7 +140,7 @@ G.372
 
    Since :g:`/ E D / <g1:/ E D />` is, by hypothesis, commensurable with each of :g:`/ A B / <g1:/ A B />`, :g:`/ E F / <g1:/ E F />`,
 
-.. step:: assert [G.325] <G.325>
+.. step:: assert ∵ magnitudes_commensurable_magnitude <G.325>
 
    Therefore :g:`/ E F / <g1:/ E F />` is also commensurable with :g:`/ E K / <g1:/ E K />`.
 
@@ -151,11 +148,11 @@ G.372
 
    Each of them is rational ;
 
-.. step:: assert [G.333] <G.333>
+.. step:: assert ∵ rectangle_contained_rational <G.333>
 
    Therefore :g:`< E L > <g1:< E L >>`, that is, :g:`< M R > <g1:< M R >>` is rational, and :g:`< M R > <g1:< M R >>` is the rectangle :g:`/ M N / <g1:/ M N />`, :g:`/ N O / <g1:/ N O />`.
 
-.. step:: conclude [G.352] <G.352>
+.. step:: conclude ∵ medial_straight_lines <G.352>
 
    But, if two medial straight lines commensurable in square only and containing a rational rectangle be added together, the whole is irrational and is called a first bimedial straight line.
 

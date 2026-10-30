@@ -24,16 +24,18 @@ G.290
 
    Given three numbers, to investigate when it is possible to find a fourth proportional to them.
 
+.. signature:: problem
+
+   | :fn:`numbers_investigate_possible <G.290>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`) → :g:`D <g1:D>`
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` be the given three numbers, let it be required to investigate when it is possible to find a fourth proportional to them
+   | **construct** Similarly then it can be proved that, if :g:`A <g1:A>` measures :g:`D <g1:D>`, it is possible to find a fourth proportional to them, but, if it does not measure it, impossible
+
 .. picture:: g1.svg
    :alt: Proposition 19
 
 .. step:: given
 
-   :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` be the given three numbers
-
-.. step:: assert
-
-   Let it be required to investigate when it is possible to find a fourth proportional to them.
+   :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` be the given three numbers, let it be required to investigate when it is possible to find a fourth proportional to them
 
 .. step:: assert
 
@@ -55,7 +57,7 @@ G.290
 
    If then :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` are in continued proportion, and the extremes of them :g:`A <g1:A>`, :g:`C <g1:C>` are prime to one another,
 
-.. step:: assert [G.288] <G.288>
+.. step:: assert ∵ there_many_numbers_ix_17 <G.288>
 
    It has been proved that it is impossible to find a fourth proportional number to them.
 
@@ -65,21 +67,17 @@ G.290
 
 .. step:: assert
 
-   If possible, let :g:`D <g1:D>` have been found, so that, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`
-
-.. step:: assert
-
-   Let it be contrived that, as :g:`B <g1:B>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to :g:`E <g1:E>`.
+   If possible, let :g:`D <g1:D>` have been found, so that, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`, and let it be contrived that, as :g:`B <g1:B>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to :g:`E <g1:E>`.
 
 .. step:: assert
 
    Since, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`, and, as :g:`B <g1:B>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to :g:`E <g1:E>`,
 
-.. step:: assert [G.214] <G.214>
+.. step:: assert ∵ there_many_numbers_vii_14 <G.214>
 
    Therefore, :term:`*ex aequali* <ex-aequali>`, as :g:`A <g1:A>` is to :g:`C <g1:C>`, so is :g:`C <g1:C>` to :g:`E <g1:E>`.
 
-.. step:: assert [G.221, G.220] <G.221, G.220>
+.. step:: assert ∵ numbers_prime_least, least_numbers_ratio <G.221, G.220>
 
    :g:`A <g1:A>`, :g:`C <g1:C>` are prime, primes are also least, and the least numbers measure those which have the same ratio, the antecedent the antecedent and the consequent the consequent.
 
@@ -105,7 +103,7 @@ G.290
 
 .. step:: assert
 
-   For let :g:`B <g1:B>` by multiplying :g:`C <g1:C>` make :g:`D <g1:D>`
+   Let :g:`B <g1:B>` by multiplying :g:`C <g1:C>` make :g:`D <g1:D>`
 
 .. step:: assert
 
@@ -123,7 +121,7 @@ G.290
 
    But, further, :g:`B <g1:B>` has also by multiplying :g:`C <g1:C>` made :g:`D <g1:D>` ;
 
-.. step:: assert [G.219] <G.219>
+.. step:: assert ∵ numbers_proportional_number <G.219>
 
    Therefore the product of :g:`A <g1:A>`, :g:`E <g1:E>` is equal to the product of :g:`B <g1:B>`, :g:`C <g1:C>` ; therefore, proportionally, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`E <g1:E>` ; therefore :g:`E <g1:E>` has been found a fourth proportional to :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`.
 
@@ -135,7 +133,7 @@ G.290
 
    If possible, let :g:`E <g1:E>` have been found
 
-.. step:: assert [G.219] <G.219>
+.. step:: assert ∵ numbers_proportional_number <G.219>
 
    Therefore the product of :g:`A <g1:A>`, :g:`E <g1:E>` is equal to the product of :g:`B <g1:B>`, :g:`C <g1:C>`.
 

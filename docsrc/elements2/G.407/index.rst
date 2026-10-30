@@ -24,16 +24,18 @@ G.407
 
    Find the first apotome.
 
+.. signature:: problem
+
+   | :fn:`find_apotome <G.407>`\ (:g:`A <g1:A>`, :g:`/ B G / <g1:/ B G />`) → :g:`/ B C / <g1:/ B C />`
+   | **given** a rational straight line :g:`A <g1:A>` be set out, let :g:`/ B G / <g1:/ B G />` be commensurable in length with :g:`A <g1:A>`
+   | **construct** :g:`/ B C / <g1:/ B C />` is a first apotome
+
 .. picture:: g1.svg
    :alt: Proposition 85
 
 .. step:: given
 
-   a rational straight line :g:`A <g1:A>` be set out
-
-.. step:: assert
-
-   Let :g:`/ B G / <g1:/ B G />` be commensurable in length with :g:`A <g1:A>`
+   a rational straight line :g:`A <g1:A>` be set out, let :g:`/ B G / <g1:/ B G />` be commensurable in length with :g:`A <g1:A>`
 
 .. step:: assert
 
@@ -41,21 +43,17 @@ G.407
 
 .. step:: assert
 
-   Let two square numbers :g:`/ D E / <g1:/ D E />`, :g:`/ E F / <g1:/ E F />` be set out
-
-.. step:: assert
-
-   Let their difference :g:`/ F D / <g1:/ F D />` not be square
+   Let two square numbers :g:`/ D E / <g1:/ D E />`, :g:`/ E F / <g1:/ E F />` be set out, and let their difference :g:`/ F D / <g1:/ F D />` not be square
 
 .. step:: assert
 
    Therefore neither has :g:`/ E D / <g1:/ E D />` to :g:`/ D F / <g1:/ D F />` the ratio which a square number has to a square number.
 
-.. step:: assert [G.319] <G.319>
+.. step:: assert ∵ magnitudes_ratio_number <G.319>
 
    Let it be contrived that, as :g:`/ E D / <g1:/ E D />` is to :g:`/ D F / <g1:/ D F />`, so is the square on :g:`/ B G / <g1:/ B G />` to the square on :g:`/ G C / <g1:/ G C />`
 
-.. step:: assert [G.319] <G.319>
+.. step:: assert ∵ magnitudes_ratio_number <G.319>
 
    Therefore the square on :g:`/ B G / <g1:/ B G />` is commensurable with the square on :g:`/ G C / <g1:/ G C />`.
 
@@ -71,7 +69,7 @@ G.407
 
    And, since :g:`/ E D / <g1:/ E D />` has not to :g:`/ D F / <g1:/ D F />` the ratio which a square number has to a square number,
 
-.. step:: assert [G.322] <G.322>
+.. step:: assert ∵ squares_straight_lines <G.322>
 
    Therefore neither has the square on :g:`/ B G / <g1:/ B G />` to the square on :g:`/ G C / <g1:/ G C />` the ratio which a square number has to a square number ; therefore :g:`/ B G / <g1:/ B G />` is incommensurable in length with :g:`/ G C / <g1:/ G C />`.
 
@@ -79,7 +77,7 @@ G.407
 
    Both are rational ;
 
-.. step:: assert [G.394] <G.394>
+.. step:: assert ∵ rational_straight_line <G.394>
 
    Therefore :g:`/ B G / <g1:/ B G />`, :g:`/ G C / <g1:/ G C />` are rational straight lines commensurable in square only ; therefore :g:`/ B C / <g1:/ B C />` is an apotome.
 
@@ -89,13 +87,13 @@ G.407
 
 .. step:: assert
 
-   For let the square on :g:`H <g1:H>` be that by which the square on :g:`/ B G / <g1:/ B G />` is greater than the square on :g:`/ G C / <g1:/ G C />`.
+   Let the square on :g:`H <g1:H>` be that by which the square on :g:`/ B G / <g1:/ B G />` is greater than the square on :g:`/ G C / <g1:/ G C />`.
 
 .. step:: assert
 
    Now since, as :g:`/ E D / <g1:/ E D />` is to :g:`/ F D / <g1:/ F D />`, so is the square on :g:`/ B G / <g1:/ B G />` to the square on :g:`/ G C / <g1:/ G C />`,
 
-.. step:: assert [G.156] <G.156>
+.. step:: assert ∵ whole_whole_part <G.156>
 
    Therefore also, :term:`*convertendo* <convertendo>`, as :g:`/ D E / <g1:/ D E />` is to :g:`/ E F / <g1:/ E F />`, so is the square on :g:`/ G B / <g1:/ G B />` to the square on :g:`H <g1:H>`.
 
@@ -103,7 +101,7 @@ G.407
 
    :g:`/ D E / <g1:/ D E />` has to :g:`/ E F / <g1:/ E F />` the ratio which a square number has to a square number, for each is square ;
 
-.. step:: assert [G.322] <G.322>
+.. step:: assert ∵ squares_straight_lines <G.322>
 
    Therefore the square on :g:`/ G B / <g1:/ G B />` also has to the square on :g:`H <g1:H>` the ratio which a square number has to a square number ; therefore :g:`/ B G / <g1:/ B G />` is commensurable in length with :g:`H <g1:H>`.
 
@@ -119,7 +117,7 @@ G.407
 
    The whole :g:`/ B G / <g1:/ B G />` is commensurable in length with the rational straight line :g:`A <g1:A>` set out.
 
-.. step:: conclude [G.406] <G.406>
+.. step:: conclude ∵ rational_straight_line_def_x_def_iii_1 <G.406>
 
    Therefore :g:`/ B C / <g1:/ B C />` is a first apotome.
 

@@ -24,6 +24,12 @@ G.190
 
    Construct one and the same figure similar to a given polygon and equal to another given polygon.
 
+.. signature:: problem
+
+   | :fn:`construct_figure_similar <G.190>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`< D > <g1:< D >>`) → :g:`< K G H > <g1:< K G H >>`
+   | **given** :g:`< A B C > <g1:< A B C >>` be the given rectilineal figure to which the figure to be constructed must be similar, :g:`< D > <g1:< D >>` that to which it must be equal
+   | **construct** :g:`< K G H > <g1:< K G H >>` is also similar to :g:`< A B C > <g1:< A B C >>`
+
 .. picture:: g1.svg
    :alt: Proposition 25 Diagram
 
@@ -31,19 +37,19 @@ G.190
 
    :g:`< A B C > <g1:< A B C >>` be the given rectilineal figure to which the figure to be constructed must be similar, :g:`< D > <g1:< D >>` that to which it must be equal
 
-.. step:: construct [G.57, G.58] <G.57, G.58>
+.. step:: construct
 
-   Let there be applied to :g:`/ B C / <g1:/ B C />` the parallelogram :g:`< B L E C > <g1:< B L E C >>` :eq:`equal <g1:< B L E C > = g1:< A B C >>` to :g:`< A B C > <g1:< A B C >>`, and to :g:`/ C E / <g1:/ C E />` the parallelogram :g:`< C E M F > <g1:< C E M F >>` :eq:`equal <g1:< C E M F > = g1:< D >>` to :g:`< D > <g1:< D >>` in :g:`< F C E ) <g1:< F C E )>` which is :eq:`equal <g1:< F C E ) = g1:< C B L )>` to :g:`< C B L ) <g1:< C B L )>`.
+   :fn:`apply_parallelogram_on_segment <G.57>`: Let there be applied to :g:`/ B C / <g1:/ B C />` the parallelogram :g:`< B L E C > <g1:< B L E C >>` :eq:`equal <g1:< B L E C > = g1:< A B C >>` to :g:`< A B C > <g1:< A B C >>`, and to :g:`/ C E / <g1:/ C E />` the parallelogram :g:`< C E M F > <g1:< C E M F >>` :eq:`equal <g1:< C E M F > = g1:< D >>` to :g:`< D > <g1:< D >>` in :g:`< F C E ) <g1:< F C E )>` which is :eq:`equal <g1:< F C E ) = g1:< C B L )>` to :g:`< C B L ) <g1:< C B L )>`.
 
 .. step:: assert
 
    Therefore :g:`/ B C / <g1:/ B C />` is in a straight line with :g:`/ C F / <g1:/ C F />`, and :g:`/ L E / <g1:/ L E />` with :g:`/ E M / <g1:/ E M />`.
 
-.. step:: assert [G.176, G.181] <G.176, G.181>
+.. step:: construct
 
-   Now let :g:`/ G H / <g1:/ G H />` be taken a mean proportional to :g:`/ B C / <g1:/ B C />`, :g:`/ C F / <g1:/ C F />`, and on :g:`/ G H / <g1:/ G H />` let :g:`< K G H > <g1:< K G H >>` be described similar and similarly situated to :g:`< A B C > <g1:< A B C >>`.
+   :fn:`mean_proportional <G.176>`: Now let :g:`/ G H / <g1:/ G H />` be taken a mean proportional to :g:`/ B C / <g1:/ B C />`, :g:`/ C F / <g1:/ C F />`, and on :g:`/ G H / <g1:/ G H />` let :g:`< K G H > <g1:< K G H >>` be described similar and similarly situated to :g:`< A B C > <g1:< A B C >>`.
 
-.. step:: assert [G.184] <G.184>
+.. step:: assert ∵ similar_triangles_duplicate <G.184>
 
    Since, as :g:`/ B C / <g1:/ B C />` is to :g:`/ G H / <g1:/ G H />`, so is :g:`/ G H / <g1:/ G H />` to :g:`/ C F / <g1:/ C F />`, and, if three straight lines be proportional, as the first is to the third, so is the figure on the first to the similar and similarly situated figure described on the second.
 
@@ -51,7 +57,7 @@ G.190
 
    Therefore, as :g:`/ B C / <g1:/ B C />` is to :g:`/ C F / <g1:/ C F />`, so is :g:`< A B C > <g1:< A B C >>` to :g:`< K G H > <g1:< K G H >>`.
 
-.. step:: assert [G.163] <G.163>
+.. step:: assert ∵ triangles_parallelograms_height <G.163>
 
    But, as :g:`/ B C / <g1:/ B C />` is to :g:`/ C F / <g1:/ C F />`, so also is the parallelogram :g:`< B L E C > <g1:< B L E C >>` to the parallelogram :g:`< C E M F > <g1:< C E M F >>`.
 
@@ -59,7 +65,7 @@ G.190
 
    Therefore also, as :g:`< A B C > <g1:< A B C >>` is to :g:`< K G H > <g1:< K G H >>`, so is the parallelogram :g:`< B L E C > <g1:< B L E C >>` to the parallelogram :g:`< C E M F > <g1:< C E M F >>` ;
 
-.. step:: assert [G.153] <G.153>
+.. step:: assert ∵ magnitudes_proportional_proportional <G.153>
 
    Therefore, alternately, as :g:`< A B C > <g1:< A B C >>` is to the parallelogram :g:`< B L E C > <g1:< B L E C >>`, so is :g:`< K G H > <g1:< K G H >>` to the parallelogram :g:`< C E M F > <g1:< C E M F >>`.
 

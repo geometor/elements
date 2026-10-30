@@ -24,16 +24,17 @@ G.236
 
    If two numbers measure any number, the least number measured by them will also measure the same.
 
+.. signature:: theorem
+
+   | :fn:`numbers_measure_number <G.236>`\ ()
+   | **prove** :g:`E <g1:E>` also measures :g:`/ C D / <g1:/ C D />`
+
 .. picture:: g1.svg
    :alt: Proposition 35
 
 .. step:: assert
 
-   For let the two numbers :g:`A <g1:A>`, :g:`B <g1:B>` measure any number :g:`/ C D / <g1:/ C D />`
-
-.. step:: assert
-
-   Let :g:`E <g1:E>` be the least that they measure
+   Let the two numbers :g:`A <g1:A>`, :g:`B <g1:B>` measure any number :g:`/ C D / <g1:/ C D />`, and let :g:`E <g1:E>` be the least that they measure
 
 .. step:: assert
 

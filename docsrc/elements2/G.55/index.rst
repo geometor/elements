@@ -24,6 +24,12 @@ G.55
 
    Construct, in a given angle, a parallelogram equal in area to a given triangle.
 
+.. signature:: problem
+
+   | :fn:`parallelogram_from_triangle <G.55>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`< D ) <g1:< D )>`) → :g:`< C E F ) <g1:< C E F )>`
+   | **given** :g:`< A B C > <g1:< A B C >>`, :g:`< D ) <g1:< D )>`
+   | **construct** construct in :g:`< D ) <g1:< D )>` a parallelogram :eq:`equal <g1:< F E C G > = g1:< A B C >>` to :g:`< A B C > <g1:< A B C >>`
+
 .. picture:: g1.svg
    :alt: Folio 0353 Figure 2 - Proposition 42
 
@@ -31,35 +37,27 @@ G.55
 
    :g:`< A B C > <g1:< A B C >>`, :g:`< D ) <g1:< D )>`
 
-.. step:: assert
+.. step:: construct
 
-   Let :g:`/ B C / <g1:/ B C />` be :eq:`bisected <g1:/ B E / = g1:/ E C />` at :g:`E <g1:E>`
+   :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`C <g1:C>`) → :g:`/ B C / <g1:/ B C />`, :fn:`segment <G.3>`\ () → :g:`E <g1:E>`, :fn:`segment <G.3>`\ (:g:`A <g1:A>`, :g:`E <g1:E>`) → :g:`/ A E / <g1:/ A E />`
 
 .. step:: construct
 
-   **segment** :g:`/ A E / <g1:/ A E />`
-
-.. step:: assert
-
-   On :g:`/ E C / <g1:/ E C />`
-
-.. step:: construct [G.34] <G.34>
-
-   At :g:`E <g1:E>` on it, let :g:`< C E F ) <g1:< C E F )>` be constructed :eq:`equal <g1:< C E F ) = g1:< D )>` to :g:`< D ) <g1:< D )>`
-
-.. step:: construct [G.44] <G.44>
-
-   Through :g:`A <g1:A>` let :g:`/ A G / <g1:/ A G />` be drawn parallel to :g:`/ E C / <g1:/ E C />`, and
+   :fn:`copy_angle <G.34>`\ (:g:`/ E C / <g1:/ E C />`, :g:`E <g1:E>`, :g:`< D ) <g1:< D )>`) → :g:`< C E F ) <g1:< C E F )>` (:eq:`equal <g1:< C E F ) = g1:< D )>`)
 
 .. step:: construct
 
-   Through :g:`C <g1:C>` let :g:`/ C G / <g1:/ C G />` be drawn parallel to :g:`/ E F / <g1:/ E F />`.
+   :fn:`parallel_line <G.44>`\ (:g:`A <g1:A>`, :g:`/ E C / <g1:/ E C />`) → :g:`/ A G / <g1:/ A G />`
+
+.. step:: construct
+
+   :fn:`parallel_line <G.44>`\ (:g:`C <g1:C>`, :g:`/ E F / <g1:/ E F />`) → :g:`/ C G / <g1:/ C G />`
 
 .. step:: assert
 
    Then :g:`< F E C G > <g1:< F E C G >>` is a parallelogram.
 
-.. step:: assert [G.51] <G.51>
+.. step:: assert ∵ triangles_equal_bases <G.51>
 
    And, since :g:`/ B E / <g1:/ B E />` is :eq:`equal <g1:/ B E / = g1:/ E C />` to :g:`/ E C / <g1:/ E C />`, :g:`< A B E > <g1:< A B E >>` is also :eq:`equal <g1:< A B E > = g1:< A E C >>` to :g:`< A E C > <g1:< A E C >>`, for they are on :eq:`equal <g1:/ B E / = g1:/ E C />` bases :g:`/ B E / <g1:/ B E />`, :g:`/ E C / <g1:/ E C />` and in the same parallels :g:`/ B C / <g1:/ B C />`, :g:`/ A G / <g1:/ A G />`
 
@@ -67,7 +65,7 @@ G.55
 
    Therefore :g:`< A B C > <g1:< A B C >>` is double of :g:`< A E C > <g1:< A E C >>`.
 
-.. step:: assert [G.54] <G.54>
+.. step:: assert ∵ parallelogram_double_triangle <G.54>
 
    The parallelogram :g:`< F E C G > <g1:< F E C G >>` is also double of :g:`< A E C > <g1:< A E C >>`, for it has the same base with it and is in the same parallels with it;
 

@@ -24,26 +24,27 @@ G.385
 
    The square on the side of the sum of two medial areas applied to a rational straight line produces as breadth the sixth binomial.
 
+.. signature:: theorem
+
+   | :fn:`square_side_sum <G.385>`\ ()
+   | **prove** :g:`/ D G / <g1:/ D G />` is a sixth binomial straight line
+
 .. picture:: g1.svg
    :alt: Proposition 65 Diagram
 
-.. step:: given
+.. step:: construct
 
-   :g:`/ A B / <g1:/ A B />` be the side of the sum of two medial areas, divided at :g:`C <g1:C>`, let :g:`/ D E / <g1:/ D E />` be a rational straight line
+   Let :g:`/ A B / <g1:/ A B />` be the side of the sum of two medial areas, divided at :g:`C <g1:C>`, let :g:`/ D E / <g1:/ D E />` be a rational straight line, and let there be applied to :g:`/ D E / <g1:/ D E />` the parallelogram :g:`< D F > <g1:< D F >>` equal to the square on :g:`/ A B / <g1:/ A B />`, producing :g:`/ D G / <g1:/ D G />` as its breadth
 
 .. step:: construct
 
-   Let there be applied to :g:`/ D E / <g1:/ D E />` the parallelogram :g:`< D F > <g1:< D F >>` equal to the square on :g:`/ A B / <g1:/ A B />`, producing :g:`/ D G / <g1:/ D G />` as its breadth
-
-.. step:: construct
-
-   For let the same construction be made as before.
+   Let the same construction be made as before.
 
 .. step:: assert
 
    Since :g:`/ A B / <g1:/ A B />` is the side of the sum of two medial areas, divided at :g:`C <g1:C>`,
 
-.. step:: assert [G.356] <G.356>
+.. step:: assert ∵ straight_lines_incommensurable_x_41 <G.356>
 
    Therefore :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` are straight lines incommensurable in square which make the sum of the squares on them medial, the rectangle contained by them medial, and moreover the sum of the squares on them incommensurable with the rectangle contained by them, so that, in accordance with what was before proved, each of the rectangles :g:`< D L > <g1:< D L >>`, :g:`< M F > <g1:< M F >>` is medial.
 
@@ -51,7 +52,7 @@ G.385
 
    They are applied to the rational straight line :g:`/ D E / <g1:/ D E />`;
 
-.. step:: assert [G.336] <G.336>
+.. step:: assert ∵ square_medial_straight <G.336>
 
    Therefore each of :g:`/ D M / <g1:/ D M />`, :g:`/ M G / <g1:/ M G />` is rational and incommensurable in length with :g:`/ D E / <g1:/ D E />`.
 
@@ -63,7 +64,7 @@ G.385
 
    Therefore :g:`< D L > <g1:< D L >>` is incommensurable with :g:`< M F > <g1:< M F >>`.
 
-.. step:: assert [G.163, G.323, G.351] <G.163, G.323, G.351>
+.. step:: assert ∵ triangles_parallelograms_height, magnitudes_proportional_commensurable, rational_straight_lines <G.163, G.323, G.351>
 
    Therefore :g:`/ D M / <g1:/ D M />` is also incommensurable with :g:`/ M G / <g1:/ M G />`; therefore :g:`/ D M / <g1:/ D M />`, :g:`/ M G / <g1:/ M G />` are rational straight lines commensurable in square only; therefore :g:`/ D G / <g1:/ D G />` is binomial.
 

@@ -24,36 +24,37 @@ G.27
 
    In any triangle, if one side is extended, the exterior angle is greater than either opposite interior angle.
 
+.. signature:: theorem
+
+   | :fn:`exterior_angle_greater <G.27>`\ ()
+   | **prove** the exterior angle :g:`< A C D ) <g1:< A C D )>` is greater than either of the interior and opposite angles :g:`< C B A ) <g1:< C B A )>`, :g:`< B A C ) <g1:< B A C )>`
+
 .. picture:: g1.svg
    :alt: Proposition 16 figure
 
-.. step:: given
+.. step:: construct
 
-   :g:`< A B C > <g1:< A B C >>` be a triangle
+   :fn:`extend <G.7>`\ (:g:`< A B C > <g1:< A B C >>` be a triangle, and let one side of it :g:`/ B C / <g1:/ B C />`) → :g:`D <g1:D>`
 
 .. step:: construct
 
-   Let one side of it :g:`/ B C / <g1:/ B C />` be produced to :g:`D <g1:D>`
-
-.. step:: assert [G.17] <G.17>
-
-   Let :g:`/ A C / <g1:/ A C />` be :eq:`bisected <g1:/ A E / = g1:/ E C />` at :g:`E <g1:E>`.
+   :fn:`bisect_segment <G.17>`\ (:g:`/ A C / <g1:/ A C />`) → :g:`E <g1:E>` (:eq:`bisected <g1:/ A E / = g1:/ E C />`)
 
 .. step:: construct
 
-   And let :g:`/ B E / <g1:/ B E />` be joined and produced in a straight line to :g:`F <g1:F>`
+   :fn:`segment <G.3>`\ (:g:`B <g1:B>`, :g:`E <g1:E>`) → :g:`/ B E / <g1:/ B E />`, :fn:`extend <G.7>`\ (:g:`/ B E / <g1:/ B E />`) → :g:`F <g1:F>`
 
-.. step:: construct [G.9] <G.9>
+.. step:: construct
 
-   Let :g:`/ E F / <g1:/ E F />` be made :eq:`equal <g1:/ E F / = g1:/ B E />` to :g:`/ B E / <g1:/ B E />`.
+   :fn:`cut_equal_segment <G.9>`\ (:g:`/ B E / <g1:/ B E />`) → :g:`/ E F / <g1:/ E F />` (:eq:`equal <g1:/ E F / = g1:/ B E />`)
 
-.. step:: construct [G.3] <G.3>
+.. step:: construct
 
-   **segment** :g:`/ F C / <g1:/ F C />`
+   :fn:`segment <G.3>`\ (:g:`F <g1:F>`, :g:`C <g1:C>`) → :g:`/ F C / <g1:/ F C />`
 
-.. step:: construct [G.7] <G.7>
+.. step:: construct
 
-   And let :g:`/ A C / <g1:/ A C />` be drawn through to :g:`G <g1:G>`.
+   :fn:`extend <G.7>`\ (:g:`/ A C / <g1:/ A C />`) → :g:`G <g1:G>`
 
 .. step:: assert
 
@@ -63,7 +64,7 @@ G.27
 
    And :g:`< A E B ) <g1:< A E B )>` is :eq:`equal <g1:< A E B ) = g1:< F E C )>` to :g:`< F E C ) <g1:< F E C )>`,
 
-.. step:: assert [G.25] <G.25>
+.. step:: assert ∵ vertical_angles_equal <G.25>
 
    For they are vertical angles.
 
@@ -75,7 +76,7 @@ G.27
 
    And :g:`< A B E > <g1:< A B E >>` is :eq:`equal <g1:< A B E > = g1:< C F E >>` to :g:`< C F E > <g1:< C F E >>`,
 
-.. step:: assert [G.11] <G.11>
+.. step:: assert ∵ sas_congruence <G.11>
 
    And the remaining angles are equal to the remaining angles respectively, namely those which the equal sides subtend
 
@@ -83,7 +84,7 @@ G.27
 
    Therefore :g:`< B A E ) <g1:< B A E )>` is :eq:`equal <g1:< B A E ) = g1:< E C F )>` to :g:`< E C F ) <g1:< E C F )>`.
 
-.. step:: assert [G.26] <G.26>
+.. step:: assert ∵ whole_greater_than_part <G.26>
 
    :g:`< E C D ) <g1:< E C D )>` is greater than :g:`< E C F ) <g1:< E C F )>`
 
