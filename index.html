@@ -43,13 +43,13 @@
           <a href="usage.html"  >usage</a>
         </li>
         <li>
-          <a href="modules/index.html"  >modules</a>
-        </li>
-        <li>
           <a href="log/index.html"  >log</a>
         </li>
         <li>
           <a href="elements2/index.html"  >Elements 2.0 (G Index)</a>
+        </li>
+        <li>
+          <a href="modules/index.html"  >modules</a>
         </li>
       </ul>
     </nav>
@@ -76,12 +76,34 @@
       <div class="content body book-content" role="main">
         <section class="level-1" id="geometor-elements">
         <h1>GEOMETOR • elements<a class="headerlink" href="#geometor-elements" title="Link to this heading">¶</a></h1>
-        <p>Symbolic dependency mapping and G-Index generation for Euclid’s Elements.</p>
-        <p>The <strong>G-Index</strong> is a symbolic and logical codification of Euclid’s <em>Elements</em>.</p>
-        <p>It transforms the semantic structure of the modernized text into a strictly numbered dependency graph, enabling the exploration of geometric truth as a genealogical tree of propositions.</p>
-        <p>While the sister project <cite>geometor.euclid</cite> focuses on semantic discovery and text normalization, <strong>elements</strong> is the logic and serialization layer responsible for the G-Index generation and dependency analysis.</p>
+        <p><strong>Symbolic dependency mapping, formal pseudocode, and G-Index generation (`G.1`–`G.525`) for Euclid’s *Elements*.</strong></p>
+        <p>The <strong>G-Index</strong> is a symbolic and logical codification of Euclid’s <em>Elements</em>. While the sister repository <a class="reference external" href="https://geometor.github.io/euclid">GEOMETOR • euclid</a> compiles the 3-volume Heath Edition and critical commentary, <code class="docutils literal notranslate"><span class="pre">geometor.elements</span></code> sequences the definitions, postulates, common notions, and propositions into a computable directed acyclic dependency graph (<cite>G.1</cite> through <cite>G.525</cite>) rendered as a 3-track <strong>Book Codex</strong> via <code class="docutils literal notranslate"><span class="pre">photon-platform/publish</span></code>.</p>
+        <hr class="docutils" />
+        <section class="level-2" id="codex-architecture">
+        <h2>Codex Architecture<a class="headerlink" href="#codex-architecture" title="Link to this heading">¶</a></h2>
+        <ul class="simple">
+        <li><p><a class="reference internal" href="elements2/index.html"><span class="doc">Elements 2.0 — The G-Index (G.1–G.525)</span></a> — Every element is presented in three synchronized companion tracks:</p>
+        <ol class="arabic simple">
+        <li><p><strong>Pseudocode Track (`index.rst`)</strong>: Concise <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">enunciation::</span></code>, interactive SVG figure with step-by-step construction playback, formal <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">signature::</span></code> block (<cite>given</cite> / <cite>construct</cite> / <cite>prove</cite>), and <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">step::</span></code> sequences using composable <code class="docutils literal notranslate"><span class="pre">:fn:</span></code> calls, explicit GEOMETOR symbolic indications (<code class="docutils literal notranslate"><span class="pre">/</span> <span class="pre">A</span> <span class="pre">B</span> <span class="pre">/</span></code>, <code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">A</span> <span class="pre">B</span> <span class="pre">]</span></code>, <code class="docutils literal notranslate"><span class="pre">(</span> <span class="pre">A</span> <span class="pre">B</span> <span class="pre">C</span> <span class="pre">)</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;</span> <span class="pre">B</span> <span class="pre">A</span> <span class="pre">C</span> <span class="pre">)</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;</span> <span class="pre">A</span> <span class="pre">B</span> <span class="pre">C</span> <span class="pre">&gt;</span></code>, <code class="docutils literal notranslate"><span class="pre">A</span></code>), <code class="docutils literal notranslate"><span class="pre">:eq:</span></code> equality tick-mark assertions, and semantic rule justifications (<code class="docutils literal notranslate"><span class="pre">∵</span> <span class="pre">equal_things</span> <span class="pre">(G.1)</span></code>).</p></li>
+        <li><p><strong>Code Track (`code.rst`)</strong>: Callable <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">function::</span></code> definition, executable <code class="docutils literal notranslate"><span class="pre">geometor.model</span></code> construction script (<cite>g1.py</cite>), and interactive Graphviz dependency graph.</p></li>
+        <li><p><strong>Heath Track (`heath.rst`)</strong>: Classical Heath translation rewritten with GEOMETOR symbolic indications and <code class="docutils literal notranslate"><span class="pre">G.&lt;k&gt;</span></code> justification pills, linked via <code class="docutils literal notranslate"><span class="pre">intersphinx</span></code> to the full Heath Edition in <a class="reference external" href="https://geometor.github.io/euclid">GEOMETOR • euclid</a>.</p></li>
+        </ol>
+        </li>
+        <li><p><a class="reference internal" href="design.html"><span class="doc">Design &amp; Symbolic Grammar</span></a> — Specification of GEOMETOR symbolic indications, step kinds, signatures, and composable geometric functions.</p></li>
+        <li><p><a class="reference internal" href="book-notes.html"><span class="doc">Book Notes</span></a> — Structural overview and dependency notes across Books I–XIII.</p></li>
+        </ul>
+        </section>
+        <hr class="docutils" />
+        <section class="level-2" id="indices">
+        <h2>Indices<a class="headerlink" href="#indices" title="Link to this heading">¶</a></h2>
+        <ul class="simple">
+        <li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+        <li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+        <li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+        </ul>
         <div class="toctree-wrapper compound">
         </div>
+        </section>
         </section>
 
       </div>
@@ -133,11 +155,11 @@
         <li><a href="tags/book-ii.html">book-ii</a></li>
         <li><a href="tags/book-iii.html">book-iii</a></li>
         <li><a href="tags/book-iv.html">book-iv</a></li>
-        <li><a href="tags/book-ix.html">book-ix</a></li>
         <li><a href="tags/book-v.html">book-v</a></li>
         <li><a href="tags/book-vi.html">book-vi</a></li>
         <li><a href="tags/book-vii.html">book-vii</a></li>
         <li><a href="tags/book-viii.html">book-viii</a></li>
+        <li><a href="tags/book-ix.html">book-ix</a></li>
         <li><a href="tags/book-x.html">book-x</a></li>
         <li><a href="tags/book-xi.html">book-xi</a></li>
         <li><a href="tags/book-xii.html">book-xii</a></li>
