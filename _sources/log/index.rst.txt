@@ -1,8 +1,11 @@
 :navigation: header
-:order: 3
+:order: 30
 
+===
 log
 ===
+
+Chronological research and G-Index compilation log for ``geometor.elements``.
 
 .. collection::
    :type: log
