@@ -1,17 +1,18 @@
 :canonical_id: G.495
-:original_id: XII.9
+:original_id: X.109
+:title: G.495 medial area rational
 :volume: III
-:book: XII
+:book: X
 :type: prop
 
-G.495 — Code
-============
+G.495 medial area rational — Code
+=================================
 
-.. rubric:: `XII.9 <https://geometor.github.io/euclid/heath/volume_III/book_xii/propositions/09/>`_
+.. rubric:: `X.109 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/109/>`_
 
 .. enunciation::
 
-   In equal pyramids which have triangular bases the bases are reciprocally proportional to the heights; and those pyramids in which the bases are reciprocally proportional to the heights are equal.
+   If from a medial area a :term:`rational area <G.392>` be subtracted, there arise two other :term:`irrational <G.391>` :term:`segments <G.4>`, either a :term:`first apotome <G.454>` of a medial segment or a segment which produces with a rational area a medial whole.
 
 .. picture:: g1.svg
 

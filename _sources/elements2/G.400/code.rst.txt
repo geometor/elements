@@ -1,17 +1,18 @@
 :canonical_id: G.400
-:original_id: X.79
+:original_id: X.26
+:title: G.400 medial area exceed
 :volume: III
 :book: X
 :type: prop
 
-G.400 — Code
-============
+G.400 medial area exceed — Code
+===============================
 
-.. rubric:: `X.79 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/079/>`_
+.. rubric:: `X.26 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/026/>`_
 
 .. enunciation::
 
-   To an apotome only one rational straight line can be annexed which is commensurable with the whole in square only.
+   A medial area does not exceed a medial area by a :term:`rational area <G.392>`.
 
 .. picture:: g1.svg
 

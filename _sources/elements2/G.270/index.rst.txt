@@ -1,81 +1,90 @@
 :order: 270
 :number: 270
 :canonical_id: G.270
-:original_id: IX.1
+:original_id: VII.16
+:title: G.270 numbers multiplying make
 :volume: II
-:book: IX
+:book: VII
 :type: prop
 :subtype: theorem
 :categories: theorem, proof, number-theory
 :category: theorem, proof, number-theory
-:tags: book-ix, point, square, similar, number, plane-number, plane
-:dependencies: G.217, G.248, G.260, G.264
-:excerpt: If two similar plane numbers by multiplying one another make some number, the product is square.
+:tags: book-vii, point, number, multiply, part-aliquot, unit, alternando, equality
+:dependencies: G.248, G.268, G.269
+:excerpt: If two numbers by multiplying one another make certain numbers, the numbers so produced are equal.
 
 .. _G.270:
-.. _IX.1:
+.. _VII.16:
 
-G.270
-=====
+G.270 numbers multiplying make
+==============================
 
-.. rubric:: `IX.1 <https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/01/>`_
+.. rubric:: `VII.16 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/16/>`_
 
 .. enunciation::
 
-   If two similar plane numbers by multiplying one another make some number, the product is square.
+   If two :term:`numbers <G.248>` by :term:`multiplying <G.269>` one another make certain numbers, the numbers so produced are equal.
 
 .. signature:: theorem
 
-   | :fn:`similar_plane_numbers_ix_1 <G.270>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`)
-   | **given** :g:`A <g1:A>`, :g:`B <g1:B>` be two similar plane numbers, let :g:`A <g1:A>` by multiplying :g:`B <g1:B>` make :g:`C <g1:C>`
-   | **prove** :g:`C <g1:C>` is square
+   | :fn:`numbers_multiplying_make <G.270>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`)
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>` be two numbers, let :g:`A <g1:A>` by multiplying :g:`B <g1:B>` make :g:`C <g1:C>`, :g:`B <g1:B>` by multiplying :g:`A <g1:A>` make :g:`D <g1:D>`
+   | **prove** :g:`C <g1:C>` is :eq:`equal <g1:C = g1:D>` to :g:`D <g1:D>`
 
 .. picture:: g1.svg
-   :alt: Proposition 1 Diagram
+   :alt: Proposition 16 Diagram
 
 .. step:: given
 
-   :g:`A <g1:A>`, :g:`B <g1:B>` be two similar plane numbers, let :g:`A <g1:A>` by multiplying :g:`B <g1:B>` make :g:`C <g1:C>`
+   :g:`A <g1:A>`, :g:`B <g1:B>` be two numbers, let :g:`A <g1:A>` by multiplying :g:`B <g1:B>` make :g:`C <g1:C>`, :g:`B <g1:B>` by multiplying :g:`A <g1:A>` make :g:`D <g1:D>`
 
 .. step:: assert
 
-   Let :g:`A <g1:A>` by multiplying itself make :g:`D <g1:D>`.
+   Since :g:`A <g1:A>` by multiplying :g:`B <g1:B>` has made :g:`C <g1:C>`,
 
 .. step:: assert
 
-   Therefore :g:`D <g1:D>` is square.
+   Therefore :g:`B <g1:B>` :term:`measures <G.169>` :g:`C <g1:C>` according to the :term:`units <G.247>` in :g:`A <g1:A>`.
 
 .. step:: assert
 
-   Since then :g:`A <g1:A>` by multiplying itself has made :g:`D <g1:D>`, and by multiplying :g:`B <g1:B>` has made :g:`C <g1:C>`,
-
-.. step:: assert ∵ number_multiplying_numbers <G.217>
-
-   Therefore, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`D <g1:D>` to :g:`C <g1:C>`.
+   The unit :g:`E <g1:E>` also measures the number :g:`A <g1:A>` according to the units in it;
 
 .. step:: assert
 
-   And, since :g:`A <g1:A>`, :g:`B <g1:B>` are similar plane numbers,
+   Therefore the unit :g:`E <g1:E>` measures :g:`A <g1:A>` the same number of times that :g:`B <g1:B>` measures :g:`C <g1:C>`.
 
-.. step:: assert ∵ similar_plane_numbers <G.260>
+.. step:: assert ∵ unit_measure_number <G.268>
 
-   Therefore one mean proportional number falls between :g:`A <g1:A>`, :g:`B <g1:B>`.
-
-.. step:: assert ∵ numbers_there_fall <G.248>
-
-   But, if numbers fall between two numbers in continued proportion, as many as fall between them, so many also fall between those which have the same ratio.
+   Therefore, :term:`alternately <G.194>`, the unit :g:`E <g1:E>` measures the number :g:`B <g1:B>` the same number of times that :g:`A <g1:A>` measures :g:`C <g1:C>`.
 
 .. step:: assert
 
-   So that one mean proportional number falls between :g:`D <g1:D>`, :g:`C <g1:C>` also.
+   Since :g:`B <g1:B>` by multiplying :g:`A <g1:A>` has made :g:`D <g1:D>`,
 
 .. step:: assert
 
-   :g:`D <g1:D>` is square;
+   Therefore :g:`A <g1:A>` measures :g:`D <g1:D>` according to the units in :g:`B <g1:B>`.
 
-.. step:: conclude ∵ numbers_continued_proportion <G.264>
+.. step:: assert
 
-   Therefore :g:`C <g1:C>` is also square.
+   The unit :g:`E <g1:E>` also measures :g:`B <g1:B>` according to the units in it;
+
+.. step:: assert
+
+   Therefore the unit :g:`E <g1:E>` measures the number :g:`B <g1:B>` the same number of times that :g:`A <g1:A>` measures :g:`D <g1:D>`.
+
+.. step:: assert
+
+   The unit :g:`E <g1:E>` measured the number :g:`B <g1:B>` the same number of times that :g:`A <g1:A>` measures :g:`C <g1:C>`;
+
+.. step:: assert
+
+   Therefore :g:`A <g1:A>` measures each of the numbers :g:`C <g1:C>`, :g:`D <g1:D>` the same number of times.
+
+.. step:: conclude
+
+   Therefore :g:`C <g1:C>` is :eq:`equal <g1:C = g1:D>` to :g:`D <g1:D>`.
 
 Dependency Graph
 ----------------
@@ -87,141 +96,61 @@ Dependency Graph
      node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11, color="#d6d3cd", fontcolor="#ffffff"];
      edge [color="#8c857b", fontcolor="#8c857b", arrowsize=0.75];
      rankdir="TB";
-     "G.135" [label="G.135", tooltip="G.135 (V.1): If there be any number of magnitudes whatever which are, respectively, equimultiples of any magnitudes equal in multitude, then, whatever multiple one of the magnitudes is of one, ...", fillcolor="#222244", URL="../G.135/index.html", target="_top"];
-     "G.138" [label="G.138", tooltip="G.138 (V.def.5): Magnitudes are said tobe in the same ratio, the first to the second and the third to the fourth, when, if any equimultiples whatever be taken of the first and third, and any equimu...", fillcolor="#224422", URL="../G.138/index.html", target="_top"];
-     "G.142" [label="G.142", tooltip="G.142 (V.7): Equal magnitudes have to the same the same ratio, as also has the same to equal magnitudes.", fillcolor="#222244", URL="../G.142/index.html", target="_top"];
-     "G.143" [label="G.143", tooltip="G.143 (V.def.4): Magnitudes are said tohave a ratio to one another which are capable, when multiplied, of exceeding one another.", fillcolor="#224422", URL="../G.143/index.html", target="_top"];
-     "G.144" [label="G.144", tooltip="G.144 (V.def.7): When, of the equimultiples, the multiple of the first magnitude exceeds the multiple of the second, but the multiple of the third does not exceed the multiple of the fourth, then t...", fillcolor="#224422", URL="../G.144/index.html", target="_top"];
-     "G.145" [label="G.145", tooltip="G.145 (V.8): Of unequal magnitudes, the greater has to the same a greater ratio than the less has; and the same has to the less a greater ratio than it has to the greater.", fillcolor="#222244", URL="../G.145/index.html", target="_top"];
-     "G.146" [label="G.146", tooltip="G.146 (V.9): Magnitudes which have the same ratio to the same are equal; and magnitudes to which the same has the same ratio are equal.", fillcolor="#222244", URL="../G.146/index.html", target="_top"];
-     "G.182" [label="G.182", tooltip="G.182 (V.def.9): When three magnitudes are proportional, the first is said to have to the third theduplicate ratio of that which it has to the second.", fillcolor="#224422", URL="../G.182/index.html", target="_top"];
-     "G.199" [label="G.199", tooltip="G.199 (VII.def.12): Numbers prime to one another are those which are measured by an unit alone as a common measure.", fillcolor="#224422", URL="../G.199/index.html", target="_top"];
-     "G.200" [label="G.200", tooltip="G.200 (VII.1): Two unequal numbers being set out, and the less being continually subtracted in turn from the greater, if the number which is left never measures the one before it until an unit is...", fillcolor="#222244", URL="../G.200/index.html", target="_top"];
-     "G.201" [label="G.201", tooltip="G.201 (VII.2): Given two numbers not prime to one another, to find their greatest common measure.", fillcolor="#222244", URL="../G.201/index.html", target="_top"];
-     "G.202" [label="G.202", tooltip="G.202 (VII.3): Given three numbers not prime to one another, to find their greatest common measure.", fillcolor="#222244", URL="../G.202/index.html", target="_top"];
-     "G.203" [label="G.203", tooltip="G.203 (VII.4): Any number is either a part or parts of any number, the less of the greater.", fillcolor="#222244", URL="../G.203/index.html", target="_top"];
-     "G.204" [label="G.204", tooltip="G.204 (VII.5): If a number be a part of a number, and another be the same part of another, the sum is the same part of the sum that the one is of the one.", fillcolor="#222244", URL="../G.204/index.html", target="_top"];
-     "G.205" [label="G.205", tooltip="G.205 (VII.6): If a number be parts of a number, and another be the same parts of another, the sum is the same parts of the sum that the one is of the one.", fillcolor="#222244", URL="../G.205/index.html", target="_top"];
-     "G.208" [label="G.208", tooltip="G.208 (VII.9): If a number be a part of a number, and another be the same part of another, alternately also, whatever part or parts the first is of the third, the same part, or the same parts, wi...", fillcolor="#222244", URL="../G.208/index.html", target="_top"];
-     "G.209" [label="G.209", tooltip="G.209 (VII.10): If a number be parts of a number, and another be the same parts of another, alternately also, whatever parts or part the first is of the third, the same parts or the same part will...", fillcolor="#222244", URL="../G.209/index.html", target="_top"];
-     "G.210" [label="G.210", tooltip="G.210 (VII.def.20): **Numbers** areproportional when the first is the same multiple, or the same part, or the same parts, of the second that the third is of the fourth.", fillcolor="#224422", URL="../G.210/index.html", target="_top"];
-     "G.212" [label="G.212", tooltip="G.212 (VII.12): If there be as many numbers as we please in proportion, then, as one of the antecedents is to one of the consequents, so are all the antecedents to all the consequents.", fillcolor="#222244", URL="../G.212/index.html", target="_top"];
-     "G.213" [label="G.213", tooltip="G.213 (VII.13): If four numbers be proportional, they is proportional alternately.", fillcolor="#222244", URL="../G.213/index.html", target="_top"];
-     "G.214" [label="G.214", tooltip="G.214 (VII.14): If there be as many numbers as we please, and others equal to them in multitude, which taken two and two are in the same ratio, they is in the same ratio ex aequali.", fillcolor="#222244", URL="../G.214/index.html", target="_top"];
-     "G.215" [label="G.215", tooltip="G.215 (VII.15): If an unit measure any number, and another number measure any other number the same number of times, alternately also, the unit will measure the third number the same number of tim...", fillcolor="#222244", URL="../G.215/index.html", target="_top"];
-     "G.216" [label="G.216", tooltip="G.216 (VII.16): If two numbers by multiplying one another make certain numbers, the numbers so produced are equal.", fillcolor="#222244", URL="../G.216/index.html", target="_top"];
-     "G.217" [label="G.217", tooltip="G.217 (VII.17): If a number by multiplying two numbers make certain numbers, the numbers so produced will have the same ratio as the numbers multiplied.", fillcolor="#222244", URL="../G.217/index.html", target="_top"];
-     "G.218" [label="G.218", tooltip="G.218 (VII.18): If two numbers by multiplying any number make certain numbers, the numbers so produced will have the same ratio as the multipliers.", fillcolor="#222244", URL="../G.218/index.html", target="_top"];
-     "G.219" [label="G.219", tooltip="G.219 (VII.19): If four numbers be proportional, the number produced from the first and fourth will equals the number produced from the second and third; and, if the number produced from the first...", fillcolor="#222244", URL="../G.219/index.html", target="_top"];
-     "G.220" [label="G.220", tooltip="G.220 (VII.20): The least numbers of those which have the same ratio with them measure those which have the same ratio the same number of times, the greater the greater and the less the less.", fillcolor="#222244", URL="../G.220/index.html", target="_top"];
-     "G.221" [label="G.221", tooltip="G.221 (VII.21): Numbers prime to one another are the least of those which have the same ratio with them.", fillcolor="#222244", URL="../G.221/index.html", target="_top"];
-     "G.222" [label="G.222", tooltip="G.222 (VII.def.15): A number is said tomultiply a number when that which is multiplied is added to itself as many times as there are units in the other, and thus some number is produced.", fillcolor="#224422", URL="../G.222/index.html", target="_top"];
-     "G.223" [label="G.223", tooltip="G.223 (VII.22): The least numbers of those which have the same ratio with them are prime to one another.", fillcolor="#222244", URL="../G.223/index.html", target="_top"];
-     "G.224" [label="G.224", tooltip="G.224 (VII.23): If two numbers be prime to one another, the number which measures the one of them is prime to the remaining number.", fillcolor="#222244", URL="../G.224/index.html", target="_top"];
-     "G.225" [label="G.225", tooltip="G.225 (VII.24): If two numbers be prime to any number, their product also is prime to the same.", fillcolor="#222244", URL="../G.225/index.html", target="_top"];
-     "G.226" [label="G.226", tooltip="G.226 (VII.25): If two numbers be prime to one another, the product of one of them into itself is prime to the remaining one.", fillcolor="#222244", URL="../G.226/index.html", target="_top"];
-     "G.227" [label="G.227", tooltip="G.227 (VII.26): If two numbers be prime to two numbers, both to each, their products also is prime to one another.", fillcolor="#222244", URL="../G.227/index.html", target="_top"];
-     "G.228" [label="G.228", tooltip="G.228 (VII.27): If two numbers be prime to one another, and each by multiplying itself make a certain number, the products is prime to one another; and, if the original numbers by multiplying the ...", fillcolor="#222244", URL="../G.228/index.html", target="_top"];
-     "G.234" [label="G.234", tooltip="G.234 (VII.33): Given as many numbers as we please, to find the least of those which have the same ratio with them.", fillcolor="#222244", URL="../G.234/index.html", target="_top"];
-     "G.241" [label="G.241", tooltip="G.241 (VIII.1): If there be as many numbers as we please in continued proportion, and the extremes of them be prime to one another, the numbers are the least of those which have the same ratio wit...", fillcolor="#222244", URL="../G.241/index.html", target="_top"];
-     "G.242" [label="G.242", tooltip="G.242 (VIII.2): Find numbers in continued proportion, as many as may be prescribed, and the least that are in a given ratio.", fillcolor="#222244", URL="../G.242/index.html", target="_top"];
-     "G.243" [label="G.243", tooltip="G.243 (VIII.3): If as many numbers as we please in continued proportion be the least of those which have the same ratio with them, the extremes of them are prime to one another.", fillcolor="#222244", URL="../G.243/index.html", target="_top"];
-     "G.248" [label="G.248", tooltip="G.248 (VIII.8): If between two numbers there fall numbers in continued proportion with them, then, however many numbers fall between them in continued proportion, so many will also fall in continu...", fillcolor="#222244", URL="../G.248/index.html", target="_top"];
-     "G.259" [label="G.259", tooltip="G.259 (VII.def.21): Similar plane and solid numbers are those which have their sides proportional.", fillcolor="#224422", URL="../G.259/index.html", target="_top"];
-     "G.260" [label="G.260", tooltip="G.260 (VIII.18): Between two similar plane numbers there is one mean proportional number; and the plane number has to the plane number the ratio duplicate of that which the corresponding side has t...", fillcolor="#222244", URL="../G.260/index.html", target="_top"];
-     "G.262" [label="G.262", tooltip="G.262 (VIII.20): If one mean proportional number fall between two numbers, the numbers is similar plane numbers.", fillcolor="#222244", URL="../G.262/index.html", target="_top"];
-     "G.264" [label="G.264", tooltip="G.264 (VIII.22): If three numbers be in continued proportion, and the first be square, the third is square.", fillcolor="#222244", URL="../G.264/index.html", target="_top"];
-     "G.270" [label="G.270", tooltip="G.270 (IX.1): If two similar plane numbers by multiplying one another make some number, the product is square.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
-     "G.145" -> "G.135";
-     "G.142" -> "G.138";
-     "G.219" -> "G.142";
-     "G.145" -> "G.143";
-     "G.145" -> "G.144";
-     "G.146" -> "G.145";
-     "G.219" -> "G.146";
-     "G.260" -> "G.182";
-     "G.200" -> "G.199";
-     "G.221" -> "G.199";
-     "G.224" -> "G.199";
-     "G.225" -> "G.199";
-     "G.201" -> "G.200";
-     "G.202" -> "G.201";
-     "G.203" -> "G.201";
-     "G.234" -> "G.202";
-     "G.220" -> "G.203";
-     "G.205" -> "G.204";
-     "G.208" -> "G.204";
-     "G.209" -> "G.204";
-     "G.212" -> "G.204";
-     "G.208" -> "G.205";
-     "G.209" -> "G.205";
-     "G.212" -> "G.205";
-     "G.209" -> "G.208";
-     "G.213" -> "G.209";
-     "G.212" -> "G.210";
-     "G.213" -> "G.210";
-     "G.217" -> "G.210";
-     "G.220" -> "G.210";
-     "G.234" -> "G.210";
-     "G.248" -> "G.210";
-     "G.215" -> "G.212";
-     "G.220" -> "G.212";
-     "G.214" -> "G.213";
-     "G.217" -> "G.213";
-     "G.220" -> "G.213";
-     "G.260" -> "G.213";
-     "G.262" -> "G.213";
-     "G.241" -> "G.214";
-     "G.248" -> "G.214";
-     "G.216" -> "G.215";
-     "G.218" -> "G.216";
-     "G.221" -> "G.216";
-     "G.225" -> "G.216";
-     "G.234" -> "G.216";
-     "G.218" -> "G.217";
-     "G.219" -> "G.217";
-     "G.223" -> "G.217";
-     "G.242" -> "G.217";
-     "G.260" -> "G.217";
-     "G.262" -> "G.217";
-     "G.270" -> "G.217";
-     "G.219" -> "G.218";
-     "G.242" -> "G.218";
-     "G.225" -> "G.219";
-     "G.234" -> "G.219";
-     "G.221" -> "G.220";
-     "G.225" -> "G.220";
-     "G.241" -> "G.220";
-     "G.248" -> "G.220";
-     "G.262" -> "G.220";
-     "G.225" -> "G.221";
-     "G.234" -> "G.221";
-     "G.241" -> "G.221";
-     "G.248" -> "G.221";
-     "G.223" -> "G.222";
-     "G.225" -> "G.222";
-     "G.234" -> "G.222";
-     "G.242" -> "G.223";
-     "G.243" -> "G.223";
-     "G.225" -> "G.224";
-     "G.226" -> "G.225";
-     "G.227" -> "G.225";
-     "G.228" -> "G.226";
-     "G.228" -> "G.227";
-     "G.242" -> "G.228";
-     "G.243" -> "G.228";
-     "G.243" -> "G.234";
-     "G.248" -> "G.234";
-     "G.262" -> "G.234";
-     "G.242" -> "G.241";
-     "G.243" -> "G.242";
-     "G.248" -> "G.243";
+     "G.169" [label="G.169", tooltip="G.169 (V.def.1): A magnitude is apart of a magnitude, the less of the greater, when it measures the greater.", fillcolor="#224422", URL="../G.169/index.html", target="_top"];
+     "G.170" [label="G.170", tooltip="G.170 (V.def.2): The greater is amultiple of the less when it ismeasured by the less.", fillcolor="#224422", URL="../G.170/index.html", target="_top"];
+     "G.181" [label="G.181", tooltip="G.181 (V.def.11): The termcorresponding magnitudes is used of antecedents in relation to antecedents, and of consequents in relation to consequents.", fillcolor="#224422", URL="../G.181/index.html", target="_top"];
+     "G.194" [label="G.194", tooltip="G.194 (V.def.12): Alternate ratio means taking theantecedent in relation to the antecedent and the consequent in relation to the consequent.", fillcolor="#224422", URL="../G.194/index.html", target="_top"];
+     "G.247" [label="G.247", tooltip="G.247 (VII.def.1): Anunit is that by virtue of which each of the things that exist is called one.", fillcolor="#224422", URL="../G.247/index.html", target="_top"];
+     "G.248" [label="G.248", tooltip="G.248 (VII.def.2): Anumber is a multitude composed ofunits.", fillcolor="#224422", URL="../G.248/index.html", target="_top"];
+     "G.253" [label="G.253", tooltip="G.253 (VII.def.3): Anumber is apart of a number, the less of the greater, when itmeasures the greater;", fillcolor="#224422", URL="../G.253/index.html", target="_top"];
+     "G.254" [label="G.254", tooltip="G.254 (VII.def.4): Butparts when it does notmeasure it.", fillcolor="#224422", URL="../G.254/index.html", target="_top"];
+     "G.256" [label="G.256", tooltip="G.256 (VII.def.5): The greaternumber is amultiple of the less when it ismeasured by the less.", fillcolor="#224422", URL="../G.256/index.html", target="_top"];
+     "G.257" [label="G.257", tooltip="G.257 (VII.5): If a number be a part of a number, and another be the same part of another, the sum is the same part of the sum that the one is of the one.", fillcolor="#222244", URL="../G.257/index.html", target="_top"];
+     "G.258" [label="G.258", tooltip="G.258 (VII.6): If a number be parts of a number, and another be the same parts of another, the sum is the same parts of the sum that the one is of the one.", fillcolor="#222244", URL="../G.258/index.html", target="_top"];
+     "G.263" [label="G.263", tooltip="G.263 (VII.def.20): Numbers areproportional when the first is thesame multiple, or thesame part, or thesame parts, of the second that the third is of the fourth.", fillcolor="#224422", URL="../G.263/index.html", target="_top"];
+     "G.265" [label="G.265", tooltip="G.265 (VII.12): If there be as many numbers as we please in proportion, then, as one of the antecedents is to one of the consequents, so are all the antecedents to all the consequents.", fillcolor="#222244", URL="../G.265/index.html", target="_top"];
+     "G.268" [label="G.268", tooltip="G.268 (VII.15): If an unit measure any number, and another number measure any other number the same number of times, alternately also, the unit will measure the third number the same number of tim...", fillcolor="#222244", URL="../G.268/index.html", target="_top"];
+     "G.269" [label="G.269", tooltip="G.269 (VII.def.15): Anumber is said tomultiply a number when that which is multiplied is added to itself as many times as there areunits in the other, and thus some number is produced.", fillcolor="#224422", URL="../G.269/index.html", target="_top"];
+     "G.270" [label="G.270", tooltip="G.270 (VII.16): If two numbers by multiplying one another make certain numbers, the numbers so produced are equal.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.170" -> "G.169";
+     "G.253" -> "G.169";
+     "G.254" -> "G.169";
+     "G.256" -> "G.169";
+     "G.268" -> "G.169";
+     "G.257" -> "G.170";
+     "G.194" -> "G.181";
+     "G.265" -> "G.181";
+     "G.268" -> "G.194";
+     "G.248" -> "G.247";
+     "G.268" -> "G.247";
+     "G.269" -> "G.247";
+     "G.253" -> "G.248";
+     "G.256" -> "G.248";
+     "G.257" -> "G.248";
+     "G.258" -> "G.248";
+     "G.265" -> "G.248";
+     "G.268" -> "G.248";
+     "G.269" -> "G.248";
      "G.270" -> "G.248";
-     "G.260" -> "G.259";
-     "G.270" -> "G.260";
-     "G.264" -> "G.262";
-     "G.270" -> "G.264";
+     "G.257" -> "G.253";
+     "G.263" -> "G.253";
+     "G.258" -> "G.254";
+     "G.263" -> "G.254";
+     "G.257" -> "G.256";
+     "G.263" -> "G.256";
+     "G.258" -> "G.257";
+     "G.265" -> "G.257";
+     "G.265" -> "G.258";
+     "G.265" -> "G.263";
+     "G.268" -> "G.265";
+     "G.270" -> "G.268";
+     "G.270" -> "G.269";
    }
+
+Required for
+------------
+
+:ref:`G.272 <G.272>`, :ref:`G.273 <G.273>`, :ref:`G.275 <G.275>`, :ref:`G.278 <G.278>`, :ref:`G.279 <G.279>`, :ref:`G.280 <G.280>`, :ref:`G.281 <G.281>`, :ref:`G.285 <G.285>`, :ref:`G.289 <G.289>`, :ref:`G.290 <G.290>`, :ref:`G.292 <G.292>`, :ref:`G.295 <G.295>`, :ref:`G.296 <G.296>`, :ref:`G.297 <G.297>`, :ref:`G.298 <G.298>`, :ref:`G.299 <G.299>`, :ref:`G.301 <G.301>`, :ref:`G.303 <G.303>`, :ref:`G.304 <G.304>`, :ref:`G.305 <G.305>`, :ref:`G.306 <G.306>`, :ref:`G.307 <G.307>`, :ref:`G.309 <G.309>`, :ref:`G.312 <G.312>`, :ref:`G.314 <G.314>`, :ref:`G.315 <G.315>`, :ref:`G.316 <G.316>`, :ref:`G.317 <G.317>`, :ref:`G.321 <G.321>`, :ref:`G.322 <G.322>`, :ref:`G.323 <G.323>`, :ref:`G.324 <G.324>`, :ref:`G.325 <G.325>`, :ref:`G.326 <G.326>`, :ref:`G.327 <G.327>`, :ref:`G.328 <G.328>`, :ref:`G.329 <G.329>`, :ref:`G.330 <G.330>`, :ref:`G.331 <G.331>`, :ref:`G.332 <G.332>`, :ref:`G.333 <G.333>`, :ref:`G.334 <G.334>`, :ref:`G.335 <G.335>`, :ref:`G.337 <G.337>`, :ref:`G.338 <G.338>`, :ref:`G.339 <G.339>`, :ref:`G.342 <G.342>`, :ref:`G.343 <G.343>`, :ref:`G.344 <G.344>`, :ref:`G.345 <G.345>`, :ref:`G.346 <G.346>`, :ref:`G.347 <G.347>`, :ref:`G.348 <G.348>`, :ref:`G.349 <G.349>`, :ref:`G.364 <G.364>`, :ref:`G.370 <G.370>`, :ref:`G.381 <G.381>`, :ref:`G.383 <G.383>`, :ref:`G.384 <G.384>`, :ref:`G.385 <G.385>`, :ref:`G.389 <G.389>`, :ref:`G.390 <G.390>`, :ref:`G.396 <G.396>`, :ref:`G.397 <G.397>`, :ref:`G.398 <G.398>`, :ref:`G.399 <G.399>`, :ref:`G.400 <G.400>`, :ref:`G.401 <G.401>`, :ref:`G.402 <G.402>`, :ref:`G.403 <G.403>`, :ref:`G.404 <G.404>`, :ref:`G.405 <G.405>`, :ref:`G.406 <G.406>`, :ref:`G.407 <G.407>`, :ref:`G.408 <G.408>`, :ref:`G.409 <G.409>`, :ref:`G.410 <G.410>`, :ref:`G.411 <G.411>`, :ref:`G.412 <G.412>`, :ref:`G.413 <G.413>`, :ref:`G.414 <G.414>`, :ref:`G.415 <G.415>`, :ref:`G.416 <G.416>`, :ref:`G.417 <G.417>`, :ref:`G.418 <G.418>`, :ref:`G.419 <G.419>`, :ref:`G.420 <G.420>`, :ref:`G.421 <G.421>`, :ref:`G.423 <G.423>`, :ref:`G.425 <G.425>`, :ref:`G.427 <G.427>`, :ref:`G.429 <G.429>`, :ref:`G.431 <G.431>`, :ref:`G.433 <G.433>`, :ref:`G.434 <G.434>`, :ref:`G.435 <G.435>`, :ref:`G.436 <G.436>`, :ref:`G.437 <G.437>`, :ref:`G.438 <G.438>`, :ref:`G.439 <G.439>`, :ref:`G.440 <G.440>`, :ref:`G.441 <G.441>`, :ref:`G.442 <G.442>`, :ref:`G.443 <G.443>`, :ref:`G.444 <G.444>`, :ref:`G.445 <G.445>`, :ref:`G.446 <G.446>`, :ref:`G.447 <G.447>`, :ref:`G.448 <G.448>`, :ref:`G.449 <G.449>`, :ref:`G.450 <G.450>`, :ref:`G.451 <G.451>`, :ref:`G.452 <G.452>`, :ref:`G.453 <G.453>`, :ref:`G.457 <G.457>`, :ref:`G.458 <G.458>`, :ref:`G.459 <G.459>`, :ref:`G.460 <G.460>`, :ref:`G.461 <G.461>`, :ref:`G.462 <G.462>`, :ref:`G.463 <G.463>`, :ref:`G.464 <G.464>`, :ref:`G.465 <G.465>`, :ref:`G.466 <G.466>`, :ref:`G.467 <G.467>`, :ref:`G.468 <G.468>`, :ref:`G.470 <G.470>`, :ref:`G.472 <G.472>`, :ref:`G.474 <G.474>`, :ref:`G.476 <G.476>`, :ref:`G.477 <G.477>`, :ref:`G.478 <G.478>`, :ref:`G.479 <G.479>`, :ref:`G.480 <G.480>`, :ref:`G.481 <G.481>`, :ref:`G.482 <G.482>`, :ref:`G.483 <G.483>`, :ref:`G.484 <G.484>`, :ref:`G.485 <G.485>`, :ref:`G.486 <G.486>`, :ref:`G.487 <G.487>`, :ref:`G.488 <G.488>`, :ref:`G.489 <G.489>`, :ref:`G.490 <G.490>`, :ref:`G.491 <G.491>`, :ref:`G.492 <G.492>`, :ref:`G.493 <G.493>`, :ref:`G.494 <G.494>`, :ref:`G.495 <G.495>`, :ref:`G.496 <G.496>`, :ref:`G.497 <G.497>`, :ref:`G.498 <G.498>`, :ref:`G.499 <G.499>`, :ref:`G.500 <G.500>`, :ref:`G.584 <G.584>`, :ref:`G.589 <G.589>`, :ref:`G.597 <G.597>`, :ref:`G.600 <G.600>`, :ref:`G.601 <G.601>`
 
 .. toctree::
    :hidden:

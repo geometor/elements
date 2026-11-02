@@ -1,17 +1,18 @@
 :canonical_id: G.442
-:original_id: X.115
+:original_id: X.62
+:title: G.442 square bimedial segment
 :volume: III
 :book: X
 :type: prop
 
-G.442 — Code
-============
+G.442 square bimedial segment — Code
+====================================
 
-.. rubric:: `X.115 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/115/>`_
+.. rubric:: `X.62 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/062/>`_
 
 .. enunciation::
 
-   From a medial straight line there arise irrational straight lines infinite in number, and none of them is the same as any of the preceding.
+   The :term:`square <G.63>` on the second bimedial :term:`segment <G.4>` applied to a :term:`rational <G.391>` segment produces as breadth the :term:`third binomial <G.426>`.
 
 .. picture:: g1.svg
 

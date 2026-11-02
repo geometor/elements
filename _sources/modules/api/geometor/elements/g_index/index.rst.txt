@@ -28,6 +28,8 @@ Functions
    geometor.elements.g_index.transform_refs
    geometor.elements.g_index.clean_plain_excerpt
    geometor.elements.g_index.wrap_as_enunciation
+   geometor.elements.g_index.transform_terms
+   geometor.elements.g_index.inject_pseudocode_terms
    geometor.elements.g_index.generate_g_dot
    geometor.elements.g_index.sync_apparatus_resources
    geometor.elements.g_index.generate_g_index
@@ -71,6 +73,16 @@ Module Contents
 .. py:function:: wrap_as_enunciation(statement_rst: str) -> str
 
    Wrap a definition, postulate, or common notion statement in an `.. enunciation::` block.
+
+
+.. py:function:: transform_terms(rst_text: str, unit_id: str, id_map: Dict[str, str]) -> str
+
+   Rewrite :term:`display <slug>` to :term:`display <G.k>` when the slug corresponds to an earlier defined G-node.
+
+
+.. py:function:: inject_pseudocode_terms(pseudo_rst: str, unit_id: str, id_map: Optional[Dict[str, str]] = None) -> str
+
+   Wrap first occurrence of earlier-defined Euclidean terms in :term:`<word> <G.k>` on the Pseudocode track.
 
 
 .. py:function:: generate_g_dot(G: networkx.DiGraph, node_ref: str, id_map: Dict[str, str]) -> str

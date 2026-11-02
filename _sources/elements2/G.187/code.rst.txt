@@ -1,17 +1,18 @@
 :canonical_id: G.187
-:original_id: VI.22
+:original_id: V.9
+:title: G.187 magnitudes ratio equal
 :volume: II
-:book: VI
+:book: V
 :type: prop
 
-G.187 — Code
-============
+G.187 magnitudes ratio equal — Code
+===================================
 
-.. rubric:: `VI.22 <https://geometor.github.io/euclid/heath/volume_II/book_vi/propositions/22/>`_
+.. rubric:: `V.9 <https://geometor.github.io/euclid/heath/volume_II/book_v/propositions/09/>`_
 
 .. enunciation::
 
-   If four straight lines be proportional, the polygons similar and similarly described upon them is proportional; and, if the polygons similar and similarly described upon them be proportional, the straight lines will themselves also be proportional.
+   Magnitudes which have the :term:`same ratio <G.176>` to the same are equal; and magnitudes to which the same has the same ratio are equal.
 
 .. picture:: g1.svg
 

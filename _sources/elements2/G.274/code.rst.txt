@@ -1,17 +1,18 @@
 :canonical_id: G.274
-:original_id: IX.5
+:original_id: VII.20
+:title: G.274 least numbers ratio
 :volume: II
-:book: IX
+:book: VII
 :type: prop
 
-G.274 — Code
-============
+G.274 least numbers ratio — Code
+================================
 
-.. rubric:: `IX.5 <https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/05/>`_
+.. rubric:: `VII.20 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/20/>`_
 
 .. enunciation::
 
-   If a cube number by multiplying any number make a cube number, the multiplied number is cube.
+   The least :term:`numbers <G.248>` of those which have the :term:`same ratio <G.176>` with them :term:`measure <G.169>` those which have the same ratio the same number of times, the greater the greater and the less the less.
 
 .. picture:: g1.svg
 

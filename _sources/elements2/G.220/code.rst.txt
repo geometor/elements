@@ -1,17 +1,18 @@
 :canonical_id: G.220
-:original_id: VII.20
+:original_id: VI.10
+:title: G.220 cut similarly
 :volume: II
-:book: VII
+:book: VI
 :type: prop
 
-G.220 — Code
-============
+G.220 cut similarly — Code
+==========================
 
-.. rubric:: `VII.20 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/20/>`_
+.. rubric:: `VI.10 <https://geometor.github.io/euclid/heath/volume_II/book_vi/propositions/10/>`_
 
 .. enunciation::
 
-   The least numbers of those which have the same ratio with them measure those which have the same ratio the same number of times, the greater the greater and the less the less.
+   Cut a given uncut :term:`segment <G.4>` similarly to a given cut segment.
 
 .. picture:: g1.svg
 

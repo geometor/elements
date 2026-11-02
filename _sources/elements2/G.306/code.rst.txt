@@ -1,17 +1,18 @@
 :canonical_id: G.306
-:original_id: IX.32
+:original_id: VIII.9
+:title: G.306 numbers prime numbers
 :volume: II
-:book: IX
+:book: VIII
 :type: prop
 
-G.306 — Code
-============
+G.306 numbers prime numbers — Code
+==================================
 
-.. rubric:: `IX.32 <https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/32/>`_
+.. rubric:: `VIII.9 <https://geometor.github.io/euclid/heath/volume_II/book_viii/propositions/09/>`_
 
 .. enunciation::
 
-   Each of the numbers which are continually doubled beginning from a dyad is even-times even only.
+   If two :term:`numbers <G.248>` be :term:`prime to one another <G.249>`, and numbers fall between them in :term:`continued proportion <G.180>`, then, however many numbers fall between them in continued proportion, so many will also fall between each of them and an :term:`unit <G.247>` in continued proportion.
 
 .. picture:: g1.svg
 

@@ -1,17 +1,18 @@
 :canonical_id: G.518
-:original_id: XIII.11
+:original_id: XI.15
+:title: G.518 segments meeting parallel
 :volume: III
-:book: XIII
+:book: XI
 :type: prop
 
-G.518 — Code
-============
+G.518 segments meeting parallel — Code
+======================================
 
-.. rubric:: `XIII.11 <https://geometor.github.io/euclid/heath/volume_III/book_xiii/propositions/11/>`_
+.. rubric:: `XI.15 <https://geometor.github.io/euclid/heath/volume_III/book_xi/propositions/15/>`_
 
 .. enunciation::
 
-   If in a circle which has its diameter rational an equilateral pentagon be inscribed, the side of the pentagon is the irrational straight line called minor.
+   If two :term:`segments <G.4>` meeting one another be :term:`parallel <G.52>` to two segments meeting one another, not being in the same :term:`plane <G.7>`, the planes through them are parallel.
 
 .. picture:: g1.svg
 

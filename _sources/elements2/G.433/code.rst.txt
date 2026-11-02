@@ -1,17 +1,18 @@
 :canonical_id: G.433
-:original_id: X.106
+:original_id: X.53
+:title: G.433 find the sixth binomial segment
 :volume: III
 :book: X
 :type: prop
 
-G.433 — Code
-============
+G.433 find the sixth binomial segment — Code
+============================================
 
-.. rubric:: `X.106 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/106/>`_
+.. rubric:: `X.53 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/053/>`_
 
 .. enunciation::
 
-   A straight line commensurable with that which produces with a rational area a medial whole is a straight line which produces with a rational area a medial whole.
+   Find the :term:`sixth binomial <G.432>` :term:`segment <G.4>`.
 
 .. picture:: g1.svg
 

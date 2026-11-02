@@ -1,17 +1,18 @@
 :canonical_id: G.142
-:original_id: V.7
+:original_id: III.34
+:title: G.142 circle cut off
 :volume: II
-:book: V
+:book: III
 :type: prop
 
-G.142 — Code
-============
+G.142 circle cut off — Code
+===========================
 
-.. rubric:: `V.7 <https://geometor.github.io/euclid/heath/volume_II/book_v/propositions/07/>`_
+.. rubric:: `III.34 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/34/>`_
 
 .. enunciation::
 
-   Equal magnitudes have to the same the same ratio, as also has the same to equal magnitudes.
+   From a given :term:`circle <G.10>` to cut off a :term:`segment <G.4>` admitting an :term:`angle <G.22>` equal to a given angle.
 
 .. picture:: g1.svg
 

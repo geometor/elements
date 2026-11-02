@@ -1,17 +1,18 @@
 :canonical_id: G.494
-:original_id: XII.8
+:original_id: X.108
+:title: G.494 rational area medial
 :volume: III
-:book: XII
+:book: X
 :type: prop
 
-G.494 — Code
-============
+G.494 rational area medial — Code
+=================================
 
-.. rubric:: `XII.8 <https://geometor.github.io/euclid/heath/volume_III/book_xii/propositions/08/>`_
+.. rubric:: `X.108 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/108/>`_
 
 .. enunciation::
 
-   Similar pyramids which have triangular bases are in the triplicate ratio of their corresponding sides.
+   If from a :term:`rational area <G.392>` a medial area be subtracted, the “side” of the remaining area becomes one of two :term:`irrational <G.391>` :term:`segments <G.4>`, either an apotome or a minor segment.
 
 .. picture:: g1.svg
 

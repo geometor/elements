@@ -1,17 +1,18 @@
 :canonical_id: G.36
-:original_id: I.25
+:original_id: I.13
+:title: G.36 adjacent angles on a line sum to two right angles
 :volume: I
 :book: I
 :type: prop
 
-G.36 — Code
-===========
+G.36 adjacent angles on a line sum to two right angles — Code
+=============================================================
 
-.. rubric:: `I.25 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/25/>`_
+.. rubric:: `I.13 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/13/>`_
 
 .. enunciation::
 
-   If two triangles have two sides equal to two sides respectively, the one with the greater base has the greater included angle.
+   A :term:`segment <G.4>` standing on a :term:`line <G.2>` makes either two :term:`right angles <G.32>` or adjacent :term:`angles <G.22>` summing to two right angles.
 
 .. picture:: g1.svg
 

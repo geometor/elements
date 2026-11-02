@@ -1,17 +1,18 @@
 :canonical_id: G.108
-:original_id: III.29
+:original_id: III.10
+:title: G.108 circle cut circle
 :volume: II
 :book: III
 :type: prop
 
-G.108 — Code
-============
+G.108 circle cut circle — Code
+==============================
 
-.. rubric:: `III.29 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/29/>`_
+.. rubric:: `III.10 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/10/>`_
 
 .. enunciation::
 
-   In equal circles equal circumferences are subtended by equal straight lines.
+   A :term:`circle <G.10>` does not cut a circle at more :term:`points <G.1>` than two.
 
 .. picture:: g1.svg
 

@@ -1,17 +1,18 @@
 :canonical_id: G.295
-:original_id: IX.22
+:original_id: VII.39
+:title: G.295 find the number which is the least that
 :volume: II
-:book: IX
+:book: VII
 :type: prop
 
-G.295 — Code
-============
+G.295 find the number which is the least that — Code
+====================================================
 
-.. rubric:: `IX.22 <https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/22/>`_
+.. rubric:: `VII.39 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/39/>`_
 
 .. enunciation::
 
-   If as many odd numbers as we please be added together, and their multitude be even, the whole is even.
+   Find the :term:`number <G.248>` which is the least that will have given parts.
 
 .. picture:: g1.svg
 

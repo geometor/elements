@@ -1,17 +1,18 @@
 :canonical_id: G.154
-:original_id: V.17
+:original_id: IV.4
+:title: G.154 inscribe circle in triangle
 :volume: II
-:book: V
+:book: IV
 :type: prop
 
-G.154 — Code
-============
+G.154 inscribe circle in triangle — Code
+========================================
 
-.. rubric:: `V.17 <https://geometor.github.io/euclid/heath/volume_II/book_v/propositions/17/>`_
+.. rubric:: `IV.4 <https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/04/>`_
 
 .. enunciation::
 
-   If magnitudes be proportional componendo, they is proportional separando.
+   Inscribe in a given :term:`triangle <G.11>` a :term:`circle <G.10>`.
 
 .. picture:: g1.svg
 

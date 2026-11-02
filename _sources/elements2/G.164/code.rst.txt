@@ -1,17 +1,18 @@
 :canonical_id: G.164
-:original_id: VI.2
+:original_id: IV.12
+:title: G.164 circumscribe about a given circle an equilateral and
 :volume: II
-:book: VI
+:book: IV
 :type: prop
 
-G.164 — Code
-============
+G.164 circumscribe about a given circle an equilateral and — Code
+=================================================================
 
-.. rubric:: `VI.2 <https://geometor.github.io/euclid/heath/volume_II/book_vi/propositions/02/>`_
+.. rubric:: `IV.12 <https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/12/>`_
 
 .. enunciation::
 
-   If a straight line be drawn parallel to one of the sides of a triangle, it will cut the sides of the triangle proportionally; and, if the sides of the triangle be cut proportionally, the line joining the points of section is parallel to the remaining side of the triangle.
+   :term:`Circumscribe about a given circle <G.150>` an :term:`equilateral <G.12>` and equiangular pentagon.
 
 .. picture:: g1.svg
 

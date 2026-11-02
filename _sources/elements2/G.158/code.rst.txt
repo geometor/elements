@@ -1,17 +1,18 @@
 :canonical_id: G.158
-:original_id: V.21
+:original_id: IV.6
+:title: G.158 inscribe square in circle
 :volume: II
-:book: V
+:book: IV
 :type: prop
 
-G.158 — Code
-============
+G.158 inscribe square in circle — Code
+======================================
 
-.. rubric:: `V.21 <https://geometor.github.io/euclid/heath/volume_II/book_v/propositions/21/>`_
+.. rubric:: `IV.6 <https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/06/>`_
 
 .. enunciation::
 
-   If there be three magnitudes, and others equal to them in multitude, which taken two and two together are in the same ratio, and the proportion of them be perturbed, then, if ex aequali the first magnitude is greater than the third, the fourth is greater than the sixth; if equal, equal; and if less, less.
+   :term:`Inscribe in a given circle <G.148>` a :term:`square <G.63>`.
 
 .. picture:: g1.svg
 

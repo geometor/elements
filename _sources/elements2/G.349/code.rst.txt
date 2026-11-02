@@ -1,17 +1,18 @@
 :canonical_id: G.349
-:original_id: X.34
-:volume: III
-:book: X
+:original_id: IX.19
+:title: G.349 numbers investigate possible
+:volume: II
+:book: IX
 :type: prop
 
-G.349 — Code
-============
+G.349 numbers investigate possible — Code
+=========================================
 
-.. rubric:: `X.34 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/034/>`_
+.. rubric:: `IX.19 <https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/19/>`_
 
 .. enunciation::
 
-   Find two straight lines incommensurable in square which make the sum of the squares on them medial but the rectangle contained by them rational.
+   Given three :term:`numbers <G.248>`, to investigate when it is possible to find a fourth :term:`proportional <G.180>` to them.
 
 .. picture:: g1.svg
 

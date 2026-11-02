@@ -1,17 +1,18 @@
 :canonical_id: G.84
-:original_id: III.9
-:volume: II
-:book: III
+:original_id: II.3
+:title: G.84 rectangle whole and part
+:volume: I
+:book: II
 :type: prop
 
-G.84 — Code
-===========
+G.84 rectangle whole and part — Code
+====================================
 
-.. rubric:: `III.9 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/09/>`_
+.. rubric:: `II.3 <https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/03/>`_
 
 .. enunciation::
 
-   If a point be taken within a circle, and more than two equal straight lines fall from the point on the circle, the point taken is the centre of the circle.
+   If a :term:`segment <G.4>` be cut at random, the :term:`rectangle contained <G.81>` by the whole and one of the segments is equal to the rectangle contained by the segments and the :term:`square <G.63>` on the aforesaid segment.
 
 .. picture:: g1.svg
 

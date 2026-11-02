@@ -1,17 +1,18 @@
 :canonical_id: G.293
-:original_id: IX.21
+:original_id: VII.37
+:title: G.293 number measured number
 :volume: II
-:book: IX
+:book: VII
 :type: prop
 
-G.293 — Code
-============
+G.293 number measured number — Code
+===================================
 
-.. rubric:: `IX.21 <https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/21/>`_
+.. rubric:: `VII.37 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/37/>`_
 
 .. enunciation::
 
-   If as many even numbers as we please be added together, the whole is even.
+   If a :term:`number <G.248>` be :term:`measured <G.169>` by any number, the number which is measured will have a part called by the same name as the measuring number.
 
 .. picture:: g1.svg
 

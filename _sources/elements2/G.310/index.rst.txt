@@ -1,85 +1,32 @@
 :order: 310
 :number: 310
 :canonical_id: G.310
-:original_id: IX.35
+:original_id: V.def.10
+:title: G.310 triplicate ratio
 :volume: II
-:book: IX
-:type: prop
-:subtype: theorem
-:categories: theorem, proof, number-theory
-:category: theorem, proof, number-theory
-:tags: book-ix, point, segment, proportion, number, continued-proportion, equality
-:dependencies: G.211, G.212, G.213
-:excerpt: If as many numbers as we please be in continued proportion, and there be subtracted from the second and the last numbers equal to the first, then, as the excess of the second is to the first, so will the excess of the last be to all those before it.
+:book: V
+:type: def
+:categories: definition, proportions, magnitudes
+:category: definition, proportions, magnitudes
+:tags: book-v, proportional, triplicate-ratio, ratio, proportion
+:dependencies: G.180
+:excerpt: When four magnitudes are < continuously >proportional, the first is said to have to the fourth thetriplicate ratio of that which it has to the second, and so on continually, whatever be the proportion.
 
 .. _G.310:
-.. _IX.35:
+.. _V.def.10:
 
-G.310
-=====
+G.310 triplicate ratio
+======================
 
-.. rubric:: `IX.35 <https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/35/>`_
+.. rubric:: `V.def.10 <https://geometor.github.io/euclid/heath/volume_II/book_v/definitions/#v-def-10>`_
 
 .. enunciation::
 
-   If as many numbers as we please be in continued proportion, and there be subtracted from the second and the last numbers equal to the first, then, as the excess of the second is to the first, so will the excess of the last be to all those before it.
+   When four magnitudes are < continuously >:term:`proportional <G.180>`, the first is said to have to the fourth the:term:`**triplicate ratio** <triplicate-ratio>` of that which it has to the second, and so on continually, whatever be the proportion.
 
-.. signature:: theorem
+.. signature:: def
 
-   | :fn:`many_numbers_please_ix_35 <G.310>`\ (:g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />`, :g:`D <g1:D>`, :g:`/ E F / <g1:/ E F />`)
-   | **given** there be as many numbers as we please in continued proportion, :g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />`, :g:`D <g1:D>`, :g:`/ E F / <g1:/ E F />`, beginning from :g:`A <g1:A>` as least, let there be subtracted from :g:`/ B C / <g1:/ B C />` and :g:`/ E F / <g1:/ E F />` the numbers :g:`/ B G / <g1:/ B G />`, :g:`/ F H / <g1:/ F H />`, each :eq:`equal <g1:/ B G / = g1:/ F H / = g1:A>` to :g:`A <g1:A>`
-   | **prove** as the excess of the second is to the first, so is the excess of the last to all those before it
-
-.. picture:: g1.svg
-   :alt: Proposition 35 Diagram
-
-.. step:: given
-
-   there be as many numbers as we please in continued proportion, :g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />`, :g:`D <g1:D>`, :g:`/ E F / <g1:/ E F />`, beginning from :g:`A <g1:A>` as least, let there be subtracted from :g:`/ B C / <g1:/ B C />` and :g:`/ E F / <g1:/ E F />` the numbers :g:`/ B G / <g1:/ B G />`, :g:`/ F H / <g1:/ F H />`, each :eq:`equal <g1:/ B G / = g1:/ F H / = g1:A>` to :g:`A <g1:A>`
-
-.. step:: assert
-
-   I say that, as :g:`/ C G / <g1:/ C G />` is to :g:`A <g1:A>`, so is :g:`/ E H / <g1:/ E H />` to :g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />`, :g:`D <g1:D>`.
-
-.. step:: construct
-
-   :fn:`cut_equal_segment <G.9>`\ (:g:`/ B C / <g1:/ B C />`, and :g:`/ F L / <g1:/ F L />` :eq:`equal <g1:/ F L / = g1:D>` to :g:`D <g1:D>`) → :g:`/ F K / <g1:/ F K />` (:eq:`equal <g1:/ F K / = g1:/ B C />`)
-
-.. step:: assert
-
-   Since :g:`/ F K / <g1:/ F K />` is :eq:`equal <g1:/ F K / = g1:/ B C />` to :g:`/ B C / <g1:/ B C />`, and of these the part :g:`/ F H / <g1:/ F H />` is :eq:`equal <g1:/ F H / = g1:/ B G />` to the part :g:`/ B G / <g1:/ B G />`,
-
-.. step:: assert
-
-   Therefore the remainder :g:`/ H K / <g1:/ H K />` is :eq:`equal <g1:/ H K / = g1:/ C G />` to the remainder :g:`/ C G / <g1:/ C G />`.
-
-.. step:: assert
-
-   Since, as :g:`/ E F / <g1:/ E F />` is to :g:`D <g1:D>`, so is :g:`D <g1:D>` to :g:`/ B C / <g1:/ B C />`, and :g:`/ B C / <g1:/ B C />` to :g:`A <g1:A>`, while :g:`D <g1:D>` is :eq:`equal <g1:D = g1:/ F L /; g1:/ B C / = g1:/ F K /; g1:A = g1:/ F H />` to :g:`/ F L / <g1:/ F L />`, :g:`/ B C / <g1:/ B C />` to :g:`/ F K / <g1:/ F K />`, and :g:`A <g1:A>` to :g:`/ F H / <g1:/ F H />`,
-
-.. step:: assert
-
-   Therefore, as :g:`/ E F / <g1:/ E F />` is to :g:`/ F L / <g1:/ F L />`, so is :g:`/ F L / <g1:/ F L />` to :g:`/ F K / <g1:/ F K />`, and :g:`/ F K / <g1:/ F K />` to :g:`/ F H / <g1:/ F H />`.
-
-.. step:: assert ∵ whole_whole_number, numbers_proportional_proportional <G.211, G.213>
-
-   Separando, as :g:`/ E L / <g1:/ E L />` is to :g:`/ F L / <g1:/ F L />`, so is :g:`/ K L / <g1:/ K L />` to :g:`/ F K / <g1:/ F K />`, and :g:`/ H K / <g1:/ H K />` to :g:`/ F H / <g1:/ F H />`.
-
-.. step:: assert ∵ there_many_numbers <G.212>
-
-   Therefore also, as one of the antecedents is to one of the consequents, so are all the antecedents to all the consequents; therefore, as :g:`/ H K / <g1:/ H K />` is to :g:`/ F H / <g1:/ F H />`, so are :g:`/ E L / <g1:/ E L />`, :g:`/ K L / <g1:/ K L />`, :g:`/ H K / <g1:/ H K />` to :g:`/ F L / <g1:/ F L />`, :g:`/ F K / <g1:/ F K />`, :g:`/ F H / <g1:/ F H />`.
-
-.. step:: assert
-
-   :g:`/ H K / <g1:/ H K />` is :eq:`equal <g1:/ H K / = g1:/ C G /; g1:/ F H / = g1:A; g1:/ F L / = g1:D; g1:/ F K / = g1:/ B C />` to :g:`/ C G / <g1:/ C G />`, :g:`/ F H / <g1:/ F H />` to :g:`A <g1:A>`, and :g:`/ F L / <g1:/ F L />`, :g:`/ F K / <g1:/ F K />`, :g:`/ F H / <g1:/ F H />` to :g:`D <g1:D>`, :g:`/ B C / <g1:/ B C />`, :g:`A <g1:A>`;
-
-.. step:: assert
-
-   Therefore, as :g:`/ C G / <g1:/ C G />` is to :g:`A <g1:A>`, so is :g:`/ E H / <g1:/ E H />` to :g:`D <g1:D>`, :g:`/ B C / <g1:/ B C />`, :g:`A <g1:A>`.
-
-.. step:: conclude
-
-   Therefore, as the excess of the second is to the first, so is the excess of the last to all those before it.
+   | :fn:`magnitudes_proportional_said_def_v_def_10 <G.310>`
 
 Dependency Graph
 ----------------
@@ -91,45 +38,23 @@ Dependency Graph
      node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11, color="#d6d3cd", fontcolor="#ffffff"];
      edge [color="#8c857b", fontcolor="#8c857b", arrowsize=0.75];
      rankdir="TB";
-     "G.204" [label="G.204", tooltip="G.204 (VII.5): If a number be a part of a number, and another be the same part of another, the sum is the same part of the sum that the one is of the one.", fillcolor="#222244", URL="../G.204/index.html", target="_top"];
-     "G.205" [label="G.205", tooltip="G.205 (VII.6): If a number be parts of a number, and another be the same parts of another, the sum is the same parts of the sum that the one is of the one.", fillcolor="#222244", URL="../G.205/index.html", target="_top"];
-     "G.206" [label="G.206", tooltip="G.206 (VII.7): If a number be that part of a number, which a number subtracted is of a number subtracted, the remainder is the same part of the remainder that the whole is of the whole.", fillcolor="#222244", URL="../G.206/index.html", target="_top"];
-     "G.207" [label="G.207", tooltip="G.207 (VII.8): If a number be the same parts of a number that a number subtracted is of a number subtracted, the remainder is the same parts of the remainder that the whole is of the whole.", fillcolor="#222244", URL="../G.207/index.html", target="_top"];
-     "G.208" [label="G.208", tooltip="G.208 (VII.9): If a number be a part of a number, and another be the same part of another, alternately also, whatever part or parts the first is of the third, the same part, or the same parts, wi...", fillcolor="#222244", URL="../G.208/index.html", target="_top"];
-     "G.209" [label="G.209", tooltip="G.209 (VII.10): If a number be parts of a number, and another be the same parts of another, alternately also, whatever parts or part the first is of the third, the same parts or the same part will...", fillcolor="#222244", URL="../G.209/index.html", target="_top"];
-     "G.210" [label="G.210", tooltip="G.210 (VII.def.20): **Numbers** areproportional when the first is the same multiple, or the same part, or the same parts, of the second that the third is of the fourth.", fillcolor="#224422", URL="../G.210/index.html", target="_top"];
-     "G.211" [label="G.211", tooltip="G.211 (VII.11): If, as whole is to whole, so is a number subtracted to a number subtracted, the remainder is to the remainder as whole to whole.", fillcolor="#222244", URL="../G.211/index.html", target="_top"];
-     "G.212" [label="G.212", tooltip="G.212 (VII.12): If there be as many numbers as we please in proportion, then, as one of the antecedents is to one of the consequents, so are all the antecedents to all the consequents.", fillcolor="#222244", URL="../G.212/index.html", target="_top"];
-     "G.213" [label="G.213", tooltip="G.213 (VII.13): If four numbers be proportional, they is proportional alternately.", fillcolor="#222244", URL="../G.213/index.html", target="_top"];
-     "G.310" [label="G.310", tooltip="G.310 (IX.35): If as many numbers as we please be in continued proportion, and there be subtracted from the second and the last numbers equal to the first, then, as the excess of the second is to...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
-     "G.205" -> "G.204";
-     "G.206" -> "G.204";
-     "G.208" -> "G.204";
-     "G.209" -> "G.204";
-     "G.212" -> "G.204";
-     "G.208" -> "G.205";
-     "G.209" -> "G.205";
-     "G.212" -> "G.205";
-     "G.207" -> "G.206";
-     "G.211" -> "G.206";
-     "G.211" -> "G.207";
-     "G.209" -> "G.208";
-     "G.213" -> "G.209";
-     "G.211" -> "G.210";
-     "G.212" -> "G.210";
-     "G.213" -> "G.210";
-     "G.310" -> "G.211";
-     "G.310" -> "G.212";
-     "G.310" -> "G.213";
+     "G.169" [label="G.169", tooltip="G.169 (V.def.1): A magnitude is apart of a magnitude, the less of the greater, when it measures the greater.", fillcolor="#224422", URL="../G.169/index.html", target="_top"];
+     "G.170" [label="G.170", tooltip="G.170 (V.def.2): The greater is amultiple of the less when it ismeasured by the less.", fillcolor="#224422", URL="../G.170/index.html", target="_top"];
+     "G.176" [label="G.176", tooltip="G.176 (V.def.5): Magnitudes are said tobe in the same ratio, the first to the second and the third to the fourth, when, if anyequimultiples whatever be taken of the first and third, and any equimul...", fillcolor="#224422", URL="../G.176/index.html", target="_top"];
+     "G.180" [label="G.180", tooltip="G.180 (V.def.6): Let magnitudes which have thesame ratio be calledproportional.", fillcolor="#224422", URL="../G.180/index.html", target="_top"];
+     "G.310" [label="G.310", tooltip="G.310 (V.def.10): When four magnitudes are < continuously >proportional, the first is said to have to the fourth thetriplicate ratio of that which it has to the second, and so on continually, whatev...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.170" -> "G.169";
+     "G.176" -> "G.170";
+     "G.180" -> "G.176";
+     "G.310" -> "G.180";
    }
 
 Required for
 ------------
 
-:ref:`G.312 <G.312>`
+:ref:`G.312 <G.312>`, :ref:`G.315 <G.315>`, :ref:`G.317 <G.317>`, :ref:`G.321 <G.321>`, :ref:`G.327 <G.327>`, :ref:`G.329 <G.329>`, :ref:`G.333 <G.333>`, :ref:`G.334 <G.334>`, :ref:`G.335 <G.335>`, :ref:`G.339 <G.339>`, :ref:`G.543 <G.543>`, :ref:`G.547 <G.547>`, :ref:`G.559 <G.559>`, :ref:`G.570 <G.570>`, :ref:`G.577 <G.577>`, :ref:`G.578 <G.578>`
 
 .. toctree::
    :hidden:
 
-   code
    heath

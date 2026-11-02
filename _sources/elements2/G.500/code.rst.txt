@@ -1,17 +1,18 @@
 :canonical_id: G.500
-:original_id: XII.13
+:original_id: X.114
+:title: G.500 area contained apotome
 :volume: III
-:book: XII
+:book: X
 :type: prop
 
-G.500 — Code
-============
+G.500 area contained apotome — Code
+===================================
 
-.. rubric:: `XII.13 <https://geometor.github.io/euclid/heath/volume_III/book_xii/propositions/13/>`_
+.. rubric:: `X.114 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/114/>`_
 
 .. enunciation::
 
-   If a cylinder be cut by a plane which is parallel to its opposite planes, then, as the cylinder is to the cylinder, so will the axis be to the axis.
+   If an area be contained by an apotome and the binomial :term:`segment <G.4>` the terms of which are :term:`commensurable <G.372>` with the terms of the apotome and :term:`in the same ratio <G.176>`, the “side” of the area is :term:`rational <G.391>`.
 
 .. picture:: g1.svg
 

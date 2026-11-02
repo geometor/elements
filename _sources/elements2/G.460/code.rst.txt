@@ -1,17 +1,18 @@
 :canonical_id: G.460
-:original_id: XI.16
+:original_id: X.78
+:title: G.460 segment there subtracted
 :volume: III
-:book: XI
+:book: X
 :type: prop
 
-G.460 — Code
-============
+G.460 segment there subtracted — Code
+=====================================
 
-.. rubric:: `XI.16 <https://geometor.github.io/euclid/heath/volume_III/book_xi/propositions/16/>`_
+.. rubric:: `X.78 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/078/>`_
 
 .. enunciation::
 
-   If two parallel planes be cut by any plane, their common sections are parallel.
+   If from a :term:`segment <G.4>` there be subtracted a segment which is :term:`incommensurable in square <G.380>` with the whole and which with the whole makes the sum of the :term:`squares <G.63>` on them medial, twice the :term:`rectangle contained <G.81>` by them medial, and further the squares on them :term:`incommensurable <G.372>` with twice the rectangle contained by them, the remainder is :term:`irrational <G.391>`; and let it be called **that which produces with a medial area a medial whole**.
 
 .. picture:: g1.svg
 

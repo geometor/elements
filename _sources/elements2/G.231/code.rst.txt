@@ -1,17 +1,18 @@
 :canonical_id: G.231
-:original_id: VII.30
+:original_id: VI.19
+:title: G.231 similar triangles duplicate
 :volume: II
-:book: VII
+:book: VI
 :type: prop
 
-G.231 — Code
-============
+G.231 similar triangles duplicate — Code
+========================================
 
-.. rubric:: `VII.30 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/30/>`_
+.. rubric:: `VI.19 <https://geometor.github.io/euclid/heath/volume_II/book_vi/propositions/19/>`_
 
 .. enunciation::
 
-   If two numbers by multiplying one another make some number, and any prime number measure the product, it will also measure one of the original numbers.
+   :term:`Similar triangles <G.217>` are to one another in the :term:`duplicate ratio <G.230>` of the corresponding sides.
 
 .. picture:: g1.svg
 

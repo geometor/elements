@@ -1,17 +1,18 @@
 :canonical_id: G.24
-:original_id: I.14
+:original_id: I.4
+:title: G.24 congruent triangles by SAS
 :volume: I
 :book: I
 :type: prop
 
-G.24 — Code
-===========
+G.24 congruent triangles by SAS — Code
+======================================
 
-.. rubric:: `I.14 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/14/>`_
+.. rubric:: `I.4 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/04/>`_
 
 .. enunciation::
 
-   If two rays at a point on a line on opposite sides make adjacent angles summing to two right angles, the two rays are collinear.
+   :term:`Triangles <G.11>` with two sides and the included :term:`angle <G.22>` equal are congruent (SAS).
 
 .. picture:: g1.svg
 

@@ -1,17 +1,18 @@
 :canonical_id: G.421
-:original_id: X.94
+:original_id: X.47
+:title: G.421 side sum medial
 :volume: III
 :book: X
 :type: prop
 
-G.421 — Code
-============
+G.421 side sum medial — Code
+============================
 
-.. rubric:: `X.94 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/094/>`_
+.. rubric:: `X.47 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/047/>`_
 
 .. enunciation::
 
-   If an area be contained by a rational straight line and a fourth apotome, the “side” of the area is minor.
+   The side of the sum of two medial areas is divided at one :term:`point <G.1>` only.
 
 .. picture:: g1.svg
 

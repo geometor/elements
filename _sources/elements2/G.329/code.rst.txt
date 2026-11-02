@@ -1,28 +1,20 @@
 :canonical_id: G.329
-:original_id: X.16
-:volume: III
-:book: X
+:original_id: VIII.27
+:title: G.329 similar solid numbers
+:volume: II
+:book: VIII
 :type: prop
 
-G.329 — Code
-============
+G.329 similar solid numbers — Code
+==================================
 
-.. rubric:: `X.16 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/016/>`_
+.. rubric:: `VIII.27 <https://geometor.github.io/euclid/heath/volume_II/book_viii/propositions/27/>`_
 
 .. enunciation::
 
-   If two incommensurable magnitudes be added together, the whole is incommensurable with each of them; and, if the whole be incommensurable with one of them, the original magnitudes is incommensurable.
-
-.. rubric:: ``g1.py``
+   :term:`Similar solid numbers <G.318>` have to one another the :term:`ratio <G.173>` which a :term:`cube number <G.311>` has to a cube number.
 
 .. picture:: g1.svg
 
 .. literalinclude:: g1.py
-   :language: python
-
-.. rubric:: ``g2.py``
-
-.. picture:: g2.svg
-
-.. literalinclude:: g2.py
    :language: python

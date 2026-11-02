@@ -1,17 +1,18 @@
 :canonical_id: G.45
-:original_id: I.32
+:original_id: I.20
+:title: G.45 triangle inequality
 :volume: I
 :book: I
 :type: prop
 
-G.45 — Code
-===========
+G.45 triangle inequality — Code
+===============================
 
-.. rubric:: `I.32 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/32/>`_
+.. rubric:: `I.20 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/20/>`_
 
 .. enunciation::
 
-   In any triangle, an exterior angle equals the sum of the two opposite interior angles, and the three interior angles sum to two right angles.
+   In any :term:`triangle <G.11>`, the sum of any two sides is greater than the remaining side.
 
 .. picture:: g1.svg
 

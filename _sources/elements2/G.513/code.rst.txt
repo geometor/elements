@@ -1,17 +1,18 @@
 :canonical_id: G.513
-:original_id: XIII.6
+:original_id: XI.11
+:title: G.513 elevated point draw
 :volume: III
-:book: XIII
+:book: XI
 :type: prop
 
-G.513 — Code
-============
+G.513 elevated point draw — Code
+================================
 
-.. rubric:: `XIII.6 <https://geometor.github.io/euclid/heath/volume_III/book_xiii/propositions/06/>`_
+.. rubric:: `XI.11 <https://geometor.github.io/euclid/heath/volume_III/book_xi/propositions/11/>`_
 
 .. enunciation::
 
-   If a rational straight line be cut in extreme and mean ratio, each of the segments is the irrational straight line called apotome.
+   From a given elevated :term:`point <G.1>` to draw a :term:`segment <G.4>` :term:`perpendicular <G.32>` to a given :term:`plane <G.7>`.
 
 .. picture:: g1.svg
 

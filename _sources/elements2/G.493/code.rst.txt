@@ -1,17 +1,18 @@
 :canonical_id: G.493
-:original_id: XII.7
+:original_id: X.107
+:title: G.493 segment commensurable produces
 :volume: III
-:book: XII
+:book: X
 :type: prop
 
-G.493 — Code
-============
+G.493 segment commensurable produces — Code
+===========================================
 
-.. rubric:: `XII.7 <https://geometor.github.io/euclid/heath/volume_III/book_xii/propositions/07/>`_
+.. rubric:: `X.107 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/107/>`_
 
 .. enunciation::
 
-   Any prism which has a triangular base is divided into three pyramids equal to one another which have triangular bases.
+   A :term:`segment <G.4>` :term:`commensurable <G.372>` with that which produces with a medial area a medial whole is itself also a segment which produces with a medial area a medial whole.
 
 .. picture:: g1.svg
 

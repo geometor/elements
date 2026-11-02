@@ -1,17 +1,18 @@
 :canonical_id: G.234
-:original_id: VII.33
+:original_id: VI.22
+:title: G.234 segments proportional polygons
 :volume: II
-:book: VII
+:book: VI
 :type: prop
 
-G.234 — Code
-============
+G.234 segments proportional polygons — Code
+===========================================
 
-.. rubric:: `VII.33 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/33/>`_
+.. rubric:: `VI.22 <https://geometor.github.io/euclid/heath/volume_II/book_vi/propositions/22/>`_
 
 .. enunciation::
 
-   Given as many numbers as we please, to find the least of those which have the same ratio with them.
+   If four :term:`segments <G.4>` be :term:`proportional <G.180>`, the polygons similar and :term:`similarly described <G.217>` upon them is proportional; and, if the polygons similar and similarly described upon them be proportional, the segments will themselves also be proportional.
 
 .. picture:: g1.svg
 

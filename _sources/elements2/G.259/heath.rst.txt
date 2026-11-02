@@ -1,19 +1,108 @@
 :canonical_id: G.259
-:original_id: VII.def.21
+:original_id: VII.7
+:title: G.259 number part number
 :volume: II
 :book: VII
-:type: def
+:type: prop
 
-G.259 — Heath
-=============
+G.259 number part number — Heath
+================================
 
-.. rubric:: `VII.def.21 <https://geometor.github.io/euclid/heath/volume_II/book_vii/definitions/#vii-def-21>`_
+.. rubric:: `VII.7 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/07/>`_
 
 .. enunciation::
 
-   :term:`**Similar plane and solid numbers** <similar-plane-and-solid-numbers>` are those which have their sides proportional.
+   If a :term:`number <G.248>` be that :term:`part of <G.253>` a number, which a number subtracted is of a number subtracted, the remainder will also be the same part of the remainder that the whole is of the whole.
+
+For let the number :g:`/ A B / <g1:/ A B />` be that part of the number :g:`/ C D / <g1:/ C D />` which :g:`/ A E / <g1:/ A E />` subtracted is of :g:`/ C F / <g1:/ C F />` subtracted;
+
+I say that the remainder :g:`/ E B / <g1:/ E B />` is also the same part of the remainder :g:`/ F D / <g1:/ F D />` that the whole :g:`/ A B / <g1:/ A B />` is of the whole :g:`/ C D / <g1:/ C D />`.
+
+.. picture:: g1.svg
+   :alt: Book VII, Proposition 7
+
+For, whatever part :g:`/ A E / <g1:/ A E />` is of :g:`/ C F / <g1:/ C F />`, the same part also let :g:`/ E B / <g1:/ E B />` be of :g:`/ G C / <g1:/ G C />`.
+
+.. subclause::
+
+   Now since, whatever part :g:`/ A E / <g1:/ A E />` is of :g:`/ C F / <g1:/ C F />`, the same part also is :g:`/ E B / <g1:/ E B />` of :g:`/ G C / <g1:/ G C />`,
+
+.. assertion::
+
+   therefore, whatever part :g:`/ A E / <g1:/ A E />` is of :g:`/ C F / <g1:/ C F />`, the same part also is :g:`/ A B / <g1:/ A B />` of :g:`/ G F / <g1:/ G F />`. :just:`[G.257] <G.257>`
+
+.. subclause::
+
+   But, whatever part :g:`/ A E / <g1:/ A E />` is of :g:`/ C F / <g1:/ C F />`, the same part also, by hypothesis, is :g:`/ A B / <g1:/ A B />` of :g:`/ C D / <g1:/ C D />`;
+
+.. assertion::
+
+   therefore, whatever part :g:`/ A B / <g1:/ A B />` is of :g:`/ G F / <g1:/ G F />`, the same part is it of :g:`/ C D / <g1:/ C D />` also;
+
+.. assertion::
+
+   therefore :g:`/ G F / <g1:/ G F />` is :eq:`equal <g1:/ G F / = g1:/ C D />` to :g:`/ C D / <g1:/ C D />`.
+
+Let :g:`/ C F / <g1:/ C F />` be subtracted from each;
+
+.. assertion::
+
+   therefore the remainder :g:`/ G C / <g1:/ G C />` is :eq:`equal <g1:/ G C / = g1:/ F D />` to the remainder :g:`/ F D / <g1:/ F D />`.
+
+.. subclause::
+
+   Now since, whatever part :g:`/ A E / <g1:/ A E />` is of :g:`/ C F / <g1:/ C F />`, the same part also is :g:`/ E B / <g1:/ E B />` of :g:`/ G C / <g1:/ G C />`, while :g:`/ G C / <g1:/ G C />` is :eq:`equal <g1:/ G C / = g1:/ F D />` to :g:`/ F D / <g1:/ F D />`,
+
+.. assertion::
+
+   therefore, whatever part :g:`/ A E / <g1:/ A E />` is of :g:`/ C F / <g1:/ C F />`, the same part also is :g:`/ E B / <g1:/ E B />` of :g:`/ F D / <g1:/ F D />`.
+
+.. subclause::
+
+   But, whatever part :g:`/ A E / <g1:/ A E />` is of :g:`/ C F / <g1:/ C F />`, the same part also is :g:`/ A B / <g1:/ A B />` of :g:`/ C D / <g1:/ C D />`;
+
+.. assertion::
+
+   therefore also the remainder :g:`/ E B / <g1:/ E B />` is the same part of the remainder :g:`/ F D / <g1:/ F D />` that the whole :g:`/ A B / <g1:/ A B />` is of the whole :g:`/ C D / <g1:/ C D />`.
+
+.. qed::
+
+   :just:`Q. E. D.`
+
+Dependency Graph
+----------------
+
+.. graphviz::
+
+   digraph {
+     bgcolor="transparent";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11, color="#d6d3cd", fontcolor="#ffffff"];
+     edge [color="#8c857b", fontcolor="#8c857b", arrowsize=0.75];
+     rankdir="TB";
+     "G.169" [label="G.169", tooltip="G.169 (V.def.1): A magnitude is apart of a magnitude, the less of the greater, when it measures the greater.", fillcolor="#224422", URL="../G.169/index.html", target="_top"];
+     "G.170" [label="G.170", tooltip="G.170 (V.def.2): The greater is amultiple of the less when it ismeasured by the less.", fillcolor="#224422", URL="../G.170/index.html", target="_top"];
+     "G.247" [label="G.247", tooltip="G.247 (VII.def.1): Anunit is that by virtue of which each of the things that exist is called one.", fillcolor="#224422", URL="../G.247/index.html", target="_top"];
+     "G.248" [label="G.248", tooltip="G.248 (VII.def.2): Anumber is a multitude composed ofunits.", fillcolor="#224422", URL="../G.248/index.html", target="_top"];
+     "G.253" [label="G.253", tooltip="G.253 (VII.def.3): Anumber is apart of a number, the less of the greater, when itmeasures the greater;", fillcolor="#224422", URL="../G.253/index.html", target="_top"];
+     "G.256" [label="G.256", tooltip="G.256 (VII.def.5): The greaternumber is amultiple of the less when it ismeasured by the less.", fillcolor="#224422", URL="../G.256/index.html", target="_top"];
+     "G.257" [label="G.257", tooltip="G.257 (VII.5): If a number be a part of a number, and another be the same part of another, the sum is the same part of the sum that the one is of the one.", fillcolor="#222244", URL="../G.257/index.html", target="_top"];
+     "G.259" [label="G.259", tooltip="G.259 (VII.7): If a number be that part of a number, which a number subtracted is of a number subtracted, the remainder is the same part of the remainder that the whole is of the whole.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.170" -> "G.169";
+     "G.253" -> "G.169";
+     "G.256" -> "G.169";
+     "G.257" -> "G.170";
+     "G.248" -> "G.247";
+     "G.253" -> "G.248";
+     "G.256" -> "G.248";
+     "G.257" -> "G.248";
+     "G.259" -> "G.248";
+     "G.257" -> "G.253";
+     "G.259" -> "G.253";
+     "G.257" -> "G.256";
+     "G.259" -> "G.257";
+   }
 
 Required for
 ------------
 
-:ref:`G.260 <G.260>`, :ref:`G.261 <G.261>`, :ref:`G.266 <G.266>`, :ref:`G.267 <G.267>`, :ref:`G.268 <G.268>`, :ref:`G.269 <G.269>`, :ref:`G.270 <G.270>`, :ref:`G.271 <G.271>`, :ref:`G.273 <G.273>`, :ref:`G.274 <G.274>`, :ref:`G.275 <G.275>`, :ref:`G.280 <G.280>`, :ref:`G.322 <G.322>`, :ref:`G.324 <G.324>`, :ref:`G.344 <G.344>`, :ref:`G.345 <G.345>`, :ref:`G.346 <G.346>`, :ref:`G.347 <G.347>`, :ref:`G.348 <G.348>`, :ref:`G.349 <G.349>`, :ref:`G.350 <G.350>`, :ref:`G.354 <G.354>`, :ref:`G.355 <G.355>`, :ref:`G.356 <G.356>`, :ref:`G.360 <G.360>`, :ref:`G.361 <G.361>`, :ref:`G.363 <G.363>`, :ref:`G.364 <G.364>`, :ref:`G.365 <G.365>`, :ref:`G.366 <G.366>`, :ref:`G.367 <G.367>`, :ref:`G.368 <G.368>`, :ref:`G.376 <G.376>`, :ref:`G.378 <G.378>`, :ref:`G.379 <G.379>`, :ref:`G.380 <G.380>`, :ref:`G.383 <G.383>`, :ref:`G.384 <G.384>`, :ref:`G.385 <G.385>`, :ref:`G.389 <G.389>`, :ref:`G.390 <G.390>`, :ref:`G.391 <G.391>`, :ref:`G.392 <G.392>`, :ref:`G.393 <G.393>`, :ref:`G.397 <G.397>`, :ref:`G.398 <G.398>`, :ref:`G.399 <G.399>`, :ref:`G.403 <G.403>`, :ref:`G.404 <G.404>`, :ref:`G.405 <G.405>`, :ref:`G.407 <G.407>`, :ref:`G.409 <G.409>`, :ref:`G.411 <G.411>`, :ref:`G.413 <G.413>`, :ref:`G.415 <G.415>`, :ref:`G.417 <G.417>`, :ref:`G.418 <G.418>`, :ref:`G.421 <G.421>`, :ref:`G.422 <G.422>`, :ref:`G.423 <G.423>`, :ref:`G.427 <G.427>`, :ref:`G.428 <G.428>`, :ref:`G.429 <G.429>`, :ref:`G.432 <G.432>`, :ref:`G.433 <G.433>`, :ref:`G.434 <G.434>`, :ref:`G.435 <G.435>`, :ref:`G.436 <G.436>`, :ref:`G.437 <G.437>`, :ref:`G.438 <G.438>`, :ref:`G.513 <G.513>`, :ref:`G.518 <G.518>`, :ref:`G.523 <G.523>`, :ref:`G.524 <G.524>`, :ref:`G.525 <G.525>`
+:ref:`G.260 <G.260>`, :ref:`G.264 <G.264>`, :ref:`G.368 <G.368>`, :ref:`G.370 <G.370>`

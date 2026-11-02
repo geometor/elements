@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -1 248 229" width="248" height="229" class="euclid-graphic" data-graphic-id="g1" data-graphic="g1" data-proposition="XI.15">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-3 -2 45 167" width="45" height="167" class="euclid-graphic" data-graphic-id="g1" data-graphic="g1" data-proposition="X.77">
   <style>
     :root {
       --geom-fg: #18181b;
@@ -251,66 +251,29 @@
     </marker>
   </defs>
   <g id="elements">
-    <path id="el-plane-ABC-top" class="geom-line" d="M 24 11 L 94 11 L 164 11" />
-    <path id="el-plane-ABC-right" class="geom-line" d="M 164 11 L 148.5 45 L 133 79" />
-    <path id="el-plane-ABC-bottom" class="geom-line" d="M 133 79 L 71.5 79.5 L 10 80" />
-    <path id="el-plane-ABC-left" class="geom-line" d="M 10 80 L 17 45.5 L 24 11" />
-    <path id="el-plane-DEF-top" class="geom-line" d="M 75 122 L 154.5 122 L 234 122" />
-    <path id="el-plane-DEF-right" class="geom-line" d="M 234 122 L 213 168.5 L 192 215" />
-    <path id="el-plane-DEF-bottom" class="geom-line" d="M 192 215 L 117.5 215 L 43 215" />
-    <path id="el-plane-DEF-left" class="geom-line" d="M 43 215 L 59 168.5 L 75 122" />
+    <path id="el-line-AB" data-ref="[ A B ]" data-aliases="[ B A ]" data-type="line" class="geom-line" d="M 26.5 15 L 26.5 81.5 L 26.5 148" />
+    <path class="geom-line" d="M 23 106 L 26.5 106 L 30 106" />
   </g>
   <g id="graphics">
-    <polygon id="el-plane-ABC" data-ref="&lt; A B C &gt;" data-aliases="&lt; B A C &gt; | &lt; C B A &gt;" data-type="polygon" points="24,11 164,11 133,79 10,80" class="geom-polygon" />
-    <polygon id="el-plane-DEF" data-ref="&lt; D E F &gt;" data-aliases="&lt; E D F &gt; | &lt; F E D &gt;" data-type="polygon" points="75,122 234,122 192,215 43,215" class="geom-polygon" />
-    <path id="el-seg-AB" data-ref="/ A B /" data-aliases="/ B A /" data-type="segment" class="geom-line" d="M 56 67 L 77.5 50.5 L 99 34" />
-    <path id="el-seg-BC" data-ref="/ B C /" data-aliases="/ C B /" data-type="segment" class="geom-line" d="M 99 34 L 114 50.5 L 129 67" />
-    <path id="el-seg-DE" data-ref="/ D E /" data-aliases="/ E D /" data-type="segment" class="geom-line" d="M 68 184 L 97 161 L 126 138" />
-    <path id="el-seg-EF" data-ref="/ E F /" data-aliases="/ F E /" data-type="segment" class="geom-line" d="M 126 138 L 152 168.5 L 178 199" />
-    <path id="el-seg-BG" data-ref="/ B G /" data-aliases="/ G B /" data-type="segment" class="geom-line" d="M 99 34 L 101 106.5 L 103 179" />
-    <path id="el-seg-GH" data-ref="/ G H /" data-aliases="/ H G /" data-type="segment" class="geom-line" d="M 103 179 L 86.5 191.5 L 70 204" />
-    <path id="el-seg-GK" data-ref="/ G K /" data-aliases="/ K G /" data-type="segment" class="geom-line" d="M 103 179 L 113.5 191 L 124 203" />
-    <path id="el-ang-BGH" data-ref="&lt; B G H )" data-aliases="&lt; H G B )" data-type="wedge" d="M 103.00 179.00 L 90.25 188.66 A 16.0 16.0 0 0 1 102.56 163.01 Z" class="wedge angle geom-overlay" />
-    <path id="el-ang-BGK" data-ref="&lt; B G K )" data-aliases="&lt; K G B )" data-type="wedge" d="M 103.00 179.00 L 102.56 163.01 A 16.0 16.0 0 0 1 113.54 191.04 Z" class="wedge angle geom-overlay" />
-    <path id="el-ang-GBA" data-ref="&lt; G B A )" data-aliases="&lt; A B G )" data-type="wedge" d="M 99.00 34.00 L 99.50 51.99 A 18.0 18.0 0 0 1 84.72 44.96 Z" class="wedge angle geom-overlay" />
+    <path id="el-seg-AB" data-ref="/ A B /" data-aliases="/ B A /" data-type="segment" class="geom-line" d="M 26.5 15 L 26.5 81.5 L 26.5 148" />
+    <path id="el-seg-AC" data-ref="/ A C /" data-aliases="/ C A /" data-type="segment" class="geom-line geom-overlay" d="M 26.5 15 L 26.5 60.5 L 26.5 106" />
+    <path id="el-seg-CB" data-ref="/ C B /" data-aliases="/ B C /" data-type="segment" class="geom-line geom-overlay" d="M 26.5 106 L 26.5 127 L 26.5 148" />
+    <polyline id="el-sec-ACB" data-ref="/ A C B /" data-aliases="/ B C A / | } A C B { | } B C A {" data-type="section" points="26.5,15.0 26.5,106.0 26.5,148.0" class="geom-line geom-overlay" />
   </g>
   <g id="highlights" style="pointer-events: none;">
-    <polygon id="hl-plane-ABC" data-ref="&lt; A B C &gt;" data-aliases="&lt; B A C &gt; | &lt; C B A &gt;" points="24,11 164,11 133,79 10,80" class="geom-polygon geom-overlay" />
-    <polygon id="hl-plane-DEF" data-ref="&lt; D E F &gt;" data-aliases="&lt; E D F &gt; | &lt; F E D &gt;" points="75,122 234,122 192,215 43,215" class="geom-polygon geom-overlay" />
-    <path id="hl-seg-AB" data-ref="/ A B /" data-aliases="/ B A /" class="geom-line geom-overlay" d="M 56 67 L 77.5 50.5 L 99 34" />
-    <path id="hl-seg-BC" data-ref="/ B C /" data-aliases="/ C B /" class="geom-line geom-overlay" d="M 99 34 L 114 50.5 L 129 67" />
-    <path id="hl-seg-DE" data-ref="/ D E /" data-aliases="/ E D /" class="geom-line geom-overlay" d="M 68 184 L 97 161 L 126 138" />
-    <path id="hl-seg-EF" data-ref="/ E F /" data-aliases="/ F E /" class="geom-line geom-overlay" d="M 126 138 L 152 168.5 L 178 199" />
-    <path id="hl-seg-BG" data-ref="/ B G /" data-aliases="/ G B /" class="geom-line geom-overlay" d="M 99 34 L 101 106.5 L 103 179" />
-    <path id="hl-seg-GH" data-ref="/ G H /" data-aliases="/ H G /" class="geom-line geom-overlay" d="M 103 179 L 86.5 191.5 L 70 204" />
-    <path id="hl-seg-GK" data-ref="/ G K /" data-aliases="/ K G /" class="geom-line geom-overlay" d="M 103 179 L 113.5 191 L 124 203" />
-    <path id="hl-ang-BGH" data-ref="&lt; B G H )" data-aliases="&lt; H G B )" d="M 103.00 179.00 L 90.25 188.66 A 16.0 16.0 0 0 1 102.56 163.01 Z" class="wedge angle geom-overlay" />
-    <path id="hl-ang-BGK" data-ref="&lt; B G K )" data-aliases="&lt; K G B )" d="M 103.00 179.00 L 102.56 163.01 A 16.0 16.0 0 0 1 113.54 191.04 Z" class="wedge angle geom-overlay" />
-    <path id="hl-ang-GBA" data-ref="&lt; G B A )" data-aliases="&lt; A B G )" d="M 99.00 34.00 L 99.50 51.99 A 18.0 18.0 0 0 1 84.72 44.96 Z" class="wedge angle geom-overlay" />
-    <path id="hl-arc-BGH" data-ref="&lt; B G H )" data-aliases="&lt; H G B )" d="M 90.25 188.66 A 16 16 0 0 1 88.58 172.08 A 16 16 0 0 1 102.56 163.01" class="geom-ang-arc geom-overlay" />
-    <path id="hl-arc-BGK" data-ref="&lt; B G K )" data-aliases="&lt; K G B )" d="M 102.56 163.01 A 16 16 0 0 1 117.9 173.17 A 16 16 0 0 1 113.54 191.04" class="geom-ang-arc geom-overlay" />
-    <path id="hl-arc-GBA" data-ref="&lt; G B A )" data-aliases="&lt; A B G )" d="M 99.5 51.99 A 18 18 0 0 1 91.26 50.25 A 18 18 0 0 1 84.72 44.96" class="geom-ang-arc geom-overlay" />
+    <path id="hl-seg-AB" data-ref="/ A B /" data-aliases="/ B A /" class="geom-line geom-overlay" d="M 26.5 15 L 26.5 81.5 L 26.5 148" />
+    <path id="hl-seg-AC" data-ref="/ A C /" data-aliases="/ C A /" class="geom-line geom-overlay" d="M 26.5 15 L 26.5 60.5 L 26.5 106" />
+    <path id="hl-seg-CB" data-ref="/ C B /" data-aliases="/ B C /" class="geom-line geom-overlay" d="M 26.5 106 L 26.5 127 L 26.5 148" />
+    <polyline id="hl-sec-ACB" data-ref="/ A C B /" data-aliases="/ B C A / | } A C B { | } B C A {" points="26.5,15.0 26.5,106.0 26.5,148.0" class="geom-line geom-overlay" />
   </g>
   <g id="points">
-    <circle id="el-pt-A" data-ref="A" data-type="point" cx="56" cy="67" r="3.2" class="geom-point" />
-    <circle id="el-pt-B" data-ref="B" data-type="point" cx="99" cy="34" r="3.2" class="geom-point" />
-    <circle id="el-pt-C" data-ref="C" data-type="point" cx="129" cy="67" r="3.2" class="geom-point" />
-    <circle id="el-pt-D" data-ref="D" data-type="point" cx="68" cy="184" r="3.2" class="geom-point" />
-    <circle id="el-pt-E" data-ref="E" data-type="point" cx="126" cy="138" r="3.2" class="geom-point" />
-    <circle id="el-pt-F" data-ref="F" data-type="point" cx="178" cy="199" r="3.2" class="geom-point" />
-    <circle id="el-pt-G" data-ref="G" data-type="point" cx="103" cy="179" r="3.2" class="geom-point" />
-    <circle id="el-pt-H" data-ref="H" data-type="point" cx="70" cy="204" r="3.2" class="geom-point" />
-    <circle id="el-pt-K" data-ref="K" data-type="point" cx="124" cy="203" r="3.2" class="geom-point" />
+    <circle id="el-pt-A" data-ref="A" data-type="point" cx="26.5" cy="15.0" r="2.2" class="geom-point" />
+    <circle id="el-pt-C" data-ref="C" data-type="point" cx="26.5" cy="106.0" r="2.2" class="geom-point" />
+    <circle id="el-pt-B" data-ref="B" data-type="point" cx="26.5" cy="148.0" r="2.2" class="geom-point" />
   </g>
   <g id="labels">
-    <text id="lbl-B" data-ref="B" x="100" y="30" text-anchor="middle" class="geom-label">B</text>
-    <text id="lbl-A" data-ref="A" x="49" y="70" text-anchor="end" class="geom-label">A</text>
-    <text id="lbl-C" data-ref="C" x="134" y="65" text-anchor="start" class="geom-label">C</text>
-    <text id="lbl-E" data-ref="E" x="129" y="135" text-anchor="middle" class="geom-label">E</text>
-    <text id="lbl-G" data-ref="G" x="108" y="177" text-anchor="start" class="geom-label">G</text>
-    <text id="lbl-D" data-ref="D" x="62" y="194" text-anchor="end" class="geom-label">D</text>
-    <text id="lbl-H" data-ref="H" x="63" y="211" text-anchor="end" class="geom-label">H</text>
-    <text id="lbl-K" data-ref="K" x="128" y="209" text-anchor="start" class="geom-label">K</text>
-    <text id="lbl-F" data-ref="F" x="183" y="204" text-anchor="start" class="geom-label">F</text>
+    <text id="lbl-A" data-ref="A" x="15.0" y="19.0" class="geom-label" text-anchor="middle" dominant-baseline="central">A</text>
+    <text id="lbl-C" data-ref="C" x="15.0" y="106.0" class="geom-label" text-anchor="middle" dominant-baseline="central">C</text>
+    <text id="lbl-B" data-ref="B" x="15.0" y="144.0" class="geom-label" text-anchor="middle" dominant-baseline="central">B</text>
   </g>
 </svg>

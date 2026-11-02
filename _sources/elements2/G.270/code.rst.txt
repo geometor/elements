@@ -1,17 +1,18 @@
 :canonical_id: G.270
-:original_id: IX.1
+:original_id: VII.16
+:title: G.270 numbers multiplying make
 :volume: II
-:book: IX
+:book: VII
 :type: prop
 
-G.270 — Code
-============
+G.270 numbers multiplying make — Code
+=====================================
 
-.. rubric:: `IX.1 <https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/01/>`_
+.. rubric:: `VII.16 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/16/>`_
 
 .. enunciation::
 
-   If two similar plane numbers by multiplying one another make some number, the product is square.
+   If two :term:`numbers <G.248>` by :term:`multiplying <G.269>` one another make certain numbers, the numbers so produced are equal.
 
 .. picture:: g1.svg
 

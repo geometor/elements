@@ -1,17 +1,18 @@
 :canonical_id: G.322
-:original_id: X.9
-:volume: III
-:book: X
+:original_id: VIII.20
+:title: G.322 mean proportional number
+:volume: II
+:book: VIII
 :type: prop
 
-G.322 — Code
-============
+G.322 mean proportional number — Code
+=====================================
 
-.. rubric:: `X.9 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/009/>`_
+.. rubric:: `VIII.20 <https://geometor.github.io/euclid/heath/volume_II/book_viii/propositions/20/>`_
 
 .. enunciation::
 
-   The squares on straight lines commensurable in length have to one another the ratio which a square number has to a square number; and squares which have to one another the ratio which a square number has to a square number will also have their sides commensurable in length. But the squares on straight lines incommensurable in length have not to one another the ratio which a square number has to a square number; and squares which have not to one another the ratio which a square number has to a square number will not have their sides commensurable in length either.
+   If one mean :term:`proportional <G.180>` :term:`number <G.248>` fall between two numbers, the numbers is :term:`similar plane numbers <G.318>`.
 
 .. picture:: g1.svg
 

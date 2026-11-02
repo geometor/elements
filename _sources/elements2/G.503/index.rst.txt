@@ -1,81 +1,85 @@
 :order: 503
 :number: 503
 :canonical_id: G.503
-:original_id: XII.16
+:original_id: XI.2
+:title: G.503 segments cut plane
 :volume: III
-:book: XII
+:book: XI
 :type: prop
-:subtype: problem
-:categories: problem, construction, solid-geometry, method-of-exhaustion
-:category: problem, construction, solid-geometry, method-of-exhaustion
-:tags: book-xii, point, segment, circle, equilateral, tangent, inscribed, number, even-number, equality
-:dependencies: G.11, G.78, G.94, G.313
-:excerpt: Given two circles about the same centre, to inscribe in the greater circle an equilateral polygon with an even number of sides which does not touch the lesser circle.
+:subtype: theorem
+:categories: theorem, proof, solid-geometry
+:category: theorem, proof, solid-geometry
+:tags: book-xi, point, segment, triangle, quadrilateral, straight-line, plane-surface, trilateral, part-aliquot, plane
+:dependencies: G.4, G.7, G.11, G.502
+:excerpt: If two segments cut one another, they are in one plane, and every triangle is in one plane.
 
 .. _G.503:
-.. _XII.16:
+.. _XI.2:
 
-G.503
-=====
+G.503 segments cut plane
+========================
 
-.. rubric:: `XII.16 <https://geometor.github.io/euclid/heath/volume_III/book_xii/propositions/16/>`_
+.. rubric:: `XI.2 <https://geometor.github.io/euclid/heath/volume_III/book_xi/propositions/02/>`_
 
 .. enunciation::
 
-   Given two circles about the same centre, to inscribe in the greater circle an equilateral polygon with an even number of sides which does not touch the lesser circle.
+   If two :term:`segments <G.4>` cut one another, they are in one :term:`plane <G.7>`, and every :term:`triangle <G.11>` is in one plane.
 
-.. signature:: problem
+.. signature:: theorem
 
-   | :fn:`circles_centre_inscribe <G.503>`\ (:g:`( A B C D ) <g1:( A B C D )>`, :g:`( E F G H ) <g1:( E F G H )>`, :g:`K <g1:K>`) → :g:`/ L N / <g1:/ L N />`, :g:`/ L D / <g1:/ L D />`
-   | **given** :g:`( A B C D ) <g1:( A B C D )>`, :g:`( E F G H ) <g1:( E F G H )>` about the same center :g:`K <g1:K>`
-   | **construct** :g:`/ L N / <g1:/ L N />` does not touch :g:`( E F G H ) <g1:( E F G H )>` ; therefore :g:`/ L D / <g1:/ L D />`, :g:`/ D N / <g1:/ D N />` are far from touching :g:`( E F G H ) <g1:( E F G H )>`
+   | :fn:`segments_cut_plane <G.503>`\ ()
+   | **prove** :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` are in one plane, and every triangle is in one plane
 
 .. picture:: g1.svg
-   :alt: Proposition 16
+   :alt: Book XI, Proposition 2
 
-.. step:: given
+.. step:: intersect
 
-   :g:`( A B C D ) <g1:( A B C D )>`, :g:`( E F G H ) <g1:( E F G H )>` about the same center :g:`K <g1:K>`
-
-.. step:: construct
-
-   Let :g:`/ B K D / <g1:/ B K D />` be drawn through the center :g:`K <g1:K>`
+   Let :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` cut one another at :g:`E <g1:E>`
 
 .. step:: construct
 
-   From :g:`G <g1:G>` let :g:`/ G A / <g1:/ G A />` be drawn at right angles to :g:`/ B D / <g1:/ B D />` and carried through to :g:`C <g1:C>`
+   :fn:`segment <G.13>`\ () → :g:`F <g1:F>`, :fn:`segment <G.13>`\ () → :g:`G <g1:G>`, :fn:`segment <G.13>`\ (:g:`E <g1:E>`, :g:`C <g1:C>`) → :g:`/ E C / <g1:/ E C />`, :fn:`segment <G.13>`\ (:g:`E <g1:E>`, :g:`B <g1:B>`) → :g:`/ E B / <g1:/ E B />`, :fn:`segment <G.13>`\ (:g:`C <g1:C>`, :g:`B <g1:B>`) → :g:`/ C B / <g1:/ C B />`, :fn:`segment <G.13>`\ (:g:`F <g1:F>`, :g:`G <g1:G>`) → :g:`/ F G / <g1:/ F G />`
 
-.. step:: assert ∵ straight_line_drawn <G.94>
+.. step:: construct
 
-   Therefore :g:`/ A C / <g1:/ A C />` touches :g:`( E F G H ) <g1:( E F G H )>`.
-
-.. step:: assert ∵ unequal_magnitudes_set <G.313>
-
-   Bisecting the circumference :g:`( B A D ) <g1:( B A D )>`, bisecting the half of it, and doing this continually, we shall leave a circumference less than :g:`( A D ) <g1:( A D )>`
+   Let :g:`/ F H / <g1:/ F H />`, :g:`/ G K / <g1:/ G K />` be drawn across
 
 .. step:: assert
 
-   Let such be left, and let it be :g:`( L D ) <g1:( L D )>`
-
-.. step:: construct
-
-   From :g:`L <g1:L>` let :g:`/ L M / <g1:/ L M />` be drawn perpendicular to :g:`/ B D / <g1:/ B D />` and carried through to :g:`N <g1:N>`
-
-.. step:: construct
-
-   :fn:`segment <G.3>`\ (:g:`L <g1:L>`, :g:`D <g1:D>`) → :g:`/ L D / <g1:/ L D />`, :fn:`segment <G.3>`\ (:g:`D <g1:D>`, :g:`N <g1:N>`) → :g:`/ D N / <g1:/ D N />`
-
-.. step:: assert ∵ circle_straight_line, sas_congruence <G.78, G.11>
-
-   Therefore :g:`/ L D / <g1:/ L D />` is :eq:`equal <g1:/ L D / = g1:/ D N />` to :g:`/ D N / <g1:/ D N />`.
+   I say first that :g:`< E C B > <g1:< E C B >>` is in one plane.
 
 .. step:: assert
 
-   Since :g:`/ L N / <g1:/ L N />` is parallel to :g:`/ A C / <g1:/ A C />`, and :g:`/ A C / <g1:/ A C />` touches :g:`( E F G H ) <g1:( E F G H )>`,
+   If :term:`part of <G.253>` :g:`< E C B > <g1:< E C B >>`, either :g:`< F H C > <g1:< F H C >>` or :g:`< G B K > <g1:< G B K >>`, is in the plane of reference, and the rest in another,
+
+.. step:: assert
+
+   A part also of one of :g:`/ E C / <g1:/ E C />`, :g:`/ E B / <g1:/ E B />` will be in the plane of reference, and a part in another.
+
+.. step:: assert
+
+   But, if the part :g:`< F C B G > <g1:< F C B G >>` of :g:`< E C B > <g1:< E C B >>` be in the plane of reference, and the rest in another,
+
+.. step:: assert
+
+   A part also of both :g:`/ E C / <g1:/ E C />`, :g:`/ E B / <g1:/ E B />` will be in the plane of reference and a part in another:
+
+.. step:: assert ∵ part_segment_plane <G.502>
+
+   Which was proved absurd.
+
+.. step:: assert
+
+   Therefore :g:`< E C B > <g1:< E C B >>` is in one plane.
+
+.. step:: assert ∵ part_segment_plane <G.502>
+
+   But, in whatever plane :g:`< E C B > <g1:< E C B >>` is, in that plane also is each of :g:`/ E C / <g1:/ E C />`, :g:`/ E B / <g1:/ E B />`, and, in whatever plane each of :g:`/ E C / <g1:/ E C />`, :g:`/ E B / <g1:/ E B />` is, in that plane are :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` also.
 
 .. step:: conclude
 
-   Therefore :g:`/ L N / <g1:/ L N />` does not touch :g:`( E F G H ) <g1:( E F G H )>` ; therefore :g:`/ L D / <g1:/ L D />`, :g:`/ D N / <g1:/ D N />` are far from touching :g:`( E F G H ) <g1:( E F G H )>`.
+   Therefore :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` are in one plane, and every triangle is in one plane.
 
 Dependency Graph
 ----------------
@@ -87,106 +91,67 @@ Dependency Graph
      node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11, color="#d6d3cd", fontcolor="#ffffff"];
      edge [color="#8c857b", fontcolor="#8c857b", arrowsize=0.75];
      rankdir="TB";
-     "G.1" [label="G.1", tooltip="G.1 (I.cn.1): Things equal to the same thing are equal to one another.", fillcolor="#442222", URL="../G.1/index.html", target="_top"];
-     "G.2" [label="G.2", tooltip="G.2 (I.def.15): A circle is a plane figure contained by one line such that all segments falling upon it from its center are equal.", fillcolor="#224422", URL="../G.2/index.html", target="_top"];
-     "G.3" [label="G.3", tooltip="G.3 (I.post.1): Construct a segment between any two points.", fillcolor="#444422", URL="../G.3/index.html", target="_top"];
-     "G.4" [label="G.4", tooltip="G.4 (I.post.3): Construct a circle with any center and radius.", fillcolor="#444422", URL="../G.4/index.html", target="_top"];
-     "G.5" [label="G.5", tooltip="G.5 (I.1): Construct an equilateral triangle on a given finite segment.", fillcolor="#222244", URL="../G.5/index.html", target="_top"];
-     "G.6" [label="G.6", tooltip="G.6 (I.cn.3): If equals are subtracted from equals, the remainders are equal.", fillcolor="#442222", URL="../G.6/index.html", target="_top"];
-     "G.7" [label="G.7", tooltip="G.7 (I.post.2): Extend a finite segment continuously in a straight line.", fillcolor="#444422", URL="../G.7/index.html", target="_top"];
-     "G.8" [label="G.8", tooltip="G.8 (I.2): Construct at a given point a segment equal to a given segment.", fillcolor="#222244", URL="../G.8/index.html", target="_top"];
-     "G.9" [label="G.9", tooltip="G.9 (I.3): Cut off from the greater of two unequal segments a segment equal to the less.", fillcolor="#222244", URL="../G.9/index.html", target="_top"];
-     "G.10" [label="G.10", tooltip="G.10 (I.cn.4): Things that coincide with one another are equal.", fillcolor="#442222", URL="../G.10/index.html", target="_top"];
-     "G.11" [label="G.11", tooltip="G.11 (I.4): Triangles with two sides and the included angle equal are congruent (SAS).", fillcolor="#222244", URL="../G.11/index.html", target="_top"];
-     "G.12" [label="G.12", tooltip="G.12 (I.5): In an isosceles triangle, the angles at the base are equal, and if the equal sides are extended, the angles under the base are equal.", fillcolor="#222244", URL="../G.12/index.html", target="_top"];
-     "G.14" [label="G.14", tooltip="G.14 (I.7): On the same segment and on the same side, there cannot be constructed two distinct triangles with both pairs of conterminous sides equal.", fillcolor="#222244", URL="../G.14/index.html", target="_top"];
-     "G.15" [label="G.15", tooltip="G.15 (I.8): Triangles with all three corresponding sides equal have their corresponding angles equal (SSS).", fillcolor="#222244", URL="../G.15/index.html", target="_top"];
-     "G.16" [label="G.16", tooltip="G.16 (I.9): Bisect a given angle.", fillcolor="#222244", URL="../G.16/index.html", target="_top"];
-     "G.17" [label="G.17", tooltip="G.17 (I.10): Bisect a given finite segment.", fillcolor="#222244", URL="../G.17/index.html", target="_top"];
-     "G.18" [label="G.18", tooltip="G.18 (I.def.10): When a straight line standing on a straight line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing line is perpendicular to that on which...", fillcolor="#224422", URL="../G.18/index.html", target="_top"];
-     "G.19" [label="G.19", tooltip="G.19 (I.11): Construct a line at right angles to a given line from a given point on it.", fillcolor="#222244", URL="../G.19/index.html", target="_top"];
-     "G.21" [label="G.21", tooltip="G.21 (I.cn.2): If equals are added to equals, the wholes are equal.", fillcolor="#442222", URL="../G.21/index.html", target="_top"];
-     "G.22" [label="G.22", tooltip="G.22 (I.13): A ray standing on a line makes either two right angles or adjacent angles summing to two right angles.", fillcolor="#222244", URL="../G.22/index.html", target="_top"];
-     "G.23" [label="G.23", tooltip="G.23 (I.post.4): All right angles are equal.", fillcolor="#444422", URL="../G.23/index.html", target="_top"];
-     "G.25" [label="G.25", tooltip="G.25 (I.15): Intersecting lines make their vertical angles equal.", fillcolor="#222244", URL="../G.25/index.html", target="_top"];
-     "G.26" [label="G.26", tooltip="G.26 (I.cn.5): The whole is greater than the part.", fillcolor="#442222", URL="../G.26/index.html", target="_top"];
-     "G.27" [label="G.27", tooltip="G.27 (I.16): In any triangle, if one side is extended, the exterior angle is greater than either opposite interior angle.", fillcolor="#222244", URL="../G.27/index.html", target="_top"];
-     "G.28" [label="G.28", tooltip="G.28 (I.17): In any triangle, the sum of any two angles is less than two right angles.", fillcolor="#222244", URL="../G.28/index.html", target="_top"];
-     "G.29" [label="G.29", tooltip="G.29 (I.18): In any triangle, the greater side subtends the greater angle.", fillcolor="#222244", URL="../G.29/index.html", target="_top"];
-     "G.30" [label="G.30", tooltip="G.30 (I.19): In any triangle, the greater angle is subtended by the greater side.", fillcolor="#222244", URL="../G.30/index.html", target="_top"];
-     "G.37" [label="G.37", tooltip="G.37 (I.26): Triangles with two angles and one corresponding side equal are congruent (ASA / AAS).", fillcolor="#222244", URL="../G.37/index.html", target="_top"];
-     "G.78" [label="G.78", tooltip="G.78 (III.3): If in a circle a straight line through the centre bisect a straight line not through the centre, it also cuts it at right angles; and if it cut it at right angles, it also bisects ...", fillcolor="#222244", URL="../G.78/index.html", target="_top"];
-     "G.94" [label="G.94", tooltip="G.94 (III.16): The straight line drawn at right angles to the diameter of a circle from its extremity will fall outside the circle, and into the space between the straight line and the circumfere...", fillcolor="#222244", URL="../G.94/index.html", target="_top"];
-     "G.143" [label="G.143", tooltip="G.143 (V.def.4): Magnitudes are said tohave a ratio to one another which are capable, when multiplied, of exceeding one another.", fillcolor="#224422", URL="../G.143/index.html", target="_top"];
-     "G.313" [label="G.313", tooltip="G.313 (X.1): Two unequal magnitudes being set out, if from the greater there be subtracted a magnitude greater than its half, and from that which is left a magnitude greater than its half, and ...", fillcolor="#222244", URL="../G.313/index.html", target="_top"];
-     "G.503" [label="G.503", tooltip="G.503 (XII.16): Given two circles about the same centre, to inscribe in the greater circle an equilateral polygon with an even number of sides which does not touch the lesser circle.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
-     "G.5" -> "G.1";
-     "G.8" -> "G.1";
-     "G.9" -> "G.1";
-     "G.22" -> "G.1";
-     "G.25" -> "G.1";
-     "G.5" -> "G.2";
-     "G.9" -> "G.2";
-     "G.5" -> "G.3";
+     "G.1" [label="G.1", tooltip="G.1 (I.def.1): A point A is that which has no part.", fillcolor="#224422", URL="../G.1/index.html", target="_top"];
+     "G.2" [label="G.2", tooltip="G.2 (I.def.2): A line [ A B ] is a projection of a relationship of two points A, B.", fillcolor="#224422", URL="../G.2/index.html", target="_top"];
+     "G.3" [label="G.3", tooltip="G.3 (I.def.3): The extremities of a segment / A B / are points A, B.", fillcolor="#224422", URL="../G.3/index.html", target="_top"];
+     "G.4" [label="G.4", tooltip="G.4 (I.def.4): A segment / A B / is a portion of a line [ A B ] between two points A, B on the line.", fillcolor="#224422", URL="../G.4/index.html", target="_top"];
+     "G.5" [label="G.5", tooltip="G.5 (I.def.5): A surface is that which has length and breadth only.", fillcolor="#224422", URL="../G.5/index.html", target="_top"];
+     "G.6" [label="G.6", tooltip="G.6 (I.def.6): The extremities of a surface are lines or arcs.", fillcolor="#224422", URL="../G.6/index.html", target="_top"];
+     "G.7" [label="G.7", tooltip="G.7 (I.def.7): A plane surface lies evenly with the lines on itself.", fillcolor="#224422", URL="../G.7/index.html", target="_top"];
+     "G.8" [label="G.8", tooltip="G.8 (I.def.13): A boundary is the extremity of anything.", fillcolor="#224422", URL="../G.8/index.html", target="_top"];
+     "G.9" [label="G.9", tooltip="G.9 (I.def.14): A figure is that which is contained by any boundary or boundaries.", fillcolor="#224422", URL="../G.9/index.html", target="_top"];
+     "G.10" [label="G.10", tooltip="G.10 (I.def.15): A circle ( A B ) is a plane figure contained by one arc defined by a center A and a point B establishing its defining radius / A B /, such that all segments / A B /, / A C /, / A D...", fillcolor="#224422", URL="../G.10/index.html", target="_top"];
+     "G.11" [label="G.11", tooltip="G.11 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
+     "G.14" [label="G.14", tooltip="G.14 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.", fillcolor="#224422", URL="../G.14/index.html", target="_top"];
+     "G.61" [label="G.61", tooltip="G.61 (I.def.17): A diameter of a circle is any segment drawn through the center and terminated in both directions by the arc of the circle; it bisects the circle.", fillcolor="#224422", URL="../G.61/index.html", target="_top"];
+     "G.169" [label="G.169", tooltip="G.169 (V.def.1): A magnitude is apart of a magnitude, the less of the greater, when it measures the greater.", fillcolor="#224422", URL="../G.169/index.html", target="_top"];
+     "G.247" [label="G.247", tooltip="G.247 (VII.def.1): Anunit is that by virtue of which each of the things that exist is called one.", fillcolor="#224422", URL="../G.247/index.html", target="_top"];
+     "G.248" [label="G.248", tooltip="G.248 (VII.def.2): Anumber is a multitude composed ofunits.", fillcolor="#224422", URL="../G.248/index.html", target="_top"];
+     "G.253" [label="G.253", tooltip="G.253 (VII.def.3): Anumber is apart of a number, the less of the greater, when itmeasures the greater;", fillcolor="#224422", URL="../G.253/index.html", target="_top"];
+     "G.502" [label="G.502", tooltip="G.502 (XI.1): A part of a segment cannot be in the plane of reference and a part in a plane more elevated.", fillcolor="#222244", URL="../G.502/index.html", target="_top"];
+     "G.503" [label="G.503", tooltip="G.503 (XI.2): If two segments cut one another, they are in one plane, and every triangle is in one plane.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.2" -> "G.1";
+     "G.3" -> "G.1";
+     "G.4" -> "G.1";
+     "G.10" -> "G.1";
+     "G.14" -> "G.1";
+     "G.3" -> "G.2";
+     "G.4" -> "G.2";
+     "G.6" -> "G.2";
+     "G.4" -> "G.3";
      "G.8" -> "G.3";
-     "G.12" -> "G.3";
-     "G.14" -> "G.3";
-     "G.27" -> "G.3";
-     "G.5" -> "G.4";
-     "G.8" -> "G.4";
-     "G.9" -> "G.4";
-     "G.8" -> "G.5";
-     "G.17" -> "G.5";
-     "G.19" -> "G.5";
-     "G.8" -> "G.6";
-     "G.25" -> "G.6";
-     "G.8" -> "G.7";
-     "G.12" -> "G.7";
-     "G.27" -> "G.7";
-     "G.28" -> "G.7";
+     "G.7" -> "G.4";
+     "G.10" -> "G.4";
+     "G.11" -> "G.4";
+     "G.61" -> "G.4";
+     "G.502" -> "G.4";
+     "G.503" -> "G.4";
+     "G.6" -> "G.5";
+     "G.7" -> "G.5";
+     "G.10" -> "G.6";
+     "G.10" -> "G.7";
+     "G.502" -> "G.7";
+     "G.503" -> "G.7";
      "G.9" -> "G.8";
-     "G.12" -> "G.9";
-     "G.16" -> "G.9";
-     "G.19" -> "G.9";
-     "G.27" -> "G.9";
-     "G.29" -> "G.9";
-     "G.11" -> "G.10";
-     "G.12" -> "G.11";
-     "G.17" -> "G.11";
-     "G.27" -> "G.11";
-     "G.37" -> "G.11";
+     "G.10" -> "G.9";
+     "G.14" -> "G.10";
+     "G.61" -> "G.10";
+     "G.502" -> "G.10";
      "G.503" -> "G.11";
-     "G.14" -> "G.12";
-     "G.30" -> "G.12";
-     "G.78" -> "G.12";
-     "G.94" -> "G.12";
-     "G.15" -> "G.14";
-     "G.16" -> "G.15";
-     "G.19" -> "G.15";
-     "G.78" -> "G.15";
-     "G.17" -> "G.16";
-     "G.27" -> "G.17";
-     "G.19" -> "G.18";
-     "G.22" -> "G.18";
-     "G.78" -> "G.18";
-     "G.22" -> "G.19";
-     "G.22" -> "G.21";
-     "G.25" -> "G.22";
-     "G.28" -> "G.22";
-     "G.25" -> "G.23";
-     "G.27" -> "G.25";
-     "G.27" -> "G.26";
-     "G.29" -> "G.27";
-     "G.37" -> "G.27";
-     "G.94" -> "G.28";
-     "G.30" -> "G.29";
-     "G.94" -> "G.30";
-     "G.78" -> "G.37";
-     "G.503" -> "G.78";
-     "G.503" -> "G.94";
-     "G.313" -> "G.143";
-     "G.503" -> "G.313";
+     "G.61" -> "G.14";
+     "G.502" -> "G.14";
+     "G.502" -> "G.61";
+     "G.253" -> "G.169";
+     "G.248" -> "G.247";
+     "G.253" -> "G.248";
+     "G.502" -> "G.253";
+     "G.503" -> "G.502";
    }
+
+Required for
+------------
+
+:ref:`G.508 <G.508>`, :ref:`G.510 <G.510>`, :ref:`G.511 <G.511>`, :ref:`G.512 <G.512>`, :ref:`G.513 <G.513>`, :ref:`G.514 <G.514>`, :ref:`G.518 <G.518>`, :ref:`G.522 <G.522>`, :ref:`G.528 <G.528>`, :ref:`G.530 <G.530>`, :ref:`G.531 <G.531>`, :ref:`G.532 <G.532>`, :ref:`G.541 <G.541>`, :ref:`G.542 <G.542>`, :ref:`G.543 <G.543>`, :ref:`G.544 <G.544>`, :ref:`G.545 <G.545>`, :ref:`G.546 <G.546>`, :ref:`G.547 <G.547>`, :ref:`G.549 <G.549>`, :ref:`G.550 <G.550>`, :ref:`G.554 <G.554>`, :ref:`G.555 <G.555>`, :ref:`G.556 <G.556>`, :ref:`G.557 <G.557>`, :ref:`G.558 <G.558>`, :ref:`G.559 <G.559>`, :ref:`G.560 <G.560>`, :ref:`G.563 <G.563>`, :ref:`G.565 <G.565>`, :ref:`G.570 <G.570>`, :ref:`G.571 <G.571>`, :ref:`G.572 <G.572>`, :ref:`G.573 <G.573>`, :ref:`G.577 <G.577>`, :ref:`G.578 <G.578>`, :ref:`G.592 <G.592>`, :ref:`G.594 <G.594>`, :ref:`G.597 <G.597>`, :ref:`G.600 <G.600>`, :ref:`G.601 <G.601>`
 
 .. toctree::
    :hidden:

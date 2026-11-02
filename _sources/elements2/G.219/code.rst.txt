@@ -1,17 +1,18 @@
 :canonical_id: G.219
-:original_id: VII.19
+:original_id: VI.9
+:title: G.219 cut nth part
 :volume: II
-:book: VII
+:book: VI
 :type: prop
 
-G.219 — Code
-============
+G.219 cut nth part — Code
+=========================
 
-.. rubric:: `VII.19 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/19/>`_
+.. rubric:: `VI.9 <https://geometor.github.io/euclid/heath/volume_II/book_vi/propositions/09/>`_
 
 .. enunciation::
 
-   If four numbers be proportional, the number produced from the first and fourth will equals the number produced from the second and third; and, if the number produced from the first and fourth equals that produced from the second and third, the four numbers is proportional.
+   From a given :term:`segment <G.4>` to cut off a prescribed part.
 
 .. picture:: g1.svg
 

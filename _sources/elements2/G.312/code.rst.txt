@@ -1,17 +1,18 @@
 :canonical_id: G.312
-:original_id: IX.36
+:original_id: VIII.12
+:title: G.312 cube numbers there
 :volume: II
-:book: IX
+:book: VIII
 :type: prop
 
-G.312 — Code
-============
+G.312 cube numbers there — Code
+===============================
 
-.. rubric:: `IX.36 <https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/36/>`_
+.. rubric:: `VIII.12 <https://geometor.github.io/euclid/heath/volume_II/book_viii/propositions/12/>`_
 
 .. enunciation::
 
-   If as many numbers as we please beginning from an unit be set out continuously in double proportion, until the sum of all becomes prime, and if the sum multiplied into the last make some number, the product is perfect.
+   Between two :term:`cube numbers <G.311>` there are two mean :term:`proportional <G.180>` :term:`numbers <G.248>`, and the cube has to the cube the :term:`ratio <G.173>` triplicate of that which the side has to the side.
 
 .. picture:: g1.svg
 

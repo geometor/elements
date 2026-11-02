@@ -1,17 +1,18 @@
 :canonical_id: G.436
-:original_id: X.109
+:original_id: X.56
+:title: G.436 area contained rational
 :volume: III
 :book: X
 :type: prop
 
-G.436 — Code
-============
+G.436 area contained rational — Code
+====================================
 
-.. rubric:: `X.109 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/109/>`_
+.. rubric:: `X.56 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/056/>`_
 
 .. enunciation::
 
-   If from a medial area a rational area be subtracted, there arise two other irrational straight lines, either a first apotome of a medial straight line or a straight line which produces with a rational area a medial whole.
+   If an area be contained by a :term:`rational <G.391>` :term:`segment <G.4>` and the :term:`third binomial <G.426>`, the "side" of the area is the irrational segment called a second bimedial.
 
 .. picture:: g1.svg
 

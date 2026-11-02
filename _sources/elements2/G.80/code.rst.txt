@@ -1,17 +1,18 @@
 :canonical_id: G.80
-:original_id: III.5
-:volume: II
-:book: III
+:original_id: I.48
+:title: G.80 converse of the Pythagorean theorem
+:volume: I
+:book: I
 :type: prop
 
-G.80 — Code
-===========
+G.80 converse of the Pythagorean theorem — Code
+===============================================
 
-.. rubric:: `III.5 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/05/>`_
+.. rubric:: `I.48 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/48/>`_
 
 .. enunciation::
 
-   If two circles cut one another, they will not have the same centre.
+   If the :term:`square <G.63>` on one side of a :term:`triangle <G.11>` equals the sum of the squares on the other two sides, the :term:`angle <G.22>` contained by those two sides is right.
 
 .. picture:: g1.svg
 

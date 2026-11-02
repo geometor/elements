@@ -1,17 +1,18 @@
 :canonical_id: G.177
-:original_id: VI.14
+:original_id: V.4
+:title: G.177 magnitude ratio equimultiples
 :volume: II
-:book: VI
+:book: V
 :type: prop
 
-G.177 — Code
-============
+G.177 magnitude ratio equimultiples — Code
+==========================================
 
-.. rubric:: `VI.14 <https://geometor.github.io/euclid/heath/volume_II/book_vi/propositions/14/>`_
+.. rubric:: `V.4 <https://geometor.github.io/euclid/heath/volume_II/book_v/propositions/04/>`_
 
 .. enunciation::
 
-   In equal and equiangular parallelograms the sides about the equal angles are reciprocally proportional; and equiangular parallelograms in which the sides about the equal angles are reciprocally proportional are equal.
+   If a first magnitude have to a second the :term:`same ratio <G.176>` as a third to a fourth, any :term:`equimultiples <G.170>` whatever of the first and third will also have the same ratio to any equimultiples whatever of the second and fourth respectively, taken in corresponding order.
 
 .. picture:: g1.svg
 

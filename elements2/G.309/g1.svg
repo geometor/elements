@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 2 174 44" width="174" height="44" class="euclid-graphic" data-graphic-id="g1" data-graphic="g1" data-proposition="IX.34">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-6 -6 194 118" width="194" height="118" class="euclid-graphic" data-graphic-id="g1" data-graphic="g1" data-proposition="VIII.11">
   <style>
     :root {
       --geom-fg: #18181b;
@@ -253,14 +253,26 @@
   <g id="elements">
   </g>
   <g id="graphics">
-    <path id="el-mag-A" data-ref="A" data-aliases="/ A /" data-type="segment" class="geom-line" d="M 10 14 L 85 14 L 160 14" />
+    <path id="el-mag-A" data-ref="A" data-aliases="/ A /" data-type="segment" class="geom-line" d="M 26 15 L 57.5 15 L 89 15" />
+    <path id="el-mag-B" data-ref="B" data-aliases="/ B /" data-type="segment" class="geom-line" d="M 23 41 L 94 41 L 165 41" />
+    <path id="el-mag-C" data-ref="C" data-aliases="/ C /" data-type="segment" class="geom-line" d="M 24 65 L 41 65 L 58 65" />
+    <path id="el-mag-D" data-ref="D" data-aliases="/ D /" data-type="segment" class="geom-line" d="M 130 65 L 153 65 L 176 65" />
+    <path id="el-mag-E" data-ref="E" data-aliases="/ E /" data-type="segment" class="geom-line" d="M 24 91 L 71 91 L 118 91" />
   </g>
   <g id="highlights" style="pointer-events: none;">
-    <path id="hl-mag-A" data-ref="A" data-aliases="/ A /" class="geom-line geom-overlay" d="M 10 14 L 85 14 L 160 14" />
+    <path id="hl-mag-A" data-ref="A" data-aliases="/ A /" class="geom-line geom-overlay" d="M 26 15 L 57.5 15 L 89 15" />
+    <path id="hl-mag-B" data-ref="B" data-aliases="/ B /" class="geom-line geom-overlay" d="M 23 41 L 94 41 L 165 41" />
+    <path id="hl-mag-C" data-ref="C" data-aliases="/ C /" class="geom-line geom-overlay" d="M 24 65 L 41 65 L 58 65" />
+    <path id="hl-mag-D" data-ref="D" data-aliases="/ D /" class="geom-line geom-overlay" d="M 130 65 L 153 65 L 176 65" />
+    <path id="hl-mag-E" data-ref="E" data-aliases="/ E /" class="geom-line geom-overlay" d="M 24 91 L 71 91 L 118 91" />
   </g>
   <g id="points">
   </g>
   <g id="labels">
-    <text id="lbl-A" data-ref="A" x="85.00" y="25.00" class="geom-label" text-anchor="middle" dominant-baseline="central">A</text>
+    <text id="lbl-A" data-ref="A" x="15.00" y="15.00" class="geom-label" text-anchor="middle" dominant-baseline="central">A</text>
+    <text id="lbl-B" data-ref="B" x="12.00" y="41.00" class="geom-label" text-anchor="middle" dominant-baseline="central">B</text>
+    <text id="lbl-C" data-ref="C" x="13.00" y="65.00" class="geom-label" text-anchor="middle" dominant-baseline="central">C</text>
+    <text id="lbl-D" data-ref="D" x="119.00" y="65.00" class="geom-label" text-anchor="middle" dominant-baseline="central">D</text>
+    <text id="lbl-E" data-ref="E" x="13.00" y="91.00" class="geom-label" text-anchor="middle" dominant-baseline="central">E</text>
   </g>
 </svg>

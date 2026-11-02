@@ -1,17 +1,18 @@
 :canonical_id: G.94
-:original_id: III.16
-:volume: II
-:book: III
+:original_id: II.12
+:title: G.94 law of cosines obtuse
+:volume: I
+:book: II
 :type: prop
 
-G.94 — Code
-===========
+G.94 law of cosines obtuse — Code
+=================================
 
-.. rubric:: `III.16 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/16/>`_
+.. rubric:: `II.12 <https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/12/>`_
 
 .. enunciation::
 
-   The straight line drawn at right angles to the diameter of a circle from its extremity will fall outside the circle, and into the space between the straight line and the circumference another straight line cannot be interposed; further the angle of the semicircle is greater, and the remaining angle less, than any acute angle.
+   In :term:`obtuse-angled triangles <G.78>` the :term:`square <G.63>` on the side subtending the :term:`obtuse angle <G.76>` is greater than the squares on the sides containing the obtuse angle by twice the :term:`rectangle contained <G.81>` by one of the sides about the obtuse angle, namely that on which the :term:`perpendicular <G.32>` falls, and the :term:`segment <G.4>` cut off outside by the perpendicular towards the obtuse angle.
 
 .. picture:: g1.svg
 

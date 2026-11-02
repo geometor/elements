@@ -1,17 +1,18 @@
 :canonical_id: G.243
-:original_id: VIII.3
+:original_id: VI.30
+:title: G.243 extreme and mean ratio
 :volume: II
-:book: VIII
+:book: VI
 :type: prop
 
-G.243 — Code
-============
+G.243 extreme and mean ratio — Code
+===================================
 
-.. rubric:: `VIII.3 <https://geometor.github.io/euclid/heath/volume_II/book_viii/propositions/03/>`_
+.. rubric:: `VI.30 <https://geometor.github.io/euclid/heath/volume_II/book_vi/propositions/30/>`_
 
 .. enunciation::
 
-   If as many numbers as we please in continued proportion be the least of those which have the same ratio with them, the extremes of them are prime to one another.
+   Cut a given :term:`segment <G.4>` in :term:`extreme and mean ratio <G.242>`.
 
 .. picture:: g1.svg
 

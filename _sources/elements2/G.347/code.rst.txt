@@ -1,17 +1,18 @@
 :canonical_id: G.347
-:original_id: X.32
-:volume: III
-:book: X
+:original_id: IX.17
+:title: G.347 there many numbers
+:volume: II
+:book: IX
 :type: prop
 
-G.347 — Code
-============
+G.347 there many numbers — Code
+===============================
 
-.. rubric:: `X.32 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/032/>`_
+.. rubric:: `IX.17 <https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/17/>`_
 
 .. enunciation::
 
-   Find two medial straight lines commensurable in square only, containing a medial rectangle, and such that the square on the greater is greater than the square on the less by the square on a straight line commensurable with the greater.
+   If there be as many :term:`numbers <G.248>` as we please in :term:`continued proportion <G.180>`, and the extremes of them be :term:`prime to one another <G.249>`, the last will not be to any other number as the first to the second.
 
 .. picture:: g1.svg
 

@@ -1,17 +1,18 @@
 :canonical_id: G.251
-:original_id: VIII.11
+:original_id: VII.2
+:title: G.251 numbers prime find
 :volume: II
-:book: VIII
+:book: VII
 :type: prop
 
-G.251 — Code
-============
+G.251 numbers prime find — Code
+===============================
 
-.. rubric:: `VIII.11 <https://geometor.github.io/euclid/heath/volume_II/book_viii/propositions/11/>`_
+.. rubric:: `VII.2 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/02/>`_
 
 .. enunciation::
 
-   Between two square numbers there is one mean proportional number, and the square has to the square the ratio duplicate of that which the side has to the side.
+   Given two :term:`numbers <G.248>` not :term:`prime to one another <G.249>`, to find their greatest common :term:`measure <G.169>`.
 
 .. picture:: g1.svg
 

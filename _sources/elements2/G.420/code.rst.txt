@@ -1,17 +1,18 @@
 :canonical_id: G.420
-:original_id: X.93
+:original_id: X.46
+:title: G.420 side rational plus
 :volume: III
 :book: X
 :type: prop
 
-G.420 — Code
-============
+G.420 side rational plus — Code
+===============================
 
-.. rubric:: `X.93 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/093/>`_
+.. rubric:: `X.46 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/046/>`_
 
 .. enunciation::
 
-   If an area be contained by a rational straight line and a third apotome, the “side” of the area is a second apotome of a medial straight line.
+   The side of a :term:`rational <G.391>` plus a medial area is divided at one :term:`point <G.1>` only.
 
 .. picture:: g1.svg
 

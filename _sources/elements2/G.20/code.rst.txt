@@ -1,17 +1,18 @@
 :canonical_id: G.20
-:original_id: I.12
+:original_id: I.2
+:title: G.20 transfer a segment to a point
 :volume: I
 :book: I
 :type: prop
 
-G.20 — Code
-===========
+G.20 transfer a segment to a point — Code
+=========================================
 
-.. rubric:: `I.12 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/12/>`_
+.. rubric:: `I.2 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/02/>`_
 
 .. enunciation::
 
-   Construct a perpendicular to a given infinite line from a given point not on it.
+   Construct at a given :term:`point <G.1>` a :term:`segment <G.4>` equal to a given segment.
 
 .. picture:: g1.svg
 

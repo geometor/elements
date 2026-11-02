@@ -1,17 +1,18 @@
 :canonical_id: G.73
-:original_id: II.12
+:original_id: I.44
+:title: G.73 apply a parallelogram equal to a triangle on a segment
 :volume: I
-:book: II
+:book: I
 :type: prop
 
-G.73 — Code
-===========
+G.73 apply a parallelogram equal to a triangle on a segment — Code
+==================================================================
 
-.. rubric:: `II.12 <https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/12/>`_
+.. rubric:: `I.44 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/44/>`_
 
 .. enunciation::
 
-   In obtuse-angled triangles the square on the side subtending the obtuse angle is greater than the squares on the sides containing the obtuse angle by twice the rectangle contained by one of the sides about the obtuse angle, namely that on which the perpendicular falls, and the straight line cut off outside by the perpendicular towards the obtuse angle.
+   Apply to a given :term:`segment <G.4>`, in a given :term:`angle <G.22>`, a parallelogram equal in area to a given :term:`triangle <G.11>`.
 
 .. picture:: g1.svg
 

@@ -1,67 +1,40 @@
 :canonical_id: G.48
-:original_id: I.35
+:original_id: I.23
+:title: G.48 construct an angle equal to a given angle
 :volume: I
 :book: I
 :type: prop
 
-G.48 — Heath
-============
+G.48 construct an angle equal to a given angle — Heath
+======================================================
 
-.. rubric:: `I.35 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/35/>`_
+.. rubric:: `I.23 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/23/>`_
 
 .. enunciation::
 
-   Parallelograms which are on the same base and in the same parallels are equal to one another.
+   On a given :term:`straight line <G.4>` and at a :term:`point <G.1>` on it to construct a :term:`rectilineal angle <G.29>` equal to a given rectilineal angle.
 
-Let :g:`< A B C D > <g1:< A B C D >>`, :g:`< E B C F > <g1:< E B C F >>` be parallelograms on the same base :g:`/ B C / <g1:/ B C />` and in the same parallels :g:`/ A F / <g1:/ A F />`, :g:`/ B C / <g1:/ B C />`;
+Let :g:`/ A B / <g1:/ A B />` be the given straight line, :g:`A <g1:A>` the point on it, and the :term:`angle <G.22>` :g:`< D C E ) <g1:< D C E )>` the given rectilineal angle;
 
-I say that :g:`< A B C D > <g1:< A B C D >>` is :eq:`equal <g1:< A B C D > = g1:< E B C F >>` to the parallelogram :g:`< E B C F > <g1:< E B C F >>`.
-
-For, since :g:`< A B C D > <g1:< A B C D >>` is a parallelogram, :g:`/ A D / <g1:/ A D />` is :eq:`equal <g1:/ A D / = g1:/ B C />` to :g:`/ B C / <g1:/ B C />`. :just:`[G.47] <G.47>`
-For the same reason also :g:`/ E F / <g1:/ E F />` is :eq:`equal <g1:/ E F / = g1:/ B C />` to :g:`/ B C / <g1:/ B C />`,
-
-.. assertion:: [G.1] <G.1>
-
-   so that :g:`/ A D / <g1:/ A D />` is also :eq:`equal <g1:/ A D / = g1:/ E F />` to :g:`/ E F / <g1:/ E F />`;
-
-and :g:`/ D E / <g1:/ D E />` is common;
-
-.. assertion:: [G.21] <G.21>
-
-   therefore the whole :g:`/ A E / <g1:/ A E />` is :eq:`equal <g1:/ A E / = g1:/ D F />` to the whole :g:`/ D F / <g1:/ D F />`.
-
-But :g:`/ A B / <g1:/ A B />` is also :eq:`equal <g1:/ A B / = g1:/ D C />` to :g:`/ D C / <g1:/ D C />`; :just:`[G.47] <G.47>`
-
-therefore the two sides :g:`/ E A / <g1:/ E A />`, :g:`/ A B / <g1:/ A B />` are :eq:`equal <g1:/ E A / = g1:/ F D /; g1:/ A B / = g1:/ D C />` to the two sides :g:`/ F D / <g1:/ F D />`, :g:`/ D C / <g1:/ D C />` respectively,
+thus it is required to construct on the given straight line :g:`/ A B / <g1:/ A B />`, and at the point :g:`A <g1:A>` on it, a rectilineal angle equal to the given rectilineal angle :g:`< D C E ) <g1:< D C E )>`.
 
 .. picture:: g1.svg
-   :alt: Folio 0341 Figure 1 - Proposition 35
+   :alt: Folio 0308 Figure 1 - Proposition 23
 
-and the angle :g:`< F D C ) <g1:< F D C )>` is :eq:`equal <g1:< F D C ) = g1:< E A B )>` to the angle :g:`< E A B ) <g1:< E A B )>`, the exterior to the interior; :just:`[G.42] <G.42>`
+On the straight lines :g:`[ C D ] <g1:[ C D ]>`, :g:`[ C E ] <g1:[ C E ]>` respectively let the points :g:`D <g1:D>`, :g:`E <g1:E>` be taken at random; let :g:`/ D E / <g1:/ D E />` be joined, and out of three straight lines which are equal to the three
+straight lines :g:`/ C D / <g1:/ C D />`, :g:`/ D E / <g1:/ D E />`, :g:`/ C E / <g1:/ C E />` let the :term:`triangle <G.11>` :g:`< A F G > <g1:< A F G >>` be constructed in such a way that :g:`/ C D / <g1:/ C D />` is :eq:`equal <g1:/ C D / = g1:/ A F /; g1:/ C E / = g1:/ A G /; g1:/ D E / = g1:/ F G />` to :g:`/ A F / <g1:/ A F />`, :g:`/ C E / <g1:/ C E />` to :g:`/ A G / <g1:/ A G />`, and further :g:`/ D E / <g1:/ D E />` to :g:`/ F G / <g1:/ F G />`. :just:`[G.47] <G.47>`
 
-.. subclause::
+Then, since the two sides :g:`/ D C / <g1:/ D C />`, :g:`/ C E / <g1:/ C E />` are :eq:`equal <g1:/ D C / = g1:/ F A /; g1:/ C E / = g1:/ A G />` to the two sides :g:`/ F A / <g1:/ F A />`, :g:`/ A G / <g1:/ A G />` respectively, and the base :g:`/ D E / <g1:/ D E />` is :eq:`equal <g1:/ D E / = g1:/ F G />` to the base :g:`/ F G / <g1:/ F G />`,
 
-   therefore the base :g:`/ E B / <g1:/ E B />` is :eq:`equal <g1:/ E B / = g1:/ F C />` to the base :g:`/ F C / <g1:/ F C />`,
+.. assertion:: [G.28] <G.28>
 
-.. assertion:: [G.11] <G.11>
+   the angle :g:`< D C E ) <g1:< D C E )>` is :eq:`equal <g1:< D C E ) = g1:< F A G )>` to the angle :g:`< F A G ) <g1:< F A G )>`.
 
-   and the triangle :g:`< E A B > <g1:< E A B >>` will be :eq:`equal <g1:< E A B > = g1:< F D C >>` to the triangle :g:`< F D C > <g1:< F D C >>`.
-
-Let :g:`< D G E > <g1:< D G E >>` be subtracted from each;
-
-.. assertion:: [G.6] <G.6>
-
-   therefore the trapezium :g:`< A B G D > <g1:< A B G D >>` which remains is :eq:`equal <g1:< A B G D > = g1:< E G C F >>` to the trapezium :g:`< E G C F > <g1:< E G C F >>` which remains.
-
-Let the triangle :g:`< G B C > <g1:< G B C >>` be added to each;
-
-.. assertion:: [G.21] <G.21>
-
-   therefore the whole parallelogram :g:`< A B C D > <g1:< A B C D >>` is :eq:`equal <g1:< A B C D > = g1:< E B C F >>` to the whole parallelogram :g:`< E B C F > <g1:< E B C F >>`.
+Therefore on the given straight line :g:`/ A B / <g1:/ A B />`, and at the point :g:`A <g1:A>` on it, the rectilineal angle :g:`< F A G ) <g1:< F A G )>` has been constructed :eq:`equal <g1:< F A G ) = g1:< D C E )>` to the given rectilineal angle :g:`< D C E ) <g1:< D C E )>`.
 
 .. qed::
 
-   Therefore etc. :just:`Q. E. D.`
+   Q. E. F.
 
 Dependency Graph
 ----------------
@@ -73,101 +46,182 @@ Dependency Graph
      node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11, color="#d6d3cd", fontcolor="#ffffff"];
      edge [color="#8c857b", fontcolor="#8c857b", arrowsize=0.75];
      rankdir="TB";
-     "G.1" [label="G.1", tooltip="G.1 (I.cn.1): Things equal to the same thing are equal to one another.", fillcolor="#442222", URL="../G.1/index.html", target="_top"];
-     "G.2" [label="G.2", tooltip="G.2 (I.def.15): A circle is a plane figure contained by one line such that all segments falling upon it from its center are equal.", fillcolor="#224422", URL="../G.2/index.html", target="_top"];
-     "G.3" [label="G.3", tooltip="G.3 (I.post.1): Construct a segment between any two points.", fillcolor="#444422", URL="../G.3/index.html", target="_top"];
-     "G.4" [label="G.4", tooltip="G.4 (I.post.3): Construct a circle with any center and radius.", fillcolor="#444422", URL="../G.4/index.html", target="_top"];
-     "G.5" [label="G.5", tooltip="G.5 (I.1): Construct an equilateral triangle on a given finite segment.", fillcolor="#222244", URL="../G.5/index.html", target="_top"];
-     "G.6" [label="G.6", tooltip="G.6 (I.cn.3): If equals are subtracted from equals, the remainders are equal.", fillcolor="#442222", URL="../G.6/index.html", target="_top"];
-     "G.7" [label="G.7", tooltip="G.7 (I.post.2): Extend a finite segment continuously in a straight line.", fillcolor="#444422", URL="../G.7/index.html", target="_top"];
-     "G.8" [label="G.8", tooltip="G.8 (I.2): Construct at a given point a segment equal to a given segment.", fillcolor="#222244", URL="../G.8/index.html", target="_top"];
-     "G.9" [label="G.9", tooltip="G.9 (I.3): Cut off from the greater of two unequal segments a segment equal to the less.", fillcolor="#222244", URL="../G.9/index.html", target="_top"];
-     "G.10" [label="G.10", tooltip="G.10 (I.cn.4): Things that coincide with one another are equal.", fillcolor="#442222", URL="../G.10/index.html", target="_top"];
-     "G.11" [label="G.11", tooltip="G.11 (I.4): Triangles with two sides and the included angle equal are congruent (SAS).", fillcolor="#222244", URL="../G.11/index.html", target="_top"];
-     "G.12" [label="G.12", tooltip="G.12 (I.5): In an isosceles triangle, the angles at the base are equal, and if the equal sides are extended, the angles under the base are equal.", fillcolor="#222244", URL="../G.12/index.html", target="_top"];
-     "G.14" [label="G.14", tooltip="G.14 (I.7): On the same segment and on the same side, there cannot be constructed two distinct triangles with both pairs of conterminous sides equal.", fillcolor="#222244", URL="../G.14/index.html", target="_top"];
-     "G.15" [label="G.15", tooltip="G.15 (I.8): Triangles with all three corresponding sides equal have their corresponding angles equal (SSS).", fillcolor="#222244", URL="../G.15/index.html", target="_top"];
-     "G.16" [label="G.16", tooltip="G.16 (I.9): Bisect a given angle.", fillcolor="#222244", URL="../G.16/index.html", target="_top"];
-     "G.17" [label="G.17", tooltip="G.17 (I.10): Bisect a given finite segment.", fillcolor="#222244", URL="../G.17/index.html", target="_top"];
-     "G.18" [label="G.18", tooltip="G.18 (I.def.10): When a straight line standing on a straight line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing line is perpendicular to that on which...", fillcolor="#224422", URL="../G.18/index.html", target="_top"];
-     "G.19" [label="G.19", tooltip="G.19 (I.11): Construct a line at right angles to a given line from a given point on it.", fillcolor="#222244", URL="../G.19/index.html", target="_top"];
-     "G.21" [label="G.21", tooltip="G.21 (I.cn.2): If equals are added to equals, the wholes are equal.", fillcolor="#442222", URL="../G.21/index.html", target="_top"];
-     "G.22" [label="G.22", tooltip="G.22 (I.13): A ray standing on a line makes either two right angles or adjacent angles summing to two right angles.", fillcolor="#222244", URL="../G.22/index.html", target="_top"];
-     "G.23" [label="G.23", tooltip="G.23 (I.post.4): All right angles are equal.", fillcolor="#444422", URL="../G.23/index.html", target="_top"];
-     "G.25" [label="G.25", tooltip="G.25 (I.15): Intersecting lines make their vertical angles equal.", fillcolor="#222244", URL="../G.25/index.html", target="_top"];
-     "G.26" [label="G.26", tooltip="G.26 (I.cn.5): The whole is greater than the part.", fillcolor="#442222", URL="../G.26/index.html", target="_top"];
-     "G.27" [label="G.27", tooltip="G.27 (I.16): In any triangle, if one side is extended, the exterior angle is greater than either opposite interior angle.", fillcolor="#222244", URL="../G.27/index.html", target="_top"];
-     "G.37" [label="G.37", tooltip="G.37 (I.26): Triangles with two angles and one corresponding side equal are congruent (ASA / AAS).", fillcolor="#222244", URL="../G.37/index.html", target="_top"];
-     "G.41" [label="G.41", tooltip="G.41 (I.post.5): Two lines intersected by a transversal with interior angles on one side summing to less than two right angles meet on that side.", fillcolor="#444422", URL="../G.41/index.html", target="_top"];
-     "G.42" [label="G.42", tooltip="G.42 (I.29): A transversal cutting parallel lines makes alternate interior angles equal, exterior and opposite interior angles equal, and same-side interior angles supplementary.", fillcolor="#222244", URL="../G.42/index.html", target="_top"];
-     "G.47" [label="G.47", tooltip="G.47 (I.34): In a parallelogram, opposite sides and opposite angles are equal, and the diagonal bisects the area.", fillcolor="#222244", URL="../G.47/index.html", target="_top"];
-     "G.48" [label="G.48", tooltip="G.48 (I.35): Parallelograms on the same base and in the same parallels are equal in area.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
-     "G.5" -> "G.1";
-     "G.8" -> "G.1";
-     "G.9" -> "G.1";
-     "G.22" -> "G.1";
-     "G.25" -> "G.1";
-     "G.42" -> "G.1";
+     "G.1" [label="G.1", tooltip="G.1 (I.def.1): A point A is that which has no part.", fillcolor="#224422", URL="../G.1/index.html", target="_top"];
+     "G.2" [label="G.2", tooltip="G.2 (I.def.2): A line [ A B ] is a projection of a relationship of two points A, B.", fillcolor="#224422", URL="../G.2/index.html", target="_top"];
+     "G.3" [label="G.3", tooltip="G.3 (I.def.3): The extremities of a segment / A B / are points A, B.", fillcolor="#224422", URL="../G.3/index.html", target="_top"];
+     "G.4" [label="G.4", tooltip="G.4 (I.def.4): A segment / A B / is a portion of a line [ A B ] between two points A, B on the line.", fillcolor="#224422", URL="../G.4/index.html", target="_top"];
+     "G.5" [label="G.5", tooltip="G.5 (I.def.5): A surface is that which has length and breadth only.", fillcolor="#224422", URL="../G.5/index.html", target="_top"];
+     "G.6" [label="G.6", tooltip="G.6 (I.def.6): The extremities of a surface are lines or arcs.", fillcolor="#224422", URL="../G.6/index.html", target="_top"];
+     "G.7" [label="G.7", tooltip="G.7 (I.def.7): A plane surface lies evenly with the lines on itself.", fillcolor="#224422", URL="../G.7/index.html", target="_top"];
+     "G.8" [label="G.8", tooltip="G.8 (I.def.13): A boundary is the extremity of anything.", fillcolor="#224422", URL="../G.8/index.html", target="_top"];
+     "G.9" [label="G.9", tooltip="G.9 (I.def.14): A figure is that which is contained by any boundary or boundaries.", fillcolor="#224422", URL="../G.9/index.html", target="_top"];
+     "G.10" [label="G.10", tooltip="G.10 (I.def.15): A circle ( A B ) is a plane figure contained by one arc defined by a center A and a point B establishing its defining radius / A B /, such that all segments / A B /, / A C /, / A D...", fillcolor="#224422", URL="../G.10/index.html", target="_top"];
+     "G.11" [label="G.11", tooltip="G.11 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
+     "G.12" [label="G.12", tooltip="G.12 (I.def.20): Of trilateral figures, an equilateral triangle < A B C > has three equal sides, an isosceles triangle < D E F > has two equal sides, and a scalene triangle < G H K > has three uneq...", fillcolor="#224422", URL="../G.12/index.html", target="_top"];
+     "G.13" [label="G.13", tooltip="G.13 (I.post.1): Construct a segment / A B / between any two points A, B.", fillcolor="#444422", URL="../G.13/index.html", target="_top"];
+     "G.14" [label="G.14", tooltip="G.14 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.", fillcolor="#224422", URL="../G.14/index.html", target="_top"];
+     "G.15" [label="G.15", tooltip="G.15 (I.post.3): Construct a circle ( A B ) with center A and defining radius point B.", fillcolor="#444422", URL="../G.15/index.html", target="_top"];
+     "G.16" [label="G.16", tooltip="G.16 (I.cn.1): Things equal to the same thing are equal to one another.", fillcolor="#442222", URL="../G.16/index.html", target="_top"];
+     "G.17" [label="G.17", tooltip="G.17 (I.1): Construct an equilateral triangle on a given segment.", fillcolor="#222244", URL="../G.17/index.html", target="_top"];
+     "G.18" [label="G.18", tooltip="G.18 (I.post.2): Extend a segment / A B / continuously along a line [ A B ] to / B C /.", fillcolor="#444422", URL="../G.18/index.html", target="_top"];
+     "G.19" [label="G.19", tooltip="G.19 (I.cn.3): If equals are subtracted from equals, the remainders are equal.", fillcolor="#442222", URL="../G.19/index.html", target="_top"];
+     "G.20" [label="G.20", tooltip="G.20 (I.2): Construct at a given point a segment equal to a given segment.", fillcolor="#222244", URL="../G.20/index.html", target="_top"];
+     "G.21" [label="G.21", tooltip="G.21 (I.3): Cut off from the greater of two unequal segments a segment equal to the less.", fillcolor="#222244", URL="../G.21/index.html", target="_top"];
+     "G.22" [label="G.22", tooltip="G.22 (I.def.8): A plane angle is the inclination to one another of two lines or arcs in a plane that meet and do not lie on the same line.", fillcolor="#224422", URL="../G.22/index.html", target="_top"];
+     "G.23" [label="G.23", tooltip="G.23 (I.cn.4): Things / A B /, / D E / that coincide with one another are equal to one another.", fillcolor="#442222", URL="../G.23/index.html", target="_top"];
+     "G.24" [label="G.24", tooltip="G.24 (I.4): Triangles with two sides and the included angle equal are congruent (SAS).", fillcolor="#222244", URL="../G.24/index.html", target="_top"];
+     "G.25" [label="G.25", tooltip="G.25 (I.5): In an isosceles triangle, the angles at the base are equal, and if the equal sides are extended, the angles under the base are equal.", fillcolor="#222244", URL="../G.25/index.html", target="_top"];
+     "G.27" [label="G.27", tooltip="G.27 (I.7): On the same segment and on the same side, there cannot be constructed two distinct triangles with both pairs of conterminous sides equal.", fillcolor="#222244", URL="../G.27/index.html", target="_top"];
+     "G.28" [label="G.28", tooltip="G.28 (I.8): Triangles with all three corresponding sides equal have their corresponding angles equal (SSS).", fillcolor="#222244", URL="../G.28/index.html", target="_top"];
+     "G.29" [label="G.29", tooltip="G.29 (I.def.9): A rectilineal angle is contained by two segments or lines.", fillcolor="#224422", URL="../G.29/index.html", target="_top"];
+     "G.30" [label="G.30", tooltip="G.30 (I.9): Bisect a given angle.", fillcolor="#222244", URL="../G.30/index.html", target="_top"];
+     "G.31" [label="G.31", tooltip="G.31 (I.10): Bisect a given segment.", fillcolor="#222244", URL="../G.31/index.html", target="_top"];
+     "G.32" [label="G.32", tooltip="G.32 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.32/index.html", target="_top"];
+     "G.33" [label="G.33", tooltip="G.33 (I.11): Construct a segment at right angles to a given line from a given point on it.", fillcolor="#222244", URL="../G.33/index.html", target="_top"];
+     "G.35" [label="G.35", tooltip="G.35 (I.cn.2): If equals are added to equals, the wholes are equal.", fillcolor="#442222", URL="../G.35/index.html", target="_top"];
+     "G.36" [label="G.36", tooltip="G.36 (I.13): A segment standing on a line makes either two right angles or adjacent angles summing to two right angles.", fillcolor="#222244", URL="../G.36/index.html", target="_top"];
+     "G.37" [label="G.37", tooltip="G.37 (I.post.4): All right angles are equal.", fillcolor="#444422", URL="../G.37/index.html", target="_top"];
+     "G.39" [label="G.39", tooltip="G.39 (I.15): Intersecting lines make their vertical angles equal.", fillcolor="#222244", URL="../G.39/index.html", target="_top"];
+     "G.40" [label="G.40", tooltip="G.40 (I.cn.5): The whole is greater than the part.", fillcolor="#442222", URL="../G.40/index.html", target="_top"];
+     "G.41" [label="G.41", tooltip="G.41 (I.16): In any triangle, if one side is extended, the exterior angle is greater than either opposite interior angle.", fillcolor="#222244", URL="../G.41/index.html", target="_top"];
+     "G.43" [label="G.43", tooltip="G.43 (I.18): In any triangle, the greater side subtends the greater angle.", fillcolor="#222244", URL="../G.43/index.html", target="_top"];
+     "G.44" [label="G.44", tooltip="G.44 (I.19): In any triangle, the greater angle is subtended by the greater side.", fillcolor="#222244", URL="../G.44/index.html", target="_top"];
+     "G.45" [label="G.45", tooltip="G.45 (I.20): In any triangle, the sum of any two sides is greater than the remaining side.", fillcolor="#222244", URL="../G.45/index.html", target="_top"];
+     "G.47" [label="G.47", tooltip="G.47 (I.22): Construct a triangle from three segments equal to three given segments satisfying the triangle inequality.", fillcolor="#222244", URL="../G.47/index.html", target="_top"];
+     "G.48" [label="G.48", tooltip="G.48 (I.23): Construct on a given line at a given point an angle equal to a given angle.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.2" -> "G.1";
+     "G.3" -> "G.1";
+     "G.4" -> "G.1";
+     "G.10" -> "G.1";
+     "G.13" -> "G.1";
+     "G.14" -> "G.1";
+     "G.20" -> "G.1";
+     "G.27" -> "G.1";
+     "G.33" -> "G.1";
      "G.48" -> "G.1";
-     "G.5" -> "G.2";
-     "G.9" -> "G.2";
-     "G.5" -> "G.3";
+     "G.3" -> "G.2";
+     "G.4" -> "G.2";
+     "G.6" -> "G.2";
+     "G.22" -> "G.2";
+     "G.29" -> "G.2";
+     "G.4" -> "G.3";
      "G.8" -> "G.3";
-     "G.12" -> "G.3";
-     "G.14" -> "G.3";
+     "G.20" -> "G.3";
      "G.27" -> "G.3";
-     "G.5" -> "G.4";
-     "G.8" -> "G.4";
-     "G.9" -> "G.4";
-     "G.8" -> "G.5";
-     "G.17" -> "G.5";
-     "G.19" -> "G.5";
-     "G.8" -> "G.6";
-     "G.25" -> "G.6";
-     "G.48" -> "G.6";
-     "G.8" -> "G.7";
-     "G.12" -> "G.7";
-     "G.27" -> "G.7";
+     "G.7" -> "G.4";
+     "G.10" -> "G.4";
+     "G.11" -> "G.4";
+     "G.13" -> "G.4";
+     "G.17" -> "G.4";
+     "G.18" -> "G.4";
+     "G.20" -> "G.4";
+     "G.21" -> "G.4";
+     "G.22" -> "G.4";
+     "G.24" -> "G.4";
+     "G.25" -> "G.4";
+     "G.27" -> "G.4";
+     "G.28" -> "G.4";
+     "G.31" -> "G.4";
+     "G.32" -> "G.4";
+     "G.33" -> "G.4";
+     "G.36" -> "G.4";
+     "G.39" -> "G.4";
+     "G.47" -> "G.4";
+     "G.48" -> "G.4";
+     "G.6" -> "G.5";
+     "G.7" -> "G.5";
+     "G.10" -> "G.6";
+     "G.10" -> "G.7";
+     "G.22" -> "G.7";
      "G.9" -> "G.8";
-     "G.12" -> "G.9";
-     "G.16" -> "G.9";
-     "G.19" -> "G.9";
-     "G.27" -> "G.9";
-     "G.11" -> "G.10";
+     "G.10" -> "G.9";
+     "G.24" -> "G.9";
+     "G.14" -> "G.10";
+     "G.15" -> "G.10";
+     "G.17" -> "G.10";
+     "G.21" -> "G.10";
      "G.12" -> "G.11";
-     "G.17" -> "G.11";
-     "G.27" -> "G.11";
-     "G.37" -> "G.11";
+     "G.24" -> "G.11";
+     "G.28" -> "G.11";
+     "G.41" -> "G.11";
+     "G.43" -> "G.11";
+     "G.44" -> "G.11";
+     "G.45" -> "G.11";
      "G.47" -> "G.11";
-     "G.48" -> "G.11";
-     "G.14" -> "G.12";
+     "G.17" -> "G.12";
+     "G.25" -> "G.12";
+     "G.17" -> "G.13";
+     "G.20" -> "G.13";
+     "G.25" -> "G.13";
+     "G.27" -> "G.13";
+     "G.41" -> "G.13";
      "G.15" -> "G.14";
-     "G.16" -> "G.15";
-     "G.19" -> "G.15";
+     "G.17" -> "G.15";
+     "G.20" -> "G.15";
+     "G.21" -> "G.15";
      "G.17" -> "G.16";
-     "G.27" -> "G.17";
-     "G.19" -> "G.18";
-     "G.22" -> "G.18";
-     "G.22" -> "G.19";
-     "G.22" -> "G.21";
-     "G.42" -> "G.21";
+     "G.20" -> "G.16";
+     "G.21" -> "G.16";
+     "G.36" -> "G.16";
+     "G.39" -> "G.16";
+     "G.20" -> "G.17";
+     "G.31" -> "G.17";
+     "G.33" -> "G.17";
+     "G.20" -> "G.18";
+     "G.25" -> "G.18";
+     "G.41" -> "G.18";
+     "G.20" -> "G.19";
+     "G.39" -> "G.19";
+     "G.21" -> "G.20";
+     "G.25" -> "G.21";
+     "G.30" -> "G.21";
+     "G.33" -> "G.21";
+     "G.41" -> "G.21";
+     "G.43" -> "G.21";
      "G.47" -> "G.21";
-     "G.48" -> "G.21";
+     "G.24" -> "G.22";
      "G.25" -> "G.22";
-     "G.42" -> "G.22";
-     "G.25" -> "G.23";
+     "G.28" -> "G.22";
+     "G.29" -> "G.22";
+     "G.32" -> "G.22";
+     "G.36" -> "G.22";
+     "G.39" -> "G.22";
+     "G.41" -> "G.22";
+     "G.43" -> "G.22";
+     "G.44" -> "G.22";
+     "G.24" -> "G.23";
+     "G.25" -> "G.24";
+     "G.31" -> "G.24";
+     "G.41" -> "G.24";
      "G.27" -> "G.25";
-     "G.42" -> "G.25";
-     "G.27" -> "G.26";
-     "G.37" -> "G.27";
-     "G.47" -> "G.37";
-     "G.42" -> "G.41";
-     "G.47" -> "G.42";
-     "G.48" -> "G.42";
+     "G.44" -> "G.25";
+     "G.45" -> "G.25";
+     "G.28" -> "G.27";
+     "G.30" -> "G.28";
+     "G.33" -> "G.28";
+     "G.48" -> "G.28";
+     "G.30" -> "G.29";
+     "G.48" -> "G.29";
+     "G.31" -> "G.30";
+     "G.41" -> "G.31";
+     "G.33" -> "G.32";
+     "G.36" -> "G.32";
+     "G.37" -> "G.32";
+     "G.36" -> "G.33";
+     "G.36" -> "G.35";
+     "G.39" -> "G.36";
+     "G.39" -> "G.37";
+     "G.41" -> "G.39";
+     "G.41" -> "G.40";
+     "G.45" -> "G.40";
+     "G.43" -> "G.41";
+     "G.44" -> "G.43";
+     "G.45" -> "G.44";
+     "G.47" -> "G.45";
      "G.48" -> "G.47";
    }
 
 Required for
 ------------
 
-:ref:`G.49 <G.49>`, :ref:`G.50 <G.50>`, :ref:`G.51 <G.51>`, :ref:`G.52 <G.52>`, :ref:`G.53 <G.53>`, :ref:`G.54 <G.54>`, :ref:`G.55 <G.55>`, :ref:`G.57 <G.57>`, :ref:`G.58 <G.58>`, :ref:`G.60 <G.60>`, :ref:`G.61 <G.61>`, :ref:`G.66 <G.66>`, :ref:`G.67 <G.67>`, :ref:`G.69 <G.69>`, :ref:`G.70 <G.70>`, :ref:`G.71 <G.71>`, :ref:`G.72 <G.72>`, :ref:`G.73 <G.73>`, :ref:`G.74 <G.74>`, :ref:`G.75 <G.75>`, :ref:`G.91 <G.91>`, :ref:`G.93 <G.93>`, :ref:`G.114 <G.114>`, :ref:`G.115 <G.115>`, :ref:`G.116 <G.116>`, :ref:`G.128 <G.128>`, :ref:`G.129 <G.129>`, :ref:`G.130 <G.130>`, :ref:`G.163 <G.163>`, :ref:`G.164 <G.164>`, :ref:`G.165 <G.165>`, :ref:`G.166 <G.166>`, :ref:`G.167 <G.167>`, :ref:`G.168 <G.168>`, :ref:`G.169 <G.169>`, :ref:`G.171 <G.171>`, :ref:`G.172 <G.172>`, :ref:`G.173 <G.173>`, :ref:`G.174 <G.174>`, :ref:`G.175 <G.175>`, :ref:`G.176 <G.176>`, :ref:`G.177 <G.177>`, :ref:`G.178 <G.178>`, :ref:`G.179 <G.179>`, :ref:`G.180 <G.180>`, :ref:`G.181 <G.181>`, :ref:`G.184 <G.184>`, :ref:`G.185 <G.185>`, :ref:`G.187 <G.187>`, :ref:`G.188 <G.188>`, :ref:`G.189 <G.189>`, :ref:`G.190 <G.190>`, :ref:`G.191 <G.191>`, :ref:`G.192 <G.192>`, :ref:`G.193 <G.193>`, :ref:`G.194 <G.194>`, :ref:`G.195 <G.195>`, :ref:`G.196 <G.196>`, :ref:`G.197 <G.197>`, :ref:`G.319 <G.319>`, :ref:`G.320 <G.320>`, :ref:`G.322 <G.322>`, :ref:`G.323 <G.323>`, :ref:`G.324 <G.324>`, :ref:`G.325 <G.325>`, :ref:`G.326 <G.326>`, :ref:`G.327 <G.327>`, :ref:`G.330 <G.330>`, :ref:`G.331 <G.331>`, :ref:`G.333 <G.333>`, :ref:`G.334 <G.334>`, :ref:`G.335 <G.335>`, :ref:`G.336 <G.336>`, :ref:`G.338 <G.338>`, :ref:`G.339 <G.339>`, :ref:`G.340 <G.340>`, :ref:`G.341 <G.341>`, :ref:`G.342 <G.342>`, :ref:`G.343 <G.343>`, :ref:`G.344 <G.344>`, :ref:`G.345 <G.345>`, :ref:`G.346 <G.346>`, :ref:`G.347 <G.347>`, :ref:`G.348 <G.348>`, :ref:`G.349 <G.349>`, :ref:`G.350 <G.350>`, :ref:`G.351 <G.351>`, :ref:`G.352 <G.352>`, :ref:`G.353 <G.353>`, :ref:`G.354 <G.354>`, :ref:`G.355 <G.355>`, :ref:`G.356 <G.356>`, :ref:`G.357 <G.357>`, :ref:`G.358 <G.358>`, :ref:`G.359 <G.359>`, :ref:`G.360 <G.360>`, :ref:`G.361 <G.361>`, :ref:`G.362 <G.362>`, :ref:`G.363 <G.363>`, :ref:`G.364 <G.364>`, :ref:`G.365 <G.365>`, :ref:`G.366 <G.366>`, :ref:`G.367 <G.367>`, :ref:`G.368 <G.368>`, :ref:`G.370 <G.370>`, :ref:`G.372 <G.372>`, :ref:`G.374 <G.374>`, :ref:`G.376 <G.376>`, :ref:`G.378 <G.378>`, :ref:`G.379 <G.379>`, :ref:`G.380 <G.380>`, :ref:`G.381 <G.381>`, :ref:`G.382 <G.382>`, :ref:`G.383 <G.383>`, :ref:`G.384 <G.384>`, :ref:`G.385 <G.385>`, :ref:`G.387 <G.387>`, :ref:`G.388 <G.388>`, :ref:`G.389 <G.389>`, :ref:`G.390 <G.390>`, :ref:`G.391 <G.391>`, :ref:`G.392 <G.392>`, :ref:`G.393 <G.393>`, :ref:`G.394 <G.394>`, :ref:`G.396 <G.396>`, :ref:`G.397 <G.397>`, :ref:`G.398 <G.398>`, :ref:`G.399 <G.399>`, :ref:`G.400 <G.400>`, :ref:`G.401 <G.401>`, :ref:`G.402 <G.402>`, :ref:`G.403 <G.403>`, :ref:`G.404 <G.404>`, :ref:`G.405 <G.405>`, :ref:`G.407 <G.407>`, :ref:`G.409 <G.409>`, :ref:`G.411 <G.411>`, :ref:`G.413 <G.413>`, :ref:`G.415 <G.415>`, :ref:`G.417 <G.417>`, :ref:`G.418 <G.418>`, :ref:`G.419 <G.419>`, :ref:`G.420 <G.420>`, :ref:`G.421 <G.421>`, :ref:`G.422 <G.422>`, :ref:`G.423 <G.423>`, :ref:`G.424 <G.424>`, :ref:`G.425 <G.425>`, :ref:`G.426 <G.426>`, :ref:`G.427 <G.427>`, :ref:`G.428 <G.428>`, :ref:`G.429 <G.429>`, :ref:`G.430 <G.430>`, :ref:`G.431 <G.431>`, :ref:`G.432 <G.432>`, :ref:`G.433 <G.433>`, :ref:`G.434 <G.434>`, :ref:`G.435 <G.435>`, :ref:`G.436 <G.436>`, :ref:`G.437 <G.437>`, :ref:`G.438 <G.438>`, :ref:`G.439 <G.439>`, :ref:`G.440 <G.440>`, :ref:`G.441 <G.441>`, :ref:`G.442 <G.442>`, :ref:`G.461 <G.461>`, :ref:`G.468 <G.468>`, :ref:`G.473 <G.473>`, :ref:`G.476 <G.476>`, :ref:`G.477 <G.477>`, :ref:`G.478 <G.478>`, :ref:`G.479 <G.479>`, :ref:`G.480 <G.480>`, :ref:`G.481 <G.481>`, :ref:`G.482 <G.482>`, :ref:`G.483 <G.483>`, :ref:`G.484 <G.484>`, :ref:`G.486 <G.486>`, :ref:`G.487 <G.487>`, :ref:`G.488 <G.488>`, :ref:`G.489 <G.489>`, :ref:`G.490 <G.490>`, :ref:`G.491 <G.491>`, :ref:`G.492 <G.492>`, :ref:`G.493 <G.493>`, :ref:`G.494 <G.494>`, :ref:`G.495 <G.495>`, :ref:`G.496 <G.496>`, :ref:`G.497 <G.497>`, :ref:`G.499 <G.499>`, :ref:`G.500 <G.500>`, :ref:`G.501 <G.501>`, :ref:`G.502 <G.502>`, :ref:`G.505 <G.505>`, :ref:`G.506 <G.506>`, :ref:`G.508 <G.508>`, :ref:`G.509 <G.509>`, :ref:`G.511 <G.511>`, :ref:`G.512 <G.512>`, :ref:`G.513 <G.513>`, :ref:`G.515 <G.515>`, :ref:`G.516 <G.516>`, :ref:`G.517 <G.517>`, :ref:`G.518 <G.518>`, :ref:`G.519 <G.519>`, :ref:`G.520 <G.520>`, :ref:`G.521 <G.521>`, :ref:`G.522 <G.522>`, :ref:`G.523 <G.523>`, :ref:`G.524 <G.524>`, :ref:`G.525 <G.525>`
+:ref:`G.49 <G.49>`, :ref:`G.50 <G.50>`, :ref:`G.58 <G.58>`, :ref:`G.59 <G.59>`, :ref:`G.66 <G.66>`, :ref:`G.67 <G.67>`, :ref:`G.68 <G.68>`, :ref:`G.69 <G.69>`, :ref:`G.70 <G.70>`, :ref:`G.71 <G.71>`, :ref:`G.73 <G.73>`, :ref:`G.74 <G.74>`, :ref:`G.75 <G.75>`, :ref:`G.79 <G.79>`, :ref:`G.80 <G.80>`, :ref:`G.82 <G.82>`, :ref:`G.83 <G.83>`, :ref:`G.84 <G.84>`, :ref:`G.85 <G.85>`, :ref:`G.87 <G.87>`, :ref:`G.88 <G.88>`, :ref:`G.89 <G.89>`, :ref:`G.91 <G.91>`, :ref:`G.92 <G.92>`, :ref:`G.93 <G.93>`, :ref:`G.94 <G.94>`, :ref:`G.95 <G.95>`, :ref:`G.97 <G.97>`, :ref:`G.105 <G.105>`, :ref:`G.106 <G.106>`, :ref:`G.114 <G.114>`, :ref:`G.116 <G.116>`, :ref:`G.123 <G.123>`, :ref:`G.124 <G.124>`, :ref:`G.125 <G.125>`, :ref:`G.134 <G.134>`, :ref:`G.136 <G.136>`, :ref:`G.139 <G.139>`, :ref:`G.140 <G.140>`, :ref:`G.141 <G.141>`, :ref:`G.142 <G.142>`, :ref:`G.143 <G.143>`, :ref:`G.144 <G.144>`, :ref:`G.145 <G.145>`, :ref:`G.149 <G.149>`, :ref:`G.151 <G.151>`, :ref:`G.157 <G.157>`, :ref:`G.158 <G.158>`, :ref:`G.160 <G.160>`, :ref:`G.162 <G.162>`, :ref:`G.163 <G.163>`, :ref:`G.164 <G.164>`, :ref:`G.167 <G.167>`, :ref:`G.210 <G.210>`, :ref:`G.211 <G.211>`, :ref:`G.212 <G.212>`, :ref:`G.213 <G.213>`, :ref:`G.214 <G.214>`, :ref:`G.215 <G.215>`, :ref:`G.216 <G.216>`, :ref:`G.218 <G.218>`, :ref:`G.219 <G.219>`, :ref:`G.220 <G.220>`, :ref:`G.221 <G.221>`, :ref:`G.222 <G.222>`, :ref:`G.223 <G.223>`, :ref:`G.225 <G.225>`, :ref:`G.226 <G.226>`, :ref:`G.227 <G.227>`, :ref:`G.228 <G.228>`, :ref:`G.229 <G.229>`, :ref:`G.231 <G.231>`, :ref:`G.232 <G.232>`, :ref:`G.234 <G.234>`, :ref:`G.235 <G.235>`, :ref:`G.236 <G.236>`, :ref:`G.237 <G.237>`, :ref:`G.238 <G.238>`, :ref:`G.239 <G.239>`, :ref:`G.240 <G.240>`, :ref:`G.241 <G.241>`, :ref:`G.243 <G.243>`, :ref:`G.244 <G.244>`, :ref:`G.245 <G.245>`, :ref:`G.246 <G.246>`, :ref:`G.345 <G.345>`, :ref:`G.377 <G.377>`, :ref:`G.378 <G.378>`, :ref:`G.381 <G.381>`, :ref:`G.382 <G.382>`, :ref:`G.383 <G.383>`, :ref:`G.384 <G.384>`, :ref:`G.385 <G.385>`, :ref:`G.386 <G.386>`, :ref:`G.389 <G.389>`, :ref:`G.390 <G.390>`, :ref:`G.393 <G.393>`, :ref:`G.394 <G.394>`, :ref:`G.395 <G.395>`, :ref:`G.396 <G.396>`, :ref:`G.397 <G.397>`, :ref:`G.398 <G.398>`, :ref:`G.399 <G.399>`, :ref:`G.400 <G.400>`, :ref:`G.401 <G.401>`, :ref:`G.402 <G.402>`, :ref:`G.403 <G.403>`, :ref:`G.404 <G.404>`, :ref:`G.405 <G.405>`, :ref:`G.406 <G.406>`, :ref:`G.407 <G.407>`, :ref:`G.408 <G.408>`, :ref:`G.409 <G.409>`, :ref:`G.410 <G.410>`, :ref:`G.411 <G.411>`, :ref:`G.412 <G.412>`, :ref:`G.413 <G.413>`, :ref:`G.414 <G.414>`, :ref:`G.415 <G.415>`, :ref:`G.416 <G.416>`, :ref:`G.417 <G.417>`, :ref:`G.418 <G.418>`, :ref:`G.419 <G.419>`, :ref:`G.420 <G.420>`, :ref:`G.421 <G.421>`, :ref:`G.423 <G.423>`, :ref:`G.425 <G.425>`, :ref:`G.427 <G.427>`, :ref:`G.429 <G.429>`, :ref:`G.431 <G.431>`, :ref:`G.433 <G.433>`, :ref:`G.434 <G.434>`, :ref:`G.435 <G.435>`, :ref:`G.436 <G.436>`, :ref:`G.437 <G.437>`, :ref:`G.438 <G.438>`, :ref:`G.439 <G.439>`, :ref:`G.440 <G.440>`, :ref:`G.441 <G.441>`, :ref:`G.442 <G.442>`, :ref:`G.443 <G.443>`, :ref:`G.444 <G.444>`, :ref:`G.445 <G.445>`, :ref:`G.446 <G.446>`, :ref:`G.447 <G.447>`, :ref:`G.448 <G.448>`, :ref:`G.449 <G.449>`, :ref:`G.450 <G.450>`, :ref:`G.451 <G.451>`, :ref:`G.452 <G.452>`, :ref:`G.453 <G.453>`, :ref:`G.455 <G.455>`, :ref:`G.457 <G.457>`, :ref:`G.458 <G.458>`, :ref:`G.459 <G.459>`, :ref:`G.460 <G.460>`, :ref:`G.461 <G.461>`, :ref:`G.462 <G.462>`, :ref:`G.463 <G.463>`, :ref:`G.464 <G.464>`, :ref:`G.465 <G.465>`, :ref:`G.466 <G.466>`, :ref:`G.467 <G.467>`, :ref:`G.468 <G.468>`, :ref:`G.470 <G.470>`, :ref:`G.472 <G.472>`, :ref:`G.474 <G.474>`, :ref:`G.476 <G.476>`, :ref:`G.477 <G.477>`, :ref:`G.478 <G.478>`, :ref:`G.479 <G.479>`, :ref:`G.480 <G.480>`, :ref:`G.481 <G.481>`, :ref:`G.482 <G.482>`, :ref:`G.483 <G.483>`, :ref:`G.484 <G.484>`, :ref:`G.485 <G.485>`, :ref:`G.486 <G.486>`, :ref:`G.487 <G.487>`, :ref:`G.488 <G.488>`, :ref:`G.489 <G.489>`, :ref:`G.490 <G.490>`, :ref:`G.491 <G.491>`, :ref:`G.492 <G.492>`, :ref:`G.493 <G.493>`, :ref:`G.494 <G.494>`, :ref:`G.495 <G.495>`, :ref:`G.496 <G.496>`, :ref:`G.497 <G.497>`, :ref:`G.498 <G.498>`, :ref:`G.499 <G.499>`, :ref:`G.500 <G.500>`, :ref:`G.501 <G.501>`, :ref:`G.513 <G.513>`, :ref:`G.514 <G.514>`, :ref:`G.518 <G.518>`, :ref:`G.520 <G.520>`, :ref:`G.525 <G.525>`, :ref:`G.526 <G.526>`, :ref:`G.527 <G.527>`, :ref:`G.528 <G.528>`, :ref:`G.532 <G.532>`, :ref:`G.536 <G.536>`, :ref:`G.541 <G.541>`, :ref:`G.542 <G.542>`, :ref:`G.543 <G.543>`, :ref:`G.544 <G.544>`, :ref:`G.545 <G.545>`, :ref:`G.546 <G.546>`, :ref:`G.547 <G.547>`, :ref:`G.550 <G.550>`, :ref:`G.551 <G.551>`, :ref:`G.552 <G.552>`, :ref:`G.554 <G.554>`, :ref:`G.555 <G.555>`, :ref:`G.556 <G.556>`, :ref:`G.557 <G.557>`, :ref:`G.558 <G.558>`, :ref:`G.559 <G.559>`, :ref:`G.560 <G.560>`, :ref:`G.563 <G.563>`, :ref:`G.565 <G.565>`, :ref:`G.570 <G.570>`, :ref:`G.571 <G.571>`, :ref:`G.572 <G.572>`, :ref:`G.573 <G.573>`, :ref:`G.577 <G.577>`, :ref:`G.578 <G.578>`, :ref:`G.579 <G.579>`, :ref:`G.580 <G.580>`, :ref:`G.582 <G.582>`, :ref:`G.583 <G.583>`, :ref:`G.584 <G.584>`, :ref:`G.586 <G.586>`, :ref:`G.587 <G.587>`, :ref:`G.588 <G.588>`, :ref:`G.589 <G.589>`, :ref:`G.590 <G.590>`, :ref:`G.592 <G.592>`, :ref:`G.594 <G.594>`, :ref:`G.595 <G.595>`, :ref:`G.597 <G.597>`, :ref:`G.600 <G.600>`, :ref:`G.601 <G.601>`

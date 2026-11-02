@@ -1,17 +1,18 @@
 :canonical_id: G.327
-:original_id: X.14
-:volume: III
-:book: X
+:original_id: VIII.25
+:title: G.327 numbers ratio cube
+:volume: II
+:book: VIII
 :type: prop
 
-G.327 — Code
-============
+G.327 numbers ratio cube — Code
+===============================
 
-.. rubric:: `X.14 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/014/>`_
+.. rubric:: `VIII.25 <https://geometor.github.io/euclid/heath/volume_II/book_viii/propositions/25/>`_
 
 .. enunciation::
 
-   If four straight lines be proportional, and the square on the first be greater than the square on the second by the square on a straight line commensurable with the first, the square on the third is greater than the square on the fourth by the square on a straight line commensurable with the third. And, if the square on the first be greater than the square on the second by the square on a straight line incommensurable with the first, the square on the third is greater than the square on the fourth by the square on a straight line incommensurable with the third.
+   If two :term:`numbers <G.248>` have to one another the :term:`ratio <G.173>` which a :term:`cube number <G.311>` has to a cube number, and the first be cube, the second is cube.
 
 .. picture:: g1.svg
 

@@ -1,17 +1,18 @@
 :canonical_id: G.201
-:original_id: VII.2
+:original_id: V.19
+:title: G.201 whole whole part
 :volume: II
-:book: VII
+:book: V
 :type: prop
 
-G.201 — Code
-============
+G.201 whole whole part — Code
+=============================
 
-.. rubric:: `VII.2 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/02/>`_
+.. rubric:: `V.19 <https://geometor.github.io/euclid/heath/volume_II/book_v/propositions/19/>`_
 
 .. enunciation::
 
-   Given two numbers not prime to one another, to find their greatest common measure.
+   If, as a whole is to a whole, so is a part subtracted to a part subtracted, the remainder is to the remainder as whole to whole.
 
 .. picture:: g1.svg
 

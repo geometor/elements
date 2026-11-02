@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>G.123 &mdash; Elements 2.0 (G Index)</title>
+  <title>G.123 inscribed angle theorem &mdash; Elements 2.0 (G Index)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
@@ -66,38 +66,400 @@
           </div>
           <div class="book-header-breadcrumbs book-header-badges" role="navigation" aria-label="Book Breadcrumbs">
             <span class="book-badge canonical-badge">G.123</span>
-            <span class="book-badge folio-badge">I.def.22</span>
+            <span class="book-badge folio-badge">III.20</span>
           </div>
         </div>
         <div class="book-header-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="../G.122/index.html" title="G.122">&larr; <span class="nav-label">Prev</span></a>
+            <a class="book-nav-btn" href="../G.122/index.html" title="G.122 sector of a circle">&larr; <span class="nav-label">Prev</span></a>
           </div>
           <div class="book-nav-center">
             <nav class="book-tracks-nav" aria-label="Document Tracks">
               <strong class="book-track-item is-active" aria-current="page">Pseudocode</strong>
               <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="code.html">Code</a>
+              <span class="book-track-sep">&middot;</span>
               <a class="book-track-item" href="heath.html">Heath</a>
             </nav>
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="../G.124/index.html" title="G.124"><span class="nav-label">Next</span> &rarr;</a>
+            <a class="book-nav-btn" href="../G.124/index.html" title="G.124 circle angles segment"><span class="nav-label">Next</span> &rarr;</a>
           </div>
         </div>
       </header>
       <div class="content body book-content folio-book-page" role="main">
-        <section class="level-1" id="i-def-22">
-        <span id="g-123"></span><span id="id1"></span><h1>G.123<a class="headerlink" href="#i-def-22" title="Link to this heading">¶</a></h1>
-        <p class="rubric"><a class="reference external" href="https://geometor.github.io/euclid/heath/volume_I/book_i/definitions/#i-def-22" title="I.def.22: Of quadrilateral figures, a square is equilateral and right-angled; an oblong is right-angled but not equilateral; a rhombus is equilateral but not right-angled; a rhomboid has…">I.def.22</a></p>
-        <div class="enunciation">Of quadrilateral figures, a square is equilateral and right-angled; an oblong is right-angled but not equilateral; a rhombus is equilateral but not right-angled; a rhomboid has opposite sides and angles equal but is neither equilateral nor right-angled.</div>
-        <div class="geom-signature geom-signature-def">
+        <section class="level-1" id="g-123-inscribed-angle-theorem">
+        <span id="iii-20"></span><span id="g-123"></span><h1>G.123 inscribed angle theorem<a class="headerlink" href="#g-123-inscribed-angle-theorem" title="Link to this heading">¶</a></h1>
+        <p class="rubric"><a class="reference external" href="https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/20/" title="III.20: In a circle the angle at the center is double of the angle at the arc, when the angles have the same arc as base.">III.20</a></p>
+        <div class="enunciation">In a <a class="term-ref glossary-term" id="occ-term-g-10-1" href="../glossary.html#term-g-10" data-term="G.10" title="Term: G.10">circle</a> the <a class="term-ref glossary-term" id="occ-term-g-22-1" href="../glossary.html#term-g-22" data-term="G.22" title="Term: G.22">angle</a> at the <a class="term-ref glossary-term" id="occ-term-g-14-1" href="../glossary.html#term-g-14" data-term="G.14" title="Term: G.14">center</a> is double of the angle at the arc, when the angles have the same arc as base.</div>
+        <div class="geom-signature geom-signature-theorem">
         <div class="line-block">
-        <div class="line"><span class="geom-fn geom-fn-def" data-ref-target="G.123" title="G.123: Of quadrilateral figures, a square is equilateral and right-angled; an oblong is right-angled but not equilateral; a rhombus is equilateral but not right-angled; a rhomboid has…">quadrilateral_def</span></div>
+        <div class="line"><span class="geom-fn geom-fn-def" data-ref-target="G.123" title="G.123: In a circle the angle at the center is double of the angle at the arc, when the angles have the same arc as base.">inscribed_angle_theorem</span>(<span class="geom-ref" data-ref="g1:( A B C )" title="( A B C )">( A B C )</span>, <span class="geom-ref" data-ref="g1:&lt; B E C )" title="&lt; B E C )">&lt; B E C )</span>, <span class="geom-ref" data-ref="g1:&lt; B A C )" title="&lt; B A C )">&lt; B A C )</span>, <span class="geom-ref" data-ref="g1:( B C )" title="( B C )">( B C )</span>)</div>
+        <div class="line"><strong>given</strong> <span class="geom-ref" data-ref="g1:( A B C )" title="( A B C )">( A B C )</span> be a circle, let <span class="geom-ref" data-ref="g1:&lt; B E C )" title="&lt; B E C )">&lt; B E C )</span> be an angle at its center, <span class="geom-ref" data-ref="g1:&lt; B A C )" title="&lt; B A C )">&lt; B A C )</span> an angle at the arc, let them have the same arc <span class="geom-ref" data-ref="g1:( B C )" title="( B C )">( B C )</span> as base</div>
+        <div class="line"><strong>prove</strong> <span class="geom-ref" data-ref="g1:&lt; B E C )" title="&lt; B E C )">&lt; B E C )</span> is double of <span class="geom-ref" data-ref="g1:&lt; B A C )" title="&lt; B A C )">&lt; B A C )</span></div>
         </div>
         </div>
+        <figure class="photon-picture photon-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -3 215 218" width="215" height="218" class="euclid-graphic" data-graphic-id="g1" data-graphic="g1" data-proposition="III.20">
+          <defs>
+            <marker id="geom-tick-1" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker id="geom-tick-2" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker id="geom-tick-3" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g id="elements">
+            <circle id="el-circle-ABC" data-ref="( E C )" data-aliases="( A B C )" data-type="circle" cx="105" cy="108" r="81" class="geom-circle" />
+          </g>
+          <g id="graphics">
+            <polygon id="el-tri-EAB" data-ref="&lt; E A B &gt;" data-type="polygon" points="105,108 26.76,87.04 159.20,168.19" class="geom-polygon" />
+            <polygon id="el-tri-EAC" data-ref="&lt; E A C &gt;" data-type="polygon" points="105,108 26.76,87.04 186,108" class="geom-polygon" />
+            <polygon id="el-tri-EDB" data-ref="&lt; E D B &gt;" data-type="polygon" points="105,108 132.70,31.88 159.20,168.19" class="geom-polygon" />
+            <polygon id="el-tri-EDC" data-ref="&lt; E D C &gt;" data-type="polygon" points="105,108 132.70,31.88 186,108" class="geom-polygon" />
+            <path id="el-arc-BC" data-ref="( B C )" data-aliases="( C B ) | &lt; B F C )" data-type="arc" d="M 186.00 108.00 A 81.0 81.0 0 0 1 159.20 168.19" class="geom-arc geom-overlay" />
+            <path id="el-seg-AB" data-ref="/ A B /" data-aliases="/ B A /" data-type="segment" class="geom-line" d="M 26.76 87.04 L 92.98 127.62 L 159.2 168.19" />
+            <path id="el-seg-AC" data-ref="/ A C /" data-aliases="/ C A /" data-type="segment" class="geom-line" d="M 26.76 87.04 L 106.38 97.52 L 186 108" />
+            <path id="el-seg-EB" data-ref="/ E B /" data-aliases="/ B E /" data-type="segment" class="geom-line" d="M 105 108 L 132.1 138.09 L 159.2 168.19" />
+            <path id="el-seg-EC" data-ref="/ E C /" data-aliases="/ C E /" data-type="segment" class="geom-line" d="M 105 108 L 145.5 108 L 186 108" />
+            <path id="el-seg-AE" data-ref="/ A E /" data-aliases="/ E A /" data-type="segment" class="geom-line" d="M 26.76 87.04 L 65.88 97.52 L 105 108" />
+            <path id="el-seg-EF" data-ref="/ E F /" data-aliases="/ F E /" data-type="segment" class="geom-line" d="M 105 108 L 144.12 118.48 L 183.24 128.96" />
+            <path id="el-seg-AF" data-ref="/ A F /" data-aliases="/ F A /" data-type="segment" class="geom-line geom-overlay" d="M 26.76 87.04 L 105 108 L 183.24 128.96" />
+            <path id="el-seg-DB" data-ref="/ D B /" data-aliases="/ B D /" data-type="segment" class="geom-line" d="M 132.7 31.88 L 145.95 100.03 L 159.2 168.19" />
+            <path id="el-seg-DC" data-ref="/ D C /" data-aliases="/ C D /" data-type="segment" class="geom-line" d="M 132.7 31.88 L 159.35 69.94 L 186 108" />
+            <path id="el-seg-DE" data-ref="/ D E /" data-aliases="/ E D /" data-type="segment" class="geom-line" d="M 132.7 31.88 L 118.85 69.94 L 105 108" />
+            <path id="el-seg-EG" data-ref="/ E G /" data-aliases="/ G E /" data-type="segment" class="geom-line" d="M 105 108 L 91.15 146.06 L 77.3 184.12" />
+            <path id="el-seg-DG" data-ref="/ D G /" data-aliases="/ G D /" data-type="segment" class="geom-line geom-overlay" d="M 132.7 31.88 L 105 108 L 77.3 184.12" />
+            <path id="el-ang-BEC" data-ref="&lt; B E C )" data-aliases="&lt; C E B )" data-type="wedge" d="M 105.00 108.00 L 131.00 108.00 A 26.0 26.0 0 0 1 122.40 127.32 Z" class="wedge angle geom-overlay" />
+            <path id="el-ang-BAC" data-ref="&lt; B A C )" data-aliases="&lt; C A B )" data-type="wedge" d="M 26.76 87.04 L 54.52 90.69 A 28.0 28.0 0 0 1 50.62 101.66 Z" class="wedge angle geom-overlay" />
+            <path id="el-ang-EAB" data-ref="&lt; E A B )" data-aliases="&lt; B A E ) | &lt; F A B )" data-type="wedge" d="M 26.76 87.04 L 49.94 93.25 A 24.0 24.0 0 0 1 47.21 99.57 Z" class="wedge angle geom-overlay" />
+            <path id="el-ang-EBA" data-ref="&lt; E B A )" data-aliases="&lt; A B E )" data-type="wedge" d="M 159.20 168.19 L 138.74 155.66 A 24.0 24.0 0 0 1 143.14 150.36 Z" class="wedge angle geom-overlay" />
+            <path id="el-ang-BEF" data-ref="&lt; B E F )" data-aliases="&lt; F E B )" data-type="wedge" d="M 105.00 108.00 L 126.25 113.69 A 22.0 22.0 0 0 1 119.72 124.35 Z" class="wedge angle geom-overlay" />
+            <path id="el-ang-FEC" data-ref="&lt; F E C )" data-aliases="&lt; C E F )" data-type="wedge" d="M 105.00 108.00 L 127.00 108.00 A 22.0 22.0 0 0 1 126.25 113.69 Z" class="wedge angle geom-overlay" />
+            <path id="el-ang-EAC" data-ref="&lt; E A C )" data-aliases="&lt; C A E ) | &lt; F A C )" data-type="wedge" d="M 26.76 87.04 L 50.55 90.17 A 24.0 24.0 0 0 1 49.94 93.25 Z" class="wedge angle geom-overlay" />
+            <path id="el-ang-BDC" data-ref="&lt; B D C )" data-aliases="&lt; C D B )" data-type="wedge" d="M 132.70 31.88 L 146.79 52.01 A 24.0 24.0 0 0 1 137.28 55.44 Z" class="wedge angle geom-overlay" />
+            <path id="el-ang-GEC" data-ref="&lt; G E C )" data-aliases="&lt; C E G )" data-type="wedge" d="M 105.00 108.00 L 125.00 108.00 A 20.0 20.0 0 0 1 98.16 126.80 Z" class="wedge angle geom-overlay" />
+            <path id="el-ang-EDC" data-ref="&lt; E D C )" data-aliases="&lt; C D E ) | &lt; G D C )" data-type="wedge" d="M 132.70 31.88 L 145.62 50.33 A 22.5 22.5 0 0 1 125.00 53.02 Z" class="wedge angle geom-overlay" />
+            <path id="el-ang-GEB" data-ref="&lt; G E B )" data-aliases="&lt; B E G )" data-type="wedge" d="M 105.00 108.00 L 118.38 122.86 A 20.0 20.0 0 0 1 98.16 126.80 Z" class="wedge angle geom-overlay" />
+            <path id="el-ang-EDB" data-ref="&lt; E D B )" data-aliases="&lt; B D E ) | &lt; G D B )" data-type="wedge" d="M 132.70 31.88 L 136.99 53.97 A 22.5 22.5 0 0 1 125.00 53.02 Z" class="wedge angle geom-overlay" />
+          </g>
+          <g id="highlights" style="pointer-events: none;">
+            <circle id="hl-circle-ABC" data-ref="( E C )" data-aliases="( A B C )" cx="105" cy="108" r="81" class="geom-circle geom-overlay" />
+            <path id="hl-arc-BC" data-ref="( B C )" data-aliases="( C B ) | &lt; B F C )" d="M 186.00 108.00 A 81.0 81.0 0 0 1 159.20 168.19" class="geom-arc geom-overlay" />
+            <polygon id="hl-tri-EAB" data-ref="&lt; E A B &gt;" points="105,108 26.76,87.04 159.20,168.19" class="geom-polygon geom-overlay" />
+            <polygon id="hl-tri-EAC" data-ref="&lt; E A C &gt;" points="105,108 26.76,87.04 186,108" class="geom-polygon geom-overlay" />
+            <polygon id="hl-tri-EDB" data-ref="&lt; E D B &gt;" points="105,108 132.70,31.88 159.20,168.19" class="geom-polygon geom-overlay" />
+            <polygon id="hl-tri-EDC" data-ref="&lt; E D C &gt;" points="105,108 132.70,31.88 186,108" class="geom-polygon geom-overlay" />
+            <path id="hl-seg-AB" data-ref="/ A B /" data-aliases="/ B A /" class="geom-line geom-overlay" d="M 26.76 87.04 L 92.98 127.62 L 159.2 168.19" />
+            <path id="hl-seg-AC" data-ref="/ A C /" data-aliases="/ C A /" class="geom-line geom-overlay" d="M 26.76 87.04 L 106.38 97.52 L 186 108" />
+            <path id="hl-seg-EB" data-ref="/ E B /" data-aliases="/ B E /" class="geom-line geom-overlay" d="M 105 108 L 132.1 138.09 L 159.2 168.19" />
+            <path id="hl-seg-EC" data-ref="/ E C /" data-aliases="/ C E /" class="geom-line geom-overlay" d="M 105 108 L 145.5 108 L 186 108" />
+            <path id="hl-seg-AE" data-ref="/ A E /" data-aliases="/ E A /" class="geom-line geom-overlay" d="M 26.76 87.04 L 65.88 97.52 L 105 108" />
+            <path id="hl-seg-EF" data-ref="/ E F /" data-aliases="/ F E /" class="geom-line geom-overlay" d="M 105 108 L 144.12 118.48 L 183.24 128.96" />
+            <path id="hl-seg-AF" data-ref="/ A F /" data-aliases="/ F A /" class="geom-line geom-overlay" d="M 26.76 87.04 L 105 108 L 183.24 128.96" />
+            <path id="hl-seg-DB" data-ref="/ D B /" data-aliases="/ B D /" class="geom-line geom-overlay" d="M 132.7 31.88 L 145.95 100.03 L 159.2 168.19" />
+            <path id="hl-seg-DC" data-ref="/ D C /" data-aliases="/ C D /" class="geom-line geom-overlay" d="M 132.7 31.88 L 159.35 69.94 L 186 108" />
+            <path id="hl-seg-DE" data-ref="/ D E /" data-aliases="/ E D /" class="geom-line geom-overlay" d="M 132.7 31.88 L 118.85 69.94 L 105 108" />
+            <path id="hl-seg-EG" data-ref="/ E G /" data-aliases="/ G E /" class="geom-line geom-overlay" d="M 105 108 L 91.15 146.06 L 77.3 184.12" />
+            <path id="hl-seg-DG" data-ref="/ D G /" data-aliases="/ G D /" class="geom-line geom-overlay" d="M 132.7 31.88 L 105 108 L 77.3 184.12" />
+            <path id="hl-ang-BEC" data-ref="&lt; B E C )" data-aliases="&lt; C E B )" d="M 105.00 108.00 L 131.00 108.00 A 26.0 26.0 0 0 1 122.40 127.32 Z" class="wedge angle geom-overlay" />
+            <path id="hl-ang-BAC" data-ref="&lt; B A C )" data-aliases="&lt; C A B )" d="M 26.76 87.04 L 54.52 90.69 A 28.0 28.0 0 0 1 50.62 101.66 Z" class="wedge angle geom-overlay" />
+            <path id="hl-ang-EAB" data-ref="&lt; E A B )" data-aliases="&lt; B A E ) | &lt; F A B )" d="M 26.76 87.04 L 49.94 93.25 A 24.0 24.0 0 0 1 47.21 99.57 Z" class="wedge angle geom-overlay" />
+            <path id="hl-ang-EBA" data-ref="&lt; E B A )" data-aliases="&lt; A B E )" d="M 159.20 168.19 L 138.74 155.66 A 24.0 24.0 0 0 1 143.14 150.36 Z" class="wedge angle geom-overlay" />
+            <path id="hl-ang-BEF" data-ref="&lt; B E F )" data-aliases="&lt; F E B )" d="M 105.00 108.00 L 126.25 113.69 A 22.0 22.0 0 0 1 119.72 124.35 Z" class="wedge angle geom-overlay" />
+            <path id="hl-ang-FEC" data-ref="&lt; F E C )" data-aliases="&lt; C E F )" d="M 105.00 108.00 L 127.00 108.00 A 22.0 22.0 0 0 1 126.25 113.69 Z" class="wedge angle geom-overlay" />
+            <path id="hl-ang-EAC" data-ref="&lt; E A C )" data-aliases="&lt; C A E ) | &lt; F A C )" d="M 26.76 87.04 L 50.55 90.17 A 24.0 24.0 0 0 1 49.94 93.25 Z" class="wedge angle geom-overlay" />
+            <path id="hl-ang-BDC" data-ref="&lt; B D C )" data-aliases="&lt; C D B )" d="M 132.70 31.88 L 146.79 52.01 A 24.0 24.0 0 0 1 137.28 55.44 Z" class="wedge angle geom-overlay" />
+            <path id="hl-ang-GEC" data-ref="&lt; G E C )" data-aliases="&lt; C E G )" d="M 105.00 108.00 L 125.00 108.00 A 20.0 20.0 0 0 1 98.16 126.80 Z" class="wedge angle geom-overlay" />
+            <path id="hl-ang-EDC" data-ref="&lt; E D C )" data-aliases="&lt; C D E ) | &lt; G D C )" d="M 132.70 31.88 L 145.62 50.33 A 22.5 22.5 0 0 1 125.00 53.02 Z" class="wedge angle geom-overlay" />
+            <path id="hl-ang-GEB" data-ref="&lt; G E B )" data-aliases="&lt; B E G )" d="M 105.00 108.00 L 118.38 122.86 A 20.0 20.0 0 0 1 98.16 126.80 Z" class="wedge angle geom-overlay" />
+            <path id="hl-ang-EDB" data-ref="&lt; E D B )" data-aliases="&lt; B D E ) | &lt; G D B )" d="M 132.70 31.88 L 136.99 53.97 A 22.5 22.5 0 0 1 125.00 53.02 Z" class="wedge angle geom-overlay" />
+            <path id="hl-arc-BEC" data-ref="&lt; B E C )" data-aliases="&lt; C E B )" d="M 131 108 A 26 26 0 0 1 128.75 118.57 A 26 26 0 0 1 122.4 127.32" class="geom-ang-arc geom-overlay" />
+            <path id="hl-arc-BAC" data-ref="&lt; B A C )" data-aliases="&lt; C A B )" d="M 54.52 90.69 A 28 28 0 0 1 53.15 96.38 A 28 28 0 0 1 50.62 101.66" class="geom-ang-arc geom-overlay" />
+            <path id="hl-arc-EAB" data-ref="&lt; E A B )" data-aliases="&lt; B A E ) | &lt; F A B )" d="M 49.94 93.25 A 24 24 0 0 1 48.81 96.51 A 24 24 0 0 1 47.21 99.57" class="geom-ang-arc geom-overlay" />
+            <path id="hl-arc-EBA" data-ref="&lt; E B A )" data-aliases="&lt; A B E )" d="M 138.74 155.66 A 24 24 0 0 1 140.74 152.85 A 24 24 0 0 1 143.14 150.36" class="geom-ang-arc geom-overlay" />
+            <path id="hl-arc-BEF" data-ref="&lt; B E F )" data-aliases="&lt; F E B )" d="M 126.25 113.69 A 22 22 0 0 1 123.76 119.49 A 22 22 0 0 1 119.72 124.35" class="geom-ang-arc geom-overlay" />
+            <path id="hl-arc-FEC" data-ref="&lt; F E C )" data-aliases="&lt; C E F )" d="M 127 108 A 22 22 0 0 1 126.81 110.87 A 22 22 0 0 1 126.25 113.69" class="geom-ang-arc geom-overlay" />
+            <path id="hl-arc-EAC" data-ref="&lt; E A C )" data-aliases="&lt; C A E ) | &lt; F A C )" d="M 50.55 90.17 A 24 24 0 0 1 50.3 91.72 A 24 24 0 0 1 49.94 93.25" class="geom-ang-arc geom-overlay" />
+            <path id="hl-arc-BDC" data-ref="&lt; B D C )" data-aliases="&lt; C D B )" d="M 146.79 52.01 A 24 24 0 0 1 142.08 53.97 A 24 24 0 0 1 137.28 55.44" class="geom-ang-arc geom-overlay" />
+            <path id="hl-arc-GEC" data-ref="&lt; G E C )" data-aliases="&lt; C E G )" d="M 125 108 A 20 20 0 0 1 116.47 124.38 A 20 20 0 0 1 98.16 126.8" class="geom-ang-arc geom-overlay" />
+            <path id="hl-arc-EDC" data-ref="&lt; E D C )" data-aliases="&lt; C D E ) | &lt; G D C )" d="M 145.62 50.33 A 22.5 22.5 0 0 1 135.63 54.19 A 22.5 22.5 0 0 1 125 53.02" class="geom-ang-arc geom-overlay" />
+            <path id="hl-arc-GEB" data-ref="&lt; G E B )" data-aliases="&lt; B E G )" d="M 118.38 122.86 A 20 20 0 0 1 108.82 127.63 A 20 20 0 0 1 98.16 126.8" class="geom-ang-arc geom-overlay" />
+            <path id="hl-arc-EDB" data-ref="&lt; E D B )" data-aliases="&lt; B D E ) | &lt; G D B )" d="M 136.99 53.97 A 22.5 22.5 0 0 1 130.93 54.31 A 22.5 22.5 0 0 1 125 53.02" class="geom-ang-arc geom-overlay" />
+          </g>
+          <g id="points">
+            <circle id="el-pt-A" data-ref="A" data-type="point" cx="26.76" cy="87.04" r="3" class="geom-point" />
+            <circle id="el-pt-B" data-ref="B" data-type="point" cx="159.20" cy="168.19" r="3" class="geom-point" />
+            <circle id="el-pt-C" data-ref="C" data-type="point" cx="186" cy="108" r="3" class="geom-point" />
+            <circle id="el-pt-D" data-ref="D" data-type="point" cx="132.70" cy="31.88" r="3" class="geom-point" />
+            <circle id="el-pt-E" data-ref="E" data-type="point" cx="105" cy="108" r="3" class="geom-point" />
+            <circle id="el-pt-F" data-ref="F" data-type="point" cx="183.24" cy="128.96" r="3" class="geom-point" />
+            <circle id="el-pt-G" data-ref="G" data-type="point" cx="77.30" cy="184.12" r="3" class="geom-point" />
+          </g>
+          <g id="labels">
+            <text id="lbl-A" data-ref="A" x="17" y="85" text-anchor="middle" class="geom-label">A</text>
+            <text id="lbl-B" data-ref="B" x="164" y="182" text-anchor="middle" class="geom-label">B</text>
+            <text id="lbl-C" data-ref="C" x="196" y="113" text-anchor="middle" class="geom-label">C</text>
+            <text id="lbl-D" data-ref="D" x="137" y="22" text-anchor="middle" class="geom-label">D</text>
+            <text id="lbl-E" data-ref="E" x="95" y="117" text-anchor="middle" class="geom-label">E</text>
+            <text id="lbl-F" data-ref="F" x="192" y="138" text-anchor="middle" class="geom-label">F</text>
+            <text id="lbl-G" data-ref="G" x="74" y="198" text-anchor="middle" class="geom-label">G</text>
+          </g>
+        </svg>
+        </figure>
+        <div class="geom-step geom-step-given" data-step-kind="given"><span class="geom-step-badge geom-badge-given">given</span> <span class="geom-ref" data-ref="g1:( A B C )" title="( A B C )">( A B C )</span> be a circle, let <span class="geom-ref" data-ref="g1:&lt; B E C )" title="&lt; B E C )">&lt; B E C )</span> be an angle at its center, <span class="geom-ref" data-ref="g1:&lt; B A C )" title="&lt; B A C )">&lt; B A C )</span> an angle at the arc, let them have the same arc <span class="geom-ref" data-ref="g1:( B C )" title="( B C )">( B C )</span> as base</div>
+        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> Let <span class="geom-ref" data-ref="g1:/ A E /" title="/ A E /">/ A E /</span> be joined and drawn through to <span class="geom-ref" data-ref="g1:F" title="F">F</span>.</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.25/index.html#g-25" data-ref-target="G.25" title="G.25: In an isosceles triangle, the angles at the base are equal, and if the equal sides are extended, the angles under the base are equal.">isosceles_base_angles</a></span><span class="geom-step-badge geom-badge-assert">assert</span> Since <span class="geom-ref" data-ref="g1:/ E A /" title="/ E A /">/ E A /</span> is <span class="geom-eq-ref" data-assert-equal="g1:/ E A / = g1:/ E B /" title="/ E A / = / E B /">equal</span> to <span class="geom-ref" data-ref="g1:/ E B /" title="/ E B /">/ E B /</span> → <span class="geom-ref" data-ref="g1:&lt; E A B )" title="&lt; E A B )">&lt; E A B )</span> is also <span class="geom-eq-ref" data-assert-equal="g1:&lt; E A B ) = g1:&lt; E B A )" title="&lt; E A B ) = &lt; E B A )">equal</span> to <span class="geom-ref" data-ref="g1:&lt; E B A )" title="&lt; E B A )">&lt; E B A )</span>.</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore <span class="geom-ref" data-ref="g1:&lt; E A B )" title="&lt; E A B )">&lt; E A B )</span>, <span class="geom-ref" data-ref="g1:&lt; E B A )" title="&lt; E B A )">&lt; E B A )</span> are double of <span class="geom-ref" data-ref="g1:&lt; E A B )" title="&lt; E A B )">&lt; E A B )</span>.</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.59/index.html#g-59" data-ref-target="G.59" title="G.59: In any triangle, an exterior angle equals the sum of the two opposite interior angles, and the three interior angles sum to two right angles.">triangle_angle_sum</a></span><span class="geom-step-badge geom-badge-assert">assert</span> <span class="geom-ref" data-ref="g1:&lt; B E F )" title="&lt; B E F )">&lt; B E F )</span> is equal to <span class="geom-ref" data-ref="g1:&lt; E A B )" title="&lt; E A B )">&lt; E A B )</span>, <span class="geom-ref" data-ref="g1:&lt; E B A )" title="&lt; E B A )">&lt; E B A )</span></div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore <span class="geom-ref" data-ref="g1:&lt; B E F )" title="&lt; B E F )">&lt; B E F )</span> is also double of <span class="geom-ref" data-ref="g1:&lt; E A B )" title="&lt; E A B )">&lt; E A B )</span>.</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> The same reason</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> <span class="geom-ref" data-ref="g1:&lt; F E C )" title="&lt; F E C )">&lt; F E C )</span> is also double of <span class="geom-ref" data-ref="g1:&lt; E A C )" title="&lt; E A C )">&lt; E A C )</span>.</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Therefore the whole angle <span class="geom-ref" data-ref="g1:&lt; B E C )" title="&lt; B E C )">&lt; B E C )</span> is double of the whole angle <span class="geom-ref" data-ref="g1:&lt; B A C )" title="&lt; B A C )">&lt; B A C )</span>.</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Again let another <a class="term-ref glossary-term" id="occ-term-g-4-1" href="../glossary.html#term-g-4" data-term="G.4" title="Term: G.4">segment</a> be inflected, and let there be another angle <span class="geom-ref" data-ref="g1:&lt; B D C )" title="&lt; B D C )">&lt; B D C )</span></div>
+        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> <a class="geom-fn" href="../G.13/index.html#g-13" data-ref-target="G.13" title="G.13: Construct a segment / A B / between any two points A, B.">segment</a>(<span class="geom-ref" data-ref="g1:D" title="D">D</span>, <span class="geom-ref" data-ref="g1:E" title="E">E</span>) → <span class="geom-ref" data-ref="g1:/ D E /" title="/ D E /">/ D E /</span>, <a class="geom-fn" href="../G.18/index.html#g-18" data-ref-target="G.18" title="G.18: Extend a segment / A B / continuously along a line [ A B ] to / B C /.">extend</a>(<span class="geom-ref" data-ref="g1:/ D E /" title="/ D E /">/ D E /</span>) → <span class="geom-ref" data-ref="g1:G" title="G">G</span></div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Similarly then we can prove that <span class="geom-ref" data-ref="g1:&lt; G E C )" title="&lt; G E C )">&lt; G E C )</span> is double of <span class="geom-ref" data-ref="g1:&lt; E D C )" title="&lt; E D C )">&lt; E D C )</span>,</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Of which <span class="geom-ref" data-ref="g1:&lt; G E B )" title="&lt; G E B )">&lt; G E B )</span> is double of <span class="geom-ref" data-ref="g1:&lt; E D B )" title="&lt; E D B )">&lt; E D B )</span>; therefore <span class="geom-ref" data-ref="g1:&lt; B E C )" title="&lt; B E C )">&lt; B E C )</span> which remains is double of the</div>
+        <div class="geom-step geom-step-conclude" data-step-kind="conclude"><span class="geom-step-badge geom-badge-conclude">conclude</span> Angle <span class="geom-ref" data-ref="g1:&lt; B D C )" title="&lt; B D C )">&lt; B D C )</span>.</div>
+        <section class="level-2" id="dependency-graph">
+        <h2>Dependency Graph<a class="headerlink" href="#dependency-graph" title="Link to this heading">¶</a></h2>
+        <div class="graphviz"><object data="../../_images/graphviz-c741986f6f10b2c77cb6c1ad9d649475c8da0a8e.svg" type="image/svg+xml" class="graphviz">
+        <p class="warning">digraph {
+          bgcolor=&quot;transparent&quot;;
+          node [shape=box, style=&quot;rounded,filled&quot;, fontname=&quot;Helvetica&quot;, fontsize=11, color=&quot;#d6d3cd&quot;, fontcolor=&quot;#ffffff&quot;];
+          edge [color=&quot;#8c857b&quot;, fontcolor=&quot;#8c857b&quot;, arrowsize=0.75];
+          rankdir=&quot;TB&quot;;
+          &quot;G.1&quot; [label=&quot;G.1&quot;, tooltip=&quot;G.1 (I.def.1): A point A is that which has no part.&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.1/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.2&quot; [label=&quot;G.2&quot;, tooltip=&quot;G.2 (I.def.2): A line [ A B ] is a projection of a relationship of two points A, B.&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.2/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.3&quot; [label=&quot;G.3&quot;, tooltip=&quot;G.3 (I.def.3): The extremities of a segment / A B / are points A, B.&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.3/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.4&quot; [label=&quot;G.4&quot;, tooltip=&quot;G.4 (I.def.4): A segment / A B / is a portion of a line [ A B ] between two points A, B on the line.&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.4/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.5&quot; [label=&quot;G.5&quot;, tooltip=&quot;G.5 (I.def.5): A surface is that which has length and breadth only.&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.5/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.6&quot; [label=&quot;G.6&quot;, tooltip=&quot;G.6 (I.def.6): The extremities of a surface are lines or arcs.&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.6/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.7&quot; [label=&quot;G.7&quot;, tooltip=&quot;G.7 (I.def.7): A plane surface lies evenly with the lines on itself.&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.7/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.8&quot; [label=&quot;G.8&quot;, tooltip=&quot;G.8 (I.def.13): A boundary is the extremity of anything.&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.8/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.9&quot; [label=&quot;G.9&quot;, tooltip=&quot;G.9 (I.def.14): A figure is that which is contained by any boundary or boundaries.&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.9/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.10&quot; [label=&quot;G.10&quot;, tooltip=&quot;G.10 (I.def.15): A circle ( A B ) is a plane figure contained by one arc defined by a center A and a point B establishing its defining radius / A B /, such that all segments / A B /, / A C /, / A D...&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.10/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.11&quot; [label=&quot;G.11&quot;, tooltip=&quot;G.11 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.11/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.12&quot; [label=&quot;G.12&quot;, tooltip=&quot;G.12 (I.def.20): Of trilateral figures, an equilateral triangle &lt; A B C &gt; has three equal sides, an isosceles triangle &lt; D E F &gt; has two equal sides, and a scalene triangle &lt; G H K &gt; has three uneq...&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.12/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.13&quot; [label=&quot;G.13&quot;, tooltip=&quot;G.13 (I.post.1): Construct a segment / A B / between any two points A, B.&quot;, fillcolor=&quot;#444422&quot;, URL=&quot;../G.13/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.14&quot; [label=&quot;G.14&quot;, tooltip=&quot;G.14 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.14/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.15&quot; [label=&quot;G.15&quot;, tooltip=&quot;G.15 (I.post.3): Construct a circle ( A B ) with center A and defining radius point B.&quot;, fillcolor=&quot;#444422&quot;, URL=&quot;../G.15/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.16&quot; [label=&quot;G.16&quot;, tooltip=&quot;G.16 (I.cn.1): Things equal to the same thing are equal to one another.&quot;, fillcolor=&quot;#442222&quot;, URL=&quot;../G.16/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.17&quot; [label=&quot;G.17&quot;, tooltip=&quot;G.17 (I.1): Construct an equilateral triangle on a given segment.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.17/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.18&quot; [label=&quot;G.18&quot;, tooltip=&quot;G.18 (I.post.2): Extend a segment / A B / continuously along a line [ A B ] to / B C /.&quot;, fillcolor=&quot;#444422&quot;, URL=&quot;../G.18/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.19&quot; [label=&quot;G.19&quot;, tooltip=&quot;G.19 (I.cn.3): If equals are subtracted from equals, the remainders are equal.&quot;, fillcolor=&quot;#442222&quot;, URL=&quot;../G.19/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.20&quot; [label=&quot;G.20&quot;, tooltip=&quot;G.20 (I.2): Construct at a given point a segment equal to a given segment.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.20/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.21&quot; [label=&quot;G.21&quot;, tooltip=&quot;G.21 (I.3): Cut off from the greater of two unequal segments a segment equal to the less.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.21/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.22&quot; [label=&quot;G.22&quot;, tooltip=&quot;G.22 (I.def.8): A plane angle is the inclination to one another of two lines or arcs in a plane that meet and do not lie on the same line.&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.22/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.23&quot; [label=&quot;G.23&quot;, tooltip=&quot;G.23 (I.cn.4): Things / A B /, / D E / that coincide with one another are equal to one another.&quot;, fillcolor=&quot;#442222&quot;, URL=&quot;../G.23/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.24&quot; [label=&quot;G.24&quot;, tooltip=&quot;G.24 (I.4): Triangles with two sides and the included angle equal are congruent (SAS).&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.24/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.25&quot; [label=&quot;G.25&quot;, tooltip=&quot;G.25 (I.5): In an isosceles triangle, the angles at the base are equal, and if the equal sides are extended, the angles under the base are equal.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.25/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.27&quot; [label=&quot;G.27&quot;, tooltip=&quot;G.27 (I.7): On the same segment and on the same side, there cannot be constructed two distinct triangles with both pairs of conterminous sides equal.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.27/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.28&quot; [label=&quot;G.28&quot;, tooltip=&quot;G.28 (I.8): Triangles with all three corresponding sides equal have their corresponding angles equal (SSS).&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.28/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.29&quot; [label=&quot;G.29&quot;, tooltip=&quot;G.29 (I.def.9): A rectilineal angle is contained by two segments or lines.&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.29/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.30&quot; [label=&quot;G.30&quot;, tooltip=&quot;G.30 (I.9): Bisect a given angle.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.30/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.31&quot; [label=&quot;G.31&quot;, tooltip=&quot;G.31 (I.10): Bisect a given segment.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.31/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.32&quot; [label=&quot;G.32&quot;, tooltip=&quot;G.32 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.32/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.33&quot; [label=&quot;G.33&quot;, tooltip=&quot;G.33 (I.11): Construct a segment at right angles to a given line from a given point on it.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.33/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.35&quot; [label=&quot;G.35&quot;, tooltip=&quot;G.35 (I.cn.2): If equals are added to equals, the wholes are equal.&quot;, fillcolor=&quot;#442222&quot;, URL=&quot;../G.35/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.36&quot; [label=&quot;G.36&quot;, tooltip=&quot;G.36 (I.13): A segment standing on a line makes either two right angles or adjacent angles summing to two right angles.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.36/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.37&quot; [label=&quot;G.37&quot;, tooltip=&quot;G.37 (I.post.4): All right angles are equal.&quot;, fillcolor=&quot;#444422&quot;, URL=&quot;../G.37/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.39&quot; [label=&quot;G.39&quot;, tooltip=&quot;G.39 (I.15): Intersecting lines make their vertical angles equal.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.39/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.40&quot; [label=&quot;G.40&quot;, tooltip=&quot;G.40 (I.cn.5): The whole is greater than the part.&quot;, fillcolor=&quot;#442222&quot;, URL=&quot;../G.40/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.41&quot; [label=&quot;G.41&quot;, tooltip=&quot;G.41 (I.16): In any triangle, if one side is extended, the exterior angle is greater than either opposite interior angle.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.41/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.43&quot; [label=&quot;G.43&quot;, tooltip=&quot;G.43 (I.18): In any triangle, the greater side subtends the greater angle.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.43/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.44&quot; [label=&quot;G.44&quot;, tooltip=&quot;G.44 (I.19): In any triangle, the greater angle is subtended by the greater side.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.44/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.45&quot; [label=&quot;G.45&quot;, tooltip=&quot;G.45 (I.20): In any triangle, the sum of any two sides is greater than the remaining side.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.45/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.47&quot; [label=&quot;G.47&quot;, tooltip=&quot;G.47 (I.22): Construct a triangle from three segments equal to three given segments satisfying the triangle inequality.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.47/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.48&quot; [label=&quot;G.48&quot;, tooltip=&quot;G.48 (I.23): Construct on a given line at a given point an angle equal to a given angle.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.48/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.52&quot; [label=&quot;G.52&quot;, tooltip=&quot;G.52 (I.def.23): Parallel lines are lines in the same plane which, extended indefinitely in both directions, do not meet.&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.52/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.53&quot; [label=&quot;G.53&quot;, tooltip=&quot;G.53 (I.27): If a transversal cutting two lines makes the alternate interior angles equal, the lines are parallel.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.53/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.55&quot; [label=&quot;G.55&quot;, tooltip=&quot;G.55 (I.post.5): Two lines intersected by a transversal with interior angles on one side summing to less than two right angles meet on that side.&quot;, fillcolor=&quot;#444422&quot;, URL=&quot;../G.55/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.56&quot; [label=&quot;G.56&quot;, tooltip=&quot;G.56 (I.29): A transversal cutting parallel lines makes alternate interior angles equal, exterior and opposite interior angles equal, and same-side interior angles supplementary.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.56/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.58&quot; [label=&quot;G.58&quot;, tooltip=&quot;G.58 (I.31): Construct through a given point a line parallel to a given line.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.58/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.59&quot; [label=&quot;G.59&quot;, tooltip=&quot;G.59 (I.32): In any triangle, an exterior angle equals the sum of the two opposite interior angles, and the three interior angles sum to two right angles.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.59/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.122&quot; [label=&quot;G.122&quot;, tooltip=&quot;G.122 (III.def.10): Asector of a circle is thefigure which, when anangle is constructed at thecenter of thecircle, is contained by thesegments containing the angle and the arc cut off by them.&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.122/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.123&quot; [label=&quot;G.123&quot;, tooltip=&quot;G.123 (III.20): In a circle the angle at the center is double of the angle at the arc, when the angles have the same arc as base.&quot;, penwidth=2.5, color=&quot;#e8b85a&quot;, fillcolor=&quot;#4a453b&quot;, URL=&quot;index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.2&quot; -&gt; &quot;G.1&quot;;
+          &quot;G.3&quot; -&gt; &quot;G.1&quot;;
+          &quot;G.4&quot; -&gt; &quot;G.1&quot;;
+          &quot;G.10&quot; -&gt; &quot;G.1&quot;;
+          &quot;G.13&quot; -&gt; &quot;G.1&quot;;
+          &quot;G.14&quot; -&gt; &quot;G.1&quot;;
+          &quot;G.20&quot; -&gt; &quot;G.1&quot;;
+          &quot;G.27&quot; -&gt; &quot;G.1&quot;;
+          &quot;G.33&quot; -&gt; &quot;G.1&quot;;
+          &quot;G.48&quot; -&gt; &quot;G.1&quot;;
+          &quot;G.58&quot; -&gt; &quot;G.1&quot;;
+          &quot;G.3&quot; -&gt; &quot;G.2&quot;;
+          &quot;G.4&quot; -&gt; &quot;G.2&quot;;
+          &quot;G.6&quot; -&gt; &quot;G.2&quot;;
+          &quot;G.22&quot; -&gt; &quot;G.2&quot;;
+          &quot;G.29&quot; -&gt; &quot;G.2&quot;;
+          &quot;G.4&quot; -&gt; &quot;G.3&quot;;
+          &quot;G.8&quot; -&gt; &quot;G.3&quot;;
+          &quot;G.20&quot; -&gt; &quot;G.3&quot;;
+          &quot;G.27&quot; -&gt; &quot;G.3&quot;;
+          &quot;G.7&quot; -&gt; &quot;G.4&quot;;
+          &quot;G.10&quot; -&gt; &quot;G.4&quot;;
+          &quot;G.11&quot; -&gt; &quot;G.4&quot;;
+          &quot;G.13&quot; -&gt; &quot;G.4&quot;;
+          &quot;G.17&quot; -&gt; &quot;G.4&quot;;
+          &quot;G.18&quot; -&gt; &quot;G.4&quot;;
+          &quot;G.20&quot; -&gt; &quot;G.4&quot;;
+          &quot;G.21&quot; -&gt; &quot;G.4&quot;;
+          &quot;G.22&quot; -&gt; &quot;G.4&quot;;
+          &quot;G.24&quot; -&gt; &quot;G.4&quot;;
+          &quot;G.25&quot; -&gt; &quot;G.4&quot;;
+          &quot;G.27&quot; -&gt; &quot;G.4&quot;;
+          &quot;G.28&quot; -&gt; &quot;G.4&quot;;
+          &quot;G.31&quot; -&gt; &quot;G.4&quot;;
+          &quot;G.32&quot; -&gt; &quot;G.4&quot;;
+          &quot;G.33&quot; -&gt; &quot;G.4&quot;;
+          &quot;G.36&quot; -&gt; &quot;G.4&quot;;
+          &quot;G.39&quot; -&gt; &quot;G.4&quot;;
+          &quot;G.47&quot; -&gt; &quot;G.4&quot;;
+          &quot;G.48&quot; -&gt; &quot;G.4&quot;;
+          &quot;G.52&quot; -&gt; &quot;G.4&quot;;
+          &quot;G.53&quot; -&gt; &quot;G.4&quot;;
+          &quot;G.55&quot; -&gt; &quot;G.4&quot;;
+          &quot;G.56&quot; -&gt; &quot;G.4&quot;;
+          &quot;G.58&quot; -&gt; &quot;G.4&quot;;
+          &quot;G.122&quot; -&gt; &quot;G.4&quot;;
+          &quot;G.6&quot; -&gt; &quot;G.5&quot;;
+          &quot;G.7&quot; -&gt; &quot;G.5&quot;;
+          &quot;G.10&quot; -&gt; &quot;G.6&quot;;
+          &quot;G.10&quot; -&gt; &quot;G.7&quot;;
+          &quot;G.22&quot; -&gt; &quot;G.7&quot;;
+          &quot;G.52&quot; -&gt; &quot;G.7&quot;;
+          &quot;G.9&quot; -&gt; &quot;G.8&quot;;
+          &quot;G.10&quot; -&gt; &quot;G.9&quot;;
+          &quot;G.24&quot; -&gt; &quot;G.9&quot;;
+          &quot;G.122&quot; -&gt; &quot;G.9&quot;;
+          &quot;G.14&quot; -&gt; &quot;G.10&quot;;
+          &quot;G.15&quot; -&gt; &quot;G.10&quot;;
+          &quot;G.17&quot; -&gt; &quot;G.10&quot;;
+          &quot;G.21&quot; -&gt; &quot;G.10&quot;;
+          &quot;G.122&quot; -&gt; &quot;G.10&quot;;
+          &quot;G.123&quot; -&gt; &quot;G.10&quot;;
+          &quot;G.12&quot; -&gt; &quot;G.11&quot;;
+          &quot;G.24&quot; -&gt; &quot;G.11&quot;;
+          &quot;G.28&quot; -&gt; &quot;G.11&quot;;
+          &quot;G.41&quot; -&gt; &quot;G.11&quot;;
+          &quot;G.43&quot; -&gt; &quot;G.11&quot;;
+          &quot;G.44&quot; -&gt; &quot;G.11&quot;;
+          &quot;G.45&quot; -&gt; &quot;G.11&quot;;
+          &quot;G.47&quot; -&gt; &quot;G.11&quot;;
+          &quot;G.59&quot; -&gt; &quot;G.11&quot;;
+          &quot;G.17&quot; -&gt; &quot;G.12&quot;;
+          &quot;G.25&quot; -&gt; &quot;G.12&quot;;
+          &quot;G.17&quot; -&gt; &quot;G.13&quot;;
+          &quot;G.20&quot; -&gt; &quot;G.13&quot;;
+          &quot;G.25&quot; -&gt; &quot;G.13&quot;;
+          &quot;G.27&quot; -&gt; &quot;G.13&quot;;
+          &quot;G.41&quot; -&gt; &quot;G.13&quot;;
+          &quot;G.15&quot; -&gt; &quot;G.14&quot;;
+          &quot;G.122&quot; -&gt; &quot;G.14&quot;;
+          &quot;G.17&quot; -&gt; &quot;G.15&quot;;
+          &quot;G.20&quot; -&gt; &quot;G.15&quot;;
+          &quot;G.21&quot; -&gt; &quot;G.15&quot;;
+          &quot;G.17&quot; -&gt; &quot;G.16&quot;;
+          &quot;G.20&quot; -&gt; &quot;G.16&quot;;
+          &quot;G.21&quot; -&gt; &quot;G.16&quot;;
+          &quot;G.36&quot; -&gt; &quot;G.16&quot;;
+          &quot;G.39&quot; -&gt; &quot;G.16&quot;;
+          &quot;G.56&quot; -&gt; &quot;G.16&quot;;
+          &quot;G.20&quot; -&gt; &quot;G.17&quot;;
+          &quot;G.31&quot; -&gt; &quot;G.17&quot;;
+          &quot;G.33&quot; -&gt; &quot;G.17&quot;;
+          &quot;G.20&quot; -&gt; &quot;G.18&quot;;
+          &quot;G.25&quot; -&gt; &quot;G.18&quot;;
+          &quot;G.41&quot; -&gt; &quot;G.18&quot;;
+          &quot;G.20&quot; -&gt; &quot;G.19&quot;;
+          &quot;G.39&quot; -&gt; &quot;G.19&quot;;
+          &quot;G.21&quot; -&gt; &quot;G.20&quot;;
+          &quot;G.25&quot; -&gt; &quot;G.21&quot;;
+          &quot;G.30&quot; -&gt; &quot;G.21&quot;;
+          &quot;G.33&quot; -&gt; &quot;G.21&quot;;
+          &quot;G.41&quot; -&gt; &quot;G.21&quot;;
+          &quot;G.43&quot; -&gt; &quot;G.21&quot;;
+          &quot;G.47&quot; -&gt; &quot;G.21&quot;;
+          &quot;G.24&quot; -&gt; &quot;G.22&quot;;
+          &quot;G.25&quot; -&gt; &quot;G.22&quot;;
+          &quot;G.28&quot; -&gt; &quot;G.22&quot;;
+          &quot;G.29&quot; -&gt; &quot;G.22&quot;;
+          &quot;G.32&quot; -&gt; &quot;G.22&quot;;
+          &quot;G.36&quot; -&gt; &quot;G.22&quot;;
+          &quot;G.39&quot; -&gt; &quot;G.22&quot;;
+          &quot;G.41&quot; -&gt; &quot;G.22&quot;;
+          &quot;G.43&quot; -&gt; &quot;G.22&quot;;
+          &quot;G.44&quot; -&gt; &quot;G.22&quot;;
+          &quot;G.53&quot; -&gt; &quot;G.22&quot;;
+          &quot;G.55&quot; -&gt; &quot;G.22&quot;;
+          &quot;G.56&quot; -&gt; &quot;G.22&quot;;
+          &quot;G.59&quot; -&gt; &quot;G.22&quot;;
+          &quot;G.122&quot; -&gt; &quot;G.22&quot;;
+          &quot;G.123&quot; -&gt; &quot;G.22&quot;;
+          &quot;G.24&quot; -&gt; &quot;G.23&quot;;
+          &quot;G.25&quot; -&gt; &quot;G.24&quot;;
+          &quot;G.31&quot; -&gt; &quot;G.24&quot;;
+          &quot;G.41&quot; -&gt; &quot;G.24&quot;;
+          &quot;G.27&quot; -&gt; &quot;G.25&quot;;
+          &quot;G.44&quot; -&gt; &quot;G.25&quot;;
+          &quot;G.45&quot; -&gt; &quot;G.25&quot;;
+          &quot;G.123&quot; -&gt; &quot;G.25&quot;;
+          &quot;G.28&quot; -&gt; &quot;G.27&quot;;
+          &quot;G.30&quot; -&gt; &quot;G.28&quot;;
+          &quot;G.33&quot; -&gt; &quot;G.28&quot;;
+          &quot;G.48&quot; -&gt; &quot;G.28&quot;;
+          &quot;G.30&quot; -&gt; &quot;G.29&quot;;
+          &quot;G.48&quot; -&gt; &quot;G.29&quot;;
+          &quot;G.31&quot; -&gt; &quot;G.30&quot;;
+          &quot;G.41&quot; -&gt; &quot;G.31&quot;;
+          &quot;G.33&quot; -&gt; &quot;G.32&quot;;
+          &quot;G.36&quot; -&gt; &quot;G.32&quot;;
+          &quot;G.37&quot; -&gt; &quot;G.32&quot;;
+          &quot;G.55&quot; -&gt; &quot;G.32&quot;;
+          &quot;G.56&quot; -&gt; &quot;G.32&quot;;
+          &quot;G.59&quot; -&gt; &quot;G.32&quot;;
+          &quot;G.36&quot; -&gt; &quot;G.33&quot;;
+          &quot;G.36&quot; -&gt; &quot;G.35&quot;;
+          &quot;G.56&quot; -&gt; &quot;G.35&quot;;
+          &quot;G.39&quot; -&gt; &quot;G.36&quot;;
+          &quot;G.56&quot; -&gt; &quot;G.36&quot;;
+          &quot;G.59&quot; -&gt; &quot;G.36&quot;;
+          &quot;G.39&quot; -&gt; &quot;G.37&quot;;
+          &quot;G.41&quot; -&gt; &quot;G.39&quot;;
+          &quot;G.56&quot; -&gt; &quot;G.39&quot;;
+          &quot;G.41&quot; -&gt; &quot;G.40&quot;;
+          &quot;G.45&quot; -&gt; &quot;G.40&quot;;
+          &quot;G.43&quot; -&gt; &quot;G.41&quot;;
+          &quot;G.53&quot; -&gt; &quot;G.41&quot;;
+          &quot;G.44&quot; -&gt; &quot;G.43&quot;;
+          &quot;G.45&quot; -&gt; &quot;G.44&quot;;
+          &quot;G.47&quot; -&gt; &quot;G.45&quot;;
+          &quot;G.48&quot; -&gt; &quot;G.47&quot;;
+          &quot;G.58&quot; -&gt; &quot;G.48&quot;;
+          &quot;G.53&quot; -&gt; &quot;G.52&quot;;
+          &quot;G.56&quot; -&gt; &quot;G.52&quot;;
+          &quot;G.58&quot; -&gt; &quot;G.52&quot;;
+          &quot;G.58&quot; -&gt; &quot;G.53&quot;;
+          &quot;G.56&quot; -&gt; &quot;G.55&quot;;
+          &quot;G.59&quot; -&gt; &quot;G.56&quot;;
+          &quot;G.59&quot; -&gt; &quot;G.58&quot;;
+          &quot;G.123&quot; -&gt; &quot;G.59&quot;;
+          &quot;G.123&quot; -&gt; &quot;G.122&quot;;
+        }</p></object></div>
+        </section>
         <section class="level-2" id="required-for">
         <h2>Required for<a class="headerlink" href="#required-for" title="Link to this heading">¶</a></h2>
-        <p><a class="reference internal" href="../G.124/index.html#g-124" title="G.124: Inscribe in a given circle a square."><span class="std std-ref">G.124</span></a>, <a class="reference internal" href="../G.496/index.html#g-496" title="G.496: Any cone is a third part of the cylinder which has the same base with it and equal height."><span class="std std-ref">G.496</span></a>, <a class="reference internal" href="../G.497/index.html#g-497" title="G.497: *Cones and cylinders which are of the same height are to* *one another as their bases.*"><span class="std std-ref">G.497</span></a>, <a class="reference internal" href="../G.499/index.html#g-499" title="G.499: Similar cones and cylinders are to one another in the triplicate ratio of the diameters in their bases."><span class="std std-ref">G.499</span></a>, <a class="reference internal" href="../G.500/index.html#g-500" title="G.500: If a cylinder be cut by a plane which is parallel to its opposite planes, then, as the cylinder is to the cylinder, so will the axis be to the axis."><span class="std std-ref">G.500</span></a>, <a class="reference internal" href="../G.501/index.html#g-501" title="G.501: Cones and cylinders which are on equal bases are to one another as their heights."><span class="std std-ref">G.501</span></a>, <a class="reference internal" href="../G.502/index.html#g-502" title="G.502: In equal cones and cylinders the bases are reciprocally proportional to the heights; and those cones and cylinders in which the bases are reciprocally proportional to the heights…"><span class="std std-ref">G.502</span></a></p>
+        <p><a class="reference internal" href="../G.124/index.html#g-124" title="G.124: In a circle the angles in the same segment are equal."><span class="std std-ref">G.124</span></a>, <a class="reference internal" href="../G.125/index.html#g-125" title="G.125: The opposite angles of quadrilaterals in circles are equal to two right angles."><span class="std std-ref">G.125</span></a>, <a class="reference internal" href="../G.134/index.html#g-134" title="G.134: In equal circles angles standing on equal arcs are equal, whether they stand at the centres or at the arcs."><span class="std std-ref">G.134</span></a>, <a class="reference internal" href="../G.136/index.html#g-136" title="G.136: In equal circles equal arcs are subtended by equal segments."><span class="std std-ref">G.136</span></a>, <a class="reference internal" href="../G.139/index.html#g-139" title="G.139: In a circle the angle in the semicircle is right, that in a greater segment less than a right angle, and that in a less segment greater than a right angle; and further the angle…"><span class="std std-ref">G.139</span></a>, <a class="reference internal" href="../G.140/index.html#g-140" title="G.140: If a segment touch a circle, and from the point of contact there be drawn across, in the circle, a segment cutting the circle, the angles which it makes with the tangent will…"><span class="std std-ref">G.140</span></a>, <a class="reference internal" href="../G.141/index.html#g-141" title="G.141: Describe on a given segment a segment of a circle admitting an angle equal to a given angle."><span class="std std-ref">G.141</span></a>, <a class="reference internal" href="../G.142/index.html#g-142" title="G.142: From a given circle to cut off a segment admitting an angle equal to a given angle."><span class="std std-ref">G.142</span></a>, <a class="reference internal" href="../G.149/index.html#g-149" title="G.149: Inscribe in a given circle a triangle equiangular with a given triangle."><span class="std std-ref">G.149</span></a>, <a class="reference internal" href="../G.157/index.html#g-157" title="G.157: Circumscribe about a given triangle a circle."><span class="std std-ref">G.157</span></a>, <a class="reference internal" href="../G.158/index.html#g-158" title="G.158: Inscribe in a given circle a square."><span class="std std-ref">G.158</span></a>, <a class="reference internal" href="../G.162/index.html#g-162" title="G.162: Construct an isosceles triangle having each of the angles at the base double of the remaining one."><span class="std std-ref">G.162</span></a>, <a class="reference internal" href="../G.163/index.html#g-163" title="G.163: Inscribe in a given circle an equilateral and equiangular pentagon."><span class="std std-ref">G.163</span></a>, <a class="reference internal" href="../G.164/index.html#g-164" title="G.164: Circumscribe about a given circle an equilateral and equiangular pentagon."><span class="std std-ref">G.164</span></a>, <a class="reference internal" href="../G.167/index.html#g-167" title="G.167: Inscribe in a given circle an equilateral and equiangular hexagon."><span class="std std-ref">G.167</span></a>, <a class="reference internal" href="../G.223/index.html#g-223" title="G.223: To two given segments to find a mean proportional."><span class="std std-ref">G.223</span></a>, <a class="reference internal" href="../G.237/index.html#g-237" title="G.237: Construct one and the same figure similar to a given polygon and equal to another given polygon."><span class="std std-ref">G.237</span></a>, <a class="reference internal" href="../G.240/index.html#g-240" title="G.240: To a given segment to apply a parallelogram equal to a given polygon and deficient by a parallelogrammic figure similar to a given one: thus the given polygon must not be greater…"><span class="std std-ref">G.240</span></a>, <a class="reference internal" href="../G.241/index.html#g-241" title="G.241: To a given segment to apply a parallelogram equal to a given polygon and exceeding by a parallelogrammic figure similar to a given one."><span class="std std-ref">G.241</span></a>, <a class="reference internal" href="../G.243/index.html#g-243" title="G.243: Cut a given segment in extreme and mean ratio."><span class="std std-ref">G.243</span></a>, <a class="reference internal" href="../G.246/index.html#g-246" title="G.246: In equal circles angles have the same ratio as the arcs on which they stand, whether they stand at the centres or at the arcs."><span class="std std-ref">G.246</span></a>, <a class="reference internal" href="../G.385/index.html#g-385" title="G.385: If two magnitudes be commensurable, and the one of them be incommensurable with any magnitude, the remaining one is incommensurable with the same."><span class="std std-ref">G.385</span></a>, <a class="reference internal" href="../G.390/index.html#g-390" title="G.390: If there be two unequal segments, and to the greater there be applied a parallelogram equal to the fourth part of the square on the less and deficient by a square figure, and if…"><span class="std std-ref">G.390</span></a>, <a class="reference internal" href="../G.396/index.html#g-396" title="G.396: The square on a medial segment, if applied to a rational segment, produces as breadth a segment rational and incommensurable in length with that to which it is applied."><span class="std std-ref">G.396</span></a>, <a class="reference internal" href="../G.397/index.html#g-397" title="G.397: A segment commensurable with a medial segment is medial."><span class="std std-ref">G.397</span></a>, <a class="reference internal" href="../G.398/index.html#g-398" title="G.398: The rectangle contained by medial segments commensurable in length is medial."><span class="std std-ref">G.398</span></a>, <a class="reference internal" href="../G.399/index.html#g-399" title="G.399: The rectangle contained by medial segments commensurable in square only is either rational or medial."><span class="std std-ref">G.399</span></a>, <a class="reference internal" href="../G.400/index.html#g-400" title="G.400: A medial area does not exceed a medial area by a rational area."><span class="std std-ref">G.400</span></a>, <a class="reference internal" href="../G.401/index.html#g-401" title="G.401: Find medial segments commensurable in square only which contain a rational rectangle."><span class="std std-ref">G.401</span></a>, <a class="reference internal" href="../G.402/index.html#g-402" title="G.402: Find medial segments commensurable in square only which contain a medial rectangle."><span class="std std-ref">G.402</span></a>, <a class="reference internal" href="../G.403/index.html#g-403" title="G.403: Find two rational segments commensurable in square only and such that the square on the greater is greater than the square on the less by the square on a segment commensurable in…"><span class="std std-ref">G.403</span></a>, <a class="reference internal" href="../G.404/index.html#g-404" title="G.404: Find two rational segments commensurable in square only and such that the square on the greater is greater than the square on the less by the square on a segment incommensurable…"><span class="std std-ref">G.404</span></a>, <a class="reference internal" href="../G.405/index.html#g-405" title="G.405: Find two medial segments commensurable in square only, containing a rational rectangle, and such that the square on the greater is greater than the square on the less by the…"><span class="std std-ref">G.405</span></a>, <a class="reference internal" href="../G.406/index.html#g-406" title="G.406: Find two medial segments commensurable in square only, containing a medial rectangle, and such that the square on the greater is greater than the square on the less by the square…"><span class="std std-ref">G.406</span></a>, <a class="reference internal" href="../G.407/index.html#g-407" title="G.407: Find two segments incommensurable in square which make the sum of the squares on them rational but the rectangle contained by them medial."><span class="std std-ref">G.407</span></a>, <a class="reference internal" href="../G.408/index.html#g-408" title="G.408: Find two segments incommensurable in square which make the sum of the squares on them medial but the rectangle contained by them rational."><span class="std std-ref">G.408</span></a>, <a class="reference internal" href="../G.409/index.html#g-409" title="G.409: Find two segments incommensurable in square which make the sum of the squares on them medial and the rectangle contained by them medial and moreover incommensurable with the sum…"><span class="std std-ref">G.409</span></a>, <a class="reference internal" href="../G.410/index.html#g-410" title="G.410: If two rational segments commensurable in square only be added together, the whole is irrational; and let it be called binomial."><span class="std std-ref">G.410</span></a>, <a class="reference internal" href="../G.411/index.html#g-411" title="G.411: If two medial segments commensurable in square only and containing a rational rectangle be added together, the whole is irrational; and let it be called a first bimedial segment."><span class="std std-ref">G.411</span></a>, <a class="reference internal" href="../G.412/index.html#g-412" title="G.412: If two medial segments commensurable in square only and containing a medial rectangle be added together, the whole is irrational; and let it be called a second bimedial segment."><span class="std std-ref">G.412</span></a>, <a class="reference internal" href="../G.413/index.html#g-413" title="G.413: If two segments incommensurable in square which make the sum of the squares on them rational, but the rectangle contained by them medial, be added together, the whole segment is…"><span class="std std-ref">G.413</span></a>, <a class="reference internal" href="../G.414/index.html#g-414" title="G.414: If two segments incommensurable in square which make the sum of the squares on them medial, but the rectangle contained by them rational, be added together, the whole segment is…"><span class="std std-ref">G.414</span></a>, <a class="reference internal" href="../G.415/index.html#g-415" title="G.415: If two segments incommensurable in square which make the sum of the squares on them medial, and the rectangle contained by them medial and also incommensurable with the sum of the…"><span class="std std-ref">G.415</span></a>, <a class="reference internal" href="../G.416/index.html#g-416" title="G.416: A binomial segment is divided into its terms at one point only."><span class="std std-ref">G.416</span></a>, <a class="reference internal" href="../G.417/index.html#g-417" title="G.417: A first bimedial segment is divided at one point only."><span class="std std-ref">G.417</span></a>, <a class="reference internal" href="../G.418/index.html#g-418" title="G.418: A second bimedial segment is divided at one point only."><span class="std std-ref">G.418</span></a>, <a class="reference internal" href="../G.419/index.html#g-419" title="G.419: A major segment is divided at one and the same point only."><span class="std std-ref">G.419</span></a>, <a class="reference internal" href="../G.420/index.html#g-420" title="G.420: The side of a rational plus a medial area is divided at one point only."><span class="std std-ref">G.420</span></a>, <a class="reference internal" href="../G.421/index.html#g-421" title="G.421: The side of the sum of two medial areas is divided at one point only."><span class="std std-ref">G.421</span></a>, <a class="reference internal" href="../G.423/index.html#g-423" title="G.423: Find the first binomial segment."><span class="std std-ref">G.423</span></a>, <a class="reference internal" href="../G.425/index.html#g-425" title="G.425: Find the second binomial segment."><span class="std std-ref">G.425</span></a>, <a class="reference internal" href="../G.427/index.html#g-427" title="G.427: Find the third binomial segment."><span class="std std-ref">G.427</span></a>, <a class="reference internal" href="../G.431/index.html#g-431" title="G.431: Find the fifth binomial segment."><span class="std std-ref">G.431</span></a>, <a class="reference internal" href="../G.433/index.html#g-433" title="G.433: Find the sixth binomial segment."><span class="std std-ref">G.433</span></a>, <a class="reference internal" href="../G.434/index.html#g-434" title="G.434: If an area be contained by a rational segment and the first binomial, the &quot;side&quot; of the area is the irrational segment which is called binomial."><span class="std std-ref">G.434</span></a>, <a class="reference internal" href="../G.435/index.html#g-435" title="G.435: If an area be contained by a rational segment and the second binomial, the &quot;side&quot; of the area is the irrational segment which is called a first bimedial."><span class="std std-ref">G.435</span></a>, <a class="reference internal" href="../G.436/index.html#g-436" title="G.436: If an area be contained by a rational segment and the third binomial, the &quot;side&quot; of the area is the irrational segment called a second bimedial."><span class="std std-ref">G.436</span></a>, <a class="reference internal" href="../G.437/index.html#g-437" title="G.437: If an area be contained by a rational segment and the fourth binomial, the &quot;side&quot; of the area is the irrational segment called major."><span class="std std-ref">G.437</span></a>, <a class="reference internal" href="../G.438/index.html#g-438" title="G.438: If an area be contained by a rational segment and the fifth binomial, the &quot;side&quot; of the area is the irrational segment called the side of a rational plus a medial area."><span class="std std-ref">G.438</span></a>, <a class="reference internal" href="../G.439/index.html#g-439" title="G.439: If an area be contained by a rational segment and the sixth binomial, the &quot;side&quot; of the area is the irrational segment called the side of the sum of two medial areas."><span class="std std-ref">G.439</span></a>, <a class="reference internal" href="../G.440/index.html#g-440" title="G.440: The square on the binomial segment applied to a rational segment produces as breadth the first binomial."><span class="std std-ref">G.440</span></a>, <a class="reference internal" href="../G.441/index.html#g-441" title="G.441: The square on the first bimedial segment applied to a rational segment produces as breadth the second binomial."><span class="std std-ref">G.441</span></a>, <a class="reference internal" href="../G.442/index.html#g-442" title="G.442: The square on the second bimedial segment applied to a rational segment produces as breadth the third binomial."><span class="std std-ref">G.442</span></a>, <a class="reference internal" href="../G.443/index.html#g-443" title="G.443: The square on the major segment applied to a rational segment produces as breadth the fourth binomial."><span class="std std-ref">G.443</span></a>, <a class="reference internal" href="../G.444/index.html#g-444" title="G.444: The square on the side of a rational plus a medial area applied to a rational segment produces as breadth the fifth binomial."><span class="std std-ref">G.444</span></a>, <a class="reference internal" href="../G.445/index.html#g-445" title="G.445: The square on the side of the sum of two medial areas applied to a rational segment produces as breadth the sixth binomial."><span class="std std-ref">G.445</span></a>, <a class="reference internal" href="../G.446/index.html#g-446" title="G.446: A segment commensurable in length with a binomial segment is itself also binomial and the same in order."><span class="std std-ref">G.446</span></a>, <a class="reference internal" href="../G.447/index.html#g-447" title="G.447: A segment commensurable in length with a bimedial segment is itself also bimedial and the same in order."><span class="std std-ref">G.447</span></a>, <a class="reference internal" href="../G.448/index.html#g-448" title="G.448: A segment commensurable with a major segment is itself also major."><span class="std std-ref">G.448</span></a>, <a class="reference internal" href="../G.449/index.html#g-449" title="G.449: A segment commensurable with the side of a rational plus a medial area is itself also the side of a rational plus a medial area."><span class="std std-ref">G.449</span></a>, <a class="reference internal" href="../G.450/index.html#g-450" title="G.450: A segment commensurable with the side of the sum of two medial areas is the side of the sum of two medial areas."><span class="std std-ref">G.450</span></a>, <a class="reference internal" href="../G.451/index.html#g-451" title="G.451: If a rational and a medial area be added together, four irrational segments arise, namely a binomial or a first bimedial or a major or a side of a rational plus a medial area."><span class="std std-ref">G.451</span></a>, <a class="reference internal" href="../G.452/index.html#g-452" title="G.452: If two medial areas incommensurable with one another be added together, the remaining two irrational segments arise, namely either a second bimedial or a side of the sum of two…"><span class="std std-ref">G.452</span></a>, <a class="reference internal" href="../G.453/index.html#g-453" title="G.453: If from a rational segment there be subtracted a rational segment commensurable with the whole in square only, the remainder is irrational; and let it be called an apotome."><span class="std std-ref">G.453</span></a>, <a class="reference internal" href="../G.457/index.html#g-457" title="G.457: If from a medial segment there be subtracted a medial segment which is commensurable with the whole in square only, and which contains with the whole a medial rectangle, the…"><span class="std std-ref">G.457</span></a>, <a class="reference internal" href="../G.458/index.html#g-458" title="G.458: If from a segment there be subtracted a segment which is incommensurable in square with the whole and which with the whole makes the squares on them added together rational, but…"><span class="std std-ref">G.458</span></a>, <a class="reference internal" href="../G.459/index.html#g-459" title="G.459: If from a segment there be subtracted a segment which is incommensurable in square with the whole, and which with the whole makes the sum of the squares on them medial, but twice…"><span class="std std-ref">G.459</span></a>, <a class="reference internal" href="../G.460/index.html#g-460" title="G.460: If from a segment there be subtracted a segment which is incommensurable in square with the whole and which with the whole makes the sum of the squares on them medial, twice the…"><span class="std std-ref">G.460</span></a>, <a class="reference internal" href="../G.461/index.html#g-461" title="G.461: To an apotome only one rational segment can be annexed which is commensurable with the whole in square only."><span class="std std-ref">G.461</span></a>, <a class="reference internal" href="../G.462/index.html#g-462" title="G.462: To a first apotome of a medial segment only one medial segment can be annexed which is commensurable with the whole in square only and which contains with the whole a rational…"><span class="std std-ref">G.462</span></a>, <a class="reference internal" href="../G.463/index.html#g-463" title="G.463: To a second apotome of a medial segment only one medial segment can be annexed which is commensurable with the whole in square only and which contains with the whole a medial…"><span class="std std-ref">G.463</span></a>, <a class="reference internal" href="../G.464/index.html#g-464" title="G.464: To a minor segment only one segment can be annexed which is incommensurable in square with the whole and which makes, with the whole, the sum of the squares on them rational but…"><span class="std std-ref">G.464</span></a>, <a class="reference internal" href="../G.465/index.html#g-465" title="G.465: To a segment which produces with a rational area a medial whole only one segment can be annexed which is incommensurable in square with the whole segment and which with the whole…"><span class="std std-ref">G.465</span></a>, <a class="reference internal" href="../G.466/index.html#g-466" title="G.466: To a segment which produces with a medial area a medial whole only one segment can be annexed which is incommensurable in square with the whole segment and which with the whole…"><span class="std std-ref">G.466</span></a>, <a class="reference internal" href="../G.467/index.html#g-467" title="G.467: Find the first apotome."><span class="std std-ref">G.467</span></a>, <a class="reference internal" href="../G.468/index.html#g-468" title="G.468: Find the second apotome."><span class="std std-ref">G.468</span></a>, <a class="reference internal" href="../G.470/index.html#g-470" title="G.470: Find the third apotome."><span class="std std-ref">G.470</span></a>, <a class="reference internal" href="../G.472/index.html#g-472" title="G.472: Find the fourth apotome."><span class="std std-ref">G.472</span></a>, <a class="reference internal" href="../G.474/index.html#g-474" title="G.474: Find the fifth apotome."><span class="std std-ref">G.474</span></a>, <a class="reference internal" href="../G.476/index.html#g-476" title="G.476: Find the sixth apotome."><span class="std std-ref">G.476</span></a>, <a class="reference internal" href="../G.477/index.html#g-477" title="G.477: If an area be contained by a rational segment and a first apotome, the &quot;side&quot; of the area is an apotome."><span class="std std-ref">G.477</span></a>, <a class="reference internal" href="../G.478/index.html#g-478" title="G.478: If an area be contained by a rational segment and a second apotome, the &quot;side&quot; of the area is a first apotome of a medial segment."><span class="std std-ref">G.478</span></a>, <a class="reference internal" href="../G.479/index.html#g-479" title="G.479: If an area be contained by a rational segment and a third apotome, the “side” of the area is a second apotome of a medial segment."><span class="std std-ref">G.479</span></a>, <a class="reference internal" href="../G.480/index.html#g-480" title="G.480: If an area be contained by a rational segment and a fourth apotome, the “side” of the area is minor."><span class="std std-ref">G.480</span></a>, <a class="reference internal" href="../G.481/index.html#g-481" title="G.481: If an area be contained by a rational segment and a fifth apotome, the “side” of the area is a segment which produces with a rational area a medial whole."><span class="std std-ref">G.481</span></a>, <a class="reference internal" href="../G.482/index.html#g-482" title="G.482: If an area be contained by a rational segment and a sixth apotome, the “side” of the area is a segment which produces with a medial area a medial whole."><span class="std std-ref">G.482</span></a>, <a class="reference internal" href="../G.483/index.html#g-483" title="G.483: The square on an apotome applied to a rational segment produces as breadth a first apotome."><span class="std std-ref">G.483</span></a>, <a class="reference internal" href="../G.484/index.html#g-484" title="G.484: The square on a first apotome of a medial segment applied to a rational segment produces as breadth a second apotome."><span class="std std-ref">G.484</span></a>, <a class="reference internal" href="../G.485/index.html#g-485" title="G.485: The square on a second apotome of a medial segment applied to a rational segment produces as breadth a third apotome."><span class="std std-ref">G.485</span></a>, <a class="reference internal" href="../G.486/index.html#g-486" title="G.486: The square on a minor segment applied to a rational segment produces as breadth a fourth apotome."><span class="std std-ref">G.486</span></a>, <a class="reference internal" href="../G.487/index.html#g-487" title="G.487: The square on the segment which produces with a rational area a medial whole, if applied to a rational segment, produces as breadth a fifth apotome."><span class="std std-ref">G.487</span></a>, <a class="reference internal" href="../G.488/index.html#g-488" title="G.488: The square on the segment which produces with a medial area a medial whole, if applied to a rational segment, produces as breadth a sixth apotome."><span class="std std-ref">G.488</span></a>, <a class="reference internal" href="../G.489/index.html#g-489" title="G.489: A segment commensurable in length with an apotome is an apotome and the same in order."><span class="std std-ref">G.489</span></a>, <a class="reference internal" href="../G.490/index.html#g-490" title="G.490: A segment commensurable with an apotome of a medial segment is an apotome of a medial segment and the same in order."><span class="std std-ref">G.490</span></a>, <a class="reference internal" href="../G.491/index.html#g-491" title="G.491: A segment commensurable with a minor segment is minor."><span class="std std-ref">G.491</span></a>, <a class="reference internal" href="../G.492/index.html#g-492" title="G.492: A segment commensurable with that which produces with a rational area a medial whole is a segment which produces with a rational area a medial whole."><span class="std std-ref">G.492</span></a>, <a class="reference internal" href="../G.493/index.html#g-493" title="G.493: A segment commensurable with that which produces with a medial area a medial whole is itself also a segment which produces with a medial area a medial whole."><span class="std std-ref">G.493</span></a>, <a class="reference internal" href="../G.494/index.html#g-494" title="G.494: If from a rational area a medial area be subtracted, the “side” of the remaining area becomes one of two irrational segments, either an apotome or a minor segment."><span class="std std-ref">G.494</span></a>, <a class="reference internal" href="../G.495/index.html#g-495" title="G.495: If from a medial area a rational area be subtracted, there arise two other irrational segments, either a first apotome of a medial segment or a segment which produces with a…"><span class="std std-ref">G.495</span></a>, <a class="reference internal" href="../G.496/index.html#g-496" title="G.496: If from a medial area there be subtracted a medial area incommensurable with the whole, the two remaining irrational segments arise, either a second apotome of a medial segment or…"><span class="std std-ref">G.496</span></a>, <a class="reference internal" href="../G.497/index.html#g-497" title="G.497: The apotome is not the same with the binomial segment."><span class="std std-ref">G.497</span></a>, <a class="reference internal" href="../G.498/index.html#g-498" title="G.498: The square on a rational segment applied to the binomial segment produces as breadth an apotome the terms of which are commensurable with the terms of the binomial and moreover in…"><span class="std std-ref">G.498</span></a>, <a class="reference internal" href="../G.499/index.html#g-499" title="G.499: The square on a rational segment, if applied to an apotome, produces as breadth the binomial segment the terms of which are commensurable with the terms of the apotome and in the…"><span class="std std-ref">G.499</span></a>, <a class="reference internal" href="../G.500/index.html#g-500" title="G.500: If an area be contained by an apotome and the binomial segment the terms of which are commensurable with the terms of the apotome and in the same ratio, the “side” of the area is…"><span class="std std-ref">G.500</span></a>, <a class="reference internal" href="../G.528/index.html#g-528" title="G.528: Construct a solid angle out of three plane angles two of which, taken together in any manner, are greater than the remaining one: thus the three angles must be less than four…"><span class="std std-ref">G.528</span></a>, <a class="reference internal" href="../G.551/index.html#g-551" title="G.551: Similar polygons inscribed in circles are to one another as the squares on the diameters."><span class="std std-ref">G.551</span></a>, <a class="reference internal" href="../G.552/index.html#g-552" title="G.552: Circles are to one another as the squares on the diameters."><span class="std std-ref">G.552</span></a>, <a class="reference internal" href="../G.556/index.html#g-556" title="G.556: Pyramids which are of the same height and have triangular bases are to one another as the bases."><span class="std std-ref">G.556</span></a>, <a class="reference internal" href="../G.557/index.html#g-557" title="G.557: Pyramids which are of the same height and have polygonal bases are to one another as the bases."><span class="std std-ref">G.557</span></a>, <a class="reference internal" href="../G.558/index.html#g-558" title="G.558: Any prism which has a triangular base is divided into three pyramids equal to one another which have triangular bases."><span class="std std-ref">G.558</span></a>, <a class="reference internal" href="../G.559/index.html#g-559" title="G.559: Similar pyramids which have triangular bases are in the triplicate ratio of their corresponding sides."><span class="std std-ref">G.559</span></a>, <a class="reference internal" href="../G.563/index.html#g-563" title="G.563: Any cone is a third part of the cylinder which has the same base with it and equal height."><span class="std std-ref">G.563</span></a>, <a class="reference internal" href="../G.565/index.html#g-565" title="G.565: Cones and cylinders which are of the same height are to one another as their bases."><span class="std std-ref">G.565</span></a>, <a class="reference internal" href="../G.570/index.html#g-570" title="G.570: Similar cones and cylinders are to one another in the triplicate ratio of the diameters in their bases."><span class="std std-ref">G.570</span></a>, <a class="reference internal" href="../G.571/index.html#g-571" title="G.571: If a cylinder be cut by a plane which is parallel to its opposite planes, then, as the cylinder is to the cylinder, so will the axis be to the axis."><span class="std std-ref">G.571</span></a>, <a class="reference internal" href="../G.572/index.html#g-572" title="G.572: Cones and cylinders which are on equal bases are to one another as their heights."><span class="std std-ref">G.572</span></a>, <a class="reference internal" href="../G.573/index.html#g-573" title="G.573: In equal cones and cylinders the bases are reciprocally proportional to the heights; and those cones and cylinders in which the bases are reciprocally proportional to the heights…"><span class="std std-ref">G.573</span></a>, <a class="reference internal" href="../G.577/index.html#g-577" title="G.577: Given two spheres about the same center, to inscribe in the greater sphere a polyhedral solid which does not touch the lesser sphere at its surface."><span class="std std-ref">G.577</span></a>, <a class="reference internal" href="../G.578/index.html#g-578" title="G.578: Spheres are to one another in the triplicate ratio of their respective diameters."><span class="std std-ref">G.578</span></a>, <a class="reference internal" href="../G.584/index.html#g-584" title="G.584: If a rational segment be cut in extreme and mean ratio, each of the segments is the irrational segment called apotome."><span class="std std-ref">G.584</span></a>, <a class="reference internal" href="../G.586/index.html#g-586" title="G.586: If in an equilateral and equiangular pentagon segments subtend two angles taken in order, they cut one another in extreme and mean ratio, and their greater segments are equal to…"><span class="std std-ref">G.586</span></a>, <a class="reference internal" href="../G.587/index.html#g-587" title="G.587: If the side of the hexagon and that of the decagon inscribed in the same circle be added together, the whole segment has been cut in extreme and mean ratio, and its greater…"><span class="std std-ref">G.587</span></a>, <a class="reference internal" href="../G.588/index.html#g-588" title="G.588: If an equilateral pentagon be inscribed in a circle, the square on the side of the pentagon is equal to the squares on the side of the hexagon and on that of the decagon inscribed…"><span class="std std-ref">G.588</span></a>, <a class="reference internal" href="../G.589/index.html#g-589" title="G.589: If in a circle which has its diameter rational an equilateral pentagon be inscribed, the side of the pentagon is the irrational segment called minor."><span class="std std-ref">G.589</span></a>, <a class="reference internal" href="../G.590/index.html#g-590" title="G.590: If an equilateral triangle be inscribed in a circle, the square on the side of the triangle is triple of the square on the radius of the circle."><span class="std std-ref">G.590</span></a>, <a class="reference internal" href="../G.592/index.html#g-592" title="G.592: To construct a pyramid, to comprehend it in a given sphere, and to prove that the square on the diameter of the sphere is one and a half times the square on the side of the…"><span class="std std-ref">G.592</span></a>, <a class="reference internal" href="../G.594/index.html#g-594" title="G.594: Construct an octahedron and comprehend it in a sphere, as in the preceding case; and to prove that the square on the diameter of the sphere is double of the square on the side of…"><span class="std std-ref">G.594</span></a>, <a class="reference internal" href="../G.597/index.html#g-597" title="G.597: Construct an icosahedron and comprehend it in a sphere, like the aforesaid figures; and to prove that the side of the icosahedron is the irrational segment called minor."><span class="std std-ref">G.597</span></a>, <a class="reference internal" href="../G.600/index.html#g-600" title="G.600: Construct a dodecahedron and comprehend it in a sphere, like the aforesaid figures, and to prove that the side of the dodecahedron is the irrational segment called apotome."><span class="std std-ref">G.600</span></a>, <a class="reference internal" href="../G.601/index.html#g-601" title="G.601: To set out the sides of the five figures and to compare them with one another."><span class="std std-ref">G.601</span></a></p>
         <div class="toctree-wrapper compound">
         </div>
         </section>
@@ -108,30 +470,37 @@
 
         <div class="meta">
           <span class="category">
-            <a href="../../categories/definition.html">definition</a>
+            <a href="../../categories/theorem.html">theorem</a>
+            <a href="../../categories/proof.html">proof</a>
             <a href="../../categories/plane-geometry.html">plane-geometry</a>
+            <a href="../../categories/circles.html">circles</a>
           </span>
           <span class="tags">
-            <a href="../../tags/book-i.html">book-i</a>
-            <a href="../../tags/square.html">square</a>
-            <a href="../../tags/oblong.html">oblong</a>
-            <a href="../../tags/rhombus.html">rhombus</a>
-            <a href="../../tags/rhomboid.html">rhomboid</a>
-            <a href="../../tags/trapezium.html">trapezium</a>
-            <a href="../../tags/equilateral.html">equilateral</a>
-            <a href="../../tags/right-angle.html">right-angle</a>
+            <a href="../../tags/book-iii.html">book-iii</a>
+            <a href="../../tags/point.html">point</a>
+            <a href="../../tags/segment.html">segment</a>
+            <a href="../../tags/circle.html">circle</a>
+            <a href="../../tags/angle.html">angle</a>
+            <a href="../../tags/sector-of-circle.html">sector-of-circle</a>
+            <a href="../../tags/plane-angle.html">plane-angle</a>
+            <a href="../../tags/centre.html">centre</a>
+            <a href="../../tags/straight-line.html">straight-line</a>
+            <a href="../../tags/arc.html">arc</a>
+            <a href="../../tags/sector.html">sector</a>
+            <a href="../../tags/plane.html">plane</a>
+            <a href="../../tags/equality.html">equality</a>
           </span>
         </div>
         <div class="book-footer-ornament">&#10086;</div>
         <div class="book-footer-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="../G.122/index.html" title="G.122">&larr; <span class="nav-label">G.122</span></a>
+            <a class="book-nav-btn" href="../G.122/index.html" title="G.122 sector of a circle">&larr; <span class="nav-label">G.122 sector of a circle</span></a>
           </div>
           <div class="book-nav-center">
             <a class="book-toc-link" href="../index.html">Elements 2.0 (G Index)</a>
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="../G.124/index.html" title="G.124"><span class="nav-label">G.124</span> &rarr;</a>
+            <a class="book-nav-btn" href="../G.124/index.html" title="G.124 circle angles segment"><span class="nav-label">G.124 circle angles segment</span> &rarr;</a>
           </div>
         </div>
       </footer>
@@ -159,6 +528,7 @@
     <aside class="aside-recent-logs">
       <h3>Recent Logs</h3>
       <ul>
+        <li><a href="../../log/26.305-165000/index.html">Defined-Term Dependency Wiring, Short Verb Titles & Two-Point Circle Notation</a></li>
         <li><a href="../../log/26.302-183200/index.html">G-Index Book I (G.1–G.89) Three-Track Codex & Symbolic Indications</a></li>
       </ul>
     </aside>
@@ -166,10 +536,21 @@
       <h3>Tags</h3>
       <ul>
         <li><a href="../../tags/acute-angle.html">acute-angle</a></li>
+        <li><a href="../../tags/acute-angled-cone.html">acute-angled-cone</a></li>
+        <li><a href="../../tags/acute-angled-triangle.html">acute-angled-triangle</a></li>
         <li><a href="../../tags/ad-infinitum.html">ad-infinitum</a></li>
+        <li><a href="../../tags/alternando.html">alternando</a></li>
         <li><a href="../../tags/angle.html">angle</a></li>
+        <li><a href="../../tags/angle-in-segment.html">angle-in-segment</a></li>
+        <li><a href="../../tags/angle-of-segment.html">angle-of-segment</a></li>
         <li><a href="../../tags/apotome.html">apotome</a></li>
         <li><a href="../../tags/arc.html">arc</a></li>
+        <li><a href="../../tags/axis-of-cone.html">axis-of-cone</a></li>
+        <li><a href="../../tags/axis-of-cylinder.html">axis-of-cylinder</a></li>
+        <li><a href="../../tags/axis-of-sphere.html">axis-of-sphere</a></li>
+        <li><a href="../../tags/base-of-cone.html">base-of-cone</a></li>
+        <li><a href="../../tags/base-of-segment.html">base-of-segment</a></li>
+        <li><a href="../../tags/bases-of-cylinder.html">bases-of-cylinder</a></li>
         <li><a href="../../tags/binomial.html">binomial</a></li>
         <li><a href="../../tags/bisect.html">bisect</a></li>
         <li><a href="../../tags/book-i.html">book-i</a></li>
@@ -185,65 +566,89 @@
         <li><a href="../../tags/book-xi.html">book-xi</a></li>
         <li><a href="../../tags/book-xii.html">book-xii</a></li>
         <li><a href="../../tags/book-xiii.html">book-xiii</a></li>
+        <li><a href="../../tags/boundary.html">boundary</a></li>
+        <li><a href="../../tags/centre.html">centre</a></li>
+        <li><a href="../../tags/centre-of-sphere.html">centre-of-sphere</a></li>
         <li><a href="../../tags/circle.html">circle</a></li>
         <li><a href="../../tags/circle-inscribed-in-figure.html">circle-inscribed-in-figure</a></li>
+        <li><a href="../../tags/circles.html">circles</a></li>
         <li><a href="../../tags/circles-touching.html">circles-touching</a></li>
         <li><a href="../../tags/circumscribed.html">circumscribed</a></li>
+        <li><a href="../../tags/circumscribed-about-circle.html">circumscribed-about-circle</a></li>
+        <li><a href="../../tags/circumscribed-about-figure.html">circumscribed-about-figure</a></li>
+        <li><a href="../../tags/coincidence.html">coincidence</a></li>
         <li><a href="../../tags/commensurable.html">commensurable</a></li>
+        <li><a href="../../tags/commensurable-in-square.html">commensurable-in-square</a></li>
         <li><a href="../../tags/componendo.html">componendo</a></li>
         <li><a href="../../tags/composite.html">composite</a></li>
         <li><a href="../../tags/composite-number.html">composite-number</a></li>
         <li><a href="../../tags/composite-to-one-another.html">composite-to-one-another</a></li>
         <li><a href="../../tags/cone.html">cone</a></li>
+        <li><a href="../../tags/contained-rectangle.html">contained-rectangle</a></li>
         <li><a href="../../tags/continued-proportion.html">continued-proportion</a></li>
         <li><a href="../../tags/convertendo.html">convertendo</a></li>
         <li><a href="../../tags/corresponding-magnitudes.html">corresponding-magnitudes</a></li>
         <li><a href="../../tags/cube.html">cube</a></li>
         <li><a href="../../tags/cube-number.html">cube-number</a></li>
         <li><a href="../../tags/cylinder.html">cylinder</a></li>
+        <li><a href="../../tags/diameter.html">diameter</a></li>
+        <li><a href="../../tags/diameter-of-sphere.html">diameter-of-sphere</a></li>
         <li><a href="../../tags/dodecahedron.html">dodecahedron</a></li>
         <li><a href="../../tags/duplicate-ratio.html">duplicate-ratio</a></li>
         <li><a href="../../tags/equal-and-similar-solid-figures.html">equal-and-similar-solid-figures</a></li>
+        <li><a href="../../tags/equal-circles.html">equal-circles</a></li>
         <li><a href="../../tags/equality.html">equality</a></li>
         <li><a href="../../tags/equally-distant-from-centre.html">equally-distant-from-centre</a></li>
         <li><a href="../../tags/equilateral.html">equilateral</a></li>
+        <li><a href="../../tags/equilateral-triangle.html">equilateral-triangle</a></li>
         <li><a href="../../tags/even-number.html">even-number</a></li>
         <li><a href="../../tags/even-times-even-number.html">even-times-even-number</a></li>
         <li><a href="../../tags/even-times-odd-number.html">even-times-odd-number</a></li>
         <li><a href="../../tags/ex-aequali.html">ex-aequali</a></li>
         <li><a href="../../tags/extreme-and-mean-ratio.html">extreme-and-mean-ratio</a></li>
+        <li><a href="../../tags/extremity.html">extremity</a></li>
         <li><a href="../../tags/fifteen-angled.html">fifteen-angled</a></li>
         <li><a href="../../tags/fifth-apotome.html">fifth-apotome</a></li>
         <li><a href="../../tags/fifth-binomial.html">fifth-binomial</a></li>
+        <li><a href="../../tags/figure.html">figure</a></li>
         <li><a href="../../tags/first-apotome.html">first-apotome</a></li>
         <li><a href="../../tags/first-apotome-of-a-medial-straight-line.html">first-apotome-of-a-medial-straight-line</a></li>
         <li><a href="../../tags/first-bimedial.html">first-bimedial</a></li>
         <li><a href="../../tags/first-binomial-straight-line.html">first-binomial-straight-line</a></li>
+        <li><a href="../../tags/fitted-into-circle.html">fitted-into-circle</a></li>
         <li><a href="../../tags/fourth-apotome.html">fourth-apotome</a></li>
         <li><a href="../../tags/fourth-binomial.html">fourth-binomial</a></li>
+        <li><a href="../../tags/gnomon.html">gnomon</a></li>
         <li><a href="../../tags/greater-distance-from-centre.html">greater-distance-from-centre</a></li>
         <li><a href="../../tags/greater-ratio.html">greater-ratio</a></li>
-        <li><a href="../../tags/greatest-common-measure.html">greatest-common-measure</a></li>
         <li><a href="../../tags/have-a-ratio.html">have-a-ratio</a></li>
+        <li><a href="../../tags/height.html">height</a></li>
         <li><a href="../../tags/hexagon.html">hexagon</a></li>
         <li><a href="../../tags/icosahedron.html">icosahedron</a></li>
         <li><a href="../../tags/in-the-same-ratio.html">in-the-same-ratio</a></li>
         <li><a href="../../tags/incommensurable.html">incommensurable</a></li>
+        <li><a href="../../tags/incommensurable-in-square.html">incommensurable-in-square</a></li>
         <li><a href="../../tags/inscribed.html">inscribed</a></li>
+        <li><a href="../../tags/inscribed-in-circle.html">inscribed-in-circle</a></li>
+        <li><a href="../../tags/inscribed-in-rectilineal-figure.html">inscribed-in-rectilineal-figure</a></li>
+        <li><a href="../../tags/invertendo.html">invertendo</a></li>
         <li><a href="../../tags/irrational.html">irrational</a></li>
         <li><a href="../../tags/isosceles.html">isosceles</a></li>
-        <li><a href="../../tags/least-common-multiple.html">least-common-multiple</a></li>
+        <li><a href="../../tags/isosceles-triangle.html">isosceles-triangle</a></li>
         <li><a href="../../tags/lemma.html">lemma</a></li>
         <li><a href="../../tags/line.html">line</a></li>
         <li><a href="../../tags/major.html">major</a></li>
-        <li><a href="../../tags/mean-proportional.html">mean-proportional</a></li>
         <li><a href="../../tags/medial.html">medial</a></li>
         <li><a href="../../tags/minor.html">minor</a></li>
         <li><a href="../../tags/model.html">model</a></li>
+        <li><a href="../../tags/multilateral.html">multilateral</a></li>
+        <li><a href="../../tags/multiple.html">multiple</a></li>
         <li><a href="../../tags/multiply.html">multiply</a></li>
         <li><a href="../../tags/number.html">number</a></li>
         <li><a href="../../tags/oblong.html">oblong</a></li>
         <li><a href="../../tags/obtuse-angle.html">obtuse-angle</a></li>
+        <li><a href="../../tags/obtuse-angled-cone.html">obtuse-angled-cone</a></li>
+        <li><a href="../../tags/obtuse-angled-triangle.html">obtuse-angled-triangle</a></li>
         <li><a href="../../tags/octahedron.html">octahedron</a></li>
         <li><a href="../../tags/odd-number.html">odd-number</a></li>
         <li><a href="../../tags/parallel.html">parallel</a></li>
@@ -251,16 +656,22 @@
         <li><a href="../../tags/parallel-straight-lines.html">parallel-straight-lines</a></li>
         <li><a href="../../tags/parallelepiped.html">parallelepiped</a></li>
         <li><a href="../../tags/parallelogram.html">parallelogram</a></li>
+        <li><a href="../../tags/part-aliquot.html">part-aliquot</a></li>
+        <li><a href="../../tags/parts-non-aliquot.html">parts-non-aliquot</a></li>
         <li><a href="../../tags/pentagon.html">pentagon</a></li>
         <li><a href="../../tags/perfect-number.html">perfect-number</a></li>
         <li><a href="../../tags/perpendicular.html">perpendicular</a></li>
+        <li><a href="../../tags/perturbed-proportion.html">perturbed-proportion</a></li>
         <li><a href="../../tags/plane.html">plane</a></li>
+        <li><a href="../../tags/plane-angle.html">plane-angle</a></li>
         <li><a href="../../tags/plane-at-right-angles-to-plane.html">plane-at-right-angles-to-plane</a></li>
         <li><a href="../../tags/plane-number.html">plane-number</a></li>
+        <li><a href="../../tags/plane-surface.html">plane-surface</a></li>
         <li><a href="../../tags/point.html">point</a></li>
         <li><a href="../../tags/polygon.html">polygon</a></li>
         <li><a href="../../tags/porism.html">porism</a></li>
         <li><a href="../../tags/prime.html">prime</a></li>
+        <li><a href="../../tags/prime-number.html">prime-number</a></li>
         <li><a href="../../tags/prime-to-one-another.html">prime-to-one-another</a></li>
         <li><a href="../../tags/prism.html">prism</a></li>
         <li><a href="../../tags/proportion.html">proportion</a></li>
@@ -269,22 +680,33 @@
         <li><a href="../../tags/quadrilateral.html">quadrilateral</a></li>
         <li><a href="../../tags/ratio.html">ratio</a></li>
         <li><a href="../../tags/rational.html">rational</a></li>
+        <li><a href="../../tags/reciprocally-related.html">reciprocally-related</a></li>
         <li><a href="../../tags/rectangle.html">rectangle</a></li>
+        <li><a href="../../tags/rectilineal-angle.html">rectilineal-angle</a></li>
+        <li><a href="../../tags/rectilineal-figure.html">rectilineal-figure</a></li>
         <li><a href="../../tags/reductio-ad-absurdum.html">reductio-ad-absurdum</a></li>
         <li><a href="../../tags/rhomboid.html">rhomboid</a></li>
         <li><a href="../../tags/rhombus.html">rhombus</a></li>
         <li><a href="../../tags/right-angle.html">right-angle</a></li>
+        <li><a href="../../tags/right-angled-cone.html">right-angled-cone</a></li>
+        <li><a href="../../tags/right-angled-triangle.html">right-angled-triangle</a></li>
         <li><a href="../../tags/right-angles-to-plane.html">right-angles-to-plane</a></li>
+        <li><a href="../../tags/scalene.html">scalene</a></li>
+        <li><a href="../../tags/scalene-triangle.html">scalene-triangle</a></li>
         <li><a href="../../tags/second-apotome.html">second-apotome</a></li>
         <li><a href="../../tags/second-apotome-of-a-medial-straight-line.html">second-apotome-of-a-medial-straight-line</a></li>
         <li><a href="../../tags/second-bimedial.html">second-bimedial</a></li>
         <li><a href="../../tags/second-binomial.html">second-binomial</a></li>
+        <li><a href="../../tags/sector.html">sector</a></li>
+        <li><a href="../../tags/sector-of-circle.html">sector-of-circle</a></li>
         <li><a href="../../tags/segment.html">segment</a></li>
+        <li><a href="../../tags/segment-of-circle.html">segment-of-circle</a></li>
         <li><a href="../../tags/semicircle.html">semicircle</a></li>
         <li><a href="../../tags/separando.html">separando</a></li>
         <li><a href="../../tags/side-of-a-medial-minus-a-medial-area.html">side-of-a-medial-minus-a-medial-area</a></li>
         <li><a href="../../tags/side-of-a-medial-minus-a-rational-area.html">side-of-a-medial-minus-a-rational-area</a></li>
         <li><a href="../../tags/side-of-a-rational-plus-a-medial-area.html">side-of-a-rational-plus-a-medial-area</a></li>
+        <li><a href="../../tags/side-of-number.html">side-of-number</a></li>
         <li><a href="../../tags/side-of-the-sum-of-two-medial-areas.html">side-of-the-sum-of-two-medial-areas</a></li>
         <li><a href="../../tags/signature.html">signature</a></li>
         <li><a href="../../tags/similar.html">similar</a></li>
@@ -295,17 +717,25 @@
         <li><a href="../../tags/similar-solid-figures.html">similar-solid-figures</a></li>
         <li><a href="../../tags/sixth-apotome.html">sixth-apotome</a></li>
         <li><a href="../../tags/sixth-binomial.html">sixth-binomial</a></li>
+        <li><a href="../../tags/solid.html">solid</a></li>
         <li><a href="../../tags/solid-angle.html">solid-angle</a></li>
         <li><a href="../../tags/solid-number.html">solid-number</a></li>
         <li><a href="../../tags/sphere.html">sphere</a></li>
         <li><a href="../../tags/square.html">square</a></li>
         <li><a href="../../tags/square-number.html">square-number</a></li>
+        <li><a href="../../tags/stand-upon-circumference.html">stand-upon-circumference</a></li>
         <li><a href="../../tags/steps.html">steps</a></li>
+        <li><a href="../../tags/straight-line.html">straight-line</a></li>
+        <li><a href="../../tags/surface.html">surface</a></li>
         <li><a href="../../tags/tangent.html">tangent</a></li>
+        <li><a href="../../tags/tangent-to-circle.html">tangent-to-circle</a></li>
+        <li><a href="../../tags/terms.html">terms</a></li>
         <li><a href="../../tags/third-apotome.html">third-apotome</a></li>
         <li><a href="../../tags/third-binomial.html">third-binomial</a></li>
+        <li><a href="../../tags/titles.html">titles</a></li>
         <li><a href="../../tags/trapezium.html">trapezium</a></li>
         <li><a href="../../tags/triangle.html">triangle</a></li>
+        <li><a href="../../tags/trilateral.html">trilateral</a></li>
         <li><a href="../../tags/triplicate-ratio.html">triplicate-ratio</a></li>
         <li><a href="../../tags/unit.html">unit</a></li>
       </ul>
@@ -369,7 +799,7 @@
 
   <script src="../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../_static/documentation_options.js?v=d5a15cff"></script>
+  <script src="../../_static/documentation_options.js?v=6c02275b"></script>
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>

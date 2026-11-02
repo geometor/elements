@@ -1,17 +1,18 @@
 :canonical_id: G.102
-:original_id: III.23
+:original_id: III.5
+:title: G.102 circles cut center
 :volume: II
 :book: III
 :type: prop
 
-G.102 — Code
-============
+G.102 circles cut center — Code
+===============================
 
-.. rubric:: `III.23 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/23/>`_
+.. rubric:: `III.5 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/05/>`_
 
 .. enunciation::
 
-   On the same straight line there cannot be constructed two similar and unequal segments of circles on the same side.
+   If two :term:`circles <G.10>` cut one another, they will not have the same :term:`center <G.14>`.
 
 .. picture:: g1.svg
 

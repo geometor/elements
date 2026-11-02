@@ -1,17 +1,18 @@
 :canonical_id: G.221
-:original_id: VII.21
+:original_id: VI.11
+:title: G.221 third proportional
 :volume: II
-:book: VII
+:book: VI
 :type: prop
 
-G.221 — Code
-============
+G.221 third proportional — Code
+===============================
 
-.. rubric:: `VII.21 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/21/>`_
+.. rubric:: `VI.11 <https://geometor.github.io/euclid/heath/volume_II/book_vi/propositions/11/>`_
 
 .. enunciation::
 
-   Numbers prime to one another are the least of those which have the same ratio with them.
+   To two given :term:`segments <G.4>` to find a third :term:`proportional <G.180>`.
 
 .. picture:: g1.svg
 

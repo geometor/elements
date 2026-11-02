@@ -1,17 +1,18 @@
 :canonical_id: G.128
-:original_id: IV.10
+:original_id: III.23
+:title: G.128 segment there constructed
 :volume: II
-:book: IV
+:book: III
 :type: prop
 
-G.128 — Code
-============
+G.128 segment there constructed — Code
+======================================
 
-.. rubric:: `IV.10 <https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/10/>`_
+.. rubric:: `III.23 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/23/>`_
 
 .. enunciation::
 
-   Construct an isosceles triangle having each of the angles at the base double of the remaining one.
+   On the same :term:`segment <G.4>` there cannot be constructed two similar and unequal :term:`segments of circles <G.126>` on the same side.
 
 .. picture:: g1.svg
 

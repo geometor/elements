@@ -1,17 +1,18 @@
 :canonical_id: G.523
-:original_id: XIII.16
+:original_id: XI.19
+:title: G.523 planes cut right
 :volume: III
-:book: XIII
+:book: XI
 :type: prop
 
-G.523 — Code
-============
+G.523 planes cut right — Code
+=============================
 
-.. rubric:: `XIII.16 <https://geometor.github.io/euclid/heath/volume_III/book_xiii/propositions/16/>`_
+.. rubric:: `XI.19 <https://geometor.github.io/euclid/heath/volume_III/book_xi/propositions/19/>`_
 
 .. enunciation::
 
-   Construct an icosahedron and comprehend it in a sphere, like the aforesaid figures; and to prove that the side of the icosahedron is the irrational straight line called minor.
+   If two :term:`planes <G.7>` which cut one another be :term:`at right angles <G.32>` to any plane, their common section is :term:`at right angles to the same plane <G.505>`.
 
 .. picture:: g1.svg
 

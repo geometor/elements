@@ -1,17 +1,18 @@
 :canonical_id: G.328
-:original_id: X.15
-:volume: III
-:book: X
+:original_id: VIII.26
+:title: G.328 similar plane numbers
+:volume: II
+:book: VIII
 :type: prop
 
-G.328 — Code
-============
+G.328 similar plane numbers — Code
+==================================
 
-.. rubric:: `X.15 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/015/>`_
+.. rubric:: `VIII.26 <https://geometor.github.io/euclid/heath/volume_II/book_viii/propositions/26/>`_
 
 .. enunciation::
 
-   If two commensurable magnitudes be added together, the whole is commensurable with each of them; and, if the whole be commensurable with one of them, the original magnitudes is commensurable.
+   :term:`Similar plane numbers <G.318>` have to one another the :term:`ratio <G.173>` which a :term:`square number <G.308>` has to a square number.
 
 .. picture:: g1.svg
 

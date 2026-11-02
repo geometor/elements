@@ -1,17 +1,18 @@
 :canonical_id: G.171
-:original_id: VI.8
+:original_id: V.1
+:title: G.171 there number magnitudes
 :volume: II
-:book: VI
+:book: V
 :type: prop
 
-G.171 — Code
-============
+G.171 there number magnitudes — Code
+====================================
 
-.. rubric:: `VI.8 <https://geometor.github.io/euclid/heath/volume_II/book_vi/propositions/08/>`_
+.. rubric:: `V.1 <https://geometor.github.io/euclid/heath/volume_II/book_v/propositions/01/>`_
 
 .. enunciation::
 
-   If in a right-angled triangle a perpendicular be drawn from the right angle to the base, the triangles adjoining the perpendicular are similar both to the whole and to one another.
+   If there be any number of magnitudes whatever which are, respectively, :term:`equimultiples <G.170>` of any magnitudes equal in multitude, then, whatever multiple one of the magnitudes is of one, that multiple also will all be of all.
 
 .. picture:: g1.svg
 

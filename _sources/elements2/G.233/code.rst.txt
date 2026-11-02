@@ -1,17 +1,18 @@
 :canonical_id: G.233
-:original_id: VII.32
+:original_id: VI.21
+:title: G.233 figures similar polygon
 :volume: II
-:book: VII
+:book: VI
 :type: prop
 
-G.233 — Code
-============
+G.233 figures similar polygon — Code
+====================================
 
-.. rubric:: `VII.32 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/32/>`_
+.. rubric:: `VI.21 <https://geometor.github.io/euclid/heath/volume_II/book_vi/propositions/21/>`_
 
 .. enunciation::
 
-   Any number either is prime or is measured by some prime number.
+   :term:`Figures <G.9>` which are similar to the same polygon are also similar to one another.
 
 .. picture:: g1.svg
 

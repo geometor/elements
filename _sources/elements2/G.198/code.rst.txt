@@ -1,17 +1,18 @@
 :canonical_id: G.198
-:original_id: VI.33
+:original_id: V.17
+:title: G.198 magnitudes proportional componendo
 :volume: II
-:book: VI
+:book: V
 :type: prop
 
-G.198 — Code
-============
+G.198 magnitudes proportional componendo — Code
+===============================================
 
-.. rubric:: `VI.33 <https://geometor.github.io/euclid/heath/volume_II/book_vi/propositions/33/>`_
+.. rubric:: `V.17 <https://geometor.github.io/euclid/heath/volume_II/book_v/propositions/17/>`_
 
 .. enunciation::
 
-   In equal circles angles have the same ratio as the circumferences on which they stand, whether they stand at the centres or at the circumferences.
+   If magnitudes be :term:`proportional <G.180>` :term:`componendo <G.196>`, they is proportional :term:`separando <G.197>`.
 
 .. picture:: g1.svg
 

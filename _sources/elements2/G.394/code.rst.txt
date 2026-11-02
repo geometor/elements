@@ -1,17 +1,18 @@
 :canonical_id: G.394
-:original_id: X.73
+:original_id: X.20
+:title: G.394 rational area applied
 :volume: III
 :book: X
 :type: prop
 
-G.394 — Code
-============
+G.394 rational area applied — Code
+==================================
 
-.. rubric:: `X.73 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/073/>`_
+.. rubric:: `X.20 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/020/>`_
 
 .. enunciation::
 
-   If from a rational straight line there be subtracted a rational straight line commensurable with the whole in square only, the remainder is irrational; and let it be called an:term:`**apotome** <apotome>`.
+   If a :term:`rational area <G.392>` be applied to a :term:`rational <G.391>` :term:`segment <G.4>`, it produces as breadth a segment rational and :term:`commensurable <G.372>` in length with the segment to which it is applied.
 
 .. picture:: g1.svg
 

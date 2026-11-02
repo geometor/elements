@@ -1,17 +1,18 @@
 :canonical_id: G.336
-:original_id: X.22
-:volume: III
-:book: X
+:original_id: IX.7
+:title: G.336 composite number multiplying
+:volume: II
+:book: IX
 :type: prop
 
-G.336 — Code
-============
+G.336 composite number multiplying — Code
+=========================================
 
-.. rubric:: `X.22 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/022/>`_
+.. rubric:: `IX.7 <https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/07/>`_
 
 .. enunciation::
 
-   The square on a medial straight line, if applied to a rational straight line, produces as breadth a straight line rational and incommensurable in length with that to which it is applied.
+   If a :term:`composite number <G.286>` by :term:`multiplying <G.269>` any :term:`number <G.248>` make some number, the product is solid.
 
 .. picture:: g1.svg
 

@@ -1,17 +1,18 @@
 :canonical_id: G.520
-:original_id: XIII.13
+:original_id: XI.17
+:title: G.520 segments cut parallel
 :volume: III
-:book: XIII
+:book: XI
 :type: prop
 
-G.520 — Code
-============
+G.520 segments cut parallel — Code
+==================================
 
-.. rubric:: `XIII.13 <https://geometor.github.io/euclid/heath/volume_III/book_xiii/propositions/13/>`_
+.. rubric:: `XI.17 <https://geometor.github.io/euclid/heath/volume_III/book_xi/propositions/17/>`_
 
 .. enunciation::
 
-   *To construct a pyramid, to comprehend it in a given sphere, and to prove that the square on the diameter of the sphere is one and a half times the square on the side of the pyramid.*
+   If two :term:`segments <G.4>` be cut by :term:`parallel planes <G.516>`, they is cut in the same :term:`ratios <G.173>`.
 
 .. picture:: g1.svg
 

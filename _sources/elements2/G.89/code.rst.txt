@@ -1,17 +1,18 @@
 :canonical_id: G.89
-:original_id: III.13
-:volume: II
-:book: III
+:original_id: II.7
+:title: G.89 square of difference
+:volume: I
+:book: II
 :type: prop
 
-G.89 — Code
-===========
+G.89 square of difference — Code
+================================
 
-.. rubric:: `III.13 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/13/>`_
+.. rubric:: `II.7 <https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/07/>`_
 
 .. enunciation::
 
-   A circle does not touch a circle at more points than one, whether it touch it internally or externally.
+   If a :term:`segment <G.4>` be cut at random, the :term:`square <G.63>` on the whole and that on one of the segments both together are equal to twice the :term:`rectangle contained <G.81>` by the whole and the said segment and the square on the remaining segment.
 
 .. picture:: g1.svg
 

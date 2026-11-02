@@ -1,17 +1,18 @@
 :canonical_id: G.42
-:original_id: I.29
+:original_id: I.17
+:title: G.42 two angles of a triangle are less than two right angles
 :volume: I
 :book: I
 :type: prop
 
-G.42 — Code
-===========
+G.42 two angles of a triangle are less than two right angles — Code
+===================================================================
 
-.. rubric:: `I.29 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/29/>`_
+.. rubric:: `I.17 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/17/>`_
 
 .. enunciation::
 
-   A transversal cutting parallel lines makes alternate interior angles equal, exterior and opposite interior angles equal, and same-side interior angles supplementary.
+   In any :term:`triangle <G.11>`, the sum of any two :term:`angles <G.22>` is less than two :term:`right angles <G.32>`.
 
 .. picture:: g1.svg
 

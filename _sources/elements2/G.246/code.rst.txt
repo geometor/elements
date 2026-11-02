@@ -1,17 +1,18 @@
 :canonical_id: G.246
-:original_id: VIII.6
+:original_id: VI.33
+:title: G.246 equal circles angles
 :volume: II
-:book: VIII
+:book: VI
 :type: prop
 
-G.246 — Code
-============
+G.246 equal circles angles — Code
+=================================
 
-.. rubric:: `VIII.6 <https://geometor.github.io/euclid/heath/volume_II/book_viii/propositions/06/>`_
+.. rubric:: `VI.33 <https://geometor.github.io/euclid/heath/volume_II/book_vi/propositions/33/>`_
 
 .. enunciation::
 
-   If there be as many numbers as we please in continued proportion, and the first do not measure the second, neither will any other measure any other.
+   In :term:`equal circles <G.131>` :term:`angles <G.22>` have the :term:`same ratio <G.176>` as the arcs on which they stand, whether they stand at the :term:`centres <G.14>` or at the arcs.
 
 .. picture:: g1.svg
 

@@ -1,17 +1,18 @@
 :canonical_id: G.510
-:original_id: XIII.3
+:original_id: XI.8
+:title: G.510 segments parallel right
 :volume: III
-:book: XIII
+:book: XI
 :type: prop
 
-G.510 — Code
-============
+G.510 segments parallel right — Code
+====================================
 
-.. rubric:: `XIII.3 <https://geometor.github.io/euclid/heath/volume_III/book_xiii/propositions/03/>`_
+.. rubric:: `XI.8 <https://geometor.github.io/euclid/heath/volume_III/book_xi/propositions/08/>`_
 
 .. enunciation::
 
-   If a straight line be cut in extreme and mean ratio, the square on the lesser segment added to the half of the greater segment is five times the square on the half of the greater segment.
+   If two :term:`segments <G.4>` be :term:`parallel <G.52>`, and one of them be :term:`at right angles <G.32>` to any :term:`plane <G.7>`, the remaining one is :term:`at right angles to the same plane <G.505>`.
 
 .. picture:: g1.svg
 

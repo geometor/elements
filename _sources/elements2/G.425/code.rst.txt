@@ -1,17 +1,18 @@
 :canonical_id: G.425
-:original_id: X.98
+:original_id: X.49
+:title: G.425 find the second binomial segment
 :volume: III
 :book: X
 :type: prop
 
-G.425 — Code
-============
+G.425 find the second binomial segment — Code
+=============================================
 
-.. rubric:: `X.98 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/098/>`_
+.. rubric:: `X.49 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/049/>`_
 
 .. enunciation::
 
-   The square on a first apotome of a medial straight line applied to a rational straight line produces as breadth a second apotome.
+   Find the :term:`second binomial <G.424>` :term:`segment <G.4>`.
 
 .. picture:: g1.svg
 

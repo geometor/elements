@@ -1,17 +1,18 @@
 :canonical_id: G.165
-:original_id: VI.3
+:original_id: IV.13
+:title: G.165 pentagon equilateral equiangular
 :volume: II
-:book: VI
+:book: IV
 :type: prop
 
-G.165 — Code
-============
+G.165 pentagon equilateral equiangular — Code
+=============================================
 
-.. rubric:: `VI.3 <https://geometor.github.io/euclid/heath/volume_II/book_vi/propositions/03/>`_
+.. rubric:: `IV.13 <https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/13/>`_
 
 .. enunciation::
 
-   If an angle of a triangle be bisected and the straight line cutting the angle cut the base also, the segments of the base will have the same ratio as the remaining sides of the triangle; and, if the segments of the base have the same ratio as the remaining sides of the triangle, the straight line joined from the vertex to the point of section will bisect the angle of the triangle.
+   In a given pentagon, which is :term:`equilateral <G.12>` and equiangular, to inscribe a :term:`circle <G.10>`.
 
 .. picture:: g1.svg
 

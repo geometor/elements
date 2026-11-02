@@ -1,17 +1,18 @@
 :canonical_id: G.331
-:original_id: X.18
-:volume: III
-:book: X
+:original_id: IX.2
+:title: G.331 numbers multiplying make
+:volume: II
+:book: IX
 :type: prop
 
-G.331 — Code
-============
+G.331 numbers multiplying make — Code
+=====================================
 
-.. rubric:: `X.18 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/018/>`_
+.. rubric:: `IX.2 <https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/02/>`_
 
 .. enunciation::
 
-   If there be two unequal straight lines, and to the greater there be applied a parallelogram equal to the fourth part of the square on the less and deficient by a square figure, and if it divide it into parts which are incommensurable, the square on the greater is greater than the square on the less by the square on a straight line incommensurable with the greater. And, if the square on the greater be greater than the square on the less by the square on a straight line incommensurable with the greater, and if there be applied to the greater a parallelogram equal to the fourth part of the square on the less and deficient by a square figure, it divides it into parts which are incommensurable.
+   If two :term:`numbers <G.248>` by :term:`multiplying <G.269>` one another make a :term:`square number <G.308>`, they are :term:`similar plane numbers <G.318>`.
 
 .. picture:: g1.svg
 

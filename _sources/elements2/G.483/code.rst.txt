@@ -1,17 +1,18 @@
 :canonical_id: G.483
-:original_id: XI.36
+:original_id: X.97
+:title: G.483 square apotome applied
 :volume: III
-:book: XI
+:book: X
 :type: prop
 
-G.483 — Code
-============
+G.483 square apotome applied — Code
+===================================
 
-.. rubric:: `XI.36 <https://geometor.github.io/euclid/heath/volume_III/book_xi/propositions/36/>`_
+.. rubric:: `X.97 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/097/>`_
 
 .. enunciation::
 
-   If three straight lines be proportional, the parallelepipedal solid formed out of the three is equal to the parallelepipedal solid on the mean which is equilateral, but equiangular with the aforesaid solid.
+   The :term:`square <G.63>` on an apotome applied to a :term:`rational <G.391>` :term:`segment <G.4>` produces as breadth a :term:`first apotome <G.454>`.
 
 .. picture:: g1.svg
 

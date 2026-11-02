@@ -1,17 +1,18 @@
 :canonical_id: G.296
-:original_id: IX.23
+:original_id: VIII.1
+:title: G.296 there many numbers
 :volume: II
-:book: IX
+:book: VIII
 :type: prop
 
-G.296 — Code
-============
+G.296 there many numbers — Code
+===============================
 
-.. rubric:: `IX.23 <https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/23/>`_
+.. rubric:: `VIII.1 <https://geometor.github.io/euclid/heath/volume_II/book_viii/propositions/01/>`_
 
 .. enunciation::
 
-   If as many odd numbers as we please be added together, and their multitude be odd, the whole is odd.
+   If there be as many :term:`numbers <G.248>` as we please in :term:`continued proportion <G.180>`, and the extremes of them be :term:`prime to one another <G.249>`, the numbers are the least of those which have the :term:`same ratio <G.176>` with them.
 
 .. picture:: g1.svg
 

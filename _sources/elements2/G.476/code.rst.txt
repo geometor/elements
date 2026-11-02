@@ -1,17 +1,18 @@
 :canonical_id: G.476
-:original_id: XI.29
+:original_id: X.90
+:title: G.476 find the sixth apotome
 :volume: III
-:book: XI
+:book: X
 :type: prop
 
-G.476 — Code
-============
+G.476 find the sixth apotome — Code
+===================================
 
-.. rubric:: `XI.29 <https://geometor.github.io/euclid/heath/volume_III/book_xi/propositions/29/>`_
+.. rubric:: `X.90 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/090/>`_
 
 .. enunciation::
 
-   Parallelepipedal solids which are on the same base and of the same height, and in which the extremities of the sides which stand up are on the same straight lines, are equal.
+   Find the :term:`sixth apotome <G.475>`.
 
 .. picture:: g1.svg
 

@@ -1,17 +1,18 @@
 :canonical_id: G.338
-:original_id: X.23
-:volume: III
-:book: X
+:original_id: IX.9
+:title: G.338 many numbers please
+:volume: II
+:book: IX
 :type: prop
 
-G.338 — Code
-============
+G.338 many numbers please — Code
+================================
 
-.. rubric:: `X.23 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/023/>`_
+.. rubric:: `IX.9 <https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/09/>`_
 
 .. enunciation::
 
-   A straight line commensurable with a medial straight line is medial.
+   If as many :term:`numbers <G.248>` as we please beginning from an :term:`unit <G.247>` be in :term:`continued proportion <G.180>`, and the number after the unit be :term:`square <G.63>`, all the rest is square. And, if the number after the unit be cube, all the rest is cube.
 
 .. picture:: g1.svg
 

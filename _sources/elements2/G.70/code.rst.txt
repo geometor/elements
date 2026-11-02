@@ -1,17 +1,18 @@
 :canonical_id: G.70
-:original_id: II.9
+:original_id: I.41
+:title: G.70 parallelogram is double a triangle on the same base
 :volume: I
-:book: II
+:book: I
 :type: prop
 
-G.70 — Code
-===========
+G.70 parallelogram is double a triangle on the same base — Code
+===============================================================
 
-.. rubric:: `II.9 <https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/09/>`_
+.. rubric:: `I.41 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/41/>`_
 
 .. enunciation::
 
-   If a straight line be cut into equal and unequal segments, the squares on the unequal segments of the whole are double of the square on the half and of the square on the straight line between the points of section.
+   If a parallelogram shares the same base with a :term:`triangle <G.11>` and lies in the same :term:`parallels <G.52>`, the parallelogram is double the triangle.
 
 .. picture:: g1.svg
 

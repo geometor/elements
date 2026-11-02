@@ -1,17 +1,18 @@
 :canonical_id: G.275
-:original_id: IX.6
+:original_id: VII.21
+:title: G.275 numbers prime least
 :volume: II
-:book: IX
+:book: VII
 :type: prop
 
-G.275 — Code
-============
+G.275 numbers prime least — Code
+================================
 
-.. rubric:: `IX.6 <https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/06/>`_
+.. rubric:: `VII.21 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/21/>`_
 
 .. enunciation::
 
-   If a number by multiplying itself make a cube number, it will itself also be cube.
+   :term:`Numbers <G.248>` :term:`prime to one another <G.249>` are the least of those which have the :term:`same ratio <G.176>` with them.
 
 .. picture:: g1.svg
 

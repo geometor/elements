@@ -1,17 +1,18 @@
 :canonical_id: G.309
-:original_id: IX.34
+:original_id: VIII.11
+:title: G.309 square numbers there
 :volume: II
-:book: IX
+:book: VIII
 :type: prop
 
-G.309 — Code
-============
+G.309 square numbers there — Code
+=================================
 
-.. rubric:: `IX.34 <https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/34/>`_
+.. rubric:: `VIII.11 <https://geometor.github.io/euclid/heath/volume_II/book_viii/propositions/11/>`_
 
 .. enunciation::
 
-   If a number neither be one of those which are continually doubled from a dyad, nor have its half odd, it is both even-times even and even-times odd.
+   Between two :term:`square numbers <G.308>` there is one mean :term:`proportional <G.180>` :term:`number <G.248>`, and the :term:`square <G.63>` has to the square the :term:`ratio <G.173>` duplicate of that which the side has to the side.
 
 .. picture:: g1.svg
 

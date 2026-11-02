@@ -1,17 +1,18 @@
 :canonical_id: G.440
-:original_id: X.113
+:original_id: X.60
+:title: G.440 square binomial segment
 :volume: III
 :book: X
 :type: prop
 
-G.440 — Code
-============
+G.440 square binomial segment — Code
+====================================
 
-.. rubric:: `X.113 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/113/>`_
+.. rubric:: `X.60 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/060/>`_
 
 .. enunciation::
 
-   The square on a rational straight line, if applied to an apotome, produces as breadth the binomial straight line the terms of which are commensurable with the terms of the apotome and in the same ratio; and further the binomial so arising has the same order as the apotome.
+   The :term:`square <G.63>` on the binomial :term:`segment <G.4>` applied to a :term:`rational <G.391>` segment produces as breadth the :term:`first binomial <G.422>`.
 
 .. picture:: g1.svg
 

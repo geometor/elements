@@ -1,17 +1,18 @@
 :canonical_id: G.315
-:original_id: X.2
-:volume: III
-:book: X
+:original_id: VIII.15
+:title: G.315 cube number measure
+:volume: II
+:book: VIII
 :type: prop
 
-G.315 — Code
-============
+G.315 cube number measure — Code
+================================
 
-.. rubric:: `X.2 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/002/>`_
+.. rubric:: `VIII.15 <https://geometor.github.io/euclid/heath/volume_II/book_viii/propositions/15/>`_
 
 .. enunciation::
 
-   If, when the less of two unequal magnitudes is continually subtracted in turn from the greater, that which is left never measures the one before it, the magnitudes is incommensurable.
+   If a :term:`cube number <G.311>` :term:`measure <G.169>` a cube number, the side will also measure the side; and, if the side measure the side, the cube will also measure the cube.
 
 .. picture:: g1.svg
 

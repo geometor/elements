@@ -1,17 +1,18 @@
 :canonical_id: G.431
-:original_id: X.104
+:original_id: X.52
+:title: G.431 find the fifth binomial segment
 :volume: III
 :book: X
 :type: prop
 
-G.431 — Code
-============
+G.431 find the fifth binomial segment — Code
+============================================
 
-.. rubric:: `X.104 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/104/>`_
+.. rubric:: `X.52 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/052/>`_
 
 .. enunciation::
 
-   A straight line commensurable with an apotome of a medial straight line is an apotome of a medial straight line and the same in order.
+   Find the :term:`fifth binomial <G.430>` :term:`segment <G.4>`.
 
 .. picture:: g1.svg
 

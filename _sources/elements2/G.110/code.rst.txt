@@ -1,17 +1,18 @@
 :canonical_id: G.110
-:original_id: III.31
+:original_id: III.12
+:title: G.110 circles touch externally
 :volume: II
 :book: III
 :type: prop
 
-G.110 — Code
-============
+G.110 circles touch externally — Code
+=====================================
 
-.. rubric:: `III.31 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/31/>`_
+.. rubric:: `III.12 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/12/>`_
 
 .. enunciation::
 
-   In a circle the angle in the semicircle is right, that in a greater segment less than a right angle, and that in a less segment greater than a right angle; and further the angle of the greater segment is greater than a right angle, and the angle of the less segment less than a right angle.
+   If two :term:`circles <G.10>` :term:`touch one another <G.103>` externally, the :term:`segment <G.4>` joining their :term:`centres <G.14>` will pass through the :term:`point <G.1>` of contact.
 
 .. picture:: g1.svg
 

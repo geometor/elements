@@ -1,17 +1,18 @@
 :canonical_id: G.303
-:original_id: IX.30
+:original_id: VIII.6
+:title: G.303 there many numbers
 :volume: II
-:book: IX
+:book: VIII
 :type: prop
 
-G.303 — Code
-============
+G.303 there many numbers — Code
+===============================
 
-.. rubric:: `IX.30 <https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/30/>`_
+.. rubric:: `VIII.6 <https://geometor.github.io/euclid/heath/volume_II/book_viii/propositions/06/>`_
 
 .. enunciation::
 
-   If an odd number measure an even number, it will also measure the half of it.
+   If there be as many :term:`numbers <G.248>` as we please in :term:`continued proportion <G.180>`, and the first do not :term:`measure <G.169>` the second, neither will any other measure any other.
 
 .. picture:: g1.svg
 

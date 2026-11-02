@@ -1,17 +1,18 @@
 :canonical_id: G.522
-:original_id: XIII.15
+:original_id: XI.18
+:title: G.522 segment right angles
 :volume: III
-:book: XIII
+:book: XI
 :type: prop
 
-G.522 — Code
-============
+G.522 segment right angles — Code
+=================================
 
-.. rubric:: `XIII.15 <https://geometor.github.io/euclid/heath/volume_III/book_xiii/propositions/15/>`_
+.. rubric:: `XI.18 <https://geometor.github.io/euclid/heath/volume_III/book_xi/propositions/18/>`_
 
 .. enunciation::
 
-   Construct a cube and comprehend it in a sphere, like the pyramid; and to prove that the square on the diameter of the sphere is triple of the square on the side of the cube.
+   If a :term:`segment <G.4>` be :term:`at right angles <G.32>` to any :term:`plane <G.7>`, all the planes through it is :term:`at right angles to the same plane <G.505>`.
 
 .. picture:: g1.svg
 

@@ -1,17 +1,18 @@
 :canonical_id: G.260
-:original_id: VIII.18
+:original_id: VII.8
+:title: G.260 number parts number
 :volume: II
-:book: VIII
+:book: VII
 :type: prop
 
-G.260 — Code
-============
+G.260 number parts number — Code
+================================
 
-.. rubric:: `VIII.18 <https://geometor.github.io/euclid/heath/volume_II/book_viii/propositions/18/>`_
+.. rubric:: `VII.8 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/08/>`_
 
 .. enunciation::
 
-   Between two similar plane numbers there is one mean proportional number; and the plane number has to the plane number the ratio duplicate of that which the corresponding side has to the corresponding side.
+   If a :term:`number <G.248>` be the :term:`same parts <G.254>` of a number that a number subtracted is of a number subtracted, the remainder is the same parts of the remainder that the whole is of the whole.
 
 .. picture:: g1.svg
 

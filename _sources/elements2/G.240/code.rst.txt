@@ -1,17 +1,18 @@
 :canonical_id: G.240
-:original_id: VII.39
+:original_id: VI.28
+:title: G.240 segment apply parallelogram
 :volume: II
-:book: VII
+:book: VI
 :type: prop
 
-G.240 — Code
-============
+G.240 segment apply parallelogram — Code
+========================================
 
-.. rubric:: `VII.39 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/39/>`_
+.. rubric:: `VI.28 <https://geometor.github.io/euclid/heath/volume_II/book_vi/propositions/28/>`_
 
 .. enunciation::
 
-   Find the number which is the least that will have given parts.
+   To a given :term:`segment <G.4>` to apply a parallelogram equal to a given polygon and deficient by a parallelogrammic :term:`figure <G.9>` similar to a given one: thus the given polygon must not be greater than the parallelogram described on the half of the segment and similar to the defect.
 
 .. picture:: g1.svg
 

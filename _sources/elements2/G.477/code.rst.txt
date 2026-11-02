@@ -1,17 +1,18 @@
 :canonical_id: G.477
-:original_id: XI.30
+:original_id: X.91
+:title: G.477 area contained rational
 :volume: III
-:book: XI
+:book: X
 :type: prop
 
-G.477 — Code
-============
+G.477 area contained rational — Code
+====================================
 
-.. rubric:: `XI.30 <https://geometor.github.io/euclid/heath/volume_III/book_xi/propositions/30/>`_
+.. rubric:: `X.91 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/091/>`_
 
 .. enunciation::
 
-   Parallelepipedal solids which are on the same base and of the same height, and in which the extremities of the sides which stand up are not on the same straight lines, are equal.
+   If an area be contained by a :term:`rational <G.391>` :term:`segment <G.4>` and a :term:`first apotome <G.454>`, the "side" of the area is an apotome.
 
 .. picture:: g1.svg
 

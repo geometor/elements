@@ -1,17 +1,18 @@
 :canonical_id: G.66
-:original_id: II.5
+:original_id: I.37
+:title: G.66 triangles on the same base in the same parallels
 :volume: I
-:book: II
+:book: I
 :type: prop
 
-G.66 — Code
-===========
+G.66 triangles on the same base in the same parallels — Code
+============================================================
 
-.. rubric:: `II.5 <https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/05/>`_
+.. rubric:: `I.37 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/37/>`_
 
 .. enunciation::
 
-   If a straight line be cut into equal and unequal segments, the rectangle contained by the unequal segments of the whole together with the square on the straight line between the points of section is equal to the square on the half.
+   :term:`Triangles <G.11>` on the same base and in the same :term:`parallels <G.52>` are equal in area.
 
 .. picture:: g1.svg
 

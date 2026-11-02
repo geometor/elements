@@ -1,58 +1,57 @@
 :canonical_id: G.137
-:original_id: V.3
+:original_id: III.30
+:title: G.137 bisect a given arc
 :volume: II
-:book: V
+:book: III
 :type: prop
 
-G.137 — Heath
-=============
+G.137 bisect a given arc — Heath
+================================
 
-.. rubric:: `V.3 <https://geometor.github.io/euclid/heath/volume_II/book_v/propositions/03/>`_
+.. rubric:: `III.30 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/30/>`_
 
 .. enunciation::
 
-   If a first magnitude be the same multiple of a second that a third is of a fourth, and if equimultiples be taken of the first and third, then also :term:`*ex aequali* <ex-aequali>` the magnitudes taken will be equimultiples respectively, the one of the second and the other of the fourth.
+   To bisect a given circumference.
 
-Let a first magnitude :g:`A <g1:A>` be the same multiple of a second :g:`B <g1:B>` that a third :g:`C <g1:C>` is of a fourth :g:`D <g1:D>`, and let equimultiples :g:`/ E F / <g1:/ E F />`, :g:`/ G H / <g1:/ G H />` be taken of :g:`A <g1:A>`, :g:`C <g1:C>`;
+Let :g:`( A D B ) <g1:( A D B )>` be the given circumference;
+thus it is required to bisect the circumference :g:`( A D B ) <g1:( A D B )>`.
 
-I say that :g:`/ E F / <g1:/ E F />` is the same multiple of :g:`B <g1:B>` that :g:`/ G H / <g1:/ G H />` is of :g:`D <g1:D>`.
-
-For, since :g:`/ E F / <g1:/ E F />` is the same multiple of :g:`A <g1:A>` that :g:`/ G H / <g1:/ G H />` is of :g:`C <g1:C>`,
-
-.. assertion::
-
-   therefore, as many magnitudes as there are in :g:`/ E F / <g1:/ E F />` equal to :g:`A <g1:A>`, so many also are there in :g:`/ G H / <g1:/ G H />` equal to :g:`C <g1:C>`.
-
-Let :g:`/ E F / <g1:/ E F />` be divided into the magnitudes :g:`/ E K / <g1:/ E K />`, :g:`/ K F / <g1:/ K F />` :eq:`equal <g1:/ E K / = g1:/ K F / = g1:A>` to :g:`A <g1:A>`, and :g:`/ G H / <g1:/ G H />` into the magnitudes :g:`/ G L / <g1:/ G L />`, :g:`/ L H / <g1:/ L H />` :eq:`equal <g1:/ G L / = g1:/ L H / = g1:C>` to :g:`C <g1:C>`; then the multitude of the magnitudes :g:`/ E K / <g1:/ E K />`, :g:`/ K F / <g1:/ K F />` will be equal to the multitude of the magnitudes :g:`/ G L / <g1:/ G L />`, :g:`/ L H / <g1:/ L H />`.
+Let :g:`/ A B / <g1:/ A B />` be joined and bisected at
+:g:`C <g1:C>`; from the point :g:`C <g1:C>` let :g:`/ C D / <g1:/ C D />` be drawn
+:term:`at right angles <G.32>` to the :term:`straight line <G.4>` :g:`/ A B / <g1:/ A B />`,
+and let :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` be joined.
 
 .. picture:: g1.svg
-   :alt: Proposition 3 diagram
+   :alt: Diagram
 
-And, since :g:`A <g1:A>` is the same multiple of :g:`B <g1:B>` that :g:`C <g1:C>` is of :g:`D <g1:D>`,
+Then, since :g:`/ A C / <g1:/ A C />` is :eq:`equal <g1:/ A C / = g1:/ C B />` to :g:`/ C B / <g1:/ C B />`,
+and :g:`/ C D / <g1:/ C D />` is common,
+the two sides :g:`/ A C / <g1:/ A C />`, :g:`/ C D / <g1:/ C D />` are :eq:`equal <g1:/ A C / = g1:/ B C /; g1:/ C D / = g1:/ C D />` to the two sides :g:`/ B C / <g1:/ B C />`, :g:`/ C D / <g1:/ C D />`;
+and the :term:`angle <G.22>` :g:`< A C D ) <g1:< A C D )>` is :eq:`equal <g1:< A C D ) = g1:< B C D )>` to the angle :g:`< B C D ) <g1:< B C D )>`, for each is
+right;
+
+.. assertion:: [G.24] <G.24>
+
+   therefore the base :g:`/ A D / <g1:/ A D />` is :eq:`equal <g1:/ A D / = g1:/ D B />` to the base :g:`/ D B / <g1:/ D B />`.
+
+But equal straight lines cut off equal circumferences, the
+greater equal to the greater, and the less to the less; :just:`[G.135] <G.135>`
 
 .. subclause::
 
-   while :g:`/ E K / <g1:/ E K />` is :eq:`equal <g1:/ E K / = g1:A; g1:/ G L / = g1:C>` to :g:`A <g1:A>`, and :g:`/ G L / <g1:/ G L />` to :g:`C <g1:C>`,
+   and each of the circumferences :g:`( A D ) <g1:( A D )>`, :g:`( D B ) <g1:( D B )>` is less than a :term:`semicircle <G.96>`;
 
 .. assertion::
 
-   therefore :g:`/ E K / <g1:/ E K />` is the same multiple of :g:`B <g1:B>` that :g:`/ G L / <g1:/ G L />` is of :g:`D <g1:D>`.
+   therefore the circumference :g:`( A D ) <g1:( A D )>` is :eq:`equal <g1:( A D ) = g1:( D B )>` to the circumference :g:`( D B ) <g1:( D B )>`.
 
-For the same reason
-
-.. assertion::
-
-   :g:`/ K F / <g1:/ K F />` is the same multiple of :g:`B <g1:B>` that :g:`/ L H / <g1:/ L H />` is of :g:`D <g1:D>`.
-
-Since, then, a first magnitude :g:`/ E K / <g1:/ E K />` is the same multiple of a second :g:`B <g1:B>` that a third :g:`/ G L / <g1:/ G L />` is of a fourth :g:`D <g1:D>`, and a fifth :g:`/ K F / <g1:/ K F />` is also the same multiple of the second :g:`B <g1:B>` that a sixth :g:`/ L H / <g1:/ L H />` is of the fourth :g:`D <g1:D>`,
-
-.. assertion::
-
-   therefore the sum of the first and fifth, :g:`/ E F / <g1:/ E F />`, is also the same multiple of the second :g:`B <g1:B>` that the sum of the third and sixth, :g:`/ G H / <g1:/ G H />`, is of the fourth :g:`D <g1:D>`. :just:`[G.136] <G.136>`
+Therefore the given circumference has been bisected at
+the :term:`point <G.1>` :g:`D <g1:D>`.
 
 .. qed::
 
-   Therefore etc. :just:`Q. E. D.`
+   :just:`Q. E. F.`
 
 Dependency Graph
 ----------------
@@ -64,12 +63,159 @@ Dependency Graph
      node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11, color="#d6d3cd", fontcolor="#ffffff"];
      edge [color="#8c857b", fontcolor="#8c857b", arrowsize=0.75];
      rankdir="TB";
-     "G.136" [label="G.136", tooltip="G.136 (V.2): If a first magnitude be the same multiple of a second that a third is of a fourth, and a fifth also be the same multiple of the second that a sixth is of the fourth, the sum of the...", fillcolor="#222244", URL="../G.136/index.html", target="_top"];
-     "G.137" [label="G.137", tooltip="G.137 (V.3): If a first magnitude be the same multiple of a second that a third is of a fourth, and if equimultiples be taken of the first and third, then alsoex aequali the magnitudes taken is...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
-     "G.137" -> "G.136";
+     "G.1" [label="G.1", tooltip="G.1 (I.def.1): A point A is that which has no part.", fillcolor="#224422", URL="../G.1/index.html", target="_top"];
+     "G.2" [label="G.2", tooltip="G.2 (I.def.2): A line [ A B ] is a projection of a relationship of two points A, B.", fillcolor="#224422", URL="../G.2/index.html", target="_top"];
+     "G.3" [label="G.3", tooltip="G.3 (I.def.3): The extremities of a segment / A B / are points A, B.", fillcolor="#224422", URL="../G.3/index.html", target="_top"];
+     "G.4" [label="G.4", tooltip="G.4 (I.def.4): A segment / A B / is a portion of a line [ A B ] between two points A, B on the line.", fillcolor="#224422", URL="../G.4/index.html", target="_top"];
+     "G.5" [label="G.5", tooltip="G.5 (I.def.5): A surface is that which has length and breadth only.", fillcolor="#224422", URL="../G.5/index.html", target="_top"];
+     "G.6" [label="G.6", tooltip="G.6 (I.def.6): The extremities of a surface are lines or arcs.", fillcolor="#224422", URL="../G.6/index.html", target="_top"];
+     "G.7" [label="G.7", tooltip="G.7 (I.def.7): A plane surface lies evenly with the lines on itself.", fillcolor="#224422", URL="../G.7/index.html", target="_top"];
+     "G.8" [label="G.8", tooltip="G.8 (I.def.13): A boundary is the extremity of anything.", fillcolor="#224422", URL="../G.8/index.html", target="_top"];
+     "G.9" [label="G.9", tooltip="G.9 (I.def.14): A figure is that which is contained by any boundary or boundaries.", fillcolor="#224422", URL="../G.9/index.html", target="_top"];
+     "G.10" [label="G.10", tooltip="G.10 (I.def.15): A circle ( A B ) is a plane figure contained by one arc defined by a center A and a point B establishing its defining radius / A B /, such that all segments / A B /, / A C /, / A D...", fillcolor="#224422", URL="../G.10/index.html", target="_top"];
+     "G.11" [label="G.11", tooltip="G.11 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
+     "G.12" [label="G.12", tooltip="G.12 (I.def.20): Of trilateral figures, an equilateral triangle < A B C > has three equal sides, an isosceles triangle < D E F > has two equal sides, and a scalene triangle < G H K > has three uneq...", fillcolor="#224422", URL="../G.12/index.html", target="_top"];
+     "G.13" [label="G.13", tooltip="G.13 (I.post.1): Construct a segment / A B / between any two points A, B.", fillcolor="#444422", URL="../G.13/index.html", target="_top"];
+     "G.14" [label="G.14", tooltip="G.14 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.", fillcolor="#224422", URL="../G.14/index.html", target="_top"];
+     "G.15" [label="G.15", tooltip="G.15 (I.post.3): Construct a circle ( A B ) with center A and defining radius point B.", fillcolor="#444422", URL="../G.15/index.html", target="_top"];
+     "G.16" [label="G.16", tooltip="G.16 (I.cn.1): Things equal to the same thing are equal to one another.", fillcolor="#442222", URL="../G.16/index.html", target="_top"];
+     "G.17" [label="G.17", tooltip="G.17 (I.1): Construct an equilateral triangle on a given segment.", fillcolor="#222244", URL="../G.17/index.html", target="_top"];
+     "G.18" [label="G.18", tooltip="G.18 (I.post.2): Extend a segment / A B / continuously along a line [ A B ] to / B C /.", fillcolor="#444422", URL="../G.18/index.html", target="_top"];
+     "G.19" [label="G.19", tooltip="G.19 (I.cn.3): If equals are subtracted from equals, the remainders are equal.", fillcolor="#442222", URL="../G.19/index.html", target="_top"];
+     "G.20" [label="G.20", tooltip="G.20 (I.2): Construct at a given point a segment equal to a given segment.", fillcolor="#222244", URL="../G.20/index.html", target="_top"];
+     "G.21" [label="G.21", tooltip="G.21 (I.3): Cut off from the greater of two unequal segments a segment equal to the less.", fillcolor="#222244", URL="../G.21/index.html", target="_top"];
+     "G.22" [label="G.22", tooltip="G.22 (I.def.8): A plane angle is the inclination to one another of two lines or arcs in a plane that meet and do not lie on the same line.", fillcolor="#224422", URL="../G.22/index.html", target="_top"];
+     "G.23" [label="G.23", tooltip="G.23 (I.cn.4): Things / A B /, / D E / that coincide with one another are equal to one another.", fillcolor="#442222", URL="../G.23/index.html", target="_top"];
+     "G.24" [label="G.24", tooltip="G.24 (I.4): Triangles with two sides and the included angle equal are congruent (SAS).", fillcolor="#222244", URL="../G.24/index.html", target="_top"];
+     "G.25" [label="G.25", tooltip="G.25 (I.5): In an isosceles triangle, the angles at the base are equal, and if the equal sides are extended, the angles under the base are equal.", fillcolor="#222244", URL="../G.25/index.html", target="_top"];
+     "G.27" [label="G.27", tooltip="G.27 (I.7): On the same segment and on the same side, there cannot be constructed two distinct triangles with both pairs of conterminous sides equal.", fillcolor="#222244", URL="../G.27/index.html", target="_top"];
+     "G.28" [label="G.28", tooltip="G.28 (I.8): Triangles with all three corresponding sides equal have their corresponding angles equal (SSS).", fillcolor="#222244", URL="../G.28/index.html", target="_top"];
+     "G.32" [label="G.32", tooltip="G.32 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.32/index.html", target="_top"];
+     "G.61" [label="G.61", tooltip="G.61 (I.def.17): A diameter of a circle is any segment drawn through the center and terminated in both directions by the arc of the circle; it bisects the circle.", fillcolor="#224422", URL="../G.61/index.html", target="_top"];
+     "G.96" [label="G.96", tooltip="G.96 (I.def.18): A semicircle is the figure contained by a diameter and the arc cut off by it.", fillcolor="#224422", URL="../G.96/index.html", target="_top"];
+     "G.98" [label="G.98", tooltip="G.98 (III.1): Find the center of a given circle.", fillcolor="#222244", URL="../G.98/index.html", target="_top"];
+     "G.102" [label="G.102", tooltip="G.102 (III.5): If two circles cut one another, they will not have the same center.", fillcolor="#222244", URL="../G.102/index.html", target="_top"];
+     "G.108" [label="G.108", tooltip="G.108 (III.10): A circle does not cut a circle at more points than two.", fillcolor="#222244", URL="../G.108/index.html", target="_top"];
+     "G.127" [label="G.127", tooltip="G.127 (III.def.11): Similar segments of circles are those which admit equalangles, or in which the angles are equal.", fillcolor="#224422", URL="../G.127/index.html", target="_top"];
+     "G.129" [label="G.129", tooltip="G.129 (III.24): Similar segments of circles on equal segments are equal.", fillcolor="#222244", URL="../G.129/index.html", target="_top"];
+     "G.131" [label="G.131", tooltip="G.131 (III.def.1): Equal circles are those thediameters of which are equal, or the radii of which are equal.", fillcolor="#224422", URL="../G.131/index.html", target="_top"];
+     "G.132" [label="G.132", tooltip="G.132 (III.def.9): And, when thesegments containing theangle cut off a arc, the angle is said tostand upon that arc.", fillcolor="#224422", URL="../G.132/index.html", target="_top"];
+     "G.133" [label="G.133", tooltip="G.133 (III.26): In equal circles equal angles stand on equal arcs, whether they stand at the centres or at the arcs.", fillcolor="#222244", URL="../G.133/index.html", target="_top"];
+     "G.135" [label="G.135", tooltip="G.135 (III.28): In equal circles equal segments cut off equal arcs, the greater equal to the greater and the less to the less.", fillcolor="#222244", URL="../G.135/index.html", target="_top"];
+     "G.137" [label="G.137", tooltip="G.137 (III.30): Bisect a given arc.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.2" -> "G.1";
+     "G.3" -> "G.1";
+     "G.4" -> "G.1";
+     "G.10" -> "G.1";
+     "G.13" -> "G.1";
+     "G.14" -> "G.1";
+     "G.20" -> "G.1";
+     "G.27" -> "G.1";
+     "G.108" -> "G.1";
+     "G.3" -> "G.2";
+     "G.4" -> "G.2";
+     "G.6" -> "G.2";
+     "G.22" -> "G.2";
+     "G.4" -> "G.3";
+     "G.8" -> "G.3";
+     "G.20" -> "G.3";
+     "G.27" -> "G.3";
+     "G.7" -> "G.4";
+     "G.10" -> "G.4";
+     "G.11" -> "G.4";
+     "G.13" -> "G.4";
+     "G.17" -> "G.4";
+     "G.18" -> "G.4";
+     "G.20" -> "G.4";
+     "G.21" -> "G.4";
+     "G.22" -> "G.4";
+     "G.24" -> "G.4";
+     "G.25" -> "G.4";
+     "G.27" -> "G.4";
+     "G.28" -> "G.4";
+     "G.32" -> "G.4";
+     "G.61" -> "G.4";
+     "G.129" -> "G.4";
+     "G.132" -> "G.4";
+     "G.135" -> "G.4";
+     "G.6" -> "G.5";
+     "G.7" -> "G.5";
+     "G.10" -> "G.6";
+     "G.10" -> "G.7";
+     "G.22" -> "G.7";
+     "G.9" -> "G.8";
+     "G.10" -> "G.9";
+     "G.24" -> "G.9";
+     "G.96" -> "G.9";
+     "G.14" -> "G.10";
+     "G.15" -> "G.10";
+     "G.17" -> "G.10";
+     "G.21" -> "G.10";
+     "G.61" -> "G.10";
+     "G.96" -> "G.10";
+     "G.98" -> "G.10";
+     "G.102" -> "G.10";
+     "G.108" -> "G.10";
+     "G.12" -> "G.11";
+     "G.24" -> "G.11";
+     "G.28" -> "G.11";
+     "G.17" -> "G.12";
+     "G.25" -> "G.12";
+     "G.17" -> "G.13";
+     "G.20" -> "G.13";
+     "G.25" -> "G.13";
+     "G.27" -> "G.13";
+     "G.15" -> "G.14";
+     "G.61" -> "G.14";
+     "G.96" -> "G.14";
+     "G.98" -> "G.14";
+     "G.102" -> "G.14";
+     "G.133" -> "G.14";
+     "G.17" -> "G.15";
+     "G.20" -> "G.15";
+     "G.21" -> "G.15";
+     "G.17" -> "G.16";
+     "G.20" -> "G.16";
+     "G.21" -> "G.16";
+     "G.20" -> "G.17";
+     "G.20" -> "G.18";
+     "G.25" -> "G.18";
+     "G.20" -> "G.19";
+     "G.21" -> "G.20";
+     "G.25" -> "G.21";
+     "G.24" -> "G.22";
+     "G.25" -> "G.22";
+     "G.28" -> "G.22";
+     "G.32" -> "G.22";
+     "G.127" -> "G.22";
+     "G.132" -> "G.22";
+     "G.133" -> "G.22";
+     "G.24" -> "G.23";
+     "G.25" -> "G.24";
+     "G.133" -> "G.24";
+     "G.137" -> "G.24";
+     "G.27" -> "G.25";
+     "G.28" -> "G.27";
+     "G.98" -> "G.28";
+     "G.135" -> "G.28";
+     "G.98" -> "G.32";
+     "G.96" -> "G.61";
+     "G.131" -> "G.61";
+     "G.137" -> "G.96";
+     "G.108" -> "G.98";
+     "G.108" -> "G.102";
+     "G.129" -> "G.108";
+     "G.129" -> "G.127";
+     "G.133" -> "G.127";
+     "G.133" -> "G.129";
+     "G.133" -> "G.131";
+     "G.135" -> "G.131";
+     "G.133" -> "G.132";
+     "G.135" -> "G.133";
+     "G.137" -> "G.135";
    }
 
 Required for
 ------------
 
-:ref:`G.139 <G.139>`, :ref:`G.159 <G.159>`, :ref:`G.161 <G.161>`, :ref:`G.166 <G.166>`, :ref:`G.167 <G.167>`, :ref:`G.168 <G.168>`, :ref:`G.169 <G.169>`, :ref:`G.171 <G.171>`, :ref:`G.176 <G.176>`, :ref:`G.181 <G.181>`, :ref:`G.185 <G.185>`, :ref:`G.187 <G.187>`, :ref:`G.189 <G.189>`, :ref:`G.190 <G.190>`, :ref:`G.191 <G.191>`, :ref:`G.192 <G.192>`, :ref:`G.193 <G.193>`, :ref:`G.194 <G.194>`, :ref:`G.195 <G.195>`, :ref:`G.196 <G.196>`, :ref:`G.197 <G.197>`, :ref:`G.318 <G.318>`, :ref:`G.319 <G.319>`, :ref:`G.320 <G.320>`, :ref:`G.321 <G.321>`, :ref:`G.322 <G.322>`, :ref:`G.323 <G.323>`, :ref:`G.324 <G.324>`, :ref:`G.325 <G.325>`, :ref:`G.326 <G.326>`, :ref:`G.327 <G.327>`, :ref:`G.330 <G.330>`, :ref:`G.331 <G.331>`, :ref:`G.333 <G.333>`, :ref:`G.334 <G.334>`, :ref:`G.335 <G.335>`, :ref:`G.336 <G.336>`, :ref:`G.338 <G.338>`, :ref:`G.339 <G.339>`, :ref:`G.340 <G.340>`, :ref:`G.341 <G.341>`, :ref:`G.342 <G.342>`, :ref:`G.343 <G.343>`, :ref:`G.344 <G.344>`, :ref:`G.345 <G.345>`, :ref:`G.346 <G.346>`, :ref:`G.347 <G.347>`, :ref:`G.348 <G.348>`, :ref:`G.349 <G.349>`, :ref:`G.350 <G.350>`, :ref:`G.351 <G.351>`, :ref:`G.352 <G.352>`, :ref:`G.353 <G.353>`, :ref:`G.354 <G.354>`, :ref:`G.355 <G.355>`, :ref:`G.356 <G.356>`, :ref:`G.357 <G.357>`, :ref:`G.358 <G.358>`, :ref:`G.359 <G.359>`, :ref:`G.360 <G.360>`, :ref:`G.361 <G.361>`, :ref:`G.362 <G.362>`, :ref:`G.363 <G.363>`, :ref:`G.364 <G.364>`, :ref:`G.365 <G.365>`, :ref:`G.366 <G.366>`, :ref:`G.367 <G.367>`, :ref:`G.368 <G.368>`, :ref:`G.370 <G.370>`, :ref:`G.372 <G.372>`, :ref:`G.374 <G.374>`, :ref:`G.376 <G.376>`, :ref:`G.378 <G.378>`, :ref:`G.379 <G.379>`, :ref:`G.380 <G.380>`, :ref:`G.381 <G.381>`, :ref:`G.382 <G.382>`, :ref:`G.383 <G.383>`, :ref:`G.384 <G.384>`, :ref:`G.385 <G.385>`, :ref:`G.387 <G.387>`, :ref:`G.388 <G.388>`, :ref:`G.389 <G.389>`, :ref:`G.390 <G.390>`, :ref:`G.391 <G.391>`, :ref:`G.392 <G.392>`, :ref:`G.393 <G.393>`, :ref:`G.394 <G.394>`, :ref:`G.396 <G.396>`, :ref:`G.397 <G.397>`, :ref:`G.398 <G.398>`, :ref:`G.399 <G.399>`, :ref:`G.400 <G.400>`, :ref:`G.401 <G.401>`, :ref:`G.402 <G.402>`, :ref:`G.403 <G.403>`, :ref:`G.404 <G.404>`, :ref:`G.405 <G.405>`, :ref:`G.407 <G.407>`, :ref:`G.409 <G.409>`, :ref:`G.411 <G.411>`, :ref:`G.413 <G.413>`, :ref:`G.415 <G.415>`, :ref:`G.417 <G.417>`, :ref:`G.418 <G.418>`, :ref:`G.419 <G.419>`, :ref:`G.420 <G.420>`, :ref:`G.421 <G.421>`, :ref:`G.422 <G.422>`, :ref:`G.423 <G.423>`, :ref:`G.424 <G.424>`, :ref:`G.425 <G.425>`, :ref:`G.426 <G.426>`, :ref:`G.427 <G.427>`, :ref:`G.428 <G.428>`, :ref:`G.429 <G.429>`, :ref:`G.430 <G.430>`, :ref:`G.431 <G.431>`, :ref:`G.432 <G.432>`, :ref:`G.433 <G.433>`, :ref:`G.434 <G.434>`, :ref:`G.435 <G.435>`, :ref:`G.436 <G.436>`, :ref:`G.437 <G.437>`, :ref:`G.438 <G.438>`, :ref:`G.439 <G.439>`, :ref:`G.440 <G.440>`, :ref:`G.441 <G.441>`, :ref:`G.442 <G.442>`, :ref:`G.468 <G.468>`, :ref:`G.473 <G.473>`, :ref:`G.487 <G.487>`, :ref:`G.488 <G.488>`, :ref:`G.490 <G.490>`, :ref:`G.491 <G.491>`, :ref:`G.492 <G.492>`, :ref:`G.493 <G.493>`, :ref:`G.494 <G.494>`, :ref:`G.496 <G.496>`, :ref:`G.497 <G.497>`, :ref:`G.499 <G.499>`, :ref:`G.500 <G.500>`, :ref:`G.501 <G.501>`, :ref:`G.502 <G.502>`, :ref:`G.505 <G.505>`, :ref:`G.506 <G.506>`, :ref:`G.513 <G.513>`, :ref:`G.515 <G.515>`, :ref:`G.516 <G.516>`, :ref:`G.517 <G.517>`, :ref:`G.518 <G.518>`, :ref:`G.520 <G.520>`, :ref:`G.523 <G.523>`, :ref:`G.524 <G.524>`, :ref:`G.525 <G.525>`
+:ref:`G.168 <G.168>`

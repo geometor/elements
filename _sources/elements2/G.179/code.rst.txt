@@ -1,28 +1,20 @@
 :canonical_id: G.179
-:original_id: VI.16
+:original_id: V.6
+:title: G.179 magnitudes equimultiples magnitudes
 :volume: II
-:book: VI
+:book: V
 :type: prop
 
-G.179 — Code
-============
+G.179 magnitudes equimultiples magnitudes — Code
+================================================
 
-.. rubric:: `VI.16 <https://geometor.github.io/euclid/heath/volume_II/book_vi/propositions/16/>`_
+.. rubric:: `V.6 <https://geometor.github.io/euclid/heath/volume_II/book_v/propositions/06/>`_
 
 .. enunciation::
 
-   If four straight lines be proportional, the rectangle contained by the extremes is equal to the rectangle contained by the means; and, if the rectangle contained by the extremes equals the rectangle contained by the means, the four straight lines is proportional.
-
-.. rubric:: ``g1.py``
+   If two magnitudes be :term:`equimultiples <G.170>` of two magnitudes, and any magnitudes subtracted from them be equimultiples of the same, the remainders also are either equal to the same or equimultiples of them.
 
 .. picture:: g1.svg
 
 .. literalinclude:: g1.py
-   :language: python
-
-.. rubric:: ``g2.py``
-
-.. picture:: g2.svg
-
-.. literalinclude:: g2.py
    :language: python

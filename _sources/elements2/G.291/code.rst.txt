@@ -1,17 +1,18 @@
 :canonical_id: G.291
-:original_id: IX.20
+:original_id: VII.35
+:title: G.291 numbers measure number
 :volume: II
-:book: IX
+:book: VII
 :type: prop
 
-G.291 — Code
-============
+G.291 numbers measure number — Code
+===================================
 
-.. rubric:: `IX.20 <https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/20/>`_
+.. rubric:: `VII.35 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/35/>`_
 
 .. enunciation::
 
-   Prime numbers are more than any assigned multitude of prime numbers.
+   If two :term:`numbers <G.248>` :term:`measure <G.169>` any number, the least number measured by them will also measure the same.
 
 .. picture:: g1.svg
 

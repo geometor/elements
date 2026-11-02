@@ -1,17 +1,18 @@
 :canonical_id: G.490
-:original_id: XII.4
+:original_id: X.104
+:title: G.490 segment commensurable apotome
 :volume: III
-:book: XII
+:book: X
 :type: prop
 
-G.490 — Code
-============
+G.490 segment commensurable apotome — Code
+==========================================
 
-.. rubric:: `XII.4 <https://geometor.github.io/euclid/heath/volume_III/book_xii/propositions/04/>`_
+.. rubric:: `X.104 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/104/>`_
 
 .. enunciation::
 
-   If there be two pyramids of the same height which have triangular bases, and each of them be divided into two pyramids equal to one another and similar to the whole, and into two equal prisms, then, as the base of the one pyramid is to the base of the other pyramid, so will all the prisms in the one pyramid be to all the prisms, being equal in multitude, in the other pyramid.
+   A :term:`segment <G.4>` :term:`commensurable <G.372>` with an apotome of a medial segment is an apotome of a medial segment and the same in order.
 
 .. picture:: g1.svg
 

@@ -1,17 +1,18 @@
 :canonical_id: G.192
-:original_id: VI.27
+:original_id: V.14
+:title: G.192 magnitude ratio greater
 :volume: II
-:book: VI
+:book: V
 :type: prop
 
-G.192 — Code
-============
+G.192 magnitude ratio greater — Code
+====================================
 
-.. rubric:: `VI.27 <https://geometor.github.io/euclid/heath/volume_II/book_vi/propositions/27/>`_
+.. rubric:: `V.14 <https://geometor.github.io/euclid/heath/volume_II/book_v/propositions/14/>`_
 
 .. enunciation::
 
-   Of all the parallelograms applied to the same straight line and deficient by parallelogrammic figures similar and similarly situated to that described on the half of the straight line, that parallelogram is greatest which is applied to the half of the straight line and is similar to the defect.
+   If a first magnitude have to a second the :term:`same ratio <G.176>` as a third has to a fourth, and the first be greater than the third, the second is greater than the fourth; if equal, equal; and if less, less.
 
 .. picture:: g1.svg
 

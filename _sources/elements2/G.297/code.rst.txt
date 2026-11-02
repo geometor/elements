@@ -1,17 +1,18 @@
 :canonical_id: G.297
-:original_id: IX.24
+:original_id: VIII.2
+:title: G.297 find numbers in continued proportion
 :volume: II
-:book: IX
+:book: VIII
 :type: prop
 
-G.297 — Code
-============
+G.297 find numbers in continued proportion — Code
+=================================================
 
-.. rubric:: `IX.24 <https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/24/>`_
+.. rubric:: `VIII.2 <https://geometor.github.io/euclid/heath/volume_II/book_viii/propositions/02/>`_
 
 .. enunciation::
 
-   If from an even number an even number be subtracted, the remainder is even.
+   Find :term:`numbers <G.248>` in :term:`continued proportion <G.180>`, as many as may be prescribed, and the least that are in a given :term:`ratio <G.173>`.
 
 .. picture:: g1.svg
 

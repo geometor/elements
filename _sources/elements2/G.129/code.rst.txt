@@ -1,17 +1,18 @@
 :canonical_id: G.129
-:original_id: IV.11
+:original_id: III.24
+:title: G.129 similar segments circles
 :volume: II
-:book: IV
+:book: III
 :type: prop
 
-G.129 — Code
-============
+G.129 similar segments circles — Code
+=====================================
 
-.. rubric:: `IV.11 <https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/11/>`_
+.. rubric:: `III.24 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/24/>`_
 
 .. enunciation::
 
-   Inscribe in a given circle an equilateral and equiangular pentagon.
+   :term:`Similar segments of circles <G.127>` on equal :term:`segments <G.4>` are equal.
 
 .. picture:: g1.svg
 

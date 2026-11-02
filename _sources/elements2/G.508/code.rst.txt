@@ -1,17 +1,18 @@
 :canonical_id: G.508
-:original_id: XIII.1
+:original_id: XI.6
+:title: G.508 segments right angles
 :volume: III
-:book: XIII
+:book: XI
 :type: prop
 
-G.508 — Code
-============
+G.508 segments right angles — Code
+==================================
 
-.. rubric:: `XIII.1 <https://geometor.github.io/euclid/heath/volume_III/book_xiii/propositions/01/>`_
+.. rubric:: `XI.6 <https://geometor.github.io/euclid/heath/volume_III/book_xi/propositions/06/>`_
 
 .. enunciation::
 
-   If a straight line be cut in extreme and mean ratio, the square on the greater segment added to the half of the whole is five times the square on the half.
+   If two :term:`segments <G.4>` be :term:`at right angles to the same plane <G.505>`, the segments is :term:`parallel <G.52>`.
 
 .. picture:: g1.svg
 

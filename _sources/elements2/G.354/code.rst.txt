@@ -1,17 +1,18 @@
 :canonical_id: G.354
-:original_id: X.39
-:volume: III
-:book: X
+:original_id: IX.23
+:title: G.354 many odd numbers
+:volume: II
+:book: IX
 :type: prop
 
-G.354 — Code
-============
+G.354 many odd numbers — Code
+=============================
 
-.. rubric:: `X.39 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/039/>`_
+.. rubric:: `IX.23 <https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/23/>`_
 
 .. enunciation::
 
-   If two straight lines incommensurable in square which make the sum of the squares on them rational, but the rectangle contained by them medial, be added together, the whole straight line is irrational: and let it be called:term:`**major** <major>`.
+   If as many :term:`odd numbers <G.352>` as we please be added together, and their multitude be odd, the whole is odd.
 
 .. picture:: g1.svg
 

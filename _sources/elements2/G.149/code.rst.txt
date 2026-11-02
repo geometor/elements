@@ -1,17 +1,18 @@
 :canonical_id: G.149
-:original_id: V.12
+:original_id: IV.2
+:title: G.149 inscribe triangle in circle
 :volume: II
-:book: V
+:book: IV
 :type: prop
 
-G.149 — Code
-============
+G.149 inscribe triangle in circle — Code
+========================================
 
-.. rubric:: `V.12 <https://geometor.github.io/euclid/heath/volume_II/book_v/propositions/12/>`_
+.. rubric:: `IV.2 <https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/02/>`_
 
 .. enunciation::
 
-   If any number of magnitudes be proportional, as one of the antecedents is to one of the consequents, so will all the antecedents be to all the consequents.
+   :term:`Inscribe in a given circle <G.148>` a :term:`triangle <G.11>` equiangular with a given triangle.
 
 .. picture:: g1.svg
 

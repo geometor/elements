@@ -1,17 +1,18 @@
 :canonical_id: G.353
-:original_id: X.38
-:volume: III
-:book: X
+:original_id: IX.22
+:title: G.353 many odd numbers
+:volume: II
+:book: IX
 :type: prop
 
-G.353 — Code
-============
+G.353 many odd numbers — Code
+=============================
 
-.. rubric:: `X.38 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/038/>`_
+.. rubric:: `IX.22 <https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/22/>`_
 
 .. enunciation::
 
-   If two medial straight lines commensurable in square only and containing a medial rectangle be added together, the whole is irrational; and let it be called a:term:`**second bimedial straight line** <second-bimedial>`.
+   If as many :term:`odd numbers <G.352>` as we please be added together, and their multitude be :term:`even <G.302>`, the whole is even.
 
 .. picture:: g1.svg
 

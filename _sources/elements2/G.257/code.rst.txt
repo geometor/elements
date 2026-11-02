@@ -1,17 +1,18 @@
 :canonical_id: G.257
-:original_id: VIII.16
+:original_id: VII.5
+:title: G.257 number part number
 :volume: II
-:book: VIII
+:book: VII
 :type: prop
 
-G.257 — Code
-============
+G.257 number part number — Code
+===============================
 
-.. rubric:: `VIII.16 <https://geometor.github.io/euclid/heath/volume_II/book_viii/propositions/16/>`_
+.. rubric:: `VII.5 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/05/>`_
 
 .. enunciation::
 
-   If a square number do not measure a square number, neither will the side measure the side; and, if the side do not measure the side, neither will the square measure the square.
+   If a :term:`number <G.248>` be a :term:`part of <G.253>` a number, and another be the same part of another, the sum is the same part of the sum that the one is of the one.
 
 .. picture:: g1.svg
 

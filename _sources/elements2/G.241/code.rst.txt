@@ -1,17 +1,18 @@
 :canonical_id: G.241
-:original_id: VIII.1
+:original_id: VI.29
+:title: G.241 segment apply parallelogram
 :volume: II
-:book: VIII
+:book: VI
 :type: prop
 
-G.241 — Code
-============
+G.241 segment apply parallelogram — Code
+========================================
 
-.. rubric:: `VIII.1 <https://geometor.github.io/euclid/heath/volume_II/book_viii/propositions/01/>`_
+.. rubric:: `VI.29 <https://geometor.github.io/euclid/heath/volume_II/book_vi/propositions/29/>`_
 
 .. enunciation::
 
-   If there be as many numbers as we please in continued proportion, and the extremes of them be prime to one another, the numbers are the least of those which have the same ratio with them.
+   To a given :term:`segment <G.4>` to apply a parallelogram equal to a given polygon and exceeding by a parallelogrammic :term:`figure <G.9>` similar to a given one.
 
 .. picture:: g1.svg
 

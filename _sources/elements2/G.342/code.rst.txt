@@ -1,17 +1,18 @@
 :canonical_id: G.342
-:original_id: X.27
-:volume: III
-:book: X
+:original_id: IX.12
+:title: G.342 many numbers please
+:volume: II
+:book: IX
 :type: prop
 
-G.342 — Code
-============
+G.342 many numbers please — Code
+================================
 
-.. rubric:: `X.27 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/027/>`_
+.. rubric:: `IX.12 <https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/12/>`_
 
 .. enunciation::
 
-   Find medial straight lines commensurable in square only which contain a rational rectangle.
+   If as many :term:`numbers <G.248>` as we please beginning from an :term:`unit <G.247>` be in :term:`continued proportion <G.180>`, by however many :term:`prime numbers <G.283>` the last is :term:`measured <G.169>`, the next to the unit is measured by the same.
 
 .. picture:: g1.svg
 

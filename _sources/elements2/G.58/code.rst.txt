@@ -1,17 +1,18 @@
 :canonical_id: G.58
-:original_id: I.45
+:original_id: I.31
+:title: G.58 construct a line parallel to a given line
 :volume: I
 :book: I
 :type: prop
 
-G.58 — Code
-===========
+G.58 construct a line parallel to a given line — Code
+=====================================================
 
-.. rubric:: `I.45 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/45/>`_
+.. rubric:: `I.31 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/31/>`_
 
 .. enunciation::
 
-   Construct, in a given angle, a parallelogram equal in area to a given polygon.
+   Construct through a given :term:`point <G.1>` a :term:`line <G.2>` :term:`parallel <G.52>` to a given line.
 
 .. picture:: g1.svg
 

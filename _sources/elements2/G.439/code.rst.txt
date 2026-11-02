@@ -1,17 +1,18 @@
 :canonical_id: G.439
-:original_id: X.112
+:original_id: X.59
+:title: G.439 area contained rational
 :volume: III
 :book: X
 :type: prop
 
-G.439 — Code
-============
+G.439 area contained rational — Code
+====================================
 
-.. rubric:: `X.112 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/112/>`_
+.. rubric:: `X.59 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/059/>`_
 
 .. enunciation::
 
-   The square on a rational straight line applied to the binomial straight line produces as breadth an apotome the terms of which are commensurable with the terms of the binomial and moreover in the same ratio; and further the apotome so arising will have the same order as the binomial straight line.
+   If an area be contained by a :term:`rational <G.391>` :term:`segment <G.4>` and the :term:`sixth binomial <G.432>`, the "side" of the area is the irrational segment called the side of the sum of two medial areas.
 
 .. picture:: g1.svg
 

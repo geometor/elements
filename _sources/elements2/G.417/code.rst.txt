@@ -1,17 +1,18 @@
 :canonical_id: G.417
-:original_id: X.90
+:original_id: X.43
+:title: G.417 bimedial segment divided
 :volume: III
 :book: X
 :type: prop
 
-G.417 — Code
-============
+G.417 bimedial segment divided — Code
+=====================================
 
-.. rubric:: `X.90 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/090/>`_
+.. rubric:: `X.43 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/043/>`_
 
 .. enunciation::
 
-   Find the sixth apotome.
+   A first bimedial :term:`segment <G.4>` is divided at one :term:`point <G.1>` only.
 
 .. picture:: g1.svg
 

@@ -1,17 +1,18 @@
 :canonical_id: G.137
-:original_id: V.3
+:original_id: III.30
+:title: G.137 bisect a given arc
 :volume: II
-:book: V
+:book: III
 :type: prop
 
-G.137 — Code
-============
+G.137 bisect a given arc — Code
+===============================
 
-.. rubric:: `V.3 <https://geometor.github.io/euclid/heath/volume_II/book_v/propositions/03/>`_
+.. rubric:: `III.30 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/30/>`_
 
 .. enunciation::
 
-   If a first magnitude be the same multiple of a second that a third is of a fourth, and if equimultiples be taken of the first and third, then also:term:`*ex aequali* <ex-aequali>` the magnitudes taken is equimultiples respectively, the one of the second and the other of the fourth.
+   Bisect a given arc.
 
 .. picture:: g1.svg
 

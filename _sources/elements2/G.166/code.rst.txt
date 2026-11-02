@@ -1,17 +1,18 @@
 :canonical_id: G.166
-:original_id: VI.4
+:original_id: IV.14
+:title: G.166 pentagon equilateral equiangular
 :volume: II
-:book: VI
+:book: IV
 :type: prop
 
-G.166 — Code
-============
+G.166 pentagon equilateral equiangular — Code
+=============================================
 
-.. rubric:: `VI.4 <https://geometor.github.io/euclid/heath/volume_II/book_vi/propositions/04/>`_
+.. rubric:: `IV.14 <https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/14/>`_
 
 .. enunciation::
 
-   In equiangular triangles the sides about the equal angles are proportional, and those are corresponding sides which subtend the equal angles.
+   About a given pentagon, which is :term:`equilateral <G.12>` and equiangular, to circumscribe a :term:`circle <G.10>`.
 
 .. picture:: g1.svg
 

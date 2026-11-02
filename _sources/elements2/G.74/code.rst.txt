@@ -1,17 +1,18 @@
 :canonical_id: G.74
-:original_id: II.13
+:original_id: I.45
+:title: G.74 construct a parallelogram equal to a polygon
 :volume: I
-:book: II
+:book: I
 :type: prop
 
-G.74 — Code
-===========
+G.74 construct a parallelogram equal to a polygon — Code
+========================================================
 
-.. rubric:: `II.13 <https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/13/>`_
+.. rubric:: `I.45 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/45/>`_
 
 .. enunciation::
 
-   In acute-angled triangles the square on the side subtending the acute angle is less than the squares on the sides containing the acute angle by twice the rectangle contained by one of the sides about the acute angle, namely that on which the perpendicular falls, and the straight line cut off within by the perpendicular towards the acute angle.
+   Construct, in a given :term:`angle <G.22>`, a parallelogram equal in area to a given polygon.
 
 .. picture:: g1.svg
 

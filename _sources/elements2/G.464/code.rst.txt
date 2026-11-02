@@ -1,17 +1,18 @@
 :canonical_id: G.464
-:original_id: XI.19
+:original_id: X.82
+:title: G.464 minor segment only
 :volume: III
-:book: XI
+:book: X
 :type: prop
 
-G.464 — Code
-============
+G.464 minor segment only — Code
+===============================
 
-.. rubric:: `XI.19 <https://geometor.github.io/euclid/heath/volume_III/book_xi/propositions/19/>`_
+.. rubric:: `X.82 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/082/>`_
 
 .. enunciation::
 
-   If two planes which cut one another be at right angles to any plane, their common section is at right angles to the same plane.
+   To a minor :term:`segment <G.4>` only one segment can be annexed which is :term:`incommensurable in square <G.380>` with the whole and which makes, with the whole, the sum of the :term:`squares <G.63>` on them :term:`rational <G.391>` but twice the :term:`rectangle contained <G.81>` by them medial.
 
 .. picture:: g1.svg
 

@@ -1,17 +1,18 @@
 :canonical_id: G.133
-:original_id: IV.15
+:original_id: III.26
+:title: G.133 equal circles equal
 :volume: II
-:book: IV
+:book: III
 :type: prop
 
-G.133 — Code
-============
+G.133 equal circles equal — Code
+================================
 
-.. rubric:: `IV.15 <https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/15/>`_
+.. rubric:: `III.26 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/26/>`_
 
 .. enunciation::
 
-   Inscribe in a given circle an equilateral and equiangular hexagon.
+   In :term:`equal circles <G.131>` equal :term:`angles <G.22>` stand on equal arcs, whether they stand at the :term:`centres <G.14>` or at the arcs.
 
 .. picture:: g1.svg
 

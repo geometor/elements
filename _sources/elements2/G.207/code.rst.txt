@@ -1,17 +1,18 @@
 :canonical_id: G.207
-:original_id: VII.8
+:original_id: V.24
+:title: G.207 magnitude ratio fifth
 :volume: II
-:book: VII
+:book: V
 :type: prop
 
-G.207 — Code
-============
+G.207 magnitude ratio fifth — Code
+==================================
 
-.. rubric:: `VII.8 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/08/>`_
+.. rubric:: `V.24 <https://geometor.github.io/euclid/heath/volume_II/book_v/propositions/24/>`_
 
 .. enunciation::
 
-   If a number be the same parts of a number that a number subtracted is of a number subtracted, the remainder is the same parts of the remainder that the whole is of the whole.
+   If a first magnitude have to a second the :term:`same ratio <G.176>` as a third has to a fourth, and also a fifth have to the second the same ratio as a sixth to the fourth, the first and fifth added together will have to the second the same ratio as the third and sixth have to the fourth.
 
 .. picture:: g1.svg
 

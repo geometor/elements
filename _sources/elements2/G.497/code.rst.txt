@@ -1,17 +1,18 @@
 :canonical_id: G.497
-:original_id: XII.11
+:original_id: X.111
+:title: G.497 apotome binomial segment
 :volume: III
-:book: XII
+:book: X
 :type: prop
 
-G.497 — Code
-============
+G.497 apotome binomial segment — Code
+=====================================
 
-.. rubric:: `XII.11 <https://geometor.github.io/euclid/heath/volume_III/book_xii/propositions/11/>`_
+.. rubric:: `X.111 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/111/>`_
 
 .. enunciation::
 
-   *Cones and cylinders which are of the same height are to* *one another as their bases.*
+   The apotome is not the same with the binomial :term:`segment <G.4>`.
 
 .. picture:: g1.svg
 

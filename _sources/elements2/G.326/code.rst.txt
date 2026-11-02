@@ -1,28 +1,20 @@
 :canonical_id: G.326
-:original_id: X.13
-:volume: III
-:book: X
+:original_id: VIII.24
+:title: G.326 numbers ratio square
+:volume: II
+:book: VIII
 :type: prop
 
-G.326 — Code
-============
+G.326 numbers ratio square — Code
+=================================
 
-.. rubric:: `X.13 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/013/>`_
+.. rubric:: `VIII.24 <https://geometor.github.io/euclid/heath/volume_II/book_viii/propositions/24/>`_
 
 .. enunciation::
 
-   If two magnitudes be commensurable, and the one of them be incommensurable with any magnitude, the remaining one is incommensurable with the same.
-
-.. rubric:: ``g1.py``
+   If two :term:`numbers <G.248>` have to one another the :term:`ratio <G.173>` which a :term:`square number <G.308>` has to a square number, and the first be :term:`square <G.63>`, the second is square.
 
 .. picture:: g1.svg
 
 .. literalinclude:: g1.py
-   :language: python
-
-.. rubric:: ``g2.py``
-
-.. picture:: g2.svg
-
-.. literalinclude:: g2.py
    :language: python

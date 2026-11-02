@@ -1,17 +1,18 @@
 :canonical_id: G.65
-:original_id: II.4
+:original_id: I.36
+:title: G.65 parallelograms on equal bases in the same parallels
 :volume: I
-:book: II
+:book: I
 :type: prop
 
-G.65 — Code
-===========
+G.65 parallelograms on equal bases in the same parallels — Code
+===============================================================
 
-.. rubric:: `II.4 <https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/04/>`_
+.. rubric:: `I.36 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/36/>`_
 
 .. enunciation::
 
-   If a straight line be cut at random, the square on the whole is equal to the squares on the segments and twice the rectangle contained by the segments.
+   Parallelograms on equal bases and in the same :term:`parallels <G.52>` are equal in area.
 
 .. picture:: g1.svg
 

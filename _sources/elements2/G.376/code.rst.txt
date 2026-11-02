@@ -1,17 +1,18 @@
 :canonical_id: G.376
-:original_id: X.57
+:original_id: X.5
+:title: G.376 commensurable magnitudes ratio
 :volume: III
 :book: X
 :type: prop
 
-G.376 — Code
-============
+G.376 commensurable magnitudes ratio — Code
+===========================================
 
-.. rubric:: `X.57 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/057/>`_
+.. rubric:: `X.5 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/005/>`_
 
 .. enunciation::
 
-   If an area be contained by a rational straight line and the fourth binomial, the "side" of the area is the irrational straight line called major.
+   :term:`Commensurable <G.372>` magnitudes have to one another the :term:`ratio <G.173>` which a :term:`number <G.248>` has to a number.
 
 .. picture:: g1.svg
 

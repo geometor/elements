@@ -1,92 +1,70 @@
 :order: 501
 :number: 501
 :canonical_id: G.501
-:original_id: XII.14
+:original_id: X.115
+:title: G.501 medial segment there
 :volume: III
-:book: XII
+:book: X
 :type: prop
 :subtype: theorem
-:categories: theorem, proof, solid-geometry, method-of-exhaustion
-:category: theorem, proof, solid-geometry, method-of-exhaustion
-:tags: book-xii, point, segment, circle, triangle, polygon, cone, cylinder, equality
-:dependencies: G.496, G.497, G.500
-:excerpt: Cones and cylinders which are on equal bases are to one another as their heights.
+:categories: theorem, proof, incommensurables, magnitudes
+:category: theorem, proof, incommensurables, magnitudes
+:tags: book-x, point, straight-line, irrational, number, square, contained-rectangle, ad-infinitum, medial
+:dependencies: G.4, G.81, G.248, G.391, G.392, G.394
+:excerpt: From a medial segment there arise irrational segments infinite in number, and none of them is the same as any of the preceding.
 
 .. _G.501:
-.. _XII.14:
+.. _X.115:
 
-G.501
-=====
+G.501 medial segment there
+==========================
 
-.. rubric:: `XII.14 <https://geometor.github.io/euclid/heath/volume_III/book_xii/propositions/14/>`_
+.. rubric:: `X.115 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/115/>`_
 
 .. enunciation::
 
-   Cones and cylinders which are on equal bases are to one another as their heights.
+   From a medial :term:`segment <G.4>` there arise :term:`irrational <G.391>` segments infinite in :term:`number <G.248>`, and none of them is the same as any of the preceding.
 
 .. signature:: theorem
 
-   | :fn:`cones_cylinders_equal <G.501>`\ ()
-   | **prove** also, as the axis :g:`/ G H / <g1:/ G H />` is to the axis :g:`/ K L / <g1:/ K L />`, so is the cone :g:`< A B G > <g1:< A B G >>` to the cone :g:`< C D K > <g1:< C D K >>` and the cylinder :g:`< E B > <g1:< E B >>` to the cylinder :g:`< F D > <g1:< F D >>`
+   | :fn:`medial_segment_there_x_115 <G.501>`\ (:g:`A <g1:A>`)
+   | **given** :g:`A <g1:A>` be a medial segment
+   | **prove** from :g:`A <g1:A>` there arise irrational segments infinite in number, and none of them is the same as any of the preceding
 
 .. picture:: g1.svg
-   :alt: Proposition 14 Diagram
+   :alt: Proposition 115 diagram
+
+.. step:: given
+
+   :g:`A <g1:A>` be a medial segment
 
 .. step:: assert
 
-   Let :g:`< E B > <g1:< E B >>`, :g:`< F D > <g1:< F D >>` be cylinders on :eq:`equal <g1:( A B ) = g1:( C D )>` bases, :g:`( A B ) <g1:( A B )>`, :g:`( C D ) <g1:( C D )>`
+   Let a rational segment :g:`B <g1:B>` be set out, and let the :term:`square <G.63>` on :g:`C <g1:C>` be equal to the :term:`rectangle <G.81>` :g:`B <g1:B>`, :g:`A <g1:A>`
+
+.. step:: assert ∵ square_assigned_segment_def <G.392>
+
+   Therefore :g:`C <g1:C>` is irrational;
+
+.. step:: assert ∵ rational_area_applied <G.394>
+
+   For that which is contained by an irrational and a rational segment is irrational.
 
 .. step:: assert
 
-   I say that, as the cylinder :g:`< E B > <g1:< E B >>` is to the cylinder :g:`< F D > <g1:< F D >>`, so is the axis :g:`/ G H / <g1:/ G H />` to the axis :g:`/ K L / <g1:/ K L />`.
-
-.. step:: construct
-
-   :fn:`extend <G.7>`\ (the axis :g:`/ K L / <g1:/ K L />`) → :g:`N <g1:N>`
-
-.. step:: construct
-
-   :fn:`cut_equal_segment <G.9>`\ (the axis :g:`/ G H / <g1:/ G H />`) → :g:`/ L N / <g1:/ L N />` (:eq:`equal <g1:/ L N / = g1:/ G H />`)
+   It is not the same with any of the preceding; for the square on none of the preceding, if applied to a rational segment produces as breadth a medial segment.
 
 .. step:: assert
 
-   Let the cylinder :g:`< C M > <g1:< C M >>` be conceived about :g:`/ L N / <g1:/ L N />` as axis.
+   Let the square on :g:`D <g1:D>` be equal to the rectangle :g:`B <g1:B>`, :g:`C <g1:C>`
 
-.. step:: assert ∵ cones_cylinders_height <G.497>
+.. step:: assert ∵ rational_area_applied <G.394>
 
-   Since then the cylinders :g:`< E B > <g1:< E B >>`, :g:`< C M > <g1:< C M >>` are of the same height, they are to one another as their bases.
+   Therefore the square on :g:`D <g1:D>` is irrational.
 
-.. step:: assert
+.. step:: conclude ∵ square_assigned_segment_def <G.392>
 
-   The bases are :eq:`equal <g1:( A B ) = g1:( C D )>` to one another:
-
-.. step:: assert
-
-   Therefore the cylinders :g:`< E B > <g1:< E B >>`, :g:`< C M > <g1:< C M >>` are also :eq:`equal <g1:< E B > = g1:< C M >>`.
-
-.. step:: assert
-
-   And, since the cylinder :g:`< F M > <g1:< F M >>` has been cut by the plane :g:`( C D ) <g1:( C D )>` which is parallel to its opposite planes,
-
-.. step:: assert ∵ cylinder_cut_plane <G.500>
-
-   Therefore, as the cylinder :g:`< C M > <g1:< C M >>` is to the cylinder :g:`< F D > <g1:< F D >>`, so is the axis :g:`/ L N / <g1:/ L N />` to the axis :g:`/ K L / <g1:/ K L />`.
-
-.. step:: assert
-
-   The cylinder :g:`< C M > <g1:< C M >>` is :eq:`equal <g1:< C M > = g1:< E B >; g1:/ L N / = g1:/ G H />` to the cylinder :g:`< E B > <g1:< E B >>`, and the axis :g:`/ L N / <g1:/ L N />` to the axis :g:`/ G H / <g1:/ G H />`;
-
-.. step:: assert
-
-   Therefore, as the cylinder :g:`< E B > <g1:< E B >>` is to the cylinder :g:`< F D > <g1:< F D >>`, so is the axis :g:`/ G H / <g1:/ G H />` to the axis :g:`/ K L / <g1:/ K L />`.
-
-.. step:: assert ∵ cone_part_cylinder <G.496>
-
-   But, as the cylinder :g:`< E B > <g1:< E B >>` is to the cylinder :g:`< F D > <g1:< F D >>`, so is the cone :g:`< A B G > <g1:< A B G >>` to the cone :g:`< C D K > <g1:< C D K >>`.
-
-.. step:: conclude
-
-   Therefore also, as the axis :g:`/ G H / <g1:/ G H />` is to the axis :g:`/ K L / <g1:/ K L />`, so is the cone :g:`< A B G > <g1:< A B G >>` to the cone :g:`< C D K > <g1:< C D K >>` and the cylinder :g:`< E B > <g1:< E B >>` to the cylinder :g:`< F D > <g1:< F D >>`.
+   Therefore :g:`D <g1:D>` is irrational; and it is not the same with any of the preceding, for the square on none of the preceding, if applied to a rational segment, produces :g:`C <g1:C>` as breadth.
 
 Dependency Graph
 ----------------
@@ -98,517 +76,499 @@ Dependency Graph
      node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11, color="#d6d3cd", fontcolor="#ffffff"];
      edge [color="#8c857b", fontcolor="#8c857b", arrowsize=0.75];
      rankdir="TB";
-     "G.1" [label="G.1", tooltip="G.1 (I.cn.1): Things equal to the same thing are equal to one another.", fillcolor="#442222", URL="../G.1/index.html", target="_top"];
-     "G.2" [label="G.2", tooltip="G.2 (I.def.15): A circle is a plane figure contained by one line such that all segments falling upon it from its center are equal.", fillcolor="#224422", URL="../G.2/index.html", target="_top"];
-     "G.3" [label="G.3", tooltip="G.3 (I.post.1): Construct a segment between any two points.", fillcolor="#444422", URL="../G.3/index.html", target="_top"];
-     "G.4" [label="G.4", tooltip="G.4 (I.post.3): Construct a circle with any center and radius.", fillcolor="#444422", URL="../G.4/index.html", target="_top"];
-     "G.5" [label="G.5", tooltip="G.5 (I.1): Construct an equilateral triangle on a given finite segment.", fillcolor="#222244", URL="../G.5/index.html", target="_top"];
-     "G.6" [label="G.6", tooltip="G.6 (I.cn.3): If equals are subtracted from equals, the remainders are equal.", fillcolor="#442222", URL="../G.6/index.html", target="_top"];
-     "G.7" [label="G.7", tooltip="G.7 (I.post.2): Extend a finite segment continuously in a straight line.", fillcolor="#444422", URL="../G.7/index.html", target="_top"];
-     "G.8" [label="G.8", tooltip="G.8 (I.2): Construct at a given point a segment equal to a given segment.", fillcolor="#222244", URL="../G.8/index.html", target="_top"];
-     "G.9" [label="G.9", tooltip="G.9 (I.3): Cut off from the greater of two unequal segments a segment equal to the less.", fillcolor="#222244", URL="../G.9/index.html", target="_top"];
-     "G.10" [label="G.10", tooltip="G.10 (I.cn.4): Things that coincide with one another are equal.", fillcolor="#442222", URL="../G.10/index.html", target="_top"];
-     "G.11" [label="G.11", tooltip="G.11 (I.4): Triangles with two sides and the included angle equal are congruent (SAS).", fillcolor="#222244", URL="../G.11/index.html", target="_top"];
-     "G.12" [label="G.12", tooltip="G.12 (I.5): In an isosceles triangle, the angles at the base are equal, and if the equal sides are extended, the angles under the base are equal.", fillcolor="#222244", URL="../G.12/index.html", target="_top"];
-     "G.14" [label="G.14", tooltip="G.14 (I.7): On the same segment and on the same side, there cannot be constructed two distinct triangles with both pairs of conterminous sides equal.", fillcolor="#222244", URL="../G.14/index.html", target="_top"];
-     "G.15" [label="G.15", tooltip="G.15 (I.8): Triangles with all three corresponding sides equal have their corresponding angles equal (SSS).", fillcolor="#222244", URL="../G.15/index.html", target="_top"];
-     "G.16" [label="G.16", tooltip="G.16 (I.9): Bisect a given angle.", fillcolor="#222244", URL="../G.16/index.html", target="_top"];
-     "G.17" [label="G.17", tooltip="G.17 (I.10): Bisect a given finite segment.", fillcolor="#222244", URL="../G.17/index.html", target="_top"];
-     "G.18" [label="G.18", tooltip="G.18 (I.def.10): When a straight line standing on a straight line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing line is perpendicular to that on which...", fillcolor="#224422", URL="../G.18/index.html", target="_top"];
-     "G.19" [label="G.19", tooltip="G.19 (I.11): Construct a line at right angles to a given line from a given point on it.", fillcolor="#222244", URL="../G.19/index.html", target="_top"];
-     "G.21" [label="G.21", tooltip="G.21 (I.cn.2): If equals are added to equals, the wholes are equal.", fillcolor="#442222", URL="../G.21/index.html", target="_top"];
-     "G.22" [label="G.22", tooltip="G.22 (I.13): A ray standing on a line makes either two right angles or adjacent angles summing to two right angles.", fillcolor="#222244", URL="../G.22/index.html", target="_top"];
-     "G.23" [label="G.23", tooltip="G.23 (I.post.4): All right angles are equal.", fillcolor="#444422", URL="../G.23/index.html", target="_top"];
-     "G.24" [label="G.24", tooltip="G.24 (I.14): If two rays at a point on a line on opposite sides make adjacent angles summing to two right angles, the two rays are collinear.", fillcolor="#222244", URL="../G.24/index.html", target="_top"];
-     "G.25" [label="G.25", tooltip="G.25 (I.15): Intersecting lines make their vertical angles equal.", fillcolor="#222244", URL="../G.25/index.html", target="_top"];
-     "G.26" [label="G.26", tooltip="G.26 (I.cn.5): The whole is greater than the part.", fillcolor="#442222", URL="../G.26/index.html", target="_top"];
-     "G.27" [label="G.27", tooltip="G.27 (I.16): In any triangle, if one side is extended, the exterior angle is greater than either opposite interior angle.", fillcolor="#222244", URL="../G.27/index.html", target="_top"];
-     "G.28" [label="G.28", tooltip="G.28 (I.17): In any triangle, the sum of any two angles is less than two right angles.", fillcolor="#222244", URL="../G.28/index.html", target="_top"];
-     "G.29" [label="G.29", tooltip="G.29 (I.18): In any triangle, the greater side subtends the greater angle.", fillcolor="#222244", URL="../G.29/index.html", target="_top"];
-     "G.30" [label="G.30", tooltip="G.30 (I.19): In any triangle, the greater angle is subtended by the greater side.", fillcolor="#222244", URL="../G.30/index.html", target="_top"];
-     "G.31" [label="G.31", tooltip="G.31 (I.20): In any triangle, the sum of any two sides is greater than the remaining side.", fillcolor="#222244", URL="../G.31/index.html", target="_top"];
-     "G.33" [label="G.33", tooltip="G.33 (I.22): Construct a triangle from three segments equal to three given segments satisfying the triangle inequality.", fillcolor="#222244", URL="../G.33/index.html", target="_top"];
-     "G.34" [label="G.34", tooltip="G.34 (I.23): Construct on a given line at a given point an angle equal to a given angle.", fillcolor="#222244", URL="../G.34/index.html", target="_top"];
-     "G.37" [label="G.37", tooltip="G.37 (I.26): Triangles with two angles and one corresponding side equal are congruent (ASA / AAS).", fillcolor="#222244", URL="../G.37/index.html", target="_top"];
-     "G.38" [label="G.38", tooltip="G.38 (I.def.23): Parallel lines are straight lines in the same plane which, produced indefinitely in both directions, do not meet.", fillcolor="#224422", URL="../G.38/index.html", target="_top"];
-     "G.39" [label="G.39", tooltip="G.39 (I.27): If a transversal cutting two lines makes the alternate interior angles equal, the lines are parallel.", fillcolor="#222244", URL="../G.39/index.html", target="_top"];
-     "G.40" [label="G.40", tooltip="G.40 (I.28): If a transversal cutting two lines makes the exterior angle equal to the opposite interior angle, or interior angles on the same side supplementary, the lines are parallel.", fillcolor="#222244", URL="../G.40/index.html", target="_top"];
-     "G.41" [label="G.41", tooltip="G.41 (I.post.5): Two lines intersected by a transversal with interior angles on one side summing to less than two right angles meet on that side.", fillcolor="#444422", URL="../G.41/index.html", target="_top"];
-     "G.42" [label="G.42", tooltip="G.42 (I.29): A transversal cutting parallel lines makes alternate interior angles equal, exterior and opposite interior angles equal, and same-side interior angles supplementary.", fillcolor="#222244", URL="../G.42/index.html", target="_top"];
-     "G.43" [label="G.43", tooltip="G.43 (I.30): Lines parallel to the same line are parallel to one another.", fillcolor="#222244", URL="../G.43/index.html", target="_top"];
-     "G.44" [label="G.44", tooltip="G.44 (I.31): Construct through a given point a line parallel to a given line.", fillcolor="#222244", URL="../G.44/index.html", target="_top"];
-     "G.45" [label="G.45", tooltip="G.45 (I.32): In any triangle, an exterior angle equals the sum of the two opposite interior angles, and the three interior angles sum to two right angles.", fillcolor="#222244", URL="../G.45/index.html", target="_top"];
-     "G.46" [label="G.46", tooltip="G.46 (I.33): Segments joining the endpoints of equal and parallel segments in the same directions are themselves equal and parallel.", fillcolor="#222244", URL="../G.46/index.html", target="_top"];
-     "G.47" [label="G.47", tooltip="G.47 (I.34): In a parallelogram, opposite sides and opposite angles are equal, and the diagonal bisects the area.", fillcolor="#222244", URL="../G.47/index.html", target="_top"];
-     "G.48" [label="G.48", tooltip="G.48 (I.35): Parallelograms on the same base and in the same parallels are equal in area.", fillcolor="#222244", URL="../G.48/index.html", target="_top"];
-     "G.49" [label="G.49", tooltip="G.49 (I.36): Parallelograms on equal bases and in the same parallels are equal in area.", fillcolor="#222244", URL="../G.49/index.html", target="_top"];
-     "G.50" [label="G.50", tooltip="G.50 (I.37): Triangles on the same base and in the same parallels are equal in area.", fillcolor="#222244", URL="../G.50/index.html", target="_top"];
-     "G.51" [label="G.51", tooltip="G.51 (I.38): Triangles on equal bases and in the same parallels are equal in area.", fillcolor="#222244", URL="../G.51/index.html", target="_top"];
-     "G.52" [label="G.52", tooltip="G.52 (I.39): Equal triangles on the same base and on the same side lie in the same parallels.", fillcolor="#222244", URL="../G.52/index.html", target="_top"];
-     "G.54" [label="G.54", tooltip="G.54 (I.41): If a parallelogram shares the same base with a triangle and lies in the same parallels, the parallelogram is double the triangle.", fillcolor="#222244", URL="../G.54/index.html", target="_top"];
-     "G.55" [label="G.55", tooltip="G.55 (I.42): Construct, in a given angle, a parallelogram equal in area to a given triangle.", fillcolor="#222244", URL="../G.55/index.html", target="_top"];
-     "G.56" [label="G.56", tooltip="G.56 (I.43): In any parallelogram, the complements of the parallelograms about the diagonal are equal in area.", fillcolor="#222244", URL="../G.56/index.html", target="_top"];
-     "G.57" [label="G.57", tooltip="G.57 (I.44): Apply to a given segment, in a given angle, a parallelogram equal in area to a given triangle.", fillcolor="#222244", URL="../G.57/index.html", target="_top"];
-     "G.58" [label="G.58", tooltip="G.58 (I.45): Construct, in a given angle, a parallelogram equal in area to a given polygon.", fillcolor="#222244", URL="../G.58/index.html", target="_top"];
-     "G.76" [label="G.76", tooltip="G.76 (III.1): Find the centre of a given circle.", fillcolor="#222244", URL="../G.76/index.html", target="_top"];
-     "G.80" [label="G.80", tooltip="G.80 (III.5): If two circles cut one another, they will not have the same centre.", fillcolor="#222244", URL="../G.80/index.html", target="_top"];
-     "G.85" [label="G.85", tooltip="G.85 (III.10): A circle does not cut a circle at more points than two.", fillcolor="#222244", URL="../G.85/index.html", target="_top"];
-     "G.94" [label="G.94", tooltip="G.94 (III.16): The straight line drawn at right angles to the diameter of a circle from its extremity will fall outside the circle, and into the space between the straight line and the circumfere...", fillcolor="#222244", URL="../G.94/index.html", target="_top"];
-     "G.96" [label="G.96", tooltip="G.96 (III.18): If a straight line touch a circle, and a straight line be joined from the centre to the point of contact, the straight line so joined is perpendicular to the tangent.", fillcolor="#222244", URL="../G.96/index.html", target="_top"];
-     "G.98" [label="G.98", tooltip="G.98 (III.20): In a circle the angle at the centre is double of the angle at the circumference, when the angles have the same circumference as base.", fillcolor="#222244", URL="../G.98/index.html", target="_top"];
-     "G.99" [label="G.99", tooltip="G.99 (III.21): In a circle the angles in the same segment are equal.", fillcolor="#222244", URL="../G.99/index.html", target="_top"];
-     "G.100" [label="G.100", tooltip="G.100 (III.22): The opposite angles of quadrilaterals in circles are equal to two right angles.", fillcolor="#222244", URL="../G.100/index.html", target="_top"];
-     "G.101" [label="G.101", tooltip="G.101 (III.def.11): Similar segments of circles are those which admit equal angles, or in which the angles are equal.", fillcolor="#224422", URL="../G.101/index.html", target="_top"];
-     "G.103" [label="G.103", tooltip="G.103 (III.24): Similar segments of circles on equal straight lines are equal.", fillcolor="#222244", URL="../G.103/index.html", target="_top"];
-     "G.105" [label="G.105", tooltip="G.105 (III.26): In equal circles equal angles stand on equal circumferences, whether they stand at the centres or at the circumferences.", fillcolor="#222244", URL="../G.105/index.html", target="_top"];
-     "G.106" [label="G.106", tooltip="G.106 (III.27): In equal circles angles standing on equal circumferences are equal, whether they stand at the centres or at the circumferences.", fillcolor="#222244", URL="../G.106/index.html", target="_top"];
-     "G.110" [label="G.110", tooltip="G.110 (III.31): In a circle the angle in the semicircle is right, that in a greater segment less than a right angle, and that in a less segment greater than a right angle; and further the angle of...", fillcolor="#222244", URL="../G.110/index.html", target="_top"];
-     "G.123" [label="G.123", tooltip="G.123 (I.def.22): Of quadrilateral figures, a square is equilateral and right-angled; an oblong is right-angled but not equilateral; a rhombus is equilateral but not right-angled; a rhomboid has opp...", fillcolor="#224422", URL="../G.123/index.html", target="_top"];
-     "G.124" [label="G.124", tooltip="G.124 (IV.6): Inscribe in a given circle a square.", fillcolor="#222244", URL="../G.124/index.html", target="_top"];
-     "G.125" [label="G.125", tooltip="G.125 (IV.7): Circumscribe about a given circle a square.", fillcolor="#222244", URL="../G.125/index.html", target="_top"];
-     "G.135" [label="G.135", tooltip="G.135 (V.1): If there be any number of magnitudes whatever which are, respectively, equimultiples of any magnitudes equal in multitude, then, whatever multiple one of the magnitudes is of one, ...", fillcolor="#222244", URL="../G.135/index.html", target="_top"];
-     "G.136" [label="G.136", tooltip="G.136 (V.2): If a first magnitude be the same multiple of a second that a third is of a fourth, and a fifth also be the same multiple of the second that a sixth is of the fourth, the sum of the...", fillcolor="#222244", URL="../G.136/index.html", target="_top"];
-     "G.137" [label="G.137", tooltip="G.137 (V.3): If a first magnitude be the same multiple of a second that a third is of a fourth, and if equimultiples be taken of the first and third, then alsoex aequali the magnitudes taken is...", fillcolor="#222244", URL="../G.137/index.html", target="_top"];
-     "G.138" [label="G.138", tooltip="G.138 (V.def.5): Magnitudes are said tobe in the same ratio, the first to the second and the third to the fourth, when, if any equimultiples whatever be taken of the first and third, and any equimu...", fillcolor="#224422", URL="../G.138/index.html", target="_top"];
-     "G.139" [label="G.139", tooltip="G.139 (V.4): If a first magnitude have to a second the same ratio as a third to a fourth, any equimultiples whatever of the first and third will also have the same ratio to any equimultiples wh...", fillcolor="#222244", URL="../G.139/index.html", target="_top"];
-     "G.142" [label="G.142", tooltip="G.142 (V.7): Equal magnitudes have to the same the same ratio, as also has the same to equal magnitudes.", fillcolor="#222244", URL="../G.142/index.html", target="_top"];
-     "G.143" [label="G.143", tooltip="G.143 (V.def.4): Magnitudes are said tohave a ratio to one another which are capable, when multiplied, of exceeding one another.", fillcolor="#224422", URL="../G.143/index.html", target="_top"];
-     "G.144" [label="G.144", tooltip="G.144 (V.def.7): When, of the equimultiples, the multiple of the first magnitude exceeds the multiple of the second, but the multiple of the third does not exceed the multiple of the fourth, then t...", fillcolor="#224422", URL="../G.144/index.html", target="_top"];
-     "G.145" [label="G.145", tooltip="G.145 (V.8): Of unequal magnitudes, the greater has to the same a greater ratio than the less has; and the same has to the less a greater ratio than it has to the greater.", fillcolor="#222244", URL="../G.145/index.html", target="_top"];
-     "G.146" [label="G.146", tooltip="G.146 (V.9): Magnitudes which have the same ratio to the same are equal; and magnitudes to which the same has the same ratio are equal.", fillcolor="#222244", URL="../G.146/index.html", target="_top"];
-     "G.147" [label="G.147", tooltip="G.147 (V.10): Of magnitudes which have a ratio to the same, that which has a greater ratio is greater; and that to which the same has a greater ratio is less.", fillcolor="#222244", URL="../G.147/index.html", target="_top"];
-     "G.148" [label="G.148", tooltip="G.148 (V.11): Ratios which are the same with the same ratio are also the same with one another.", fillcolor="#222244", URL="../G.148/index.html", target="_top"];
-     "G.149" [label="G.149", tooltip="G.149 (V.12): If any number of magnitudes be proportional, as one of the antecedents is to one of the consequents, so will all the antecedents be to all the consequents.", fillcolor="#222244", URL="../G.149/index.html", target="_top"];
-     "G.150" [label="G.150", tooltip="G.150 (V.13): If a first magnitude have to a second the same ratio as a third to a fourth, and the third have to the fourth a greater ratio than a fifth has to a sixth, the first will also have ...", fillcolor="#222244", URL="../G.150/index.html", target="_top"];
-     "G.151" [label="G.151", tooltip="G.151 (V.14): If a first magnitude have to a second the same ratio as a third has to a fourth, and the first be greater than the third, the second is greater than the fourth; if equal, equal; an...", fillcolor="#222244", URL="../G.151/index.html", target="_top"];
-     "G.152" [label="G.152", tooltip="G.152 (V.15): Parts have the same ratio as the same multiples of them taken in corresponding order.", fillcolor="#222244", URL="../G.152/index.html", target="_top"];
-     "G.153" [label="G.153", tooltip="G.153 (V.16): If four magnitudes be proportional, they is proportional alternately.", fillcolor="#222244", URL="../G.153/index.html", target="_top"];
-     "G.154" [label="G.154", tooltip="G.154 (V.17): If magnitudes be proportional componendo, they is proportional separando.", fillcolor="#222244", URL="../G.154/index.html", target="_top"];
-     "G.155" [label="G.155", tooltip="G.155 (V.18): If magnitudes be proportional separando, they is proportional componendo.", fillcolor="#222244", URL="../G.155/index.html", target="_top"];
-     "G.157" [label="G.157", tooltip="G.157 (V.20): If there be three magnitudes, and others equal to them in multitude, which taken two and two are in the same ratio, and ifex aequali the first be greater than the third, the fourth...", fillcolor="#222244", URL="../G.157/index.html", target="_top"];
-     "G.159" [label="G.159", tooltip="G.159 (V.22): If there be any number of magnitudes whatever, and others equal to them in multitude, which taken two and two together are in the same ratio, they is in the same ratio ex aequali.", fillcolor="#222244", URL="../G.159/index.html", target="_top"];
-     "G.163" [label="G.163", tooltip="G.163 (VI.1): Triangles and parallelograms which are under the same height are to one another as their bases.", fillcolor="#222244", URL="../G.163/index.html", target="_top"];
-     "G.164" [label="G.164", tooltip="G.164 (VI.2): If a straight line be drawn parallel to one of the sides of a triangle, it will cut the sides of the triangle proportionally; and, if the sides of the triangle be cut proportionall...", fillcolor="#222244", URL="../G.164/index.html", target="_top"];
-     "G.166" [label="G.166", tooltip="G.166 (VI.4): In equiangular triangles the sides about the equal angles are proportional, and those are corresponding sides which subtend the equal angles.", fillcolor="#222244", URL="../G.166/index.html", target="_top"];
-     "G.168" [label="G.168", tooltip="G.168 (VI.6): If two triangles have one angle equal to one angle and the sides about the equal angles proportional, the triangles is equiangular and will have those angles equal which the corres...", fillcolor="#222244", URL="../G.168/index.html", target="_top"];
-     "G.170" [label="G.170", tooltip="G.170 (VI.def.1): Similar polygons are such as have their angles severally equal and the sides about the equal angles proportional.", fillcolor="#224422", URL="../G.170/index.html", target="_top"];
-     "G.174" [label="G.174", tooltip="G.174 (VI.11): To two given straight lines to find a third proportional.", fillcolor="#222244", URL="../G.174/index.html", target="_top"];
-     "G.175" [label="G.175", tooltip="G.175 (VI.12): To three given straight lines to find a fourth proportional.", fillcolor="#222244", URL="../G.175/index.html", target="_top"];
-     "G.178" [label="G.178", tooltip="G.178 (VI.15): In equal triangles which have one angle equal to one angle the sides about the equal angles are reciprocally proportional; and those triangles which have one angle equal to one ang...", fillcolor="#222244", URL="../G.178/index.html", target="_top"];
-     "G.181" [label="G.181", tooltip="G.181 (VI.18): Describe on a given segment a rectilinear figure similar and similarly situated to a given rectilinear figure.", fillcolor="#222244", URL="../G.181/index.html", target="_top"];
-     "G.182" [label="G.182", tooltip="G.182 (V.def.9): When three magnitudes are proportional, the first is said to have to the third theduplicate ratio of that which it has to the second.", fillcolor="#224422", URL="../G.182/index.html", target="_top"];
-     "G.183" [label="G.183", tooltip="G.183 (V.def.11): The termcorresponding magnitudes is used of antecedents in relation to antecedents, and of consequents in relation to consequents.", fillcolor="#224422", URL="../G.183/index.html", target="_top"];
-     "G.184" [label="G.184", tooltip="G.184 (VI.19): Similar triangles are to one another in the duplicate ratio of the corresponding sides.", fillcolor="#222244", URL="../G.184/index.html", target="_top"];
-     "G.185" [label="G.185", tooltip="G.185 (VI.20): Similar polygons are divided into similar triangles, and into triangles equal in multitude and in the same ratio as the wholes, and the polygon has to the polygon a ratio duplicate...", fillcolor="#222244", URL="../G.185/index.html", target="_top"];
-     "G.187" [label="G.187", tooltip="G.187 (VI.22): If four straight lines be proportional, the polygons similar and similarly described upon them is proportional; and, if the polygons similar and similarly described upon them be pr...", fillcolor="#222244", URL="../G.187/index.html", target="_top"];
-     "G.313" [label="G.313", tooltip="G.313 (X.1): Two unequal magnitudes being set out, if from the greater there be subtracted a magnitude greater than its half, and from that which is left a magnitude greater than its half, and ...", fillcolor="#222244", URL="../G.313/index.html", target="_top"];
-     "G.443" [label="G.443", tooltip="G.443 (XI.1): A part of a straight line cannot be in the plane of reference and a part in a plane more elevated.", fillcolor="#222244", URL="../G.443/index.html", target="_top"];
-     "G.444" [label="G.444", tooltip="G.444 (XI.2): If two straight lines cut one another, they are in one plane, and every triangle is in one plane.", fillcolor="#222244", URL="../G.444/index.html", target="_top"];
-     "G.445" [label="G.445", tooltip="G.445 (XI.3): If two planes cut one another, their common section is a straight line.", fillcolor="#222244", URL="../G.445/index.html", target="_top"];
-     "G.446" [label="G.446", tooltip="G.446 (XI.def.3): A straight line isat right angles to a plane, when it makes right angles with all the straight lines which meet it and are in the plane.", fillcolor="#224422", URL="../G.446/index.html", target="_top"];
-     "G.447" [label="G.447", tooltip="G.447 (XI.4): If a straight line be set up at right angles to two straight lines which cut one another, at their common point of section, it is at right angles to the plane through them.", fillcolor="#222244", URL="../G.447/index.html", target="_top"];
-     "G.448" [label="G.448", tooltip="G.448 (XI.5): If a straight line be set up at right angles to three straight lines which meet one another, at their common point of section, the three straight lines are in one plane.", fillcolor="#222244", URL="../G.448/index.html", target="_top"];
-     "G.449" [label="G.449", tooltip="G.449 (XI.6): If two straight lines be at right angles to the same plane, the straight lines is parallel.", fillcolor="#222244", URL="../G.449/index.html", target="_top"];
-     "G.450" [label="G.450", tooltip="G.450 (XI.7): If two straight lines be parallel and points be taken at random on each of them, the straight line joining the points is in the same plane with the parallel straight lines.", fillcolor="#222244", URL="../G.450/index.html", target="_top"];
-     "G.451" [label="G.451", tooltip="G.451 (XI.8): If two straight lines be parallel, and one of them be at right angles to any plane, the remaining one is at right angles to the same plane.", fillcolor="#222244", URL="../G.451/index.html", target="_top"];
-     "G.452" [label="G.452", tooltip="G.452 (XI.9): Straight lines which are parallel to the same straight line and are not in the same plane with it are also parallel to one another.", fillcolor="#222244", URL="../G.452/index.html", target="_top"];
-     "G.453" [label="G.453", tooltip="G.453 (XI.10): If two straight lines meeting one another be parallel to two straight lines meeting one another not in the same plane, they will contain equal angles.", fillcolor="#222244", URL="../G.453/index.html", target="_top"];
-     "G.460" [label="G.460", tooltip="G.460 (XI.16): If two parallel planes be cut by any plane, their common sections are parallel.", fillcolor="#222244", URL="../G.460/index.html", target="_top"];
-     "G.469" [label="G.469", tooltip="G.469 (XI.24): If a solid be contained by parallel planes, the opposite planes in it are equal and parallelogrammic.", fillcolor="#222244", URL="../G.469/index.html", target="_top"];
-     "G.470" [label="G.470", tooltip="G.470 (XI.25): If a parallelepipedal solid be cut by a plane which is parallel to the opposite planes, then, as the base is to the base, so will the solid be to the solid.", fillcolor="#222244", URL="../G.470/index.html", target="_top"];
-     "G.474" [label="G.474", tooltip="G.474 (XI.def.10): Equal and similar solid figures are those contained by similar planes equal in multitude and in magnitude.", fillcolor="#224422", URL="../G.474/index.html", target="_top"];
-     "G.475" [label="G.475", tooltip="G.475 (XI.28): If a parallelepipedal solid be cut by a plane through the diagonals of the opposite planes, the solid is bisected by the plane.", fillcolor="#222244", URL="../G.475/index.html", target="_top"];
-     "G.476" [label="G.476", tooltip="G.476 (XI.29): Parallelepipedal solids which are on the same base and of the same height, and in which the extremities of the sides which stand up are on the same straight lines, are equal.", fillcolor="#222244", URL="../G.476/index.html", target="_top"];
-     "G.477" [label="G.477", tooltip="G.477 (XI.30): Parallelepipedal solids which are on the same base and of the same height, and in which the extremities of the sides which stand up are not on the same straight lines, are equal.", fillcolor="#222244", URL="../G.477/index.html", target="_top"];
-     "G.478" [label="G.478", tooltip="G.478 (XI.31): Parallelepipedal solids which are on equal bases and of the same height are equal.", fillcolor="#222244", URL="../G.478/index.html", target="_top"];
-     "G.479" [label="G.479", tooltip="G.479 (XI.32): Parallelepipedal solids which are of the same height are to one another as their bases.", fillcolor="#222244", URL="../G.479/index.html", target="_top"];
-     "G.486" [label="G.486", tooltip="G.486 (XI.39): If there be two prisms of equal height, and one have a parallelogram as base and the other a triangle, and if the parallelogram be double of the triangle, the prisms is equal.", fillcolor="#222244", URL="../G.486/index.html", target="_top"];
-     "G.487" [label="G.487", tooltip="G.487 (XII.1): Similar polygons inscribed in circles are to one another as the squares on the diameters.", fillcolor="#222244", URL="../G.487/index.html", target="_top"];
-     "G.488" [label="G.488", tooltip="G.488 (XII.2): Circles are to one another as the squares on the diameters.", fillcolor="#222244", URL="../G.488/index.html", target="_top"];
-     "G.489" [label="G.489", tooltip="G.489 (XII.3): Any pyramid which has a triangular base is divided into two pyramids equal and similar to one another, similar to the whole and having triangular bases, and into two equal prisms; ...", fillcolor="#222244", URL="../G.489/index.html", target="_top"];
-     "G.490" [label="G.490", tooltip="G.490 (XII.4): If there be two pyramids of the same height which have triangular bases, and each of them be divided into two pyramids equal to one another and similar to the whole, and into two e...", fillcolor="#222244", URL="../G.490/index.html", target="_top"];
-     "G.491" [label="G.491", tooltip="G.491 (XII.5): Pyramids which are of the same height and have triangular bases are to one another as the bases.", fillcolor="#222244", URL="../G.491/index.html", target="_top"];
-     "G.492" [label="G.492", tooltip="G.492 (XII.6): Pyramids which are of the same height and have polygonal bases are to one another as the bases.", fillcolor="#222244", URL="../G.492/index.html", target="_top"];
-     "G.493" [label="G.493", tooltip="G.493 (XII.7): Any prism which has a triangular base is divided into three pyramids equal to one another which have triangular bases.", fillcolor="#222244", URL="../G.493/index.html", target="_top"];
-     "G.496" [label="G.496", tooltip="G.496 (XII.10): Any cone is a third part of the cylinder which has the same base with it and equal height.", fillcolor="#222244", URL="../G.496/index.html", target="_top"];
-     "G.497" [label="G.497", tooltip="G.497 (XII.11): *Cones and cylinders which are of the same height are to* *one another as their bases.*", fillcolor="#222244", URL="../G.497/index.html", target="_top"];
-     "G.500" [label="G.500", tooltip="G.500 (XII.13): If a cylinder be cut by a plane which is parallel to its opposite planes, then, as the cylinder is to the cylinder, so will the axis be to the axis.", fillcolor="#222244", URL="../G.500/index.html", target="_top"];
-     "G.501" [label="G.501", tooltip="G.501 (XII.14): Cones and cylinders which are on equal bases are to one another as their heights.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
-     "G.5" -> "G.1";
-     "G.8" -> "G.1";
-     "G.9" -> "G.1";
-     "G.22" -> "G.1";
-     "G.24" -> "G.1";
-     "G.25" -> "G.1";
-     "G.42" -> "G.1";
-     "G.43" -> "G.1";
+     "G.1" [label="G.1", tooltip="G.1 (I.def.1): A point A is that which has no part.", fillcolor="#224422", URL="../G.1/index.html", target="_top"];
+     "G.2" [label="G.2", tooltip="G.2 (I.def.2): A line [ A B ] is a projection of a relationship of two points A, B.", fillcolor="#224422", URL="../G.2/index.html", target="_top"];
+     "G.3" [label="G.3", tooltip="G.3 (I.def.3): The extremities of a segment / A B / are points A, B.", fillcolor="#224422", URL="../G.3/index.html", target="_top"];
+     "G.4" [label="G.4", tooltip="G.4 (I.def.4): A segment / A B / is a portion of a line [ A B ] between two points A, B on the line.", fillcolor="#224422", URL="../G.4/index.html", target="_top"];
+     "G.5" [label="G.5", tooltip="G.5 (I.def.5): A surface is that which has length and breadth only.", fillcolor="#224422", URL="../G.5/index.html", target="_top"];
+     "G.6" [label="G.6", tooltip="G.6 (I.def.6): The extremities of a surface are lines or arcs.", fillcolor="#224422", URL="../G.6/index.html", target="_top"];
+     "G.7" [label="G.7", tooltip="G.7 (I.def.7): A plane surface lies evenly with the lines on itself.", fillcolor="#224422", URL="../G.7/index.html", target="_top"];
+     "G.8" [label="G.8", tooltip="G.8 (I.def.13): A boundary is the extremity of anything.", fillcolor="#224422", URL="../G.8/index.html", target="_top"];
+     "G.9" [label="G.9", tooltip="G.9 (I.def.14): A figure is that which is contained by any boundary or boundaries.", fillcolor="#224422", URL="../G.9/index.html", target="_top"];
+     "G.10" [label="G.10", tooltip="G.10 (I.def.15): A circle ( A B ) is a plane figure contained by one arc defined by a center A and a point B establishing its defining radius / A B /, such that all segments / A B /, / A C /, / A D...", fillcolor="#224422", URL="../G.10/index.html", target="_top"];
+     "G.11" [label="G.11", tooltip="G.11 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
+     "G.12" [label="G.12", tooltip="G.12 (I.def.20): Of trilateral figures, an equilateral triangle < A B C > has three equal sides, an isosceles triangle < D E F > has two equal sides, and a scalene triangle < G H K > has three uneq...", fillcolor="#224422", URL="../G.12/index.html", target="_top"];
+     "G.13" [label="G.13", tooltip="G.13 (I.post.1): Construct a segment / A B / between any two points A, B.", fillcolor="#444422", URL="../G.13/index.html", target="_top"];
+     "G.14" [label="G.14", tooltip="G.14 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.", fillcolor="#224422", URL="../G.14/index.html", target="_top"];
+     "G.15" [label="G.15", tooltip="G.15 (I.post.3): Construct a circle ( A B ) with center A and defining radius point B.", fillcolor="#444422", URL="../G.15/index.html", target="_top"];
+     "G.16" [label="G.16", tooltip="G.16 (I.cn.1): Things equal to the same thing are equal to one another.", fillcolor="#442222", URL="../G.16/index.html", target="_top"];
+     "G.17" [label="G.17", tooltip="G.17 (I.1): Construct an equilateral triangle on a given segment.", fillcolor="#222244", URL="../G.17/index.html", target="_top"];
+     "G.18" [label="G.18", tooltip="G.18 (I.post.2): Extend a segment / A B / continuously along a line [ A B ] to / B C /.", fillcolor="#444422", URL="../G.18/index.html", target="_top"];
+     "G.19" [label="G.19", tooltip="G.19 (I.cn.3): If equals are subtracted from equals, the remainders are equal.", fillcolor="#442222", URL="../G.19/index.html", target="_top"];
+     "G.20" [label="G.20", tooltip="G.20 (I.2): Construct at a given point a segment equal to a given segment.", fillcolor="#222244", URL="../G.20/index.html", target="_top"];
+     "G.21" [label="G.21", tooltip="G.21 (I.3): Cut off from the greater of two unequal segments a segment equal to the less.", fillcolor="#222244", URL="../G.21/index.html", target="_top"];
+     "G.22" [label="G.22", tooltip="G.22 (I.def.8): A plane angle is the inclination to one another of two lines or arcs in a plane that meet and do not lie on the same line.", fillcolor="#224422", URL="../G.22/index.html", target="_top"];
+     "G.23" [label="G.23", tooltip="G.23 (I.cn.4): Things / A B /, / D E / that coincide with one another are equal to one another.", fillcolor="#442222", URL="../G.23/index.html", target="_top"];
+     "G.24" [label="G.24", tooltip="G.24 (I.4): Triangles with two sides and the included angle equal are congruent (SAS).", fillcolor="#222244", URL="../G.24/index.html", target="_top"];
+     "G.25" [label="G.25", tooltip="G.25 (I.5): In an isosceles triangle, the angles at the base are equal, and if the equal sides are extended, the angles under the base are equal.", fillcolor="#222244", URL="../G.25/index.html", target="_top"];
+     "G.27" [label="G.27", tooltip="G.27 (I.7): On the same segment and on the same side, there cannot be constructed two distinct triangles with both pairs of conterminous sides equal.", fillcolor="#222244", URL="../G.27/index.html", target="_top"];
+     "G.28" [label="G.28", tooltip="G.28 (I.8): Triangles with all three corresponding sides equal have their corresponding angles equal (SSS).", fillcolor="#222244", URL="../G.28/index.html", target="_top"];
+     "G.29" [label="G.29", tooltip="G.29 (I.def.9): A rectilineal angle is contained by two segments or lines.", fillcolor="#224422", URL="../G.29/index.html", target="_top"];
+     "G.30" [label="G.30", tooltip="G.30 (I.9): Bisect a given angle.", fillcolor="#222244", URL="../G.30/index.html", target="_top"];
+     "G.31" [label="G.31", tooltip="G.31 (I.10): Bisect a given segment.", fillcolor="#222244", URL="../G.31/index.html", target="_top"];
+     "G.32" [label="G.32", tooltip="G.32 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.32/index.html", target="_top"];
+     "G.33" [label="G.33", tooltip="G.33 (I.11): Construct a segment at right angles to a given line from a given point on it.", fillcolor="#222244", URL="../G.33/index.html", target="_top"];
+     "G.35" [label="G.35", tooltip="G.35 (I.cn.2): If equals are added to equals, the wholes are equal.", fillcolor="#442222", URL="../G.35/index.html", target="_top"];
+     "G.36" [label="G.36", tooltip="G.36 (I.13): A segment standing on a line makes either two right angles or adjacent angles summing to two right angles.", fillcolor="#222244", URL="../G.36/index.html", target="_top"];
+     "G.37" [label="G.37", tooltip="G.37 (I.post.4): All right angles are equal.", fillcolor="#444422", URL="../G.37/index.html", target="_top"];
+     "G.38" [label="G.38", tooltip="G.38 (I.14): If two segments at a point on a line on opposite sides make adjacent angles summing to two right angles, the two segments are collinear.", fillcolor="#222244", URL="../G.38/index.html", target="_top"];
+     "G.39" [label="G.39", tooltip="G.39 (I.15): Intersecting lines make their vertical angles equal.", fillcolor="#222244", URL="../G.39/index.html", target="_top"];
+     "G.40" [label="G.40", tooltip="G.40 (I.cn.5): The whole is greater than the part.", fillcolor="#442222", URL="../G.40/index.html", target="_top"];
+     "G.41" [label="G.41", tooltip="G.41 (I.16): In any triangle, if one side is extended, the exterior angle is greater than either opposite interior angle.", fillcolor="#222244", URL="../G.41/index.html", target="_top"];
+     "G.43" [label="G.43", tooltip="G.43 (I.18): In any triangle, the greater side subtends the greater angle.", fillcolor="#222244", URL="../G.43/index.html", target="_top"];
+     "G.44" [label="G.44", tooltip="G.44 (I.19): In any triangle, the greater angle is subtended by the greater side.", fillcolor="#222244", URL="../G.44/index.html", target="_top"];
+     "G.45" [label="G.45", tooltip="G.45 (I.20): In any triangle, the sum of any two sides is greater than the remaining side.", fillcolor="#222244", URL="../G.45/index.html", target="_top"];
+     "G.47" [label="G.47", tooltip="G.47 (I.22): Construct a triangle from three segments equal to three given segments satisfying the triangle inequality.", fillcolor="#222244", URL="../G.47/index.html", target="_top"];
+     "G.48" [label="G.48", tooltip="G.48 (I.23): Construct on a given line at a given point an angle equal to a given angle.", fillcolor="#222244", URL="../G.48/index.html", target="_top"];
+     "G.51" [label="G.51", tooltip="G.51 (I.26): Triangles with two angles and one corresponding side equal are congruent (ASA / AAS).", fillcolor="#222244", URL="../G.51/index.html", target="_top"];
+     "G.52" [label="G.52", tooltip="G.52 (I.def.23): Parallel lines are lines in the same plane which, extended indefinitely in both directions, do not meet.", fillcolor="#224422", URL="../G.52/index.html", target="_top"];
+     "G.53" [label="G.53", tooltip="G.53 (I.27): If a transversal cutting two lines makes the alternate interior angles equal, the lines are parallel.", fillcolor="#222244", URL="../G.53/index.html", target="_top"];
+     "G.55" [label="G.55", tooltip="G.55 (I.post.5): Two lines intersected by a transversal with interior angles on one side summing to less than two right angles meet on that side.", fillcolor="#444422", URL="../G.55/index.html", target="_top"];
+     "G.56" [label="G.56", tooltip="G.56 (I.29): A transversal cutting parallel lines makes alternate interior angles equal, exterior and opposite interior angles equal, and same-side interior angles supplementary.", fillcolor="#222244", URL="../G.56/index.html", target="_top"];
+     "G.58" [label="G.58", tooltip="G.58 (I.31): Construct through a given point a line parallel to a given line.", fillcolor="#222244", URL="../G.58/index.html", target="_top"];
+     "G.60" [label="G.60", tooltip="G.60 (I.33): Segments joining the endpoints of equal and parallel segments in the same directions are themselves equal and parallel.", fillcolor="#222244", URL="../G.60/index.html", target="_top"];
+     "G.61" [label="G.61", tooltip="G.61 (I.def.17): A diameter of a circle is any segment drawn through the center and terminated in both directions by the arc of the circle; it bisects the circle.", fillcolor="#224422", URL="../G.61/index.html", target="_top"];
+     "G.62" [label="G.62", tooltip="G.62 (I.34): In a parallelogram, opposite sides and opposite angles are equal, and the diagonal bisects the area.", fillcolor="#222244", URL="../G.62/index.html", target="_top"];
+     "G.63" [label="G.63", tooltip="G.63 (I.def.22): Of quadrilateral figures, a square is equilateral and right-angled; an oblong is right-angled but not equilateral; a rhombus is equilateral but not right-angled; a rhomboid has opp...", fillcolor="#224422", URL="../G.63/index.html", target="_top"];
+     "G.64" [label="G.64", tooltip="G.64 (I.35): Parallelograms on the same base and in the same parallels are equal in area.", fillcolor="#222244", URL="../G.64/index.html", target="_top"];
+     "G.65" [label="G.65", tooltip="G.65 (I.36): Parallelograms on equal bases and in the same parallels are equal in area.", fillcolor="#222244", URL="../G.65/index.html", target="_top"];
+     "G.66" [label="G.66", tooltip="G.66 (I.37): Triangles on the same base and in the same parallels are equal in area.", fillcolor="#222244", URL="../G.66/index.html", target="_top"];
+     "G.67" [label="G.67", tooltip="G.67 (I.38): Triangles on equal bases and in the same parallels are equal in area.", fillcolor="#222244", URL="../G.67/index.html", target="_top"];
+     "G.68" [label="G.68", tooltip="G.68 (I.39): Equal triangles on the same base and on the same side lie in the same parallels.", fillcolor="#222244", URL="../G.68/index.html", target="_top"];
+     "G.70" [label="G.70", tooltip="G.70 (I.41): If a parallelogram shares the same base with a triangle and lies in the same parallels, the parallelogram is double the triangle.", fillcolor="#222244", URL="../G.70/index.html", target="_top"];
+     "G.81" [label="G.81", tooltip="G.81 (II.def.1): Any rectangular parallelogram is said to becontained by the twosegments containing theright angle.", fillcolor="#224422", URL="../G.81/index.html", target="_top"];
+     "G.169" [label="G.169", tooltip="G.169 (V.def.1): A magnitude is apart of a magnitude, the less of the greater, when it measures the greater.", fillcolor="#224422", URL="../G.169/index.html", target="_top"];
+     "G.170" [label="G.170", tooltip="G.170 (V.def.2): The greater is amultiple of the less when it ismeasured by the less.", fillcolor="#224422", URL="../G.170/index.html", target="_top"];
+     "G.171" [label="G.171", tooltip="G.171 (V.1): If there be any number of magnitudes whatever which are, respectively, equimultiples of any magnitudes equal in multitude, then, whatever multiple one of the magnitudes is of one, ...", fillcolor="#222244", URL="../G.171/index.html", target="_top"];
+     "G.172" [label="G.172", tooltip="G.172 (V.2): If a first magnitude be the same multiple of a second that a third is of a fourth, and a fifth also be the same multiple of the second that a sixth is of the fourth, the sum of the...", fillcolor="#222244", URL="../G.172/index.html", target="_top"];
+     "G.173" [label="G.173", tooltip="G.173 (V.def.3): Aratio is a sort of relation in respect of size between two magnitudes of the same kind.", fillcolor="#224422", URL="../G.173/index.html", target="_top"];
+     "G.174" [label="G.174", tooltip="G.174 (V.def.17): Aratioex aequali arises when, there being several magnitudes and another set equal to them in multitude which taken two and two are in the same proportion, as the first is to the l...", fillcolor="#224422", URL="../G.174/index.html", target="_top"];
+     "G.175" [label="G.175", tooltip="G.175 (V.3): If a first magnitude be the same multiple of a second that a third is of a fourth, and if equimultiples be taken of the first and third, then also ex aequali the magnitudes taken i...", fillcolor="#222244", URL="../G.175/index.html", target="_top"];
+     "G.176" [label="G.176", tooltip="G.176 (V.def.5): Magnitudes are said tobe in the same ratio, the first to the second and the third to the fourth, when, if anyequimultiples whatever be taken of the first and third, and any equimul...", fillcolor="#224422", URL="../G.176/index.html", target="_top"];
+     "G.177" [label="G.177", tooltip="G.177 (V.4): If a first magnitude have to a second the same ratio as a third to a fourth, any equimultiples whatever of the first and third will also have the same ratio to any equimultiples wh...", fillcolor="#222244", URL="../G.177/index.html", target="_top"];
+     "G.180" [label="G.180", tooltip="G.180 (V.def.6): Let magnitudes which have thesame ratio be calledproportional.", fillcolor="#224422", URL="../G.180/index.html", target="_top"];
+     "G.181" [label="G.181", tooltip="G.181 (V.def.11): The termcorresponding magnitudes is used of antecedents in relation to antecedents, and of consequents in relation to consequents.", fillcolor="#224422", URL="../G.181/index.html", target="_top"];
+     "G.182" [label="G.182", tooltip="G.182 (V.def.13): Inverse ratio means taking theconsequent as antecedent in relation to the antecedent as consequent.", fillcolor="#224422", URL="../G.182/index.html", target="_top"];
+     "G.183" [label="G.183", tooltip="G.183 (V.7): Equal magnitudes have to the same the same ratio, as also has the same to equal magnitudes.", fillcolor="#222244", URL="../G.183/index.html", target="_top"];
+     "G.184" [label="G.184", tooltip="G.184 (V.def.4): Magnitudes are said tohave a ratio to one another which are capable, when multiplied, of exceeding one another.", fillcolor="#224422", URL="../G.184/index.html", target="_top"];
+     "G.185" [label="G.185", tooltip="G.185 (V.def.7): When, of theequimultiples, the multiple of the first magnitude exceeds the multiple of the second, but the multiple of the third does not exceed the multiple of the fourth, then th...", fillcolor="#224422", URL="../G.185/index.html", target="_top"];
+     "G.186" [label="G.186", tooltip="G.186 (V.8): Of unequal magnitudes, the greater has to the same a greater ratio than the less has; and the same has to the less a greater ratio than it has to the greater.", fillcolor="#222244", URL="../G.186/index.html", target="_top"];
+     "G.187" [label="G.187", tooltip="G.187 (V.9): Magnitudes which have the same ratio to the same are equal; and magnitudes to which the same has the same ratio are equal.", fillcolor="#222244", URL="../G.187/index.html", target="_top"];
+     "G.188" [label="G.188", tooltip="G.188 (V.10): Of magnitudes which have a ratio to the same, that which has a greater ratio is greater; and that to which the same has a greater ratio is less.", fillcolor="#222244", URL="../G.188/index.html", target="_top"];
+     "G.189" [label="G.189", tooltip="G.189 (V.11): Ratios which are the same with the same ratio are also the same with one another.", fillcolor="#222244", URL="../G.189/index.html", target="_top"];
+     "G.190" [label="G.190", tooltip="G.190 (V.12): If any number of magnitudes be proportional, as one of the antecedents is to one of the consequents, so will all the antecedents be to all the consequents.", fillcolor="#222244", URL="../G.190/index.html", target="_top"];
+     "G.191" [label="G.191", tooltip="G.191 (V.13): If a first magnitude have to a second the same ratio as a third to a fourth, and the third have to the fourth a greater ratio than a fifth has to a sixth, the first will also have ...", fillcolor="#222244", URL="../G.191/index.html", target="_top"];
+     "G.192" [label="G.192", tooltip="G.192 (V.14): If a first magnitude have to a second the same ratio as a third has to a fourth, and the first be greater than the third, the second is greater than the fourth; if equal, equal; an...", fillcolor="#222244", URL="../G.192/index.html", target="_top"];
+     "G.193" [label="G.193", tooltip="G.193 (V.15): Parts have the same ratio as the same multiples of them taken in corresponding order.", fillcolor="#222244", URL="../G.193/index.html", target="_top"];
+     "G.194" [label="G.194", tooltip="G.194 (V.def.12): Alternate ratio means taking theantecedent in relation to the antecedent and the consequent in relation to the consequent.", fillcolor="#224422", URL="../G.194/index.html", target="_top"];
+     "G.195" [label="G.195", tooltip="G.195 (V.16): If four magnitudes be proportional, they is proportional alternately.", fillcolor="#222244", URL="../G.195/index.html", target="_top"];
+     "G.202" [label="G.202", tooltip="G.202 (V.20): If there be three magnitudes, and others equal to them in multitude, which taken two and two are in the same ratio, and if ex aequali the first be greater than the third, the fourt...", fillcolor="#222244", URL="../G.202/index.html", target="_top"];
+     "G.205" [label="G.205", tooltip="G.205 (V.22): If there be any number of magnitudes whatever, and others equal to them in multitude, which taken two and two together are in the same ratio, they is in the same ratio ex aequali.", fillcolor="#222244", URL="../G.205/index.html", target="_top"];
+     "G.209" [label="G.209", tooltip="G.209 (VI.def.4): The height of anyfigure is theperpendicular drawn from the vertex to the base.", fillcolor="#224422", URL="../G.209/index.html", target="_top"];
+     "G.210" [label="G.210", tooltip="G.210 (VI.1): Triangles and parallelograms which are under the same height are to one another as their bases.", fillcolor="#222244", URL="../G.210/index.html", target="_top"];
+     "G.211" [label="G.211", tooltip="G.211 (VI.2): If a segment be drawn parallel to one of the sides of a triangle, it will cut the sides of the triangle proportionally; and, if the sides of the triangle be cut proportionally, the...", fillcolor="#222244", URL="../G.211/index.html", target="_top"];
+     "G.217" [label="G.217", tooltip="G.217 (VI.def.1): Similar polygons are such as have theirangles severally equal and the sides about the equal anglesproportional.", fillcolor="#224422", URL="../G.217/index.html", target="_top"];
+     "G.221" [label="G.221", tooltip="G.221 (VI.11): To two given segments to find a third proportional.", fillcolor="#222244", URL="../G.221/index.html", target="_top"];
+     "G.224" [label="G.224", tooltip="G.224 (VI.def.2): Reciprocally related figures have their sides about equal angles reciprocally proportional.", fillcolor="#224422", URL="../G.224/index.html", target="_top"];
+     "G.226" [label="G.226", tooltip="G.226 (VI.15): In equal triangles which have one angle equal to one angle the sides about the equal angles are reciprocally proportional; and those triangles which have one angle equal to one ang...", fillcolor="#222244", URL="../G.226/index.html", target="_top"];
+     "G.230" [label="G.230", tooltip="G.230 (V.def.9): When three magnitudes areproportional, the first is said to have to the third theduplicate ratio of that which it has to the second.", fillcolor="#224422", URL="../G.230/index.html", target="_top"];
+     "G.231" [label="G.231", tooltip="G.231 (VI.19): Similar triangles are to one another in the duplicate ratio of the corresponding sides.", fillcolor="#222244", URL="../G.231/index.html", target="_top"];
+     "G.247" [label="G.247", tooltip="G.247 (VII.def.1): Anunit is that by virtue of which each of the things that exist is called one.", fillcolor="#224422", URL="../G.247/index.html", target="_top"];
+     "G.248" [label="G.248", tooltip="G.248 (VII.def.2): Anumber is a multitude composed ofunits.", fillcolor="#224422", URL="../G.248/index.html", target="_top"];
+     "G.253" [label="G.253", tooltip="G.253 (VII.def.3): Anumber is apart of a number, the less of the greater, when itmeasures the greater;", fillcolor="#224422", URL="../G.253/index.html", target="_top"];
+     "G.254" [label="G.254", tooltip="G.254 (VII.def.4): Butparts when it does notmeasure it.", fillcolor="#224422", URL="../G.254/index.html", target="_top"];
+     "G.256" [label="G.256", tooltip="G.256 (VII.def.5): The greaternumber is amultiple of the less when it ismeasured by the less.", fillcolor="#224422", URL="../G.256/index.html", target="_top"];
+     "G.263" [label="G.263", tooltip="G.263 (VII.def.20): Numbers areproportional when the first is thesame multiple, or thesame part, or thesame parts, of the second that the third is of the fourth.", fillcolor="#224422", URL="../G.263/index.html", target="_top"];
+     "G.372" [label="G.372", tooltip="G.372 (X.def.1): Those magnitudes are said to becommensurable which aremeasured by the same measure, and thoseincommensurable which cannot have any common measure.", fillcolor="#224422", URL="../G.372/index.html", target="_top"];
+     "G.376" [label="G.376", tooltip="G.376 (X.5): Commensurable magnitudes have to one another the ratio which a number has to a number.", fillcolor="#222244", URL="../G.376/index.html", target="_top"];
+     "G.377" [label="G.377", tooltip="G.377 (X.6): If two magnitudes have to one another the ratio which a number has to a number, the magnitudes is commensurable.", fillcolor="#222244", URL="../G.377/index.html", target="_top"];
+     "G.378" [label="G.378", tooltip="G.378 (X.7): Incommensurable magnitudes have not to one another the ratio which a number has to a number.", fillcolor="#222244", URL="../G.378/index.html", target="_top"];
+     "G.379" [label="G.379", tooltip="G.379 (X.8): If two magnitudes have not to one another the ratio which a number has to a number, the magnitudes is incommensurable.", fillcolor="#222244", URL="../G.379/index.html", target="_top"];
+     "G.382" [label="G.382", tooltip="G.382 (X.11): If four magnitudes be proportional, and the first be commensurable with the second, the third is commensurable with the fourth; and, if the first be incommensurable with the second...", fillcolor="#222244", URL="../G.382/index.html", target="_top"];
+     "G.391" [label="G.391", tooltip="G.391 (X.def.3): With these hypotheses, it is proved that there existsegments infinite in multitude which arecommensurable and incommensurable respectively, some in length only, and others in squar...", fillcolor="#224422", URL="../G.391/index.html", target="_top"];
+     "G.392" [label="G.392", tooltip="G.392 (X.def.4): And let thesquare on the assignedsegment be calledrational and those areas which arecommensurable with itrational, but those which are incommensurable with itirrational, and the se...", fillcolor="#224422", URL="../G.392/index.html", target="_top"];
+     "G.394" [label="G.394", tooltip="G.394 (X.20): If a rational area be applied to a rational segment, it produces as breadth a segment rational and commensurable in length with the segment to which it is applied.", fillcolor="#222244", URL="../G.394/index.html", target="_top"];
+     "G.501" [label="G.501", tooltip="G.501 (X.115): From a medial segment there arise irrational segments infinite in number, and none of them is the same as any of the preceding.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.2" -> "G.1";
+     "G.3" -> "G.1";
+     "G.4" -> "G.1";
+     "G.10" -> "G.1";
+     "G.13" -> "G.1";
+     "G.14" -> "G.1";
+     "G.20" -> "G.1";
+     "G.27" -> "G.1";
+     "G.33" -> "G.1";
+     "G.38" -> "G.1";
      "G.48" -> "G.1";
-     "G.49" -> "G.1";
-     "G.52" -> "G.1";
-     "G.57" -> "G.1";
      "G.58" -> "G.1";
-     "G.5" -> "G.2";
-     "G.9" -> "G.2";
-     "G.80" -> "G.2";
-     "G.5" -> "G.3";
+     "G.211" -> "G.1";
+     "G.3" -> "G.2";
+     "G.4" -> "G.2";
+     "G.6" -> "G.2";
+     "G.22" -> "G.2";
+     "G.29" -> "G.2";
+     "G.211" -> "G.2";
+     "G.4" -> "G.3";
      "G.8" -> "G.3";
-     "G.12" -> "G.3";
-     "G.14" -> "G.3";
+     "G.20" -> "G.3";
      "G.27" -> "G.3";
-     "G.5" -> "G.4";
-     "G.8" -> "G.4";
-     "G.9" -> "G.4";
-     "G.8" -> "G.5";
-     "G.17" -> "G.5";
-     "G.19" -> "G.5";
-     "G.8" -> "G.6";
-     "G.24" -> "G.6";
-     "G.25" -> "G.6";
-     "G.48" -> "G.6";
-     "G.56" -> "G.6";
-     "G.8" -> "G.7";
-     "G.12" -> "G.7";
-     "G.27" -> "G.7";
-     "G.28" -> "G.7";
+     "G.60" -> "G.3";
+     "G.7" -> "G.4";
+     "G.10" -> "G.4";
+     "G.11" -> "G.4";
+     "G.13" -> "G.4";
+     "G.17" -> "G.4";
+     "G.18" -> "G.4";
+     "G.20" -> "G.4";
+     "G.21" -> "G.4";
+     "G.22" -> "G.4";
+     "G.24" -> "G.4";
+     "G.25" -> "G.4";
+     "G.27" -> "G.4";
+     "G.28" -> "G.4";
+     "G.31" -> "G.4";
+     "G.32" -> "G.4";
+     "G.33" -> "G.4";
+     "G.36" -> "G.4";
+     "G.38" -> "G.4";
+     "G.39" -> "G.4";
+     "G.47" -> "G.4";
+     "G.48" -> "G.4";
+     "G.52" -> "G.4";
+     "G.53" -> "G.4";
+     "G.55" -> "G.4";
+     "G.56" -> "G.4";
+     "G.58" -> "G.4";
+     "G.60" -> "G.4";
+     "G.61" -> "G.4";
+     "G.81" -> "G.4";
+     "G.211" -> "G.4";
+     "G.221" -> "G.4";
+     "G.391" -> "G.4";
+     "G.392" -> "G.4";
+     "G.394" -> "G.4";
+     "G.501" -> "G.4";
+     "G.6" -> "G.5";
+     "G.7" -> "G.5";
+     "G.10" -> "G.6";
+     "G.10" -> "G.7";
+     "G.22" -> "G.7";
+     "G.52" -> "G.7";
      "G.9" -> "G.8";
-     "G.12" -> "G.9";
-     "G.16" -> "G.9";
-     "G.19" -> "G.9";
-     "G.27" -> "G.9";
-     "G.29" -> "G.9";
-     "G.33" -> "G.9";
-     "G.174" -> "G.9";
-     "G.11" -> "G.10";
+     "G.10" -> "G.9";
+     "G.24" -> "G.9";
+     "G.187" -> "G.9";
+     "G.188" -> "G.9";
+     "G.189" -> "G.9";
+     "G.209" -> "G.9";
+     "G.14" -> "G.10";
+     "G.15" -> "G.10";
+     "G.17" -> "G.10";
+     "G.21" -> "G.10";
+     "G.61" -> "G.10";
      "G.12" -> "G.11";
-     "G.17" -> "G.11";
-     "G.27" -> "G.11";
-     "G.37" -> "G.11";
-     "G.46" -> "G.11";
+     "G.24" -> "G.11";
+     "G.28" -> "G.11";
+     "G.41" -> "G.11";
+     "G.43" -> "G.11";
+     "G.44" -> "G.11";
+     "G.45" -> "G.11";
      "G.47" -> "G.11";
-     "G.48" -> "G.11";
-     "G.105" -> "G.11";
-     "G.124" -> "G.11";
-     "G.168" -> "G.11";
-     "G.447" -> "G.11";
-     "G.449" -> "G.11";
-     "G.469" -> "G.11";
-     "G.476" -> "G.11";
-     "G.489" -> "G.11";
-     "G.14" -> "G.12";
-     "G.30" -> "G.12";
-     "G.31" -> "G.12";
-     "G.94" -> "G.12";
-     "G.98" -> "G.12";
-     "G.110" -> "G.12";
+     "G.51" -> "G.11";
+     "G.63" -> "G.11";
+     "G.66" -> "G.11";
+     "G.67" -> "G.11";
+     "G.68" -> "G.11";
+     "G.70" -> "G.11";
+     "G.210" -> "G.11";
+     "G.211" -> "G.11";
+     "G.226" -> "G.11";
+     "G.392" -> "G.11";
+     "G.17" -> "G.12";
+     "G.25" -> "G.12";
+     "G.63" -> "G.12";
+     "G.17" -> "G.13";
+     "G.20" -> "G.13";
+     "G.25" -> "G.13";
+     "G.27" -> "G.13";
+     "G.41" -> "G.13";
      "G.15" -> "G.14";
-     "G.16" -> "G.15";
-     "G.19" -> "G.15";
-     "G.34" -> "G.15";
-     "G.76" -> "G.15";
-     "G.447" -> "G.15";
-     "G.449" -> "G.15";
-     "G.453" -> "G.15";
-     "G.476" -> "G.15";
+     "G.61" -> "G.14";
+     "G.17" -> "G.15";
+     "G.20" -> "G.15";
+     "G.21" -> "G.15";
      "G.17" -> "G.16";
-     "G.27" -> "G.17";
-     "G.19" -> "G.18";
-     "G.22" -> "G.18";
-     "G.76" -> "G.18";
-     "G.110" -> "G.18";
-     "G.22" -> "G.19";
-     "G.22" -> "G.21";
-     "G.42" -> "G.21";
+     "G.20" -> "G.16";
+     "G.21" -> "G.16";
+     "G.36" -> "G.16";
+     "G.38" -> "G.16";
+     "G.39" -> "G.16";
+     "G.56" -> "G.16";
+     "G.64" -> "G.16";
+     "G.65" -> "G.16";
+     "G.68" -> "G.16";
+     "G.20" -> "G.17";
+     "G.31" -> "G.17";
+     "G.33" -> "G.17";
+     "G.20" -> "G.18";
+     "G.25" -> "G.18";
+     "G.41" -> "G.18";
+     "G.20" -> "G.19";
+     "G.38" -> "G.19";
+     "G.39" -> "G.19";
+     "G.64" -> "G.19";
+     "G.21" -> "G.20";
+     "G.25" -> "G.21";
+     "G.30" -> "G.21";
+     "G.33" -> "G.21";
+     "G.41" -> "G.21";
+     "G.43" -> "G.21";
      "G.47" -> "G.21";
-     "G.48" -> "G.21";
-     "G.56" -> "G.21";
-     "G.58" -> "G.21";
+     "G.221" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
      "G.28" -> "G.22";
-     "G.40" -> "G.22";
-     "G.42" -> "G.22";
-     "G.45" -> "G.22";
+     "G.29" -> "G.22";
+     "G.32" -> "G.22";
+     "G.36" -> "G.22";
+     "G.38" -> "G.22";
+     "G.39" -> "G.22";
+     "G.41" -> "G.22";
+     "G.43" -> "G.22";
+     "G.44" -> "G.22";
+     "G.51" -> "G.22";
+     "G.53" -> "G.22";
+     "G.55" -> "G.22";
+     "G.56" -> "G.22";
+     "G.62" -> "G.22";
+     "G.63" -> "G.22";
+     "G.217" -> "G.22";
+     "G.226" -> "G.22";
      "G.24" -> "G.23";
-     "G.25" -> "G.23";
-     "G.58" -> "G.24";
-     "G.178" -> "G.24";
+     "G.25" -> "G.24";
+     "G.31" -> "G.24";
+     "G.41" -> "G.24";
+     "G.51" -> "G.24";
+     "G.60" -> "G.24";
+     "G.62" -> "G.24";
+     "G.64" -> "G.24";
      "G.27" -> "G.25";
-     "G.40" -> "G.25";
-     "G.42" -> "G.25";
-     "G.57" -> "G.25";
-     "G.447" -> "G.25";
-     "G.27" -> "G.26";
-     "G.31" -> "G.26";
-     "G.29" -> "G.27";
-     "G.37" -> "G.27";
-     "G.39" -> "G.27";
-     "G.94" -> "G.28";
-     "G.96" -> "G.28";
-     "G.110" -> "G.28";
-     "G.166" -> "G.28";
+     "G.44" -> "G.25";
+     "G.45" -> "G.25";
+     "G.28" -> "G.27";
+     "G.30" -> "G.28";
+     "G.33" -> "G.28";
+     "G.48" -> "G.28";
      "G.30" -> "G.29";
+     "G.48" -> "G.29";
      "G.31" -> "G.30";
-     "G.94" -> "G.30";
-     "G.96" -> "G.30";
-     "G.33" -> "G.31";
-     "G.34" -> "G.33";
-     "G.44" -> "G.34";
-     "G.55" -> "G.34";
-     "G.106" -> "G.34";
-     "G.168" -> "G.34";
-     "G.181" -> "G.34";
-     "G.478" -> "G.34";
-     "G.47" -> "G.37";
-     "G.447" -> "G.37";
-     "G.39" -> "G.38";
-     "G.460" -> "G.38";
-     "G.40" -> "G.39";
-     "G.44" -> "G.39";
-     "G.46" -> "G.39";
-     "G.125" -> "G.40";
-     "G.166" -> "G.40";
-     "G.449" -> "G.40";
-     "G.42" -> "G.41";
-     "G.57" -> "G.41";
-     "G.166" -> "G.41";
-     "G.43" -> "G.42";
-     "G.45" -> "G.42";
-     "G.46" -> "G.42";
-     "G.47" -> "G.42";
-     "G.48" -> "G.42";
-     "G.57" -> "G.42";
-     "G.58" -> "G.42";
-     "G.451" -> "G.42";
-     "G.489" -> "G.42";
-     "G.58" -> "G.43";
-     "G.125" -> "G.43";
+     "G.41" -> "G.31";
+     "G.33" -> "G.32";
+     "G.36" -> "G.32";
+     "G.37" -> "G.32";
+     "G.38" -> "G.32";
+     "G.55" -> "G.32";
+     "G.56" -> "G.32";
+     "G.81" -> "G.32";
+     "G.209" -> "G.32";
+     "G.36" -> "G.33";
+     "G.36" -> "G.35";
+     "G.56" -> "G.35";
+     "G.62" -> "G.35";
+     "G.64" -> "G.35";
+     "G.38" -> "G.36";
+     "G.39" -> "G.36";
+     "G.56" -> "G.36";
+     "G.38" -> "G.37";
+     "G.39" -> "G.37";
+     "G.226" -> "G.38";
+     "G.41" -> "G.39";
+     "G.56" -> "G.39";
+     "G.41" -> "G.40";
+     "G.45" -> "G.40";
+     "G.43" -> "G.41";
+     "G.51" -> "G.41";
+     "G.53" -> "G.41";
+     "G.44" -> "G.43";
      "G.45" -> "G.44";
-     "G.50" -> "G.44";
-     "G.51" -> "G.44";
-     "G.52" -> "G.44";
-     "G.55" -> "G.44";
-     "G.57" -> "G.44";
-     "G.174" -> "G.44";
-     "G.175" -> "G.44";
-     "G.98" -> "G.45";
-     "G.100" -> "G.45";
-     "G.110" -> "G.45";
-     "G.168" -> "G.45";
-     "G.181" -> "G.45";
-     "G.185" -> "G.45";
-     "G.487" -> "G.45";
-     "G.49" -> "G.46";
-     "G.58" -> "G.46";
-     "G.453" -> "G.46";
+     "G.47" -> "G.45";
      "G.48" -> "G.47";
-     "G.49" -> "G.47";
-     "G.50" -> "G.47";
-     "G.51" -> "G.47";
-     "G.54" -> "G.47";
-     "G.56" -> "G.47";
-     "G.58" -> "G.47";
-     "G.125" -> "G.47";
-     "G.166" -> "G.47";
-     "G.469" -> "G.47";
-     "G.475" -> "G.47";
-     "G.476" -> "G.47";
-     "G.486" -> "G.47";
-     "G.489" -> "G.47";
-     "G.493" -> "G.47";
-     "G.49" -> "G.48";
-     "G.50" -> "G.48";
-     "G.478" -> "G.48";
-     "G.51" -> "G.49";
-     "G.476" -> "G.49";
-     "G.52" -> "G.50";
-     "G.54" -> "G.50";
-     "G.55" -> "G.51";
-     "G.163" -> "G.51";
-     "G.164" -> "G.51";
-     "G.164" -> "G.52";
-     "G.55" -> "G.54";
-     "G.163" -> "G.54";
-     "G.57" -> "G.55";
-     "G.58" -> "G.55";
-     "G.57" -> "G.56";
-     "G.58" -> "G.57";
-     "G.479" -> "G.58";
-     "G.85" -> "G.76";
-     "G.85" -> "G.80";
-     "G.103" -> "G.85";
-     "G.125" -> "G.94";
-     "G.125" -> "G.96";
-     "G.99" -> "G.98";
-     "G.106" -> "G.98";
-     "G.100" -> "G.99";
-     "G.110" -> "G.100";
-     "G.105" -> "G.101";
-     "G.105" -> "G.103";
-     "G.106" -> "G.105";
-     "G.487" -> "G.106";
-     "G.124" -> "G.110";
-     "G.487" -> "G.110";
-     "G.124" -> "G.123";
-     "G.496" -> "G.124";
-     "G.496" -> "G.125";
-     "G.145" -> "G.135";
-     "G.149" -> "G.135";
-     "G.154" -> "G.135";
-     "G.137" -> "G.136";
-     "G.154" -> "G.136";
-     "G.139" -> "G.137";
-     "G.139" -> "G.138";
-     "G.142" -> "G.138";
-     "G.149" -> "G.138";
-     "G.150" -> "G.138";
-     "G.153" -> "G.138";
-     "G.159" -> "G.138";
-     "G.163" -> "G.138";
-     "G.470" -> "G.138";
-     "G.500" -> "G.138";
-     "G.159" -> "G.139";
-     "G.147" -> "G.142";
-     "G.152" -> "G.142";
-     "G.164" -> "G.142";
-     "G.178" -> "G.142";
-     "G.478" -> "G.142";
-     "G.145" -> "G.143";
-     "G.313" -> "G.143";
-     "G.145" -> "G.144";
-     "G.150" -> "G.144";
-     "G.146" -> "G.145";
-     "G.147" -> "G.145";
-     "G.151" -> "G.145";
-     "G.157" -> "G.145";
-     "G.164" -> "G.146";
-     "G.168" -> "G.146";
-     "G.178" -> "G.146";
-     "G.187" -> "G.146";
-     "G.478" -> "G.146";
-     "G.151" -> "G.147";
-     "G.157" -> "G.147";
-     "G.153" -> "G.148";
-     "G.155" -> "G.148";
-     "G.163" -> "G.148";
-     "G.164" -> "G.148";
-     "G.168" -> "G.148";
-     "G.178" -> "G.148";
-     "G.184" -> "G.148";
-     "G.187" -> "G.148";
-     "G.478" -> "G.148";
-     "G.488" -> "G.148";
-     "G.491" -> "G.148";
-     "G.497" -> "G.148";
-     "G.152" -> "G.149";
-     "G.185" -> "G.149";
-     "G.490" -> "G.149";
-     "G.151" -> "G.150";
-     "G.157" -> "G.150";
-     "G.153" -> "G.151";
-     "G.155" -> "G.151";
-     "G.153" -> "G.152";
-     "G.163" -> "G.152";
-     "G.166" -> "G.153";
-     "G.184" -> "G.153";
-     "G.488" -> "G.153";
-     "G.490" -> "G.153";
-     "G.491" -> "G.153";
-     "G.497" -> "G.153";
-     "G.155" -> "G.154";
-     "G.492" -> "G.155";
-     "G.159" -> "G.157";
-     "G.166" -> "G.159";
-     "G.185" -> "G.159";
-     "G.187" -> "G.159";
-     "G.492" -> "G.159";
-     "G.164" -> "G.163";
-     "G.178" -> "G.163";
-     "G.184" -> "G.163";
-     "G.185" -> "G.163";
-     "G.166" -> "G.164";
-     "G.174" -> "G.164";
-     "G.175" -> "G.164";
-     "G.489" -> "G.164";
-     "G.168" -> "G.166";
-     "G.181" -> "G.166";
-     "G.185" -> "G.166";
-     "G.487" -> "G.166";
-     "G.185" -> "G.168";
-     "G.487" -> "G.168";
-     "G.181" -> "G.170";
+     "G.58" -> "G.48";
+     "G.62" -> "G.51";
+     "G.53" -> "G.52";
+     "G.56" -> "G.52";
+     "G.58" -> "G.52";
+     "G.60" -> "G.52";
+     "G.64" -> "G.52";
+     "G.65" -> "G.52";
+     "G.66" -> "G.52";
+     "G.67" -> "G.52";
+     "G.68" -> "G.52";
+     "G.70" -> "G.52";
+     "G.211" -> "G.52";
+     "G.58" -> "G.53";
+     "G.60" -> "G.53";
+     "G.56" -> "G.55";
+     "G.60" -> "G.56";
+     "G.62" -> "G.56";
+     "G.64" -> "G.56";
+     "G.66" -> "G.58";
+     "G.67" -> "G.58";
+     "G.68" -> "G.58";
+     "G.221" -> "G.58";
+     "G.65" -> "G.60";
+     "G.62" -> "G.61";
+     "G.64" -> "G.62";
+     "G.65" -> "G.62";
+     "G.66" -> "G.62";
+     "G.67" -> "G.62";
+     "G.70" -> "G.62";
+     "G.64" -> "G.63";
+     "G.392" -> "G.63";
+     "G.65" -> "G.64";
+     "G.66" -> "G.64";
+     "G.67" -> "G.65";
+     "G.68" -> "G.66";
+     "G.70" -> "G.66";
+     "G.210" -> "G.67";
+     "G.211" -> "G.67";
+     "G.211" -> "G.68";
+     "G.210" -> "G.70";
+     "G.501" -> "G.81";
+     "G.170" -> "G.169";
+     "G.253" -> "G.169";
+     "G.254" -> "G.169";
+     "G.256" -> "G.169";
+     "G.372" -> "G.169";
+     "G.171" -> "G.170";
+     "G.172" -> "G.170";
+     "G.175" -> "G.170";
+     "G.176" -> "G.170";
+     "G.177" -> "G.170";
      "G.185" -> "G.170";
-     "G.487" -> "G.170";
-     "G.489" -> "G.170";
-     "G.184" -> "G.174";
-     "G.187" -> "G.174";
-     "G.187" -> "G.175";
-     "G.184" -> "G.178";
-     "G.187" -> "G.181";
-     "G.184" -> "G.182";
-     "G.184" -> "G.183";
-     "G.185" -> "G.184";
-     "G.187" -> "G.184";
-     "G.487" -> "G.185";
-     "G.490" -> "G.187";
-     "G.491" -> "G.313";
-     "G.496" -> "G.313";
-     "G.497" -> "G.313";
-     "G.444" -> "G.443";
-     "G.460" -> "G.443";
-     "G.449" -> "G.444";
-     "G.451" -> "G.444";
-     "G.448" -> "G.445";
-     "G.450" -> "G.445";
-     "G.447" -> "G.446";
-     "G.448" -> "G.446";
-     "G.449" -> "G.446";
-     "G.451" -> "G.446";
-     "G.448" -> "G.447";
-     "G.451" -> "G.447";
-     "G.452" -> "G.447";
-     "G.449" -> "G.448";
-     "G.452" -> "G.449";
-     "G.451" -> "G.450";
-     "G.452" -> "G.451";
-     "G.453" -> "G.452";
-     "G.469" -> "G.453";
-     "G.489" -> "G.453";
-     "G.469" -> "G.460";
-     "G.470" -> "G.469";
-     "G.478" -> "G.469";
-     "G.478" -> "G.470";
-     "G.479" -> "G.470";
-     "G.475" -> "G.474";
-     "G.478" -> "G.474";
-     "G.489" -> "G.474";
-     "G.486" -> "G.475";
-     "G.496" -> "G.475";
-     "G.477" -> "G.476";
-     "G.478" -> "G.476";
-     "G.478" -> "G.477";
-     "G.479" -> "G.478";
-     "G.486" -> "G.478";
-     "G.496" -> "G.479";
-     "G.489" -> "G.486";
-     "G.490" -> "G.486";
-     "G.488" -> "G.487";
-     "G.497" -> "G.487";
-     "G.491" -> "G.488";
-     "G.496" -> "G.488";
-     "G.497" -> "G.488";
-     "G.490" -> "G.489";
-     "G.491" -> "G.489";
-     "G.491" -> "G.490";
-     "G.492" -> "G.491";
-     "G.493" -> "G.491";
-     "G.496" -> "G.492";
-     "G.497" -> "G.492";
-     "G.496" -> "G.493";
-     "G.497" -> "G.496";
-     "G.501" -> "G.496";
-     "G.500" -> "G.497";
-     "G.501" -> "G.497";
-     "G.501" -> "G.500";
+     "G.193" -> "G.170";
+     "G.186" -> "G.171";
+     "G.190" -> "G.171";
+     "G.175" -> "G.172";
+     "G.174" -> "G.173";
+     "G.188" -> "G.173";
+     "G.189" -> "G.173";
+     "G.376" -> "G.173";
+     "G.377" -> "G.173";
+     "G.378" -> "G.173";
+     "G.379" -> "G.173";
+     "G.175" -> "G.174";
+     "G.202" -> "G.174";
+     "G.205" -> "G.174";
+     "G.177" -> "G.175";
+     "G.177" -> "G.176";
+     "G.180" -> "G.176";
+     "G.183" -> "G.176";
+     "G.187" -> "G.176";
+     "G.189" -> "G.176";
+     "G.190" -> "G.176";
+     "G.191" -> "G.176";
+     "G.192" -> "G.176";
+     "G.193" -> "G.176";
+     "G.195" -> "G.176";
+     "G.202" -> "G.176";
+     "G.205" -> "G.176";
+     "G.210" -> "G.176";
+     "G.205" -> "G.177";
+     "G.183" -> "G.180";
+     "G.190" -> "G.180";
+     "G.195" -> "G.180";
+     "G.217" -> "G.180";
+     "G.221" -> "G.180";
+     "G.230" -> "G.180";
+     "G.382" -> "G.180";
+     "G.182" -> "G.181";
+     "G.190" -> "G.181";
+     "G.194" -> "G.181";
+     "G.231" -> "G.181";
+     "G.183" -> "G.182";
+     "G.188" -> "G.183";
+     "G.193" -> "G.183";
+     "G.211" -> "G.183";
+     "G.226" -> "G.183";
+     "G.376" -> "G.183";
+     "G.377" -> "G.183";
+     "G.186" -> "G.184";
+     "G.188" -> "G.184";
+     "G.186" -> "G.185";
+     "G.188" -> "G.185";
+     "G.191" -> "G.185";
+     "G.187" -> "G.186";
+     "G.188" -> "G.186";
+     "G.192" -> "G.186";
+     "G.202" -> "G.186";
+     "G.211" -> "G.187";
+     "G.226" -> "G.187";
+     "G.377" -> "G.187";
+     "G.192" -> "G.188";
+     "G.202" -> "G.188";
+     "G.195" -> "G.189";
+     "G.210" -> "G.189";
+     "G.211" -> "G.189";
+     "G.226" -> "G.189";
+     "G.231" -> "G.189";
+     "G.377" -> "G.189";
+     "G.193" -> "G.190";
+     "G.192" -> "G.191";
+     "G.202" -> "G.191";
+     "G.195" -> "G.192";
+     "G.195" -> "G.193";
+     "G.210" -> "G.193";
+     "G.195" -> "G.194";
+     "G.231" -> "G.195";
+     "G.205" -> "G.202";
+     "G.376" -> "G.205";
+     "G.377" -> "G.205";
+     "G.210" -> "G.209";
+     "G.211" -> "G.210";
+     "G.226" -> "G.210";
+     "G.231" -> "G.210";
+     "G.394" -> "G.210";
+     "G.221" -> "G.211";
+     "G.231" -> "G.217";
+     "G.231" -> "G.221";
+     "G.226" -> "G.224";
+     "G.231" -> "G.226";
+     "G.231" -> "G.230";
+     "G.377" -> "G.231";
+     "G.248" -> "G.247";
+     "G.253" -> "G.248";
+     "G.256" -> "G.248";
+     "G.376" -> "G.248";
+     "G.377" -> "G.248";
+     "G.378" -> "G.248";
+     "G.379" -> "G.248";
+     "G.501" -> "G.248";
+     "G.263" -> "G.253";
+     "G.263" -> "G.254";
+     "G.263" -> "G.256";
+     "G.376" -> "G.263";
+     "G.377" -> "G.263";
+     "G.376" -> "G.372";
+     "G.377" -> "G.372";
+     "G.378" -> "G.372";
+     "G.379" -> "G.372";
+     "G.382" -> "G.372";
+     "G.391" -> "G.372";
+     "G.392" -> "G.372";
+     "G.394" -> "G.372";
+     "G.379" -> "G.376";
+     "G.382" -> "G.376";
+     "G.378" -> "G.377";
+     "G.382" -> "G.377";
+     "G.382" -> "G.378";
+     "G.382" -> "G.379";
+     "G.394" -> "G.382";
+     "G.394" -> "G.391";
+     "G.501" -> "G.391";
+     "G.394" -> "G.392";
+     "G.501" -> "G.392";
+     "G.501" -> "G.394";
    }
 
 .. toctree::

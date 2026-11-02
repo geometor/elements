@@ -1,162 +1,85 @@
 :canonical_id: G.250
-:original_id: VIII.10
+:original_id: VII.1
+:title: G.250 unequal numbers set
 :volume: II
-:book: VIII
+:book: VII
 :type: prop
 
-G.250 — Heath
-=============
+G.250 unequal numbers set — Heath
+=================================
 
-.. rubric:: `VIII.10 <https://geometor.github.io/euclid/heath/volume_II/book_viii/propositions/10/>`_
+.. rubric:: `VII.1 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/01/>`_
 
 .. enunciation::
 
-   If numbers fall between each of two numbers and an unit in continued proportion, however many numbers fall between each of them and an unit in continued proportion, so many also will fall between the numbers themselves in continued proportion.
+   Two unequal :term:`numbers <G.248>` being set out, and the less being continually subtracted in turn from the greater, if the number which is left never :term:`measures <G.253>` the one before it until an :term:`unit <G.247>` is left, the original numbers will be :term:`prime to one another <G.249>`.
 
-For let the numbers :g:`D <g1:D>`, :g:`E <g1:E>` and :g:`F <g1:F>`, :g:`G <g1:G>` respectively fall between the two numbers :g:`A <g1:A>`, :g:`B <g1:B>` and the unit :g:`C <g1:C>` in continued proportion ;
+For, the less of two unequal numbers :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` being continually subtracted from the greater, let the number which is left never measure the one before it until an unit is left;
 
-I say that, as many numbers as have fallen between each of the numbers :g:`A <g1:A>`, :g:`B <g1:B>` and the unit :g:`C <g1:C>` in continued proportion, so many numbers will also fall between :g:`A <g1:A>`, :g:`B <g1:B>` in continued proportion.
-
-For let :g:`D <g1:D>` by multiplying :g:`F <g1:F>` make :g:`H <g1:H>`, and let the numbers :g:`D <g1:D>`, :g:`F <g1:F>` by multiplying :g:`H <g1:H>` make :g:`K <g1:K>`, :g:`L <g1:L>` respectively.
+I say that :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` are prime to one another, that is, that an unit alone measures :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`.
 
 .. picture:: g1.svg
-   :alt: Book VIII, Proposition 10
+   :alt: Proposition 1 Diagram
+
+For, if :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` are not prime to one another, some number will measure them.
+
+Let a number measure them, and let it be :g:`E <g1:E>`; let :g:`/ C D / <g1:/ C D />`, measuring :g:`/ F B / <g1:/ F B />`, leave :g:`/ A F / <g1:/ A F />` less than itself, let :g:`/ A F / <g1:/ A F />`, measuring :g:`/ G D / <g1:/ G D />`, leave :g:`/ C G / <g1:/ C G />` less than itself, and let :g:`/ C G / <g1:/ C G />`, measuring :g:`/ H F / <g1:/ H F />`, leave an unit :g:`/ A H / <g1:/ A H />`.
 
 .. subclause::
 
-   Now, since, as the unit :g:`C <g1:C>` is to the number :g:`D <g1:D>`, so is :g:`D <g1:D>` to :g:`E <g1:E>`,
+   Since, then, :g:`E <g1:E>` measures :g:`/ C D / <g1:/ C D />`, and :g:`/ C D / <g1:/ C D />` measures :g:`/ F B / <g1:/ F B />`,
 
 .. assertion::
 
-   therefore the unit :g:`C <g1:C>` measures the number :g:`D <g1:D>` the same number of times as :g:`D <g1:D>` measures :g:`E <g1:E>`. :just:`[G.210] <G.210>`
+   therefore :g:`E <g1:E>` also measures :g:`/ F B / <g1:/ F B />`.
 
 .. subclause::
 
-   But the unit :g:`C <g1:C>` measures the number :g:`D <g1:D>` according to the units in :g:`D <g1:D>`;
+   But it also measures the whole :g:`/ A B / <g1:/ A B />`;
 
 .. assertion::
 
-   therefore the number :g:`D <g1:D>` also measures :g:`E <g1:E>` according to the units in :g:`D <g1:D>`;
-
-.. assertion::
-
-   therefore :g:`D <g1:D>` by multiplying itself has made :g:`E <g1:E>`.
+   therefore it will also measure the remainder :g:`/ A F / <g1:/ A F />`.
 
 .. subclause::
 
-   Again, since, as :g:`C <g1:C>` is to the number :g:`D <g1:D>`, so is :g:`E <g1:E>` to :g:`A <g1:A>`,
+   But :g:`/ A F / <g1:/ A F />` measures :g:`/ G D / <g1:/ G D />`;
 
 .. assertion::
 
-   therefore the unit :g:`C <g1:C>` measures the number :g:`D <g1:D>` the same number of times as :g:`E <g1:E>` measures :g:`A <g1:A>`.
+   therefore :g:`E <g1:E>` also measures :g:`/ G D / <g1:/ G D />`.
 
 .. subclause::
 
-   But the unit :g:`C <g1:C>` measures the number :g:`D <g1:D>` according to the units in :g:`D <g1:D>`;
+   But it also measures the whole :g:`/ C D / <g1:/ C D />`;
 
 .. assertion::
 
-   therefore :g:`E <g1:E>` also measures :g:`A <g1:A>` according to the units in :g:`D <g1:D>`;
+   therefore it will also measure the remainder :g:`/ C G / <g1:/ C G />`.
+
+.. subclause::
+
+   But :g:`/ C G / <g1:/ C G />` measures :g:`/ H F / <g1:/ H F />`;
 
 .. assertion::
 
-   therefore :g:`D <g1:D>` by multiplying :g:`E <g1:E>` has made :g:`A <g1:A>`.
+   therefore :g:`E <g1:E>` also measures :g:`/ H F / <g1:/ H F />`.
 
 .. subclause::
 
-   For the same reason also
+   But it also measures the whole :g:`/ A F / <g1:/ A F />`;
 
 .. assertion::
 
-   :g:`F <g1:F>` by multiplying itself has made :g:`G <g1:G>`, and by multiplying :g:`G <g1:G>` has made :g:`B <g1:B>`.
-
-.. subclause::
-
-   And, since :g:`D <g1:D>` by multiplying itself has made :g:`E <g1:E>` and by multiplying :g:`F <g1:F>` has made :g:`H <g1:H>`,
-
-.. assertion:: [G.217] <G.217>
-
-   therefore, as :g:`D <g1:D>` is to :g:`F <g1:F>`, so is :g:`E <g1:E>` to :g:`H <g1:H>`.
-
-.. subclause::
-
-   For the same reason also,
-
-.. assertion:: [G.218] <G.218>
-
-   as :g:`D <g1:D>` is to :g:`F <g1:F>`, so is :g:`H <g1:H>` to :g:`G <g1:G>`.
+   therefore it will also measure the remainder, the unit :g:`/ A H / <g1:/ A H />`, though it is a number: which is impossible.
 
 .. assertion::
 
-   Therefore also, as :g:`E <g1:E>` is to :g:`H <g1:H>`, so is :g:`H <g1:H>` to :g:`G <g1:G>`.
-
-.. subclause::
-
-   Again, since :g:`D <g1:D>` by multiplying the numbers :g:`E <g1:E>`, :g:`H <g1:H>` has made :g:`A <g1:A>`, :g:`K <g1:K>` respectively,
-
-.. assertion:: [G.217] <G.217>
-
-   therefore, as :g:`E <g1:E>` is to :g:`H <g1:H>`, so is :g:`A <g1:A>` to :g:`K <g1:K>`.
-
-.. subclause::
-
-   But, as :g:`E <g1:E>` is to :g:`H <g1:H>`, so is :g:`D <g1:D>` to :g:`F <g1:F>`;
-
-.. assertion::
-
-   therefore also, as :g:`D <g1:D>` is to :g:`F <g1:F>`, so is :g:`A <g1:A>` to :g:`K <g1:K>`.
-
-.. subclause::
-
-   Again, since the numbers :g:`D <g1:D>`, :g:`F <g1:F>` by multiplying :g:`H <g1:H>` have made :g:`K <g1:K>`, :g:`L <g1:L>` respectively,
-
-.. assertion:: [G.218] <G.218>
-
-   therefore, as :g:`D <g1:D>` is to :g:`F <g1:F>`, so is :g:`K <g1:K>` to :g:`L <g1:L>`.
-
-.. subclause::
-
-   But, as :g:`D <g1:D>` is to :g:`F <g1:F>`, so is :g:`A <g1:A>` to :g:`K <g1:K>`;
-
-.. assertion::
-
-   therefore also, as :g:`A <g1:A>` is to :g:`K <g1:K>`, so is :g:`K <g1:K>` to :g:`L <g1:L>`.
-
-.. subclause::
-
-   Further, since :g:`F <g1:F>` by multiplying the numbers :g:`H <g1:H>`, :g:`G <g1:G>` has made :g:`L <g1:L>`, :g:`B <g1:B>` respectively,
-
-.. assertion:: [G.217] <G.217>
-
-   therefore, as :g:`H <g1:H>` is to :g:`G <g1:G>`, so is :g:`L <g1:L>` to :g:`B <g1:B>`.
-
-.. subclause::
-
-   But, as :g:`H <g1:H>` is to :g:`G <g1:G>`, so is :g:`D <g1:D>` to :g:`F <g1:F>`;
-
-.. assertion::
-
-   therefore also, as :g:`D <g1:D>` is to :g:`F <g1:F>`, so is :g:`L <g1:L>` to :g:`B <g1:B>`.
-
-.. subclause::
-
-   But it was also proved that, as :g:`D <g1:D>` is to :g:`F <g1:F>`, so is :g:`A <g1:A>` to :g:`K <g1:K>` and :g:`K <g1:K>` to :g:`L <g1:L>`;
-
-.. assertion::
-
-   therefore also, as :g:`A <g1:A>` is to :g:`K <g1:K>`, so is :g:`K <g1:K>` to :g:`L <g1:L>` and :g:`L <g1:L>` to :g:`B <g1:B>`.
-
-.. assertion::
-
-   Therefore :g:`A <g1:A>`, :g:`K <g1:K>`, :g:`L <g1:L>`, :g:`B <g1:B>` are in continued proportion.
-
-.. assertion::
-
-   Therefore, as many numbers as fall between each of the numbers :g:`A <g1:A>`, :g:`B <g1:B>` and the unit :g:`C <g1:C>` in continued proportion, so many also will fall between :g:`A <g1:A>`, :g:`B <g1:B>` in continued proportion.
+   Therefore no number will measure the numbers :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`; therefore :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` are prime to one another. :just:`[G.249] <G.249>`
 
 .. qed::
 
-   :just:`Q. E. D.`
+   Q. E. D.
 
 Dependency Graph
 ----------------
@@ -168,36 +91,21 @@ Dependency Graph
      node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11, color="#d6d3cd", fontcolor="#ffffff"];
      edge [color="#8c857b", fontcolor="#8c857b", arrowsize=0.75];
      rankdir="TB";
-     "G.204" [label="G.204", tooltip="G.204 (VII.5): If a number be a part of a number, and another be the same part of another, the sum is the same part of the sum that the one is of the one.", fillcolor="#222244", URL="../G.204/index.html", target="_top"];
-     "G.205" [label="G.205", tooltip="G.205 (VII.6): If a number be parts of a number, and another be the same parts of another, the sum is the same parts of the sum that the one is of the one.", fillcolor="#222244", URL="../G.205/index.html", target="_top"];
-     "G.208" [label="G.208", tooltip="G.208 (VII.9): If a number be a part of a number, and another be the same part of another, alternately also, whatever part or parts the first is of the third, the same part, or the same parts, wi...", fillcolor="#222244", URL="../G.208/index.html", target="_top"];
-     "G.209" [label="G.209", tooltip="G.209 (VII.10): If a number be parts of a number, and another be the same parts of another, alternately also, whatever parts or part the first is of the third, the same parts or the same part will...", fillcolor="#222244", URL="../G.209/index.html", target="_top"];
-     "G.210" [label="G.210", tooltip="G.210 (VII.def.20): **Numbers** areproportional when the first is the same multiple, or the same part, or the same parts, of the second that the third is of the fourth.", fillcolor="#224422", URL="../G.210/index.html", target="_top"];
-     "G.212" [label="G.212", tooltip="G.212 (VII.12): If there be as many numbers as we please in proportion, then, as one of the antecedents is to one of the consequents, so are all the antecedents to all the consequents.", fillcolor="#222244", URL="../G.212/index.html", target="_top"];
-     "G.213" [label="G.213", tooltip="G.213 (VII.13): If four numbers be proportional, they is proportional alternately.", fillcolor="#222244", URL="../G.213/index.html", target="_top"];
-     "G.215" [label="G.215", tooltip="G.215 (VII.15): If an unit measure any number, and another number measure any other number the same number of times, alternately also, the unit will measure the third number the same number of tim...", fillcolor="#222244", URL="../G.215/index.html", target="_top"];
-     "G.216" [label="G.216", tooltip="G.216 (VII.16): If two numbers by multiplying one another make certain numbers, the numbers so produced are equal.", fillcolor="#222244", URL="../G.216/index.html", target="_top"];
-     "G.217" [label="G.217", tooltip="G.217 (VII.17): If a number by multiplying two numbers make certain numbers, the numbers so produced will have the same ratio as the numbers multiplied.", fillcolor="#222244", URL="../G.217/index.html", target="_top"];
-     "G.218" [label="G.218", tooltip="G.218 (VII.18): If two numbers by multiplying any number make certain numbers, the numbers so produced will have the same ratio as the multipliers.", fillcolor="#222244", URL="../G.218/index.html", target="_top"];
-     "G.250" [label="G.250", tooltip="G.250 (VIII.10): If numbers fall between each of two numbers and an unit in continued proportion, however many numbers fall between each of them and an unit in continued proportion, so many also wi...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
-     "G.205" -> "G.204";
-     "G.208" -> "G.204";
-     "G.209" -> "G.204";
-     "G.212" -> "G.204";
-     "G.208" -> "G.205";
-     "G.209" -> "G.205";
-     "G.212" -> "G.205";
-     "G.209" -> "G.208";
-     "G.213" -> "G.209";
-     "G.212" -> "G.210";
-     "G.213" -> "G.210";
-     "G.217" -> "G.210";
-     "G.250" -> "G.210";
-     "G.215" -> "G.212";
-     "G.217" -> "G.213";
-     "G.216" -> "G.215";
-     "G.218" -> "G.216";
-     "G.218" -> "G.217";
-     "G.250" -> "G.217";
-     "G.250" -> "G.218";
+     "G.169" [label="G.169", tooltip="G.169 (V.def.1): A magnitude is apart of a magnitude, the less of the greater, when it measures the greater.", fillcolor="#224422", URL="../G.169/index.html", target="_top"];
+     "G.247" [label="G.247", tooltip="G.247 (VII.def.1): Anunit is that by virtue of which each of the things that exist is called one.", fillcolor="#224422", URL="../G.247/index.html", target="_top"];
+     "G.248" [label="G.248", tooltip="G.248 (VII.def.2): Anumber is a multitude composed ofunits.", fillcolor="#224422", URL="../G.248/index.html", target="_top"];
+     "G.249" [label="G.249", tooltip="G.249 (VII.def.12): Numbers prime to one another are those which aremeasured by anunit alone as a common measure.", fillcolor="#224422", URL="../G.249/index.html", target="_top"];
+     "G.250" [label="G.250", tooltip="G.250 (VII.1): Two unequal numbers being set out, and the less being continually subtracted in turn from the greater, if the number which is left never measures the one before it until an unit is...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.249" -> "G.169";
+     "G.250" -> "G.169";
+     "G.248" -> "G.247";
+     "G.249" -> "G.247";
+     "G.250" -> "G.247";
+     "G.250" -> "G.248";
+     "G.250" -> "G.249";
    }
+
+Required for
+------------
+
+:ref:`G.251 <G.251>`, :ref:`G.252 <G.252>`, :ref:`G.255 <G.255>`, :ref:`G.274 <G.274>`, :ref:`G.275 <G.275>`, :ref:`G.278 <G.278>`, :ref:`G.279 <G.279>`, :ref:`G.280 <G.280>`, :ref:`G.281 <G.281>`, :ref:`G.285 <G.285>`, :ref:`G.289 <G.289>`, :ref:`G.290 <G.290>`, :ref:`G.292 <G.292>`, :ref:`G.295 <G.295>`, :ref:`G.296 <G.296>`, :ref:`G.297 <G.297>`, :ref:`G.298 <G.298>`, :ref:`G.299 <G.299>`, :ref:`G.301 <G.301>`, :ref:`G.303 <G.303>`, :ref:`G.304 <G.304>`, :ref:`G.305 <G.305>`, :ref:`G.306 <G.306>`, :ref:`G.314 <G.314>`, :ref:`G.315 <G.315>`, :ref:`G.316 <G.316>`, :ref:`G.317 <G.317>`, :ref:`G.322 <G.322>`, :ref:`G.323 <G.323>`, :ref:`G.324 <G.324>`, :ref:`G.325 <G.325>`, :ref:`G.326 <G.326>`, :ref:`G.327 <G.327>`, :ref:`G.328 <G.328>`, :ref:`G.329 <G.329>`, :ref:`G.330 <G.330>`, :ref:`G.331 <G.331>`, :ref:`G.332 <G.332>`, :ref:`G.333 <G.333>`, :ref:`G.334 <G.334>`, :ref:`G.335 <G.335>`, :ref:`G.337 <G.337>`, :ref:`G.338 <G.338>`, :ref:`G.339 <G.339>`, :ref:`G.342 <G.342>`, :ref:`G.343 <G.343>`, :ref:`G.344 <G.344>`, :ref:`G.345 <G.345>`, :ref:`G.346 <G.346>`, :ref:`G.347 <G.347>`, :ref:`G.348 <G.348>`, :ref:`G.349 <G.349>`, :ref:`G.364 <G.364>`, :ref:`G.370 <G.370>`, :ref:`G.381 <G.381>`, :ref:`G.383 <G.383>`, :ref:`G.384 <G.384>`, :ref:`G.385 <G.385>`, :ref:`G.389 <G.389>`, :ref:`G.390 <G.390>`, :ref:`G.396 <G.396>`, :ref:`G.397 <G.397>`, :ref:`G.398 <G.398>`, :ref:`G.399 <G.399>`, :ref:`G.400 <G.400>`, :ref:`G.401 <G.401>`, :ref:`G.402 <G.402>`, :ref:`G.403 <G.403>`, :ref:`G.404 <G.404>`, :ref:`G.405 <G.405>`, :ref:`G.406 <G.406>`, :ref:`G.407 <G.407>`, :ref:`G.408 <G.408>`, :ref:`G.409 <G.409>`, :ref:`G.410 <G.410>`, :ref:`G.411 <G.411>`, :ref:`G.412 <G.412>`, :ref:`G.413 <G.413>`, :ref:`G.414 <G.414>`, :ref:`G.415 <G.415>`, :ref:`G.416 <G.416>`, :ref:`G.417 <G.417>`, :ref:`G.418 <G.418>`, :ref:`G.419 <G.419>`, :ref:`G.420 <G.420>`, :ref:`G.421 <G.421>`, :ref:`G.423 <G.423>`, :ref:`G.425 <G.425>`, :ref:`G.427 <G.427>`, :ref:`G.429 <G.429>`, :ref:`G.431 <G.431>`, :ref:`G.433 <G.433>`, :ref:`G.434 <G.434>`, :ref:`G.435 <G.435>`, :ref:`G.436 <G.436>`, :ref:`G.437 <G.437>`, :ref:`G.438 <G.438>`, :ref:`G.439 <G.439>`, :ref:`G.440 <G.440>`, :ref:`G.441 <G.441>`, :ref:`G.442 <G.442>`, :ref:`G.443 <G.443>`, :ref:`G.444 <G.444>`, :ref:`G.445 <G.445>`, :ref:`G.446 <G.446>`, :ref:`G.447 <G.447>`, :ref:`G.448 <G.448>`, :ref:`G.449 <G.449>`, :ref:`G.450 <G.450>`, :ref:`G.451 <G.451>`, :ref:`G.452 <G.452>`, :ref:`G.453 <G.453>`, :ref:`G.457 <G.457>`, :ref:`G.458 <G.458>`, :ref:`G.459 <G.459>`, :ref:`G.460 <G.460>`, :ref:`G.461 <G.461>`, :ref:`G.462 <G.462>`, :ref:`G.463 <G.463>`, :ref:`G.464 <G.464>`, :ref:`G.465 <G.465>`, :ref:`G.466 <G.466>`, :ref:`G.467 <G.467>`, :ref:`G.468 <G.468>`, :ref:`G.470 <G.470>`, :ref:`G.472 <G.472>`, :ref:`G.474 <G.474>`, :ref:`G.476 <G.476>`, :ref:`G.477 <G.477>`, :ref:`G.478 <G.478>`, :ref:`G.479 <G.479>`, :ref:`G.480 <G.480>`, :ref:`G.481 <G.481>`, :ref:`G.482 <G.482>`, :ref:`G.483 <G.483>`, :ref:`G.484 <G.484>`, :ref:`G.485 <G.485>`, :ref:`G.486 <G.486>`, :ref:`G.487 <G.487>`, :ref:`G.488 <G.488>`, :ref:`G.489 <G.489>`, :ref:`G.490 <G.490>`, :ref:`G.491 <G.491>`, :ref:`G.492 <G.492>`, :ref:`G.493 <G.493>`, :ref:`G.494 <G.494>`, :ref:`G.495 <G.495>`, :ref:`G.496 <G.496>`, :ref:`G.497 <G.497>`, :ref:`G.498 <G.498>`, :ref:`G.499 <G.499>`, :ref:`G.500 <G.500>`, :ref:`G.584 <G.584>`, :ref:`G.589 <G.589>`, :ref:`G.597 <G.597>`, :ref:`G.600 <G.600>`, :ref:`G.601 <G.601>`

@@ -1,17 +1,18 @@
 :canonical_id: G.271
-:original_id: IX.2
+:original_id: VII.17
+:title: G.271 number multiplying numbers
 :volume: II
-:book: IX
+:book: VII
 :type: prop
 
-G.271 — Code
-============
+G.271 number multiplying numbers — Code
+=======================================
 
-.. rubric:: `IX.2 <https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/02/>`_
+.. rubric:: `VII.17 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/17/>`_
 
 .. enunciation::
 
-   If two numbers by multiplying one another make a square number, they are similar plane numbers.
+   If a :term:`number <G.248>` by :term:`multiplying <G.269>` two numbers make certain numbers, the numbers so produced will have the :term:`same ratio <G.176>` as the numbers multiplied.
 
 .. picture:: g1.svg
 

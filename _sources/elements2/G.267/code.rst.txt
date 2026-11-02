@@ -1,17 +1,18 @@
 :canonical_id: G.267
-:original_id: VIII.25
+:original_id: VII.14
+:title: G.267 there many numbers
 :volume: II
-:book: VIII
+:book: VII
 :type: prop
 
-G.267 — Code
-============
+G.267 there many numbers — Code
+===============================
 
-.. rubric:: `VIII.25 <https://geometor.github.io/euclid/heath/volume_II/book_viii/propositions/25/>`_
+.. rubric:: `VII.14 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/14/>`_
 
 .. enunciation::
 
-   If two numbers have to one another the ratio which a cube number has to a cube number, and the first be cube, the second is cube.
+   If there be as many :term:`numbers <G.248>` as we please, and others equal to them in multitude, which taken two and two are :term:`in the same ratio <G.176>`, they is in the same ratio :term:`ex aequali <G.174>`.
 
 .. picture:: g1.svg
 

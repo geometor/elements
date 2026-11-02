@@ -1,17 +1,18 @@
 :canonical_id: G.71
-:original_id: II.10
+:original_id: I.42
+:title: G.71 construct a parallelogram equal to a triangle
 :volume: I
-:book: II
+:book: I
 :type: prop
 
-G.71 — Code
-===========
+G.71 construct a parallelogram equal to a triangle — Code
+=========================================================
 
-.. rubric:: `II.10 <https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/10/>`_
+.. rubric:: `I.42 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/42/>`_
 
 .. enunciation::
 
-   If a straight line be bisected, and a straight line be added to it in a straight line, the square on the whole with the added straight line and the square on the added straight line both together are double of the square on the half and of the square described on the straight line made up of the half and the added straight line as on one straight line.
+   Construct, in a given :term:`angle <G.22>`, a parallelogram equal in area to a given :term:`triangle <G.11>`.
 
 .. picture:: g1.svg
 
