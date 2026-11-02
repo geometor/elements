@@ -1,17 +1,18 @@
 :canonical_id: G.448
-:original_id: XI.5
+:original_id: X.68
+:title: G.448 segment commensurable major
 :volume: III
-:book: XI
+:book: X
 :type: prop
 
-G.448 — Code
-============
+G.448 segment commensurable major — Code
+========================================
 
-.. rubric:: `XI.5 <https://geometor.github.io/euclid/heath/volume_III/book_xi/propositions/05/>`_
+.. rubric:: `X.68 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/068/>`_
 
 .. enunciation::
 
-   If a straight line be set up at right angles to three straight lines which meet one another, at their common point of section, the three straight lines are in one plane.
+   A :term:`segment <G.4>` :term:`commensurable <G.372>` with a major segment is itself also major.
 
 .. picture:: g1.svg
 

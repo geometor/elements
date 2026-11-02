@@ -1,4 +1,4 @@
-"""Programmatic construction for Book X, Proposition 40 (X.40)."""
+"""Programmatic construction for Book IX, Proposition 24 (IX.24)."""
 
 from __future__ import annotations
 
@@ -6,21 +6,24 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0093.g1 using geometor.model."""
-    model = Model("X.40")
+    """Construct the figure 0420.g3 using geometor.model."""
+    model = Model("IX.24")
 
-    # Straight line AC divided into straight lines AB, BC incommensurable in square
-    A = model.set_point(16.0, -25.5, classes=["given"], ID="A")
-    B = model.set_point(108.0, -25.5, classes=["given"], ID="B")
-    C = model.set_point(161.0, -25.5, classes=["given"], ID="C")
+    # Subdivided horizontal number segment AB (divided at C)
+    A = model.set_point(14.0, -30.0, classes=["given"], ID="A")
+    C = model.set_point(118.0, -30.0, ID="C")
+    B = model.set_point(163.0, -30.0, classes=["given"], ID="B")
 
-    model.construct_line(A, C)
+    # Base line
+    model.construct_line(A, B)
 
-    model.set_segment(A, C)
+    # Whole and subdivided segments on AB
     model.set_segment(A, B)
-    model.set_segment(B, C)
+    model.set_segment(A, C)
+    model.set_segment(C, B)
 
-    model.set_section([A, B, C])
+    # Collinear section
+    model.set_section([A, C, B])
 
     return model
 

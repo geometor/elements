@@ -1,4 +1,9 @@
-"""Programmatic construction for Book III, Proposition 7 (III.7)."""
+"""Programmatic construction for Book II, Proposition 1 (II.1).
+
+If there be two straight lines, and one of them be cut into any number of
+segments whatever, the rectangle contained by the two straight lines is equal to
+the rectangles contained by the uncut straight line and each of the segments.
+"""
 
 from __future__ import annotations
 
@@ -6,63 +11,58 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0020.g1 using geometor.model."""
-    model = Model("III.7")
+    """Construct the figure for Book II, Proposition 1 using geometor.model."""
+    model = Model("II.1")
 
-    # Points (y-inverted for standard mathematical coordinates)
-    E = model.set_point(106, -98, ID="E")
-    A = model.set_point(25, -98, classes=["given"], ID="A")
-    D = model.set_point(187, -98, classes=["given"], ID="D")
-    F = model.set_point(156, -98, classes=["given"], ID="F")
-    B = model.set_point(33.94, -61, classes=["given"], ID="B")
-    C = model.set_point(65.24, -28, classes=["given"], ID="C")
-    G = model.set_point(175.26, -56, classes=["given"], ID="G")
-    H = model.set_point(175.26, -140, ID="H")
-    K = model.set_point(160.42, -158, ID="K")
+    # Standalone given straight line A
+    A1 = model.set_point(105.0, -20.0, classes=["given"], ID="A1")
+    A2 = model.set_point(194.0, -20.0, classes=["given"], ID="A2")
+    model.set_segment(A1, A2)
 
-    # Construction circle ABCD
-    model.construct_circle(E, A)
+    # Straight line BC cut at random at D, E
+    B = model.set_point(27.5, -38.5, classes=["given"], ID="B")
+    D = model.set_point(136.5, -38.5, classes=["given"], ID="D")
+    E = model.set_point(195.5, -38.5, classes=["given"], ID="E")
+    C = model.set_point(242.5, -38.5, classes=["given"], ID="C")
 
-    # Segments
-    model.set_segment(A, D)
-    model.set_segment(F, A)
-    model.set_segment(F, D)
-    model.set_segment(A, E)
-    model.set_segment(E, D)
-    model.set_segment(E, F)
-    model.set_segment(F, B)
-    model.set_segment(F, C)
-    model.set_segment(F, G)
-    model.set_segment(F, H)
-    model.set_segment(F, K)
-    model.set_segment(E, B)
+    model.construct_line(B, C)
+    model.set_segment(B, C)
+    model.set_segment(B, D)
+    model.set_segment(D, E)
     model.set_segment(E, C)
-    model.set_segment(E, G)
-    model.set_segment(E, H)
-    model.set_segment(E, K)
+    model.set_segment(B, E)
+    model.set_segment(D, C)
 
-    # Sections
-    model.set_section([A, E, D])
-    model.set_section([A, F, D])
-    model.set_section([E, F, D])
-    model.set_section([B, E, F])
-    model.set_section([C, E, F])
-    model.set_section([G, F, E])
-    model.set_section([H, E, F])
+    # BF drawn at right angles to BC, with BG = A
+    G = model.set_point(27.5, -127.5, ID="G")
+    F = model.set_point(27.5, -172.0, ID="F")
+    model.construct_line(B, F)
+    model.set_segment(B, F)
+    model.set_segment(B, G)
+    model.set_segment(G, F)
 
-    # Polygons
-    model.set_polygon([B, E, F])
-    model.set_polygon([C, E, F])
-    model.set_polygon([G, E, F])
-    model.set_polygon([H, E, F])
+    # Parallel GH to BC through G, and parallels DK, EL, CH to BG through D, E, C
+    K = model.set_point(136.5, -127.5, ID="K")
+    L = model.set_point(195.5, -127.5, ID="L")
+    H = model.set_point(242.5, -127.5, ID="H")
 
-    # Angles (wedges)
-    model.set_wedge(E, B, B, F)
-    model.set_wedge(E, C, C, F)
-    model.set_wedge(E, G, G, F)
-    model.set_wedge(E, F, F, H)
-    model.set_wedge(F, B, B, D)
-    model.set_wedge(F, C, C, D)
+    model.construct_line(G, H)
+    model.set_segment(G, H)
+    model.set_segment(G, K)
+    model.set_segment(K, L)
+    model.set_segment(L, H)
+    model.set_segment(G, L)
+    model.set_segment(K, H)
+
+    model.set_segment(D, K)
+    model.set_segment(E, L)
+    model.set_segment(C, H)
+
+    # Rectangles BH (BCHG), BK (BDKG), DL (DELK), EH (ECHL)
+    model.set_polygon([B, C, H, G])
+    model.set_polygon([B, D, K, G])
+    model.set_polygon([D, E, L, K])
+    model.set_polygon([E, C, H, L])
 
     return model
 

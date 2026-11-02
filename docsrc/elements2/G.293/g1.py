@@ -1,4 +1,4 @@
-"""Programmatic construction for Book IX, Proposition 21 (IX.21)."""
+"""Programmatic construction for Book VII, Proposition 37 (VII.37)."""
 
 from __future__ import annotations
 
@@ -6,36 +6,27 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0419.g1 using geometor.model."""
-    model = Model("IX.21")
+    """Construct the figure 0347.g1 using geometor.model."""
+    model = Model("VII.37")
 
-    # Subdivided horizontal number segment AE (divided at B, C, D)
-    A = model.set_point(13.0, -27.5, classes=["given"], ID="A")
-    B = model.set_point(58.0, -27.5, ID="B")
-    C = model.set_point(135.0, -27.5, ID="C")
-    D = model.set_point(262.0, -27.5, ID="D")
-    E = model.set_point(294.0, -27.5, classes=["given"], ID="E")
+    # Number A, measuring number B, unit-count C, and unit D
+    A_l = model.set_point(23.0, -14.0, classes=["given"], ID="A")
+    A_r = model.set_point(153.0, -14.0, ID="A_r")
 
-    # Base line
-    model.construct_line(A, E)
+    B_l = model.set_point(22.0, -39.0, classes=["given"], ID="B")
+    B_r = model.set_point(68.0, -39.0, ID="B_r")
 
-    # Whole and subdivided segments on AE
-    model.set_segment(A, E)
-    model.set_segment(A, B)
-    model.set_segment(B, C)
-    model.set_segment(C, D)
-    model.set_segment(D, E)
-    model.set_segment(A, C)
-    model.set_segment(A, D)
-    model.set_segment(B, D)
-    model.set_segment(B, E)
-    model.set_segment(C, E)
+    C_l = model.set_point(23.0, -66.0, classes=["given"], ID="C")
+    C_r = model.set_point(90.0, -66.0, ID="C_r")
 
-    # Collinear sections
-    model.set_section([A, B, C])
-    model.set_section([B, C, D])
-    model.set_section([C, D, E])
-    model.set_section([A, C, E])
+    D_l = model.set_point(24.0, -88.0, classes=["given"], ID="D")
+    D_r = model.set_point(48.0, -88.0, ID="D_r")
+
+    # Segments
+    model.set_segment(A_l, A_r)
+    model.set_segment(B_l, B_r)
+    model.set_segment(C_l, C_r)
+    model.set_segment(D_l, D_r)
 
     return model
 

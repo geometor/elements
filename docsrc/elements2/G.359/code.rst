@@ -1,17 +1,18 @@
 :canonical_id: G.359
-:original_id: X.44
-:volume: III
-:book: X
+:original_id: IX.28
+:title: G.359 odd number multiplying
+:volume: II
+:book: IX
 :type: prop
 
-G.359 — Code
-============
+G.359 odd number multiplying — Code
+===================================
 
-.. rubric:: `X.44 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/044/>`_
+.. rubric:: `IX.28 <https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/28/>`_
 
 .. enunciation::
 
-   A second bimedial straight line is divided at one point only.
+   If an :term:`odd number <G.352>` by :term:`multiplying <G.269>` an :term:`even number <G.302>` make some :term:`number <G.248>`, the product is even.
 
 .. picture:: g1.svg
 

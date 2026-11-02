@@ -1,19 +1,29 @@
 :canonical_id: G.229
-:original_id: VII.28
+:original_id: VI.18
+:title: G.229 describe on a given segment a rectilinear figure
 :volume: II
-:book: VII
+:book: VI
 :type: prop
 
-G.229 — Code
-============
+G.229 describe on a given segment a rectilinear figure — Code
+=============================================================
 
-.. rubric:: `VII.28 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/28/>`_
+.. rubric:: `VI.18 <https://geometor.github.io/euclid/heath/volume_II/book_vi/propositions/18/>`_
 
 .. enunciation::
 
-   If two numbers be prime to one another, the sum is prime to each of them; and, if the sum of two numbers be prime to any one of them, the original numbers is prime to one another.
+   Describe on a given :term:`segment <G.4>` a rectilinear :term:`figure <G.9>` similar and similarly situated to a given rectilinear figure.
+
+.. rubric:: ``g1.py``
 
 .. picture:: g1.svg
 
 .. literalinclude:: g1.py
+   :language: python
+
+.. rubric:: ``g2.py``
+
+.. picture:: g2.svg
+
+.. literalinclude:: g2.py
    :language: python

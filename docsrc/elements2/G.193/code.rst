@@ -1,17 +1,18 @@
 :canonical_id: G.193
-:original_id: VI.28
+:original_id: V.15
+:title: G.193 parts ratio multiples
 :volume: II
-:book: VI
+:book: V
 :type: prop
 
-G.193 — Code
-============
+G.193 parts ratio multiples — Code
+==================================
 
-.. rubric:: `VI.28 <https://geometor.github.io/euclid/heath/volume_II/book_vi/propositions/28/>`_
+.. rubric:: `V.15 <https://geometor.github.io/euclid/heath/volume_II/book_v/propositions/15/>`_
 
 .. enunciation::
 
-   To a given straight line to apply a parallelogram equal to a given polygon and deficient by a parallelogrammic figure similar to a given one: thus the given polygon must not be greater than the parallelogram described on the half of the straight line and similar to the defect.
+   Parts have the :term:`same ratio <G.176>` as the same :term:`multiples <G.170>` of them taken in corresponding order.
 
 .. picture:: g1.svg
 

@@ -1,17 +1,18 @@
 :canonical_id: G.121
-:original_id: IV.4
+:original_id: III.19
+:title: G.121 segment touch circle
 :volume: II
-:book: IV
+:book: III
 :type: prop
 
-G.121 — Code
-============
+G.121 segment touch circle — Code
+=================================
 
-.. rubric:: `IV.4 <https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/04/>`_
+.. rubric:: `III.19 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/19/>`_
 
 .. enunciation::
 
-   Inscribe in a given triangle a circle.
+   If a :term:`segment <G.4>` :term:`touch a circle <G.111>`, and from the :term:`point <G.1>` of contact a segment be drawn :term:`at right angles <G.32>` to the tangent, the :term:`center <G.14>` of the :term:`circle <G.10>` is on the segment so drawn.
 
 .. picture:: g1.svg
 

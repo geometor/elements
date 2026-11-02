@@ -1,17 +1,18 @@
 :canonical_id: G.284
-:original_id: IX.13
+:original_id: VII.29
+:title: G.284 prime number prime
 :volume: II
-:book: IX
+:book: VII
 :type: prop
 
-G.284 — Code
-============
+G.284 prime number prime — Code
+===============================
 
-.. rubric:: `IX.13 <https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/13/>`_
+.. rubric:: `VII.29 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/29/>`_
 
 .. enunciation::
 
-   If as many numbers as we please beginning from an unit be in continued proportion, and the number after the unit be prime, the greatest will not be measured by any except those which have a place among the proportional numbers.
+   Any :term:`prime number <G.283>` is :term:`prime to <G.249>` any :term:`number <G.248>` which it does not :term:`measure <G.169>`.
 
 .. picture:: g1.svg
 

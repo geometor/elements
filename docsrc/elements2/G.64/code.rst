@@ -1,17 +1,18 @@
 :canonical_id: G.64
-:original_id: II.3
+:original_id: I.35
+:title: G.64 parallelograms on the same base in the same parallels
 :volume: I
-:book: II
+:book: I
 :type: prop
 
-G.64 — Code
-===========
+G.64 parallelograms on the same base in the same parallels — Code
+=================================================================
 
-.. rubric:: `II.3 <https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/03/>`_
+.. rubric:: `I.35 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/35/>`_
 
 .. enunciation::
 
-   If a straight line be cut at random, the rectangle contained by the whole and one of the segments is equal to the rectangle contained by the segments and the square on the aforesaid segment.
+   Parallelograms on the same base and in the same :term:`parallels <G.52>` are equal in area.
 
 .. picture:: g1.svg
 

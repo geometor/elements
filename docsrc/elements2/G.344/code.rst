@@ -1,17 +1,18 @@
 :canonical_id: G.344
-:original_id: X.29
-:volume: III
-:book: X
+:original_id: IX.14
+:title: G.344 number least measured
+:volume: II
+:book: IX
 :type: prop
 
-G.344 — Code
-============
+G.344 number least measured — Code
+==================================
 
-.. rubric:: `X.29 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/029/>`_
+.. rubric:: `IX.14 <https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/14/>`_
 
 .. enunciation::
 
-   Find two rational straight lines commensurable in square only and such that the square on the greater is greater than the square on the less by the square on a straight line commensurable in length with the greater.
+   If a :term:`number <G.248>` be the least that is :term:`measured <G.169>` by :term:`prime numbers <G.283>`, it will not be measured by any other prime number except those originally measuring it.
 
 .. picture:: g1.svg
 

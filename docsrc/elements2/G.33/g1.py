@@ -1,58 +1,47 @@
-"""Programmatic construction for Book I, Proposition 22 (I.22).
+"""Programmatic construction for Book I, Proposition 11 (I.11).
 
-Out of three straight lines, which are equal to three given straight lines, to construct a triangle.
+To draw a straight line at right angles to a given straight line from a given
+point on it.
 """
 
 from __future__ import annotations
 
+import sympy as sp
 from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure for 0306.g1 (I.22) using geometor.model."""
-    model = Model("I.22")
+    """Construct the figure for Book I, Proposition 11 using geometor.model."""
+    model = Model("I.11")
 
-    # Points
-    pt_D = model.set_point(51, -107, classes=["given"], ID="D")
-    pt_F = model.set_point(147, -107, classes=["given"], ID="F")
-    pt_G = model.set_point(221, -107, classes=["given"], ID="G")
-    pt_H = model.set_point(278, -107, classes=["given"], ID="H")
-    pt_K = model.set_point(224.3, -50.1, classes=["given"], ID="K")
-    pt_L = model.set_point(224.3, -163.9, classes=["given"], ID="L")
-    pt_E = model.set_point(343, -107, classes=["given"], ID="E")
-    pt_A1 = model.set_point(391, -88.5, classes=["given"])
-    pt_A2 = model.set_point(487, -88.5, classes=["given"], ID="A")
-    pt_B1 = model.set_point(391, -107, classes=["given"])
-    pt_B2 = model.set_point(465, -107, classes=["given"], ID="B")
-    pt_C1 = model.set_point(391, -124.5, classes=["given"])
-    pt_C2 = model.set_point(449, -124.5, classes=["given"], ID="C")
+    # 1. Given straight line AB and given point C on it
+    A = model.set_point(-sp.Rational(3, 2), 0, classes=["given"], label="A")
+    B = model.set_point(sp.Rational(3, 2), 0, classes=["given"], label="B")
+    C = model.set_point(0, 0, classes=["given"], ID="C")
+    model.construct_line(A, B)
 
-    # Base Constructions (Lines and Circles)
-    model.construct_line(pt_D, pt_E)
-    model.construct_circle(pt_F, pt_D)
-    model.construct_circle(pt_G, pt_H)
+    # 2. Take point D at random on AC, and make CE equal to CD [I. 3]
+    D = model.set_point(-1, 0, ID="D")
+    E = model.set_point(1, 0, ID="E")
 
-    # Segments
-    model.set_segment(pt_D, pt_E)
-    model.set_segment(pt_D, pt_F)
-    model.set_segment(pt_F, pt_G)
-    model.set_segment(pt_G, pt_H)
-    model.set_segment(pt_F, pt_H)
-    model.set_segment(pt_D, pt_G)
-    model.set_segment(pt_D, pt_H)
-    model.set_segment(pt_K, pt_F)
-    model.set_segment(pt_K, pt_G)
-    model.set_segment(pt_A1, pt_A2)
-    model.set_segment(pt_B1, pt_B2)
-    model.set_segment(pt_C1, pt_C2)
+    model.set_segment(A, D)
+    model.set_segment(D, C)
+    model.set_segment(A, C)
+    model.set_segment(C, E)
+    model.set_segment(E, B)
+    model.set_segment(C, B)
+    model.set_segment(D, E)
+    model.set_segment(A, B)
 
-    # Polygons
-    model.set_polygon([pt_K, pt_F, pt_G])
+    # 3. Construct equilateral triangle FDE on DE [I. 1] and join FC
+    F = model.set_point(0, sp.sqrt(3), label="F")
+    model.set_segment(D, F)
+    model.set_segment(E, F)
+    model.set_segment(F, C)
 
-    # Angles (Wedges)
-    model.set_wedge(pt_K, pt_F, pt_F, pt_G)
-    model.set_wedge(pt_F, pt_K, pt_K, pt_G)
-    model.set_wedge(pt_G, pt_K, pt_K, pt_F)
+    model.set_polygon([F, D, E])
+    model.set_polygon([D, F, C])
+    model.set_polygon([E, F, C])
 
     return model
 

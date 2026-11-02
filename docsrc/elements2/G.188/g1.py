@@ -1,8 +1,4 @@
-"""Programmatic construction for Book VI, Proposition 23 (VI.23).
-
-Equiangular parallelograms have to one another the ratio compounded of the ratios
-of their sides.
-"""
+"""Programmatic construction for Book V, Proposition 10 (V.10)."""
 
 from __future__ import annotations
 
@@ -10,71 +6,20 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure for 0253.g1 (VI.23) using geometor.model."""
-    model = Model("VI.23")
+    """Construct the figure 0161.g1 for Book V, Proposition 10 using geometor.model."""
+    model = Model("V.10")
 
-    # 1. Equiangular parallelograms AC (ABCD), CF (CEFG), and completed DG (DCGH)
-    A = model.set_point(161.0, -28.0, classes=["given"], ID="A")
-    D = model.set_point(253.0, -28.0, classes=["given"], ID="D")
-    H = model.set_point(366.0, -28.0, ID="H")
+    # Standalone magnitudes A, B, C
+    A_1 = model.set_point(35.0, -16.0, classes=["given"], ID="A_1")
+    A_2 = model.set_point(199.0, -16.0, classes=["given"], ID="A_2")
+    B_1 = model.set_point(235.0, -16.0, classes=["given"], ID="B_1")
+    B_2 = model.set_point(341.0, -16.0, classes=["given"], ID="B_2")
+    C_1 = model.set_point(129.0, -42.0, classes=["given"], ID="C_1")
+    C_2 = model.set_point(270.0, -42.0, classes=["given"], ID="C_2")
 
-    B = model.set_point(156.0, -59.0, classes=["given"], ID="B")
-    C = model.set_point(248.0, -59.0, classes=["given"], ID="C")
-    G = model.set_point(361.0, -59.0, classes=["given"], ID="G")
-
-    E = model.set_point(240.0, -109.0, classes=["given"], ID="E")
-    F = model.set_point(353.0, -109.0, classes=["given"], ID="F")
-
-    # 2. Auxiliary straight lines K, L, M
-    K1 = model.set_point(30.0, -65.0, ID="K1")
-    K2 = model.set_point(92.0, -65.0, ID="K2")
-    model.set_segment(K1, K2)
-
-    L1 = model.set_point(30.0, -87.0, ID="L1")
-    L2 = model.set_point(105.0, -87.0, ID="L2")
-    model.set_segment(L1, L2)
-
-    M1 = model.set_point(30.0, -109.0, ID="M1")
-    M2 = model.set_point(135.0, -109.0, ID="M2")
-    model.set_segment(M1, M2)
-
-    # 3. Construction lines
-    model.construct_line(B, G)
-    model.construct_line(D, E)
-
-    # 4. Segments and sub-segments
-    model.set_segment(A, D)
-    model.set_segment(D, H)
-    model.set_segment(A, H)
-
-    model.set_segment(B, C)
-    model.set_segment(C, G)
-    model.set_segment(B, G)
-
-    model.set_segment(E, F)
-
-    model.set_segment(A, B)
-    model.set_segment(D, C)
-    model.set_segment(C, E)
-    model.set_segment(D, E)
-    model.set_segment(H, G)
-    model.set_segment(G, F)
-    model.set_segment(H, F)
-
-    # 5. Collinear sections
-    model.set_section([A, D, H])
-    model.set_section([B, C, G])
-    model.set_section([D, C, E])
-    model.set_section([H, G, F])
-
-    # 6. Parallelograms AC, CF, DG (CH)
-    model.set_polygon([A, B, C, D])
-    model.set_polygon([C, E, F, G])
-    model.set_polygon([D, C, G, H])
-
-    # 7. Equal vertical angles BCD and ECG
-    model.set_wedge(C, B, B, D)  # < B C D )
-    model.set_wedge(C, E, E, G)  # < E C G )
+    model.set_segment(A_1, A_2)
+    model.set_segment(B_1, B_2)
+    model.set_segment(C_1, C_2)
 
     return model
 

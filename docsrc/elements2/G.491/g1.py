@@ -1,9 +1,4 @@
-"""Programmatic construction for Book XII, Proposition 5 (XII.5).
-
-Two pyramids ABCG and DEFH of the same height with triangular bases ABC and
-DEF and vertices G and H, each divided into two pyramids and two prisms, and
-solid magnitude W.
-"""
+"""Programmatic construction for Book X, Proposition 105 (X.105)."""
 
 from __future__ import annotations
 
@@ -11,87 +6,34 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0390.g1 using geometor.model."""
-    model = Model("XII.5")
+    """Construct the figure 0236.g1 using geometor.model."""
+    model = Model("X.105")
 
-    # Left pyramid ABCG
-    G = model.set_point(95.0, -24.0, classes=["given"], ID="G")
-    A = model.set_point(23.0, -192.0, classes=["given"], ID="A")
-    B = model.set_point(88.0, -232.0, classes=["given"], ID="B")
-    C = model.set_point(178.0, -192.0, classes=["given"], ID="C")
-    K = model.set_point(55.5, -212.0, ID="K")
-    O = model.set_point(133.0, -212.0, ID="O")
-    L = model.set_point(100.5, -192.0, ID="L")
-    P = model.set_point(66.2, -91.2, ID="P")
-    M = model.set_point(92.2, -107.2, ID="M")
-    N = model.set_point(128.2, -91.2, ID="N")
+    # Line AE divided at B
+    A = model.set_point(35.0, -20.0, classes=["given"], ID="A")
+    B = model.set_point(97.0, -20.0, classes=["given"], ID="B")
+    E = model.set_point(153.0, -20.0, classes=["given"], ID="E")
 
-    # Solid W parallelepiped vertices and label center
-    W1 = model.set_point(164.0, -22.0, ID="W1")
-    W2 = model.set_point(292.0, -22.0, ID="W2")
-    W3 = model.set_point(292.0, -98.0, ID="W3")
-    W4 = model.set_point(164.0, -98.0, ID="W4")
-    W5 = model.set_point(185.0, -54.0, ID="W5")
-    W6 = model.set_point(313.0, -54.0, ID="W6")
-    W7 = model.set_point(313.0, -130.0, ID="W7")
-    W8 = model.set_point(185.0, -130.0, ID="W8")
-    W = model.set_point(238.5, -76.0, classes=["given"], ID="W")
+    # Line CF divided at D
+    C = model.set_point(18.0, -50.5, classes=["given"], ID="C")
+    D = model.set_point(95.0, -50.5, classes=["given"], ID="D")
+    F = model.set_point(170.0, -50.5, classes=["given"], ID="F")
 
-    # Right pyramid DEFH
-    H = model.set_point(437.0, -24.0, classes=["given"], ID="H")
-    D = model.set_point(286.0, -192.0, classes=["given"], ID="D")
-    E = model.set_point(364.0, -232.0, classes=["given"], ID="E")
-    F = model.set_point(494.0, -192.0, classes=["given"], ID="F")
-    Q = model.set_point(325.0, -212.0, ID="Q")
-    V = model.set_point(429.0, -212.0, ID="V")
-    R = model.set_point(390.0, -192.0, ID="R")
-    S = model.set_point(376.6, -91.2, ID="S")
-    T = model.set_point(407.8, -107.2, ID="T")
-    U = model.set_point(459.8, -91.2, ID="U")
+    # Base lines
+    model.construct_line(A, E)
+    model.construct_line(C, F)
 
-    # Left segments
-    for p1, p2 in [
-        (G, A), (G, P), (P, A),
-        (G, B), (G, M), (M, B),
-        (G, C), (G, N), (N, C),
-        (A, B), (A, K), (K, B),
-        (B, C), (B, O), (O, C),
-        (C, A), (C, L), (L, A),
-        (P, M), (M, N), (N, P),
-        (K, L), (L, O),
-        (P, K), (P, L), (M, O),
-    ]:
-        model.set_segment(p1, p2)
+    # Segments
+    model.set_segment(A, E)
+    model.set_segment(A, B)
+    model.set_segment(B, E)
+    model.set_segment(C, F)
+    model.set_segment(C, D)
+    model.set_segment(D, F)
 
-    # Solid W segments
-    for p1, p2 in [
-        (W1, W2), (W2, W3), (W3, W4), (W4, W1),
-        (W5, W6), (W6, W7), (W7, W8), (W8, W5),
-        (W1, W5), (W2, W6), (W3, W7), (W4, W8),
-    ]:
-        model.set_segment(p1, p2)
-
-    # Right segments
-    for p1, p2 in [
-        (H, D), (H, S), (S, D),
-        (H, E), (H, T), (T, E),
-        (H, F), (H, U), (U, F),
-        (D, E), (D, Q), (Q, E),
-        (E, F), (E, V), (V, F),
-        (F, D), (F, R), (R, D),
-        (S, T), (T, U), (U, S),
-        (Q, R), (R, V),
-        (S, Q), (S, R), (T, V),
-    ]:
-        model.set_segment(p1, p2)
-
-    # Polygons
-    for poly in [
-        [A, B, C], [L, O, C], [P, M, N], [K, B, O, L],
-        [D, E, F], [R, V, F], [S, T, U], [Q, E, V, R],
-        [W1, W2, W6, W7, W8, W4],
-    ]:
-        model.set_polygon(poly)
+    # Sections
+    model.set_section([A, B, E])
+    model.set_section([C, D, F])
 
     return model
 

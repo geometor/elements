@@ -1,6 +1,8 @@
-"""Programmatic construction for Book I, I.43 (I.43).
+"""Programmatic construction for Book I, Proposition 29 (I.29).
 
-In any parallelogram the complements of the parallelograms about the diameter are equal to one another.
+A straight line falling on parallel straight lines makes the alternate angles
+equal to one another, the exterior angle equal to the interior and opposite
+angle, and the interior angles on the same side equal to two right angles.
 """
 
 from __future__ import annotations
@@ -9,64 +11,47 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure for 0354.g1 (I.43) using geometor.model."""
-    model = Model("I.43")
+    """Construct the figure for Book I, Proposition 29 (I.29) using geometor.model."""
+    model = Model("I.29")
 
-    # 1. Points
-    A = model.set_point(64, -33, classes=["given"], ID="A")
-    B = model.set_point(30, -138, classes=["given"], ID="B")
-    C = model.set_point(202, -138, classes=["given"], ID="C")
-    D = model.set_point(236, -33, classes=["given"], ID="D")
-    E = model.set_point(55, -62, ID="E")
-    F = model.set_point(80, -138, ID="F")
-    G = model.set_point(227, -62, ID="G")
-    H = model.set_point(114, -33, ID="H")
-    K = model.set_point(105, -62, ID="K")
+    A = model.set_point(20, -69.5, classes=["given"], ID="A")
+    B = model.set_point(180, -69.5, classes=["given"], ID="B")
+    C = model.set_point(20, -116.5, classes=["given"], ID="C")
+    D = model.set_point(180, -116.5, classes=["given"], ID="D")
+    E = model.set_point(64, -36, classes=["given"], ID="E")
+    F = model.set_point(134.5, -148, classes=["given"], ID="F")
+    G = model.set_point(85, -69.5, ID="G")
+    H = model.set_point(114.5, -116.5, ID="H")
 
-    # 3. Segments
-    model.set_segment(A, D)
-    model.set_segment(A, H)
-    model.set_segment(H, D)
-    model.set_segment(B, C)
-    model.set_segment(B, F)
-    model.set_segment(F, C)
+    model.construct_line(A, B)
+    model.construct_line(C, D)
+    model.construct_line(E, F)
+
     model.set_segment(A, B)
-    model.set_segment(A, E)
-    model.set_segment(E, B)
-    model.set_segment(D, C)
-    model.set_segment(D, G)
-    model.set_segment(G, C)
-    model.set_segment(A, C)
-    model.set_segment(A, K)
-    model.set_segment(K, C)
+    model.set_segment(A, G)
+    model.set_segment(G, B)
+    model.set_section([A, G, B])
+
+    model.set_segment(C, D)
+    model.set_segment(C, H)
+    model.set_segment(H, D)
+    model.set_section([C, H, D])
+
+    model.set_segment(E, F)
     model.set_segment(E, G)
-    model.set_segment(E, K)
-    model.set_segment(K, G)
+    model.set_segment(G, H)
     model.set_segment(H, F)
-    model.set_segment(H, K)
-    model.set_segment(K, F)
+    model.set_section([E, G, H])
+    model.set_section([G, H, F])
 
-    # 4. Collinear Sections
-    model.set_section([A, H, D])
-    model.set_section([B, F, C])
-    model.set_section([A, E, B])
-    model.set_section([D, G, C])
-    model.set_section([A, K, C])
-    model.set_section([E, K, G])
-    model.set_section([H, K, F])
+    model.set_polygon([A, G, H, C])
+    model.set_polygon([B, G, H, D])
 
-    # 5. Polygons (Triangles, Parallelograms, Trapezia, Squares)
-    model.set_polygon([A, B, C, D])
-    model.set_polygon([A, E, K, H])
-    model.set_polygon([K, F, C, G])
-    model.set_polygon([E, B, F, K])
-    model.set_polygon([H, K, G, D])
-    model.set_polygon([A, B, C])
-    model.set_polygon([A, C, D])
-    model.set_polygon([A, E, K])
-    model.set_polygon([A, H, K])
-    model.set_polygon([K, F, C])
-    model.set_polygon([K, G, C])
+    # Angles at G and H
+    model.set_wedge(G, A, A, H)
+    model.set_wedge(G, B, B, H)
+    model.set_wedge(G, E, E, B)
+    model.set_wedge(H, G, G, D)
 
     return model
 

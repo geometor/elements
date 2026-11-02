@@ -1,10 +1,6 @@
-"""Programmatic construction for Book II, Proposition 13 (II.13).
+"""Programmatic construction for Book I, I.45 (I.45).
 
-In acute-angled triangles the square on the side subtending the acute angle is
-less than the squares on the sides containing the acute angle by twice the
-rectangle contained by one of the sides about the acute angle, namely that on
-which the perpendicular falls, and the straight line cut off within by the
-perpendicular towards the acute angle.
+To construct, in a given rectilineal angle, a parallelogram equal to a given rectilineal figure.
 """
 
 from __future__ import annotations
@@ -13,34 +9,61 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure for Book II, Proposition 13 using geometor.model."""
-    model = Model("II.13")
+    """Construct the figure for 0359.g1 (I.45) using geometor.model."""
+    model = Model("I.45")
 
-    # Acute-angled triangle ABC with AD perpendicular to BC
-    B = model.set_point(0, 0, classes=["given"], ID="B")
-    D = model.set_point(5, 0, ID="D")
-    C = model.set_point(8, 0, classes=["given"], ID="C")
-    A = model.set_point(5, 6, classes=["given"], ID="A")
+    # 1. Points
+    A = model.set_point(31, -50, classes=["given"], ID="A")
+    D = model.set_point(149, -27, classes=["given"], ID="D")
+    B = model.set_point(149, -120, classes=["given"], ID="B")
+    C = model.set_point(230, -52, classes=["given"], ID="C")
+    E = model.set_point(244, -93, classes=["given"], ID="E")
+    E1 = model.set_point(266, -51, ID="E1")
+    E2 = model.set_point(295, -102, ID="E2")
+    F = model.set_point(385, -35, ID="F")
+    G = model.set_point(456, -35, ID="G")
+    L = model.set_point(498, -35, ID="L")
+    K = model.set_point(363, -117, ID="K")
+    H = model.set_point(434, -117, ID="H")
+    M = model.set_point(476, -117, ID="M")
 
-    # Segments
-    model.set_segment(B, C)
-    model.set_segment(B, D)
-    model.set_segment(D, C)
+    # 3. Segments
     model.set_segment(A, D)
     model.set_segment(A, B)
-    model.set_segment(A, C)
+    model.set_segment(D, C)
+    model.set_segment(B, C)
+    model.set_segment(D, B)
+    model.set_segment(E, E1)
+    model.set_segment(E, E2)
+    model.set_segment(F, L)
+    model.set_segment(F, G)
+    model.set_segment(G, L)
+    model.set_segment(K, M)
+    model.set_segment(K, H)
+    model.set_segment(H, M)
+    model.set_segment(F, K)
+    model.set_segment(G, H)
+    model.set_segment(L, M)
 
-    # Collinear section B-D-C
-    model.set_section([B, D, C])
+    # 4. Collinear Sections
+    model.set_section([F, G, L])
+    model.set_section([K, H, M])
 
-    # Triangles
-    model.set_polygon([A, B, C])
+    # 5. Polygons (Triangles, Parallelograms, Trapezia, Squares)
+    model.set_polygon([A, B, C, D])
     model.set_polygon([A, B, D])
-    model.set_polygon([A, D, C])
+    model.set_polygon([D, B, C])
+    model.set_polygon([F, K, H, G])
+    model.set_polygon([G, H, M, L])
+    model.set_polygon([K, F, L, M])
 
-    # Angles (acute angle at B and right angle at D)
-    model.set_wedge(B, C, C, A)
-    model.set_wedge(D, C, C, A)
+    # 6. Angles (Wedges)
+    model.set_wedge(E, E1, E1, E2)
+    model.set_wedge(K, H, H, F)
+    model.set_wedge(H, G, G, M)
+    model.set_wedge(H, K, K, G)
+    model.set_wedge(G, H, H, F)
+    model.set_wedge(G, H, H, L)
 
     return model
 

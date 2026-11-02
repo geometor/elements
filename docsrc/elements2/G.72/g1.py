@@ -1,73 +1,72 @@
-"""Programmatic construction for Book II, Proposition 11 — The Golden Section (II.11).
+"""Programmatic construction for Book I, I.43 (I.43).
 
-To cut a given straight line so that the rectangle contained by the whole and
-one of the segments is equal to the square on the remaining segment.
+In any parallelogram the complements of the parallelograms about the diameter are equal to one another.
 """
 
 from __future__ import annotations
 
-import sympy as sp
 from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct Euclid's Golden Section figure (Book II, Prop. 11) using geometor.model."""
-    model = Model("II.11")
+    """Construct the figure for 0354.g1 (I.43) using geometor.model."""
+    model = Model("I.43")
 
-    # 1. Let AB be the given straight line (length 2 for clean midpoint E).
-    A = model.set_point(0, 0, classes=["given"], ID="A")
-    B = model.set_point(2, 0, classes=["given"], ID="B")
-    model.set_segment(A, B)
+    # 1. Points
+    A = model.set_point(64, -33, classes=["given"], ID="A")
+    B = model.set_point(30, -138, classes=["given"], ID="B")
+    C = model.set_point(202, -138, classes=["given"], ID="C")
+    D = model.set_point(236, -33, classes=["given"], ID="D")
+    E = model.set_point(55, -62, ID="E")
+    F = model.set_point(80, -138, ID="F")
+    G = model.set_point(227, -62, ID="G")
+    H = model.set_point(114, -33, ID="H")
+    K = model.set_point(105, -62, ID="K")
 
-    # 2. Let the square ABDC be described on AB [I. 46].
-    C = model.set_point(0, -2, ID="C")
-    D = model.set_point(2, -2, ID="D")
-    model.set_polygon([A, B, D, C])
-
-    # 3. Let AC be bisected at E, and let BE be joined.
-    E = model.set_point(0, -1, ID="E")
-    model.set_segment(B, E)
-
-    # 4. Let CA be drawn through to F, and let EF be made equal to BE (sqrt(5)).
-    model.construct_line(C, A)
-    phi_inv_2 = sp.sqrt(5) - 1  # AF = AH = sqrt(5) - 1 (for AB = 2)
-    F = model.set_point(0, phi_inv_2, ID="F")
-
-    # 5. Let the square FH (FGHA) be described on AF, and let GH be drawn through to K.
-    G = model.set_point(phi_inv_2, phi_inv_2, ID="G")
-    H = model.set_point(phi_inv_2, 0, classes=["golden"], ID="H")
-    K = model.set_point(phi_inv_2, -2, ID="K")
-    model.construct_line(G, K)
-
-    # 6. Record the Golden Sections on AB and CF
-    model.set_section([A, H, B], classes=["golden"])
-    model.set_section([C, A, F], classes=["golden"])
-
-    # 7. Explicitly add all referenced segments
+    # 3. Segments
+    model.set_segment(A, D)
     model.set_segment(A, H)
-    model.set_segment(H, B)
+    model.set_segment(H, D)
+    model.set_segment(B, C)
+    model.set_segment(B, F)
+    model.set_segment(F, C)
+    model.set_segment(A, B)
     model.set_segment(A, E)
-    model.set_segment(E, C)
+    model.set_segment(E, B)
+    model.set_segment(D, C)
+    model.set_segment(D, G)
+    model.set_segment(G, C)
     model.set_segment(A, C)
-    model.set_segment(A, F)
-    model.set_segment(E, F)
-    model.set_segment(C, F)
-    model.set_segment(F, G)
-    model.set_segment(G, H)
+    model.set_segment(A, K)
+    model.set_segment(K, C)
+    model.set_segment(E, G)
+    model.set_segment(E, K)
+    model.set_segment(K, G)
+    model.set_segment(H, F)
     model.set_segment(H, K)
-    model.set_segment(G, K)
-    model.set_segment(B, D)
-    model.set_segment(C, K)
-    model.set_segment(K, D)
-    model.set_segment(C, D)
+    model.set_segment(K, F)
 
-    # 8. Explicitly add all referenced squares, rectangles, triangles, and right angle
-    model.set_polygon([F, G, H, A])  # Square FH on AF
-    model.set_polygon([F, G, K, C])  # Rectangle FK (CF, FA)
-    model.set_polygon([A, H, K, C])  # Common rectangle AK
-    model.set_polygon([H, B, D, K])  # Remainder rectangle HD (AB, BH)
-    model.set_polygon([A, B, E])     # Right triangle ABE
-    model.set_wedge(A, B, B, E)      # Right angle at A
+    # 4. Collinear Sections
+    model.set_section([A, H, D])
+    model.set_section([B, F, C])
+    model.set_section([A, E, B])
+    model.set_section([D, G, C])
+    model.set_section([A, K, C])
+    model.set_section([E, K, G])
+    model.set_section([H, K, F])
+
+    # 5. Polygons (Triangles, Parallelograms, Trapezia, Squares)
+    model.set_polygon([A, B, C, D])
+    model.set_polygon([A, E, K, H])
+    model.set_polygon([K, F, C, G])
+    model.set_polygon([E, B, F, K])
+    model.set_polygon([H, K, G, D])
+    model.set_polygon([A, B, C])
+    model.set_polygon([A, C, D])
+    model.set_polygon([A, E, K])
+    model.set_polygon([A, H, K])
+    model.set_polygon([K, F, C])
+    model.set_polygon([K, G, C])
 
     return model
 

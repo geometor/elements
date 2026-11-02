@@ -1,4 +1,9 @@
-"""Programmatic construction for Book VII, Proposition 37 (VII.37)."""
+"""Programmatic construction for Book VI, Proposition 26 (VI.26).
+
+If from a parallelogram there be taken away a parallelogram similar and similarly
+situated to the whole and having a common angle with it, it is about the same
+diameter with the whole.
+"""
 
 from __future__ import annotations
 
@@ -6,27 +11,75 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0347.g1 using geometor.model."""
-    model = Model("VII.37")
+    """Construct the figure for 0261.g1 (VI.26) using geometor.model."""
+    model = Model("VI.26")
 
-    # Number A, measuring number B, unit-count C, and unit D
-    A_l = model.set_point(23.0, -14.0, classes=["given"], ID="A")
-    A_r = model.set_point(153.0, -14.0, ID="A_r")
+    # 1. Points of parallelogram ABCD, taken-away parallelogram AF (AEFG), and hypothetical KG (AKHG)
+    A = model.set_point(35.0, -29.0, classes=["given"], ID="A")
+    G = model.set_point(95.0, -29.0, classes=["given"], ID="G")
+    D = model.set_point(180.0, -29.0, classes=["given"], ID="D")
 
-    B_l = model.set_point(22.0, -39.0, classes=["given"], ID="B")
-    B_r = model.set_point(68.0, -39.0, ID="B_r")
+    E = model.set_point(28.0, -72.0, classes=["given"], ID="E")
+    F = model.set_point(88.0, -72.0, classes=["given"], ID="F")
 
-    C_l = model.set_point(23.0, -66.0, classes=["given"], ID="C")
-    C_r = model.set_point(90.0, -66.0, ID="C_r")
+    K = model.set_point(26.0, -89.0, ID="K")
+    H = model.set_point(86.0, -89.0, ID="H")
 
-    D_l = model.set_point(24.0, -88.0, classes=["given"], ID="D")
-    D_r = model.set_point(48.0, -88.0, ID="D_r")
+    B = model.set_point(19.0, -134.0, classes=["given"], ID="B")
+    C = model.set_point(164.0, -134.0, classes=["given"], ID="C")
 
-    # Segments
-    model.set_segment(A_l, A_r)
-    model.set_segment(B_l, B_r)
-    model.set_segment(C_l, C_r)
-    model.set_segment(D_l, D_r)
+    # 2. Construction lines
+    model.construct_line(A, C)
+    model.construct_line(G, H)
+
+    # 3. Segments and sub-segments
+    model.set_segment(A, D)
+    model.set_segment(A, G)
+    model.set_segment(G, D)
+
+    model.set_segment(E, F)
+    model.set_segment(K, H)
+    model.set_segment(B, C)
+
+    model.set_segment(A, B)
+    model.set_segment(A, E)
+    model.set_segment(E, K)
+    model.set_segment(K, B)
+    model.set_segment(A, K)
+    model.set_segment(E, B)
+
+    model.set_segment(G, H)
+    model.set_segment(G, F)
+    model.set_segment(F, H)
+
+    model.set_segment(D, C)
+
+    model.set_segment(A, C)
+    model.set_segment(A, F)
+    model.set_segment(F, C)
+
+    model.set_segment(A, H)
+    model.set_segment(H, C)
+
+    # 4. Collinear sections
+    model.set_section([A, G, D])
+    model.set_section([A, E, K])
+    model.set_section([A, K, B])
+    model.set_section([G, F, H])
+    model.set_section([A, F, C])
+
+    # 5. Parallelograms and Triangles
+    model.set_polygon([A, B, C, D])
+    model.set_polygon([A, E, F, G])
+    model.set_polygon([A, K, H, G])
+    model.set_polygon([A, E, F])
+    model.set_polygon([A, B, C])
+
+    # 6. Angles
+    model.set_wedge(A, D, D, B)  # < D A B )
+    model.set_wedge(E, A, A, F)  # < A E F )
+    model.set_wedge(B, A, A, C)  # < A B C )
+    model.set_wedge(A, F, F, E)  # < F A E ) / < C A B )
 
     return model
 

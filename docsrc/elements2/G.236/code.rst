@@ -1,17 +1,18 @@
 :canonical_id: G.236
-:original_id: VII.35
+:original_id: VI.24
+:title: G.236 parallelogram parallelograms diameter
 :volume: II
-:book: VII
+:book: VI
 :type: prop
 
-G.236 — Code
-============
+G.236 parallelogram parallelograms diameter — Code
+==================================================
 
-.. rubric:: `VII.35 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/35/>`_
+.. rubric:: `VI.24 <https://geometor.github.io/euclid/heath/volume_II/book_vi/propositions/24/>`_
 
 .. enunciation::
 
-   If two numbers measure any number, the least number measured by them will also measure the same.
+   In any parallelogram the parallelograms about the :term:`diameter <G.61>` are similar both to the whole and to one another.
 
 .. picture:: g1.svg
 

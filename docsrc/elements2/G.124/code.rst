@@ -1,17 +1,18 @@
 :canonical_id: G.124
-:original_id: IV.6
+:original_id: III.21
+:title: G.124 circle angles segment
 :volume: II
-:book: IV
+:book: III
 :type: prop
 
-G.124 — Code
-============
+G.124 circle angles segment — Code
+==================================
 
-.. rubric:: `IV.6 <https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/06/>`_
+.. rubric:: `III.21 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/21/>`_
 
 .. enunciation::
 
-   Inscribe in a given circle a square.
+   In a :term:`circle <G.10>` the :term:`angles <G.22>` in the same :term:`segment <G.4>` are equal.
 
 .. picture:: g1.svg
 

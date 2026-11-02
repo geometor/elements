@@ -1,17 +1,18 @@
 :canonical_id: G.509
-:original_id: XIII.2
+:original_id: XI.7
+:title: G.509 segments parallel points
 :volume: III
-:book: XIII
+:book: XI
 :type: prop
 
-G.509 — Code
-============
+G.509 segments parallel points — Code
+=====================================
 
-.. rubric:: `XIII.2 <https://geometor.github.io/euclid/heath/volume_III/book_xiii/propositions/02/>`_
+.. rubric:: `XI.7 <https://geometor.github.io/euclid/heath/volume_III/book_xi/propositions/07/>`_
 
 .. enunciation::
 
-   If the square on a straight line be five times the square on a segment of it, then, when the double of the said segment is cut in extreme and mean ratio, the greater segment is the remaining part of the original straight line.
+   If two :term:`segments <G.4>` be :term:`parallel <G.52>` and :term:`points <G.1>` be taken at random on each of them, the segment joining the points is in the same :term:`plane <G.7>` with the parallel :term:`lines <G.2>`.
 
 .. picture:: g1.svg
 

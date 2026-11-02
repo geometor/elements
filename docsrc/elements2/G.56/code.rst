@@ -1,17 +1,18 @@
 :canonical_id: G.56
-:original_id: I.43
+:original_id: I.29
+:title: G.56 transversal angles of parallel lines
 :volume: I
 :book: I
 :type: prop
 
-G.56 — Code
-===========
+G.56 transversal angles of parallel lines — Code
+================================================
 
-.. rubric:: `I.43 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/43/>`_
+.. rubric:: `I.29 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/29/>`_
 
 .. enunciation::
 
-   In any parallelogram, the complements of the parallelograms about the diagonal are equal in area.
+   A transversal cutting :term:`parallel <G.52>` :term:`lines <G.2>` makes alternate interior :term:`angles <G.22>` equal, exterior and opposite interior angles equal, and same-side interior angles supplementary.
 
 .. picture:: g1.svg
 

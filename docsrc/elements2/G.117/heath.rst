@@ -1,57 +1,62 @@
 :canonical_id: G.117
-:original_id: IV.1
+:original_id: III.def.7
+:title: G.117 angle of a circle segment
 :volume: II
-:book: IV
-:type: prop
+:book: III
+:type: def
 
-G.117 — Heath
-=============
+G.117 angle of a circle segment — Heath
+=======================================
 
-.. rubric:: `IV.1 <https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/01/>`_
+.. rubric:: `III.def.7 <https://geometor.github.io/euclid/heath/volume_II/book_iii/definitions/#iii-def-7>`_
 
 .. enunciation::
 
-   Into a given circle to fit a straight line equal to a given straight line which is not greater than the diameter of the circle.
+   An :term:`**angle of a segment** <angle-of-segment>` is that contained by a :term:`straight line <G.4>` and a circumference of a :term:`circle <G.10>`.
 
-Let :g:`( A B C ) <g1:( A B C )>` be the given circle, and :g:`D <g1:D>` the given straight
-line not greater than the diameter
-of the circle;
-thus it is required to fit into the
-circle :g:`( A B C ) <g1:( A B C )>` a straight line :eq:`equal <g1:/ C A / = g1:D>`
-to the straight line :g:`D <g1:D>`.
+Dependency Graph
+----------------
 
-.. picture:: g1.svg
-   :alt: Diagram for Proposition 1
+.. graphviz::
 
-Let a diameter :g:`/ B C / <g1:/ B C />` of the
-circle :g:`( A B C ) <g1:( A B C )>` be drawn.
-
-Then, if :g:`/ B C / <g1:/ B C />` is :eq:`equal <g1:/ B C / = g1:D>` to :g:`D <g1:D>`,
-that which was enjoined will have
-been done; for :g:`/ B C / <g1:/ B C />` has been fitted into the circle :g:`( A B C ) <g1:( A B C )>` :eq:`equal <g1:/ B C / = g1:D>`
-to the straight line :g:`D <g1:D>`.
-
-But, if :g:`/ B C / <g1:/ B C />` is greater than :g:`D <g1:D>`,
-let :g:`/ C E / <g1:/ C E />` be made :eq:`equal <g1:/ C E / = g1:D>` to :g:`D <g1:D>`, and with centre :g:`C <g1:C>` and distance
-:g:`/ C E / <g1:/ C E />` let the circle :g:`( E A F ) <g1:( E A F )>` be described;
-let :g:`/ C A / <g1:/ C A />` be joined.
-
-Then, since the point :g:`C <g1:C>` is the centre of the circle :g:`( E A F ) <g1:( E A F )>`,
-
-.. assertion::
-
-   :g:`/ C A / <g1:/ C A />` is :eq:`equal <g1:/ C A / = g1:/ C E />` to :g:`/ C E / <g1:/ C E />`.
-
-But :g:`/ C E / <g1:/ C E />` is :eq:`equal <g1:/ C E / = g1:D>` to :g:`D <g1:D>`;
-
-.. assertion::
-
-   therefore :g:`D <g1:D>` is also :eq:`equal <g1:D = g1:/ C A />` to :g:`/ C A / <g1:/ C A />`.
-
-Therefore into the given circle :g:`( A B C ) <g1:( A B C )>` there has been fitted
-:g:`/ C A / <g1:/ C A />` :eq:`equal <g1:/ C A / = g1:D>` to the given straight line :g:`D <g1:D>`.
+   digraph {
+     bgcolor="transparent";
+     node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11, color="#d6d3cd", fontcolor="#ffffff"];
+     edge [color="#8c857b", fontcolor="#8c857b", arrowsize=0.75];
+     rankdir="TB";
+     "G.1" [label="G.1", tooltip="G.1 (I.def.1): A point A is that which has no part.", fillcolor="#224422", URL="../G.1/index.html", target="_top"];
+     "G.2" [label="G.2", tooltip="G.2 (I.def.2): A line [ A B ] is a projection of a relationship of two points A, B.", fillcolor="#224422", URL="../G.2/index.html", target="_top"];
+     "G.3" [label="G.3", tooltip="G.3 (I.def.3): The extremities of a segment / A B / are points A, B.", fillcolor="#224422", URL="../G.3/index.html", target="_top"];
+     "G.4" [label="G.4", tooltip="G.4 (I.def.4): A segment / A B / is a portion of a line [ A B ] between two points A, B on the line.", fillcolor="#224422", URL="../G.4/index.html", target="_top"];
+     "G.5" [label="G.5", tooltip="G.5 (I.def.5): A surface is that which has length and breadth only.", fillcolor="#224422", URL="../G.5/index.html", target="_top"];
+     "G.6" [label="G.6", tooltip="G.6 (I.def.6): The extremities of a surface are lines or arcs.", fillcolor="#224422", URL="../G.6/index.html", target="_top"];
+     "G.7" [label="G.7", tooltip="G.7 (I.def.7): A plane surface lies evenly with the lines on itself.", fillcolor="#224422", URL="../G.7/index.html", target="_top"];
+     "G.8" [label="G.8", tooltip="G.8 (I.def.13): A boundary is the extremity of anything.", fillcolor="#224422", URL="../G.8/index.html", target="_top"];
+     "G.9" [label="G.9", tooltip="G.9 (I.def.14): A figure is that which is contained by any boundary or boundaries.", fillcolor="#224422", URL="../G.9/index.html", target="_top"];
+     "G.10" [label="G.10", tooltip="G.10 (I.def.15): A circle ( A B ) is a plane figure contained by one arc defined by a center A and a point B establishing its defining radius / A B /, such that all segments / A B /, / A C /, / A D...", fillcolor="#224422", URL="../G.10/index.html", target="_top"];
+     "G.117" [label="G.117", tooltip="G.117 (III.def.7): Anangle of a segment is that contained by asegment and a arc of acircle.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.2" -> "G.1";
+     "G.3" -> "G.1";
+     "G.4" -> "G.1";
+     "G.10" -> "G.1";
+     "G.3" -> "G.2";
+     "G.4" -> "G.2";
+     "G.6" -> "G.2";
+     "G.4" -> "G.3";
+     "G.8" -> "G.3";
+     "G.7" -> "G.4";
+     "G.10" -> "G.4";
+     "G.117" -> "G.4";
+     "G.6" -> "G.5";
+     "G.7" -> "G.5";
+     "G.10" -> "G.6";
+     "G.10" -> "G.7";
+     "G.9" -> "G.8";
+     "G.10" -> "G.9";
+     "G.117" -> "G.10";
+   }
 
 Required for
 ------------
 
-:ref:`G.128 <G.128>`, :ref:`G.129 <G.129>`, :ref:`G.130 <G.130>`, :ref:`G.326 <G.326>`, :ref:`G.331 <G.331>`, :ref:`G.336 <G.336>`, :ref:`G.338 <G.338>`, :ref:`G.339 <G.339>`, :ref:`G.340 <G.340>`, :ref:`G.341 <G.341>`, :ref:`G.342 <G.342>`, :ref:`G.343 <G.343>`, :ref:`G.346 <G.346>`, :ref:`G.347 <G.347>`, :ref:`G.348 <G.348>`, :ref:`G.349 <G.349>`, :ref:`G.350 <G.350>`, :ref:`G.351 <G.351>`, :ref:`G.352 <G.352>`, :ref:`G.353 <G.353>`, :ref:`G.354 <G.354>`, :ref:`G.355 <G.355>`, :ref:`G.356 <G.356>`, :ref:`G.357 <G.357>`, :ref:`G.358 <G.358>`, :ref:`G.359 <G.359>`, :ref:`G.360 <G.360>`, :ref:`G.361 <G.361>`, :ref:`G.362 <G.362>`, :ref:`G.363 <G.363>`, :ref:`G.364 <G.364>`, :ref:`G.365 <G.365>`, :ref:`G.367 <G.367>`, :ref:`G.368 <G.368>`, :ref:`G.370 <G.370>`, :ref:`G.372 <G.372>`, :ref:`G.374 <G.374>`, :ref:`G.376 <G.376>`, :ref:`G.378 <G.378>`, :ref:`G.379 <G.379>`, :ref:`G.380 <G.380>`, :ref:`G.381 <G.381>`, :ref:`G.382 <G.382>`, :ref:`G.383 <G.383>`, :ref:`G.384 <G.384>`, :ref:`G.385 <G.385>`, :ref:`G.387 <G.387>`, :ref:`G.388 <G.388>`, :ref:`G.389 <G.389>`, :ref:`G.390 <G.390>`, :ref:`G.391 <G.391>`, :ref:`G.392 <G.392>`, :ref:`G.393 <G.393>`, :ref:`G.394 <G.394>`, :ref:`G.396 <G.396>`, :ref:`G.397 <G.397>`, :ref:`G.398 <G.398>`, :ref:`G.399 <G.399>`, :ref:`G.400 <G.400>`, :ref:`G.401 <G.401>`, :ref:`G.402 <G.402>`, :ref:`G.403 <G.403>`, :ref:`G.404 <G.404>`, :ref:`G.405 <G.405>`, :ref:`G.407 <G.407>`, :ref:`G.409 <G.409>`, :ref:`G.411 <G.411>`, :ref:`G.413 <G.413>`, :ref:`G.415 <G.415>`, :ref:`G.417 <G.417>`, :ref:`G.418 <G.418>`, :ref:`G.419 <G.419>`, :ref:`G.420 <G.420>`, :ref:`G.421 <G.421>`, :ref:`G.422 <G.422>`, :ref:`G.423 <G.423>`, :ref:`G.424 <G.424>`, :ref:`G.425 <G.425>`, :ref:`G.426 <G.426>`, :ref:`G.427 <G.427>`, :ref:`G.428 <G.428>`, :ref:`G.429 <G.429>`, :ref:`G.430 <G.430>`, :ref:`G.431 <G.431>`, :ref:`G.432 <G.432>`, :ref:`G.433 <G.433>`, :ref:`G.434 <G.434>`, :ref:`G.435 <G.435>`, :ref:`G.436 <G.436>`, :ref:`G.437 <G.437>`, :ref:`G.438 <G.438>`, :ref:`G.439 <G.439>`, :ref:`G.440 <G.440>`, :ref:`G.441 <G.441>`, :ref:`G.468 <G.468>`, :ref:`G.513 <G.513>`, :ref:`G.518 <G.518>`, :ref:`G.523 <G.523>`, :ref:`G.524 <G.524>`, :ref:`G.525 <G.525>`
+:ref:`G.118 <G.118>`, :ref:`G.119 <G.119>`, :ref:`G.141 <G.141>`, :ref:`G.145 <G.145>`, :ref:`G.149 <G.149>`, :ref:`G.151 <G.151>`, :ref:`G.154 <G.154>`, :ref:`G.159 <G.159>`, :ref:`G.160 <G.160>`, :ref:`G.162 <G.162>`, :ref:`G.163 <G.163>`, :ref:`G.164 <G.164>`, :ref:`G.165 <G.165>`, :ref:`G.563 <G.563>`, :ref:`G.565 <G.565>`, :ref:`G.570 <G.570>`, :ref:`G.571 <G.571>`, :ref:`G.572 <G.572>`, :ref:`G.573 <G.573>`, :ref:`G.574 <G.574>`, :ref:`G.592 <G.592>`, :ref:`G.601 <G.601>`

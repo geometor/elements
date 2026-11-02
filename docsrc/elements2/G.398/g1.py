@@ -1,4 +1,4 @@
-"""Programmatic construction for Book X, Proposition 77 (X.77)."""
+"""Programmatic construction for Book X, Proposition 24 (X.24)."""
 
 from __future__ import annotations
 
@@ -6,24 +6,40 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0168.g1 using geometor.model."""
-    model = Model("X.77")
+    """Construct the figure 0059.g1 using geometor.model."""
+    model = Model("X.24")
 
-    # Straight line AB with straight line BC subtracted, leaving AC
-    A = model.set_point(26.5, -15.0, classes=["given"], ID="A")
-    C = model.set_point(26.5, -106.0, classes=["given"], ID="C")
-    B = model.set_point(26.5, -148.0, classes=["given"], ID="B")
+    # Vertices of rectangle AC (A, B, C, C_l) and square AD (A, B, D, D_l)
+    A = model.set_point(25.0, -97.5, classes=["given"], ID="A")
+    B = model.set_point(89.0, -97.5, classes=["given"], ID="B")
+    C = model.set_point(89.0, -14.5, classes=["given"], ID="C")
+    D = model.set_point(89.0, -160.5, ID="D")
+    C_l = model.set_point(25.0, -14.5, ID="C_l")
+    D_l = model.set_point(25.0, -160.5, ID="D_l")
 
-    # Base line
+    # Base lines
+    model.construct_line(C_l, D_l)
+    model.construct_line(C, D)
+    model.construct_line(C_l, C)
     model.construct_line(A, B)
+    model.construct_line(D_l, D)
 
     # Segments
     model.set_segment(A, B)
-    model.set_segment(A, C)
-    model.set_segment(C, B)
+    model.set_segment(B, C)
+    model.set_segment(B, D)
+    model.set_segment(C, D)
+    model.set_segment(C_l, C)
+    model.set_segment(D_l, D)
+    model.set_segment(C_l, D_l)
 
-    # Section
-    model.set_section([A, C, B])
+    # Collinear section on CD
+    model.set_section([C, B, D])
+
+    # Polygons: rectangle AC and square AD
+    model.set_polygon([A, B, C, C_l])
+    model.set_polygon([A, B, D, D_l])
+    model.set_polygon([C_l, C, D, D_l])
 
     return model
 

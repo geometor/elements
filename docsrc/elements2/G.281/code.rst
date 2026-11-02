@@ -1,17 +1,18 @@
 :canonical_id: G.281
-:original_id: IX.11
+:original_id: VII.27
+:title: G.281 numbers prime multiplying
 :volume: II
-:book: IX
+:book: VII
 :type: prop
 
-G.281 — Code
-============
+G.281 numbers prime multiplying — Code
+======================================
 
-.. rubric:: `IX.11 <https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/11/>`_
+.. rubric:: `VII.27 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/27/>`_
 
 .. enunciation::
 
-   If as many numbers as we please beginning from an unit be in continued proportion, the less measures the greater according to some one of the numbers which have place among the proportional numbers.
+   If two :term:`numbers <G.248>` be :term:`prime to one another <G.249>`, and each by :term:`multiplying <G.269>` itself make a certain number, the products is prime to one another; and, if the original numbers by multiplying the products make certain numbers, the latter is prime to one another [and this is always the case with the extremes].
 
 .. picture:: g1.svg
 

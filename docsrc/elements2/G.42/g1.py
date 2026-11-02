@@ -1,9 +1,4 @@
-"""Programmatic construction for Book I, Proposition 29 (I.29).
-
-A straight line falling on parallel straight lines makes the alternate angles
-equal to one another, the exterior angle equal to the interior and opposite
-angle, and the interior angles on the same side equal to two right angles.
-"""
+"""Programmatic construction for Book I, Proposition 17 (I.17)."""
 
 from __future__ import annotations
 
@@ -11,47 +6,36 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure for Book I, Proposition 29 (I.29) using geometor.model."""
-    model = Model("I.29")
+    """Construct the figure 0296.g1 using geometor.model."""
+    model = Model("I.17")
 
-    A = model.set_point(20, -69.5, classes=["given"], ID="A")
-    B = model.set_point(180, -69.5, classes=["given"], ID="B")
-    C = model.set_point(20, -116.5, classes=["given"], ID="C")
-    D = model.set_point(180, -116.5, classes=["given"], ID="D")
-    E = model.set_point(64, -36, classes=["given"], ID="E")
-    F = model.set_point(134.5, -148, classes=["given"], ID="F")
-    G = model.set_point(85, -69.5, ID="G")
-    H = model.set_point(114.5, -116.5, ID="H")
+    # Points
+    A = model.set_point(44, -35, classes=["given"], ID="A")
+    B = model.set_point(88, -116.5, classes=["given"], ID="B")
+    C = model.set_point(191, -116.5, classes=["given"], ID="C")
+    D = model.set_point(305, -116.5, ID="D")
 
-    model.construct_line(A, B)
-    model.construct_line(C, D)
-    model.construct_line(E, F)
+    # Construction lines
+    model.construct_line(B, D)
 
+    # Segments
+    model.set_segment(B, D)
     model.set_segment(A, B)
-    model.set_segment(A, G)
-    model.set_segment(G, B)
-    model.set_section([A, G, B])
-
+    model.set_segment(A, C)
+    model.set_segment(B, C)
     model.set_segment(C, D)
-    model.set_segment(C, H)
-    model.set_segment(H, D)
-    model.set_section([C, H, D])
 
-    model.set_segment(E, F)
-    model.set_segment(E, G)
-    model.set_segment(G, H)
-    model.set_segment(H, F)
-    model.set_section([E, G, H])
-    model.set_section([G, H, F])
+    # Collinear / broken sections
+    model.set_section([B, C, D])
 
-    model.set_polygon([A, G, H, C])
-    model.set_polygon([B, G, H, D])
+    # Polygons
+    model.set_polygon([A, B, C])
 
-    # Angles at G and H
-    model.set_wedge(G, A, A, H)
-    model.set_wedge(G, B, B, H)
-    model.set_wedge(G, E, E, B)
-    model.set_wedge(H, G, G, D)
+    # Angles (wedges)
+    model.set_wedge(C, A, A, D)
+    model.set_wedge(C, A, A, B)
+    model.set_wedge(B, A, A, C)
+    model.set_wedge(A, B, B, C)
 
     return model
 

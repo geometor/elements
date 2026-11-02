@@ -1,72 +1,42 @@
-"""Programmatic construction for Book I, I.45 (I.45).
+"""GEOMETOR construction for Book I, Proposition 31 (Folio 0330, Graphic 1).
 
-To construct, in a given rectilineal angle, a parallelogram equal to a given rectilineal figure.
+Through a given point A to draw a straight line EAF parallel to a given straight line BC.
 """
-
-from __future__ import annotations
 
 from geometor.model import Model
 
 
-def construct_g1() -> Model:
-    """Construct the figure for 0359.g1 (I.45) using geometor.model."""
-    model = Model("I.45")
+def build_0330_g1() -> Model:
+    model = Model("I.31")
 
-    # 1. Points
-    A = model.set_point(31, -50, classes=["given"], ID="A")
-    D = model.set_point(149, -27, classes=["given"], ID="D")
-    B = model.set_point(149, -120, classes=["given"], ID="B")
-    C = model.set_point(230, -52, classes=["given"], ID="C")
-    E = model.set_point(244, -93, classes=["given"], ID="E")
-    E1 = model.set_point(266, -51, ID="E1")
-    E2 = model.set_point(295, -102, ID="E2")
-    F = model.set_point(385, -35, ID="F")
-    G = model.set_point(456, -35, ID="G")
-    L = model.set_point(498, -35, ID="L")
-    K = model.set_point(363, -117, ID="K")
-    H = model.set_point(434, -117, ID="H")
-    M = model.set_point(476, -117, ID="M")
+    B = model.set_point(-1, 0, classes=["given"], ID="B")
+    C = model.set_point(1.5, 0, classes=["given"], ID="C")
+    D = model.set_point(0, 0, classes=["given"], ID="D")
+    A = model.set_point(0.35, 0.75, classes=["given"], ID="A")
+    E = model.set_point(-0.85, 0.75, classes=["given"], ID="E")
+    F = model.set_point(1.35, 0.75, classes=["given"], ID="F")
 
-    # 3. Segments
-    model.set_segment(A, D)
-    model.set_segment(A, B)
-    model.set_segment(D, C)
+    model.construct_line(B, C)
+    model.construct_line(E, F)
+    model.construct_line(A, D)
+
     model.set_segment(B, C)
-    model.set_segment(D, B)
-    model.set_segment(E, E1)
-    model.set_segment(E, E2)
-    model.set_segment(F, L)
-    model.set_segment(F, G)
-    model.set_segment(G, L)
-    model.set_segment(K, M)
-    model.set_segment(K, H)
-    model.set_segment(H, M)
-    model.set_segment(F, K)
-    model.set_segment(G, H)
-    model.set_segment(L, M)
+    model.set_segment(B, D)
+    model.set_segment(D, C)
+    model.set_segment(E, F)
+    model.set_segment(E, A)
+    model.set_segment(A, F)
+    model.set_segment(A, D)
 
-    # 4. Collinear Sections
-    model.set_section([F, G, L])
-    model.set_section([K, H, M])
+    model.set_section([E, A, F])
+    model.set_section([B, D, C])
 
-    # 5. Polygons (Triangles, Parallelograms, Trapezia, Squares)
-    model.set_polygon([A, B, C, D])
-    model.set_polygon([A, B, D])
-    model.set_polygon([D, B, C])
-    model.set_polygon([F, K, H, G])
-    model.set_polygon([G, H, M, L])
-    model.set_polygon([K, F, L, M])
-
-    # 6. Angles (Wedges)
-    model.set_wedge(E, E1, E1, E2)
-    model.set_wedge(K, H, H, F)
-    model.set_wedge(H, G, G, M)
-    model.set_wedge(H, K, K, G)
-    model.set_wedge(G, H, H, F)
-    model.set_wedge(G, H, H, L)
+    model.set_wedge(A, D, D, E)
+    model.set_wedge(D, A, A, C)
 
     return model
 
 
 if __name__ == "__main__":
-    construct_g1()
+    m = build_0330_g1()
+    print(f"Constructed {m.name} with {len(m)} elements.")

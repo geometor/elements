@@ -1,4 +1,4 @@
-"""Programmatic construction for Book VIII, Proposition 14 (VIII.14)."""
+"""Programmatic construction for Book VII, Proposition 4 (VII.4)."""
 
 from __future__ import annotations
 
@@ -6,31 +6,40 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0373.g1 using geometor.model."""
-    model = Model("VIII.14")
+    """Construct the figure 0309.g1 using geometor.model."""
+    model = Model("VII.4")
 
-    # Single-letter horizontal number segments A, B, C, D, E
-    A_l = model.set_point(25.0, -15.0, classes=["given"], ID="A")
-    A_r = model.set_point(62.0, -15.0, ID="A_r")
+    # Single-letter vertical number segment A
+    A_t = model.set_point(22.0, -10.0, classes=["given"], ID="A")
+    A_b = model.set_point(22.0, -159.0, ID="A_b")
 
-    B_l = model.set_point(25.0, -39.0, classes=["given"], ID="B")
-    B_r = model.set_point(148.0, -39.0, ID="B_r")
+    # Vertical number segment BC (divided at E and F)
+    B = model.set_point(54.0, -69.0, classes=["given"], ID="B")
+    E = model.set_point(54.0, -99.0, ID="E")
+    F = model.set_point(54.0, -129.0, ID="F")
+    C = model.set_point(54.0, -159.0, classes=["given"], ID="C")
 
-    C_l = model.set_point(27.0, -62.0, classes=["given"], ID="C")
-    C_r = model.set_point(47.0, -62.0, ID="C_r")
+    # Single-letter vertical number segment D
+    D_t = model.set_point(83.0, -129.0, classes=["given"], ID="D")
+    D_b = model.set_point(83.0, -159.0, ID="D_b")
 
-    D_l = model.set_point(110.0, -62.0, classes=["given"], ID="D")
-    D_r = model.set_point(147.0, -62.0, ID="D_r")
+    # Base line
+    model.construct_line(B, C)
 
-    E_l = model.set_point(61.0, -87.0, classes=["given"], ID="E")
-    E_r = model.set_point(125.0, -87.0, ID="E_r")
+    # Whole and subdivided segments
+    model.set_segment(A_t, A_b)
+    model.set_segment(B, C)
+    model.set_segment(B, E)
+    model.set_segment(E, F)
+    model.set_segment(F, C)
+    model.set_segment(B, F)
+    model.set_segment(E, C)
+    model.set_segment(D_t, D_b)
 
-    # Number segments
-    model.set_segment(A_l, A_r)
-    model.set_segment(B_l, B_r)
-    model.set_segment(C_l, C_r)
-    model.set_segment(D_l, D_r)
-    model.set_segment(E_l, E_r)
+    # Collinear sections
+    model.set_section([B, E, F])
+    model.set_section([B, F, C])
+    model.set_section([E, F, C])
 
     return model
 

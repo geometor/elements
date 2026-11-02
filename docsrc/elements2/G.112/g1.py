@@ -1,63 +1,54 @@
-"""Programmatic construction for Book III, Proposition 33 — Acute Angle Case (III.33 - g1)."""
+"""Programmatic construction for Book III, Proposition 13 (III.13).
+
+A circle does not touch a circle at more points than one, whether it touch
+it internally or externally.
+"""
 
 from __future__ import annotations
 
+import sympy as sp
 from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0073.g1 using geometor.model."""
-    model = Model("III.33.g1")
+    """Construct the figure 0038.g3 using geometor.model."""
+    model = Model("III.13")
 
-    # Given acute angle at C (y-inverted)
-    C = model.set_point(83.0, -103.0, classes=["given"], ID="C")
-    C1 = model.set_point(16.0, -103.0, ID="C1")
-    C2 = model.set_point(56.0, -63.0, ID="C2")
-    model.set_segment(C, C1)
-    model.set_segment(C, C2)
-    model.set_wedge(C, C1, C1, C2)
+    # Circle ABDC (true center O1) and line of hypothetical internal contacts BGHD
+    O1 = model.set_point(0, 58, classes=["auxiliary"])
+    B = model.set_point(-sp.sqrt(3036), 0, label="B")
+    D = model.set_point(sp.sqrt(3036), 0, label="D")
+    model.construct_circle(O1, B)
 
-    # Circle ABE with center G(207, -104), radius 74
-    G = model.set_point(207.0, -104.0, ID="G")
-    A = model.set_point(207.0, -30.0, classes=["given"], ID="A")
-    E = model.set_point(207.0, -178.0, ID="E")
-    B = model.set_point(134.15, -117.0, classes=["given"], ID="B")
-    F = model.set_point(170.58, -73.5, ID="F")
-    D = model.set_point(138.0, -30.0, ID="D")
-    D2 = model.set_point(284.0, -30.0, ID="D2")
+    # Assumed centres G and H on chord BD
+    G = model.set_point(-20, 0, classes=["given"], ID="G")
+    H = model.set_point(20, 0, classes=["given"], ID="H")
+    model.construct_line(B, D)
 
-    # Construction circle ABE
-    model.construct_circle(G, A)
+    # Points E and F on inner oval EBFD
+    E = model.set_point(0, 80, ID="E")
+    F = model.set_point(0, -14, ID="F")
+    model.construct_circle(H, D)
 
-    # Segments
-    model.set_segment(D, D2)
-    model.set_segment(A, D)
-    model.set_segment(A, E)
-    model.set_segment(A, G)
-    model.set_segment(G, E)
-    model.set_segment(A, B)
-    model.set_segment(A, F)
-    model.set_segment(F, B)
-    model.set_segment(F, G)
-    model.set_segment(G, B)
-    model.set_segment(E, B)
+    # External circle ACK touching/cutting ABDC at A and C
+    O2 = model.set_point(86, 146, classes=["auxiliary"])
+    A = model.set_point(34, 130, ID="A")
+    C = model.set_point(71, 94, ID="C")
+    K = model.set_point(140, 146, ID="K")
+    model.construct_circle(O2, A)
 
-    # Sections
-    model.set_section([A, F, B])
-    model.set_section([A, G, E])
+    # Collinear segments along BGHD
+    model.set_segment(B, G)
+    model.set_segment(G, H)
+    model.set_segment(H, D)
+    model.set_segment(B, H)
+    model.set_segment(G, D)
+    model.set_segment(B, D)
+    model.set_section([B, G, D])
+    model.set_section([B, H, D])
 
-    # Polygons
-    model.set_polygon([A, F, G])
-    model.set_polygon([B, F, G])
-    model.set_polygon([A, B, G])
-    model.set_polygon([A, B, E])
-
-    # Angles
-    model.set_wedge(A, D, D, B)
-    model.set_wedge(A, D, D, E)
-    model.set_wedge(F, A, A, G)
-    model.set_wedge(F, B, B, G)
-    model.set_wedge(E, A, A, B)
+    # Chord AC joining points of external contact A and C
+    model.set_segment(A, C)
 
     return model
 

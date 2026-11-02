@@ -1,17 +1,18 @@
 :canonical_id: G.98
-:original_id: III.20
+:original_id: III.1
+:title: G.98 find circle center
 :volume: II
 :book: III
 :type: prop
 
-G.98 — Code
-===========
+G.98 find circle center — Code
+==============================
 
-.. rubric:: `III.20 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/20/>`_
+.. rubric:: `III.1 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/01/>`_
 
 .. enunciation::
 
-   In a circle the angle at the centre is double of the angle at the circumference, when the angles have the same circumference as base.
+   Find the :term:`center <G.14>` of a given :term:`circle <G.10>`.
 
 .. picture:: g1.svg
 

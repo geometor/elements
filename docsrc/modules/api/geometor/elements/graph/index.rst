@@ -45,6 +45,7 @@ Functions
    geometor.elements.graph.strip_footnotes
    geometor.elements.graph.extract_primitive_tags
    geometor.elements.graph.extract_taxonomy
+   geometor.elements.graph.extract_item_term_dependencies
    geometor.elements.graph.parse_grouped_items_file
    geometor.elements.graph.parse_proposition_file
    geometor.elements.graph.build_graph
@@ -124,6 +125,11 @@ Module Contents
 .. py:function:: extract_taxonomy(node_ref: str, node_type: str, book_roman: str, rst_body: str) -> Tuple[List[str], List[str], Optional[str]]
 
    Derive (categories, tags, subtype) for a G-Index node from its content and structure.
+
+
+.. py:function:: extract_item_term_dependencies(rst_body: str, item_id: str) -> List[str]
+
+   Extract canonical definition dependencies for a definition, postulate, or common notion.
 
 
 .. py:function:: parse_grouped_items_file(rst_path: pathlib.Path, heath_root: pathlib.Path) -> List[Dict[str, Any]]

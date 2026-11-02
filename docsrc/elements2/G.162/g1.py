@@ -1,4 +1,4 @@
-"""Programmatic construction for Book V, Proposition 25 (V.25)."""
+"""Programmatic construction for Book IV, Proposition 10 (IV.10)."""
 
 from __future__ import annotations
 
@@ -6,47 +6,45 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0191.g1 for Book V, Proposition 25 using geometor.model."""
-    model = Model("V.25")
+    """Construct the figure 0102.g1 (Golden Triangle) using geometor.model."""
+    model = Model("IV.10")
 
-    # First subdivided magnitude AB divided at G
-    A = model.set_point(20.00, -18.00, classes=["given"], ID="A")
-    G = model.set_point(125.00, -18.00, classes=["given"], ID="G")
-    B = model.set_point(179.00, -18.00, classes=["given"], ID="B")
+    # Points (y-inverted for standard mathematical coordinates)
+    A = model.set_point(114.00, -115.00, classes=["given"], ID="A")
+    B = model.set_point(174.18, -35.14, classes=["given"], ID="B")
+    C = model.set_point(151.19, -65.64, ID="C")
+    D = model.set_point(209.63, -85.76, ID="D")
+    E = model.set_point(208.59, -144.88, ID="E")
+    O = model.set_point(166.57, -115.92, ID="O")
 
-    # Standalone magnitude E
-    E_1 = model.set_point(20.00, -44.00, classes=["given"], ID="E_1")
-    E_2 = model.set_point(124.00, -44.00, classes=["given"], ID="E_2")
+    # Circles: BDE (centre A, radius AB) and circumscribed circle ACD (centre O, radius OA)
+    model.construct_circle(A, B)
+    model.construct_circle(O, A)
 
-    # Second subdivided magnitude CD divided at H
-    C = model.set_point(20.00, -70.00, classes=["given"], ID="C")
-    H = model.set_point(106.00, -70.00, classes=["given"], ID="H")
-    D = model.set_point(148.00, -70.00, classes=["given"], ID="D")
-
-    # Standalone magnitude F
-    F_1 = model.set_point(20.00, -95.00, classes=["given"], ID="F_1")
-    F_2 = model.set_point(106.00, -95.00, classes=["given"], ID="F_2")
-
-    # Base lines
-    model.construct_line(A, B)
-    model.construct_line(C, D)
-
-    # Whole and subdivided segments
+    # Segments
     model.set_segment(A, B)
-    model.set_segment(A, G)
-    model.set_segment(G, B)
-
-    model.set_segment(E_1, E_2)
-
+    model.set_segment(A, C)
+    model.set_segment(C, B)
+    model.set_segment(A, D)
+    model.set_segment(B, D)
     model.set_segment(C, D)
-    model.set_segment(C, H)
-    model.set_segment(H, D)
 
-    model.set_segment(F_1, F_2)
+    # Golden section on AB at C
+    model.set_section([A, C, B], classes=["golden"])
 
-    # Collinear sections
-    model.set_section([A, G, B])
-    model.set_section([C, H, D])
+    # Polygons
+    model.set_polygon([A, B, D])
+    model.set_polygon([A, C, D])
+    model.set_polygon([B, C, D])
+
+    # Angles (wedges)
+    model.set_wedge(D, B, B, C)
+    model.set_wedge(C, D, D, A)
+    model.set_wedge(A, D, D, C)
+    model.set_wedge(A, D, D, B)
+    model.set_wedge(D, C, C, B)
+    model.set_wedge(B, B, C, D)
+    model.set_wedge(B, A, D, B)
 
     return model
 

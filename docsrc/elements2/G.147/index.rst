@@ -1,132 +1,82 @@
 :order: 147
 :number: 147
 :canonical_id: G.147
-:original_id: V.10
+:original_id: IV.1
+:title: G.147 fit chord in circle
 :volume: II
-:book: V
+:book: IV
 :type: prop
 :subtype: theorem
-:categories: theorem, proof, proportions, magnitudes
-:category: theorem, proof, proportions, magnitudes
-:tags: book-v, point, ratio, equality, reductio-ad-absurdum
-:dependencies: G.142, G.145
-:excerpt: Of magnitudes which have a ratio to the same, that which has a greater ratio is greater; and that to which the same has a greater ratio is less.
+:categories: theorem, proof, plane-geometry, circles, polygons
+:category: theorem, proof, plane-geometry, circles, polygons
+:tags: book-iv, point, segment, circle, straight-line, diameter, line, fitted-into-circle, centre, equality
+:dependencies: G.4, G.10, G.61, G.146
+:excerpt: Into a given circle to fit a segment equal to a given segment which is not greater than the diameter of the circle.
 
 .. _G.147:
-.. _V.10:
+.. _IV.1:
 
-G.147
-=====
+G.147 fit chord in circle
+=========================
 
-.. rubric:: `V.10 <https://geometor.github.io/euclid/heath/volume_II/book_v/propositions/10/>`_
+.. rubric:: `IV.1 <https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/01/>`_
 
 .. enunciation::
 
-   Of magnitudes which have a ratio to the same, that which has a greater ratio is greater; and that to which the same has a greater ratio is less.
+   Into a given :term:`circle <G.10>` to fit a :term:`segment <G.4>` equal to a given segment which is not greater than the :term:`diameter <G.61>` of the circle.
 
 .. signature:: theorem
 
-   | :fn:`magnitudes_ratio_greater <G.147>`\ ()
-   | **prove** :g:`A <g1:A>` is greater than :g:`B <g1:B>`; :g:`B <g1:B>` is less than :g:`A <g1:A>`
+   | :fn:`fit_chord_in_circle <G.147>`\ (:g:`( A B C ) <g1:( A B C )>`, :g:`D <g1:D>`)
+   | **given** :g:`( A B C ) <g1:( A B C )>`, :g:`D <g1:D>` not greater than the diameter of the circle
+   | **prove** fit into :g:`( A B C ) <g1:( A B C )>` a segment :eq:`equal <g1:/ C A / = g1:D>` to :g:`D <g1:D>`
 
 .. picture:: g1.svg
-   :alt: Folio 0161 Figure 1
+   :alt: Diagram for Proposition 1
+
+.. step:: given
+
+   :g:`( A B C ) <g1:( A B C )>`, :g:`D <g1:D>` not greater than the diameter of the circle
+
+.. step:: construct
+
+   Let a diameter :g:`/ B C / <g1:/ B C />` of :g:`( A B C ) <g1:( A B C )>` be drawn.
 
 .. step:: assert
 
-   Let :g:`A <g1:A>` have to :g:`C <g1:C>` a greater ratio than :g:`B <g1:B>` has to :g:`C <g1:C>`
+   If :g:`/ B C / <g1:/ B C />` is :eq:`equal <g1:/ B C / = g1:D>` to :g:`D <g1:D>`, that which was enjoined will have been done
 
 .. step:: assert
 
-   If not, :g:`A <g1:A>` is either :eq:`equal <g1:A = g1:B>` to :g:`B <g1:B>` or less.
+   For :g:`/ B C / <g1:/ B C />` has been fitted into :g:`( A B C ) <g1:( A B C )>` :eq:`equal <g1:/ B C / = g1:D>` to :g:`D <g1:D>`.
+
+.. step:: construct
+
+   But, if :g:`/ B C / <g1:/ B C />` is greater than :g:`D <g1:D>`, let :g:`/ C E / <g1:/ C E />` be made :eq:`equal <g1:/ C E / = g1:D>` to :g:`D <g1:D>`
+
+.. step:: construct
+
+   :fn:`circle <G.15>`\ (:g:`C <g1:C>`, :g:`E <g1:E>`) → :g:`( C E ) <g1:( E A F )>`
+
+.. step:: construct
+
+   :fn:`segment <G.13>`\ (:g:`C <g1:C>`, :g:`A <g1:A>`) → :g:`/ C A / <g1:/ C A />`
+
+.. step:: assert ∵ circle_radii <G.10>
+
+   Since :g:`C <g1:C>` is the :term:`center <G.14>` of :g:`( C E ) <g1:( E A F )>` → :g:`/ C A / <g1:/ C A />` is :eq:`equal <g1:/ C A / = g1:/ C E />` to :g:`/ C E / <g1:/ C E />`.
 
 .. step:: assert
 
-   Now :g:`A <g1:A>` is not :eq:`equal <g1:A = g1:B>` to :g:`B <g1:B>`
-
-.. step:: assert ∵ equal_magnitudes_ratio <G.142>
-
-   For in that case each of the magnitudes :g:`A <g1:A>`, :g:`B <g1:B>` would have had the same ratio to :g:`C <g1:C>`
+   :g:`/ C E / <g1:/ C E />` is :eq:`equal <g1:/ C E / = g1:D>` to :g:`D <g1:D>`
 
 .. step:: assert
 
-   But they have not
-
-.. step:: assert
-
-   Therefore :g:`A <g1:A>` is not :eq:`equal <g1:A = g1:B>` to :g:`B <g1:B>`.
-
-.. step:: assert
-
-   Nor again is :g:`A <g1:A>` less than :g:`B <g1:B>`
-
-.. step:: assert ∵ unequal_magnitudes_greater <G.145>
-
-   For in that case :g:`A <g1:A>` would have had to :g:`C <g1:C>` a less ratio than :g:`B <g1:B>` has to :g:`C <g1:C>`
-
-.. step:: assert
-
-   But it has not
-
-.. step:: assert
-
-   Therefore :g:`A <g1:A>` is not less than :g:`B <g1:B>`.
-
-.. step:: assert
-
-   It was proved not to be :eq:`equal <g1:A = g1:B>` either
-
-.. step:: assert
-
-   Therefore :g:`A <g1:A>` is greater than :g:`B <g1:B>`.
-
-.. step:: assert
-
-   Let :g:`C <g1:C>` have to :g:`B <g1:B>` a greater ratio than :g:`C <g1:C>` has to :g:`A <g1:A>`
-
-.. step:: assert
-
-   If not, it is either :eq:`equal <g1:B = g1:A>` or greater.
-
-.. step:: assert
-
-   Now :g:`B <g1:B>` is not :eq:`equal <g1:B = g1:A>` to :g:`A <g1:A>`
-
-.. step:: assert ∵ equal_magnitudes_ratio <G.142>
-
-   For in that case :g:`C <g1:C>` would have had the same ratio to each of the magnitudes :g:`A <g1:A>`, :g:`B <g1:B>`
-
-.. step:: assert
-
-   But it has not
-
-.. step:: assert
-
-   Therefore :g:`A <g1:A>` is not :eq:`equal <g1:A = g1:B>` to :g:`B <g1:B>`.
-
-.. step:: assert
-
-   Nor again is :g:`B <g1:B>` greater than :g:`A <g1:A>`
-
-.. step:: assert ∵ unequal_magnitudes_greater <G.145>
-
-   For in that case :g:`C <g1:C>` would have had to :g:`B <g1:B>` a less ratio than it has to :g:`A <g1:A>`
-
-.. step:: assert
-
-   But it has not
-
-.. step:: assert
-
-   Therefore :g:`B <g1:B>` is not greater than :g:`A <g1:A>`.
-
-.. step:: assert
-
-   It was proved that it is not :eq:`equal <g1:B = g1:A>` either
+   Therefore :g:`D <g1:D>` is also :eq:`equal <g1:D = g1:/ C A />` to :g:`/ C A / <g1:/ C A />`.
 
 .. step:: conclude
 
-   Therefore :g:`B <g1:B>` is less than :g:`A <g1:A>`.
+   Therefore into the given circle :g:`( A B C ) <g1:( A B C )>` there has been fitted :g:`/ C A / <g1:/ C A />` :eq:`equal <g1:/ C A / = g1:D>` to :g:`D <g1:D>`.
 
 Dependency Graph
 ----------------
@@ -138,25 +88,55 @@ Dependency Graph
      node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11, color="#d6d3cd", fontcolor="#ffffff"];
      edge [color="#8c857b", fontcolor="#8c857b", arrowsize=0.75];
      rankdir="TB";
-     "G.135" [label="G.135", tooltip="G.135 (V.1): If there be any number of magnitudes whatever which are, respectively, equimultiples of any magnitudes equal in multitude, then, whatever multiple one of the magnitudes is of one, ...", fillcolor="#222244", URL="../G.135/index.html", target="_top"];
-     "G.138" [label="G.138", tooltip="G.138 (V.def.5): Magnitudes are said tobe in the same ratio, the first to the second and the third to the fourth, when, if any equimultiples whatever be taken of the first and third, and any equimu...", fillcolor="#224422", URL="../G.138/index.html", target="_top"];
-     "G.142" [label="G.142", tooltip="G.142 (V.7): Equal magnitudes have to the same the same ratio, as also has the same to equal magnitudes.", fillcolor="#222244", URL="../G.142/index.html", target="_top"];
-     "G.143" [label="G.143", tooltip="G.143 (V.def.4): Magnitudes are said tohave a ratio to one another which are capable, when multiplied, of exceeding one another.", fillcolor="#224422", URL="../G.143/index.html", target="_top"];
-     "G.144" [label="G.144", tooltip="G.144 (V.def.7): When, of the equimultiples, the multiple of the first magnitude exceeds the multiple of the second, but the multiple of the third does not exceed the multiple of the fourth, then t...", fillcolor="#224422", URL="../G.144/index.html", target="_top"];
-     "G.145" [label="G.145", tooltip="G.145 (V.8): Of unequal magnitudes, the greater has to the same a greater ratio than the less has; and the same has to the less a greater ratio than it has to the greater.", fillcolor="#222244", URL="../G.145/index.html", target="_top"];
-     "G.147" [label="G.147", tooltip="G.147 (V.10): Of magnitudes which have a ratio to the same, that which has a greater ratio is greater; and that to which the same has a greater ratio is less.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
-     "G.145" -> "G.135";
-     "G.142" -> "G.138";
-     "G.147" -> "G.142";
-     "G.145" -> "G.143";
-     "G.145" -> "G.144";
-     "G.147" -> "G.145";
+     "G.1" [label="G.1", tooltip="G.1 (I.def.1): A point A is that which has no part.", fillcolor="#224422", URL="../G.1/index.html", target="_top"];
+     "G.2" [label="G.2", tooltip="G.2 (I.def.2): A line [ A B ] is a projection of a relationship of two points A, B.", fillcolor="#224422", URL="../G.2/index.html", target="_top"];
+     "G.3" [label="G.3", tooltip="G.3 (I.def.3): The extremities of a segment / A B / are points A, B.", fillcolor="#224422", URL="../G.3/index.html", target="_top"];
+     "G.4" [label="G.4", tooltip="G.4 (I.def.4): A segment / A B / is a portion of a line [ A B ] between two points A, B on the line.", fillcolor="#224422", URL="../G.4/index.html", target="_top"];
+     "G.5" [label="G.5", tooltip="G.5 (I.def.5): A surface is that which has length and breadth only.", fillcolor="#224422", URL="../G.5/index.html", target="_top"];
+     "G.6" [label="G.6", tooltip="G.6 (I.def.6): The extremities of a surface are lines or arcs.", fillcolor="#224422", URL="../G.6/index.html", target="_top"];
+     "G.7" [label="G.7", tooltip="G.7 (I.def.7): A plane surface lies evenly with the lines on itself.", fillcolor="#224422", URL="../G.7/index.html", target="_top"];
+     "G.8" [label="G.8", tooltip="G.8 (I.def.13): A boundary is the extremity of anything.", fillcolor="#224422", URL="../G.8/index.html", target="_top"];
+     "G.9" [label="G.9", tooltip="G.9 (I.def.14): A figure is that which is contained by any boundary or boundaries.", fillcolor="#224422", URL="../G.9/index.html", target="_top"];
+     "G.10" [label="G.10", tooltip="G.10 (I.def.15): A circle ( A B ) is a plane figure contained by one arc defined by a center A and a point B establishing its defining radius / A B /, such that all segments / A B /, / A C /, / A D...", fillcolor="#224422", URL="../G.10/index.html", target="_top"];
+     "G.14" [label="G.14", tooltip="G.14 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.", fillcolor="#224422", URL="../G.14/index.html", target="_top"];
+     "G.61" [label="G.61", tooltip="G.61 (I.def.17): A diameter of a circle is any segment drawn through the center and terminated in both directions by the arc of the circle; it bisects the circle.", fillcolor="#224422", URL="../G.61/index.html", target="_top"];
+     "G.146" [label="G.146", tooltip="G.146 (IV.def.7): Asegment is said to befitted into a circle when itsextremities are on the arc of thecircle.", fillcolor="#224422", URL="../G.146/index.html", target="_top"];
+     "G.147" [label="G.147", tooltip="G.147 (IV.1): Into a given circle to fit a segment equal to a given segment which is not greater than the diameter of the circle.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.2" -> "G.1";
+     "G.3" -> "G.1";
+     "G.4" -> "G.1";
+     "G.10" -> "G.1";
+     "G.14" -> "G.1";
+     "G.3" -> "G.2";
+     "G.4" -> "G.2";
+     "G.6" -> "G.2";
+     "G.4" -> "G.3";
+     "G.8" -> "G.3";
+     "G.146" -> "G.3";
+     "G.7" -> "G.4";
+     "G.10" -> "G.4";
+     "G.61" -> "G.4";
+     "G.146" -> "G.4";
+     "G.147" -> "G.4";
+     "G.6" -> "G.5";
+     "G.7" -> "G.5";
+     "G.10" -> "G.6";
+     "G.10" -> "G.7";
+     "G.9" -> "G.8";
+     "G.10" -> "G.9";
+     "G.14" -> "G.10";
+     "G.61" -> "G.10";
+     "G.146" -> "G.10";
+     "G.147" -> "G.10";
+     "G.61" -> "G.14";
+     "G.147" -> "G.61";
+     "G.147" -> "G.146";
    }
 
 Required for
 ------------
 
-:ref:`G.151 <G.151>`, :ref:`G.153 <G.153>`, :ref:`G.155 <G.155>`, :ref:`G.156 <G.156>`, :ref:`G.157 <G.157>`, :ref:`G.158 <G.158>`, :ref:`G.159 <G.159>`, :ref:`G.160 <G.160>`, :ref:`G.161 <G.161>`, :ref:`G.162 <G.162>`, :ref:`G.166 <G.166>`, :ref:`G.167 <G.167>`, :ref:`G.168 <G.168>`, :ref:`G.169 <G.169>`, :ref:`G.171 <G.171>`, :ref:`G.176 <G.176>`, :ref:`G.181 <G.181>`, :ref:`G.184 <G.184>`, :ref:`G.185 <G.185>`, :ref:`G.187 <G.187>`, :ref:`G.189 <G.189>`, :ref:`G.190 <G.190>`, :ref:`G.191 <G.191>`, :ref:`G.192 <G.192>`, :ref:`G.193 <G.193>`, :ref:`G.194 <G.194>`, :ref:`G.195 <G.195>`, :ref:`G.196 <G.196>`, :ref:`G.197 <G.197>`, :ref:`G.318 <G.318>`, :ref:`G.319 <G.319>`, :ref:`G.320 <G.320>`, :ref:`G.321 <G.321>`, :ref:`G.322 <G.322>`, :ref:`G.323 <G.323>`, :ref:`G.324 <G.324>`, :ref:`G.325 <G.325>`, :ref:`G.326 <G.326>`, :ref:`G.327 <G.327>`, :ref:`G.330 <G.330>`, :ref:`G.331 <G.331>`, :ref:`G.333 <G.333>`, :ref:`G.334 <G.334>`, :ref:`G.335 <G.335>`, :ref:`G.336 <G.336>`, :ref:`G.338 <G.338>`, :ref:`G.339 <G.339>`, :ref:`G.340 <G.340>`, :ref:`G.341 <G.341>`, :ref:`G.342 <G.342>`, :ref:`G.343 <G.343>`, :ref:`G.344 <G.344>`, :ref:`G.345 <G.345>`, :ref:`G.346 <G.346>`, :ref:`G.347 <G.347>`, :ref:`G.348 <G.348>`, :ref:`G.349 <G.349>`, :ref:`G.350 <G.350>`, :ref:`G.351 <G.351>`, :ref:`G.352 <G.352>`, :ref:`G.353 <G.353>`, :ref:`G.354 <G.354>`, :ref:`G.355 <G.355>`, :ref:`G.356 <G.356>`, :ref:`G.357 <G.357>`, :ref:`G.358 <G.358>`, :ref:`G.359 <G.359>`, :ref:`G.360 <G.360>`, :ref:`G.361 <G.361>`, :ref:`G.362 <G.362>`, :ref:`G.363 <G.363>`, :ref:`G.364 <G.364>`, :ref:`G.365 <G.365>`, :ref:`G.366 <G.366>`, :ref:`G.367 <G.367>`, :ref:`G.368 <G.368>`, :ref:`G.370 <G.370>`, :ref:`G.372 <G.372>`, :ref:`G.374 <G.374>`, :ref:`G.376 <G.376>`, :ref:`G.378 <G.378>`, :ref:`G.379 <G.379>`, :ref:`G.380 <G.380>`, :ref:`G.381 <G.381>`, :ref:`G.382 <G.382>`, :ref:`G.383 <G.383>`, :ref:`G.384 <G.384>`, :ref:`G.385 <G.385>`, :ref:`G.387 <G.387>`, :ref:`G.388 <G.388>`, :ref:`G.389 <G.389>`, :ref:`G.390 <G.390>`, :ref:`G.391 <G.391>`, :ref:`G.392 <G.392>`, :ref:`G.393 <G.393>`, :ref:`G.394 <G.394>`, :ref:`G.396 <G.396>`, :ref:`G.397 <G.397>`, :ref:`G.398 <G.398>`, :ref:`G.399 <G.399>`, :ref:`G.400 <G.400>`, :ref:`G.401 <G.401>`, :ref:`G.402 <G.402>`, :ref:`G.403 <G.403>`, :ref:`G.404 <G.404>`, :ref:`G.405 <G.405>`, :ref:`G.407 <G.407>`, :ref:`G.409 <G.409>`, :ref:`G.411 <G.411>`, :ref:`G.413 <G.413>`, :ref:`G.415 <G.415>`, :ref:`G.417 <G.417>`, :ref:`G.418 <G.418>`, :ref:`G.419 <G.419>`, :ref:`G.420 <G.420>`, :ref:`G.421 <G.421>`, :ref:`G.422 <G.422>`, :ref:`G.423 <G.423>`, :ref:`G.424 <G.424>`, :ref:`G.425 <G.425>`, :ref:`G.426 <G.426>`, :ref:`G.427 <G.427>`, :ref:`G.428 <G.428>`, :ref:`G.429 <G.429>`, :ref:`G.430 <G.430>`, :ref:`G.431 <G.431>`, :ref:`G.432 <G.432>`, :ref:`G.433 <G.433>`, :ref:`G.434 <G.434>`, :ref:`G.435 <G.435>`, :ref:`G.436 <G.436>`, :ref:`G.437 <G.437>`, :ref:`G.438 <G.438>`, :ref:`G.439 <G.439>`, :ref:`G.440 <G.440>`, :ref:`G.441 <G.441>`, :ref:`G.442 <G.442>`, :ref:`G.468 <G.468>`, :ref:`G.473 <G.473>`, :ref:`G.487 <G.487>`, :ref:`G.488 <G.488>`, :ref:`G.490 <G.490>`, :ref:`G.491 <G.491>`, :ref:`G.492 <G.492>`, :ref:`G.493 <G.493>`, :ref:`G.494 <G.494>`, :ref:`G.496 <G.496>`, :ref:`G.497 <G.497>`, :ref:`G.499 <G.499>`, :ref:`G.500 <G.500>`, :ref:`G.501 <G.501>`, :ref:`G.502 <G.502>`, :ref:`G.505 <G.505>`, :ref:`G.506 <G.506>`, :ref:`G.512 <G.512>`, :ref:`G.513 <G.513>`, :ref:`G.515 <G.515>`, :ref:`G.516 <G.516>`, :ref:`G.517 <G.517>`, :ref:`G.518 <G.518>`, :ref:`G.520 <G.520>`, :ref:`G.523 <G.523>`, :ref:`G.524 <G.524>`, :ref:`G.525 <G.525>`
+:ref:`G.162 <G.162>`, :ref:`G.163 <G.163>`, :ref:`G.164 <G.164>`, :ref:`G.385 <G.385>`, :ref:`G.390 <G.390>`, :ref:`G.396 <G.396>`, :ref:`G.397 <G.397>`, :ref:`G.398 <G.398>`, :ref:`G.399 <G.399>`, :ref:`G.400 <G.400>`, :ref:`G.401 <G.401>`, :ref:`G.402 <G.402>`, :ref:`G.405 <G.405>`, :ref:`G.406 <G.406>`, :ref:`G.407 <G.407>`, :ref:`G.408 <G.408>`, :ref:`G.409 <G.409>`, :ref:`G.410 <G.410>`, :ref:`G.411 <G.411>`, :ref:`G.412 <G.412>`, :ref:`G.413 <G.413>`, :ref:`G.414 <G.414>`, :ref:`G.415 <G.415>`, :ref:`G.416 <G.416>`, :ref:`G.417 <G.417>`, :ref:`G.418 <G.418>`, :ref:`G.419 <G.419>`, :ref:`G.420 <G.420>`, :ref:`G.421 <G.421>`, :ref:`G.423 <G.423>`, :ref:`G.425 <G.425>`, :ref:`G.427 <G.427>`, :ref:`G.431 <G.431>`, :ref:`G.433 <G.433>`, :ref:`G.434 <G.434>`, :ref:`G.435 <G.435>`, :ref:`G.436 <G.436>`, :ref:`G.437 <G.437>`, :ref:`G.438 <G.438>`, :ref:`G.439 <G.439>`, :ref:`G.440 <G.440>`, :ref:`G.441 <G.441>`, :ref:`G.442 <G.442>`, :ref:`G.443 <G.443>`, :ref:`G.444 <G.444>`, :ref:`G.445 <G.445>`, :ref:`G.446 <G.446>`, :ref:`G.447 <G.447>`, :ref:`G.448 <G.448>`, :ref:`G.449 <G.449>`, :ref:`G.450 <G.450>`, :ref:`G.451 <G.451>`, :ref:`G.452 <G.452>`, :ref:`G.453 <G.453>`, :ref:`G.457 <G.457>`, :ref:`G.458 <G.458>`, :ref:`G.459 <G.459>`, :ref:`G.460 <G.460>`, :ref:`G.461 <G.461>`, :ref:`G.462 <G.462>`, :ref:`G.463 <G.463>`, :ref:`G.464 <G.464>`, :ref:`G.465 <G.465>`, :ref:`G.466 <G.466>`, :ref:`G.467 <G.467>`, :ref:`G.468 <G.468>`, :ref:`G.470 <G.470>`, :ref:`G.472 <G.472>`, :ref:`G.474 <G.474>`, :ref:`G.476 <G.476>`, :ref:`G.477 <G.477>`, :ref:`G.478 <G.478>`, :ref:`G.479 <G.479>`, :ref:`G.480 <G.480>`, :ref:`G.481 <G.481>`, :ref:`G.482 <G.482>`, :ref:`G.483 <G.483>`, :ref:`G.484 <G.484>`, :ref:`G.485 <G.485>`, :ref:`G.486 <G.486>`, :ref:`G.487 <G.487>`, :ref:`G.488 <G.488>`, :ref:`G.489 <G.489>`, :ref:`G.490 <G.490>`, :ref:`G.491 <G.491>`, :ref:`G.492 <G.492>`, :ref:`G.493 <G.493>`, :ref:`G.494 <G.494>`, :ref:`G.495 <G.495>`, :ref:`G.496 <G.496>`, :ref:`G.497 <G.497>`, :ref:`G.498 <G.498>`, :ref:`G.499 <G.499>`, :ref:`G.500 <G.500>`, :ref:`G.528 <G.528>`, :ref:`G.584 <G.584>`, :ref:`G.589 <G.589>`, :ref:`G.597 <G.597>`, :ref:`G.600 <G.600>`, :ref:`G.601 <G.601>`
 
 .. toctree::
    :hidden:

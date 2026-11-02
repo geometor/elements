@@ -1,17 +1,18 @@
 :canonical_id: G.470
-:original_id: XI.25
+:original_id: X.87
+:title: G.470 find the third apotome
 :volume: III
-:book: XI
+:book: X
 :type: prop
 
-G.470 — Code
-============
+G.470 find the third apotome — Code
+===================================
 
-.. rubric:: `XI.25 <https://geometor.github.io/euclid/heath/volume_III/book_xi/propositions/25/>`_
+.. rubric:: `X.87 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/087/>`_
 
 .. enunciation::
 
-   If a parallelepipedal solid be cut by a plane which is parallel to the opposite planes, then, as the base is to the base, so will the solid be to the solid.
+   Find the :term:`third apotome <G.469>`.
 
 .. picture:: g1.svg
 

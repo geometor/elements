@@ -1,85 +1,58 @@
-"""Programmatic construction for Book XIII, Proposition 1 (XIII.1).
+"""Programmatic construction for Book XI, Proposition 6 (XI.6).
 
-If a straight line be cut in extreme and mean ratio, the square on the greater
-segment added to the half of the whole is five times the square on the half.
+If two straight lines be at right angles to the same plane, the straight lines
+will be parallel.
 """
 
 from __future__ import annotations
 
+import sympy as sp
 from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure for Book XIII, Proposition 1 using geometor.model."""
-    model = Model("XIII.1")
+    """Construct the figure for Book XI, Proposition 6 using geometor.model."""
+    model = Model("XI.6")
 
-    # Straight line AB cut in extreme and mean ratio at C, with AD = 1/2 AB
-    D = model.set_point(21.0, -172.0, classes=["given"], ID="D")
-    A = model.set_point(88.0, -172.0, classes=["given"], ID="A")
-    C = model.set_point(170.0, -172.0, classes=["given"], ID="C")
-    B = model.set_point(221.0, -172.0, classes=["given"], ID="B")
+    # Perspective plane of reference corners
+    P1 = model.set_point(sp.Rational(-112, 77), sp.Rational(34, 77), label="P1")
+    P2 = model.set_point(sp.Rational(47, 77), sp.Rational(35, 77), label="P2")
+    P3 = model.set_point(sp.Rational(6, 77), sp.Rational(-53, 77), label="P3")
+    P4 = model.set_point(sp.Rational(-129, 77), sp.Rational(-53, 77), label="P4")
 
-    model.construct_line(D, B)
-    model.set_segment(D, B)
-    model.set_segment(D, C)
-    model.set_segment(D, A)
+    # 1. Let the two straight lines AB, CD be at right angles to the plane of
+    #    reference, meeting it at the points B, D.
+    B = model.set_point(0, 0, classes=["given"], ID="B")
+    A = model.set_point(0, 1, classes=["given"], ID="A")
+    D = model.set_point(sp.Rational(-85, 77), sp.Rational(-14, 77), classes=["given"], label="D")
+    C = model.set_point(sp.Rational(-86, 77), sp.Rational(75, 77), classes=["given"], label="C")
+
+    # 2. Let BD be joined, and let DE be drawn in the plane of reference at
+    #    right angles to BD, with DE made equal to AB.
+    E = model.set_point(sp.Rational(-70, 77), sp.Rational(-42, 77), label="E")
+
+    # 3. Join BE, AE, AD.
     model.set_segment(A, B)
-    model.set_segment(A, C)
-    model.set_segment(C, B)
-
-    # Square DLFC (DF) on DC, divided through A and H
-    L = model.set_point(21.0, -23.0, ID="L")
-    R = model.set_point(88.0, -23.0, ID="R")
-    F = model.set_point(170.0, -23.0, ID="F")
-    P = model.set_point(21.0, -105.0, ID="P")
-    H = model.set_point(88.0, -105.0, ID="H")
-    Q = model.set_point(170.0, -105.0, ID="Q")
-
-    # Square ABEK (AE) on AB, divided by CG
-    K = model.set_point(88.0, -305.0, ID="K")
-    G = model.set_point(170.0, -305.0, ID="G")
-    E = model.set_point(221.0, -305.0, ID="E")
-
-    # Horizontal segments in DF and AE
-    model.set_segment(L, F)
-    model.set_segment(L, R)
-    model.set_segment(R, F)
-    model.set_segment(P, Q)
-    model.set_segment(P, H)
-    model.set_segment(H, Q)
-    model.set_segment(K, E)
-    model.set_segment(K, G)
-    model.set_segment(G, E)
-
-    # Vertical segments in DF and AE
-    model.set_segment(L, D)
-    model.set_segment(L, P)
-    model.set_segment(P, D)
-    model.set_segment(R, K)
-    model.set_segment(R, H)
-    model.set_segment(H, A)
-    model.set_segment(A, K)
-    model.set_segment(F, G)
-    model.set_segment(F, Q)
-    model.set_segment(Q, C)
-    model.set_segment(C, G)
+    model.set_segment(C, D)
+    model.set_segment(B, D)
+    model.set_segment(D, E)
     model.set_segment(B, E)
+    model.set_segment(A, E)
+    model.set_segment(A, D)
 
-    # Diagonal DF
-    model.set_segment(D, F)
-    model.set_segment(D, H)
-    model.set_segment(H, F)
+    # Plane of reference boundary
+    model.set_segment(P1, P2)
+    model.set_segment(P2, P3)
+    model.set_segment(P3, P4)
+    model.set_segment(P4, P1)
+    model.set_polygon([P1, P2, P3, P4])
 
-    # Polygons (squares, rectangles, and gnomon MNO)
-    model.set_polygon([D, L, F, C])
-    model.set_polygon([A, B, E, K])
-    model.set_polygon([D, P, H, A])
-    model.set_polygon([H, R, F, Q])
-    model.set_polygon([P, L, R, H])
-    model.set_polygon([A, H, Q, C])
-    model.set_polygon([A, C, G, K])
-    model.set_polygon([C, B, E, G])
-    model.set_polygon([P, L, F, C, A, H])
+    # Triangles and planes compared in the proof
+    model.set_polygon([A, B, D])
+    model.set_polygon([E, D, B])
+    model.set_polygon([A, B, E])
+    model.set_polygon([E, D, A])
+    model.set_polygon([B, D, A, C])
 
     return model
 

@@ -1,17 +1,18 @@
 :canonical_id: G.258
-:original_id: VIII.17
+:original_id: VII.6
+:title: G.258 number parts number
 :volume: II
-:book: VIII
+:book: VII
 :type: prop
 
-G.258 — Code
-============
+G.258 number parts number — Code
+================================
 
-.. rubric:: `VIII.17 <https://geometor.github.io/euclid/heath/volume_II/book_viii/propositions/17/>`_
+.. rubric:: `VII.6 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/06/>`_
 
 .. enunciation::
 
-   If a cube number do not measure a cube number, neither will the side measure the side; and, if the side do not measure the side, neither will the cube measure the cube.
+   If a :term:`number <G.248>` be :term:`parts of <G.254>` a number, and another be the same parts of another, the sum is the same parts of the sum that the one is of the one.
 
 .. picture:: g1.svg
 

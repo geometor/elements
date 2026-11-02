@@ -1,17 +1,18 @@
 :canonical_id: G.223
-:original_id: VII.22
+:original_id: VI.13
+:title: G.223 mean proportional
 :volume: II
-:book: VII
+:book: VI
 :type: prop
 
-G.223 — Code
-============
+G.223 mean proportional — Code
+==============================
 
-.. rubric:: `VII.22 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/22/>`_
+.. rubric:: `VI.13 <https://geometor.github.io/euclid/heath/volume_II/book_vi/propositions/13/>`_
 
 .. enunciation::
 
-   The least numbers of those which have the same ratio with them are prime to one another.
+   To two given :term:`segments <G.4>` to find a mean :term:`proportional <G.180>`.
 
 .. picture:: g1.svg
 

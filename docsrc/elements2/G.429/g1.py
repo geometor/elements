@@ -1,4 +1,4 @@
-"""Programmatic construction for Book X, Proposition 102 (X.102)."""
+"""Programmatic construction for Book X, Proposition 51 (X.51)."""
 
 from __future__ import annotations
 
@@ -6,89 +6,45 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0231.g1 using geometor.model."""
-    model = Model("X.102")
+    """Construct the figure 0113.g1 using geometor.model."""
+    model = Model("X.51")
 
-    # Top line AG divided at B
-    A = model.set_point(121.0, -18.5, classes=["given"], ID="A")
-    B = model.set_point(208.0, -18.5, classes=["given"], ID="B")
-    G = model.set_point(259.0, -18.5, classes=["given"], ID="G")
+    # Number line AB divided at C
+    A = model.set_point(24.5, -19.0, classes=["given"], ID="A")
+    C = model.set_point(24.5, -94.0, classes=["given"], ID="C")
+    B = model.set_point(24.5, -145.0, classes=["given"], ID="B")
 
-    # Top edge of applied rectangles: C - F - N - K - M
-    C = model.set_point(16.5, -53.5, classes=["given"], ID="C")
-    F = model.set_point(131.0, -53.5, ID="F")
-    N = model.set_point(241.5, -53.5, ID="N")
-    K = model.set_point(310.5, -53.5, ID="K")
-    M = model.set_point(352.5, -53.5, ID="M")
+    # Single-letter magnitude segments D and H
+    D_t = model.set_point(61.5, -18.0, classes=["given"], ID="D")
+    D_b = model.set_point(61.5, -92.0, ID="D_b")
 
-    # Bottom edge of applied rectangles: D - E - O - H - L
-    D = model.set_point(16.5, -117.0, classes=["given"], ID="D")
-    E = model.set_point(131.0, -117.0, ID="E")
-    O = model.set_point(241.5, -117.0, ID="O")
-    H = model.set_point(310.5, -117.0, ID="H")
-    L = model.set_point(352.5, -117.0, ID="L")
+    H_t = model.set_point(60.5, -122.0, classes=["given"], ID="H")
+    H_b = model.set_point(60.5, -187.0, ID="H_b")
+
+    # Line EG divided at F
+    E = model.set_point(98.0, -24.0, classes=["given"], ID="E")
+    F = model.set_point(98.0, -115.0, classes=["given"], ID="F")
+    G = model.set_point(98.0, -195.0, classes=["given"], ID="G")
 
     # Base lines
-    model.construct_line(A, G)
-    model.construct_line(C, M)
-    model.construct_line(D, L)
-    model.construct_line(C, D)
-    model.construct_line(F, E)
-    model.construct_line(N, O)
-    model.construct_line(K, H)
-    model.construct_line(M, L)
+    model.construct_line(A, B)
+    model.construct_line(D_t, D_b)
+    model.construct_line(H_t, H_b)
+    model.construct_line(E, G)
 
-    # Segments on AG
-    model.set_segment(A, G)
+    # Segments
     model.set_segment(A, B)
-    model.set_segment(B, G)
-    model.set_section([A, B, G])
+    model.set_segment(A, C)
+    model.set_segment(C, B)
+    model.set_segment(D_t, D_b)
+    model.set_segment(H_t, H_b)
+    model.set_segment(E, G)
+    model.set_segment(E, F)
+    model.set_segment(F, G)
 
-    # Vertical segments
-    model.set_segment(C, D)
-    model.set_segment(F, E)
-    model.set_segment(N, O)
-    model.set_segment(K, H)
-    model.set_segment(M, L)
-
-    # Top horizontal segments
-    model.set_segment(C, M)
-    model.set_segment(C, K)
-    model.set_segment(C, N)
-    model.set_segment(C, F)
-    model.set_segment(F, M)
-    model.set_segment(F, K)
-    model.set_segment(F, N)
-    model.set_segment(N, M)
-    model.set_segment(N, K)
-    model.set_segment(K, M)
-
-    # Bottom horizontal segments
-    model.set_segment(D, L)
-    model.set_segment(D, H)
-    model.set_segment(D, O)
-    model.set_segment(D, E)
-    model.set_segment(E, L)
-    model.set_segment(E, H)
-    model.set_segment(E, O)
-    model.set_segment(O, L)
-    model.set_segment(O, H)
-    model.set_segment(H, L)
-
-    # Sections
-    model.set_section([C, F, M])
-    model.set_section([C, K, M])
-    model.set_section([F, N, M])
-
-    # Polygons (rectangles)
-    model.set_polygon([C, F, E, D])  # CE
-    model.set_polygon([C, K, H, D])  # CH
-    model.set_polygon([K, M, L, H])  # KL
-    model.set_polygon([C, M, L, D])  # CL
-    model.set_polygon([F, M, L, E])  # FL
-    model.set_polygon([F, N, O, E])  # FO
-    model.set_polygon([N, M, L, O])  # NL
-    model.set_polygon([N, K, H, O])  # NH
+    # Collinear sections
+    model.set_section([A, C, B])
+    model.set_section([E, F, G])
 
     return model
 

@@ -1,7 +1,4 @@
-"""Programmatic construction for Book VI, Proposition 30 (VI.30).
-
-To cut a given finite straight line AB in extreme and mean ratio at E.
-"""
+"""Programmatic construction for Book V, Proposition 16 (V.16)."""
 
 from __future__ import annotations
 
@@ -9,59 +6,48 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure for 0273.g1 (VI.30) using geometor.model."""
-    model = Model("VI.30")
+    """Construct the figure 0170.g1 (Book V, Prop. 16 magnitudes A, B, C, D and equimultiples E, F, G, H)."""
+    model = Model("V.16")
 
-    # 1. Points
-    A = model.set_point(27.0, -132.0, classes=["given"], ID="A")
-    B = model.set_point(129.0, -132.0, classes=["given"], ID="B")
-    C = model.set_point(27.0, -29.0, ID="C")
-    F = model.set_point(91.0, -29.0, ID="F")
-    H = model.set_point(129.0, -29.0, ID="H")
-    E = model.set_point(91.0, -132.0, ID="E")
-    G = model.set_point(27.0, -196.0, ID="G")
-    D = model.set_point(91.0, -196.0, ID="D")
+    # Left column magnitudes: A, B, E (3A), F (3B)
+    A1 = model.set_point(27.00, -18.00, classes=["given"], ID="A")
+    A2 = model.set_point(104.00, -18.00, classes=["given"], ID="A2")
+    model.set_segment(A1, A2)
 
-    # 2. Construction Lines
-    model.construct_line(A, B)
-    model.construct_line(C, G)
-    model.construct_line(F, D)
-    model.construct_line(C, H)
+    B1 = model.set_point(27.00, -45.00, classes=["given"], ID="B")
+    B2 = model.set_point(71.00, -45.00, classes=["given"], ID="B2")
+    model.set_segment(B1, B2)
 
-    # 3. Segments
-    model.set_segment(A, E)
-    model.set_segment(E, B)
-    model.set_segment(A, B)
+    E1 = model.set_point(27.00, -72.00, classes=["given"], ID="E")
+    E2 = model.set_point(103.00, -72.00, ID="E2")
+    E3 = model.set_point(180.00, -72.00, ID="E3")
+    E4 = model.set_point(256.00, -72.00, classes=["given"], ID="E4")
+    model.set_segment(E1, E4)
 
-    model.set_segment(C, F)
-    model.set_segment(F, H)
-    model.set_segment(C, H)
+    F1 = model.set_point(27.00, -99.00, classes=["given"], ID="F")
+    F2 = model.set_point(71.00, -99.00, ID="F2")
+    F3 = model.set_point(114.00, -99.00, ID="F3")
+    F4 = model.set_point(158.00, -99.00, classes=["given"], ID="F4")
+    model.set_segment(F1, F4)
 
-    model.set_segment(G, D)
+    # Right column magnitudes: C, D, G (2C), H (2D)
+    C1 = model.set_point(316.00, -18.00, classes=["given"], ID="C")
+    C2 = model.set_point(364.00, -18.00, classes=["given"], ID="C2")
+    model.set_segment(C1, C2)
 
-    model.set_segment(C, A)
-    model.set_segment(A, G)
-    model.set_segment(C, G)
+    D1 = model.set_point(316.00, -45.00, classes=["given"], ID="D")
+    D2 = model.set_point(348.00, -45.00, classes=["given"], ID="D2")
+    model.set_segment(D1, D2)
 
-    model.set_segment(F, E)
-    model.set_segment(E, D)
-    model.set_segment(F, D)
+    G1 = model.set_point(318.00, -72.00, classes=["given"], ID="G")
+    G2 = model.set_point(365.00, -72.00, ID="G2")
+    G3 = model.set_point(411.00, -72.00, classes=["given"], ID="G3")
+    model.set_segment(G1, G3)
 
-    model.set_segment(H, B)
-    model.set_segment(B, C)
-
-    # 4. Collinear Sections
-    model.set_section([A, E, B])
-    model.set_section([C, F, H])
-    model.set_section([C, A, G])
-    model.set_section([F, E, D])
-
-    # 5. Polygons (Squares & Rectangles)
-    model.set_polygon([C, H, B, A])  # Square BC
-    model.set_polygon([C, F, D, G])  # Parallelogram CD
-    model.set_polygon([A, E, D, G])  # Square AD
-    model.set_polygon([C, F, E, A])  # Rectangle CE
-    model.set_polygon([F, H, B, E])  # Remainder BF
+    H1 = model.set_point(318.00, -99.00, classes=["given"], ID="H")
+    H2 = model.set_point(348.00, -99.00, ID="H2")
+    H3 = model.set_point(378.00, -99.00, classes=["given"], ID="H3")
+    model.set_segment(H1, H3)
 
     return model
 

@@ -1,7 +1,4 @@
-"""Programmatic construction for Book VI, Proposition 21 (VI.21).
-
-Figures which are similar to the same rectilineal figure are also similar to one another.
-"""
+"""Programmatic construction for Book V, Proposition 8 Case 1 (V.8 - g1)."""
 
 from __future__ import annotations
 
@@ -9,41 +6,58 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure for 0246.g1 (VI.21) using geometor.model."""
-    model = Model("VI.21")
+    """Construct the figure 0156.g1 for Book V, Proposition 8 (Case 1) using geometor.model."""
+    model = Model("V.8.g1")
 
-    # 1. Similar rectilineal figure A
-    A1 = model.set_point(16.0, -48.0, classes=["given"], ID="A1")
-    A2 = model.set_point(166.0, -86.0, classes=["given"], ID="A2")
-    A3 = model.set_point(179.0, -153.0, classes=["given"], ID="A3")
-    A4 = model.set_point(52.0, -153.0, classes=["given"], ID="A4")
-    model.set_segment(A1, A2)
-    model.set_segment(A2, A3)
-    model.set_segment(A3, A4)
-    model.set_segment(A4, A1)
-    model.set_polygon([A1, A2, A3, A4])
+    # Magnitude AB subdivided at E
+    A = model.set_point(28.0, -28.0, classes=["given"], ID="A")
+    E = model.set_point(67.0, -28.0, ID="E")
+    B = model.set_point(145.0, -28.0, classes=["given"], ID="B")
 
-    # 2. Similar rectilineal figure B
-    B1 = model.set_point(231.0, -86.0, classes=["given"], ID="B1")
-    B2 = model.set_point(328.0, -112.0, classes=["given"], ID="B2")
-    B3 = model.set_point(336.0, -154.0, classes=["given"], ID="B3")
-    B4 = model.set_point(254.0, -154.0, classes=["given"], ID="B4")
-    model.set_segment(B1, B2)
-    model.set_segment(B2, B3)
-    model.set_segment(B3, B4)
-    model.set_segment(B4, B1)
-    model.set_polygon([B1, B2, B3, B4])
+    # Standalone magnitude C
+    C_1 = model.set_point(28.0, -52.0, classes=["given"], ID="C_1")
+    C_2 = model.set_point(106.0, -52.0, classes=["given"], ID="C_2")
 
-    # 3. Similar rectilineal figure C
-    C1 = model.set_point(397.0, -102.0, classes=["given"], ID="C1")
-    C2 = model.set_point(468.0, -121.0, classes=["given"], ID="C2")
-    C3 = model.set_point(474.0, -154.0, classes=["given"], ID="C3")
-    C4 = model.set_point(415.0, -154.0, classes=["given"], ID="C4")
-    model.set_segment(C1, C2)
-    model.set_segment(C2, C3)
-    model.set_segment(C3, C4)
-    model.set_segment(C4, C1)
-    model.set_polygon([C1, C2, C3, C4])
+    # Magnitude FH subdivided at G (with intermediate multiple marks F_1, G_1)
+    F = model.set_point(28.0, -76.0, ID="F")
+    F_1 = model.set_point(69.0, -76.0, ID="F_1")
+    G = model.set_point(109.0, -76.0, ID="G")
+    G_1 = model.set_point(188.0, -76.0, ID="G_1")
+    H = model.set_point(267.0, -76.0, ID="H")
+
+    # Standalone magnitudes K, D, L, M, N
+    K_1 = model.set_point(28.0, -100.0, ID="K_1")
+    K_2 = model.set_point(186.0, -100.0, ID="K_2")
+    D_1 = model.set_point(28.0, -127.0, classes=["given"], ID="D_1")
+    D_2 = model.set_point(75.0, -127.0, classes=["given"], ID="D_2")
+    L_1 = model.set_point(28.0, -153.0, ID="L_1")
+    L_2 = model.set_point(122.0, -153.0, ID="L_2")
+    M_1 = model.set_point(28.0, -176.0, ID="M_1")
+    M_2 = model.set_point(170.0, -176.0, ID="M_2")
+    N_1 = model.set_point(28.0, -200.0, ID="N_1")
+    N_2 = model.set_point(218.0, -200.0, ID="N_2")
+
+    # Base lines
+    model.construct_line(A, B)
+    model.construct_line(F, H)
+
+    # Segments along AB
+    model.set_segment(A, B)
+    model.set_segment(A, E)
+    model.set_segment(E, B)
+
+    # Segments along FH
+    model.set_segment(F, H)
+    model.set_segment(F, G)
+    model.set_segment(G, H)
+
+    # Standalone magnitudes C, K, D, L, M, N
+    model.set_segment(C_1, C_2)
+    model.set_segment(K_1, K_2)
+    model.set_segment(D_1, D_2)
+    model.set_segment(L_1, L_2)
+    model.set_segment(M_1, M_2)
+    model.set_segment(N_1, N_2)
 
     return model
 

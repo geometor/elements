@@ -1,8 +1,6 @@
-"""Programmatic construction for Book III, Proposition 19 (III.19).
+"""Programmatic construction for Book II, Proposition 14 (II.14).
 
-If a straight line touch a circle, and from the point of contact a straight
-line be drawn at right angles to the tangent, the centre of the circle will be
-on the straight line so drawn.
+To construct a square equal to a given rectilineal figure.
 """
 
 from __future__ import annotations
@@ -12,31 +10,45 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure for Book III, Proposition 19 using geometor.model."""
-    model = Model("III.19")
+    """Construct the figure for Book II, Proposition 14 using geometor.model."""
+    model = Model("II.14")
 
-    # 1. Circle ABC touched by straight line DE at C, and CA drawn at right angles to DE.
-    O = model.set_point(0, 0, ID="O")
+    # 1. Rectangular parallelogram BCDE (BD) equal to the given rectilineal figure A
+    B = model.set_point(0, 0, classes=["given"], ID="B")
     C = model.set_point(0, -1, classes=["given"], ID="C")
-    A = model.set_point(0, 1, classes=["given"], ID="A")
-    B = model.set_point(sp.Rational(60, 61), sp.Rational(11, 61), label="B")
+    D = model.set_point(3, -1, classes=["given"], ID="D")
+    E = model.set_point(3, 0, classes=["given"], ID="E")
+    model.set_polygon([B, C, D, E])
 
-    circle_ABC = model.construct_circle(O, C)
+    # 2. Produce BE to F with EF = ED
+    model.construct_line(B, E)
+    F = model.set_point(4, 0, ID="F")
 
-    D = model.set_point(sp.Rational(-43, 40), -1, label="D")
-    E = model.set_point(sp.Rational(109, 80), -1, label="E")
+    # 3. Bisect BF at G
+    G = model.set_point(2, 0, ID="G")
 
-    line_DE = model.construct_line(D, E)
-    model.set_segment(D, C)
-    model.set_segment(C, E)
-    model.set_segment(D, E)
-    model.set_section([D, C, E])
+    # 4. With centre G and distance GB or GF describe the semicircle BHF
+    model.construct_circle(G, B)
 
-    model.set_segment(C, A)
+    # 5. Produce DE to H on the semicircle, and join GH
+    model.construct_line(D, E)
+    H = model.set_point(3, sp.sqrt(3), label="H")
 
-    # 2. Reductio: suppose F is the centre, and join CF.
-    F = model.set_point(sp.Rational(13, 40), sp.Rational(3, 40), label="F")
-    model.set_segment(C, F)
+    # Right triangle GEH
+    model.set_polygon([G, E, H])
+
+    # Collinear sections
+    model.set_section([B, G, F])
+    model.set_section([B, E, F])
+    model.set_section([D, E, H])
+
+    # Segments
+    for p1, p2 in [
+        (B, C), (C, D), (D, E), (B, E),
+        (E, F), (B, F), (G, B), (G, F), (G, E),
+        (E, H), (D, H), (G, H),
+    ]:
+        model.set_segment(p1, p2)
 
     return model
 

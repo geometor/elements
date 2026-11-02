@@ -1,17 +1,18 @@
 :canonical_id: G.206
-:original_id: VII.7
+:original_id: V.23
+:title: G.206 there magnitudes others
 :volume: II
-:book: VII
+:book: V
 :type: prop
 
-G.206 — Code
-============
+G.206 there magnitudes others — Code
+====================================
 
-.. rubric:: `VII.7 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/07/>`_
+.. rubric:: `V.23 <https://geometor.github.io/euclid/heath/volume_II/book_v/propositions/23/>`_
 
 .. enunciation::
 
-   If a number be that part of a number, which a number subtracted is of a number subtracted, the remainder is the same part of the remainder that the whole is of the whole.
+   If there be three magnitudes, and others equal to them in multitude, which taken two and two together are :term:`in the same ratio <G.176>`, and the :term:`proportion of them be perturbed <G.203>`, they is in the same ratio :term:`ex aequali <G.174>`.
 
 .. picture:: g1.svg
 

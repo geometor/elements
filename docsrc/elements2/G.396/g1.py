@@ -1,4 +1,4 @@
-"""Programmatic construction for Book X, Proposition 75 (X.75)."""
+"""Programmatic construction for Book X, Proposition 22 (X.22)."""
 
 from __future__ import annotations
 
@@ -6,54 +6,50 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0165.g1 using geometor.model."""
-    model = Model("X.75")
+    """Construct the figure 0055.g1 using geometor.model."""
+    model = Model("X.22")
 
-    # Medial straight line AB with medial straight line CB subtracted, leaving AC
-    A = model.set_point(129.0, -21.5, classes=["given"], ID="A")
-    C = model.set_point(161.0, -21.5, classes=["given"], ID="C")
-    B = model.set_point(276.0, -21.5, classes=["given"], ID="B")
+    # Medial straight line A
+    A_t = model.set_point(21.5, -58.0, classes=["given"], ID="A")
+    A_b = model.set_point(21.5, -133.0, classes=["given"], ID="A_b")
 
-    # Rectangle DE applied to rational straight line DI, divided by FH into DH and FE
-    D = model.set_point(17.0, -53.0, classes=["given"], ID="D")
-    F = model.set_point(378.5, -53.0, ID="F")
-    G = model.set_point(388.5, -53.0, ID="G")
-    I = model.set_point(17.0, -153.5, classes=["given"], ID="I")
-    H = model.set_point(378.5, -153.5, ID="H")
-    E = model.set_point(388.5, -153.5, ID="E")
+    # Rectangle BD on rational line BC with breadth CD
+    B = model.set_point(72.0, -18.5, classes=["given"], ID="B")
+    C = model.set_point(72.0, -171.5, classes=["given"], ID="C")
+    D = model.set_point(109.5, -171.5, ID="D")
+    B_r = model.set_point(109.5, -18.5, ID="B_r")
+
+    # Rectangle GF contained by rational straight lines EG, EF
+    G = model.set_point(173.5, -68.5, classes=["given"], ID="G")
+    E = model.set_point(173.5, -171.0, classes=["given"], ID="E")
+    F = model.set_point(228.5, -171.0, classes=["given"], ID="F")
+    G_r = model.set_point(228.5, -68.5, ID="G_r")
 
     # Base lines
-    model.construct_line(A, B)
-    model.construct_line(D, G)
-    model.construct_line(I, E)
-    model.construct_line(D, I)
-    model.construct_line(F, H)
+    model.construct_line(A_t, A_b)
+    model.construct_line(B, C)
+    model.construct_line(C, D)
+    model.construct_line(D, B_r)
+    model.construct_line(B, B_r)
     model.construct_line(G, E)
+    model.construct_line(E, F)
+    model.construct_line(F, G_r)
+    model.construct_line(G, G_r)
 
     # Segments
-    model.set_segment(A, B)
-    model.set_segment(A, C)
-    model.set_segment(C, B)
-
-    model.set_segment(D, I)
-    model.set_segment(F, H)
+    model.set_segment(A_t, A_b)
+    model.set_segment(B, C)
+    model.set_segment(C, D)
+    model.set_segment(D, B_r)
+    model.set_segment(B, B_r)
     model.set_segment(G, E)
-    model.set_segment(D, G)
-    model.set_segment(D, F)
-    model.set_segment(F, G)
-    model.set_segment(I, E)
-    model.set_segment(I, H)
-    model.set_segment(H, E)
+    model.set_segment(E, F)
+    model.set_segment(F, G_r)
+    model.set_segment(G, G_r)
 
-    # Sections
-    model.set_section([A, C, B])
-    model.set_section([D, F, G])
-    model.set_section([I, H, E])
-
-    # Polygons
-    model.set_polygon([D, I, E, G])
-    model.set_polygon([D, I, H, F])
-    model.set_polygon([F, H, E, G])
+    # Polygons: rectangles BD and GF
+    model.set_polygon([B, C, D, B_r])
+    model.set_polygon([G, E, F, G_r])
 
     return model
 

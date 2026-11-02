@@ -1,8 +1,6 @@
-"""Programmatic construction for Book I, Proposition 8 (I.8).
+"""Programmatic construction for Book I, Postulate 3 (I.post.3 — construct a circle).
 
-If two triangles have the two sides equal to two sides respectively, and have
-also the base equal to the base, they will also have the angles equal which are
-contained by the equal straight lines.
+Construct a circle with any center and radius.
 """
 
 from __future__ import annotations
@@ -11,34 +9,12 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure for Book I, Proposition 8 using geometor.model."""
-    model = Model("I.8")
-
-    # 1. Triangle ABC
-    A = model.set_point(45, -36, classes=["given"], ID="A")
-    B = model.set_point(19, -130, classes=["given"], ID="B")
-    C = model.set_point(96, -104, classes=["given"], ID="C")
-
+    """Construct circle ( B C D ) with center A and radius / A B /."""
+    model = Model("I.post.3")
+    A = model.set_point(0, 0, classes=["given"], ID="A")
+    B = model.set_point(1, 0, classes=["given"], ID="B")
     model.set_segment(A, B)
-    model.set_segment(A, C)
-    model.set_segment(B, C)
-    model.set_polygon([A, B, C])
-
-    # 2. Triangle DEF and hypothetical displaced configuration EGF
-    D = model.set_point(194, -34, classes=["given"], ID="D")
-    E = model.set_point(170, -130, classes=["given"], ID="E")
-    F = model.set_point(247, -104, classes=["given"], ID="F")
-    G = model.set_point(223, -36, ID="G")
-
-    model.set_segment(D, E)
-    model.set_segment(D, F)
-    model.set_segment(E, F)
-    model.set_segment(E, G)
-    model.set_segment(G, F)
-
-    model.set_polygon([D, E, F])
-    model.set_polygon([G, E, F])
-
+    model.construct_circle(A, B)
     return model
 
 

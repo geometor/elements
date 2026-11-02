@@ -1,17 +1,18 @@
 :canonical_id: G.445
-:original_id: XI.3
+:original_id: X.65
+:title: G.445 square side sum
 :volume: III
-:book: XI
+:book: X
 :type: prop
 
-G.445 — Code
-============
+G.445 square side sum — Code
+============================
 
-.. rubric:: `XI.3 <https://geometor.github.io/euclid/heath/volume_III/book_xi/propositions/03/>`_
+.. rubric:: `X.65 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/065/>`_
 
 .. enunciation::
 
-   If two planes cut one another, their common section is a straight line.
+   The :term:`square <G.63>` on the side of the sum of two medial areas applied to a :term:`rational <G.391>` :term:`segment <G.4>` produces as breadth the :term:`sixth binomial <G.432>`.
 
 .. picture:: g1.svg
 

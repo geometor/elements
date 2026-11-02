@@ -1,4 +1,4 @@
-"""Programmatic construction for Book X, Proposition 38 (X.38)."""
+"""Programmatic construction for Book IX, Proposition 22 (IX.22)."""
 
 from __future__ import annotations
 
@@ -6,52 +6,36 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0089.g1 using geometor.model."""
-    model = Model("X.38")
+    """Construct the figure 0420.g1 using geometor.model."""
+    model = Model("IX.22")
 
-    # Straight line AC divided into medial straight lines AB, BC
-    A = model.set_point(70.0, -17.5, classes=["given"], ID="A")
-    B = model.set_point(148.5, -17.5, classes=["given"], ID="B")
-    C = model.set_point(202.0, -17.5, classes=["given"], ID="C")
+    # Subdivided horizontal number segment AE (divided at B, C, D)
+    A = model.set_point(15.0, -27.5, classes=["given"], ID="A")
+    B = model.set_point(65.0, -27.5, ID="B")
+    C = model.set_point(175.0, -27.5, ID="C")
+    D = model.set_point(260.0, -27.5, ID="D")
+    E = model.set_point(310.0, -27.5, classes=["given"], ID="E")
 
-    # Parallelogram DF (D, H, G on top; E, H_b, F on bottom)
-    D = model.set_point(19.5, -48.0, classes=["given"], ID="D")
-    H = model.set_point(148.5, -48.0, ID="H")
-    G = model.set_point(249.5, -48.0, ID="G")
-    E = model.set_point(19.5, -125.0, classes=["given"], ID="E")
-    H_b = model.set_point(148.5, -125.0, ID="H_b")
-    F = model.set_point(249.5, -125.0, ID="F")
+    # Base line
+    model.construct_line(A, E)
 
-    # Base lines
-    model.construct_line(A, C)
-    model.construct_line(D, G)
-    model.construct_line(E, F)
-    model.construct_line(D, E)
-    model.construct_line(H, H_b)
-    model.construct_line(G, F)
-
-    # Segments
-    model.set_segment(A, C)
+    # Whole and subdivided segments on AE
+    model.set_segment(A, E)
     model.set_segment(A, B)
     model.set_segment(B, C)
+    model.set_segment(C, D)
     model.set_segment(D, E)
-    model.set_segment(D, G)
-    model.set_segment(D, H)
-    model.set_segment(H, G)
-    model.set_segment(E, F)
-    model.set_segment(E, H_b)
-    model.set_segment(H_b, F)
-    model.set_segment(H, H_b)
-    model.set_segment(G, F)
+    model.set_segment(A, C)
+    model.set_segment(A, D)
+    model.set_segment(B, D)
+    model.set_segment(B, E)
+    model.set_segment(C, E)
 
-    # Sections
+    # Collinear sections
     model.set_section([A, B, C])
-    model.set_section([D, H, G])
-
-    # Polygons: whole parallelogram DF and constituent rectangles EH, HF
-    model.set_polygon([D, E, F, G])
-    model.set_polygon([D, E, H_b, H])
-    model.set_polygon([H, H_b, F, G])
+    model.set_section([B, C, D])
+    model.set_section([C, D, E])
+    model.set_section([A, C, E])
 
     return model
 

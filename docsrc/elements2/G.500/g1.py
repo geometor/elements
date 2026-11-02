@@ -1,9 +1,4 @@
-"""Programmatic construction for Book XII, Proposition 13 (XII.13).
-
-Cylinder AD cut by plane GH parallel to opposite planes AB, CD, with axis EF
-produced to L and M, and circles PQ, RS, AB, GH, CD, TU, VW about centers
-L, N, E, K, F, O, M.
-"""
+"""Programmatic construction for Book X, Proposition 114 (X.114)."""
 
 from __future__ import annotations
 
@@ -11,59 +6,55 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0421.g1 using geometor.model."""
-    model = Model("XII.13")
+    """Construct the figure 0256.g1 using geometor.model."""
+    model = Model("X.114")
 
-    # Axis centers from left to right
-    L = model.set_point(41.0, -60.5, classes=["given"], ID="L")
-    N = model.set_point(96.0, -60.5, classes=["given"], ID="N")
-    E = model.set_point(158.0, -60.5, classes=["given"], ID="E")
-    K = model.set_point(221.0, -60.5, classes=["given"], ID="K")
-    F = model.set_point(256.0, -60.5, classes=["given"], ID="F")
-    O = model.set_point(289.0, -60.5, classes=["given"], ID="O")
-    M = model.set_point(321.0, -60.5, classes=["given"], ID="M")
+    # Line AF divided at B
+    A = model.set_point(55.0, -19.0, classes=["given"], ID="A")
+    B = model.set_point(128.0, -19.0, classes=["given"], ID="B")
+    F = model.set_point(168.0, -19.0, classes=["given"], ID="F")
 
-    # Top generator points
-    P = model.set_point(41.0, -25.0, classes=["given"], ID="P")
-    R = model.set_point(96.0, -25.0, classes=["given"], ID="R")
-    A = model.set_point(158.0, -25.0, classes=["given"], ID="A")
-    G = model.set_point(221.0, -25.0, classes=["given"], ID="G")
-    C = model.set_point(256.0, -25.0, classes=["given"], ID="C")
-    T = model.set_point(289.0, -25.0, classes=["given"], ID="T")
-    V = model.set_point(321.0, -25.0, classes=["given"], ID="V")
+    # Line CD divided at E
+    C = model.set_point(17.0, -49.5, classes=["given"], ID="C")
+    E = model.set_point(164.0, -49.5, classes=["given"], ID="E")
+    D = model.set_point(217.0, -49.5, classes=["given"], ID="D")
 
-    # Bottom generator points
-    Q = model.set_point(41.0, -96.0, classes=["given"], ID="Q")
-    S = model.set_point(96.0, -96.0, classes=["given"], ID="S")
-    B = model.set_point(158.0, -96.0, classes=["given"], ID="B")
-    H = model.set_point(221.0, -96.0, classes=["given"], ID="H")
-    D = model.set_point(256.0, -96.0, classes=["given"], ID="D")
-    U = model.set_point(289.0, -96.0, classes=["given"], ID="U")
-    W = model.set_point(321.0, -96.0, classes=["given"], ID="W")
+    # Single-letter magnitude segments G and H
+    G_l = model.set_point(49.0, -81.0, classes=["given"], ID="G")
+    G_r = model.set_point(171.0, -81.0, ID="G_r")
 
-    # Circular sections (modeled as circles in 3D, rendered as ellipses in SVG)
-    for center, top in [
-        (L, P), (N, R), (E, A), (K, G), (F, C), (O, T), (M, V),
-    ]:
-        model.construct_circle(center, top)
+    H_l = model.set_point(38.0, -111.5, classes=["given"], ID="H")
+    H_r = model.set_point(182.0, -111.5, ID="H_r")
 
-    # Generator segments and axis sub-segments
-    for p1, p2 in [
-        (P, V), (Q, W),
-        (L, N), (N, E), (E, K), (K, F), (F, O), (O, M),
-        (E, F), (L, M), (K, L), (K, M),
-    ]:
-        model.set_segment(p1, p2)
+    # Line KM divided at L
+    K = model.set_point(35.0, -143.5, ID="K")
+    L = model.set_point(133.0, -143.5, ID="L")
+    M = model.set_point(185.0, -143.5, ID="M")
 
-    # Cylindrical sub-regions
-    model.set_polygon([A, B, D, C])  # Cylinder AD
-    model.set_polygon([A, B, H, G])  # Cylinder BG / GB
-    model.set_polygon([G, H, D, C])  # Cylinder GD
-    model.set_polygon([P, Q, W, V])  # Cylinder PW
-    model.set_polygon([P, Q, S, R])  # Cylinder QR
-    model.set_polygon([R, S, B, A])  # Cylinder RB
-    model.set_polygon([P, Q, H, G])  # Cylinder QG
-    model.set_polygon([G, H, W, V])  # Cylinder WG / GW
+    # Base lines
+    model.construct_line(A, F)
+    model.construct_line(C, D)
+    model.construct_line(G_l, G_r)
+    model.construct_line(H_l, H_r)
+    model.construct_line(K, M)
+
+    # Segments
+    model.set_segment(A, F)
+    model.set_segment(A, B)
+    model.set_segment(B, F)
+    model.set_segment(C, D)
+    model.set_segment(C, E)
+    model.set_segment(E, D)
+    model.set_segment(G_l, G_r)
+    model.set_segment(H_l, H_r)
+    model.set_segment(K, M)
+    model.set_segment(K, L)
+    model.set_segment(L, M)
+
+    # Sections
+    model.set_section([A, B, F])
+    model.set_section([C, E, D])
+    model.set_section([K, L, M])
 
     return model
 

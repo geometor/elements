@@ -1,17 +1,18 @@
 :canonical_id: G.134
-:original_id: IV.16
+:original_id: III.27
+:title: G.134 equal circles angles
 :volume: II
-:book: IV
+:book: III
 :type: prop
 
-G.134 — Code
-============
+G.134 equal circles angles — Code
+=================================
 
-.. rubric:: `IV.16 <https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/16/>`_
+.. rubric:: `III.27 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/27/>`_
 
 .. enunciation::
 
-   Inscribe in a given circle a fifteen-angled figure which shall be both equilateral and equiangular.
+   In :term:`equal circles <G.131>` :term:`angles <G.22>` standing on equal arcs are equal, whether they stand at the :term:`centres <G.14>` or at the arcs.
 
 .. picture:: g1.svg
 

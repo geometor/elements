@@ -1,17 +1,18 @@
 :canonical_id: G.162
-:original_id: V.25
+:original_id: IV.10
+:title: G.162 golden isosceles triangle
 :volume: II
-:book: V
+:book: IV
 :type: prop
 
-G.162 — Code
-============
+G.162 golden isosceles triangle — Code
+======================================
 
-.. rubric:: `V.25 <https://geometor.github.io/euclid/heath/volume_II/book_v/propositions/25/>`_
+.. rubric:: `IV.10 <https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/10/>`_
 
 .. enunciation::
 
-   If four magnitudes be proportional, the greatest and the least are greater than the remaining two.
+   Construct an :term:`isosceles triangle <G.12>` having each of the :term:`angles <G.22>` at the base double of the remaining one.
 
 .. picture:: g1.svg
 

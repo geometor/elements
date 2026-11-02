@@ -1,58 +1,75 @@
-"""Programmatic construction for Book XI, Proposition 8 (XI.8).
-
-If two straight lines be parallel, and one of them be at right angles to any
-plane, the remaining one will also be at right angles to the same plane.
-"""
+"""Programmatic construction for Book X, Proposition 71 (X.71)."""
 
 from __future__ import annotations
 
-import sympy as sp
 from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure for Book XI, Proposition 8 using geometor.model."""
-    model = Model("XI.8")
+    """Construct the figure 0156.g1 using geometor.model."""
+    model = Model("X.71")
 
-    # Plane of reference boundary corners
-    P1 = model.set_point(sp.Rational(-20, 102), sp.Rational(45, 102), label="P1")
-    P2 = model.set_point(sp.Rational(148, 102), sp.Rational(45, 102), label="P2")
-    P3 = model.set_point(sp.Rational(101, 102), sp.Rational(-56, 102), label="P3")
-    P4 = model.set_point(sp.Rational(-39, 102), sp.Rational(-56, 102), label="P4")
+    # Left area AD composed of rational area AB and medial area CD
+    A = model.set_point(21.0, -18.5, classes=["given"], ID="A")
+    C = model.set_point(83.5, -18.5, classes=["given"], ID="C")
+    C_r = model.set_point(107.0, -18.5, ID="C_r")
+    A_b = model.set_point(21.0, -172.0, ID="A_b")
+    B = model.set_point(83.5, -172.0, classes=["given"], ID="B")
+    D = model.set_point(107.0, -172.0, classes=["given"], ID="D")
 
-    # 1. Let AB, CD be two parallel straight lines, and let AB be at right
-    #    angles to the plane of reference, meeting it at B, D.
-    B = model.set_point(0, 0, classes=["given"], ID="B")
-    A = model.set_point(0, 1, classes=["given"], ID="A")
-    D = model.set_point(sp.Rational(100, 102), 0, classes=["given"], label="D")
-    C = model.set_point(sp.Rational(100, 102), sp.Rational(100, 102), classes=["given"], label="C")
+    # Right rectangle EI applied to rational straight line EF
+    E = model.set_point(221.5, -47.5, classes=["given"], ID="E")
+    H = model.set_point(312.5, -47.5, ID="H")
+    K = model.set_point(367.5, -47.5, ID="K")
+    F = model.set_point(221.5, -156.0, classes=["given"], ID="F")
+    G = model.set_point(312.5, -156.0, ID="G")
+    I = model.set_point(367.5, -156.0, ID="I")
 
-    # 2. Let BD be joined, and let DE be drawn in the plane of reference at
-    #    right angles to BD, with DE equal to AB.
-    E = model.set_point(sp.Rational(85, 102), sp.Rational(-42, 102), label="E")
+    # Base lines
+    model.construct_line(A, C_r)
+    model.construct_line(A_b, D)
+    model.construct_line(A, A_b)
+    model.construct_line(C, B)
+    model.construct_line(C_r, D)
 
-    # 3. Join BE, AE, AD.
-    model.set_segment(A, B)
-    model.set_segment(C, D)
+    model.construct_line(E, K)
+    model.construct_line(F, I)
+    model.construct_line(E, F)
+    model.construct_line(H, G)
+    model.construct_line(K, I)
+
+    # Segments
+    model.set_segment(A, C_r)
+    model.set_segment(A, C)
+    model.set_segment(C, C_r)
+    model.set_segment(A_b, D)
+    model.set_segment(A_b, B)
     model.set_segment(B, D)
-    model.set_segment(D, E)
-    model.set_segment(B, E)
-    model.set_segment(A, E)
-    model.set_segment(A, D)
+    model.set_segment(A, A_b)
+    model.set_segment(C, B)
+    model.set_segment(C_r, D)
 
-    # Plane of reference boundary
-    model.set_segment(P1, P2)
-    model.set_segment(P2, P3)
-    model.set_segment(P3, P4)
-    model.set_segment(P4, P1)
-    model.set_polygon([P1, P2, P3, P4])
+    model.set_segment(E, K)
+    model.set_segment(E, H)
+    model.set_segment(H, K)
+    model.set_segment(F, I)
+    model.set_segment(F, G)
+    model.set_segment(G, I)
+    model.set_segment(E, F)
+    model.set_segment(H, G)
+    model.set_segment(K, I)
 
-    # Planes and triangles in the proof
-    model.set_polygon([A, B, D])
-    model.set_polygon([E, D, B])
-    model.set_polygon([A, B, E])
-    model.set_polygon([E, D, A])
-    model.set_polygon([A, B, D, C])
+    # Sections
+    model.set_section([E, H, K])
+    model.set_section([F, G, I])
+
+    # Polygons
+    model.set_polygon([A, A_b, B, C])
+    model.set_polygon([C, B, D, C_r])
+    model.set_polygon([A, A_b, D, C_r])
+    model.set_polygon([E, F, G, H])
+    model.set_polygon([H, G, I, K])
+    model.set_polygon([E, F, I, K])
 
     return model
 

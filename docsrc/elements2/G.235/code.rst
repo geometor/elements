@@ -1,28 +1,20 @@
 :canonical_id: G.235
-:original_id: VII.34
+:original_id: VI.23
+:title: G.235 equiangular parallelograms ratio
 :volume: II
-:book: VII
+:book: VI
 :type: prop
 
-G.235 — Code
-============
+G.235 equiangular parallelograms ratio — Code
+=============================================
 
-.. rubric:: `VII.34 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/34/>`_
+.. rubric:: `VI.23 <https://geometor.github.io/euclid/heath/volume_II/book_vi/propositions/23/>`_
 
 .. enunciation::
 
-   Given two numbers, to find the least number which they measure.
-
-.. rubric:: ``g1.py``
+   Equiangular parallelograms have to one another the :term:`ratio <G.173>` compounded of the ratios of their sides.
 
 .. picture:: g1.svg
 
 .. literalinclude:: g1.py
-   :language: python
-
-.. rubric:: ``g2.py``
-
-.. picture:: g2.svg
-
-.. literalinclude:: g2.py
    :language: python

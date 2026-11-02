@@ -1,17 +1,18 @@
 :canonical_id: G.317
-:original_id: X.4
-:volume: III
-:book: X
+:original_id: VIII.17
+:title: G.317 cube number measure
+:volume: II
+:book: VIII
 :type: prop
 
-G.317 — Code
-============
+G.317 cube number measure — Code
+================================
 
-.. rubric:: `X.4 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/004/>`_
+.. rubric:: `VIII.17 <https://geometor.github.io/euclid/heath/volume_II/book_viii/propositions/17/>`_
 
 .. enunciation::
 
-   Given three commensurable magnitudes, to find their greatest common measure.
+   If a :term:`cube number <G.311>` do not :term:`measure <G.169>` a cube number, neither will the side measure the side; and, if the side do not measure the side, neither will the cube measure the cube.
 
 .. picture:: g1.svg
 

@@ -1,17 +1,18 @@
 :canonical_id: G.72
-:original_id: II.11
+:original_id: I.43
+:title: G.72 complements of parallelograms about the diagonal are equal
 :volume: I
-:book: II
+:book: I
 :type: prop
 
-G.72 — Code
-===========
+G.72 complements of parallelograms about the diagonal are equal — Code
+======================================================================
 
-.. rubric:: `II.11 <https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/11/>`_
+.. rubric:: `I.43 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/43/>`_
 
 .. enunciation::
 
-   Cut a given straight line so that the rectangle contained by the whole and one of the segments is equal to the square on the remaining segment.
+   In any parallelogram, the complements of the parallelograms about the diagonal are equal in area.
 
 .. picture:: g1.svg
 

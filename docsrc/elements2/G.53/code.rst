@@ -1,17 +1,18 @@
 :canonical_id: G.53
-:original_id: I.40
+:original_id: I.27
+:title: G.53 equal alternate interior angles imply parallel lines
 :volume: I
 :book: I
 :type: prop
 
-G.53 — Code
-===========
+G.53 equal alternate interior angles imply parallel lines — Code
+================================================================
 
-.. rubric:: `I.40 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/40/>`_
+.. rubric:: `I.27 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/27/>`_
 
 .. enunciation::
 
-   Equal triangles on equal bases and on the same side lie in the same parallels.
+   If a transversal cutting two :term:`lines <G.2>` makes the alternate interior :term:`angles <G.22>` equal, the lines are :term:`parallel <G.52>`.
 
 .. picture:: g1.svg
 

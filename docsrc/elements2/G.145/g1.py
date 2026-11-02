@@ -1,4 +1,4 @@
-"""Programmatic construction for Book V, Proposition 8 Case 1 (V.8 - g1)."""
+"""Programmatic construction for Book III, Proposition 37 (III.37)."""
 
 from __future__ import annotations
 
@@ -6,58 +6,40 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0156.g1 for Book V, Proposition 8 (Case 1) using geometor.model."""
-    model = Model("V.8.g1")
+    """Construct the figure 0082.g1 using geometor.model."""
+    model = Model("III.37")
 
-    # Magnitude AB subdivided at E
-    A = model.set_point(28.0, -28.0, classes=["given"], ID="A")
-    E = model.set_point(67.0, -28.0, ID="E")
-    B = model.set_point(145.0, -28.0, classes=["given"], ID="B")
+    # Circle ABC with center F(156, -84), radius 52 (y-inverted)
+    F = model.set_point(156.0, -84.0, ID="F")
+    E = model.set_point(156.0, -32.0, ID="E")
+    D = model.set_point(24.0, -32.0, classes=["given"], ID="D")
+    B = model.set_point(120.54, -122.02, classes=["given"], ID="B")
+    C = model.set_point(104.08, -81.19, ID="C")
+    A = model.set_point(181.97, -129.04, ID="A")
 
-    # Standalone magnitude C
-    C_1 = model.set_point(28.0, -52.0, classes=["given"], ID="C_1")
-    C_2 = model.set_point(106.0, -52.0, classes=["given"], ID="C_2")
+    # Circle ABC
+    model.construct_circle(F, E)
 
-    # Magnitude FH subdivided at G (with intermediate multiple marks F_1, G_1)
-    F = model.set_point(28.0, -76.0, ID="F")
-    F_1 = model.set_point(69.0, -76.0, ID="F_1")
-    G = model.set_point(109.0, -76.0, ID="G")
-    G_1 = model.set_point(188.0, -76.0, ID="G_1")
-    H = model.set_point(267.0, -76.0, ID="H")
+    # Segments
+    model.set_segment(D, E)
+    model.set_segment(D, B)
+    model.set_segment(A, D)
+    model.set_segment(A, C)
+    model.set_segment(C, D)
+    model.set_segment(F, E)
+    model.set_segment(F, B)
+    model.set_segment(F, D)
 
-    # Standalone magnitudes K, D, L, M, N
-    K_1 = model.set_point(28.0, -100.0, ID="K_1")
-    K_2 = model.set_point(186.0, -100.0, ID="K_2")
-    D_1 = model.set_point(28.0, -127.0, classes=["given"], ID="D_1")
-    D_2 = model.set_point(75.0, -127.0, classes=["given"], ID="D_2")
-    L_1 = model.set_point(28.0, -153.0, ID="L_1")
-    L_2 = model.set_point(122.0, -153.0, ID="L_2")
-    M_1 = model.set_point(28.0, -176.0, ID="M_1")
-    M_2 = model.set_point(170.0, -176.0, ID="M_2")
-    N_1 = model.set_point(28.0, -200.0, ID="N_1")
-    N_2 = model.set_point(218.0, -200.0, ID="N_2")
+    # Section
+    model.set_section([D, C, A])
 
-    # Base lines
-    model.construct_line(A, B)
-    model.construct_line(F, H)
+    # Polygons
+    model.set_polygon([F, E, D])
+    model.set_polygon([F, B, D])
 
-    # Segments along AB
-    model.set_segment(A, B)
-    model.set_segment(A, E)
-    model.set_segment(E, B)
-
-    # Segments along FH
-    model.set_segment(F, H)
-    model.set_segment(F, G)
-    model.set_segment(G, H)
-
-    # Standalone magnitudes C, K, D, L, M, N
-    model.set_segment(C_1, C_2)
-    model.set_segment(K_1, K_2)
-    model.set_segment(D_1, D_2)
-    model.set_segment(L_1, L_2)
-    model.set_segment(M_1, M_2)
-    model.set_segment(N_1, N_2)
+    # Angles
+    model.set_wedge(E, F, F, D)
+    model.set_wedge(B, D, D, F)
 
     return model
 

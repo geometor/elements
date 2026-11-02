@@ -1,4 +1,7 @@
-"""Programmatic construction for Book VII, Proposition 12 (VII.12)."""
+"""Programmatic construction for Book VI, Proposition 3 (VI.3).
+
+If an angle of a triangle be bisected and the straight line cutting the angle cut the base also, the segments of the base will have the same ratio as the remaining sides of the triangle; and conversely.
+"""
 
 from __future__ import annotations
 
@@ -6,27 +9,51 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0318.g1 using geometor.model."""
-    model = Model("VII.12")
+    """Construct the figure for 0202.g1 (VI.3) using geometor.model."""
+    model = Model("VI.3")
 
-    # Single-letter vertical number segments A, B, C, D
-    A_t = model.set_point(26.0, -36.0, classes=["given"], ID="A")
-    A_b = model.set_point(26.0, -69.0, ID="A_b")
+    # 1. Points
+    A = model.set_point(169, -71, classes=["given"], ID="A")
+    B = model.set_point(18, -160, classes=["given"], ID="B")
+    C = model.set_point(197, -160, classes=["given"], ID="C")
+    D = model.set_point(134.82, -160, classes=["given"], ID="D")
+    E = model.set_point(249.38, -23.62, ID="E")
 
-    B_t = model.set_point(50.0, -34.0, classes=["given"], ID="B")
-    B_b = model.set_point(50.0, -69.0, ID="B_b")
+    # 2. Construction Lines
+    model.construct_line(B, A)
+    model.construct_line(C, E)
 
-    C_t = model.set_point(72.0, -14.0, classes=["given"], ID="C")
-    C_b = model.set_point(72.0, -72.0, ID="C_b")
+    # 3. Segments
+    model.set_segment(B, A)
+    model.set_segment(A, E)
+    model.set_segment(B, E)
+    model.set_segment(B, D)
+    model.set_segment(D, C)
+    model.set_segment(B, C)
+    model.set_segment(A, D)
+    model.set_segment(A, C)
+    model.set_segment(C, E)
 
-    D_t = model.set_point(102.0, -10.0, classes=["given"], ID="D")
-    D_b = model.set_point(102.0, -73.0, ID="D_b")
+    # 4. Collinear Sections
+    model.set_section([B, A, E])
+    model.set_section([B, D, C])
 
-    # Number segments
-    model.set_segment(A_t, A_b)
-    model.set_segment(B_t, B_b)
-    model.set_segment(C_t, C_b)
-    model.set_segment(D_t, D_b)
+    # 5. Polygons (Triangles)
+    model.set_polygon([A, B, C])
+    model.set_polygon([B, C, E])
+    model.set_polygon([A, B, D])
+    model.set_polygon([A, D, C])
+    model.set_polygon([A, C, E])
+
+    # 6. Angles (Wedges)
+    model.set_wedge(A, B, B, C)
+    model.set_wedge(A, B, B, D)
+    model.set_wedge(A, C, C, D)
+    model.set_wedge(C, A, A, E)
+    model.set_wedge(E, A, A, C)
+    model.set_wedge(B, A, A, D)
+    model.set_wedge(D, B, B, A)
+    model.set_wedge(C, B, B, E)
 
     return model
 

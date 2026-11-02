@@ -1,4 +1,11 @@
-"""Programmatic construction for Book I, Proposition 16 (I.16)."""
+"""Programmatic construction for Book I, Proposition 7 (I.7).
+
+Given two straight lines constructed on a straight line (from its extremities)
+and meeting in a point, there cannot be constructed on the same straight line
+(from its extremities), and on the same side of it, two other straight lines
+meeting in another point and equal to the former two respectively, namely each
+to that which has the same extremity with it.
+"""
 
 from __future__ import annotations
 
@@ -6,59 +13,29 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0293.g1 using geometor.model."""
-    model = Model("I.16")
+    """Construct the figure for Book I, Proposition 7 using geometor.model."""
+    model = Model("I.7")
 
-    # Points
-    A = model.set_point(94, -20, classes=["given"], ID="A")
-    B = model.set_point(26, -121.5, classes=["given"], ID="B")
-    C = model.set_point(143.5, -121.5, classes=["given"], ID="C")
-    D = model.set_point(196, -121.5, ID="D")
-    E = model.set_point(118.75, -70.75, ID="E")
-    F = model.set_point(211.5, -20, ID="F")
-    G = model.set_point(175, -185, ID="G")
+    # 1. Given base AB and two pairs of straight lines AC, CB and AD, DB meeting at C and D
+    A = model.set_point(13, -112, classes=["given"], ID="A")
+    B = model.set_point(134, -112, classes=["given"], ID="B")
+    C = model.set_point(100, -26, ID="C")
+    D = model.set_point(126, -38, ID="D")
 
-    # Construction lines
-    model.construct_line(B, D)
-    model.construct_line(A, G)
-    model.construct_line(B, F)
-
-    # Segments
-    model.set_segment(B, D)
     model.set_segment(A, B)
-    model.set_segment(A, G)
-    model.set_segment(B, F)
-    model.set_segment(F, C)
-    model.set_segment(B, C)
-    model.set_segment(C, D)
-    model.set_segment(A, E)
-    model.set_segment(E, C)
     model.set_segment(A, C)
-    model.set_segment(C, G)
-    model.set_segment(B, E)
-    model.set_segment(E, F)
+    model.set_segment(C, B)
+    model.set_segment(A, D)
+    model.set_segment(D, B)
 
-    # Collinear / broken sections
-    model.set_section([B, C, D])
-    model.set_section([A, E, C])
-    model.set_section([A, C, G])
-    model.set_section([B, E, F])
+    # 2. Let CD be joined [Post. 1]
+    model.set_segment(C, D)
 
-    # Polygons
-    model.set_polygon([A, B, E])
-    model.set_polygon([C, F, E])
+    # 3. Triangles ABC, ABD, ACD, BCD
     model.set_polygon([A, B, C])
-
-    # Angles (wedges)
-    model.set_wedge(C, A, A, D)
-    model.set_wedge(B, C, C, A)
-    model.set_wedge(A, B, B, C)
-    model.set_wedge(E, A, A, B)
-    model.set_wedge(E, F, F, C)
-    model.set_wedge(C, E, E, F)
-    model.set_wedge(C, F, F, D)
-    model.set_wedge(C, B, B, G)
-    model.set_wedge(C, A, A, B)
+    model.set_polygon([A, B, D])
+    model.set_polygon([A, C, D])
+    model.set_polygon([B, C, D])
 
     return model
 

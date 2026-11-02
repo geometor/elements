@@ -1,17 +1,18 @@
 :canonical_id: G.161
-:original_id: V.24
+:original_id: IV.9
+:title: G.161 square circumscribe circle
 :volume: II
-:book: V
+:book: IV
 :type: prop
 
-G.161 — Code
-============
+G.161 square circumscribe circle — Code
+=======================================
 
-.. rubric:: `V.24 <https://geometor.github.io/euclid/heath/volume_II/book_v/propositions/24/>`_
+.. rubric:: `IV.9 <https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/09/>`_
 
 .. enunciation::
 
-   If a first magnitude have to a second the same ratio as a third has to a fourth, and also a fifth have to the second the same ratio as a sixth to the fourth, the first and fifth added together will have to the second the same ratio as the third and sixth have to the fourth.
+   About a given :term:`square <G.63>` to circumscribe a :term:`circle <G.10>`.
 
 .. picture:: g1.svg
 

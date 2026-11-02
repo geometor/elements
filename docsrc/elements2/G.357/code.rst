@@ -1,17 +1,18 @@
 :canonical_id: G.357
-:original_id: X.42
-:volume: III
-:book: X
+:original_id: IX.26
+:title: G.357 odd number odd
+:volume: II
+:book: IX
 :type: prop
 
-G.357 — Code
-============
+G.357 odd number odd — Code
+===========================
 
-.. rubric:: `X.42 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/042/>`_
+.. rubric:: `IX.26 <https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/26/>`_
 
 .. enunciation::
 
-   A binomial straight line is divided into its terms at one point only.
+   If from an :term:`odd number <G.352>` an odd number be subtracted, the remainder is :term:`even <G.302>`.
 
 .. picture:: g1.svg
 

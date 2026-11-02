@@ -1,53 +1,46 @@
-"""Programmatic construction for Book III, Proposition 17 (III.17).
+"""Programmatic construction for Book II, Proposition 13 (II.13).
 
-From a given point to draw a straight line touching a given circle.
+In acute-angled triangles the square on the side subtending the acute angle is
+less than the squares on the sides containing the acute angle by twice the
+rectangle contained by one of the sides about the acute angle, namely that on
+which the perpendicular falls, and the straight line cut off within by the
+perpendicular towards the acute angle.
 """
 
 from __future__ import annotations
 
-import sympy as sp
 from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure for Book III, Proposition 17 using geometor.model."""
-    model = Model("III.17")
+    """Construct the figure for Book II, Proposition 13 using geometor.model."""
+    model = Model("II.13")
 
-    # 1. Let A be the given point, and BCD the given circle about centre E.
-    E = model.set_point(0, 0, classes=["given"], ID="E")
-    D = model.set_point(0, 1, classes=["given"], ID="D")
-    C = model.set_point(1, 0, ID="C")
-    r_outer = sp.Rational(45, 29)
-    A = model.set_point(0, r_outer, classes=["given"], ID="A")
+    # Acute-angled triangle ABC with AD perpendicular to BC
+    B = model.set_point(0, 0, classes=["given"], ID="B")
+    D = model.set_point(5, 0, ID="D")
+    C = model.set_point(8, 0, classes=["given"], ID="C")
+    A = model.set_point(5, 6, classes=["given"], ID="A")
 
-    circle_BCD = model.construct_circle(E, D)
-
-    # 2. Let AE be joined, and with centre E and distance EA describe circle AFG.
-    model.set_segment(E, D)
-    model.set_segment(D, A)
-    model.set_segment(A, E)
-    model.set_section([E, D, A])
-
-    circle_AFG = model.construct_circle(E, A)
-
-    # 3. From D draw DF at right angles to EA meeting circle AFG at F.
-    fx = -sp.sqrt(r_outer**2 - 1)
-    F = model.set_point(fx, 1, ID="F")
-    G = model.set_point(sp.Rational(34, 29), -sp.sqrt(r_outer**2 - sp.Rational(34, 29) ** 2), label="G")
-    model.set_segment(D, F)
-
-    # 4. Join EF (cutting circle BCD at B) and join AB.
-    B = model.set_point(fx / r_outer, 1 / r_outer, ID="B")
-    model.set_segment(E, B)
-    model.set_segment(B, F)
-    model.set_segment(E, F)
-    model.set_section([E, B, F])
-
+    # Segments
+    model.set_segment(B, C)
+    model.set_segment(B, D)
+    model.set_segment(D, C)
+    model.set_segment(A, D)
     model.set_segment(A, B)
+    model.set_segment(A, C)
 
-    # 5. Triangles DEF and BEA
-    model.set_polygon([D, E, F])
-    model.set_polygon([B, E, A])
+    # Collinear section B-D-C
+    model.set_section([B, D, C])
+
+    # Triangles
+    model.set_polygon([A, B, C])
+    model.set_polygon([A, B, D])
+    model.set_polygon([A, D, C])
+
+    # Angles (acute angle at B and right angle at D)
+    model.set_wedge(B, C, C, A)
+    model.set_wedge(D, C, C, A)
 
     return model
 

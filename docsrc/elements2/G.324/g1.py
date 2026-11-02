@@ -1,4 +1,4 @@
-"""Programmatic construction for Book X, Proposition 10 (X.10)."""
+"""Programmatic construction for Book VIII, Proposition 22 (VIII.22)."""
 
 from __future__ import annotations
 
@@ -6,40 +6,21 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0036.g1 using geometor.model."""
-    model = Model("X.10")
+    """Construct the figure 0385.g1 using geometor.model."""
+    model = Model("VIII.22")
 
-    # Single-letter straight line segment A
-    A_l = model.set_point(28.0, -20.0, classes=["given"], ID="A")
-    A_r = model.set_point(113.0, -20.0, ID="A_r")
+    # Single-letter horizontal number segments A, B, C
+    A_l = model.set_point(21.0, -14.0, classes=["given"], ID="A")
+    A_r = model.set_point(83.0, -14.0, ID="A_r")
 
-    # Single-letter straight line segment D
-    D_l = model.set_point(28.0, -47.0, ID="D")
-    D_r = model.set_point(132.0, -47.0, ID="D_r")
+    B_l = model.set_point(22.0, -36.0, classes=["given"], ID="B")
+    B_r = model.set_point(116.0, -36.0, ID="B_r")
 
-    # Single-letter straight line segment E
-    E_l = model.set_point(29.0, -66.0, ID="E")
-    E_r = model.set_point(124.0, -66.0, ID="E_r")
+    C_l = model.set_point(23.0, -62.0, classes=["given"], ID="C")
+    C_r = model.set_point(162.0, -62.0, ID="C_r")
 
-    # Single-letter number segment B
-    B_l = model.set_point(31.0, -88.5, classes=["given"], ID="B")
-    B_r = model.set_point(83.0, -88.5, ID="B_r")
-
-    # Single-letter number segment C
-    C_l = model.set_point(30.0, -109.5, classes=["given"], ID="C")
-    C_r = model.set_point(111.0, -109.5, ID="C_r")
-
-    # Base lines
-    model.construct_line(A_l, A_r)
-    model.construct_line(D_l, D_r)
-    model.construct_line(E_l, E_r)
-    model.construct_line(B_l, B_r)
-    model.construct_line(C_l, C_r)
-
-    # Magnitude and number segments
+    # Number segments
     model.set_segment(A_l, A_r)
-    model.set_segment(D_l, D_r)
-    model.set_segment(E_l, E_r)
     model.set_segment(B_l, B_r)
     model.set_segment(C_l, C_r)
 

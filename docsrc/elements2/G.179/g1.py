@@ -1,7 +1,4 @@
-"""Programmatic construction for Book VI, Proposition 16, Left Figure (VI.16 - g1).
-
-Rectangle BG (on base AB with height AG = F) and straight line E.
-"""
+"""Programmatic construction for Book V, Proposition 6 (V.6)."""
 
 from __future__ import annotations
 
@@ -9,30 +6,54 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure for 0227.g2 (VI.16 left) using geometor.model."""
-    model = Model("VI.16.g1")
+    """Construct the figure 0153.g1 for Book V, Proposition 6 using geometor.model."""
+    model = Model("V.6")
 
-    # 1. Points of rectangle BG and straight line E
-    G = model.set_point(27.0, -20.0, classes=["given"], ID="G")
-    K = model.set_point(142.0, -20.0, ID="K")
-    B = model.set_point(142.0, -74.0, classes=["given"], ID="B")
-    A = model.set_point(27.0, -74.0, classes=["given"], ID="A")
+    # Magnitude AB subdivided at G (with intermediate multiple marks A_1, A_2)
+    A = model.set_point(27.0, -28.0, classes=["given"], ID="A")
+    A_1 = model.set_point(71.0, -28.0, ID="A_1")
+    A_2 = model.set_point(115.0, -28.0, ID="A_2")
+    G = model.set_point(159.0, -28.0, classes=["given"], ID="G")
+    B = model.set_point(204.0, -28.0, classes=["given"], ID="B")
 
-    E1 = model.set_point(27.0, -113.0, classes=["given"], ID="E")
-    E2 = model.set_point(87.0, -113.0, classes=["given"], ID="E'")
+    # Standalone magnitude E
+    E_1 = model.set_point(27.0, -52.0, classes=["given"], ID="E_1")
+    E_2 = model.set_point(71.0, -52.0, classes=["given"], ID="E_2")
 
-    # 2. Segments
+    # Magnitude KD subdivided at C and H (with intermediate multiple marks C_1, C_2)
+    K = model.set_point(27.0, -84.0, ID="K")
+    C = model.set_point(56.0, -84.0, classes=["given"], ID="C")
+    C_1 = model.set_point(85.0, -84.0, ID="C_1")
+    C_2 = model.set_point(115.0, -84.0, ID="C_2")
+    H = model.set_point(144.0, -84.0, classes=["given"], ID="H")
+    D = model.set_point(173.0, -84.0, classes=["given"], ID="D")
+
+    # Standalone magnitude F
+    F_1 = model.set_point(27.0, -107.0, classes=["given"], ID="F_1")
+    F_2 = model.set_point(56.0, -107.0, classes=["given"], ID="F_2")
+
+    # Base lines
+    model.construct_line(A, B)
+    model.construct_line(K, D)
+
+    # Segments along AB
     model.set_segment(A, B)
     model.set_segment(A, G)
-    model.set_segment(G, K)
-    model.set_segment(B, K)
-    model.set_segment(E1, E2)
+    model.set_segment(G, B)
 
-    # 3. Polygons (Parallelogram / Rectangle BG)
-    model.set_polygon([G, A, B, K])
+    # Standalone magnitude E
+    model.set_segment(E_1, E_2)
 
-    # 4. Right angle at A
-    model.set_wedge(A, G, G, B)
+    # Segments along KD
+    model.set_segment(K, D)
+    model.set_segment(C, D)
+    model.set_segment(C, H)
+    model.set_segment(H, D)
+    model.set_segment(C, K)
+    model.set_segment(K, H)
+
+    # Standalone magnitude F
+    model.set_segment(F_1, F_2)
 
     return model
 

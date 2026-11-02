@@ -1,4 +1,8 @@
-"""Programmatic construction for Book III, Proposition 4 (III.4)."""
+"""Programmatic construction for Book I, Proposition 47 (I.47).
+
+In right-angled triangles the square on the side subtending the right angle is
+equal to the squares on the sides containing the right angle.
+"""
 
 from __future__ import annotations
 
@@ -6,36 +10,83 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0017.g1 using geometor.model."""
-    model = Model("III.4")
+    """Construct the windmill figure for Book I, Proposition 47 using geometor.model."""
+    model = Model("I.47")
 
-    # Points (y-inverted for standard mathematical coordinates)
-    F = model.set_point(97, -89, ID="F")
-    A = model.set_point(24.56, -112, classes=["given"], ID="A")
-    C = model.set_point(167.25, -118, classes=["given"], ID="C")
-    B = model.set_point(93.8, -164.93, classes=["given"], ID="B")
-    D = model.set_point(169.44, -66, classes=["given"], ID="D")
-    E = model.set_point(130.85, -116.47, ID="E")
+    # 1. Right-angled triangle ABC with right angle BAC
+    A = model.set_point(118, -133, classes=["given"], ID="A")
+    B = model.set_point(91, -186, classes=["given"], ID="B")
+    C = model.set_point(222, -186, classes=["given"], ID="C")
 
-    # Construction circle ABCD
-    model.construct_circle(F, A)
-
-    # Segments
+    model.set_segment(A, B)
+    model.set_segment(B, C)
     model.set_segment(A, C)
+    model.set_polygon([A, B, C])
+
+    # 2. Square BDEC described on BC [I. 46]
+    D = model.set_point(91, -319, ID="D")
+    E = model.set_point(222, -319, ID="E")
     model.set_segment(B, D)
-    model.set_segment(F, E)
+    model.set_segment(D, E)
+    model.set_segment(C, E)
+    model.set_polygon([B, D, E, C])
+
+    # 3. Square BAGF (GB) described on BA [I. 46]
+    F = model.set_point(38, -159, ID="F")
+    G = model.set_point(65, -106, ID="G")
+    model.set_segment(B, F)
+    model.set_segment(F, G)
+    model.set_segment(G, A)
+    model.set_polygon([B, A, G, F])
+
+    # 4. Square ACKH (HC) described on AC [I. 46]
+    H = model.set_point(171, -29, ID="H")
+    K = model.set_point(275, -82, ID="K")
+    model.set_segment(A, H)
+    model.set_segment(H, K)
+    model.set_segment(C, K)
+    model.set_polygon([A, C, K, H])
+
+    # 5. Parallel AL through A to BD or CE, meeting BC at M and DE at L [I. 31]
+    M = model.set_point(118, -186, ID="M")
+    L = model.set_point(118, -319, ID="L")
+    model.construct_line(A, L)
+    model.set_segment(A, L)
+    model.set_segment(A, M)
+    model.set_segment(M, L)
+    model.set_segment(B, M)
+    model.set_segment(M, C)
+    model.set_segment(D, L)
+    model.set_segment(L, E)
+
+    # Split rectangles BL (BDLM) and CL (CELM)
+    model.set_polygon([B, D, L, M])
+    model.set_polygon([C, E, L, M])
+
+    # Collinear extensions CA-AG and BA-AH [I. 14]
+    model.construct_line(C, A)
+    model.construct_line(B, A)
+    model.set_segment(G, C)
+    model.set_segment(B, H)
+
+    # 6. Auxiliary transversals AD, FC, AE, BK and triangles ABD, FBC, ACE, KCB
+    model.set_segment(A, D)
+    model.set_segment(F, C)
     model.set_segment(A, E)
-    model.set_segment(E, C)
-    model.set_segment(B, E)
-    model.set_segment(E, D)
+    model.set_segment(B, K)
+    model.set_polygon([A, B, D])
+    model.set_polygon([F, B, C])
+    model.set_polygon([A, C, E])
+    model.set_polygon([K, C, B])
 
-    # Sections
-    model.set_section([A, E, C])
-    model.set_section([B, E, D])
-
-    # Angles (wedges)
-    model.set_wedge(E, F, F, A)
-    model.set_wedge(E, F, F, B)
+    # 7. Referenced angles (wedges)
+    model.set_wedge(A, B, B, C)  # < B A C )
+    model.set_wedge(A, B, B, G)  # < B A G )
+    model.set_wedge(B, D, D, C)  # < D B C )
+    model.set_wedge(B, F, F, A)  # < F B A )
+    model.set_wedge(B, A, A, C)  # < A B C )
+    model.set_wedge(B, D, D, A)  # < D B A ) / < A B D )
+    model.set_wedge(B, F, F, C)  # < F B C )
 
     return model
 

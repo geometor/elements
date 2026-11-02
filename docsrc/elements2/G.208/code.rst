@@ -1,17 +1,18 @@
 :canonical_id: G.208
-:original_id: VII.9
+:original_id: V.25
+:title: G.208 magnitudes proportional greatest
 :volume: II
-:book: VII
+:book: V
 :type: prop
 
-G.208 — Code
-============
+G.208 magnitudes proportional greatest — Code
+=============================================
 
-.. rubric:: `VII.9 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/09/>`_
+.. rubric:: `V.25 <https://geometor.github.io/euclid/heath/volume_II/book_v/propositions/25/>`_
 
 .. enunciation::
 
-   If a number be a part of a number, and another be the same part of another, alternately also, whatever part or parts the first is of the third, the same part, or the same parts, will the second also be of the fourth.
+   If four magnitudes be :term:`proportional <G.180>`, the greatest and the least are greater than the remaining two.
 
 .. picture:: g1.svg
 

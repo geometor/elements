@@ -1,80 +1,90 @@
-"""Programmatic construction for Book III, Proposition 10 (III.10).
+"""Programmatic construction for Book II, Proposition 4 (II.4).
 
-A circle ABC does not cut a circle DEF at more points than two (reductio ad
-absurdum assuming four common points B, G, F, H and constructing the
-perpendicular bisectors AC of BH and NO of BG intersecting at the common
-centre P).
+If a straight line be cut at random, the square on the whole is equal to the
+squares on the segments and twice the rectangle contained by the segments.
 """
 
 from __future__ import annotations
 
-import sympy as sp
 from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0029.g1 for Book III, Proposition 10."""
-    model = Model("III.10")
+    """Construct the figure for Book II, Proposition 4 using geometor.model."""
+    model = Model("II.4")
 
-    # Circle ABC with centre P at origin and horizontal diameter NO
-    P = model.set_point(0, 0, classes=["given"], ID="P")
-    O = model.set_point(1, 0, ID="O")
-    N = model.set_point(-1, 0, ID="N")
-    model.construct_line(N, O)
-    model.construct_circle(P, O)
+    # Straight line AB cut at random at C
+    A = model.set_point(28.5, -29.5, classes=["given"], ID="A")
+    C = model.set_point(124.5, -29.5, classes=["given"], ID="C")
+    B = model.set_point(170.5, -29.5, classes=["given"], ID="B")
 
-    # Outer endpoints M, E of the second circle DEF along the horizontal bisector
-    M = model.set_point(sp.Rational(-53, 44), 0, label="M")
-    E = model.set_point(sp.Rational(29, 22), 0, label="E")
-
-    # Vertical chord BG bisected at right angles at L by NO
-    L = model.set_point(sp.Rational(21, 25), 0, label="L")
-    B = model.set_point(sp.Rational(21, 25), sp.Rational(2, 5) * sp.sqrt(6), classes=["given"], label="B")
-    G = model.set_point(sp.Rational(21, 25), sp.Rational(-2, 5) * sp.sqrt(6), classes=["given"], label="G")
-    model.construct_line(B, G)
-
-    # Points H and F on the left side of circle ABC
-    H = model.set_point(sp.Rational(-22, 25), sp.Rational(3, 25) * sp.sqrt(21), classes=["given"], label="H")
-    F = model.set_point(sp.Rational(-22, 25), sp.Rational(-3, 25) * sp.sqrt(21), classes=["given"], label="F")
-    model.construct_line(H, B)
-
-    # Midpoint K of chord HB and perpendicular bisector AC through K and P
-    K = model.set_point((H.x + B.x) / 2, (H.y + B.y) / 2, label="K")
-    model.construct_line(K, P)
-    len_KP = sp.sqrt(K.x**2 + K.y**2)
-    ux, uy = K.x / len_KP, K.y / len_KP
-    A = model.set_point(ux, uy, ID="A")
-    C = model.set_point(-ux, -uy, ID="C")
-    D = model.set_point(sp.Rational(7, 10) * ux, sp.Rational(7, 10) * uy, label="D")
-
-    # Chords BH and BG and their sub-segments
-    model.set_segment(B, K)
-    model.set_segment(K, H)
-    model.set_segment(B, H)
-    model.set_section([B, K, H])
-
-    model.set_segment(B, L)
-    model.set_segment(L, G)
-    model.set_segment(B, G)
-    model.set_section([B, L, G])
-
-    # Perpendicular bisector A-D-K-P-C segments
-    model.set_segment(A, D)
-    model.set_segment(D, K)
-    model.set_segment(K, P)
-    model.set_segment(P, C)
-    model.set_segment(K, C)
+    model.construct_line(A, B)
+    model.set_segment(A, B)
     model.set_segment(A, C)
+    model.set_segment(C, B)
 
-    # Perpendicular bisector M-N-P-L-O-E segments
-    model.set_segment(M, N)
-    model.set_segment(N, P)
-    model.set_segment(P, L)
-    model.set_segment(L, O)
-    model.set_segment(O, E)
-    model.set_segment(L, M)
-    model.set_segment(N, O)
-    model.set_segment(M, E)
+    # Square ADEB described on AB [I. 46], diagonal BD joined
+    D = model.set_point(28.5, -171.5, ID="D")
+    E = model.set_point(170.5, -171.5, ID="E")
+
+    model.set_segment(A, D)
+    model.set_segment(D, E)
+    model.set_segment(B, E)
+    model.set_polygon([A, D, E, B])
+
+    model.construct_line(B, D)
+    model.set_segment(B, D)
+
+    # Parallel CF to AD/EB through C, meeting BD at G and DE at F [I. 31]
+    G = model.set_point(124.5, -75.5, ID="G")
+    F = model.set_point(124.5, -171.5, ID="F")
+    model.construct_line(C, F)
+    model.set_segment(C, F)
+    model.set_segment(C, G)
+    model.set_segment(G, F)
+    model.set_segment(D, F)
+    model.set_segment(F, E)
+    model.set_segment(B, G)
+    model.set_segment(G, D)
+
+    # Parallel HK to AB/DE through G, meeting AD at H and BE at K [I. 31]
+    H = model.set_point(28.5, -75.5, ID="H")
+    K = model.set_point(170.5, -75.5, ID="K")
+    model.construct_line(H, K)
+    model.set_segment(H, K)
+    model.set_segment(H, G)
+    model.set_segment(G, K)
+    model.set_segment(A, H)
+    model.set_segment(H, D)
+    model.set_segment(B, K)
+    model.set_segment(K, E)
+
+    # Squares about diameter: CGKB (CK) on CB and HDFG (HF) on AC
+    model.set_polygon([C, G, K, B])
+    model.set_polygon([H, D, F, G])
+
+    # Complements AG (ACGH) and GE (GKEF), plus composite rectangles AF (ACFD) and FK (HKEF)
+    model.set_polygon([A, C, G, H])
+    model.set_polygon([G, K, E, F])
+    model.set_polygon([A, C, F, D])
+    model.set_polygon([H, K, E, D])
+
+    # Gnomon around CK: A C G K E D
+    model.set_polygon([A, C, G, K, E, D])
+
+    # Referenced triangles ABD, CGB, GDF
+    model.set_polygon([A, B, D])
+    model.set_polygon([C, G, B])
+    model.set_polygon([H, G, D])
+
+    # Referenced angles CGB, ADB, ABD, GBC, KBC, GCB, CGK, GKB
+    model.set_wedge(G, C, C, B)  # < C G B )
+    model.set_wedge(D, A, A, B)  # < A D B )
+    model.set_wedge(B, A, A, D)  # < A B D ) / < G B C )
+    model.set_wedge(B, K, K, C)  # < K B C )
+    model.set_wedge(C, G, G, B)  # < G C B )
+    model.set_wedge(G, C, C, K)  # < C G K )
+    model.set_wedge(K, G, G, B)  # < G K B )
 
     return model
 

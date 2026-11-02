@@ -1,17 +1,18 @@
 :canonical_id: G.211
-:original_id: VII.11
+:original_id: VI.2
+:title: G.211 segment drawn parallel
 :volume: II
-:book: VII
+:book: VI
 :type: prop
 
-G.211 — Code
-============
+G.211 segment drawn parallel — Code
+===================================
 
-.. rubric:: `VII.11 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/11/>`_
+.. rubric:: `VI.2 <https://geometor.github.io/euclid/heath/volume_II/book_vi/propositions/02/>`_
 
 .. enunciation::
 
-   If, as whole is to whole, so is a number subtracted to a number subtracted, the remainder is to the remainder as whole to whole.
+   If a :term:`segment <G.4>` be drawn :term:`parallel <G.52>` to one of the sides of a :term:`triangle <G.11>`, it will cut the sides of the triangle proportionally; and, if the sides of the triangle be cut proportionally, the :term:`line <G.2>` joining the :term:`points <G.1>` of section is parallel to the remaining side of the triangle.
 
 .. picture:: g1.svg
 

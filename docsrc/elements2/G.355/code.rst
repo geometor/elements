@@ -1,17 +1,18 @@
 :canonical_id: G.355
-:original_id: X.40
-:volume: III
-:book: X
+:original_id: IX.24
+:title: G.355 even number even
+:volume: II
+:book: IX
 :type: prop
 
-G.355 — Code
-============
+G.355 even number even — Code
+=============================
 
-.. rubric:: `X.40 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/040/>`_
+.. rubric:: `IX.24 <https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/24/>`_
 
 .. enunciation::
 
-   If two straight lines incommensurable in square which make the sum of the squares on them medial, but the rectangle contained by them rational, be added together, the whole straight line is irrational; and let it be called the:term:`**side of a rational plus a medial area** <side-of-a-rational-plus-a-medial-area>`.
+   If from an :term:`even number <G.302>` an even number be subtracted, the remainder is even.
 
 .. picture:: g1.svg
 

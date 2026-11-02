@@ -1,4 +1,4 @@
-"""Programmatic construction for Book IV, Proposition 16 (IV.16)."""
+"""Programmatic construction for Book III, Proposition 27 (III.27)."""
 
 from __future__ import annotations
 
@@ -6,43 +6,44 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0116.g1 (Inscribed regular fifteen-angled figure) using geometor.model."""
-    model = Model("IV.16")
+    """Construct the figure 0064.g1 using geometor.model."""
+    model = Model("III.27")
 
-    # Points (y-inverted for standard mathematical coordinates)
-    O = model.set_point(153.00, -156.00, ID="O")
-    A = model.set_point(153.00, -30.00, classes=["given"], ID="A")
-    B = model.set_point(33.17, -117.06, ID="B")
-    E = model.set_point(27.69, -169.17, ID="E")
-    C = model.set_point(43.88, -219.00, ID="C")
-    D = model.set_point(262.12, -219.00, ID="D")
+    # Left circle ABC with center G and point K (y-inverted)
+    G = model.set_point(83.00, -86.00, ID="G")
+    A = model.set_point(40.00, -37.26, classes=["given"], ID="A")
+    B = model.set_point(28.88, -122.00, classes=["given"], ID="B")
+    C = model.set_point(137.12, -122.00, classes=["given"], ID="C")
+    K = model.set_point(120.63, -139.00, ID="K")
 
-    P2 = model.set_point(204.25, -40.89, ID="P2")
-    P3 = model.set_point(246.64, -71.69, ID="P3")
-    P4 = model.set_point(272.83, -117.06, ID="P4")
-    P5 = model.set_point(278.31, -169.17, ID="P5")
-    P7 = model.set_point(227.06, -257.94, ID="P7")
-    P8 = model.set_point(179.20, -279.25, ID="P8")
-    P9 = model.set_point(126.80, -279.25, ID="P9")
-    P10 = model.set_point(78.94, -257.94, ID="P10")
-    P14 = model.set_point(59.36, -71.69, ID="P14")
-    P15 = model.set_point(101.75, -40.89, ID="P15")
+    # Right circle DEF with center H (y-inverted)
+    H = model.set_point(244.00, -92.00, ID="H")
+    D = model.set_point(218.00, -32.43, classes=["given"], ID="D")
+    E = model.set_point(189.88, -128.00, classes=["given"], ID="E")
+    F = model.set_point(298.12, -128.00, classes=["given"], ID="F")
 
-    # Given circle ABCD
-    model.construct_circle(O, A)
+    # Equal circles ABC and DEF
+    model.construct_circle(G, A)
+    model.construct_circle(H, D)
 
     # Segments
-    model.set_segment(A, C)
-    model.set_segment(C, D)
-    model.set_segment(D, A)
     model.set_segment(A, B)
-    model.set_segment(B, E)
-    model.set_segment(E, C)
+    model.set_segment(A, C)
+    model.set_segment(B, G)
+    model.set_segment(G, C)
+    model.set_segment(G, K)
 
-    # Polygons
-    model.set_polygon([A, C, D])
-    model.set_polygon([A, P4, P7, P10, B])
-    model.set_polygon([A, P2, P3, P4, P5, D, P7, P8, P9, P10, C, E, B, P14, P15])
+    model.set_segment(D, E)
+    model.set_segment(D, F)
+    model.set_segment(E, H)
+    model.set_segment(H, F)
+
+    # Angles (wedges)
+    model.set_wedge(G, B, B, C)
+    model.set_wedge(G, B, B, K)
+    model.set_wedge(H, E, E, F)
+    model.set_wedge(A, B, B, C)
+    model.set_wedge(D, E, E, F)
 
     return model
 

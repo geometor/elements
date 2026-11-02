@@ -1,17 +1,18 @@
 :canonical_id: G.348
-:original_id: X.33
-:volume: III
-:book: X
+:original_id: IX.18
+:title: G.348 numbers investigate whether
+:volume: II
+:book: IX
 :type: prop
 
-G.348 — Code
-============
+G.348 numbers investigate whether — Code
+========================================
 
-.. rubric:: `X.33 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/033/>`_
+.. rubric:: `IX.18 <https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/18/>`_
 
 .. enunciation::
 
-   Find two straight lines incommensurable in square which make the sum of the squares on them rational but the rectangle contained by them medial.
+   Given two :term:`numbers <G.248>`, to investigate whether it is possible to find a third :term:`proportional <G.180>` to them.
 
 .. picture:: g1.svg
 

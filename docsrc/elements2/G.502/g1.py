@@ -1,9 +1,4 @@
-"""Programmatic construction for Book XII, Proposition 15 (XII.15).
-
-Equal cones and cylinders with circular bases ABCD (diameter AC, axis KL,
-cylinder AO) and EFGH (diameter EG, axis MN cut at Q by plane TUS, cylinder EP
-and partial cylinder ES).
-"""
+"""Programmatic construction for Book XI, Proposition 1 (XI.1)."""
 
 from __future__ import annotations
 
@@ -11,59 +6,42 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0424.g1 using geometor.model."""
-    model = Model("XII.15")
+    """Construct the figure 0276.g1 using geometor.model."""
+    model = Model("XI.1")
 
-    # Left vertical cylinder AO and cone ABCD-L
-    L = model.set_point(89.0, -34.0, classes=["given"], ID="L")
-    A2 = model.set_point(31.0, -34.0, ID="A2")
-    O = model.set_point(147.0, -34.0, classes=["given"], ID="O")
-    K = model.set_point(89.0, -134.0, classes=["given"], ID="K")
-    A = model.set_point(31.0, -134.0, classes=["given"], ID="A")
-    C = model.set_point(147.0, -134.0, classes=["given"], ID="C")
-    D = model.set_point(72.0, -118.7, classes=["given"], ID="D")
-    B = model.set_point(106.0, -149.3, classes=["given"], ID="B")
+    # Points of the plane of reference (unlabelled boundary corners)
+    P1 = model.set_point(89.0, -24.0, classes=["plane_corner"])
+    P2 = model.set_point(145.0, -92.0, classes=["plane_corner"])
+    P3 = model.set_point(68.0, -184.0, classes=["plane_corner"])
+    P4 = model.set_point(11.0, -115.0, classes=["plane_corner"])
 
-    # Right horizontal cylinder EP and cones with vertex M
-    M = model.set_point(206.0, -80.0, classes=["given"], ID="M")
-    P = model.set_point(206.0, -42.0, classes=["given"], ID="P")
-    R = model.set_point(206.0, -118.0, classes=["given"], ID="R")
+    # Points A, B, C, D
+    A = model.set_point(52.0, -136.0, classes=["given"], ID="A")
+    B = model.set_point(78.0, -102.0, classes=["given"], ID="B")
+    D = model.set_point(104.0, -68.0, ID="D")
+    C = model.set_point(78.0, -14.0, classes=["given"], ID="C")
 
-    Q = model.set_point(338.0, -80.0, classes=["given"], ID="Q")
-    S = model.set_point(338.0, -42.0, classes=["given"], ID="S")
-    U = model.set_point(338.0, -118.0, classes=["given"], ID="U")
-    T = model.set_point(350.0, -80.0, classes=["given"], ID="T")
-
-    N = model.set_point(434.0, -80.0, classes=["given"], ID="N")
-    G = model.set_point(434.0, -42.0, classes=["given"], ID="G")
-    E = model.set_point(434.0, -118.0, classes=["given"], ID="E")
-    F = model.set_point(446.0, -80.0, classes=["given"], ID="F")
-    H = model.set_point(422.0, -80.0, classes=["given"], ID="H")
-
-    # Circular bases and sections
-    for center, rim in [
-        (L, O), (K, C), (M, P), (Q, S), (N, G),
-    ]:
-        model.construct_circle(center, rim)
+    # Construction line ABD in the plane of reference
+    model.construct_line(A, D)
 
     # Segments
-    for p1, p2 in [
-        (A2, A), (O, C), (L, K), (A, C), (A, K), (K, C),
-        (L, A), (L, C),
-        (P, S), (S, G), (P, G),
-        (R, U), (U, E), (R, E),
-        (M, Q), (Q, N), (M, N),
-        (S, U), (G, E),
-        (M, S), (M, U), (M, G), (M, E),
-    ]:
-        model.set_segment(p1, p2)
+    model.set_segment(A, B)
+    model.set_segment(B, D)
+    model.set_segment(A, D)
+    model.set_segment(B, C)
 
-    # Cylinders and cones
-    model.set_polygon([A2, A, C, O])  # Cylinder AO
-    model.set_polygon([P, R, E, G])   # Cylinder EP
-    model.set_polygon([S, U, E, G])   # Cylinder ES
-    model.set_polygon([A, C, L])      # Cone ABCD-L
-    model.set_polygon([E, G, M])      # Cone EFGH-M
+    # Plane boundary segments
+    model.set_segment(P1, P2)
+    model.set_segment(P2, P3)
+    model.set_segment(P3, P4)
+    model.set_segment(P4, P1)
+
+    # Sections / broken lines
+    model.set_section([A, B, D])
+    model.set_section([A, B, C])
+
+    # Plane polygon
+    model.set_polygon([P1, P2, P3, P4])
 
     return model
 

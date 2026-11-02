@@ -1,17 +1,18 @@
 :canonical_id: G.68
-:original_id: II.7
+:original_id: I.39
+:title: G.68 equal triangles on the same base are in the same parallels
 :volume: I
-:book: II
+:book: I
 :type: prop
 
-G.68 — Code
-===========
+G.68 equal triangles on the same base are in the same parallels — Code
+======================================================================
 
-.. rubric:: `II.7 <https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/07/>`_
+.. rubric:: `I.39 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/39/>`_
 
 .. enunciation::
 
-   If a straight line be cut at random, the square on the whole and that on one of the segments both together are equal to twice the rectangle contained by the whole and the said segment and the square on the remaining segment.
+   Equal :term:`triangles <G.11>` on the same base and on the same side lie in the same :term:`parallels <G.52>`.
 
 .. picture:: g1.svg
 

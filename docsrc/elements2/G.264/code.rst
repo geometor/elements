@@ -1,17 +1,18 @@
 :canonical_id: G.264
-:original_id: VIII.22
+:original_id: VII.11
+:title: G.264 whole whole number
 :volume: II
-:book: VIII
+:book: VII
 :type: prop
 
-G.264 — Code
-============
+G.264 whole whole number — Code
+===============================
 
-.. rubric:: `VIII.22 <https://geometor.github.io/euclid/heath/volume_II/book_viii/propositions/22/>`_
+.. rubric:: `VII.11 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/11/>`_
 
 .. enunciation::
 
-   If three numbers be in continued proportion, and the first be square, the third is square.
+   If, as whole is to whole, so is a :term:`number <G.248>` subtracted to a number subtracted, the remainder is to the remainder as whole to whole.
 
 .. picture:: g1.svg
 

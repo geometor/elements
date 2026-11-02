@@ -1,4 +1,7 @@
-"""Programmatic construction for Book VII, Proposition 21 (VII.21)."""
+"""Programmatic construction for Book VI, Proposition 11 (VI.11).
+
+To two given straight lines to find a third proportional.
+"""
 
 from __future__ import annotations
 
@@ -6,31 +9,35 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0328.g1 using geometor.model."""
-    model = Model("VII.21")
+    """Construct the figure for 0220.g1 (VI.11) using geometor.model."""
+    model = Model("VI.11")
 
-    # Single-letter vertical number segments A, B, C, D, E
-    A_t = model.set_point(22.0, -10.0, classes=["given"], ID="A")
-    A_b = model.set_point(22.0, -114.0, ID="A_b")
+    # 1. Points
+    A = model.set_point(49.0, -25.0, classes=["given"], ID="A")
+    B = model.set_point(37.4, -71.4, classes=["given"], ID="B")
+    C = model.set_point(92.2, -86.6, classes=["given"], ID="C")
+    D = model.set_point(20.0, -141.0, ID="D")
+    E = model.set_point(157.0, -179.0, ID="E")
 
-    B_t = model.set_point(49.0, -16.0, classes=["given"], ID="B")
-    B_b = model.set_point(49.0, -89.0, ID="B_b")
+    # 2. Segments
+    model.set_segment(A, D)
+    model.set_segment(A, B)
+    model.set_segment(B, D)
 
-    C_t = model.set_point(128.0, -15.0, classes=["given"], ID="C")
-    C_b = model.set_point(128.0, -70.0, ID="C_b")
+    model.set_segment(A, E)
+    model.set_segment(A, C)
+    model.set_segment(C, E)
 
-    D_t = model.set_point(152.0, -12.0, classes=["given"], ID="D")
-    D_b = model.set_point(152.0, -54.0, ID="D_b")
+    model.set_segment(B, C)
+    model.set_segment(D, E)
 
-    E_t = model.set_point(198.0, -17.0, classes=["given"], ID="E")
-    E_b = model.set_point(198.0, -43.0, ID="E_b")
+    # 3. Collinear Sections
+    model.set_section([A, B, D])
+    model.set_section([A, C, E])
 
-    # Number segments
-    model.set_segment(A_t, A_b)
-    model.set_segment(B_t, B_b)
-    model.set_segment(C_t, C_b)
-    model.set_segment(D_t, D_b)
-    model.set_segment(E_t, E_b)
+    # 4. Polygons
+    model.set_polygon([A, D, E])
+    model.set_polygon([A, B, C])
 
     return model
 

@@ -1,17 +1,18 @@
 :canonical_id: G.482
-:original_id: XI.35
+:original_id: X.96
+:title: G.482 area contained rational
 :volume: III
-:book: XI
+:book: X
 :type: prop
 
-G.482 — Code
-============
+G.482 area contained rational — Code
+====================================
 
-.. rubric:: `XI.35 <https://geometor.github.io/euclid/heath/volume_III/book_xi/propositions/35/>`_
+.. rubric:: `X.96 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/096/>`_
 
 .. enunciation::
 
-   If there be two equal plane angles, and on their vertices there be set up elevated straight lines containing equal angles with the original straight lines respectively, if on the elevated straight lines points be taken at random and perpendiculars be drawn from them to the planes in which the original angles are, and if from the points so arising in the planes straight lines be joined to the vertices of the original angles, they will contain, with the elevated straight lines, equal angles.
+   If an area be contained by a :term:`rational <G.391>` :term:`segment <G.4>` and a :term:`sixth apotome <G.475>`, the “side” of the area is a segment which produces with a medial area a medial whole.
 
 .. picture:: g1.svg
 

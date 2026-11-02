@@ -1,57 +1,93 @@
-"""Programmatic construction for Book XI, Proposition 18 (XI.18).
-
-If a straight line be at right angles to any plane, all the planes through it
-will also be at right angles to the same plane.
-"""
+"""Programmatic construction for Book X, Proposition 81 (X.81)."""
 
 from __future__ import annotations
 
-import sympy as sp
 from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure for Book XI, Proposition 18 using geometor.model."""
-    model = Model("XI.18")
+    """Construct the figure 0174.g1 using geometor.model."""
+    model = Model("X.81")
 
-    # 1. Let any straight line AB be at right angles to the plane of reference.
-    B = model.set_point(0, 0, classes=["given"], ID="B")
-    A = model.set_point(0, 1, classes=["given"], ID="A")
+    # Top straight line AD divided at B and C
+    A = model.set_point(16.0, -21.5, classes=["given"], ID="A")
+    B = model.set_point(80.0, -21.5, classes=["given"], ID="B")
+    C = model.set_point(122.0, -21.5, classes=["given"], ID="C")
+    D = model.set_point(154.0, -21.5, classes=["given"], ID="D")
 
-    # 2. Let plane DE be drawn through AB, with common section CE.
-    C = model.set_point(sp.Rational(-93, 78), 0, label="C")
-    D = model.set_point(sp.Rational(-93, 78), 1, label="D")
-    E = model.set_point(sp.Rational(56, 78), 0, label="E")
-    E_top = model.set_point(sp.Rational(56, 78), 1, label="E_top")
+    # Rectangle FEIN divided horizontally by LH and GM
+    F = model.set_point(29.0, -45.5, classes=["given"], ID="F")
+    E = model.set_point(121.0, -45.5, classes=["given"], ID="E")
 
-    # 3. Let point F be taken at random on CE, and draw FG in plane DE at right angles to CE.
-    F = model.set_point(sp.Rational(-43, 78), 0, label="F")
-    G = model.set_point(sp.Rational(-43, 78), 1, label="G")
+    L = model.set_point(29.0, -65.5, ID="L")
+    H = model.set_point(121.0, -65.5, ID="H")
 
-    # Plane of reference corners
-    P1 = model.set_point(sp.Rational(-65, 78), sp.Rational(40, 78), label="P1")
-    P2 = model.set_point(sp.Rational(94, 78), sp.Rational(40, 78), label="P2")
-    P3 = model.set_point(sp.Rational(28, 78), sp.Rational(-29, 78), label="P3")
-    P4 = model.set_point(sp.Rational(-115, 78), sp.Rational(-29, 78), label="P4")
+    G = model.set_point(29.0, -237.0, ID="G")
+    M = model.set_point(121.0, -237.0, ID="M")
 
-    # Segments and sections
+    I = model.set_point(29.0, -335.0, ID="I")
+    N = model.set_point(121.0, -335.0, ID="N")
+
+    # Base lines
+    model.construct_line(A, D)
+    model.construct_line(F, E)
+    model.construct_line(L, H)
+    model.construct_line(G, M)
+    model.construct_line(I, N)
+    model.construct_line(F, I)
+    model.construct_line(E, N)
+
+    # Segments on AD
+    model.set_segment(A, D)
+    model.set_segment(A, C)
     model.set_segment(A, B)
-    model.set_segment(F, G)
+    model.set_segment(B, D)
+    model.set_segment(B, C)
     model.set_segment(C, D)
-    model.set_segment(C, F)
-    model.set_segment(F, B)
-    model.set_segment(B, E)
-    model.set_segment(C, E)
-    model.set_section([C, F, B])
-    model.set_section([F, B, E])
 
-    # Planes
-    model.set_polygon([D, E_top, E, C])
-    model.set_polygon([P1, P2, P3, P4])
+    # Horizontal segments on rectangle FEIN
+    model.set_segment(F, E)
+    model.set_segment(L, H)
+    model.set_segment(G, M)
+    model.set_segment(I, N)
 
-    # Wedges for angles ABF and GFB
-    model.set_wedge(B, F, F, A)
-    model.set_wedge(F, G, G, B)
+    # Vertical segments on left side FI
+    model.set_segment(F, I)
+    model.set_segment(F, G)
+    model.set_segment(F, L)
+    model.set_segment(L, I)
+    model.set_segment(L, G)
+    model.set_segment(G, I)
+
+    # Vertical segments on right side EN
+    model.set_segment(E, N)
+    model.set_segment(E, M)
+    model.set_segment(E, H)
+    model.set_segment(H, N)
+    model.set_segment(H, M)
+    model.set_segment(M, N)
+
+    # Sections
+    model.set_section([A, B, C])
+    model.set_section([A, B, D])
+    model.set_section([A, C, D])
+    model.set_section([B, C, D])
+    model.set_section([F, L, G])
+    model.set_section([F, L, I])
+    model.set_section([F, G, I])
+    model.set_section([L, G, I])
+    model.set_section([E, H, M])
+    model.set_section([E, H, N])
+    model.set_section([E, M, N])
+    model.set_section([H, M, N])
+
+    # Polygons (rectangles)
+    model.set_polygon([F, E, N, I])
+    model.set_polygon([F, E, M, G])
+    model.set_polygon([F, E, H, L])
+    model.set_polygon([L, H, M, G])
+    model.set_polygon([L, H, N, I])
+    model.set_polygon([G, M, N, I])
 
     return model
 

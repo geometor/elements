@@ -1,8 +1,4 @@
-"""Programmatic construction for Book VI, Proposition 25 (VI.25).
-
-To construct one and the same figure similar to a given rectilineal figure ABC
-and equal to another given rectilineal figure D.
-"""
+"""Programmatic construction for Book V, Proposition 12 (V.12)."""
 
 from __future__ import annotations
 
@@ -10,67 +6,47 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure for 0259.g1 (VI.25) using geometor.model."""
-    model = Model("VI.25")
+    """Construct the figure 0165.g1 for Book V, Proposition 12 using geometor.model."""
+    model = Model("V.12")
 
-    # 1. Given triangle ABC and applied parallelograms BE (BLEC) and CM/EF (CEMF)
-    A = model.set_point(26.0, -51.0, classes=["given"], ID="A")
-    B = model.set_point(47.0, -125.0, classes=["given"], ID="B")
-    C = model.set_point(119.0, -125.0, classes=["given"], ID="C")
-    F = model.set_point(199.0, -125.0, ID="F")
+    # Top rows: A, D; B, E; C, F
+    A_1 = model.set_point(31.0, -23.0, classes=["given"], ID="A_1")
+    A_2 = model.set_point(92.0, -23.0, classes=["given"], ID="A_2")
+    D_1 = model.set_point(31.0, -48.0, classes=["given"], ID="D_1")
+    D_2 = model.set_point(75.0, -48.0, classes=["given"], ID="D_2")
 
-    L = model.set_point(36.0, -164.0, ID="L")
-    E = model.set_point(108.0, -164.0, ID="E")
-    M = model.set_point(188.0, -164.0, ID="M")
+    B_1 = model.set_point(158.0, -23.0, classes=["given"], ID="B_1")
+    B_2 = model.set_point(208.0, -23.0, classes=["given"], ID="B_2")
+    E_1 = model.set_point(158.0, -48.0, classes=["given"], ID="E_1")
+    E_2 = model.set_point(195.0, -48.0, classes=["given"], ID="E_2")
 
-    model.construct_line(B, F)
-    model.construct_line(L, M)
+    C_1 = model.set_point(274.0, -23.0, classes=["given"], ID="C_1")
+    C_2 = model.set_point(306.0, -23.0, classes=["given"], ID="C_2")
+    F_1 = model.set_point(274.0, -48.0, classes=["given"], ID="F_1")
+    F_2 = model.set_point(298.0, -48.0, classes=["given"], ID="F_2")
 
-    model.set_segment(A, B)
-    model.set_segment(A, C)
-    model.set_segment(B, C)
-    model.set_segment(C, F)
-    model.set_segment(B, F)
+    # Bottom left multiples: G, H, K
+    G_1 = model.set_point(30.0, -76.0, ID="G_1")
+    G_2 = model.set_point(156.0, -76.0, ID="G_2")
+    H_1 = model.set_point(30.0, -101.0, ID="H_1")
+    H_2 = model.set_point(135.0, -101.0, ID="H_2")
+    K_1 = model.set_point(30.0, -125.0, ID="K_1")
+    K_2 = model.set_point(92.0, -125.0, ID="K_2")
 
-    model.set_segment(L, E)
-    model.set_segment(E, M)
-    model.set_segment(L, M)
+    # Bottom right multiples: L, M, N
+    L_1 = model.set_point(234.0, -76.0, ID="L_1")
+    L_2 = model.set_point(372.0, -76.0, ID="L_2")
+    M_1 = model.set_point(234.0, -101.0, ID="M_1")
+    M_2 = model.set_point(350.0, -101.0, ID="M_2")
+    N_1 = model.set_point(234.0, -125.0, ID="N_1")
+    N_2 = model.set_point(311.0, -125.0, ID="N_2")
 
-    model.set_segment(B, L)
-    model.set_segment(C, E)
-    model.set_segment(F, M)
-
-    model.set_section([B, C, F])
-    model.set_section([L, E, M])
-
-    model.set_polygon([A, B, C])
-    model.set_polygon([B, L, E, C])
-    model.set_polygon([C, E, M, F])
-    model.set_polygon([B, L, M, F])
-
-    # 2. Given rectilineal figure D
-    D1 = model.set_point(156.0, -84.0, classes=["given"], ID="D1")
-    D2 = model.set_point(252.0, -48.0, classes=["given"], ID="D2")
-    D3 = model.set_point(296.0, -94.0, classes=["given"], ID="D3")
-    D4 = model.set_point(221.0, -110.0, classes=["given"], ID="D4")
-    model.set_segment(D1, D2)
-    model.set_segment(D2, D3)
-    model.set_segment(D3, D4)
-    model.set_segment(D4, D1)
-    model.set_polygon([D1, D2, D3, D4])
-
-    # 3. Constructed similar triangle KGH on mean proportional GH
-    K = model.set_point(356.0, -56.0, ID="K")
-    G = model.set_point(385.0, -162.0, ID="G")
-    H = model.set_point(490.0, -162.0, ID="H")
-    model.set_segment(K, G)
-    model.set_segment(K, H)
-    model.set_segment(G, H)
-    model.set_polygon([K, G, H])
-
-    # 4. Angles FCE and CBL
-    model.set_wedge(C, F, F, E)  # < F C E )
-    model.set_wedge(B, C, C, L)  # < C B L )
+    for p1, p2 in [
+        (A_1, A_2), (D_1, D_2), (B_1, B_2), (E_1, E_2),
+        (C_1, C_2), (F_1, F_2), (G_1, G_2), (H_1, H_2),
+        (K_1, K_2), (L_1, L_2), (M_1, M_2), (N_1, N_2),
+    ]:
+        model.set_segment(p1, p2)
 
     return model
 

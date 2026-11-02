@@ -1,4 +1,7 @@
-"""Programmatic construction for Book II, Proposition 9 (II.9)."""
+"""Programmatic construction for Book I, I.41 (I.41).
+
+If a parallelogram have the same base with a triangle and be in the same parallels, the parallelogram is double of the triangle.
+"""
 
 from __future__ import annotations
 
@@ -6,73 +9,34 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure for 0406.g1 (II.9) using geometor.model."""
-    model = Model("II.9")
+    """Construct the figure for 0352.g1 (I.41) using geometor.model."""
+    model = Model("I.41")
 
     # 1. Points
-    A = model.set_point(24.0, -156.0, classes=["given"], ID="A")
-    C = model.set_point(146.0, -156.0, classes=["given"], ID="C")
-    D = model.set_point(188.0, -156.0, classes=["given"], ID="D")
-    B = model.set_point(268.0, -156.0, classes=["given"], ID="B")
+    A = model.set_point(24, -36, classes=["given"], ID="A")
+    B = model.set_point(48, -112, classes=["given"], ID="B")
+    C = model.set_point(142, -112, classes=["given"], ID="C")
+    D = model.set_point(118, -36, classes=["given"], ID="D")
+    E = model.set_point(184, -36, classes=["given"], ID="E")
 
-    E = model.set_point(146.0, -34.0, ID="E")
-    G = model.set_point(146.0, -76.0, ID="G")
-    F = model.set_point(188.0, -76.0, ID="F")
-
-    # 2. Segments
-    model.set_segment(A, C)
-    model.set_segment(C, D)
-    model.set_segment(D, B)
-    model.set_segment(C, B)
+    # 3. Segments
+    model.set_segment(A, E)
     model.set_segment(A, D)
+    model.set_segment(D, E)
+    model.set_segment(B, C)
     model.set_segment(A, B)
-
-    model.set_segment(C, G)
-    model.set_segment(G, E)
-    model.set_segment(C, E)
-
-    model.set_segment(D, F)
-    model.set_segment(G, F)
-
-    model.set_segment(E, A)
-    model.set_segment(E, F)
-    model.set_segment(F, B)
+    model.set_segment(C, D)
+    model.set_segment(A, C)
     model.set_segment(E, B)
-    model.set_segment(A, F)
+    model.set_segment(E, C)
 
-    # 3. Collinear Sections
-    model.set_section([A, C, D])
-    model.set_section([C, D, B])
-    model.set_section([A, D, B])
-    model.set_section([A, C, B])
-    model.set_section([C, G, E])
-    model.set_section([E, F, B])
+    # 4. Collinear Sections
+    model.set_section([A, D, E])
 
-    # 4. Polygons (Triangles & Parallelogram)
-    model.set_polygon([A, C, E])
-    model.set_polygon([E, C, B])
-    model.set_polygon([A, E, B])
-    model.set_polygon([E, G, F])
-    model.set_polygon([F, D, B])
-    model.set_polygon([A, E, F])
-    model.set_polygon([A, D, F])
-    model.set_polygon([C, D, F, G])
-
-    # 5. Angles (Wedges)
-    model.set_wedge(A, C, E, C)  # < E A C )
-    model.set_wedge(E, A, A, C)  # < A E C )
-    model.set_wedge(C, A, A, E)  # < A C E )
-    model.set_wedge(C, E, E, B)  # < E C B )
-    model.set_wedge(E, C, C, B)  # < C E B )
-    model.set_wedge(B, E, E, C)  # < E B C )
-    model.set_wedge(E, A, A, B)  # < A E B )
-    model.set_wedge(E, G, G, F)  # < G E F )
-    model.set_wedge(G, E, E, F)  # < E G F )
-    model.set_wedge(F, E, E, G)  # < E F G )
-    model.set_wedge(D, F, F, B)  # < F D B )
-    model.set_wedge(F, B, B, D)  # < B F D )
-    model.set_wedge(E, A, A, F)  # < A E F )
-    model.set_wedge(D, A, A, F)  # < A D F )
+    # 5. Polygons (Triangles, Parallelograms, Trapezia, Squares)
+    model.set_polygon([A, B, C, D])
+    model.set_polygon([E, B, C])
+    model.set_polygon([A, B, C])
 
     return model
 

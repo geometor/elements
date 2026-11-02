@@ -1,36 +1,37 @@
 :order: 369
 :number: 369
 :canonical_id: G.369
-:original_id: X.def.ii.1
-:volume: III
-:book: X
+:original_id: VII.def.22
+:title: G.369 perfect number
+:volume: II
+:book: VII
 :type: def
-:categories: definition, incommensurables, magnitudes
-:category: definition, incommensurables, magnitudes
-:tags: book-x, first-binomial-straight-line, square, commensurable, rational, binomial
+:categories: definition, number-theory
+:category: definition, number-theory
+:tags: book-vii, perfect-number, number
 :dependencies: 
-:excerpt: Given a rational straight line and a binomial, divided into its terms, such that the square on the greater term is greater than the square on the lesser by the square on a straight line commensurable in length with the greater, then, if the greater term be commensurable in length with the rational straight line set out, let the whole be called afirst binomial straight line;
+:excerpt: Aperfect number is that which is equal to its own parts.
 
 .. _G.369:
-.. _X.def.ii.1:
+.. _VII.def.22:
 
-G.369
-=====
+G.369 perfect number
+====================
 
-.. rubric:: `X.def.ii.1 <https://geometor.github.io/euclid/heath/volume_III/book_x/definitions_ii/#x-def-ii-1>`_
+.. rubric:: `VII.def.22 <https://geometor.github.io/euclid/heath/volume_II/book_vii/definitions/#vii-def-22>`_
 
 .. enunciation::
 
-   Given a rational straight line and a binomial, divided into its terms, such that the square on the greater term is greater than the square on the lesser by the square on a straight line commensurable in length with the greater, then, if the greater term be commensurable in length with the rational straight line set out, let the whole be called a:term:`**first binomial straight line** <first-binomial-straight-line>`;
+   A:term:`**perfect number** <perfect-number>` is that which is equal to its own parts.
 
 .. signature:: def
 
-   | :fn:`rational_straight_line_def <G.369>`
+   | :fn:`perfect_number_equal_def <G.369>`
 
 Required for
 ------------
 
-:ref:`G.370 <G.370>`, :ref:`G.380 <G.380>`, :ref:`G.387 <G.387>`, :ref:`G.392 <G.392>`, :ref:`G.438 <G.438>`
+:ref:`G.370 <G.370>`
 
 .. toctree::
    :hidden:

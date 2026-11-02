@@ -1,17 +1,18 @@
 :canonical_id: G.205
-:original_id: VII.6
+:original_id: V.22
+:title: G.205 there number magnitudes
 :volume: II
-:book: VII
+:book: V
 :type: prop
 
-G.205 — Code
-============
+G.205 there number magnitudes — Code
+====================================
 
-.. rubric:: `VII.6 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/06/>`_
+.. rubric:: `V.22 <https://geometor.github.io/euclid/heath/volume_II/book_v/propositions/22/>`_
 
 .. enunciation::
 
-   If a number be parts of a number, and another be the same parts of another, the sum is the same parts of the sum that the one is of the one.
+   If there be any number of magnitudes whatever, and others equal to them in multitude, which taken two and two together are :term:`in the same ratio <G.176>`, they is in the same ratio :term:`ex aequali <G.174>`.
 
 .. picture:: g1.svg
 

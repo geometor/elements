@@ -1,17 +1,18 @@
 :canonical_id: G.492
-:original_id: XII.6
+:original_id: X.106
+:title: G.492 segment commensurable produces
 :volume: III
-:book: XII
+:book: X
 :type: prop
 
-G.492 — Code
-============
+G.492 segment commensurable produces — Code
+===========================================
 
-.. rubric:: `XII.6 <https://geometor.github.io/euclid/heath/volume_III/book_xii/propositions/06/>`_
+.. rubric:: `X.106 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/106/>`_
 
 .. enunciation::
 
-   Pyramids which are of the same height and have polygonal bases are to one another as the bases.
+   A :term:`segment <G.4>` :term:`commensurable <G.372>` with that which produces with a :term:`rational area <G.392>` a medial whole is a segment which produces with a rational area a medial whole.
 
 .. picture:: g1.svg
 

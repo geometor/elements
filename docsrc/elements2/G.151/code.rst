@@ -1,17 +1,18 @@
 :canonical_id: G.151
-:original_id: V.14
+:original_id: IV.3
+:title: G.151 circumscribe triangle about circle
 :volume: II
-:book: V
+:book: IV
 :type: prop
 
-G.151 — Code
-============
+G.151 circumscribe triangle about circle — Code
+===============================================
 
-.. rubric:: `V.14 <https://geometor.github.io/euclid/heath/volume_II/book_v/propositions/14/>`_
+.. rubric:: `IV.3 <https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/03/>`_
 
 .. enunciation::
 
-   If a first magnitude have to a second the same ratio as a third has to a fourth, and the first be greater than the third, the second is greater than the fourth; if equal, equal; and if less, less.
+   :term:`Circumscribe about a given circle <G.150>` a :term:`triangle <G.11>` equiangular with a given triangle.
 
 .. picture:: g1.svg
 

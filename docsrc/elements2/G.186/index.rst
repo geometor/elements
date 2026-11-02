@@ -1,64 +1,213 @@
 :order: 186
 :number: 186
 :canonical_id: G.186
-:original_id: VI.21
+:original_id: V.8
+:title: G.186 unequal magnitudes greater
 :volume: II
-:book: VI
+:book: V
 :type: prop
 :subtype: theorem
-:categories: theorem, proof, plane-geometry, proportions, similar-figures
-:category: theorem, proof, plane-geometry, proportions, similar-figures
-:tags: book-vi, point, similar
-:dependencies: G.170
-:excerpt: Figures which are similar to the same polygon are also similar to one another.
+:categories: theorem, proof, proportions, magnitudes
+:category: theorem, proof, proportions, magnitudes
+:tags: book-v, point, segment, greater-ratio, ratio, multiple, equality
+:dependencies: G.171, G.184, G.185
+:excerpt: Of unequal magnitudes, the greater has to the same a greater ratio than the less has; and the same has to the less a greater ratio than it has to the greater.
 
 .. _G.186:
-.. _VI.21:
+.. _V.8:
 
-G.186
-=====
+G.186 unequal magnitudes greater
+================================
 
-.. rubric:: `VI.21 <https://geometor.github.io/euclid/heath/volume_II/book_vi/propositions/21/>`_
+.. rubric:: `V.8 <https://geometor.github.io/euclid/heath/volume_II/book_v/propositions/08/>`_
 
 .. enunciation::
 
-   Figures which are similar to the same polygon are also similar to one another.
+   Of unequal magnitudes, the greater has to the same a :term:`greater ratio <G.185>` than the less has; and the same has to the less a greater ratio than it has to the greater.
 
 .. signature:: theorem
 
-   | :fn:`figures_similar_polygon <G.186>`\ ()
-   | **prove** :g:`A <g1:A>` is also similar to :g:`B <g1:B>`
+   | :fn:`unequal_magnitudes_greater <G.186>`\ (:g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`)
+   | **given** :g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>` be unequal magnitudes, let :g:`/ A B / <g1:/ A B />` be greater
+   | **prove** :g:`/ A B / <g1:/ A B />` has to :g:`D <g1:D>` a greater ratio than :g:`C <g1:C>` has to :g:`D <g1:D>`, and :g:`D <g1:D>` has to :g:`C <g1:C>` a greater ratio than it has to :g:`/ A B / <g1:/ A B />`
 
 .. picture:: g1.svg
-   :alt: Book VI, Proposition 21
+   :alt: Proposition 8 Diagram (Case 1)
+
+.. picture:: g2.svg
+   :alt: Proposition 8 Diagram (Case 2)
+
+.. step:: given
+
+   :g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>` be unequal magnitudes, let :g:`/ A B / <g1:/ A B />` be greater
 
 .. step:: assert
 
-   Let each of the rectilineal figures :g:`A <g1:A>`, :g:`B <g1:B>` be similar to :g:`C <g1:C>`
+   Let :g:`D <g1:D>` be another, chance, magnitude
+
+.. step:: construct
+
+   Since :g:`/ A B / <g1:/ A B />` is greater than :g:`C <g1:C>`, let :g:`/ E B / <g1:/ E B />` be made :eq:`equal <g1:/ E B / = g1:C>` to :g:`C <g1:C>`
+
+.. step:: assert ∵ magnitudes_said_ratio_def_v_def_4 <G.184>
+
+   Then the less of the magnitudes :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />`, if multiplied, will sometime be greater than :g:`D <g1:D>`.
 
 .. step:: assert
 
-   Since :g:`A <g1:A>` is similar to :g:`C <g1:C>`,
-
-.. step:: assert ∵ similar_polygons_angles_def <G.170>
-
-   It is equiangular with it and has the sides about the equal angles proportional.
+   [Case 1.]
 
 .. step:: assert
 
-   Since :g:`B <g1:B>` is similar to :g:`C <g1:C>`,
+   First, let :g:`/ A E / <g1:/ A E />` be less than :g:`/ E B / <g1:/ E B />`
 
 .. step:: assert
 
-   It is equiangular with it and has the sides about the equal angles proportional.
+   Let :g:`/ A E / <g1:/ A E />` be multiplied, and let :g:`/ F G / <g1:/ F G />` be a :term:`multiple <G.170>` of it which is greater than :g:`D <g1:D>`
+
+.. step:: construct
+
+   Then, whatever multiple :g:`/ F G / <g1:/ F G />` is of :g:`/ A E / <g1:/ A E />`, let :g:`/ G H / <g1:/ G H />` be made the same multiple of :g:`/ E B / <g1:/ E B />` and :g:`K <g1:K>` of :g:`C <g1:C>`
+
+.. step:: construct
+
+   And let :g:`L <g1:L>` be taken double of :g:`D <g1:D>`, :g:`M <g1:M>` triple of it, and successive multiples increasing by one, until what is taken is a multiple of :g:`D <g1:D>` and the first that is greater than :g:`K <g1:K>`
+
+.. step:: construct
+
+   Let it be taken
 
 .. step:: assert
 
-   Therefore each of the figures :g:`A <g1:A>`, :g:`B <g1:B>` is equiangular with :g:`C <g1:C>` and with :g:`C <g1:C>` has the sides about the equal angles proportional;
+   Let it be :g:`N <g1:N>` which is quadruple of :g:`D <g1:D>` and the first multiple of it that is greater than :g:`K <g1:K>`.
+
+.. step:: assert
+
+   Since :g:`K <g1:K>` is less than :g:`N <g1:N>` first → therefore :g:`K <g1:K>` is not less than :g:`M <g1:M>`.
+
+.. step:: assert
+
+   And, since :g:`/ F G / <g1:/ F G />` is the same multiple of :g:`/ A E / <g1:/ A E />` that :g:`/ G H / <g1:/ G H />` is of :g:`/ E B / <g1:/ E B />`,
+
+.. step:: assert ∵ there_number_magnitudes <G.171>
+
+   Therefore :g:`/ F G / <g1:/ F G />` is the same multiple of :g:`/ A E / <g1:/ A E />` that :g:`/ F H / <g1:/ F H />` is of :g:`/ A B / <g1:/ A B />`.
+
+.. step:: assert
+
+   :g:`/ F G / <g1:/ F G />` is the same multiple of :g:`/ A E / <g1:/ A E />` that :g:`K <g1:K>` is of :g:`C <g1:C>`
+
+.. step:: assert
+
+   Therefore :g:`/ F H / <g1:/ F H />` is the same multiple of :g:`/ A B / <g1:/ A B />` that :g:`K <g1:K>` is of :g:`C <g1:C>` ; therefore :g:`/ F H / <g1:/ F H />`, :g:`K <g1:K>` are equimultiples of :g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`.
+
+.. step:: assert
+
+   Since :g:`/ G H / <g1:/ G H />` is the same multiple of :g:`/ E B / <g1:/ E B />` that :g:`K <g1:K>` is of :g:`C <g1:C>`, and :g:`/ E B / <g1:/ E B />` is :eq:`equal <g1:/ E B / = g1:C>` to :g:`C <g1:C>` → therefore :g:`/ G H / <g1:/ G H />` is :eq:`equal <g1:/ G H / = g1:K>` to :g:`K <g1:K>`.
+
+.. step:: assert
+
+   :g:`K <g1:K>` is not less than :g:`M <g1:M>`
+
+.. step:: assert
+
+   Therefore neither is :g:`/ G H / <g1:/ G H />` less than :g:`M <g1:M>`.
+
+.. step:: assert
+
+   :g:`/ F G / <g1:/ F G />` is greater than :g:`D <g1:D>`
+
+.. step:: assert
+
+   Therefore the whole :g:`/ F H / <g1:/ F H />` is greater than :g:`D <g1:D>`, :g:`M <g1:M>` together.
+
+.. step:: assert
+
+   :g:`D <g1:D>`, :g:`M <g1:M>` together are equal to :g:`N <g1:N>`, inasmuch as :g:`M <g1:M>` is triple of :g:`D <g1:D>`, and :g:`M <g1:M>`, :g:`D <g1:D>` together are quadruple of :g:`D <g1:D>`, while :g:`N <g1:N>` is also quadruple of :g:`D <g1:D>`
+
+.. step:: assert
+
+   Whence :g:`M <g1:M>`, :g:`D <g1:D>` together are equal to :g:`N <g1:N>`.
+
+.. step:: assert
+
+   :g:`/ F H / <g1:/ F H />` is greater than :g:`M <g1:M>`, :g:`D <g1:D>`
+
+.. step:: assert
+
+   Therefore :g:`/ F H / <g1:/ F H />` is in excess of :g:`N <g1:N>`,
+
+.. step:: assert
+
+   While :g:`K <g1:K>` is not in excess of :g:`N <g1:N>`.
+
+.. step:: assert
+
+   :g:`/ F H / <g1:/ F H />`, :g:`K <g1:K>` are equimultiples of :g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`, while :g:`N <g1:N>` is another, chance, multiple of :g:`D <g1:D>`
+
+.. step:: assert ∵ equimultiples_multiple_magnitude_def <G.185>
+
+   Therefore :g:`/ A B / <g1:/ A B />` has to :g:`D <g1:D>` a greater ratio than :g:`C <g1:C>` has to :g:`D <g1:D>`.
+
+.. step:: assert
+
+   I say next, that :g:`D <g1:D>` also has to :g:`C <g1:C>` a greater ratio than :g:`D <g1:D>` has to :g:`/ A B / <g1:/ A B />`.
+
+.. step:: assert
+
+   With the same construction, we can prove similarly that :g:`N <g1:N>` is in excess of :g:`K <g1:K>`, while :g:`N <g1:N>` is not in excess of :g:`/ F H / <g1:/ F H />`.
+
+.. step:: assert
+
+   :g:`N <g1:N>` is a multiple of :g:`D <g1:D>`, while :g:`/ F H / <g1:/ F H />`, :g:`K <g1:K>` are other, chance, equimultiples of :g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`
+
+.. step:: assert ∵ equimultiples_multiple_magnitude_def <G.185>
+
+   Therefore :g:`D <g1:D>` has to :g:`C <g1:C>` a greater ratio than :g:`D <g1:D>` has to :g:`/ A B / <g1:/ A B />`.
+
+.. step:: assert
+
+   [Case 2.]
+
+.. step:: assert
+
+   Let :g:`/ A E / <g2:/ A E />` be greater than :g:`/ E B / <g2:/ E B />`.
+
+.. step:: assert ∵ magnitudes_said_ratio_def_v_def_4 <G.184>
+
+   Then the less, :g:`/ E B / <g2:/ E B />`, if multiplied, will sometime be greater than :g:`D <g2:D>`.
+
+.. step:: assert
+
+   Let it be multiplied, and let :g:`/ G H / <g2:/ G H />` be a multiple of :g:`/ E B / <g2:/ E B />` and greater than :g:`D <g2:D>`
+
+.. step:: construct
+
+   And, whatever multiple :g:`/ G H / <g2:/ G H />` is of :g:`/ E B / <g2:/ E B />`, let :g:`/ F G / <g2:/ F G />` be made the same multiple of :g:`/ A E / <g2:/ A E />`, and :g:`K <g2:K>` of :g:`C <g2:C>`.
+
+.. step:: assert
+
+   Then we can prove similarly that :g:`/ F H / <g2:/ F H />`, :g:`K <g2:K>` are equimultiples of :g:`/ A B / <g2:/ A B />`, :g:`C <g2:C>`
+
+.. step:: construct
+
+   And, similarly, let :g:`N <g2:N>` be taken a multiple of :g:`D <g2:D>` but the first that is greater than :g:`/ F G / <g2:/ F G />`, so that :g:`/ F G / <g2:/ F G />` is again not less than :g:`M <g2:M>`.
+
+.. step:: assert
+
+   :g:`/ G H / <g2:/ G H />` is greater than :g:`D <g2:D>`
+
+.. step:: assert
+
+   Therefore the whole :g:`/ F H / <g2:/ F H />` is in excess of :g:`D <g2:D>`, :g:`M <g2:M>`, that is, of :g:`N <g2:N>`.
+
+.. step:: assert
+
+   Now :g:`K <g2:K>` is not in excess of :g:`N <g2:N>`, inasmuch as :g:`/ F G / <g2:/ F G />` also, which is greater than :g:`/ G H / <g2:/ G H />`, that is, than :g:`K <g2:K>`, is not in excess of :g:`N <g2:N>`.
 
 .. step:: conclude
 
-   Therefore :g:`A <g1:A>` is similar to :g:`B <g1:B>`.
+   In the same manner, by following the above argument , we complete the demonstration.
 
 Dependency Graph
 ----------------
@@ -70,15 +219,24 @@ Dependency Graph
      node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11, color="#d6d3cd", fontcolor="#ffffff"];
      edge [color="#8c857b", fontcolor="#8c857b", arrowsize=0.75];
      rankdir="TB";
-     "G.170" [label="G.170", tooltip="G.170 (VI.def.1): Similar polygons are such as have their angles severally equal and the sides about the equal angles proportional.", fillcolor="#224422", URL="../G.170/index.html", target="_top"];
-     "G.186" [label="G.186", tooltip="G.186 (VI.21): Figures which are similar to the same polygon are also similar to one another.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
-     "G.186" -> "G.170";
+     "G.169" [label="G.169", tooltip="G.169 (V.def.1): A magnitude is apart of a magnitude, the less of the greater, when it measures the greater.", fillcolor="#224422", URL="../G.169/index.html", target="_top"];
+     "G.170" [label="G.170", tooltip="G.170 (V.def.2): The greater is amultiple of the less when it ismeasured by the less.", fillcolor="#224422", URL="../G.170/index.html", target="_top"];
+     "G.171" [label="G.171", tooltip="G.171 (V.1): If there be any number of magnitudes whatever which are, respectively, equimultiples of any magnitudes equal in multitude, then, whatever multiple one of the magnitudes is of one, ...", fillcolor="#222244", URL="../G.171/index.html", target="_top"];
+     "G.184" [label="G.184", tooltip="G.184 (V.def.4): Magnitudes are said tohave a ratio to one another which are capable, when multiplied, of exceeding one another.", fillcolor="#224422", URL="../G.184/index.html", target="_top"];
+     "G.185" [label="G.185", tooltip="G.185 (V.def.7): When, of theequimultiples, the multiple of the first magnitude exceeds the multiple of the second, but the multiple of the third does not exceed the multiple of the fourth, then th...", fillcolor="#224422", URL="../G.185/index.html", target="_top"];
+     "G.186" [label="G.186", tooltip="G.186 (V.8): Of unequal magnitudes, the greater has to the same a greater ratio than the less has; and the same has to the less a greater ratio than it has to the greater.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.170" -> "G.169";
+     "G.171" -> "G.170";
+     "G.185" -> "G.170";
+     "G.186" -> "G.171";
+     "G.186" -> "G.184";
+     "G.186" -> "G.185";
    }
 
 Required for
 ------------
 
-:ref:`G.189 <G.189>`, :ref:`G.191 <G.191>`, :ref:`G.192 <G.192>`, :ref:`G.193 <G.193>`, :ref:`G.194 <G.194>`, :ref:`G.195 <G.195>`, :ref:`G.348 <G.348>`, :ref:`G.349 <G.349>`, :ref:`G.354 <G.354>`, :ref:`G.355 <G.355>`, :ref:`G.360 <G.360>`, :ref:`G.361 <G.361>`, :ref:`G.376 <G.376>`, :ref:`G.378 <G.378>`, :ref:`G.383 <G.383>`, :ref:`G.384 <G.384>`, :ref:`G.389 <G.389>`, :ref:`G.390 <G.390>`, :ref:`G.392 <G.392>`, :ref:`G.397 <G.397>`, :ref:`G.398 <G.398>`, :ref:`G.403 <G.403>`, :ref:`G.404 <G.404>`, :ref:`G.418 <G.418>`, :ref:`G.419 <G.419>`, :ref:`G.420 <G.420>`, :ref:`G.421 <G.421>`, :ref:`G.422 <G.422>`, :ref:`G.423 <G.423>`, :ref:`G.427 <G.427>`, :ref:`G.428 <G.428>`, :ref:`G.432 <G.432>`, :ref:`G.433 <G.433>`, :ref:`G.435 <G.435>`, :ref:`G.436 <G.436>`, :ref:`G.437 <G.437>`, :ref:`G.518 <G.518>`, :ref:`G.523 <G.523>`, :ref:`G.525 <G.525>`
+:ref:`G.187 <G.187>`, :ref:`G.188 <G.188>`, :ref:`G.192 <G.192>`, :ref:`G.195 <G.195>`, :ref:`G.199 <G.199>`, :ref:`G.201 <G.201>`, :ref:`G.202 <G.202>`, :ref:`G.204 <G.204>`, :ref:`G.205 <G.205>`, :ref:`G.206 <G.206>`, :ref:`G.207 <G.207>`, :ref:`G.208 <G.208>`, :ref:`G.211 <G.211>`, :ref:`G.212 <G.212>`, :ref:`G.213 <G.213>`, :ref:`G.214 <G.214>`, :ref:`G.215 <G.215>`, :ref:`G.216 <G.216>`, :ref:`G.218 <G.218>`, :ref:`G.219 <G.219>`, :ref:`G.220 <G.220>`, :ref:`G.221 <G.221>`, :ref:`G.222 <G.222>`, :ref:`G.223 <G.223>`, :ref:`G.225 <G.225>`, :ref:`G.226 <G.226>`, :ref:`G.227 <G.227>`, :ref:`G.228 <G.228>`, :ref:`G.229 <G.229>`, :ref:`G.231 <G.231>`, :ref:`G.232 <G.232>`, :ref:`G.234 <G.234>`, :ref:`G.235 <G.235>`, :ref:`G.236 <G.236>`, :ref:`G.237 <G.237>`, :ref:`G.238 <G.238>`, :ref:`G.239 <G.239>`, :ref:`G.240 <G.240>`, :ref:`G.241 <G.241>`, :ref:`G.243 <G.243>`, :ref:`G.244 <G.244>`, :ref:`G.245 <G.245>`, :ref:`G.273 <G.273>`, :ref:`G.278 <G.278>`, :ref:`G.279 <G.279>`, :ref:`G.280 <G.280>`, :ref:`G.281 <G.281>`, :ref:`G.285 <G.285>`, :ref:`G.289 <G.289>`, :ref:`G.290 <G.290>`, :ref:`G.292 <G.292>`, :ref:`G.295 <G.295>`, :ref:`G.297 <G.297>`, :ref:`G.298 <G.298>`, :ref:`G.299 <G.299>`, :ref:`G.301 <G.301>`, :ref:`G.303 <G.303>`, :ref:`G.304 <G.304>`, :ref:`G.305 <G.305>`, :ref:`G.306 <G.306>`, :ref:`G.314 <G.314>`, :ref:`G.315 <G.315>`, :ref:`G.316 <G.316>`, :ref:`G.317 <G.317>`, :ref:`G.322 <G.322>`, :ref:`G.323 <G.323>`, :ref:`G.324 <G.324>`, :ref:`G.325 <G.325>`, :ref:`G.326 <G.326>`, :ref:`G.327 <G.327>`, :ref:`G.328 <G.328>`, :ref:`G.329 <G.329>`, :ref:`G.330 <G.330>`, :ref:`G.331 <G.331>`, :ref:`G.332 <G.332>`, :ref:`G.333 <G.333>`, :ref:`G.334 <G.334>`, :ref:`G.335 <G.335>`, :ref:`G.337 <G.337>`, :ref:`G.338 <G.338>`, :ref:`G.339 <G.339>`, :ref:`G.342 <G.342>`, :ref:`G.343 <G.343>`, :ref:`G.344 <G.344>`, :ref:`G.345 <G.345>`, :ref:`G.348 <G.348>`, :ref:`G.349 <G.349>`, :ref:`G.364 <G.364>`, :ref:`G.370 <G.370>`, :ref:`G.376 <G.376>`, :ref:`G.377 <G.377>`, :ref:`G.378 <G.378>`, :ref:`G.379 <G.379>`, :ref:`G.381 <G.381>`, :ref:`G.382 <G.382>`, :ref:`G.383 <G.383>`, :ref:`G.384 <G.384>`, :ref:`G.385 <G.385>`, :ref:`G.386 <G.386>`, :ref:`G.389 <G.389>`, :ref:`G.390 <G.390>`, :ref:`G.393 <G.393>`, :ref:`G.394 <G.394>`, :ref:`G.395 <G.395>`, :ref:`G.396 <G.396>`, :ref:`G.397 <G.397>`, :ref:`G.398 <G.398>`, :ref:`G.399 <G.399>`, :ref:`G.400 <G.400>`, :ref:`G.401 <G.401>`, :ref:`G.402 <G.402>`, :ref:`G.403 <G.403>`, :ref:`G.404 <G.404>`, :ref:`G.405 <G.405>`, :ref:`G.406 <G.406>`, :ref:`G.407 <G.407>`, :ref:`G.408 <G.408>`, :ref:`G.409 <G.409>`, :ref:`G.410 <G.410>`, :ref:`G.411 <G.411>`, :ref:`G.412 <G.412>`, :ref:`G.413 <G.413>`, :ref:`G.414 <G.414>`, :ref:`G.415 <G.415>`, :ref:`G.416 <G.416>`, :ref:`G.417 <G.417>`, :ref:`G.418 <G.418>`, :ref:`G.419 <G.419>`, :ref:`G.420 <G.420>`, :ref:`G.421 <G.421>`, :ref:`G.423 <G.423>`, :ref:`G.425 <G.425>`, :ref:`G.427 <G.427>`, :ref:`G.429 <G.429>`, :ref:`G.431 <G.431>`, :ref:`G.433 <G.433>`, :ref:`G.434 <G.434>`, :ref:`G.435 <G.435>`, :ref:`G.436 <G.436>`, :ref:`G.437 <G.437>`, :ref:`G.438 <G.438>`, :ref:`G.439 <G.439>`, :ref:`G.440 <G.440>`, :ref:`G.441 <G.441>`, :ref:`G.442 <G.442>`, :ref:`G.443 <G.443>`, :ref:`G.444 <G.444>`, :ref:`G.445 <G.445>`, :ref:`G.446 <G.446>`, :ref:`G.447 <G.447>`, :ref:`G.448 <G.448>`, :ref:`G.449 <G.449>`, :ref:`G.450 <G.450>`, :ref:`G.451 <G.451>`, :ref:`G.452 <G.452>`, :ref:`G.453 <G.453>`, :ref:`G.457 <G.457>`, :ref:`G.458 <G.458>`, :ref:`G.459 <G.459>`, :ref:`G.460 <G.460>`, :ref:`G.461 <G.461>`, :ref:`G.462 <G.462>`, :ref:`G.463 <G.463>`, :ref:`G.464 <G.464>`, :ref:`G.465 <G.465>`, :ref:`G.466 <G.466>`, :ref:`G.467 <G.467>`, :ref:`G.468 <G.468>`, :ref:`G.470 <G.470>`, :ref:`G.472 <G.472>`, :ref:`G.474 <G.474>`, :ref:`G.476 <G.476>`, :ref:`G.477 <G.477>`, :ref:`G.478 <G.478>`, :ref:`G.479 <G.479>`, :ref:`G.480 <G.480>`, :ref:`G.481 <G.481>`, :ref:`G.482 <G.482>`, :ref:`G.483 <G.483>`, :ref:`G.484 <G.484>`, :ref:`G.485 <G.485>`, :ref:`G.486 <G.486>`, :ref:`G.487 <G.487>`, :ref:`G.488 <G.488>`, :ref:`G.489 <G.489>`, :ref:`G.490 <G.490>`, :ref:`G.491 <G.491>`, :ref:`G.492 <G.492>`, :ref:`G.493 <G.493>`, :ref:`G.494 <G.494>`, :ref:`G.495 <G.495>`, :ref:`G.496 <G.496>`, :ref:`G.497 <G.497>`, :ref:`G.498 <G.498>`, :ref:`G.499 <G.499>`, :ref:`G.500 <G.500>`, :ref:`G.501 <G.501>`, :ref:`G.520 <G.520>`, :ref:`G.528 <G.528>`, :ref:`G.536 <G.536>`, :ref:`G.541 <G.541>`, :ref:`G.542 <G.542>`, :ref:`G.543 <G.543>`, :ref:`G.544 <G.544>`, :ref:`G.546 <G.546>`, :ref:`G.547 <G.547>`, :ref:`G.550 <G.550>`, :ref:`G.551 <G.551>`, :ref:`G.552 <G.552>`, :ref:`G.554 <G.554>`, :ref:`G.555 <G.555>`, :ref:`G.556 <G.556>`, :ref:`G.557 <G.557>`, :ref:`G.558 <G.558>`, :ref:`G.559 <G.559>`, :ref:`G.560 <G.560>`, :ref:`G.563 <G.563>`, :ref:`G.565 <G.565>`, :ref:`G.570 <G.570>`, :ref:`G.571 <G.571>`, :ref:`G.572 <G.572>`, :ref:`G.573 <G.573>`, :ref:`G.577 <G.577>`, :ref:`G.578 <G.578>`, :ref:`G.579 <G.579>`, :ref:`G.582 <G.582>`, :ref:`G.583 <G.583>`, :ref:`G.584 <G.584>`, :ref:`G.586 <G.586>`, :ref:`G.587 <G.587>`, :ref:`G.588 <G.588>`, :ref:`G.589 <G.589>`, :ref:`G.592 <G.592>`, :ref:`G.597 <G.597>`, :ref:`G.600 <G.600>`, :ref:`G.601 <G.601>`
 
 .. toctree::
    :hidden:

@@ -1,17 +1,18 @@
 :canonical_id: G.515
-:original_id: XIII.8
+:original_id: XI.13
+:title: G.515 point segments set
 :volume: III
-:book: XIII
+:book: XI
 :type: prop
 
-G.515 — Code
-============
+G.515 point segments set — Code
+===============================
 
-.. rubric:: `XIII.8 <https://geometor.github.io/euclid/heath/volume_III/book_xiii/propositions/08/>`_
+.. rubric:: `XI.13 <https://geometor.github.io/euclid/heath/volume_III/book_xi/propositions/13/>`_
 
 .. enunciation::
 
-   If in an equilateral and equiangular pentagon straight lines subtend two angles taken in order, they cut one another in extreme and mean ratio, and their greater segments are equal to the side of the pentagon.
+   From the same :term:`point <G.1>` two :term:`segments <G.4>` cannot be set up :term:`at right angles to the same plane <G.505>` on the same side.
 
 .. picture:: g1.svg
 

@@ -73,11 +73,11 @@ SECTION_TYPE_ORDER = {
     "prop": 4,
 }
 
-# For G-Index dependency traversal, preserve the classic Book I ordering (cn, def, post, prop)
+# For G-Index dependency traversal, order definitions first (def, post, cn, prop)
 G_DEP_TYPE_ORDER = {
-    "cn": 1,
-    "def": 2,
-    "post": 3,
+    "def": 1,
+    "post": 2,
+    "cn": 3,
     "prop": 4,
 }
 
@@ -94,6 +94,7 @@ _FOLIO_BLOCK_RE = re.compile(
 _G_ROLE_RE = re.compile(r":g:`([^`]+)`")
 _TERM_ROLE_RE = re.compile(r":term:`([^`]+)`")
 _EQ_ROLE_RE = re.compile(r":eq:`([^`]+)`")
+_COINCIDE_ROLE_RE = re.compile(r":coincide:`([^`]+)`")
 _JUST_ROLE_RE = re.compile(r":just:`([^`]+)`")
 _DIR_JUST_RE = re.compile(
     r"^\.\.\s+(?:assertion|subclause|sub-clause)::[ \t]+([^\n]+)",
@@ -483,6 +484,11 @@ def extract_taxonomy(
     # 6. Proof Structure & Method Tags
     if _EQ_ROLE_RE.search(body_no_fn) and "equality" not in tags:
         tags.append("equality")
+    if _COINCIDE_ROLE_RE.search(body_no_fn):
+        if "coincidence" not in tags:
+            tags.append("coincidence")
+        if "equality" not in tags:
+            tags.append("equality")
     if re.search(
         r"\b(?:which is impossible|which is absurd|For, if possible|For, if not|contrary to the hypothesis)\b",
         body_no_fn,
@@ -496,10 +502,32 @@ def extract_taxonomy(
     return categories, tags, subtype
 
 
+def extract_item_term_dependencies(rst_body: str, item_id: str) -> List[str]:
+    """Extract canonical definition dependencies for a definition, postulate, or common notion."""
+    import sys as _sys
+
+    project_root = Path(__file__).parent.parent.parent.parent
+    euclid_src = project_root.parent / "euclid" / "src"
+    if euclid_src.is_dir() and str(euclid_src) not in _sys.path:
+        _sys.path.insert(0, str(euclid_src))
+    from geometor.euclid.graph import extract_term_dependencies_from_rst_body
+
+    tdeps, _ = extract_term_dependencies_from_rst_body(rst_body, item_id)
+    # In Elements 2.0, I.def.2 (line) is a projection of a relationship of two points (I.def.1)
+    if item_id == "I.def.2":
+        tdeps.add("I.def.1")
+    elif item_id == "I.def.4":
+        tdeps.update({"I.def.1", "I.def.2", "I.def.3"})
+    return sorted(
+        [normalize_canonical_id(d) for d in tdeps if normalize_canonical_id(d) != item_id],
+        key=canonical_sort_key,
+    )
+
+
 def _extract_referenced_svgs_and_pys(
     rst_body: str, parent_dir: Path, canonical_ref: str
 ) -> Tuple[List[Path], List[Path]]:
-    """Extract SVG files referenced by .. picture:: in rst_body and their companion g<k>.py construction scripts."""
+    """Extract SVG files referenced by .. picture:: in rst_body (or resources/constructions/<id>/g1.svg) and companion g<k>.py scripts."""
     svg_names = re.findall(
         r"^\.\.\s+picture::\s+(\S+\.svg)", rst_body, flags=re.MULTILINE
     )
@@ -520,6 +548,11 @@ def _extract_referenced_svgs_and_pys(
             py_path = constructions_dir / f"g{idx}.py"
             if py_path.is_file():
                 py_files.append(py_path)
+
+    if not svg_files and (constructions_dir / "g1.svg").is_file():
+        svg_files.append(constructions_dir / "g1.svg")
+        if (constructions_dir / "g1.py").is_file():
+            py_files.append(constructions_dir / "g1.py")
 
     return svg_files, py_files
 
@@ -562,6 +595,7 @@ def parse_grouped_items_file(
         svg_files, py_files = _extract_referenced_svgs_and_pys(
             chunk, rst_path.parent, item_id
         )
+        item_deps = extract_item_term_dependencies(chunk, item_id)
 
         items.append(
             {
@@ -570,7 +604,7 @@ def parse_grouped_items_file(
                 "subtype": subtype,
                 "book": book_roman,
                 "volume": volume_roman,
-                "dependencies": [],
+                "dependencies": item_deps,
                 "content_rst": chunk,
                 "svg_files": svg_files,
                 "py_files": py_files,
@@ -696,7 +730,10 @@ def build_graph(
                 items = parse_grouped_items_file(sec_index, source_dir)
                 for item in items:
                     entries.append(item)
-                    G.add_node(item["canonical_ref"], **item)
+                    cid = item["canonical_ref"]
+                    G.add_node(cid, **item)
+                    for dep in item["dependencies"]:
+                        G.add_edge(cid, dep)
 
         # 2. Propositions
         props_dir = book_dir / "propositions"

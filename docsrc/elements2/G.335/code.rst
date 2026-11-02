@@ -1,17 +1,18 @@
 :canonical_id: G.335
-:original_id: X.21
-:volume: III
-:book: X
+:original_id: IX.6
+:title: G.335 number multiplying itself
+:volume: II
+:book: IX
 :type: prop
 
-G.335 — Code
-============
+G.335 number multiplying itself — Code
+======================================
 
-.. rubric:: `X.21 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/021/>`_
+.. rubric:: `IX.6 <https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/06/>`_
 
 .. enunciation::
 
-   The rectangle contained by rational straight lines commensurable in square only is irrational, and the side of the square equal to it is irrational. Let the latter be called medial.
+   If a :term:`number <G.248>` by :term:`multiplying <G.269>` itself make a :term:`cube number <G.311>`, it will itself also be cube.
 
 .. picture:: g1.svg
 

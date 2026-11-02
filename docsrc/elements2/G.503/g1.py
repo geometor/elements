@@ -1,8 +1,4 @@
-"""Programmatic construction for Book XII, Proposition 16 (XII.16).
-
-Two concentric circles ABCD and EFGH about center K, with diameter BKD, tangent
-chord AGC at G, and chord LMN parallel to AC with inscribed sides LD, DN.
-"""
+"""Programmatic construction for Book XI, Proposition 2 (XI.2)."""
 
 from __future__ import annotations
 
@@ -10,40 +6,67 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0428.g1 using geometor.model."""
-    model = Model("XII.16")
+    """Construct the figure 0278.g1 using geometor.model."""
+    model = Model("XI.2")
 
-    K = model.set_point(112.0, -104.0, classes=["given"], ID="K")
-    B = model.set_point(28.0, -104.0, classes=["given"], ID="B")
-    D = model.set_point(196.0, -104.0, classes=["given"], ID="D")
-    E = model.set_point(48.0, -104.0, classes=["given"], ID="E")
-    G = model.set_point(176.0, -104.0, classes=["given"], ID="G")
-    H = model.set_point(112.0, -40.0, classes=["given"], ID="H")
-    F = model.set_point(112.0, -168.0, classes=["given"], ID="F")
+    # Endpoints of intersecting straight lines AB and CD
+    A = model.set_point(55.0, -14.0, classes=["given"], ID="A")
+    B = model.set_point(199.0, -169.0, classes=["given"], ID="B")
+    C = model.set_point(13.0, -167.0, classes=["given"], ID="C")
+    D = model.set_point(173.0, -23.0, classes=["given"], ID="D")
 
-    A = model.set_point(176.0, -49.4, classes=["given"], ID="A")
-    C = model.set_point(176.0, -158.6, classes=["given"], ID="C")
+    # Intersection point E of AB and CD
+    E = model.set_point(113.21, -76.66, ID="E")
 
-    M = model.set_point(190.0, -104.0, classes=["given"], ID="M")
-    L = model.set_point(190.0, -73.1, classes=["given"], ID="L")
-    N = model.set_point(190.0, -134.9, classes=["given"], ID="N")
+    # Random points F on EC, G on EB, and H, K on CB
+    F = model.set_point(69.1, -116.5, ID="F")
+    G = model.set_point(160.4, -127.4, ID="G")
+    H = model.set_point(82.0, -167.8, ID="H")
+    K = model.set_point(146.0, -168.4, ID="K")
 
-    # Concentric circles
-    model.construct_circle(K, D)
-    model.construct_circle(K, G)
+    # Construction lines
+    model.construct_line(A, B)
+    model.construct_line(C, D)
+    model.construct_line(C, B)
 
-    # Segments
-    for p1, p2 in [
-        (B, E), (E, K), (K, G), (G, M), (M, D),
-        (B, K), (K, D), (B, D),
-        (A, G), (G, C), (A, C),
-        (L, M), (M, N), (L, N),
-        (L, D), (D, N),
-    ]:
-        model.set_segment(p1, p2)
+    # Segments along AB
+    model.set_segment(A, B)
+    model.set_segment(A, E)
+    model.set_segment(E, B)
+    model.set_segment(E, G)
+    model.set_segment(G, B)
 
-    # Collinear sections
-    model.set_section([B, K, D])
+    # Segments along CD
+    model.set_segment(C, D)
+    model.set_segment(D, E)
+    model.set_segment(E, C)
+    model.set_segment(E, F)
+    model.set_segment(F, C)
+
+    # Segments along CB and interior
+    model.set_segment(C, B)
+    model.set_segment(C, H)
+    model.set_segment(H, K)
+    model.set_segment(K, B)
+    model.set_segment(F, G)
+    model.set_segment(F, H)
+    model.set_segment(G, K)
+    model.set_segment(A, D)
+
+    # Sections
+    model.set_section([A, E, B])
+    model.set_section([C, E, D])
+    model.set_section([E, F, C])
+    model.set_section([E, G, B])
+
+    # Polygons (triangles and quadrilateral)
+    model.set_polygon([E, C, B])
+    model.set_polygon([F, H, C])
+    model.set_polygon([G, B, K])
+    model.set_polygon([F, C, B, G])
+    model.set_polygon([E, F, G])
+    model.set_polygon([F, H, K, G])
+    model.set_polygon([A, E, D])
 
     return model
 

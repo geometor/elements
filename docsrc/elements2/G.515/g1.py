@@ -1,69 +1,55 @@
-"""Programmatic construction for Book XIII, Proposition 8 (XIII.8).
+"""Programmatic construction for Book XI, Proposition 13 (XI.13).
 
-An equilateral and equiangular pentagon ABCDE inscribed in circle ABCDE,
-with diagonals AC and BE intersecting at H in extreme and mean ratio.
+From the same point two straight lines cannot be set up at right angles to the
+same plane on the same side.
 """
 
 from __future__ import annotations
 
-import math
+import sympy as sp
 from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0457.g1 using geometor.model."""
-    model = Model("XIII.8")
+    """Construct the figure for Book XI, Proposition 13 using geometor.model."""
+    model = Model("XI.13")
 
-    cx, cy, r = 108.0, -108.0, 86.0
-    O = model.set_point(cx, cy, classes=["auxiliary"], ID="O")
+    # Perspective plane of reference boundary corners
+    P1 = model.set_point(sp.Rational(-50, 91), sp.Rational(48, 91), label="P1")
+    P2 = model.set_point(sp.Rational(87, 91), sp.Rational(48, 91), label="P2")
+    P3 = model.set_point(sp.Rational(63, 91), sp.Rational(-28, 91), label="P3")
+    P4 = model.set_point(sp.Rational(-74, 91), sp.Rational(-28, 91), label="P4")
 
-    # Regular pentagon vertices A (top), B (right), C (bottom-right), D (bottom-left), E (left)
-    angles_deg = [90.0, 18.0, -54.0, -126.0, 162.0]
-    labels = ["A", "B", "C", "D", "E"]
-    pts = {}
-    for lbl, deg in zip(labels, angles_deg):
-        rad = math.radians(deg)
-        pts[lbl] = model.set_point(
-            round(cx + r * math.cos(rad), 1),
-            round(cy + r * math.sin(rad), 1),
-            classes=["given"],
-            label=lbl,
-        )
+    # 1. From the same point A let the two straight lines AB, AC be set up at
+    #    right angles to the plane of reference and on the same side.
+    A = model.set_point(0, 0, classes=["given"], ID="A")
+    B = model.set_point(0, 1, classes=["given"], ID="B")
+    C = model.set_point(sp.Rational(16, 91), sp.Rational(76, 91), classes=["given"], label="C")
 
-    A, B, C, D, E = pts["A"], pts["B"], pts["C"], pts["D"], pts["E"]
+    # 2. Let a plane be drawn through BA, AC making section DAE in the plane of reference.
+    D = model.set_point(sp.Rational(-62, 91), sp.Rational(20, 91), label="D")
+    E = model.set_point(sp.Rational(68, 91), sp.Rational(-21, 91), label="E")
 
-    # Circumscribed circle ABCDE
-    model.construct_circle(O, A)
+    # Segments and section
+    model.set_segment(A, B)
+    model.set_segment(A, C)
+    model.set_segment(D, A)
+    model.set_segment(A, E)
+    model.set_segment(D, E)
+    model.set_section([D, A, E])
 
-    # Intersection H of diagonals AC and BE
-    H = model.set_point(127.3, -81.4, classes=["constructed"], ID="H")
+    # Plane of reference and plane through BA, AC
+    model.set_segment(P1, P2)
+    model.set_segment(P2, P3)
+    model.set_segment(P3, P4)
+    model.set_segment(P4, P1)
+    model.set_polygon([P1, P2, P3, P4])
+    model.set_polygon([B, A, C])
+    model.set_polygon([B, A, E, C])
 
-    # Pentagon and triangles
-    model.set_polygon([A, B, C, D, E])
-    model.set_polygon([A, B, E])
-    model.set_polygon([A, B, C])
-    model.set_polygon([A, B, H])
-
-    # Segments and collinear sub-segments
-    for p1, p2 in [
-        (A, B), (B, C), (C, D), (D, E), (E, A),
-        (A, C), (A, H), (H, C),
-        (B, E), (E, H), (H, B),
-    ]:
-        model.set_segment(p1, p2)
-
-    # Sections
-    model.set_section([A, H, C])
-    model.set_section([E, H, B])
-
-    # Angles (wedges)
-    model.set_wedge(A, B, B, C)
-    model.set_wedge(B, A, A, E)
-    model.set_wedge(H, A, A, E)
-    model.set_wedge(A, E, E, C)
-    model.set_wedge(E, A, A, B)
+    # Wedges for angles CAE and BAE
+    model.set_wedge(A, C, C, E)
     model.set_wedge(A, B, B, E)
-    model.set_wedge(H, A, A, B)
 
     return model
 

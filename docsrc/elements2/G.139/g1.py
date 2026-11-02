@@ -1,4 +1,4 @@
-"""Programmatic construction for Book V, Proposition 4 (V.4)."""
+"""Programmatic construction for Book III, Proposition 31 (III.31)."""
 
 from __future__ import annotations
 
@@ -6,50 +6,51 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0148.g1 using geometor.model."""
-    model = Model("V.4")
+    """Construct the figure 0068.g1 using geometor.model."""
+    model = Model("III.31")
 
-    # Upper group of magnitudes: A, B, E, G, K, M
-    A_l = model.set_point(31.0, -23.0, classes=["given"], ID="A")
-    A_r = model.set_point(78.0, -23.0, ID="A_r")
-    B_l = model.set_point(31.0, -48.0, classes=["given"], ID="B")
-    B_r = model.set_point(71.0, -48.0, ID="B_r")
-    E_l = model.set_point(31.0, -73.0, ID="E")
-    E_r = model.set_point(134.0, -73.0, ID="E_r")
-    G_l = model.set_point(31.0, -96.0, ID="G")
-    G_r = model.set_point(147.0, -96.0, ID="G_r")
-    K_l = model.set_point(31.0, -119.0, ID="K")
-    K_r = model.set_point(237.0, -119.0, ID="K_r")
-    M_l = model.set_point(31.0, -145.0, ID="M")
-    M_r = model.set_point(378.0, -145.0, ID="M_r")
+    # Circle center E, points A, B, C, D on circle, and produced point F (y-inverted)
+    E = model.set_point(129.00, -103.00, ID="E")
+    A = model.set_point(52.19, -89.46, classes=["given"], ID="A")
+    B = model.set_point(101.05, -175.82, classes=["given"], ID="B")
+    C = model.set_point(156.95, -30.18, classes=["given"], ID="C")
+    D = model.set_point(76.81, -45.03, classes=["given"], ID="D")
+    F = model.set_point(25.32, -41.96, ID="F")
 
-    # Lower group of magnitudes: C, D, F, H, L, N
-    C_l = model.set_point(28.0, -172.0, classes=["given"], ID="C")
-    C_r = model.set_point(67.0, -172.0, ID="C_r")
-    D_l = model.set_point(28.0, -201.0, classes=["given"], ID="D")
-    D_r = model.set_point(58.0, -201.0, ID="D_r")
-    F_l = model.set_point(28.0, -227.0, ID="F")
-    F_r = model.set_point(114.0, -227.0, ID="F_r")
-    H_l = model.set_point(28.0, -253.0, ID="H")
-    H_r = model.set_point(124.0, -253.0, ID="H_r")
-    L_l = model.set_point(28.0, -280.0, ID="L")
-    L_r = model.set_point(196.0, -280.0, ID="L_r")
-    N_l = model.set_point(28.0, -306.0, ID="N")
-    N_r = model.set_point(312.0, -306.0, ID="N_r")
+    # Circle ABCD
+    model.construct_circle(E, A)
 
-    # Magnitude segments
-    model.set_segment(A_l, A_r)
-    model.set_segment(B_l, B_r)
-    model.set_segment(E_l, E_r)
-    model.set_segment(G_l, G_r)
-    model.set_segment(K_l, K_r)
-    model.set_segment(M_l, M_r)
-    model.set_segment(C_l, C_r)
-    model.set_segment(D_l, D_r)
-    model.set_segment(F_l, F_r)
-    model.set_segment(H_l, H_r)
-    model.set_segment(L_l, L_r)
-    model.set_segment(N_l, N_r)
+    # Segments and sections
+    model.set_segment(B, C)
+    model.set_segment(B, E)
+    model.set_segment(E, C)
+    model.set_segment(B, A)
+    model.set_segment(A, F)
+    model.set_segment(B, F)
+    model.set_segment(A, C)
+    model.set_segment(A, D)
+    model.set_segment(D, C)
+    model.set_segment(A, E)
+    model.set_section([B, E, C])
+    model.set_section([B, A, F])
+
+    # Polygons
+    model.set_polygon([A, B, C, D])
+    model.set_polygon([A, B, C])
+    model.set_polygon([A, B, E])
+    model.set_polygon([A, C, E])
+    model.set_polygon([A, D, C])
+
+    # Angles (wedges)
+    model.set_wedge(A, B, B, C)
+    model.set_wedge(B, A, A, C)
+    model.set_wedge(D, A, A, C)
+    model.set_wedge(A, B, B, E)
+    model.set_wedge(C, A, A, E)
+    model.set_wedge(A, C, C, E)
+    model.set_wedge(A, F, F, C)
+    model.set_wedge(E, A, A, C)
+    model.set_wedge(E, A, A, B)
 
     return model
 

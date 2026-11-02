@@ -1,4 +1,4 @@
-"""Programmatic construction for Book XII, Proposition 6 (XII.6)."""
+"""Programmatic construction for Book X, Proposition 106 (X.106)."""
 
 from __future__ import annotations
 
@@ -6,58 +6,34 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0396.g1 using geometor.model."""
-    model = Model("XII.6")
+    """Construct the figure 0237.g1 using geometor.model."""
+    model = Model("X.106")
 
-    # First pyramid M-ABCDE
-    M = model.set_point(96.0, -29.0, classes=["given"], ID="M")
-    A = model.set_point(128.0, -192.0, classes=["given"], ID="A")
-    B = model.set_point(147.0, -130.0, classes=["given"], ID="B")
-    C = model.set_point(60.0, -113.0, classes=["given"], ID="C")
-    D = model.set_point(21.0, -158.0, classes=["given"], ID="D")
-    E = model.set_point(62.0, -220.0, classes=["given"], ID="E")
+    # Line AE divided at B
+    A = model.set_point(35.0, -22.5, classes=["given"], ID="A")
+    B = model.set_point(103.0, -22.5, classes=["given"], ID="B")
+    E = model.set_point(149.0, -22.5, classes=["given"], ID="E")
 
-    # Second pyramid N-FGHKL
-    N = model.set_point(227.0, -18.0, classes=["given"], ID="N")
-    F = model.set_point(259.0, -224.0, classes=["given"], ID="F")
-    G = model.set_point(375.0, -181.0, classes=["given"], ID="G")
-    H = model.set_point(290.0, -108.0, classes=["given"], ID="H")
-    K = model.set_point(225.0, -108.0, classes=["given"], ID="K")
-    L = model.set_point(195.0, -149.0, classes=["given"], ID="L")
+    # Line CF divided at D
+    C = model.set_point(17.0, -52.5, classes=["given"], ID="C")
+    D = model.set_point(101.0, -52.5, classes=["given"], ID="D")
+    F = model.set_point(176.0, -52.5, classes=["given"], ID="F")
 
-    # Segments of first pyramid
-    for pt in [A, B, C, D, E]:
-        model.set_segment(M, pt)
+    # Base lines
+    model.construct_line(A, E)
+    model.construct_line(C, F)
+
+    # Segments
+    model.set_segment(A, E)
     model.set_segment(A, B)
-    model.set_segment(B, C)
+    model.set_segment(B, E)
+    model.set_segment(C, F)
     model.set_segment(C, D)
-    model.set_segment(D, E)
-    model.set_segment(E, A)
-    model.set_segment(A, C)
-    model.set_segment(A, D)
+    model.set_segment(D, F)
 
-    # Segments of second pyramid
-    for pt in [F, G, H, K, L]:
-        model.set_segment(N, pt)
-    model.set_segment(F, G)
-    model.set_segment(G, H)
-    model.set_segment(H, K)
-    model.set_segment(K, L)
-    model.set_segment(L, F)
-    model.set_segment(F, H)
-    model.set_segment(F, K)
-
-    # Polygons
-    model.set_polygon([A, B, C, D, E])
-    model.set_polygon([A, B, C, D])
-    model.set_polygon([A, B, C])
-    model.set_polygon([A, C, D])
-    model.set_polygon([A, D, E])
-
-    model.set_polygon([F, G, H, K, L])
-    model.set_polygon([F, G, H])
-    model.set_polygon([F, H, K])
-    model.set_polygon([F, K, L])
+    # Sections
+    model.set_section([A, B, E])
+    model.set_section([C, D, F])
 
     return model
 

@@ -1,17 +1,18 @@
 :canonical_id: G.43
-:original_id: I.30
+:original_id: I.18
+:title: G.43 greater side subtends greater angle
 :volume: I
 :book: I
 :type: prop
 
-G.43 — Code
-===========
+G.43 greater side subtends greater angle — Code
+===============================================
 
-.. rubric:: `I.30 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/30/>`_
+.. rubric:: `I.18 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/18/>`_
 
 .. enunciation::
 
-   Lines parallel to the same line are parallel to one another.
+   In any :term:`triangle <G.11>`, the greater side subtends the greater :term:`angle <G.22>`.
 
 .. picture:: g1.svg
 

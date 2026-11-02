@@ -1,17 +1,18 @@
 :canonical_id: G.443
-:original_id: XI.1
+:original_id: X.63
+:title: G.443 square major segment
 :volume: III
-:book: XI
+:book: X
 :type: prop
 
-G.443 — Code
-============
+G.443 square major segment — Code
+=================================
 
-.. rubric:: `XI.1 <https://geometor.github.io/euclid/heath/volume_III/book_xi/propositions/01/>`_
+.. rubric:: `X.63 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/063/>`_
 
 .. enunciation::
 
-   A part of a straight line cannot be in the plane of reference and a part in a plane more elevated.
+   The :term:`square <G.63>` on the major :term:`segment <G.4>` applied to a :term:`rational <G.391>` segment produces as breadth the :term:`fourth binomial <G.428>`.
 
 .. picture:: g1.svg
 

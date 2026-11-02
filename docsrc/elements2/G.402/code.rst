@@ -1,17 +1,18 @@
 :canonical_id: G.402
-:original_id: X.81
+:original_id: X.28
+:title: G.402 find medial segments commensurable in square only which
 :volume: III
 :book: X
 :type: prop
 
-G.402 — Code
-============
+G.402 find medial segments commensurable in square only which — Code
+====================================================================
 
-.. rubric:: `X.81 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/081/>`_
+.. rubric:: `X.28 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/028/>`_
 
 .. enunciation::
 
-   To a second apotome of a medial straight line only one medial straight line can be annexed which is commensurable with the whole in square only and which contains with the whole a medial rectangle.
+   Find medial :term:`segments <G.4>` :term:`commensurable in square only <G.380>` which contain a medial :term:`rectangle <G.81>`.
 
 .. picture:: g1.svg
 

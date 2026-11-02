@@ -1,17 +1,18 @@
 :canonical_id: G.82
-:original_id: III.7
-:volume: II
-:book: III
+:original_id: II.1
+:title: G.82 distribute rectangle
+:volume: I
+:book: II
 :type: prop
 
-G.82 — Code
-===========
+G.82 distribute rectangle — Code
+================================
 
-.. rubric:: `III.7 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/07/>`_
+.. rubric:: `II.1 <https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/01/>`_
 
 .. enunciation::
 
-   If on the diameter of a circle a point be taken which is not the centre of the circle, and from the point straight lines fall upon the circle, that is greatest on which the centre is, the remainder of the same diameter is least, and of the rest the nearer to the straight line through the centre is always greater than the more remote, and only two equal straight lines will fall from the point on the circle, one on each side of the least straight line.
+   If there be two :term:`segments <G.4>`, and one of them be cut into any number of segments whatever, the :term:`rectangle contained <G.81>` by the two segments is equal to the rectangles contained by the uncut segment and each of the segments.
 
 .. picture:: g1.svg
 

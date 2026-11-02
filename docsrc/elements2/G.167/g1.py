@@ -1,7 +1,4 @@
-"""Programmatic construction for Book VI, Proposition 5 (VI.5 - g1).
-
-Given triangle ABC in Proposition 5.
-"""
+"""Programmatic construction for Book IV, Proposition 15 (IV.15)."""
 
 from __future__ import annotations
 
@@ -9,26 +6,62 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure for 0209.g1 (VI.5) using geometor.model."""
-    model = Model("VI.5.g1")
+    """Construct the figure 0113.g1 (Inscribed regular hexagon) using geometor.model."""
+    model = Model("IV.15")
 
-    # 1. Points
-    A = model.set_point(131, -49, classes=["given"], ID="A")
-    B = model.set_point(26, -151, classes=["given"], ID="B")
-    C = model.set_point(103, -136, classes=["given"], ID="C")
+    # Points (y-inverted for standard mathematical coordinates)
+    G = model.set_point(86.00, -145.00, ID="G")
+    A = model.set_point(86.00, -209.00, classes=["given"], ID="A")
+    B = model.set_point(30.57, -177.00, ID="B")
+    C = model.set_point(30.57, -113.00, ID="C")
+    D = model.set_point(86.00, -81.00, ID="D")
+    E = model.set_point(141.43, -113.00, ID="E")
+    F = model.set_point(141.43, -177.00, ID="F")
+    H = model.set_point(86.00, -17.00, ID="H")
 
-    # 3. Segments
+    # Given circle ABCDEF and auxiliary circle EGCH
+    model.construct_circle(G, A)
+    model.construct_circle(D, G)
+
+    # Segments
     model.set_segment(A, B)
     model.set_segment(B, C)
-    model.set_segment(C, A)
+    model.set_segment(C, D)
+    model.set_segment(D, E)
+    model.set_segment(E, F)
+    model.set_segment(F, A)
+    model.set_segment(A, D)
+    model.set_segment(B, E)
+    model.set_segment(C, F)
+    model.set_segment(G, A)
+    model.set_segment(G, B)
+    model.set_segment(G, C)
+    model.set_segment(G, D)
+    model.set_segment(G, E)
+    model.set_segment(G, F)
 
-    # 5. Polygons (Triangle)
-    model.set_polygon([A, B, C])
+    # Collinear sections
+    model.set_section([A, G, D])
+    model.set_section([B, G, E])
+    model.set_section([C, G, F])
 
-    # 6. Angles (Wedges)
-    model.set_wedge(A, B, B, C)
-    model.set_wedge(B, A, A, C)
-    model.set_wedge(C, A, A, B)
+    # Polygons
+    model.set_polygon([A, B, C, D, E, F])
+    model.set_polygon([E, G, D])
+    model.set_polygon([D, G, C])
+
+    # Angles (wedges)
+    model.set_wedge(E, G, G, D)
+    model.set_wedge(G, D, D, E)
+    model.set_wedge(D, E, E, G)
+    model.set_wedge(D, G, G, C)
+    model.set_wedge(C, G, G, B)
+    model.set_wedge(E, G, G, C)
+    model.set_wedge(B, G, G, A)
+    model.set_wedge(A, G, G, F)
+    model.set_wedge(F, G, G, E)
+    model.set_wedge(F, E, E, D)
+    model.set_wedge(A, F, F, E)
 
     return model
 

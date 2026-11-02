@@ -1,54 +1,43 @@
-"""Programmatic construction for Book II, Proposition 14 (II.14).
+"""Programmatic construction for Book I, I.46 (I.46).
 
-To construct a square equal to a given rectilineal figure.
+On a given straight line to describe a square.
 """
 
 from __future__ import annotations
 
-import sympy as sp
 from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure for Book II, Proposition 14 using geometor.model."""
-    model = Model("II.14")
+    """Construct the figure for 0361.g1 (I.46) using geometor.model."""
+    model = Model("I.46")
 
-    # 1. Rectangular parallelogram BCDE (BD) equal to the given rectilineal figure A
-    B = model.set_point(0, 0, classes=["given"], ID="B")
-    C = model.set_point(0, -1, classes=["given"], ID="C")
-    D = model.set_point(3, -1, classes=["given"], ID="D")
-    E = model.set_point(3, 0, classes=["given"], ID="E")
-    model.set_polygon([B, C, D, E])
+    # 1. Points
+    A = model.set_point(30, -196, classes=["given"], ID="A")
+    B = model.set_point(134, -196, classes=["given"], ID="B")
+    D = model.set_point(30, -92, ID="D")
+    E = model.set_point(134, -92, ID="E")
+    C = model.set_point(30, -21, ID="C")
 
-    # 2. Produce BE to F with EF = ED
-    model.construct_line(B, E)
-    F = model.set_point(4, 0, ID="F")
+    # 3. Segments
+    model.set_segment(A, C)
+    model.set_segment(A, D)
+    model.set_segment(D, C)
+    model.set_segment(A, B)
+    model.set_segment(D, E)
+    model.set_segment(B, E)
 
-    # 3. Bisect BF at G
-    G = model.set_point(2, 0, ID="G")
+    # 4. Collinear Sections
+    model.set_section([A, D, C])
 
-    # 4. With centre G and distance GB or GF describe the semicircle BHF
-    model.construct_circle(G, B)
+    # 5. Polygons (Triangles, Parallelograms, Trapezia, Squares)
+    model.set_polygon([A, D, E, B])
 
-    # 5. Produce DE to H on the semicircle, and join GH
-    model.construct_line(D, E)
-    H = model.set_point(3, sp.sqrt(3), label="H")
-
-    # Right triangle GEH
-    model.set_polygon([G, E, H])
-
-    # Collinear sections
-    model.set_section([B, G, F])
-    model.set_section([B, E, F])
-    model.set_section([D, E, H])
-
-    # Segments
-    for p1, p2 in [
-        (B, C), (C, D), (D, E), (B, E),
-        (E, F), (B, F), (G, B), (G, F), (G, E),
-        (E, H), (D, H), (G, H),
-    ]:
-        model.set_segment(p1, p2)
+    # 6. Angles (Wedges)
+    model.set_wedge(A, B, B, D)
+    model.set_wedge(D, A, A, E)
+    model.set_wedge(B, A, A, E)
+    model.set_wedge(E, B, B, D)
 
     return model
 

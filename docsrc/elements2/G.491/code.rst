@@ -1,17 +1,18 @@
 :canonical_id: G.491
-:original_id: XII.5
+:original_id: X.105
+:title: G.491 segment commensurable minor
 :volume: III
-:book: XII
+:book: X
 :type: prop
 
-G.491 — Code
-============
+G.491 segment commensurable minor — Code
+========================================
 
-.. rubric:: `XII.5 <https://geometor.github.io/euclid/heath/volume_III/book_xii/propositions/05/>`_
+.. rubric:: `X.105 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/105/>`_
 
 .. enunciation::
 
-   Pyramids which are of the same height and have triangular bases are to one another as the bases.
+   A :term:`segment <G.4>` :term:`commensurable <G.372>` with a minor segment is minor.
 
 .. picture:: g1.svg
 

@@ -1,17 +1,18 @@
 :canonical_id: G.452
-:original_id: XI.9
+:original_id: X.72
+:title: G.452 medial areas incommensurable
 :volume: III
-:book: XI
+:book: X
 :type: prop
 
-G.452 — Code
-============
+G.452 medial areas incommensurable — Code
+=========================================
 
-.. rubric:: `XI.9 <https://geometor.github.io/euclid/heath/volume_III/book_xi/propositions/09/>`_
+.. rubric:: `X.72 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/072/>`_
 
 .. enunciation::
 
-   Straight lines which are parallel to the same straight line and are not in the same plane with it are also parallel to one another.
+   If two medial areas :term:`incommensurable <G.372>` with one another be added together, the remaining two :term:`irrational <G.391>` :term:`segments <G.4>` arise, namely either a second bimedial or a side of the sum of two medial areas.
 
 .. picture:: g1.svg
 

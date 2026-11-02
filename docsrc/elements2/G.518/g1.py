@@ -1,87 +1,67 @@
-"""Programmatic construction for Book XIII, Proposition 11 (XIII.11).
+"""Programmatic construction for Book XI, Proposition 15 (XI.15).
 
-Regular pentagon ABCDE inscribed in circle ABCDE with rational diameter AG,
-centre F, diameter BH meeting AC at M, AG meeting CD at L, FK = 1/4 AF,
-and auxiliary line N.
+If two straight lines meeting one another be parallel to two straight lines
+meeting one another, not being in the same plane, the planes through them are
+parallel.
 """
 
 from __future__ import annotations
 
-import math
+import sympy as sp
 from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0466.g1 using geometor.model."""
-    model = Model("XIII.11")
+    """Construct the figure for Book XI, Proposition 15 using geometor.model."""
+    model = Model("XI.15")
 
-    cx, cy, r = 204.0, -152.0, 122.0
-    F = model.set_point(cx, cy, classes=["given"], ID="F")
+    # 1. Let the two straight lines AB, BC meeting one another be parallel to
+    #    the two straight lines DE, EF meeting one another, not in the same plane.
+    B = model.set_point(0, 1, classes=["given"], ID="B")
+    A = model.set_point(sp.Rational(-43, 145), sp.Rational(112, 145), classes=["given"], label="A")
+    C = model.set_point(sp.Rational(30, 145), sp.Rational(112, 145), classes=["given"], label="C")
 
-    # Regular pentagon vertices A (top), B (left), C (bottom-left), D (bottom-right), E (right)
-    angles_deg = [90.0, 162.0, -126.0, -54.0, 18.0]
-    labels = ["A", "B", "C", "D", "E"]
-    pts = {}
-    for lbl, deg in zip(labels, angles_deg):
-        rad = math.radians(deg)
-        pts[lbl] = model.set_point(
-            round(cx + r * math.cos(rad), 1),
-            round(cy + r * math.sin(rad), 1),
-            classes=["given"],
-            label=lbl,
-        )
+    # 2. Let BG be drawn from B perpendicular to the plane through DE, EF, meeting it at G.
+    G = model.set_point(sp.Rational(4, 145), 0, label="G")
+    E = model.set_point(sp.Rational(27, 145), sp.Rational(41, 145), classes=["given"], label="E")
+    D = model.set_point(sp.Rational(-31, 145), sp.Rational(-5, 145), classes=["given"], label="D")
+    F = model.set_point(sp.Rational(79, 145), sp.Rational(-20, 145), classes=["given"], label="F")
 
-    A, B, C, D, E = pts["A"], pts["B"], pts["C"], pts["D"], pts["E"]
+    # 3. Through G let GH be drawn parallel to ED, and GK parallel to EF.
+    H = model.set_point(sp.Rational(-29, 145), sp.Rational(-25, 145), label="H")
+    K = model.set_point(sp.Rational(25, 145), sp.Rational(-24, 145), label="K")
 
-    # Circle ABCDE
-    model.construct_circle(F, A)
+    # Plane through AB, BC corners
+    P1 = model.set_point(sp.Rational(-75, 145), sp.Rational(168, 145), label="P1")
+    P2 = model.set_point(sp.Rational(65, 145), sp.Rational(168, 145), label="P2")
+    P3 = model.set_point(sp.Rational(34, 145), sp.Rational(100, 145), label="P3")
+    P4 = model.set_point(sp.Rational(-89, 145), sp.Rational(99, 145), label="P4")
 
-    # Diameter endpoints G (-90 deg) and H (-18 deg)
-    G = model.set_point(204.0, -274.0, classes=["constructed"], ID="G")
-    H = model.set_point(320.0, -189.7, classes=["constructed"], ID="H")
+    # Plane through DE, EF corners
+    Q1 = model.set_point(sp.Rational(-24, 145), sp.Rational(57, 145), label="Q1")
+    Q2 = model.set_point(sp.Rational(135, 145), sp.Rational(57, 145), label="Q2")
+    Q3 = model.set_point(sp.Rational(93, 145), sp.Rational(-36, 145), label="Q3")
+    Q4 = model.set_point(sp.Rational(-56, 145), sp.Rational(-36, 145), label="Q4")
 
-    # L (intersection of AG and CD) and M (intersection of BH and AC)
-    L = model.set_point(204.0, -250.7, classes=["constructed"], ID="L")
-    M = model.set_point(168.1, -140.4, classes=["constructed"], ID="M")
+    # Segments
+    model.set_segment(A, B)
+    model.set_segment(B, C)
+    model.set_segment(D, E)
+    model.set_segment(E, F)
+    model.set_segment(B, G)
+    model.set_segment(G, H)
+    model.set_segment(G, K)
 
-    # K on FH with FK = 1/4 AF
-    K = model.set_point(233.0, -161.4, classes=["constructed"], ID="K")
+    # Planes
+    model.set_polygon([P1, P2, P3, P4])
+    model.set_polygon([Q1, Q2, Q3, Q4])
+    model.set_polygon([A, B, C])
+    model.set_polygon([D, E, F])
 
-    # Auxiliary line N on the left
-    N1 = model.set_point(24.0, -76.0, classes=["auxiliary"], ID="N1")
-    N2 = model.set_point(24.0, -216.0, classes=["auxiliary"], ID="N2")
-    model.set_segment(N1, N2)
-
-    # Polygons and triangles
-    model.set_polygon([A, B, C, D, E])
-    model.set_polygon([A, C, L])
-    model.set_polygon([A, M, F])
-    model.set_polygon([A, B, H])
-    model.set_polygon([A, B, M])
-
-    # Segments and collinear sub-segments
-    for p1, p2 in [
-        (A, B), (B, C), (C, D), (D, E), (E, A),
-        (C, L), (L, D),
-        (A, C), (A, M), (M, C),
-        (A, G), (A, F), (F, L), (L, G), (F, G), (A, L),
-        (B, H), (B, M), (M, F), (F, K), (K, H), (B, F), (B, K), (M, K), (F, H),
-        (A, D), (A, H),
-    ]:
-        model.set_segment(p1, p2)
-
-    # Sections
-    model.set_section([A, F, G])
-    model.set_section([B, F, H])
-    model.set_section([A, M, C])
-    model.set_section([C, L, D])
-
-    # Angles (wedges)
-    model.set_wedge(L, A, A, C)
-    model.set_wedge(M, A, A, F)
-    model.set_wedge(A, L, L, C)
-    model.set_wedge(C, A, A, L)
-    model.set_wedge(F, M, M, A)
+    # Wedges for angles BGH, BGK, GBA
+    model.set_wedge(G, H, H, B)
+    model.set_wedge(G, B, B, K)
+    model.set_wedge(B, G, G, A)
 
     return model
 

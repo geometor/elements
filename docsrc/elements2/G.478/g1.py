@@ -1,81 +1,109 @@
-"""Programmatic construction for Book XI, Proposition 31 (XI.31 - g1).
-
-Parallelepipedal solids AE and CF on equal bases AB and CD and of the same height
-are equal to one another, proved via auxiliary solids XU, XY, RI, and CI.
-"""
+"""Programmatic construction for Book X, Proposition 92 (X.92)."""
 
 from __future__ import annotations
 
-import sympy as sp
 from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the parallelepipedal solids for Book XI, Proposition 31."""
-    model = Model("XI.31.g1")
+    """Construct the figure 0199.g1 using geometor.model."""
+    model = Model("X.92")
 
-    # Left compound figure: top-back line Q-F-I and top-front line P-D-a
-    Q = model.set_point(sp.Rational(60, 100), sp.Rational(224, 100), classes=["given"], label="Q")
-    F = model.set_point(sp.Rational(179, 100), sp.Rational(224, 100), classes=["given"], label="F")
-    I = model.set_point(sp.Rational(300, 100), sp.Rational(224, 100), label="I")
+    # Top rectangle AGKC divided by vertical segments DB, EH, FI
+    A = model.set_point(15.5, -18.5, classes=["given"], ID="A")
+    D = model.set_point(116.5, -18.5, classes=["given"], ID="D")
+    E = model.set_point(206.5, -18.5, ID="E")
+    F = model.set_point(261.5, -18.5, ID="F")
+    G = model.set_point(297.5, -18.5, classes=["given"], ID="G")
 
-    P = model.set_point(sp.Rational(28, 100), sp.Rational(186, 100), classes=["given"], label="P")
-    D = model.set_point(sp.Rational(147, 100), sp.Rational(186, 100), classes=["given"], label="D")
-    a = model.set_point(sp.Rational(268, 100), sp.Rational(186, 100), label="a")
+    C = model.set_point(15.5, -97.5, classes=["given"], ID="C")
+    B = model.set_point(116.5, -97.5, classes=["given"], ID="B")
+    H = model.set_point(206.5, -97.5, ID="H")
+    I = model.set_point(261.5, -97.5, ID="I")
+    K = model.set_point(297.5, -97.5, ID="K")
 
-    # Middle-back line O-S-X and middle-front line C-R-T
-    O = model.set_point(sp.Rational(47, 100), sp.Rational(146, 100), classes=["given"], label="O")
-    S = model.set_point(sp.Rational(166, 100), sp.Rational(146, 100), classes=["given"], label="S")
-    X = model.set_point(sp.Rational(287, 100), sp.Rational(146, 100), label="X")
+    # Bottom square LPMR with internal lines SO, NT, and diameter PR intersecting at Q
+    L = model.set_point(90.5, -125.0, ID="L")
+    N = model.set_point(180.5, -125.0, ID="N")
+    P = model.set_point(230.5, -125.0, ID="P")
 
-    C = model.set_point(sp.Rational(15, 100), sp.Rational(108, 100), classes=["given"], label="C")
-    R = model.set_point(sp.Rational(134, 100), sp.Rational(108, 100), classes=["given"], label="R")
-    T = model.set_point(sp.Rational(255, 100), sp.Rational(108, 100), label="T")
+    S = model.set_point(90.5, -176.5, ID="S")
+    Q = model.set_point(180.5, -176.5, ID="Q")
+    O = model.set_point(230.5, -176.5, ID="O")
 
-    # Bottom-back line e-d-c-V and bottom-front line Y-U-b-W
-    e = model.set_point(sp.Rational(152, 100), sp.Rational(64, 100), label="e")
-    d = model.set_point(sp.Rational(229, 100), sp.Rational(64, 100), label="d")
-    c = model.set_point(sp.Rational(273, 100), sp.Rational(64, 100), label="c")
-    V = model.set_point(sp.Rational(350, 100), sp.Rational(64, 100), label="V")
+    R = model.set_point(90.5, -263.5, ID="R")
+    T = model.set_point(180.5, -263.5, ID="T")
+    M = model.set_point(230.5, -263.5, ID="M")
 
-    Y = model.set_point(sp.Rational(120, 100), sp.Rational(26, 100), label="Y")
-    U = model.set_point(sp.Rational(197, 100), sp.Rational(26, 100), label="U")
-    b = model.set_point(sp.Rational(241, 100), sp.Rational(26, 100), label="b")
-    W = model.set_point(sp.Rational(318, 100), sp.Rational(26, 100), label="W")
-
-    # Right figure: solid AE
-    K = model.set_point(sp.Rational(444, 100), sp.Rational(143, 100), classes=["given"], label="K")
-    E = model.set_point(sp.Rational(565, 100), sp.Rational(143, 100), classes=["given"], label="E")
-    H = model.set_point(sp.Rational(412, 100), sp.Rational(105, 100), classes=["given"], label="H")
-    B = model.set_point(sp.Rational(533, 100), sp.Rational(105, 100), classes=["given"], label="B")
-    G = model.set_point(sp.Rational(504, 100), sp.Rational(64, 100), classes=["given"], label="G")
-    M = model.set_point(sp.Rational(625, 100), sp.Rational(64, 100), classes=["given"], label="M")
-    A = model.set_point(sp.Rational(472, 100), sp.Rational(26, 100), classes=["given"], label="A")
-    L = model.set_point(sp.Rational(593, 100), sp.Rational(26, 100), classes=["given"], label="L")
-
-    # Segments
-    for p, q in [
-        (P, Q), (D, F), (C, O), (R, S), (a, I), (T, X),
-        (H, K), (B, E), (A, G), (L, M),
-        (C, R), (R, T), (R, U), (A, L), (L, B),
-        (D, R), (R, Y), (D, Y), (W, U), (Y, W), (e, V),
-        (a, b), (T, b), (T, W), (S, e), (S, d), (X, c), (X, V), (P, D),
+    # Base lines
+    for p1, p2 in [
+        (A, G), (C, K), (A, C), (D, B), (E, H), (F, I), (G, K),
+        (L, P), (S, O), (R, M), (L, R), (N, T), (P, M), (P, R),
     ]:
-        model.set_segment(p, q)
+        model.construct_line(p1, p2)
 
-    # Polygons
-    model.set_polygon([A, H, B, L])
-    model.set_polygon([C, P, D, R])
-    model.set_polygon([R, U, W, T])
-    model.set_polygon([R, T, X, S])
-    model.set_polygon([A, L, M, G])
-    model.set_polygon([L, B, E, M])
-    model.set_polygon([S, R, U, d])
-    model.set_polygon([Y, b, c, e])
-    model.set_polygon([U, W, V, d])
-    model.set_polygon([Y, b, T, R])
-    model.set_polygon([D, a, T, R])
-    model.set_polygon([R, D, F, S])
+    # Top and bottom collinear segments on AGKC
+    for pts in ([A, D, E, F, G], [C, B, H, I, K]):
+        for i in range(len(pts)):
+            for j in range(i + 1, len(pts)):
+                model.set_segment(pts[i], pts[j])
+
+    # Vertical segments on AGKC
+    for p1, p2 in [(A, C), (D, B), (E, H), (F, I), (G, K)]:
+        model.set_segment(p1, p2)
+
+    # Segments on square LPMR
+    for pts in (
+        [L, N, P],
+        [S, Q, O],
+        [R, T, M],
+        [L, S, R],
+        [N, Q, T],
+        [P, O, M],
+        [P, Q, R],
+    ):
+        for i in range(len(pts)):
+            for j in range(i + 1, len(pts)):
+                model.set_segment(pts[i], pts[j])
+
+    # Collinear sections
+    model.set_section([A, D, G])
+    model.set_section([D, E, G])
+    model.set_section([A, F, G])
+    model.set_section([L, N, P])
+    model.set_section([S, Q, O])
+    model.set_section([R, T, M])
+    model.set_section([L, S, R])
+    model.set_section([N, Q, T])
+    model.set_section([P, O, M])
+    model.set_section([P, Q, R])
+
+    # Polygons in AGKC
+    model.set_polygon([A, G, K, C])  # AK
+    model.set_polygon([A, D, B, C])  # AB
+    model.set_polygon([D, G, K, B])  # DK
+    model.set_polygon([A, F, I, C])  # AI
+    model.set_polygon([F, G, K, I])  # FK / KF
+    model.set_polygon([D, E, H, B])  # DH
+    model.set_polygon([E, G, K, H])  # EK
+    model.set_polygon([E, F, I, H])  # EI
+    model.set_polygon([A, E, H, C])  # AH
+    model.set_polygon([D, F, I, B])  # DI
+
+    # Polygons and Gnomon in LPMR
+    model.set_polygon([L, P, M, R])  # LM
+    model.set_polygon([N, P, O, Q])  # NO
+    model.set_polygon([S, Q, T, R])  # ST / TS
+    model.set_polygon([L, P, O, S])  # LO
+    model.set_polygon([N, P, M, T])  # MN
+    model.set_polygon([L, N, Q, S])  # LQ
+    model.set_polygon([Q, O, M, T])  # QM
+    model.set_polygon([L, N, T, R])  # LT
+    model.set_polygon([S, O, M, R])  # SM
+    model.set_polygon([L, N, Q, O, M, R])  # Gnomon UVW
+
+    # Common angle LPM
+    model.set_wedge(P, L, L, M)
 
     return model
 

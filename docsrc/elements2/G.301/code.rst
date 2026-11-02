@@ -1,17 +1,18 @@
 :canonical_id: G.301
-:original_id: IX.28
+:original_id: VIII.5
+:title: G.301 plane numbers ratio
 :volume: II
-:book: IX
+:book: VIII
 :type: prop
 
-G.301 — Code
-============
+G.301 plane numbers ratio — Code
+================================
 
-.. rubric:: `IX.28 <https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/28/>`_
+.. rubric:: `VIII.5 <https://geometor.github.io/euclid/heath/volume_II/book_viii/propositions/05/>`_
 
 .. enunciation::
 
-   If an odd number by multiplying an even number make some number, the product is even.
+   :term:`Plane numbers <G.300>` have to one another the :term:`ratio <G.173>` compounded of the ratios of their sides.
 
 .. picture:: g1.svg
 

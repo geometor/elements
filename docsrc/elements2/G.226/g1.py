@@ -1,4 +1,8 @@
-"""Programmatic construction for Book VII, Proposition 25 (VII.25)."""
+"""Programmatic construction for Book VI, Proposition 15 (VI.15).
+
+In equal triangles which have one angle equal to one angle the sides about the
+equal angles are reciprocally proportional; and conversely.
+"""
 
 from __future__ import annotations
 
@@ -6,27 +10,47 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0332.g1 using geometor.model."""
-    model = Model("VII.25")
+    """Construct the figure for 0226.g1 (VI.15) using geometor.model."""
+    model = Model("VI.15")
 
-    # Single-letter vertical number segments A, D, B, C
-    A_t = model.set_point(22.0, -10.0, classes=["given"], ID="A")
-    A_b = model.set_point(22.0, -71.0, ID="A_b")
+    # 1. Points
+    B = model.set_point(51.0, -30.0, classes=["given"], ID="B")
+    C = model.set_point(20.0, -152.0, classes=["given"], ID="C")
+    D = model.set_point(112.0, -48.0, classes=["given"], ID="D")
+    E = model.set_point(139.0, -185.0, classes=["given"], ID="E")
+    A = model.set_point(81.07, -82.96, classes=["given"], ID="A")
 
-    D_t = model.set_point(22.0, -83.0, classes=["given"], ID="D")
-    D_b = model.set_point(22.0, -141.0, ID="D_b")
+    # 2. Construction Lines
+    model.construct_line(C, D)
+    model.construct_line(B, E)
 
-    B_t = model.set_point(48.0, -12.0, classes=["given"], ID="B")
-    B_b = model.set_point(48.0, -60.0, ID="B_b")
+    # 3. Segments
+    model.set_segment(C, A)
+    model.set_segment(A, D)
+    model.set_segment(C, D)
 
-    C_t = model.set_point(72.0, -13.0, classes=["given"], ID="C")
-    C_b = model.set_point(72.0, -119.0, ID="C_b")
+    model.set_segment(B, A)
+    model.set_segment(A, E)
+    model.set_segment(B, E)
 
-    # Number segments
-    model.set_segment(A_t, A_b)
-    model.set_segment(D_t, D_b)
-    model.set_segment(B_t, B_b)
-    model.set_segment(C_t, C_b)
+    model.set_segment(B, C)
+    model.set_segment(D, E)
+    model.set_segment(B, D)
+
+    # 4. Collinear Sections
+    model.set_section([C, A, D])
+    model.set_section([B, A, E])
+
+    # 5. Polygons (Triangles)
+    model.set_polygon([A, B, C])
+    model.set_polygon([A, D, E])
+    model.set_polygon([B, A, D])
+    model.set_polygon([B, C, D])
+    model.set_polygon([B, D, E])
+
+    # 6. Angles / Wedges
+    model.set_wedge(A, C, C, B)
+    model.set_wedge(A, D, D, E)
 
     return model
 

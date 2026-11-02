@@ -1,17 +1,18 @@
 :canonical_id: G.403
-:original_id: X.82
+:original_id: X.29
+:title: G.403 find two rational segments commensurable in square only
 :volume: III
 :book: X
 :type: prop
 
-G.403 — Code
-============
+G.403 find two rational segments commensurable in square only — Code
+====================================================================
 
-.. rubric:: `X.82 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/082/>`_
+.. rubric:: `X.29 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/029/>`_
 
 .. enunciation::
 
-   To a minor straight line only one straight line can be annexed which is incommensurable in square with the whole and which makes, with the whole, the sum of the squares on them rational but twice the rectangle contained by them medial.
+   Find two :term:`rational <G.391>` :term:`segments <G.4>` :term:`commensurable in square only <G.380>` and such that the :term:`square <G.63>` on the greater is greater than the square on the less by the square on a segment :term:`commensurable <G.372>` in length with the greater.
 
 .. picture:: g1.svg
 

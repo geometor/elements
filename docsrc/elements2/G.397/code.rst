@@ -1,17 +1,18 @@
 :canonical_id: G.397
-:original_id: X.76
+:original_id: X.23
+:title: G.397 segment commensurable medial
 :volume: III
 :book: X
 :type: prop
 
-G.397 — Code
-============
+G.397 segment commensurable medial — Code
+=========================================
 
-.. rubric:: `X.76 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/076/>`_
+.. rubric:: `X.23 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/023/>`_
 
 .. enunciation::
 
-   If from a straight line there be subtracted a straight line which is incommensurable in square with the whole and which with the whole makes the squares on them added together rational, but the rectangle contained by them medial, the remainder is irrational; and let it be called minor.
+   A :term:`segment <G.4>` :term:`commensurable <G.372>` with a medial segment is medial.
 
 .. picture:: g1.svg
 

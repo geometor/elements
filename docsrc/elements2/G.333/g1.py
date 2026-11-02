@@ -1,4 +1,4 @@
-"""Programmatic construction for Book X, Proposition 19 (X.19)."""
+"""Programmatic construction for Book IX, Proposition 4 (IX.4)."""
 
 from __future__ import annotations
 
@@ -6,42 +6,27 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0051.g1 using geometor.model."""
-    model = Model("X.19")
+    """Construct the figure 0393.g1 using geometor.model."""
+    model = Model("IX.4")
 
-    # Vertices of square AD (A, B, D, D_l) and rectangle AC (A, B, C, C_l)
-    A = model.set_point(25.0, -141.0, classes=["given"], ID="A")
-    B = model.set_point(151.0, -141.0, classes=["given"], ID="B")
-    C = model.set_point(151.0, -58.5, classes=["given"], ID="C")
-    D = model.set_point(151.0, -16.0, ID="D")
-    C_l = model.set_point(25.0, -58.5, ID="C_l")
-    D_l = model.set_point(25.0, -16.0, ID="D_l")
+    # Single-letter horizontal number segments A, B, C, D
+    A_l = model.set_point(32.0, -22.5, classes=["given"], ID="A")
+    A_r = model.set_point(124.0, -22.5, ID="A_r")
 
-    # Base lines
-    model.construct_line(A, B)
-    model.construct_line(B, D)
-    model.construct_line(D_l, D)
-    model.construct_line(A, D_l)
-    model.construct_line(C_l, C)
+    B_l = model.set_point(31.0, -46.0, classes=["given"], ID="B")
+    B_r = model.set_point(156.0, -46.0, ID="B_r")
 
-    # Segments
-    model.set_segment(A, B)
-    model.set_segment(B, C)
-    model.set_segment(C, D)
-    model.set_segment(B, D)
-    model.set_segment(C_l, C)
-    model.set_segment(D_l, D)
-    model.set_segment(A, C_l)
-    model.set_segment(C_l, D_l)
-    model.set_segment(A, D_l)
+    C_l = model.set_point(30.0, -67.0, classes=["given"], ID="C")
+    C_r = model.set_point(268.0, -67.0, ID="C_r")
 
-    # Section on BD
-    model.set_section([B, C, D])
+    D_l = model.set_point(30.0, -86.5, classes=["given"], ID="D")
+    D_r = model.set_point(181.0, -86.5, ID="D_r")
 
-    # Polygons: rectangle AC and square AD
-    model.set_polygon([A, B, C, C_l])
-    model.set_polygon([A, B, D, D_l])
-    model.set_polygon([C_l, C, D, D_l])
+    # Number segments
+    model.set_segment(A_l, A_r)
+    model.set_segment(B_l, B_r)
+    model.set_segment(C_l, C_r)
+    model.set_segment(D_l, D_r)
 
     return model
 

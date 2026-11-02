@@ -1,4 +1,7 @@
-"""Programmatic construction for Book VII, Proposition 22 (VII.22)."""
+"""Programmatic construction for Book VI, Proposition 13 (VI.13).
+
+To two given straight lines to find a mean proportional.
+"""
 
 from __future__ import annotations
 
@@ -6,31 +9,39 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0329.g1 using geometor.model."""
-    model = Model("VII.22")
+    """Construct the figure for 0222.g1 (VI.13) using geometor.model."""
+    model = Model("VI.13")
 
-    # Single-letter horizontal number segments A, B, C, D, E
-    A_l = model.set_point(27.0, -14.0, classes=["given"], ID="A")
-    A_r = model.set_point(181.0, -14.0, ID="A_r")
+    # 1. Points
+    A = model.set_point(18.0, -101.0, classes=["given"], ID="A")
+    B = model.set_point(131.0, -101.0, classes=["given"], ID="B")
+    C = model.set_point(175.0, -101.0, classes=["given"], ID="C")
+    O = model.set_point(96.5, -101.0, ID="O")
+    D = model.set_point(131.0, -30.49, ID="D")
 
-    B_l = model.set_point(25.0, -41.0, classes=["given"], ID="B")
-    B_r = model.set_point(147.0, -41.0, ID="B_r")
+    # 2. Circle / Semicircle
+    model.construct_circle(O, A)
 
-    C_l = model.set_point(25.0, -65.0, classes=["given"], ID="C")
-    C_r = model.set_point(95.0, -65.0, ID="C_r")
+    # 3. Segments
+    model.set_segment(A, C)
+    model.set_segment(A, B)
+    model.set_segment(B, C)
+    model.set_segment(B, D)
+    model.set_segment(A, D)
+    model.set_segment(D, C)
 
-    D_l = model.set_point(23.0, -85.0, classes=["given"], ID="D")
-    D_r = model.set_point(85.0, -85.0, ID="D_r")
+    # 4. Collinear Sections
+    model.set_section([A, B, C])
 
-    E_l = model.set_point(23.0, -109.0, classes=["given"], ID="E")
-    E_r = model.set_point(72.0, -109.0, ID="E_r")
+    # 5. Polygons
+    model.set_polygon([A, D, C])
+    model.set_polygon([A, B, D])
+    model.set_polygon([D, B, C])
 
-    # Number segments
-    model.set_segment(A_l, A_r)
-    model.set_segment(B_l, B_r)
-    model.set_segment(C_l, C_r)
-    model.set_segment(D_l, D_r)
-    model.set_segment(E_l, E_r)
+    # 6. Angles / Wedges
+    model.set_wedge(D, A, A, C)
+    model.set_wedge(B, A, A, D)
+    model.set_wedge(B, C, C, D)
 
     return model
 

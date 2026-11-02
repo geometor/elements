@@ -1,17 +1,18 @@
 :canonical_id: G.277
-:original_id: IX.7
+:original_id: VII.23
+:title: G.277 numbers prime number
 :volume: II
-:book: IX
+:book: VII
 :type: prop
 
-G.277 — Code
-============
+G.277 numbers prime number — Code
+=================================
 
-.. rubric:: `IX.7 <https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/07/>`_
+.. rubric:: `VII.23 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/23/>`_
 
 .. enunciation::
 
-   If a composite number by multiplying any number make some number, the product is solid.
+   If two :term:`numbers <G.248>` be :term:`prime to one another <G.249>`, the number which :term:`measures <G.169>` the one of them is prime to the remaining number.
 
 .. picture:: g1.svg
 

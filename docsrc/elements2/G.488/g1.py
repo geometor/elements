@@ -1,9 +1,4 @@
-"""Programmatic construction for Book XII, Proposition 2 (XII.2).
-
-Circles ABCD and EFGH with diameters BD and FH, inscribed octagons AOBPCQDR
-and EKFLGMHN, inscribed square EFGH, tangent rectangle on EF at K, and
-auxiliary areas S and T.
-"""
+"""Programmatic construction for Book X, Proposition 102 (X.102)."""
 
 from __future__ import annotations
 
@@ -11,80 +6,89 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0375.g1 using geometor.model."""
-    model = Model("XII.2")
+    """Construct the figure 0231.g1 using geometor.model."""
+    model = Model("X.102")
 
-    # Left circle ABCD (center O1 = (111, -114), radius 88)
-    O1 = model.set_point(111.0, -114.0, ID="O1")
-    A = model.set_point(111.0, -26.0, classes=["given"], ID="A")
-    B = model.set_point(23.0, -114.0, classes=["given"], ID="B")
-    C = model.set_point(111.0, -202.0, classes=["given"], ID="C")
-    D = model.set_point(199.0, -114.0, classes=["given"], ID="D")
-    O = model.set_point(48.77, -51.77, ID="O")
-    P = model.set_point(48.77, -176.23, ID="P")
-    Q = model.set_point(173.23, -176.23, ID="Q")
-    R = model.set_point(173.23, -51.77, ID="R")
+    # Top line AG divided at B
+    A = model.set_point(121.0, -18.5, classes=["given"], ID="A")
+    B = model.set_point(208.0, -18.5, classes=["given"], ID="B")
+    G = model.set_point(259.0, -18.5, classes=["given"], ID="G")
 
-    # Middle circle EFGH (center O2 = (327, -121), radius 73.5)
-    O2 = model.set_point(327.0, -121.0, ID="O2")
-    E = model.set_point(327.0, -47.5, classes=["given"], ID="E")
-    F = model.set_point(253.5, -121.0, classes=["given"], ID="F")
-    G = model.set_point(327.0, -194.5, classes=["given"], ID="G")
-    H = model.set_point(400.5, -121.0, classes=["given"], ID="H")
-    K = model.set_point(275.03, -69.03, ID="K")
-    L = model.set_point(275.03, -172.97, ID="L")
-    M = model.set_point(378.97, -172.97, ID="M")
-    N = model.set_point(378.97, -69.03, ID="N")
+    # Top edge of applied rectangles: C - F - N - K - M
+    C = model.set_point(16.5, -53.5, classes=["given"], ID="C")
+    F = model.set_point(131.0, -53.5, ID="F")
+    N = model.set_point(241.5, -53.5, ID="N")
+    K = model.set_point(310.5, -53.5, ID="K")
+    M = model.set_point(352.5, -53.5, ID="M")
 
-    # Outer corners of tangent rectangle on EF at K
-    U = model.set_point(238.28, -105.78, ID="U")
-    V = model.set_point(311.78, -32.28, ID="V")
+    # Bottom edge of applied rectangles: D - E - O - H - L
+    D = model.set_point(16.5, -117.0, classes=["given"], ID="D")
+    E = model.set_point(131.0, -117.0, ID="E")
+    O = model.set_point(241.5, -117.0, ID="O")
+    H = model.set_point(310.5, -117.0, ID="H")
+    L = model.set_point(352.5, -117.0, ID="L")
 
-    # Area S rectangle corners and center label point
-    S1 = model.set_point(442.0, -54.0, ID="S1")
-    S2 = model.set_point(525.0, -54.0, ID="S2")
-    S3 = model.set_point(525.0, -216.0, ID="S3")
-    S4 = model.set_point(442.0, -216.0, ID="S4")
-    S = model.set_point(483.5, -135.0, classes=["given"], ID="S")
+    # Base lines
+    model.construct_line(A, G)
+    model.construct_line(C, M)
+    model.construct_line(D, L)
+    model.construct_line(C, D)
+    model.construct_line(F, E)
+    model.construct_line(N, O)
+    model.construct_line(K, H)
+    model.construct_line(M, L)
 
-    # Area T rectangle corners and center label point
-    T1 = model.set_point(555.0, -70.0, ID="T1")
-    T2 = model.set_point(636.0, -70.0, ID="T2")
-    T3 = model.set_point(636.0, -178.0, ID="T3")
-    T4 = model.set_point(555.0, -178.0, ID="T4")
-    T = model.set_point(595.5, -124.0, classes=["given"], ID="T")
+    # Segments on AG
+    model.set_segment(A, G)
+    model.set_segment(A, B)
+    model.set_segment(B, G)
+    model.set_section([A, B, G])
 
-    # Circles
-    model.construct_circle(O1, A)
-    model.construct_circle(O2, E)
+    # Vertical segments
+    model.set_segment(C, D)
+    model.set_segment(F, E)
+    model.set_segment(N, O)
+    model.set_segment(K, H)
+    model.set_segment(M, L)
 
-    # Segments in left circle
-    for p1, p2 in [
-        (B, D),
-        (A, O), (O, B), (B, P), (P, C), (C, Q), (Q, D), (D, R), (R, A),
-    ]:
-        model.set_segment(p1, p2)
+    # Top horizontal segments
+    model.set_segment(C, M)
+    model.set_segment(C, K)
+    model.set_segment(C, N)
+    model.set_segment(C, F)
+    model.set_segment(F, M)
+    model.set_segment(F, K)
+    model.set_segment(F, N)
+    model.set_segment(N, M)
+    model.set_segment(N, K)
+    model.set_segment(K, M)
 
-    # Segments in middle circle
-    for p1, p2 in [
-        (F, H),
-        (E, F), (F, G), (G, H), (H, E),
-        (E, K), (K, F), (F, L), (L, G), (G, M), (M, H), (H, N), (N, E),
-        (F, U), (U, V), (V, E),
-    ]:
-        model.set_segment(p1, p2)
+    # Bottom horizontal segments
+    model.set_segment(D, L)
+    model.set_segment(D, H)
+    model.set_segment(D, O)
+    model.set_segment(D, E)
+    model.set_segment(E, L)
+    model.set_segment(E, H)
+    model.set_segment(E, O)
+    model.set_segment(O, L)
+    model.set_segment(O, H)
+    model.set_segment(H, L)
 
-    # Polygons
-    model.set_polygon([A, O, B, P, C, Q, D, R])
-    model.set_polygon([E, F, G, H])
-    model.set_polygon([E, K, F, L, G, M, H, N])
-    model.set_polygon([E, K, F])
-    model.set_polygon([F, L, G])
-    model.set_polygon([G, M, H])
-    model.set_polygon([H, N, E])
-    model.set_polygon([F, U, V, E])
-    model.set_polygon([S1, S2, S3, S4])
-    model.set_polygon([T1, T2, T3, T4])
+    # Sections
+    model.set_section([C, F, M])
+    model.set_section([C, K, M])
+    model.set_section([F, N, M])
+
+    # Polygons (rectangles)
+    model.set_polygon([C, F, E, D])  # CE
+    model.set_polygon([C, K, H, D])  # CH
+    model.set_polygon([K, M, L, H])  # KL
+    model.set_polygon([C, M, L, D])  # CL
+    model.set_polygon([F, M, L, E])  # FL
+    model.set_polygon([F, N, O, E])  # FO
+    model.set_polygon([N, M, L, O])  # NL
+    model.set_polygon([N, K, H, O])  # NH
 
     return model
 

@@ -1,4 +1,4 @@
-"""Programmatic construction for Book XII, Proposition 8 (XII.8)."""
+"""Programmatic construction for Book X, Proposition 108 (X.108)."""
 
 from __future__ import annotations
 
@@ -6,56 +6,70 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0400.g1 using geometor.model."""
-    model = Model("XII.8")
+    """Construct the figure 0239.g1 using geometor.model."""
+    model = Model("X.108")
 
-    # First parallelepiped BGML and pyramid ABCG
-    A = model.set_point(25.0, -67.0, classes=["given"], ID="A")
-    B = model.set_point(16.0, -144.0, classes=["given"], ID="B")
-    C = model.set_point(113.0, -144.0, classes=["given"], ID="C")
-    M = model.set_point(122.0, -67.0, ID="M")
-    K = model.set_point(44.0, -37.0, ID="K")
-    G = model.set_point(35.0, -114.0, classes=["given"], ID="G")
-    N = model.set_point(132.0, -114.0, ID="N")
-    L = model.set_point(141.0, -37.0, ID="L")
+    # Top rectangle AEB-CD
+    A = model.set_point(85.5, -19.0, classes=["given"], ID="A")
+    E = model.set_point(170.0, -19.0, ID="E")
+    B = model.set_point(195.5, -19.0, classes=["given"], ID="B")
+    C = model.set_point(85.5, -113.5, classes=["given"], ID="C")
+    D = model.set_point(170.0, -113.5, ID="D")
+    B_b = model.set_point(195.5, -113.5, ID="B_b")
 
-    # Second parallelepiped EHQP and pyramid DEFH
-    D = model.set_point(288.0, -67.0, classes=["given"], ID="D")
-    E = model.set_point(275.0, -175.0, classes=["given"], ID="E")
-    F = model.set_point(412.0, -175.0, classes=["given"], ID="F")
-    Q = model.set_point(425.0, -67.0, ID="Q")
-    O = model.set_point(318.0, -22.0, ID="O")
-    H = model.set_point(305.0, -130.0, classes=["given"], ID="H")
-    R = model.set_point(442.0, -130.0, ID="R")
-    P = model.set_point(455.0, -22.0, ID="P")
+    # Bottom rectangle H_t-L-G / H-K-F
+    H_t = model.set_point(18.0, -143.5, ID="H_t")
+    L = model.set_point(187.5, -143.5, ID="L")
+    G = model.set_point(275.0, -143.5, classes=["given"], ID="G")
+    H = model.set_point(18.0, -190.5, ID="H")
+    K = model.set_point(187.5, -190.5, ID="K")
+    F = model.set_point(275.0, -190.5, classes=["given"], ID="F")
 
-    # Edges of first parallelepiped and pyramid
-    for p1, p2 in [
-        (A, B), (B, C), (C, M), (M, A),
-        (K, G), (G, N), (N, L), (L, K),
-        (A, K), (B, G), (C, N), (M, L),
-        (A, C), (A, G), (G, C),
-    ]:
-        model.set_segment(p1, p2)
+    # Base lines
+    model.construct_line(A, B)
+    model.construct_line(C, B_b)
+    model.construct_line(A, C)
+    model.construct_line(E, D)
+    model.construct_line(B, B_b)
 
-    # Edges of second parallelepiped and pyramid
-    for p1, p2 in [
-        (D, E), (E, F), (F, Q), (Q, D),
-        (O, H), (H, R), (R, P), (P, O),
-        (D, O), (E, H), (F, R), (Q, P),
-        (D, F), (D, H), (H, F),
-    ]:
-        model.set_segment(p1, p2)
+    model.construct_line(H_t, G)
+    model.construct_line(H, F)
+    model.construct_line(H_t, H)
+    model.construct_line(L, K)
+    model.construct_line(G, F)
 
-    # Polygons
-    model.set_polygon([A, B, C])
-    model.set_polygon([D, E, F])
-    model.set_polygon([B, C, M, A])
-    model.set_polygon([B, C, N, G])
-    model.set_polygon([B, G, K, A])
-    model.set_polygon([E, F, Q, D])
-    model.set_polygon([E, F, R, H])
-    model.set_polygon([E, H, O, D])
+    # Segments
+    model.set_segment(A, B)
+    model.set_segment(A, E)
+    model.set_segment(E, B)
+    model.set_segment(A, C)
+    model.set_segment(E, D)
+    model.set_segment(B, B_b)
+    model.set_segment(C, D)
+    model.set_segment(D, B_b)
+    model.set_segment(C, B_b)
+
+    model.set_segment(F, G)
+    model.set_segment(L, K)
+    model.set_segment(H_t, H)
+    model.set_segment(H, F)
+    model.set_segment(H, K)
+    model.set_segment(K, F)
+    model.set_segment(H_t, G)
+    model.set_segment(H_t, L)
+    model.set_segment(L, G)
+
+    # Sections
+    model.set_section([A, E, B])
+    model.set_section([H, K, F])
+
+    # Polygons (rectangles)
+    model.set_polygon([A, B, B_b, C])  # BC
+    model.set_polygon([E, B, B_b, D])  # BD
+    model.set_polygon([A, E, D, C])    # EC
+    model.set_polygon([H_t, G, F, H])  # GH
+    model.set_polygon([L, G, F, K])    # GK
+    model.set_polygon([H_t, L, K, H])  # LH
 
     return model
 

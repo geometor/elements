@@ -1,17 +1,18 @@
 :canonical_id: G.423
-:original_id: X.96
+:original_id: X.48
+:title: G.423 find the first binomial segment
 :volume: III
 :book: X
 :type: prop
 
-G.423 — Code
-============
+G.423 find the first binomial segment — Code
+============================================
 
-.. rubric:: `X.96 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/096/>`_
+.. rubric:: `X.48 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/048/>`_
 
 .. enunciation::
 
-   If an area be contained by a rational straight line and a sixth apotome, the “side” of the area is a straight line which produces with a medial area a medial whole.
+   Find the :term:`first binomial <G.422>` :term:`segment <G.4>`.
 
 .. picture:: g1.svg
 

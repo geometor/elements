@@ -1,57 +1,78 @@
-"""Programmatic construction for Book III, Proposition 14 (III.14).
-
-In a circle equal straight lines are equally distant from the centre,
-and those which are equally distant from the centre are equal to one another.
-"""
+"""Programmatic construction for Book II, Proposition 9 (II.9)."""
 
 from __future__ import annotations
 
-import sympy as sp
 from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0041.g1 using geometor.model."""
-    model = Model("III.14")
+    """Construct the figure for 0406.g1 (II.9) using geometor.model."""
+    model = Model("II.9")
 
-    # Centre E of circle ABDC with radius 62
-    E = model.set_point(0, 0, classes=["given"], ID="E")
+    # 1. Points
+    A = model.set_point(24.0, -156.0, classes=["given"], ID="A")
+    C = model.set_point(146.0, -156.0, classes=["given"], ID="C")
+    D = model.set_point(188.0, -156.0, classes=["given"], ID="D")
+    B = model.set_point(268.0, -156.0, classes=["given"], ID="B")
 
-    # Equal chords AB and CD at distance 36 from centre E
-    h = sp.sqrt(62**2 - 36**2)
-    G = model.set_point(36, 0, ID="G")
-    D = model.set_point(36, h, ID="D")
-    C = model.set_point(36, -h, ID="C")
+    E = model.set_point(146.0, -34.0, ID="E")
+    G = model.set_point(146.0, -76.0, ID="G")
+    F = model.set_point(188.0, -76.0, ID="F")
 
-    # Circle ABDC
-    model.construct_circle(E, D)
-
-    # Chord AB rotated by -135 degrees so EF has length 36
-    inv_sqrt2 = sp.sqrt(2) / 2
-    F = model.set_point(-36 * inv_sqrt2, -36 * inv_sqrt2, ID="F")
-    B = model.set_point((-36 - h) * inv_sqrt2, (-36 + h) * inv_sqrt2, label="B")
-    A = model.set_point((-36 + h) * inv_sqrt2, (-36 - h) * inv_sqrt2, label="A")
-
-    # Chords AB and CD and their half-segments
-    model.set_segment(B, F)
-    model.set_segment(F, A)
-    model.set_segment(A, B)
-    model.set_section([A, F, B])
-
-    model.set_segment(D, G)
-    model.set_segment(G, C)
+    # 2. Segments
+    model.set_segment(A, C)
     model.set_segment(C, D)
-    model.set_section([C, G, D])
+    model.set_segment(D, B)
+    model.set_segment(C, B)
+    model.set_segment(A, D)
+    model.set_segment(A, B)
 
-    # Perpendiculars EF, EG and radii AE, EC
+    model.set_segment(C, G)
+    model.set_segment(G, E)
+    model.set_segment(C, E)
+
+    model.set_segment(D, F)
+    model.set_segment(G, F)
+
+    model.set_segment(E, A)
     model.set_segment(E, F)
-    model.set_segment(E, G)
-    model.set_segment(A, E)
-    model.set_segment(E, C)
+    model.set_segment(F, B)
+    model.set_segment(E, B)
+    model.set_segment(A, F)
 
-    # Right triangles EFA and EGC
-    model.set_polygon([E, F, A])
-    model.set_polygon([E, G, C])
+    # 3. Collinear Sections
+    model.set_section([A, C, D])
+    model.set_section([C, D, B])
+    model.set_section([A, D, B])
+    model.set_section([A, C, B])
+    model.set_section([C, G, E])
+    model.set_section([E, F, B])
+
+    # 4. Polygons (Triangles & Parallelogram)
+    model.set_polygon([A, C, E])
+    model.set_polygon([E, C, B])
+    model.set_polygon([A, E, B])
+    model.set_polygon([E, G, F])
+    model.set_polygon([F, D, B])
+    model.set_polygon([A, E, F])
+    model.set_polygon([A, D, F])
+    model.set_polygon([C, D, F, G])
+
+    # 5. Angles (Wedges)
+    model.set_wedge(A, C, E, C)  # < E A C )
+    model.set_wedge(E, A, A, C)  # < A E C )
+    model.set_wedge(C, A, A, E)  # < A C E )
+    model.set_wedge(C, E, E, B)  # < E C B )
+    model.set_wedge(E, C, C, B)  # < C E B )
+    model.set_wedge(B, E, E, C)  # < E B C )
+    model.set_wedge(E, A, A, B)  # < A E B )
+    model.set_wedge(E, G, G, F)  # < G E F )
+    model.set_wedge(G, E, E, F)  # < E G F )
+    model.set_wedge(F, E, E, G)  # < E F G )
+    model.set_wedge(D, F, F, B)  # < F D B )
+    model.set_wedge(F, B, B, D)  # < B F D )
+    model.set_wedge(E, A, A, F)  # < A E F )
+    model.set_wedge(D, A, A, F)  # < A D F )
 
     return model
 

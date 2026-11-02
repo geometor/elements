@@ -1,8 +1,6 @@
-"""Programmatic construction for Book II, Proposition 3 (II.3).
+"""Programmatic construction for Book I, I.35 (I.35).
 
-If a straight line be cut at random, the rectangle contained by the whole and
-one of the segments is equal to the rectangle contained by the segments and the
-square on the aforesaid segment.
+Parallelograms which are on the same base and in the same parallels are equal to one another.
 """
 
 from __future__ import annotations
@@ -11,37 +9,57 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure for Book II, Proposition 3 using geometor.model."""
-    model = Model("II.3")
+    """Construct the figure for 0341.g1 (I.35) using geometor.model."""
+    model = Model("I.35")
 
-    # Straight line AB cut at random at C
-    A = model.set_point(18.5, -29.5, classes=["given"], ID="A")
-    C = model.set_point(71.5, -29.5, classes=["given"], ID="C")
-    B = model.set_point(173.5, -29.5, classes=["given"], ID="B")
+    # 1. Points
+    A = model.set_point(30, -24.5, classes=["given"], ID="A")
+    D = model.set_point(123, -24.5, classes=["given"], ID="D")
+    E = model.set_point(145, -24.5, classes=["given"], ID="E")
+    F = model.set_point(238, -24.5, classes=["given"], ID="F")
+    G = model.set_point(127.2, -40.2, ID="G")
+    B = model.set_point(52, -106.5, classes=["given"], ID="B")
+    C = model.set_point(145, -106.5, classes=["given"], ID="C")
 
-    model.construct_line(A, B)
-    model.set_segment(A, B)
-    model.set_segment(A, C)
-    model.set_segment(C, B)
-
-    # Square CDEB described on CB [I. 46], ED drawn through to F, and AF parallel to CD/BE [I. 31]
-    F = model.set_point(18.5, -129.5, ID="F")
-    D = model.set_point(71.5, -129.5, ID="D")
-    E = model.set_point(173.5, -129.5, ID="E")
-
-    model.construct_line(E, F)
-    model.set_segment(F, E)
-    model.set_segment(F, D)
-    model.set_segment(D, E)
-
+    # 3. Segments
     model.set_segment(A, F)
-    model.set_segment(C, D)
-    model.set_segment(B, E)
+    model.set_segment(A, D)
+    model.set_segment(D, E)
+    model.set_segment(E, F)
+    model.set_segment(A, E)
+    model.set_segment(D, F)
+    model.set_segment(B, C)
+    model.set_segment(A, B)
+    model.set_segment(D, C)
+    model.set_segment(D, G)
+    model.set_segment(G, C)
+    model.set_segment(E, B)
+    model.set_segment(E, G)
+    model.set_segment(G, B)
+    model.set_segment(F, C)
 
-    # Whole rectangle ABEF (AE), rectangle ACDF (AD), and square CDEB (CE / DB)
-    model.set_polygon([A, B, E, F])
-    model.set_polygon([A, C, D, F])
-    model.set_polygon([C, B, E, D])
+    # 4. Collinear Sections
+    model.set_section([A, D, E])
+    model.set_section([D, E, F])
+    model.set_section([D, G, C])
+    model.set_section([E, G, B])
+
+    # 5. Polygons (Triangles, Parallelograms, Trapezia, Squares)
+    model.set_polygon([A, B, C, D])
+    model.set_polygon([E, B, C, F])
+    model.set_polygon([E, A, B])
+    model.set_polygon([F, D, C])
+    model.set_polygon([D, G, E])
+    model.set_polygon([G, B, C])
+    model.set_polygon([A, B, G, D])
+    model.set_polygon([E, G, C, F])
+    model.set_polygon([A, B, C, F])
+    model.set_polygon([E, B, C, D])
+
+    # 6. Angles (Wedges)
+    model.set_wedge(D, F, F, C)
+    model.set_wedge(A, E, E, B)
+    model.set_wedge(F, D, D, C)
 
     return model
 

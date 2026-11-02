@@ -1,17 +1,18 @@
 :canonical_id: G.47
-:original_id: I.34
+:original_id: I.22
+:title: G.47 construct a triangle from three segments
 :volume: I
 :book: I
 :type: prop
 
-G.47 — Code
-===========
+G.47 construct a triangle from three segments — Code
+====================================================
 
-.. rubric:: `I.34 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/34/>`_
+.. rubric:: `I.22 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/22/>`_
 
 .. enunciation::
 
-   In a parallelogram, opposite sides and opposite angles are equal, and the diagonal bisects the area.
+   Construct a :term:`triangle <G.11>` from three :term:`segments <G.4>` equal to three given segments satisfying the triangle inequality.
 
 .. picture:: g1.svg
 

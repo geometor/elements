@@ -1,28 +1,20 @@
 :canonical_id: G.167
-:original_id: VI.5
+:original_id: IV.15
+:title: G.167 inscribe hexagon in circle
 :volume: II
-:book: VI
+:book: IV
 :type: prop
 
-G.167 — Code
-============
+G.167 inscribe hexagon in circle — Code
+=======================================
 
-.. rubric:: `VI.5 <https://geometor.github.io/euclid/heath/volume_II/book_vi/propositions/05/>`_
+.. rubric:: `IV.15 <https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/15/>`_
 
 .. enunciation::
 
-   If two triangles have their sides proportional, the triangles is equiangular and will have those angles equal which the corresponding sides subtend.
-
-.. rubric:: ``g1.py``
+   :term:`Inscribe in a given circle <G.148>` an :term:`equilateral <G.12>` and equiangular hexagon.
 
 .. picture:: g1.svg
 
 .. literalinclude:: g1.py
-   :language: python
-
-.. rubric:: ``g2.py``
-
-.. picture:: g2.svg
-
-.. literalinclude:: g2.py
    :language: python

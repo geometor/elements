@@ -1,17 +1,18 @@
 :canonical_id: G.218
-:original_id: VII.18
+:original_id: VI.8
+:title: G.218 right angled triangle
 :volume: II
-:book: VII
+:book: VI
 :type: prop
 
-G.218 — Code
-============
+G.218 right angled triangle — Code
+==================================
 
-.. rubric:: `VII.18 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/18/>`_
+.. rubric:: `VI.8 <https://geometor.github.io/euclid/heath/volume_II/book_vi/propositions/08/>`_
 
 .. enunciation::
 
-   If two numbers by multiplying any number make certain numbers, the numbers so produced will have the same ratio as the multipliers.
+   If in a :term:`right-angled triangle <G.78>` a perpendicular be drawn from the :term:`right angle <G.32>` to the base, the :term:`triangles <G.11>` adjoining the perpendicular are similar both to the whole and to one another.
 
 .. picture:: g1.svg
 

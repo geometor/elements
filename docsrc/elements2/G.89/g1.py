@@ -1,54 +1,80 @@
-"""Programmatic construction for Book III, Proposition 13 (III.13).
-
-A circle does not touch a circle at more points than one, whether it touch
-it internally or externally.
-"""
+"""Programmatic construction for Book II, Proposition 7 (II.7)."""
 
 from __future__ import annotations
 
-import sympy as sp
 from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0038.g3 using geometor.model."""
-    model = Model("III.13")
+    """Construct the figure for 0402.g1 (II.7) using geometor.model."""
+    model = Model("II.7")
 
-    # Circle ABDC (true center O1) and line of hypothetical internal contacts BGHD
-    O1 = model.set_point(0, 58, classes=["auxiliary"])
-    B = model.set_point(-sp.sqrt(3036), 0, label="B")
-    D = model.set_point(sp.sqrt(3036), 0, label="D")
-    model.construct_circle(O1, B)
+    # 1. Points
+    A = model.set_point(27.0, -30.5, classes=["given"], ID="A")
+    C = model.set_point(130.0, -30.5, classes=["given"], ID="C")
+    B = model.set_point(170.5, -30.5, classes=["given"], ID="B")
 
-    # Assumed centres G and H on chord BD
-    G = model.set_point(-20, 0, classes=["given"], ID="G")
-    H = model.set_point(20, 0, classes=["given"], ID="H")
-    model.construct_line(B, D)
+    H = model.set_point(27.0, -71.0, ID="H")
+    G = model.set_point(130.0, -71.0, ID="G")
+    F = model.set_point(170.5, -71.0, ID="F")
 
-    # Points E and F on inner oval EBFD
-    E = model.set_point(0, 80, ID="E")
-    F = model.set_point(0, -14, ID="F")
-    model.construct_circle(H, D)
+    D = model.set_point(27.0, -174.0, ID="D")
+    N = model.set_point(130.0, -174.0, ID="N")
+    E = model.set_point(170.5, -174.0, ID="E")
 
-    # External circle ACK touching/cutting ABDC at A and C
-    O2 = model.set_point(86, 146, classes=["auxiliary"])
-    A = model.set_point(34, 130, ID="A")
-    C = model.set_point(71, 94, ID="C")
-    K = model.set_point(140, 146, ID="K")
-    model.construct_circle(O2, A)
+    # Gnomon markers
+    K = model.set_point(105.0, -71.0, ID="K")
+    L = model.set_point(148.0, -53.0, ID="L")
+    M = model.set_point(130.0, -96.0, ID="M")
 
-    # Collinear segments along BGHD
-    model.set_segment(B, G)
-    model.set_segment(G, H)
+    # 2. Segments
+    model.set_segment(A, C)
+    model.set_segment(C, B)
+    model.set_segment(A, B)
+
+    model.set_segment(H, G)
+    model.set_segment(G, F)
+    model.set_segment(H, F)
+
+    model.set_segment(D, N)
+    model.set_segment(N, E)
+    model.set_segment(D, E)
+
+    model.set_segment(A, H)
     model.set_segment(H, D)
-    model.set_segment(B, H)
+    model.set_segment(A, D)
+
+    model.set_segment(C, G)
+    model.set_segment(G, N)
+    model.set_segment(C, N)
+
+    model.set_segment(B, F)
+    model.set_segment(F, E)
+    model.set_segment(B, E)
+
+    model.set_segment(B, G)
     model.set_segment(G, D)
     model.set_segment(B, D)
-    model.set_section([B, G, D])
-    model.set_section([B, H, D])
 
-    # Chord AC joining points of external contact A and C
-    model.set_segment(A, C)
+    # 3. Collinear Sections
+    model.set_section([A, C, B])
+    model.set_section([H, G, F])
+    model.set_section([D, N, E])
+    model.set_section([A, H, D])
+    model.set_section([C, G, N])
+    model.set_section([B, F, E])
+    model.set_section([B, G, D])
+
+    # 4. Polygons (Squares, Rectangles, Gnomon)
+    model.set_polygon([A, D, E, B])
+    model.set_polygon([C, B, F, G])
+    model.set_polygon([H, G, N, D])
+    model.set_polygon([A, C, G, H])
+    model.set_polygon([G, F, E, N])
+    model.set_polygon([A, B, F, H])
+    model.set_polygon([C, B, E, N])
+    model.set_polygon([A, B, E, N, G, H])
+    model.set_polygon([K, L, M])
 
     return model
 

@@ -1,4 +1,4 @@
-"""Programmatic construction for Book X, Proposition 31 (X.31)."""
+"""Programmatic construction for Book IX, Proposition 16 (IX.16)."""
 
 from __future__ import annotations
 
@@ -6,25 +6,23 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0073.g1 using geometor.model."""
-    model = Model("X.31")
+    """Construct the figure 0412.g1 using geometor.model."""
+    model = Model("IX.16")
 
-    # Vertical straight line segments A, B, C, D
-    A_t = model.set_point(24.0, -13.0, classes=["given"], ID="A")
-    A_b = model.set_point(24.0, -142.0, ID="A_b")
+    # Single-letter horizontal number segments A, B, C
+    A_l = model.set_point(32.0, -23.5, classes=["given"], ID="A")
+    A_r = model.set_point(81.0, -23.5, ID="A_r")
 
-    B_t = model.set_point(54.5, -54.0, classes=["given"], ID="B")
-    B_b = model.set_point(54.5, -142.0, ID="B_b")
+    B_l = model.set_point(32.0, -45.5, classes=["given"], ID="B")
+    B_r = model.set_point(86.0, -45.5, ID="B_r")
 
-    C_t = model.set_point(81.5, -33.0, ID="C")
-    C_b = model.set_point(81.5, -139.0, ID="C_b")
+    C_l = model.set_point(33.0, -68.5, classes=["given"], ID="C")
+    C_r = model.set_point(111.0, -68.5, ID="C_r")
 
-    D_t = model.set_point(111.0, -74.0, ID="D")
-    D_b = model.set_point(111.0, -141.0, ID="D_b")
-
-    for p_t, p_b in [(A_t, A_b), (B_t, B_b), (C_t, C_b), (D_t, D_b)]:
-        model.construct_line(p_t, p_b)
-        model.set_segment(p_t, p_b)
+    # Number segments
+    model.set_segment(A_l, A_r)
+    model.set_segment(B_l, B_r)
+    model.set_segment(C_l, C_r)
 
     return model
 

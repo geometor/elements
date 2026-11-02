@@ -1,17 +1,18 @@
 :canonical_id: G.450
-:original_id: XI.7
+:original_id: X.70
+:title: G.450 segment commensurable side
 :volume: III
-:book: XI
+:book: X
 :type: prop
 
-G.450 — Code
-============
+G.450 segment commensurable side — Code
+=======================================
 
-.. rubric:: `XI.7 <https://geometor.github.io/euclid/heath/volume_III/book_xi/propositions/07/>`_
+.. rubric:: `X.70 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/070/>`_
 
 .. enunciation::
 
-   If two straight lines be parallel and points be taken at random on each of them, the straight line joining the points is in the same plane with the parallel straight lines.
+   A :term:`segment <G.4>` :term:`commensurable <G.372>` with the side of the sum of two medial areas is the side of the sum of two medial areas.
 
 .. picture:: g1.svg
 

@@ -1,102 +1,79 @@
 :canonical_id: G.154
-:original_id: V.17
+:original_id: IV.4
+:title: G.154 inscribe circle in triangle
 :volume: II
-:book: V
+:book: IV
 :type: prop
 
-G.154 — Heath
-=============
+G.154 inscribe circle in triangle — Heath
+=========================================
 
-.. rubric:: `V.17 <https://geometor.github.io/euclid/heath/volume_II/book_v/propositions/17/>`_
+.. rubric:: `IV.4 <https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/04/>`_
 
 .. enunciation::
 
-   If magnitudes be proportional componendo, they will also be proportional separando.
+   In a given :term:`triangle <G.11>` to inscribe a :term:`circle <G.10>`.
 
-Let $AB$, :g:`/ E B / <g1:/ E B />`, :g:`/ C D / <g1:/ C D />`, :g:`/ F D / <g1:/ F D />` be magnitudes proportional *componendo*, so that, as :g:`/ A B / <g1:/ A B />` is to :g:`/ E B / <g1:/ E B />`, so is :g:`/ C D / <g1:/ C D />` to :g:`/ F D / <g1:/ F D />`;
+Let :g:`< A B C > <g1:< A B C >>` be the given triangle;
+thus it is required to :term:`inscribe a circle in <G.153>` the triangle :g:`< A B C > <g1:< A B C >>`.
 
-I say that they will also be proportional :term:`*separando* <separando>`, that is, as :g:`/ A E / <g1:/ A E />` is to :g:`/ E B / <g1:/ E B />`, so is :g:`/ C F / <g1:/ C F />` to :g:`/ F D / <g1:/ F D />`.
-
-For of :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />`, :g:`/ C F / <g1:/ C F />`, :g:`/ F D / <g1:/ F D />` let equimultiples :g:`/ G H / <g1:/ G H />`, :g:`/ H K / <g1:/ H K />`, :g:`/ L M / <g1:/ L M />`, :g:`/ M N / <g1:/ M N />` be taken, and of :g:`/ E B / <g1:/ E B />`, :g:`/ F D / <g1:/ F D />` other, chance, equimultiples, :g:`/ K O / <g1:/ K O />`, :g:`/ N P / <g1:/ N P />`.
-
-Then, since :g:`/ G H / <g1:/ G H />` is the same multiple of :g:`/ A E / <g1:/ A E />` that :g:`/ H K / <g1:/ H K />` is of :g:`/ E B / <g1:/ E B />`,
-
-.. assertion:: [G.135] <G.135>
-
-   therefore :g:`/ G H / <g1:/ G H />` is the same multiple of :g:`/ A E / <g1:/ A E />` that :g:`/ G K / <g1:/ G K />` is of :g:`/ A B / <g1:/ A B />`.
-
-But :g:`/ G H / <g1:/ G H />` is the same multiple of :g:`/ A E / <g1:/ A E />` that :g:`/ L M / <g1:/ L M />` is of :g:`/ C F / <g1:/ C F />`;
-
-.. assertion::
-
-   therefore :g:`/ G K / <g1:/ G K />` is the same multiple of :g:`/ A B / <g1:/ A B />` that :g:`/ L M / <g1:/ L M />` is of :g:`/ C F / <g1:/ C F />`.
+Let the :term:`angles <G.22>` :g:`< A B C ) <g1:< A B C )>`, :g:`< A C B ) <g1:< A C B )>`
+be bisected by the :term:`straight lines <G.4>`
+:g:`/ B D / <g1:/ B D />`, :g:`/ C D / <g1:/ C D />` :just:`[G.30] <G.30>`, and let these meet
+one another at the :term:`point <G.1>` :g:`D <g1:D>`;
+from :g:`D <g1:D>` let :g:`/ D E / <g1:/ D E />`, :g:`/ D F / <g1:/ D F />`, :g:`/ D G / <g1:/ D G />` be
+drawn :term:`perpendicular <G.32>` to the straight
+:term:`lines <G.2>` :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ C A / <g1:/ C A />`.
 
 .. picture:: g1.svg
-   :alt: Proposition 17 diagram of line segments
+   :alt: Proposition 4 diagram
 
-Again, since :g:`/ L M / <g1:/ L M />` is the same multiple of :g:`/ C F / <g1:/ C F />` that :g:`/ M N / <g1:/ M N />` is of :g:`/ F D / <g1:/ F D />`,
-
-.. assertion:: [G.135] <G.135>
-
-   therefore :g:`/ L M / <g1:/ L M />` is the same multiple of :g:`/ C F / <g1:/ C F />` that :g:`/ L N / <g1:/ L N />` is of :g:`/ C D / <g1:/ C D />`.
-
-But :g:`/ L M / <g1:/ L M />` was the same multiple of :g:`/ C F / <g1:/ C F />` that :g:`/ G K / <g1:/ G K />` is of :g:`/ A B / <g1:/ A B />`;
-
-.. assertion::
-
-   therefore :g:`/ G K / <g1:/ G K />` is the same multiple of :g:`/ A B / <g1:/ A B />` that :g:`/ L N / <g1:/ L N />` is of :g:`/ C D / <g1:/ C D />`.
-
-.. assertion::
-
-   Therefore :g:`/ G K / <g1:/ G K />`, :g:`/ L N / <g1:/ L N />` are equimultiples of :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`.
-
-Again, since :g:`/ H K / <g1:/ H K />` is the same multiple of :g:`/ E B / <g1:/ E B />` that :g:`/ M N / <g1:/ M N />` is of :g:`/ F D / <g1:/ F D />`, and :g:`/ K O / <g1:/ K O />` is also the same multiple of :g:`/ E B / <g1:/ E B />` that :g:`/ N P / <g1:/ N P />` is of :g:`/ F D / <g1:/ F D />`,
+Now, since the angle :g:`< A B D ) <g1:< A B D )>`
+is :eq:`equal <g1:< A B D ) = g1:< C B D )>` to the angle :g:`< C B D ) <g1:< C B D )>`,
+and the right angle :g:`< B E D ) <g1:< B E D )>` is also :eq:`equal <g1:< B E D ) = g1:< B F D )>` to the right angle
+:g:`< B F D ) <g1:< B F D )>`,
+:g:`< E B D > <g1:< E B D >>`, :g:`< F B D > <g1:< F B D >>` are two triangles having two angles equal to two
+angles and one side equal to one side, namely that subtending
+one of the equal angles, which is :g:`/ B D / <g1:/ B D />` common to the
+triangles;
+therefore they will also have the remaining sides equal to
+the remaining sides; :just:`[G.51] <G.51>`
 
 .. assertion::
 
-   therefore the sum :g:`/ H O / <g1:/ H O />` is also the same multiple of :g:`/ E B / <g1:/ E B />` that :g:`/ M P / <g1:/ M P />` is of :g:`/ F D / <g1:/ F D />`. :just:`[G.136] <G.136>`
+   therefore :g:`/ D E / <g1:/ D E />` is :eq:`equal <g1:/ D E / = g1:/ D F />` to :g:`/ D F / <g1:/ D F />`.
 
-And, since, as :g:`/ A B / <g1:/ A B />` is to :g:`/ E B / <g1:/ E B />`, so is :g:`/ C D / <g1:/ C D />` to :g:`/ F D / <g1:/ F D />`, and of :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` equimultiples :g:`/ G K / <g1:/ G K />`, :g:`/ L N / <g1:/ L N />` have been taken, and of :g:`/ E B / <g1:/ E B />`, :g:`/ F D / <g1:/ F D />` equimultiples :g:`/ H O / <g1:/ H O />`, :g:`/ M P / <g1:/ M P />`,
-
-.. assertion::
-
-   therefore, if :g:`/ G K / <g1:/ G K />` is in excess of :g:`/ H O / <g1:/ H O />`, :g:`/ L N / <g1:/ L N />` is also in excess of :g:`/ M P / <g1:/ M P />`, if :eq:`equal <g1:/ G K / = g1:/ H O />`, :eq:`equal <g1:/ L N / = g1:/ M P />`, and if less, less.
-
-.. subclause::
-
-   Let :g:`/ G K / <g1:/ G K />` be in excess of :g:`/ H O / <g1:/ H O />`; then, if :g:`/ H K / <g1:/ H K />` be subtracted from each,
+For the same reason
 
 .. assertion::
 
-   :g:`/ G H / <g1:/ G H />` is also in excess of :g:`/ K O / <g1:/ K O />`.
+   :g:`/ D G / <g1:/ D G />` is also :eq:`equal <g1:/ D G / = g1:/ D F />` to :g:`/ D F / <g1:/ D F />`.
 
-But we saw that, if :g:`/ G K / <g1:/ G K />` was in excess of :g:`/ H O / <g1:/ H O />`, :g:`/ L N / <g1:/ L N />` was also in excess of :g:`/ M P / <g1:/ M P />`;
+Therefore the three straight lines :g:`/ D E / <g1:/ D E />`, :g:`/ D F / <g1:/ D F />`, :g:`/ D G / <g1:/ D G />` are :eq:`equal <g1:/ D E / = g1:/ D F / = g1:/ D G />`
+to one another;
+therefore the circle described with :term:`centre <G.14>` :g:`D <g1:D>` and distance
+one of the straight lines :g:`/ D E / <g1:/ D E />`, :g:`/ D F / <g1:/ D F />`, :g:`/ D G / <g1:/ D G />` will pass also
+through the remaining points, and will touch the straight
+lines :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ C A / <g1:/ C A />`, because the angles at the points :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>`
+are right.
 
-.. assertion::
+For, if it cuts them, the straight line drawn at right angles
+to the :term:`diameter <G.61>` of the circle from its :term:`extremity <G.6>` will be found
+to fall within the circle: which was proved absurd; :just:`[G.118] <G.118>`
+therefore the circle described with centre :g:`D <g1:D>` and distance
+one of the straight lines :g:`/ D E / <g1:/ D E />`, :g:`/ D F / <g1:/ D F />`, :g:`/ D G / <g1:/ D G />` will not cut the
+straight lines :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ C A / <g1:/ C A />`;
+therefore it will touch them, and will be the circle inscribed
+in the triangle :g:`< A B C > <g1:< A B C >>`. :just:`[G.153] <G.153>`
 
-   therefore :g:`/ L N / <g1:/ L N />` is also in excess of :g:`/ M P / <g1:/ M P />`,
+Let it be inscribed, as :g:`( F G E ) <g1:( F G E )>`.
 
-.. subclause::
-
-   and, if :g:`/ M N / <g1:/ M N />` be subtracted from each,
-
-.. assertion::
-
-   :g:`/ L M / <g1:/ L M />` is also in excess of :g:`/ N P / <g1:/ N P />`;
-
-so that, if :g:`/ G H / <g1:/ G H />` is in excess of :g:`/ K O / <g1:/ K O />`, :g:`/ L M / <g1:/ L M />` is also in excess of :g:`/ N P / <g1:/ N P />`.
-
-Similarly we can prove that, if :g:`/ G H / <g1:/ G H />` be :eq:`equal <g1:/ G H / = g1:/ K O />` to :g:`/ K O / <g1:/ K O />`, :g:`/ L M / <g1:/ L M />` will also be :eq:`equal <g1:/ L M / = g1:/ N P />` to :g:`/ N P / <g1:/ N P />`, and if less, less.
-
-And :g:`/ G H / <g1:/ G H />`, :g:`/ L M / <g1:/ L M />` are equimultiples of :g:`/ A E / <g1:/ A E />`, :g:`/ C F / <g1:/ C F />`, while :g:`/ K O / <g1:/ K O />`, :g:`/ N P / <g1:/ N P />` are other, chance, equimultiples of :g:`/ E B / <g1:/ E B />`, :g:`/ F D / <g1:/ F D />`:
-
-.. assertion::
-
-   therefore, as :g:`/ A E / <g1:/ A E />` is to :g:`/ E B / <g1:/ E B />`, so is :g:`/ C F / <g1:/ C F />` to :g:`/ F D / <g1:/ F D />`.
+Therefore in the given triangle :g:`< A B C > <g1:< A B C >>` the circle :g:`( E F G ) <g1:( E F G )>` has
+been inscribed.
 
 .. qed::
 
-   Therefore etc. :just:`Q. E. D.`
+   :just:`Q. E. F.`
 
 Dependency Graph
 ----------------
@@ -108,14 +85,214 @@ Dependency Graph
      node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11, color="#d6d3cd", fontcolor="#ffffff"];
      edge [color="#8c857b", fontcolor="#8c857b", arrowsize=0.75];
      rankdir="TB";
-     "G.135" [label="G.135", tooltip="G.135 (V.1): If there be any number of magnitudes whatever which are, respectively, equimultiples of any magnitudes equal in multitude, then, whatever multiple one of the magnitudes is of one, ...", fillcolor="#222244", URL="../G.135/index.html", target="_top"];
-     "G.136" [label="G.136", tooltip="G.136 (V.2): If a first magnitude be the same multiple of a second that a third is of a fourth, and a fifth also be the same multiple of the second that a sixth is of the fourth, the sum of the...", fillcolor="#222244", URL="../G.136/index.html", target="_top"];
-     "G.154" [label="G.154", tooltip="G.154 (V.17): If magnitudes be proportional componendo, they is proportional separando.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
-     "G.154" -> "G.135";
-     "G.154" -> "G.136";
+     "G.1" [label="G.1", tooltip="G.1 (I.def.1): A point A is that which has no part.", fillcolor="#224422", URL="../G.1/index.html", target="_top"];
+     "G.2" [label="G.2", tooltip="G.2 (I.def.2): A line [ A B ] is a projection of a relationship of two points A, B.", fillcolor="#224422", URL="../G.2/index.html", target="_top"];
+     "G.3" [label="G.3", tooltip="G.3 (I.def.3): The extremities of a segment / A B / are points A, B.", fillcolor="#224422", URL="../G.3/index.html", target="_top"];
+     "G.4" [label="G.4", tooltip="G.4 (I.def.4): A segment / A B / is a portion of a line [ A B ] between two points A, B on the line.", fillcolor="#224422", URL="../G.4/index.html", target="_top"];
+     "G.5" [label="G.5", tooltip="G.5 (I.def.5): A surface is that which has length and breadth only.", fillcolor="#224422", URL="../G.5/index.html", target="_top"];
+     "G.6" [label="G.6", tooltip="G.6 (I.def.6): The extremities of a surface are lines or arcs.", fillcolor="#224422", URL="../G.6/index.html", target="_top"];
+     "G.7" [label="G.7", tooltip="G.7 (I.def.7): A plane surface lies evenly with the lines on itself.", fillcolor="#224422", URL="../G.7/index.html", target="_top"];
+     "G.8" [label="G.8", tooltip="G.8 (I.def.13): A boundary is the extremity of anything.", fillcolor="#224422", URL="../G.8/index.html", target="_top"];
+     "G.9" [label="G.9", tooltip="G.9 (I.def.14): A figure is that which is contained by any boundary or boundaries.", fillcolor="#224422", URL="../G.9/index.html", target="_top"];
+     "G.10" [label="G.10", tooltip="G.10 (I.def.15): A circle ( A B ) is a plane figure contained by one arc defined by a center A and a point B establishing its defining radius / A B /, such that all segments / A B /, / A C /, / A D...", fillcolor="#224422", URL="../G.10/index.html", target="_top"];
+     "G.11" [label="G.11", tooltip="G.11 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
+     "G.12" [label="G.12", tooltip="G.12 (I.def.20): Of trilateral figures, an equilateral triangle < A B C > has three equal sides, an isosceles triangle < D E F > has two equal sides, and a scalene triangle < G H K > has three uneq...", fillcolor="#224422", URL="../G.12/index.html", target="_top"];
+     "G.13" [label="G.13", tooltip="G.13 (I.post.1): Construct a segment / A B / between any two points A, B.", fillcolor="#444422", URL="../G.13/index.html", target="_top"];
+     "G.14" [label="G.14", tooltip="G.14 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.", fillcolor="#224422", URL="../G.14/index.html", target="_top"];
+     "G.15" [label="G.15", tooltip="G.15 (I.post.3): Construct a circle ( A B ) with center A and defining radius point B.", fillcolor="#444422", URL="../G.15/index.html", target="_top"];
+     "G.16" [label="G.16", tooltip="G.16 (I.cn.1): Things equal to the same thing are equal to one another.", fillcolor="#442222", URL="../G.16/index.html", target="_top"];
+     "G.17" [label="G.17", tooltip="G.17 (I.1): Construct an equilateral triangle on a given segment.", fillcolor="#222244", URL="../G.17/index.html", target="_top"];
+     "G.18" [label="G.18", tooltip="G.18 (I.post.2): Extend a segment / A B / continuously along a line [ A B ] to / B C /.", fillcolor="#444422", URL="../G.18/index.html", target="_top"];
+     "G.19" [label="G.19", tooltip="G.19 (I.cn.3): If equals are subtracted from equals, the remainders are equal.", fillcolor="#442222", URL="../G.19/index.html", target="_top"];
+     "G.20" [label="G.20", tooltip="G.20 (I.2): Construct at a given point a segment equal to a given segment.", fillcolor="#222244", URL="../G.20/index.html", target="_top"];
+     "G.21" [label="G.21", tooltip="G.21 (I.3): Cut off from the greater of two unequal segments a segment equal to the less.", fillcolor="#222244", URL="../G.21/index.html", target="_top"];
+     "G.22" [label="G.22", tooltip="G.22 (I.def.8): A plane angle is the inclination to one another of two lines or arcs in a plane that meet and do not lie on the same line.", fillcolor="#224422", URL="../G.22/index.html", target="_top"];
+     "G.23" [label="G.23", tooltip="G.23 (I.cn.4): Things / A B /, / D E / that coincide with one another are equal to one another.", fillcolor="#442222", URL="../G.23/index.html", target="_top"];
+     "G.24" [label="G.24", tooltip="G.24 (I.4): Triangles with two sides and the included angle equal are congruent (SAS).", fillcolor="#222244", URL="../G.24/index.html", target="_top"];
+     "G.25" [label="G.25", tooltip="G.25 (I.5): In an isosceles triangle, the angles at the base are equal, and if the equal sides are extended, the angles under the base are equal.", fillcolor="#222244", URL="../G.25/index.html", target="_top"];
+     "G.27" [label="G.27", tooltip="G.27 (I.7): On the same segment and on the same side, there cannot be constructed two distinct triangles with both pairs of conterminous sides equal.", fillcolor="#222244", URL="../G.27/index.html", target="_top"];
+     "G.28" [label="G.28", tooltip="G.28 (I.8): Triangles with all three corresponding sides equal have their corresponding angles equal (SSS).", fillcolor="#222244", URL="../G.28/index.html", target="_top"];
+     "G.29" [label="G.29", tooltip="G.29 (I.def.9): A rectilineal angle is contained by two segments or lines.", fillcolor="#224422", URL="../G.29/index.html", target="_top"];
+     "G.30" [label="G.30", tooltip="G.30 (I.9): Bisect a given angle.", fillcolor="#222244", URL="../G.30/index.html", target="_top"];
+     "G.31" [label="G.31", tooltip="G.31 (I.10): Bisect a given segment.", fillcolor="#222244", URL="../G.31/index.html", target="_top"];
+     "G.32" [label="G.32", tooltip="G.32 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.32/index.html", target="_top"];
+     "G.33" [label="G.33", tooltip="G.33 (I.11): Construct a segment at right angles to a given line from a given point on it.", fillcolor="#222244", URL="../G.33/index.html", target="_top"];
+     "G.35" [label="G.35", tooltip="G.35 (I.cn.2): If equals are added to equals, the wholes are equal.", fillcolor="#442222", URL="../G.35/index.html", target="_top"];
+     "G.36" [label="G.36", tooltip="G.36 (I.13): A segment standing on a line makes either two right angles or adjacent angles summing to two right angles.", fillcolor="#222244", URL="../G.36/index.html", target="_top"];
+     "G.37" [label="G.37", tooltip="G.37 (I.post.4): All right angles are equal.", fillcolor="#444422", URL="../G.37/index.html", target="_top"];
+     "G.39" [label="G.39", tooltip="G.39 (I.15): Intersecting lines make their vertical angles equal.", fillcolor="#222244", URL="../G.39/index.html", target="_top"];
+     "G.40" [label="G.40", tooltip="G.40 (I.cn.5): The whole is greater than the part.", fillcolor="#442222", URL="../G.40/index.html", target="_top"];
+     "G.41" [label="G.41", tooltip="G.41 (I.16): In any triangle, if one side is extended, the exterior angle is greater than either opposite interior angle.", fillcolor="#222244", URL="../G.41/index.html", target="_top"];
+     "G.42" [label="G.42", tooltip="G.42 (I.17): In any triangle, the sum of any two angles is less than two right angles.", fillcolor="#222244", URL="../G.42/index.html", target="_top"];
+     "G.43" [label="G.43", tooltip="G.43 (I.18): In any triangle, the greater side subtends the greater angle.", fillcolor="#222244", URL="../G.43/index.html", target="_top"];
+     "G.44" [label="G.44", tooltip="G.44 (I.19): In any triangle, the greater angle is subtended by the greater side.", fillcolor="#222244", URL="../G.44/index.html", target="_top"];
+     "G.51" [label="G.51", tooltip="G.51 (I.26): Triangles with two angles and one corresponding side equal are congruent (ASA / AAS).", fillcolor="#222244", URL="../G.51/index.html", target="_top"];
+     "G.61" [label="G.61", tooltip="G.61 (I.def.17): A diameter of a circle is any segment drawn through the center and terminated in both directions by the arc of the circle; it bisects the circle.", fillcolor="#224422", URL="../G.61/index.html", target="_top"];
+     "G.77" [label="G.77", tooltip="G.77 (I.def.12): An acute angle is less than a right angle.", fillcolor="#224422", URL="../G.77/index.html", target="_top"];
+     "G.111" [label="G.111", tooltip="G.111 (III.def.2): Asegment is said totouch a circle which, meeting thecircle and being produced, does not cut the circle.", fillcolor="#224422", URL="../G.111/index.html", target="_top"];
+     "G.117" [label="G.117", tooltip="G.117 (III.def.7): Anangle of a segment is that contained by asegment and a arc of acircle.", fillcolor="#224422", URL="../G.117/index.html", target="_top"];
+     "G.118" [label="G.118", tooltip="G.118 (III.16): The segment drawn at right angles to the diameter of a circle from its extremity will fall outside the circle, and into the space between the segment and the arc another segment ca...", fillcolor="#222244", URL="../G.118/index.html", target="_top"];
+     "G.152" [label="G.152", tooltip="G.152 (IV.def.1): Apolygon is said to beinscribed in a polygon when the respectiveangles of the inscribedfigure lie on the respective sides of that in which it is inscribed.", fillcolor="#224422", URL="../G.152/index.html", target="_top"];
+     "G.153" [label="G.153", tooltip="G.153 (IV.def.5): Similarly acircle is said to beinscribed in a figure when the arc of the circle touches each side of thefigure in which it is inscribed.", fillcolor="#224422", URL="../G.153/index.html", target="_top"];
+     "G.154" [label="G.154", tooltip="G.154 (IV.4): Inscribe in a given triangle a circle.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.2" -> "G.1";
+     "G.3" -> "G.1";
+     "G.4" -> "G.1";
+     "G.10" -> "G.1";
+     "G.13" -> "G.1";
+     "G.14" -> "G.1";
+     "G.20" -> "G.1";
+     "G.27" -> "G.1";
+     "G.33" -> "G.1";
+     "G.3" -> "G.2";
+     "G.4" -> "G.2";
+     "G.6" -> "G.2";
+     "G.22" -> "G.2";
+     "G.29" -> "G.2";
+     "G.4" -> "G.3";
+     "G.8" -> "G.3";
+     "G.20" -> "G.3";
+     "G.27" -> "G.3";
+     "G.118" -> "G.3";
+     "G.7" -> "G.4";
+     "G.10" -> "G.4";
+     "G.11" -> "G.4";
+     "G.13" -> "G.4";
+     "G.17" -> "G.4";
+     "G.18" -> "G.4";
+     "G.20" -> "G.4";
+     "G.21" -> "G.4";
+     "G.22" -> "G.4";
+     "G.24" -> "G.4";
+     "G.25" -> "G.4";
+     "G.27" -> "G.4";
+     "G.28" -> "G.4";
+     "G.31" -> "G.4";
+     "G.32" -> "G.4";
+     "G.33" -> "G.4";
+     "G.36" -> "G.4";
+     "G.39" -> "G.4";
+     "G.61" -> "G.4";
+     "G.111" -> "G.4";
+     "G.117" -> "G.4";
+     "G.118" -> "G.4";
+     "G.6" -> "G.5";
+     "G.7" -> "G.5";
+     "G.10" -> "G.6";
+     "G.10" -> "G.7";
+     "G.22" -> "G.7";
+     "G.9" -> "G.8";
+     "G.10" -> "G.9";
+     "G.24" -> "G.9";
+     "G.152" -> "G.9";
+     "G.153" -> "G.9";
+     "G.14" -> "G.10";
+     "G.15" -> "G.10";
+     "G.17" -> "G.10";
+     "G.21" -> "G.10";
+     "G.61" -> "G.10";
+     "G.111" -> "G.10";
+     "G.117" -> "G.10";
+     "G.118" -> "G.10";
+     "G.153" -> "G.10";
+     "G.154" -> "G.10";
+     "G.12" -> "G.11";
+     "G.24" -> "G.11";
+     "G.28" -> "G.11";
+     "G.41" -> "G.11";
+     "G.42" -> "G.11";
+     "G.43" -> "G.11";
+     "G.44" -> "G.11";
+     "G.51" -> "G.11";
+     "G.152" -> "G.11";
+     "G.154" -> "G.11";
+     "G.17" -> "G.12";
+     "G.25" -> "G.12";
+     "G.17" -> "G.13";
+     "G.20" -> "G.13";
+     "G.25" -> "G.13";
+     "G.27" -> "G.13";
+     "G.41" -> "G.13";
+     "G.15" -> "G.14";
+     "G.61" -> "G.14";
+     "G.17" -> "G.15";
+     "G.20" -> "G.15";
+     "G.21" -> "G.15";
+     "G.17" -> "G.16";
+     "G.20" -> "G.16";
+     "G.21" -> "G.16";
+     "G.36" -> "G.16";
+     "G.39" -> "G.16";
+     "G.20" -> "G.17";
+     "G.31" -> "G.17";
+     "G.33" -> "G.17";
+     "G.20" -> "G.18";
+     "G.25" -> "G.18";
+     "G.41" -> "G.18";
+     "G.42" -> "G.18";
+     "G.20" -> "G.19";
+     "G.39" -> "G.19";
+     "G.21" -> "G.20";
+     "G.25" -> "G.21";
+     "G.30" -> "G.21";
+     "G.33" -> "G.21";
+     "G.41" -> "G.21";
+     "G.43" -> "G.21";
+     "G.24" -> "G.22";
+     "G.25" -> "G.22";
+     "G.28" -> "G.22";
+     "G.29" -> "G.22";
+     "G.32" -> "G.22";
+     "G.36" -> "G.22";
+     "G.39" -> "G.22";
+     "G.41" -> "G.22";
+     "G.42" -> "G.22";
+     "G.43" -> "G.22";
+     "G.44" -> "G.22";
+     "G.51" -> "G.22";
+     "G.77" -> "G.22";
+     "G.118" -> "G.22";
+     "G.152" -> "G.22";
+     "G.24" -> "G.23";
+     "G.25" -> "G.24";
+     "G.31" -> "G.24";
+     "G.41" -> "G.24";
+     "G.51" -> "G.24";
+     "G.27" -> "G.25";
+     "G.44" -> "G.25";
+     "G.118" -> "G.25";
+     "G.28" -> "G.27";
+     "G.30" -> "G.28";
+     "G.33" -> "G.28";
+     "G.30" -> "G.29";
+     "G.118" -> "G.29";
+     "G.31" -> "G.30";
+     "G.154" -> "G.30";
+     "G.41" -> "G.31";
+     "G.33" -> "G.32";
+     "G.36" -> "G.32";
+     "G.37" -> "G.32";
+     "G.42" -> "G.32";
+     "G.77" -> "G.32";
+     "G.118" -> "G.32";
+     "G.36" -> "G.33";
+     "G.36" -> "G.35";
+     "G.39" -> "G.36";
+     "G.42" -> "G.36";
+     "G.39" -> "G.37";
+     "G.41" -> "G.39";
+     "G.41" -> "G.40";
+     "G.43" -> "G.41";
+     "G.51" -> "G.41";
+     "G.118" -> "G.42";
+     "G.44" -> "G.43";
+     "G.118" -> "G.44";
+     "G.154" -> "G.51";
+     "G.118" -> "G.61";
+     "G.118" -> "G.77";
+     "G.118" -> "G.111";
+     "G.118" -> "G.117";
+     "G.154" -> "G.118";
+     "G.154" -> "G.152";
+     "G.154" -> "G.153";
    }
-
-Required for
-------------
-
-:ref:`G.155 <G.155>`, :ref:`G.156 <G.156>`, :ref:`G.161 <G.161>`, :ref:`G.162 <G.162>`, :ref:`G.189 <G.189>`, :ref:`G.191 <G.191>`, :ref:`G.192 <G.192>`, :ref:`G.193 <G.193>`, :ref:`G.194 <G.194>`, :ref:`G.195 <G.195>`, :ref:`G.327 <G.327>`, :ref:`G.344 <G.344>`, :ref:`G.345 <G.345>`, :ref:`G.346 <G.346>`, :ref:`G.347 <G.347>`, :ref:`G.348 <G.348>`, :ref:`G.349 <G.349>`, :ref:`G.350 <G.350>`, :ref:`G.354 <G.354>`, :ref:`G.355 <G.355>`, :ref:`G.356 <G.356>`, :ref:`G.360 <G.360>`, :ref:`G.361 <G.361>`, :ref:`G.363 <G.363>`, :ref:`G.364 <G.364>`, :ref:`G.365 <G.365>`, :ref:`G.366 <G.366>`, :ref:`G.367 <G.367>`, :ref:`G.368 <G.368>`, :ref:`G.376 <G.376>`, :ref:`G.378 <G.378>`, :ref:`G.379 <G.379>`, :ref:`G.380 <G.380>`, :ref:`G.383 <G.383>`, :ref:`G.384 <G.384>`, :ref:`G.385 <G.385>`, :ref:`G.387 <G.387>`, :ref:`G.388 <G.388>`, :ref:`G.389 <G.389>`, :ref:`G.390 <G.390>`, :ref:`G.391 <G.391>`, :ref:`G.392 <G.392>`, :ref:`G.393 <G.393>`, :ref:`G.397 <G.397>`, :ref:`G.398 <G.398>`, :ref:`G.399 <G.399>`, :ref:`G.403 <G.403>`, :ref:`G.404 <G.404>`, :ref:`G.405 <G.405>`, :ref:`G.407 <G.407>`, :ref:`G.409 <G.409>`, :ref:`G.411 <G.411>`, :ref:`G.413 <G.413>`, :ref:`G.415 <G.415>`, :ref:`G.417 <G.417>`, :ref:`G.418 <G.418>`, :ref:`G.419 <G.419>`, :ref:`G.420 <G.420>`, :ref:`G.421 <G.421>`, :ref:`G.422 <G.422>`, :ref:`G.423 <G.423>`, :ref:`G.427 <G.427>`, :ref:`G.428 <G.428>`, :ref:`G.429 <G.429>`, :ref:`G.430 <G.430>`, :ref:`G.432 <G.432>`, :ref:`G.433 <G.433>`, :ref:`G.434 <G.434>`, :ref:`G.435 <G.435>`, :ref:`G.436 <G.436>`, :ref:`G.437 <G.437>`, :ref:`G.438 <G.438>`, :ref:`G.439 <G.439>`, :ref:`G.440 <G.440>`, :ref:`G.441 <G.441>`, :ref:`G.492 <G.492>`, :ref:`G.496 <G.496>`, :ref:`G.497 <G.497>`, :ref:`G.499 <G.499>`, :ref:`G.500 <G.500>`, :ref:`G.501 <G.501>`, :ref:`G.502 <G.502>`, :ref:`G.518 <G.518>`, :ref:`G.523 <G.523>`, :ref:`G.525 <G.525>`

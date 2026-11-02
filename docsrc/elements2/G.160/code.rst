@@ -1,17 +1,18 @@
 :canonical_id: G.160
-:original_id: V.23
+:original_id: IV.8
+:title: G.160 square inscribe circle
 :volume: II
-:book: V
+:book: IV
 :type: prop
 
-G.160 — Code
-============
+G.160 square inscribe circle — Code
+===================================
 
-.. rubric:: `V.23 <https://geometor.github.io/euclid/heath/volume_II/book_v/propositions/23/>`_
+.. rubric:: `IV.8 <https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/08/>`_
 
 .. enunciation::
 
-   If there be three magnitudes, and others equal to them in multitude, which taken two and two together are in the same ratio, and the proportion of them be perturbed, they is in the same ratio ex aequali.
+   In a given :term:`square <G.63>` to inscribe a :term:`circle <G.10>`.
 
 .. picture:: g1.svg
 

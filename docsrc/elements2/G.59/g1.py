@@ -1,46 +1,47 @@
-"""Programmatic construction for Book I, I.46 (I.46).
+"""GEOMETOR construction for Book I, Proposition 32 (Folio 0331, Graphic 1).
 
-On a given straight line to describe a square.
+In any triangle ABC, if one of the sides BC be produced to D, the exterior angle ACD is equal
+to the two interior and opposite angles CAB, ABC, and the three interior angles ABC, BCA, CAB
+are equal to two right angles.
 """
-
-from __future__ import annotations
 
 from geometor.model import Model
 
 
-def construct_g1() -> Model:
-    """Construct the figure for 0361.g1 (I.46) using geometor.model."""
-    model = Model("I.46")
+def build_0331_g1() -> Model:
+    model = Model("I.32")
 
-    # 1. Points
-    A = model.set_point(30, -196, classes=["given"], ID="A")
-    B = model.set_point(134, -196, classes=["given"], ID="B")
-    D = model.set_point(30, -92, ID="D")
-    E = model.set_point(134, -92, ID="E")
-    C = model.set_point(30, -21, ID="C")
+    B = model.set_point(-1, 0, classes=["given"], ID="B")
+    C = model.set_point(0, 0, classes=["given"], ID="C")
+    D = model.set_point(0.9, 0, classes=["given"], ID="D")
+    A = model.set_point(-0.4, 1.0, classes=["given"], ID="A")
+    E = model.set_point(0.6, 1.0, classes=["given"], ID="E")
 
-    # 3. Segments
-    model.set_segment(A, C)
-    model.set_segment(A, D)
-    model.set_segment(D, C)
+    model.construct_line(B, D)
+    model.construct_line(A, B)
+    model.construct_line(A, C)
+    model.construct_line(C, E)
+
     model.set_segment(A, B)
-    model.set_segment(D, E)
-    model.set_segment(B, E)
+    model.set_segment(B, C)
+    model.set_segment(C, D)
+    model.set_segment(B, D)
+    model.set_segment(A, C)
+    model.set_segment(C, E)
 
-    # 4. Collinear Sections
-    model.set_section([A, D, C])
+    model.set_polygon([A, B, C])
+    model.set_section([B, C, D])
 
-    # 5. Polygons (Triangles, Parallelograms, Trapezia, Squares)
-    model.set_polygon([A, D, E, B])
-
-    # 6. Angles (Wedges)
-    model.set_wedge(A, B, B, D)
-    model.set_wedge(D, A, A, E)
-    model.set_wedge(B, A, A, E)
-    model.set_wedge(E, B, B, D)
+    model.set_wedge(C, A, A, D)
+    model.set_wedge(A, C, C, B)
+    model.set_wedge(B, A, A, C)
+    model.set_wedge(C, B, B, A)
+    model.set_wedge(C, A, A, E)
+    model.set_wedge(C, E, E, D)
 
     return model
 
 
 if __name__ == "__main__":
-    construct_g1()
+    m = build_0331_g1()
+    print(f"Constructed {m.name} with {len(m)} elements.")

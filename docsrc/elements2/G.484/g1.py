@@ -1,52 +1,72 @@
-"""Programmatic construction for Book XI, Proposition 37 (XI.37).
-
-Four proportional straight lines AB, CD, EF, GH and the similar and similarly
-situated parallelepipedal solids KA, LC, ME, NG described on them.
-"""
+"""Programmatic construction for Book X, Proposition 98 (X.98)."""
 
 from __future__ import annotations
 
-import sympy as sp
 from geometor.model import Model
 
 
-def _add_box(
-    model: Model,
-    x1: int, y1: int,
-    x2: int, y2: int,
-    dx: int, dy: int,
-    lbl_bl: str, lbl_br: str, lbl_tr: str,
-) -> None:
-    """Add a parallelepiped box to the model."""
-    p_tl1 = model.set_point(sp.Rational(x1, 100), sp.Rational(191 - y1, 100), label=f"{lbl_bl}_tl1")
-    p_tr1 = model.set_point(sp.Rational(x2, 100), sp.Rational(191 - y1, 100), classes=["given"], label=lbl_tr)
-    p_br1 = model.set_point(sp.Rational(x2 - 3, 100), sp.Rational(191 - y2, 100), label=f"{lbl_bl}_br1")
-    p_bl1 = model.set_point(sp.Rational(x1 - 3, 100), sp.Rational(191 - y2, 100), label=f"{lbl_bl}_bl1")
+def construct_g1() -> Model:
+    """Construct the figure 0219.g1 using geometor.model."""
+    model = Model("X.98")
 
-    p_tl2 = model.set_point(sp.Rational(x1 + dx, 100), sp.Rational(191 - (y1 + dy), 100), label=f"{lbl_bl}_tl2")
-    p_tr2 = model.set_point(sp.Rational(x2 + dx, 100), sp.Rational(191 - (y1 + dy), 100), label=f"{lbl_bl}_tr2")
-    p_br2 = model.set_point(sp.Rational(x2 - 3 + dx, 100), sp.Rational(191 - (y2 + dy), 100), classes=["given"], label=lbl_br)
-    p_bl2 = model.set_point(sp.Rational(x1 - 3 + dx, 100), sp.Rational(191 - (y2 + dy), 100), classes=["given"], label=lbl_bl)
+    # Top segment AG divided at B
+    A = model.set_point(124.0, -18.5, classes=["given"], ID="A")
+    B = model.set_point(211.0, -18.5, classes=["given"], ID="B")
+    G = model.set_point(262.0, -18.5, classes=["given"], ID="G")
 
+    # Rectangle CDLM divided by vertical lines FE, NO, KH
+    C = model.set_point(19.5, -52.5, classes=["given"], ID="C")
+    F = model.set_point(134.5, -52.5, ID="F")
+    N = model.set_point(246.5, -52.5, ID="N")
+    K = model.set_point(316.5, -52.5, ID="K")
+    M = model.set_point(358.5, -52.5, ID="M")
+
+    D = model.set_point(19.5, -117.0, classes=["given"], ID="D")
+    E = model.set_point(134.5, -117.0, ID="E")
+    O = model.set_point(246.5, -117.0, ID="O")
+    H = model.set_point(316.5, -117.0, ID="H")
+    L = model.set_point(358.5, -117.0, ID="L")
+
+    # Base lines
     for p1, p2 in [
-        (p_tl1, p_tr1), (p_tr1, p_br1), (p_br1, p_bl1), (p_bl1, p_tl1),
-        (p_tl2, p_tr2), (p_tr2, p_br2), (p_br2, p_bl2), (p_bl2, p_tl2),
-        (p_tl1, p_tl2), (p_tr1, p_tr2), (p_br1, p_br2), (p_bl1, p_bl2),
+        (A, G),
+        (C, M),
+        (D, L),
+        (C, D),
+        (F, E),
+        (N, O),
+        (K, H),
+        (M, L),
     ]:
+        model.construct_line(p1, p2)
+
+    # Segments on AG and CDLM
+    for pts in ([A, B, G], [C, F, N, K, M], [D, E, O, H, L]):
+        for i in range(len(pts)):
+            for j in range(i + 1, len(pts)):
+                model.set_segment(pts[i], pts[j])
+
+    # Vertical segments on CDLM
+    for p1, p2 in [(C, D), (F, E), (N, O), (K, H), (M, L)]:
         model.set_segment(p1, p2)
 
-    model.set_polygon([p_bl1, p_br1, p_br2, p_bl2])
-    model.set_polygon([p_tl2, p_tr2, p_br2, p_bl2])
+    # Collinear sections
+    model.set_section([A, B, G])
+    model.set_section([C, F, M])
+    model.set_section([C, K, M])
+    model.set_section([F, N, M])
 
-
-def construct_g1() -> Model:
-    """Construct the four similar parallelepipeds KA, LC, ME, NG for XI.37."""
-    model = Model("XI.37")
-
-    _add_box(model, 30, 92, 98, 134, 16, 23, "A", "B", "K")
-    _add_box(model, 168, 77, 256, 131, 20, 27, "C", "D", "L")
-    _add_box(model, 338, 65, 442, 129, 24, 31, "E", "F", "M")
-    _add_box(model, 482, 36, 616, 122, 30, 36, "G", "H", "N")
+    # Polygons in CDLM
+    model.set_polygon([C, M, L, D])  # CL / DM
+    model.set_polygon([C, F, E, D])  # CE
+    model.set_polygon([C, K, H, D])  # CH
+    model.set_polygon([K, M, L, H])  # KL
+    model.set_polygon([F, M, L, E])  # FL
+    model.set_polygon([F, N, O, E])  # FO
+    model.set_polygon([N, M, L, O])  # NL / LN
+    model.set_polygon([N, K, H, O])  # NH
+    model.set_polygon([C, N, O, D])  # CO
+    model.set_polygon([F, K, H, E])  # FH
 
     return model
 

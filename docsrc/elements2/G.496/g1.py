@@ -1,4 +1,4 @@
-"""Programmatic construction for Book XII, Proposition 10 (XII.10)."""
+"""Programmatic construction for Book X, Proposition 110 (X.110)."""
 
 from __future__ import annotations
 
@@ -6,47 +6,70 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0404.g1 using geometor.model."""
-    model = Model("XII.10")
+    """Construct the figure 0242.g1 using geometor.model."""
+    model = Model("X.110")
 
-    # Center O and points on circumference of circle ABCD
-    O = model.set_point(131.0, -134.0)
-    A = model.set_point(131.0, -29.0, classes=["given"], ID="A")
-    B = model.set_point(26.0, -134.0, classes=["given"], ID="B")
-    C = model.set_point(131.0, -239.0, classes=["given"], ID="C")
-    D = model.set_point(236.0, -134.0, classes=["given"], ID="D")
+    # Left rectangle B-E-C_t / A-D-C
+    B = model.set_point(22.0, -48.0, classes=["given"], ID="B")
+    E = model.set_point(93.5, -48.0, ID="E")
+    C_t = model.set_point(134.5, -48.0, ID="C_t")
+    A = model.set_point(22.0, -130.5, classes=["given"], ID="A")
+    D = model.set_point(93.5, -130.5, ID="D")
+    C = model.set_point(134.5, -130.5, classes=["given"], ID="C")
 
-    E = model.set_point(56.75, -59.75, ID="E")
-    F = model.set_point(56.75, -208.25, ID="F")
-    G = model.set_point(205.25, -208.25, ID="G")
-    H = model.set_point(205.25, -59.75, ID="H")
+    # Right rectangle F-K-H / G-L-H_b
+    F = model.set_point(277.0, -18.5, classes=["given"], ID="F")
+    K = model.set_point(315.0, -18.5, ID="K")
+    H = model.set_point(336.5, -18.5, ID="H")
+    G = model.set_point(277.0, -177.5, classes=["given"], ID="G")
+    L = model.set_point(315.0, -177.5, ID="L")
+    H_b = model.set_point(336.5, -177.5, ID="H_b")
 
-    # Base circle ABCD
-    model.construct_circle(O, A)
+    # Base lines
+    model.construct_line(B, C_t)
+    model.construct_line(A, C)
+    model.construct_line(B, A)
+    model.construct_line(E, D)
+    model.construct_line(C_t, C)
 
-    # Square sides
-    model.set_segment(A, B)
-    model.set_segment(B, C)
-    model.set_segment(C, D)
-    model.set_segment(D, A)
+    model.construct_line(F, H)
+    model.construct_line(G, H_b)
+    model.construct_line(F, G)
+    model.construct_line(K, L)
+    model.construct_line(H, H_b)
 
-    # Octagon sides
-    model.set_segment(A, E)
-    model.set_segment(E, B)
-    model.set_segment(B, F)
-    model.set_segment(F, C)
-    model.set_segment(C, G)
-    model.set_segment(G, D)
-    model.set_segment(D, H)
-    model.set_segment(H, A)
+    # Segments
+    model.set_segment(B, A)
+    model.set_segment(E, D)
+    model.set_segment(C_t, C)
+    model.set_segment(A, C)
+    model.set_segment(A, D)
+    model.set_segment(D, C)
+    model.set_segment(B, E)
+    model.set_segment(E, C_t)
+    model.set_segment(B, C_t)
 
-    # Polygons
-    model.set_polygon([A, B, C, D])
-    model.set_polygon([A, E, B, F, C, G, D, H])
-    model.set_polygon([A, E, B])
-    model.set_polygon([B, F, C])
-    model.set_polygon([C, G, D])
-    model.set_polygon([D, H, A])
+    model.set_segment(F, G)
+    model.set_segment(K, L)
+    model.set_segment(H, H_b)
+    model.set_segment(F, H)
+    model.set_segment(F, K)
+    model.set_segment(K, H)
+    model.set_segment(G, L)
+    model.set_segment(L, H_b)
+    model.set_segment(G, H_b)
+
+    # Sections
+    model.set_section([A, D, C])
+    model.set_section([F, K, H])
+
+    # Polygons (rectangles)
+    model.set_polygon([B, C_t, C, A])  # BC
+    model.set_polygon([B, E, D, A])    # BD
+    model.set_polygon([E, C_t, C, D])  # EC
+    model.set_polygon([F, H, H_b, G])  # GH
+    model.set_polygon([F, K, L, G])    # GK / FL
+    model.set_polygon([K, H, H_b, L])  # LH
 
     return model
 

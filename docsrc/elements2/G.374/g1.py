@@ -1,4 +1,4 @@
-"""Programmatic construction for Book X, Proposition 56 (X.56)."""
+"""Programmatic construction for Book X, Proposition 3 (X.3)."""
 
 from __future__ import annotations
 
@@ -6,84 +6,43 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0128.g1 using geometor.model."""
-    model = Model("X.56")
+    """Construct the magnitude bars G, AB, CD for Book X, Proposition 3 (X.3)."""
+    model = Model("X.3")
 
-    # Left rectangle ABCD divided by vertical segments GH, EK, FL
-    A = model.set_point(19.5, -34.0, classes=["given"], ID="A")
-    G = model.set_point(118.5, -34.0, ID="G")
-    E = model.set_point(137.5, -34.0, classes=["given"], ID="E")
-    F = model.set_point(179.5, -34.0, ID="F")
-    D = model.set_point(221.5, -34.0, classes=["given"], ID="D")
+    # Single-letter magnitude G
+    G_l = model.set_point(29.0, -20.5, classes=["given"], ID="G")
+    G_r = model.set_point(76.0, -20.5, ID="G_r")
 
-    B = model.set_point(19.5, -86.0, classes=["given"], ID="B")
-    H = model.set_point(118.5, -86.0, ID="H")
-    K = model.set_point(137.5, -86.0, ID="K")
-    L = model.set_point(179.5, -86.0, ID="L")
-    C = model.set_point(221.5, -86.0, classes=["given"], ID="C")
+    # Subdivided magnitude AB (divided at F)
+    A = model.set_point(179.0, -23.0, classes=["given"], ID="A")
+    F = model.set_point(193.0, -23.0, ID="F")
+    B = model.set_point(300.0, -23.0, classes=["given"], ID="B")
 
-    # Right square SQ divided by MO and RP intersecting at N
-    Q_tl = model.set_point(307.0, -17.5, ID="Q_tl")
-    R = model.set_point(380.0, -17.5, ID="R")
-    Q = model.set_point(413.0, -17.5, ID="Q")
-
-    M = model.set_point(307.0, -50.5, ID="M")
-    N = model.set_point(380.0, -50.5, ID="N")
-    O = model.set_point(413.0, -50.5, ID="O")
-
-    S = model.set_point(307.0, -124.5, ID="S")
-    P = model.set_point(380.0, -124.5, ID="P")
-    S_br = model.set_point(413.0, -124.5, ID="S_br")
+    # Subdivided magnitude CD (divided at E)
+    C = model.set_point(19.0, -51.0, classes=["given"], ID="C")
+    E = model.set_point(54.0, -51.0, ID="E")
+    D = model.set_point(298.0, -51.0, classes=["given"], ID="D")
 
     # Base lines
-    for p1, p2 in [
-        (A, D), (B, C), (A, B), (G, H), (E, K), (F, L), (D, C),
-        (Q_tl, Q), (M, O), (S, S_br), (Q_tl, S), (R, P), (Q, S_br),
-    ]:
-        model.construct_line(p1, p2)
+    model.construct_line(A, B)
+    model.construct_line(C, D)
 
-    # Top and bottom segments of ABCD
-    top_pts = [A, G, E, F, D]
-    bot_pts = [B, H, K, L, C]
-    for pts in (top_pts, bot_pts):
-        for i in range(len(pts)):
-            for j in range(i + 1, len(pts)):
-                model.set_segment(pts[i], pts[j])
+    # Magnitude G
+    model.set_segment(G_l, G_r)
 
-    # Vertical segments of ABCD
-    for p1, p2 in [(A, B), (G, H), (E, K), (F, L), (D, C)]:
-        model.set_segment(p1, p2)
+    # Segments on AB
+    model.set_segment(A, F)
+    model.set_segment(F, B)
+    model.set_segment(A, B)
 
-    # Segments of square SQ
-    for p1, p2 in [
-        (Q_tl, Q), (Q_tl, R), (R, Q),
-        (M, O), (M, N), (N, O),
-        (S, S_br), (S, P), (P, S_br),
-        (Q_tl, S), (Q_tl, M), (M, S),
-        (R, P), (R, N), (N, P),
-        (Q, S_br), (Q, O), (O, S_br),
-    ]:
-        model.set_segment(p1, p2)
+    # Segments on CD
+    model.set_segment(C, E)
+    model.set_segment(E, D)
+    model.set_segment(C, D)
 
-    # Key collinear sections
-    model.set_section([A, G, E])
-    model.set_section([A, E, D])
-    model.set_section([E, F, D])
-    model.set_section([M, N, O])
-    model.set_section([R, N, P])
-
-    # Polygons (rectangles and squares)
-    model.set_polygon([A, B, C, D])
-    model.set_polygon([A, B, H, G])
-    model.set_polygon([G, H, K, E])
-    model.set_polygon([E, K, L, F])
-    model.set_polygon([F, L, C, D])
-    model.set_polygon([E, K, C, D])
-    model.set_polygon([S, S_br, Q, Q_tl])
-    model.set_polygon([S, P, N, M])
-    model.set_polygon([N, O, Q, R])
-    model.set_polygon([M, N, R, Q_tl])
-    model.set_polygon([P, S_br, O, N])
+    # Sections
+    model.set_section([A, F, B])
+    model.set_section([C, E, D])
 
     return model
 

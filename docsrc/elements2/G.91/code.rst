@@ -1,17 +1,18 @@
 :canonical_id: G.91
-:original_id: III.14
-:volume: II
-:book: III
+:original_id: II.9
+:title: G.91 sum of squares equal unequal
+:volume: I
+:book: II
 :type: prop
 
-G.91 — Code
-===========
+G.91 sum of squares equal unequal — Code
+========================================
 
-.. rubric:: `III.14 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/14/>`_
+.. rubric:: `II.9 <https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/09/>`_
 
 .. enunciation::
 
-   In a circle equal straight lines are equally distant from the centre, and those which are equally distant from the centre are equal.
+   If a :term:`segment <G.4>` be cut into equal and unequal segments, the :term:`squares <G.63>` on the unequal segments of the whole are double of the square on the half and of the square on the segment between the :term:`points <G.1>` of section.
 
 .. picture:: g1.svg
 

@@ -1,72 +1,20 @@
 :canonical_id: G.302
-:original_id: IX.29
+:original_id: VII.def.6
+:title: G.302 even number
 :volume: II
-:book: IX
-:type: prop
+:book: VII
+:type: def
 
-G.302 — Heath
-=============
+G.302 even number — Heath
+=========================
 
-.. rubric:: `IX.29 <https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/29/>`_
+.. rubric:: `VII.def.6 <https://geometor.github.io/euclid/heath/volume_II/book_vii/definitions/#vii-def-6>`_
 
 .. enunciation::
 
-   If an odd number by multiplying an odd number make some number, the product will be odd.
+   An :term:`**even number** <even-number>` is that which is divisible into two equal parts.
 
-For let the odd number :g:`A <g1:A>` by multiplying the odd number :g:`B <g1:B>` make :g:`C <g1:C>` ;
+Required for
+------------
 
-I say that :g:`C <g1:C>` is odd.
-
-.. picture:: g1.svg
-   :alt: Book IX, Proposition 29
-
-.. subclause::
-
-   For, since :g:`A <g1:A>` by multiplying :g:`B <g1:B>` has made :g:`C <g1:C>`,
-
-.. assertion::
-
-   therefore :g:`C <g1:C>` is made up of as many numbers equal to :g:`B <g1:B>` as there are units in :g:`A <g1:A>`. :just:`[G.222] <G.222>`
-
-.. subclause::
-
-   And each of the numbers :g:`A <g1:A>`, :g:`B <g1:B>` is odd;
-
-.. assertion::
-
-   therefore :g:`C <g1:C>` is made up of odd numbers the multitude of which is odd.
-
-.. assertion:: [G.296] <G.296>
-
-   Thus :g:`C <g1:C>` is odd.
-
-.. qed::
-
-   :just:`Q. E. D.`
-
-Dependency Graph
-----------------
-
-.. graphviz::
-
-   digraph {
-     bgcolor="transparent";
-     node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11, color="#d6d3cd", fontcolor="#ffffff"];
-     edge [color="#8c857b", fontcolor="#8c857b", arrowsize=0.75];
-     rankdir="TB";
-     "G.222" [label="G.222", tooltip="G.222 (VII.def.15): A number is said tomultiply a number when that which is multiplied is added to itself as many times as there are units in the other, and thus some number is produced.", fillcolor="#224422", URL="../G.222/index.html", target="_top"];
-     "G.292" [label="G.292", tooltip="G.292 (VII.def.6): Aneven number is that which is divisible into two equal parts.", fillcolor="#224422", URL="../G.292/index.html", target="_top"];
-     "G.293" [label="G.293", tooltip="G.293 (IX.21): If as many even numbers as we please be added together, the whole is even.", fillcolor="#222244", URL="../G.293/index.html", target="_top"];
-     "G.294" [label="G.294", tooltip="G.294 (VII.def.7): Anodd number is that which is not divisible into two equal parts, or that which differs by an unit from an even number.", fillcolor="#224422", URL="../G.294/index.html", target="_top"];
-     "G.295" [label="G.295", tooltip="G.295 (IX.22): If as many odd numbers as we please be added together, and their multitude be even, the whole is even.", fillcolor="#222244", URL="../G.295/index.html", target="_top"];
-     "G.296" [label="G.296", tooltip="G.296 (IX.23): If as many odd numbers as we please be added together, and their multitude be odd, the whole is odd.", fillcolor="#222244", URL="../G.296/index.html", target="_top"];
-     "G.302" [label="G.302", tooltip="G.302 (IX.29): If an odd number by multiplying an odd number make some number, the product is odd.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
-     "G.302" -> "G.222";
-     "G.293" -> "G.292";
-     "G.295" -> "G.293";
-     "G.296" -> "G.293";
-     "G.295" -> "G.294";
-     "G.296" -> "G.294";
-     "G.296" -> "G.295";
-     "G.302" -> "G.296";
-   }
+:ref:`G.303 <G.303>`, :ref:`G.304 <G.304>`, :ref:`G.314 <G.314>`, :ref:`G.315 <G.315>`, :ref:`G.316 <G.316>`, :ref:`G.317 <G.317>`, :ref:`G.351 <G.351>`, :ref:`G.352 <G.352>`, :ref:`G.353 <G.353>`, :ref:`G.354 <G.354>`, :ref:`G.355 <G.355>`, :ref:`G.356 <G.356>`, :ref:`G.357 <G.357>`, :ref:`G.358 <G.358>`, :ref:`G.359 <G.359>`, :ref:`G.360 <G.360>`, :ref:`G.361 <G.361>`, :ref:`G.362 <G.362>`, :ref:`G.363 <G.363>`, :ref:`G.364 <G.364>`, :ref:`G.365 <G.365>`, :ref:`G.366 <G.366>`, :ref:`G.367 <G.367>`, :ref:`G.371 <G.371>`, :ref:`G.556 <G.556>`, :ref:`G.557 <G.557>`, :ref:`G.558 <G.558>`, :ref:`G.559 <G.559>`, :ref:`G.563 <G.563>`, :ref:`G.565 <G.565>`, :ref:`G.570 <G.570>`, :ref:`G.571 <G.571>`, :ref:`G.572 <G.572>`, :ref:`G.573 <G.573>`, :ref:`G.574 <G.574>`, :ref:`G.577 <G.577>`, :ref:`G.578 <G.578>`, :ref:`VII.def.10 <VII.def.10>`

@@ -1,17 +1,18 @@
 :canonical_id: G.28
-:original_id: I.17
+:original_id: I.8
+:title: G.28 congruent triangles by SSS
 :volume: I
 :book: I
 :type: prop
 
-G.28 — Code
-===========
+G.28 congruent triangles by SSS — Code
+======================================
 
-.. rubric:: `I.17 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/17/>`_
+.. rubric:: `I.8 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/08/>`_
 
 .. enunciation::
 
-   In any triangle, the sum of any two angles is less than two right angles.
+   :term:`Triangles <G.11>` with all three corresponding sides equal have their corresponding :term:`angles <G.22>` equal (SSS).
 
 .. picture:: g1.svg
 

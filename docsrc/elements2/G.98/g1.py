@@ -1,56 +1,57 @@
-"""Programmatic construction for Book III, Proposition 20 (III.20).
-
-In a circle the angle at the centre is double of the angle at the circumference,
-when the angles have the same circumference as base.
-"""
+"""Programmatic construction for Book III, Proposition 1 (III.1)."""
 
 from __future__ import annotations
 
-import sympy as sp
 from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure for Book III, Proposition 20 using geometor.model."""
-    model = Model("III.20")
+    """Construct the figure 0012.g1 using geometor.model."""
+    model = Model("III.1")
 
-    # 1. Circle ABC about centre E.
-    E = model.set_point(0, 0, classes=["given"], ID="E")
-    C = model.set_point(1, 0, classes=["given"], ID="C")
-    circle_ABC = model.construct_circle(E, C)
+    # Points (y-inverted for standard mathematical coordinates)
+    F = model.set_point(89, -104, ID="F")
+    C = model.set_point(89, -34, classes=["given"], ID="C")
+    E = model.set_point(89, -174, ID="E")
+    D = model.set_point(89, -148, ID="D")
+    A = model.set_point(34.56, -148, classes=["given"], ID="A")
+    B = model.set_point(143.44, -148, classes=["given"], ID="B")
+    G = model.set_point(109, -110, ID="G")
 
-    # Points A, B, D on circumference and antipodal points F, G
-    A = model.set_point(sp.Rational(-60, 61), sp.Rational(11, 61), classes=["given"], label="A")
-    F = model.set_point(sp.Rational(60, 61), sp.Rational(-11, 61), label="F")
-    B = model.set_point(sp.Rational(28, 45), sp.Rational(-35, 45), classes=["given"], label="B")
-    D = model.set_point(sp.Rational(13, 37), sp.Rational(35, 37), label="D")
-    G = model.set_point(sp.Rational(-13, 37), sp.Rational(-35, 37), label="G")
+    # Construction circle
+    model.construct_circle(F, C)
 
-    # 2. First case: angle BEC at centre, angle BAC at circumference, diameter AEF.
+    # Construction lines
+    model.construct_line(C, E)
+
+    # Segments
     model.set_segment(A, B)
-    model.set_segment(A, C)
-    model.set_segment(E, B)
-    model.set_segment(E, C)
-
-    model.set_segment(A, E)
-    model.set_segment(E, F)
-    model.set_segment(A, F)
-    model.set_section([A, E, F])
-
-    model.set_polygon([E, A, B])
-    model.set_polygon([E, A, C])
-
-    # 3. Second case: inflected angle BDC at circumference, diameter DEG.
+    model.set_segment(A, D)
     model.set_segment(D, B)
+    model.set_segment(C, E)
     model.set_segment(D, C)
-
     model.set_segment(D, E)
-    model.set_segment(E, G)
-    model.set_segment(D, G)
-    model.set_section([D, E, G])
+    model.set_segment(C, F)
+    model.set_segment(F, E)
+    model.set_segment(F, D)
+    model.set_segment(G, A)
+    model.set_segment(G, D)
+    model.set_segment(G, B)
 
-    model.set_polygon([E, D, B])
-    model.set_polygon([E, D, C])
+    # Collinear sections
+    model.set_section([A, D, B])
+    model.set_section([C, F, E])
+    model.set_section([C, D, E])
+
+    # Polygons
+    model.set_polygon([A, D, G])
+    model.set_polygon([B, D, G])
+    model.set_polygon([A, G, B])
+
+    # Angles (wedges)
+    model.set_wedge(D, A, A, G)
+    model.set_wedge(D, G, G, B)
+    model.set_wedge(D, F, F, B)
 
     return model
 

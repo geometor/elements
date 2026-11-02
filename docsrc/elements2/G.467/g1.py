@@ -1,51 +1,50 @@
-"""Programmatic construction for Book XI, Proposition 22 Figure 1 (XI.22 - g1).
-
-Three plane angles ABC, DEF, GHK of which any two are greater than the remaining
-one, contained by equal straight lines AB, BC, DE, EF, GH, HK, with bases AC,
-DF, GK joined.
-"""
+"""Programmatic construction for Book X, Proposition 85 (X.85)."""
 
 from __future__ import annotations
 
-import sympy as sp
 from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct Figure 1 for Book XI, Proposition 22 using geometor.model."""
-    model = Model("XI.22.g1")
+    """Construct the figure 0182.g1 using geometor.model."""
+    model = Model("X.85")
 
-    # 1. Three plane angles ABC, DEF, GHK contained by equal straight lines
-    #    AB, BC, DE, EF, GH, HK, with bases AC, DF, GK joined.
-    A = model.set_point(0, 0, classes=["given"], ID="A")
-    B = model.set_point(sp.Rational(67, 130), sp.Rational(108, 130), classes=["given"], label="B")
-    C = model.set_point(1, 0, classes=["given"], ID="C")
+    # Single-letter magnitude segments A and H
+    A_l = model.set_point(29.0, -17.5, classes=["given"], ID="A")
+    A_r = model.set_point(139.0, -17.5, ID="A_r")
 
-    D = model.set_point(sp.Rational(170, 130), 0, classes=["given"], label="D")
-    E = model.set_point(sp.Rational(255, 130), sp.Rational(94, 130), classes=["given"], label="E")
-    F = model.set_point(sp.Rational(337, 130), 0, classes=["given"], label="F")
+    H_l = model.set_point(25.0, -44.5, classes=["given"], ID="H")
+    H_r = model.set_point(124.0, -44.5, ID="H_r")
 
-    G = model.set_point(sp.Rational(378, 130), 0, classes=["given"], label="G")
-    H = model.set_point(sp.Rational(414, 130), sp.Rational(116, 130), classes=["given"], label="H")
-    K = model.set_point(sp.Rational(453, 130), 0, classes=["given"], label="K")
+    # Line BG divided at C
+    B = model.set_point(211.0, -17.5, classes=["given"], ID="B")
+    C = model.set_point(244.0, -17.5, classes=["given"], ID="C")
+    G = model.set_point(372.0, -17.5, classes=["given"], ID="G")
+
+    # Number line ED divided at F
+    E = model.set_point(238.0, -44.5, classes=["given"], ID="E")
+    F = model.set_point(286.0, -44.5, classes=["given"], ID="F")
+    D = model.set_point(363.0, -44.5, classes=["given"], ID="D")
+
+    # Base lines
+    model.construct_line(A_l, A_r)
+    model.construct_line(H_l, H_r)
+    model.construct_line(B, G)
+    model.construct_line(E, D)
 
     # Segments
-    model.set_segment(A, B)
+    model.set_segment(A_l, A_r)
+    model.set_segment(H_l, H_r)
+    model.set_segment(B, G)
     model.set_segment(B, C)
-    model.set_segment(A, C)
-
-    model.set_segment(D, E)
+    model.set_segment(C, G)
+    model.set_segment(E, D)
     model.set_segment(E, F)
-    model.set_segment(D, F)
+    model.set_segment(F, D)
 
-    model.set_segment(G, H)
-    model.set_segment(H, K)
-    model.set_segment(G, K)
-
-    # Triangles
-    model.set_polygon([A, B, C])
-    model.set_polygon([D, E, F])
-    model.set_polygon([G, H, K])
+    # Collinear sections
+    model.set_section([B, C, G])
+    model.set_section([E, F, D])
 
     return model
 

@@ -1,28 +1,20 @@
 :canonical_id: G.481
-:original_id: XI.34
+:original_id: X.95
+:title: G.481 area contained rational
 :volume: III
-:book: XI
+:book: X
 :type: prop
 
-G.481 — Code
-============
+G.481 area contained rational — Code
+====================================
 
-.. rubric:: `XI.34 <https://geometor.github.io/euclid/heath/volume_III/book_xi/propositions/34/>`_
+.. rubric:: `X.95 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/095/>`_
 
 .. enunciation::
 
-   In equal parallelepipedal solids the bases are reciprocally proportional to the heights; and those parallelepipedal solids in which the bases are reciprocally proportional to the heights are equal.
-
-.. rubric:: ``g1.py``
+   If an area be contained by a :term:`rational <G.391>` :term:`segment <G.4>` and a :term:`fifth apotome <G.473>`, the “side” of the area is a segment which produces with a :term:`rational area <G.392>` a medial whole.
 
 .. picture:: g1.svg
 
 .. literalinclude:: g1.py
-   :language: python
-
-.. rubric:: ``g2.py``
-
-.. picture:: g2.svg
-
-.. literalinclude:: g2.py
    :language: python

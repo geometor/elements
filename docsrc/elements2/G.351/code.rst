@@ -1,17 +1,18 @@
 :canonical_id: G.351
-:original_id: X.36
-:volume: III
-:book: X
+:original_id: IX.21
+:title: G.351 many even numbers
+:volume: II
+:book: IX
 :type: prop
 
-G.351 — Code
-============
+G.351 many even numbers — Code
+==============================
 
-.. rubric:: `X.36 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/036/>`_
+.. rubric:: `IX.21 <https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/21/>`_
 
 .. enunciation::
 
-   If two rational straight lines commensurable in square only be added together, the whole is irrational; and let it be called:term:`**binomial** <binomial>`.
+   If as many :term:`even numbers <G.302>` as we please be added together, the whole is even.
 
 .. picture:: g1.svg
 

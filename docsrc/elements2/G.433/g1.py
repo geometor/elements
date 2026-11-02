@@ -1,4 +1,4 @@
-"""Programmatic construction for Book X, Proposition 106 (X.106)."""
+"""Programmatic construction for Book X, Proposition 53 (X.53)."""
 
 from __future__ import annotations
 
@@ -6,34 +6,50 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0237.g1 using geometor.model."""
-    model = Model("X.106")
+    """Construct the figure 0116.g1 using geometor.model."""
+    model = Model("X.53")
 
-    # Line AE divided at B
-    A = model.set_point(35.0, -22.5, classes=["given"], ID="A")
-    B = model.set_point(103.0, -22.5, classes=["given"], ID="B")
-    E = model.set_point(149.0, -22.5, classes=["given"], ID="E")
+    # Number line AB divided at C
+    A = model.set_point(22.5, -18.0, classes=["given"], ID="A")
+    C = model.set_point(22.5, -93.0, classes=["given"], ID="C")
+    B = model.set_point(22.5, -144.0, classes=["given"], ID="B")
 
-    # Line CF divided at D
-    C = model.set_point(17.0, -52.5, classes=["given"], ID="C")
-    D = model.set_point(101.0, -52.5, classes=["given"], ID="D")
-    F = model.set_point(176.0, -52.5, classes=["given"], ID="F")
+    # Single-letter magnitude segments D, E, K
+    D_t = model.set_point(63.5, -20.0, classes=["given"], ID="D")
+    D_b = model.set_point(63.5, -93.0, ID="D_b")
+
+    E_t = model.set_point(95.5, -21.0, classes=["given"], ID="E")
+    E_b = model.set_point(95.5, -92.0, ID="E_b")
+
+    K_t = model.set_point(94.5, -116.0, classes=["given"], ID="K")
+    K_b = model.set_point(94.5, -177.0, ID="K_b")
+
+    # Line FH divided at G
+    F = model.set_point(138.0, -20.0, classes=["given"], ID="F")
+    G = model.set_point(138.0, -113.0, classes=["given"], ID="G")
+    H = model.set_point(138.0, -192.0, classes=["given"], ID="H")
 
     # Base lines
-    model.construct_line(A, E)
-    model.construct_line(C, F)
+    model.construct_line(A, B)
+    model.construct_line(D_t, D_b)
+    model.construct_line(E_t, E_b)
+    model.construct_line(K_t, K_b)
+    model.construct_line(F, H)
 
     # Segments
-    model.set_segment(A, E)
     model.set_segment(A, B)
-    model.set_segment(B, E)
-    model.set_segment(C, F)
-    model.set_segment(C, D)
-    model.set_segment(D, F)
+    model.set_segment(A, C)
+    model.set_segment(C, B)
+    model.set_segment(D_t, D_b)
+    model.set_segment(E_t, E_b)
+    model.set_segment(K_t, K_b)
+    model.set_segment(F, H)
+    model.set_segment(F, G)
+    model.set_segment(G, H)
 
-    # Sections
-    model.set_section([A, B, E])
-    model.set_section([C, D, F])
+    # Collinear sections
+    model.set_section([A, C, B])
+    model.set_section([F, G, H])
 
     return model
 

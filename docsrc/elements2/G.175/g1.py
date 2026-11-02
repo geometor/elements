@@ -1,7 +1,4 @@
-"""Programmatic construction for Book VI, Proposition 12 (VI.12).
-
-To three given straight lines to find a fourth proportional.
-"""
+"""Programmatic construction for Book V, Proposition 3 (V.3)."""
 
 from __future__ import annotations
 
@@ -9,55 +6,47 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure for 0221.g1 (VI.12) using geometor.model."""
-    model = Model("VI.12")
+    """Construct the figure 0147.g1 using geometor.model."""
+    model = Model("V.3")
 
-    # 1. Points
-    # Standalone given straight lines A, B, C
-    A1 = model.set_point(212.0, -64.0, classes=["given"], ID="A")
-    A2 = model.set_point(306.0, -64.0, classes=["given"])
-    B1 = model.set_point(212.0, -86.0, classes=["given"], ID="B")
-    B2 = model.set_point(274.0, -86.0, classes=["given"])
-    C1 = model.set_point(212.0, -108.0, classes=["given"], ID="C")
-    C2 = model.set_point(301.0, -108.0, classes=["given"])
+    # Single-letter magnitudes A, B, C, D
+    A_l = model.set_point(33.0, -20.0, classes=["given"], ID="A")
+    A_r = model.set_point(183.0, -20.0, ID="A_r")
+    B_l = model.set_point(33.0, -49.0, classes=["given"], ID="B")
+    B_r = model.set_point(83.0, -49.0, ID="B_r")
+    C_l = model.set_point(33.0, -107.0, classes=["given"], ID="C")
+    C_r = model.set_point(135.0, -107.0, ID="C_r")
+    D_l = model.set_point(33.0, -132.0, classes=["given"], ID="D")
+    D_r = model.set_point(67.0, -132.0, ID="D_r")
 
-    # Main triangle D, E, F, G, H
-    D = model.set_point(19.0, -149.0, classes=["given"], ID="D")
-    G = model.set_point(113.64, -76.2, ID="G")
-    E = model.set_point(176.17, -28.1, ID="E")
-    H = model.set_point(108.0, -149.0, ID="H")
-    F = model.set_point(166.8, -149.0, ID="F")
+    # Subdivided magnitudes EF (at K) and GH (at L)
+    E = model.set_point(33.0, -80.0, classes=["given"], ID="E")
+    K = model.set_point(183.0, -80.0, ID="K")
+    F = model.set_point(328.0, -80.0, classes=["given"], ID="F")
 
-    # 2. Construction Lines
-    model.construct_line(D, E)
-    model.construct_line(D, F)
+    G = model.set_point(33.0, -160.0, classes=["given"], ID="G")
+    L = model.set_point(135.0, -160.0, ID="L")
+    H = model.set_point(237.0, -160.0, classes=["given"], ID="H")
 
-    # 3. Segments
-    model.set_segment(A1, A2)
-    model.set_segment(B1, B2)
-    model.set_segment(C1, C2)
+    # Base lines
+    model.construct_line(E, F)
+    model.construct_line(G, H)
 
-    model.set_segment(D, E)
-    model.set_segment(D, G)
-    model.set_segment(G, E)
-
-    model.set_segment(D, F)
-    model.set_segment(D, H)
-    model.set_segment(H, F)
-
-    model.set_segment(G, H)
+    # Segments
+    model.set_segment(A_l, A_r)
+    model.set_segment(B_l, B_r)
     model.set_segment(E, F)
+    model.set_segment(E, K)
+    model.set_segment(K, F)
+    model.set_segment(C_l, C_r)
+    model.set_segment(D_l, D_r)
+    model.set_segment(G, H)
+    model.set_segment(G, L)
+    model.set_segment(L, H)
 
-    # 4. Collinear Sections
-    model.set_section([D, G, E])
-    model.set_section([D, H, F])
-
-    # 5. Polygons
-    model.set_polygon([D, E, F])
-    model.set_polygon([D, G, H])
-
-    # 6. Angles / Wedges
-    model.set_wedge(D, E, E, F)
+    # Collinear sections
+    model.set_section([E, K, F])
+    model.set_section([G, L, H])
 
     return model
 

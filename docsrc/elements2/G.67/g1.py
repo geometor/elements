@@ -1,4 +1,7 @@
-"""Programmatic construction for Book II, Proposition 6 (II.6)."""
+"""Programmatic construction for Book I, I.38 (I.38).
+
+Triangles which are on equal bases and in the same parallels are equal to one another.
+"""
 
 from __future__ import annotations
 
@@ -6,86 +9,53 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure for 0400.g1 (II.6) using geometor.model."""
-    model = Model("II.6")
+    """Construct the figure for 0347.g1 (I.38) using geometor.model."""
+    model = Model("I.38")
 
     # 1. Points
-    A = model.set_point(18.5, -29.5, classes=["given"], ID="A")
-    C = model.set_point(112.5, -29.5, classes=["given"], ID="C")
-    B = model.set_point(207.5, -29.5, classes=["given"], ID="B")
-    D = model.set_point(244.5, -29.5, classes=["given"], ID="D")
+    G = model.set_point(43.5, -31, ID="G")
+    A = model.set_point(128, -31, classes=["given"], ID="A")
+    D = model.set_point(150.5, -31, classes=["given"], ID="D")
+    H = model.set_point(234.5, -31, ID="H")
+    B = model.set_point(28, -101, classes=["given"], ID="B")
+    C = model.set_point(112, -101, classes=["given"], ID="C")
+    E = model.set_point(189, -101, classes=["given"], ID="E")
+    F = model.set_point(273, -101, classes=["given"], ID="F")
+    G0 = model.set_point(40, -31, ID="G0")
+    H0 = model.set_point(240, -31, ID="H0")
 
-    K = model.set_point(18.5, -68.5, ID="K")
-    L = model.set_point(112.5, -68.5, ID="L")
-    H = model.set_point(207.5, -68.5, ID="H")
-    M = model.set_point(244.5, -68.5, ID="M")
+    # 2. Infinite / Extended Construction Lines
+    model.construct_line(G0, H0)
 
-    E = model.set_point(112.5, -164.5, ID="E")
-    G = model.set_point(207.5, -164.5, ID="G")
-    F = model.set_point(244.5, -164.5, ID="F")
-
-    # Gnomon markers
-    N = model.set_point(160.0, -49.0, ID="N")
-    O = model.set_point(225.0, -50.0, ID="O")
-    P = model.set_point(226.0, -116.0, ID="P")
-
-    # 2. Segments
-    model.set_segment(A, C)
-    model.set_segment(C, B)
-    model.set_segment(B, D)
-    model.set_segment(A, B)
-    model.set_segment(C, D)
+    # 3. Segments
+    model.set_segment(G, H)
+    model.set_segment(G, A)
     model.set_segment(A, D)
-
-    model.set_segment(K, L)
-    model.set_segment(L, H)
-    model.set_segment(H, M)
-    model.set_segment(K, H)
-    model.set_segment(L, M)
-    model.set_segment(K, M)
-
-    model.set_segment(E, G)
-    model.set_segment(G, F)
-    model.set_segment(E, F)
-
-    model.set_segment(A, K)
-    model.set_segment(C, L)
-    model.set_segment(L, E)
-    model.set_segment(C, E)
-    model.set_segment(B, H)
-    model.set_segment(H, G)
-    model.set_segment(B, G)
-    model.set_segment(D, M)
-    model.set_segment(M, F)
-    model.set_segment(D, F)
-
     model.set_segment(D, H)
-    model.set_segment(H, E)
+    model.set_segment(B, F)
+    model.set_segment(B, C)
+    model.set_segment(C, E)
+    model.set_segment(E, F)
+    model.set_segment(B, G)
+    model.set_segment(A, B)
+    model.set_segment(C, A)
     model.set_segment(D, E)
+    model.set_segment(D, F)
+    model.set_segment(F, H)
 
-    # 3. Collinear Sections
-    model.set_section([A, C, B])
-    model.set_section([C, B, D])
-    model.set_section([A, B, D])
-    model.set_section([K, L, H])
-    model.set_section([L, H, M])
-    model.set_section([E, G, F])
-    model.set_section([C, L, E])
-    model.set_section([B, H, G])
-    model.set_section([D, M, F])
-    model.set_section([D, H, E])
+    # 4. Collinear Sections
+    model.set_section([G, A, D])
+    model.set_section([A, D, H])
+    model.set_section([B, C, E])
+    model.set_section([C, E, F])
 
-    # 4. Polygons (Rectangles, Squares, Gnomon)
-    model.set_polygon([C, E, F, D])
-    model.set_polygon([A, C, L, K])
-    model.set_polygon([C, L, H, B])
-    model.set_polygon([B, H, M, D])
-    model.set_polygon([C, L, M, D])
-    model.set_polygon([A, K, M, D])
-    model.set_polygon([L, E, G, H])
-    model.set_polygon([H, G, F, M])
-    model.set_polygon([C, D, F, G, H, L])
-    model.set_polygon([N, O, P])
+    # 5. Polygons (Triangles, Parallelograms, Trapezia, Squares)
+    model.set_polygon([A, B, C])
+    model.set_polygon([D, E, F])
+    model.set_polygon([G, B, C, A])
+    model.set_polygon([D, E, F, H])
+    model.set_polygon([G, A, B])
+    model.set_polygon([D, H, F])
 
     return model
 

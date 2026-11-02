@@ -1,17 +1,18 @@
 :canonical_id: G.266
-:original_id: VIII.24
+:original_id: VII.13
+:title: G.266 numbers proportional proportional
 :volume: II
-:book: VIII
+:book: VII
 :type: prop
 
-G.266 — Code
-============
+G.266 numbers proportional proportional — Code
+==============================================
 
-.. rubric:: `VIII.24 <https://geometor.github.io/euclid/heath/volume_II/book_viii/propositions/24/>`_
+.. rubric:: `VII.13 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/13/>`_
 
 .. enunciation::
 
-   If two numbers have to one another the ratio which a square number has to a square number, and the first be square, the second is square.
+   If four :term:`numbers <G.248>` be :term:`proportional <G.180>`, they is proportional :term:`alternately <G.194>`.
 
 .. picture:: g1.svg
 

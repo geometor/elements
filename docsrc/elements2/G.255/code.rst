@@ -1,17 +1,18 @@
 :canonical_id: G.255
-:original_id: VIII.14
+:original_id: VII.4
+:title: G.255 number part parts
 :volume: II
-:book: VIII
+:book: VII
 :type: prop
 
-G.255 — Code
-============
+G.255 number part parts — Code
+==============================
 
-.. rubric:: `VIII.14 <https://geometor.github.io/euclid/heath/volume_II/book_viii/propositions/14/>`_
+.. rubric:: `VII.4 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/04/>`_
 
 .. enunciation::
 
-   If a square measure a square, the side will also measure the side; and, if the side measure the side, the square will also measure the square.
+   Any :term:`number <G.248>` is either a part or :term:`parts of <G.254>` any number, the less of the greater.
 
 .. picture:: g1.svg
 

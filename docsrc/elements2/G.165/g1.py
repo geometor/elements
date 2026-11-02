@@ -1,7 +1,4 @@
-"""Programmatic construction for Book VI, Proposition 3 (VI.3).
-
-If an angle of a triangle be bisected and the straight line cutting the angle cut the base also, the segments of the base will have the same ratio as the remaining sides of the triangle; and conversely.
-"""
+"""Programmatic construction for Book IV, Proposition 13 (IV.13)."""
 
 from __future__ import annotations
 
@@ -9,51 +6,75 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure for 0202.g1 (VI.3) using geometor.model."""
-    model = Model("VI.3")
+    """Construct the figure 0111.g1 (Circle inscribed in regular pentagon) using geometor.model."""
+    model = Model("IV.13")
 
-    # 1. Points
-    A = model.set_point(169, -71, classes=["given"], ID="A")
-    B = model.set_point(18, -160, classes=["given"], ID="B")
-    C = model.set_point(197, -160, classes=["given"], ID="C")
-    D = model.set_point(134.82, -160, classes=["given"], ID="D")
-    E = model.set_point(249.38, -23.62, ID="E")
+    # Points (y-inverted for standard mathematical coordinates)
+    F = model.set_point(109.00, -114.00, ID="F")
+    A = model.set_point(109.00, -29.95, classes=["given"], ID="A")
+    B = model.set_point(29.06, -88.03, classes=["given"], ID="B")
+    C = model.set_point(59.60, -182.00, classes=["given"], ID="C")
+    D = model.set_point(158.40, -182.00, classes=["given"], ID="D")
+    E = model.set_point(188.94, -88.03, classes=["given"], ID="E")
 
-    # 2. Construction Lines
-    model.construct_line(B, A)
-    model.construct_line(C, E)
+    G = model.set_point(69.03, -58.99, ID="G")
+    H = model.set_point(44.33, -135.01, ID="H")
+    K = model.set_point(109.00, -182.00, ID="K")
+    L = model.set_point(173.67, -135.01, ID="L")
+    M = model.set_point(148.97, -58.99, ID="M")
 
-    # 3. Segments
-    model.set_segment(B, A)
-    model.set_segment(A, E)
-    model.set_segment(B, E)
-    model.set_segment(B, D)
-    model.set_segment(D, C)
+    # Inscribed circle GHKLM
+    model.construct_circle(F, K)
+
+    # Segments
+    model.set_segment(A, B)
     model.set_segment(B, C)
-    model.set_segment(A, D)
-    model.set_segment(A, C)
-    model.set_segment(C, E)
+    model.set_segment(C, D)
+    model.set_segment(D, E)
+    model.set_segment(E, A)
+    model.set_segment(F, A)
+    model.set_segment(F, B)
+    model.set_segment(F, C)
+    model.set_segment(F, D)
+    model.set_segment(F, E)
+    model.set_segment(F, G)
+    model.set_segment(F, H)
+    model.set_segment(F, K)
+    model.set_segment(F, L)
+    model.set_segment(F, M)
+    model.set_segment(C, H)
+    model.set_segment(C, K)
 
-    # 4. Collinear Sections
-    model.set_section([B, A, E])
-    model.set_section([B, D, C])
+    # Collinear sections
+    model.set_section([A, G, B])
+    model.set_section([B, H, C])
+    model.set_section([C, K, D])
+    model.set_section([D, L, E])
+    model.set_section([E, M, A])
 
-    # 5. Polygons (Triangles)
-    model.set_polygon([A, B, C])
-    model.set_polygon([B, C, E])
-    model.set_polygon([A, B, D])
-    model.set_polygon([A, D, C])
-    model.set_polygon([A, C, E])
+    # Polygons
+    model.set_polygon([A, B, C, D, E])
+    model.set_polygon([B, C, F])
+    model.set_polygon([D, C, F])
+    model.set_polygon([F, H, C])
+    model.set_polygon([F, K, C])
 
-    # 6. Angles (Wedges)
+    # Angles (wedges)
+    model.set_wedge(B, C, C, D)
+    model.set_wedge(C, D, D, E)
+    model.set_wedge(B, C, C, F)
+    model.set_wedge(D, C, C, F)
+    model.set_wedge(C, B, B, F)
+    model.set_wedge(C, D, D, F)
     model.set_wedge(A, B, B, C)
-    model.set_wedge(A, B, B, D)
-    model.set_wedge(A, C, C, D)
-    model.set_wedge(C, A, A, E)
-    model.set_wedge(E, A, A, C)
-    model.set_wedge(B, A, A, D)
-    model.set_wedge(D, B, B, A)
-    model.set_wedge(C, B, B, E)
+    model.set_wedge(A, B, B, F)
+    model.set_wedge(B, A, A, E)
+    model.set_wedge(A, E, E, D)
+    model.set_wedge(F, H, H, C)
+    model.set_wedge(F, K, K, C)
+    model.set_wedge(F, G, G, B)
+    model.set_wedge(F, L, L, D)
+    model.set_wedge(F, M, M, E)
 
     return model
 

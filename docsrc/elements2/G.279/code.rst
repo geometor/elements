@@ -1,17 +1,18 @@
 :canonical_id: G.279
-:original_id: IX.9
+:original_id: VII.25
+:title: G.279 numbers prime product
 :volume: II
-:book: IX
+:book: VII
 :type: prop
 
-G.279 — Code
-============
+G.279 numbers prime product — Code
+==================================
 
-.. rubric:: `IX.9 <https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/09/>`_
+.. rubric:: `VII.25 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/25/>`_
 
 .. enunciation::
 
-   If as many numbers as we please beginning from an unit be in continued proportion, and the number after the unit be square, all the rest is square. And, if the number after the unit be cube, all the rest is cube.
+   If two :term:`numbers <G.248>` be :term:`prime to one another <G.249>`, the product of one of them into itself is prime to the remaining one.
 
 .. picture:: g1.svg
 

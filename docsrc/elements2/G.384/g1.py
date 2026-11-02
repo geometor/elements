@@ -1,4 +1,4 @@
-"""Programmatic construction for Book X, Proposition 64 (X.64)."""
+"""Programmatic construction for Book X, Proposition 12 (X.12)."""
 
 from __future__ import annotations
 
@@ -6,85 +6,56 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0146.g1 using geometor.model."""
-    model = Model("X.64")
+    """Construct the figure 0038.g1 using geometor.model."""
+    model = Model("X.12")
 
-    # Side of a rational plus a medial area AB divided at C
-    A = model.set_point(52.0, -131.5, classes=["given"], ID="A")
-    C = model.set_point(139.0, -131.5, classes=["given"], ID="C")
-    B = model.set_point(185.0, -131.5, classes=["given"], ID="B")
+    # Magnitudes A, C, B
+    A_l = model.set_point(27.0, -20.5, classes=["given"], ID="A")
+    A_r = model.set_point(99.0, -20.5, ID="A_r")
 
-    # Parallelogram DF applied to rational straight line DE, divided by KH, ML, NO
-    D = model.set_point(23.5, -18.0, classes=["given"], ID="D")
-    K = model.set_point(101.5, -18.0, ID="K")
-    M = model.set_point(124.5, -18.0, ID="M")
-    N = model.set_point(168.5, -18.0, ID="N")
-    G = model.set_point(212.5, -18.0, ID="G")
+    C_l = model.set_point(136.0, -21.5, classes=["given"], ID="C")
+    C_r = model.set_point(231.0, -21.5, ID="C_r")
 
-    E = model.set_point(23.5, -110.5, classes=["given"], ID="E")
-    H = model.set_point(101.5, -110.5, ID="H")
-    L = model.set_point(124.5, -110.5, ID="L")
-    O = model.set_point(168.5, -110.5, ID="O")
-    F = model.set_point(212.5, -110.5, ID="F")
+    B_l = model.set_point(267.0, -22.5, classes=["given"], ID="B")
+    B_r = model.set_point(381.0, -22.5, ID="B_r")
 
-    # Base lines
-    model.construct_line(A, B)
-    model.construct_line(D, G)
-    model.construct_line(E, F)
-    model.construct_line(D, E)
-    model.construct_line(K, H)
-    model.construct_line(M, L)
-    model.construct_line(N, O)
-    model.construct_line(G, F)
+    # Numbers D, E, F, G
+    D_l = model.set_point(82.0, -42.5, ID="D")
+    D_r = model.set_point(135.0, -42.5, ID="D_r")
 
-    # Segments on AB
-    model.set_segment(A, B)
-    model.set_segment(A, C)
-    model.set_segment(C, B)
+    E_l = model.set_point(82.0, -63.0, ID="E")
+    E_r = model.set_point(148.0, -63.0, ID="E_r")
 
-    # Segments on DEFG
-    model.set_segment(D, G)
-    model.set_segment(D, K)
-    model.set_segment(D, M)
-    model.set_segment(D, N)
-    model.set_segment(K, M)
-    model.set_segment(K, N)
-    model.set_segment(K, G)
-    model.set_segment(M, N)
-    model.set_segment(M, G)
-    model.set_segment(N, G)
+    F_l = model.set_point(80.0, -84.5, ID="F")
+    F_r = model.set_point(117.0, -84.5, ID="F_r")
 
-    model.set_segment(E, F)
-    model.set_segment(E, H)
-    model.set_segment(E, L)
-    model.set_segment(E, O)
-    model.set_segment(H, L)
-    model.set_segment(H, O)
-    model.set_segment(H, F)
-    model.set_segment(L, O)
-    model.set_segment(L, F)
-    model.set_segment(O, F)
+    G_l = model.set_point(80.0, -103.0, ID="G")
+    G_r = model.set_point(125.0, -103.0, ID="G_r")
 
-    model.set_segment(D, E)
-    model.set_segment(K, H)
-    model.set_segment(M, L)
-    model.set_segment(N, O)
-    model.set_segment(G, F)
+    # Numbers H, K, L
+    H_l = model.set_point(271.0, -64.5, ID="H")
+    H_r = model.set_point(319.0, -64.5, ID="H_r")
 
-    # Sections
-    model.set_section([A, C, B])
-    model.set_section([D, K, M])
-    model.set_section([D, M, G])
-    model.set_section([M, N, G])
+    K_l = model.set_point(270.0, -85.5, ID="K")
+    K_r = model.set_point(335.0, -85.5, ID="K_r")
 
-    # Polygons
-    model.set_polygon([D, E, F, G])
-    model.set_polygon([D, E, H, K])
-    model.set_polygon([K, H, L, M])
-    model.set_polygon([D, E, L, M])
-    model.set_polygon([M, L, F, G])
-    model.set_polygon([M, L, O, N])
-    model.set_polygon([N, O, F, G])
+    L_l = model.set_point(271.0, -103.5, ID="L")
+    L_r = model.set_point(349.0, -103.5, ID="L_r")
+
+    for p_l, p_r in [
+        (A_l, A_r),
+        (C_l, C_r),
+        (B_l, B_r),
+        (D_l, D_r),
+        (E_l, E_r),
+        (F_l, F_r),
+        (G_l, G_r),
+        (H_l, H_r),
+        (K_l, K_r),
+        (L_l, L_r),
+    ]:
+        model.construct_line(p_l, p_r)
+        model.set_segment(p_l, p_r)
 
     return model
 

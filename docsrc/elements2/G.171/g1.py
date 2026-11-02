@@ -1,9 +1,4 @@
-"""Programmatic construction for Book VI, Proposition 8 (VI.8).
-
-If in a right-angled triangle a perpendicular be drawn from the right angle
-to the base, the triangles adjoining the perpendicular are similar both to
-the whole and to one another.
-"""
+"""Programmatic construction for Book V, Proposition 1 (V.1)."""
 
 from __future__ import annotations
 
@@ -11,39 +6,41 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure for 0216.g1 (VI.8) using geometor.model."""
-    model = Model("VI.8")
+    """Construct the figure 0144.g1 using geometor.model."""
+    model = Model("V.1")
 
-    # 1. Points
-    A = model.set_point(131.0, -28.0, classes=["given"], ID="A")
-    B = model.set_point(19.0, -118.0, classes=["given"], ID="B")
-    C = model.set_point(203.0, -118.0, classes=["given"], ID="C")
-    D = model.set_point(131.0, -118.0, ID="D")
+    # Points on AB (divided at G) and CD (divided at H)
+    A = model.set_point(30.0, -29.0, classes=["given"], ID="A")
+    G = model.set_point(68.0, -29.0, ID="G")
+    B = model.set_point(106.0, -29.0, classes=["given"], ID="B")
 
-    # 2. Segments
+    C = model.set_point(196.0, -29.0, classes=["given"], ID="C")
+    H = model.set_point(251.0, -29.0, ID="H")
+    D = model.set_point(306.0, -29.0, classes=["given"], ID="D")
+
+    # Single-letter magnitudes E and F
+    E_l = model.set_point(26.0, -63.0, classes=["given"], ID="E")
+    E_r = model.set_point(66.0, -63.0, ID="E_r")
+    F_l = model.set_point(194.0, -63.0, classes=["given"], ID="F")
+    F_r = model.set_point(249.0, -63.0, ID="F_r")
+
+    # Base lines
+    model.construct_line(A, B)
+    model.construct_line(C, D)
+
+    # Whole and subdivided segments
     model.set_segment(A, B)
-    model.set_segment(A, C)
-    model.set_segment(B, C)
-    model.set_segment(B, D)
-    model.set_segment(D, C)
-    model.set_segment(A, D)
+    model.set_segment(A, G)
+    model.set_segment(G, B)
+    model.set_segment(C, D)
+    model.set_segment(C, H)
+    model.set_segment(H, D)
+    model.set_segment(E_l, E_r)
+    model.set_segment(F_l, F_r)
 
-    # 3. Collinear Sections
-    model.set_section([B, D, C])
-
-    # 4. Polygons
-    model.set_polygon([A, B, C])
-    model.set_polygon([A, B, D])
-    model.set_polygon([A, D, C])
-
-    # 5. Angles / Wedges
-    model.set_wedge(A, B, B, C)
-    model.set_wedge(A, B, B, D)
-    model.set_wedge(A, D, D, C)
-    model.set_wedge(B, A, A, C)
-    model.set_wedge(C, A, A, B)
-    model.set_wedge(D, A, A, B)
-    model.set_wedge(D, A, A, C)
+    # Collinear sections
+    model.set_section([A, G, B])
+    model.set_section([C, H, D])
 
     return model
 

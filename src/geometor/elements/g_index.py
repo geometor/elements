@@ -29,6 +29,7 @@ from .graph import (
 from .pseudocode import (
     generate_pseudocode_rst,
     get_semantic_name,
+    get_short_title,
     tighten_enunciation_text,
 )
 
@@ -166,6 +167,7 @@ def clean_plain_excerpt(rst_body: str) -> str:
         return disp.replace("**", "").replace("*", "")
 
     text = re.sub(r":[A-Za-z0-9_.-]+:`([^`]+)`", _unwrap_role, text)
+    text = text.replace("**", "").replace("*", "")
     text = " ".join(line.strip() for line in text.splitlines() if line.strip())
     return text
 
@@ -179,6 +181,123 @@ def wrap_as_enunciation(statement_rst: str) -> str:
         f"   {line}" if line.strip() else "" for line in stripped.splitlines()
     )
     return f".. enunciation::\n\n{indented}"
+
+
+def transform_terms(rst_text: str, unit_id: str, id_map: Dict[str, str]) -> str:
+    """Rewrite :term:`display <slug>` to :term:`display <G.k>` when the slug corresponds to an earlier defined G-node."""
+    import sys as _sys
+
+    project_root = Path(__file__).parent.parent.parent.parent
+    euclid_src = project_root.parent / "euclid" / "src"
+    if euclid_src.is_dir() and str(euclid_src) not in _sys.path:
+        _sys.path.insert(0, str(euclid_src))
+    from geometor.euclid.compile_edition import _SLUG_TO_DEF_ID, _apparatus_slug
+
+    u_key = canonical_sort_key(unit_id)
+    term_re = re.compile(r":term:`([^`<]+?)(?:\s*<([^>]+)>)?`")
+
+    def _repl_term(m: re.Match[str]) -> str:
+        disp = m.group(1).strip()
+        slug = (m.group(2) or _apparatus_slug(disp)).strip()
+        def_id = _SLUG_TO_DEF_ID.get(slug)
+        if def_id and def_id != unit_id and canonical_sort_key(def_id) < u_key:
+            g_target = id_map.get(def_id, def_id)
+            return f":term:`{disp} <{g_target}>`"
+        return m.group(0)
+
+    return term_re.sub(_repl_term, rst_text)
+
+
+def inject_pseudocode_terms(
+    pseudo_rst: str, unit_id: str, id_map: Optional[Dict[str, str]] = None
+) -> str:
+    """Wrap first occurrence of earlier-defined Euclidean terms in :term:`<word> <G.k>` on the Pseudocode track."""
+    import sys as _sys
+
+    project_root = Path(__file__).parent.parent.parent.parent
+    euclid_src = project_root.parent / "euclid" / "src"
+    if euclid_src.is_dir() and str(euclid_src) not in _sys.path:
+        _sys.path.insert(0, str(euclid_src))
+    from geometor.euclid.compile_edition import _COMPILED_DEF_TERM_PATTERNS, _SLUG_TO_DEF_ID, _apparatus_slug
+
+    u_key = canonical_sort_key(unit_id)
+    seen_defs: Set[str] = set()
+
+    existing_term_re = re.compile(r":term:`([^`<]+?)(?:\s*<([^>]+)>)?`")
+
+    def _rewrite_existing_term(m_t: re.Match[str]) -> str:
+        disp = m_t.group(1).strip()
+        slug = (m_t.group(2) or _apparatus_slug(disp)).strip()
+        mapped = _SLUG_TO_DEF_ID.get(slug)
+        if mapped and mapped != unit_id and canonical_sort_key(mapped) < u_key:
+            seen_defs.add(mapped)
+            target_id = id_map.get(mapped, mapped) if id_map else slug
+            return f":term:`{disp} <{target_id}>`"
+        return m_t.group(0)
+
+    pseudo_rst = existing_term_re.sub(_rewrite_existing_term, pseudo_rst)
+
+    extra_e2_patterns = [
+        ("I.def.4", "straight-line", re.compile(r"\bsegments?\b", re.IGNORECASE)),
+    ]
+    all_patterns = list(_COMPILED_DEF_TERM_PATTERNS) + extra_e2_patterns
+
+    protect_re = re.compile(
+        r":[a-zA-Z0-9_-]+:`[^`]+`|\*\*[^*\n]+\*\*|``[^`\n]+``|\$[^$\n]+\$|\[#[^\]]+\]_|<[^>]+>"
+    )
+
+    lines = pseudo_rst.splitlines()
+    new_lines: List[str] = []
+    in_signature = False
+
+    for line in lines:
+        ls = line.strip()
+        if ls.startswith(".. signature::"):
+            in_signature = True
+            new_lines.append(line)
+            continue
+        if in_signature:
+            if not ls or line.startswith(("   ", "\t")):
+                new_lines.append(line)
+                continue
+            in_signature = False
+
+        if not ls or re.match(r"^\.\.\s+[a-zA-Z0-9_-]+::", ls) or re.match(r"^:[a-zA-Z0-9_-]+:", ls):
+            new_lines.append(line)
+            continue
+
+        placeholders: List[str] = []
+
+        def _save_ph(val: str) -> str:
+            idx = len(placeholders)
+            placeholders.append(val)
+            return f"\x00PH{idx}\x00"
+
+        work_line = protect_re.sub(lambda m: _save_ph(m.group(0)), line)
+
+        for def_id, slug, pat in all_patterns:
+            if def_id == unit_id or canonical_sort_key(def_id) >= u_key:
+                continue
+            if pat.search(work_line):
+                def _repl(m_pat: re.Match[str]) -> str:
+                    w = m_pat.group(0)
+                    if def_id not in seen_defs:
+                        seen_defs.add(def_id)
+                        target_id = id_map.get(def_id, def_id) if id_map else slug
+                        return _save_ph(f":term:`{w} <{target_id}>`")
+                    return _save_ph(w)
+
+                work_line = pat.sub(_repl, work_line)
+
+        for _ in range(2):
+            work_line = re.sub(
+                r"\x00PH(\d+)\x00",
+                lambda m: placeholders[int(m.group(1))],
+                work_line,
+            )
+        new_lines.append(work_line)
+
+    return "\n".join(new_lines)
 
 
 def generate_g_dot(
@@ -447,10 +566,15 @@ def generate_g_index(
             subtype=subtype,
             id_map=id_map,
             g_to_sem_name=g_to_sem_name,
+            local_svg_names=local_svg_names,
         )
+        pseudo_content = inject_pseudocode_terms(pseudo_content, node_ref, id_map=id_map)
+        heath_content = transform_terms(heath_content, node_ref, id_map)
 
         excerpt = clean_plain_excerpt(pseudo_content)
         node_data["g_excerpt"] = excerpt
+        short_title = get_short_title(node_ref, node_type, subtype, excerpt)
+        full_title = f"{g_name} {short_title}" if short_title else g_name
 
         # Metadata header for primary track (index.rst)
         meta_lines = [
@@ -458,6 +582,7 @@ def generate_g_index(
             f":number: {g_id}",
             f":canonical_id: {g_name}",
             f":original_id: {node_ref}",
+            f":title: {full_title}",
             f":volume: {volume_roman}",
             f":book: {book_roman}",
             f":type: {node_type}",
@@ -475,7 +600,7 @@ def generate_g_index(
             meta_lines.append(f":excerpt: {excerpt}")
 
         heath_link = f"`{node_ref} <{heath_url}>`_" if heath_url else f"``{node_ref}``"
-        title_underline = "=" * len(g_name)
+        title_underline = "=" * len(full_title)
 
         # Dependency Graph & Required For (shared by Pseudocode and Heath tracks)
         dot_str = generate_g_dot(G, node_ref, id_map)
@@ -493,7 +618,7 @@ def generate_g_index(
         req_for_section = ""
         if ancestors:
             ref_links = [
-                f":ref:`{id_map[a]} <{id_map[a]}>`" if a in id_map else a
+                f":ref:`{id_map[a]} <{id_map[a]}>`" if a in id_map else f":ref:`{a} <{a}>`"
                 for a in ancestors
             ]
             req_for_section = f"Required for\n------------\n\n{', '.join(ref_links)}"
@@ -508,7 +633,7 @@ def generate_g_index(
         # Track 1: index.rst (Pseudocode)
         index_sections: List[str] = [
             "\n".join(meta_lines),
-            f".. _{g_name}:\n.. _{node_ref}:\n\n{g_name}\n{title_underline}",
+            f".. _{g_name}:\n.. _{node_ref}:\n\n{full_title}\n{title_underline}",
             f".. rubric:: {heath_link}",
             pseudo_content,
             dep_graph_section,
@@ -523,6 +648,7 @@ def generate_g_index(
             [
                 f":canonical_id: {g_name}",
                 f":original_id: {node_ref}",
+                f":title: {full_title}",
                 f":volume: {volume_roman}",
                 f":book: {book_roman}",
                 f":type: {node_type}",
@@ -531,7 +657,7 @@ def generate_g_index(
 
         # Track 2: code.rst (Code - only when .py construction scripts exist)
         if local_py_names:
-            code_title = f"{g_name} — Code"
+            code_title = f"{full_title} — Code"
             code_sections: List[str] = [
                 aux_meta,
                 f"{code_title}\n{'=' * len(code_title)}",
@@ -557,7 +683,7 @@ def generate_g_index(
             (node_dir / "code.rst").write_text(rendered_code, encoding="utf-8")
 
         # Track 3: heath.rst (Heath)
-        heath_title = f"{g_name} — Heath"
+        heath_title = f"{full_title} — Heath"
         heath_sections: List[str] = [
             aux_meta,
             f"{heath_title}\n{'=' * len(heath_title)}",

@@ -1,17 +1,18 @@
 :canonical_id: G.358
-:original_id: X.43
-:volume: III
-:book: X
+:original_id: IX.27
+:title: G.358 odd number even
+:volume: II
+:book: IX
 :type: prop
 
-G.358 — Code
-============
+G.358 odd number even — Code
+============================
 
-.. rubric:: `X.43 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/043/>`_
+.. rubric:: `IX.27 <https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/27/>`_
 
 .. enunciation::
 
-   A first bimedial straight line is divided at one point only.
+   If from an :term:`odd number <G.352>` an :term:`even number <G.302>` be subtracted, the remainder is odd.
 
 .. picture:: g1.svg
 

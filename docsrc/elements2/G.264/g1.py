@@ -1,4 +1,4 @@
-"""Programmatic construction for Book VIII, Proposition 22 (VIII.22)."""
+"""Programmatic construction for Book VII, Proposition 11 (VII.11)."""
 
 from __future__ import annotations
 
@@ -6,23 +6,34 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0385.g1 using geometor.model."""
-    model = Model("VIII.22")
+    """Construct the figure 0317.g1 using geometor.model."""
+    model = Model("VII.11")
 
-    # Single-letter horizontal number segments A, B, C
-    A_l = model.set_point(21.0, -14.0, classes=["given"], ID="A")
-    A_r = model.set_point(83.0, -14.0, ID="A_r")
+    # Vertical number segment AB (divided at E)
+    A = model.set_point(24.0, -13.0, classes=["given"], ID="A")
+    E = model.set_point(24.0, -50.0, ID="E")
+    B = model.set_point(24.0, -111.0, classes=["given"], ID="B")
 
-    B_l = model.set_point(22.0, -36.0, classes=["given"], ID="B")
-    B_r = model.set_point(116.0, -36.0, ID="B_r")
+    # Vertical number segment CD (divided at F)
+    C = model.set_point(54.0, -26.0, classes=["given"], ID="C")
+    F = model.set_point(54.0, -57.0, ID="F")
+    D = model.set_point(54.0, -112.0, classes=["given"], ID="D")
 
-    C_l = model.set_point(23.0, -62.0, classes=["given"], ID="C")
-    C_r = model.set_point(162.0, -62.0, ID="C_r")
+    # Base lines
+    model.construct_line(A, B)
+    model.construct_line(C, D)
 
-    # Number segments
-    model.set_segment(A_l, A_r)
-    model.set_segment(B_l, B_r)
-    model.set_segment(C_l, C_r)
+    # Whole and subdivided segments
+    model.set_segment(A, B)
+    model.set_segment(A, E)
+    model.set_segment(E, B)
+    model.set_segment(C, D)
+    model.set_segment(C, F)
+    model.set_segment(F, D)
+
+    # Collinear sections
+    model.set_section([A, E, B])
+    model.set_section([C, F, D])
 
     return model
 

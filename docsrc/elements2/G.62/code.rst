@@ -1,17 +1,18 @@
 :canonical_id: G.62
-:original_id: II.1
+:original_id: I.34
+:title: G.62 opposite sides, angles, and diagonal of a parallelogram
 :volume: I
-:book: II
+:book: I
 :type: prop
 
-G.62 — Code
-===========
+G.62 opposite sides, angles, and diagonal of a parallelogram — Code
+===================================================================
 
-.. rubric:: `II.1 <https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/01/>`_
+.. rubric:: `I.34 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/34/>`_
 
 .. enunciation::
 
-   If there be two straight lines, and one of them be cut into any number of segments whatever, the rectangle contained by the two straight lines is equal to the rectangles contained by the uncut straight line and each of the segments.
+   In a parallelogram, opposite sides and opposite :term:`angles <G.22>` are equal, and the diagonal bisects the area.
 
 .. picture:: g1.svg
 

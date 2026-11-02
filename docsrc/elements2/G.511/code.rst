@@ -1,17 +1,18 @@
 :canonical_id: G.511
-:original_id: XIII.4
+:original_id: XI.9
+:title: G.511 straight lines parallel
 :volume: III
-:book: XIII
+:book: XI
 :type: prop
 
-G.511 — Code
-============
+G.511 straight lines parallel — Code
+====================================
 
-.. rubric:: `XIII.4 <https://geometor.github.io/euclid/heath/volume_III/book_xiii/propositions/04/>`_
+.. rubric:: `XI.9 <https://geometor.github.io/euclid/heath/volume_III/book_xi/propositions/09/>`_
 
 .. enunciation::
 
-   If a straight line be cut in extreme and mean ratio, the square on the whole and the square on the lesser segment together are triple of the square on the greater segment.
+   :term:`Straight lines <G.4>` which are :term:`parallel <G.52>` to the same segment and are not in the same :term:`plane <G.7>` with it are also parallel to one another.
 
 .. picture:: g1.svg
 

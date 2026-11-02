@@ -1,28 +1,20 @@
 :canonical_id: G.478
-:original_id: XI.31
+:original_id: X.92
+:title: G.478 area contained rational
 :volume: III
-:book: XI
+:book: X
 :type: prop
 
-G.478 — Code
-============
+G.478 area contained rational — Code
+====================================
 
-.. rubric:: `XI.31 <https://geometor.github.io/euclid/heath/volume_III/book_xi/propositions/31/>`_
+.. rubric:: `X.92 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/092/>`_
 
 .. enunciation::
 
-   Parallelepipedal solids which are on equal bases and of the same height are equal.
-
-.. rubric:: ``g1.py``
+   If an area be contained by a :term:`rational <G.391>` :term:`segment <G.4>` and a :term:`second apotome <G.456>`, the "side" of the area is a :term:`first apotome <G.454>` of a medial segment.
 
 .. picture:: g1.svg
 
 .. literalinclude:: g1.py
-   :language: python
-
-.. rubric:: ``g2.py``
-
-.. picture:: g2.svg
-
-.. literalinclude:: g2.py
    :language: python

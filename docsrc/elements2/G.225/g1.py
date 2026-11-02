@@ -1,4 +1,9 @@
-"""Programmatic construction for Book VII, Proposition 24 (VII.24)."""
+"""Programmatic construction for Book VI, Proposition 14 (VI.14).
+
+In equal and equiangular parallelograms the sides about the equal angles are
+reciprocally proportional; and equiangular parallelograms in which the sides
+about the equal angles are reciprocally proportional are equal.
+"""
 
 from __future__ import annotations
 
@@ -6,35 +11,53 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0331.g1 using geometor.model."""
-    model = Model("VII.24")
+    """Construct the figure for 0223.g1 (VI.14) using geometor.model."""
+    model = Model("VI.14")
 
-    # Single-letter vertical number segments A, B, C, D, E, F
-    A_t = model.set_point(15.0, -11.0, classes=["given"], ID="A")
-    A_b = model.set_point(15.0, -108.0, ID="A_b")
+    # 1. Points
+    A = model.set_point(19.0, -163.0, classes=["given"], ID="A")
+    D = model.set_point(74.0, -163.0, classes=["given"], ID="D")
+    F = model.set_point(47.0, -72.0, classes=["given"], ID="F")
+    B = model.set_point(102.0, -72.0, classes=["given"], ID="B")
+    G = model.set_point(216.0, -72.0, classes=["given"], ID="G")
+    E = model.set_point(115.0, -30.0, classes=["given"], ID="E")
+    C = model.set_point(229.0, -30.0, classes=["given"], ID="C")
+    H = model.set_point(60.0, -30.0, ID="H")
 
-    B_t = model.set_point(39.0, -10.0, classes=["given"], ID="B")
-    B_b = model.set_point(39.0, -87.0, ID="B_b")
+    # 2. Segments
+    model.set_segment(A, D)
+    model.set_segment(F, G)
+    model.set_segment(F, B)
+    model.set_segment(B, G)
+    model.set_segment(H, C)
+    model.set_segment(H, E)
+    model.set_segment(E, C)
 
-    C_t = model.set_point(60.0, -11.0, classes=["given"], ID="C")
-    C_b = model.set_point(60.0, -124.0, ID="C_b")
+    model.set_segment(A, H)
+    model.set_segment(A, F)
+    model.set_segment(F, H)
 
-    D_t = model.set_point(86.0, -10.0, classes=["given"], ID="D")
-    D_b = model.set_point(86.0, -160.0, ID="D_b")
+    model.set_segment(D, E)
+    model.set_segment(D, B)
+    model.set_segment(B, E)
 
-    E_t = model.set_point(109.0, -13.0, classes=["given"], ID="E")
-    E_b = model.set_point(109.0, -91.0, ID="E_b")
+    model.set_segment(G, C)
 
-    F_t = model.set_point(136.0, -16.0, classes=["given"], ID="F")
-    F_b = model.set_point(136.0, -80.0, ID="F_b")
+    # 3. Collinear Sections
+    model.set_section([F, B, G])
+    model.set_section([D, B, E])
+    model.set_section([A, F, H])
+    model.set_section([H, E, C])
 
-    # Number segments
-    model.set_segment(A_t, A_b)
-    model.set_segment(B_t, B_b)
-    model.set_segment(C_t, C_b)
-    model.set_segment(D_t, D_b)
-    model.set_segment(E_t, E_b)
-    model.set_segment(F_t, F_b)
+    # 4. Polygons (Parallelograms)
+    model.set_polygon([F, A, D, B])
+    model.set_polygon([E, B, G, C])
+    model.set_polygon([H, F, B, E])
+
+    # 5. Angles / Wedges
+    model.set_wedge(B, D, D, F)
+    model.set_wedge(B, G, G, E)
+    model.set_wedge(B, F, F, E)
 
     return model
 

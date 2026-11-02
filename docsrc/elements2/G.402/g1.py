@@ -1,4 +1,4 @@
-"""Programmatic construction for Book X, Proposition 81 (X.81)."""
+"""Programmatic construction for Book X, Proposition 28 (X.28)."""
 
 from __future__ import annotations
 
@@ -6,88 +6,38 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0174.g1 using geometor.model."""
-    model = Model("X.81")
+    """Construct the figure 0065.g1 using geometor.model."""
+    model = Model("X.28")
 
-    # Top straight line AD divided at B and C
-    A = model.set_point(16.0, -21.5, classes=["given"], ID="A")
-    B = model.set_point(80.0, -21.5, classes=["given"], ID="B")
-    C = model.set_point(122.0, -21.5, classes=["given"], ID="C")
-    D = model.set_point(154.0, -21.5, classes=["given"], ID="D")
+    # Rational straight lines A, B, C and medial straight lines D, E
+    A_l = model.set_point(31.0, -18.0, classes=["given"], ID="A")
+    A_r = model.set_point(111.0, -18.0, classes=["given"], ID="A_r")
 
-    # Rectangle FEIN divided horizontally by LH and GM
-    F = model.set_point(29.0, -45.5, classes=["given"], ID="F")
-    E = model.set_point(121.0, -45.5, classes=["given"], ID="E")
+    B_l = model.set_point(30.0, -43.5, classes=["given"], ID="B")
+    B_r = model.set_point(156.0, -43.5, classes=["given"], ID="B_r")
 
-    L = model.set_point(29.0, -65.5, ID="L")
-    H = model.set_point(121.0, -65.5, ID="H")
+    C_l = model.set_point(28.0, -65.5, classes=["given"], ID="C")
+    C_r = model.set_point(189.0, -65.5, classes=["given"], ID="C_r")
 
-    G = model.set_point(29.0, -237.0, ID="G")
-    M = model.set_point(121.0, -237.0, ID="M")
+    D_l = model.set_point(218.0, -35.5, ID="D")
+    D_r = model.set_point(319.0, -35.5, ID="D_r")
 
-    I = model.set_point(29.0, -335.0, ID="I")
-    N = model.set_point(121.0, -335.0, ID="N")
+    E_l = model.set_point(218.0, -59.0, ID="E")
+    E_r = model.set_point(347.0, -59.0, ID="E_r")
 
     # Base lines
-    model.construct_line(A, D)
-    model.construct_line(F, E)
-    model.construct_line(L, H)
-    model.construct_line(G, M)
-    model.construct_line(I, N)
-    model.construct_line(F, I)
-    model.construct_line(E, N)
+    model.construct_line(A_l, A_r)
+    model.construct_line(B_l, B_r)
+    model.construct_line(C_l, C_r)
+    model.construct_line(D_l, D_r)
+    model.construct_line(E_l, E_r)
 
-    # Segments on AD
-    model.set_segment(A, D)
-    model.set_segment(A, C)
-    model.set_segment(A, B)
-    model.set_segment(B, D)
-    model.set_segment(B, C)
-    model.set_segment(C, D)
-
-    # Horizontal segments on rectangle FEIN
-    model.set_segment(F, E)
-    model.set_segment(L, H)
-    model.set_segment(G, M)
-    model.set_segment(I, N)
-
-    # Vertical segments on left side FI
-    model.set_segment(F, I)
-    model.set_segment(F, G)
-    model.set_segment(F, L)
-    model.set_segment(L, I)
-    model.set_segment(L, G)
-    model.set_segment(G, I)
-
-    # Vertical segments on right side EN
-    model.set_segment(E, N)
-    model.set_segment(E, M)
-    model.set_segment(E, H)
-    model.set_segment(H, N)
-    model.set_segment(H, M)
-    model.set_segment(M, N)
-
-    # Sections
-    model.set_section([A, B, C])
-    model.set_section([A, B, D])
-    model.set_section([A, C, D])
-    model.set_section([B, C, D])
-    model.set_section([F, L, G])
-    model.set_section([F, L, I])
-    model.set_section([F, G, I])
-    model.set_section([L, G, I])
-    model.set_section([E, H, M])
-    model.set_section([E, H, N])
-    model.set_section([E, M, N])
-    model.set_section([H, M, N])
-
-    # Polygons (rectangles)
-    model.set_polygon([F, E, N, I])
-    model.set_polygon([F, E, M, G])
-    model.set_polygon([F, E, H, L])
-    model.set_polygon([L, H, M, G])
-    model.set_polygon([L, H, N, I])
-    model.set_polygon([G, M, N, I])
+    # Segments
+    model.set_segment(A_l, A_r)
+    model.set_segment(B_l, B_r)
+    model.set_segment(C_l, C_r)
+    model.set_segment(D_l, D_r)
+    model.set_segment(E_l, E_r)
 
     return model
 

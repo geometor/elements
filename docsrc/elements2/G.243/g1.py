@@ -1,4 +1,7 @@
-"""Programmatic construction for Book VIII, Proposition 3 (VIII.3)."""
+"""Programmatic construction for Book VI, Proposition 30 (VI.30).
+
+To cut a given finite straight line AB in extreme and mean ratio at E.
+"""
 
 from __future__ import annotations
 
@@ -6,63 +9,59 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0354.g1 using geometor.model."""
-    model = Model("VIII.3")
+    """Construct the figure for 0273.g1 (VI.30) using geometor.model."""
+    model = Model("VI.30")
 
-    # Single-letter horizontal number segments A, B, C, D, E, F, G, H, K, L, M, N, O
-    A_l = model.set_point(28.0, -15.0, classes=["given"], ID="A")
-    A_r = model.set_point(93.0, -15.0, ID="A_r")
+    # 1. Points
+    A = model.set_point(27.0, -132.0, classes=["given"], ID="A")
+    B = model.set_point(129.0, -132.0, classes=["given"], ID="B")
+    C = model.set_point(27.0, -29.0, ID="C")
+    F = model.set_point(91.0, -29.0, ID="F")
+    H = model.set_point(129.0, -29.0, ID="H")
+    E = model.set_point(91.0, -132.0, ID="E")
+    G = model.set_point(27.0, -196.0, ID="G")
+    D = model.set_point(91.0, -196.0, ID="D")
 
-    B_l = model.set_point(132.0, -15.0, classes=["given"], ID="B")
-    B_r = model.set_point(236.0, -15.0, ID="B_r")
+    # 2. Construction Lines
+    model.construct_line(A, B)
+    model.construct_line(C, G)
+    model.construct_line(F, D)
+    model.construct_line(C, H)
 
-    C_l = model.set_point(256.0, -15.0, classes=["given"], ID="C")
-    C_r = model.set_point(399.0, -15.0, ID="C_r")
+    # 3. Segments
+    model.set_segment(A, E)
+    model.set_segment(E, B)
+    model.set_segment(A, B)
 
-    D_l = model.set_point(94.0, -40.0, classes=["given"], ID="D")
-    D_r = model.set_point(309.0, -40.0, ID="D_r")
+    model.set_segment(C, F)
+    model.set_segment(F, H)
+    model.set_segment(C, H)
 
-    E_l = model.set_point(149.0, -68.0, classes=["given"], ID="E")
-    E_r = model.set_point(172.0, -68.0, ID="E_r")
+    model.set_segment(G, D)
 
-    F_l = model.set_point(226.0, -68.0, classes=["given"], ID="F")
-    F_r = model.set_point(264.0, -68.0, ID="F_r")
+    model.set_segment(C, A)
+    model.set_segment(A, G)
+    model.set_segment(C, G)
 
-    G_l = model.set_point(67.0, -98.0, classes=["given"], ID="G")
-    G_r = model.set_point(104.0, -98.0, ID="G_r")
+    model.set_segment(F, E)
+    model.set_segment(E, D)
+    model.set_segment(F, D)
 
-    H_l = model.set_point(153.0, -98.0, classes=["given"], ID="H")
-    H_r = model.set_point(207.0, -98.0, ID="H_r")
+    model.set_segment(H, B)
+    model.set_segment(B, C)
 
-    K_l = model.set_point(268.0, -98.0, classes=["given"], ID="K")
-    K_r = model.set_point(337.0, -98.0, ID="K_r")
+    # 4. Collinear Sections
+    model.set_section([A, E, B])
+    model.set_section([C, F, H])
+    model.set_section([C, A, G])
+    model.set_section([F, E, D])
 
-    L_l = model.set_point(24.0, -126.0, classes=["given"], ID="L")
-    L_r = model.set_point(90.0, -126.0, ID="L_r")
-
-    M_l = model.set_point(137.0, -126.0, classes=["given"], ID="M")
-    M_r = model.set_point(235.0, -126.0, ID="M_r")
-
-    N_l = model.set_point(260.0, -126.0, classes=["given"], ID="N")
-    N_r = model.set_point(405.0, -126.0, ID="N_r")
-
-    O_l = model.set_point(93.0, -152.0, classes=["given"], ID="O")
-    O_r = model.set_point(302.0, -152.0, ID="O_r")
-
-    # Number segments
-    model.set_segment(A_l, A_r)
-    model.set_segment(B_l, B_r)
-    model.set_segment(C_l, C_r)
-    model.set_segment(D_l, D_r)
-    model.set_segment(E_l, E_r)
-    model.set_segment(F_l, F_r)
-    model.set_segment(G_l, G_r)
-    model.set_segment(H_l, H_r)
-    model.set_segment(K_l, K_r)
-    model.set_segment(L_l, L_r)
-    model.set_segment(M_l, M_r)
-    model.set_segment(N_l, N_r)
-    model.set_segment(O_l, O_r)
+    # 5. Polygons (Squares & Rectangles)
+    model.set_polygon([C, H, B, A])  # Square BC
+    model.set_polygon([C, F, D, G])  # Parallelogram CD
+    model.set_polygon([A, E, D, G])  # Square AD
+    model.set_polygon([C, F, E, A])  # Rectangle CE
+    model.set_polygon([F, H, B, E])  # Remainder BF
 
     return model
 

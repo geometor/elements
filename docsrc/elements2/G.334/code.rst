@@ -1,17 +1,18 @@
 :canonical_id: G.334
-:original_id: X.20
-:volume: III
-:book: X
+:original_id: IX.5
+:title: G.334 cube number multiplying
+:volume: II
+:book: IX
 :type: prop
 
-G.334 — Code
-============
+G.334 cube number multiplying — Code
+====================================
 
-.. rubric:: `X.20 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/020/>`_
+.. rubric:: `IX.5 <https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/05/>`_
 
 .. enunciation::
 
-   If a rational area be applied to a rational straight line, it produces as breadth a straight line rational and commensurable in length with the straight line to which it is applied.
+   If a :term:`cube number <G.311>` by :term:`multiplying <G.269>` any :term:`number <G.248>` make a cube number, the multiplied number is cube.
 
 .. picture:: g1.svg
 

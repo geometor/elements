@@ -1,4 +1,8 @@
-"""Programmatic construction for Book VII, Proposition 28 (VII.28)."""
+"""Programmatic construction for Book VI, Proposition 18 (VI.18 - g1).
+
+Given rectilinear figure CE (quadrilateral CDEF) divided into two triangles
+FCD and FDE by diagonal DF.
+"""
 
 from __future__ import annotations
 
@@ -6,31 +10,36 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0335.g1 using geometor.model."""
-    model = Model("VII.28")
+    """Construct the figure for 0235.g1 (VI.18, given figure CE) using geometor.model."""
+    model = Model("VI.18.g1")
 
-    # Horizontal number segment AC divided at B
-    A = model.set_point(10.0, -12.0, classes=["given"], ID="A")
-    B = model.set_point(138.0, -12.0, classes=["given"], ID="B")
-    C = model.set_point(197.0, -12.0, classes=["given"], ID="C")
+    # 1. Points
+    C = model.set_point(20.0, -129.0, classes=["given"], ID="C")
+    D = model.set_point(135.0, -129.0, classes=["given"], ID="D")
+    E = model.set_point(116.0, -28.0, classes=["given"], ID="E")
+    F = model.set_point(46.0, -70.0, classes=["given"], ID="F")
 
-    # Single-letter horizontal number segment D
-    D_l = model.set_point(9.0, -43.0, classes=["given"], ID="D")
-    D_r = model.set_point(66.0, -43.0, ID="D_r")
+    # 2. Segments
+    model.set_segment(C, D)
+    model.set_segment(D, E)
+    model.set_segment(E, F)
+    model.set_segment(F, C)
+    model.set_segment(D, F)
 
-    # Base line AC
-    model.construct_line(A, C)
+    # 3. Polygons
+    model.set_polygon([C, D, E, F])
+    model.set_polygon([F, C, D])
+    model.set_polygon([F, D, E])
 
-    # Whole and subdivided segments on AC
-    model.set_segment(A, C)
-    model.set_segment(A, B)
-    model.set_segment(B, C)
-
-    # Single-letter segment D
-    model.set_segment(D_l, D_r)
-
-    # Collinear section ABC
-    model.set_section([A, B, C])
+    # 4. Angles / Wedges
+    model.set_wedge(C, F, F, D)
+    model.set_wedge(D, C, C, F)
+    model.set_wedge(F, C, C, D)
+    model.set_wedge(D, F, F, E)
+    model.set_wedge(F, D, D, E)
+    model.set_wedge(E, F, F, D)
+    model.set_wedge(F, C, C, E)
+    model.set_wedge(D, C, C, E)
 
     return model
 

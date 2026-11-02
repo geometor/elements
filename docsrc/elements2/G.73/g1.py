@@ -1,10 +1,6 @@
-"""Programmatic construction for Book II, Proposition 12 (II.12).
+"""Programmatic construction for Book I, I.44 (I.44).
 
-In obtuse-angled triangles the square on the side subtending the obtuse angle
-is greater than the squares on the sides containing the obtuse angle by twice
-the rectangle contained by one of the sides about the obtuse angle, namely that
-on which the perpendicular falls, and the straight line cut off outside by the
-perpendicular towards the obtuse angle.
+To a given straight line to apply, in a given rectilineal angle, a parallelogram equal to a given triangle.
 """
 
 from __future__ import annotations
@@ -13,38 +9,79 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure for Book II, Proposition 12 using geometor.model."""
-    model = Model("II.12")
+    """Construct the figure for 0356.g1 (I.44) using geometor.model."""
+    model = Model("I.44")
 
-    # Obtuse-angled triangle ABC with angle BAC obtuse, CA produced to D,
-    # and BD perpendicular to CD.
-    D = model.set_point(0, 0, ID="D")
-    A = model.set_point(3, 0, classes=["given"], ID="A")
-    C = model.set_point(7, 0, classes=["given"], ID="C")
-    B = model.set_point(0, 4, classes=["given"], ID="B")
+    # 1. Points
+    H = model.set_point(225, -20, ID="H")
+    G = model.set_point(338, -20, ID="G")
+    F = model.set_point(375, -20, ID="F")
+    A = model.set_point(204, -96, classes=["given"], ID="A")
+    B = model.set_point(316, -96, classes=["given"], ID="B")
+    E = model.set_point(353, -96, ID="E")
+    L = model.set_point(196, -121, ID="L")
+    M = model.set_point(308, -121, ID="M")
+    K = model.set_point(345, -121, ID="K")
+    C1 = model.set_point(36, -23, classes=["given"], ID="C1")
+    C2 = model.set_point(10, -97, classes=["given"], ID="C2")
+    C3 = model.set_point(89, -97, classes=["given"], ID="C3")
+    D = model.set_point(184, -76, classes=["given"], ID="D")
+    D1 = model.set_point(176, -23, ID="D1")
+    D2 = model.set_point(129, -109, ID="D2")
 
-    # Line CA produced
-    model.construct_line(C, A)
+    # 3. Segments
+    model.set_segment(C1, C2)
+    model.set_segment(C2, C3)
+    model.set_segment(C3, C1)
+    model.set_segment(D, D1)
+    model.set_segment(D, D2)
+    model.set_segment(H, F)
+    model.set_segment(H, G)
+    model.set_segment(F, G)
+    model.set_segment(A, E)
+    model.set_segment(A, B)
+    model.set_segment(B, E)
+    model.set_segment(L, K)
+    model.set_segment(L, M)
+    model.set_segment(M, K)
+    model.set_segment(H, L)
+    model.set_segment(A, H)
+    model.set_segment(A, L)
+    model.set_segment(G, M)
+    model.set_segment(B, G)
+    model.set_segment(B, M)
+    model.set_segment(F, K)
+    model.set_segment(E, F)
+    model.set_segment(E, K)
+    model.set_segment(H, K)
+    model.set_segment(H, B)
+    model.set_segment(B, K)
 
-    # Segments
-    model.set_segment(B, D)
-    model.set_segment(D, A)
-    model.set_segment(A, C)
-    model.set_segment(D, C)
-    model.set_segment(B, A)
-    model.set_segment(B, C)
+    # 4. Collinear Sections
+    model.set_section([H, G, F])
+    model.set_section([A, B, E])
+    model.set_section([L, M, K])
+    model.set_section([H, A, L])
+    model.set_section([G, B, M])
+    model.set_section([F, E, K])
+    model.set_section([H, B, K])
 
-    # Collinear section D-A-C
-    model.set_section([D, A, C])
+    # 5. Polygons (Triangles, Parallelograms, Trapezia, Squares)
+    model.set_polygon([C1, C2, C3])
+    model.set_polygon([B, E, F, G])
+    model.set_polygon([A, B, M, L])
+    model.set_polygon([H, A, B, G])
+    model.set_polygon([B, M, K, E])
+    model.set_polygon([H, L, K, F])
 
-    # Triangles
-    model.set_polygon([A, B, C])
-    model.set_polygon([A, B, D])
-    model.set_polygon([C, B, D])
-
-    # Angles (obtuse angle BAC and right angle CDB)
-    model.set_wedge(A, B, B, C)
-    model.set_wedge(D, C, C, B)
+    # 6. Angles (Wedges)
+    model.set_wedge(D, D1, D1, D2)
+    model.set_wedge(B, E, E, G)
+    model.set_wedge(H, A, A, F)
+    model.set_wedge(F, H, H, E)
+    model.set_wedge(H, B, B, G)
+    model.set_wedge(F, G, G, E)
+    model.set_wedge(B, A, A, M)
 
     return model
 

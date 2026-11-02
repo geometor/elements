@@ -1,17 +1,18 @@
 :canonical_id: G.265
-:original_id: VIII.23
+:original_id: VII.12
+:title: G.265 there many numbers
 :volume: II
-:book: VIII
+:book: VII
 :type: prop
 
-G.265 — Code
-============
+G.265 there many numbers — Code
+===============================
 
-.. rubric:: `VIII.23 <https://geometor.github.io/euclid/heath/volume_II/book_viii/propositions/23/>`_
+.. rubric:: `VII.12 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/12/>`_
 
 .. enunciation::
 
-   If four numbers be in continued proportion, and the first be cube, the fourth is cube.
+   If there be as many :term:`numbers <G.248>` as we please in proportion, then, as one of the :term:`antecedents <G.181>` is to one of the consequents, so are all the antecedents to all the consequents.
 
 .. picture:: g1.svg
 

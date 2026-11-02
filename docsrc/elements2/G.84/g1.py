@@ -1,81 +1,47 @@
-"""Programmatic construction for Book III, Proposition 9 (III.9).
+"""Programmatic construction for Book II, Proposition 3 (II.3).
 
-If a point D be taken within a circle ABC, and more than two equal straight
-lines DA, DB, DC fall from D on the circle, the point D is the centre of the
-circle ABC (proved via perpendicular bisectors GK of AB and HL of BC).
+If a straight line be cut at random, the rectangle contained by the whole and
+one of the segments is equal to the rectangle contained by the segments and the
+square on the aforesaid segment.
 """
 
 from __future__ import annotations
 
-import sympy as sp
 from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0027.g1 for Book III, Proposition 9."""
-    model = Model("III.9")
+    """Construct the figure for Book II, Proposition 3 using geometor.model."""
+    model = Model("II.3")
 
-    # Circle ABC with centre D at origin and horizontal diameter KG
-    D = model.set_point(0, 0, classes=["given"], ID="D")
-    G = model.set_point(1, 0, ID="G")
-    K = model.set_point(-1, 0, ID="K")
+    # Straight line AB cut at random at C
+    A = model.set_point(18.5, -29.5, classes=["given"], ID="A")
+    C = model.set_point(71.5, -29.5, classes=["given"], ID="C")
+    B = model.set_point(173.5, -29.5, classes=["given"], ID="B")
 
-    model.construct_line(K, G)
-    model.construct_circle(D, G)
-
-    # Vertical chord AB bisected perpendicularly at E(-3/4, 0) by KG
-    E = model.set_point(sp.Rational(-3, 4), 0, label="E")
-    B = model.set_point(sp.Rational(-3, 4), sp.sqrt(7) / 4, classes=["given"], label="B")
-    A = model.set_point(sp.Rational(-3, 4), -sp.sqrt(7) / 4, classes=["given"], label="A")
     model.construct_line(A, B)
-
-    # Point C on circumference just above G
-    C = model.set_point(sp.Rational(199, 200), sp.sqrt(399) / 200, classes=["given"], label="C")
-    model.construct_line(B, C)
-
-    # Midpoint F of BC and perpendicular bisector diameter HL through D and F
-    F = model.set_point((B.x + C.x) / 2, (B.y + C.y) / 2, label="F")
-    model.construct_line(D, F)
-    len_DF = sp.sqrt(F.x**2 + F.y**2)
-    L = model.set_point(F.x / len_DF, F.y / len_DF, ID="L")
-    H = model.set_point(-F.x / len_DF, -F.y / len_DF, ID="H")
-
-    # Equal straight lines DA, DB, DC
-    model.set_segment(D, A)
-    model.set_segment(D, B)
-    model.set_segment(D, C)
-
-    # Chord AB and sub-segments AE, EB
-    model.set_segment(A, E)
-    model.set_segment(E, B)
     model.set_segment(A, B)
-    model.set_section([A, E, B])
+    model.set_segment(A, C)
+    model.set_segment(C, B)
 
-    # Chord BC and sub-segments BF, FC
-    model.set_segment(B, F)
-    model.set_segment(F, C)
-    model.set_segment(B, C)
-    model.set_section([B, F, C])
+    # Square CDEB described on CB [I. 46], ED drawn through to F, and AF parallel to CD/BE [I. 31]
+    F = model.set_point(18.5, -129.5, ID="F")
+    D = model.set_point(71.5, -129.5, ID="D")
+    E = model.set_point(173.5, -129.5, ID="E")
 
-    # Diameter KG and sub-segments KE, ED, DG
-    model.set_segment(K, E)
-    model.set_segment(E, D)
-    model.set_segment(D, G)
-    model.set_segment(K, D)
-    model.set_segment(E, G)
-    model.set_segment(K, G)
+    model.construct_line(E, F)
+    model.set_segment(F, E)
+    model.set_segment(F, D)
+    model.set_segment(D, E)
 
-    # Diameter HL and sub-segments HD, DF, FL
-    model.set_segment(H, D)
-    model.set_segment(D, F)
-    model.set_segment(F, L)
-    model.set_segment(H, F)
-    model.set_segment(D, L)
-    model.set_segment(H, L)
+    model.set_segment(A, F)
+    model.set_segment(C, D)
+    model.set_segment(B, E)
 
-    # Triangles AED and BED
-    model.set_polygon([A, E, D])
-    model.set_polygon([B, E, D])
+    # Whole rectangle ABEF (AE), rectangle ACDF (AD), and square CDEB (CE / DB)
+    model.set_polygon([A, B, E, F])
+    model.set_polygon([A, C, D, F])
+    model.set_polygon([C, B, E, D])
 
     return model
 

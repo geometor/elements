@@ -1,4 +1,4 @@
-"""Programmatic construction for Book X, Proposition 14 (X.14)."""
+"""Programmatic construction for Book VIII, Proposition 25 (VIII.25)."""
 
 from __future__ import annotations
 
@@ -6,38 +6,35 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0041.g1 using geometor.model."""
-    model = Model("X.14")
+    """Construct the figure 0387.g1 using geometor.model."""
+    model = Model("VIII.25")
 
-    # Vertical straight lines A, B, E, C, D, F
-    A_t = model.set_point(19.5, -12.0, classes=["given"], ID="A")
-    A_b = model.set_point(19.5, -175.0, ID="A_b")
+    # Single-letter horizontal number segments A, B, C, D, E, F
+    A_l = model.set_point(22.0, -14.0, classes=["given"], ID="A")
+    A_r = model.set_point(66.0, -14.0, ID="A_r")
 
-    B_t = model.set_point(44.5, -33.0, classes=["given"], ID="B")
-    B_b = model.set_point(44.5, -175.0, ID="B_b")
+    B_l = model.set_point(21.0, -37.0, classes=["given"], ID="B")
+    B_r = model.set_point(153.0, -37.0, ID="B_r")
 
-    E_t = model.set_point(78.5, -16.0, ID="E")
-    E_b = model.set_point(78.5, -98.0, ID="E_b")
+    C_l = model.set_point(22.0, -58.0, classes=["given"], ID="C")
+    C_r = model.set_point(88.0, -58.0, ID="C_r")
 
-    C_t = model.set_point(103.5, -34.0, classes=["given"], ID="C")
-    C_b = model.set_point(103.5, -172.0, ID="C_b")
+    D_l = model.set_point(22.0, -80.0, classes=["given"], ID="D")
+    D_r = model.set_point(229.0, -80.0, ID="D_r")
 
-    D_t = model.set_point(130.5, -58.0, classes=["given"], ID="D")
-    D_b = model.set_point(130.5, -178.0, ID="D_b")
+    E_l = model.set_point(290.0, -14.0, classes=["given"], ID="E")
+    E_r = model.set_point(356.0, -14.0, ID="E_r")
 
-    F_t = model.set_point(153.5, -18.0, ID="F")
-    F_b = model.set_point(153.5, -91.0, ID="F_b")
+    F_l = model.set_point(290.0, -37.0, classes=["given"], ID="F")
+    F_r = model.set_point(382.0, -37.0, ID="F_r")
 
-    for p_t, p_b in [
-        (A_t, A_b),
-        (B_t, B_b),
-        (E_t, E_b),
-        (C_t, C_b),
-        (D_t, D_b),
-        (F_t, F_b),
-    ]:
-        model.construct_line(p_t, p_b)
-        model.set_segment(p_t, p_b)
+    # Number segments
+    model.set_segment(A_l, A_r)
+    model.set_segment(B_l, B_r)
+    model.set_segment(C_l, C_r)
+    model.set_segment(D_l, D_r)
+    model.set_segment(E_l, E_r)
+    model.set_segment(F_l, F_r)
 
     return model
 

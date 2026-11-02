@@ -1,68 +1,50 @@
-"""Programmatic construction for Book III, Proposition 16 (III.16).
+"""Programmatic construction for Book II, Proposition 12 (II.12).
 
-The straight line drawn at right angles to the diameter of a circle from its
-extremity will fall outside the circle, and into the space between the straight
-line and the circumference another straight line cannot be interposed; further
-the angle of the semicircle is greater, and the remaining angle less, than any
-acute rectilineal angle.
+In obtuse-angled triangles the square on the side subtending the obtuse angle
+is greater than the squares on the sides containing the obtuse angle by twice
+the rectangle contained by one of the sides about the obtuse angle, namely that
+on which the perpendicular falls, and the straight line cut off outside by the
+perpendicular towards the obtuse angle.
 """
 
 from __future__ import annotations
 
-import sympy as sp
 from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure for Book III, Proposition 16 using geometor.model."""
-    model = Model("III.16")
+    """Construct the figure for Book II, Proposition 12 using geometor.model."""
+    model = Model("II.12")
 
-    # 1. Circle ABC about centre D and diameter AB
-    D = model.set_point(0, 0, classes=["given"], ID="D")
-    B = model.set_point(0, 1, classes=["given"], ID="B")
-    A = model.set_point(0, -1, classes=["given"], ID="A")
-    circle_ABC = model.construct_circle(D, A)
+    # Obtuse-angled triangle ABC with angle BAC obtuse, CA produced to D,
+    # and BD perpendicular to CD.
+    D = model.set_point(0, 0, ID="D")
+    A = model.set_point(3, 0, classes=["given"], ID="A")
+    C = model.set_point(7, 0, classes=["given"], ID="C")
+    B = model.set_point(0, 4, classes=["given"], ID="B")
 
+    # Line CA produced
+    model.construct_line(C, A)
+
+    # Segments
     model.set_segment(B, D)
     model.set_segment(D, A)
-    model.set_segment(B, A)
-    model.set_section([B, D, A])
-
-    # 2. First reductio: suppose perpendicular from A falls within as CA; join DC
-    cx = sp.Rational(-27, 35)
-    cy = -sp.sqrt(1 - cx**2)
-    C = model.set_point(cx, cy, ID="C")
-    model.set_segment(C, A)
+    model.set_segment(A, C)
     model.set_segment(D, C)
-    model.set_polygon([A, C, D])
+    model.set_segment(B, A)
+    model.set_segment(B, C)
 
-    # 3. Tangent AE drawn from A at right angles to AB
-    E = model.set_point(sp.Rational(-67, 35), -1, label="E")
-    line_AE = model.construct_line(A, E)
-    model.set_segment(A, E)
+    # Collinear section D-A-C
+    model.set_section([D, A, C])
 
-    # 4. Second reductio: suppose FA is interposed between AE and circumference CHA,
-    #    and DG is drawn from D perpendicular to FA, cutting circumference CHA at H.
-    F = model.set_point(sp.Rational(-65, 35), sp.Rational(-51, 70), label="F")
-    line_AF = model.construct_line(A, F)
+    # Triangles
+    model.set_polygon([A, B, C])
+    model.set_polygon([A, B, D])
+    model.set_polygon([C, B, D])
 
-    # Point G on FA and point H where DG meets the circumference CHA
-    t_G = sp.Rational(16, 65)
-    G = model.set_point(F.x * t_G, -1 + (F.y + 1) * t_G, label="G")
-    len_DG = sp.sqrt(G.x**2 + G.y**2)
-    H = model.set_point(G.x / len_DG, G.y / len_DG, ID="H")
-
-    model.set_segment(A, G)
-    model.set_segment(G, F)
-    model.set_segment(F, A)
-    model.set_section([A, G, F])
-
-    model.set_segment(D, H)
-    model.set_segment(H, G)
-    model.set_segment(D, G)
-    model.set_section([D, H, G])
-
-    model.set_polygon([A, G, D])
+    # Angles (obtuse angle BAC and right angle CDB)
+    model.set_wedge(A, B, B, C)
+    model.set_wedge(D, C, C, B)
 
     return model
 

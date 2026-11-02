@@ -1,4 +1,4 @@
-"""Programmatic construction for Book X, Proposition 100 (X.100)."""
+"""Programmatic construction for Book X, Proposition 50 (X.50)."""
 
 from __future__ import annotations
 
@@ -6,67 +6,50 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0225.g1 using geometor.model."""
-    model = Model("X.100")
+    """Construct the figure 0110.g1 using geometor.model."""
+    model = Model("X.50")
 
-    # Top segment AG divided at B
-    A = model.set_point(124.0, -21.0, classes=["given"], ID="A")
-    B = model.set_point(211.0, -21.0, classes=["given"], ID="B")
-    G = model.set_point(262.0, -21.0, classes=["given"], ID="G")
+    # Single-letter magnitude segments E, K, D
+    E_l = model.set_point(17.0, -31.5, classes=["given"], ID="E")
+    E_r = model.set_point(89.0, -31.5, ID="E_r")
 
-    # Rectangle CDLM divided by vertical lines FE, NO, KH
-    C = model.set_point(19.5, -56.5, classes=["given"], ID="C")
-    F = model.set_point(133.5, -56.5, ID="F")
-    N = model.set_point(244.5, -56.5, ID="N")
-    K = model.set_point(315.5, -56.5, ID="K")
-    M = model.set_point(356.5, -56.5, ID="M")
+    K_l = model.set_point(123.0, -20.5, classes=["given"], ID="K")
+    K_r = model.set_point(182.0, -20.5, ID="K_r")
 
-    D = model.set_point(19.5, -120.5, classes=["given"], ID="D")
-    E = model.set_point(133.5, -120.5, ID="E")
-    O = model.set_point(244.5, -120.5, ID="O")
-    H = model.set_point(315.5, -120.5, ID="H")
-    L = model.set_point(356.5, -120.5, ID="L")
+    D_l = model.set_point(252.0, -41.0, classes=["given"], ID="D")
+    D_r = model.set_point(321.0, -41.0, ID="D_r")
+
+    # Number line AB divided at C
+    A = model.set_point(221.0, -20.5, classes=["given"], ID="A")
+    C = model.set_point(297.0, -20.5, classes=["given"], ID="C")
+    B = model.set_point(343.0, -20.5, classes=["given"], ID="B")
+
+    # Line FH divided at G
+    F = model.set_point(20.0, -58.5, classes=["given"], ID="F")
+    G = model.set_point(123.0, -58.5, classes=["given"], ID="G")
+    H = model.set_point(190.0, -58.5, classes=["given"], ID="H")
 
     # Base lines
-    for p1, p2 in [
-        (A, G),
-        (C, M),
-        (D, L),
-        (C, D),
-        (F, E),
-        (N, O),
-        (K, H),
-        (M, L),
-    ]:
-        model.construct_line(p1, p2)
+    model.construct_line(E_l, E_r)
+    model.construct_line(K_l, K_r)
+    model.construct_line(A, B)
+    model.construct_line(D_l, D_r)
+    model.construct_line(F, H)
 
-    # Segments on AG and CDLM
-    for pts in ([A, B, G], [C, F, N, K, M], [D, E, O, H, L]):
-        for i in range(len(pts)):
-            for j in range(i + 1, len(pts)):
-                model.set_segment(pts[i], pts[j])
-
-    # Vertical segments on CDLM
-    for p1, p2 in [(C, D), (F, E), (N, O), (K, H), (M, L)]:
-        model.set_segment(p1, p2)
+    # Segments
+    model.set_segment(E_l, E_r)
+    model.set_segment(K_l, K_r)
+    model.set_segment(A, B)
+    model.set_segment(A, C)
+    model.set_segment(C, B)
+    model.set_segment(D_l, D_r)
+    model.set_segment(F, H)
+    model.set_segment(F, G)
+    model.set_segment(G, H)
 
     # Collinear sections
-    model.set_section([A, B, G])
-    model.set_section([C, F, M])
-    model.set_section([C, K, M])
-    model.set_section([F, N, M])
-
-    # Polygons in CDLM
-    model.set_polygon([C, M, L, D])  # CL / DM
-    model.set_polygon([C, F, E, D])  # CE
-    model.set_polygon([C, K, H, D])  # CH
-    model.set_polygon([K, M, L, H])  # KL
-    model.set_polygon([F, M, L, E])  # FL
-    model.set_polygon([F, N, O, E])  # FO
-    model.set_polygon([N, M, L, O])  # NL / LN
-    model.set_polygon([N, K, H, O])  # NH
-    model.set_polygon([C, N, O, D])  # CO
-    model.set_polygon([F, K, H, E])  # FH
+    model.set_section([A, C, B])
+    model.set_section([F, G, H])
 
     return model
 

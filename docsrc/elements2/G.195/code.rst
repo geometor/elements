@@ -1,17 +1,18 @@
 :canonical_id: G.195
-:original_id: VI.30
+:original_id: V.16
+:title: G.195 magnitudes proportional proportional
 :volume: II
-:book: VI
+:book: V
 :type: prop
 
-G.195 — Code
-============
+G.195 magnitudes proportional proportional — Code
+=================================================
 
-.. rubric:: `VI.30 <https://geometor.github.io/euclid/heath/volume_II/book_vi/propositions/30/>`_
+.. rubric:: `V.16 <https://geometor.github.io/euclid/heath/volume_II/book_v/propositions/16/>`_
 
 .. enunciation::
 
-   Cut a given segment in extreme and mean ratio.
+   If four magnitudes be :term:`proportional <G.180>`, they is proportional :term:`alternately <G.194>`.
 
 .. picture:: g1.svg
 

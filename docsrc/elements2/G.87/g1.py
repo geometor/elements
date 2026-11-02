@@ -1,58 +1,88 @@
-"""Programmatic construction for Book III, Proposition 12 (III.12).
+"""Programmatic construction for Book II, Proposition 5 (II.5).
 
-If two circles touch one another externally, the straight line joining their
-centres will pass through the point of contact (reductio ad absurdum figure).
+If a straight line be cut into equal and unequal segments, the rectangle
+contained by the unequal segments of the whole together with the square on the
+straight line between the points of section is equal to the square on the half.
 """
 
 from __future__ import annotations
 
-import sympy as sp
 from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0034.g1 using geometor.model."""
-    model = Model("III.12")
+    """Construct the figure for Book II, Proposition 5 using geometor.model."""
+    model = Model("II.5")
 
-    # Point of external contact A and true circle centres for the two tangent circles
-    A = model.set_point(0, 0, classes=["given"], ID="A")
-    O1 = model.set_point(-49, 23, classes=["auxiliary"])
-    O2 = model.set_point(60, -28, classes=["auxiliary"])
+    # Straight line AB bisected at C and cut unequally at D
+    A = model.set_point(20.5, -28.5, classes=["given"], ID="A")
+    C = model.set_point(157.5, -28.5, classes=["given"], ID="C")
+    D = model.set_point(196.5, -28.5, classes=["given"], ID="D")
+    B = model.set_point(294.5, -28.5, classes=["given"], ID="B")
 
-    # Circle ABC and circle ADE touching externally at A
-    model.construct_circle(O1, A)
-    model.construct_circle(O2, A)
-
-    B = model.set_point(-49, 23 + sp.sqrt(2930), label="B")
-    E = model.set_point(60 + sp.sqrt(4384), -28, label="E")
-
-    # Assumed centres F and G in the reductio proof
-    F = model.set_point(-53, 12, classes=["given"], ID="F")
-    G = model.set_point(47, -52, classes=["given"], ID="G")
-
-    # Straight line FCDG joining the assumed centres F and G
-    model.construct_line(F, G)
-
-    # Intersections C (on circle ABC) and D (on circle ADE) along FG
-    C = model.set_point(sp.Rational(-53, 5), sp.Rational(-76, 5), label="C")
-    D = model.set_point(sp.Rational(-28, 5), sp.Rational(-92, 5), label="D")
-
-    # Radii joined to the point of contact A
-    model.set_segment(F, A)
-    model.set_segment(G, A)
-
-    # Collinear segments along FCDG
-    model.set_segment(F, C)
+    model.construct_line(A, B)
+    model.set_segment(A, B)
+    model.set_segment(A, C)
+    model.set_segment(C, B)
+    model.set_segment(A, D)
+    model.set_segment(D, B)
     model.set_segment(C, D)
-    model.set_segment(D, G)
-    model.set_segment(F, D)
-    model.set_segment(C, G)
-    model.set_segment(F, G)
-    model.set_section([F, C, G])
-    model.set_section([F, D, G])
 
-    # Triangle FAG formed in the reductio hypothesis
-    model.set_polygon([F, A, G])
+    # Square CEFB described on CB [I. 46], diagonal BE joined
+    E = model.set_point(157.5, -166.5, ID="E")
+    F = model.set_point(294.5, -166.5, ID="F")
+    model.set_segment(C, E)
+    model.set_segment(E, F)
+    model.set_segment(B, F)
+    model.set_polygon([C, E, F, B])
+
+    model.construct_line(B, E)
+    model.set_segment(B, E)
+
+    # Parallel DG to CE/BF through D, meeting BE at H and EF at G [I. 31]
+    H = model.set_point(196.5, -126.5, ID="H")
+    G = model.set_point(196.5, -166.5, ID="G")
+    model.construct_line(D, G)
+    model.set_segment(D, G)
+    model.set_segment(D, H)
+    model.set_segment(H, G)
+    model.set_segment(E, G)
+    model.set_segment(G, F)
+    model.set_segment(B, H)
+    model.set_segment(H, E)
+
+    # Parallel KM to AB/EF through H, meeting CE at L, BF at M, and AK at K [I. 31]
+    K = model.set_point(20.5, -126.5, ID="K")
+    L = model.set_point(157.5, -126.5, ID="L")
+    M = model.set_point(294.5, -126.5, ID="M")
+    model.construct_line(K, M)
+    model.set_segment(K, M)
+    model.set_segment(K, L)
+    model.set_segment(L, H)
+    model.set_segment(H, M)
+    model.set_segment(K, H)
+    model.set_segment(L, M)
+
+    model.set_segment(A, K)
+    model.set_segment(C, L)
+    model.set_segment(L, E)
+    model.set_segment(B, M)
+    model.set_segment(M, F)
+
+    # Squares about diameter: DBMH (DM) on DB and LGEH (LG) on CD
+    model.set_polygon([D, B, M, H])
+    model.set_polygon([L, H, G, E])
+
+    # Complements CH (CDHL) and HF (HMGF), plus rectangles AL (ACLK), CM (CBML), DF (DBFG), AH (ADHK)
+    model.set_polygon([C, D, H, L])
+    model.set_polygon([H, M, F, G])
+    model.set_polygon([A, C, L, K])
+    model.set_polygon([C, B, M, L])
+    model.set_polygon([D, B, F, G])
+    model.set_polygon([A, D, H, K])
+
+    # L-shaped Gnomon NOP around LG: C B F G H L
+    model.set_polygon([C, B, F, G, H, L])
 
     return model
 

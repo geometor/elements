@@ -1,17 +1,18 @@
 :canonical_id: G.346
-:original_id: X.31
-:volume: III
-:book: X
+:original_id: IX.16
+:title: G.346 numbers prime number
+:volume: II
+:book: IX
 :type: prop
 
-G.346 — Code
-============
+G.346 numbers prime number — Code
+=================================
 
-.. rubric:: `X.31 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/031/>`_
+.. rubric:: `IX.16 <https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/16/>`_
 
 .. enunciation::
 
-   Find two medial straight lines commensurable in square only, containing a rational rectangle, and such that the square on the greater is greater than the square on the less by the square on a straight line commensurable in length with the greater.
+   If two :term:`numbers <G.248>` be :term:`prime to one another <G.249>`, the second will not be to any other number as the first is to the second.
 
 .. picture:: g1.svg
 

@@ -1,60 +1,75 @@
-"""Programmatic construction for Book XI, Proposition 9 (XI.9).
-
-Straight lines which are parallel to the same straight line and are not in the
-same plane with it are also parallel to one another.
-"""
+"""Programmatic construction for Book X, Proposition 72 (X.72)."""
 
 from __future__ import annotations
 
-import sympy as sp
 from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure for Book XI, Proposition 9 using geometor.model."""
-    model = Model("XI.9")
+    """Construct the figure 0159.g1 using geometor.model."""
+    model = Model("X.72")
 
-    # 1. Let each of the straight lines AB, CD be parallel to EF, not being in
-    #    the same plane with it.
-    G = model.set_point(0, 0, classes=["given"], ID="G")
-    F = model.set_point(sp.Rational(-84, 84), 0, classes=["given"], label="F")
-    E = model.set_point(sp.Rational(85, 84), 0, classes=["given"], label="E")
+    # Left area AD composed of two incommensurable medial areas AB, CD
+    A = model.set_point(21.5, -16.5, classes=["given"], ID="A")
+    C = model.set_point(105.5, -16.5, classes=["given"], ID="C")
+    C_r = model.set_point(147.5, -16.5, ID="C_r")
+    A_b = model.set_point(21.5, -104.0, ID="A_b")
+    B = model.set_point(105.5, -104.0, classes=["given"], ID="B")
+    D = model.set_point(147.5, -104.0, classes=["given"], ID="D")
 
-    B = model.set_point(sp.Rational(-34, 84), sp.Rational(54, 84), classes=["given"], label="B")
-    H = model.set_point(sp.Rational(39, 84), sp.Rational(54, 84), label="H")
-    A = model.set_point(sp.Rational(134, 84), sp.Rational(55, 84), classes=["given"], label="A")
+    # Right rectangle EI applied to rational straight line EF
+    E = model.set_point(274.5, -41.0, classes=["given"], ID="E")
+    F = model.set_point(478.0, -41.0, classes=["given"], ID="F")
+    H = model.set_point(274.5, -83.0, ID="H")
+    G = model.set_point(478.0, -83.0, ID="G")
+    K = model.set_point(274.5, -100.0, ID="K")
+    I = model.set_point(478.0, -100.0, ID="I")
 
-    D = model.set_point(sp.Rational(-41, 84), sp.Rational(-35, 84), classes=["given"], label="D")
-    K = model.set_point(sp.Rational(38, 84), sp.Rational(-34, 84), label="K")
-    C = model.set_point(sp.Rational(147, 84), sp.Rational(-33, 84), classes=["given"], label="C")
+    # Base lines
+    model.construct_line(A, C_r)
+    model.construct_line(A_b, D)
+    model.construct_line(A, A_b)
+    model.construct_line(C, B)
+    model.construct_line(C_r, D)
 
-    # Collinear lines and sub-segments
-    model.construct_line(B, A)
-    model.set_section([B, H, A])
-    model.set_segment(B, H)
-    model.set_segment(H, A)
-    model.set_segment(A, B)
+    model.construct_line(E, F)
+    model.construct_line(H, G)
+    model.construct_line(K, I)
+    model.construct_line(E, K)
+    model.construct_line(F, I)
 
-    model.construct_line(F, E)
-    model.set_section([F, G, E])
-    model.set_segment(F, G)
-    model.set_segment(G, E)
+    # Segments
+    model.set_segment(A, C_r)
+    model.set_segment(A, C)
+    model.set_segment(C, C_r)
+    model.set_segment(A_b, D)
+    model.set_segment(A_b, B)
+    model.set_segment(B, D)
+    model.set_segment(A, A_b)
+    model.set_segment(C, B)
+    model.set_segment(C_r, D)
+
     model.set_segment(E, F)
+    model.set_segment(H, G)
+    model.set_segment(K, I)
+    model.set_segment(E, K)
+    model.set_segment(E, H)
+    model.set_segment(H, K)
+    model.set_segment(F, I)
+    model.set_segment(F, G)
+    model.set_segment(G, I)
 
-    model.construct_line(D, C)
-    model.set_section([D, K, C])
-    model.set_segment(D, K)
-    model.set_segment(K, C)
-    model.set_segment(C, D)
+    # Sections
+    model.set_section([E, H, K])
+    model.set_section([F, G, I])
 
-    # 2. Perpendiculars GH and GK from G to EF in the respective planes
-    model.set_segment(G, H)
-    model.set_segment(G, K)
-
-    # Planes through GH, GK; through EF, AB; and through FE, CD
-    model.set_polygon([H, G, K])
-    model.set_polygon([B, A, E, F])
-    model.set_polygon([F, E, C, D])
+    # Polygons
+    model.set_polygon([A, A_b, B, C])
+    model.set_polygon([C, B, D, C_r])
+    model.set_polygon([A, A_b, D, C_r])
+    model.set_polygon([E, H, G, F])
+    model.set_polygon([H, K, I, G])
+    model.set_polygon([E, K, I, F])
 
     return model
 

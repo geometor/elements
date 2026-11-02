@@ -1,49 +1,108 @@
-"""Programmatic construction for Book III, Proposition 27 (III.27)."""
+"""Programmatic construction for Book III, Proposition 8 (III.8).
+
+From an external point D, straight lines DA (through the centre M, meeting the
+convex circumference at G), DE (through K), DF (through L), DC (through H) are
+drawn to the circle ABC, together with DB (such that angle DMB = angle KMD)
+and DN on the other side of DG.
+"""
 
 from __future__ import annotations
 
+import sympy as sp
 from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0064.g1 using geometor.model."""
-    model = Model("III.27")
+    """Construct the figure 0024.g1 for Book III, Proposition 8."""
+    model = Model("III.8")
 
-    # Left circle ABC with center G and point K (y-inverted)
-    G = model.set_point(83.00, -86.00, ID="G")
-    A = model.set_point(40.00, -37.26, classes=["given"], ID="A")
-    B = model.set_point(28.88, -122.00, classes=["given"], ID="B")
-    C = model.set_point(137.12, -122.00, classes=["given"], ID="C")
-    K = model.set_point(120.63, -139.00, ID="K")
+    # Circle ABC with centre M at origin and radius 1
+    M = model.set_point(0, 0, classes=["given"], ID="M")
+    P_unit = model.set_point(1, 0)
+    model.construct_circle(M, P_unit)
 
-    # Right circle DEF with center H (y-inverted)
-    H = model.set_point(244.00, -92.00, ID="H")
-    D = model.set_point(218.00, -32.43, classes=["given"], ID="D")
-    E = model.set_point(189.88, -128.00, classes=["given"], ID="E")
-    F = model.set_point(298.12, -128.00, classes=["given"], ID="F")
+    # External point D along rational unit vector (7/25, 24/25) from M
+    ux, uy = sp.Rational(7, 25), sp.Rational(24, 25)
+    d_dist = sp.Rational(32, 15)
+    D = model.set_point(d_dist * ux, d_dist * uy, classes=["given"], ID="D")
+    G = model.set_point(ux, uy, ID="G")
+    A = model.set_point(-ux, -uy, ID="A")
+    model.construct_line(D, A)
 
-    # Equal circles ABC and DEF
-    model.construct_circle(G, A)
-    model.construct_circle(H, D)
+    # Points on concave circumference: E, F, C
+    # Points on convex circumference: K, L, H (collinear with D-E, D-F, D-C)
+    def secant_points(vx: sp.Expr, vy: sp.Expr):
+        """Intersect ray from D in direction (vx, vy) with unit circle at M."""
+        a = vx**2 + vy**2
+        b = 2 * (D.x * vx + D.y * vy)
+        c = D.x**2 + D.y**2 - 1
+        disc = sp.sqrt(b**2 - 4 * a * c)
+        t_near = (-b - disc) / (2 * a)
+        t_far = (-b + disc) / (2 * a)
+        return (
+            D.x + t_near * vx,
+            D.y + t_near * vy,
+            D.x + t_far * vx,
+            D.y + t_far * vy,
+        )
 
-    # Segments
-    model.set_segment(A, B)
-    model.set_segment(A, C)
-    model.set_segment(B, G)
-    model.set_segment(G, C)
-    model.set_segment(G, K)
+    # Secant D-K-E
+    kx, ky, ex, ey = secant_points(sp.Rational(-2, 5), sp.Integer(-1))
+    K = model.set_point(kx, ky, ID="K")
+    E = model.set_point(ex, ey, ID="E")
+    model.construct_line(D, E)
 
-    model.set_segment(D, E)
-    model.set_segment(D, F)
-    model.set_segment(E, H)
-    model.set_segment(H, F)
+    # Secant D-L-F
+    lx, ly, fx, fy = secant_points(sp.Rational(-14, 25), sp.Integer(-1))
+    L = model.set_point(lx, ly, ID="L")
+    F = model.set_point(fx, fy, ID="F")
+    model.construct_line(D, F)
 
-    # Angles (wedges)
-    model.set_wedge(G, B, B, C)
-    model.set_wedge(G, B, B, K)
-    model.set_wedge(H, E, E, F)
-    model.set_wedge(A, B, B, C)
-    model.set_wedge(D, E, E, F)
+    # Secant D-H-C
+    hx, hy, cx, cy = secant_points(sp.Rational(-21, 25), sp.Integer(-1))
+    H = model.set_point(hx, hy, ID="H")
+    C = model.set_point(cx, cy, ID="C")
+    model.construct_line(D, C)
+
+    # Point B on convex circumference such that angle DMB = angle KMD
+    # Reflection of K across line MG (unit vector ux, uy)
+    dot_K = K.x * ux + K.y * uy
+    bx = 2 * dot_K * ux - K.x
+    by = 2 * dot_K * uy - K.y
+    B = model.set_point(bx, by, ID="B")
+
+    # Point N further along the convex circumference on the side of B
+    N = model.set_point(sp.Rational(3, 5), sp.Rational(4, 5), label="N")
+
+    # Collinear segments along D-G-M-A
+    model.set_segment(D, G)
+    model.set_segment(G, M)
+    model.set_segment(M, A)
+    model.set_segment(D, M)
+    model.set_segment(G, A)
+    model.set_segment(D, A)
+    model.set_section([D, G, M])
+    model.set_section([G, M, A])
+    model.set_section([D, M, A])
+
+    # Collinear segments along D-K-E, D-L-F, D-H-C
+    for P_near, P_far in [(K, E), (L, F), (H, C)]:
+        model.set_segment(D, P_near)
+        model.set_segment(P_near, P_far)
+        model.set_segment(D, P_far)
+        model.set_section([D, P_near, P_far])
+
+    # Segments DB and DN
+    model.set_segment(D, B)
+    model.set_segment(D, N)
+
+    # Radii from centre M
+    for P_circ in [E, F, C, K, L, H, B, N]:
+        model.set_segment(M, P_circ)
+
+    # Triangles compared in the proof
+    for P_circ in [E, F, C, K, L, H, B, N]:
+        model.set_polygon([D, M, P_circ])
 
     return model
 

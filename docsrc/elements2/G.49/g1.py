@@ -1,6 +1,6 @@
-"""Programmatic construction for Book I, I.36 (I.36).
+"""Programmatic construction for Book I, Proposition 24 (I.24).
 
-Parallelograms which are on equal bases and in the same parallels are equal to one another.
+If two triangles have the two sides equal to two sides respectively, but have the one of the angles contained by the equal straight lines greater than the other, they will also have the base greater than the base.
 """
 
 from __future__ import annotations
@@ -9,45 +9,45 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure for 0345.g1 (I.36) using geometor.model."""
-    model = Model("I.36")
+    """Construct the figure for 0310.g2 (I.24) using geometor.model."""
+    model = Model("I.24")
 
-    # 1. Points
-    A = model.set_point(60, -29, classes=["given"], ID="A")
-    D = model.set_point(141, -29, classes=["given"], ID="D")
-    E = model.set_point(212, -29, classes=["given"], ID="E")
-    H = model.set_point(293, -29, classes=["given"], ID="H")
-    B = model.set_point(54, -121, classes=["given"], ID="B")
-    C = model.set_point(135, -121, classes=["given"], ID="C")
-    F = model.set_point(246, -121, classes=["given"], ID="F")
-    G = model.set_point(327, -121, classes=["given"], ID="G")
+    # Points
+    pt_A = model.set_point(46.5, -39.5, classes=["given"], ID="A")
+    pt_B = model.set_point(10.5, -140, classes=["given"], ID="B")
+    pt_C = model.set_point(101, -114, classes=["given"], ID="C")
+    pt_D = model.set_point(207.5, -34.5, classes=["given"], ID="D")
+    pt_E = model.set_point(172.5, -135, classes=["given"], ID="E")
+    pt_F = model.set_point(208, -138, classes=["given"], ID="F")
+    pt_G = model.set_point(260, -110, classes=["given"], ID="G")
 
-    # 3. Segments
-    model.set_segment(A, H)
-    model.set_segment(A, D)
-    model.set_segment(D, E)
-    model.set_segment(E, H)
-    model.set_segment(B, G)
-    model.set_segment(B, C)
-    model.set_segment(C, F)
-    model.set_segment(F, G)
-    model.set_segment(A, B)
-    model.set_segment(D, C)
-    model.set_segment(E, F)
-    model.set_segment(H, G)
-    model.set_segment(B, E)
-    model.set_segment(C, H)
+    # Segments
+    model.set_segment(pt_A, pt_B)
+    model.set_segment(pt_A, pt_C)
+    model.set_segment(pt_B, pt_C)
+    model.set_segment(pt_D, pt_E)
+    model.set_segment(pt_D, pt_F)
+    model.set_segment(pt_E, pt_F)
+    model.set_segment(pt_D, pt_G)
+    model.set_segment(pt_E, pt_G)
+    model.set_segment(pt_F, pt_G)
 
-    # 4. Collinear Sections
-    model.set_section([A, D, E])
-    model.set_section([D, E, H])
-    model.set_section([B, C, F])
-    model.set_section([C, F, G])
+    # Polygons
+    model.set_polygon([pt_A, pt_B, pt_C])
+    model.set_polygon([pt_D, pt_E, pt_F])
+    model.set_polygon([pt_D, pt_E, pt_G])
+    model.set_polygon([pt_D, pt_F, pt_G])
+    model.set_polygon([pt_E, pt_F, pt_G])
 
-    # 5. Polygons (Triangles, Parallelograms, Trapezia, Squares)
-    model.set_polygon([A, B, C, D])
-    model.set_polygon([E, F, G, H])
-    model.set_polygon([E, B, C, H])
+    # Angles (Wedges)
+    model.set_wedge(pt_A, pt_B, pt_B, pt_C)
+    model.set_wedge(pt_D, pt_E, pt_E, pt_F)
+    model.set_wedge(pt_D, pt_E, pt_E, pt_G)
+    model.set_wedge(pt_D, pt_F, pt_F, pt_G)
+    model.set_wedge(pt_G, pt_D, pt_D, pt_F)
+    model.set_wedge(pt_F, pt_D, pt_D, pt_G)
+    model.set_wedge(pt_G, pt_E, pt_E, pt_F)
+    model.set_wedge(pt_F, pt_E, pt_E, pt_G)
 
     return model
 

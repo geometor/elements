@@ -1,4 +1,4 @@
-"""Programmatic construction for Book VII, Proposition 8 (VII.8)."""
+"""Programmatic construction for Book V, Proposition 24 (V.24)."""
 
 from __future__ import annotations
 
@@ -6,64 +6,47 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0313.g1 using geometor.model."""
-    model = Model("VII.8")
+    """Construct the figure 0189.g2 for Book V, Proposition 24 using geometor.model."""
+    model = Model("V.24")
 
-    # Top horizontal number segment CD (divided at F)
-    C = model.set_point(13.0, -24.0, classes=["given"], ID="C")
-    F = model.set_point(157.0, -24.0, ID="F")
-    D = model.set_point(231.0, -24.0, classes=["given"], ID="D")
+    # First subdivided magnitude AG divided at B
+    A = model.set_point(30.00, -38.00, classes=["given"], ID="A")
+    B = model.set_point(160.00, -38.00, classes=["given"], ID="B")
+    G = model.set_point(252.00, -38.00, classes=["given"], ID="G")
 
-    # Middle horizontal number segment GH (divided at M, K, N)
-    G = model.set_point(13.0, -55.0, classes=["given"], ID="G")
-    M = model.set_point(65.0, -55.0, ID="M")
-    K = model.set_point(88.0, -55.0, ID="K")
-    N = model.set_point(140.0, -55.0, ID="N")
-    H = model.set_point(164.0, -55.0, classes=["given"], ID="H")
+    # Standalone magnitude C
+    C_1 = model.set_point(30.00, -62.00, classes=["given"], ID="C_1")
+    C_2 = model.set_point(125.00, -62.00, classes=["given"], ID="C_2")
 
-    # Bottom horizontal number segment AB (divided at L, E)
-    A = model.set_point(12.0, -81.0, classes=["given"], ID="A")
-    L = model.set_point(63.0, -81.0, ID="L")
-    E = model.set_point(115.0, -81.0, ID="E")
-    B = model.set_point(162.0, -81.0, classes=["given"], ID="B")
+    # Second subdivided magnitude DH divided at E
+    D = model.set_point(30.00, -84.00, classes=["given"], ID="D")
+    E = model.set_point(136.00, -84.00, classes=["given"], ID="E")
+    H = model.set_point(211.00, -84.00, classes=["given"], ID="H")
+
+    # Standalone magnitude F
+    F_1 = model.set_point(30.00, -108.00, classes=["given"], ID="F_1")
+    F_2 = model.set_point(104.00, -108.00, classes=["given"], ID="F_2")
 
     # Base lines
-    model.construct_line(C, D)
-    model.construct_line(G, H)
-    model.construct_line(A, B)
+    model.construct_line(A, G)
+    model.construct_line(D, H)
 
-    # Segments on CD
-    model.set_segment(C, D)
-    model.set_segment(C, F)
-    model.set_segment(F, D)
-
-    # Segments on GH
-    model.set_segment(G, H)
-    model.set_segment(G, M)
-    model.set_segment(M, K)
-    model.set_segment(K, N)
-    model.set_segment(N, H)
-    model.set_segment(G, K)
-    model.set_segment(K, H)
-    model.set_segment(G, N)
-    model.set_segment(M, N)
-    model.set_segment(M, H)
-
-    # Segments on AB
+    # Whole and subdivided segments
+    model.set_segment(A, G)
     model.set_segment(A, B)
-    model.set_segment(A, L)
-    model.set_segment(L, E)
-    model.set_segment(E, B)
-    model.set_segment(A, E)
-    model.set_segment(L, B)
+    model.set_segment(B, G)
+
+    model.set_segment(C_1, C_2)
+
+    model.set_segment(D, H)
+    model.set_segment(D, E)
+    model.set_segment(E, H)
+
+    model.set_segment(F_1, F_2)
 
     # Collinear sections
-    model.set_section([C, F, D])
-    model.set_section([G, K, H])
-    model.set_section([G, M, K])
-    model.set_section([K, N, H])
-    model.set_section([A, L, E])
-    model.set_section([A, E, B])
+    model.set_section([A, B, G])
+    model.set_section([D, E, H])
 
     return model
 

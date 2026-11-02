@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 2 284 103" width="284" height="103" class="euclid-graphic" data-graphic-id="g1" data-graphic="g1" data-proposition="IX.32">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 -5 588 202" width="588" height="202" class="euclid-graphic" data-graphic-id="g1" data-graphic="g1" data-proposition="VIII.9">
   <style>
     :root {
       --geom-fg: #18181b;
@@ -253,23 +253,53 @@
   <g id="elements">
   </g>
   <g id="graphics">
-    <path id="el-mag-A" data-ref="A" data-aliases="/ A /" data-type="segment" class="geom-line" d="M 27 22.5 L 42 22.5 L 57 22.5" />
-    <path id="el-mag-B" data-ref="B" data-aliases="/ B /" data-type="segment" class="geom-line" d="M 28 43.5 L 59 43.5 L 90 43.5" />
-    <path id="el-mag-C" data-ref="C" data-aliases="/ C /" data-type="segment" class="geom-line" d="M 30 64.5 L 90 64.5 L 150 64.5" />
-    <path id="el-mag-D" data-ref="D" data-aliases="/ D /" data-type="segment" class="geom-line" d="M 30 84.5 L 150 84.5 L 270 84.5" />
+    <path id="el-mag-A" data-ref="A" data-aliases="/ A /" data-type="segment" class="geom-line" d="M 24 16 L 75.5 16 L 127 16" />
+    <path id="el-mag-C" data-ref="C" data-aliases="/ C /" data-type="segment" class="geom-line" d="M 25 34 L 95 34 L 165 34" />
+    <path id="el-mag-D" data-ref="D" data-aliases="/ D /" data-type="segment" class="geom-line" d="M 24 57 L 120 57 L 216 57" />
+    <path id="el-mag-B" data-ref="B" data-aliases="/ B /" data-type="segment" class="geom-line" d="M 26 76 L 150 76 L 274 76" />
+    <path id="el-mag-E" data-ref="E" data-aliases="/ E /" data-type="segment" class="geom-line" d="M 138 99 L 149 99 L 160 99" />
+    <path id="el-mag-F" data-ref="F" data-aliases="/ F /" data-type="segment" class="geom-line" d="M 138 122 L 153.5 122 L 169 122" />
+    <path id="el-mag-G" data-ref="G" data-aliases="/ G /" data-type="segment" class="geom-line" d="M 138 145 L 162 145 L 186 145" />
+    <path id="el-mag-H" data-ref="H" data-aliases="/ H /" data-type="segment" class="geom-line" d="M 316 16 L 335.5 16 L 355 16" />
+    <path id="el-mag-K" data-ref="K" data-aliases="/ K /" data-type="segment" class="geom-line" d="M 317 35 L 341.5 35 L 366 35" />
+    <path id="el-mag-L" data-ref="L" data-aliases="/ L /" data-type="segment" class="geom-line" d="M 317 57 L 350.5 57 L 384 57" />
+    <path id="el-mag-M" data-ref="M" data-aliases="/ M /" data-type="segment" class="geom-line" d="M 317 102 L 372 102 L 427 102" />
+    <path id="el-mag-N" data-ref="N" data-aliases="/ N /" data-type="segment" class="geom-line" d="M 320 126 L 391 126 L 462 126" />
+    <path id="el-mag-O" data-ref="O" data-aliases="/ O /" data-type="segment" class="geom-line" d="M 319 152 L 416 152 L 513 152" />
+    <path id="el-mag-P" data-ref="P" data-aliases="/ P /" data-type="segment" class="geom-line" d="M 320 176 L 445.5 176 L 571 176" />
   </g>
   <g id="highlights" style="pointer-events: none;">
-    <path id="hl-mag-A" data-ref="A" data-aliases="/ A /" class="geom-line geom-overlay" d="M 27 22.5 L 42 22.5 L 57 22.5" />
-    <path id="hl-mag-B" data-ref="B" data-aliases="/ B /" class="geom-line geom-overlay" d="M 28 43.5 L 59 43.5 L 90 43.5" />
-    <path id="hl-mag-C" data-ref="C" data-aliases="/ C /" class="geom-line geom-overlay" d="M 30 64.5 L 90 64.5 L 150 64.5" />
-    <path id="hl-mag-D" data-ref="D" data-aliases="/ D /" class="geom-line geom-overlay" d="M 30 84.5 L 150 84.5 L 270 84.5" />
+    <path id="hl-mag-A" data-ref="A" data-aliases="/ A /" class="geom-line geom-overlay" d="M 24 16 L 75.5 16 L 127 16" />
+    <path id="hl-mag-C" data-ref="C" data-aliases="/ C /" class="geom-line geom-overlay" d="M 25 34 L 95 34 L 165 34" />
+    <path id="hl-mag-D" data-ref="D" data-aliases="/ D /" class="geom-line geom-overlay" d="M 24 57 L 120 57 L 216 57" />
+    <path id="hl-mag-B" data-ref="B" data-aliases="/ B /" class="geom-line geom-overlay" d="M 26 76 L 150 76 L 274 76" />
+    <path id="hl-mag-E" data-ref="E" data-aliases="/ E /" class="geom-line geom-overlay" d="M 138 99 L 149 99 L 160 99" />
+    <path id="hl-mag-F" data-ref="F" data-aliases="/ F /" class="geom-line geom-overlay" d="M 138 122 L 153.5 122 L 169 122" />
+    <path id="hl-mag-G" data-ref="G" data-aliases="/ G /" class="geom-line geom-overlay" d="M 138 145 L 162 145 L 186 145" />
+    <path id="hl-mag-H" data-ref="H" data-aliases="/ H /" class="geom-line geom-overlay" d="M 316 16 L 335.5 16 L 355 16" />
+    <path id="hl-mag-K" data-ref="K" data-aliases="/ K /" class="geom-line geom-overlay" d="M 317 35 L 341.5 35 L 366 35" />
+    <path id="hl-mag-L" data-ref="L" data-aliases="/ L /" class="geom-line geom-overlay" d="M 317 57 L 350.5 57 L 384 57" />
+    <path id="hl-mag-M" data-ref="M" data-aliases="/ M /" class="geom-line geom-overlay" d="M 317 102 L 372 102 L 427 102" />
+    <path id="hl-mag-N" data-ref="N" data-aliases="/ N /" class="geom-line geom-overlay" d="M 320 126 L 391 126 L 462 126" />
+    <path id="hl-mag-O" data-ref="O" data-aliases="/ O /" class="geom-line geom-overlay" d="M 319 152 L 416 152 L 513 152" />
+    <path id="hl-mag-P" data-ref="P" data-aliases="/ P /" class="geom-line geom-overlay" d="M 320 176 L 445.5 176 L 571 176" />
   </g>
   <g id="points">
   </g>
   <g id="labels">
-    <text id="lbl-A" data-ref="A" x="16.00" y="22.50" class="geom-label" text-anchor="middle" dominant-baseline="central">A</text>
-    <text id="lbl-B" data-ref="B" x="17.00" y="43.50" class="geom-label" text-anchor="middle" dominant-baseline="central">B</text>
-    <text id="lbl-C" data-ref="C" x="19.00" y="64.50" class="geom-label" text-anchor="middle" dominant-baseline="central">C</text>
-    <text id="lbl-D" data-ref="D" x="19.00" y="84.50" class="geom-label" text-anchor="middle" dominant-baseline="central">D</text>
+    <text id="lbl-A" data-ref="A" x="13.00" y="16.00" class="geom-label" text-anchor="middle" dominant-baseline="central">A</text>
+    <text id="lbl-C" data-ref="C" x="14.00" y="34.00" class="geom-label" text-anchor="middle" dominant-baseline="central">C</text>
+    <text id="lbl-D" data-ref="D" x="13.00" y="57.00" class="geom-label" text-anchor="middle" dominant-baseline="central">D</text>
+    <text id="lbl-B" data-ref="B" x="15.00" y="76.00" class="geom-label" text-anchor="middle" dominant-baseline="central">B</text>
+    <text id="lbl-E" data-ref="E" x="127.00" y="99.00" class="geom-label" text-anchor="middle" dominant-baseline="central">E</text>
+    <text id="lbl-F" data-ref="F" x="127.00" y="122.00" class="geom-label" text-anchor="middle" dominant-baseline="central">F</text>
+    <text id="lbl-G" data-ref="G" x="127.00" y="145.00" class="geom-label" text-anchor="middle" dominant-baseline="central">G</text>
+    <text id="lbl-H" data-ref="H" x="305.00" y="16.00" class="geom-label" text-anchor="middle" dominant-baseline="central">H</text>
+    <text id="lbl-K" data-ref="K" x="306.00" y="35.00" class="geom-label" text-anchor="middle" dominant-baseline="central">K</text>
+    <text id="lbl-L" data-ref="L" x="306.00" y="57.00" class="geom-label" text-anchor="middle" dominant-baseline="central">L</text>
+    <text id="lbl-M" data-ref="M" x="306.00" y="102.00" class="geom-label" text-anchor="middle" dominant-baseline="central">M</text>
+    <text id="lbl-N" data-ref="N" x="309.00" y="126.00" class="geom-label" text-anchor="middle" dominant-baseline="central">N</text>
+    <text id="lbl-O" data-ref="O" x="308.00" y="152.00" class="geom-label" text-anchor="middle" dominant-baseline="central">O</text>
+    <text id="lbl-P" data-ref="P" x="309.00" y="176.00" class="geom-label" text-anchor="middle" dominant-baseline="central">P</text>
   </g>
 </svg>

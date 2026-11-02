@@ -1,4 +1,4 @@
-"""Programmatic construction for Book VII, Proposition 3 (VII.3)."""
+"""Programmatic construction for Book V, Proposition 20 (V.20)."""
 
 from __future__ import annotations
 
@@ -6,35 +6,31 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0306.g1 using geometor.model."""
-    model = Model("VII.3")
+    """Construct the figure 0182.g1 for Book V, Proposition 20 using geometor.model."""
+    model = Model("V.20")
 
-    # Single-letter vertical number segments A, B, C, D, E, F
-    A_t = model.set_point(29.0, -12.0, classes=["given"], ID="A")
-    A_b = model.set_point(29.0, -124.0, ID="A_b")
+    # Left column standalone magnitudes A, B, C
+    A_1 = model.set_point(24.00, -15.00, classes=["given"], ID="A_1")
+    A_2 = model.set_point(141.00, -15.00, classes=["given"], ID="A_2")
+    B_1 = model.set_point(24.00, -41.00, classes=["given"], ID="B_1")
+    B_2 = model.set_point(66.00, -41.00, classes=["given"], ID="B_2")
+    C_1 = model.set_point(24.00, -65.00, classes=["given"], ID="C_1")
+    C_2 = model.set_point(101.00, -65.00, classes=["given"], ID="C_2")
 
-    B_t = model.set_point(63.0, -41.0, classes=["given"], ID="B")
-    B_b = model.set_point(63.0, -126.0, ID="B_b")
+    # Right column standalone magnitudes D, E, F
+    D_1 = model.set_point(214.00, -15.00, classes=["given"], ID="D_1")
+    D_2 = model.set_point(286.00, -15.00, classes=["given"], ID="D_2")
+    E_1 = model.set_point(214.00, -41.00, classes=["given"], ID="E_1")
+    E_2 = model.set_point(239.00, -41.00, classes=["given"], ID="E_2")
+    F_1 = model.set_point(214.00, -65.00, classes=["given"], ID="F_1")
+    F_2 = model.set_point(262.00, -65.00, classes=["given"], ID="F_2")
 
-    C_t = model.set_point(89.0, -75.0, classes=["given"], ID="C")
-    C_b = model.set_point(89.0, -124.0, ID="C_b")
-
-    D_t = model.set_point(129.0, -95.0, classes=["given"], ID="D")
-    D_b = model.set_point(129.0, -125.0, ID="D_b")
-
-    E_t = model.set_point(159.0, -98.0, classes=["given"], ID="E")
-    E_b = model.set_point(159.0, -120.0, ID="E_b")
-
-    F_t = model.set_point(183.0, -97.0, classes=["given"], ID="F")
-    F_b = model.set_point(183.0, -121.0, ID="F_b")
-
-    # Number segments
-    model.set_segment(A_t, A_b)
-    model.set_segment(B_t, B_b)
-    model.set_segment(C_t, C_b)
-    model.set_segment(D_t, D_b)
-    model.set_segment(E_t, E_b)
-    model.set_segment(F_t, F_b)
+    model.set_segment(A_1, A_2)
+    model.set_segment(B_1, B_2)
+    model.set_segment(C_1, C_2)
+    model.set_segment(D_1, D_2)
+    model.set_segment(E_1, E_2)
+    model.set_segment(F_1, F_2)
 
     return model
 

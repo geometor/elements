@@ -1,4 +1,4 @@
-"""Programmatic construction for Book X, Proposition 42 (X.42)."""
+"""Programmatic construction for Book IX, Proposition 26 (IX.26)."""
 
 from __future__ import annotations
 
@@ -6,30 +6,30 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0096.g1 using geometor.model."""
-    model = Model("X.42")
+    """Construct the figure 0421.g2 using geometor.model."""
+    model = Model("IX.26")
 
-    # Binomial straight line AB divided at C and D
-    A = model.set_point(15.0, -20.0, classes=["given"], ID="A")
-    D = model.set_point(121.0, -20.0, ID="D")
-    C = model.set_point(166.0, -20.0, classes=["given"], ID="C")
-    B = model.set_point(241.0, -20.0, classes=["given"], ID="B")
+    # Horizontal number segment AB divided at C and D
+    A = model.set_point(13.0, -28.0, classes=["given"], ID="A")
+    C = model.set_point(110.0, -28.0, ID="C")
+    D = model.set_point(147.0, -28.0, ID="D")
+    B = model.set_point(171.0, -28.0, classes=["given"], ID="B")
 
+    # Base line
     model.construct_line(A, B)
 
-    # Whole and all sub-segments on AB
+    # Whole and subdivided segments
     model.set_segment(A, B)
-    model.set_segment(A, D)
     model.set_segment(A, C)
-    model.set_segment(D, C)
-    model.set_segment(D, B)
+    model.set_segment(A, D)
+    model.set_segment(C, D)
     model.set_segment(C, B)
+    model.set_segment(D, B)
 
-    # Collinear sections on AB
+    # Collinear sections
     model.set_section([A, C, B])
     model.set_section([A, D, B])
-    model.set_section([A, D, C])
-    model.set_section([D, C, B])
+    model.set_section([C, D, B])
 
     return model
 

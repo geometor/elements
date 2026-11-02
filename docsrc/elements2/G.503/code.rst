@@ -1,17 +1,18 @@
 :canonical_id: G.503
-:original_id: XII.16
+:original_id: XI.2
+:title: G.503 segments cut plane
 :volume: III
-:book: XII
+:book: XI
 :type: prop
 
-G.503 — Code
-============
+G.503 segments cut plane — Code
+===============================
 
-.. rubric:: `XII.16 <https://geometor.github.io/euclid/heath/volume_III/book_xii/propositions/16/>`_
+.. rubric:: `XI.2 <https://geometor.github.io/euclid/heath/volume_III/book_xi/propositions/02/>`_
 
 .. enunciation::
 
-   Given two circles about the same centre, to inscribe in the greater circle an equilateral polygon with an even number of sides which does not touch the lesser circle.
+   If two :term:`segments <G.4>` cut one another, they are in one :term:`plane <G.7>`, and every :term:`triangle <G.11>` is in one plane.
 
 .. picture:: g1.svg
 

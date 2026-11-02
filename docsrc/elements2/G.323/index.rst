@@ -1,77 +1,165 @@
 :order: 323
 :number: 323
 :canonical_id: G.323
-:original_id: X.11
-:volume: III
-:book: X
+:original_id: VIII.21
+:title: G.323 mean proportional numbers
+:volume: II
+:book: VIII
 :type: prop
 :subtype: theorem
-:categories: theorem, proof, incommensurables, magnitudes
-:category: theorem, proof, incommensurables, magnitudes
-:tags: book-x, point, proportion, commensurable, incommensurable
-:dependencies: G.318, G.319, G.320, G.321
-:excerpt: If four magnitudes be proportional, and the first be commensurable with the second, the third is commensurable with the fourth; and, if the first be incommensurable with the second, the third is incommensurable with the fourth.
+:categories: theorem, proof, number-theory, proportions
+:category: theorem, proof, number-theory, proportions
+:tags: book-viii, point, proportional, number, similar-plane-and-solid-numbers, in-the-same-ratio, prime-to-one-another, ratio, ex-aequali, prime-number, part-aliquot, corresponding-magnitudes, unit, multiply, proportion, similar, solid-number, plane
+:dependencies: G.180, G.248, G.267, G.272, G.274, G.275, G.289, G.297, G.298, G.318, G.322
+:excerpt: If two mean proportional numbers fall between two numbers, the numbers are similar solid numbers.
 
 .. _G.323:
-.. _X.11:
+.. _VIII.21:
 
-G.323
-=====
+G.323 mean proportional numbers
+===============================
 
-.. rubric:: `X.11 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/011/>`_
+.. rubric:: `VIII.21 <https://geometor.github.io/euclid/heath/volume_II/book_viii/propositions/21/>`_
 
 .. enunciation::
 
-   If four magnitudes be proportional, and the first be commensurable with the second, the third is commensurable with the fourth; and, if the first be incommensurable with the second, the third is incommensurable with the fourth.
+   If two mean :term:`proportional <G.180>` :term:`numbers <G.248>` fall between two numbers, the numbers are :term:`similar solid numbers <G.318>`.
 
 .. signature:: theorem
 
-   | :fn:`magnitudes_proportional_commensurable <G.323>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`)
-   | **given** :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` be four magnitudes in proportion, so that, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`, let :g:`A <g1:A>` be commensurable with :g:`B <g1:B>`
-   | **prove** :g:`C <g1:C>` will also be commensurable with :g:`D <g1:D>`; :g:`C <g1:C>` will also be incommensurable with :g:`D <g1:D>`
+   | :fn:`mean_proportional_numbers <G.323>`\ ()
+   | **prove** :g:`A <g1:A>`, :g:`B <g1:B>` are similar solid numbers; they are also similar
 
 .. picture:: g1.svg
-   :alt: Proposition 11 diagram
-
-.. step:: given
-
-   :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` be four magnitudes in proportion, so that, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`, let :g:`A <g1:A>` be commensurable with :g:`B <g1:B>`
+   :alt: Proposition 21
 
 .. step:: assert
 
-   Since :g:`A <g1:A>` is commensurable with :g:`B <g1:B>`,
+   Let two mean proportional numbers :g:`C <g1:C>`, :g:`D <g1:D>` fall between the two numbers :g:`A <g1:A>`, :g:`B <g1:B>`
 
-.. step:: assert ∵ commensurable_magnitudes_ratio <G.318>
+.. step:: construct
 
-   Therefore :g:`A <g1:A>` has to :g:`B <g1:B>` the ratio which a number has to a number.
+   :fn:`many_numbers_please <G.289>`: Let three numbers :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>`, the least of those which have the same ratio with :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`D <g1:D>`, be taken
 
-.. step:: assert
+.. step:: assert ∵ many_numbers_please_viii_3 <G.298>
 
-   And, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`D <g1:D>` ;
-
-.. step:: assert ∵ magnitudes_ratio_number <G.319>
-
-   Therefore :g:`C <g1:C>` also has to :g:`D <g1:D>` the ratio which a number has to a number ; therefore :g:`C <g1:C>` is commensurable with :g:`D <g1:D>`.
+   Therefore the extremes of them :g:`E <g1:E>`, :g:`G <g1:G>` are :term:`prime to one another <G.249>`.
 
 .. step:: assert
 
-   Next, let :g:`A <g1:A>` be incommensurable with :g:`B <g1:B>`
+   Since one mean proportional number :g:`F <g1:F>` has fallen between :g:`E <g1:E>`, :g:`G <g1:G>`,
+
+.. step:: assert ∵ mean_proportional_number <G.322>
+
+   Therefore :g:`E <g1:E>`, :g:`G <g1:G>` are similar plane numbers.
 
 .. step:: assert
 
-   Since :g:`A <g1:A>` is incommensurable with :g:`B <g1:B>`,
-
-.. step:: assert ∵ incommensurable_magnitudes_ratio <G.320>
-
-   Therefore :g:`A <g1:A>` has not to :g:`B <g1:B>` the ratio which a number has to a number.
+   Let, then, :g:`H <g1:H>`, :g:`K <g1:K>` be the sides of :g:`E <g1:E>`, and :g:`L <g1:L>`, :g:`M <g1:M>` of :g:`G <g1:G>`.
 
 .. step:: assert
 
-   And, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`;
+   Therefore it is manifest from the theorem before this that :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>` are continuously proportional in the :term:`ratio <G.173>` of :g:`H <g1:H>` to :g:`L <g1:L>` and that of :g:`K <g1:K>` to :g:`M <g1:M>`.
 
-.. step:: conclude ∵ magnitudes_ratio_number_x_8 <G.321>
+.. step:: assert
 
-   Therefore neither has :g:`C <g1:C>` to :g:`D <g1:D>` the ratio which a number has to a number; therefore :g:`C <g1:C>` is incommensurable with :g:`D <g1:D>`.
+   Since :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>` are the least of the numbers which have the :term:`same ratio <G.176>` with :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`D <g1:D>`, and the multitude of the numbers :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>` is equal to the multitude of the numbers :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`D <g1:D>`,
+
+.. step:: assert ∵ there_many_numbers_vii_14 <G.267>
+
+   Therefore, *:term:`ex aequali <G.174>`*, as :g:`E <g1:E>` is to :g:`G <g1:G>`, so is :g:`A <g1:A>` to :g:`D <g1:D>`.
+
+.. step:: assert ∵ numbers_prime_least <G.275>
+
+   :g:`E <g1:E>`, :g:`G <g1:G>` are prime, primes are also least, and the least measure those which have the same ratio with
+
+.. step:: assert ∵ least_numbers_ratio <G.274>
+
+   Them the same number of times, the greater the greater and the less the less, that is, the :term:`antecedent <G.181>` the antecedent and the consequent the consequent .
+
+.. step:: assert
+
+   Therefore :g:`E <g1:E>` :term:`measures <G.169>` :g:`A <g1:A>` the same number of times that :g:`G <g1:G>` measures :g:`D <g1:D>`.
+
+.. step:: assert
+
+   As many times as :g:`E <g1:E>` measures :g:`A <g1:A>`, so many :term:`units <G.247>` let there be in :g:`N <g1:N>`.
+
+.. step:: assert
+
+   Therefore :g:`N <g1:N>` by :term:`multiplying <G.269>` :g:`E <g1:E>` has made :g:`A <g1:A>`.
+
+.. step:: assert
+
+   :g:`E <g1:E>` is the product of :g:`H <g1:H>`, :g:`K <g1:K>` ;
+
+.. step:: assert
+
+   Therefore :g:`N <g1:N>` by multiplying the product of :g:`H <g1:H>`, :g:`K <g1:K>` has made :g:`A <g1:A>`.
+
+.. step:: assert
+
+   Therefore :g:`A <g1:A>` is solid, and :g:`H <g1:H>`, :g:`K <g1:K>`, :g:`N <g1:N>` are its sides.
+
+.. step:: assert
+
+   Since :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>` are the least of the numbers which have the same ratio as :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`B <g1:B>`,
+
+.. step:: assert
+
+   Therefore :g:`E <g1:E>` measures :g:`C <g1:C>` the same number of times that :g:`G <g1:G>` measures :g:`B <g1:B>`.
+
+.. step:: assert
+
+   As many times as :g:`E <g1:E>` measures :g:`C <g1:C>`, so many units let there be in :g:`O <g1:O>`.
+
+.. step:: assert
+
+   Therefore :g:`G <g1:G>` measures :g:`B <g1:B>` according to the units in :g:`O <g1:O>` ;
+
+.. step:: assert
+
+   Therefore :g:`O <g1:O>` by multiplying :g:`G <g1:G>` has made :g:`B <g1:B>`.
+
+.. step:: assert
+
+   :g:`G <g1:G>` is the product of :g:`L <g1:L>`, :g:`M <g1:M>` ;
+
+.. step:: assert
+
+   Therefore :g:`O <g1:O>` by multiplying the product of :g:`L <g1:L>`, :g:`M <g1:M>` has made :g:`B <g1:B>`.
+
+.. step:: assert
+
+   Therefore :g:`B <g1:B>` is solid, and :g:`L <g1:L>`, :g:`M <g1:M>`, :g:`O <g1:O>` are its sides ;
+
+.. step:: assert
+
+   Therefore :g:`A <g1:A>`, :g:`B <g1:B>` are solid.
+
+.. step:: assert
+
+   For since :g:`N <g1:N>`, :g:`O <g1:O>` by multiplying :g:`E <g1:E>` have made :g:`A <g1:A>`, :g:`C <g1:C>`,
+
+.. step:: assert ∵ numbers_multiplying_number <G.272>
+
+   Therefore, as :g:`N <g1:N>` is to :g:`O <g1:O>`, so is :g:`A <g1:A>` to :g:`C <g1:C>`, that is, :g:`E <g1:E>` to :g:`F <g1:F>`.
+
+.. step:: assert
+
+   But, as :g:`E <g1:E>` is to :g:`F <g1:F>`, so is :g:`H <g1:H>` to :g:`L <g1:L>` and :g:`K <g1:K>` to :g:`M <g1:M>` ;
+
+.. step:: assert
+
+   Therefore also, as :g:`H <g1:H>` is to :g:`L <g1:L>`, so is :g:`K <g1:K>` to :g:`M <g1:M>` and :g:`N <g1:N>` to :g:`O <g1:O>`.
+
+.. step:: assert
+
+   :g:`H <g1:H>`, :g:`K <g1:K>`, :g:`N <g1:N>` are the sides of :g:`A <g1:A>`, and :g:`O <g1:O>`, :g:`L <g1:L>`, :g:`M <g1:M>` the sides of :g:`B <g1:B>`.
+
+.. step:: conclude
+
+   Therefore :g:`A <g1:A>`, :g:`B <g1:B>` are similar solid numbers.
 
 Dependency Graph
 ----------------
@@ -83,258 +171,300 @@ Dependency Graph
      node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11, color="#d6d3cd", fontcolor="#ffffff"];
      edge [color="#8c857b", fontcolor="#8c857b", arrowsize=0.75];
      rankdir="TB";
-     "G.1" [label="G.1", tooltip="G.1 (I.cn.1): Things equal to the same thing are equal to one another.", fillcolor="#442222", URL="../G.1/index.html", target="_top"];
-     "G.2" [label="G.2", tooltip="G.2 (I.def.15): A circle is a plane figure contained by one line such that all segments falling upon it from its center are equal.", fillcolor="#224422", URL="../G.2/index.html", target="_top"];
-     "G.3" [label="G.3", tooltip="G.3 (I.post.1): Construct a segment between any two points.", fillcolor="#444422", URL="../G.3/index.html", target="_top"];
-     "G.4" [label="G.4", tooltip="G.4 (I.post.3): Construct a circle with any center and radius.", fillcolor="#444422", URL="../G.4/index.html", target="_top"];
-     "G.5" [label="G.5", tooltip="G.5 (I.1): Construct an equilateral triangle on a given finite segment.", fillcolor="#222244", URL="../G.5/index.html", target="_top"];
-     "G.6" [label="G.6", tooltip="G.6 (I.cn.3): If equals are subtracted from equals, the remainders are equal.", fillcolor="#442222", URL="../G.6/index.html", target="_top"];
-     "G.7" [label="G.7", tooltip="G.7 (I.post.2): Extend a finite segment continuously in a straight line.", fillcolor="#444422", URL="../G.7/index.html", target="_top"];
-     "G.8" [label="G.8", tooltip="G.8 (I.2): Construct at a given point a segment equal to a given segment.", fillcolor="#222244", URL="../G.8/index.html", target="_top"];
-     "G.9" [label="G.9", tooltip="G.9 (I.3): Cut off from the greater of two unequal segments a segment equal to the less.", fillcolor="#222244", URL="../G.9/index.html", target="_top"];
-     "G.10" [label="G.10", tooltip="G.10 (I.cn.4): Things that coincide with one another are equal.", fillcolor="#442222", URL="../G.10/index.html", target="_top"];
-     "G.11" [label="G.11", tooltip="G.11 (I.4): Triangles with two sides and the included angle equal are congruent (SAS).", fillcolor="#222244", URL="../G.11/index.html", target="_top"];
-     "G.12" [label="G.12", tooltip="G.12 (I.5): In an isosceles triangle, the angles at the base are equal, and if the equal sides are extended, the angles under the base are equal.", fillcolor="#222244", URL="../G.12/index.html", target="_top"];
-     "G.14" [label="G.14", tooltip="G.14 (I.7): On the same segment and on the same side, there cannot be constructed two distinct triangles with both pairs of conterminous sides equal.", fillcolor="#222244", URL="../G.14/index.html", target="_top"];
-     "G.15" [label="G.15", tooltip="G.15 (I.8): Triangles with all three corresponding sides equal have their corresponding angles equal (SSS).", fillcolor="#222244", URL="../G.15/index.html", target="_top"];
-     "G.16" [label="G.16", tooltip="G.16 (I.9): Bisect a given angle.", fillcolor="#222244", URL="../G.16/index.html", target="_top"];
-     "G.17" [label="G.17", tooltip="G.17 (I.10): Bisect a given finite segment.", fillcolor="#222244", URL="../G.17/index.html", target="_top"];
-     "G.18" [label="G.18", tooltip="G.18 (I.def.10): When a straight line standing on a straight line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing line is perpendicular to that on which...", fillcolor="#224422", URL="../G.18/index.html", target="_top"];
-     "G.19" [label="G.19", tooltip="G.19 (I.11): Construct a line at right angles to a given line from a given point on it.", fillcolor="#222244", URL="../G.19/index.html", target="_top"];
-     "G.21" [label="G.21", tooltip="G.21 (I.cn.2): If equals are added to equals, the wholes are equal.", fillcolor="#442222", URL="../G.21/index.html", target="_top"];
-     "G.22" [label="G.22", tooltip="G.22 (I.13): A ray standing on a line makes either two right angles or adjacent angles summing to two right angles.", fillcolor="#222244", URL="../G.22/index.html", target="_top"];
-     "G.23" [label="G.23", tooltip="G.23 (I.post.4): All right angles are equal.", fillcolor="#444422", URL="../G.23/index.html", target="_top"];
-     "G.24" [label="G.24", tooltip="G.24 (I.14): If two rays at a point on a line on opposite sides make adjacent angles summing to two right angles, the two rays are collinear.", fillcolor="#222244", URL="../G.24/index.html", target="_top"];
-     "G.25" [label="G.25", tooltip="G.25 (I.15): Intersecting lines make their vertical angles equal.", fillcolor="#222244", URL="../G.25/index.html", target="_top"];
-     "G.26" [label="G.26", tooltip="G.26 (I.cn.5): The whole is greater than the part.", fillcolor="#442222", URL="../G.26/index.html", target="_top"];
-     "G.27" [label="G.27", tooltip="G.27 (I.16): In any triangle, if one side is extended, the exterior angle is greater than either opposite interior angle.", fillcolor="#222244", URL="../G.27/index.html", target="_top"];
-     "G.29" [label="G.29", tooltip="G.29 (I.18): In any triangle, the greater side subtends the greater angle.", fillcolor="#222244", URL="../G.29/index.html", target="_top"];
-     "G.30" [label="G.30", tooltip="G.30 (I.19): In any triangle, the greater angle is subtended by the greater side.", fillcolor="#222244", URL="../G.30/index.html", target="_top"];
-     "G.31" [label="G.31", tooltip="G.31 (I.20): In any triangle, the sum of any two sides is greater than the remaining side.", fillcolor="#222244", URL="../G.31/index.html", target="_top"];
-     "G.33" [label="G.33", tooltip="G.33 (I.22): Construct a triangle from three segments equal to three given segments satisfying the triangle inequality.", fillcolor="#222244", URL="../G.33/index.html", target="_top"];
-     "G.34" [label="G.34", tooltip="G.34 (I.23): Construct on a given line at a given point an angle equal to a given angle.", fillcolor="#222244", URL="../G.34/index.html", target="_top"];
-     "G.37" [label="G.37", tooltip="G.37 (I.26): Triangles with two angles and one corresponding side equal are congruent (ASA / AAS).", fillcolor="#222244", URL="../G.37/index.html", target="_top"];
-     "G.38" [label="G.38", tooltip="G.38 (I.def.23): Parallel lines are straight lines in the same plane which, produced indefinitely in both directions, do not meet.", fillcolor="#224422", URL="../G.38/index.html", target="_top"];
-     "G.39" [label="G.39", tooltip="G.39 (I.27): If a transversal cutting two lines makes the alternate interior angles equal, the lines are parallel.", fillcolor="#222244", URL="../G.39/index.html", target="_top"];
-     "G.41" [label="G.41", tooltip="G.41 (I.post.5): Two lines intersected by a transversal with interior angles on one side summing to less than two right angles meet on that side.", fillcolor="#444422", URL="../G.41/index.html", target="_top"];
-     "G.42" [label="G.42", tooltip="G.42 (I.29): A transversal cutting parallel lines makes alternate interior angles equal, exterior and opposite interior angles equal, and same-side interior angles supplementary.", fillcolor="#222244", URL="../G.42/index.html", target="_top"];
-     "G.44" [label="G.44", tooltip="G.44 (I.31): Construct through a given point a line parallel to a given line.", fillcolor="#222244", URL="../G.44/index.html", target="_top"];
-     "G.46" [label="G.46", tooltip="G.46 (I.33): Segments joining the endpoints of equal and parallel segments in the same directions are themselves equal and parallel.", fillcolor="#222244", URL="../G.46/index.html", target="_top"];
-     "G.47" [label="G.47", tooltip="G.47 (I.34): In a parallelogram, opposite sides and opposite angles are equal, and the diagonal bisects the area.", fillcolor="#222244", URL="../G.47/index.html", target="_top"];
-     "G.48" [label="G.48", tooltip="G.48 (I.35): Parallelograms on the same base and in the same parallels are equal in area.", fillcolor="#222244", URL="../G.48/index.html", target="_top"];
-     "G.49" [label="G.49", tooltip="G.49 (I.36): Parallelograms on equal bases and in the same parallels are equal in area.", fillcolor="#222244", URL="../G.49/index.html", target="_top"];
-     "G.50" [label="G.50", tooltip="G.50 (I.37): Triangles on the same base and in the same parallels are equal in area.", fillcolor="#222244", URL="../G.50/index.html", target="_top"];
-     "G.51" [label="G.51", tooltip="G.51 (I.38): Triangles on equal bases and in the same parallels are equal in area.", fillcolor="#222244", URL="../G.51/index.html", target="_top"];
-     "G.52" [label="G.52", tooltip="G.52 (I.39): Equal triangles on the same base and on the same side lie in the same parallels.", fillcolor="#222244", URL="../G.52/index.html", target="_top"];
-     "G.54" [label="G.54", tooltip="G.54 (I.41): If a parallelogram shares the same base with a triangle and lies in the same parallels, the parallelogram is double the triangle.", fillcolor="#222244", URL="../G.54/index.html", target="_top"];
-     "G.135" [label="G.135", tooltip="G.135 (V.1): If there be any number of magnitudes whatever which are, respectively, equimultiples of any magnitudes equal in multitude, then, whatever multiple one of the magnitudes is of one, ...", fillcolor="#222244", URL="../G.135/index.html", target="_top"];
-     "G.136" [label="G.136", tooltip="G.136 (V.2): If a first magnitude be the same multiple of a second that a third is of a fourth, and a fifth also be the same multiple of the second that a sixth is of the fourth, the sum of the...", fillcolor="#222244", URL="../G.136/index.html", target="_top"];
-     "G.137" [label="G.137", tooltip="G.137 (V.3): If a first magnitude be the same multiple of a second that a third is of a fourth, and if equimultiples be taken of the first and third, then alsoex aequali the magnitudes taken is...", fillcolor="#222244", URL="../G.137/index.html", target="_top"];
-     "G.138" [label="G.138", tooltip="G.138 (V.def.5): Magnitudes are said tobe in the same ratio, the first to the second and the third to the fourth, when, if any equimultiples whatever be taken of the first and third, and any equimu...", fillcolor="#224422", URL="../G.138/index.html", target="_top"];
-     "G.139" [label="G.139", tooltip="G.139 (V.4): If a first magnitude have to a second the same ratio as a third to a fourth, any equimultiples whatever of the first and third will also have the same ratio to any equimultiples wh...", fillcolor="#222244", URL="../G.139/index.html", target="_top"];
-     "G.142" [label="G.142", tooltip="G.142 (V.7): Equal magnitudes have to the same the same ratio, as also has the same to equal magnitudes.", fillcolor="#222244", URL="../G.142/index.html", target="_top"];
-     "G.143" [label="G.143", tooltip="G.143 (V.def.4): Magnitudes are said tohave a ratio to one another which are capable, when multiplied, of exceeding one another.", fillcolor="#224422", URL="../G.143/index.html", target="_top"];
-     "G.144" [label="G.144", tooltip="G.144 (V.def.7): When, of the equimultiples, the multiple of the first magnitude exceeds the multiple of the second, but the multiple of the third does not exceed the multiple of the fourth, then t...", fillcolor="#224422", URL="../G.144/index.html", target="_top"];
-     "G.145" [label="G.145", tooltip="G.145 (V.8): Of unequal magnitudes, the greater has to the same a greater ratio than the less has; and the same has to the less a greater ratio than it has to the greater.", fillcolor="#222244", URL="../G.145/index.html", target="_top"];
-     "G.146" [label="G.146", tooltip="G.146 (V.9): Magnitudes which have the same ratio to the same are equal; and magnitudes to which the same has the same ratio are equal.", fillcolor="#222244", URL="../G.146/index.html", target="_top"];
-     "G.147" [label="G.147", tooltip="G.147 (V.10): Of magnitudes which have a ratio to the same, that which has a greater ratio is greater; and that to which the same has a greater ratio is less.", fillcolor="#222244", URL="../G.147/index.html", target="_top"];
-     "G.148" [label="G.148", tooltip="G.148 (V.11): Ratios which are the same with the same ratio are also the same with one another.", fillcolor="#222244", URL="../G.148/index.html", target="_top"];
-     "G.149" [label="G.149", tooltip="G.149 (V.12): If any number of magnitudes be proportional, as one of the antecedents is to one of the consequents, so will all the antecedents be to all the consequents.", fillcolor="#222244", URL="../G.149/index.html", target="_top"];
-     "G.150" [label="G.150", tooltip="G.150 (V.13): If a first magnitude have to a second the same ratio as a third to a fourth, and the third have to the fourth a greater ratio than a fifth has to a sixth, the first will also have ...", fillcolor="#222244", URL="../G.150/index.html", target="_top"];
-     "G.151" [label="G.151", tooltip="G.151 (V.14): If a first magnitude have to a second the same ratio as a third has to a fourth, and the first be greater than the third, the second is greater than the fourth; if equal, equal; an...", fillcolor="#222244", URL="../G.151/index.html", target="_top"];
-     "G.152" [label="G.152", tooltip="G.152 (V.15): Parts have the same ratio as the same multiples of them taken in corresponding order.", fillcolor="#222244", URL="../G.152/index.html", target="_top"];
-     "G.153" [label="G.153", tooltip="G.153 (V.16): If four magnitudes be proportional, they is proportional alternately.", fillcolor="#222244", URL="../G.153/index.html", target="_top"];
-     "G.157" [label="G.157", tooltip="G.157 (V.20): If there be three magnitudes, and others equal to them in multitude, which taken two and two are in the same ratio, and ifex aequali the first be greater than the third, the fourth...", fillcolor="#222244", URL="../G.157/index.html", target="_top"];
-     "G.159" [label="G.159", tooltip="G.159 (V.22): If there be any number of magnitudes whatever, and others equal to them in multitude, which taken two and two together are in the same ratio, they is in the same ratio ex aequali.", fillcolor="#222244", URL="../G.159/index.html", target="_top"];
-     "G.163" [label="G.163", tooltip="G.163 (VI.1): Triangles and parallelograms which are under the same height are to one another as their bases.", fillcolor="#222244", URL="../G.163/index.html", target="_top"];
-     "G.164" [label="G.164", tooltip="G.164 (VI.2): If a straight line be drawn parallel to one of the sides of a triangle, it will cut the sides of the triangle proportionally; and, if the sides of the triangle be cut proportionall...", fillcolor="#222244", URL="../G.164/index.html", target="_top"];
-     "G.174" [label="G.174", tooltip="G.174 (VI.11): To two given straight lines to find a third proportional.", fillcolor="#222244", URL="../G.174/index.html", target="_top"];
-     "G.178" [label="G.178", tooltip="G.178 (VI.15): In equal triangles which have one angle equal to one angle the sides about the equal angles are reciprocally proportional; and those triangles which have one angle equal to one ang...", fillcolor="#222244", URL="../G.178/index.html", target="_top"];
-     "G.182" [label="G.182", tooltip="G.182 (V.def.9): When three magnitudes are proportional, the first is said to have to the third theduplicate ratio of that which it has to the second.", fillcolor="#224422", URL="../G.182/index.html", target="_top"];
-     "G.183" [label="G.183", tooltip="G.183 (V.def.11): The termcorresponding magnitudes is used of antecedents in relation to antecedents, and of consequents in relation to consequents.", fillcolor="#224422", URL="../G.183/index.html", target="_top"];
-     "G.184" [label="G.184", tooltip="G.184 (VI.19): Similar triangles are to one another in the duplicate ratio of the corresponding sides.", fillcolor="#222244", URL="../G.184/index.html", target="_top"];
-     "G.210" [label="G.210", tooltip="G.210 (VII.def.20): **Numbers** areproportional when the first is the same multiple, or the same part, or the same parts, of the second that the third is of the fourth.", fillcolor="#224422", URL="../G.210/index.html", target="_top"];
-     "G.318" [label="G.318", tooltip="G.318 (X.5): Commensurable magnitudes have to one another the ratio which a number has to a number.", fillcolor="#222244", URL="../G.318/index.html", target="_top"];
-     "G.319" [label="G.319", tooltip="G.319 (X.6): If two magnitudes have to one another the ratio which a number has to a number, the magnitudes is commensurable.", fillcolor="#222244", URL="../G.319/index.html", target="_top"];
-     "G.320" [label="G.320", tooltip="G.320 (X.7): Incommensurable magnitudes have not to one another the ratio which a number has to a number.", fillcolor="#222244", URL="../G.320/index.html", target="_top"];
-     "G.321" [label="G.321", tooltip="G.321 (X.8): If two magnitudes have not to one another the ratio which a number has to a number, the magnitudes is incommensurable.", fillcolor="#222244", URL="../G.321/index.html", target="_top"];
-     "G.323" [label="G.323", tooltip="G.323 (X.11): If four magnitudes be proportional, and the first be commensurable with the second, the third is commensurable with the fourth; and, if the first be incommensurable with the second...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
-     "G.5" -> "G.1";
-     "G.8" -> "G.1";
-     "G.9" -> "G.1";
-     "G.22" -> "G.1";
-     "G.24" -> "G.1";
-     "G.25" -> "G.1";
-     "G.42" -> "G.1";
-     "G.48" -> "G.1";
-     "G.49" -> "G.1";
-     "G.52" -> "G.1";
-     "G.5" -> "G.2";
-     "G.9" -> "G.2";
-     "G.5" -> "G.3";
+     "G.1" [label="G.1", tooltip="G.1 (I.def.1): A point A is that which has no part.", fillcolor="#224422", URL="../G.1/index.html", target="_top"];
+     "G.2" [label="G.2", tooltip="G.2 (I.def.2): A line [ A B ] is a projection of a relationship of two points A, B.", fillcolor="#224422", URL="../G.2/index.html", target="_top"];
+     "G.3" [label="G.3", tooltip="G.3 (I.def.3): The extremities of a segment / A B / are points A, B.", fillcolor="#224422", URL="../G.3/index.html", target="_top"];
+     "G.4" [label="G.4", tooltip="G.4 (I.def.4): A segment / A B / is a portion of a line [ A B ] between two points A, B on the line.", fillcolor="#224422", URL="../G.4/index.html", target="_top"];
+     "G.5" [label="G.5", tooltip="G.5 (I.def.5): A surface is that which has length and breadth only.", fillcolor="#224422", URL="../G.5/index.html", target="_top"];
+     "G.7" [label="G.7", tooltip="G.7 (I.def.7): A plane surface lies evenly with the lines on itself.", fillcolor="#224422", URL="../G.7/index.html", target="_top"];
+     "G.8" [label="G.8", tooltip="G.8 (I.def.13): A boundary is the extremity of anything.", fillcolor="#224422", URL="../G.8/index.html", target="_top"];
+     "G.9" [label="G.9", tooltip="G.9 (I.def.14): A figure is that which is contained by any boundary or boundaries.", fillcolor="#224422", URL="../G.9/index.html", target="_top"];
+     "G.11" [label="G.11", tooltip="G.11 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
+     "G.12" [label="G.12", tooltip="G.12 (I.def.20): Of trilateral figures, an equilateral triangle < A B C > has three equal sides, an isosceles triangle < D E F > has two equal sides, and a scalene triangle < G H K > has three uneq...", fillcolor="#224422", URL="../G.12/index.html", target="_top"];
+     "G.22" [label="G.22", tooltip="G.22 (I.def.8): A plane angle is the inclination to one another of two lines or arcs in a plane that meet and do not lie on the same line.", fillcolor="#224422", URL="../G.22/index.html", target="_top"];
+     "G.63" [label="G.63", tooltip="G.63 (I.def.22): Of quadrilateral figures, a square is equilateral and right-angled; an oblong is right-angled but not equilateral; a rhombus is equilateral but not right-angled; a rhomboid has opp...", fillcolor="#224422", URL="../G.63/index.html", target="_top"];
+     "G.169" [label="G.169", tooltip="G.169 (V.def.1): A magnitude is apart of a magnitude, the less of the greater, when it measures the greater.", fillcolor="#224422", URL="../G.169/index.html", target="_top"];
+     "G.170" [label="G.170", tooltip="G.170 (V.def.2): The greater is amultiple of the less when it ismeasured by the less.", fillcolor="#224422", URL="../G.170/index.html", target="_top"];
+     "G.171" [label="G.171", tooltip="G.171 (V.1): If there be any number of magnitudes whatever which are, respectively, equimultiples of any magnitudes equal in multitude, then, whatever multiple one of the magnitudes is of one, ...", fillcolor="#222244", URL="../G.171/index.html", target="_top"];
+     "G.173" [label="G.173", tooltip="G.173 (V.def.3): Aratio is a sort of relation in respect of size between two magnitudes of the same kind.", fillcolor="#224422", URL="../G.173/index.html", target="_top"];
+     "G.174" [label="G.174", tooltip="G.174 (V.def.17): Aratioex aequali arises when, there being several magnitudes and another set equal to them in multitude which taken two and two are in the same proportion, as the first is to the l...", fillcolor="#224422", URL="../G.174/index.html", target="_top"];
+     "G.176" [label="G.176", tooltip="G.176 (V.def.5): Magnitudes are said tobe in the same ratio, the first to the second and the third to the fourth, when, if anyequimultiples whatever be taken of the first and third, and any equimul...", fillcolor="#224422", URL="../G.176/index.html", target="_top"];
+     "G.180" [label="G.180", tooltip="G.180 (V.def.6): Let magnitudes which have thesame ratio be calledproportional.", fillcolor="#224422", URL="../G.180/index.html", target="_top"];
+     "G.181" [label="G.181", tooltip="G.181 (V.def.11): The termcorresponding magnitudes is used of antecedents in relation to antecedents, and of consequents in relation to consequents.", fillcolor="#224422", URL="../G.181/index.html", target="_top"];
+     "G.182" [label="G.182", tooltip="G.182 (V.def.13): Inverse ratio means taking theconsequent as antecedent in relation to the antecedent as consequent.", fillcolor="#224422", URL="../G.182/index.html", target="_top"];
+     "G.183" [label="G.183", tooltip="G.183 (V.7): Equal magnitudes have to the same the same ratio, as also has the same to equal magnitudes.", fillcolor="#222244", URL="../G.183/index.html", target="_top"];
+     "G.184" [label="G.184", tooltip="G.184 (V.def.4): Magnitudes are said tohave a ratio to one another which are capable, when multiplied, of exceeding one another.", fillcolor="#224422", URL="../G.184/index.html", target="_top"];
+     "G.185" [label="G.185", tooltip="G.185 (V.def.7): When, of theequimultiples, the multiple of the first magnitude exceeds the multiple of the second, but the multiple of the third does not exceed the multiple of the fourth, then th...", fillcolor="#224422", URL="../G.185/index.html", target="_top"];
+     "G.186" [label="G.186", tooltip="G.186 (V.8): Of unequal magnitudes, the greater has to the same a greater ratio than the less has; and the same has to the less a greater ratio than it has to the greater.", fillcolor="#222244", URL="../G.186/index.html", target="_top"];
+     "G.187" [label="G.187", tooltip="G.187 (V.9): Magnitudes which have the same ratio to the same are equal; and magnitudes to which the same has the same ratio are equal.", fillcolor="#222244", URL="../G.187/index.html", target="_top"];
+     "G.194" [label="G.194", tooltip="G.194 (V.def.12): Alternate ratio means taking theantecedent in relation to the antecedent and the consequent in relation to the consequent.", fillcolor="#224422", URL="../G.194/index.html", target="_top"];
+     "G.247" [label="G.247", tooltip="G.247 (VII.def.1): Anunit is that by virtue of which each of the things that exist is called one.", fillcolor="#224422", URL="../G.247/index.html", target="_top"];
+     "G.248" [label="G.248", tooltip="G.248 (VII.def.2): Anumber is a multitude composed ofunits.", fillcolor="#224422", URL="../G.248/index.html", target="_top"];
+     "G.249" [label="G.249", tooltip="G.249 (VII.def.12): Numbers prime to one another are those which aremeasured by anunit alone as a common measure.", fillcolor="#224422", URL="../G.249/index.html", target="_top"];
+     "G.250" [label="G.250", tooltip="G.250 (VII.1): Two unequal numbers being set out, and the less being continually subtracted in turn from the greater, if the number which is left never measures the one before it until an unit is...", fillcolor="#222244", URL="../G.250/index.html", target="_top"];
+     "G.251" [label="G.251", tooltip="G.251 (VII.2): Given two numbers not prime to one another, to find their greatest common measure.", fillcolor="#222244", URL="../G.251/index.html", target="_top"];
+     "G.252" [label="G.252", tooltip="G.252 (VII.3): Given three numbers not prime to one another, to find their greatest common measure.", fillcolor="#222244", URL="../G.252/index.html", target="_top"];
+     "G.253" [label="G.253", tooltip="G.253 (VII.def.3): Anumber is apart of a number, the less of the greater, when itmeasures the greater;", fillcolor="#224422", URL="../G.253/index.html", target="_top"];
+     "G.254" [label="G.254", tooltip="G.254 (VII.def.4): Butparts when it does notmeasure it.", fillcolor="#224422", URL="../G.254/index.html", target="_top"];
+     "G.255" [label="G.255", tooltip="G.255 (VII.4): Any number is either a part or parts of any number, the less of the greater.", fillcolor="#222244", URL="../G.255/index.html", target="_top"];
+     "G.256" [label="G.256", tooltip="G.256 (VII.def.5): The greaternumber is amultiple of the less when it ismeasured by the less.", fillcolor="#224422", URL="../G.256/index.html", target="_top"];
+     "G.257" [label="G.257", tooltip="G.257 (VII.5): If a number be a part of a number, and another be the same part of another, the sum is the same part of the sum that the one is of the one.", fillcolor="#222244", URL="../G.257/index.html", target="_top"];
+     "G.258" [label="G.258", tooltip="G.258 (VII.6): If a number be parts of a number, and another be the same parts of another, the sum is the same parts of the sum that the one is of the one.", fillcolor="#222244", URL="../G.258/index.html", target="_top"];
+     "G.261" [label="G.261", tooltip="G.261 (VII.9): If a number be a part of a number, and another be the same part of another, alternately also, whatever part or parts the first is of the third, the same part, or the same parts, wi...", fillcolor="#222244", URL="../G.261/index.html", target="_top"];
+     "G.262" [label="G.262", tooltip="G.262 (VII.10): If a number be parts of a number, and another be the same parts of another, alternately also, whatever parts or part the first is of the third, the same parts or the same part will...", fillcolor="#222244", URL="../G.262/index.html", target="_top"];
+     "G.263" [label="G.263", tooltip="G.263 (VII.def.20): Numbers areproportional when the first is thesame multiple, or thesame part, or thesame parts, of the second that the third is of the fourth.", fillcolor="#224422", URL="../G.263/index.html", target="_top"];
+     "G.265" [label="G.265", tooltip="G.265 (VII.12): If there be as many numbers as we please in proportion, then, as one of the antecedents is to one of the consequents, so are all the antecedents to all the consequents.", fillcolor="#222244", URL="../G.265/index.html", target="_top"];
+     "G.266" [label="G.266", tooltip="G.266 (VII.13): If four numbers be proportional, they is proportional alternately.", fillcolor="#222244", URL="../G.266/index.html", target="_top"];
+     "G.267" [label="G.267", tooltip="G.267 (VII.14): If there be as many numbers as we please, and others equal to them in multitude, which taken two and two are in the same ratio, they is in the same ratio ex aequali.", fillcolor="#222244", URL="../G.267/index.html", target="_top"];
+     "G.268" [label="G.268", tooltip="G.268 (VII.15): If an unit measure any number, and another number measure any other number the same number of times, alternately also, the unit will measure the third number the same number of tim...", fillcolor="#222244", URL="../G.268/index.html", target="_top"];
+     "G.269" [label="G.269", tooltip="G.269 (VII.def.15): Anumber is said tomultiply a number when that which is multiplied is added to itself as many times as there areunits in the other, and thus some number is produced.", fillcolor="#224422", URL="../G.269/index.html", target="_top"];
+     "G.270" [label="G.270", tooltip="G.270 (VII.16): If two numbers by multiplying one another make certain numbers, the numbers so produced are equal.", fillcolor="#222244", URL="../G.270/index.html", target="_top"];
+     "G.271" [label="G.271", tooltip="G.271 (VII.17): If a number by multiplying two numbers make certain numbers, the numbers so produced will have the same ratio as the numbers multiplied.", fillcolor="#222244", URL="../G.271/index.html", target="_top"];
+     "G.272" [label="G.272", tooltip="G.272 (VII.18): If two numbers by multiplying any number make certain numbers, the numbers so produced will have the same ratio as the multipliers.", fillcolor="#222244", URL="../G.272/index.html", target="_top"];
+     "G.273" [label="G.273", tooltip="G.273 (VII.19): If four numbers be proportional, the number produced from the first and fourth will equals the number produced from the second and third; and, if the number produced from the first...", fillcolor="#222244", URL="../G.273/index.html", target="_top"];
+     "G.274" [label="G.274", tooltip="G.274 (VII.20): The least numbers of those which have the same ratio with them measure those which have the same ratio the same number of times, the greater the greater and the less the less.", fillcolor="#222244", URL="../G.274/index.html", target="_top"];
+     "G.275" [label="G.275", tooltip="G.275 (VII.21): Numbers prime to one another are the least of those which have the same ratio with them.", fillcolor="#222244", URL="../G.275/index.html", target="_top"];
+     "G.276" [label="G.276", tooltip="G.276 (VII.22): The least numbers of those which have the same ratio with them are prime to one another.", fillcolor="#222244", URL="../G.276/index.html", target="_top"];
+     "G.277" [label="G.277", tooltip="G.277 (VII.23): If two numbers be prime to one another, the number which measures the one of them is prime to the remaining number.", fillcolor="#222244", URL="../G.277/index.html", target="_top"];
+     "G.278" [label="G.278", tooltip="G.278 (VII.24): If two numbers be prime to any number, their product also is prime to the same.", fillcolor="#222244", URL="../G.278/index.html", target="_top"];
+     "G.279" [label="G.279", tooltip="G.279 (VII.25): If two numbers be prime to one another, the product of one of them into itself is prime to the remaining one.", fillcolor="#222244", URL="../G.279/index.html", target="_top"];
+     "G.280" [label="G.280", tooltip="G.280 (VII.26): If two numbers be prime to two numbers, both to each, their products also is prime to one another.", fillcolor="#222244", URL="../G.280/index.html", target="_top"];
+     "G.281" [label="G.281", tooltip="G.281 (VII.27): If two numbers be prime to one another, and each by multiplying itself make a certain number, the products is prime to one another; and, if the original numbers by multiplying the ...", fillcolor="#222244", URL="../G.281/index.html", target="_top"];
+     "G.283" [label="G.283", tooltip="G.283 (VII.def.11): Aprime number is that which ismeasured by anunit alone.", fillcolor="#224422", URL="../G.283/index.html", target="_top"];
+     "G.289" [label="G.289", tooltip="G.289 (VII.33): Given as many numbers as we please, to find the least of those which have the same ratio with them.", fillcolor="#222244", URL="../G.289/index.html", target="_top"];
+     "G.296" [label="G.296", tooltip="G.296 (VIII.1): If there be as many numbers as we please in continued proportion, and the extremes of them be prime to one another, the numbers are the least of those which have the same ratio wit...", fillcolor="#222244", URL="../G.296/index.html", target="_top"];
+     "G.297" [label="G.297", tooltip="G.297 (VIII.2): Find numbers in continued proportion, as many as may be prescribed, and the least that are in a given ratio.", fillcolor="#222244", URL="../G.297/index.html", target="_top"];
+     "G.298" [label="G.298", tooltip="G.298 (VIII.3): If as many numbers as we please in continued proportion be the least of those which have the same ratio with them, the extremes of them are prime to one another.", fillcolor="#222244", URL="../G.298/index.html", target="_top"];
+     "G.300" [label="G.300", tooltip="G.300 (VII.def.16): And, when twonumbers havingmultiplied one another make some number, the number so produced is calledplane, and itssides are the numbers which have multiplied one another.", fillcolor="#224422", URL="../G.300/index.html", target="_top"];
+     "G.318" [label="G.318", tooltip="G.318 (VII.def.21): Similar plane and solid numbers are those which have their sidesproportional.", fillcolor="#224422", URL="../G.318/index.html", target="_top"];
+     "G.322" [label="G.322", tooltip="G.322 (VIII.20): If one mean proportional number fall between two numbers, the numbers is similar plane numbers.", fillcolor="#222244", URL="../G.322/index.html", target="_top"];
+     "G.323" [label="G.323", tooltip="G.323 (VIII.21): If two mean proportional numbers fall between two numbers, the numbers are similar solid numbers.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.2" -> "G.1";
+     "G.3" -> "G.1";
+     "G.4" -> "G.1";
+     "G.3" -> "G.2";
+     "G.4" -> "G.2";
+     "G.22" -> "G.2";
+     "G.4" -> "G.3";
      "G.8" -> "G.3";
-     "G.12" -> "G.3";
-     "G.14" -> "G.3";
-     "G.27" -> "G.3";
-     "G.5" -> "G.4";
-     "G.8" -> "G.4";
-     "G.9" -> "G.4";
-     "G.8" -> "G.5";
-     "G.17" -> "G.5";
-     "G.19" -> "G.5";
-     "G.8" -> "G.6";
-     "G.24" -> "G.6";
-     "G.25" -> "G.6";
-     "G.48" -> "G.6";
-     "G.8" -> "G.7";
-     "G.12" -> "G.7";
-     "G.27" -> "G.7";
+     "G.7" -> "G.4";
+     "G.11" -> "G.4";
+     "G.22" -> "G.4";
+     "G.7" -> "G.5";
+     "G.22" -> "G.7";
+     "G.322" -> "G.7";
      "G.9" -> "G.8";
-     "G.12" -> "G.9";
-     "G.16" -> "G.9";
-     "G.19" -> "G.9";
-     "G.27" -> "G.9";
-     "G.29" -> "G.9";
-     "G.33" -> "G.9";
-     "G.174" -> "G.9";
-     "G.11" -> "G.10";
+     "G.187" -> "G.9";
      "G.12" -> "G.11";
-     "G.17" -> "G.11";
-     "G.27" -> "G.11";
-     "G.37" -> "G.11";
-     "G.46" -> "G.11";
-     "G.47" -> "G.11";
-     "G.48" -> "G.11";
-     "G.14" -> "G.12";
-     "G.30" -> "G.12";
-     "G.31" -> "G.12";
-     "G.15" -> "G.14";
-     "G.16" -> "G.15";
-     "G.19" -> "G.15";
-     "G.34" -> "G.15";
-     "G.17" -> "G.16";
-     "G.27" -> "G.17";
-     "G.19" -> "G.18";
-     "G.22" -> "G.18";
-     "G.22" -> "G.19";
-     "G.22" -> "G.21";
-     "G.42" -> "G.21";
-     "G.47" -> "G.21";
-     "G.48" -> "G.21";
-     "G.24" -> "G.22";
-     "G.25" -> "G.22";
-     "G.42" -> "G.22";
-     "G.24" -> "G.23";
-     "G.25" -> "G.23";
-     "G.178" -> "G.24";
-     "G.27" -> "G.25";
-     "G.42" -> "G.25";
-     "G.27" -> "G.26";
-     "G.31" -> "G.26";
-     "G.29" -> "G.27";
-     "G.37" -> "G.27";
-     "G.39" -> "G.27";
-     "G.30" -> "G.29";
-     "G.31" -> "G.30";
-     "G.33" -> "G.31";
-     "G.34" -> "G.33";
-     "G.44" -> "G.34";
-     "G.47" -> "G.37";
-     "G.39" -> "G.38";
-     "G.44" -> "G.39";
-     "G.46" -> "G.39";
-     "G.42" -> "G.41";
-     "G.46" -> "G.42";
-     "G.47" -> "G.42";
-     "G.48" -> "G.42";
-     "G.50" -> "G.44";
-     "G.51" -> "G.44";
-     "G.52" -> "G.44";
-     "G.174" -> "G.44";
-     "G.49" -> "G.46";
-     "G.48" -> "G.47";
-     "G.49" -> "G.47";
-     "G.50" -> "G.47";
-     "G.51" -> "G.47";
-     "G.54" -> "G.47";
-     "G.49" -> "G.48";
-     "G.50" -> "G.48";
-     "G.51" -> "G.49";
-     "G.52" -> "G.50";
-     "G.54" -> "G.50";
-     "G.163" -> "G.51";
-     "G.164" -> "G.51";
-     "G.164" -> "G.52";
-     "G.163" -> "G.54";
-     "G.145" -> "G.135";
-     "G.149" -> "G.135";
-     "G.137" -> "G.136";
-     "G.139" -> "G.137";
-     "G.139" -> "G.138";
-     "G.142" -> "G.138";
-     "G.149" -> "G.138";
-     "G.150" -> "G.138";
-     "G.153" -> "G.138";
-     "G.159" -> "G.138";
-     "G.163" -> "G.138";
-     "G.159" -> "G.139";
-     "G.147" -> "G.142";
-     "G.152" -> "G.142";
-     "G.164" -> "G.142";
-     "G.178" -> "G.142";
-     "G.318" -> "G.142";
-     "G.319" -> "G.142";
-     "G.145" -> "G.143";
-     "G.145" -> "G.144";
-     "G.150" -> "G.144";
-     "G.146" -> "G.145";
-     "G.147" -> "G.145";
-     "G.151" -> "G.145";
-     "G.157" -> "G.145";
-     "G.164" -> "G.146";
-     "G.178" -> "G.146";
-     "G.319" -> "G.146";
-     "G.151" -> "G.147";
-     "G.157" -> "G.147";
-     "G.153" -> "G.148";
-     "G.163" -> "G.148";
-     "G.164" -> "G.148";
-     "G.178" -> "G.148";
-     "G.184" -> "G.148";
-     "G.319" -> "G.148";
-     "G.152" -> "G.149";
-     "G.151" -> "G.150";
-     "G.157" -> "G.150";
-     "G.153" -> "G.151";
-     "G.153" -> "G.152";
-     "G.163" -> "G.152";
-     "G.184" -> "G.153";
-     "G.159" -> "G.157";
-     "G.318" -> "G.159";
-     "G.319" -> "G.159";
-     "G.164" -> "G.163";
-     "G.178" -> "G.163";
-     "G.184" -> "G.163";
-     "G.174" -> "G.164";
-     "G.184" -> "G.174";
-     "G.184" -> "G.178";
-     "G.184" -> "G.182";
-     "G.184" -> "G.183";
-     "G.319" -> "G.184";
-     "G.318" -> "G.210";
-     "G.319" -> "G.210";
-     "G.321" -> "G.318";
+     "G.63" -> "G.11";
+     "G.63" -> "G.12";
+     "G.63" -> "G.22";
+     "G.297" -> "G.63";
+     "G.170" -> "G.169";
+     "G.249" -> "G.169";
+     "G.250" -> "G.169";
+     "G.251" -> "G.169";
+     "G.252" -> "G.169";
+     "G.253" -> "G.169";
+     "G.254" -> "G.169";
+     "G.256" -> "G.169";
+     "G.268" -> "G.169";
+     "G.274" -> "G.169";
+     "G.277" -> "G.169";
+     "G.283" -> "G.169";
+     "G.171" -> "G.170";
+     "G.176" -> "G.170";
+     "G.185" -> "G.170";
+     "G.257" -> "G.170";
+     "G.186" -> "G.171";
+     "G.174" -> "G.173";
+     "G.289" -> "G.173";
+     "G.297" -> "G.173";
+     "G.267" -> "G.174";
+     "G.180" -> "G.176";
+     "G.183" -> "G.176";
+     "G.187" -> "G.176";
+     "G.267" -> "G.176";
+     "G.271" -> "G.176";
+     "G.272" -> "G.176";
+     "G.274" -> "G.176";
+     "G.275" -> "G.176";
+     "G.276" -> "G.176";
+     "G.289" -> "G.176";
+     "G.296" -> "G.176";
+     "G.298" -> "G.176";
+     "G.183" -> "G.180";
+     "G.266" -> "G.180";
+     "G.273" -> "G.180";
+     "G.296" -> "G.180";
+     "G.297" -> "G.180";
+     "G.298" -> "G.180";
+     "G.318" -> "G.180";
+     "G.322" -> "G.180";
+     "G.323" -> "G.180";
+     "G.182" -> "G.181";
+     "G.194" -> "G.181";
+     "G.265" -> "G.181";
+     "G.183" -> "G.182";
+     "G.273" -> "G.183";
+     "G.186" -> "G.184";
+     "G.186" -> "G.185";
+     "G.187" -> "G.186";
+     "G.273" -> "G.187";
+     "G.261" -> "G.194";
+     "G.262" -> "G.194";
+     "G.266" -> "G.194";
+     "G.268" -> "G.194";
+     "G.248" -> "G.247";
+     "G.249" -> "G.247";
+     "G.250" -> "G.247";
+     "G.268" -> "G.247";
+     "G.269" -> "G.247";
+     "G.283" -> "G.247";
+     "G.250" -> "G.248";
+     "G.251" -> "G.248";
+     "G.252" -> "G.248";
+     "G.253" -> "G.248";
+     "G.255" -> "G.248";
+     "G.256" -> "G.248";
+     "G.257" -> "G.248";
+     "G.258" -> "G.248";
+     "G.261" -> "G.248";
+     "G.262" -> "G.248";
+     "G.265" -> "G.248";
+     "G.266" -> "G.248";
+     "G.267" -> "G.248";
+     "G.268" -> "G.248";
+     "G.269" -> "G.248";
+     "G.270" -> "G.248";
+     "G.271" -> "G.248";
+     "G.272" -> "G.248";
+     "G.273" -> "G.248";
+     "G.274" -> "G.248";
+     "G.275" -> "G.248";
+     "G.276" -> "G.248";
+     "G.277" -> "G.248";
+     "G.278" -> "G.248";
+     "G.279" -> "G.248";
+     "G.280" -> "G.248";
+     "G.281" -> "G.248";
+     "G.289" -> "G.248";
+     "G.296" -> "G.248";
+     "G.297" -> "G.248";
+     "G.298" -> "G.248";
+     "G.300" -> "G.248";
+     "G.322" -> "G.248";
+     "G.323" -> "G.248";
+     "G.250" -> "G.249";
+     "G.251" -> "G.249";
+     "G.252" -> "G.249";
+     "G.275" -> "G.249";
+     "G.276" -> "G.249";
+     "G.277" -> "G.249";
+     "G.278" -> "G.249";
+     "G.279" -> "G.249";
+     "G.280" -> "G.249";
+     "G.281" -> "G.249";
+     "G.296" -> "G.249";
+     "G.298" -> "G.249";
+     "G.251" -> "G.250";
+     "G.252" -> "G.251";
+     "G.255" -> "G.251";
+     "G.289" -> "G.252";
+     "G.255" -> "G.253";
+     "G.257" -> "G.253";
+     "G.261" -> "G.253";
+     "G.262" -> "G.253";
+     "G.263" -> "G.253";
+     "G.255" -> "G.254";
+     "G.258" -> "G.254";
+     "G.261" -> "G.254";
+     "G.262" -> "G.254";
+     "G.263" -> "G.254";
+     "G.274" -> "G.255";
+     "G.257" -> "G.256";
+     "G.263" -> "G.256";
+     "G.258" -> "G.257";
+     "G.261" -> "G.257";
+     "G.262" -> "G.257";
+     "G.265" -> "G.257";
+     "G.261" -> "G.258";
+     "G.262" -> "G.258";
+     "G.265" -> "G.258";
+     "G.262" -> "G.261";
+     "G.266" -> "G.262";
+     "G.265" -> "G.263";
+     "G.266" -> "G.263";
+     "G.271" -> "G.263";
+     "G.274" -> "G.263";
+     "G.289" -> "G.263";
+     "G.268" -> "G.265";
+     "G.274" -> "G.265";
+     "G.267" -> "G.266";
+     "G.271" -> "G.266";
+     "G.274" -> "G.266";
+     "G.322" -> "G.266";
+     "G.296" -> "G.267";
+     "G.323" -> "G.267";
+     "G.270" -> "G.268";
+     "G.270" -> "G.269";
+     "G.271" -> "G.269";
+     "G.272" -> "G.269";
+     "G.276" -> "G.269";
+     "G.278" -> "G.269";
+     "G.281" -> "G.269";
+     "G.289" -> "G.269";
+     "G.300" -> "G.269";
+     "G.272" -> "G.270";
+     "G.275" -> "G.270";
+     "G.278" -> "G.270";
+     "G.289" -> "G.270";
+     "G.272" -> "G.271";
+     "G.273" -> "G.271";
+     "G.276" -> "G.271";
+     "G.297" -> "G.271";
+     "G.322" -> "G.271";
+     "G.273" -> "G.272";
+     "G.297" -> "G.272";
+     "G.323" -> "G.272";
+     "G.278" -> "G.273";
+     "G.289" -> "G.273";
+     "G.275" -> "G.274";
+     "G.278" -> "G.274";
+     "G.296" -> "G.274";
+     "G.322" -> "G.274";
+     "G.323" -> "G.274";
+     "G.278" -> "G.275";
+     "G.289" -> "G.275";
+     "G.296" -> "G.275";
+     "G.323" -> "G.275";
+     "G.297" -> "G.276";
+     "G.298" -> "G.276";
+     "G.278" -> "G.277";
+     "G.279" -> "G.278";
+     "G.280" -> "G.278";
+     "G.281" -> "G.279";
+     "G.281" -> "G.280";
+     "G.297" -> "G.281";
+     "G.298" -> "G.281";
+     "G.296" -> "G.283";
+     "G.298" -> "G.289";
+     "G.322" -> "G.289";
+     "G.323" -> "G.289";
+     "G.297" -> "G.296";
+     "G.298" -> "G.297";
+     "G.323" -> "G.297";
+     "G.323" -> "G.298";
+     "G.322" -> "G.300";
+     "G.322" -> "G.318";
      "G.323" -> "G.318";
-     "G.320" -> "G.319";
-     "G.323" -> "G.319";
-     "G.323" -> "G.320";
-     "G.323" -> "G.321";
+     "G.323" -> "G.322";
    }
 
 Required for
 ------------
 
-:ref:`G.324 <G.324>`, :ref:`G.327 <G.327>`, :ref:`G.333 <G.333>`, :ref:`G.334 <G.334>`, :ref:`G.335 <G.335>`, :ref:`G.336 <G.336>`, :ref:`G.338 <G.338>`, :ref:`G.339 <G.339>`, :ref:`G.340 <G.340>`, :ref:`G.341 <G.341>`, :ref:`G.342 <G.342>`, :ref:`G.343 <G.343>`, :ref:`G.346 <G.346>`, :ref:`G.347 <G.347>`, :ref:`G.348 <G.348>`, :ref:`G.349 <G.349>`, :ref:`G.350 <G.350>`, :ref:`G.351 <G.351>`, :ref:`G.352 <G.352>`, :ref:`G.353 <G.353>`, :ref:`G.354 <G.354>`, :ref:`G.355 <G.355>`, :ref:`G.356 <G.356>`, :ref:`G.357 <G.357>`, :ref:`G.358 <G.358>`, :ref:`G.359 <G.359>`, :ref:`G.360 <G.360>`, :ref:`G.361 <G.361>`, :ref:`G.362 <G.362>`, :ref:`G.363 <G.363>`, :ref:`G.364 <G.364>`, :ref:`G.365 <G.365>`, :ref:`G.367 <G.367>`, :ref:`G.368 <G.368>`, :ref:`G.370 <G.370>`, :ref:`G.372 <G.372>`, :ref:`G.374 <G.374>`, :ref:`G.376 <G.376>`, :ref:`G.378 <G.378>`, :ref:`G.379 <G.379>`, :ref:`G.380 <G.380>`, :ref:`G.381 <G.381>`, :ref:`G.382 <G.382>`, :ref:`G.383 <G.383>`, :ref:`G.384 <G.384>`, :ref:`G.385 <G.385>`, :ref:`G.387 <G.387>`, :ref:`G.388 <G.388>`, :ref:`G.389 <G.389>`, :ref:`G.390 <G.390>`, :ref:`G.391 <G.391>`, :ref:`G.392 <G.392>`, :ref:`G.393 <G.393>`, :ref:`G.394 <G.394>`, :ref:`G.396 <G.396>`, :ref:`G.397 <G.397>`, :ref:`G.398 <G.398>`, :ref:`G.399 <G.399>`, :ref:`G.400 <G.400>`, :ref:`G.401 <G.401>`, :ref:`G.402 <G.402>`, :ref:`G.403 <G.403>`, :ref:`G.404 <G.404>`, :ref:`G.405 <G.405>`, :ref:`G.407 <G.407>`, :ref:`G.409 <G.409>`, :ref:`G.411 <G.411>`, :ref:`G.413 <G.413>`, :ref:`G.415 <G.415>`, :ref:`G.417 <G.417>`, :ref:`G.418 <G.418>`, :ref:`G.419 <G.419>`, :ref:`G.420 <G.420>`, :ref:`G.421 <G.421>`, :ref:`G.422 <G.422>`, :ref:`G.423 <G.423>`, :ref:`G.424 <G.424>`, :ref:`G.425 <G.425>`, :ref:`G.426 <G.426>`, :ref:`G.427 <G.427>`, :ref:`G.428 <G.428>`, :ref:`G.429 <G.429>`, :ref:`G.430 <G.430>`, :ref:`G.431 <G.431>`, :ref:`G.432 <G.432>`, :ref:`G.433 <G.433>`, :ref:`G.434 <G.434>`, :ref:`G.435 <G.435>`, :ref:`G.436 <G.436>`, :ref:`G.437 <G.437>`, :ref:`G.438 <G.438>`, :ref:`G.439 <G.439>`, :ref:`G.440 <G.440>`, :ref:`G.441 <G.441>`, :ref:`G.442 <G.442>`, :ref:`G.513 <G.513>`, :ref:`G.518 <G.518>`, :ref:`G.523 <G.523>`, :ref:`G.524 <G.524>`, :ref:`G.525 <G.525>`
+:ref:`G.325 <G.325>`, :ref:`G.327 <G.327>`, :ref:`G.332 <G.332>`, :ref:`G.333 <G.333>`, :ref:`G.334 <G.334>`, :ref:`G.335 <G.335>`, :ref:`G.337 <G.337>`, :ref:`G.338 <G.338>`, :ref:`G.339 <G.339>`, :ref:`G.342 <G.342>`, :ref:`G.343 <G.343>`, :ref:`G.364 <G.364>`, :ref:`G.370 <G.370>`
 
 .. toctree::
    :hidden:

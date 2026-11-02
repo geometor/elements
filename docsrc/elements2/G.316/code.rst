@@ -1,17 +1,18 @@
 :canonical_id: G.316
-:original_id: X.3
-:volume: III
-:book: X
+:original_id: VIII.16
+:title: G.316 square number measure
+:volume: II
+:book: VIII
 :type: prop
 
-G.316 — Code
-============
+G.316 square number measure — Code
+==================================
 
-.. rubric:: `X.3 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/003/>`_
+.. rubric:: `VIII.16 <https://geometor.github.io/euclid/heath/volume_II/book_viii/propositions/16/>`_
 
 .. enunciation::
 
-   Given two commensurable magnitudes, to find their greatest common measure.
+   If a :term:`square number <G.308>` do not :term:`measure <G.169>` a square number, neither will the side measure the side; and, if the side do not measure the side, neither will the :term:`square <G.63>` measure the square.
 
 .. picture:: g1.svg
 

@@ -1,4 +1,9 @@
-"""Programmatic construction for Book VIII, Proposition 6 (VIII.6)."""
+"""Programmatic construction for Book VI, Proposition 33 (VI.33).
+
+In equal circles ABC, DEF, angles BGC, EHF at the centres G, H and angles BAC, EDF
+at the circumferences have the same ratio as the circumferences BC, EF on which
+they stand.
+"""
 
 from __future__ import annotations
 
@@ -6,43 +11,64 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0361.g1 using geometor.model."""
-    model = Model("VIII.6")
+    """Construct the figure for 0279.g2 (VI.33) using geometor.model."""
+    model = Model("VI.33")
 
-    # Single-letter horizontal number segments A, B, C, D, E, F, G, H
-    A_l = model.set_point(30.0, -15.0, classes=["given"], ID="A")
-    A_r = model.set_point(92.0, -15.0, ID="A_r")
+    # 1. Centres and circumference points of equal circles ABC and DEF (r = 70)
+    G = model.set_point(96.0, -115.0, classes=["given"], ID="G")
+    B = model.set_point(26.0, -115.0, classes=["given"], ID="B")
+    O = model.set_point(32.56, -144.60, ID="O")
+    C = model.set_point(51.00, -168.62, classes=["given"], ID="C")
+    P = model.set_point(76.71, -182.29, ID="P")
+    K = model.set_point(105.74, -184.32, ID="K")
+    L = model.set_point(156.02, -151.02, ID="L")
+    A = model.set_point(155.26, -77.69, classes=["given"], ID="A")
 
-    B_l = model.set_point(31.0, -39.0, classes=["given"], ID="B")
-    B_r = model.set_point(124.0, -39.0, ID="B_r")
+    H = model.set_point(271.0, -114.0, classes=["given"], ID="H")
+    D = model.set_point(310.02, -55.90, classes=["given"], ID="D")
+    E = model.set_point(212.31, -152.18, classes=["given"], ID="E")
+    Q = model.set_point(225.50, -167.20, ID="Q")
+    F = model.set_point(243.00, -178.19, classes=["given"], ID="F")
+    M = model.set_point(282.00, -183.13, ID="M")
+    N = model.set_point(320.00, -163.99, ID="N")
 
-    C_l = model.set_point(29.0, -59.0, classes=["given"], ID="C")
-    C_r = model.set_point(167.0, -59.0, ID="C_r")
+    # 2. Equal Circles ABC and DEF
+    model.construct_circle(G, B)
+    model.construct_circle(H, E)
 
-    D_l = model.set_point(28.0, -89.0, classes=["given"], ID="D")
-    D_r = model.set_point(243.0, -89.0, ID="D_r")
+    # 3. Radii and Chords
+    model.set_segment(A, B)
+    model.set_segment(A, C)
+    model.set_segment(G, B)
+    model.set_segment(G, C)
+    model.set_segment(G, K)
+    model.set_segment(G, L)
+    model.set_segment(B, C)
+    model.set_segment(C, K)
 
-    E_l = model.set_point(27.0, -117.0, classes=["given"], ID="E")
-    E_r = model.set_point(353.0, -117.0, ID="E_r")
+    model.set_segment(D, E)
+    model.set_segment(D, F)
+    model.set_segment(H, E)
+    model.set_segment(H, F)
+    model.set_segment(H, M)
+    model.set_segment(H, N)
 
-    F_l = model.set_point(29.0, -141.0, classes=["given"], ID="F")
-    F_r = model.set_point(59.0, -141.0, ID="F_r")
+    # 4. Polygons (Triangles GBC, GCK in Theon's sector proof)
+    model.set_polygon([G, B, C])
+    model.set_polygon([G, C, K])
 
-    G_l = model.set_point(26.0, -161.0, classes=["given"], ID="G")
-    G_r = model.set_point(78.0, -161.0, ID="G_r")
+    # 5. Angles & Sectors (Wedges)
+    model.set_wedge(G, B, B, C)  # < B G C )
+    model.set_wedge(G, C, C, K)  # < C G K )
+    model.set_wedge(G, K, K, L)  # < K G L )
+    model.set_wedge(G, B, B, L)  # < B G L )
+    model.set_wedge(A, B, B, C)  # < B A C )
 
-    H_l = model.set_point(27.0, -179.0, classes=["given"], ID="H")
-    H_r = model.set_point(98.0, -179.0, ID="H_r")
-
-    # Number segments
-    model.set_segment(A_l, A_r)
-    model.set_segment(B_l, B_r)
-    model.set_segment(C_l, C_r)
-    model.set_segment(D_l, D_r)
-    model.set_segment(E_l, E_r)
-    model.set_segment(F_l, F_r)
-    model.set_segment(G_l, G_r)
-    model.set_segment(H_l, H_r)
+    model.set_wedge(H, E, E, F)  # < E H F )
+    model.set_wedge(H, F, F, M)  # < F H M )
+    model.set_wedge(H, M, M, N)  # < M H N )
+    model.set_wedge(H, E, E, N)  # < E H N )
+    model.set_wedge(D, E, E, F)  # < E D F )
 
     return model
 

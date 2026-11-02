@@ -1,4 +1,4 @@
-"""Programmatic construction for Book X, Proposition 104 (X.104)."""
+"""Programmatic construction for Book X, Proposition 52 (X.52)."""
 
 from __future__ import annotations
 
@@ -6,34 +6,45 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0235.g1 using geometor.model."""
-    model = Model("X.104")
+    """Construct the figure 0115.g1 using geometor.model."""
+    model = Model("X.52")
 
-    # Line AE divided at B
-    A = model.set_point(32.0, -22.5, classes=["given"], ID="A")
-    B = model.set_point(91.0, -22.5, classes=["given"], ID="B")
-    E = model.set_point(148.0, -22.5, classes=["given"], ID="E")
+    # Number line AB divided at C
+    A = model.set_point(26.0, -19.0, classes=["given"], ID="A")
+    C = model.set_point(26.0, -94.0, classes=["given"], ID="C")
+    B = model.set_point(26.0, -144.0, classes=["given"], ID="B")
 
-    # Line CF divided at D
-    C = model.set_point(16.0, -51.5, classes=["given"], ID="C")
-    D = model.set_point(91.0, -51.5, classes=["given"], ID="D")
-    F = model.set_point(168.0, -51.5, classes=["given"], ID="F")
+    # Single-letter magnitude segments D and H
+    D_t = model.set_point(58.0, -19.0, classes=["given"], ID="D")
+    D_b = model.set_point(58.0, -69.0, ID="D_b")
+
+    H_t = model.set_point(58.5, -144.0, classes=["given"], ID="H")
+    H_b = model.set_point(58.5, -191.0, ID="H_b")
+
+    # Line EG divided at F
+    E = model.set_point(100.0, -19.0, classes=["given"], ID="E")
+    F = model.set_point(100.0, -74.0, classes=["given"], ID="F")
+    G = model.set_point(100.0, -164.0, classes=["given"], ID="G")
 
     # Base lines
-    model.construct_line(A, E)
-    model.construct_line(C, F)
+    model.construct_line(A, B)
+    model.construct_line(D_t, D_b)
+    model.construct_line(H_t, H_b)
+    model.construct_line(E, G)
 
     # Segments
-    model.set_segment(A, E)
     model.set_segment(A, B)
-    model.set_segment(B, E)
-    model.set_segment(C, F)
-    model.set_segment(C, D)
-    model.set_segment(D, F)
+    model.set_segment(A, C)
+    model.set_segment(C, B)
+    model.set_segment(D_t, D_b)
+    model.set_segment(H_t, H_b)
+    model.set_segment(E, G)
+    model.set_segment(E, F)
+    model.set_segment(F, G)
 
-    # Sections
-    model.set_section([A, B, E])
-    model.set_section([C, D, F])
+    # Collinear sections
+    model.set_section([A, C, B])
+    model.set_section([E, F, G])
 
     return model
 

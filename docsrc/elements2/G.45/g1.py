@@ -1,47 +1,49 @@
-"""GEOMETOR construction for Book I, Proposition 32 (Folio 0331, Graphic 1).
+"""Programmatic construction for Book I, Proposition 20 (I.20).
 
-In any triangle ABC, if one of the sides BC be produced to D, the exterior angle ACD is equal
-to the two interior and opposite angles CAB, ABC, and the three interior angles ABC, BCA, CAB
-are equal to two right angles.
+In any triangle two sides taken together in any manner are greater than the remaining one.
 """
+
+from __future__ import annotations
 
 from geometor.model import Model
 
 
-def build_0331_g1() -> Model:
-    model = Model("I.32")
+def construct_g1() -> Model:
+    """Construct the figure for 0300.g2 (I.20) using geometor.model."""
+    model = Model("I.20")
 
-    B = model.set_point(-1, 0, classes=["given"], ID="B")
-    C = model.set_point(0, 0, classes=["given"], ID="C")
-    D = model.set_point(0.9, 0, classes=["given"], ID="D")
-    A = model.set_point(-0.4, 1.0, classes=["given"], ID="A")
-    E = model.set_point(0.6, 1.0, classes=["given"], ID="E")
+    # Points
+    pt_B = model.set_point(20, -133, classes=["given"], ID="B")
+    pt_C = model.set_point(125, -133, classes=["given"], ID="C")
+    pt_A = model.set_point(56.5, -92.5, classes=["given"], ID="A")
+    pt_D = model.set_point(109, -31, classes=["given"], ID="D")
 
-    model.construct_line(B, D)
-    model.construct_line(A, B)
-    model.construct_line(A, C)
-    model.construct_line(C, E)
+    # Base Constructions (Lines and Circles)
+    model.construct_line(pt_B, pt_A)
 
-    model.set_segment(A, B)
-    model.set_segment(B, C)
-    model.set_segment(C, D)
-    model.set_segment(B, D)
-    model.set_segment(A, C)
-    model.set_segment(C, E)
+    # Segments
+    model.set_segment(pt_B, pt_C)
+    model.set_segment(pt_B, pt_D)
+    model.set_segment(pt_B, pt_A)
+    model.set_segment(pt_A, pt_D)
+    model.set_segment(pt_A, pt_C)
+    model.set_segment(pt_D, pt_C)
 
-    model.set_polygon([A, B, C])
-    model.set_section([B, C, D])
+    # Polygons
+    model.set_polygon([pt_A, pt_B, pt_C])
+    model.set_polygon([pt_A, pt_D, pt_C])
+    model.set_polygon([pt_D, pt_B, pt_C])
 
-    model.set_wedge(C, A, A, D)
-    model.set_wedge(A, C, C, B)
-    model.set_wedge(B, A, A, C)
-    model.set_wedge(C, B, B, A)
-    model.set_wedge(C, A, A, E)
-    model.set_wedge(C, E, E, D)
+    # Angles (Wedges)
+    model.set_wedge(pt_D, pt_A, pt_A, pt_C)
+    model.set_wedge(pt_C, pt_A, pt_A, pt_D)
+    model.set_wedge(pt_C, pt_B, pt_B, pt_D)
+    model.set_wedge(pt_A, pt_B, pt_B, pt_C)
+    model.set_wedge(pt_B, pt_A, pt_A, pt_C)
+    model.set_wedge(pt_C, pt_A, pt_A, pt_B)
 
     return model
 
 
 if __name__ == "__main__":
-    m = build_0331_g1()
-    print(f"Constructed {m.name} with {len(m)} elements.")
+    construct_g1()

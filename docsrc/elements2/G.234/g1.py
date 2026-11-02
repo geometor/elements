@@ -1,4 +1,8 @@
-"""Programmatic construction for Book VII, Proposition 33 (VII.33)."""
+"""Programmatic construction for Book VI, Proposition 22 (VI.22).
+
+If four straight lines be proportional, the rectilineal figures similar and similarly
+described upon them will also be proportional; and conversely.
+"""
 
 from __future__ import annotations
 
@@ -6,57 +10,65 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0339.g2 using geometor.model."""
-    model = Model("VII.33")
+    """Construct the figure for 0247.g1 (VI.22) using geometor.model."""
+    model = Model("VI.22")
 
-    # Given numbers A, B, C and greatest common measure D
-    A_t = model.set_point(58.0, -12.0, classes=["given"], ID="A")
-    A_b = model.set_point(58.0, -83.0, ID="A_b")
+    # 1. Similar triangles KAB on AB and LCD on CD
+    K = model.set_point(69.0, -24.0, ID="K")
+    A = model.set_point(19.0, -107.0, classes=["given"], ID="A")
+    B = model.set_point(101.0, -107.0, classes=["given"], ID="B")
+    model.set_segment(A, B)
+    model.set_segment(A, K)
+    model.set_segment(K, B)
+    model.set_polygon([K, A, B])
 
-    B_t = model.set_point(87.0, -15.0, classes=["given"], ID="B")
-    B_b = model.set_point(87.0, -119.0, ID="B_b")
+    L = model.set_point(213.0, -33.0, ID="L")
+    C = model.set_point(167.0, -107.0, classes=["given"], ID="C")
+    D = model.set_point(239.0, -107.0, classes=["given"], ID="D")
+    model.set_segment(C, D)
+    model.set_segment(C, L)
+    model.set_segment(L, D)
+    model.set_polygon([L, C, D])
 
-    C_t = model.set_point(118.0, -12.0, classes=["given"], ID="C")
-    C_b = model.set_point(118.0, -150.0, ID="C_b")
+    # 2. Similar parallelograms MF on EF, NH on GH, and SR on QR
+    M = model.set_point(332.0, -56.0, ID="M")
+    M2 = model.set_point(397.0, -56.0, ID="M2")
+    F = model.set_point(369.0, -108.0, classes=["given"], ID="F")
+    E = model.set_point(304.0, -108.0, classes=["given"], ID="E")
+    model.set_segment(E, F)
+    model.set_segment(E, M)
+    model.set_segment(M, M2)
+    model.set_segment(M2, F)
+    model.set_polygon([M, M2, F, E])
 
-    D_t = model.set_point(144.0, -14.0, classes=["given"], ID="D")
-    D_b = model.set_point(144.0, -50.0, ID="D_b")
+    N = model.set_point(456.0, -66.0, ID="N")
+    N2 = model.set_point(508.0, -66.0, ID="N2")
+    H = model.set_point(484.0, -109.0, classes=["given"], ID="H")
+    G = model.set_point(432.0, -109.0, classes=["given"], ID="G")
+    model.set_segment(G, H)
+    model.set_segment(G, N)
+    model.set_segment(N, N2)
+    model.set_segment(N2, H)
+    model.set_polygon([N, N2, H, G])
 
-    # Numbers H, K, L and unit-count M
-    H_t = model.set_point(22.0, -115.0, classes=["given"], ID="H")
-    H_b = model.set_point(22.0, -145.0, ID="H_b")
+    S = model.set_point(373.0, -144.0, ID="S")
+    S2 = model.set_point(429.0, -144.0, ID="S2")
+    R = model.set_point(406.0, -193.0, ID="R")
+    Q = model.set_point(350.0, -193.0, ID="Q")
+    model.set_segment(Q, R)
+    model.set_segment(Q, S)
+    model.set_segment(S, S2)
+    model.set_segment(S2, R)
+    model.set_polygon([S, S2, R, Q])
 
-    K_t = model.set_point(44.0, -116.0, classes=["given"], ID="K")
-    K_b = model.set_point(44.0, -153.0, ID="K_b")
+    # 3. Third proportionals O and P
+    O1 = model.set_point(119.0, -190.0, ID="O1")
+    O2 = model.set_point(178.0, -190.0, ID="O2")
+    model.set_segment(O1, O2)
 
-    L_t = model.set_point(64.0, -113.0, classes=["given"], ID="L")
-    L_b = model.set_point(64.0, -162.0, ID="L_b")
-
-    M_t = model.set_point(87.0, -137.0, classes=["given"], ID="M")
-    M_b = model.set_point(87.0, -163.0, ID="M_b")
-
-    # Least numbers in the same ratio E, F, G
-    E_t = model.set_point(144.0, -87.0, classes=["given"], ID="E")
-    E_b = model.set_point(144.0, -133.0, ID="E_b")
-
-    F_t = model.set_point(170.0, -86.0, classes=["given"], ID="F")
-    F_b = model.set_point(170.0, -157.0, ID="F_b")
-
-    G_t = model.set_point(198.0, -85.0, classes=["given"], ID="G")
-    G_b = model.set_point(198.0, -173.0, ID="G_b")
-
-    # Segments
-    model.set_segment(A_t, A_b)
-    model.set_segment(B_t, B_b)
-    model.set_segment(C_t, C_b)
-    model.set_segment(D_t, D_b)
-    model.set_segment(H_t, H_b)
-    model.set_segment(K_t, K_b)
-    model.set_segment(L_t, L_b)
-    model.set_segment(M_t, M_b)
-    model.set_segment(E_t, E_b)
-    model.set_segment(F_t, F_b)
-    model.set_segment(G_t, G_b)
+    P1 = model.set_point(237.0, -191.0, ID="P1")
+    P2 = model.set_point(285.0, -191.0, ID="P2")
+    model.set_segment(P1, P2)
 
     return model
 

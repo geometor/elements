@@ -1,17 +1,18 @@
 :canonical_id: G.449
-:original_id: XI.6
+:original_id: X.69
+:title: G.449 segment commensurable side
 :volume: III
-:book: XI
+:book: X
 :type: prop
 
-G.449 — Code
-============
+G.449 segment commensurable side — Code
+=======================================
 
-.. rubric:: `XI.6 <https://geometor.github.io/euclid/heath/volume_III/book_xi/propositions/06/>`_
+.. rubric:: `X.69 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/069/>`_
 
 .. enunciation::
 
-   If two straight lines be at right angles to the same plane, the straight lines is parallel.
+   A :term:`segment <G.4>` :term:`commensurable <G.372>` with the side of a :term:`rational <G.391>` plus a medial area is itself also the side of a rational plus a medial area.
 
 .. picture:: g1.svg
 

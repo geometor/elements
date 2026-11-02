@@ -1,61 +1,42 @@
-"""Programmatic construction for Book IV, Proposition 4 (IV.4)."""
+"""Programmatic construction for Book III, Proposition 19 (III.19).
+
+If a straight line touch a circle, and from the point of contact a straight
+line be drawn at right angles to the tangent, the centre of the circle will be
+on the straight line so drawn.
+"""
 
 from __future__ import annotations
 
+import sympy as sp
 from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0091.g1 using geometor.model."""
-    model = Model("IV.4")
+    """Construct the figure for Book III, Proposition 19 using geometor.model."""
+    model = Model("III.19")
 
-    # Points (y-inverted for standard mathematical coordinates)
-    A = model.set_point(178.00, -28.00, classes=["given"], ID="A")
-    B = model.set_point(24.00, -159.00, classes=["given"], ID="B")
-    C = model.set_point(236.00, -159.00, classes=["given"], ID="C")
-    D = model.set_point(159.46, -109.18, ID="D")
-    E = model.set_point(127.18, -71.23, ID="E")
-    F = model.set_point(159.46, -159.00, ID="F")
-    G = model.set_point(205.01, -89.01, ID="G")
+    # 1. Circle ABC touched by straight line DE at C, and CA drawn at right angles to DE.
+    O = model.set_point(0, 0, ID="O")
+    C = model.set_point(0, -1, classes=["given"], ID="C")
+    A = model.set_point(0, 1, classes=["given"], ID="A")
+    B = model.set_point(sp.Rational(60, 61), sp.Rational(11, 61), label="B")
 
-    # Inscribed circle EFG
-    model.construct_circle(D, E)
+    circle_ABC = model.construct_circle(O, C)
 
-    # Segments
-    model.set_segment(A, B)
-    model.set_segment(B, C)
-    model.set_segment(C, A)
-    model.set_segment(A, E)
-    model.set_segment(E, B)
-    model.set_segment(B, F)
-    model.set_segment(F, C)
-    model.set_segment(C, G)
-    model.set_segment(G, A)
-    model.set_segment(B, D)
-    model.set_segment(C, D)
+    D = model.set_point(sp.Rational(-43, 40), -1, label="D")
+    E = model.set_point(sp.Rational(109, 80), -1, label="E")
+
+    line_DE = model.construct_line(D, E)
+    model.set_segment(D, C)
+    model.set_segment(C, E)
     model.set_segment(D, E)
-    model.set_segment(D, F)
-    model.set_segment(D, G)
+    model.set_section([D, C, E])
 
-    # Collinear sections
-    model.set_section([A, E, B])
-    model.set_section([B, F, C])
-    model.set_section([C, G, A])
+    model.set_segment(C, A)
 
-    # Polygons
-    model.set_polygon([A, B, C])
-    model.set_polygon([E, B, D])
-    model.set_polygon([F, B, D])
-
-    # Angles (wedges)
-    model.set_wedge(B, A, A, C)
-    model.set_wedge(B, A, A, D)
-    model.set_wedge(B, C, C, D)
-    model.set_wedge(C, A, A, B)
-    model.set_wedge(C, D, D, B)
-    model.set_wedge(A, B, B, C)
-    model.set_wedge(E, B, B, D)
-    model.set_wedge(F, B, B, D)
+    # 2. Reductio: suppose F is the centre, and join CF.
+    F = model.set_point(sp.Rational(13, 40), sp.Rational(3, 40), label="F")
+    model.set_segment(C, F)
 
     return model
 

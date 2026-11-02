@@ -1,17 +1,18 @@
 :canonical_id: G.378
-:original_id: X.58
+:original_id: X.7
+:title: G.378 incommensurable magnitudes ratio
 :volume: III
 :book: X
 :type: prop
 
-G.378 — Code
-============
+G.378 incommensurable magnitudes ratio — Code
+=============================================
 
-.. rubric:: `X.58 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/058/>`_
+.. rubric:: `X.7 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/007/>`_
 
 .. enunciation::
 
-   If an area be contained by a rational straight line and the fifth binomial, the "side" of the area is the irrational straight line called the side of a rational plus a medial area.
+   :term:`Incommensurable <G.372>` magnitudes have not to one another the :term:`ratio <G.173>` which a :term:`number <G.248>` has to a number.
 
 .. picture:: g1.svg
 

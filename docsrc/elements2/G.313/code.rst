@@ -1,17 +1,18 @@
 :canonical_id: G.313
-:original_id: X.1
-:volume: III
-:book: X
+:original_id: VIII.13
+:title: G.313 there many numbers
+:volume: II
+:book: VIII
 :type: prop
 
-G.313 — Code
-============
+G.313 there many numbers — Code
+===============================
 
-.. rubric:: `X.1 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/001/>`_
+.. rubric:: `VIII.13 <https://geometor.github.io/euclid/heath/volume_II/book_viii/propositions/13/>`_
 
 .. enunciation::
 
-   Two unequal magnitudes being set out, if from the greater there be subtracted a magnitude greater than its half, and from that which is left a magnitude greater than its half, and if this process be repeated continually, there is left some magnitude which is less than the lesser magnitude set out.
+   If there be as many :term:`numbers <G.248>` as we please in :term:`continued proportion <G.180>`, and each by :term:`multiplying <G.269>` itself make some number, the products is proportional; and, if the original numbers by multiplying the products make certain numbers, the latter is proportional.
 
 .. picture:: g1.svg
 

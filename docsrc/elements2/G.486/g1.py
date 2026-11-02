@@ -1,59 +1,75 @@
-#!/usr/bin/env python3
-"""
-Programmatic construction for Book XI, Proposition 39 (XI.39)
-using geometor.model.
-"""
+"""Programmatic construction for Book X, Proposition 100 (X.100)."""
+
+from __future__ import annotations
+
 from geometor.model import Model
 
 
-def build_model() -> Model:
-    m = Model("XI.39")
+def construct_g1() -> Model:
+    """Construct the figure 0225.g1 using geometor.model."""
+    model = Model("X.100")
 
-    # Left prism ABCDEF and completed solid AO
-    B = m.set_point(26, 26, classes=["given"], ID="B")
-    D = m.set_point(138, 26, classes=["given"], ID="D")
-    O = m.set_point(154, 42, classes=["constructed"], ID="O")
-    B2 = m.set_point(42, 42, classes=["auxiliary"])
-    A = m.set_point(26, 97, classes=["given"], ID="A")
-    C = m.set_point(138, 97, classes=["given"], ID="C")
-    F = m.set_point(154, 113, classes=["given"], ID="F")
-    E = m.set_point(42, 113, classes=["given"], ID="E")
+    # Top segment AG divided at B
+    A = model.set_point(124.0, -21.0, classes=["given"], ID="A")
+    B = model.set_point(211.0, -21.0, classes=["given"], ID="B")
+    G = model.set_point(262.0, -21.0, classes=["given"], ID="G")
 
-    # Right prism GHKLMN and completed solid GP
-    M = m.set_point(275, 32, classes=["given"], ID="M")
-    P = m.set_point(345, 32, classes=["constructed"], ID="P")
-    N = m.set_point(378, 60, classes=["given"], ID="N")
-    L = m.set_point(308, 60, classes=["given"], ID="L")
-    H = m.set_point(275, 102, classes=["given"], ID="H")
-    H2 = m.set_point(345, 102, classes=["auxiliary"])
-    K = m.set_point(378, 130, classes=["given"], ID="K")
-    G = m.set_point(308, 130, classes=["given"], ID="G")
+    # Rectangle CDLM divided by vertical lines FE, NO, KH
+    C = model.set_point(19.5, -56.5, classes=["given"], ID="C")
+    F = model.set_point(133.5, -56.5, ID="F")
+    N = model.set_point(244.5, -56.5, ID="N")
+    K = model.set_point(315.5, -56.5, ID="K")
+    M = model.set_point(356.5, -56.5, ID="M")
 
-    # Polygons (solids, prisms, parallelograms, triangles)
-    m.set_polygon([B, D, O, F, E, A])  # Solid < A O >
-    m.set_polygon([B, D, F, E, A])     # Prism < A B C D E F >
-    m.set_polygon([A, C, F, E])        # Parallelogram < A F >
-    m.set_polygon([M, P, N, K, G, H])  # Solid < G P >
-    m.set_polygon([M, N, K, G, H])     # Prism < G H K L M N >
-    m.set_polygon([H, H2, K, G])       # Parallelogram < H K >
-    m.set_polygon([G, H, K])           # Triangle < G H K >
+    D = model.set_point(19.5, -120.5, classes=["given"], ID="D")
+    E = model.set_point(133.5, -120.5, ID="E")
+    O = model.set_point(244.5, -120.5, ID="O")
+    H = model.set_point(315.5, -120.5, ID="H")
+    L = model.set_point(356.5, -120.5, ID="L")
 
-    # Segments
+    # Base lines
     for p1, p2 in [
-        (B, D), (D, O), (O, B2), (B2, B),
-        (A, C), (C, F), (F, E), (E, A),
-        (B, A), (D, C), (O, F), (B2, E),
-        (B, E), (D, F),
-        (M, P), (P, N), (N, L), (L, M),
-        (H, H2), (H2, K), (K, G), (G, H),
-        (M, H), (P, H2), (N, K), (L, G),
-        (M, N), (H, K),
+        (A, G),
+        (C, M),
+        (D, L),
+        (C, D),
+        (F, E),
+        (N, O),
+        (K, H),
+        (M, L),
     ]:
-        m.set_segment(p1, p2)
+        model.construct_line(p1, p2)
 
-    return m
+    # Segments on AG and CDLM
+    for pts in ([A, B, G], [C, F, N, K, M], [D, E, O, H, L]):
+        for i in range(len(pts)):
+            for j in range(i + 1, len(pts)):
+                model.set_segment(pts[i], pts[j])
+
+    # Vertical segments on CDLM
+    for p1, p2 in [(C, D), (F, E), (N, O), (K, H), (M, L)]:
+        model.set_segment(p1, p2)
+
+    # Collinear sections
+    model.set_section([A, B, G])
+    model.set_section([C, F, M])
+    model.set_section([C, K, M])
+    model.set_section([F, N, M])
+
+    # Polygons in CDLM
+    model.set_polygon([C, M, L, D])  # CL / DM
+    model.set_polygon([C, F, E, D])  # CE
+    model.set_polygon([C, K, H, D])  # CH
+    model.set_polygon([K, M, L, H])  # KL
+    model.set_polygon([F, M, L, E])  # FL
+    model.set_polygon([F, N, O, E])  # FO
+    model.set_polygon([N, M, L, O])  # NL / LN
+    model.set_polygon([N, K, H, O])  # NH
+    model.set_polygon([C, N, O, D])  # CO
+    model.set_polygon([F, K, H, E])  # FH
+
+    return model
 
 
 if __name__ == "__main__":
-    model = build_model()
-    print(f"Constructed {model.name} with {len(model)} elements.")
+    construct_g1()

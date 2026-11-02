@@ -1,42 +1,23 @@
-"""Programmatic construction for Book I, Proposition 7 (I.7).
+"""Programmatic construction for Book I, Definition 16 (I.def.16 — center of a circle).
 
-Given two straight lines constructed on a straight line (from its extremities)
-and meeting in a point, there cannot be constructed on the same straight line
-(from its extremities), and on the same side of it, two other straight lines
-meeting in another point and equal to the former two respectively, namely each
-to that which has the same extremity with it.
+This point is called the center of the circle.
 """
 
 from __future__ import annotations
 
+import sympy as sp
 from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure for Book I, Proposition 7 using geometor.model."""
-    model = Model("I.7")
-
-    # 1. Given base AB and two pairs of straight lines AC, CB and AD, DB meeting at C and D
-    A = model.set_point(13, -112, classes=["given"], ID="A")
-    B = model.set_point(134, -112, classes=["given"], ID="B")
-    C = model.set_point(100, -26, ID="C")
-    D = model.set_point(126, -38, ID="D")
-
+    """Construct the foundational figure for I.def.16 (center A of circle ( B C D ))."""
+    model = Model("I.def.16")
+    A = model.set_point(0, 0, classes=["given"], ID="A")
+    B = model.set_point(1, 0, classes=["given"], ID="B")
+    model.construct_circle(A, B)
+    C = model.set_point(sp.Rational(1, 2), sp.sqrt(3) / 2, ID="C")
     model.set_segment(A, B)
     model.set_segment(A, C)
-    model.set_segment(C, B)
-    model.set_segment(A, D)
-    model.set_segment(D, B)
-
-    # 2. Let CD be joined [Post. 1]
-    model.set_segment(C, D)
-
-    # 3. Triangles ABC, ABD, ACD, BCD
-    model.set_polygon([A, B, C])
-    model.set_polygon([A, B, D])
-    model.set_polygon([A, C, D])
-    model.set_polygon([B, C, D])
-
     return model
 
 

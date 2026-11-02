@@ -1,8 +1,4 @@
-"""Programmatic construction for Book XII, Proposition 1 (XII.1).
-
-Similar polygons ABCDE and FGHKL inscribed in circles ABC and FGH with
-diameters BM and GN.
-"""
+"""Programmatic construction for Book X, Proposition 101 (X.101)."""
 
 from __future__ import annotations
 
@@ -10,62 +6,67 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0373.g1 using geometor.model."""
-    model = Model("XII.1")
+    """Construct the figure 0228.g1 using geometor.model."""
+    model = Model("X.101")
 
-    # Left circle ABC (center O1 = (114, -111), radius 88)
-    O1 = model.set_point(114.0, -111.0, ID="O1")
-    A = model.set_point(108.0, -23.2, classes=["given"], ID="A")
-    B = model.set_point(28.5, -90.0, classes=["given"], ID="B")
-    C = model.set_point(81.0, -192.6, classes=["given"], ID="C")
-    D = model.set_point(186.0, -161.6, classes=["given"], ID="D")
-    E = model.set_point(199.3, -89.2, classes=["given"], ID="E")
-    M = model.set_point(199.5, -132.0, ID="M")
+    # Top segment AG divided at B
+    A = model.set_point(124.0, -20.5, classes=["given"], ID="A")
+    B = model.set_point(209.0, -20.5, classes=["given"], ID="B")
+    G = model.set_point(260.0, -20.5, classes=["given"], ID="G")
 
-    # Right circle FGH (center O2 = (370, -113), radius 70)
-    O2 = model.set_point(370.0, -113.0, ID="O2")
-    F = model.set_point(365.2, -43.2, classes=["given"], ID="F")
-    G = model.set_point(302.0, -96.3, classes=["given"], ID="G")
-    H = model.set_point(343.8, -177.9, classes=["given"], ID="H")
-    K = model.set_point(427.3, -153.2, classes=["given"], ID="K")
-    L = model.set_point(437.8, -95.6, classes=["given"], ID="L")
-    N = model.set_point(438.0, -129.7, ID="N")
+    # Rectangle CDLM divided by vertical lines FE, NO, KH
+    C = model.set_point(20.5, -52.0, classes=["given"], ID="C")
+    F = model.set_point(133.5, -52.0, ID="F")
+    N = model.set_point(246.5, -52.0, ID="N")
+    K = model.set_point(315.5, -52.0, ID="K")
+    M = model.set_point(357.5, -52.0, ID="M")
 
-    # Circles
-    model.construct_circle(O1, A)
-    model.construct_circle(O2, F)
+    D = model.set_point(20.5, -120.0, classes=["given"], ID="D")
+    E = model.set_point(133.5, -120.0, ID="E")
+    O = model.set_point(246.5, -120.0, ID="O")
+    H = model.set_point(315.5, -120.0, ID="H")
+    L = model.set_point(357.5, -120.0, ID="L")
 
-    # Left segments
+    # Base lines
     for p1, p2 in [
-        (A, B), (B, C), (C, D), (D, E), (E, A),
-        (B, E), (B, M), (A, M),
+        (A, G),
+        (C, M),
+        (D, L),
+        (C, D),
+        (F, E),
+        (N, O),
+        (K, H),
+        (M, L),
     ]:
+        model.construct_line(p1, p2)
+
+    # Segments on AG and CDLM
+    for pts in ([A, B, G], [C, F, N, K, M], [D, E, O, H, L]):
+        for i in range(len(pts)):
+            for j in range(i + 1, len(pts)):
+                model.set_segment(pts[i], pts[j])
+
+    # Vertical segments on CDLM
+    for p1, p2 in [(C, D), (F, E), (N, O), (K, H), (M, L)]:
         model.set_segment(p1, p2)
 
-    # Right segments
-    for p1, p2 in [
-        (F, G), (G, H), (H, K), (K, L), (L, F),
-        (G, L), (G, N), (F, N),
-    ]:
-        model.set_segment(p1, p2)
+    # Collinear sections
+    model.set_section([A, B, G])
+    model.set_section([C, F, M])
+    model.set_section([C, K, M])
+    model.set_section([F, N, M])
 
-    # Polygons and triangles
-    model.set_polygon([A, B, C, D, E])
-    model.set_polygon([F, G, H, K, L])
-    model.set_polygon([A, B, E])
-    model.set_polygon([F, G, L])
-    model.set_polygon([A, B, M])
-    model.set_polygon([F, G, N])
-
-    # Angles (wedges)
-    model.set_wedge(A, B, B, E)
-    model.set_wedge(F, G, G, L)
-    model.set_wedge(E, A, A, B)
-    model.set_wedge(L, F, F, G)
-    model.set_wedge(M, A, A, B)
-    model.set_wedge(N, F, F, G)
-    model.set_wedge(A, B, B, M)
-    model.set_wedge(F, G, G, N)
+    # Polygons in CDLM
+    model.set_polygon([C, M, L, D])  # CL / DM
+    model.set_polygon([C, F, E, D])  # CE
+    model.set_polygon([C, K, H, D])  # CH
+    model.set_polygon([K, M, L, H])  # KL
+    model.set_polygon([F, M, L, E])  # FL
+    model.set_polygon([F, N, O, E])  # FO
+    model.set_polygon([N, M, L, O])  # NL / LN
+    model.set_polygon([N, K, H, O])  # NH
+    model.set_polygon([C, N, O, D])  # CO
+    model.set_polygon([F, K, H, E])  # FH
 
     return model
 

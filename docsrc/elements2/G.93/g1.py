@@ -1,7 +1,7 @@
-"""Programmatic construction for Book III, Proposition 15 (III.15).
+"""Programmatic construction for Book II, Proposition 11 — The Golden Section (II.11).
 
-Of straight lines in a circle the diameter is greatest, and of the rest the
-nearer to the centre is always greater than the more remote.
+To cut a given straight line so that the rectangle contained by the whole and
+one of the segments is equal to the square on the remaining segment.
 """
 
 from __future__ import annotations
@@ -11,74 +11,63 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure for Book III, Proposition 15 using geometor.model."""
-    model = Model("III.15")
+    """Construct Euclid's Golden Section figure (Book II, Prop. 11) using geometor.model."""
+    model = Model("II.11")
 
-    # 1. Circle ABCD about centre E with diameter AD
-    E = model.set_point(0, 0, classes=["given"], ID="E")
-    A = model.set_point(0, 1, classes=["given"], ID="A")
-    D = model.set_point(0, -1, classes=["given"], ID="D")
-    circle_ABCD = model.construct_circle(E, A)
+    # 1. Let AB be the given straight line (length 2 for clean midpoint E).
+    A = model.set_point(0, 0, classes=["given"], ID="A")
+    B = model.set_point(2, 0, classes=["given"], ID="B")
+    model.set_segment(A, B)
 
+    # 2. Let the square ABDC be described on AB [I. 46].
+    C = model.set_point(0, -2, ID="C")
+    D = model.set_point(2, -2, ID="D")
+    model.set_polygon([A, B, D, C])
+
+    # 3. Let AC be bisected at E, and let BE be joined.
+    E = model.set_point(0, -1, ID="E")
+    model.set_segment(B, E)
+
+    # 4. Let CA be drawn through to F, and let EF be made equal to BE (sqrt(5)).
+    model.construct_line(C, A)
+    phi_inv_2 = sp.sqrt(5) - 1  # AF = AH = sqrt(5) - 1 (for AB = 2)
+    F = model.set_point(0, phi_inv_2, ID="F")
+
+    # 5. Let the square FH (FGHA) be described on AF, and let GH be drawn through to K.
+    G = model.set_point(phi_inv_2, phi_inv_2, ID="G")
+    H = model.set_point(phi_inv_2, 0, classes=["golden"], ID="H")
+    K = model.set_point(phi_inv_2, -2, ID="K")
+    model.construct_line(G, K)
+
+    # 6. Record the Golden Sections on AB and CF
+    model.set_section([A, H, B], classes=["golden"])
+    model.set_section([C, A, F], classes=["golden"])
+
+    # 7. Explicitly add all referenced segments
+    model.set_segment(A, H)
+    model.set_segment(H, B)
     model.set_segment(A, E)
-    model.set_segment(E, D)
-    model.set_segment(A, D)
-    model.set_section([A, E, D])
-
-    # 2. Perpendicular EH to nearer chord BC
-    H = model.set_point(sp.Rational(35, 76), sp.Rational(-5, 76), label="H")
-    half_BC = sp.sqrt(1 - H.x**2 - H.y**2)
-    len_EH = sp.sqrt(H.x**2 + H.y**2)
-    ux_BC = -H.y / len_EH
-    uy_BC = H.x / len_EH
-
-    B = model.set_point(H.x + half_BC * ux_BC, H.y + half_BC * uy_BC, ID="B")
-    C = model.set_point(H.x - half_BC * ux_BC, H.y - half_BC * uy_BC, ID="C")
-
-    model.set_segment(E, H)
-    model.set_segment(B, H)
-    model.set_segment(H, C)
-    model.set_segment(B, C)
-    model.set_section([B, H, C])
-
-    # 3. Perpendicular EK to more remote chord FG
-    K = model.set_point(sp.Rational(-57, 76), sp.Rational(6, 76), label="K")
-    half_FG = sp.sqrt(1 - K.x**2 - K.y**2)
-    len_EK = sp.sqrt(K.x**2 + K.y**2)
-    ux_FG = -K.y / len_EK
-    uy_FG = K.x / len_EK
-
-    F = model.set_point(K.x + half_FG * ux_FG, K.y + half_FG * uy_FG, ID="F")
-    G = model.set_point(K.x - half_FG * ux_FG, K.y - half_FG * uy_FG, ID="G")
-
-    # 4. Point L on EK with EL = EH, and chord MN through L perpendicular to EK
-    L = model.set_point(K.x * len_EH / len_EK, K.y * len_EH / len_EK, ID="L")
-    M = model.set_point(L.x + half_BC * ux_FG, L.y + half_BC * uy_FG, ID="M")
-    N = model.set_point(L.x - half_BC * ux_FG, L.y - half_BC * uy_FG, ID="N")
-
-    model.set_segment(E, L)
-    model.set_segment(L, K)
-    model.set_segment(E, K)
-    model.set_section([E, L, K])
-
-    model.set_segment(F, K)
-    model.set_segment(K, G)
+    model.set_segment(E, C)
+    model.set_segment(A, C)
+    model.set_segment(A, F)
+    model.set_segment(E, F)
+    model.set_segment(C, F)
     model.set_segment(F, G)
-    model.set_section([F, K, G])
+    model.set_segment(G, H)
+    model.set_segment(H, K)
+    model.set_segment(G, K)
+    model.set_segment(B, D)
+    model.set_segment(C, K)
+    model.set_segment(K, D)
+    model.set_segment(C, D)
 
-    model.set_segment(M, L)
-    model.set_segment(L, N)
-    model.set_segment(M, N)
-    model.set_section([M, L, N])
-
-    # 5. Radii ME, EN, FE, EG and triangles MEN, FEG
-    model.set_segment(M, E)
-    model.set_segment(E, N)
-    model.set_segment(F, E)
-    model.set_segment(E, G)
-
-    model.set_polygon([M, E, N])
-    model.set_polygon([F, E, G])
+    # 8. Explicitly add all referenced squares, rectangles, triangles, and right angle
+    model.set_polygon([F, G, H, A])  # Square FH on AF
+    model.set_polygon([F, G, K, C])  # Rectangle FK (CF, FA)
+    model.set_polygon([A, H, K, C])  # Common rectangle AK
+    model.set_polygon([H, B, D, K])  # Remainder rectangle HD (AB, BH)
+    model.set_polygon([A, B, E])     # Right triangle ABE
+    model.set_wedge(A, B, B, E)      # Right angle at A
 
     return model
 

@@ -1,28 +1,20 @@
 :canonical_id: G.237
-:original_id: VII.36
+:original_id: VI.25
+:title: G.237 construct one and the same figure similar to
 :volume: II
-:book: VII
+:book: VI
 :type: prop
 
-G.237 — Code
-============
+G.237 construct one and the same figure similar to — Code
+=========================================================
 
-.. rubric:: `VII.36 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/36/>`_
+.. rubric:: `VI.25 <https://geometor.github.io/euclid/heath/volume_II/book_vi/propositions/25/>`_
 
 .. enunciation::
 
-   Given three numbers, to find the least number which they measure.
-
-.. rubric:: ``g1.py``
+   Construct one and the same :term:`figure <G.9>` similar to a given polygon and equal to another given polygon.
 
 .. picture:: g1.svg
 
 .. literalinclude:: g1.py
-   :language: python
-
-.. rubric:: ``g2.py``
-
-.. picture:: g2.svg
-
-.. literalinclude:: g2.py
    :language: python

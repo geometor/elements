@@ -1,17 +1,18 @@
 :canonical_id: G.157
-:original_id: V.20
+:original_id: IV.5
+:title: G.157 circumscribe circle about triangle
 :volume: II
-:book: V
+:book: IV
 :type: prop
 
-G.157 — Code
-============
+G.157 circumscribe circle about triangle — Code
+===============================================
 
-.. rubric:: `V.20 <https://geometor.github.io/euclid/heath/volume_II/book_v/propositions/20/>`_
+.. rubric:: `IV.5 <https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/05/>`_
 
 .. enunciation::
 
-   If there be three magnitudes, and others equal to them in multitude, which taken two and two are in the same ratio, and if:term:`*ex aequali* <ex-aequali>` the first be greater than the third, the fourth is greater than the sixth; if equal, equal; and, if less, less.
+   Circumscribe about a given :term:`triangle <G.11>` a :term:`circle <G.10>`.
 
 .. picture:: g1.svg
 

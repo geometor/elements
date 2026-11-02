@@ -1,17 +1,18 @@
 :canonical_id: G.512
-:original_id: XIII.5
+:original_id: XI.10
+:title: G.512 segments meeting parallel
 :volume: III
-:book: XIII
+:book: XI
 :type: prop
 
-G.512 — Code
-============
+G.512 segments meeting parallel — Code
+======================================
 
-.. rubric:: `XIII.5 <https://geometor.github.io/euclid/heath/volume_III/book_xiii/propositions/05/>`_
+.. rubric:: `XI.10 <https://geometor.github.io/euclid/heath/volume_III/book_xi/propositions/10/>`_
 
 .. enunciation::
 
-   If a straight line be cut in extreme and mean ratio, and there be added to it a straight line equal to the greater segment, the whole straight line has been cut in extreme and mean ratio, and the original straight line is the greater segment.
+   If two :term:`segments <G.4>` meeting one another be :term:`parallel <G.52>` to two segments meeting one another not in the same :term:`plane <G.7>`, they will contain equal :term:`angles <G.22>`.
 
 .. picture:: g1.svg
 

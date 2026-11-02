@@ -1,4 +1,4 @@
-"""Programmatic construction for Book IV, Proposition 10 (IV.10)."""
+"""Programmatic construction for Book III, Proposition 23 (III.23)."""
 
 from __future__ import annotations
 
@@ -6,45 +6,38 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0102.g1 (Golden Triangle) using geometor.model."""
-    model = Model("IV.10")
+    """Construct the figure 0058.g2 using geometor.model."""
+    model = Model("III.23")
 
-    # Points (y-inverted for standard mathematical coordinates)
-    A = model.set_point(114.00, -115.00, classes=["given"], ID="A")
-    B = model.set_point(174.18, -35.14, classes=["given"], ID="B")
-    C = model.set_point(151.19, -65.64, ID="C")
-    D = model.set_point(209.63, -85.76, ID="D")
-    E = model.set_point(208.59, -144.88, ID="E")
-    O = model.set_point(166.57, -115.92, ID="O")
+    # Base points A, B and circle centers O1 (for ACB) and O2 (for ADB) (y-inverted)
+    A = model.set_point(28.00, -66.00, classes=["given"], ID="A")
+    B = model.set_point(164.00, -66.00, classes=["given"], ID="B")
+    O1 = model.set_point(96.00, -127.97, ID="O1")
+    O2 = model.set_point(96.00, -104.21, ID="O2")
+    C = model.set_point(105.21, -36.43, ID="C")
+    D = model.set_point(121.08, -30.35, ID="D")
 
-    # Circles: BDE (centre A, radius AB) and circumscribed circle ACD (centre O, radius OA)
-    model.construct_circle(A, B)
-    model.construct_circle(O, A)
+    # Circles for segments ACB and ADB
+    model.construct_circle(O1, A)
+    model.construct_circle(O2, A)
 
-    # Segments
+    # Segments and secant ACD
     model.set_segment(A, B)
     model.set_segment(A, C)
-    model.set_segment(C, B)
-    model.set_segment(A, D)
-    model.set_segment(B, D)
     model.set_segment(C, D)
-
-    # Golden section on AB at C
-    model.set_section([A, C, B], classes=["golden"])
+    model.set_segment(A, D)
+    model.set_segment(C, B)
+    model.set_segment(D, B)
+    model.set_section([A, C, D])
 
     # Polygons
-    model.set_polygon([A, B, D])
-    model.set_polygon([A, C, D])
-    model.set_polygon([B, C, D])
+    model.set_polygon([A, C, B])
+    model.set_polygon([A, D, B])
+    model.set_polygon([C, D, B])
 
     # Angles (wedges)
-    model.set_wedge(D, B, B, C)
-    model.set_wedge(C, D, D, A)
-    model.set_wedge(A, D, D, C)
-    model.set_wedge(A, D, D, B)
-    model.set_wedge(D, C, C, B)
-    model.set_wedge(B, B, C, D)
-    model.set_wedge(B, A, D, B)
+    model.set_wedge(C, A, A, B)
+    model.set_wedge(D, A, A, B)
 
     return model
 

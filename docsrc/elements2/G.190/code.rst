@@ -1,17 +1,18 @@
 :canonical_id: G.190
-:original_id: VI.25
+:original_id: V.12
+:title: G.190 number magnitudes proportional
 :volume: II
-:book: VI
+:book: V
 :type: prop
 
-G.190 — Code
-============
+G.190 number magnitudes proportional — Code
+===========================================
 
-.. rubric:: `VI.25 <https://geometor.github.io/euclid/heath/volume_II/book_vi/propositions/25/>`_
+.. rubric:: `V.12 <https://geometor.github.io/euclid/heath/volume_II/book_v/propositions/12/>`_
 
 .. enunciation::
 
-   Construct one and the same figure similar to a given polygon and equal to another given polygon.
+   If any number of magnitudes be :term:`proportional <G.180>`, as one of the :term:`antecedents <G.181>` is to one of the consequents, so will all the antecedents be to all the consequents.
 
 .. picture:: g1.svg
 

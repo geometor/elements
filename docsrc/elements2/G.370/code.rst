@@ -1,17 +1,18 @@
 :canonical_id: G.370
-:original_id: X.54
-:volume: III
-:book: X
+:original_id: IX.36
+:title: G.370 many numbers please
+:volume: II
+:book: IX
 :type: prop
 
-G.370 — Code
-============
+G.370 many numbers please — Code
+================================
 
-.. rubric:: `X.54 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/054/>`_
+.. rubric:: `IX.36 <https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/36/>`_
 
 .. enunciation::
 
-   If an area be contained by a rational straight line and the first binomial, the "side" of the area is the irrational straight line which is called binomial.
+   If as many :term:`numbers <G.248>` as we please beginning from an :term:`unit <G.247>` be set out continuously in double proportion, until the sum of all becomes :term:`prime <G.283>`, and if the sum :term:`multiplied <G.269>` into the last make some number, the product is :term:`perfect <G.369>`.
 
 .. picture:: g1.svg
 

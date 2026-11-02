@@ -1,65 +1,72 @@
-"""Programmatic construction for Book XI, Proposition 36 (XI.36).
-
-If three straight lines A, B, C be proportional, the parallelepipedal solid LH
-formed out of A, B, C is equal to the equilateral and equiangular
-parallelepipedal solid EK on the mean B.
-"""
+"""Programmatic construction for Book X, Proposition 97 (X.97)."""
 
 from __future__ import annotations
 
-import sympy as sp
 from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the two equiangular parallelepipeds LH and EK and lines A, B, C for XI.36."""
-    model = Model("XI.36")
+    """Construct the figure 0216.g1 using geometor.model."""
+    model = Model("X.97")
 
-    # Left parallelepiped LH
-    H = model.set_point(sp.Rational(48, 100), sp.Rational(229, 100), classes=["given"], label="H")
-    H_right = model.set_point(sp.Rational(174, 100), sp.Rational(229, 100), label="H_right")
-    N_left = model.set_point(sp.Rational(108, 100), sp.Rational(181, 100), label="N_left")
-    N = model.set_point(sp.Rational(234, 100), sp.Rational(181, 100), classes=["given"], label="N")
+    # Top segment AG divided at B
+    A = model.set_point(123.0, -22.0, classes=["given"], ID="A")
+    B = model.set_point(206.0, -22.0, classes=["given"], ID="B")
+    G = model.set_point(263.0, -22.0, classes=["given"], ID="G")
 
-    O_left = model.set_point(sp.Rational(12, 100), sp.Rational(159, 100), label="O_left")
-    O = model.set_point(sp.Rational(138, 100), sp.Rational(159, 100), classes=["given"], label="O")
-    M = model.set_point(sp.Rational(72, 100), sp.Rational(111, 100), classes=["given"], label="M")
-    L = model.set_point(sp.Rational(198, 100), sp.Rational(111, 100), classes=["given"], label="L")
+    # Rectangle CDLM divided by vertical lines FE, NO, KH
+    C = model.set_point(17.5, -57.5, classes=["given"], ID="C")
+    F = model.set_point(133.5, -57.5, ID="F")
+    N = model.set_point(244.5, -57.5, ID="N")
+    K = model.set_point(314.5, -57.5, ID="K")
+    M = model.set_point(354.5, -57.5, ID="M")
 
-    # Proportional lines A, B, C
-    A1 = model.set_point(sp.Rational(74, 100), sp.Rational(79, 100), classes=["given"], label="A")
-    A2 = model.set_point(sp.Rational(196, 100), sp.Rational(79, 100), label="A2")
-    B1 = model.set_point(sp.Rational(74, 100), sp.Rational(51, 100), classes=["given"], label="B")
-    B2 = model.set_point(sp.Rational(166, 100), sp.Rational(51, 100), label="B2")
-    C1 = model.set_point(sp.Rational(74, 100), sp.Rational(23, 100), classes=["given"], label="C")
-    C2 = model.set_point(sp.Rational(142, 100), sp.Rational(23, 100), label="C2")
+    D = model.set_point(17.5, -121.5, classes=["given"], ID="D")
+    E = model.set_point(133.5, -121.5, ID="E")
+    O = model.set_point(244.5, -121.5, ID="O")
+    H = model.set_point(314.5, -121.5, ID="H")
+    L = model.set_point(354.5, -121.5, ID="L")
 
-    # Right parallelepiped EK
-    K = model.set_point(sp.Rational(356, 100), sp.Rational(215, 100), classes=["given"], label="K")
-    K_right = model.set_point(sp.Rational(468, 100), sp.Rational(215, 100), label="K_right")
-    D_left = model.set_point(sp.Rational(416, 100), sp.Rational(167, 100), label="D_left")
-    D = model.set_point(sp.Rational(528, 100), sp.Rational(167, 100), classes=["given"], label="D")
-
-    G_left = model.set_point(sp.Rational(312, 100), sp.Rational(129, 100), label="G_left")
-    G = model.set_point(sp.Rational(424, 100), sp.Rational(129, 100), classes=["given"], label="G")
-    F = model.set_point(sp.Rational(372, 100), sp.Rational(81, 100), classes=["given"], label="F")
-    E = model.set_point(sp.Rational(484, 100), sp.Rational(81, 100), classes=["given"], label="E")
-
+    # Base lines
     for p1, p2 in [
-        (H, H_right), (H_right, N), (N, N_left), (N_left, H),
-        (O_left, O), (O, L), (L, M), (M, O_left),
-        (O_left, H), (O, H_right), (L, N), (M, N_left),
-        (A1, A2), (B1, B2), (C1, C2),
-        (K, K_right), (K_right, D), (D, D_left), (D_left, K),
-        (G_left, G), (G, E), (E, F), (F, G_left),
-        (G_left, K), (G, K_right), (E, D), (F, D_left),
+        (A, G),
+        (C, M),
+        (D, L),
+        (C, D),
+        (F, E),
+        (N, O),
+        (K, H),
+        (M, L),
     ]:
+        model.construct_line(p1, p2)
+
+    # Segments on AG
+    for pts in ([A, B, G], [C, F, N, K, M], [D, E, O, H, L]):
+        for i in range(len(pts)):
+            for j in range(i + 1, len(pts)):
+                model.set_segment(pts[i], pts[j])
+
+    # Vertical segments on CDLM
+    for p1, p2 in [(C, D), (F, E), (N, O), (K, H), (M, L)]:
         model.set_segment(p1, p2)
 
-    model.set_polygon([M, L, N, N_left])
-    model.set_polygon([O_left, O, L, M])
-    model.set_polygon([F, E, D, D_left])
-    model.set_polygon([G_left, G, E, F])
+    # Collinear sections
+    model.set_section([A, B, G])
+    model.set_section([C, F, M])
+    model.set_section([C, K, M])
+    model.set_section([F, N, M])
+
+    # Polygons in CDLM
+    model.set_polygon([C, M, L, D])  # CL / DM
+    model.set_polygon([C, F, E, D])  # CE
+    model.set_polygon([C, K, H, D])  # CH
+    model.set_polygon([K, M, L, H])  # KL
+    model.set_polygon([F, M, L, E])  # FL
+    model.set_polygon([F, N, O, E])  # FO
+    model.set_polygon([N, M, L, O])  # NL / LN
+    model.set_polygon([N, K, H, O])  # NH
+    model.set_polygon([C, N, O, D])  # CO
+    model.set_polygon([F, K, H, E])  # FH
 
     return model
 

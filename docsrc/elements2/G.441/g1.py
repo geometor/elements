@@ -1,4 +1,4 @@
-"""Programmatic construction for Book X, Proposition 114 (X.114)."""
+"""Programmatic construction for Book X, Proposition 61 (X.61)."""
 
 from __future__ import annotations
 
@@ -6,55 +6,85 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0256.g1 using geometor.model."""
-    model = Model("X.114")
+    """Construct the figure 0139.g1 using geometor.model."""
+    model = Model("X.61")
 
-    # Line AF divided at B
-    A = model.set_point(55.0, -19.0, classes=["given"], ID="A")
-    B = model.set_point(128.0, -19.0, classes=["given"], ID="B")
-    F = model.set_point(168.0, -19.0, classes=["given"], ID="F")
+    # First bimedial straight line AB divided into its medials at C
+    A = model.set_point(53.0, -139.5, classes=["given"], ID="A")
+    C = model.set_point(138.0, -139.5, classes=["given"], ID="C")
+    B = model.set_point(182.0, -139.5, classes=["given"], ID="B")
 
-    # Line CD divided at E
-    C = model.set_point(17.0, -49.5, classes=["given"], ID="C")
-    E = model.set_point(164.0, -49.5, classes=["given"], ID="E")
-    D = model.set_point(217.0, -49.5, classes=["given"], ID="D")
+    # Parallelogram DF applied to rational straight line DE, divided by KH, ML, NO
+    D = model.set_point(21.5, -18.0, classes=["given"], ID="D")
+    K = model.set_point(102.5, -18.0, ID="K")
+    M = model.set_point(126.5, -18.0, ID="M")
+    N = model.set_point(169.0, -18.0, ID="N")
+    G = model.set_point(212.5, -18.0, ID="G")
 
-    # Single-letter magnitude segments G and H
-    G_l = model.set_point(49.0, -81.0, classes=["given"], ID="G")
-    G_r = model.set_point(171.0, -81.0, ID="G_r")
-
-    H_l = model.set_point(38.0, -111.5, classes=["given"], ID="H")
-    H_r = model.set_point(182.0, -111.5, ID="H_r")
-
-    # Line KM divided at L
-    K = model.set_point(35.0, -143.5, ID="K")
-    L = model.set_point(133.0, -143.5, ID="L")
-    M = model.set_point(185.0, -143.5, ID="M")
+    E = model.set_point(21.5, -112.5, classes=["given"], ID="E")
+    H = model.set_point(102.5, -112.5, ID="H")
+    L = model.set_point(126.5, -112.5, ID="L")
+    O = model.set_point(169.0, -112.5, ID="O")
+    F = model.set_point(212.5, -112.5, ID="F")
 
     # Base lines
-    model.construct_line(A, F)
-    model.construct_line(C, D)
-    model.construct_line(G_l, G_r)
-    model.construct_line(H_l, H_r)
-    model.construct_line(K, M)
+    model.construct_line(A, B)
+    model.construct_line(D, G)
+    model.construct_line(E, F)
+    model.construct_line(D, E)
+    model.construct_line(K, H)
+    model.construct_line(M, L)
+    model.construct_line(N, O)
+    model.construct_line(G, F)
 
-    # Segments
-    model.set_segment(A, F)
+    # Segments on AB
     model.set_segment(A, B)
-    model.set_segment(B, F)
-    model.set_segment(C, D)
-    model.set_segment(C, E)
-    model.set_segment(E, D)
-    model.set_segment(G_l, G_r)
-    model.set_segment(H_l, H_r)
+    model.set_segment(A, C)
+    model.set_segment(C, B)
+
+    # Segments on DEFG
+    model.set_segment(D, G)
+    model.set_segment(D, K)
+    model.set_segment(D, M)
+    model.set_segment(D, N)
     model.set_segment(K, M)
-    model.set_segment(K, L)
-    model.set_segment(L, M)
+    model.set_segment(K, N)
+    model.set_segment(K, G)
+    model.set_segment(M, N)
+    model.set_segment(M, G)
+    model.set_segment(N, G)
+
+    model.set_segment(E, F)
+    model.set_segment(E, H)
+    model.set_segment(E, L)
+    model.set_segment(E, O)
+    model.set_segment(H, L)
+    model.set_segment(H, O)
+    model.set_segment(H, F)
+    model.set_segment(L, O)
+    model.set_segment(L, F)
+    model.set_segment(O, F)
+
+    model.set_segment(D, E)
+    model.set_segment(K, H)
+    model.set_segment(M, L)
+    model.set_segment(N, O)
+    model.set_segment(G, F)
 
     # Sections
-    model.set_section([A, B, F])
-    model.set_section([C, E, D])
-    model.set_section([K, L, M])
+    model.set_section([A, C, B])
+    model.set_section([D, K, M])
+    model.set_section([D, M, G])
+    model.set_section([M, N, G])
+
+    # Polygons
+    model.set_polygon([D, E, F, G])
+    model.set_polygon([D, E, H, K])
+    model.set_polygon([K, H, L, M])
+    model.set_polygon([D, E, L, M])
+    model.set_polygon([M, L, F, G])
+    model.set_polygon([M, L, O, N])
+    model.set_polygon([N, O, F, G])
 
     return model
 

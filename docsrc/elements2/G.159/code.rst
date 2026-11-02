@@ -1,17 +1,18 @@
 :canonical_id: G.159
-:original_id: V.22
+:original_id: IV.7
+:title: G.159 circumscribe about a given circle a square
 :volume: II
-:book: V
+:book: IV
 :type: prop
 
-G.159 — Code
-============
+G.159 circumscribe about a given circle a square — Code
+=======================================================
 
-.. rubric:: `V.22 <https://geometor.github.io/euclid/heath/volume_II/book_v/propositions/22/>`_
+.. rubric:: `IV.7 <https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/07/>`_
 
 .. enunciation::
 
-   If there be any number of magnitudes whatever, and others equal to them in multitude, which taken two and two together are in the same ratio, they is in the same ratio ex aequali.
+   :term:`Circumscribe about a given circle <G.150>` a :term:`square <G.63>`.
 
 .. picture:: g1.svg
 

@@ -1,4 +1,4 @@
-"""Programmatic construction for Book VIII, Proposition 18 (VIII.18)."""
+"""Programmatic construction for Book VII, Proposition 8 (VII.8)."""
 
 from __future__ import annotations
 
@@ -6,39 +6,64 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0377.g1 using geometor.model."""
-    model = Model("VIII.18")
+    """Construct the figure 0313.g1 using geometor.model."""
+    model = Model("VII.8")
 
-    # Single-letter horizontal number segments A, B, G, C, D, E, F
-    A_l = model.set_point(22.0, -16.0, classes=["given"], ID="A")
-    A_r = model.set_point(92.0, -16.0, ID="A_r")
+    # Top horizontal number segment CD (divided at F)
+    C = model.set_point(13.0, -24.0, classes=["given"], ID="C")
+    F = model.set_point(157.0, -24.0, ID="F")
+    D = model.set_point(231.0, -24.0, classes=["given"], ID="D")
 
-    B_l = model.set_point(22.0, -41.0, classes=["given"], ID="B")
-    B_r = model.set_point(308.0, -41.0, ID="B_r")
+    # Middle horizontal number segment GH (divided at M, K, N)
+    G = model.set_point(13.0, -55.0, classes=["given"], ID="G")
+    M = model.set_point(65.0, -55.0, ID="M")
+    K = model.set_point(88.0, -55.0, ID="K")
+    N = model.set_point(140.0, -55.0, ID="N")
+    H = model.set_point(164.0, -55.0, classes=["given"], ID="H")
 
-    G_l = model.set_point(25.0, -77.0, classes=["given"], ID="G")
-    G_r = model.set_point(165.0, -77.0, ID="G_r")
+    # Bottom horizontal number segment AB (divided at L, E)
+    A = model.set_point(12.0, -81.0, classes=["given"], ID="A")
+    L = model.set_point(63.0, -81.0, ID="L")
+    E = model.set_point(115.0, -81.0, ID="E")
+    B = model.set_point(162.0, -81.0, classes=["given"], ID="B")
 
-    C_l = model.set_point(361.0, -15.0, classes=["given"], ID="C")
-    C_r = model.set_point(388.0, -15.0, ID="C_r")
+    # Base lines
+    model.construct_line(C, D)
+    model.construct_line(G, H)
+    model.construct_line(A, B)
 
-    D_l = model.set_point(361.0, -39.0, classes=["given"], ID="D")
-    D_r = model.set_point(399.0, -39.0, ID="D_r")
+    # Segments on CD
+    model.set_segment(C, D)
+    model.set_segment(C, F)
+    model.set_segment(F, D)
 
-    E_l = model.set_point(329.0, -63.0, classes=["given"], ID="E")
-    E_r = model.set_point(379.0, -63.0, ID="E_r")
+    # Segments on GH
+    model.set_segment(G, H)
+    model.set_segment(G, M)
+    model.set_segment(M, K)
+    model.set_segment(K, N)
+    model.set_segment(N, H)
+    model.set_segment(G, K)
+    model.set_segment(K, H)
+    model.set_segment(G, N)
+    model.set_segment(M, N)
+    model.set_segment(M, H)
 
-    F_l = model.set_point(330.0, -85.0, classes=["given"], ID="F")
-    F_r = model.set_point(406.0, -85.0, ID="F_r")
+    # Segments on AB
+    model.set_segment(A, B)
+    model.set_segment(A, L)
+    model.set_segment(L, E)
+    model.set_segment(E, B)
+    model.set_segment(A, E)
+    model.set_segment(L, B)
 
-    # Number segments
-    model.set_segment(A_l, A_r)
-    model.set_segment(B_l, B_r)
-    model.set_segment(G_l, G_r)
-    model.set_segment(C_l, C_r)
-    model.set_segment(D_l, D_r)
-    model.set_segment(E_l, E_r)
-    model.set_segment(F_l, F_r)
+    # Collinear sections
+    model.set_section([C, F, D])
+    model.set_section([G, K, H])
+    model.set_section([G, M, K])
+    model.set_section([K, N, H])
+    model.set_section([A, L, E])
+    model.set_section([A, E, B])
 
     return model
 

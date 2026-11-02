@@ -1,17 +1,18 @@
 :canonical_id: G.245
-:original_id: VIII.5
+:original_id: VI.32
+:title: G.245 triangles sides proportional
 :volume: II
-:book: VIII
+:book: VI
 :type: prop
 
-G.245 — Code
-============
+G.245 triangles sides proportional — Code
+=========================================
 
-.. rubric:: `VIII.5 <https://geometor.github.io/euclid/heath/volume_II/book_viii/propositions/05/>`_
+.. rubric:: `VI.32 <https://geometor.github.io/euclid/heath/volume_II/book_vi/propositions/32/>`_
 
 .. enunciation::
 
-   Plane numbers have to one another the ratio compounded of the ratios of their sides.
+   If two :term:`triangles <G.11>` having two sides :term:`proportional <G.180>` to two sides be placed together at one :term:`angle <G.22>` so that their corresponding sides are also :term:`parallel <G.52>`, the remaining sides of the triangles is in a :term:`segment <G.4>`.
 
 .. picture:: g1.svg
 

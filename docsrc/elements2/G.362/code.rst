@@ -1,17 +1,18 @@
 :canonical_id: G.362
-:original_id: X.47
-:volume: III
-:book: X
+:original_id: IX.31
+:title: G.362 odd number prime
+:volume: II
+:book: IX
 :type: prop
 
-G.362 — Code
-============
+G.362 odd number prime — Code
+=============================
 
-.. rubric:: `X.47 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/047/>`_
+.. rubric:: `IX.31 <https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/31/>`_
 
 .. enunciation::
 
-   The side of the sum of two medial areas is divided at one point only.
+   If an :term:`odd number <G.352>` be :term:`prime to <G.249>` any :term:`number <G.248>`, it is prime to the double of it.
 
 .. picture:: g1.svg
 

@@ -1,49 +1,36 @@
-"""Programmatic construction for Book XI, Proposition 20 (XI.20).
-
-If a solid angle be contained by three plane angles, any two, taken together in
-any manner, are greater than the remaining one.
-"""
+"""Programmatic construction for Book X, Proposition 83 (X.83)."""
 
 from __future__ import annotations
 
-import sympy as sp
 from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure for Book XI, Proposition 20 using geometor.model."""
-    model = Model("XI.20")
+    """Construct the figure 0178.g1 using geometor.model."""
+    model = Model("X.83")
 
-    # 1. Let the solid angle at A be contained by the three plane angles
-    #    BAC, CAD, DAB.
-    A = model.set_point(0, 0, classes=["given"], ID="A")
-    D = model.set_point(sp.Rational(15, 60), sp.Rational(59, 60), classes=["given"], label="D")
-    B = model.set_point(sp.Rational(-141, 60), sp.Rational(-47, 60), classes=["given"], label="B")
-    C = model.set_point(sp.Rational(77, 60), sp.Rational(-47, 60), classes=["given"], label="C")
+    # Straight line AD divided at B and C
+    A = model.set_point(18.0, -18.0, classes=["given"], ID="A")
+    B = model.set_point(74.0, -18.0, classes=["given"], ID="B")
+    C = model.set_point(187.0, -18.0, classes=["given"], ID="C")
+    D = model.set_point(211.0, -18.0, classes=["given"], ID="D")
 
-    # 2. In the plane through BA, AC construct angle BAE equal to angle DAB,
-    #    make AE equal to AD, and draw BEC across through E cutting AB, AC at B, C.
-    E = model.set_point(sp.Rational(38, 60), sp.Rational(-47, 60), label="E")
+    # Base line
+    model.construct_line(A, D)
 
-    # 3. Join DB, DC.
-    model.set_segment(A, B)
-    model.set_segment(A, C)
+    # Segments
     model.set_segment(A, D)
-    model.set_segment(A, E)
-    model.set_segment(B, C)
-    model.set_segment(B, E)
-    model.set_segment(E, C)
+    model.set_segment(A, C)
+    model.set_segment(A, B)
     model.set_segment(B, D)
-    model.set_segment(D, C)
-    model.set_section([B, E, C])
+    model.set_segment(B, C)
+    model.set_segment(C, D)
 
-    # Triangles and planes
-    model.set_polygon([B, A, C])
-    model.set_polygon([B, A, E])
-    model.set_polygon([E, A, C])
-    model.set_polygon([D, A, B])
-    model.set_polygon([D, A, C])
-    model.set_polygon([B, D, C])
+    # Sections
+    model.set_section([A, B, C])
+    model.set_section([A, B, D])
+    model.set_section([A, C, D])
+    model.set_section([B, C, D])
 
     return model
 

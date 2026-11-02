@@ -1,4 +1,4 @@
-"""Programmatic construction for Book V, Proposition 22 (V.22)."""
+"""Programmatic construction for Book IV, Proposition 7 (IV.7)."""
 
 from __future__ import annotations
 
@@ -6,54 +6,74 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0186.g1 for Book V, Proposition 22 using geometor.model."""
-    model = Model("V.22")
+    """Construct the figure 0098.g2 using geometor.model."""
+    model = Model("IV.7")
 
-    # Left group: A, D, G (double of A), H (double of D)
-    A_1 = model.set_point(106.00, -17.00, classes=["given"], ID="A_1")
-    A_2 = model.set_point(190.00, -17.00, classes=["given"], ID="A_2")
-    D_1 = model.set_point(106.00, -41.00, classes=["given"], ID="D_1")
-    D_2 = model.set_point(164.00, -41.00, classes=["given"], ID="D_2")
-    G_1 = model.set_point(21.00, -63.00, classes=["given"], ID="G_1")
-    G_2 = model.set_point(187.00, -63.00, classes=["given"], ID="G_2")
-    H_1 = model.set_point(51.00, -89.00, classes=["given"], ID="H_1")
-    H_2 = model.set_point(166.00, -89.00, classes=["given"], ID="H_2")
+    # Points (y-inverted for standard mathematical coordinates)
+    E = model.set_point(90.00, -95.00, ID="E")
+    A = model.set_point(90.00, -31.00, classes=["given"], ID="A")
+    B = model.set_point(26.00, -95.00, ID="B")
+    C = model.set_point(90.00, -159.00, ID="C")
+    D = model.set_point(154.00, -95.00, ID="D")
+    G = model.set_point(26.00, -31.00, ID="G")
+    F = model.set_point(154.00, -31.00, ID="F")
+    H = model.set_point(26.00, -159.00, ID="H")
+    K = model.set_point(154.00, -159.00, ID="K")
 
-    # Middle group: B, E, K (triple of B), L (triple of E)
-    B_1 = model.set_point(258.00, -17.00, classes=["given"], ID="B_1")
-    B_2 = model.set_point(300.00, -17.00, classes=["given"], ID="B_2")
-    E_1 = model.set_point(258.00, -41.00, classes=["given"], ID="E_1")
-    E_2 = model.set_point(286.00, -41.00, classes=["given"], ID="E_2")
-    K_1 = model.set_point(239.00, -63.00, classes=["given"], ID="K_1")
-    K_2 = model.set_point(371.00, -63.00, classes=["given"], ID="K_2")
-    L_1 = model.set_point(252.00, -89.00, classes=["given"], ID="L_1")
-    L_2 = model.set_point(344.00, -89.00, classes=["given"], ID="L_2")
+    # Circle ABCD
+    model.construct_circle(E, A)
 
-    # Right group: C, F, M (double of C), N (double of F)
-    C_1 = model.set_point(370.00, -17.00, classes=["given"], ID="C_1")
-    C_2 = model.set_point(451.00, -17.00, classes=["given"], ID="C_2")
-    F_1 = model.set_point(370.00, -41.00, classes=["given"], ID="F_1")
-    F_2 = model.set_point(430.00, -41.00, classes=["given"], ID="F_2")
-    M_1 = model.set_point(416.00, -63.00, classes=["given"], ID="M_1")
-    M_2 = model.set_point(597.00, -63.00, classes=["given"], ID="M_2")
-    N_1 = model.set_point(444.00, -89.00, classes=["given"], ID="N_1")
-    N_2 = model.set_point(571.00, -89.00, classes=["given"], ID="N_2")
+    # Construction lines
+    model.construct_line(A, C)
+    model.construct_line(B, D)
+    model.construct_line(F, G)
+    model.construct_line(G, H)
+    model.construct_line(H, K)
+    model.construct_line(K, F)
 
-    for p1, p2 in [
-        (A_1, A_2),
-        (D_1, D_2),
-        (G_1, G_2),
-        (H_1, H_2),
-        (B_1, B_2),
-        (E_1, E_2),
-        (K_1, K_2),
-        (L_1, L_2),
-        (C_1, C_2),
-        (F_1, F_2),
-        (M_1, M_2),
-        (N_1, N_2),
-    ]:
-        model.set_segment(p1, p2)
+    # Segments
+    model.set_segment(A, C)
+    model.set_segment(B, D)
+    model.set_segment(E, A)
+    model.set_segment(E, B)
+    model.set_segment(E, C)
+    model.set_segment(E, D)
+    model.set_segment(F, G)
+    model.set_segment(G, H)
+    model.set_segment(H, K)
+    model.set_segment(K, F)
+    model.set_segment(G, A)
+    model.set_segment(A, F)
+    model.set_segment(G, B)
+    model.set_segment(B, H)
+    model.set_segment(H, C)
+    model.set_segment(C, K)
+    model.set_segment(K, D)
+    model.set_segment(D, F)
+
+    # Collinear sections
+    model.set_section([A, E, C])
+    model.set_section([B, E, D])
+    model.set_section([G, A, F])
+    model.set_section([G, B, H])
+    model.set_section([H, C, K])
+    model.set_section([F, D, K])
+
+    # Polygons (squares and rectangles)
+    model.set_polygon([F, G, H, K])
+    model.set_polygon([G, H, C, A])
+    model.set_polygon([A, C, K, F])
+    model.set_polygon([F, G, B, D])
+    model.set_polygon([B, H, K, D])
+    model.set_polygon([G, B, E, A])
+
+    # Angles (wedges)
+    model.set_wedge(E, A, A, B)
+    model.set_wedge(B, E, E, G)
+    model.set_wedge(G, A, A, B)
+    model.set_wedge(H, G, G, K)
+    model.set_wedge(K, H, H, F)
+    model.set_wedge(F, K, K, G)
 
     return model
 

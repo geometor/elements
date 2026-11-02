@@ -1,17 +1,18 @@
 :canonical_id: G.125
-:original_id: IV.7
+:original_id: III.22
+:title: G.125 opposite angles quadrilaterals
 :volume: II
-:book: IV
+:book: III
 :type: prop
 
-G.125 — Code
-============
+G.125 opposite angles quadrilaterals — Code
+===========================================
 
-.. rubric:: `IV.7 <https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/07/>`_
+.. rubric:: `III.22 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/22/>`_
 
 .. enunciation::
 
-   Circumscribe about a given circle a square.
+   The opposite :term:`angles <G.22>` of :term:`quadrilaterals <G.11>` in :term:`circles <G.10>` are equal to two :term:`right angles <G.32>`.
 
 .. picture:: g1.svg
 

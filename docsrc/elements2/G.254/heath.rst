@@ -1,86 +1,18 @@
 :canonical_id: G.254
-:original_id: VIII.13
+:original_id: VII.def.4
+:title: G.254 parts of a number
 :volume: II
-:book: VIII
-:type: prop
+:book: VII
+:type: def
 
-G.254 — Heath
-=============
+G.254 parts of a number — Heath
+===============================
 
-.. rubric:: `VIII.13 <https://geometor.github.io/euclid/heath/volume_II/book_viii/propositions/13/>`_
+.. rubric:: `VII.def.4 <https://geometor.github.io/euclid/heath/volume_II/book_vii/definitions/#vii-def-4>`_
 
 .. enunciation::
 
-   If there be as many numbers as we please in continued proportion, and each by multiplying itself make some number, the products will be proportional; and, if the original numbers by multiplying the products make certain numbers, the latter will also be proportional.
-
-Let there be as many numbers as we please, :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, in continued proportion, so that, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`B <g1:B>` to :g:`C <g1:C>`; let :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` by multiplying themselves make :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`F <g1:F>`, and by multiplying :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`F <g1:F>` let them make :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`K <g1:K>`;
-
-I say that :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`F <g1:F>` and :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`K <g1:K>` are in continued proportion.
-
-.. picture:: g1.svg
-   :alt: Book VIII, Proposition 13
-
-For let :g:`A <g1:A>` by multiplying :g:`B <g1:B>` make :g:`L <g1:L>`, and let the numbers :g:`A <g1:A>`, :g:`B <g1:B>` by multiplying :g:`L <g1:L>` make :g:`M <g1:M>`, :g:`N <g1:N>` respectively.
-
-And again let :g:`B <g1:B>` by multiplying :g:`C <g1:C>` make :g:`O <g1:O>`, and let the numbers :g:`B <g1:B>`, :g:`C <g1:C>` by multiplying :g:`O <g1:O>` make :g:`P <g1:P>`, :g:`Q <g1:Q>` respectively.
-
-.. assertion::
-
-   Then, in manner similar to the foregoing, we can prove that :g:`D <g1:D>`, :g:`L <g1:L>`, :g:`E <g1:E>` and :g:`G <g1:G>`, :g:`M <g1:M>`, :g:`N <g1:N>`, :g:`H <g1:H>` are continuously proportional in the ratio of :g:`A <g1:A>` to :g:`B <g1:B>`, and further :g:`E <g1:E>`, :g:`O <g1:O>`, :g:`F <g1:F>` and :g:`H <g1:H>`, :g:`P <g1:P>`, :g:`Q <g1:Q>`, :g:`K <g1:K>` are continuously proportional in the ratio of :g:`B <g1:B>` to :g:`C <g1:C>`.
-
-.. subclause::
-
-   Now, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`B <g1:B>` to :g:`C <g1:C>`;
-
-.. assertion::
-
-   therefore :g:`D <g1:D>`, :g:`L <g1:L>`, :g:`E <g1:E>` are also in the same ratio with :g:`E <g1:E>`, :g:`O <g1:O>`, :g:`F <g1:F>`, and further :g:`G <g1:G>`, :g:`M <g1:M>`, :g:`N <g1:N>`, :g:`H <g1:H>` in the same ratio with :g:`H <g1:H>`, :g:`P <g1:P>`, :g:`Q <g1:Q>`, :g:`K <g1:K>`.
-
-.. subclause::
-
-   And the multitude of :g:`D <g1:D>`, :g:`L <g1:L>`, :g:`E <g1:E>` is equal to the multitude of :g:`E <g1:E>`, :g:`O <g1:O>`, :g:`F <g1:F>`, and that of :g:`G <g1:G>`, :g:`M <g1:M>`, :g:`N <g1:N>`, :g:`H <g1:H>` to that of :g:`H <g1:H>`, :g:`P <g1:P>`, :g:`Q <g1:Q>`, :g:`K <g1:K>`;
-
-.. assertion::
-
-   therefore, :term:`*ex aequali* <ex-aequali>`, as :g:`D <g1:D>` is to :g:`E <g1:E>`, so is :g:`E <g1:E>` to :g:`F <g1:F>`, and, as :g:`G <g1:G>` is to :g:`H <g1:H>`, so is :g:`H <g1:H>` to :g:`K <g1:K>`. :just:`[G.214] <G.214>`
-
-If $a, b, c \dots$ be a series in geometrical progression, then
-
-$$\left. \begin{array}{l} a^2,\; b^2,\; c^2 \dots \\ a^3,\; b^3,\; c^3 \dots \end{array} \right\} \text{are also in geometrical progression.}$$
-
-:person:`Heiberg <heiberg>` brackets the words added to the enunciation which extend the theorem to any powers. The words are “and this always occurs with the extremes” (καὶ ἀεὶ περὶ τοὺς ἄκρους τοῦτο συμβαίνει). They seem to be rightly suspected on the same grounds as the same words added to the enunciation of VII. 27. There is no allusion to them in the proof, much less any proof of the extension.
-
-Euclid forms, besides the squares and cubes of the given numbers, the products $ab$, $a^2b$, $ab^2$, $bc$, $b^2c$, $bc^2$. When he says that “we prove in manner similar to the foregoing,” he indicates successive uses of VII. 17, 18 as in VIII. 12.
-
-With our notation the proof is as easy to see for *any* powers as for squares and cubes.
-
-To prove that $a^n, b^n, c^n \dots$ are in geometrical progression.
-
-Form all the means between $a^n, b^n$, and set out the series
-
-$$a^n,\quad a^{n-1}b,\quad a^{n-2}b^2\;\dots\;ab^{n-1},\quad b^n.$$
-
-The common ratio of one term to the next is $a : b$.
-
-Next take the geometrical progression
-
-$$b^n,\quad b^{n-1}c,\quad b^{n-2}c^2\;\dots\;bc^{n-1},\quad c^n,$$
-
-the common ratio of which is $b : c$.
-
-Proceed thus for all pairs of consecutive terms.
-
-Now
-
-$$a : b = b : c = \dots$$
-
-Therefore any pair of succeeding terms in one series are in the same ratio as any pair of succeeding terms in any other of the series.
-
-And the number of terms in each is the same, namely $(n + 1)$.
-
-Therefore, :term:`*ex aequali* <ex-aequali>`,
-
-$$a^n : b^n = b^n : c^n = c^n : d^n = \dots$$
+   but :term:`**parts** <parts-non-aliquot>` when it does not :term:`measure <G.253>` it.
 
 Dependency Graph
 ----------------
@@ -92,22 +24,12 @@ Dependency Graph
      node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11, color="#d6d3cd", fontcolor="#ffffff"];
      edge [color="#8c857b", fontcolor="#8c857b", arrowsize=0.75];
      rankdir="TB";
-     "G.204" [label="G.204", tooltip="G.204 (VII.5): If a number be a part of a number, and another be the same part of another, the sum is the same part of the sum that the one is of the one.", fillcolor="#222244", URL="../G.204/index.html", target="_top"];
-     "G.205" [label="G.205", tooltip="G.205 (VII.6): If a number be parts of a number, and another be the same parts of another, the sum is the same parts of the sum that the one is of the one.", fillcolor="#222244", URL="../G.205/index.html", target="_top"];
-     "G.208" [label="G.208", tooltip="G.208 (VII.9): If a number be a part of a number, and another be the same part of another, alternately also, whatever part or parts the first is of the third, the same part, or the same parts, wi...", fillcolor="#222244", URL="../G.208/index.html", target="_top"];
-     "G.209" [label="G.209", tooltip="G.209 (VII.10): If a number be parts of a number, and another be the same parts of another, alternately also, whatever parts or part the first is of the third, the same parts or the same part will...", fillcolor="#222244", URL="../G.209/index.html", target="_top"];
-     "G.210" [label="G.210", tooltip="G.210 (VII.def.20): **Numbers** areproportional when the first is the same multiple, or the same part, or the same parts, of the second that the third is of the fourth.", fillcolor="#224422", URL="../G.210/index.html", target="_top"];
-     "G.213" [label="G.213", tooltip="G.213 (VII.13): If four numbers be proportional, they is proportional alternately.", fillcolor="#222244", URL="../G.213/index.html", target="_top"];
-     "G.214" [label="G.214", tooltip="G.214 (VII.14): If there be as many numbers as we please, and others equal to them in multitude, which taken two and two are in the same ratio, they is in the same ratio ex aequali.", fillcolor="#222244", URL="../G.214/index.html", target="_top"];
-     "G.254" [label="G.254", tooltip="G.254 (VIII.13): If there be as many numbers as we please in continued proportion, and each by multiplying itself make some number, the products is proportional; and, if the original numbers by mul...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
-     "G.205" -> "G.204";
-     "G.208" -> "G.204";
-     "G.209" -> "G.204";
-     "G.208" -> "G.205";
-     "G.209" -> "G.205";
-     "G.209" -> "G.208";
-     "G.213" -> "G.209";
-     "G.213" -> "G.210";
-     "G.214" -> "G.213";
-     "G.254" -> "G.214";
+     "G.169" [label="G.169", tooltip="G.169 (V.def.1): A magnitude is apart of a magnitude, the less of the greater, when it measures the greater.", fillcolor="#224422", URL="../G.169/index.html", target="_top"];
+     "G.254" [label="G.254", tooltip="G.254 (VII.def.4): Butparts when it does notmeasure it.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.254" -> "G.169";
    }
+
+Required for
+------------
+
+:ref:`G.255 <G.255>`, :ref:`G.258 <G.258>`, :ref:`G.260 <G.260>`, :ref:`G.261 <G.261>`, :ref:`G.262 <G.262>`, :ref:`G.263 <G.263>`, :ref:`G.264 <G.264>`, :ref:`G.265 <G.265>`, :ref:`G.266 <G.266>`, :ref:`G.267 <G.267>`, :ref:`G.268 <G.268>`, :ref:`G.270 <G.270>`, :ref:`G.271 <G.271>`, :ref:`G.272 <G.272>`, :ref:`G.273 <G.273>`, :ref:`G.274 <G.274>`, :ref:`G.275 <G.275>`, :ref:`G.276 <G.276>`, :ref:`G.278 <G.278>`, :ref:`G.279 <G.279>`, :ref:`G.280 <G.280>`, :ref:`G.281 <G.281>`, :ref:`G.285 <G.285>`, :ref:`G.289 <G.289>`, :ref:`G.290 <G.290>`, :ref:`G.292 <G.292>`, :ref:`G.293 <G.293>`, :ref:`G.294 <G.294>`, :ref:`G.295 <G.295>`, :ref:`G.296 <G.296>`, :ref:`G.297 <G.297>`, :ref:`G.298 <G.298>`, :ref:`G.299 <G.299>`, :ref:`G.301 <G.301>`, :ref:`G.303 <G.303>`, :ref:`G.304 <G.304>`, :ref:`G.305 <G.305>`, :ref:`G.306 <G.306>`, :ref:`G.307 <G.307>`, :ref:`G.309 <G.309>`, :ref:`G.312 <G.312>`, :ref:`G.313 <G.313>`, :ref:`G.314 <G.314>`, :ref:`G.315 <G.315>`, :ref:`G.316 <G.316>`, :ref:`G.317 <G.317>`, :ref:`G.319 <G.319>`, :ref:`G.321 <G.321>`, :ref:`G.322 <G.322>`, :ref:`G.323 <G.323>`, :ref:`G.324 <G.324>`, :ref:`G.325 <G.325>`, :ref:`G.326 <G.326>`, :ref:`G.327 <G.327>`, :ref:`G.328 <G.328>`, :ref:`G.329 <G.329>`, :ref:`G.330 <G.330>`, :ref:`G.331 <G.331>`, :ref:`G.332 <G.332>`, :ref:`G.333 <G.333>`, :ref:`G.334 <G.334>`, :ref:`G.335 <G.335>`, :ref:`G.337 <G.337>`, :ref:`G.338 <G.338>`, :ref:`G.339 <G.339>`, :ref:`G.340 <G.340>`, :ref:`G.342 <G.342>`, :ref:`G.343 <G.343>`, :ref:`G.344 <G.344>`, :ref:`G.345 <G.345>`, :ref:`G.346 <G.346>`, :ref:`G.347 <G.347>`, :ref:`G.348 <G.348>`, :ref:`G.349 <G.349>`, :ref:`G.364 <G.364>`, :ref:`G.368 <G.368>`, :ref:`G.370 <G.370>`, :ref:`G.376 <G.376>`, :ref:`G.377 <G.377>`, :ref:`G.378 <G.378>`, :ref:`G.379 <G.379>`, :ref:`G.381 <G.381>`, :ref:`G.382 <G.382>`, :ref:`G.383 <G.383>`, :ref:`G.384 <G.384>`, :ref:`G.385 <G.385>`, :ref:`G.386 <G.386>`, :ref:`G.389 <G.389>`, :ref:`G.390 <G.390>`, :ref:`G.393 <G.393>`, :ref:`G.394 <G.394>`, :ref:`G.395 <G.395>`, :ref:`G.396 <G.396>`, :ref:`G.397 <G.397>`, :ref:`G.398 <G.398>`, :ref:`G.399 <G.399>`, :ref:`G.400 <G.400>`, :ref:`G.401 <G.401>`, :ref:`G.402 <G.402>`, :ref:`G.403 <G.403>`, :ref:`G.404 <G.404>`, :ref:`G.405 <G.405>`, :ref:`G.406 <G.406>`, :ref:`G.407 <G.407>`, :ref:`G.408 <G.408>`, :ref:`G.409 <G.409>`, :ref:`G.410 <G.410>`, :ref:`G.411 <G.411>`, :ref:`G.412 <G.412>`, :ref:`G.413 <G.413>`, :ref:`G.414 <G.414>`, :ref:`G.415 <G.415>`, :ref:`G.416 <G.416>`, :ref:`G.417 <G.417>`, :ref:`G.418 <G.418>`, :ref:`G.419 <G.419>`, :ref:`G.420 <G.420>`, :ref:`G.421 <G.421>`, :ref:`G.423 <G.423>`, :ref:`G.425 <G.425>`, :ref:`G.427 <G.427>`, :ref:`G.429 <G.429>`, :ref:`G.431 <G.431>`, :ref:`G.433 <G.433>`, :ref:`G.434 <G.434>`, :ref:`G.435 <G.435>`, :ref:`G.436 <G.436>`, :ref:`G.437 <G.437>`, :ref:`G.438 <G.438>`, :ref:`G.439 <G.439>`, :ref:`G.440 <G.440>`, :ref:`G.441 <G.441>`, :ref:`G.442 <G.442>`, :ref:`G.443 <G.443>`, :ref:`G.444 <G.444>`, :ref:`G.445 <G.445>`, :ref:`G.446 <G.446>`, :ref:`G.447 <G.447>`, :ref:`G.448 <G.448>`, :ref:`G.449 <G.449>`, :ref:`G.450 <G.450>`, :ref:`G.451 <G.451>`, :ref:`G.452 <G.452>`, :ref:`G.453 <G.453>`, :ref:`G.457 <G.457>`, :ref:`G.458 <G.458>`, :ref:`G.459 <G.459>`, :ref:`G.460 <G.460>`, :ref:`G.461 <G.461>`, :ref:`G.462 <G.462>`, :ref:`G.463 <G.463>`, :ref:`G.464 <G.464>`, :ref:`G.465 <G.465>`, :ref:`G.466 <G.466>`, :ref:`G.467 <G.467>`, :ref:`G.468 <G.468>`, :ref:`G.470 <G.470>`, :ref:`G.472 <G.472>`, :ref:`G.474 <G.474>`, :ref:`G.476 <G.476>`, :ref:`G.477 <G.477>`, :ref:`G.478 <G.478>`, :ref:`G.479 <G.479>`, :ref:`G.480 <G.480>`, :ref:`G.481 <G.481>`, :ref:`G.482 <G.482>`, :ref:`G.483 <G.483>`, :ref:`G.484 <G.484>`, :ref:`G.485 <G.485>`, :ref:`G.486 <G.486>`, :ref:`G.487 <G.487>`, :ref:`G.488 <G.488>`, :ref:`G.489 <G.489>`, :ref:`G.490 <G.490>`, :ref:`G.491 <G.491>`, :ref:`G.492 <G.492>`, :ref:`G.493 <G.493>`, :ref:`G.494 <G.494>`, :ref:`G.495 <G.495>`, :ref:`G.496 <G.496>`, :ref:`G.497 <G.497>`, :ref:`G.498 <G.498>`, :ref:`G.499 <G.499>`, :ref:`G.500 <G.500>`, :ref:`G.501 <G.501>`, :ref:`G.584 <G.584>`, :ref:`G.589 <G.589>`, :ref:`G.597 <G.597>`, :ref:`G.600 <G.600>`, :ref:`G.601 <G.601>`

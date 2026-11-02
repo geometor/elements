@@ -1,19 +1,36 @@
 :canonical_id: G.141
-:original_id: V.6
+:original_id: III.33
+:title: G.141 describe on a given segment a segment of
 :volume: II
-:book: V
+:book: III
 :type: prop
 
-G.141 — Code
-============
+G.141 describe on a given segment a segment of — Code
+=====================================================
 
-.. rubric:: `V.6 <https://geometor.github.io/euclid/heath/volume_II/book_v/propositions/06/>`_
+.. rubric:: `III.33 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/33/>`_
 
 .. enunciation::
 
-   If two magnitudes be equimultiples of two magnitudes, and any magnitudes subtracted from them be equimultiples of the same, the remainders also are either equal to the same or equimultiples of them.
+   Describe on a given :term:`segment <G.4>` a :term:`segment of a circle <G.126>` admitting an :term:`angle <G.22>` equal to a given angle.
+
+.. rubric:: ``g1.py``
 
 .. picture:: g1.svg
 
 .. literalinclude:: g1.py
+   :language: python
+
+.. rubric:: ``g2.py``
+
+.. picture:: g2.svg
+
+.. literalinclude:: g2.py
+   :language: python
+
+.. rubric:: ``g3.py``
+
+.. picture:: g3.svg
+
+.. literalinclude:: g3.py
    :language: python

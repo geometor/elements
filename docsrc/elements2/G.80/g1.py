@@ -1,4 +1,8 @@
-"""Programmatic construction for Book III, Proposition 5 (III.5)."""
+"""Programmatic construction for Book I, Proposition 48 (I.48).
+
+Converse of the Pythagorean Theorem: if the square on BC equals the sum of the
+squares on BA and AC, then angle BAC is right.
+"""
 
 from __future__ import annotations
 
@@ -6,32 +10,30 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0018.g1 using geometor.model."""
-    model = Model("III.5")
+    """Construct Book I, Proposition 48 figure (I.48) using geometor.model."""
+    model = Model("I.48")
 
-    # Points (y-inverted for standard mathematical coordinates)
-    O1 = model.set_point(76, -80, classes=["auxiliary"], ID="O1")
-    O2 = model.set_point(105, -102, classes=["auxiliary"], ID="O2")
-    C = model.set_point(105.94, -28.01, classes=["given"], ID="C")
-    B = model.set_point(34.0, -122.85, classes=["given"], ID="B")
-    A = model.set_point(24.04, -50.0, classes=["given"], ID="A")
-    D = model.set_point(38.5, -69.84, classes=["given"], ID="D")
-    E = model.set_point(92, -92, ID="E")
-    F = model.set_point(124, -116, ID="F")
-    G = model.set_point(164.32, -146.24, ID="G")
+    A = model.set_point(71.5, -147, classes=["given"], ID="A")
+    B = model.set_point(123, -147, classes=["given"], ID="B")
+    C = model.set_point(71.5, -23, classes=["given"], ID="C")
+    D = model.set_point(20, -147, ID="D")
 
-    # Construction circles ABC and CDG
-    model.construct_circle(O1, C)
-    model.construct_circle(O2, C)
+    # Classical construction: line AD perpendicular to AC at A, circle (A, B) giving D, join DC
+    L_AC = model.construct_line(A, C)
+    model.construct_line(A, D)
+    model.construct_circle(A, B)
+
+    # Polygons
+    model.set_polygon([A, B, C])
+    model.set_polygon([A, D, C])
 
     # Segments
-    model.set_segment(E, C)
-    model.set_segment(E, G)
-    model.set_segment(E, F)
-    model.set_segment(F, G)
+    for p1, p2 in [(A, B), (A, C), (B, C), (A, D), (D, C)]:
+        model.set_segment(p1, p2)
 
-    # Sections
-    model.set_section([E, F, G])
+    # Angles
+    model.set_wedge(A, B, B, C)  # < B A C )
+    model.set_wedge(A, D, D, C)  # < D A C )
 
     return model
 

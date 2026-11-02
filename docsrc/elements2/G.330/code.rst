@@ -1,17 +1,18 @@
 :canonical_id: G.330
-:original_id: X.17
-:volume: III
-:book: X
+:original_id: IX.1
+:title: G.330 similar plane numbers
+:volume: II
+:book: IX
 :type: prop
 
-G.330 — Code
-============
+G.330 similar plane numbers — Code
+==================================
 
-.. rubric:: `X.17 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/017/>`_
+.. rubric:: `IX.1 <https://geometor.github.io/euclid/heath/volume_II/book_ix/propositions/01/>`_
 
 .. enunciation::
 
-   If there be two unequal straight lines, and to the greater there be applied a parallelogram equal to the fourth part of the square on the less and deficient by a square figure, and if it divide it into parts which are commensurable in length, then the square on the greater is greater than the square on the less by the square on a straight line commensurable with the greater. And, if the square on the greater be greater than the square on the less by the square on a straight line commensurable with the greater, and if there be applied to the greater a parallelogram equal to the fourth part of the square on the less and deficient by a square figure, it will divide it into parts which are commensurable in length.
+   If two :term:`similar plane numbers <G.318>` by :term:`multiplying <G.269>` one another make some :term:`number <G.248>`, the product is :term:`square <G.63>`.
 
 .. picture:: g1.svg
 

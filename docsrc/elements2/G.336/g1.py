@@ -1,4 +1,4 @@
-"""Programmatic construction for Book X, Proposition 22 (X.22)."""
+"""Programmatic construction for Book IX, Proposition 7 (IX.7)."""
 
 from __future__ import annotations
 
@@ -6,50 +6,31 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0055.g1 using geometor.model."""
-    model = Model("X.22")
+    """Construct the figure 0395.g1 using geometor.model."""
+    model = Model("IX.7")
 
-    # Medial straight line A
-    A_t = model.set_point(21.5, -58.0, classes=["given"], ID="A")
-    A_b = model.set_point(21.5, -133.0, classes=["given"], ID="A_b")
+    # Single-letter horizontal number segments A, B, C, D, E
+    A_l = model.set_point(30.0, -24.0, classes=["given"], ID="A")
+    A_r = model.set_point(193.0, -24.0, ID="A_r")
 
-    # Rectangle BD on rational line BC with breadth CD
-    B = model.set_point(72.0, -18.5, classes=["given"], ID="B")
-    C = model.set_point(72.0, -171.5, classes=["given"], ID="C")
-    D = model.set_point(109.5, -171.5, ID="D")
-    B_r = model.set_point(109.5, -18.5, ID="B_r")
+    B_l = model.set_point(30.0, -46.5, classes=["given"], ID="B")
+    B_r = model.set_point(102.0, -46.5, ID="B_r")
 
-    # Rectangle GF contained by rational straight lines EG, EF
-    G = model.set_point(173.5, -68.5, classes=["given"], ID="G")
-    E = model.set_point(173.5, -171.0, classes=["given"], ID="E")
-    F = model.set_point(228.5, -171.0, classes=["given"], ID="F")
-    G_r = model.set_point(228.5, -68.5, ID="G_r")
+    C_l = model.set_point(29.0, -71.0, classes=["given"], ID="C")
+    C_r = model.set_point(261.0, -71.0, ID="C_r")
 
-    # Base lines
-    model.construct_line(A_t, A_b)
-    model.construct_line(B, C)
-    model.construct_line(C, D)
-    model.construct_line(D, B_r)
-    model.construct_line(B, B_r)
-    model.construct_line(G, E)
-    model.construct_line(E, F)
-    model.construct_line(F, G_r)
-    model.construct_line(G, G_r)
+    D_l = model.set_point(30.0, -94.5, classes=["given"], ID="D")
+    D_r = model.set_point(84.0, -94.5, ID="D_r")
 
-    # Segments
-    model.set_segment(A_t, A_b)
-    model.set_segment(B, C)
-    model.set_segment(C, D)
-    model.set_segment(D, B_r)
-    model.set_segment(B, B_r)
-    model.set_segment(G, E)
-    model.set_segment(E, F)
-    model.set_segment(F, G_r)
-    model.set_segment(G, G_r)
+    E_l = model.set_point(146.0, -94.5, classes=["given"], ID="E")
+    E_r = model.set_point(300.0, -94.5, ID="E_r")
 
-    # Polygons: rectangles BD and GF
-    model.set_polygon([B, C, D, B_r])
-    model.set_polygon([G, E, F, G_r])
+    # Number segments
+    model.set_segment(A_l, A_r)
+    model.set_segment(B_l, B_r)
+    model.set_segment(C_l, C_r)
+    model.set_segment(D_l, D_r)
+    model.set_segment(E_l, E_r)
 
     return model
 

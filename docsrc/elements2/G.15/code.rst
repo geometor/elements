@@ -1,17 +1,18 @@
 :canonical_id: G.15
-:original_id: I.8
+:original_id: I.post.3
+:title: G.15 construct a circle
 :volume: I
 :book: I
-:type: prop
+:type: post
 
-G.15 — Code
-===========
+G.15 construct a circle — Code
+==============================
 
-.. rubric:: `I.8 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/08/>`_
+.. rubric:: `I.post.3 <https://geometor.github.io/euclid/heath/volume_I/book_i/postulates/#i-post-3>`_
 
 .. enunciation::
 
-   Triangles with all three corresponding sides equal have their corresponding angles equal (SSS).
+   Construct a :term:`circle <G.10>` :g:`( A B ) <g1:( B C D )>` with :term:`center <G.14>` :g:`A <g1:A>` and defining radius :term:`point <G.1>` :g:`B <g1:B>`.
 
 .. picture:: g1.svg
 

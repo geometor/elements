@@ -1,4 +1,7 @@
-"""Programmatic construction for Book II, Proposition 8 (II.8)."""
+"""Programmatic construction for Book I, I.40 (I.40).
+
+Equal triangles which are on equal bases and on the same side are also in the same parallels.
+"""
 
 from __future__ import annotations
 
@@ -6,124 +9,39 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure for 0404.g1 (II.8) using geometor.model."""
-    model = Model("II.8")
+    """Construct the figure for 0351.g1 (I.40) using geometor.model."""
+    model = Model("I.40")
 
     # 1. Points
-    A = model.set_point(30.0, -29.0, classes=["given"], ID="A")
-    C = model.set_point(152.0, -29.0, classes=["given"], ID="C")
-    B = model.set_point(192.0, -29.0, classes=["given"], ID="B")
-    D = model.set_point(232.0, -29.0, ID="D")
+    A = model.set_point(31, -34, classes=["given"], ID="A")
+    B = model.set_point(31, -105, classes=["given"], ID="B")
+    C = model.set_point(111, -105, classes=["given"], ID="C")
+    D = model.set_point(167, -34, classes=["given"], ID="D")
+    E = model.set_point(191, -105, classes=["given"], ID="E")
+    F = model.set_point(156, -48, ID="F")
 
-    M = model.set_point(30.0, -69.0, ID="M")
-    G = model.set_point(152.0, -69.0, ID="G")
-    K = model.set_point(192.0, -69.0, ID="K")
-    N = model.set_point(232.0, -69.0, ID="N")
-
-    O = model.set_point(30.0, -109.0, ID="O")
-    Q = model.set_point(152.0, -109.0, ID="Q")
-    R = model.set_point(192.0, -109.0, ID="R")
-    P = model.set_point(232.0, -109.0, ID="P")
-
-    E = model.set_point(30.0, -231.0, ID="E")
-    H = model.set_point(152.0, -231.0, ID="H")
-    L = model.set_point(192.0, -231.0, ID="L")
-    F = model.set_point(232.0, -231.0, ID="F")
-
-    # Gnomon markers
-    S = model.set_point(124.0, -109.0, ID="S")
-    T = model.set_point(208.0, -53.0, ID="T")
-    U = model.set_point(152.0, -137.0, ID="U")
-
-    # 2. Segments
-    # Horizontal Row 1: A, C, B, D
-    model.set_segment(A, C)
-    model.set_segment(C, B)
-    model.set_segment(B, D)
+    # 3. Segments
+    model.set_segment(B, E)
+    model.set_segment(B, C)
+    model.set_segment(C, E)
     model.set_segment(A, B)
-    model.set_segment(C, D)
+    model.set_segment(A, C)
     model.set_segment(A, D)
-
-    # Horizontal Row 2: M, G, K, N
-    model.set_segment(M, G)
-    model.set_segment(G, K)
-    model.set_segment(K, N)
-    model.set_segment(M, K)
-    model.set_segment(G, N)
-    model.set_segment(M, N)
-
-    # Horizontal Row 3: O, Q, R, P
-    model.set_segment(O, Q)
-    model.set_segment(Q, R)
-    model.set_segment(R, P)
-    model.set_segment(O, R)
-    model.set_segment(Q, P)
-    model.set_segment(O, P)
-
-    # Horizontal Row 4: E, H, L, F
-    model.set_segment(E, H)
-    model.set_segment(H, L)
-    model.set_segment(L, F)
-    model.set_segment(E, L)
-    model.set_segment(H, F)
-    model.set_segment(E, F)
-
-    # Vertical Col 1: A, M, O, E
-    model.set_segment(A, M)
-    model.set_segment(M, O)
-    model.set_segment(O, E)
-    model.set_segment(A, O)
-    model.set_segment(M, E)
-    model.set_segment(A, E)
-
-    # Vertical Col 2: C, G, Q, H
-    model.set_segment(C, G)
-    model.set_segment(G, Q)
-    model.set_segment(Q, H)
-    model.set_segment(C, Q)
-    model.set_segment(G, H)
-    model.set_segment(C, H)
-
-    # Vertical Col 3: B, K, R, L
-    model.set_segment(B, K)
-    model.set_segment(K, R)
-    model.set_segment(R, L)
-    model.set_segment(B, R)
-    model.set_segment(K, L)
-    model.set_segment(B, L)
-
-    # Vertical Col 4: D, N, P, F
-    model.set_segment(D, N)
-    model.set_segment(N, P)
-    model.set_segment(P, F)
-    model.set_segment(D, P)
-    model.set_segment(N, F)
-    model.set_segment(D, F)
-
-    # Diagonal: D, K, Q, E
-    model.set_segment(D, K)
-    model.set_segment(K, Q)
-    model.set_segment(Q, E)
-    model.set_segment(D, Q)
-    model.set_segment(K, E)
+    model.set_segment(C, D)
+    model.set_segment(C, F)
+    model.set_segment(F, D)
     model.set_segment(D, E)
+    model.set_segment(A, F)
+    model.set_segment(F, E)
 
-    # 3. Polygons (Squares, Rectangles, Gnomon)
-    model.set_polygon([A, E, F, D])
-    model.set_polygon([O, Q, H, E])
-    model.set_polygon([C, B, K, G])
-    model.set_polygon([B, D, N, K])
-    model.set_polygon([G, K, R, Q])
-    model.set_polygon([K, N, P, R])
-    model.set_polygon([C, D, P, Q])
-    model.set_polygon([A, C, G, M])
-    model.set_polygon([M, G, Q, O])
-    model.set_polygon([Q, R, L, H])
-    model.set_polygon([R, P, F, L])
-    model.set_polygon([M, K, L, E])
-    model.set_polygon([A, B, K, M])
-    model.set_polygon([A, D, F, H, Q, O])
-    model.set_polygon([S, T, U])
+    # 4. Collinear Sections
+    model.set_section([B, C, E])
+    model.set_section([C, F, D])
+
+    # 5. Polygons (Triangles, Parallelograms, Trapezia, Squares)
+    model.set_polygon([A, B, C])
+    model.set_polygon([C, D, E])
+    model.set_polygon([F, C, E])
 
     return model
 

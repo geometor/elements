@@ -1,57 +1,56 @@
-"""Programmatic construction for Book XIII, Proposition 12 (XIII.12).
+"""Programmatic construction for Book XI, Proposition 16 (XI.16).
 
-Equilateral triangle ABC inscribed in circle ABC with centre D, diameter AE,
-and chord BE.
+If two parallel planes be cut by any plane, their common sections are parallel.
 """
 
 from __future__ import annotations
 
-import math
+import sympy as sp
 from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0471.g1 using geometor.model."""
-    model = Model("XIII.12")
+    """Construct the figure for Book XI, Proposition 16 using geometor.model."""
+    model = Model("XI.16")
 
-    cx, cy, r = 98.0, -114.0, 85.0
-    D = model.set_point(cx, cy, classes=["given"], ID="D")
+    # 1. Let the two parallel planes AB, CD be cut by the plane EFGH,
+    #    and let EF, GH be their common sections.
+    E = model.set_point(0, 1, classes=["given"], ID="E")
+    F = model.set_point(sp.Rational(100, 106), 1, classes=["given"], label="F")
+    G = model.set_point(sp.Rational(25, 106), 0, classes=["given"], label="G")
+    H = model.set_point(sp.Rational(146, 106), 0, classes=["given"], label="H")
 
-    # Equilateral triangle vertices A (top), B (bottom-left), C (bottom-right)
-    angles_deg = [90.0, -150.0, -30.0]
-    labels = ["A", "B", "C"]
-    pts = {}
-    for lbl, deg in zip(labels, angles_deg):
-        rad = math.radians(deg)
-        pts[lbl] = model.set_point(
-            round(cx + r * math.cos(rad), 1),
-            round(cy + r * math.sin(rad), 1),
-            classes=["given"],
-            label=lbl,
-        )
+    # 2. Suppose EF, GH produced meet at K.
+    K = model.set_point(sp.Rational(366, 106), sp.Rational(36, 106), label="K")
 
-    A, B, C = pts["A"], pts["B"], pts["C"]
+    # Plane AB corners
+    B1 = model.set_point(sp.Rational(9, 106), sp.Rational(142, 106), label="B1")
+    B = model.set_point(sp.Rational(110, 106), sp.Rational(142, 106), classes=["given"], label="B")
+    B3 = model.set_point(sp.Rational(95, 106), sp.Rational(89, 106), label="B3")
+    A = model.set_point(sp.Rational(-4, 106), sp.Rational(89, 106), classes=["given"], label="A")
 
-    # Circle ABC
-    model.construct_circle(D, A)
+    # Plane CD corners
+    D1 = model.set_point(sp.Rational(34, 106), sp.Rational(28, 106), label="D1")
+    D = model.set_point(sp.Rational(166, 106), sp.Rational(28, 106), classes=["given"], label="D")
+    D3 = model.set_point(sp.Rational(120, 106), sp.Rational(-36, 106), label="D3")
+    C = model.set_point(sp.Rational(12, 106), sp.Rational(-36, 106), classes=["given"], label="C")
 
-    # Diameter endpoint E at bottom (-90 deg)
-    E = model.set_point(98.0, -199.0, classes=["constructed"], ID="E")
+    # Segments and sections
+    model.set_segment(E, F)
+    model.set_segment(F, K)
+    model.set_segment(E, K)
+    model.set_section([E, F, K])
+    model.set_segment(G, H)
+    model.set_segment(H, K)
+    model.set_segment(G, K)
+    model.set_section([G, H, K])
+    model.set_segment(E, G)
+    model.set_segment(F, H)
 
-    # Polygons
-    model.set_polygon([A, B, C])
-    model.set_polygon([A, B, E])
-
-    # Segments and collinear sub-segments
-    for p1, p2 in [
-        (A, B), (B, C), (C, A),
-        (A, E), (A, D), (D, E),
-        (B, E),
-    ]:
-        model.set_segment(p1, p2)
-
-    # Section
-    model.set_section([A, D, E])
+    # Planes
+    model.set_polygon([B1, B, B3, A])
+    model.set_polygon([D1, D, D3, C])
+    model.set_polygon([E, F, H, G])
 
     return model
 

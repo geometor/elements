@@ -1,6 +1,6 @@
-"""Programmatic construction for Book I, Proposition 10 (I.10).
+"""Programmatic construction for Book I, Proposition 1 (I.1).
 
-To bisect a given finite straight line.
+On a given finite straight line to construct an equilateral triangle.
 """
 
 from __future__ import annotations
@@ -10,29 +10,35 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure for Book I, Proposition 10 using geometor.model."""
-    model = Model("I.10")
+    """Construct the figure for Book I, Proposition 1 using geometor.model."""
+    model = Model("I.1")
 
     # 1. Let AB be the given finite straight line.
     A = model.set_point(0, 0, classes=["given"], ID="A")
     B = model.set_point(1, 0, classes=["given"], ID="B")
     model.set_segment(A, B)
 
-    # 2. Construct equilateral triangle ABC on AB [I. 1]
+    # Extended horizontal line [ A B ] to determine circumference points D and E
+    model.construct_line(A, B)
+
+    # 2. With centre A and distance AB let the circle BCD be described [Post. 3]
+    circle_BCD = model.construct_circle(A, B)
+
+    # 3. With centre B and distance BA let the circle ACE be described [Post. 3]
+    circle_ACE = model.construct_circle(B, A)
+
+    # Label the upper intersection of circles ( A B ) and ( B A ) as C,
+    # and the outer diameter intersections on [ A B ] as D and E.
     C = model.set_point(sp.Rational(1, 2), sp.sqrt(3) / 2, label="C")
-    model.set_segment(A, C)
-    model.set_segment(B, C)
+    D = model.set_point(-1, 0, ID="D")
+    E = model.set_point(2, 0, ID="E")
+
+    # 4. From C to A, B let the straight lines CA, CB be joined [Post. 1]
+    model.set_segment(C, A)
+    model.set_segment(C, B)
+
+    # 5. Therefore the triangle ABC is equilateral
     model.set_polygon([A, B, C])
-
-    # 3. Bisect angle ACB by straight line CD meeting AB at D [I. 9]
-    D = model.set_point(sp.Rational(1, 2), 0, label="D")
-    model.set_section([A, D, B])
-    model.set_segment(A, D)
-    model.set_segment(D, B)
-    model.set_segment(C, D)
-
-    model.set_polygon([A, C, D])
-    model.set_polygon([B, C, D])
 
     return model
 

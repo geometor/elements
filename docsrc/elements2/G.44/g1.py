@@ -1,42 +1,37 @@
-"""GEOMETOR construction for Book I, Proposition 31 (Folio 0330, Graphic 1).
+"""Programmatic construction for Book I, Proposition 19 (I.19).
 
-Through a given point A to draw a straight line EAF parallel to a given straight line BC.
+In any triangle the greater angle is subtended by the greater side.
 """
+
+from __future__ import annotations
 
 from geometor.model import Model
 
 
-def build_0330_g1() -> Model:
-    model = Model("I.31")
+def construct_g1() -> Model:
+    """Construct the figure for 0298.g1 (I.19) using geometor.model."""
+    model = Model("I.19")
 
-    B = model.set_point(-1, 0, classes=["given"], ID="B")
-    C = model.set_point(1.5, 0, classes=["given"], ID="C")
-    D = model.set_point(0, 0, classes=["given"], ID="D")
-    A = model.set_point(0.35, 0.75, classes=["given"], ID="A")
-    E = model.set_point(-0.85, 0.75, classes=["given"], ID="E")
-    F = model.set_point(1.35, 0.75, classes=["given"], ID="F")
+    # Points
+    pt_A = model.set_point(75, -18.5, classes=["given"], ID="A")
+    pt_B = model.set_point(22, -54, classes=["given"], ID="B")
+    pt_C = model.set_point(75, -115, classes=["given"], ID="C")
 
-    model.construct_line(B, C)
-    model.construct_line(E, F)
-    model.construct_line(A, D)
+    # Segments
+    model.set_segment(pt_A, pt_C)
+    model.set_segment(pt_A, pt_B)
+    model.set_segment(pt_B, pt_C)
 
-    model.set_segment(B, C)
-    model.set_segment(B, D)
-    model.set_segment(D, C)
-    model.set_segment(E, F)
-    model.set_segment(E, A)
-    model.set_segment(A, F)
-    model.set_segment(A, D)
+    # Polygons
+    model.set_polygon([pt_A, pt_B, pt_C])
 
-    model.set_section([E, A, F])
-    model.set_section([B, D, C])
-
-    model.set_wedge(A, D, D, E)
-    model.set_wedge(D, A, A, C)
+    # Angles (Wedges)
+    model.set_wedge(pt_A, pt_B, pt_B, pt_C)
+    model.set_wedge(pt_B, pt_A, pt_A, pt_C)
+    model.set_wedge(pt_C, pt_A, pt_A, pt_B)
 
     return model
 
 
 if __name__ == "__main__":
-    m = build_0330_g1()
-    print(f"Constructed {m.name} with {len(m)} elements.")
+    construct_g1()

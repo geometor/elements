@@ -1,69 +1,40 @@
-"""Programmatic construction for Book XIII, Proposition 7 (XIII.7).
+"""Programmatic construction for Book XI, Proposition 12 (XI.12).
 
-If three angles of an equilateral pentagon, taken either in order or not in
-order, be equal, the pentagon will be equiangular.
+To set up a straight line at right angles to a given plane from a given point
+in it.
 """
 
 from __future__ import annotations
 
+import sympy as sp
 from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure for Book XIII, Proposition 7 using geometor.model."""
-    model = Model("XIII.7")
+    """Construct the figure for Book XI, Proposition 12 using geometor.model."""
+    model = Model("XI.12")
 
-    # Equilateral pentagon ABCDE
-    A = model.set_point(103.0, -21.0, classes=["given"], ID="A")
-    B = model.set_point(25.0, -78.0, classes=["given"], ID="B")
-    C = model.set_point(55.0, -170.0, classes=["given"], ID="C")
-    D = model.set_point(151.0, -170.0, classes=["given"], ID="D")
-    E = model.set_point(181.0, -78.0, classes=["given"], ID="E")
+    # Plane of reference boundary corners
+    P1 = model.set_point(sp.Rational(-23, 107), sp.Rational(55, 107), label="P1")
+    P2 = model.set_point(sp.Rational(112, 107), sp.Rational(56, 107), label="P2")
+    P3 = model.set_point(sp.Rational(77, 107), sp.Rational(-27, 107), label="P3")
+    P4 = model.set_point(sp.Rational(-42, 107), sp.Rational(-28, 107), label="P4")
 
-    # Intersection F of diagonals AC and BE
-    F = model.set_point(84.6, -78.0, ID="F")
+    # 1. Given point A in the plane of reference, and elevated point B;
+    #    BC drawn perpendicular to the plane, and AD drawn parallel to BC.
+    A = model.set_point(0, 0, classes=["given"], ID="A")
+    D = model.set_point(0, 1, ID="D")
+    C = model.set_point(sp.Rational(76, 107), sp.Rational(28, 107), label="C")
+    B = model.set_point(sp.Rational(75, 107), sp.Rational(112, 107), classes=["given"], label="B")
 
-    # Pentagon sides
-    model.set_segment(A, B)
+    model.set_segment(A, D)
     model.set_segment(B, C)
-    model.set_segment(C, D)
-    model.set_segment(D, E)
-    model.set_segment(E, A)
 
-    # Diagonals and sub-segments
-    model.set_segment(A, C)
-    model.set_segment(A, F)
-    model.set_segment(F, C)
-    model.set_segment(B, E)
-    model.set_segment(B, F)
-    model.set_segment(F, E)
-    model.set_segment(F, D)
-    model.set_segment(B, D)
-
-    # Polygons
-    model.set_polygon([A, B, C, D, E])
-    model.set_polygon([A, B, C])
-    model.set_polygon([A, B, E])
-    model.set_polygon([F, C, D])
-    model.set_polygon([F, E, D])
-    model.set_polygon([B, C, D])
-    model.set_polygon([B, D, E])
-    model.set_polygon([A, B, F])
-
-    # Angles (wedges)
-    model.set_wedge(B, C, C, A)
-    model.set_wedge(A, B, B, E)
-    model.set_wedge(C, B, B, A)
-    model.set_wedge(E, B, B, A)
-    model.set_wedge(B, A, A, E)
-    model.set_wedge(A, C, C, B)
-    model.set_wedge(C, F, F, D)
-    model.set_wedge(E, F, F, D)
-    model.set_wedge(C, B, B, D)
-    model.set_wedge(E, A, A, D)
-    model.set_wedge(D, C, C, E)
-    model.set_wedge(D, C, C, B)
-    model.set_wedge(D, B, B, E)
+    model.set_segment(P1, P2)
+    model.set_segment(P2, P3)
+    model.set_segment(P3, P4)
+    model.set_segment(P4, P1)
+    model.set_polygon([P1, P2, P3, P4])
 
     return model
 

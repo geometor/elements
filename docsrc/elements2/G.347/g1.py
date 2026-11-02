@@ -1,4 +1,4 @@
-"""Programmatic construction for Book X, Proposition 32 (X.32)."""
+"""Programmatic construction for Book IX, Proposition 17 (IX.17)."""
 
 from __future__ import annotations
 
@@ -6,29 +6,31 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0076.g1 using geometor.model."""
-    model = Model("X.32")
+    """Construct the figure 0412.g2 using geometor.model."""
+    model = Model("IX.17")
 
-    # Rational straight lines A, B, C
-    A_l = model.set_point(32.0, -19.5, classes=["given"], ID="A")
-    A_r = model.set_point(157.0, -19.5, ID="A_r")
+    # Single-letter horizontal number segments A, B, C, D, E
+    A_l = model.set_point(32.0, -22.0, classes=["given"], ID="A")
+    A_r = model.set_point(69.0, -22.0, ID="A_r")
 
-    B_l = model.set_point(31.0, -52.5, classes=["given"], ID="B")
-    B_r = model.set_point(142.0, -52.5, ID="B_r")
+    B_l = model.set_point(124.0, -23.5, classes=["given"], ID="B")
+    B_r = model.set_point(178.0, -23.5, ID="B_r")
 
-    C_l = model.set_point(31.0, -84.5, classes=["given"], ID="C")
-    C_r = model.set_point(115.0, -84.5, ID="C_r")
+    C_l = model.set_point(34.0, -49.5, classes=["given"], ID="C")
+    C_r = model.set_point(115.0, -49.5, ID="C_r")
 
-    # Medial straight lines D, E
-    D_l = model.set_point(214.0, -38.5, ID="D")
-    D_r = model.set_point(333.0, -38.5, ID="D_r")
+    D_l = model.set_point(33.0, -70.0, classes=["given"], ID="D")
+    D_r = model.set_point(159.0, -70.0, ID="D_r")
 
-    E_l = model.set_point(214.0, -70.5, ID="E")
-    E_r = model.set_point(294.0, -70.5, ID="E_r")
+    E_l = model.set_point(36.0, -94.5, classes=["given"], ID="E")
+    E_r = model.set_point(226.0, -94.5, ID="E_r")
 
-    for p_l, p_r in [(A_l, A_r), (B_l, B_r), (C_l, C_r), (D_l, D_r), (E_l, E_r)]:
-        model.construct_line(p_l, p_r)
-        model.set_segment(p_l, p_r)
+    # Number segments
+    model.set_segment(A_l, A_r)
+    model.set_segment(B_l, B_r)
+    model.set_segment(C_l, C_r)
+    model.set_segment(D_l, D_r)
+    model.set_segment(E_l, E_r)
 
     return model
 

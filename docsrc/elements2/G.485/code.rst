@@ -1,17 +1,18 @@
 :canonical_id: G.485
-:original_id: XI.38
+:original_id: X.99
+:title: G.485 square apotome medial
 :volume: III
-:book: XI
+:book: X
 :type: prop
 
-G.485 — Code
-============
+G.485 square apotome medial — Code
+==================================
 
-.. rubric:: `XI.38 <https://geometor.github.io/euclid/heath/volume_III/book_xi/propositions/38/>`_
+.. rubric:: `X.99 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/099/>`_
 
 .. enunciation::
 
-   If the sides of the opposite planes of a cube be bisected, and planes be carried through the points of section, the common section of the planes and the diameter of the cube bisect one another.
+   The :term:`square <G.63>` on a :term:`second apotome <G.456>` of a medial :term:`segment <G.4>` applied to a :term:`rational <G.391>` segment produces as breadth a :term:`third apotome <G.469>`.
 
 .. picture:: g1.svg
 

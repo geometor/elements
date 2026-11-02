@@ -1,4 +1,4 @@
-"""Programmatic construction for Book X, Proposition 35 (X.35)."""
+"""Programmatic construction for Book IX, Proposition 20 (IX.20)."""
 
 from __future__ import annotations
 
@@ -6,54 +6,43 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0085.g1 using geometor.model."""
-    model = Model("X.35")
+    """Construct the figure 0418.g1 using geometor.model."""
+    model = Model("IX.20")
 
-    # Diameter AB extended to C, with E bisecting BC, F on AB, and D on semicircle ADB
-    A = model.set_point(19.0, -109.0, classes=["given"], ID="A")
-    F = model.set_point(186.5, -109.0, ID="F")
-    B = model.set_point(204.0, -109.0, classes=["given"], ID="B")
-    E = model.set_point(257.0, -109.0, ID="E")
-    C = model.set_point(310.0, -109.0, classes=["given"], ID="C")
-    O = model.set_point(111.5, -109.0, ID="O")
-    D = model.set_point(186.5, -54.9, ID="D")
+    # Single-letter horizontal number segments A, B, C, G
+    A_l = model.set_point(28.0, -16.5, classes=["given"], ID="A")
+    A_r = model.set_point(47.0, -16.5, ID="A_r")
 
-    # Base lines and semicircle ADB
-    model.construct_line(A, C)
-    model.construct_circle(O, A)
-    model.construct_line(A, D)
-    model.construct_line(D, B)
-    model.construct_line(F, D)
+    B_l = model.set_point(30.0, -37.5, classes=["given"], ID="B")
+    B_r = model.set_point(53.0, -37.5, ID="B_r")
 
-    # Segments
-    model.set_segment(A, B)
-    model.set_segment(B, C)
-    model.set_segment(B, E)
-    model.set_segment(E, C)
-    model.set_segment(A, F)
-    model.set_segment(F, B)
-    model.set_segment(F, D)
-    model.set_segment(A, D)
-    model.set_segment(D, B)
-    model.set_segment(A, C)
-    model.set_segment(A, E)
-    model.set_segment(F, C)
-    model.set_segment(F, E)
+    C_l = model.set_point(29.0, -64.0, classes=["given"], ID="C")
+    C_r = model.set_point(68.0, -64.0, ID="C_r")
 
-    # Sections
-    model.set_section([A, F, B])
-    model.set_section([B, E, C])
-    model.set_section([A, B, C])
+    G_l = model.set_point(181.0, -38.5, classes=["given"], ID="G")
+    G_r = model.set_point(250.0, -38.5, ID="G_r")
 
-    # Inscribed right triangles ADB, ADF, DFB
-    model.set_polygon([A, D, B])
-    model.set_polygon([A, D, F])
-    model.set_polygon([D, F, B])
+    # Subdivided horizontal number segment EF (divided at D, where ED = DE and DF = unit)
+    E = model.set_point(27.0, -88.0, classes=["given"], ID="E")
+    D = model.set_point(258.0, -88.0, ID="D")
+    F = model.set_point(267.0, -88.0, classes=["given"], ID="F")
 
-    # Right angles at D and F
-    model.set_wedge(D, A, A, B)
-    model.set_wedge(F, D, A, D)
-    model.set_wedge(F, D, D, B)
+    # Base line for EF
+    model.construct_line(E, F)
+
+    # Number segments A, B, C, G
+    model.set_segment(A_l, A_r)
+    model.set_segment(B_l, B_r)
+    model.set_segment(C_l, C_r)
+    model.set_segment(G_l, G_r)
+
+    # Whole and subdivided segments on EF
+    model.set_segment(E, F)
+    model.set_segment(E, D)
+    model.set_segment(D, F)
+
+    # Collinear section
+    model.set_section([E, D, F])
 
     return model
 

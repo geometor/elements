@@ -1,17 +1,18 @@
 :canonical_id: G.324
-:original_id: X.10
-:volume: III
-:book: X
+:original_id: VIII.22
+:title: G.324 numbers continued proportion
+:volume: II
+:book: VIII
 :type: prop
 
-G.324 — Code
-============
+G.324 numbers continued proportion — Code
+=========================================
 
-.. rubric:: `X.10 <https://geometor.github.io/euclid/heath/volume_III/book_x/propositions/010/>`_
+.. rubric:: `VIII.22 <https://geometor.github.io/euclid/heath/volume_II/book_viii/propositions/22/>`_
 
 .. enunciation::
 
-   Find two straight lines incommensurable, the one in length only, and the other in square also, with an assigned straight line.
+   If three :term:`numbers <G.248>` be in :term:`continued proportion <G.180>`, and the first be :term:`square <G.63>`, the third is square.
 
 .. picture:: g1.svg
 

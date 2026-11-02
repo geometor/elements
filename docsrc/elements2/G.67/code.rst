@@ -1,17 +1,18 @@
 :canonical_id: G.67
-:original_id: II.6
+:original_id: I.38
+:title: G.67 triangles on equal bases in the same parallels
 :volume: I
-:book: II
+:book: I
 :type: prop
 
-G.67 — Code
-===========
+G.67 triangles on equal bases in the same parallels — Code
+==========================================================
 
-.. rubric:: `II.6 <https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/06/>`_
+.. rubric:: `I.38 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/38/>`_
 
 .. enunciation::
 
-   If a straight line be bisected and a straight line be added to it in a straight line, the rectangle contained by the whole with the added straight line and the added straight line together with the square on the half is equal to the square on the straight line made up of the half and the added straight line.
+   :term:`Triangles <G.11>` on equal bases and in the same :term:`parallels <G.52>` are equal in area.
 
 .. picture:: g1.svg
 

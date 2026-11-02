@@ -1,71 +1,60 @@
-"""Programmatic construction for Book XIII, Proposition 4 (XIII.4).
+"""Programmatic construction for Book XI, Proposition 9 (XI.9).
 
-If a straight line be cut in extreme and mean ratio, the square on the whole
-and the square on the lesser segment together are triple of the square on the
-greater segment.
+Straight lines which are parallel to the same straight line and are not in the
+same plane with it are also parallel to one another.
 """
 
 from __future__ import annotations
 
+import sympy as sp
 from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure for Book XIII, Proposition 4 using geometor.model."""
-    model = Model("XIII.4")
+    """Construct the figure for Book XI, Proposition 9 using geometor.model."""
+    model = Model("XI.9")
 
-    # Straight line AB cut in extreme and mean ratio at C
-    A = model.set_point(22.0, -23.0, classes=["given"], ID="A")
-    C = model.set_point(106.0, -23.0, classes=["given"], ID="C")
-    B = model.set_point(157.0, -23.0, classes=["given"], ID="B")
+    # 1. Let each of the straight lines AB, CD be parallel to EF, not being in
+    #    the same plane with it.
+    G = model.set_point(0, 0, classes=["given"], ID="G")
+    F = model.set_point(sp.Rational(-84, 84), 0, classes=["given"], label="F")
+    E = model.set_point(sp.Rational(85, 84), 0, classes=["given"], label="E")
 
-    model.construct_line(A, B)
+    B = model.set_point(sp.Rational(-34, 84), sp.Rational(54, 84), classes=["given"], label="B")
+    H = model.set_point(sp.Rational(39, 84), sp.Rational(54, 84), label="H")
+    A = model.set_point(sp.Rational(134, 84), sp.Rational(55, 84), classes=["given"], label="A")
+
+    D = model.set_point(sp.Rational(-41, 84), sp.Rational(-35, 84), classes=["given"], label="D")
+    K = model.set_point(sp.Rational(38, 84), sp.Rational(-34, 84), label="K")
+    C = model.set_point(sp.Rational(147, 84), sp.Rational(-33, 84), classes=["given"], label="C")
+
+    # Collinear lines and sub-segments
+    model.construct_line(B, A)
+    model.set_section([B, H, A])
+    model.set_segment(B, H)
+    model.set_segment(H, A)
     model.set_segment(A, B)
-    model.set_segment(A, C)
-    model.set_segment(C, B)
 
-    # Square ADEB on AB, divided through C and F
-    H = model.set_point(22.0, -74.0, ID="H")
-    F = model.set_point(106.0, -74.0, ID="F")
-    K = model.set_point(157.0, -74.0, ID="K")
-
-    D = model.set_point(22.0, -158.0, ID="D")
-    G = model.set_point(106.0, -158.0, ID="G")
-    E = model.set_point(157.0, -158.0, ID="E")
-
-    # Horizontal segments
-    model.set_segment(H, K)
-    model.set_segment(H, F)
-    model.set_segment(F, K)
-    model.set_segment(D, E)
-    model.set_segment(D, G)
-    model.set_segment(G, E)
-
-    # Vertical segments
-    model.set_segment(A, D)
-    model.set_segment(A, H)
-    model.set_segment(H, D)
-    model.set_segment(C, G)
-    model.set_segment(C, F)
+    model.construct_line(F, E)
+    model.set_section([F, G, E])
     model.set_segment(F, G)
-    model.set_segment(B, E)
-    model.set_segment(B, K)
-    model.set_segment(K, E)
+    model.set_segment(G, E)
+    model.set_segment(E, F)
 
-    # Diagonal BD
-    model.set_segment(B, D)
-    model.set_segment(B, F)
-    model.set_segment(F, D)
+    model.construct_line(D, C)
+    model.set_section([D, K, C])
+    model.set_segment(D, K)
+    model.set_segment(K, C)
+    model.set_segment(C, D)
 
-    # Polygons (squares, rectangles, and gnomon LMN)
-    model.set_polygon([A, D, E, B])
-    model.set_polygon([H, F, G, D])
-    model.set_polygon([C, B, K, F])
-    model.set_polygon([A, C, F, H])
-    model.set_polygon([F, K, E, G])
-    model.set_polygon([A, B, K, H])
-    model.set_polygon([C, B, E, G])
-    model.set_polygon([H, A, B, E, G, F])
+    # 2. Perpendiculars GH and GK from G to EF in the respective planes
+    model.set_segment(G, H)
+    model.set_segment(G, K)
+
+    # Planes through GH, GK; through EF, AB; and through FE, CD
+    model.set_polygon([H, G, K])
+    model.set_polygon([B, A, E, F])
+    model.set_polygon([F, E, C, D])
 
     return model
 

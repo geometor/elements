@@ -1,4 +1,4 @@
-"""Programmatic construction for Book IX, Proposition 16 (IX.16)."""
+"""Programmatic construction for Book VII, Proposition 31 (VII.31)."""
 
 from __future__ import annotations
 
@@ -6,18 +6,18 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0412.g1 using geometor.model."""
-    model = Model("IX.16")
+    """Construct the figure 0338.g1 using geometor.model."""
+    model = Model("VII.31")
 
     # Single-letter horizontal number segments A, B, C
-    A_l = model.set_point(32.0, -23.5, classes=["given"], ID="A")
-    A_r = model.set_point(81.0, -23.5, ID="A_r")
+    A_l = model.set_point(23.0, -12.0, classes=["given"], ID="A")
+    A_r = model.set_point(174.0, -12.0, ID="A_r")
 
-    B_l = model.set_point(32.0, -45.5, classes=["given"], ID="B")
-    B_r = model.set_point(86.0, -45.5, ID="B_r")
+    B_l = model.set_point(24.0, -37.0, classes=["given"], ID="B")
+    B_r = model.set_point(135.0, -37.0, ID="B_r")
 
-    C_l = model.set_point(33.0, -68.5, classes=["given"], ID="C")
-    C_r = model.set_point(111.0, -68.5, ID="C_r")
+    C_l = model.set_point(24.0, -61.0, classes=["given"], ID="C")
+    C_r = model.set_point(79.0, -61.0, ID="C_r")
 
     # Number segments
     model.set_segment(A_l, A_r)

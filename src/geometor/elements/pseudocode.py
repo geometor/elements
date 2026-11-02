@@ -18,43 +18,43 @@ from typing import Dict, List, Optional, Tuple
 # Curated fact-oriented enunciations for foundational Elements (keyed by canonical Euclid ID)
 CURATED_ENUNCIATIONS: Dict[str, str] = {
     # Book I Definitions
-    "I.def.1": "A point is that which has no part.",
-    "I.def.2": "A line is breadthless length.",
-    "I.def.3": "The extremities of a line are points.",
-    "I.def.4": "A straight line lies evenly with the points on itself.",
+    "I.def.1": "A point :g:`A <g1:A>` is that which has no part.",
+    "I.def.2": "A line :g:`[ A B ] <g1:[ A B ]>` is a projection of a relationship of two points :g:`A <g1:A>`, :g:`B <g1:B>`.",
+    "I.def.3": "The extremities of a segment :g:`/ A B / <g1:/ A B />` are points :g:`A <g1:A>`, :g:`B <g1:B>`.",
+    "I.def.4": "A segment :g:`/ A B / <g1:/ A B />` is a portion of a line :g:`[ A B ] <g1:[ A B ]>` between two points :g:`A <g1:A>`, :g:`B <g1:B>` on the line.",
     "I.def.5": "A surface is that which has length and breadth only.",
-    "I.def.6": "The extremities of a surface are lines.",
-    "I.def.7": "A plane surface lies evenly with the straight lines on itself.",
-    "I.def.8": "A plane angle is the inclination to one another of two lines in a plane that meet and do not lie in a straight line.",
-    "I.def.9": "A rectilineal angle is contained by two straight lines.",
-    "I.def.10": "When a straight line standing on a straight line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing line is perpendicular to that on which it stands.",
+    "I.def.6": "The extremities of a surface are lines or arcs.",
+    "I.def.7": "A plane surface lies evenly with the lines on itself.",
+    "I.def.8": "A plane angle is the inclination to one another of two lines or arcs in a plane that meet and do not lie on the same line.",
+    "I.def.9": "A rectilineal angle is contained by two segments or lines.",
+    "I.def.10": "When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.",
     "I.def.11": "An obtuse angle is greater than a right angle.",
     "I.def.12": "An acute angle is less than a right angle.",
     "I.def.13": "A boundary is the extremity of anything.",
     "I.def.14": "A figure is that which is contained by any boundary or boundaries.",
-    "I.def.15": "A circle is a plane figure contained by one line such that all segments falling upon it from its center are equal.",
-    "I.def.16": "This point is called the center of the circle.",
-    "I.def.17": "A diameter of a circle is any segment drawn through the center and terminated in both directions by the circumference; it bisects the circle.",
-    "I.def.18": "A semicircle is the figure contained by a diameter and the circumference cut off by it.",
+    "I.def.15": "A circle :g:`( A B ) <g1:( B C D )>` is a plane figure contained by one arc defined by a center :g:`A <g1:A>` and a point :g:`B <g1:B>` establishing its defining radius :g:`/ A B / <g1:/ A B />`, such that all segments :g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />`, :g:`/ A D / <g1:/ A D />` falling upon the arc from :g:`A <g1:A>` are :eq:`equal <g1:/ A B / = g1:/ A C / = g1:/ A D />`.",
+    "I.def.16": "The point :g:`A <g1:A>` within the circle :g:`( A B ) <g1:( B C D )>` from which all segments :g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />` to the arc are :eq:`equal <g1:/ A B / = g1:/ A C />` is called the center of the circle.",
+    "I.def.17": "A diameter of a circle is any segment drawn through the center and terminated in both directions by the arc of the circle; it bisects the circle.",
+    "I.def.18": "A semicircle is the figure contained by a diameter and the arc cut off by it.",
     "I.def.19": "Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.",
-    "I.def.20": "Of trilateral figures, an equilateral triangle has three equal sides, an isosceles triangle has two equal sides, and a scalene triangle has three unequal sides.",
+    "I.def.20": "Of trilateral figures, an equilateral triangle :g:`< A B C > <g1:< A B C >>` has three :eq:`equal <g1:/ A B / = g1:/ B C / = g1:/ C A />` sides, an isosceles triangle :g:`< D E F > <g1:< D E F >>` has two :eq:`equal <g1:/ F D / = g1:/ E F />` sides, and a scalene triangle :g:`< G H K > <g1:< G H K >>` has three unequal sides.",
     "I.def.21": "A right-angled triangle has a right angle, an obtuse-angled triangle has an obtuse angle, and an acute-angled triangle has three acute angles.",
     "I.def.22": "Of quadrilateral figures, a square is equilateral and right-angled; an oblong is right-angled but not equilateral; a rhombus is equilateral but not right-angled; a rhomboid has opposite sides and angles equal but is neither equilateral nor right-angled.",
-    "I.def.23": "Parallel lines are straight lines in the same plane which, produced indefinitely in both directions, do not meet.",
+    "I.def.23": "Parallel lines are lines in the same plane which, extended indefinitely in both directions, do not meet.",
     # Book I Postulates
-    "I.post.1": "Construct a segment between any two points.",
-    "I.post.2": "Extend a finite segment continuously in a straight line.",
-    "I.post.3": "Construct a circle with any center and radius.",
+    "I.post.1": "Construct a segment :g:`/ A B / <g1:/ A B />` between any two points :g:`A <g1:A>`, :g:`B <g1:B>`.",
+    "I.post.2": "Extend a segment :g:`/ A B / <g1:/ A B />` continuously along a line :g:`[ A B ] <g1:[ A B ]>` to :g:`/ B C / <g1:/ B C />`.",
+    "I.post.3": "Construct a circle :g:`( A B ) <g1:( B C D )>` with center :g:`A <g1:A>` and defining radius point :g:`B <g1:B>`.",
     "I.post.4": "All right angles are equal.",
     "I.post.5": "Two lines intersected by a transversal with interior angles on one side summing to less than two right angles meet on that side.",
     # Book I Common Notions
     "I.cn.1": "Things equal to the same thing are equal to one another.",
     "I.cn.2": "If equals are added to equals, the wholes are equal.",
     "I.cn.3": "If equals are subtracted from equals, the remainders are equal.",
-    "I.cn.4": "Things that coincide with one another are equal.",
+    "I.cn.4": "Things :g:`/ A B / <g1:/ A B />`, :g:`/ D E / <g1:/ D E />` that :coincide:`coincide <g1:/ A B / ≡ g1:/ D E /, g1:A ≡ g1:D, g1:B ≡ g1:E>` with one another are :eq:`equal <g1:/ A B / = g1:/ D E />` to one another.",
     "I.cn.5": "The whole is greater than the part.",
     # Book I Propositions
-    "I.1": "Construct an equilateral triangle on a given finite segment.",
+    "I.1": "Construct an equilateral triangle on a given segment.",
     "I.2": "Construct at a given point a segment equal to a given segment.",
     "I.3": "Cut off from the greater of two unequal segments a segment equal to the less.",
     "I.4": "Triangles with two sides and the included angle equal are congruent (SAS).",
@@ -63,11 +63,11 @@ CURATED_ENUNCIATIONS: Dict[str, str] = {
     "I.7": "On the same segment and on the same side, there cannot be constructed two distinct triangles with both pairs of conterminous sides equal.",
     "I.8": "Triangles with all three corresponding sides equal have their corresponding angles equal (SSS).",
     "I.9": "Bisect a given angle.",
-    "I.10": "Bisect a given finite segment.",
-    "I.11": "Construct a line at right angles to a given line from a given point on it.",
-    "I.12": "Construct a perpendicular to a given infinite line from a given point not on it.",
-    "I.13": "A ray standing on a line makes either two right angles or adjacent angles summing to two right angles.",
-    "I.14": "If two rays at a point on a line on opposite sides make adjacent angles summing to two right angles, the two rays are collinear.",
+    "I.10": "Bisect a given segment.",
+    "I.11": "Construct a segment at right angles to a given line from a given point on it.",
+    "I.12": "Construct a perpendicular to a given line from a given point not on it.",
+    "I.13": "A segment standing on a line makes either two right angles or adjacent angles summing to two right angles.",
+    "I.14": "If two segments at a point on a line on opposite sides make adjacent angles summing to two right angles, the two segments are collinear.",
     "I.15": "Intersecting lines make their vertical angles equal.",
     "I.16": "In any triangle, if one side is extended, the exterior angle is greater than either opposite interior angle.",
     "I.17": "In any triangle, the sum of any two angles is less than two right angles.",
@@ -102,6 +102,214 @@ CURATED_ENUNCIATIONS: Dict[str, str] = {
     "I.46": "Construct a square on a given segment.",
     "I.47": "In a right-angled triangle, the square on the hypotenuse equals the sum of the squares on the two legs (Pythagorean Theorem).",
     "I.48": "If the square on one side of a triangle equals the sum of the squares on the other two sides, the angle contained by those two sides is right.",
+    "VI.def.2": "Reciprocally related figures have their sides about equal angles reciprocally proportional.",
+    "VI.def.5": "A ratio is said to be compounded of ratios when the sizes of the ratios multiplied together make some ratio.",
+}
+
+
+# Concise short titles for G-Index headings ("G.<n> <short_title>")
+SHORT_TITLES: Dict[str, str] = {
+    # Book I Definitions (bare nouns)
+    "I.def.1": "point",
+    "I.def.2": "line",
+    "I.def.3": "extremities of a segment",
+    "I.def.4": "segment",
+    "I.def.5": "surface",
+    "I.def.6": "extremities of a surface",
+    "I.def.7": "plane surface",
+    "I.def.8": "plane angle",
+    "I.def.9": "rectilineal angle",
+    "I.def.10": "right angle and perpendicular",
+    "I.def.11": "obtuse angle",
+    "I.def.12": "acute angle",
+    "I.def.13": "boundary",
+    "I.def.14": "figure",
+    "I.def.15": "circle",
+    "I.def.16": "center of a circle",
+    "I.def.17": "diameter of a circle",
+    "I.def.18": "semicircle",
+    "I.def.19": "rectilineal figures",
+    "I.def.20": "equilateral, isosceles, and scalene triangles",
+    "I.def.21": "right, obtuse, and acute-angled triangles",
+    "I.def.22": "square, oblong, rhombus, and rhomboid",
+    "I.def.23": "parallel lines",
+    # Book II Definitions
+    "II.def.1": "contained rectangle",
+    "II.def.2": "gnomon",
+    # Book III Definitions
+    "III.def.1": "equal circles",
+    "III.def.2": "line tangent to a circle",
+    "III.def.3": "tangent circles",
+    "III.def.4": "chords equally distant from the center",
+    "III.def.5": "chord at greater distance from the center",
+    "III.def.6": "segment of a circle",
+    "III.def.7": "angle of a circle segment",
+    "III.def.8": "angle in a circle segment",
+    "III.def.9": "angle standing on an arc",
+    "III.def.10": "sector of a circle",
+    "III.def.11": "similar circle segments",
+    # Book IV Definitions
+    "IV.def.1": "polygon inscribed in a polygon",
+    "IV.def.2": "polygon circumscribed about a polygon",
+    "IV.def.3": "polygon inscribed in a circle",
+    "IV.def.4": "polygon circumscribed about a circle",
+    "IV.def.5": "circle inscribed in a polygon",
+    "IV.def.6": "circle circumscribed about a polygon",
+    "IV.def.7": "segment fitted into a circle",
+    # Book V Definitions
+    "V.def.1": "part (measure) of a magnitude",
+    "V.def.2": "multiple of a magnitude",
+    "V.def.3": "ratio",
+    "V.def.4": "magnitudes having a ratio",
+    "V.def.5": "magnitudes in the same ratio",
+    "V.def.6": "proportional magnitudes",
+    "V.def.7": "greater ratio",
+    "V.def.8": "proportion in three terms",
+    "V.def.9": "duplicate ratio",
+    "V.def.10": "triplicate ratio",
+    "V.def.11": "corresponding magnitudes",
+    "V.def.12": "alternando (alternate ratio)",
+    "V.def.13": "invertendo (inverse ratio)",
+    "V.def.14": "componendo (composition of ratio)",
+    "V.def.15": "separando (separation of ratio)",
+    "V.def.16": "convertendo (conversion of ratio)",
+    "V.def.17": "ex aequali (equality of ratios)",
+    "V.def.18": "perturbed proportion",
+    # Book VI Definitions
+    "VI.def.1": "similar rectilineal figures",
+    "VI.def.2": "reciprocally related figures",
+    "VI.def.3": "extreme and mean ratio",
+    "VI.def.4": "height of a figure",
+    # Book VII Definitions
+    "VII.def.1": "unit",
+    "VII.def.2": "number",
+    "VII.def.3": "part of a number",
+    "VII.def.4": "parts of a number",
+    "VII.def.5": "multiple of a number",
+    "VII.def.6": "even number",
+    "VII.def.7": "odd number",
+    "VII.def.8": "even-times even number",
+    "VII.def.9": "even-times odd number",
+    "VII.def.10": "odd-times odd number",
+    "VII.def.11": "prime number",
+    "VII.def.12": "numbers prime to one another",
+    "VII.def.13": "composite number",
+    "VII.def.14": "numbers composite to one another",
+    "VII.def.15": "multiplication of numbers",
+    "VII.def.16": "plane and solid numbers",
+    "VII.def.17": "square and cube numbers",
+    "VII.def.18": "cube number",
+    "VII.def.19": "square number",
+    "VII.def.20": "proportional numbers",
+    "VII.def.21": "similar plane and solid numbers",
+    "VII.def.22": "perfect number",
+    # Book X Definitions
+    "X.def.1": "commensurable and incommensurable magnitudes",
+    "X.def.2": "commensurable in square",
+    "X.def.3": "rational and irrational segments",
+    "X.def.4": "rational and irrational areas",
+    "X.def.ii.1": "first binomial",
+    "X.def.ii.2": "second binomial",
+    "X.def.ii.3": "third binomial",
+    "X.def.ii.4": "fourth binomial",
+    "X.def.ii.5": "fifth binomial",
+    "X.def.ii.6": "sixth binomial",
+    "X.def.iii.1": "first apotome",
+    "X.def.iii.2": "second apotome",
+    "X.def.iii.3": "third apotome",
+    "X.def.iii.4": "fourth apotome",
+    "X.def.iii.5": "fifth apotome",
+    "X.def.iii.6": "sixth apotome",
+    # Book XI Definitions
+    "XI.def.1": "solid",
+    "XI.def.2": "extremity of a solid",
+    "XI.def.3": "line at right angles to a plane",
+    "XI.def.4": "plane at right angles to a plane",
+    "XI.def.5": "inclination of a line to a plane",
+    "XI.def.6": "inclination of a plane to a plane",
+    "XI.def.7": "similarly inclined planes",
+    "XI.def.8": "parallel planes",
+    "XI.def.9": "similar solid figures",
+    "XI.def.10": "equal and similar solid figures",
+    "XI.def.11": "solid angle",
+    "XI.def.12": "pyramid",
+    "XI.def.13": "prism",
+    "XI.def.14": "sphere",
+    "XI.def.15": "axis of a sphere",
+    "XI.def.16": "center of a sphere",
+    "XI.def.17": "diameter of a sphere",
+    "XI.def.18": "cone",
+    "XI.def.19": "axis of a cone",
+    "XI.def.20": "base of a cone",
+    "XI.def.21": "cylinder",
+    "XI.def.22": "axis of a cylinder",
+    "XI.def.23": "bases of a cylinder",
+    "XI.def.24": "similar cones and cylinders",
+    "XI.def.25": "cube",
+    "XI.def.26": "octahedron",
+    "XI.def.27": "icosahedron",
+    "XI.def.28": "dodecahedron",
+    # Book I Postulates
+    "I.post.1": "construct a segment",
+    "I.post.2": "extend a segment",
+    "I.post.3": "construct a circle",
+    "I.post.4": "right angles are equal",
+    "I.post.5": "parallel postulate",
+    # Book I Common Notions
+    "I.cn.1": "equals to the same are equal",
+    "I.cn.2": "equals added to equals are equal",
+    "I.cn.3": "equals subtracted from equals are equal",
+    "I.cn.4": "coinciding things are equal",
+    "I.cn.5": "the whole is greater than the part",
+    # Book I Propositions
+    "I.1": "construct an equilateral triangle",
+    "I.2": "transfer a segment to a point",
+    "I.3": "cut off an equal segment",
+    "I.4": "congruent triangles by SAS",
+    "I.5": "base angles of an isosceles triangle",
+    "I.6": "triangle with equal base angles is isosceles",
+    "I.7": "uniqueness of triangle sides on a base",
+    "I.8": "congruent triangles by SSS",
+    "I.9": "bisect an angle",
+    "I.10": "bisect a segment",
+    "I.11": "construct a perpendicular at a point on a line",
+    "I.12": "construct a perpendicular from a point to a line",
+    "I.13": "adjacent angles on a line sum to two right angles",
+    "I.14": "supplementary adjacent angles form a line",
+    "I.15": "vertical angles are equal",
+    "I.16": "exterior angle of a triangle is greater than interior",
+    "I.17": "two angles of a triangle are less than two right angles",
+    "I.18": "greater side subtends greater angle",
+    "I.19": "greater angle is subtended by greater side",
+    "I.20": "triangle inequality",
+    "I.21": "interior segments of a triangle",
+    "I.22": "construct a triangle from three segments",
+    "I.23": "construct an angle equal to a given angle",
+    "I.24": "hinge theorem",
+    "I.25": "converse hinge theorem",
+    "I.26": "congruent triangles by ASA and AAS",
+    "I.27": "equal alternate interior angles imply parallel lines",
+    "I.28": "equal corresponding angles imply parallel lines",
+    "I.29": "transversal angles of parallel lines",
+    "I.30": "lines parallel to the same line are parallel",
+    "I.31": "construct a line parallel to a given line",
+    "I.32": "exterior angle and angle sum of a triangle",
+    "I.33": "segments joining equal and parallel segments",
+    "I.34": "opposite sides, angles, and diagonal of a parallelogram",
+    "I.35": "parallelograms on the same base in the same parallels",
+    "I.36": "parallelograms on equal bases in the same parallels",
+    "I.37": "triangles on the same base in the same parallels",
+    "I.38": "triangles on equal bases in the same parallels",
+    "I.39": "equal triangles on the same base are in the same parallels",
+    "I.40": "equal triangles on equal bases are in the same parallels",
+    "I.41": "parallelogram is double a triangle on the same base",
+    "I.42": "construct a parallelogram equal to a triangle",
+    "I.43": "complements of parallelograms about the diagonal are equal",
+    "I.44": "apply a parallelogram equal to a triangle on a segment",
+    "I.45": "construct a parallelogram equal to a polygon",
+    "I.46": "construct a square on a segment",
+    "I.47": "Pythagorean theorem",
+    "I.48": "converse of the Pythagorean theorem",
 }
 
 
@@ -122,8 +330,8 @@ SEMANTIC_NAMES: Dict[str, str] = {
     # Book I Definitions
     "I.def.1": "point_def",
     "I.def.2": "line_def",
-    "I.def.3": "line_extremities",
-    "I.def.4": "straight_line_def",
+    "I.def.3": "segment_extremities",
+    "I.def.4": "segment_def",
     "I.def.5": "surface_def",
     "I.def.6": "surface_extremities",
     "I.def.7": "plane_surface_def",
@@ -271,15 +479,55 @@ def get_semantic_name(
     return re.sub(r"[^a-z0-9]+", "_", canonical_ref.lower()).strip("_")
 
 
+def get_short_title(
+    canonical_ref: str,
+    node_type: str = "prop",
+    subtype: Optional[str] = None,
+    enun_text: str = "",
+) -> str:
+    """Return a concise short title for a G-Index node (e.g. 'point', 'construct an equilateral triangle')."""
+    if canonical_ref in SHORT_TITLES:
+        return SHORT_TITLES[canonical_ref]
+    if canonical_ref in SEMANTIC_NAMES:
+        sem = SEMANTIC_NAMES[canonical_ref]
+        if sem.endswith("_def"):
+            sem = sem[:-4]
+        return sem.replace("_", " ")
+
+    # Derive a concise lower-case phrase from enunciation text
+    cleaned = re.sub(r":[A-Za-z0-9_.-]+:`([^`<]+?)\s*<[^>]+>`", r"\1", enun_text)
+    cleaned = re.sub(r":[A-Za-z0-9_.-]+:`([^`]+)`", r"\1", cleaned)
+    cleaned = cleaned.replace("**", "").replace("*", "").strip()
+    cleaned = re.sub(r"\.\s*$", "", cleaned)
+
+    # Condense "If ..., then ..." or long clauses into a concise 4-7 word summary
+    m_imp = re.match(
+        r"^((?:construct|bisect|find|cut(?:\s+off)?|inscribe|circumscribe|apply|divide|draw|describe)\b[^,.;:]+)",
+        cleaned,
+        re.IGNORECASE,
+    )
+    if m_imp:
+        phrase = m_imp.group(1).strip()
+        words = phrase.split()
+        if len(words) > 8:
+            phrase = " ".join(words[:8])
+        return phrase[0].lower() + phrase[1:] if phrase else canonical_ref
+
+    sem = get_semantic_name(canonical_ref, node_type, subtype, enun_text)
+    if sem.endswith("_def"):
+        sem = sem[:-4]
+    return sem.replace("_", " ")
+
+
 def tighten_enunciation_text(text: str, canonical_ref: str = "") -> str:
-    """Return a concise, fact-oriented enunciation string."""
+    """Return a concise, fact-oriented enunciation string using Elements 2.0 terminology (segment, line, arc)."""
     if canonical_ref in CURATED_ENUNCIATIONS:
         return CURATED_ENUNCIATIONS[canonical_ref]
 
     s = re.sub(r"^(?:\[\d+\]\s*)*(?:\*\*\d+\.\*\*|\d+\.)?\s*", "", text.strip())
     s = " ".join(line.strip() for line in s.splitlines() if line.strip())
 
-    # Clean archaic constructions into direct imperative / declarative facts
+    # Clean archaic constructions into direct imperative / declarative facts and Elements 2.0 terminology
     replacements = [
         (r"^On a given finite straight line to (construct|describe)\b", r"\1 on a given segment"),
         (r"^On a given straight line to (construct|describe)\b", r"\1 on a given segment"),
@@ -299,7 +547,16 @@ def tighten_enunciation_text(text: str, canonical_ref: str = "") -> str:
         (r"\brectilineal angles\b", "angles"),
         (r"\brectilineal figure\b", "polygon"),
         (r"\brectilineal figures\b", "polygons"),
+        (r"\bfinite straight lines\b", "segments"),
         (r"\bfinite straight line\b", "segment"),
+        (r"\binfinite straight lines\b", "lines"),
+        (r"\binfinite straight line\b", "line"),
+        (r"\bparallel straight lines\b", "parallel lines"),
+        (r"\bstraight lines\b", "segments"),
+        (r"\bstraight line\b", "segment"),
+        (r"\bcircumferences\b", "arcs"),
+        (r"\bcircumference\b", "arc"),
+        (r"\bcentre\b", "center"),
         (r"\bare equal to one another\b", "are equal"),
         (r"\bwill be equal to one another\b", "are equal"),
         (r"\bbe equal to\b", "equals"),
@@ -418,12 +675,73 @@ def _endpoints_of_seg_role(seg_role: str) -> Optional[Tuple[str, str]]:
     return (f":g:`{p1} <{gid}:{p1}>`", f":g:`{p2} <{gid}:{p2}>`")
 
 
+def _two_point_circle_from_center_radius(
+    center_role: str,
+    radius_role: str,
+    circle_role: str,
+    circle_aliases: Optional[Dict[frozenset[str], str]] = None,
+) -> Tuple[str, str]:
+    """Given center `:g:`A <g1:A>``, radius `:g:`/ A B / <g1:/ A B />``, and circle `:g:`( B C D ) <g1:( B C D )>``,
+    return `(radius_point_role, two_point_circle_role)` where circle is displayed as `( A B )`.
+    """
+    m_c = re.match(r"^:g:`([A-Za-z0-9_]+)\s*<(?:([^:>]+):)?[^>]+>`$", center_role.strip())
+    m_r = re.match(
+        r"^:g:`/\s*([A-Za-z0-9_]+)\s+([A-Za-z0-9_]+)\s*/\s*<(?:([^:>]+):)?[^>]+>`$",
+        radius_role.strip(),
+    )
+    m_cir = re.match(r"^:g:`\(\s*([^`<]+?)\s*\)\s*<([^>]+)>`$", circle_role.strip())
+    if not (m_c and m_cir):
+        return radius_role, circle_role
+
+    c_pt = m_c.group(1)
+    gid = m_c.group(2) or "g1"
+    cir_pts = [tok for tok in m_cir.group(1).split() if tok]
+    cir_target = m_cir.group(2).strip()
+
+    r_pt: Optional[str] = None
+    if m_r:
+        p1, p2 = m_r.group(1), m_r.group(2)
+        r_pt = p2 if p1 == c_pt else (p1 if p2 == c_pt else p2)
+    elif cir_pts:
+        r_pt = cir_pts[0] if cir_pts[0] != c_pt else (cir_pts[1] if len(cir_pts) > 1 else cir_pts[0])
+
+    if not r_pt:
+        return radius_role, circle_role
+
+    two_pt_disp = f"( {c_pt} {r_pt} )"
+    if circle_aliases is not None and cir_pts:
+        circle_aliases[frozenset(cir_pts)] = two_pt_disp
+
+    rad_pt_role = f":g:`{r_pt} <{gid}:{r_pt}>`"
+    two_pt_circle_role = f":g:`{two_pt_disp} <{cir_target}>`"
+    return rad_pt_role, two_pt_circle_role
+
+
+def _apply_circle_aliases(
+    text: str, circle_aliases: Optional[Dict[frozenset[str], str]]
+) -> str:
+    """Rewrite any 3-point circle role `:g:`( B C D ) <target>`` to its 2-point `( A B )` display."""
+    if not circle_aliases:
+        return text
+
+    def _repl(m: re.Match[str]) -> str:
+        pts = [tok for tok in m.group(1).split() if tok]
+        target = m.group(2).strip()
+        alias = circle_aliases.get(frozenset(pts))
+        if alias:
+            return f":g:`{alias} <{target}>`"
+        return m.group(0)
+
+    return re.sub(r":g:`\(\s*([^`<]+?)\s*\)\s*<([^>]+)>`", _repl, text)
+
+
 def _rewrite_clause_to_pseudocode(
     clause: str,
     is_first_step: bool = False,
     id_map: Optional[Dict[str, str]] = None,
     last_constructed_seg: Optional[str] = None,
     constructed_circles: Optional[List[str]] = None,
+    circle_aliases: Optional[Dict[frozenset[str], str]] = None,
 ) -> Optional[Tuple[str, str, Optional[str]]]:
     """Rewrite a single Heath clause into (step_kind, concise_pseudocode_text, used_fn_target) or None."""
     s = " ".join(line.strip() for line in clause.strip().splitlines() if line.strip())
@@ -522,11 +840,14 @@ def _rewrite_clause_to_pseudocode(
     )
     if m_circle:
         center, radius, circle = m_circle.group(1), m_circle.group(2), m_circle.group(3)
+        rad_pt_role, two_pt_circle = _two_point_circle_from_center_radius(
+            center, radius, circle, circle_aliases
+        )
         if constructed_circles is not None:
-            constructed_circles.append(circle)
+            constructed_circles.append(two_pt_circle)
         return (
             "construct",
-            f"{_fn_tag('circle', g_circle)}({center}, {radius}) → {circle}",
+            f"{_fn_tag('circle', g_circle)}({center}, {rad_pt_role}) → {two_pt_circle}",
             g_circle,
         )
 
@@ -906,7 +1227,7 @@ def _rewrite_clause_to_pseudocode(
 
 
 def _strip_redundant_type_nouns(text: str) -> str:
-    """Strip verbose Euclidean type prefixes immediately preceding symbolic :g: indications."""
+    """Strip verbose Euclidean type prefixes immediately preceding symbolic :g: indications and normalize segment/line/arc."""
     s = text
     patterns = [
         (r"\bthe\s+given\s+finite\s+straight\s+line\s+(:g:`[^`]+`)", r"\1"),
@@ -929,6 +1250,15 @@ def _strip_redundant_type_nouns(text: str) -> str:
         (r"\bthe\s+angle\s+(:g:`[^`]+`)", r"\1"),
         (r"\bthe\s+triangles\s+(:g:`[^`]+`)", r"\1"),
         (r"\bthe\s+triangle\s+(:g:`[^`]+`)", r"\1"),
+        (r"\bfinite\s+straight\s+lines\b", "segments"),
+        (r"\bfinite\s+straight\s+line\b", "segment"),
+        (r"\binfinite\s+straight\s+lines\b", "lines"),
+        (r"\binfinite\s+straight\s+line\b", "line"),
+        (r"\bparallel\s+straight\s+lines\b", "parallel lines"),
+        (r"\bstraight\s+lines\b", "segments"),
+        (r"\bstraight\s+line\b", "segment"),
+        (r"\bcircumferences\b", "arcs"),
+        (r"\bcircumference\b", "arc"),
         (r"\bcentre\b", "center"),
     ]
     for pat, repl in patterns:
@@ -963,27 +1293,46 @@ def _build_signature_block(
     """Build a `.. signature::` RST block for a G-node."""
     fn_self = f":fn:`{sem_name} <{g_name}>`" if g_name else f"**{sem_name}**"
 
-    # Special foundational construction postulates
+    # Special foundational definitions, postulates, and common notions with interactive :g: symbols
+    if canonical_ref == "I.def.1":
+        return f".. signature:: def\n\n   | {fn_self}\\ (:g:`A <g1:A>`)"
+    if canonical_ref == "I.def.2":
+        return f".. signature:: def\n\n   | {fn_self}\\ (:g:`A <g1:A>`, :g:`B <g1:B>`) → :g:`[ A B ] <g1:[ A B ]>`"
+    if canonical_ref == "I.def.3":
+        return f".. signature:: def\n\n   | {fn_self}\\ (:g:`/ A B / <g1:/ A B />`) → :g:`A <g1:A>`, :g:`B <g1:B>`"
+    if canonical_ref == "I.def.4":
+        return f".. signature:: def\n\n   | {fn_self}\\ (:g:`[ A B ] <g1:[ A B ]>`, :g:`A <g1:A>`, :g:`B <g1:B>`) → :g:`/ A B / <g1:/ A B />`"
+    if canonical_ref == "I.def.15":
+        return f".. signature:: def\n\n   | {fn_self}\\ (:g:`( A B ) <g1:( B C D )>`) → :eq:`/ A B / = / A C / = / A D / <g1:/ A B / = g1:/ A C / = g1:/ A D />`"
+    if canonical_ref == "I.def.16":
+        return f".. signature:: def\n\n   | {fn_self}\\ (:g:`( A B ) <g1:( B C D )>`) → :g:`A <g1:A>`"
+    if canonical_ref == "I.def.20":
+        return f".. signature:: def\n\n   | {fn_self}\\ (:g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>`, :g:`< G H K > <g1:< G H K >>`)"
     if canonical_ref == "I.post.1":
         return (
             f".. signature:: postulate\n\n"
-            f"   | {fn_self}\\ (A, B) → / A B /\n"
-            f"   | **given** A, B\n"
-            f"   | **construct** / A B /"
+            f"   | {fn_self}\\ (:g:`A <g1:A>`, :g:`B <g1:B>`) → :g:`/ A B / <g1:/ A B />`\n"
+            f"   | **given** :g:`A <g1:A>`, :g:`B <g1:B>`\n"
+            f"   | **construct** :g:`/ A B / <g1:/ A B />`"
         )
     if canonical_ref == "I.post.2":
         return (
             f".. signature:: postulate\n\n"
-            f"   | {fn_self}\\ (/ A B /) → / B C /\n"
-            f"   | **given** / A B /\n"
-            f"   | **construct** / B C /"
+            f"   | {fn_self}\\ (:g:`/ A B / <g1:/ A B />`) → :g:`/ B C / <g1:/ B C />`\n"
+            f"   | **given** :g:`/ A B / <g1:/ A B />` on :g:`[ A B ] <g1:[ A B ]>`\n"
+            f"   | **construct** :g:`/ B C / <g1:/ B C />`"
         )
     if canonical_ref == "I.post.3":
         return (
             f".. signature:: postulate\n\n"
-            f"   | {fn_self}\\ (A, / A B /) → ( B C D )\n"
-            f"   | **given** A, / A B /\n"
-            f"   | **construct** ( B C D )"
+            f"   | {fn_self}\\ (:g:`A <g1:A>`, :g:`B <g1:B>`) → :g:`( A B ) <g1:( B C D )>`\n"
+            f"   | **given** :g:`A <g1:A>`, :g:`B <g1:B>`\n"
+            f"   | **construct** :g:`( A B ) <g1:( B C D )>`"
+        )
+    if canonical_ref == "I.cn.4":
+        return (
+            f".. signature:: rule\n\n"
+            f"   | {fn_self}\\ (:g:`/ A B / <g1:/ A B />`, :g:`/ D E / <g1:/ D E />`)"
         )
 
     if node_type in ("def", "post", "cn"):
@@ -1072,10 +1421,12 @@ def generate_pseudocode_rst(
     subtype: Optional[str] = None,
     id_map: Optional[Dict[str, str]] = None,
     g_to_sem_name: Optional[Dict[str, str]] = None,
+    local_svg_names: Optional[List[str]] = None,
 ) -> str:
     """Transform a Heath RST body (with G-Index roles/justifications) into Track 1 Pseudocode RST."""
     id_map = id_map or {}
     g_to_sem_name = g_to_sem_name or {}
+    local_svg_names = local_svg_names or []
 
     if node_type in ("def", "post", "cn"):
         m_enun = re.match(
@@ -1095,12 +1446,21 @@ def generate_pseudocode_rst(
             )
             indented = "\n".join(f"   {line}" for line in tight_enun.splitlines())
             out = f".. enunciation::\n\n{indented}\n\n{sig_block}"
+            for svg_name in local_svg_names:
+                if svg_name not in rest:
+                    out += f"\n\n.. picture:: {svg_name}"
             if rest:
                 out += f"\n\n{rest}"
             return out
         return heath_content_rst
 
-    lines = heath_content_rst.strip().splitlines()
+    # Unwrap :term: roles before pseudocode clause matching; inject_pseudocode_terms re-injects first-use :term: roles afterwards
+    clean_prop_rst = re.sub(
+        r":term:`([^`<]+?)(?:\s*<[^>]+>)?`",
+        lambda m: m.group(1).strip(),
+        heath_content_rst,
+    )
+    lines = clean_prop_rst.strip().splitlines()
     blocks: List[str] = []
     idx = 0
     while idx < len(lines):
@@ -1134,6 +1494,7 @@ def generate_pseudocode_rst(
     pending_just_targets: List[str] = []
     last_constructed_seg: Optional[str] = None
     constructed_circles: List[str] = []
+    circle_aliases: Dict[frozenset[str], str] = {}
     tight_enun_text = ""
 
     def _update_last_seg(body_text: str) -> None:
@@ -1189,9 +1550,11 @@ def generate_pseudocode_rst(
                     id_map=id_map,
                     last_constructed_seg=last_constructed_seg,
                     constructed_circles=constructed_circles,
+                    circle_aliases=circle_aliases,
                 )
                 if rewritten_dir and rewritten_dir[0] in ("construct", "intersect", "intersect_and_join"):
                     r_kind, r_text, used_fn = rewritten_dir
+                    r_text = _apply_circle_aliases(r_text, circle_aliases)
                     _update_last_seg(r_text)
                     if r_kind == "intersect_and_join":
                         int_text, join_text = r_text.split("|||", 1)
@@ -1212,6 +1575,7 @@ def generate_pseudocode_rst(
             else:
                 combined = dir_body
             cleaned = _strip_redundant_type_nouns(combined)
+            cleaned = _apply_circle_aliases(cleaned, circle_aliases)
             cleaned = re.sub(r"^(?:Now,\s*|Again,\s*|Then,\s*|And\s+|But\s+|For,\s*)", "", cleaned)
             if cleaned and cleaned[0].islower():
                 cleaned = cleaned[0].upper() + cleaned[1:]
@@ -1229,7 +1593,9 @@ def generate_pseudocode_rst(
                 c_clean,
                 re.IGNORECASE,
             ):
-                pending_premise = _strip_redundant_type_nouns(c_clean)
+                pending_premise = _apply_circle_aliases(
+                    _strip_redundant_type_nouns(c_clean), circle_aliases
+                )
                 if c_targets:
                     pending_just_targets = c_targets
                 continue
@@ -1244,11 +1610,13 @@ def generate_pseudocode_rst(
                 id_map=id_map,
                 last_constructed_seg=last_constructed_seg,
                 constructed_circles=constructed_circles,
+                circle_aliases=circle_aliases,
             )
             if not rewritten:
                 continue
 
             kind, text, used_fn = rewritten
+            text = _apply_circle_aliases(text, circle_aliases)
             if kind == "goal":
                 goal_clauses.append(text)
                 continue

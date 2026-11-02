@@ -1,17 +1,18 @@
 :canonical_id: G.168
-:original_id: VI.6
+:original_id: IV.16
+:title: G.168 inscribe pentadecagon in circle
 :volume: II
-:book: VI
+:book: IV
 :type: prop
 
-G.168 — Code
-============
+G.168 inscribe pentadecagon in circle — Code
+============================================
 
-.. rubric:: `VI.6 <https://geometor.github.io/euclid/heath/volume_II/book_vi/propositions/06/>`_
+.. rubric:: `IV.16 <https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/16/>`_
 
 .. enunciation::
 
-   If two triangles have one angle equal to one angle and the sides about the equal angles proportional, the triangles is equiangular and will have those angles equal which the corresponding sides subtend.
+   :term:`Inscribe in a given circle <G.148>` a fifteen-angled :term:`figure <G.9>` which shall be both :term:`equilateral <G.12>` and equiangular.
 
 .. picture:: g1.svg
 

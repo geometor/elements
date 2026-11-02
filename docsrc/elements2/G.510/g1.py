@@ -1,99 +1,58 @@
-"""Programmatic construction for Book XIII, Proposition 3 (XIII.3).
+"""Programmatic construction for Book XI, Proposition 8 (XI.8).
 
-If a straight line be cut in extreme and mean ratio, the square on the lesser
-segment added to the half of the greater segment is five times the square on
-the half of the greater segment.
+If two straight lines be parallel, and one of them be at right angles to any
+plane, the remaining one will also be at right angles to the same plane.
 """
 
 from __future__ import annotations
 
+import sympy as sp
 from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure for Book XIII, Proposition 3 using geometor.model."""
-    model = Model("XIII.3")
+    """Construct the figure for Book XI, Proposition 8 using geometor.model."""
+    model = Model("XI.8")
 
-    # Straight line AB cut in extreme and mean ratio at C, with AC bisected at D
-    A = model.set_point(22.0, -25.0, classes=["given"], ID="A")
-    D = model.set_point(87.0, -25.0, classes=["given"], ID="D")
-    C = model.set_point(151.0, -25.0, classes=["given"], ID="C")
-    B = model.set_point(230.0, -25.0, classes=["given"], ID="B")
+    # Plane of reference boundary corners
+    P1 = model.set_point(sp.Rational(-20, 102), sp.Rational(45, 102), label="P1")
+    P2 = model.set_point(sp.Rational(148, 102), sp.Rational(45, 102), label="P2")
+    P3 = model.set_point(sp.Rational(101, 102), sp.Rational(-56, 102), label="P3")
+    P4 = model.set_point(sp.Rational(-39, 102), sp.Rational(-56, 102), label="P4")
 
-    model.construct_line(A, B)
+    # 1. Let AB, CD be two parallel straight lines, and let AB be at right
+    #    angles to the plane of reference, meeting it at B, D.
+    B = model.set_point(0, 0, classes=["given"], ID="B")
+    A = model.set_point(0, 1, classes=["given"], ID="A")
+    D = model.set_point(sp.Rational(100, 102), 0, classes=["given"], label="D")
+    C = model.set_point(sp.Rational(100, 102), sp.Rational(100, 102), classes=["given"], label="C")
+
+    # 2. Let BD be joined, and let DE be drawn in the plane of reference at
+    #    right angles to BD, with DE equal to AB.
+    E = model.set_point(sp.Rational(85, 102), sp.Rational(-42, 102), label="E")
+
+    # 3. Join BE, AE, AD.
     model.set_segment(A, B)
-    model.set_segment(A, C)
-    model.set_segment(A, D)
-    model.set_segment(D, B)
-    model.set_segment(D, C)
-    model.set_segment(C, B)
-
-    # Grid points of square AE on AB
-    R = model.set_point(22.0, -109.0, ID="R")
-    G = model.set_point(87.0, -109.0, ID="G")
-    U = model.set_point(151.0, -109.0, ID="U")
-    M = model.set_point(230.0, -109.0, ID="M")
-
-    H = model.set_point(22.0, -173.0, ID="H")
-    K = model.set_point(87.0, -173.0, ID="K")
-    F = model.set_point(151.0, -173.0, ID="F")
-    N = model.set_point(230.0, -173.0, ID="N")
-
-    T = model.set_point(22.0, -238.0, ID="T")
-    L = model.set_point(87.0, -238.0, ID="L")
-    S = model.set_point(151.0, -238.0, ID="S")
-    E = model.set_point(230.0, -238.0, ID="E")
-
-    # Horizontal segments
-    model.set_segment(R, M)
-    model.set_segment(R, G)
-    model.set_segment(G, U)
-    model.set_segment(U, M)
-    model.set_segment(H, N)
-    model.set_segment(H, K)
-    model.set_segment(K, F)
-    model.set_segment(F, N)
-    model.set_segment(T, E)
-    model.set_segment(T, L)
-    model.set_segment(L, S)
-    model.set_segment(S, E)
-
-    # Vertical segments
-    model.set_segment(A, T)
-    model.set_segment(A, R)
-    model.set_segment(R, H)
-    model.set_segment(H, T)
-    model.set_segment(D, L)
-    model.set_segment(D, G)
-    model.set_segment(G, K)
-    model.set_segment(K, L)
-    model.set_segment(C, S)
-    model.set_segment(C, U)
-    model.set_segment(U, F)
-    model.set_segment(F, S)
+    model.set_segment(C, D)
+    model.set_segment(B, D)
+    model.set_segment(D, E)
     model.set_segment(B, E)
-    model.set_segment(B, M)
-    model.set_segment(M, N)
-    model.set_segment(N, E)
+    model.set_segment(A, E)
+    model.set_segment(A, D)
 
-    # Diagonal BT
-    model.set_segment(B, T)
-    model.set_segment(B, U)
-    model.set_segment(U, K)
-    model.set_segment(K, T)
+    # Plane of reference boundary
+    model.set_segment(P1, P2)
+    model.set_segment(P2, P3)
+    model.set_segment(P3, P4)
+    model.set_segment(P4, P1)
+    model.set_polygon([P1, P2, P3, P4])
 
-    # Polygons (squares, rectangles, and gnomon OPQ)
-    model.set_polygon([A, B, E, T])
-    model.set_polygon([R, U, S, T])
-    model.set_polygon([G, U, F, K])
-    model.set_polygon([H, K, L, T])
-    model.set_polygon([C, B, E, S])
-    model.set_polygon([U, M, N, F])
-    model.set_polygon([F, N, E, S])
-    model.set_polygon([D, C, U, G])
-    model.set_polygon([C, B, N, F])
-    model.set_polygon([D, B, N, K])
-    model.set_polygon([G, D, B, N, F, U])
+    # Planes and triangles in the proof
+    model.set_polygon([A, B, D])
+    model.set_polygon([E, D, B])
+    model.set_polygon([A, B, E])
+    model.set_polygon([E, D, A])
+    model.set_polygon([A, B, D, C])
 
     return model
 

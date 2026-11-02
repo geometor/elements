@@ -1,52 +1,49 @@
-"""Programmatic construction for Book IV, Proposition 6 (IV.6)."""
+"""Programmatic construction for Book III, Proposition 21 (III.21).
+
+In a circle the angles in the same segment are equal to one another.
+"""
 
 from __future__ import annotations
 
+import sympy as sp
 from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0097.g1 using geometor.model."""
-    model = Model("IV.6")
+    """Construct the figure for Book III, Proposition 21 using geometor.model."""
+    model = Model("III.21")
 
-    # Points (y-inverted for standard mathematical coordinates)
-    E = model.set_point(99.00, -99.00, ID="E")
-    A = model.set_point(99.00, -28.00, classes=["given"], ID="A")
-    B = model.set_point(28.00, -99.00, ID="B")
-    C = model.set_point(99.00, -170.00, ID="C")
-    D = model.set_point(170.00, -99.00, ID="D")
+    # 1. Circle ABCD about centre F
+    F = model.set_point(0, 0, classes=["given"], ID="F")
+    C = model.set_point(0, -1, ID="C")
+    circle_ABCD = model.construct_circle(F, C)
 
-    # Circle ABCD
-    model.construct_circle(E, A)
+    # Points B, D, A, E on circumference
+    bx = sp.Rational(-61, 82)
+    by = -sp.sqrt(1 - bx**2)
+    B = model.set_point(bx, by, classes=["given"], ID="B")
+    D = model.set_point(-bx, by, classes=["given"], ID="D")
 
-    # Construction lines (diameters)
-    model.construct_line(A, C)
-    model.construct_line(B, D)
+    ax = sp.Rational(-33, 82)
+    ay = sp.sqrt(1 - ax**2)
+    A = model.set_point(ax, ay, classes=["given"], ID="A")
 
-    # Segments
-    model.set_segment(A, C)
-    model.set_segment(B, D)
-    model.set_segment(A, E)
-    model.set_segment(E, C)
-    model.set_segment(B, E)
-    model.set_segment(E, D)
+    ey = sp.Rational(12, 82)
+    ex = sp.sqrt(1 - ey**2)
+    E = model.set_point(ex, ey, classes=["given"], ID="E")
+
+    # 2. Chords AB, AD, EB, ED, BD and radii BF, FD
     model.set_segment(A, B)
-    model.set_segment(B, C)
-    model.set_segment(C, D)
-    model.set_segment(D, A)
+    model.set_segment(A, D)
+    model.set_segment(E, B)
+    model.set_segment(E, D)
+    model.set_segment(B, D)
+    model.set_segment(B, F)
+    model.set_segment(F, D)
 
-    # Collinear sections
-    model.set_section([A, E, C])
-    model.set_section([B, E, D])
-
-    # Polygons
-    model.set_polygon([A, B, C, D])
-
-    # Angles (wedges)
-    model.set_wedge(A, B, B, D)
-    model.set_wedge(B, A, A, C)
-    model.set_wedge(C, B, B, D)
-    model.set_wedge(D, C, C, A)
+    model.set_polygon([B, A, D])
+    model.set_polygon([B, E, D])
+    model.set_polygon([B, F, D])
 
     return model
 

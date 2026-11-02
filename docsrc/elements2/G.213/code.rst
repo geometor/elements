@@ -1,17 +1,18 @@
 :canonical_id: G.213
-:original_id: VII.13
+:original_id: VI.4
+:title: G.213 equiangular triangles sides
 :volume: II
-:book: VII
+:book: VI
 :type: prop
 
-G.213 — Code
-============
+G.213 equiangular triangles sides — Code
+========================================
 
-.. rubric:: `VII.13 <https://geometor.github.io/euclid/heath/volume_II/book_vii/propositions/13/>`_
+.. rubric:: `VI.4 <https://geometor.github.io/euclid/heath/volume_II/book_vi/propositions/04/>`_
 
 .. enunciation::
 
-   If four numbers be proportional, they is proportional alternately.
+   In equiangular :term:`triangles <G.11>` the sides about the equal :term:`angles <G.22>` are :term:`proportional <G.180>`, and those are corresponding sides which subtend the equal angles.
 
 .. picture:: g1.svg
 

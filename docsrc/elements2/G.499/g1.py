@@ -1,4 +1,4 @@
-"""Programmatic construction for Book XII, Proposition 12 (XII.12)."""
+"""Programmatic construction for Book X, Proposition 113 (X.113)."""
 
 from __future__ import annotations
 
@@ -6,76 +6,51 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0414.g1 using geometor.model."""
-    model = Model("XII.12")
+    """Construct the figure 0252.g1 using geometor.model."""
+    model = Model("X.113")
 
-    # First circle ABCD, center K, and apex L
-    K = model.set_point(104.0, -146.0, ID="K")
-    L = model.set_point(38.0, -43.0, classes=["given"], ID="L")
-    A = model.set_point(104.0, -62.0, classes=["given"], ID="A")
-    B = model.set_point(20.0, -146.0, classes=["given"], ID="B")
-    C = model.set_point(104.0, -230.0, classes=["given"], ID="C")
-    D = model.set_point(188.0, -146.0, classes=["given"], ID="D")
-    T = model.set_point(44.6, -86.6, ID="T")
-    U = model.set_point(44.6, -205.4, ID="U")
-    V = model.set_point(163.4, -205.4, ID="V")
-    W = model.set_point(163.4, -86.6, ID="W")
+    # Single-letter vertical magnitude segments A and G
+    A_t = model.set_point(28.0, -18.0, classes=["given"], ID="A")
+    A_b = model.set_point(28.0, -110.0, ID="A_b")
 
-    model.construct_circle(K, A)
-    model.set_segment(B, D)
-    model.set_segment(B, K)
-    model.set_segment(K, D)
-    model.set_segment(K, L)
-    model.set_segment(K, T)
-    model.set_segment(L, B)
-    model.set_segment(L, T)
-    for p1, p2 in [(A, B), (B, C), (C, D), (D, A)]:
-        model.set_segment(p1, p2)
-    for p1, p2 in [(A, T), (T, B), (B, U), (U, C), (C, V), (V, D), (D, W), (W, A)]:
-        model.set_segment(p1, p2)
+    G_t = model.set_point(137.5, -19.0, classes=["given"], ID="G")
+    G_b = model.set_point(137.5, -73.0, ID="G_b")
 
-    model.set_polygon([A, B, C, D])
-    model.set_polygon([A, T, B, U, C, V, D, W])
-    model.set_polygon([B, K, L])
-    model.set_polygon([B, K, T])
-    model.set_polygon([L, K, T])
-    model.set_polygon([L, B, T])
+    # Vertical line CB divided at D
+    C = model.set_point(63.0, -18.0, classes=["given"], ID="C")
+    D = model.set_point(63.0, -110.0, classes=["given"], ID="D")
+    B = model.set_point(63.0, -171.0, classes=["given"], ID="B")
 
-    # Second circle EFGH, center M, and apex N
-    M = model.set_point(331.0, -146.0, ID="M")
-    N = model.set_point(422.0, -25.0, classes=["given"], ID="N")
-    E = model.set_point(331.0, -50.0, classes=["given"], ID="E")
-    F = model.set_point(427.0, -146.0, classes=["given"], ID="F")
-    G = model.set_point(331.0, -242.0, classes=["given"], ID="G")
-    H = model.set_point(235.0, -146.0, classes=["given"], ID="H")
-    P = model.set_point(398.88, -78.12, ID="P")
-    Q = model.set_point(398.88, -213.88, ID="Q")
-    R = model.set_point(263.12, -213.88, ID="R")
-    S = model.set_point(263.12, -78.12, ID="S")
+    # Vertical line KH divided at E and F
+    K = model.set_point(103.0, -18.0, ID="K")
+    E = model.set_point(103.0, -82.0, ID="E")
+    F = model.set_point(103.0, -107.0, ID="F")
+    H = model.set_point(103.0, -142.0, ID="H")
 
-    model.construct_circle(M, E)
+    # Base lines
+    model.construct_line(A_t, A_b)
+    model.construct_line(C, B)
+    model.construct_line(K, H)
+    model.construct_line(G_t, G_b)
+
+    # Segments
+    model.set_segment(A_t, A_b)
+    model.set_segment(G_t, G_b)
+    model.set_segment(C, B)
+    model.set_segment(C, D)
+    model.set_segment(D, B)
+    model.set_segment(K, H)
+    model.set_segment(K, F)
+    model.set_segment(K, E)
+    model.set_segment(E, H)
+    model.set_segment(E, F)
     model.set_segment(F, H)
-    model.set_segment(F, M)
-    model.set_segment(M, H)
-    model.set_segment(M, N)
-    model.set_segment(M, P)
-    model.set_segment(N, F)
-    model.set_segment(N, P)
-    for p1, p2 in [(E, F), (F, G), (G, H), (H, E)]:
-        model.set_segment(p1, p2)
-    for p1, p2 in [(E, P), (P, F), (F, Q), (Q, G), (G, R), (R, H), (H, S), (S, E)]:
-        model.set_segment(p1, p2)
 
-    model.set_polygon([E, F, G, H])
-    model.set_polygon([E, P, F, Q, G, R, H, S])
-    model.set_polygon([E, P, F])
-    model.set_polygon([F, Q, G])
-    model.set_polygon([G, R, H])
-    model.set_polygon([H, S, E])
-    model.set_polygon([F, M, N])
-    model.set_polygon([F, M, P])
-    model.set_polygon([N, M, P])
-    model.set_polygon([N, F, P])
+    # Sections
+    model.set_section([C, D, B])
+    model.set_section([K, E, F])
+    model.set_section([K, F, H])
+    model.set_section([E, F, H])
 
     return model
 

@@ -1,7 +1,4 @@
-"""Programmatic construction for Book VI, Proposition 6 (VI.6).
-
-If two triangles have one angle equal to one angle and the sides about the equal angles proportional, the triangles will be equiangular.
-"""
+"""Programmatic construction for Book IV, Proposition 16 (IV.16)."""
 
 from __future__ import annotations
 
@@ -9,43 +6,43 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure for 0211.g1 (VI.6) using geometor.model."""
-    model = Model("VI.6")
+    """Construct the figure 0116.g1 (Inscribed regular fifteen-angled figure) using geometor.model."""
+    model = Model("IV.16")
 
-    # 1. Points
-    A = model.set_point(38, -19, classes=["given"], ID="A")
-    B = model.set_point(26, -156, classes=["given"], ID="B")
-    C = model.set_point(122, -156, classes=["given"], ID="C")
-    D = model.set_point(212, -39, classes=["given"], ID="D")
-    E = model.set_point(204.56, -123.94, classes=["given"], ID="E")
-    F = model.set_point(264.08, -123.94, classes=["given"], ID="F")
-    G = model.set_point(291.08, -70.89, ID="G")
+    # Points (y-inverted for standard mathematical coordinates)
+    O = model.set_point(153.00, -156.00, ID="O")
+    A = model.set_point(153.00, -30.00, classes=["given"], ID="A")
+    B = model.set_point(33.17, -117.06, ID="B")
+    E = model.set_point(27.69, -169.17, ID="E")
+    C = model.set_point(43.88, -219.00, ID="C")
+    D = model.set_point(262.12, -219.00, ID="D")
 
-    # 3. Segments
+    P2 = model.set_point(204.25, -40.89, ID="P2")
+    P3 = model.set_point(246.64, -71.69, ID="P3")
+    P4 = model.set_point(272.83, -117.06, ID="P4")
+    P5 = model.set_point(278.31, -169.17, ID="P5")
+    P7 = model.set_point(227.06, -257.94, ID="P7")
+    P8 = model.set_point(179.20, -279.25, ID="P8")
+    P9 = model.set_point(126.80, -279.25, ID="P9")
+    P10 = model.set_point(78.94, -257.94, ID="P10")
+    P14 = model.set_point(59.36, -71.69, ID="P14")
+    P15 = model.set_point(101.75, -40.89, ID="P15")
+
+    # Given circle ABCD
+    model.construct_circle(O, A)
+
+    # Segments
+    model.set_segment(A, C)
+    model.set_segment(C, D)
+    model.set_segment(D, A)
     model.set_segment(A, B)
-    model.set_segment(B, C)
-    model.set_segment(C, A)
-    model.set_segment(D, E)
-    model.set_segment(E, F)
-    model.set_segment(F, D)
-    model.set_segment(D, G)
-    model.set_segment(G, F)
+    model.set_segment(B, E)
+    model.set_segment(E, C)
 
-    # 5. Polygons (Triangles)
-    model.set_polygon([A, B, C])
-    model.set_polygon([D, E, F])
-    model.set_polygon([D, G, F])
-
-    # 6. Angles (Wedges)
-    model.set_wedge(A, B, B, C)
-    model.set_wedge(B, A, A, C)
-    model.set_wedge(C, A, A, B)
-    model.set_wedge(D, E, E, F)
-    model.set_wedge(E, D, D, F)
-    model.set_wedge(F, D, D, E)
-    model.set_wedge(D, F, F, G)
-    model.set_wedge(F, D, D, G)
-    model.set_wedge(G, D, D, F)
+    # Polygons
+    model.set_polygon([A, C, D])
+    model.set_polygon([A, P4, P7, P10, B])
+    model.set_polygon([A, P2, P3, P4, P5, D, P7, P8, P9, P10, C, E, B, P14, P15])
 
     return model
 

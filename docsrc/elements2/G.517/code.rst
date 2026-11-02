@@ -1,17 +1,18 @@
 :canonical_id: G.517
-:original_id: XIII.10
+:original_id: XI.14
+:title: G.517 planes segment right
 :volume: III
-:book: XIII
+:book: XI
 :type: prop
 
-G.517 — Code
-============
+G.517 planes segment right — Code
+=================================
 
-.. rubric:: `XIII.10 <https://geometor.github.io/euclid/heath/volume_III/book_xiii/propositions/10/>`_
+.. rubric:: `XI.14 <https://geometor.github.io/euclid/heath/volume_III/book_xi/propositions/14/>`_
 
 .. enunciation::
 
-   If an equilateral pentagon be inscribed in a circle, the square on the side of the pentagon is equal to the squares on the side of the hexagon and on that of the decagon inscribed in the same circle.
+   :term:`Planes <G.7>` to which the same :term:`segment <G.4>` is :term:`at right angles <G.32>` is :term:`parallel <G.52>`.
 
 .. picture:: g1.svg
 
