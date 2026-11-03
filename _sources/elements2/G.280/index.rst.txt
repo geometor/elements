@@ -10,7 +10,7 @@
 :categories: theorem, proof, number-theory
 :category: theorem, proof, number-theory
 :tags: book-vii, point, number, prime-to-one-another, multiply, prime
-:dependencies: G.248, G.249, G.278
+:dependencies: G.248, G.249, G.269, G.278
 :excerpt: If two numbers be prime to two numbers, both to each, their products also is prime to one another.
 
 .. _G.280:
@@ -43,19 +43,19 @@ G.280 numbers prime numbers
 
 .. step:: assert
 
-   Since each of the numbers :g:`A <g1:A>`, :g:`B <g1:B>` is prime to :g:`C <g1:C>`,
+   each of the numbers :g:`A <g1:A>`, :g:`B <g1:B>` is prime to :g:`C <g1:C>`,
 
 .. step:: assert ∵ numbers_prime_number_vii_24 <G.278>
 
-   Therefore the product of :g:`A <g1:A>`, :g:`B <g1:B>` will also be prime to :g:`C <g1:C>`.
+   the product of :g:`A <g1:A>`, :g:`B <g1:B>` will also be prime to :g:`C <g1:C>`
 
 .. step:: assert
 
-   The product of :g:`A <g1:A>`, :g:`B <g1:B>` is :g:`E <g1:E>` ;
+   The product of :g:`A <g1:A>`, :g:`B <g1:B>` is :g:`E <g1:E>`
 
 .. step:: assert
 
-   Therefore :g:`E <g1:E>`, :g:`C <g1:C>` are prime to one another.
+   :g:`E <g1:E>`, :g:`C <g1:C>` are prime to one another
 
 .. step:: assert
 
@@ -63,23 +63,23 @@ G.280 numbers prime numbers
 
 .. step:: assert
 
-   :g:`E <g1:E>`, :g:`D <g1:D>` are also prime to one another.
+   :g:`E <g1:E>`, :g:`D <g1:D>` are also prime to one another
 
 .. step:: assert
 
-   Therefore each of the numbers :g:`C <g1:C>`, :g:`D <g1:D>` is prime to :g:`E <g1:E>`.
+   each of the numbers :g:`C <g1:C>`, :g:`D <g1:D>` is prime to :g:`E <g1:E>`
 
 .. step:: assert ∵ numbers_prime_number_vii_24 <G.278>
 
-   Therefore the product of :g:`C <g1:C>`, :g:`D <g1:D>` will also be prime to :g:`E <g1:E>`.
+   the product of :g:`C <g1:C>`, :g:`D <g1:D>` will also be prime to :g:`E <g1:E>`
 
 .. step:: assert
 
-   The product of :g:`C <g1:C>`, :g:`D <g1:D>` is :g:`F <g1:F>`.
+   The product of :g:`C <g1:C>`, :g:`D <g1:D>` is :g:`F <g1:F>`
 
 .. step:: conclude
 
-   Therefore :g:`E <g1:E>`, :g:`F <g1:F>` are prime to one another.
+   :g:`E <g1:E>`, :g:`F <g1:F>` are prime to one another
 
 Dependency Graph
 ----------------
@@ -148,13 +148,20 @@ Dependency Graph
      "G.251" -> "G.169";
      "G.253" -> "G.169";
      "G.254" -> "G.169";
+     "G.255" -> "G.169";
      "G.256" -> "G.169";
      "G.268" -> "G.169";
+     "G.270" -> "G.169";
+     "G.271" -> "G.169";
      "G.274" -> "G.169";
+     "G.275" -> "G.169";
      "G.277" -> "G.169";
+     "G.278" -> "G.169";
      "G.171" -> "G.170";
      "G.176" -> "G.170";
+     "G.183" -> "G.170";
      "G.185" -> "G.170";
+     "G.186" -> "G.170";
      "G.257" -> "G.170";
      "G.186" -> "G.171";
      "G.180" -> "G.176";
@@ -165,11 +172,17 @@ Dependency Graph
      "G.274" -> "G.176";
      "G.275" -> "G.176";
      "G.183" -> "G.180";
+     "G.263" -> "G.180";
      "G.266" -> "G.180";
      "G.273" -> "G.180";
+     "G.278" -> "G.180";
      "G.182" -> "G.181";
      "G.194" -> "G.181";
      "G.265" -> "G.181";
+     "G.268" -> "G.181";
+     "G.274" -> "G.181";
+     "G.275" -> "G.181";
+     "G.278" -> "G.181";
      "G.183" -> "G.182";
      "G.273" -> "G.183";
      "G.186" -> "G.184";
@@ -180,11 +193,19 @@ Dependency Graph
      "G.262" -> "G.194";
      "G.266" -> "G.194";
      "G.268" -> "G.194";
+     "G.270" -> "G.194";
+     "G.271" -> "G.194";
      "G.248" -> "G.247";
      "G.249" -> "G.247";
      "G.250" -> "G.247";
+     "G.251" -> "G.247";
+     "G.255" -> "G.247";
      "G.268" -> "G.247";
      "G.269" -> "G.247";
+     "G.270" -> "G.247";
+     "G.271" -> "G.247";
+     "G.275" -> "G.247";
+     "G.278" -> "G.247";
      "G.250" -> "G.248";
      "G.251" -> "G.248";
      "G.253" -> "G.248";
@@ -209,22 +230,31 @@ Dependency Graph
      "G.280" -> "G.248";
      "G.250" -> "G.249";
      "G.251" -> "G.249";
+     "G.255" -> "G.249";
      "G.275" -> "G.249";
      "G.277" -> "G.249";
      "G.278" -> "G.249";
      "G.280" -> "G.249";
      "G.251" -> "G.250";
      "G.255" -> "G.251";
+     "G.254" -> "G.253";
      "G.255" -> "G.253";
+     "G.256" -> "G.253";
      "G.257" -> "G.253";
+     "G.258" -> "G.253";
      "G.261" -> "G.253";
      "G.262" -> "G.253";
      "G.263" -> "G.253";
+     "G.265" -> "G.253";
+     "G.266" -> "G.253";
      "G.255" -> "G.254";
      "G.258" -> "G.254";
      "G.261" -> "G.254";
      "G.262" -> "G.254";
      "G.263" -> "G.254";
+     "G.265" -> "G.254";
+     "G.266" -> "G.254";
+     "G.274" -> "G.254";
      "G.274" -> "G.255";
      "G.257" -> "G.256";
      "G.263" -> "G.256";
@@ -249,7 +279,9 @@ Dependency Graph
      "G.270" -> "G.269";
      "G.271" -> "G.269";
      "G.272" -> "G.269";
+     "G.273" -> "G.269";
      "G.278" -> "G.269";
+     "G.280" -> "G.269";
      "G.272" -> "G.270";
      "G.275" -> "G.270";
      "G.278" -> "G.270";

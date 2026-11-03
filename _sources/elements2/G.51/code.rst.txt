@@ -12,7 +12,7 @@ G.51 congruent triangles by ASA and AAS — Code
 
 .. enunciation::
 
-   :term:`Triangles <G.11>` with two :term:`angles <G.22>` and one corresponding side equal are congruent (ASA / AAS).
+   :term:`Triangles <G.12>` with two :term:`angles <G.22>` and one corresponding side equal are congruent (ASA / AAS).
 
 .. picture:: g1.svg
 

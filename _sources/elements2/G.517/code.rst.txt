@@ -12,7 +12,7 @@ G.517 planes segment right — Code
 
 .. enunciation::
 
-   :term:`Planes <G.7>` to which the same :term:`segment <G.4>` is :term:`at right angles <G.32>` is :term:`parallel <G.52>`.
+   :term:`Planes <G.7>` to which the same :term:`segment <G.4>` is :term:`at right angles <G.33>` is :term:`parallel <G.52>`.
 
 .. picture:: g1.svg
 

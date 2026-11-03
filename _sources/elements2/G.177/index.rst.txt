@@ -43,7 +43,7 @@ G.177 magnitude ratio equimultiples
 
 .. step:: assert
 
-   I say that, as :g:`E <g1:E>` is to :g:`G <g1:G>`, so is :g:`F <g1:F>` to :g:`H <g1:H>`.
+   I say that, as :g:`E <g1:E>` is to :g:`G <g1:G>`, so is :g:`F <g1:F>` to :g:`H <g1:H>`
 
 .. step:: construct
 
@@ -51,7 +51,7 @@ G.177 magnitude ratio equimultiples
 
 .. step:: assert ∵ magnitude_multiple_equimultiples <G.175>
 
-   Since :g:`E <g1:E>` is the same multiple of :g:`A <g1:A>` that :g:`F <g1:F>` is of :g:`C <g1:C>`, and equimultiples :g:`K <g1:K>`, :g:`L <g1:L>` of :g:`E <g1:E>`, :g:`F <g1:F>` have been taken → therefore :g:`K <g1:K>` is the same multiple of :g:`A <g1:A>` that :g:`L <g1:L>` is of :g:`C <g1:C>`.
+   :g:`E <g1:E>` is the same multiple of :g:`A <g1:A>` that :g:`F <g1:F>` is of :g:`C <g1:C>`, and equimultiples :g:`K <g1:K>`, :g:`L <g1:L>` of :g:`E <g1:E>`, :g:`F <g1:F>` have been taken → therefore :g:`K <g1:K>` is the same multiple of :g:`A <g1:A>` that :g:`L <g1:L>` is of :g:`C <g1:C>`
 
 .. step:: assert
 
@@ -59,15 +59,15 @@ G.177 magnitude ratio equimultiples
 
 .. step:: assert
 
-   :g:`M <g1:M>` is the same multiple of :g:`B <g1:B>` that :g:`N <g1:N>` is of :g:`D <g1:D>`.
+   :g:`M <g1:M>` is the same multiple of :g:`B <g1:B>` that :g:`N <g1:N>` is of :g:`D <g1:D>`
 
 .. step:: assert
 
-   And, since, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`, and of :g:`A <g1:A>`, :g:`C <g1:C>` equimultiples :g:`K <g1:K>`, :g:`L <g1:L>` have been taken, and of :g:`B <g1:B>`, :g:`D <g1:D>` other, chance, equimultiples :g:`M <g1:M>`, :g:`N <g1:N>`,
+   since, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`, and of :g:`A <g1:A>`, :g:`C <g1:C>` equimultiples :g:`K <g1:K>`, :g:`L <g1:L>` have been taken, and of :g:`B <g1:B>`, :g:`D <g1:D>` other, chance, equimultiples :g:`M <g1:M>`, :g:`N <g1:N>`,
 
 .. step:: assert ∵ magnitudes_said_ratio_def <G.176>
 
-   Therefore, if :g:`K <g1:K>` is in excess of :g:`M <g1:M>`, :g:`L <g1:L>` also is in excess of :g:`N <g1:N>`, if it is :eq:`equal <g1:K = g1:M>`, :eq:`equal <g1:L = g1:N>`, and if less, less.
+   if :g:`K <g1:K>` is in excess of :g:`M <g1:M>`, :g:`L <g1:L>` also is in excess of :g:`N <g1:N>`, if it is :eq:`= <g1:K = g1:M>`, :eq:`= <g1:L = g1:N>`, and if less, less
 
 .. step:: assert
 
@@ -75,7 +75,7 @@ G.177 magnitude ratio equimultiples
 
 .. step:: conclude ∵ magnitudes_said_ratio_def <G.176>
 
-   Therefore, as :g:`E <g1:E>` is to :g:`G <g1:G>`, so is :g:`F <g1:F>` to :g:`H <g1:H>`.
+   as :g:`E <g1:E>` is to :g:`G <g1:G>`, so is :g:`F <g1:F>` to :g:`H <g1:H>`
 
 Dependency Graph
 ----------------

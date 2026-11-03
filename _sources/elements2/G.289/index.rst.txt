@@ -10,7 +10,7 @@
 :categories: problem, finding, number-theory
 :category: problem, finding, number-theory
 :tags: book-vii, point, number, in-the-same-ratio, prime-to-one-another, part-aliquot, unit, ratio, multiply, reductio-ad-absurdum
-:dependencies: G.173, G.176, G.248, G.252, G.263, G.269, G.270, G.273, G.275
+:dependencies: G.169, G.173, G.176, G.247, G.248, G.249, G.252, G.263, G.269, G.270, G.273, G.275
 :excerpt: Given as many numbers as we please, to find the least of those which have the same ratio with them.
 
 .. _G.289:
@@ -40,11 +40,11 @@ G.289 many numbers please
 
 .. step:: assert
 
-   :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` are either prime to one another or not.
+   :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` are either prime to one another or not
 
 .. step:: assert ∵ numbers_prime_least <G.275>
 
-   If :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` are :term:`prime to one another <G.249>`, they are the least of those which have the same ratio with them.
+   If :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` are :term:`prime to one another <G.249>`, they are the least of those which have the same ratio with them
 
 .. step:: construct
 
@@ -52,19 +52,19 @@ G.289 many numbers please
 
 .. step:: assert ∵ numbers_multiplying_make <G.270>
 
-   Therefore the numbers :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>` :term:`measure <G.169>` the numbers :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` respectively according to the :term:`units <G.247>` in :g:`D <g1:D>`.
+   the numbers :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>` :term:`measure <G.169>` the numbers :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` according to the :term:`units <G.247>` in :g:`D <g1:D>`
 
 .. step:: assert ∵ numbers_proportional_multiple_def <G.263>
 
-   Therefore :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>` measure :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` the same number of times; therefore :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>` are in the same ratio with :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`.
+   :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>` measure :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` the same number of times; therefore :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>` are in the same ratio with :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`
 
 .. step:: assert
 
-   I say next that they are the least that are in that :term:`ratio <G.173>`.
+   I say next that they are the least that are in that :term:`ratio <G.173>`
 
 .. step:: assert
 
-   If :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>` are not the least of those which have the same ratio with :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, there will be numbers less than :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>` which are in the same ratio with :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`.
+   If :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>` are not the least of those which have the same ratio with :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, there will be numbers less than :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>` which are in the same ratio with :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`
 
 .. step:: assert
 
@@ -72,7 +72,7 @@ G.289 many numbers please
 
 .. step:: assert
 
-   Therefore :g:`H <g1:H>` measures :g:`A <g1:A>` the same number of times that the numbers :g:`K <g1:K>`, :g:`L <g1:L>` measure the numbers :g:`B <g1:B>`, :g:`C <g1:C>` respectively.
+   :g:`H <g1:H>` measures :g:`A <g1:A>` the same number of times that the numbers :g:`K <g1:K>`, :g:`L <g1:L>` measure the numbers :g:`B <g1:B>`, :g:`C <g1:C>`
 
 .. step:: assert
 
@@ -80,31 +80,31 @@ G.289 many numbers please
 
 .. step:: assert
 
-   Therefore the numbers :g:`K <g1:K>`, :g:`L <g1:L>` also measure the numbers :g:`B <g1:B>`, :g:`C <g1:C>` respectively according to the units in :g:`M <g1:M>`.
+   the numbers :g:`K <g1:K>`, :g:`L <g1:L>` also measure the numbers :g:`B <g1:B>`, :g:`C <g1:C>` according to the units in :g:`M <g1:M>`
 
 .. step:: assert
 
-   And, since :g:`H <g1:H>` measures :g:`A <g1:A>` according to the units in :g:`M <g1:M>`,
+   since :g:`H <g1:H>` measures :g:`A <g1:A>` according to the units in :g:`M <g1:M>`,
 
 .. step:: assert ∵ numbers_multiplying_make <G.270>
 
-   Therefore :g:`M <g1:M>` also measures :g:`A <g1:A>` according to the units in :g:`H <g1:H>`.
+   :g:`M <g1:M>` also measures :g:`A <g1:A>` according to the units in :g:`H <g1:H>`
 
 .. step:: assert
 
-   For the same reason :g:`M <g1:M>` also measures the numbers :g:`B <g1:B>`, :g:`C <g1:C>` according to the units in the numbers :g:`K <g1:K>`, :g:`L <g1:L>` respectively ;
+   For the same reason :g:`M <g1:M>` also measures the numbers :g:`B <g1:B>`, :g:`C <g1:C>` according to the units in the numbers :g:`K <g1:K>`, :g:`L <g1:L>`
 
 .. step:: assert
 
-   Therefore :g:`M <g1:M>` measures :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`.
+   :g:`M <g1:M>` measures :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`
 
 .. step:: assert
 
-   Since :g:`H <g1:H>` measures :g:`A <g1:A>` according to the units in :g:`M <g1:M>`,
+   :g:`H <g1:H>` measures :g:`A <g1:A>` according to the units in :g:`M <g1:M>`,
 
 .. step:: assert ∵ number_said_multiply_def <G.269>
 
-   Therefore :g:`H <g1:H>` by :term:`multiplying <G.269>` :g:`M <g1:M>` has made :g:`A <g1:A>`.
+   :g:`H <g1:H>` by multiplying :g:`M <g1:M>` has made :g:`A <g1:A>`
 
 .. step:: assert
 
@@ -112,23 +112,23 @@ G.289 many numbers please
 
 .. step:: assert
 
-   :g:`E <g1:E>` by multiplying :g:`D <g1:D>` has made :g:`A <g1:A>`.
+   :g:`E <g1:E>` by multiplying :g:`D <g1:D>` has made :g:`A <g1:A>`
 
 .. step:: assert
 
-   Therefore the product of :g:`E <g1:E>`, :g:`D <g1:D>` is equal to the product of :g:`H <g1:H>`, :g:`M <g1:M>`.
+   the product of :g:`E <g1:E>`, :g:`D <g1:D>` is equal to the product of :g:`H <g1:H>`, :g:`M <g1:M>`
 
 .. step:: assert ∵ numbers_proportional_number <G.273>
 
-   Therefore, as :g:`E <g1:E>` is to :g:`H <g1:H>`, so is :g:`M <g1:M>` to :g:`D <g1:D>`.
+   as :g:`E <g1:E>` is to :g:`H <g1:H>`, so is :g:`M <g1:M>` to :g:`D <g1:D>`
 
 .. step:: assert
 
-   :g:`E <g1:E>` is greater than :g:`H <g1:H>` ;
+   :g:`E <g1:E>` > :g:`H <g1:H>`
 
 .. step:: assert
 
-   Therefore :g:`M <g1:M>` is also greater than :g:`D <g1:D>`.
+   :g:`M <g1:M>` is also greater than :g:`D <g1:D>`
 
 .. step:: assert
 
@@ -136,15 +136,15 @@ G.289 many numbers please
 
 .. step:: assert
 
-   Which is impossible, for by hypothesis :g:`D <g1:D>` is the greatest common measure of :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`.
+   ⇒⇐, for by hypothesis :g:`D <g1:D>` is the greatest common measure of :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`
 
 .. step:: assert
 
-   Therefore there cannot be any numbers less than :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>` which are in the same ratio with :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`.
+   there cannot be any numbers less than :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>` which are in the same ratio with :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`
 
 .. step:: conclude
 
-   Therefore :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>` are the least of those which have the same ratio with :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`.
+   :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>` are the least of those which have the same ratio with :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`
 
 Dependency Graph
 ----------------
@@ -214,12 +214,19 @@ Dependency Graph
      "G.252" -> "G.169";
      "G.253" -> "G.169";
      "G.254" -> "G.169";
+     "G.255" -> "G.169";
      "G.256" -> "G.169";
      "G.268" -> "G.169";
+     "G.270" -> "G.169";
+     "G.271" -> "G.169";
      "G.274" -> "G.169";
+     "G.275" -> "G.169";
+     "G.289" -> "G.169";
      "G.171" -> "G.170";
      "G.176" -> "G.170";
+     "G.183" -> "G.170";
      "G.185" -> "G.170";
+     "G.186" -> "G.170";
      "G.257" -> "G.170";
      "G.186" -> "G.171";
      "G.289" -> "G.173";
@@ -232,11 +239,15 @@ Dependency Graph
      "G.275" -> "G.176";
      "G.289" -> "G.176";
      "G.183" -> "G.180";
+     "G.263" -> "G.180";
      "G.266" -> "G.180";
      "G.273" -> "G.180";
      "G.182" -> "G.181";
      "G.194" -> "G.181";
      "G.265" -> "G.181";
+     "G.268" -> "G.181";
+     "G.274" -> "G.181";
+     "G.275" -> "G.181";
      "G.183" -> "G.182";
      "G.273" -> "G.183";
      "G.186" -> "G.184";
@@ -247,11 +258,19 @@ Dependency Graph
      "G.262" -> "G.194";
      "G.266" -> "G.194";
      "G.268" -> "G.194";
+     "G.270" -> "G.194";
+     "G.271" -> "G.194";
      "G.248" -> "G.247";
      "G.249" -> "G.247";
      "G.250" -> "G.247";
+     "G.251" -> "G.247";
+     "G.255" -> "G.247";
      "G.268" -> "G.247";
      "G.269" -> "G.247";
+     "G.270" -> "G.247";
+     "G.271" -> "G.247";
+     "G.275" -> "G.247";
+     "G.289" -> "G.247";
      "G.250" -> "G.248";
      "G.251" -> "G.248";
      "G.252" -> "G.248";
@@ -276,21 +295,31 @@ Dependency Graph
      "G.250" -> "G.249";
      "G.251" -> "G.249";
      "G.252" -> "G.249";
+     "G.255" -> "G.249";
      "G.275" -> "G.249";
+     "G.289" -> "G.249";
      "G.251" -> "G.250";
      "G.252" -> "G.251";
      "G.255" -> "G.251";
      "G.289" -> "G.252";
+     "G.254" -> "G.253";
      "G.255" -> "G.253";
+     "G.256" -> "G.253";
      "G.257" -> "G.253";
+     "G.258" -> "G.253";
      "G.261" -> "G.253";
      "G.262" -> "G.253";
      "G.263" -> "G.253";
+     "G.265" -> "G.253";
+     "G.266" -> "G.253";
      "G.255" -> "G.254";
      "G.258" -> "G.254";
      "G.261" -> "G.254";
      "G.262" -> "G.254";
      "G.263" -> "G.254";
+     "G.265" -> "G.254";
+     "G.266" -> "G.254";
+     "G.274" -> "G.254";
      "G.274" -> "G.255";
      "G.257" -> "G.256";
      "G.263" -> "G.256";
@@ -316,6 +345,7 @@ Dependency Graph
      "G.270" -> "G.269";
      "G.271" -> "G.269";
      "G.272" -> "G.269";
+     "G.273" -> "G.269";
      "G.289" -> "G.269";
      "G.272" -> "G.270";
      "G.275" -> "G.270";

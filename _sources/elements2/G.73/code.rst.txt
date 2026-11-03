@@ -12,7 +12,7 @@ G.73 apply a parallelogram equal to a triangle on a segment — Code
 
 .. enunciation::
 
-   Apply to a given :term:`segment <G.4>`, in a given :term:`angle <G.22>`, a parallelogram equal in area to a given :term:`triangle <G.11>`.
+   Apply to a given :term:`segment <G.4>`, in a given :term:`angle <G.22>`, a parallelogram equal in area to a given :term:`triangle <G.12>`.
 
 .. picture:: g1.svg
 

@@ -10,7 +10,7 @@
 :categories: theorem, proof, number-theory
 :category: theorem, proof, number-theory
 :tags: book-vii, point, number, proportional, alternando, part-aliquot, parts-non-aliquot, proportion
-:dependencies: G.180, G.194, G.248, G.262, G.263
+:dependencies: G.180, G.194, G.248, G.253, G.254, G.262, G.263
 :excerpt: If four numbers be proportional, they is proportional alternately.
 
 .. _G.266:
@@ -44,15 +44,15 @@ G.266 numbers proportional proportional
 
 .. step:: assert ∵ numbers_proportional_multiple_def <G.263>
 
-   Therefore, whatever part or parts :g:`A <g1:A>` is of :g:`B <g1:B>`, the :term:`same part <G.253>` or the :term:`same parts <G.254>` is :g:`C <g1:C>` of :g:`D <g1:D>` also.
+   whatever part or parts :g:`A <g1:A>` is of :g:`B <g1:B>`, the :term:`same part <G.253>` or the :term:`same parts <G.254>` is :g:`C <g1:C>` of :g:`D <g1:D>` also
 
 .. step:: assert ∵ number_parts_number_vii_10 <G.262>
 
-   Therefore, alternately, whatever part or parts :g:`A <g1:A>` is of :g:`C <g1:C>`, the same part or the same parts is :g:`B <g1:B>` of :g:`D <g1:D>` also.
+   alternately, whatever part or parts :g:`A <g1:A>` is of :g:`C <g1:C>`, the same part or the same parts is :g:`B <g1:B>` of :g:`D <g1:D>` also
 
 .. step:: conclude ∵ numbers_proportional_multiple_def <G.263>
 
-   Therefore, as :g:`A <g1:A>` is to :g:`C <g1:C>`, so is :g:`B <g1:B>` to :g:`D <g1:D>`.
+   as :g:`A <g1:A>` is to :g:`C <g1:C>`, so is :g:`B <g1:B>` to :g:`D <g1:D>`
 
 Dependency Graph
 ----------------
@@ -88,6 +88,7 @@ Dependency Graph
      "G.176" -> "G.170";
      "G.257" -> "G.170";
      "G.180" -> "G.176";
+     "G.263" -> "G.180";
      "G.266" -> "G.180";
      "G.194" -> "G.181";
      "G.261" -> "G.194";
@@ -101,14 +102,19 @@ Dependency Graph
      "G.261" -> "G.248";
      "G.262" -> "G.248";
      "G.266" -> "G.248";
+     "G.254" -> "G.253";
+     "G.256" -> "G.253";
      "G.257" -> "G.253";
+     "G.258" -> "G.253";
      "G.261" -> "G.253";
      "G.262" -> "G.253";
      "G.263" -> "G.253";
+     "G.266" -> "G.253";
      "G.258" -> "G.254";
      "G.261" -> "G.254";
      "G.262" -> "G.254";
      "G.263" -> "G.254";
+     "G.266" -> "G.254";
      "G.257" -> "G.256";
      "G.263" -> "G.256";
      "G.258" -> "G.257";

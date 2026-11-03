@@ -10,7 +10,7 @@
 :categories: theorem, proof, number-theory
 :category: theorem, proof, number-theory
 :tags: book-vii, point, segment, number, prime-to-one-another, part-aliquot, prime, reductio-ad-absurdum
-:dependencies: G.248, G.249
+:dependencies: G.169, G.248, G.249
 :excerpt: If two numbers be prime to one another, the sum is prime to each of them; and, if the sum of two numbers be prime to any one of them, the original numbers is prime to one another.
 
 .. _G.282:
@@ -39,31 +39,31 @@ G.282 numbers prime sum
 
 .. step:: assert
 
-   If :g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />` are not prime to one another, some number will :term:`measure <G.169>` :g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />`.
+   If :g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />` are not prime to one another, some number will :term:`measure <G.169>` :g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />`
 
 .. step:: assert
 
-   Let a number measure them, and let it be :g:`D <g1:D>`.
+   Let a number measure them, and let it be :g:`D <g1:D>`
 
 .. step:: assert
 
-   Since then :g:`D <g1:D>` measures :g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />`,
+   then :g:`D <g1:D>` measures :g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />`,
 
 .. step:: assert
 
-   Therefore it will also measure the remainder :g:`/ B C / <g1:/ B C />`.
+   it will also measure :g:`/ B C / <g1:/ B C />`
 
 .. step:: assert
 
-   It also measures :g:`/ A B / <g1:/ A B />` ;
+   It also measures :g:`/ A B / <g1:/ A B />`
 
 .. step:: assert ∵ numbers_prime_measured_def <G.249>
 
-   Therefore :g:`D <g1:D>` measures :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` which are prime to one another : which is impossible.
+   :g:`D <g1:D>` measures :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` which are prime to one another ⇒⇐
 
 .. step:: assert
 
-   Therefore no number will measure the numbers :g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />` ; therefore :g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />` are prime to one another.
+   no number will measure the numbers :g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />` ; therefore :g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />` are prime to one another
 
 .. step:: assert
 
@@ -71,11 +71,11 @@ G.282 numbers prime sum
 
 .. step:: assert
 
-   :g:`/ A C / <g1:/ A C />`, :g:`/ B C / <g1:/ B C />` are also prime to one another.
+   :g:`/ A C / <g1:/ A C />`, :g:`/ B C / <g1:/ B C />` are also prime to one another
 
 .. step:: assert
 
-   Therefore :g:`/ A C / <g1:/ A C />` is prime to each of the numbers :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`.
+   :g:`/ A C / <g1:/ A C />` is prime to each of the numbers :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`
 
 .. step:: assert
 
@@ -83,35 +83,35 @@ G.282 numbers prime sum
 
 .. step:: assert
 
-   If :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are not prime to one another, some number will measure :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`.
+   If :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are not prime to one another, some number will measure :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`
 
 .. step:: assert
 
-   Let a number measure them, and let it be :g:`D <g1:D>`.
+   Let a number measure them, and let it be :g:`D <g1:D>`
 
 .. step:: assert
 
-   Since :g:`D <g1:D>` measures each of the numbers :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`,
+   :g:`D <g1:D>` measures each of the numbers :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`,
 
 .. step:: assert
 
-   It will also measure the whole :g:`/ A C / <g1:/ A C />`.
+   It will also measure :g:`/ A C / <g1:/ A C />`
 
 .. step:: assert
 
-   It also measures :g:`/ A B / <g1:/ A B />` ;
+   It also measures :g:`/ A B / <g1:/ A B />`
 
 .. step:: assert ∵ numbers_prime_measured_def <G.249>
 
-   Therefore :g:`D <g1:D>` measures :g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />` which are prime to one another : which is impossible.
+   :g:`D <g1:D>` measures :g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />` which are prime to one another ⇒⇐
 
 .. step:: assert
 
-   Therefore no number will measure the numbers :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`.
+   no number will measure the numbers :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`
 
 .. step:: conclude
 
-   Therefore :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are prime to one another.
+   :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are prime to one another
 
 Dependency Graph
 ----------------
@@ -129,6 +129,7 @@ Dependency Graph
      "G.249" [label="G.249", tooltip="G.249 (VII.def.12): Numbers prime to one another are those which aremeasured by anunit alone as a common measure.", fillcolor="#224422", URL="../G.249/index.html", target="_top"];
      "G.282" [label="G.282", tooltip="G.282 (VII.28): If two numbers be prime to one another, the sum is prime to each of them; and, if the sum of two numbers be prime to any one of them, the original numbers is prime to one another.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.249" -> "G.169";
+     "G.282" -> "G.169";
      "G.248" -> "G.247";
      "G.249" -> "G.247";
      "G.282" -> "G.248";

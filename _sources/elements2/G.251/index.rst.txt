@@ -10,7 +10,7 @@
 :categories: problem, finding, number-theory
 :category: problem, finding, number-theory
 :tags: book-vii, point, segment, number, prime-to-one-another, part-aliquot, unit, prime, reductio-ad-absurdum, porism
-:dependencies: G.169, G.248, G.249, G.250
+:dependencies: G.169, G.247, G.248, G.249, G.250
 :excerpt: Given two numbers not prime to one another, to find their greatest common measure.
 
 .. _G.251:
@@ -40,7 +40,7 @@ G.251 numbers prime find
 
 .. step:: assert
 
-   If now :g:`/ C D / <g1:/ C D />` measures :g:`/ A B / <g1:/ A B />`—and it also measures itself—:g:`/ C D / <g1:/ C D />` is a common measure of :g:`/ C D / <g1:/ C D />`, :g:`/ A B / <g1:/ A B />`.
+   If now :g:`/ C D / <g1:/ C D />` measures :g:`/ A B / <g1:/ A B />`—and it also measures itself—:g:`/ C D / <g1:/ C D />` is a common measure of :g:`/ C D / <g1:/ C D />`, :g:`/ A B / <g1:/ A B />`
 
 .. step:: assert
 
@@ -48,119 +48,119 @@ G.251 numbers prime find
 
 .. step:: assert
 
-   For no greater number than :g:`/ C D / <g1:/ C D />` will measure :g:`/ C D / <g1:/ C D />`.
+   For no greater number than :g:`/ C D / <g1:/ C D />` will measure :g:`/ C D / <g1:/ C D />`
 
 .. step:: assert
 
-   But, if :g:`/ C D / <g1:/ C D />` does not measure :g:`/ A B / <g1:/ A B />`, then, the less of the numbers :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` being continually subtracted from the greater, some number will be left which will measure the one before it.
+   But, if :g:`/ C D / <g1:/ C D />` does not measure :g:`/ A B / <g1:/ A B />`, then, the less of the numbers :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` being continually subtracted from the greater, some number will be left which will measure the one before it
 
 .. step:: assert ∵ unequal_numbers_set <G.250>
 
-   For an :term:`unit <G.247>` will not be left; otherwise :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` will be prime to one another, which is contrary to the hypothesis.
+   For an :term:`unit <G.247>` will not be left; otherwise :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` will be prime to one another, which is contrary to the hypothesis
 
 .. step:: assert
 
-   Therefore some number will be left which will measure the one before it.
+   some number will be left which will measure the one before it
 
 .. step:: assert
 
-   Now let :g:`/ C D / <g1:/ C D />`, measuring :g:`/ E B / <g1:/ E B />`, leave :g:`/ A E / <g1:/ A E />` less than itself, let :g:`/ A E / <g1:/ A E />`, measuring :g:`/ F D / <g1:/ F D />`, leave :g:`/ C F / <g1:/ C F />` less than itself, and let :g:`/ C F / <g1:/ C F />` measure :g:`/ A E / <g1:/ A E />`.
+   Now let :g:`/ C D / <g1:/ C D />`, measuring :g:`/ E B / <g1:/ E B />`, leave :g:`/ A E / <g1:/ A E />` less than itself, let :g:`/ A E / <g1:/ A E />`, measuring :g:`/ F D / <g1:/ F D />`, leave :g:`/ C F / <g1:/ C F />` less than itself, and let :g:`/ C F / <g1:/ C F />` measure :g:`/ A E / <g1:/ A E />`
 
 .. step:: assert
 
-   Since then, :g:`/ C F / <g1:/ C F />` measures :g:`/ A E / <g1:/ A E />`, and :g:`/ A E / <g1:/ A E />` measures :g:`/ F D / <g1:/ F D />`,
+   then, :g:`/ C F / <g1:/ C F />` measures :g:`/ A E / <g1:/ A E />`, and :g:`/ A E / <g1:/ A E />` measures :g:`/ F D / <g1:/ F D />`,
 
 .. step:: assert
 
-   Therefore :g:`/ C F / <g1:/ C F />` will also measure :g:`/ F D / <g1:/ F D />`.
+   :g:`/ C F / <g1:/ C F />` will also measure :g:`/ F D / <g1:/ F D />`
 
 .. step:: assert
 
-   It also measures itself;
+   It also measures itself
 
 .. step:: assert
 
-   Therefore it will also measure the whole :g:`/ C D / <g1:/ C D />`.
+   it will also measure :g:`/ C D / <g1:/ C D />`
 
 .. step:: assert
 
-   :g:`/ C D / <g1:/ C D />` measures :g:`/ E B / <g1:/ E B />`;
+   :g:`/ C D / <g1:/ C D />` measures :g:`/ E B / <g1:/ E B />`
 
 .. step:: assert
 
-   Therefore :g:`/ C F / <g1:/ C F />` also measures :g:`/ E B / <g1:/ E B />`.
+   :g:`/ C F / <g1:/ C F />` also measures :g:`/ E B / <g1:/ E B />`
 
 .. step:: assert
 
-   It also measures :g:`/ A E / <g1:/ A E />`;
+   It also measures :g:`/ A E / <g1:/ A E />`
 
 .. step:: assert
 
-   Therefore it will also measure the whole :g:`/ A B / <g1:/ A B />`.
+   it will also measure :g:`/ A B / <g1:/ A B />`
 
 .. step:: assert
 
-   It also measures :g:`/ C D / <g1:/ C D />`;
+   It also measures :g:`/ C D / <g1:/ C D />`
 
 .. step:: assert
 
-   Therefore :g:`/ C F / <g1:/ C F />` measures :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`.
+   :g:`/ C F / <g1:/ C F />` measures :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`
 
 .. step:: assert
 
-   Therefore :g:`/ C F / <g1:/ C F />` is a common measure of :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`.
+   :g:`/ C F / <g1:/ C F />` is a common measure of :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`
 
 .. step:: assert
 
-   I say next that it is also the greatest.
+   I say next that it is also the greatest
 
 .. step:: assert
 
-   If :g:`/ C F / <g1:/ C F />` is not the greatest common measure of :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`, some number which is greater than :g:`/ C F / <g1:/ C F />` will measure the numbers :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`.
+   If :g:`/ C F / <g1:/ C F />` is not the greatest common measure of :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`, some number which > :g:`/ C F / <g1:/ C F />` will measure the numbers :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`
 
 .. step:: assert
 
-   Let such a number measure them, and let it be :g:`G <g1:G>`.
+   Let such a number measure them, and let it be :g:`G <g1:G>`
 
 .. step:: assert
 
-   Since :g:`G <g1:G>` measures :g:`/ C D / <g1:/ C D />`, while :g:`/ C D / <g1:/ C D />` measures :g:`/ E B / <g1:/ E B />`,
+   :g:`G <g1:G>` measures :g:`/ C D / <g1:/ C D />`, while :g:`/ C D / <g1:/ C D />` measures :g:`/ E B / <g1:/ E B />`,
 
 .. step:: assert
 
-   :g:`G <g1:G>` also measures :g:`/ E B / <g1:/ E B />`.
+   :g:`G <g1:G>` also measures :g:`/ E B / <g1:/ E B />`
 
 .. step:: assert
 
-   It also measures the whole :g:`/ A B / <g1:/ A B />`;
+   It also measures :g:`/ A B / <g1:/ A B />`
 
 .. step:: assert
 
-   Therefore it will also measure the remainder :g:`/ A E / <g1:/ A E />`.
+   it will also measure :g:`/ A E / <g1:/ A E />`
 
 .. step:: assert
 
-   :g:`/ A E / <g1:/ A E />` measures :g:`/ F D / <g1:/ F D />`;
+   :g:`/ A E / <g1:/ A E />` measures :g:`/ F D / <g1:/ F D />`
 
 .. step:: assert
 
-   Therefore :g:`G <g1:G>` will also measure :g:`/ F D / <g1:/ F D />`.
+   :g:`G <g1:G>` will also measure :g:`/ F D / <g1:/ F D />`
 
 .. step:: assert
 
-   It also measures the whole :g:`/ C D / <g1:/ C D />`;
+   It also measures :g:`/ C D / <g1:/ C D />`
 
 .. step:: assert
 
-   Therefore it will also measure the remainder :g:`/ C F / <g1:/ C F />`, that is, the greater will measure the less: which is impossible.
+   it will also measure :g:`/ C F / <g1:/ C F />`, that is, the greater will measure the less ⇒⇐
 
 .. step:: assert
 
-   Therefore no number which is greater than :g:`/ C F / <g1:/ C F />` will measure the numbers :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`; therefore :g:`/ C F / <g1:/ C F />` is the greatest common measure of :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`.
+   no number which > :g:`/ C F / <g1:/ C F />` will measure the numbers :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`; therefore :g:`/ C F / <g1:/ C F />` is the greatest common measure of :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`
 
 .. step:: conclude
 
-   PORISM. From this it is manifest that, if a number measure two numbers, it will also measure their greatest common measure.
+   PORISM. From this it is manifest that, if a number measure two numbers, it will also measure their greatest common measure
 
 Dependency Graph
 ----------------
@@ -184,6 +184,7 @@ Dependency Graph
      "G.248" -> "G.247";
      "G.249" -> "G.247";
      "G.250" -> "G.247";
+     "G.251" -> "G.247";
      "G.250" -> "G.248";
      "G.251" -> "G.248";
      "G.250" -> "G.249";

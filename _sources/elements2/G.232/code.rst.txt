@@ -12,7 +12,7 @@ G.232 similar polygons divided — Code
 
 .. enunciation::
 
-   :term:`Similar polygons <G.217>` are divided into similar triangles, and into :term:`triangles <G.11>` equal in multitude and :term:`in the same ratio <G.176>` as the wholes, and the polygon has to the polygon a :term:`ratio <G.173>` duplicate of that which the corresponding side has to the corresponding side.
+   :term:`Similar polygons <G.217>` are divided into similar triangles, and into :term:`triangles <G.12>` equal in multitude and :term:`in the same ratio <G.176>` as the wholes, and the polygon has to the polygon a :term:`ratio <G.173>` duplicate of that which the corresponding side has to the corresponding side.
 
 .. picture:: g1.svg
 

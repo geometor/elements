@@ -12,7 +12,7 @@ G.149 inscribe triangle in circle — Code
 
 .. enunciation::
 
-   :term:`Inscribe in a given circle <G.148>` a :term:`triangle <G.11>` equiangular with a given triangle.
+   :term:`Inscribe in a given circle <G.148>` a :term:`triangle <G.12>` equiangular with a given triangle.
 
 .. picture:: g1.svg
 

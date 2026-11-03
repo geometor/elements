@@ -47,59 +47,59 @@ G.292 numbers find least
 
 .. step:: assert
 
-   Then :g:`C <g1:C>` either measures, or does not measure, :g:`D <g1:D>`.
+   Then :g:`C <g1:C>` either measures, or does not measure, :g:`D <g1:D>`
 
 .. step:: assert
 
-   First, let it measure it.
+   First, let it measure it
 
 .. step:: assert
 
-   :g:`A <g1:A>`, :g:`B <g1:B>` also measure :g:`D <g1:D>`;
+   :g:`A <g1:A>`, :g:`B <g1:B>` also measure :g:`D <g1:D>`
 
 .. step:: assert
 
-   Therefore :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` measure :g:`D <g1:D>`.
+   :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` measure :g:`D <g1:D>`
 
 .. step:: assert
 
-   I say next that it is also the least that they measure.
+   I say next that it is also the least that they measure
 
 .. step:: assert
 
-   If not, :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` will measure some number which is less than :g:`D <g1:D>`.
+   If not, :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` will measure some number which < :g:`D <g1:D>`
 
 .. step:: assert
 
-   Let them measure :g:`E <g1:E>`.
+   Let them measure :g:`E <g1:E>`
 
 .. step:: assert
 
-   Since :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` measure :g:`E <g1:E>`,
+   :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` measure :g:`E <g1:E>`,
 
 .. step:: assert
 
-   Therefore also :g:`A <g1:A>`, :g:`B <g1:B>` measure :g:`E <g1:E>`.
+   also :g:`A <g1:A>`, :g:`B <g1:B>` measure :g:`E <g1:E>`
 
 .. step:: assert ∵ numbers_measure_number <G.291>
 
-   Therefore the least number measured by :g:`A <g1:A>`, :g:`B <g1:B>` will also measure :g:`E <g1:E>`.
+   the least number measured by :g:`A <g1:A>`, :g:`B <g1:B>` will also measure :g:`E <g1:E>`
 
 .. step:: assert
 
-   :g:`D <g1:D>` is the least number measured by :g:`A <g1:A>`, :g:`B <g1:B>`;
+   :g:`D <g1:D>` is the least number measured by :g:`A <g1:A>`, :g:`B <g1:B>`
 
 .. step:: assert
 
-   Therefore :g:`D <g1:D>` will measure :g:`E <g1:E>`, the greater the less: which is impossible.
+   :g:`D <g1:D>` will measure :g:`E <g1:E>`, the greater the less ⇒⇐
 
 .. step:: assert
 
-   Therefore :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` will not measure any number which is less than :g:`D <g1:D>`;
+   :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` will not measure any number which < :g:`D <g1:D>`
 
 .. step:: assert
 
-   Therefore :g:`D <g1:D>` is the least that :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` measure.
+   :g:`D <g1:D>` is the least that :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` measure
 
 .. step:: construct
 
@@ -107,75 +107,75 @@ G.292 numbers find least
 
 .. step:: assert
 
-   Since :g:`A <g2:A>`, :g:`B <g2:B>` measure :g:`D <g2:D>`, and :g:`D <g2:D>` measures :g:`E <g2:E>`,
+   :g:`A <g2:A>`, :g:`B <g2:B>` measure :g:`D <g2:D>`, and :g:`D <g2:D>` measures :g:`E <g2:E>`,
 
 .. step:: assert
 
-   Therefore also :g:`A <g2:A>`, :g:`B <g2:B>` measure :g:`E <g2:E>`.
+   also :g:`A <g2:A>`, :g:`B <g2:B>` measure :g:`E <g2:E>`
 
 .. step:: assert
 
-   :g:`C <g2:C>` also measures :g:`E <g2:E>`;
+   :g:`C <g2:C>` also measures :g:`E <g2:E>`
 
 .. step:: assert
 
-   Therefore also :g:`A <g2:A>`, :g:`B <g2:B>`, :g:`C <g2:C>` measure :g:`E <g2:E>`.
+   also :g:`A <g2:A>`, :g:`B <g2:B>`, :g:`C <g2:C>` measure :g:`E <g2:E>`
 
 .. step:: assert
 
-   I say next that it is also the least that they measure.
+   I say next that it is also the least that they measure
 
 .. step:: assert
 
-   If not, :g:`A <g2:A>`, :g:`B <g2:B>`, :g:`C <g2:C>` will measure some number which is less than :g:`E <g2:E>`.
+   If not, :g:`A <g2:A>`, :g:`B <g2:B>`, :g:`C <g2:C>` will measure some number which < :g:`E <g2:E>`
 
 .. step:: assert
 
-   Let them measure :g:`F <g2:F>`.
+   Let them measure :g:`F <g2:F>`
 
 .. step:: assert
 
-   Since :g:`A <g2:A>`, :g:`B <g2:B>`, :g:`C <g2:C>` measure :g:`F <g2:F>`,
+   :g:`A <g2:A>`, :g:`B <g2:B>`, :g:`C <g2:C>` measure :g:`F <g2:F>`,
 
 .. step:: assert
 
-   Therefore also :g:`A <g2:A>`, :g:`B <g2:B>` measure :g:`F <g2:F>`;
+   also :g:`A <g2:A>`, :g:`B <g2:B>` measure :g:`F <g2:F>`
 
 .. step:: assert ∵ numbers_measure_number <G.291>
 
-   Therefore the least number measured by :g:`A <g2:A>`, :g:`B <g2:B>` will also measure :g:`F <g2:F>`.
+   the least number measured by :g:`A <g2:A>`, :g:`B <g2:B>` will also measure :g:`F <g2:F>`
 
 .. step:: assert
 
-   :g:`D <g2:D>` is the least number measured by :g:`A <g2:A>`, :g:`B <g2:B>`;
+   :g:`D <g2:D>` is the least number measured by :g:`A <g2:A>`, :g:`B <g2:B>`
 
 .. step:: assert
 
-   Therefore :g:`D <g2:D>` measures :g:`F <g2:F>`.
+   :g:`D <g2:D>` measures :g:`F <g2:F>`
 
 .. step:: assert
 
-   :g:`C <g2:C>` also measures :g:`F <g2:F>`;
+   :g:`C <g2:C>` also measures :g:`F <g2:F>`
 
 .. step:: assert
 
-   Therefore :g:`D <g2:D>`, :g:`C <g2:C>` measure :g:`F <g2:F>`, so that the least number measured by :g:`D <g2:D>`, :g:`C <g2:C>` will also measure :g:`F <g2:F>`.
+   :g:`D <g2:D>`, :g:`C <g2:C>` measure :g:`F <g2:F>`, so that the least number measured by :g:`D <g2:D>`, :g:`C <g2:C>` will also measure :g:`F <g2:F>`
 
 .. step:: assert
 
-   :g:`E <g2:E>` is the least number measured by :g:`C <g2:C>`, :g:`D <g2:D>`;
+   :g:`E <g2:E>` is the least number measured by :g:`C <g2:C>`, :g:`D <g2:D>`
 
 .. step:: assert
 
-   Therefore :g:`E <g2:E>` measures :g:`F <g2:F>`, the greater the less: which is impossible.
+   :g:`E <g2:E>` measures :g:`F <g2:F>`, the greater the less ⇒⇐
 
 .. step:: assert
 
-   Therefore :g:`A <g2:A>`, :g:`B <g2:B>`, :g:`C <g2:C>` will not measure any number which is less than :g:`E <g2:E>`.
+   :g:`A <g2:A>`, :g:`B <g2:B>`, :g:`C <g2:C>` will not measure any number which < :g:`E <g2:E>`
 
 .. step:: conclude
 
-   Therefore :g:`E <g2:E>` is the least that is measured by :g:`A <g2:A>`, :g:`B <g2:B>`, :g:`C <g2:C>`.
+   :g:`E <g2:E>` is the least that is measured by :g:`A <g2:A>`, :g:`B <g2:B>`, :g:`C <g2:C>`
 
 Dependency Graph
 ----------------
@@ -249,16 +249,23 @@ Dependency Graph
      "G.252" -> "G.169";
      "G.253" -> "G.169";
      "G.254" -> "G.169";
+     "G.255" -> "G.169";
      "G.256" -> "G.169";
      "G.268" -> "G.169";
+     "G.270" -> "G.169";
+     "G.271" -> "G.169";
      "G.274" -> "G.169";
+     "G.275" -> "G.169";
      "G.283" -> "G.169";
+     "G.289" -> "G.169";
      "G.290" -> "G.169";
      "G.291" -> "G.169";
      "G.292" -> "G.169";
      "G.171" -> "G.170";
      "G.176" -> "G.170";
+     "G.183" -> "G.170";
      "G.185" -> "G.170";
+     "G.186" -> "G.170";
      "G.257" -> "G.170";
      "G.186" -> "G.171";
      "G.289" -> "G.173";
@@ -271,11 +278,15 @@ Dependency Graph
      "G.275" -> "G.176";
      "G.289" -> "G.176";
      "G.183" -> "G.180";
+     "G.263" -> "G.180";
      "G.266" -> "G.180";
      "G.273" -> "G.180";
      "G.182" -> "G.181";
      "G.194" -> "G.181";
      "G.265" -> "G.181";
+     "G.268" -> "G.181";
+     "G.274" -> "G.181";
+     "G.275" -> "G.181";
      "G.183" -> "G.182";
      "G.273" -> "G.183";
      "G.186" -> "G.184";
@@ -286,12 +297,21 @@ Dependency Graph
      "G.262" -> "G.194";
      "G.266" -> "G.194";
      "G.268" -> "G.194";
+     "G.270" -> "G.194";
+     "G.271" -> "G.194";
      "G.248" -> "G.247";
      "G.249" -> "G.247";
      "G.250" -> "G.247";
+     "G.251" -> "G.247";
+     "G.255" -> "G.247";
      "G.268" -> "G.247";
      "G.269" -> "G.247";
+     "G.270" -> "G.247";
+     "G.271" -> "G.247";
+     "G.275" -> "G.247";
      "G.283" -> "G.247";
+     "G.289" -> "G.247";
+     "G.290" -> "G.247";
      "G.250" -> "G.248";
      "G.251" -> "G.248";
      "G.252" -> "G.248";
@@ -319,21 +339,33 @@ Dependency Graph
      "G.250" -> "G.249";
      "G.251" -> "G.249";
      "G.252" -> "G.249";
+     "G.255" -> "G.249";
      "G.275" -> "G.249";
+     "G.289" -> "G.249";
+     "G.290" -> "G.249";
      "G.251" -> "G.250";
      "G.252" -> "G.251";
      "G.255" -> "G.251";
      "G.289" -> "G.252";
+     "G.254" -> "G.253";
      "G.255" -> "G.253";
+     "G.256" -> "G.253";
      "G.257" -> "G.253";
+     "G.258" -> "G.253";
      "G.261" -> "G.253";
      "G.262" -> "G.253";
      "G.263" -> "G.253";
+     "G.265" -> "G.253";
+     "G.266" -> "G.253";
+     "G.283" -> "G.253";
      "G.255" -> "G.254";
      "G.258" -> "G.254";
      "G.261" -> "G.254";
      "G.262" -> "G.254";
      "G.263" -> "G.254";
+     "G.265" -> "G.254";
+     "G.266" -> "G.254";
+     "G.274" -> "G.254";
      "G.274" -> "G.255";
      "G.257" -> "G.256";
      "G.263" -> "G.256";
@@ -359,6 +391,7 @@ Dependency Graph
      "G.270" -> "G.269";
      "G.271" -> "G.269";
      "G.272" -> "G.269";
+     "G.273" -> "G.269";
      "G.289" -> "G.269";
      "G.290" -> "G.269";
      "G.272" -> "G.270";

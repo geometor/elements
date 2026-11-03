@@ -10,7 +10,7 @@
 :categories: theorem, proof, solid-geometry, method-of-exhaustion
 :category: theorem, proof, solid-geometry, method-of-exhaustion
 :tags: book-xii, point, segment, angle, triangle, quadrilateral, pyramid, equal-and-similar-solid-figures, prism, trilateral, parallel-straight-lines, plane-angle, straight-line, plane-surface, proportional, height, similar, equality
-:dependencies: G.24, G.56, G.62, G.211, G.217, G.512, G.535, G.537, G.550, G.553
+:dependencies: G.4, G.7, G.12, G.14, G.22, G.24, G.52, G.56, G.62, G.209, G.211, G.217, G.512, G.535, G.537, G.550, G.553
 :excerpt: Any pyramid which has a triangular base is divided into two pyramids equal and similar to one another, similar to the whole and having triangular bases, and into two equal prisms; and the two prisms are greater than the half of the whole pyramid.
 
 .. _G.554:
@@ -40,159 +40,159 @@ G.554 pyramid triangular base
 
 .. step:: assert
 
-   And the two prisms are greater than the half of the whole pyramid.
+   the two prisms are greater than the half of the whole pyramid
 
 .. step:: construct
 
-   :fn:`segment <G.13>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`) → :g:`/ A B / <g1:/ A B />`, :fn:`segment <G.13>`\ (:g:`B <g1:B>`, :g:`C <g1:C>`) → :g:`/ B C / <g1:/ B C />`, :fn:`segment <G.13>`\ (:g:`C <g1:C>`, :g:`A <g1:A>`) → :g:`/ C A / <g1:/ C A />`, :fn:`segment <G.13>`\ (:g:`A <g1:A>`, :g:`D <g1:D>`) → :g:`/ A D / <g1:/ A D />`, :fn:`segment <G.13>`\ (:g:`D <g1:D>`, :g:`B <g1:B>`) → :g:`/ D B / <g1:/ D B />`, :fn:`segment <G.13>`\ (:g:`D <g1:D>`, :g:`C <g1:C>`) → :g:`/ D C / <g1:/ D C />`, :fn:`segment <G.13>`\ () → :g:`E <g1:E>`, :fn:`segment <G.13>`\ () → :g:`F <g1:F>`, :fn:`segment <G.13>`\ () → :g:`G <g1:G>`, :fn:`segment <G.13>`\ () → :g:`H <g1:H>`, :fn:`segment <G.13>`\ () → :g:`K <g1:K>`, :fn:`segment <G.13>`\ () → :g:`L <g1:L>`, :fn:`segment <G.13>`\ (:g:`H <g1:H>`, :g:`E <g1:E>`) → :g:`/ H E / <g1:/ H E />`, :fn:`segment <G.13>`\ (:g:`E <g1:E>`, :g:`G <g1:G>`) → :g:`/ E G / <g1:/ E G />`, :fn:`segment <G.13>`\ (:g:`G <g1:G>`, :g:`H <g1:H>`) → :g:`/ G H / <g1:/ G H />`, :fn:`segment <G.13>`\ (:g:`H <g1:H>`, :g:`K <g1:K>`) → :g:`/ H K / <g1:/ H K />`, :fn:`segment <G.13>`\ (:g:`K <g1:K>`, :g:`L <g1:L>`) → :g:`/ K L / <g1:/ K L />`, :fn:`segment <G.13>`\ (:g:`L <g1:L>`, :g:`H <g1:H>`) → :g:`/ L H / <g1:/ L H />`, :fn:`segment <G.13>`\ (:g:`K <g1:K>`, :g:`F <g1:F>`) → :g:`/ K F / <g1:/ K F />`, :fn:`segment <G.13>`\ (:g:`F <g1:F>`, :g:`G <g1:G>`) → :g:`/ F G / <g1:/ F G />`
+   :fn:`segment <G.14>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`) → :g:`/ A B / <g1:/ A B />`, :fn:`segment <G.14>`\ (:g:`B <g1:B>`, :g:`C <g1:C>`) → :g:`/ B C / <g1:/ B C />`, :fn:`segment <G.14>`\ (:g:`C <g1:C>`, :g:`A <g1:A>`) → :g:`/ C A / <g1:/ C A />`, :fn:`segment <G.14>`\ (:g:`A <g1:A>`, :g:`D <g1:D>`) → :g:`/ A D / <g1:/ A D />`, :fn:`segment <G.14>`\ (:g:`D <g1:D>`, :g:`B <g1:B>`) → :g:`/ D B / <g1:/ D B />`, :fn:`segment <G.14>`\ (:g:`D <g1:D>`, :g:`C <g1:C>`) → :g:`/ D C / <g1:/ D C />`, :fn:`segment <G.14>`\ () → :g:`E <g1:E>`, :fn:`segment <G.14>`\ () → :g:`F <g1:F>`, :fn:`segment <G.14>`\ () → :g:`G <g1:G>`, :fn:`segment <G.14>`\ () → :g:`H <g1:H>`, :fn:`segment <G.14>`\ () → :g:`K <g1:K>`, :fn:`segment <G.14>`\ () → :g:`L <g1:L>`, :fn:`segment <G.14>`\ (:g:`H <g1:H>`, :g:`E <g1:E>`) → :g:`/ H E / <g1:/ H E />`, :fn:`segment <G.14>`\ (:g:`E <g1:E>`, :g:`G <g1:G>`) → :g:`/ E G / <g1:/ E G />`, :fn:`segment <G.14>`\ (:g:`G <g1:G>`, :g:`H <g1:H>`) → :g:`/ G H / <g1:/ G H />`, :fn:`segment <G.14>`\ (:g:`H <g1:H>`, :g:`K <g1:K>`) → :g:`/ H K / <g1:/ H K />`, :fn:`segment <G.14>`\ (:g:`K <g1:K>`, :g:`L <g1:L>`) → :g:`/ K L / <g1:/ K L />`, :fn:`segment <G.14>`\ (:g:`L <g1:L>`, :g:`H <g1:H>`) → :g:`/ L H / <g1:/ L H />`, :fn:`segment <G.14>`\ (:g:`K <g1:K>`, :g:`F <g1:F>`) → :g:`/ K F / <g1:/ K F />`, :fn:`segment <G.14>`\ (:g:`F <g1:F>`, :g:`G <g1:G>`) → :g:`/ F G / <g1:/ F G />`
 
 .. step:: assert
 
-   Since :g:`/ A E / <g1:/ A E />` is :eq:`equal <g1:/ A E / = g1:/ E B /; g1:/ A H / = g1:/ D H />` to :g:`/ E B / <g1:/ E B />`, and :g:`/ A H / <g1:/ A H />` to :g:`/ D H / <g1:/ D H />`,
+   :g:`/ A E / <g1:/ A E />` :eq:`= <g1:/ A E / = g1:/ E B /; g1:/ A H / = g1:/ D H />` :g:`/ E B / <g1:/ E B />`, and :g:`/ A H / <g1:/ A H />` to :g:`/ D H / <g1:/ D H />`,
 
 .. step:: assert ∵ segment_drawn_parallel <G.211>
 
-   Therefore :g:`/ E H / <g1:/ E H />` is :term:`parallel <G.52>` to :g:`/ D B / <g1:/ D B />`.
+   :g:`/ E H / <g1:/ E H />` is parallel to :g:`/ D B / <g1:/ D B />`
 
 .. step:: assert
 
-   For the same reason :g:`/ H K / <g1:/ H K />` is also parallel to :g:`/ A B / <g1:/ A B />`.
+   For the same reason :g:`/ H K / <g1:/ H K />` is also :term:`parallel <G.52>` to :g:`/ A B / <g1:/ A B />`
 
 .. step:: assert ∵ parallelogram_properties <G.62>
 
-   Therefore :g:`< H E B K > <g1:< H E B K >>` is a parallelogram; therefore :g:`/ H K / <g1:/ H K />` is :eq:`equal <g1:/ H K / = g1:/ E B />` to :g:`/ E B / <g1:/ E B />`.
+   :g:`< H E B K > <g1:< H E B K >>` is a parallelogram; therefore :g:`/ H K / <g1:/ H K />` :eq:`= <g1:/ H K / = g1:/ E B />` :g:`/ E B / <g1:/ E B />`
 
 .. step:: assert
 
-   :g:`/ E B / <g1:/ E B />` is :eq:`equal <g1:/ E B / = g1:/ E A />` to :g:`/ E A / <g1:/ E A />`;
+   :g:`/ E B / <g1:/ E B />` :eq:`= <g1:/ E B / = g1:/ E A />` :g:`/ E A / <g1:/ E A />`
 
 .. step:: assert
 
-   Therefore :g:`/ A E / <g1:/ A E />` is also :eq:`equal <g1:/ A E / = g1:/ H K />` to :g:`/ H K / <g1:/ H K />`.
+   :g:`/ A E / <g1:/ A E />` :eq:`= <g1:/ A E / = g1:/ H K />` :g:`/ H K / <g1:/ H K />`
 
 .. step:: assert
 
-   :g:`/ A H / <g1:/ A H />` is also :eq:`equal <g1:/ A H / = g1:/ H D />` to :g:`/ H D / <g1:/ H D />`;
+   :g:`/ A H / <g1:/ A H />` :eq:`= <g1:/ A H / = g1:/ H D />` :g:`/ H D / <g1:/ H D />`
 
 .. step:: assert ∵ sas_congruence <G.24>
 
-   Therefore the two sides :g:`/ E A / <g1:/ E A />`, :g:`/ A H / <g1:/ A H />` are :eq:`equal <g1:/ E A / = g1:/ K H /; g1:/ A H / = g1:/ H D />` to the two sides :g:`/ K H / <g1:/ K H />`, :g:`/ H D / <g1:/ H D />` respectively, and :g:`< E A H ) <g1:< E A H )>` is :eq:`equal <g1:< E A H ) = g1:< K H D )>` to :g:`< K H D ) <g1:< K H D )>`; therefore the base :g:`/ E H / <g1:/ E H />` is :eq:`equal <g1:/ E H / = g1:/ K D />` to the base :g:`/ K D / <g1:/ K D />`.
+   :g:`/ E A / <g1:/ E A />`, :g:`/ A H / <g1:/ A H />` :eq:`= <g1:/ E A / = g1:/ K H /; g1:/ A H / = g1:/ H D />` :g:`/ K H / <g1:/ K H />`, :g:`/ H D / <g1:/ H D />`, and :g:`< E A H ) <g1:< E A H )>` :eq:`= <g1:< E A H ) = g1:< K H D )>` :g:`< K H D ) <g1:< K H D )>`; therefore :g:`/ E H / <g1:/ E H />` :eq:`= <g1:/ E H / = g1:/ K D />` :g:`/ K D / <g1:/ K D />`
 
 .. step:: assert
 
-   Therefore :g:`< A E H > <g1:< A E H >>` is :eq:`equal <g1:< A E H > = g1:< H K D >>` and similar to :g:`< H K D > <g1:< H K D >>`.
+   :g:`< A E H > <g1:< A E H >>` is :eq:`equal <g1:< A E H > = g1:< H K D >>` and similar to :g:`< H K D > <g1:< H K D >>`
 
 .. step:: assert
 
-   For the same reason :g:`< A H G > <g1:< A H G >>` is also :eq:`equal <g1:< A H G > = g1:< H L D >>` and similar to :g:`< H L D > <g1:< H L D >>`.
+   For the same reason :g:`< A H G > <g1:< A H G >>` is also :eq:`equal <g1:< A H G > = g1:< H L D >>` and similar to :g:`< H L D > <g1:< H L D >>`
 
 .. step:: assert ∵ segments_meeting_parallel <G.512>
 
-   Since two :term:`segments <G.4>` :g:`/ E H / <g1:/ E H />`, :g:`/ H G / <g1:/ H G />` meeting one another are parallel to two segments :g:`/ K D / <g1:/ K D />`, :g:`/ D L / <g1:/ D L />` meeting one another, and are not in the same :term:`plane <G.7>`, they will contain equal :term:`angles <G.22>`.
+   two :term:`segments <G.4>` :g:`/ E H / <g1:/ E H />`, :g:`/ H G / <g1:/ H G />` meeting one another are parallel to two segments :g:`/ K D / <g1:/ K D />`, :g:`/ D L / <g1:/ D L />` meeting one another, and are not in the same :term:`plane <G.7>`, they will contain equal :term:`angles <G.22>`
 
 .. step:: assert
 
-   Therefore :g:`< E H G ) <g1:< E H G )>` is :eq:`equal <g1:< E H G ) = g1:< K D L )>` to :g:`< K D L ) <g1:< K D L )>`.
+   :g:`< E H G ) <g1:< E H G )>` :eq:`= <g1:< E H G ) = g1:< K D L )>` :g:`< K D L ) <g1:< K D L )>`
 
 .. step:: assert
 
-   And, since :g:`/ E H / <g1:/ E H />`, :g:`/ H G / <g1:/ H G />` are :eq:`equal <g1:/ E H / = g1:/ K D /; g1:/ H G / = g1:/ D L />` to the two :g:`/ K D / <g1:/ K D />`, :g:`/ D L / <g1:/ D L />` respectively, and :g:`< E H G ) <g1:< E H G )>` is :eq:`equal <g1:< E H G ) = g1:< K D L )>` to :g:`< K D L ) <g1:< K D L )>`,
+   since :g:`/ E H / <g1:/ E H />`, :g:`/ H G / <g1:/ H G />` :eq:`= <g1:/ E H / = g1:/ K D /; g1:/ H G / = g1:/ D L />` the two :g:`/ K D / <g1:/ K D />`, :g:`/ D L / <g1:/ D L />`, and :g:`< E H G ) <g1:< E H G )>` :eq:`= <g1:< E H G ) = g1:< K D L )>` :g:`< K D L ) <g1:< K D L )>`,
 
 .. step:: assert ∵ sas_congruence <G.24>
 
-   Therefore the base :g:`/ E G / <g1:/ E G />` is :eq:`equal <g1:/ E G / = g1:/ K L />` to the base :g:`/ K L / <g1:/ K L />`; therefore :g:`< E H G > <g1:< E H G >>` is :eq:`equal <g1:< E H G > = g1:< K D L >>` and similar to :g:`< K D L > <g1:< K D L >>`.
+   :g:`/ E G / <g1:/ E G />` :eq:`= <g1:/ E G / = g1:/ K L />` :g:`/ K L / <g1:/ K L />`; therefore :g:`< E H G > <g1:< E H G >>` is :eq:`equal <g1:< E H G > = g1:< K D L >>` and similar to :g:`< K D L > <g1:< K D L >>`
 
 .. step:: assert
 
-   For the same reason :g:`< A E G > <g1:< A E G >>` is also :eq:`equal <g1:< A E G > = g1:< H K L >>` and similar to :g:`< H K L > <g1:< H K L >>`.
+   For the same reason :g:`< A E G > <g1:< A E G >>` is also :eq:`equal <g1:< A E G > = g1:< H K L >>` and similar to :g:`< H K L > <g1:< H K L >>`
 
 .. step:: assert ∵ equal_similar_solid_def <G.535>
 
-   Therefore the pyramid of which :g:`< A E G > <g1:< A E G >>` is the base and :g:`H <g1:H>` the vertex is :eq:`equal <g1:< A E G H > = g1:< H K L D >>` and similar to the pyramid of which :g:`< H K L > <g1:< H K L >>` is the base and :g:`D <g1:D>` the vertex.
+   the pyramid of which :g:`< A E G > <g1:< A E G >>` is the base and :g:`H <g1:H>` the vertex is :eq:`equal <g1:< A E G H > = g1:< H K L D >>` and similar to the pyramid of which :g:`< H K L > <g1:< H K L >>` is the base and :g:`D <g1:D>` the vertex
 
 .. step:: assert
 
-   And, since :g:`/ H K / <g1:/ H K />` has been drawn parallel to :g:`/ A B / <g1:/ A B />`, one of the sides of :g:`< A D B > <g1:< A D B >>`,
+   since :g:`/ H K / <g1:/ H K />` has been drawn parallel to :g:`/ A B / <g1:/ A B />`, one of the sides of :g:`< A D B > <g1:< A D B >>`,
 
 .. step:: assert ∵ parallel_transversal_angles, similar_polygons_angles_def <G.56, G.217>
 
-   :g:`< A D B > <g1:< A D B >>` is equiangular to :g:`< D H K > <g1:< D H K >>`, and they have their sides proportional; therefore :g:`< A D B > <g1:< A D B >>` is similar to :g:`< D H K > <g1:< D H K >>`.
+   :g:`< A D B > <g1:< A D B >>` is equiangular to :g:`< D H K > <g1:< D H K >>`, and they have their sides proportional; therefore :g:`< A D B > <g1:< A D B >>` is similar to :g:`< D H K > <g1:< D H K >>`
 
 .. step:: assert
 
-   For the same reason :g:`< D B C > <g1:< D B C >>` is also similar to :g:`< D K L > <g1:< D K L >>`, and :g:`< A D C > <g1:< A D C >>` to :g:`< D L H > <g1:< D L H >>`.
+   For the same reason :g:`< D B C > <g1:< D B C >>` is also similar to :g:`< D K L > <g1:< D K L >>`, and :g:`< A D C > <g1:< A D C >>` to :g:`< D L H > <g1:< D L H >>`
 
 .. step:: assert ∵ segments_meeting_parallel <G.512>
 
-   Since :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />` meeting one another are parallel to :g:`/ K H / <g1:/ K H />`, :g:`/ H L / <g1:/ H L />` meeting one another, not in the same plane, they will contain equal angles.
+   :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />` meeting one another are parallel to :g:`/ K H / <g1:/ K H />`, :g:`/ H L / <g1:/ H L />` meeting one another, not in the same plane, they will contain equal angles
 
 .. step:: assert
 
-   Therefore :g:`< B A C ) <g1:< B A C )>` is :eq:`equal <g1:< B A C ) = g1:< K H L )>` to :g:`< K H L ) <g1:< K H L )>`.
+   :g:`< B A C ) <g1:< B A C )>` :eq:`= <g1:< B A C ) = g1:< K H L )>` :g:`< K H L ) <g1:< K H L )>`
 
 .. step:: assert
 
-   And, as :g:`/ B A / <g1:/ B A />` is to :g:`/ A C / <g1:/ A C />`, so is :g:`/ K H / <g1:/ K H />` to :g:`/ H L / <g1:/ H L />`;
+   as :g:`/ B A / <g1:/ B A />` is to :g:`/ A C / <g1:/ A C />`, so is :g:`/ K H / <g1:/ K H />` to :g:`/ H L / <g1:/ H L />`
 
 .. step:: assert
 
-   Therefore :g:`< A B C > <g1:< A B C >>` is similar to :g:`< H K L > <g1:< H K L >>`.
+   :g:`< A B C > <g1:< A B C >>` is similar to :g:`< H K L > <g1:< H K L >>`
 
 .. step:: assert
 
-   Therefore also the pyramid of which :g:`< A B C > <g1:< A B C >>` is the base and :g:`D <g1:D>` the vertex is similar to the pyramid of which :g:`< H K L > <g1:< H K L >>` is the base and :g:`D <g1:D>` the vertex.
+   also the pyramid of which :g:`< A B C > <g1:< A B C >>` is the base and :g:`D <g1:D>` the vertex is similar to the pyramid of which :g:`< H K L > <g1:< H K L >>` is the base and :g:`D <g1:D>` the vertex
 
 .. step:: assert
 
-   The pyramid of which :g:`< H K L > <g1:< H K L >>` is the base and :g:`D <g1:D>` the vertex was proved similar to the pyramid of which :g:`< A E G > <g1:< A E G >>` is the base and :g:`H <g1:H>` the vertex.
+   The pyramid of which :g:`< H K L > <g1:< H K L >>` is the base and :g:`D <g1:D>` the vertex was proved similar to the pyramid of which :g:`< A E G > <g1:< A E G >>` is the base and :g:`H <g1:H>` the vertex
 
 .. step:: assert
 
-   Therefore each of the pyramids :g:`< A E G H > <g1:< A E G H >>`, :g:`< H K L D > <g1:< H K L D >>` is similar to the whole pyramid :g:`< A B C D > <g1:< A B C D >>`.
+   each of the pyramids :g:`< A E G H > <g1:< A E G H >>`, :g:`< H K L D > <g1:< H K L D >>` is similar to the whole pyramid :g:`< A B C D > <g1:< A B C D >>`
 
 .. step:: assert
 
-   Next, since :g:`/ B F / <g1:/ B F />` is :eq:`equal <g1:/ B F / = g1:/ F C />` to :g:`/ F C / <g1:/ F C />`,
+   Next, since :g:`/ B F / <g1:/ B F />` :eq:`= <g1:/ B F / = g1:/ F C />` :g:`/ F C / <g1:/ F C />`,
 
 .. step:: assert
 
-   The parallelogram :g:`< E B F G > <g1:< E B F G >>` is double of :g:`< G F C > <g1:< G F C >>`.
+   The parallelogram :g:`< E B F G > <g1:< E B F G >>` is double of :g:`< G F C > <g1:< G F C >>`
 
 .. step:: assert ∵ there_prisms_equal <G.550>
 
-   Since, if there be two prisms of equal :term:`height <G.209>`, and one have a parallelogram as base, and the other a :term:`triangle <G.11>`, and if the parallelogram be double of the triangle, the prisms are equal.
+   Since, if there be two prisms of equal :term:`height <G.209>`, and one have a parallelogram as base, and the other a :term:`triangle <G.12>`, and if the parallelogram be double of the triangle, the prisms are equal
 
 .. step:: assert
 
-   Therefore the prism contained by the two triangles :g:`< B K F > <g1:< B K F >>`, :g:`< E H G > <g1:< E H G >>`, and the three parallelograms :g:`< E B F G > <g1:< E B F G >>`, :g:`< E B K H > <g1:< E B K H >>`, :g:`< H K F G > <g1:< H K F G >>` is :eq:`equal <g1:< H G E K F B > = g1:< G C F H L K >>` to the prism contained by the two triangles :g:`< G F C > <g1:< G F C >>`, :g:`< H K L > <g1:< H K L >>` and the three parallelograms :g:`< K F C L > <g1:< K F C L >>`, :g:`< L C G H > <g1:< L C G H >>`, :g:`< H K F G > <g1:< H K F G >>`.
+   the prism contained by the two triangles :g:`< B K F > <g1:< B K F >>`, :g:`< E H G > <g1:< E H G >>`, and the three parallelograms :g:`< E B F G > <g1:< E B F G >>`, :g:`< E B K H > <g1:< E B K H >>`, :g:`< H K F G > <g1:< H K F G >>` is :eq:`equal <g1:< H G E K F B > = g1:< G C F H L K >>` to the prism contained by the two triangles :g:`< G F C > <g1:< G F C >>`, :g:`< H K L > <g1:< H K L >>` and the three parallelograms :g:`< K F C L > <g1:< K F C L >>`, :g:`< L C G H > <g1:< L C G H >>`, :g:`< H K F G > <g1:< H K F G >>`
 
 .. step:: assert
 
-   It is manifest that each of the prisms, namely that in which the parallelogram :g:`< E B F G > <g1:< E B F G >>` is the base and :g:`/ H K / <g1:/ H K />` is its opposite, and that in which :g:`< G F C > <g1:< G F C >>` is the base and :g:`< H K L > <g1:< H K L >>` its opposite, is greater than each of the pyramids of which :g:`< A E G > <g1:< A E G >>`, :g:`< H K L > <g1:< H K L >>` are the bases and :g:`H <g1:H>`, :g:`D <g1:D>` the vertices,
+   It is manifest that each of the prisms, namely that in which the parallelogram :g:`< E B F G > <g1:< E B F G >>` is the base and :g:`/ H K / <g1:/ H K />` is its opposite, and that in which :g:`< G F C > <g1:< G F C >>` is the base and :g:`< H K L > <g1:< H K L >>` its opposite, > each of the pyramids of which :g:`< A E G > <g1:< A E G >>`, :g:`< H K L > <g1:< H K L >>` are the bases and :g:`H <g1:H>`, :g:`D <g1:D>` the vertices,
 
 .. step:: assert
 
-   Inasmuch as, if we join :g:`/ E F / <g1:/ E F />`, :g:`/ E K / <g1:/ E K />`, the prism in which the parallelogram :g:`< E B F G > <g1:< E B F G >>` is the base and :g:`/ H K / <g1:/ H K />` its opposite is greater than the pyramid of which :g:`< E B F > <g1:< E B F >>` is the base and :g:`K <g1:K>` the vertex.
+   Inasmuch as, if we join :g:`/ E F / <g1:/ E F />`, :g:`/ E K / <g1:/ E K />`, the prism in which the parallelogram :g:`< E B F G > <g1:< E B F G >>` is the base and :g:`/ H K / <g1:/ H K />` its opposite > the pyramid of which :g:`< E B F > <g1:< E B F >>` is the base and :g:`K <g1:K>` the vertex
 
 .. step:: assert
 
-   The pyramid of which :g:`< E B F > <g1:< E B F >>` is the base and :g:`K <g1:K>` the vertex is :eq:`equal <g1:< K E F B > = g1:< A E G H >>` to the pyramid of which :g:`< A E G > <g1:< A E G >>` is the base and :g:`H <g1:H>` the vertex; for they are contained by equal and similar planes.
+   The pyramid of which :g:`< E B F > <g1:< E B F >>` is the base and :g:`K <g1:K>` the vertex is :eq:`equal <g1:< K E F B > = g1:< A E G H >>` to the pyramid of which :g:`< A E G > <g1:< A E G >>` is the base and :g:`H <g1:H>` the vertex; for they are contained by equal and similar planes
 
 .. step:: assert
 
-   Hence also the prism in which the parallelogram :g:`< E B F G > <g1:< E B F G >>` is the base and :g:`/ H K / <g1:/ H K />` its opposite is greater than the pyramid of which :g:`< A E G > <g1:< A E G >>` is the base and :g:`H <g1:H>` the vertex.
+   also the prism in which the parallelogram :g:`< E B F G > <g1:< E B F G >>` is the base and :g:`/ H K / <g1:/ H K />` its opposite > the pyramid of which :g:`< A E G > <g1:< A E G >>` is the base and :g:`H <g1:H>` the vertex
 
 .. step:: assert
 
-   The prism in which the parallelogram :g:`< E B F G > <g1:< E B F G >>` is the base and :g:`/ H K / <g1:/ H K />` its opposite is :eq:`equal <g1:< H G E K F B > = g1:< G C F H L K >>` to the prism in which :g:`< G F C > <g1:< G F C >>` is the base and :g:`< H K L > <g1:< H K L >>` its opposite, and the pyramid of which :g:`< A E G > <g1:< A E G >>` is the base and :g:`H <g1:H>` the vertex is :eq:`equal <g1:< A E G H > = g1:< H K L D >>` to the pyramid of which :g:`< H K L > <g1:< H K L >>` is the base and :g:`D <g1:D>` the vertex.
+   The prism in which the parallelogram :g:`< E B F G > <g1:< E B F G >>` is the base and :g:`/ H K / <g1:/ H K />` its opposite is :eq:`equal <g1:< H G E K F B > = g1:< G C F H L K >>` to the prism in which :g:`< G F C > <g1:< G F C >>` is the base and :g:`< H K L > <g1:< H K L >>` its opposite, and the pyramid of which :g:`< A E G > <g1:< A E G >>` is the base and :g:`H <g1:H>` the vertex is :eq:`equal <g1:< A E G H > = g1:< H K L D >>` to the pyramid of which :g:`< H K L > <g1:< H K L >>` is the base and :g:`D <g1:D>` the vertex
 
 .. step:: assert
 
-   Therefore the said two prisms are greater than the said two pyramids of which :g:`< A E G > <g1:< A E G >>`, :g:`< H K L > <g1:< H K L >>` are the bases and :g:`H <g1:H>`, :g:`D <g1:D>` the vertices.
+   the said two prisms are greater than the said two pyramids of which :g:`< A E G > <g1:< A E G >>`, :g:`< H K L > <g1:< H K L >>` are the bases and :g:`H <g1:H>`, :g:`D <g1:D>` the vertices
 
 .. step:: conclude
 
-   Therefore the whole pyramid, of which :g:`< A B C > <g1:< A B C >>` is the base and :g:`D <g1:D>` the vertex, has been divided into two pyramids :eq:`equal <g1:< A E G H > = g1:< H K L D >>` to one another and into two :eq:`equal <g1:< H G E K F B > = g1:< G C F H L K >>` prisms, and the two prisms are greater than the half of the whole pyramid.
+   the whole pyramid, of which :g:`< A B C > <g1:< A B C >>` is the base and :g:`D <g1:D>` the vertex, has been divided into two pyramids :eq:`equal <g1:< A E G H > = g1:< H K L D >>` to one another and into two :eq:`equal <g1:< H G E K F B > = g1:< G C F H L K >>` prisms, and the two prisms are greater than the half of the whole pyramid
 
 Dependency Graph
 ----------------
@@ -214,10 +214,10 @@ Dependency Graph
      "G.8" [label="G.8", tooltip="G.8 (I.def.13): A boundary is the extremity of anything.", fillcolor="#224422", URL="../G.8/index.html", target="_top"];
      "G.9" [label="G.9", tooltip="G.9 (I.def.14): A figure is that which is contained by any boundary or boundaries.", fillcolor="#224422", URL="../G.9/index.html", target="_top"];
      "G.10" [label="G.10", tooltip="G.10 (I.def.15): A circle ( A B ) is a plane figure contained by one arc defined by a center A and a point B establishing its defining radius / A B /, such that all segments / A B /, / A C /, / A D...", fillcolor="#224422", URL="../G.10/index.html", target="_top"];
-     "G.11" [label="G.11", tooltip="G.11 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
-     "G.12" [label="G.12", tooltip="G.12 (I.def.20): Of trilateral figures, an equilateral triangle < A B C > has three equal sides, an isosceles triangle < D E F > has two equal sides, and a scalene triangle < G H K > has three uneq...", fillcolor="#224422", URL="../G.12/index.html", target="_top"];
-     "G.13" [label="G.13", tooltip="G.13 (I.post.1): Construct a segment / A B / between any two points A, B.", fillcolor="#444422", URL="../G.13/index.html", target="_top"];
-     "G.14" [label="G.14", tooltip="G.14 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.", fillcolor="#224422", URL="../G.14/index.html", target="_top"];
+     "G.11" [label="G.11", tooltip="G.11 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
+     "G.12" [label="G.12", tooltip="G.12 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.12/index.html", target="_top"];
+     "G.13" [label="G.13", tooltip="G.13 (I.def.20): Of trilateral figures, an equilateral triangle < A B C > has three equal sides, an isosceles triangle < D E F > has two equal sides, and a scalene triangle < G H K > has three uneq...", fillcolor="#224422", URL="../G.13/index.html", target="_top"];
+     "G.14" [label="G.14", tooltip="G.14 (I.post.1): Construct a segment / A B / between any two points A, B.", fillcolor="#444422", URL="../G.14/index.html", target="_top"];
      "G.15" [label="G.15", tooltip="G.15 (I.post.3): Construct a circle ( A B ) with center A and defining radius point B.", fillcolor="#444422", URL="../G.15/index.html", target="_top"];
      "G.16" [label="G.16", tooltip="G.16 (I.cn.1): Things equal to the same thing are equal to one another.", fillcolor="#442222", URL="../G.16/index.html", target="_top"];
      "G.17" [label="G.17", tooltip="G.17 (I.1): Construct an equilateral triangle on a given segment.", fillcolor="#222244", URL="../G.17/index.html", target="_top"];
@@ -229,18 +229,18 @@ Dependency Graph
      "G.23" [label="G.23", tooltip="G.23 (I.cn.4): Things / A B /, / D E / that coincide with one another are equal to one another.", fillcolor="#442222", URL="../G.23/index.html", target="_top"];
      "G.24" [label="G.24", tooltip="G.24 (I.4): Triangles with two sides and the included angle equal are congruent (SAS).", fillcolor="#222244", URL="../G.24/index.html", target="_top"];
      "G.25" [label="G.25", tooltip="G.25 (I.5): In an isosceles triangle, the angles at the base are equal, and if the equal sides are extended, the angles under the base are equal.", fillcolor="#222244", URL="../G.25/index.html", target="_top"];
-     "G.27" [label="G.27", tooltip="G.27 (I.7): On the same segment and on the same side, there cannot be constructed two distinct triangles with both pairs of conterminous sides equal.", fillcolor="#222244", URL="../G.27/index.html", target="_top"];
-     "G.28" [label="G.28", tooltip="G.28 (I.8): Triangles with all three corresponding sides equal have their corresponding angles equal (SSS).", fillcolor="#222244", URL="../G.28/index.html", target="_top"];
-     "G.29" [label="G.29", tooltip="G.29 (I.def.9): A rectilineal angle is contained by two segments or lines.", fillcolor="#224422", URL="../G.29/index.html", target="_top"];
-     "G.30" [label="G.30", tooltip="G.30 (I.9): Bisect a given angle.", fillcolor="#222244", URL="../G.30/index.html", target="_top"];
-     "G.31" [label="G.31", tooltip="G.31 (I.10): Bisect a given segment.", fillcolor="#222244", URL="../G.31/index.html", target="_top"];
-     "G.32" [label="G.32", tooltip="G.32 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.32/index.html", target="_top"];
-     "G.33" [label="G.33", tooltip="G.33 (I.11): Construct a segment at right angles to a given line from a given point on it.", fillcolor="#222244", URL="../G.33/index.html", target="_top"];
-     "G.35" [label="G.35", tooltip="G.35 (I.cn.2): If equals are added to equals, the wholes are equal.", fillcolor="#442222", URL="../G.35/index.html", target="_top"];
-     "G.36" [label="G.36", tooltip="G.36 (I.13): A segment standing on a line makes either two right angles or adjacent angles summing to two right angles.", fillcolor="#222244", URL="../G.36/index.html", target="_top"];
-     "G.37" [label="G.37", tooltip="G.37 (I.post.4): All right angles are equal.", fillcolor="#444422", URL="../G.37/index.html", target="_top"];
-     "G.39" [label="G.39", tooltip="G.39 (I.15): Intersecting lines make their vertical angles equal.", fillcolor="#222244", URL="../G.39/index.html", target="_top"];
-     "G.40" [label="G.40", tooltip="G.40 (I.cn.5): The whole is greater than the part.", fillcolor="#442222", URL="../G.40/index.html", target="_top"];
+     "G.26" [label="G.26", tooltip="G.26 (I.cn.5): The whole is greater than the part.", fillcolor="#442222", URL="../G.26/index.html", target="_top"];
+     "G.28" [label="G.28", tooltip="G.28 (I.7): On the same segment and on the same side, there cannot be constructed two distinct triangles with both pairs of conterminous sides equal.", fillcolor="#222244", URL="../G.28/index.html", target="_top"];
+     "G.29" [label="G.29", tooltip="G.29 (I.8): Triangles with all three corresponding sides equal have their corresponding angles equal (SSS).", fillcolor="#222244", URL="../G.29/index.html", target="_top"];
+     "G.30" [label="G.30", tooltip="G.30 (I.def.9): A rectilineal angle is contained by two segments or lines.", fillcolor="#224422", URL="../G.30/index.html", target="_top"];
+     "G.31" [label="G.31", tooltip="G.31 (I.9): Bisect a given angle.", fillcolor="#222244", URL="../G.31/index.html", target="_top"];
+     "G.32" [label="G.32", tooltip="G.32 (I.10): Bisect a given segment.", fillcolor="#222244", URL="../G.32/index.html", target="_top"];
+     "G.33" [label="G.33", tooltip="G.33 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.33/index.html", target="_top"];
+     "G.34" [label="G.34", tooltip="G.34 (I.11): Construct a segment at right angles to a given line from a given point on it.", fillcolor="#222244", URL="../G.34/index.html", target="_top"];
+     "G.36" [label="G.36", tooltip="G.36 (I.cn.2): If equals are added to equals, the wholes are equal.", fillcolor="#442222", URL="../G.36/index.html", target="_top"];
+     "G.37" [label="G.37", tooltip="G.37 (I.13): A segment standing on a line makes either two right angles or adjacent angles summing to two right angles.", fillcolor="#222244", URL="../G.37/index.html", target="_top"];
+     "G.38" [label="G.38", tooltip="G.38 (I.post.4): All right angles are equal.", fillcolor="#444422", URL="../G.38/index.html", target="_top"];
+     "G.40" [label="G.40", tooltip="G.40 (I.15): Intersecting lines make their vertical angles equal.", fillcolor="#222244", URL="../G.40/index.html", target="_top"];
      "G.41" [label="G.41", tooltip="G.41 (I.16): In any triangle, if one side is extended, the exterior angle is greater than either opposite interior angle.", fillcolor="#222244", URL="../G.41/index.html", target="_top"];
      "G.43" [label="G.43", tooltip="G.43 (I.18): In any triangle, the greater side subtends the greater angle.", fillcolor="#222244", URL="../G.43/index.html", target="_top"];
      "G.44" [label="G.44", tooltip="G.44 (I.19): In any triangle, the greater angle is subtended by the greater side.", fillcolor="#222244", URL="../G.44/index.html", target="_top"];
@@ -318,36 +318,72 @@ Dependency Graph
      "G.3" -> "G.1";
      "G.4" -> "G.1";
      "G.10" -> "G.1";
-     "G.13" -> "G.1";
+     "G.11" -> "G.1";
      "G.14" -> "G.1";
+     "G.15" -> "G.1";
+     "G.17" -> "G.1";
      "G.20" -> "G.1";
-     "G.27" -> "G.1";
-     "G.33" -> "G.1";
+     "G.21" -> "G.1";
+     "G.24" -> "G.1";
+     "G.25" -> "G.1";
+     "G.28" -> "G.1";
+     "G.29" -> "G.1";
+     "G.31" -> "G.1";
+     "G.32" -> "G.1";
+     "G.34" -> "G.1";
+     "G.37" -> "G.1";
+     "G.40" -> "G.1";
+     "G.45" -> "G.1";
+     "G.47" -> "G.1";
      "G.48" -> "G.1";
      "G.58" -> "G.1";
+     "G.68" -> "G.1";
      "G.211" -> "G.1";
      "G.506" -> "G.1";
      "G.507" -> "G.1";
      "G.509" -> "G.1";
+     "G.519" -> "G.1";
      "G.553" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
      "G.6" -> "G.2";
+     "G.7" -> "G.2";
+     "G.18" -> "G.2";
      "G.22" -> "G.2";
-     "G.29" -> "G.2";
+     "G.30" -> "G.2";
+     "G.33" -> "G.2";
+     "G.34" -> "G.2";
+     "G.37" -> "G.2";
+     "G.40" -> "G.2";
+     "G.48" -> "G.2";
+     "G.52" -> "G.2";
+     "G.53" -> "G.2";
+     "G.54" -> "G.2";
+     "G.55" -> "G.2";
+     "G.56" -> "G.2";
+     "G.58" -> "G.2";
+     "G.65" -> "G.2";
      "G.211" -> "G.2";
+     "G.504" -> "G.2";
+     "G.509" -> "G.2";
      "G.4" -> "G.3";
+     "G.6" -> "G.3";
      "G.8" -> "G.3";
      "G.20" -> "G.3";
-     "G.27" -> "G.3";
+     "G.28" -> "G.3";
+     "G.29" -> "G.3";
      "G.60" -> "G.3";
+     "G.65" -> "G.3";
+     "G.504" -> "G.3";
      "G.533" -> "G.3";
      "G.539" -> "G.3";
      "G.540" -> "G.3";
+     "G.541" -> "G.3";
      "G.7" -> "G.4";
      "G.10" -> "G.4";
      "G.11" -> "G.4";
-     "G.13" -> "G.4";
+     "G.12" -> "G.4";
+     "G.14" -> "G.4";
      "G.17" -> "G.4";
      "G.18" -> "G.4";
      "G.20" -> "G.4";
@@ -355,13 +391,16 @@ Dependency Graph
      "G.22" -> "G.4";
      "G.24" -> "G.4";
      "G.25" -> "G.4";
-     "G.27" -> "G.4";
      "G.28" -> "G.4";
+     "G.29" -> "G.4";
+     "G.30" -> "G.4";
      "G.31" -> "G.4";
      "G.32" -> "G.4";
      "G.33" -> "G.4";
-     "G.36" -> "G.4";
-     "G.39" -> "G.4";
+     "G.34" -> "G.4";
+     "G.37" -> "G.4";
+     "G.40" -> "G.4";
+     "G.41" -> "G.4";
      "G.47" -> "G.4";
      "G.48" -> "G.4";
      "G.52" -> "G.4";
@@ -372,6 +411,9 @@ Dependency Graph
      "G.58" -> "G.4";
      "G.60" -> "G.4";
      "G.61" -> "G.4";
+     "G.62" -> "G.4";
+     "G.65" -> "G.4";
+     "G.68" -> "G.4";
      "G.211" -> "G.4";
      "G.502" -> "G.4";
      "G.503" -> "G.4";
@@ -384,11 +426,16 @@ Dependency Graph
      "G.510" -> "G.4";
      "G.511" -> "G.4";
      "G.512" -> "G.4";
+     "G.519" -> "G.4";
+     "G.531" -> "G.4";
      "G.539" -> "G.4";
      "G.540" -> "G.4";
+     "G.541" -> "G.4";
+     "G.554" -> "G.4";
      "G.6" -> "G.5";
      "G.7" -> "G.5";
      "G.10" -> "G.6";
+     "G.533" -> "G.6";
      "G.10" -> "G.7";
      "G.22" -> "G.7";
      "G.52" -> "G.7";
@@ -396,7 +443,9 @@ Dependency Graph
      "G.503" -> "G.7";
      "G.504" -> "G.7";
      "G.505" -> "G.7";
+     "G.506" -> "G.7";
      "G.507" -> "G.7";
+     "G.508" -> "G.7";
      "G.509" -> "G.7";
      "G.510" -> "G.7";
      "G.511" -> "G.7";
@@ -406,98 +455,169 @@ Dependency Graph
      "G.531" -> "G.7";
      "G.537" -> "G.7";
      "G.538" -> "G.7";
+     "G.541" -> "G.7";
      "G.553" -> "G.7";
+     "G.554" -> "G.7";
      "G.9" -> "G.8";
      "G.10" -> "G.9";
-     "G.24" -> "G.9";
+     "G.12" -> "G.9";
+     "G.66" -> "G.9";
+     "G.67" -> "G.9";
      "G.187" -> "G.9";
      "G.189" -> "G.9";
      "G.209" -> "G.9";
-     "G.14" -> "G.10";
+     "G.539" -> "G.9";
+     "G.11" -> "G.10";
      "G.15" -> "G.10";
      "G.17" -> "G.10";
+     "G.20" -> "G.10";
      "G.21" -> "G.10";
+     "G.47" -> "G.10";
      "G.61" -> "G.10";
      "G.502" -> "G.10";
-     "G.12" -> "G.11";
-     "G.24" -> "G.11";
-     "G.28" -> "G.11";
-     "G.41" -> "G.11";
-     "G.43" -> "G.11";
-     "G.44" -> "G.11";
-     "G.45" -> "G.11";
+     "G.15" -> "G.11";
+     "G.17" -> "G.11";
+     "G.20" -> "G.11";
+     "G.21" -> "G.11";
      "G.47" -> "G.11";
-     "G.51" -> "G.11";
-     "G.63" -> "G.11";
-     "G.66" -> "G.11";
-     "G.67" -> "G.11";
-     "G.68" -> "G.11";
-     "G.70" -> "G.11";
-     "G.210" -> "G.11";
-     "G.211" -> "G.11";
-     "G.503" -> "G.11";
-     "G.550" -> "G.11";
+     "G.61" -> "G.11";
+     "G.502" -> "G.11";
+     "G.13" -> "G.12";
      "G.17" -> "G.12";
+     "G.20" -> "G.12";
+     "G.24" -> "G.12";
      "G.25" -> "G.12";
+     "G.28" -> "G.12";
+     "G.29" -> "G.12";
+     "G.31" -> "G.12";
+     "G.32" -> "G.12";
+     "G.34" -> "G.12";
+     "G.41" -> "G.12";
+     "G.43" -> "G.12";
+     "G.44" -> "G.12";
+     "G.45" -> "G.12";
+     "G.47" -> "G.12";
+     "G.48" -> "G.12";
+     "G.51" -> "G.12";
+     "G.53" -> "G.12";
+     "G.60" -> "G.12";
+     "G.62" -> "G.12";
      "G.63" -> "G.12";
+     "G.64" -> "G.12";
+     "G.66" -> "G.12";
+     "G.67" -> "G.12";
+     "G.68" -> "G.12";
+     "G.70" -> "G.12";
+     "G.210" -> "G.12";
+     "G.211" -> "G.12";
+     "G.503" -> "G.12";
+     "G.508" -> "G.12";
+     "G.538" -> "G.12";
+     "G.539" -> "G.12";
+     "G.550" -> "G.12";
+     "G.554" -> "G.12";
      "G.17" -> "G.13";
-     "G.20" -> "G.13";
      "G.25" -> "G.13";
-     "G.27" -> "G.13";
-     "G.41" -> "G.13";
-     "G.15" -> "G.14";
-     "G.61" -> "G.14";
-     "G.502" -> "G.14";
+     "G.63" -> "G.13";
+     "G.17" -> "G.14";
+     "G.20" -> "G.14";
+     "G.25" -> "G.14";
+     "G.28" -> "G.14";
+     "G.31" -> "G.14";
+     "G.34" -> "G.14";
+     "G.41" -> "G.14";
+     "G.43" -> "G.14";
+     "G.45" -> "G.14";
+     "G.47" -> "G.14";
+     "G.51" -> "G.14";
+     "G.58" -> "G.14";
+     "G.60" -> "G.14";
+     "G.65" -> "G.14";
+     "G.68" -> "G.14";
+     "G.70" -> "G.14";
+     "G.210" -> "G.14";
+     "G.211" -> "G.14";
+     "G.503" -> "G.14";
+     "G.508" -> "G.14";
+     "G.510" -> "G.14";
+     "G.512" -> "G.14";
+     "G.530" -> "G.14";
+     "G.540" -> "G.14";
+     "G.541" -> "G.14";
+     "G.554" -> "G.14";
      "G.17" -> "G.15";
      "G.20" -> "G.15";
      "G.21" -> "G.15";
+     "G.47" -> "G.15";
      "G.17" -> "G.16";
      "G.20" -> "G.16";
      "G.21" -> "G.16";
-     "G.36" -> "G.16";
-     "G.39" -> "G.16";
+     "G.37" -> "G.16";
+     "G.40" -> "G.16";
      "G.56" -> "G.16";
      "G.64" -> "G.16";
      "G.65" -> "G.16";
      "G.68" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
-     "G.33" -> "G.17";
+     "G.32" -> "G.17";
+     "G.34" -> "G.17";
      "G.20" -> "G.18";
      "G.25" -> "G.18";
      "G.41" -> "G.18";
+     "G.45" -> "G.18";
+     "G.58" -> "G.18";
+     "G.66" -> "G.18";
+     "G.67" -> "G.18";
+     "G.210" -> "G.18";
+     "G.540" -> "G.18";
+     "G.541" -> "G.18";
      "G.20" -> "G.19";
-     "G.39" -> "G.19";
+     "G.25" -> "G.19";
+     "G.40" -> "G.19";
      "G.64" -> "G.19";
      "G.21" -> "G.20";
      "G.25" -> "G.21";
-     "G.30" -> "G.21";
-     "G.33" -> "G.21";
+     "G.31" -> "G.21";
+     "G.34" -> "G.21";
      "G.41" -> "G.21";
      "G.43" -> "G.21";
+     "G.45" -> "G.21";
      "G.47" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
      "G.28" -> "G.22";
      "G.29" -> "G.22";
+     "G.30" -> "G.22";
+     "G.31" -> "G.22";
      "G.32" -> "G.22";
-     "G.36" -> "G.22";
-     "G.39" -> "G.22";
+     "G.33" -> "G.22";
+     "G.34" -> "G.22";
+     "G.37" -> "G.22";
+     "G.40" -> "G.22";
      "G.41" -> "G.22";
      "G.43" -> "G.22";
      "G.44" -> "G.22";
+     "G.45" -> "G.22";
+     "G.48" -> "G.22";
      "G.51" -> "G.22";
      "G.53" -> "G.22";
      "G.54" -> "G.22";
      "G.55" -> "G.22";
      "G.56" -> "G.22";
+     "G.58" -> "G.22";
+     "G.60" -> "G.22";
      "G.62" -> "G.22";
      "G.63" -> "G.22";
+     "G.64" -> "G.22";
      "G.217" -> "G.22";
      "G.512" -> "G.22";
+     "G.530" -> "G.22";
+     "G.554" -> "G.22";
      "G.24" -> "G.23";
+     "G.29" -> "G.23";
      "G.25" -> "G.24";
-     "G.31" -> "G.24";
+     "G.32" -> "G.24";
      "G.41" -> "G.24";
      "G.51" -> "G.24";
      "G.60" -> "G.24";
@@ -508,47 +628,53 @@ Dependency Graph
      "G.530" -> "G.24";
      "G.539" -> "G.24";
      "G.554" -> "G.24";
-     "G.27" -> "G.25";
+     "G.28" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
-     "G.28" -> "G.27";
-     "G.30" -> "G.28";
-     "G.33" -> "G.28";
-     "G.48" -> "G.28";
-     "G.506" -> "G.28";
-     "G.508" -> "G.28";
-     "G.512" -> "G.28";
-     "G.539" -> "G.28";
-     "G.30" -> "G.29";
+     "G.28" -> "G.26";
+     "G.41" -> "G.26";
+     "G.45" -> "G.26";
+     "G.29" -> "G.28";
+     "G.31" -> "G.29";
+     "G.34" -> "G.29";
      "G.48" -> "G.29";
+     "G.506" -> "G.29";
+     "G.508" -> "G.29";
+     "G.512" -> "G.29";
+     "G.539" -> "G.29";
      "G.31" -> "G.30";
-     "G.41" -> "G.31";
-     "G.33" -> "G.32";
-     "G.36" -> "G.32";
-     "G.37" -> "G.32";
-     "G.54" -> "G.32";
-     "G.55" -> "G.32";
-     "G.56" -> "G.32";
-     "G.209" -> "G.32";
-     "G.505" -> "G.32";
-     "G.506" -> "G.32";
-     "G.507" -> "G.32";
-     "G.510" -> "G.32";
-     "G.36" -> "G.33";
-     "G.36" -> "G.35";
-     "G.56" -> "G.35";
-     "G.62" -> "G.35";
-     "G.64" -> "G.35";
-     "G.39" -> "G.36";
-     "G.54" -> "G.36";
+     "G.48" -> "G.30";
+     "G.32" -> "G.31";
+     "G.41" -> "G.32";
+     "G.34" -> "G.33";
+     "G.37" -> "G.33";
+     "G.38" -> "G.33";
+     "G.40" -> "G.33";
+     "G.54" -> "G.33";
+     "G.55" -> "G.33";
+     "G.56" -> "G.33";
+     "G.209" -> "G.33";
+     "G.211" -> "G.33";
+     "G.505" -> "G.33";
+     "G.506" -> "G.33";
+     "G.507" -> "G.33";
+     "G.508" -> "G.33";
+     "G.510" -> "G.33";
+     "G.511" -> "G.33";
+     "G.541" -> "G.33";
+     "G.37" -> "G.34";
+     "G.37" -> "G.36";
      "G.56" -> "G.36";
-     "G.39" -> "G.37";
-     "G.41" -> "G.39";
-     "G.54" -> "G.39";
-     "G.56" -> "G.39";
-     "G.506" -> "G.39";
+     "G.62" -> "G.36";
+     "G.64" -> "G.36";
+     "G.40" -> "G.37";
+     "G.54" -> "G.37";
+     "G.56" -> "G.37";
+     "G.40" -> "G.38";
      "G.41" -> "G.40";
-     "G.45" -> "G.40";
+     "G.54" -> "G.40";
+     "G.56" -> "G.40";
+     "G.506" -> "G.40";
      "G.43" -> "G.41";
      "G.51" -> "G.41";
      "G.53" -> "G.41";
@@ -565,6 +691,7 @@ Dependency Graph
      "G.56" -> "G.52";
      "G.58" -> "G.52";
      "G.60" -> "G.52";
+     "G.62" -> "G.52";
      "G.64" -> "G.52";
      "G.65" -> "G.52";
      "G.66" -> "G.52";
@@ -578,8 +705,11 @@ Dependency Graph
      "G.511" -> "G.52";
      "G.512" -> "G.52";
      "G.519" -> "G.52";
+     "G.530" -> "G.52";
      "G.531" -> "G.52";
      "G.537" -> "G.52";
+     "G.541" -> "G.52";
+     "G.554" -> "G.52";
      "G.54" -> "G.53";
      "G.58" -> "G.53";
      "G.60" -> "G.53";
@@ -593,9 +723,13 @@ Dependency Graph
      "G.66" -> "G.58";
      "G.67" -> "G.58";
      "G.68" -> "G.58";
+     "G.541" -> "G.58";
      "G.65" -> "G.60";
      "G.512" -> "G.60";
      "G.62" -> "G.61";
+     "G.66" -> "G.61";
+     "G.67" -> "G.61";
+     "G.70" -> "G.61";
      "G.502" -> "G.61";
      "G.64" -> "G.62";
      "G.65" -> "G.62";
@@ -624,8 +758,14 @@ Dependency Graph
      "G.256" -> "G.169";
      "G.171" -> "G.170";
      "G.176" -> "G.170";
+     "G.183" -> "G.170";
      "G.185" -> "G.170";
+     "G.186" -> "G.170";
+     "G.189" -> "G.170";
+     "G.190" -> "G.170";
      "G.193" -> "G.170";
+     "G.210" -> "G.170";
+     "G.531" -> "G.170";
      "G.186" -> "G.171";
      "G.190" -> "G.171";
      "G.189" -> "G.173";
@@ -636,12 +776,15 @@ Dependency Graph
      "G.190" -> "G.176";
      "G.193" -> "G.176";
      "G.210" -> "G.176";
+     "G.211" -> "G.176";
      "G.531" -> "G.176";
+     "G.541" -> "G.176";
      "G.183" -> "G.180";
      "G.190" -> "G.180";
      "G.217" -> "G.180";
      "G.182" -> "G.181";
      "G.190" -> "G.181";
+     "G.193" -> "G.181";
      "G.183" -> "G.182";
      "G.193" -> "G.183";
      "G.211" -> "G.183";
@@ -657,17 +800,22 @@ Dependency Graph
      "G.193" -> "G.190";
      "G.210" -> "G.193";
      "G.210" -> "G.209";
+     "G.211" -> "G.209";
      "G.539" -> "G.209";
      "G.540" -> "G.209";
      "G.541" -> "G.209";
      "G.550" -> "G.209";
+     "G.554" -> "G.209";
      "G.211" -> "G.210";
      "G.554" -> "G.211";
      "G.554" -> "G.217";
      "G.248" -> "G.247";
      "G.253" -> "G.248";
      "G.256" -> "G.248";
+     "G.531" -> "G.248";
+     "G.256" -> "G.253";
      "G.502" -> "G.253";
+     "G.503" -> "G.253";
      "G.531" -> "G.256";
      "G.503" -> "G.502";
      "G.519" -> "G.502";
@@ -679,6 +827,7 @@ Dependency Graph
      "G.507" -> "G.505";
      "G.508" -> "G.505";
      "G.510" -> "G.505";
+     "G.511" -> "G.505";
      "G.507" -> "G.506";
      "G.510" -> "G.506";
      "G.511" -> "G.506";
@@ -700,6 +849,7 @@ Dependency Graph
      "G.539" -> "G.529";
      "G.540" -> "G.529";
      "G.541" -> "G.529";
+     "G.550" -> "G.529";
      "G.553" -> "G.529";
      "G.531" -> "G.530";
      "G.541" -> "G.530";

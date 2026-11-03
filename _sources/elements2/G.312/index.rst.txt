@@ -10,7 +10,7 @@
 :categories: theorem, proof, number-theory, proportions
 :category: theorem, proof, number-theory, proportions
 :tags: book-viii, point, cube-number, proportional, number, ratio, multiply, proportion, cube
-:dependencies: G.173, G.180, G.248, G.271, G.272, G.310, G.311
+:dependencies: G.173, G.180, G.248, G.269, G.271, G.272, G.310, G.311
 :excerpt: Between two cube numbers there are two mean proportional numbers, and the cube has to the cube the ratio triplicate of that which the side has to the side.
 
 .. _G.312:
@@ -44,15 +44,15 @@ G.312 cube numbers there
 
 .. step:: assert
 
-   Let :g:`D <g1:D>` by multiplying itself make :g:`G <g1:G>`, and let the numbers :g:`C <g1:C>`, :g:`D <g1:D>` by multiplying :g:`F <g1:F>` make :g:`H <g1:H>`, :g:`K <g1:K>` respectively.
+   Let :g:`D <g1:D>` by multiplying itself make :g:`G <g1:G>`, and let the numbers :g:`C <g1:C>`, :g:`D <g1:D>` by multiplying :g:`F <g1:F>` make :g:`H <g1:H>`, :g:`K <g1:K>`
 
 .. step:: assert
 
-   Since :g:`A <g1:A>` is a cube, and :g:`C <g1:C>` its side, and :g:`C <g1:C>` by multiplying itself has made :g:`E <g1:E>`,
+   :g:`A <g1:A>` is a cube, and :g:`C <g1:C>` its side, and :g:`C <g1:C>` by multiplying itself has made :g:`E <g1:E>`,
 
 .. step:: assert
 
-   Therefore :g:`C <g1:C>` by multiplying itself has made :g:`E <g1:E>` and by multiplying :g:`E <g1:E>` has made :g:`A <g1:A>`.
+   :g:`C <g1:C>` by multiplying itself has made :g:`E <g1:E>` and by multiplying :g:`E <g1:E>` has made :g:`A <g1:A>`
 
 .. step:: assert
 
@@ -60,15 +60,15 @@ G.312 cube numbers there
 
 .. step:: assert
 
-   :g:`D <g1:D>` by multiplying itself has made :g:`G <g1:G>` and by multiplying :g:`G <g1:G>` has made :g:`B <g1:B>`.
+   :g:`D <g1:D>` by multiplying itself has made :g:`G <g1:G>` and by multiplying :g:`G <g1:G>` has made :g:`B <g1:B>`
 
 .. step:: assert
 
-   And, since :g:`C <g1:C>` by multiplying the numbers :g:`C <g1:C>`, :g:`D <g1:D>` has made :g:`E <g1:E>`, :g:`F <g1:F>` respectively,
+   since :g:`C <g1:C>` by multiplying the numbers :g:`C <g1:C>`, :g:`D <g1:D>` has made :g:`E <g1:E>`, :g:`F <g1:F>`,
 
 .. step:: assert ∵ number_multiplying_numbers <G.271>
 
-   Therefore, as :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`E <g1:E>` to :g:`F <g1:F>`.
+   as :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`E <g1:E>` to :g:`F <g1:F>`
 
 .. step:: assert
 
@@ -76,71 +76,71 @@ G.312 cube numbers there
 
 .. step:: assert ∵ numbers_multiplying_number <G.272>
 
-   As :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`F <g1:F>` to :g:`G <g1:G>`.
+   As :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`F <g1:F>` to :g:`G <g1:G>`
 
 .. step:: assert
 
-   Since :g:`C <g1:C>` by multiplying the numbers :g:`E <g1:E>`, :g:`F <g1:F>` has made :g:`A <g1:A>`, :g:`H <g1:H>` respectively,
+   :g:`C <g1:C>` by multiplying the numbers :g:`E <g1:E>`, :g:`F <g1:F>` has made :g:`A <g1:A>`, :g:`H <g1:H>`,
 
 .. step:: assert ∵ number_multiplying_numbers <G.271>
 
-   Therefore, as :g:`E <g1:E>` is to :g:`F <g1:F>`, so is :g:`A <g1:A>` to :g:`H <g1:H>`.
+   as :g:`E <g1:E>` is to :g:`F <g1:F>`, so is :g:`A <g1:A>` to :g:`H <g1:H>`
 
 .. step:: assert
 
-   But, as :g:`E <g1:E>` is to :g:`F <g1:F>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`.
+   But, as :g:`E <g1:E>` is to :g:`F <g1:F>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`
 
 .. step:: assert
 
-   Therefore also, as :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`A <g1:A>` to :g:`H <g1:H>`.
+   also, as :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`A <g1:A>` to :g:`H <g1:H>`
 
 .. step:: assert
 
-   Since the numbers :g:`C <g1:C>`, :g:`D <g1:D>` by multiplying :g:`F <g1:F>` have made :g:`H <g1:H>`, :g:`K <g1:K>` respectively,
+   the numbers :g:`C <g1:C>`, :g:`D <g1:D>` by multiplying :g:`F <g1:F>` have made :g:`H <g1:H>`, :g:`K <g1:K>`,
 
 .. step:: assert ∵ numbers_multiplying_number <G.272>
 
-   Therefore, as :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`H <g1:H>` to :g:`K <g1:K>`.
+   as :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`H <g1:H>` to :g:`K <g1:K>`
 
 .. step:: assert
 
-   Since :g:`D <g1:D>` by multiplying each of the numbers :g:`F <g1:F>`, :g:`G <g1:G>` has made :g:`K <g1:K>`, :g:`B <g1:B>` respectively,
+   :g:`D <g1:D>` by multiplying each of the numbers :g:`F <g1:F>`, :g:`G <g1:G>` has made :g:`K <g1:K>`, :g:`B <g1:B>`,
 
 .. step:: assert ∵ number_multiplying_numbers <G.271>
 
-   Therefore, as :g:`F <g1:F>` is to :g:`G <g1:G>`, so is :g:`K <g1:K>` to :g:`B <g1:B>`.
+   as :g:`F <g1:F>` is to :g:`G <g1:G>`, so is :g:`K <g1:K>` to :g:`B <g1:B>`
 
 .. step:: assert
 
-   But, as :g:`F <g1:F>` is to :g:`G <g1:G>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`;
+   But, as :g:`F <g1:F>` is to :g:`G <g1:G>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`
 
 .. step:: assert
 
-   Therefore also, as :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`A <g1:A>` to :g:`H <g1:H>`, :g:`H <g1:H>` to :g:`K <g1:K>`, and :g:`K <g1:K>` to :g:`B <g1:B>`.
+   also, as :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`A <g1:A>` to :g:`H <g1:H>`, :g:`H <g1:H>` to :g:`K <g1:K>`, and :g:`K <g1:K>` to :g:`B <g1:B>`
 
 .. step:: assert
 
-   Therefore :g:`H <g1:H>`, :g:`K <g1:K>` are two mean proportionals between :g:`A <g1:A>`, :g:`B <g1:B>`.
+   :g:`H <g1:H>`, :g:`K <g1:K>` are two mean proportionals between :g:`A <g1:A>`, :g:`B <g1:B>`
 
 .. step:: assert
 
-   I say next that :g:`A <g1:A>` also has to :g:`B <g1:B>` the ratio triplicate of that which :g:`C <g1:C>` has to :g:`D <g1:D>`.
+   I say next that :g:`A <g1:A>` also has to :g:`B <g1:B>` the ratio triplicate of that which :g:`C <g1:C>` has to :g:`D <g1:D>`
 
 .. step:: assert
 
-   Since :g:`A <g1:A>`, :g:`H <g1:H>`, :g:`K <g1:K>`, :g:`B <g1:B>` are four numbers in proportion,
+   :g:`A <g1:A>`, :g:`H <g1:H>`, :g:`K <g1:K>`, :g:`B <g1:B>` are four numbers in proportion,
 
 .. step:: assert ∵ magnitudes_proportional_said_def_v_def_10 <G.310>
 
-   Therefore :g:`A <g1:A>` has to :g:`B <g1:B>` the ratio triplicate of that which :g:`A <g1:A>` has to :g:`H <g1:H>`.
+   :g:`A <g1:A>` has to :g:`B <g1:B>` the ratio triplicate of that which :g:`A <g1:A>` has to :g:`H <g1:H>`
 
 .. step:: assert
 
-   But, as :g:`A <g1:A>` is to :g:`H <g1:H>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`;
+   But, as :g:`A <g1:A>` is to :g:`H <g1:H>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`
 
 .. step:: conclude
 
-   Therefore :g:`A <g1:A>` also has to :g:`B <g1:B>` the ratio triplicate of that which :g:`C <g1:C>` has to :g:`D <g1:D>`.
+   :g:`A <g1:A>` also has to :g:`B <g1:B>` the ratio triplicate of that which :g:`C <g1:C>` has to :g:`D <g1:D>`
 
 Dependency Graph
 ----------------
@@ -184,24 +184,32 @@ Dependency Graph
      "G.254" -> "G.169";
      "G.256" -> "G.169";
      "G.268" -> "G.169";
+     "G.270" -> "G.169";
+     "G.271" -> "G.169";
      "G.176" -> "G.170";
      "G.257" -> "G.170";
      "G.312" -> "G.173";
      "G.180" -> "G.176";
      "G.271" -> "G.176";
      "G.272" -> "G.176";
+     "G.263" -> "G.180";
      "G.266" -> "G.180";
      "G.310" -> "G.180";
      "G.312" -> "G.180";
      "G.194" -> "G.181";
      "G.265" -> "G.181";
+     "G.268" -> "G.181";
      "G.261" -> "G.194";
      "G.262" -> "G.194";
      "G.266" -> "G.194";
      "G.268" -> "G.194";
+     "G.270" -> "G.194";
+     "G.271" -> "G.194";
      "G.248" -> "G.247";
      "G.268" -> "G.247";
      "G.269" -> "G.247";
+     "G.270" -> "G.247";
+     "G.271" -> "G.247";
      "G.253" -> "G.248";
      "G.256" -> "G.248";
      "G.257" -> "G.248";
@@ -217,14 +225,21 @@ Dependency Graph
      "G.272" -> "G.248";
      "G.311" -> "G.248";
      "G.312" -> "G.248";
+     "G.254" -> "G.253";
+     "G.256" -> "G.253";
      "G.257" -> "G.253";
+     "G.258" -> "G.253";
      "G.261" -> "G.253";
      "G.262" -> "G.253";
      "G.263" -> "G.253";
+     "G.265" -> "G.253";
+     "G.266" -> "G.253";
      "G.258" -> "G.254";
      "G.261" -> "G.254";
      "G.262" -> "G.254";
      "G.263" -> "G.254";
+     "G.265" -> "G.254";
+     "G.266" -> "G.254";
      "G.257" -> "G.256";
      "G.263" -> "G.256";
      "G.258" -> "G.257";
@@ -246,6 +261,7 @@ Dependency Graph
      "G.271" -> "G.269";
      "G.272" -> "G.269";
      "G.311" -> "G.269";
+     "G.312" -> "G.269";
      "G.272" -> "G.270";
      "G.272" -> "G.271";
      "G.312" -> "G.271";

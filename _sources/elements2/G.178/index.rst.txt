@@ -28,7 +28,7 @@ G.178 magnitude multiple magnitude
 .. signature:: theorem
 
    | :fn:`magnitude_multiple_magnitude <G.178>`\ ()
-   | **prove** the remainder :g:`/ E B / <g1:/ E B />` is also the same multiple of the remainder :g:`/ F D / <g1:/ F D />` that the whole :g:`/ A B / <g1:/ A B />` is of the whole :g:`/ C D / <g1:/ C D />`
+   | **prove** :g:`/ E B / <g1:/ E B />` is also the same multiple of :g:`/ F D / <g1:/ F D />` that :g:`/ A B / <g1:/ A B />` is of :g:`/ C D / <g1:/ C D />`
 
 .. picture:: g1.svg
    :alt: Proposition 5 Diagram
@@ -43,19 +43,19 @@ G.178 magnitude multiple magnitude
 
 .. step:: assert ∵ there_number_magnitudes <G.171>
 
-   Since :g:`/ A E / <g1:/ A E />` is the same multiple of :g:`/ C F / <g1:/ C F />` that :g:`/ E B / <g1:/ E B />` is of :g:`/ C G / <g1:/ C G />` → therefore :g:`/ A E / <g1:/ A E />` is the same multiple of :g:`/ C F / <g1:/ C F />` that :g:`/ A B / <g1:/ A B />` is of :g:`/ G F / <g1:/ G F />`.
+   :g:`/ A E / <g1:/ A E />` is the same multiple of :g:`/ C F / <g1:/ C F />` that :g:`/ E B / <g1:/ E B />` is of :g:`/ C G / <g1:/ C G />` → therefore :g:`/ A E / <g1:/ A E />` is the same multiple of :g:`/ C F / <g1:/ C F />` that :g:`/ A B / <g1:/ A B />` is of :g:`/ G F / <g1:/ G F />`
 
 .. step:: assert
 
-   But, by the assumption, :g:`/ A E / <g1:/ A E />` is the same multiple of :g:`/ C F / <g1:/ C F />` that :g:`/ A B / <g1:/ A B />` is of :g:`/ C D / <g1:/ C D />`.
+   But, by the assumption, :g:`/ A E / <g1:/ A E />` is the same multiple of :g:`/ C F / <g1:/ C F />` that :g:`/ A B / <g1:/ A B />` is of :g:`/ C D / <g1:/ C D />`
 
 .. step:: assert
 
-   Therefore :g:`/ A B / <g1:/ A B />` is the same multiple of each of the magnitudes :g:`/ G F / <g1:/ G F />`, :g:`/ C D / <g1:/ C D />`;
+   :g:`/ A B / <g1:/ A B />` is the same multiple of each of the magnitudes :g:`/ G F / <g1:/ G F />`, :g:`/ C D / <g1:/ C D />`
 
 .. step:: assert
 
-   Therefore :g:`/ G F / <g1:/ G F />` is :eq:`equal <g1:/ G F / = g1:/ C D />` to :g:`/ C D / <g1:/ C D />`.
+   :g:`/ G F / <g1:/ G F />` :eq:`= <g1:/ G F / = g1:/ C D />` :g:`/ C D / <g1:/ C D />`
 
 .. step:: construct
 
@@ -63,19 +63,19 @@ G.178 magnitude multiple magnitude
 
 .. step:: assert
 
-   Therefore the remainder :g:`/ C G / <g1:/ C G />` is :eq:`equal <g1:/ C G / = g1:/ F D />` to the remainder :g:`/ F D / <g1:/ F D />`.
+   :g:`/ C G / <g1:/ C G />` :eq:`= <g1:/ C G / = g1:/ F D />` :g:`/ F D / <g1:/ F D />`
 
 .. step:: assert
 
-   And, since :g:`/ A E / <g1:/ A E />` is the same multiple of :g:`/ C F / <g1:/ C F />` that :g:`/ E B / <g1:/ E B />` is of :g:`/ C G / <g1:/ C G />`,
+   since :g:`/ A E / <g1:/ A E />` is the same multiple of :g:`/ C F / <g1:/ C F />` that :g:`/ E B / <g1:/ E B />` is of :g:`/ C G / <g1:/ C G />`,
 
 .. step:: assert
 
-   And :g:`/ C G / <g1:/ C G />` is :eq:`equal <g1:/ C G / = g1:/ F D />` to :g:`/ F D / <g1:/ F D />`,
+   :g:`/ C G / <g1:/ C G />` :eq:`= <g1:/ C G / = g1:/ F D />` :g:`/ F D / <g1:/ F D />`,
 
 .. step:: assert
 
-   Therefore :g:`/ A E / <g1:/ A E />` is the same multiple of :g:`/ C F / <g1:/ C F />` that :g:`/ E B / <g1:/ E B />` is of :g:`/ F D / <g1:/ F D />`.
+   :g:`/ A E / <g1:/ A E />` is the same multiple of :g:`/ C F / <g1:/ C F />` that :g:`/ E B / <g1:/ E B />` is of :g:`/ F D / <g1:/ F D />`
 
 .. step:: assert
 
@@ -83,15 +83,15 @@ G.178 magnitude multiple magnitude
 
 .. step:: assert
 
-   :g:`/ A E / <g1:/ A E />` is the same multiple of :g:`/ C F / <g1:/ C F />` that :g:`/ A B / <g1:/ A B />` is of :g:`/ C D / <g1:/ C D />`;
+   :g:`/ A E / <g1:/ A E />` is the same multiple of :g:`/ C F / <g1:/ C F />` that :g:`/ A B / <g1:/ A B />` is of :g:`/ C D / <g1:/ C D />`
 
 .. step:: assert
 
-   Therefore :g:`/ E B / <g1:/ E B />` is the same multiple of :g:`/ F D / <g1:/ F D />` that :g:`/ A B / <g1:/ A B />` is of :g:`/ C D / <g1:/ C D />`.
+   :g:`/ E B / <g1:/ E B />` is the same multiple of :g:`/ F D / <g1:/ F D />` that :g:`/ A B / <g1:/ A B />` is of :g:`/ C D / <g1:/ C D />`
 
 .. step:: conclude
 
-   That is, the remainder :g:`/ E B / <g1:/ E B />` will be the same multiple of the remainder :g:`/ F D / <g1:/ F D />` that the whole :g:`/ A B / <g1:/ A B />` is of the whole :g:`/ C D / <g1:/ C D />`.
+   That is, :g:`/ E B / <g1:/ E B />` will be the same multiple of :g:`/ F D / <g1:/ F D />` that :g:`/ A B / <g1:/ A B />` is of :g:`/ C D / <g1:/ C D />`
 
 Dependency Graph
 ----------------

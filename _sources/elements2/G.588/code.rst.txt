@@ -12,7 +12,7 @@ G.588 equilateral pentagon inscribed — Code
 
 .. enunciation::
 
-   If an :term:`equilateral <G.12>` pentagon be :term:`inscribed in a circle <G.148>`, the :term:`square <G.63>` on the side of the pentagon is equal to the squares on the side of the hexagon and on that of the decagon inscribed in the same :term:`circle <G.10>`.
+   If an :term:`equilateral <G.13>` pentagon be :term:`inscribed in a circle <G.148>`, the :term:`square <G.63>` on the side of the pentagon is equal to the squares on the side of the hexagon and on that of the decagon inscribed in the same :term:`circle <G.10>`.
 
 .. picture:: g1.svg
 

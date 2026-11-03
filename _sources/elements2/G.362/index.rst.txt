@@ -10,7 +10,7 @@
 :categories: theorem, proof, number-theory
 :category: theorem, proof, number-theory
 :tags: book-ix, point, odd-number, prime-to-one-another, number, part-aliquot, even-number, prime, reductio-ad-absurdum
-:dependencies: G.248, G.249, G.352, G.361
+:dependencies: G.169, G.248, G.249, G.352, G.361
 :excerpt: If an odd number be prime to any number, it is prime to the double of it.
 
 .. _G.362:
@@ -39,51 +39,51 @@ G.362 odd number prime
 
 .. step:: assert
 
-   If they are not prime to one another, some number will :term:`measure <G.169>` them.
+   If they are not prime to one another, some number will :term:`measure <G.169>` them
 
 .. step:: assert
 
-   Let a number measure them, and let it be :g:`D <g1:D>`.
+   Let a number measure them, and let it be :g:`D <g1:D>`
 
 .. step:: assert
 
-   Now :g:`A <g1:A>` is odd;
+   Now :g:`A <g1:A>` is odd
 
 .. step:: assert
 
-   Therefore :g:`D <g1:D>` is also odd.
+   :g:`D <g1:D>` is also odd
 
 .. step:: assert
 
-   Since :g:`D <g1:D>` which is odd measures :g:`C <g1:C>`, and :g:`C <g1:C>` is :term:`even <G.302>`,
+   :g:`D <g1:D>` which is odd measures :g:`C <g1:C>`, and :g:`C <g1:C>` is even,
 
 .. step:: assert ∵ odd_number_measure <G.361>
 
-   Therefore [:g:`D <g1:D>`] will measure the half of :g:`C <g1:C>` also.
+   [:g:`D <g1:D>`] will measure the half of :g:`C <g1:C>` also
 
 .. step:: assert
 
-   :g:`B <g1:B>` is half of :g:`C <g1:C>`;
+   :g:`B <g1:B>` is half of :g:`C <g1:C>`
 
 .. step:: assert
 
-   Therefore :g:`D <g1:D>` measures :g:`B <g1:B>`.
+   :g:`D <g1:D>` measures :g:`B <g1:B>`
 
 .. step:: assert
 
-   It also measures :g:`A <g1:A>`;
+   It also measures :g:`A <g1:A>`
 
 .. step:: assert
 
-   Therefore :g:`D <g1:D>` measures :g:`A <g1:A>`, :g:`B <g1:B>` which are prime to one another: which is impossible.
+   :g:`D <g1:D>` measures :g:`A <g1:A>`, :g:`B <g1:B>` which are prime to one another ⇒⇐
 
 .. step:: assert
 
-   Therefore :g:`A <g1:A>` cannot but be prime to :g:`C <g1:C>`.
+   :g:`A <g1:A>` cannot but be prime to :g:`C <g1:C>`
 
 .. step:: conclude
 
-   Therefore :g:`A <g1:A>`, :g:`C <g1:C>` are prime to one another.
+   :g:`A <g1:A>`, :g:`C <g1:C>` are prime to one another
 
 Dependency Graph
 ----------------
@@ -109,12 +109,16 @@ Dependency Graph
      "G.362" [label="G.362", tooltip="G.362 (IX.31): If an odd number be prime to any number, it is prime to the double of it.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.249" -> "G.169";
      "G.361" -> "G.169";
+     "G.362" -> "G.169";
      "G.248" -> "G.247";
      "G.249" -> "G.247";
      "G.269" -> "G.247";
      "G.352" -> "G.247";
+     "G.353" -> "G.247";
+     "G.354" -> "G.247";
      "G.269" -> "G.248";
      "G.351" -> "G.248";
+     "G.353" -> "G.248";
      "G.362" -> "G.248";
      "G.362" -> "G.249";
      "G.361" -> "G.269";

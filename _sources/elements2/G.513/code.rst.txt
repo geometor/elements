@@ -12,7 +12,7 @@ G.513 elevated point draw — Code
 
 .. enunciation::
 
-   From a given elevated :term:`point <G.1>` to draw a :term:`segment <G.4>` :term:`perpendicular <G.32>` to a given :term:`plane <G.7>`.
+   From a given elevated :term:`point <G.1>` to draw a :term:`segment <G.4>` :term:`perpendicular <G.33>` to a given :term:`plane <G.7>`.
 
 .. picture:: g1.svg
 

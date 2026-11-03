@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=69acf51f" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=66998e95" />
   <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -89,7 +89,7 @@
         <section class="level-1" id="g-341-numbers-composite-to-one-another">
         <span id="vii-def-14"></span><span id="g-341"></span><h1>G.341 numbers composite to one another<a class="headerlink" href="#g-341-numbers-composite-to-one-another" title="Link to this heading">¶</a></h1>
         <p class="rubric"><a class="reference external" href="https://geometor.github.io/euclid/heath/volume_II/book_vii/definitions/#vii-def-14" title="VII.def.14: Numbers composite to one another are those which aremeasured by somenumber as a common measure.">VII.def.14</a></p>
-        <div class="enunciation"><a class="term-ref glossary-term" id="occ-term-composite-to-one-another-1" href="../glossary.html#term-composite-to-one-another" data-term="composite-to-one-another" title="Numbers composite to one another (composite to one another): Book VII: 14. Numbers composite to one another are those which are measured by some number as a common measure."><strong>Numbers composite to one another</strong></a> are those which are:term:<cite>measured &lt;G.253&gt;</cite> by some:term:<cite>number &lt;G.248&gt;</cite> as a common measure.</div>
+        <div class="enunciation"><span class="glossary-term" data-term="composite-to-one-another" title="Numbers composite to one another (composite to one another): Book VII: 14. Numbers composite to one another are those which are measured by some number as a common measure."><strong>Numbers composite to one another</strong></span> are those which are:term:<cite>measured &lt;G.253&gt;</cite> by some:term:<cite>number &lt;G.248&gt;</cite> as a common measure.</div>
         <div class="geom-signature geom-signature-def">
         <div class="line-block">
         <div class="line"><span class="geom-fn geom-fn-def" data-ref-target="G.341" title="G.341: Numbers composite to one another are those which aremeasured by somenumber as a common measure.">numbers_composite_measured_def</span></div>
@@ -97,7 +97,7 @@
         </div>
         <section class="level-2" id="dependency-graph">
         <h2>Dependency Graph<a class="headerlink" href="#dependency-graph" title="Link to this heading">¶</a></h2>
-        <div class="graphviz"><object data="../../_images/graphviz-3dabd75625042d128cca5359eb36f2f360b6eea3.svg" type="image/svg+xml" class="graphviz">
+        <div class="graphviz"><object data="../../_images/graphviz-1a1e06c78f4e108e0eaa6bcaaa2856a3bf0c771d.svg" type="image/svg+xml" class="graphviz">
         <p class="warning">digraph {
           bgcolor=&quot;transparent&quot;;
           node [shape=box, style=&quot;rounded,filled&quot;, fontname=&quot;Helvetica&quot;, fontsize=11, color=&quot;#d6d3cd&quot;, fontcolor=&quot;#ffffff&quot;];
@@ -106,10 +106,14 @@
           &quot;G.169&quot; [label=&quot;G.169&quot;, tooltip=&quot;G.169 (V.def.1): A magnitude is apart of a magnitude, the less of the greater, when it measures the greater.&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.169/index.html&quot;, target=&quot;_top&quot;];
           &quot;G.247&quot; [label=&quot;G.247&quot;, tooltip=&quot;G.247 (VII.def.1): Anunit is that by virtue of which each of the things that exist is called one.&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.247/index.html&quot;, target=&quot;_top&quot;];
           &quot;G.248&quot; [label=&quot;G.248&quot;, tooltip=&quot;G.248 (VII.def.2): Anumber is a multitude composed ofunits.&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.248/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.253&quot; [label=&quot;G.253&quot;, tooltip=&quot;G.253 (VII.def.3): Anumber is apart of a number, the less of the greater, when itmeasures the greater;&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.253/index.html&quot;, target=&quot;_top&quot;];
           &quot;G.341&quot; [label=&quot;G.341&quot;, tooltip=&quot;G.341 (VII.def.14): Numbers composite to one another are those which aremeasured by somenumber as a common measure.&quot;, penwidth=2.5, color=&quot;#e8b85a&quot;, fillcolor=&quot;#4a453b&quot;, URL=&quot;index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.253&quot; -&gt; &quot;G.169&quot;;
           &quot;G.341&quot; -&gt; &quot;G.169&quot;;
           &quot;G.248&quot; -&gt; &quot;G.247&quot;;
+          &quot;G.253&quot; -&gt; &quot;G.248&quot;;
           &quot;G.341&quot; -&gt; &quot;G.248&quot;;
+          &quot;G.341&quot; -&gt; &quot;G.253&quot;;
         }</p></object></div>
         </section>
         <section class="level-2" id="required-for">
@@ -448,7 +452,7 @@
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
-  <script src="../../_static/js/geometor_interactive.js?v=4430a5d4"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=b2892320"></script>
   <script src="../../_static/js/search_highlight.js"></script>
 
 </body>

@@ -10,7 +10,7 @@
 :categories: theorem, proof, number-theory, proportions
 :category: theorem, proof, number-theory, proportions
 :tags: book-viii, point, number, unit, proportional, multiply, part-aliquot, proportion, continued-proportion
-:dependencies: G.180, G.247, G.248, G.263, G.271, G.272
+:dependencies: G.169, G.180, G.247, G.248, G.263, G.269, G.271, G.272
 :excerpt: If numbers fall between each of two numbers and an unit in continued proportion, however many numbers fall between each of them and an unit in continued proportion, so many also will fall between the numbers themselves in continued proportion.
 
 .. _G.307:
@@ -35,15 +35,15 @@ G.307 numbers fall numbers
 
 .. step:: assert
 
-   Let the numbers :g:`D <g1:D>`, :g:`E <g1:E>` and :g:`F <g1:F>`, :g:`G <g1:G>` respectively fall between the two numbers :g:`A <g1:A>`, :g:`B <g1:B>` and the unit :g:`C <g1:C>` in continued proportion
+   Let the numbers :g:`D <g1:D>`, :g:`E <g1:E>` and :g:`F <g1:F>`, :g:`G <g1:G>` fall between the two numbers :g:`A <g1:A>`, :g:`B <g1:B>` and the unit :g:`C <g1:C>` in continued proportion
 
 .. step:: assert
 
-   I say that, as many numbers as have fallen between each of the numbers :g:`A <g1:A>`, :g:`B <g1:B>` and the unit :g:`C <g1:C>` in continued proportion, so many numbers will also fall between :g:`A <g1:A>`, :g:`B <g1:B>` in continued proportion.
+   I say that, as many numbers as have fallen between each of the numbers :g:`A <g1:A>`, :g:`B <g1:B>` and the unit :g:`C <g1:C>` in continued proportion, so many numbers will also fall between :g:`A <g1:A>`, :g:`B <g1:B>` in continued proportion
 
 .. step:: assert
 
-   Let :g:`D <g1:D>` by :term:`multiplying <G.269>` :g:`F <g1:F>` make :g:`H <g1:H>`, and let the numbers :g:`D <g1:D>`, :g:`F <g1:F>` by multiplying :g:`H <g1:H>` make :g:`K <g1:K>`, :g:`L <g1:L>` respectively.
+   Let :g:`D <g1:D>` by :term:`multiplying <G.269>` :g:`F <g1:F>` make :g:`H <g1:H>`, and let the numbers :g:`D <g1:D>`, :g:`F <g1:F>` by multiplying :g:`H <g1:H>` make :g:`K <g1:K>`, :g:`L <g1:L>`
 
 .. step:: assert
 
@@ -51,19 +51,19 @@ G.307 numbers fall numbers
 
 .. step:: assert ∵ numbers_proportional_multiple_def <G.263>
 
-   Therefore the unit :g:`C <g1:C>` :term:`measures <G.169>` the number :g:`D <g1:D>` the same number of times as :g:`D <g1:D>` measures :g:`E <g1:E>`.
+   the unit :g:`C <g1:C>` :term:`measures <G.169>` the number :g:`D <g1:D>` the same number of times as :g:`D <g1:D>` measures :g:`E <g1:E>`
 
 .. step:: assert
 
-   The unit :g:`C <g1:C>` measures the number :g:`D <g1:D>` according to the units in :g:`D <g1:D>`;
+   The unit :g:`C <g1:C>` measures the number :g:`D <g1:D>` according to the units in :g:`D <g1:D>`
 
 .. step:: assert
 
-   Therefore the number :g:`D <g1:D>` also measures :g:`E <g1:E>` according to the units in :g:`D <g1:D>`;
+   the number :g:`D <g1:D>` also measures :g:`E <g1:E>` according to the units in :g:`D <g1:D>`
 
 .. step:: assert
 
-   Therefore :g:`D <g1:D>` by multiplying itself has made :g:`E <g1:E>`.
+   :g:`D <g1:D>` by multiplying itself has made :g:`E <g1:E>`
 
 .. step:: assert
 
@@ -71,19 +71,19 @@ G.307 numbers fall numbers
 
 .. step:: assert
 
-   Therefore the unit :g:`C <g1:C>` measures the number :g:`D <g1:D>` the same number of times as :g:`E <g1:E>` measures :g:`A <g1:A>`.
+   the unit :g:`C <g1:C>` measures the number :g:`D <g1:D>` the same number of times as :g:`E <g1:E>` measures :g:`A <g1:A>`
 
 .. step:: assert
 
-   The unit :g:`C <g1:C>` measures the number :g:`D <g1:D>` according to the units in :g:`D <g1:D>`;
+   The unit :g:`C <g1:C>` measures the number :g:`D <g1:D>` according to the units in :g:`D <g1:D>`
 
 .. step:: assert
 
-   Therefore :g:`E <g1:E>` also measures :g:`A <g1:A>` according to the units in :g:`D <g1:D>`;
+   :g:`E <g1:E>` also measures :g:`A <g1:A>` according to the units in :g:`D <g1:D>`
 
 .. step:: assert
 
-   Therefore :g:`D <g1:D>` by multiplying :g:`E <g1:E>` has made :g:`A <g1:A>`.
+   :g:`D <g1:D>` by multiplying :g:`E <g1:E>` has made :g:`A <g1:A>`
 
 .. step:: assert
 
@@ -91,15 +91,15 @@ G.307 numbers fall numbers
 
 .. step:: assert
 
-   :g:`F <g1:F>` by multiplying itself has made :g:`G <g1:G>`, and by multiplying :g:`G <g1:G>` has made :g:`B <g1:B>`.
+   :g:`F <g1:F>` by multiplying itself has made :g:`G <g1:G>`, and by multiplying :g:`G <g1:G>` has made :g:`B <g1:B>`
 
 .. step:: assert
 
-   And, since :g:`D <g1:D>` by multiplying itself has made :g:`E <g1:E>` and by multiplying :g:`F <g1:F>` has made :g:`H <g1:H>`,
+   since :g:`D <g1:D>` by multiplying itself has made :g:`E <g1:E>` and by multiplying :g:`F <g1:F>` has made :g:`H <g1:H>`,
 
 .. step:: assert ∵ number_multiplying_numbers <G.271>
 
-   Therefore, as :g:`D <g1:D>` is to :g:`F <g1:F>`, so is :g:`E <g1:E>` to :g:`H <g1:H>`.
+   as :g:`D <g1:D>` is to :g:`F <g1:F>`, so is :g:`E <g1:E>` to :g:`H <g1:H>`
 
 .. step:: assert
 
@@ -107,75 +107,75 @@ G.307 numbers fall numbers
 
 .. step:: assert ∵ numbers_multiplying_number <G.272>
 
-   As :g:`D <g1:D>` is to :g:`F <g1:F>`, so is :g:`H <g1:H>` to :g:`G <g1:G>`.
+   As :g:`D <g1:D>` is to :g:`F <g1:F>`, so is :g:`H <g1:H>` to :g:`G <g1:G>`
 
 .. step:: assert
 
-   Therefore also, as :g:`E <g1:E>` is to :g:`H <g1:H>`, so is :g:`H <g1:H>` to :g:`G <g1:G>`.
+   also, as :g:`E <g1:E>` is to :g:`H <g1:H>`, so is :g:`H <g1:H>` to :g:`G <g1:G>`
 
 .. step:: assert
 
-   Since :g:`D <g1:D>` by multiplying the numbers :g:`E <g1:E>`, :g:`H <g1:H>` has made :g:`A <g1:A>`, :g:`K <g1:K>` respectively,
+   :g:`D <g1:D>` by multiplying the numbers :g:`E <g1:E>`, :g:`H <g1:H>` has made :g:`A <g1:A>`, :g:`K <g1:K>`,
 
 .. step:: assert ∵ number_multiplying_numbers <G.271>
 
-   Therefore, as :g:`E <g1:E>` is to :g:`H <g1:H>`, so is :g:`A <g1:A>` to :g:`K <g1:K>`.
+   as :g:`E <g1:E>` is to :g:`H <g1:H>`, so is :g:`A <g1:A>` to :g:`K <g1:K>`
 
 .. step:: assert
 
-   But, as :g:`E <g1:E>` is to :g:`H <g1:H>`, so is :g:`D <g1:D>` to :g:`F <g1:F>`;
+   But, as :g:`E <g1:E>` is to :g:`H <g1:H>`, so is :g:`D <g1:D>` to :g:`F <g1:F>`
 
 .. step:: assert
 
-   Therefore also, as :g:`D <g1:D>` is to :g:`F <g1:F>`, so is :g:`A <g1:A>` to :g:`K <g1:K>`.
+   also, as :g:`D <g1:D>` is to :g:`F <g1:F>`, so is :g:`A <g1:A>` to :g:`K <g1:K>`
 
 .. step:: assert
 
-   Since the numbers :g:`D <g1:D>`, :g:`F <g1:F>` by multiplying :g:`H <g1:H>` have made :g:`K <g1:K>`, :g:`L <g1:L>` respectively,
+   the numbers :g:`D <g1:D>`, :g:`F <g1:F>` by multiplying :g:`H <g1:H>` have made :g:`K <g1:K>`, :g:`L <g1:L>`,
 
 .. step:: assert ∵ numbers_multiplying_number <G.272>
 
-   Therefore, as :g:`D <g1:D>` is to :g:`F <g1:F>`, so is :g:`K <g1:K>` to :g:`L <g1:L>`.
+   as :g:`D <g1:D>` is to :g:`F <g1:F>`, so is :g:`K <g1:K>` to :g:`L <g1:L>`
 
 .. step:: assert
 
-   But, as :g:`D <g1:D>` is to :g:`F <g1:F>`, so is :g:`A <g1:A>` to :g:`K <g1:K>`;
+   But, as :g:`D <g1:D>` is to :g:`F <g1:F>`, so is :g:`A <g1:A>` to :g:`K <g1:K>`
 
 .. step:: assert
 
-   Therefore also, as :g:`A <g1:A>` is to :g:`K <g1:K>`, so is :g:`K <g1:K>` to :g:`L <g1:L>`.
+   also, as :g:`A <g1:A>` is to :g:`K <g1:K>`, so is :g:`K <g1:K>` to :g:`L <g1:L>`
 
 .. step:: assert
 
-   Further, since :g:`F <g1:F>` by multiplying the numbers :g:`H <g1:H>`, :g:`G <g1:G>` has made :g:`L <g1:L>`, :g:`B <g1:B>` respectively,
+   Further, since :g:`F <g1:F>` by multiplying the numbers :g:`H <g1:H>`, :g:`G <g1:G>` has made :g:`L <g1:L>`, :g:`B <g1:B>`,
 
 .. step:: assert ∵ number_multiplying_numbers <G.271>
 
-   Therefore, as :g:`H <g1:H>` is to :g:`G <g1:G>`, so is :g:`L <g1:L>` to :g:`B <g1:B>`.
+   as :g:`H <g1:H>` is to :g:`G <g1:G>`, so is :g:`L <g1:L>` to :g:`B <g1:B>`
 
 .. step:: assert
 
-   But, as :g:`H <g1:H>` is to :g:`G <g1:G>`, so is :g:`D <g1:D>` to :g:`F <g1:F>`;
+   But, as :g:`H <g1:H>` is to :g:`G <g1:G>`, so is :g:`D <g1:D>` to :g:`F <g1:F>`
 
 .. step:: assert
 
-   Therefore also, as :g:`D <g1:D>` is to :g:`F <g1:F>`, so is :g:`L <g1:L>` to :g:`B <g1:B>`.
+   also, as :g:`D <g1:D>` is to :g:`F <g1:F>`, so is :g:`L <g1:L>` to :g:`B <g1:B>`
 
 .. step:: assert
 
-   It was also proved that, as :g:`D <g1:D>` is to :g:`F <g1:F>`, so is :g:`A <g1:A>` to :g:`K <g1:K>` and :g:`K <g1:K>` to :g:`L <g1:L>`;
+   It was also proved that, as :g:`D <g1:D>` is to :g:`F <g1:F>`, so is :g:`A <g1:A>` to :g:`K <g1:K>` and :g:`K <g1:K>` to :g:`L <g1:L>`
 
 .. step:: assert
 
-   Therefore also, as :g:`A <g1:A>` is to :g:`K <g1:K>`, so is :g:`K <g1:K>` to :g:`L <g1:L>` and :g:`L <g1:L>` to :g:`B <g1:B>`.
+   also, as :g:`A <g1:A>` is to :g:`K <g1:K>`, so is :g:`K <g1:K>` to :g:`L <g1:L>` and :g:`L <g1:L>` to :g:`B <g1:B>`
 
 .. step:: assert
 
-   Therefore :g:`A <g1:A>`, :g:`K <g1:K>`, :g:`L <g1:L>`, :g:`B <g1:B>` are in continued proportion.
+   :g:`A <g1:A>`, :g:`K <g1:K>`, :g:`L <g1:L>`, :g:`B <g1:B>` are in continued proportion
 
 .. step:: conclude
 
-   Therefore, as many numbers as fall between each of the numbers :g:`A <g1:A>`, :g:`B <g1:B>` and the unit :g:`C <g1:C>` in continued proportion, so many also will fall between :g:`A <g1:A>`, :g:`B <g1:B>` in continued proportion.
+   as many numbers as fall between each of the numbers :g:`A <g1:A>`, :g:`B <g1:B>` and the unit :g:`C <g1:C>` in continued proportion, so many also will fall between :g:`A <g1:A>`, :g:`B <g1:B>` in continued proportion
 
 Dependency Graph
 ----------------
@@ -216,22 +216,31 @@ Dependency Graph
      "G.254" -> "G.169";
      "G.256" -> "G.169";
      "G.268" -> "G.169";
+     "G.270" -> "G.169";
+     "G.271" -> "G.169";
+     "G.307" -> "G.169";
      "G.176" -> "G.170";
      "G.257" -> "G.170";
      "G.180" -> "G.176";
      "G.271" -> "G.176";
      "G.272" -> "G.176";
+     "G.263" -> "G.180";
      "G.266" -> "G.180";
      "G.307" -> "G.180";
      "G.194" -> "G.181";
      "G.265" -> "G.181";
+     "G.268" -> "G.181";
      "G.261" -> "G.194";
      "G.262" -> "G.194";
      "G.266" -> "G.194";
      "G.268" -> "G.194";
+     "G.270" -> "G.194";
+     "G.271" -> "G.194";
      "G.248" -> "G.247";
      "G.268" -> "G.247";
      "G.269" -> "G.247";
+     "G.270" -> "G.247";
+     "G.271" -> "G.247";
      "G.307" -> "G.247";
      "G.253" -> "G.248";
      "G.256" -> "G.248";
@@ -247,14 +256,21 @@ Dependency Graph
      "G.271" -> "G.248";
      "G.272" -> "G.248";
      "G.307" -> "G.248";
+     "G.254" -> "G.253";
+     "G.256" -> "G.253";
      "G.257" -> "G.253";
+     "G.258" -> "G.253";
      "G.261" -> "G.253";
      "G.262" -> "G.253";
      "G.263" -> "G.253";
+     "G.265" -> "G.253";
+     "G.266" -> "G.253";
      "G.258" -> "G.254";
      "G.261" -> "G.254";
      "G.262" -> "G.254";
      "G.263" -> "G.254";
+     "G.265" -> "G.254";
+     "G.266" -> "G.254";
      "G.257" -> "G.256";
      "G.263" -> "G.256";
      "G.258" -> "G.257";
@@ -276,6 +292,7 @@ Dependency Graph
      "G.270" -> "G.269";
      "G.271" -> "G.269";
      "G.272" -> "G.269";
+     "G.307" -> "G.269";
      "G.272" -> "G.270";
      "G.272" -> "G.271";
      "G.307" -> "G.271";

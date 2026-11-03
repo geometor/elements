@@ -12,7 +12,7 @@ G.523 planes cut right — Code
 
 .. enunciation::
 
-   If two :term:`planes <G.7>` which cut one another be :term:`at right angles <G.32>` to any plane, their common section is :term:`at right angles to the same plane <G.505>`.
+   If two :term:`planes <G.7>` which cut one another be :term:`at right angles <G.33>` to any plane, their common section is :term:`at right angles to the same plane <G.505>`.
 
 .. picture:: g1.svg
 

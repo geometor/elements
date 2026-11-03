@@ -10,7 +10,7 @@
 :categories: theorem, proof, incommensurables, magnitudes
 :category: theorem, proof, incommensurables, magnitudes
 :tags: book-x, point, segment, quadrilateral, incommensurable, part-aliquot, straight-line, square, figure, contained-rectangle, equality, reductio-ad-absurdum, lemma
-:dependencies: G.4, G.9, G.63, G.81, G.372
+:dependencies: G.4, G.9, G.63, G.81, G.169, G.372
 :excerpt: If two incommensurable magnitudes be added together, the whole is incommensurable with each of them; and, if the whole be incommensurable with one of them, the original magnitudes is incommensurable.
 
 .. _G.388:
@@ -28,7 +28,7 @@ G.388 incommensurable magnitudes added
 .. signature:: theorem
 
    | :fn:`incommensurable_magnitudes_added <G.388>`\ ()
-   | **prove** the whole :g:`/ A C / <g1:/ A C />` is also incommensurable with each of the magnitudes :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`; :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are also incommensurable; :g:`< A C D E > <g2:< A C D E >>` is equal to the rectangle contained by :g:`/ A C / <g2:/ A C />`, :g:`/ C B / <g2:/ C B />`
+   | **prove** :g:`/ A C / <g1:/ A C />` is also incommensurable with each of the magnitudes :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`; :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are also incommensurable; :g:`< A C D E > <g2:< A C D E >>` is equal to the rectangle contained by :g:`/ A C / <g2:/ A C />`, :g:`/ C B / <g2:/ C B />`
 
 .. picture:: g1.svg
    :alt: Proposition 16 Diagram
@@ -46,27 +46,27 @@ G.388 incommensurable magnitudes added
 
 .. step:: assert
 
-   Let it measure them, if possible, and let it be :g:`D <g1:D>`.
+   Let it measure them, if possible, and let it be :g:`D <g1:D>`
 
 .. step:: assert
 
-   Since then :g:`D <g1:D>` measures :g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />`,
+   then :g:`D <g1:D>` measures :g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />`,
 
 .. step:: assert
 
-   Therefore it will also measure the remainder :g:`/ B C / <g1:/ B C />`.
+   it will also measure :g:`/ B C / <g1:/ B C />`
 
 .. step:: assert
 
-   It measures :g:`/ A B / <g1:/ A B />` also;
+   It measures :g:`/ A B / <g1:/ A B />` also
 
 .. step:: assert
 
-   Therefore :g:`D <g1:D>` measures :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`.
+   :g:`D <g1:D>` measures :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`
 
 .. step:: assert
 
-   Therefore :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are commensurable;
+   :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are commensurable
 
 .. step:: assert
 
@@ -74,23 +74,23 @@ G.388 incommensurable magnitudes added
 
 .. step:: assert
 
-   Which is impossible.
+   ⇒⇐
 
 .. step:: assert ∵ magnitudes_said_commensurable_def <G.372>
 
-   Therefore no magnitude will measure :g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />`; therefore :g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />` are incommensurable.
+   no magnitude will measure :g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />`; therefore :g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />` are incommensurable
 
 .. step:: assert
 
-   Similarly we can prove that :g:`/ A C / <g1:/ A C />`, :g:`/ B C / <g1:/ B C />` are also incommensurable.
+   Similarly we can prove that :g:`/ A C / <g1:/ A C />`, :g:`/ B C / <g1:/ B C />` are also incommensurable
 
 .. step:: assert
 
-   Therefore :g:`/ A C / <g1:/ A C />` is incommensurable with each of the magnitudes :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`.
+   :g:`/ A C / <g1:/ A C />` is incommensurable with each of the magnitudes :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`
 
 .. step:: assert
 
-   Next, let :g:`/ A C / <g1:/ A C />` be incommensurable with one of the magnitudes :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`.
+   Next, let :g:`/ A C / <g1:/ A C />` be incommensurable with one of the magnitudes :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`
 
 .. step:: assert
 
@@ -102,27 +102,27 @@ G.388 incommensurable magnitudes added
 
 .. step:: assert
 
-   Let it measure them, and let it be :g:`D <g1:D>`.
+   Let it measure them, and let it be :g:`D <g1:D>`
 
 .. step:: assert
 
-   Since then :g:`D <g1:D>` measures :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`,
+   then :g:`D <g1:D>` measures :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`,
 
 .. step:: assert
 
-   Therefore it will also measure the whole :g:`/ A C / <g1:/ A C />`.
+   it will also measure :g:`/ A C / <g1:/ A C />`
 
 .. step:: assert
 
-   It measures :g:`/ A B / <g1:/ A B />` also;
+   It measures :g:`/ A B / <g1:/ A B />` also
 
 .. step:: assert
 
-   Therefore :g:`D <g1:D>` measures :g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />`.
+   :g:`D <g1:D>` measures :g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />`
 
 .. step:: assert
 
-   Therefore :g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />` are commensurable;
+   :g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />` are commensurable
 
 .. step:: assert
 
@@ -130,11 +130,11 @@ G.388 incommensurable magnitudes added
 
 .. step:: assert
 
-   Which is impossible.
+   ⇒⇐
 
 .. step:: assert ∵ magnitudes_said_commensurable_def <G.372>
 
-   Therefore no magnitude will measure :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`; therefore :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are incommensurable.
+   no magnitude will measure :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`; therefore :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are incommensurable
 
 .. step:: assert
 
@@ -154,15 +154,15 @@ G.388 incommensurable magnitudes added
 
 .. step:: assert
 
-   :g:`/ C D / <g2:/ C D />` is :eq:`equal <g2:/ C D / = g2:/ C B />` to :g:`/ C B / <g2:/ C B />`;
+   :g:`/ C D / <g2:/ C D />` :eq:`= <g2:/ C D / = g2:/ C B />` :g:`/ C B / <g2:/ C B />`
 
 .. step:: conclude
 
-   And :g:`< A C D E > <g2:< A C D E >>` is the :term:`rectangle <G.81>` :g:`/ A C / <g2:/ A C />`, :g:`/ C D / <g2:/ C D />`, that is, the rectangle :g:`/ A C / <g2:/ A C />`, :g:`/ C B / <g2:/ C B />`.
+   :g:`< A C D E > <g2:< A C D E >>` is the rectangle :g:`/ A C / <g2:/ A C />`, :g:`/ C D / <g2:/ C D />`, that is, the rectangle :g:`/ A C / <g2:/ A C />`, :g:`/ C B / <g2:/ C B />`
 
 .. enunciation::
 
-   If to any :term:`straight line <G.4>` there be applied a parallelogram deficient by a square figure, the applied parallelogram is equal to the rectangle contained by the segments of the straight line resulting from the application.
+   If to any :term:`straight line <G.4>` there be applied a parallelogram deficient by a square figure, the applied parallelogram is equal to the :term:`rectangle contained <G.81>` by the segments of the straight line resulting from the application.
 
 Dependency Graph
 ----------------
@@ -182,13 +182,16 @@ Dependency Graph
      "G.7" [label="G.7", tooltip="G.7 (I.def.7): A plane surface lies evenly with the lines on itself.", fillcolor="#224422", URL="../G.7/index.html", target="_top"];
      "G.8" [label="G.8", tooltip="G.8 (I.def.13): A boundary is the extremity of anything.", fillcolor="#224422", URL="../G.8/index.html", target="_top"];
      "G.9" [label="G.9", tooltip="G.9 (I.def.14): A figure is that which is contained by any boundary or boundaries.", fillcolor="#224422", URL="../G.9/index.html", target="_top"];
-     "G.11" [label="G.11", tooltip="G.11 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
-     "G.12" [label="G.12", tooltip="G.12 (I.def.20): Of trilateral figures, an equilateral triangle < A B C > has three equal sides, an isosceles triangle < D E F > has two equal sides, and a scalene triangle < G H K > has three uneq...", fillcolor="#224422", URL="../G.12/index.html", target="_top"];
+     "G.12" [label="G.12", tooltip="G.12 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.12/index.html", target="_top"];
+     "G.13" [label="G.13", tooltip="G.13 (I.def.20): Of trilateral figures, an equilateral triangle < A B C > has three equal sides, an isosceles triangle < D E F > has two equal sides, and a scalene triangle < G H K > has three uneq...", fillcolor="#224422", URL="../G.13/index.html", target="_top"];
      "G.22" [label="G.22", tooltip="G.22 (I.def.8): A plane angle is the inclination to one another of two lines or arcs in a plane that meet and do not lie on the same line.", fillcolor="#224422", URL="../G.22/index.html", target="_top"];
-     "G.32" [label="G.32", tooltip="G.32 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.32/index.html", target="_top"];
+     "G.33" [label="G.33", tooltip="G.33 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.33/index.html", target="_top"];
      "G.63" [label="G.63", tooltip="G.63 (I.def.22): Of quadrilateral figures, a square is equilateral and right-angled; an oblong is right-angled but not equilateral; a rhombus is equilateral but not right-angled; a rhomboid has opp...", fillcolor="#224422", URL="../G.63/index.html", target="_top"];
      "G.81" [label="G.81", tooltip="G.81 (II.def.1): Any rectangular parallelogram is said to becontained by the twosegments containing theright angle.", fillcolor="#224422", URL="../G.81/index.html", target="_top"];
      "G.169" [label="G.169", tooltip="G.169 (V.def.1): A magnitude is apart of a magnitude, the less of the greater, when it measures the greater.", fillcolor="#224422", URL="../G.169/index.html", target="_top"];
+     "G.247" [label="G.247", tooltip="G.247 (VII.def.1): Anunit is that by virtue of which each of the things that exist is called one.", fillcolor="#224422", URL="../G.247/index.html", target="_top"];
+     "G.248" [label="G.248", tooltip="G.248 (VII.def.2): Anumber is a multitude composed ofunits.", fillcolor="#224422", URL="../G.248/index.html", target="_top"];
+     "G.253" [label="G.253", tooltip="G.253 (VII.def.3): Anumber is apart of a number, the less of the greater, when itmeasures the greater;", fillcolor="#224422", URL="../G.253/index.html", target="_top"];
      "G.372" [label="G.372", tooltip="G.372 (X.def.1): Those magnitudes are said to becommensurable which aremeasured by the same measure, and thoseincommensurable which cannot have any common measure.", fillcolor="#224422", URL="../G.372/index.html", target="_top"];
      "G.388" [label="G.388", tooltip="G.388 (X.16): If two incommensurable magnitudes be added together, the whole is incommensurable with each of them; and, if the whole be incommensurable with one of them, the original magnitudes ...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
@@ -196,28 +199,36 @@ Dependency Graph
      "G.4" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
+     "G.7" -> "G.2";
      "G.22" -> "G.2";
+     "G.33" -> "G.2";
      "G.4" -> "G.3";
      "G.8" -> "G.3";
      "G.7" -> "G.4";
-     "G.11" -> "G.4";
+     "G.12" -> "G.4";
      "G.22" -> "G.4";
-     "G.32" -> "G.4";
+     "G.33" -> "G.4";
      "G.81" -> "G.4";
      "G.388" -> "G.4";
      "G.7" -> "G.5";
      "G.22" -> "G.7";
      "G.9" -> "G.8";
+     "G.12" -> "G.9";
      "G.388" -> "G.9";
-     "G.12" -> "G.11";
-     "G.63" -> "G.11";
+     "G.13" -> "G.12";
      "G.63" -> "G.12";
-     "G.32" -> "G.22";
+     "G.63" -> "G.13";
+     "G.33" -> "G.22";
      "G.63" -> "G.22";
-     "G.81" -> "G.32";
+     "G.81" -> "G.33";
      "G.388" -> "G.63";
      "G.388" -> "G.81";
+     "G.253" -> "G.169";
      "G.372" -> "G.169";
+     "G.388" -> "G.169";
+     "G.248" -> "G.247";
+     "G.253" -> "G.248";
+     "G.372" -> "G.253";
      "G.388" -> "G.372";
    }
 

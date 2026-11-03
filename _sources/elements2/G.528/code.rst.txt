@@ -12,7 +12,7 @@ G.528 construct a solid angle out of three plane — Code
 
 .. enunciation::
 
-   Construct a :term:`solid angle <G.524>` out of three :term:`plane angles <G.22>` two of which, taken together in any manner, are greater than the remaining one: thus the three angles must be less than four :term:`right angles <G.32>`.
+   Construct a :term:`solid angle <G.524>` out of three :term:`plane angles <G.22>` two of which, taken together in any manner, are greater than the remaining one: thus the three angles must be less than four :term:`right angles <G.33>`.
 
 .. rubric:: ``g1.py``
 

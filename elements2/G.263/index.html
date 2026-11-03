@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=69acf51f" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=66998e95" />
   <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -97,25 +97,34 @@
         </div>
         <section class="level-2" id="dependency-graph">
         <h2>Dependency Graph<a class="headerlink" href="#dependency-graph" title="Link to this heading">¶</a></h2>
-        <div class="graphviz"><object data="../../_images/graphviz-2b3464468f4789393d89853557106eb9b04e4bda.svg" type="image/svg+xml" class="graphviz">
+        <div class="graphviz"><object data="../../_images/graphviz-5594cf732bf2b5854e99ac6094aabe32f7aa46fd.svg" type="image/svg+xml" class="graphviz">
         <p class="warning">digraph {
           bgcolor=&quot;transparent&quot;;
           node [shape=box, style=&quot;rounded,filled&quot;, fontname=&quot;Helvetica&quot;, fontsize=11, color=&quot;#d6d3cd&quot;, fontcolor=&quot;#ffffff&quot;];
           edge [color=&quot;#8c857b&quot;, fontcolor=&quot;#8c857b&quot;, arrowsize=0.75];
           rankdir=&quot;TB&quot;;
           &quot;G.169&quot; [label=&quot;G.169&quot;, tooltip=&quot;G.169 (V.def.1): A magnitude is apart of a magnitude, the less of the greater, when it measures the greater.&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.169/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.170&quot; [label=&quot;G.170&quot;, tooltip=&quot;G.170 (V.def.2): The greater is amultiple of the less when it ismeasured by the less.&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.170/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.176&quot; [label=&quot;G.176&quot;, tooltip=&quot;G.176 (V.def.5): Magnitudes are said tobe in the same ratio, the first to the second and the third to the fourth, when, if anyequimultiples whatever be taken of the first and third, and any equimul...&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.176/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.180&quot; [label=&quot;G.180&quot;, tooltip=&quot;G.180 (V.def.6): Let magnitudes which have thesame ratio be calledproportional.&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.180/index.html&quot;, target=&quot;_top&quot;];
           &quot;G.247&quot; [label=&quot;G.247&quot;, tooltip=&quot;G.247 (VII.def.1): Anunit is that by virtue of which each of the things that exist is called one.&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.247/index.html&quot;, target=&quot;_top&quot;];
           &quot;G.248&quot; [label=&quot;G.248&quot;, tooltip=&quot;G.248 (VII.def.2): Anumber is a multitude composed ofunits.&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.248/index.html&quot;, target=&quot;_top&quot;];
           &quot;G.253&quot; [label=&quot;G.253&quot;, tooltip=&quot;G.253 (VII.def.3): Anumber is apart of a number, the less of the greater, when itmeasures the greater;&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.253/index.html&quot;, target=&quot;_top&quot;];
           &quot;G.254&quot; [label=&quot;G.254&quot;, tooltip=&quot;G.254 (VII.def.4): Butparts when it does notmeasure it.&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.254/index.html&quot;, target=&quot;_top&quot;];
           &quot;G.256&quot; [label=&quot;G.256&quot;, tooltip=&quot;G.256 (VII.def.5): The greaternumber is amultiple of the less when it ismeasured by the less.&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.256/index.html&quot;, target=&quot;_top&quot;];
           &quot;G.263&quot; [label=&quot;G.263&quot;, tooltip=&quot;G.263 (VII.def.20): Numbers areproportional when the first is thesame multiple, or thesame part, or thesame parts, of the second that the third is of the fourth.&quot;, penwidth=2.5, color=&quot;#e8b85a&quot;, fillcolor=&quot;#4a453b&quot;, URL=&quot;index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.170&quot; -&gt; &quot;G.169&quot;;
           &quot;G.253&quot; -&gt; &quot;G.169&quot;;
           &quot;G.254&quot; -&gt; &quot;G.169&quot;;
           &quot;G.256&quot; -&gt; &quot;G.169&quot;;
+          &quot;G.176&quot; -&gt; &quot;G.170&quot;;
+          &quot;G.180&quot; -&gt; &quot;G.176&quot;;
+          &quot;G.263&quot; -&gt; &quot;G.180&quot;;
           &quot;G.248&quot; -&gt; &quot;G.247&quot;;
           &quot;G.253&quot; -&gt; &quot;G.248&quot;;
           &quot;G.256&quot; -&gt; &quot;G.248&quot;;
+          &quot;G.254&quot; -&gt; &quot;G.253&quot;;
+          &quot;G.256&quot; -&gt; &quot;G.253&quot;;
           &quot;G.263&quot; -&gt; &quot;G.253&quot;;
           &quot;G.263&quot; -&gt; &quot;G.254&quot;;
           &quot;G.263&quot; -&gt; &quot;G.256&quot;;
@@ -459,7 +468,7 @@
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
-  <script src="../../_static/js/geometor_interactive.js?v=4430a5d4"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=b2892320"></script>
   <script src="../../_static/js/search_highlight.js"></script>
 
 </body>

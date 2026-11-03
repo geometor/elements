@@ -10,7 +10,7 @@
 :categories: theorem, proof, number-theory
 :category: theorem, proof, number-theory
 :tags: book-vii, point, number, multiply, in-the-same-ratio, part-aliquot, unit, alternando, ratio
-:dependencies: G.176, G.248, G.263, G.266, G.269
+:dependencies: G.169, G.176, G.194, G.247, G.248, G.263, G.266, G.269
 :excerpt: If a number by multiplying two numbers make certain numbers, the numbers so produced will have the same ratio as the numbers multiplied.
 
 .. _G.271:
@@ -39,27 +39,27 @@ G.271 number multiplying numbers
 
 .. step:: assert
 
-   I say that, as :g:`B <g1:B>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to :g:`E <g1:E>`.
+   I say that, as :g:`B <g1:B>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to :g:`E <g1:E>`
 
 .. step:: assert
 
-   Since :g:`A <g1:A>` by multiplying :g:`B <g1:B>` has made :g:`D <g1:D>`,
+   :g:`A <g1:A>` by multiplying :g:`B <g1:B>` has made :g:`D <g1:D>`,
 
 .. step:: assert
 
-   Therefore :g:`B <g1:B>` :term:`measures <G.169>` :g:`D <g1:D>` according to the :term:`units <G.247>` in :g:`A <g1:A>`.
+   :g:`B <g1:B>` measures :g:`D <g1:D>` according to the units in :g:`A <g1:A>`
 
 .. step:: assert
 
-   The unit :g:`F <g1:F>` also measures the number :g:`A <g1:A>` according to the units in it;
+   The :term:`unit <G.247>` :g:`F <g1:F>` also :term:`measures <G.169>` the number :g:`A <g1:A>` according to the units in it
 
 .. step:: assert
 
-   Therefore the unit :g:`F <g1:F>` measures the number :g:`A <g1:A>` the same number of times that :g:`B <g1:B>` measures :g:`D <g1:D>`.
+   the unit :g:`F <g1:F>` measures the number :g:`A <g1:A>` the same number of times that :g:`B <g1:B>` measures :g:`D <g1:D>`
 
 .. step:: assert ∵ numbers_proportional_multiple_def <G.263>
 
-   Therefore, as the unit :g:`F <g1:F>` is to the number :g:`A <g1:A>`, so is :g:`B <g1:B>` to :g:`D <g1:D>`.
+   as the unit :g:`F <g1:F>` is to the number :g:`A <g1:A>`, so is :g:`B <g1:B>` to :g:`D <g1:D>`
 
 .. step:: assert
 
@@ -67,15 +67,15 @@ G.271 number multiplying numbers
 
 .. step:: assert
 
-   As the unit :g:`F <g1:F>` is to the number :g:`A <g1:A>`, so also is :g:`C <g1:C>` to :g:`E <g1:E>`;
+   As the unit :g:`F <g1:F>` is to the number :g:`A <g1:A>`, so also is :g:`C <g1:C>` to :g:`E <g1:E>`
 
 .. step:: assert
 
-   Therefore also, as :g:`B <g1:B>` is to :g:`D <g1:D>`, so is :g:`C <g1:C>` to :g:`E <g1:E>`.
+   also, as :g:`B <g1:B>` is to :g:`D <g1:D>`, so is :g:`C <g1:C>` to :g:`E <g1:E>`
 
 .. step:: conclude ∵ numbers_proportional_proportional <G.266>
 
-   Therefore, :term:`alternately <G.194>`, as :g:`B <g1:B>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to :g:`E <g1:E>`.
+   :term:`alternately <G.194>`, as :g:`B <g1:B>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to :g:`E <g1:E>`
 
 Dependency Graph
 ----------------
@@ -110,17 +110,21 @@ Dependency Graph
      "G.253" -> "G.169";
      "G.254" -> "G.169";
      "G.256" -> "G.169";
+     "G.271" -> "G.169";
      "G.176" -> "G.170";
      "G.257" -> "G.170";
      "G.180" -> "G.176";
      "G.271" -> "G.176";
+     "G.263" -> "G.180";
      "G.266" -> "G.180";
      "G.194" -> "G.181";
      "G.261" -> "G.194";
      "G.262" -> "G.194";
      "G.266" -> "G.194";
+     "G.271" -> "G.194";
      "G.248" -> "G.247";
      "G.269" -> "G.247";
+     "G.271" -> "G.247";
      "G.253" -> "G.248";
      "G.256" -> "G.248";
      "G.257" -> "G.248";
@@ -130,14 +134,19 @@ Dependency Graph
      "G.266" -> "G.248";
      "G.269" -> "G.248";
      "G.271" -> "G.248";
+     "G.254" -> "G.253";
+     "G.256" -> "G.253";
      "G.257" -> "G.253";
+     "G.258" -> "G.253";
      "G.261" -> "G.253";
      "G.262" -> "G.253";
      "G.263" -> "G.253";
+     "G.266" -> "G.253";
      "G.258" -> "G.254";
      "G.261" -> "G.254";
      "G.262" -> "G.254";
      "G.263" -> "G.254";
+     "G.266" -> "G.254";
      "G.257" -> "G.256";
      "G.263" -> "G.256";
      "G.258" -> "G.257";

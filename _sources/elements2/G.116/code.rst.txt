@@ -12,7 +12,7 @@ G.116 segments circle diameter — Code
 
 .. enunciation::
 
-   Of :term:`segments <G.4>` in a :term:`circle <G.10>` the :term:`diameter <G.61>` is greatest, and of the rest the nearer to the :term:`center <G.14>` is always greater than the more remote.
+   Of :term:`segments <G.4>` in a :term:`circle <G.10>` the :term:`diameter <G.61>` is greatest, and of the rest the nearer to the :term:`center <G.11>` is always greater than the more remote.
 
 .. picture:: g1.svg
 

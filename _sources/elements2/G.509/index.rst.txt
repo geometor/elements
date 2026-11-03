@@ -10,7 +10,7 @@
 :categories: theorem, proof, solid-geometry
 :category: theorem, proof, solid-geometry
 :tags: book-xi, point, segment, circle, straight-line, parallel-straight-lines, plane-surface, parallel, plane, reductio-ad-absurdum
-:dependencies: G.1, G.4, G.7, G.52, G.504
+:dependencies: G.1, G.2, G.4, G.7, G.52, G.504
 :excerpt: If two segments be parallel and points be taken at random on each of them, the segment joining the points is in the same plane with the parallel lines.
 
 .. _G.509:
@@ -43,7 +43,7 @@ G.509 segments parallel points
 
 .. step:: assert ∵ planes_cut_common <G.504>
 
-   It will then make, as section in the plane of reference, a segment.
+   It will then make, as section in the plane of reference, a segment
 
 .. step:: assert
 
@@ -51,11 +51,11 @@ G.509 segments parallel points
 
 .. step:: assert
 
-   Therefore :g:`( E G F ) <g1:( E G F )>`, :g:`/ E F / <g1:/ E F />` will enclose an area: which is impossible.
+   :g:`( E G F ) <g1:( E G F )>`, :g:`/ E F / <g1:/ E F />` will enclose an area ⇒⇐
 
 .. step:: conclude
 
-   Therefore the segment joined from :g:`E <g1:E>` to :g:`F <g1:F>` is not in a plane more elevated; therefore the segment joined from :g:`E <g1:E>` to :g:`F <g1:F>` is in the plane through the parallel lines :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`.
+   the segment joined from :g:`E <g1:E>` to :g:`F <g1:F>` is not in a plane more elevated; therefore the segment joined from :g:`E <g1:E>` to :g:`F <g1:F>` is in the plane through the parallel lines :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`
 
 Dependency Graph
 ----------------
@@ -82,7 +82,12 @@ Dependency Graph
      "G.509" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
+     "G.7" -> "G.2";
+     "G.52" -> "G.2";
+     "G.504" -> "G.2";
+     "G.509" -> "G.2";
      "G.4" -> "G.3";
+     "G.504" -> "G.3";
      "G.7" -> "G.4";
      "G.52" -> "G.4";
      "G.504" -> "G.4";

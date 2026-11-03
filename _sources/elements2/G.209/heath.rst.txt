@@ -12,7 +12,7 @@ G.209 height of a figure — Heath
 
 .. enunciation::
 
-   :term:`**The height** <height>` of any :term:`figure <G.9>` is the :term:`perpendicular <G.32>` drawn from the vertex to the base.
+   :term:`**The height** <height>` of any :term:`figure <G.9>` is the :term:`perpendicular <G.33>` drawn from the vertex to the base.
 
 Dependency Graph
 ----------------
@@ -33,25 +33,27 @@ Dependency Graph
      "G.8" [label="G.8", tooltip="G.8 (I.def.13): A boundary is the extremity of anything.", fillcolor="#224422", URL="../G.8/index.html", target="_top"];
      "G.9" [label="G.9", tooltip="G.9 (I.def.14): A figure is that which is contained by any boundary or boundaries.", fillcolor="#224422", URL="../G.9/index.html", target="_top"];
      "G.22" [label="G.22", tooltip="G.22 (I.def.8): A plane angle is the inclination to one another of two lines or arcs in a plane that meet and do not lie on the same line.", fillcolor="#224422", URL="../G.22/index.html", target="_top"];
-     "G.32" [label="G.32", tooltip="G.32 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.32/index.html", target="_top"];
+     "G.33" [label="G.33", tooltip="G.33 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.33/index.html", target="_top"];
      "G.209" [label="G.209", tooltip="G.209 (VI.def.4): The height of anyfigure is theperpendicular drawn from the vertex to the base.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
+     "G.7" -> "G.2";
      "G.22" -> "G.2";
+     "G.33" -> "G.2";
      "G.4" -> "G.3";
      "G.8" -> "G.3";
      "G.7" -> "G.4";
      "G.22" -> "G.4";
-     "G.32" -> "G.4";
+     "G.33" -> "G.4";
      "G.7" -> "G.5";
      "G.22" -> "G.7";
      "G.9" -> "G.8";
      "G.209" -> "G.9";
-     "G.32" -> "G.22";
-     "G.209" -> "G.32";
+     "G.33" -> "G.22";
+     "G.209" -> "G.33";
    }
 
 Required for

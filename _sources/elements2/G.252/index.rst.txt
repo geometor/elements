@@ -44,55 +44,55 @@ G.252 numbers prime find
 
 .. step:: assert
 
-   Then :g:`D <g1:D>` either measures, or does not measure, :g:`C <g1:C>`.
+   Then :g:`D <g1:D>` either measures, or does not measure, :g:`C <g1:C>`
 
 .. step:: assert
 
-   First, let it measure it.
+   First, let it measure it
 
 .. step:: assert
 
-   It measures :g:`A <g1:A>`, :g:`B <g1:B>` also ;
+   It measures :g:`A <g1:A>`, :g:`B <g1:B>` also
 
 .. step:: assert
 
-   Therefore :g:`D <g1:D>` measures :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` ;
+   :g:`D <g1:D>` measures :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`
 
 .. step:: assert
 
-   Therefore :g:`D <g1:D>` is a common measure of :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`.
+   :g:`D <g1:D>` is a common measure of :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`
 
 .. step:: assert
 
-   If :g:`D <g1:D>` is not the greatest common measure of :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, some number which is greater than :g:`D <g1:D>` will measure the numbers :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`.
+   If :g:`D <g1:D>` is not the greatest common measure of :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, some number which > :g:`D <g1:D>` will measure the numbers :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`
 
 .. step:: assert
 
-   Let such a number measure them, and let it be :g:`E <g1:E>`.
+   Let such a number measure them, and let it be :g:`E <g1:E>`
 
 .. step:: assert
 
-   Since then :g:`E <g1:E>` measures :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, it will also measure :g:`A <g1:A>`, :g:`B <g1:B>` ;
+   then :g:`E <g1:E>` measures :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, it will also measure :g:`A <g1:A>`, :g:`B <g1:B>`
 
 .. step:: assert ∵ numbers_prime_find <G.251>
 
-   Therefore it will also measure the greatest common measure of :g:`A <g1:A>`, :g:`B <g1:B>`.
+   it will also measure the greatest common measure of :g:`A <g1:A>`, :g:`B <g1:B>`
 
 .. step:: assert
 
-   The greatest common measure of :g:`A <g1:A>`, :g:`B <g1:B>` is :g:`D <g1:D>` ;
+   The greatest common measure of :g:`A <g1:A>`, :g:`B <g1:B>` is :g:`D <g1:D>`
 
 .. step:: assert
 
-   Therefore :g:`E <g1:E>` measures :g:`D <g1:D>`, the greater the less : which is impossible.
+   :g:`E <g1:E>` measures :g:`D <g1:D>`, the greater the less ⇒⇐
 
 .. step:: assert
 
-   Therefore no number which is greater than :g:`D <g1:D>` will measure the numbers :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` ;
+   no number which > :g:`D <g1:D>` will measure the numbers :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`
 
 .. step:: assert
 
-   Therefore :g:`D <g1:D>` is the greatest common measure of :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`.
+   :g:`D <g1:D>` is the greatest common measure of :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`
 
 .. step:: assert
 
@@ -100,27 +100,27 @@ G.252 numbers prime find
 
 .. step:: assert
 
-   I say first that :g:`C <g1:C>`, :g:`D <g1:D>` are not prime to one another.
+   I say first that :g:`C <g1:C>`, :g:`D <g1:D>` are not prime to one another
 
 .. step:: assert
 
-   Since :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` are not prime to one another, some number will measure them.
+   :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` are not prime to one another, some number will measure them
 
 .. step:: assert ∵ numbers_prime_find <G.251>
 
-   Now that which measures :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` will also measure :g:`A <g1:A>`, :g:`B <g1:B>`, and will measure :g:`D <g1:D>`, the greatest common measure of :g:`A <g1:A>`, :g:`B <g1:B>`.
+   Now that which measures :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` will also measure :g:`A <g1:A>`, :g:`B <g1:B>`, and will measure :g:`D <g1:D>`, the greatest common measure of :g:`A <g1:A>`, :g:`B <g1:B>`
 
 .. step:: assert
 
-   It measures :g:`C <g1:C>` also ;
+   It measures :g:`C <g1:C>` also
 
 .. step:: assert
 
-   Therefore some number will measure the numbers :g:`D <g1:D>`, :g:`C <g1:C>` ;
+   some number will measure the numbers :g:`D <g1:D>`, :g:`C <g1:C>`
 
 .. step:: assert
 
-   Therefore :g:`D <g1:D>`, :g:`C <g1:C>` are not prime to one another.
+   :g:`D <g1:D>`, :g:`C <g1:C>` are not prime to one another
 
 .. step:: construct
 
@@ -128,79 +128,79 @@ G.252 numbers prime find
 
 .. step:: assert
 
-   Since :g:`E <g1:E>` measures :g:`D <g1:D>`, and :g:`D <g1:D>` measures :g:`A <g1:A>`, :g:`B <g1:B>`,
+   :g:`E <g1:E>` measures :g:`D <g1:D>`, and :g:`D <g1:D>` measures :g:`A <g1:A>`, :g:`B <g1:B>`,
 
 .. step:: assert
 
-   Therefore :g:`E <g1:E>` also measures :g:`A <g1:A>`, :g:`B <g1:B>`.
+   :g:`E <g1:E>` also measures :g:`A <g1:A>`, :g:`B <g1:B>`
 
 .. step:: assert
 
-   It measures :g:`C <g1:C>` also ;
+   It measures :g:`C <g1:C>` also
 
 .. step:: assert
 
-   Therefore :g:`E <g1:E>` measures :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` ;
+   :g:`E <g1:E>` measures :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`
 
 .. step:: assert
 
-   Therefore :g:`E <g1:E>` is a common measure of :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`.
+   :g:`E <g1:E>` is a common measure of :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`
 
 .. step:: assert
 
-   I say next that it is also the greatest.
+   I say next that it is also the greatest
 
 .. step:: assert
 
-   If :g:`E <g1:E>` is not the greatest common measure of :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, some number which is greater than :g:`E <g1:E>` will measure the numbers :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`.
+   If :g:`E <g1:E>` is not the greatest common measure of :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, some number which > :g:`E <g1:E>` will measure the numbers :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`
 
 .. step:: assert
 
-   Let such a number measure them, and let it be :g:`F <g1:F>`.
+   Let such a number measure them, and let it be :g:`F <g1:F>`
 
 .. step:: assert
 
-   Since :g:`F <g1:F>` measures :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, it also measures :g:`A <g1:A>`, :g:`B <g1:B>` ;
+   :g:`F <g1:F>` measures :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, it also measures :g:`A <g1:A>`, :g:`B <g1:B>`
 
 .. step:: assert ∵ numbers_prime_find <G.251>
 
-   Therefore it will also measure the greatest common measure of :g:`A <g1:A>`, :g:`B <g1:B>`.
+   it will also measure the greatest common measure of :g:`A <g1:A>`, :g:`B <g1:B>`
 
 .. step:: assert
 
-   The greatest common measure of :g:`A <g1:A>`, :g:`B <g1:B>` is :g:`D <g1:D>` ;
+   The greatest common measure of :g:`A <g1:A>`, :g:`B <g1:B>` is :g:`D <g1:D>`
 
 .. step:: assert
 
-   Therefore :g:`F <g1:F>` measures :g:`D <g1:D>`.
+   :g:`F <g1:F>` measures :g:`D <g1:D>`
 
 .. step:: assert
 
-   It measures :g:`C <g1:C>` also ;
+   It measures :g:`C <g1:C>` also
 
 .. step:: assert
 
-   Therefore :g:`F <g1:F>` measures :g:`D <g1:D>`, :g:`C <g1:C>` ;
+   :g:`F <g1:F>` measures :g:`D <g1:D>`, :g:`C <g1:C>`
 
 .. step:: assert ∵ numbers_prime_find <G.251>
 
-   Therefore it will also measure the greatest common measure of :g:`D <g1:D>`, :g:`C <g1:C>`.
+   it will also measure the greatest common measure of :g:`D <g1:D>`, :g:`C <g1:C>`
 
 .. step:: assert
 
-   The greatest common measure of :g:`D <g1:D>`, :g:`C <g1:C>` is :g:`E <g1:E>` ;
+   The greatest common measure of :g:`D <g1:D>`, :g:`C <g1:C>` is :g:`E <g1:E>`
 
 .. step:: assert
 
-   Therefore :g:`F <g1:F>` measures :g:`E <g1:E>`, the greater the less : which is impossible.
+   :g:`F <g1:F>` measures :g:`E <g1:E>`, the greater the less ⇒⇐
 
 .. step:: assert
 
-   Therefore no number which is greater than :g:`E <g1:E>` will measure the numbers :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` ;
+   no number which > :g:`E <g1:E>` will measure the numbers :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`
 
 .. step:: conclude
 
-   Therefore :g:`E <g1:E>` is the greatest common measure of :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`.
+   :g:`E <g1:E>` is the greatest common measure of :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`
 
 Dependency Graph
 ----------------
@@ -226,6 +226,7 @@ Dependency Graph
      "G.248" -> "G.247";
      "G.249" -> "G.247";
      "G.250" -> "G.247";
+     "G.251" -> "G.247";
      "G.250" -> "G.248";
      "G.251" -> "G.248";
      "G.252" -> "G.248";

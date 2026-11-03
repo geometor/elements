@@ -12,7 +12,7 @@ G.114 circle equal segments — Code
 
 .. enunciation::
 
-   In a :term:`circle <G.10>` equal :term:`segments <G.4>` are :term:`equally distant <G.113>` from the :term:`center <G.14>`, and those which are equally distant from the center are equal.
+   In a :term:`circle <G.10>` equal :term:`segments <G.4>` are :term:`equally distant <G.113>` from the :term:`center <G.11>`, and those which are equally distant from the center are equal.
 
 .. picture:: g1.svg
 

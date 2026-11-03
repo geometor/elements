@@ -48,7 +48,7 @@ Dependency Graph
      "G.8" [label="G.8", tooltip="G.8 (I.def.13): A boundary is the extremity of anything.", fillcolor="#224422", URL="../G.8/index.html", target="_top"];
      "G.9" [label="G.9", tooltip="G.9 (I.def.14): A figure is that which is contained by any boundary or boundaries.", fillcolor="#224422", URL="../G.9/index.html", target="_top"];
      "G.10" [label="G.10", tooltip="G.10 (I.def.15): A circle ( A B ) is a plane figure contained by one arc defined by a center A and a point B establishing its defining radius / A B /, such that all segments / A B /, / A C /, / A D...", fillcolor="#224422", URL="../G.10/index.html", target="_top"];
-     "G.11" [label="G.11", tooltip="G.11 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
+     "G.12" [label="G.12", tooltip="G.12 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.12/index.html", target="_top"];
      "G.169" [label="G.169", tooltip="G.169 (V.def.1): A magnitude is apart of a magnitude, the less of the greater, when it measures the greater.", fillcolor="#224422", URL="../G.169/index.html", target="_top"];
      "G.170" [label="G.170", tooltip="G.170 (V.def.2): The greater is amultiple of the less when it ismeasured by the less.", fillcolor="#224422", URL="../G.170/index.html", target="_top"];
      "G.176" [label="G.176", tooltip="G.176 (V.def.5): Magnitudes are said tobe in the same ratio, the first to the second and the third to the fourth, when, if anyequimultiples whatever be taken of the first and third, and any equimul...", fillcolor="#224422", URL="../G.176/index.html", target="_top"];
@@ -65,11 +65,13 @@ Dependency Graph
      "G.3" -> "G.2";
      "G.4" -> "G.2";
      "G.6" -> "G.2";
+     "G.7" -> "G.2";
      "G.4" -> "G.3";
+     "G.6" -> "G.3";
      "G.8" -> "G.3";
      "G.7" -> "G.4";
      "G.10" -> "G.4";
-     "G.11" -> "G.4";
+     "G.12" -> "G.4";
      "G.564" -> "G.4";
      "G.566" -> "G.4";
      "G.567" -> "G.4";
@@ -79,9 +81,10 @@ Dependency Graph
      "G.10" -> "G.7";
      "G.9" -> "G.8";
      "G.10" -> "G.9";
+     "G.12" -> "G.9";
      "G.566" -> "G.10";
      "G.568" -> "G.10";
-     "G.564" -> "G.11";
+     "G.564" -> "G.12";
      "G.170" -> "G.169";
      "G.176" -> "G.170";
      "G.180" -> "G.176";

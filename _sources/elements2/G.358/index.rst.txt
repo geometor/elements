@@ -10,7 +10,7 @@
 :categories: theorem, proof, number-theory
 :category: theorem, proof, number-theory
 :tags: book-ix, segment, odd-number, even-number, unit, number
-:dependencies: G.302, G.352, G.355
+:dependencies: G.247, G.302, G.352, G.355
 :excerpt: If from an odd number an even number be subtracted, the remainder is odd.
 
 .. _G.358:
@@ -28,7 +28,7 @@ G.358 odd number even
 .. signature:: theorem
 
    | :fn:`odd_number_even <G.358>`\ ()
-   | **prove** the remainder :g:`/ A C / <g1:/ A C />` is odd
+   | **prove** :g:`/ A C / <g1:/ A C />` is odd
 
 .. picture:: g1.svg
    :alt: Book IX, Proposition 27
@@ -43,19 +43,19 @@ G.358 odd number even
 
 .. step:: assert ∵ odd_number_divisible_def <G.352>
 
-   Therefore :g:`/ B D / <g1:/ B D />` is even.
+   :g:`/ B D / <g1:/ B D />` is even
 
 .. step:: assert
 
-   :g:`/ B C / <g1:/ B C />` is also even ;
+   :g:`/ B C / <g1:/ B C />` is also even
 
 .. step:: assert ∵ even_number_even <G.355>
 
-   Therefore the remainder :g:`/ C D / <g1:/ C D />` is even.
+   :g:`/ C D / <g1:/ C D />` is even
 
 .. step:: conclude ∵ odd_number_divisible_def <G.352>
 
-   Therefore :g:`/ A C / <g1:/ A C />` is odd.
+   :g:`/ A C / <g1:/ A C />` is odd
 
 Dependency Graph
 ----------------
@@ -73,6 +73,7 @@ Dependency Graph
      "G.355" [label="G.355", tooltip="G.355 (IX.24): If from an even number an even number be subtracted, the remainder is even.", fillcolor="#222244", URL="../G.355/index.html", target="_top"];
      "G.358" [label="G.358", tooltip="G.358 (IX.27): If from an odd number an even number be subtracted, the remainder is odd.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.352" -> "G.247";
+     "G.358" -> "G.247";
      "G.352" -> "G.302";
      "G.355" -> "G.302";
      "G.358" -> "G.302";

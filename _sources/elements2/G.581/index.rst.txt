@@ -51,51 +51,51 @@ G.581 segment cut extreme
 
 .. step:: assert
 
-   Since :g:`/ A C / <g1:/ A C />` is double of :g:`/ D C / <g1:/ D C />`,
+   :g:`/ A C / <g1:/ A C />` is double of :g:`/ D C / <g1:/ D C />`,
 
 .. step:: assert
 
-   Therefore the square on :g:`/ A C / <g1:/ A C />` is quadruple of the square on :g:`/ D C / <g1:/ D C />`, that is, :g:`< R S > <g1:< R S >>` is quadruple of :g:`< F G > <g1:< F G >>`.
+   the square on :g:`/ A C / <g1:/ A C />` is quadruple of the square on :g:`/ D C / <g1:/ D C />`, that is, :g:`< R S > <g1:< R S >>` is quadruple of :g:`< F G > <g1:< F G >>`
 
 .. step:: assert
 
-   And, since the :term:`rectangle <G.81>` :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` is equal to the square on :g:`/ A C / <g1:/ A C />`, and :g:`< C E > <g1:< C E >>` is the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`,
+   since the :term:`rectangle <G.81>` :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` is equal to the square on :g:`/ A C / <g1:/ A C />`, and :g:`< C E > <g1:< C E >>` is the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`,
 
 .. step:: assert
 
-   Therefore :g:`< C E > <g1:< C E >>` is :eq:`equal <g1:< C E > = g1:< R S >>` to :g:`< R S > <g1:< R S >>`.
+   :g:`< C E > <g1:< C E >>` is :eq:`equal <g1:< C E > = g1:< R S >>` to :g:`< R S > <g1:< R S >>`
 
 .. step:: assert
 
-   :g:`< R S > <g1:< R S >>` is quadruple of :g:`< F G > <g1:< F G >>` ;
+   :g:`< R S > <g1:< R S >>` is quadruple of :g:`< F G > <g1:< F G >>`
 
 .. step:: assert
 
-   Therefore :g:`< C E > <g1:< C E >>` is also quadruple of :g:`< F G > <g1:< F G >>`.
+   :g:`< C E > <g1:< C E >>` is also quadruple of :g:`< F G > <g1:< F G >>`
 
 .. step:: assert
 
-   Since :g:`/ A D / <g1:/ A D />` is :eq:`equal <g1:/ A D / = g1:/ D C />` to :g:`/ D C / <g1:/ D C />`,
+   :g:`/ A D / <g1:/ A D />` :eq:`= <g1:/ A D / = g1:/ D C />` :g:`/ D C / <g1:/ D C />`,
 
 .. step:: assert
 
-   :g:`/ H K / <g1:/ H K />` is also :eq:`equal <g1:/ H K / = g1:/ K F />` to :g:`/ K F / <g1:/ K F />`.
+   :g:`/ H K / <g1:/ H K />` :eq:`= <g1:/ H K / = g1:/ K F />` :g:`/ K F / <g1:/ K F />`
 
 .. step:: assert
 
-   Hence the square :g:`< G F > <g1:< G F >>` is also :eq:`equal <g1:< G F > = g1:< H L >>` to the square :g:`< H L > <g1:< H L >>`.
+   the square :g:`< G F > <g1:< G F >>` is also :eq:`equal <g1:< G F > = g1:< H L >>` to the square :g:`< H L > <g1:< H L >>`
 
 .. step:: assert
 
-   Therefore :g:`/ G K / <g1:/ G K />` is :eq:`equal <g1:/ G K / = g1:/ K L /; g1:/ M N / = g1:/ N E />` to :g:`/ K L / <g1:/ K L />`, that is, :g:`/ M N / <g1:/ M N />` to :g:`/ N E / <g1:/ N E />` ; hence :g:`< M F > <g1:< M F >>` is also :eq:`equal <g1:< M F > = g1:< F E >>` to :g:`< F E > <g1:< F E >>`.
+   :g:`/ G K / <g1:/ G K />` :eq:`= <g1:/ G K / = g1:/ K L /; g1:/ M N / = g1:/ N E />` :g:`/ K L / <g1:/ K L />`, that is, :g:`/ M N / <g1:/ M N />` to :g:`/ N E / <g1:/ N E />` ; hence :g:`< M F > <g1:< M F >>` is also :eq:`equal <g1:< M F > = g1:< F E >>` to :g:`< F E > <g1:< F E >>`
 
 .. step:: assert
 
-   :g:`< M F > <g1:< M F >>` is :eq:`equal <g1:< M F > = g1:< C G >>` to :g:`< C G > <g1:< C G >>` ;
+   :g:`< M F > <g1:< M F >>` is :eq:`equal <g1:< M F > = g1:< C G >>` to :g:`< C G > <g1:< C G >>`
 
 .. step:: assert
 
-   Therefore :g:`< C G > <g1:< C G >>` is also :eq:`equal <g1:< C G > = g1:< F E >>` to :g:`< F E > <g1:< F E >>`.
+   :g:`< C G > <g1:< C G >>` is also :eq:`equal <g1:< C G > = g1:< F E >>` to :g:`< F E > <g1:< F E >>`
 
 .. step:: construct
 
@@ -103,31 +103,31 @@ G.581 segment cut extreme
 
 .. step:: assert
 
-   Therefore the :term:`gnomon <G.86>` :g:`< O P Q > <g1:< O P Q >>` is :eq:`equal <g1:< O P Q > = g1:< C E >>` to :g:`< C E > <g1:< C E >>`.
+   the :term:`gnomon <G.86>` :g:`< O P Q > <g1:< O P Q >>` is :eq:`equal <g1:< O P Q > = g1:< C E >>` to :g:`< C E > <g1:< C E >>`
 
 .. step:: assert
 
-   :g:`< C E > <g1:< C E >>` was proved quadruple of :g:`< G F > <g1:< G F >>` ;
+   :g:`< C E > <g1:< C E >>` was proved quadruple of :g:`< G F > <g1:< G F >>`
 
 .. step:: assert
 
-   Therefore the gnomon :g:`< O P Q > <g1:< O P Q >>` is also quadruple of the square :g:`< F G > <g1:< F G >>`.
+   the gnomon :g:`< O P Q > <g1:< O P Q >>` is also quadruple of the square :g:`< F G > <g1:< F G >>`
 
 .. step:: assert
 
-   Therefore the gnomon :g:`< O P Q > <g1:< O P Q >>` and the square :g:`< F G > <g1:< F G >>` are five times :g:`< F G > <g1:< F G >>`.
+   the gnomon :g:`< O P Q > <g1:< O P Q >>` and the square :g:`< F G > <g1:< F G >>` are five times :g:`< F G > <g1:< F G >>`
 
 .. step:: assert
 
-   The gnomon :g:`< O P Q > <g1:< O P Q >>` and the square :g:`< F G > <g1:< F G >>` are the square :g:`< D N > <g1:< D N >>`.
+   The gnomon :g:`< O P Q > <g1:< O P Q >>` and the square :g:`< F G > <g1:< F G >>` are the square :g:`< D N > <g1:< D N >>`
 
 .. step:: assert
 
-   :g:`< D N > <g1:< D N >>` is the square on :g:`/ D B / <g1:/ D B />`, and :g:`< G F > <g1:< G F >>` the square on :g:`/ D C / <g1:/ D C />`.
+   :g:`< D N > <g1:< D N >>` is the square on :g:`/ D B / <g1:/ D B />`, and :g:`< G F > <g1:< G F >>` the square on :g:`/ D C / <g1:/ D C />`
 
 .. step:: conclude
 
-   Therefore the square on :g:`/ D B / <g1:/ D B />` is five times the square on :g:`/ D C / <g1:/ D C />`.
+   the square on :g:`/ D B / <g1:/ D B />` is five times the square on :g:`/ D C / <g1:/ D C />`
 
 Dependency Graph
 ----------------
@@ -149,11 +149,11 @@ Dependency Graph
      "G.8" [label="G.8", tooltip="G.8 (I.def.13): A boundary is the extremity of anything.", fillcolor="#224422", URL="../G.8/index.html", target="_top"];
      "G.9" [label="G.9", tooltip="G.9 (I.def.14): A figure is that which is contained by any boundary or boundaries.", fillcolor="#224422", URL="../G.9/index.html", target="_top"];
      "G.10" [label="G.10", tooltip="G.10 (I.def.15): A circle ( A B ) is a plane figure contained by one arc defined by a center A and a point B establishing its defining radius / A B /, such that all segments / A B /, / A C /, / A D...", fillcolor="#224422", URL="../G.10/index.html", target="_top"];
-     "G.11" [label="G.11", tooltip="G.11 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
-     "G.12" [label="G.12", tooltip="G.12 (I.def.20): Of trilateral figures, an equilateral triangle < A B C > has three equal sides, an isosceles triangle < D E F > has two equal sides, and a scalene triangle < G H K > has three uneq...", fillcolor="#224422", URL="../G.12/index.html", target="_top"];
-     "G.14" [label="G.14", tooltip="G.14 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.", fillcolor="#224422", URL="../G.14/index.html", target="_top"];
+     "G.11" [label="G.11", tooltip="G.11 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
+     "G.12" [label="G.12", tooltip="G.12 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.12/index.html", target="_top"];
+     "G.13" [label="G.13", tooltip="G.13 (I.def.20): Of trilateral figures, an equilateral triangle < A B C > has three equal sides, an isosceles triangle < D E F > has two equal sides, and a scalene triangle < G H K > has three uneq...", fillcolor="#224422", URL="../G.13/index.html", target="_top"];
      "G.22" [label="G.22", tooltip="G.22 (I.def.8): A plane angle is the inclination to one another of two lines or arcs in a plane that meet and do not lie on the same line.", fillcolor="#224422", URL="../G.22/index.html", target="_top"];
-     "G.32" [label="G.32", tooltip="G.32 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.32/index.html", target="_top"];
+     "G.33" [label="G.33", tooltip="G.33 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.33/index.html", target="_top"];
      "G.61" [label="G.61", tooltip="G.61 (I.def.17): A diameter of a circle is any segment drawn through the center and terminated in both directions by the arc of the circle; it bisects the circle.", fillcolor="#224422", URL="../G.61/index.html", target="_top"];
      "G.63" [label="G.63", tooltip="G.63 (I.def.22): Of quadrilateral figures, a square is equilateral and right-angled; an oblong is right-angled but not equilateral; a rhombus is equilateral but not right-angled; a rhomboid has opp...", fillcolor="#224422", URL="../G.63/index.html", target="_top"];
      "G.81" [label="G.81", tooltip="G.81 (II.def.1): Any rectangular parallelogram is said to becontained by the twosegments containing theright angle.", fillcolor="#224422", URL="../G.81/index.html", target="_top"];
@@ -164,19 +164,23 @@ Dependency Graph
      "G.3" -> "G.1";
      "G.4" -> "G.1";
      "G.10" -> "G.1";
-     "G.14" -> "G.1";
+     "G.11" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
      "G.6" -> "G.2";
+     "G.7" -> "G.2";
      "G.22" -> "G.2";
+     "G.33" -> "G.2";
      "G.242" -> "G.2";
      "G.4" -> "G.3";
+     "G.6" -> "G.3";
      "G.8" -> "G.3";
      "G.7" -> "G.4";
      "G.10" -> "G.4";
      "G.11" -> "G.4";
+     "G.12" -> "G.4";
      "G.22" -> "G.4";
-     "G.32" -> "G.4";
+     "G.33" -> "G.4";
      "G.61" -> "G.4";
      "G.81" -> "G.4";
      "G.581" -> "G.4";
@@ -187,16 +191,17 @@ Dependency Graph
      "G.22" -> "G.7";
      "G.9" -> "G.8";
      "G.10" -> "G.9";
+     "G.12" -> "G.9";
      "G.581" -> "G.9";
-     "G.14" -> "G.10";
+     "G.11" -> "G.10";
      "G.61" -> "G.10";
-     "G.12" -> "G.11";
-     "G.63" -> "G.11";
+     "G.61" -> "G.11";
+     "G.13" -> "G.12";
      "G.63" -> "G.12";
-     "G.61" -> "G.14";
-     "G.32" -> "G.22";
+     "G.63" -> "G.13";
+     "G.33" -> "G.22";
      "G.63" -> "G.22";
-     "G.81" -> "G.32";
+     "G.81" -> "G.33";
      "G.86" -> "G.61";
      "G.581" -> "G.63";
      "G.581" -> "G.81";

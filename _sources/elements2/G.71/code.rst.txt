@@ -12,7 +12,7 @@ G.71 construct a parallelogram equal to a triangle — Code
 
 .. enunciation::
 
-   Construct, in a given :term:`angle <G.22>`, a parallelogram equal in area to a given :term:`triangle <G.11>`.
+   Construct, in a given :term:`angle <G.22>`, a parallelogram equal in area to a given :term:`triangle <G.12>`.
 
 .. picture:: g1.svg
 

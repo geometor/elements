@@ -12,7 +12,7 @@ G.165 pentagon equilateral equiangular — Code
 
 .. enunciation::
 
-   In a given pentagon, which is :term:`equilateral <G.12>` and equiangular, to inscribe a :term:`circle <G.10>`.
+   In a given pentagon, which is :term:`equilateral <G.13>` and equiangular, to inscribe a :term:`circle <G.10>`.
 
 .. picture:: g1.svg
 

@@ -10,7 +10,7 @@
 :categories: theorem, proof, solid-geometry
 :category: theorem, proof, solid-geometry
 :tags: book-xi, point, segment, angle, triangle, polygon, plane-surface, straight-line, right-angle, parallel-straight-lines, right-angles-to-plane, plane-angle, trilateral, parallel, plane, reductio-ad-absurdum
-:dependencies: G.4, G.7, G.32, G.42, G.52, G.504, G.505, G.516
+:dependencies: G.4, G.7, G.14, G.22, G.33, G.42, G.52, G.504, G.505, G.516
 :excerpt: Planes to which the same segment is at right angles is parallel.
 
 .. _G.517:
@@ -23,7 +23,7 @@ G.517 planes segment right
 
 .. enunciation::
 
-   :term:`Planes <G.7>` to which the same :term:`segment <G.4>` is :term:`at right angles <G.32>` is :term:`parallel <G.52>`.
+   :term:`Planes <G.7>` to which the same :term:`segment <G.4>` is :term:`at right angles <G.33>` is :term:`parallel <G.52>`.
 
 .. signature:: theorem
 
@@ -59,39 +59,39 @@ G.517 planes segment right
 
 .. step:: construct
 
-   :fn:`segment <G.13>`\ (:g:`A <g1:A>`, :g:`K <g1:K>`) → :g:`/ A K / <g1:/ A K />`, :fn:`segment <G.13>`\ (:g:`B <g1:B>`, :g:`K <g1:K>`) → :g:`/ B K / <g1:/ B K />`
+   :fn:`segment <G.14>`\ (:g:`A <g1:A>`, :g:`K <g1:K>`) → :g:`/ A K / <g1:/ A K />`, :fn:`segment <G.14>`\ (:g:`B <g1:B>`, :g:`K <g1:K>`) → :g:`/ B K / <g1:/ B K />`
 
 .. step:: assert ∵ segment_right_angles_def <G.505>
 
-   Since :g:`/ A B / <g1:/ A B />` is :term:`at right angles to the plane <G.505>` :g:`< E F > <g1:< E F >>`, therefore :g:`/ A B / <g1:/ A B />` is also at right angles to :g:`/ B K / <g1:/ B K />` which is a segment in the plane :g:`< E F > <g1:< E F >>` produced
+   :g:`/ A B / <g1:/ A B />` is at right angles to the plane :g:`< E F > <g1:< E F >>`, therefore :g:`/ A B / <g1:/ A B />` is also at right angles to :g:`/ B K / <g1:/ B K />` which is a segment in the plane :g:`< E F > <g1:< E F >>` produced
 
 .. step:: assert
 
-   Therefore :g:`< A B K ) <g1:< A B K )>` is right.
+   :g:`< A B K ) <g1:< A B K )>` is right
 
 .. step:: assert
 
-   For the same reason :g:`< B A K ) <g1:< B A K )>` is also right.
+   For the same reason :g:`< B A K ) <g1:< B A K )>` is also right
 
 .. step:: assert
 
-   Thus, in :g:`< A B K > <g1:< A B K >>`, the two :term:`angles <G.22>` :g:`< A B K ) <g1:< A B K )>`, :g:`< B A K ) <g1:< B A K )>` are equal to two right angles:
+   in :g:`< A B K > <g1:< A B K >>`, the two :term:`angles <G.22>` :g:`< A B K ) <g1:< A B K )>`, :g:`< B A K ) <g1:< B A K )>` are equal to two right angles:
 
 .. step:: assert ∵ two_angles_less_than_two_right <G.42>
 
-   Which is impossible.
+   ⇒⇐
 
 .. step:: assert
 
-   Therefore the planes :g:`< C D > <g1:< C D >>`, :g:`< E F > <g1:< E F >>` will not meet when produced
+   the planes :g:`< C D > <g1:< C D >>`, :g:`< E F > <g1:< E F >>` will not meet when produced
 
 .. step:: assert ∵ parallel_planes_meet_def <G.516>
 
-   Therefore the planes :g:`< C D > <g1:< C D >>`, :g:`< E F > <g1:< E F >>` are parallel.
+   the planes :g:`< C D > <g1:< C D >>`, :g:`< E F > <g1:< E F >>` are parallel
 
 .. step:: conclude
 
-   Therefore planes to which the same segment is at right angles are parallel.
+   planes to which the same segment is at right angles are parallel
 
 Dependency Graph
 ----------------
@@ -113,10 +113,10 @@ Dependency Graph
      "G.8" [label="G.8", tooltip="G.8 (I.def.13): A boundary is the extremity of anything.", fillcolor="#224422", URL="../G.8/index.html", target="_top"];
      "G.9" [label="G.9", tooltip="G.9 (I.def.14): A figure is that which is contained by any boundary or boundaries.", fillcolor="#224422", URL="../G.9/index.html", target="_top"];
      "G.10" [label="G.10", tooltip="G.10 (I.def.15): A circle ( A B ) is a plane figure contained by one arc defined by a center A and a point B establishing its defining radius / A B /, such that all segments / A B /, / A C /, / A D...", fillcolor="#224422", URL="../G.10/index.html", target="_top"];
-     "G.11" [label="G.11", tooltip="G.11 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
-     "G.12" [label="G.12", tooltip="G.12 (I.def.20): Of trilateral figures, an equilateral triangle < A B C > has three equal sides, an isosceles triangle < D E F > has two equal sides, and a scalene triangle < G H K > has three uneq...", fillcolor="#224422", URL="../G.12/index.html", target="_top"];
-     "G.13" [label="G.13", tooltip="G.13 (I.post.1): Construct a segment / A B / between any two points A, B.", fillcolor="#444422", URL="../G.13/index.html", target="_top"];
-     "G.14" [label="G.14", tooltip="G.14 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.", fillcolor="#224422", URL="../G.14/index.html", target="_top"];
+     "G.11" [label="G.11", tooltip="G.11 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
+     "G.12" [label="G.12", tooltip="G.12 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.12/index.html", target="_top"];
+     "G.13" [label="G.13", tooltip="G.13 (I.def.20): Of trilateral figures, an equilateral triangle < A B C > has three equal sides, an isosceles triangle < D E F > has two equal sides, and a scalene triangle < G H K > has three uneq...", fillcolor="#224422", URL="../G.13/index.html", target="_top"];
+     "G.14" [label="G.14", tooltip="G.14 (I.post.1): Construct a segment / A B / between any two points A, B.", fillcolor="#444422", URL="../G.14/index.html", target="_top"];
      "G.15" [label="G.15", tooltip="G.15 (I.post.3): Construct a circle ( A B ) with center A and defining radius point B.", fillcolor="#444422", URL="../G.15/index.html", target="_top"];
      "G.16" [label="G.16", tooltip="G.16 (I.cn.1): Things equal to the same thing are equal to one another.", fillcolor="#442222", URL="../G.16/index.html", target="_top"];
      "G.17" [label="G.17", tooltip="G.17 (I.1): Construct an equilateral triangle on a given segment.", fillcolor="#222244", URL="../G.17/index.html", target="_top"];
@@ -128,12 +128,13 @@ Dependency Graph
      "G.23" [label="G.23", tooltip="G.23 (I.cn.4): Things / A B /, / D E / that coincide with one another are equal to one another.", fillcolor="#442222", URL="../G.23/index.html", target="_top"];
      "G.24" [label="G.24", tooltip="G.24 (I.4): Triangles with two sides and the included angle equal are congruent (SAS).", fillcolor="#222244", URL="../G.24/index.html", target="_top"];
      "G.25" [label="G.25", tooltip="G.25 (I.5): In an isosceles triangle, the angles at the base are equal, and if the equal sides are extended, the angles under the base are equal.", fillcolor="#222244", URL="../G.25/index.html", target="_top"];
-     "G.27" [label="G.27", tooltip="G.27 (I.7): On the same segment and on the same side, there cannot be constructed two distinct triangles with both pairs of conterminous sides equal.", fillcolor="#222244", URL="../G.27/index.html", target="_top"];
-     "G.28" [label="G.28", tooltip="G.28 (I.8): Triangles with all three corresponding sides equal have their corresponding angles equal (SSS).", fillcolor="#222244", URL="../G.28/index.html", target="_top"];
-     "G.32" [label="G.32", tooltip="G.32 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.32/index.html", target="_top"];
-     "G.33" [label="G.33", tooltip="G.33 (I.11): Construct a segment at right angles to a given line from a given point on it.", fillcolor="#222244", URL="../G.33/index.html", target="_top"];
-     "G.35" [label="G.35", tooltip="G.35 (I.cn.2): If equals are added to equals, the wholes are equal.", fillcolor="#442222", URL="../G.35/index.html", target="_top"];
-     "G.36" [label="G.36", tooltip="G.36 (I.13): A segment standing on a line makes either two right angles or adjacent angles summing to two right angles.", fillcolor="#222244", URL="../G.36/index.html", target="_top"];
+     "G.26" [label="G.26", tooltip="G.26 (I.cn.5): The whole is greater than the part.", fillcolor="#442222", URL="../G.26/index.html", target="_top"];
+     "G.28" [label="G.28", tooltip="G.28 (I.7): On the same segment and on the same side, there cannot be constructed two distinct triangles with both pairs of conterminous sides equal.", fillcolor="#222244", URL="../G.28/index.html", target="_top"];
+     "G.29" [label="G.29", tooltip="G.29 (I.8): Triangles with all three corresponding sides equal have their corresponding angles equal (SSS).", fillcolor="#222244", URL="../G.29/index.html", target="_top"];
+     "G.33" [label="G.33", tooltip="G.33 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.33/index.html", target="_top"];
+     "G.34" [label="G.34", tooltip="G.34 (I.11): Construct a segment at right angles to a given line from a given point on it.", fillcolor="#222244", URL="../G.34/index.html", target="_top"];
+     "G.36" [label="G.36", tooltip="G.36 (I.cn.2): If equals are added to equals, the wholes are equal.", fillcolor="#442222", URL="../G.36/index.html", target="_top"];
+     "G.37" [label="G.37", tooltip="G.37 (I.13): A segment standing on a line makes either two right angles or adjacent angles summing to two right angles.", fillcolor="#222244", URL="../G.37/index.html", target="_top"];
      "G.42" [label="G.42", tooltip="G.42 (I.17): In any triangle, the sum of any two angles is less than two right angles.", fillcolor="#222244", URL="../G.42/index.html", target="_top"];
      "G.52" [label="G.52", tooltip="G.52 (I.def.23): Parallel lines are lines in the same plane which, extended indefinitely in both directions, do not meet.", fillcolor="#224422", URL="../G.52/index.html", target="_top"];
      "G.504" [label="G.504", tooltip="G.504 (XI.3): If two planes cut one another, their common section is a segment.", fillcolor="#222244", URL="../G.504/index.html", target="_top"];
@@ -144,23 +145,41 @@ Dependency Graph
      "G.3" -> "G.1";
      "G.4" -> "G.1";
      "G.10" -> "G.1";
-     "G.13" -> "G.1";
+     "G.11" -> "G.1";
      "G.14" -> "G.1";
+     "G.15" -> "G.1";
+     "G.17" -> "G.1";
      "G.20" -> "G.1";
-     "G.27" -> "G.1";
-     "G.33" -> "G.1";
+     "G.21" -> "G.1";
+     "G.24" -> "G.1";
+     "G.25" -> "G.1";
+     "G.28" -> "G.1";
+     "G.29" -> "G.1";
+     "G.34" -> "G.1";
+     "G.37" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
      "G.6" -> "G.2";
+     "G.7" -> "G.2";
+     "G.18" -> "G.2";
      "G.22" -> "G.2";
+     "G.33" -> "G.2";
+     "G.34" -> "G.2";
+     "G.37" -> "G.2";
+     "G.52" -> "G.2";
+     "G.504" -> "G.2";
      "G.4" -> "G.3";
+     "G.6" -> "G.3";
      "G.8" -> "G.3";
      "G.20" -> "G.3";
-     "G.27" -> "G.3";
+     "G.28" -> "G.3";
+     "G.29" -> "G.3";
+     "G.504" -> "G.3";
      "G.7" -> "G.4";
      "G.10" -> "G.4";
      "G.11" -> "G.4";
-     "G.13" -> "G.4";
+     "G.12" -> "G.4";
+     "G.14" -> "G.4";
      "G.17" -> "G.4";
      "G.18" -> "G.4";
      "G.20" -> "G.4";
@@ -168,11 +187,11 @@ Dependency Graph
      "G.22" -> "G.4";
      "G.24" -> "G.4";
      "G.25" -> "G.4";
-     "G.27" -> "G.4";
      "G.28" -> "G.4";
-     "G.32" -> "G.4";
+     "G.29" -> "G.4";
      "G.33" -> "G.4";
-     "G.36" -> "G.4";
+     "G.34" -> "G.4";
+     "G.37" -> "G.4";
      "G.52" -> "G.4";
      "G.504" -> "G.4";
      "G.505" -> "G.4";
@@ -188,57 +207,74 @@ Dependency Graph
      "G.517" -> "G.7";
      "G.9" -> "G.8";
      "G.10" -> "G.9";
-     "G.24" -> "G.9";
-     "G.14" -> "G.10";
+     "G.12" -> "G.9";
+     "G.11" -> "G.10";
      "G.15" -> "G.10";
      "G.17" -> "G.10";
+     "G.20" -> "G.10";
      "G.21" -> "G.10";
-     "G.12" -> "G.11";
-     "G.24" -> "G.11";
-     "G.28" -> "G.11";
-     "G.42" -> "G.11";
+     "G.15" -> "G.11";
+     "G.17" -> "G.11";
+     "G.20" -> "G.11";
+     "G.21" -> "G.11";
+     "G.13" -> "G.12";
      "G.17" -> "G.12";
+     "G.20" -> "G.12";
+     "G.24" -> "G.12";
      "G.25" -> "G.12";
+     "G.28" -> "G.12";
+     "G.29" -> "G.12";
+     "G.34" -> "G.12";
+     "G.42" -> "G.12";
      "G.17" -> "G.13";
-     "G.20" -> "G.13";
      "G.25" -> "G.13";
-     "G.27" -> "G.13";
-     "G.15" -> "G.14";
+     "G.17" -> "G.14";
+     "G.20" -> "G.14";
+     "G.25" -> "G.14";
+     "G.28" -> "G.14";
+     "G.34" -> "G.14";
+     "G.517" -> "G.14";
      "G.17" -> "G.15";
      "G.20" -> "G.15";
      "G.21" -> "G.15";
      "G.17" -> "G.16";
      "G.20" -> "G.16";
      "G.21" -> "G.16";
-     "G.36" -> "G.16";
+     "G.37" -> "G.16";
      "G.20" -> "G.17";
-     "G.33" -> "G.17";
+     "G.34" -> "G.17";
      "G.20" -> "G.18";
      "G.25" -> "G.18";
      "G.42" -> "G.18";
      "G.20" -> "G.19";
+     "G.25" -> "G.19";
      "G.21" -> "G.20";
      "G.25" -> "G.21";
-     "G.33" -> "G.21";
+     "G.34" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
      "G.28" -> "G.22";
-     "G.32" -> "G.22";
-     "G.36" -> "G.22";
+     "G.29" -> "G.22";
+     "G.33" -> "G.22";
+     "G.34" -> "G.22";
+     "G.37" -> "G.22";
      "G.42" -> "G.22";
+     "G.517" -> "G.22";
      "G.24" -> "G.23";
+     "G.29" -> "G.23";
      "G.25" -> "G.24";
-     "G.27" -> "G.25";
-     "G.28" -> "G.27";
-     "G.33" -> "G.28";
-     "G.33" -> "G.32";
-     "G.36" -> "G.32";
-     "G.42" -> "G.32";
-     "G.505" -> "G.32";
-     "G.517" -> "G.32";
-     "G.36" -> "G.33";
-     "G.36" -> "G.35";
-     "G.42" -> "G.36";
+     "G.28" -> "G.25";
+     "G.28" -> "G.26";
+     "G.29" -> "G.28";
+     "G.34" -> "G.29";
+     "G.34" -> "G.33";
+     "G.37" -> "G.33";
+     "G.42" -> "G.33";
+     "G.505" -> "G.33";
+     "G.517" -> "G.33";
+     "G.37" -> "G.34";
+     "G.37" -> "G.36";
+     "G.42" -> "G.37";
      "G.517" -> "G.42";
      "G.517" -> "G.52";
      "G.517" -> "G.504";

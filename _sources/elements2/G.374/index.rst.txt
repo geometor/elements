@@ -40,15 +40,15 @@ G.374 commensurable magnitudes find
 
 .. step:: assert
 
-   Now the magnitude :g:`/ A B / <g1:/ A B />` either measures :g:`/ C D / <g1:/ C D />` or it does not.
+   Now the magnitude :g:`/ A B / <g1:/ A B />` either measures :g:`/ C D / <g1:/ C D />` or it does not
 
 .. step:: assert
 
-   If then it measures it—and it measures itself also—:g:`/ A B / <g1:/ A B />` is a common measure of :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`.
+   If then it measures it—and it measures itself also—:g:`/ A B / <g1:/ A B />` is a common measure of :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`
 
 .. step:: assert
 
-   It is manifest that it is also the greatest ; for a greater magnitude than the magnitude :g:`/ A B / <g1:/ A B />` will not measure :g:`/ A B / <g1:/ A B />`.
+   It is manifest that it is also the greatest ; for a greater magnitude than the magnitude :g:`/ A B / <g1:/ A B />` will not measure :g:`/ A B / <g1:/ A B />`
 
 .. step:: assert
 
@@ -60,7 +60,7 @@ G.374 commensurable magnitudes find
 
 .. step:: assert
 
-   Let :g:`/ A B / <g1:/ A B />`, measuring :g:`/ E D / <g1:/ E D />`, leave :g:`/ E C / <g1:/ E C />` less than itself, let :g:`/ E C / <g1:/ E C />`, measuring :g:`/ F B / <g1:/ F B />`, leave :g:`/ A F / <g1:/ A F />` less than itself, and let :g:`/ A F / <g1:/ A F />` measure :g:`/ C E / <g1:/ C E />`.
+   Let :g:`/ A B / <g1:/ A B />`, measuring :g:`/ E D / <g1:/ E D />`, leave :g:`/ E C / <g1:/ E C />` less than itself, let :g:`/ E C / <g1:/ E C />`, measuring :g:`/ F B / <g1:/ F B />`, leave :g:`/ A F / <g1:/ A F />` less than itself, and let :g:`/ A F / <g1:/ A F />` measure :g:`/ C E / <g1:/ C E />`
 
 .. step:: assert
 
@@ -68,39 +68,39 @@ G.374 commensurable magnitudes find
 
 .. step:: assert
 
-   Therefore :g:`/ A F / <g1:/ A F />` will also measure :g:`/ F B / <g1:/ F B />`.
+   :g:`/ A F / <g1:/ A F />` will also measure :g:`/ F B / <g1:/ F B />`
 
 .. step:: assert
 
-   It measures itself also ;
+   It measures itself also
 
 .. step:: assert
 
-   Therefore :g:`/ A F / <g1:/ A F />` will also measure the whole :g:`/ A B / <g1:/ A B />`.
+   :g:`/ A F / <g1:/ A F />` will also measure :g:`/ A B / <g1:/ A B />`
 
 .. step:: assert
 
-   :g:`/ A B / <g1:/ A B />` measures :g:`/ D E / <g1:/ D E />` ;
+   :g:`/ A B / <g1:/ A B />` measures :g:`/ D E / <g1:/ D E />`
 
 .. step:: assert
 
-   Therefore :g:`/ A F / <g1:/ A F />` will also measure :g:`/ E D / <g1:/ E D />`.
+   :g:`/ A F / <g1:/ A F />` will also measure :g:`/ E D / <g1:/ E D />`
 
 .. step:: assert
 
-   It measures :g:`/ C E / <g1:/ C E />` also ;
+   It measures :g:`/ C E / <g1:/ C E />` also
 
 .. step:: assert
 
-   Therefore it also measures the whole :g:`/ C D / <g1:/ C D />`.
+   it also measures :g:`/ C D / <g1:/ C D />`
 
 .. step:: assert
 
-   Therefore :g:`/ A F / <g1:/ A F />` is a common measure of :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`.
+   :g:`/ A F / <g1:/ A F />` is a common measure of :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`
 
 .. step:: assert
 
-   I say next that it is also the greatest.
+   I say next that it is also the greatest
 
 .. step:: assert
 
@@ -108,47 +108,47 @@ G.374 commensurable magnitudes find
 
 .. step:: assert
 
-   Let it be :g:`G <g1:G>`.
+   Let it be :g:`G <g1:G>`
 
 .. step:: assert
 
-   Since then :g:`G <g1:G>` measures :g:`/ A B / <g1:/ A B />`, while :g:`/ A B / <g1:/ A B />` measures :g:`/ E D / <g1:/ E D />`,
+   then :g:`G <g1:G>` measures :g:`/ A B / <g1:/ A B />`, while :g:`/ A B / <g1:/ A B />` measures :g:`/ E D / <g1:/ E D />`,
 
 .. step:: assert
 
-   Therefore :g:`G <g1:G>` will also measure :g:`/ E D / <g1:/ E D />`.
+   :g:`G <g1:G>` will also measure :g:`/ E D / <g1:/ E D />`
 
 .. step:: assert
 
-   It measures the whole :g:`/ C D / <g1:/ C D />` also ;
+   It measures :g:`/ C D / <g1:/ C D />` also
 
 .. step:: assert
 
-   Therefore :g:`G <g1:G>` will also measure the remainder :g:`/ C E / <g1:/ C E />`.
+   :g:`G <g1:G>` will also measure :g:`/ C E / <g1:/ C E />`
 
 .. step:: assert
 
-   :g:`/ C E / <g1:/ C E />` measures :g:`/ F B / <g1:/ F B />` ;
+   :g:`/ C E / <g1:/ C E />` measures :g:`/ F B / <g1:/ F B />`
 
 .. step:: assert
 
-   Therefore :g:`G <g1:G>` will also measure :g:`/ F B / <g1:/ F B />`.
+   :g:`G <g1:G>` will also measure :g:`/ F B / <g1:/ F B />`
 
 .. step:: assert
 
-   It measures the whole :g:`/ A B / <g1:/ A B />` also,
+   It measures :g:`/ A B / <g1:/ A B />` also,
 
 .. step:: assert
 
-   And it will therefore measure the remainder :g:`/ A F / <g1:/ A F />`, the greater the less : which is impossible.
+   it will therefore measure :g:`/ A F / <g1:/ A F />`, the greater the less ⇒⇐
 
 .. step:: assert
 
-   Therefore no magnitude greater than :g:`/ A F / <g1:/ A F />` will measure :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` ; therefore :g:`/ A F / <g1:/ A F />` is the greatest common measure of :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`.
+   no magnitude greater than :g:`/ A F / <g1:/ A F />` will measure :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` ; therefore :g:`/ A F / <g1:/ A F />` is the greatest common measure of :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`
 
 .. step:: conclude
 
-   PORISM. From this it is manifest that, if a magnitude measure two magnitudes, it will also measure their greatest common measure.
+   PORISM. From this it is manifest that, if a magnitude measure two magnitudes, it will also measure their greatest common measure
 
 Dependency Graph
 ----------------
@@ -161,12 +161,19 @@ Dependency Graph
      edge [color="#8c857b", fontcolor="#8c857b", arrowsize=0.75];
      rankdir="TB";
      "G.169" [label="G.169", tooltip="G.169 (V.def.1): A magnitude is apart of a magnitude, the less of the greater, when it measures the greater.", fillcolor="#224422", URL="../G.169/index.html", target="_top"];
+     "G.247" [label="G.247", tooltip="G.247 (VII.def.1): Anunit is that by virtue of which each of the things that exist is called one.", fillcolor="#224422", URL="../G.247/index.html", target="_top"];
+     "G.248" [label="G.248", tooltip="G.248 (VII.def.2): Anumber is a multitude composed ofunits.", fillcolor="#224422", URL="../G.248/index.html", target="_top"];
+     "G.253" [label="G.253", tooltip="G.253 (VII.def.3): Anumber is apart of a number, the less of the greater, when itmeasures the greater;", fillcolor="#224422", URL="../G.253/index.html", target="_top"];
      "G.372" [label="G.372", tooltip="G.372 (X.def.1): Those magnitudes are said to becommensurable which aremeasured by the same measure, and thoseincommensurable which cannot have any common measure.", fillcolor="#224422", URL="../G.372/index.html", target="_top"];
      "G.373" [label="G.373", tooltip="G.373 (X.2): If, when the less of two unequal magnitudes is continually subtracted in turn from the greater, that which is left never measures the one before it, the magnitudes is incommensurab...", fillcolor="#222244", URL="../G.373/index.html", target="_top"];
      "G.374" [label="G.374", tooltip="G.374 (X.3): Given two commensurable magnitudes, to find their greatest common measure.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.253" -> "G.169";
      "G.372" -> "G.169";
      "G.373" -> "G.169";
      "G.374" -> "G.169";
+     "G.248" -> "G.247";
+     "G.253" -> "G.248";
+     "G.372" -> "G.253";
      "G.373" -> "G.372";
      "G.374" -> "G.372";
      "G.374" -> "G.373";

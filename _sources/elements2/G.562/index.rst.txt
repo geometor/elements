@@ -9,7 +9,7 @@
 :categories: definition, solid-geometry
 :category: definition, solid-geometry
 :tags: book-xi, right-angle, contained-rectangle, figure, cylinder, parallelogram, rectangle
-:dependencies: G.9, G.32, G.81
+:dependencies: G.9, G.33, G.81
 :excerpt: When, one side of those about theright angle in arectangular parallelogram remaining fixed, the parallelogram is carried round and restored again to the same position from which it began to be moved, thefigure so comprehended is acylinder.
 
 .. _G.562:
@@ -22,7 +22,7 @@ G.562 cylinder
 
 .. enunciation::
 
-   When, one side of those about the:term:`right angle <G.32>` in a:term:`rectangular parallelogram <G.81>` remaining fixed, the parallelogram is carried round and restored again to the same position from which it began to be moved, the:term:`figure <G.9>` so comprehended is a:term:`**cylinder** <cylinder>`.
+   When, one side of those about the:term:`right angle <G.33>` in a:term:`rectangular parallelogram <G.81>` remaining fixed, the parallelogram is carried round and restored again to the same position from which it began to be moved, the:term:`figure <G.9>` so comprehended is a:term:`**cylinder** <cylinder>`.
 
 .. signature:: def
 
@@ -47,7 +47,7 @@ Dependency Graph
      "G.8" [label="G.8", tooltip="G.8 (I.def.13): A boundary is the extremity of anything.", fillcolor="#224422", URL="../G.8/index.html", target="_top"];
      "G.9" [label="G.9", tooltip="G.9 (I.def.14): A figure is that which is contained by any boundary or boundaries.", fillcolor="#224422", URL="../G.9/index.html", target="_top"];
      "G.22" [label="G.22", tooltip="G.22 (I.def.8): A plane angle is the inclination to one another of two lines or arcs in a plane that meet and do not lie on the same line.", fillcolor="#224422", URL="../G.22/index.html", target="_top"];
-     "G.32" [label="G.32", tooltip="G.32 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.32/index.html", target="_top"];
+     "G.33" [label="G.33", tooltip="G.33 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.33/index.html", target="_top"];
      "G.81" [label="G.81", tooltip="G.81 (II.def.1): Any rectangular parallelogram is said to becontained by the twosegments containing theright angle.", fillcolor="#224422", URL="../G.81/index.html", target="_top"];
      "G.562" [label="G.562", tooltip="G.562 (XI.def.21): When, one side of those about theright angle in arectangular parallelogram remaining fixed, the parallelogram is carried round and restored again to the same position from which it...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
@@ -55,20 +55,22 @@ Dependency Graph
      "G.4" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
+     "G.7" -> "G.2";
      "G.22" -> "G.2";
+     "G.33" -> "G.2";
      "G.4" -> "G.3";
      "G.8" -> "G.3";
      "G.7" -> "G.4";
      "G.22" -> "G.4";
-     "G.32" -> "G.4";
+     "G.33" -> "G.4";
      "G.81" -> "G.4";
      "G.7" -> "G.5";
      "G.22" -> "G.7";
      "G.9" -> "G.8";
      "G.562" -> "G.9";
-     "G.32" -> "G.22";
-     "G.81" -> "G.32";
-     "G.562" -> "G.32";
+     "G.33" -> "G.22";
+     "G.81" -> "G.33";
+     "G.562" -> "G.33";
      "G.562" -> "G.81";
    }
 

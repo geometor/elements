@@ -113,6 +113,7 @@ Dependency Graph
      "G.249" [label="G.249", tooltip="G.249 (VII.def.12): Numbers prime to one another are those which aremeasured by anunit alone as a common measure.", fillcolor="#224422", URL="../G.249/index.html", target="_top"];
      "G.282" [label="G.282", tooltip="G.282 (VII.28): If two numbers be prime to one another, the sum is prime to each of them; and, if the sum of two numbers be prime to any one of them, the original numbers is prime to one another.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.249" -> "G.169";
+     "G.282" -> "G.169";
      "G.248" -> "G.247";
      "G.249" -> "G.247";
      "G.282" -> "G.248";

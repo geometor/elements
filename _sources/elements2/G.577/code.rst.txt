@@ -12,7 +12,7 @@ G.577 spheres center inscribe — Code
 
 .. enunciation::
 
-   Given two :term:`spheres <G.575>` about the same :term:`center <G.14>`, to inscribe in the greater sphere a polyhedral :term:`solid <G.529>` which does not touch the lesser sphere at its :term:`surface <G.5>`.
+   Given two :term:`spheres <G.575>` about the same :term:`center <G.11>`, to inscribe in the greater sphere a polyhedral :term:`solid <G.529>` which does not touch the lesser sphere at its :term:`surface <G.5>`.
 
 .. picture:: g1.svg
 

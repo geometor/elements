@@ -10,7 +10,7 @@
 :categories: theorem, proof, plane-geometry, circles
 :category: theorem, proof, plane-geometry, circles
 :tags: book-iii, point, segment, circle, centre, equality, reductio-ad-absurdum
-:dependencies: G.10, G.14
+:dependencies: G.10, G.11, G.14
 :excerpt: If two circles cut one another, they will not have the same center.
 
 .. _G.102:
@@ -23,7 +23,7 @@ G.102 circles cut center
 
 .. enunciation::
 
-   If two :term:`circles <G.10>` cut one another, they will not have the same :term:`center <G.14>`.
+   If two :term:`circles <G.10>` cut one another, they will not have the same :term:`center <G.11>`.
 
 .. signature:: theorem
 
@@ -43,7 +43,7 @@ G.102 circles cut center
 
 .. step:: construct
 
-   :fn:`segment <G.13>`\ (:g:`E <g1:E>`, :g:`C <g1:C>`) → :g:`/ E C / <g1:/ E C />`
+   :fn:`segment <G.14>`\ (:g:`E <g1:E>`, :g:`C <g1:C>`) → :g:`/ E C / <g1:/ E C />`
 
 .. step:: construct
 
@@ -51,23 +51,23 @@ G.102 circles cut center
 
 .. step:: assert ∵ circle_radii <G.10>
 
-   Since :g:`E <g1:E>` is the center of :g:`( A B C ) <g1:( A B C )>` → :g:`/ E C / <g1:/ E C />` is :eq:`equal <g1:/ E C / = g1:/ E F />` to :g:`/ E F / <g1:/ E F />`.
+   :g:`( A B C ) <g1:( A B C )>` → :g:`/ E C / <g1:/ E C />` :eq:`= <g1:/ E C / = g1:/ E F />` :g:`/ E F / <g1:/ E F />`
 
 .. step:: assert ∵ circle_radii <G.10>
 
-   Since :g:`E <g1:E>` is the center of :g:`( C D G ) <g1:( C D G )>` → :g:`/ E C / <g1:/ E C />` is :eq:`equal <g1:/ E C / = g1:/ E G />` to :g:`/ E G / <g1:/ E G />`.
+   :g:`( C D G ) <g1:( C D G )>` → :g:`/ E C / <g1:/ E C />` :eq:`= <g1:/ E C / = g1:/ E G />` :g:`/ E G / <g1:/ E G />`
 
 .. step:: assert
 
-   :g:`/ E C / <g1:/ E C />` was proved :eq:`equal <g1:/ E C / = g1:/ E F />` to :g:`/ E F / <g1:/ E F />` also
+   :g:`/ E C / <g1:/ E C />` :eq:`= <g1:/ E C / = g1:/ E F />` :g:`/ E F / <g1:/ E F />` also
 
 .. step:: assert
 
-   Therefore :g:`/ E F / <g1:/ E F />` is also :eq:`equal <g1:/ E F / = g1:/ E G />` to :g:`/ E G / <g1:/ E G />`, the less to the greater: which is impossible.
+   :g:`/ E F / <g1:/ E F />` :eq:`= <g1:/ E F / = g1:/ E G />` :g:`/ E G / <g1:/ E G />`, < > ⇒⇐
 
 .. step:: conclude
 
-   Therefore :g:`E <g1:E>` is not the center of :g:`( A B C ) <g1:( A B C )>`, :g:`( C D G ) <g1:( C D G )>`.
+   :g:`E <g1:E>` is not the center of :g:`( A B C ) <g1:( A B C )>`, :g:`( C D G ) <g1:( C D G )>`
 
 Dependency Graph
 ----------------
@@ -89,28 +89,35 @@ Dependency Graph
      "G.8" [label="G.8", tooltip="G.8 (I.def.13): A boundary is the extremity of anything.", fillcolor="#224422", URL="../G.8/index.html", target="_top"];
      "G.9" [label="G.9", tooltip="G.9 (I.def.14): A figure is that which is contained by any boundary or boundaries.", fillcolor="#224422", URL="../G.9/index.html", target="_top"];
      "G.10" [label="G.10", tooltip="G.10 (I.def.15): A circle ( A B ) is a plane figure contained by one arc defined by a center A and a point B establishing its defining radius / A B /, such that all segments / A B /, / A C /, / A D...", fillcolor="#224422", URL="../G.10/index.html", target="_top"];
-     "G.14" [label="G.14", tooltip="G.14 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.", fillcolor="#224422", URL="../G.14/index.html", target="_top"];
+     "G.11" [label="G.11", tooltip="G.11 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
+     "G.14" [label="G.14", tooltip="G.14 (I.post.1): Construct a segment / A B / between any two points A, B.", fillcolor="#444422", URL="../G.14/index.html", target="_top"];
      "G.102" [label="G.102", tooltip="G.102 (III.5): If two circles cut one another, they will not have the same center.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
      "G.10" -> "G.1";
+     "G.11" -> "G.1";
      "G.14" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
      "G.6" -> "G.2";
+     "G.7" -> "G.2";
      "G.4" -> "G.3";
+     "G.6" -> "G.3";
      "G.8" -> "G.3";
      "G.7" -> "G.4";
      "G.10" -> "G.4";
+     "G.11" -> "G.4";
+     "G.14" -> "G.4";
      "G.6" -> "G.5";
      "G.7" -> "G.5";
      "G.10" -> "G.6";
      "G.10" -> "G.7";
      "G.9" -> "G.8";
      "G.10" -> "G.9";
-     "G.14" -> "G.10";
+     "G.11" -> "G.10";
      "G.102" -> "G.10";
+     "G.102" -> "G.11";
      "G.102" -> "G.14";
    }
 

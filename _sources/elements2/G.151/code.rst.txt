@@ -12,7 +12,7 @@ G.151 circumscribe triangle about circle — Code
 
 .. enunciation::
 
-   :term:`Circumscribe about a given circle <G.150>` a :term:`triangle <G.11>` equiangular with a given triangle.
+   :term:`Circumscribe about a given circle <G.150>` a :term:`triangle <G.12>` equiangular with a given triangle.
 
 .. picture:: g1.svg
 

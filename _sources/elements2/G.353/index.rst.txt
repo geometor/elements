@@ -10,7 +10,7 @@
 :categories: theorem, proof, number-theory
 :category: theorem, proof, number-theory
 :tags: book-ix, segment, odd-number, even-number, number, unit
-:dependencies: G.302, G.351, G.352
+:dependencies: G.247, G.248, G.302, G.351, G.352
 :excerpt: If as many odd numbers as we please be added together, and their multitude be even, the whole is even.
 
 .. _G.353:
@@ -28,7 +28,7 @@ G.353 many odd numbers
 .. signature:: theorem
 
    | :fn:`many_odd_numbers <G.353>`\ ()
-   | **prove** the whole :g:`/ A E / <g1:/ A E />` is even
+   | **prove** :g:`/ A E / <g1:/ A E />` is even
 
 .. picture:: g1.svg
    :alt: Book IX, Proposition 22
@@ -39,19 +39,19 @@ G.353 many odd numbers
 
 .. step:: assert ∵ odd_number_divisible_def <G.352>
 
-   Since each of the :term:`numbers <G.248>` :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ C D / <g1:/ C D />`, :g:`/ D E / <g1:/ D E />` is odd, if an :term:`unit <G.247>` be subtracted from each, each of the remainders will be even .
+   each of the :term:`numbers <G.248>` :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ C D / <g1:/ C D />`, :g:`/ D E / <g1:/ D E />` is odd, if an :term:`unit <G.247>` be subtracted from each, each of the remainders will be even
 
 .. step:: assert ∵ many_even_numbers <G.351>
 
-   So that the sum of them will be even.
+   So that the sum of them will be even
 
 .. step:: assert
 
-   The multitude of the units is also even.
+   The multitude of the units is also even
 
 .. step:: conclude ∵ many_even_numbers <G.351>
 
-   Therefore the whole :g:`/ A E / <g1:/ A E />` is also even.
+   :g:`/ A E / <g1:/ A E />` is also even
 
 Dependency Graph
 ----------------
@@ -71,7 +71,9 @@ Dependency Graph
      "G.353" [label="G.353", tooltip="G.353 (IX.22): If as many odd numbers as we please be added together, and their multitude be even, the whole is even.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.248" -> "G.247";
      "G.352" -> "G.247";
+     "G.353" -> "G.247";
      "G.351" -> "G.248";
+     "G.353" -> "G.248";
      "G.351" -> "G.302";
      "G.352" -> "G.302";
      "G.353" -> "G.302";

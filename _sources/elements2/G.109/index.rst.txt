@@ -10,7 +10,7 @@
 :categories: theorem, proof, plane-geometry, circles
 :category: theorem, proof, plane-geometry, circles
 :tags: book-iii, point, segment, circle, circles-touching, centre, straight-line, tangent, equality, reductio-ad-absurdum
-:dependencies: G.1, G.4, G.10, G.14, G.103
+:dependencies: G.1, G.4, G.10, G.11, G.103
 :excerpt: If two circles touch one another internally, and their centres be taken, the segment joining their centres, if it be also produced, will fall on the point of contact of the circles.
 
 .. _G.109:
@@ -23,7 +23,7 @@ G.109 circles touch internally
 
 .. enunciation::
 
-   If two :term:`circles <G.10>` :term:`touch one another <G.103>` internally, and their :term:`centres <G.14>` be taken, the :term:`segment <G.4>` joining their centres, if it be also produced, will fall on the :term:`point <G.1>` of contact of the circles.
+   If two :term:`circles <G.10>` :term:`touch one another <G.103>` internally, and their :term:`centres <G.11>` be taken, the :term:`segment <G.4>` joining their centres, if it be also produced, will fall on the :term:`point <G.1>` of contact of the circles.
 
 .. signature:: theorem
 
@@ -43,31 +43,31 @@ G.109 circles touch internally
 
 .. step:: assert
 
-   Since :g:`/ A G / <g1:/ A G />`, :g:`/ G F / <g1:/ G F />` are greater than :g:`/ F A / <g1:/ F A />`, that is, than :g:`/ F H / <g1:/ F H />` → let :g:`/ F G / <g1:/ F G />` be subtracted from each;
+   :g:`/ A G / <g1:/ A G />`, :g:`/ G F / <g1:/ G F />` are greater than :g:`/ F A / <g1:/ F A />`, that is, than :g:`/ F H / <g1:/ F H />` → let :g:`/ F G / <g1:/ F G />` be subtracted from each
 
 .. step:: assert
 
-   Therefore the remainder :g:`/ A G / <g1:/ A G />` is greater than the remainder :g:`/ G H / <g1:/ G H />`.
+   :g:`/ A G / <g1:/ A G />` > :g:`/ G H / <g1:/ G H />`
 
 .. step:: assert
 
-   :g:`/ A G / <g1:/ A G />` is :eq:`equal <g1:/ A G / = g1:/ G D />` to :g:`/ G D / <g1:/ G D />`
+   :g:`/ A G / <g1:/ A G />` :eq:`= <g1:/ A G / = g1:/ G D />` :g:`/ G D / <g1:/ G D />`
 
 .. step:: assert
 
-   Therefore :g:`/ G D / <g1:/ G D />` is also greater than :g:`/ G H / <g1:/ G H />`,
+   :g:`/ G D / <g1:/ G D />` is also greater than :g:`/ G H / <g1:/ G H />`,
 
 .. step:: assert
 
-   The less than the greater: which is impossible.
+   The less than the greater ⇒⇐
 
 .. step:: assert
 
-   Therefore the segment joined from :g:`F <g1:F>` to :g:`G <g1:G>` will not fall outside;
+   the segment joined from :g:`F <g1:F>` to :g:`G <g1:G>` will not fall outside
 
 .. step:: conclude
 
-   Therefore it will fall at :g:`A <g1:A>` on the point of contact.
+   it will fall at :g:`A <g1:A>` on the point of contact
 
 Dependency Graph
 ----------------
@@ -89,22 +89,25 @@ Dependency Graph
      "G.8" [label="G.8", tooltip="G.8 (I.def.13): A boundary is the extremity of anything.", fillcolor="#224422", URL="../G.8/index.html", target="_top"];
      "G.9" [label="G.9", tooltip="G.9 (I.def.14): A figure is that which is contained by any boundary or boundaries.", fillcolor="#224422", URL="../G.9/index.html", target="_top"];
      "G.10" [label="G.10", tooltip="G.10 (I.def.15): A circle ( A B ) is a plane figure contained by one arc defined by a center A and a point B establishing its defining radius / A B /, such that all segments / A B /, / A C /, / A D...", fillcolor="#224422", URL="../G.10/index.html", target="_top"];
-     "G.14" [label="G.14", tooltip="G.14 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.", fillcolor="#224422", URL="../G.14/index.html", target="_top"];
+     "G.11" [label="G.11", tooltip="G.11 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
      "G.103" [label="G.103", tooltip="G.103 (III.def.3): Circles are said totouch one another which, meeting one another, do not cut one another.", fillcolor="#224422", URL="../G.103/index.html", target="_top"];
      "G.109" [label="G.109", tooltip="G.109 (III.11): If two circles touch one another internally, and their centres be taken, the segment joining their centres, if it be also produced, will fall on the point of contact of the circles...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
      "G.10" -> "G.1";
-     "G.14" -> "G.1";
+     "G.11" -> "G.1";
      "G.109" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
      "G.6" -> "G.2";
+     "G.7" -> "G.2";
      "G.4" -> "G.3";
+     "G.6" -> "G.3";
      "G.8" -> "G.3";
      "G.7" -> "G.4";
      "G.10" -> "G.4";
+     "G.11" -> "G.4";
      "G.109" -> "G.4";
      "G.6" -> "G.5";
      "G.7" -> "G.5";
@@ -112,9 +115,9 @@ Dependency Graph
      "G.10" -> "G.7";
      "G.9" -> "G.8";
      "G.10" -> "G.9";
-     "G.14" -> "G.10";
+     "G.11" -> "G.10";
      "G.109" -> "G.10";
-     "G.109" -> "G.14";
+     "G.109" -> "G.11";
      "G.109" -> "G.103";
    }
 

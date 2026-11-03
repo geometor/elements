@@ -59,6 +59,7 @@ Dependency Graph
      "G.355" [label="G.355", tooltip="G.355 (IX.24): If from an even number an even number be subtracted, the remainder is even.", fillcolor="#222244", URL="../G.355/index.html", target="_top"];
      "G.358" [label="G.358", tooltip="G.358 (IX.27): If from an odd number an even number be subtracted, the remainder is odd.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.352" -> "G.247";
+     "G.358" -> "G.247";
      "G.352" -> "G.302";
      "G.355" -> "G.302";
      "G.358" -> "G.302";

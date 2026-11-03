@@ -28,7 +28,7 @@ G.355 even number even
 .. signature:: theorem
 
    | :fn:`even_number_even <G.355>`\ ()
-   | **prove** the remainder :g:`/ A C / <g1:/ A C />` is even
+   | **prove** :g:`/ A C / <g1:/ A C />` is even
 
 .. picture:: g1.svg
    :alt: Book IX, Proposition 24
@@ -39,15 +39,15 @@ G.355 even number even
 
 .. step:: assert ∵ even_number_divisible_def <G.302>
 
-   Since :g:`/ A B / <g1:/ A B />` is even, it has a half part.
+   :g:`/ A B / <g1:/ A B />` is even, it has a half part
 
 .. step:: assert
 
-   For the same reason :g:`/ B C / <g1:/ B C />` also has a half part ;
+   For the same reason :g:`/ B C / <g1:/ B C />` also has a half part
 
 .. step:: conclude
 
-   So that the remainder [:g:`/ A C / <g1:/ A C />` also has a half part, and] :g:`/ A C / <g1:/ A C />` is therefore even.
+   So that the remainder [:g:`/ A C / <g1:/ A C />` also has a half part, and] :g:`/ A C / <g1:/ A C />` is therefore even
 
 Dependency Graph
 ----------------

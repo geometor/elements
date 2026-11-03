@@ -12,7 +12,7 @@ G.47 construct a triangle from three segments — Code
 
 .. enunciation::
 
-   Construct a :term:`triangle <G.11>` from three :term:`segments <G.4>` equal to three given segments satisfying the triangle inequality.
+   Construct a :term:`triangle <G.12>` from three :term:`segments <G.4>` equal to three given segments satisfying the triangle inequality.
 
 .. picture:: g1.svg
 

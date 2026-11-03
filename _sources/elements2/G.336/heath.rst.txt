@@ -68,15 +68,21 @@ Dependency Graph
      "G.169" [label="G.169", tooltip="G.169 (V.def.1): A magnitude is apart of a magnitude, the less of the greater, when it measures the greater.", fillcolor="#224422", URL="../G.169/index.html", target="_top"];
      "G.247" [label="G.247", tooltip="G.247 (VII.def.1): Anunit is that by virtue of which each of the things that exist is called one.", fillcolor="#224422", URL="../G.247/index.html", target="_top"];
      "G.248" [label="G.248", tooltip="G.248 (VII.def.2): Anumber is a multitude composed ofunits.", fillcolor="#224422", URL="../G.248/index.html", target="_top"];
+     "G.253" [label="G.253", tooltip="G.253 (VII.def.3): Anumber is apart of a number, the less of the greater, when itmeasures the greater;", fillcolor="#224422", URL="../G.253/index.html", target="_top"];
      "G.269" [label="G.269", tooltip="G.269 (VII.def.15): Anumber is said tomultiply a number when that which is multiplied is added to itself as many times as there areunits in the other, and thus some number is produced.", fillcolor="#224422", URL="../G.269/index.html", target="_top"];
      "G.286" [label="G.286", tooltip="G.286 (VII.def.13): Acomposite number is that which ismeasured by somenumber.", fillcolor="#224422", URL="../G.286/index.html", target="_top"];
      "G.336" [label="G.336", tooltip="G.336 (IX.7): If a composite number by multiplying any number make some number, the product is solid.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.253" -> "G.169";
      "G.286" -> "G.169";
+     "G.336" -> "G.169";
      "G.248" -> "G.247";
      "G.269" -> "G.247";
+     "G.336" -> "G.247";
+     "G.253" -> "G.248";
      "G.269" -> "G.248";
      "G.286" -> "G.248";
      "G.336" -> "G.248";
+     "G.286" -> "G.253";
      "G.336" -> "G.269";
      "G.336" -> "G.286";
    }

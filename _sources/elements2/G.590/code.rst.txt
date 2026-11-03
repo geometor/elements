@@ -12,7 +12,7 @@ G.590 equilateral triangle inscribed — Code
 
 .. enunciation::
 
-   *If an :term:`equilateral triangle <G.12>` be :term:`inscribed in a circle <G.148>`, the :term:`square <G.63>` on the side of the :term:`triangle <G.11>` is triple of the square on the radius of the :term:`circle <G.10>`.*
+   *If an :term:`equilateral triangle <G.13>` be :term:`inscribed in a circle <G.148>`, the :term:`square <G.63>` on the side of the :term:`triangle <G.12>` is triple of the square on the radius of the :term:`circle <G.10>`.*
 
 .. picture:: g1.svg
 

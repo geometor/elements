@@ -12,7 +12,7 @@ G.105 diameter circle point — Code
 
 .. enunciation::
 
-   If on the :term:`diameter <G.61>` of a :term:`circle <G.10>` a :term:`point <G.1>` be taken which is not the :term:`center <G.14>` of the circle, and from the point :term:`segments <G.4>` fall upon the circle, that is greatest on which the center is, the remainder of the same diameter is least, and of the rest the nearer to the segment through the center is always greater than the more remote, and only two equal segments will fall from the point on the circle, one on each side of the least segment.
+   If on the :term:`diameter <G.61>` of a :term:`circle <G.10>` a :term:`point <G.1>` be taken which is not the :term:`center <G.11>` of the circle, and from the point :term:`segments <G.4>` fall upon the circle, that is greatest on which the center is, the remainder of the same diameter is least, and of the rest the nearer to the segment through the center is always greater than the more remote, and only two equal segments will fall from the point on the circle, one on each side of the least segment.
 
 .. picture:: g1.svg
 

@@ -9,7 +9,7 @@
 :categories: postulate, plane-geometry
 :category: postulate, plane-geometry
 :tags: book-i, straight-line, plane-angle, right-angle, plane
-:dependencies: G.4, G.22, G.32
+:dependencies: G.2, G.4, G.22, G.33
 :excerpt: Two lines intersected by a transversal with interior angles on one side summing to less than two right angles meet on that side.
 
 .. _G.55:
@@ -22,7 +22,7 @@ G.55 parallel postulate
 
 .. enunciation::
 
-   Two :term:`lines <G.2>` intersected by a transversal with interior :term:`angles <G.22>` on one side summing to less than two :term:`right angles <G.32>` meet on that side.
+   Two :term:`lines <G.2>` intersected by a transversal with interior :term:`angles <G.22>` on one side summing to less than two :term:`right angles <G.33>` meet on that side.
 
 .. signature:: rule
 
@@ -45,24 +45,27 @@ Dependency Graph
      "G.5" [label="G.5", tooltip="G.5 (I.def.5): A surface is that which has length and breadth only.", fillcolor="#224422", URL="../G.5/index.html", target="_top"];
      "G.7" [label="G.7", tooltip="G.7 (I.def.7): A plane surface lies evenly with the lines on itself.", fillcolor="#224422", URL="../G.7/index.html", target="_top"];
      "G.22" [label="G.22", tooltip="G.22 (I.def.8): A plane angle is the inclination to one another of two lines or arcs in a plane that meet and do not lie on the same line.", fillcolor="#224422", URL="../G.22/index.html", target="_top"];
-     "G.32" [label="G.32", tooltip="G.32 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.32/index.html", target="_top"];
+     "G.33" [label="G.33", tooltip="G.33 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.33/index.html", target="_top"];
      "G.55" [label="G.55", tooltip="G.55 (I.post.5): Two lines intersected by a transversal with interior angles on one side summing to less than two right angles meet on that side.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
+     "G.7" -> "G.2";
      "G.22" -> "G.2";
+     "G.33" -> "G.2";
+     "G.55" -> "G.2";
      "G.4" -> "G.3";
      "G.7" -> "G.4";
      "G.22" -> "G.4";
-     "G.32" -> "G.4";
+     "G.33" -> "G.4";
      "G.55" -> "G.4";
      "G.7" -> "G.5";
      "G.22" -> "G.7";
-     "G.32" -> "G.22";
+     "G.33" -> "G.22";
      "G.55" -> "G.22";
-     "G.55" -> "G.32";
+     "G.55" -> "G.33";
    }
 
 Required for

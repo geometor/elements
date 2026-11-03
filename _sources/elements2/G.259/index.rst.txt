@@ -28,7 +28,7 @@ G.259 number part number
 .. signature:: theorem
 
    | :fn:`number_part_number_vii_7 <G.259>`\ ()
-   | **prove** the remainder :g:`/ E B / <g1:/ E B />` is also the same part of the remainder :g:`/ F D / <g1:/ F D />` that the whole :g:`/ A B / <g1:/ A B />` is of the whole :g:`/ C D / <g1:/ C D />`
+   | **prove** :g:`/ E B / <g1:/ E B />` is also the same part of :g:`/ F D / <g1:/ F D />` that :g:`/ A B / <g1:/ A B />` is of :g:`/ C D / <g1:/ C D />`
 
 .. picture:: g1.svg
    :alt: Book VII, Proposition 7
@@ -39,7 +39,7 @@ G.259 number part number
 
 .. step:: assert
 
-   Whatever part :g:`/ A E / <g1:/ A E />` is of :g:`/ C F / <g1:/ C F />`, the same part also let :g:`/ E B / <g1:/ E B />` be of :g:`/ G C / <g1:/ G C />`.
+   Whatever part :g:`/ A E / <g1:/ A E />` is of :g:`/ C F / <g1:/ C F />`, the same part also let :g:`/ E B / <g1:/ E B />` be of :g:`/ G C / <g1:/ G C />`
 
 .. step:: assert
 
@@ -47,19 +47,19 @@ G.259 number part number
 
 .. step:: assert ∵ number_part_number <G.257>
 
-   Therefore, whatever part :g:`/ A E / <g1:/ A E />` is of :g:`/ C F / <g1:/ C F />`, the same part also is :g:`/ A B / <g1:/ A B />` of :g:`/ G F / <g1:/ G F />`.
+   whatever part :g:`/ A E / <g1:/ A E />` is of :g:`/ C F / <g1:/ C F />`, the same part also is :g:`/ A B / <g1:/ A B />` of :g:`/ G F / <g1:/ G F />`
 
 .. step:: assert
 
-   But, whatever part :g:`/ A E / <g1:/ A E />` is of :g:`/ C F / <g1:/ C F />`, the same part also, by hypothesis, is :g:`/ A B / <g1:/ A B />` of :g:`/ C D / <g1:/ C D />`;
+   But, whatever part :g:`/ A E / <g1:/ A E />` is of :g:`/ C F / <g1:/ C F />`, the same part also, by hypothesis, is :g:`/ A B / <g1:/ A B />` of :g:`/ C D / <g1:/ C D />`
 
 .. step:: assert
 
-   Therefore, whatever part :g:`/ A B / <g1:/ A B />` is of :g:`/ G F / <g1:/ G F />`, the same part is it of :g:`/ C D / <g1:/ C D />` also;
+   whatever part :g:`/ A B / <g1:/ A B />` is of :g:`/ G F / <g1:/ G F />`, the same part is it of :g:`/ C D / <g1:/ C D />` also
 
 .. step:: assert
 
-   Therefore :g:`/ G F / <g1:/ G F />` is :eq:`equal <g1:/ G F / = g1:/ C D />` to :g:`/ C D / <g1:/ C D />`.
+   :g:`/ G F / <g1:/ G F />` :eq:`= <g1:/ G F / = g1:/ C D />` :g:`/ C D / <g1:/ C D />`
 
 .. step:: construct
 
@@ -67,23 +67,23 @@ G.259 number part number
 
 .. step:: assert
 
-   Therefore the remainder :g:`/ G C / <g1:/ G C />` is :eq:`equal <g1:/ G C / = g1:/ F D />` to the remainder :g:`/ F D / <g1:/ F D />`.
+   :g:`/ G C / <g1:/ G C />` :eq:`= <g1:/ G C / = g1:/ F D />` :g:`/ F D / <g1:/ F D />`
 
 .. step:: assert
 
-   Now since, whatever part :g:`/ A E / <g1:/ A E />` is of :g:`/ C F / <g1:/ C F />`, the same part also is :g:`/ E B / <g1:/ E B />` of :g:`/ G C / <g1:/ G C />`, while :g:`/ G C / <g1:/ G C />` is :eq:`equal <g1:/ G C / = g1:/ F D />` to :g:`/ F D / <g1:/ F D />`,
+   Now since, whatever part :g:`/ A E / <g1:/ A E />` is of :g:`/ C F / <g1:/ C F />`, the same part also is :g:`/ E B / <g1:/ E B />` of :g:`/ G C / <g1:/ G C />`, while :g:`/ G C / <g1:/ G C />` :eq:`= <g1:/ G C / = g1:/ F D />` :g:`/ F D / <g1:/ F D />`,
 
 .. step:: assert
 
-   Therefore, whatever part :g:`/ A E / <g1:/ A E />` is of :g:`/ C F / <g1:/ C F />`, the same part also is :g:`/ E B / <g1:/ E B />` of :g:`/ F D / <g1:/ F D />`.
+   whatever part :g:`/ A E / <g1:/ A E />` is of :g:`/ C F / <g1:/ C F />`, the same part also is :g:`/ E B / <g1:/ E B />` of :g:`/ F D / <g1:/ F D />`
 
 .. step:: assert
 
-   But, whatever part :g:`/ A E / <g1:/ A E />` is of :g:`/ C F / <g1:/ C F />`, the same part also is :g:`/ A B / <g1:/ A B />` of :g:`/ C D / <g1:/ C D />`;
+   But, whatever part :g:`/ A E / <g1:/ A E />` is of :g:`/ C F / <g1:/ C F />`, the same part also is :g:`/ A B / <g1:/ A B />` of :g:`/ C D / <g1:/ C D />`
 
 .. step:: conclude
 
-   Therefore also the remainder :g:`/ E B / <g1:/ E B />` is the same part of the remainder :g:`/ F D / <g1:/ F D />` that the whole :g:`/ A B / <g1:/ A B />` is of the whole :g:`/ C D / <g1:/ C D />`.
+   also :g:`/ E B / <g1:/ E B />` is the same part of :g:`/ F D / <g1:/ F D />` that :g:`/ A B / <g1:/ A B />` is of :g:`/ C D / <g1:/ C D />`
 
 Dependency Graph
 ----------------
@@ -112,6 +112,7 @@ Dependency Graph
      "G.256" -> "G.248";
      "G.257" -> "G.248";
      "G.259" -> "G.248";
+     "G.256" -> "G.253";
      "G.257" -> "G.253";
      "G.259" -> "G.253";
      "G.257" -> "G.256";

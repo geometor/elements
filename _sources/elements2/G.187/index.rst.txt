@@ -28,7 +28,7 @@ G.187 magnitudes ratio equal
 .. signature:: theorem
 
    | :fn:`magnitudes_ratio_equal <G.187>`\ ()
-   | **prove** :g:`A <g1:A>` is :eq:`equal <g1:A = g1:B>` to :g:`B <g1:B>`; :g:`A <g1:A>` is :eq:`equal <g1:A = g1:B>` to :g:`B <g1:B>`
+   | **prove** :g:`A <g1:A>` :eq:`= <g1:A = g1:B>` :g:`B <g1:B>`; :g:`A <g1:A>` :eq:`= <g1:A = g1:B>` :g:`B <g1:B>`
 
 .. picture:: g1.svg
    :alt: Folio 0160 Figure 1
@@ -47,7 +47,7 @@ G.187 magnitudes ratio equal
 
 .. step:: assert
 
-   Therefore :g:`A <g1:A>` is :eq:`equal <g1:A = g1:B>` to :g:`B <g1:B>`.
+   :g:`A <g1:A>` :eq:`= <g1:A = g1:B>` :g:`B <g1:B>`
 
 .. step:: assert
 
@@ -63,7 +63,7 @@ G.187 magnitudes ratio equal
 
 .. step:: conclude
 
-   Therefore :g:`A <g1:A>` is :eq:`equal <g1:A = g1:B>` to :g:`B <g1:B>`.
+   :g:`A <g1:A>` :eq:`= <g1:A = g1:B>` :g:`B <g1:B>`
 
 Dependency Graph
 ----------------
@@ -98,6 +98,7 @@ Dependency Graph
      "G.171" -> "G.170";
      "G.176" -> "G.170";
      "G.185" -> "G.170";
+     "G.186" -> "G.170";
      "G.186" -> "G.171";
      "G.187" -> "G.176";
      "G.186" -> "G.184";

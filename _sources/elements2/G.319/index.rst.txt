@@ -10,7 +10,7 @@
 :categories: theorem, proof, number-theory, proportions
 :category: theorem, proof, number-theory, proportions
 :tags: book-viii, point, similar-plane-and-solid-numbers, proportional, number, plane-number, ratio, alternando, plane-surface, multiply, proportion, similar, plane
-:dependencies: G.7, G.173, G.180, G.230, G.248, G.266, G.271, G.300, G.318
+:dependencies: G.7, G.173, G.180, G.194, G.230, G.248, G.266, G.269, G.271, G.300, G.318
 :excerpt: Between two similar plane numbers there is one mean proportional number; and the plane number has to the plane number the ratio duplicate of that which the corresponding side has to the corresponding side.
 
 .. _G.319:
@@ -40,15 +40,15 @@ G.319 similar plane numbers
 
 .. step:: assert ∵ similar_plane_solid_def <G.318>
 
-   Since similar plane numbers are those which have their sides proportional.
+   similar plane numbers are those which have their sides proportional
 
 .. step:: assert
 
-   Therefore, as :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`E <g1:E>` to :g:`F <g1:F>`.
+   as :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`E <g1:E>` to :g:`F <g1:F>`
 
 .. step:: assert
 
-   I say then that between :g:`A <g1:A>`, :g:`B <g1:B>` there is one mean proportional number, and :g:`A <g1:A>` has to :g:`B <g1:B>` the ratio duplicate of that which :g:`C <g1:C>` has to :g:`E <g1:E>`, or :g:`D <g1:D>` to :g:`F <g1:F>`, that is, of that which the corresponding side has to the corresponding side.
+   I say then that between :g:`A <g1:A>`, :g:`B <g1:B>` there is one mean proportional number, and :g:`A <g1:A>` has to :g:`B <g1:B>` the ratio duplicate of that which :g:`C <g1:C>` has to :g:`E <g1:E>`, or :g:`D <g1:D>` to :g:`F <g1:F>`, that is, of that which the corresponding side has to the corresponding side
 
 .. step:: assert
 
@@ -56,15 +56,15 @@ G.319 similar plane numbers
 
 .. step:: assert ∵ numbers_proportional_proportional <G.266>
 
-   Therefore, :term:`alternately <G.194>`, as :g:`C <g1:C>` is to :g:`E <g1:E>`, so is :g:`D <g1:D>` to :g:`F <g1:F>`.
+   :term:`alternately <G.194>`, as :g:`C <g1:C>` is to :g:`E <g1:E>`, so is :g:`D <g1:D>` to :g:`F <g1:F>`
 
 .. step:: assert
 
-   And, since :g:`A <g1:A>` is :term:`plane <G.7>`, and :g:`C <g1:C>`, :g:`D <g1:D>` are its sides,
+   since :g:`A <g1:A>` is :term:`plane <G.7>`, and :g:`C <g1:C>`, :g:`D <g1:D>` are its sides,
 
 .. step:: assert
 
-   Therefore :g:`D <g1:D>` by :term:`multiplying <G.269>` :g:`C <g1:C>` has made :g:`A <g1:A>`.
+   :g:`D <g1:D>` by multiplying :g:`C <g1:C>` has made :g:`A <g1:A>`
 
 .. step:: assert
 
@@ -72,71 +72,71 @@ G.319 similar plane numbers
 
 .. step:: assert
 
-   :g:`E <g1:E>` by multiplying :g:`F <g1:F>` has made :g:`B <g1:B>`.
+   :g:`E <g1:E>` by multiplying :g:`F <g1:F>` has made :g:`B <g1:B>`
 
 .. step:: assert
 
-   Now let :g:`D <g1:D>` by multiplying :g:`E <g1:E>` make :g:`G <g1:G>`.
+   Now let :g:`D <g1:D>` by :term:`multiplying <G.269>` :g:`E <g1:E>` make :g:`G <g1:G>`
 
 .. step:: assert
 
-   Since :g:`D <g1:D>` by multiplying :g:`C <g1:C>` has made :g:`A <g1:A>`, and by multiplying :g:`E <g1:E>` has made :g:`G <g1:G>`,
+   :g:`D <g1:D>` by multiplying :g:`C <g1:C>` has made :g:`A <g1:A>`, and by multiplying :g:`E <g1:E>` has made :g:`G <g1:G>`,
 
 .. step:: assert ∵ number_multiplying_numbers <G.271>
 
-   Therefore, as :g:`C <g1:C>` is to :g:`E <g1:E>`, so is :g:`A <g1:A>` to :g:`G <g1:G>`.
+   as :g:`C <g1:C>` is to :g:`E <g1:E>`, so is :g:`A <g1:A>` to :g:`G <g1:G>`
 
 .. step:: assert
 
-   But, as :g:`C <g1:C>` is to :g:`E <g1:E>`, so is :g:`D <g1:D>` to :g:`F <g1:F>`;
+   But, as :g:`C <g1:C>` is to :g:`E <g1:E>`, so is :g:`D <g1:D>` to :g:`F <g1:F>`
 
 .. step:: assert
 
-   Therefore also, as :g:`D <g1:D>` is to :g:`F <g1:F>`, so is :g:`A <g1:A>` to :g:`G <g1:G>`.
+   also, as :g:`D <g1:D>` is to :g:`F <g1:F>`, so is :g:`A <g1:A>` to :g:`G <g1:G>`
 
 .. step:: assert
 
-   Since :g:`E <g1:E>` by multiplying :g:`D <g1:D>` has made :g:`G <g1:G>`, and by multiplying :g:`F <g1:F>` has made :g:`B <g1:B>`,
+   :g:`E <g1:E>` by multiplying :g:`D <g1:D>` has made :g:`G <g1:G>`, and by multiplying :g:`F <g1:F>` has made :g:`B <g1:B>`,
 
 .. step:: assert ∵ number_multiplying_numbers <G.271>
 
-   Therefore, as :g:`D <g1:D>` is to :g:`F <g1:F>`, so is :g:`G <g1:G>` to :g:`B <g1:B>`.
+   as :g:`D <g1:D>` is to :g:`F <g1:F>`, so is :g:`G <g1:G>` to :g:`B <g1:B>`
 
 .. step:: assert
 
-   It was also proved that, as :g:`D <g1:D>` is to :g:`F <g1:F>`, so is :g:`A <g1:A>` to :g:`G <g1:G>`;
+   It was also proved that, as :g:`D <g1:D>` is to :g:`F <g1:F>`, so is :g:`A <g1:A>` to :g:`G <g1:G>`
 
 .. step:: assert
 
-   Therefore also, as :g:`A <g1:A>` is to :g:`G <g1:G>`, so is :g:`G <g1:G>` to :g:`B <g1:B>`.
+   also, as :g:`A <g1:A>` is to :g:`G <g1:G>`, so is :g:`G <g1:G>` to :g:`B <g1:B>`
 
 .. step:: assert
 
-   Therefore :g:`A <g1:A>`, :g:`G <g1:G>`, :g:`B <g1:B>` are in continued proportion.
+   :g:`A <g1:A>`, :g:`G <g1:G>`, :g:`B <g1:B>` are in continued proportion
 
 .. step:: assert
 
-   Therefore between :g:`A <g1:A>`, :g:`B <g1:B>` there is one mean proportional number.
+   between :g:`A <g1:A>`, :g:`B <g1:B>` there is one mean proportional number
 
 .. step:: assert
 
-   I say next that :g:`A <g1:A>` also has to :g:`B <g1:B>` the ratio duplicate of that which the corresponding side has to the corresponding side, that is, of that which :g:`C <g1:C>` has to :g:`E <g1:E>` or :g:`D <g1:D>` to :g:`F <g1:F>`.
+   I say next that :g:`A <g1:A>` also has to :g:`B <g1:B>` the ratio duplicate of that which the corresponding side has to the corresponding side, that is, of that which :g:`C <g1:C>` has to :g:`E <g1:E>` or :g:`D <g1:D>` to :g:`F <g1:F>`
 
 .. step:: assert
 
-   Since :g:`A <g1:A>`, :g:`G <g1:G>`, :g:`B <g1:B>` are in continued proportion,
+   :g:`A <g1:A>`, :g:`G <g1:G>`, :g:`B <g1:B>` are in continued proportion,
 
 .. step:: assert ∵ magnitudes_proportional_said_def <G.230>
 
-   :g:`A <g1:A>` has to :g:`B <g1:B>` the ratio duplicate of that which it has to :g:`G <g1:G>`.
+   :g:`A <g1:A>` has to :g:`B <g1:B>` the ratio duplicate of that which it has to :g:`G <g1:G>`
 
 .. step:: assert
 
-   And, as :g:`A <g1:A>` is to :g:`G <g1:G>`, so is :g:`C <g1:C>` to :g:`E <g1:E>`, and so is :g:`D <g1:D>` to :g:`F <g1:F>`.
+   as :g:`A <g1:A>` is to :g:`G <g1:G>`, so is :g:`C <g1:C>` to :g:`E <g1:E>`, and so is :g:`D <g1:D>` to :g:`F <g1:F>`
 
 .. step:: conclude
 
-   Therefore :g:`A <g1:A>` also has to :g:`B <g1:B>` the ratio duplicate of that which :g:`C <g1:C>` has to :g:`E <g1:E>` or :g:`D <g1:D>` to :g:`F <g1:F>`.
+   :g:`A <g1:A>` also has to :g:`B <g1:B>` the ratio duplicate of that which :g:`C <g1:C>` has to :g:`E <g1:E>` or :g:`D <g1:D>` to :g:`F <g1:F>`
 
 Dependency Graph
 ----------------
@@ -183,6 +183,7 @@ Dependency Graph
      "G.4" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
+     "G.7" -> "G.2";
      "G.4" -> "G.3";
      "G.7" -> "G.4";
      "G.7" -> "G.5";
@@ -191,12 +192,14 @@ Dependency Graph
      "G.253" -> "G.169";
      "G.254" -> "G.169";
      "G.256" -> "G.169";
+     "G.271" -> "G.169";
      "G.176" -> "G.170";
      "G.257" -> "G.170";
      "G.319" -> "G.173";
      "G.180" -> "G.176";
      "G.271" -> "G.176";
      "G.230" -> "G.180";
+     "G.263" -> "G.180";
      "G.266" -> "G.180";
      "G.318" -> "G.180";
      "G.319" -> "G.180";
@@ -204,9 +207,12 @@ Dependency Graph
      "G.261" -> "G.194";
      "G.262" -> "G.194";
      "G.266" -> "G.194";
+     "G.271" -> "G.194";
+     "G.319" -> "G.194";
      "G.319" -> "G.230";
      "G.248" -> "G.247";
      "G.269" -> "G.247";
+     "G.271" -> "G.247";
      "G.253" -> "G.248";
      "G.256" -> "G.248";
      "G.257" -> "G.248";
@@ -218,14 +224,19 @@ Dependency Graph
      "G.271" -> "G.248";
      "G.300" -> "G.248";
      "G.319" -> "G.248";
+     "G.254" -> "G.253";
+     "G.256" -> "G.253";
      "G.257" -> "G.253";
+     "G.258" -> "G.253";
      "G.261" -> "G.253";
      "G.262" -> "G.253";
      "G.263" -> "G.253";
+     "G.266" -> "G.253";
      "G.258" -> "G.254";
      "G.261" -> "G.254";
      "G.262" -> "G.254";
      "G.263" -> "G.254";
+     "G.266" -> "G.254";
      "G.257" -> "G.256";
      "G.263" -> "G.256";
      "G.258" -> "G.257";
@@ -241,6 +252,7 @@ Dependency Graph
      "G.319" -> "G.266";
      "G.271" -> "G.269";
      "G.300" -> "G.269";
+     "G.319" -> "G.269";
      "G.319" -> "G.271";
      "G.319" -> "G.300";
      "G.319" -> "G.318";

@@ -1,0 +1,218 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" width="236pt" height="476pt" viewBox="0.00 0.00 235.67 476.00">
+<ns0:g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 472)">
+<ns0:title>%3</ns0:title>
+
+<ns0:g id="node1" class="node">
+<ns0:title>G.1</ns0:title>
+<ns0:g id="a_node1"><ns0:a ns1:href="../elements2/G.1/index.html" ns1:title="G.1 (I.def.1): A point A is that which has no part." target="_top">
+<ns0:path fill="#224422" stroke="#d6d3cd" d="M135,-36C135,-36 105,-36 105,-36 99,-36 93,-30 93,-24 93,-24 93,-12 93,-12 93,-6 99,0 105,0 105,0 135,0 135,0 141,0 147,-6 147,-12 147,-12 147,-24 147,-24 147,-30 141,-36 135,-36" />
+<ns0:text text-anchor="middle" x="120" y="-15.2" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#ffffff">G.1</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node2" class="node">
+<ns0:title>G.2</ns0:title>
+<ns0:g id="a_node2"><ns0:a ns1:href="../elements2/G.2/index.html" ns1:title="G.2 (I.def.2): A line [ A B ] is a projection of a relationship of two points A, B." target="_top">
+<ns0:path fill="#224422" stroke="#d6d3cd" d="M190,-108C190,-108 160,-108 160,-108 154,-108 148,-102 148,-96 148,-96 148,-84 148,-84 148,-78 154,-72 160,-72 160,-72 190,-72 190,-72 196,-72 202,-78 202,-84 202,-84 202,-96 202,-96 202,-102 196,-108 190,-108" />
+<ns0:text text-anchor="middle" x="175" y="-87.2" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#ffffff">G.2</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge1" class="edge">
+<ns0:title>G.2-&gt;G.1</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M161.4,-71.7C154.41,-62.8 145.79,-51.82 138.23,-42.2" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="140.14,-40.38 133.44,-36.1 136.01,-43.62 140.14,-40.38" />
+</ns0:g>
+
+<ns0:g id="node3" class="node">
+<ns0:title>G.3</ns0:title>
+<ns0:g id="a_node3"><ns0:a ns1:href="../elements2/G.3/index.html" ns1:title="G.3 (I.def.3): The extremities of a segment / A B / are points A, B." target="_top">
+<ns0:path fill="#224422" stroke="#d6d3cd" d="M80,-180C80,-180 50,-180 50,-180 44,-180 38,-174 38,-168 38,-168 38,-156 38,-156 38,-150 44,-144 50,-144 50,-144 80,-144 80,-144 86,-144 92,-150 92,-156 92,-156 92,-168 92,-168 92,-174 86,-180 80,-180" />
+<ns0:text text-anchor="middle" x="65" y="-159.2" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#ffffff">G.3</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge2" class="edge">
+<ns0:title>G.3-&gt;G.1</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M71.63,-143.87C81.34,-118.82 99.45,-72.05 110.55,-43.41" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="113.08,-44.13 113.34,-36.19 108.19,-42.23 113.08,-44.13" />
+</ns0:g>
+
+<ns0:g id="edge4" class="edge">
+<ns0:title>G.3-&gt;G.2</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M91.91,-143.88C106.82,-134.38 125.51,-122.5 141.38,-112.4" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="143.07,-114.43 147.99,-108.19 140.25,-110 143.07,-114.43" />
+</ns0:g>
+
+<ns0:g id="node4" class="node">
+<ns0:title>G.4</ns0:title>
+<ns0:g id="a_node4"><ns0:a ns1:href="../elements2/G.4/index.html" ns1:title="G.4 (I.def.4): A segment / A B / is a portion of a line [ A B ] between two points A, B on the line." target="_top">
+<ns0:path fill="#224422" stroke="#d6d3cd" d="M114,-252C114,-252 84,-252 84,-252 78,-252 72,-246 72,-240 72,-240 72,-228 72,-228 72,-222 78,-216 84,-216 84,-216 114,-216 114,-216 120,-216 126,-222 126,-228 126,-228 126,-240 126,-240 126,-246 120,-252 114,-252" />
+<ns0:text text-anchor="middle" x="99" y="-231.2" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#ffffff">G.4</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge3" class="edge">
+<ns0:title>G.4-&gt;G.1</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M100.68,-215.85C104.38,-178.13 113.25,-87.83 117.56,-43.88" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="120.19,-43.95 118.31,-36.23 114.96,-43.44 120.19,-43.95" />
+</ns0:g>
+
+<ns0:g id="edge5" class="edge">
+<ns0:title>G.4-&gt;G.2</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M111.35,-215.75C118.39,-205.58 127.14,-192.33 134,-180 145.8,-158.8 157.17,-133.59 164.94,-115.43" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="167.53,-116.04 168.04,-108.11 162.7,-113.99 167.53,-116.04" />
+</ns0:g>
+
+<ns0:g id="edge8" class="edge">
+<ns0:title>G.4-&gt;G.3</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M90.6,-215.7C86.4,-207.05 81.25,-196.45 76.67,-187.03" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="78.95,-185.7 73.31,-180.1 74.22,-188 78.95,-185.7" />
+</ns0:g>
+
+<ns0:g id="node5" class="node">
+<ns0:title>G.5</ns0:title>
+<ns0:g id="a_node5"><ns0:a ns1:href="../elements2/G.5/index.html" ns1:title="G.5 (I.def.5): A surface is that which has length and breadth only." target="_top">
+<ns0:path fill="#224422" stroke="#d6d3cd" d="M186,-252C186,-252 156,-252 156,-252 150,-252 144,-246 144,-240 144,-240 144,-228 144,-228 144,-222 150,-216 156,-216 156,-216 186,-216 186,-216 192,-216 198,-222 198,-228 198,-228 198,-240 198,-240 198,-246 192,-252 186,-252" />
+<ns0:text text-anchor="middle" x="171" y="-231.2" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#ffffff">G.5</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node6" class="node">
+<ns0:title>G.7</ns0:title>
+<ns0:g id="a_node6"><ns0:a ns1:href="../elements2/G.7/index.html" ns1:title="G.7 (I.def.7): A plane surface lies evenly with the lines on itself." target="_top">
+<ns0:path fill="#224422" stroke="#d6d3cd" d="M190,-324C190,-324 160,-324 160,-324 154,-324 148,-318 148,-312 148,-312 148,-300 148,-300 148,-294 154,-288 160,-288 160,-288 190,-288 190,-288 196,-288 202,-294 202,-300 202,-300 202,-312 202,-312 202,-318 196,-324 190,-324" />
+<ns0:text text-anchor="middle" x="175" y="-303.2" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#ffffff">G.7</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge6" class="edge">
+<ns0:title>G.7-&gt;G.2</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M188.56,-287.97C195.56,-278.09 203.37,-265.05 207,-252 220.31,-204.22 200.73,-146.99 186.83,-115.24" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="189.09,-113.88 183.62,-108.12 184.31,-116.04 189.09,-113.88" />
+</ns0:g>
+
+<ns0:g id="edge10" class="edge">
+<ns0:title>G.7-&gt;G.4</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M156.21,-287.7C146.27,-278.54 133.95,-267.19 123.3,-257.38" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="124.87,-255.25 117.57,-252.1 121.31,-259.12 124.87,-255.25" />
+</ns0:g>
+
+<ns0:g id="edge13" class="edge">
+<ns0:title>G.7-&gt;G.5</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M174.01,-287.7C173.53,-279.3 172.95,-269.07 172.42,-259.86" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="175.03,-259.44 171.98,-252.1 169.78,-259.74 175.03,-259.44" />
+</ns0:g>
+
+<ns0:g id="node7" class="node">
+<ns0:title>G.8</ns0:title>
+<ns0:g id="a_node7"><ns0:a ns1:href="../elements2/G.8/index.html" ns1:title="G.8 (I.def.13): A boundary is the extremity of anything." target="_top">
+<ns0:path fill="#224422" stroke="#d6d3cd" d="M42,-252C42,-252 12,-252 12,-252 6,-252 0,-246 0,-240 0,-240 0,-228 0,-228 0,-222 6,-216 12,-216 12,-216 42,-216 42,-216 48,-216 54,-222 54,-228 54,-228 54,-240 54,-240 54,-246 48,-252 42,-252" />
+<ns0:text text-anchor="middle" x="27" y="-231.2" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#ffffff">G.8</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge9" class="edge">
+<ns0:title>G.8-&gt;G.3</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M36.39,-215.7C41.13,-206.97 46.96,-196.24 52.11,-186.75" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="54.44,-187.95 55.71,-180.1 49.83,-185.44 54.44,-187.95" />
+</ns0:g>
+
+<ns0:g id="node8" class="node">
+<ns0:title>G.9</ns0:title>
+<ns0:g id="a_node8"><ns0:a ns1:href="../elements2/G.9/index.html" ns1:title="G.9 (I.def.14): A figure is that which is contained by any boundary or boundaries." target="_top">
+<ns0:path fill="#224422" stroke="#d6d3cd" d="M42,-324C42,-324 12,-324 12,-324 6,-324 0,-318 0,-312 0,-312 0,-300 0,-300 0,-294 6,-288 12,-288 12,-288 42,-288 42,-288 48,-288 54,-294 54,-300 54,-300 54,-312 54,-312 54,-318 48,-324 42,-324" />
+<ns0:text text-anchor="middle" x="27" y="-303.2" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#ffffff">G.9</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge15" class="edge">
+<ns0:title>G.9-&gt;G.8</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M27,-287.7C27,-279.3 27,-269.07 27,-259.86" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="29.63,-259.6 27,-252.1 24.38,-259.6 29.63,-259.6" />
+</ns0:g>
+
+<ns0:g id="node9" class="node">
+<ns0:title>G.12</ns0:title>
+<ns0:g id="a_node9"><ns0:a ns1:href="../elements2/G.12/index.html" ns1:title="G.12 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four." target="_top">
+<ns0:path fill="#224422" stroke="#d6d3cd" d="M97,-396C97,-396 67,-396 67,-396 61,-396 55,-390 55,-384 55,-384 55,-372 55,-372 55,-366 61,-360 67,-360 67,-360 97,-360 97,-360 103,-360 109,-366 109,-372 109,-372 109,-384 109,-384 109,-390 103,-396 97,-396" />
+<ns0:text text-anchor="middle" x="82" y="-375.2" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#ffffff">G.12</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge11" class="edge">
+<ns0:title>G.12-&gt;G.4</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M84.05,-359.87C87.04,-334.92 92.6,-288.45 96.03,-259.77" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="98.66,-259.95 96.94,-252.19 93.44,-259.32 98.66,-259.95" />
+</ns0:g>
+
+<ns0:g id="edge16" class="edge">
+<ns0:title>G.12-&gt;G.9</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M68.4,-359.7C61.41,-350.8 52.79,-339.82 45.23,-330.2" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="47.14,-328.38 40.44,-324.1 43.01,-331.62 47.14,-328.38" />
+</ns0:g>
+
+<ns0:g id="node10" class="node">
+<ns0:title>G.22</ns0:title>
+<ns0:g id="a_node10"><ns0:a ns1:href="../elements2/G.22/index.html" ns1:title="G.22 (I.def.8): A plane angle is the inclination to one another of two lines or arcs in a plane that meet and do not lie on the same line." target="_top">
+<ns0:path fill="#224422" stroke="#d6d3cd" d="M179,-396C179,-396 149,-396 149,-396 143,-396 137,-390 137,-384 137,-384 137,-372 137,-372 137,-366 143,-360 149,-360 149,-360 179,-360 179,-360 185,-360 191,-366 191,-372 191,-372 191,-384 191,-384 191,-390 185,-396 179,-396" />
+<ns0:text text-anchor="middle" x="164" y="-375.2" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#ffffff">G.22</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge7" class="edge">
+<ns0:title>G.22-&gt;G.2</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M183.84,-359.77C193.56,-350.21 204.54,-337.54 211,-324 224.97,-294.72 220.32,-284.33 223,-252 226.97,-204.06 233.74,-188.71 216,-144 211.68,-133.11 204.41,-122.58 197.18,-113.81" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="199.1,-112.02 192.22,-108.05 195.12,-115.44 199.1,-112.02" />
+</ns0:g>
+
+<ns0:g id="edge12" class="edge">
+<ns0:title>G.22-&gt;G.4</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M155.81,-359.85C150.89,-349.49 144.53,-336.01 139,-324 128.96,-302.19 117.77,-277.24 109.79,-259.32" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="112.02,-257.89 106.58,-252.1 107.23,-260.02 112.02,-257.89" />
+</ns0:g>
+
+<ns0:g id="edge14" class="edge">
+<ns0:title>G.22-&gt;G.7</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M166.72,-359.7C168.05,-351.22 169.68,-340.86 171.14,-331.58" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="173.74,-331.92 172.31,-324.1 168.55,-331.11 173.74,-331.92" />
+</ns0:g>
+
+<ns0:g id="node11" class="node">
+<ns0:title>G.152</ns0:title>
+<ns0:g id="a_node11"><ns0:a ns1:href="../elements2/G.152/index.html" ns1:title="G.152 (IV.def.1): Apolygon is said to beinscribed in a polygon when the respectiveangles of the inscribedfigure lie on the respective sides of that in which it is inscribed." target="_top">
+<ns0:path fill="#4a453b" stroke="#e8b85a" stroke-width="2.5" d="M97,-468C97,-468 67,-468 67,-468 61,-468 55,-462 55,-456 55,-456 55,-444 55,-444 55,-438 61,-432 67,-432 67,-432 97,-432 97,-432 103,-432 109,-438 109,-444 109,-444 109,-456 109,-456 109,-462 103,-468 97,-468" />
+<ns0:text text-anchor="middle" x="82" y="-447.2" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#ffffff">G.152</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge17" class="edge">
+<ns0:title>G.152-&gt;G.9</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M67.84,-431.85C60.31,-421.93 51.5,-408.89 46,-396 37.23,-375.46 32.35,-350.47 29.74,-332.2" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="32.29,-331.41 28.7,-324.33 27.08,-332.11 32.29,-331.41" />
+</ns0:g>
+
+<ns0:g id="edge18" class="edge">
+<ns0:title>G.152-&gt;G.12</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M82,-431.7C82,-423.3 82,-413.07 82,-403.86" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="84.63,-403.6 82,-396.1 79.38,-403.6 84.63,-403.6" />
+</ns0:g>
+
+<ns0:g id="edge19" class="edge">
+<ns0:title>G.152-&gt;G.22</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M102.27,-431.7C113.09,-422.46 126.53,-410.98 138.11,-401.11" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="139.96,-402.97 143.96,-396.1 136.55,-398.98 139.96,-402.97" />
+</ns0:g>
+</ns0:g>
+</ns0:svg>

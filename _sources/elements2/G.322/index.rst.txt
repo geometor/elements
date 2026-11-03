@@ -10,7 +10,7 @@
 :categories: theorem, proof, number-theory, proportions
 :category: theorem, proof, number-theory, proportions
 :tags: book-viii, point, proportional, number, similar-plane-and-solid-numbers, in-the-same-ratio, part-aliquot, unit, multiply, plane-surface, plane-number, alternando, proportion, similar, plane
-:dependencies: G.7, G.180, G.248, G.266, G.271, G.274, G.289, G.300, G.318
+:dependencies: G.7, G.169, G.180, G.194, G.247, G.248, G.266, G.269, G.271, G.274, G.289, G.300, G.318
 :excerpt: If one mean proportional number fall between two numbers, the numbers is similar plane numbers.
 
 .. _G.322:
@@ -43,23 +43,23 @@ G.322 mean proportional number
 
 .. step:: assert ∵ least_numbers_ratio <G.274>
 
-   Therefore :g:`D <g1:D>` :term:`measures <G.169>` :g:`A <g1:A>` the same number of times that :g:`E <g1:E>` measures :g:`C <g1:C>`.
+   :g:`D <g1:D>` measures :g:`A <g1:A>` the same number of times that :g:`E <g1:E>` measures :g:`C <g1:C>`
 
 .. step:: assert
 
-   As many times as :g:`D <g1:D>` measures :g:`A <g1:A>`, so many :term:`units <G.247>` let there be in :g:`F <g1:F>`
+   As many times as :g:`D <g1:D>` :term:`measures <G.169>` :g:`A <g1:A>`, so many :term:`units <G.247>` let there be in :g:`F <g1:F>`
 
 .. step:: assert
 
-   Therefore :g:`F <g1:F>` by :term:`multiplying <G.269>` :g:`D <g1:D>` has made :g:`A <g1:A>`, so that :g:`A <g1:A>` is :term:`plane <G.7>`, and :g:`D <g1:D>`, :g:`F <g1:F>` are its sides.
+   :g:`F <g1:F>` by multiplying :g:`D <g1:D>` has made :g:`A <g1:A>`, so that :g:`A <g1:A>` is plane, and :g:`D <g1:D>`, :g:`F <g1:F>` are its sides
 
 .. step:: assert
 
-   Since :g:`D <g1:D>`, :g:`E <g1:E>` are the least of the numbers which have the :term:`same ratio <G.176>` with :g:`C <g1:C>`, :g:`B <g1:B>`,
+   :g:`D <g1:D>`, :g:`E <g1:E>` are the least of the numbers which have the same ratio with :g:`C <g1:C>`, :g:`B <g1:B>`,
 
 .. step:: assert ∵ least_numbers_ratio <G.274>
 
-   Therefore :g:`D <g1:D>` measures :g:`C <g1:C>` the same number of times that :g:`E <g1:E>` measures :g:`B <g1:B>`.
+   :g:`D <g1:D>` measures :g:`C <g1:C>` the same number of times that :g:`E <g1:E>` measures :g:`B <g1:B>`
 
 .. step:: assert
 
@@ -67,51 +67,51 @@ G.322 mean proportional number
 
 .. step:: assert
 
-   Therefore :g:`E <g1:E>` measures :g:`B <g1:B>` according to the units in :g:`G <g1:G>`; therefore :g:`G <g1:G>` by multiplying :g:`E <g1:E>` has made :g:`B <g1:B>`.
+   :g:`E <g1:E>` measures :g:`B <g1:B>` according to the units in :g:`G <g1:G>`; therefore :g:`G <g1:G>` by multiplying :g:`E <g1:E>` has made :g:`B <g1:B>`
 
 .. step:: assert
 
-   Therefore :g:`B <g1:B>` is plane, and :g:`E <g1:E>`, :g:`G <g1:G>` are its sides.
+   :g:`B <g1:B>` is plane, and :g:`E <g1:E>`, :g:`G <g1:G>` are its sides
 
 .. step:: assert
 
-   Therefore :g:`A <g1:A>`, :g:`B <g1:B>` are :term:`plane numbers <G.300>`.
+   :g:`A <g1:A>`, :g:`B <g1:B>` are plane numbers
 
 .. step:: assert
 
-   I say next that they are also similar.
+   I say next that they are also similar
 
 .. step:: assert
 
-   † since :g:`F <g1:F>` by multiplying :g:`D <g1:D>` has made :g:`A <g1:A>`, and by multiplying :g:`E <g1:E>` has made :g:`C <g1:C>`,
+   † since :g:`F <g1:F>` by :term:`multiplying <G.269>` :g:`D <g1:D>` has made :g:`A <g1:A>`, and by multiplying :g:`E <g1:E>` has made :g:`C <g1:C>`,
 
 .. step:: assert ∵ number_multiplying_numbers <G.271>
 
-   Therefore, as :g:`D <g1:D>` is to :g:`E <g1:E>`, so is :g:`A <g1:A>` to :g:`C <g1:C>`, that is, :g:`C <g1:C>` to :g:`B <g1:B>`.
+   as :g:`D <g1:D>` is to :g:`E <g1:E>`, so is :g:`A <g1:A>` to :g:`C <g1:C>`, that is, :g:`C <g1:C>` to :g:`B <g1:B>`
 
 .. step:: assert
 
-   † since :g:`E <g1:E>` by multiplying :g:`F <g1:F>`, :g:`G <g1:G>` has made :g:`C <g1:C>`, :g:`B <g1:B>` respectively,
+   † since :g:`E <g1:E>` by multiplying :g:`F <g1:F>`, :g:`G <g1:G>` has made :g:`C <g1:C>`, :g:`B <g1:B>`,
 
 .. step:: assert ∵ number_multiplying_numbers <G.271>
 
-   Therefore, as :g:`F <g1:F>` is to :g:`G <g1:G>`, so is :g:`C <g1:C>` to :g:`B <g1:B>`.
+   as :g:`F <g1:F>` is to :g:`G <g1:G>`, so is :g:`C <g1:C>` to :g:`B <g1:B>`
 
 .. step:: assert
 
-   But, as :g:`C <g1:C>` is to :g:`B <g1:B>`, so is :g:`D <g1:D>` to :g:`E <g1:E>`;
+   But, as :g:`C <g1:C>` is to :g:`B <g1:B>`, so is :g:`D <g1:D>` to :g:`E <g1:E>`
 
 .. step:: assert
 
-   Therefore also, as :g:`D <g1:D>` is to :g:`E <g1:E>`, so is :g:`F <g1:F>` to :g:`G <g1:G>`.
+   also, as :g:`D <g1:D>` is to :g:`E <g1:E>`, so is :g:`F <g1:F>` to :g:`G <g1:G>`
 
 .. step:: assert ∵ numbers_proportional_proportional <G.266>
 
-   :term:`Alternately <G.194>`, as :g:`D <g1:D>` is to :g:`F <g1:F>`, so is :g:`E <g1:E>` to :g:`G <g1:G>`.
+   :term:`Alternately <G.194>`, as :g:`D <g1:D>` is to :g:`F <g1:F>`, so is :g:`E <g1:E>` to :g:`G <g1:G>`
 
 .. step:: conclude
 
-   Therefore :g:`A <g1:A>`, :g:`B <g1:B>` are similar plane numbers; for their sides are proportional.
+   :g:`A <g1:A>`, :g:`B <g1:B>` are similar plane numbers; for their sides are proportional
 
 Dependency Graph
 ----------------
@@ -179,6 +179,7 @@ Dependency Graph
      "G.4" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
+     "G.7" -> "G.2";
      "G.4" -> "G.3";
      "G.8" -> "G.3";
      "G.7" -> "G.4";
@@ -193,12 +194,20 @@ Dependency Graph
      "G.252" -> "G.169";
      "G.253" -> "G.169";
      "G.254" -> "G.169";
+     "G.255" -> "G.169";
      "G.256" -> "G.169";
      "G.268" -> "G.169";
+     "G.270" -> "G.169";
+     "G.271" -> "G.169";
      "G.274" -> "G.169";
+     "G.275" -> "G.169";
+     "G.289" -> "G.169";
+     "G.322" -> "G.169";
      "G.171" -> "G.170";
      "G.176" -> "G.170";
+     "G.183" -> "G.170";
      "G.185" -> "G.170";
+     "G.186" -> "G.170";
      "G.257" -> "G.170";
      "G.186" -> "G.171";
      "G.289" -> "G.173";
@@ -211,6 +220,7 @@ Dependency Graph
      "G.275" -> "G.176";
      "G.289" -> "G.176";
      "G.183" -> "G.180";
+     "G.263" -> "G.180";
      "G.266" -> "G.180";
      "G.273" -> "G.180";
      "G.318" -> "G.180";
@@ -218,6 +228,9 @@ Dependency Graph
      "G.182" -> "G.181";
      "G.194" -> "G.181";
      "G.265" -> "G.181";
+     "G.268" -> "G.181";
+     "G.274" -> "G.181";
+     "G.275" -> "G.181";
      "G.183" -> "G.182";
      "G.273" -> "G.183";
      "G.186" -> "G.184";
@@ -228,11 +241,21 @@ Dependency Graph
      "G.262" -> "G.194";
      "G.266" -> "G.194";
      "G.268" -> "G.194";
+     "G.270" -> "G.194";
+     "G.271" -> "G.194";
+     "G.322" -> "G.194";
      "G.248" -> "G.247";
      "G.249" -> "G.247";
      "G.250" -> "G.247";
+     "G.251" -> "G.247";
+     "G.255" -> "G.247";
      "G.268" -> "G.247";
      "G.269" -> "G.247";
+     "G.270" -> "G.247";
+     "G.271" -> "G.247";
+     "G.275" -> "G.247";
+     "G.289" -> "G.247";
+     "G.322" -> "G.247";
      "G.250" -> "G.248";
      "G.251" -> "G.248";
      "G.252" -> "G.248";
@@ -259,21 +282,31 @@ Dependency Graph
      "G.250" -> "G.249";
      "G.251" -> "G.249";
      "G.252" -> "G.249";
+     "G.255" -> "G.249";
      "G.275" -> "G.249";
+     "G.289" -> "G.249";
      "G.251" -> "G.250";
      "G.252" -> "G.251";
      "G.255" -> "G.251";
      "G.289" -> "G.252";
+     "G.254" -> "G.253";
      "G.255" -> "G.253";
+     "G.256" -> "G.253";
      "G.257" -> "G.253";
+     "G.258" -> "G.253";
      "G.261" -> "G.253";
      "G.262" -> "G.253";
      "G.263" -> "G.253";
+     "G.265" -> "G.253";
+     "G.266" -> "G.253";
      "G.255" -> "G.254";
      "G.258" -> "G.254";
      "G.261" -> "G.254";
      "G.262" -> "G.254";
      "G.263" -> "G.254";
+     "G.265" -> "G.254";
+     "G.266" -> "G.254";
+     "G.274" -> "G.254";
      "G.274" -> "G.255";
      "G.257" -> "G.256";
      "G.263" -> "G.256";
@@ -300,8 +333,10 @@ Dependency Graph
      "G.270" -> "G.269";
      "G.271" -> "G.269";
      "G.272" -> "G.269";
+     "G.273" -> "G.269";
      "G.289" -> "G.269";
      "G.300" -> "G.269";
+     "G.322" -> "G.269";
      "G.272" -> "G.270";
      "G.275" -> "G.270";
      "G.289" -> "G.270";

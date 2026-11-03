@@ -40,35 +40,35 @@ G.284 prime number prime
 
 .. step:: assert
 
-   If :g:`B <g1:B>`, :g:`A <g1:A>` are not prime to one another, some number will measure them.
+   If :g:`B <g1:B>`, :g:`A <g1:A>` are not prime to one another, some number will measure them
 
 .. step:: assert
 
-   Let :g:`C <g1:C>` measure them.
+   Let :g:`C <g1:C>` measure them
 
 .. step:: assert
 
-   Since :g:`C <g1:C>` measures :g:`B <g1:B>`, and :g:`A <g1:A>` does not measure :g:`B <g1:B>`,
+   :g:`C <g1:C>` measures :g:`B <g1:B>`, and :g:`A <g1:A>` does not measure :g:`B <g1:B>`,
 
 .. step:: assert
 
-   Therefore :g:`C <g1:C>` is not the same with :g:`A <g1:A>`.
+   :g:`C <g1:C>` is not the same with :g:`A <g1:A>`
 
 .. step:: assert
 
-   Since :g:`C <g1:C>` measures :g:`B <g1:B>`, :g:`A <g1:A>`,
+   :g:`C <g1:C>` measures :g:`B <g1:B>`, :g:`A <g1:A>`,
 
 .. step:: assert
 
-   Therefore it also measures :g:`A <g1:A>` which is prime, though it is not the same with it : which is impossible.
+   it also measures :g:`A <g1:A>` which is prime, though it is not the same with it ⇒⇐
 
 .. step:: assert
 
-   Therefore no number will measure :g:`B <g1:B>`, :g:`A <g1:A>`.
+   no number will measure :g:`B <g1:B>`, :g:`A <g1:A>`
 
 .. step:: conclude
 
-   Therefore :g:`A <g1:A>`, :g:`B <g1:B>` are prime to one another.
+   :g:`A <g1:A>`, :g:`B <g1:B>` are prime to one another
 
 Dependency Graph
 ----------------
@@ -84,16 +84,20 @@ Dependency Graph
      "G.247" [label="G.247", tooltip="G.247 (VII.def.1): Anunit is that by virtue of which each of the things that exist is called one.", fillcolor="#224422", URL="../G.247/index.html", target="_top"];
      "G.248" [label="G.248", tooltip="G.248 (VII.def.2): Anumber is a multitude composed ofunits.", fillcolor="#224422", URL="../G.248/index.html", target="_top"];
      "G.249" [label="G.249", tooltip="G.249 (VII.def.12): Numbers prime to one another are those which aremeasured by anunit alone as a common measure.", fillcolor="#224422", URL="../G.249/index.html", target="_top"];
+     "G.253" [label="G.253", tooltip="G.253 (VII.def.3): Anumber is apart of a number, the less of the greater, when itmeasures the greater;", fillcolor="#224422", URL="../G.253/index.html", target="_top"];
      "G.283" [label="G.283", tooltip="G.283 (VII.def.11): Aprime number is that which ismeasured by anunit alone.", fillcolor="#224422", URL="../G.283/index.html", target="_top"];
      "G.284" [label="G.284", tooltip="G.284 (VII.29): Any prime number is prime to any number which it does not measure.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.249" -> "G.169";
+     "G.253" -> "G.169";
      "G.283" -> "G.169";
      "G.284" -> "G.169";
      "G.248" -> "G.247";
      "G.249" -> "G.247";
      "G.283" -> "G.247";
+     "G.253" -> "G.248";
      "G.284" -> "G.248";
      "G.284" -> "G.249";
+     "G.283" -> "G.253";
      "G.284" -> "G.283";
    }
 

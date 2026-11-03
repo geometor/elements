@@ -12,7 +12,7 @@ G.101 circle segments cut — Code
 
 .. enunciation::
 
-   If in a :term:`circle <G.10>` two :term:`segments <G.4>` cut one another which are not through the :term:`center <G.14>`, they do not bisect one another.
+   If in a :term:`circle <G.10>` two :term:`segments <G.4>` cut one another which are not through the :term:`center <G.11>`, they do not bisect one another.
 
 .. picture:: g1.svg
 

@@ -12,7 +12,7 @@ G.212 angle triangle bisected — Code
 
 .. enunciation::
 
-   If an :term:`angle <G.22>` of a :term:`triangle <G.11>` be bisected and the :term:`segment <G.4>` cutting the angle cut the base also, the segments of the base will have the :term:`same ratio <G.176>` as the remaining sides of the triangle; and, if the segments of the base have the same ratio as the remaining sides of the triangle, the segment joined from the vertex to the :term:`point <G.1>` of section will bisect the angle of the triangle.
+   If an :term:`angle <G.22>` of a :term:`triangle <G.12>` be bisected and the :term:`segment <G.4>` cutting the angle cut the base also, the segments of the base will have the :term:`same ratio <G.176>` as the remaining sides of the triangle; and, if the segments of the base have the same ratio as the remaining sides of the triangle, the segment joined from the vertex to the :term:`point <G.1>` of section will bisect the angle of the triangle.
 
 .. picture:: g1.svg
 

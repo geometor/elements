@@ -12,7 +12,7 @@ G.113 chords equally distant from the center — Heath
 
 .. enunciation::
 
-   In a :term:`circle <G.10>` :term:`straight lines <G.4>` are said to be :term:`**equally distant from the centre** <equally-distant-from-centre>` when the :term:`perpendiculars <G.32>` drawn to them from the :term:`centre <G.14>` are equal.
+   In a :term:`circle <G.10>` :term:`straight lines <G.4>` are said to be :term:`**equally distant from the centre** <equally-distant-from-centre>` when the :term:`perpendiculars <G.33>` drawn to them from the :term:`centre <G.11>` are equal.
 
 Dependency Graph
 ----------------
@@ -34,25 +34,29 @@ Dependency Graph
      "G.8" [label="G.8", tooltip="G.8 (I.def.13): A boundary is the extremity of anything.", fillcolor="#224422", URL="../G.8/index.html", target="_top"];
      "G.9" [label="G.9", tooltip="G.9 (I.def.14): A figure is that which is contained by any boundary or boundaries.", fillcolor="#224422", URL="../G.9/index.html", target="_top"];
      "G.10" [label="G.10", tooltip="G.10 (I.def.15): A circle ( A B ) is a plane figure contained by one arc defined by a center A and a point B establishing its defining radius / A B /, such that all segments / A B /, / A C /, / A D...", fillcolor="#224422", URL="../G.10/index.html", target="_top"];
-     "G.14" [label="G.14", tooltip="G.14 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.", fillcolor="#224422", URL="../G.14/index.html", target="_top"];
+     "G.11" [label="G.11", tooltip="G.11 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
      "G.22" [label="G.22", tooltip="G.22 (I.def.8): A plane angle is the inclination to one another of two lines or arcs in a plane that meet and do not lie on the same line.", fillcolor="#224422", URL="../G.22/index.html", target="_top"];
-     "G.32" [label="G.32", tooltip="G.32 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.32/index.html", target="_top"];
+     "G.33" [label="G.33", tooltip="G.33 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.33/index.html", target="_top"];
      "G.113" [label="G.113", tooltip="G.113 (III.def.4): In acirclesegments are said to beequally distant from the center when theperpendiculars drawn to them from thecenter are equal.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
      "G.10" -> "G.1";
-     "G.14" -> "G.1";
+     "G.11" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
      "G.6" -> "G.2";
+     "G.7" -> "G.2";
      "G.22" -> "G.2";
+     "G.33" -> "G.2";
      "G.4" -> "G.3";
+     "G.6" -> "G.3";
      "G.8" -> "G.3";
      "G.7" -> "G.4";
      "G.10" -> "G.4";
+     "G.11" -> "G.4";
      "G.22" -> "G.4";
-     "G.32" -> "G.4";
+     "G.33" -> "G.4";
      "G.113" -> "G.4";
      "G.6" -> "G.5";
      "G.7" -> "G.5";
@@ -61,11 +65,11 @@ Dependency Graph
      "G.22" -> "G.7";
      "G.9" -> "G.8";
      "G.10" -> "G.9";
-     "G.14" -> "G.10";
+     "G.11" -> "G.10";
      "G.113" -> "G.10";
-     "G.113" -> "G.14";
-     "G.32" -> "G.22";
-     "G.113" -> "G.32";
+     "G.113" -> "G.11";
+     "G.33" -> "G.22";
+     "G.113" -> "G.33";
    }
 
 Required for

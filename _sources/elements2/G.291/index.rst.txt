@@ -39,27 +39,27 @@ G.291 numbers measure number
 
 .. step:: assert
 
-   If :g:`E <g1:E>` does not measure :g:`/ C D / <g1:/ C D />`, let :g:`E <g1:E>`, measuring :g:`/ F D / <g1:/ F D />`, leave :g:`/ C F / <g1:/ C F />` less than itself.
+   If :g:`E <g1:E>` does not measure :g:`/ C D / <g1:/ C D />`, let :g:`E <g1:E>`, measuring :g:`/ F D / <g1:/ F D />`, leave :g:`/ C F / <g1:/ C F />` less than itself
 
 .. step:: assert
 
-   Since :g:`A <g1:A>`, :g:`B <g1:B>` measure :g:`E <g1:E>`, and :g:`E <g1:E>` measures :g:`/ F D / <g1:/ F D />`,
+   :g:`A <g1:A>`, :g:`B <g1:B>` measure :g:`E <g1:E>`, and :g:`E <g1:E>` measures :g:`/ F D / <g1:/ F D />`,
 
 .. step:: assert
 
-   Therefore :g:`A <g1:A>`, :g:`B <g1:B>` will also measure :g:`/ F D / <g1:/ F D />`.
+   :g:`A <g1:A>`, :g:`B <g1:B>` will also measure :g:`/ F D / <g1:/ F D />`
 
 .. step:: assert
 
-   They also measure the whole :g:`/ C D / <g1:/ C D />`;
+   They also measure :g:`/ C D / <g1:/ C D />`
 
 .. step:: assert
 
-   Therefore they will also measure the remainder :g:`/ C F / <g1:/ C F />` which is less than :g:`E <g1:E>`: which is impossible.
+   they will also measure :g:`/ C F / <g1:/ C F />` which < :g:`E <g1:E>` ⇒⇐
 
 .. step:: conclude
 
-   Therefore :g:`E <g1:E>` cannot fail to measure :g:`/ C D / <g1:/ C D />`; therefore it measures it.
+   :g:`E <g1:E>` cannot fail to measure :g:`/ C D / <g1:/ C D />`; therefore it measures it
 
 Dependency Graph
 ----------------

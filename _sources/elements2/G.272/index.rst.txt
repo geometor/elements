@@ -39,27 +39,27 @@ G.272 numbers multiplying number
 
 .. step:: assert
 
-   I say that, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`D <g1:D>` to :g:`E <g1:E>`.
+   I say that, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`D <g1:D>` to :g:`E <g1:E>`
 
 .. step:: assert
 
-   Since :g:`A <g1:A>` by multiplying :g:`C <g1:C>` has made :g:`D <g1:D>`,
+   :g:`A <g1:A>` by multiplying :g:`C <g1:C>` has made :g:`D <g1:D>`,
 
 .. step:: assert ∵ numbers_multiplying_make <G.270>
 
-   Therefore also :g:`C <g1:C>` by multiplying :g:`A <g1:A>` has made :g:`D <g1:D>`.
+   also :g:`C <g1:C>` by multiplying :g:`A <g1:A>` has made :g:`D <g1:D>`
 
 .. step:: assert
 
-   For the same reason also :g:`C <g1:C>` by multiplying :g:`B <g1:B>` has made :g:`E <g1:E>`.
+   For the same reason also :g:`C <g1:C>` by multiplying :g:`B <g1:B>` has made :g:`E <g1:E>`
 
 .. step:: assert
 
-   Therefore the number :g:`C <g1:C>` by multiplying the two numbers :g:`A <g1:A>`, :g:`B <g1:B>` has made :g:`D <g1:D>`, :g:`E <g1:E>`.
+   the number :g:`C <g1:C>` by multiplying the two numbers :g:`A <g1:A>`, :g:`B <g1:B>` has made :g:`D <g1:D>`, :g:`E <g1:E>`
 
 .. step:: conclude ∵ number_multiplying_numbers <G.271>
 
-   Therefore, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`D <g1:D>` to :g:`E <g1:E>`.
+   as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`D <g1:D>` to :g:`E <g1:E>`
 
 Dependency Graph
 ----------------
@@ -99,21 +99,29 @@ Dependency Graph
      "G.254" -> "G.169";
      "G.256" -> "G.169";
      "G.268" -> "G.169";
+     "G.270" -> "G.169";
+     "G.271" -> "G.169";
      "G.176" -> "G.170";
      "G.257" -> "G.170";
      "G.180" -> "G.176";
      "G.271" -> "G.176";
      "G.272" -> "G.176";
+     "G.263" -> "G.180";
      "G.266" -> "G.180";
      "G.194" -> "G.181";
      "G.265" -> "G.181";
+     "G.268" -> "G.181";
      "G.261" -> "G.194";
      "G.262" -> "G.194";
      "G.266" -> "G.194";
      "G.268" -> "G.194";
+     "G.270" -> "G.194";
+     "G.271" -> "G.194";
      "G.248" -> "G.247";
      "G.268" -> "G.247";
      "G.269" -> "G.247";
+     "G.270" -> "G.247";
+     "G.271" -> "G.247";
      "G.253" -> "G.248";
      "G.256" -> "G.248";
      "G.257" -> "G.248";
@@ -127,14 +135,21 @@ Dependency Graph
      "G.270" -> "G.248";
      "G.271" -> "G.248";
      "G.272" -> "G.248";
+     "G.254" -> "G.253";
+     "G.256" -> "G.253";
      "G.257" -> "G.253";
+     "G.258" -> "G.253";
      "G.261" -> "G.253";
      "G.262" -> "G.253";
      "G.263" -> "G.253";
+     "G.265" -> "G.253";
+     "G.266" -> "G.253";
      "G.258" -> "G.254";
      "G.261" -> "G.254";
      "G.262" -> "G.254";
      "G.263" -> "G.254";
+     "G.265" -> "G.254";
+     "G.266" -> "G.254";
      "G.257" -> "G.256";
      "G.263" -> "G.256";
      "G.258" -> "G.257";

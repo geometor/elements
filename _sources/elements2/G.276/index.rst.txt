@@ -10,7 +10,7 @@
 :categories: theorem, proof, number-theory
 :category: theorem, proof, number-theory
 :tags: book-vii, point, number, in-the-same-ratio, prime-to-one-another, part-aliquot, unit, multiply, ratio, prime, reductio-ad-absurdum
-:dependencies: G.176, G.248, G.249, G.269, G.271
+:dependencies: G.169, G.176, G.247, G.248, G.249, G.269, G.271
 :excerpt: The least numbers of those which have the same ratio with them are prime to one another.
 
 .. _G.276:
@@ -40,23 +40,23 @@ G.276 least numbers ratio
 
 .. step:: assert
 
-   If they are not prime to one another, some number will :term:`measure <G.169>` them.
+   If they are not prime to one another, some number will :term:`measure <G.169>` them
 
 .. step:: assert
 
-   Let some number measure them, and let it be :g:`C <g1:C>`.
+   Let some number measure them, and let it be :g:`C <g1:C>`
 
 .. step:: assert
 
-   And, as many times as :g:`C <g1:C>` measures :g:`A <g1:A>`, so many :term:`units <G.247>` let there be in :g:`D <g1:D>`, and, as many times as :g:`C <g1:C>` measures :g:`B <g1:B>`, so many units let there be in :g:`E <g1:E>`.
+   as many times as :g:`C <g1:C>` measures :g:`A <g1:A>`, so many :term:`units <G.247>` let there be in :g:`D <g1:D>`, and, as many times as :g:`C <g1:C>` measures :g:`B <g1:B>`, so many units let there be in :g:`E <g1:E>`
 
 .. step:: assert
 
-   Since :g:`C <g1:C>` measures :g:`A <g1:A>` according to the units in :g:`D <g1:D>`,
+   :g:`C <g1:C>` measures :g:`A <g1:A>` according to the units in :g:`D <g1:D>`,
 
 .. step:: assert ∵ number_said_multiply_def <G.269>
 
-   Therefore :g:`C <g1:C>` by :term:`multiplying <G.269>` :g:`D <g1:D>` has made :g:`A <g1:A>`.
+   :g:`C <g1:C>` by multiplying :g:`D <g1:D>` has made :g:`A <g1:A>`
 
 .. step:: assert
 
@@ -64,27 +64,27 @@ G.276 least numbers ratio
 
 .. step:: assert
 
-   :g:`C <g1:C>` by multiplying :g:`E <g1:E>` has made :g:`B <g1:B>`.
+   :g:`C <g1:C>` by multiplying :g:`E <g1:E>` has made :g:`B <g1:B>`
 
 .. step:: assert
 
-   Thus the number :g:`C <g1:C>` by multiplying the two numbers :g:`D <g1:D>`, :g:`E <g1:E>` has made :g:`A <g1:A>`, :g:`B <g1:B>` ;
+   the number :g:`C <g1:C>` by :term:`multiplying <G.269>` the two numbers :g:`D <g1:D>`, :g:`E <g1:E>` has made :g:`A <g1:A>`, :g:`B <g1:B>`
 
 .. step:: assert ∵ number_multiplying_numbers <G.271>
 
-   Therefore, as :g:`D <g1:D>` is to :g:`E <g1:E>`, so is :g:`A <g1:A>` to :g:`B <g1:B>` ;
+   as :g:`D <g1:D>` is to :g:`E <g1:E>`, so is :g:`A <g1:A>` to :g:`B <g1:B>`
 
 .. step:: assert
 
-   Therefore :g:`D <g1:D>`, :g:`E <g1:E>` are in the same ratio with :g:`A <g1:A>`, :g:`B <g1:B>`, being less than they : which is impossible.
+   :g:`D <g1:D>`, :g:`E <g1:E>` are in the same ratio with :g:`A <g1:A>`, :g:`B <g1:B>`, being less than they ⇒⇐
 
 .. step:: assert
 
-   Therefore no number will measure the numbers :g:`A <g1:A>`, :g:`B <g1:B>`.
+   no number will measure the numbers :g:`A <g1:A>`, :g:`B <g1:B>`
 
 .. step:: conclude
 
-   Therefore :g:`A <g1:A>`, :g:`B <g1:B>` are prime to one another.
+   :g:`A <g1:A>`, :g:`B <g1:B>` are prime to one another
 
 Dependency Graph
 ----------------
@@ -122,19 +122,25 @@ Dependency Graph
      "G.253" -> "G.169";
      "G.254" -> "G.169";
      "G.256" -> "G.169";
+     "G.271" -> "G.169";
+     "G.276" -> "G.169";
      "G.176" -> "G.170";
      "G.257" -> "G.170";
      "G.180" -> "G.176";
      "G.271" -> "G.176";
      "G.276" -> "G.176";
+     "G.263" -> "G.180";
      "G.266" -> "G.180";
      "G.194" -> "G.181";
      "G.261" -> "G.194";
      "G.262" -> "G.194";
      "G.266" -> "G.194";
+     "G.271" -> "G.194";
      "G.248" -> "G.247";
      "G.249" -> "G.247";
      "G.269" -> "G.247";
+     "G.271" -> "G.247";
+     "G.276" -> "G.247";
      "G.253" -> "G.248";
      "G.256" -> "G.248";
      "G.257" -> "G.248";
@@ -146,14 +152,19 @@ Dependency Graph
      "G.271" -> "G.248";
      "G.276" -> "G.248";
      "G.276" -> "G.249";
+     "G.254" -> "G.253";
+     "G.256" -> "G.253";
      "G.257" -> "G.253";
+     "G.258" -> "G.253";
      "G.261" -> "G.253";
      "G.262" -> "G.253";
      "G.263" -> "G.253";
+     "G.266" -> "G.253";
      "G.258" -> "G.254";
      "G.261" -> "G.254";
      "G.262" -> "G.254";
      "G.263" -> "G.254";
+     "G.266" -> "G.254";
      "G.257" -> "G.256";
      "G.263" -> "G.256";
      "G.258" -> "G.257";

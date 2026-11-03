@@ -9,7 +9,7 @@
 :categories: definition, plane-geometry
 :category: definition, plane-geometry
 :tags: book-i, parallel-straight-lines, straight-line, plane-surface, parallel, plane
-:dependencies: G.4, G.7
+:dependencies: G.2, G.4, G.7
 :excerpt: Parallel lines are lines in the same plane which, extended indefinitely in both directions, do not meet.
 
 .. _G.52:
@@ -50,6 +50,8 @@ Dependency Graph
      "G.4" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
+     "G.7" -> "G.2";
+     "G.52" -> "G.2";
      "G.4" -> "G.3";
      "G.7" -> "G.4";
      "G.52" -> "G.4";

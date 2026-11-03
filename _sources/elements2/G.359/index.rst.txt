@@ -39,27 +39,27 @@ G.359 odd number multiplying
 
 .. step:: assert
 
-   Since :g:`A <g1:A>` by multiplying :g:`B <g1:B>` has made :g:`C <g1:C>`,
+   :g:`A <g1:A>` by multiplying :g:`B <g1:B>` has made :g:`C <g1:C>`,
 
 .. step:: assert ∵ number_said_multiply_def <G.269>
 
-   Therefore :g:`C <g1:C>` is made up of as many numbers equal to :g:`B <g1:B>` as there are :term:`units <G.247>` in :g:`A <g1:A>`.
+   :g:`C <g1:C>` is made up of as many numbers equal to :g:`B <g1:B>` as there are units in :g:`A <g1:A>`
 
 .. step:: assert
 
-   :g:`B <g1:B>` is even ;
+   :g:`B <g1:B>` is even
 
 .. step:: assert
 
-   Therefore :g:`C <g1:C>` is made up of even numbers.
+   :g:`C <g1:C>` is made up of even numbers
 
 .. step:: assert ∵ many_even_numbers <G.351>
 
-   But, if as many even numbers as we please be added together, the whole is even.
+   But, if as many even numbers as we please be added together, the whole is even
 
 .. step:: conclude
 
-   Therefore :g:`C <g1:C>` is even.
+   :g:`C <g1:C>` is even
 
 Dependency Graph
 ----------------

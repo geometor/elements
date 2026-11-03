@@ -10,7 +10,7 @@
 :categories: theorem, proof, number-theory
 :category: theorem, proof, number-theory
 :tags: book-ix, point, number, part-aliquot, prime-number, multiply, prime, reductio-ad-absurdum
-:dependencies: G.169, G.248, G.283, G.285
+:dependencies: G.169, G.248, G.269, G.283, G.285
 :excerpt: If a number be the least that is measured by prime numbers, it will not be measured by any other prime number except those originally measuring it.
 
 .. _G.344:
@@ -43,35 +43,35 @@ G.344 number least measured
 
 .. step:: assert
 
-   Since :g:`E <g1:E>` measures :g:`A <g1:A>`, let it measure it according to :g:`F <g1:F>` ;
+   :g:`E <g1:E>` measures :g:`A <g1:A>`, let it measure it according to :g:`F <g1:F>`
 
 .. step:: assert
 
-   Therefore :g:`E <g1:E>` by :term:`multiplying <G.269>` :g:`F <g1:F>` has made :g:`A <g1:A>`.
+   :g:`E <g1:E>` by multiplying :g:`F <g1:F>` has made :g:`A <g1:A>`
 
 .. step:: assert
 
-   :g:`A <g1:A>` is measured by the prime numbers :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`.
+   :g:`A <g1:A>` is measured by the prime numbers :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`
 
 .. step:: assert ∵ numbers_multiplying_make_vii_30 <G.285>
 
-   But, if two numbers by multiplying one another make some number, and any prime number measure the product, it will also measure one of the original numbers .
+   But, if two numbers by :term:`multiplying <G.269>` one another make some number, and any prime number measure the product, it will also measure one of the original numbers
 
 .. step:: assert
 
-   Therefore :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` will measure one of the numbers :g:`E <g1:E>`, :g:`F <g1:F>`.
+   :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` will measure one of the numbers :g:`E <g1:E>`, :g:`F <g1:F>`
 
 .. step:: assert
 
-   Now they will not measure :g:`E <g1:E>` ; for :g:`E <g1:E>` is prime and not the same with any one of the numbers :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`.
+   Now they will not measure :g:`E <g1:E>` ; for :g:`E <g1:E>` is prime and not the same with any one of the numbers :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`
 
 .. step:: assert
 
-   Therefore they will measure :g:`F <g1:F>`, which is less than :g:`A <g1:A>` : which is impossible, for :g:`A <g1:A>` is by hypothesis the least number measured by :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`.
+   they will measure :g:`F <g1:F>`, which < :g:`A <g1:A>` ⇒⇐, for :g:`A <g1:A>` is by hypothesis the least number measured by :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`
 
 .. step:: conclude
 
-   Therefore no prime number will measure :g:`A <g1:A>` except :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`.
+   no prime number will measure :g:`A <g1:A>` except :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`
 
 Dependency Graph
 ----------------
@@ -141,16 +141,22 @@ Dependency Graph
      "G.251" -> "G.169";
      "G.253" -> "G.169";
      "G.254" -> "G.169";
+     "G.255" -> "G.169";
      "G.256" -> "G.169";
      "G.268" -> "G.169";
+     "G.270" -> "G.169";
+     "G.271" -> "G.169";
      "G.274" -> "G.169";
+     "G.275" -> "G.169";
      "G.283" -> "G.169";
      "G.284" -> "G.169";
      "G.285" -> "G.169";
      "G.344" -> "G.169";
      "G.171" -> "G.170";
      "G.176" -> "G.170";
+     "G.183" -> "G.170";
      "G.185" -> "G.170";
+     "G.186" -> "G.170";
      "G.257" -> "G.170";
      "G.186" -> "G.171";
      "G.180" -> "G.176";
@@ -161,11 +167,15 @@ Dependency Graph
      "G.274" -> "G.176";
      "G.275" -> "G.176";
      "G.183" -> "G.180";
+     "G.263" -> "G.180";
      "G.266" -> "G.180";
      "G.273" -> "G.180";
      "G.182" -> "G.181";
      "G.194" -> "G.181";
      "G.265" -> "G.181";
+     "G.268" -> "G.181";
+     "G.274" -> "G.181";
+     "G.275" -> "G.181";
      "G.183" -> "G.182";
      "G.273" -> "G.183";
      "G.186" -> "G.184";
@@ -176,12 +186,20 @@ Dependency Graph
      "G.262" -> "G.194";
      "G.266" -> "G.194";
      "G.268" -> "G.194";
+     "G.270" -> "G.194";
+     "G.271" -> "G.194";
      "G.248" -> "G.247";
      "G.249" -> "G.247";
      "G.250" -> "G.247";
+     "G.251" -> "G.247";
+     "G.255" -> "G.247";
      "G.268" -> "G.247";
      "G.269" -> "G.247";
+     "G.270" -> "G.247";
+     "G.271" -> "G.247";
+     "G.275" -> "G.247";
      "G.283" -> "G.247";
+     "G.285" -> "G.247";
      "G.250" -> "G.248";
      "G.251" -> "G.248";
      "G.253" -> "G.248";
@@ -206,20 +224,30 @@ Dependency Graph
      "G.344" -> "G.248";
      "G.250" -> "G.249";
      "G.251" -> "G.249";
+     "G.255" -> "G.249";
      "G.275" -> "G.249";
      "G.284" -> "G.249";
      "G.251" -> "G.250";
      "G.255" -> "G.251";
+     "G.254" -> "G.253";
      "G.255" -> "G.253";
+     "G.256" -> "G.253";
      "G.257" -> "G.253";
+     "G.258" -> "G.253";
      "G.261" -> "G.253";
      "G.262" -> "G.253";
      "G.263" -> "G.253";
+     "G.265" -> "G.253";
+     "G.266" -> "G.253";
+     "G.283" -> "G.253";
      "G.255" -> "G.254";
      "G.258" -> "G.254";
      "G.261" -> "G.254";
      "G.262" -> "G.254";
      "G.263" -> "G.254";
+     "G.265" -> "G.254";
+     "G.266" -> "G.254";
+     "G.274" -> "G.254";
      "G.274" -> "G.255";
      "G.257" -> "G.256";
      "G.263" -> "G.256";
@@ -244,7 +272,9 @@ Dependency Graph
      "G.270" -> "G.269";
      "G.271" -> "G.269";
      "G.272" -> "G.269";
+     "G.273" -> "G.269";
      "G.285" -> "G.269";
+     "G.344" -> "G.269";
      "G.272" -> "G.270";
      "G.275" -> "G.270";
      "G.272" -> "G.271";

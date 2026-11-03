@@ -10,7 +10,7 @@
 :categories: theorem, proof, number-theory, proportions
 :category: theorem, proof, number-theory, proportions
 :tags: book-viii, point, number, proportional, in-the-same-ratio, prime-to-one-another, ex-aequali, prime-number, part-aliquot, corresponding-magnitudes, ratio, proportion, continued-proportion
-:dependencies: G.176, G.180, G.248, G.263, G.267, G.274, G.275, G.289, G.298
+:dependencies: G.169, G.174, G.176, G.180, G.248, G.249, G.263, G.267, G.274, G.275, G.289, G.298
 :excerpt: If between two numbers there fall numbers in continued proportion with them, then, however many numbers fall between them in continued proportion, so many will also fall in continued proportion between the numbers which have the same ratio with the original numbers.
 
 .. _G.305:
@@ -39,7 +39,7 @@ G.305 numbers there fall
 
 .. step:: assert
 
-   I say that, as many numbers as have fallen between :g:`A <g1:A>`, :g:`B <g1:B>` in continued proportion, so many will also fall between :g:`E <g1:E>`, :g:`F <g1:F>` in continued proportion.
+   I say that, as many numbers as have fallen between :g:`A <g1:A>`, :g:`B <g1:B>` in continued proportion, so many will also fall between :g:`E <g1:E>`, :g:`F <g1:F>` in continued proportion
 
 .. step:: construct
 
@@ -47,63 +47,63 @@ G.305 numbers there fall
 
 .. step:: assert ∵ many_numbers_please_viii_3 <G.298>
 
-   Therefore the extremes of them :g:`G <g1:G>`, :g:`L <g1:L>` are :term:`prime to one another <G.249>`.
+   the extremes of them :g:`G <g1:G>`, :g:`L <g1:L>` are :term:`prime to one another <G.249>`
 
 .. step:: assert
 
-   Since :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`B <g1:B>` are in the same ratio with :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`K <g1:K>`, :g:`L <g1:L>`, and the multitude of the numbers :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`B <g1:B>` is equal to the multitude of the numbers :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`K <g1:K>`, :g:`L <g1:L>`,
+   :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`B <g1:B>` are in the same ratio with :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`K <g1:K>`, :g:`L <g1:L>`, and the multitude of the numbers :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`B <g1:B>` is equal to the multitude of the numbers :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`K <g1:K>`, :g:`L <g1:L>`,
 
 .. step:: assert ∵ there_many_numbers_vii_14 <G.267>
 
-   Therefore, *:term:`ex aequali <G.174>`*, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`G <g1:G>` to :g:`L <g1:L>`.
+   *:term:`ex aequali <G.174>`*, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`G <g1:G>` to :g:`L <g1:L>`
 
 .. step:: assert
 
-   But, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`E <g1:E>` to :g:`F <g1:F>`;
+   But, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`E <g1:E>` to :g:`F <g1:F>`
 
 .. step:: assert
 
-   Therefore also, as :g:`G <g1:G>` is to :g:`L <g1:L>`, so is :g:`E <g1:E>` to :g:`F <g1:F>`.
+   also, as :g:`G <g1:G>` is to :g:`L <g1:L>`, so is :g:`E <g1:E>` to :g:`F <g1:F>`
 
 .. step:: assert ∵ numbers_prime_least, least_numbers_ratio <G.275, G.274>
 
-   :g:`G <g1:G>`, :g:`L <g1:L>` are prime, primes are also least, and the least numbers measure those which have the same ratio the same number of times, the greater the greater and the less the less, that is, the antecedent the antecedent and the consequent the consequent.
+   :g:`G <g1:G>`, :g:`L <g1:L>` are prime, primes are also least, and the least numbers measure those which have the same ratio the same number of times, the greater the greater and the less the less, that is, the antecedent the antecedent and the consequent the consequent
 
 .. step:: assert
 
-   Therefore :g:`G <g1:G>` :term:`measures <G.169>` :g:`E <g1:E>` the same number of times as :g:`L <g1:L>` measures :g:`F <g1:F>`.
+   :g:`G <g1:G>` measures :g:`E <g1:E>` the same number of times as :g:`L <g1:L>` measures :g:`F <g1:F>`
 
 .. step:: assert
 
-   Next, as many times as :g:`G <g1:G>` measures :g:`E <g1:E>`, so many times let :g:`H <g1:H>`, :g:`K <g1:K>` also measure :g:`M <g1:M>`, :g:`N <g1:N>` respectively
+   Next, as many times as :g:`G <g1:G>` :term:`measures <G.169>` :g:`E <g1:E>`, so many times let :g:`H <g1:H>`, :g:`K <g1:K>` also measure :g:`M <g1:M>`, :g:`N <g1:N>`
 
 .. step:: assert
 
-   Therefore :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`K <g1:K>`, :g:`L <g1:L>` measure :g:`E <g1:E>`, :g:`M <g1:M>`, :g:`N <g1:N>`, :g:`F <g1:F>` the same number of times.
+   :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`K <g1:K>`, :g:`L <g1:L>` measure :g:`E <g1:E>`, :g:`M <g1:M>`, :g:`N <g1:N>`, :g:`F <g1:F>` the same number of times
 
 .. step:: assert ∵ numbers_proportional_multiple_def <G.263>
 
-   Therefore :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`K <g1:K>`, :g:`L <g1:L>` are in the same ratio with :g:`E <g1:E>`, :g:`M <g1:M>`, :g:`N <g1:N>`, :g:`F <g1:F>`.
+   :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`K <g1:K>`, :g:`L <g1:L>` are in the same ratio with :g:`E <g1:E>`, :g:`M <g1:M>`, :g:`N <g1:N>`, :g:`F <g1:F>`
 
 .. step:: assert
 
-   :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`K <g1:K>`, :g:`L <g1:L>` are in the same ratio with :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`B <g1:B>`;
+   :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`K <g1:K>`, :g:`L <g1:L>` are in the same ratio with :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`B <g1:B>`
 
 .. step:: assert
 
-   Therefore :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`B <g1:B>` are also in the same ratio with :g:`E <g1:E>`, :g:`M <g1:M>`, :g:`N <g1:N>`, :g:`F <g1:F>`.
+   :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`B <g1:B>` are also in the same ratio with :g:`E <g1:E>`, :g:`M <g1:M>`, :g:`N <g1:N>`, :g:`F <g1:F>`
 
 .. step:: assert
 
-   :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`B <g1:B>` are in continued proportion;
+   :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`B <g1:B>` are in continued proportion
 
 .. step:: assert
 
-   Therefore :g:`E <g1:E>`, :g:`M <g1:M>`, :g:`N <g1:N>`, :g:`F <g1:F>` are also in continued proportion.
+   :g:`E <g1:E>`, :g:`M <g1:M>`, :g:`N <g1:N>`, :g:`F <g1:F>` are also in continued proportion
 
 .. step:: conclude
 
-   Therefore, as many numbers as have fallen between :g:`A <g1:A>`, :g:`B <g1:B>` in continued proportion with them, so many numbers have also fallen between :g:`E <g1:E>`, :g:`F <g1:F>` in continued proportion.
+   as many numbers as have fallen between :g:`A <g1:A>`, :g:`B <g1:B>` in continued proportion with them, so many numbers have also fallen between :g:`E <g1:E>`, :g:`F <g1:F>` in continued proportion
 
 Dependency Graph
 ----------------
@@ -120,11 +120,22 @@ Dependency Graph
      "G.3" [label="G.3", tooltip="G.3 (I.def.3): The extremities of a segment / A B / are points A, B.", fillcolor="#224422", URL="../G.3/index.html", target="_top"];
      "G.4" [label="G.4", tooltip="G.4 (I.def.4): A segment / A B / is a portion of a line [ A B ] between two points A, B on the line.", fillcolor="#224422", URL="../G.4/index.html", target="_top"];
      "G.5" [label="G.5", tooltip="G.5 (I.def.5): A surface is that which has length and breadth only.", fillcolor="#224422", URL="../G.5/index.html", target="_top"];
+     "G.6" [label="G.6", tooltip="G.6 (I.def.6): The extremities of a surface are lines or arcs.", fillcolor="#224422", URL="../G.6/index.html", target="_top"];
      "G.7" [label="G.7", tooltip="G.7 (I.def.7): A plane surface lies evenly with the lines on itself.", fillcolor="#224422", URL="../G.7/index.html", target="_top"];
      "G.8" [label="G.8", tooltip="G.8 (I.def.13): A boundary is the extremity of anything.", fillcolor="#224422", URL="../G.8/index.html", target="_top"];
      "G.9" [label="G.9", tooltip="G.9 (I.def.14): A figure is that which is contained by any boundary or boundaries.", fillcolor="#224422", URL="../G.9/index.html", target="_top"];
-     "G.11" [label="G.11", tooltip="G.11 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
-     "G.12" [label="G.12", tooltip="G.12 (I.def.20): Of trilateral figures, an equilateral triangle < A B C > has three equal sides, an isosceles triangle < D E F > has two equal sides, and a scalene triangle < G H K > has three uneq...", fillcolor="#224422", URL="../G.12/index.html", target="_top"];
+     "G.10" [label="G.10", tooltip="G.10 (I.def.15): A circle ( A B ) is a plane figure contained by one arc defined by a center A and a point B establishing its defining radius / A B /, such that all segments / A B /, / A C /, / A D...", fillcolor="#224422", URL="../G.10/index.html", target="_top"];
+     "G.11" [label="G.11", tooltip="G.11 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
+     "G.12" [label="G.12", tooltip="G.12 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.12/index.html", target="_top"];
+     "G.13" [label="G.13", tooltip="G.13 (I.def.20): Of trilateral figures, an equilateral triangle < A B C > has three equal sides, an isosceles triangle < D E F > has two equal sides, and a scalene triangle < G H K > has three uneq...", fillcolor="#224422", URL="../G.13/index.html", target="_top"];
+     "G.14" [label="G.14", tooltip="G.14 (I.post.1): Construct a segment / A B / between any two points A, B.", fillcolor="#444422", URL="../G.14/index.html", target="_top"];
+     "G.15" [label="G.15", tooltip="G.15 (I.post.3): Construct a circle ( A B ) with center A and defining radius point B.", fillcolor="#444422", URL="../G.15/index.html", target="_top"];
+     "G.16" [label="G.16", tooltip="G.16 (I.cn.1): Things equal to the same thing are equal to one another.", fillcolor="#442222", URL="../G.16/index.html", target="_top"];
+     "G.17" [label="G.17", tooltip="G.17 (I.1): Construct an equilateral triangle on a given segment.", fillcolor="#222244", URL="../G.17/index.html", target="_top"];
+     "G.18" [label="G.18", tooltip="G.18 (I.post.2): Extend a segment / A B / continuously along a line [ A B ] to / B C /.", fillcolor="#444422", URL="../G.18/index.html", target="_top"];
+     "G.19" [label="G.19", tooltip="G.19 (I.cn.3): If equals are subtracted from equals, the remainders are equal.", fillcolor="#442222", URL="../G.19/index.html", target="_top"];
+     "G.20" [label="G.20", tooltip="G.20 (I.2): Construct at a given point a segment equal to a given segment.", fillcolor="#222244", URL="../G.20/index.html", target="_top"];
+     "G.21" [label="G.21", tooltip="G.21 (I.3): Cut off from the greater of two unequal segments a segment equal to the less.", fillcolor="#222244", URL="../G.21/index.html", target="_top"];
      "G.22" [label="G.22", tooltip="G.22 (I.def.8): A plane angle is the inclination to one another of two lines or arcs in a plane that meet and do not lie on the same line.", fillcolor="#224422", URL="../G.22/index.html", target="_top"];
      "G.63" [label="G.63", tooltip="G.63 (I.def.22): Of quadrilateral figures, a square is equilateral and right-angled; an oblong is right-angled but not equilateral; a rhombus is equilateral but not right-angled; a rhomboid has opp...", fillcolor="#224422", URL="../G.63/index.html", target="_top"];
      "G.169" [label="G.169", tooltip="G.169 (V.def.1): A magnitude is apart of a magnitude, the less of the greater, when it measures the greater.", fillcolor="#224422", URL="../G.169/index.html", target="_top"];
@@ -183,21 +194,70 @@ Dependency Graph
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
+     "G.10" -> "G.1";
+     "G.11" -> "G.1";
+     "G.14" -> "G.1";
+     "G.15" -> "G.1";
+     "G.17" -> "G.1";
+     "G.20" -> "G.1";
+     "G.21" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
+     "G.6" -> "G.2";
+     "G.7" -> "G.2";
+     "G.18" -> "G.2";
      "G.22" -> "G.2";
      "G.4" -> "G.3";
+     "G.6" -> "G.3";
      "G.8" -> "G.3";
+     "G.20" -> "G.3";
      "G.7" -> "G.4";
+     "G.10" -> "G.4";
      "G.11" -> "G.4";
+     "G.12" -> "G.4";
+     "G.14" -> "G.4";
+     "G.17" -> "G.4";
+     "G.18" -> "G.4";
+     "G.20" -> "G.4";
+     "G.21" -> "G.4";
      "G.22" -> "G.4";
+     "G.6" -> "G.5";
      "G.7" -> "G.5";
+     "G.10" -> "G.6";
+     "G.10" -> "G.7";
      "G.22" -> "G.7";
      "G.9" -> "G.8";
+     "G.10" -> "G.9";
+     "G.12" -> "G.9";
      "G.187" -> "G.9";
-     "G.12" -> "G.11";
-     "G.63" -> "G.11";
+     "G.11" -> "G.10";
+     "G.15" -> "G.10";
+     "G.17" -> "G.10";
+     "G.20" -> "G.10";
+     "G.21" -> "G.10";
+     "G.15" -> "G.11";
+     "G.17" -> "G.11";
+     "G.20" -> "G.11";
+     "G.21" -> "G.11";
+     "G.13" -> "G.12";
+     "G.17" -> "G.12";
+     "G.20" -> "G.12";
      "G.63" -> "G.12";
+     "G.17" -> "G.13";
+     "G.63" -> "G.13";
+     "G.17" -> "G.14";
+     "G.20" -> "G.14";
+     "G.17" -> "G.15";
+     "G.20" -> "G.15";
+     "G.21" -> "G.15";
+     "G.17" -> "G.16";
+     "G.20" -> "G.16";
+     "G.21" -> "G.16";
+     "G.20" -> "G.17";
+     "G.20" -> "G.18";
+     "G.20" -> "G.19";
+     "G.21" -> "G.20";
+     "G.279" -> "G.21";
      "G.63" -> "G.22";
      "G.297" -> "G.63";
      "G.170" -> "G.169";
@@ -207,20 +267,32 @@ Dependency Graph
      "G.252" -> "G.169";
      "G.253" -> "G.169";
      "G.254" -> "G.169";
+     "G.255" -> "G.169";
      "G.256" -> "G.169";
      "G.268" -> "G.169";
+     "G.270" -> "G.169";
+     "G.271" -> "G.169";
      "G.274" -> "G.169";
+     "G.275" -> "G.169";
+     "G.276" -> "G.169";
      "G.277" -> "G.169";
+     "G.278" -> "G.169";
      "G.283" -> "G.169";
+     "G.289" -> "G.169";
+     "G.305" -> "G.169";
      "G.171" -> "G.170";
      "G.176" -> "G.170";
+     "G.183" -> "G.170";
      "G.185" -> "G.170";
+     "G.186" -> "G.170";
      "G.257" -> "G.170";
      "G.186" -> "G.171";
      "G.174" -> "G.173";
      "G.289" -> "G.173";
      "G.297" -> "G.173";
      "G.267" -> "G.174";
+     "G.296" -> "G.174";
+     "G.305" -> "G.174";
      "G.180" -> "G.176";
      "G.183" -> "G.176";
      "G.187" -> "G.176";
@@ -232,11 +304,14 @@ Dependency Graph
      "G.276" -> "G.176";
      "G.289" -> "G.176";
      "G.296" -> "G.176";
+     "G.297" -> "G.176";
      "G.298" -> "G.176";
      "G.305" -> "G.176";
      "G.183" -> "G.180";
+     "G.263" -> "G.180";
      "G.266" -> "G.180";
      "G.273" -> "G.180";
+     "G.278" -> "G.180";
      "G.296" -> "G.180";
      "G.297" -> "G.180";
      "G.298" -> "G.180";
@@ -244,6 +319,10 @@ Dependency Graph
      "G.182" -> "G.181";
      "G.194" -> "G.181";
      "G.265" -> "G.181";
+     "G.268" -> "G.181";
+     "G.274" -> "G.181";
+     "G.275" -> "G.181";
+     "G.278" -> "G.181";
      "G.183" -> "G.182";
      "G.273" -> "G.183";
      "G.186" -> "G.184";
@@ -253,13 +332,24 @@ Dependency Graph
      "G.261" -> "G.194";
      "G.262" -> "G.194";
      "G.266" -> "G.194";
+     "G.267" -> "G.194";
      "G.268" -> "G.194";
+     "G.270" -> "G.194";
+     "G.271" -> "G.194";
      "G.248" -> "G.247";
      "G.249" -> "G.247";
      "G.250" -> "G.247";
+     "G.251" -> "G.247";
+     "G.255" -> "G.247";
      "G.268" -> "G.247";
      "G.269" -> "G.247";
+     "G.270" -> "G.247";
+     "G.271" -> "G.247";
+     "G.275" -> "G.247";
+     "G.276" -> "G.247";
+     "G.278" -> "G.247";
      "G.283" -> "G.247";
+     "G.289" -> "G.247";
      "G.250" -> "G.248";
      "G.251" -> "G.248";
      "G.252" -> "G.248";
@@ -295,6 +385,7 @@ Dependency Graph
      "G.250" -> "G.249";
      "G.251" -> "G.249";
      "G.252" -> "G.249";
+     "G.255" -> "G.249";
      "G.275" -> "G.249";
      "G.276" -> "G.249";
      "G.277" -> "G.249";
@@ -302,22 +393,34 @@ Dependency Graph
      "G.279" -> "G.249";
      "G.280" -> "G.249";
      "G.281" -> "G.249";
+     "G.289" -> "G.249";
      "G.296" -> "G.249";
+     "G.297" -> "G.249";
      "G.298" -> "G.249";
+     "G.305" -> "G.249";
      "G.251" -> "G.250";
      "G.252" -> "G.251";
      "G.255" -> "G.251";
      "G.289" -> "G.252";
+     "G.254" -> "G.253";
      "G.255" -> "G.253";
+     "G.256" -> "G.253";
      "G.257" -> "G.253";
+     "G.258" -> "G.253";
      "G.261" -> "G.253";
      "G.262" -> "G.253";
      "G.263" -> "G.253";
+     "G.265" -> "G.253";
+     "G.266" -> "G.253";
+     "G.283" -> "G.253";
      "G.255" -> "G.254";
      "G.258" -> "G.254";
      "G.261" -> "G.254";
      "G.262" -> "G.254";
      "G.263" -> "G.254";
+     "G.265" -> "G.254";
+     "G.266" -> "G.254";
+     "G.274" -> "G.254";
      "G.274" -> "G.255";
      "G.257" -> "G.256";
      "G.263" -> "G.256";
@@ -347,10 +450,14 @@ Dependency Graph
      "G.270" -> "G.269";
      "G.271" -> "G.269";
      "G.272" -> "G.269";
+     "G.273" -> "G.269";
      "G.276" -> "G.269";
      "G.278" -> "G.269";
+     "G.280" -> "G.269";
      "G.281" -> "G.269";
      "G.289" -> "G.269";
+     "G.297" -> "G.269";
+     "G.298" -> "G.269";
      "G.272" -> "G.270";
      "G.275" -> "G.270";
      "G.278" -> "G.270";

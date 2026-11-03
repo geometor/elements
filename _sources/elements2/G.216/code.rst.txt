@@ -12,7 +12,7 @@ G.216 triangles angle equal — Code
 
 .. enunciation::
 
-   If two :term:`triangles <G.11>` have one :term:`angle <G.22>` equal to one angle, the sides about other angles :term:`proportional <G.180>`, and the remaining angles either both less or both not less than a :term:`right angle <G.32>`, the triangles is equiangular and will have those angles equal, the sides about which are proportional.
+   If two :term:`triangles <G.12>` have one :term:`angle <G.22>` equal to one angle, the sides about other angles :term:`proportional <G.180>`, and the remaining angles either both less or both not less than a :term:`right angle <G.33>`, the triangles is equiangular and will have those angles equal, the sides about which are proportional.
 
 .. rubric:: ``g1.py``
 

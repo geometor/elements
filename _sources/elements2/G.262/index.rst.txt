@@ -39,7 +39,7 @@ G.262 number parts number
 
 .. step:: assert
 
-   I say that, alternately also, whatever parts or part :g:`/ A B / <g1:/ A B />` is of :g:`/ D E / <g1:/ D E />`, the same parts or the same part is :g:`C <g1:C>` of :g:`F <g1:F>` also.
+   I say that, alternately also, whatever parts or part :g:`/ A B / <g1:/ A B />` is of :g:`/ D E / <g1:/ D E />`, the same parts or the same part is :g:`C <g1:C>` of :g:`F <g1:F>` also
 
 .. step:: assert
 
@@ -47,7 +47,7 @@ G.262 number parts number
 
 .. step:: assert
 
-   Therefore, as many parts of :g:`C <g1:C>` as there are in :g:`/ A B / <g1:/ A B />`, so many parts also of :g:`F <g1:F>` are there in :g:`/ D E / <g1:/ D E />`.
+   as many parts of :g:`C <g1:C>` as there are in :g:`/ A B / <g1:/ A B />`, so many parts also of :g:`F <g1:F>` are there in :g:`/ D E / <g1:/ D E />`
 
 .. step:: assert
 
@@ -55,7 +55,7 @@ G.262 number parts number
 
 .. step:: assert
 
-   Thus the multitude of :g:`/ A G / <g1:/ A G />`, :g:`/ G B / <g1:/ G B />` will be equal to the multitude of :g:`/ D H / <g1:/ D H />`, :g:`/ H E / <g1:/ H E />`.
+   the multitude of :g:`/ A G / <g1:/ A G />`, :g:`/ G B / <g1:/ G B />` will be equal to the multitude of :g:`/ D H / <g1:/ D H />`, :g:`/ H E / <g1:/ H E />`
 
 .. step:: assert
 
@@ -63,7 +63,7 @@ G.262 number parts number
 
 .. step:: assert ∵ number_part_number_vii_9 <G.261>
 
-   Alternately also, whatever part or parts :g:`/ A G / <g1:/ A G />` is of :g:`/ D H / <g1:/ D H />`, the same part or the same parts is :g:`C <g1:C>` of :g:`F <g1:F>` also.
+   Alternately also, whatever part or parts :g:`/ A G / <g1:/ A G />` is of :g:`/ D H / <g1:/ D H />`, the same part or the same parts is :g:`C <g1:C>` of :g:`F <g1:F>` also
 
 .. step:: assert
 
@@ -71,11 +71,11 @@ G.262 number parts number
 
 .. step:: assert
 
-   Whatever part or parts :g:`/ G B / <g1:/ G B />` is of :g:`/ H E / <g1:/ H E />`, the same part or the same parts is :g:`C <g1:C>` of :g:`F <g1:F>` also;
+   Whatever part or parts :g:`/ G B / <g1:/ G B />` is of :g:`/ H E / <g1:/ H E />`, the same part or the same parts is :g:`C <g1:C>` of :g:`F <g1:F>` also
 
 .. step:: conclude ∵ number_part_number, number_parts_number <G.257, G.258>
 
-   So that, in addition, whatever parts or part :g:`/ A B / <g1:/ A B />` is of :g:`/ D E / <g1:/ D E />`, the same parts also, or the same part, is :g:`C <g1:C>` of :g:`F <g1:F>`.
+   So that, in addition, whatever parts or part :g:`/ A B / <g1:/ A B />` is of :g:`/ D E / <g1:/ D E />`, the same parts also, or the same part, is :g:`C <g1:C>` of :g:`F <g1:F>`
 
 Dependency Graph
 ----------------
@@ -115,7 +115,10 @@ Dependency Graph
      "G.258" -> "G.248";
      "G.261" -> "G.248";
      "G.262" -> "G.248";
+     "G.254" -> "G.253";
+     "G.256" -> "G.253";
      "G.257" -> "G.253";
+     "G.258" -> "G.253";
      "G.261" -> "G.253";
      "G.262" -> "G.253";
      "G.258" -> "G.254";

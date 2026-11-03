@@ -10,7 +10,7 @@
 :categories: theorem, proof, solid-geometry
 :category: theorem, proof, solid-geometry
 :tags: book-xi, point, segment, quadrilateral, polygon, parallel-planes, plane-surface, parallel-straight-lines, straight-line, parallel, plane, reductio-ad-absurdum
-:dependencies: G.7, G.52, G.502, G.516
+:dependencies: G.1, G.4, G.7, G.52, G.502, G.516
 :excerpt: If two parallel planes be cut by any plane, their common sections are parallel.
 
 .. _G.519:
@@ -47,51 +47,51 @@ G.519 parallel planes cut
 
 .. step:: assert
 
-   Since :g:`/ E F K / <g1:/ E F K />` is in the plane :g:`< A B > <g1:< A B >>`,
+   :g:`/ E F K / <g1:/ E F K />` is in the plane :g:`< A B > <g1:< A B >>`,
 
 .. step:: assert ∵ part_segment_plane <G.502>
 
-   Therefore all the :term:`points <G.1>` on :g:`/ E F K / <g1:/ E F K />` are also in the plane :g:`< A B > <g1:< A B >>`.
+   all the :term:`points <G.1>` on :g:`/ E F K / <g1:/ E F K />` are also in the plane :g:`< A B > <g1:< A B >>`
 
 .. step:: assert
 
-   :g:`K <g1:K>` is one of the points on :g:`/ E F K / <g1:/ E F K />`;
+   :g:`K <g1:K>` is one of the points on :g:`/ E F K / <g1:/ E F K />`
 
 .. step:: assert
 
-   Therefore :g:`K <g1:K>` is in the plane :g:`< A B > <g1:< A B >>`.
+   :g:`K <g1:K>` is in the plane :g:`< A B > <g1:< A B >>`
 
 .. step:: assert
 
-   For the same reason :g:`K <g1:K>` is also in the plane :g:`< C D > <g1:< C D >>`;
+   For the same reason :g:`K <g1:K>` is also in the plane :g:`< C D > <g1:< C D >>`
 
 .. step:: assert
 
-   Therefore the planes :g:`< A B > <g1:< A B >>`, :g:`< C D > <g1:< C D >>` will meet when produced.
+   the planes :g:`< A B > <g1:< A B >>`, :g:`< C D > <g1:< C D >>` will meet when produced
 
 .. step:: assert
 
-   They do not meet, because they are, by hypothesis, parallel;
+   They do not meet, because they are, by hypothesis, parallel
 
 .. step:: assert
 
-   Therefore :g:`/ E F / <g1:/ E F />`, :g:`/ G H / <g1:/ G H />` will not meet when produced in the direction of :g:`F <g1:F>`, :g:`H <g1:H>`.
+   :g:`/ E F / <g1:/ E F />`, :g:`/ G H / <g1:/ G H />` will not meet when produced in the direction of :g:`F <g1:F>`, :g:`H <g1:H>`
 
 .. step:: assert
 
-   Similarly we can prove that neither will :g:`/ E F / <g1:/ E F />`, :g:`/ G H / <g1:/ G H />` meet when produced in the direction of :g:`E <g1:E>`, :g:`G <g1:G>`.
+   Similarly we can prove that neither will :g:`/ E F / <g1:/ E F />`, :g:`/ G H / <g1:/ G H />` meet when produced in the direction of :g:`E <g1:E>`, :g:`G <g1:G>`
 
 .. step:: assert ∵ parallel_lines_def <G.52>
 
-   :term:`Segments <G.4>` which do not meet in either direction are parallel.
+   :term:`Segments <G.4>` which do not meet in either direction are parallel
 
 .. step:: assert
 
-   Therefore :g:`/ E F / <g1:/ E F />` is parallel to :g:`/ G H / <g1:/ G H />`.
+   :g:`/ E F / <g1:/ E F />` is parallel to :g:`/ G H / <g1:/ G H />`
 
 .. step:: conclude
 
-   Therefore etc.
+   etc
 
 Dependency Graph
 ----------------
@@ -113,7 +113,7 @@ Dependency Graph
      "G.8" [label="G.8", tooltip="G.8 (I.def.13): A boundary is the extremity of anything.", fillcolor="#224422", URL="../G.8/index.html", target="_top"];
      "G.9" [label="G.9", tooltip="G.9 (I.def.14): A figure is that which is contained by any boundary or boundaries.", fillcolor="#224422", URL="../G.9/index.html", target="_top"];
      "G.10" [label="G.10", tooltip="G.10 (I.def.15): A circle ( A B ) is a plane figure contained by one arc defined by a center A and a point B establishing its defining radius / A B /, such that all segments / A B /, / A C /, / A D...", fillcolor="#224422", URL="../G.10/index.html", target="_top"];
-     "G.14" [label="G.14", tooltip="G.14 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.", fillcolor="#224422", URL="../G.14/index.html", target="_top"];
+     "G.11" [label="G.11", tooltip="G.11 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
      "G.52" [label="G.52", tooltip="G.52 (I.def.23): Parallel lines are lines in the same plane which, extended indefinitely in both directions, do not meet.", fillcolor="#224422", URL="../G.52/index.html", target="_top"];
      "G.61" [label="G.61", tooltip="G.61 (I.def.17): A diameter of a circle is any segment drawn through the center and terminated in both directions by the arc of the circle; it bisects the circle.", fillcolor="#224422", URL="../G.61/index.html", target="_top"];
      "G.169" [label="G.169", tooltip="G.169 (V.def.1): A magnitude is apart of a magnitude, the less of the greater, when it measures the greater.", fillcolor="#224422", URL="../G.169/index.html", target="_top"];
@@ -127,17 +127,23 @@ Dependency Graph
      "G.3" -> "G.1";
      "G.4" -> "G.1";
      "G.10" -> "G.1";
-     "G.14" -> "G.1";
+     "G.11" -> "G.1";
+     "G.519" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
      "G.6" -> "G.2";
+     "G.7" -> "G.2";
+     "G.52" -> "G.2";
      "G.4" -> "G.3";
+     "G.6" -> "G.3";
      "G.8" -> "G.3";
      "G.7" -> "G.4";
      "G.10" -> "G.4";
+     "G.11" -> "G.4";
      "G.52" -> "G.4";
      "G.61" -> "G.4";
      "G.502" -> "G.4";
+     "G.519" -> "G.4";
      "G.6" -> "G.5";
      "G.7" -> "G.5";
      "G.10" -> "G.6";
@@ -147,11 +153,11 @@ Dependency Graph
      "G.519" -> "G.7";
      "G.9" -> "G.8";
      "G.10" -> "G.9";
-     "G.14" -> "G.10";
+     "G.11" -> "G.10";
      "G.61" -> "G.10";
      "G.502" -> "G.10";
-     "G.61" -> "G.14";
-     "G.502" -> "G.14";
+     "G.61" -> "G.11";
+     "G.502" -> "G.11";
      "G.519" -> "G.52";
      "G.502" -> "G.61";
      "G.253" -> "G.169";

@@ -12,7 +12,7 @@ G.246 equal circles angles — Code
 
 .. enunciation::
 
-   In :term:`equal circles <G.131>` :term:`angles <G.22>` have the :term:`same ratio <G.176>` as the arcs on which they stand, whether they stand at the :term:`centres <G.14>` or at the arcs.
+   In :term:`equal circles <G.131>` :term:`angles <G.22>` have the :term:`same ratio <G.176>` as the arcs on which they stand, whether they stand at the :term:`centres <G.11>` or at the arcs.
 
 .. picture:: g1.svg
 

@@ -1,0 +1,323 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" width="533pt" height="404pt" viewBox="0.00 0.00 533.09 404.00">
+<ns0:g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 400)">
+<ns0:title>%3</ns0:title>
+
+<ns0:g id="node1" class="node">
+<ns0:title>G.1</ns0:title>
+<ns0:g id="a_node1"><ns0:a ns1:href="../elements2/G.1/index.html" ns1:title="G.1 (I.def.1): A point A is that which has no part." target="_top">
+<ns0:path fill="#224422" stroke="#d6d3cd" d="M43,-36C43,-36 13,-36 13,-36 7,-36 1,-30 1,-24 1,-24 1,-12 1,-12 1,-6 7,0 13,0 13,0 43,0 43,0 49,0 55,-6 55,-12 55,-12 55,-24 55,-24 55,-30 49,-36 43,-36" />
+<ns0:text text-anchor="middle" x="28" y="-15.2" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#ffffff">G.1</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node2" class="node">
+<ns0:title>G.2</ns0:title>
+<ns0:g id="a_node2"><ns0:a ns1:href="../elements2/G.2/index.html" ns1:title="G.2 (I.def.2): A line [ A B ] is a projection of a relationship of two points A, B." target="_top">
+<ns0:path fill="#224422" stroke="#d6d3cd" d="M70,-108C70,-108 40,-108 40,-108 34,-108 28,-102 28,-96 28,-96 28,-84 28,-84 28,-78 34,-72 40,-72 40,-72 70,-72 70,-72 76,-72 82,-78 82,-84 82,-84 82,-96 82,-96 82,-102 76,-108 70,-108" />
+<ns0:text text-anchor="middle" x="55" y="-87.2" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#ffffff">G.2</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge1" class="edge">
+<ns0:title>G.2-&gt;G.1</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M48.33,-71.7C45.02,-63.14 40.98,-52.66 37.37,-43.3" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="39.75,-42.16 34.6,-36.1 34.85,-44.05 39.75,-42.16" />
+</ns0:g>
+
+<ns0:g id="node3" class="node">
+<ns0:title>G.3</ns0:title>
+<ns0:g id="a_node3"><ns0:a ns1:href="../elements2/G.3/index.html" ns1:title="G.3 (I.def.3): The extremities of a segment / A B / are points A, B." target="_top">
+<ns0:path fill="#224422" stroke="#d6d3cd" d="M42,-180C42,-180 12,-180 12,-180 6,-180 0,-174 0,-168 0,-168 0,-156 0,-156 0,-150 6,-144 12,-144 12,-144 42,-144 42,-144 48,-144 54,-150 54,-156 54,-156 54,-168 54,-168 54,-174 48,-180 42,-180" />
+<ns0:text text-anchor="middle" x="27" y="-159.2" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#ffffff">G.3</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge2" class="edge">
+<ns0:title>G.3-&gt;G.1</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M23.75,-143.89C21.95,-133.54 19.91,-120.06 19,-108 17.8,-92.04 17.66,-87.94 19,-72 19.79,-62.65 21.35,-52.47 22.95,-43.55" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="25.54,-43.95 24.35,-36.09 20.38,-42.98 25.54,-43.95" />
+</ns0:g>
+
+<ns0:g id="edge3" class="edge">
+<ns0:title>G.3-&gt;G.2</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M33.92,-143.7C37.35,-135.14 41.54,-124.66 45.28,-115.3" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="47.81,-116.04 48.16,-108.1 42.94,-114.09 47.81,-116.04" />
+</ns0:g>
+
+<ns0:g id="node4" class="node">
+<ns0:title>G.8</ns0:title>
+<ns0:g id="a_node4"><ns0:a ns1:href="../elements2/G.8/index.html" ns1:title="G.8 (I.def.13): A boundary is the extremity of anything." target="_top">
+<ns0:path fill="#224422" stroke="#d6d3cd" d="M42,-252C42,-252 12,-252 12,-252 6,-252 0,-246 0,-240 0,-240 0,-228 0,-228 0,-222 6,-216 12,-216 12,-216 42,-216 42,-216 48,-216 54,-222 54,-228 54,-228 54,-240 54,-240 54,-246 48,-252 42,-252" />
+<ns0:text text-anchor="middle" x="27" y="-231.2" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#ffffff">G.8</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge4" class="edge">
+<ns0:title>G.8-&gt;G.3</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M27,-215.7C27,-207.3 27,-197.07 27,-187.86" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="29.63,-187.6 27,-180.1 24.38,-187.6 29.63,-187.6" />
+</ns0:g>
+
+<ns0:g id="node5" class="node">
+<ns0:title>G.9</ns0:title>
+<ns0:g id="a_node5"><ns0:a ns1:href="../elements2/G.9/index.html" ns1:title="G.9 (I.def.14): A figure is that which is contained by any boundary or boundaries." target="_top">
+<ns0:path fill="#224422" stroke="#d6d3cd" d="M42,-324C42,-324 12,-324 12,-324 6,-324 0,-318 0,-312 0,-312 0,-300 0,-300 0,-294 6,-288 12,-288 12,-288 42,-288 42,-288 48,-288 54,-294 54,-300 54,-300 54,-312 54,-312 54,-318 48,-324 42,-324" />
+<ns0:text text-anchor="middle" x="27" y="-303.2" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#ffffff">G.9</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge5" class="edge">
+<ns0:title>G.9-&gt;G.8</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M27,-287.7C27,-279.3 27,-269.07 27,-259.86" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="29.63,-259.6 27,-252.1 24.38,-259.6 29.63,-259.6" />
+</ns0:g>
+
+<ns0:g id="node6" class="node">
+<ns0:title>G.169</ns0:title>
+<ns0:g id="a_node6"><ns0:a ns1:href="../elements2/G.169/index.html" ns1:title="G.169 (V.def.1): A magnitude is apart of a magnitude, the less of the greater, when it measures the greater." target="_top">
+<ns0:path fill="#224422" stroke="#d6d3cd" d="M241,-36C241,-36 211,-36 211,-36 205,-36 199,-30 199,-24 199,-24 199,-12 199,-12 199,-6 205,0 211,0 211,0 241,0 241,0 247,0 253,-6 253,-12 253,-12 253,-24 253,-24 253,-30 247,-36 241,-36" />
+<ns0:text text-anchor="middle" x="226" y="-15.2" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#ffffff">G.169</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node7" class="node">
+<ns0:title>G.170</ns0:title>
+<ns0:g id="a_node7"><ns0:a ns1:href="../elements2/G.170/index.html" ns1:title="G.170 (V.def.2): The greater is amultiple of the less when it ismeasured by the less." target="_top">
+<ns0:path fill="#224422" stroke="#d6d3cd" d="M241,-108C241,-108 211,-108 211,-108 205,-108 199,-102 199,-96 199,-96 199,-84 199,-84 199,-78 205,-72 211,-72 211,-72 241,-72 241,-72 247,-72 253,-78 253,-84 253,-84 253,-96 253,-96 253,-102 247,-108 241,-108" />
+<ns0:text text-anchor="middle" x="226" y="-87.2" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#ffffff">G.170</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge7" class="edge">
+<ns0:title>G.170-&gt;G.169</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M226,-71.7C226,-63.3 226,-53.07 226,-43.86" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="228.63,-43.6 226,-36.1 223.38,-43.6 228.63,-43.6" />
+</ns0:g>
+
+<ns0:g id="node8" class="node">
+<ns0:title>G.171</ns0:title>
+<ns0:g id="a_node8"><ns0:a ns1:href="../elements2/G.171/index.html" ns1:title="G.171 (V.1): If there be any number of magnitudes whatever which are, respectively, equimultiples of any magnitudes equal in multitude, then, whatever multiple one of the magnitudes is of one, ..." target="_top">
+<ns0:path fill="#222244" stroke="#d6d3cd" d="M241,-180C241,-180 211,-180 211,-180 205,-180 199,-174 199,-168 199,-168 199,-156 199,-156 199,-150 205,-144 211,-144 211,-144 241,-144 241,-144 247,-144 253,-150 253,-156 253,-156 253,-168 253,-168 253,-174 247,-180 241,-180" />
+<ns0:text text-anchor="middle" x="226" y="-159.2" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#ffffff">G.171</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge8" class="edge">
+<ns0:title>G.171-&gt;G.170</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M226,-143.7C226,-135.3 226,-125.07 226,-115.86" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="228.63,-115.6 226,-108.1 223.38,-115.6 228.63,-115.6" />
+</ns0:g>
+
+<ns0:g id="node9" class="node">
+<ns0:title>G.173</ns0:title>
+<ns0:g id="a_node9"><ns0:a ns1:href="../elements2/G.173/index.html" ns1:title="G.173 (V.def.3): Aratio is a sort of relation in respect of size between two magnitudes of the same kind." target="_top">
+<ns0:path fill="#224422" stroke="#d6d3cd" d="M114,-324C114,-324 84,-324 84,-324 78,-324 72,-318 72,-312 72,-312 72,-300 72,-300 72,-294 78,-288 84,-288 84,-288 114,-288 114,-288 120,-288 126,-294 126,-300 126,-300 126,-312 126,-312 126,-318 120,-324 114,-324" />
+<ns0:text text-anchor="middle" x="99" y="-303.2" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#ffffff">G.173</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node10" class="node">
+<ns0:title>G.176</ns0:title>
+<ns0:g id="a_node10"><ns0:a ns1:href="../elements2/G.176/index.html" ns1:title="G.176 (V.def.5): Magnitudes are said tobe in the same ratio, the first to the second and the third to the fourth, when, if anyequimultiples whatever be taken of the first and third, and any equimul..." target="_top">
+<ns0:path fill="#224422" stroke="#d6d3cd" d="M480,-180C480,-180 450,-180 450,-180 444,-180 438,-174 438,-168 438,-168 438,-156 438,-156 438,-150 444,-144 450,-144 450,-144 480,-144 480,-144 486,-144 492,-150 492,-156 492,-156 492,-168 492,-168 492,-174 486,-180 480,-180" />
+<ns0:text text-anchor="middle" x="465" y="-159.2" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#ffffff">G.176</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge9" class="edge">
+<ns0:title>G.176-&gt;G.170</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M437.58,-152.97C393.82,-140.15 308.26,-115.09 260.44,-101.09" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="261.03,-98.53 253.1,-98.94 259.56,-103.56 261.03,-98.53" />
+</ns0:g>
+
+<ns0:g id="node11" class="node">
+<ns0:title>G.180</ns0:title>
+<ns0:g id="a_node11"><ns0:a ns1:href="../elements2/G.180/index.html" ns1:title="G.180 (V.def.6): Let magnitudes which have thesame ratio be calledproportional." target="_top">
+<ns0:path fill="#224422" stroke="#d6d3cd" d="M499,-252C499,-252 469,-252 469,-252 463,-252 457,-246 457,-240 457,-240 457,-228 457,-228 457,-222 463,-216 469,-216 469,-216 499,-216 499,-216 505,-216 511,-222 511,-228 511,-228 511,-240 511,-240 511,-246 505,-252 499,-252" />
+<ns0:text text-anchor="middle" x="484" y="-231.2" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#ffffff">G.180</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge15" class="edge">
+<ns0:title>G.180-&gt;G.176</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M479.3,-215.7C477,-207.22 474.19,-196.86 471.67,-187.58" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="474.14,-186.65 469.64,-180.1 469.07,-188.03 474.14,-186.65" />
+</ns0:g>
+
+<ns0:g id="node12" class="node">
+<ns0:title>G.181</ns0:title>
+<ns0:g id="a_node12"><ns0:a ns1:href="../elements2/G.181/index.html" ns1:title="G.181 (V.def.11): The termcorresponding magnitudes is used of antecedents in relation to antecedents, and of consequents in relation to consequents." target="_top">
+<ns0:path fill="#224422" stroke="#d6d3cd" d="M351,-180C351,-180 321,-180 321,-180 315,-180 309,-174 309,-168 309,-168 309,-156 309,-156 309,-150 315,-144 321,-144 321,-144 351,-144 351,-144 357,-144 363,-150 363,-156 363,-156 363,-168 363,-168 363,-174 357,-180 351,-180" />
+<ns0:text text-anchor="middle" x="336" y="-159.2" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#ffffff">G.181</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node13" class="node">
+<ns0:title>G.182</ns0:title>
+<ns0:g id="a_node13"><ns0:a ns1:href="../elements2/G.182/index.html" ns1:title="G.182 (V.def.13): Inverse ratio means taking theconsequent as antecedent in relation to the antecedent as consequent." target="_top">
+<ns0:path fill="#224422" stroke="#d6d3cd" d="M351,-252C351,-252 321,-252 321,-252 315,-252 309,-246 309,-240 309,-240 309,-228 309,-228 309,-222 315,-216 321,-216 321,-216 351,-216 351,-216 357,-216 363,-222 363,-228 363,-228 363,-240 363,-240 363,-246 357,-252 351,-252" />
+<ns0:text text-anchor="middle" x="336" y="-231.2" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#ffffff">G.182</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge19" class="edge">
+<ns0:title>G.182-&gt;G.181</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M336,-215.7C336,-207.3 336,-197.07 336,-187.86" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="338.63,-187.6 336,-180.1 333.38,-187.6 338.63,-187.6" />
+</ns0:g>
+
+<ns0:g id="node14" class="node">
+<ns0:title>G.183</ns0:title>
+<ns0:g id="a_node14"><ns0:a ns1:href="../elements2/G.183/index.html" ns1:title="G.183 (V.7): Equal magnitudes have to the same the same ratio, as also has the same to equal magnitudes." target="_top">
+<ns0:path fill="#222244" stroke="#d6d3cd" d="M406,-324C406,-324 376,-324 376,-324 370,-324 364,-318 364,-312 364,-312 364,-300 364,-300 364,-294 370,-288 376,-288 376,-288 406,-288 406,-288 412,-288 418,-294 418,-300 418,-300 418,-312 418,-312 418,-318 412,-324 406,-324" />
+<ns0:text text-anchor="middle" x="391" y="-303.2" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#ffffff">G.183</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge10" class="edge">
+<ns0:title>G.183-&gt;G.170</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M394.32,-287.79C399.47,-255.74 405.56,-186.36 372,-144 345.26,-110.25 295.06,-97.98 261.08,-93.53" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="261,-90.88 253.25,-92.6 260.39,-96.09 261,-90.88" />
+</ns0:g>
+
+<ns0:g id="edge16" class="edge">
+<ns0:title>G.183-&gt;G.176</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M399.93,-287.87C413.04,-262.71 437.56,-215.65 452.47,-187.04" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="454.9,-188.05 456.04,-180.19 450.25,-185.63 454.9,-188.05" />
+</ns0:g>
+
+<ns0:g id="edge18" class="edge">
+<ns0:title>G.183-&gt;G.180</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M413.99,-287.7C426.38,-278.37 441.79,-266.77 454.99,-256.83" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="456.86,-258.71 461.28,-252.1 453.7,-254.52 456.86,-258.71" />
+</ns0:g>
+
+<ns0:g id="edge20" class="edge">
+<ns0:title>G.183-&gt;G.182</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M377.4,-287.7C370.41,-278.8 361.79,-267.82 354.23,-258.2" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="356.14,-256.38 349.44,-252.1 352.01,-259.62 356.14,-256.38" />
+</ns0:g>
+
+<ns0:g id="node15" class="node">
+<ns0:title>G.184</ns0:title>
+<ns0:g id="a_node15"><ns0:a ns1:href="../elements2/G.184/index.html" ns1:title="G.184 (V.def.4): Magnitudes are said tohave a ratio to one another which are capable, when multiplied, of exceeding one another." target="_top">
+<ns0:path fill="#224422" stroke="#d6d3cd" d="M279,-252C279,-252 249,-252 249,-252 243,-252 237,-246 237,-240 237,-240 237,-228 237,-228 237,-222 243,-216 249,-216 249,-216 279,-216 279,-216 285,-216 291,-222 291,-228 291,-228 291,-240 291,-240 291,-246 285,-252 279,-252" />
+<ns0:text text-anchor="middle" x="264" y="-231.2" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#ffffff">G.184</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node16" class="node">
+<ns0:title>G.185</ns0:title>
+<ns0:g id="a_node16"><ns0:a ns1:href="../elements2/G.185/index.html" ns1:title="G.185 (V.def.7): When, of theequimultiples, the multiple of the first magnitude exceeds the multiple of the second, but the multiple of the third does not exceed the multiple of the fourth, then th..." target="_top">
+<ns0:path fill="#224422" stroke="#d6d3cd" d="M131,-252C131,-252 101,-252 101,-252 95,-252 89,-246 89,-240 89,-240 89,-228 89,-228 89,-222 95,-216 101,-216 101,-216 131,-216 131,-216 137,-216 143,-222 143,-228 143,-228 143,-240 143,-240 143,-246 137,-252 131,-252" />
+<ns0:text text-anchor="middle" x="116" y="-231.2" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#ffffff">G.185</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge11" class="edge">
+<ns0:title>G.185-&gt;G.170</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M121.11,-215.92C127.37,-196.94 139.38,-166.07 157,-144 166.87,-131.64 180.22,-120.52 192.54,-111.69" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="194.21,-113.73 198.87,-107.29 191.21,-109.42 194.21,-113.73" />
+</ns0:g>
+
+<ns0:g id="node17" class="node">
+<ns0:title>G.186</ns0:title>
+<ns0:g id="a_node17"><ns0:a ns1:href="../elements2/G.186/index.html" ns1:title="G.186 (V.8): Of unequal magnitudes, the greater has to the same a greater ratio than the less has; and the same has to the less a greater ratio than it has to the greater." target="_top">
+<ns0:path fill="#222244" stroke="#d6d3cd" d="M224,-324C224,-324 194,-324 194,-324 188,-324 182,-318 182,-312 182,-312 182,-300 182,-300 182,-294 188,-288 194,-288 194,-288 224,-288 224,-288 230,-288 236,-294 236,-300 236,-300 236,-312 236,-312 236,-318 230,-324 224,-324" />
+<ns0:text text-anchor="middle" x="209" y="-303.2" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#ffffff">G.186</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge12" class="edge">
+<ns0:title>G.186-&gt;G.170</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M202.4,-287.66C191.98,-257.7 174.45,-194.58 190,-144 193.26,-133.39 199.45,-123 205.79,-114.27" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="207.94,-115.78 210.39,-108.23 203.76,-112.6 207.94,-115.78" />
+</ns0:g>
+
+<ns0:g id="edge13" class="edge">
+<ns0:title>G.186-&gt;G.171</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M211.05,-287.87C214.04,-262.92 219.6,-216.45 223.03,-187.77" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="225.66,-187.95 223.94,-180.19 220.44,-187.32 225.66,-187.95" />
+</ns0:g>
+
+<ns0:g id="edge22" class="edge">
+<ns0:title>G.186-&gt;G.184</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M222.6,-287.7C229.59,-278.8 238.21,-267.82 245.77,-258.2" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="247.99,-259.62 250.56,-252.1 243.86,-256.38 247.99,-259.62" />
+</ns0:g>
+
+<ns0:g id="edge24" class="edge">
+<ns0:title>G.186-&gt;G.185</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M186.01,-287.7C173.62,-278.37 158.21,-266.77 145.01,-256.83" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="146.3,-254.52 138.72,-252.1 143.14,-258.71 146.3,-254.52" />
+</ns0:g>
+
+<ns0:g id="node18" class="node">
+<ns0:title>G.188</ns0:title>
+<ns0:g id="a_node18"><ns0:a ns1:href="../elements2/G.188/index.html" ns1:title="G.188 (V.10): Of magnitudes which have a ratio to the same, that which has a greater ratio is greater; and that to which the same has a greater ratio is less." target="_top">
+<ns0:path fill="#4a453b" stroke="#e8b85a" stroke-width="2.5" d="M224,-396C224,-396 194,-396 194,-396 188,-396 182,-390 182,-384 182,-384 182,-372 182,-372 182,-366 188,-360 194,-360 194,-360 224,-360 224,-360 230,-360 236,-366 236,-372 236,-372 236,-384 236,-384 236,-390 230,-396 224,-396" />
+<ns0:text text-anchor="middle" x="209" y="-375.2" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#ffffff">G.188</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge6" class="edge">
+<ns0:title>G.188-&gt;G.9</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M181.8,-367.97C152.26,-357.97 103.82,-341.01 63,-324 62.36,-323.73 61.71,-323.46 61.06,-323.18" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="61.93,-320.7 54.01,-320.08 59.82,-325.5 61.93,-320.7" />
+</ns0:g>
+
+<ns0:g id="edge14" class="edge">
+<ns0:title>G.188-&gt;G.173</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M182.09,-359.88C167.18,-350.38 148.49,-338.5 132.62,-328.4" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="133.75,-326 126.01,-324.19 130.93,-330.43 133.75,-326" />
+</ns0:g>
+
+<ns0:g id="edge17" class="edge">
+<ns0:title>G.188-&gt;G.176</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M236.3,-376.8C302.09,-374.6 467.85,-358.32 520,-252 527.05,-237.63 526.26,-230.72 520,-216 514.93,-204.07 505.72,-193.53 496.26,-185.05" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="497.79,-182.91 490.38,-180.05 494.39,-186.91 497.79,-182.91" />
+</ns0:g>
+
+<ns0:g id="edge21" class="edge">
+<ns0:title>G.188-&gt;G.183</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M236.25,-366.52C268.37,-354.16 321.8,-333.62 356.71,-320.19" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="357.81,-322.58 363.86,-317.44 355.92,-317.68 357.81,-322.58" />
+</ns0:g>
+
+<ns0:g id="edge23" class="edge">
+<ns0:title>G.188-&gt;G.184</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M223.16,-359.85C230.69,-349.93 239.5,-336.89 245,-324 253.77,-303.46 258.65,-278.47 261.26,-260.2" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="263.92,-260.11 262.3,-252.33 258.71,-259.41 263.92,-260.11" />
+</ns0:g>
+
+<ns0:g id="edge25" class="edge">
+<ns0:title>G.188-&gt;G.185</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M197.21,-359.89C190.12,-349.55 180.96,-336.07 173,-324 158.55,-302.1 142.46,-276.89 131.06,-258.91" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="133.02,-257.09 126.79,-252.15 128.58,-259.89 133.02,-257.09" />
+</ns0:g>
+
+<ns0:g id="edge26" class="edge">
+<ns0:title>G.188-&gt;G.186</ns0:title>
+<ns0:path fill="none" stroke="#8c857b" d="M209,-359.7C209,-351.3 209,-341.07 209,-331.86" />
+<ns0:polygon fill="#8c857b" stroke="#8c857b" points="211.63,-331.6 209,-324.1 206.38,-331.6 211.63,-331.6" />
+</ns0:g>
+</ns0:g>
+</ns0:svg>

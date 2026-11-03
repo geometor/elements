@@ -4,6 +4,7 @@
 :volume: I
 :book: I
 :type: prop
+:youtube_id: MXpKKsN0N0Y
 
 G.21 cut off an equal segment — Code
 ====================================

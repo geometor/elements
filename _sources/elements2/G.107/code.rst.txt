@@ -12,7 +12,7 @@ G.107 point taken within — Code
 
 .. enunciation::
 
-   If a :term:`point <G.1>` be taken within a :term:`circle <G.10>`, and more than two equal :term:`segments <G.4>` fall from the point on the circle, the point taken is the :term:`center <G.14>` of the circle.
+   If a :term:`point <G.1>` be taken within a :term:`circle <G.10>`, and more than two equal :term:`segments <G.4>` fall from the point on the circle, the point taken is the :term:`center <G.11>` of the circle.
 
 .. picture:: g1.svg
 

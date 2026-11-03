@@ -10,7 +10,7 @@
 :categories: theorem, proof, solid-geometry
 :category: theorem, proof, solid-geometry
 :tags: book-xi, point, segment, polygon, solid, reciprocally-related, height, in-the-same-ratio, right-angle, plane-surface, proportion, parallelepiped, equality
-:dependencies: G.183, G.187, G.209, G.210, G.224, G.529, G.531, G.539, G.540, G.541, G.542
+:dependencies: G.7, G.33, G.176, G.183, G.187, G.209, G.210, G.224, G.529, G.531, G.539, G.540, G.541, G.542
 :excerpt: In equal parallelepipedal solids the bases are reciprocally proportional to the heights; and those parallelepipedal solids in which the bases are reciprocally proportional to the heights are equal.
 
 .. _G.544:
@@ -29,7 +29,7 @@ G.544 equal parallelepipedal solids
 
    | :fn:`equal_parallelepipedal_solids <G.544>`\ (:g:`< A B > <g1:< A B >>`, :g:`< C D > <g1:< C D >>`)
    | **given** :g:`< A B > <g1:< A B >>`, :g:`< C D > <g1:< C D >>` be :eq:`equal <g1:< A B > = g1:< C D >>` parallelepipedal solids
-   | **prove** in the parallelepipedal solids :g:`< A B > <g1:< A B >>`, :g:`< C D > <g1:< C D >>` the bases are reciprocally proportional to the heights, that is, as the base :g:`< E H > <g1:< E H >>` is to the base :g:`< N Q > <g1:< N Q >>`, so is the height of the solid :g:`< C D > <g1:< C D >>` to the height of the solid :g:`< A B > <g1:< A B >>`; the solid :g:`< A B > <g1:< A B >>` is :eq:`equal <g1:< A B > = g1:< C D >>` to the solid :g:`< C D > <g1:< C D >>`; the solid :g:`< A B > <g2:< A B >>` is :eq:`equal <g2:< A B > = g2:< C D >>` to the solid :g:`< C D > <g2:< C D >>`
+   | **prove** in the parallelepipedal solids :g:`< A B > <g1:< A B >>`, :g:`< C D > <g1:< C D >>` the bases are reciprocally proportional to the heights, that is, as :g:`< E H > <g1:< E H >>` is to :g:`< N Q > <g1:< N Q >>`, so is the height of the solid :g:`< C D > <g1:< C D >>` to the height of the solid :g:`< A B > <g1:< A B >>`; the solid :g:`< A B > <g1:< A B >>` is :eq:`equal <g1:< A B > = g1:< C D >>` to the solid :g:`< C D > <g1:< C D >>`; the solid :g:`< A B > <g2:< A B >>` is :eq:`equal <g2:< A B > = g2:< C D >>` to the solid :g:`< C D > <g2:< C D >>`
 
 .. picture:: g1.svg
    :alt: Proposition 34, Diagram 1
@@ -47,31 +47,31 @@ G.544 equal parallelepipedal solids
 
 .. step:: assert
 
-   I say that, as the base :g:`< E H > <g1:< E H >>` is to the base :g:`< N Q > <g1:< N Q >>`, so is :g:`/ C M / <g1:/ C M />` to :g:`/ A G / <g1:/ A G />`.
+   I say that, as :g:`< E H > <g1:< E H >>` is to :g:`< N Q > <g1:< N Q >>`, so is :g:`/ C M / <g1:/ C M />` to :g:`/ A G / <g1:/ A G />`
 
 .. step:: assert
 
-   If now the base :g:`< E H > <g1:< E H >>` is :eq:`equal <g1:< E H > = g1:< N Q >>` to the base :g:`< N Q > <g1:< N Q >>`, while the solid :g:`< A B > <g1:< A B >>` is also :eq:`equal <g1:< A B > = g1:< C D >>` to the solid :g:`< C D > <g1:< C D >>`,
+   If now :g:`< E H > <g1:< E H >>` is :eq:`equal <g1:< E H > = g1:< N Q >>` to :g:`< N Q > <g1:< N Q >>`, while the solid :g:`< A B > <g1:< A B >>` is also :eq:`equal <g1:< A B > = g1:< C D >>` to the solid :g:`< C D > <g1:< C D >>`,
 
 .. step:: assert
 
-   :g:`/ C M / <g1:/ C M />` will also be :eq:`equal <g1:/ C M / = g1:/ A G />` to :g:`/ A G / <g1:/ A G />`.
+   :g:`/ C M / <g1:/ C M />` will also :eq:`= <g1:/ C M / = g1:/ A G />` :g:`/ A G / <g1:/ A G />`
 
 .. step:: assert ∵ parallelepipedal_solids_height <G.542>
 
-   For parallelepipedal solids of the same height are to one another as the bases; and, as the base :g:`< E H > <g1:< E H >>` is to :g:`< N Q > <g1:< N Q >>`, so will :g:`/ C M / <g1:/ C M />` be to :g:`/ A G / <g1:/ A G />`, and it is manifest that in the parallelepipedal solids :g:`< A B > <g1:< A B >>`, :g:`< C D > <g1:< C D >>` the bases are reciprocally proportional to the heights.
+   For parallelepipedal solids of the same height are to one another as the bases; and, as :g:`< E H > <g1:< E H >>` is to :g:`< N Q > <g1:< N Q >>`, so will :g:`/ C M / <g1:/ C M />` be to :g:`/ A G / <g1:/ A G />`, and it is manifest that in the parallelepipedal solids :g:`< A B > <g1:< A B >>`, :g:`< C D > <g1:< C D >>` the bases are reciprocally proportional to the heights
 
 .. step:: assert
 
-   Next, let the base :g:`< E H > <g1:< E H >>` not be equal to the base :g:`< N Q > <g1:< N Q >>`, but let :g:`< E H > <g1:< E H >>` be greater.
+   Next, let :g:`< E H > <g1:< E H >>` not be equal to :g:`< N Q > <g1:< N Q >>`, but let :g:`< E H > <g1:< E H >>` be greater
 
 .. step:: assert
 
-   Now the solid :g:`< A B > <g1:< A B >>` is :eq:`equal <g1:< A B > = g1:< C D >>` to the solid :g:`< C D > <g1:< C D >>`;
+   Now the solid :g:`< A B > <g1:< A B >>` is :eq:`equal <g1:< A B > = g1:< C D >>` to the solid :g:`< C D > <g1:< C D >>`
 
 .. step:: assert
 
-   Therefore :g:`/ C M / <g1:/ C M />` is also greater than :g:`/ A G / <g1:/ A G />`.
+   :g:`/ C M / <g1:/ C M />` is also greater than :g:`/ A G / <g1:/ A G />`
 
 .. step:: construct
 
@@ -79,91 +79,91 @@ G.544 equal parallelepipedal solids
 
 .. step:: assert
 
-   Let the parallelepipedal solid :g:`< V C > <g1:< V C >>` be completed on :g:`< N Q > <g1:< N Q >>` as base and with :g:`/ C T / <g1:/ C T />` as height.
+   Let the parallelepipedal solid :g:`< V C > <g1:< V C >>` be completed on :g:`< N Q > <g1:< N Q >>` as base and with :g:`/ C T / <g1:/ C T />` as height
 
 .. step:: assert ∵ equal_magnitudes_ratio <G.183>
 
-   Since the solid :g:`< A B > <g1:< A B >>` is :eq:`equal <g1:< A B > = g1:< C D >>` to the solid :g:`< C D > <g1:< C D >>`, and :g:`< C V > <g1:< C V >>` is outside them, while equals have to the same the :term:`same ratio <G.176>`.
+   the solid :g:`< A B > <g1:< A B >>` is :eq:`equal <g1:< A B > = g1:< C D >>` to the solid :g:`< C D > <g1:< C D >>`, and :g:`< C V > <g1:< C V >>` is outside them, while equals have to the same the :term:`same ratio <G.176>`
 
 .. step:: assert
 
-   Therefore, as the solid :g:`< A B > <g1:< A B >>` is to the solid :g:`< C V > <g1:< C V >>`, so is the solid :g:`< C D > <g1:< C D >>` to the solid :g:`< C V > <g1:< C V >>`.
+   as the solid :g:`< A B > <g1:< A B >>` is to the solid :g:`< C V > <g1:< C V >>`, so is the solid :g:`< C D > <g1:< C D >>` to the solid :g:`< C V > <g1:< C V >>`
 
 .. step:: assert ∵ parallelepipedal_solids_height, parallelepipedal_solid_cut, triangles_parallelograms_height <G.542, G.531, G.210>
 
-   But, as the solid :g:`< A B > <g1:< A B >>` is to the solid :g:`< C V > <g1:< C V >>`, so is the base :g:`< E H > <g1:< E H >>` to the base :g:`< N Q > <g1:< N Q >>`, for the solids :g:`< A B > <g1:< A B >>`, :g:`< C V > <g1:< C V >>` are of equal height; and, as the solid :g:`< C D > <g1:< C D >>` is to the solid :g:`< C V > <g1:< C V >>`, so is the base :g:`< M Q > <g1:< M Q >>` to the base :g:`< T Q > <g1:< T Q >>` and :g:`/ C M / <g1:/ C M />` to :g:`/ C T / <g1:/ C T />`.
+   But, as the solid :g:`< A B > <g1:< A B >>` is to the solid :g:`< C V > <g1:< C V >>`, so is :g:`< E H > <g1:< E H >>` to :g:`< N Q > <g1:< N Q >>`, for the solids :g:`< A B > <g1:< A B >>`, :g:`< C V > <g1:< C V >>` are of equal height; and, as the solid :g:`< C D > <g1:< C D >>` is to the solid :g:`< C V > <g1:< C V >>`, so is :g:`< M Q > <g1:< M Q >>` to :g:`< T Q > <g1:< T Q >>` and :g:`/ C M / <g1:/ C M />` to :g:`/ C T / <g1:/ C T />`
 
 .. step:: assert
 
-   Therefore also, as the base :g:`< E H > <g1:< E H >>` is to the base :g:`< N Q > <g1:< N Q >>`, so is :g:`/ M C / <g1:/ M C />` to :g:`/ C T / <g1:/ C T />`.
+   also, as :g:`< E H > <g1:< E H >>` is to :g:`< N Q > <g1:< N Q >>`, so is :g:`/ M C / <g1:/ M C />` to :g:`/ C T / <g1:/ C T />`
 
 .. step:: assert
 
-   :g:`/ C T / <g1:/ C T />` is :eq:`equal <g1:/ C T / = g1:/ A G />` to :g:`/ A G / <g1:/ A G />`;
+   :g:`/ C T / <g1:/ C T />` :eq:`= <g1:/ C T / = g1:/ A G />` :g:`/ A G / <g1:/ A G />`
 
 .. step:: assert
 
-   Therefore also, as the base :g:`< E H > <g1:< E H >>` is to the base :g:`< N Q > <g1:< N Q >>`, so is :g:`/ M C / <g1:/ M C />` to :g:`/ A G / <g1:/ A G />`.
+   also, as :g:`< E H > <g1:< E H >>` is to :g:`< N Q > <g1:< N Q >>`, so is :g:`/ M C / <g1:/ M C />` to :g:`/ A G / <g1:/ A G />`
 
 .. step:: assert
 
-   Therefore in the parallelepipedal solids :g:`< A B > <g1:< A B >>`, :g:`< C D > <g1:< C D >>` the bases are reciprocally proportional to the heights.
+   in the parallelepipedal solids :g:`< A B > <g1:< A B >>`, :g:`< C D > <g1:< C D >>` the bases are reciprocally proportional to the heights
 
 .. step:: assert
 
-   In the parallelepipedal solids :g:`< A B > <g1:< A B >>`, :g:`< C D > <g1:< C D >>` let the bases be reciprocally proportional to the heights, that is, as the base :g:`< E H > <g1:< E H >>` is to the base :g:`< N Q > <g1:< N Q >>`, so let the height of the solid :g:`< C D > <g1:< C D >>` be to the height of the solid :g:`< A B > <g1:< A B >>`
+   In the parallelepipedal solids :g:`< A B > <g1:< A B >>`, :g:`< C D > <g1:< C D >>` let the bases be reciprocally proportional to the heights, that is, as :g:`< E H > <g1:< E H >>` is to :g:`< N Q > <g1:< N Q >>`, so let the height of the solid :g:`< C D > <g1:< C D >>` be to the height of the solid :g:`< A B > <g1:< A B >>`
 
 .. step:: assert
 
-   Let the sides which stand up be again :term:`at right angles <G.32>` to the bases.
+   Let the sides which stand up be again :term:`at right angles <G.33>` to the bases
 
 .. step:: assert
 
-   If the base :g:`< E H > <g1:< E H >>` is :eq:`equal <g1:< E H > = g1:< N Q >>` to the base :g:`< N Q > <g1:< N Q >>`, and, as the base :g:`< E H > <g1:< E H >>` is to the base :g:`< N Q > <g1:< N Q >>`, so is the height of the solid :g:`< C D > <g1:< C D >>` to the height of the solid :g:`< A B > <g1:< A B >>`,
+   If :g:`< E H > <g1:< E H >>` is :eq:`equal <g1:< E H > = g1:< N Q >>` to :g:`< N Q > <g1:< N Q >>`, and, as :g:`< E H > <g1:< E H >>` is to :g:`< N Q > <g1:< N Q >>`, so is the height of the solid :g:`< C D > <g1:< C D >>` to the height of the solid :g:`< A B > <g1:< A B >>`,
 
 .. step:: assert
 
-   Therefore the height of the solid :g:`< C D > <g1:< C D >>` is also equal to the height of the solid :g:`< A B > <g1:< A B >>`.
+   the height of the solid :g:`< C D > <g1:< C D >>` is also equal to the height of the solid :g:`< A B > <g1:< A B >>`
 
 .. step:: assert ∵ parallelepipedal_solids_equal <G.541>
 
-   Parallelepipedal solids on equal bases and of the same height are equal to one another.
+   Parallelepipedal solids on equal bases and of the same height are equal to one another
 
 .. step:: assert
 
-   Therefore the solid :g:`< A B > <g1:< A B >>` is :eq:`equal <g1:< A B > = g1:< C D >>` to the solid :g:`< C D > <g1:< C D >>`.
+   the solid :g:`< A B > <g1:< A B >>` is :eq:`equal <g1:< A B > = g1:< C D >>` to the solid :g:`< C D > <g1:< C D >>`
 
 .. step:: assert
 
-   Next, let the base :g:`< E H > <g1:< E H >>` not be equal to the base :g:`< N Q > <g1:< N Q >>`, but let :g:`< E H > <g1:< E H >>` be greater;
+   Next, let :g:`< E H > <g1:< E H >>` not be equal to :g:`< N Q > <g1:< N Q >>`, but let :g:`< E H > <g1:< E H >>` be greater
 
 .. step:: assert
 
-   Therefore the height of the solid :g:`< C D > <g1:< C D >>` is also greater than the height of the solid :g:`< A B > <g1:< A B >>`, that is, :g:`/ C M / <g1:/ C M />` is greater than :g:`/ A G / <g1:/ A G />`.
+   the height of the solid :g:`< C D > <g1:< C D >>` is also greater than the height of the solid :g:`< A B > <g1:< A B >>`, that is, :g:`/ C M / <g1:/ C M />` > :g:`/ A G / <g1:/ A G />`
 
 .. step:: assert
 
-   Let :g:`/ C T / <g1:/ C T />` be again made :eq:`equal <g1:/ C T / = g1:/ A G />` to :g:`/ A G / <g1:/ A G />`, and let the solid :g:`< C V > <g1:< C V >>` be similarly completed.
+   Let :g:`/ C T / <g1:/ C T />` be again made :eq:`= <g1:/ C T / = g1:/ A G />` to :g:`/ A G / <g1:/ A G />`, and let the solid :g:`< C V > <g1:< C V >>` be similarly completed
 
 .. step:: assert
 
-   Since, as the base :g:`< E H > <g1:< E H >>` is to the base :g:`< N Q > <g1:< N Q >>`, so is :g:`/ M C / <g1:/ M C />` to :g:`/ A G / <g1:/ A G />`, while :g:`/ A G / <g1:/ A G />` is :eq:`equal <g1:/ A G / = g1:/ C T />` to :g:`/ C T / <g1:/ C T />`,
+   Since, as :g:`< E H > <g1:< E H >>` is to :g:`< N Q > <g1:< N Q >>`, so is :g:`/ M C / <g1:/ M C />` to :g:`/ A G / <g1:/ A G />`, while :g:`/ A G / <g1:/ A G />` :eq:`= <g1:/ A G / = g1:/ C T />` :g:`/ C T / <g1:/ C T />`,
 
 .. step:: assert
 
-   Therefore, as the base :g:`< E H > <g1:< E H >>` is to the base :g:`< N Q > <g1:< N Q >>`, so is :g:`/ C M / <g1:/ C M />` to :g:`/ C T / <g1:/ C T />`.
+   as :g:`< E H > <g1:< E H >>` is to :g:`< N Q > <g1:< N Q >>`, so is :g:`/ C M / <g1:/ C M />` to :g:`/ C T / <g1:/ C T />`
 
 .. step:: assert ∵ parallelepipedal_solids_height, triangles_parallelograms_height, parallelepipedal_solid_cut <G.542, G.210, G.531>
 
-   But, as the base :g:`< E H > <g1:< E H >>` is to the base :g:`< N Q > <g1:< N Q >>`, so is the solid :g:`< A B > <g1:< A B >>` to the solid :g:`< C V > <g1:< C V >>`, for the solids :g:`< A B > <g1:< A B >>`, :g:`< C V > <g1:< C V >>` are of equal height; and, as :g:`/ C M / <g1:/ C M />` is to :g:`/ C T / <g1:/ C T />`, so is the base :g:`< M Q > <g1:< M Q >>` to the base :g:`< Q T > <g1:< Q T >>` and the solid :g:`< C D > <g1:< C D >>` to the solid :g:`< C V > <g1:< C V >>`.
+   But, as :g:`< E H > <g1:< E H >>` is to :g:`< N Q > <g1:< N Q >>`, so is the solid :g:`< A B > <g1:< A B >>` to the solid :g:`< C V > <g1:< C V >>`, for the solids :g:`< A B > <g1:< A B >>`, :g:`< C V > <g1:< C V >>` are of equal height; and, as :g:`/ C M / <g1:/ C M />` is to :g:`/ C T / <g1:/ C T />`, so is :g:`< M Q > <g1:< M Q >>` to :g:`< Q T > <g1:< Q T >>` and the solid :g:`< C D > <g1:< C D >>` to the solid :g:`< C V > <g1:< C V >>`
 
 .. step:: assert
 
-   Therefore also, as the solid :g:`< A B > <g1:< A B >>` is to the solid :g:`< C V > <g1:< C V >>`, so is the solid :g:`< C D > <g1:< C D >>` to the solid :g:`< C V > <g1:< C V >>`; therefore each of the solids :g:`< A B > <g1:< A B >>`, :g:`< C D > <g1:< C D >>` has to :g:`< C V > <g1:< C V >>` the same ratio.
+   also, as the solid :g:`< A B > <g1:< A B >>` is to the solid :g:`< C V > <g1:< C V >>`, so is the solid :g:`< C D > <g1:< C D >>` to the solid :g:`< C V > <g1:< C V >>`; therefore each of the solids :g:`< A B > <g1:< A B >>`, :g:`< C D > <g1:< C D >>` has to :g:`< C V > <g1:< C V >>` the same ratio
 
 .. step:: assert ∵ magnitudes_ratio_equal <G.187>
 
-   Therefore the solid :g:`< A B > <g2:< A B >>` is :eq:`equal <g2:< A B > = g2:< C D >>` to the solid :g:`< C D > <g2:< C D >>`.
+   the solid :g:`< A B > <g2:< A B >>` is :eq:`equal <g2:< A B > = g2:< C D >>` to the solid :g:`< C D > <g2:< C D >>`
 
 .. step:: assert
 
@@ -175,67 +175,67 @@ G.544 equal parallelepipedal solids
 
 .. step:: assert
 
-   I say that, in this case too, if the solids :g:`< A B > <g2:< A B >>`, :g:`< C D > <g2:< C D >>` are :eq:`equal <g2:< A B > = g2:< C D >>`, the bases are reciprocally proportional to the heights, that is, as the base :g:`< E H > <g2:< E H >>` is to the base :g:`< N Q > <g2:< N Q >>`, so is the height of the solid :g:`< C D > <g2:< C D >>` to the height of the solid :g:`< A B > <g2:< A B >>`.
+   I say that, in this case too, if the solids :g:`< A B > <g2:< A B >>`, :g:`< C D > <g2:< C D >>` are :eq:`equal <g2:< A B > = g2:< C D >>`, the bases are reciprocally proportional to the heights, that is, as :g:`< E H > <g2:< E H >>` is to :g:`< N Q > <g2:< N Q >>`, so is the height of the solid :g:`< C D > <g2:< C D >>` to the height of the solid :g:`< A B > <g2:< A B >>`
 
 .. step:: assert ∵ parallelepipedal_solids_base, parallelepipedal_solids_base_xi_30 <G.539, G.540>
 
-   Since the solid :g:`< A B > <g2:< A B >>` is :eq:`equal <g2:< A B > = g2:< C D >>` to the solid :g:`< C D > <g2:< C D >>`, while :g:`< A B > <g2:< A B >>` is :eq:`equal <g2:< A B > = g2:< B T >>` to :g:`< B T > <g2:< B T >>`, for they are on the same base :g:`< F K > <g2:< F K >>` and of the same height; and the solid :g:`< C D > <g2:< C D >>` is :eq:`equal <g2:< C D > = g2:< D X >>` to :g:`< D X > <g2:< D X >>`, for they are again on the same base :g:`< R O > <g2:< R O >>` and of the same height.
+   the solid :g:`< A B > <g2:< A B >>` is :eq:`equal <g2:< A B > = g2:< C D >>` to the solid :g:`< C D > <g2:< C D >>`, while :g:`< A B > <g2:< A B >>` is :eq:`equal <g2:< A B > = g2:< B T >>` to :g:`< B T > <g2:< B T >>`, for they are on the same base :g:`< F K > <g2:< F K >>` and of the same height; and the solid :g:`< C D > <g2:< C D >>` is :eq:`equal <g2:< C D > = g2:< D X >>` to :g:`< D X > <g2:< D X >>`, for they are again on the same base :g:`< R O > <g2:< R O >>` and of the same height
 
 .. step:: assert
 
-   Therefore the solid :g:`< B T > <g2:< B T >>` is also :eq:`equal <g2:< B T > = g2:< D X >>` to the solid :g:`< D X > <g2:< D X >>`.
+   the solid :g:`< B T > <g2:< B T >>` is also :eq:`equal <g2:< B T > = g2:< D X >>` to the solid :g:`< D X > <g2:< D X >>`
 
 .. step:: assert ∵ Part 1. <Part 1.>
 
-   Therefore, as the base :g:`< F K > <g2:< F K >>` is to the base :g:`< O R > <g2:< O R >>`, so is the height of the solid :g:`< D X > <g2:< D X >>` to the height of the solid :g:`< B T > <g2:< B T >>`.
+   as :g:`< F K > <g2:< F K >>` is to :g:`< O R > <g2:< O R >>`, so is the height of the solid :g:`< D X > <g2:< D X >>` to the height of the solid :g:`< B T > <g2:< B T >>`
 
 .. step:: assert
 
-   The base :g:`< F K > <g2:< F K >>` is :eq:`equal <g2:< F K > = g2:< E H >; g2:< O R > = g2:< N Q >>` to the base :g:`< E H > <g2:< E H >>`, and the base :g:`< O R > <g2:< O R >>` to the base :g:`< N Q > <g2:< N Q >>`;
+   :g:`< F K > <g2:< F K >>` is :eq:`equal <g2:< F K > = g2:< E H >; g2:< O R > = g2:< N Q >>` to :g:`< E H > <g2:< E H >>`, and :g:`< O R > <g2:< O R >>` to :g:`< N Q > <g2:< N Q >>`
 
 .. step:: assert
 
-   Therefore, as the base :g:`< E H > <g2:< E H >>` is to the base :g:`< N Q > <g2:< N Q >>`, so is the height of the solid :g:`< D X > <g2:< D X >>` to the height of the solid :g:`< B T > <g2:< B T >>`.
+   as :g:`< E H > <g2:< E H >>` is to :g:`< N Q > <g2:< N Q >>`, so is the height of the solid :g:`< D X > <g2:< D X >>` to the height of the solid :g:`< B T > <g2:< B T >>`
 
 .. step:: assert
 
-   The solids :g:`< D X > <g2:< D X >>`, :g:`< B T > <g2:< B T >>` and the solids :g:`< D C > <g2:< D C >>`, :g:`< B A > <g2:< B A >>` have the same heights respectively;
+   The solids :g:`< D X > <g2:< D X >>`, :g:`< B T > <g2:< B T >>` and the solids :g:`< D C > <g2:< D C >>`, :g:`< B A > <g2:< B A >>` have the same heights
 
 .. step:: assert
 
-   Therefore, as the base :g:`< E H > <g2:< E H >>` is to the base :g:`< N Q > <g2:< N Q >>`, so is the height of the solid :g:`< D C > <g2:< D C >>` to the height of the solid :g:`< A B > <g2:< A B >>`.
+   as :g:`< E H > <g2:< E H >>` is to :g:`< N Q > <g2:< N Q >>`, so is the height of the solid :g:`< D C > <g2:< D C >>` to the height of the solid :g:`< A B > <g2:< A B >>`
 
 .. step:: assert
 
-   Therefore in the parallelepipedal solids :g:`< A B > <g2:< A B >>`, :g:`< C D > <g2:< C D >>` the bases are reciprocally proportional to the heights.
+   in the parallelepipedal solids :g:`< A B > <g2:< A B >>`, :g:`< C D > <g2:< C D >>` the bases are reciprocally proportional to the heights
 
 .. step:: assert
 
-   In the parallelepipedal solids :g:`< A B > <g2:< A B >>`, :g:`< C D > <g2:< C D >>` let the bases be reciprocally proportional to the heights, that is, as the base :g:`< E H > <g2:< E H >>` is to the base :g:`< N Q > <g2:< N Q >>`, so let the height of the solid :g:`< C D > <g2:< C D >>` be to the height of the solid :g:`< A B > <g2:< A B >>`
+   In the parallelepipedal solids :g:`< A B > <g2:< A B >>`, :g:`< C D > <g2:< C D >>` let the bases be reciprocally proportional to the heights, that is, as :g:`< E H > <g2:< E H >>` is to :g:`< N Q > <g2:< N Q >>`, so let the height of the solid :g:`< C D > <g2:< C D >>` be to the height of the solid :g:`< A B > <g2:< A B >>`
 
 .. step:: assert
 
-   With the same construction, since, as the base :g:`< E H > <g2:< E H >>` is to the base :g:`< N Q > <g2:< N Q >>`, so is the height of the solid :g:`< C D > <g2:< C D >>` to the height of the solid :g:`< A B > <g2:< A B >>`, while the base :g:`< E H > <g2:< E H >>` is :eq:`equal <g2:< E H > = g2:< F K >; g2:< N Q > = g2:< O R >>` to the base :g:`< F K > <g2:< F K >>`, and :g:`< N Q > <g2:< N Q >>` to :g:`< O R > <g2:< O R >>`,
+   With the same construction, since, as :g:`< E H > <g2:< E H >>` is to :g:`< N Q > <g2:< N Q >>`, so is the height of the solid :g:`< C D > <g2:< C D >>` to the height of the solid :g:`< A B > <g2:< A B >>`, while :g:`< E H > <g2:< E H >>` is :eq:`equal <g2:< E H > = g2:< F K >; g2:< N Q > = g2:< O R >>` to :g:`< F K > <g2:< F K >>`, and :g:`< N Q > <g2:< N Q >>` to :g:`< O R > <g2:< O R >>`,
 
 .. step:: assert
 
-   Therefore, as the base :g:`< F K > <g2:< F K >>` is to the base :g:`< O R > <g2:< O R >>`, so is the height of the solid :g:`< C D > <g2:< C D >>` to the height of the solid :g:`< A B > <g2:< A B >>`.
+   as :g:`< F K > <g2:< F K >>` is to :g:`< O R > <g2:< O R >>`, so is the height of the solid :g:`< C D > <g2:< C D >>` to the height of the solid :g:`< A B > <g2:< A B >>`
 
 .. step:: assert
 
-   The solids :g:`< A B > <g2:< A B >>`, :g:`< C D > <g2:< C D >>` and :g:`< B T > <g2:< B T >>`, :g:`< D X > <g2:< D X >>` have the same heights respectively;
+   The solids :g:`< A B > <g2:< A B >>`, :g:`< C D > <g2:< C D >>` and :g:`< B T > <g2:< B T >>`, :g:`< D X > <g2:< D X >>` have the same heights
 
 .. step:: assert
 
-   Therefore, as the base :g:`< F K > <g2:< F K >>` is to the base :g:`< O R > <g2:< O R >>`, so is the height of the solid :g:`< D X > <g2:< D X >>` to the height of the solid :g:`< B T > <g2:< B T >>`.
+   as :g:`< F K > <g2:< F K >>` is to :g:`< O R > <g2:< O R >>`, so is the height of the solid :g:`< D X > <g2:< D X >>` to the height of the solid :g:`< B T > <g2:< B T >>`
 
 .. step:: assert ∵ Part 1. <Part 1.>
 
-   Therefore in the parallelepipedal solids :g:`< B T > <g2:< B T >>`, :g:`< D X > <g2:< D X >>` the bases are reciprocally proportional to the heights; therefore the solid :g:`< B T > <g2:< B T >>` is :eq:`equal <g2:< B T > = g2:< D X >>` to the solid :g:`< D X > <g2:< D X >>`.
+   in the parallelepipedal solids :g:`< B T > <g2:< B T >>`, :g:`< D X > <g2:< D X >>` the bases are reciprocally proportional to the heights; therefore the solid :g:`< B T > <g2:< B T >>` is :eq:`equal <g2:< B T > = g2:< D X >>` to the solid :g:`< D X > <g2:< D X >>`
 
 .. step:: conclude ∵ parallelepipedal_solids_base, parallelepipedal_solids_base_xi_30 <G.539, G.540>
 
-   :g:`< B T > <g2:< B T >>` is :eq:`equal <g2:< B T > = g2:< B A >>` to :g:`< B A > <g2:< B A >>`, for they are on the same base :g:`< F K > <g2:< F K >>` and of the same height; and the solid :g:`< D X > <g2:< D X >>` is :eq:`equal <g2:< D X > = g2:< D C >>` to the solid :g:`< D C > <g2:< D C >>`.
+   :g:`< B T > <g2:< B T >>` is :eq:`equal <g2:< B T > = g2:< B A >>` to :g:`< B A > <g2:< B A >>`, for they are on the same base :g:`< F K > <g2:< F K >>` and of the same height; and the solid :g:`< D X > <g2:< D X >>` is :eq:`equal <g2:< D X > = g2:< D C >>` to the solid :g:`< D C > <g2:< D C >>`
 
 Dependency Graph
 ----------------
@@ -257,10 +257,10 @@ Dependency Graph
      "G.8" [label="G.8", tooltip="G.8 (I.def.13): A boundary is the extremity of anything.", fillcolor="#224422", URL="../G.8/index.html", target="_top"];
      "G.9" [label="G.9", tooltip="G.9 (I.def.14): A figure is that which is contained by any boundary or boundaries.", fillcolor="#224422", URL="../G.9/index.html", target="_top"];
      "G.10" [label="G.10", tooltip="G.10 (I.def.15): A circle ( A B ) is a plane figure contained by one arc defined by a center A and a point B establishing its defining radius / A B /, such that all segments / A B /, / A C /, / A D...", fillcolor="#224422", URL="../G.10/index.html", target="_top"];
-     "G.11" [label="G.11", tooltip="G.11 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
-     "G.12" [label="G.12", tooltip="G.12 (I.def.20): Of trilateral figures, an equilateral triangle < A B C > has three equal sides, an isosceles triangle < D E F > has two equal sides, and a scalene triangle < G H K > has three uneq...", fillcolor="#224422", URL="../G.12/index.html", target="_top"];
-     "G.13" [label="G.13", tooltip="G.13 (I.post.1): Construct a segment / A B / between any two points A, B.", fillcolor="#444422", URL="../G.13/index.html", target="_top"];
-     "G.14" [label="G.14", tooltip="G.14 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.", fillcolor="#224422", URL="../G.14/index.html", target="_top"];
+     "G.11" [label="G.11", tooltip="G.11 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
+     "G.12" [label="G.12", tooltip="G.12 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.12/index.html", target="_top"];
+     "G.13" [label="G.13", tooltip="G.13 (I.def.20): Of trilateral figures, an equilateral triangle < A B C > has three equal sides, an isosceles triangle < D E F > has two equal sides, and a scalene triangle < G H K > has three uneq...", fillcolor="#224422", URL="../G.13/index.html", target="_top"];
+     "G.14" [label="G.14", tooltip="G.14 (I.post.1): Construct a segment / A B / between any two points A, B.", fillcolor="#444422", URL="../G.14/index.html", target="_top"];
      "G.15" [label="G.15", tooltip="G.15 (I.post.3): Construct a circle ( A B ) with center A and defining radius point B.", fillcolor="#444422", URL="../G.15/index.html", target="_top"];
      "G.16" [label="G.16", tooltip="G.16 (I.cn.1): Things equal to the same thing are equal to one another.", fillcolor="#442222", URL="../G.16/index.html", target="_top"];
      "G.17" [label="G.17", tooltip="G.17 (I.1): Construct an equilateral triangle on a given segment.", fillcolor="#222244", URL="../G.17/index.html", target="_top"];
@@ -272,19 +272,19 @@ Dependency Graph
      "G.23" [label="G.23", tooltip="G.23 (I.cn.4): Things / A B /, / D E / that coincide with one another are equal to one another.", fillcolor="#442222", URL="../G.23/index.html", target="_top"];
      "G.24" [label="G.24", tooltip="G.24 (I.4): Triangles with two sides and the included angle equal are congruent (SAS).", fillcolor="#222244", URL="../G.24/index.html", target="_top"];
      "G.25" [label="G.25", tooltip="G.25 (I.5): In an isosceles triangle, the angles at the base are equal, and if the equal sides are extended, the angles under the base are equal.", fillcolor="#222244", URL="../G.25/index.html", target="_top"];
-     "G.27" [label="G.27", tooltip="G.27 (I.7): On the same segment and on the same side, there cannot be constructed two distinct triangles with both pairs of conterminous sides equal.", fillcolor="#222244", URL="../G.27/index.html", target="_top"];
-     "G.28" [label="G.28", tooltip="G.28 (I.8): Triangles with all three corresponding sides equal have their corresponding angles equal (SSS).", fillcolor="#222244", URL="../G.28/index.html", target="_top"];
-     "G.29" [label="G.29", tooltip="G.29 (I.def.9): A rectilineal angle is contained by two segments or lines.", fillcolor="#224422", URL="../G.29/index.html", target="_top"];
-     "G.30" [label="G.30", tooltip="G.30 (I.9): Bisect a given angle.", fillcolor="#222244", URL="../G.30/index.html", target="_top"];
-     "G.31" [label="G.31", tooltip="G.31 (I.10): Bisect a given segment.", fillcolor="#222244", URL="../G.31/index.html", target="_top"];
-     "G.32" [label="G.32", tooltip="G.32 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.32/index.html", target="_top"];
-     "G.33" [label="G.33", tooltip="G.33 (I.11): Construct a segment at right angles to a given line from a given point on it.", fillcolor="#222244", URL="../G.33/index.html", target="_top"];
-     "G.35" [label="G.35", tooltip="G.35 (I.cn.2): If equals are added to equals, the wholes are equal.", fillcolor="#442222", URL="../G.35/index.html", target="_top"];
-     "G.36" [label="G.36", tooltip="G.36 (I.13): A segment standing on a line makes either two right angles or adjacent angles summing to two right angles.", fillcolor="#222244", URL="../G.36/index.html", target="_top"];
-     "G.37" [label="G.37", tooltip="G.37 (I.post.4): All right angles are equal.", fillcolor="#444422", URL="../G.37/index.html", target="_top"];
-     "G.38" [label="G.38", tooltip="G.38 (I.14): If two segments at a point on a line on opposite sides make adjacent angles summing to two right angles, the two segments are collinear.", fillcolor="#222244", URL="../G.38/index.html", target="_top"];
-     "G.39" [label="G.39", tooltip="G.39 (I.15): Intersecting lines make their vertical angles equal.", fillcolor="#222244", URL="../G.39/index.html", target="_top"];
-     "G.40" [label="G.40", tooltip="G.40 (I.cn.5): The whole is greater than the part.", fillcolor="#442222", URL="../G.40/index.html", target="_top"];
+     "G.26" [label="G.26", tooltip="G.26 (I.cn.5): The whole is greater than the part.", fillcolor="#442222", URL="../G.26/index.html", target="_top"];
+     "G.28" [label="G.28", tooltip="G.28 (I.7): On the same segment and on the same side, there cannot be constructed two distinct triangles with both pairs of conterminous sides equal.", fillcolor="#222244", URL="../G.28/index.html", target="_top"];
+     "G.29" [label="G.29", tooltip="G.29 (I.8): Triangles with all three corresponding sides equal have their corresponding angles equal (SSS).", fillcolor="#222244", URL="../G.29/index.html", target="_top"];
+     "G.30" [label="G.30", tooltip="G.30 (I.def.9): A rectilineal angle is contained by two segments or lines.", fillcolor="#224422", URL="../G.30/index.html", target="_top"];
+     "G.31" [label="G.31", tooltip="G.31 (I.9): Bisect a given angle.", fillcolor="#222244", URL="../G.31/index.html", target="_top"];
+     "G.32" [label="G.32", tooltip="G.32 (I.10): Bisect a given segment.", fillcolor="#222244", URL="../G.32/index.html", target="_top"];
+     "G.33" [label="G.33", tooltip="G.33 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.33/index.html", target="_top"];
+     "G.34" [label="G.34", tooltip="G.34 (I.11): Construct a segment at right angles to a given line from a given point on it.", fillcolor="#222244", URL="../G.34/index.html", target="_top"];
+     "G.36" [label="G.36", tooltip="G.36 (I.cn.2): If equals are added to equals, the wholes are equal.", fillcolor="#442222", URL="../G.36/index.html", target="_top"];
+     "G.37" [label="G.37", tooltip="G.37 (I.13): A segment standing on a line makes either two right angles or adjacent angles summing to two right angles.", fillcolor="#222244", URL="../G.37/index.html", target="_top"];
+     "G.38" [label="G.38", tooltip="G.38 (I.post.4): All right angles are equal.", fillcolor="#444422", URL="../G.38/index.html", target="_top"];
+     "G.39" [label="G.39", tooltip="G.39 (I.14): If two segments at a point on a line on opposite sides make adjacent angles summing to two right angles, the two segments are collinear.", fillcolor="#222244", URL="../G.39/index.html", target="_top"];
+     "G.40" [label="G.40", tooltip="G.40 (I.15): Intersecting lines make their vertical angles equal.", fillcolor="#222244", URL="../G.40/index.html", target="_top"];
      "G.41" [label="G.41", tooltip="G.41 (I.16): In any triangle, if one side is extended, the exterior angle is greater than either opposite interior angle.", fillcolor="#222244", URL="../G.41/index.html", target="_top"];
      "G.43" [label="G.43", tooltip="G.43 (I.18): In any triangle, the greater side subtends the greater angle.", fillcolor="#222244", URL="../G.43/index.html", target="_top"];
      "G.44" [label="G.44", tooltip="G.44 (I.19): In any triangle, the greater angle is subtended by the greater side.", fillcolor="#222244", URL="../G.44/index.html", target="_top"];
@@ -363,34 +363,75 @@ Dependency Graph
      "G.3" -> "G.1";
      "G.4" -> "G.1";
      "G.10" -> "G.1";
-     "G.13" -> "G.1";
+     "G.11" -> "G.1";
      "G.14" -> "G.1";
+     "G.15" -> "G.1";
+     "G.17" -> "G.1";
      "G.20" -> "G.1";
-     "G.27" -> "G.1";
-     "G.33" -> "G.1";
-     "G.38" -> "G.1";
+     "G.21" -> "G.1";
+     "G.24" -> "G.1";
+     "G.25" -> "G.1";
+     "G.28" -> "G.1";
+     "G.29" -> "G.1";
+     "G.31" -> "G.1";
+     "G.32" -> "G.1";
+     "G.34" -> "G.1";
+     "G.37" -> "G.1";
+     "G.39" -> "G.1";
+     "G.40" -> "G.1";
+     "G.45" -> "G.1";
+     "G.47" -> "G.1";
      "G.48" -> "G.1";
      "G.58" -> "G.1";
+     "G.71" -> "G.1";
+     "G.73" -> "G.1";
+     "G.74" -> "G.1";
      "G.506" -> "G.1";
      "G.507" -> "G.1";
      "G.509" -> "G.1";
+     "G.519" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
      "G.6" -> "G.2";
+     "G.7" -> "G.2";
+     "G.18" -> "G.2";
      "G.22" -> "G.2";
-     "G.29" -> "G.2";
+     "G.30" -> "G.2";
+     "G.33" -> "G.2";
+     "G.34" -> "G.2";
+     "G.37" -> "G.2";
+     "G.39" -> "G.2";
+     "G.40" -> "G.2";
+     "G.48" -> "G.2";
+     "G.52" -> "G.2";
+     "G.53" -> "G.2";
+     "G.54" -> "G.2";
+     "G.55" -> "G.2";
+     "G.56" -> "G.2";
+     "G.57" -> "G.2";
+     "G.58" -> "G.2";
+     "G.65" -> "G.2";
+     "G.504" -> "G.2";
+     "G.509" -> "G.2";
      "G.4" -> "G.3";
+     "G.6" -> "G.3";
      "G.8" -> "G.3";
      "G.20" -> "G.3";
-     "G.27" -> "G.3";
+     "G.28" -> "G.3";
+     "G.29" -> "G.3";
      "G.60" -> "G.3";
+     "G.65" -> "G.3";
+     "G.74" -> "G.3";
+     "G.504" -> "G.3";
      "G.533" -> "G.3";
      "G.539" -> "G.3";
      "G.540" -> "G.3";
+     "G.541" -> "G.3";
      "G.7" -> "G.4";
      "G.10" -> "G.4";
      "G.11" -> "G.4";
-     "G.13" -> "G.4";
+     "G.12" -> "G.4";
+     "G.14" -> "G.4";
      "G.17" -> "G.4";
      "G.18" -> "G.4";
      "G.20" -> "G.4";
@@ -398,14 +439,17 @@ Dependency Graph
      "G.22" -> "G.4";
      "G.24" -> "G.4";
      "G.25" -> "G.4";
-     "G.27" -> "G.4";
      "G.28" -> "G.4";
+     "G.29" -> "G.4";
+     "G.30" -> "G.4";
      "G.31" -> "G.4";
      "G.32" -> "G.4";
      "G.33" -> "G.4";
-     "G.36" -> "G.4";
-     "G.38" -> "G.4";
+     "G.34" -> "G.4";
+     "G.37" -> "G.4";
      "G.39" -> "G.4";
+     "G.40" -> "G.4";
+     "G.41" -> "G.4";
      "G.47" -> "G.4";
      "G.48" -> "G.4";
      "G.52" -> "G.4";
@@ -417,7 +461,11 @@ Dependency Graph
      "G.58" -> "G.4";
      "G.60" -> "G.4";
      "G.61" -> "G.4";
+     "G.62" -> "G.4";
+     "G.65" -> "G.4";
+     "G.71" -> "G.4";
      "G.73" -> "G.4";
+     "G.74" -> "G.4";
      "G.502" -> "G.4";
      "G.503" -> "G.4";
      "G.504" -> "G.4";
@@ -429,11 +477,15 @@ Dependency Graph
      "G.510" -> "G.4";
      "G.511" -> "G.4";
      "G.512" -> "G.4";
+     "G.519" -> "G.4";
+     "G.531" -> "G.4";
      "G.539" -> "G.4";
      "G.540" -> "G.4";
+     "G.541" -> "G.4";
      "G.6" -> "G.5";
      "G.7" -> "G.5";
      "G.10" -> "G.6";
+     "G.533" -> "G.6";
      "G.10" -> "G.7";
      "G.22" -> "G.7";
      "G.52" -> "G.7";
@@ -441,7 +493,9 @@ Dependency Graph
      "G.503" -> "G.7";
      "G.504" -> "G.7";
      "G.505" -> "G.7";
+     "G.506" -> "G.7";
      "G.507" -> "G.7";
+     "G.508" -> "G.7";
      "G.509" -> "G.7";
      "G.510" -> "G.7";
      "G.511" -> "G.7";
@@ -450,56 +504,106 @@ Dependency Graph
      "G.530" -> "G.7";
      "G.531" -> "G.7";
      "G.537" -> "G.7";
+     "G.541" -> "G.7";
+     "G.542" -> "G.7";
+     "G.544" -> "G.7";
      "G.9" -> "G.8";
      "G.10" -> "G.9";
-     "G.24" -> "G.9";
+     "G.12" -> "G.9";
+     "G.66" -> "G.9";
+     "G.67" -> "G.9";
      "G.187" -> "G.9";
      "G.189" -> "G.9";
      "G.209" -> "G.9";
-     "G.14" -> "G.10";
+     "G.224" -> "G.9";
+     "G.539" -> "G.9";
+     "G.11" -> "G.10";
      "G.15" -> "G.10";
      "G.17" -> "G.10";
+     "G.20" -> "G.10";
      "G.21" -> "G.10";
+     "G.47" -> "G.10";
      "G.61" -> "G.10";
      "G.502" -> "G.10";
-     "G.12" -> "G.11";
-     "G.24" -> "G.11";
-     "G.28" -> "G.11";
-     "G.41" -> "G.11";
-     "G.43" -> "G.11";
-     "G.44" -> "G.11";
-     "G.45" -> "G.11";
+     "G.15" -> "G.11";
+     "G.17" -> "G.11";
+     "G.20" -> "G.11";
+     "G.21" -> "G.11";
      "G.47" -> "G.11";
-     "G.51" -> "G.11";
-     "G.63" -> "G.11";
-     "G.66" -> "G.11";
-     "G.67" -> "G.11";
-     "G.70" -> "G.11";
-     "G.71" -> "G.11";
-     "G.73" -> "G.11";
-     "G.74" -> "G.11";
-     "G.210" -> "G.11";
-     "G.503" -> "G.11";
+     "G.61" -> "G.11";
+     "G.502" -> "G.11";
+     "G.13" -> "G.12";
      "G.17" -> "G.12";
+     "G.20" -> "G.12";
+     "G.24" -> "G.12";
      "G.25" -> "G.12";
+     "G.28" -> "G.12";
+     "G.29" -> "G.12";
+     "G.31" -> "G.12";
+     "G.32" -> "G.12";
+     "G.34" -> "G.12";
+     "G.41" -> "G.12";
+     "G.43" -> "G.12";
+     "G.44" -> "G.12";
+     "G.45" -> "G.12";
+     "G.47" -> "G.12";
+     "G.48" -> "G.12";
+     "G.51" -> "G.12";
+     "G.53" -> "G.12";
+     "G.60" -> "G.12";
+     "G.62" -> "G.12";
      "G.63" -> "G.12";
+     "G.64" -> "G.12";
+     "G.66" -> "G.12";
+     "G.67" -> "G.12";
+     "G.70" -> "G.12";
+     "G.71" -> "G.12";
+     "G.72" -> "G.12";
+     "G.73" -> "G.12";
+     "G.74" -> "G.12";
+     "G.210" -> "G.12";
+     "G.503" -> "G.12";
+     "G.508" -> "G.12";
+     "G.539" -> "G.12";
      "G.17" -> "G.13";
-     "G.20" -> "G.13";
      "G.25" -> "G.13";
-     "G.27" -> "G.13";
-     "G.41" -> "G.13";
-     "G.15" -> "G.14";
-     "G.61" -> "G.14";
-     "G.502" -> "G.14";
+     "G.63" -> "G.13";
+     "G.17" -> "G.14";
+     "G.20" -> "G.14";
+     "G.25" -> "G.14";
+     "G.28" -> "G.14";
+     "G.31" -> "G.14";
+     "G.34" -> "G.14";
+     "G.41" -> "G.14";
+     "G.43" -> "G.14";
+     "G.45" -> "G.14";
+     "G.47" -> "G.14";
+     "G.51" -> "G.14";
+     "G.58" -> "G.14";
+     "G.60" -> "G.14";
+     "G.65" -> "G.14";
+     "G.70" -> "G.14";
+     "G.71" -> "G.14";
+     "G.73" -> "G.14";
+     "G.74" -> "G.14";
+     "G.210" -> "G.14";
+     "G.503" -> "G.14";
+     "G.508" -> "G.14";
+     "G.510" -> "G.14";
+     "G.512" -> "G.14";
+     "G.530" -> "G.14";
+     "G.540" -> "G.14";
+     "G.541" -> "G.14";
      "G.17" -> "G.15";
      "G.20" -> "G.15";
      "G.21" -> "G.15";
+     "G.47" -> "G.15";
      "G.17" -> "G.16";
      "G.20" -> "G.16";
      "G.21" -> "G.16";
-     "G.36" -> "G.16";
-     "G.38" -> "G.16";
+     "G.37" -> "G.16";
      "G.39" -> "G.16";
+     "G.40" -> "G.16";
      "G.56" -> "G.16";
      "G.57" -> "G.16";
      "G.64" -> "G.16";
@@ -508,44 +612,71 @@ Dependency Graph
      "G.74" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
-     "G.33" -> "G.17";
+     "G.32" -> "G.17";
+     "G.34" -> "G.17";
      "G.20" -> "G.18";
      "G.25" -> "G.18";
      "G.41" -> "G.18";
+     "G.45" -> "G.18";
+     "G.58" -> "G.18";
+     "G.66" -> "G.18";
+     "G.67" -> "G.18";
+     "G.73" -> "G.18";
+     "G.210" -> "G.18";
+     "G.540" -> "G.18";
+     "G.541" -> "G.18";
      "G.20" -> "G.19";
-     "G.38" -> "G.19";
+     "G.25" -> "G.19";
      "G.39" -> "G.19";
+     "G.40" -> "G.19";
      "G.64" -> "G.19";
      "G.72" -> "G.19";
      "G.21" -> "G.20";
      "G.25" -> "G.21";
-     "G.30" -> "G.21";
-     "G.33" -> "G.21";
+     "G.31" -> "G.21";
+     "G.34" -> "G.21";
      "G.41" -> "G.21";
      "G.43" -> "G.21";
+     "G.45" -> "G.21";
      "G.47" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
      "G.28" -> "G.22";
      "G.29" -> "G.22";
+     "G.30" -> "G.22";
+     "G.31" -> "G.22";
      "G.32" -> "G.22";
-     "G.36" -> "G.22";
-     "G.38" -> "G.22";
+     "G.33" -> "G.22";
+     "G.34" -> "G.22";
+     "G.37" -> "G.22";
      "G.39" -> "G.22";
+     "G.40" -> "G.22";
      "G.41" -> "G.22";
      "G.43" -> "G.22";
      "G.44" -> "G.22";
+     "G.45" -> "G.22";
+     "G.48" -> "G.22";
      "G.51" -> "G.22";
      "G.53" -> "G.22";
      "G.54" -> "G.22";
      "G.55" -> "G.22";
      "G.56" -> "G.22";
+     "G.57" -> "G.22";
+     "G.58" -> "G.22";
+     "G.60" -> "G.22";
      "G.62" -> "G.22";
      "G.63" -> "G.22";
+     "G.64" -> "G.22";
+     "G.71" -> "G.22";
+     "G.73" -> "G.22";
+     "G.74" -> "G.22";
+     "G.224" -> "G.22";
      "G.512" -> "G.22";
+     "G.530" -> "G.22";
      "G.24" -> "G.23";
+     "G.29" -> "G.23";
      "G.25" -> "G.24";
-     "G.31" -> "G.24";
+     "G.32" -> "G.24";
      "G.41" -> "G.24";
      "G.51" -> "G.24";
      "G.60" -> "G.24";
@@ -555,57 +686,65 @@ Dependency Graph
      "G.508" -> "G.24";
      "G.530" -> "G.24";
      "G.539" -> "G.24";
-     "G.27" -> "G.25";
+     "G.28" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
-     "G.28" -> "G.27";
-     "G.30" -> "G.28";
-     "G.33" -> "G.28";
-     "G.48" -> "G.28";
-     "G.506" -> "G.28";
-     "G.508" -> "G.28";
-     "G.512" -> "G.28";
-     "G.539" -> "G.28";
-     "G.30" -> "G.29";
+     "G.28" -> "G.26";
+     "G.41" -> "G.26";
+     "G.45" -> "G.26";
+     "G.29" -> "G.28";
+     "G.31" -> "G.29";
+     "G.34" -> "G.29";
      "G.48" -> "G.29";
-     "G.71" -> "G.29";
-     "G.73" -> "G.29";
-     "G.74" -> "G.29";
+     "G.506" -> "G.29";
+     "G.508" -> "G.29";
+     "G.512" -> "G.29";
+     "G.539" -> "G.29";
      "G.31" -> "G.30";
-     "G.41" -> "G.31";
-     "G.33" -> "G.32";
-     "G.36" -> "G.32";
-     "G.37" -> "G.32";
-     "G.38" -> "G.32";
-     "G.54" -> "G.32";
-     "G.55" -> "G.32";
-     "G.56" -> "G.32";
-     "G.209" -> "G.32";
-     "G.505" -> "G.32";
-     "G.506" -> "G.32";
-     "G.507" -> "G.32";
-     "G.510" -> "G.32";
-     "G.36" -> "G.33";
-     "G.36" -> "G.35";
-     "G.56" -> "G.35";
-     "G.62" -> "G.35";
-     "G.64" -> "G.35";
-     "G.72" -> "G.35";
-     "G.74" -> "G.35";
-     "G.38" -> "G.36";
-     "G.39" -> "G.36";
-     "G.54" -> "G.36";
+     "G.48" -> "G.30";
+     "G.71" -> "G.30";
+     "G.73" -> "G.30";
+     "G.74" -> "G.30";
+     "G.32" -> "G.31";
+     "G.41" -> "G.32";
+     "G.34" -> "G.33";
+     "G.37" -> "G.33";
+     "G.38" -> "G.33";
+     "G.39" -> "G.33";
+     "G.40" -> "G.33";
+     "G.54" -> "G.33";
+     "G.55" -> "G.33";
+     "G.56" -> "G.33";
+     "G.73" -> "G.33";
+     "G.74" -> "G.33";
+     "G.209" -> "G.33";
+     "G.505" -> "G.33";
+     "G.506" -> "G.33";
+     "G.507" -> "G.33";
+     "G.508" -> "G.33";
+     "G.510" -> "G.33";
+     "G.511" -> "G.33";
+     "G.541" -> "G.33";
+     "G.544" -> "G.33";
+     "G.37" -> "G.34";
+     "G.37" -> "G.36";
      "G.56" -> "G.36";
-     "G.38" -> "G.37";
+     "G.62" -> "G.36";
+     "G.64" -> "G.36";
+     "G.72" -> "G.36";
+     "G.74" -> "G.36";
      "G.39" -> "G.37";
-     "G.74" -> "G.38";
-     "G.41" -> "G.39";
-     "G.54" -> "G.39";
-     "G.56" -> "G.39";
-     "G.73" -> "G.39";
-     "G.506" -> "G.39";
+     "G.40" -> "G.37";
+     "G.54" -> "G.37";
+     "G.56" -> "G.37";
+     "G.39" -> "G.38";
+     "G.40" -> "G.38";
+     "G.74" -> "G.39";
      "G.41" -> "G.40";
-     "G.45" -> "G.40";
+     "G.54" -> "G.40";
+     "G.56" -> "G.40";
+     "G.73" -> "G.40";
+     "G.506" -> "G.40";
      "G.43" -> "G.41";
      "G.51" -> "G.41";
      "G.53" -> "G.41";
@@ -624,19 +763,26 @@ Dependency Graph
      "G.57" -> "G.52";
      "G.58" -> "G.52";
      "G.60" -> "G.52";
+     "G.62" -> "G.52";
      "G.64" -> "G.52";
      "G.65" -> "G.52";
      "G.66" -> "G.52";
      "G.67" -> "G.52";
      "G.70" -> "G.52";
+     "G.71" -> "G.52";
+     "G.73" -> "G.52";
+     "G.74" -> "G.52";
      "G.508" -> "G.52";
      "G.509" -> "G.52";
      "G.510" -> "G.52";
      "G.511" -> "G.52";
      "G.512" -> "G.52";
      "G.519" -> "G.52";
+     "G.530" -> "G.52";
      "G.531" -> "G.52";
      "G.537" -> "G.52";
+     "G.541" -> "G.52";
+     "G.542" -> "G.52";
      "G.54" -> "G.53";
      "G.58" -> "G.53";
      "G.60" -> "G.53";
@@ -655,11 +801,16 @@ Dependency Graph
      "G.67" -> "G.58";
      "G.71" -> "G.58";
      "G.73" -> "G.58";
+     "G.541" -> "G.58";
      "G.65" -> "G.60";
      "G.74" -> "G.60";
      "G.512" -> "G.60";
      "G.62" -> "G.61";
+     "G.66" -> "G.61";
+     "G.67" -> "G.61";
+     "G.70" -> "G.61";
      "G.72" -> "G.61";
+     "G.73" -> "G.61";
      "G.502" -> "G.61";
      "G.64" -> "G.62";
      "G.65" -> "G.62";
@@ -691,8 +842,14 @@ Dependency Graph
      "G.256" -> "G.169";
      "G.171" -> "G.170";
      "G.176" -> "G.170";
+     "G.183" -> "G.170";
      "G.185" -> "G.170";
+     "G.186" -> "G.170";
+     "G.189" -> "G.170";
+     "G.190" -> "G.170";
      "G.193" -> "G.170";
+     "G.210" -> "G.170";
+     "G.531" -> "G.170";
      "G.186" -> "G.171";
      "G.190" -> "G.171";
      "G.189" -> "G.173";
@@ -704,10 +861,14 @@ Dependency Graph
      "G.193" -> "G.176";
      "G.210" -> "G.176";
      "G.531" -> "G.176";
+     "G.541" -> "G.176";
+     "G.544" -> "G.176";
      "G.183" -> "G.180";
      "G.190" -> "G.180";
+     "G.224" -> "G.180";
      "G.182" -> "G.181";
      "G.190" -> "G.181";
+     "G.193" -> "G.181";
      "G.183" -> "G.182";
      "G.193" -> "G.183";
      "G.541" -> "G.183";
@@ -732,7 +893,10 @@ Dependency Graph
      "G.248" -> "G.247";
      "G.253" -> "G.248";
      "G.256" -> "G.248";
+     "G.531" -> "G.248";
+     "G.256" -> "G.253";
      "G.502" -> "G.253";
+     "G.503" -> "G.253";
      "G.531" -> "G.256";
      "G.503" -> "G.502";
      "G.519" -> "G.502";
@@ -744,6 +908,7 @@ Dependency Graph
      "G.507" -> "G.505";
      "G.508" -> "G.505";
      "G.510" -> "G.505";
+     "G.511" -> "G.505";
      "G.507" -> "G.506";
      "G.510" -> "G.506";
      "G.511" -> "G.506";

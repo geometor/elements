@@ -10,7 +10,7 @@
 :categories: theorem, proof, proportions, magnitudes
 :category: theorem, proof, proportions, magnitudes
 :tags: book-v, point, proportional, corresponding-magnitudes, multiple, proportion, number, equality
-:dependencies: G.171, G.176, G.180, G.181
+:dependencies: G.170, G.171, G.176, G.180, G.181
 :excerpt: If any number of magnitudes be proportional, as one of the antecedents is to one of the consequents, so will all the antecedents be to all the consequents.
 
 .. _G.190:
@@ -40,7 +40,7 @@ G.190 number magnitudes proportional
 
 .. step:: assert
 
-   I say that, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so are :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`E <g1:E>` to :g:`B <g1:B>`, :g:`D <g1:D>`, :g:`F <g1:F>`.
+   I say that, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so are :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`E <g1:E>` to :g:`B <g1:B>`, :g:`D <g1:D>`, :g:`F <g1:F>`
 
 .. step:: construct
 
@@ -52,15 +52,15 @@ G.190 number magnitudes proportional
 
 .. step:: assert
 
-   Therefore, if :g:`G <g1:G>` is in excess of :g:`L <g1:L>`, :g:`H <g1:H>` is also in excess of :g:`M <g1:M>`, and :g:`K <g1:K>` of :g:`N <g1:N>`, if :eq:`equal <g1:G = g1:L>`, :eq:`equal <g1:H = g1:M; g1:K = g1:N>`, and if less, less;
+   if :g:`G <g1:G>` is in excess of :g:`L <g1:L>`, :g:`H <g1:H>` is also in excess of :g:`M <g1:M>`, and :g:`K <g1:K>` of :g:`N <g1:N>`, if :eq:`= <g1:G = g1:L>`, :eq:`= <g1:H = g1:M; g1:K = g1:N>`, and if less, less
 
 .. step:: assert
 
-   So that, in addition, if :g:`G <g1:G>` is in excess of :g:`L <g1:L>`, then :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`K <g1:K>` are in excess of :g:`L <g1:L>`, :g:`M <g1:M>`, :g:`N <g1:N>`, if :eq:`equal <g1:G = g1:L>`, equal, and if less, less.
+   So that, in addition, if :g:`G <g1:G>` is in excess of :g:`L <g1:L>`, then :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`K <g1:K>` are in excess of :g:`L <g1:L>`, :g:`M <g1:M>`, :g:`N <g1:N>`, if :eq:`= <g1:G = g1:L>`, equal, and if less, less
 
 .. step:: assert ∵ there_number_magnitudes <G.171>
 
-   Now :g:`G <g1:G>` and :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`K <g1:K>` are equimultiples of :g:`A <g1:A>` and :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`E <g1:E>`, since, if any number of magnitudes whatever are respectively equimultiples of any magnitudes equal in multitude, whatever multiple one of the magnitudes is of one, that multiple also will all be of all.
+   Now :g:`G <g1:G>` and :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`K <g1:K>` are equimultiples of :g:`A <g1:A>` and :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`E <g1:E>`, since, if any number of magnitudes whatever are equimultiples of any magnitudes equal in multitude, whatever multiple one of the magnitudes is of one, that multiple also will all be of all
 
 .. step:: assert
 
@@ -68,7 +68,7 @@ G.190 number magnitudes proportional
 
 .. step:: conclude ∵ magnitudes_said_ratio_def <G.176>
 
-   Therefore, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so are :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`E <g1:E>` to :g:`B <g1:B>`, :g:`D <g1:D>`, :g:`F <g1:F>`.
+   as :g:`A <g1:A>` is to :g:`B <g1:B>`, so are :g:`A <g1:A>`, :g:`C <g1:C>`, :g:`E <g1:E>` to :g:`B <g1:B>`, :g:`D <g1:D>`, :g:`F <g1:F>`
 
 Dependency Graph
 ----------------
@@ -90,6 +90,7 @@ Dependency Graph
      "G.170" -> "G.169";
      "G.171" -> "G.170";
      "G.176" -> "G.170";
+     "G.190" -> "G.170";
      "G.190" -> "G.171";
      "G.180" -> "G.176";
      "G.190" -> "G.176";

@@ -12,7 +12,7 @@ G.70 parallelogram is double a triangle on the same base — Code
 
 .. enunciation::
 
-   If a parallelogram shares the same base with a :term:`triangle <G.11>` and lies in the same :term:`parallels <G.52>`, the parallelogram is double the triangle.
+   If a parallelogram shares the same base with a :term:`triangle <G.12>` and lies in the same :term:`parallels <G.52>`, the parallelogram is double the triangle.
 
 .. picture:: g1.svg
 

@@ -93,12 +93,16 @@ Dependency Graph
      "G.362" [label="G.362", tooltip="G.362 (IX.31): If an odd number be prime to any number, it is prime to the double of it.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.249" -> "G.169";
      "G.361" -> "G.169";
+     "G.362" -> "G.169";
      "G.248" -> "G.247";
      "G.249" -> "G.247";
      "G.269" -> "G.247";
      "G.352" -> "G.247";
+     "G.353" -> "G.247";
+     "G.354" -> "G.247";
      "G.269" -> "G.248";
      "G.351" -> "G.248";
+     "G.353" -> "G.248";
      "G.362" -> "G.248";
      "G.362" -> "G.249";
      "G.361" -> "G.269";

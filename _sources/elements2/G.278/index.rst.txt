@@ -10,7 +10,7 @@
 :categories: theorem, proof, number-theory
 :category: theorem, proof, number-theory
 :tags: book-vii, point, number, prime-to-one-another, multiply, part-aliquot, unit, proportional, in-the-same-ratio, corresponding-magnitudes, prime, reductio-ad-absurdum
-:dependencies: G.248, G.249, G.269, G.270, G.273, G.274, G.275, G.277
+:dependencies: G.169, G.180, G.181, G.247, G.248, G.249, G.269, G.270, G.273, G.274, G.275, G.277
 :excerpt: If two numbers be prime to any number, their product also is prime to the same.
 
 .. _G.278:
@@ -39,19 +39,19 @@ G.278 numbers prime number
 
 .. step:: assert
 
-   If :g:`C <g1:C>`, :g:`D <g1:D>` are not prime to one another, some number will :term:`measure <G.169>` :g:`C <g1:C>`, :g:`D <g1:D>`.
+   If :g:`C <g1:C>`, :g:`D <g1:D>` are not prime to one another, some number will :term:`measure <G.169>` :g:`C <g1:C>`, :g:`D <g1:D>`
 
 .. step:: assert
 
-   Let a number measure them, and let it be :g:`E <g1:E>`.
+   Let a number measure them, and let it be :g:`E <g1:E>`
 
 .. step:: assert
 
-   Since :g:`C <g1:C>`, :g:`A <g1:A>` are prime to one another, and a certain number :g:`E <g1:E>` measures :g:`C <g1:C>`,
+   :g:`C <g1:C>`, :g:`A <g1:A>` are prime to one another, and a certain number :g:`E <g1:E>` measures :g:`C <g1:C>`,
 
 .. step:: assert ∵ numbers_prime_number <G.277>
 
-   Therefore :g:`A <g1:A>`, :g:`E <g1:E>` are prime to one another.
+   :g:`A <g1:A>`, :g:`E <g1:E>` are prime to one another
 
 .. step:: assert
 
@@ -59,27 +59,27 @@ G.278 numbers prime number
 
 .. step:: assert ∵ numbers_multiplying_make <G.270>
 
-   Therefore :g:`F <g1:F>` also measures :g:`D <g1:D>` according to the units in :g:`E <g1:E>`.
+   :g:`F <g1:F>` also measures :g:`D <g1:D>` according to the units in :g:`E <g1:E>`
 
 .. step:: assert ∵ number_said_multiply_def <G.269>
 
-   Therefore :g:`E <g1:E>` by multiplying :g:`F <g1:F>` has made :g:`D <g1:D>`.
+   :g:`E <g1:E>` by multiplying :g:`F <g1:F>` has made :g:`D <g1:D>`
 
 .. step:: assert
 
-   But, further, :g:`A <g1:A>` by multiplying :g:`B <g1:B>` has also made :g:`D <g1:D>` ;
+   But, further, :g:`A <g1:A>` by multiplying :g:`B <g1:B>` has also made :g:`D <g1:D>`
 
 .. step:: assert
 
-   Therefore the product of :g:`E <g1:E>`, :g:`F <g1:F>` is equal to the product of :g:`A <g1:A>`, :g:`B <g1:B>`.
+   the product of :g:`E <g1:E>`, :g:`F <g1:F>` is equal to the product of :g:`A <g1:A>`, :g:`B <g1:B>`
 
 .. step:: assert ∵ numbers_proportional_number <G.273>
 
-   But, if the product of the extremes be equal to that of the means, the four numbers are :term:`proportional <G.180>` .
+   But, if the product of the extremes be equal to that of the means, the four numbers are :term:`proportional <G.180>`
 
 .. step:: assert
 
-   Therefore, as :g:`E <g1:E>` is to :g:`A <g1:A>`, so is :g:`B <g1:B>` to :g:`F <g1:F>`.
+   as :g:`E <g1:E>` is to :g:`A <g1:A>`, so is :g:`B <g1:B>` to :g:`F <g1:F>`
 
 .. step:: assert ∵ numbers_prime_least <G.275>
 
@@ -87,27 +87,27 @@ G.278 numbers prime number
 
 .. step:: assert ∵ least_numbers_ratio <G.274>
 
-   Number of times, the greater the greater and the less the less, that is, the :term:`antecedent <G.181>` the antecedent and the consequent the consequent .
+   Number of times, the greater the greater and the less the less, that is, the :term:`antecedent <G.181>` the antecedent and the consequent the consequent
 
 .. step:: assert
 
-   Therefore :g:`E <g1:E>` measures :g:`B <g1:B>`.
+   :g:`E <g1:E>` measures :g:`B <g1:B>`
 
 .. step:: assert
 
-   It also measures :g:`C <g1:C>` ;
+   It also measures :g:`C <g1:C>`
 
 .. step:: assert ∵ numbers_prime_measured_def <G.249>
 
-   Therefore :g:`E <g1:E>` measures :g:`B <g1:B>`, :g:`C <g1:C>` which are prime to one another : which is impossible.
+   :g:`E <g1:E>` measures :g:`B <g1:B>`, :g:`C <g1:C>` which are prime to one another ⇒⇐
 
 .. step:: assert
 
-   Therefore no number will measure the numbers :g:`C <g1:C>`, :g:`D <g1:D>`.
+   no number will measure the numbers :g:`C <g1:C>`, :g:`D <g1:D>`
 
 .. step:: conclude
 
-   Therefore :g:`C <g1:C>`, :g:`D <g1:D>` are prime to one another.
+   :g:`C <g1:C>`, :g:`D <g1:D>` are prime to one another
 
 Dependency Graph
 ----------------
@@ -175,13 +175,20 @@ Dependency Graph
      "G.251" -> "G.169";
      "G.253" -> "G.169";
      "G.254" -> "G.169";
+     "G.255" -> "G.169";
      "G.256" -> "G.169";
      "G.268" -> "G.169";
+     "G.270" -> "G.169";
+     "G.271" -> "G.169";
      "G.274" -> "G.169";
+     "G.275" -> "G.169";
      "G.277" -> "G.169";
+     "G.278" -> "G.169";
      "G.171" -> "G.170";
      "G.176" -> "G.170";
+     "G.183" -> "G.170";
      "G.185" -> "G.170";
+     "G.186" -> "G.170";
      "G.257" -> "G.170";
      "G.186" -> "G.171";
      "G.180" -> "G.176";
@@ -192,11 +199,17 @@ Dependency Graph
      "G.274" -> "G.176";
      "G.275" -> "G.176";
      "G.183" -> "G.180";
+     "G.263" -> "G.180";
      "G.266" -> "G.180";
      "G.273" -> "G.180";
+     "G.278" -> "G.180";
      "G.182" -> "G.181";
      "G.194" -> "G.181";
      "G.265" -> "G.181";
+     "G.268" -> "G.181";
+     "G.274" -> "G.181";
+     "G.275" -> "G.181";
+     "G.278" -> "G.181";
      "G.183" -> "G.182";
      "G.273" -> "G.183";
      "G.186" -> "G.184";
@@ -207,11 +220,19 @@ Dependency Graph
      "G.262" -> "G.194";
      "G.266" -> "G.194";
      "G.268" -> "G.194";
+     "G.270" -> "G.194";
+     "G.271" -> "G.194";
      "G.248" -> "G.247";
      "G.249" -> "G.247";
      "G.250" -> "G.247";
+     "G.251" -> "G.247";
+     "G.255" -> "G.247";
      "G.268" -> "G.247";
      "G.269" -> "G.247";
+     "G.270" -> "G.247";
+     "G.271" -> "G.247";
+     "G.275" -> "G.247";
+     "G.278" -> "G.247";
      "G.250" -> "G.248";
      "G.251" -> "G.248";
      "G.253" -> "G.248";
@@ -235,21 +256,30 @@ Dependency Graph
      "G.278" -> "G.248";
      "G.250" -> "G.249";
      "G.251" -> "G.249";
+     "G.255" -> "G.249";
      "G.275" -> "G.249";
      "G.277" -> "G.249";
      "G.278" -> "G.249";
      "G.251" -> "G.250";
      "G.255" -> "G.251";
+     "G.254" -> "G.253";
      "G.255" -> "G.253";
+     "G.256" -> "G.253";
      "G.257" -> "G.253";
+     "G.258" -> "G.253";
      "G.261" -> "G.253";
      "G.262" -> "G.253";
      "G.263" -> "G.253";
+     "G.265" -> "G.253";
+     "G.266" -> "G.253";
      "G.255" -> "G.254";
      "G.258" -> "G.254";
      "G.261" -> "G.254";
      "G.262" -> "G.254";
      "G.263" -> "G.254";
+     "G.265" -> "G.254";
+     "G.266" -> "G.254";
+     "G.274" -> "G.254";
      "G.274" -> "G.255";
      "G.257" -> "G.256";
      "G.263" -> "G.256";
@@ -274,6 +304,7 @@ Dependency Graph
      "G.270" -> "G.269";
      "G.271" -> "G.269";
      "G.272" -> "G.269";
+     "G.273" -> "G.269";
      "G.278" -> "G.269";
      "G.272" -> "G.270";
      "G.275" -> "G.270";

@@ -9,7 +9,7 @@
 :categories: definition, plane-geometry, circles
 :category: definition, plane-geometry, circles
 :tags: book-iii, angle-in-segment, plane-angle, point, straight-line, extremity, base-of-segment, arc, plane
-:dependencies: G.1, G.3, G.4, G.22
+:dependencies: G.1, G.3, G.4, G.6, G.22
 :excerpt: Anangle in a segment is theangle which, when apoint is taken on the arc of the segment andsegments are joined from it to theextremities of the segment which is thebase of the segment, is contained by the segments so joined.
 
 .. _G.138:
@@ -43,6 +43,7 @@ Dependency Graph
      "G.3" [label="G.3", tooltip="G.3 (I.def.3): The extremities of a segment / A B / are points A, B.", fillcolor="#224422", URL="../G.3/index.html", target="_top"];
      "G.4" [label="G.4", tooltip="G.4 (I.def.4): A segment / A B / is a portion of a line [ A B ] between two points A, B on the line.", fillcolor="#224422", URL="../G.4/index.html", target="_top"];
      "G.5" [label="G.5", tooltip="G.5 (I.def.5): A surface is that which has length and breadth only.", fillcolor="#224422", URL="../G.5/index.html", target="_top"];
+     "G.6" [label="G.6", tooltip="G.6 (I.def.6): The extremities of a surface are lines or arcs.", fillcolor="#224422", URL="../G.6/index.html", target="_top"];
      "G.7" [label="G.7", tooltip="G.7 (I.def.7): A plane surface lies evenly with the lines on itself.", fillcolor="#224422", URL="../G.7/index.html", target="_top"];
      "G.22" [label="G.22", tooltip="G.22 (I.def.8): A plane angle is the inclination to one another of two lines or arcs in a plane that meet and do not lie on the same line.", fillcolor="#224422", URL="../G.22/index.html", target="_top"];
      "G.138" [label="G.138", tooltip="G.138 (III.def.8): Anangle in a segment is theangle which, when apoint is taken on the arc of the segment andsegments are joined from it to theextremities of the segment which is thebase of the segme...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
@@ -52,13 +53,18 @@ Dependency Graph
      "G.138" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
+     "G.6" -> "G.2";
+     "G.7" -> "G.2";
      "G.22" -> "G.2";
      "G.4" -> "G.3";
+     "G.6" -> "G.3";
      "G.138" -> "G.3";
      "G.7" -> "G.4";
      "G.22" -> "G.4";
      "G.138" -> "G.4";
+     "G.6" -> "G.5";
      "G.7" -> "G.5";
+     "G.138" -> "G.6";
      "G.22" -> "G.7";
      "G.138" -> "G.22";
    }

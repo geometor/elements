@@ -10,7 +10,7 @@
 :categories: theorem, proof, number-theory
 :category: theorem, proof, number-theory
 :tags: book-vii, point, number, part-aliquot, unit, alternando
-:dependencies: G.169, G.248, G.268
+:dependencies: G.169, G.194, G.247, G.248, G.253, G.268
 :excerpt: If a number have any part whatever, it is measured by a number called by the same name as the part.
 
 .. _G.294:
@@ -39,23 +39,23 @@ G.294 number part whatever
 
 .. step:: assert
 
-   Since :g:`B <g1:B>` is a :term:`part of <G.253>` :g:`A <g1:A>` called by the same name as :g:`C <g1:C>`, and the :term:`unit <G.247>` :g:`D <g1:D>` is also a part of :g:`C <g1:C>` called by the same name as it,
+   :g:`B <g1:B>` is a part of :g:`A <g1:A>` called by the same name as :g:`C <g1:C>`, and the unit :g:`D <g1:D>` is also a part of :g:`C <g1:C>` called by the same name as it,
 
 .. step:: assert
 
-   Therefore, whatever part the unit :g:`D <g1:D>` is of the number :g:`C <g1:C>`, the same part is :g:`B <g1:B>` of :g:`A <g1:A>` also;
+   whatever part the :term:`unit <G.247>` :g:`D <g1:D>` is of the number :g:`C <g1:C>`, the :term:`same part <G.253>` is :g:`B <g1:B>` of :g:`A <g1:A>` also
 
 .. step:: assert
 
-   Therefore the unit :g:`D <g1:D>` measures the number :g:`C <g1:C>` the same number of times that :g:`B <g1:B>` measures :g:`A <g1:A>`.
+   the unit :g:`D <g1:D>` measures the number :g:`C <g1:C>` the same number of times that :g:`B <g1:B>` measures :g:`A <g1:A>`
 
 .. step:: assert ∵ unit_measure_number <G.268>
 
-   Therefore, :term:`alternately <G.194>`, the unit :g:`D <g1:D>` measures the number :g:`B <g1:B>` the same number of times that :g:`C <g1:C>` measures :g:`A <g1:A>`.
+   :term:`alternately <G.194>`, the unit :g:`D <g1:D>` measures the number :g:`B <g1:B>` the same number of times that :g:`C <g1:C>` measures :g:`A <g1:A>`
 
 .. step:: conclude
 
-   Therefore :g:`C <g1:C>` measures :g:`A <g1:A>`.
+   :g:`C <g1:C>` measures :g:`A <g1:A>`
 
 Dependency Graph
 ----------------
@@ -69,6 +69,8 @@ Dependency Graph
      rankdir="TB";
      "G.169" [label="G.169", tooltip="G.169 (V.def.1): A magnitude is apart of a magnitude, the less of the greater, when it measures the greater.", fillcolor="#224422", URL="../G.169/index.html", target="_top"];
      "G.170" [label="G.170", tooltip="G.170 (V.def.2): The greater is amultiple of the less when it ismeasured by the less.", fillcolor="#224422", URL="../G.170/index.html", target="_top"];
+     "G.176" [label="G.176", tooltip="G.176 (V.def.5): Magnitudes are said tobe in the same ratio, the first to the second and the third to the fourth, when, if anyequimultiples whatever be taken of the first and third, and any equimul...", fillcolor="#224422", URL="../G.176/index.html", target="_top"];
+     "G.180" [label="G.180", tooltip="G.180 (V.def.6): Let magnitudes which have thesame ratio be calledproportional.", fillcolor="#224422", URL="../G.180/index.html", target="_top"];
      "G.181" [label="G.181", tooltip="G.181 (V.def.11): The termcorresponding magnitudes is used of antecedents in relation to antecedents, and of consequents in relation to consequents.", fillcolor="#224422", URL="../G.181/index.html", target="_top"];
      "G.194" [label="G.194", tooltip="G.194 (V.def.12): Alternate ratio means taking theantecedent in relation to the antecedent and the consequent in relation to the consequent.", fillcolor="#224422", URL="../G.194/index.html", target="_top"];
      "G.247" [label="G.247", tooltip="G.247 (VII.def.1): Anunit is that by virtue of which each of the things that exist is called one.", fillcolor="#224422", URL="../G.247/index.html", target="_top"];
@@ -88,12 +90,18 @@ Dependency Graph
      "G.256" -> "G.169";
      "G.268" -> "G.169";
      "G.294" -> "G.169";
+     "G.176" -> "G.170";
      "G.257" -> "G.170";
+     "G.180" -> "G.176";
+     "G.263" -> "G.180";
      "G.194" -> "G.181";
      "G.265" -> "G.181";
+     "G.268" -> "G.181";
      "G.268" -> "G.194";
+     "G.294" -> "G.194";
      "G.248" -> "G.247";
      "G.268" -> "G.247";
+     "G.294" -> "G.247";
      "G.253" -> "G.248";
      "G.256" -> "G.248";
      "G.257" -> "G.248";
@@ -101,10 +109,16 @@ Dependency Graph
      "G.265" -> "G.248";
      "G.268" -> "G.248";
      "G.294" -> "G.248";
+     "G.254" -> "G.253";
+     "G.256" -> "G.253";
      "G.257" -> "G.253";
+     "G.258" -> "G.253";
      "G.263" -> "G.253";
+     "G.265" -> "G.253";
+     "G.294" -> "G.253";
      "G.258" -> "G.254";
      "G.263" -> "G.254";
+     "G.265" -> "G.254";
      "G.257" -> "G.256";
      "G.263" -> "G.256";
      "G.258" -> "G.257";

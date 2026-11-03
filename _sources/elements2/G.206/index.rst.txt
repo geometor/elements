@@ -10,7 +10,7 @@
 :categories: theorem, proof, proportions, magnitudes
 :category: theorem, proof, proportions, magnitudes
 :tags: book-v, point, in-the-same-ratio, perturbed-proportion, multiple, alternando, ex-aequali, ratio, proportion, equality
-:dependencies: G.174, G.176, G.189, G.193, G.195, G.203, G.204
+:dependencies: G.170, G.174, G.176, G.189, G.193, G.194, G.195, G.203, G.204
 :excerpt: If there be three magnitudes, and others equal to them in multitude, which taken two and two together are in the same ratio, and the proportion of them be perturbed, they is in the same ratio ex aequali.
 
 .. _G.206:
@@ -40,7 +40,7 @@ G.206 there magnitudes others
 
 .. step:: assert
 
-   And let the proportion of them be perturbed, so that,
+   let the proportion of them be perturbed, so that,
 
 .. step:: assert
 
@@ -48,11 +48,11 @@ G.206 there magnitudes others
 
 .. step:: assert
 
-   And, as :g:`B <g1:B>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to :g:`E <g1:E>`;
+   as :g:`B <g1:B>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to :g:`E <g1:E>`
 
 .. step:: assert
 
-   I say that, as :g:`A <g1:A>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to :g:`F <g1:F>`.
+   I say that, as :g:`A <g1:A>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to :g:`F <g1:F>`
 
 .. step:: construct
 
@@ -60,11 +60,11 @@ G.206 there magnitudes others
 
 .. step:: assert ∵ parts_ratio_multiples <G.193>
 
-   Since :g:`G <g1:G>`, :g:`H <g1:H>` are equimultiples of :g:`A <g1:A>`, :g:`B <g1:B>`, and parts have the same ratio as the same multiples of them.
+   :g:`G <g1:G>`, :g:`H <g1:H>` are equimultiples of :g:`A <g1:A>`, :g:`B <g1:B>`, and parts have the same ratio as the same multiples of them
 
 .. step:: assert
 
-   Therefore, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`G <g1:G>` to :g:`H <g1:H>`.
+   as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`G <g1:G>` to :g:`H <g1:H>`
 
 .. step:: assert
 
@@ -72,15 +72,15 @@ G.206 there magnitudes others
 
 .. step:: assert
 
-   As :g:`E <g1:E>` is to :g:`F <g1:F>`, so is :g:`M <g1:M>` to :g:`N <g1:N>`.
+   As :g:`E <g1:E>` is to :g:`F <g1:F>`, so is :g:`M <g1:M>` to :g:`N <g1:N>`
 
 .. step:: assert
 
-   And, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`E <g1:E>` to :g:`F <g1:F>`
+   as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`E <g1:E>` to :g:`F <g1:F>`
 
 .. step:: assert ∵ ratios_ratio <G.189>
 
-   Therefore also, as :g:`G <g1:G>` is to :g:`H <g1:H>`, so is :g:`M <g1:M>` to :g:`N <g1:N>`.
+   also, as :g:`G <g1:G>` is to :g:`H <g1:H>`, so is :g:`M <g1:M>` to :g:`N <g1:N>`
 
 .. step:: assert
 
@@ -88,15 +88,15 @@ G.206 there magnitudes others
 
 .. step:: assert ∵ magnitudes_proportional_proportional <G.195>
 
-   :term:`Alternately <G.194>`, also, as :g:`B <g1:B>` is to :g:`D <g1:D>`, so is :g:`C <g1:C>` to :g:`E <g1:E>`.
+   :term:`Alternately <G.194>`, also, as :g:`B <g1:B>` is to :g:`D <g1:D>`, so is :g:`C <g1:C>` to :g:`E <g1:E>`
 
 .. step:: assert
 
-   And, since :g:`H <g1:H>`, :g:`K <g1:K>` are equimultiples of :g:`B <g1:B>`, :g:`D <g1:D>`, and parts have the same ratio as their equimultiples,
+   since :g:`H <g1:H>`, :g:`K <g1:K>` are equimultiples of :g:`B <g1:B>`, :g:`D <g1:D>`, and parts have the same ratio as their equimultiples,
 
 .. step:: assert ∵ parts_ratio_multiples <G.193>
 
-   Therefore, as :g:`B <g1:B>` is to :g:`D <g1:D>`, so is :g:`H <g1:H>` to :g:`K <g1:K>`.
+   as :g:`B <g1:B>` is to :g:`D <g1:D>`, so is :g:`H <g1:H>` to :g:`K <g1:K>`
 
 .. step:: assert
 
@@ -104,11 +104,11 @@ G.206 there magnitudes others
 
 .. step:: assert ∵ ratios_ratio <G.189>
 
-   Therefore also, as :g:`H <g1:H>` is to :g:`K <g1:K>`, so is :g:`C <g1:C>` to :g:`E <g1:E>`.
+   also, as :g:`H <g1:H>` is to :g:`K <g1:K>`, so is :g:`C <g1:C>` to :g:`E <g1:E>`
 
 .. step:: assert ∵ parts_ratio_multiples <G.193>
 
-   Since :g:`L <g1:L>`, :g:`M <g1:M>` are equimultiples of :g:`C <g1:C>`, :g:`E <g1:E>` → therefore, as :g:`C <g1:C>` is to :g:`E <g1:E>`, so is :g:`L <g1:L>` to :g:`M <g1:M>`.
+   :g:`L <g1:L>`, :g:`M <g1:M>` are equimultiples of :g:`C <g1:C>`, :g:`E <g1:E>` → therefore, as :g:`C <g1:C>` is to :g:`E <g1:E>`, so is :g:`L <g1:L>` to :g:`M <g1:M>`
 
 .. step:: assert
 
@@ -116,7 +116,7 @@ G.206 there magnitudes others
 
 .. step:: assert ∵ ratios_ratio, magnitudes_proportional_proportional <G.189, G.195>
 
-   Therefore also, as :g:`H <g1:H>` is to :g:`K <g1:K>`, so is :g:`L <g1:L>` to :g:`M <g1:M>`, and, alternately, as :g:`H <g1:H>` is to :g:`L <g1:L>`, so is :g:`K <g1:K>` to :g:`M <g1:M>`.
+   also, as :g:`H <g1:H>` is to :g:`K <g1:K>`, so is :g:`L <g1:L>` to :g:`M <g1:M>`, and, alternately, as :g:`H <g1:H>` is to :g:`L <g1:L>`, so is :g:`K <g1:K>` to :g:`M <g1:M>`
 
 .. step:: assert
 
@@ -124,7 +124,7 @@ G.206 there magnitudes others
 
 .. step:: assert
 
-   As :g:`G <g1:G>` is to :g:`H <g1:H>`, so is :g:`M <g1:M>` to :g:`N <g1:N>`.
+   As :g:`G <g1:G>` is to :g:`H <g1:H>`, so is :g:`M <g1:M>` to :g:`N <g1:N>`
 
 .. step:: assert
 
@@ -132,15 +132,15 @@ G.206 there magnitudes others
 
 .. step:: assert ∵ there_magnitudes_others_v_21 <G.204>
 
-   Therefore, *ex aequali*, if :g:`G <g1:G>` is in excess of :g:`L <g1:L>`, :g:`K <g1:K>` is also in excess of :g:`N <g1:N>`; if :eq:`equal <g1:G = g1:L>`, :eq:`equal <g1:K = g1:N>`; and if less, less.
+   *ex aequali*, if :g:`G <g1:G>` is in excess of :g:`L <g1:L>`, :g:`K <g1:K>` is also in excess of :g:`N <g1:N>`; if :eq:`= <g1:G = g1:L>`, :eq:`= <g1:K = g1:N>`; and if less, less
 
 .. step:: assert
 
-   :g:`G <g1:G>`, :g:`K <g1:K>` are equimultiples of :g:`A <g1:A>`, :g:`D <g1:D>`, and :g:`L <g1:L>`, :g:`N <g1:N>` of :g:`C <g1:C>`, :g:`F <g1:F>`.
+   :g:`G <g1:G>`, :g:`K <g1:K>` are equimultiples of :g:`A <g1:A>`, :g:`D <g1:D>`, and :g:`L <g1:L>`, :g:`N <g1:N>` of :g:`C <g1:C>`, :g:`F <g1:F>`
 
 .. step:: conclude
 
-   Therefore, as :g:`A <g1:A>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to :g:`F <g1:F>`.
+   as :g:`A <g1:A>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to :g:`F <g1:F>`
 
 Dependency Graph
 ----------------
@@ -191,8 +191,15 @@ Dependency Graph
      "G.170" -> "G.169";
      "G.171" -> "G.170";
      "G.176" -> "G.170";
+     "G.183" -> "G.170";
      "G.185" -> "G.170";
+     "G.186" -> "G.170";
+     "G.189" -> "G.170";
+     "G.190" -> "G.170";
+     "G.191" -> "G.170";
      "G.193" -> "G.170";
+     "G.195" -> "G.170";
+     "G.206" -> "G.170";
      "G.186" -> "G.171";
      "G.190" -> "G.171";
      "G.174" -> "G.173";
@@ -202,6 +209,7 @@ Dependency Graph
      "G.206" -> "G.174";
      "G.180" -> "G.176";
      "G.183" -> "G.176";
+     "G.188" -> "G.176";
      "G.189" -> "G.176";
      "G.190" -> "G.176";
      "G.191" -> "G.176";
@@ -215,9 +223,11 @@ Dependency Graph
      "G.195" -> "G.180";
      "G.182" -> "G.181";
      "G.190" -> "G.181";
+     "G.193" -> "G.181";
      "G.194" -> "G.181";
      "G.203" -> "G.181";
      "G.183" -> "G.182";
+     "G.204" -> "G.182";
      "G.188" -> "G.183";
      "G.193" -> "G.183";
      "G.186" -> "G.184";
@@ -225,6 +235,8 @@ Dependency Graph
      "G.186" -> "G.185";
      "G.188" -> "G.185";
      "G.191" -> "G.185";
+     "G.192" -> "G.185";
+     "G.204" -> "G.185";
      "G.188" -> "G.186";
      "G.192" -> "G.186";
      "G.204" -> "G.186";
@@ -239,6 +251,7 @@ Dependency Graph
      "G.195" -> "G.193";
      "G.206" -> "G.193";
      "G.195" -> "G.194";
+     "G.206" -> "G.194";
      "G.206" -> "G.195";
      "G.204" -> "G.203";
      "G.206" -> "G.203";

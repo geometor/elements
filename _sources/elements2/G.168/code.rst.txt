@@ -12,7 +12,7 @@ G.168 inscribe pentadecagon in circle — Code
 
 .. enunciation::
 
-   :term:`Inscribe in a given circle <G.148>` a fifteen-angled :term:`figure <G.9>` which shall be both :term:`equilateral <G.12>` and equiangular.
+   :term:`Inscribe in a given circle <G.148>` a fifteen-angled :term:`figure <G.9>` which shall be both :term:`equilateral <G.13>` and equiangular.
 
 .. picture:: g1.svg
 

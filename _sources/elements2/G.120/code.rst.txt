@@ -12,7 +12,7 @@ G.120 segment touch circle — Code
 
 .. enunciation::
 
-   If a :term:`segment <G.4>` :term:`touch a circle <G.111>`, and a segment be joined from the :term:`center <G.14>` to the :term:`point <G.1>` of contact, the segment so joined is :term:`perpendicular <G.32>` to the tangent.
+   If a :term:`segment <G.4>` :term:`touch a circle <G.111>`, and a segment be joined from the :term:`center <G.11>` to the :term:`point <G.1>` of contact, the segment so joined is :term:`perpendicular <G.33>` to the tangent.
 
 .. picture:: g1.svg
 

@@ -12,7 +12,7 @@ G.574 circles center inscribe — Code
 
 .. enunciation::
 
-   Given two :term:`circles <G.10>` about the same :term:`center <G.14>`, to inscribe in the greater circle an :term:`equilateral <G.12>` polygon with an :term:`even number <G.302>` of sides which does not touch the lesser circle.
+   Given two :term:`circles <G.10>` about the same :term:`center <G.11>`, to inscribe in the greater circle an :term:`equilateral <G.13>` polygon with an :term:`even number <G.302>` of sides which does not touch the lesser circle.
 
 .. picture:: g1.svg
 

@@ -10,7 +10,7 @@
 :categories: theorem, proof, plane-geometry, circles, polygons
 :category: theorem, proof, plane-geometry, circles, polygons
 :tags: book-iv, point, segment, circle, straight-line, diameter, line, fitted-into-circle, centre, equality
-:dependencies: G.4, G.10, G.61, G.146
+:dependencies: G.4, G.10, G.14, G.15, G.61, G.146
 :excerpt: Into a given circle to fit a segment equal to a given segment which is not greater than the diameter of the circle.
 
 .. _G.147:
@@ -29,7 +29,7 @@ G.147 fit chord in circle
 
    | :fn:`fit_chord_in_circle <G.147>`\ (:g:`( A B C ) <g1:( A B C )>`, :g:`D <g1:D>`)
    | **given** :g:`( A B C ) <g1:( A B C )>`, :g:`D <g1:D>` not greater than the diameter of the circle
-   | **prove** fit into :g:`( A B C ) <g1:( A B C )>` a segment :eq:`equal <g1:/ C A / = g1:D>` to :g:`D <g1:D>`
+   | **prove** fit into :g:`( A B C ) <g1:( A B C )>` a segment :eq:`= <g1:/ C A / = g1:D>` to :g:`D <g1:D>`
 
 .. picture:: g1.svg
    :alt: Diagram for Proposition 1
@@ -44,11 +44,11 @@ G.147 fit chord in circle
 
 .. step:: assert
 
-   If :g:`/ B C / <g1:/ B C />` is :eq:`equal <g1:/ B C / = g1:D>` to :g:`D <g1:D>`, that which was enjoined will have been done
+   If :g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ B C / = g1:D>` :g:`D <g1:D>`, that which was enjoined will have been done
 
 .. step:: assert
 
-   For :g:`/ B C / <g1:/ B C />` has been fitted into :g:`( A B C ) <g1:( A B C )>` :eq:`equal <g1:/ B C / = g1:D>` to :g:`D <g1:D>`.
+   For :g:`/ B C / <g1:/ B C />` has been fitted into :g:`( A B C ) <g1:( A B C )>` :eq:`= <g1:/ B C / = g1:D>` to :g:`D <g1:D>`
 
 .. step:: construct
 
@@ -60,23 +60,23 @@ G.147 fit chord in circle
 
 .. step:: construct
 
-   :fn:`segment <G.13>`\ (:g:`C <g1:C>`, :g:`A <g1:A>`) → :g:`/ C A / <g1:/ C A />`
+   :fn:`segment <G.14>`\ (:g:`C <g1:C>`, :g:`A <g1:A>`) → :g:`/ C A / <g1:/ C A />`
 
 .. step:: assert ∵ circle_radii <G.10>
 
-   Since :g:`C <g1:C>` is the :term:`center <G.14>` of :g:`( C E ) <g1:( E A F )>` → :g:`/ C A / <g1:/ C A />` is :eq:`equal <g1:/ C A / = g1:/ C E />` to :g:`/ C E / <g1:/ C E />`.
+   :g:`( C E ) <g1:( E A F )>` → :g:`/ C A / <g1:/ C A />` :eq:`= <g1:/ C A / = g1:/ C E />` :g:`/ C E / <g1:/ C E />`
 
 .. step:: assert
 
-   :g:`/ C E / <g1:/ C E />` is :eq:`equal <g1:/ C E / = g1:D>` to :g:`D <g1:D>`
+   :g:`/ C E / <g1:/ C E />` :eq:`= <g1:/ C E / = g1:D>` :g:`D <g1:D>`
 
 .. step:: assert
 
-   Therefore :g:`D <g1:D>` is also :eq:`equal <g1:D = g1:/ C A />` to :g:`/ C A / <g1:/ C A />`.
+   :g:`D <g1:D>` :eq:`= <g1:D = g1:/ C A />` :g:`/ C A / <g1:/ C A />`
 
 .. step:: conclude
 
-   Therefore into the given circle :g:`( A B C ) <g1:( A B C )>` there has been fitted :g:`/ C A / <g1:/ C A />` :eq:`equal <g1:/ C A / = g1:D>` to :g:`D <g1:D>`.
+   into the given circle :g:`( A B C ) <g1:( A B C )>` there has been fitted :g:`/ C A / <g1:/ C A />` :eq:`= <g1:/ C A / = g1:D>` to :g:`D <g1:D>`
 
 Dependency Graph
 ----------------
@@ -98,7 +98,9 @@ Dependency Graph
      "G.8" [label="G.8", tooltip="G.8 (I.def.13): A boundary is the extremity of anything.", fillcolor="#224422", URL="../G.8/index.html", target="_top"];
      "G.9" [label="G.9", tooltip="G.9 (I.def.14): A figure is that which is contained by any boundary or boundaries.", fillcolor="#224422", URL="../G.9/index.html", target="_top"];
      "G.10" [label="G.10", tooltip="G.10 (I.def.15): A circle ( A B ) is a plane figure contained by one arc defined by a center A and a point B establishing its defining radius / A B /, such that all segments / A B /, / A C /, / A D...", fillcolor="#224422", URL="../G.10/index.html", target="_top"];
-     "G.14" [label="G.14", tooltip="G.14 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.", fillcolor="#224422", URL="../G.14/index.html", target="_top"];
+     "G.11" [label="G.11", tooltip="G.11 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
+     "G.14" [label="G.14", tooltip="G.14 (I.post.1): Construct a segment / A B / between any two points A, B.", fillcolor="#444422", URL="../G.14/index.html", target="_top"];
+     "G.15" [label="G.15", tooltip="G.15 (I.post.3): Construct a circle ( A B ) with center A and defining radius point B.", fillcolor="#444422", URL="../G.15/index.html", target="_top"];
      "G.61" [label="G.61", tooltip="G.61 (I.def.17): A diameter of a circle is any segment drawn through the center and terminated in both directions by the arc of the circle; it bisects the circle.", fillcolor="#224422", URL="../G.61/index.html", target="_top"];
      "G.146" [label="G.146", tooltip="G.146 (IV.def.7): Asegment is said to befitted into a circle when itsextremities are on the arc of thecircle.", fillcolor="#224422", URL="../G.146/index.html", target="_top"];
      "G.147" [label="G.147", tooltip="G.147 (IV.1): Into a given circle to fit a segment equal to a given segment which is not greater than the diameter of the circle.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
@@ -106,29 +108,40 @@ Dependency Graph
      "G.3" -> "G.1";
      "G.4" -> "G.1";
      "G.10" -> "G.1";
+     "G.11" -> "G.1";
      "G.14" -> "G.1";
+     "G.15" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
      "G.6" -> "G.2";
+     "G.7" -> "G.2";
      "G.4" -> "G.3";
+     "G.6" -> "G.3";
      "G.8" -> "G.3";
      "G.146" -> "G.3";
      "G.7" -> "G.4";
      "G.10" -> "G.4";
+     "G.11" -> "G.4";
+     "G.14" -> "G.4";
      "G.61" -> "G.4";
      "G.146" -> "G.4";
      "G.147" -> "G.4";
      "G.6" -> "G.5";
      "G.7" -> "G.5";
      "G.10" -> "G.6";
+     "G.146" -> "G.6";
      "G.10" -> "G.7";
      "G.9" -> "G.8";
      "G.10" -> "G.9";
-     "G.14" -> "G.10";
+     "G.11" -> "G.10";
+     "G.15" -> "G.10";
      "G.61" -> "G.10";
      "G.146" -> "G.10";
      "G.147" -> "G.10";
-     "G.61" -> "G.14";
+     "G.15" -> "G.11";
+     "G.61" -> "G.11";
+     "G.147" -> "G.14";
+     "G.147" -> "G.15";
      "G.147" -> "G.61";
      "G.147" -> "G.146";
    }

@@ -10,7 +10,7 @@
 :categories: theorem, proof, proportions, magnitudes
 :category: theorem, proof, proportions, magnitudes
 :tags: book-v, segment, alternando, proportional, componendo, separando, convertendo, porism
-:dependencies: G.189, G.195, G.198, G.200
+:dependencies: G.180, G.189, G.194, G.195, G.196, G.197, G.198, G.200
 :excerpt: If, as a whole is to a whole, so is a part subtracted to a part subtracted, the remainder is to the remainder as whole to whole.
 
 .. _G.201:
@@ -28,14 +28,14 @@ G.201 whole whole part
 .. signature:: theorem
 
    | :fn:`whole_whole_part <G.201>`\ ()
-   | **prove** the remainder :g:`/ E B / <g1:/ E B />` will also be to the remainder :g:`/ F D / <g1:/ F D />` as the whole :g:`/ A B / <g1:/ A B />` to the whole :g:`/ C D / <g1:/ C D />`
+   | **prove** :g:`/ E B / <g1:/ E B />` will also be to :g:`/ F D / <g1:/ F D />` as :g:`/ A B / <g1:/ A B />` to :g:`/ C D / <g1:/ C D />`
 
 .. picture:: g1.svg
    :alt: Proposition 19
 
 .. step:: assert
 
-   As the whole :g:`/ A B / <g1:/ A B />` is to the whole :g:`/ C D / <g1:/ C D />`, so let the part :g:`/ A E / <g1:/ A E />` subtracted be to the part :g:`/ C F / <g1:/ C F />` subtracted
+   As :g:`/ A B / <g1:/ A B />` is to :g:`/ C D / <g1:/ C D />`, so let the part :g:`/ A E / <g1:/ A E />` subtracted be to the part :g:`/ C F / <g1:/ C F />` subtracted
 
 .. step:: assert
 
@@ -43,11 +43,11 @@ G.201 whole whole part
 
 .. step:: assert ∵ magnitudes_proportional_proportional <G.195>
 
-   :term:`Alternately <G.194>` also, as :g:`/ A B / <g1:/ A B />` is to :g:`/ A E / <g1:/ A E />`, so is :g:`/ C D / <g1:/ C D />` to :g:`/ C F / <g1:/ C F />`.
+   :term:`Alternately <G.194>` also, as :g:`/ A B / <g1:/ A B />` is to :g:`/ A E / <g1:/ A E />`, so is :g:`/ C D / <g1:/ C D />` to :g:`/ C F / <g1:/ C F />`
 
 .. step:: assert ∵ magnitudes_proportional_componendo <G.198>
 
-   And, since the magnitudes are :term:`proportional <G.180>` *:term:`componendo <G.196>`*, they will also be proportional *:term:`separando <G.197>`*.
+   since the magnitudes are :term:`proportional <G.180>` *:term:`componendo <G.196>`*, they will also be proportional *:term:`separando <G.197>`*
 
 .. step:: assert
 
@@ -55,15 +55,15 @@ G.201 whole whole part
 
 .. step:: assert ∵ magnitudes_proportional_proportional <G.195>
 
-   As :g:`/ E B / <g1:/ E B />` is to :g:`/ F D / <g1:/ F D />`, so is :g:`/ A E / <g1:/ A E />` to :g:`/ C F / <g1:/ C F />`.
+   As :g:`/ E B / <g1:/ E B />` is to :g:`/ F D / <g1:/ F D />`, so is :g:`/ A E / <g1:/ A E />` to :g:`/ C F / <g1:/ C F />`
 
 .. step:: assert
 
-   But, as :g:`/ A E / <g1:/ A E />` is to :g:`/ C F / <g1:/ C F />`, so by hypothesis is the whole :g:`/ A B / <g1:/ A B />` to the whole :g:`/ C D / <g1:/ C D />`.
+   But, as :g:`/ A E / <g1:/ A E />` is to :g:`/ C F / <g1:/ C F />`, so by hypothesis is :g:`/ A B / <g1:/ A B />` to :g:`/ C D / <g1:/ C D />`
 
 .. step:: conclude ∵ ratios_ratio <G.189>
 
-   Therefore also the remainder :g:`/ E B / <g1:/ E B />` will be to the remainder :g:`/ F D / <g1:/ F D />` as the whole :g:`/ A B / <g1:/ A B />` is to the whole :g:`/ C D / <g1:/ C D />`.
+   also :g:`/ E B / <g1:/ E B />` will be to :g:`/ F D / <g1:/ F D />` as :g:`/ A B / <g1:/ A B />` is to :g:`/ C D / <g1:/ C D />`
 
 .. porism::
 
@@ -122,8 +122,15 @@ Dependency Graph
      "G.171" -> "G.170";
      "G.172" -> "G.170";
      "G.176" -> "G.170";
+     "G.183" -> "G.170";
      "G.185" -> "G.170";
+     "G.186" -> "G.170";
+     "G.189" -> "G.170";
+     "G.190" -> "G.170";
+     "G.191" -> "G.170";
      "G.193" -> "G.170";
+     "G.195" -> "G.170";
+     "G.198" -> "G.170";
      "G.186" -> "G.171";
      "G.190" -> "G.171";
      "G.198" -> "G.171";
@@ -132,6 +139,7 @@ Dependency Graph
      "G.189" -> "G.173";
      "G.180" -> "G.176";
      "G.183" -> "G.176";
+     "G.188" -> "G.176";
      "G.189" -> "G.176";
      "G.190" -> "G.176";
      "G.191" -> "G.176";
@@ -142,8 +150,10 @@ Dependency Graph
      "G.190" -> "G.180";
      "G.195" -> "G.180";
      "G.198" -> "G.180";
+     "G.201" -> "G.180";
      "G.182" -> "G.181";
      "G.190" -> "G.181";
+     "G.193" -> "G.181";
      "G.194" -> "G.181";
      "G.196" -> "G.181";
      "G.197" -> "G.181";
@@ -156,6 +166,7 @@ Dependency Graph
      "G.186" -> "G.185";
      "G.188" -> "G.185";
      "G.191" -> "G.185";
+     "G.192" -> "G.185";
      "G.188" -> "G.186";
      "G.192" -> "G.186";
      "G.192" -> "G.188";
@@ -166,9 +177,12 @@ Dependency Graph
      "G.195" -> "G.192";
      "G.195" -> "G.193";
      "G.195" -> "G.194";
+     "G.201" -> "G.194";
      "G.201" -> "G.195";
      "G.198" -> "G.196";
+     "G.201" -> "G.196";
      "G.198" -> "G.197";
+     "G.201" -> "G.197";
      "G.201" -> "G.198";
      "G.201" -> "G.200";
    }

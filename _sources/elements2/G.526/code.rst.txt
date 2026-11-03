@@ -12,7 +12,7 @@ G.526 solid angle contained — Code
 
 .. enunciation::
 
-   Any :term:`solid angle <G.524>` is contained by :term:`plane angles <G.22>` less than four :term:`right angles <G.32>`.
+   Any :term:`solid angle <G.524>` is contained by :term:`plane angles <G.22>` less than four :term:`right angles <G.33>`.
 
 .. picture:: g1.svg
 

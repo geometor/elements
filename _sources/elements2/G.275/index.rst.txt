@@ -10,7 +10,7 @@
 :categories: theorem, proof, number-theory
 :category: theorem, proof, number-theory
 :tags: book-vii, point, number, prime-to-one-another, in-the-same-ratio, part-aliquot, corresponding-magnitudes, unit, ratio, prime, reductio-ad-absurdum
-:dependencies: G.176, G.248, G.249, G.270, G.274
+:dependencies: G.169, G.176, G.181, G.247, G.248, G.249, G.270, G.274
 :excerpt: Numbers prime to one another are the least of those which have the same ratio with them.
 
 .. _G.275:
@@ -40,35 +40,35 @@ G.275 numbers prime least
 
 .. step:: assert
 
-   If not, there will be some numbers less than :g:`A <g1:A>`, :g:`B <g1:B>` which are in the same ratio with :g:`A <g1:A>`, :g:`B <g1:B>`.
+   If not, there will be some numbers less than :g:`A <g1:A>`, :g:`B <g1:B>` which are in the same ratio with :g:`A <g1:A>`, :g:`B <g1:B>`
 
 .. step:: assert
 
-   Let them be :g:`C <g1:C>`, :g:`D <g1:D>`.
+   Let them be :g:`C <g1:C>`, :g:`D <g1:D>`
 
 .. step:: assert ∵ least_numbers_ratio <G.274>
 
-   Since, then, the least numbers of those which have the same ratio :term:`measure <G.169>` those which have the same ratio the same number of times, the greater the greater and the less the less, that is, the :term:`antecedent <G.181>` the antecedent and the consequent the consequent.
+   Since, then, the least numbers of those which have the same ratio :term:`measure <G.169>` those which have the same ratio the same number of times, the greater the greater and the less the less, that is, the :term:`antecedent <G.181>` the antecedent and the consequent the consequent
 
 .. step:: assert
 
-   Therefore :g:`C <g1:C>` measures :g:`A <g1:A>` the same number of times that :g:`D <g1:D>` measures :g:`B <g1:B>`.
+   :g:`C <g1:C>` measures :g:`A <g1:A>` the same number of times that :g:`D <g1:D>` measures :g:`B <g1:B>`
 
 .. step:: assert
 
-   As many times as :g:`C <g1:C>` measures :g:`A <g1:A>`, so many :term:`units <G.247>` let there be in :g:`E <g1:E>`.
+   As many times as :g:`C <g1:C>` measures :g:`A <g1:A>`, so many :term:`units <G.247>` let there be in :g:`E <g1:E>`
 
 .. step:: assert
 
-   Therefore :g:`D <g1:D>` also measures :g:`B <g1:B>` according to the units in :g:`E <g1:E>`.
+   :g:`D <g1:D>` also measures :g:`B <g1:B>` according to the units in :g:`E <g1:E>`
 
 .. step:: assert
 
-   And, since :g:`C <g1:C>` measures :g:`A <g1:A>` according to the units in :g:`E <g1:E>`,
+   since :g:`C <g1:C>` measures :g:`A <g1:A>` according to the units in :g:`E <g1:E>`,
 
 .. step:: assert ∵ numbers_multiplying_make <G.270>
 
-   Therefore :g:`E <g1:E>` also measures :g:`A <g1:A>` according to the units in :g:`C <g1:C>`.
+   :g:`E <g1:E>` also measures :g:`A <g1:A>` according to the units in :g:`C <g1:C>`
 
 .. step:: assert
 
@@ -76,19 +76,19 @@ G.275 numbers prime least
 
 .. step:: assert ∵ numbers_multiplying_make <G.270>
 
-   :g:`E <g1:E>` also measures :g:`B <g1:B>` according to the units in :g:`D <g1:D>`.
+   :g:`E <g1:E>` also measures :g:`B <g1:B>` according to the units in :g:`D <g1:D>`
 
 .. step:: assert ∵ numbers_prime_measured_def <G.249>
 
-   Therefore :g:`E <g1:E>` measures :g:`A <g1:A>`, :g:`B <g1:B>` which are prime to one another : which is impossible.
+   :g:`E <g1:E>` measures :g:`A <g1:A>`, :g:`B <g1:B>` which are prime to one another ⇒⇐
 
 .. step:: assert
 
-   Therefore there will be no numbers less than :g:`A <g1:A>`, :g:`B <g1:B>` which are in the same ratio with :g:`A <g1:A>`, :g:`B <g1:B>`.
+   there will be no numbers less than :g:`A <g1:A>`, :g:`B <g1:B>` which are in the same ratio with :g:`A <g1:A>`, :g:`B <g1:B>`
 
 .. step:: conclude
 
-   Therefore :g:`A <g1:A>`, :g:`B <g1:B>` are the least of those which have the same ratio with them.
+   :g:`A <g1:A>`, :g:`B <g1:B>` are the least of those which have the same ratio with them
 
 Dependency Graph
 ----------------
@@ -133,26 +133,38 @@ Dependency Graph
      "G.251" -> "G.169";
      "G.253" -> "G.169";
      "G.254" -> "G.169";
+     "G.255" -> "G.169";
      "G.256" -> "G.169";
      "G.268" -> "G.169";
+     "G.270" -> "G.169";
      "G.274" -> "G.169";
+     "G.275" -> "G.169";
      "G.176" -> "G.170";
      "G.257" -> "G.170";
      "G.180" -> "G.176";
      "G.274" -> "G.176";
      "G.275" -> "G.176";
+     "G.263" -> "G.180";
      "G.266" -> "G.180";
      "G.194" -> "G.181";
      "G.265" -> "G.181";
+     "G.268" -> "G.181";
+     "G.274" -> "G.181";
+     "G.275" -> "G.181";
      "G.261" -> "G.194";
      "G.262" -> "G.194";
      "G.266" -> "G.194";
      "G.268" -> "G.194";
+     "G.270" -> "G.194";
      "G.248" -> "G.247";
      "G.249" -> "G.247";
      "G.250" -> "G.247";
+     "G.251" -> "G.247";
+     "G.255" -> "G.247";
      "G.268" -> "G.247";
      "G.269" -> "G.247";
+     "G.270" -> "G.247";
+     "G.275" -> "G.247";
      "G.250" -> "G.248";
      "G.251" -> "G.248";
      "G.253" -> "G.248";
@@ -171,19 +183,28 @@ Dependency Graph
      "G.275" -> "G.248";
      "G.250" -> "G.249";
      "G.251" -> "G.249";
+     "G.255" -> "G.249";
      "G.275" -> "G.249";
      "G.251" -> "G.250";
      "G.255" -> "G.251";
+     "G.254" -> "G.253";
      "G.255" -> "G.253";
+     "G.256" -> "G.253";
      "G.257" -> "G.253";
+     "G.258" -> "G.253";
      "G.261" -> "G.253";
      "G.262" -> "G.253";
      "G.263" -> "G.253";
+     "G.265" -> "G.253";
+     "G.266" -> "G.253";
      "G.255" -> "G.254";
      "G.258" -> "G.254";
      "G.261" -> "G.254";
      "G.262" -> "G.254";
      "G.263" -> "G.254";
+     "G.265" -> "G.254";
+     "G.266" -> "G.254";
+     "G.274" -> "G.254";
      "G.274" -> "G.255";
      "G.257" -> "G.256";
      "G.263" -> "G.256";

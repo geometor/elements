@@ -10,7 +10,7 @@
 :categories: theorem, proof, proportions, magnitudes
 :category: theorem, proof, proportions, magnitudes
 :tags: book-v, point, segment, multiple, equality
-:dependencies: G.170, G.172
+:dependencies: G.21, G.170, G.172
 :excerpt: If two magnitudes be equimultiples of two magnitudes, and any magnitudes subtracted from them be equimultiples of the same, the remainders also are either equal to the same or equimultiples of them.
 
 .. _G.179:
@@ -28,7 +28,7 @@ G.179 magnitudes equimultiples magnitudes
 .. signature:: theorem
 
    | :fn:`magnitudes_equimultiples_magnitudes <G.179>`\ ()
-   | **prove** the remainders also, :g:`/ G B / <g1:/ G B />`, :g:`/ H D / <g1:/ H D />`, are either :eq:`equal <g1:/ G B / = g1:E; g1:/ H D / = g1:F>` to :g:`E <g1:E>`, :g:`F <g1:F>` or equimultiples of them; :g:`/ H D / <g1:/ H D />` is also :eq:`equal <g1:/ H D / = g1:F>` to :g:`F <g1:F>`
+   | **prove** the remainders also, :g:`/ G B / <g1:/ G B />`, :g:`/ H D / <g1:/ H D />`, are either :eq:`= <g1:/ G B / = g1:E; g1:/ H D / = g1:F>` to :g:`E <g1:E>`, :g:`F <g1:F>` or equimultiples of them; :g:`/ H D / <g1:/ H D />` :eq:`= <g1:/ H D / = g1:F>` :g:`F <g1:F>`
 
 .. picture:: g1.svg
    :alt: Proposition 6 Diagram
@@ -39,7 +39,7 @@ G.179 magnitudes equimultiples magnitudes
 
 .. step:: assert
 
-   First, let :g:`/ G B / <g1:/ G B />` be :eq:`equal <g1:/ G B / = g1:E>` to :g:`E <g1:E>`
+   First, let :g:`/ G B / <g1:/ G B />` :eq:`= <g1:/ G B / = g1:E>` :g:`E <g1:E>`
 
 .. step:: construct
 
@@ -47,11 +47,11 @@ G.179 magnitudes equimultiples magnitudes
 
 .. step:: assert
 
-   Since :g:`/ A G / <g1:/ A G />` is the same multiple of :g:`E <g1:E>` that :g:`/ C H / <g1:/ C H />` is of :g:`F <g1:F>` → while :g:`/ G B / <g1:/ G B />` is :eq:`equal <g1:/ G B / = g1:E; g1:/ C K / = g1:F>` to :g:`E <g1:E>` and :g:`/ C K / <g1:/ C K />` to :g:`F <g1:F>`,
+   :g:`/ A G / <g1:/ A G />` is the same multiple of :g:`E <g1:E>` that :g:`/ C H / <g1:/ C H />` is of :g:`F <g1:F>` → while :g:`/ G B / <g1:/ G B />` :eq:`= <g1:/ G B / = g1:E; g1:/ C K / = g1:F>` :g:`E <g1:E>` and :g:`/ C K / <g1:/ C K />` to :g:`F <g1:F>`,
 
 .. step:: assert ∵ magnitude_multiple_fifth <G.172>
 
-   Therefore :g:`/ A B / <g1:/ A B />` is the same multiple of :g:`E <g1:E>` that :g:`/ K H / <g1:/ K H />` is of :g:`F <g1:F>`.
+   :g:`/ A B / <g1:/ A B />` is the same multiple of :g:`E <g1:E>` that :g:`/ K H / <g1:/ K H />` is of :g:`F <g1:F>`
 
 .. step:: assert
 
@@ -59,11 +59,11 @@ G.179 magnitudes equimultiples magnitudes
 
 .. step:: assert
 
-   Therefore :g:`/ K H / <g1:/ K H />` is the same multiple of :g:`F <g1:F>` that :g:`/ C D / <g1:/ C D />` is of :g:`F <g1:F>`.
+   :g:`/ K H / <g1:/ K H />` is the same multiple of :g:`F <g1:F>` that :g:`/ C D / <g1:/ C D />` is of :g:`F <g1:F>`
 
 .. step:: assert
 
-   Since then each of the magnitudes :g:`/ K H / <g1:/ K H />`, :g:`/ C D / <g1:/ C D />` is the same multiple of :g:`F <g1:F>` → therefore :g:`/ K H / <g1:/ K H />` is :eq:`equal <g1:/ K H / = g1:/ C D />` to :g:`/ C D / <g1:/ C D />`.
+   then each of the magnitudes :g:`/ K H / <g1:/ K H />`, :g:`/ C D / <g1:/ C D />` is the same multiple of :g:`F <g1:F>` → therefore :g:`/ K H / <g1:/ K H />` :eq:`= <g1:/ K H / = g1:/ C D />` :g:`/ C D / <g1:/ C D />`
 
 .. step:: construct
 
@@ -71,23 +71,23 @@ G.179 magnitudes equimultiples magnitudes
 
 .. step:: assert
 
-   Therefore the remainder :g:`/ C K / <g1:/ C K />` is :eq:`equal <g1:/ C K / = g1:/ H D />` to the remainder :g:`/ H D / <g1:/ H D />`.
+   :g:`/ C K / <g1:/ C K />` :eq:`= <g1:/ C K / = g1:/ H D />` :g:`/ H D / <g1:/ H D />`
 
 .. step:: assert
 
-   :g:`F <g1:F>` is :eq:`equal <g1:F = g1:/ C K />` to :g:`/ C K / <g1:/ C K />`
+   :g:`F <g1:F>` :eq:`= <g1:F = g1:/ C K />` :g:`/ C K / <g1:/ C K />`
 
 .. step:: assert
 
-   Therefore :g:`/ H D / <g1:/ H D />` is also :eq:`equal <g1:/ H D / = g1:F>` to :g:`F <g1:F>`.
+   :g:`/ H D / <g1:/ H D />` :eq:`= <g1:/ H D / = g1:F>` :g:`F <g1:F>`
 
 .. step:: assert
 
-   Hence, if :g:`/ G B / <g1:/ G B />` is :eq:`equal <g1:/ G B / = g1:E>` to :g:`E <g1:E>`, :g:`/ H D / <g1:/ H D />` is also :eq:`equal <g1:/ H D / = g1:F>` to :g:`F <g1:F>`.
+   if :g:`/ G B / <g1:/ G B />` :eq:`= <g1:/ G B / = g1:E>` :g:`E <g1:E>`, :g:`/ H D / <g1:/ H D />` :eq:`= <g1:/ H D / = g1:F>` :g:`F <g1:F>`
 
 .. step:: conclude
 
-   Similarly we can prove that, even if :g:`/ G B / <g1:/ G B />` be a multiple of :g:`E <g1:E>`, :g:`/ H D / <g1:/ H D />` is also the same multiple of :g:`F <g1:F>`.
+   Similarly we can prove that, even if :g:`/ G B / <g1:/ G B />` be a multiple of :g:`E <g1:E>`, :g:`/ H D / <g1:/ H D />` is also the same multiple of :g:`F <g1:F>`
 
 Dependency Graph
 ----------------
@@ -99,10 +99,92 @@ Dependency Graph
      node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11, color="#d6d3cd", fontcolor="#ffffff"];
      edge [color="#8c857b", fontcolor="#8c857b", arrowsize=0.75];
      rankdir="TB";
+     "G.1" [label="G.1", tooltip="G.1 (I.def.1): A point A is that which has no part.", fillcolor="#224422", URL="../G.1/index.html", target="_top"];
+     "G.2" [label="G.2", tooltip="G.2 (I.def.2): A line [ A B ] is a projection of a relationship of two points A, B.", fillcolor="#224422", URL="../G.2/index.html", target="_top"];
+     "G.3" [label="G.3", tooltip="G.3 (I.def.3): The extremities of a segment / A B / are points A, B.", fillcolor="#224422", URL="../G.3/index.html", target="_top"];
+     "G.4" [label="G.4", tooltip="G.4 (I.def.4): A segment / A B / is a portion of a line [ A B ] between two points A, B on the line.", fillcolor="#224422", URL="../G.4/index.html", target="_top"];
+     "G.5" [label="G.5", tooltip="G.5 (I.def.5): A surface is that which has length and breadth only.", fillcolor="#224422", URL="../G.5/index.html", target="_top"];
+     "G.6" [label="G.6", tooltip="G.6 (I.def.6): The extremities of a surface are lines or arcs.", fillcolor="#224422", URL="../G.6/index.html", target="_top"];
+     "G.7" [label="G.7", tooltip="G.7 (I.def.7): A plane surface lies evenly with the lines on itself.", fillcolor="#224422", URL="../G.7/index.html", target="_top"];
+     "G.8" [label="G.8", tooltip="G.8 (I.def.13): A boundary is the extremity of anything.", fillcolor="#224422", URL="../G.8/index.html", target="_top"];
+     "G.9" [label="G.9", tooltip="G.9 (I.def.14): A figure is that which is contained by any boundary or boundaries.", fillcolor="#224422", URL="../G.9/index.html", target="_top"];
+     "G.10" [label="G.10", tooltip="G.10 (I.def.15): A circle ( A B ) is a plane figure contained by one arc defined by a center A and a point B establishing its defining radius / A B /, such that all segments / A B /, / A C /, / A D...", fillcolor="#224422", URL="../G.10/index.html", target="_top"];
+     "G.11" [label="G.11", tooltip="G.11 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
+     "G.12" [label="G.12", tooltip="G.12 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.12/index.html", target="_top"];
+     "G.13" [label="G.13", tooltip="G.13 (I.def.20): Of trilateral figures, an equilateral triangle < A B C > has three equal sides, an isosceles triangle < D E F > has two equal sides, and a scalene triangle < G H K > has three uneq...", fillcolor="#224422", URL="../G.13/index.html", target="_top"];
+     "G.14" [label="G.14", tooltip="G.14 (I.post.1): Construct a segment / A B / between any two points A, B.", fillcolor="#444422", URL="../G.14/index.html", target="_top"];
+     "G.15" [label="G.15", tooltip="G.15 (I.post.3): Construct a circle ( A B ) with center A and defining radius point B.", fillcolor="#444422", URL="../G.15/index.html", target="_top"];
+     "G.16" [label="G.16", tooltip="G.16 (I.cn.1): Things equal to the same thing are equal to one another.", fillcolor="#442222", URL="../G.16/index.html", target="_top"];
+     "G.17" [label="G.17", tooltip="G.17 (I.1): Construct an equilateral triangle on a given segment.", fillcolor="#222244", URL="../G.17/index.html", target="_top"];
+     "G.18" [label="G.18", tooltip="G.18 (I.post.2): Extend a segment / A B / continuously along a line [ A B ] to / B C /.", fillcolor="#444422", URL="../G.18/index.html", target="_top"];
+     "G.19" [label="G.19", tooltip="G.19 (I.cn.3): If equals are subtracted from equals, the remainders are equal.", fillcolor="#442222", URL="../G.19/index.html", target="_top"];
+     "G.20" [label="G.20", tooltip="G.20 (I.2): Construct at a given point a segment equal to a given segment.", fillcolor="#222244", URL="../G.20/index.html", target="_top"];
+     "G.21" [label="G.21", tooltip="G.21 (I.3): Cut off from the greater of two unequal segments a segment equal to the less.", fillcolor="#222244", URL="../G.21/index.html", target="_top"];
      "G.169" [label="G.169", tooltip="G.169 (V.def.1): A magnitude is apart of a magnitude, the less of the greater, when it measures the greater.", fillcolor="#224422", URL="../G.169/index.html", target="_top"];
      "G.170" [label="G.170", tooltip="G.170 (V.def.2): The greater is amultiple of the less when it ismeasured by the less.", fillcolor="#224422", URL="../G.170/index.html", target="_top"];
      "G.172" [label="G.172", tooltip="G.172 (V.2): If a first magnitude be the same multiple of a second that a third is of a fourth, and a fifth also be the same multiple of the second that a sixth is of the fourth, the sum of the...", fillcolor="#222244", URL="../G.172/index.html", target="_top"];
      "G.179" [label="G.179", tooltip="G.179 (V.6): If two magnitudes be equimultiples of two magnitudes, and any magnitudes subtracted from them be equimultiples of the same, the remainders also are either equal to the same or equi...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.2" -> "G.1";
+     "G.3" -> "G.1";
+     "G.4" -> "G.1";
+     "G.10" -> "G.1";
+     "G.11" -> "G.1";
+     "G.14" -> "G.1";
+     "G.15" -> "G.1";
+     "G.17" -> "G.1";
+     "G.20" -> "G.1";
+     "G.21" -> "G.1";
+     "G.3" -> "G.2";
+     "G.4" -> "G.2";
+     "G.6" -> "G.2";
+     "G.7" -> "G.2";
+     "G.18" -> "G.2";
+     "G.4" -> "G.3";
+     "G.6" -> "G.3";
+     "G.8" -> "G.3";
+     "G.20" -> "G.3";
+     "G.7" -> "G.4";
+     "G.10" -> "G.4";
+     "G.11" -> "G.4";
+     "G.12" -> "G.4";
+     "G.14" -> "G.4";
+     "G.17" -> "G.4";
+     "G.18" -> "G.4";
+     "G.20" -> "G.4";
+     "G.21" -> "G.4";
+     "G.6" -> "G.5";
+     "G.7" -> "G.5";
+     "G.10" -> "G.6";
+     "G.10" -> "G.7";
+     "G.9" -> "G.8";
+     "G.10" -> "G.9";
+     "G.12" -> "G.9";
+     "G.11" -> "G.10";
+     "G.15" -> "G.10";
+     "G.17" -> "G.10";
+     "G.20" -> "G.10";
+     "G.21" -> "G.10";
+     "G.15" -> "G.11";
+     "G.17" -> "G.11";
+     "G.20" -> "G.11";
+     "G.21" -> "G.11";
+     "G.13" -> "G.12";
+     "G.17" -> "G.12";
+     "G.20" -> "G.12";
+     "G.17" -> "G.13";
+     "G.17" -> "G.14";
+     "G.20" -> "G.14";
+     "G.17" -> "G.15";
+     "G.20" -> "G.15";
+     "G.21" -> "G.15";
+     "G.17" -> "G.16";
+     "G.20" -> "G.16";
+     "G.21" -> "G.16";
+     "G.20" -> "G.17";
+     "G.20" -> "G.18";
+     "G.20" -> "G.19";
+     "G.21" -> "G.20";
+     "G.179" -> "G.21";
      "G.170" -> "G.169";
      "G.172" -> "G.170";
      "G.179" -> "G.170";

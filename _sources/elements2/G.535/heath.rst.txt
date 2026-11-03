@@ -27,13 +27,19 @@ Dependency Graph
      "G.1" [label="G.1", tooltip="G.1 (I.def.1): A point A is that which has no part.", fillcolor="#224422", URL="../G.1/index.html", target="_top"];
      "G.2" [label="G.2", tooltip="G.2 (I.def.2): A line [ A B ] is a projection of a relationship of two points A, B.", fillcolor="#224422", URL="../G.2/index.html", target="_top"];
      "G.3" [label="G.3", tooltip="G.3 (I.def.3): The extremities of a segment / A B / are points A, B.", fillcolor="#224422", URL="../G.3/index.html", target="_top"];
+     "G.5" [label="G.5", tooltip="G.5 (I.def.5): A surface is that which has length and breadth only.", fillcolor="#224422", URL="../G.5/index.html", target="_top"];
+     "G.6" [label="G.6", tooltip="G.6 (I.def.6): The extremities of a surface are lines or arcs.", fillcolor="#224422", URL="../G.6/index.html", target="_top"];
      "G.529" [label="G.529", tooltip="G.529 (XI.def.1): Asolid is that which has length, breadth, and depth.", fillcolor="#224422", URL="../G.529/index.html", target="_top"];
      "G.533" [label="G.533", tooltip="G.533 (XI.def.2): Anextremity of asolid is asurface.", fillcolor="#224422", URL="../G.533/index.html", target="_top"];
      "G.535" [label="G.535", tooltip="G.535 (XI.def.10): Equal and similar solid figures are thosecontained by similar planes equal in multitude and in magnitude.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.3" -> "G.2";
+     "G.6" -> "G.2";
+     "G.6" -> "G.3";
      "G.533" -> "G.3";
+     "G.6" -> "G.5";
+     "G.533" -> "G.6";
      "G.533" -> "G.529";
      "G.535" -> "G.533";
    }

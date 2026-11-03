@@ -39,7 +39,7 @@ G.250 unequal numbers set
 
 .. step:: assert
 
-   If :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` are not prime to one another, some number will measure them.
+   If :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` are not prime to one another, some number will measure them
 
 .. step:: assert
 
@@ -47,7 +47,7 @@ G.250 unequal numbers set
 
 .. step:: assert
 
-   Let :g:`/ C D / <g1:/ C D />`, measuring :g:`/ F B / <g1:/ F B />`, leave :g:`/ A F / <g1:/ A F />` less than itself, let :g:`/ A F / <g1:/ A F />`, measuring :g:`/ G D / <g1:/ G D />`, leave :g:`/ C G / <g1:/ C G />` less than itself, and let :g:`/ C G / <g1:/ C G />`, measuring :g:`/ H F / <g1:/ H F />`, leave an unit :g:`/ A H / <g1:/ A H />`.
+   Let :g:`/ C D / <g1:/ C D />`, measuring :g:`/ F B / <g1:/ F B />`, leave :g:`/ A F / <g1:/ A F />` less than itself, let :g:`/ A F / <g1:/ A F />`, measuring :g:`/ G D / <g1:/ G D />`, leave :g:`/ C G / <g1:/ C G />` less than itself, and let :g:`/ C G / <g1:/ C G />`, measuring :g:`/ H F / <g1:/ H F />`, leave an unit :g:`/ A H / <g1:/ A H />`
 
 .. step:: assert
 
@@ -55,51 +55,51 @@ G.250 unequal numbers set
 
 .. step:: assert
 
-   Therefore :g:`E <g1:E>` also measures :g:`/ F B / <g1:/ F B />`.
+   :g:`E <g1:E>` also measures :g:`/ F B / <g1:/ F B />`
 
 .. step:: assert
 
-   It also measures the whole :g:`/ A B / <g1:/ A B />`;
+   It also measures :g:`/ A B / <g1:/ A B />`
 
 .. step:: assert
 
-   Therefore it will also measure the remainder :g:`/ A F / <g1:/ A F />`.
+   it will also measure :g:`/ A F / <g1:/ A F />`
 
 .. step:: assert
 
-   :g:`/ A F / <g1:/ A F />` measures :g:`/ G D / <g1:/ G D />`;
+   :g:`/ A F / <g1:/ A F />` measures :g:`/ G D / <g1:/ G D />`
 
 .. step:: assert
 
-   Therefore :g:`E <g1:E>` also measures :g:`/ G D / <g1:/ G D />`.
+   :g:`E <g1:E>` also measures :g:`/ G D / <g1:/ G D />`
 
 .. step:: assert
 
-   It also measures the whole :g:`/ C D / <g1:/ C D />`;
+   It also measures :g:`/ C D / <g1:/ C D />`
 
 .. step:: assert
 
-   Therefore it will also measure the remainder :g:`/ C G / <g1:/ C G />`.
+   it will also measure :g:`/ C G / <g1:/ C G />`
 
 .. step:: assert
 
-   :g:`/ C G / <g1:/ C G />` measures :g:`/ H F / <g1:/ H F />`;
+   :g:`/ C G / <g1:/ C G />` measures :g:`/ H F / <g1:/ H F />`
 
 .. step:: assert
 
-   Therefore :g:`E <g1:E>` also measures :g:`/ H F / <g1:/ H F />`.
+   :g:`E <g1:E>` also measures :g:`/ H F / <g1:/ H F />`
 
 .. step:: assert
 
-   It also measures the whole :g:`/ A F / <g1:/ A F />`;
+   It also measures :g:`/ A F / <g1:/ A F />`
 
 .. step:: assert
 
-   Therefore it will also measure the remainder, the unit :g:`/ A H / <g1:/ A H />`, though it is a number: which is impossible.
+   it will also measure the remainder, the unit :g:`/ A H / <g1:/ A H />`, though it is a number ⇒⇐
 
 .. step:: conclude ∵ numbers_prime_measured_def <G.249>
 
-   Therefore no number will measure the numbers :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`; therefore :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` are prime to one another.
+   no number will measure the numbers :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`; therefore :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` are prime to one another
 
 Dependency Graph
 ----------------

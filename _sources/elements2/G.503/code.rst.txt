@@ -12,7 +12,7 @@ G.503 segments cut plane — Code
 
 .. enunciation::
 
-   If two :term:`segments <G.4>` cut one another, they are in one :term:`plane <G.7>`, and every :term:`triangle <G.11>` is in one plane.
+   If two :term:`segments <G.4>` cut one another, they are in one :term:`plane <G.7>`, and every :term:`triangle <G.12>` is in one plane.
 
 .. picture:: g1.svg
 

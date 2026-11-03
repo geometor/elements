@@ -10,7 +10,7 @@
 :categories: problem, construction, plane-geometry, circles, polygons
 :category: problem, construction, plane-geometry, circles, polygons
 :tags: book-iv, point, segment, circle, angle, polygon, equilateral-triangle, plane-angle, straight-line, line, centre, equilateral, circumscribed, pentagon, equality
-:dependencies: G.10, G.12, G.14, G.26, G.156
+:dependencies: G.1, G.4, G.10, G.11, G.13, G.27, G.156
 :excerpt: About a given pentagon, which is equilateral and equiangular, to circumscribe a circle.
 
 .. _G.166:
@@ -23,7 +23,7 @@ G.166 pentagon equilateral equiangular
 
 .. enunciation::
 
-   About a given pentagon, which is :term:`equilateral <G.12>` and equiangular, to circumscribe a :term:`circle <G.10>`.
+   About a given pentagon, which is :term:`equilateral <G.13>` and equiangular, to circumscribe a :term:`circle <G.10>`.
 
 .. signature:: problem
 
@@ -44,27 +44,27 @@ G.166 pentagon equilateral equiangular
 
 .. step:: assert
 
-   Then in manner similar to the preceding it can be proved that :g:`< C B A ) <g1:< C B A )>`, :g:`< B A E ) <g1:< B A E )>`, :g:`< A E D ) <g1:< A E D )>` have also been bisected by :g:`/ F B / <g1:/ F B />`, :g:`/ F A / <g1:/ F A />`, :g:`/ F E / <g1:/ F E />` respectively.
+   Then in manner similar to the preceding it can be proved that :g:`< C B A ) <g1:< C B A )>`, :g:`< B A E ) <g1:< B A E )>`, :g:`< A E D ) <g1:< A E D )>` have also been bisected by :g:`/ F B / <g1:/ F B />`, :g:`/ F A / <g1:/ F A />`, :g:`/ F E / <g1:/ F E />`
 
 .. step:: assert
 
-   Since :g:`< B C D ) <g1:< B C D )>` is :eq:`equal <g1:< B C D ) = g1:< C D E )>` to :g:`< C D E ) <g1:< C D E )>`, and :g:`< F C D ) <g1:< F C D )>` is half of :g:`< B C D ) <g1:< B C D )>`, and :g:`< C D F ) <g1:< C D F )>` half of :g:`< C D E ) <g1:< C D E )>` → therefore :g:`< F C D ) <g1:< F C D )>` is also :eq:`equal <g1:< F C D ) = g1:< C D F )>` to :g:`< C D F ) <g1:< C D F )>`,
+   :g:`< B C D ) <g1:< B C D )>` :eq:`= <g1:< B C D ) = g1:< C D E )>` :g:`< C D E ) <g1:< C D E )>`, and :g:`< F C D ) <g1:< F C D )>` is half of :g:`< B C D ) <g1:< B C D )>`, and :g:`< C D F ) <g1:< C D F )>` half of :g:`< C D E ) <g1:< C D E )>` → therefore :g:`< F C D ) <g1:< F C D )>` :eq:`= <g1:< F C D ) = g1:< C D F )>` :g:`< C D F ) <g1:< C D F )>`,
 
-.. step:: assert ∵ equal_angles_isosceles <G.26>
+.. step:: assert ∵ equal_angles_isosceles <G.27>
 
-   So that the side :g:`/ F C / <g1:/ F C />` is also :eq:`equal <g1:/ F C / = g1:/ F D />` to the side :g:`/ F D / <g1:/ F D />`.
-
-.. step:: assert
-
-   Similarly it can be proved that each of :g:`/ F B / <g1:/ F B />`, :g:`/ F A / <g1:/ F A />`, :g:`/ F E / <g1:/ F E />` is also :eq:`equal <g1:/ F B / = g1:/ F A / = g1:/ F E / = g1:/ F C / = g1:/ F D />` to each of :g:`/ F C / <g1:/ F C />`, :g:`/ F D / <g1:/ F D />`
+   So that :g:`/ F C / <g1:/ F C />` :eq:`= <g1:/ F C / = g1:/ F D />` :g:`/ F D / <g1:/ F D />`
 
 .. step:: assert
 
-   Therefore the five segments :g:`/ F A / <g1:/ F A />`, :g:`/ F B / <g1:/ F B />`, :g:`/ F C / <g1:/ F C />`, :g:`/ F D / <g1:/ F D />`, :g:`/ F E / <g1:/ F E />` are :eq:`equal <g1:/ F A / = g1:/ F B / = g1:/ F C / = g1:/ F D / = g1:/ F E />` to one another.
+   Similarly it can be proved that each of :g:`/ F B / <g1:/ F B />`, :g:`/ F A / <g1:/ F A />`, :g:`/ F E / <g1:/ F E />` :eq:`= <g1:/ F B / = g1:/ F A / = g1:/ F E / = g1:/ F C / = g1:/ F D />` each of :g:`/ F C / <g1:/ F C />`, :g:`/ F D / <g1:/ F D />`
 
 .. step:: assert
 
-   Therefore the circle described with :term:`center <G.14>` :g:`F <g1:F>` and distance one of :g:`/ F A / <g1:/ F A />`, :g:`/ F B / <g1:/ F B />`, :g:`/ F C / <g1:/ F C />`, :g:`/ F D / <g1:/ F D />`, :g:`/ F E / <g1:/ F E />` will pass also through the remaining :term:`points <G.1>`, and will have been circumscribed.
+   the five segments :g:`/ F A / <g1:/ F A />`, :g:`/ F B / <g1:/ F B />`, :g:`/ F C / <g1:/ F C />`, :g:`/ F D / <g1:/ F D />`, :g:`/ F E / <g1:/ F E />` :eq:`= <g1:/ F A / = g1:/ F B / = g1:/ F C / = g1:/ F D / = g1:/ F E />`
+
+.. step:: assert
+
+   the circle described with :term:`center <G.11>` :g:`F <g1:F>` and distance one of :g:`/ F A / <g1:/ F A />`, :g:`/ F B / <g1:/ F B />`, :g:`/ F C / <g1:/ F C />`, :g:`/ F D / <g1:/ F D />`, :g:`/ F E / <g1:/ F E />` will pass also through the remaining :term:`points <G.1>`, and will have been circumscribed
 
 .. step:: construct
 
@@ -94,28 +94,59 @@ Dependency Graph
      "G.8" [label="G.8", tooltip="G.8 (I.def.13): A boundary is the extremity of anything.", fillcolor="#224422", URL="../G.8/index.html", target="_top"];
      "G.9" [label="G.9", tooltip="G.9 (I.def.14): A figure is that which is contained by any boundary or boundaries.", fillcolor="#224422", URL="../G.9/index.html", target="_top"];
      "G.10" [label="G.10", tooltip="G.10 (I.def.15): A circle ( A B ) is a plane figure contained by one arc defined by a center A and a point B establishing its defining radius / A B /, such that all segments / A B /, / A C /, / A D...", fillcolor="#224422", URL="../G.10/index.html", target="_top"];
-     "G.11" [label="G.11", tooltip="G.11 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
-     "G.12" [label="G.12", tooltip="G.12 (I.def.20): Of trilateral figures, an equilateral triangle < A B C > has three equal sides, an isosceles triangle < D E F > has two equal sides, and a scalene triangle < G H K > has three uneq...", fillcolor="#224422", URL="../G.12/index.html", target="_top"];
-     "G.14" [label="G.14", tooltip="G.14 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.", fillcolor="#224422", URL="../G.14/index.html", target="_top"];
+     "G.11" [label="G.11", tooltip="G.11 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
+     "G.12" [label="G.12", tooltip="G.12 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.12/index.html", target="_top"];
+     "G.13" [label="G.13", tooltip="G.13 (I.def.20): Of trilateral figures, an equilateral triangle < A B C > has three equal sides, an isosceles triangle < D E F > has two equal sides, and a scalene triangle < G H K > has three uneq...", fillcolor="#224422", URL="../G.13/index.html", target="_top"];
+     "G.14" [label="G.14", tooltip="G.14 (I.post.1): Construct a segment / A B / between any two points A, B.", fillcolor="#444422", URL="../G.14/index.html", target="_top"];
+     "G.15" [label="G.15", tooltip="G.15 (I.post.3): Construct a circle ( A B ) with center A and defining radius point B.", fillcolor="#444422", URL="../G.15/index.html", target="_top"];
+     "G.16" [label="G.16", tooltip="G.16 (I.cn.1): Things equal to the same thing are equal to one another.", fillcolor="#442222", URL="../G.16/index.html", target="_top"];
+     "G.17" [label="G.17", tooltip="G.17 (I.1): Construct an equilateral triangle on a given segment.", fillcolor="#222244", URL="../G.17/index.html", target="_top"];
+     "G.18" [label="G.18", tooltip="G.18 (I.post.2): Extend a segment / A B / continuously along a line [ A B ] to / B C /.", fillcolor="#444422", URL="../G.18/index.html", target="_top"];
+     "G.19" [label="G.19", tooltip="G.19 (I.cn.3): If equals are subtracted from equals, the remainders are equal.", fillcolor="#442222", URL="../G.19/index.html", target="_top"];
+     "G.20" [label="G.20", tooltip="G.20 (I.2): Construct at a given point a segment equal to a given segment.", fillcolor="#222244", URL="../G.20/index.html", target="_top"];
+     "G.21" [label="G.21", tooltip="G.21 (I.3): Cut off from the greater of two unequal segments a segment equal to the less.", fillcolor="#222244", URL="../G.21/index.html", target="_top"];
      "G.22" [label="G.22", tooltip="G.22 (I.def.8): A plane angle is the inclination to one another of two lines or arcs in a plane that meet and do not lie on the same line.", fillcolor="#224422", URL="../G.22/index.html", target="_top"];
-     "G.26" [label="G.26", tooltip="G.26 (I.6): If two angles of a triangle are equal, the sides subtending the equal angles are also equal.", fillcolor="#222244", URL="../G.26/index.html", target="_top"];
+     "G.23" [label="G.23", tooltip="G.23 (I.cn.4): Things / A B /, / D E / that coincide with one another are equal to one another.", fillcolor="#442222", URL="../G.23/index.html", target="_top"];
+     "G.24" [label="G.24", tooltip="G.24 (I.4): Triangles with two sides and the included angle equal are congruent (SAS).", fillcolor="#222244", URL="../G.24/index.html", target="_top"];
+     "G.26" [label="G.26", tooltip="G.26 (I.cn.5): The whole is greater than the part.", fillcolor="#442222", URL="../G.26/index.html", target="_top"];
+     "G.27" [label="G.27", tooltip="G.27 (I.6): If two angles of a triangle are equal, the sides subtending the equal angles are also equal.", fillcolor="#222244", URL="../G.27/index.html", target="_top"];
+     "G.155" [label="G.155", tooltip="G.155 (IV.def.2): Similarly afigure is said to becircumscribed about a figure when the respective sides of the circumscribed figure pass through the respectiveangles of that about which it is circum...", fillcolor="#224422", URL="../G.155/index.html", target="_top"];
      "G.156" [label="G.156", tooltip="G.156 (IV.def.6): Acircle is said to becircumscribed about a figure when the arc of the circle passes through eachangle of thefigure about which it is circumscribed.", fillcolor="#224422", URL="../G.156/index.html", target="_top"];
      "G.166" [label="G.166", tooltip="G.166 (IV.14): About a given pentagon, which is equilateral and equiangular, to circumscribe a circle.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
      "G.10" -> "G.1";
+     "G.11" -> "G.1";
      "G.14" -> "G.1";
+     "G.15" -> "G.1";
+     "G.17" -> "G.1";
+     "G.20" -> "G.1";
+     "G.21" -> "G.1";
+     "G.24" -> "G.1";
+     "G.166" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
      "G.6" -> "G.2";
+     "G.7" -> "G.2";
+     "G.18" -> "G.2";
      "G.22" -> "G.2";
      "G.4" -> "G.3";
+     "G.6" -> "G.3";
      "G.8" -> "G.3";
+     "G.20" -> "G.3";
      "G.7" -> "G.4";
      "G.10" -> "G.4";
      "G.11" -> "G.4";
+     "G.12" -> "G.4";
+     "G.14" -> "G.4";
+     "G.17" -> "G.4";
+     "G.18" -> "G.4";
+     "G.20" -> "G.4";
+     "G.21" -> "G.4";
      "G.22" -> "G.4";
+     "G.24" -> "G.4";
+     "G.166" -> "G.4";
      "G.6" -> "G.5";
      "G.7" -> "G.5";
      "G.10" -> "G.6";
@@ -123,18 +154,51 @@ Dependency Graph
      "G.22" -> "G.7";
      "G.9" -> "G.8";
      "G.10" -> "G.9";
-     "G.26" -> "G.9";
+     "G.12" -> "G.9";
+     "G.155" -> "G.9";
      "G.156" -> "G.9";
-     "G.14" -> "G.10";
+     "G.11" -> "G.10";
+     "G.15" -> "G.10";
+     "G.17" -> "G.10";
+     "G.20" -> "G.10";
+     "G.21" -> "G.10";
      "G.156" -> "G.10";
      "G.166" -> "G.10";
-     "G.12" -> "G.11";
-     "G.26" -> "G.11";
-     "G.166" -> "G.12";
-     "G.166" -> "G.14";
-     "G.26" -> "G.22";
+     "G.15" -> "G.11";
+     "G.17" -> "G.11";
+     "G.20" -> "G.11";
+     "G.21" -> "G.11";
+     "G.166" -> "G.11";
+     "G.13" -> "G.12";
+     "G.17" -> "G.12";
+     "G.20" -> "G.12";
+     "G.24" -> "G.12";
+     "G.27" -> "G.12";
+     "G.17" -> "G.13";
+     "G.166" -> "G.13";
+     "G.17" -> "G.14";
+     "G.20" -> "G.14";
+     "G.27" -> "G.14";
+     "G.17" -> "G.15";
+     "G.20" -> "G.15";
+     "G.21" -> "G.15";
+     "G.17" -> "G.16";
+     "G.20" -> "G.16";
+     "G.21" -> "G.16";
+     "G.20" -> "G.17";
+     "G.20" -> "G.18";
+     "G.20" -> "G.19";
+     "G.21" -> "G.20";
+     "G.27" -> "G.21";
+     "G.24" -> "G.22";
+     "G.27" -> "G.22";
+     "G.155" -> "G.22";
      "G.156" -> "G.22";
-     "G.166" -> "G.26";
+     "G.24" -> "G.23";
+     "G.27" -> "G.24";
+     "G.27" -> "G.26";
+     "G.166" -> "G.27";
+     "G.156" -> "G.155";
      "G.166" -> "G.156";
    }
 

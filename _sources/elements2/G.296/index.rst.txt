@@ -10,7 +10,7 @@
 :categories: theorem, proof, number-theory, proportions
 :category: theorem, proof, number-theory, proportions
 :tags: book-viii, point, number, proportional, prime-to-one-another, in-the-same-ratio, ex-aequali, prime-number, part-aliquot, corresponding-magnitudes, ratio, proportion, prime, continued-proportion, reductio-ad-absurdum
-:dependencies: G.176, G.180, G.248, G.249, G.267, G.274, G.275, G.283
+:dependencies: G.174, G.176, G.180, G.248, G.249, G.267, G.274, G.275, G.283
 :excerpt: If there be as many numbers as we please in continued proportion, and the extremes of them be prime to one another, the numbers are the least of those which have the same ratio with them.
 
 .. _G.296:
@@ -40,31 +40,31 @@ G.296 there many numbers
 
 .. step:: assert
 
-   If not, let :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>`, :g:`H <g1:H>` be less than :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, and in the same ratio with them.
+   If not, let :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>`, :g:`H <g1:H>` be less than :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, and in the same ratio with them
 
 .. step:: assert
 
-   Since :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` are in the same ratio with :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>`, :g:`H <g1:H>`, and the multitude of the numbers :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` is equal to the multitude of the numbers :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>`, :g:`H <g1:H>`,
+   :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` are in the same ratio with :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>`, :g:`H <g1:H>`, and the multitude of the numbers :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` is equal to the multitude of the numbers :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>`, :g:`H <g1:H>`,
 
 .. step:: assert ∵ there_many_numbers_vii_14 <G.267>
 
-   Therefore, *:term:`ex aequali <G.174>`*, as :g:`A <g1:A>` is to :g:`D <g1:D>`, so is :g:`E <g1:E>` to :g:`H <g1:H>`.
+   *:term:`ex aequali <G.174>`*, as :g:`A <g1:A>` is to :g:`D <g1:D>`, so is :g:`E <g1:E>` to :g:`H <g1:H>`
 
 .. step:: assert ∵ numbers_prime_least, least_numbers_ratio <G.275, G.274>
 
-   :g:`A <g1:A>`, :g:`D <g1:D>` are prime, primes are also least, and the least numbers measure those which have the same ratio the same number of times, the greater the greater and the less the less, that is, the antecedent the antecedent and the consequent the consequent.
+   :g:`A <g1:A>`, :g:`D <g1:D>` are prime, primes are also least, and the least numbers measure those which have the same ratio the same number of times, the greater the greater and the less the less, that is, the antecedent the antecedent and the consequent the consequent
 
 .. step:: assert
 
-   Therefore :g:`A <g1:A>` :term:`measures <G.169>` :g:`E <g1:E>`, the greater the less : which is impossible.
+   :g:`A <g1:A>` measures :g:`E <g1:E>`, the greater the less ⇒⇐
 
 .. step:: assert
 
-   Therefore :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>`, :g:`H <g1:H>` which are less than :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` are not in the same ratio with them.
+   :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>`, :g:`H <g1:H>` which are less than :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` are not in the same ratio with them
 
 .. step:: conclude
 
-   Therefore :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` are the least of those which have the same ratio with them.
+   :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` are the least of those which have the same ratio with them
 
 Dependency Graph
 ----------------
@@ -114,32 +114,46 @@ Dependency Graph
      "G.251" -> "G.169";
      "G.253" -> "G.169";
      "G.254" -> "G.169";
+     "G.255" -> "G.169";
      "G.256" -> "G.169";
      "G.268" -> "G.169";
+     "G.270" -> "G.169";
      "G.274" -> "G.169";
+     "G.275" -> "G.169";
      "G.283" -> "G.169";
      "G.176" -> "G.170";
      "G.257" -> "G.170";
      "G.174" -> "G.173";
      "G.267" -> "G.174";
+     "G.296" -> "G.174";
      "G.180" -> "G.176";
      "G.267" -> "G.176";
      "G.274" -> "G.176";
      "G.275" -> "G.176";
      "G.296" -> "G.176";
+     "G.263" -> "G.180";
      "G.266" -> "G.180";
      "G.296" -> "G.180";
      "G.194" -> "G.181";
      "G.265" -> "G.181";
+     "G.268" -> "G.181";
+     "G.274" -> "G.181";
+     "G.275" -> "G.181";
      "G.261" -> "G.194";
      "G.262" -> "G.194";
      "G.266" -> "G.194";
+     "G.267" -> "G.194";
      "G.268" -> "G.194";
+     "G.270" -> "G.194";
      "G.248" -> "G.247";
      "G.249" -> "G.247";
      "G.250" -> "G.247";
+     "G.251" -> "G.247";
+     "G.255" -> "G.247";
      "G.268" -> "G.247";
      "G.269" -> "G.247";
+     "G.270" -> "G.247";
+     "G.275" -> "G.247";
      "G.283" -> "G.247";
      "G.250" -> "G.248";
      "G.251" -> "G.248";
@@ -161,20 +175,30 @@ Dependency Graph
      "G.296" -> "G.248";
      "G.250" -> "G.249";
      "G.251" -> "G.249";
+     "G.255" -> "G.249";
      "G.275" -> "G.249";
      "G.296" -> "G.249";
      "G.251" -> "G.250";
      "G.255" -> "G.251";
+     "G.254" -> "G.253";
      "G.255" -> "G.253";
+     "G.256" -> "G.253";
      "G.257" -> "G.253";
+     "G.258" -> "G.253";
      "G.261" -> "G.253";
      "G.262" -> "G.253";
      "G.263" -> "G.253";
+     "G.265" -> "G.253";
+     "G.266" -> "G.253";
+     "G.283" -> "G.253";
      "G.255" -> "G.254";
      "G.258" -> "G.254";
      "G.261" -> "G.254";
      "G.262" -> "G.254";
      "G.263" -> "G.254";
+     "G.265" -> "G.254";
+     "G.266" -> "G.254";
+     "G.274" -> "G.254";
      "G.274" -> "G.255";
      "G.257" -> "G.256";
      "G.263" -> "G.256";

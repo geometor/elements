@@ -10,7 +10,7 @@
 :categories: theorem, proof, solid-geometry
 :category: theorem, proof, solid-geometry
 :tags: book-xi, point, segment, part-aliquot, straight-line, plane-surface, circle, centre, diameter, plane, reductio-ad-absurdum
-:dependencies: G.4, G.7, G.10, G.14, G.61, G.253
+:dependencies: G.4, G.7, G.10, G.11, G.61, G.253
 :excerpt: A part of a segment cannot be in the plane of reference and a part in a plane more elevated.
 
 .. _G.502:
@@ -35,11 +35,11 @@ G.502 part segment plane
 
 .. step:: assert
 
-   If possible, let a part :g:`/ A B / <g1:/ A B />` of :g:`/ A B C / <g1:/ A B C />` be in the plane of reference, and a part :g:`/ B C / <g1:/ B C />` in a plane more elevated.
+   If possible, let a part :g:`/ A B / <g1:/ A B />` of :g:`/ A B C / <g1:/ A B C />` be in the plane of reference, and a part :g:`/ B C / <g1:/ B C />` in a plane more elevated
 
 .. step:: assert
 
-   There will then be in the plane of reference some segment continuous with :g:`/ A B / <g1:/ A B />` in a segment.
+   There will then be in the plane of reference some segment continuous with :g:`/ A B / <g1:/ A B />` in a segment
 
 .. step:: assert
 
@@ -47,15 +47,15 @@ G.502 part segment plane
 
 .. step:: assert
 
-   Therefore :g:`/ A B / <g1:/ A B />` is a common segment of :g:`/ A B C / <g1:/ A B C />`, :g:`/ A B D / <g1:/ A B D />`:
+   :g:`/ A B / <g1:/ A B />` is a common segment of :g:`/ A B C / <g1:/ A B C />`, :g:`/ A B D / <g1:/ A B D />`:
 
 .. step:: assert
 
-   Which is impossible, inasmuch as, if we describe a :term:`circle <G.10>` with :term:`center <G.14>` :g:`B <g1:B>` and distance :g:`/ A B / <g1:/ A B />`, the :term:`diameters <G.61>` will cut off unequal arcs of the circle.
+   ⇒⇐, inasmuch as, if we describe a :term:`circle <G.10>` with :term:`center <G.11>` :g:`B <g1:B>` and distance :g:`/ A B / <g1:/ A B />`, the :term:`diameters <G.61>` will cut off unequal arcs of the circle
 
 .. step:: conclude
 
-   Therefore a part of a segment cannot be in the plane of reference, and a part in a plane more elevated.
+   a part of a segment cannot be in the plane of reference, and a part in a plane more elevated
 
 Dependency Graph
 ----------------
@@ -77,7 +77,7 @@ Dependency Graph
      "G.8" [label="G.8", tooltip="G.8 (I.def.13): A boundary is the extremity of anything.", fillcolor="#224422", URL="../G.8/index.html", target="_top"];
      "G.9" [label="G.9", tooltip="G.9 (I.def.14): A figure is that which is contained by any boundary or boundaries.", fillcolor="#224422", URL="../G.9/index.html", target="_top"];
      "G.10" [label="G.10", tooltip="G.10 (I.def.15): A circle ( A B ) is a plane figure contained by one arc defined by a center A and a point B establishing its defining radius / A B /, such that all segments / A B /, / A C /, / A D...", fillcolor="#224422", URL="../G.10/index.html", target="_top"];
-     "G.14" [label="G.14", tooltip="G.14 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.", fillcolor="#224422", URL="../G.14/index.html", target="_top"];
+     "G.11" [label="G.11", tooltip="G.11 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
      "G.61" [label="G.61", tooltip="G.61 (I.def.17): A diameter of a circle is any segment drawn through the center and terminated in both directions by the arc of the circle; it bisects the circle.", fillcolor="#224422", URL="../G.61/index.html", target="_top"];
      "G.169" [label="G.169", tooltip="G.169 (V.def.1): A magnitude is apart of a magnitude, the less of the greater, when it measures the greater.", fillcolor="#224422", URL="../G.169/index.html", target="_top"];
      "G.247" [label="G.247", tooltip="G.247 (VII.def.1): Anunit is that by virtue of which each of the things that exist is called one.", fillcolor="#224422", URL="../G.247/index.html", target="_top"];
@@ -88,14 +88,17 @@ Dependency Graph
      "G.3" -> "G.1";
      "G.4" -> "G.1";
      "G.10" -> "G.1";
-     "G.14" -> "G.1";
+     "G.11" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
      "G.6" -> "G.2";
+     "G.7" -> "G.2";
      "G.4" -> "G.3";
+     "G.6" -> "G.3";
      "G.8" -> "G.3";
      "G.7" -> "G.4";
      "G.10" -> "G.4";
+     "G.11" -> "G.4";
      "G.61" -> "G.4";
      "G.502" -> "G.4";
      "G.6" -> "G.5";
@@ -105,11 +108,11 @@ Dependency Graph
      "G.502" -> "G.7";
      "G.9" -> "G.8";
      "G.10" -> "G.9";
-     "G.14" -> "G.10";
+     "G.11" -> "G.10";
      "G.61" -> "G.10";
      "G.502" -> "G.10";
-     "G.61" -> "G.14";
-     "G.502" -> "G.14";
+     "G.61" -> "G.11";
+     "G.502" -> "G.11";
      "G.502" -> "G.61";
      "G.253" -> "G.169";
      "G.248" -> "G.247";

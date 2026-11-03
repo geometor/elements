@@ -4,6 +4,7 @@
 :volume: I
 :book: I
 :type: prop
+:youtube_id: -f4r3sYXESQ
 
 G.17 construct an equilateral triangle — Code
 =============================================
@@ -12,7 +13,7 @@ G.17 construct an equilateral triangle — Code
 
 .. enunciation::
 
-   Construct an :term:`equilateral triangle <G.12>` on a given :term:`segment <G.4>`.
+   Construct an :term:`equilateral triangle <G.13>` on a given :term:`segment <G.4>`.
 
 .. picture:: g1.svg
 

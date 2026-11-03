@@ -12,7 +12,7 @@ G.214 triangles sides proportional — Code
 
 .. enunciation::
 
-   If two :term:`triangles <G.11>` have their sides :term:`proportional <G.180>`, the triangles is equiangular and will have those :term:`angles <G.22>` equal which the corresponding sides subtend.
+   If two :term:`triangles <G.12>` have their sides :term:`proportional <G.180>`, the triangles is equiangular and will have those :term:`angles <G.22>` equal which the corresponding sides subtend.
 
 .. rubric:: ``g1.py``
 

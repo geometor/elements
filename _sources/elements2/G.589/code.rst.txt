@@ -12,7 +12,7 @@ G.589 circle diameter rational — Code
 
 .. enunciation::
 
-   If in a :term:`circle <G.10>` which has its :term:`diameter <G.61>` :term:`rational <G.391>` an :term:`equilateral <G.12>` pentagon be inscribed, the side of the pentagon is the irrational :term:`segment <G.4>` called minor.
+   If in a :term:`circle <G.10>` which has its :term:`diameter <G.61>` :term:`rational <G.391>` an :term:`equilateral <G.13>` pentagon be inscribed, the side of the pentagon is the irrational :term:`segment <G.4>` called minor.
 
 .. picture:: g1.svg
 

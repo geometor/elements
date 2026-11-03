@@ -10,7 +10,7 @@
 :categories: theorem, proof, number-theory, proportions
 :category: theorem, proof, number-theory, proportions
 :tags: book-viii, point, plane-number, ratio, number, multiply, ex-aequali, plane
-:dependencies: G.173, G.267, G.271, G.299, G.300
+:dependencies: G.173, G.174, G.267, G.269, G.271, G.299, G.300
 :excerpt: Plane numbers have to one another the ratio compounded of the ratios of their sides.
 
 .. _G.301:
@@ -44,55 +44,55 @@ G.301 plane numbers ratio
 
 .. step:: assert
 
-   Let :g:`D <g1:D>` by :term:`multiplying <G.269>` :g:`E <g1:E>` make :g:`L <g1:L>`.
+   Let :g:`D <g1:D>` by :term:`multiplying <G.269>` :g:`E <g1:E>` make :g:`L <g1:L>`
 
 .. step:: assert
 
-   Since :g:`D <g1:D>` by multiplying :g:`C <g1:C>` has made :g:`A <g1:A>`, and by multiplying :g:`E <g1:E>` has made :g:`L <g1:L>`,
+   :g:`D <g1:D>` by multiplying :g:`C <g1:C>` has made :g:`A <g1:A>`, and by multiplying :g:`E <g1:E>` has made :g:`L <g1:L>`,
 
 .. step:: assert ∵ number_multiplying_numbers <G.271>
 
-   Therefore, as :g:`C <g1:C>` is to :g:`E <g1:E>`, so is :g:`A <g1:A>` to :g:`L <g1:L>`.
+   as :g:`C <g1:C>` is to :g:`E <g1:E>`, so is :g:`A <g1:A>` to :g:`L <g1:L>`
 
 .. step:: assert
 
-   But, as :g:`C <g1:C>` is to :g:`E <g1:E>`, so is :g:`G <g1:G>` to :g:`H <g1:H>`;
+   But, as :g:`C <g1:C>` is to :g:`E <g1:E>`, so is :g:`G <g1:G>` to :g:`H <g1:H>`
 
 .. step:: assert
 
-   Therefore also, as :g:`G <g1:G>` is to :g:`H <g1:H>`, so is :g:`A <g1:A>` to :g:`L <g1:L>`.
+   also, as :g:`G <g1:G>` is to :g:`H <g1:H>`, so is :g:`A <g1:A>` to :g:`L <g1:L>`
 
 .. step:: assert
 
-   Since :g:`E <g1:E>` by multiplying :g:`D <g1:D>` has made :g:`L <g1:L>`, and further by multiplying :g:`F <g1:F>` has made :g:`B <g1:B>`,
+   :g:`E <g1:E>` by multiplying :g:`D <g1:D>` has made :g:`L <g1:L>`, and further by multiplying :g:`F <g1:F>` has made :g:`B <g1:B>`,
 
 .. step:: assert ∵ number_multiplying_numbers <G.271>
 
-   Therefore, as :g:`D <g1:D>` is to :g:`F <g1:F>`, so is :g:`L <g1:L>` to :g:`B <g1:B>`.
+   as :g:`D <g1:D>` is to :g:`F <g1:F>`, so is :g:`L <g1:L>` to :g:`B <g1:B>`
 
 .. step:: assert
 
-   But, as :g:`D <g1:D>` is to :g:`F <g1:F>`, so is :g:`H <g1:H>` to :g:`K <g1:K>`;
+   But, as :g:`D <g1:D>` is to :g:`F <g1:F>`, so is :g:`H <g1:H>` to :g:`K <g1:K>`
 
 .. step:: assert
 
-   Therefore also, as :g:`H <g1:H>` is to :g:`K <g1:K>`, so is :g:`L <g1:L>` to :g:`B <g1:B>`.
+   also, as :g:`H <g1:H>` is to :g:`K <g1:K>`, so is :g:`L <g1:L>` to :g:`B <g1:B>`
 
 .. step:: assert
 
-   It was also proved that, as :g:`G <g1:G>` is to :g:`H <g1:H>`, so is :g:`A <g1:A>` to :g:`L <g1:L>`;
+   It was also proved that, as :g:`G <g1:G>` is to :g:`H <g1:H>`, so is :g:`A <g1:A>` to :g:`L <g1:L>`
 
 .. step:: assert ∵ there_many_numbers_vii_14 <G.267>
 
-   Therefore, *:term:`ex aequali <G.174>`*, as :g:`G <g1:G>` is to :g:`K <g1:K>`, so is :g:`A <g1:A>` to :g:`B <g1:B>`.
+   *:term:`ex aequali <G.174>`*, as :g:`G <g1:G>` is to :g:`K <g1:K>`, so is :g:`A <g1:A>` to :g:`B <g1:B>`
 
 .. step:: assert
 
-   :g:`G <g1:G>` has to :g:`K <g1:K>` the ratio compounded of the ratios of the sides;
+   :g:`G <g1:G>` has to :g:`K <g1:K>` the ratio compounded of the ratios of the sides
 
 .. step:: conclude
 
-   Therefore :g:`A <g1:A>` also has to :g:`B <g1:B>` the ratio compounded of the ratios of the sides.
+   :g:`A <g1:A>` also has to :g:`B <g1:B>` the ratio compounded of the ratios of the sides
 
 Dependency Graph
 ----------------
@@ -170,15 +170,23 @@ Dependency Graph
      "G.252" -> "G.169";
      "G.253" -> "G.169";
      "G.254" -> "G.169";
+     "G.255" -> "G.169";
      "G.256" -> "G.169";
      "G.268" -> "G.169";
+     "G.270" -> "G.169";
+     "G.271" -> "G.169";
      "G.274" -> "G.169";
+     "G.275" -> "G.169";
      "G.283" -> "G.169";
+     "G.289" -> "G.169";
      "G.290" -> "G.169";
      "G.291" -> "G.169";
+     "G.299" -> "G.169";
      "G.171" -> "G.170";
      "G.176" -> "G.170";
+     "G.183" -> "G.170";
      "G.185" -> "G.170";
+     "G.186" -> "G.170";
      "G.257" -> "G.170";
      "G.186" -> "G.171";
      "G.174" -> "G.173";
@@ -186,6 +194,7 @@ Dependency Graph
      "G.299" -> "G.173";
      "G.301" -> "G.173";
      "G.267" -> "G.174";
+     "G.301" -> "G.174";
      "G.180" -> "G.176";
      "G.183" -> "G.176";
      "G.187" -> "G.176";
@@ -195,13 +204,19 @@ Dependency Graph
      "G.274" -> "G.176";
      "G.275" -> "G.176";
      "G.289" -> "G.176";
+     "G.299" -> "G.176";
      "G.183" -> "G.180";
+     "G.263" -> "G.180";
      "G.266" -> "G.180";
      "G.273" -> "G.180";
      "G.299" -> "G.180";
      "G.182" -> "G.181";
      "G.194" -> "G.181";
      "G.265" -> "G.181";
+     "G.268" -> "G.181";
+     "G.274" -> "G.181";
+     "G.275" -> "G.181";
+     "G.299" -> "G.181";
      "G.183" -> "G.182";
      "G.273" -> "G.183";
      "G.186" -> "G.184";
@@ -211,13 +226,23 @@ Dependency Graph
      "G.261" -> "G.194";
      "G.262" -> "G.194";
      "G.266" -> "G.194";
+     "G.267" -> "G.194";
      "G.268" -> "G.194";
+     "G.270" -> "G.194";
+     "G.271" -> "G.194";
      "G.248" -> "G.247";
      "G.249" -> "G.247";
      "G.250" -> "G.247";
+     "G.251" -> "G.247";
+     "G.255" -> "G.247";
      "G.268" -> "G.247";
      "G.269" -> "G.247";
+     "G.270" -> "G.247";
+     "G.271" -> "G.247";
+     "G.275" -> "G.247";
      "G.283" -> "G.247";
+     "G.289" -> "G.247";
+     "G.290" -> "G.247";
      "G.250" -> "G.248";
      "G.251" -> "G.248";
      "G.252" -> "G.248";
@@ -247,21 +272,33 @@ Dependency Graph
      "G.250" -> "G.249";
      "G.251" -> "G.249";
      "G.252" -> "G.249";
+     "G.255" -> "G.249";
      "G.275" -> "G.249";
+     "G.289" -> "G.249";
+     "G.290" -> "G.249";
      "G.251" -> "G.250";
      "G.252" -> "G.251";
      "G.255" -> "G.251";
      "G.289" -> "G.252";
+     "G.254" -> "G.253";
      "G.255" -> "G.253";
+     "G.256" -> "G.253";
      "G.257" -> "G.253";
+     "G.258" -> "G.253";
      "G.261" -> "G.253";
      "G.262" -> "G.253";
      "G.263" -> "G.253";
+     "G.265" -> "G.253";
+     "G.266" -> "G.253";
+     "G.283" -> "G.253";
      "G.255" -> "G.254";
      "G.258" -> "G.254";
      "G.261" -> "G.254";
      "G.262" -> "G.254";
      "G.263" -> "G.254";
+     "G.265" -> "G.254";
+     "G.266" -> "G.254";
+     "G.274" -> "G.254";
      "G.274" -> "G.255";
      "G.257" -> "G.256";
      "G.263" -> "G.256";
@@ -291,9 +328,11 @@ Dependency Graph
      "G.270" -> "G.269";
      "G.271" -> "G.269";
      "G.272" -> "G.269";
+     "G.273" -> "G.269";
      "G.289" -> "G.269";
      "G.290" -> "G.269";
      "G.300" -> "G.269";
+     "G.301" -> "G.269";
      "G.272" -> "G.270";
      "G.275" -> "G.270";
      "G.289" -> "G.270";

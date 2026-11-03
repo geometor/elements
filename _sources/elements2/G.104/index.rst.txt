@@ -10,7 +10,7 @@
 :categories: theorem, proof, plane-geometry, circles
 :category: theorem, proof, plane-geometry, circles
 :tags: book-iii, point, segment, circle, circles-touching, centre, tangent, equality, reductio-ad-absurdum
-:dependencies: G.10, G.14, G.103
+:dependencies: G.10, G.11, G.14, G.103
 :excerpt: If two circles touch one another, they will not have the same center.
 
 .. _G.104:
@@ -23,7 +23,7 @@ G.104 circles touch center
 
 .. enunciation::
 
-   If two :term:`circles <G.10>` :term:`touch one another <G.103>`, they will not have the same :term:`center <G.14>`.
+   If two :term:`circles <G.10>` :term:`touch one another <G.103>`, they will not have the same :term:`center <G.11>`.
 
 .. signature:: theorem
 
@@ -43,7 +43,7 @@ G.104 circles touch center
 
 .. step:: construct
 
-   :fn:`segment <G.13>`\ (:g:`F <g1:F>`, :g:`C <g1:C>`) → :g:`/ F C / <g1:/ F C />`
+   :fn:`segment <G.14>`\ (:g:`F <g1:F>`, :g:`C <g1:C>`) → :g:`/ F C / <g1:/ F C />`
 
 .. step:: construct
 
@@ -51,23 +51,23 @@ G.104 circles touch center
 
 .. step:: assert ∵ circle_radii <G.10>
 
-   Since :g:`F <g1:F>` is the center of :g:`( A B C ) <g1:( A B C )>` → :g:`/ F C / <g1:/ F C />` is :eq:`equal <g1:/ F C / = g1:/ F B />` to :g:`/ F B / <g1:/ F B />`.
+   :g:`( A B C ) <g1:( A B C )>` → :g:`/ F C / <g1:/ F C />` :eq:`= <g1:/ F C / = g1:/ F B />` :g:`/ F B / <g1:/ F B />`
 
 .. step:: assert ∵ circle_radii <G.10>
 
-   Since :g:`F <g1:F>` is the center of :g:`( C D E ) <g1:( C D E )>` → :g:`/ F C / <g1:/ F C />` is :eq:`equal <g1:/ F C / = g1:/ F E />` to :g:`/ F E / <g1:/ F E />`.
+   :g:`( C D E ) <g1:( C D E )>` → :g:`/ F C / <g1:/ F C />` :eq:`= <g1:/ F C / = g1:/ F E />` :g:`/ F E / <g1:/ F E />`
 
 .. step:: assert
 
-   :g:`/ F C / <g1:/ F C />` was proved :eq:`equal <g1:/ F C / = g1:/ F B />` to :g:`/ F B / <g1:/ F B />`
+   :g:`/ F C / <g1:/ F C />` :eq:`= <g1:/ F C / = g1:/ F B />` :g:`/ F B / <g1:/ F B />`
 
 .. step:: assert
 
-   Therefore :g:`/ F E / <g1:/ F E />` is also :eq:`equal <g1:/ F E / = g1:/ F B />` to :g:`/ F B / <g1:/ F B />`, the less to the greater: which is impossible.
+   :g:`/ F E / <g1:/ F E />` :eq:`= <g1:/ F E / = g1:/ F B />` :g:`/ F B / <g1:/ F B />`, < > ⇒⇐
 
 .. step:: conclude
 
-   Therefore :g:`F <g1:F>` is not the center of :g:`( A B C ) <g1:( A B C )>`, :g:`( C D E ) <g1:( C D E )>`.
+   :g:`F <g1:F>` is not the center of :g:`( A B C ) <g1:( A B C )>`, :g:`( C D E ) <g1:( C D E )>`
 
 Dependency Graph
 ----------------
@@ -89,29 +89,36 @@ Dependency Graph
      "G.8" [label="G.8", tooltip="G.8 (I.def.13): A boundary is the extremity of anything.", fillcolor="#224422", URL="../G.8/index.html", target="_top"];
      "G.9" [label="G.9", tooltip="G.9 (I.def.14): A figure is that which is contained by any boundary or boundaries.", fillcolor="#224422", URL="../G.9/index.html", target="_top"];
      "G.10" [label="G.10", tooltip="G.10 (I.def.15): A circle ( A B ) is a plane figure contained by one arc defined by a center A and a point B establishing its defining radius / A B /, such that all segments / A B /, / A C /, / A D...", fillcolor="#224422", URL="../G.10/index.html", target="_top"];
-     "G.14" [label="G.14", tooltip="G.14 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.", fillcolor="#224422", URL="../G.14/index.html", target="_top"];
+     "G.11" [label="G.11", tooltip="G.11 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
+     "G.14" [label="G.14", tooltip="G.14 (I.post.1): Construct a segment / A B / between any two points A, B.", fillcolor="#444422", URL="../G.14/index.html", target="_top"];
      "G.103" [label="G.103", tooltip="G.103 (III.def.3): Circles are said totouch one another which, meeting one another, do not cut one another.", fillcolor="#224422", URL="../G.103/index.html", target="_top"];
      "G.104" [label="G.104", tooltip="G.104 (III.6): If two circles touch one another, they will not have the same center.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
      "G.10" -> "G.1";
+     "G.11" -> "G.1";
      "G.14" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
      "G.6" -> "G.2";
+     "G.7" -> "G.2";
      "G.4" -> "G.3";
+     "G.6" -> "G.3";
      "G.8" -> "G.3";
      "G.7" -> "G.4";
      "G.10" -> "G.4";
+     "G.11" -> "G.4";
+     "G.14" -> "G.4";
      "G.6" -> "G.5";
      "G.7" -> "G.5";
      "G.10" -> "G.6";
      "G.10" -> "G.7";
      "G.9" -> "G.8";
      "G.10" -> "G.9";
-     "G.14" -> "G.10";
+     "G.11" -> "G.10";
      "G.104" -> "G.10";
+     "G.104" -> "G.11";
      "G.104" -> "G.14";
      "G.104" -> "G.103";
    }

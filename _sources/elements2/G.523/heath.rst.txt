@@ -12,7 +12,7 @@ G.523 planes cut right — Heath
 
 .. enunciation::
 
-   If two :term:`planes <G.7>` which cut one another be :term:`at right angles <G.32>` to any plane, their common section will also be :term:`at right angles to the same plane <G.505>`.
+   If two :term:`planes <G.7>` which cut one another be :term:`at right angles <G.33>` to any plane, their common section will also be :term:`at right angles to the same plane <G.505>`.
 
 For let the two planes :g:`< A B > <g1:< A B >>`, :g:`< B C > <g1:< B C >>` be at right angles to the plane of reference, and let :g:`/ B D / <g1:/ B D />` be their common section; I say that :g:`/ B D / <g1:/ B D />` is at right angles to the plane of reference.
 
@@ -62,7 +62,7 @@ Dependency Graph
      "G.5" [label="G.5", tooltip="G.5 (I.def.5): A surface is that which has length and breadth only.", fillcolor="#224422", URL="../G.5/index.html", target="_top"];
      "G.7" [label="G.7", tooltip="G.7 (I.def.7): A plane surface lies evenly with the lines on itself.", fillcolor="#224422", URL="../G.7/index.html", target="_top"];
      "G.22" [label="G.22", tooltip="G.22 (I.def.8): A plane angle is the inclination to one another of two lines or arcs in a plane that meet and do not lie on the same line.", fillcolor="#224422", URL="../G.22/index.html", target="_top"];
-     "G.32" [label="G.32", tooltip="G.32 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.32/index.html", target="_top"];
+     "G.33" [label="G.33", tooltip="G.33 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.33/index.html", target="_top"];
      "G.504" [label="G.504", tooltip="G.504 (XI.3): If two planes cut one another, their common section is a segment.", fillcolor="#222244", URL="../G.504/index.html", target="_top"];
      "G.505" [label="G.505", tooltip="G.505 (XI.def.3): Asegment isat right angles to a plane, when it makesright angles with all the segments which meet it and are in theplane.", fillcolor="#224422", URL="../G.505/index.html", target="_top"];
      "G.515" [label="G.515", tooltip="G.515 (XI.13): From the same point two segments cannot be set up at right angles to the same plane on the same side.", fillcolor="#222244", URL="../G.515/index.html", target="_top"];
@@ -72,27 +72,35 @@ Dependency Graph
      "G.3" -> "G.1";
      "G.4" -> "G.1";
      "G.515" -> "G.1";
+     "G.523" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
+     "G.7" -> "G.2";
      "G.22" -> "G.2";
+     "G.33" -> "G.2";
+     "G.504" -> "G.2";
      "G.4" -> "G.3";
+     "G.504" -> "G.3";
      "G.7" -> "G.4";
      "G.22" -> "G.4";
-     "G.32" -> "G.4";
+     "G.33" -> "G.4";
      "G.504" -> "G.4";
      "G.505" -> "G.4";
      "G.515" -> "G.4";
      "G.521" -> "G.4";
+     "G.523" -> "G.4";
      "G.7" -> "G.5";
      "G.22" -> "G.7";
      "G.504" -> "G.7";
      "G.505" -> "G.7";
+     "G.515" -> "G.7";
      "G.521" -> "G.7";
      "G.523" -> "G.7";
-     "G.32" -> "G.22";
-     "G.505" -> "G.32";
-     "G.521" -> "G.32";
-     "G.523" -> "G.32";
+     "G.33" -> "G.22";
+     "G.505" -> "G.33";
+     "G.515" -> "G.33";
+     "G.521" -> "G.33";
+     "G.523" -> "G.33";
      "G.515" -> "G.504";
      "G.515" -> "G.505";
      "G.523" -> "G.505";

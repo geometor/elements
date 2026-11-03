@@ -10,7 +10,7 @@
 :categories: theorem, proof, number-theory
 :category: theorem, proof, number-theory
 :tags: book-vii, point, segment, number, in-the-same-ratio, part-aliquot, parts-non-aliquot, corresponding-magnitudes, ratio, equality, reductio-ad-absurdum
-:dependencies: G.169, G.176, G.248, G.255, G.263, G.265, G.266
+:dependencies: G.169, G.176, G.181, G.248, G.254, G.255, G.263, G.265, G.266
 :excerpt: The least numbers of those which have the same ratio with them measure those which have the same ratio the same number of times, the greater the greater and the less the less.
 
 .. _G.274:
@@ -39,19 +39,19 @@ G.274 least numbers ratio
 
 .. step:: assert
 
-   Now :g:`/ C D / <g1:/ C D />` is not :term:`parts of <G.254>` :g:`A <g1:A>`.
+   Now :g:`/ C D / <g1:/ C D />` is not :term:`parts of <G.254>` :g:`A <g1:A>`
 
 .. step:: assert
 
-   If possible, let it be so;
+   If possible, let it be so
 
 .. step:: assert ∵ numbers_proportional_proportional, numbers_proportional_multiple_def <G.266, G.263>
 
-   Therefore :g:`/ E F / <g1:/ E F />` is also the same parts of :g:`B <g1:B>` that :g:`/ C D / <g1:/ C D />` is of :g:`A <g1:A>`.
+   :g:`/ E F / <g1:/ E F />` is also the same parts of :g:`B <g1:B>` that :g:`/ C D / <g1:/ C D />` is of :g:`A <g1:A>`
 
 .. step:: assert
 
-   Therefore, as many parts of :g:`A <g1:A>` as there are in :g:`/ C D / <g1:/ C D />`, so many parts of :g:`B <g1:B>` are there also in :g:`/ E F / <g1:/ E F />`.
+   as many parts of :g:`A <g1:A>` as there are in :g:`/ C D / <g1:/ C D />`, so many parts of :g:`B <g1:B>` are there also in :g:`/ E F / <g1:/ E F />`
 
 .. step:: assert
 
@@ -59,39 +59,39 @@ G.274 least numbers ratio
 
 .. step:: assert
 
-   Thus the multitude of :g:`/ C G / <g1:/ C G />`, :g:`/ G D / <g1:/ G D />` will be equal to the multitude of :g:`/ E H / <g1:/ E H />`, :g:`/ H F / <g1:/ H F />`.
+   the multitude of :g:`/ C G / <g1:/ C G />`, :g:`/ G D / <g1:/ G D />` will be equal to the multitude of :g:`/ E H / <g1:/ E H />`, :g:`/ H F / <g1:/ H F />`
 
 .. step:: assert
 
-   Since the numbers :g:`/ C G / <g1:/ C G />`, :g:`/ G D / <g1:/ G D />` are :eq:`equal <g1:/ C G / = g1:/ G D />` to one another, and the numbers :g:`/ E H / <g1:/ E H />`, :g:`/ H F / <g1:/ H F />` are also :eq:`equal <g1:/ E H / = g1:/ H F />` to one another, while the multitude of :g:`/ C G / <g1:/ C G />`, :g:`/ G D / <g1:/ G D />` is equal to the multitude of :g:`/ E H / <g1:/ E H />`, :g:`/ H F / <g1:/ H F />`,
+   the numbers :g:`/ C G / <g1:/ C G />`, :g:`/ G D / <g1:/ G D />` :eq:`= <g1:/ C G / = g1:/ G D />`, and the numbers :g:`/ E H / <g1:/ E H />`, :g:`/ H F / <g1:/ H F />` :eq:`= <g1:/ E H / = g1:/ H F />`, while the multitude of :g:`/ C G / <g1:/ C G />`, :g:`/ G D / <g1:/ G D />` is equal to the multitude of :g:`/ E H / <g1:/ E H />`, :g:`/ H F / <g1:/ H F />`,
 
 .. step:: assert
 
-   Therefore, as :g:`/ C G / <g1:/ C G />` is to :g:`/ E H / <g1:/ E H />`, so is :g:`/ G D / <g1:/ G D />` to :g:`/ H F / <g1:/ H F />`.
+   as :g:`/ C G / <g1:/ C G />` is to :g:`/ E H / <g1:/ E H />`, so is :g:`/ G D / <g1:/ G D />` to :g:`/ H F / <g1:/ H F />`
 
 .. step:: assert ∵ there_many_numbers <G.265>
 
-   Therefore also, as one of the :term:`antecedents <G.181>` is to one of the consequents, so will all the antecedents be to all the consequents.
+   also, as one of the :term:`antecedents <G.181>` is to one of the consequents, so will all the antecedents be to all the consequents
 
 .. step:: assert
 
-   Therefore, as :g:`/ C G / <g1:/ C G />` is to :g:`/ E H / <g1:/ E H />`, so is :g:`/ C D / <g1:/ C D />` to :g:`/ E F / <g1:/ E F />`.
+   as :g:`/ C G / <g1:/ C G />` is to :g:`/ E H / <g1:/ E H />`, so is :g:`/ C D / <g1:/ C D />` to :g:`/ E F / <g1:/ E F />`
 
 .. step:: assert
 
-   Therefore :g:`/ C G / <g1:/ C G />`, :g:`/ E H / <g1:/ E H />` are in the same ratio with :g:`/ C D / <g1:/ C D />`, :g:`/ E F / <g1:/ E F />`, being less than they : which is impossible, for by hypothesis :g:`/ C D / <g1:/ C D />`, :g:`/ E F / <g1:/ E F />` are the least numbers of those which have the same ratio with them.
+   :g:`/ C G / <g1:/ C G />`, :g:`/ E H / <g1:/ E H />` are in the same ratio with :g:`/ C D / <g1:/ C D />`, :g:`/ E F / <g1:/ E F />`, being less than they ⇒⇐, for by hypothesis :g:`/ C D / <g1:/ C D />`, :g:`/ E F / <g1:/ E F />` are the least numbers of those which have the same ratio with them
 
 .. step:: assert ∵ number_part_parts <G.255>
 
-   Therefore :g:`/ C D / <g1:/ C D />` is not parts of :g:`A <g1:A>` ; therefore it is a :term:`part of <G.253>` it.
+   :g:`/ C D / <g1:/ C D />` is not parts of :g:`A <g1:A>` ; therefore it is a part of it
 
 .. step:: assert ∵ numbers_proportional_proportional, numbers_proportional_multiple_def <G.266, G.263>
 
-   :g:`/ E F / <g1:/ E F />` is the same part of :g:`B <g1:B>` that :g:`/ C D / <g1:/ C D />` is of :g:`A <g1:A>` .
+   :g:`/ E F / <g1:/ E F />` is the same part of :g:`B <g1:B>` that :g:`/ C D / <g1:/ C D />` is of :g:`A <g1:A>`
 
 .. step:: conclude
 
-   Therefore :g:`/ C D / <g1:/ C D />` measures :g:`A <g1:A>` the same number of times that :g:`/ E F / <g1:/ E F />` measures :g:`B <g1:B>`.
+   :g:`/ C D / <g1:/ C D />` measures :g:`A <g1:A>` the same number of times that :g:`/ E F / <g1:/ E F />` measures :g:`B <g1:B>`
 
 Dependency Graph
 ----------------
@@ -132,21 +132,26 @@ Dependency Graph
      "G.251" -> "G.169";
      "G.253" -> "G.169";
      "G.254" -> "G.169";
+     "G.255" -> "G.169";
      "G.256" -> "G.169";
      "G.274" -> "G.169";
      "G.176" -> "G.170";
      "G.257" -> "G.170";
      "G.180" -> "G.176";
      "G.274" -> "G.176";
+     "G.263" -> "G.180";
      "G.266" -> "G.180";
      "G.194" -> "G.181";
      "G.265" -> "G.181";
+     "G.274" -> "G.181";
      "G.261" -> "G.194";
      "G.262" -> "G.194";
      "G.266" -> "G.194";
      "G.248" -> "G.247";
      "G.249" -> "G.247";
      "G.250" -> "G.247";
+     "G.251" -> "G.247";
+     "G.255" -> "G.247";
      "G.250" -> "G.248";
      "G.251" -> "G.248";
      "G.253" -> "G.248";
@@ -161,18 +166,27 @@ Dependency Graph
      "G.274" -> "G.248";
      "G.250" -> "G.249";
      "G.251" -> "G.249";
+     "G.255" -> "G.249";
      "G.251" -> "G.250";
      "G.255" -> "G.251";
+     "G.254" -> "G.253";
      "G.255" -> "G.253";
+     "G.256" -> "G.253";
      "G.257" -> "G.253";
+     "G.258" -> "G.253";
      "G.261" -> "G.253";
      "G.262" -> "G.253";
      "G.263" -> "G.253";
+     "G.265" -> "G.253";
+     "G.266" -> "G.253";
      "G.255" -> "G.254";
      "G.258" -> "G.254";
      "G.261" -> "G.254";
      "G.262" -> "G.254";
      "G.263" -> "G.254";
+     "G.265" -> "G.254";
+     "G.266" -> "G.254";
+     "G.274" -> "G.254";
      "G.274" -> "G.255";
      "G.257" -> "G.256";
      "G.263" -> "G.256";

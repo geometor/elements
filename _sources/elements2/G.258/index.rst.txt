@@ -10,7 +10,7 @@
 :categories: theorem, proof, number-theory
 :category: theorem, proof, number-theory
 :tags: book-vii, point, segment, number, parts-non-aliquot, part-aliquot
-:dependencies: G.248, G.254, G.257
+:dependencies: G.248, G.253, G.254, G.257
 :excerpt: If a number be parts of a number, and another be the same parts of another, the sum is the same parts of the sum that the one is of the one.
 
 .. _G.258:
@@ -43,7 +43,7 @@ G.258 number parts number
 
 .. step:: assert
 
-   Therefore, as many parts of :g:`C <g1:C>` as there are in :g:`/ A B / <g1:/ A B />`, so many parts of :g:`F <g1:F>` are there also in :g:`/ D E / <g1:/ D E />`.
+   as many parts of :g:`C <g1:C>` as there are in :g:`/ A B / <g1:/ A B />`, so many parts of :g:`F <g1:F>` are there also in :g:`/ D E / <g1:/ D E />`
 
 .. step:: assert
 
@@ -51,7 +51,7 @@ G.258 number parts number
 
 .. step:: assert
 
-   Thus the multitude of :g:`/ A G / <g1:/ A G />`, :g:`/ G B / <g1:/ G B />` will be equal to the multitude of :g:`/ D H / <g1:/ D H />`, :g:`/ H E / <g1:/ H E />`.
+   the multitude of :g:`/ A G / <g1:/ A G />`, :g:`/ G B / <g1:/ G B />` will be equal to the multitude of :g:`/ D H / <g1:/ D H />`, :g:`/ H E / <g1:/ H E />`
 
 .. step:: assert
 
@@ -59,7 +59,7 @@ G.258 number parts number
 
 .. step:: assert ∵ number_part_number <G.257>
 
-   Therefore, whatever part :g:`/ A G / <g1:/ A G />` is of :g:`C <g1:C>`, the same part also is the sum of :g:`/ A G / <g1:/ A G />`, :g:`/ D H / <g1:/ D H />` of the sum of :g:`C <g1:C>`, :g:`F <g1:F>`.
+   whatever part :g:`/ A G / <g1:/ A G />` is of :g:`C <g1:C>`, the same part also is the sum of :g:`/ A G / <g1:/ A G />`, :g:`/ D H / <g1:/ D H />` of the sum of :g:`C <g1:C>`, :g:`F <g1:F>`
 
 .. step:: assert
 
@@ -67,11 +67,11 @@ G.258 number parts number
 
 .. step:: assert
 
-   Whatever part :g:`/ G B / <g1:/ G B />` is of :g:`C <g1:C>`, the same part also is the sum of :g:`/ G B / <g1:/ G B />`, :g:`/ H E / <g1:/ H E />` of the sum of :g:`C <g1:C>`, :g:`F <g1:F>`.
+   Whatever part :g:`/ G B / <g1:/ G B />` is of :g:`C <g1:C>`, the same part also is the sum of :g:`/ G B / <g1:/ G B />`, :g:`/ H E / <g1:/ H E />` of the sum of :g:`C <g1:C>`, :g:`F <g1:F>`
 
 .. step:: conclude
 
-   Therefore, whatever parts :g:`/ A B / <g1:/ A B />` is of :g:`C <g1:C>`, the same parts also is the sum of :g:`/ A B / <g1:/ A B />`, :g:`/ D E / <g1:/ D E />` of the sum of :g:`C <g1:C>`, :g:`F <g1:F>`.
+   whatever parts :g:`/ A B / <g1:/ A B />` is of :g:`C <g1:C>`, the same parts also is the sum of :g:`/ A B / <g1:/ A B />`, :g:`/ D E / <g1:/ D E />` of the sum of :g:`C <g1:C>`, :g:`F <g1:F>`
 
 Dependency Graph
 ----------------
@@ -102,7 +102,10 @@ Dependency Graph
      "G.256" -> "G.248";
      "G.257" -> "G.248";
      "G.258" -> "G.248";
+     "G.254" -> "G.253";
+     "G.256" -> "G.253";
      "G.257" -> "G.253";
+     "G.258" -> "G.253";
      "G.258" -> "G.254";
      "G.257" -> "G.256";
      "G.258" -> "G.257";

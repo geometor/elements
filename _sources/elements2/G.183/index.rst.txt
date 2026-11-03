@@ -10,7 +10,7 @@
 :categories: theorem, proof, proportions, magnitudes
 :category: theorem, proof, proportions, magnitudes
 :tags: book-v, point, in-the-same-ratio, multiple, proportional, invertendo, ratio, equality, porism
-:dependencies: G.176, G.180, G.182
+:dependencies: G.170, G.176, G.180, G.182
 :excerpt: Equal magnitudes have to the same the same ratio, as also has the same to equal magnitudes.
 
 .. _G.183:
@@ -28,7 +28,7 @@ G.183 equal magnitudes ratio
 .. signature:: theorem
 
    | :fn:`equal_magnitudes_ratio <G.183>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`)
-   | **given** :g:`A <g1:A>`, :g:`B <g1:B>` be :eq:`equal <g1:A = g1:B>` magnitudes and :g:`C <g1:C>` any other, chance, magnitude
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>` be :eq:`= <g1:A = g1:B>` magnitudes and :g:`C <g1:C>` any other, chance, magnitude
    | **prove** each of the magnitudes :g:`A <g1:A>`, :g:`B <g1:B>` has the same ratio to :g:`C <g1:C>`, and :g:`C <g1:C>` has the same ratio to each of the magnitudes :g:`A <g1:A>`, :g:`B <g1:B>`
 
 .. picture:: g1.svg
@@ -36,7 +36,7 @@ G.183 equal magnitudes ratio
 
 .. step:: given
 
-   :g:`A <g1:A>`, :g:`B <g1:B>` be :eq:`equal <g1:A = g1:B>` magnitudes and :g:`C <g1:C>` any other, chance, magnitude
+   :g:`A <g1:A>`, :g:`B <g1:B>` be :eq:`= <g1:A = g1:B>` magnitudes and :g:`C <g1:C>` any other, chance, magnitude
 
 .. step:: construct
 
@@ -44,23 +44,23 @@ G.183 equal magnitudes ratio
 
 .. step:: assert
 
-   Since :g:`D <g1:D>` is the same multiple of :g:`A <g1:A>` that :g:`E <g1:E>` is of :g:`B <g1:B>` → while :g:`A <g1:A>` is :eq:`equal <g1:A = g1:B>` to :g:`B <g1:B>`,
+   :g:`D <g1:D>` is the same multiple of :g:`A <g1:A>` that :g:`E <g1:E>` is of :g:`B <g1:B>` → while :g:`A <g1:A>` :eq:`= <g1:A = g1:B>` :g:`B <g1:B>`,
 
 .. step:: assert
 
-   Therefore :g:`D <g1:D>` is :eq:`equal <g1:D = g1:E>` to :g:`E <g1:E>`.
+   :g:`D <g1:D>` :eq:`= <g1:D = g1:E>` :g:`E <g1:E>`
 
 .. step:: assert
 
-   :g:`F <g1:F>` is another, chance, magnitude.
+   :g:`F <g1:F>` is another, chance, magnitude
 
 .. step:: assert
 
-   If therefore :g:`D <g1:D>` is in excess of :g:`F <g1:F>`, :g:`E <g1:E>` is also in excess of :g:`F <g1:F>`, if :eq:`equal <g1:D = g1:F>` to it, :eq:`equal <g1:E = g1:F>`
+   If therefore :g:`D <g1:D>` is in excess of :g:`F <g1:F>`, :g:`E <g1:E>` is also in excess of :g:`F <g1:F>`, if :eq:`= <g1:D = g1:F>` to it, :eq:`= <g1:E = g1:F>`
 
 .. step:: assert
 
-   And, if less, less.
+   if less, less
 
 .. step:: assert
 
@@ -68,27 +68,27 @@ G.183 equal magnitudes ratio
 
 .. step:: assert ∵ magnitudes_said_ratio_def <G.176>
 
-   Therefore, as :g:`A <g1:A>` is to :g:`C <g1:C>`, so is :g:`B <g1:B>` to :g:`C <g1:C>`.
+   as :g:`A <g1:A>` is to :g:`C <g1:C>`, so is :g:`B <g1:B>` to :g:`C <g1:C>`
 
 .. step:: assert
 
-   I say next that :g:`C <g1:C>` also has the same ratio to each of the magnitudes :g:`A <g1:A>`, :g:`B <g1:B>`.
+   I say next that :g:`C <g1:C>` also has the same ratio to each of the magnitudes :g:`A <g1:A>`, :g:`B <g1:B>`
 
 .. step:: assert
 
-   With the same construction, we can prove similarly that :g:`D <g1:D>` is :eq:`equal <g1:D = g1:E>` to :g:`E <g1:E>`
+   With the same construction, we can prove similarly that :g:`D <g1:D>` :eq:`= <g1:D = g1:E>` :g:`E <g1:E>`
 
 .. step:: assert
 
-   And :g:`F <g1:F>` is some other magnitude.
+   :g:`F <g1:F>` is some other magnitude
 
 .. step:: assert
 
-   If therefore :g:`F <g1:F>` is in excess of :g:`D <g1:D>`, it is also in excess of :g:`E <g1:E>`, if :eq:`equal <g1:F = g1:D>`, :eq:`equal <g1:F = g1:E>`
+   If therefore :g:`F <g1:F>` is in excess of :g:`D <g1:D>`, it is also in excess of :g:`E <g1:E>`, if :eq:`= <g1:F = g1:D>`, :eq:`= <g1:F = g1:E>`
 
 .. step:: assert
 
-   And, if less, less.
+   if less, less
 
 .. step:: assert
 
@@ -96,7 +96,7 @@ G.183 equal magnitudes ratio
 
 .. step:: conclude ∵ magnitudes_said_ratio_def <G.176>
 
-   Therefore, as :g:`C <g1:C>` is to :g:`A <g1:A>`, so is :g:`C <g1:C>` to :g:`B <g1:B>`.
+   as :g:`C <g1:C>` is to :g:`A <g1:A>`, so is :g:`C <g1:C>` to :g:`B <g1:B>`
 
 .. porism::
 
@@ -121,6 +121,7 @@ Dependency Graph
      "G.183" [label="G.183", tooltip="G.183 (V.7): Equal magnitudes have to the same the same ratio, as also has the same to equal magnitudes.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.170" -> "G.169";
      "G.176" -> "G.170";
+     "G.183" -> "G.170";
      "G.180" -> "G.176";
      "G.183" -> "G.176";
      "G.183" -> "G.180";

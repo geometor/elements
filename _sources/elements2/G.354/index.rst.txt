@@ -10,7 +10,7 @@
 :categories: theorem, proof, number-theory
 :category: theorem, proof, number-theory
 :tags: book-ix, segment, odd-number, unit, even-number, number
-:dependencies: G.351, G.352, G.353
+:dependencies: G.247, G.351, G.352, G.353
 :excerpt: If as many odd numbers as we please be added together, and their multitude be odd, the whole is odd.
 
 .. _G.354:
@@ -28,7 +28,7 @@ G.354 many odd numbers
 .. signature:: theorem
 
    | :fn:`many_odd_numbers_ix_23 <G.354>`\ ()
-   | **prove** the whole :g:`/ A D / <g1:/ A D />` is also odd
+   | **prove** :g:`/ A D / <g1:/ A D />` is also odd
 
 .. picture:: g1.svg
    :alt: Book IX, Proposition 23
@@ -43,23 +43,23 @@ G.354 many odd numbers
 
 .. step:: assert ∵ odd_number_divisible_def <G.352>
 
-   Therefore the remainder :g:`/ C E / <g1:/ C E />` is :term:`even <G.302>`.
+   :g:`/ C E / <g1:/ C E />` is even
 
 .. step:: assert ∵ many_odd_numbers <G.353>
 
-   :g:`/ A C / <g1:/ A C />` is also even ;
+   :g:`/ A C / <g1:/ A C />` is also even
 
 .. step:: assert ∵ many_even_numbers <G.351>
 
-   Therefore the whole :g:`/ A E / <g1:/ A E />` is also even.
+   :g:`/ A E / <g1:/ A E />` is also even
 
 .. step:: assert
 
-   :g:`/ D E / <g1:/ D E />` is an unit.
+   :g:`/ D E / <g1:/ D E />` is an unit
 
 .. step:: conclude ∵ odd_number_divisible_def <G.352>
 
-   Therefore :g:`/ A D / <g1:/ A D />` is odd.
+   :g:`/ A D / <g1:/ A D />` is odd
 
 Dependency Graph
 ----------------
@@ -80,7 +80,10 @@ Dependency Graph
      "G.354" [label="G.354", tooltip="G.354 (IX.23): If as many odd numbers as we please be added together, and their multitude be odd, the whole is odd.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.248" -> "G.247";
      "G.352" -> "G.247";
+     "G.353" -> "G.247";
+     "G.354" -> "G.247";
      "G.351" -> "G.248";
+     "G.353" -> "G.248";
      "G.351" -> "G.302";
      "G.352" -> "G.302";
      "G.353" -> "G.302";

@@ -12,7 +12,7 @@ G.550 there prisms equal — Code
 
 .. enunciation::
 
-   If there be two :term:`prisms <G.537>` of equal :term:`height <G.209>`, and one have a parallelogram as base and the other a :term:`triangle <G.11>`, and if the parallelogram be double of the triangle, the prisms is equal.
+   If there be two :term:`prisms <G.537>` of equal :term:`height <G.209>`, and one have a parallelogram as base and the other a :term:`triangle <G.12>`, and if the parallelogram be double of the triangle, the prisms is equal.
 
 .. picture:: g1.svg
 

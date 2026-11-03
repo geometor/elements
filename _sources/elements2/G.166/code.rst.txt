@@ -12,7 +12,7 @@ G.166 pentagon equilateral equiangular — Code
 
 .. enunciation::
 
-   About a given pentagon, which is :term:`equilateral <G.12>` and equiangular, to circumscribe a :term:`circle <G.10>`.
+   About a given pentagon, which is :term:`equilateral <G.13>` and equiangular, to circumscribe a :term:`circle <G.10>`.
 
 .. picture:: g1.svg
 
