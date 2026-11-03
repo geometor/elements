@@ -10,7 +10,7 @@
 :categories: theorem, proof, solid-geometry
 :category: theorem, proof, solid-geometry
 :tags: book-xi, point, segment, angle, straight-line, right-angles-to-plane, plane-surface, right-angle, plane-angle, plane, equality, reductio-ad-absurdum
-:dependencies: G.1, G.4, G.504, G.505
+:dependencies: G.1, G.4, G.7, G.33, G.504, G.505
 :excerpt: From the same point two segments cannot be set up at right angles to the same plane on the same side.
 
 .. _G.515:
@@ -28,7 +28,7 @@ G.515 point segments set
 .. signature:: theorem
 
    | :fn:`point_segments_set <G.515>`\ ()
-   | **prove** They are in one plane: which is impossible
+   | **prove** They are in one plane ⇒⇐
 
 .. picture:: g1.svg
    :alt: Proposition 13
@@ -39,7 +39,7 @@ G.515 point segments set
 
 .. step:: assert ∵ planes_cut_common <G.504>
 
-   It will then make, as section through :g:`A <g1:A>` in the plane of reference, a segment.
+   It will then make, as section through :g:`A <g1:A>` in the plane of reference, a segment
 
 .. step:: assert
 
@@ -47,31 +47,31 @@ G.515 point segments set
 
 .. step:: assert
 
-   Therefore :g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />`, :g:`/ D A E / <g1:/ D A E />` are in one plane.
+   :g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />`, :g:`/ D A E / <g1:/ D A E />` are in one plane
 
 .. step:: assert ∵ segment_right_angles_def <G.505>
 
-   And, since :g:`/ C A / <g1:/ C A />` is at right angles to the plane of reference, it will also make :term:`right angles <G.32>` with all the segments which meet it and are in the plane of reference.
+   since :g:`/ C A / <g1:/ C A />` is at right angles to the plane of reference, it will also make :term:`right angles <G.33>` with all the segments which meet it and are in the plane of reference
 
 .. step:: assert
 
-   :g:`/ D A E / <g1:/ D A E />` meets it and is in the plane of reference;
+   :g:`/ D A E / <g1:/ D A E />` meets it and is in the plane of reference
 
 .. step:: assert
 
-   Therefore :g:`< C A E ) <g1:< C A E )>` is right.
+   :g:`< C A E ) <g1:< C A E )>` is right
 
 .. step:: assert
 
-   For the same reason :g:`< B A E ) <g1:< B A E )>` is also right;
+   For the same reason :g:`< B A E ) <g1:< B A E )>` is also right
 
 .. step:: assert
 
-   Therefore :g:`< C A E ) <g1:< C A E )>` is :eq:`equal <g1:< C A E ) = g1:< B A E )>` to :g:`< B A E ) <g1:< B A E )>`.
+   :g:`< C A E ) <g1:< C A E )>` :eq:`= <g1:< C A E ) = g1:< B A E )>` :g:`< B A E ) <g1:< B A E )>`
 
 .. step:: conclude
 
-   They are in one plane: which is impossible.
+   They are in one plane ⇒⇐
 
 Dependency Graph
 ----------------
@@ -90,7 +90,7 @@ Dependency Graph
      "G.5" [label="G.5", tooltip="G.5 (I.def.5): A surface is that which has length and breadth only.", fillcolor="#224422", URL="../G.5/index.html", target="_top"];
      "G.7" [label="G.7", tooltip="G.7 (I.def.7): A plane surface lies evenly with the lines on itself.", fillcolor="#224422", URL="../G.7/index.html", target="_top"];
      "G.22" [label="G.22", tooltip="G.22 (I.def.8): A plane angle is the inclination to one another of two lines or arcs in a plane that meet and do not lie on the same line.", fillcolor="#224422", URL="../G.22/index.html", target="_top"];
-     "G.32" [label="G.32", tooltip="G.32 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.32/index.html", target="_top"];
+     "G.33" [label="G.33", tooltip="G.33 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.33/index.html", target="_top"];
      "G.504" [label="G.504", tooltip="G.504 (XI.3): If two planes cut one another, their common section is a segment.", fillcolor="#222244", URL="../G.504/index.html", target="_top"];
      "G.505" [label="G.505", tooltip="G.505 (XI.def.3): Asegment isat right angles to a plane, when it makesright angles with all the segments which meet it and are in theplane.", fillcolor="#224422", URL="../G.505/index.html", target="_top"];
      "G.515" [label="G.515", tooltip="G.515 (XI.13): From the same point two segments cannot be set up at right angles to the same plane on the same side.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
@@ -100,11 +100,15 @@ Dependency Graph
      "G.515" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
+     "G.7" -> "G.2";
      "G.22" -> "G.2";
+     "G.33" -> "G.2";
+     "G.504" -> "G.2";
      "G.4" -> "G.3";
+     "G.504" -> "G.3";
      "G.7" -> "G.4";
      "G.22" -> "G.4";
-     "G.32" -> "G.4";
+     "G.33" -> "G.4";
      "G.504" -> "G.4";
      "G.505" -> "G.4";
      "G.515" -> "G.4";
@@ -112,8 +116,10 @@ Dependency Graph
      "G.22" -> "G.7";
      "G.504" -> "G.7";
      "G.505" -> "G.7";
-     "G.32" -> "G.22";
-     "G.505" -> "G.32";
+     "G.515" -> "G.7";
+     "G.33" -> "G.22";
+     "G.505" -> "G.33";
+     "G.515" -> "G.33";
      "G.515" -> "G.504";
      "G.515" -> "G.505";
    }

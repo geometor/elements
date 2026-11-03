@@ -10,7 +10,7 @@
 :categories: theorem, proof, number-theory
 :category: theorem, proof, number-theory
 :tags: book-ix, point, segment, prime-number, number, part-aliquot, unit, prime, reductio-ad-absurdum
-:dependencies: G.283, G.287
+:dependencies: G.169, G.247, G.248, G.283, G.287
 :excerpt: Prime numbers are more than any assigned multitude of prime numbers.
 
 .. _G.350:
@@ -52,7 +52,7 @@ G.350 prime numbers more
 
 .. step:: assert
 
-   Then :g:`/ E F / <g1:/ E F />` is either prime or not.
+   Then :g:`/ E F / <g1:/ E F />` is either prime or not
 
 .. step:: assert
 
@@ -60,7 +60,7 @@ G.350 prime numbers more
 
 .. step:: assert
 
-   Then the prime numbers :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`/ E F / <g1:/ E F />` have been found which are more than :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`.
+   Then the prime numbers :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`/ E F / <g1:/ E F />` have been found which are more than :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`
 
 .. step:: assert
 
@@ -68,7 +68,7 @@ G.350 prime numbers more
 
 .. step:: assert ∵ composite_number_measured <G.287>
 
-   Therefore it is measured by some prime number.
+   it is measured by some prime number
 
 .. step:: construct
 
@@ -76,35 +76,35 @@ G.350 prime numbers more
 
 .. step:: assert
 
-   If possible, let it be so.
+   If possible, let it be so
 
 .. step:: assert
 
-   Now :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` measure :g:`/ D E / <g1:/ D E />` ;
+   Now :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` measure :g:`/ D E / <g1:/ D E />`
 
 .. step:: assert
 
-   Therefore :g:`G <g1:G>` also will measure :g:`/ D E / <g1:/ D E />`.
+   :g:`G <g1:G>` also will measure :g:`/ D E / <g1:/ D E />`
 
 .. step:: assert
 
-   It also measures :g:`/ E F / <g1:/ E F />`.
+   It also measures :g:`/ E F / <g1:/ E F />`
 
 .. step:: assert
 
-   Therefore :g:`G <g1:G>`, being a number, will measure the remainder, the unit :g:`/ D F / <g1:/ D F />` : which is absurd.
+   :g:`G <g1:G>`, being a number, will measure the remainder, the unit :g:`/ D F / <g1:/ D F />` ⇒⇐
 
 .. step:: assert
 
-   Therefore :g:`G <g1:G>` is not the same with any one of the numbers :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`.
+   :g:`G <g1:G>` is not the same with any one of the numbers :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`
 
 .. step:: assert
 
-   By hypothesis it is prime.
+   By hypothesis it is prime
 
 .. step:: conclude
 
-   Therefore the prime numbers :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`G <g1:G>` have been found which are more than the assigned multitude of :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`.
+   the prime numbers :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`G <g1:G>` have been found which are more than the assigned multitude of :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`
 
 Dependency Graph
 ----------------
@@ -119,16 +119,25 @@ Dependency Graph
      "G.169" [label="G.169", tooltip="G.169 (V.def.1): A magnitude is apart of a magnitude, the less of the greater, when it measures the greater.", fillcolor="#224422", URL="../G.169/index.html", target="_top"];
      "G.247" [label="G.247", tooltip="G.247 (VII.def.1): Anunit is that by virtue of which each of the things that exist is called one.", fillcolor="#224422", URL="../G.247/index.html", target="_top"];
      "G.248" [label="G.248", tooltip="G.248 (VII.def.2): Anumber is a multitude composed ofunits.", fillcolor="#224422", URL="../G.248/index.html", target="_top"];
+     "G.253" [label="G.253", tooltip="G.253 (VII.def.3): Anumber is apart of a number, the less of the greater, when itmeasures the greater;", fillcolor="#224422", URL="../G.253/index.html", target="_top"];
      "G.283" [label="G.283", tooltip="G.283 (VII.def.11): Aprime number is that which ismeasured by anunit alone.", fillcolor="#224422", URL="../G.283/index.html", target="_top"];
      "G.286" [label="G.286", tooltip="G.286 (VII.def.13): Acomposite number is that which ismeasured by somenumber.", fillcolor="#224422", URL="../G.286/index.html", target="_top"];
      "G.287" [label="G.287", tooltip="G.287 (VII.31): Any composite number is measured by some prime number.", fillcolor="#222244", URL="../G.287/index.html", target="_top"];
      "G.350" [label="G.350", tooltip="G.350 (IX.20): Prime numbers are more than any assigned multitude of prime numbers.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.253" -> "G.169";
      "G.283" -> "G.169";
      "G.286" -> "G.169";
      "G.287" -> "G.169";
+     "G.350" -> "G.169";
      "G.248" -> "G.247";
      "G.283" -> "G.247";
+     "G.350" -> "G.247";
+     "G.253" -> "G.248";
      "G.286" -> "G.248";
+     "G.287" -> "G.248";
+     "G.350" -> "G.248";
+     "G.283" -> "G.253";
+     "G.286" -> "G.253";
      "G.287" -> "G.283";
      "G.350" -> "G.283";
      "G.287" -> "G.286";

@@ -12,7 +12,7 @@ G.100 circle segment center — Code
 
 .. enunciation::
 
-   If in a :term:`circle <G.10>` a :term:`segment <G.4>` through the :term:`center <G.14>` bisect a segment not through the center, it also cuts it :term:`at right angles <G.32>`; and if it cut it at right angles, it also bisects it.
+   If in a :term:`circle <G.10>` a :term:`segment <G.4>` through the :term:`center <G.11>` bisect a segment not through the center, it also cuts it :term:`at right angles <G.33>`; and if it cut it at right angles, it also bisects it.
 
 .. picture:: g1.svg
 

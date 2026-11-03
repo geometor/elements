@@ -12,7 +12,7 @@ G.213 equiangular triangles sides — Code
 
 .. enunciation::
 
-   In equiangular :term:`triangles <G.11>` the sides about the equal :term:`angles <G.22>` are :term:`proportional <G.180>`, and those are corresponding sides which subtend the equal angles.
+   In equiangular :term:`triangles <G.12>` the sides about the equal :term:`angles <G.22>` are :term:`proportional <G.180>`, and those are corresponding sides which subtend the equal angles.
 
 .. picture:: g1.svg
 

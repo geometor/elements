@@ -12,7 +12,7 @@ G.585 angles equilateral pentagon — Heath
 
 .. enunciation::
 
-   If three :term:`angles <G.22>` of an :term:`equilateral <G.12>` pentagon, taken either in order or not in order, be equal, the pentagon will be equiangular.
+   If three :term:`angles <G.22>` of an :term:`equilateral <G.13>` pentagon, taken either in order or not in order, be equal, the pentagon will be equiangular.
 
 For in the :eq:`equilateral <g1:/ A B / = g1:/ B C / = g1:/ C D / = g1:/ D E / = g1:/ E A />` pentagon :g:`< A B C D E > <g1:< A B C D E >>` let, first, three angles taken in order, those at :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, be :eq:`equal <g1:< B A E ) = g1:< C B A ) = g1:< B C D )>` to one another; I say that the pentagon :g:`< A B C D E > <g1:< A B C D E >>` is equiangular.
 
@@ -27,9 +27,9 @@ For let :g:`/ A C / <g1:/ A C />`, :g:`/ B E / <g1:/ B E />`, :g:`/ F D / <g1:/ 
 
 .. assertion::
 
-   therefore the base :g:`/ A C / <g1:/ A C />` is :eq:`equal <g1:/ A C / = g1:/ B E />` to the base :g:`/ B E / <g1:/ B E />`, the :term:`triangle <G.11>` :g:`< A B C > <g1:< A B C >>` is :eq:`equal <g1:< A B C > = g1:< A B E >>` to the triangle :g:`< A B E > <g1:< A B E >>`, and the remaining angles will be :eq:`equal <g1:< B C A ) = g1:< B E A ); g1:< A B E ) = g1:< C A B )>` to the remaining angles, namely those which the equal sides subtend, :just:`[G.24] <G.24>` that is, the angle :g:`< B C A ) <g1:< B C A )>` to the angle :g:`< B E A ) <g1:< B E A )>`, and the angle :g:`< A B E ) <g1:< A B E )>` to the angle :g:`< C A B ) <g1:< C A B )>`;
+   therefore the base :g:`/ A C / <g1:/ A C />` is :eq:`equal <g1:/ A C / = g1:/ B E />` to the base :g:`/ B E / <g1:/ B E />`, the :term:`triangle <G.12>` :g:`< A B C > <g1:< A B C >>` is :eq:`equal <g1:< A B C > = g1:< A B E >>` to the triangle :g:`< A B E > <g1:< A B E >>`, and the remaining angles will be :eq:`equal <g1:< B C A ) = g1:< B E A ); g1:< A B E ) = g1:< C A B )>` to the remaining angles, namely those which the equal sides subtend, :just:`[G.24] <G.24>` that is, the angle :g:`< B C A ) <g1:< B C A )>` to the angle :g:`< B E A ) <g1:< B E A )>`, and the angle :g:`< A B E ) <g1:< A B E )>` to the angle :g:`< C A B ) <g1:< C A B )>`;
 
-.. assertion:: [G.26] <G.26>
+.. assertion:: [G.27] <G.27>
 
    hence the side :g:`/ A F / <g1:/ A F />` is also :eq:`equal <g1:/ A F / = g1:/ B F />` to the side :g:`/ B F / <g1:/ B F />`.
 
@@ -45,7 +45,7 @@ For let :g:`/ A C / <g1:/ A C />`, :g:`/ B E / <g1:/ B E />`, :g:`/ F D / <g1:/ 
 
    But :g:`/ C D / <g1:/ C D />` is also :eq:`equal <g1:/ C D / = g1:/ D E />` to :g:`/ D E / <g1:/ D E />`. Therefore the two sides :g:`/ F C / <g1:/ F C />`, :g:`/ C D / <g1:/ C D />` are :eq:`equal <g1:/ F C / = g1:/ F E /; g1:/ C D / = g1:/ E D />` to the two sides :g:`/ F E / <g1:/ F E />`, :g:`/ E D / <g1:/ E D />`; and the base :g:`/ F D / <g1:/ F D />` is common to them;
 
-.. assertion:: [G.28] <G.28>
+.. assertion:: [G.29] <G.29>
 
    therefore the angle :g:`< F C D ) <g1:< F C D )>` is :eq:`equal <g1:< F C D ) = g1:< F E D )>` to the angle :g:`< F E D ) <g1:< F E D )>`.
 
@@ -125,10 +125,10 @@ Dependency Graph
      "G.8" [label="G.8", tooltip="G.8 (I.def.13): A boundary is the extremity of anything.", fillcolor="#224422", URL="../G.8/index.html", target="_top"];
      "G.9" [label="G.9", tooltip="G.9 (I.def.14): A figure is that which is contained by any boundary or boundaries.", fillcolor="#224422", URL="../G.9/index.html", target="_top"];
      "G.10" [label="G.10", tooltip="G.10 (I.def.15): A circle ( A B ) is a plane figure contained by one arc defined by a center A and a point B establishing its defining radius / A B /, such that all segments / A B /, / A C /, / A D...", fillcolor="#224422", URL="../G.10/index.html", target="_top"];
-     "G.11" [label="G.11", tooltip="G.11 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
-     "G.12" [label="G.12", tooltip="G.12 (I.def.20): Of trilateral figures, an equilateral triangle < A B C > has three equal sides, an isosceles triangle < D E F > has two equal sides, and a scalene triangle < G H K > has three uneq...", fillcolor="#224422", URL="../G.12/index.html", target="_top"];
-     "G.13" [label="G.13", tooltip="G.13 (I.post.1): Construct a segment / A B / between any two points A, B.", fillcolor="#444422", URL="../G.13/index.html", target="_top"];
-     "G.14" [label="G.14", tooltip="G.14 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.", fillcolor="#224422", URL="../G.14/index.html", target="_top"];
+     "G.11" [label="G.11", tooltip="G.11 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
+     "G.12" [label="G.12", tooltip="G.12 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.12/index.html", target="_top"];
+     "G.13" [label="G.13", tooltip="G.13 (I.def.20): Of trilateral figures, an equilateral triangle < A B C > has three equal sides, an isosceles triangle < D E F > has two equal sides, and a scalene triangle < G H K > has three uneq...", fillcolor="#224422", URL="../G.13/index.html", target="_top"];
+     "G.14" [label="G.14", tooltip="G.14 (I.post.1): Construct a segment / A B / between any two points A, B.", fillcolor="#444422", URL="../G.14/index.html", target="_top"];
      "G.15" [label="G.15", tooltip="G.15 (I.post.3): Construct a circle ( A B ) with center A and defining radius point B.", fillcolor="#444422", URL="../G.15/index.html", target="_top"];
      "G.16" [label="G.16", tooltip="G.16 (I.cn.1): Things equal to the same thing are equal to one another.", fillcolor="#442222", URL="../G.16/index.html", target="_top"];
      "G.17" [label="G.17", tooltip="G.17 (I.1): Construct an equilateral triangle on a given segment.", fillcolor="#222244", URL="../G.17/index.html", target="_top"];
@@ -140,30 +140,42 @@ Dependency Graph
      "G.23" [label="G.23", tooltip="G.23 (I.cn.4): Things / A B /, / D E / that coincide with one another are equal to one another.", fillcolor="#442222", URL="../G.23/index.html", target="_top"];
      "G.24" [label="G.24", tooltip="G.24 (I.4): Triangles with two sides and the included angle equal are congruent (SAS).", fillcolor="#222244", URL="../G.24/index.html", target="_top"];
      "G.25" [label="G.25", tooltip="G.25 (I.5): In an isosceles triangle, the angles at the base are equal, and if the equal sides are extended, the angles under the base are equal.", fillcolor="#222244", URL="../G.25/index.html", target="_top"];
-     "G.26" [label="G.26", tooltip="G.26 (I.6): If two angles of a triangle are equal, the sides subtending the equal angles are also equal.", fillcolor="#222244", URL="../G.26/index.html", target="_top"];
-     "G.27" [label="G.27", tooltip="G.27 (I.7): On the same segment and on the same side, there cannot be constructed two distinct triangles with both pairs of conterminous sides equal.", fillcolor="#222244", URL="../G.27/index.html", target="_top"];
-     "G.28" [label="G.28", tooltip="G.28 (I.8): Triangles with all three corresponding sides equal have their corresponding angles equal (SSS).", fillcolor="#222244", URL="../G.28/index.html", target="_top"];
+     "G.26" [label="G.26", tooltip="G.26 (I.cn.5): The whole is greater than the part.", fillcolor="#442222", URL="../G.26/index.html", target="_top"];
+     "G.27" [label="G.27", tooltip="G.27 (I.6): If two angles of a triangle are equal, the sides subtending the equal angles are also equal.", fillcolor="#222244", URL="../G.27/index.html", target="_top"];
+     "G.28" [label="G.28", tooltip="G.28 (I.7): On the same segment and on the same side, there cannot be constructed two distinct triangles with both pairs of conterminous sides equal.", fillcolor="#222244", URL="../G.28/index.html", target="_top"];
+     "G.29" [label="G.29", tooltip="G.29 (I.8): Triangles with all three corresponding sides equal have their corresponding angles equal (SSS).", fillcolor="#222244", URL="../G.29/index.html", target="_top"];
      "G.585" [label="G.585", tooltip="G.585 (XIII.7): If three angles of an equilateral pentagon, taken either in order or not in order, be equal, the pentagon is equiangular.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
      "G.10" -> "G.1";
-     "G.13" -> "G.1";
+     "G.11" -> "G.1";
      "G.14" -> "G.1";
+     "G.15" -> "G.1";
+     "G.17" -> "G.1";
      "G.20" -> "G.1";
-     "G.27" -> "G.1";
+     "G.21" -> "G.1";
+     "G.24" -> "G.1";
+     "G.25" -> "G.1";
+     "G.28" -> "G.1";
+     "G.29" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
      "G.6" -> "G.2";
+     "G.7" -> "G.2";
+     "G.18" -> "G.2";
      "G.22" -> "G.2";
      "G.4" -> "G.3";
+     "G.6" -> "G.3";
      "G.8" -> "G.3";
      "G.20" -> "G.3";
-     "G.27" -> "G.3";
+     "G.28" -> "G.3";
+     "G.29" -> "G.3";
      "G.7" -> "G.4";
      "G.10" -> "G.4";
      "G.11" -> "G.4";
-     "G.13" -> "G.4";
+     "G.12" -> "G.4";
+     "G.14" -> "G.4";
      "G.17" -> "G.4";
      "G.18" -> "G.4";
      "G.20" -> "G.4";
@@ -171,8 +183,8 @@ Dependency Graph
      "G.22" -> "G.4";
      "G.24" -> "G.4";
      "G.25" -> "G.4";
-     "G.27" -> "G.4";
      "G.28" -> "G.4";
+     "G.29" -> "G.4";
      "G.6" -> "G.5";
      "G.7" -> "G.5";
      "G.10" -> "G.6";
@@ -180,24 +192,33 @@ Dependency Graph
      "G.22" -> "G.7";
      "G.9" -> "G.8";
      "G.10" -> "G.9";
-     "G.24" -> "G.9";
-     "G.26" -> "G.9";
-     "G.14" -> "G.10";
+     "G.12" -> "G.9";
+     "G.11" -> "G.10";
      "G.15" -> "G.10";
      "G.17" -> "G.10";
+     "G.20" -> "G.10";
      "G.21" -> "G.10";
-     "G.12" -> "G.11";
-     "G.24" -> "G.11";
-     "G.26" -> "G.11";
-     "G.28" -> "G.11";
+     "G.15" -> "G.11";
+     "G.17" -> "G.11";
+     "G.20" -> "G.11";
+     "G.21" -> "G.11";
+     "G.13" -> "G.12";
      "G.17" -> "G.12";
+     "G.20" -> "G.12";
+     "G.24" -> "G.12";
      "G.25" -> "G.12";
-     "G.585" -> "G.12";
+     "G.27" -> "G.12";
+     "G.28" -> "G.12";
+     "G.29" -> "G.12";
      "G.17" -> "G.13";
-     "G.20" -> "G.13";
      "G.25" -> "G.13";
-     "G.27" -> "G.13";
-     "G.15" -> "G.14";
+     "G.585" -> "G.13";
+     "G.17" -> "G.14";
+     "G.20" -> "G.14";
+     "G.25" -> "G.14";
+     "G.27" -> "G.14";
+     "G.28" -> "G.14";
+     "G.585" -> "G.14";
      "G.17" -> "G.15";
      "G.20" -> "G.15";
      "G.21" -> "G.15";
@@ -208,21 +229,28 @@ Dependency Graph
      "G.20" -> "G.18";
      "G.25" -> "G.18";
      "G.20" -> "G.19";
+     "G.25" -> "G.19";
      "G.21" -> "G.20";
      "G.25" -> "G.21";
+     "G.27" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
-     "G.26" -> "G.22";
+     "G.27" -> "G.22";
      "G.28" -> "G.22";
+     "G.29" -> "G.22";
      "G.585" -> "G.22";
      "G.24" -> "G.23";
+     "G.29" -> "G.23";
      "G.25" -> "G.24";
+     "G.27" -> "G.24";
      "G.585" -> "G.24";
-     "G.27" -> "G.25";
+     "G.28" -> "G.25";
      "G.585" -> "G.25";
-     "G.585" -> "G.26";
-     "G.28" -> "G.27";
-     "G.585" -> "G.28";
+     "G.27" -> "G.26";
+     "G.28" -> "G.26";
+     "G.585" -> "G.27";
+     "G.29" -> "G.28";
+     "G.585" -> "G.29";
    }
 
 Required for

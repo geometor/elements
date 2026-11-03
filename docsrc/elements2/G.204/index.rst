@@ -10,7 +10,7 @@
 :categories: theorem, proof, proportions, magnitudes
 :category: theorem, proof, proportions, magnitudes
 :tags: book-v, point, in-the-same-ratio, perturbed-proportion, ex-aequali, greater-ratio, invertendo, ratio, proportion, equality
-:dependencies: G.174, G.176, G.186, G.188, G.191, G.203
+:dependencies: G.174, G.176, G.182, G.185, G.186, G.188, G.191, G.203
 :excerpt: If there be three magnitudes, and others equal to them in multitude, which taken two and two together are in the same ratio, and the proportion of them be perturbed, then, if ex aequali the first magnitude is greater than the third, the fourth is greater than the sixth; if equal, equal; and if less, less.
 
 .. _G.204:
@@ -44,51 +44,51 @@ G.204 there magnitudes others
 
 .. step:: assert
 
-   And, as :g:`B <g1:B>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to :g:`E <g1:E>`,
+   as :g:`B <g1:B>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to :g:`E <g1:E>`,
 
 .. step:: assert
 
-   And let :g:`A <g1:A>` be greater than :g:`C <g1:C>` *ex aequali*
+   let :g:`A <g1:A>` be greater than :g:`C <g1:C>` *ex aequali*
 
 .. step:: assert
 
-   If :g:`A <g1:A>` is :eq:`equal <g1:A = g1:C>` to :g:`C <g1:C>`, :eq:`equal <g1:D = g1:F>`
+   If :g:`A <g1:A>` :eq:`= <g1:A = g1:C>` :g:`C <g1:C>`, :eq:`= <g1:D = g1:F>`
 
 .. step:: assert
 
-   And if less, less.
+   if less, less
 
 .. step:: assert ∵ unequal_magnitudes_greater <G.186>
 
-   Since :g:`A <g1:A>` is greater than :g:`C <g1:C>`, and :g:`B <g1:B>` is some other magnitude → therefore :g:`A <g1:A>` has to :g:`B <g1:B>` a :term:`greater ratio <G.185>` than :g:`C <g1:C>` has to :g:`B <g1:B>`.
+   :g:`A <g1:A>` > :g:`C <g1:C>`, and :g:`B <g1:B>` is some other magnitude → therefore :g:`A <g1:A>` has to :g:`B <g1:B>` a greater ratio than :g:`C <g1:C>` has to :g:`B <g1:B>`
 
 .. step:: assert
 
-   But, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`E <g1:E>` to :g:`F <g1:F>`, and, as :g:`C <g1:C>` is to :g:`B <g1:B>`, :term:`inversely <G.182>`, so is :g:`E <g1:E>` to :g:`D <g1:D>`.
+   But, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`E <g1:E>` to :g:`F <g1:F>`, and, as :g:`C <g1:C>` is to :g:`B <g1:B>`, :term:`inversely <G.182>`, so is :g:`E <g1:E>` to :g:`D <g1:D>`
 
 .. step:: assert ∵ magnitude_ratio_greater <G.191>
 
-   Therefore also :g:`E <g1:E>` has to :g:`F <g1:F>` a greater ratio than :g:`E <g1:E>` has to :g:`D <g1:D>`.
+   also :g:`E <g1:E>` has to :g:`F <g1:F>` a :term:`greater ratio <G.185>` than :g:`E <g1:E>` has to :g:`D <g1:D>`
 
 .. step:: assert ∵ magnitudes_ratio_greater <G.188>
 
-   That to which the same has a greater ratio is less;
+   That to which the same has a greater ratio is less
 
 .. step:: assert
 
-   Therefore :g:`F <g1:F>` is less than :g:`D <g1:D>`;
+   :g:`F <g1:F>` < :g:`D <g1:D>`
 
 .. step:: assert
 
-   Therefore :g:`D <g1:D>` is greater than :g:`F <g1:F>`.
+   :g:`D <g1:D>` > :g:`F <g1:F>`
 
 .. step:: assert
 
-   Similarly we can prove that, if :g:`A <g1:A>` be :eq:`equal <g1:A = g1:C>` to :g:`C <g1:C>`, :g:`D <g1:D>` will also be :eq:`equal <g1:D = g1:F>` to :g:`F <g1:F>`
+   Similarly we can prove that, if :g:`A <g1:A>` :eq:`= <g1:A = g1:C>` :g:`C <g1:C>`, :g:`D <g1:D>` will also :eq:`= <g1:D = g1:F>` :g:`F <g1:F>`
 
 .. step:: conclude
 
-   And if less, less.
+   if less, less
 
 Dependency Graph
 ----------------
@@ -131,25 +131,31 @@ Dependency Graph
      "G.170" -> "G.169";
      "G.171" -> "G.170";
      "G.176" -> "G.170";
+     "G.183" -> "G.170";
      "G.185" -> "G.170";
+     "G.186" -> "G.170";
+     "G.191" -> "G.170";
      "G.186" -> "G.171";
      "G.174" -> "G.173";
      "G.188" -> "G.173";
      "G.204" -> "G.174";
      "G.180" -> "G.176";
      "G.183" -> "G.176";
+     "G.188" -> "G.176";
      "G.191" -> "G.176";
      "G.204" -> "G.176";
      "G.183" -> "G.180";
      "G.182" -> "G.181";
      "G.203" -> "G.181";
      "G.183" -> "G.182";
+     "G.204" -> "G.182";
      "G.188" -> "G.183";
      "G.186" -> "G.184";
      "G.188" -> "G.184";
      "G.186" -> "G.185";
      "G.188" -> "G.185";
      "G.191" -> "G.185";
+     "G.204" -> "G.185";
      "G.188" -> "G.186";
      "G.204" -> "G.186";
      "G.204" -> "G.188";

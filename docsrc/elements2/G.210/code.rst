@@ -12,7 +12,7 @@ G.210 triangles parallelograms height — Code
 
 .. enunciation::
 
-   :term:`Triangles <G.11>` and parallelograms which are under the same :term:`height <G.209>` are to one another as their bases.
+   :term:`Triangles <G.12>` and parallelograms which are under the same :term:`height <G.209>` are to one another as their bases.
 
 .. picture:: g1.svg
 

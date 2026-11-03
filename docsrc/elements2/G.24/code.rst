@@ -4,6 +4,7 @@
 :volume: I
 :book: I
 :type: prop
+:youtube_id: reOvWQw-zeA
 
 G.24 congruent triangles by SAS — Code
 ======================================
@@ -12,7 +13,7 @@ G.24 congruent triangles by SAS — Code
 
 .. enunciation::
 
-   :term:`Triangles <G.11>` with two sides and the included :term:`angle <G.22>` equal are congruent (SAS).
+   :term:`Triangles <G.12>` with two sides and the included :term:`angle <G.22>` equal are congruent (SAS).
 
 .. picture:: g1.svg
 

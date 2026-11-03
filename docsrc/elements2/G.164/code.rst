@@ -12,7 +12,7 @@ G.164 circumscribe about a given circle an equilateral and — Code
 
 .. enunciation::
 
-   :term:`Circumscribe about a given circle <G.150>` an :term:`equilateral <G.12>` and equiangular pentagon.
+   :term:`Circumscribe about a given circle <G.150>` an :term:`equilateral <G.13>` and equiangular pentagon.
 
 .. picture:: g1.svg
 

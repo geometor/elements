@@ -12,7 +12,7 @@ G.585 angles equilateral pentagon — Code
 
 .. enunciation::
 
-   If three :term:`angles <G.22>` of an :term:`equilateral <G.12>` pentagon, taken either in order or not in order, be equal, the pentagon is equiangular.
+   If three :term:`angles <G.22>` of an :term:`equilateral <G.13>` pentagon, taken either in order or not in order, be equal, the pentagon is equiangular.
 
 .. picture:: g1.svg
 

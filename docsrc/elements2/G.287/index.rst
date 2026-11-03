@@ -10,7 +10,7 @@
 :categories: theorem, proof, number-theory
 :category: theorem, proof, number-theory
 :tags: book-vii, point, composite-number, part-aliquot, prime-number, number, prime, composite, reductio-ad-absurdum
-:dependencies: G.169, G.283, G.286
+:dependencies: G.169, G.248, G.283, G.286
 :excerpt: Any composite number is measured by some prime number.
 
 .. _G.287:
@@ -40,55 +40,55 @@ G.287 composite number measured
 
 .. step:: assert
 
-   Since :g:`A <g1:A>` is composite, some :term:`number <G.248>` will measure it.
+   :g:`A <g1:A>` is composite, some number will measure it
 
 .. step:: assert
 
-   Let a number measure it, and let it be :g:`B <g1:B>`.
+   Let a :term:`number <G.248>` measure it, and let it be :g:`B <g1:B>`
 
 .. step:: assert
 
-   If :g:`B <g1:B>` is prime, what was enjoined will have been done.
+   If :g:`B <g1:B>` is prime, what was enjoined will have been done
 
 .. step:: assert
 
-   If it is composite, some number will measure it.
+   If it is composite, some number will measure it
 
 .. step:: assert
 
-   Let a number measure it, and let it be :g:`C <g1:C>`.
+   Let a number measure it, and let it be :g:`C <g1:C>`
 
 .. step:: assert
 
-   Since :g:`C <g1:C>` measures :g:`B <g1:B>`, and :g:`B <g1:B>` measures :g:`A <g1:A>`,
+   :g:`C <g1:C>` measures :g:`B <g1:B>`, and :g:`B <g1:B>` measures :g:`A <g1:A>`,
 
 .. step:: assert
 
-   Therefore :g:`C <g1:C>` also measures :g:`A <g1:A>`.
+   :g:`C <g1:C>` also measures :g:`A <g1:A>`
 
 .. step:: assert
 
-   And, if :g:`C <g1:C>` is prime, what was enjoined will have been done.
+   if :g:`C <g1:C>` is prime, what was enjoined will have been done
 
 .. step:: assert
 
-   If it is composite, some number will measure it.
+   If it is composite, some number will measure it
 
 .. step:: assert
 
-   Thus, if the investigation be continued in this way, some prime number will be found which will measure the number before it, which will also measure :g:`A <g1:A>`.
+   if the investigation be continued in this way, some prime number will be found which will measure the number before it, which will also measure :g:`A <g1:A>`
 
 .. step:: assert
 
-   If it is not found, an infinite series of numbers will measure the number :g:`A <g1:A>`, each of which is less than the other: which is impossible in numbers.
+   If it is not found, an infinite series of numbers will measure the number :g:`A <g1:A>`, each of which < the other ⇒⇐ in numbers
 
 .. step:: assert
 
-   Therefore some prime number will be found which will measure the one before it, which will also measure :g:`A <g1:A>`.
+   some prime number will be found which will measure the one before it, which will also measure :g:`A <g1:A>`
 
 .. step:: conclude
 
-   Therefore any composite number is measured by some prime number.
+   any composite number is measured by some prime number
 
 Dependency Graph
 ----------------
@@ -103,15 +103,21 @@ Dependency Graph
      "G.169" [label="G.169", tooltip="G.169 (V.def.1): A magnitude is apart of a magnitude, the less of the greater, when it measures the greater.", fillcolor="#224422", URL="../G.169/index.html", target="_top"];
      "G.247" [label="G.247", tooltip="G.247 (VII.def.1): Anunit is that by virtue of which each of the things that exist is called one.", fillcolor="#224422", URL="../G.247/index.html", target="_top"];
      "G.248" [label="G.248", tooltip="G.248 (VII.def.2): Anumber is a multitude composed ofunits.", fillcolor="#224422", URL="../G.248/index.html", target="_top"];
+     "G.253" [label="G.253", tooltip="G.253 (VII.def.3): Anumber is apart of a number, the less of the greater, when itmeasures the greater;", fillcolor="#224422", URL="../G.253/index.html", target="_top"];
      "G.283" [label="G.283", tooltip="G.283 (VII.def.11): Aprime number is that which ismeasured by anunit alone.", fillcolor="#224422", URL="../G.283/index.html", target="_top"];
      "G.286" [label="G.286", tooltip="G.286 (VII.def.13): Acomposite number is that which ismeasured by somenumber.", fillcolor="#224422", URL="../G.286/index.html", target="_top"];
      "G.287" [label="G.287", tooltip="G.287 (VII.31): Any composite number is measured by some prime number.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.253" -> "G.169";
      "G.283" -> "G.169";
      "G.286" -> "G.169";
      "G.287" -> "G.169";
      "G.248" -> "G.247";
      "G.283" -> "G.247";
+     "G.253" -> "G.248";
      "G.286" -> "G.248";
+     "G.287" -> "G.248";
+     "G.283" -> "G.253";
+     "G.286" -> "G.253";
      "G.287" -> "G.283";
      "G.287" -> "G.286";
    }

@@ -44,51 +44,51 @@ G.295 find the number which is the least that
 
 .. step:: assert ∵ number_measured_number <G.293>
 
-   Therefore :g:`G <g1:G>` has parts called by the same name as :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`F <g1:F>`.
+   :g:`G <g1:G>` has parts called by the same name as :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`F <g1:F>`
 
 .. step:: assert
 
-   :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` are parts called by the same name as :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`F <g1:F>`;
+   :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` are parts called by the same name as :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`F <g1:F>`
 
 .. step:: assert
 
-   Therefore :g:`G <g1:G>` has the parts :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`.
+   :g:`G <g1:G>` has the parts :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`
 
 .. step:: assert
 
-   I say next that it is also the least number that has.
+   I say next that it is also the least number that has
 
 .. step:: assert
 
-   If not, there will be some number less than :g:`G <g1:G>` which will have the parts :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`.
+   If not, there will be some number less than :g:`G <g1:G>` which will have the parts :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`
 
 .. step:: assert
 
-   Let it be :g:`H <g1:H>`.
+   Let it be :g:`H <g1:H>`
 
 .. step:: assert
 
-   Since :g:`H <g1:H>` has the parts :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`,
+   :g:`H <g1:H>` has the parts :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`,
 
 .. step:: assert ∵ number_part_whatever <G.294>
 
-   Therefore :g:`H <g1:H>` will be :term:`measured <G.169>` by numbers called by the same name as the parts :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`.
+   :g:`H <g1:H>` will be measured by numbers called by the same name as the parts :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`
 
 .. step:: assert
 
-   :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`F <g1:F>` are numbers called by the same name as the parts :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`;
+   :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`F <g1:F>` are numbers called by the same name as the parts :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`
 
 .. step:: assert
 
-   Therefore :g:`H <g1:H>` is measured by :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`F <g1:F>`.
+   :g:`H <g1:H>` is measured by :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`F <g1:F>`
 
 .. step:: assert
 
-   It is less than :g:`G <g1:G>`: which is impossible.
+   It < :g:`G <g1:G>` ⇒⇐
 
 .. step:: conclude
 
-   Therefore there will be no number less than :g:`G <g1:G>` that will have the parts :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`.
+   there will be no number less than :g:`G <g1:G>` that will have the parts :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`
 
 Dependency Graph
 ----------------
@@ -165,10 +165,15 @@ Dependency Graph
      "G.252" -> "G.169";
      "G.253" -> "G.169";
      "G.254" -> "G.169";
+     "G.255" -> "G.169";
      "G.256" -> "G.169";
      "G.268" -> "G.169";
+     "G.270" -> "G.169";
+     "G.271" -> "G.169";
      "G.274" -> "G.169";
+     "G.275" -> "G.169";
      "G.283" -> "G.169";
+     "G.289" -> "G.169";
      "G.290" -> "G.169";
      "G.291" -> "G.169";
      "G.292" -> "G.169";
@@ -176,7 +181,9 @@ Dependency Graph
      "G.294" -> "G.169";
      "G.171" -> "G.170";
      "G.176" -> "G.170";
+     "G.183" -> "G.170";
      "G.185" -> "G.170";
+     "G.186" -> "G.170";
      "G.257" -> "G.170";
      "G.186" -> "G.171";
      "G.289" -> "G.173";
@@ -189,11 +196,15 @@ Dependency Graph
      "G.275" -> "G.176";
      "G.289" -> "G.176";
      "G.183" -> "G.180";
+     "G.263" -> "G.180";
      "G.266" -> "G.180";
      "G.273" -> "G.180";
      "G.182" -> "G.181";
      "G.194" -> "G.181";
      "G.265" -> "G.181";
+     "G.268" -> "G.181";
+     "G.274" -> "G.181";
+     "G.275" -> "G.181";
      "G.183" -> "G.182";
      "G.273" -> "G.183";
      "G.186" -> "G.184";
@@ -204,12 +215,25 @@ Dependency Graph
      "G.262" -> "G.194";
      "G.266" -> "G.194";
      "G.268" -> "G.194";
+     "G.270" -> "G.194";
+     "G.271" -> "G.194";
+     "G.293" -> "G.194";
+     "G.294" -> "G.194";
      "G.248" -> "G.247";
      "G.249" -> "G.247";
      "G.250" -> "G.247";
+     "G.251" -> "G.247";
+     "G.255" -> "G.247";
      "G.268" -> "G.247";
      "G.269" -> "G.247";
+     "G.270" -> "G.247";
+     "G.271" -> "G.247";
+     "G.275" -> "G.247";
      "G.283" -> "G.247";
+     "G.289" -> "G.247";
+     "G.290" -> "G.247";
+     "G.293" -> "G.247";
+     "G.294" -> "G.247";
      "G.250" -> "G.248";
      "G.251" -> "G.248";
      "G.252" -> "G.248";
@@ -240,21 +264,35 @@ Dependency Graph
      "G.250" -> "G.249";
      "G.251" -> "G.249";
      "G.252" -> "G.249";
+     "G.255" -> "G.249";
      "G.275" -> "G.249";
+     "G.289" -> "G.249";
+     "G.290" -> "G.249";
      "G.251" -> "G.250";
      "G.252" -> "G.251";
      "G.255" -> "G.251";
      "G.289" -> "G.252";
+     "G.254" -> "G.253";
      "G.255" -> "G.253";
+     "G.256" -> "G.253";
      "G.257" -> "G.253";
+     "G.258" -> "G.253";
      "G.261" -> "G.253";
      "G.262" -> "G.253";
      "G.263" -> "G.253";
+     "G.265" -> "G.253";
+     "G.266" -> "G.253";
+     "G.283" -> "G.253";
+     "G.293" -> "G.253";
+     "G.294" -> "G.253";
      "G.255" -> "G.254";
      "G.258" -> "G.254";
      "G.261" -> "G.254";
      "G.262" -> "G.254";
      "G.263" -> "G.254";
+     "G.265" -> "G.254";
+     "G.266" -> "G.254";
+     "G.274" -> "G.254";
      "G.274" -> "G.255";
      "G.257" -> "G.256";
      "G.263" -> "G.256";
@@ -282,6 +320,7 @@ Dependency Graph
      "G.270" -> "G.269";
      "G.271" -> "G.269";
      "G.272" -> "G.269";
+     "G.273" -> "G.269";
      "G.289" -> "G.269";
      "G.290" -> "G.269";
      "G.272" -> "G.270";

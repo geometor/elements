@@ -12,7 +12,7 @@ G.42 two angles of a triangle are less than two right angles — Code
 
 .. enunciation::
 
-   In any :term:`triangle <G.11>`, the sum of any two :term:`angles <G.22>` is less than two :term:`right angles <G.32>`.
+   In any :term:`triangle <G.12>`, the sum of any two :term:`angles <G.22>` is less than two :term:`right angles <G.33>`.
 
 .. picture:: g1.svg
 

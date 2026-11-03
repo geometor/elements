@@ -12,7 +12,7 @@ G.80 converse of the Pythagorean theorem — Code
 
 .. enunciation::
 
-   If the :term:`square <G.63>` on one side of a :term:`triangle <G.11>` equals the sum of the squares on the other two sides, the :term:`angle <G.22>` contained by those two sides is right.
+   If the :term:`square <G.63>` on one side of a :term:`triangle <G.12>` equals the sum of the squares on the other two sides, the :term:`angle <G.22>` contained by those two sides is right.
 
 .. picture:: g1.svg
 

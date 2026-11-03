@@ -10,7 +10,7 @@
 :categories: theorem, proof, number-theory
 :category: theorem, proof, number-theory
 :tags: book-ix, point, number, prime-to-one-another, prime-number, part-aliquot, in-the-same-ratio, corresponding-magnitudes, prime, reductio-ad-absurdum
-:dependencies: G.248, G.249, G.274, G.275, G.283
+:dependencies: G.169, G.176, G.181, G.248, G.249, G.274, G.275, G.283
 :excerpt: If two numbers be prime to one another, the second will not be to any other number as the first is to the second.
 
 .. _G.346:
@@ -39,27 +39,27 @@ G.346 numbers prime number
 
 .. step:: assert
 
-   If possible, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so let :g:`B <g1:B>` be to :g:`C <g1:C>`.
+   If possible, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so let :g:`B <g1:B>` be to :g:`C <g1:C>`
 
 .. step:: assert ∵ numbers_prime_least, least_numbers_ratio <G.275, G.274>
 
-   Now :g:`A <g1:A>`, :g:`B <g1:B>` are :term:`prime <G.283>`, primes are also least, and the least numbers :term:`measure <G.169>` those which have the :term:`same ratio <G.176>` the same number of times, the :term:`antecedent <G.181>` the antecedent and the consequent the consequent .
+   Now :g:`A <g1:A>`, :g:`B <g1:B>` are :term:`prime <G.283>`, primes are also least, and the least numbers :term:`measure <G.169>` those which have the :term:`same ratio <G.176>` the same number of times, the :term:`antecedent <G.181>` the antecedent and the consequent the consequent
 
 .. step:: assert
 
-   Therefore :g:`A <g1:A>` measures :g:`B <g1:B>` as antecedent antecedent.
+   :g:`A <g1:A>` measures :g:`B <g1:B>` as antecedent antecedent
 
 .. step:: assert
 
-   It also measures itself ;
+   It also measures itself
 
 .. step:: assert
 
-   Therefore :g:`A <g1:A>` measures :g:`A <g1:A>`, :g:`B <g1:B>` which are prime to one another : which is absurd.
+   :g:`A <g1:A>` measures :g:`A <g1:A>`, :g:`B <g1:B>` which are prime to one another ⇒⇐
 
 .. step:: conclude
 
-   Therefore :g:`B <g1:B>` will not be to :g:`C <g1:C>`, as :g:`A <g1:A>` is to :g:`B <g1:B>`.
+   :g:`B <g1:B>` will not be to :g:`C <g1:C>`, as :g:`A <g1:A>` is to :g:`B <g1:B>`
 
 Dependency Graph
 ----------------
@@ -106,27 +106,42 @@ Dependency Graph
      "G.251" -> "G.169";
      "G.253" -> "G.169";
      "G.254" -> "G.169";
+     "G.255" -> "G.169";
      "G.256" -> "G.169";
      "G.268" -> "G.169";
+     "G.270" -> "G.169";
      "G.274" -> "G.169";
+     "G.275" -> "G.169";
      "G.283" -> "G.169";
+     "G.346" -> "G.169";
      "G.176" -> "G.170";
      "G.257" -> "G.170";
      "G.180" -> "G.176";
      "G.274" -> "G.176";
      "G.275" -> "G.176";
+     "G.346" -> "G.176";
+     "G.263" -> "G.180";
      "G.266" -> "G.180";
      "G.194" -> "G.181";
      "G.265" -> "G.181";
+     "G.268" -> "G.181";
+     "G.274" -> "G.181";
+     "G.275" -> "G.181";
+     "G.346" -> "G.181";
      "G.261" -> "G.194";
      "G.262" -> "G.194";
      "G.266" -> "G.194";
      "G.268" -> "G.194";
+     "G.270" -> "G.194";
      "G.248" -> "G.247";
      "G.249" -> "G.247";
      "G.250" -> "G.247";
+     "G.251" -> "G.247";
+     "G.255" -> "G.247";
      "G.268" -> "G.247";
      "G.269" -> "G.247";
+     "G.270" -> "G.247";
+     "G.275" -> "G.247";
      "G.283" -> "G.247";
      "G.250" -> "G.248";
      "G.251" -> "G.248";
@@ -147,20 +162,30 @@ Dependency Graph
      "G.346" -> "G.248";
      "G.250" -> "G.249";
      "G.251" -> "G.249";
+     "G.255" -> "G.249";
      "G.275" -> "G.249";
      "G.346" -> "G.249";
      "G.251" -> "G.250";
      "G.255" -> "G.251";
+     "G.254" -> "G.253";
      "G.255" -> "G.253";
+     "G.256" -> "G.253";
      "G.257" -> "G.253";
+     "G.258" -> "G.253";
      "G.261" -> "G.253";
      "G.262" -> "G.253";
      "G.263" -> "G.253";
+     "G.265" -> "G.253";
+     "G.266" -> "G.253";
+     "G.283" -> "G.253";
      "G.255" -> "G.254";
      "G.258" -> "G.254";
      "G.261" -> "G.254";
      "G.262" -> "G.254";
      "G.263" -> "G.254";
+     "G.265" -> "G.254";
+     "G.266" -> "G.254";
+     "G.274" -> "G.254";
      "G.274" -> "G.255";
      "G.257" -> "G.256";
      "G.263" -> "G.256";

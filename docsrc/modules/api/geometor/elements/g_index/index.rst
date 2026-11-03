@@ -32,6 +32,7 @@ Functions
    geometor.elements.g_index.inject_pseudocode_terms
    geometor.elements.g_index.generate_g_dot
    geometor.elements.g_index.sync_apparatus_resources
+   geometor.elements.g_index.get_youtube_video_id
    geometor.elements.g_index.generate_g_index
 
 
@@ -93,6 +94,11 @@ Module Contents
 .. py:function:: sync_apparatus_resources(project_root: pathlib.Path) -> None
 
    Copy glossary.json, persons.json, citations.json, and enunciations.json from euclid/resources/heath/ into elements/resources/.
+
+
+.. py:function:: get_youtube_video_id(project_root: pathlib.Path, node_ref: str) -> Optional[str]
+
+   Return the published 16:9 YouTube video ID for a proposition if available.
 
 
 .. py:function:: generate_g_index(output_dir: Optional[pathlib.Path] = None, books: Optional[List[str]] = None) -> Dict[str, Any]

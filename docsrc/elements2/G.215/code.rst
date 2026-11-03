@@ -12,7 +12,7 @@ G.215 triangles angle equal — Code
 
 .. enunciation::
 
-   If two :term:`triangles <G.11>` have one :term:`angle <G.22>` equal to one angle and the sides about the equal angles :term:`proportional <G.180>`, the triangles is equiangular and will have those angles equal which the corresponding sides subtend.
+   If two :term:`triangles <G.12>` have one :term:`angle <G.22>` equal to one angle and the sides about the equal angles :term:`proportional <G.180>`, the triangles is equiangular and will have those angles equal which the corresponding sides subtend.
 
 .. picture:: g1.svg
 

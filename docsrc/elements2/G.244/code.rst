@@ -12,7 +12,7 @@ G.244 right angled triangles — Code
 
 .. enunciation::
 
-   In :term:`right-angled triangles <G.78>` the :term:`figure <G.9>` on the side subtending the :term:`right angle <G.32>` is equal to the similar and :term:`similarly described <G.217>` figures on the sides containing the right angle.
+   In :term:`right-angled triangles <G.78>` the :term:`figure <G.9>` on the side subtending the :term:`right angle <G.33>` is equal to the similar and :term:`similarly described <G.217>` figures on the sides containing the right angle.
 
 .. picture:: g1.svg
 

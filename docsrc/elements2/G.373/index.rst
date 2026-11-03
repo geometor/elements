@@ -39,7 +39,7 @@ G.373 less unequal magnitudes
 
 .. step:: assert
 
-   If they are commensurable, some magnitude will measure them.
+   If they are commensurable, some magnitude will measure them
 
 .. step:: assert
 
@@ -47,51 +47,51 @@ G.373 less unequal magnitudes
 
 .. step:: assert
 
-   Let :g:`/ A B / <g1:/ A B />`, measuring :g:`/ F D / <g1:/ F D />`, leave :g:`/ C F / <g1:/ C F />` less than itself, let :g:`/ C F / <g1:/ C F />` measuring :g:`/ B G / <g1:/ B G />`, leave :g:`/ A G / <g1:/ A G />` less than itself, and let this process be repeated continually, until there is left some magnitude which is less than :g:`E <g1:E>`.
+   Let :g:`/ A B / <g1:/ A B />`, measuring :g:`/ F D / <g1:/ F D />`, leave :g:`/ C F / <g1:/ C F />` less than itself, let :g:`/ C F / <g1:/ C F />` measuring :g:`/ B G / <g1:/ B G />`, leave :g:`/ A G / <g1:/ A G />` less than itself, and let this process be repeated continually, until there is left some magnitude which < :g:`E <g1:E>`
 
 .. step:: assert
 
-   Suppose this done, and let there be left :g:`/ A G / <g1:/ A G />` less than :g:`E <g1:E>`.
+   Suppose this done, and let there be left :g:`/ A G / <g1:/ A G />` less than :g:`E <g1:E>`
 
 .. step:: assert
 
-   Since :g:`E <g1:E>` measures :g:`/ A B / <g1:/ A B />`, while :g:`/ A B / <g1:/ A B />` measures :g:`/ D F / <g1:/ D F />`,
+   :g:`E <g1:E>` measures :g:`/ A B / <g1:/ A B />`, while :g:`/ A B / <g1:/ A B />` measures :g:`/ D F / <g1:/ D F />`,
 
 .. step:: assert
 
-   Therefore :g:`E <g1:E>` will also measure :g:`/ F D / <g1:/ F D />`.
+   :g:`E <g1:E>` will also measure :g:`/ F D / <g1:/ F D />`
 
 .. step:: assert
 
-   It measures the whole :g:`/ C D / <g1:/ C D />` also;
+   It measures :g:`/ C D / <g1:/ C D />` also
 
 .. step:: assert
 
-   Therefore it will also measure the remainder :g:`/ C F / <g1:/ C F />`.
+   it will also measure :g:`/ C F / <g1:/ C F />`
 
 .. step:: assert
 
-   :g:`/ C F / <g1:/ C F />` measures :g:`/ B G / <g1:/ B G />`;
+   :g:`/ C F / <g1:/ C F />` measures :g:`/ B G / <g1:/ B G />`
 
 .. step:: assert
 
-   Therefore :g:`E <g1:E>` also measures :g:`/ B G / <g1:/ B G />`.
+   :g:`E <g1:E>` also measures :g:`/ B G / <g1:/ B G />`
 
 .. step:: assert
 
-   It measures the whole :g:`/ A B / <g1:/ A B />` also;
+   It measures :g:`/ A B / <g1:/ A B />` also
 
 .. step:: assert
 
-   Therefore it will also measure the remainder :g:`/ A G / <g1:/ A G />`, the greater the less :
+   it will also measure :g:`/ A G / <g1:/ A G />`, the greater the less :
 
 .. step:: assert
 
-   Which is impossible.
+   ⇒⇐
 
 .. step:: conclude ∵ magnitudes_said_commensurable_def <G.372>
 
-   Therefore no magnitude will measure the magnitudes :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`; therefore the magnitudes :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` are incommensurable.
+   no magnitude will measure the magnitudes :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`; therefore the magnitudes :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` are incommensurable
 
 Dependency Graph
 ----------------
@@ -104,10 +104,17 @@ Dependency Graph
      edge [color="#8c857b", fontcolor="#8c857b", arrowsize=0.75];
      rankdir="TB";
      "G.169" [label="G.169", tooltip="G.169 (V.def.1): A magnitude is apart of a magnitude, the less of the greater, when it measures the greater.", fillcolor="#224422", URL="../G.169/index.html", target="_top"];
+     "G.247" [label="G.247", tooltip="G.247 (VII.def.1): Anunit is that by virtue of which each of the things that exist is called one.", fillcolor="#224422", URL="../G.247/index.html", target="_top"];
+     "G.248" [label="G.248", tooltip="G.248 (VII.def.2): Anumber is a multitude composed ofunits.", fillcolor="#224422", URL="../G.248/index.html", target="_top"];
+     "G.253" [label="G.253", tooltip="G.253 (VII.def.3): Anumber is apart of a number, the less of the greater, when itmeasures the greater;", fillcolor="#224422", URL="../G.253/index.html", target="_top"];
      "G.372" [label="G.372", tooltip="G.372 (X.def.1): Those magnitudes are said to becommensurable which aremeasured by the same measure, and thoseincommensurable which cannot have any common measure.", fillcolor="#224422", URL="../G.372/index.html", target="_top"];
      "G.373" [label="G.373", tooltip="G.373 (X.2): If, when the less of two unequal magnitudes is continually subtracted in turn from the greater, that which is left never measures the one before it, the magnitudes is incommensurab...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.253" -> "G.169";
      "G.372" -> "G.169";
      "G.373" -> "G.169";
+     "G.248" -> "G.247";
+     "G.253" -> "G.248";
+     "G.372" -> "G.253";
      "G.373" -> "G.372";
    }
 

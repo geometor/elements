@@ -39,39 +39,39 @@ G.361 odd number measure
 
 .. step:: assert
 
-   Since :g:`A <g1:A>` measures :g:`B <g1:B>`, let it measure it according to :g:`C <g1:C>`;
+   :g:`A <g1:A>` measures :g:`B <g1:B>`, let it measure it according to :g:`C <g1:C>`
 
 .. step:: assert
 
-   If possible, let it be so.
+   If possible, let it be so
 
 .. step:: assert
 
-   Since :g:`A <g1:A>` measures :g:`B <g1:B>` according to :g:`C <g1:C>`,
+   :g:`A <g1:A>` measures :g:`B <g1:B>` according to :g:`C <g1:C>`,
 
 .. step:: assert
 
-   Therefore :g:`A <g1:A>` by :term:`multiplying <G.269>` :g:`C <g1:C>` has made :g:`B <g1:B>`.
+   :g:`A <g1:A>` by multiplying :g:`C <g1:C>` has made :g:`B <g1:B>`
 
 .. step:: assert
 
-   Therefore :g:`B <g1:B>` is made up of odd numbers the multitude of which is odd.
+   :g:`B <g1:B>` is made up of odd numbers the multitude of which is odd
 
 .. step:: assert ∵ many_odd_numbers_ix_23 <G.354>
 
-   Therefore :g:`B <g1:B>` is odd: which is absurd, for by hypothesis it is even.
+   :g:`B <g1:B>` is odd ⇒⇐, for by hypothesis it is even
 
 .. step:: assert
 
-   Therefore :g:`C <g1:C>` is not odd; therefore :g:`C <g1:C>` is even.
+   :g:`C <g1:C>` is not odd; therefore :g:`C <g1:C>` is even
 
 .. step:: assert
 
-   Thus :g:`A <g1:A>` measures :g:`B <g1:B>` an even number of times.
+   :g:`A <g1:A>` measures :g:`B <g1:B>` an even number of times
 
 .. step:: conclude
 
-   For this reason then it also measures the half of it.
+   For this reason then it also measures the half of it
 
 Dependency Graph
 ----------------
@@ -97,8 +97,11 @@ Dependency Graph
      "G.248" -> "G.247";
      "G.269" -> "G.247";
      "G.352" -> "G.247";
+     "G.353" -> "G.247";
+     "G.354" -> "G.247";
      "G.269" -> "G.248";
      "G.351" -> "G.248";
+     "G.353" -> "G.248";
      "G.361" -> "G.269";
      "G.351" -> "G.302";
      "G.352" -> "G.302";

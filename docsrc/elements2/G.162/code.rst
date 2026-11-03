@@ -12,7 +12,7 @@ G.162 golden isosceles triangle — Code
 
 .. enunciation::
 
-   Construct an :term:`isosceles triangle <G.12>` having each of the :term:`angles <G.22>` at the base double of the remaining one.
+   Construct an :term:`isosceles triangle <G.13>` having each of the :term:`angles <G.22>` at the base double of the remaining one.
 
 .. picture:: g1.svg
 

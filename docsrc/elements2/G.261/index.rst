@@ -39,7 +39,7 @@ G.261 number part number
 
 .. step:: assert
 
-   I say that, alternately also, whatever part or parts :g:`A <g1:A>` is of :g:`D <g1:D>`, the same part or parts is :g:`/ B C / <g1:/ B C />` of :g:`/ E F / <g1:/ E F />` also.
+   I say that, alternately also, whatever part or parts :g:`A <g1:A>` is of :g:`D <g1:D>`, the same part or parts is :g:`/ B C / <g1:/ B C />` of :g:`/ E F / <g1:/ E F />` also
 
 .. step:: assert
 
@@ -47,35 +47,35 @@ G.261 number part number
 
 .. step:: assert
 
-   Therefore, as many numbers as there are in :g:`/ B C / <g1:/ B C />` equal to :g:`A <g1:A>`, so many also are there in :g:`/ E F / <g1:/ E F />` equal to :g:`D <g1:D>`.
+   as many numbers as there are in :g:`/ B C / <g1:/ B C />` equal to :g:`A <g1:A>`, so many also are there in :g:`/ E F / <g1:/ E F />` equal to :g:`D <g1:D>`
 
 .. step:: assert
 
-   Let :g:`/ B C / <g1:/ B C />` be divided into the numbers :eq:`equal <g1:/ B G / = g1:/ G C / = g1:A>` to :g:`A <g1:A>`, namely :g:`/ B G / <g1:/ B G />`, :g:`/ G C / <g1:/ G C />`, and :g:`/ E F / <g1:/ E F />` into those :eq:`equal <g1:/ E H / = g1:/ H F / = g1:D>` to :g:`D <g1:D>`, namely :g:`/ E H / <g1:/ E H />`, :g:`/ H F / <g1:/ H F />`
+   Let :g:`/ B C / <g1:/ B C />` be divided into the numbers :eq:`= <g1:/ B G / = g1:/ G C / = g1:A>` to :g:`A <g1:A>`, namely :g:`/ B G / <g1:/ B G />`, :g:`/ G C / <g1:/ G C />`, and :g:`/ E F / <g1:/ E F />` into those :eq:`= <g1:/ E H / = g1:/ H F / = g1:D>` to :g:`D <g1:D>`, namely :g:`/ E H / <g1:/ E H />`, :g:`/ H F / <g1:/ H F />`
 
 .. step:: assert
 
-   Thus the multitude of :g:`/ B G / <g1:/ B G />`, :g:`/ G C / <g1:/ G C />` will be equal to the multitude of :g:`/ E H / <g1:/ E H />`, :g:`/ H F / <g1:/ H F />`.
+   the multitude of :g:`/ B G / <g1:/ B G />`, :g:`/ G C / <g1:/ G C />` will be equal to the multitude of :g:`/ E H / <g1:/ E H />`, :g:`/ H F / <g1:/ H F />`
 
 .. step:: assert
 
-   Since the numbers :g:`/ B G / <g1:/ B G />`, :g:`/ G C / <g1:/ G C />` are :eq:`equal <g1:/ B G / = g1:/ G C />` to one another, and the numbers :g:`/ E H / <g1:/ E H />`, :g:`/ H F / <g1:/ H F />` are also :eq:`equal <g1:/ E H / = g1:/ H F />` to one another, while the multitude of :g:`/ B G / <g1:/ B G />`, :g:`/ G C / <g1:/ G C />` is equal to the multitude of :g:`/ E H / <g1:/ E H />`, :g:`/ H F / <g1:/ H F />`,
+   the numbers :g:`/ B G / <g1:/ B G />`, :g:`/ G C / <g1:/ G C />` :eq:`= <g1:/ B G / = g1:/ G C />`, and the numbers :g:`/ E H / <g1:/ E H />`, :g:`/ H F / <g1:/ H F />` :eq:`= <g1:/ E H / = g1:/ H F />`, while the multitude of :g:`/ B G / <g1:/ B G />`, :g:`/ G C / <g1:/ G C />` is equal to the multitude of :g:`/ E H / <g1:/ E H />`, :g:`/ H F / <g1:/ H F />`,
 
 .. step:: assert
 
-   Therefore, whatever part or parts :g:`/ B G / <g1:/ B G />` is of :g:`/ E H / <g1:/ E H />`, the same part or the same parts is :g:`/ G C / <g1:/ G C />` of :g:`/ H F / <g1:/ H F />` also;
+   whatever part or parts :g:`/ B G / <g1:/ B G />` is of :g:`/ E H / <g1:/ E H />`, the same part or the same parts is :g:`/ G C / <g1:/ G C />` of :g:`/ H F / <g1:/ H F />` also
 
 .. step:: assert ∵ number_part_number, number_parts_number <G.257, G.258>
 
-   So that, in addition, whatever part or parts :g:`/ B G / <g1:/ B G />` is of :g:`/ E H / <g1:/ E H />`, the same part also, or the same parts, is the sum :g:`/ B C / <g1:/ B C />` of the sum :g:`/ E F / <g1:/ E F />`.
+   So that, in addition, whatever part or parts :g:`/ B G / <g1:/ B G />` is of :g:`/ E H / <g1:/ E H />`, the same part also, or the same parts, is the sum :g:`/ B C / <g1:/ B C />` of the sum :g:`/ E F / <g1:/ E F />`
 
 .. step:: assert
 
-   :g:`/ B G / <g1:/ B G />` is :eq:`equal <g1:/ B G / = g1:A; g1:/ E H / = g1:D>` to :g:`A <g1:A>`, and :g:`/ E H / <g1:/ E H />` to :g:`D <g1:D>`;
+   :g:`/ B G / <g1:/ B G />` :eq:`= <g1:/ B G / = g1:A; g1:/ E H / = g1:D>` :g:`A <g1:A>`, and :g:`/ E H / <g1:/ E H />` to :g:`D <g1:D>`
 
 .. step:: conclude
 
-   Therefore, whatever part or parts :g:`A <g1:A>` is of :g:`D <g1:D>`, the same part or the same parts is :g:`/ B C / <g1:/ B C />` of :g:`/ E F / <g1:/ E F />` also.
+   whatever part or parts :g:`A <g1:A>` is of :g:`D <g1:D>`, the same part or the same parts is :g:`/ B C / <g1:/ B C />` of :g:`/ E F / <g1:/ E F />` also
 
 Dependency Graph
 ----------------
@@ -112,7 +112,10 @@ Dependency Graph
      "G.257" -> "G.248";
      "G.258" -> "G.248";
      "G.261" -> "G.248";
+     "G.254" -> "G.253";
+     "G.256" -> "G.253";
      "G.257" -> "G.253";
+     "G.258" -> "G.253";
      "G.261" -> "G.253";
      "G.258" -> "G.254";
      "G.261" -> "G.254";

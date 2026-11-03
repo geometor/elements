@@ -10,7 +10,7 @@
 :categories: theorem, proof, solid-geometry
 :category: theorem, proof, solid-geometry
 :tags: book-xi, point, segment, angle, quadrilateral, polygon, solid, height, straight-line, plane-angle, right-angle, equal-and-similar-solid-figures, parallel-straight-lines, extremity, plane-surface, in-the-same-ratio, parallelepiped, equality
-:dependencies: G.48, G.64, G.183, G.187, G.189, G.209, G.529, G.530, G.531, G.535, G.539, G.540
+:dependencies: G.3, G.4, G.7, G.14, G.18, G.33, G.48, G.52, G.58, G.64, G.176, G.183, G.187, G.189, G.209, G.529, G.530, G.531, G.535, G.539, G.540
 :excerpt: Parallelepipedal solids which are on equal bases and of the same height are equal.
 
 .. _G.541:
@@ -47,7 +47,7 @@ G.541 parallelepipedal solids equal
 
 .. step:: construct
 
-   Let :g:`/ R T / <g1:/ R T />` be produced in a :term:`segment <G.4>` with :g:`/ C R / <g1:/ C R />`
+   :fn:`extend <G.18>`\ (:g:`/ C R / <g1:/ C R />`) → :g:`/ R T / <g1:/ R T />`
 
 .. step:: construct
 
@@ -55,35 +55,35 @@ G.541 parallelepipedal solids equal
 
 .. step:: assert
 
-   Since the two sides :g:`/ T R / <g1:/ T R />`, :g:`/ R U / <g1:/ R U />` are :eq:`equal <g1:/ T R / = g1:/ A L /; g1:/ R U / = g1:/ L B />` to the two sides :g:`/ A L / <g1:/ A L />`, :g:`/ L B / <g1:/ L B />`, and they contain equal :term:`angles <G.22>`,
+   :g:`/ T R / <g1:/ T R />`, :g:`/ R U / <g1:/ R U />` :eq:`= <g1:/ T R / = g1:/ A L /; g1:/ R U / = g1:/ L B />` :g:`/ A L / <g1:/ A L />`, :g:`/ L B / <g1:/ L B />`, and they contain equal angles,
 
 .. step:: assert
 
-   Therefore the parallelogram :g:`< R W > <g1:< R W >>` is :eq:`equal <g1:< R W > = g1:< H L >>` and similar to the parallelogram :g:`< H L > <g1:< H L >>`.
+   the parallelogram :g:`< R W > <g1:< R W >>` is :eq:`equal <g1:< R W > = g1:< H L >>` and similar to the parallelogram :g:`< H L > <g1:< H L >>`
 
 .. step:: assert
 
-   Since again :g:`/ A L / <g1:/ A L />` is :eq:`equal <g1:/ A L / = g1:/ R T /; g1:/ L M / = g1:/ R S />` to :g:`/ R T / <g1:/ R T />`, and :g:`/ L M / <g1:/ L M />` to :g:`/ R S / <g1:/ R S />`, and they contain :term:`right angles <G.32>`,
+   again :g:`/ A L / <g1:/ A L />` :eq:`= <g1:/ A L / = g1:/ R T /; g1:/ L M / = g1:/ R S />` :g:`/ R T / <g1:/ R T />`, and :g:`/ L M / <g1:/ L M />` to :g:`/ R S / <g1:/ R S />`, and they contain :term:`right angles <G.33>`,
 
 .. step:: assert
 
-   Therefore the parallelogram :g:`< R X > <g1:< R X >>` is :eq:`equal <g1:< R X > = g1:< A M >>` and similar to the parallelogram :g:`< A M > <g1:< A M >>`.
+   the parallelogram :g:`< R X > <g1:< R X >>` is :eq:`equal <g1:< R X > = g1:< A M >>` and similar to the parallelogram :g:`< A M > <g1:< A M >>`
 
 .. step:: assert
 
-   For the same reason :g:`< L E > <g1:< L E >>` is also :eq:`equal <g1:< L E > = g1:< S U >>` and similar to :g:`< S U > <g1:< S U >>`;
+   For the same reason :g:`< L E > <g1:< L E >>` is also :eq:`equal <g1:< L E > = g1:< S U >>` and similar to :g:`< S U > <g1:< S U >>`
 
 .. step:: assert
 
-   Therefore three parallelograms of the solid :g:`< A E > <g1:< A E >>` are :term:`equal and similar <G.535>` to three parallelograms of the solid :g:`< X U > <g1:< X U >>`.
+   three parallelograms of the solid :g:`< A E > <g1:< A E >>` are :term:`equal and similar <G.535>` to three parallelograms of the solid :g:`< X U > <g1:< X U >>`
 
 .. step:: assert ∵ solid_contained_parallel <G.530>
 
-   The former three are equal and similar to the three opposite, and the latter three to the three opposite.
+   The former three are equal and similar to the three opposite, and the latter three to the three opposite
 
 .. step:: assert ∵ equal_similar_solid_def <G.535>
 
-   Therefore the whole parallelepipedal solid :g:`< A E > <g1:< A E >>` is :eq:`equal <g1:< A E > = g1:< X U >>` to the whole parallelepipedal solid :g:`< X U > <g1:< X U >>`.
+   the whole parallelepipedal solid :g:`< A E > <g1:< A E >>` is :eq:`equal <g1:< A E > = g1:< X U >>` to the whole parallelepipedal solid :g:`< X U > <g1:< X U >>`
 
 .. step:: construct
 
@@ -99,11 +99,11 @@ G.541 parallelepipedal solids equal
 
 .. step:: assert
 
-   Let the solids :g:`< Y X > <g1:< Y X >>`, :g:`< R I > <g1:< R I >>` be completed.
+   Let the solids :g:`< Y X > <g1:< Y X >>`, :g:`< R I > <g1:< R I >>` be completed
 
 .. step:: assert ∵ parallelepipedal_solids_base <G.539>
 
-   Then the solid :g:`< X Y > <g1:< X Y >>`, of which the parallelogram :g:`< R X > <g1:< R X >>` is the base and :g:`< Y c > <g1:< Y c >>` its opposite, is :eq:`equal <g1:< X Y > = g1:< X U >>` to the solid :g:`< X U > <g1:< X U >>` of which the parallelogram :g:`< R X > <g1:< R X >>` is the base and :g:`< U V > <g1:< U V >>` its opposite, for they are on the same base :g:`< R X > <g1:< R X >>` and of the same height, and the :term:`extremities <G.3>` of their sides which stand up, namely :g:`/ R Y / <g1:/ R Y />`, :g:`/ R U / <g1:/ R U />`, :g:`/ T b / <g1:/ T b />`, :g:`/ T W / <g1:/ T W />`, :g:`/ S e / <g1:/ S e />`, :g:`/ S d / <g1:/ S d />`, :g:`/ X c / <g1:/ X c />`, :g:`/ X V / <g1:/ X V />`, are on the same segments :g:`/ Y W / <g1:/ Y W />`, :g:`/ e V / <g1:/ e V />`.
+   Then the solid :g:`< X Y > <g1:< X Y >>`, of which the parallelogram :g:`< R X > <g1:< R X >>` is the base and :g:`< Y c > <g1:< Y c >>` its opposite, is :eq:`equal <g1:< X Y > = g1:< X U >>` to the solid :g:`< X U > <g1:< X U >>` of which the parallelogram :g:`< R X > <g1:< R X >>` is the base and :g:`< U V > <g1:< U V >>` its opposite, for they are on the same base :g:`< R X > <g1:< R X >>` and of the same height, and the :term:`extremities <G.3>` of their sides which stand up, namely :g:`/ R Y / <g1:/ R Y />`, :g:`/ R U / <g1:/ R U />`, :g:`/ T b / <g1:/ T b />`, :g:`/ T W / <g1:/ T W />`, :g:`/ S e / <g1:/ S e />`, :g:`/ S d / <g1:/ S d />`, :g:`/ X c / <g1:/ X c />`, :g:`/ X V / <g1:/ X V />`, are on the same :term:`segments <G.4>` :g:`/ Y W / <g1:/ Y W />`, :g:`/ e V / <g1:/ e V />`
 
 .. step:: assert
 
@@ -111,31 +111,31 @@ G.541 parallelepipedal solids equal
 
 .. step:: assert
 
-   Therefore the solid :g:`< X Y > <g1:< X Y >>` is also :eq:`equal <g1:< X Y > = g1:< A E >>` to the solid :g:`< A E > <g1:< A E >>`.
+   the solid :g:`< X Y > <g1:< X Y >>` is also :eq:`equal <g1:< X Y > = g1:< A E >>` to the solid :g:`< A E > <g1:< A E >>`
 
 .. step:: assert ∵ parallelograms_same_base <G.64>
 
-   And, since the parallelogram :g:`< R U W T > <g1:< R U W T >>` is :eq:`equal <g1:< R U W T > = g1:< Y T >>` to the parallelogram :g:`< Y T > <g1:< Y T >>` for they are on the same base :g:`/ R T / <g1:/ R T />` and in the same :term:`parallels <G.52>` :g:`/ R T / <g1:/ R T />`, :g:`/ Y W / <g1:/ Y W />`, while :g:`< R U W T > <g1:< R U W T >>` is :eq:`equal <g1:< R U W T > = g1:< C D >>` to :g:`< C D > <g1:< C D >>`, since it is also :eq:`equal <g1:< R U W T > = g1:< A B >>` to :g:`< A B > <g1:< A B >>`.
+   since the parallelogram :g:`< R U W T > <g1:< R U W T >>` is :eq:`equal <g1:< R U W T > = g1:< Y T >>` to the parallelogram :g:`< Y T > <g1:< Y T >>` for they are on the same base :g:`/ R T / <g1:/ R T />` and in the same :term:`parallels <G.52>` :g:`/ R T / <g1:/ R T />`, :g:`/ Y W / <g1:/ Y W />`, while :g:`< R U W T > <g1:< R U W T >>` is :eq:`equal <g1:< R U W T > = g1:< C D >>` to :g:`< C D > <g1:< C D >>`, since it is also :eq:`equal <g1:< R U W T > = g1:< A B >>` to :g:`< A B > <g1:< A B >>`
 
 .. step:: assert
 
-   Therefore the parallelogram :g:`< Y T > <g1:< Y T >>` is also :eq:`equal <g1:< Y T > = g1:< C D >>` to :g:`< C D > <g1:< C D >>`.
+   the parallelogram :g:`< Y T > <g1:< Y T >>` is also :eq:`equal <g1:< Y T > = g1:< C D >>` to :g:`< C D > <g1:< C D >>`
 
 .. step:: assert
 
-   :g:`< D T > <g1:< D T >>` is another parallelogram;
+   :g:`< D T > <g1:< D T >>` is another parallelogram
 
 .. step:: assert ∵ equal_magnitudes_ratio <G.183>
 
-   Therefore, as the base :g:`< C D > <g1:< C D >>` is to :g:`< D T > <g1:< D T >>`, so is :g:`< Y T > <g1:< Y T >>` to :g:`< D T > <g1:< D T >>`.
+   as :g:`< C D > <g1:< C D >>` is to :g:`< D T > <g1:< D T >>`, so is :g:`< Y T > <g1:< Y T >>` to :g:`< D T > <g1:< D T >>`
 
 .. step:: assert
 
-   And, since the parallelepipedal solid :g:`< C I > <g1:< C I >>` has been cut by the :term:`plane <G.7>` :g:`< R F > <g1:< R F >>` which is parallel to opposite planes,
+   since the parallelepipedal solid :g:`< C I > <g1:< C I >>` has been cut by the :term:`plane <G.7>` :g:`< R F > <g1:< R F >>` which is parallel to opposite planes,
 
 .. step:: assert ∵ parallelepipedal_solid_cut <G.531>
 
-   As the base :g:`< C D > <g1:< C D >>` is to the base :g:`< D T > <g1:< D T >>`, so is the solid :g:`< C F > <g1:< C F >>` to the solid :g:`< R I > <g1:< R I >>`.
+   As :g:`< C D > <g1:< C D >>` is to :g:`< D T > <g1:< D T >>`, so is the solid :g:`< C F > <g1:< C F >>` to the solid :g:`< R I > <g1:< R I >>`
 
 .. step:: assert
 
@@ -143,27 +143,27 @@ G.541 parallelepipedal solids equal
 
 .. step:: assert ∵ parallelepipedal_solid_cut <G.531>
 
-   As the base :g:`< Y T > <g2:< Y T >>` is to the base :g:`< T D > <g2:< T D >>`, so is the solid :g:`< Y X > <g2:< Y X >>` to the solid :g:`< R I > <g2:< R I >>`.
+   As :g:`< Y T > <g2:< Y T >>` is to :g:`< T D > <g2:< T D >>`, so is the solid :g:`< Y X > <g2:< Y X >>` to the solid :g:`< R I > <g2:< R I >>`
 
 .. step:: assert
 
-   But, as the base :g:`< C D > <g2:< C D >>` is to :g:`< D T > <g2:< D T >>`, so is :g:`< Y T > <g2:< Y T >>` to :g:`< D T > <g2:< D T >>`;
+   But, as :g:`< C D > <g2:< C D >>` is to :g:`< D T > <g2:< D T >>`, so is :g:`< Y T > <g2:< Y T >>` to :g:`< D T > <g2:< D T >>`
 
 .. step:: assert ∵ ratios_ratio <G.189>
 
-   Therefore also, as the solid :g:`< C F > <g2:< C F >>` is to the solid :g:`< R I > <g2:< R I >>`, so is the solid :g:`< Y X > <g2:< Y X >>` to :g:`< R I > <g2:< R I >>`.
+   also, as the solid :g:`< C F > <g2:< C F >>` is to the solid :g:`< R I > <g2:< R I >>`, so is the solid :g:`< Y X > <g2:< Y X >>` to :g:`< R I > <g2:< R I >>`
 
 .. step:: assert ∵ magnitudes_ratio_equal <G.187>
 
-   Therefore each of the solids :g:`< C F > <g2:< C F >>`, :g:`< Y X > <g2:< Y X >>` has to :g:`< R I > <g2:< R I >>` the :term:`same ratio <G.176>`; therefore the solid :g:`< C F > <g2:< C F >>` is :eq:`equal <g2:< C F > = g2:< Y X >>` to the solid :g:`< Y X > <g2:< Y X >>`.
+   each of the solids :g:`< C F > <g2:< C F >>`, :g:`< Y X > <g2:< Y X >>` has to :g:`< R I > <g2:< R I >>` the :term:`same ratio <G.176>`; therefore the solid :g:`< C F > <g2:< C F >>` is :eq:`equal <g2:< C F > = g2:< Y X >>` to the solid :g:`< Y X > <g2:< Y X >>`
 
 .. step:: assert
 
-   :g:`< Y X > <g2:< Y X >>` was proved :eq:`equal <g2:< Y X > = g2:< A E >>` to :g:`< A E > <g2:< A E >>`;
+   :g:`< Y X > <g2:< Y X >>` was proved :eq:`equal <g2:< Y X > = g2:< A E >>` to :g:`< A E > <g2:< A E >>`
 
 .. step:: assert
 
-   Therefore :g:`< A E > <g2:< A E >>` is also :eq:`equal <g2:< A E > = g2:< C F >>` to :g:`< C F > <g2:< C F >>`.
+   :g:`< A E > <g2:< A E >>` is also :eq:`equal <g2:< A E > = g2:< C F >>` to :g:`< C F > <g2:< C F >>`
 
 .. step:: assert
 
@@ -171,7 +171,7 @@ G.541 parallelepipedal solids equal
 
 .. step:: assert
 
-   I say again that the solid :g:`< A E > <g2:< A E >>` is :eq:`equal <g2:< A E > = g2:< C F >>` to the solid :g:`< C F > <g2:< C F >>`.
+   I say again that the solid :g:`< A E > <g2:< A E >>` is :eq:`equal <g2:< A E > = g2:< C F >>` to the solid :g:`< C F > <g2:< C F >>`
 
 .. step:: construct
 
@@ -179,19 +179,19 @@ G.541 parallelepipedal solids equal
 
 .. step:: construct
 
-   :fn:`segment <G.13>`\ () → :g:`O <g2:O>`, :fn:`segment <G.13>`\ () → :g:`T <g2:T>`, :fn:`segment <G.13>`\ () → :g:`U <g2:U>`, :fn:`segment <G.13>`\ () → :g:`V <g2:V>`, :fn:`segment <G.13>`\ () → :g:`W <g2:W>`, :fn:`segment <G.13>`\ () → :g:`X <g2:X>`, :fn:`segment <G.13>`\ () → :g:`Y <g2:Y>`, :fn:`segment <G.13>`\ () → :g:`I <g2:I>`, :fn:`segment <G.13>`\ (:g:`O <g2:O>`, :g:`T <g2:T>`) → :g:`/ O T / <g2:/ O T />`, :fn:`segment <G.13>`\ (:g:`O <g2:O>`, :g:`U <g2:U>`) → :g:`/ O U / <g2:/ O U />`, :fn:`segment <G.13>`\ (:g:`U <g2:U>`, :g:`V <g2:V>`) → :g:`/ U V / <g2:/ U V />`, :fn:`segment <G.13>`\ (:g:`T <g2:T>`, :g:`V <g2:V>`) → :g:`/ T V / <g2:/ T V />`, :fn:`segment <G.13>`\ (:g:`W <g2:W>`, :g:`X <g2:X>`) → :g:`/ W X / <g2:/ W X />`, :fn:`segment <G.13>`\ (:g:`W <g2:W>`, :g:`Y <g2:Y>`) → :g:`/ W Y / <g2:/ W Y />`, :fn:`segment <G.13>`\ (:g:`Y <g2:Y>`, :g:`I <g2:I>`) → :g:`/ Y I / <g2:/ Y I />`, :fn:`segment <G.13>`\ (:g:`I <g2:I>`, :g:`X <g2:X>`) → :g:`/ I X / <g2:/ I X />`
+   :fn:`segment <G.14>`\ () → :g:`O <g2:O>`, :fn:`segment <G.14>`\ () → :g:`T <g2:T>`, :fn:`segment <G.14>`\ () → :g:`U <g2:U>`, :fn:`segment <G.14>`\ () → :g:`V <g2:V>`, :fn:`segment <G.14>`\ () → :g:`W <g2:W>`, :fn:`segment <G.14>`\ () → :g:`X <g2:X>`, :fn:`segment <G.14>`\ () → :g:`Y <g2:Y>`, :fn:`segment <G.14>`\ () → :g:`I <g2:I>`, :fn:`segment <G.14>`\ (:g:`O <g2:O>`, :g:`T <g2:T>`) → :g:`/ O T / <g2:/ O T />`, :fn:`segment <G.14>`\ (:g:`O <g2:O>`, :g:`U <g2:U>`) → :g:`/ O U / <g2:/ O U />`, :fn:`segment <G.14>`\ (:g:`U <g2:U>`, :g:`V <g2:V>`) → :g:`/ U V / <g2:/ U V />`, :fn:`segment <G.14>`\ (:g:`T <g2:T>`, :g:`V <g2:V>`) → :g:`/ T V / <g2:/ T V />`, :fn:`segment <G.14>`\ (:g:`W <g2:W>`, :g:`X <g2:X>`) → :g:`/ W X / <g2:/ W X />`, :fn:`segment <G.14>`\ (:g:`W <g2:W>`, :g:`Y <g2:Y>`) → :g:`/ W Y / <g2:/ W Y />`, :fn:`segment <G.14>`\ (:g:`Y <g2:Y>`, :g:`I <g2:I>`) → :g:`/ Y I / <g2:/ Y I />`, :fn:`segment <G.14>`\ (:g:`I <g2:I>`, :g:`X <g2:X>`) → :g:`/ I X / <g2:/ I X />`
 
 .. step:: assert ∵ First part of this Prop. <First part of this Prop.>
 
-   Then the solid :g:`< K V > <g2:< K V >>` is :eq:`equal <g2:< K V > = g2:< Q I >>` to the solid :g:`< Q I > <g2:< Q I >>`, for they are on the :eq:`equal <g2:< K M > = g2:< Q S >>` bases :g:`< K M > <g2:< K M >>`, :g:`< Q S > <g2:< Q S >>` and of the same height, and their sides which stand up are at right angles to their bases.
+   Then the solid :g:`< K V > <g2:< K V >>` is :eq:`equal <g2:< K V > = g2:< Q I >>` to the solid :g:`< Q I > <g2:< Q I >>`, for they are on the :eq:`equal <g2:< K M > = g2:< Q S >>` bases :g:`< K M > <g2:< K M >>`, :g:`< Q S > <g2:< Q S >>` and of the same height, and their sides which stand up are at right angles to their bases
 
 .. step:: assert ∵ parallelepipedal_solids_base_xi_30 <G.540>
 
-   The solid :g:`< K V > <g2:< K V >>` is :eq:`equal <g2:< K V > = g2:< A E >; g2:< Q I > = g2:< C F >>` to the solid :g:`< A E > <g2:< A E >>`, and :g:`< Q I > <g2:< Q I >>` to :g:`< C F > <g2:< C F >>`; for they are on the same base and of the same height, while the extremities of their sides which stand up are not on the same segments.
+   The solid :g:`< K V > <g2:< K V >>` is :eq:`equal <g2:< K V > = g2:< A E >; g2:< Q I > = g2:< C F >>` to the solid :g:`< A E > <g2:< A E >>`, and :g:`< Q I > <g2:< Q I >>` to :g:`< C F > <g2:< C F >>`; for they are on the same base and of the same height, while the extremities of their sides which stand up are not on the same segments
 
 .. step:: conclude
 
-   Therefore the solid :g:`< A E > <g2:< A E >>` is also :eq:`equal <g2:< A E > = g2:< C F >>` to the solid :g:`< C F > <g2:< C F >>`.
+   the solid :g:`< A E > <g2:< A E >>` is also :eq:`equal <g2:< A E > = g2:< C F >>` to the solid :g:`< C F > <g2:< C F >>`
 
 Dependency Graph
 ----------------
@@ -213,10 +213,10 @@ Dependency Graph
      "G.8" [label="G.8", tooltip="G.8 (I.def.13): A boundary is the extremity of anything.", fillcolor="#224422", URL="../G.8/index.html", target="_top"];
      "G.9" [label="G.9", tooltip="G.9 (I.def.14): A figure is that which is contained by any boundary or boundaries.", fillcolor="#224422", URL="../G.9/index.html", target="_top"];
      "G.10" [label="G.10", tooltip="G.10 (I.def.15): A circle ( A B ) is a plane figure contained by one arc defined by a center A and a point B establishing its defining radius / A B /, such that all segments / A B /, / A C /, / A D...", fillcolor="#224422", URL="../G.10/index.html", target="_top"];
-     "G.11" [label="G.11", tooltip="G.11 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
-     "G.12" [label="G.12", tooltip="G.12 (I.def.20): Of trilateral figures, an equilateral triangle < A B C > has three equal sides, an isosceles triangle < D E F > has two equal sides, and a scalene triangle < G H K > has three uneq...", fillcolor="#224422", URL="../G.12/index.html", target="_top"];
-     "G.13" [label="G.13", tooltip="G.13 (I.post.1): Construct a segment / A B / between any two points A, B.", fillcolor="#444422", URL="../G.13/index.html", target="_top"];
-     "G.14" [label="G.14", tooltip="G.14 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.", fillcolor="#224422", URL="../G.14/index.html", target="_top"];
+     "G.11" [label="G.11", tooltip="G.11 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
+     "G.12" [label="G.12", tooltip="G.12 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.12/index.html", target="_top"];
+     "G.13" [label="G.13", tooltip="G.13 (I.def.20): Of trilateral figures, an equilateral triangle < A B C > has three equal sides, an isosceles triangle < D E F > has two equal sides, and a scalene triangle < G H K > has three uneq...", fillcolor="#224422", URL="../G.13/index.html", target="_top"];
+     "G.14" [label="G.14", tooltip="G.14 (I.post.1): Construct a segment / A B / between any two points A, B.", fillcolor="#444422", URL="../G.14/index.html", target="_top"];
      "G.15" [label="G.15", tooltip="G.15 (I.post.3): Construct a circle ( A B ) with center A and defining radius point B.", fillcolor="#444422", URL="../G.15/index.html", target="_top"];
      "G.16" [label="G.16", tooltip="G.16 (I.cn.1): Things equal to the same thing are equal to one another.", fillcolor="#442222", URL="../G.16/index.html", target="_top"];
      "G.17" [label="G.17", tooltip="G.17 (I.1): Construct an equilateral triangle on a given segment.", fillcolor="#222244", URL="../G.17/index.html", target="_top"];
@@ -228,18 +228,18 @@ Dependency Graph
      "G.23" [label="G.23", tooltip="G.23 (I.cn.4): Things / A B /, / D E / that coincide with one another are equal to one another.", fillcolor="#442222", URL="../G.23/index.html", target="_top"];
      "G.24" [label="G.24", tooltip="G.24 (I.4): Triangles with two sides and the included angle equal are congruent (SAS).", fillcolor="#222244", URL="../G.24/index.html", target="_top"];
      "G.25" [label="G.25", tooltip="G.25 (I.5): In an isosceles triangle, the angles at the base are equal, and if the equal sides are extended, the angles under the base are equal.", fillcolor="#222244", URL="../G.25/index.html", target="_top"];
-     "G.27" [label="G.27", tooltip="G.27 (I.7): On the same segment and on the same side, there cannot be constructed two distinct triangles with both pairs of conterminous sides equal.", fillcolor="#222244", URL="../G.27/index.html", target="_top"];
-     "G.28" [label="G.28", tooltip="G.28 (I.8): Triangles with all three corresponding sides equal have their corresponding angles equal (SSS).", fillcolor="#222244", URL="../G.28/index.html", target="_top"];
-     "G.29" [label="G.29", tooltip="G.29 (I.def.9): A rectilineal angle is contained by two segments or lines.", fillcolor="#224422", URL="../G.29/index.html", target="_top"];
-     "G.30" [label="G.30", tooltip="G.30 (I.9): Bisect a given angle.", fillcolor="#222244", URL="../G.30/index.html", target="_top"];
-     "G.31" [label="G.31", tooltip="G.31 (I.10): Bisect a given segment.", fillcolor="#222244", URL="../G.31/index.html", target="_top"];
-     "G.32" [label="G.32", tooltip="G.32 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.32/index.html", target="_top"];
-     "G.33" [label="G.33", tooltip="G.33 (I.11): Construct a segment at right angles to a given line from a given point on it.", fillcolor="#222244", URL="../G.33/index.html", target="_top"];
-     "G.35" [label="G.35", tooltip="G.35 (I.cn.2): If equals are added to equals, the wholes are equal.", fillcolor="#442222", URL="../G.35/index.html", target="_top"];
-     "G.36" [label="G.36", tooltip="G.36 (I.13): A segment standing on a line makes either two right angles or adjacent angles summing to two right angles.", fillcolor="#222244", URL="../G.36/index.html", target="_top"];
-     "G.37" [label="G.37", tooltip="G.37 (I.post.4): All right angles are equal.", fillcolor="#444422", URL="../G.37/index.html", target="_top"];
-     "G.39" [label="G.39", tooltip="G.39 (I.15): Intersecting lines make their vertical angles equal.", fillcolor="#222244", URL="../G.39/index.html", target="_top"];
-     "G.40" [label="G.40", tooltip="G.40 (I.cn.5): The whole is greater than the part.", fillcolor="#442222", URL="../G.40/index.html", target="_top"];
+     "G.26" [label="G.26", tooltip="G.26 (I.cn.5): The whole is greater than the part.", fillcolor="#442222", URL="../G.26/index.html", target="_top"];
+     "G.28" [label="G.28", tooltip="G.28 (I.7): On the same segment and on the same side, there cannot be constructed two distinct triangles with both pairs of conterminous sides equal.", fillcolor="#222244", URL="../G.28/index.html", target="_top"];
+     "G.29" [label="G.29", tooltip="G.29 (I.8): Triangles with all three corresponding sides equal have their corresponding angles equal (SSS).", fillcolor="#222244", URL="../G.29/index.html", target="_top"];
+     "G.30" [label="G.30", tooltip="G.30 (I.def.9): A rectilineal angle is contained by two segments or lines.", fillcolor="#224422", URL="../G.30/index.html", target="_top"];
+     "G.31" [label="G.31", tooltip="G.31 (I.9): Bisect a given angle.", fillcolor="#222244", URL="../G.31/index.html", target="_top"];
+     "G.32" [label="G.32", tooltip="G.32 (I.10): Bisect a given segment.", fillcolor="#222244", URL="../G.32/index.html", target="_top"];
+     "G.33" [label="G.33", tooltip="G.33 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.33/index.html", target="_top"];
+     "G.34" [label="G.34", tooltip="G.34 (I.11): Construct a segment at right angles to a given line from a given point on it.", fillcolor="#222244", URL="../G.34/index.html", target="_top"];
+     "G.36" [label="G.36", tooltip="G.36 (I.cn.2): If equals are added to equals, the wholes are equal.", fillcolor="#442222", URL="../G.36/index.html", target="_top"];
+     "G.37" [label="G.37", tooltip="G.37 (I.13): A segment standing on a line makes either two right angles or adjacent angles summing to two right angles.", fillcolor="#222244", URL="../G.37/index.html", target="_top"];
+     "G.38" [label="G.38", tooltip="G.38 (I.post.4): All right angles are equal.", fillcolor="#444422", URL="../G.38/index.html", target="_top"];
+     "G.40" [label="G.40", tooltip="G.40 (I.15): Intersecting lines make their vertical angles equal.", fillcolor="#222244", URL="../G.40/index.html", target="_top"];
      "G.41" [label="G.41", tooltip="G.41 (I.16): In any triangle, if one side is extended, the exterior angle is greater than either opposite interior angle.", fillcolor="#222244", URL="../G.41/index.html", target="_top"];
      "G.43" [label="G.43", tooltip="G.43 (I.18): In any triangle, the greater side subtends the greater angle.", fillcolor="#222244", URL="../G.43/index.html", target="_top"];
      "G.44" [label="G.44", tooltip="G.44 (I.19): In any triangle, the greater angle is subtended by the greater side.", fillcolor="#222244", URL="../G.44/index.html", target="_top"];
@@ -252,6 +252,7 @@ Dependency Graph
      "G.54" [label="G.54", tooltip="G.54 (I.28): If a transversal cutting two lines makes the exterior angle equal to the opposite interior angle, or interior angles on the same side supplementary, the lines are parallel.", fillcolor="#222244", URL="../G.54/index.html", target="_top"];
      "G.55" [label="G.55", tooltip="G.55 (I.post.5): Two lines intersected by a transversal with interior angles on one side summing to less than two right angles meet on that side.", fillcolor="#444422", URL="../G.55/index.html", target="_top"];
      "G.56" [label="G.56", tooltip="G.56 (I.29): A transversal cutting parallel lines makes alternate interior angles equal, exterior and opposite interior angles equal, and same-side interior angles supplementary.", fillcolor="#222244", URL="../G.56/index.html", target="_top"];
+     "G.58" [label="G.58", tooltip="G.58 (I.31): Construct through a given point a line parallel to a given line.", fillcolor="#222244", URL="../G.58/index.html", target="_top"];
      "G.60" [label="G.60", tooltip="G.60 (I.33): Segments joining the endpoints of equal and parallel segments in the same directions are themselves equal and parallel.", fillcolor="#222244", URL="../G.60/index.html", target="_top"];
      "G.61" [label="G.61", tooltip="G.61 (I.def.17): A diameter of a circle is any segment drawn through the center and terminated in both directions by the arc of the circle; it bisects the circle.", fillcolor="#224422", URL="../G.61/index.html", target="_top"];
      "G.62" [label="G.62", tooltip="G.62 (I.34): In a parallelogram, opposite sides and opposite angles are equal, and the diagonal bisects the area.", fillcolor="#222244", URL="../G.62/index.html", target="_top"];
@@ -303,32 +304,68 @@ Dependency Graph
      "G.3" -> "G.1";
      "G.4" -> "G.1";
      "G.10" -> "G.1";
-     "G.13" -> "G.1";
+     "G.11" -> "G.1";
      "G.14" -> "G.1";
+     "G.15" -> "G.1";
+     "G.17" -> "G.1";
      "G.20" -> "G.1";
-     "G.27" -> "G.1";
-     "G.33" -> "G.1";
+     "G.21" -> "G.1";
+     "G.24" -> "G.1";
+     "G.25" -> "G.1";
+     "G.28" -> "G.1";
+     "G.29" -> "G.1";
+     "G.31" -> "G.1";
+     "G.32" -> "G.1";
+     "G.34" -> "G.1";
+     "G.37" -> "G.1";
+     "G.40" -> "G.1";
+     "G.45" -> "G.1";
+     "G.47" -> "G.1";
      "G.48" -> "G.1";
+     "G.58" -> "G.1";
      "G.506" -> "G.1";
      "G.507" -> "G.1";
      "G.509" -> "G.1";
+     "G.519" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
      "G.6" -> "G.2";
+     "G.7" -> "G.2";
+     "G.18" -> "G.2";
      "G.22" -> "G.2";
-     "G.29" -> "G.2";
+     "G.30" -> "G.2";
+     "G.33" -> "G.2";
+     "G.34" -> "G.2";
+     "G.37" -> "G.2";
+     "G.40" -> "G.2";
+     "G.48" -> "G.2";
+     "G.52" -> "G.2";
+     "G.53" -> "G.2";
+     "G.54" -> "G.2";
+     "G.55" -> "G.2";
+     "G.56" -> "G.2";
+     "G.58" -> "G.2";
+     "G.65" -> "G.2";
+     "G.504" -> "G.2";
+     "G.509" -> "G.2";
      "G.4" -> "G.3";
+     "G.6" -> "G.3";
      "G.8" -> "G.3";
      "G.20" -> "G.3";
-     "G.27" -> "G.3";
+     "G.28" -> "G.3";
+     "G.29" -> "G.3";
      "G.60" -> "G.3";
+     "G.65" -> "G.3";
+     "G.504" -> "G.3";
      "G.533" -> "G.3";
      "G.539" -> "G.3";
      "G.540" -> "G.3";
+     "G.541" -> "G.3";
      "G.7" -> "G.4";
      "G.10" -> "G.4";
      "G.11" -> "G.4";
-     "G.13" -> "G.4";
+     "G.12" -> "G.4";
+     "G.14" -> "G.4";
      "G.17" -> "G.4";
      "G.18" -> "G.4";
      "G.20" -> "G.4";
@@ -336,13 +373,16 @@ Dependency Graph
      "G.22" -> "G.4";
      "G.24" -> "G.4";
      "G.25" -> "G.4";
-     "G.27" -> "G.4";
      "G.28" -> "G.4";
+     "G.29" -> "G.4";
+     "G.30" -> "G.4";
      "G.31" -> "G.4";
      "G.32" -> "G.4";
      "G.33" -> "G.4";
-     "G.36" -> "G.4";
-     "G.39" -> "G.4";
+     "G.34" -> "G.4";
+     "G.37" -> "G.4";
+     "G.40" -> "G.4";
+     "G.41" -> "G.4";
      "G.47" -> "G.4";
      "G.48" -> "G.4";
      "G.52" -> "G.4";
@@ -350,8 +390,11 @@ Dependency Graph
      "G.54" -> "G.4";
      "G.55" -> "G.4";
      "G.56" -> "G.4";
+     "G.58" -> "G.4";
      "G.60" -> "G.4";
      "G.61" -> "G.4";
+     "G.62" -> "G.4";
+     "G.65" -> "G.4";
      "G.502" -> "G.4";
      "G.503" -> "G.4";
      "G.504" -> "G.4";
@@ -363,11 +406,15 @@ Dependency Graph
      "G.510" -> "G.4";
      "G.511" -> "G.4";
      "G.512" -> "G.4";
+     "G.519" -> "G.4";
+     "G.531" -> "G.4";
      "G.539" -> "G.4";
      "G.540" -> "G.4";
+     "G.541" -> "G.4";
      "G.6" -> "G.5";
      "G.7" -> "G.5";
      "G.10" -> "G.6";
+     "G.533" -> "G.6";
      "G.10" -> "G.7";
      "G.22" -> "G.7";
      "G.52" -> "G.7";
@@ -375,7 +422,9 @@ Dependency Graph
      "G.503" -> "G.7";
      "G.504" -> "G.7";
      "G.505" -> "G.7";
+     "G.506" -> "G.7";
      "G.507" -> "G.7";
+     "G.508" -> "G.7";
      "G.509" -> "G.7";
      "G.510" -> "G.7";
      "G.511" -> "G.7";
@@ -384,88 +433,145 @@ Dependency Graph
      "G.530" -> "G.7";
      "G.531" -> "G.7";
      "G.537" -> "G.7";
+     "G.541" -> "G.7";
      "G.9" -> "G.8";
      "G.10" -> "G.9";
-     "G.24" -> "G.9";
+     "G.12" -> "G.9";
      "G.187" -> "G.9";
      "G.189" -> "G.9";
      "G.209" -> "G.9";
-     "G.14" -> "G.10";
+     "G.539" -> "G.9";
+     "G.11" -> "G.10";
      "G.15" -> "G.10";
      "G.17" -> "G.10";
+     "G.20" -> "G.10";
      "G.21" -> "G.10";
+     "G.47" -> "G.10";
      "G.61" -> "G.10";
      "G.502" -> "G.10";
-     "G.12" -> "G.11";
-     "G.24" -> "G.11";
-     "G.28" -> "G.11";
-     "G.41" -> "G.11";
-     "G.43" -> "G.11";
-     "G.44" -> "G.11";
-     "G.45" -> "G.11";
+     "G.15" -> "G.11";
+     "G.17" -> "G.11";
+     "G.20" -> "G.11";
+     "G.21" -> "G.11";
      "G.47" -> "G.11";
-     "G.51" -> "G.11";
-     "G.63" -> "G.11";
-     "G.503" -> "G.11";
+     "G.61" -> "G.11";
+     "G.502" -> "G.11";
+     "G.13" -> "G.12";
      "G.17" -> "G.12";
+     "G.20" -> "G.12";
+     "G.24" -> "G.12";
      "G.25" -> "G.12";
+     "G.28" -> "G.12";
+     "G.29" -> "G.12";
+     "G.31" -> "G.12";
+     "G.32" -> "G.12";
+     "G.34" -> "G.12";
+     "G.41" -> "G.12";
+     "G.43" -> "G.12";
+     "G.44" -> "G.12";
+     "G.45" -> "G.12";
+     "G.47" -> "G.12";
+     "G.48" -> "G.12";
+     "G.51" -> "G.12";
+     "G.53" -> "G.12";
+     "G.60" -> "G.12";
+     "G.62" -> "G.12";
      "G.63" -> "G.12";
+     "G.64" -> "G.12";
+     "G.503" -> "G.12";
+     "G.508" -> "G.12";
+     "G.539" -> "G.12";
      "G.17" -> "G.13";
-     "G.20" -> "G.13";
      "G.25" -> "G.13";
-     "G.27" -> "G.13";
-     "G.41" -> "G.13";
-     "G.15" -> "G.14";
-     "G.61" -> "G.14";
-     "G.502" -> "G.14";
+     "G.63" -> "G.13";
+     "G.17" -> "G.14";
+     "G.20" -> "G.14";
+     "G.25" -> "G.14";
+     "G.28" -> "G.14";
+     "G.31" -> "G.14";
+     "G.34" -> "G.14";
+     "G.41" -> "G.14";
+     "G.43" -> "G.14";
+     "G.45" -> "G.14";
+     "G.47" -> "G.14";
+     "G.51" -> "G.14";
+     "G.58" -> "G.14";
+     "G.60" -> "G.14";
+     "G.65" -> "G.14";
+     "G.503" -> "G.14";
+     "G.508" -> "G.14";
+     "G.510" -> "G.14";
+     "G.512" -> "G.14";
+     "G.530" -> "G.14";
+     "G.540" -> "G.14";
+     "G.541" -> "G.14";
      "G.17" -> "G.15";
      "G.20" -> "G.15";
      "G.21" -> "G.15";
+     "G.47" -> "G.15";
      "G.17" -> "G.16";
      "G.20" -> "G.16";
      "G.21" -> "G.16";
-     "G.36" -> "G.16";
-     "G.39" -> "G.16";
+     "G.37" -> "G.16";
+     "G.40" -> "G.16";
      "G.56" -> "G.16";
      "G.64" -> "G.16";
      "G.65" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
-     "G.33" -> "G.17";
+     "G.32" -> "G.17";
+     "G.34" -> "G.17";
      "G.20" -> "G.18";
      "G.25" -> "G.18";
      "G.41" -> "G.18";
+     "G.45" -> "G.18";
+     "G.58" -> "G.18";
+     "G.540" -> "G.18";
+     "G.541" -> "G.18";
      "G.20" -> "G.19";
-     "G.39" -> "G.19";
+     "G.25" -> "G.19";
+     "G.40" -> "G.19";
      "G.64" -> "G.19";
      "G.21" -> "G.20";
      "G.25" -> "G.21";
-     "G.30" -> "G.21";
-     "G.33" -> "G.21";
+     "G.31" -> "G.21";
+     "G.34" -> "G.21";
      "G.41" -> "G.21";
      "G.43" -> "G.21";
+     "G.45" -> "G.21";
      "G.47" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
      "G.28" -> "G.22";
      "G.29" -> "G.22";
+     "G.30" -> "G.22";
+     "G.31" -> "G.22";
      "G.32" -> "G.22";
-     "G.36" -> "G.22";
-     "G.39" -> "G.22";
+     "G.33" -> "G.22";
+     "G.34" -> "G.22";
+     "G.37" -> "G.22";
+     "G.40" -> "G.22";
      "G.41" -> "G.22";
      "G.43" -> "G.22";
      "G.44" -> "G.22";
+     "G.45" -> "G.22";
+     "G.48" -> "G.22";
      "G.51" -> "G.22";
      "G.53" -> "G.22";
      "G.54" -> "G.22";
      "G.55" -> "G.22";
      "G.56" -> "G.22";
+     "G.58" -> "G.22";
+     "G.60" -> "G.22";
      "G.62" -> "G.22";
      "G.63" -> "G.22";
+     "G.64" -> "G.22";
      "G.512" -> "G.22";
+     "G.530" -> "G.22";
      "G.24" -> "G.23";
+     "G.29" -> "G.23";
      "G.25" -> "G.24";
-     "G.31" -> "G.24";
+     "G.32" -> "G.24";
      "G.41" -> "G.24";
      "G.51" -> "G.24";
      "G.60" -> "G.24";
@@ -475,47 +581,52 @@ Dependency Graph
      "G.508" -> "G.24";
      "G.530" -> "G.24";
      "G.539" -> "G.24";
-     "G.27" -> "G.25";
+     "G.28" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
-     "G.28" -> "G.27";
-     "G.30" -> "G.28";
-     "G.33" -> "G.28";
-     "G.48" -> "G.28";
-     "G.506" -> "G.28";
-     "G.508" -> "G.28";
-     "G.512" -> "G.28";
-     "G.539" -> "G.28";
-     "G.30" -> "G.29";
+     "G.28" -> "G.26";
+     "G.41" -> "G.26";
+     "G.45" -> "G.26";
+     "G.29" -> "G.28";
+     "G.31" -> "G.29";
+     "G.34" -> "G.29";
      "G.48" -> "G.29";
+     "G.506" -> "G.29";
+     "G.508" -> "G.29";
+     "G.512" -> "G.29";
+     "G.539" -> "G.29";
      "G.31" -> "G.30";
-     "G.41" -> "G.31";
-     "G.33" -> "G.32";
-     "G.36" -> "G.32";
-     "G.37" -> "G.32";
-     "G.54" -> "G.32";
-     "G.55" -> "G.32";
-     "G.56" -> "G.32";
-     "G.209" -> "G.32";
-     "G.505" -> "G.32";
-     "G.506" -> "G.32";
-     "G.507" -> "G.32";
-     "G.510" -> "G.32";
-     "G.36" -> "G.33";
-     "G.36" -> "G.35";
-     "G.56" -> "G.35";
-     "G.62" -> "G.35";
-     "G.64" -> "G.35";
-     "G.39" -> "G.36";
-     "G.54" -> "G.36";
+     "G.48" -> "G.30";
+     "G.32" -> "G.31";
+     "G.41" -> "G.32";
+     "G.34" -> "G.33";
+     "G.37" -> "G.33";
+     "G.38" -> "G.33";
+     "G.40" -> "G.33";
+     "G.54" -> "G.33";
+     "G.55" -> "G.33";
+     "G.56" -> "G.33";
+     "G.209" -> "G.33";
+     "G.505" -> "G.33";
+     "G.506" -> "G.33";
+     "G.507" -> "G.33";
+     "G.508" -> "G.33";
+     "G.510" -> "G.33";
+     "G.511" -> "G.33";
+     "G.541" -> "G.33";
+     "G.37" -> "G.34";
+     "G.37" -> "G.36";
      "G.56" -> "G.36";
-     "G.39" -> "G.37";
-     "G.41" -> "G.39";
-     "G.54" -> "G.39";
-     "G.56" -> "G.39";
-     "G.506" -> "G.39";
+     "G.62" -> "G.36";
+     "G.64" -> "G.36";
+     "G.40" -> "G.37";
+     "G.54" -> "G.37";
+     "G.56" -> "G.37";
+     "G.40" -> "G.38";
      "G.41" -> "G.40";
-     "G.45" -> "G.40";
+     "G.54" -> "G.40";
+     "G.56" -> "G.40";
+     "G.506" -> "G.40";
      "G.43" -> "G.41";
      "G.51" -> "G.41";
      "G.53" -> "G.41";
@@ -523,13 +634,16 @@ Dependency Graph
      "G.45" -> "G.44";
      "G.47" -> "G.45";
      "G.48" -> "G.47";
+     "G.58" -> "G.48";
      "G.541" -> "G.48";
      "G.62" -> "G.51";
      "G.506" -> "G.51";
      "G.53" -> "G.52";
      "G.54" -> "G.52";
      "G.56" -> "G.52";
+     "G.58" -> "G.52";
      "G.60" -> "G.52";
+     "G.62" -> "G.52";
      "G.64" -> "G.52";
      "G.65" -> "G.52";
      "G.508" -> "G.52";
@@ -538,9 +652,12 @@ Dependency Graph
      "G.511" -> "G.52";
      "G.512" -> "G.52";
      "G.519" -> "G.52";
+     "G.530" -> "G.52";
      "G.531" -> "G.52";
      "G.537" -> "G.52";
+     "G.541" -> "G.52";
      "G.54" -> "G.53";
+     "G.58" -> "G.53";
      "G.60" -> "G.53";
      "G.508" -> "G.54";
      "G.56" -> "G.55";
@@ -548,6 +665,7 @@ Dependency Graph
      "G.62" -> "G.56";
      "G.64" -> "G.56";
      "G.510" -> "G.56";
+     "G.541" -> "G.58";
      "G.65" -> "G.60";
      "G.512" -> "G.60";
      "G.62" -> "G.61";
@@ -565,7 +683,11 @@ Dependency Graph
      "G.256" -> "G.169";
      "G.171" -> "G.170";
      "G.176" -> "G.170";
+     "G.183" -> "G.170";
      "G.185" -> "G.170";
+     "G.186" -> "G.170";
+     "G.189" -> "G.170";
+     "G.531" -> "G.170";
      "G.186" -> "G.171";
      "G.189" -> "G.173";
      "G.180" -> "G.176";
@@ -573,6 +695,7 @@ Dependency Graph
      "G.187" -> "G.176";
      "G.189" -> "G.176";
      "G.531" -> "G.176";
+     "G.541" -> "G.176";
      "G.183" -> "G.180";
      "G.182" -> "G.181";
      "G.183" -> "G.182";
@@ -588,7 +711,10 @@ Dependency Graph
      "G.248" -> "G.247";
      "G.253" -> "G.248";
      "G.256" -> "G.248";
+     "G.531" -> "G.248";
+     "G.256" -> "G.253";
      "G.502" -> "G.253";
+     "G.503" -> "G.253";
      "G.531" -> "G.256";
      "G.503" -> "G.502";
      "G.519" -> "G.502";
@@ -600,6 +726,7 @@ Dependency Graph
      "G.507" -> "G.505";
      "G.508" -> "G.505";
      "G.510" -> "G.505";
+     "G.511" -> "G.505";
      "G.507" -> "G.506";
      "G.510" -> "G.506";
      "G.511" -> "G.506";

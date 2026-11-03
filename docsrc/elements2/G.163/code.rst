@@ -12,7 +12,7 @@ G.163 inscribe pentagon in circle — Code
 
 .. enunciation::
 
-   :term:`Inscribe in a given circle <G.148>` an :term:`equilateral <G.12>` and equiangular pentagon.
+   :term:`Inscribe in a given circle <G.148>` an :term:`equilateral <G.13>` and equiangular pentagon.
 
 .. picture:: g1.svg
 

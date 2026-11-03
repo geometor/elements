@@ -12,7 +12,7 @@ G.43 greater side subtends greater angle — Code
 
 .. enunciation::
 
-   In any :term:`triangle <G.11>`, the greater side subtends the greater :term:`angle <G.22>`.
+   In any :term:`triangle <G.12>`, the greater side subtends the greater :term:`angle <G.22>`.
 
 .. picture:: g1.svg
 

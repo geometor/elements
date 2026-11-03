@@ -12,7 +12,7 @@ G.505 line at right angles to a plane — Heath
 
 .. enunciation::
 
-   A :term:`straight line <G.4>` is :term:`**at right angles to a plane** <right-angles-to-plane>`, when it makes :term:`right angles <G.32>` with all the straight lines which meet it and are in the :term:`plane <G.7>`.
+   A :term:`straight line <G.4>` is :term:`**at right angles to a plane** <right-angles-to-plane>`, when it makes :term:`right angles <G.33>` with all the straight lines which meet it and are in the :term:`plane <G.7>`.
 
 Dependency Graph
 ----------------
@@ -31,24 +31,26 @@ Dependency Graph
      "G.5" [label="G.5", tooltip="G.5 (I.def.5): A surface is that which has length and breadth only.", fillcolor="#224422", URL="../G.5/index.html", target="_top"];
      "G.7" [label="G.7", tooltip="G.7 (I.def.7): A plane surface lies evenly with the lines on itself.", fillcolor="#224422", URL="../G.7/index.html", target="_top"];
      "G.22" [label="G.22", tooltip="G.22 (I.def.8): A plane angle is the inclination to one another of two lines or arcs in a plane that meet and do not lie on the same line.", fillcolor="#224422", URL="../G.22/index.html", target="_top"];
-     "G.32" [label="G.32", tooltip="G.32 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.32/index.html", target="_top"];
+     "G.33" [label="G.33", tooltip="G.33 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.33/index.html", target="_top"];
      "G.505" [label="G.505", tooltip="G.505 (XI.def.3): Asegment isat right angles to a plane, when it makesright angles with all the segments which meet it and are in theplane.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
+     "G.7" -> "G.2";
      "G.22" -> "G.2";
+     "G.33" -> "G.2";
      "G.4" -> "G.3";
      "G.7" -> "G.4";
      "G.22" -> "G.4";
-     "G.32" -> "G.4";
+     "G.33" -> "G.4";
      "G.505" -> "G.4";
      "G.7" -> "G.5";
      "G.22" -> "G.7";
      "G.505" -> "G.7";
-     "G.32" -> "G.22";
-     "G.505" -> "G.32";
+     "G.33" -> "G.22";
+     "G.505" -> "G.33";
    }
 
 Required for

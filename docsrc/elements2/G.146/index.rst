@@ -9,7 +9,7 @@
 :categories: definition, plane-geometry, circles, polygons
 :category: definition, plane-geometry, circles, polygons
 :tags: book-iv, straight-line, fitted-into-circle, extremity, circle, arc
-:dependencies: G.3, G.4, G.10
+:dependencies: G.3, G.4, G.6, G.10
 :excerpt: Asegment is said to befitted into a circle when itsextremities are on the arc of thecircle.
 
 .. _G.146:
@@ -56,7 +56,9 @@ Dependency Graph
      "G.3" -> "G.2";
      "G.4" -> "G.2";
      "G.6" -> "G.2";
+     "G.7" -> "G.2";
      "G.4" -> "G.3";
+     "G.6" -> "G.3";
      "G.8" -> "G.3";
      "G.146" -> "G.3";
      "G.7" -> "G.4";
@@ -65,6 +67,7 @@ Dependency Graph
      "G.6" -> "G.5";
      "G.7" -> "G.5";
      "G.10" -> "G.6";
+     "G.146" -> "G.6";
      "G.10" -> "G.7";
      "G.9" -> "G.8";
      "G.10" -> "G.9";

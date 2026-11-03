@@ -66,7 +66,10 @@ Dependency Graph
      "G.354" [label="G.354", tooltip="G.354 (IX.23): If as many odd numbers as we please be added together, and their multitude be odd, the whole is odd.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.248" -> "G.247";
      "G.352" -> "G.247";
+     "G.353" -> "G.247";
+     "G.354" -> "G.247";
      "G.351" -> "G.248";
+     "G.353" -> "G.248";
      "G.351" -> "G.302";
      "G.352" -> "G.302";
      "G.353" -> "G.302";

@@ -1,8 +1,10 @@
-"""Programmatic construction for Book I, Proposition 8 (I.8).
+"""Programmatic construction for Book I, Proposition 7 (I.7).
 
-If two triangles have the two sides equal to two sides respectively, and have
-also the base equal to the base, they will also have the angles equal which are
-contained by the equal straight lines.
+Given two straight lines constructed on a straight line (from its extremities)
+and meeting in a point, there cannot be constructed on the same straight line
+(from its extremities), and on the same side of it, two other straight lines
+meeting in another point and equal to the former two respectively, namely each
+to that which has the same extremity with it.
 """
 
 from __future__ import annotations
@@ -11,33 +13,29 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure for Book I, Proposition 8 using geometor.model."""
-    model = Model("I.8")
+    """Construct the figure for Book I, Proposition 7 using geometor.model."""
+    model = Model("I.7")
 
-    # 1. Triangle ABC
-    A = model.set_point(45, -36, classes=["given"], ID="A")
-    B = model.set_point(19, -130, classes=["given"], ID="B")
-    C = model.set_point(96, -104, classes=["given"], ID="C")
+    # 1. Given base AB and two pairs of straight lines AC, CB and AD, DB meeting at C and D
+    A = model.set_point(13, -112, classes=["given"], ID="A")
+    B = model.set_point(134, -112, classes=["given"], ID="B")
+    C = model.set_point(100, -26, ID="C")
+    D = model.set_point(126, -38, ID="D")
 
     model.set_segment(A, B)
     model.set_segment(A, C)
-    model.set_segment(B, C)
+    model.set_segment(C, B)
+    model.set_segment(A, D)
+    model.set_segment(D, B)
+
+    # 2. Let CD be joined [Post. 1]
+    model.set_segment(C, D)
+
+    # 3. Triangles ABC, ABD, ACD, BCD
     model.set_polygon([A, B, C])
-
-    # 2. Triangle DEF and hypothetical displaced configuration EGF
-    D = model.set_point(194, -34, classes=["given"], ID="D")
-    E = model.set_point(170, -130, classes=["given"], ID="E")
-    F = model.set_point(247, -104, classes=["given"], ID="F")
-    G = model.set_point(223, -36, ID="G")
-
-    model.set_segment(D, E)
-    model.set_segment(D, F)
-    model.set_segment(E, F)
-    model.set_segment(E, G)
-    model.set_segment(G, F)
-
-    model.set_polygon([D, E, F])
-    model.set_polygon([G, E, F])
+    model.set_polygon([A, B, D])
+    model.set_polygon([A, C, D])
+    model.set_polygon([B, C, D])
 
     return model
 

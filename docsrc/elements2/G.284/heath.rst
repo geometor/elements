@@ -69,16 +69,20 @@ Dependency Graph
      "G.247" [label="G.247", tooltip="G.247 (VII.def.1): Anunit is that by virtue of which each of the things that exist is called one.", fillcolor="#224422", URL="../G.247/index.html", target="_top"];
      "G.248" [label="G.248", tooltip="G.248 (VII.def.2): Anumber is a multitude composed ofunits.", fillcolor="#224422", URL="../G.248/index.html", target="_top"];
      "G.249" [label="G.249", tooltip="G.249 (VII.def.12): Numbers prime to one another are those which aremeasured by anunit alone as a common measure.", fillcolor="#224422", URL="../G.249/index.html", target="_top"];
+     "G.253" [label="G.253", tooltip="G.253 (VII.def.3): Anumber is apart of a number, the less of the greater, when itmeasures the greater;", fillcolor="#224422", URL="../G.253/index.html", target="_top"];
      "G.283" [label="G.283", tooltip="G.283 (VII.def.11): Aprime number is that which ismeasured by anunit alone.", fillcolor="#224422", URL="../G.283/index.html", target="_top"];
      "G.284" [label="G.284", tooltip="G.284 (VII.29): Any prime number is prime to any number which it does not measure.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.249" -> "G.169";
+     "G.253" -> "G.169";
      "G.283" -> "G.169";
      "G.284" -> "G.169";
      "G.248" -> "G.247";
      "G.249" -> "G.247";
      "G.283" -> "G.247";
+     "G.253" -> "G.248";
      "G.284" -> "G.248";
      "G.284" -> "G.249";
+     "G.283" -> "G.253";
      "G.284" -> "G.283";
    }
 

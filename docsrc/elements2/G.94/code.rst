@@ -12,7 +12,7 @@ G.94 law of cosines obtuse — Code
 
 .. enunciation::
 
-   In :term:`obtuse-angled triangles <G.78>` the :term:`square <G.63>` on the side subtending the :term:`obtuse angle <G.76>` is greater than the squares on the sides containing the obtuse angle by twice the :term:`rectangle contained <G.81>` by one of the sides about the obtuse angle, namely that on which the :term:`perpendicular <G.32>` falls, and the :term:`segment <G.4>` cut off outside by the perpendicular towards the obtuse angle.
+   In :term:`obtuse-angled triangles <G.78>` the :term:`square <G.63>` on the side subtending the :term:`obtuse angle <G.76>` is greater than the squares on the sides containing the obtuse angle by twice the :term:`rectangle contained <G.81>` by one of the sides about the obtuse angle, namely that on which the :term:`perpendicular <G.33>` falls, and the :term:`segment <G.4>` cut off outside by the perpendicular towards the obtuse angle.
 
 .. picture:: g1.svg
 

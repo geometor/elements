@@ -10,7 +10,7 @@
 :categories: theorem, proof, number-theory
 :category: theorem, proof, number-theory
 :tags: book-vii, point, number, proportional, multiply, in-the-same-ratio, proportion, equality
-:dependencies: G.180, G.183, G.187, G.248, G.271, G.272
+:dependencies: G.180, G.183, G.187, G.248, G.269, G.271, G.272
 :excerpt: If four numbers be proportional, the number produced from the first and fourth will equals the number produced from the second and third; and, if the number produced from the first and fourth equals that produced from the second and third, the four numbers is proportional.
 
 .. _G.273:
@@ -29,7 +29,7 @@ G.273 numbers proportional number
 
    | :fn:`numbers_proportional_number <G.273>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`)
    | **given** :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` be four numbers in proportion, so that, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`
-   | **prove** :g:`E <g1:E>` is :eq:`equal <g1:E = g1:F>` to :g:`F <g1:F>`
+   | **prove** :g:`E <g1:E>` :eq:`= <g1:E = g1:F>` :g:`F <g1:F>`
 
 .. picture:: g1.svg
    :alt: Book VII, Proposition 19
@@ -40,75 +40,75 @@ G.273 numbers proportional number
 
 .. step:: assert
 
-   And let :g:`A <g1:A>` by :term:`multiplying <G.269>` :g:`D <g1:D>` make :g:`E <g1:E>`, and let :g:`B <g1:B>` by multiplying :g:`C <g1:C>` make :g:`F <g1:F>`
+   let :g:`A <g1:A>` by :term:`multiplying <G.269>` :g:`D <g1:D>` make :g:`E <g1:E>`, and let :g:`B <g1:B>` by multiplying :g:`C <g1:C>` make :g:`F <g1:F>`
 
 .. step:: assert
 
-   Let :g:`A <g1:A>` by multiplying :g:`C <g1:C>` make :g:`G <g1:G>`.
+   Let :g:`A <g1:A>` by multiplying :g:`C <g1:C>` make :g:`G <g1:G>`
 
 .. step:: assert
 
-   Since, then, :g:`A <g1:A>` by multiplying :g:`C <g1:C>` has made :g:`G <g1:G>`, and by multiplying :g:`D <g1:D>` has made :g:`E <g1:E>`, the number :g:`A <g1:A>` by multiplying the two numbers :g:`C <g1:C>`, :g:`D <g1:D>` has made :g:`G <g1:G>`, :g:`E <g1:E>`.
+   Since, then, :g:`A <g1:A>` by multiplying :g:`C <g1:C>` has made :g:`G <g1:G>`, and by multiplying :g:`D <g1:D>` has made :g:`E <g1:E>`, the number :g:`A <g1:A>` by multiplying the two numbers :g:`C <g1:C>`, :g:`D <g1:D>` has made :g:`G <g1:G>`, :g:`E <g1:E>`
 
 .. step:: assert ∵ number_multiplying_numbers <G.271>
 
-   Therefore, as :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`G <g1:G>` to :g:`E <g1:E>`.
+   as :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`G <g1:G>` to :g:`E <g1:E>`
 
 .. step:: assert
 
-   But, as :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`A <g1:A>` to :g:`B <g1:B>`;
+   But, as :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`A <g1:A>` to :g:`B <g1:B>`
 
 .. step:: assert
 
-   Therefore also, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`G <g1:G>` to :g:`E <g1:E>`.
+   also, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`G <g1:G>` to :g:`E <g1:E>`
 
 .. step:: assert
 
-   Since :g:`A <g1:A>` by multiplying :g:`C <g1:C>` has made :g:`G <g1:G>`, but, further, :g:`B <g1:B>` has also by multiplying :g:`C <g1:C>` made :g:`F <g1:F>`, the two numbers :g:`A <g1:A>`, :g:`B <g1:B>` by multiplying a certain number :g:`C <g1:C>` have made :g:`G <g1:G>`, :g:`F <g1:F>`.
+   :g:`A <g1:A>` by multiplying :g:`C <g1:C>` has made :g:`G <g1:G>`, but, further, :g:`B <g1:B>` has also by multiplying :g:`C <g1:C>` made :g:`F <g1:F>`, the two numbers :g:`A <g1:A>`, :g:`B <g1:B>` by multiplying a certain number :g:`C <g1:C>` have made :g:`G <g1:G>`, :g:`F <g1:F>`
 
 .. step:: assert ∵ numbers_multiplying_number <G.272>
 
-   Therefore, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`G <g1:G>` to :g:`F <g1:F>`.
+   as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`G <g1:G>` to :g:`F <g1:F>`
 
 .. step:: assert
 
-   Further, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`G <g1:G>` to :g:`E <g1:E>` also;
+   Further, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`G <g1:G>` to :g:`E <g1:E>` also
 
 .. step:: assert
 
-   Therefore also, as :g:`G <g1:G>` is to :g:`E <g1:E>`, so is :g:`G <g1:G>` to :g:`F <g1:F>`.
+   also, as :g:`G <g1:G>` is to :g:`E <g1:E>`, so is :g:`G <g1:G>` to :g:`F <g1:F>`
 
 .. step:: assert
 
-   Therefore :g:`G <g1:G>` has to each of the numbers :g:`E <g1:E>`, :g:`F <g1:F>` the :term:`same ratio <G.176>`;
+   :g:`G <g1:G>` has to each of the numbers :g:`E <g1:E>`, :g:`F <g1:F>` the same ratio
 
 .. step:: assert ∵ magnitudes_ratio_equal <G.187>
 
-   Therefore :g:`E <g1:E>` is :eq:`equal <g1:E = g1:F>` to :g:`F <g1:F>`.
+   :g:`E <g1:E>` :eq:`= <g1:E = g1:F>` :g:`F <g1:F>`
 
 .. step:: assert
 
-   Let :g:`E <g1:E>` be :eq:`equal <g1:E = g1:F>` to :g:`F <g1:F>`
+   Let :g:`E <g1:E>` :eq:`= <g1:E = g1:F>` :g:`F <g1:F>`
 
 .. step:: assert
 
-   I say that, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`.
+   I say that, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`
 
 .. step:: assert
 
-   With the same construction → since :g:`E <g1:E>` is :eq:`equal <g1:E = g1:F>` to :g:`F <g1:F>`,
+   With the same construction → since :g:`E <g1:E>` :eq:`= <g1:E = g1:F>` :g:`F <g1:F>`,
 
 .. step:: assert ∵ equal_magnitudes_ratio <G.183>
 
-   Therefore, as :g:`G <g1:G>` is to :g:`E <g1:E>`, so is :g:`G <g1:G>` to :g:`F <g1:F>`.
+   as :g:`G <g1:G>` is to :g:`E <g1:E>`, so is :g:`G <g1:G>` to :g:`F <g1:F>`
 
 .. step:: assert ∵ number_multiplying_numbers, numbers_multiplying_number <G.271, G.272>
 
-   But, as :g:`G <g1:G>` is to :g:`E <g1:E>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`, and, as :g:`G <g1:G>` is to :g:`F <g1:F>`, so is :g:`A <g1:A>` to :g:`B <g1:B>`.
+   But, as :g:`G <g1:G>` is to :g:`E <g1:E>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`, and, as :g:`G <g1:G>` is to :g:`F <g1:F>`, so is :g:`A <g1:A>` to :g:`B <g1:B>`
 
 .. step:: conclude
 
-   Therefore also, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`.
+   also, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`
 
 Dependency Graph
 ----------------
@@ -167,9 +167,13 @@ Dependency Graph
      "G.254" -> "G.169";
      "G.256" -> "G.169";
      "G.268" -> "G.169";
+     "G.270" -> "G.169";
+     "G.271" -> "G.169";
      "G.171" -> "G.170";
      "G.176" -> "G.170";
+     "G.183" -> "G.170";
      "G.185" -> "G.170";
+     "G.186" -> "G.170";
      "G.257" -> "G.170";
      "G.186" -> "G.171";
      "G.180" -> "G.176";
@@ -178,11 +182,13 @@ Dependency Graph
      "G.271" -> "G.176";
      "G.272" -> "G.176";
      "G.183" -> "G.180";
+     "G.263" -> "G.180";
      "G.266" -> "G.180";
      "G.273" -> "G.180";
      "G.182" -> "G.181";
      "G.194" -> "G.181";
      "G.265" -> "G.181";
+     "G.268" -> "G.181";
      "G.183" -> "G.182";
      "G.273" -> "G.183";
      "G.186" -> "G.184";
@@ -193,9 +199,13 @@ Dependency Graph
      "G.262" -> "G.194";
      "G.266" -> "G.194";
      "G.268" -> "G.194";
+     "G.270" -> "G.194";
+     "G.271" -> "G.194";
      "G.248" -> "G.247";
      "G.268" -> "G.247";
      "G.269" -> "G.247";
+     "G.270" -> "G.247";
+     "G.271" -> "G.247";
      "G.253" -> "G.248";
      "G.256" -> "G.248";
      "G.257" -> "G.248";
@@ -210,14 +220,21 @@ Dependency Graph
      "G.271" -> "G.248";
      "G.272" -> "G.248";
      "G.273" -> "G.248";
+     "G.254" -> "G.253";
+     "G.256" -> "G.253";
      "G.257" -> "G.253";
+     "G.258" -> "G.253";
      "G.261" -> "G.253";
      "G.262" -> "G.253";
      "G.263" -> "G.253";
+     "G.265" -> "G.253";
+     "G.266" -> "G.253";
      "G.258" -> "G.254";
      "G.261" -> "G.254";
      "G.262" -> "G.254";
      "G.263" -> "G.254";
+     "G.265" -> "G.254";
+     "G.266" -> "G.254";
      "G.257" -> "G.256";
      "G.263" -> "G.256";
      "G.258" -> "G.257";
@@ -238,6 +255,7 @@ Dependency Graph
      "G.270" -> "G.269";
      "G.271" -> "G.269";
      "G.272" -> "G.269";
+     "G.273" -> "G.269";
      "G.272" -> "G.270";
      "G.272" -> "G.271";
      "G.273" -> "G.271";

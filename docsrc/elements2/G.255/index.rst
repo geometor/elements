@@ -10,7 +10,7 @@
 :categories: theorem, proof, number-theory
 :category: theorem, proof, number-theory
 :tags: book-vii, point, segment, number, parts-non-aliquot, prime-to-one-another, unit, part-aliquot, equality
-:dependencies: G.248, G.251, G.253, G.254
+:dependencies: G.169, G.247, G.248, G.249, G.251, G.253, G.254
 :excerpt: Any number is either a part or parts of any number, the less of the greater.
 
 .. _G.255:
@@ -40,19 +40,19 @@ G.255 number part parts
 
 .. step:: assert
 
-   For :g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />` are either :term:`prime to one another <G.249>` or not.
+   For :g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />` are either :term:`prime to one another <G.249>` or not
 
 .. step:: assert
 
-   First, let :g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />` be prime to one another.
+   First, let :g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />` be prime to one another
 
 .. step:: assert
 
-   If :g:`/ B C / <g1:/ B C />` be divided into the :term:`units <G.247>` in it, each unit of those in :g:`/ B C / <g1:/ B C />` will be some :term:`part of <G.253>` :g:`A <g1:A>` ;
+   If :g:`/ B C / <g1:/ B C />` be divided into the :term:`units <G.247>` in it, each unit of those in :g:`/ B C / <g1:/ B C />` will be some :term:`part of <G.253>` :g:`A <g1:A>`
 
 .. step:: assert
 
-   So that :g:`/ B C / <g1:/ B C />` is parts of :g:`A <g1:A>`.
+   So that :g:`/ B C / <g1:/ B C />` is parts of :g:`A <g1:A>`
 
 .. step:: assert
 
@@ -60,11 +60,11 @@ G.255 number part parts
 
 .. step:: assert
 
-   Then :g:`/ B C / <g1:/ B C />` either :term:`measures <G.169>`, or does not measure, :g:`A <g1:A>`.
+   Then :g:`/ B C / <g1:/ B C />` either :term:`measures <G.169>`, or does not measure, :g:`A <g1:A>`
 
 .. step:: assert
 
-   If now :g:`/ B C / <g1:/ B C />` measures :g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />` is a part of :g:`A <g1:A>`.
+   If now :g:`/ B C / <g1:/ B C />` measures :g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />` is a part of :g:`A <g1:A>`
 
 .. step:: construct
 
@@ -72,23 +72,23 @@ G.255 number part parts
 
 .. step:: assert
 
-   And let :g:`/ B C / <g1:/ B C />` be divided into the numbers :eq:`equal <g1:/ B E / = g1:/ E F / = g1:/ F C / = g1:D>` to :g:`D <g1:D>`, namely :g:`/ B E / <g1:/ B E />`, :g:`/ E F / <g1:/ E F />`, :g:`/ F C / <g1:/ F C />`.
+   let :g:`/ B C / <g1:/ B C />` be divided into the numbers :eq:`= <g1:/ B E / = g1:/ E F / = g1:/ F C / = g1:D>` to :g:`D <g1:D>`, namely :g:`/ B E / <g1:/ B E />`, :g:`/ E F / <g1:/ E F />`, :g:`/ F C / <g1:/ F C />`
 
 .. step:: assert
 
-   Since :g:`D <g1:D>` measures :g:`A <g1:A>`, :g:`D <g1:D>` is a part of :g:`A <g1:A>`.
+   :g:`D <g1:D>` measures :g:`A <g1:A>`, :g:`D <g1:D>` is a part of :g:`A <g1:A>`
 
 .. step:: assert
 
-   :g:`D <g1:D>` is :eq:`equal <g1:D = g1:/ B E / = g1:/ E F / = g1:/ F C />` to each of the numbers :g:`/ B E / <g1:/ B E />`, :g:`/ E F / <g1:/ E F />`, :g:`/ F C / <g1:/ F C />` ;
+   :g:`D <g1:D>` :eq:`= <g1:D = g1:/ B E / = g1:/ E F / = g1:/ F C />` each of the numbers :g:`/ B E / <g1:/ B E />`, :g:`/ E F / <g1:/ E F />`, :g:`/ F C / <g1:/ F C />`
 
 .. step:: assert
 
-   Therefore each of the numbers :g:`/ B E / <g1:/ B E />`, :g:`/ E F / <g1:/ E F />`, :g:`/ F C / <g1:/ F C />` is also a part of :g:`A <g1:A>` ;
+   each of the numbers :g:`/ B E / <g1:/ B E />`, :g:`/ E F / <g1:/ E F />`, :g:`/ F C / <g1:/ F C />` is also a part of :g:`A <g1:A>`
 
 .. step:: conclude
 
-   So that :g:`/ B C / <g1:/ B C />` is parts of :g:`A <g1:A>`.
+   So that :g:`/ B C / <g1:/ B C />` is parts of :g:`A <g1:A>`
 
 Dependency Graph
 ----------------
@@ -114,17 +114,22 @@ Dependency Graph
      "G.251" -> "G.169";
      "G.253" -> "G.169";
      "G.254" -> "G.169";
+     "G.255" -> "G.169";
      "G.248" -> "G.247";
      "G.249" -> "G.247";
      "G.250" -> "G.247";
+     "G.251" -> "G.247";
+     "G.255" -> "G.247";
      "G.250" -> "G.248";
      "G.251" -> "G.248";
      "G.253" -> "G.248";
      "G.255" -> "G.248";
      "G.250" -> "G.249";
      "G.251" -> "G.249";
+     "G.255" -> "G.249";
      "G.251" -> "G.250";
      "G.255" -> "G.251";
+     "G.254" -> "G.253";
      "G.255" -> "G.253";
      "G.255" -> "G.254";
    }

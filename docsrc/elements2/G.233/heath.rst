@@ -12,7 +12,7 @@ G.233 figures similar polygon — Heath
 
 .. enunciation::
 
-   :term:`Figures <G.9>` which are similar to the same :term:`rectilineal figure <G.11>` are also similar to one another.
+   :term:`Figures <G.9>` which are similar to the same :term:`rectilineal figure <G.12>` are also similar to one another.
 
 For let each of the rectilineal figures :g:`A <g1:A>`, :g:`B <g1:B>` be similar to :g:`C <g1:C>`;
 
@@ -67,7 +67,7 @@ Dependency Graph
      "G.7" [label="G.7", tooltip="G.7 (I.def.7): A plane surface lies evenly with the lines on itself.", fillcolor="#224422", URL="../G.7/index.html", target="_top"];
      "G.8" [label="G.8", tooltip="G.8 (I.def.13): A boundary is the extremity of anything.", fillcolor="#224422", URL="../G.8/index.html", target="_top"];
      "G.9" [label="G.9", tooltip="G.9 (I.def.14): A figure is that which is contained by any boundary or boundaries.", fillcolor="#224422", URL="../G.9/index.html", target="_top"];
-     "G.11" [label="G.11", tooltip="G.11 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
+     "G.12" [label="G.12", tooltip="G.12 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.12/index.html", target="_top"];
      "G.22" [label="G.22", tooltip="G.22 (I.def.8): A plane angle is the inclination to one another of two lines or arcs in a plane that meet and do not lie on the same line.", fillcolor="#224422", URL="../G.22/index.html", target="_top"];
      "G.169" [label="G.169", tooltip="G.169 (V.def.1): A magnitude is apart of a magnitude, the less of the greater, when it measures the greater.", fillcolor="#224422", URL="../G.169/index.html", target="_top"];
      "G.170" [label="G.170", tooltip="G.170 (V.def.2): The greater is amultiple of the less when it ismeasured by the less.", fillcolor="#224422", URL="../G.170/index.html", target="_top"];
@@ -80,22 +80,26 @@ Dependency Graph
      "G.4" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
+     "G.7" -> "G.2";
      "G.22" -> "G.2";
      "G.4" -> "G.3";
      "G.8" -> "G.3";
      "G.7" -> "G.4";
-     "G.11" -> "G.4";
+     "G.12" -> "G.4";
      "G.22" -> "G.4";
      "G.7" -> "G.5";
      "G.22" -> "G.7";
      "G.9" -> "G.8";
+     "G.12" -> "G.9";
      "G.233" -> "G.9";
-     "G.233" -> "G.11";
+     "G.233" -> "G.12";
      "G.217" -> "G.22";
+     "G.233" -> "G.22";
      "G.170" -> "G.169";
      "G.176" -> "G.170";
      "G.180" -> "G.176";
      "G.217" -> "G.180";
+     "G.233" -> "G.180";
      "G.233" -> "G.217";
    }
 

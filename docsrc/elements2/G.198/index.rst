@@ -10,7 +10,7 @@
 :categories: theorem, proof, proportions, magnitudes
 :category: theorem, proof, proportions, magnitudes
 :tags: book-v, segment, proportional, componendo, separando, multiple, proportion, equality
-:dependencies: G.2, G.171, G.172, G.180, G.196, G.197
+:dependencies: G.2, G.170, G.171, G.172, G.180, G.196, G.197
 :excerpt: If magnitudes be proportional componendo, they is proportional separando.
 
 .. _G.198:
@@ -44,7 +44,7 @@ G.198 magnitudes proportional componendo
 
 .. step:: assert ∵ there_number_magnitudes <G.171>
 
-   Since :g:`/ G H / <g1:/ G H />` is the same multiple of :g:`/ A E / <g1:/ A E />` that :g:`/ H K / <g1:/ H K />` is of :g:`/ E B / <g1:/ E B />` → therefore :g:`/ G H / <g1:/ G H />` is the same multiple of :g:`/ A E / <g1:/ A E />` that :g:`/ G K / <g1:/ G K />` is of :g:`/ A B / <g1:/ A B />`.
+   :g:`/ G H / <g1:/ G H />` is the same multiple of :g:`/ A E / <g1:/ A E />` that :g:`/ H K / <g1:/ H K />` is of :g:`/ E B / <g1:/ E B />` → therefore :g:`/ G H / <g1:/ G H />` is the same multiple of :g:`/ A E / <g1:/ A E />` that :g:`/ G K / <g1:/ G K />` is of :g:`/ A B / <g1:/ A B />`
 
 .. step:: assert
 
@@ -52,11 +52,11 @@ G.198 magnitudes proportional componendo
 
 .. step:: assert
 
-   Therefore :g:`/ G K / <g1:/ G K />` is the same multiple of :g:`/ A B / <g1:/ A B />` that :g:`/ L M / <g1:/ L M />` is of :g:`/ C F / <g1:/ C F />`.
+   :g:`/ G K / <g1:/ G K />` is the same multiple of :g:`/ A B / <g1:/ A B />` that :g:`/ L M / <g1:/ L M />` is of :g:`/ C F / <g1:/ C F />`
 
 .. step:: assert ∵ there_number_magnitudes <G.171>
 
-   Since :g:`/ L M / <g1:/ L M />` is the same multiple of :g:`/ C F / <g1:/ C F />` that :g:`/ M N / <g1:/ M N />` is of :g:`/ F D / <g1:/ F D />` → therefore :g:`/ L M / <g1:/ L M />` is the same multiple of :g:`/ C F / <g1:/ C F />` that :g:`/ L N / <g1:/ L N />` is of :g:`/ C D / <g1:/ C D />`.
+   :g:`/ L M / <g1:/ L M />` is the same multiple of :g:`/ C F / <g1:/ C F />` that :g:`/ M N / <g1:/ M N />` is of :g:`/ F D / <g1:/ F D />` → therefore :g:`/ L M / <g1:/ L M />` is the same multiple of :g:`/ C F / <g1:/ C F />` that :g:`/ L N / <g1:/ L N />` is of :g:`/ C D / <g1:/ C D />`
 
 .. step:: assert
 
@@ -64,23 +64,23 @@ G.198 magnitudes proportional componendo
 
 .. step:: assert
 
-   Therefore :g:`/ G K / <g1:/ G K />` is the same multiple of :g:`/ A B / <g1:/ A B />` that :g:`/ L N / <g1:/ L N />` is of :g:`/ C D / <g1:/ C D />`.
+   :g:`/ G K / <g1:/ G K />` is the same multiple of :g:`/ A B / <g1:/ A B />` that :g:`/ L N / <g1:/ L N />` is of :g:`/ C D / <g1:/ C D />`
 
 .. step:: assert
 
-   Therefore :g:`/ G K / <g1:/ G K />`, :g:`/ L N / <g1:/ L N />` are equimultiples of :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`.
+   :g:`/ G K / <g1:/ G K />`, :g:`/ L N / <g1:/ L N />` are equimultiples of :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`
 
 .. step:: assert ∵ magnitude_multiple_fifth <G.172>
 
-   Since :g:`/ H K / <g1:/ H K />` is the same multiple of :g:`/ E B / <g1:/ E B />` that :g:`/ M N / <g1:/ M N />` is of :g:`/ F D / <g1:/ F D />`, and :g:`/ K O / <g1:/ K O />` is also the same multiple of :g:`/ E B / <g1:/ E B />` that :g:`/ N P / <g1:/ N P />` is of :g:`/ F D / <g1:/ F D />` → therefore the sum :g:`/ H O / <g1:/ H O />` is also the same multiple of :g:`/ E B / <g1:/ E B />` that :g:`/ M P / <g1:/ M P />` is of :g:`/ F D / <g1:/ F D />`.
+   :g:`/ H K / <g1:/ H K />` is the same multiple of :g:`/ E B / <g1:/ E B />` that :g:`/ M N / <g1:/ M N />` is of :g:`/ F D / <g1:/ F D />`, and :g:`/ K O / <g1:/ K O />` is also the same multiple of :g:`/ E B / <g1:/ E B />` that :g:`/ N P / <g1:/ N P />` is of :g:`/ F D / <g1:/ F D />` → therefore the sum :g:`/ H O / <g1:/ H O />` is also the same multiple of :g:`/ E B / <g1:/ E B />` that :g:`/ M P / <g1:/ M P />` is of :g:`/ F D / <g1:/ F D />`
 
 .. step:: assert
 
-   And, since, as :g:`/ A B / <g1:/ A B />` is to :g:`/ E B / <g1:/ E B />`, so is :g:`/ C D / <g1:/ C D />` to :g:`/ F D / <g1:/ F D />`, and of :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` equimultiples :g:`/ G K / <g1:/ G K />`, :g:`/ L N / <g1:/ L N />` have been taken, and of :g:`/ E B / <g1:/ E B />`, :g:`/ F D / <g1:/ F D />` equimultiples :g:`/ H O / <g1:/ H O />`, :g:`/ M P / <g1:/ M P />`,
+   since, as :g:`/ A B / <g1:/ A B />` is to :g:`/ E B / <g1:/ E B />`, so is :g:`/ C D / <g1:/ C D />` to :g:`/ F D / <g1:/ F D />`, and of :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` equimultiples :g:`/ G K / <g1:/ G K />`, :g:`/ L N / <g1:/ L N />` have been taken, and of :g:`/ E B / <g1:/ E B />`, :g:`/ F D / <g1:/ F D />` equimultiples :g:`/ H O / <g1:/ H O />`, :g:`/ M P / <g1:/ M P />`,
 
 .. step:: assert
 
-   Therefore, if :g:`/ G K / <g1:/ G K />` is in excess of :g:`/ H O / <g1:/ H O />`, :g:`/ L N / <g1:/ L N />` is also in excess of :g:`/ M P / <g1:/ M P />`, if :eq:`equal <g1:/ G K / = g1:/ H O />`, :eq:`equal <g1:/ L N / = g1:/ M P />`, and if less, less.
+   if :g:`/ G K / <g1:/ G K />` is in excess of :g:`/ H O / <g1:/ H O />`, :g:`/ L N / <g1:/ L N />` is also in excess of :g:`/ M P / <g1:/ M P />`, if :eq:`= <g1:/ G K / = g1:/ H O />`, :eq:`= <g1:/ L N / = g1:/ M P />`, and if less, less
 
 .. step:: construct
 
@@ -88,7 +88,7 @@ G.198 magnitudes proportional componendo
 
 .. step:: assert
 
-   :g:`/ G H / <g1:/ G H />` is also in excess of :g:`/ K O / <g1:/ K O />`.
+   :g:`/ G H / <g1:/ G H />` is also in excess of :g:`/ K O / <g1:/ K O />`
 
 .. step:: assert
 
@@ -96,23 +96,23 @@ G.198 magnitudes proportional componendo
 
 .. step:: assert
 
-   Therefore :g:`/ L N / <g1:/ L N />` is also in excess of :g:`/ M P / <g1:/ M P />`,
+   :g:`/ L N / <g1:/ L N />` is also in excess of :g:`/ M P / <g1:/ M P />`,
 
 .. step:: assert
 
-   And, if :g:`/ M N / <g1:/ M N />` be subtracted from each,
+   if :g:`/ M N / <g1:/ M N />` be subtracted from each,
 
 .. step:: assert
 
-   :g:`/ L M / <g1:/ L M />` is also in excess of :g:`/ N P / <g1:/ N P />`;
+   :g:`/ L M / <g1:/ L M />` is also in excess of :g:`/ N P / <g1:/ N P />`
 
 .. step:: assert
 
-   So that, if :g:`/ G H / <g1:/ G H />` is in excess of :g:`/ K O / <g1:/ K O />`, :g:`/ L M / <g1:/ L M />` is also in excess of :g:`/ N P / <g1:/ N P />`.
+   So that, if :g:`/ G H / <g1:/ G H />` is in excess of :g:`/ K O / <g1:/ K O />`, :g:`/ L M / <g1:/ L M />` is also in excess of :g:`/ N P / <g1:/ N P />`
 
 .. step:: assert
 
-   Similarly we can prove that, if :g:`/ G H / <g1:/ G H />` be :eq:`equal <g1:/ G H / = g1:/ K O />` to :g:`/ K O / <g1:/ K O />`, :g:`/ L M / <g1:/ L M />` will also be :eq:`equal <g1:/ L M / = g1:/ N P />` to :g:`/ N P / <g1:/ N P />`, and if less, less.
+   Similarly we can prove that, if :g:`/ G H / <g1:/ G H />` :eq:`= <g1:/ G H / = g1:/ K O />` :g:`/ K O / <g1:/ K O />`, :g:`/ L M / <g1:/ L M />` will also :eq:`= <g1:/ L M / = g1:/ N P />` :g:`/ N P / <g1:/ N P />`, and if less, less
 
 .. step:: assert
 
@@ -120,7 +120,7 @@ G.198 magnitudes proportional componendo
 
 .. step:: conclude
 
-   Therefore, as :g:`/ A E / <g1:/ A E />` is to :g:`/ E B / <g1:/ E B />`, so is :g:`/ C F / <g1:/ C F />` to :g:`/ F D / <g1:/ F D />`.
+   as :g:`/ A E / <g1:/ A E />` is to :g:`/ E B / <g1:/ E B />`, so is :g:`/ C F / <g1:/ C F />` to :g:`/ F D / <g1:/ F D />`
 
 Dependency Graph
 ----------------
@@ -150,6 +150,7 @@ Dependency Graph
      "G.171" -> "G.170";
      "G.172" -> "G.170";
      "G.176" -> "G.170";
+     "G.198" -> "G.170";
      "G.198" -> "G.171";
      "G.198" -> "G.172";
      "G.180" -> "G.176";

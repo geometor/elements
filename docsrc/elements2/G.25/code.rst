@@ -4,6 +4,7 @@
 :volume: I
 :book: I
 :type: prop
+:youtube_id: zxv5dFatYtA
 
 G.25 base angles of an isosceles triangle — Code
 ================================================
@@ -12,7 +13,7 @@ G.25 base angles of an isosceles triangle — Code
 
 .. enunciation::
 
-   In an :term:`isosceles triangle <G.12>`, the :term:`angles <G.22>` at the base are equal, and if the equal sides are extended, the angles under the base are equal.
+   In an :term:`isosceles triangle <G.13>`, the :term:`angles <G.22>` at the base are equal, and if the equal sides are extended, the angles under the base are equal.
 
 .. picture:: g1.svg
 

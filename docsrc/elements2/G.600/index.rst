@@ -10,7 +10,7 @@
 :categories: problem, construction, solid-geometry, regular-solids
 :category: problem, construction, solid-geometry, regular-solids
 :tags: book-xiii, point, segment, angle, triangle, quadrilateral, polygon, dodecahedron, sphere, figure, irrational, straight-line, plane-surface, cube, right-angle, extreme-and-mean-ratio, right-angles-to-plane, square, parallel-straight-lines, trilateral, proportional, plane-angle, equilateral-triangle, solid, diameter, centre-of-sphere, diameter-of-sphere, surface, in-the-same-ratio, multiple, line, apotome, equality, porism
-:dependencies: G.4, G.9, G.28, G.79, G.193, G.245, G.391, G.502, G.508, G.549, G.575, G.582, G.583, G.584, G.585, G.595, G.598, G.599
+:dependencies: G.2, G.4, G.5, G.7, G.9, G.10, G.12, G.13, G.14, G.22, G.29, G.52, G.63, G.79, G.170, G.176, G.180, G.193, G.242, G.245, G.391, G.502, G.505, G.508, G.529, G.548, G.549, G.575, G.576, G.582, G.583, G.584, G.585, G.595, G.598, G.599
 :excerpt: Construct a dodecahedron and comprehend it in a sphere, like the aforesaid figures, and to prove that the side of the dodecahedron is the irrational segment called apotome.
 
 .. _G.600:
@@ -35,7 +35,7 @@ G.600 construct a dodecahedron and comprehend it in a
 
 .. step:: construct
 
-   :fn:`segment <G.13>`\ () → :g:`< A B C D > <g1:< A B C D >>`, :fn:`segment <G.13>`\ () → :g:`< C B E F > <g1:< C B E F >>`, :fn:`segment <G.13>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`) → :g:`/ A B / <g1:/ A B />`, :fn:`segment <G.13>`\ (:g:`B <g1:B>`, :g:`C <g1:C>`) → :g:`/ B C / <g1:/ B C />`, :fn:`segment <G.13>`\ (:g:`C <g1:C>`, :g:`D <g1:D>`) → :g:`/ C D / <g1:/ C D />`, :fn:`segment <G.13>`\ (:g:`D <g1:D>`, :g:`A <g1:A>`) → :g:`/ D A / <g1:/ D A />`, :fn:`segment <G.13>`\ (:g:`E <g1:E>`, :g:`F <g1:F>`) → :g:`/ E F / <g1:/ E F />`, :fn:`segment <G.13>`\ (:g:`E <g1:E>`, :g:`B <g1:B>`) → :g:`/ E B / <g1:/ E B />`, :fn:`segment <G.13>`\ (:g:`F <g1:F>`, :g:`C <g1:C>`) → :g:`/ F C / <g1:/ F C />`, :fn:`segment <G.13>`\ () → :g:`G <g1:G>`, :fn:`segment <G.13>`\ () → :g:`H <g1:H>`, :fn:`segment <G.13>`\ () → :g:`K <g1:K>`, :fn:`segment <G.13>`\ () → :g:`L <g1:L>`, :fn:`segment <G.13>`\ () → :g:`M <g1:M>`, :fn:`segment <G.13>`\ () → :g:`N <g1:N>`, :fn:`segment <G.13>`\ () → :g:`O <g1:O>`, :fn:`segment <G.13>`\ (:g:`G <g1:G>`, :g:`K <g1:K>`) → :g:`/ G K / <g1:/ G K />`, :fn:`segment <G.13>`\ (:g:`H <g1:H>`, :g:`L <g1:L>`) → :g:`/ H L / <g1:/ H L />`, :fn:`segment <G.13>`\ (:g:`M <g1:M>`, :g:`H <g1:H>`) → :g:`/ M H / <g1:/ M H />`, :fn:`segment <G.13>`\ (:g:`N <g1:N>`, :g:`O <g1:O>`) → :g:`/ N O / <g1:/ N O />`
+   :fn:`segment <G.14>`\ () → :g:`< A B C D > <g1:< A B C D >>`, :fn:`segment <G.14>`\ () → :g:`< C B E F > <g1:< C B E F >>`, :fn:`segment <G.14>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`) → :g:`/ A B / <g1:/ A B />`, :fn:`segment <G.14>`\ (:g:`B <g1:B>`, :g:`C <g1:C>`) → :g:`/ B C / <g1:/ B C />`, :fn:`segment <G.14>`\ (:g:`C <g1:C>`, :g:`D <g1:D>`) → :g:`/ C D / <g1:/ C D />`, :fn:`segment <G.14>`\ (:g:`D <g1:D>`, :g:`A <g1:A>`) → :g:`/ D A / <g1:/ D A />`, :fn:`segment <G.14>`\ (:g:`E <g1:E>`, :g:`F <g1:F>`) → :g:`/ E F / <g1:/ E F />`, :fn:`segment <G.14>`\ (:g:`E <g1:E>`, :g:`B <g1:B>`) → :g:`/ E B / <g1:/ E B />`, :fn:`segment <G.14>`\ (:g:`F <g1:F>`, :g:`C <g1:C>`) → :g:`/ F C / <g1:/ F C />`, :fn:`segment <G.14>`\ () → :g:`G <g1:G>`, :fn:`segment <G.14>`\ () → :g:`H <g1:H>`, :fn:`segment <G.14>`\ () → :g:`K <g1:K>`, :fn:`segment <G.14>`\ () → :g:`L <g1:L>`, :fn:`segment <G.14>`\ () → :g:`M <g1:M>`, :fn:`segment <G.14>`\ () → :g:`N <g1:N>`, :fn:`segment <G.14>`\ () → :g:`O <g1:O>`, :fn:`segment <G.14>`\ (:g:`G <g1:G>`, :g:`K <g1:K>`) → :g:`/ G K / <g1:/ G K />`, :fn:`segment <G.14>`\ (:g:`H <g1:H>`, :g:`L <g1:L>`) → :g:`/ H L / <g1:/ H L />`, :fn:`segment <G.14>`\ (:g:`M <g1:M>`, :g:`H <g1:H>`) → :g:`/ M H / <g1:/ M H />`, :fn:`segment <G.14>`\ (:g:`N <g1:N>`, :g:`O <g1:O>`) → :g:`/ N O / <g1:/ N O />`
 
 .. step:: construct
 
@@ -47,179 +47,179 @@ G.600 construct a dodecahedron and comprehend it in a
 
 .. step:: assert
 
-   I say that the pentagon :g:`< U B W C V > <g1:< U B W C V >>` is :eq:`equilateral <g1:/ U B / = g1:/ B W / = g1:/ W C / = g1:/ C V / = g1:/ V U />`, and in one :term:`plane <G.7>`, and is further equiangular.
+   I say that the pentagon :g:`< U B W C V > <g1:< U B W C V >>` is :eq:`equilateral <g1:/ U B / = g1:/ B W / = g1:/ W C / = g1:/ C V / = g1:/ V U />`, and in one :term:`plane <G.7>`, and is further equiangular
 
 .. step:: construct
 
-   :fn:`segment <G.13>`\ (:g:`R <g1:R>`, :g:`B <g1:B>`) → :g:`/ R B / <g1:/ R B />`, :fn:`segment <G.13>`\ (:g:`S <g1:S>`, :g:`B <g1:B>`) → :g:`/ S B / <g1:/ S B />`, :fn:`segment <G.13>`\ (:g:`V <g1:V>`, :g:`B <g1:B>`) → :g:`/ V B / <g1:/ V B />`
+   :fn:`segment <G.14>`\ (:g:`R <g1:R>`, :g:`B <g1:B>`) → :g:`/ R B / <g1:/ R B />`, :fn:`segment <G.14>`\ (:g:`S <g1:S>`, :g:`B <g1:B>`) → :g:`/ S B / <g1:/ S B />`, :fn:`segment <G.14>`\ (:g:`V <g1:V>`, :g:`B <g1:B>`) → :g:`/ V B / <g1:/ V B />`
 
 .. step:: assert
 
-   Since :g:`/ N P / <g1:/ N P />` has been cut in extreme and mean ratio at :g:`R <g1:R>`, and :g:`/ R P / <g1:/ R P />` is the greater segment,
+   :g:`/ N P / <g1:/ N P />` has been cut in extreme and mean ratio at :g:`R <g1:R>`, and :g:`/ R P / <g1:/ R P />` is the greater segment,
 
 .. step:: assert ∵ segment_cut_extreme_xiii_4 <G.582>
 
-   Therefore the :term:`squares <G.63>` on :g:`/ P N / <g1:/ P N />`, :g:`/ N R / <g1:/ N R />` are triple of the square on :g:`/ R P / <g1:/ R P />`.
+   the :term:`squares <G.63>` on :g:`/ P N / <g1:/ P N />`, :g:`/ N R / <g1:/ N R />` are triple of the square on :g:`/ R P / <g1:/ R P />`
 
 .. step:: assert
 
-   :g:`/ P N / <g1:/ P N />` is :eq:`equal <g1:/ N P / = g1:/ N B /; g1:/ R P / = g1:/ R U />` to :g:`/ N B / <g1:/ N B />`, and :g:`/ P R / <g1:/ P R />` to :g:`/ R U / <g1:/ R U />`;
+   :g:`/ P N / <g1:/ P N />` :eq:`= <g1:/ N P / = g1:/ N B /; g1:/ R P / = g1:/ R U />` :g:`/ N B / <g1:/ N B />`, and :g:`/ P R / <g1:/ P R />` to :g:`/ R U / <g1:/ R U />`
 
 .. step:: assert
 
-   Therefore the squares on :g:`/ B N / <g1:/ B N />`, :g:`/ N R / <g1:/ N R />` are triple of the square on :g:`/ R U / <g1:/ R U />`.
+   the squares on :g:`/ B N / <g1:/ B N />`, :g:`/ N R / <g1:/ N R />` are triple of the square on :g:`/ R U / <g1:/ R U />`
 
 .. step:: assert ∵ pythagorean_theorem <G.79>
 
-   The square on :g:`/ B R / <g1:/ B R />` is equal to the squares on :g:`/ B N / <g1:/ B N />`, :g:`/ N R / <g1:/ N R />`.
+   The square on :g:`/ B R / <g1:/ B R />` is equal to the squares on :g:`/ B N / <g1:/ B N />`, :g:`/ N R / <g1:/ N R />`
 
 .. step:: assert
 
-   Therefore the square on :g:`/ B R / <g1:/ B R />` is triple of the square on :g:`/ R U / <g1:/ R U />`; hence the squares on :g:`/ B R / <g1:/ B R />`, :g:`/ R U / <g1:/ R U />` are quadruple of the square on :g:`/ R U / <g1:/ R U />`.
+   the square on :g:`/ B R / <g1:/ B R />` is triple of the square on :g:`/ R U / <g1:/ R U />`; hence the squares on :g:`/ B R / <g1:/ B R />`, :g:`/ R U / <g1:/ R U />` are quadruple of the square on :g:`/ R U / <g1:/ R U />`
 
 .. step:: assert
 
-   The square on :g:`/ B U / <g1:/ B U />` is equal to the squares on :g:`/ B R / <g1:/ B R />`, :g:`/ R U / <g1:/ R U />`;
+   The square on :g:`/ B U / <g1:/ B U />` is equal to the squares on :g:`/ B R / <g1:/ B R />`, :g:`/ R U / <g1:/ R U />`
 
 .. step:: assert
 
-   Therefore the square on :g:`/ B U / <g1:/ B U />` is quadruple of the square on :g:`/ R U / <g1:/ R U />`; therefore :g:`/ B U / <g1:/ B U />` is double of :g:`/ R U / <g1:/ R U />`.
+   the square on :g:`/ B U / <g1:/ B U />` is quadruple of the square on :g:`/ R U / <g1:/ R U />`; therefore :g:`/ B U / <g1:/ B U />` is double of :g:`/ R U / <g1:/ R U />`
 
 .. step:: assert
 
-   :g:`/ V U / <g1:/ V U />` is also double of :g:`/ U R / <g1:/ U R />`, inasmuch as :g:`/ S R / <g1:/ S R />` is also double of :g:`/ P R / <g1:/ P R />`, that is, of :g:`/ R U / <g1:/ R U />`;
+   :g:`/ V U / <g1:/ V U />` is also double of :g:`/ U R / <g1:/ U R />`, inasmuch as :g:`/ S R / <g1:/ S R />` is also double of :g:`/ P R / <g1:/ P R />`, that is, of :g:`/ R U / <g1:/ R U />`
 
 .. step:: assert
 
-   Therefore :g:`/ B U / <g1:/ B U />` is :eq:`equal <g1:/ U B / = g1:/ V U />` to :g:`/ U V / <g1:/ U V />`.
+   :g:`/ B U / <g1:/ B U />` :eq:`= <g1:/ U B / = g1:/ V U />` :g:`/ U V / <g1:/ U V />`
 
 .. step:: assert
 
-   Similarly it can be proved that each of :g:`/ B W / <g1:/ B W />`, :g:`/ W C / <g1:/ W C />`, :g:`/ C V / <g1:/ C V />` is also :eq:`equal <g1:/ B W / = g1:/ W C / = g1:/ C V / = g1:/ U B / = g1:/ V U />` to each of :g:`/ B U / <g1:/ B U />`, :g:`/ U V / <g1:/ U V />`.
+   Similarly it can be proved that each of :g:`/ B W / <g1:/ B W />`, :g:`/ W C / <g1:/ W C />`, :g:`/ C V / <g1:/ C V />` :eq:`= <g1:/ B W / = g1:/ W C / = g1:/ C V / = g1:/ U B / = g1:/ V U />` each of :g:`/ B U / <g1:/ B U />`, :g:`/ U V / <g1:/ U V />`
 
 .. step:: assert
 
-   Therefore the pentagon :g:`< B U V C W > <g1:< B U V C W >>` is :eq:`equilateral <g1:/ U B / = g1:/ V U / = g1:/ C V / = g1:/ W C / = g1:/ B W />`.
+   the pentagon :g:`< B U V C W > <g1:< B U V C W >>` is :eq:`equilateral <g1:/ U B / = g1:/ V U / = g1:/ C V / = g1:/ W C / = g1:/ B W />`
 
 .. step:: assert
 
-   I say next that it is also in one plane.
+   I say next that it is also in one plane
 
 .. step:: construct
 
-   :fn:`segment <G.13>`\ (:g:`P <g1:P>`, :g:`X <g1:X>`) → :g:`/ P X / <g1:/ P X />`, :fn:`segment <G.13>`\ () → :g:`P <g1:P>`, :fn:`segment <G.13>`\ (:g:`R <g1:R>`, :g:`U <g1:U>`) → :g:`/ R U / <g1:/ R U />`, :fn:`segment <G.13>`\ (:g:`S <g1:S>`, :g:`V <g1:V>`) → :g:`/ S V / <g1:/ S V />`, :fn:`segment <G.13>`\ (:g:`X <g1:X>`, :g:`H <g1:H>`) → :g:`/ X H / <g1:/ X H />`, :fn:`segment <G.13>`\ (:g:`H <g1:H>`, :g:`W <g1:W>`) → :g:`/ H W / <g1:/ H W />`
+   :fn:`segment <G.14>`\ (:g:`P <g1:P>`, :g:`X <g1:X>`) → :g:`/ P X / <g1:/ P X />`, :fn:`segment <G.14>`\ () → :g:`P <g1:P>`, :fn:`segment <G.14>`\ (:g:`R <g1:R>`, :g:`U <g1:U>`) → :g:`/ R U / <g1:/ R U />`, :fn:`segment <G.14>`\ (:g:`S <g1:S>`, :g:`V <g1:V>`) → :g:`/ S V / <g1:/ S V />`, :fn:`segment <G.14>`\ (:g:`X <g1:X>`, :g:`H <g1:H>`) → :g:`/ X H / <g1:/ X H />`, :fn:`segment <G.14>`\ (:g:`H <g1:H>`, :g:`W <g1:W>`) → :g:`/ H W / <g1:/ H W />`
 
 .. step:: assert
 
-   Since :g:`/ H Q / <g1:/ H Q />` has been cut in extreme and mean ratio at :g:`T <g1:T>`, and :g:`/ Q T / <g1:/ Q T />` is its greater segment,
+   :g:`/ H Q / <g1:/ H Q />` has been cut in extreme and mean ratio at :g:`T <g1:T>`, and :g:`/ Q T / <g1:/ Q T />` is its greater segment,
 
 .. step:: assert
 
-   Therefore, as :g:`/ H Q / <g1:/ H Q />` is to :g:`/ Q T / <g1:/ Q T />`, so is :g:`/ Q T / <g1:/ Q T />` to :g:`/ T H / <g1:/ T H />`.
+   as :g:`/ H Q / <g1:/ H Q />` is to :g:`/ Q T / <g1:/ Q T />`, so is :g:`/ Q T / <g1:/ Q T />` to :g:`/ T H / <g1:/ T H />`
 
 .. step:: assert
 
-   :g:`/ H Q / <g1:/ H Q />` is :eq:`equal <g1:/ H Q / = g1:/ P H /; g1:/ T Q / = g1:/ T W / = g1:/ P X />` to :g:`/ H P / <g1:/ H P />`, and :g:`/ Q T / <g1:/ Q T />` to each of :g:`/ T W / <g1:/ T W />`, :g:`/ P X / <g1:/ P X />`;
+   :g:`/ H Q / <g1:/ H Q />` :eq:`= <g1:/ H Q / = g1:/ P H /; g1:/ T Q / = g1:/ T W / = g1:/ P X />` :g:`/ H P / <g1:/ H P />`, and :g:`/ Q T / <g1:/ Q T />` to each of :g:`/ T W / <g1:/ T W />`, :g:`/ P X / <g1:/ P X />`
 
 .. step:: assert
 
-   Therefore, as :g:`/ H P / <g1:/ H P />` is to :g:`/ P X / <g1:/ P X />`, so is :g:`/ W T / <g1:/ W T />` to :g:`/ T H / <g1:/ T H />`.
+   as :g:`/ H P / <g1:/ H P />` is to :g:`/ P X / <g1:/ P X />`, so is :g:`/ W T / <g1:/ W T />` to :g:`/ T H / <g1:/ T H />`
 
 .. step:: assert ∵ segments_right_angles <G.508>
 
-   :g:`/ H P / <g1:/ H P />` is parallel to :g:`/ T W / <g1:/ T W />`, for each of them is at right angles to the plane :g:`< B D > <g1:< B D >>`; and :g:`/ T H / <g1:/ T H />` is parallel to :g:`/ P X / <g1:/ P X />`, for each of them is at right angles to the plane :g:`< B F > <g1:< B F >>`.
+   :g:`/ H P / <g1:/ H P />` is parallel to :g:`/ T W / <g1:/ T W />`, for each of them is at right angles to the plane :g:`< B D > <g1:< B D >>`; and :g:`/ T H / <g1:/ T H />` is parallel to :g:`/ P X / <g1:/ P X />`, for each of them is at right angles to the plane :g:`< B F > <g1:< B F >>`
 
 .. step:: assert ∵ triangles_sides_proportional_vi_32 <G.245>
 
-   If two :term:`triangles <G.11>`, as :g:`< X P H > <g1:< X P H >>`, :g:`< H T W > <g1:< H T W >>`, which have two sides :term:`proportional <G.180>` to two sides be placed together at one :term:`angle <G.22>` so that their corresponding sides are also :term:`parallel <G.52>`, the remaining segments will be in a segment.
+   If two :term:`triangles <G.12>`, as :g:`< X P H > <g1:< X P H >>`, :g:`< H T W > <g1:< H T W >>`, which have two sides :term:`proportional <G.180>` to two sides be placed together at one :term:`angle <G.22>` so that their corresponding sides are also :term:`parallel <G.52>`, the remaining segments will be in a segment
 
 .. step:: assert
 
-   Therefore :g:`/ X H / <g1:/ X H />` is in a segment with :g:`/ H W / <g1:/ H W />`.
+   :g:`/ X H / <g1:/ X H />` is in a segment with :g:`/ H W / <g1:/ H W />`
 
 .. step:: assert ∵ part_segment_plane <G.502>
 
-   Every segment is in one plane;
+   Every segment is in one plane
 
 .. step:: assert
 
-   Therefore the pentagon :g:`< U B W C V > <g1:< U B W C V >>` is in one plane.
+   the pentagon :g:`< U B W C V > <g1:< U B W C V >>` is in one plane
 
 .. step:: assert
 
-   I say next that it is also equiangular.
+   I say next that it is also equiangular
 
 .. step:: assert
 
-   Since :g:`/ N P / <g1:/ N P />` has been cut in extreme and mean ratio at :g:`R <g1:R>`, and :g:`/ P R / <g1:/ P R />` is the greater segment, while :g:`/ P R / <g1:/ P R />` is :eq:`equal <g1:/ R P / = g1:/ P S />` to :g:`/ P S / <g1:/ P S />`,
+   :g:`/ N P / <g1:/ N P />` has been cut in extreme and mean ratio at :g:`R <g1:R>`, and :g:`/ P R / <g1:/ P R />` is the greater segment, while :g:`/ P R / <g1:/ P R />` :eq:`= <g1:/ R P / = g1:/ P S />` :g:`/ P S / <g1:/ P S />`,
 
 .. step:: assert ∵ segment_cut_extreme_xiii_5, segment_cut_extreme_xiii_4 <G.583, G.582>
 
-   Therefore :g:`/ N S / <g1:/ N S />` has also been cut in extreme and mean ratio at :g:`P <g1:P>`, and :g:`/ N P / <g1:/ N P />` is the greater segment; therefore the squares on :g:`/ N S / <g1:/ N S />`, :g:`/ S P / <g1:/ S P />` are triple of the square on :g:`/ N P / <g1:/ N P />`.
+   :g:`/ N S / <g1:/ N S />` has also been cut in extreme and mean ratio at :g:`P <g1:P>`, and :g:`/ N P / <g1:/ N P />` is the greater segment; therefore the squares on :g:`/ N S / <g1:/ N S />`, :g:`/ S P / <g1:/ S P />` are triple of the square on :g:`/ N P / <g1:/ N P />`
 
 .. step:: assert
 
-   :g:`/ N P / <g1:/ N P />` is :eq:`equal <g1:/ N P / = g1:/ N B /; g1:/ P S / = g1:/ S V />` to :g:`/ N B / <g1:/ N B />`, and :g:`/ P S / <g1:/ P S />` to :g:`/ S V / <g1:/ S V />`;
+   :g:`/ N P / <g1:/ N P />` :eq:`= <g1:/ N P / = g1:/ N B /; g1:/ P S / = g1:/ S V />` :g:`/ N B / <g1:/ N B />`, and :g:`/ P S / <g1:/ P S />` to :g:`/ S V / <g1:/ S V />`
 
 .. step:: assert
 
-   Therefore the squares on :g:`/ N S / <g1:/ N S />`, :g:`/ S V / <g1:/ S V />` are triple of the square on :g:`/ N B / <g1:/ N B />`; hence the squares on :g:`/ V S / <g1:/ V S />`, :g:`/ S N / <g1:/ S N />`, :g:`/ N B / <g1:/ N B />` are quadruple of the square on :g:`/ N B / <g1:/ N B />`.
+   the squares on :g:`/ N S / <g1:/ N S />`, :g:`/ S V / <g1:/ S V />` are triple of the square on :g:`/ N B / <g1:/ N B />`; hence the squares on :g:`/ V S / <g1:/ V S />`, :g:`/ S N / <g1:/ S N />`, :g:`/ N B / <g1:/ N B />` are quadruple of the square on :g:`/ N B / <g1:/ N B />`
 
 .. step:: assert
 
-   The square on :g:`/ S B / <g1:/ S B />` is equal to the squares on :g:`/ S N / <g1:/ S N />`, :g:`/ N B / <g1:/ N B />`;
+   The square on :g:`/ S B / <g1:/ S B />` is equal to the squares on :g:`/ S N / <g1:/ S N />`, :g:`/ N B / <g1:/ N B />`
 
 .. step:: assert
 
-   Therefore the squares on :g:`/ B S / <g1:/ B S />`, :g:`/ S V / <g1:/ S V />`, that is, the square on :g:`/ B V / <g1:/ B V />` —for :g:`< V S B ) <g1:< V S B )>` is right—is quadruple of the square on :g:`/ N B / <g1:/ N B />`; therefore :g:`/ V B / <g1:/ V B />` is double of :g:`/ B N / <g1:/ B N />`.
+   the squares on :g:`/ B S / <g1:/ B S />`, :g:`/ S V / <g1:/ S V />`, that is, the square on :g:`/ B V / <g1:/ B V />` —for :g:`< V S B ) <g1:< V S B )>` is right—is quadruple of the square on :g:`/ N B / <g1:/ N B />`; therefore :g:`/ V B / <g1:/ V B />` is double of :g:`/ B N / <g1:/ B N />`
 
 .. step:: assert
 
-   :g:`/ B C / <g1:/ B C />` is also double of :g:`/ B N / <g1:/ B N />`;
+   :g:`/ B C / <g1:/ B C />` is also double of :g:`/ B N / <g1:/ B N />`
 
 .. step:: assert
 
-   Therefore :g:`/ B V / <g1:/ B V />` is :eq:`equal <g1:/ V B / = g1:/ B C />` to :g:`/ B C / <g1:/ B C />`.
+   :g:`/ B V / <g1:/ B V />` :eq:`= <g1:/ V B / = g1:/ B C />` :g:`/ B C / <g1:/ B C />`
 
 .. step:: assert
 
-   And, since the two sides :g:`/ B U / <g1:/ B U />`, :g:`/ U V / <g1:/ U V />` are :eq:`equal <g1:/ U B / = g1:/ B W /; g1:/ V U / = g1:/ W C />` to the two sides :g:`/ B W / <g1:/ B W />`, :g:`/ W C / <g1:/ W C />`, and the base :g:`/ B V / <g1:/ B V />` is :eq:`equal <g1:/ V B / = g1:/ B C />` to the base :g:`/ B C / <g1:/ B C />`,
+   since :g:`/ B U / <g1:/ B U />`, :g:`/ U V / <g1:/ U V />` :eq:`= <g1:/ U B / = g1:/ B W /; g1:/ V U / = g1:/ W C />` :g:`/ B W / <g1:/ B W />`, :g:`/ W C / <g1:/ W C />`, and :g:`/ B V / <g1:/ B V />` :eq:`= <g1:/ V B / = g1:/ B C />` :g:`/ B C / <g1:/ B C />`,
 
-.. step:: assert ∵ sss_congruence <G.28>
+.. step:: assert ∵ sss_congruence <G.29>
 
-   Therefore :g:`< B U V ) <g1:< B U V )>` is :eq:`equal <g1:< B U V ) = g1:< B W C )>` to :g:`< B W C ) <g1:< B W C )>`.
+   :g:`< B U V ) <g1:< B U V )>` :eq:`= <g1:< B U V ) = g1:< B W C )>` :g:`< B W C ) <g1:< B W C )>`
 
 .. step:: assert
 
-   Similarly we can prove that :g:`< U V C ) <g1:< U V C )>` is also :eq:`equal <g1:< U V C ) = g1:< B W C )>` to :g:`< B W C ) <g1:< B W C )>`; therefore the three angles :g:`< B W C ) <g1:< B W C )>`, :g:`< B U V ) <g1:< B U V )>`, :g:`< U V C ) <g1:< U V C )>` are :eq:`equal <g1:< B W C ) = g1:< B U V ) = g1:< U V C )>` to one another.
+   Similarly we can prove that :g:`< U V C ) <g1:< U V C )>` :eq:`= <g1:< U V C ) = g1:< B W C )>` :g:`< B W C ) <g1:< B W C )>`; therefore the three angles :g:`< B W C ) <g1:< B W C )>`, :g:`< B U V ) <g1:< B U V )>`, :g:`< U V C ) <g1:< U V C )>` :eq:`= <g1:< B W C ) = g1:< B U V ) = g1:< U V C )>`
 
 .. step:: assert ∵ angles_equilateral_pentagon <G.585>
 
-   If in an :term:`equilateral <G.12>` pentagon three angles are equal to one another, the pentagon will be equiangular.
+   If in an :term:`equilateral <G.13>` pentagon three angles are equal to one another, the pentagon will be equiangular
 
 .. step:: assert
 
-   Therefore the pentagon :g:`< B U V C W > <g1:< B U V C W >>` is equiangular.
+   the pentagon :g:`< B U V C W > <g1:< B U V C W >>` is equiangular
 
 .. step:: assert
 
-   It was also proved :eq:`equilateral <g1:/ U B / = g1:/ V U / = g1:/ C V / = g1:/ W C / = g1:/ B W />` ;
+   It was also proved :eq:`equilateral <g1:/ U B / = g1:/ V U / = g1:/ C V / = g1:/ W C / = g1:/ B W />`
 
 .. step:: assert
 
-   Therefore the pentagon :g:`< B U V C W > <g1:< B U V C W >>` is :eq:`equilateral <g1:/ U B / = g1:/ V U / = g1:/ C V / = g1:/ W C / = g1:/ B W />` and equiangular, and it is on one side :g:`/ B C / <g1:/ B C />` of the cube.
+   the pentagon :g:`< B U V C W > <g1:< B U V C W >>` is :eq:`equilateral <g1:/ U B / = g1:/ V U / = g1:/ C V / = g1:/ W C / = g1:/ B W />` and equiangular, and it is on one side :g:`/ B C / <g1:/ B C />` of the cube
 
 .. step:: assert
 
-   Therefore, if we make the same construction in the case of each of the twelve sides of the cube,
+   if we make the same construction in the case of each of the twelve sides of the cube,
 
 .. step:: assert
 
-   A :term:`solid figure <G.529>` will have been constructed which is contained by twelve equilateral and equiangular pentagons, and which is called a dodecahedron.
+   A :term:`solid figure <G.529>` will have been constructed which is contained by twelve equilateral and equiangular pentagons, and which is called a dodecahedron
 
 .. step:: assert
 
-   It is then required to comprehend it in the given sphere, and to prove that the side of the dodecahedron is the irrational segment called apotome.
+   It is then required to comprehend it in the given sphere, and to prove that the side of the dodecahedron is the irrational segment called apotome
 
 .. step:: construct
 
@@ -231,7 +231,7 @@ G.600 construct a dodecahedron and comprehend it in a
 
 .. step:: assert ∵ sides_opposite_planes <G.549>
 
-   Therefore :g:`/ P Z / <g1:/ P Z />` meets the :term:`diameter <G.61>` of the cube, and they bisect one another, for this has been proved in the last theorem but one of the eleventh book.
+   :g:`/ P Z / <g1:/ P Z />` meets the diameter of the cube, and they bisect one another, for this has been proved in the last theorem but one of the eleventh book
 
 .. step:: assert
 
@@ -239,67 +239,67 @@ G.600 construct a dodecahedron and comprehend it in a
 
 .. step:: assert ∵ circle_radii <G.10>
 
-   Therefore :g:`Z <g1:Z>` is the :term:`center of the sphere <G.598>` which comprehends the cube, and :g:`/ Z P / <g1:/ Z P />` is half of the side of the cube.
+   :g:`Z <g1:Z>` is the center of the sphere which comprehends the cube, and :g:`/ Z P / <g1:/ Z P />` is half of the side of the cube
 
 .. step:: construct
 
-   :fn:`segment <G.13>`\ (:g:`U <g1:U>`, :g:`Z <g1:Z>`) → :g:`/ U Z / <g1:/ U Z />`
+   :fn:`segment <G.14>`\ (:g:`U <g1:U>`, :g:`Z <g1:Z>`) → :g:`/ U Z / <g1:/ U Z />`
 
 .. step:: assert
 
-   Since :g:`/ N S / <g1:/ N S />` has been cut in extreme and mean ratio at :g:`P <g1:P>`, and :g:`/ N P / <g1:/ N P />` is its greater segment,
+   :g:`/ N S / <g1:/ N S />` has been cut in extreme and mean ratio at :g:`P <g1:P>`, and :g:`/ N P / <g1:/ N P />` is its greater segment,
 
 .. step:: assert ∵ segment_cut_extreme_xiii_4 <G.582>
 
-   Therefore the squares on :g:`/ N S / <g1:/ N S />`, :g:`/ S P / <g1:/ S P />` are triple of the square on :g:`/ N P / <g1:/ N P />`.
+   the squares on :g:`/ N S / <g1:/ N S />`, :g:`/ S P / <g1:/ S P />` are triple of the square on :g:`/ N P / <g1:/ N P />`
 
 .. step:: assert
 
-   :g:`/ N S / <g1:/ N S />` is :eq:`equal <g1:/ N S / = g1:/ X Z />` to :g:`/ X Z / <g1:/ X Z />`, inasmuch as :g:`/ N P / <g1:/ N P />` is also :eq:`equal <g1:/ N P / = g1:/ P Z /; g1:/ P X / = g1:/ P S />` to :g:`/ P Z / <g1:/ P Z />`, and :g:`/ X P / <g1:/ X P />` to :g:`/ P S / <g1:/ P S />`.
+   :g:`/ N S / <g1:/ N S />` :eq:`= <g1:/ N S / = g1:/ X Z />` :g:`/ X Z / <g1:/ X Z />`, inasmuch as :g:`/ N P / <g1:/ N P />` :eq:`= <g1:/ N P / = g1:/ P Z /; g1:/ P X / = g1:/ P S />` :g:`/ P Z / <g1:/ P Z />`, and :g:`/ X P / <g1:/ X P />` to :g:`/ P S / <g1:/ P S />`
 
 .. step:: assert
 
-   Further :g:`/ P S / <g1:/ P S />` is also :eq:`equal <g1:/ P S / = g1:/ U X />` to :g:`/ X U / <g1:/ X U />`, since it is also :eq:`equal <g1:/ P S / = g1:/ R P />` to :g:`/ R P / <g1:/ R P />` ;
+   Further :g:`/ P S / <g1:/ P S />` :eq:`= <g1:/ P S / = g1:/ U X />` :g:`/ X U / <g1:/ X U />`, since it :eq:`= <g1:/ P S / = g1:/ R P />` :g:`/ R P / <g1:/ R P />`
 
 .. step:: assert
 
-   Therefore the squares on :g:`/ Z X / <g1:/ Z X />`, :g:`/ X U / <g1:/ X U />` are triple of the square on :g:`/ N P / <g1:/ N P />`.
+   the squares on :g:`/ Z X / <g1:/ Z X />`, :g:`/ X U / <g1:/ X U />` are triple of the square on :g:`/ N P / <g1:/ N P />`
 
 .. step:: assert
 
-   The square on :g:`/ U Z / <g1:/ U Z />` is equal to the squares on :g:`/ Z X / <g1:/ Z X />`, :g:`/ X U / <g1:/ X U />` ;
+   The square on :g:`/ U Z / <g1:/ U Z />` is equal to the squares on :g:`/ Z X / <g1:/ Z X />`, :g:`/ X U / <g1:/ X U />`
 
 .. step:: assert
 
-   Therefore the square on :g:`/ U Z / <g1:/ U Z />` is triple of the square on :g:`/ N P / <g1:/ N P />`.
+   the square on :g:`/ U Z / <g1:/ U Z />` is triple of the square on :g:`/ N P / <g1:/ N P />`
 
 .. step:: assert ∵ construct_cube_comprehend <G.595>
 
-   The square on the radius of the sphere which comprehends the cube is also triple of the square on the half of the side of the cube, for it has previously been shown how to construct a cube and comprehend it in a sphere, and to prove that the square on the :term:`diameter of the sphere <G.576>` is triple of the square on the side of the cube.
+   The square on the radius of the sphere which comprehends the cube is also triple of the square on the half of the side of the cube, for it has previously been shown how to construct a cube and comprehend it in a sphere, and to prove that the square on the :term:`diameter of the sphere <G.576>` is triple of the square on the side of the cube
 
 .. step:: assert
 
-   But, if whole is so related to whole, so is half to half also ; and :g:`/ N P / <g1:/ N P />` is half of the side of the cube ;
+   But, if whole is so related to whole, so is half to half also ; and :g:`/ N P / <g1:/ N P />` is half of the side of the cube
 
 .. step:: assert
 
-   Therefore :g:`/ U Z / <g1:/ U Z />` is equal to the radius of the sphere which comprehends the cube.
+   :g:`/ U Z / <g1:/ U Z />` is equal to the radius of the sphere which comprehends the cube
 
 .. step:: assert ∵ circle_radii <G.10>
 
-   :g:`Z <g1:Z>` is the center of the sphere which comprehends the cube ;
+   :g:`Z <g1:Z>` is the center of the sphere which comprehends the cube
 
 .. step:: assert
 
-   Therefore :g:`U <g1:U>` is on the :term:`surface <G.5>` of the sphere.
+   :g:`U <g1:U>` is on the surface of the sphere
 
 .. step:: assert
 
-   Similarly we can prove that each of the remaining angles of the dodecahedron is also on the surface of the sphere ; therefore the dodecahedron has been comprehended in the given sphere.
+   Similarly we can prove that each of the remaining angles of the dodecahedron is also on the :term:`surface <G.5>` of the sphere ; therefore the dodecahedron has been comprehended in the given sphere
 
 .. step:: assert
 
-   I say next that the side of the dodecahedron is the irrational segment called apotome.
+   I say next that the side of the dodecahedron is the irrational segment called apotome
 
 .. step:: assert
 
@@ -307,7 +307,7 @@ G.600 construct a dodecahedron and comprehend it in a
 
 .. step:: assert
 
-   Therefore, when the whole :g:`/ N O / <g1:/ N O />` is cut in extreme and mean ratio, :g:`/ R S / <g1:/ R S />` is the greater segment.
+   when :g:`/ N O / <g1:/ N O />` is cut in extreme and mean ratio, :g:`/ R S / <g1:/ R S />` is the greater segment
 
 .. step:: assert ∵ parts_ratio_multiples <G.193>
 
@@ -315,39 +315,39 @@ G.600 construct a dodecahedron and comprehend it in a
 
 .. step:: assert
 
-   Therefore as :g:`/ N O / <g1:/ N O />` is to :g:`/ R S / <g1:/ R S />`, so is :g:`/ R S / <g1:/ R S />` to the sum of :g:`/ N R / <g1:/ N R />`, :g:`/ S O / <g1:/ S O />`.
+   as :g:`/ N O / <g1:/ N O />` is to :g:`/ R S / <g1:/ R S />`, so is :g:`/ R S / <g1:/ R S />` to the sum of :g:`/ N R / <g1:/ N R />`, :g:`/ S O / <g1:/ S O />`
 
 .. step:: assert
 
-   :g:`/ N O / <g1:/ N O />` is greater than :g:`/ R S / <g1:/ R S />`
+   :g:`/ N O / <g1:/ N O />` > :g:`/ R S / <g1:/ R S />`
 
 .. step:: assert
 
-   Therefore :g:`/ R S / <g1:/ R S />` is also greater than the sum of :g:`/ N R / <g1:/ N R />`, :g:`/ S O / <g1:/ S O />`
+   :g:`/ R S / <g1:/ R S />` is also greater than the sum of :g:`/ N R / <g1:/ N R />`, :g:`/ S O / <g1:/ S O />`
 
 .. step:: assert
 
-   Therefore :g:`/ N O / <g1:/ N O />` has been cut in extreme and mean ratio, and :g:`/ R S / <g1:/ R S />` is its greater segment.]
+   :g:`/ N O / <g1:/ N O />` has been cut in extreme and mean ratio, and :g:`/ R S / <g1:/ R S />` is its greater segment.]
 
 .. step:: assert
 
-   :g:`/ R S / <g1:/ R S />` is :eq:`equal <g1:/ R S / = g1:/ V U />` to :g:`/ U V / <g1:/ U V />` ;
+   :g:`/ R S / <g1:/ R S />` :eq:`= <g1:/ R S / = g1:/ V U />` :g:`/ U V / <g1:/ U V />`
 
 .. step:: assert
 
-   Therefore, when :g:`/ N O / <g1:/ N O />` is cut in extreme and mean ratio, :g:`/ U V / <g1:/ U V />` is the greater segment.
+   when :g:`/ N O / <g1:/ N O />` is cut in extreme and mean ratio, :g:`/ U V / <g1:/ U V />` is the greater segment
 
 .. step:: assert
 
-   And, since the diameter of the sphere is rational, and the square on it is triple of the square on the side of the cube, therefore :g:`/ N O / <g1:/ N O />`, being a side of the cube, is rational.
+   since the diameter of the sphere is rational, and the square on it is triple of the square on the side of the cube, therefore :g:`/ N O / <g1:/ N O />`, being a side of the cube, is rational
 
 .. step:: assert ∵ rational_segment_cut <G.584>
 
-   [But if a rational :term:`line <G.2>` be cut in extreme and mean ratio, each of the segments is an irrational apotome.] Therefore :g:`/ U V / <g1:/ U V />`, being a side of the dodecahedron, is an irrational apotome.
+   [But if a rational :term:`line <G.2>` be cut in extreme and mean ratio, each of the segments is an irrational apotome.] Therefore :g:`/ U V / <g1:/ U V />`, being a side of the dodecahedron, is an irrational apotome
 
 .. step:: conclude
 
-   PORISM. From this it is manifest that, when the side of the cube is cut in extreme and mean ratio, the greater segment is the side of the dodecahedron.
+   PORISM. From this it is manifest that, when the side of the cube is cut in extreme and mean ratio, the greater segment is the side of the dodecahedron
 
 Dependency Graph
 ----------------
@@ -369,10 +369,10 @@ Dependency Graph
      "G.8" [label="G.8", tooltip="G.8 (I.def.13): A boundary is the extremity of anything.", fillcolor="#224422", URL="../G.8/index.html", target="_top"];
      "G.9" [label="G.9", tooltip="G.9 (I.def.14): A figure is that which is contained by any boundary or boundaries.", fillcolor="#224422", URL="../G.9/index.html", target="_top"];
      "G.10" [label="G.10", tooltip="G.10 (I.def.15): A circle ( A B ) is a plane figure contained by one arc defined by a center A and a point B establishing its defining radius / A B /, such that all segments / A B /, / A C /, / A D...", fillcolor="#224422", URL="../G.10/index.html", target="_top"];
-     "G.11" [label="G.11", tooltip="G.11 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
-     "G.12" [label="G.12", tooltip="G.12 (I.def.20): Of trilateral figures, an equilateral triangle < A B C > has three equal sides, an isosceles triangle < D E F > has two equal sides, and a scalene triangle < G H K > has three uneq...", fillcolor="#224422", URL="../G.12/index.html", target="_top"];
-     "G.13" [label="G.13", tooltip="G.13 (I.post.1): Construct a segment / A B / between any two points A, B.", fillcolor="#444422", URL="../G.13/index.html", target="_top"];
-     "G.14" [label="G.14", tooltip="G.14 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.", fillcolor="#224422", URL="../G.14/index.html", target="_top"];
+     "G.11" [label="G.11", tooltip="G.11 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
+     "G.12" [label="G.12", tooltip="G.12 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.12/index.html", target="_top"];
+     "G.13" [label="G.13", tooltip="G.13 (I.def.20): Of trilateral figures, an equilateral triangle < A B C > has three equal sides, an isosceles triangle < D E F > has two equal sides, and a scalene triangle < G H K > has three uneq...", fillcolor="#224422", URL="../G.13/index.html", target="_top"];
+     "G.14" [label="G.14", tooltip="G.14 (I.post.1): Construct a segment / A B / between any two points A, B.", fillcolor="#444422", URL="../G.14/index.html", target="_top"];
      "G.15" [label="G.15", tooltip="G.15 (I.post.3): Construct a circle ( A B ) with center A and defining radius point B.", fillcolor="#444422", URL="../G.15/index.html", target="_top"];
      "G.16" [label="G.16", tooltip="G.16 (I.cn.1): Things equal to the same thing are equal to one another.", fillcolor="#442222", URL="../G.16/index.html", target="_top"];
      "G.17" [label="G.17", tooltip="G.17 (I.1): Construct an equilateral triangle on a given segment.", fillcolor="#222244", URL="../G.17/index.html", target="_top"];
@@ -384,20 +384,20 @@ Dependency Graph
      "G.23" [label="G.23", tooltip="G.23 (I.cn.4): Things / A B /, / D E / that coincide with one another are equal to one another.", fillcolor="#442222", URL="../G.23/index.html", target="_top"];
      "G.24" [label="G.24", tooltip="G.24 (I.4): Triangles with two sides and the included angle equal are congruent (SAS).", fillcolor="#222244", URL="../G.24/index.html", target="_top"];
      "G.25" [label="G.25", tooltip="G.25 (I.5): In an isosceles triangle, the angles at the base are equal, and if the equal sides are extended, the angles under the base are equal.", fillcolor="#222244", URL="../G.25/index.html", target="_top"];
-     "G.26" [label="G.26", tooltip="G.26 (I.6): If two angles of a triangle are equal, the sides subtending the equal angles are also equal.", fillcolor="#222244", URL="../G.26/index.html", target="_top"];
-     "G.27" [label="G.27", tooltip="G.27 (I.7): On the same segment and on the same side, there cannot be constructed two distinct triangles with both pairs of conterminous sides equal.", fillcolor="#222244", URL="../G.27/index.html", target="_top"];
-     "G.28" [label="G.28", tooltip="G.28 (I.8): Triangles with all three corresponding sides equal have their corresponding angles equal (SSS).", fillcolor="#222244", URL="../G.28/index.html", target="_top"];
-     "G.29" [label="G.29", tooltip="G.29 (I.def.9): A rectilineal angle is contained by two segments or lines.", fillcolor="#224422", URL="../G.29/index.html", target="_top"];
-     "G.30" [label="G.30", tooltip="G.30 (I.9): Bisect a given angle.", fillcolor="#222244", URL="../G.30/index.html", target="_top"];
-     "G.31" [label="G.31", tooltip="G.31 (I.10): Bisect a given segment.", fillcolor="#222244", URL="../G.31/index.html", target="_top"];
-     "G.32" [label="G.32", tooltip="G.32 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.32/index.html", target="_top"];
-     "G.33" [label="G.33", tooltip="G.33 (I.11): Construct a segment at right angles to a given line from a given point on it.", fillcolor="#222244", URL="../G.33/index.html", target="_top"];
-     "G.35" [label="G.35", tooltip="G.35 (I.cn.2): If equals are added to equals, the wholes are equal.", fillcolor="#442222", URL="../G.35/index.html", target="_top"];
-     "G.36" [label="G.36", tooltip="G.36 (I.13): A segment standing on a line makes either two right angles or adjacent angles summing to two right angles.", fillcolor="#222244", URL="../G.36/index.html", target="_top"];
-     "G.37" [label="G.37", tooltip="G.37 (I.post.4): All right angles are equal.", fillcolor="#444422", URL="../G.37/index.html", target="_top"];
-     "G.38" [label="G.38", tooltip="G.38 (I.14): If two segments at a point on a line on opposite sides make adjacent angles summing to two right angles, the two segments are collinear.", fillcolor="#222244", URL="../G.38/index.html", target="_top"];
-     "G.39" [label="G.39", tooltip="G.39 (I.15): Intersecting lines make their vertical angles equal.", fillcolor="#222244", URL="../G.39/index.html", target="_top"];
-     "G.40" [label="G.40", tooltip="G.40 (I.cn.5): The whole is greater than the part.", fillcolor="#442222", URL="../G.40/index.html", target="_top"];
+     "G.26" [label="G.26", tooltip="G.26 (I.cn.5): The whole is greater than the part.", fillcolor="#442222", URL="../G.26/index.html", target="_top"];
+     "G.27" [label="G.27", tooltip="G.27 (I.6): If two angles of a triangle are equal, the sides subtending the equal angles are also equal.", fillcolor="#222244", URL="../G.27/index.html", target="_top"];
+     "G.28" [label="G.28", tooltip="G.28 (I.7): On the same segment and on the same side, there cannot be constructed two distinct triangles with both pairs of conterminous sides equal.", fillcolor="#222244", URL="../G.28/index.html", target="_top"];
+     "G.29" [label="G.29", tooltip="G.29 (I.8): Triangles with all three corresponding sides equal have their corresponding angles equal (SSS).", fillcolor="#222244", URL="../G.29/index.html", target="_top"];
+     "G.30" [label="G.30", tooltip="G.30 (I.def.9): A rectilineal angle is contained by two segments or lines.", fillcolor="#224422", URL="../G.30/index.html", target="_top"];
+     "G.31" [label="G.31", tooltip="G.31 (I.9): Bisect a given angle.", fillcolor="#222244", URL="../G.31/index.html", target="_top"];
+     "G.32" [label="G.32", tooltip="G.32 (I.10): Bisect a given segment.", fillcolor="#222244", URL="../G.32/index.html", target="_top"];
+     "G.33" [label="G.33", tooltip="G.33 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.33/index.html", target="_top"];
+     "G.34" [label="G.34", tooltip="G.34 (I.11): Construct a segment at right angles to a given line from a given point on it.", fillcolor="#222244", URL="../G.34/index.html", target="_top"];
+     "G.36" [label="G.36", tooltip="G.36 (I.cn.2): If equals are added to equals, the wholes are equal.", fillcolor="#442222", URL="../G.36/index.html", target="_top"];
+     "G.37" [label="G.37", tooltip="G.37 (I.13): A segment standing on a line makes either two right angles or adjacent angles summing to two right angles.", fillcolor="#222244", URL="../G.37/index.html", target="_top"];
+     "G.38" [label="G.38", tooltip="G.38 (I.post.4): All right angles are equal.", fillcolor="#444422", URL="../G.38/index.html", target="_top"];
+     "G.39" [label="G.39", tooltip="G.39 (I.14): If two segments at a point on a line on opposite sides make adjacent angles summing to two right angles, the two segments are collinear.", fillcolor="#222244", URL="../G.39/index.html", target="_top"];
+     "G.40" [label="G.40", tooltip="G.40 (I.15): Intersecting lines make their vertical angles equal.", fillcolor="#222244", URL="../G.40/index.html", target="_top"];
      "G.41" [label="G.41", tooltip="G.41 (I.16): In any triangle, if one side is extended, the exterior angle is greater than either opposite interior angle.", fillcolor="#222244", URL="../G.41/index.html", target="_top"];
      "G.42" [label="G.42", tooltip="G.42 (I.17): In any triangle, the sum of any two angles is less than two right angles.", fillcolor="#222244", URL="../G.42/index.html", target="_top"];
      "G.43" [label="G.43", tooltip="G.43 (I.18): In any triangle, the greater side subtends the greater angle.", fillcolor="#222244", URL="../G.43/index.html", target="_top"];
@@ -567,6 +567,7 @@ Dependency Graph
      "G.510" [label="G.510", tooltip="G.510 (XI.8): If two segments be parallel, and one of them be at right angles to any plane, the remaining one is at right angles to the same plane.", fillcolor="#222244", URL="../G.510/index.html", target="_top"];
      "G.511" [label="G.511", tooltip="G.511 (XI.9): Straight lines which are parallel to the same segment and are not in the same plane with it are also parallel to one another.", fillcolor="#222244", URL="../G.511/index.html", target="_top"];
      "G.529" [label="G.529", tooltip="G.529 (XI.def.1): Asolid is that which has length, breadth, and depth.", fillcolor="#224422", URL="../G.529/index.html", target="_top"];
+     "G.533" [label="G.533", tooltip="G.533 (XI.def.2): Anextremity of asolid is asurface.", fillcolor="#224422", URL="../G.533/index.html", target="_top"];
      "G.548" [label="G.548", tooltip="G.548 (XI.def.25): Acube is asolid figure contained by six equalsquares.", fillcolor="#224422", URL="../G.548/index.html", target="_top"];
      "G.549" [label="G.549", tooltip="G.549 (XI.38): If the sides of the opposite planes of a cube be bisected, and planes be carried through the points of section, the common section of the planes and the diameter of the cube bisect...", fillcolor="#222244", URL="../G.549/index.html", target="_top"];
      "G.553" [label="G.553", tooltip="G.553 (XI.def.12): Apyramid is asolid figure, contained byplanes, which is constructed from one plane to onepoint.", fillcolor="#224422", URL="../G.553/index.html", target="_top"];
@@ -586,14 +587,30 @@ Dependency Graph
      "G.3" -> "G.1";
      "G.4" -> "G.1";
      "G.10" -> "G.1";
-     "G.13" -> "G.1";
+     "G.11" -> "G.1";
      "G.14" -> "G.1";
+     "G.15" -> "G.1";
+     "G.17" -> "G.1";
      "G.20" -> "G.1";
-     "G.27" -> "G.1";
-     "G.33" -> "G.1";
-     "G.38" -> "G.1";
+     "G.21" -> "G.1";
+     "G.24" -> "G.1";
+     "G.25" -> "G.1";
+     "G.28" -> "G.1";
+     "G.29" -> "G.1";
+     "G.31" -> "G.1";
+     "G.32" -> "G.1";
+     "G.34" -> "G.1";
+     "G.37" -> "G.1";
+     "G.39" -> "G.1";
+     "G.40" -> "G.1";
+     "G.45" -> "G.1";
+     "G.47" -> "G.1";
      "G.48" -> "G.1";
      "G.58" -> "G.1";
+     "G.59" -> "G.1";
+     "G.68" -> "G.1";
+     "G.75" -> "G.1";
+     "G.79" -> "G.1";
      "G.87" -> "G.1";
      "G.138" -> "G.1";
      "G.211" -> "G.1";
@@ -602,24 +619,49 @@ Dependency Graph
      "G.509" -> "G.1";
      "G.549" -> "G.1";
      "G.553" -> "G.1";
+     "G.595" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
      "G.6" -> "G.2";
+     "G.7" -> "G.2";
+     "G.18" -> "G.2";
      "G.22" -> "G.2";
-     "G.29" -> "G.2";
+     "G.30" -> "G.2";
+     "G.33" -> "G.2";
+     "G.34" -> "G.2";
+     "G.37" -> "G.2";
+     "G.39" -> "G.2";
+     "G.40" -> "G.2";
+     "G.48" -> "G.2";
+     "G.52" -> "G.2";
+     "G.53" -> "G.2";
+     "G.54" -> "G.2";
+     "G.55" -> "G.2";
+     "G.56" -> "G.2";
+     "G.58" -> "G.2";
+     "G.65" -> "G.2";
      "G.211" -> "G.2";
      "G.242" -> "G.2";
+     "G.504" -> "G.2";
+     "G.509" -> "G.2";
+     "G.600" -> "G.2";
      "G.4" -> "G.3";
+     "G.6" -> "G.3";
      "G.8" -> "G.3";
      "G.20" -> "G.3";
-     "G.27" -> "G.3";
+     "G.28" -> "G.3";
+     "G.29" -> "G.3";
      "G.60" -> "G.3";
+     "G.65" -> "G.3";
      "G.138" -> "G.3";
      "G.146" -> "G.3";
+     "G.504" -> "G.3";
+     "G.533" -> "G.3";
      "G.7" -> "G.4";
      "G.10" -> "G.4";
      "G.11" -> "G.4";
-     "G.13" -> "G.4";
+     "G.12" -> "G.4";
+     "G.14" -> "G.4";
      "G.17" -> "G.4";
      "G.18" -> "G.4";
      "G.20" -> "G.4";
@@ -627,14 +669,17 @@ Dependency Graph
      "G.22" -> "G.4";
      "G.24" -> "G.4";
      "G.25" -> "G.4";
-     "G.27" -> "G.4";
      "G.28" -> "G.4";
+     "G.29" -> "G.4";
+     "G.30" -> "G.4";
      "G.31" -> "G.4";
      "G.32" -> "G.4";
      "G.33" -> "G.4";
-     "G.36" -> "G.4";
-     "G.38" -> "G.4";
+     "G.34" -> "G.4";
+     "G.37" -> "G.4";
      "G.39" -> "G.4";
+     "G.40" -> "G.4";
+     "G.41" -> "G.4";
      "G.47" -> "G.4";
      "G.48" -> "G.4";
      "G.52" -> "G.4";
@@ -643,26 +688,40 @@ Dependency Graph
      "G.55" -> "G.4";
      "G.56" -> "G.4";
      "G.58" -> "G.4";
+     "G.59" -> "G.4";
      "G.60" -> "G.4";
      "G.61" -> "G.4";
+     "G.62" -> "G.4";
+     "G.65" -> "G.4";
+     "G.68" -> "G.4";
      "G.75" -> "G.4";
+     "G.79" -> "G.4";
      "G.81" -> "G.4";
      "G.87" -> "G.4";
      "G.89" -> "G.4";
      "G.122" -> "G.4";
+     "G.123" -> "G.4";
+     "G.124" -> "G.4";
      "G.138" -> "G.4";
+     "G.139" -> "G.4";
      "G.146" -> "G.4";
      "G.147" -> "G.4";
      "G.211" -> "G.4";
+     "G.213" -> "G.4";
      "G.221" -> "G.4";
      "G.222" -> "G.4";
+     "G.225" -> "G.4";
+     "G.226" -> "G.4";
      "G.227" -> "G.4";
      "G.228" -> "G.4";
      "G.229" -> "G.4";
+     "G.231" -> "G.4";
      "G.234" -> "G.4";
      "G.245" -> "G.4";
+     "G.377" -> "G.4";
      "G.380" -> "G.4";
      "G.381" -> "G.4";
+     "G.385" -> "G.4";
      "G.388" -> "G.4";
      "G.389" -> "G.4";
      "G.391" -> "G.4";
@@ -683,6 +742,7 @@ Dependency Graph
      "G.509" -> "G.4";
      "G.510" -> "G.4";
      "G.511" -> "G.4";
+     "G.549" -> "G.4";
      "G.576" -> "G.4";
      "G.579" -> "G.4";
      "G.582" -> "G.4";
@@ -693,7 +753,11 @@ Dependency Graph
      "G.6" -> "G.5";
      "G.7" -> "G.5";
      "G.576" -> "G.5";
+     "G.600" -> "G.5";
      "G.10" -> "G.6";
+     "G.138" -> "G.6";
+     "G.146" -> "G.6";
+     "G.533" -> "G.6";
      "G.10" -> "G.7";
      "G.22" -> "G.7";
      "G.52" -> "G.7";
@@ -702,31 +766,47 @@ Dependency Graph
      "G.503" -> "G.7";
      "G.504" -> "G.7";
      "G.505" -> "G.7";
+     "G.506" -> "G.7";
      "G.507" -> "G.7";
+     "G.508" -> "G.7";
      "G.509" -> "G.7";
      "G.510" -> "G.7";
      "G.511" -> "G.7";
      "G.549" -> "G.7";
      "G.553" -> "G.7";
+     "G.600" -> "G.7";
      "G.9" -> "G.8";
      "G.10" -> "G.9";
-     "G.24" -> "G.9";
-     "G.26" -> "G.9";
+     "G.12" -> "G.9";
+     "G.66" -> "G.9";
+     "G.67" -> "G.9";
+     "G.89" -> "G.9";
      "G.96" -> "G.9";
      "G.122" -> "G.9";
      "G.187" -> "G.9";
      "G.188" -> "G.9";
      "G.189" -> "G.9";
      "G.209" -> "G.9";
+     "G.224" -> "G.9";
      "G.229" -> "G.9";
+     "G.231" -> "G.9";
+     "G.234" -> "G.9";
+     "G.377" -> "G.9";
+     "G.381" -> "G.9";
      "G.388" -> "G.9";
      "G.389" -> "G.9";
+     "G.483" -> "G.9";
      "G.575" -> "G.9";
+     "G.579" -> "G.9";
+     "G.582" -> "G.9";
+     "G.583" -> "G.9";
      "G.600" -> "G.9";
-     "G.14" -> "G.10";
+     "G.11" -> "G.10";
      "G.15" -> "G.10";
      "G.17" -> "G.10";
+     "G.20" -> "G.10";
      "G.21" -> "G.10";
+     "G.47" -> "G.10";
      "G.61" -> "G.10";
      "G.96" -> "G.10";
      "G.122" -> "G.10";
@@ -737,108 +817,201 @@ Dependency Graph
      "G.146" -> "G.10";
      "G.147" -> "G.10";
      "G.502" -> "G.10";
-     "G.12" -> "G.11";
-     "G.24" -> "G.11";
-     "G.26" -> "G.11";
-     "G.28" -> "G.11";
-     "G.41" -> "G.11";
-     "G.42" -> "G.11";
-     "G.43" -> "G.11";
-     "G.44" -> "G.11";
-     "G.45" -> "G.11";
+     "G.600" -> "G.10";
+     "G.15" -> "G.11";
+     "G.17" -> "G.11";
+     "G.20" -> "G.11";
+     "G.21" -> "G.11";
      "G.47" -> "G.11";
-     "G.51" -> "G.11";
-     "G.59" -> "G.11";
-     "G.63" -> "G.11";
-     "G.66" -> "G.11";
-     "G.67" -> "G.11";
-     "G.68" -> "G.11";
-     "G.70" -> "G.11";
-     "G.78" -> "G.11";
-     "G.125" -> "G.11";
-     "G.210" -> "G.11";
-     "G.211" -> "G.11";
-     "G.213" -> "G.11";
-     "G.215" -> "G.11";
-     "G.226" -> "G.11";
-     "G.232" -> "G.11";
-     "G.234" -> "G.11";
-     "G.245" -> "G.11";
-     "G.392" -> "G.11";
-     "G.503" -> "G.11";
+     "G.61" -> "G.11";
+     "G.96" -> "G.11";
+     "G.122" -> "G.11";
+     "G.123" -> "G.11";
+     "G.124" -> "G.11";
+     "G.502" -> "G.11";
+     "G.576" -> "G.11";
+     "G.13" -> "G.12";
      "G.17" -> "G.12";
+     "G.20" -> "G.12";
+     "G.24" -> "G.12";
      "G.25" -> "G.12";
+     "G.27" -> "G.12";
+     "G.28" -> "G.12";
+     "G.29" -> "G.12";
+     "G.31" -> "G.12";
+     "G.32" -> "G.12";
+     "G.34" -> "G.12";
+     "G.41" -> "G.12";
+     "G.42" -> "G.12";
+     "G.43" -> "G.12";
+     "G.44" -> "G.12";
+     "G.45" -> "G.12";
+     "G.47" -> "G.12";
+     "G.48" -> "G.12";
+     "G.51" -> "G.12";
+     "G.53" -> "G.12";
+     "G.59" -> "G.12";
+     "G.60" -> "G.12";
+     "G.62" -> "G.12";
      "G.63" -> "G.12";
-     "G.585" -> "G.12";
-     "G.599" -> "G.12";
+     "G.64" -> "G.12";
+     "G.66" -> "G.12";
+     "G.67" -> "G.12";
+     "G.68" -> "G.12";
+     "G.70" -> "G.12";
+     "G.72" -> "G.12";
+     "G.78" -> "G.12";
+     "G.79" -> "G.12";
+     "G.125" -> "G.12";
+     "G.139" -> "G.12";
+     "G.210" -> "G.12";
+     "G.211" -> "G.12";
+     "G.213" -> "G.12";
+     "G.215" -> "G.12";
+     "G.226" -> "G.12";
+     "G.229" -> "G.12";
+     "G.231" -> "G.12";
+     "G.232" -> "G.12";
+     "G.234" -> "G.12";
+     "G.245" -> "G.12";
+     "G.392" -> "G.12";
+     "G.503" -> "G.12";
+     "G.508" -> "G.12";
+     "G.600" -> "G.12";
      "G.17" -> "G.13";
-     "G.20" -> "G.13";
      "G.25" -> "G.13";
-     "G.27" -> "G.13";
-     "G.41" -> "G.13";
-     "G.15" -> "G.14";
-     "G.61" -> "G.14";
-     "G.96" -> "G.14";
-     "G.122" -> "G.14";
-     "G.502" -> "G.14";
-     "G.576" -> "G.14";
+     "G.63" -> "G.13";
+     "G.75" -> "G.13";
+     "G.585" -> "G.13";
+     "G.599" -> "G.13";
+     "G.600" -> "G.13";
+     "G.17" -> "G.14";
+     "G.20" -> "G.14";
+     "G.25" -> "G.14";
+     "G.27" -> "G.14";
+     "G.28" -> "G.14";
+     "G.31" -> "G.14";
+     "G.34" -> "G.14";
+     "G.41" -> "G.14";
+     "G.43" -> "G.14";
+     "G.45" -> "G.14";
+     "G.47" -> "G.14";
+     "G.51" -> "G.14";
+     "G.58" -> "G.14";
+     "G.60" -> "G.14";
+     "G.65" -> "G.14";
+     "G.68" -> "G.14";
+     "G.70" -> "G.14";
+     "G.79" -> "G.14";
+     "G.87" -> "G.14";
+     "G.123" -> "G.14";
+     "G.124" -> "G.14";
+     "G.125" -> "G.14";
+     "G.139" -> "G.14";
+     "G.147" -> "G.14";
+     "G.210" -> "G.14";
+     "G.211" -> "G.14";
+     "G.221" -> "G.14";
+     "G.222" -> "G.14";
+     "G.226" -> "G.14";
+     "G.229" -> "G.14";
+     "G.231" -> "G.14";
+     "G.232" -> "G.14";
+     "G.385" -> "G.14";
+     "G.503" -> "G.14";
+     "G.508" -> "G.14";
+     "G.510" -> "G.14";
+     "G.549" -> "G.14";
+     "G.585" -> "G.14";
+     "G.595" -> "G.14";
+     "G.600" -> "G.14";
      "G.17" -> "G.15";
      "G.20" -> "G.15";
      "G.21" -> "G.15";
+     "G.47" -> "G.15";
+     "G.147" -> "G.15";
      "G.17" -> "G.16";
      "G.20" -> "G.16";
      "G.21" -> "G.16";
-     "G.36" -> "G.16";
-     "G.38" -> "G.16";
+     "G.37" -> "G.16";
      "G.39" -> "G.16";
+     "G.40" -> "G.16";
      "G.56" -> "G.16";
      "G.64" -> "G.16";
      "G.65" -> "G.16";
      "G.68" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
-     "G.33" -> "G.17";
+     "G.32" -> "G.17";
+     "G.34" -> "G.17";
      "G.20" -> "G.18";
      "G.25" -> "G.18";
      "G.41" -> "G.18";
      "G.42" -> "G.18";
+     "G.45" -> "G.18";
+     "G.58" -> "G.18";
+     "G.59" -> "G.18";
+     "G.66" -> "G.18";
+     "G.67" -> "G.18";
+     "G.123" -> "G.18";
+     "G.210" -> "G.18";
+     "G.221" -> "G.18";
+     "G.579" -> "G.18";
      "G.20" -> "G.19";
-     "G.38" -> "G.19";
+     "G.25" -> "G.19";
      "G.39" -> "G.19";
+     "G.40" -> "G.19";
      "G.64" -> "G.19";
      "G.72" -> "G.19";
      "G.21" -> "G.20";
      "G.25" -> "G.21";
-     "G.30" -> "G.21";
-     "G.33" -> "G.21";
+     "G.27" -> "G.21";
+     "G.31" -> "G.21";
+     "G.34" -> "G.21";
      "G.41" -> "G.21";
      "G.43" -> "G.21";
+     "G.45" -> "G.21";
      "G.47" -> "G.21";
+     "G.75" -> "G.21";
      "G.221" -> "G.21";
+     "G.222" -> "G.21";
+     "G.228" -> "G.21";
+     "G.279" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
-     "G.26" -> "G.22";
+     "G.27" -> "G.22";
      "G.28" -> "G.22";
      "G.29" -> "G.22";
+     "G.30" -> "G.22";
+     "G.31" -> "G.22";
      "G.32" -> "G.22";
-     "G.36" -> "G.22";
-     "G.38" -> "G.22";
+     "G.33" -> "G.22";
+     "G.34" -> "G.22";
+     "G.37" -> "G.22";
      "G.39" -> "G.22";
+     "G.40" -> "G.22";
      "G.41" -> "G.22";
      "G.42" -> "G.22";
      "G.43" -> "G.22";
      "G.44" -> "G.22";
+     "G.45" -> "G.22";
+     "G.48" -> "G.22";
      "G.51" -> "G.22";
      "G.53" -> "G.22";
      "G.54" -> "G.22";
      "G.55" -> "G.22";
      "G.56" -> "G.22";
+     "G.58" -> "G.22";
      "G.59" -> "G.22";
+     "G.60" -> "G.22";
      "G.62" -> "G.22";
      "G.63" -> "G.22";
+     "G.64" -> "G.22";
+     "G.75" -> "G.22";
      "G.76" -> "G.22";
      "G.77" -> "G.22";
      "G.78" -> "G.22";
+     "G.79" -> "G.22";
      "G.122" -> "G.22";
      "G.123" -> "G.22";
      "G.124" -> "G.22";
@@ -848,13 +1021,24 @@ Dependency Graph
      "G.213" -> "G.22";
      "G.215" -> "G.22";
      "G.217" -> "G.22";
+     "G.222" -> "G.22";
+     "G.224" -> "G.22";
      "G.225" -> "G.22";
      "G.226" -> "G.22";
+     "G.227" -> "G.22";
+     "G.229" -> "G.22";
+     "G.231" -> "G.22";
+     "G.232" -> "G.22";
      "G.245" -> "G.22";
+     "G.396" -> "G.22";
+     "G.549" -> "G.22";
      "G.585" -> "G.22";
+     "G.600" -> "G.22";
      "G.24" -> "G.23";
+     "G.29" -> "G.23";
      "G.25" -> "G.24";
-     "G.31" -> "G.24";
+     "G.27" -> "G.24";
+     "G.32" -> "G.24";
      "G.41" -> "G.24";
      "G.51" -> "G.24";
      "G.60" -> "G.24";
@@ -866,74 +1050,86 @@ Dependency Graph
      "G.508" -> "G.24";
      "G.549" -> "G.24";
      "G.585" -> "G.24";
-     "G.27" -> "G.25";
+     "G.28" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.123" -> "G.25";
      "G.139" -> "G.25";
      "G.585" -> "G.25";
-     "G.585" -> "G.26";
-     "G.28" -> "G.27";
-     "G.30" -> "G.28";
-     "G.33" -> "G.28";
-     "G.48" -> "G.28";
-     "G.506" -> "G.28";
-     "G.508" -> "G.28";
-     "G.585" -> "G.28";
-     "G.600" -> "G.28";
-     "G.30" -> "G.29";
+     "G.27" -> "G.26";
+     "G.28" -> "G.26";
+     "G.41" -> "G.26";
+     "G.45" -> "G.26";
+     "G.585" -> "G.27";
+     "G.29" -> "G.28";
+     "G.31" -> "G.29";
+     "G.34" -> "G.29";
      "G.48" -> "G.29";
+     "G.506" -> "G.29";
+     "G.508" -> "G.29";
+     "G.585" -> "G.29";
+     "G.600" -> "G.29";
      "G.31" -> "G.30";
-     "G.41" -> "G.31";
-     "G.33" -> "G.32";
-     "G.36" -> "G.32";
-     "G.37" -> "G.32";
-     "G.38" -> "G.32";
-     "G.42" -> "G.32";
-     "G.54" -> "G.32";
-     "G.55" -> "G.32";
-     "G.56" -> "G.32";
-     "G.59" -> "G.32";
-     "G.76" -> "G.32";
-     "G.77" -> "G.32";
-     "G.78" -> "G.32";
-     "G.79" -> "G.32";
-     "G.81" -> "G.32";
-     "G.125" -> "G.32";
-     "G.139" -> "G.32";
-     "G.209" -> "G.32";
-     "G.505" -> "G.32";
-     "G.506" -> "G.32";
-     "G.507" -> "G.32";
-     "G.510" -> "G.32";
-     "G.36" -> "G.33";
+     "G.48" -> "G.30";
+     "G.32" -> "G.31";
+     "G.41" -> "G.32";
+     "G.34" -> "G.33";
+     "G.37" -> "G.33";
+     "G.38" -> "G.33";
+     "G.39" -> "G.33";
+     "G.40" -> "G.33";
+     "G.42" -> "G.33";
+     "G.54" -> "G.33";
+     "G.55" -> "G.33";
+     "G.56" -> "G.33";
+     "G.59" -> "G.33";
      "G.75" -> "G.33";
-     "G.36" -> "G.35";
-     "G.56" -> "G.35";
-     "G.62" -> "G.35";
-     "G.64" -> "G.35";
-     "G.72" -> "G.35";
-     "G.79" -> "G.35";
-     "G.38" -> "G.36";
-     "G.39" -> "G.36";
-     "G.42" -> "G.36";
-     "G.54" -> "G.36";
+     "G.76" -> "G.33";
+     "G.77" -> "G.33";
+     "G.78" -> "G.33";
+     "G.79" -> "G.33";
+     "G.81" -> "G.33";
+     "G.125" -> "G.33";
+     "G.139" -> "G.33";
+     "G.209" -> "G.33";
+     "G.211" -> "G.33";
+     "G.227" -> "G.33";
+     "G.245" -> "G.33";
+     "G.385" -> "G.33";
+     "G.505" -> "G.33";
+     "G.506" -> "G.33";
+     "G.507" -> "G.33";
+     "G.508" -> "G.33";
+     "G.510" -> "G.33";
+     "G.511" -> "G.33";
+     "G.595" -> "G.33";
+     "G.37" -> "G.34";
+     "G.75" -> "G.34";
+     "G.595" -> "G.34";
+     "G.37" -> "G.36";
      "G.56" -> "G.36";
-     "G.59" -> "G.36";
-     "G.38" -> "G.37";
+     "G.62" -> "G.36";
+     "G.64" -> "G.36";
+     "G.72" -> "G.36";
+     "G.79" -> "G.36";
      "G.39" -> "G.37";
-     "G.79" -> "G.38";
-     "G.225" -> "G.38";
-     "G.226" -> "G.38";
-     "G.245" -> "G.38";
-     "G.549" -> "G.38";
-     "G.41" -> "G.39";
-     "G.54" -> "G.39";
-     "G.56" -> "G.39";
-     "G.506" -> "G.39";
+     "G.40" -> "G.37";
+     "G.42" -> "G.37";
+     "G.54" -> "G.37";
+     "G.56" -> "G.37";
+     "G.59" -> "G.37";
+     "G.39" -> "G.38";
+     "G.40" -> "G.38";
+     "G.79" -> "G.39";
+     "G.225" -> "G.39";
+     "G.226" -> "G.39";
+     "G.245" -> "G.39";
      "G.549" -> "G.39";
      "G.41" -> "G.40";
-     "G.45" -> "G.40";
+     "G.54" -> "G.40";
+     "G.56" -> "G.40";
+     "G.506" -> "G.40";
+     "G.549" -> "G.40";
      "G.43" -> "G.41";
      "G.51" -> "G.41";
      "G.53" -> "G.41";
@@ -953,19 +1149,28 @@ Dependency Graph
      "G.54" -> "G.52";
      "G.56" -> "G.52";
      "G.58" -> "G.52";
+     "G.59" -> "G.52";
      "G.60" -> "G.52";
+     "G.62" -> "G.52";
      "G.64" -> "G.52";
      "G.65" -> "G.52";
      "G.66" -> "G.52";
      "G.67" -> "G.52";
      "G.68" -> "G.52";
      "G.70" -> "G.52";
+     "G.75" -> "G.52";
+     "G.79" -> "G.52";
      "G.211" -> "G.52";
+     "G.213" -> "G.52";
+     "G.221" -> "G.52";
+     "G.222" -> "G.52";
      "G.245" -> "G.52";
+     "G.483" -> "G.52";
      "G.508" -> "G.52";
      "G.509" -> "G.52";
      "G.510" -> "G.52";
      "G.511" -> "G.52";
+     "G.600" -> "G.52";
      "G.54" -> "G.53";
      "G.58" -> "G.53";
      "G.60" -> "G.53";
@@ -986,6 +1191,7 @@ Dependency Graph
      "G.67" -> "G.58";
      "G.68" -> "G.58";
      "G.75" -> "G.58";
+     "G.79" -> "G.58";
      "G.87" -> "G.58";
      "G.221" -> "G.58";
      "G.222" -> "G.58";
@@ -999,6 +1205,9 @@ Dependency Graph
      "G.65" -> "G.60";
      "G.549" -> "G.60";
      "G.62" -> "G.61";
+     "G.66" -> "G.61";
+     "G.67" -> "G.61";
+     "G.70" -> "G.61";
      "G.72" -> "G.61";
      "G.86" -> "G.61";
      "G.96" -> "G.61";
@@ -1007,6 +1216,7 @@ Dependency Graph
      "G.502" -> "G.61";
      "G.549" -> "G.61";
      "G.575" -> "G.61";
+     "G.595" -> "G.61";
      "G.64" -> "G.62";
      "G.65" -> "G.62";
      "G.66" -> "G.62";
@@ -1023,19 +1233,27 @@ Dependency Graph
      "G.228" -> "G.63";
      "G.297" -> "G.63";
      "G.309" -> "G.63";
+     "G.328" -> "G.63";
+     "G.377" -> "G.63";
      "G.380" -> "G.63";
      "G.381" -> "G.63";
+     "G.385" -> "G.63";
      "G.388" -> "G.63";
      "G.389" -> "G.63";
      "G.392" -> "G.63";
+     "G.394" -> "G.63";
      "G.395" -> "G.63";
      "G.396" -> "G.63";
+     "G.453" -> "G.63";
      "G.454" -> "G.63";
      "G.483" -> "G.63";
      "G.548" -> "G.63";
      "G.579" -> "G.63";
      "G.582" -> "G.63";
+     "G.583" -> "G.63";
+     "G.584" -> "G.63";
      "G.595" -> "G.63";
+     "G.600" -> "G.63";
      "G.65" -> "G.64";
      "G.66" -> "G.64";
      "G.67" -> "G.65";
@@ -1063,7 +1281,15 @@ Dependency Graph
      "G.227" -> "G.81";
      "G.228" -> "G.81";
      "G.388" -> "G.81";
+     "G.389" -> "G.81";
      "G.395" -> "G.81";
+     "G.396" -> "G.81";
+     "G.453" -> "G.81";
+     "G.483" -> "G.81";
+     "G.579" -> "G.81";
+     "G.582" -> "G.81";
+     "G.583" -> "G.81";
+     "G.584" -> "G.81";
      "G.87" -> "G.86";
      "G.89" -> "G.86";
      "G.579" -> "G.86";
@@ -1072,8 +1298,10 @@ Dependency Graph
      "G.453" -> "G.89";
      "G.483" -> "G.89";
      "G.139" -> "G.96";
+     "G.385" -> "G.96";
      "G.575" -> "G.96";
      "G.591" -> "G.96";
+     "G.595" -> "G.96";
      "G.598" -> "G.96";
      "G.123" -> "G.122";
      "G.124" -> "G.123";
@@ -1090,29 +1318,51 @@ Dependency Graph
      "G.252" -> "G.169";
      "G.253" -> "G.169";
      "G.254" -> "G.169";
+     "G.255" -> "G.169";
      "G.256" -> "G.169";
      "G.268" -> "G.169";
+     "G.270" -> "G.169";
+     "G.271" -> "G.169";
      "G.274" -> "G.169";
+     "G.275" -> "G.169";
+     "G.276" -> "G.169";
      "G.277" -> "G.169";
+     "G.278" -> "G.169";
      "G.283" -> "G.169";
+     "G.289" -> "G.169";
      "G.290" -> "G.169";
      "G.291" -> "G.169";
+     "G.299" -> "G.169";
      "G.372" -> "G.169";
+     "G.376" -> "G.169";
+     "G.377" -> "G.169";
      "G.380" -> "G.169";
+     "G.387" -> "G.169";
+     "G.388" -> "G.169";
      "G.171" -> "G.170";
      "G.172" -> "G.170";
      "G.175" -> "G.170";
      "G.176" -> "G.170";
      "G.177" -> "G.170";
+     "G.183" -> "G.170";
      "G.185" -> "G.170";
+     "G.186" -> "G.170";
+     "G.189" -> "G.170";
+     "G.190" -> "G.170";
+     "G.191" -> "G.170";
      "G.193" -> "G.170";
+     "G.195" -> "G.170";
+     "G.205" -> "G.170";
+     "G.210" -> "G.170";
      "G.257" -> "G.170";
+     "G.600" -> "G.170";
      "G.186" -> "G.171";
      "G.190" -> "G.171";
      "G.175" -> "G.172";
      "G.174" -> "G.173";
      "G.188" -> "G.173";
      "G.189" -> "G.173";
+     "G.231" -> "G.173";
      "G.232" -> "G.173";
      "G.289" -> "G.173";
      "G.297" -> "G.173";
@@ -1125,15 +1375,26 @@ Dependency Graph
      "G.378" -> "G.173";
      "G.379" -> "G.173";
      "G.381" -> "G.173";
+     "G.382" -> "G.173";
+     "G.384" -> "G.173";
+     "G.584" -> "G.173";
      "G.175" -> "G.174";
      "G.202" -> "G.174";
      "G.205" -> "G.174";
+     "G.213" -> "G.174";
+     "G.232" -> "G.174";
+     "G.234" -> "G.174";
      "G.267" -> "G.174";
+     "G.296" -> "G.174";
+     "G.376" -> "G.174";
+     "G.377" -> "G.174";
+     "G.384" -> "G.174";
      "G.177" -> "G.175";
      "G.177" -> "G.176";
      "G.180" -> "G.176";
      "G.183" -> "G.176";
      "G.187" -> "G.176";
+     "G.188" -> "G.176";
      "G.189" -> "G.176";
      "G.190" -> "G.176";
      "G.191" -> "G.176";
@@ -1143,6 +1404,8 @@ Dependency Graph
      "G.202" -> "G.176";
      "G.205" -> "G.176";
      "G.210" -> "G.176";
+     "G.211" -> "G.176";
+     "G.226" -> "G.176";
      "G.232" -> "G.176";
      "G.267" -> "G.176";
      "G.271" -> "G.176";
@@ -1152,6 +1415,9 @@ Dependency Graph
      "G.276" -> "G.176";
      "G.289" -> "G.176";
      "G.296" -> "G.176";
+     "G.297" -> "G.176";
+     "G.299" -> "G.176";
+     "G.600" -> "G.176";
      "G.205" -> "G.177";
      "G.183" -> "G.180";
      "G.190" -> "G.180";
@@ -1161,27 +1427,48 @@ Dependency Graph
      "G.217" -> "G.180";
      "G.221" -> "G.180";
      "G.222" -> "G.180";
+     "G.224" -> "G.180";
      "G.227" -> "G.180";
      "G.228" -> "G.180";
+     "G.229" -> "G.180";
      "G.230" -> "G.180";
+     "G.231" -> "G.180";
+     "G.232" -> "G.180";
      "G.234" -> "G.180";
      "G.245" -> "G.180";
+     "G.263" -> "G.180";
      "G.266" -> "G.180";
      "G.273" -> "G.180";
+     "G.278" -> "G.180";
      "G.296" -> "G.180";
      "G.297" -> "G.180";
      "G.299" -> "G.180";
      "G.309" -> "G.180";
      "G.318" -> "G.180";
      "G.319" -> "G.180";
+     "G.328" -> "G.180";
+     "G.377" -> "G.180";
+     "G.381" -> "G.180";
      "G.382" -> "G.180";
+     "G.483" -> "G.180";
+     "G.600" -> "G.180";
      "G.182" -> "G.181";
      "G.190" -> "G.181";
+     "G.193" -> "G.181";
      "G.194" -> "G.181";
      "G.197" -> "G.181";
      "G.231" -> "G.181";
+     "G.232" -> "G.181";
      "G.265" -> "G.181";
+     "G.268" -> "G.181";
+     "G.274" -> "G.181";
+     "G.275" -> "G.181";
+     "G.278" -> "G.181";
+     "G.299" -> "G.181";
      "G.183" -> "G.182";
+     "G.202" -> "G.182";
+     "G.376" -> "G.182";
+     "G.377" -> "G.182";
      "G.188" -> "G.183";
      "G.193" -> "G.183";
      "G.211" -> "G.183";
@@ -1192,9 +1479,12 @@ Dependency Graph
      "G.377" -> "G.183";
      "G.186" -> "G.184";
      "G.188" -> "G.184";
+     "G.202" -> "G.184";
      "G.186" -> "G.185";
      "G.188" -> "G.185";
      "G.191" -> "G.185";
+     "G.192" -> "G.185";
+     "G.202" -> "G.185";
      "G.187" -> "G.186";
      "G.188" -> "G.186";
      "G.192" -> "G.186";
@@ -1228,10 +1518,17 @@ Dependency Graph
      "G.210" -> "G.193";
      "G.600" -> "G.193";
      "G.195" -> "G.194";
+     "G.213" -> "G.194";
+     "G.231" -> "G.194";
+     "G.232" -> "G.194";
      "G.261" -> "G.194";
      "G.262" -> "G.194";
      "G.266" -> "G.194";
+     "G.267" -> "G.194";
      "G.268" -> "G.194";
+     "G.270" -> "G.194";
+     "G.271" -> "G.194";
+     "G.319" -> "G.194";
      "G.213" -> "G.195";
      "G.231" -> "G.195";
      "G.389" -> "G.197";
@@ -1243,6 +1540,7 @@ Dependency Graph
      "G.377" -> "G.205";
      "G.384" -> "G.205";
      "G.210" -> "G.209";
+     "G.211" -> "G.209";
      "G.211" -> "G.210";
      "G.225" -> "G.210";
      "G.226" -> "G.210";
@@ -1264,11 +1562,15 @@ Dependency Graph
      "G.231" -> "G.217";
      "G.232" -> "G.217";
      "G.234" -> "G.217";
+     "G.377" -> "G.217";
      "G.231" -> "G.221";
      "G.234" -> "G.221";
      "G.234" -> "G.222";
      "G.225" -> "G.224";
      "G.226" -> "G.224";
+     "G.227" -> "G.224";
+     "G.231" -> "G.224";
+     "G.396" -> "G.224";
      "G.227" -> "G.225";
      "G.396" -> "G.225";
      "G.231" -> "G.226";
@@ -1280,8 +1582,10 @@ Dependency Graph
      "G.584" -> "G.228";
      "G.234" -> "G.229";
      "G.231" -> "G.230";
+     "G.232" -> "G.230";
      "G.309" -> "G.230";
      "G.319" -> "G.230";
+     "G.381" -> "G.230";
      "G.232" -> "G.231";
      "G.234" -> "G.231";
      "G.377" -> "G.231";
@@ -1291,13 +1595,25 @@ Dependency Graph
      "G.582" -> "G.242";
      "G.583" -> "G.242";
      "G.584" -> "G.242";
+     "G.600" -> "G.242";
      "G.600" -> "G.245";
      "G.248" -> "G.247";
      "G.249" -> "G.247";
      "G.250" -> "G.247";
+     "G.251" -> "G.247";
+     "G.255" -> "G.247";
      "G.268" -> "G.247";
      "G.269" -> "G.247";
+     "G.270" -> "G.247";
+     "G.271" -> "G.247";
+     "G.275" -> "G.247";
+     "G.276" -> "G.247";
+     "G.278" -> "G.247";
      "G.283" -> "G.247";
+     "G.289" -> "G.247";
+     "G.290" -> "G.247";
+     "G.376" -> "G.247";
+     "G.377" -> "G.247";
      "G.250" -> "G.248";
      "G.251" -> "G.248";
      "G.252" -> "G.248";
@@ -1335,13 +1651,18 @@ Dependency Graph
      "G.308" -> "G.248";
      "G.309" -> "G.248";
      "G.319" -> "G.248";
+     "G.328" -> "G.248";
      "G.376" -> "G.248";
      "G.377" -> "G.248";
      "G.378" -> "G.248";
      "G.379" -> "G.248";
+     "G.381" -> "G.248";
+     "G.382" -> "G.248";
+     "G.584" -> "G.248";
      "G.250" -> "G.249";
      "G.251" -> "G.249";
      "G.252" -> "G.249";
+     "G.255" -> "G.249";
      "G.275" -> "G.249";
      "G.276" -> "G.249";
      "G.277" -> "G.249";
@@ -1349,23 +1670,40 @@ Dependency Graph
      "G.279" -> "G.249";
      "G.280" -> "G.249";
      "G.281" -> "G.249";
+     "G.289" -> "G.249";
+     "G.290" -> "G.249";
      "G.296" -> "G.249";
+     "G.297" -> "G.249";
      "G.251" -> "G.250";
      "G.252" -> "G.251";
      "G.255" -> "G.251";
      "G.289" -> "G.252";
+     "G.254" -> "G.253";
      "G.255" -> "G.253";
+     "G.256" -> "G.253";
      "G.257" -> "G.253";
+     "G.258" -> "G.253";
      "G.261" -> "G.253";
      "G.262" -> "G.253";
      "G.263" -> "G.253";
+     "G.265" -> "G.253";
+     "G.266" -> "G.253";
+     "G.283" -> "G.253";
+     "G.372" -> "G.253";
+     "G.377" -> "G.253";
+     "G.380" -> "G.253";
      "G.389" -> "G.253";
+     "G.483" -> "G.253";
      "G.502" -> "G.253";
+     "G.503" -> "G.253";
      "G.255" -> "G.254";
      "G.258" -> "G.254";
      "G.261" -> "G.254";
      "G.262" -> "G.254";
      "G.263" -> "G.254";
+     "G.265" -> "G.254";
+     "G.266" -> "G.254";
+     "G.274" -> "G.254";
      "G.274" -> "G.255";
      "G.257" -> "G.256";
      "G.263" -> "G.256";
@@ -1398,13 +1736,18 @@ Dependency Graph
      "G.270" -> "G.269";
      "G.271" -> "G.269";
      "G.272" -> "G.269";
+     "G.273" -> "G.269";
      "G.276" -> "G.269";
      "G.278" -> "G.269";
+     "G.280" -> "G.269";
      "G.281" -> "G.269";
      "G.289" -> "G.269";
      "G.290" -> "G.269";
+     "G.297" -> "G.269";
      "G.300" -> "G.269";
      "G.308" -> "G.269";
+     "G.309" -> "G.269";
+     "G.319" -> "G.269";
      "G.272" -> "G.270";
      "G.275" -> "G.270";
      "G.278" -> "G.270";
@@ -1452,9 +1795,11 @@ Dependency Graph
      "G.309" -> "G.308";
      "G.328" -> "G.308";
      "G.381" -> "G.308";
+     "G.584" -> "G.308";
      "G.381" -> "G.309";
      "G.319" -> "G.318";
      "G.328" -> "G.318";
+     "G.381" -> "G.318";
      "G.328" -> "G.319";
      "G.381" -> "G.328";
      "G.376" -> "G.372";
@@ -1471,9 +1816,12 @@ Dependency Graph
      "G.391" -> "G.372";
      "G.392" -> "G.372";
      "G.394" -> "G.372";
+     "G.395" -> "G.372";
      "G.396" -> "G.372";
      "G.453" -> "G.372";
      "G.454" -> "G.372";
+     "G.483" -> "G.372";
+     "G.584" -> "G.372";
      "G.379" -> "G.376";
      "G.381" -> "G.376";
      "G.382" -> "G.376";
@@ -1489,6 +1837,7 @@ Dependency Graph
      "G.382" -> "G.379";
      "G.381" -> "G.380";
      "G.395" -> "G.380";
+     "G.396" -> "G.380";
      "G.584" -> "G.381";
      "G.394" -> "G.382";
      "G.395" -> "G.382";
@@ -1503,6 +1852,7 @@ Dependency Graph
      "G.453" -> "G.387";
      "G.453" -> "G.388";
      "G.483" -> "G.389";
+     "G.392" -> "G.391";
      "G.394" -> "G.391";
      "G.395" -> "G.391";
      "G.396" -> "G.391";
@@ -1515,6 +1865,7 @@ Dependency Graph
      "G.395" -> "G.392";
      "G.396" -> "G.392";
      "G.453" -> "G.392";
+     "G.454" -> "G.392";
      "G.584" -> "G.392";
      "G.483" -> "G.394";
      "G.396" -> "G.395";
@@ -1522,6 +1873,7 @@ Dependency Graph
      "G.483" -> "G.453";
      "G.584" -> "G.453";
      "G.483" -> "G.454";
+     "G.584" -> "G.454";
      "G.584" -> "G.483";
      "G.503" -> "G.502";
      "G.600" -> "G.502";
@@ -1533,7 +1885,9 @@ Dependency Graph
      "G.507" -> "G.505";
      "G.508" -> "G.505";
      "G.510" -> "G.505";
+     "G.511" -> "G.505";
      "G.595" -> "G.505";
+     "G.600" -> "G.505";
      "G.507" -> "G.506";
      "G.510" -> "G.506";
      "G.511" -> "G.506";
@@ -1543,17 +1897,22 @@ Dependency Graph
      "G.510" -> "G.509";
      "G.511" -> "G.510";
      "G.549" -> "G.511";
+     "G.533" -> "G.529";
      "G.548" -> "G.529";
      "G.553" -> "G.529";
      "G.599" -> "G.529";
+     "G.600" -> "G.529";
+     "G.576" -> "G.533";
      "G.549" -> "G.548";
      "G.595" -> "G.548";
+     "G.600" -> "G.548";
      "G.600" -> "G.549";
      "G.595" -> "G.553";
      "G.576" -> "G.575";
      "G.595" -> "G.575";
      "G.600" -> "G.575";
      "G.595" -> "G.576";
+     "G.600" -> "G.576";
      "G.584" -> "G.579";
      "G.600" -> "G.582";
      "G.600" -> "G.583";

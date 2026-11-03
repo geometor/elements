@@ -10,7 +10,7 @@
 :categories: theorem, proof, number-theory
 :category: theorem, proof, number-theory
 :tags: book-ix, point, number, unit, proportional, part-aliquot, alternando, proportion, continued-proportion, porism
-:dependencies: G.169, G.180, G.247, G.248, G.268
+:dependencies: G.169, G.180, G.194, G.247, G.248, G.268
 :excerpt: If as many numbers as we please beginning from an unit be in continued proportion, the less measures the greater according to some one of the numbers which have place among the proportional numbers.
 
 .. _G.340:
@@ -44,19 +44,19 @@ G.340 many numbers please
 
 .. step:: assert
 
-   Therefore the unit :g:`A <g1:A>` measures the number :g:`B <g1:B>` the same number of times as :g:`D <g1:D>` measures :g:`E <g1:E>`;
+   the unit :g:`A <g1:A>` measures the number :g:`B <g1:B>` the same number of times as :g:`D <g1:D>` measures :g:`E <g1:E>`
 
 .. step:: assert ∵ unit_measure_number <G.268>
 
-   Therefore, :term:`alternately <G.194>`, the unit :g:`A <g1:A>` measures :g:`D <g1:D>` the same number of times as :g:`B <g1:B>` measures :g:`E <g1:E>`.
+   :term:`alternately <G.194>`, the unit :g:`A <g1:A>` measures :g:`D <g1:D>` the same number of times as :g:`B <g1:B>` measures :g:`E <g1:E>`
 
 .. step:: assert
 
-   The unit :g:`A <g1:A>` measures :g:`D <g1:D>` according to the units in it;
+   The unit :g:`A <g1:A>` measures :g:`D <g1:D>` according to the units in it
 
 .. step:: assert
 
-   Therefore :g:`B <g1:B>` also measures :g:`E <g1:E>` according to the units in :g:`D <g1:D>`;
+   :g:`B <g1:B>` also measures :g:`E <g1:E>` according to the units in :g:`D <g1:D>`
 
 .. step:: assert
 
@@ -102,10 +102,13 @@ Dependency Graph
      "G.176" -> "G.170";
      "G.257" -> "G.170";
      "G.180" -> "G.176";
+     "G.263" -> "G.180";
      "G.340" -> "G.180";
      "G.194" -> "G.181";
      "G.265" -> "G.181";
+     "G.268" -> "G.181";
      "G.268" -> "G.194";
+     "G.340" -> "G.194";
      "G.248" -> "G.247";
      "G.268" -> "G.247";
      "G.340" -> "G.247";
@@ -116,10 +119,15 @@ Dependency Graph
      "G.265" -> "G.248";
      "G.268" -> "G.248";
      "G.340" -> "G.248";
+     "G.254" -> "G.253";
+     "G.256" -> "G.253";
      "G.257" -> "G.253";
+     "G.258" -> "G.253";
      "G.263" -> "G.253";
+     "G.265" -> "G.253";
      "G.258" -> "G.254";
      "G.263" -> "G.254";
+     "G.265" -> "G.254";
      "G.257" -> "G.256";
      "G.263" -> "G.256";
      "G.258" -> "G.257";

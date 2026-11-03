@@ -1,78 +1,67 @@
 :order: 28
 :number: 28
 :canonical_id: G.28
-:original_id: I.8
-:title: G.28 congruent triangles by SSS
+:original_id: I.7
+:title: G.28 uniqueness of triangle sides on a base
 :volume: I
 :book: I
 :type: prop
 :subtype: theorem
 :categories: theorem, proof, plane-geometry
 :category: theorem, proof, plane-geometry
-:tags: book-i, point, segment, angle, triangle, trilateral, plane-angle, straight-line, extremity, plane, equality, coincidence
-:dependencies: G.4, G.11, G.22, G.27
-:excerpt: Triangles with all three corresponding sides equal have their corresponding angles equal (SSS).
+:tags: book-i, point, segment, angle, straight-line, extremity, plane-angle, equality, reductio-ad-absurdum
+:dependencies: G.1, G.3, G.4, G.12, G.14, G.22, G.25, G.26
+:excerpt: On the same segment and on the same side, there cannot be constructed two distinct triangles with both pairs of conterminous sides equal.
+:youtube_id: TfzPI4L0z_E
 
 .. _G.28:
-.. _I.8:
+.. _I.7:
 
-G.28 congruent triangles by SSS
-===============================
+G.28 uniqueness of triangle sides on a base
+===========================================
 
-.. rubric:: `I.8 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/08/>`_
+.. rubric:: `I.7 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/07/>`_
 
 .. enunciation::
 
-   :term:`Triangles <G.11>` with all three corresponding sides equal have their corresponding :term:`angles <G.22>` equal (SSS).
+   On the same :term:`segment <G.4>` and on the same side, there cannot be constructed two distinct :term:`triangles <G.12>` with both pairs of conterminous sides equal.
 
 .. signature:: theorem
 
-   | :fn:`sss_congruence <G.28>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>`, :g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />`)
-   | **given** :g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>` be two triangles having the two sides :g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />` :eq:`equal <g1:/ A B / = g1:/ D E /; g1:/ A C / = g1:/ D F />` to the two sides :g:`/ D E / <g1:/ D E />`, :g:`/ D F / <g1:/ D F />` respectively, namely :g:`/ A B / <g1:/ A B />` to :g:`/ D E / <g1:/ D E />`, :g:`/ A C / <g1:/ A C />` to :g:`/ D F / <g1:/ D F />`
-   | **prove** :g:`< B A C ) <g1:< B A C )>` is also :eq:`equal <g1:< B A C ) = g1:< E D F )>` to :g:`< E D F ) <g1:< E D F )>`
+   | :fn:`unique_triangle_sides <G.28>`\ (:g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />`, :g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`)
+   | **given** :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` on :g:`/ A B / <g1:/ A B />` at :g:`C <g1:C>`
+   | **prove** ¬∃ :g:`D <g1:D>` ≠ :g:`C <g1:C>` : :g:`/ C A / <g1:/ C A />` :eq:`= <g1:/ C A / = g1:/ D A />` :g:`/ D A / <g1:/ D A />`, :g:`/ C B / <g1:/ C B />` :eq:`= <g1:/ C B / = g1:/ D B />` :g:`/ D B / <g1:/ D B />`
 
 .. picture:: g1.svg
-   :alt: Proposition 8 figure
+   :alt: Proposition 7 figure
 
 .. step:: given
 
-   :g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>` be two triangles having the two sides :g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />` :eq:`equal <g1:/ A B / = g1:/ D E /; g1:/ A C / = g1:/ D F />` to the two sides :g:`/ D E / <g1:/ D E />`, :g:`/ D F / <g1:/ D F />` respectively, namely :g:`/ A B / <g1:/ A B />` to :g:`/ D E / <g1:/ D E />`, :g:`/ A C / <g1:/ A C />` to :g:`/ D F / <g1:/ D F />`
+   :g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` on :g:`/ A B / <g1:/ A B />` at :g:`C <g1:C>`
 
 .. step:: assert
 
-   And let them have the base :g:`/ B C / <g1:/ B C />` :eq:`equal <g1:/ B C / = g1:/ E F />` to the base :g:`/ E F / <g1:/ E F />`
+   ? :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` on :g:`/ A B / <g1:/ A B />` at :g:`D <g1:D>` : :g:`/ C A / <g1:/ C A />` :eq:`= <g1:/ C A / = g1:/ D A />` :g:`/ D A / <g1:/ D A />`, :g:`/ C B / <g1:/ C B />` :eq:`= <g1:/ C B / = g1:/ D B />` :g:`/ D B / <g1:/ D B />`
 
-.. step:: assert
+.. step:: construct
 
-   If :g:`< A B C > <g1:< A B C >>` be :coincide:`applied <g1:< A B C > ≡ g1:< D E F >>` to :g:`< D E F > <g1:< D E F >>`, and if :g:`B <g1:B>` be :coincide:`placed on <g1:B ≡ g1:E; g1:/ B C / ≡ g1:/ E F />` :g:`E <g1:E>` and :g:`/ B C / <g1:/ B C />` on :g:`/ E F / <g1:/ E F />` → :g:`C <g1:C>` will also :coincide:`coincide <g1:C ≡ g1:F>` with :g:`F <g1:F>`,
+   :fn:`segment <G.14>`\ (:g:`C <g1:C>`, :g:`D <g1:D>`) → :g:`/ C D / <g1:/ C D />`
 
-.. step:: assert
+.. step:: assert ∵ isosceles_base_angles <G.25>
 
-   Because :g:`/ B C / <g1:/ B C />` is :eq:`equal <g1:/ B C / = g1:/ E F />` to :g:`/ E F / <g1:/ E F />`.
+   :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ A D />` :g:`/ A D / <g1:/ A D />` → :g:`< A C D ) <g1:< A C D )>` :eq:`= <g1:< A C D ) = g1:< A D C )>` :g:`< A D C ) <g1:< A D C )>`
 
-.. step:: assert
+.. step:: assert ∵ whole_greater_than_part <G.26>
 
-   :g:`/ B C / <g1:/ B C />` :coincide:`coinciding <g1:/ B C / ≡ g1:/ E F />` with :g:`/ E F / <g1:/ E F />` → :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />` will also :coincide:`coincide <g1:/ B A / ≡ g1:/ E D /; g1:/ A C / ≡ g1:/ D F />` with :g:`/ E D / <g1:/ E D />`, :g:`/ D F / <g1:/ D F />`;
+   :g:`< A C D ) <g1:< A C D )>` > :g:`< D C B ) <g1:< D C B )>` → :g:`< A D C ) <g1:< A D C )>` > :g:`< D C B ) <g1:< D C B )>` → :g:`< C D B ) <g1:< C D B )>` ≫ :g:`< D C B ) <g1:< D C B )>`
 
-.. step:: assert
+.. step:: assert ∵ isosceles_base_angles <G.25>
 
-   For, if the base :g:`/ B C / <g1:/ B C />` :coincide:`coincides <g1:/ B C / ≡ g1:/ E F />` with the base :g:`/ E F / <g1:/ E F />`, and the sides :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />` do not coincide with :g:`/ E D / <g1:/ E D />`, :g:`/ D F / <g1:/ D F />` but fall beside them as :g:`/ E G / <g1:/ E G />`, :g:`/ G F / <g1:/ G F />` → then, given two :term:`segments <G.4>` constructed on a segment (from its :term:`extremities <G.3>`) and meeting in a :term:`point <G.1>`, there will have been constructed on the same segment (from its extremities), and on the same side of it, two other segments meeting in another point and :eq:`equal <g1:/ E D / = g1:/ E G /; g1:/ D F / = g1:/ G F />` to the former two respectively, namely each to that which has the same extremity with it.
-
-.. step:: assert ∵ unique_triangle_sides <G.27>
-
-   They cannot be so constructed.
-
-.. step:: assert
-
-   Therefore it is not possible that, if the base :g:`/ B C / <g1:/ B C />` be :coincide:`applied <g1:/ B C / ≡ g1:/ E F />` to the base :g:`/ E F / <g1:/ E F />`, the sides :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />` should not coincide with :g:`/ E D / <g1:/ E D />`, :g:`/ D F / <g1:/ D F />`
-
-.. step:: assert
-
-   They will therefore :coincide:`coincide <g1:/ B A / ≡ g1:/ E D /; g1:/ A C / ≡ g1:/ D F />`,
+   :g:`/ C B / <g1:/ C B />` :eq:`= <g1:/ C B / = g1:/ D B />` :g:`/ D B / <g1:/ D B />` → :g:`< C D B ) <g1:< C D B )>` :eq:`= <g1:< C D B ) = g1:< D C B )>` :g:`< D C B ) <g1:< D C B )>` ⇒⇐
 
 .. step:: conclude
 
-   So that :g:`< B A C ) <g1:< B A C )>` will also :coincide:`coincide <g1:< B A C ) ≡ g1:< E D F )>` with :g:`< E D F ) <g1:< E D F )>`, and will be :eq:`equal <g1:< B A C ) = g1:< E D F )>` to it.
+   ¬∃ :g:`D <g1:D>` ≠ :g:`C <g1:C>` : :g:`/ C A / <g1:/ C A />` :eq:`= <g1:/ C A / = g1:/ D A />` :g:`/ D A / <g1:/ D A />`, :g:`/ C B / <g1:/ C B />` :eq:`= <g1:/ C B / = g1:/ D B />` :g:`/ D B / <g1:/ D B />`
 
 Dependency Graph
 ----------------
@@ -94,10 +83,10 @@ Dependency Graph
      "G.8" [label="G.8", tooltip="G.8 (I.def.13): A boundary is the extremity of anything.", fillcolor="#224422", URL="../G.8/index.html", target="_top"];
      "G.9" [label="G.9", tooltip="G.9 (I.def.14): A figure is that which is contained by any boundary or boundaries.", fillcolor="#224422", URL="../G.9/index.html", target="_top"];
      "G.10" [label="G.10", tooltip="G.10 (I.def.15): A circle ( A B ) is a plane figure contained by one arc defined by a center A and a point B establishing its defining radius / A B /, such that all segments / A B /, / A C /, / A D...", fillcolor="#224422", URL="../G.10/index.html", target="_top"];
-     "G.11" [label="G.11", tooltip="G.11 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
-     "G.12" [label="G.12", tooltip="G.12 (I.def.20): Of trilateral figures, an equilateral triangle < A B C > has three equal sides, an isosceles triangle < D E F > has two equal sides, and a scalene triangle < G H K > has three uneq...", fillcolor="#224422", URL="../G.12/index.html", target="_top"];
-     "G.13" [label="G.13", tooltip="G.13 (I.post.1): Construct a segment / A B / between any two points A, B.", fillcolor="#444422", URL="../G.13/index.html", target="_top"];
-     "G.14" [label="G.14", tooltip="G.14 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.", fillcolor="#224422", URL="../G.14/index.html", target="_top"];
+     "G.11" [label="G.11", tooltip="G.11 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
+     "G.12" [label="G.12", tooltip="G.12 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.12/index.html", target="_top"];
+     "G.13" [label="G.13", tooltip="G.13 (I.def.20): Of trilateral figures, an equilateral triangle < A B C > has three equal sides, an isosceles triangle < D E F > has two equal sides, and a scalene triangle < G H K > has three uneq...", fillcolor="#224422", URL="../G.13/index.html", target="_top"];
+     "G.14" [label="G.14", tooltip="G.14 (I.post.1): Construct a segment / A B / between any two points A, B.", fillcolor="#444422", URL="../G.14/index.html", target="_top"];
      "G.15" [label="G.15", tooltip="G.15 (I.post.3): Construct a circle ( A B ) with center A and defining radius point B.", fillcolor="#444422", URL="../G.15/index.html", target="_top"];
      "G.16" [label="G.16", tooltip="G.16 (I.cn.1): Things equal to the same thing are equal to one another.", fillcolor="#442222", URL="../G.16/index.html", target="_top"];
      "G.17" [label="G.17", tooltip="G.17 (I.1): Construct an equilateral triangle on a given segment.", fillcolor="#222244", URL="../G.17/index.html", target="_top"];
@@ -109,28 +98,37 @@ Dependency Graph
      "G.23" [label="G.23", tooltip="G.23 (I.cn.4): Things / A B /, / D E / that coincide with one another are equal to one another.", fillcolor="#442222", URL="../G.23/index.html", target="_top"];
      "G.24" [label="G.24", tooltip="G.24 (I.4): Triangles with two sides and the included angle equal are congruent (SAS).", fillcolor="#222244", URL="../G.24/index.html", target="_top"];
      "G.25" [label="G.25", tooltip="G.25 (I.5): In an isosceles triangle, the angles at the base are equal, and if the equal sides are extended, the angles under the base are equal.", fillcolor="#222244", URL="../G.25/index.html", target="_top"];
-     "G.27" [label="G.27", tooltip="G.27 (I.7): On the same segment and on the same side, there cannot be constructed two distinct triangles with both pairs of conterminous sides equal.", fillcolor="#222244", URL="../G.27/index.html", target="_top"];
-     "G.28" [label="G.28", tooltip="G.28 (I.8): Triangles with all three corresponding sides equal have their corresponding angles equal (SSS).", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.26" [label="G.26", tooltip="G.26 (I.cn.5): The whole is greater than the part.", fillcolor="#442222", URL="../G.26/index.html", target="_top"];
+     "G.28" [label="G.28", tooltip="G.28 (I.7): On the same segment and on the same side, there cannot be constructed two distinct triangles with both pairs of conterminous sides equal.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
      "G.10" -> "G.1";
-     "G.13" -> "G.1";
+     "G.11" -> "G.1";
      "G.14" -> "G.1";
+     "G.15" -> "G.1";
+     "G.17" -> "G.1";
      "G.20" -> "G.1";
-     "G.27" -> "G.1";
+     "G.21" -> "G.1";
+     "G.24" -> "G.1";
+     "G.25" -> "G.1";
+     "G.28" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
      "G.6" -> "G.2";
+     "G.7" -> "G.2";
+     "G.18" -> "G.2";
      "G.22" -> "G.2";
      "G.4" -> "G.3";
+     "G.6" -> "G.3";
      "G.8" -> "G.3";
      "G.20" -> "G.3";
-     "G.27" -> "G.3";
+     "G.28" -> "G.3";
      "G.7" -> "G.4";
      "G.10" -> "G.4";
      "G.11" -> "G.4";
-     "G.13" -> "G.4";
+     "G.12" -> "G.4";
+     "G.14" -> "G.4";
      "G.17" -> "G.4";
      "G.18" -> "G.4";
      "G.20" -> "G.4";
@@ -138,7 +136,6 @@ Dependency Graph
      "G.22" -> "G.4";
      "G.24" -> "G.4";
      "G.25" -> "G.4";
-     "G.27" -> "G.4";
      "G.28" -> "G.4";
      "G.6" -> "G.5";
      "G.7" -> "G.5";
@@ -147,21 +144,28 @@ Dependency Graph
      "G.22" -> "G.7";
      "G.9" -> "G.8";
      "G.10" -> "G.9";
-     "G.24" -> "G.9";
-     "G.14" -> "G.10";
+     "G.12" -> "G.9";
+     "G.11" -> "G.10";
      "G.15" -> "G.10";
      "G.17" -> "G.10";
+     "G.20" -> "G.10";
      "G.21" -> "G.10";
-     "G.12" -> "G.11";
-     "G.24" -> "G.11";
-     "G.28" -> "G.11";
+     "G.15" -> "G.11";
+     "G.17" -> "G.11";
+     "G.20" -> "G.11";
+     "G.21" -> "G.11";
+     "G.13" -> "G.12";
      "G.17" -> "G.12";
+     "G.20" -> "G.12";
+     "G.24" -> "G.12";
      "G.25" -> "G.12";
+     "G.28" -> "G.12";
      "G.17" -> "G.13";
-     "G.20" -> "G.13";
      "G.25" -> "G.13";
-     "G.27" -> "G.13";
-     "G.15" -> "G.14";
+     "G.17" -> "G.14";
+     "G.20" -> "G.14";
+     "G.25" -> "G.14";
+     "G.28" -> "G.14";
      "G.17" -> "G.15";
      "G.20" -> "G.15";
      "G.21" -> "G.15";
@@ -172,6 +176,7 @@ Dependency Graph
      "G.20" -> "G.18";
      "G.25" -> "G.18";
      "G.20" -> "G.19";
+     "G.25" -> "G.19";
      "G.21" -> "G.20";
      "G.25" -> "G.21";
      "G.24" -> "G.22";
@@ -179,17 +184,18 @@ Dependency Graph
      "G.28" -> "G.22";
      "G.24" -> "G.23";
      "G.25" -> "G.24";
-     "G.27" -> "G.25";
-     "G.28" -> "G.27";
+     "G.28" -> "G.25";
+     "G.28" -> "G.26";
    }
 
 Required for
 ------------
 
-:ref:`G.30 <G.30>`, :ref:`G.31 <G.31>`, :ref:`G.33 <G.33>`, :ref:`G.34 <G.34>`, :ref:`G.36 <G.36>`, :ref:`G.38 <G.38>`, :ref:`G.39 <G.39>`, :ref:`G.41 <G.41>`, :ref:`G.42 <G.42>`, :ref:`G.43 <G.43>`, :ref:`G.44 <G.44>`, :ref:`G.45 <G.45>`, :ref:`G.46 <G.46>`, :ref:`G.47 <G.47>`, :ref:`G.48 <G.48>`, :ref:`G.49 <G.49>`, :ref:`G.50 <G.50>`, :ref:`G.51 <G.51>`, :ref:`G.53 <G.53>`, :ref:`G.54 <G.54>`, :ref:`G.56 <G.56>`, :ref:`G.57 <G.57>`, :ref:`G.58 <G.58>`, :ref:`G.59 <G.59>`, :ref:`G.60 <G.60>`, :ref:`G.62 <G.62>`, :ref:`G.64 <G.64>`, :ref:`G.65 <G.65>`, :ref:`G.66 <G.66>`, :ref:`G.67 <G.67>`, :ref:`G.68 <G.68>`, :ref:`G.69 <G.69>`, :ref:`G.70 <G.70>`, :ref:`G.71 <G.71>`, :ref:`G.72 <G.72>`, :ref:`G.73 <G.73>`, :ref:`G.74 <G.74>`, :ref:`G.75 <G.75>`, :ref:`G.79 <G.79>`, :ref:`G.80 <G.80>`, :ref:`G.82 <G.82>`, :ref:`G.83 <G.83>`, :ref:`G.84 <G.84>`, :ref:`G.85 <G.85>`, :ref:`G.87 <G.87>`, :ref:`G.88 <G.88>`, :ref:`G.89 <G.89>`, :ref:`G.90 <G.90>`, :ref:`G.91 <G.91>`, :ref:`G.92 <G.92>`, :ref:`G.93 <G.93>`, :ref:`G.94 <G.94>`, :ref:`G.95 <G.95>`, :ref:`G.97 <G.97>`, :ref:`G.98 <G.98>`, :ref:`G.99 <G.99>`, :ref:`G.100 <G.100>`, :ref:`G.101 <G.101>`, :ref:`G.105 <G.105>`, :ref:`G.106 <G.106>`, :ref:`G.107 <G.107>`, :ref:`G.108 <G.108>`, :ref:`G.110 <G.110>`, :ref:`G.112 <G.112>`, :ref:`G.114 <G.114>`, :ref:`G.116 <G.116>`, :ref:`G.118 <G.118>`, :ref:`G.119 <G.119>`, :ref:`G.120 <G.120>`, :ref:`G.121 <G.121>`, :ref:`G.123 <G.123>`, :ref:`G.124 <G.124>`, :ref:`G.125 <G.125>`, :ref:`G.128 <G.128>`, :ref:`G.129 <G.129>`, :ref:`G.130 <G.130>`, :ref:`G.133 <G.133>`, :ref:`G.134 <G.134>`, :ref:`G.135 <G.135>`, :ref:`G.136 <G.136>`, :ref:`G.137 <G.137>`, :ref:`G.139 <G.139>`, :ref:`G.140 <G.140>`, :ref:`G.141 <G.141>`, :ref:`G.142 <G.142>`, :ref:`G.143 <G.143>`, :ref:`G.144 <G.144>`, :ref:`G.145 <G.145>`, :ref:`G.149 <G.149>`, :ref:`G.151 <G.151>`, :ref:`G.154 <G.154>`, :ref:`G.157 <G.157>`, :ref:`G.158 <G.158>`, :ref:`G.159 <G.159>`, :ref:`G.160 <G.160>`, :ref:`G.161 <G.161>`, :ref:`G.162 <G.162>`, :ref:`G.163 <G.163>`, :ref:`G.164 <G.164>`, :ref:`G.165 <G.165>`, :ref:`G.167 <G.167>`, :ref:`G.168 <G.168>`, :ref:`G.210 <G.210>`, :ref:`G.211 <G.211>`, :ref:`G.212 <G.212>`, :ref:`G.213 <G.213>`, :ref:`G.214 <G.214>`, :ref:`G.215 <G.215>`, :ref:`G.216 <G.216>`, :ref:`G.218 <G.218>`, :ref:`G.219 <G.219>`, :ref:`G.220 <G.220>`, :ref:`G.221 <G.221>`, :ref:`G.222 <G.222>`, :ref:`G.223 <G.223>`, :ref:`G.225 <G.225>`, :ref:`G.226 <G.226>`, :ref:`G.227 <G.227>`, :ref:`G.228 <G.228>`, :ref:`G.229 <G.229>`, :ref:`G.231 <G.231>`, :ref:`G.232 <G.232>`, :ref:`G.234 <G.234>`, :ref:`G.235 <G.235>`, :ref:`G.236 <G.236>`, :ref:`G.237 <G.237>`, :ref:`G.238 <G.238>`, :ref:`G.239 <G.239>`, :ref:`G.240 <G.240>`, :ref:`G.241 <G.241>`, :ref:`G.243 <G.243>`, :ref:`G.244 <G.244>`, :ref:`G.245 <G.245>`, :ref:`G.246 <G.246>`, :ref:`G.345 <G.345>`, :ref:`G.377 <G.377>`, :ref:`G.378 <G.378>`, :ref:`G.381 <G.381>`, :ref:`G.382 <G.382>`, :ref:`G.383 <G.383>`, :ref:`G.384 <G.384>`, :ref:`G.385 <G.385>`, :ref:`G.386 <G.386>`, :ref:`G.389 <G.389>`, :ref:`G.390 <G.390>`, :ref:`G.393 <G.393>`, :ref:`G.394 <G.394>`, :ref:`G.395 <G.395>`, :ref:`G.396 <G.396>`, :ref:`G.397 <G.397>`, :ref:`G.398 <G.398>`, :ref:`G.399 <G.399>`, :ref:`G.400 <G.400>`, :ref:`G.401 <G.401>`, :ref:`G.402 <G.402>`, :ref:`G.403 <G.403>`, :ref:`G.404 <G.404>`, :ref:`G.405 <G.405>`, :ref:`G.406 <G.406>`, :ref:`G.407 <G.407>`, :ref:`G.408 <G.408>`, :ref:`G.409 <G.409>`, :ref:`G.410 <G.410>`, :ref:`G.411 <G.411>`, :ref:`G.412 <G.412>`, :ref:`G.413 <G.413>`, :ref:`G.414 <G.414>`, :ref:`G.415 <G.415>`, :ref:`G.416 <G.416>`, :ref:`G.417 <G.417>`, :ref:`G.418 <G.418>`, :ref:`G.419 <G.419>`, :ref:`G.420 <G.420>`, :ref:`G.421 <G.421>`, :ref:`G.423 <G.423>`, :ref:`G.425 <G.425>`, :ref:`G.427 <G.427>`, :ref:`G.429 <G.429>`, :ref:`G.431 <G.431>`, :ref:`G.433 <G.433>`, :ref:`G.434 <G.434>`, :ref:`G.435 <G.435>`, :ref:`G.436 <G.436>`, :ref:`G.437 <G.437>`, :ref:`G.438 <G.438>`, :ref:`G.439 <G.439>`, :ref:`G.440 <G.440>`, :ref:`G.441 <G.441>`, :ref:`G.442 <G.442>`, :ref:`G.443 <G.443>`, :ref:`G.444 <G.444>`, :ref:`G.445 <G.445>`, :ref:`G.446 <G.446>`, :ref:`G.447 <G.447>`, :ref:`G.448 <G.448>`, :ref:`G.449 <G.449>`, :ref:`G.450 <G.450>`, :ref:`G.451 <G.451>`, :ref:`G.452 <G.452>`, :ref:`G.453 <G.453>`, :ref:`G.455 <G.455>`, :ref:`G.457 <G.457>`, :ref:`G.458 <G.458>`, :ref:`G.459 <G.459>`, :ref:`G.460 <G.460>`, :ref:`G.461 <G.461>`, :ref:`G.462 <G.462>`, :ref:`G.463 <G.463>`, :ref:`G.464 <G.464>`, :ref:`G.465 <G.465>`, :ref:`G.466 <G.466>`, :ref:`G.467 <G.467>`, :ref:`G.468 <G.468>`, :ref:`G.470 <G.470>`, :ref:`G.472 <G.472>`, :ref:`G.474 <G.474>`, :ref:`G.476 <G.476>`, :ref:`G.477 <G.477>`, :ref:`G.478 <G.478>`, :ref:`G.479 <G.479>`, :ref:`G.480 <G.480>`, :ref:`G.481 <G.481>`, :ref:`G.482 <G.482>`, :ref:`G.483 <G.483>`, :ref:`G.484 <G.484>`, :ref:`G.485 <G.485>`, :ref:`G.486 <G.486>`, :ref:`G.487 <G.487>`, :ref:`G.488 <G.488>`, :ref:`G.489 <G.489>`, :ref:`G.490 <G.490>`, :ref:`G.491 <G.491>`, :ref:`G.492 <G.492>`, :ref:`G.493 <G.493>`, :ref:`G.494 <G.494>`, :ref:`G.495 <G.495>`, :ref:`G.496 <G.496>`, :ref:`G.497 <G.497>`, :ref:`G.498 <G.498>`, :ref:`G.499 <G.499>`, :ref:`G.500 <G.500>`, :ref:`G.501 <G.501>`, :ref:`G.506 <G.506>`, :ref:`G.507 <G.507>`, :ref:`G.508 <G.508>`, :ref:`G.510 <G.510>`, :ref:`G.511 <G.511>`, :ref:`G.512 <G.512>`, :ref:`G.513 <G.513>`, :ref:`G.514 <G.514>`, :ref:`G.517 <G.517>`, :ref:`G.518 <G.518>`, :ref:`G.520 <G.520>`, :ref:`G.522 <G.522>`, :ref:`G.525 <G.525>`, :ref:`G.526 <G.526>`, :ref:`G.527 <G.527>`, :ref:`G.528 <G.528>`, :ref:`G.530 <G.530>`, :ref:`G.531 <G.531>`, :ref:`G.532 <G.532>`, :ref:`G.536 <G.536>`, :ref:`G.538 <G.538>`, :ref:`G.539 <G.539>`, :ref:`G.540 <G.540>`, :ref:`G.541 <G.541>`, :ref:`G.542 <G.542>`, :ref:`G.543 <G.543>`, :ref:`G.544 <G.544>`, :ref:`G.545 <G.545>`, :ref:`G.546 <G.546>`, :ref:`G.547 <G.547>`, :ref:`G.549 <G.549>`, :ref:`G.550 <G.550>`, :ref:`G.551 <G.551>`, :ref:`G.552 <G.552>`, :ref:`G.554 <G.554>`, :ref:`G.555 <G.555>`, :ref:`G.556 <G.556>`, :ref:`G.557 <G.557>`, :ref:`G.558 <G.558>`, :ref:`G.559 <G.559>`, :ref:`G.560 <G.560>`, :ref:`G.563 <G.563>`, :ref:`G.565 <G.565>`, :ref:`G.570 <G.570>`, :ref:`G.571 <G.571>`, :ref:`G.572 <G.572>`, :ref:`G.573 <G.573>`, :ref:`G.574 <G.574>`, :ref:`G.577 <G.577>`, :ref:`G.578 <G.578>`, :ref:`G.579 <G.579>`, :ref:`G.580 <G.580>`, :ref:`G.582 <G.582>`, :ref:`G.583 <G.583>`, :ref:`G.584 <G.584>`, :ref:`G.585 <G.585>`, :ref:`G.586 <G.586>`, :ref:`G.587 <G.587>`, :ref:`G.588 <G.588>`, :ref:`G.589 <G.589>`, :ref:`G.590 <G.590>`, :ref:`G.592 <G.592>`, :ref:`G.594 <G.594>`, :ref:`G.595 <G.595>`, :ref:`G.597 <G.597>`, :ref:`G.600 <G.600>`, :ref:`G.601 <G.601>`
+:ref:`G.29 <G.29>`, :ref:`G.31 <G.31>`, :ref:`G.32 <G.32>`, :ref:`G.34 <G.34>`, :ref:`G.35 <G.35>`, :ref:`G.37 <G.37>`, :ref:`G.39 <G.39>`, :ref:`G.40 <G.40>`, :ref:`G.41 <G.41>`, :ref:`G.42 <G.42>`, :ref:`G.43 <G.43>`, :ref:`G.44 <G.44>`, :ref:`G.45 <G.45>`, :ref:`G.46 <G.46>`, :ref:`G.47 <G.47>`, :ref:`G.48 <G.48>`, :ref:`G.49 <G.49>`, :ref:`G.50 <G.50>`, :ref:`G.51 <G.51>`, :ref:`G.53 <G.53>`, :ref:`G.54 <G.54>`, :ref:`G.56 <G.56>`, :ref:`G.57 <G.57>`, :ref:`G.58 <G.58>`, :ref:`G.59 <G.59>`, :ref:`G.60 <G.60>`, :ref:`G.62 <G.62>`, :ref:`G.64 <G.64>`, :ref:`G.65 <G.65>`, :ref:`G.66 <G.66>`, :ref:`G.67 <G.67>`, :ref:`G.68 <G.68>`, :ref:`G.69 <G.69>`, :ref:`G.70 <G.70>`, :ref:`G.71 <G.71>`, :ref:`G.72 <G.72>`, :ref:`G.73 <G.73>`, :ref:`G.74 <G.74>`, :ref:`G.75 <G.75>`, :ref:`G.79 <G.79>`, :ref:`G.80 <G.80>`, :ref:`G.82 <G.82>`, :ref:`G.83 <G.83>`, :ref:`G.84 <G.84>`, :ref:`G.85 <G.85>`, :ref:`G.87 <G.87>`, :ref:`G.88 <G.88>`, :ref:`G.89 <G.89>`, :ref:`G.90 <G.90>`, :ref:`G.91 <G.91>`, :ref:`G.92 <G.92>`, :ref:`G.93 <G.93>`, :ref:`G.94 <G.94>`, :ref:`G.95 <G.95>`, :ref:`G.97 <G.97>`, :ref:`G.98 <G.98>`, :ref:`G.99 <G.99>`, :ref:`G.100 <G.100>`, :ref:`G.101 <G.101>`, :ref:`G.105 <G.105>`, :ref:`G.106 <G.106>`, :ref:`G.107 <G.107>`, :ref:`G.108 <G.108>`, :ref:`G.110 <G.110>`, :ref:`G.112 <G.112>`, :ref:`G.114 <G.114>`, :ref:`G.116 <G.116>`, :ref:`G.118 <G.118>`, :ref:`G.119 <G.119>`, :ref:`G.120 <G.120>`, :ref:`G.121 <G.121>`, :ref:`G.123 <G.123>`, :ref:`G.124 <G.124>`, :ref:`G.125 <G.125>`, :ref:`G.128 <G.128>`, :ref:`G.129 <G.129>`, :ref:`G.130 <G.130>`, :ref:`G.133 <G.133>`, :ref:`G.134 <G.134>`, :ref:`G.135 <G.135>`, :ref:`G.136 <G.136>`, :ref:`G.137 <G.137>`, :ref:`G.139 <G.139>`, :ref:`G.140 <G.140>`, :ref:`G.141 <G.141>`, :ref:`G.142 <G.142>`, :ref:`G.143 <G.143>`, :ref:`G.144 <G.144>`, :ref:`G.145 <G.145>`, :ref:`G.149 <G.149>`, :ref:`G.151 <G.151>`, :ref:`G.154 <G.154>`, :ref:`G.157 <G.157>`, :ref:`G.158 <G.158>`, :ref:`G.159 <G.159>`, :ref:`G.160 <G.160>`, :ref:`G.161 <G.161>`, :ref:`G.162 <G.162>`, :ref:`G.163 <G.163>`, :ref:`G.164 <G.164>`, :ref:`G.165 <G.165>`, :ref:`G.167 <G.167>`, :ref:`G.168 <G.168>`, :ref:`G.210 <G.210>`, :ref:`G.211 <G.211>`, :ref:`G.212 <G.212>`, :ref:`G.213 <G.213>`, :ref:`G.214 <G.214>`, :ref:`G.215 <G.215>`, :ref:`G.216 <G.216>`, :ref:`G.218 <G.218>`, :ref:`G.219 <G.219>`, :ref:`G.220 <G.220>`, :ref:`G.221 <G.221>`, :ref:`G.222 <G.222>`, :ref:`G.223 <G.223>`, :ref:`G.225 <G.225>`, :ref:`G.226 <G.226>`, :ref:`G.227 <G.227>`, :ref:`G.228 <G.228>`, :ref:`G.229 <G.229>`, :ref:`G.231 <G.231>`, :ref:`G.232 <G.232>`, :ref:`G.234 <G.234>`, :ref:`G.235 <G.235>`, :ref:`G.236 <G.236>`, :ref:`G.237 <G.237>`, :ref:`G.238 <G.238>`, :ref:`G.239 <G.239>`, :ref:`G.240 <G.240>`, :ref:`G.241 <G.241>`, :ref:`G.243 <G.243>`, :ref:`G.244 <G.244>`, :ref:`G.245 <G.245>`, :ref:`G.246 <G.246>`, :ref:`G.345 <G.345>`, :ref:`G.377 <G.377>`, :ref:`G.378 <G.378>`, :ref:`G.381 <G.381>`, :ref:`G.382 <G.382>`, :ref:`G.383 <G.383>`, :ref:`G.384 <G.384>`, :ref:`G.385 <G.385>`, :ref:`G.386 <G.386>`, :ref:`G.389 <G.389>`, :ref:`G.390 <G.390>`, :ref:`G.393 <G.393>`, :ref:`G.394 <G.394>`, :ref:`G.395 <G.395>`, :ref:`G.396 <G.396>`, :ref:`G.397 <G.397>`, :ref:`G.398 <G.398>`, :ref:`G.399 <G.399>`, :ref:`G.400 <G.400>`, :ref:`G.401 <G.401>`, :ref:`G.402 <G.402>`, :ref:`G.403 <G.403>`, :ref:`G.404 <G.404>`, :ref:`G.405 <G.405>`, :ref:`G.406 <G.406>`, :ref:`G.407 <G.407>`, :ref:`G.408 <G.408>`, :ref:`G.409 <G.409>`, :ref:`G.410 <G.410>`, :ref:`G.411 <G.411>`, :ref:`G.412 <G.412>`, :ref:`G.413 <G.413>`, :ref:`G.414 <G.414>`, :ref:`G.415 <G.415>`, :ref:`G.416 <G.416>`, :ref:`G.417 <G.417>`, :ref:`G.418 <G.418>`, :ref:`G.419 <G.419>`, :ref:`G.420 <G.420>`, :ref:`G.421 <G.421>`, :ref:`G.423 <G.423>`, :ref:`G.425 <G.425>`, :ref:`G.427 <G.427>`, :ref:`G.429 <G.429>`, :ref:`G.431 <G.431>`, :ref:`G.433 <G.433>`, :ref:`G.434 <G.434>`, :ref:`G.435 <G.435>`, :ref:`G.436 <G.436>`, :ref:`G.437 <G.437>`, :ref:`G.438 <G.438>`, :ref:`G.439 <G.439>`, :ref:`G.440 <G.440>`, :ref:`G.441 <G.441>`, :ref:`G.442 <G.442>`, :ref:`G.443 <G.443>`, :ref:`G.444 <G.444>`, :ref:`G.445 <G.445>`, :ref:`G.446 <G.446>`, :ref:`G.447 <G.447>`, :ref:`G.448 <G.448>`, :ref:`G.449 <G.449>`, :ref:`G.450 <G.450>`, :ref:`G.451 <G.451>`, :ref:`G.452 <G.452>`, :ref:`G.453 <G.453>`, :ref:`G.455 <G.455>`, :ref:`G.457 <G.457>`, :ref:`G.458 <G.458>`, :ref:`G.459 <G.459>`, :ref:`G.460 <G.460>`, :ref:`G.461 <G.461>`, :ref:`G.462 <G.462>`, :ref:`G.463 <G.463>`, :ref:`G.464 <G.464>`, :ref:`G.465 <G.465>`, :ref:`G.466 <G.466>`, :ref:`G.467 <G.467>`, :ref:`G.468 <G.468>`, :ref:`G.470 <G.470>`, :ref:`G.472 <G.472>`, :ref:`G.474 <G.474>`, :ref:`G.476 <G.476>`, :ref:`G.477 <G.477>`, :ref:`G.478 <G.478>`, :ref:`G.479 <G.479>`, :ref:`G.480 <G.480>`, :ref:`G.481 <G.481>`, :ref:`G.482 <G.482>`, :ref:`G.483 <G.483>`, :ref:`G.484 <G.484>`, :ref:`G.485 <G.485>`, :ref:`G.486 <G.486>`, :ref:`G.487 <G.487>`, :ref:`G.488 <G.488>`, :ref:`G.489 <G.489>`, :ref:`G.490 <G.490>`, :ref:`G.491 <G.491>`, :ref:`G.492 <G.492>`, :ref:`G.493 <G.493>`, :ref:`G.494 <G.494>`, :ref:`G.495 <G.495>`, :ref:`G.496 <G.496>`, :ref:`G.497 <G.497>`, :ref:`G.498 <G.498>`, :ref:`G.499 <G.499>`, :ref:`G.500 <G.500>`, :ref:`G.501 <G.501>`, :ref:`G.506 <G.506>`, :ref:`G.507 <G.507>`, :ref:`G.508 <G.508>`, :ref:`G.510 <G.510>`, :ref:`G.511 <G.511>`, :ref:`G.512 <G.512>`, :ref:`G.513 <G.513>`, :ref:`G.514 <G.514>`, :ref:`G.517 <G.517>`, :ref:`G.518 <G.518>`, :ref:`G.520 <G.520>`, :ref:`G.522 <G.522>`, :ref:`G.525 <G.525>`, :ref:`G.526 <G.526>`, :ref:`G.527 <G.527>`, :ref:`G.528 <G.528>`, :ref:`G.530 <G.530>`, :ref:`G.531 <G.531>`, :ref:`G.532 <G.532>`, :ref:`G.536 <G.536>`, :ref:`G.538 <G.538>`, :ref:`G.539 <G.539>`, :ref:`G.540 <G.540>`, :ref:`G.541 <G.541>`, :ref:`G.542 <G.542>`, :ref:`G.543 <G.543>`, :ref:`G.544 <G.544>`, :ref:`G.545 <G.545>`, :ref:`G.546 <G.546>`, :ref:`G.547 <G.547>`, :ref:`G.549 <G.549>`, :ref:`G.550 <G.550>`, :ref:`G.551 <G.551>`, :ref:`G.552 <G.552>`, :ref:`G.554 <G.554>`, :ref:`G.555 <G.555>`, :ref:`G.556 <G.556>`, :ref:`G.557 <G.557>`, :ref:`G.558 <G.558>`, :ref:`G.559 <G.559>`, :ref:`G.560 <G.560>`, :ref:`G.563 <G.563>`, :ref:`G.565 <G.565>`, :ref:`G.570 <G.570>`, :ref:`G.571 <G.571>`, :ref:`G.572 <G.572>`, :ref:`G.573 <G.573>`, :ref:`G.574 <G.574>`, :ref:`G.577 <G.577>`, :ref:`G.578 <G.578>`, :ref:`G.579 <G.579>`, :ref:`G.580 <G.580>`, :ref:`G.582 <G.582>`, :ref:`G.583 <G.583>`, :ref:`G.584 <G.584>`, :ref:`G.585 <G.585>`, :ref:`G.586 <G.586>`, :ref:`G.587 <G.587>`, :ref:`G.588 <G.588>`, :ref:`G.589 <G.589>`, :ref:`G.590 <G.590>`, :ref:`G.592 <G.592>`, :ref:`G.594 <G.594>`, :ref:`G.595 <G.595>`, :ref:`G.597 <G.597>`, :ref:`G.600 <G.600>`, :ref:`G.601 <G.601>`
 
 .. toctree::
    :hidden:
 
+   video
    code
    heath

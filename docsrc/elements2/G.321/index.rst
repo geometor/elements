@@ -10,7 +10,7 @@
 :categories: theorem, proof, number-theory, proportions
 :category: theorem, proof, number-theory, proportions
 :tags: book-viii, point, similar-plane-and-solid-numbers, proportional, number, solid-number, ratio, multiply, in-the-same-ratio, alternando, proportion, similar, plane
-:dependencies: G.173, G.180, G.248, G.266, G.271, G.272, G.310, G.318, G.319, G.320
+:dependencies: G.173, G.180, G.194, G.248, G.266, G.269, G.271, G.272, G.310, G.318, G.319, G.320
 :excerpt: Between two similar solid numbers there fall two mean proportional numbers; and the solid number has to the similar solid number the ratio triplicate of that which the corresponding side has to the corresponding side.
 
 .. _G.321:
@@ -40,47 +40,47 @@ G.321 similar solid numbers
 
 .. step:: assert ∵ similar_plane_solid_def <G.318>
 
-   Since similar solid numbers are those which have their sides proportional.
+   similar solid numbers are those which have their sides proportional
 
 .. step:: assert
 
-   Therefore, as :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`F <g1:F>` to :g:`G <g1:G>`, and, as :g:`D <g1:D>` is to :g:`E <g1:E>`, so is :g:`G <g1:G>` to :g:`H <g1:H>`.
+   as :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`F <g1:F>` to :g:`G <g1:G>`, and, as :g:`D <g1:D>` is to :g:`E <g1:E>`, so is :g:`G <g1:G>` to :g:`H <g1:H>`
 
 .. step:: assert
 
-   Let :g:`C <g1:C>` by :term:`multiplying <G.269>` :g:`D <g1:D>` make :g:`K <g1:K>`, and let :g:`F <g1:F>` by multiplying :g:`G <g1:G>` make :g:`L <g1:L>`.
+   Let :g:`C <g1:C>` by :term:`multiplying <G.269>` :g:`D <g1:D>` make :g:`K <g1:K>`, and let :g:`F <g1:F>` by multiplying :g:`G <g1:G>` make :g:`L <g1:L>`
 
 .. step:: assert ∵ similar_plane_solid_def <G.318>
 
-   Since :g:`C <g1:C>`, :g:`D <g1:D>` are :term:`in the same ratio <G.176>` with :g:`F <g1:F>`, :g:`G <g1:G>`, and :g:`K <g1:K>` is the product of :g:`C <g1:C>`, :g:`D <g1:D>`, and :g:`L <g1:L>` the product of :g:`F <g1:F>`, :g:`G <g1:G>`, :g:`K <g1:K>`, :g:`L <g1:L>` are similar plane numbers.
+   :g:`C <g1:C>`, :g:`D <g1:D>` are in the same ratio with :g:`F <g1:F>`, :g:`G <g1:G>`, and :g:`K <g1:K>` is the product of :g:`C <g1:C>`, :g:`D <g1:D>`, and :g:`L <g1:L>` the product of :g:`F <g1:F>`, :g:`G <g1:G>`, :g:`K <g1:K>`, :g:`L <g1:L>` are similar plane numbers
 
 .. step:: assert ∵ similar_plane_numbers <G.319>
 
-   Therefore between :g:`K <g1:K>`, :g:`L <g1:L>` there is one mean proportional number.
+   between :g:`K <g1:K>`, :g:`L <g1:L>` there is one mean proportional number
 
 .. step:: assert
 
-   Let it be :g:`M <g1:M>`.
+   Let it be :g:`M <g1:M>`
 
 .. step:: assert ∵ similar_plane_numbers <G.319>
 
-   Therefore :g:`M <g1:M>` is the product of :g:`D <g1:D>`, :g:`F <g1:F>`, as was proved in the theorem preceding this.
+   :g:`M <g1:M>` is the product of :g:`D <g1:D>`, :g:`F <g1:F>`, as was proved in the theorem preceding this
 
 .. step:: assert
 
-   Since :g:`D <g1:D>` by multiplying :g:`C <g1:C>` has made :g:`K <g1:K>`, and by multiplying :g:`F <g1:F>` has made :g:`M <g1:M>`,
+   :g:`D <g1:D>` by multiplying :g:`C <g1:C>` has made :g:`K <g1:K>`, and by multiplying :g:`F <g1:F>` has made :g:`M <g1:M>`,
 
 .. step:: assert ∵ number_multiplying_numbers <G.271>
 
-   Therefore, as :g:`C <g1:C>` is to :g:`F <g1:F>`, so is :g:`K <g1:K>` to :g:`M <g1:M>`.
+   as :g:`C <g1:C>` is to :g:`F <g1:F>`, so is :g:`K <g1:K>` to :g:`M <g1:M>`
 
 .. step:: assert
 
-   But, as :g:`K <g1:K>` is to :g:`M <g1:M>`, so is :g:`M <g1:M>` to :g:`L <g1:L>`.
+   But, as :g:`K <g1:K>` is to :g:`M <g1:M>`, so is :g:`M <g1:M>` to :g:`L <g1:L>`
 
 .. step:: assert
 
-   Therefore :g:`K <g1:K>`, :g:`M <g1:M>`, :g:`L <g1:L>` are continuously proportional in the ratio of :g:`C <g1:C>` to :g:`F <g1:F>`.
+   :g:`K <g1:K>`, :g:`M <g1:M>`, :g:`L <g1:L>` are continuously proportional in the ratio of :g:`C <g1:C>` to :g:`F <g1:F>`
 
 .. step:: assert
 
@@ -88,7 +88,7 @@ G.321 similar solid numbers
 
 .. step:: assert ∵ numbers_proportional_proportional <G.266>
 
-   :term:`Alternately <G.194>` therefore, as :g:`C <g1:C>` is to :g:`F <g1:F>`, so is :g:`D <g1:D>` to :g:`G <g1:G>`.
+   :term:`Alternately <G.194>` therefore, as :g:`C <g1:C>` is to :g:`F <g1:F>`, so is :g:`D <g1:D>` to :g:`G <g1:G>`
 
 .. step:: assert
 
@@ -96,31 +96,31 @@ G.321 similar solid numbers
 
 .. step:: assert
 
-   As :g:`D <g1:D>` is to :g:`G <g1:G>`, so is :g:`E <g1:E>` to :g:`H <g1:H>`.
+   As :g:`D <g1:D>` is to :g:`G <g1:G>`, so is :g:`E <g1:E>` to :g:`H <g1:H>`
 
 .. step:: assert
 
-   Therefore :g:`K <g1:K>`, :g:`M <g1:M>`, :g:`L <g1:L>` are continuously proportional in the ratio of :g:`C <g1:C>` to :g:`F <g1:F>`, in the ratio of :g:`D <g1:D>` to :g:`G <g1:G>`, and also in the ratio of :g:`E <g1:E>` to :g:`H <g1:H>`.
+   :g:`K <g1:K>`, :g:`M <g1:M>`, :g:`L <g1:L>` are continuously proportional in the ratio of :g:`C <g1:C>` to :g:`F <g1:F>`, in the ratio of :g:`D <g1:D>` to :g:`G <g1:G>`, and also in the ratio of :g:`E <g1:E>` to :g:`H <g1:H>`
 
 .. step:: assert
 
-   Next, let :g:`E <g1:E>`, :g:`H <g1:H>` by multiplying :g:`M <g1:M>` make :g:`N <g1:N>`, :g:`O <g1:O>` respectively.
+   Next, let :g:`E <g1:E>`, :g:`H <g1:H>` by multiplying :g:`M <g1:M>` make :g:`N <g1:N>`, :g:`O <g1:O>`
 
 .. step:: assert
 
-   Since :g:`A <g1:A>` is a solid number, and :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`E <g1:E>` are its sides,
+   :g:`A <g1:A>` is a solid number, and :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`E <g1:E>` are its sides,
 
 .. step:: assert
 
-   Therefore :g:`E <g1:E>` by multiplying the product of :g:`C <g1:C>`, :g:`D <g1:D>` has made :g:`A <g1:A>`.
+   :g:`E <g1:E>` by multiplying the product of :g:`C <g1:C>`, :g:`D <g1:D>` has made :g:`A <g1:A>`
 
 .. step:: assert
 
-   The product of :g:`C <g1:C>`, :g:`D <g1:D>` is :g:`K <g1:K>`;
+   The product of :g:`C <g1:C>`, :g:`D <g1:D>` is :g:`K <g1:K>`
 
 .. step:: assert
 
-   Therefore :g:`E <g1:E>` by multiplying :g:`K <g1:K>` has made :g:`A <g1:A>`.
+   :g:`E <g1:E>` by multiplying :g:`K <g1:K>` has made :g:`A <g1:A>`
 
 .. step:: assert
 
@@ -128,75 +128,75 @@ G.321 similar solid numbers
 
 .. step:: assert
 
-   :g:`H <g1:H>` by multiplying :g:`L <g1:L>` has made :g:`B <g1:B>`.
+   :g:`H <g1:H>` by multiplying :g:`L <g1:L>` has made :g:`B <g1:B>`
 
 .. step:: assert
 
-   Since :g:`E <g1:E>` by multiplying :g:`K <g1:K>` has made :g:`A <g1:A>`, and further also by multiplying :g:`M <g1:M>` has made :g:`N <g1:N>`,
+   :g:`E <g1:E>` by multiplying :g:`K <g1:K>` has made :g:`A <g1:A>`, and further also by multiplying :g:`M <g1:M>` has made :g:`N <g1:N>`,
 
 .. step:: assert ∵ number_multiplying_numbers <G.271>
 
-   Therefore, as :g:`K <g1:K>` is to :g:`M <g1:M>`, so is :g:`A <g1:A>` to :g:`N <g1:N>`.
+   as :g:`K <g1:K>` is to :g:`M <g1:M>`, so is :g:`A <g1:A>` to :g:`N <g1:N>`
 
 .. step:: assert
 
-   But, as :g:`K <g1:K>` is to :g:`M <g1:M>`, so is :g:`C <g1:C>` to :g:`F <g1:F>`, :g:`D <g1:D>` to :g:`G <g1:G>`, and also :g:`E <g1:E>` to :g:`H <g1:H>`;
+   But, as :g:`K <g1:K>` is to :g:`M <g1:M>`, so is :g:`C <g1:C>` to :g:`F <g1:F>`, :g:`D <g1:D>` to :g:`G <g1:G>`, and also :g:`E <g1:E>` to :g:`H <g1:H>`
 
 .. step:: assert
 
-   Therefore also, as :g:`C <g1:C>` is to :g:`F <g1:F>`, :g:`D <g1:D>` to :g:`G <g1:G>`, and :g:`E <g1:E>` to :g:`H <g1:H>`, so is :g:`A <g1:A>` to :g:`N <g1:N>`.
+   also, as :g:`C <g1:C>` is to :g:`F <g1:F>`, :g:`D <g1:D>` to :g:`G <g1:G>`, and :g:`E <g1:E>` to :g:`H <g1:H>`, so is :g:`A <g1:A>` to :g:`N <g1:N>`
 
 .. step:: assert
 
-   Since :g:`E <g1:E>`, :g:`H <g1:H>` by multiplying :g:`M <g1:M>` have made :g:`N <g1:N>`, :g:`O <g1:O>` respectively,
+   :g:`E <g1:E>`, :g:`H <g1:H>` by multiplying :g:`M <g1:M>` have made :g:`N <g1:N>`, :g:`O <g1:O>`,
 
 .. step:: assert ∵ numbers_multiplying_number <G.272>
 
-   Therefore, as :g:`E <g1:E>` is to :g:`H <g1:H>`, so is :g:`N <g1:N>` to :g:`O <g1:O>`.
+   as :g:`E <g1:E>` is to :g:`H <g1:H>`, so is :g:`N <g1:N>` to :g:`O <g1:O>`
 
 .. step:: assert
 
-   But, as :g:`E <g1:E>` is to :g:`H <g1:H>`, so is :g:`C <g1:C>` to :g:`F <g1:F>` and :g:`D <g1:D>` to :g:`G <g1:G>`;
+   But, as :g:`E <g1:E>` is to :g:`H <g1:H>`, so is :g:`C <g1:C>` to :g:`F <g1:F>` and :g:`D <g1:D>` to :g:`G <g1:G>`
 
 .. step:: assert
 
-   Therefore also, as :g:`C <g1:C>` is to :g:`F <g1:F>`, :g:`D <g1:D>` to :g:`G <g1:G>`, and :g:`E <g1:E>` to :g:`H <g1:H>`, so is :g:`A <g1:A>` to :g:`N <g1:N>` and :g:`N <g1:N>` to :g:`O <g1:O>`.
+   also, as :g:`C <g1:C>` is to :g:`F <g1:F>`, :g:`D <g1:D>` to :g:`G <g1:G>`, and :g:`E <g1:E>` to :g:`H <g1:H>`, so is :g:`A <g1:A>` to :g:`N <g1:N>` and :g:`N <g1:N>` to :g:`O <g1:O>`
 
 .. step:: assert
 
-   Since :g:`H <g1:H>` by multiplying :g:`M <g1:M>` has made :g:`O <g1:O>`, and further also by multiplying :g:`L <g1:L>` has made :g:`B <g1:B>`,
+   :g:`H <g1:H>` by multiplying :g:`M <g1:M>` has made :g:`O <g1:O>`, and further also by multiplying :g:`L <g1:L>` has made :g:`B <g1:B>`,
 
 .. step:: assert ∵ number_multiplying_numbers <G.271>
 
-   Therefore, as :g:`M <g1:M>` is to :g:`L <g1:L>`, so is :g:`O <g1:O>` to :g:`B <g1:B>`.
+   as :g:`M <g1:M>` is to :g:`L <g1:L>`, so is :g:`O <g1:O>` to :g:`B <g1:B>`
 
 .. step:: assert
 
-   But, as :g:`M <g1:M>` is to :g:`L <g1:L>`, so is :g:`C <g1:C>` to :g:`F <g1:F>`, :g:`D <g1:D>` to :g:`G <g1:G>`, and :g:`E <g1:E>` to :g:`H <g1:H>`.
+   But, as :g:`M <g1:M>` is to :g:`L <g1:L>`, so is :g:`C <g1:C>` to :g:`F <g1:F>`, :g:`D <g1:D>` to :g:`G <g1:G>`, and :g:`E <g1:E>` to :g:`H <g1:H>`
 
 .. step:: assert
 
-   Therefore also, as :g:`C <g1:C>` is to :g:`F <g1:F>`, :g:`D <g1:D>` to :g:`G <g1:G>`, and :g:`E <g1:E>` to :g:`H <g1:H>`, so not only is :g:`O <g1:O>` to :g:`B <g1:B>`, but also :g:`A <g1:A>` to :g:`N <g1:N>` and :g:`N <g1:N>` to :g:`O <g1:O>`.
+   also, as :g:`C <g1:C>` is to :g:`F <g1:F>`, :g:`D <g1:D>` to :g:`G <g1:G>`, and :g:`E <g1:E>` to :g:`H <g1:H>`, so not only is :g:`O <g1:O>` to :g:`B <g1:B>`, but also :g:`A <g1:A>` to :g:`N <g1:N>` and :g:`N <g1:N>` to :g:`O <g1:O>`
 
 .. step:: assert
 
-   Therefore :g:`A <g1:A>`, :g:`N <g1:N>`, :g:`O <g1:O>`, :g:`B <g1:B>` are continuously proportional in the aforesaid ratios of the sides.
+   :g:`A <g1:A>`, :g:`N <g1:N>`, :g:`O <g1:O>`, :g:`B <g1:B>` are continuously proportional in the aforesaid ratios of the sides
 
 .. step:: assert
 
-   Since :g:`A <g1:A>`, :g:`N <g1:N>`, :g:`O <g1:O>`, :g:`B <g1:B>` are four numbers in continued proportion,
+   :g:`A <g1:A>`, :g:`N <g1:N>`, :g:`O <g1:O>`, :g:`B <g1:B>` are four numbers in continued proportion,
 
 .. step:: assert ∵ magnitudes_proportional_said_def_v_def_10 <G.310>
 
-   Therefore :g:`A <g1:A>` has to :g:`B <g1:B>` the ratio triplicate of that which :g:`A <g1:A>` has to :g:`N <g1:N>`.
+   :g:`A <g1:A>` has to :g:`B <g1:B>` the ratio triplicate of that which :g:`A <g1:A>` has to :g:`N <g1:N>`
 
 .. step:: assert
 
-   But, as :g:`A <g1:A>` is to :g:`N <g1:N>`, so it was proved that :g:`C <g1:C>` is to :g:`F <g1:F>`, :g:`D <g1:D>` to :g:`G <g1:G>`, and also :g:`E <g1:E>` to :g:`H <g1:H>`.
+   But, as :g:`A <g1:A>` is to :g:`N <g1:N>`, so it was proved that :g:`C <g1:C>` is to :g:`F <g1:F>`, :g:`D <g1:D>` to :g:`G <g1:G>`, and also :g:`E <g1:E>` to :g:`H <g1:H>`
 
 .. step:: conclude
 
-   Therefore :g:`A <g1:A>` also has to :g:`B <g1:B>` the ratio triplicate of that which the corresponding side has to the corresponding side, that is, of the ratio which the number :g:`C <g1:C>` has to :g:`F <g1:F>`, :g:`D <g1:D>` to :g:`G <g1:G>`, and also :g:`E <g1:E>` to :g:`H <g1:H>`.
+   :g:`A <g1:A>` also has to :g:`B <g1:B>` the ratio triplicate of that which the corresponding side has to the corresponding side, that is, of the ratio which the number :g:`C <g1:C>` has to :g:`F <g1:F>`, :g:`D <g1:D>` to :g:`G <g1:G>`, and also :g:`E <g1:E>` to :g:`H <g1:H>`
 
 Dependency Graph
 ----------------
@@ -250,6 +250,7 @@ Dependency Graph
      "G.4" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
+     "G.7" -> "G.2";
      "G.4" -> "G.3";
      "G.7" -> "G.4";
      "G.7" -> "G.5";
@@ -259,6 +260,8 @@ Dependency Graph
      "G.254" -> "G.169";
      "G.256" -> "G.169";
      "G.268" -> "G.169";
+     "G.270" -> "G.169";
+     "G.271" -> "G.169";
      "G.176" -> "G.170";
      "G.257" -> "G.170";
      "G.319" -> "G.173";
@@ -267,6 +270,7 @@ Dependency Graph
      "G.271" -> "G.176";
      "G.272" -> "G.176";
      "G.230" -> "G.180";
+     "G.263" -> "G.180";
      "G.266" -> "G.180";
      "G.310" -> "G.180";
      "G.318" -> "G.180";
@@ -274,14 +278,21 @@ Dependency Graph
      "G.321" -> "G.180";
      "G.194" -> "G.181";
      "G.265" -> "G.181";
+     "G.268" -> "G.181";
      "G.261" -> "G.194";
      "G.262" -> "G.194";
      "G.266" -> "G.194";
      "G.268" -> "G.194";
+     "G.270" -> "G.194";
+     "G.271" -> "G.194";
+     "G.319" -> "G.194";
+     "G.321" -> "G.194";
      "G.319" -> "G.230";
      "G.248" -> "G.247";
      "G.268" -> "G.247";
      "G.269" -> "G.247";
+     "G.270" -> "G.247";
+     "G.271" -> "G.247";
      "G.253" -> "G.248";
      "G.256" -> "G.248";
      "G.257" -> "G.248";
@@ -299,14 +310,21 @@ Dependency Graph
      "G.319" -> "G.248";
      "G.320" -> "G.248";
      "G.321" -> "G.248";
+     "G.254" -> "G.253";
+     "G.256" -> "G.253";
      "G.257" -> "G.253";
+     "G.258" -> "G.253";
      "G.261" -> "G.253";
      "G.262" -> "G.253";
      "G.263" -> "G.253";
+     "G.265" -> "G.253";
+     "G.266" -> "G.253";
      "G.258" -> "G.254";
      "G.261" -> "G.254";
      "G.262" -> "G.254";
      "G.263" -> "G.254";
+     "G.265" -> "G.254";
+     "G.266" -> "G.254";
      "G.257" -> "G.256";
      "G.263" -> "G.256";
      "G.258" -> "G.257";
@@ -330,7 +348,9 @@ Dependency Graph
      "G.271" -> "G.269";
      "G.272" -> "G.269";
      "G.300" -> "G.269";
+     "G.319" -> "G.269";
      "G.320" -> "G.269";
+     "G.321" -> "G.269";
      "G.272" -> "G.270";
      "G.272" -> "G.271";
      "G.319" -> "G.271";

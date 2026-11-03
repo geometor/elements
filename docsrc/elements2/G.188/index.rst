@@ -10,7 +10,7 @@
 :categories: theorem, proof, proportions, magnitudes
 :category: theorem, proof, proportions, magnitudes
 :tags: book-v, point, have-a-ratio, greater-ratio, in-the-same-ratio, ratio, equality, reductio-ad-absurdum
-:dependencies: G.9, G.173, G.183, G.184, G.185, G.186
+:dependencies: G.9, G.173, G.176, G.183, G.184, G.185, G.186
 :excerpt: Of magnitudes which have a ratio to the same, that which has a greater ratio is greater; and that to which the same has a greater ratio is less.
 
 .. _G.188:
@@ -28,7 +28,7 @@ G.188 magnitudes ratio greater
 .. signature:: theorem
 
    | :fn:`magnitudes_ratio_greater <G.188>`\ ()
-   | **prove** :g:`A <g1:A>` is greater than :g:`B <g1:B>`; :g:`B <g1:B>` is less than :g:`A <g1:A>`
+   | **prove** :g:`A <g1:A>` > :g:`B <g1:B>`; :g:`B <g1:B>` < :g:`A <g1:A>`
 
 .. picture:: g1.svg
    :alt: Folio 0161 Figure 1
@@ -39,11 +39,11 @@ G.188 magnitudes ratio greater
 
 .. step:: assert
 
-   If not, :g:`A <g1:A>` is either :eq:`equal <g1:A = g1:B>` to :g:`B <g1:B>` or less.
+   If not, :g:`A <g1:A>` is either :eq:`= <g1:A = g1:B>` to :g:`B <g1:B>` or less
 
 .. step:: assert
 
-   Now :g:`A <g1:A>` is not :eq:`equal <g1:A = g1:B>` to :g:`B <g1:B>`
+   Now :g:`A <g1:A>` is not :eq:`= <g1:A = g1:B>` to :g:`B <g1:B>`
 
 .. step:: assert ∵ equal_magnitudes_ratio <G.183>
 
@@ -55,7 +55,7 @@ G.188 magnitudes ratio greater
 
 .. step:: assert
 
-   Therefore :g:`A <g1:A>` is not :eq:`equal <g1:A = g1:B>` to :g:`B <g1:B>`.
+   :g:`A <g1:A>` is not :eq:`= <g1:A = g1:B>` to :g:`B <g1:B>`
 
 .. step:: assert
 
@@ -71,15 +71,15 @@ G.188 magnitudes ratio greater
 
 .. step:: assert
 
-   Therefore :g:`A <g1:A>` is not less than :g:`B <g1:B>`.
+   :g:`A <g1:A>` is not less than :g:`B <g1:B>`
 
 .. step:: assert
 
-   It was proved not to be :eq:`equal <g1:A = g1:B>` either
+   It was proved not to be :eq:`= <g1:A = g1:B>` either
 
 .. step:: assert
 
-   Therefore :g:`A <g1:A>` is greater than :g:`B <g1:B>`.
+   :g:`A <g1:A>` > :g:`B <g1:B>`
 
 .. step:: assert
 
@@ -87,11 +87,11 @@ G.188 magnitudes ratio greater
 
 .. step:: assert
 
-   If not, it is either :eq:`equal <g1:B = g1:A>` or greater.
+   If not, it is either :eq:`= <g1:B = g1:A>` or greater
 
 .. step:: assert
 
-   Now :g:`B <g1:B>` is not :eq:`equal <g1:B = g1:A>` to :g:`A <g1:A>`
+   Now :g:`B <g1:B>` is not :eq:`= <g1:B = g1:A>` to :g:`A <g1:A>`
 
 .. step:: assert ∵ equal_magnitudes_ratio <G.183>
 
@@ -103,7 +103,7 @@ G.188 magnitudes ratio greater
 
 .. step:: assert
 
-   Therefore :g:`A <g1:A>` is not :eq:`equal <g1:A = g1:B>` to :g:`B <g1:B>`.
+   :g:`A <g1:A>` is not :eq:`= <g1:A = g1:B>` to :g:`B <g1:B>`
 
 .. step:: assert
 
@@ -119,15 +119,15 @@ G.188 magnitudes ratio greater
 
 .. step:: assert
 
-   Therefore :g:`B <g1:B>` is not greater than :g:`A <g1:A>`.
+   :g:`B <g1:B>` is not greater than :g:`A <g1:A>`
 
 .. step:: assert
 
-   It was proved that it is not :eq:`equal <g1:B = g1:A>` either
+   It was proved that it is not :eq:`= <g1:B = g1:A>` either
 
 .. step:: conclude
 
-   Therefore :g:`B <g1:B>` is less than :g:`A <g1:A>`.
+   :g:`B <g1:B>` < :g:`A <g1:A>`
 
 Dependency Graph
 ----------------
@@ -166,11 +166,14 @@ Dependency Graph
      "G.170" -> "G.169";
      "G.171" -> "G.170";
      "G.176" -> "G.170";
+     "G.183" -> "G.170";
      "G.185" -> "G.170";
+     "G.186" -> "G.170";
      "G.186" -> "G.171";
      "G.188" -> "G.173";
      "G.180" -> "G.176";
      "G.183" -> "G.176";
+     "G.188" -> "G.176";
      "G.183" -> "G.180";
      "G.182" -> "G.181";
      "G.183" -> "G.182";

@@ -10,7 +10,7 @@
 :categories: theorem, proof, solid-geometry
 :category: theorem, proof, solid-geometry
 :tags: book-xi, point, segment, polygon, plane-surface, straight-line, line, extremity, plane, reductio-ad-absurdum
-:dependencies: G.4, G.7
+:dependencies: G.2, G.3, G.4, G.7
 :excerpt: If two planes cut one another, their common section is a segment.
 
 .. _G.504:
@@ -47,15 +47,15 @@ G.504 planes cut common
 
 .. step:: assert
 
-   Which is absurd.
+   ⇒⇐
 
 .. step:: assert
 
-   Therefore :g:`/ D E B / <g1:/ D E B />`, :g:`/ D F B / <g1:/ D F B />` are not segments.
+   :g:`/ D E B / <g1:/ D E B />`, :g:`/ D F B / <g1:/ D F B />` are not segments
 
 .. step:: conclude
 
-   Similarly we can prove that neither will there be any other segment joined from :g:`D <g1:D>` to :g:`B <g1:B>` except :g:`/ D B / <g1:/ D B />` the common section of the planes :g:`< A B > <g1:< A B >>`, :g:`< B C > <g1:< B C >>`.
+   Similarly we can prove that neither will there be any other segment joined from :g:`D <g1:D>` to :g:`B <g1:B>` except :g:`/ D B / <g1:/ D B />` the common section of the planes :g:`< A B > <g1:< A B >>`, :g:`< B C > <g1:< B C >>`
 
 Dependency Graph
 ----------------
@@ -79,7 +79,10 @@ Dependency Graph
      "G.4" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
+     "G.7" -> "G.2";
+     "G.504" -> "G.2";
      "G.4" -> "G.3";
+     "G.504" -> "G.3";
      "G.7" -> "G.4";
      "G.504" -> "G.4";
      "G.7" -> "G.5";

@@ -39,23 +39,23 @@ G.360 odd number multiplying
 
 .. step:: assert
 
-   Since :g:`A <g1:A>` by multiplying :g:`B <g1:B>` has made :g:`C <g1:C>`,
+   :g:`A <g1:A>` by multiplying :g:`B <g1:B>` has made :g:`C <g1:C>`,
 
 .. step:: assert ∵ number_said_multiply_def <G.269>
 
-   Therefore :g:`C <g1:C>` is made up of as many numbers equal to :g:`B <g1:B>` as there are :term:`units <G.247>` in :g:`A <g1:A>`.
+   :g:`C <g1:C>` is made up of as many numbers equal to :g:`B <g1:B>` as there are units in :g:`A <g1:A>`
 
 .. step:: assert
 
-   Each of the numbers :g:`A <g1:A>`, :g:`B <g1:B>` is odd;
+   Each of the numbers :g:`A <g1:A>`, :g:`B <g1:B>` is odd
 
 .. step:: assert
 
-   Therefore :g:`C <g1:C>` is made up of odd numbers the multitude of which is odd.
+   :g:`C <g1:C>` is made up of odd numbers the multitude of which is odd
 
 .. step:: conclude ∵ many_odd_numbers_ix_23 <G.354>
 
-   Thus :g:`C <g1:C>` is odd.
+   :g:`C <g1:C>` is odd
 
 Dependency Graph
 ----------------
@@ -79,8 +79,11 @@ Dependency Graph
      "G.248" -> "G.247";
      "G.269" -> "G.247";
      "G.352" -> "G.247";
+     "G.353" -> "G.247";
+     "G.354" -> "G.247";
      "G.269" -> "G.248";
      "G.351" -> "G.248";
+     "G.353" -> "G.248";
      "G.360" -> "G.248";
      "G.360" -> "G.269";
      "G.351" -> "G.302";

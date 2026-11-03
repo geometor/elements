@@ -28,7 +28,7 @@ G.351 many even numbers
 .. signature:: theorem
 
    | :fn:`many_even_numbers <G.351>`\ ()
-   | **prove** the whole :g:`/ A E / <g1:/ A E />` is even
+   | **prove** :g:`/ A E / <g1:/ A E />` is even
 
 .. picture:: g1.svg
    :alt: Book IX, Proposition 21
@@ -39,19 +39,19 @@ G.351 many even numbers
 
 .. step:: assert ∵ even_number_divisible_def <G.302>
 
-   Since each of the :term:`numbers <G.248>` :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ C D / <g1:/ C D />`, :g:`/ D E / <g1:/ D E />` is even, it has a half part .
+   each of the :term:`numbers <G.248>` :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ C D / <g1:/ C D />`, :g:`/ D E / <g1:/ D E />` is even, it has a half part
 
 .. step:: assert
 
-   So that the whole :g:`/ A E / <g1:/ A E />` also has a half part.
+   So that :g:`/ A E / <g1:/ A E />` also has a half part
 
 .. step:: assert ∵ even_number_divisible_def <G.302>
 
-   An even number is that which is divisible into two equal parts .
+   An even number is that which is divisible into two equal parts
 
 .. step:: conclude
 
-   Therefore :g:`/ A E / <g1:/ A E />` is even.
+   :g:`/ A E / <g1:/ A E />` is even
 
 Dependency Graph
 ----------------

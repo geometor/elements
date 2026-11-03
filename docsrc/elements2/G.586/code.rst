@@ -12,7 +12,7 @@ G.586 equilateral equiangular pentagon — Code
 
 .. enunciation::
 
-   If in an :term:`equilateral <G.12>` and equiangular pentagon :term:`segments <G.4>` subtend two :term:`angles <G.22>` taken in order, they cut one another in :term:`extreme and mean ratio <G.242>`, and their greater segments are equal to the side of the pentagon.
+   If in an :term:`equilateral <G.13>` and equiangular pentagon :term:`segments <G.4>` subtend two :term:`angles <G.22>` taken in order, they cut one another in :term:`extreme and mean ratio <G.242>`, and their greater segments are equal to the side of the pentagon.
 
 .. picture:: g1.svg
 

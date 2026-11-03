@@ -12,7 +12,7 @@ G.45 triangle inequality — Code
 
 .. enunciation::
 
-   In any :term:`triangle <G.11>`, the sum of any two sides is greater than the remaining side.
+   In any :term:`triangle <G.12>`, the sum of any two sides is greater than the remaining side.
 
 .. picture:: g1.svg
 

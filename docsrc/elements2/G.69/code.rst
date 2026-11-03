@@ -12,7 +12,7 @@ G.69 equal triangles on equal bases are in the same parallels — Code
 
 .. enunciation::
 
-   Equal :term:`triangles <G.11>` on equal bases and on the same side lie in the same :term:`parallels <G.52>`.
+   Equal :term:`triangles <G.12>` on equal bases and on the same side lie in the same :term:`parallels <G.52>`.
 
 .. picture:: g1.svg
 

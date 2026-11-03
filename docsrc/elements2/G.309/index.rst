@@ -10,7 +10,7 @@
 :categories: theorem, proof, number-theory, proportions
 :category: theorem, proof, number-theory, proportions
 :tags: book-viii, point, square-number, proportional, number, square, ratio, multiply, proportion
-:dependencies: G.63, G.173, G.180, G.230, G.248, G.271, G.272, G.308
+:dependencies: G.63, G.173, G.180, G.230, G.248, G.269, G.271, G.272, G.308
 :excerpt: Between two square numbers there is one mean proportional number, and the square has to the square the ratio duplicate of that which the side has to the side.
 
 .. _G.309:
@@ -40,15 +40,15 @@ G.309 square numbers there
 
 .. step:: assert
 
-   Let :g:`C <g1:C>` by :term:`multiplying <G.269>` :g:`D <g1:D>` make :g:`E <g1:E>`.
+   Let :g:`C <g1:C>` by :term:`multiplying <G.269>` :g:`D <g1:D>` make :g:`E <g1:E>`
 
 .. step:: assert
 
-   Since :g:`A <g1:A>` is a square and :g:`C <g1:C>` is its side,
+   :g:`A <g1:A>` is a square and :g:`C <g1:C>` is its side,
 
 .. step:: assert
 
-   Therefore :g:`C <g1:C>` by multiplying itself has made :g:`A <g1:A>`.
+   :g:`C <g1:C>` by multiplying itself has made :g:`A <g1:A>`
 
 .. step:: assert
 
@@ -56,15 +56,15 @@ G.309 square numbers there
 
 .. step:: assert
 
-   :g:`D <g1:D>` by multiplying itself has made :g:`B <g1:B>`.
+   :g:`D <g1:D>` by multiplying itself has made :g:`B <g1:B>`
 
 .. step:: assert
 
-   Since then :g:`C <g1:C>` by multiplying the numbers :g:`C <g1:C>`, :g:`D <g1:D>` has made :g:`A <g1:A>`, :g:`E <g1:E>` respectively,
+   then :g:`C <g1:C>` by multiplying the numbers :g:`C <g1:C>`, :g:`D <g1:D>` has made :g:`A <g1:A>`, :g:`E <g1:E>`,
 
 .. step:: assert ∵ number_multiplying_numbers <G.271>
 
-   Therefore, as :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`A <g1:A>` to :g:`E <g1:E>`.
+   as :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`A <g1:A>` to :g:`E <g1:E>`
 
 .. step:: assert
 
@@ -72,35 +72,35 @@ G.309 square numbers there
 
 .. step:: assert ∵ numbers_multiplying_number <G.272>
 
-   As :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`E <g1:E>` to :g:`B <g1:B>`.
+   As :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`E <g1:E>` to :g:`B <g1:B>`
 
 .. step:: assert
 
-   Therefore also, as :g:`A <g1:A>` is to :g:`E <g1:E>`, so is :g:`E <g1:E>` to :g:`B <g1:B>`.
+   also, as :g:`A <g1:A>` is to :g:`E <g1:E>`, so is :g:`E <g1:E>` to :g:`B <g1:B>`
 
 .. step:: assert
 
-   Therefore between :g:`A <g1:A>`, :g:`B <g1:B>` there is one mean proportional number.
+   between :g:`A <g1:A>`, :g:`B <g1:B>` there is one mean proportional number
 
 .. step:: assert
 
-   I say next that :g:`A <g1:A>` also has to :g:`B <g1:B>` the ratio duplicate of that which :g:`C <g1:C>` has to :g:`D <g1:D>`.
+   I say next that :g:`A <g1:A>` also has to :g:`B <g1:B>` the ratio duplicate of that which :g:`C <g1:C>` has to :g:`D <g1:D>`
 
 .. step:: assert
 
-   Since :g:`A <g1:A>`, :g:`E <g1:E>`, :g:`B <g1:B>` are three numbers in proportion,
+   :g:`A <g1:A>`, :g:`E <g1:E>`, :g:`B <g1:B>` are three numbers in proportion,
 
 .. step:: assert ∵ magnitudes_proportional_said_def <G.230>
 
-   Therefore :g:`A <g1:A>` has to :g:`B <g1:B>` the ratio duplicate of that which :g:`A <g1:A>` has to :g:`E <g1:E>`.
+   :g:`A <g1:A>` has to :g:`B <g1:B>` the ratio duplicate of that which :g:`A <g1:A>` has to :g:`E <g1:E>`
 
 .. step:: assert
 
-   But, as :g:`A <g1:A>` is to :g:`E <g1:E>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`.
+   But, as :g:`A <g1:A>` is to :g:`E <g1:E>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`
 
 .. step:: conclude
 
-   Therefore :g:`A <g1:A>` has to :g:`B <g1:B>` the ratio duplicate of that which the side :g:`C <g1:C>` has to :g:`D <g1:D>`.
+   :g:`A <g1:A>` has to :g:`B <g1:B>` the ratio duplicate of that which :g:`C <g1:C>` has to :g:`D <g1:D>`
 
 Dependency Graph
 ----------------
@@ -118,8 +118,10 @@ Dependency Graph
      "G.4" [label="G.4", tooltip="G.4 (I.def.4): A segment / A B / is a portion of a line [ A B ] between two points A, B on the line.", fillcolor="#224422", URL="../G.4/index.html", target="_top"];
      "G.5" [label="G.5", tooltip="G.5 (I.def.5): A surface is that which has length and breadth only.", fillcolor="#224422", URL="../G.5/index.html", target="_top"];
      "G.7" [label="G.7", tooltip="G.7 (I.def.7): A plane surface lies evenly with the lines on itself.", fillcolor="#224422", URL="../G.7/index.html", target="_top"];
-     "G.11" [label="G.11", tooltip="G.11 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
-     "G.12" [label="G.12", tooltip="G.12 (I.def.20): Of trilateral figures, an equilateral triangle < A B C > has three equal sides, an isosceles triangle < D E F > has two equal sides, and a scalene triangle < G H K > has three uneq...", fillcolor="#224422", URL="../G.12/index.html", target="_top"];
+     "G.8" [label="G.8", tooltip="G.8 (I.def.13): A boundary is the extremity of anything.", fillcolor="#224422", URL="../G.8/index.html", target="_top"];
+     "G.9" [label="G.9", tooltip="G.9 (I.def.14): A figure is that which is contained by any boundary or boundaries.", fillcolor="#224422", URL="../G.9/index.html", target="_top"];
+     "G.12" [label="G.12", tooltip="G.12 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.12/index.html", target="_top"];
+     "G.13" [label="G.13", tooltip="G.13 (I.def.20): Of trilateral figures, an equilateral triangle < A B C > has three equal sides, an isosceles triangle < D E F > has two equal sides, and a scalene triangle < G H K > has three uneq...", fillcolor="#224422", URL="../G.13/index.html", target="_top"];
      "G.22" [label="G.22", tooltip="G.22 (I.def.8): A plane angle is the inclination to one another of two lines or arcs in a plane that meet and do not lie on the same line.", fillcolor="#224422", URL="../G.22/index.html", target="_top"];
      "G.63" [label="G.63", tooltip="G.63 (I.def.22): Of quadrilateral figures, a square is equilateral and right-angled; an oblong is right-angled but not equilateral; a rhombus is equilateral but not right-angled; a rhomboid has opp...", fillcolor="#224422", URL="../G.63/index.html", target="_top"];
      "G.169" [label="G.169", tooltip="G.169 (V.def.1): A magnitude is apart of a magnitude, the less of the greater, when it measures the greater.", fillcolor="#224422", URL="../G.169/index.html", target="_top"];
@@ -154,16 +156,20 @@ Dependency Graph
      "G.4" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
+     "G.7" -> "G.2";
      "G.22" -> "G.2";
      "G.4" -> "G.3";
+     "G.8" -> "G.3";
      "G.7" -> "G.4";
-     "G.11" -> "G.4";
+     "G.12" -> "G.4";
      "G.22" -> "G.4";
      "G.7" -> "G.5";
      "G.22" -> "G.7";
-     "G.12" -> "G.11";
-     "G.63" -> "G.11";
+     "G.9" -> "G.8";
+     "G.12" -> "G.9";
+     "G.13" -> "G.12";
      "G.63" -> "G.12";
+     "G.63" -> "G.13";
      "G.63" -> "G.22";
      "G.309" -> "G.63";
      "G.170" -> "G.169";
@@ -171,6 +177,8 @@ Dependency Graph
      "G.254" -> "G.169";
      "G.256" -> "G.169";
      "G.268" -> "G.169";
+     "G.270" -> "G.169";
+     "G.271" -> "G.169";
      "G.176" -> "G.170";
      "G.257" -> "G.170";
      "G.309" -> "G.173";
@@ -178,18 +186,24 @@ Dependency Graph
      "G.271" -> "G.176";
      "G.272" -> "G.176";
      "G.230" -> "G.180";
+     "G.263" -> "G.180";
      "G.266" -> "G.180";
      "G.309" -> "G.180";
      "G.194" -> "G.181";
      "G.265" -> "G.181";
+     "G.268" -> "G.181";
      "G.261" -> "G.194";
      "G.262" -> "G.194";
      "G.266" -> "G.194";
      "G.268" -> "G.194";
+     "G.270" -> "G.194";
+     "G.271" -> "G.194";
      "G.309" -> "G.230";
      "G.248" -> "G.247";
      "G.268" -> "G.247";
      "G.269" -> "G.247";
+     "G.270" -> "G.247";
+     "G.271" -> "G.247";
      "G.253" -> "G.248";
      "G.256" -> "G.248";
      "G.257" -> "G.248";
@@ -205,14 +219,21 @@ Dependency Graph
      "G.272" -> "G.248";
      "G.308" -> "G.248";
      "G.309" -> "G.248";
+     "G.254" -> "G.253";
+     "G.256" -> "G.253";
      "G.257" -> "G.253";
+     "G.258" -> "G.253";
      "G.261" -> "G.253";
      "G.262" -> "G.253";
      "G.263" -> "G.253";
+     "G.265" -> "G.253";
+     "G.266" -> "G.253";
      "G.258" -> "G.254";
      "G.261" -> "G.254";
      "G.262" -> "G.254";
      "G.263" -> "G.254";
+     "G.265" -> "G.254";
+     "G.266" -> "G.254";
      "G.257" -> "G.256";
      "G.263" -> "G.256";
      "G.258" -> "G.257";
@@ -234,6 +255,7 @@ Dependency Graph
      "G.271" -> "G.269";
      "G.272" -> "G.269";
      "G.308" -> "G.269";
+     "G.309" -> "G.269";
      "G.272" -> "G.270";
      "G.272" -> "G.271";
      "G.309" -> "G.271";

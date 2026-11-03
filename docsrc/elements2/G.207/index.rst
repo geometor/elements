@@ -10,7 +10,7 @@
 :categories: theorem, proof, proportions, magnitudes
 :category: theorem, proof, proportions, magnitudes
 :tags: book-v, point, segment, in-the-same-ratio, invertendo, ex-aequali, proportional, separando, componendo, ratio
-:dependencies: G.176, G.199, G.205
+:dependencies: G.174, G.176, G.180, G.182, G.196, G.197, G.199, G.205
 :excerpt: If a first magnitude have to a second the same ratio as a third has to a fourth, and also a fifth have to the second the same ratio as a sixth to the fourth, the first and fifth added together will have to the second the same ratio as the third and sixth have to the fourth.
 
 .. _G.207:
@@ -40,7 +40,7 @@ G.207 magnitude ratio fifth
 
 .. step:: assert
 
-   And let also a fifth :g:`/ B G / <g1:/ B G />` have to the second :g:`C <g1:C>` the same ratio as a sixth :g:`/ E H / <g1:/ E H />` has to the fourth :g:`F <g1:F>`
+   let also a fifth :g:`/ B G / <g1:/ B G />` have to the second :g:`C <g1:C>` the same ratio as a sixth :g:`/ E H / <g1:/ E H />` has to the fourth :g:`F <g1:F>`
 
 .. step:: assert
 
@@ -48,7 +48,7 @@ G.207 magnitude ratio fifth
 
 .. step:: assert
 
-   :term:`Inversely <G.182>`, as :g:`C <g1:C>` is to :g:`/ B G / <g1:/ B G />`, so is :g:`F <g1:F>` to :g:`/ E H / <g1:/ E H />`.
+   :term:`Inversely <G.182>`, as :g:`C <g1:C>` is to :g:`/ B G / <g1:/ B G />`, so is :g:`F <g1:F>` to :g:`/ E H / <g1:/ E H />`
 
 .. step:: assert
 
@@ -56,15 +56,15 @@ G.207 magnitude ratio fifth
 
 .. step:: assert ∵ there_number_magnitudes_v_22 <G.205>
 
-   Therefore, *:term:`ex aequali <G.174>`*, as :g:`/ A B / <g1:/ A B />` is to :g:`/ B G / <g1:/ B G />`, so is :g:`/ D E / <g1:/ D E />` to :g:`/ E H / <g1:/ E H />`.
+   *:term:`ex aequali <G.174>`*, as :g:`/ A B / <g1:/ A B />` is to :g:`/ B G / <g1:/ B G />`, so is :g:`/ D E / <g1:/ D E />` to :g:`/ E H / <g1:/ E H />`
 
 .. step:: assert ∵ magnitudes_proportional_separando <G.199>
 
-   And, since the magnitudes are :term:`proportional <G.180>` *:term:`separando <G.197>`*, they will also be proportional *:term:`componendo <G.196>`*
+   since the magnitudes are :term:`proportional <G.180>` *:term:`separando <G.197>`*, they will also be proportional *:term:`componendo <G.196>`*
 
 .. step:: assert
 
-   Therefore, as :g:`/ A G / <g1:/ A G />` is to :g:`/ B G / <g1:/ B G />`, so is :g:`/ D H / <g1:/ D H />` to :g:`/ E H / <g1:/ E H />`.
+   as :g:`/ A G / <g1:/ A G />` is to :g:`/ B G / <g1:/ B G />`, so is :g:`/ D H / <g1:/ D H />` to :g:`/ E H / <g1:/ E H />`
 
 .. step:: assert
 
@@ -72,7 +72,7 @@ G.207 magnitude ratio fifth
 
 .. step:: conclude ∵ there_number_magnitudes_v_22 <G.205>
 
-   Therefore, *ex aequali*, as :g:`/ A G / <g1:/ A G />` is to :g:`C <g1:C>`, so is :g:`/ D H / <g1:/ D H />` to :g:`F <g1:F>`.
+   *ex aequali*, as :g:`/ A G / <g1:/ A G />` is to :g:`C <g1:C>`, so is :g:`/ D H / <g1:/ D H />` to :g:`F <g1:F>`
 
 Dependency Graph
 ----------------
@@ -130,7 +130,13 @@ Dependency Graph
      "G.175" -> "G.170";
      "G.176" -> "G.170";
      "G.177" -> "G.170";
+     "G.183" -> "G.170";
      "G.185" -> "G.170";
+     "G.186" -> "G.170";
+     "G.189" -> "G.170";
+     "G.191" -> "G.170";
+     "G.198" -> "G.170";
+     "G.205" -> "G.170";
      "G.186" -> "G.171";
      "G.198" -> "G.171";
      "G.175" -> "G.172";
@@ -138,13 +144,16 @@ Dependency Graph
      "G.174" -> "G.173";
      "G.188" -> "G.173";
      "G.189" -> "G.173";
+     "G.199" -> "G.173";
      "G.175" -> "G.174";
      "G.202" -> "G.174";
      "G.205" -> "G.174";
+     "G.207" -> "G.174";
      "G.177" -> "G.175";
      "G.177" -> "G.176";
      "G.180" -> "G.176";
      "G.183" -> "G.176";
+     "G.188" -> "G.176";
      "G.189" -> "G.176";
      "G.191" -> "G.176";
      "G.192" -> "G.176";
@@ -155,16 +164,22 @@ Dependency Graph
      "G.183" -> "G.180";
      "G.198" -> "G.180";
      "G.199" -> "G.180";
+     "G.207" -> "G.180";
      "G.182" -> "G.181";
      "G.196" -> "G.181";
      "G.197" -> "G.181";
      "G.183" -> "G.182";
+     "G.202" -> "G.182";
+     "G.207" -> "G.182";
      "G.188" -> "G.183";
      "G.186" -> "G.184";
      "G.188" -> "G.184";
+     "G.202" -> "G.184";
      "G.186" -> "G.185";
      "G.188" -> "G.185";
      "G.191" -> "G.185";
+     "G.192" -> "G.185";
+     "G.202" -> "G.185";
      "G.188" -> "G.186";
      "G.192" -> "G.186";
      "G.202" -> "G.186";
@@ -176,8 +191,10 @@ Dependency Graph
      "G.199" -> "G.192";
      "G.198" -> "G.196";
      "G.199" -> "G.196";
+     "G.207" -> "G.196";
      "G.198" -> "G.197";
      "G.199" -> "G.197";
+     "G.207" -> "G.197";
      "G.199" -> "G.198";
      "G.207" -> "G.199";
      "G.205" -> "G.202";

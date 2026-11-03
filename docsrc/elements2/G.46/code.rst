@@ -12,7 +12,7 @@ G.46 interior segments of a triangle — Code
 
 .. enunciation::
 
-   :term:`Segments <G.4>` constructed from the endpoints of one side of a :term:`triangle <G.11>` to an interior :term:`point <G.1>` have a lesser sum but contain a greater :term:`angle <G.22>` than the other two sides.
+   :term:`Segments <G.4>` constructed from the endpoints of one side of a :term:`triangle <G.12>` to an interior :term:`point <G.1>` have a lesser sum but contain a greater :term:`angle <G.22>` than the other two sides.
 
 .. picture:: g1.svg
 

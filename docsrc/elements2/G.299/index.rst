@@ -10,7 +10,7 @@
 :categories: problem, finding, number-theory, proportions
 :category: problem, finding, number-theory, proportions
 :tags: book-viii, point, ratio, number, proportional, part-aliquot, in-the-same-ratio, corresponding-magnitudes, proportion, continued-proportion, reductio-ad-absurdum
-:dependencies: G.173, G.180, G.248, G.263, G.266, G.274, G.290, G.291
+:dependencies: G.169, G.173, G.176, G.180, G.181, G.248, G.263, G.266, G.274, G.290, G.291
 :excerpt: Given as many ratios as we please in least numbers, to find numbers in continued proportion which are the least in the given ratios.
 
 .. _G.299:
@@ -47,79 +47,79 @@ G.299 many ratios please
 
 .. step:: assert
 
-   And, as many times as :g:`B <g1:B>` :term:`measures <G.169>` :g:`G <g1:G>`, so many times also let :g:`A <g1:A>` measure :g:`H <g1:H>`, and, as many times as :g:`C <g1:C>` measures :g:`G <g1:G>`, so many times also let :g:`D <g1:D>` measure :g:`K <g1:K>`.
+   as many times as :g:`B <g1:B>` :term:`measures <G.169>` :g:`G <g1:G>`, so many times also let :g:`A <g1:A>` measure :g:`H <g1:H>`, and, as many times as :g:`C <g1:C>` measures :g:`G <g1:G>`, so many times also let :g:`D <g1:D>` measure :g:`K <g1:K>`
 
 .. step:: assert
 
-   Now :g:`E <g1:E>` either measures or does not measure :g:`K <g1:K>`.
+   Now :g:`E <g1:E>` either measures or does not measure :g:`K <g1:K>`
 
 .. step:: assert
 
-   First, let it measure it.
+   First, let it measure it
 
 .. step:: assert
 
-   And, as many times as :g:`E <g1:E>` measures :g:`K <g1:K>`, so many times let :g:`F <g1:F>` measure :g:`L <g1:L>` also.
+   as many times as :g:`E <g1:E>` measures :g:`K <g1:K>`, so many times let :g:`F <g1:F>` measure :g:`L <g1:L>` also
 
 .. step:: assert
 
-   Since :g:`A <g1:A>` measures :g:`H <g1:H>` the same number of times that :g:`B <g1:B>` measures :g:`G <g1:G>`,
+   :g:`A <g1:A>` measures :g:`H <g1:H>` the same number of times that :g:`B <g1:B>` measures :g:`G <g1:G>`,
 
 .. step:: assert ∵ numbers_proportional_multiple_def, numbers_proportional_proportional <G.263, G.266>
 
-   Therefore, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`H <g1:H>` to :g:`G <g1:G>`.
+   as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`H <g1:H>` to :g:`G <g1:G>`
 
 .. step:: assert
 
-   For the same reason also, as :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`G <g1:G>` to :g:`K <g1:K>`, and further, as :g:`E <g1:E>` is to :g:`F <g1:F>`, so is :g:`K <g1:K>` to :g:`L <g1:L>`;
+   For the same reason also, as :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`G <g1:G>` to :g:`K <g1:K>`, and further, as :g:`E <g1:E>` is to :g:`F <g1:F>`, so is :g:`K <g1:K>` to :g:`L <g1:L>`
 
 .. step:: assert
 
-   Therefore :g:`H <g1:H>`, :g:`G <g1:G>`, :g:`K <g1:K>`, :g:`L <g1:L>` are continuously proportional in the ratio of :g:`A <g1:A>` to :g:`B <g1:B>`, in the ratio of :g:`C <g1:C>` to :g:`D <g1:D>`, and in the ratio of :g:`E <g1:E>` to :g:`F <g1:F>`.
+   :g:`H <g1:H>`, :g:`G <g1:G>`, :g:`K <g1:K>`, :g:`L <g1:L>` are continuously proportional in the ratio of :g:`A <g1:A>` to :g:`B <g1:B>`, in the ratio of :g:`C <g1:C>` to :g:`D <g1:D>`, and in the ratio of :g:`E <g1:E>` to :g:`F <g1:F>`
 
 .. step:: assert
 
-   I say next that they are also the least that have this property.
+   I say next that they are also the least that have this property
 
 .. step:: assert
 
-   If :g:`H <g1:H>`, :g:`G <g1:G>`, :g:`K <g1:K>`, :g:`L <g1:L>` are not the least numbers continuously proportional in the ratios of :g:`A <g1:A>` to :g:`B <g1:B>`, of :g:`C <g1:C>` to :g:`D <g1:D>`, and of :g:`E <g1:E>` to :g:`F <g1:F>`, let them be :g:`N <g1:N>`, :g:`O <g1:O>`, :g:`M <g1:M>`, :g:`P <g1:P>`.
+   If :g:`H <g1:H>`, :g:`G <g1:G>`, :g:`K <g1:K>`, :g:`L <g1:L>` are not the least numbers continuously proportional in the ratios of :g:`A <g1:A>` to :g:`B <g1:B>`, of :g:`C <g1:C>` to :g:`D <g1:D>`, and of :g:`E <g1:E>` to :g:`F <g1:F>`, let them be :g:`N <g1:N>`, :g:`O <g1:O>`, :g:`M <g1:M>`, :g:`P <g1:P>`
 
 .. step:: assert
 
-   Then since, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`N <g1:N>` to :g:`O <g1:O>`, while :g:`A <g1:A>`, :g:`B <g1:B>` are least, and the least numbers measure those which have the :term:`same ratio <G.176>` the same number of times, the greater the greater and the less the less, that is, the :term:`antecedent <G.181>` the antecedent and the consequent the consequent;
+   Then since, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`N <g1:N>` to :g:`O <g1:O>`, while :g:`A <g1:A>`, :g:`B <g1:B>` are least, and the least numbers measure those which have the :term:`same ratio <G.176>` the same number of times, the greater the greater and the less the less, that is, the :term:`antecedent <G.181>` the antecedent and the consequent the consequent
 
 .. step:: assert ∵ least_numbers_ratio <G.274>
 
-   Therefore :g:`B <g1:B>` measures :g:`O <g1:O>`.
+   :g:`B <g1:B>` measures :g:`O <g1:O>`
 
 .. step:: assert
 
-   For the same reason :g:`C <g1:C>` also measures :g:`O <g1:O>`;
+   For the same reason :g:`C <g1:C>` also measures :g:`O <g1:O>`
 
 .. step:: assert
 
-   Therefore :g:`B <g1:B>`, :g:`C <g1:C>` measure :g:`O <g1:O>`;
+   :g:`B <g1:B>`, :g:`C <g1:C>` measure :g:`O <g1:O>`
 
 .. step:: assert ∵ numbers_measure_number <G.291>
 
-   Therefore the least number measured by :g:`B <g1:B>`, :g:`C <g1:C>` will also measure :g:`O <g1:O>`.
+   the least number measured by :g:`B <g1:B>`, :g:`C <g1:C>` will also measure :g:`O <g1:O>`
 
 .. step:: assert
 
-   :g:`G <g1:G>` is the least number measured by :g:`B <g1:B>`, :g:`C <g1:C>`;
+   :g:`G <g1:G>` is the least number measured by :g:`B <g1:B>`, :g:`C <g1:C>`
 
 .. step:: assert
 
-   Therefore :g:`G <g1:G>` measures :g:`O <g1:O>`, the greater the less : which is impossible.
+   :g:`G <g1:G>` measures :g:`O <g1:O>`, the greater the less ⇒⇐
 
 .. step:: assert
 
-   Therefore there will be no numbers less than :g:`H <g1:H>`, :g:`G <g1:G>`, :g:`K <g1:K>`, :g:`L <g1:L>` which are continuously in the ratio of :g:`A <g1:A>` to :g:`B <g1:B>`, of :g:`C <g1:C>` to :g:`D <g1:D>`, and of :g:`E <g1:E>` to :g:`F <g1:F>`.
+   there will be no numbers less than :g:`H <g1:H>`, :g:`G <g1:G>`, :g:`K <g1:K>`, :g:`L <g1:L>` which are continuously in the ratio of :g:`A <g1:A>` to :g:`B <g1:B>`, of :g:`C <g1:C>` to :g:`D <g1:D>`, and of :g:`E <g1:E>` to :g:`F <g1:F>`
 
 .. step:: assert
 
-   Next, let :g:`E <g2:E>` not measure :g:`K <g2:K>`.
+   Next, let :g:`E <g2:E>` not measure :g:`K <g2:K>`
 
 .. step:: construct
 
@@ -127,115 +127,115 @@ G.299 many ratios please
 
 .. step:: assert
 
-   And, as many times as :g:`K <g2:K>` measures :g:`M <g2:M>`, so many times let :g:`H <g2:H>`, :g:`G <g2:G>` measure :g:`N <g2:N>`, :g:`O <g2:O>` respectively, and, as many times as :g:`E <g2:E>` measures :g:`M <g2:M>`, so many times let :g:`F <g2:F>` measure :g:`P <g2:P>` also.
+   as many times as :g:`K <g2:K>` measures :g:`M <g2:M>`, so many times let :g:`H <g2:H>`, :g:`G <g2:G>` measure :g:`N <g2:N>`, :g:`O <g2:O>`, and, as many times as :g:`E <g2:E>` measures :g:`M <g2:M>`, so many times let :g:`F <g2:F>` measure :g:`P <g2:P>` also
 
 .. step:: assert
 
-   Since :g:`H <g2:H>` measures :g:`N <g2:N>` the same number of times that :g:`G <g2:G>` measures :g:`O <g2:O>`,
+   :g:`H <g2:H>` measures :g:`N <g2:N>` the same number of times that :g:`G <g2:G>` measures :g:`O <g2:O>`,
 
 .. step:: assert ∵ numbers_proportional_proportional, numbers_proportional_multiple_def <G.266, G.263>
 
-   Therefore, as :g:`H <g2:H>` is to :g:`G <g2:G>`, so is :g:`N <g2:N>` to :g:`O <g2:O>`.
+   as :g:`H <g2:H>` is to :g:`G <g2:G>`, so is :g:`N <g2:N>` to :g:`O <g2:O>`
 
 .. step:: assert
 
-   But, as :g:`H <g2:H>` is to :g:`G <g2:G>`, so is :g:`A <g2:A>` to :g:`B <g2:B>`;
+   But, as :g:`H <g2:H>` is to :g:`G <g2:G>`, so is :g:`A <g2:A>` to :g:`B <g2:B>`
 
 .. step:: assert
 
-   Therefore also, as :g:`A <g2:A>` is to :g:`B <g2:B>`, so is :g:`N <g2:N>` to :g:`O <g2:O>`.
+   also, as :g:`A <g2:A>` is to :g:`B <g2:B>`, so is :g:`N <g2:N>` to :g:`O <g2:O>`
 
 .. step:: assert
 
-   For the same reason also, as :g:`C <g2:C>` is to :g:`D <g2:D>`, so is :g:`O <g2:O>` to :g:`M <g2:M>`.
+   For the same reason also, as :g:`C <g2:C>` is to :g:`D <g2:D>`, so is :g:`O <g2:O>` to :g:`M <g2:M>`
 
 .. step:: assert
 
-   Since :g:`E <g2:E>` measures :g:`M <g2:M>` the same number of times that :g:`F <g2:F>` measures :g:`P <g2:P>`,
+   :g:`E <g2:E>` measures :g:`M <g2:M>` the same number of times that :g:`F <g2:F>` measures :g:`P <g2:P>`,
 
 .. step:: assert ∵ numbers_proportional_proportional, numbers_proportional_multiple_def <G.266, G.263>
 
-   Therefore, as :g:`E <g2:E>` is to :g:`F <g2:F>`, so is :g:`M <g2:M>` to :g:`P <g2:P>`;
+   as :g:`E <g2:E>` is to :g:`F <g2:F>`, so is :g:`M <g2:M>` to :g:`P <g2:P>`
 
 .. step:: assert
 
-   Therefore :g:`N <g2:N>`, :g:`O <g2:O>`, :g:`M <g2:M>`, :g:`P <g2:P>` are continuously proportional in the ratios of :g:`A <g2:A>` to :g:`B <g2:B>`, of :g:`C <g2:C>` to :g:`D <g2:D>`, and of :g:`E <g2:E>` to :g:`F <g2:F>`.
+   :g:`N <g2:N>`, :g:`O <g2:O>`, :g:`M <g2:M>`, :g:`P <g2:P>` are continuously proportional in the ratios of :g:`A <g2:A>` to :g:`B <g2:B>`, of :g:`C <g2:C>` to :g:`D <g2:D>`, and of :g:`E <g2:E>` to :g:`F <g2:F>`
 
 .. step:: assert
 
-   I say next that they are also the least that are in the ratios :g:`A <g2:A>` : :g:`B <g2:B>`, :g:`C <g2:C>` : :g:`D <g2:D>`, :g:`E <g2:E>` : :g:`F <g2:F>`.
+   I say next that they are also the least that are in the ratios :g:`A <g2:A>` : :g:`B <g2:B>`, :g:`C <g2:C>` : :g:`D <g2:D>`, :g:`E <g2:E>` : :g:`F <g2:F>`
 
 .. step:: assert
 
-   If not, there will be some numbers less than :g:`N <g2:N>`, :g:`O <g2:O>`, :g:`M <g2:M>`, :g:`P <g2:P>` continuously proportional in the ratios :g:`A <g2:A>` : :g:`B <g2:B>`, :g:`C <g2:C>` : :g:`D <g2:D>`, :g:`E <g2:E>` : :g:`F <g2:F>`.
+   If not, there will be some numbers less than :g:`N <g2:N>`, :g:`O <g2:O>`, :g:`M <g2:M>`, :g:`P <g2:P>` continuously proportional in the ratios :g:`A <g2:A>` : :g:`B <g2:B>`, :g:`C <g2:C>` : :g:`D <g2:D>`, :g:`E <g2:E>` : :g:`F <g2:F>`
 
 .. step:: assert
 
-   Let them be :g:`Q <g2:Q>`, :g:`R <g2:R>`, :g:`S <g2:S>`, :g:`T <g2:T>`.
+   Let them be :g:`Q <g2:Q>`, :g:`R <g2:R>`, :g:`S <g2:S>`, :g:`T <g2:T>`
 
 .. step:: assert ∵ least_numbers_ratio <G.274>
 
-   Now since, as :g:`Q <g2:Q>` is to :g:`R <g2:R>`, so is :g:`A <g2:A>` to :g:`B <g2:B>`, while :g:`A <g2:A>`, :g:`B <g2:B>` are least, and the least numbers measure those which have the same ratio with them the same number of times, the antecedent the antecedent and the consequent the consequent.
+   Now since, as :g:`Q <g2:Q>` is to :g:`R <g2:R>`, so is :g:`A <g2:A>` to :g:`B <g2:B>`, while :g:`A <g2:A>`, :g:`B <g2:B>` are least, and the least numbers measure those which have the same ratio with them the same number of times, the antecedent the antecedent and the consequent the consequent
 
 .. step:: assert
 
-   Therefore :g:`B <g2:B>` measures :g:`R <g2:R>`.
+   :g:`B <g2:B>` measures :g:`R <g2:R>`
 
 .. step:: assert
 
-   For the same reason :g:`C <g2:C>` also measures :g:`R <g2:R>`;
+   For the same reason :g:`C <g2:C>` also measures :g:`R <g2:R>`
 
 .. step:: assert
 
-   Therefore :g:`B <g2:B>`, :g:`C <g2:C>` measure :g:`R <g2:R>`.
+   :g:`B <g2:B>`, :g:`C <g2:C>` measure :g:`R <g2:R>`
 
 .. step:: assert ∵ numbers_measure_number <G.291>
 
-   Therefore the least number measured by :g:`B <g2:B>`, :g:`C <g2:C>` will also measure :g:`R <g2:R>`.
+   the least number measured by :g:`B <g2:B>`, :g:`C <g2:C>` will also measure :g:`R <g2:R>`
 
 .. step:: assert
 
-   :g:`G <g2:G>` is the least number measured by :g:`B <g2:B>`, :g:`C <g2:C>`;
+   :g:`G <g2:G>` is the least number measured by :g:`B <g2:B>`, :g:`C <g2:C>`
 
 .. step:: assert
 
-   Therefore :g:`G <g2:G>` measures :g:`R <g2:R>`.
+   :g:`G <g2:G>` measures :g:`R <g2:R>`
 
 .. step:: assert ∵ numbers_proportional_proportional <G.266>
 
-   And, as :g:`G <g2:G>` is to :g:`R <g2:R>`, so is :g:`K <g2:K>` to :g:`S <g2:S>` :
+   as :g:`G <g2:G>` is to :g:`R <g2:R>`, so is :g:`K <g2:K>` to :g:`S <g2:S>` :
 
 .. step:: assert
 
-   Therefore :g:`K <g2:K>` also measures :g:`S <g2:S>`.
+   :g:`K <g2:K>` also measures :g:`S <g2:S>`
 
 .. step:: assert
 
-   :g:`E <g2:E>` also measures :g:`S <g2:S>`;
+   :g:`E <g2:E>` also measures :g:`S <g2:S>`
 
 .. step:: assert
 
-   Therefore :g:`E <g2:E>`, :g:`K <g2:K>` measure :g:`S <g2:S>`.
+   :g:`E <g2:E>`, :g:`K <g2:K>` measure :g:`S <g2:S>`
 
 .. step:: assert ∵ numbers_measure_number <G.291>
 
-   Therefore the least number measured by :g:`E <g2:E>`, :g:`K <g2:K>` will also measure :g:`S <g2:S>`.
+   the least number measured by :g:`E <g2:E>`, :g:`K <g2:K>` will also measure :g:`S <g2:S>`
 
 .. step:: assert
 
-   :g:`M <g2:M>` is the least number measured by :g:`E <g2:E>`, :g:`K <g2:K>`;
+   :g:`M <g2:M>` is the least number measured by :g:`E <g2:E>`, :g:`K <g2:K>`
 
 .. step:: assert
 
-   Therefore :g:`M <g2:M>` measures :g:`S <g2:S>`, the greater the less : which is impossible.
+   :g:`M <g2:M>` measures :g:`S <g2:S>`, the greater the less ⇒⇐
 
 .. step:: assert
 
-   Therefore there will not be any numbers less than :g:`N <g2:N>`, :g:`O <g2:O>`, :g:`M <g2:M>`, :g:`P <g2:P>` continuously proportional in the ratios of :g:`A <g2:A>` to :g:`B <g2:B>`, of :g:`C <g2:C>` to :g:`D <g2:D>`, and of :g:`E <g2:E>` to :g:`F <g2:F>`;
+   there will not be any numbers less than :g:`N <g2:N>`, :g:`O <g2:O>`, :g:`M <g2:M>`, :g:`P <g2:P>` continuously proportional in the ratios of :g:`A <g2:A>` to :g:`B <g2:B>`, of :g:`C <g2:C>` to :g:`D <g2:D>`, and of :g:`E <g2:E>` to :g:`F <g2:F>`
 
 .. step:: conclude
 
-   Therefore :g:`N <g2:N>`, :g:`O <g2:O>`, :g:`M <g2:M>`, :g:`P <g2:P>` are the least numbers continuously proportional in the ratios :g:`A <g2:A>` : :g:`B <g2:B>`, :g:`C <g2:C>` : :g:`D <g2:D>`, :g:`E <g2:E>` : :g:`F <g2:F>`.
+   :g:`N <g2:N>`, :g:`O <g2:O>`, :g:`M <g2:M>`, :g:`P <g2:P>` are the least numbers continuously proportional in the ratios :g:`A <g2:A>` : :g:`B <g2:B>`, :g:`C <g2:C>` : :g:`D <g2:D>`, :g:`E <g2:E>` : :g:`F <g2:F>`
 
 Dependency Graph
 ----------------
@@ -309,15 +309,23 @@ Dependency Graph
      "G.252" -> "G.169";
      "G.253" -> "G.169";
      "G.254" -> "G.169";
+     "G.255" -> "G.169";
      "G.256" -> "G.169";
      "G.268" -> "G.169";
+     "G.270" -> "G.169";
+     "G.271" -> "G.169";
      "G.274" -> "G.169";
+     "G.275" -> "G.169";
      "G.283" -> "G.169";
+     "G.289" -> "G.169";
      "G.290" -> "G.169";
      "G.291" -> "G.169";
+     "G.299" -> "G.169";
      "G.171" -> "G.170";
      "G.176" -> "G.170";
+     "G.183" -> "G.170";
      "G.185" -> "G.170";
+     "G.186" -> "G.170";
      "G.257" -> "G.170";
      "G.186" -> "G.171";
      "G.289" -> "G.173";
@@ -330,13 +338,19 @@ Dependency Graph
      "G.274" -> "G.176";
      "G.275" -> "G.176";
      "G.289" -> "G.176";
+     "G.299" -> "G.176";
      "G.183" -> "G.180";
+     "G.263" -> "G.180";
      "G.266" -> "G.180";
      "G.273" -> "G.180";
      "G.299" -> "G.180";
      "G.182" -> "G.181";
      "G.194" -> "G.181";
      "G.265" -> "G.181";
+     "G.268" -> "G.181";
+     "G.274" -> "G.181";
+     "G.275" -> "G.181";
+     "G.299" -> "G.181";
      "G.183" -> "G.182";
      "G.273" -> "G.183";
      "G.186" -> "G.184";
@@ -347,12 +361,21 @@ Dependency Graph
      "G.262" -> "G.194";
      "G.266" -> "G.194";
      "G.268" -> "G.194";
+     "G.270" -> "G.194";
+     "G.271" -> "G.194";
      "G.248" -> "G.247";
      "G.249" -> "G.247";
      "G.250" -> "G.247";
+     "G.251" -> "G.247";
+     "G.255" -> "G.247";
      "G.268" -> "G.247";
      "G.269" -> "G.247";
+     "G.270" -> "G.247";
+     "G.271" -> "G.247";
+     "G.275" -> "G.247";
      "G.283" -> "G.247";
+     "G.289" -> "G.247";
+     "G.290" -> "G.247";
      "G.250" -> "G.248";
      "G.251" -> "G.248";
      "G.252" -> "G.248";
@@ -380,21 +403,33 @@ Dependency Graph
      "G.250" -> "G.249";
      "G.251" -> "G.249";
      "G.252" -> "G.249";
+     "G.255" -> "G.249";
      "G.275" -> "G.249";
+     "G.289" -> "G.249";
+     "G.290" -> "G.249";
      "G.251" -> "G.250";
      "G.252" -> "G.251";
      "G.255" -> "G.251";
      "G.289" -> "G.252";
+     "G.254" -> "G.253";
      "G.255" -> "G.253";
+     "G.256" -> "G.253";
      "G.257" -> "G.253";
+     "G.258" -> "G.253";
      "G.261" -> "G.253";
      "G.262" -> "G.253";
      "G.263" -> "G.253";
+     "G.265" -> "G.253";
+     "G.266" -> "G.253";
+     "G.283" -> "G.253";
      "G.255" -> "G.254";
      "G.258" -> "G.254";
      "G.261" -> "G.254";
      "G.262" -> "G.254";
      "G.263" -> "G.254";
+     "G.265" -> "G.254";
+     "G.266" -> "G.254";
+     "G.274" -> "G.254";
      "G.274" -> "G.255";
      "G.257" -> "G.256";
      "G.263" -> "G.256";
@@ -422,6 +457,7 @@ Dependency Graph
      "G.270" -> "G.269";
      "G.271" -> "G.269";
      "G.272" -> "G.269";
+     "G.273" -> "G.269";
      "G.289" -> "G.269";
      "G.290" -> "G.269";
      "G.272" -> "G.270";

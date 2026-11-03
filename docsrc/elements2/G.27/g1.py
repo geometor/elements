@@ -1,41 +1,38 @@
-"""Programmatic construction for Book I, Proposition 7 (I.7).
+"""Programmatic construction for Book I, Proposition 6 (I.6).
 
-Given two straight lines constructed on a straight line (from its extremities)
-and meeting in a point, there cannot be constructed on the same straight line
-(from its extremities), and on the same side of it, two other straight lines
-meeting in another point and equal to the former two respectively, namely each
-to that which has the same extremity with it.
+If in a triangle two angles be equal to one another, the sides which subtend
+the equal angles will also be equal to one another.
 """
 
 from __future__ import annotations
 
+import sympy as sp
 from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure for Book I, Proposition 7 using geometor.model."""
-    model = Model("I.7")
+    """Construct the figure for Book I, Proposition 6 using geometor.model."""
+    model = Model("I.6")
 
-    # 1. Given base AB and two pairs of straight lines AC, CB and AD, DB meeting at C and D
-    A = model.set_point(13, -112, classes=["given"], ID="A")
-    B = model.set_point(134, -112, classes=["given"], ID="B")
-    C = model.set_point(100, -26, ID="C")
-    D = model.set_point(126, -38, ID="D")
+    # 1. Let ABC be a triangle having the angle ABC equal to the angle ACB.
+    A = model.set_point(58, -24, classes=["given"], ID="A")
+    B = model.set_point(14, -117, classes=["given"], ID="B")
+    C = model.set_point(98, -117, classes=["given"], ID="C")
 
     model.set_segment(A, B)
     model.set_segment(A, C)
-    model.set_segment(C, B)
+    model.set_segment(B, C)
+    model.set_polygon([A, B, C])
+
+    # 2. From AB the greater let DB be cut off equal to AC the less; let DC be joined.
+    D = model.set_point(46, -50, ID="D")
+    model.set_section([A, D, B])
     model.set_segment(A, D)
     model.set_segment(D, B)
+    model.set_segment(D, C)
 
-    # 2. Let CD be joined [Post. 1]
-    model.set_segment(C, D)
-
-    # 3. Triangles ABC, ABD, ACD, BCD
-    model.set_polygon([A, B, C])
-    model.set_polygon([A, B, D])
-    model.set_polygon([A, C, D])
-    model.set_polygon([B, C, D])
+    # 3. Triangle DBC compared with triangle ACB
+    model.set_polygon([D, B, C])
 
     return model
 

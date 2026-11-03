@@ -10,7 +10,7 @@
 :categories: theorem, proof, number-theory
 :category: theorem, proof, number-theory
 :tags: book-vii, point, number, multiply, prime-number, part-aliquot, prime-to-one-another, unit, in-the-same-ratio, corresponding-magnitudes, prime
-:dependencies: G.169, G.248, G.269, G.273, G.274, G.275, G.283, G.284
+:dependencies: G.169, G.247, G.248, G.269, G.273, G.274, G.275, G.283, G.284
 :excerpt: If two numbers by multiplying one another make some number, and any prime number measure the product, it will also measure one of the original numbers.
 
 .. _G.285:
@@ -39,55 +39,55 @@ G.285 numbers multiplying make
 
 .. step:: assert
 
-   Let it not measure :g:`A <g1:A>`.
+   Let it not measure :g:`A <g1:A>`
 
 .. step:: assert
 
-   Now :g:`D <g1:D>` is prime ;
+   Now :g:`D <g1:D>` is prime
 
 .. step:: assert ∵ prime_number_prime <G.284>
 
-   Therefore :g:`A <g1:A>`, :g:`D <g1:D>` are :term:`prime to one another <G.249>`.
+   :g:`A <g1:A>`, :g:`D <g1:D>` are prime to one another
 
 .. step:: assert
 
-   And, as many times as :g:`D <g1:D>` measures :g:`C <g1:C>`, so many :term:`units <G.247>` let there be in :g:`E <g1:E>`.
+   as many times as :g:`D <g1:D>` measures :g:`C <g1:C>`, so many :term:`units <G.247>` let there be in :g:`E <g1:E>`
 
 .. step:: assert
 
-   Since then :g:`D <g1:D>` measures :g:`C <g1:C>` according to the units in :g:`E <g1:E>`,
+   then :g:`D <g1:D>` measures :g:`C <g1:C>` according to the units in :g:`E <g1:E>`,
 
 .. step:: assert ∵ number_said_multiply_def <G.269>
 
-   Therefore :g:`D <g1:D>` by multiplying :g:`E <g1:E>` has made :g:`C <g1:C>`.
+   :g:`D <g1:D>` by multiplying :g:`E <g1:E>` has made :g:`C <g1:C>`
 
 .. step:: assert
 
-   Further, :g:`A <g1:A>` by multiplying :g:`B <g1:B>` has also made :g:`C <g1:C>` ;
+   Further, :g:`A <g1:A>` by multiplying :g:`B <g1:B>` has also made :g:`C <g1:C>`
 
 .. step:: assert
 
-   Therefore the product of :g:`D <g1:D>`, :g:`E <g1:E>` is equal to the product of :g:`A <g1:A>`, :g:`B <g1:B>`.
+   the product of :g:`D <g1:D>`, :g:`E <g1:E>` is equal to the product of :g:`A <g1:A>`, :g:`B <g1:B>`
 
 .. step:: assert ∵ numbers_proportional_number <G.273>
 
-   Therefore, as :g:`D <g1:D>` is to :g:`A <g1:A>`, so is :g:`B <g1:B>` to :g:`E <g1:E>`.
+   as :g:`D <g1:D>` is to :g:`A <g1:A>`, so is :g:`B <g1:B>` to :g:`E <g1:E>`
 
 .. step:: assert ∵ numbers_prime_least, least_numbers_ratio <G.275, G.274>
 
-   :g:`D <g1:D>`, :g:`A <g1:A>` are prime to one another, primes are also least, and the least measure the numbers which have the same ratio the same number of times, the greater the greater and the less the less, that is, the antecedent the antecedent and the consequent the consequent .
+   :g:`D <g1:D>`, :g:`A <g1:A>` are prime to one another, primes are also least, and the least measure the numbers which have the same ratio the same number of times, the greater the greater and the less the less, that is, the antecedent the antecedent and the consequent the consequent
 
 .. step:: assert
 
-   Therefore :g:`D <g1:D>` measures :g:`B <g1:B>`.
+   :g:`D <g1:D>` measures :g:`B <g1:B>`
 
 .. step:: assert
 
-   Similarly we can also show that, if :g:`D <g1:D>` do not measure :g:`B <g1:B>`, it will measure :g:`A <g1:A>`.
+   Similarly we can also show that, if :g:`D <g1:D>` do not measure :g:`B <g1:B>`, it will measure :g:`A <g1:A>`
 
 .. step:: conclude
 
-   Therefore :g:`D <g1:D>` measures one of the numbers :g:`A <g1:A>`, :g:`B <g1:B>`.
+   :g:`D <g1:D>` measures one of the numbers :g:`A <g1:A>`, :g:`B <g1:B>`
 
 Dependency Graph
 ----------------
@@ -156,15 +156,21 @@ Dependency Graph
      "G.251" -> "G.169";
      "G.253" -> "G.169";
      "G.254" -> "G.169";
+     "G.255" -> "G.169";
      "G.256" -> "G.169";
      "G.268" -> "G.169";
+     "G.270" -> "G.169";
+     "G.271" -> "G.169";
      "G.274" -> "G.169";
+     "G.275" -> "G.169";
      "G.283" -> "G.169";
      "G.284" -> "G.169";
      "G.285" -> "G.169";
      "G.171" -> "G.170";
      "G.176" -> "G.170";
+     "G.183" -> "G.170";
      "G.185" -> "G.170";
+     "G.186" -> "G.170";
      "G.257" -> "G.170";
      "G.186" -> "G.171";
      "G.180" -> "G.176";
@@ -175,11 +181,15 @@ Dependency Graph
      "G.274" -> "G.176";
      "G.275" -> "G.176";
      "G.183" -> "G.180";
+     "G.263" -> "G.180";
      "G.266" -> "G.180";
      "G.273" -> "G.180";
      "G.182" -> "G.181";
      "G.194" -> "G.181";
      "G.265" -> "G.181";
+     "G.268" -> "G.181";
+     "G.274" -> "G.181";
+     "G.275" -> "G.181";
      "G.183" -> "G.182";
      "G.273" -> "G.183";
      "G.186" -> "G.184";
@@ -190,12 +200,20 @@ Dependency Graph
      "G.262" -> "G.194";
      "G.266" -> "G.194";
      "G.268" -> "G.194";
+     "G.270" -> "G.194";
+     "G.271" -> "G.194";
      "G.248" -> "G.247";
      "G.249" -> "G.247";
      "G.250" -> "G.247";
+     "G.251" -> "G.247";
+     "G.255" -> "G.247";
      "G.268" -> "G.247";
      "G.269" -> "G.247";
+     "G.270" -> "G.247";
+     "G.271" -> "G.247";
+     "G.275" -> "G.247";
      "G.283" -> "G.247";
+     "G.285" -> "G.247";
      "G.250" -> "G.248";
      "G.251" -> "G.248";
      "G.253" -> "G.248";
@@ -219,20 +237,30 @@ Dependency Graph
      "G.285" -> "G.248";
      "G.250" -> "G.249";
      "G.251" -> "G.249";
+     "G.255" -> "G.249";
      "G.275" -> "G.249";
      "G.284" -> "G.249";
      "G.251" -> "G.250";
      "G.255" -> "G.251";
+     "G.254" -> "G.253";
      "G.255" -> "G.253";
+     "G.256" -> "G.253";
      "G.257" -> "G.253";
+     "G.258" -> "G.253";
      "G.261" -> "G.253";
      "G.262" -> "G.253";
      "G.263" -> "G.253";
+     "G.265" -> "G.253";
+     "G.266" -> "G.253";
+     "G.283" -> "G.253";
      "G.255" -> "G.254";
      "G.258" -> "G.254";
      "G.261" -> "G.254";
      "G.262" -> "G.254";
      "G.263" -> "G.254";
+     "G.265" -> "G.254";
+     "G.266" -> "G.254";
+     "G.274" -> "G.254";
      "G.274" -> "G.255";
      "G.257" -> "G.256";
      "G.263" -> "G.256";
@@ -257,6 +285,7 @@ Dependency Graph
      "G.270" -> "G.269";
      "G.271" -> "G.269";
      "G.272" -> "G.269";
+     "G.273" -> "G.269";
      "G.285" -> "G.269";
      "G.272" -> "G.270";
      "G.275" -> "G.270";

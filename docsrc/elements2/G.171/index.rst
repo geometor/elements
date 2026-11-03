@@ -28,7 +28,7 @@ G.171 there number magnitudes
 .. signature:: theorem
 
    | :fn:`there_number_magnitudes <G.171>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`, :g:`E <g1:E>`, :g:`F <g1:F>`)
-   | **given** any number of magnitudes whatever :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` be respectively equimultiples of any magnitudes :g:`E <g1:E>`, :g:`F <g1:F>` equal in multitude
+   | **given** any number of magnitudes whatever :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` be equimultiples of any magnitudes :g:`E <g1:E>`, :g:`F <g1:F>` equal in multitude
    | **prove** whatever multiple :g:`/ A B / <g1:/ A B />` is of :g:`E <g1:E>`, that multiple will :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` also be of :g:`E <g1:E>`, :g:`F <g1:F>`
 
 .. picture:: g1.svg
@@ -36,27 +36,27 @@ G.171 there number magnitudes
 
 .. step:: given
 
-   any number of magnitudes whatever :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` be respectively equimultiples of any magnitudes :g:`E <g1:E>`, :g:`F <g1:F>` equal in multitude
+   any number of magnitudes whatever :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` be equimultiples of any magnitudes :g:`E <g1:E>`, :g:`F <g1:F>` equal in multitude
 
 .. step:: assert
 
-   I say that, whatever multiple :g:`/ A B / <g1:/ A B />` is of :g:`E <g1:E>`, that multiple will :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` also be of :g:`E <g1:E>`, :g:`F <g1:F>`.
+   I say that, whatever multiple :g:`/ A B / <g1:/ A B />` is of :g:`E <g1:E>`, that multiple will :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` also be of :g:`E <g1:E>`, :g:`F <g1:F>`
 
 .. step:: assert
 
-   Since :g:`/ A B / <g1:/ A B />` is the same multiple of :g:`E <g1:E>` that :g:`/ C D / <g1:/ C D />` is of :g:`F <g1:F>`, as many magnitudes as there are in :g:`/ A B / <g1:/ A B />` equal to :g:`E <g1:E>`, so many also are there in :g:`/ C D / <g1:/ C D />` equal to :g:`F <g1:F>`.
+   :g:`/ A B / <g1:/ A B />` is the same multiple of :g:`E <g1:E>` that :g:`/ C D / <g1:/ C D />` is of :g:`F <g1:F>`, as many magnitudes as there are in :g:`/ A B / <g1:/ A B />` equal to :g:`E <g1:E>`, so many also are there in :g:`/ C D / <g1:/ C D />` equal to :g:`F <g1:F>`
 
 .. step:: assert
 
-   Let :g:`/ A B / <g1:/ A B />` be divided into the magnitudes :g:`/ A G / <g1:/ A G />`, :g:`/ G B / <g1:/ G B />` :eq:`equal <g1:/ A G / = g1:/ G B / = g1:E>` to :g:`E <g1:E>`, and :g:`/ C D / <g1:/ C D />` into :g:`/ C H / <g1:/ C H />`, :g:`/ H D / <g1:/ H D />` :eq:`equal <g1:/ C H / = g1:/ H D / = g1:F>` to :g:`F <g1:F>`
+   Let :g:`/ A B / <g1:/ A B />` be divided into the magnitudes :g:`/ A G / <g1:/ A G />`, :g:`/ G B / <g1:/ G B />` :eq:`= <g1:/ A G / = g1:/ G B / = g1:E>` to :g:`E <g1:E>`, and :g:`/ C D / <g1:/ C D />` into :g:`/ C H / <g1:/ C H />`, :g:`/ H D / <g1:/ H D />` :eq:`= <g1:/ C H / = g1:/ H D / = g1:F>` to :g:`F <g1:F>`
 
 .. step:: assert
 
-   Then the multitude of the magnitudes :g:`/ A G / <g1:/ A G />`, :g:`/ G B / <g1:/ G B />` will be equal to the multitude of the magnitudes :g:`/ C H / <g1:/ C H />`, :g:`/ H D / <g1:/ H D />`.
+   Then the multitude of the magnitudes :g:`/ A G / <g1:/ A G />`, :g:`/ G B / <g1:/ G B />` will be equal to the multitude of the magnitudes :g:`/ C H / <g1:/ C H />`, :g:`/ H D / <g1:/ H D />`
 
 .. step:: assert
 
-   Since :g:`/ A G / <g1:/ A G />` is :eq:`equal <g1:/ A G / = g1:E; g1:/ C H / = g1:F>` to :g:`E <g1:E>`, and :g:`/ C H / <g1:/ C H />` to :g:`F <g1:F>` → therefore :g:`/ A G / <g1:/ A G />` is :eq:`equal <g1:/ A G / = g1:E>` to :g:`E <g1:E>`, and :g:`/ A G / <g1:/ A G />`, :g:`/ C H / <g1:/ C H />` to :g:`E <g1:E>`, :g:`F <g1:F>`.
+   :g:`/ A G / <g1:/ A G />` :eq:`= <g1:/ A G / = g1:E; g1:/ C H / = g1:F>` :g:`E <g1:E>`, and :g:`/ C H / <g1:/ C H />` to :g:`F <g1:F>` → therefore :g:`/ A G / <g1:/ A G />` :eq:`= <g1:/ A G / = g1:E>` :g:`E <g1:E>`, and :g:`/ A G / <g1:/ A G />`, :g:`/ C H / <g1:/ C H />` to :g:`E <g1:E>`, :g:`F <g1:F>`
 
 .. step:: assert
 
@@ -64,15 +64,15 @@ G.171 there number magnitudes
 
 .. step:: assert
 
-   :g:`/ G B / <g1:/ G B />` is :eq:`equal <g1:/ G B / = g1:E>` to :g:`E <g1:E>`, and :g:`/ G B / <g1:/ G B />`, :g:`/ H D / <g1:/ H D />` to :g:`E <g1:E>`, :g:`F <g1:F>`;
+   :g:`/ G B / <g1:/ G B />` :eq:`= <g1:/ G B / = g1:E>` :g:`E <g1:E>`, and :g:`/ G B / <g1:/ G B />`, :g:`/ H D / <g1:/ H D />` to :g:`E <g1:E>`, :g:`F <g1:F>`
 
 .. step:: assert
 
-   Therefore, as many magnitudes as there are in :g:`/ A B / <g1:/ A B />` equal to :g:`E <g1:E>`, so many also are there in :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` equal to :g:`E <g1:E>`, :g:`F <g1:F>`;
+   as many magnitudes as there are in :g:`/ A B / <g1:/ A B />` equal to :g:`E <g1:E>`, so many also are there in :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` equal to :g:`E <g1:E>`, :g:`F <g1:F>`
 
 .. step:: conclude
 
-   Therefore, whatever multiple :g:`/ A B / <g1:/ A B />` is of :g:`E <g1:E>`, that multiple will :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` also be of :g:`E <g1:E>`, :g:`F <g1:F>`.
+   whatever multiple :g:`/ A B / <g1:/ A B />` is of :g:`E <g1:E>`, that multiple will :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` also be of :g:`E <g1:E>`, :g:`F <g1:F>`
 
 Dependency Graph
 ----------------

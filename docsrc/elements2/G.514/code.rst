@@ -12,7 +12,7 @@ G.514 set segment right — Code
 
 .. enunciation::
 
-   To set up a :term:`segment <G.4>` :term:`at right angles <G.32>` to a given :term:`plane <G.7>` from a given :term:`point <G.1>` in it.
+   To set up a :term:`segment <G.4>` :term:`at right angles <G.33>` to a given :term:`plane <G.7>` from a given :term:`point <G.1>` in it.
 
 .. picture:: g1.svg
 

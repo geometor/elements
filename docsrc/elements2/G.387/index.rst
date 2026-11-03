@@ -10,7 +10,7 @@
 :categories: theorem, proof, incommensurables, magnitudes
 :category: theorem, proof, incommensurables, magnitudes
 :tags: book-x, point, segment, commensurable, part-aliquot
-:dependencies: G.372
+:dependencies: G.169, G.372
 :excerpt: If two commensurable magnitudes be added together, the whole is commensurable with each of them; and, if the whole be commensurable with one of them, the original magnitudes is commensurable.
 
 .. _G.387:
@@ -28,7 +28,7 @@ G.387 commensurable magnitudes added
 .. signature:: theorem
 
    | :fn:`commensurable_magnitudes_added <G.387>`\ ()
-   | **prove** the whole :g:`/ A C / <g1:/ A C />` is also commensurable with each of the magnitudes :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`; :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are also commensurable
+   | **prove** :g:`/ A C / <g1:/ A C />` is also commensurable with each of the magnitudes :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`; :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are also commensurable
 
 .. picture:: g1.svg
    :alt: Proposition 15 Diagram
@@ -39,23 +39,23 @@ G.387 commensurable magnitudes added
 
 .. step:: assert
 
-   Since :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are commensurable, some magnitude will :term:`measure <G.169>` them
+   :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are commensurable, some magnitude will measure them
 
 .. step:: assert
 
-   Let it measure them, and let it be :g:`D <g1:D>`.
+   Let it :term:`measure <G.169>` them, and let it be :g:`D <g1:D>`
 
 .. step:: assert
 
-   Since then :g:`D <g1:D>` measures :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, it will also measure the whole :g:`/ A C / <g1:/ A C />`.
+   then :g:`D <g1:D>` measures :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, it will also measure :g:`/ A C / <g1:/ A C />`
 
 .. step:: assert
 
-   It measures :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` also;
+   It measures :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` also
 
 .. step:: assert ∵ magnitudes_said_commensurable_def <G.372>
 
-   Therefore :g:`D <g1:D>` measures :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ A C / <g1:/ A C />`; therefore :g:`/ A C / <g1:/ A C />` is commensurable with each of the magnitudes :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`.
+   :g:`D <g1:D>` measures :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ A C / <g1:/ A C />`; therefore :g:`/ A C / <g1:/ A C />` is commensurable with each of the magnitudes :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`
 
 .. step:: assert
 
@@ -63,23 +63,23 @@ G.387 commensurable magnitudes added
 
 .. step:: assert
 
-   Since :g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />` are commensurable, some magnitude will measure them
+   :g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />` are commensurable, some magnitude will measure them
 
 .. step:: assert
 
-   Let it measure them, and let it be :g:`D <g1:D>`.
+   Let it measure them, and let it be :g:`D <g1:D>`
 
 .. step:: assert
 
-   Since then :g:`D <g1:D>` measures :g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />`, it will also measure the remainder :g:`/ B C / <g1:/ B C />`.
+   then :g:`D <g1:D>` measures :g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />`, it will also measure :g:`/ B C / <g1:/ B C />`
 
 .. step:: assert
 
-   It measures :g:`/ A B / <g1:/ A B />` also;
+   It measures :g:`/ A B / <g1:/ A B />` also
 
 .. step:: conclude ∵ magnitudes_said_commensurable_def <G.372>
 
-   Therefore :g:`D <g1:D>` will measure :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`; therefore :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are commensurable.
+   :g:`D <g1:D>` will measure :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`; therefore :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are commensurable
 
 Dependency Graph
 ----------------
@@ -92,9 +92,17 @@ Dependency Graph
      edge [color="#8c857b", fontcolor="#8c857b", arrowsize=0.75];
      rankdir="TB";
      "G.169" [label="G.169", tooltip="G.169 (V.def.1): A magnitude is apart of a magnitude, the less of the greater, when it measures the greater.", fillcolor="#224422", URL="../G.169/index.html", target="_top"];
+     "G.247" [label="G.247", tooltip="G.247 (VII.def.1): Anunit is that by virtue of which each of the things that exist is called one.", fillcolor="#224422", URL="../G.247/index.html", target="_top"];
+     "G.248" [label="G.248", tooltip="G.248 (VII.def.2): Anumber is a multitude composed ofunits.", fillcolor="#224422", URL="../G.248/index.html", target="_top"];
+     "G.253" [label="G.253", tooltip="G.253 (VII.def.3): Anumber is apart of a number, the less of the greater, when itmeasures the greater;", fillcolor="#224422", URL="../G.253/index.html", target="_top"];
      "G.372" [label="G.372", tooltip="G.372 (X.def.1): Those magnitudes are said to becommensurable which aremeasured by the same measure, and thoseincommensurable which cannot have any common measure.", fillcolor="#224422", URL="../G.372/index.html", target="_top"];
      "G.387" [label="G.387", tooltip="G.387 (X.15): If two commensurable magnitudes be added together, the whole is commensurable with each of them; and, if the whole be commensurable with one of them, the original magnitudes is com...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.253" -> "G.169";
      "G.372" -> "G.169";
+     "G.387" -> "G.169";
+     "G.248" -> "G.247";
+     "G.253" -> "G.248";
+     "G.372" -> "G.253";
      "G.387" -> "G.372";
    }
 

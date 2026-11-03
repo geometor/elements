@@ -12,7 +12,7 @@ G.157 circumscribe circle about triangle — Code
 
 .. enunciation::
 
-   Circumscribe about a given :term:`triangle <G.11>` a :term:`circle <G.10>`.
+   Circumscribe about a given :term:`triangle <G.12>` a :term:`circle <G.10>`.
 
 .. picture:: g1.svg
 

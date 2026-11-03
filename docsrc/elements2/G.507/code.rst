@@ -12,7 +12,7 @@ G.507 segment set right — Code
 
 .. enunciation::
 
-   If a :term:`segment <G.4>` be set up :term:`at right angles <G.32>` to three segments which meet one another, at their common :term:`point <G.1>` of section, the three segments are in one :term:`plane <G.7>`.
+   If a :term:`segment <G.4>` be set up :term:`at right angles <G.33>` to three segments which meet one another, at their common :term:`point <G.1>` of section, the three segments are in one :term:`plane <G.7>`.
 
 .. picture:: g1.svg
 

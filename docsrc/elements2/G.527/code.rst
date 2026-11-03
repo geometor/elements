@@ -12,7 +12,7 @@ G.527 there plane angles — Code
 
 .. enunciation::
 
-   If there be three :term:`plane angles <G.22>` of which two, taken together in any manner, are greater than the remaining one, and they are contained by equal :term:`segments <G.4>`, it is possible to construct a :term:`triangle <G.11>` out of the segments joining the :term:`extremities <G.3>` of the equal segments.
+   If there be three :term:`plane angles <G.22>` of which two, taken together in any manner, are greater than the remaining one, and they are contained by equal :term:`segments <G.4>`, it is possible to construct a :term:`triangle <G.12>` out of the segments joining the :term:`extremities <G.3>` of the equal segments.
 
 .. rubric:: ``g1.py``
 

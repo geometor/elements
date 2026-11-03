@@ -12,7 +12,7 @@ G.67 triangles on equal bases in the same parallels — Code
 
 .. enunciation::
 
-   :term:`Triangles <G.11>` on equal bases and in the same :term:`parallels <G.52>` are equal in area.
+   :term:`Triangles <G.12>` on equal bases and in the same :term:`parallels <G.52>` are equal in area.
 
 .. picture:: g1.svg
 

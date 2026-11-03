@@ -39,15 +39,15 @@ G.379 magnitudes ratio number
 
 .. step:: assert ∵ commensurable_magnitudes_ratio <G.376>
 
-   If they are commensurable, :g:`A <g1:A>` will have to :g:`B <g1:B>` the ratio which a number has to a number.
+   If they are commensurable, :g:`A <g1:A>` will have to :g:`B <g1:B>` the ratio which a number has to a number
 
 .. step:: assert
 
-   It has not;
+   It has not
 
 .. step:: conclude
 
-   Therefore the magnitudes :g:`A <g1:A>`, :g:`B <g1:B>` are incommensurable.
+   the magnitudes :g:`A <g1:A>`, :g:`B <g1:B>` are incommensurable
 
 Dependency Graph
 ----------------
@@ -104,12 +104,17 @@ Dependency Graph
      "G.254" -> "G.169";
      "G.256" -> "G.169";
      "G.372" -> "G.169";
+     "G.376" -> "G.169";
      "G.171" -> "G.170";
      "G.172" -> "G.170";
      "G.175" -> "G.170";
      "G.176" -> "G.170";
      "G.177" -> "G.170";
+     "G.183" -> "G.170";
      "G.185" -> "G.170";
+     "G.186" -> "G.170";
+     "G.191" -> "G.170";
+     "G.205" -> "G.170";
      "G.186" -> "G.171";
      "G.175" -> "G.172";
      "G.174" -> "G.173";
@@ -119,24 +124,31 @@ Dependency Graph
      "G.175" -> "G.174";
      "G.202" -> "G.174";
      "G.205" -> "G.174";
+     "G.376" -> "G.174";
      "G.177" -> "G.175";
      "G.177" -> "G.176";
      "G.180" -> "G.176";
      "G.183" -> "G.176";
+     "G.188" -> "G.176";
      "G.191" -> "G.176";
      "G.202" -> "G.176";
      "G.205" -> "G.176";
      "G.205" -> "G.177";
      "G.183" -> "G.180";
+     "G.263" -> "G.180";
      "G.182" -> "G.181";
      "G.183" -> "G.182";
+     "G.202" -> "G.182";
+     "G.376" -> "G.182";
      "G.188" -> "G.183";
      "G.376" -> "G.183";
      "G.186" -> "G.184";
      "G.188" -> "G.184";
+     "G.202" -> "G.184";
      "G.186" -> "G.185";
      "G.188" -> "G.185";
      "G.191" -> "G.185";
+     "G.202" -> "G.185";
      "G.188" -> "G.186";
      "G.202" -> "G.186";
      "G.202" -> "G.188";
@@ -144,11 +156,15 @@ Dependency Graph
      "G.205" -> "G.202";
      "G.376" -> "G.205";
      "G.248" -> "G.247";
+     "G.376" -> "G.247";
      "G.253" -> "G.248";
      "G.256" -> "G.248";
      "G.376" -> "G.248";
      "G.379" -> "G.248";
+     "G.254" -> "G.253";
+     "G.256" -> "G.253";
      "G.263" -> "G.253";
+     "G.372" -> "G.253";
      "G.263" -> "G.254";
      "G.263" -> "G.256";
      "G.376" -> "G.263";

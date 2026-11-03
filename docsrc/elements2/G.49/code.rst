@@ -12,7 +12,7 @@ G.49 hinge theorem — Code
 
 .. enunciation::
 
-   If two :term:`triangles <G.11>` have two sides equal to two sides respectively, the one with the greater included :term:`angle <G.22>` has the greater base.
+   If two :term:`triangles <G.12>` have two sides equal to two sides respectively, the one with the greater included :term:`angle <G.22>` has the greater base.
 
 .. picture:: g1.svg
 

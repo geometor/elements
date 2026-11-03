@@ -10,7 +10,7 @@
 :categories: theorem, proof, number-theory
 :category: theorem, proof, number-theory
 :tags: book-ix, point, number, proportional, prime-to-one-another, alternando, prime-number, part-aliquot, in-the-same-ratio, corresponding-magnitudes, proportion, prime, continued-proportion, reductio-ad-absurdum
-:dependencies: G.180, G.248, G.249, G.266, G.274, G.275, G.283
+:dependencies: G.169, G.180, G.194, G.248, G.249, G.266, G.274, G.275, G.283
 :excerpt: If there be as many numbers as we please in continued proportion, and the extremes of them be prime to one another, the last will not be to any other number as the first to the second.
 
 .. _G.347:
@@ -43,51 +43,51 @@ G.347 there many numbers
 
 .. step:: assert ∵ numbers_proportional_proportional <G.266>
 
-   Therefore, :term:`alternately <G.194>`, as :g:`A <g1:A>` is to :g:`D <g1:D>`, so is :g:`B <g1:B>` to :g:`E <g1:E>`.
+   :term:`alternately <G.194>`, as :g:`A <g1:A>` is to :g:`D <g1:D>`, so is :g:`B <g1:B>` to :g:`E <g1:E>`
 
 .. step:: assert ∵ numbers_prime_least, least_numbers_ratio <G.275, G.274>
 
-   :g:`A <g1:A>`, :g:`D <g1:D>` are prime, primes are also least, and the least numbers measure those which have the same ratio the same number of times, the antecedent the antecedent and the consequent the consequent.
+   :g:`A <g1:A>`, :g:`D <g1:D>` are prime, primes are also least, and the least numbers measure those which have the same ratio the same number of times, the antecedent the antecedent and the consequent the consequent
 
 .. step:: assert
 
-   Therefore :g:`A <g1:A>` :term:`measures <G.169>` :g:`B <g1:B>`.
+   :g:`A <g1:A>` measures :g:`B <g1:B>`
 
 .. step:: assert
 
-   And, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`B <g1:B>` to :g:`C <g1:C>`.
+   as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`B <g1:B>` to :g:`C <g1:C>`
 
 .. step:: assert
 
-   Therefore :g:`B <g1:B>` also measures :g:`C <g1:C>` ; so that :g:`A <g1:A>` also measures :g:`C <g1:C>`.
+   :g:`B <g1:B>` also measures :g:`C <g1:C>` ; so that :g:`A <g1:A>` also measures :g:`C <g1:C>`
 
 .. step:: assert
 
-   Since, as :g:`B <g1:B>` is to :g:`C <g1:C>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`, and :g:`B <g1:B>` measures :g:`C <g1:C>`,
+   Since, as :g:`B <g1:B>` is to :g:`C <g1:C>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`, and :g:`B <g1:B>` :term:`measures <G.169>` :g:`C <g1:C>`,
 
 .. step:: assert
 
-   Therefore :g:`C <g1:C>` also measures :g:`D <g1:D>`.
+   :g:`C <g1:C>` also measures :g:`D <g1:D>`
 
 .. step:: assert
 
-   :g:`A <g1:A>` measured :g:`C <g1:C>` ;
+   :g:`A <g1:A>` measured :g:`C <g1:C>`
 
 .. step:: assert
 
-   So that :g:`A <g1:A>` also measures :g:`D <g1:D>`.
+   So that :g:`A <g1:A>` also measures :g:`D <g1:D>`
 
 .. step:: assert
 
-   It also measures itself ;
+   It also measures itself
 
 .. step:: assert
 
-   Therefore :g:`A <g1:A>` measures :g:`A <g1:A>`, :g:`D <g1:D>` which are prime to one another : which is impossible.
+   :g:`A <g1:A>` measures :g:`A <g1:A>`, :g:`D <g1:D>` which are prime to one another ⇒⇐
 
 .. step:: conclude
 
-   Therefore :g:`D <g1:D>` will not be to any other number as :g:`A <g1:A>` is to :g:`B <g1:B>`.
+   :g:`D <g1:D>` will not be to any other number as :g:`A <g1:A>` is to :g:`B <g1:B>`
 
 Dependency Graph
 ----------------
@@ -134,28 +134,42 @@ Dependency Graph
      "G.251" -> "G.169";
      "G.253" -> "G.169";
      "G.254" -> "G.169";
+     "G.255" -> "G.169";
      "G.256" -> "G.169";
      "G.268" -> "G.169";
+     "G.270" -> "G.169";
      "G.274" -> "G.169";
+     "G.275" -> "G.169";
      "G.283" -> "G.169";
+     "G.347" -> "G.169";
      "G.176" -> "G.170";
      "G.257" -> "G.170";
      "G.180" -> "G.176";
      "G.274" -> "G.176";
      "G.275" -> "G.176";
+     "G.263" -> "G.180";
      "G.266" -> "G.180";
      "G.347" -> "G.180";
      "G.194" -> "G.181";
      "G.265" -> "G.181";
+     "G.268" -> "G.181";
+     "G.274" -> "G.181";
+     "G.275" -> "G.181";
      "G.261" -> "G.194";
      "G.262" -> "G.194";
      "G.266" -> "G.194";
      "G.268" -> "G.194";
+     "G.270" -> "G.194";
+     "G.347" -> "G.194";
      "G.248" -> "G.247";
      "G.249" -> "G.247";
      "G.250" -> "G.247";
+     "G.251" -> "G.247";
+     "G.255" -> "G.247";
      "G.268" -> "G.247";
      "G.269" -> "G.247";
+     "G.270" -> "G.247";
+     "G.275" -> "G.247";
      "G.283" -> "G.247";
      "G.250" -> "G.248";
      "G.251" -> "G.248";
@@ -176,20 +190,30 @@ Dependency Graph
      "G.347" -> "G.248";
      "G.250" -> "G.249";
      "G.251" -> "G.249";
+     "G.255" -> "G.249";
      "G.275" -> "G.249";
      "G.347" -> "G.249";
      "G.251" -> "G.250";
      "G.255" -> "G.251";
+     "G.254" -> "G.253";
      "G.255" -> "G.253";
+     "G.256" -> "G.253";
      "G.257" -> "G.253";
+     "G.258" -> "G.253";
      "G.261" -> "G.253";
      "G.262" -> "G.253";
      "G.263" -> "G.253";
+     "G.265" -> "G.253";
+     "G.266" -> "G.253";
+     "G.283" -> "G.253";
      "G.255" -> "G.254";
      "G.258" -> "G.254";
      "G.261" -> "G.254";
      "G.262" -> "G.254";
      "G.263" -> "G.254";
+     "G.265" -> "G.254";
+     "G.266" -> "G.254";
+     "G.274" -> "G.254";
      "G.274" -> "G.255";
      "G.257" -> "G.256";
      "G.263" -> "G.256";

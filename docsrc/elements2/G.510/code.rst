@@ -12,7 +12,7 @@ G.510 segments parallel right — Code
 
 .. enunciation::
 
-   If two :term:`segments <G.4>` be :term:`parallel <G.52>`, and one of them be :term:`at right angles <G.32>` to any :term:`plane <G.7>`, the remaining one is :term:`at right angles to the same plane <G.505>`.
+   If two :term:`segments <G.4>` be :term:`parallel <G.52>`, and one of them be :term:`at right angles <G.33>` to any :term:`plane <G.7>`, the remaining one is :term:`at right angles to the same plane <G.505>`.
 
 .. picture:: g1.svg
 

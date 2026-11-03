@@ -12,7 +12,7 @@ G.98 find circle center — Code
 
 .. enunciation::
 
-   Find the :term:`center <G.14>` of a given :term:`circle <G.10>`.
+   Find the :term:`center <G.11>` of a given :term:`circle <G.10>`.
 
 .. picture:: g1.svg
 

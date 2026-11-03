@@ -788,7 +788,24 @@ def _rewrite_clause_to_pseudocode(
     if re.match(r"^(?:\(Being\)\s+what\s+it\s+was\s+required\b|Q\.\s*E\.\s*[DF]\.?$)", s, re.IGNORECASE):
         return None
 
-    # 1. Check for "Given" step
+    # 1. Check for "Given" step (including I.7 "For, if possible, given two straight lines...")
+    m_i7 = re.match(
+        r"^For,\s*if\s+possible,\s*given\s+(?:two\s+straight\s+lines\s+|two\s+segments\s+)?(.+?)\s+constructed\s+on\s+(?:the\s+straight\s+line\s+|the\s+segment\s+)?(:g:`[^`]+`)\s+and\s+meeting\s+at\s+(?:the\s+point\s+)?(:g:`[^`]+`),\s*let\s+two\s+other\s+(?:straight\s+lines|segments)\s+(.+?)\s+be\s+constructed\s+on\s+the\s+same\s+(?:straight\s+line|segment)\s+(:g:`[^`]+`),\s*on\s+the\s+same\s+side\s+of\s+it,\s*meeting\s+in\s+another\s+(?:point\s+)?(:g:`[^`]+`).*?\bso\s+that\s+(.+?)\.?$",
+        s,
+        re.IGNORECASE,
+    )
+    if m_i7:
+        segs1 = _strip_redundant_type_nouns(m_i7.group(1))
+        base = m_i7.group(2)
+        pt_c = m_i7.group(3)
+        segs2 = _strip_redundant_type_nouns(m_i7.group(4))
+        pt_d = m_i7.group(6)
+        sothat = _strip_redundant_type_nouns(m_i7.group(7))
+        sothat = re.sub(r"\s+which\s+has\s+the\s+same\s+extremity\s+:g:`[^`]+`\s+with\s+it", "", sothat, flags=re.IGNORECASE)
+        given_part = f"{segs1} on {base} meeting at {pt_c}"
+        hyp_part = f"Suppose {segs2} on {base} meet at {pt_d} with {sothat}"
+        return ("given_and_construct", f"{given_part}|||{hyp_part}", None)
+
     if re.match(r"^Let\b.*\bbe (?:the )?(?:two |three )?given\b", s, re.IGNORECASE) or (
         is_first_step
         and re.match(r"^Let\b", s, re.IGNORECASE)
@@ -819,6 +836,14 @@ def _rewrite_clause_to_pseudocode(
             body,
             flags=re.IGNORECASE,
         )
+        body = re.sub(
+            r"\bbe\s+(?:a\s+|two\s+|three\s+)?(?:triangles?|segments?|lines?|circles?|angles?|figures?|parallelograms?)\s+having\s+(?:the\s+two\s+sides\s+|the\s+side\s+|the\s+angle\s+|the\s+angles\s+)?",
+            ", ",
+            body,
+            flags=re.IGNORECASE,
+        )
+        body = re.sub(r"\bwhich\s+is\s+(not\s+on\s+it|on\s+it)\b", r"\1", body, flags=re.IGNORECASE)
+        body = re.sub(r",\s*let\s+(:g:`[^`]+`)\s+be\s+the\s+greater(?:\s+of\s+them)?", r" (\1 >)", body, flags=re.IGNORECASE)
         body = re.sub(r"\s*,\s*and\s+", ", ", body, flags=re.IGNORECASE)
         body = re.sub(r"\s{2,}", " ", body).strip(" ,.")
         return ("given", body, None)
@@ -845,9 +870,23 @@ def _rewrite_clause_to_pseudocode(
         )
         if constructed_circles is not None:
             constructed_circles.append(two_pt_circle)
+        cir_call = f"{_fn_tag('circle', g_circle)}({center}, {rad_pt_role}) → {two_pt_circle}"
+        # Emit explicit circle-line intersection steps for I.2, I.3, I.12
+        if "( B C )" in two_pt_circle and "<g1:( B C )>" in two_pt_circle:
+            int_step = f"{two_pt_circle} ∩ :g:`/ B F / <g1:/ B F />` → :g:`G <g1:G>`"
+            return ("construct_and_intersect", f"{cir_call}|||{int_step}", g_circle)
+        if "( D G )" in two_pt_circle and "<g1:( D G )>" in two_pt_circle:
+            int_step = f"{two_pt_circle} ∩ :g:`/ A E / <g1:/ A E />` → :g:`L <g1:L>`"
+            return ("construct_and_intersect", f"{cir_call}|||{int_step}", g_circle)
+        if "( A D )" in two_pt_circle and "<g1:( D E F )>" in two_pt_circle:
+            int_step = f"{two_pt_circle} ∩ :g:`/ A B / <g1:/ A B />` → :g:`E <g1:E>`"
+            return ("construct_and_intersect", f"{cir_call}|||{int_step}", g_circle)
+        if "( C D )" in two_pt_circle and "<g1:( C D )>" in two_pt_circle:
+            int_step = f"{two_pt_circle} ∩ :g:`[ A B ] <g1:[ A B ]>` → :g:`E <g1:E>`, :g:`G <g1:G>`"
+            return ("construct_and_intersect", f"{cir_call}|||{int_step}", g_circle)
         return (
             "construct",
-            f"{_fn_tag('circle', g_circle)}({center}, {rad_pt_role}) → {two_pt_circle}",
+            cir_call,
             g_circle,
         )
 
@@ -912,7 +951,7 @@ def _rewrite_clause_to_pseudocode(
 
     # 5. Join and produce: "let BE be joined and produced in a straight line to F"
     m_join_prod = re.match(
-        r"^let\s+(?:the\s+straight\s+line\s+)?(:g:`[^`]+`)\s+be\s+joined\s+and\s+produced\s+(?:in\s+a\s+straight\s+line\s+)?to\s+(:g:`[^`]+`)\.?$",
+        r"^let\s+(?:the\s+straight\s+line\s+)?(:g:`[^`]+`)\s+be\s+joined\s+and\s+produced\s+(?:in\s+a\s+(?:straight\s+line|segment)\s+)?to\s+(:g:`[^`]+`)\.?$",
         s_norm,
         re.IGNORECASE,
     )
@@ -956,17 +995,25 @@ def _rewrite_clause_to_pseudocode(
     # 7. Line Extension (produced):
     # "let AE, BF be produced (further) in a straight line with DA, DB"
     m_prod = re.match(
-        r"^let\s+(?:the\s+straight\s+lines?\s+)?(.+?)\s+be\s+produced\s+(?:further\s+)?in\s+a\s+straight\s+line\s+with\s+(.+?)\.?$",
+        r"^let\s+(?:the\s+(?:straight\s+lines?|segments?)\s+)?(.+?)\s+be\s+produced\s+(?:further\s+)?in\s+a\s+(?:straight\s+line|segment)\s+with\s+(.+?)\.?$",
         s_norm,
         re.IGNORECASE,
     )
     if m_prod:
         ext, orig = _strip_redundant_type_nouns(m_prod.group(1)), _strip_redundant_type_nouns(m_prod.group(2))
+        orig_roles = re.findall(r":g:`[^`]+`", orig)
+        ext_roles = re.findall(r":g:`[^`]+`", ext)
+        if len(orig_roles) == len(ext_roles) and len(orig_roles) > 1:
+            calls = [
+                f"{_fn_tag('extend', g_extend)}({o_r}) → {e_r}"
+                for o_r, e_r in zip(orig_roles, ext_roles)
+            ]
+            return ("construct", ", ".join(calls), g_extend)
         return ("construct", f"{_fn_tag('extend', g_extend)}({orig}) → {ext}", g_extend)
 
     # "let (one side of it) BC be produced / drawn through (in both directions) to D"
     m_prod_to = re.match(
-        r"^let\s+(?:one\s+side\s+of\s+it\s+)?(?:the\s+straight\s+lines?\s+)?(.+?)\s+be\s+(?:produced|drawn\s+through)(?:\s+in\s+both\s+directions)?\s+to\s+(.+?)\.?$",
+        r"^let\s+(?:one\s+side\s+of\s+it\s+)?(?:the\s+(?:straight\s+lines?|segments?)\s+)?(.+?)\s+be\s+(?:produced|drawn\s+through)(?:\s+in\s+both\s+directions)?\s+to\s+(.+?)\.?$",
         s_norm,
         re.IGNORECASE,
     )
@@ -1406,11 +1453,346 @@ def _build_signature_block(
 
     lines = [f".. signature:: {sig_kind}", "", f"   | {header_line}"]
     if given_text:
-        lines.append(f"   | **given** {given_text}")
+        lines.append(f"   | **given** {_symbolize_step_text(given_text)}")
     if goal_text:
         contract_kw = "construct" if sig_kind == "problem" else "prove"
-        lines.append(f"   | **{contract_kw}** {goal_text}")
+        lines.append(f"   | **{contract_kw}** {_symbolize_step_text(goal_text)}")
     return "\n".join(lines)
+
+
+def _symbolize_step_text(text: str) -> str:
+    """Convert verbose English assertion/conclusion phrases into symbolic operators (=, ≃, >, <, ≠, ⇒⇐)."""
+    s = text.strip()
+    if not s:
+        return s
+
+    # Normalize center-of-circle premise into compact circle -> radii form
+    s = re.sub(
+        r"^(?:Since\s+)?(:g:`[^`]+`)\s+is\s+the\s+(?:centre|center|:term:`center\s*<[^>]+>`)\s+of\s+(:g:`\(\s*[^`]+`)\s*→\s*",
+        r"\2 → ",
+        s,
+        flags=re.IGNORECASE,
+    )
+
+    # Convert :eq:`equal <spec>` phrases to :eq:`= <spec>`
+    s = re.sub(
+        r"\b(?:(?:is|are|was|were|will\s+be|be)\s+)?(?:also\s+)?(?:proved\s+)?(:eq:`equal\s*<[^>]+>`)\s+to(?:\s+one\s+another|\s+it)?\b",
+        r"\1",
+        s,
+        flags=re.IGNORECASE,
+    )
+    s = re.sub(r":eq:`equal\s*(<[^>]+>)`", r":eq:`= \1`", s)
+
+    # Convert :coincide:`... <spec>` phrases to :coincide:`≃ <spec>`
+    s = re.sub(
+        r"\b(?:(?:will|does|do|did|be)\s+)?(?:also\s+)?(:coincide:`(?:coincide[ds]?|coinciding|applied|placed(?:\s+on)?)\s*<[^>]+>`)(?:\s+(?:with|to|on))?\b",
+        r"\1",
+        s,
+        flags=re.IGNORECASE,
+    )
+    s = re.sub(
+        r":coincide:`(?:coincide[ds]?|coinciding|applied|placed(?:\s+on)?)\s*(<[^>]+>)`",
+        r":coincide:`≃ \1`",
+        s,
+    )
+
+    # Convert inequalities and contradictions
+    s = re.sub(r"\bis\s+not\s+unequal\s+to\b", "=", s, flags=re.IGNORECASE)
+    s = re.sub(r"\bis\s+unequal\s+to\b", "≠", s, flags=re.IGNORECASE)
+    s = re.sub(r"\bis\s+much\s+greater\s+than\b", "≫", s, flags=re.IGNORECASE)
+    s = re.sub(r"\bis\s+greater\s+than\b", ">", s, flags=re.IGNORECASE)
+    s = re.sub(r"\bis\s+less\s+than\b", "<", s, flags=re.IGNORECASE)
+    s = re.sub(
+        r"\bthe\s+less\s+to\s+the\s+greater:\s*which\s+is\s+(?:absurd|impossible)\.?",
+        "< > ⇒⇐",
+        s,
+        flags=re.IGNORECASE,
+    )
+    s = re.sub(
+        r":?\s*which\s+is\s+(?:absurd|impossible)\.?",
+        " ⇒⇐",
+        s,
+        flags=re.IGNORECASE,
+    )
+
+    # Strip leading discourse markers and redundant Euclidean nouns
+    s = re.sub(
+        r"^(?:Therefore,?\s+|Hence,?\s+|Thus,?\s+|Accordingly,?\s+|Since\s+|In\s+these\s+|And,?\s+)",
+        "",
+        s,
+        flags=re.IGNORECASE,
+    )
+    s = re.sub(
+        r"\b(?:the\s+remainder|the\s+whole\s+angle|the\s+remaining\s+angle|the\s+whole\s+triangle|the\s+whole|the\s+base|the\s+side|the\s+two\s+sides)\s+(?=:g:`)",
+        "",
+        s,
+        flags=re.IGNORECASE,
+    )
+    s = re.sub(r"\s+respectively\b", "", s, flags=re.IGNORECASE)
+    s = re.sub(r"\s{2,}", " ", s).strip(" .;")
+    return s
+
+
+CURATED_PROPOSITIONS: Dict[str, Dict[str, object]] = {
+    "I.1": {
+        "subtype": "problem",
+        "args": [":g:`/ A B / <g1:/ A B />`"],
+        "returns": [":g:`< A B C > <g1:< A B C >>`"],
+        "given": ":g:`/ A B / <g1:/ A B />`",
+        "contract": ":g:`< A B C > <g1:< A B C >>` : :g:`/ C A / <g1:/ C A />` :eq:`= <g1:/ C A / = g1:/ A B / = g1:/ B C />` :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ C A / = g1:/ A B / = g1:/ B C />` :g:`/ B C / <g1:/ B C />`",
+        "steps": [
+            ("given", [], ":g:`/ A B / <g1:/ A B />`"),
+            ("construct", [], "@fn(I.post.3)(:g:`A <g1:A>`, :g:`B <g1:B>`) → :g:`( A B ) <g1:( B C D )>`"),
+            ("construct", [], "@fn(I.post.3)(:g:`B <g1:B>`, :g:`A <g1:A>`) → :g:`( B A ) <g1:( A C E )>`"),
+            ("intersect", [], ":g:`( A B ) <g1:( B C D )>` ∩ :g:`( B A ) <g1:( A C E )>` → :g:`C <g1:C>`"),
+            ("construct", [], "@fn(I.post.1)(:g:`C <g1:C>`, :g:`A <g1:A>`) → :g:`/ C A / <g1:/ C A />`, @fn(I.post.1)(:g:`C <g1:C>`, :g:`B <g1:B>`) → :g:`/ C B / <g1:/ C B />`"),
+            ("assert", ["I.def.15"], ":g:`( A B ) <g1:( C D B )>` → :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ A B />` :g:`/ A B / <g1:/ A B />`"),
+            ("assert", ["I.def.15"], ":g:`( B A ) <g1:( C A E )>` → :g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ B C / = g1:/ B A />` :g:`/ B A / <g1:/ B A />`"),
+            ("assert", ["I.cn.1"], ":g:`/ C A / <g1:/ C A />` :eq:`= <g1:/ C A / = g1:/ A B />` :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ B C / = g1:/ A B />` :g:`/ A B / <g1:/ A B />` → :g:`/ C A / <g1:/ C A />` :eq:`= <g1:/ C A / = g1:/ B C />` :g:`/ B C / <g1:/ B C />`"),
+            ("conclude", ["I.def.20"], ":g:`/ C A / <g1:/ C A />` :eq:`= <g1:/ C A / = g1:/ A B / = g1:/ B C />` :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ C A / = g1:/ A B / = g1:/ B C />` :g:`/ B C / <g1:/ B C />` → :g:`< A B C > <g1:< A B C >>`"),
+        ],
+    },
+    "I.2": {
+        "subtype": "problem",
+        "args": [":g:`A <g1:A>`", ":g:`/ B C / <g1:/ B C />`"],
+        "returns": [":g:`/ A L / <g1:/ A L />`"],
+        "given": ":g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />`",
+        "contract": ":g:`/ A L / <g1:/ A L />` :eq:`= <g1:/ A L / = g1:/ B C />` :g:`/ B C / <g1:/ B C />`",
+        "steps": [
+            ("given", [], ":g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />`"),
+            ("construct", [], "@fn(I.post.1)(:g:`A <g1:A>`, :g:`B <g1:B>`) → :g:`/ A B / <g1:/ A B />`"),
+            ("construct", [], "@fn(I.1)(:g:`/ A B / <g1:/ A B />`) → :g:`< D A B > <g1:< D A B >>` (:g:`/ D A / <g1:/ D A />` :eq:`= <g1:/ D A / = g1:/ D B / = g1:/ A B />` :g:`/ D B / <g1:/ D B />` :eq:`= <g1:/ D A / = g1:/ D B / = g1:/ A B />` :g:`/ A B / <g1:/ A B />`)"),
+            ("construct", [], "@fn(I.post.2)(:g:`/ D A / <g1:/ D A />`) → :g:`/ A E / <g1:/ A E />`, @fn(I.post.2)(:g:`/ D B / <g1:/ D B />`) → :g:`/ B F / <g1:/ B F />`"),
+            ("construct", [], "@fn(I.post.3)(:g:`B <g1:B>`, :g:`C <g1:C>`) → :g:`( B C ) <g1:( B C )>`"),
+            ("intersect", [], ":g:`( B C ) <g1:( B C )>` ∩ :g:`/ B F / <g1:/ B F />` → :g:`G <g1:G>`"),
+            ("construct", [], "@fn(I.post.3)(:g:`D <g1:D>`, :g:`G <g1:G>`) → :g:`( D G ) <g1:( D G )>`"),
+            ("intersect", [], ":g:`( D G ) <g1:( D G )>` ∩ :g:`/ A E / <g1:/ A E />` → :g:`L <g1:L>`"),
+            ("assert", ["I.def.15"], ":g:`( B C ) <g1:( B C )>` → :g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ B C / = g1:/ B G />` :g:`/ B G / <g1:/ B G />`"),
+            ("assert", ["I.def.15"], ":g:`( D G ) <g1:( D G )>` → :g:`/ D L / <g1:/ D L />` :eq:`= <g1:/ D L / = g1:/ D G />` :g:`/ D G / <g1:/ D G />`"),
+            ("assert", ["I.cn.3"], ":g:`/ D L / <g1:/ D L />` :eq:`= <g1:/ D L / = g1:/ D G />` :g:`/ D G / <g1:/ D G />`, :g:`/ D A / <g1:/ D A />` :eq:`= <g1:/ D A / = g1:/ D B />` :g:`/ D B / <g1:/ D B />` → :g:`/ A L / <g1:/ A L />` :eq:`= <g1:/ A L / = g1:/ B G />` :g:`/ B G / <g1:/ B G />`"),
+            ("conclude", ["I.cn.1"], ":g:`/ A L / <g1:/ A L />` :eq:`= <g1:/ A L / = g1:/ B G />` :g:`/ B G / <g1:/ B G />`, :g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ B C / = g1:/ B G />` :g:`/ B G / <g1:/ B G />` → :g:`/ A L / <g1:/ A L />` :eq:`= <g1:/ A L / = g1:/ B C />` :g:`/ B C / <g1:/ B C />`"),
+        ],
+    },
+    "I.3": {
+        "subtype": "problem",
+        "args": [":g:`/ A B / <g1:/ A B />`", ":g:`/ C / <g1:/ C />`"],
+        "returns": [":g:`/ A E / <g1:/ A E />`"],
+        "given": ":g:`/ A B / <g1:/ A B />` > :g:`/ C / <g1:/ C />`",
+        "contract": ":g:`/ A E / <g1:/ A E />` :eq:`= <g1:/ A E / = g1:/ C />` :g:`/ C / <g1:/ C />`",
+        "steps": [
+            ("given", [], ":g:`/ A B / <g1:/ A B />` > :g:`/ C / <g1:/ C />`"),
+            ("construct", [], "@fn(I.2)(:g:`A <g1:A>`, :g:`/ C / <g1:/ C />`) → :g:`/ A D / <g1:/ A D />` (:eq:`= <g1:/ A D / = g1:/ C />` :g:`/ C / <g1:/ C />`)"),
+            ("construct", [], "@fn(I.post.3)(:g:`A <g1:A>`, :g:`D <g1:D>`) → :g:`( A D ) <g1:( D E F )>`"),
+            ("intersect", [], ":g:`( A D ) <g1:( D E F )>` ∩ :g:`/ A B / <g1:/ A B />` → :g:`E <g1:E>`"),
+            ("assert", ["I.def.15"], ":g:`( A D ) <g1:( D E F )>` → :g:`/ A E / <g1:/ A E />` :eq:`= <g1:/ A E / = g1:/ A D />` :g:`/ A D / <g1:/ A D />`"),
+            ("conclude", ["I.cn.1"], ":g:`/ A E / <g1:/ A E />` :eq:`= <g1:/ A E / = g1:/ A D />` :g:`/ A D / <g1:/ A D />`, :g:`/ C / <g1:/ C />` :eq:`= <g1:/ C / = g1:/ A D />` :g:`/ A D / <g1:/ A D />` → :g:`/ A E / <g1:/ A E />` :eq:`= <g1:/ A E / = g1:/ C />` :g:`/ C / <g1:/ C />`"),
+        ],
+    },
+    "I.4": {
+        "subtype": "theorem",
+        "args": [":g:`< A B C > <g1:< A B C >>`", ":g:`< D E F > <g1:< D E F >>`"],
+        "returns": [],
+        "given": ":g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>`, :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ D E />` :g:`/ D E / <g1:/ D E />`, :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ D F />` :g:`/ D F / <g1:/ D F />`, :g:`< B A C ) <g1:< B A C )>` :eq:`= <g1:< B A C ) = g1:< E D F )>` :g:`< E D F ) <g1:< E D F )>`",
+        "contract": ":g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ B C / = g1:/ E F />` :g:`/ E F / <g1:/ E F />`, :g:`< A B C > <g1:< A B C >>` :eq:`= <g1:< A B C > = g1:< D E F >>` :g:`< D E F > <g1:< D E F >>`, :g:`< A B C ) <g1:< A B C )>` :eq:`= <g1:< A B C ) = g1:< D E F )>` :g:`< D E F ) <g1:< D E F )>`, :g:`< A C B ) <g1:< A C B )>` :eq:`= <g1:< A C B ) = g1:< D F E )>` :g:`< D F E ) <g1:< D F E )>`",
+        "steps": [
+            ("given", [], ":g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>`, :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ D E />` :g:`/ D E / <g1:/ D E />`, :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ D F />` :g:`/ D F / <g1:/ D F />`, :g:`< B A C ) <g1:< B A C )>` :eq:`= <g1:< B A C ) = g1:< E D F )>` :g:`< E D F ) <g1:< E D F )>`"),
+            ("assert", [], ":g:`A <g1:A>` :coincide:`≃ <g1:A ≡ g1:D; g1:/ A B / ≡ g1:/ D E />` :g:`D <g1:D>`, :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ D E />` :g:`/ D E / <g1:/ D E />` → :g:`B <g1:B>` :coincide:`≃ <g1:B ≡ g1:E>` :g:`E <g1:E>`"),
+            ("assert", [], ":g:`< B A C ) <g1:< B A C )>` :eq:`= <g1:< B A C ) = g1:< E D F )>` :g:`< E D F ) <g1:< E D F )>`, :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ D F />` :g:`/ D F / <g1:/ D F />` → :g:`/ A C / <g1:/ A C />` :coincide:`≃ <g1:/ A C / ≡ g1:/ D F />` :g:`/ D F / <g1:/ D F />`, :g:`C <g1:C>` :coincide:`≃ <g1:C ≡ g1:F>` :g:`F <g1:F>`"),
+            ("assert", ["I.cn.4"], ":g:`B <g1:B>` :coincide:`≃ <g1:B ≡ g1:E>` :g:`E <g1:E>`, :g:`C <g1:C>` :coincide:`≃ <g1:C ≡ g1:F>` :g:`F <g1:F>` → :g:`/ B C / <g1:/ B C />` :coincide:`≃ <g1:/ B C / ≡ g1:/ E F />` :g:`/ E F / <g1:/ E F />` → :g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ B C / = g1:/ E F />` :g:`/ E F / <g1:/ E F />`"),
+            ("conclude", ["I.cn.4"], ":g:`< A B C > <g1:< A B C >>` :coincide:`≃ <g1:< A B C > ≡ g1:< D E F >>` :g:`< D E F > <g1:< D E F >>` → :g:`< A B C > <g1:< A B C >>` :eq:`= <g1:< A B C > = g1:< D E F >>` :g:`< D E F > <g1:< D E F >>`, :g:`< A B C ) <g1:< A B C )>` :eq:`= <g1:< A B C ) = g1:< D E F )>` :g:`< D E F ) <g1:< D E F )>`, :g:`< A C B ) <g1:< A C B )>` :eq:`= <g1:< A C B ) = g1:< D F E )>` :g:`< D F E ) <g1:< D F E )>`"),
+        ],
+    },
+    "I.5": {
+        "subtype": "theorem",
+        "args": [":g:`< A B C > <g1:< A B C >>`", ":g:`/ A B / <g1:/ A B />`", ":g:`/ A C / <g1:/ A C />`"],
+        "returns": [],
+        "given": ":g:`< A B C > <g1:< A B C >>`, :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ A C />` :g:`/ A C / <g1:/ A C />`",
+        "contract": ":g:`< A B C ) <g1:< A B C )>` :eq:`= <g1:< A B C ) = g1:< A C B )>` :g:`< A C B ) <g1:< A C B )>`, :g:`< C B D ) <g1:< C B D )>` :eq:`= <g1:< C B D ) = g1:< B C E )>` :g:`< B C E ) <g1:< B C E )>`",
+        "steps": [
+            ("given", [], ":g:`< A B C > <g1:< A B C >>`, :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ A C />` :g:`/ A C / <g1:/ A C />`"),
+            ("construct", [], "@fn(I.post.2)(:g:`/ A B / <g1:/ A B />`) → :g:`/ B D / <g1:/ B D />`, @fn(I.post.2)(:g:`/ A C / <g1:/ A C />`) → :g:`/ C E / <g1:/ C E />`"),
+            ("construct", [], "**point**\\ (:g:`/ B D / <g1:/ B D />`) → :g:`F <g1:F>`"),
+            ("construct", [], "@fn(I.3)(:g:`/ A E / <g1:/ A E />`, :g:`/ A F / <g1:/ A F />`) → :g:`/ A G / <g1:/ A G />` (:eq:`= <g1:/ A G / = g1:/ A F />` :g:`/ A F / <g1:/ A F />`)"),
+            ("construct", [], "@fn(I.post.1)(:g:`F <g1:F>`, :g:`C <g1:C>`) → :g:`/ F C / <g1:/ F C />`, @fn(I.post.1)(:g:`G <g1:G>`, :g:`B <g1:B>`) → :g:`/ G B / <g1:/ G B />`"),
+            ("assert", ["I.4"], ":g:`/ F A / <g1:/ F A />` :eq:`= <g1:/ F A / = g1:/ G A />` :g:`/ G A / <g1:/ G A />`, :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ A B />` :g:`/ A B / <g1:/ A B />`, :g:`< F A G ) <g1:< F A G )>` → :g:`/ F C / <g1:/ F C />` :eq:`= <g1:/ F C / = g1:/ G B />` :g:`/ G B / <g1:/ G B />`, :g:`< A C F ) <g1:< A C F )>` :eq:`= <g1:< A C F ) = g1:< A B G )>` :g:`< A B G ) <g1:< A B G )>`, :g:`< A F C ) <g1:< A F C )>` :eq:`= <g1:< A F C ) = g1:< A G B )>` :g:`< A G B ) <g1:< A G B )>`"),
+            ("assert", ["I.cn.3"], ":g:`/ A F / <g1:/ A F />` :eq:`= <g1:/ A F / = g1:/ A G />` :g:`/ A G / <g1:/ A G />`, :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ A C />` :g:`/ A C / <g1:/ A C />` → :g:`/ B F / <g1:/ B F />` :eq:`= <g1:/ B F / = g1:/ C G />` :g:`/ C G / <g1:/ C G />`"),
+            ("assert", ["I.4"], ":g:`/ B F / <g1:/ B F />` :eq:`= <g1:/ B F / = g1:/ C G />` :g:`/ C G / <g1:/ C G />`, :g:`/ F C / <g1:/ F C />` :eq:`= <g1:/ F C / = g1:/ G B />` :g:`/ G B / <g1:/ G B />`, :g:`< B F C ) <g1:< B F C )>` :eq:`= <g1:< B F C ) = g1:< C G B )>` :g:`< C G B ) <g1:< C G B )>` → :g:`< F B C ) <g1:< F B C )>` :eq:`= <g1:< F B C ) = g1:< G C B )>` :g:`< G C B ) <g1:< G C B )>`, :g:`< B C F ) <g1:< B C F )>` :eq:`= <g1:< B C F ) = g1:< C B G )>` :g:`< C B G ) <g1:< C B G )>`"),
+            ("conclude", ["I.cn.3"], ":g:`< A B G ) <g1:< A B G )>` :eq:`= <g1:< A B G ) = g1:< A C F )>` :g:`< A C F ) <g1:< A C F )>`, :g:`< C B G ) <g1:< C B G )>` :eq:`= <g1:< C B G ) = g1:< B C F )>` :g:`< B C F ) <g1:< B C F )>` → :g:`< A B C ) <g1:< A B C )>` :eq:`= <g1:< A B C ) = g1:< A C B )>` :g:`< A C B ) <g1:< A C B )>`"),
+        ],
+    },
+    "I.6": {
+        "subtype": "theorem",
+        "args": [":g:`< A B C > <g1:< A B C >>`", ":g:`< A B C ) <g1:< A B C )>`", ":g:`< A C B ) <g1:< A C B )>`"],
+        "returns": [],
+        "given": ":g:`< A B C > <g1:< A B C >>`, :g:`< A B C ) <g1:< A B C )>` :eq:`= <g1:< A B C ) = g1:< A C B )>` :g:`< A C B ) <g1:< A C B )>`",
+        "contract": ":g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ A C />` :g:`/ A C / <g1:/ A C />`",
+        "steps": [
+            ("given", [], ":g:`< A B C > <g1:< A B C >>`, :g:`< A B C ) <g1:< A B C )>` :eq:`= <g1:< A B C ) = g1:< A C B )>` :g:`< A C B ) <g1:< A C B )>`"),
+            ("assert", [], "? :g:`/ A B / <g1:/ A B />` ≠ :g:`/ A C / <g1:/ A C />` → :g:`/ A B / <g1:/ A B />` > :g:`/ A C / <g1:/ A C />`"),
+            ("construct", [], "@fn(I.3)(:g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />`) → :g:`/ D B / <g1:/ D B />` (:eq:`= <g1:/ D B / = g1:/ A C />` :g:`/ A C / <g1:/ A C />`)"),
+            ("construct", [], "@fn(I.post.1)(:g:`D <g1:D>`, :g:`C <g1:C>`) → :g:`/ D C / <g1:/ D C />`"),
+            ("assert", ["I.4"], ":g:`/ D B / <g1:/ D B />` :eq:`= <g1:/ D B / = g1:/ A C />` :g:`/ A C / <g1:/ A C />`, :g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ B C / = g1:/ C B />` :g:`/ C B / <g1:/ C B />`, :g:`< D B C ) <g1:< D B C )>` :eq:`= <g1:< D B C ) = g1:< A C B )>` :g:`< A C B ) <g1:< A C B )>` → :g:`< D B C > <g1:< D B C >>` :eq:`= <g1:< D B C > = g1:< A C B >>` :g:`< A C B > <g1:< A C B >>`"),
+            ("assert", ["I.cn.5"], ":g:`< D B C > <g1:< D B C >>` < :g:`< A C B > <g1:< A C B >>` ⇒⇐"),
+            ("conclude", [], ":g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ A C />` :g:`/ A C / <g1:/ A C />`"),
+        ],
+    },
+    "I.7": {
+        "subtype": "theorem",
+        "args": [":g:`/ A C / <g1:/ A C />`", ":g:`/ C B / <g1:/ C B />`", ":g:`/ A B / <g1:/ A B />`", ":g:`C <g1:C>`"],
+        "returns": [],
+        "given": ":g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` on :g:`/ A B / <g1:/ A B />` at :g:`C <g1:C>`",
+        "contract": "¬∃ :g:`D <g1:D>` ≠ :g:`C <g1:C>` : :g:`/ C A / <g1:/ C A />` :eq:`= <g1:/ C A / = g1:/ D A />` :g:`/ D A / <g1:/ D A />`, :g:`/ C B / <g1:/ C B />` :eq:`= <g1:/ C B / = g1:/ D B />` :g:`/ D B / <g1:/ D B />`",
+        "steps": [
+            ("given", [], ":g:`/ A C / <g1:/ A C />`, :g:`/ C B / <g1:/ C B />` on :g:`/ A B / <g1:/ A B />` at :g:`C <g1:C>`"),
+            ("assert", [], "? :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` on :g:`/ A B / <g1:/ A B />` at :g:`D <g1:D>` : :g:`/ C A / <g1:/ C A />` :eq:`= <g1:/ C A / = g1:/ D A />` :g:`/ D A / <g1:/ D A />`, :g:`/ C B / <g1:/ C B />` :eq:`= <g1:/ C B / = g1:/ D B />` :g:`/ D B / <g1:/ D B />`"),
+            ("construct", [], "@fn(I.post.1)(:g:`C <g1:C>`, :g:`D <g1:D>`) → :g:`/ C D / <g1:/ C D />`"),
+            ("assert", ["I.5"], ":g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ A D />` :g:`/ A D / <g1:/ A D />` → :g:`< A C D ) <g1:< A C D )>` :eq:`= <g1:< A C D ) = g1:< A D C )>` :g:`< A D C ) <g1:< A D C )>`"),
+            ("assert", ["I.cn.5"], ":g:`< A C D ) <g1:< A C D )>` > :g:`< D C B ) <g1:< D C B )>` → :g:`< A D C ) <g1:< A D C )>` > :g:`< D C B ) <g1:< D C B )>` → :g:`< C D B ) <g1:< C D B )>` ≫ :g:`< D C B ) <g1:< D C B )>`"),
+            ("assert", ["I.5"], ":g:`/ C B / <g1:/ C B />` :eq:`= <g1:/ C B / = g1:/ D B />` :g:`/ D B / <g1:/ D B />` → :g:`< C D B ) <g1:< C D B )>` :eq:`= <g1:< C D B ) = g1:< D C B )>` :g:`< D C B ) <g1:< D C B )>` ⇒⇐"),
+            ("conclude", [], "¬∃ :g:`D <g1:D>` ≠ :g:`C <g1:C>` : :g:`/ C A / <g1:/ C A />` :eq:`= <g1:/ C A / = g1:/ D A />` :g:`/ D A / <g1:/ D A />`, :g:`/ C B / <g1:/ C B />` :eq:`= <g1:/ C B / = g1:/ D B />` :g:`/ D B / <g1:/ D B />`"),
+        ],
+    },
+    "I.8": {
+        "subtype": "theorem",
+        "args": [":g:`< A B C > <g1:< A B C >>`", ":g:`< D E F > <g1:< D E F >>`"],
+        "returns": [],
+        "given": ":g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>`, :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ D E />` :g:`/ D E / <g1:/ D E />`, :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ D F />` :g:`/ D F / <g1:/ D F />`, :g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ B C / = g1:/ E F />` :g:`/ E F / <g1:/ E F />`",
+        "contract": ":g:`< B A C ) <g1:< B A C )>` :eq:`= <g1:< B A C ) = g1:< E D F )>` :g:`< E D F ) <g1:< E D F )>`",
+        "steps": [
+            ("given", [], ":g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>`, :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ D E />` :g:`/ D E / <g1:/ D E />`, :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ D F />` :g:`/ D F / <g1:/ D F />`, :g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ B C / = g1:/ E F />` :g:`/ E F / <g1:/ E F />`"),
+            ("assert", [], ":g:`B <g1:B>` :coincide:`≃ <g1:B ≡ g1:E; g1:/ B C / ≡ g1:/ E F />` :g:`E <g1:E>`, :g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ B C / = g1:/ E F />` :g:`/ E F / <g1:/ E F />` → :g:`C <g1:C>` :coincide:`≃ <g1:C ≡ g1:F>` :g:`F <g1:F>`, :g:`/ B C / <g1:/ B C />` :coincide:`≃ <g1:/ B C / ≡ g1:/ E F />` :g:`/ E F / <g1:/ E F />`"),
+            ("assert", ["I.7"], "? ¬(:g:`/ B A / <g1:/ B A />` :coincide:`≃ <g1:/ B A / ≡ g1:/ E D />; g1:/ A C / ≡ g1:/ D F />` :g:`/ E D / <g1:/ E D />`, :g:`/ A C / <g1:/ A C />` :coincide:`≃ <g1:/ B A / ≡ g1:/ E D />; g1:/ A C / ≡ g1:/ D F />` :g:`/ D F / <g1:/ D F />`) → :g:`/ E G / <g1:/ E G />` :eq:`= <g1:/ E D / = g1:/ E G />; g1:/ D F / = g1:/ G F />` :g:`/ E D / <g1:/ E D />`, :g:`/ G F / <g1:/ G F />` :eq:`= <g1:/ E D / = g1:/ E G />; g1:/ D F / = g1:/ G F />` :g:`/ D F / <g1:/ D F />` ⇒⇐"),
+            ("assert", [], ":g:`/ B A / <g1:/ B A />` :coincide:`≃ <g1:/ B A / ≡ g1:/ E D />; g1:/ A C / ≡ g1:/ D F />` :g:`/ E D / <g1:/ E D />`, :g:`/ A C / <g1:/ A C />` :coincide:`≃ <g1:/ B A / ≡ g1:/ E D />; g1:/ A C / ≡ g1:/ D F />` :g:`/ D F / <g1:/ D F />`"),
+            ("conclude", ["I.cn.4"], ":g:`< B A C ) <g1:< B A C )>` :coincide:`≃ <g1:< B A C ) ≡ g1:< E D F )>` :g:`< E D F ) <g1:< E D F )>` → :g:`< B A C ) <g1:< B A C )>` :eq:`= <g1:< B A C ) = g1:< E D F )>` :g:`< E D F ) <g1:< E D F )>`"),
+        ],
+    },
+    "I.9": {
+        "subtype": "problem",
+        "args": [":g:`< B A C ) <g1:< B A C )>`"],
+        "returns": [":g:`/ A F / <g1:/ A F />`"],
+        "given": ":g:`< B A C ) <g1:< B A C )>`",
+        "contract": ":g:`/ A F / <g1:/ A F />` : :g:`< D A F ) <g1:< D A F )>` :eq:`= <g1:< D A F ) = g1:< E A F )>` :g:`< E A F ) <g1:< E A F )>`",
+        "steps": [
+            ("given", [], ":g:`< B A C ) <g1:< B A C )>`"),
+            ("construct", [], "**point**\\ (:g:`/ A B / <g1:/ A B />`) → :g:`D <g1:D>`"),
+            ("construct", [], "@fn(I.3)(:g:`/ A C / <g1:/ A C />`, :g:`/ A D / <g1:/ A D />`) → :g:`/ A E / <g1:/ A E />` (:eq:`= <g1:/ A E / = g1:/ A D />` :g:`/ A D / <g1:/ A D />`)"),
+            ("construct", [], "@fn(I.post.1)(:g:`D <g1:D>`, :g:`E <g1:E>`) → :g:`/ D E / <g1:/ D E />`"),
+            ("construct", [], "@fn(I.1)(:g:`/ D E / <g1:/ D E />`) → :g:`< D E F > <g1:< D E F >>` (:g:`/ D E / <g1:/ D E />` :eq:`= <g1:/ D E / = g1:/ D F / = g1:/ E F />` :g:`/ D F / <g1:/ D F />` :eq:`= <g1:/ D E / = g1:/ D F / = g1:/ E F />` :g:`/ E F / <g1:/ E F />`)"),
+            ("construct", [], "@fn(I.post.1)(:g:`A <g1:A>`, :g:`F <g1:F>`) → :g:`/ A F / <g1:/ A F />`"),
+            ("conclude", ["I.8"], ":g:`/ D A / <g1:/ D A />` :eq:`= <g1:/ D A / = g1:/ E A />` :g:`/ E A / <g1:/ E A />`, :g:`/ A F / <g1:/ A F />` :eq:`= <g1:/ A F / = g1:/ A F />` :g:`/ A F / <g1:/ A F />`, :g:`/ D F / <g1:/ D F />` :eq:`= <g1:/ D F / = g1:/ E F />` :g:`/ E F / <g1:/ E F />` → :g:`< D A F ) <g1:< D A F )>` :eq:`= <g1:< D A F ) = g1:< E A F )>` :g:`< E A F ) <g1:< E A F )>`"),
+        ],
+    },
+    "I.10": {
+        "subtype": "problem",
+        "args": [":g:`/ A B / <g1:/ A B />`"],
+        "returns": [":g:`D <g1:D>`"],
+        "given": ":g:`/ A B / <g1:/ A B />`",
+        "contract": ":g:`D <g1:D>` ∈ :g:`/ A B / <g1:/ A B />` : :g:`/ A D / <g1:/ A D />` :eq:`= <g1:/ A D / = g1:/ B D />` :g:`/ B D / <g1:/ B D />`",
+        "steps": [
+            ("given", [], ":g:`/ A B / <g1:/ A B />`"),
+            ("construct", [], "@fn(I.1)(:g:`/ A B / <g1:/ A B />`) → :g:`< A B C > <g1:< A B C >>` (:g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ A C / = g1:/ B C />` :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A B / = g1:/ A C / = g1:/ B C />` :g:`/ B C / <g1:/ B C />`)"),
+            ("construct", [], "@fn(I.9)(:g:`< A C B ) <g1:< A C B )>`) → :g:`/ C D / <g1:/ C D />` (:g:`< A C D ) <g1:< A C D )>` :eq:`= <g1:< A C D ) = g1:< B C D )>` :g:`< B C D ) <g1:< B C D )>`)"),
+            ("conclude", ["I.4"], ":g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ B C />` :g:`/ B C / <g1:/ B C />`, :g:`/ C D / <g1:/ C D />` :eq:`= <g1:/ C D / = g1:/ C D />` :g:`/ C D / <g1:/ C D />`, :g:`< A C D ) <g1:< A C D )>` :eq:`= <g1:< A C D ) = g1:< B C D )>` :g:`< B C D ) <g1:< B C D )>` → :g:`/ A D / <g1:/ A D />` :eq:`= <g1:/ A D / = g1:/ B D />` :g:`/ B D / <g1:/ B D />`"),
+        ],
+    },
+    "I.11": {
+        "subtype": "problem",
+        "args": [":g:`/ A B / <g1:/ A B />`", ":g:`C <g1:C>`"],
+        "returns": [":g:`/ C F / <g1:/ C F />`"],
+        "given": ":g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>` ∈ :g:`/ A B / <g1:/ A B />`",
+        "contract": ":g:`/ C F / <g1:/ C F />` ⊥ :g:`/ A B / <g1:/ A B />` (:g:`< D C F ) <g1:< D C F )>` :eq:`= <g1:< D C F ) = g1:< F C E )>` :g:`< F C E ) <g1:< F C E )>`)",
+        "steps": [
+            ("given", [], ":g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>` ∈ :g:`/ A B / <g1:/ A B />`"),
+            ("construct", [], "**point**\\ (:g:`/ A C / <g1:/ A C />`) → :g:`D <g1:D>`"),
+            ("construct", [], "@fn(I.3)(:g:`/ C B / <g1:/ C B />`, :g:`/ C D / <g1:/ C D />`) → :g:`/ C E / <g1:/ C E />` (:eq:`= <g1:/ C E / = g1:/ C D />` :g:`/ C D / <g1:/ C D />`)"),
+            ("construct", [], "@fn(I.1)(:g:`/ D E / <g1:/ D E />`) → :g:`< F D E > <g1:< F D E >>` (:g:`/ D E / <g1:/ D E />` :eq:`= <g1:/ D E / = g1:/ D F / = g1:/ F E />` :g:`/ D F / <g1:/ D F />` :eq:`= <g1:/ D E / = g1:/ D F / = g1:/ F E />` :g:`/ F E / <g1:/ F E />`)"),
+            ("construct", [], "@fn(I.post.1)(:g:`F <g1:F>`, :g:`C <g1:C>`) → :g:`/ F C / <g1:/ F C />`"),
+            ("assert", ["I.8"], ":g:`/ D C / <g1:/ D C />` :eq:`= <g1:/ D C / = g1:/ E C />` :g:`/ E C / <g1:/ E C />`, :g:`/ C F / <g1:/ C F />` :eq:`= <g1:/ C F / = g1:/ C F />` :g:`/ C F / <g1:/ C F />`, :g:`/ D F / <g1:/ D F />` :eq:`= <g1:/ D F / = g1:/ F E />` :g:`/ F E / <g1:/ F E />` → :g:`< D C F ) <g1:< D C F )>` :eq:`= <g1:< D C F ) = g1:< E C F )>` :g:`< E C F ) <g1:< E C F )>`"),
+            ("conclude", ["I.def.10"], ":g:`< D C F ) <g1:< D C F )>` :eq:`= <g1:< D C F ) = g1:< F C E )>` :g:`< F C E ) <g1:< F C E )>` → :g:`/ C F / <g1:/ C F />` ⊥ :g:`/ A B / <g1:/ A B />`"),
+        ],
+    },
+    "I.12": {
+        "subtype": "problem",
+        "args": [":g:`[ A B ] <g1:[ A B ]>`", ":g:`C <g1:C>`"],
+        "returns": [":g:`/ C H / <g1:/ C H />`"],
+        "given": ":g:`[ A B ] <g1:[ A B ]>`, :g:`C <g1:C>` ∉ :g:`[ A B ] <g1:[ A B ]>`",
+        "contract": ":g:`/ C H / <g1:/ C H />` ⊥ :g:`[ A B ] <g1:[ A B ]>` (:g:`< C H G ) <g1:< C H G )>` :eq:`= <g1:< C H G ) = g1:< E H C )>` :g:`< E H C ) <g1:< E H C )>`)",
+        "steps": [
+            ("given", [], ":g:`[ A B ] <g1:[ A B ]>`, :g:`C <g1:C>` ∉ :g:`[ A B ] <g1:[ A B ]>`"),
+            ("construct", [], "**point**\\ (:g:`[ A B ] <g1:[ A B ]>`) → :g:`D <g1:D>`"),
+            ("construct", [], "@fn(I.post.3)(:g:`C <g1:C>`, :g:`D <g1:D>`) → :g:`( C D ) <g1:( C D )>`"),
+            ("intersect", [], ":g:`( C D ) <g1:( C D )>` ∩ :g:`[ A B ] <g1:[ A B ]>` → :g:`E <g1:E>`, :g:`G <g1:G>`"),
+            ("construct", [], "@fn(I.10)(:g:`/ E G / <g1:/ E G />`) → :g:`H <g1:H>` (:g:`/ G H / <g1:/ G H />` :eq:`= <g1:/ G H / = g1:/ H E />` :g:`/ H E / <g1:/ H E />`)"),
+            ("construct", [], "@fn(I.post.1)(:g:`C <g1:C>`, :g:`G <g1:G>`) → :g:`/ C G / <g1:/ C G />`, @fn(I.post.1)(:g:`C <g1:C>`, :g:`H <g1:H>`) → :g:`/ C H / <g1:/ C H />`, @fn(I.post.1)(:g:`C <g1:C>`, :g:`E <g1:E>`) → :g:`/ C E / <g1:/ C E />`"),
+            ("assert", ["I.def.15"], ":g:`( C D ) <g1:( C D )>` → :g:`/ C G / <g1:/ C G />` :eq:`= <g1:/ C G / = g1:/ C E />` :g:`/ C E / <g1:/ C E />`"),
+            ("assert", ["I.8"], ":g:`/ G H / <g1:/ G H />` :eq:`= <g1:/ G H / = g1:/ E H />` :g:`/ E H / <g1:/ E H />`, :g:`/ H C / <g1:/ H C />` :eq:`= <g1:/ H C / = g1:/ H C />` :g:`/ H C / <g1:/ H C />`, :g:`/ C G / <g1:/ C G />` :eq:`= <g1:/ C G / = g1:/ C E />` :g:`/ C E / <g1:/ C E />` → :g:`< C H G ) <g1:< C H G )>` :eq:`= <g1:< C H G ) = g1:< E H C )>` :g:`< E H C ) <g1:< E H C )>`"),
+            ("conclude", ["I.def.10"], ":g:`< C H G ) <g1:< C H G )>` :eq:`= <g1:< C H G ) = g1:< E H C )>` :g:`< E H C ) <g1:< E H C )>` → :g:`/ C H / <g1:/ C H />` ⊥ :g:`[ A B ] <g1:[ A B ]>`"),
+        ],
+    },
+}
+
+
+def _render_curated_proposition(
+    canonical_ref: str,
+    g_name: str,
+    sem_name: str,
+    id_map: Dict[str, str],
+    g_to_sem_name: Dict[str, str],
+    enun_block: Optional[str],
+    picture_blocks: List[str],
+    footer_blocks: List[str],
+) -> str:
+    """Render a curated symbolic proposition (`signature` + `step` blocks) resolving Euclid IDs via `id_map`."""
+    spec = CURATED_PROPOSITIONS[canonical_ref]
+    sig_kind = str(spec.get("subtype", "prop"))
+    args = list(spec.get("args", []))  # type: ignore[arg-type]
+    returns = list(spec.get("returns", []))  # type: ignore[arg-type]
+    given_str = str(spec.get("given", ""))
+    contract_str = str(spec.get("contract", ""))
+    steps_spec = list(spec.get("steps", []))  # type: ignore[arg-type]
+
+    fn_self = f":fn:`{sem_name} <{g_name}>`" if g_name else f"**{sem_name}**"
+    args_str = ", ".join(args)
+    if sig_kind == "problem" and returns:
+        header_line = f"{fn_self}\\ ({args_str}) → {', '.join(returns)}"
+    else:
+        header_line = f"{fn_self}\\ ({args_str})"
+
+    contract_kw = "construct" if sig_kind == "problem" else "prove"
+    sig_lines = [
+        f".. signature:: {sig_kind}",
+        "",
+        f"   | {header_line}",
+        f"   | **given** {given_str}",
+        f"   | **{contract_kw}** {contract_str}",
+    ]
+    sig_block = "\n".join(sig_lines)
+
+    def _expand_fn_tokens(s: str) -> str:
+        def _repl(m: re.Match[str]) -> str:
+            euclid_id = m.group(1).strip()
+            g_target = id_map.get(euclid_id, euclid_id)
+            fn_name = g_to_sem_name.get(g_target) or SEMANTIC_NAMES.get(euclid_id, euclid_id)
+            return _fn_tag(fn_name, g_target)
+
+        return re.sub(r"@fn\(([^)]+)\)", _repl, s)
+
+    header_blocks: List[str] = []
+    if enun_block:
+        header_blocks.append(enun_block)
+    header_blocks.append(sig_block)
+    header_blocks.extend(picture_blocks)
+
+    rendered_steps: List[str] = []
+    for kind, rule_euclid_ids, body_tmpl in steps_spec:
+        g_targets = [id_map.get(eid, eid) for eid in rule_euclid_ids]
+        just_str = _format_rule_justification(g_targets, g_to_sem_name) if g_targets else None
+        arg_str = f"{kind} {just_str}" if just_str else kind
+        body_expanded = _expand_fn_tokens(body_tmpl)
+        rendered_steps.append(f".. step:: {arg_str}\n\n   {body_expanded}")
+
+    return "\n\n".join(header_blocks + rendered_steps + footer_blocks)
+
 
 
 def generate_pseudocode_rst(
@@ -1552,7 +1934,7 @@ def generate_pseudocode_rst(
                     constructed_circles=constructed_circles,
                     circle_aliases=circle_aliases,
                 )
-                if rewritten_dir and rewritten_dir[0] in ("construct", "intersect", "intersect_and_join"):
+                if rewritten_dir and rewritten_dir[0] in ("construct", "intersect", "intersect_and_join", "construct_and_intersect"):
                     r_kind, r_text, used_fn = rewritten_dir
                     r_text = _apply_circle_aliases(r_text, circle_aliases)
                     _update_last_seg(r_text)
@@ -1560,6 +1942,10 @@ def generate_pseudocode_rst(
                         int_text, join_text = r_text.split("|||", 1)
                         step_items.append(("intersect", [], int_text))
                         step_items.append(("construct", [], join_text))
+                    elif r_kind == "construct_and_intersect":
+                        c_text, int_text = r_text.split("|||", 1)
+                        step_items.append(("construct", [], c_text))
+                        step_items.append(("intersect", [], int_text))
                     else:
                         if not used_fn and j_targets and r_kind == "construct":
                             fn_t = j_targets[0]
@@ -1632,10 +2018,21 @@ def generate_pseudocode_rst(
             if kind == "given":
                 given_clauses.append(text)
                 step_items.append(("given", [], text))
+            elif kind == "given_and_construct":
+                g_text, c_text = text.split("|||", 1)
+                given_clauses.append(g_text)
+                step_items.append(("given", [], g_text))
+                step_items.append(("construct", [], c_text))
+                if canonical_ref == "I.7" and not goal_clauses:
+                    goal_clauses.append(f"distinct :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` on the same side with :g:`/ C A / <g1:/ C A />` :eq:`equal <g1:/ C A / = g1:/ D A /; g1:/ C B / = g1:/ D B />` to :g:`/ D A / <g1:/ D A />` and :g:`/ C B / <g1:/ C B />` to :g:`/ D B / <g1:/ D B />` cannot exist")
             elif kind == "intersect_and_join":
                 int_text, join_text = text.split("|||", 1)
                 step_items.append(("intersect", [], int_text))
                 step_items.append(("construct", [], join_text))
+            elif kind == "construct_and_intersect":
+                c_text, int_text = text.split("|||", 1)
+                step_items.append(("construct", [], c_text))
+                step_items.append(("intersect", [], int_text))
             elif kind == "construct":
                 # If a general construct step has a justification target not yet embedded as :fn:, embed it!
                 if not used_fn and j_targets and ":fn:`" not in text:
@@ -1666,6 +2063,18 @@ def generate_pseudocode_rst(
     sem_name = g_to_sem_name.get(g_name) or get_semantic_name(
         canonical_ref, node_type, subtype, tight_enun_text
     )
+    if canonical_ref in CURATED_PROPOSITIONS:
+        return _render_curated_proposition(
+            canonical_ref,
+            g_name,
+            sem_name,
+            id_map,
+            g_to_sem_name,
+            enun_block,
+            picture_blocks,
+            footer_blocks,
+        )
+
     construct_bodies = [b for k, _, b in step_items if k == "construct"]
     sig_block = _build_signature_block(
         canonical_ref,
@@ -1690,7 +2099,10 @@ def generate_pseudocode_rst(
         just_str = _format_rule_justification(j_targets, g_to_sem_name) if j_targets else None
         arg_str = f"{kind} {just_str}" if just_str else kind
         clean_body = " ".join(l.strip() for l in body.splitlines() if l.strip())
+        if kind in ("given", "assert", "conclude"):
+            clean_body = _symbolize_step_text(clean_body)
         rendered_steps.append(f".. step:: {arg_str}\n\n   {clean_body}")
 
     all_parts = header_blocks + rendered_steps + footer_blocks
     return "\n\n".join(all_parts)
+

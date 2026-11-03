@@ -12,7 +12,7 @@ G.154 inscribe circle in triangle — Code
 
 .. enunciation::
 
-   Inscribe in a given :term:`triangle <G.11>` a :term:`circle <G.10>`.
+   Inscribe in a given :term:`triangle <G.12>` a :term:`circle <G.10>`.
 
 .. picture:: g1.svg
 

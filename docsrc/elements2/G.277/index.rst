@@ -40,35 +40,35 @@ G.277 numbers prime number
 
 .. step:: assert
 
-   If :g:`C <g1:C>`, :g:`B <g1:B>` are not prime to one another, some number will measure :g:`C <g1:C>`, :g:`B <g1:B>`.
+   If :g:`C <g1:C>`, :g:`B <g1:B>` are not prime to one another, some number will measure :g:`C <g1:C>`, :g:`B <g1:B>`
 
 .. step:: assert
 
-   Let a number measure them, and let it be :g:`D <g1:D>`.
+   Let a number measure them, and let it be :g:`D <g1:D>`
 
 .. step:: assert
 
-   Since :g:`D <g1:D>` measures :g:`C <g1:C>`, and :g:`C <g1:C>` measures :g:`A <g1:A>`,
+   :g:`D <g1:D>` measures :g:`C <g1:C>`, and :g:`C <g1:C>` measures :g:`A <g1:A>`,
 
 .. step:: assert
 
-   Therefore :g:`D <g1:D>` also measures :g:`A <g1:A>`.
+   :g:`D <g1:D>` also measures :g:`A <g1:A>`
 
 .. step:: assert
 
-   It also measures :g:`B <g1:B>` ;
+   It also measures :g:`B <g1:B>`
 
 .. step:: assert ∵ numbers_prime_measured_def <G.249>
 
-   Therefore :g:`D <g1:D>` measures :g:`A <g1:A>`, :g:`B <g1:B>` which are prime to one another : which is impossible.
+   :g:`D <g1:D>` measures :g:`A <g1:A>`, :g:`B <g1:B>` which are prime to one another ⇒⇐
 
 .. step:: assert
 
-   Therefore no number will measure the numbers :g:`C <g1:C>`, :g:`B <g1:B>`.
+   no number will measure the numbers :g:`C <g1:C>`, :g:`B <g1:B>`
 
 .. step:: conclude
 
-   Therefore :g:`C <g1:C>`, :g:`B <g1:B>` are prime to one another.
+   :g:`C <g1:C>`, :g:`B <g1:B>` are prime to one another
 
 Dependency Graph
 ----------------

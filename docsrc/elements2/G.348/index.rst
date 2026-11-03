@@ -10,7 +10,7 @@
 :categories: problem, finding, number-theory
 :category: problem, finding, number-theory
 :tags: book-ix, point, number, proportional, prime-to-one-another, multiply, part-aliquot, square, proportion, reductio-ad-absurdum
-:dependencies: G.63, G.180, G.248, G.273, G.346
+:dependencies: G.63, G.169, G.180, G.248, G.249, G.269, G.273, G.346
 :excerpt: Given two numbers, to investigate whether it is possible to find a third proportional to them.
 
 .. _G.348:
@@ -40,39 +40,39 @@ G.348 numbers investigate whether
 
 .. step:: assert
 
-   Now :g:`A <g1:A>`, :g:`B <g1:B>` are either :term:`prime to one another <G.249>` or not.
+   Now :g:`A <g1:A>`, :g:`B <g1:B>` are either :term:`prime to one another <G.249>` or not
 
 .. step:: assert ∵ numbers_prime_number_ix_16 <G.346>
 
-   And, if they are prime to one another, it has been proved that it is impossible to find a third proportional to them.
+   if they are prime to one another, it has been proved that it is impossible to find a third proportional to them
 
 .. step:: assert
 
-   Next, let :g:`A <g1:A>`, :g:`B <g1:B>` not be prime to one another, and let :g:`B <g1:B>` by :term:`multiplying <G.269>` itself make :g:`C <g1:C>`.
+   Next, let :g:`A <g1:A>`, :g:`B <g1:B>` not be prime to one another, and let :g:`B <g1:B>` by :term:`multiplying <G.269>` itself make :g:`C <g1:C>`
 
 .. step:: assert
 
-   Then :g:`A <g1:A>` either :term:`measures <G.169>` :g:`C <g1:C>` or does not measure it.
+   Then :g:`A <g1:A>` either :term:`measures <G.169>` :g:`C <g1:C>` or does not measure it
 
 .. step:: assert
 
-   First, let it measure it according to :g:`D <g1:D>` ;
+   First, let it measure it according to :g:`D <g1:D>`
 
 .. step:: assert
 
-   Therefore :g:`A <g1:A>` by multiplying :g:`D <g1:D>` has made :g:`C <g1:C>`.
+   :g:`A <g1:A>` by multiplying :g:`D <g1:D>` has made :g:`C <g1:C>`
 
 .. step:: assert
 
-   But, further, :g:`B <g1:B>` has also by multiplying itself made :g:`C <g1:C>` ;
+   But, further, :g:`B <g1:B>` has also by multiplying itself made :g:`C <g1:C>`
 
 .. step:: assert
 
-   Therefore the product of :g:`A <g1:A>`, :g:`D <g1:D>` is equal to the :term:`square <G.63>` on :g:`B <g1:B>`.
+   the product of :g:`A <g1:A>`, :g:`D <g1:D>` is equal to the :term:`square <G.63>` on :g:`B <g1:B>`
 
 .. step:: assert ∵ numbers_proportional_number <G.273>
 
-   Therefore, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`B <g1:B>` to :g:`D <g1:D>` ; therefore a third proportional number :g:`D <g1:D>` has been found to :g:`A <g1:A>`, :g:`B <g1:B>`.
+   as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`B <g1:B>` to :g:`D <g1:D>` ; therefore a third proportional number :g:`D <g1:D>` has been found to :g:`A <g1:A>`, :g:`B <g1:B>`
 
 .. step:: assert
 
@@ -80,23 +80,23 @@ G.348 numbers investigate whether
 
 .. step:: assert
 
-   If possible, let :g:`D <g1:D>`, such third proportional, have been found.
+   If possible, let :g:`D <g1:D>`, such third proportional, have been found
 
 .. step:: assert
 
-   Therefore the product of :g:`A <g1:A>`, :g:`D <g1:D>` is equal to the square on :g:`B <g1:B>`.
+   the product of :g:`A <g1:A>`, :g:`D <g1:D>` is equal to the square on :g:`B <g1:B>`
 
 .. step:: assert
 
-   The square on :g:`B <g1:B>` is :g:`C <g1:C>` ;
+   The square on :g:`B <g1:B>` is :g:`C <g1:C>`
 
 .. step:: assert
 
-   Therefore the product of :g:`A <g1:A>`, :g:`D <g1:D>` is equal to :g:`C <g1:C>`.
+   the product of :g:`A <g1:A>`, :g:`D <g1:D>` is equal to :g:`C <g1:C>`
 
 .. step:: assert
 
-   Hence :g:`A <g1:A>` by multiplying :g:`D <g1:D>` has made :g:`C <g1:C>` ; therefore :g:`A <g1:A>` measures :g:`C <g1:C>` according to :g:`D <g1:D>`.
+   :g:`A <g1:A>` by multiplying :g:`D <g1:D>` has made :g:`C <g1:C>` ; therefore :g:`A <g1:A>` measures :g:`C <g1:C>` according to :g:`D <g1:D>`
 
 .. step:: assert
 
@@ -104,11 +104,11 @@ G.348 numbers investigate whether
 
 .. step:: assert
 
-   Which is absurd.
+   ⇒⇐
 
 .. step:: conclude
 
-   Therefore it is not possible to find a third proportional number to :g:`A <g1:A>`, :g:`B <g1:B>` when :g:`A <g1:A>` does not measure :g:`C <g1:C>`.
+   it is not possible to find a third proportional number to :g:`A <g1:A>`, :g:`B <g1:B>` when :g:`A <g1:A>` does not measure :g:`C <g1:C>`
 
 Dependency Graph
 ----------------
@@ -128,8 +128,8 @@ Dependency Graph
      "G.7" [label="G.7", tooltip="G.7 (I.def.7): A plane surface lies evenly with the lines on itself.", fillcolor="#224422", URL="../G.7/index.html", target="_top"];
      "G.8" [label="G.8", tooltip="G.8 (I.def.13): A boundary is the extremity of anything.", fillcolor="#224422", URL="../G.8/index.html", target="_top"];
      "G.9" [label="G.9", tooltip="G.9 (I.def.14): A figure is that which is contained by any boundary or boundaries.", fillcolor="#224422", URL="../G.9/index.html", target="_top"];
-     "G.11" [label="G.11", tooltip="G.11 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
-     "G.12" [label="G.12", tooltip="G.12 (I.def.20): Of trilateral figures, an equilateral triangle < A B C > has three equal sides, an isosceles triangle < D E F > has two equal sides, and a scalene triangle < G H K > has three uneq...", fillcolor="#224422", URL="../G.12/index.html", target="_top"];
+     "G.12" [label="G.12", tooltip="G.12 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.12/index.html", target="_top"];
+     "G.13" [label="G.13", tooltip="G.13 (I.def.20): Of trilateral figures, an equilateral triangle < A B C > has three equal sides, an isosceles triangle < D E F > has two equal sides, and a scalene triangle < G H K > has three uneq...", fillcolor="#224422", URL="../G.13/index.html", target="_top"];
      "G.22" [label="G.22", tooltip="G.22 (I.def.8): A plane angle is the inclination to one another of two lines or arcs in a plane that meet and do not lie on the same line.", fillcolor="#224422", URL="../G.22/index.html", target="_top"];
      "G.63" [label="G.63", tooltip="G.63 (I.def.22): Of quadrilateral figures, a square is equilateral and right-angled; an oblong is right-angled but not equilateral; a rhombus is equilateral but not right-angled; a rhomboid has opp...", fillcolor="#224422", URL="../G.63/index.html", target="_top"];
      "G.169" [label="G.169", tooltip="G.169 (V.def.1): A magnitude is apart of a magnitude, the less of the greater, when it measures the greater.", fillcolor="#224422", URL="../G.169/index.html", target="_top"];
@@ -177,19 +177,21 @@ Dependency Graph
      "G.4" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
+     "G.7" -> "G.2";
      "G.22" -> "G.2";
      "G.4" -> "G.3";
      "G.8" -> "G.3";
      "G.7" -> "G.4";
-     "G.11" -> "G.4";
+     "G.12" -> "G.4";
      "G.22" -> "G.4";
      "G.7" -> "G.5";
      "G.22" -> "G.7";
      "G.9" -> "G.8";
+     "G.12" -> "G.9";
      "G.187" -> "G.9";
-     "G.12" -> "G.11";
-     "G.63" -> "G.11";
+     "G.13" -> "G.12";
      "G.63" -> "G.12";
+     "G.63" -> "G.13";
      "G.63" -> "G.22";
      "G.348" -> "G.63";
      "G.170" -> "G.169";
@@ -198,13 +200,21 @@ Dependency Graph
      "G.251" -> "G.169";
      "G.253" -> "G.169";
      "G.254" -> "G.169";
+     "G.255" -> "G.169";
      "G.256" -> "G.169";
      "G.268" -> "G.169";
+     "G.270" -> "G.169";
+     "G.271" -> "G.169";
      "G.274" -> "G.169";
+     "G.275" -> "G.169";
      "G.283" -> "G.169";
+     "G.346" -> "G.169";
+     "G.348" -> "G.169";
      "G.171" -> "G.170";
      "G.176" -> "G.170";
+     "G.183" -> "G.170";
      "G.185" -> "G.170";
+     "G.186" -> "G.170";
      "G.257" -> "G.170";
      "G.186" -> "G.171";
      "G.180" -> "G.176";
@@ -214,13 +224,19 @@ Dependency Graph
      "G.272" -> "G.176";
      "G.274" -> "G.176";
      "G.275" -> "G.176";
+     "G.346" -> "G.176";
      "G.183" -> "G.180";
+     "G.263" -> "G.180";
      "G.266" -> "G.180";
      "G.273" -> "G.180";
      "G.348" -> "G.180";
      "G.182" -> "G.181";
      "G.194" -> "G.181";
      "G.265" -> "G.181";
+     "G.268" -> "G.181";
+     "G.274" -> "G.181";
+     "G.275" -> "G.181";
+     "G.346" -> "G.181";
      "G.183" -> "G.182";
      "G.273" -> "G.183";
      "G.186" -> "G.184";
@@ -231,11 +247,18 @@ Dependency Graph
      "G.262" -> "G.194";
      "G.266" -> "G.194";
      "G.268" -> "G.194";
+     "G.270" -> "G.194";
+     "G.271" -> "G.194";
      "G.248" -> "G.247";
      "G.249" -> "G.247";
      "G.250" -> "G.247";
+     "G.251" -> "G.247";
+     "G.255" -> "G.247";
      "G.268" -> "G.247";
      "G.269" -> "G.247";
+     "G.270" -> "G.247";
+     "G.271" -> "G.247";
+     "G.275" -> "G.247";
      "G.283" -> "G.247";
      "G.250" -> "G.248";
      "G.251" -> "G.248";
@@ -260,20 +283,31 @@ Dependency Graph
      "G.348" -> "G.248";
      "G.250" -> "G.249";
      "G.251" -> "G.249";
+     "G.255" -> "G.249";
      "G.275" -> "G.249";
      "G.346" -> "G.249";
+     "G.348" -> "G.249";
      "G.251" -> "G.250";
      "G.255" -> "G.251";
+     "G.254" -> "G.253";
      "G.255" -> "G.253";
+     "G.256" -> "G.253";
      "G.257" -> "G.253";
+     "G.258" -> "G.253";
      "G.261" -> "G.253";
      "G.262" -> "G.253";
      "G.263" -> "G.253";
+     "G.265" -> "G.253";
+     "G.266" -> "G.253";
+     "G.283" -> "G.253";
      "G.255" -> "G.254";
      "G.258" -> "G.254";
      "G.261" -> "G.254";
      "G.262" -> "G.254";
      "G.263" -> "G.254";
+     "G.265" -> "G.254";
+     "G.266" -> "G.254";
+     "G.274" -> "G.254";
      "G.274" -> "G.255";
      "G.257" -> "G.256";
      "G.263" -> "G.256";
@@ -298,6 +332,8 @@ Dependency Graph
      "G.270" -> "G.269";
      "G.271" -> "G.269";
      "G.272" -> "G.269";
+     "G.273" -> "G.269";
+     "G.348" -> "G.269";
      "G.272" -> "G.270";
      "G.275" -> "G.270";
      "G.272" -> "G.271";

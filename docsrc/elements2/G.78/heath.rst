@@ -12,7 +12,7 @@ G.78 right, obtuse, and acute-angled triangles — Heath
 
 .. enunciation::
 
-   Further, of :term:`trilateral figures <G.11>`, a :term:`**right-angled triangle** <right-angled-triangle>` is that which has a :term:`right angle <G.32>`, an :term:`**obtuse-angled triangle** <obtuse-angled-triangle>` that which has an :term:`obtuse angle <G.76>`, and an :term:`**acute-angled triangle** <acute-angled-triangle>` that which has its three :term:`angles <G.22>` :term:`acute <G.77>`.
+   Further, of :term:`trilateral figures <G.12>`, a :term:`**right-angled triangle** <right-angled-triangle>` is that which has a :term:`right angle <G.33>`, an :term:`**obtuse-angled triangle** <obtuse-angled-triangle>` that which has an :term:`obtuse angle <G.76>`, and an :term:`**acute-angled triangle** <acute-angled-triangle>` that which has its three :term:`angles <G.22>` :term:`acute <G.77>`.
 
 Dependency Graph
 ----------------
@@ -30,9 +30,11 @@ Dependency Graph
      "G.4" [label="G.4", tooltip="G.4 (I.def.4): A segment / A B / is a portion of a line [ A B ] between two points A, B on the line.", fillcolor="#224422", URL="../G.4/index.html", target="_top"];
      "G.5" [label="G.5", tooltip="G.5 (I.def.5): A surface is that which has length and breadth only.", fillcolor="#224422", URL="../G.5/index.html", target="_top"];
      "G.7" [label="G.7", tooltip="G.7 (I.def.7): A plane surface lies evenly with the lines on itself.", fillcolor="#224422", URL="../G.7/index.html", target="_top"];
-     "G.11" [label="G.11", tooltip="G.11 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
+     "G.8" [label="G.8", tooltip="G.8 (I.def.13): A boundary is the extremity of anything.", fillcolor="#224422", URL="../G.8/index.html", target="_top"];
+     "G.9" [label="G.9", tooltip="G.9 (I.def.14): A figure is that which is contained by any boundary or boundaries.", fillcolor="#224422", URL="../G.9/index.html", target="_top"];
+     "G.12" [label="G.12", tooltip="G.12 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.12/index.html", target="_top"];
      "G.22" [label="G.22", tooltip="G.22 (I.def.8): A plane angle is the inclination to one another of two lines or arcs in a plane that meet and do not lie on the same line.", fillcolor="#224422", URL="../G.22/index.html", target="_top"];
-     "G.32" [label="G.32", tooltip="G.32 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.32/index.html", target="_top"];
+     "G.33" [label="G.33", tooltip="G.33 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.33/index.html", target="_top"];
      "G.76" [label="G.76", tooltip="G.76 (I.def.11): An obtuse angle is greater than a right angle.", fillcolor="#224422", URL="../G.76/index.html", target="_top"];
      "G.77" [label="G.77", tooltip="G.77 (I.def.12): An acute angle is less than a right angle.", fillcolor="#224422", URL="../G.77/index.html", target="_top"];
      "G.78" [label="G.78", tooltip="G.78 (I.def.21): A right-angled triangle has a right angle, an obtuse-angled triangle has an obtuse angle, and an acute-angled triangle has three acute angles.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
@@ -41,22 +43,27 @@ Dependency Graph
      "G.4" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
+     "G.7" -> "G.2";
      "G.22" -> "G.2";
+     "G.33" -> "G.2";
      "G.4" -> "G.3";
+     "G.8" -> "G.3";
      "G.7" -> "G.4";
-     "G.11" -> "G.4";
+     "G.12" -> "G.4";
      "G.22" -> "G.4";
-     "G.32" -> "G.4";
+     "G.33" -> "G.4";
      "G.7" -> "G.5";
      "G.22" -> "G.7";
-     "G.78" -> "G.11";
-     "G.32" -> "G.22";
+     "G.9" -> "G.8";
+     "G.12" -> "G.9";
+     "G.78" -> "G.12";
+     "G.33" -> "G.22";
      "G.76" -> "G.22";
      "G.77" -> "G.22";
      "G.78" -> "G.22";
-     "G.76" -> "G.32";
-     "G.77" -> "G.32";
-     "G.78" -> "G.32";
+     "G.76" -> "G.33";
+     "G.77" -> "G.33";
+     "G.78" -> "G.33";
      "G.78" -> "G.76";
      "G.78" -> "G.77";
    }

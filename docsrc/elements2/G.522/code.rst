@@ -12,7 +12,7 @@ G.522 segment right angles — Code
 
 .. enunciation::
 
-   If a :term:`segment <G.4>` be :term:`at right angles <G.32>` to any :term:`plane <G.7>`, all the planes through it is :term:`at right angles to the same plane <G.505>`.
+   If a :term:`segment <G.4>` be :term:`at right angles <G.33>` to any :term:`plane <G.7>`, all the planes through it is :term:`at right angles to the same plane <G.505>`.
 
 .. picture:: g1.svg
 

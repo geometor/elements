@@ -10,7 +10,7 @@
 :categories: theorem, proof, number-theory
 :category: theorem, proof, number-theory
 :tags: book-vii, point, number, multiply, part-aliquot, unit, alternando, equality
-:dependencies: G.248, G.268, G.269
+:dependencies: G.169, G.194, G.247, G.248, G.268, G.269
 :excerpt: If two numbers by multiplying one another make certain numbers, the numbers so produced are equal.
 
 .. _G.270:
@@ -29,7 +29,7 @@ G.270 numbers multiplying make
 
    | :fn:`numbers_multiplying_make <G.270>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`)
    | **given** :g:`A <g1:A>`, :g:`B <g1:B>` be two numbers, let :g:`A <g1:A>` by multiplying :g:`B <g1:B>` make :g:`C <g1:C>`, :g:`B <g1:B>` by multiplying :g:`A <g1:A>` make :g:`D <g1:D>`
-   | **prove** :g:`C <g1:C>` is :eq:`equal <g1:C = g1:D>` to :g:`D <g1:D>`
+   | **prove** :g:`C <g1:C>` :eq:`= <g1:C = g1:D>` :g:`D <g1:D>`
 
 .. picture:: g1.svg
    :alt: Proposition 16 Diagram
@@ -40,51 +40,51 @@ G.270 numbers multiplying make
 
 .. step:: assert
 
-   Since :g:`A <g1:A>` by multiplying :g:`B <g1:B>` has made :g:`C <g1:C>`,
+   :g:`A <g1:A>` by multiplying :g:`B <g1:B>` has made :g:`C <g1:C>`,
 
 .. step:: assert
 
-   Therefore :g:`B <g1:B>` :term:`measures <G.169>` :g:`C <g1:C>` according to the :term:`units <G.247>` in :g:`A <g1:A>`.
+   :g:`B <g1:B>` measures :g:`C <g1:C>` according to the units in :g:`A <g1:A>`
 
 .. step:: assert
 
-   The unit :g:`E <g1:E>` also measures the number :g:`A <g1:A>` according to the units in it;
+   The :term:`unit <G.247>` :g:`E <g1:E>` also :term:`measures <G.169>` the number :g:`A <g1:A>` according to the units in it
 
 .. step:: assert
 
-   Therefore the unit :g:`E <g1:E>` measures :g:`A <g1:A>` the same number of times that :g:`B <g1:B>` measures :g:`C <g1:C>`.
+   the unit :g:`E <g1:E>` measures :g:`A <g1:A>` the same number of times that :g:`B <g1:B>` measures :g:`C <g1:C>`
 
 .. step:: assert ∵ unit_measure_number <G.268>
 
-   Therefore, :term:`alternately <G.194>`, the unit :g:`E <g1:E>` measures the number :g:`B <g1:B>` the same number of times that :g:`A <g1:A>` measures :g:`C <g1:C>`.
+   :term:`alternately <G.194>`, the unit :g:`E <g1:E>` measures the number :g:`B <g1:B>` the same number of times that :g:`A <g1:A>` measures :g:`C <g1:C>`
 
 .. step:: assert
 
-   Since :g:`B <g1:B>` by multiplying :g:`A <g1:A>` has made :g:`D <g1:D>`,
+   :g:`B <g1:B>` by multiplying :g:`A <g1:A>` has made :g:`D <g1:D>`,
 
 .. step:: assert
 
-   Therefore :g:`A <g1:A>` measures :g:`D <g1:D>` according to the units in :g:`B <g1:B>`.
+   :g:`A <g1:A>` measures :g:`D <g1:D>` according to the units in :g:`B <g1:B>`
 
 .. step:: assert
 
-   The unit :g:`E <g1:E>` also measures :g:`B <g1:B>` according to the units in it;
+   The unit :g:`E <g1:E>` also measures :g:`B <g1:B>` according to the units in it
 
 .. step:: assert
 
-   Therefore the unit :g:`E <g1:E>` measures the number :g:`B <g1:B>` the same number of times that :g:`A <g1:A>` measures :g:`D <g1:D>`.
+   the unit :g:`E <g1:E>` measures the number :g:`B <g1:B>` the same number of times that :g:`A <g1:A>` measures :g:`D <g1:D>`
 
 .. step:: assert
 
-   The unit :g:`E <g1:E>` measured the number :g:`B <g1:B>` the same number of times that :g:`A <g1:A>` measures :g:`C <g1:C>`;
+   The unit :g:`E <g1:E>` measured the number :g:`B <g1:B>` the same number of times that :g:`A <g1:A>` measures :g:`C <g1:C>`
 
 .. step:: assert
 
-   Therefore :g:`A <g1:A>` measures each of the numbers :g:`C <g1:C>`, :g:`D <g1:D>` the same number of times.
+   :g:`A <g1:A>` measures each of the numbers :g:`C <g1:C>`, :g:`D <g1:D>` the same number of times
 
 .. step:: conclude
 
-   Therefore :g:`C <g1:C>` is :eq:`equal <g1:C = g1:D>` to :g:`D <g1:D>`.
+   :g:`C <g1:C>` :eq:`= <g1:C = g1:D>` :g:`D <g1:D>`
 
 Dependency Graph
 ----------------
@@ -98,6 +98,8 @@ Dependency Graph
      rankdir="TB";
      "G.169" [label="G.169", tooltip="G.169 (V.def.1): A magnitude is apart of a magnitude, the less of the greater, when it measures the greater.", fillcolor="#224422", URL="../G.169/index.html", target="_top"];
      "G.170" [label="G.170", tooltip="G.170 (V.def.2): The greater is amultiple of the less when it ismeasured by the less.", fillcolor="#224422", URL="../G.170/index.html", target="_top"];
+     "G.176" [label="G.176", tooltip="G.176 (V.def.5): Magnitudes are said tobe in the same ratio, the first to the second and the third to the fourth, when, if anyequimultiples whatever be taken of the first and third, and any equimul...", fillcolor="#224422", URL="../G.176/index.html", target="_top"];
+     "G.180" [label="G.180", tooltip="G.180 (V.def.6): Let magnitudes which have thesame ratio be calledproportional.", fillcolor="#224422", URL="../G.180/index.html", target="_top"];
      "G.181" [label="G.181", tooltip="G.181 (V.def.11): The termcorresponding magnitudes is used of antecedents in relation to antecedents, and of consequents in relation to consequents.", fillcolor="#224422", URL="../G.181/index.html", target="_top"];
      "G.194" [label="G.194", tooltip="G.194 (V.def.12): Alternate ratio means taking theantecedent in relation to the antecedent and the consequent in relation to the consequent.", fillcolor="#224422", URL="../G.194/index.html", target="_top"];
      "G.247" [label="G.247", tooltip="G.247 (VII.def.1): Anunit is that by virtue of which each of the things that exist is called one.", fillcolor="#224422", URL="../G.247/index.html", target="_top"];
@@ -117,13 +119,20 @@ Dependency Graph
      "G.254" -> "G.169";
      "G.256" -> "G.169";
      "G.268" -> "G.169";
+     "G.270" -> "G.169";
+     "G.176" -> "G.170";
      "G.257" -> "G.170";
+     "G.180" -> "G.176";
+     "G.263" -> "G.180";
      "G.194" -> "G.181";
      "G.265" -> "G.181";
+     "G.268" -> "G.181";
      "G.268" -> "G.194";
+     "G.270" -> "G.194";
      "G.248" -> "G.247";
      "G.268" -> "G.247";
      "G.269" -> "G.247";
+     "G.270" -> "G.247";
      "G.253" -> "G.248";
      "G.256" -> "G.248";
      "G.257" -> "G.248";
@@ -132,10 +141,15 @@ Dependency Graph
      "G.268" -> "G.248";
      "G.269" -> "G.248";
      "G.270" -> "G.248";
+     "G.254" -> "G.253";
+     "G.256" -> "G.253";
      "G.257" -> "G.253";
+     "G.258" -> "G.253";
      "G.263" -> "G.253";
+     "G.265" -> "G.253";
      "G.258" -> "G.254";
      "G.263" -> "G.254";
+     "G.265" -> "G.254";
      "G.257" -> "G.256";
      "G.263" -> "G.256";
      "G.258" -> "G.257";

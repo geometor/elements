@@ -10,7 +10,7 @@
 :categories: theorem, proof, proportions, magnitudes
 :category: theorem, proof, proportions, magnitudes
 :tags: book-v, point, segment, in-the-same-ratio, multiple, corresponding-magnitudes, ratio, equality
-:dependencies: G.170, G.176, G.183, G.190
+:dependencies: G.170, G.176, G.181, G.183, G.190
 :excerpt: Parts have the same ratio as the same multiples of them taken in corresponding order.
 
 .. _G.193:
@@ -39,43 +39,43 @@ G.193 parts ratio multiples
 
 .. step:: assert
 
-   I say that, as :g:`C <g1:C>` is to :g:`F <g1:F>`, so is :g:`/ A B / <g1:/ A B />` to :g:`/ D E / <g1:/ D E />`.
+   I say that, as :g:`C <g1:C>` is to :g:`F <g1:F>`, so is :g:`/ A B / <g1:/ A B />` to :g:`/ D E / <g1:/ D E />`
 
 .. step:: assert
 
-   Since :g:`/ A B / <g1:/ A B />` is the same multiple of :g:`C <g1:C>` that :g:`/ D E / <g1:/ D E />` is of :g:`F <g1:F>`, as many magnitudes as there are in :g:`/ A B / <g1:/ A B />` equal to :g:`C <g1:C>`, so many are there also in :g:`/ D E / <g1:/ D E />` equal to :g:`F <g1:F>`.
+   :g:`/ A B / <g1:/ A B />` is the same multiple of :g:`C <g1:C>` that :g:`/ D E / <g1:/ D E />` is of :g:`F <g1:F>`, as many magnitudes as there are in :g:`/ A B / <g1:/ A B />` equal to :g:`C <g1:C>`, so many are there also in :g:`/ D E / <g1:/ D E />` equal to :g:`F <g1:F>`
 
 .. step:: assert
 
-   Let :g:`/ A B / <g1:/ A B />` be divided into the magnitudes :g:`/ A G / <g1:/ A G />`, :g:`/ G H / <g1:/ G H />`, :g:`/ H B / <g1:/ H B />` :eq:`equal <g1:/ A G / = g1:/ G H / = g1:/ H B / = g1:C>` to :g:`C <g1:C>`, and :g:`/ D E / <g1:/ D E />` into the magnitudes :g:`/ D K / <g1:/ D K />`, :g:`/ K L / <g1:/ K L />`, :g:`/ L E / <g1:/ L E />` :eq:`equal <g1:/ D K / = g1:/ K L / = g1:/ L E / = g1:F>` to :g:`F <g1:F>`
+   Let :g:`/ A B / <g1:/ A B />` be divided into the magnitudes :g:`/ A G / <g1:/ A G />`, :g:`/ G H / <g1:/ G H />`, :g:`/ H B / <g1:/ H B />` :eq:`= <g1:/ A G / = g1:/ G H / = g1:/ H B / = g1:C>` to :g:`C <g1:C>`, and :g:`/ D E / <g1:/ D E />` into the magnitudes :g:`/ D K / <g1:/ D K />`, :g:`/ K L / <g1:/ K L />`, :g:`/ L E / <g1:/ L E />` :eq:`= <g1:/ D K / = g1:/ K L / = g1:/ L E / = g1:F>` to :g:`F <g1:F>`
 
 .. step:: assert
 
-   Then the multitude of the magnitudes :g:`/ A G / <g1:/ A G />`, :g:`/ G H / <g1:/ G H />`, :g:`/ H B / <g1:/ H B />` will be equal to the multitude of the magnitudes :g:`/ D K / <g1:/ D K />`, :g:`/ K L / <g1:/ K L />`, :g:`/ L E / <g1:/ L E />`.
+   Then the multitude of the magnitudes :g:`/ A G / <g1:/ A G />`, :g:`/ G H / <g1:/ G H />`, :g:`/ H B / <g1:/ H B />` will be equal to the multitude of the magnitudes :g:`/ D K / <g1:/ D K />`, :g:`/ K L / <g1:/ K L />`, :g:`/ L E / <g1:/ L E />`
 
 .. step:: assert
 
-   And, since :g:`/ A G / <g1:/ A G />`, :g:`/ G H / <g1:/ G H />`, :g:`/ H B / <g1:/ H B />` are :eq:`equal <g1:/ A G / = g1:/ G H / = g1:/ H B />` to one another, and :g:`/ D K / <g1:/ D K />`, :g:`/ K L / <g1:/ K L />`, :g:`/ L E / <g1:/ L E />` are also :eq:`equal <g1:/ D K / = g1:/ K L / = g1:/ L E />` to one another,
+   since :g:`/ A G / <g1:/ A G />`, :g:`/ G H / <g1:/ G H />`, :g:`/ H B / <g1:/ H B />` :eq:`= <g1:/ A G / = g1:/ G H / = g1:/ H B />`, and :g:`/ D K / <g1:/ D K />`, :g:`/ K L / <g1:/ K L />`, :g:`/ L E / <g1:/ L E />` :eq:`= <g1:/ D K / = g1:/ K L / = g1:/ L E />`,
 
 .. step:: assert ∵ equal_magnitudes_ratio <G.183>
 
-   Therefore, as :g:`/ A G / <g1:/ A G />` is to :g:`/ D K / <g1:/ D K />`, so is :g:`/ G H / <g1:/ G H />` to :g:`/ K L / <g1:/ K L />`, and :g:`/ H B / <g1:/ H B />` to :g:`/ L E / <g1:/ L E />`.
+   as :g:`/ A G / <g1:/ A G />` is to :g:`/ D K / <g1:/ D K />`, so is :g:`/ G H / <g1:/ G H />` to :g:`/ K L / <g1:/ K L />`, and :g:`/ H B / <g1:/ H B />` to :g:`/ L E / <g1:/ L E />`
 
 .. step:: assert ∵ number_magnitudes_proportional <G.190>
 
-   Therefore, as one of the :term:`antecedents <G.181>` is to one of the consequents, so will all the antecedents be to all the consequents
+   as one of the :term:`antecedents <G.181>` is to one of the consequents, so will all the antecedents be to all the consequents
 
 .. step:: assert
 
-   Therefore, as :g:`/ A G / <g1:/ A G />` is to :g:`/ D K / <g1:/ D K />`, so is :g:`/ A B / <g1:/ A B />` to :g:`/ D E / <g1:/ D E />`.
+   as :g:`/ A G / <g1:/ A G />` is to :g:`/ D K / <g1:/ D K />`, so is :g:`/ A B / <g1:/ A B />` to :g:`/ D E / <g1:/ D E />`
 
 .. step:: assert
 
-   :g:`/ A G / <g1:/ A G />` is :eq:`equal <g1:/ A G / = g1:C; g1:/ D K / = g1:F>` to :g:`C <g1:C>` and :g:`/ D K / <g1:/ D K />` to :g:`F <g1:F>`
+   :g:`/ A G / <g1:/ A G />` :eq:`= <g1:/ A G / = g1:C; g1:/ D K / = g1:F>` :g:`C <g1:C>` and :g:`/ D K / <g1:/ D K />` to :g:`F <g1:F>`
 
 .. step:: conclude
 
-   Therefore, as :g:`C <g1:C>` is to :g:`F <g1:F>`, so is :g:`/ A B / <g1:/ A B />` to :g:`/ D E / <g1:/ D E />`.
+   as :g:`C <g1:C>` is to :g:`F <g1:F>`, so is :g:`/ A B / <g1:/ A B />` to :g:`/ D E / <g1:/ D E />`
 
 Dependency Graph
 ----------------
@@ -100,6 +100,8 @@ Dependency Graph
      "G.170" -> "G.169";
      "G.171" -> "G.170";
      "G.176" -> "G.170";
+     "G.183" -> "G.170";
+     "G.190" -> "G.170";
      "G.193" -> "G.170";
      "G.190" -> "G.171";
      "G.180" -> "G.176";
@@ -110,6 +112,7 @@ Dependency Graph
      "G.190" -> "G.180";
      "G.182" -> "G.181";
      "G.190" -> "G.181";
+     "G.193" -> "G.181";
      "G.183" -> "G.182";
      "G.193" -> "G.183";
      "G.193" -> "G.190";

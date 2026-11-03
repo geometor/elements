@@ -10,7 +10,7 @@
 :categories: problem, finding, number-theory
 :category: problem, finding, number-theory
 :tags: book-ix, point, number, proportional, prime-to-one-another, ex-aequali, prime-number, part-aliquot, in-the-same-ratio, corresponding-magnitudes, multiply, proportion, reductio-ad-absurdum
-:dependencies: G.180, G.248, G.267, G.273, G.274, G.275, G.347
+:dependencies: G.169, G.174, G.180, G.248, G.249, G.267, G.269, G.273, G.274, G.275, G.347
 :excerpt: Given three numbers, to investigate when it is possible to find a fourth proportional to them.
 
 .. _G.349:
@@ -52,7 +52,7 @@ G.349 numbers investigate possible
 
 .. step:: assert
 
-   Or they are in continued proportion, and the extremes of them are prime to one another.
+   Or they are in continued proportion, and the extremes of them are prime to one another
 
 .. step:: assert
 
@@ -60,7 +60,7 @@ G.349 numbers investigate possible
 
 .. step:: assert ∵ there_many_numbers_ix_17 <G.347>
 
-   It has been proved that it is impossible to find a fourth proportional number to them.
+   It has been proved that it is impossible to find a fourth proportional number to them
 
 .. step:: assert
 
@@ -68,7 +68,7 @@ G.349 numbers investigate possible
 
 .. step:: assert
 
-   If possible, let :g:`D <g1:D>` have been found, so that, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`, and let it be contrived that, as :g:`B <g1:B>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to :g:`E <g1:E>`.
+   If possible, let :g:`D <g1:D>` have been found, so that, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`, and let it be contrived that, as :g:`B <g1:B>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to :g:`E <g1:E>`
 
 .. step:: assert
 
@@ -76,31 +76,31 @@ G.349 numbers investigate possible
 
 .. step:: assert ∵ there_many_numbers_vii_14 <G.267>
 
-   Therefore, *:term:`ex aequali <G.174>`*, as :g:`A <g1:A>` is to :g:`C <g1:C>`, so is :g:`C <g1:C>` to :g:`E <g1:E>`.
+   *:term:`ex aequali <G.174>`*, as :g:`A <g1:A>` is to :g:`C <g1:C>`, so is :g:`C <g1:C>` to :g:`E <g1:E>`
 
 .. step:: assert ∵ numbers_prime_least, least_numbers_ratio <G.275, G.274>
 
-   :g:`A <g1:A>`, :g:`C <g1:C>` are prime, primes are also least, and the least numbers measure those which have the same ratio, the antecedent the antecedent and the consequent the consequent.
+   :g:`A <g1:A>`, :g:`C <g1:C>` are prime, primes are also least, and the least numbers measure those which have the same ratio, the antecedent the antecedent and the consequent the consequent
 
 .. step:: assert
 
-   Therefore :g:`A <g1:A>` :term:`measures <G.169>` :g:`C <g1:C>` as :term:`antecedent <G.181>` antecedent.
+   :g:`A <g1:A>` measures :g:`C <g1:C>` as antecedent antecedent
 
 .. step:: assert
 
-   It also measures itself ;
+   It also :term:`measures <G.169>` itself
 
 .. step:: assert
 
-   Therefore :g:`A <g1:A>` measures :g:`A <g1:A>`, :g:`C <g1:C>` which are prime to one another : which is impossible.
+   :g:`A <g1:A>` measures :g:`A <g1:A>`, :g:`C <g1:C>` which are prime to one another ⇒⇐
 
 .. step:: assert
 
-   Therefore it is not possible to find a fourth proportional to :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`.†
+   it is not possible to find a fourth proportional to :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`.†
 
 .. step:: assert
 
-   Next, let :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` be again in continued proportion, but let :g:`A <g1:A>`, :g:`C <g1:C>` not be prime to one another.
+   Next, let :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` be again in continued proportion, but let :g:`A <g1:A>`, :g:`C <g1:C>` not be prime to one another
 
 .. step:: assert
 
@@ -108,7 +108,7 @@ G.349 numbers investigate possible
 
 .. step:: assert
 
-   Therefore :g:`A <g1:A>` either measures :g:`D <g1:D>` or does not measure it.
+   :g:`A <g1:A>` either measures :g:`D <g1:D>` or does not measure it
 
 .. step:: assert
 
@@ -116,15 +116,15 @@ G.349 numbers investigate possible
 
 .. step:: assert
 
-   Therefore :g:`A <g1:A>` by multiplying :g:`E <g1:E>` has made :g:`D <g1:D>`.
+   :g:`A <g1:A>` by multiplying :g:`E <g1:E>` has made :g:`D <g1:D>`
 
 .. step:: assert
 
-   But, further, :g:`B <g1:B>` has also by multiplying :g:`C <g1:C>` made :g:`D <g1:D>` ;
+   But, further, :g:`B <g1:B>` has also by multiplying :g:`C <g1:C>` made :g:`D <g1:D>`
 
 .. step:: assert ∵ numbers_proportional_number <G.273>
 
-   Therefore the product of :g:`A <g1:A>`, :g:`E <g1:E>` is equal to the product of :g:`B <g1:B>`, :g:`C <g1:C>` ; therefore, proportionally, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`E <g1:E>` ; therefore :g:`E <g1:E>` has been found a fourth proportional to :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`.
+   the product of :g:`A <g1:A>`, :g:`E <g1:E>` is equal to the product of :g:`B <g1:B>`, :g:`C <g1:C>` ; therefore, proportionally, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`C <g1:C>` to :g:`E <g1:E>` ; therefore :g:`E <g1:E>` has been found a fourth proportional to :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`
 
 .. step:: assert
 
@@ -136,19 +136,19 @@ G.349 numbers investigate possible
 
 .. step:: assert ∵ numbers_proportional_number <G.273>
 
-   Therefore the product of :g:`A <g1:A>`, :g:`E <g1:E>` is equal to the product of :g:`B <g1:B>`, :g:`C <g1:C>`.
+   the product of :g:`A <g1:A>`, :g:`E <g1:E>` is equal to the product of :g:`B <g1:B>`, :g:`C <g1:C>`
 
 .. step:: assert
 
-   The product of :g:`B <g1:B>`, :g:`C <g1:C>` is :g:`D <g1:D>` ;
+   The product of :g:`B <g1:B>`, :g:`C <g1:C>` is :g:`D <g1:D>`
 
 .. step:: assert
 
-   Therefore the product of :g:`A <g1:A>`, :g:`E <g1:E>` is also equal to :g:`D <g1:D>`.
+   the product of :g:`A <g1:A>`, :g:`E <g1:E>` is also equal to :g:`D <g1:D>`
 
 .. step:: assert
 
-   Therefore :g:`A <g1:A>` by multiplying :g:`E <g1:E>` has made :g:`D <g1:D>` ; therefore :g:`A <g1:A>` measures :g:`D <g1:D>` according to :g:`E <g1:E>`, so that :g:`A <g1:A>` measures :g:`D <g1:D>`.
+   :g:`A <g1:A>` by multiplying :g:`E <g1:E>` has made :g:`D <g1:D>` ; therefore :g:`A <g1:A>` measures :g:`D <g1:D>` according to :g:`E <g1:E>`, so that :g:`A <g1:A>` measures :g:`D <g1:D>`
 
 .. step:: assert
 
@@ -156,23 +156,23 @@ G.349 numbers investigate possible
 
 .. step:: assert
 
-   Which is absurd.
+   ⇒⇐
 
 .. step:: assert
 
-   Therefore it is not possible to find a fourth proportional number to :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` when :g:`A <g1:A>` does not measure :g:`D <g1:D>`.
+   it is not possible to find a fourth proportional number to :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` when :g:`A <g1:A>` does not measure :g:`D <g1:D>`
 
 .. step:: assert
 
-   Next, let :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` not be in continued proportion, nor the extremes prime to one another.
+   Next, let :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` not be in continued proportion, nor the extremes prime to one another
 
 .. step:: assert
 
-   Let :g:`B <g1:B>` by multiplying :g:`C <g1:C>` make :g:`D <g1:D>`.
+   Let :g:`B <g1:B>` by multiplying :g:`C <g1:C>` make :g:`D <g1:D>`
 
 .. step:: conclude
 
-   Similarly then it can be proved that, if :g:`A <g1:A>` measures :g:`D <g1:D>`, it is possible to find a fourth proportional to them, but, if it does not measure it, impossible.
+   Similarly then it can be proved that, if :g:`A <g1:A>` measures :g:`D <g1:D>`, it is possible to find a fourth proportional to them, but, if it does not measure it, impossible
 
 Dependency Graph
 ----------------
@@ -244,17 +244,26 @@ Dependency Graph
      "G.251" -> "G.169";
      "G.253" -> "G.169";
      "G.254" -> "G.169";
+     "G.255" -> "G.169";
      "G.256" -> "G.169";
      "G.268" -> "G.169";
+     "G.270" -> "G.169";
+     "G.271" -> "G.169";
      "G.274" -> "G.169";
+     "G.275" -> "G.169";
      "G.283" -> "G.169";
+     "G.347" -> "G.169";
+     "G.349" -> "G.169";
      "G.171" -> "G.170";
      "G.176" -> "G.170";
+     "G.183" -> "G.170";
      "G.185" -> "G.170";
+     "G.186" -> "G.170";
      "G.257" -> "G.170";
      "G.186" -> "G.171";
      "G.174" -> "G.173";
      "G.267" -> "G.174";
+     "G.349" -> "G.174";
      "G.180" -> "G.176";
      "G.183" -> "G.176";
      "G.187" -> "G.176";
@@ -264,6 +273,7 @@ Dependency Graph
      "G.274" -> "G.176";
      "G.275" -> "G.176";
      "G.183" -> "G.180";
+     "G.263" -> "G.180";
      "G.266" -> "G.180";
      "G.273" -> "G.180";
      "G.347" -> "G.180";
@@ -271,6 +281,9 @@ Dependency Graph
      "G.182" -> "G.181";
      "G.194" -> "G.181";
      "G.265" -> "G.181";
+     "G.268" -> "G.181";
+     "G.274" -> "G.181";
+     "G.275" -> "G.181";
      "G.183" -> "G.182";
      "G.273" -> "G.183";
      "G.186" -> "G.184";
@@ -280,12 +293,21 @@ Dependency Graph
      "G.261" -> "G.194";
      "G.262" -> "G.194";
      "G.266" -> "G.194";
+     "G.267" -> "G.194";
      "G.268" -> "G.194";
+     "G.270" -> "G.194";
+     "G.271" -> "G.194";
+     "G.347" -> "G.194";
      "G.248" -> "G.247";
      "G.249" -> "G.247";
      "G.250" -> "G.247";
+     "G.251" -> "G.247";
+     "G.255" -> "G.247";
      "G.268" -> "G.247";
      "G.269" -> "G.247";
+     "G.270" -> "G.247";
+     "G.271" -> "G.247";
+     "G.275" -> "G.247";
      "G.283" -> "G.247";
      "G.250" -> "G.248";
      "G.251" -> "G.248";
@@ -311,20 +333,31 @@ Dependency Graph
      "G.349" -> "G.248";
      "G.250" -> "G.249";
      "G.251" -> "G.249";
+     "G.255" -> "G.249";
      "G.275" -> "G.249";
      "G.347" -> "G.249";
+     "G.349" -> "G.249";
      "G.251" -> "G.250";
      "G.255" -> "G.251";
+     "G.254" -> "G.253";
      "G.255" -> "G.253";
+     "G.256" -> "G.253";
      "G.257" -> "G.253";
+     "G.258" -> "G.253";
      "G.261" -> "G.253";
      "G.262" -> "G.253";
      "G.263" -> "G.253";
+     "G.265" -> "G.253";
+     "G.266" -> "G.253";
+     "G.283" -> "G.253";
      "G.255" -> "G.254";
      "G.258" -> "G.254";
      "G.261" -> "G.254";
      "G.262" -> "G.254";
      "G.263" -> "G.254";
+     "G.265" -> "G.254";
+     "G.266" -> "G.254";
+     "G.274" -> "G.254";
      "G.274" -> "G.255";
      "G.257" -> "G.256";
      "G.263" -> "G.256";
@@ -352,6 +385,8 @@ Dependency Graph
      "G.270" -> "G.269";
      "G.271" -> "G.269";
      "G.272" -> "G.269";
+     "G.273" -> "G.269";
+     "G.349" -> "G.269";
      "G.272" -> "G.270";
      "G.275" -> "G.270";
      "G.272" -> "G.271";

@@ -1,55 +1,47 @@
-"""Programmatic construction for Book I, Proposition 12 (I.12)."""
+"""Programmatic construction for Book I, Proposition 11 (I.11).
+
+To draw a straight line at right angles to a given straight line from a given
+point on it.
+"""
 
 from __future__ import annotations
 
+import sympy as sp
 from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0285.g1 using geometor.model."""
-    model = Model("I.12")
+    """Construct the figure for Book I, Proposition 11 using geometor.model."""
+    model = Model("I.11")
 
-    # Points
-    A = model.set_point(10, -150, classes=["given"], ID="A")
-    G = model.set_point(59, -150, ID="G")
-    H = model.set_point(130, -150, ID="H")
-    E = model.set_point(201, -150, ID="E")
-    B = model.set_point(260, -150, classes=["given"], ID="B")
-    C = model.set_point(130, -110, classes=["given"], ID="C")
-    F = model.set_point(130, -28.5, ID="F")
-    D = model.set_point(175, -177, classes=["given"], ID="D")
-
-    # Construction lines
+    # 1. Given straight line AB and given point C on it
+    A = model.set_point(-sp.Rational(3, 2), 0, classes=["given"], label="A")
+    B = model.set_point(sp.Rational(3, 2), 0, classes=["given"], label="B")
+    C = model.set_point(0, 0, classes=["given"], ID="C")
     model.construct_line(A, B)
 
-    # Construction circles
-    model.construct_circle(C, D)
+    # 2. Take point D at random on AC, and make CE equal to CD [I. 3]
+    D = model.set_point(-1, 0, ID="D")
+    E = model.set_point(1, 0, ID="E")
 
-    # Segments
-    model.set_segment(A, B)
-    model.set_segment(C, H)
-    model.set_segment(C, G)
+    model.set_segment(A, D)
+    model.set_segment(D, C)
+    model.set_segment(A, C)
     model.set_segment(C, E)
-    model.set_segment(G, H)
-    model.set_segment(H, E)
-    model.set_segment(E, G)
-    model.set_segment(A, G)
     model.set_segment(E, B)
-    model.set_segment(C, D)
-    model.set_segment(C, F)
+    model.set_segment(C, B)
+    model.set_segment(D, E)
+    model.set_segment(A, B)
 
-    # Collinear / broken sections
-    model.set_section([G, H, E])
-    model.set_section([A, H, B])
+    # 3. Construct equilateral triangle FDE on DE [I. 1] and join FC
+    F = model.set_point(0, sp.sqrt(3), label="F")
+    model.set_segment(D, F)
+    model.set_segment(E, F)
+    model.set_segment(F, C)
 
-    # Polygons
-    model.set_polygon([C, G, H])
-    model.set_polygon([C, E, H])
-    model.set_polygon([C, G, E])
-
-    # Angles (wedges)
-    model.set_wedge(H, C, C, G)
-    model.set_wedge(H, E, E, C)
+    model.set_polygon([F, D, E])
+    model.set_polygon([D, F, C])
+    model.set_polygon([E, F, C])
 
     return model
 

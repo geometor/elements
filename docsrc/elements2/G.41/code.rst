@@ -12,7 +12,7 @@ G.41 exterior angle of a triangle is greater than interior — Code
 
 .. enunciation::
 
-   In any :term:`triangle <G.11>`, if one side is extended, the exterior :term:`angle <G.22>` is greater than either opposite interior angle.
+   In any :term:`triangle <G.12>`, if one side is extended, the exterior :term:`angle <G.22>` is greater than either opposite interior angle.
 
 .. picture:: g1.svg
 

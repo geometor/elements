@@ -10,7 +10,7 @@
 :categories: theorem, proof, proportions, magnitudes
 :category: theorem, proof, proportions, magnitudes
 :tags: book-v, segment, proportional, separando, componendo, ratio, proportion, reductio-ad-absurdum
-:dependencies: G.180, G.189, G.192, G.196, G.197, G.198
+:dependencies: G.173, G.180, G.189, G.192, G.196, G.197, G.198
 :excerpt: If magnitudes be proportional separando, they is proportional componendo.
 
 .. _G.199:
@@ -40,11 +40,11 @@ G.199 magnitudes proportional separando
 
 .. step:: assert
 
-   If :g:`/ C D / <g1:/ C D />` be not to :g:`/ F D / <g1:/ F D />` as :g:`/ A B / <g1:/ A B />` to :g:`/ E B / <g1:/ E B />`, then, as :g:`/ A B / <g1:/ A B />` is to :g:`/ E B / <g1:/ E B />`, so will :g:`/ C D / <g1:/ C D />` be either to some magnitude less than :g:`/ F D / <g1:/ F D />` or to a greater.
+   If :g:`/ C D / <g1:/ C D />` be not to :g:`/ F D / <g1:/ F D />` as :g:`/ A B / <g1:/ A B />` to :g:`/ E B / <g1:/ E B />`, then, as :g:`/ A B / <g1:/ A B />` is to :g:`/ E B / <g1:/ E B />`, so will :g:`/ C D / <g1:/ C D />` be either to some magnitude less than :g:`/ F D / <g1:/ F D />` or to a greater
 
 .. step:: assert
 
-   First, let it be in that :term:`ratio <G.173>` to a less magnitude :g:`/ G D / <g1:/ G D />`.
+   First, let it be in that :term:`ratio <G.173>` to a less magnitude :g:`/ G D / <g1:/ G D />`
 
 .. step:: assert
 
@@ -52,11 +52,11 @@ G.199 magnitudes proportional separando
 
 .. step:: assert ∵ magnitudes_proportional_componendo <G.198>
 
-   So that they will also be proportional *separando*.
+   So that they will also be proportional *separando*
 
 .. step:: assert
 
-   Therefore, as :g:`/ A E / <g1:/ A E />` is to :g:`/ E B / <g1:/ E B />`, so is :g:`/ C G / <g1:/ C G />` to :g:`/ G D / <g1:/ G D />`.
+   as :g:`/ A E / <g1:/ A E />` is to :g:`/ E B / <g1:/ E B />`, so is :g:`/ C G / <g1:/ C G />` to :g:`/ G D / <g1:/ G D />`
 
 .. step:: assert
 
@@ -64,27 +64,27 @@ G.199 magnitudes proportional separando
 
 .. step:: assert
 
-   As :g:`/ A E / <g1:/ A E />` is to :g:`/ E B / <g1:/ E B />`, so is :g:`/ C F / <g1:/ C F />` to :g:`/ F D / <g1:/ F D />`.
+   As :g:`/ A E / <g1:/ A E />` is to :g:`/ E B / <g1:/ E B />`, so is :g:`/ C F / <g1:/ C F />` to :g:`/ F D / <g1:/ F D />`
 
 .. step:: assert ∵ ratios_ratio <G.189>
 
-   Therefore also, as :g:`/ C G / <g1:/ C G />` is to :g:`/ G D / <g1:/ G D />`, so is :g:`/ C F / <g1:/ C F />` to :g:`/ F D / <g1:/ F D />`.
+   also, as :g:`/ C G / <g1:/ C G />` is to :g:`/ G D / <g1:/ G D />`, so is :g:`/ C F / <g1:/ C F />` to :g:`/ F D / <g1:/ F D />`
 
 .. step:: assert
 
-   The first :g:`/ C G / <g1:/ C G />` is greater than the third :g:`/ C F / <g1:/ C F />`
+   The first :g:`/ C G / <g1:/ C G />` > the third :g:`/ C F / <g1:/ C F />`
 
 .. step:: assert ∵ magnitude_ratio_greater_v_14 <G.192>
 
-   Therefore the second :g:`/ G D / <g1:/ G D />` is also greater than the fourth :g:`/ F D / <g1:/ F D />`.
+   the second :g:`/ G D / <g1:/ G D />` is also greater than the fourth :g:`/ F D / <g1:/ F D />`
 
 .. step:: assert
 
-   It is also less: which is impossible.
+   It is also less ⇒⇐
 
 .. step:: assert
 
-   Therefore, as :g:`/ A B / <g1:/ A B />` is to :g:`/ E B / <g1:/ E B />`, so is not :g:`/ C D / <g1:/ C D />` to a less magnitude than :g:`/ F D / <g1:/ F D />`.
+   as :g:`/ A B / <g1:/ A B />` is to :g:`/ E B / <g1:/ E B />`, so is not :g:`/ C D / <g1:/ C D />` to a less magnitude than :g:`/ F D / <g1:/ F D />`
 
 .. step:: assert
 
@@ -92,7 +92,7 @@ G.199 magnitudes proportional separando
 
 .. step:: conclude
 
-   It is therefore in that ratio to :g:`/ F D / <g1:/ F D />` itself.
+   It is therefore in that ratio to :g:`/ F D / <g1:/ F D />` itself
 
 Dependency Graph
 ----------------
@@ -142,14 +142,21 @@ Dependency Graph
      "G.171" -> "G.170";
      "G.172" -> "G.170";
      "G.176" -> "G.170";
+     "G.183" -> "G.170";
      "G.185" -> "G.170";
+     "G.186" -> "G.170";
+     "G.189" -> "G.170";
+     "G.191" -> "G.170";
+     "G.198" -> "G.170";
      "G.186" -> "G.171";
      "G.198" -> "G.171";
      "G.198" -> "G.172";
      "G.188" -> "G.173";
      "G.189" -> "G.173";
+     "G.199" -> "G.173";
      "G.180" -> "G.176";
      "G.183" -> "G.176";
+     "G.188" -> "G.176";
      "G.189" -> "G.176";
      "G.191" -> "G.176";
      "G.192" -> "G.176";
@@ -166,6 +173,7 @@ Dependency Graph
      "G.186" -> "G.185";
      "G.188" -> "G.185";
      "G.191" -> "G.185";
+     "G.192" -> "G.185";
      "G.188" -> "G.186";
      "G.192" -> "G.186";
      "G.192" -> "G.188";

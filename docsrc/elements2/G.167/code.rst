@@ -12,7 +12,7 @@ G.167 inscribe hexagon in circle — Code
 
 .. enunciation::
 
-   :term:`Inscribe in a given circle <G.148>` an :term:`equilateral <G.12>` and equiangular hexagon.
+   :term:`Inscribe in a given circle <G.148>` an :term:`equilateral <G.13>` and equiangular hexagon.
 
 .. picture:: g1.svg
 

@@ -84,6 +84,7 @@ Dependency Graph
      "G.183" [label="G.183", tooltip="G.183 (V.7): Equal magnitudes have to the same the same ratio, as also has the same to equal magnitudes.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.170" -> "G.169";
      "G.176" -> "G.170";
+     "G.183" -> "G.170";
      "G.180" -> "G.176";
      "G.183" -> "G.176";
      "G.183" -> "G.180";

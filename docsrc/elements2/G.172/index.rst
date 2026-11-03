@@ -40,7 +40,7 @@ G.172 magnitude multiple fifth
 
 .. step:: assert
 
-   Since :g:`/ A B / <g1:/ A B />` is the same multiple of :g:`C <g1:C>` that :g:`/ D E / <g1:/ D E />` is of :g:`F <g1:F>` → therefore, as many magnitudes as there are in :g:`/ A B / <g1:/ A B />` equal to :g:`C <g1:C>`, so many also are there in :g:`/ D E / <g1:/ D E />` equal to :g:`F <g1:F>`.
+   :g:`/ A B / <g1:/ A B />` is the same multiple of :g:`C <g1:C>` that :g:`/ D E / <g1:/ D E />` is of :g:`F <g1:F>` → therefore, as many magnitudes as there are in :g:`/ A B / <g1:/ A B />` equal to :g:`C <g1:C>`, so many also are there in :g:`/ D E / <g1:/ D E />` equal to :g:`F <g1:F>`
 
 .. step:: assert
 
@@ -48,19 +48,19 @@ G.172 magnitude multiple fifth
 
 .. step:: assert
 
-   As many as there are in :g:`/ B G / <g1:/ B G />` equal to :g:`C <g1:C>`, so many are there also in :g:`/ E H / <g1:/ E H />` equal to :g:`F <g1:F>`;
+   As many as there are in :g:`/ B G / <g1:/ B G />` equal to :g:`C <g1:C>`, so many are there also in :g:`/ E H / <g1:/ E H />` equal to :g:`F <g1:F>`
 
 .. step:: assert
 
-   Therefore, as many as there are in the whole :g:`/ A G / <g1:/ A G />` equal to :g:`C <g1:C>`, so many also are there in the whole :g:`/ D H / <g1:/ D H />` equal to :g:`F <g1:F>`.
+   as many as there are in :g:`/ A G / <g1:/ A G />` equal to :g:`C <g1:C>`, so many also are there in :g:`/ D H / <g1:/ D H />` equal to :g:`F <g1:F>`
 
 .. step:: assert
 
-   Therefore, whatever multiple :g:`/ A G / <g1:/ A G />` is of :g:`C <g1:C>`, that multiple also is :g:`/ D H / <g1:/ D H />` of :g:`F <g1:F>`.
+   whatever multiple :g:`/ A G / <g1:/ A G />` is of :g:`C <g1:C>`, that multiple also is :g:`/ D H / <g1:/ D H />` of :g:`F <g1:F>`
 
 .. step:: conclude
 
-   Therefore the sum of the first and fifth, :g:`/ A G / <g1:/ A G />`, is the same multiple of the second, :g:`C <g1:C>`, that the sum of the third and sixth, :g:`/ D H / <g1:/ D H />`, is of the fourth, :g:`F <g1:F>`.
+   the sum of the first and fifth, :g:`/ A G / <g1:/ A G />`, is the same multiple of the second, :g:`C <g1:C>`, that the sum of the third and sixth, :g:`/ D H / <g1:/ D H />`, is of the fourth, :g:`F <g1:F>`
 
 Dependency Graph
 ----------------

@@ -10,7 +10,7 @@
 :categories: problem, finding, number-theory
 :category: problem, finding, number-theory
 :tags: book-vii, point, number, part-aliquot, prime-to-one-another, multiply, unit, prime-number, in-the-same-ratio, corresponding-magnitudes, reductio-ad-absurdum
-:dependencies: G.169, G.248, G.269, G.270, G.271, G.273, G.274, G.275, G.283, G.289
+:dependencies: G.169, G.247, G.248, G.249, G.269, G.270, G.271, G.273, G.274, G.275, G.283, G.289
 :excerpt: Given two numbers, to find the least number which they measure.
 
 .. _G.290:
@@ -43,7 +43,7 @@ G.290 numbers find least
 
 .. step:: assert
 
-   Now :g:`A <g1:A>`, :g:`B <g1:B>` are either :term:`prime to one another <G.249>` or not.
+   Now :g:`A <g1:A>`, :g:`B <g1:B>` are either :term:`prime to one another <G.249>` or not
 
 .. step:: assert
 
@@ -51,23 +51,23 @@ G.290 numbers find least
 
 .. step:: assert ∵ numbers_multiplying_make <G.270>
 
-   Therefore also :g:`B <g1:B>` by multiplying :g:`A <g1:A>` has made :g:`C <g1:C>`.
+   also :g:`B <g1:B>` by multiplying :g:`A <g1:A>` has made :g:`C <g1:C>`
 
 .. step:: assert
 
-   Therefore :g:`A <g1:A>`, :g:`B <g1:B>` measure :g:`C <g1:C>`.
+   :g:`A <g1:A>`, :g:`B <g1:B>` measure :g:`C <g1:C>`
 
 .. step:: assert
 
-   I say next that it is also the least number they measure.
+   I say next that it is also the least number they measure
 
 .. step:: assert
 
-   If not, :g:`A <g1:A>`, :g:`B <g1:B>` will measure some number which is less than :g:`C <g1:C>`.
+   If not, :g:`A <g1:A>`, :g:`B <g1:B>` will measure some number which < :g:`C <g1:C>`
 
 .. step:: assert
 
-   Let them measure :g:`D <g1:D>`.
+   Let them measure :g:`D <g1:D>`
 
 .. step:: assert
 
@@ -75,43 +75,43 @@ G.290 numbers find least
 
 .. step:: assert ∵ number_said_multiply_def <G.269>
 
-   Therefore :g:`A <g1:A>` by multiplying :g:`E <g1:E>` has made :g:`D <g1:D>`, and :g:`B <g1:B>` by multiplying :g:`F <g1:F>` has made :g:`D <g1:D>`.
+   :g:`A <g1:A>` by multiplying :g:`E <g1:E>` has made :g:`D <g1:D>`, and :g:`B <g1:B>` by multiplying :g:`F <g1:F>` has made :g:`D <g1:D>`
 
 .. step:: assert
 
-   Therefore the product of :g:`A <g1:A>`, :g:`E <g1:E>` is equal to the product of :g:`B <g1:B>`, :g:`F <g1:F>`.
+   the product of :g:`A <g1:A>`, :g:`E <g1:E>` is equal to the product of :g:`B <g1:B>`, :g:`F <g1:F>`
 
 .. step:: assert ∵ numbers_proportional_number <G.273>
 
-   Therefore, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`F <g1:F>` to :g:`E <g1:E>`.
+   as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`F <g1:F>` to :g:`E <g1:E>`
 
 .. step:: assert ∵ numbers_prime_least, least_numbers_ratio <G.275, G.274>
 
-   :g:`A <g1:A>`, :g:`B <g1:B>` are prime, primes are also least, and the least measure the numbers which have the same ratio the same number of times, the greater the greater and the less the less.
+   :g:`A <g1:A>`, :g:`B <g1:B>` are prime, primes are also least, and the least measure the numbers which have the same ratio the same number of times, the greater the greater and the less the less
 
 .. step:: assert
 
-   Therefore :g:`B <g1:B>` measures :g:`E <g1:E>`, as :term:`consequent <G.181>` consequent.
+   :g:`B <g1:B>` measures :g:`E <g1:E>`, as consequent consequent
 
 .. step:: assert
 
-   And, since :g:`A <g1:A>` by multiplying :g:`B <g1:B>`, :g:`E <g1:E>` has made :g:`C <g1:C>`, :g:`D <g1:D>`,
+   since :g:`A <g1:A>` by multiplying :g:`B <g1:B>`, :g:`E <g1:E>` has made :g:`C <g1:C>`, :g:`D <g1:D>`,
 
 .. step:: assert ∵ number_multiplying_numbers <G.271>
 
-   Therefore, as :g:`B <g1:B>` is to :g:`E <g1:E>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`.
+   as :g:`B <g1:B>` is to :g:`E <g1:E>`, so is :g:`C <g1:C>` to :g:`D <g1:D>`
 
 .. step:: assert
 
-   :g:`B <g1:B>` measures :g:`E <g1:E>`;
+   :g:`B <g1:B>` measures :g:`E <g1:E>`
 
 .. step:: assert
 
-   Therefore :g:`C <g1:C>` also measures :g:`D <g1:D>`, the greater the less: which is impossible.
+   :g:`C <g1:C>` also measures :g:`D <g1:D>`, the greater the less ⇒⇐
 
 .. step:: assert
 
-   Therefore :g:`A <g1:A>`, :g:`B <g1:B>` do not measure any number less than :g:`C <g1:C>`; therefore :g:`C <g1:C>` is the least that is measured by :g:`A <g1:A>`, :g:`B <g1:B>`.
+   :g:`A <g1:A>`, :g:`B <g1:B>` do not measure any number less than :g:`C <g1:C>`; therefore :g:`C <g1:C>` is the least that is measured by :g:`A <g1:A>`, :g:`B <g1:B>`
 
 .. step:: construct
 
@@ -119,7 +119,7 @@ G.290 numbers find least
 
 .. step:: assert ∵ numbers_proportional_number <G.273>
 
-   Therefore the product of :g:`A <g2:A>`, :g:`E <g2:E>` is equal to the product of :g:`B <g2:B>`, :g:`F <g2:F>`.
+   the product of :g:`A <g2:A>`, :g:`E <g2:E>` is equal to the product of :g:`B <g2:B>`, :g:`F <g2:F>`
 
 .. step:: assert
 
@@ -127,79 +127,79 @@ G.290 numbers find least
 
 .. step:: assert
 
-   Therefore also :g:`B <g2:B>` by multiplying :g:`F <g2:F>` has made :g:`C <g2:C>`;
+   also :g:`B <g2:B>` by multiplying :g:`F <g2:F>` has made :g:`C <g2:C>`
 
 .. step:: assert
 
-   Therefore :g:`A <g2:A>`, :g:`B <g2:B>` measure :g:`C <g2:C>`.
+   :g:`A <g2:A>`, :g:`B <g2:B>` measure :g:`C <g2:C>`
 
 .. step:: assert
 
-   I say next that it is also the least number that they measure.
+   I say next that it is also the least number that they measure
 
 .. step:: assert
 
-   If not, :g:`A <g2:A>`, :g:`B <g2:B>` will measure some number which is less than :g:`C <g2:C>`.
+   If not, :g:`A <g2:A>`, :g:`B <g2:B>` will measure some number which < :g:`C <g2:C>`
 
 .. step:: assert
 
-   Let them measure :g:`D <g2:D>`.
+   Let them measure :g:`D <g2:D>`
 
 .. step:: assert
 
-   And, as many times as :g:`A <g2:A>` measures :g:`D <g2:D>`, so many units let there be in :g:`G <g2:G>`, and, as many times as :g:`B <g2:B>` measures :g:`D <g2:D>`, so many units let there be in :g:`H <g2:H>`.
+   as many times as :g:`A <g2:A>` measures :g:`D <g2:D>`, so many units let there be in :g:`G <g2:G>`, and, as many times as :g:`B <g2:B>` measures :g:`D <g2:D>`, so many units let there be in :g:`H <g2:H>`
 
 .. step:: assert
 
-   Therefore :g:`A <g2:A>` by multiplying :g:`G <g2:G>` has made :g:`D <g2:D>`, and :g:`B <g2:B>` by multiplying :g:`H <g2:H>` has made :g:`D <g2:D>`.
+   :g:`A <g2:A>` by multiplying :g:`G <g2:G>` has made :g:`D <g2:D>`, and :g:`B <g2:B>` by multiplying :g:`H <g2:H>` has made :g:`D <g2:D>`
 
 .. step:: assert
 
-   Therefore the product of :g:`A <g2:A>`, :g:`G <g2:G>` is equal to the product of :g:`B <g2:B>`, :g:`H <g2:H>`;
+   the product of :g:`A <g2:A>`, :g:`G <g2:G>` is equal to the product of :g:`B <g2:B>`, :g:`H <g2:H>`
 
 .. step:: assert ∵ numbers_proportional_number <G.273>
 
-   Therefore, as :g:`A <g2:A>` is to :g:`B <g2:B>`, so is :g:`H <g2:H>` to :g:`G <g2:G>`.
+   as :g:`A <g2:A>` is to :g:`B <g2:B>`, so is :g:`H <g2:H>` to :g:`G <g2:G>`
 
 .. step:: assert
 
-   But, as :g:`A <g2:A>` is to :g:`B <g2:B>`, so is :g:`F <g2:F>` to :g:`E <g2:E>`.
+   But, as :g:`A <g2:A>` is to :g:`B <g2:B>`, so is :g:`F <g2:F>` to :g:`E <g2:E>`
 
 .. step:: assert
 
-   Therefore also, as :g:`F <g2:F>` is to :g:`E <g2:E>`, so is :g:`H <g2:H>` to :g:`G <g2:G>`.
+   also, as :g:`F <g2:F>` is to :g:`E <g2:E>`, so is :g:`H <g2:H>` to :g:`G <g2:G>`
 
 .. step:: assert ∵ least_numbers_ratio <G.274>
 
-   :g:`F <g2:F>`, :g:`E <g2:E>` are least, and the least measure the numbers which have the same ratio the same number of times, the greater the greater and the less the less.
+   :g:`F <g2:F>`, :g:`E <g2:E>` are least, and the least measure the numbers which have the same ratio the same number of times, the greater the greater and the less the less
 
 .. step:: assert
 
-   Therefore :g:`E <g2:E>` measures :g:`G <g2:G>`.
+   :g:`E <g2:E>` measures :g:`G <g2:G>`
 
 .. step:: assert
 
-   And, since :g:`A <g2:A>` by multiplying :g:`E <g2:E>`, :g:`G <g2:G>` has made :g:`C <g2:C>`, :g:`D <g2:D>`,
+   since :g:`A <g2:A>` by multiplying :g:`E <g2:E>`, :g:`G <g2:G>` has made :g:`C <g2:C>`, :g:`D <g2:D>`,
 
 .. step:: assert ∵ number_multiplying_numbers <G.271>
 
-   Therefore, as :g:`E <g2:E>` is to :g:`G <g2:G>`, so is :g:`C <g2:C>` to :g:`D <g2:D>`.
+   as :g:`E <g2:E>` is to :g:`G <g2:G>`, so is :g:`C <g2:C>` to :g:`D <g2:D>`
 
 .. step:: assert
 
-   :g:`E <g2:E>` measures :g:`G <g2:G>`;
+   :g:`E <g2:E>` measures :g:`G <g2:G>`
 
 .. step:: assert
 
-   Therefore :g:`C <g2:C>` also measures :g:`D <g2:D>`, the greater the less: which is impossible.
+   :g:`C <g2:C>` also measures :g:`D <g2:D>`, the greater the less ⇒⇐
 
 .. step:: assert
 
-   Therefore :g:`A <g2:A>`, :g:`B <g2:B>` will not measure any number which is less than :g:`C <g2:C>`.
+   :g:`A <g2:A>`, :g:`B <g2:B>` will not measure any number which < :g:`C <g2:C>`
 
 .. step:: conclude
 
-   Therefore :g:`C <g2:C>` is the least that is measured by :g:`A <g2:A>`, :g:`B <g2:B>`.
+   :g:`C <g2:C>` is the least that is measured by :g:`A <g2:A>`, :g:`B <g2:B>`
 
 Dependency Graph
 ----------------
@@ -271,14 +271,21 @@ Dependency Graph
      "G.252" -> "G.169";
      "G.253" -> "G.169";
      "G.254" -> "G.169";
+     "G.255" -> "G.169";
      "G.256" -> "G.169";
      "G.268" -> "G.169";
+     "G.270" -> "G.169";
+     "G.271" -> "G.169";
      "G.274" -> "G.169";
+     "G.275" -> "G.169";
      "G.283" -> "G.169";
+     "G.289" -> "G.169";
      "G.290" -> "G.169";
      "G.171" -> "G.170";
      "G.176" -> "G.170";
+     "G.183" -> "G.170";
      "G.185" -> "G.170";
+     "G.186" -> "G.170";
      "G.257" -> "G.170";
      "G.186" -> "G.171";
      "G.289" -> "G.173";
@@ -291,11 +298,15 @@ Dependency Graph
      "G.275" -> "G.176";
      "G.289" -> "G.176";
      "G.183" -> "G.180";
+     "G.263" -> "G.180";
      "G.266" -> "G.180";
      "G.273" -> "G.180";
      "G.182" -> "G.181";
      "G.194" -> "G.181";
      "G.265" -> "G.181";
+     "G.268" -> "G.181";
+     "G.274" -> "G.181";
+     "G.275" -> "G.181";
      "G.183" -> "G.182";
      "G.273" -> "G.183";
      "G.186" -> "G.184";
@@ -306,12 +317,21 @@ Dependency Graph
      "G.262" -> "G.194";
      "G.266" -> "G.194";
      "G.268" -> "G.194";
+     "G.270" -> "G.194";
+     "G.271" -> "G.194";
      "G.248" -> "G.247";
      "G.249" -> "G.247";
      "G.250" -> "G.247";
+     "G.251" -> "G.247";
+     "G.255" -> "G.247";
      "G.268" -> "G.247";
      "G.269" -> "G.247";
+     "G.270" -> "G.247";
+     "G.271" -> "G.247";
+     "G.275" -> "G.247";
      "G.283" -> "G.247";
+     "G.289" -> "G.247";
+     "G.290" -> "G.247";
      "G.250" -> "G.248";
      "G.251" -> "G.248";
      "G.252" -> "G.248";
@@ -337,21 +357,33 @@ Dependency Graph
      "G.250" -> "G.249";
      "G.251" -> "G.249";
      "G.252" -> "G.249";
+     "G.255" -> "G.249";
      "G.275" -> "G.249";
+     "G.289" -> "G.249";
+     "G.290" -> "G.249";
      "G.251" -> "G.250";
      "G.252" -> "G.251";
      "G.255" -> "G.251";
      "G.289" -> "G.252";
+     "G.254" -> "G.253";
      "G.255" -> "G.253";
+     "G.256" -> "G.253";
      "G.257" -> "G.253";
+     "G.258" -> "G.253";
      "G.261" -> "G.253";
      "G.262" -> "G.253";
      "G.263" -> "G.253";
+     "G.265" -> "G.253";
+     "G.266" -> "G.253";
+     "G.283" -> "G.253";
      "G.255" -> "G.254";
      "G.258" -> "G.254";
      "G.261" -> "G.254";
      "G.262" -> "G.254";
      "G.263" -> "G.254";
+     "G.265" -> "G.254";
+     "G.266" -> "G.254";
+     "G.274" -> "G.254";
      "G.274" -> "G.255";
      "G.257" -> "G.256";
      "G.263" -> "G.256";
@@ -377,6 +409,7 @@ Dependency Graph
      "G.270" -> "G.269";
      "G.271" -> "G.269";
      "G.272" -> "G.269";
+     "G.273" -> "G.269";
      "G.289" -> "G.269";
      "G.290" -> "G.269";
      "G.272" -> "G.270";

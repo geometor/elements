@@ -10,7 +10,7 @@
 :categories: theorem, proof, number-theory
 :category: theorem, proof, number-theory
 :tags: book-ix, point, composite-number, multiply, number, part-aliquot, unit, composite
-:dependencies: G.248, G.269, G.286
+:dependencies: G.169, G.247, G.248, G.269, G.286
 :excerpt: If a composite number by multiplying any number make some number, the product is solid.
 
 .. _G.336:
@@ -39,11 +39,11 @@ G.336 composite number multiplying
 
 .. step:: assert
 
-   Since :g:`A <g1:A>` is composite,
+   :g:`A <g1:A>` is composite,
 
 .. step:: assert ∵ composite_number_measured_def <G.286>
 
-   It will be :term:`measured <G.169>` by some number.
+   It will be :term:`measured <G.169>` by some number
 
 .. step:: construct
 
@@ -51,27 +51,27 @@ G.336 composite number multiplying
 
 .. step:: assert
 
-   And, as many times as :g:`D <g1:D>` measures :g:`A <g1:A>`, so many :term:`units <G.247>` let there be in :g:`E <g1:E>`.
+   as many times as :g:`D <g1:D>` measures :g:`A <g1:A>`, so many :term:`units <G.247>` let there be in :g:`E <g1:E>`
 
 .. step:: assert
 
-   Since then :g:`D <g1:D>` measures :g:`A <g1:A>` according to the units in :g:`E <g1:E>`,
+   then :g:`D <g1:D>` measures :g:`A <g1:A>` according to the units in :g:`E <g1:E>`,
 
 .. step:: assert ∵ number_said_multiply_def <G.269>
 
-   Therefore :g:`E <g1:E>` by multiplying :g:`D <g1:D>` has made :g:`A <g1:A>`.
+   :g:`E <g1:E>` by multiplying :g:`D <g1:D>` has made :g:`A <g1:A>`
 
 .. step:: assert
 
-   And, since :g:`A <g1:A>` by multiplying :g:`B <g1:B>` has made :g:`C <g1:C>`, and :g:`A <g1:A>` is the product of :g:`D <g1:D>`, :g:`E <g1:E>`,
+   since :g:`A <g1:A>` by multiplying :g:`B <g1:B>` has made :g:`C <g1:C>`, and :g:`A <g1:A>` is the product of :g:`D <g1:D>`, :g:`E <g1:E>`,
 
 .. step:: assert
 
-   Therefore the product of :g:`D <g1:D>`, :g:`E <g1:E>` by multiplying :g:`B <g1:B>` has made :g:`C <g1:C>`.
+   the product of :g:`D <g1:D>`, :g:`E <g1:E>` by multiplying :g:`B <g1:B>` has made :g:`C <g1:C>`
 
 .. step:: conclude
 
-   Therefore :g:`C <g1:C>` is solid, and :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`B <g1:B>` are its sides.
+   :g:`C <g1:C>` is solid, and :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`B <g1:B>` are its sides
 
 Dependency Graph
 ----------------
@@ -86,15 +86,21 @@ Dependency Graph
      "G.169" [label="G.169", tooltip="G.169 (V.def.1): A magnitude is apart of a magnitude, the less of the greater, when it measures the greater.", fillcolor="#224422", URL="../G.169/index.html", target="_top"];
      "G.247" [label="G.247", tooltip="G.247 (VII.def.1): Anunit is that by virtue of which each of the things that exist is called one.", fillcolor="#224422", URL="../G.247/index.html", target="_top"];
      "G.248" [label="G.248", tooltip="G.248 (VII.def.2): Anumber is a multitude composed ofunits.", fillcolor="#224422", URL="../G.248/index.html", target="_top"];
+     "G.253" [label="G.253", tooltip="G.253 (VII.def.3): Anumber is apart of a number, the less of the greater, when itmeasures the greater;", fillcolor="#224422", URL="../G.253/index.html", target="_top"];
      "G.269" [label="G.269", tooltip="G.269 (VII.def.15): Anumber is said tomultiply a number when that which is multiplied is added to itself as many times as there areunits in the other, and thus some number is produced.", fillcolor="#224422", URL="../G.269/index.html", target="_top"];
      "G.286" [label="G.286", tooltip="G.286 (VII.def.13): Acomposite number is that which ismeasured by somenumber.", fillcolor="#224422", URL="../G.286/index.html", target="_top"];
      "G.336" [label="G.336", tooltip="G.336 (IX.7): If a composite number by multiplying any number make some number, the product is solid.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.253" -> "G.169";
      "G.286" -> "G.169";
+     "G.336" -> "G.169";
      "G.248" -> "G.247";
      "G.269" -> "G.247";
+     "G.336" -> "G.247";
+     "G.253" -> "G.248";
      "G.269" -> "G.248";
      "G.286" -> "G.248";
      "G.336" -> "G.248";
+     "G.286" -> "G.253";
      "G.336" -> "G.269";
      "G.336" -> "G.286";
    }

@@ -12,7 +12,7 @@ G.104 circles touch center — Code
 
 .. enunciation::
 
-   If two :term:`circles <G.10>` :term:`touch one another <G.103>`, they will not have the same :term:`center <G.14>`.
+   If two :term:`circles <G.10>` :term:`touch one another <G.103>`, they will not have the same :term:`center <G.11>`.
 
 .. picture:: g1.svg
 

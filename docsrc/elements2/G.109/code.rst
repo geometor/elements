@@ -12,7 +12,7 @@ G.109 circles touch internally — Code
 
 .. enunciation::
 
-   If two :term:`circles <G.10>` :term:`touch one another <G.103>` internally, and their :term:`centres <G.14>` be taken, the :term:`segment <G.4>` joining their centres, if it be also produced, will fall on the :term:`point <G.1>` of contact of the circles.
+   If two :term:`circles <G.10>` :term:`touch one another <G.103>` internally, and their :term:`centres <G.11>` be taken, the :term:`segment <G.4>` joining their centres, if it be also produced, will fall on the :term:`point <G.1>` of contact of the circles.
 
 .. picture:: g1.svg
 

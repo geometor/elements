@@ -12,7 +12,7 @@ G.150 polygon circumscribed about a circle — Heath
 
 .. enunciation::
 
-   A :term:`rectilineal figure <G.11>` is said to be :term:`**circumscribed about a circle** <circumscribed-about-circle>`, when each side of the circumscribed :term:`figure <G.9>` touches the circumference of the :term:`circle <G.10>`.
+   A :term:`rectilineal figure <G.12>` is said to be :term:`**circumscribed about a circle** <circumscribed-about-circle>`, when each side of the circumscribed :term:`figure <G.9>` touches the circumference of the :term:`circle <G.10>`.
 
 Dependency Graph
 ----------------
@@ -34,7 +34,7 @@ Dependency Graph
      "G.8" [label="G.8", tooltip="G.8 (I.def.13): A boundary is the extremity of anything.", fillcolor="#224422", URL="../G.8/index.html", target="_top"];
      "G.9" [label="G.9", tooltip="G.9 (I.def.14): A figure is that which is contained by any boundary or boundaries.", fillcolor="#224422", URL="../G.9/index.html", target="_top"];
      "G.10" [label="G.10", tooltip="G.10 (I.def.15): A circle ( A B ) is a plane figure contained by one arc defined by a center A and a point B establishing its defining radius / A B /, such that all segments / A B /, / A C /, / A D...", fillcolor="#224422", URL="../G.10/index.html", target="_top"];
-     "G.11" [label="G.11", tooltip="G.11 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
+     "G.12" [label="G.12", tooltip="G.12 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.12/index.html", target="_top"];
      "G.150" [label="G.150", tooltip="G.150 (IV.def.4): Apolygon is said to becircumscribed about a circle, when each side of the circumscribedfigure touches the arc of thecircle.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
@@ -43,20 +43,23 @@ Dependency Graph
      "G.3" -> "G.2";
      "G.4" -> "G.2";
      "G.6" -> "G.2";
+     "G.7" -> "G.2";
      "G.4" -> "G.3";
+     "G.6" -> "G.3";
      "G.8" -> "G.3";
      "G.7" -> "G.4";
      "G.10" -> "G.4";
-     "G.11" -> "G.4";
+     "G.12" -> "G.4";
      "G.6" -> "G.5";
      "G.7" -> "G.5";
      "G.10" -> "G.6";
      "G.10" -> "G.7";
      "G.9" -> "G.8";
      "G.10" -> "G.9";
+     "G.12" -> "G.9";
      "G.150" -> "G.9";
      "G.150" -> "G.10";
-     "G.150" -> "G.11";
+     "G.150" -> "G.12";
    }
 
 Required for

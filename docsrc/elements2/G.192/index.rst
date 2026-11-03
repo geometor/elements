@@ -10,7 +10,7 @@
 :categories: theorem, proof, proportions, magnitudes
 :category: theorem, proof, proportions, magnitudes
 :tags: book-v, point, in-the-same-ratio, greater-ratio, ratio, equality
-:dependencies: G.176, G.186, G.188, G.191
+:dependencies: G.176, G.185, G.186, G.188, G.191
 :excerpt: If a first magnitude have to a second the same ratio as a third has to a fourth, and the first be greater than the third, the second is greater than the fourth; if equal, equal; and if less, less.
 
 .. _G.192:
@@ -39,11 +39,11 @@ G.192 magnitude ratio greater
 
 .. step:: assert
 
-   And let :g:`A <g1:A>` be greater than :g:`C <g1:C>`
+   let :g:`A <g1:A>` be greater than :g:`C <g1:C>`
 
 .. step:: assert ∵ unequal_magnitudes_greater <G.186>
 
-   Since :g:`A <g1:A>` is greater than :g:`C <g1:C>`, and :g:`B <g1:B>` is another, chance, magnitude → therefore :g:`A <g1:A>` has to :g:`B <g1:B>` a :term:`greater ratio <G.185>` than :g:`C <g1:C>` has to :g:`B <g1:B>`.
+   :g:`A <g1:A>` > :g:`C <g1:C>`, and :g:`B <g1:B>` is another, chance, magnitude → therefore :g:`A <g1:A>` has to :g:`B <g1:B>` a greater ratio than :g:`C <g1:C>` has to :g:`B <g1:B>`
 
 .. step:: assert
 
@@ -51,23 +51,23 @@ G.192 magnitude ratio greater
 
 .. step:: assert ∵ magnitude_ratio_greater <G.191>
 
-   Therefore :g:`C <g1:C>` has also to :g:`D <g1:D>` a greater ratio than :g:`C <g1:C>` has to :g:`B <g1:B>`.
+   :g:`C <g1:C>` has also to :g:`D <g1:D>` a greater ratio than :g:`C <g1:C>` has to :g:`B <g1:B>`
 
 .. step:: assert ∵ magnitudes_ratio_greater <G.188>
 
-   That to which the same has a greater ratio is less ;
+   That to which the same has a :term:`greater ratio <G.185>` is less
 
 .. step:: assert
 
-   Therefore :g:`D <g1:D>` is less than :g:`B <g1:B>` ; so that :g:`B <g1:B>` is greater than :g:`D <g1:D>`.
+   :g:`D <g1:D>` < :g:`B <g1:B>` ; so that :g:`B <g1:B>` > :g:`D <g1:D>`
 
 .. step:: assert
 
-   Similarly we can prove that, if :g:`A <g1:A>` be :eq:`equal <g1:A = g1:C>` to :g:`C <g1:C>`, :g:`B <g1:B>` will also be :eq:`equal <g1:B = g1:D>` to :g:`D <g1:D>`
+   Similarly we can prove that, if :g:`A <g1:A>` :eq:`= <g1:A = g1:C>` :g:`C <g1:C>`, :g:`B <g1:B>` will also :eq:`= <g1:B = g1:D>` :g:`D <g1:D>`
 
 .. step:: conclude
 
-   And, if :g:`A <g1:A>` be less than :g:`C <g1:C>`, :g:`B <g1:B>` will also be less than :g:`D <g1:D>`.
+   if :g:`A <g1:A>` be less than :g:`C <g1:C>`, :g:`B <g1:B>` will also be less than :g:`D <g1:D>`
 
 Dependency Graph
 ----------------
@@ -108,11 +108,15 @@ Dependency Graph
      "G.170" -> "G.169";
      "G.171" -> "G.170";
      "G.176" -> "G.170";
+     "G.183" -> "G.170";
      "G.185" -> "G.170";
+     "G.186" -> "G.170";
+     "G.191" -> "G.170";
      "G.186" -> "G.171";
      "G.188" -> "G.173";
      "G.180" -> "G.176";
      "G.183" -> "G.176";
+     "G.188" -> "G.176";
      "G.191" -> "G.176";
      "G.192" -> "G.176";
      "G.183" -> "G.180";
@@ -124,6 +128,7 @@ Dependency Graph
      "G.186" -> "G.185";
      "G.188" -> "G.185";
      "G.191" -> "G.185";
+     "G.192" -> "G.185";
      "G.188" -> "G.186";
      "G.192" -> "G.186";
      "G.192" -> "G.188";

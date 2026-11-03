@@ -1,4 +1,4 @@
-"""Programmatic construction for Book I, Proposition 15 (I.15)."""
+"""Programmatic construction for Book I, Proposition 14 (I.14)."""
 
 from __future__ import annotations
 
@@ -6,43 +6,42 @@ from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure 0291.g2 using geometor.model."""
-    model = Model("I.15")
+    """Construct the figure 0290.g1 using geometor.model."""
+    model = Model("I.14")
 
     # Points
-    A = model.set_point(21, -36, classes=["given"], ID="A")
-    C = model.set_point(25, -72.5, classes=["given"], ID="C")
-    E = model.set_point(95, -72.5, ID="E")
-    D = model.set_point(170, -72.5, classes=["given"], ID="D")
-    B = model.set_point(169, -109, classes=["given"], ID="B")
+    C = model.set_point(5, -79.5, classes=["given"], ID="C")
+    B = model.set_point(87, -79.5, classes=["given"], ID="B")
+    D = model.set_point(168, -79.5, classes=["given"], ID="D")
+    A = model.set_point(58, -22, classes=["given"], ID="A")
+    E = model.set_point(150, -18, ID="E")
 
     # Construction lines
-    model.construct_line(A, B)
     model.construct_line(C, D)
+    model.construct_line(A, B)
+    model.construct_line(B, E)
 
     # Segments
     model.set_segment(C, D)
     model.set_segment(A, B)
-    model.set_segment(A, E)
-    model.set_segment(E, B)
-    model.set_segment(C, E)
-    model.set_segment(E, D)
+    model.set_segment(B, E)
+    model.set_segment(B, C)
+    model.set_segment(B, D)
 
     # Collinear / broken sections
-    model.set_section([A, E, B])
-    model.set_section([C, E, D])
+    model.set_section([C, B, D])
+    model.set_section([C, B, E])
 
     # Polygons
-    model.set_polygon([A, E, C])
-    model.set_polygon([D, E, B])
-    model.set_polygon([C, E, B])
-    model.set_polygon([A, E, D])
+    model.set_polygon([C, B, A])
+    model.set_polygon([A, B, E])
+    model.set_polygon([E, B, D])
 
     # Angles (wedges)
-    model.set_wedge(E, A, A, C)
-    model.set_wedge(E, D, D, B)
-    model.set_wedge(E, C, C, B)
-    model.set_wedge(E, A, A, D)
+    model.set_wedge(B, A, A, C)
+    model.set_wedge(B, A, A, D)
+    model.set_wedge(B, A, A, E)
+    model.set_wedge(B, E, E, D)
 
     return model
 

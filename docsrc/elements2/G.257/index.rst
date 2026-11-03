@@ -43,23 +43,23 @@ G.257 number part number
 
 .. step:: assert
 
-   Therefore, as many numbers as there are in :g:`/ B C / <g1:/ B C />` equal to :g:`A <g1:A>`, so many numbers are there also in :g:`/ E F / <g1:/ E F />` equal to :g:`D <g1:D>`.
+   as many numbers as there are in :g:`/ B C / <g1:/ B C />` equal to :g:`A <g1:A>`, so many numbers are there also in :g:`/ E F / <g1:/ E F />` equal to :g:`D <g1:D>`
 
 .. step:: assert
 
-   Let :g:`/ B C / <g1:/ B C />` be divided into the numbers :eq:`equal <g1:/ B G / = g1:/ G C / = g1:A>` to :g:`A <g1:A>`, namely :g:`/ B G / <g1:/ B G />`, :g:`/ G C / <g1:/ G C />`, and :g:`/ E F / <g1:/ E F />` into the numbers :eq:`equal <g1:/ E H / = g1:/ H F / = g1:D>` to :g:`D <g1:D>`, namely :g:`/ E H / <g1:/ E H />`, :g:`/ H F / <g1:/ H F />`
+   Let :g:`/ B C / <g1:/ B C />` be divided into the numbers :eq:`= <g1:/ B G / = g1:/ G C / = g1:A>` to :g:`A <g1:A>`, namely :g:`/ B G / <g1:/ B G />`, :g:`/ G C / <g1:/ G C />`, and :g:`/ E F / <g1:/ E F />` into the numbers :eq:`= <g1:/ E H / = g1:/ H F / = g1:D>` to :g:`D <g1:D>`, namely :g:`/ E H / <g1:/ E H />`, :g:`/ H F / <g1:/ H F />`
 
 .. step:: assert
 
-   Then the multitude of :g:`/ B G / <g1:/ B G />`, :g:`/ G C / <g1:/ G C />` will be equal to the multitude of :g:`/ E H / <g1:/ E H />`, :g:`/ H F / <g1:/ H F />`.
+   Then the multitude of :g:`/ B G / <g1:/ B G />`, :g:`/ G C / <g1:/ G C />` will be equal to the multitude of :g:`/ E H / <g1:/ E H />`, :g:`/ H F / <g1:/ H F />`
 
 .. step:: assert
 
-   And, since :g:`/ B G / <g1:/ B G />` is :eq:`equal <g1:/ B G / = g1:A; g1:/ E H / = g1:D>` to :g:`A <g1:A>`, and :g:`/ E H / <g1:/ E H />` to :g:`D <g1:D>`,
+   since :g:`/ B G / <g1:/ B G />` :eq:`= <g1:/ B G / = g1:A; g1:/ E H / = g1:D>` :g:`A <g1:A>`, and :g:`/ E H / <g1:/ E H />` to :g:`D <g1:D>`,
 
 .. step:: assert
 
-   Therefore :g:`/ B G / <g1:/ B G />`, :g:`/ E H / <g1:/ E H />` are also equal to :g:`A <g1:A>`, :g:`D <g1:D>`.
+   :g:`/ B G / <g1:/ B G />`, :g:`/ E H / <g1:/ E H />` are also equal to :g:`A <g1:A>`, :g:`D <g1:D>`
 
 .. step:: assert
 
@@ -67,19 +67,19 @@ G.257 number part number
 
 .. step:: assert
 
-   :g:`/ G C / <g1:/ G C />`, :g:`/ H F / <g1:/ H F />` are also equal to :g:`A <g1:A>`, :g:`D <g1:D>`.
+   :g:`/ G C / <g1:/ G C />`, :g:`/ H F / <g1:/ H F />` are also equal to :g:`A <g1:A>`, :g:`D <g1:D>`
 
 .. step:: assert
 
-   Therefore, as many numbers as there are in :g:`/ B C / <g1:/ B C />` equal to :g:`A <g1:A>`, so many are there also in :g:`/ B C / <g1:/ B C />`, :g:`/ E F / <g1:/ E F />` equal to :g:`A <g1:A>`, :g:`D <g1:D>`.
+   as many numbers as there are in :g:`/ B C / <g1:/ B C />` equal to :g:`A <g1:A>`, so many are there also in :g:`/ B C / <g1:/ B C />`, :g:`/ E F / <g1:/ E F />` equal to :g:`A <g1:A>`, :g:`D <g1:D>`
 
 .. step:: assert
 
-   Therefore, whatever :term:`multiple <G.170>` :g:`/ B C / <g1:/ B C />` is of :g:`A <g1:A>`, the :term:`same multiple <G.256>` also is the sum of :g:`/ B C / <g1:/ B C />`, :g:`/ E F / <g1:/ E F />` of the sum of :g:`A <g1:A>`, :g:`D <g1:D>`.
+   whatever :term:`multiple <G.170>` :g:`/ B C / <g1:/ B C />` is of :g:`A <g1:A>`, the :term:`same multiple <G.256>` also is the sum of :g:`/ B C / <g1:/ B C />`, :g:`/ E F / <g1:/ E F />` of the sum of :g:`A <g1:A>`, :g:`D <g1:D>`
 
 .. step:: conclude
 
-   Therefore, whatever part :g:`A <g1:A>` is of :g:`/ B C / <g1:/ B C />`, the same part also is the sum of :g:`A <g1:A>`, :g:`D <g1:D>` of the sum of :g:`/ B C / <g1:/ B C />`, :g:`/ E F / <g1:/ E F />`.
+   whatever part :g:`A <g1:A>` is of :g:`/ B C / <g1:/ B C />`, the same part also is the sum of :g:`A <g1:A>`, :g:`D <g1:D>` of the sum of :g:`/ B C / <g1:/ B C />`, :g:`/ E F / <g1:/ E F />`
 
 Dependency Graph
 ----------------
@@ -106,6 +106,7 @@ Dependency Graph
      "G.253" -> "G.248";
      "G.256" -> "G.248";
      "G.257" -> "G.248";
+     "G.256" -> "G.253";
      "G.257" -> "G.253";
      "G.257" -> "G.256";
    }

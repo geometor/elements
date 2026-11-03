@@ -10,7 +10,7 @@
 :categories: theorem, proof, number-theory, proportions
 :category: theorem, proof, number-theory, proportions
 :tags: book-viii, point, number, proportional, multiply, ratio, in-the-same-ratio, ex-aequali, square, proportion, continued-proportion
-:dependencies: G.63, G.180, G.248, G.267, G.269
+:dependencies: G.63, G.173, G.174, G.176, G.180, G.248, G.267, G.269
 :excerpt: If there be as many numbers as we please in continued proportion, and each by multiplying itself make some number, the products is proportional; and, if the original numbers by multiplying the products make certain numbers, the latter is proportional.
 
 .. _G.313:
@@ -44,31 +44,31 @@ G.313 there many numbers
 
 .. step:: assert
 
-   Let :g:`A <g1:A>` by multiplying :g:`B <g1:B>` make :g:`L <g1:L>`, and let the numbers :g:`A <g1:A>`, :g:`B <g1:B>` by multiplying :g:`L <g1:L>` make :g:`M <g1:M>`, :g:`N <g1:N>` respectively.
+   Let :g:`A <g1:A>` by multiplying :g:`B <g1:B>` make :g:`L <g1:L>`, and let the numbers :g:`A <g1:A>`, :g:`B <g1:B>` by multiplying :g:`L <g1:L>` make :g:`M <g1:M>`, :g:`N <g1:N>`
 
 .. step:: assert
 
-   Again let :g:`B <g1:B>` by multiplying :g:`C <g1:C>` make :g:`O <g1:O>`, and let the numbers :g:`B <g1:B>`, :g:`C <g1:C>` by multiplying :g:`O <g1:O>` make :g:`P <g1:P>`, :g:`Q <g1:Q>` respectively.
+   Again let :g:`B <g1:B>` by multiplying :g:`C <g1:C>` make :g:`O <g1:O>`, and let the numbers :g:`B <g1:B>`, :g:`C <g1:C>` by multiplying :g:`O <g1:O>` make :g:`P <g1:P>`, :g:`Q <g1:Q>`
 
 .. step:: assert
 
-   In manner similar to the foregoing, we can prove that :g:`D <g1:D>`, :g:`L <g1:L>`, :g:`E <g1:E>` and :g:`G <g1:G>`, :g:`M <g1:M>`, :g:`N <g1:N>`, :g:`H <g1:H>` are continuously proportional in the :term:`ratio <G.173>` of :g:`A <g1:A>` to :g:`B <g1:B>`, and further :g:`E <g1:E>`, :g:`O <g1:O>`, :g:`F <g1:F>` and :g:`H <g1:H>`, :g:`P <g1:P>`, :g:`Q <g1:Q>`, :g:`K <g1:K>` are continuously proportional in the ratio of :g:`B <g1:B>` to :g:`C <g1:C>`.
+   In manner similar to the foregoing, we can prove that :g:`D <g1:D>`, :g:`L <g1:L>`, :g:`E <g1:E>` and :g:`G <g1:G>`, :g:`M <g1:M>`, :g:`N <g1:N>`, :g:`H <g1:H>` are continuously proportional in the :term:`ratio <G.173>` of :g:`A <g1:A>` to :g:`B <g1:B>`, and further :g:`E <g1:E>`, :g:`O <g1:O>`, :g:`F <g1:F>` and :g:`H <g1:H>`, :g:`P <g1:P>`, :g:`Q <g1:Q>`, :g:`K <g1:K>` are continuously proportional in the ratio of :g:`B <g1:B>` to :g:`C <g1:C>`
 
 .. step:: assert
 
-   As :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`B <g1:B>` to :g:`C <g1:C>`;
+   As :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`B <g1:B>` to :g:`C <g1:C>`
 
 .. step:: assert
 
-   Therefore :g:`D <g1:D>`, :g:`L <g1:L>`, :g:`E <g1:E>` are also :term:`in the same ratio <G.176>` with :g:`E <g1:E>`, :g:`O <g1:O>`, :g:`F <g1:F>`, and further :g:`G <g1:G>`, :g:`M <g1:M>`, :g:`N <g1:N>`, :g:`H <g1:H>` in the same ratio with :g:`H <g1:H>`, :g:`P <g1:P>`, :g:`Q <g1:Q>`, :g:`K <g1:K>`.
+   :g:`D <g1:D>`, :g:`L <g1:L>`, :g:`E <g1:E>` are also in the same ratio with :g:`E <g1:E>`, :g:`O <g1:O>`, :g:`F <g1:F>`, and further :g:`G <g1:G>`, :g:`M <g1:M>`, :g:`N <g1:N>`, :g:`H <g1:H>` in the same ratio with :g:`H <g1:H>`, :g:`P <g1:P>`, :g:`Q <g1:Q>`, :g:`K <g1:K>`
 
 .. step:: assert
 
-   The multitude of :g:`D <g1:D>`, :g:`L <g1:L>`, :g:`E <g1:E>` is equal to the multitude of :g:`E <g1:E>`, :g:`O <g1:O>`, :g:`F <g1:F>`, and that of :g:`G <g1:G>`, :g:`M <g1:M>`, :g:`N <g1:N>`, :g:`H <g1:H>` to that of :g:`H <g1:H>`, :g:`P <g1:P>`, :g:`Q <g1:Q>`, :g:`K <g1:K>`;
+   The multitude of :g:`D <g1:D>`, :g:`L <g1:L>`, :g:`E <g1:E>` is equal to the multitude of :g:`E <g1:E>`, :g:`O <g1:O>`, :g:`F <g1:F>`, and that of :g:`G <g1:G>`, :g:`M <g1:M>`, :g:`N <g1:N>`, :g:`H <g1:H>` to that of :g:`H <g1:H>`, :g:`P <g1:P>`, :g:`Q <g1:Q>`, :g:`K <g1:K>`
 
 .. step:: assert ∵ there_many_numbers_vii_14 <G.267>
 
-   Therefore, *:term:`ex aequali <G.174>`*, as :g:`D <g1:D>` is to :g:`E <g1:E>`, so is :g:`E <g1:E>` to :g:`F <g1:F>`, and, as :g:`G <g1:G>` is to :g:`H <g1:H>`, so is :g:`H <g1:H>` to :g:`K <g1:K>`.
+   *:term:`ex aequali <G.174>`*, as :g:`D <g1:D>` is to :g:`E <g1:E>`, so is :g:`E <g1:E>` to :g:`F <g1:F>`, and, as :g:`G <g1:G>` is to :g:`H <g1:H>`, so is :g:`H <g1:H>` to :g:`K <g1:K>`
 
 .. step:: assert
 
@@ -96,19 +96,19 @@ G.313 there many numbers
 
 .. step:: assert
 
-   :person:`Heiberg <heiberg>` brackets the words added to the enunciation which extend the theorem to any powers. The words are “and this always occurs with the extremes” (καὶ ἀεὶ περὶ τοὺς ἄκρους τοῦτο συμβαίνει). They seem to be rightly suspected on the same grounds as the same words added to the enunciation of VII. 27. There is no allusion to them in the proof, much less any proof of the extension.
+   :person:`Heiberg <heiberg>` brackets the words added to the enunciation which extend the theorem to any powers. The words are “and this always occurs with the extremes” (καὶ ἀεὶ περὶ τοὺς ἄκρους τοῦτο συμβαίνει). They seem to be rightly suspected on the same grounds as the same words added to the enunciation of VII. 27. There is no allusion to them in the proof, much less any proof of the extension
 
 .. step:: assert
 
-   Euclid forms, besides the :term:`squares <G.63>` and cubes of the given numbers, the products $ab$, $a^2b$, $ab^2$, $bc$, $b^2c$, $bc^2$. When he says that “we prove in manner similar to the foregoing,” he indicates successive uses of VII. 17, 18 as in VIII. 12.
+   Euclid forms, besides the :term:`squares <G.63>` and cubes of the given numbers, the products $ab$, $a^2b$, $ab^2$, $bc$, $b^2c$, $bc^2$. When he says that “we prove in manner similar to the foregoing,” he indicates successive uses of VII. 17, 18 as in VIII. 12
 
 .. step:: assert
 
-   With our notation the proof is as easy to see for *any* powers as for squares and cubes.
+   With our notation the proof is as easy to see for *any* powers as for squares and cubes
 
 .. step:: assert
 
-   To prove that $a^n, b^n, c^n \dots$ are in geometrical progression.
+   To prove that $a^n, b^n, c^n \dots$ are in geometrical progression
 
 .. step:: assert
 
@@ -128,7 +128,7 @@ G.313 there many numbers
 
 .. step:: assert
 
-   The common ratio of one term to the next is $a : b$.
+   The common ratio of one term to the next is $a : b$
 
 .. step:: assert
 
@@ -148,11 +148,11 @@ G.313 there many numbers
 
 .. step:: assert
 
-   The common ratio of which is $b : c$.
+   The common ratio of which is $b : c$
 
 .. step:: assert
 
-   Proceed thus for all pairs of consecutive terms.
+   Proceed thus for all pairs of consecutive terms
 
 .. step:: assert
 
@@ -164,15 +164,15 @@ G.313 there many numbers
 
 .. step:: assert
 
-   Therefore any pair of succeeding terms in one series are in the same ratio as any pair of succeeding terms in any other of the series.
+   any pair of succeeding terms in one series are :term:`in the same ratio <G.176>` as any pair of succeeding terms in any other of the series
 
 .. step:: assert
 
-   The number of terms in each is the same, namely $(n + 1)$.
+   The number of terms in each is the same, namely $(n + 1)$
 
 .. step:: assert
 
-   Therefore, *ex aequali*,
+   *ex aequali*,
 
 .. step:: conclude
 
@@ -194,8 +194,10 @@ Dependency Graph
      "G.4" [label="G.4", tooltip="G.4 (I.def.4): A segment / A B / is a portion of a line [ A B ] between two points A, B on the line.", fillcolor="#224422", URL="../G.4/index.html", target="_top"];
      "G.5" [label="G.5", tooltip="G.5 (I.def.5): A surface is that which has length and breadth only.", fillcolor="#224422", URL="../G.5/index.html", target="_top"];
      "G.7" [label="G.7", tooltip="G.7 (I.def.7): A plane surface lies evenly with the lines on itself.", fillcolor="#224422", URL="../G.7/index.html", target="_top"];
-     "G.11" [label="G.11", tooltip="G.11 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
-     "G.12" [label="G.12", tooltip="G.12 (I.def.20): Of trilateral figures, an equilateral triangle < A B C > has three equal sides, an isosceles triangle < D E F > has two equal sides, and a scalene triangle < G H K > has three uneq...", fillcolor="#224422", URL="../G.12/index.html", target="_top"];
+     "G.8" [label="G.8", tooltip="G.8 (I.def.13): A boundary is the extremity of anything.", fillcolor="#224422", URL="../G.8/index.html", target="_top"];
+     "G.9" [label="G.9", tooltip="G.9 (I.def.14): A figure is that which is contained by any boundary or boundaries.", fillcolor="#224422", URL="../G.9/index.html", target="_top"];
+     "G.12" [label="G.12", tooltip="G.12 (I.def.19): Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.", fillcolor="#224422", URL="../G.12/index.html", target="_top"];
+     "G.13" [label="G.13", tooltip="G.13 (I.def.20): Of trilateral figures, an equilateral triangle < A B C > has three equal sides, an isosceles triangle < D E F > has two equal sides, and a scalene triangle < G H K > has three uneq...", fillcolor="#224422", URL="../G.13/index.html", target="_top"];
      "G.22" [label="G.22", tooltip="G.22 (I.def.8): A plane angle is the inclination to one another of two lines or arcs in a plane that meet and do not lie on the same line.", fillcolor="#224422", URL="../G.22/index.html", target="_top"];
      "G.63" [label="G.63", tooltip="G.63 (I.def.22): Of quadrilateral figures, a square is equilateral and right-angled; an oblong is right-angled but not equilateral; a rhombus is equilateral but not right-angled; a rhomboid has opp...", fillcolor="#224422", URL="../G.63/index.html", target="_top"];
      "G.169" [label="G.169", tooltip="G.169 (V.def.1): A magnitude is apart of a magnitude, the less of the greater, when it measures the greater.", fillcolor="#224422", URL="../G.169/index.html", target="_top"];
@@ -225,16 +227,20 @@ Dependency Graph
      "G.4" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
+     "G.7" -> "G.2";
      "G.22" -> "G.2";
      "G.4" -> "G.3";
+     "G.8" -> "G.3";
      "G.7" -> "G.4";
-     "G.11" -> "G.4";
+     "G.12" -> "G.4";
      "G.22" -> "G.4";
      "G.7" -> "G.5";
      "G.22" -> "G.7";
-     "G.12" -> "G.11";
-     "G.63" -> "G.11";
+     "G.9" -> "G.8";
+     "G.12" -> "G.9";
+     "G.13" -> "G.12";
      "G.63" -> "G.12";
+     "G.63" -> "G.13";
      "G.63" -> "G.22";
      "G.313" -> "G.63";
      "G.170" -> "G.169";
@@ -244,15 +250,20 @@ Dependency Graph
      "G.176" -> "G.170";
      "G.257" -> "G.170";
      "G.174" -> "G.173";
+     "G.313" -> "G.173";
      "G.267" -> "G.174";
+     "G.313" -> "G.174";
      "G.180" -> "G.176";
      "G.267" -> "G.176";
+     "G.313" -> "G.176";
+     "G.263" -> "G.180";
      "G.266" -> "G.180";
      "G.313" -> "G.180";
      "G.194" -> "G.181";
      "G.261" -> "G.194";
      "G.262" -> "G.194";
      "G.266" -> "G.194";
+     "G.267" -> "G.194";
      "G.248" -> "G.247";
      "G.269" -> "G.247";
      "G.253" -> "G.248";
@@ -265,14 +276,19 @@ Dependency Graph
      "G.267" -> "G.248";
      "G.269" -> "G.248";
      "G.313" -> "G.248";
+     "G.254" -> "G.253";
+     "G.256" -> "G.253";
      "G.257" -> "G.253";
+     "G.258" -> "G.253";
      "G.261" -> "G.253";
      "G.262" -> "G.253";
      "G.263" -> "G.253";
+     "G.266" -> "G.253";
      "G.258" -> "G.254";
      "G.261" -> "G.254";
      "G.262" -> "G.254";
      "G.263" -> "G.254";
+     "G.266" -> "G.254";
      "G.257" -> "G.256";
      "G.263" -> "G.256";
      "G.258" -> "G.257";

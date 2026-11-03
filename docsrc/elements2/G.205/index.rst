@@ -10,7 +10,7 @@
 :categories: theorem, proof, proportions, magnitudes
 :category: theorem, proof, proportions, magnitudes
 :tags: book-v, point, in-the-same-ratio, ex-aequali, multiple, ratio, number, equality
-:dependencies: G.174, G.176, G.177, G.202
+:dependencies: G.170, G.174, G.176, G.177, G.202
 :excerpt: If there be any number of magnitudes whatever, and others equal to them in multitude, which taken two and two together are in the same ratio, they is in the same ratio ex aequali.
 
 .. _G.205:
@@ -44,11 +44,11 @@ G.205 there number magnitudes
 
 .. step:: assert
 
-   And, as :g:`B <g1:B>` is to :g:`C <g1:C>`, so is :g:`E <g1:E>` to :g:`F <g1:F>`;
+   as :g:`B <g1:B>` is to :g:`C <g1:C>`, so is :g:`E <g1:E>` to :g:`F <g1:F>`
 
 .. step:: assert
 
-   ⟨that is, as  :g:`A <g1:A>`  is to  :g:`C <g1:C>`, so is  :g:`D <g1:D>`  to  :g:`F <g1:F>` ⟩.
+   ⟨that is, as :g:`A <g1:A>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to :g:`F <g1:F>` ⟩
 
 .. step:: construct
 
@@ -56,11 +56,11 @@ G.205 there number magnitudes
 
 .. step:: assert
 
-   And, further, of :g:`C <g1:C>`, :g:`F <g1:F>` other, chance, equimultiples :g:`M <g1:M>`, :g:`N <g1:N>`.
+   further, of :g:`C <g1:C>`, :g:`F <g1:F>` other, chance, equimultiples :g:`M <g1:M>`, :g:`N <g1:N>`
 
 .. step:: assert ∵ magnitude_ratio_equimultiples <G.177>
 
-   Since, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`D <g1:D>` to :g:`E <g1:E>`, and of :g:`A <g1:A>`, :g:`D <g1:D>` equimultiples :g:`G <g1:G>`, :g:`H <g1:H>` have been taken, and of :g:`B <g1:B>`, :g:`E <g1:E>` other, chance, equimultiples :g:`K <g1:K>`, :g:`L <g1:L>` → therefore, as :g:`G <g1:G>` is to :g:`K <g1:K>`, so is :g:`H <g1:H>` to :g:`L <g1:L>`.
+   Since, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`D <g1:D>` to :g:`E <g1:E>`, and of :g:`A <g1:A>`, :g:`D <g1:D>` equimultiples :g:`G <g1:G>`, :g:`H <g1:H>` have been taken, and of :g:`B <g1:B>`, :g:`E <g1:E>` other, chance, equimultiples :g:`K <g1:K>`, :g:`L <g1:L>` → therefore, as :g:`G <g1:G>` is to :g:`K <g1:K>`, so is :g:`H <g1:H>` to :g:`L <g1:L>`
 
 .. step:: assert
 
@@ -68,19 +68,19 @@ G.205 there number magnitudes
 
 .. step:: assert
 
-   As :g:`K <g1:K>` is to :g:`M <g1:M>`, so is :g:`L <g1:L>` to :g:`N <g1:N>`.
+   As :g:`K <g1:K>` is to :g:`M <g1:M>`, so is :g:`L <g1:L>` to :g:`N <g1:N>`
 
 .. step:: assert ∵ there_magnitudes_others <G.202>
 
-   Since, then, there are three magnitudes :g:`G <g1:G>`, :g:`K <g1:K>`, :g:`M <g1:M>`, and others :g:`H <g1:H>`, :g:`L <g1:L>`, :g:`N <g1:N>` equal to them in multitude, which taken two and two together are in the same ratio → therefore, *ex aequali*, if :g:`G <g1:G>` is in excess of :g:`M <g1:M>`, :g:`H <g1:H>` is also in excess of :g:`N <g1:N>`; if :eq:`equal <g1:G = g1:M>`, :eq:`equal <g1:H = g1:N>`; and if less, less.
+   Since, then, there are three magnitudes :g:`G <g1:G>`, :g:`K <g1:K>`, :g:`M <g1:M>`, and others :g:`H <g1:H>`, :g:`L <g1:L>`, :g:`N <g1:N>` equal to them in multitude, which taken two and two together are in the same ratio → therefore, *ex aequali*, if :g:`G <g1:G>` is in excess of :g:`M <g1:M>`, :g:`H <g1:H>` is also in excess of :g:`N <g1:N>`; if :eq:`= <g1:G = g1:M>`, :eq:`= <g1:H = g1:N>`; and if less, less
 
 .. step:: assert
 
-   :g:`G <g1:G>`, :g:`H <g1:H>` are equimultiples of :g:`A <g1:A>`, :g:`D <g1:D>`, and :g:`M <g1:M>`, :g:`N <g1:N>` other, chance, equimultiples of :g:`C <g1:C>`, :g:`F <g1:F>`.
+   :g:`G <g1:G>`, :g:`H <g1:H>` are equimultiples of :g:`A <g1:A>`, :g:`D <g1:D>`, and :g:`M <g1:M>`, :g:`N <g1:N>` other, chance, equimultiples of :g:`C <g1:C>`, :g:`F <g1:F>`
 
 .. step:: conclude ∵ magnitudes_said_ratio_def <G.176>
 
-   Therefore, as :g:`A <g1:A>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to :g:`F <g1:F>`.
+   as :g:`A <g1:A>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to :g:`F <g1:F>`
 
 Dependency Graph
 ----------------
@@ -129,7 +129,11 @@ Dependency Graph
      "G.175" -> "G.170";
      "G.176" -> "G.170";
      "G.177" -> "G.170";
+     "G.183" -> "G.170";
      "G.185" -> "G.170";
+     "G.186" -> "G.170";
+     "G.191" -> "G.170";
+     "G.205" -> "G.170";
      "G.186" -> "G.171";
      "G.175" -> "G.172";
      "G.174" -> "G.173";
@@ -141,6 +145,7 @@ Dependency Graph
      "G.177" -> "G.176";
      "G.180" -> "G.176";
      "G.183" -> "G.176";
+     "G.188" -> "G.176";
      "G.191" -> "G.176";
      "G.202" -> "G.176";
      "G.205" -> "G.176";
@@ -148,12 +153,15 @@ Dependency Graph
      "G.183" -> "G.180";
      "G.182" -> "G.181";
      "G.183" -> "G.182";
+     "G.202" -> "G.182";
      "G.188" -> "G.183";
      "G.186" -> "G.184";
      "G.188" -> "G.184";
+     "G.202" -> "G.184";
      "G.186" -> "G.185";
      "G.188" -> "G.185";
      "G.191" -> "G.185";
+     "G.202" -> "G.185";
      "G.188" -> "G.186";
      "G.202" -> "G.186";
      "G.202" -> "G.188";

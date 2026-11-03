@@ -12,7 +12,7 @@ G.134 equal circles angles — Code
 
 .. enunciation::
 
-   In :term:`equal circles <G.131>` :term:`angles <G.22>` standing on equal arcs are equal, whether they stand at the :term:`centres <G.14>` or at the arcs.
+   In :term:`equal circles <G.131>` :term:`angles <G.22>` standing on equal arcs are equal, whether they stand at the :term:`centres <G.11>` or at the arcs.
 
 .. picture:: g1.svg
 

@@ -10,7 +10,7 @@
 :categories: theorem, proof, number-theory
 :category: theorem, proof, number-theory
 :tags: book-vii, point, number, prime-number, part-aliquot, composite-number, prime
-:dependencies: G.169, G.248, G.283, G.287
+:dependencies: G.169, G.248, G.283, G.286, G.287
 :excerpt: Any number either is prime or is measured by some prime number.
 
 .. _G.288:
@@ -40,15 +40,15 @@ G.288 number prime measured
 
 .. step:: assert
 
-   If now :g:`A <g1:A>` is prime, that which was enjoined will have been done.
+   If now :g:`A <g1:A>` is prime, that which was enjoined will have been done
 
 .. step:: assert ∵ composite_number_measured <G.287>
 
-   If it is :term:`composite <G.286>`, some prime number will measure it.
+   If it is :term:`composite <G.286>`, some prime number will measure it
 
 .. step:: conclude
 
-   Therefore any number either is prime or is measured by some prime number.
+   any number either is prime or is measured by some prime number
 
 Dependency Graph
 ----------------
@@ -63,21 +63,28 @@ Dependency Graph
      "G.169" [label="G.169", tooltip="G.169 (V.def.1): A magnitude is apart of a magnitude, the less of the greater, when it measures the greater.", fillcolor="#224422", URL="../G.169/index.html", target="_top"];
      "G.247" [label="G.247", tooltip="G.247 (VII.def.1): Anunit is that by virtue of which each of the things that exist is called one.", fillcolor="#224422", URL="../G.247/index.html", target="_top"];
      "G.248" [label="G.248", tooltip="G.248 (VII.def.2): Anumber is a multitude composed ofunits.", fillcolor="#224422", URL="../G.248/index.html", target="_top"];
+     "G.253" [label="G.253", tooltip="G.253 (VII.def.3): Anumber is apart of a number, the less of the greater, when itmeasures the greater;", fillcolor="#224422", URL="../G.253/index.html", target="_top"];
      "G.283" [label="G.283", tooltip="G.283 (VII.def.11): Aprime number is that which ismeasured by anunit alone.", fillcolor="#224422", URL="../G.283/index.html", target="_top"];
      "G.286" [label="G.286", tooltip="G.286 (VII.def.13): Acomposite number is that which ismeasured by somenumber.", fillcolor="#224422", URL="../G.286/index.html", target="_top"];
      "G.287" [label="G.287", tooltip="G.287 (VII.31): Any composite number is measured by some prime number.", fillcolor="#222244", URL="../G.287/index.html", target="_top"];
      "G.288" [label="G.288", tooltip="G.288 (VII.32): Any number either is prime or is measured by some prime number.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.253" -> "G.169";
      "G.283" -> "G.169";
      "G.286" -> "G.169";
      "G.287" -> "G.169";
      "G.288" -> "G.169";
      "G.248" -> "G.247";
      "G.283" -> "G.247";
+     "G.253" -> "G.248";
      "G.286" -> "G.248";
+     "G.287" -> "G.248";
      "G.288" -> "G.248";
+     "G.283" -> "G.253";
+     "G.286" -> "G.253";
      "G.287" -> "G.283";
      "G.288" -> "G.283";
      "G.287" -> "G.286";
+     "G.288" -> "G.286";
      "G.288" -> "G.287";
    }
 

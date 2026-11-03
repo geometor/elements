@@ -10,7 +10,7 @@
 :categories: theorem, proof, proportions, magnitudes
 :category: theorem, proof, proportions, magnitudes
 :tags: book-v, point, ratio, in-the-same-ratio, multiple, equality
-:dependencies: G.9, G.173, G.176
+:dependencies: G.9, G.170, G.173, G.176
 :excerpt: Ratios which are the same with the same ratio are also the same with one another.
 
 .. _G.189:
@@ -39,7 +39,7 @@ G.189 ratios ratio
 
 .. step:: assert
 
-   I say that, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`E <g1:E>` to :g:`F <g1:F>`.
+   I say that, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`E <g1:E>` to :g:`F <g1:F>`
 
 .. step:: construct
 
@@ -51,11 +51,11 @@ G.189 ratios ratio
 
 .. step:: assert
 
-   Therefore, if :g:`G <g1:G>` is in excess of :g:`L <g1:L>`, :g:`H <g1:H>` is also in excess of :g:`M <g1:M>`, if :eq:`equal <g1:G = g1:L>`, :eq:`equal <g1:H = g1:M>`, and if less, less.
+   if :g:`G <g1:G>` is in excess of :g:`L <g1:L>`, :g:`H <g1:H>` is also in excess of :g:`M <g1:M>`, if :eq:`= <g1:G = g1:L>`, :eq:`= <g1:H = g1:M>`, and if less, less
 
 .. step:: assert
 
-   Since, as :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`E <g1:E>` to :g:`F <g1:F>`, and of :g:`C <g1:C>`, :g:`E <g1:E>` equimultiples :g:`H <g1:H>`, :g:`K <g1:K>` have been taken, and of :g:`D <g1:D>`, :g:`F <g1:F>` other, chance, equimultiples :g:`M <g1:M>`, :g:`N <g1:N>` → therefore, if :g:`H <g1:H>` is in excess of :g:`M <g1:M>`, :g:`K <g1:K>` is also in excess of :g:`N <g1:N>`, if :eq:`equal <g1:H = g1:M>`, :eq:`equal <g1:K = g1:N>`, and if less, less.
+   Since, as :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`E <g1:E>` to :g:`F <g1:F>`, and of :g:`C <g1:C>`, :g:`E <g1:E>` equimultiples :g:`H <g1:H>`, :g:`K <g1:K>` have been taken, and of :g:`D <g1:D>`, :g:`F <g1:F>` other, chance, equimultiples :g:`M <g1:M>`, :g:`N <g1:N>` → therefore, if :g:`H <g1:H>` is in excess of :g:`M <g1:M>`, :g:`K <g1:K>` is also in excess of :g:`N <g1:N>`, if :eq:`= <g1:H = g1:M>`, :eq:`= <g1:K = g1:N>`, and if less, less
 
 .. step:: assert
 
@@ -63,15 +63,15 @@ G.189 ratios ratio
 
 .. step:: assert
 
-   If :eq:`equal <g1:H = g1:M>`, :eq:`equal <g1:G = g1:L>`
+   If :eq:`= <g1:H = g1:M>`, :eq:`= <g1:G = g1:L>`
 
 .. step:: assert
 
-   And if less, less
+   if less, less
 
 .. step:: assert
 
-   So that, in addition, if :g:`G <g1:G>` is in excess of :g:`L <g1:L>`, :g:`K <g1:K>` is also in excess of :g:`N <g1:N>`, if :eq:`equal <g1:G = g1:L>`, :eq:`equal <g1:K = g1:N>`, and if less, less.
+   So that, in addition, if :g:`G <g1:G>` is in excess of :g:`L <g1:L>`, :g:`K <g1:K>` is also in excess of :g:`N <g1:N>`, if :eq:`= <g1:G = g1:L>`, :eq:`= <g1:K = g1:N>`, and if less, less
 
 .. step:: assert
 
@@ -79,7 +79,7 @@ G.189 ratios ratio
 
 .. step:: conclude
 
-   Therefore, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`E <g1:E>` to :g:`F <g1:F>`.
+   as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`E <g1:E>` to :g:`F <g1:F>`
 
 Dependency Graph
 ----------------
@@ -109,6 +109,7 @@ Dependency Graph
      "G.189" -> "G.9";
      "G.170" -> "G.169";
      "G.176" -> "G.170";
+     "G.189" -> "G.170";
      "G.189" -> "G.173";
      "G.189" -> "G.176";
    }

@@ -12,7 +12,7 @@ G.139 thales semicircle theorem — Code
 
 .. enunciation::
 
-   In a :term:`circle <G.10>` the :term:`angle in the semicircle <G.138>` is right, that in a greater :term:`segment <G.4>` less than a :term:`right angle <G.32>`, and that in a less segment greater than a right angle; and further the :term:`angle <G.22>` of the greater segment is greater than a right angle, and the angle of the less segment less than a right angle.
+   In a :term:`circle <G.10>` the :term:`angle in the semicircle <G.138>` is right, that in a greater :term:`segment <G.4>` less than a :term:`right angle <G.33>`, and that in a less segment greater than a right angle; and further the :term:`angle <G.22>` of the greater segment is greater than a right angle, and the angle of the less segment less than a right angle.
 
 .. picture:: g1.svg
 

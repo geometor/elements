@@ -390,6 +390,36 @@ def sync_apparatus_resources(project_root: Path) -> None:
             shutil.copy2(src_file, target_res / fname)
 
 
+def get_youtube_video_id(project_root: Path, node_ref: str) -> Optional[str]:
+    """Return the published 16:9 YouTube video ID for a proposition if available."""
+    m = re.match(r"^([IVXLCDM]+)\.(\d+)$", node_ref.strip())
+    if not m:
+        return None
+    book_slug = f"book_{m.group(1).lower()}"
+    prop_dir = f"{int(m.group(2)):02d}"
+    yt_json_path = (
+        project_root.parent
+        / "euclid"
+        / "resources"
+        / "videos"
+        / book_slug
+        / prop_dir
+        / "youtube.json"
+    )
+    if not yt_json_path.is_file():
+        return None
+    try:
+        meta = json.loads(yt_json_path.read_text(encoding="utf-8"))
+        vid = (
+            meta.get("uploads", {})
+            .get("wide_1080p", {})
+            .get("video_id", "")
+        )
+        return str(vid).strip() if vid else None
+    except Exception:
+        return None
+
+
 def generate_g_index(
     output_dir: Optional[Path] = None,
     books: Optional[List[str]] = None,
@@ -571,6 +601,20 @@ def generate_g_index(
         pseudo_content = inject_pseudocode_terms(pseudo_content, node_ref, id_map=id_map)
         heath_content = transform_terms(heath_content, node_ref, id_map)
 
+        # Sync any inferred :fn:, ∵ rule, or :term: G.<k> targets in pseudo_content into deps_g and G
+        rev_id_map = {v: k for k, v in id_map.items()}
+        for m_gt in re.finditer(r"<(G\.\d+(?:\s*,\s*G\.\d+)*)>", pseudo_content):
+            for gt in m_gt.group(1).split(","):
+                gt_clean = gt.strip()
+                if gt_clean != g_name and g_num_sort_key(gt_clean) < g_id:
+                    if gt_clean not in deps_g:
+                        deps_g.append(gt_clean)
+                    orig_dep = rev_id_map.get(gt_clean)
+                    if orig_dep and orig_dep in G and not G.has_edge(node_ref, orig_dep):
+                        G.add_edge(node_ref, orig_dep)
+        deps_g.sort(key=g_num_sort_key)
+        deps_str = ", ".join(deps_g)
+
         excerpt = clean_plain_excerpt(pseudo_content)
         node_data["g_excerpt"] = excerpt
         short_title = get_short_title(node_ref, node_type, subtype, excerpt)
@@ -623,8 +667,14 @@ def generate_g_index(
             ]
             req_for_section = f"Required for\n------------\n\n{', '.join(ref_links)}"
 
+        youtube_video_id = get_youtube_video_id(project_root, node_ref)
+        if youtube_video_id:
+            meta_lines.append(f":youtube_id: {youtube_video_id}")
+
         # Companion track toctree (hidden)
         toctree_entries = []
+        if youtube_video_id:
+            toctree_entries.append("   video")
         if local_py_names:
             toctree_entries.append("   code")
         toctree_entries.append("   heath")
@@ -643,19 +693,41 @@ def generate_g_index(
         rendered_index = "\n\n".join(s for s in index_sections if s).strip() + "\n"
         (node_dir / "index.rst").write_text(rendered_index, encoding="utf-8")
 
-        # Auxiliary metadata header for Code and Heath tracks
-        aux_meta = "\n".join(
-            [
-                f":canonical_id: {g_name}",
-                f":original_id: {node_ref}",
-                f":title: {full_title}",
-                f":volume: {volume_roman}",
-                f":book: {book_roman}",
-                f":type: {node_type}",
-            ]
+        # Auxiliary metadata header for Video, Code, and Heath tracks
+        aux_meta_lines = [
+            f":canonical_id: {g_name}",
+            f":original_id: {node_ref}",
+            f":title: {full_title}",
+            f":volume: {volume_roman}",
+            f":book: {book_roman}",
+            f":type: {node_type}",
+        ]
+        if youtube_video_id:
+            aux_meta_lines.append(f":youtube_id: {youtube_video_id}")
+        aux_meta = "\n".join(aux_meta_lines)
+
+        enun_m = re.search(
+            r"(\.\.\s+enunciation::\n+(?:[ \t]+[^\n]*\n+|\n)*)",
+            pseudo_content,
         )
 
-        # Track 2: code.rst (Code - only when .py construction scripts exist)
+        # Track 2: video.rst (Video - only when a published YouTube video exists)
+        if youtube_video_id:
+            video_title = f"{full_title} — Video"
+            video_sections: List[str] = [
+                aux_meta,
+                f"{video_title}\n{'=' * len(video_title)}",
+                f".. rubric:: {heath_link}",
+            ]
+            if enun_m:
+                video_sections.append(enun_m.group(1).strip())
+            video_sections.append(
+                f".. youtube:: {youtube_video_id}\n   :aspect: 16:9\n   :width: 100%"
+            )
+            rendered_video = "\n\n".join(s for s in video_sections if s).strip() + "\n"
+            (node_dir / "video.rst").write_text(rendered_video, encoding="utf-8")
+
+        # Track 3: code.rst (Code - only when .py construction scripts exist)
         if local_py_names:
             code_title = f"{full_title} — Code"
             code_sections: List[str] = [
@@ -663,10 +735,6 @@ def generate_g_index(
                 f"{code_title}\n{'=' * len(code_title)}",
                 f".. rubric:: {heath_link}",
             ]
-            enun_m = re.search(
-                r"(\.\.\s+enunciation::\n+(?:[ \t]+[^\n]*\n+|\n)*)",
-                pseudo_content,
-            )
             if enun_m:
                 code_sections.append(enun_m.group(1).strip())
 
@@ -682,7 +750,7 @@ def generate_g_index(
             rendered_code = "\n\n".join(s for s in code_sections if s).strip() + "\n"
             (node_dir / "code.rst").write_text(rendered_code, encoding="utf-8")
 
-        # Track 3: heath.rst (Heath)
+        # Track 4: heath.rst (Heath)
         heath_title = f"{full_title} — Heath"
         heath_sections: List[str] = [
             aux_meta,

@@ -12,7 +12,7 @@ G.121 segment touch circle — Code
 
 .. enunciation::
 
-   If a :term:`segment <G.4>` :term:`touch a circle <G.111>`, and from the :term:`point <G.1>` of contact a segment be drawn :term:`at right angles <G.32>` to the tangent, the :term:`center <G.14>` of the :term:`circle <G.10>` is on the segment so drawn.
+   If a :term:`segment <G.4>` :term:`touch a circle <G.111>`, and from the :term:`point <G.1>` of contact a segment be drawn :term:`at right angles <G.33>` to the tangent, the :term:`center <G.11>` of the :term:`circle <G.10>` is on the segment so drawn.
 
 .. picture:: g1.svg
 

@@ -12,7 +12,7 @@ G.125 opposite angles quadrilaterals — Code
 
 .. enunciation::
 
-   The opposite :term:`angles <G.22>` of :term:`quadrilaterals <G.11>` in :term:`circles <G.10>` are equal to two :term:`right angles <G.32>`.
+   The opposite :term:`angles <G.22>` of :term:`quadrilaterals <G.12>` in :term:`circles <G.10>` are equal to two :term:`right angles <G.33>`.
 
 .. picture:: g1.svg
 

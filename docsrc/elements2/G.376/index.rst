@@ -10,7 +10,7 @@
 :categories: theorem, proof, incommensurables, magnitudes
 :category: theorem, proof, incommensurables, magnitudes
 :tags: book-x, point, commensurable, ratio, number, part-aliquot, unit, invertendo, ex-aequali
-:dependencies: G.173, G.183, G.205, G.248, G.263, G.372
+:dependencies: G.169, G.173, G.174, G.182, G.183, G.205, G.247, G.248, G.263, G.372
 :excerpt: Commensurable magnitudes have to one another the ratio which a number has to a number.
 
 .. _G.376:
@@ -40,55 +40,55 @@ G.376 commensurable magnitudes ratio
 
 .. step:: assert
 
-   Since :g:`A <g1:A>`, :g:`B <g1:B>` are commensurable, some magnitude will :term:`measure <G.169>` them
+   :g:`A <g1:A>`, :g:`B <g1:B>` are commensurable, some magnitude will measure them
 
 .. step:: assert
 
-   Let it measure them, and let it be :g:`C <g1:C>`.
+   Let it :term:`measure <G.169>` them, and let it be :g:`C <g1:C>`
 
 .. step:: assert
 
-   And, as many times as :g:`C <g1:C>` measures :g:`A <g1:A>`, so many :term:`units <G.247>` let there be in :g:`D <g1:D>`
+   as many times as :g:`C <g1:C>` measures :g:`A <g1:A>`, so many :term:`units <G.247>` let there be in :g:`D <g1:D>`
 
 .. step:: assert
 
-   And, as many times as :g:`C <g1:C>` measures :g:`B <g1:B>`, so many units let there be in :g:`E <g1:E>`.
+   as many times as :g:`C <g1:C>` measures :g:`B <g1:B>`, so many units let there be in :g:`E <g1:E>`
 
 .. step:: assert
 
-   Since then :g:`C <g1:C>` measures :g:`A <g1:A>` according to the units in :g:`D <g1:D>`, while the unit also measures :g:`D <g1:D>` according to the units in it,
+   then :g:`C <g1:C>` measures :g:`A <g1:A>` according to the units in :g:`D <g1:D>`, while the unit also measures :g:`D <g1:D>` according to the units in it,
 
 .. step:: assert
 
-   Therefore the unit measures the number :g:`D <g1:D>` the same number of times as the magnitude :g:`C <g1:C>` measures :g:`A <g1:A>`;
+   the unit measures the number :g:`D <g1:D>` the same number of times as the magnitude :g:`C <g1:C>` measures :g:`A <g1:A>`
 
 .. step:: assert ∵ numbers_proportional_multiple_def <G.263>
 
-   Therefore, as :g:`C <g1:C>` is to :g:`A <g1:A>`, so is the unit to :g:`D <g1:D>`;
+   as :g:`C <g1:C>` is to :g:`A <g1:A>`, so is the unit to :g:`D <g1:D>`
 
 .. step:: assert ∵ equal_magnitudes_ratio <G.183>
 
-   Therefore, :term:`inversely <G.182>`, as :g:`A <g1:A>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to the unit.
+   :term:`inversely <G.182>`, as :g:`A <g1:A>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to the unit
 
 .. step:: assert
 
-   Since :g:`C <g1:C>` measures :g:`B <g1:B>` according to the units in :g:`E <g1:E>`, while the unit also measures :g:`E <g1:E>` according to the units in it,
+   :g:`C <g1:C>` measures :g:`B <g1:B>` according to the units in :g:`E <g1:E>`, while the unit also measures :g:`E <g1:E>` according to the units in it,
 
 .. step:: assert
 
-   Therefore the unit measures :g:`E <g1:E>` the same number of times as :g:`C <g1:C>` measures :g:`B <g1:B>`;
+   the unit measures :g:`E <g1:E>` the same number of times as :g:`C <g1:C>` measures :g:`B <g1:B>`
 
 .. step:: assert
 
-   Therefore, as :g:`C <g1:C>` is to :g:`B <g1:B>`, so is the unit to :g:`E <g1:E>`.
+   as :g:`C <g1:C>` is to :g:`B <g1:B>`, so is the unit to :g:`E <g1:E>`
 
 .. step:: assert
 
-   It was also proved that, as :g:`A <g1:A>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to the unit;
+   It was also proved that, as :g:`A <g1:A>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to the unit
 
 .. step:: conclude ∵ there_number_magnitudes_v_22 <G.205>
 
-   Therefore, *:term:`ex aequali <G.174>`*, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is the number :g:`D <g1:D>` to :g:`E <g1:E>`.
+   *:term:`ex aequali <G.174>`*, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is the number :g:`D <g1:D>` to :g:`E <g1:E>`
 
 Dependency Graph
 ----------------
@@ -144,12 +144,17 @@ Dependency Graph
      "G.254" -> "G.169";
      "G.256" -> "G.169";
      "G.372" -> "G.169";
+     "G.376" -> "G.169";
      "G.171" -> "G.170";
      "G.172" -> "G.170";
      "G.175" -> "G.170";
      "G.176" -> "G.170";
      "G.177" -> "G.170";
+     "G.183" -> "G.170";
      "G.185" -> "G.170";
+     "G.186" -> "G.170";
+     "G.191" -> "G.170";
+     "G.205" -> "G.170";
      "G.186" -> "G.171";
      "G.175" -> "G.172";
      "G.174" -> "G.173";
@@ -158,24 +163,31 @@ Dependency Graph
      "G.175" -> "G.174";
      "G.202" -> "G.174";
      "G.205" -> "G.174";
+     "G.376" -> "G.174";
      "G.177" -> "G.175";
      "G.177" -> "G.176";
      "G.180" -> "G.176";
      "G.183" -> "G.176";
+     "G.188" -> "G.176";
      "G.191" -> "G.176";
      "G.202" -> "G.176";
      "G.205" -> "G.176";
      "G.205" -> "G.177";
      "G.183" -> "G.180";
+     "G.263" -> "G.180";
      "G.182" -> "G.181";
      "G.183" -> "G.182";
+     "G.202" -> "G.182";
+     "G.376" -> "G.182";
      "G.188" -> "G.183";
      "G.376" -> "G.183";
      "G.186" -> "G.184";
      "G.188" -> "G.184";
+     "G.202" -> "G.184";
      "G.186" -> "G.185";
      "G.188" -> "G.185";
      "G.191" -> "G.185";
+     "G.202" -> "G.185";
      "G.188" -> "G.186";
      "G.202" -> "G.186";
      "G.202" -> "G.188";
@@ -183,10 +195,14 @@ Dependency Graph
      "G.205" -> "G.202";
      "G.376" -> "G.205";
      "G.248" -> "G.247";
+     "G.376" -> "G.247";
      "G.253" -> "G.248";
      "G.256" -> "G.248";
      "G.376" -> "G.248";
+     "G.254" -> "G.253";
+     "G.256" -> "G.253";
      "G.263" -> "G.253";
+     "G.372" -> "G.253";
      "G.263" -> "G.254";
      "G.263" -> "G.256";
      "G.376" -> "G.263";

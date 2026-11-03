@@ -24,6 +24,7 @@ Attributes
    geometor.elements.pseudocode.CURATED_ENUNCIATIONS
    geometor.elements.pseudocode.SHORT_TITLES
    geometor.elements.pseudocode.SEMANTIC_NAMES
+   geometor.elements.pseudocode.CURATED_PROPOSITIONS
 
 
 Functions
@@ -63,6 +64,9 @@ Module Contents
 
    Return a concise, fact-oriented enunciation string using Elements 2.0 terminology (segment, line, arc).
 
+
+.. py:data:: CURATED_PROPOSITIONS
+   :type:  Dict[str, Dict[str, object]]
 
 .. py:function:: generate_pseudocode_rst(heath_content_rst: str, canonical_ref: str, node_type: str, g_name: str = '', subtype: Optional[str] = None, id_map: Optional[Dict[str, str]] = None, g_to_sem_name: Optional[Dict[str, str]] = None, local_svg_names: Optional[List[str]] = None) -> str
 

@@ -10,7 +10,7 @@
 :categories: theorem, proof, proportions, magnitudes
 :category: theorem, proof, proportions, magnitudes
 :tags: book-v, point, proportional, alternando, multiple, in-the-same-ratio, proportion, equality
-:dependencies: G.176, G.180, G.189, G.192, G.193, G.194
+:dependencies: G.170, G.176, G.180, G.189, G.192, G.193, G.194
 :excerpt: If four magnitudes be proportional, they is proportional alternately.
 
 .. _G.195:
@@ -44,11 +44,11 @@ G.195 magnitudes proportional proportional
 
 .. step:: assert ∵ parts_ratio_multiples <G.193>
 
-   Since :g:`E <g1:E>` is the same multiple of :g:`A <g1:A>` that :g:`F <g1:F>` is of :g:`B <g1:B>`, and parts have the :term:`same ratio <G.176>` as the same multiples of them.
+   :g:`E <g1:E>` is the same multiple of :g:`A <g1:A>` that :g:`F <g1:F>` is of :g:`B <g1:B>`, and parts have the same ratio as the same multiples of them
 
 .. step:: assert
 
-   Therefore, as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`E <g1:E>` to :g:`F <g1:F>`.
+   as :g:`A <g1:A>` is to :g:`B <g1:B>`, so is :g:`E <g1:E>` to :g:`F <g1:F>`
 
 .. step:: assert
 
@@ -56,11 +56,11 @@ G.195 magnitudes proportional proportional
 
 .. step:: assert ∵ ratios_ratio <G.189>
 
-   Therefore also, as :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`E <g1:E>` to :g:`F <g1:F>`.
+   also, as :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`E <g1:E>` to :g:`F <g1:F>`
 
 .. step:: assert ∵ parts_ratio_multiples <G.193>
 
-   Since :g:`G <g1:G>`, :g:`H <g1:H>` are equimultiples of :g:`C <g1:C>`, :g:`D <g1:D>` → therefore, as :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`G <g1:G>` to :g:`H <g1:H>`.
+   :g:`G <g1:G>`, :g:`H <g1:H>` are equimultiples of :g:`C <g1:C>`, :g:`D <g1:D>` → therefore, as :g:`C <g1:C>` is to :g:`D <g1:D>`, so is :g:`G <g1:G>` to :g:`H <g1:H>`
 
 .. step:: assert
 
@@ -68,15 +68,15 @@ G.195 magnitudes proportional proportional
 
 .. step:: assert ∵ ratios_ratio <G.189>
 
-   Therefore also, as :g:`E <g1:E>` is to :g:`F <g1:F>`, so is :g:`G <g1:G>` to :g:`H <g1:H>`.
+   also, as :g:`E <g1:E>` is to :g:`F <g1:F>`, so is :g:`G <g1:G>` to :g:`H <g1:H>`
 
 .. step:: assert ∵ magnitude_ratio_greater_v_14 <G.192>
 
-   But, if four magnitudes be proportional, and the first be greater than the third, the second will also be greater than the fourth ; if equal, equal ; and if less, less.
+   But, if four magnitudes be proportional, and the first be greater than the third, the second will also be greater than the fourth ; if equal, equal ; and if less, less
 
 .. step:: assert
 
-   Therefore, if :g:`E <g1:E>` is in excess of :g:`G <g1:G>`, :g:`F <g1:F>` is also in excess of :g:`H <g1:H>`, if :eq:`equal <g1:E = g1:G>`, :eq:`equal <g1:F = g1:H>`, and if less, less.
+   if :g:`E <g1:E>` is in excess of :g:`G <g1:G>`, :g:`F <g1:F>` is also in excess of :g:`H <g1:H>`, if :eq:`= <g1:E = g1:G>`, :eq:`= <g1:F = g1:H>`, and if less, less
 
 .. step:: assert
 
@@ -84,7 +84,7 @@ G.195 magnitudes proportional proportional
 
 .. step:: conclude ∵ magnitudes_said_ratio_def <G.176>
 
-   Therefore, as :g:`A <g1:A>` is to :g:`C <g1:C>`, so is :g:`B <g1:B>` to :g:`D <g1:D>`.
+   as :g:`A <g1:A>` is to :g:`C <g1:C>`, so is :g:`B <g1:B>` to :g:`D <g1:D>`
 
 Dependency Graph
 ----------------
@@ -131,14 +131,21 @@ Dependency Graph
      "G.170" -> "G.169";
      "G.171" -> "G.170";
      "G.176" -> "G.170";
+     "G.183" -> "G.170";
      "G.185" -> "G.170";
+     "G.186" -> "G.170";
+     "G.189" -> "G.170";
+     "G.190" -> "G.170";
+     "G.191" -> "G.170";
      "G.193" -> "G.170";
+     "G.195" -> "G.170";
      "G.186" -> "G.171";
      "G.190" -> "G.171";
      "G.188" -> "G.173";
      "G.189" -> "G.173";
      "G.180" -> "G.176";
      "G.183" -> "G.176";
+     "G.188" -> "G.176";
      "G.189" -> "G.176";
      "G.190" -> "G.176";
      "G.191" -> "G.176";
@@ -150,6 +157,7 @@ Dependency Graph
      "G.195" -> "G.180";
      "G.182" -> "G.181";
      "G.190" -> "G.181";
+     "G.193" -> "G.181";
      "G.194" -> "G.181";
      "G.183" -> "G.182";
      "G.188" -> "G.183";
@@ -159,6 +167,7 @@ Dependency Graph
      "G.186" -> "G.185";
      "G.188" -> "G.185";
      "G.191" -> "G.185";
+     "G.192" -> "G.185";
      "G.188" -> "G.186";
      "G.192" -> "G.186";
      "G.192" -> "G.188";

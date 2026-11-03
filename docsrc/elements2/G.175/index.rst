@@ -39,27 +39,27 @@ G.175 magnitude multiple equimultiples
 
 .. step:: assert
 
-   Since :g:`/ E F / <g1:/ E F />` is the same multiple of :g:`A <g1:A>` that :g:`/ G H / <g1:/ G H />` is of :g:`C <g1:C>` → therefore, as many magnitudes as there are in :g:`/ E F / <g1:/ E F />` equal to :g:`A <g1:A>`, so many also are there in :g:`/ G H / <g1:/ G H />` equal to :g:`C <g1:C>`.
+   :g:`/ E F / <g1:/ E F />` is the same multiple of :g:`A <g1:A>` that :g:`/ G H / <g1:/ G H />` is of :g:`C <g1:C>` → therefore, as many magnitudes as there are in :g:`/ E F / <g1:/ E F />` equal to :g:`A <g1:A>`, so many also are there in :g:`/ G H / <g1:/ G H />` equal to :g:`C <g1:C>`
 
 .. step:: assert
 
-   Let :g:`/ E F / <g1:/ E F />` be divided into the magnitudes :g:`/ E K / <g1:/ E K />`, :g:`/ K F / <g1:/ K F />` :eq:`equal <g1:/ E K / = g1:/ K F / = g1:A>` to :g:`A <g1:A>`, and :g:`/ G H / <g1:/ G H />` into the magnitudes :g:`/ G L / <g1:/ G L />`, :g:`/ L H / <g1:/ L H />` :eq:`equal <g1:/ G L / = g1:/ L H / = g1:C>` to :g:`C <g1:C>`
+   Let :g:`/ E F / <g1:/ E F />` be divided into the magnitudes :g:`/ E K / <g1:/ E K />`, :g:`/ K F / <g1:/ K F />` :eq:`= <g1:/ E K / = g1:/ K F / = g1:A>` to :g:`A <g1:A>`, and :g:`/ G H / <g1:/ G H />` into the magnitudes :g:`/ G L / <g1:/ G L />`, :g:`/ L H / <g1:/ L H />` :eq:`= <g1:/ G L / = g1:/ L H / = g1:C>` to :g:`C <g1:C>`
 
 .. step:: assert
 
-   Then the multitude of the magnitudes :g:`/ E K / <g1:/ E K />`, :g:`/ K F / <g1:/ K F />` will be equal to the multitude of the magnitudes :g:`/ G L / <g1:/ G L />`, :g:`/ L H / <g1:/ L H />`.
+   Then the multitude of the magnitudes :g:`/ E K / <g1:/ E K />`, :g:`/ K F / <g1:/ K F />` will be equal to the multitude of the magnitudes :g:`/ G L / <g1:/ G L />`, :g:`/ L H / <g1:/ L H />`
 
 .. step:: assert
 
-   And, since :g:`A <g1:A>` is the same multiple of :g:`B <g1:B>` that :g:`C <g1:C>` is of :g:`D <g1:D>`,
+   since :g:`A <g1:A>` is the same multiple of :g:`B <g1:B>` that :g:`C <g1:C>` is of :g:`D <g1:D>`,
 
 .. step:: assert
 
-   While :g:`/ E K / <g1:/ E K />` is :eq:`equal <g1:/ E K / = g1:A; g1:/ G L / = g1:C>` to :g:`A <g1:A>`, and :g:`/ G L / <g1:/ G L />` to :g:`C <g1:C>`,
+   While :g:`/ E K / <g1:/ E K />` :eq:`= <g1:/ E K / = g1:A; g1:/ G L / = g1:C>` :g:`A <g1:A>`, and :g:`/ G L / <g1:/ G L />` to :g:`C <g1:C>`,
 
 .. step:: assert
 
-   Therefore :g:`/ E K / <g1:/ E K />` is the same multiple of :g:`B <g1:B>` that :g:`/ G L / <g1:/ G L />` is of :g:`D <g1:D>`.
+   :g:`/ E K / <g1:/ E K />` is the same multiple of :g:`B <g1:B>` that :g:`/ G L / <g1:/ G L />` is of :g:`D <g1:D>`
 
 .. step:: assert
 
@@ -67,11 +67,11 @@ G.175 magnitude multiple equimultiples
 
 .. step:: assert
 
-   :g:`/ K F / <g1:/ K F />` is the same multiple of :g:`B <g1:B>` that :g:`/ L H / <g1:/ L H />` is of :g:`D <g1:D>`.
+   :g:`/ K F / <g1:/ K F />` is the same multiple of :g:`B <g1:B>` that :g:`/ L H / <g1:/ L H />` is of :g:`D <g1:D>`
 
 .. step:: conclude ∵ magnitude_multiple_fifth <G.172>
 
-   Since, then, a first magnitude :g:`/ E K / <g1:/ E K />` is the same multiple of a second :g:`B <g1:B>` that a third :g:`/ G L / <g1:/ G L />` is of a fourth :g:`D <g1:D>`, and a fifth :g:`/ K F / <g1:/ K F />` is also the same multiple of the second :g:`B <g1:B>` that a sixth :g:`/ L H / <g1:/ L H />` is of the fourth :g:`D <g1:D>` → therefore the sum of the first and fifth, :g:`/ E F / <g1:/ E F />`, is also the same multiple of the second :g:`B <g1:B>` that the sum of the third and sixth, :g:`/ G H / <g1:/ G H />`, is of the fourth :g:`D <g1:D>`.
+   Since, then, a first magnitude :g:`/ E K / <g1:/ E K />` is the same multiple of a second :g:`B <g1:B>` that a third :g:`/ G L / <g1:/ G L />` is of a fourth :g:`D <g1:D>`, and a fifth :g:`/ K F / <g1:/ K F />` is also the same multiple of the second :g:`B <g1:B>` that a sixth :g:`/ L H / <g1:/ L H />` is of the fourth :g:`D <g1:D>` → therefore the sum of the first and fifth, :g:`/ E F / <g1:/ E F />`, is also the same multiple of the second :g:`B <g1:B>` that the sum of the third and sixth, :g:`/ G H / <g1:/ G H />`, is of the fourth :g:`D <g1:D>`
 
 Dependency Graph
 ----------------

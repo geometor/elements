@@ -10,7 +10,7 @@
 :categories: theorem, proof, proportions, magnitudes
 :category: theorem, proof, proportions, magnitudes
 :tags: book-v, point, segment, greater-ratio, ratio, multiple, equality
-:dependencies: G.171, G.184, G.185
+:dependencies: G.170, G.171, G.184, G.185
 :excerpt: Of unequal magnitudes, the greater has to the same a greater ratio than the less has; and the same has to the less a greater ratio than it has to the greater.
 
 .. _G.186:
@@ -51,7 +51,7 @@ G.186 unequal magnitudes greater
 
 .. step:: assert ∵ magnitudes_said_ratio_def_v_def_4 <G.184>
 
-   Then the less of the magnitudes :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />`, if multiplied, will sometime be greater than :g:`D <g1:D>`.
+   Then the less of the magnitudes :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />`, if multiplied, will sometime be greater than :g:`D <g1:D>`
 
 .. step:: assert
 
@@ -63,7 +63,7 @@ G.186 unequal magnitudes greater
 
 .. step:: assert
 
-   Let :g:`/ A E / <g1:/ A E />` be multiplied, and let :g:`/ F G / <g1:/ F G />` be a :term:`multiple <G.170>` of it which is greater than :g:`D <g1:D>`
+   Let :g:`/ A E / <g1:/ A E />` be multiplied, and let :g:`/ F G / <g1:/ F G />` be a :term:`multiple <G.170>` of it which > :g:`D <g1:D>`
 
 .. step:: construct
 
@@ -79,19 +79,19 @@ G.186 unequal magnitudes greater
 
 .. step:: assert
 
-   Let it be :g:`N <g1:N>` which is quadruple of :g:`D <g1:D>` and the first multiple of it that is greater than :g:`K <g1:K>`.
+   Let it be :g:`N <g1:N>` which is quadruple of :g:`D <g1:D>` and the first multiple of it that > :g:`K <g1:K>`
 
 .. step:: assert
 
-   Since :g:`K <g1:K>` is less than :g:`N <g1:N>` first → therefore :g:`K <g1:K>` is not less than :g:`M <g1:M>`.
+   :g:`K <g1:K>` < :g:`N <g1:N>` first → therefore :g:`K <g1:K>` is not less than :g:`M <g1:M>`
 
 .. step:: assert
 
-   And, since :g:`/ F G / <g1:/ F G />` is the same multiple of :g:`/ A E / <g1:/ A E />` that :g:`/ G H / <g1:/ G H />` is of :g:`/ E B / <g1:/ E B />`,
+   since :g:`/ F G / <g1:/ F G />` is the same multiple of :g:`/ A E / <g1:/ A E />` that :g:`/ G H / <g1:/ G H />` is of :g:`/ E B / <g1:/ E B />`,
 
 .. step:: assert ∵ there_number_magnitudes <G.171>
 
-   Therefore :g:`/ F G / <g1:/ F G />` is the same multiple of :g:`/ A E / <g1:/ A E />` that :g:`/ F H / <g1:/ F H />` is of :g:`/ A B / <g1:/ A B />`.
+   :g:`/ F G / <g1:/ F G />` is the same multiple of :g:`/ A E / <g1:/ A E />` that :g:`/ F H / <g1:/ F H />` is of :g:`/ A B / <g1:/ A B />`
 
 .. step:: assert
 
@@ -99,11 +99,11 @@ G.186 unequal magnitudes greater
 
 .. step:: assert
 
-   Therefore :g:`/ F H / <g1:/ F H />` is the same multiple of :g:`/ A B / <g1:/ A B />` that :g:`K <g1:K>` is of :g:`C <g1:C>` ; therefore :g:`/ F H / <g1:/ F H />`, :g:`K <g1:K>` are equimultiples of :g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`.
+   :g:`/ F H / <g1:/ F H />` is the same multiple of :g:`/ A B / <g1:/ A B />` that :g:`K <g1:K>` is of :g:`C <g1:C>` ; therefore :g:`/ F H / <g1:/ F H />`, :g:`K <g1:K>` are equimultiples of :g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`
 
 .. step:: assert
 
-   Since :g:`/ G H / <g1:/ G H />` is the same multiple of :g:`/ E B / <g1:/ E B />` that :g:`K <g1:K>` is of :g:`C <g1:C>`, and :g:`/ E B / <g1:/ E B />` is :eq:`equal <g1:/ E B / = g1:C>` to :g:`C <g1:C>` → therefore :g:`/ G H / <g1:/ G H />` is :eq:`equal <g1:/ G H / = g1:K>` to :g:`K <g1:K>`.
+   :g:`/ G H / <g1:/ G H />` is the same multiple of :g:`/ E B / <g1:/ E B />` that :g:`K <g1:K>` is of :g:`C <g1:C>`, and :g:`/ E B / <g1:/ E B />` :eq:`= <g1:/ E B / = g1:C>` :g:`C <g1:C>` → therefore :g:`/ G H / <g1:/ G H />` :eq:`= <g1:/ G H / = g1:K>` :g:`K <g1:K>`
 
 .. step:: assert
 
@@ -111,15 +111,15 @@ G.186 unequal magnitudes greater
 
 .. step:: assert
 
-   Therefore neither is :g:`/ G H / <g1:/ G H />` less than :g:`M <g1:M>`.
+   neither is :g:`/ G H / <g1:/ G H />` less than :g:`M <g1:M>`
 
 .. step:: assert
 
-   :g:`/ F G / <g1:/ F G />` is greater than :g:`D <g1:D>`
+   :g:`/ F G / <g1:/ F G />` > :g:`D <g1:D>`
 
 .. step:: assert
 
-   Therefore the whole :g:`/ F H / <g1:/ F H />` is greater than :g:`D <g1:D>`, :g:`M <g1:M>` together.
+   :g:`/ F H / <g1:/ F H />` > :g:`D <g1:D>`, :g:`M <g1:M>` together
 
 .. step:: assert
 
@@ -127,19 +127,19 @@ G.186 unequal magnitudes greater
 
 .. step:: assert
 
-   Whence :g:`M <g1:M>`, :g:`D <g1:D>` together are equal to :g:`N <g1:N>`.
+   Whence :g:`M <g1:M>`, :g:`D <g1:D>` together are equal to :g:`N <g1:N>`
 
 .. step:: assert
 
-   :g:`/ F H / <g1:/ F H />` is greater than :g:`M <g1:M>`, :g:`D <g1:D>`
+   :g:`/ F H / <g1:/ F H />` > :g:`M <g1:M>`, :g:`D <g1:D>`
 
 .. step:: assert
 
-   Therefore :g:`/ F H / <g1:/ F H />` is in excess of :g:`N <g1:N>`,
+   :g:`/ F H / <g1:/ F H />` is in excess of :g:`N <g1:N>`,
 
 .. step:: assert
 
-   While :g:`K <g1:K>` is not in excess of :g:`N <g1:N>`.
+   While :g:`K <g1:K>` is not in excess of :g:`N <g1:N>`
 
 .. step:: assert
 
@@ -147,15 +147,15 @@ G.186 unequal magnitudes greater
 
 .. step:: assert ∵ equimultiples_multiple_magnitude_def <G.185>
 
-   Therefore :g:`/ A B / <g1:/ A B />` has to :g:`D <g1:D>` a greater ratio than :g:`C <g1:C>` has to :g:`D <g1:D>`.
+   :g:`/ A B / <g1:/ A B />` has to :g:`D <g1:D>` a greater ratio than :g:`C <g1:C>` has to :g:`D <g1:D>`
 
 .. step:: assert
 
-   I say next, that :g:`D <g1:D>` also has to :g:`C <g1:C>` a greater ratio than :g:`D <g1:D>` has to :g:`/ A B / <g1:/ A B />`.
+   I say next, that :g:`D <g1:D>` also has to :g:`C <g1:C>` a greater ratio than :g:`D <g1:D>` has to :g:`/ A B / <g1:/ A B />`
 
 .. step:: assert
 
-   With the same construction, we can prove similarly that :g:`N <g1:N>` is in excess of :g:`K <g1:K>`, while :g:`N <g1:N>` is not in excess of :g:`/ F H / <g1:/ F H />`.
+   With the same construction, we can prove similarly that :g:`N <g1:N>` is in excess of :g:`K <g1:K>`, while :g:`N <g1:N>` is not in excess of :g:`/ F H / <g1:/ F H />`
 
 .. step:: assert
 
@@ -163,7 +163,7 @@ G.186 unequal magnitudes greater
 
 .. step:: assert ∵ equimultiples_multiple_magnitude_def <G.185>
 
-   Therefore :g:`D <g1:D>` has to :g:`C <g1:C>` a greater ratio than :g:`D <g1:D>` has to :g:`/ A B / <g1:/ A B />`.
+   :g:`D <g1:D>` has to :g:`C <g1:C>` a greater ratio than :g:`D <g1:D>` has to :g:`/ A B / <g1:/ A B />`
 
 .. step:: assert
 
@@ -171,11 +171,11 @@ G.186 unequal magnitudes greater
 
 .. step:: assert
 
-   Let :g:`/ A E / <g2:/ A E />` be greater than :g:`/ E B / <g2:/ E B />`.
+   Let :g:`/ A E / <g2:/ A E />` be greater than :g:`/ E B / <g2:/ E B />`
 
 .. step:: assert ∵ magnitudes_said_ratio_def_v_def_4 <G.184>
 
-   Then the less, :g:`/ E B / <g2:/ E B />`, if multiplied, will sometime be greater than :g:`D <g2:D>`.
+   Then the less, :g:`/ E B / <g2:/ E B />`, if multiplied, will sometime be greater than :g:`D <g2:D>`
 
 .. step:: assert
 
@@ -195,19 +195,19 @@ G.186 unequal magnitudes greater
 
 .. step:: assert
 
-   :g:`/ G H / <g2:/ G H />` is greater than :g:`D <g2:D>`
+   :g:`/ G H / <g2:/ G H />` > :g:`D <g2:D>`
 
 .. step:: assert
 
-   Therefore the whole :g:`/ F H / <g2:/ F H />` is in excess of :g:`D <g2:D>`, :g:`M <g2:M>`, that is, of :g:`N <g2:N>`.
+   :g:`/ F H / <g2:/ F H />` is in excess of :g:`D <g2:D>`, :g:`M <g2:M>`, that is, of :g:`N <g2:N>`
 
 .. step:: assert
 
-   Now :g:`K <g2:K>` is not in excess of :g:`N <g2:N>`, inasmuch as :g:`/ F G / <g2:/ F G />` also, which is greater than :g:`/ G H / <g2:/ G H />`, that is, than :g:`K <g2:K>`, is not in excess of :g:`N <g2:N>`.
+   Now :g:`K <g2:K>` is not in excess of :g:`N <g2:N>`, inasmuch as :g:`/ F G / <g2:/ F G />` also, which > :g:`/ G H / <g2:/ G H />`, that is, than :g:`K <g2:K>`, is not in excess of :g:`N <g2:N>`
 
 .. step:: conclude
 
-   In the same manner, by following the above argument , we complete the demonstration.
+   In the same manner, by following the above argument , we complete the demonstration
 
 Dependency Graph
 ----------------
@@ -228,6 +228,7 @@ Dependency Graph
      "G.170" -> "G.169";
      "G.171" -> "G.170";
      "G.185" -> "G.170";
+     "G.186" -> "G.170";
      "G.186" -> "G.171";
      "G.186" -> "G.184";
      "G.186" -> "G.185";

@@ -1,38 +1,50 @@
-"""Programmatic construction for Book I, Proposition 10 (I.10).
+"""Programmatic construction for Book I, Proposition 9 (I.9).
 
-To bisect a given finite straight line.
+To bisect a given rectilineal angle.
 """
 
 from __future__ import annotations
 
-import sympy as sp
 from geometor.model import Model
 
 
 def construct_g1() -> Model:
-    """Construct the figure for Book I, Proposition 10 using geometor.model."""
-    model = Model("I.10")
+    """Construct the figure for Book I, Proposition 9 using geometor.model."""
+    model = Model("I.9")
 
-    # 1. Let AB be the given finite straight line.
-    A = model.set_point(0, 0, classes=["given"], ID="A")
-    B = model.set_point(1, 0, classes=["given"], ID="B")
-    model.set_segment(A, B)
+    # 1. Given rectilineal angle BAC
+    A = model.set_point(52, -12, classes=["given"], ID="A")
+    B = model.set_point(19, -114, classes=["given"], ID="B")
+    C = model.set_point(85, -114, classes=["given"], ID="C")
 
-    # 2. Construct equilateral triangle ABC on AB [I. 1]
-    C = model.set_point(sp.Rational(1, 2), sp.sqrt(3) / 2, label="C")
-    model.set_segment(A, C)
-    model.set_segment(B, C)
-    model.set_polygon([A, B, C])
+    model.construct_line(A, B)
+    model.construct_line(A, C)
 
-    # 3. Bisect angle ACB by straight line CD meeting AB at D [I. 9]
-    D = model.set_point(sp.Rational(1, 2), 0, label="D")
+    # 2. Point D taken at random on AB, and AE cut off from AC equal to AD [I. 3]
+    D = model.set_point(33, -72, ID="D")
+    E = model.set_point(71, -72, ID="E")
+
     model.set_section([A, D, B])
     model.set_segment(A, D)
     model.set_segment(D, B)
-    model.set_segment(C, D)
+    model.set_segment(A, B)
 
-    model.set_polygon([A, C, D])
-    model.set_polygon([B, C, D])
+    model.set_section([A, E, C])
+    model.set_segment(A, E)
+    model.set_segment(E, C)
+    model.set_segment(A, C)
+
+    # 3. Join DE, construct equilateral triangle DEF on DE [I. 1], and join AF
+    F = model.set_point(52, -105, ID="F")
+    model.set_segment(D, E)
+    model.set_segment(D, F)
+    model.set_segment(E, F)
+    model.set_segment(A, F)
+
+    model.set_polygon([A, D, E])
+    model.set_polygon([D, E, F])
+    model.set_polygon([A, D, F])
+    model.set_polygon([A, E, F])
 
     return model
 

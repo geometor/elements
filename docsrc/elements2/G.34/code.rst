@@ -1,18 +1,19 @@
 :canonical_id: G.34
-:original_id: I.12
-:title: G.34 construct a perpendicular from a point to a line
+:original_id: I.11
+:title: G.34 construct a perpendicular at a point on a line
 :volume: I
 :book: I
 :type: prop
+:youtube_id: nS_nF0U6PZs
 
-G.34 construct a perpendicular from a point to a line — Code
-============================================================
+G.34 construct a perpendicular at a point on a line — Code
+==========================================================
 
-.. rubric:: `I.12 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/12/>`_
+.. rubric:: `I.11 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/11/>`_
 
 .. enunciation::
 
-   Construct a :term:`perpendicular <G.32>` to a given :term:`line <G.2>` from a given :term:`point <G.1>` not on it.
+   Construct a :term:`segment <G.4>` :term:`at right angles <G.33>` to a given :term:`line <G.2>` from a given :term:`point <G.1>` on it.
 
 .. picture:: g1.svg
 

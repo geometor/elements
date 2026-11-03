@@ -10,7 +10,7 @@
 :categories: theorem, proof, number-theory
 :category: theorem, proof, number-theory
 :tags: book-vii, point, number, in-the-same-ratio, ex-aequali, alternando, ratio
-:dependencies: G.174, G.176, G.248, G.266
+:dependencies: G.174, G.176, G.194, G.248, G.266
 :excerpt: If there be as many numbers as we please, and others equal to them in multitude, which taken two and two are in the same ratio, they is in the same ratio ex aequali.
 
 .. _G.267:
@@ -40,7 +40,7 @@ G.267 there many numbers
 
 .. step:: assert
 
-   I say that, *ex aequali*, as :g:`A <g1:A>` is to :g:`C <g1:C>`, so also is :g:`D <g1:D>` to :g:`F <g1:F>`.
+   I say that, *ex aequali*, as :g:`A <g1:A>` is to :g:`C <g1:C>`, so also is :g:`D <g1:D>` to :g:`F <g1:F>`
 
 .. step:: assert
 
@@ -48,7 +48,7 @@ G.267 there many numbers
 
 .. step:: assert ∵ numbers_proportional_proportional <G.266>
 
-   Therefore, :term:`alternately <G.194>`, as :g:`A <g1:A>` is to :g:`D <g1:D>`, so is :g:`B <g1:B>` to :g:`E <g1:E>`.
+   :term:`alternately <G.194>`, as :g:`A <g1:A>` is to :g:`D <g1:D>`, so is :g:`B <g1:B>` to :g:`E <g1:E>`
 
 .. step:: assert
 
@@ -56,19 +56,19 @@ G.267 there many numbers
 
 .. step:: assert ∵ numbers_proportional_proportional <G.266>
 
-   Therefore, alternately, as :g:`B <g1:B>` is to :g:`E <g1:E>`, so is :g:`C <g1:C>` to :g:`F <g1:F>`.
+   alternately, as :g:`B <g1:B>` is to :g:`E <g1:E>`, so is :g:`C <g1:C>` to :g:`F <g1:F>`
 
 .. step:: assert
 
-   But, as :g:`B <g1:B>` is to :g:`E <g1:E>`, so is :g:`A <g1:A>` to :g:`D <g1:D>`;
+   But, as :g:`B <g1:B>` is to :g:`E <g1:E>`, so is :g:`A <g1:A>` to :g:`D <g1:D>`
 
 .. step:: assert
 
-   Therefore also, as :g:`A <g1:A>` is to :g:`D <g1:D>`, so is :g:`C <g1:C>` to :g:`F <g1:F>`.
+   also, as :g:`A <g1:A>` is to :g:`D <g1:D>`, so is :g:`C <g1:C>` to :g:`F <g1:F>`
 
 .. step:: conclude ∵ numbers_proportional_proportional <G.266>
 
-   Therefore, alternately, as :g:`A <g1:A>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to :g:`F <g1:F>`.
+   alternately, as :g:`A <g1:A>` is to :g:`C <g1:C>`, so is :g:`D <g1:D>` to :g:`F <g1:F>`
 
 Dependency Graph
 ----------------
@@ -110,11 +110,13 @@ Dependency Graph
      "G.267" -> "G.174";
      "G.180" -> "G.176";
      "G.267" -> "G.176";
+     "G.263" -> "G.180";
      "G.266" -> "G.180";
      "G.194" -> "G.181";
      "G.261" -> "G.194";
      "G.262" -> "G.194";
      "G.266" -> "G.194";
+     "G.267" -> "G.194";
      "G.248" -> "G.247";
      "G.253" -> "G.248";
      "G.256" -> "G.248";
@@ -124,14 +126,19 @@ Dependency Graph
      "G.262" -> "G.248";
      "G.266" -> "G.248";
      "G.267" -> "G.248";
+     "G.254" -> "G.253";
+     "G.256" -> "G.253";
      "G.257" -> "G.253";
+     "G.258" -> "G.253";
      "G.261" -> "G.253";
      "G.262" -> "G.253";
      "G.263" -> "G.253";
+     "G.266" -> "G.253";
      "G.258" -> "G.254";
      "G.261" -> "G.254";
      "G.262" -> "G.254";
      "G.263" -> "G.254";
+     "G.266" -> "G.254";
      "G.257" -> "G.256";
      "G.263" -> "G.256";
      "G.258" -> "G.257";
