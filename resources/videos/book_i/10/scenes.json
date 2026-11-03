@@ -1,0 +1,303 @@
+[
+  {
+    "bell": "bell:proposition",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "weight": 1.35,
+        "prop_id": "BOOK I • PROP. 10",
+        "short_title": "bisect a segment",
+        "g_id": "G.32",
+        "folio": "Folio 0281 • p. 267",
+        "enunciation": "To bisect a given finite straight line.",
+        "step_num": 1,
+        "step_total": 6,
+        "step_kind": "GIVEN",
+        "chapter": "given segment / A B /",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0281.g1.svg",
+        "visible_ids": [
+          "el-seg-AD",
+          "el-seg-DB",
+          "el-seg-AB",
+          "el-pt-A",
+          "el-pt-B",
+          "lbl-A",
+          "lbl-B"
+        ],
+        "active_ids": [
+          "el-seg-AB",
+          "hl-seg-AB",
+          "el-pt-A",
+          "el-pt-B",
+          "lbl-A",
+          "lbl-B"
+        ],
+        "equal_ids": [],
+        "tick_ids": [],
+        "symbolic": "given: / A B /",
+        "clause_html": "<span class=\"g-tok\">/ A B /</span>",
+        "just_id": "GIVEN",
+        "just_title": "given"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 0.65,
+        "prop_id": "BOOK I • PROP. 10",
+        "short_title": "bisect a segment",
+        "g_id": "G.32",
+        "folio": "Folio 0281 • p. 267",
+        "enunciation": "To bisect a given finite straight line.",
+        "step_num": 2,
+        "step_total": 6,
+        "step_kind": "GOAL",
+        "chapter": "bisect_segment(/ A B /) → D",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0281.g1.svg",
+        "visible_ids": [
+          "el-seg-AD",
+          "el-seg-DB",
+          "el-seg-AB",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-D",
+          "lbl-A",
+          "lbl-B",
+          "lbl-D"
+        ],
+        "active_ids": [
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-D",
+          "lbl-A",
+          "lbl-B",
+          "lbl-D"
+        ],
+        "equal_ids": [
+          "el-seg-AD",
+          "hl-seg-AD",
+          "el-seg-DB",
+          "hl-seg-DB"
+        ],
+        "tick_ids": [
+          "el-seg-AD",
+          "el-seg-DB"
+        ],
+        "symbolic": "bisect_segment(/ A B /) → D ∈ / A B / : / A D / = / B D /",
+        "clause_html": "<div class=\"clause-line\">bisect_segment(<span class=\"g-tok\">/ A B /</span>) → <span class=\"g-tok\">D</span> ∈ <span class=\"g-tok\">/ A B /</span></div><div class=\"clause-line\"><span class=\"g-tok\">/ A D /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ B D /</span></div>",
+        "just_id": "G.32 • I.10",
+        "just_title": "bisect_segment"
+      }
+    ]
+  },
+  {
+    "bell": "bell:construction",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "weight": 1.0,
+        "prop_id": "BOOK I • PROP. 10",
+        "short_title": "bisect a segment",
+        "g_id": "G.32",
+        "folio": "Folio 0281 • p. 267",
+        "enunciation": "To bisect a given finite straight line.",
+        "step_num": 3,
+        "step_total": 6,
+        "step_kind": "CONSTRUCT",
+        "chapter": "equilateral_triangle(/ A B /) → < A B C >",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0281.g1.svg",
+        "visible_ids": [
+          "el-tri-ABC",
+          "el-seg-AD",
+          "el-seg-DB",
+          "el-seg-AB",
+          "el-seg-AC",
+          "el-seg-BC",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C"
+        ],
+        "active_ids": [
+          "el-tri-ABC",
+          "hl-tri-ABC",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C"
+        ],
+        "equal_ids": [
+          "el-seg-AB",
+          "hl-seg-AB",
+          "el-seg-AC",
+          "hl-seg-AC",
+          "el-seg-BC",
+          "hl-seg-BC"
+        ],
+        "tick_ids": [
+          "el-seg-AB",
+          "el-seg-AC",
+          "el-seg-BC"
+        ],
+        "symbolic": "equilateral_triangle(/ A B /) → < A B C >",
+        "clause_html": "<div class=\"clause-line\">equilateral_triangle(<span class=\"g-tok\">/ A B /</span>) → <span class=\"g-tok\">&lt; A B C &gt;</span></div><div class=\"clause-line\">(<span class=\"g-tok\">/ A B /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ A C /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ B C /</span>)</div>",
+        "just_id": "G.17 • I.1",
+        "just_title": "equilateral_triangle"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 1.0,
+        "prop_id": "BOOK I • PROP. 10",
+        "short_title": "bisect a segment",
+        "g_id": "G.32",
+        "folio": "Folio 0281 • p. 267",
+        "enunciation": "To bisect a given finite straight line.",
+        "step_num": 4,
+        "step_total": 6,
+        "step_kind": "CONSTRUCT",
+        "chapter": "bisect_angle(< A C B )) → / C D /",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0281.g1.svg",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-seg-CD",
+          "hl-seg-CD",
+          "el-pt-C",
+          "el-pt-D",
+          "lbl-C",
+          "lbl-D"
+        ],
+        "equal_ids": [
+          "el-ang-ACD",
+          "hl-ang-ACD",
+          "hl-arc-ACD",
+          "el-ang-BCD",
+          "hl-ang-BCD",
+          "hl-arc-BCD"
+        ],
+        "tick_ids": [
+          "el-seg-AC",
+          "el-seg-BC"
+        ],
+        "symbolic": "bisect_angle(< A C B )) → / C D / (< A C D ) = < B C D ))",
+        "clause_html": "<div class=\"clause-line\">bisect_angle(<span class=\"g-tok\">&lt; A C B )</span>) → <span class=\"g-tok\">/ C D /</span></div><div class=\"clause-line\">(<span class=\"g-tok\">&lt; A C D )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; B C D )</span>)</div>",
+        "just_id": "G.31 • I.9",
+        "just_title": "bisect_angle"
+      }
+    ]
+  },
+  {
+    "bell": "bell:insight",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "weight": 0.95,
+        "prop_id": "BOOK I • PROP. 10",
+        "short_title": "bisect a segment",
+        "g_id": "G.32",
+        "folio": "Folio 0281 • p. 267",
+        "enunciation": "To bisect a given finite straight line.",
+        "step_num": 5,
+        "step_total": 6,
+        "step_kind": "ASSERT",
+        "chapter": "/ A C / = / B C /, / C D / = / C D /, < A C D ) = < B C D )",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0281.g1.svg",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-tri-ACD",
+          "hl-tri-ACD",
+          "el-tri-BCD",
+          "hl-tri-BCD",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D"
+        ],
+        "equal_ids": [
+          "el-seg-AC",
+          "hl-seg-AC",
+          "el-seg-BC",
+          "hl-seg-BC",
+          "el-seg-CD",
+          "hl-seg-CD",
+          "el-ang-ACD",
+          "hl-ang-ACD",
+          "hl-arc-ACD",
+          "el-ang-BCD",
+          "hl-ang-BCD",
+          "hl-arc-BCD"
+        ],
+        "tick_ids": [
+          "el-seg-AC",
+          "el-seg-BC"
+        ],
+        "tick_2_ids": [
+          "el-seg-CD"
+        ],
+        "symbolic": "/ A C / = / B C /, / C D / = / C D /, < A C D ) = < B C D )",
+        "clause_html": "<div class=\"clause-line\"><span class=\"g-tok\">/ A C /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ B C /</span>, <span class=\"g-tok\">/ C D /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ C D /</span>,</div><div class=\"clause-line\"><span class=\"g-tok\">&lt; A C D )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; B C D )</span></div>",
+        "just_id": "G.17 • I.1 & G.31 • I.9",
+        "just_title": "equilateral_triangle • bisect_angle"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 1.05,
+        "prop_id": "BOOK I • PROP. 10",
+        "short_title": "bisect a segment",
+        "g_id": "G.32",
+        "folio": "Folio 0281 • p. 267",
+        "enunciation": "To bisect a given finite straight line.",
+        "step_num": 6,
+        "step_total": 6,
+        "step_kind": "∴",
+        "chapter": "/ A D / = / B D /",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0281.g1.svg",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-tri-ACD",
+          "hl-tri-ACD",
+          "el-tri-BCD",
+          "hl-tri-BCD",
+          "el-pt-A",
+          "el-pt-D",
+          "el-pt-B",
+          "lbl-A",
+          "lbl-D",
+          "lbl-B"
+        ],
+        "equal_ids": [
+          "el-seg-AD",
+          "hl-seg-AD",
+          "el-seg-DB",
+          "hl-seg-DB"
+        ],
+        "tick_ids": [
+          "el-seg-AD",
+          "el-seg-DB"
+        ],
+        "tick_2_ids": [
+          "el-seg-AC",
+          "el-seg-BC"
+        ],
+        "tick_3_ids": [
+          "el-seg-CD"
+        ],
+        "symbolic": "/ A C / = / B C /, / C D / = / C D /, < A C D ) = < B C D ) → / A D / = / B D /",
+        "clause_html": "<div class=\"clause-line\"><span class=\"g-tok\">/ A C /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ B C /</span>, <span class=\"g-tok\">/ C D /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ C D /</span>, <span class=\"g-tok\">&lt; A C D )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; B C D )</span></div><div class=\"clause-line\">→ <span class=\"g-tok\">/ A D /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ B D /</span></div>",
+        "just_id": "G.24 • I.4",
+        "just_title": "sas_congruence"
+      }
+    ]
+  }
+]

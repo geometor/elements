@@ -1,0 +1,5 @@
+[bell:proposition] [style:brisk] Euclid's Elements, Book One, Proposition One. <pause> Construct an equilateral triangle on a given segment. <pause> Given segment A B, we are to construct an equilateral triangle on it.
+
+[bell:construction] [style:brisk] Construct circle A B, with center A and defining radius point B. <pause> Then construct circle B A, with center B and defining radius point A. <pause> From point C, where the circles intersect, construct segments C A and C B.
+
+[bell:insight] [style:brisk] Since A is the center of circle A B, segment A C equals segment A B. <pause> Since B is the center of circle B A, segment B C equals segment B A. <pause> By Common Notion One, things equal to the same thing are equal to one another, so A C, A B, and B C are all equal. <pause> Therefore triangle A B C is equilateral, and has been constructed on the given segment A B, <pause> as was required to do.

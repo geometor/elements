@@ -1,0 +1,5 @@
+[bell:proposition] [style:brisk] Euclid's Elements, Book One, Proposition Eight. <pause> Triangles with all three corresponding sides equal have their corresponding angles equal. <pause> Given triangles A B C and D E F with side A B equal to D E, side A C equal to D F, and base B C equal to E F, <pause> we prove that angle B A C equals angle E D F.
+
+[bell:construction] [style:brisk] Apply triangle A B C to triangle D E F, placing point B on point E and segment B C along E F. Because B C equals E F, point C coincides with point F, and base B C coincides with base E F. <pause> Now suppose sides B A and A C do not coincide with E D and D F, <pause> but fall beside them as E G and G F.
+
+[bell:insight] [style:brisk] Then on the same base E F and on the same side, two distinct triangles E D F and E G F would have E G equal to B A, which equals E D, and G F equal to A C, which equals D F. <pause> But this is impossible by Proposition Seven. <pause> Thus sides B A and A C must coincide with E D and D F. <pause> Therefore angle B A C coincides with angle E D F and equals it, <pause> as was required to prove.

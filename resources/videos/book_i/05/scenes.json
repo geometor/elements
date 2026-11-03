@@ -1,0 +1,539 @@
+[
+  {
+    "bell": "bell:proposition",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "weight": 1.15,
+        "prop_id": "BOOK I • PROP. 5",
+        "short_title": "base angles of an isosceles triangle",
+        "g_id": "G.25",
+        "folio": "Folio 0265 • p. 251",
+        "enunciation": "In isosceles triangles the angles at the base are equal to one another, and, if the equal straight lines be produced further, the angles under the base will be equal to one another.",
+        "step_num": 1,
+        "step_total": 9,
+        "step_kind": "GIVEN",
+        "chapter": "given < A B C >, / A B / = / A C /",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0265.g1.svg",
+        "visible_ids": [
+          "el-tri-ABC",
+          "el-seg-AB",
+          "el-seg-AC",
+          "el-seg-BC",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C"
+        ],
+        "active_ids": [
+          "el-tri-ABC",
+          "hl-tri-ABC",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C"
+        ],
+        "equal_ids": [
+          "el-seg-AB",
+          "hl-seg-AB",
+          "el-seg-AC",
+          "hl-seg-AC"
+        ],
+        "tick_ids": [
+          "el-seg-AB",
+          "el-seg-AC"
+        ],
+        "symbolic": "given: < A B C >, / A B / = / A C /",
+        "clause_html": "<span class=\"g-tok\">&lt; A B C &gt;</span>, <span class=\"g-tok\">/ A B /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ A C /</span>",
+        "just_id": "G.13 • I.Def.20",
+        "just_title": "isosceles_triangle"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 0.95,
+        "prop_id": "BOOK I • PROP. 5",
+        "short_title": "base angles of an isosceles triangle",
+        "g_id": "G.25",
+        "folio": "Folio 0265 • p. 251",
+        "enunciation": "In isosceles triangles the angles at the base are equal to one another, and, if the equal straight lines be produced further, the angles under the base will be equal to one another.",
+        "step_num": 2,
+        "step_total": 9,
+        "step_kind": "PROVE",
+        "chapter": "< A B C ) = < A C B ), < C B D ) = < B C E )",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0265.g1.svg",
+        "visible_ids": [
+          "el-tri-ABC",
+          "el-seg-AB",
+          "el-seg-AC",
+          "el-seg-BC",
+          "el-line-AD",
+          "el-line-AE",
+          "el-seg-BD",
+          "el-seg-CE",
+          "el-ang-ABC",
+          "el-ang-ACB",
+          "el-ang-CBD",
+          "el-ang-BCE",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-E",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E"
+        ],
+        "active_ids": [
+          "el-seg-BC",
+          "hl-seg-BC",
+          "el-pt-B",
+          "el-pt-C",
+          "lbl-B",
+          "lbl-C"
+        ],
+        "equal_ids": [
+          "el-ang-ABC",
+          "hl-ang-ABC",
+          "hl-arc-ABC",
+          "el-ang-ACB",
+          "hl-ang-ACB",
+          "hl-arc-ACB",
+          "el-ang-CBD",
+          "hl-ang-CBD",
+          "hl-arc-CBD",
+          "el-ang-BCE",
+          "hl-ang-BCE",
+          "hl-arc-BCE"
+        ],
+        "tick_ids": [
+          "el-seg-AB",
+          "el-seg-AC"
+        ],
+        "symbolic": "prove: < A B C ) = < A C B ), < C B D ) = < B C E )",
+        "clause_html": "<span class=\"g-tok\">&lt; A B C )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; A C B )</span>, <span class=\"g-tok\">&lt; C B D )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; B C E )</span>",
+        "just_id": "G.25 • I.5",
+        "just_title": "isosceles_base_angles"
+      }
+    ]
+  },
+  {
+    "bell": "bell:construction",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "weight": 0.9,
+        "prop_id": "BOOK I • PROP. 5",
+        "short_title": "base angles of an isosceles triangle",
+        "g_id": "G.25",
+        "folio": "Folio 0265 • p. 251",
+        "enunciation": "In isosceles triangles the angles at the base are equal to one another, and, if the equal straight lines be produced further, the angles under the base will be equal to one another.",
+        "step_num": 3,
+        "step_total": 9,
+        "step_kind": "CONSTRUCT",
+        "chapter": "extend(/ A B /) → / B D /, extend(/ A C /) → / C E /",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0265.g1.svg",
+        "visible_ids": [
+          "el-tri-ABC",
+          "el-seg-AB",
+          "el-seg-AC",
+          "el-seg-BC",
+          "el-line-AD",
+          "el-line-AE",
+          "el-seg-BD",
+          "el-seg-CE",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-E",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E"
+        ],
+        "active_ids": [
+          "el-line-AD",
+          "hl-line-AD",
+          "el-line-AE",
+          "hl-line-AE",
+          "el-seg-BD",
+          "hl-seg-BD",
+          "el-seg-CE",
+          "hl-seg-CE",
+          "el-pt-D",
+          "el-pt-E",
+          "lbl-D",
+          "lbl-E"
+        ],
+        "equal_ids": [],
+        "tick_ids": [
+          "el-seg-AB",
+          "el-seg-AC"
+        ],
+        "symbolic": "extend(/ A B /) → / B D /, extend(/ A C /) → / C E /",
+        "clause_html": "<div class=\"clause-line\"><span class=\"fn-tok\">extend</span>(<span class=\"g-tok\">/ A B /</span>) → <span class=\"g-tok\">/ B D /</span></div><div class=\"clause-line\"><span class=\"fn-tok\">extend</span>(<span class=\"g-tok\">/ A C /</span>) → <span class=\"g-tok\">/ C E /</span></div>",
+        "just_id": "G.18 • I.Post.2",
+        "just_title": "extend(seg)"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 1.0,
+        "prop_id": "BOOK I • PROP. 5",
+        "short_title": "base angles of an isosceles triangle",
+        "g_id": "G.25",
+        "folio": "Folio 0265 • p. 251",
+        "enunciation": "In isosceles triangles the angles at the base are equal to one another, and, if the equal straight lines be produced further, the angles under the base will be equal to one another.",
+        "step_num": 4,
+        "step_total": 9,
+        "step_kind": "CONSTRUCT",
+        "chapter": "point(/ B D /) → F, cut_equal_segment(/ A E /, / A F /) → / A G /",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0265.g1.svg",
+        "visible_ids": [
+          "el-tri-ABC",
+          "el-seg-AB",
+          "el-seg-AC",
+          "el-seg-BC",
+          "el-line-AD",
+          "el-line-AE",
+          "el-seg-BD",
+          "el-seg-CE",
+          "el-seg-AF",
+          "el-seg-AG",
+          "el-seg-BF",
+          "el-seg-CG",
+          "el-seg-FD",
+          "el-seg-GE",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-E",
+          "el-pt-F",
+          "el-pt-G",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E",
+          "lbl-F",
+          "lbl-G"
+        ],
+        "active_ids": [
+          "el-pt-F",
+          "el-pt-G",
+          "lbl-F",
+          "lbl-G"
+        ],
+        "equal_ids": [
+          "el-seg-AF",
+          "hl-seg-AF",
+          "el-seg-AG",
+          "hl-seg-AG",
+          "el-pt-A",
+          "lbl-A"
+        ],
+        "tick_ids": [
+          "el-seg-AB",
+          "el-seg-AC"
+        ],
+        "tick_2_ids": [
+          "el-seg-BF",
+          "el-seg-CG"
+        ],
+        "symbolic": "point(/ B D /) → F, cut_equal_segment(/ A E /, / A F /) → / A G / (= / A F /)",
+        "clause_html": "<div class=\"clause-line\"><span class=\"fn-tok\">point</span>(<span class=\"g-tok\">/ B D /</span>) → <span class=\"g-tok\">F</span></div><div class=\"clause-line\"><span class=\"fn-tok\">cut_equal_segment</span>(<span class=\"g-tok\">/ A E /</span>, <span class=\"g-tok\">/ A F /</span>) → <span class=\"g-tok\">/ A G /</span> (<span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ A F /</span>)</div>",
+        "just_id": "G.21 • I.3",
+        "just_title": "cut_equal_segment(greater, lesser)"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 0.85,
+        "prop_id": "BOOK I • PROP. 5",
+        "short_title": "base angles of an isosceles triangle",
+        "g_id": "G.25",
+        "folio": "Folio 0265 • p. 251",
+        "enunciation": "In isosceles triangles the angles at the base are equal to one another, and, if the equal straight lines be produced further, the angles under the base will be equal to one another.",
+        "step_num": 5,
+        "step_total": 9,
+        "step_kind": "CONSTRUCT",
+        "chapter": "segment(F, C) → / F C /, segment(G, B) → / G B /",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0265.g1.svg",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-seg-FC",
+          "hl-seg-FC",
+          "el-seg-GB",
+          "hl-seg-GB",
+          "el-pt-F",
+          "el-pt-C",
+          "el-pt-G",
+          "el-pt-B",
+          "lbl-F",
+          "lbl-C",
+          "lbl-G",
+          "lbl-B"
+        ],
+        "equal_ids": [],
+        "tick_ids": [
+          "el-seg-AB",
+          "el-seg-AC"
+        ],
+        "tick_2_ids": [
+          "el-seg-BF",
+          "el-seg-CG"
+        ],
+        "symbolic": "segment(F, C) → / F C /, segment(G, B) → / G B /",
+        "clause_html": "<div class=\"clause-line\"><span class=\"fn-tok\">segment</span>(<span class=\"g-tok\">F</span>, <span class=\"g-tok\">C</span>) → <span class=\"g-tok\">/ F C /</span></div><div class=\"clause-line\"><span class=\"fn-tok\">segment</span>(<span class=\"g-tok\">G</span>, <span class=\"g-tok\">B</span>) → <span class=\"g-tok\">/ G B /</span></div>",
+        "just_id": "G.14 • I.Post.1",
+        "just_title": "segment(pt, pt)"
+      }
+    ]
+  },
+  {
+    "bell": "bell:insight",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "weight": 1.25,
+        "prop_id": "BOOK I • PROP. 5",
+        "short_title": "base angles of an isosceles triangle",
+        "g_id": "G.25",
+        "folio": "Folio 0265–0266 • p. 251–252",
+        "enunciation": "In isosceles triangles the angles at the base are equal to one another, and, if the equal straight lines be produced further, the angles under the base will be equal to one another.",
+        "step_num": 6,
+        "step_total": 9,
+        "step_kind": "ASSERT",
+        "chapter": "/ F A / = / G A /, / A C / = / A B /, < F A G ) → / F C / = / G B /",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0265.g1.svg",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-tri-AFC",
+          "hl-tri-AFC",
+          "el-tri-AGB",
+          "hl-tri-AGB",
+          "el-ang-FAG",
+          "hl-ang-FAG",
+          "hl-arc-FAG",
+          "el-pt-A",
+          "el-pt-F",
+          "el-pt-C",
+          "el-pt-G",
+          "el-pt-B",
+          "lbl-A",
+          "lbl-F",
+          "lbl-C",
+          "lbl-G",
+          "lbl-B"
+        ],
+        "equal_ids": [
+          "el-seg-FC",
+          "hl-seg-FC",
+          "el-seg-GB",
+          "hl-seg-GB",
+          "el-ang-ACF",
+          "hl-ang-ACF",
+          "hl-arc-ACF",
+          "el-ang-ABG",
+          "hl-ang-ABG",
+          "hl-arc-ABG",
+          "el-ang-AFC",
+          "hl-ang-AFC",
+          "hl-arc-AFC",
+          "el-ang-AGB",
+          "hl-ang-AGB",
+          "hl-arc-AGB"
+        ],
+        "tick_ids": [
+          "el-seg-AB",
+          "el-seg-AC"
+        ],
+        "tick_2_ids": [
+          "el-seg-AF",
+          "el-seg-AG"
+        ],
+        "tick_3_ids": [
+          "el-seg-FC",
+          "el-seg-GB"
+        ],
+        "symbolic": "/ F A / = / G A /, / A C / = / A B /, < F A G ) → / F C / = / G B /, < A C F ) = < A B G ), < A F C ) = < A G B )",
+        "clause_html": "<div class=\"clause-line\"><span class=\"g-tok\">/ F A /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ G A /</span>, <span class=\"g-tok\">/ A C /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ A B /</span>, <span class=\"g-tok\">&lt; F A G )</span></div><div class=\"clause-line\">→ <span class=\"g-tok\">/ F C /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ G B /</span>, <span class=\"g-tok\">&lt; A C F )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; A B G )</span>, <span class=\"g-tok\">&lt; A F C )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; A G B )</span></div>",
+        "just_id": "G.24 • I.4",
+        "just_title": "sas_congruence"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 0.9,
+        "prop_id": "BOOK I • PROP. 5",
+        "short_title": "base angles of an isosceles triangle",
+        "g_id": "G.25",
+        "folio": "Folio 0265–0266 • p. 251–252",
+        "enunciation": "In isosceles triangles the angles at the base are equal to one another, and, if the equal straight lines be produced further, the angles under the base will be equal to one another.",
+        "step_num": 7,
+        "step_total": 9,
+        "step_kind": "ASSERT",
+        "chapter": "/ A F / = / A G /, / A B / = / A C / → / B F / = / C G /",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0265.g1.svg",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-seg-AB",
+          "hl-seg-AB",
+          "el-seg-AC",
+          "hl-seg-AC",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-F",
+          "el-pt-G",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-F",
+          "lbl-G"
+        ],
+        "equal_ids": [
+          "el-seg-BF",
+          "hl-seg-BF",
+          "el-seg-CG",
+          "hl-seg-CG"
+        ],
+        "tick_ids": [
+          "el-seg-AB",
+          "el-seg-AC"
+        ],
+        "tick_2_ids": [
+          "el-seg-BF",
+          "el-seg-CG"
+        ],
+        "symbolic": "/ A F / = / A G /, / A B / = / A C / → / B F / = / C G /",
+        "clause_html": "<div class=\"clause-line\"><span class=\"g-tok\">/ A F /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ A G /</span>, <span class=\"g-tok\">/ A B /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ A C /</span></div><div class=\"clause-line\">→ <span class=\"g-tok\">/ B F /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ C G /</span></div>",
+        "just_id": "G.19 • I.C.N.3",
+        "just_title": "subtract_equals"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 1.15,
+        "prop_id": "BOOK I • PROP. 5",
+        "short_title": "base angles of an isosceles triangle",
+        "g_id": "G.25",
+        "folio": "Folio 0265–0266 • p. 251–252",
+        "enunciation": "In isosceles triangles the angles at the base are equal to one another, and, if the equal straight lines be produced further, the angles under the base will be equal to one another.",
+        "step_num": 8,
+        "step_total": 9,
+        "step_kind": "ASSERT",
+        "chapter": "/ B F / = / C G /, / F C / = / G B /, < B F C ) = < C G B ) → < F B C ) = < G C B )",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0265.g1.svg",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-tri-BFC",
+          "hl-tri-BFC",
+          "el-tri-CGB",
+          "hl-tri-CGB",
+          "el-ang-BCF",
+          "hl-ang-BCF",
+          "hl-arc-BCF",
+          "el-ang-CBG",
+          "hl-ang-CBG",
+          "hl-arc-CBG",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-F",
+          "el-pt-G",
+          "lbl-B",
+          "lbl-C",
+          "lbl-F",
+          "lbl-G"
+        ],
+        "equal_ids": [
+          "el-ang-FBC",
+          "hl-ang-FBC",
+          "hl-arc-FBC",
+          "el-ang-GCB",
+          "hl-ang-GCB",
+          "hl-arc-GCB"
+        ],
+        "tick_2_ids": [
+          "el-seg-BF",
+          "el-seg-CG"
+        ],
+        "tick_3_ids": [
+          "el-seg-FC",
+          "el-seg-GB"
+        ],
+        "symbolic": "/ B F / = / C G /, / F C / = / G B /, < B F C ) = < C G B ) → < F B C ) = < G C B ), < B C F ) = < C B G )",
+        "clause_html": "<div class=\"clause-line\"><span class=\"g-tok\">/ B F /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ C G /</span>, <span class=\"g-tok\">/ F C /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ G B /</span>, <span class=\"g-tok\">&lt; B F C )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; C G B )</span></div><div class=\"clause-line\">→ <span class=\"g-tok\">&lt; F B C )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; G C B )</span>, <span class=\"g-tok\">&lt; B C F )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; C B G )</span></div>",
+        "just_id": "G.24 • I.4",
+        "just_title": "sas_congruence"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 1.35,
+        "prop_id": "BOOK I • PROP. 5",
+        "short_title": "base angles of an isosceles triangle",
+        "g_id": "G.25",
+        "folio": "Folio 0265–0266 • ∴",
+        "enunciation": "In isosceles triangles the angles at the base are equal to one another, and, if the equal straight lines be produced further, the angles under the base will be equal to one another.",
+        "step_num": 9,
+        "step_total": 9,
+        "step_kind": "∴",
+        "chapter": "< A B G ) = < A C F ), < C B G ) = < B C F ) → < A B C ) = < A C B )",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0265.g1.svg",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-tri-ABC",
+          "hl-tri-ABC",
+          "el-ang-CBG",
+          "hl-ang-CBG",
+          "hl-arc-CBG",
+          "el-ang-BCF",
+          "hl-ang-BCF",
+          "hl-arc-BCF",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C"
+        ],
+        "equal_ids": [
+          "el-ang-ABC",
+          "hl-ang-ABC",
+          "hl-arc-ABC",
+          "el-ang-ACB",
+          "hl-ang-ACB",
+          "hl-arc-ACB",
+          "el-ang-FBC",
+          "hl-ang-FBC",
+          "hl-arc-FBC",
+          "el-ang-GCB",
+          "hl-ang-GCB",
+          "hl-arc-GCB"
+        ],
+        "tick_ids": [
+          "el-seg-AB",
+          "el-seg-AC"
+        ],
+        "symbolic": "< A B G ) = < A C F ), < C B G ) = < B C F ) → < A B C ) = < A C B )",
+        "clause_html": "<div class=\"clause-line\"><span class=\"g-tok\">&lt; A B G )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; A C F )</span>, <span class=\"g-tok\">&lt; C B G )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; B C F )</span></div><div class=\"clause-line\">→ <span class=\"g-tok\">&lt; A B C )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; A C B )</span></div>",
+        "just_id": "G.19 • I.C.N.3",
+        "just_title": "subtract_equals"
+      }
+    ]
+  }
+]

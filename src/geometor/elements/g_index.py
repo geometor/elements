@@ -398,14 +398,23 @@ def get_youtube_video_id(project_root: Path, node_ref: str) -> Optional[str]:
     book_slug = f"book_{m.group(1).lower()}"
     prop_dir = f"{int(m.group(2)):02d}"
     yt_json_path = (
-        project_root.parent
-        / "euclid"
+        project_root
         / "resources"
         / "videos"
         / book_slug
         / prop_dir
         / "youtube.json"
     )
+    if not yt_json_path.is_file():
+        yt_json_path = (
+            project_root.parent
+            / "euclid"
+            / "resources"
+            / "videos"
+            / book_slug
+            / prop_dir
+            / "youtube.json"
+        )
     if not yt_json_path.is_file():
         return None
     try:

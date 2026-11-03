@@ -1,0 +1,478 @@
+[
+  {
+    "bell": "bell:proposition",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "weight": 1.15,
+        "prop_id": "BOOK I • PROP. 1",
+        "short_title": "construct an equilateral triangle",
+        "g_id": "G.17",
+        "folio": "Folio 0255 • p. 241",
+        "enunciation": "On a given finite straight line to construct an equilateral triangle.",
+        "step_num": 1,
+        "step_total": 10,
+        "step_kind": "GIVEN",
+        "chapter": "given / A B /",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0255.g1.svg",
+        "visible_ids": [
+          "el-seg-AB",
+          "el-pt-A",
+          "el-pt-B",
+          "lbl-A",
+          "lbl-B"
+        ],
+        "hidden_ids": [
+          "el-pt-D",
+          "lbl-D",
+          "el-pt-E",
+          "lbl-E"
+        ],
+        "active_ids": [
+          "el-seg-AB",
+          "hl-seg-AB",
+          "el-pt-A",
+          "el-pt-B",
+          "lbl-A",
+          "lbl-B"
+        ],
+        "equal_ids": [],
+        "tick_ids": [],
+        "symbolic": "given: / A B /",
+        "clause_html": "<span class=\"g-tok\">/ A B /</span>",
+        "just_id": "G.4 • I.Def.4",
+        "just_title": "segment / A B /"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 0.85,
+        "prop_id": "BOOK I • PROP. 1",
+        "short_title": "construct an equilateral triangle",
+        "g_id": "G.17",
+        "folio": "Folio 0255 • p. 241",
+        "enunciation": "On a given finite straight line to construct an equilateral triangle.",
+        "step_num": 2,
+        "step_total": 10,
+        "step_kind": "GOAL",
+        "chapter": "equilateral_triangle(/ A B /) → < A B C >",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0255.g1.svg",
+        "visible_ids": [
+          "el-tri-ABC",
+          "el-seg-AB",
+          "el-seg-CA",
+          "el-seg-CB",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C"
+        ],
+        "hidden_ids": [
+          "el-pt-D",
+          "lbl-D",
+          "el-pt-E",
+          "lbl-E"
+        ],
+        "active_ids": [
+          "el-tri-ABC",
+          "hl-tri-ABC",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C"
+        ],
+        "equal_ids": [
+          "el-seg-AB",
+          "hl-seg-AB",
+          "el-seg-CA",
+          "hl-seg-CA",
+          "el-seg-CB",
+          "hl-seg-CB"
+        ],
+        "tick_ids": [
+          "el-seg-AB",
+          "el-seg-CA",
+          "el-seg-CB"
+        ],
+        "symbolic": "equilateral_triangle(/ A B /) → < A B C >",
+        "clause_html": "<span class=\"fn-tok\">equilateral_triangle</span>(<span class=\"g-tok\">/ A B /</span>) → <span class=\"g-tok\">&lt; A B C &gt;</span> : <span class=\"g-tok\">/ C A /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ A B /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ B C /</span>",
+        "just_id": "G.17 • I.1",
+        "just_title": "equilateral_triangle(/ A B /) → < A B C >"
+      }
+    ]
+  },
+  {
+    "bell": "bell:construction",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "weight": 1.05,
+        "prop_id": "BOOK I • PROP. 1",
+        "short_title": "construct an equilateral triangle",
+        "g_id": "G.17",
+        "folio": "Folio 0255 • p. 241",
+        "enunciation": "On a given finite straight line to construct an equilateral triangle.",
+        "step_num": 3,
+        "step_total": 10,
+        "step_kind": "CONSTRUCT",
+        "chapter": "circle(A, B) → ( A B )",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0255.g1.svg",
+        "visible_ids": [
+          "el-seg-AB",
+          "el-pt-A",
+          "el-pt-B",
+          "lbl-A",
+          "lbl-B",
+          "el-circle-BCD"
+        ],
+        "hidden_ids": [
+          "el-pt-D",
+          "lbl-D",
+          "el-pt-E",
+          "lbl-E"
+        ],
+        "active_ids": [
+          "el-circle-BCD",
+          "hl-circle-BCD",
+          "el-pt-A",
+          "lbl-A",
+          "el-pt-B",
+          "lbl-B",
+          "el-seg-AB"
+        ],
+        "equal_ids": [],
+        "tick_ids": [],
+        "symbolic": "circle(A, B) → ( A B )",
+        "clause_html": "<span class=\"fn-tok\">circle</span>(<span class=\"g-tok\">A</span>, <span class=\"g-tok\">B</span>) → <span class=\"g-tok\">( A B )</span>",
+        "just_id": "G.15 • I.Post.3",
+        "just_title": "circle(center, radius_pt)"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 1.1,
+        "prop_id": "BOOK I • PROP. 1",
+        "short_title": "construct an equilateral triangle",
+        "g_id": "G.17",
+        "folio": "Folio 0255 • p. 241",
+        "enunciation": "On a given finite straight line to construct an equilateral triangle.",
+        "step_num": 4,
+        "step_total": 10,
+        "step_kind": "CONSTRUCT",
+        "chapter": "circle(B, A) → ( B A )",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0255.g1.svg",
+        "visible_ids": [
+          "el-seg-AB",
+          "el-pt-A",
+          "el-pt-B",
+          "lbl-A",
+          "lbl-B",
+          "el-circle-BCD",
+          "el-circle-ACE"
+        ],
+        "hidden_ids": [
+          "el-pt-D",
+          "lbl-D",
+          "el-pt-E",
+          "lbl-E"
+        ],
+        "active_ids": [
+          "el-circle-ACE",
+          "hl-circle-ACE",
+          "el-pt-B",
+          "lbl-B",
+          "el-pt-A",
+          "lbl-A",
+          "el-seg-AB"
+        ],
+        "equal_ids": [],
+        "tick_ids": [],
+        "symbolic": "circle(B, A) → ( B A )",
+        "clause_html": "<span class=\"fn-tok\">circle</span>(<span class=\"g-tok\">B</span>, <span class=\"g-tok\">A</span>) → <span class=\"g-tok\">( B A )</span>",
+        "just_id": "G.15 • I.Post.3",
+        "just_title": "circle(center, radius_pt)"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 0.7,
+        "prop_id": "BOOK I • PROP. 1",
+        "short_title": "construct an equilateral triangle",
+        "g_id": "G.17",
+        "folio": "Folio 0255 • p. 241",
+        "enunciation": "On a given finite straight line to construct an equilateral triangle.",
+        "step_num": 5,
+        "step_total": 10,
+        "step_kind": "INTERSECT",
+        "chapter": "( A B ) ∩ ( B A ) → C",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0255.g1.svg",
+        "visible_ids": [
+          "el-seg-AB",
+          "el-pt-A",
+          "el-pt-B",
+          "lbl-A",
+          "lbl-B",
+          "el-circle-BCD",
+          "el-circle-ACE",
+          "el-pt-C",
+          "lbl-C"
+        ],
+        "hidden_ids": [
+          "el-pt-D",
+          "lbl-D",
+          "el-pt-E",
+          "lbl-E"
+        ],
+        "active_ids": [
+          "el-pt-C",
+          "lbl-C"
+        ],
+        "equal_ids": [],
+        "tick_ids": [],
+        "symbolic": "( A B ) ∩ ( B A ) → C",
+        "clause_html": "<span class=\"g-tok\">( A B )</span> ∩ <span class=\"g-tok\">( B A )</span> → <span class=\"g-tok\">C</span>",
+        "just_id": "∩ • INTERSECT",
+        "just_title": "( A B ) ∩ ( B A ) → C"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 0.75,
+        "prop_id": "BOOK I • PROP. 1",
+        "short_title": "construct an equilateral triangle",
+        "g_id": "G.17",
+        "folio": "Folio 0255 • p. 241",
+        "enunciation": "On a given finite straight line to construct an equilateral triangle.",
+        "step_num": 6,
+        "step_total": 10,
+        "step_kind": "CONSTRUCT",
+        "chapter": "segment(C, A) → / C A /, segment(C, B) → / C B /",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0255.g1.svg",
+        "visible_ids": [
+          "*"
+        ],
+        "hidden_ids": [
+          "el-pt-D",
+          "lbl-D",
+          "el-pt-E",
+          "lbl-E"
+        ],
+        "active_ids": [
+          "el-seg-CA",
+          "hl-seg-CA",
+          "el-seg-CB",
+          "hl-seg-CB",
+          "el-pt-C",
+          "lbl-C",
+          "el-pt-A",
+          "lbl-A",
+          "el-pt-B",
+          "lbl-B"
+        ],
+        "equal_ids": [],
+        "tick_ids": [],
+        "symbolic": "segment(C, A) → / C A /, segment(C, B) → / C B /",
+        "clause_html": "<div class=\"clause-line\"><span class=\"fn-tok\">segment</span>(<span class=\"g-tok\">C</span>, <span class=\"g-tok\">A</span>) → <span class=\"g-tok\">/ C A /</span></div><div class=\"clause-line\"><span class=\"fn-tok\">segment</span>(<span class=\"g-tok\">C</span>, <span class=\"g-tok\">B</span>) → <span class=\"g-tok\">/ C B /</span></div>",
+        "just_id": "G.14 • I.Post.1",
+        "just_title": "segment(pt, pt)"
+      }
+    ]
+  },
+  {
+    "bell": "bell:insight",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "weight": 0.85,
+        "prop_id": "BOOK I • PROP. 1",
+        "short_title": "construct an equilateral triangle",
+        "g_id": "G.17",
+        "folio": "Folio 0255–0256 • p. 241–242",
+        "enunciation": "On a given finite straight line to construct an equilateral triangle.",
+        "step_num": 7,
+        "step_total": 10,
+        "step_kind": "ASSERT",
+        "chapter": "( A B ) → / A C / = / A B /",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0255.g1.svg",
+        "visible_ids": [
+          "*"
+        ],
+        "hidden_ids": [
+          "el-pt-D",
+          "lbl-D",
+          "el-pt-E",
+          "lbl-E"
+        ],
+        "active_ids": [
+          "el-circle-BCD",
+          "hl-circle-BCD",
+          "el-pt-A",
+          "lbl-A"
+        ],
+        "equal_ids": [
+          "el-seg-CA",
+          "hl-seg-CA",
+          "el-seg-AB",
+          "hl-seg-AB",
+          "el-pt-C",
+          "lbl-C",
+          "el-pt-B",
+          "lbl-B"
+        ],
+        "tick_ids": [
+          "el-seg-CA",
+          "el-seg-AB"
+        ],
+        "symbolic": "( A B ) → / A C / = / A B /",
+        "clause_html": "<span class=\"g-tok\">( A B )</span> → <span class=\"g-tok\">/ A C /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ A B /</span>",
+        "just_id": "G.10 • I.Def.15",
+        "just_title": "circle_radii"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 0.85,
+        "prop_id": "BOOK I • PROP. 1",
+        "short_title": "construct an equilateral triangle",
+        "g_id": "G.17",
+        "folio": "Folio 0255–0256 • p. 241–242",
+        "enunciation": "On a given finite straight line to construct an equilateral triangle.",
+        "step_num": 8,
+        "step_total": 10,
+        "step_kind": "ASSERT",
+        "chapter": "( B A ) → / B C / = / B A /",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0255.g1.svg",
+        "visible_ids": [
+          "*"
+        ],
+        "hidden_ids": [
+          "el-pt-D",
+          "lbl-D",
+          "el-pt-E",
+          "lbl-E"
+        ],
+        "active_ids": [
+          "el-circle-ACE",
+          "hl-circle-ACE",
+          "el-pt-B",
+          "lbl-B"
+        ],
+        "equal_ids": [
+          "el-seg-CB",
+          "hl-seg-CB",
+          "el-seg-AB",
+          "hl-seg-AB",
+          "el-pt-C",
+          "lbl-C",
+          "el-pt-A",
+          "lbl-A"
+        ],
+        "tick_ids": [
+          "el-seg-CB",
+          "el-seg-AB"
+        ],
+        "symbolic": "( B A ) → / B C / = / B A /",
+        "clause_html": "<span class=\"g-tok\">( B A )</span> → <span class=\"g-tok\">/ B C /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ B A /</span>",
+        "just_id": "G.10 • I.Def.15",
+        "just_title": "circle_radii"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 1.25,
+        "prop_id": "BOOK I • PROP. 1",
+        "short_title": "construct an equilateral triangle",
+        "g_id": "G.17",
+        "folio": "Folio 0255–0256 • p. 241–242",
+        "enunciation": "On a given finite straight line to construct an equilateral triangle.",
+        "step_num": 9,
+        "step_total": 10,
+        "step_kind": "ASSERT",
+        "chapter": "/ C A / = / A B /, / B C / = / A B / → / C A / = / B C /",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0255.g1.svg",
+        "visible_ids": [
+          "*"
+        ],
+        "hidden_ids": [
+          "el-pt-D",
+          "lbl-D",
+          "el-pt-E",
+          "lbl-E"
+        ],
+        "active_ids": [
+          "el-seg-AB",
+          "hl-seg-AB",
+          "el-pt-A",
+          "el-pt-B",
+          "lbl-A",
+          "lbl-B"
+        ],
+        "equal_ids": [
+          "el-seg-CA",
+          "hl-seg-CA",
+          "el-seg-CB",
+          "hl-seg-CB",
+          "el-pt-C",
+          "lbl-C"
+        ],
+        "tick_ids": [
+          "el-seg-CA",
+          "el-seg-AB",
+          "el-seg-CB"
+        ],
+        "symbolic": "/ C A / = / A B /, / B C / = / A B / → / C A / = / B C /",
+        "clause_html": "<div class=\"clause-line\"><span class=\"g-tok\">/ C A /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ A B /</span>, <span class=\"g-tok\">/ B C /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ A B /</span></div><div class=\"clause-line\">→ <span class=\"g-tok\">/ C A /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ B C /</span></div>",
+        "just_id": "G.16 • I.C.N.1",
+        "just_title": "equal_transitive"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 1.25,
+        "prop_id": "BOOK I • PROP. 1",
+        "short_title": "construct an equilateral triangle",
+        "g_id": "G.17",
+        "folio": "Folio 0255–0256 • p. 241–242",
+        "enunciation": "On a given finite straight line to construct an equilateral triangle.",
+        "step_num": 10,
+        "step_total": 10,
+        "step_kind": "∴",
+        "chapter": "/ C A / = / A B / = / B C / → < A B C >",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0255.g1.svg",
+        "visible_ids": [
+          "*"
+        ],
+        "hidden_ids": [
+          "el-pt-D",
+          "lbl-D",
+          "el-pt-E",
+          "lbl-E"
+        ],
+        "active_ids": [
+          "el-tri-ABC",
+          "hl-tri-ABC",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C"
+        ],
+        "equal_ids": [
+          "el-seg-CA",
+          "hl-seg-CA",
+          "el-seg-AB",
+          "hl-seg-AB",
+          "el-seg-CB",
+          "hl-seg-CB"
+        ],
+        "tick_ids": [
+          "el-seg-CA",
+          "el-seg-AB",
+          "el-seg-CB"
+        ],
+        "symbolic": "/ C A / = / A B / = / B C / → < A B C >",
+        "clause_html": "<span class=\"g-tok\">/ C A /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ A B /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ B C /</span> → <span class=\"g-tok\">&lt; A B C &gt;</span>",
+        "just_id": "G.13 • I.Def.20",
+        "just_title": "triangle_sides_def"
+      }
+    ]
+  }
+]

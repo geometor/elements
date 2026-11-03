@@ -1,0 +1,634 @@
+[
+  {
+    "bell": "bell:proposition",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "weight": 1.35,
+        "prop_id": "BOOK I • PROP. 8",
+        "short_title": "congruent triangles by SSS",
+        "g_id": "G.29",
+        "folio": "Folio 0275–0276 • p. 261",
+        "enunciation": "If two triangles have the two sides equal to two sides respectively, and have also the base equal to the base, they will also have the angles equal which are contained by the equal straight lines.",
+        "step_num": 1,
+        "step_total": 7,
+        "step_kind": "GIVEN",
+        "chapter": "given < A B C >, < D E F > with 3 equal sides",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0275.g1.svg",
+        "visible_ids": [
+          "el-tri-ABC",
+          "el-tri-DEF",
+          "el-seg-AB",
+          "el-seg-AC",
+          "el-seg-BC",
+          "el-seg-DE",
+          "el-seg-DF",
+          "el-seg-EF",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-E",
+          "el-pt-F",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E",
+          "lbl-F"
+        ],
+        "hidden_ids": [
+          "el-tri-GEF",
+          "el-seg-EG",
+          "el-seg-GF",
+          "el-ang-EGF",
+          "el-pt-G",
+          "lbl-G"
+        ],
+        "active_ids": [
+          "el-tri-ABC",
+          "hl-tri-ABC",
+          "el-tri-DEF",
+          "hl-tri-DEF",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-E",
+          "el-pt-F",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E",
+          "lbl-F"
+        ],
+        "equal_ids": [
+          "el-seg-AB",
+          "hl-seg-AB",
+          "el-seg-DE",
+          "hl-seg-DE",
+          "el-seg-AC",
+          "hl-seg-AC",
+          "el-seg-DF",
+          "hl-seg-DF",
+          "el-seg-BC",
+          "hl-seg-BC",
+          "el-seg-EF",
+          "hl-seg-EF"
+        ],
+        "tick_ids": [
+          "el-seg-AB",
+          "el-seg-DE"
+        ],
+        "tick_2_ids": [
+          "el-seg-AC",
+          "el-seg-DF"
+        ],
+        "tick_3_ids": [
+          "el-seg-BC",
+          "el-seg-EF"
+        ],
+        "symbolic": "given: < A B C >, < D E F >, / A B / = / D E /, / A C / = / D F /, / B C / = / E F /",
+        "clause_html": "<div class=\"clause-line\"><span class=\"g-tok\">&lt; A B C &gt;</span>, <span class=\"g-tok\">&lt; D E F &gt;</span>, <span class=\"g-tok\">/ A B /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ D E /</span>,</div><div class=\"clause-line\"><span class=\"g-tok\">/ A C /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ D F /</span>, <span class=\"g-tok\">/ B C /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ E F /</span></div>",
+        "just_id": "G.12 • I.Def.19",
+        "just_title": "trilateral"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 0.65,
+        "prop_id": "BOOK I • PROP. 8",
+        "short_title": "congruent triangles by SSS",
+        "g_id": "G.29",
+        "folio": "Folio 0275–0276 • p. 261",
+        "enunciation": "If two triangles have the two sides equal to two sides respectively, and have also the base equal to the base, they will also have the angles equal which are contained by the equal straight lines.",
+        "step_num": 2,
+        "step_total": 7,
+        "step_kind": "PROVE",
+        "chapter": "prove < B A C ) = < E D F )",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0275.g1.svg",
+        "visible_ids": [
+          "el-tri-ABC",
+          "el-tri-DEF",
+          "el-seg-AB",
+          "el-seg-AC",
+          "el-seg-BC",
+          "el-seg-DE",
+          "el-seg-DF",
+          "el-seg-EF",
+          "el-ang-BAC",
+          "el-ang-EDF",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-E",
+          "el-pt-F",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E",
+          "lbl-F"
+        ],
+        "hidden_ids": [
+          "el-tri-GEF",
+          "el-seg-EG",
+          "el-seg-GF",
+          "el-ang-EGF",
+          "el-pt-G",
+          "lbl-G"
+        ],
+        "active_ids": [
+          "el-pt-A",
+          "lbl-A",
+          "el-pt-D",
+          "lbl-D"
+        ],
+        "equal_ids": [
+          "el-ang-BAC",
+          "hl-ang-BAC",
+          "hl-arc-BAC",
+          "el-ang-EDF",
+          "hl-ang-EDF",
+          "hl-arc-EDF"
+        ],
+        "tick_ids": [
+          "el-seg-AB",
+          "el-seg-DE"
+        ],
+        "tick_2_ids": [
+          "el-seg-AC",
+          "el-seg-DF"
+        ],
+        "tick_3_ids": [
+          "el-seg-BC",
+          "el-seg-EF"
+        ],
+        "symbolic": "prove: < B A C ) = < E D F )",
+        "clause_html": "<span class=\"fn-tok\">sss_congruence</span>(<span class=\"g-tok\">&lt; A B C &gt;</span>, <span class=\"g-tok\">&lt; D E F &gt;</span>) → <span class=\"g-tok\">&lt; B A C )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; E D F )</span>",
+        "just_id": "G.29 • I.8",
+        "just_title": "sss_congruence"
+      }
+    ]
+  },
+  {
+    "bell": "bell:construction",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "weight": 1.15,
+        "prop_id": "BOOK I • PROP. 8",
+        "short_title": "congruent triangles by SSS",
+        "g_id": "G.29",
+        "folio": "Folio 0275–0276 • p. 261",
+        "enunciation": "If two triangles have the two sides equal to two sides respectively, and have also the base equal to the base, they will also have the angles equal which are contained by the equal straight lines.",
+        "step_num": 3,
+        "step_total": 7,
+        "step_kind": "ASSERT",
+        "chapter": "B ≃ E, / B C / = / E F / → C ≃ F, / B C / ≃ / E F /",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0275.g1.svg",
+        "visible_ids": [
+          "el-tri-ABC",
+          "el-tri-DEF",
+          "el-seg-AB",
+          "el-seg-AC",
+          "el-seg-BC",
+          "el-seg-DE",
+          "el-seg-DF",
+          "el-seg-EF",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-E",
+          "el-pt-F",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E",
+          "lbl-F"
+        ],
+        "hidden_ids": [
+          "el-tri-GEF",
+          "el-seg-EG",
+          "el-seg-GF",
+          "el-ang-EGF",
+          "el-pt-G",
+          "lbl-G"
+        ],
+        "active_ids": [],
+        "coincide_ids": [
+          "el-seg-BC",
+          "hl-seg-BC",
+          "el-seg-EF",
+          "hl-seg-EF",
+          "el-pt-B",
+          "lbl-B",
+          "el-pt-E",
+          "lbl-E",
+          "el-pt-C",
+          "lbl-C",
+          "el-pt-F",
+          "lbl-F"
+        ],
+        "coincide_pairs": [
+          [
+            "el-pt-B",
+            "el-pt-E"
+          ],
+          [
+            "el-pt-C",
+            "el-pt-F"
+          ]
+        ],
+        "equal_ids": [],
+        "tick_ids": [
+          "el-seg-AB",
+          "el-seg-DE"
+        ],
+        "tick_2_ids": [
+          "el-seg-AC",
+          "el-seg-DF"
+        ],
+        "tick_3_ids": [
+          "el-seg-BC",
+          "el-seg-EF"
+        ],
+        "symbolic": "B ≃ E, / B C / = / E F / → C ≃ F, / B C / ≃ / E F /",
+        "clause_html": "<div class=\"clause-line\"><span class=\"g-tok\">B</span> <span class=\"coincide-tok\">≃</span> <span class=\"g-tok\">E</span>, <span class=\"g-tok\">/ B C /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ E F /</span></div><div class=\"clause-line\">→ <span class=\"g-tok\">C</span> <span class=\"coincide-tok\">≃</span> <span class=\"g-tok\">F</span>, <span class=\"g-tok\">/ B C /</span> <span class=\"coincide-tok\">≃</span> <span class=\"g-tok\">/ E F /</span></div>",
+        "just_id": "G.23 • I.C.N.4",
+        "just_title": "coinciding_equal"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 0.85,
+        "prop_id": "BOOK I • PROP. 8",
+        "short_title": "congruent triangles by SSS",
+        "g_id": "G.29",
+        "folio": "Folio 0275–0276 • p. 261",
+        "enunciation": "If two triangles have the two sides equal to two sides respectively, and have also the base equal to the base, they will also have the angles equal which are contained by the equal straight lines.",
+        "step_num": 4,
+        "step_total": 7,
+        "step_kind": "ASSERT",
+        "chapter": "? ¬(/ B A / ≃ / E D /, / A C / ≃ / D F /) → / E G /, / G F /",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0275.g1.svg",
+        "visible_ids": [
+          "el-tri-ABC",
+          "el-tri-DEF",
+          "el-tri-GEF",
+          "el-seg-AB",
+          "el-seg-AC",
+          "el-seg-BC",
+          "el-seg-DE",
+          "el-seg-DF",
+          "el-seg-EF",
+          "el-seg-EG",
+          "el-seg-GF",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-E",
+          "el-pt-F",
+          "el-pt-G",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E",
+          "lbl-F",
+          "lbl-G"
+        ],
+        "hidden_ids": [
+          "el-ang-EGF"
+        ],
+        "active_ids": [
+          "el-tri-GEF",
+          "hl-tri-GEF",
+          "el-seg-EG",
+          "hl-seg-EG",
+          "el-seg-GF",
+          "hl-seg-GF",
+          "el-pt-G",
+          "lbl-G"
+        ],
+        "coincide_ids": [
+          "el-seg-BC",
+          "hl-seg-BC",
+          "el-seg-EF",
+          "hl-seg-EF",
+          "el-pt-B",
+          "lbl-B",
+          "el-pt-E",
+          "lbl-E",
+          "el-pt-C",
+          "lbl-C",
+          "el-pt-F",
+          "lbl-F"
+        ],
+        "equal_ids": [],
+        "tick_ids": [
+          "el-seg-AB",
+          "el-seg-DE"
+        ],
+        "tick_2_ids": [
+          "el-seg-AC",
+          "el-seg-DF"
+        ],
+        "tick_3_ids": [
+          "el-seg-BC",
+          "el-seg-EF"
+        ],
+        "symbolic": "? ¬(/ B A / ≃ / E D /, / A C / ≃ / D F /) → / E G /, / G F /",
+        "clause_html": "<div class=\"clause-line\">? ¬(<span class=\"g-tok\">/ B A /</span> <span class=\"coincide-tok\">≃</span> <span class=\"g-tok\">/ E D /</span>, <span class=\"g-tok\">/ A C /</span> <span class=\"coincide-tok\">≃</span> <span class=\"g-tok\">/ D F /</span>)</div><div class=\"clause-line\">→ <span class=\"g-tok\">/ B A /</span> <span class=\"coincide-tok\">≃</span> <span class=\"g-tok\">/ E G /</span>, <span class=\"g-tok\">/ A C /</span> <span class=\"coincide-tok\">≃</span> <span class=\"g-tok\">/ G F /</span></div>",
+        "just_id": "G.12 • I.Def.19",
+        "just_title": "trilateral"
+      }
+    ]
+  },
+  {
+    "bell": "bell:insight",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "weight": 1.15,
+        "prop_id": "BOOK I • PROP. 8",
+        "short_title": "congruent triangles by SSS",
+        "g_id": "G.29",
+        "folio": "Folio 0275–0276 • p. 261–262",
+        "enunciation": "If two triangles have the two sides equal to two sides respectively, and have also the base equal to the base, they will also have the angles equal which are contained by the equal straight lines.",
+        "step_num": 5,
+        "step_total": 7,
+        "step_kind": "ASSERT",
+        "chapter": "/ E G / = / E D /, / G F / = / D F / ⇒⇐",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0275.g1.svg",
+        "visible_ids": [
+          "el-tri-ABC",
+          "el-tri-DEF",
+          "el-tri-GEF",
+          "el-seg-AB",
+          "el-seg-AC",
+          "el-seg-BC",
+          "el-seg-DE",
+          "el-seg-DF",
+          "el-seg-EF",
+          "el-seg-EG",
+          "el-seg-GF",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-E",
+          "el-pt-F",
+          "el-pt-G",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E",
+          "lbl-F",
+          "lbl-G"
+        ],
+        "hidden_ids": [
+          "el-ang-EGF"
+        ],
+        "active_ids": [
+          "el-tri-DEF",
+          "hl-tri-DEF",
+          "el-tri-GEF",
+          "hl-tri-GEF",
+          "el-seg-EF",
+          "hl-seg-EF",
+          "el-pt-D",
+          "lbl-D",
+          "el-pt-G",
+          "lbl-G",
+          "el-pt-E",
+          "lbl-E",
+          "el-pt-F",
+          "lbl-F"
+        ],
+        "equal_ids": [
+          "el-seg-DE",
+          "hl-seg-DE",
+          "el-seg-EG",
+          "hl-seg-EG",
+          "el-seg-DF",
+          "hl-seg-DF",
+          "el-seg-GF",
+          "hl-seg-GF"
+        ],
+        "tick_ids": [
+          "el-seg-AB",
+          "el-seg-DE",
+          "el-seg-EG"
+        ],
+        "tick_2_ids": [
+          "el-seg-AC",
+          "el-seg-DF",
+          "el-seg-GF"
+        ],
+        "tick_3_ids": [
+          "el-seg-BC",
+          "el-seg-EF"
+        ],
+        "symbolic": "? ¬(/ B A / ≃ / E D /, / A C / ≃ / D F /) → / E G / = / E D /, / G F / = / D F / ⇒⇐",
+        "clause_html": "<div class=\"clause-line\">? ¬(<span class=\"g-tok\">/ B A /</span> <span class=\"coincide-tok\">≃</span> <span class=\"g-tok\">/ E D /</span>, <span class=\"g-tok\">/ A C /</span> <span class=\"coincide-tok\">≃</span> <span class=\"g-tok\">/ D F /</span>)</div><div class=\"clause-line\">→ <span class=\"g-tok\">/ E G /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ E D /</span>, <span class=\"g-tok\">/ G F /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ D F /</span> ⇒⇐</div>",
+        "just_id": "G.28 • I.7",
+        "just_title": "unique_triangle_sides"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 0.65,
+        "prop_id": "BOOK I • PROP. 8",
+        "short_title": "congruent triangles by SSS",
+        "g_id": "G.29",
+        "folio": "Folio 0275–0276 • p. 261–262",
+        "enunciation": "If two triangles have the two sides equal to two sides respectively, and have also the base equal to the base, they will also have the angles equal which are contained by the equal straight lines.",
+        "step_num": 6,
+        "step_total": 7,
+        "step_kind": "ASSERT",
+        "chapter": "/ B A / ≃ / E D /, / A C / ≃ / D F /",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0275.g1.svg",
+        "visible_ids": [
+          "el-tri-ABC",
+          "el-tri-DEF",
+          "el-seg-AB",
+          "el-seg-AC",
+          "el-seg-BC",
+          "el-seg-DE",
+          "el-seg-DF",
+          "el-seg-EF",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-E",
+          "el-pt-F",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E",
+          "lbl-F"
+        ],
+        "hidden_ids": [
+          "el-tri-GEF",
+          "el-seg-EG",
+          "el-seg-GF",
+          "el-ang-EGF",
+          "el-pt-G",
+          "lbl-G"
+        ],
+        "active_ids": [],
+        "coincide_ids": [
+          "el-seg-AB",
+          "hl-seg-AB",
+          "el-seg-DE",
+          "hl-seg-DE",
+          "el-seg-AC",
+          "hl-seg-AC",
+          "el-seg-DF",
+          "hl-seg-DF",
+          "el-seg-BC",
+          "hl-seg-BC",
+          "el-seg-EF",
+          "hl-seg-EF",
+          "el-pt-A",
+          "lbl-A",
+          "el-pt-D",
+          "lbl-D",
+          "el-pt-B",
+          "lbl-B",
+          "el-pt-E",
+          "lbl-E",
+          "el-pt-C",
+          "lbl-C",
+          "el-pt-F",
+          "lbl-F"
+        ],
+        "coincide_pairs": [
+          [
+            "el-pt-A",
+            "el-pt-D"
+          ],
+          [
+            "el-pt-B",
+            "el-pt-E"
+          ],
+          [
+            "el-pt-C",
+            "el-pt-F"
+          ]
+        ],
+        "equal_ids": [],
+        "tick_ids": [
+          "el-seg-AB",
+          "el-seg-DE"
+        ],
+        "tick_2_ids": [
+          "el-seg-AC",
+          "el-seg-DF"
+        ],
+        "tick_3_ids": [
+          "el-seg-BC",
+          "el-seg-EF"
+        ],
+        "symbolic": "/ B A / ≃ / E D /, / A C / ≃ / D F /",
+        "clause_html": "<span class=\"g-tok\">/ B A /</span> <span class=\"coincide-tok\">≃</span> <span class=\"g-tok\">/ E D /</span>, <span class=\"g-tok\">/ A C /</span> <span class=\"coincide-tok\">≃</span> <span class=\"g-tok\">/ D F /</span>",
+        "just_id": "G.28 • I.7",
+        "just_title": "unique_triangle_sides"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 0.9,
+        "prop_id": "BOOK I • PROP. 8",
+        "short_title": "congruent triangles by SSS",
+        "g_id": "G.29",
+        "folio": "Folio 0275–0276 • p. 261–262",
+        "enunciation": "If two triangles have the two sides equal to two sides respectively, and have also the base equal to the base, they will also have the angles equal which are contained by the equal straight lines.",
+        "step_num": 7,
+        "step_total": 7,
+        "step_kind": "∴",
+        "chapter": "< B A C ) ≃ < E D F ) → < B A C ) = < E D F )",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0275.g1.svg",
+        "visible_ids": [
+          "el-tri-ABC",
+          "el-tri-DEF",
+          "el-seg-AB",
+          "el-seg-AC",
+          "el-seg-BC",
+          "el-seg-DE",
+          "el-seg-DF",
+          "el-seg-EF",
+          "el-ang-BAC",
+          "el-ang-EDF",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-E",
+          "el-pt-F",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E",
+          "lbl-F"
+        ],
+        "hidden_ids": [
+          "el-tri-GEF",
+          "el-seg-EG",
+          "el-seg-GF",
+          "el-ang-EGF",
+          "el-pt-G",
+          "lbl-G"
+        ],
+        "active_ids": [
+          "el-tri-ABC",
+          "hl-tri-ABC",
+          "el-tri-DEF",
+          "hl-tri-DEF",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-E",
+          "el-pt-F",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E",
+          "lbl-F"
+        ],
+        "equal_ids": [
+          "el-ang-BAC",
+          "hl-ang-BAC",
+          "hl-arc-BAC",
+          "el-ang-EDF",
+          "hl-ang-EDF",
+          "hl-arc-EDF"
+        ],
+        "tick_ids": [
+          "el-seg-AB",
+          "el-seg-DE"
+        ],
+        "tick_2_ids": [
+          "el-seg-AC",
+          "el-seg-DF"
+        ],
+        "tick_3_ids": [
+          "el-seg-BC",
+          "el-seg-EF"
+        ],
+        "symbolic": "< B A C ) ≃ < E D F ) → < B A C ) = < E D F )",
+        "clause_html": "<span class=\"g-tok\">&lt; B A C )</span> <span class=\"coincide-tok\">≃</span> <span class=\"g-tok\">&lt; E D F )</span> → <span class=\"g-tok\">&lt; B A C )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; E D F )</span>",
+        "just_id": "G.23 • I.C.N.4",
+        "just_title": "coinciding_equal"
+      }
+    ]
+  }
+]

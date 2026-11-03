@@ -1,0 +1,5 @@
+[bell:proposition] [style:brisk] Euclid's Elements, Book One, Proposition Eleven. <pause> Construct a segment at right angles to a given line from a given point on it. <pause> Given segment A B and point C on it, we are to construct from C a segment perpendicular to A B.
+
+[bell:construction] [style:brisk] Take a point D at random on segment A C. <pause> By Proposition Three, cut off from C B a segment C E equal to C D. <pause> <pause> Next, by Proposition One, on segment D E construct the equilateral triangle F D E. <pause> <pause> Then, by Postulate One, construct the segment F C joining vertex F to point C.
+
+[bell:insight] [style:brisk] Now compare triangles D C F and E C F: side D C equals E C, side C F is common, and base D F equals base F E. Therefore, by Proposition Eight, side-side-side congruence, the adjacent angles D C F and E C F are equal. <pause> <pause> By Definition Ten, when a segment standing on a line makes the adjacent angles equal, each angle is a right angle and the segment is perpendicular. Therefore segment C F has been constructed at right angles to segment A B from point C on it, <pause> as was required to do.

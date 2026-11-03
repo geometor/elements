@@ -1,0 +1,53 @@
+WEBVTT
+
+1
+00:00:00.420 --> 00:00:03.474
+Euclid's Elements, Book One, Proposition Two.
+
+2
+00:00:03.474 --> 00:00:07.682
+Construct at a given point a segment equal to a given segment.
+
+3
+00:00:07.682 --> 00:00:13.450
+Given point A and segment B C, we are to construct at point A a segment equal to B C.
+
+4
+00:00:13.870 --> 00:00:17.043
+From point A to point B, construct segment A B.
+
+5
+00:00:17.043 --> 00:00:20.892
+On segment A B, construct the equilateral triangle D A B.
+
+6
+00:00:20.892 --> 00:00:24.807
+Next, extend segments D A and D B continuously to E and F.
+
+7
+00:00:24.807 --> 00:00:30.681
+Construct circle B C, with center B and defining radius point C, intersecting D F at G.
+
+8
+00:00:30.681 --> 00:00:36.960
+Next, construct circle D G, with center D and defining radius point G, intersecting D E at L.
+
+9
+00:00:37.380 --> 00:00:41.938
+Since B is the center of circle B C, segment B C equals segment B G.
+
+10
+00:00:41.938 --> 00:00:46.965
+Again, since D is the center of circle D G, segment D L equals segment D G.
+
+11
+00:00:46.965 --> 00:00:56.214
+Within these, D A equals D B from our equilateral triangle, so subtracting equals from equals, the remainder A L equals the remainder B G.
+
+12
+00:00:56.214 --> 00:01:02.380
+Because both A L and B C equal B G, things equal to the same thing are equal to one another.
+
+13
+00:01:02.380 --> 00:01:09.820
+Therefore segment A L equals segment B C, and has been constructed at the given point A, as was required to do.

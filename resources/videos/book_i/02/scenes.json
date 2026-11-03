@@ -1,0 +1,675 @@
+[
+  {
+    "bell": "bell:proposition",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "weight": 1.0,
+        "prop_id": "BOOK I • PROP. 2",
+        "short_title": "transfer a segment to a point",
+        "g_id": "G.20",
+        "folio": "Folio 0258 • p. 244",
+        "enunciation": "To place at a given point (as an extremity) a straight line equal to a given straight line.",
+        "step_num": 1,
+        "step_total": 13,
+        "step_kind": "GIVEN",
+        "chapter": "point A and segment BC",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0258.g1.svg",
+        "visible_ids": [
+          "el-pt-A",
+          "lbl-A",
+          "el-pt-B",
+          "lbl-B",
+          "el-pt-C",
+          "lbl-C",
+          "el-seg-BC"
+        ],
+        "hidden_ids": [
+          "lbl-H",
+          "lbl-K"
+        ],
+        "active_ids": [
+          "el-pt-A",
+          "lbl-A",
+          "el-pt-B",
+          "lbl-B",
+          "el-pt-C",
+          "lbl-C",
+          "el-seg-BC",
+          "hl-seg-BC"
+        ],
+        "equal_ids": [],
+        "tick_ids": [],
+        "symbolic": "given: A, / B C /",
+        "clause_html": "<span class=\"g-tok\">A</span>, <span class=\"g-tok\">/ B C /</span>",
+        "just_id": "GIVEN",
+        "just_title": "given"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 1.0,
+        "prop_id": "BOOK I • PROP. 2",
+        "short_title": "transfer a segment to a point",
+        "g_id": "G.20",
+        "folio": "Folio 0258 • p. 244",
+        "enunciation": "To place at a given point (as an extremity) a straight line equal to a given straight line.",
+        "step_num": 2,
+        "step_total": 13,
+        "step_kind": "GOAL",
+        "chapter": "segment AL = BC at point A",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0258.g1.svg",
+        "visible_ids": [
+          "el-pt-A",
+          "lbl-A",
+          "el-pt-L",
+          "lbl-L",
+          "el-seg-AL",
+          "el-pt-B",
+          "lbl-B",
+          "el-pt-C",
+          "lbl-C",
+          "el-seg-BC"
+        ],
+        "hidden_ids": [
+          "lbl-H",
+          "lbl-K"
+        ],
+        "active_ids": [
+          "el-pt-A",
+          "lbl-A",
+          "el-pt-L",
+          "lbl-L"
+        ],
+        "equal_ids": [
+          "el-seg-AL",
+          "hl-seg-AL",
+          "el-seg-BC",
+          "hl-seg-BC",
+          "el-pt-B",
+          "lbl-B",
+          "el-pt-C",
+          "lbl-C"
+        ],
+        "tick_ids": [
+          "el-seg-AL",
+          "el-seg-BC"
+        ],
+        "symbolic": "transfer_segment(A, / B C /) → / A L / = / B C /",
+        "clause_html": "<div class=\"clause-line\">transfer_segment(<span class=\"g-tok\">A</span>, <span class=\"g-tok\">/ B C /</span>) → <span class=\"g-tok\">/ A L /</span></div><div class=\"clause-line\"><span class=\"g-tok\">/ A L /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ B C /</span></div>",
+        "just_id": "G.20 • I.2",
+        "just_title": "transfer_segment"
+      }
+    ]
+  },
+  {
+    "bell": "bell:construction",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "weight": 0.75,
+        "prop_id": "BOOK I • PROP. 2",
+        "short_title": "transfer a segment to a point",
+        "g_id": "G.20",
+        "folio": "Folio 0258 • p. 244",
+        "enunciation": "To place at a given point (as an extremity) a straight line equal to a given straight line.",
+        "step_num": 3,
+        "step_total": 13,
+        "step_kind": "CONSTRUCT",
+        "chapter": "segment AB",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0258.g1.svg",
+        "visible_ids": [
+          "el-pt-A",
+          "lbl-A",
+          "el-pt-B",
+          "lbl-B",
+          "el-pt-C",
+          "lbl-C",
+          "el-seg-BC",
+          "el-seg-AB"
+        ],
+        "hidden_ids": [
+          "lbl-H",
+          "lbl-K"
+        ],
+        "active_ids": [
+          "el-seg-AB",
+          "hl-seg-AB",
+          "el-pt-A",
+          "lbl-A",
+          "el-pt-B",
+          "lbl-B"
+        ],
+        "equal_ids": [],
+        "tick_ids": [],
+        "symbolic": "segment(A, B) → / A B /",
+        "clause_html": "segment(<span class=\"g-tok\">A</span>, <span class=\"g-tok\">B</span>) → <span class=\"g-tok\">/ A B /</span>",
+        "just_id": "G.14 • I.Post.1",
+        "just_title": "segment"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 0.85,
+        "prop_id": "BOOK I • PROP. 2",
+        "short_title": "transfer a segment to a point",
+        "g_id": "G.20",
+        "folio": "Folio 0258 • p. 244",
+        "enunciation": "To place at a given point (as an extremity) a straight line equal to a given straight line.",
+        "step_num": 4,
+        "step_total": 13,
+        "step_kind": "CONSTRUCT",
+        "chapter": "equilateral triangle DAB",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0258.g1.svg",
+        "visible_ids": [
+          "el-pt-A",
+          "lbl-A",
+          "el-pt-B",
+          "lbl-B",
+          "el-pt-C",
+          "lbl-C",
+          "el-seg-BC",
+          "el-seg-AB",
+          "el-tri-DAB",
+          "el-seg-DA",
+          "el-seg-DB",
+          "el-pt-D",
+          "lbl-D"
+        ],
+        "hidden_ids": [
+          "lbl-H",
+          "lbl-K"
+        ],
+        "active_ids": [
+          "el-tri-DAB",
+          "hl-tri-DAB",
+          "el-pt-D",
+          "lbl-D"
+        ],
+        "equal_ids": [
+          "el-seg-DA",
+          "hl-seg-DA",
+          "el-seg-DB",
+          "hl-seg-DB",
+          "el-seg-AB",
+          "hl-seg-AB"
+        ],
+        "tick_ids": [
+          "el-seg-DA",
+          "el-seg-DB",
+          "el-seg-AB"
+        ],
+        "symbolic": "equilateral_triangle(/ A B /) → < D A B >",
+        "clause_html": "<div class=\"clause-line\">equilateral_triangle(<span class=\"g-tok\">/ A B /</span>) → <span class=\"g-tok\">&lt; D A B &gt;</span></div><div class=\"clause-line\">(<span class=\"g-tok\">/ D A /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ D B /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ A B /</span>)</div>",
+        "just_id": "G.17 • I.1",
+        "just_title": "equilateral_triangle"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 0.9,
+        "prop_id": "BOOK I • PROP. 2",
+        "short_title": "transfer a segment to a point",
+        "g_id": "G.20",
+        "folio": "Folio 0258 • p. 244",
+        "enunciation": "To place at a given point (as an extremity) a straight line equal to a given straight line.",
+        "step_num": 5,
+        "step_total": 13,
+        "step_kind": "CONSTRUCT",
+        "chapter": "extend DA to E and DB to F",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0258.g1.svg",
+        "visible_ids": [
+          "el-pt-A",
+          "lbl-A",
+          "el-pt-B",
+          "lbl-B",
+          "el-pt-C",
+          "lbl-C",
+          "el-seg-BC",
+          "el-seg-AB",
+          "el-tri-DAB",
+          "el-seg-DA",
+          "el-seg-DB",
+          "el-pt-D",
+          "lbl-D",
+          "el-line-DE",
+          "el-line-DF",
+          "el-seg-AE",
+          "el-seg-BF",
+          "el-pt-E",
+          "lbl-E",
+          "el-pt-F",
+          "lbl-F"
+        ],
+        "hidden_ids": [
+          "lbl-H",
+          "lbl-K"
+        ],
+        "active_ids": [
+          "el-line-DE",
+          "hl-line-DE",
+          "el-line-DF",
+          "hl-line-DF",
+          "el-seg-AE",
+          "hl-seg-AE",
+          "el-seg-BF",
+          "hl-seg-BF",
+          "el-pt-E",
+          "lbl-E",
+          "el-pt-F",
+          "lbl-F"
+        ],
+        "equal_ids": [],
+        "tick_ids": [],
+        "symbolic": "extend(/ D A /) → / A E /, extend(/ D B /) → / B F /",
+        "clause_html": "<div class=\"clause-line\">extend(<span class=\"g-tok\">/ D A /</span>) → <span class=\"g-tok\">/ A E /</span></div><div class=\"clause-line\">extend(<span class=\"g-tok\">/ D B /</span>) → <span class=\"g-tok\">/ B F /</span></div>",
+        "just_id": "G.18 • I.Post.2",
+        "just_title": "extend"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 0.9,
+        "prop_id": "BOOK I • PROP. 2",
+        "short_title": "transfer a segment to a point",
+        "g_id": "G.20",
+        "folio": "Folio 0258 • p. 244",
+        "enunciation": "To place at a given point (as an extremity) a straight line equal to a given straight line.",
+        "step_num": 6,
+        "step_total": 13,
+        "step_kind": "CONSTRUCT",
+        "chapter": "circle ( B C )",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0258.g1.svg",
+        "visible_ids": [
+          "el-pt-A",
+          "lbl-A",
+          "el-pt-B",
+          "lbl-B",
+          "el-pt-C",
+          "lbl-C",
+          "el-seg-BC",
+          "el-seg-AB",
+          "el-tri-DAB",
+          "el-seg-DA",
+          "el-seg-DB",
+          "el-pt-D",
+          "lbl-D",
+          "el-line-DE",
+          "el-line-DF",
+          "el-seg-AE",
+          "el-seg-BF",
+          "el-pt-E",
+          "lbl-E",
+          "el-pt-F",
+          "lbl-F",
+          "el-circle-CGH"
+        ],
+        "hidden_ids": [
+          "lbl-H",
+          "lbl-K"
+        ],
+        "active_ids": [
+          "el-circle-CGH",
+          "hl-circle-CGH",
+          "el-pt-B",
+          "lbl-B",
+          "el-pt-C",
+          "lbl-C",
+          "el-seg-BC",
+          "hl-seg-BC"
+        ],
+        "equal_ids": [],
+        "tick_ids": [],
+        "symbolic": "circle(B, C) → ( B C )",
+        "clause_html": "circle(<span class=\"g-tok\">B</span>, <span class=\"g-tok\">C</span>) → <span class=\"g-tok\">( B C )</span>",
+        "just_id": "G.15 • I.Post.3",
+        "just_title": "circle"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 0.65,
+        "prop_id": "BOOK I • PROP. 2",
+        "short_title": "transfer a segment to a point",
+        "g_id": "G.20",
+        "folio": "Folio 0258 • p. 244",
+        "enunciation": "To place at a given point (as an extremity) a straight line equal to a given straight line.",
+        "step_num": 7,
+        "step_total": 13,
+        "step_kind": "INTERSECT",
+        "chapter": "intersection point G",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0258.g1.svg",
+        "visible_ids": [
+          "el-pt-A",
+          "lbl-A",
+          "el-pt-B",
+          "lbl-B",
+          "el-pt-C",
+          "lbl-C",
+          "el-seg-BC",
+          "el-seg-AB",
+          "el-tri-DAB",
+          "el-seg-DA",
+          "el-seg-DB",
+          "el-pt-D",
+          "lbl-D",
+          "el-line-DE",
+          "el-line-DF",
+          "el-seg-AE",
+          "el-seg-BF",
+          "el-seg-BG",
+          "el-seg-GF",
+          "el-pt-E",
+          "lbl-E",
+          "el-pt-F",
+          "lbl-F",
+          "el-circle-CGH",
+          "el-pt-G",
+          "lbl-G"
+        ],
+        "hidden_ids": [
+          "lbl-H",
+          "lbl-K"
+        ],
+        "active_ids": [
+          "el-pt-G",
+          "lbl-G"
+        ],
+        "equal_ids": [],
+        "tick_ids": [],
+        "symbolic": "( B C ) ∩ / B F / → G",
+        "clause_html": "<span class=\"g-tok\">( B C )</span> ∩ <span class=\"g-tok\">/ B F /</span> → <span class=\"g-tok\">G</span>",
+        "just_id": "INTERSECT • ∩",
+        "just_title": "intersect"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 0.9,
+        "prop_id": "BOOK I • PROP. 2",
+        "short_title": "transfer a segment to a point",
+        "g_id": "G.20",
+        "folio": "Folio 0258 • p. 244",
+        "enunciation": "To place at a given point (as an extremity) a straight line equal to a given straight line.",
+        "step_num": 8,
+        "step_total": 13,
+        "step_kind": "CONSTRUCT",
+        "chapter": "circle ( D G )",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0258.g1.svg",
+        "visible_ids": [
+          "el-pt-A",
+          "lbl-A",
+          "el-pt-B",
+          "lbl-B",
+          "el-pt-C",
+          "lbl-C",
+          "el-seg-BC",
+          "el-seg-AB",
+          "el-tri-DAB",
+          "el-seg-DA",
+          "el-seg-DB",
+          "el-pt-D",
+          "lbl-D",
+          "el-line-DE",
+          "el-line-DF",
+          "el-seg-AE",
+          "el-seg-BF",
+          "el-seg-BG",
+          "el-seg-GF",
+          "el-seg-DG",
+          "el-pt-E",
+          "lbl-E",
+          "el-pt-F",
+          "lbl-F",
+          "el-circle-CGH",
+          "el-pt-G",
+          "lbl-G",
+          "el-circle-GKL"
+        ],
+        "hidden_ids": [
+          "lbl-H",
+          "lbl-K"
+        ],
+        "active_ids": [
+          "el-circle-GKL",
+          "hl-circle-GKL",
+          "el-pt-D",
+          "lbl-D",
+          "el-pt-G",
+          "lbl-G",
+          "el-seg-DG",
+          "hl-seg-DG"
+        ],
+        "equal_ids": [],
+        "tick_ids": [],
+        "symbolic": "circle(D, G) → ( D G )",
+        "clause_html": "circle(<span class=\"g-tok\">D</span>, <span class=\"g-tok\">G</span>) → <span class=\"g-tok\">( D G )</span>",
+        "just_id": "G.15 • I.Post.3",
+        "just_title": "circle"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 0.65,
+        "prop_id": "BOOK I • PROP. 2",
+        "short_title": "transfer a segment to a point",
+        "g_id": "G.20",
+        "folio": "Folio 0258 • p. 244",
+        "enunciation": "To place at a given point (as an extremity) a straight line equal to a given straight line.",
+        "step_num": 9,
+        "step_total": 13,
+        "step_kind": "INTERSECT",
+        "chapter": "intersection point L",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0258.g1.svg",
+        "visible_ids": [
+          "*"
+        ],
+        "hidden_ids": [
+          "lbl-H",
+          "lbl-K"
+        ],
+        "active_ids": [
+          "el-pt-L",
+          "lbl-L"
+        ],
+        "equal_ids": [],
+        "tick_ids": [],
+        "symbolic": "( D G ) ∩ / A E / → L",
+        "clause_html": "<span class=\"g-tok\">( D G )</span> ∩ <span class=\"g-tok\">/ A E /</span> → <span class=\"g-tok\">L</span>",
+        "just_id": "INTERSECT • ∩",
+        "just_title": "intersect"
+      }
+    ]
+  },
+  {
+    "bell": "bell:insight",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "weight": 0.85,
+        "prop_id": "BOOK I • PROP. 2",
+        "short_title": "transfer a segment to a point",
+        "g_id": "G.20",
+        "folio": "Folio 0258–0259 • p. 244–245",
+        "enunciation": "To place at a given point (as an extremity) a straight line equal to a given straight line.",
+        "step_num": 10,
+        "step_total": 13,
+        "step_kind": "ASSERT",
+        "chapter": "BC = BG",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0258.g1.svg",
+        "visible_ids": [
+          "*"
+        ],
+        "hidden_ids": [
+          "lbl-H",
+          "lbl-K"
+        ],
+        "active_ids": [
+          "el-circle-CGH",
+          "hl-circle-CGH",
+          "el-pt-B",
+          "lbl-B"
+        ],
+        "equal_ids": [
+          "el-seg-BC",
+          "hl-seg-BC",
+          "el-seg-BG",
+          "hl-seg-BG",
+          "el-pt-C",
+          "lbl-C",
+          "el-pt-G",
+          "lbl-G"
+        ],
+        "tick_ids": [
+          "el-seg-BC",
+          "el-seg-BG"
+        ],
+        "symbolic": "( B C ) → / B C / = / B G /",
+        "clause_html": "<span class=\"g-tok\">( B C )</span> → <span class=\"g-tok\">/ B C /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ B G /</span>",
+        "just_id": "G.10 • I.Def.15",
+        "just_title": "circle_radii"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 0.85,
+        "prop_id": "BOOK I • PROP. 2",
+        "short_title": "transfer a segment to a point",
+        "g_id": "G.20",
+        "folio": "Folio 0258–0259 • p. 244–245",
+        "enunciation": "To place at a given point (as an extremity) a straight line equal to a given straight line.",
+        "step_num": 11,
+        "step_total": 13,
+        "step_kind": "ASSERT",
+        "chapter": "DL = DG",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0258.g1.svg",
+        "visible_ids": [
+          "*"
+        ],
+        "hidden_ids": [
+          "lbl-H",
+          "lbl-K"
+        ],
+        "active_ids": [
+          "el-circle-GKL",
+          "hl-circle-GKL",
+          "el-pt-D",
+          "lbl-D"
+        ],
+        "equal_ids": [
+          "el-seg-DL",
+          "hl-seg-DL",
+          "el-seg-DG",
+          "hl-seg-DG",
+          "el-pt-L",
+          "lbl-L",
+          "el-pt-G",
+          "lbl-G"
+        ],
+        "tick_ids": [
+          "el-seg-DL",
+          "el-seg-DG"
+        ],
+        "symbolic": "( D G ) → / D L / = / D G /",
+        "clause_html": "<span class=\"g-tok\">( D G )</span> → <span class=\"g-tok\">/ D L /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ D G /</span>",
+        "just_id": "G.10 • I.Def.15",
+        "just_title": "circle_radii"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 1.15,
+        "prop_id": "BOOK I • PROP. 2",
+        "short_title": "transfer a segment to a point",
+        "g_id": "G.20",
+        "folio": "Folio 0258–0259 • p. 244–245",
+        "enunciation": "To place at a given point (as an extremity) a straight line equal to a given straight line.",
+        "step_num": 12,
+        "step_total": 13,
+        "step_kind": "ASSERT",
+        "chapter": "AL = BG",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0258.g1.svg",
+        "visible_ids": [
+          "*"
+        ],
+        "hidden_ids": [
+          "lbl-H",
+          "lbl-K"
+        ],
+        "active_ids": [
+          "el-pt-D",
+          "lbl-D",
+          "el-seg-DA",
+          "hl-seg-DA",
+          "el-seg-DB",
+          "hl-seg-DB"
+        ],
+        "equal_ids": [
+          "el-seg-AL",
+          "hl-seg-AL",
+          "el-seg-BG",
+          "hl-seg-BG",
+          "el-pt-A",
+          "lbl-A",
+          "el-pt-L",
+          "lbl-L",
+          "el-pt-B",
+          "lbl-B",
+          "el-pt-G",
+          "lbl-G"
+        ],
+        "tick_ids": [
+          "el-seg-AL",
+          "el-seg-BG"
+        ],
+        "tick_2_ids": [
+          "el-seg-DA",
+          "el-seg-DB"
+        ],
+        "symbolic": "/ D L / = / D G /, / D A / = / D B / → / A L / = / B G /",
+        "clause_html": "<div class=\"clause-line\"><span class=\"g-tok\">/ D L /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ D G /</span>, <span class=\"g-tok\">/ D A /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ D B /</span></div><div class=\"clause-line\">→ <span class=\"g-tok\">/ A L /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ B G /</span></div>",
+        "just_id": "G.19 • I.C.N.3",
+        "just_title": "subtract_equals"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 1.35,
+        "prop_id": "BOOK I • PROP. 2",
+        "short_title": "transfer a segment to a point",
+        "g_id": "G.20",
+        "folio": "Folio 0258–0259 • p. 244–245",
+        "enunciation": "To place at a given point (as an extremity) a straight line equal to a given straight line.",
+        "step_num": 13,
+        "step_total": 13,
+        "step_kind": "∴",
+        "chapter": "AL = BC at point A",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0258.g1.svg",
+        "visible_ids": [
+          "*"
+        ],
+        "hidden_ids": [
+          "lbl-H",
+          "lbl-K"
+        ],
+        "active_ids": [
+          "el-pt-A",
+          "lbl-A",
+          "el-pt-L",
+          "lbl-L",
+          "el-pt-B",
+          "lbl-B",
+          "el-pt-C",
+          "lbl-C"
+        ],
+        "equal_ids": [
+          "el-seg-AL",
+          "hl-seg-AL",
+          "el-seg-BC",
+          "hl-seg-BC",
+          "el-seg-BG",
+          "hl-seg-BG"
+        ],
+        "tick_ids": [
+          "el-seg-AL",
+          "el-seg-BC",
+          "el-seg-BG"
+        ],
+        "symbolic": "/ A L / = / B G /, / B C / = / B G / → / A L / = / B C /",
+        "clause_html": "<div class=\"clause-line\"><span class=\"g-tok\">/ A L /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ B G /</span>, <span class=\"g-tok\">/ B C /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ B G /</span></div><div class=\"clause-line\">→ <span class=\"g-tok\">/ A L /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ B C /</span></div>",
+        "just_id": "G.16 • I.C.N.1",
+        "just_title": "equal_transitive"
+      }
+    ]
+  }
+]

@@ -1,0 +1,38 @@
+================================================================================
+YOUTUBE 1080P (16:9) TITLE
+================================================================================
+I.10 • bisect a segment • Euclid's Elements
+
+================================================================================
+YOUTUBE SHORT (9:16) TITLE
+================================================================================
+I.10 • bisect a segment • Euclid's Elements
+
+================================================================================
+DESCRIPTION
+================================================================================
+“To bisect a given finite straight line.”
+— Euclid's Elements, BOOK I • PROP. 10 (G.32)
+
+00:00 1 · GIVEN: given segment / A B /
+00:05 2 · GOAL: bisect_segment(/ A B /) → D
+00:08 3 · CONSTRUCT: equilateral_triangle(/ A B /) → ⟨ A B C ⟩
+00:13 4 · CONSTRUCT: bisect_angle(⟨ A C B )) → / C D /
+00:18 5 · ASSERT: / A C / = / B C /, / C D / = / C D /, ⟨ A C D ) = ⟨ B C D )
+00:27 6 · ∴: / A D / = / B D /
+
+GEOMETOR • G.32 • v2
+
+================================================================================
+TAGS
+================================================================================
+Euclid, Euclid's Elements, Euclid I.10, G.32, Geometry, Constructive Geometry, Compass and Straightedge, Mathematical Proof, GEOMETOR, Thomas Little Heath
+
+================================================================================
+MEDIA & CAPTIONS FILES
+================================================================================
+• 9:16 Short MP4 : I_10_short.mp4
+• 16:9 1080p MP4 : I_10_1080p.mp4
+• Closed Captions: I_10.srt
+• 16:9 Thumbnail : I_10_thumb.png
+• 9:16 Thumbnail : I_10_short_thumb.png

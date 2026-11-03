@@ -1,0 +1,416 @@
+[
+  {
+    "bell": "bell:proposition",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "weight": 1.15,
+        "prop_id": "BOOK I • PROP. 7",
+        "short_title": "uniqueness of triangle sides on a base",
+        "g_id": "G.28",
+        "folio": "Folio 0272–0273 • p. 258",
+        "enunciation": "Given two straight lines constructed on a straight line (from its extremities) and meeting in a point, there cannot be constructed on the same straight line (from its extremities), and on the same side of it, two other straight lines meeting in another point and equal to the former two respectively, namely each to that which has the same extremity with it.",
+        "step_num": 1,
+        "step_total": 7,
+        "step_kind": "GIVEN",
+        "chapter": "/ A C /, / C B / on / A B / at C",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0272.g2.svg",
+        "visible_ids": [
+          "el-tri-ABC",
+          "el-seg-AB",
+          "el-seg-AC",
+          "el-seg-CB",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C"
+        ],
+        "active_ids": [
+          "el-tri-ABC",
+          "hl-tri-ABC",
+          "el-seg-AB",
+          "hl-seg-AB",
+          "el-seg-AC",
+          "hl-seg-AC",
+          "el-seg-CB",
+          "hl-seg-CB",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C"
+        ],
+        "equal_ids": [],
+        "tick_ids": [],
+        "symbolic": "given: / A C /, / C B / on / A B / at C",
+        "clause_html": "<span class=\"g-tok\">/ A C /</span>, <span class=\"g-tok\">/ C B /</span> on <span class=\"g-tok\">/ A B /</span> at <span class=\"g-tok\">C</span>",
+        "just_id": "G.4 • I.Def.4",
+        "just_title": "segment / A C /, / C B / on / A B /"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 0.85,
+        "prop_id": "BOOK I • PROP. 7",
+        "short_title": "uniqueness of triangle sides on a base",
+        "g_id": "G.28",
+        "folio": "Folio 0272–0273 • p. 258",
+        "enunciation": "Given two straight lines constructed on a straight line (from its extremities) and meeting in a point, there cannot be constructed on the same straight line (from its extremities), and on the same side of it, two other straight lines meeting in another point and equal to the former two respectively, namely each to that which has the same extremity with it.",
+        "step_num": 2,
+        "step_total": 7,
+        "step_kind": "GOAL",
+        "chapter": "¬∃ D ≠ C : / C A / = / D A /, / C B / = / D B /",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0272.g2.svg",
+        "visible_ids": [
+          "el-tri-ABC",
+          "el-tri-ABD",
+          "el-seg-AB",
+          "el-seg-AC",
+          "el-seg-CB",
+          "el-seg-AD",
+          "el-seg-DB",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D"
+        ],
+        "active_ids": [
+          "el-pt-C",
+          "el-pt-D",
+          "lbl-C",
+          "lbl-D",
+          "el-seg-AB",
+          "hl-seg-AB"
+        ],
+        "equal_ids": [
+          "el-seg-AC",
+          "hl-seg-AC",
+          "el-seg-AD",
+          "hl-seg-AD",
+          "el-seg-CB",
+          "hl-seg-CB",
+          "el-seg-DB",
+          "hl-seg-DB"
+        ],
+        "tick_ids": [
+          "el-seg-AC",
+          "el-seg-AD"
+        ],
+        "tick_2_ids": [
+          "el-seg-CB",
+          "el-seg-DB"
+        ],
+        "symbolic": "prove: ¬∃ D ≠ C : / C A / = / D A /, / C B / = / D B /",
+        "clause_html": "<div class=\"clause-line\">¬∃ <span class=\"g-tok\">D</span> ≠ <span class=\"g-tok\">C</span> :</div><div class=\"clause-line\"><span class=\"g-tok\">/ C A /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ D A /</span>, <span class=\"g-tok\">/ C B /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ D B /</span></div>",
+        "just_id": "G.28 • I.7",
+        "just_title": "unique_triangle_sides(/ A C /, / C B /, / A B /, C)"
+      }
+    ]
+  },
+  {
+    "bell": "bell:construction",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "weight": 1.25,
+        "prop_id": "BOOK I • PROP. 7",
+        "short_title": "uniqueness of triangle sides on a base",
+        "g_id": "G.28",
+        "folio": "Folio 0272–0273 • p. 258",
+        "enunciation": "Given two straight lines constructed on a straight line (from its extremities) and meeting in a point, there cannot be constructed on the same straight line (from its extremities), and on the same side of it, two other straight lines meeting in another point and equal to the former two respectively, namely each to that which has the same extremity with it.",
+        "step_num": 3,
+        "step_total": 7,
+        "step_kind": "ASSERT",
+        "chapter": "? / A D /, / D B / on / A B / at D",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0272.g2.svg",
+        "visible_ids": [
+          "el-tri-ABC",
+          "el-tri-ABD",
+          "el-seg-AB",
+          "el-seg-AC",
+          "el-seg-CB",
+          "el-seg-AD",
+          "el-seg-DB",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D"
+        ],
+        "active_ids": [
+          "el-tri-ABD",
+          "hl-tri-ABD",
+          "el-pt-D",
+          "lbl-D",
+          "el-pt-A",
+          "lbl-A",
+          "el-pt-B",
+          "lbl-B"
+        ],
+        "equal_ids": [
+          "el-seg-AC",
+          "hl-seg-AC",
+          "el-seg-AD",
+          "hl-seg-AD",
+          "el-seg-CB",
+          "hl-seg-CB",
+          "el-seg-DB",
+          "hl-seg-DB"
+        ],
+        "tick_ids": [
+          "el-seg-AC",
+          "el-seg-AD"
+        ],
+        "tick_2_ids": [
+          "el-seg-CB",
+          "el-seg-DB"
+        ],
+        "symbolic": "? / A D /, / D B / on / A B / at D : / C A / = / D A /, / C B / = / D B /",
+        "clause_html": "<div class=\"clause-line\">? <span class=\"g-tok\">/ A D /</span>, <span class=\"g-tok\">/ D B /</span> on <span class=\"g-tok\">/ A B /</span> at <span class=\"g-tok\">D</span> :</div><div class=\"clause-line\"><span class=\"g-tok\">/ C A /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ D A /</span>, <span class=\"g-tok\">/ C B /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ D B /</span></div>",
+        "just_id": "G.28 • REDUCTIO",
+        "just_title": "? D ≠ C"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 0.75,
+        "prop_id": "BOOK I • PROP. 7",
+        "short_title": "uniqueness of triangle sides on a base",
+        "g_id": "G.28",
+        "folio": "Folio 0272–0273 • p. 258",
+        "enunciation": "Given two straight lines constructed on a straight line (from its extremities) and meeting in a point, there cannot be constructed on the same straight line (from its extremities), and on the same side of it, two other straight lines meeting in another point and equal to the former two respectively, namely each to that which has the same extremity with it.",
+        "step_num": 4,
+        "step_total": 7,
+        "step_kind": "CONSTRUCT",
+        "chapter": "segment(C, D) → / C D /",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0272.g2.svg",
+        "visible_ids": [
+          "el-tri-ABC",
+          "el-tri-ABD",
+          "el-tri-ACD",
+          "el-tri-BCD",
+          "el-seg-AB",
+          "el-seg-AC",
+          "el-seg-CB",
+          "el-seg-AD",
+          "el-seg-DB",
+          "el-seg-CD",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D"
+        ],
+        "active_ids": [
+          "el-seg-CD",
+          "hl-seg-CD",
+          "el-pt-C",
+          "el-pt-D",
+          "lbl-C",
+          "lbl-D"
+        ],
+        "equal_ids": [],
+        "tick_ids": [
+          "el-seg-AC",
+          "el-seg-AD"
+        ],
+        "tick_2_ids": [
+          "el-seg-CB",
+          "el-seg-DB"
+        ],
+        "symbolic": "segment(C, D) → / C D /",
+        "clause_html": "<span class=\"fn-tok\">segment</span>(<span class=\"g-tok\">C</span>, <span class=\"g-tok\">D</span>) → <span class=\"g-tok\">/ C D /</span>",
+        "just_id": "G.14 • I.Post.1",
+        "just_title": "segment(pt, pt)"
+      }
+    ]
+  },
+  {
+    "bell": "bell:insight",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "weight": 0.9,
+        "prop_id": "BOOK I • PROP. 7",
+        "short_title": "uniqueness of triangle sides on a base",
+        "g_id": "G.28",
+        "folio": "Folio 0273 • p. 259",
+        "enunciation": "Given two straight lines constructed on a straight line (from its extremities) and meeting in a point, there cannot be constructed on the same straight line (from its extremities), and on the same side of it, two other straight lines meeting in another point and equal to the former two respectively, namely each to that which has the same extremity with it.",
+        "step_num": 5,
+        "step_total": 7,
+        "step_kind": "ASSERT",
+        "chapter": "/ A C / = / A D / → < A C D ) = < A D C )",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0272.g2.svg",
+        "visible_ids": [
+          "el-tri-ABC",
+          "el-tri-ABD",
+          "el-tri-ACD",
+          "el-tri-BCD",
+          "el-seg-AB",
+          "el-seg-AC",
+          "el-seg-CB",
+          "el-seg-AD",
+          "el-seg-DB",
+          "el-seg-CD",
+          "el-ang-ACD",
+          "el-ang-ADC",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D"
+        ],
+        "active_ids": [
+          "el-tri-ACD",
+          "hl-tri-ACD",
+          "el-seg-CD",
+          "hl-seg-CD",
+          "el-pt-A",
+          "el-pt-C",
+          "el-pt-D",
+          "lbl-A",
+          "lbl-C",
+          "lbl-D"
+        ],
+        "equal_ids": [
+          "el-ang-ACD",
+          "hl-ang-ACD",
+          "hl-arc-ACD",
+          "el-ang-ADC",
+          "hl-ang-ADC",
+          "hl-arc-ADC",
+          "el-seg-AC",
+          "hl-seg-AC",
+          "el-seg-AD",
+          "hl-seg-AD"
+        ],
+        "tick_ids": [
+          "el-seg-AC",
+          "el-seg-AD"
+        ],
+        "tick_2_ids": [],
+        "symbolic": "/ A C / = / A D / → < A C D ) = < A D C )",
+        "clause_html": "<span class=\"g-tok\">/ A C /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ A D /</span> → <span class=\"g-tok\">&lt; A C D )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; A D C )</span>",
+        "just_id": "G.25 • I.5",
+        "just_title": "isosceles_base_angles"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 1.15,
+        "prop_id": "BOOK I • PROP. 7",
+        "short_title": "uniqueness of triangle sides on a base",
+        "g_id": "G.28",
+        "folio": "Folio 0273 • p. 259",
+        "enunciation": "Given two straight lines constructed on a straight line (from its extremities) and meeting in a point, there cannot be constructed on the same straight line (from its extremities), and on the same side of it, two other straight lines meeting in another point and equal to the former two respectively, namely each to that which has the same extremity with it.",
+        "step_num": 6,
+        "step_total": 7,
+        "step_kind": "ASSERT",
+        "chapter": "< A C D ) > < D C B ) → < A D C ) > < D C B ) → < C D B ) ≫ < D C B )",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0272.g2.svg",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-ang-CDB",
+          "hl-ang-CDB",
+          "hl-arc-CDB",
+          "el-ang-DCB",
+          "hl-ang-DCB",
+          "hl-arc-DCB",
+          "el-seg-CD",
+          "hl-seg-CD",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-B"
+        ],
+        "equal_ids": [
+          "el-ang-ACD",
+          "hl-ang-ACD",
+          "hl-arc-ACD",
+          "el-ang-ADC",
+          "hl-ang-ADC",
+          "hl-arc-ADC"
+        ],
+        "tick_ids": [
+          "el-seg-AC",
+          "el-seg-AD"
+        ],
+        "tick_2_ids": [],
+        "symbolic": "< A C D ) > < D C B ) → < A D C ) > < D C B ) → < C D B ) ≫ < D C B )",
+        "clause_html": "<div class=\"clause-line\"><span class=\"g-tok\">&lt; A C D )</span> &gt; <span class=\"g-tok\">&lt; D C B )</span> → <span class=\"g-tok\">&lt; A D C )</span> &gt; <span class=\"g-tok\">&lt; D C B )</span></div><div class=\"clause-line\">→ <span class=\"g-tok\">&lt; C D B )</span> ≫ <span class=\"g-tok\">&lt; D C B )</span></div>",
+        "just_id": "G.26 • I.C.N.5",
+        "just_title": "whole_greater_than_part"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 1.25,
+        "prop_id": "BOOK I • PROP. 7",
+        "short_title": "uniqueness of triangle sides on a base",
+        "g_id": "G.28",
+        "folio": "Folio 0273 • p. 259",
+        "enunciation": "Given two straight lines constructed on a straight line (from its extremities) and meeting in a point, there cannot be constructed on the same straight line (from its extremities), and on the same side of it, two other straight lines meeting in another point and equal to the former two respectively, namely each to that which has the same extremity with it.",
+        "step_num": 7,
+        "step_total": 7,
+        "step_kind": "∴",
+        "chapter": "/ C B / = / D B / → < C D B ) = < D C B ) ⇒⇐",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0272.g2.svg",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-tri-BCD",
+          "hl-tri-BCD",
+          "el-seg-CD",
+          "hl-seg-CD",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D"
+        ],
+        "equal_ids": [
+          "el-ang-CDB",
+          "hl-ang-CDB",
+          "hl-arc-CDB",
+          "el-ang-DCB",
+          "hl-ang-DCB",
+          "hl-arc-DCB",
+          "el-seg-CB",
+          "hl-seg-CB",
+          "el-seg-DB",
+          "hl-seg-DB"
+        ],
+        "tick_ids": [
+          "el-seg-AC",
+          "el-seg-AD"
+        ],
+        "tick_2_ids": [
+          "el-seg-CB",
+          "el-seg-DB"
+        ],
+        "symbolic": "/ C B / = / D B / → < C D B ) = < D C B ) ⇒⇐  ∴  ¬∃ D ≠ C",
+        "clause_html": "<div class=\"clause-line\"><span class=\"g-tok\">/ C B /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ D B /</span> → <span class=\"g-tok\">&lt; C D B )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; D C B )</span> ⇒⇐</div><div class=\"clause-line\">∴ ¬∃ <span class=\"g-tok\">D</span> ≠ <span class=\"g-tok\">C</span> : <span class=\"g-tok\">/ C A /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ D A /</span>, <span class=\"g-tok\">/ C B /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ D B /</span></div>",
+        "just_id": "G.25 • I.5",
+        "just_title": "isosceles_base_angles"
+      }
+    ]
+  }
+]

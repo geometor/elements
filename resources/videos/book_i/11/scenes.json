@@ -1,0 +1,435 @@
+[
+  {
+    "bell": "bell:proposition",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "weight": 1.1,
+        "prop_id": "BOOK I • PROP. 11",
+        "short_title": "construct a perpendicular at a point on a line",
+        "g_id": "G.34",
+        "folio": "Folio 0283 • p. 269",
+        "enunciation": "To draw a straight line at right angles to a given straight line from a given point on it.",
+        "step_num": 1,
+        "step_total": 8,
+        "step_kind": "GIVEN",
+        "chapter": "segment AB and point C on AB",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0283.g1.svg",
+        "visible_ids": [
+          "el-seg-AD",
+          "el-seg-DC",
+          "el-seg-CE",
+          "el-seg-EB",
+          "el-seg-AB",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C"
+        ],
+        "active_ids": [
+          "el-seg-AB",
+          "hl-seg-AB",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C"
+        ],
+        "equal_ids": [],
+        "tick_ids": [],
+        "symbolic": "given: / A B /, C ∈ / A B /",
+        "clause_html": "<span class=\"g-tok\">/ A B /</span>, <span class=\"g-tok\">C</span> ∈ <span class=\"g-tok\">/ A B /</span>",
+        "just_id": "G.4 • I.Def.4",
+        "just_title": "segment"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 0.9,
+        "prop_id": "BOOK I • PROP. 11",
+        "short_title": "construct a perpendicular at a point on a line",
+        "g_id": "G.34",
+        "folio": "Folio 0283 • p. 269",
+        "enunciation": "To draw a straight line at right angles to a given straight line from a given point on it.",
+        "step_num": 2,
+        "step_total": 8,
+        "step_kind": "GOAL",
+        "chapter": "construct CF ⊥ AB at C",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0283.g1.svg",
+        "visible_ids": [
+          "el-seg-AD",
+          "el-seg-DC",
+          "el-seg-CE",
+          "el-seg-EB",
+          "el-seg-FC",
+          "el-ang-DCF",
+          "el-ang-ECF",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-F",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-F"
+        ],
+        "active_ids": [
+          "el-seg-FC",
+          "hl-seg-FC",
+          "el-pt-C",
+          "el-pt-F",
+          "lbl-C",
+          "lbl-F"
+        ],
+        "equal_ids": [
+          "el-ang-DCF",
+          "hl-ang-DCF",
+          "hl-arc-DCF",
+          "el-ang-ECF",
+          "hl-ang-ECF",
+          "hl-arc-ECF"
+        ],
+        "tick_ids": [],
+        "symbolic": "perpendicular_at(/ A B /, C) → / C F / ⊥ / A B /",
+        "clause_html": "<div class=\"clause-line\"><span class=\"g-tok\">/ C F /</span> ⊥ <span class=\"g-tok\">/ A B /</span></div><div class=\"clause-line\">(<span class=\"g-tok\">&lt; D C F )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; F C E )</span>)</div>",
+        "just_id": "G.34 • I.11",
+        "just_title": "perpendicular_at"
+      }
+    ]
+  },
+  {
+    "bell": "bell:construction",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "weight": 0.75,
+        "prop_id": "BOOK I • PROP. 11",
+        "short_title": "construct a perpendicular at a point on a line",
+        "g_id": "G.34",
+        "folio": "Folio 0283 • p. 269",
+        "enunciation": "To draw a straight line at right angles to a given straight line from a given point on it.",
+        "step_num": 3,
+        "step_total": 8,
+        "step_kind": "CONSTRUCT",
+        "chapter": "take point D on AC",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0283.g1.svg",
+        "visible_ids": [
+          "el-seg-AD",
+          "el-seg-DC",
+          "el-seg-CE",
+          "el-seg-EB",
+          "el-seg-AC",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D"
+        ],
+        "active_ids": [
+          "el-seg-AC",
+          "hl-seg-AC",
+          "el-pt-D",
+          "lbl-D",
+          "el-pt-C",
+          "lbl-C"
+        ],
+        "equal_ids": [],
+        "tick_ids": [],
+        "symbolic": "point(/ A C /) → D",
+        "clause_html": "point(<span class=\"g-tok\">/ A C /</span>) → <span class=\"g-tok\">D</span>",
+        "just_id": "G.1 • I.Def.1",
+        "just_title": "point"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 1.0,
+        "prop_id": "BOOK I • PROP. 11",
+        "short_title": "construct a perpendicular at a point on a line",
+        "g_id": "G.34",
+        "folio": "Folio 0283 • p. 269",
+        "enunciation": "To draw a straight line at right angles to a given straight line from a given point on it.",
+        "step_num": 4,
+        "step_total": 8,
+        "step_kind": "CONSTRUCT",
+        "chapter": "cut off CE = CD on CB",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0283.g1.svg",
+        "visible_ids": [
+          "el-seg-AD",
+          "el-seg-DC",
+          "el-seg-CE",
+          "el-seg-EB",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-E",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E"
+        ],
+        "active_ids": [
+          "el-pt-C",
+          "lbl-C",
+          "el-pt-D",
+          "lbl-D",
+          "el-pt-E",
+          "lbl-E"
+        ],
+        "equal_ids": [
+          "el-seg-DC",
+          "hl-seg-DC",
+          "el-seg-CE",
+          "hl-seg-CE"
+        ],
+        "tick_ids": [
+          "el-seg-DC",
+          "el-seg-CE"
+        ],
+        "symbolic": "cut_equal_segment(/ C B /, / C D /) → / C E / = / C D /",
+        "clause_html": "<div class=\"clause-line\">cut_equal_segment(<span class=\"g-tok\">/ C B /</span>, <span class=\"g-tok\">/ C D /</span>)</div><div class=\"clause-line\">→ <span class=\"g-tok\">/ C E /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ C D /</span></div>",
+        "just_id": "G.21 • I.3",
+        "just_title": "cut_equal_segment"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 1.0,
+        "prop_id": "BOOK I • PROP. 11",
+        "short_title": "construct a perpendicular at a point on a line",
+        "g_id": "G.34",
+        "folio": "Folio 0283 • p. 269",
+        "enunciation": "To draw a straight line at right angles to a given straight line from a given point on it.",
+        "step_num": 5,
+        "step_total": 8,
+        "step_kind": "CONSTRUCT",
+        "chapter": "equilateral triangle FDE on DE",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0283.g1.svg",
+        "visible_ids": [
+          "el-tri-DEF",
+          "el-seg-AD",
+          "el-seg-DC",
+          "el-seg-CE",
+          "el-seg-EB",
+          "el-seg-DF",
+          "el-seg-EF",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-E",
+          "el-pt-F",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E",
+          "lbl-F"
+        ],
+        "active_ids": [
+          "el-tri-DEF",
+          "hl-tri-DEF",
+          "el-pt-F",
+          "lbl-F",
+          "el-pt-D",
+          "lbl-D",
+          "el-pt-E",
+          "lbl-E"
+        ],
+        "equal_ids": [
+          "el-seg-DF",
+          "hl-seg-DF",
+          "el-seg-EF",
+          "hl-seg-EF"
+        ],
+        "tick_ids": [
+          "el-seg-DC",
+          "el-seg-CE"
+        ],
+        "tick_2_ids": [
+          "el-seg-DF",
+          "el-seg-EF"
+        ],
+        "symbolic": "equilateral_triangle(/ D E /) → < F D E >",
+        "clause_html": "<div class=\"clause-line\">equilateral_triangle(<span class=\"g-tok\">/ D E /</span>) → <span class=\"g-tok\">&lt; F D E &gt;</span></div><div class=\"clause-line\">(<span class=\"g-tok\">/ D E /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ D F /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ F E /</span>)</div>",
+        "just_id": "G.17 • I.1",
+        "just_title": "equilateral_triangle"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 0.9,
+        "prop_id": "BOOK I • PROP. 11",
+        "short_title": "construct a perpendicular at a point on a line",
+        "g_id": "G.34",
+        "folio": "Folio 0283 • p. 269",
+        "enunciation": "To draw a straight line at right angles to a given straight line from a given point on it.",
+        "step_num": 6,
+        "step_total": 8,
+        "step_kind": "CONSTRUCT",
+        "chapter": "segment FC",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0283.g1.svg",
+        "visible_ids": [
+          "el-tri-DEF",
+          "el-seg-AD",
+          "el-seg-DC",
+          "el-seg-CE",
+          "el-seg-EB",
+          "el-seg-DF",
+          "el-seg-EF",
+          "el-seg-FC",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-E",
+          "el-pt-F",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E",
+          "lbl-F"
+        ],
+        "active_ids": [
+          "el-seg-FC",
+          "hl-seg-FC",
+          "el-pt-F",
+          "lbl-F",
+          "el-pt-C",
+          "lbl-C"
+        ],
+        "equal_ids": [],
+        "tick_ids": [
+          "el-seg-DC",
+          "el-seg-CE"
+        ],
+        "tick_2_ids": [
+          "el-seg-DF",
+          "el-seg-EF"
+        ],
+        "symbolic": "segment(F, C) → / F C /",
+        "clause_html": "segment(<span class=\"g-tok\">F</span>, <span class=\"g-tok\">C</span>) → <span class=\"g-tok\">/ F C /</span>",
+        "just_id": "G.14 • I.Post.1",
+        "just_title": "segment"
+      }
+    ]
+  },
+  {
+    "bell": "bell:insight",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "weight": 1.1,
+        "prop_id": "BOOK I • PROP. 11",
+        "short_title": "construct a perpendicular at a point on a line",
+        "g_id": "G.34",
+        "folio": "Folio 0283 • p. 269",
+        "enunciation": "To draw a straight line at right angles to a given straight line from a given point on it.",
+        "step_num": 7,
+        "step_total": 8,
+        "step_kind": "ASSERT",
+        "chapter": "angle DCF = angle ECF by SSS",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0283.g1.svg",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-tri-DFC",
+          "hl-tri-DFC",
+          "el-tri-EFC",
+          "hl-tri-EFC",
+          "el-pt-D",
+          "el-pt-C",
+          "el-pt-E",
+          "el-pt-F",
+          "lbl-D",
+          "lbl-C",
+          "lbl-E",
+          "lbl-F"
+        ],
+        "equal_ids": [
+          "el-ang-DCF",
+          "hl-ang-DCF",
+          "hl-arc-DCF",
+          "el-ang-ECF",
+          "hl-ang-ECF",
+          "hl-arc-ECF"
+        ],
+        "tick_ids": [
+          "el-seg-DC",
+          "el-seg-CE"
+        ],
+        "tick_2_ids": [
+          "el-seg-DF",
+          "el-seg-EF"
+        ],
+        "tick_3_ids": [
+          "el-seg-FC"
+        ],
+        "symbolic": "/ D C / = / E C /, / C F / = / C F /, / D F / = / F E / → < D C F ) = < E C F )",
+        "clause_html": "<div class=\"clause-line\"><span class=\"g-tok\">/ D C /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ E C /</span>, <span class=\"g-tok\">/ C F /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ C F /</span>, <span class=\"g-tok\">/ D F /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ F E /</span></div><div class=\"clause-line\">→ <span class=\"g-tok\">&lt; D C F )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; E C F )</span></div>",
+        "just_id": "G.29 • I.8",
+        "just_title": "sss_congruence"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 1.1,
+        "prop_id": "BOOK I • PROP. 11",
+        "short_title": "construct a perpendicular at a point on a line",
+        "g_id": "G.34",
+        "folio": "Folio 0283 • ∴",
+        "enunciation": "To draw a straight line at right angles to a given straight line from a given point on it.",
+        "step_num": 8,
+        "step_total": 8,
+        "step_kind": "∴",
+        "chapter": "CF ⊥ AB at point C",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0283.g1.svg",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-seg-FC",
+          "hl-seg-FC",
+          "el-seg-AB",
+          "hl-seg-AB",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-F",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-F"
+        ],
+        "equal_ids": [
+          "el-ang-DCF",
+          "hl-ang-DCF",
+          "hl-arc-DCF",
+          "el-ang-ECF",
+          "hl-ang-ECF",
+          "hl-arc-ECF"
+        ],
+        "tick_ids": [
+          "el-seg-DC",
+          "el-seg-CE"
+        ],
+        "tick_2_ids": [
+          "el-seg-DF",
+          "el-seg-EF"
+        ],
+        "tick_3_ids": [
+          "el-seg-FC"
+        ],
+        "symbolic": "∴ < D C F ) = < F C E ) → / C F / ⊥ / A B /",
+        "clause_html": "<span class=\"g-tok\">&lt; D C F )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; F C E )</span> → <span class=\"g-tok\">/ C F /</span> ⊥ <span class=\"g-tok\">/ A B /</span>",
+        "just_id": "G.33 • I.Def.10",
+        "just_title": "right_angle_perpendicular"
+      }
+    ]
+  }
+]

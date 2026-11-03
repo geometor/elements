@@ -1,0 +1,400 @@
+[
+  {
+    "bell": "bell:proposition",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "weight": 1.0,
+        "prop_id": "BOOK I • PROP. 9",
+        "short_title": "bisect an angle",
+        "g_id": "G.31",
+        "folio": "Folio 0278 • p. 264",
+        "enunciation": "To bisect a given rectilineal angle.",
+        "step_num": 1,
+        "step_total": 8,
+        "step_kind": "GIVEN",
+        "chapter": "angle BAC",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0278.g2.svg",
+        "visible_ids": [
+          "el-seg-AD",
+          "el-seg-DB",
+          "el-seg-AE",
+          "el-seg-EC",
+          "el-pt-A",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C"
+        ],
+        "active_ids": [
+          "el-seg-AB",
+          "hl-seg-AB",
+          "el-seg-AC",
+          "hl-seg-AC",
+          "el-ang-BAC",
+          "hl-ang-BAC",
+          "el-pt-A",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C"
+        ],
+        "equal_ids": [],
+        "tick_ids": [],
+        "symbolic": "given: < B A C )",
+        "clause_html": "<span class=\"g-tok\">&lt; B A C )</span>",
+        "just_id": "GIVEN",
+        "just_title": "given"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 1.0,
+        "prop_id": "BOOK I • PROP. 9",
+        "short_title": "bisect an angle",
+        "g_id": "G.31",
+        "folio": "Folio 0278 • p. 264",
+        "enunciation": "To bisect a given rectilineal angle.",
+        "step_num": 2,
+        "step_total": 8,
+        "step_kind": "GOAL",
+        "chapter": "bisector AF of angle BAC",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0278.g2.svg",
+        "visible_ids": [
+          "el-seg-AD",
+          "el-seg-DB",
+          "el-seg-AE",
+          "el-seg-EC",
+          "el-seg-AF",
+          "el-pt-A",
+          "el-pt-F",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-F"
+        ],
+        "active_ids": [
+          "el-seg-AF",
+          "hl-seg-AF",
+          "el-pt-A",
+          "el-pt-F",
+          "lbl-A",
+          "lbl-F"
+        ],
+        "equal_ids": [
+          "el-ang-DAF",
+          "hl-ang-DAF",
+          "hl-arc-DAF",
+          "el-ang-EAF",
+          "hl-ang-EAF",
+          "hl-arc-EAF"
+        ],
+        "tick_ids": [],
+        "symbolic": "bisect_angle(< B A C )) → / A F / : < D A F ) = < E A F )",
+        "clause_html": "<div class=\"clause-line\">bisect_angle(<span class=\"g-tok\">&lt; B A C )</span>) → <span class=\"g-tok\">/ A F /</span></div><div class=\"clause-line\"><span class=\"g-tok\">&lt; D A F )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; E A F )</span></div>",
+        "just_id": "G.31 • I.9",
+        "just_title": "bisect_angle"
+      }
+    ]
+  },
+  {
+    "bell": "bell:construction",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "weight": 1.35,
+        "prop_id": "BOOK I • PROP. 9",
+        "short_title": "bisect an angle",
+        "g_id": "G.31",
+        "folio": "Folio 0278 • p. 264",
+        "enunciation": "To bisect a given rectilineal angle.",
+        "step_num": 3,
+        "step_total": 8,
+        "step_kind": "CONSTRUCT",
+        "chapter": "point D on AB and AE = AD on AC",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0278.g2.svg",
+        "visible_ids": [
+          "el-seg-AD",
+          "el-seg-DB",
+          "el-seg-AE",
+          "el-seg-EC",
+          "el-pt-A",
+          "el-pt-D",
+          "el-pt-E",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E"
+        ],
+        "active_ids": [
+          "el-pt-D",
+          "lbl-D",
+          "el-pt-E",
+          "lbl-E",
+          "el-pt-A",
+          "lbl-A"
+        ],
+        "equal_ids": [
+          "el-seg-AD",
+          "hl-seg-AD",
+          "el-seg-AE",
+          "hl-seg-AE"
+        ],
+        "tick_ids": [
+          "el-seg-AD",
+          "el-seg-AE"
+        ],
+        "symbolic": "point(/ A B /) → D  •  cut_equal_segment(/ A C /, / A D /) → / A E /",
+        "clause_html": "<div class=\"clause-line\">point(<span class=\"g-tok\">/ A B /</span>) → <span class=\"g-tok\">D</span></div><div class=\"clause-line\">cut_equal_segment(<span class=\"g-tok\">/ A C /</span>, <span class=\"g-tok\">/ A D /</span>) → <span class=\"g-tok\">/ A E /</span> (<span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ A D /</span>)</div>",
+        "just_id": "G.21 • I.3",
+        "just_title": "cut_equal_segment"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 0.85,
+        "prop_id": "BOOK I • PROP. 9",
+        "short_title": "bisect an angle",
+        "g_id": "G.31",
+        "folio": "Folio 0278 • p. 264",
+        "enunciation": "To bisect a given rectilineal angle.",
+        "step_num": 4,
+        "step_total": 8,
+        "step_kind": "CONSTRUCT",
+        "chapter": "segment DE",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0278.g2.svg",
+        "visible_ids": [
+          "el-seg-AD",
+          "el-seg-DB",
+          "el-seg-AE",
+          "el-seg-EC",
+          "el-seg-DE",
+          "el-pt-A",
+          "el-pt-D",
+          "el-pt-E",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E"
+        ],
+        "active_ids": [
+          "el-seg-DE",
+          "hl-seg-DE",
+          "el-pt-D",
+          "el-pt-E",
+          "lbl-D",
+          "lbl-E"
+        ],
+        "equal_ids": [],
+        "tick_ids": [],
+        "symbolic": "segment(D, E) → / D E /",
+        "clause_html": "segment(<span class=\"g-tok\">D</span>, <span class=\"g-tok\">E</span>) → <span class=\"g-tok\">/ D E /</span>",
+        "just_id": "G.14 • I.Post.1",
+        "just_title": "segment"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 1.0,
+        "prop_id": "BOOK I • PROP. 9",
+        "short_title": "bisect an angle",
+        "g_id": "G.31",
+        "folio": "Folio 0278 • p. 264",
+        "enunciation": "To bisect a given rectilineal angle.",
+        "step_num": 5,
+        "step_total": 8,
+        "step_kind": "CONSTRUCT",
+        "chapter": "equilateral triangle DEF",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0278.g2.svg",
+        "visible_ids": [
+          "el-seg-AD",
+          "el-seg-DB",
+          "el-seg-AE",
+          "el-seg-EC",
+          "el-seg-DE",
+          "el-seg-DF",
+          "el-seg-EF",
+          "el-tri-DEF",
+          "el-pt-A",
+          "el-pt-D",
+          "el-pt-E",
+          "el-pt-F",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E",
+          "lbl-F"
+        ],
+        "active_ids": [
+          "el-tri-DEF",
+          "hl-tri-DEF",
+          "el-pt-F",
+          "lbl-F"
+        ],
+        "equal_ids": [
+          "el-seg-DE",
+          "hl-seg-DE",
+          "el-seg-DF",
+          "hl-seg-DF",
+          "el-seg-EF",
+          "hl-seg-EF",
+          "el-pt-D",
+          "el-pt-E",
+          "lbl-D",
+          "lbl-E"
+        ],
+        "tick_ids": [],
+        "tick_2_ids": [
+          "el-seg-DE",
+          "el-seg-DF",
+          "el-seg-EF"
+        ],
+        "symbolic": "equilateral_triangle(/ D E /) → < D E F >",
+        "clause_html": "<div class=\"clause-line\">equilateral_triangle(<span class=\"g-tok\">/ D E /</span>) → <span class=\"g-tok\">&lt; D E F &gt;</span></div><div class=\"clause-line\">(<span class=\"g-tok\">/ D E /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ D F /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ E F /</span>)</div>",
+        "just_id": "G.17 • I.1",
+        "just_title": "equilateral_triangle"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 0.9,
+        "prop_id": "BOOK I • PROP. 9",
+        "short_title": "bisect an angle",
+        "g_id": "G.31",
+        "folio": "Folio 0278 • p. 264",
+        "enunciation": "To bisect a given rectilineal angle.",
+        "step_num": 6,
+        "step_total": 8,
+        "step_kind": "CONSTRUCT",
+        "chapter": "segment AF",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0278.g2.svg",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-seg-AF",
+          "hl-seg-AF",
+          "el-pt-A",
+          "el-pt-F",
+          "lbl-A",
+          "lbl-F"
+        ],
+        "equal_ids": [],
+        "tick_ids": [],
+        "symbolic": "segment(A, F) → / A F /",
+        "clause_html": "segment(<span class=\"g-tok\">A</span>, <span class=\"g-tok\">F</span>) → <span class=\"g-tok\">/ A F /</span>",
+        "just_id": "G.14 • I.Post.1",
+        "just_title": "segment"
+      }
+    ]
+  },
+  {
+    "bell": "bell:insight",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "weight": 1.05,
+        "prop_id": "BOOK I • PROP. 9",
+        "short_title": "bisect an angle",
+        "g_id": "G.31",
+        "folio": "Folio 0278 • p. 264",
+        "enunciation": "To bisect a given rectilineal angle.",
+        "step_num": 7,
+        "step_total": 8,
+        "step_kind": "ASSERT",
+        "chapter": "three pairs of equal sides in DAF and EAF",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0278.g2.svg",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-pt-A",
+          "el-pt-D",
+          "el-pt-E",
+          "el-pt-F",
+          "lbl-A",
+          "lbl-D",
+          "lbl-E",
+          "lbl-F"
+        ],
+        "equal_ids": [
+          "el-seg-AD",
+          "hl-seg-AD",
+          "el-seg-AE",
+          "hl-seg-AE",
+          "el-seg-DF",
+          "hl-seg-DF",
+          "el-seg-EF",
+          "hl-seg-EF",
+          "el-seg-AF",
+          "hl-seg-AF"
+        ],
+        "tick_ids": [
+          "el-seg-AD",
+          "el-seg-AE"
+        ],
+        "tick_2_ids": [
+          "el-seg-DF",
+          "el-seg-EF"
+        ],
+        "tick_3_ids": [
+          "el-seg-AF"
+        ],
+        "symbolic": "/ D A / = / E A /, / A F / = / A F /, / D F / = / E F /",
+        "clause_html": "<div class=\"clause-line\"><span class=\"g-tok\">/ D A /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ E A /</span>, <span class=\"g-tok\">/ A F /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ A F /</span></div><div class=\"clause-line\"><span class=\"g-tok\">/ D F /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ E F /</span></div>",
+        "just_id": "G.21 • I.3 & G.17 • I.1",
+        "just_title": "cut_equal_segment • equilateral_triangle"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 0.95,
+        "prop_id": "BOOK I • PROP. 9",
+        "short_title": "bisect an angle",
+        "g_id": "G.31",
+        "folio": "Folio 0278 • p. 264",
+        "enunciation": "To bisect a given rectilineal angle.",
+        "step_num": 8,
+        "step_total": 8,
+        "step_kind": "∴",
+        "chapter": "angle DAF = angle EAF",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0278.g2.svg",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-seg-AF",
+          "hl-seg-AF",
+          "el-pt-A",
+          "el-pt-F",
+          "lbl-A",
+          "lbl-F"
+        ],
+        "equal_ids": [
+          "el-seg-AD",
+          "hl-seg-AD",
+          "el-seg-AE",
+          "hl-seg-AE",
+          "el-seg-DF",
+          "hl-seg-DF",
+          "el-seg-EF",
+          "hl-seg-EF",
+          "el-ang-DAF",
+          "hl-ang-DAF",
+          "hl-arc-DAF",
+          "el-ang-EAF",
+          "hl-ang-EAF",
+          "hl-arc-EAF"
+        ],
+        "tick_ids": [
+          "el-seg-AD",
+          "el-seg-AE"
+        ],
+        "tick_2_ids": [
+          "el-seg-DF",
+          "el-seg-EF"
+        ],
+        "symbolic": "< D A F > ≅ < E A F > → < D A F ) = < E A F )",
+        "clause_html": "<div class=\"clause-line\"><span class=\"g-tok\">/ D A /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ E A /</span>, <span class=\"g-tok\">/ A F /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ A F /</span>, <span class=\"g-tok\">/ D F /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ E F /</span></div><div class=\"clause-line\">→ <span class=\"g-tok\">&lt; D A F )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; E A F )</span></div>",
+        "just_id": "G.29 • I.8",
+        "just_title": "sss_congruence"
+      }
+    ]
+  }
+]

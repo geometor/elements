@@ -1,0 +1,43 @@
+1
+00:00:00,420 --> 00:00:03,245
+Euclid's Elements, Book One, Proposition Twelve.
+
+2
+00:00:03,245 --> 00:00:07,425
+Construct a perpendicular to a given line from a given point not on it.
+
+3
+00:00:07,425 --> 00:00:13,370
+Given line A B and point C not on it, we are to construct from C a segment perpendicular to line A B.
+
+4
+00:00:13,790 --> 00:00:24,741
+First, take a point D on the other side of line A B, and by Postulate Three, construct circle C D, with center C and defining radius point D.
+
+5
+00:00:24,741 --> 00:00:28,936
+Circle C D intersects line A B at two points, E and G.
+
+6
+00:00:28,936 --> 00:00:35,149
+Next, by Proposition Ten, bisect segment E G at point H, so that G H equals H E.
+
+7
+00:00:35,149 --> 00:00:40,120
+Finally, by Postulate One, construct segments C G, C H, and C E.
+
+8
+00:00:40,540 --> 00:00:47,650
+Since point C is the center of circle C D, Definition Fifteen guarantees that radius C G equals radius C E.
+
+9
+00:00:47,650 --> 00:01:02,269
+Now compare triangles C H G and C H E: side G H equals side E H, side H C is common to both, and base C G equals base C E—so by Proposition Eight, Side-Side-Side congruence, the adjacent angles C H G and E H C are equal.
+
+10
+00:01:02,269 --> 00:01:13,698
+And by Definition Ten, when a segment standing on a line makes the adjacent angles equal, each angle is a right angle and the standing segment is perpendicular to the line.
+
+11
+00:01:13,698 --> 00:01:21,340
+Therefore segment C H has been constructed perpendicular to line A B from point C not on it, as was required to do.

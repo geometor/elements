@@ -1,0 +1,367 @@
+[
+  {
+    "bell": "bell:proposition",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "weight": 1.25,
+        "prop_id": "BOOK I • PROP. 6",
+        "short_title": "triangle with equal base angles is isosceles",
+        "g_id": "G.27",
+        "folio": "Folio 0269–0270 • p. 255",
+        "enunciation": "If in a triangle two angles be equal to one another, the sides which subtend the equal angles will also be equal to one another.",
+        "step_num": 1,
+        "step_total": 7,
+        "step_kind": "GIVEN",
+        "chapter": "< A B C >, < A B C ) = < A C B )",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0269.g1.svg",
+        "visible_ids": [
+          "el-tri-ABC",
+          "el-seg-AB",
+          "el-seg-AD",
+          "el-seg-DB",
+          "el-seg-AC",
+          "el-seg-BC",
+          "el-ang-ABC",
+          "el-ang-ACB",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C"
+        ],
+        "active_ids": [
+          "el-tri-ABC",
+          "hl-tri-ABC",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C"
+        ],
+        "equal_ids": [
+          "el-ang-ABC",
+          "hl-ang-ABC",
+          "hl-arc-ABC",
+          "el-ang-ACB",
+          "hl-ang-ACB",
+          "hl-arc-ACB"
+        ],
+        "tick_ids": [],
+        "symbolic": "given: < A B C >, < A B C ) = < A C B )",
+        "clause_html": "<span class=\"g-tok\">&lt; A B C &gt;</span>, <span class=\"g-tok\">&lt; A B C )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; A C B )</span>",
+        "just_id": "G.12 • G.22",
+        "just_title": "trilateral • plane_angle"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 0.75,
+        "prop_id": "BOOK I • PROP. 6",
+        "short_title": "triangle with equal base angles is isosceles",
+        "g_id": "G.27",
+        "folio": "Folio 0269–0270 • p. 255",
+        "enunciation": "If in a triangle two angles be equal to one another, the sides which subtend the equal angles will also be equal to one another.",
+        "step_num": 2,
+        "step_total": 7,
+        "step_kind": "PROVE",
+        "chapter": "equal_angles_isosceles(< A B C >, < A B C ), < A C B ))",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0269.g1.svg",
+        "visible_ids": [
+          "el-tri-ABC",
+          "el-seg-AB",
+          "el-seg-AD",
+          "el-seg-DB",
+          "el-seg-AC",
+          "el-seg-BC",
+          "el-ang-ABC",
+          "el-ang-ACB",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C"
+        ],
+        "active_ids": [
+          "el-ang-ABC",
+          "hl-ang-ABC",
+          "hl-arc-ABC",
+          "el-ang-ACB",
+          "hl-ang-ACB",
+          "hl-arc-ACB",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C"
+        ],
+        "equal_ids": [
+          "el-seg-AB",
+          "hl-seg-AB",
+          "el-seg-AC",
+          "hl-seg-AC"
+        ],
+        "tick_ids": [
+          "el-seg-AB",
+          "el-seg-AC"
+        ],
+        "symbolic": "prove: / A B / = / A C /",
+        "clause_html": "<div class=\"clause-line\">equal_angles_isosceles(<span class=\"g-tok\">&lt; A B C &gt;</span>, <span class=\"g-tok\">&lt; A B C )</span>, <span class=\"g-tok\">&lt; A C B )</span>)</div><div class=\"clause-line\">→ <span class=\"g-tok\">/ A B /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ A C /</span></div>",
+        "just_id": "G.27 • I.6",
+        "just_title": "equal_angles_isosceles"
+      }
+    ]
+  },
+  {
+    "bell": "bell:construction",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "weight": 1.2,
+        "prop_id": "BOOK I • PROP. 6",
+        "short_title": "triangle with equal base angles is isosceles",
+        "g_id": "G.27",
+        "folio": "Folio 0269–0270 • p. 255",
+        "enunciation": "If in a triangle two angles be equal to one another, the sides which subtend the equal angles will also be equal to one another.",
+        "step_num": 3,
+        "step_total": 7,
+        "step_kind": "CONSTRUCT",
+        "chapter": "cut_equal_segment(/ A B /, / A C /) → / D B /",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0269.g1.svg",
+        "visible_ids": [
+          "el-tri-ABC",
+          "el-seg-AB",
+          "el-seg-AD",
+          "el-seg-DB",
+          "el-seg-AC",
+          "el-seg-BC",
+          "el-ang-ABC",
+          "el-ang-ACB",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D"
+        ],
+        "active_ids": [
+          "el-seg-AD",
+          "hl-seg-AD",
+          "el-pt-D",
+          "lbl-D",
+          "el-pt-A",
+          "lbl-A",
+          "el-pt-B",
+          "lbl-B"
+        ],
+        "equal_ids": [
+          "el-seg-DB",
+          "hl-seg-DB",
+          "el-seg-AC",
+          "hl-seg-AC"
+        ],
+        "tick_ids": [
+          "el-seg-DB",
+          "el-seg-AC"
+        ],
+        "symbolic": "? / A B / ≠ / A C / → / A B / > / A C /  •  cut_equal_segment(/ A B /, / A C /) → / D B / (= / A C /)",
+        "clause_html": "<div class=\"clause-line\">? <span class=\"g-tok\">/ A B /</span> ≠ <span class=\"g-tok\">/ A C /</span> → <span class=\"g-tok\">/ A B /</span> &gt; <span class=\"g-tok\">/ A C /</span></div><div class=\"clause-line\">cut_equal_segment(<span class=\"g-tok\">/ A B /</span>, <span class=\"g-tok\">/ A C /</span>) → <span class=\"g-tok\">/ D B /</span> (<span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ A C /</span>)</div>",
+        "just_id": "G.21 • I.3",
+        "just_title": "cut_equal_segment"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 0.8,
+        "prop_id": "BOOK I • PROP. 6",
+        "short_title": "triangle with equal base angles is isosceles",
+        "g_id": "G.27",
+        "folio": "Folio 0269–0270 • p. 255",
+        "enunciation": "If in a triangle two angles be equal to one another, the sides which subtend the equal angles will also be equal to one another.",
+        "step_num": 4,
+        "step_total": 7,
+        "step_kind": "CONSTRUCT",
+        "chapter": "segment(D, C) → / D C /",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0269.g1.svg",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-seg-DC",
+          "hl-seg-DC",
+          "el-pt-D",
+          "lbl-D",
+          "el-pt-C",
+          "lbl-C"
+        ],
+        "equal_ids": [
+          "el-ang-ABC",
+          "hl-ang-ABC",
+          "hl-arc-ABC",
+          "el-ang-ACB",
+          "hl-ang-ACB",
+          "hl-arc-ACB"
+        ],
+        "tick_ids": [
+          "el-seg-DB",
+          "el-seg-AC"
+        ],
+        "symbolic": "segment(D, C) → / D C /",
+        "clause_html": "segment(<span class=\"g-tok\">D</span>, <span class=\"g-tok\">C</span>) → <span class=\"g-tok\">/ D C /</span>",
+        "just_id": "G.14 • I.Post.1",
+        "just_title": "segment"
+      }
+    ]
+  },
+  {
+    "bell": "bell:insight",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "weight": 1.2,
+        "prop_id": "BOOK I • PROP. 6",
+        "short_title": "triangle with equal base angles is isosceles",
+        "g_id": "G.27",
+        "folio": "Folio 0269–0270 • p. 255–256",
+        "enunciation": "If in a triangle two angles be equal to one another, the sides which subtend the equal angles will also be equal to one another.",
+        "step_num": 5,
+        "step_total": 7,
+        "step_kind": "ASSERT",
+        "chapter": "< D B C > = < A C B >",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0269.g1.svg",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-tri-ABC",
+          "hl-tri-ABC",
+          "el-seg-BC",
+          "hl-seg-BC",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D"
+        ],
+        "equal_ids": [
+          "el-tri-DBC",
+          "hl-tri-DBC",
+          "el-ang-ABC",
+          "hl-ang-ABC",
+          "hl-arc-ABC",
+          "el-ang-ACB",
+          "hl-ang-ACB",
+          "hl-arc-ACB"
+        ],
+        "tick_ids": [
+          "el-seg-DB",
+          "el-seg-AC"
+        ],
+        "tick_2_ids": [
+          "el-seg-BC"
+        ],
+        "symbolic": "/ D B / = / A C /, / B C / = / C B /, < D B C ) = < A C B ) → < D B C > = < A C B >",
+        "clause_html": "<div class=\"clause-line\"><span class=\"g-tok\">/ D B /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ A C /</span>, <span class=\"g-tok\">/ B C /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ C B /</span>, <span class=\"g-tok\">&lt; D B C )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; A C B )</span></div><div class=\"clause-line\">→ <span class=\"g-tok\">&lt; D B C &gt;</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; A C B &gt;</span></div>",
+        "just_id": "G.24 • I.4",
+        "just_title": "sas_congruence"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 0.9,
+        "prop_id": "BOOK I • PROP. 6",
+        "short_title": "triangle with equal base angles is isosceles",
+        "g_id": "G.27",
+        "folio": "Folio 0269–0270 • p. 255–256",
+        "enunciation": "If in a triangle two angles be equal to one another, the sides which subtend the equal angles will also be equal to one another.",
+        "step_num": 6,
+        "step_total": 7,
+        "step_kind": "ASSERT",
+        "chapter": "< D B C > < < A C B > ⇒⇐",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0269.g1.svg",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-tri-ADC",
+          "hl-tri-ADC",
+          "el-tri-ABC",
+          "hl-tri-ABC",
+          "el-seg-AD",
+          "hl-seg-AD",
+          "el-seg-DC",
+          "hl-seg-DC",
+          "el-pt-A",
+          "el-pt-D",
+          "lbl-A",
+          "lbl-D"
+        ],
+        "equal_ids": [
+          "el-tri-DBC",
+          "hl-tri-DBC"
+        ],
+        "tick_ids": [
+          "el-seg-DB",
+          "el-seg-AC"
+        ],
+        "symbolic": "< D B C > < < A C B >  ⇒⇐",
+        "clause_html": "<span class=\"g-tok\">&lt; D B C &gt;</span> &lt; <span class=\"g-tok\">&lt; A C B &gt;</span>  ⇒⇐",
+        "just_id": "G.26 • I.C.N.5",
+        "just_title": "whole_greater_than_part"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 0.9,
+        "prop_id": "BOOK I • PROP. 6",
+        "short_title": "triangle with equal base angles is isosceles",
+        "g_id": "G.27",
+        "folio": "Folio 0269–0270 • ∴",
+        "enunciation": "If in a triangle two angles be equal to one another, the sides which subtend the equal angles will also be equal to one another.",
+        "step_num": 7,
+        "step_total": 7,
+        "step_kind": "∴",
+        "chapter": "/ A B / = / A C /",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0269.g1.svg",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-tri-ABC",
+          "hl-tri-ABC",
+          "el-ang-ABC",
+          "hl-ang-ABC",
+          "hl-arc-ABC",
+          "el-ang-ACB",
+          "hl-ang-ACB",
+          "hl-arc-ACB",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C"
+        ],
+        "equal_ids": [
+          "el-seg-AB",
+          "hl-seg-AB",
+          "el-seg-AC",
+          "hl-seg-AC"
+        ],
+        "tick_ids": [
+          "el-seg-AB",
+          "el-seg-AC"
+        ],
+        "symbolic": "∴ / A B / = / A C /",
+        "clause_html": "<span class=\"g-tok\">/ A B /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ A C /</span>",
+        "just_id": "G.26 • I.C.N.5",
+        "just_title": "whole_greater_than_part"
+      }
+    ]
+  }
+]

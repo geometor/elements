@@ -1,0 +1,43 @@
+1
+00:00:00,420 --> 00:00:03,359
+Euclid's Elements, Book One, Proposition Eleven.
+
+2
+00:00:03,359 --> 00:00:08,073
+Construct a segment at right angles to a given line from a given point on it.
+
+3
+00:00:08,073 --> 00:00:13,890
+Given segment A B and point C on it, we are to construct from C a segment perpendicular to A B.
+
+4
+00:00:14,310 --> 00:00:17,695
+Take a point D at random on segment A C.
+
+5
+00:00:17,695 --> 00:00:23,280
+By Proposition Three, cut off from C B a segment C E equal to C D.
+
+6
+00:00:23,430 --> 00:00:29,620
+Next, by Proposition One, on segment D E construct the equilateral triangle F D E.
+
+7
+00:00:29,770 --> 00:00:35,200
+Then, by Postulate One, construct the segment F C joining vertex F to point C.
+
+8
+00:00:35,620 --> 00:00:44,178
+Now compare triangles D C F and E C F: side D C equals E C, side C F is common, and base D F equals base F E.
+
+9
+00:00:44,178 --> 00:00:52,500
+Therefore, by Proposition Eight, side-side-side congruence, the adjacent angles D C F and E C F are equal.
+
+10
+00:00:52,650 --> 00:01:01,140
+By Definition Ten, when a segment standing on a line makes the adjacent angles equal, each angle is a right angle and the segment is perpendicular.
+
+11
+00:01:01,140 --> 00:01:07,840
+Therefore segment C F has been constructed at right angles to segment A B from point C on it, as was required to do.

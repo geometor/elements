@@ -1729,6 +1729,21 @@ CURATED_PROPOSITIONS: Dict[str, Dict[str, object]] = {
             ("conclude", ["I.def.10"], ":g:`< C H G ) <g1:< C H G )>` :eq:`= <g1:< C H G ) = g1:< E H C )>` :g:`< E H C ) <g1:< E H C )>` → :g:`/ C H / <g1:/ C H />` ⊥ :g:`[ A B ] <g1:[ A B ]>`"),
         ],
     },
+    "I.13": {
+        "subtype": "theorem",
+        "args": [":g:`/ A B / <g1:/ A B />`", ":g:`/ C D / <g1:/ C D />`"],
+        "returns": [],
+        "given": ":g:`/ A B / <g1:/ A B />` on :g:`/ C D / <g1:/ C D />` → :g:`< C B A ) <g1:< C B A )>`, :g:`< A B D ) <g1:< A B D )>`",
+        "contract": ":g:`< C B A ) <g1:< C B A )>` + :g:`< A B D ) <g1:< A B D )>` :eq:`= <g1:< C B E ) = g1:< E B D )>` :g:`< C B E ) <g1:< C B E )>` + :g:`< E B D ) <g1:< E B D )>`",
+        "steps": [
+            ("given", [], ":g:`/ A B / <g1:/ A B />` on :g:`/ C D / <g1:/ C D />` → :g:`< C B A ) <g1:< C B A )>`, :g:`< A B D ) <g1:< A B D )>`"),
+            ("assert", ["I.def.10"], "? :g:`< C B A ) <g1:< C B A )>` :eq:`= <g1:< C B A ) = g1:< A B D )>` :g:`< A B D ) <g1:< A B D )>` → :g:`/ A B / <g1:/ A B />` ⊥ :g:`/ C D / <g1:/ C D />`"),
+            ("construct", [], "@fn(I.11)(:g:`/ C D / <g1:/ C D />`, :g:`B <g1:B>`) → :g:`/ B E / <g1:/ B E />` ⊥ :g:`/ C D / <g1:/ C D />` (:g:`< C B E ) <g1:< C B E )>` :eq:`= <g1:< C B E ) = g1:< E B D )>` :g:`< E B D ) <g1:< E B D )>`)"),
+            ("assert", ["I.cn.2"], ":g:`< C B E ) <g1:< C B E )>` = :g:`< C B A ) <g1:< C B A )>` + :g:`< A B E ) <g1:< A B E )>` → :g:`< C B E ) <g1:< C B E )>` + :g:`< E B D ) <g1:< E B D )>` = :g:`< C B A ) <g1:< C B A )>` + :g:`< A B E ) <g1:< A B E )>` + :g:`< E B D ) <g1:< E B D )>`"),
+            ("assert", ["I.cn.2"], ":g:`< D B A ) <g1:< D B A )>` = :g:`< D B E ) <g1:< D B E )>` + :g:`< E B A ) <g1:< E B A )>` → :g:`< D B A ) <g1:< D B A )>` + :g:`< A B C ) <g1:< A B C )>` = :g:`< D B E ) <g1:< D B E )>` + :g:`< E B A ) <g1:< E B A )>` + :g:`< A B C ) <g1:< A B C )>`"),
+            ("conclude", ["I.cn.1"], ":g:`< C B A ) <g1:< C B A )>` + :g:`< A B D ) <g1:< A B D )>` :eq:`= <g1:< C B E ) = g1:< E B D )>` :g:`< C B E ) <g1:< C B E )>` + :g:`< E B D ) <g1:< E B D )>`"),
+        ],
+    },
 }
 
 

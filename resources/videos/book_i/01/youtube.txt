@@ -1,0 +1,42 @@
+================================================================================
+YOUTUBE 1080P (16:9) TITLE
+================================================================================
+I.1 • construct an equilateral triangle • Euclid's Elements
+
+================================================================================
+YOUTUBE SHORT (9:16) TITLE
+================================================================================
+I.1 • construct an equilateral triangle • Euclid's Elements
+
+================================================================================
+DESCRIPTION
+================================================================================
+“On a given finite straight line to construct an equilateral triangle.”
+— Euclid's Elements, BOOK I • PROP. 1 (G.17)
+
+00:00 1 · GIVEN: given / A B /
+00:06 2 · GOAL: equilateral_triangle(/ A B /) → ⟨ A B C ⟩
+00:10 3 · CONSTRUCT: circle(A, B) → ( A B )
+00:14 4 · CONSTRUCT: circle(B, A) → ( B A )
+00:19 5 · INTERSECT: ( A B ) ∩ ( B A ) → C
+00:21 6 · CONSTRUCT: segment(C, A) → / C A /, segment(C, B) → / C B /
+00:24 7 · ASSERT: ( A B ) → / A C / = / A B /
+00:29 8 · ASSERT: ( B A ) → / B C / = / B A /
+00:34 9 · ASSERT: / C A / = / A B /, / B C / = / A B / → / C A / = / B C /
+00:41 10 · ∴: / C A / = / A B / = / B C / → ⟨ A B C ⟩
+
+GEOMETOR • G.17 • v5
+
+================================================================================
+TAGS
+================================================================================
+Euclid, Euclid's Elements, Euclid I.1, G.17, Geometry, Constructive Geometry, Compass and Straightedge, Mathematical Proof, GEOMETOR, Thomas Little Heath
+
+================================================================================
+MEDIA & CAPTIONS FILES
+================================================================================
+• 9:16 Short MP4 : I_01_short.mp4
+• 16:9 1080p MP4 : I_01_1080p.mp4
+• Closed Captions: I_01.srt
+• 16:9 Thumbnail : I_01_thumb.png
+• 9:16 Thumbnail : I_01_short_thumb.png

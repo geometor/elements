@@ -1,0 +1,382 @@
+[
+  {
+    "bell": "bell:proposition",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "weight": 1.3,
+        "prop_id": "BOOK I • PROP. 3",
+        "short_title": "cut off an equal segment",
+        "g_id": "G.21",
+        "folio": "Folio 0260 • p. 246",
+        "enunciation": "Given two unequal straight lines, to cut off from the greater a straight line equal to the less.",
+        "step_num": 1,
+        "step_total": 8,
+        "step_kind": "GIVEN",
+        "chapter": "unequal segments / A B / > / C /",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0260.g1.svg",
+        "visible_ids": [
+          "el-seg-AB",
+          "el-seg-C",
+          "el-pt-A",
+          "el-pt-B",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C"
+        ],
+        "hidden_ids": [
+          "el-pt-F",
+          "lbl-F"
+        ],
+        "active_ids": [
+          "el-seg-AB",
+          "hl-seg-AB",
+          "el-seg-C",
+          "hl-seg-C",
+          "el-pt-A",
+          "el-pt-B",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C"
+        ],
+        "equal_ids": [],
+        "tick_ids": [],
+        "symbolic": "given: / A B / > / C /",
+        "clause_html": "<span class=\"g-tok\">/ A B /</span> &gt; <span class=\"g-tok\">/ C /</span>",
+        "just_id": "GIVEN",
+        "just_title": "given"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 0.7,
+        "prop_id": "BOOK I • PROP. 3",
+        "short_title": "cut off an equal segment",
+        "g_id": "G.21",
+        "folio": "Folio 0260 • p. 246",
+        "enunciation": "Given two unequal straight lines, to cut off from the greater a straight line equal to the less.",
+        "step_num": 2,
+        "step_total": 8,
+        "step_kind": "GOAL",
+        "chapter": "cut_equal_segment(/ A B /, / C /) → / A E /",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0260.g1.svg",
+        "visible_ids": [
+          "el-seg-AB",
+          "el-seg-AE",
+          "el-seg-EB",
+          "el-seg-C",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-E",
+          "lbl-A",
+          "lbl-B",
+          "lbl-E",
+          "lbl-C"
+        ],
+        "hidden_ids": [
+          "el-pt-F",
+          "lbl-F"
+        ],
+        "active_ids": [
+          "el-pt-A",
+          "lbl-A",
+          "el-pt-E",
+          "lbl-E",
+          "el-pt-B",
+          "lbl-B"
+        ],
+        "equal_ids": [
+          "el-seg-AE",
+          "hl-seg-AE",
+          "el-seg-C",
+          "hl-seg-C",
+          "lbl-C"
+        ],
+        "tick_ids": [
+          "el-seg-AE",
+          "el-seg-C"
+        ],
+        "symbolic": "cut_equal_segment(/ A B /, / C /) → / A E / = / C /",
+        "clause_html": "<div class=\"clause-line\">cut_equal_segment(<span class=\"g-tok\">/ A B /</span>, <span class=\"g-tok\">/ C /</span>) → <span class=\"g-tok\">/ A E /</span></div><div class=\"clause-line\"><span class=\"g-tok\">/ A E /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ C /</span></div>",
+        "just_id": "G.21 • I.3",
+        "just_title": "cut_equal_segment"
+      }
+    ]
+  },
+  {
+    "bell": "bell:construction",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "weight": 1.0,
+        "prop_id": "BOOK I • PROP. 3",
+        "short_title": "cut off an equal segment",
+        "g_id": "G.21",
+        "folio": "Folio 0260 • p. 246",
+        "enunciation": "Given two unequal straight lines, to cut off from the greater a straight line equal to the less.",
+        "step_num": 3,
+        "step_total": 8,
+        "step_kind": "CONSTRUCT",
+        "chapter": "transfer_segment(A, / C /) → / A D /",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0260.g1.svg",
+        "visible_ids": [
+          "el-seg-AB",
+          "el-seg-C",
+          "el-seg-AD",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-D",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D"
+        ],
+        "hidden_ids": [
+          "el-pt-F",
+          "lbl-F"
+        ],
+        "active_ids": [
+          "el-seg-AD",
+          "hl-seg-AD",
+          "el-pt-A",
+          "el-pt-D",
+          "lbl-A",
+          "lbl-D"
+        ],
+        "equal_ids": [
+          "el-seg-AD",
+          "hl-seg-AD",
+          "el-seg-C",
+          "hl-seg-C",
+          "lbl-C"
+        ],
+        "tick_ids": [
+          "el-seg-AD",
+          "el-seg-C"
+        ],
+        "symbolic": "transfer_segment(A, / C /) → / A D / (= / C /)",
+        "clause_html": "<div class=\"clause-line\">transfer_segment(<span class=\"g-tok\">A</span>, <span class=\"g-tok\">/ C /</span>) → <span class=\"g-tok\">/ A D /</span></div><div class=\"clause-line\">(<span class=\"g-tok\">/ A D /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ C /</span>)</div>",
+        "just_id": "G.20 • I.2",
+        "just_title": "transfer_segment"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 1.0,
+        "prop_id": "BOOK I • PROP. 3",
+        "short_title": "cut off an equal segment",
+        "g_id": "G.21",
+        "folio": "Folio 0260 • p. 246",
+        "enunciation": "Given two unequal straight lines, to cut off from the greater a straight line equal to the less.",
+        "step_num": 4,
+        "step_total": 8,
+        "step_kind": "CONSTRUCT",
+        "chapter": "circle(A, D) → ( A D )",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0260.g1.svg",
+        "visible_ids": [
+          "el-seg-AB",
+          "el-seg-C",
+          "el-seg-AD",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-D",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "el-circle-DEF"
+        ],
+        "hidden_ids": [
+          "el-pt-F",
+          "lbl-F"
+        ],
+        "active_ids": [
+          "el-circle-DEF",
+          "hl-circle-DEF",
+          "el-pt-A",
+          "lbl-A",
+          "el-pt-D",
+          "lbl-D",
+          "el-seg-AD",
+          "hl-seg-AD"
+        ],
+        "equal_ids": [],
+        "tick_ids": [],
+        "symbolic": "circle(A, D) → ( A D )",
+        "clause_html": "circle(<span class=\"g-tok\">A</span>, <span class=\"g-tok\">D</span>) → <span class=\"g-tok\">( A D )</span>",
+        "just_id": "G.15 • I.Post.3",
+        "just_title": "circle"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 0.7,
+        "prop_id": "BOOK I • PROP. 3",
+        "short_title": "cut off an equal segment",
+        "g_id": "G.21",
+        "folio": "Folio 0260 • p. 246",
+        "enunciation": "Given two unequal straight lines, to cut off from the greater a straight line equal to the less.",
+        "step_num": 5,
+        "step_total": 8,
+        "step_kind": "INTERSECT",
+        "chapter": "( A D ) ∩ / A B / → E",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0260.g1.svg",
+        "visible_ids": [
+          "*"
+        ],
+        "hidden_ids": [
+          "el-pt-F",
+          "lbl-F"
+        ],
+        "active_ids": [
+          "el-pt-E",
+          "lbl-E"
+        ],
+        "equal_ids": [],
+        "tick_ids": [],
+        "symbolic": "( A D ) ∩ / A B / → E",
+        "clause_html": "<span class=\"g-tok\">( A D )</span> ∩ <span class=\"g-tok\">/ A B /</span> → <span class=\"g-tok\">E</span>",
+        "just_id": "∩ • INTERSECT",
+        "just_title": "( A D ) ∩ / A B / → E"
+      }
+    ]
+  },
+  {
+    "bell": "bell:insight",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "weight": 0.85,
+        "prop_id": "BOOK I • PROP. 3",
+        "short_title": "cut off an equal segment",
+        "g_id": "G.21",
+        "folio": "Folio 0260 • p. 246",
+        "enunciation": "Given two unequal straight lines, to cut off from the greater a straight line equal to the less.",
+        "step_num": 6,
+        "step_total": 8,
+        "step_kind": "ASSERT",
+        "chapter": "( A D ) → / A E / = / A D /",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0260.g1.svg",
+        "visible_ids": [
+          "*"
+        ],
+        "hidden_ids": [
+          "el-pt-F",
+          "lbl-F"
+        ],
+        "active_ids": [
+          "el-circle-DEF",
+          "hl-circle-DEF",
+          "el-pt-A",
+          "lbl-A"
+        ],
+        "equal_ids": [
+          "el-seg-AE",
+          "hl-seg-AE",
+          "el-seg-AD",
+          "hl-seg-AD",
+          "el-pt-E",
+          "lbl-E",
+          "el-pt-D",
+          "lbl-D"
+        ],
+        "tick_ids": [
+          "el-seg-AE",
+          "el-seg-AD"
+        ],
+        "symbolic": "( A D ) → / A E / = / A D /",
+        "clause_html": "<span class=\"g-tok\">( A D )</span> → <span class=\"g-tok\">/ A E /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ A D /</span>",
+        "just_id": "G.10 • I.Def.15",
+        "just_title": "circle_radii"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 0.75,
+        "prop_id": "BOOK I • PROP. 3",
+        "short_title": "cut off an equal segment",
+        "g_id": "G.21",
+        "folio": "Folio 0260 • p. 246",
+        "enunciation": "Given two unequal straight lines, to cut off from the greater a straight line equal to the less.",
+        "step_num": 7,
+        "step_total": 8,
+        "step_kind": "ASSERT",
+        "chapter": "/ C / = / A D /",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0260.g1.svg",
+        "visible_ids": [
+          "*"
+        ],
+        "hidden_ids": [
+          "el-pt-F",
+          "lbl-F"
+        ],
+        "active_ids": [
+          "el-pt-A",
+          "lbl-A",
+          "el-pt-D",
+          "lbl-D"
+        ],
+        "equal_ids": [
+          "el-seg-C",
+          "hl-seg-C",
+          "el-seg-AD",
+          "hl-seg-AD",
+          "lbl-C"
+        ],
+        "tick_ids": [
+          "el-seg-C",
+          "el-seg-AD"
+        ],
+        "symbolic": "/ C / = / A D /",
+        "clause_html": "<span class=\"g-tok\">/ C /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ A D /</span>",
+        "just_id": "G.20 • I.2",
+        "just_title": "transfer_segment"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 1.4,
+        "prop_id": "BOOK I • PROP. 3",
+        "short_title": "cut off an equal segment",
+        "g_id": "G.21",
+        "folio": "Folio 0260 • p. 246",
+        "enunciation": "Given two unequal straight lines, to cut off from the greater a straight line equal to the less.",
+        "step_num": 8,
+        "step_total": 8,
+        "step_kind": "∴",
+        "chapter": "/ A E / = / C /",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0260.g1.svg",
+        "visible_ids": [
+          "*"
+        ],
+        "hidden_ids": [
+          "el-pt-F",
+          "lbl-F"
+        ],
+        "active_ids": [
+          "el-seg-AB",
+          "hl-seg-AB",
+          "el-pt-A",
+          "el-pt-E",
+          "el-pt-B",
+          "lbl-A",
+          "lbl-E",
+          "lbl-B"
+        ],
+        "equal_ids": [
+          "el-seg-AE",
+          "hl-seg-AE",
+          "el-seg-C",
+          "hl-seg-C",
+          "el-seg-AD",
+          "hl-seg-AD",
+          "lbl-C"
+        ],
+        "tick_ids": [
+          "el-seg-AE",
+          "el-seg-C",
+          "el-seg-AD"
+        ],
+        "symbolic": "/ A E / = / A D /, / C / = / A D / → / A E / = / C /",
+        "clause_html": "<div class=\"clause-line\"><span class=\"g-tok\">/ A E /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ A D /</span>, <span class=\"g-tok\">/ C /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ A D /</span></div><div class=\"clause-line\">→ <span class=\"g-tok\">/ A E /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ C /</span></div>",
+        "just_id": "G.16 • I.C.N.1",
+        "just_title": "equal_transitive"
+      }
+    ]
+  }
+]

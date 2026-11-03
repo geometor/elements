@@ -1,0 +1,37 @@
+WEBVTT
+
+1
+00:00:00.420 --> 00:00:03.387
+Euclid's Elements, Book One, Proposition Six.
+
+2
+00:00:03.387 --> 00:00:09.322
+If two angles of a triangle are equal, the sides opposite the equal angles are also equal.
+
+3
+00:00:09.322 --> 00:00:15.850
+Given triangle A B C with angle A B C equal to angle A C B, we prove that side A B equals side A C.
+
+4
+00:00:16.270 --> 00:00:20.552
+Suppose side A B is unequal to side A C, and let A B be greater.
+
+5
+00:00:20.552 --> 00:00:26.440
+From the greater A B, cut off segment D B equal to the lesser A C, by Proposition Three.
+
+6
+00:00:26.590 --> 00:00:30.660
+Next, construct segment D C, by Postulate One.
+
+7
+00:00:31.080 --> 00:00:47.160
+Now compare triangles D B C and A C B: since D B equals A C, B C is common, and angle D B C equals angle A C B, Side-Angle-Side congruence in Proposition Four proves that triangle D B C equals triangle A C B.
+
+8
+00:00:47.310 --> 00:00:54.180
+But triangle D B C is less than triangle A C B — the part equal to the whole, violating Common Notion Five.
+
+9
+00:00:54.330 --> 00:01:02.360
+Therefore side A B is not unequal to side A C; side A B equals side A C, as was required to prove.

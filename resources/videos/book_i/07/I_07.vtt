@@ -1,0 +1,37 @@
+WEBVTT
+
+1
+00:00:00.420 --> 00:00:03.277
+Euclid's Elements, Book One, Proposition Seven.
+
+2
+00:00:03.277 --> 00:00:11.604
+On the same segment and on the same side, there cannot be constructed two distinct triangles with both pairs of conterminous sides equal.
+
+3
+00:00:11.604 --> 00:00:21.330
+Given segments A C and C B meeting at point C on segment A B, we prove that no distinct point D on the same side can have A D equal to A C and B D equal to B C.
+
+4
+00:00:21.750 --> 00:00:31.418
+For if possible, suppose distinct segments A D and D B on the same side of A B meet at point D, with C A equal to D A and C B equal to D B.
+
+5
+00:00:31.418 --> 00:00:35.800
+Construct segment C D between points C and D, by Postulate One.
+
+6
+00:00:36.220 --> 00:00:43.781
+Since segment A C equals segment A D in isosceles triangle A C D, Proposition Five gives angle A C D equal to angle A D C.
+
+7
+00:00:43.781 --> 00:00:56.983
+By Common Notion Five, the whole is greater than the part: angle A C D is greater than its part, angle D C B, so angle A D C is greater than angle D C B, and the whole angle C D B is much greater than angle D C B.
+
+8
+00:00:56.983 --> 00:01:06.403
+Yet since segment C B equals segment D B in isosceles triangle B C D, Proposition Five gives angle C D B equal to angle D C B, which is a contradiction.
+
+9
+00:01:06.403 --> 00:01:15.700
+Therefore on the same segment A B and on the same side, no distinct point D can have both pairs of conterminous sides equal, as was required to prove.

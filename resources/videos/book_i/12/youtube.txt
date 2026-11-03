@@ -1,0 +1,41 @@
+================================================================================
+YOUTUBE 1080P (16:9) TITLE
+================================================================================
+I.12 • construct a perpendicular from a point to a line • Euclid's Elements
+
+================================================================================
+YOUTUBE SHORT (9:16) TITLE
+================================================================================
+I.12 • construct a perpendicular from a point to a line • Euclid's Elements
+
+================================================================================
+DESCRIPTION
+================================================================================
+“To a given infinite straight line, from a given point which is not on it, to draw a perpendicular straight line.”
+— Euclid's Elements, BOOK I • PROP. 12 (G.35)
+
+00:00 1 · GIVEN: given [ A B ], C ∉ [ A B ]
+00:07 2 · GOAL: perpendicular_from([ A B ], C) → / C H / ⊥ [ A B ]
+00:13 3 · CONSTRUCT: point([ A B ]) → D, circle(C, D) → ( C D )
+00:21 4 · INTERSECT: ( C D ) ∩ [ A B ] → E, G
+00:27 5 · CONSTRUCT: bisect_segment(/ E G /) → H (/ G H / = / H E /)
+00:33 6 · CONSTRUCT: segment(C, G), segment(C, H), segment(C, E)
+00:40 7 · ASSERT: ( C D ) → / C G / = / C E /
+00:50 8 · ASSERT: / G H / = / E H /, / H C / = / H C /, / C G / = / C E / → ⟨ C H G ) = ⟨ E H C )
+01:05 9 · ∴: ⟨ C H G ) = ⟨ E H C ) → / C H / ⊥ [ A B ]
+
+GEOMETOR • G.35 • v2
+
+================================================================================
+TAGS
+================================================================================
+Euclid, Euclid's Elements, Euclid I.12, G.35, Geometry, Constructive Geometry, Compass and Straightedge, Mathematical Proof, GEOMETOR, Thomas Little Heath
+
+================================================================================
+MEDIA & CAPTIONS FILES
+================================================================================
+• 9:16 Short MP4 : I_12_short.mp4
+• 16:9 1080p MP4 : I_12_1080p.mp4
+• Closed Captions: I_12.srt
+• 16:9 Thumbnail : I_12_thumb.png
+• 9:16 Thumbnail : I_12_short_thumb.png

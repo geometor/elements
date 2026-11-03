@@ -1,0 +1,39 @@
+================================================================================
+YOUTUBE 1080P (16:9) TITLE
+================================================================================
+I.7 • uniqueness of triangle sides on a base • Euclid's Elements
+
+================================================================================
+YOUTUBE SHORT (9:16) TITLE
+================================================================================
+I.7 • uniqueness of triangle sides on a base • Euclid's Elements
+
+================================================================================
+DESCRIPTION
+================================================================================
+“Given two straight lines constructed on a straight line (from its extremities) and meeting in a point, there cannot be constructed on the same straight line (from its extremities), and on the same side of it, two other straight lines meeting in another point and equal to the former two respectively, namely each to that which has the same extremity with it.”
+— Euclid's Elements, BOOK I • PROP. 7 (G.28)
+
+00:00 1 · GIVEN: / A C /, / C B / on / A B / at C
+00:12 2 · GOAL: ¬∃ D ≠ C : / C A / = / D A /, / C B / = / D B /
+00:21 3 · ASSERT: ? / A D /, / D B / on / A B / at D
+00:30 4 · CONSTRUCT: segment(C, D) → / C D /
+00:35 5 · ASSERT: / A C / = / A D / → ⟨ A C D ) = ⟨ A D C )
+00:46 6 · ASSERT: ⟨ A C D ) ⟩ ⟨ D C B ) → ⟨ A D C ) ⟩ ⟨ D C B ) → ⟨ C D B ) ≫ ⟨ D C B )
+01:00 7 · ∴: / C B / = / D B / → ⟨ C D B ) = ⟨ D C B ) ⇒⇐
+
+GEOMETOR • G.28 • v2
+
+================================================================================
+TAGS
+================================================================================
+Euclid, Euclid's Elements, Euclid I.7, G.28, Geometry, Constructive Geometry, Compass and Straightedge, Mathematical Proof, GEOMETOR, Thomas Little Heath
+
+================================================================================
+MEDIA & CAPTIONS FILES
+================================================================================
+• 9:16 Short MP4 : I_07_short.mp4
+• 16:9 1080p MP4 : I_07_1080p.mp4
+• Closed Captions: I_07.srt
+• 16:9 Thumbnail : I_07_thumb.png
+• 9:16 Thumbnail : I_07_short_thumb.png

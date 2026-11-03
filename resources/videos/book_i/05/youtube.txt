@@ -1,0 +1,41 @@
+================================================================================
+YOUTUBE 1080P (16:9) TITLE
+================================================================================
+I.5 • base angles of an isosceles triangle • Euclid's Elements
+
+================================================================================
+YOUTUBE SHORT (9:16) TITLE
+================================================================================
+I.5 • base angles of an isosceles triangle • Euclid's Elements
+
+================================================================================
+DESCRIPTION
+================================================================================
+“In isosceles triangles the angles at the base are equal to one another, and, if the equal straight lines be produced further, the angles under the base will be equal to one another.”
+— Euclid's Elements, BOOK I • PROP. 5 (G.25)
+
+00:00 1 · GIVEN: given ⟨ A B C ⟩, / A B / = / A C /
+00:13 2 · PROVE: ⟨ A B C ) = ⟨ A C B ), ⟨ C B D ) = ⟨ B C E )
+00:24 3 · CONSTRUCT: extend(/ A B /) → / B D /, extend(/ A C /) → / C E /
+00:31 4 · CONSTRUCT: point(/ B D /) → F, cut_equal_segment(/ A E /, / A F /) → / A G /
+00:39 5 · CONSTRUCT: segment(F, C) → / F C /, segment(G, B) → / G B /
+00:45 6 · ASSERT: / F A / = / G A /, / A C / = / A B /, ⟨ F A G ) → / F C / = / G B /
+01:04 7 · ASSERT: / A F / = / A G /, / A B / = / A C / → / B F / = / C G /
+01:18 8 · ASSERT: / B F / = / C G /, / F C / = / G B /, ⟨ B F C ) = ⟨ C G B ) → ⟨ F B C ) = ⟨ G C B )
+01:36 9 · ∴: ⟨ A B G ) = ⟨ A C F ), ⟨ C B G ) = ⟨ B C F ) → ⟨ A B C ) = ⟨ A C B )
+
+GEOMETOR • G.25 • v3
+
+================================================================================
+TAGS
+================================================================================
+Euclid, Euclid's Elements, Euclid I.5, G.25, Geometry, Constructive Geometry, Compass and Straightedge, Mathematical Proof, GEOMETOR, Thomas Little Heath
+
+================================================================================
+MEDIA & CAPTIONS FILES
+================================================================================
+• 9:16 Short MP4 : I_05_short.mp4
+• 16:9 1080p MP4 : I_05_1080p.mp4
+• Closed Captions: I_05.srt
+• 16:9 Thumbnail : I_05_thumb.png
+• 9:16 Thumbnail : I_05_short_thumb.png

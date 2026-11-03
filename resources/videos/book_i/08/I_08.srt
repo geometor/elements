@@ -1,0 +1,39 @@
+1
+00:00:00,420 --> 00:00:03,939
+Euclid's Elements, Book One, Proposition Eight.
+
+2
+00:00:03,939 --> 00:00:10,604
+Triangles with all three corresponding sides equal have their corresponding angles equal.
+
+3
+00:00:10,604 --> 00:00:22,210
+Given triangles A B C and D E F with side A B equal to D E, side A C equal to D F, and base B C equal to E F, we prove that angle B A C equals angle E D F.
+
+4
+00:00:22,630 --> 00:00:29,527
+Apply triangle A B C to triangle D E F, placing point B on point E and segment B C along E F.
+
+5
+00:00:29,527 --> 00:00:36,424
+Because B C equals E F, point C coincides with point F, and base B C coincides with base E F.
+
+6
+00:00:36,424 --> 00:00:43,840
+Now suppose sides B A and A C do not coincide with E D and D F, but fall beside them as E G and G F.
+
+7
+00:00:44,260 --> 00:00:57,120
+Then on the same base E F and on the same side, two distinct triangles E D F and E G F would have E G equal to B A, which equals E D, and G F equal to A C, which equals D F.
+
+8
+00:00:57,120 --> 00:01:00,390
+But this is impossible by Proposition Seven.
+
+9
+00:01:00,390 --> 00:01:04,404
+Thus sides B A and A C must coincide with E D and D F.
+
+10
+00:01:04,404 --> 00:01:11,020
+Therefore angle B A C coincides with angle E D F and equals it, as was required to prove.

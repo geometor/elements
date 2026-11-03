@@ -8,3 +8,11 @@ dist/
 __pycache__
 docs/
 resources/extracted/
+resources/videos/**/*.mp4
+resources/videos/**/*.wav
+resources/videos/**/*_stage.html
+resources/videos/**/*_thumb.png
+resources/videos/**/slides_16x9/
+resources/videos/**/slides_9x16/
+resources/videos/**/*_work/
+
