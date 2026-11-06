@@ -2,7 +2,7 @@
 :number: 106
 :canonical_id: G.106
 :original_id: III.8
-:title: G.106 point taken outside
+:title: G.106 distances to a circle from an exterior point
 :volume: II
 :book: III
 :type: prop
@@ -10,168 +10,53 @@
 :categories: theorem, proof, plane-geometry, circles
 :category: theorem, proof, plane-geometry, circles
 :tags: book-iii, point, segment, circle, angle, triangle, straight-line, centre, diameter, plane-angle, trilateral, arc, equality, reductio-ad-absurdum
-:dependencies: G.1, G.4, G.10, G.11, G.12, G.14, G.24, G.45, G.46, G.48, G.49, G.61, G.98
-:excerpt: If a point be taken outside a circle and from the point segments be drawn through to the circle, one of which is through the center and the others are drawn at random, then, of the segments which fall on the concave arc, that through the center is greatest, while of the rest the nearer to that through the center is always greater than the more remote, but, of the segments falling on the convex arc, that between the point and the diameter is least, while of the rest the nearer to the least is always less than the more remote, and only two equal segments will fall on the circle from the point, one on each side of the least.
+:dependencies: G.1, G.4, G.10, G.11, G.14, G.16, G.24, G.45, G.46, G.48, G.49, G.61, G.98
+:excerpt: From a point outside a circle, of segments falling on the concave arc the greatest passes through the center and nearer ones are greater, while on the convex arc the least lies between the point and the diameter and nearer ones are less, with at most two equal segments.
 
 .. _G.106:
 .. _III.8:
 
-G.106 point taken outside
-=========================
+G.106 distances to a circle from an exterior point
+==================================================
 
 .. rubric:: `III.8 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/08/>`_
 
 .. enunciation::
 
-   If a :term:`point <G.1>` be taken outside a :term:`circle <G.10>` and from the point :term:`segments <G.4>` be drawn through to the circle, one of which is through the :term:`center <G.11>` and the others are drawn at random, then, of the segments which fall on the concave arc, that through the center is greatest, while of the rest the nearer to that through the center is always greater than the more remote, but, of the segments falling on the convex arc, that between the point and the :term:`diameter <G.61>` is least, while of the rest the nearer to the least is always less than the more remote, and only two equal segments will fall on the circle from the point, one on each side of the least.
+   From a :term:`point <G.1>` outside a :term:`circle <G.10>`, of :term:`segments <G.4>` falling on the concave arc the greatest passes through the :term:`center <G.11>` and nearer ones are greater, while on the convex arc the least lies between the point and the :term:`diameter <G.61>` and nearer ones are less, with at most two equal segments.
 
 .. signature:: theorem
 
-   | :fn:`point_taken_outside <G.106>`\ ()
-   | **prove** no other segment equal to :g:`/ D K / <g1:/ D K />` will fall on the circle from :g:`D <g1:D>`
+   | :fn:`exterior_point_circle_distances <G.106>`\ (:g:`( A B C ) <g1:( A B C )>`, :g:`D <g1:D>`, :g:`/ D A / <g1:/ D A />`)
+   | **given** :g:`( A B C ) <g1:( A B C )>`, exterior point :g:`D <g1:D>`, secants :g:`/ D A / <g1:/ D A />` (through center), :g:`/ D E / <g1:/ D E />`, :g:`/ D F / <g1:/ D F />`, :g:`/ D C / <g1:/ D C />`
+   | **prove** :g:`/ D A / <g1:/ D A />` > :g:`/ D E / <g1:/ D E />` > :g:`/ D F / <g1:/ D F />` > :g:`/ D C / <g1:/ D C />`, :g:`/ D G / <g1:/ D G />` < :g:`/ D K / <g1:/ D K />` < :g:`/ D L / <g1:/ D L />` < :g:`/ D H / <g1:/ D H />`, and :g:`/ D K / <g1:/ D K />` :eq:`= <g1:/ D K / = g1:/ D B />` :g:`/ D B / <g1:/ D B />` (unique pair)
 
 .. picture:: g1.svg
    :alt: Diagram for Proposition 8
 
-.. step:: construct
+.. step:: given ∵ circle_radii, circle_diameter <G.10, G.61>
 
-   Let :g:`( A B C ) <g1:( A B C )>` be a circle, and let a point :g:`D <g1:D>` be taken outside :g:`( A B C ) <g1:( A B C )>`
+   :g:`( A B C ) <g1:( A B C )>`, exterior point :g:`D <g1:D>`, secants :g:`/ D A / <g1:/ D A />` (cutting at :g:`G <g1:G>`), :g:`/ D E / <g1:/ D E />` (:g:`K <g1:K>`), :g:`/ D F / <g1:/ D F />` (:g:`L <g1:L>`), :g:`/ D C / <g1:/ D C />` (:g:`H <g1:H>`)
 
-.. step:: construct
+.. step:: construct ∵ find_circle_center, segment, copy_angle <G.98, G.14, G.48>
 
-   Let there be drawn through from it segments :g:`/ D A / <g1:/ D A />`, :g:`/ D E / <g1:/ D E />`, :g:`/ D F / <g1:/ D F />`, :g:`/ D C / <g1:/ D C />`, and let :g:`/ D A / <g1:/ D A />` be through the center
+   :fn:`find_circle_center <G.98>`\ (:g:`( A B C ) <g1:( A B C )>`) → :g:`M <g1:M>`; join radii :g:`/ M E / <g1:/ M E />`, :g:`/ M F / <g1:/ M F />`, :g:`/ M C / <g1:/ M C />`, :g:`/ M K / <g1:/ M K />`, :g:`/ M L / <g1:/ M L />`, :g:`/ M H / <g1:/ M H />`; :fn:`copy_angle <G.48>`\ (:g:`/ M D / <g1:/ M D />`, :g:`M <g1:M>`, :g:`< K M D ) <g1:< K M D )>`) → :g:`< D M B ) <g1:< D M B )>` :eq:`= <g1:< D M B ) = g1:< K M D )>` :g:`< K M D ) <g1:< K M D )>`, join :g:`/ D B / <g1:/ D B />`
 
-.. step:: assert
+.. step:: assert ∵ triangle_inequality, hinge_theorem <G.45, G.49>
 
-   I say that, of the segments falling on the concave arc :g:`( A E F C ) <g1:( A E F C )>`, :g:`/ D A / <g1:/ D A />` through the center is greatest, while :g:`/ D E / <g1:/ D E />` > :g:`/ D F / <g1:/ D F />` and :g:`/ D F / <g1:/ D F />` than :g:`/ D C / <g1:/ D C />`
+   :g:`/ D A / <g1:/ D A />` = :g:`/ M E / <g1:/ M E />` + :g:`/ M D / <g1:/ M D />` > :g:`/ D E / <g1:/ D E />`; :g:`< E M D ) <g1:< E M D )>` > :g:`< F M D ) <g1:< F M D )>` → :g:`/ D E / <g1:/ D E />` > :g:`/ D F / <g1:/ D F />` > :g:`/ D C / <g1:/ D C />`
 
-.. step:: assert
+.. step:: assert ∵ triangle_inequality, interior_triangle_bounds <G.45, G.46>
 
-   But, of the segments falling on the convex arc :g:`( H L K G ) <g1:( H L K G )>`, :g:`/ D G / <g1:/ D G />` between the point and the diameter :g:`/ A G / <g1:/ A G />` is least
+   :g:`/ M K / <g1:/ M K />` + :g:`/ D K / <g1:/ D K />` > :g:`/ M D / <g1:/ M D />` and :g:`/ M G / <g1:/ M G />` :eq:`= <g1:/ M G / = g1:/ M K />` :g:`/ M K / <g1:/ M K />` → :g:`/ D G / <g1:/ D G />` < :g:`/ D K / <g1:/ D K />`; :g:`/ M K / <g1:/ M K />` + :g:`/ D K / <g1:/ D K />` < :g:`/ M L / <g1:/ M L />` + :g:`/ D L / <g1:/ D L />` → :g:`/ D K / <g1:/ D K />` < :g:`/ D L / <g1:/ D L />` < :g:`/ D H / <g1:/ D H />`
 
-.. step:: assert
+.. step:: assert ∵ sas_congruence, equal_transitive <G.24, G.16>
 
-   the nearer to the least :g:`/ D G / <g1:/ D G />` is always less than the more remote, namely :g:`/ D K / <g1:/ D K />` than :g:`/ D L / <g1:/ D L />`, and :g:`/ D L / <g1:/ D L />` than :g:`/ D H / <g1:/ D H />`
-
-.. step:: construct
-
-   :fn:`find_circle_center <G.98>`: Let the center of :g:`( A B C ) <g1:( A B C )>` be taken
-
-.. step:: assert
-
-   Let it be :g:`M <g1:M>`
-
-.. step:: construct
-
-   :fn:`segment <G.14>`\ (:g:`M <g1:M>`, :g:`E <g1:E>`) → :g:`/ M E / <g1:/ M E />`, :fn:`segment <G.14>`\ (:g:`M <g1:M>`, :g:`F <g1:F>`) → :g:`/ M F / <g1:/ M F />`, :fn:`segment <G.14>`\ (:g:`M <g1:M>`, :g:`C <g1:C>`) → :g:`/ M C / <g1:/ M C />`, :fn:`segment <G.14>`\ (:g:`M <g1:M>`, :g:`K <g1:K>`) → :g:`/ M K / <g1:/ M K />`, :fn:`segment <G.14>`\ (:g:`M <g1:M>`, :g:`L <g1:L>`) → :g:`/ M L / <g1:/ M L />`, :fn:`segment <G.14>`\ (:g:`M <g1:M>`, :g:`H <g1:H>`) → :g:`/ M H / <g1:/ M H />`
-
-.. step:: construct
-
-   Since :g:`/ A M / <g1:/ A M />` is :eq:`equal <g1:/ A M / = g1:/ E M />` to :g:`/ E M / <g1:/ E M />`, let :g:`/ M D / <g1:/ M D />` be added to each
-
-.. step:: assert
-
-   :g:`/ A D / <g1:/ A D />` is equal to :g:`/ E M / <g1:/ E M />`, :g:`/ M D / <g1:/ M D />`
-
-.. step:: assert ∵ triangle_inequality <G.45>
-
-   :g:`/ E M / <g1:/ E M />`, :g:`/ M D / <g1:/ M D />` are greater than :g:`/ E D / <g1:/ E D />`
-
-.. step:: assert
-
-   :g:`/ A D / <g1:/ A D />` is also greater than :g:`/ E D / <g1:/ E D />`
-
-.. step:: assert
-
-   :g:`/ M E / <g1:/ M E />` :eq:`= <g1:/ M E / = g1:/ M F />` :g:`/ M F / <g1:/ M F />`, and :g:`/ M D / <g1:/ M D />` is common, therefore :g:`/ E M / <g1:/ E M />`, :g:`/ M D / <g1:/ M D />` :eq:`= <g1:/ E M / = g1:/ F M />` :g:`/ F M / <g1:/ F M />`, :g:`/ M D / <g1:/ M D />`
-
-.. step:: assert
-
-   :g:`< E M D ) <g1:< E M D )>` > :g:`< F M D ) <g1:< F M D )>`
-
-.. step:: assert ∵ hinge_theorem <G.49>
-
-   :g:`/ E D / <g1:/ E D />` > :g:`/ F D / <g1:/ F D />`
-
-.. step:: assert
-
-   Similarly we can prove that :g:`/ F D / <g1:/ F D />` > :g:`/ C D / <g1:/ C D />`
-
-.. step:: assert
-
-   :g:`/ D A / <g1:/ D A />` is greatest, while :g:`/ D E / <g1:/ D E />` > :g:`/ D F / <g1:/ D F />`, and :g:`/ D F / <g1:/ D F />` than :g:`/ D C / <g1:/ D C />`
-
-.. step:: assert ∵ triangle_inequality <G.45>
-
-   Next, since :g:`/ M K / <g1:/ M K />`, :g:`/ K D / <g1:/ K D />` are greater than :g:`/ M D / <g1:/ M D />`
-
-.. step:: assert
-
-   :g:`/ M G / <g1:/ M G />` :eq:`= <g1:/ M G / = g1:/ M K />` :g:`/ M K / <g1:/ M K />`, therefore :g:`/ K D / <g1:/ K D />` > :g:`/ G D / <g1:/ G D />`,
-
-.. step:: assert
-
-   So that :g:`/ G D / <g1:/ G D />` < :g:`/ K D / <g1:/ K D />`
-
-.. step:: assert ∵ interior_triangle_bounds <G.46>
-
-   since on :g:`/ M D / <g1:/ M D />`, one of the sides of :g:`< M L D > <g1:< M L D >>`, two segments :g:`/ M K / <g1:/ M K />`, :g:`/ K D / <g1:/ K D />` were constructed meeting within the :term:`triangle <G.12>`, therefore :g:`/ M K / <g1:/ M K />`, :g:`/ K D / <g1:/ K D />` are less than :g:`/ M L / <g1:/ M L />`, :g:`/ L D / <g1:/ L D />`
-
-.. step:: assert
-
-   :g:`/ M K / <g1:/ M K />` :eq:`= <g1:/ M K / = g1:/ M L />` :g:`/ M L / <g1:/ M L />`
-
-.. step:: assert
-
-   :g:`/ D K / <g1:/ D K />` < :g:`/ D L / <g1:/ D L />`
-
-.. step:: assert
-
-   Similarly we can prove that :g:`/ D L / <g1:/ D L />` is also less than :g:`/ D H / <g1:/ D H />`
-
-.. step:: assert
-
-   :g:`/ D G / <g1:/ D G />` is least, while :g:`/ D K / <g1:/ D K />` < :g:`/ D L / <g1:/ D L />`, and :g:`/ D L / <g1:/ D L />` than :g:`/ D H / <g1:/ D H />`
-
-.. step:: assert
-
-   I say also that only two equal segments will fall from :g:`D <g1:D>` on the circle, one on each side of the least :g:`/ D G / <g1:/ D G />`
-
-.. step:: construct
-
-   :fn:`copy_angle <G.48>`\ (:g:`/ M D / <g1:/ M D />`, :g:`M <g1:M>`, :g:`< K M D ) <g1:< K M D )>`) → :g:`< D M B ) <g1:< D M B )>` (:eq:`equal <g1:< D M B ) = g1:< K M D )>`)
-
-.. step:: construct
-
-   :fn:`segment <G.14>`\ (:g:`D <g1:D>`, :g:`B <g1:B>`) → :g:`/ D B / <g1:/ D B />`
-
-.. step:: assert
-
-   :g:`/ M K / <g1:/ M K />` :eq:`= <g1:/ M K / = g1:/ M B />` :g:`/ M B / <g1:/ M B />`, and :g:`/ M D / <g1:/ M D />` is common → :g:`/ K M / <g1:/ K M />`, :g:`/ M D / <g1:/ M D />` :eq:`= <g1:/ K M / = g1:/ B M />` :g:`/ B M / <g1:/ B M />`, :g:`/ M D / <g1:/ M D />`
-
-.. step:: assert
-
-   :g:`< K M D ) <g1:< K M D )>` :eq:`= <g1:< K M D ) = g1:< B M D )>` :g:`< B M D ) <g1:< B M D )>`
-
-.. step:: assert ∵ sas_congruence <G.24>
-
-   :g:`/ D K / <g1:/ D K />` :eq:`= <g1:/ D K / = g1:/ D B />` :g:`/ D B / <g1:/ D B />`
-
-.. step:: assert
-
-   If possible, let a segment so fall, and let it be :g:`/ D N / <g1:/ D N />`
-
-.. step:: assert
-
-   :g:`/ D K / <g1:/ D K />` :eq:`= <g1:/ D K / = g1:/ D N />` :g:`/ D N / <g1:/ D N />`, while :g:`/ D K / <g1:/ D K />` :eq:`= <g1:/ D K / = g1:/ D B />` :g:`/ D B / <g1:/ D B />` → :g:`/ D B / <g1:/ D B />` :eq:`= <g1:/ D B / = g1:/ D N />` :g:`/ D N / <g1:/ D N />`,
-
-.. step:: assert
-
-   That is, the nearer to the least :g:`/ D G / <g1:/ D G />` equal to the more remote: which was proved impossible
+   :g:`< M K D > <g1:< M K D >>` ≃ :g:`< M B D > <g1:< M B D >>` → :g:`/ D K / <g1:/ D K />` :eq:`= <g1:/ D K / = g1:/ D B />` :g:`/ D B / <g1:/ D B />`; if :g:`/ D N / <g1:/ D N />` :eq:`= <g1:/ D N / = g1:/ D K />` :g:`/ D K / <g1:/ D K />` then :g:`/ D B / <g1:/ D B />` :eq:`= <g1:/ D B / = g1:/ D N />` :g:`/ D N / <g1:/ D N />` ⇒⇐
 
 .. step:: conclude
 
-   no more than two equal segments will fall on :g:`( A B C ) <g1:( A B C )>` from :g:`D <g1:D>`, one on each side of :g:`/ D G / <g1:/ D G />` the least
+   :g:`/ D A / <g1:/ D A />` > :g:`/ D E / <g1:/ D E />` > :g:`/ D F / <g1:/ D F />` > :g:`/ D C / <g1:/ D C />`, :g:`/ D G / <g1:/ D G />` < :g:`/ D K / <g1:/ D K />` < :g:`/ D L / <g1:/ D L />` < :g:`/ D H / <g1:/ D H />`, and only two equal segments :g:`/ D K / <g1:/ D K />` :eq:`= <g1:/ D K / = g1:/ D B />` :g:`/ D B / <g1:/ D B />` fall from :g:`D <g1:D>`
 
 Dependency Graph
 ----------------
@@ -230,7 +115,7 @@ Dependency Graph
      "G.49" [label="G.49", tooltip="G.49 (I.24): If two triangles have two sides equal to two sides respectively, the one with the greater included angle has the greater base.", fillcolor="#222244", URL="../G.49/index.html", target="_top"];
      "G.61" [label="G.61", tooltip="G.61 (I.def.17): A diameter of a circle is any segment drawn through the center and terminated in both directions by the arc of the circle; it bisects the circle.", fillcolor="#224422", URL="../G.61/index.html", target="_top"];
      "G.98" [label="G.98", tooltip="G.98 (III.1): Find the center of a given circle.", fillcolor="#222244", URL="../G.98/index.html", target="_top"];
-     "G.106" [label="G.106", tooltip="G.106 (III.8): If a point be taken outside a circle and from the point segments be drawn through to the circle, one of which is through the center and the others are drawn at random, then, of the...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.106" [label="G.106", tooltip="G.106 (III.8): From a point outside a circle, of segments falling on the concave arc the greatest passes through the center and nearer ones are greater, while on the convex arc the least lies bet...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -255,7 +140,6 @@ Dependency Graph
      "G.47" -> "G.1";
      "G.48" -> "G.1";
      "G.49" -> "G.1";
-     "G.98" -> "G.1";
      "G.106" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
@@ -348,7 +232,6 @@ Dependency Graph
      "G.47" -> "G.12";
      "G.48" -> "G.12";
      "G.49" -> "G.12";
-     "G.106" -> "G.12";
      "G.17" -> "G.13";
      "G.25" -> "G.13";
      "G.17" -> "G.14";
@@ -361,7 +244,9 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.49" -> "G.14";
+     "G.98" -> "G.14";
      "G.106" -> "G.14";
      "G.17" -> "G.15";
      "G.20" -> "G.15";
@@ -372,6 +257,8 @@ Dependency Graph
      "G.21" -> "G.16";
      "G.37" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
+     "G.106" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
@@ -392,6 +279,7 @@ Dependency Graph
      "G.43" -> "G.21";
      "G.45" -> "G.21";
      "G.47" -> "G.21";
+     "G.49" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
      "G.28" -> "G.22";
@@ -410,7 +298,6 @@ Dependency Graph
      "G.46" -> "G.22";
      "G.48" -> "G.22";
      "G.49" -> "G.22";
-     "G.98" -> "G.22";
      "G.24" -> "G.23";
      "G.29" -> "G.23";
      "G.25" -> "G.24";
@@ -419,12 +306,16 @@ Dependency Graph
      "G.49" -> "G.24";
      "G.106" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.49" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.49" -> "G.26";
+     "G.98" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -441,6 +332,7 @@ Dependency Graph
      "G.40" -> "G.33";
      "G.98" -> "G.33";
      "G.37" -> "G.34";
+     "G.98" -> "G.34";
      "G.37" -> "G.36";
      "G.40" -> "G.37";
      "G.40" -> "G.38";

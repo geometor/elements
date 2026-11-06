@@ -1,0 +1,64 @@
+{
+  "II.11": {
+    "subtype": "problem",
+    "args": [
+      ":g:`/ A B / <g1:/ A B />`"
+    ],
+    "returns": [
+      ":g:`H <g1:H>`"
+    ],
+    "given": ":g:`/ A B / <g1:/ A B />`",
+    "contract": ":fn:`contained_rectangle <G.81>`\\ (:g:`/ A B / <g1:/ A B />`, :g:`/ B H / <g1:/ B H />`) :eq:`= <g1:< H B D K > = g1:< A F G H >>` :fn:`square_on_segment <G.75>`\\ (:g:`/ A H / <g1:/ A H />`)",
+    "steps": [
+      [
+        "given",
+        [
+          "I.def.4"
+        ],
+        ":g:`/ A B / <g1:/ A B />`"
+      ],
+      [
+        "construct",
+        [
+          "I.46",
+          "I.10",
+          "I.post.1"
+        ],
+        "@fn(I.46)(:g:`/ A B / <g1:/ A B />`) → :g:`< A B D C > <g1:< A B D C >>`, @fn(I.10)(:g:`/ A C / <g1:/ A C />`) → :g:`E <g1:E>` (:g:`/ A E / <g1:/ A E />` :eq:`= <g1:/ A E / = g1:/ E C />` :g:`/ E C / <g1:/ E C />`), @fn(I.post.1)(:g:`B <g1:B>`, :g:`E <g1:E>`) → :g:`/ B E / <g1:/ B E />`"
+      ],
+      [
+        "construct",
+        [
+          "I.post.2",
+          "I.3",
+          "I.46"
+        ],
+        "@fn(I.post.2)(:g:`/ C A / <g1:/ C A />`) → :g:`F <g1:F>`, @fn(I.3)(:g:`/ E F / <g1:/ E F />`, :g:`/ B E / <g1:/ B E />`) → :g:`/ E F / <g1:/ E F />` :eq:`= <g1:/ E F / = g1:/ B E />` :g:`/ B E / <g1:/ B E />`, @fn(I.46)(:g:`/ A F / <g1:/ A F />`) → :g:`< F H > <g1:< F H >>`, @fn(I.post.2)(:g:`/ G H / <g1:/ G H />`) → :g:`K <g1:K>`"
+      ],
+      [
+        "assert",
+        [
+          "II.6",
+          "I.47",
+          "I.cn.3"
+        ],
+        "@fn(II.def.1)(:g:`/ C F / <g1:/ C F />`, :g:`/ F A / <g1:/ F A />`) + :fn:`square_on_segment <G.75>`\\ (:g:`/ A E / <g1:/ A E />`) = :fn:`square_on_segment <G.75>`\\ (:g:`/ E F / <g1:/ E F />`) = :fn:`square_on_segment <G.75>`\\ (:g:`/ E B / <g1:/ E B />`) = :fn:`square_on_segment <G.75>`\\ (:g:`/ A B / <g1:/ A B />`) + :fn:`square_on_segment <G.75>`\\ (:g:`/ A E / <g1:/ A E />`) → :g:`< F K > <g1:< C F G K >>` :eq:`= <g1:< C F G K > = g1:< A B D C >>` :g:`< A B D C > <g1:< A B D C >>`"
+      ],
+      [
+        "assert",
+        [
+          "I.cn.3"
+        ],
+        ":g:`< F K > <g1:< C F G K >>` − :g:`< A K > <g1:< A H K C >>` = :g:`< A B D C > <g1:< A B D C >>` − :g:`< A K > <g1:< A H K C >>` → :g:`< F H > <g1:< A F G H >>` :eq:`= <g1:< A F G H > = g1:< H B D K >>` :g:`< H D > <g1:< H B D K >>`"
+      ],
+      [
+        "conclude",
+        [
+          "I.def.22",
+          "II.def.1"
+        ],
+        ":fn:`contained_rectangle <G.81>`\\ (:g:`/ A B / <g1:/ A B />`, :g:`/ B H / <g1:/ B H />`) :eq:`= <g1:< H B D K > = g1:< A F G H >>` :fn:`square_on_segment <G.75>`\\ (:g:`/ A H / <g1:/ A H />`)"
+      ]
+    ]
+  }
+}

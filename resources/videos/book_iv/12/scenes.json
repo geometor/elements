@@ -1,0 +1,503 @@
+[
+  {
+    "prop_id": "BOOK IV • PROP. 12",
+    "short_title": "circumscribe pentagon about circle",
+    "g_id": "G.164",
+    "folio": "Folios 0108–0110 • pp. 102–104",
+    "enunciation": "About a given circle to circumscribe an equilateral and equiangular pentagon.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.164/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.164/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/12/",
+    "step_total": 10,
+    "subslides": [
+      {
+        "step_num": 1,
+        "step_kind": "GIVEN",
+        "chapter": "given circle ( A B C D E )",
+        "symbolic": "( A B C D E ) → circumscribe regular pentagon < G H K L M >",
+        "visible_ids": [
+          "el-circle-ABCDE",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-E",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E"
+        ],
+        "active_ids": [
+          "el-circle-ABCDE",
+          "hl-circle-ABCDE",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-E",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E"
+        ],
+        "equal_ids": [],
+        "clause_html": "<div class=\"clause-line\">Let <span class=\"g-tok\">( A B C D E )</span> be the given circle;</div><div class=\"clause-line\">circumscribe an equilateral and equiangular pentagon <span class=\"eq-tok\">&lt; G H K L M &gt;</span>.</div>",
+        "just_id": "G.10 • I.def.15, G.150 • IV.def.4",
+        "just_title": "A polygon is circumscribed about a circle when each side of the circumscribed figure touches the circumference."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK IV • PROP. 12",
+    "short_title": "circumscribe pentagon about circle",
+    "g_id": "G.164",
+    "folio": "Folios 0108–0110 • pp. 102–104",
+    "enunciation": "About a given circle to circumscribe an equilateral and equiangular pentagon.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.164/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.164/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/12/",
+    "step_total": 10,
+    "subslides": [
+      {
+        "step_num": 2,
+        "step_kind": "CONSTRUCT",
+        "chapter": "inscribed pentagon vertices A..E & tangents / G H /../ M G /",
+        "symbolic": "( A B ) = … = ( E A ) (IV.11); draw tangents / G H /, / H K /, / K L /, / L M /, / M G /",
+        "visible_ids": [
+          "el-circle-ABCDE",
+          "el-poly-GHKLM",
+          "el-arc-AB",
+          "el-arc-BC",
+          "el-arc-CD",
+          "el-arc-DE",
+          "el-arc-EA",
+          "el-seg-GH",
+          "el-seg-HK",
+          "el-seg-KL",
+          "el-seg-LM",
+          "el-seg-MG",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-E",
+          "el-pt-G",
+          "el-pt-H",
+          "el-pt-K",
+          "el-pt-L",
+          "el-pt-M",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E",
+          "lbl-G",
+          "lbl-H",
+          "lbl-K",
+          "lbl-L",
+          "lbl-M"
+        ],
+        "active_ids": [
+          "el-poly-GHKLM",
+          "hl-poly-GHKLM",
+          "el-seg-GH",
+          "hl-seg-GH",
+          "el-seg-HK",
+          "hl-seg-HK",
+          "el-seg-KL",
+          "hl-seg-KL",
+          "el-seg-LM",
+          "hl-seg-LM",
+          "el-seg-MG",
+          "hl-seg-MG"
+        ],
+        "equal_ids": [
+          "el-arc-AB",
+          "hl-arc-AB",
+          "el-arc-BC",
+          "hl-arc-BC",
+          "el-arc-CD",
+          "hl-arc-CD",
+          "el-arc-DE",
+          "hl-arc-DE",
+          "el-arc-EA",
+          "hl-arc-EA"
+        ],
+        "clause_html": "<div class=\"clause-line\">Take regular pentagon vertices <span class=\"g-tok\">A, B, C, D, E</span> (<span class=\"eq-tok\">equal arcs</span>);</div><div class=\"clause-line\">draw tangents <span class=\"g-tok\">/ G H /</span>, <span class=\"g-tok\">/ H K /</span>, <span class=\"g-tok\">/ K L /</span>, <span class=\"g-tok\">/ L M /</span>, <span class=\"g-tok\">/ M G /</span>.</div>",
+        "just_id": "G.163 • IV.11, G.118 • III.16",
+        "just_title": "Mark the five vertices of an inscribed regular pentagon (IV.11) and draw tangent lines at each point (III.16 Por.)."
+      },
+      {
+        "step_num": 3,
+        "step_kind": "CONSTRUCT",
+        "chapter": "find center F and join / F B /, / F K /, / F C /, / F L /, / F D /",
+        "symbolic": "center F (III.1); join / F B /, / F K /, / F C /, / F L /, / F D /",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-pt-F",
+          "lbl-F",
+          "el-seg-FB",
+          "hl-seg-FB",
+          "el-seg-FK",
+          "hl-seg-FK",
+          "el-seg-FC",
+          "hl-seg-FC",
+          "el-seg-FL",
+          "hl-seg-FL",
+          "el-seg-FD",
+          "hl-seg-FD"
+        ],
+        "equal_ids": [
+          "el-seg-FB",
+          "hl-seg-FB",
+          "el-seg-FC",
+          "hl-seg-FC",
+          "el-seg-FD",
+          "hl-seg-FD"
+        ],
+        "tick_ids": [
+          "el-seg-FB",
+          "el-seg-FC",
+          "el-seg-FD"
+        ],
+        "clause_html": "<div class=\"clause-line\">Find the center <span class=\"g-tok\">F</span> of circle <span class=\"g-tok\">( A B C D E )</span>;</div><div class=\"clause-line\">join <span class=\"g-tok\">/ F B /</span>, <span class=\"g-tok\">/ F K /</span>, <span class=\"g-tok\">/ F C /</span>, <span class=\"g-tok\">/ F L /</span>, and <span class=\"g-tok\">/ F D /</span>.</div>",
+        "just_id": "G.98 • III.1, G.14 • I.post.1",
+        "just_title": "Find circle center F (III.1) and join radii to contact points B, C, D and lines to corners K, L (I.post.1)."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK IV • PROP. 12",
+    "short_title": "circumscribe pentagon about circle",
+    "g_id": "G.164",
+    "folio": "Folios 0108–0110 • pp. 102–104",
+    "enunciation": "About a given circle to circumscribe an equilateral and equiangular pentagon.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.164/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.164/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/12/",
+    "step_total": 10,
+    "subslides": [
+      {
+        "step_num": 4,
+        "step_kind": "ASSERT",
+        "chapter": "right triangles < F B K > & < F C K > → / B K / = / C K / & < B F K ) = < K F C )",
+        "symbolic": "< F B > + < B K > = < F K > = < F C > + < C K > → / B K / = / C K / → < B F K ) = < K F C )",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-tri-FBK",
+          "hl-tri-FBK",
+          "el-tri-FKC",
+          "hl-tri-FKC",
+          "el-seg-FK",
+          "hl-seg-FK",
+          "el-ang-FBK",
+          "hl-ang-FBK",
+          "hl-arc-FBK",
+          "el-ang-FCK",
+          "hl-ang-FCK",
+          "hl-arc-FCK"
+        ],
+        "equal_ids": [
+          "el-seg-FB",
+          "hl-seg-FB",
+          "el-seg-FC",
+          "hl-seg-FC",
+          "el-seg-BK",
+          "hl-seg-BK",
+          "el-seg-KC",
+          "hl-seg-KC",
+          "el-ang-BFK",
+          "hl-ang-BFK",
+          "hl-arc-BFK",
+          "el-ang-KFC",
+          "hl-ang-KFC",
+          "hl-arc-KFC",
+          "el-ang-BKF",
+          "hl-ang-BKF",
+          "hl-arc-BKF",
+          "el-ang-FKC",
+          "hl-ang-FKC",
+          "hl-arc-FKC"
+        ],
+        "tick_ids": [
+          "el-seg-FB",
+          "el-seg-FC"
+        ],
+        "tick_2_ids": [
+          "el-seg-BK",
+          "el-seg-KC"
+        ],
+        "clause_html": "<div class=\"clause-line\">Right angles at <span class=\"g-tok\">B, C</span> → <span class=\"eq-tok\">/ B K / = / C K /</span> (I.47)</div><div class=\"clause-line\">SSS (I.8) → <span class=\"eq-tok\">&lt; B F C ) = 2 &lt; K F C )</span> &amp; <span class=\"eq-tok\">&lt; B K C ) = 2 &lt; F K C )</span></div>",
+        "just_id": "G.120 • III.18, G.79 • I.47, G.29 • I.8",
+        "just_title": "By III.18 and I.47, tangent segments / B K / = / C K /; by I.8, / F K / bisects both < B F C ) and < B K C )."
+      },
+      {
+        "step_num": 5,
+        "step_kind": "ASSERT",
+        "chapter": "< B F C ) = < C F D ) → < K F C ) = < C F L ) → / K C / = / C L / & < F K C ) = < F L C )",
+        "symbolic": "( B C ) = ( C D ) → < K F C ) = < C F L ) → < F K C > ≃ < F L C > → / K C / = / C L /",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-tri-FKC",
+          "hl-tri-FKC",
+          "el-tri-FLC",
+          "hl-tri-FLC",
+          "el-seg-FC",
+          "hl-seg-FC",
+          "el-arc-BC",
+          "hl-arc-BC",
+          "el-arc-CD",
+          "hl-arc-CD"
+        ],
+        "equal_ids": [
+          "el-ang-KFC",
+          "hl-ang-KFC",
+          "hl-arc-KFC",
+          "el-ang-CFL",
+          "hl-ang-CFL",
+          "hl-arc-CFL",
+          "el-ang-FCK",
+          "hl-ang-FCK",
+          "hl-arc-FCK",
+          "el-ang-FCL",
+          "hl-ang-FCL",
+          "hl-arc-FCL",
+          "el-seg-KC",
+          "hl-seg-KC",
+          "el-seg-CL",
+          "hl-seg-CL",
+          "el-ang-FKC",
+          "hl-ang-FKC",
+          "hl-arc-FKC",
+          "el-ang-FLC",
+          "hl-ang-FLC",
+          "hl-arc-FLC"
+        ],
+        "tick_2_ids": [
+          "el-seg-KC",
+          "el-seg-CL"
+        ],
+        "clause_html": "<div class=\"clause-line\">Equal arcs <span class=\"eq-tok\">( B C ) = ( C D )</span> → <span class=\"eq-tok\">&lt; B F C ) = &lt; C F D )</span> → <span class=\"eq-tok\">&lt; K F C ) = &lt; L F C )</span></div><div class=\"clause-line\">ASA (I.26) → <span class=\"eq-tok\">/ K C / = / C L /</span> &amp; <span class=\"eq-tok\">&lt; F K C ) = &lt; F L C )</span></div>",
+        "just_id": "G.134 • III.27, G.51 • I.26",
+        "just_title": "Equal arcs subtend equal central angles (III.27), so halves < K F C ) = < L F C ) give ASA congruence of < F K C > and < F L C > (I.26)."
+      },
+      {
+        "step_num": 6,
+        "step_kind": "ASSERT",
+        "chapter": "/ H K / = / K L / = … and < H K L ) = < K L M ) = …",
+        "symbolic": "/ K L / = 2 / K C / = 2 / B K / = / H K / → all 5 sides & 5 angles equal",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-poly-GHKLM",
+          "hl-poly-GHKLM",
+          "el-sec-HBK",
+          "hl-sec-HBK",
+          "el-sec-KCL",
+          "hl-sec-KCL"
+        ],
+        "equal_ids": [
+          "el-seg-BK",
+          "hl-seg-BK",
+          "el-seg-KC",
+          "hl-seg-KC",
+          "el-seg-CL",
+          "hl-seg-CL",
+          "el-seg-LD",
+          "hl-seg-LD",
+          "el-ang-BKC",
+          "hl-ang-BKC",
+          "hl-arc-BKC",
+          "el-ang-DLC",
+          "hl-ang-DLC",
+          "hl-arc-DLC",
+          "el-ang-KHG",
+          "hl-ang-KHG",
+          "hl-arc-KHG",
+          "el-ang-HGM",
+          "hl-ang-HGM",
+          "hl-arc-HGM",
+          "el-ang-GML",
+          "hl-ang-GML",
+          "hl-arc-GML"
+        ],
+        "tick_2_ids": [
+          "el-seg-BK",
+          "el-seg-KC",
+          "el-seg-CL",
+          "el-seg-LD"
+        ],
+        "clause_html": "<div class=\"clause-line\"><span class=\"eq-tok\">/ K L / = 2 / K C / = 2 / B K / = / H K /</span> → all 5 sides equal</div><div class=\"clause-line\">Doubles <span class=\"eq-tok\">&lt; H K L ) = 2 &lt; F K C ) = 2 &lt; F L C ) = &lt; K L M )</span> → all 5 angles equal</div>",
+        "just_id": "G.16 • I.cn.1",
+        "just_title": "Doubles of equal half-tangents and half-angles are equal, making pentagon < G H K L M > both equilateral and equiangular."
+      },
+      {
+        "step_num": 7,
+        "step_kind": "∴",
+        "is_punchline": true,
+        "chapter": "regular pentagon < G H K L M > is circumscribed about ( A B C D E )",
+        "symbolic": "∴ < G H K L M > is equilateral & equiangular about ( A B C D E )",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-circle-ABCDE",
+          "hl-circle-ABCDE",
+          "el-poly-GHKLM",
+          "hl-poly-GHKLM",
+          "el-pt-G",
+          "el-pt-H",
+          "el-pt-K",
+          "el-pt-L",
+          "el-pt-M",
+          "lbl-G",
+          "lbl-H",
+          "lbl-K",
+          "lbl-L",
+          "lbl-M"
+        ],
+        "equal_ids": [
+          "el-seg-GH",
+          "hl-seg-GH",
+          "el-seg-HK",
+          "hl-seg-HK",
+          "el-seg-KL",
+          "hl-seg-KL",
+          "el-seg-LM",
+          "hl-seg-LM",
+          "el-seg-MG",
+          "hl-seg-MG",
+          "el-ang-BKC",
+          "hl-ang-BKC",
+          "hl-arc-BKC",
+          "el-ang-DLC",
+          "hl-ang-DLC",
+          "hl-arc-DLC",
+          "el-ang-KHG",
+          "hl-ang-KHG",
+          "hl-arc-KHG",
+          "el-ang-HGM",
+          "hl-ang-HGM",
+          "hl-arc-HGM",
+          "el-ang-GML",
+          "hl-ang-GML",
+          "hl-arc-GML"
+        ],
+        "tick_ids": [
+          "el-seg-GH",
+          "el-seg-HK",
+          "el-seg-KL",
+          "el-seg-LM",
+          "el-seg-MG"
+        ],
+        "clause_html": "<div class=\"clause-line\"><span class=\"g-tok\">&lt; G H K L M &gt;</span> is both <span class=\"eq-tok\">equilateral</span> and <span class=\"eq-tok\">equiangular</span>;</div><div class=\"clause-line\">∴ <span class=\"eq-tok\">regular pentagon &lt; G H K L M &gt; circumscribes ( A B C D E )</span>.</div>",
+        "just_id": "G.150 • IV.def.4, G.164 • IV.12",
+        "just_title": "An equilateral and equiangular pentagon < G H K L M > has been circumscribed about the given circle (Q.E.F.)."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK IV • PROP. 12",
+    "short_title": "circumscribe pentagon about circle",
+    "g_id": "G.164",
+    "folio": "Folios 0108–0110 • pp. 102–104",
+    "enunciation": "About a given circle to circumscribe an equilateral and equiangular pentagon.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.164/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.164/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/12/",
+    "step_total": 10,
+    "widescreen_only": true,
+    "subslides": [
+      {
+        "step_num": 8,
+        "step_kind": "COMMENTARY",
+        "widescreen_only": true,
+        "chapter": "De Morgan's general polygon duality (IV.12–IV.16)",
+        "symbolic": "Inscribed Regular n-gon  ⇒  Circumscribed Regular n-gon",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-circle-ABCDE",
+          "hl-circle-ABCDE",
+          "el-poly-GHKLM",
+          "hl-poly-GHKLM",
+          "el-tri-FKC",
+          "hl-tri-FKC",
+          "el-tri-FLC",
+          "hl-tri-FLC"
+        ],
+        "equal_ids": [
+          "el-seg-GH",
+          "hl-seg-GH",
+          "el-seg-HK",
+          "hl-seg-HK",
+          "el-seg-KL",
+          "hl-seg-KL",
+          "el-seg-LM",
+          "hl-seg-LM",
+          "el-seg-MG",
+          "hl-seg-MG"
+        ],
+        "tick_ids": [
+          "el-seg-GH",
+          "el-seg-HK",
+          "el-seg-KL",
+          "el-seg-LM",
+          "el-seg-MG"
+        ],
+        "clause_html": "<div class=\"clause-line\"><strong>Universal Polygon Circumscription (De Morgan)</strong></div><div class=\"clause-line\"><span class=\"eq-tok\">Equal arcs + tangents at vertices &nbsp;⇒&nbsp; regular circumscribed n-gon</span></div><div class=\"clause-line\" style=\"font-size:28px;color:#cbd5e1;\">Heath notes that IV.12–14 establish a general method for any regular n-gon, which Euclid explicitly invokes for the hexagon (IV.15 Porism) and fifteen-gon (IV.16).</div>",
+        "just_tag": "✦ HEATH COMMENTARY",
+        "just_id": "Heath (1908) • Vol. II, p. 104",
+        "just_title": "Demonstrates how tangent lines at the vertices of any inscribed regular polygon form a circumscribed regular polygon."
+      },
+      {
+        "step_num": 9,
+        "step_kind": "GENEALOGY",
+        "widescreen_only": true,
+        "chapter": "G.164 dependency tree & symbolic model",
+        "symbolic": "G.29 (I.8), G.51 (I.26), G.79 (I.47), G.98 (III.1), G.118 (III.16), G.120 (III.18), G.163 (IV.11) → G.164",
+        "stage_html": "<div style=\"width:100%;height:100%;display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:36px 8px 8px 8px;align-items:stretch;\"><div style=\"background:rgba(11,14,21,0.92);border:1.5px solid rgba(56,189,248,0.45);border-radius:16px;padding:22px 24px;display:flex;flex-direction:column;justify-content:space-between;\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.12em;color:#38bdf8;\">◈ G-INDEX PREREQUISITES → G.164</div><div style=\"display:flex;flex-direction:column;gap:10px;margin:12px 0;\"><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.163 (IV.11)</span><span style=\"color:#f4f1ea;\">inscribe regular pentagon in circle</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.118 / G.120</span><span style=\"color:#f4f1ea;\">tangent construction &amp; ⊥ radius (III.16, 18)</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.98 (III.1)</span><span style=\"color:#f4f1ea;\">find center of given circle</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.79 (I.47)</span><span style=\"color:#f4f1ea;\">Pythagorean theorem</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.29 / G.51</span><span style=\"color:#f4f1ea;\">SSS &amp; ASA triangle congruence (I.8, 26)</span></div></div><div style=\"background:rgba(232,184,90,0.16);border:1.5px solid #e8b85a;border-radius:10px;padding:11px 16px;text-align:center;font-family:'JetBrains Mono',monospace;font-size:17px;font-weight:700;color:#e8b85a;\">↓ G.164 (IV.12) • circumscribe pentagon about circle</div></div><div style=\"background:rgba(11,14,21,0.92);border:1.5px solid rgba(232,184,90,0.4);border-radius:16px;padding:22px 24px;display:flex;flex-direction:column;justify-content:space-between;\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.12em;color:#e8b85a;\">⚙ GEOMETOR.MODEL • G.164/g1.py</div><pre style=\"font-family:'JetBrains Mono',monospace;font-size:14.5px;line-height:1.48;color:#e2e8f0;background:rgba(7,9,14,0.85);padding:16px;border-radius:10px;border:1px solid rgba(148,163,184,0.25);overflow:hidden;\">model = Model(&quot;IV.12&quot;)\nmodel.construct_circle(F, C)\n\n# Tangents at inscribed vertices A, B, C, D, E\nmodel.set_polygon([G, H, K, L, M])\n\n# Radial right triangles FBK, FKC, FLC, FDL\nmodel.set_polygon([F, B, K])\nmodel.set_polygon([F, K, C])\nmodel.set_polygon([F, L, C])\nmodel.set_polygon([F, D, L])</pre><div style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">15 direct dependencies • 110 total ancestor nodes in G-Index</div></div></div>",
+        "clause_html": "<div class=\"clause-line\"><span class=\"coincide-tok\">G.164</span> synthesizes <span class=\"g-tok\">15 direct prerequisites</span></div><div class=\"clause-line\">across <span class=\"g-tok\">110 total ancestor nodes</span> in the G-Index</div><div class=\"clause-line\" style=\"font-size:28px;color:#cbd5e1;\">Unites IV.11 with III.1, III.16, III.18, III.27, I.8, I.26, and I.47.</div>",
+        "just_tag": "◈ G-INDEX GENEALOGY",
+        "just_id": "G.164 • 15 Direct Rules",
+        "just_title": "Depends on G.1, G.10, G.13, G.14, G.22, G.29, G.51, G.63, G.79, G.98, G.118, G.120, G.134, G.150, and G.163."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK IV • PROP. 12",
+    "short_title": "circumscribe pentagon about circle",
+    "g_id": "G.164",
+    "folio": "Folios 0108–0110 • pp. 102–104",
+    "enunciation": "About a given circle to circumscribe an equilateral and equiangular pentagon.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.164/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.164/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/12/",
+    "step_total": 10,
+    "widescreen_only": true,
+    "subslides": [
+      {
+        "step_num": 10,
+        "step_kind": "PARTICIPATE",
+        "widescreen_only": true,
+        "chapter": "explore the GEOMETOR Elements Codex & participate",
+        "symbolic": "geometor.github.io/elements",
+        "stage_html": "<div style=\"width:100%;height:100%;display:flex;flex-direction:column;justify-content:space-between;padding:42px 16px 12px 16px;gap:20px;\"><div style=\"background:linear-gradient(135deg,rgba(232,184,90,0.16) 0%,rgba(16,20,29,0.95) 100%);border:2px solid rgba(232,184,90,0.55);border-radius:18px;padding:28px 32px;display:flex;flex-direction:column;gap:12px;box-shadow:0 16px 40px rgba(0,0,0,0.6);\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.16em;color:#e8b85a;\">★ INTERACTIVE DIGITAL EDITION</div><div style=\"font-family:Georgia,serif;font-size:38px;font-weight:700;color:#f8f6f0;\">GEOMETOR • Elements Codex</div><div style=\"font-family:'JetBrains Mono',monospace;font-size:22px;color:#5ec27e;font-weight:700;\">https://geometor.github.io/elements/elements2/G.164/</div></div><div style=\"display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;flex:1;\"><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#e8b85a;font-weight:700;\">01 • PSEUDOCODE</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Hover-synced symbolic steps, signatures, and interactive SVG diagrams.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 1 • G.164</span></div><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#38bdf8;font-weight:700;\">02 • PYTHON MODEL</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Executable geometor.model scripts with exact algebraic coordinates.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 2 • g1.py</span></div><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#5ec27e;font-weight:700;\">03 • HEATH (1908)</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Complete classical translation, folio plates, and historical commentary.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 3 • Folios 0108–0110</span></div></div></div>",
+        "clause_html": "<div class=\"clause-line\">Explore the <span class=\"g-tok\">Elements Codex</span> &amp; <span class=\"eq-tok\">G-Index</span></div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Subscribe to <strong>@geometor</strong> for all 465 propositions</div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Share questions &amp; insights in the comments</div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Star &amp; contribute at <strong>github.com/geometor</strong></div>",
+        "just_tag": "★ PARTICIPATE & SUPPORT",
+        "just_id": "github.com/geometor/elements",
+        "just_title": "Open-source symbolic reconstruction of Euclid's Elements — links in the video description."
+      }
+    ]
+  }
+]

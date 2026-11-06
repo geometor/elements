@@ -1,0 +1,51 @@
+1
+00:00:00,420 --> 00:00:02,846
+Book Three, Proposition Thirty.
+
+2
+00:00:02,846 --> 00:00:04,567
+To bisect a given arc.
+
+3
+00:00:04,567 --> 00:00:09,810
+Let A D B be the given arc; it is required to bisect the arc A D B.
+
+4
+00:00:10,230 --> 00:00:14,753
+Join the chord A B and bisect it at C by One Ten.
+
+5
+00:00:14,753 --> 00:00:23,800
+From C, draw C D at right angles to A B by One Eleven, meeting the arc at D, and join A D and D B.
+
+6
+00:00:24,220 --> 00:00:42,362
+Because A C equals C B and C D is common, the two sides A C and C D equal the two sides B C and C D, and the included angle A C D equals the angle B C D, since each is right; therefore by One Four, the base A D equals the base D B.
+
+7
+00:00:42,362 --> 00:00:59,011
+By Three Twenty-Eight, equal chords cut off equal arcs, the greater equal to the greater and the less to the less; and since each of the arcs A D and D B is less than a semicircle, the arc A D equals the arc D B.
+
+8
+00:00:59,011 --> 00:01:04,980
+Therefore the given arc A D B has been bisected at D, as was required to do.
+
+9
+00:01:05,400 --> 00:01:14,464
+Proposition Thirty provides one of geometry's most practical constructions: bisecting a circular arc without first locating the center of the circle.
+
+10
+00:01:14,464 --> 00:01:28,699
+Because the perpendicular bisector of chord A B passes through the center by Three One, extending C D cuts the circle into two semicircles, guaranteeing that each sub-arc A D and D B is minor and therefore equal by Three Twenty-Eight.
+
+11
+00:01:28,699 --> 00:01:43,360
+In the GEOMETOR G-Index, node G one-thirty-seven combines six direct rules across forty-three ancestor nodes, directly powering the regular fifteen-sided polygon in Book Four, Proposition Sixteen, and the method of exhaustion in Book Twelve.
+
+12
+00:01:43,780 --> 00:01:57,001
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Thirty in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+13
+00:01:57,001 --> 00:02:04,180
+Subscribe to at geometor, share your thoughts in the comments, and star the repository at github dot com slash geometor.

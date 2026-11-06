@@ -1,0 +1,54 @@
+{
+  "III.28": {
+    "subtype": "theorem",
+    "args": [
+      ":g:`( A B C ) <g1:( A B C )>`",
+      ":g:`( D E F ) <g1:( D E F )>`",
+      ":g:`/ A B / <g1:/ A B />`",
+      ":g:`/ D E / <g1:/ D E />`"
+    ],
+    "returns": [],
+    "given": ":g:`( A B C ) <g1:( A B C )>` :eq:`= <g1:( A B C ) = g1:( D E F )>` :g:`( D E F ) <g1:( D E F )>`, :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ D E />` :g:`/ D E / <g1:/ D E />`",
+    "contract": ":g:`( A C B ) <g1:( A C B )>` :eq:`= <g1:( A C B ) = g1:( D F E )>` :g:`( D F E ) <g1:( D F E )>`, :g:`( A G B ) <g1:( A G B )>` :eq:`= <g1:( A G B ) = g1:( D H E )>` :g:`( D H E ) <g1:( D H E )>`",
+    "steps": [
+      [
+        "given",
+        [
+          "III.def.1",
+          "I.def.4"
+        ],
+        ":g:`( A B C ) <g1:( A B C )>` :eq:`= <g1:( A B C ) = g1:( D E F )>` :g:`( D E F ) <g1:( D E F )>`, :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ D E />` :g:`/ D E / <g1:/ D E />` cutting off greater arcs :g:`( A C B ) <g1:( A C B )>`, :g:`( D F E ) <g1:( D F E )>` and lesser arcs :g:`( A G B ) <g1:( A G B )>`, :g:`( D H E ) <g1:( D H E )>`"
+      ],
+      [
+        "construct",
+        [
+          "III.1",
+          "I.post.1"
+        ],
+        "@fn(III.1)(:g:`( A B C ) <g1:( A B C )>`) → :g:`K <g1:K>`, @fn(III.1)(:g:`( D E F ) <g1:( D E F )>`) → :g:`L <g1:L>`, @fn(I.post.1)(:g:`A <g1:A>`, :g:`K <g1:K>`, :g:`B <g1:B>`) → :g:`/ A K / <g1:/ A K />`, :g:`/ K B / <g1:/ K B />`, @fn(I.post.1)(:g:`D <g1:D>`, :g:`L <g1:L>`, :g:`E <g1:E>`) → :g:`/ D L / <g1:/ D L />`, :g:`/ L E / <g1:/ L E />`"
+      ],
+      [
+        "assert",
+        [
+          "III.def.1",
+          "I.8"
+        ],
+        ":g:`/ A K / <g1:/ A K />` :eq:`= <g1:/ A K / = g1:/ K B / = g1:/ D L / = g1:/ L E />` :g:`/ K B / <g1:/ K B />` :eq:`= <g1:/ A K / = g1:/ K B / = g1:/ D L / = g1:/ L E />` :g:`/ D L / <g1:/ D L />` :eq:`= <g1:/ A K / = g1:/ K B / = g1:/ D L / = g1:/ L E />` :g:`/ L E / <g1:/ L E />`, :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ D E />` :g:`/ D E / <g1:/ D E />` → :g:`< A K B ) <g1:< A K B )>` :eq:`= <g1:< A K B ) = g1:< D L E )>` :g:`< D L E ) <g1:< D L E )>`"
+      ],
+      [
+        "assert",
+        [
+          "III.26"
+        ],
+        ":g:`< A K B ) <g1:< A K B )>` :eq:`= <g1:< A K B ) = g1:< D L E )>` :g:`< D L E ) <g1:< D L E )>` → :g:`( A G B ) <g1:( A G B )>` :eq:`= <g1:( A G B ) = g1:( D H E )>` :g:`( D H E ) <g1:( D H E )>`"
+      ],
+      [
+        "conclude",
+        [
+          "I.cn.3"
+        ],
+        ":g:`( A B C ) <g1:( A B C )>` :eq:`= <g1:( A B C ) = g1:( D E F )>` :g:`( D E F ) <g1:( D E F )>`, :g:`( A G B ) <g1:( A G B )>` :eq:`= <g1:( A G B ) = g1:( D H E )>` :g:`( D H E ) <g1:( D H E )>` → :g:`( A C B ) <g1:( A C B )>` :eq:`= <g1:( A C B ) = g1:( D F E )>` :g:`( D F E ) <g1:( D F E )>`"
+      ]
+    ]
+  }
+}

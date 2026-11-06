@@ -1,0 +1,52 @@
+{
+  "III.30": {
+    "subtype": "problem",
+    "args": [
+      ":g:`( A D B ) <g1:( A D B )>`"
+    ],
+    "returns": [
+      ":g:`D <g1:D>`"
+    ],
+    "given": ":g:`( A D B ) <g1:( A D B )>`",
+    "contract": ":g:`D <g1:D>` ∈ :g:`( A D B ) <g1:( A D B )>`, :g:`( A D ) <g1:( A D )>` :eq:`= <g1:( A D ) = g1:( D B )>` :g:`( D B ) <g1:( D B )>`",
+    "steps": [
+      [
+        "given",
+        [],
+        ":g:`( A D B ) <g1:( A D B )>`"
+      ],
+      [
+        "construct",
+        [
+          "I.post.1",
+          "I.10"
+        ],
+        "@fn(I.post.1)(:g:`A <g1:A>`, :g:`B <g1:B>`) → :g:`/ A B / <g1:/ A B />`, @fn(I.10)(:g:`/ A B / <g1:/ A B />`) → :g:`C <g1:C>` (:g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ C B />` :g:`/ C B / <g1:/ C B />`)"
+      ],
+      [
+        "construct",
+        [
+          "I.11",
+          "I.post.1"
+        ],
+        "@fn(I.11)(:g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`) → :g:`/ C D / <g1:/ C D />` ⊥ :g:`/ A B / <g1:/ A B />`, @fn(I.post.1)(:g:`A <g1:A>`, :g:`D <g1:D>`, :g:`B <g1:B>`) → :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />`"
+      ],
+      [
+        "assert",
+        [
+          "I.def.10",
+          "I.4"
+        ],
+        ":g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ C B />` :g:`/ C B / <g1:/ C B />`, :g:`/ C D / <g1:/ C D />` common, :g:`< A C D ) <g1:< A C D )>` :eq:`= <g1:< A C D ) = g1:< B C D )>` :g:`< B C D ) <g1:< B C D )>` → :g:`/ A D / <g1:/ A D />` :eq:`= <g1:/ A D / = g1:/ D B />` :g:`/ D B / <g1:/ D B />`"
+      ],
+      [
+        "conclude",
+        [
+          "I.def.18",
+          "III.28"
+        ],
+        ":g:`/ A D / <g1:/ A D />` :eq:`= <g1:/ A D / = g1:/ D B />` :g:`/ D B / <g1:/ D B />`, :g:`( A D ) <g1:( A D )>`, :g:`( D B ) <g1:( D B )>` < semicircle → :g:`( A D ) <g1:( A D )>` :eq:`= <g1:( A D ) = g1:( D B )>` :g:`( D B ) <g1:( D B )>`"
+      ]
+    ]
+  }
+}

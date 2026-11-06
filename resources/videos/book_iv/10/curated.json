@@ -1,0 +1,72 @@
+{
+  "IV.10": {
+    "subtype": "problem",
+    "args": [
+      ":g:`/ A B / <g1:/ A B />`"
+    ],
+    "returns": [
+      ":g:`< A B D > <g1:< A B D >>`"
+    ],
+    "given": ":g:`/ A B / <g1:/ A B />` is any :term:`segment <G.4>`",
+    "contract": ":g:`< A B D > <g1:< A B D >>` is an :term:`isosceles triangle <G.13>` (:g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ A D />` :g:`/ A D / <g1:/ A D />`) with :g:`< B D A ) <g1:< B D A )>` :eq:`= <g1:< B D A ) = g1:< C B D )>` :g:`< D B A ) <g1:< C B D )>` = 2 :g:`< D A B ) <g1:< D A C )>`",
+    "steps": [
+      [
+        "given",
+        [
+          "I.def.20"
+        ],
+        "Let any segment :g:`/ A B / <g1:/ A B />` be set out"
+      ],
+      [
+        "construct",
+        [
+          "II.11",
+          "I.post.3",
+          "IV.1"
+        ],
+        "@fn(II.11)(:g:`/ A B / <g1:/ A B />`) → :g:`C <g1:C>` (:g:`< A B , B C >` = :g:`< C A >`), @fn(I.post.3)(:g:`A <g1:A>`, :g:`B <g1:B>`) → :g:`( B D E ) <g1:( B D E )>`, @fn(IV.1)(:g:`( B D E ) <g1:( B D E )>`, :g:`/ A C / <g1:/ A C />`) → :g:`/ B D / <g1:/ B D />` :eq:`= <g1:/ B D / = g1:/ A C />` :g:`/ A C / <g1:/ A C />`"
+      ],
+      [
+        "construct",
+        [
+          "I.post.1",
+          "IV.5"
+        ],
+        "@fn(I.post.1)(:g:`A <g1:A>`, :g:`D <g1:D>`) → :g:`/ A D / <g1:/ A D />`, @fn(I.post.1)(:g:`D <g1:D>`, :g:`C <g1:C>`) → :g:`/ D C / <g1:/ D C />`, @fn(IV.5)(:g:`< A C D > <g1:< A C D >>`) → :g:`( A C D ) <g1:( A C D )>`"
+      ],
+      [
+        "assert",
+        [
+          "III.37",
+          "III.32"
+        ],
+        ":g:`< A B , B C >` = :g:`< A C >` and :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ B D />` :g:`/ B D / <g1:/ B D />` → :g:`< A B , B C >` = :g:`< B D >` → :g:`/ B D / <g1:/ B D />` touches :g:`( A C D ) <g1:( A C D )>` → :g:`< B D C ) <g1:< B D C )>` :eq:`= <g1:< B D C ) = g1:< D A C )>` :g:`< D A C ) <g1:< D A C )>`"
+      ],
+      [
+        "assert",
+        [
+          "I.cn.2",
+          "I.32",
+          "I.5"
+        ],
+        "Add :g:`< C D A ) <g1:< C D A )>` → :g:`< B D A ) <g1:< B D A )>` = :g:`< C D A ) <g1:< C D A )>` + :g:`< D A C ) <g1:< D A C )>` = :g:`< B C D ) <g1:< B C D )>`; since :g:`/ A D / <g1:/ A D />` :eq:`= <g1:/ A D / = g1:/ A B />` :g:`/ A B / <g1:/ A B />`, :g:`< B D A ) <g1:< B D A )>` :eq:`= <g1:< B D A ) = g1:< C B D ) = g1:< B C D )>` :g:`< D B A ) <g1:< C B D )>` = :g:`< B C D ) <g1:< B C D )>`"
+      ],
+      [
+        "assert",
+        [
+          "I.6",
+          "I.5",
+          "I.32"
+        ],
+        ":g:`< D B C ) <g1:< C B D )>` :eq:`= <g1:< C B D ) = g1:< B C D )>` :g:`< B C D ) <g1:< B C D )>` → :g:`/ B D / <g1:/ B D />` :eq:`= <g1:/ B D / = g1:/ C D / = g1:/ A C />` :g:`/ D C / <g1:/ C D />` = :g:`/ C A / <g1:/ A C />` → :g:`< C D A ) <g1:< C D A )>` :eq:`= <g1:< C D A ) = g1:< D A C )>` :g:`< D A C ) <g1:< D A C )>` → :g:`< B C D ) <g1:< B C D )>` = 2 :g:`< D A C ) <g1:< D A C )>`"
+      ],
+      [
+        "conclude",
+        [
+          "I.def.20"
+        ],
+        "In isosceles triangle :g:`< A B D > <g1:< A B D >>` (:g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ A D />` :g:`/ A D / <g1:/ A D />`), each base angle :g:`< B D A ) <g1:< B D A )>` :eq:`= <g1:< B D A ) = g1:< C B D )>` :g:`< D B A ) <g1:< C B D )>` is double vertex angle :g:`< D A B ) <g1:< D A C )>`"
+      ]
+    ]
+  }
+}

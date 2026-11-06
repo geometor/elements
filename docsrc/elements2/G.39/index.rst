@@ -10,8 +10,9 @@
 :categories: theorem, proof, plane-geometry
 :category: theorem, proof, plane-geometry
 :tags: book-i, point, segment, angle, straight-line, plane-angle, right-angle, plane, equality, reductio-ad-absurdum
-:dependencies: G.1, G.2, G.4, G.16, G.19, G.22, G.33, G.37, G.38
+:dependencies: G.1, G.2, G.4, G.16, G.18, G.19, G.22, G.26, G.33, G.37, G.38
 :excerpt: If two segments at a point on a line on opposite sides make adjacent angles summing to two right angles, the two segments are collinear.
+:youtube_id: XIN3I267WUA
 
 .. _G.39:
 .. _I.14:
@@ -27,55 +28,40 @@ G.39 supplementary adjacent angles form a line
 
 .. signature:: theorem
 
-   | :fn:`supplementary_angles_collinear <G.39>`\ ()
-   | **prove** :g:`/ B D / <g1:/ B D />` is in a segment with :g:`/ C B / <g1:/ C B />`
+   | :fn:`supplementary_angles_collinear <G.39>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ B D / <g1:/ B D />`)
+   | **given** :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ B D / <g1:/ B D />` (:g:`< A B C ) <g1:< A B C )>` + :g:`< A B D ) <g1:< A B D )>` = 2∟)
+   | **prove** :g:`/ C B / <g1:/ C B />`, :g:`/ B D / <g1:/ B D />` ∈ :g:`[ C D ] <g1:[ C D ]>`
 
 .. picture:: g1.svg
    :alt: Proposition 14 figure
 
-.. step:: assert
+.. step:: given
 
-   With any segment :g:`/ A B / <g1:/ A B />`, and at :g:`B <g1:B>` on it, let :g:`/ B C / <g1:/ B C />`, :g:`/ B D / <g1:/ B D />` not lying on the same side make the adjacent angles :g:`< A B C ) <g1:< A B C )>`, :g:`< A B D ) <g1:< A B D )>` equal to two right angles
-
-.. step:: assert
-
-   If :g:`/ B D / <g1:/ B D />` is not in a segment with :g:`/ B C / <g1:/ B C />`, let :g:`/ B E / <g1:/ B E />` be in a segment with :g:`/ C B / <g1:/ C B />`
-
-.. step:: assert ∵ adjacent_angles_supplementary <G.37>
-
-   :g:`/ A B / <g1:/ A B />` stands on :g:`/ C B E / <g1:/ C B E />` → :g:`< A B C ) <g1:< A B C )>`, :g:`< A B E ) <g1:< A B E )>` are equal to two right angles
-
-.. step:: assert
-
-   :g:`< A B C ) <g1:< A B C )>`, :g:`< A B D ) <g1:< A B D )>` are also equal to two right angles
-
-.. step:: assert ∵ right_angles_equal, equal_transitive <G.38, G.16>
-
-   :g:`< C B A ) <g1:< C B A )>`, :g:`< A B E ) <g1:< A B E )>` are equal to :g:`< C B A ) <g1:< C B A )>`, :g:`< A B D ) <g1:< A B D )>`
+   :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ B D / <g1:/ B D />` (:g:`< A B C ) <g1:< A B C )>` + :g:`< A B D ) <g1:< A B D )>` = 2∟)
 
 .. step:: construct
 
-   Let :g:`< C B A ) <g1:< C B A )>` be subtracted from each;
+   ? :g:`/ B D / <g1:/ B D />` ∉ :g:`[ C B ] <g1:[ C B ]>` → :fn:`extend <G.18>`\ (:g:`/ C B / <g1:/ C B />`) → :g:`/ B E / <g1:/ B E />` ∈ :g:`[ C B ] <g1:[ C B ]>`
+
+.. step:: assert ∵ adjacent_angles_supplementary <G.37>
+
+   :g:`/ A B / <g1:/ A B />` on :g:`/ C B E / <g1:/ C B E />` → :g:`< A B C ) <g1:< A B C )>` + :g:`< A B E ) <g1:< A B E )>` = 2∟
+
+.. step:: assert ∵ right_angles_equal, equal_transitive <G.38, G.16>
+
+   :g:`< C B A ) <g1:< C B A )>` + :g:`< A B E ) <g1:< A B E )>` :eq:`= <g1:< A B E ) = g1:< A B D )>` :g:`< C B A ) <g1:< C B A )>` + :g:`< A B D ) <g1:< A B D )>`
 
 .. step:: assert ∵ subtract_equals <G.19>
 
-   :g:`< A B E ) <g1:< A B E )>` :eq:`= <g1:< A B E ) = g1:< A B D )>` :g:`< A B D ) <g1:< A B D )>`
+   (:g:`< C B A ) <g1:< C B A )>` + :g:`< A B E ) <g1:< A B E )>`) − :g:`< C B A ) <g1:< C B A )>` = (:g:`< C B A ) <g1:< C B A )>` + :g:`< A B D ) <g1:< A B D )>`) − :g:`< C B A ) <g1:< C B A )>` → :g:`< A B E ) <g1:< A B E )>` :eq:`= <g1:< A B E ) = g1:< A B D )>` :g:`< A B D ) <g1:< A B D )>`
 
-.. step:: assert
+.. step:: assert ∵ whole_greater_than_part <G.26>
 
-   < > ⇒⇐
+   :g:`< A B E ) <g1:< A B E )>` < :g:`< A B D ) <g1:< A B D )>` ∧ :g:`< A B E ) <g1:< A B E )>` :eq:`= <g1:< A B E ) = g1:< A B D )>` :g:`< A B D ) <g1:< A B D )>` ⇒⇐ → :g:`/ B E / <g1:/ B E />` ∉ :g:`[ C B ] <g1:[ C B ]>`
 
-.. step:: assert
+.. step:: conclude ∵ extend <G.18>
 
-   :g:`/ B E / <g1:/ B E />` is not in a segment with :g:`/ C B / <g1:/ C B />`
-
-.. step:: assert
-
-   Similarly we can prove that neither is any other segment except :g:`/ B D / <g1:/ B D />`
-
-.. step:: conclude
-
-   :g:`/ C B / <g1:/ C B />` is in a segment with :g:`/ B D / <g1:/ B D />`
+   :g:`/ C B / <g1:/ C B />`, :g:`/ B D / <g1:/ B D />` ∈ :g:`[ C D ] <g1:[ C D ]>`
 
 Dependency Graph
 ----------------
@@ -216,6 +202,7 @@ Dependency Graph
      "G.34" -> "G.17";
      "G.20" -> "G.18";
      "G.25" -> "G.18";
+     "G.39" -> "G.18";
      "G.20" -> "G.19";
      "G.25" -> "G.19";
      "G.39" -> "G.19";
@@ -235,6 +222,7 @@ Dependency Graph
      "G.25" -> "G.24";
      "G.28" -> "G.25";
      "G.28" -> "G.26";
+     "G.39" -> "G.26";
      "G.29" -> "G.28";
      "G.34" -> "G.29";
      "G.34" -> "G.33";
@@ -255,5 +243,6 @@ Required for
 .. toctree::
    :hidden:
 
+   video
    code
    heath

@@ -1,0 +1,53 @@
+WEBVTT
+
+1
+00:00:00.420 --> 00:00:03.054
+Book Three, Proposition Twenty-One.
+
+2
+00:00:03.054 --> 00:00:07.946
+In a circle, angles in the same segment are equal to one another.
+
+3
+00:00:07.946 --> 00:00:15.096
+Let A B C D be a circle, and let angles B A D and B E D lie in the same circle segment B A E D.
+
+4
+00:00:15.096 --> 00:00:19.010
+We are to prove that angle B A D equals angle B E D.
+
+5
+00:00:19.430 --> 00:00:27.560
+Take the center F of circle A B C D by Three One, and join the radii B F and F D by Postulate One.
+
+6
+00:00:27.980 --> 00:00:40.950
+Because angle B F D is at the center and angle B A D is at the circumference, and both stand on the same base arc B C D, by Three Twenty angle B F D is double angle B A D.
+
+7
+00:00:40.950 --> 00:00:45.956
+For the exact same reason, angle B F D is also double angle B E D.
+
+8
+00:00:45.956 --> 00:00:55.740
+Since both inscribed angles are halves of the same central angle B F D, angle B A D equals angle B E D, as was required to prove.
+
+9
+00:00:56.160 --> 00:01:12.122
+As Heath notes, Euclid's direct appeal to Three Twenty assumes a segment greater than a semicircle so the central angle B F D is less than two right angles; Robert Simson extended the proof to all segments by drawing diameter A F C to split the angle into two major segments.
+
+10
+00:01:12.122 --> 00:01:20.945
+Its converse establishes the fundamental test for concyclic points: any vertices on the same side of a base that subtend equal angles lie on one circle.
+
+11
+00:01:20.945 --> 00:01:32.960
+In the GEOMETOR G-Index, node G one hundred twenty-four synthesizes six direct rules across fifty ancestor nodes, turning the central-angle ratio of Three Twenty into a direct invariant of the circumference.
+
+12
+00:01:33.380 --> 00:01:47.581
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Twenty-One in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+13
+00:01:47.581 --> 00:01:54.460
+Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

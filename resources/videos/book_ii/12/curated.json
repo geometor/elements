@@ -1,0 +1,58 @@
+{
+  "II.12": {
+    "subtype": "theorem",
+    "args": [
+      ":g:`< A B C > <g1:< A B C >>`",
+      ":g:`/ B D / <g1:/ B D />`"
+    ],
+    "returns": [],
+    "given": ":g:`< A B C > <g1:< A B C >>` (:g:`< B A C ) <g1:< B A C )>` > ∟), :g:`/ B D / <g1:/ B D />` ⊥ :g:`[ C A ] <g1:[ C A ]>`",
+    "contract": ":fn:`square_on_segment <G.75>`\\ (:g:`/ B C / <g1:/ B C />`) = :fn:`square_on_segment <G.75>`\\ (:g:`/ B A / <g1:/ B A />`) + :fn:`square_on_segment <G.75>`\\ (:g:`/ A C / <g1:/ A C />`) + 2 :fn:`contained_rectangle <G.81>`\\ (:g:`/ C A / <g1:/ C A />`, :g:`/ A D / <g1:/ A D />`)",
+    "steps": [
+      [
+        "given",
+        [
+          "I.def.11",
+          "I.def.21"
+        ],
+        ":g:`< A B C > <g1:< A B C >>` (:g:`< B A C ) <g1:< B A C )>` > ∟)"
+      ],
+      [
+        "construct",
+        [
+          "I.post.2",
+          "I.12"
+        ],
+        "@fn(I.post.2)(:g:`/ C A / <g1:/ C A />`) → :g:`[ C A ] <g1:[ C A ]>`, @fn(I.12)(:g:`[ C A ] <g1:[ C A ]>`, :g:`B <g1:B>`) → :g:`/ B D / <g1:/ B D />` ⊥ :g:`[ C A ] <g1:[ C A ]>` (:g:`< C D B ) <g1:< C D B )>` = ∟)"
+      ],
+      [
+        "assert",
+        [
+          "II.4"
+        ],
+        ":g:`/ C D / <g1:/ C D />` = :g:`/ C A / <g1:/ C A />` + :g:`/ A D / <g1:/ A D />` → @fn(I.46)(:g:`/ C D / <g1:/ C D />`) = @fn(I.46)(:g:`/ C A / <g1:/ C A />`) + @fn(I.46)(:g:`/ A D / <g1:/ A D />`) + 2 @fn(II.def.1)(:g:`/ C A / <g1:/ C A />`, :g:`/ A D / <g1:/ A D />`)"
+      ],
+      [
+        "assert",
+        [
+          "I.cn.2"
+        ],
+        "@fn(I.46)(:g:`/ C D / <g1:/ C D />`) + @fn(I.46)(:g:`/ D B / <g1:/ D B />`) = @fn(I.46)(:g:`/ C A / <g1:/ C A />`) + @fn(I.46)(:g:`/ A D / <g1:/ A D />`) + @fn(I.46)(:g:`/ D B / <g1:/ D B />`) + 2 @fn(II.def.1)(:g:`/ C A / <g1:/ C A />`, :g:`/ A D / <g1:/ A D />`)"
+      ],
+      [
+        "assert",
+        [
+          "I.47"
+        ],
+        ":g:`< C D B ) <g1:< C D B )>` = ∟ → @fn(I.46)(:g:`/ C B / <g1:/ C B />`) = @fn(I.46)(:g:`/ C D / <g1:/ C D />`) + @fn(I.46)(:g:`/ D B / <g1:/ D B />`), @fn(I.46)(:g:`/ A B / <g1:/ A B />`) = @fn(I.46)(:g:`/ A D / <g1:/ A D />`) + @fn(I.46)(:g:`/ D B / <g1:/ D B />`)"
+      ],
+      [
+        "conclude",
+        [
+          "I.cn.1"
+        ],
+        "@fn(I.46)(:g:`/ B C / <g1:/ B C />`) = @fn(I.46)(:g:`/ B A / <g1:/ B A />`) + @fn(I.46)(:g:`/ A C / <g1:/ A C />`) + 2 @fn(II.def.1)(:g:`/ C A / <g1:/ C A />`, :g:`/ A D / <g1:/ A D />`)"
+      ]
+    ]
+  }
+}

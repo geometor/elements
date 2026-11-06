@@ -1,0 +1,19 @@
+[bell:proposition]
+[style: brisk, clear, architectural voice; steady studio cadence]
+Book Two, Proposition Four. If a segment be cut at random, the square on the whole is equal to the squares on the segments and twice the rectangle contained by the segments. <pause> Let the segment A B be cut at random at C.
+
+[bell:construction]
+[style: methodical, precise constructive cadence]
+On A B, describe the square A D E B by One Forty-Six, and join the diagonal B D. <pause> Through C, draw C F parallel to A D or B E by One Thirty-One, meeting B D at G; and through G, draw H K parallel to A B or D E.
+
+[bell:insight]
+[style: luminous, deductive geometric clarity]
+Because C F is parallel to A D, the exterior angle C G B equals the interior angle A D B by One Twenty-Nine. And since A B equals A D, angle A D B equals angle A B D by One Five. Therefore angle C G B equals angle G B C, so side B C equals C G by One Six, and by One Thirty-Four all four sides of C G K B are equal. <pause> Moreover, since C G is parallel to B K and angle K B C is right, all four angles of C G K B are right angles. Thus C G K B is the square on B C, and for the same reason H F is the square on H G, which equals A C. <pause> Now the complements A G and G E are equal, and since C G equals B C, each is the rectangle contained by A C and B C, so together they equal twice that rectangle. <pause> Adding the two squares H F and C K, the four areas compose the whole square A D E B. Therefore, the square on A B equals the squares on A C and B C plus twice the rectangle contained by A C and B C. Which was to be proved.
+
+[bell:system]
+[style: reflective, scholarly, architectural synthesis]
+Proposition Two Four is the geometric archetype of the binomial square: the square of a plus b equals a squared plus b squared plus two a b. Rather than multiplying symbols, Euclid dissects the square along its diagonal into two squares about the diameter and two equal rectangular complements. <pause> In the GEOMETOR G-Index, node G eighty-five unites eleven prerequisites across forty-eight ancestor nodes—combining isosceles triangle symmetry, parallel transversals, and parallelogram complements into a cornerstone of Book Ten's theory of irrationals.
+
+[bell:resolve]
+[style: warm, inviting, resonant studio close]
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Two Four in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

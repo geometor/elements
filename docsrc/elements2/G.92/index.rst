@@ -2,7 +2,7 @@
 :number: 92
 :canonical_id: G.92
 :original_id: II.10
-:title: G.92 sum of squares bisected extended
+:title: G.92 sum of squares on bisected and extended segment
 :volume: I
 :book: II
 :type: prop
@@ -10,200 +10,53 @@
 :categories: theorem, proof, plane-geometry, geometric-algebra
 :category: theorem, proof, plane-geometry, geometric-algebra
 :tags: book-ii, point, segment, angle, straight-line, square, right-angle, parallel-straight-lines, plane-angle, bisect, equality
-:dependencies: G.2, G.4, G.14, G.16, G.21, G.22, G.25, G.27, G.33, G.34, G.40, G.52, G.55, G.56, G.58, G.59, G.62, G.63, G.79
-:excerpt: If a segment be bisected, and a segment be added to it in a segment, the square on the whole with the added segment and the square on the added segment both together are double of the square on the half and of the square described on the segment made up of the half and the added segment as on one segment.
+:dependencies: G.2, G.4, G.14, G.16, G.21, G.25, G.27, G.34, G.40, G.55, G.56, G.58, G.59, G.62, G.63, G.75, G.79
+:excerpt: If a segment is bisected and a segment is added to it in a line, the sum of the squares on the whole with the added segment and on the added segment is double the sum of the square on the half and the square on the half with the added segment.
 
 .. _G.92:
 .. _II.10:
 
-G.92 sum of squares bisected extended
-=====================================
+G.92 sum of squares on bisected and extended segment
+====================================================
 
 .. rubric:: `II.10 <https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/10/>`_
 
 .. enunciation::
 
-   If a :term:`segment <G.4>` be bisected, and a segment be added to it in a segment, the :term:`square <G.63>` on the whole with the added segment and the square on the added segment both together are double of the square on the half and of the square described on the segment made up of the half and the added segment as on one segment.
+   If a :term:`segment <G.4>` is bisected and a segment is added to it in a :term:`line <G.2>`, the sum of the :term:`squares <G.63>` on the whole with the added segment and on the added segment is double the sum of the square on the half and the square on the half with the added segment.
 
 .. signature:: theorem
 
-   | :fn:`sum_of_squares_bisected_extended <G.92>`\ ()
-   | **prove** the squares on :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` are double of the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C D / <g1:/ C D />`
+   | :fn:`sum_of_squares_bisected_extended <G.92>`\ (:g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`, :g:`/ B D / <g1:/ B D />`)
+   | **given** :g:`/ A B / <g1:/ A B />` (:g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ C B />` :g:`/ C B / <g1:/ C B />`), :g:`/ B D / <g1:/ B D />`
+   | **prove** :fn:`square_on_segment <G.75>`\ (:g:`/ A D / <g1:/ A D />`) + :fn:`square_on_segment <G.75>`\ (:g:`/ D B / <g1:/ D B />`) = 2 · (:fn:`square_on_segment <G.75>`\ (:g:`/ A C / <g1:/ A C />`) + :fn:`square_on_segment <G.75>`\ (:g:`/ C D / <g1:/ C D />`))
 
 .. picture:: g1.svg
    :alt: 0409.g1
 
-.. step:: construct
+.. step:: given ∵ segment_def <G.4>
 
-   Let a segment :g:`/ A B / <g1:/ A B />` be :eq:`bisected <g1:/ A C / = g1:/ C B />` at :g:`C <g1:C>`, and let a segment :g:`/ B D / <g1:/ B D />` be added to it in a segment
+   :g:`/ A B / <g1:/ A B />` (:g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ C B />` :g:`/ C B / <g1:/ C B />`), :g:`/ B D / <g1:/ B D />` (:g:`/ A D / <g1:/ A D />` = :g:`/ A B / <g1:/ A B />` + :g:`/ B D / <g1:/ B D />`)
 
-.. step:: construct
+.. step:: construct ∵ perpendicular_at, cut_equal_segment, segment <G.34, G.21, G.14>
 
-   :fn:`perpendicular_at <G.34>`\ (:g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`) → :g:`/ C E / <g1:/ C E />`
+   :fn:`perpendicular_at <G.34>`\ (:g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`) → :g:`/ C E / <g1:/ C E />` ⊥ :g:`/ A B / <g1:/ A B />`, :fn:`cut_equal_segment <G.21>`\ (:g:`/ C E / <g1:/ C E />`, :g:`/ A C / <g1:/ A C />`) → :g:`/ C E / <g1:/ C E />` :eq:`= <g1:/ C E / = g1:/ A C / = g1:/ C B />` :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ C E / = g1:/ A C / = g1:/ C B />` :g:`/ C B / <g1:/ C B />`, :fn:`segment <G.14>`\ (:g:`E <g1:E>`, :g:`A <g1:A>`, :g:`B <g1:B>`) → :g:`/ E A / <g1:/ E A />`, :g:`/ E B / <g1:/ E B />`
 
-.. step:: construct
+.. step:: construct ∵ parallel_line, parallel_transversal_angles, parallel_postulate <G.58, G.56, G.55>
 
-   :fn:`cut_equal_segment <G.21>`: Let it be made :eq:`equal <g1:/ C E / = g1:/ A C / = g1:/ C B />` to either :g:`/ A C / <g1:/ A C />` or :g:`/ C B / <g1:/ C B />`
+   :fn:`parallel_line <G.58>`\ (:g:`E <g1:E>`, :g:`/ A D / <g1:/ A D />`) → :g:`/ E F / <g1:/ E F />` ∥ :g:`/ A D / <g1:/ A D />`, :fn:`parallel_line <G.58>`\ (:g:`D <g1:D>`, :g:`/ C E / <g1:/ C E />`) → :g:`/ F D / <g1:/ F D />` ∥ :g:`/ C E / <g1:/ C E />`, :g:`[ E B ] <g1:[ E B ]>` ∩ :g:`[ F D ] <g1:[ F D ]>` → :g:`G <g1:G>`, :g:`/ A G / <g1:/ A G />`
 
-.. step:: construct
+.. step:: assert ∵ isosceles_base_angles, triangle_angle_sum, vertical_angles_equal, parallel_transversal_angles, parallelogram_properties, equal_angles_isosceles <G.25, G.59, G.40, G.56, G.62, G.27>
 
-   :fn:`segment <G.14>`\ (:g:`E <g1:E>`, :g:`A <g1:A>`) → :g:`/ E A / <g1:/ E A />`, :fn:`segment <G.14>`\ (:g:`E <g1:E>`, :g:`B <g1:B>`) → :g:`/ E B / <g1:/ E B />`
+   :g:`< A E B ) <g1:< A E B )>` is right, :g:`< D G B ) <g1:< D G B )>` :eq:`= <g1:< D G B ) = g1:< D B G )>` :g:`< D B G ) <g1:< D B G )>` → :g:`/ G D / <g1:/ G D />` :eq:`= <g1:/ B D / = g1:/ G D />` :g:`/ B D / <g1:/ B D />`, :g:`< E G F ) <g1:< E G F )>` :eq:`= <g1:< E G F ) = g1:< F E G )>` :g:`< F E G ) <g1:< F E G )>` → :g:`/ G F / <g1:/ G F />` :eq:`= <g1:/ G F / = g1:/ E F />` :g:`/ E F / <g1:/ E F />` :eq:`= <g1:/ E F / = g1:/ C D />` :g:`/ C D / <g1:/ C D />`
 
-.. step:: construct
+.. step:: assert ∵ pythagorean_theorem, parallelogram_properties, equal_transitive <G.79, G.62, G.16>
 
-   :fn:`parallel_line <G.58>`\ (:g:`E <g1:E>`, :g:`/ A D / <g1:/ A D />`) → :g:`/ E F / <g1:/ E F />`
+   :fn:`square_on_segment <G.75>`\ (:g:`/ E A / <g1:/ E A />`) = 2 · :fn:`square_on_segment <G.75>`\ (:g:`/ A C / <g1:/ A C />`), :fn:`square_on_segment <G.75>`\ (:g:`/ E G / <g1:/ E G />`) = 2 · :fn:`square_on_segment <G.75>`\ (:g:`/ E F / <g1:/ E F />`) = 2 · :fn:`square_on_segment <G.75>`\ (:g:`/ C D / <g1:/ C D />`)
 
-.. step:: construct
+.. step:: conclude ∵ pythagorean_theorem, equal_transitive <G.79, G.16>
 
-   :fn:`parallel_line <G.58>`\ (:g:`D <g1:D>`, :g:`/ C E / <g1:/ C E />`) → :g:`/ F D / <g1:/ F D />`
-
-.. step:: assert ∵ parallel_transversal_angles <G.56>
-
-   a segment :g:`/ E F / <g1:/ E F />` falls on the :term:`parallel <G.52>` :term:`lines <G.2>` :g:`/ E C / <g1:/ E C />`, :g:`/ F D / <g1:/ F D />`, :g:`< C E F ) <g1:< C E F )>`, :g:`< E F D ) <g1:< E F D )>` are equal to two :term:`right angles <G.33>`
-
-.. step:: assert
-
-   :g:`< F E B ) <g1:< F E B )>`, :g:`< E F D ) <g1:< E F D )>` are less than two right angles
-
-.. step:: assert ∵ parallel_postulate <G.55>
-
-   Segments produced from :term:`angles <G.22>` less than two right angles meet
-
-.. step:: assert
-
-   :g:`/ E B / <g1:/ E B />`, :g:`/ F D / <g1:/ F D />`, if produced in the direction :g:`B <g1:B>`, :g:`D <g1:D>`, will meet
-
-.. step:: construct
-
-   Let them be produced and meet at :g:`G <g1:G>`
-
-.. step:: construct
-
-   :fn:`segment <G.14>`\ (:g:`A <g1:A>`, :g:`G <g1:G>`) → :g:`/ A G / <g1:/ A G />`
-
-.. step:: assert ∵ isosceles_base_angles <G.25>
-
-   :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ C E />` :g:`/ C E / <g1:/ C E />`, :g:`< E A C ) <g1:< E A C )>` :eq:`= <g1:< E A C ) = g1:< A E C )>` :g:`< A E C ) <g1:< A E C )>`
-
-.. step:: assert
-
-   the angle at :g:`< A C E ) <g1:< A C E )>` is right
-
-.. step:: assert ∵ triangle_angle_sum <G.59>
-
-   each of :g:`< E A C ) <g1:< E A C )>`, :g:`< A E C ) <g1:< A E C )>` is half a right angle
-
-.. step:: assert
-
-   The same reason each of :g:`< C E B ) <g1:< C E B )>`, :g:`< E B C ) <g1:< E B C )>` is also half a right angle
-
-.. step:: assert
-
-   :g:`< A E B ) <g1:< A E B )>` is right
-
-.. step:: assert ∵ vertical_angles_equal <G.40>
-
-   since :g:`< E B C ) <g1:< E B C )>` is half a right angle, :g:`< D B G ) <g1:< D B G )>` is also half a right angle
-
-.. step:: assert ∵ parallel_transversal_angles <G.56>
-
-   :g:`< B D G ) <g1:< B D G )>` is also :eq:`right <g1:< B D G ) = g1:< D C E )>`, for it :eq:`= <g1:< B D G ) = g1:< D C E )>` :g:`< D C E ) <g1:< D C E )>`, they being alternate
-
-.. step:: assert ∵ triangle_angle_sum <G.59>
-
-   :g:`< D G B ) <g1:< D G B )>` is half a right angle
-
-.. step:: assert
-
-   :g:`< D G B ) <g1:< D G B )>` :eq:`= <g1:< D G B ) = g1:< D B G )>` :g:`< D B G ) <g1:< D B G )>`,
-
-.. step:: assert ∵ equal_angles_isosceles <G.27>
-
-   So that :g:`/ B D / <g1:/ B D />` :eq:`= <g1:/ B D / = g1:/ G D />` :g:`/ G D / <g1:/ G D />`
-
-.. step:: assert ∵ parallelogram_properties <G.62>
-
-   :g:`< E G F ) <g1:< E G F )>` is half a right angle, and the angle at :g:`< E F G ) <g1:< E F G )>` is :eq:`right <g1:< E F G ) = g1:< D C E )>`, for it :eq:`= <g1:< E F G ) = g1:< D C E )>` the opposite angle, the angle at :g:`< D C E ) <g1:< D C E )>`
-
-.. step:: assert ∵ triangle_angle_sum <G.59>
-
-   :g:`< F E G ) <g1:< F E G )>` is half a right angle
-
-.. step:: assert
-
-   :g:`< E G F ) <g1:< E G F )>` :eq:`= <g1:< E G F ) = g1:< F E G )>` :g:`< F E G ) <g1:< F E G )>`,
-
-.. step:: assert ∵ equal_angles_isosceles <G.27>
-
-   So that :g:`/ G F / <g1:/ G F />` :eq:`= <g1:/ G F / = g1:/ E F />` :g:`/ E F / <g1:/ E F />`
-
-.. step:: assert
-
-   the square on :g:`/ E C / <g1:/ E C />` :eq:`= <g1:/ E C / = g1:/ C A />` the square on :g:`/ C A / <g1:/ C A />`, the squares on :g:`/ E C / <g1:/ E C />`, :g:`/ C A / <g1:/ C A />` are double of the square on :g:`/ C A / <g1:/ C A />`
-
-.. step:: assert ∵ pythagorean_theorem <G.79>
-
-   The square on :g:`/ E A / <g1:/ E A />` is equal to the squares on :g:`/ E C / <g1:/ E C />`, :g:`/ C A / <g1:/ C A />`
-
-.. step:: assert ∵ equal_transitive <G.16>
-
-   the square on :g:`/ E A / <g1:/ E A />` is double of the square on :g:`/ A C / <g1:/ A C />`
-
-.. step:: assert
-
-   :g:`/ F G / <g1:/ F G />` :eq:`= <g1:/ F G / = g1:/ E F />` :g:`/ E F / <g1:/ E F />`, the square on :g:`/ F G / <g1:/ F G />` :eq:`= <g1:/ F G / = g1:/ F E />` the square on :g:`/ F E / <g1:/ F E />`
-
-.. step:: assert
-
-   the squares on :g:`/ G F / <g1:/ G F />`, :g:`/ F E / <g1:/ F E />` are double of the square on :g:`/ E F / <g1:/ E F />`
-
-.. step:: assert ∵ pythagorean_theorem <G.79>
-
-   The square on :g:`/ E G / <g1:/ E G />` is equal to the squares on :g:`/ G F / <g1:/ G F />`, :g:`/ F E / <g1:/ F E />`
-
-.. step:: assert
-
-   the square on :g:`/ E G / <g1:/ E G />` is double of the square on :g:`/ E F / <g1:/ E F />`
-
-.. step:: assert ∵ parallelogram_properties <G.62>
-
-   :g:`/ E F / <g1:/ E F />` :eq:`= <g1:/ E F / = g1:/ C D />` :g:`/ C D / <g1:/ C D />`
-
-.. step:: assert
-
-   the square on :g:`/ E G / <g1:/ E G />` is double of the square on :g:`/ C D / <g1:/ C D />`
-
-.. step:: assert
-
-   The square on :g:`/ E A / <g1:/ E A />` was also proved double of the square on :g:`/ A C / <g1:/ A C />`
-
-.. step:: assert
-
-   the squares on :g:`/ A E / <g1:/ A E />`, :g:`/ E G / <g1:/ E G />` are double of the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C D / <g1:/ C D />`
-
-.. step:: assert ∵ pythagorean_theorem <G.79>
-
-   The square on :g:`/ A G / <g1:/ A G />` is equal to the squares on :g:`/ A E / <g1:/ A E />`, :g:`/ E G / <g1:/ E G />`
-
-.. step:: assert
-
-   the square on :g:`/ A G / <g1:/ A G />` is double of the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C D / <g1:/ C D />`
-
-.. step:: assert ∵ pythagorean_theorem <G.79>
-
-   The squares on :g:`/ A D / <g1:/ A D />`, :g:`/ D G / <g1:/ D G />` are equal to the square on :g:`/ A G / <g1:/ A G />`
-
-.. step:: assert
-
-   the squares on :g:`/ A D / <g1:/ A D />`, :g:`/ D G / <g1:/ D G />` are double of the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C D / <g1:/ C D />`
-
-.. step:: assert
-
-   :g:`/ D G / <g1:/ D G />` :eq:`= <g1:/ D G / = g1:/ D B />` :g:`/ D B / <g1:/ D B />`
-
-.. step:: conclude
-
-   the squares on :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` are double of the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C D / <g1:/ C D />`
+   :fn:`square_on_segment <G.75>`\ (:g:`/ A D / <g1:/ A D />`) + :fn:`square_on_segment <G.75>`\ (:g:`/ D B / <g1:/ D B />`) = :fn:`square_on_segment <G.75>`\ (:g:`/ A G / <g1:/ A G />`) = 2 · (:fn:`square_on_segment <G.75>`\ (:g:`/ A C / <g1:/ A C />`) + :fn:`square_on_segment <G.75>`\ (:g:`/ C D / <g1:/ C D />`))
 
 Dependency Graph
 ----------------
@@ -278,7 +131,7 @@ Dependency Graph
      "G.77" [label="G.77", tooltip="G.77 (I.def.12): An acute angle is less than a right angle.", fillcolor="#224422", URL="../G.77/index.html", target="_top"];
      "G.78" [label="G.78", tooltip="G.78 (I.def.21): A right-angled triangle has a right angle, an obtuse-angled triangle has an obtuse angle, and an acute-angled triangle has three acute angles.", fillcolor="#224422", URL="../G.78/index.html", target="_top"];
      "G.79" [label="G.79", tooltip="G.79 (I.47): In a right-angled triangle, the square on the hypotenuse equals the sum of the squares on the two legs (Pythagorean Theorem).", fillcolor="#222244", URL="../G.79/index.html", target="_top"];
-     "G.92" [label="G.92", tooltip="G.92 (II.10): If a segment be bisected, and a segment be added to it in a segment, the square on the whole with the added segment and the square on the added segment both together are double of ...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.92" [label="G.92", tooltip="G.92 (II.10): If a segment is bisected and a segment is added to it in a line, the sum of the squares on the whole with the added segment and on the added segment is double the sum of the square...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -432,6 +285,7 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.51" -> "G.14";
      "G.58" -> "G.14";
      "G.70" -> "G.14";
@@ -447,8 +301,13 @@ Dependency Graph
      "G.37" -> "G.16";
      "G.39" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.56" -> "G.16";
+     "G.59" -> "G.16";
      "G.64" -> "G.16";
+     "G.66" -> "G.16";
+     "G.70" -> "G.16";
+     "G.75" -> "G.16";
      "G.92" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
@@ -456,8 +315,10 @@ Dependency Graph
      "G.34" -> "G.17";
      "G.20" -> "G.18";
      "G.25" -> "G.18";
+     "G.39" -> "G.18";
      "G.41" -> "G.18";
      "G.45" -> "G.18";
+     "G.53" -> "G.18";
      "G.58" -> "G.18";
      "G.59" -> "G.18";
      "G.66" -> "G.18";
@@ -475,6 +336,7 @@ Dependency Graph
      "G.43" -> "G.21";
      "G.45" -> "G.21";
      "G.47" -> "G.21";
+     "G.51" -> "G.21";
      "G.75" -> "G.21";
      "G.92" -> "G.21";
      "G.24" -> "G.22";
@@ -509,7 +371,6 @@ Dependency Graph
      "G.77" -> "G.22";
      "G.78" -> "G.22";
      "G.79" -> "G.22";
-     "G.92" -> "G.22";
      "G.24" -> "G.23";
      "G.29" -> "G.23";
      "G.25" -> "G.24";
@@ -521,13 +382,17 @@ Dependency Graph
      "G.64" -> "G.24";
      "G.79" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.92" -> "G.25";
      "G.27" -> "G.26";
      "G.28" -> "G.26";
+     "G.39" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.51" -> "G.26";
      "G.92" -> "G.27";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
@@ -550,12 +415,12 @@ Dependency Graph
      "G.77" -> "G.33";
      "G.78" -> "G.33";
      "G.79" -> "G.33";
-     "G.92" -> "G.33";
      "G.37" -> "G.34";
      "G.75" -> "G.34";
      "G.92" -> "G.34";
      "G.37" -> "G.36";
      "G.56" -> "G.36";
+     "G.59" -> "G.36";
      "G.62" -> "G.36";
      "G.64" -> "G.36";
      "G.79" -> "G.36";
@@ -588,7 +453,6 @@ Dependency Graph
      "G.70" -> "G.52";
      "G.75" -> "G.52";
      "G.79" -> "G.52";
-     "G.92" -> "G.52";
      "G.58" -> "G.53";
      "G.56" -> "G.55";
      "G.92" -> "G.55";
@@ -619,6 +483,7 @@ Dependency Graph
      "G.70" -> "G.66";
      "G.79" -> "G.70";
      "G.79" -> "G.75";
+     "G.92" -> "G.75";
      "G.78" -> "G.76";
      "G.78" -> "G.77";
      "G.79" -> "G.78";

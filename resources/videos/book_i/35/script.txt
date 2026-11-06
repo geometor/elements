@@ -1,0 +1,20 @@
+[bell:proposition]
+[style:brisk]
+Euclid's Elements, Book One, Proposition Thirty-Five. <pause>
+Parallelograms on the same base and in the same parallels are equal in area. <pause>
+Let parallelograms A B C D and E B C F stand on the same base B C and lie between the same parallels A F and B C. <pause>
+We prove that parallelogram A B C D equals parallelogram E B C F.
+
+[bell:construction]
+[style:brisk]
+By Proposition Thirty-Four, opposite sides of a parallelogram are equal, so segment A D equals base B C, and segment E F also equals base B C. <pause>
+By Common Notion One, segment A D equals segment E F. <pause>
+Adding the common segment D E to each, Common Notion Two gives the whole segment A E equal to the whole segment D F.
+
+[bell:insight]
+[style:brisk]
+Again by Proposition Thirty-Four, opposite sides A B and D C are equal. <pause>
+Since segment A F falls on the parallels A B and D C, Proposition Twenty-Nine makes the exterior angle F D C equal to the interior angle E A B. <pause>
+By Proposition Four, side-angle-side congruence, triangle E A B equals triangle F D C. <pause>
+Subtracting the common triangle D G E from each, Common Notion Three leaves trapezium A B G D equal to trapezium E G C F. <pause>
+Adding the common triangle G B C to each, Common Notion Two makes the whole parallelogram A B C D equal to the whole parallelogram E B C F, <pause> as was required to prove.

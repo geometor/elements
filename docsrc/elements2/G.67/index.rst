@@ -10,8 +10,9 @@
 :categories: theorem, proof, plane-geometry
 :category: theorem, proof, plane-geometry
 :tags: book-i, point, segment, line, triangle, quadrilateral, trilateral, parallel-straight-lines, figure, diameter, parallel, equality
-:dependencies: G.9, G.12, G.18, G.52, G.58, G.61, G.62, G.65
+:dependencies: G.9, G.12, G.16, G.18, G.52, G.58, G.61, G.62, G.65
 :excerpt: Triangles on equal bases and in the same parallels are equal in area.
+:youtube_id: 5ISO2PWZG-s
 
 .. _G.67:
 .. _I.38:
@@ -28,63 +29,35 @@ G.67 triangles on equal bases in the same parallels
 .. signature:: theorem
 
    | :fn:`triangles_equal_bases <G.67>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>`, :g:`/ B C / <g1:/ B C />`, :g:`/ E F / <g1:/ E F />`)
-   | **given** :g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>` be triangles on :eq:`= <g1:/ B C / = g1:/ E F />` bases :g:`/ B C / <g1:/ B C />`, :g:`/ E F / <g1:/ E F />` and in the same parallels :g:`/ B F / <g1:/ B F />`, :g:`/ A D / <g1:/ A D />`
-   | **prove** :g:`< A B C > <g1:< A B C >>` is :eq:`equal <g1:< A B C > = g1:< D E F >>` to :g:`< D E F > <g1:< D E F >>`
+   | **given** :g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>` (:g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ B C / = g1:/ E F />` :g:`/ E F / <g1:/ E F />`, :g:`/ A D / <g1:/ A D />` ∥ :g:`/ B F / <g1:/ B F />`)
+   | **prove** :g:`< A B C > <g1:< A B C >>` :eq:`= <g1:< A B C > = g1:< D E F >>` :g:`< D E F > <g1:< D E F >>`
 
 .. picture:: g1.svg
    :alt: Folio 0347 Figure 1 - Proposition 38
 
 .. step:: given
 
-   :g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>` be triangles on :eq:`= <g1:/ B C / = g1:/ E F />` bases :g:`/ B C / <g1:/ B C />`, :g:`/ E F / <g1:/ E F />` and in the same parallels :g:`/ B F / <g1:/ B F />`, :g:`/ A D / <g1:/ A D />`
+   :g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>` (:g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ B C / = g1:/ E F />` :g:`/ E F / <g1:/ E F />`, :g:`/ A D / <g1:/ A D />` ∥ :g:`/ B F / <g1:/ B F />`)
 
 .. step:: construct
 
-   :fn:`extend <G.18>`\ (:g:`[ A D ] <g1:[ A D ]>`) → :g:`G <g1:G>`, :g:`H <g1:H>`
+   :fn:`extend <G.18>`\ (:g:`/ A D / <g1:/ A D />`) → :g:`/ G A / <g1:/ G A />`, :g:`/ D H / <g1:/ D H />`
 
 .. step:: construct
 
-   :fn:`parallel_line <G.58>`\ (:g:`B <g1:B>`, :g:`/ C A / <g1:/ C A />`) → :g:`/ B G / <g1:/ B G />`
-
-.. step:: construct
-
-   :fn:`parallel_line <G.58>`\ (:g:`F <g1:F>`, :g:`/ D E / <g1:/ D E />`) → :g:`/ F H / <g1:/ F H />`
-
-.. step:: assert
-
-   Then each of the :term:`figures <G.9>` :g:`< G B C A > <g1:< G B C A >>`, :g:`< D E F H > <g1:< D E F H >>` is a parallelogram
-
-.. step:: assert
-
-   :g:`< G B C A > <g1:< G B C A >>` is :eq:`equal <g1:< G B C A > = g1:< D E F H >>` to :g:`< D E F H > <g1:< D E F H >>`
+   :fn:`parallel_line <G.58>`\ (:g:`B <g1:B>`, :g:`/ C A / <g1:/ C A />`) → :g:`/ B G / <g1:/ B G />`, :fn:`parallel_line <G.58>`\ (:g:`F <g1:F>`, :g:`/ D E / <g1:/ D E />`) → :g:`/ F H / <g1:/ F H />`
 
 .. step:: assert ∵ parallelograms_equal_bases <G.65>
 
-   For they are on :eq:`= <g1:/ B C / = g1:/ E F />` bases :g:`/ B C / <g1:/ B C />`, :g:`/ E F / <g1:/ E F />` and in the same parallels :g:`/ B F / <g1:/ B F />`, :g:`/ G H / <g1:/ G H />`
-
-.. step:: assert
-
-   Moreover :g:`< A B C > <g1:< A B C >>` is half of the parallelogram :g:`< G B C A > <g1:< G B C A >>`
+   :g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ B C / = g1:/ E F />` :g:`/ E F / <g1:/ E F />`, :g:`/ B F / <g1:/ B F />` ∥ :g:`/ G H / <g1:/ G H />` → :g:`< G B C A > <g1:< G B C A >>` :eq:`= <g1:< G B C A > = g1:< D E F H >>` :g:`< D E F H > <g1:< D E F H >>`
 
 .. step:: assert ∵ parallelogram_properties <G.62>
 
-   For the :term:`diameter <G.61>` :g:`/ A B / <g1:/ A B />` :eq:`bisects <g1:< G A B > = g1:< A B C >>` it
+   :g:`/ A B / <g1:/ A B />` → :g:`< G A B > <g1:< G A B >>` :eq:`= <g1:< G A B > = g1:< A B C >>` :g:`< A B C > <g1:< A B C >>`, :g:`/ D F / <g1:/ D F />` → :g:`< D E F > <g1:< D E F >>` :eq:`= <g1:< D E F > = g1:< D H F >>` :g:`< D H F > <g1:< D H F >>`
 
-.. step:: assert
+.. step:: conclude ∵ equal_transitive <G.16>
 
-   :g:`< F E D > <g1:< F E D >>` is half of the parallelogram :g:`< D E F H > <g1:< D E F H >>`
-
-.. step:: assert ∵ parallelogram_properties <G.62>
-
-   For the diameter :g:`/ D F / <g1:/ D F />` :eq:`bisects <g1:< D E F > = g1:< D H F >>` it
-
-.. step:: assert
-
-   [But the halves of equal things are equal to one another.]
-
-.. step:: conclude
-
-   :g:`< A B C > <g1:< A B C >>` is :eq:`equal <g1:< A B C > = g1:< D E F >>` to :g:`< D E F > <g1:< D E F >>`
+   :g:`< G B C A > <g1:< G B C A >>` :eq:`= <g1:< G B C A > = g1:< D E F H >>` :g:`< D E F H > <g1:< D E F H >>` → :g:`< A B C > <g1:< A B C >>` :eq:`= <g1:< A B C > = g1:< D E F >>` :g:`< D E F > <g1:< D E F >>`
 
 Dependency Graph
 ----------------
@@ -192,7 +165,6 @@ Dependency Graph
      "G.55" -> "G.2";
      "G.56" -> "G.2";
      "G.58" -> "G.2";
-     "G.65" -> "G.2";
      "G.4" -> "G.3";
      "G.6" -> "G.3";
      "G.8" -> "G.3";
@@ -293,6 +265,7 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.51" -> "G.14";
      "G.58" -> "G.14";
      "G.60" -> "G.14";
@@ -306,9 +279,11 @@ Dependency Graph
      "G.21" -> "G.16";
      "G.37" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.56" -> "G.16";
      "G.64" -> "G.16";
      "G.65" -> "G.16";
+     "G.67" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
@@ -317,6 +292,7 @@ Dependency Graph
      "G.25" -> "G.18";
      "G.41" -> "G.18";
      "G.45" -> "G.18";
+     "G.53" -> "G.18";
      "G.58" -> "G.18";
      "G.67" -> "G.18";
      "G.20" -> "G.19";
@@ -331,6 +307,7 @@ Dependency Graph
      "G.43" -> "G.21";
      "G.45" -> "G.21";
      "G.47" -> "G.21";
+     "G.51" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
      "G.28" -> "G.22";
@@ -366,11 +343,14 @@ Dependency Graph
      "G.62" -> "G.24";
      "G.64" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.51" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -438,5 +418,6 @@ Required for
 .. toctree::
    :hidden:
 
+   video
    code
    heath

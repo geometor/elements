@@ -1,0 +1,53 @@
+WEBVTT
+
+1
+00:00:00.420 --> 00:00:03.299
+Book Three, Proposition Twenty-Nine.
+
+2
+00:00:03.299 --> 00:00:08.176
+In equal circles, equal arcs are subtended by equal segments.
+
+3
+00:00:08.176 --> 00:00:18.891
+Let A B C and D E F be equal circles, and in them let equal arcs B G C and E H F be cut off, and let the chords B C and E F be joined.
+
+4
+00:00:18.891 --> 00:00:21.610
+We must prove that B C equals E F.
+
+5
+00:00:22.030 --> 00:00:29.480
+Take the centers K and L of the two circles, and join the radii B K, K C, E L, and L F.
+
+6
+00:00:29.900 --> 00:00:39.322
+Because arc B G C equals arc E H F, the central angle B K C equals the central angle E L F by Three Twenty-Seven.
+
+7
+00:00:39.322 --> 00:00:47.661
+And because the circles A B C and D E F are equal, their radii B K, K C, E L, and L F are all equal.
+
+8
+00:00:47.661 --> 00:01:02.420
+Thus the two sides B K and K C equal the two sides E L and L F, and they contain equal angles; therefore by One Four, the base B C equals the base E F, as was required to prove.
+
+9
+00:01:02.840 --> 00:01:07.468
+Proposition Twenty-Nine completes the quartet begun in Three Twenty-Six.
+
+10
+00:01:07.468 --> 00:01:21.222
+Across these four theorems, Euclid proves that in equal circles—or within the same circle, as Heath emphasizes—equal central angles, equal inscribed angles, equal arcs, and equal chords are all mutually equivalent.
+
+11
+00:01:21.222 --> 00:01:35.040
+In the GEOMETOR G-Index, node G one-thirty-six synthesizes eight direct prerequisites across sixty-one ancestor nodes, serving as the primary bridge from equal arcs to equal polygon sides in Books Four and Thirteen.
+
+12
+00:01:35.460 --> 00:01:49.334
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Twenty-Nine in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+13
+00:01:49.334 --> 00:01:56.700
+Subscribe to at geometor, share your thoughts in the comments, and star the repository at github dot com slash geometor.

@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:00:00.420 --> 00:00:02.349
+Book Three, Proposition Nineteen.
+
+2
+00:00:02.349 --> 00:00:13.164
+If a straight line touch a circle, and from the point of contact a straight line be drawn at right angles to the tangent, the center of the circle will be on the straight line so drawn.
+
+3
+00:00:13.164 --> 00:00:19.945
+Let the straight line D E touch the circle A B C at the point C, and from C let C A be drawn at right angles to D E.
+
+4
+00:00:19.945 --> 00:00:22.810
+We claim that the center of the circle is on A C.
+
+5
+00:00:23.230 --> 00:00:31.560
+For suppose it is not, but, if possible, let a point F outside A C be the center, and let C F be joined.
+
+6
+00:00:31.980 --> 00:00:46.189
+Since the straight line D E touches the circle A B C, and F C has been joined from the supposed center to the point of contact, by Three Eighteen F C is perpendicular to D E; therefore the angle F C E is right.
+
+7
+00:00:46.189 --> 00:00:57.826
+But the angle A C E was also drawn right; therefore by Postulate Four angle F C E equals angle A C E—the part equal to the whole, which by Common Notion Five is impossible.
+
+8
+00:00:57.826 --> 00:01:05.269
+Therefore F is not the center of circle A B C; and similarly neither is any other point except a point on A C.
+
+9
+00:01:05.269 --> 00:01:08.449
+Therefore the center of the circle lies on A C.
+
+10
+00:01:08.449 --> 00:01:10.140
+As was required to prove.
+
+11
+00:01:10.560 --> 00:01:19.486
+Proposition Three Nineteen completes the triad of circular tangency: the normal to a tangent at the point of contact necessarily passes through the circle's center.
+
+12
+00:01:19.486 --> 00:01:32.386
+As Heath notes, combining Three Nineteen with Three Eleven and Three Twelve immediately establishes that two circles touching internally or externally share a common tangent perpendicular to their line of centers at the point of contact.
+
+13
+00:01:32.386 --> 00:01:44.360
+In the GEOMETOR G-Index, node G one hundred twenty-one builds directly on G one hundred twenty across forty-three ancestor nodes, providing the center-locator for tangent constructions in Books Three, Four, and Thirteen.
+
+14
+00:01:44.780 --> 00:01:58.429
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Nineteen in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+15
+00:01:58.429 --> 00:02:05.100
+Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

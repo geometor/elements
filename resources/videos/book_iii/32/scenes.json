@@ -1,0 +1,333 @@
+[
+  {
+    "prop_id": "BOOK III • PROP. 32",
+    "short_title": "alternate segment theorem",
+    "g_id": "G.140",
+    "folio": "Folios 0071–0072 • pp. 65–66",
+    "enunciation": "If a straight line touch a circle, and from the point of contact there be drawn across, in the circle, a straight line cutting the circle, the angles which it makes with the tangent will be equal to the angles in the alternate segments of the circle.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.140/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.140/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/32/",
+    "step_total": 9,
+    "subslides": [
+      {
+        "step_num": 1,
+        "step_kind": "GIVEN",
+        "chapter": "tangent / E F / at B and secant chord / B D /",
+        "symbolic": "tangent / E F / at B, chord / B D / in ( A B C D )",
+        "visible_ids": [
+          "el-circle-ABCD",
+          "el-seg-EF",
+          "el-seg-EB",
+          "el-seg-BF",
+          "el-seg-BD",
+          "el-ang-FBD",
+          "el-ang-EBD",
+          "el-pt-B",
+          "el-pt-D",
+          "el-pt-E",
+          "el-pt-F",
+          "lbl-B",
+          "lbl-D",
+          "lbl-E",
+          "lbl-F"
+        ],
+        "active_ids": [
+          "el-circle-ABCD",
+          "hl-circle-ABCD",
+          "el-seg-EF",
+          "hl-seg-EF",
+          "el-seg-BD",
+          "hl-seg-BD",
+          "el-ang-FBD",
+          "hl-ang-FBD",
+          "el-ang-EBD",
+          "hl-ang-EBD",
+          "el-pt-B",
+          "el-pt-D",
+          "el-pt-E",
+          "el-pt-F",
+          "lbl-B",
+          "lbl-D",
+          "lbl-E",
+          "lbl-F"
+        ],
+        "equal_ids": [],
+        "clause_html": "<div class=\"clause-line\">Let <span class=\"g-tok\">/ E F /</span> touch circle <span class=\"g-tok\">( A B C D )</span> at <span class=\"g-tok\">B</span>,</div><div class=\"clause-line\">and let chord <span class=\"g-tok\">/ B D /</span> be drawn across from <span class=\"g-tok\">B</span>.</div>",
+        "just_id": "G.111 • III.def.2, G.126 • III.def.6",
+        "just_title": "Chord / B D / divides circle ( A B C D ) into two alternate segments ( B A D ) and ( D C B )."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK III • PROP. 32",
+    "short_title": "alternate segment theorem",
+    "g_id": "G.140",
+    "folio": "Folios 0071–0072 • pp. 65–66",
+    "enunciation": "If a straight line touch a circle, and from the point of contact there be drawn across, in the circle, a straight line cutting the circle, the angles which it makes with the tangent will be equal to the angles in the alternate segments of the circle.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.140/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.140/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/32/",
+    "step_total": 9,
+    "subslides": [
+      {
+        "step_num": 2,
+        "step_kind": "CONSTRUCT",
+        "chapter": "draw / B A / ⊥ / E F / and join / A D /, / D C /, / C B /",
+        "symbolic": "/ B A / ⊥ / E F /, join / A D /, / D C /, / C B /",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-seg-BA",
+          "hl-seg-BA",
+          "el-seg-AD",
+          "hl-seg-AD",
+          "el-seg-DC",
+          "hl-seg-DC",
+          "el-seg-CB",
+          "hl-seg-CB",
+          "el-ang-ABF",
+          "hl-ang-ABF",
+          "el-pt-A",
+          "el-pt-C",
+          "lbl-A",
+          "lbl-C"
+        ],
+        "equal_ids": [],
+        "clause_html": "<div class=\"clause-line\"><span class=\"fn-tok\">perpendicular_at</span>(<span class=\"g-tok\">/ E F /</span>, <span class=\"g-tok\">B</span>) → <span class=\"g-tok\">/ B A /</span> ⊥ <span class=\"g-tok\">/ E F /</span></div><div class=\"clause-line\">Take <span class=\"g-tok\">C</span> on arc <span class=\"g-tok\">( B D )</span>; join <span class=\"g-tok\">/ A D /</span>, <span class=\"g-tok\">/ D C /</span>, <span class=\"g-tok\">/ C B /</span></div>",
+        "just_id": "G.34 • I.11, G.14 • I.post.1",
+        "just_title": "Erect perpendicular / B A / to the tangent at B and inscribe angles in both alternate segments."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK III • PROP. 32",
+    "short_title": "alternate segment theorem",
+    "g_id": "G.140",
+    "folio": "Folios 0071–0072 • pp. 65–66",
+    "enunciation": "If a straight line touch a circle, and from the point of contact there be drawn across, in the circle, a straight line cutting the circle, the angles which it makes with the tangent will be equal to the angles in the alternate segments of the circle.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.140/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.140/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/32/",
+    "step_total": 9,
+    "subslides": [
+      {
+        "step_num": 3,
+        "step_kind": "ASSERT",
+        "chapter": "/ B A / is a diameter and < A D B ) is right",
+        "symbolic": "/ B A / is diameter → < A D B ) = ∟",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-tri-ABD",
+          "hl-tri-ABD",
+          "el-seg-BA",
+          "hl-seg-BA",
+          "el-seg-EF",
+          "hl-seg-EF"
+        ],
+        "equal_ids": [
+          "el-ang-ADB",
+          "hl-ang-ADB",
+          "hl-arc-ADB",
+          "el-ang-ABF",
+          "hl-ang-ABF",
+          "hl-arc-ABF"
+        ],
+        "clause_html": "<div class=\"clause-line\"><span class=\"g-tok\">/ B A /</span> ⊥ tangent <span class=\"g-tok\">/ E F /</span> at <span class=\"g-tok\">B</span> → <span class=\"g-tok\">/ B A /</span> passes through the center</div><div class=\"clause-line\">→ Semicircle angle <span class=\"eq-tok\">&lt; A D B ) = ∟</span></div>",
+        "just_id": "G.121 • III.19, G.139 • III.31",
+        "just_title": "The perpendicular to a tangent at the point of contact passes through the center (III.19); the angle in a semicircle is right (III.31)."
+      },
+      {
+        "step_num": 4,
+        "step_kind": "ASSERT",
+        "chapter": "< D B F ) = < B A D ) in the alternate segment",
+        "symbolic": "< B A D ) + < A B D ) = < A B F ) → < D B F ) = < B A D )",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-tri-ABD",
+          "hl-tri-ABD",
+          "el-arc-BAD",
+          "hl-cseg-BAD",
+          "el-ang-ABD",
+          "hl-ang-ABD",
+          "hl-arc-ABD"
+        ],
+        "equal_ids": [
+          "el-ang-FBD",
+          "hl-ang-FBD",
+          "hl-arc-FBD",
+          "el-ang-BAD",
+          "hl-ang-BAD",
+          "hl-arc-BAD"
+        ],
+        "clause_html": "<div class=\"clause-line\"><span class=\"eq-tok\">&lt; B A D ) + &lt; A B D ) = ∟ = &lt; A B F ) = &lt; D B F ) + &lt; A B D )</span></div><div class=\"clause-line\">Subtract <span class=\"g-tok\">&lt; A B D )</span> → <span class=\"eq-tok\">&lt; D B F ) = &lt; B A D )</span></div>",
+        "just_id": "G.59 • I.32, G.19 • I.cn.3",
+        "just_title": "Subtracting the common angle < A B D ) from both right angles leaves < D B F ) equal to < B A D )."
+      },
+      {
+        "step_num": 5,
+        "step_kind": "ASSERT",
+        "chapter": "cyclic quadrilateral < A B C D > opposite angles",
+        "symbolic": "< B A D ) + < B C D ) = 2∟ = < D B F ) + < D B E )",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-quad-ABCD",
+          "hl-quad-ABCD",
+          "el-sec-EBF",
+          "hl-sec-EBF",
+          "el-arc-DCB",
+          "hl-cseg-DCB"
+        ],
+        "equal_ids": [
+          "el-ang-FBD",
+          "hl-ang-FBD",
+          "hl-arc-FBD",
+          "el-ang-BAD",
+          "hl-ang-BAD",
+          "hl-arc-BAD",
+          "el-ang-EBD",
+          "hl-ang-EBD",
+          "hl-arc-EBD",
+          "el-ang-BCD",
+          "hl-ang-BCD",
+          "hl-arc-BCD"
+        ],
+        "clause_html": "<div class=\"clause-line\">In cyclic <span class=\"g-tok\">&lt; A B C D &gt;</span>: <span class=\"eq-tok\">&lt; B A D ) + &lt; B C D ) = 2∟</span></div><div class=\"clause-line\">On line <span class=\"g-tok\">/ E F /</span>: <span class=\"eq-tok\">&lt; D B F ) + &lt; D B E ) = 2∟</span></div>",
+        "just_id": "G.125 • III.22, G.37 • I.13",
+        "just_title": "Opposite angles of a cyclic quadrilateral equal two right angles (III.22), as do adjacent angles on a line (I.13)."
+      },
+      {
+        "step_num": 6,
+        "step_kind": "∴",
+        "is_punchline": true,
+        "chapter": "tangent-chord angles equal alternate segment angles",
+        "symbolic": "∴ < F B D ) = < B A D ), < E B D ) = < D C B )",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-circle-ABCD",
+          "hl-circle-ABCD",
+          "el-seg-EF",
+          "hl-seg-EF",
+          "el-seg-BD",
+          "hl-seg-BD"
+        ],
+        "equal_ids": [
+          "el-ang-FBD",
+          "hl-ang-FBD",
+          "hl-arc-FBD",
+          "el-ang-BAD",
+          "hl-ang-BAD",
+          "hl-arc-BAD",
+          "el-ang-EBD",
+          "hl-ang-EBD",
+          "hl-arc-EBD",
+          "el-ang-BCD",
+          "hl-ang-BCD",
+          "hl-arc-BCD"
+        ],
+        "clause_html": "<div class=\"clause-line\">∴ <span class=\"eq-tok\">&lt; F B D ) = &lt; B A D )</span> in segment <span class=\"g-tok\">( B A D )</span></div><div class=\"clause-line\">and <span class=\"eq-tok\">&lt; E B D ) = &lt; D C B )</span> in segment <span class=\"g-tok\">( D C B )</span></div>",
+        "just_id": "G.19 • I.cn.3",
+        "just_title": "Each angle between chord and tangent equals the angle in the alternate segment of the circle."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK III • PROP. 32",
+    "short_title": "alternate segment theorem",
+    "g_id": "G.140",
+    "folio": "Folios 0071–0072 • pp. 65–66",
+    "enunciation": "If a straight line touch a circle, and from the point of contact there be drawn across, in the circle, a straight line cutting the circle, the angles which it makes with the tangent will be equal to the angles in the alternate segments of the circle.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.140/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.140/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/32/",
+    "step_total": 9,
+    "widescreen_only": true,
+    "subslides": [
+      {
+        "step_num": 7,
+        "step_kind": "COMMENTARY",
+        "widescreen_only": true,
+        "chapter": "converse tangency test & Pappus's tangent circles",
+        "symbolic": "< F B D ) = < B A D ) ⇔ / E F / tangent at B",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-circle-ABCD",
+          "hl-circle-ABCD",
+          "el-seg-EF",
+          "hl-seg-EF",
+          "el-seg-BD",
+          "hl-seg-BD",
+          "el-tri-ABD",
+          "hl-tri-ABD"
+        ],
+        "equal_ids": [
+          "el-ang-FBD",
+          "hl-ang-FBD",
+          "hl-arc-FBD",
+          "el-ang-BAD",
+          "hl-ang-BAD",
+          "hl-arc-BAD",
+          "el-ang-EBD",
+          "hl-ang-EBD",
+          "hl-arc-EBD",
+          "el-ang-BCD",
+          "hl-ang-BCD",
+          "hl-arc-BCD"
+        ],
+        "clause_html": "<div class=\"clause-line\"><strong>Alternate Segment Theorem</strong>: Converse &amp; Tangent Circles</div><div class=\"clause-line\"><span class=\"eq-tok\">&lt; F B D ) = &lt; B A D )</span> and <span class=\"eq-tok\">&lt; E B D ) = &lt; D C B )</span></div><div class=\"clause-line\" style=\"font-size:28px;color:#cbd5e1;\">Clavius proved the converse directly via III.31; Pappus (<em>Collectio</em> IV, VII) used III.32 to show any line through the contact point of two tangent circles cuts off similar segments.</div>",
+        "just_tag": "✦ HEATH COMMENTARY",
+        "just_id": "Heath (1908) • Vol. II, pp. 66–67",
+        "just_title": "Viewing the tangent as the limiting position of a secant as two points coalesce at B makes the theorem intuitive."
+      },
+      {
+        "step_num": 8,
+        "step_kind": "GENEALOGY",
+        "widescreen_only": true,
+        "chapter": "G.140 dependency tree & symbolic model",
+        "symbolic": "G.34, G.59, G.121, G.125, G.139 → G.140",
+        "stage_html": "<div style=\"width:100%;height:100%;display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:36px 8px 8px 8px;align-items:stretch;\"><div style=\"background:rgba(11,14,21,0.92);border:1.5px solid rgba(56,189,248,0.45);border-radius:16px;padding:22px 24px;display:flex;flex-direction:column;justify-content:space-between;\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.12em;color:#38bdf8;\">◈ G-INDEX PREREQUISITES → G.140</div><div style=\"display:flex;flex-direction:column;gap:10px;margin:12px 0;\"><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #5ec27e;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.139 (III.31)</span><span style=\"color:#f4f1ea;\">Thales' semicircle theorem</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.125 (III.22)</span><span style=\"color:#f4f1ea;\">cyclic quadrilateral angles</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.121 (III.19)</span><span style=\"color:#f4f1ea;\">normal to tangent hits center</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.59 (I.32)</span><span style=\"color:#f4f1ea;\">triangle angle sum</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.34 (I.11)</span><span style=\"color:#f4f1ea;\">perpendicular at point</span></div></div><div style=\"background:rgba(232,184,90,0.16);border:1.5px solid #e8b85a;border-radius:10px;padding:11px 16px;text-align:center;font-family:'JetBrains Mono',monospace;font-size:17px;font-weight:700;color:#e8b85a;\">↓ G.140 (III.32) • alternate segment theorem</div></div><div style=\"background:rgba(11,14,21,0.92);border:1.5px solid rgba(232,184,90,0.4);border-radius:16px;padding:22px 24px;display:flex;flex-direction:column;justify-content:space-between;\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.12em;color:#e8b85a;\">⚙ GEOMETOR.MODEL • G.140/g1.py</div><pre style=\"font-family:'JetBrains Mono',monospace;font-size:14.5px;line-height:1.48;color:#e2e8f0;background:rgba(7,9,14,0.85);padding:16px;border-radius:10px;border:1px solid rgba(148,163,184,0.25);overflow:hidden;\">model = Model(&quot;III.32&quot;)\nmodel.construct_circle(O, B)\nmodel.construct_line(E, F)\n\n# Diameter BA perp to tangent EF\nmodel.set_segment(B, A)\nmodel.set_segment(B, D)\n\n# Inscribed triangles &amp; quad\nmodel.set_polygon([A, B, D])\nmodel.set_polygon([A, B, C, D])</pre><div style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">15 direct prerequisites • Required by III.33, III.34, IV.2, IV.10–12</div></div></div>",
+        "clause_html": "<div class=\"clause-line\"><span class=\"coincide-tok\">G.140</span> synthesizes <span class=\"g-tok\">15 direct prerequisites</span></div><div class=\"clause-line\">linking <span class=\"g-tok\">III.19</span>, <span class=\"g-tok\">III.22</span>, and <span class=\"g-tok\">III.31</span> into one theorem</div><div class=\"clause-line\" style=\"font-size:28px;color:#cbd5e1;\">Directly unlocks the circle-segment constructions of III.33–34 and regular polygons in Book IV.</div>",
+        "just_tag": "◈ G-INDEX GENEALOGY",
+        "just_id": "G.140 • 15 Direct Rules",
+        "just_title": "Depends on G.34 (I.11), G.59 (I.32), G.111 (III.def.2), G.121 (III.19), G.125 (III.22), G.126 (III.def.6), and G.139 (III.31)."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK III • PROP. 32",
+    "short_title": "alternate segment theorem",
+    "g_id": "G.140",
+    "folio": "Folios 0071–0072 • pp. 65–66",
+    "enunciation": "If a straight line touch a circle, and from the point of contact there be drawn across, in the circle, a straight line cutting the circle, the angles which it makes with the tangent will be equal to the angles in the alternate segments of the circle.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.140/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.140/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/32/",
+    "step_total": 9,
+    "widescreen_only": true,
+    "subslides": [
+      {
+        "step_num": 9,
+        "step_kind": "PARTICIPATE",
+        "widescreen_only": true,
+        "chapter": "explore the GEOMETOR Elements Codex & participate",
+        "symbolic": "geometor.github.io/elements/elements2/G.140/",
+        "stage_html": "<div style=\"width:100%;height:100%;display:flex;flex-direction:column;justify-content:space-between;padding:42px 16px 12px 16px;gap:20px;\"><div style=\"background:linear-gradient(135deg,rgba(232,184,90,0.16) 0%,rgba(16,20,29,0.95) 100%);border:2px solid rgba(232,184,90,0.55);border-radius:18px;padding:28px 32px;display:flex;flex-direction:column;gap:12px;box-shadow:0 16px 40px rgba(0,0,0,0.6);\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.16em;color:#e8b85a;\">★ INTERACTIVE DIGITAL EDITION</div><div style=\"font-family:Georgia,serif;font-size:38px;font-weight:700;color:#f8f6f0;\">GEOMETOR • Elements Codex</div><div style=\"font-family:'JetBrains Mono',monospace;font-size:22px;color:#5ec27e;font-weight:700;\">https://geometor.github.io/elements/elements2/G.140/</div></div><div style=\"display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;flex:1;\"><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#e8b85a;font-weight:700;\">01 • PSEUDOCODE</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Hover-synced symbolic steps, signatures, and interactive SVG diagrams.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 1 • G.140</span></div><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#38bdf8;font-weight:700;\">02 • PYTHON MODEL</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Executable geometor.model scripts with exact algebraic coordinates.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 2 • g1.py</span></div><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#5ec27e;font-weight:700;\">03 • HEATH (1908)</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Complete classical translation, folio plates, and historical commentary.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 3 • Folios 0071–0072</span></div></div></div>",
+        "clause_html": "<div class=\"clause-line\">Explore the <span class=\"g-tok\">Elements Codex</span> &amp; <span class=\"eq-tok\">G-Index</span></div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Subscribe to <strong>@geometor</strong> for all 465 propositions</div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Share questions &amp; insights in the comments</div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Star &amp; contribute at <strong>github.com/geometor</strong></div>",
+        "just_tag": "★ PARTICIPATE & SUPPORT",
+        "just_id": "github.com/geometor/elements",
+        "just_title": "Open-source symbolic reconstruction of Euclid's Elements — links in the video description."
+      }
+    ]
+  }
+]

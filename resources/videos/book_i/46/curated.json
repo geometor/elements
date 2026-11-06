@@ -1,0 +1,45 @@
+{
+  "I.46": {
+    "subtype": "problem",
+    "args": [
+      ":g:`/ A B / <g1:/ A B />`"
+    ],
+    "returns": [
+      ":g:`< A D E B > <g1:< A D E B >>`"
+    ],
+    "given": ":g:`/ A B / <g1:/ A B />`",
+    "contract": ":g:`< A D E B > <g1:< A D E B >>` (:g:`/ B A / <g1:/ B A />` :eq:`= <g1:/ B A / = g1:/ A D / = g1:/ D E / = g1:/ E B />` :g:`/ A D / <g1:/ A D />` :eq:`= <g1:/ B A / = g1:/ A D / = g1:/ D E / = g1:/ E B />` :g:`/ D E / <g1:/ D E />` :eq:`= <g1:/ B A / = g1:/ A D / = g1:/ D E / = g1:/ E B />` :g:`/ E B / <g1:/ E B />`, :g:`< B A D ) <g1:< B A D )>` :eq:`= <g1:< B A D ) = g1:< A D E ) = g1:< A B E ) = g1:< B E D )>` :g:`< A D E ) <g1:< A D E )>` :eq:`= <g1:< B A D ) = g1:< A D E ) = g1:< A B E ) = g1:< B E D )>` :g:`< A B E ) <g1:< A B E )>` :eq:`= <g1:< B A D ) = g1:< A D E ) = g1:< A B E ) = g1:< B E D )>` :g:`< B E D ) <g1:< B E D )>` = ∟)",
+    "steps": [
+      [
+        "given",
+        [],
+        ":g:`/ A B / <g1:/ A B />`"
+      ],
+      [
+        "construct",
+        [],
+        "@fn(I.11)(:g:`/ A B / <g1:/ A B />`, :g:`A <g1:A>`) → :g:`/ A C / <g1:/ A C />` ⊥ :g:`/ A B / <g1:/ A B />`, @fn(I.3)(:g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />`) → :g:`/ A D / <g1:/ A D />` (:eq:`= <g1:/ A D / = g1:/ A B />` :g:`/ A B / <g1:/ A B />`)"
+      ],
+      [
+        "construct",
+        [],
+        "@fn(I.31)(:g:`D <g1:D>`, :g:`/ A B / <g1:/ A B />`) → :g:`/ D E / <g1:/ D E />` ∥ :g:`/ A B / <g1:/ A B />`, @fn(I.31)(:g:`B <g1:B>`, :g:`/ A D / <g1:/ A D />`) → :g:`/ B E / <g1:/ B E />` ∥ :g:`/ A D / <g1:/ A D />` → :g:`< A D E B > <g1:< A D E B >>`"
+      ],
+      [
+        "assert",
+        ["I.34", "I.cn.1"],
+        ":g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ D E /; g1:/ A D / = g1:/ B E />` :g:`/ D E / <g1:/ D E />`, :g:`/ A D / <g1:/ A D />` :eq:`= <g1:/ A B / = g1:/ D E /; g1:/ A D / = g1:/ B E />` :g:`/ B E / <g1:/ B E />`, :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ A D />` :g:`/ A D / <g1:/ A D />` → :g:`/ B A / <g1:/ B A />` :eq:`= <g1:/ B A / = g1:/ A D / = g1:/ D E / = g1:/ E B />` :g:`/ A D / <g1:/ A D />` :eq:`= <g1:/ B A / = g1:/ A D / = g1:/ D E / = g1:/ E B />` :g:`/ D E / <g1:/ D E />` :eq:`= <g1:/ B A / = g1:/ A D / = g1:/ D E / = g1:/ E B />` :g:`/ E B / <g1:/ E B />`"
+      ],
+      [
+        "assert",
+        ["I.29", "I.34"],
+        ":g:`< B A D ) <g1:< B A D )>` + :g:`< A D E ) <g1:< A D E )>` = 2∟, :g:`< B A D ) <g1:< B A D )>` = ∟ → :g:`< B A D ) <g1:< B A D )>` :eq:`= <g1:< B A D ) = g1:< A D E ) = g1:< A B E ) = g1:< B E D )>` :g:`< A D E ) <g1:< A D E )>` :eq:`= <g1:< B A D ) = g1:< A D E ) = g1:< A B E ) = g1:< B E D )>` :g:`< A B E ) <g1:< A B E )>` :eq:`= <g1:< B A D ) = g1:< A D E ) = g1:< A B E ) = g1:< B E D )>` :g:`< B E D ) <g1:< B E D )>` = ∟"
+      ],
+      [
+        "conclude",
+        ["I.def.22"],
+        ":g:`/ B A / <g1:/ B A />` :eq:`= <g1:/ B A / = g1:/ A D / = g1:/ D E / = g1:/ E B />` :g:`/ A D / <g1:/ A D />` :eq:`= <g1:/ B A / = g1:/ A D / = g1:/ D E / = g1:/ E B />` :g:`/ D E / <g1:/ D E />` :eq:`= <g1:/ B A / = g1:/ A D / = g1:/ D E / = g1:/ E B />` :g:`/ E B / <g1:/ E B />`, :g:`< B A D ) <g1:< B A D )>` :eq:`= <g1:< B A D ) = g1:< A D E ) = g1:< A B E ) = g1:< B E D )>` :g:`< A D E ) <g1:< A D E )>` :eq:`= <g1:< B A D ) = g1:< A D E ) = g1:< A B E ) = g1:< B E D )>` :g:`< A B E ) <g1:< A B E )>` :eq:`= <g1:< B A D ) = g1:< A D E ) = g1:< A B E ) = g1:< B E D )>` :g:`< B E D ) <g1:< B E D )>` = ∟ → :g:`< A D E B > <g1:< A D E B >>`"
+      ]
+    ]
+  }
+}

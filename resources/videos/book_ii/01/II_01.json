@@ -1,0 +1,97 @@
+{
+  "voice_id": "voice_xdhacg1pn1cq",
+  "audio_wav": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_ii/01/II_01.wav",
+  "total_duration_sec": 133.1,
+  "segments": [
+    {
+      "index": 0,
+      "bell": "bell:proposition",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: brisk, clear, architectural voice; steady studio cadence] Book Two, Proposition One. If there be two segments, and one of them be cut into any number of segments whatever, the rectangle contained by the two segments is equal to the rectangles contained by the uncut segment and each of the segments. Let A and B C be two segments, and let B C be cut at random at D and E.",
+      "start_sec": 0.0,
+      "end_sec": 21.77,
+      "duration_sec": 21.77,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: brisk, clear, architectural voice; steady studio cadence] Book Two, Proposition One. If there be two segments, and one of them be cut into any number of segments whatever, the rectangle contained by the two segments is equal to the rectangles contained by the uncut segment and each of the segments. Let A and B C be two segments, and let B C be cut at random at D and E.",
+          "start_sec": 0.0,
+          "end_sec": 21.77,
+          "duration_sec": 21.77
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "bell": "bell:construction",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: methodical, precise constructive cadence] From B, draw B F at right angles to B C by One Eleven, and cut off B G equal to A by One Three. Through G, draw G H parallel to B C by One Thirty-One; and through D, E, and C, draw D K, E L, and C H parallel to B G.",
+      "start_sec": 21.77,
+      "end_sec": 41.16,
+      "duration_sec": 19.39,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: methodical, precise constructive cadence] From B, draw B F at right angles to B C by One Eleven, and cut off B G equal to A by One Three. Through G, draw G H parallel to B C by One Thirty-One; and through D, E, and C, draw D K, E L, and C H parallel to B G.",
+          "start_sec": 21.77,
+          "end_sec": 41.16,
+          "duration_sec": 19.39
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "bell": "bell:insight",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: luminous, deductive geometric clarity] Then the whole rectangle B H equals the sum of the rectangles B K, D L, and E H. Because B G equals A, B H is the rectangle contained by A and B C, and B K is contained by A and B D. By One Thirty-Four, opposite sides of a parallelogram are equal, so D K and E L each equal B G, and therefore equal A. Thus D L is the rectangle contained by A and D E, and E H is contained by A and E C. Therefore, the rectangle contained by A and B C equals the sum of the rectangles contained by A and B D, A and D E, and A and E C. Which was to be proved.",
+      "start_sec": 41.16,
+      "end_sec": 82.06,
+      "duration_sec": 40.9,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: luminous, deductive geometric clarity] Then the whole rectangle B H equals the sum of the rectangles B K, D L, and E H. Because B G equals A, B H is the rectangle contained by A and B C, and B K is contained by A and B D. By One Thirty-Four, opposite sides of a parallelogram are equal, so D K and E L each equal B G, and therefore equal A. Thus D L is the rectangle contained by A and D E, and E H is contained by A and E C. Therefore, the rectangle contained by A and B C equals the sum of the rectangles contained by A and B D, A and D E, and A and E C. Which was to be proved.",
+          "start_sec": 41.16,
+          "end_sec": 82.06,
+          "duration_sec": 40.9
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "bell": "bell:system",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: reflective, scholarly, architectural synthesis] Book Two opens Euclid's geometric algebra. Where modern algebra writes the distributive law\u2014a times the sum of b, c, and d equals a b plus a c plus a d\u2014Euclid proves it directly as an identity of area, free of numerical approximation. In the GEOMETOR G-Index, node G eighty-two synthesizes seven foundational rules from Book One\u2014perpendiculars, parallels, and parallelogram equality\u2014with Book Two's first definition, the contained rectangle.",
+      "start_sec": 82.06,
+      "end_sec": 110.44,
+      "duration_sec": 28.38,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: reflective, scholarly, architectural synthesis] Book Two opens Euclid's geometric algebra. Where modern algebra writes the distributive law\u2014a times the sum of b, c, and d equals a b plus a c plus a d\u2014Euclid proves it directly as an identity of area, free of numerical approximation. In the GEOMETOR G-Index, node G eighty-two synthesizes seven foundational rules from Book One\u2014perpendiculars, parallels, and parallelogram equality\u2014with Book Two's first definition, the contained rectangle.",
+          "start_sec": 82.06,
+          "end_sec": 110.44,
+          "duration_sec": 28.38
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "bell": "bell:resolve",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: warm, inviting, resonant studio close] You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Two One in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.",
+      "start_sec": 110.44,
+      "end_sec": 133.1,
+      "duration_sec": 22.66,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: warm, inviting, resonant studio close] You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Two One in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.",
+          "start_sec": 110.44,
+          "end_sec": 133.1,
+          "duration_sec": 22.66
+        }
+      ]
+    }
+  ]
+}

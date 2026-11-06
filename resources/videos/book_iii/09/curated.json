@@ -1,0 +1,55 @@
+{
+  "III.9": {
+    "subtype": "theorem",
+    "args": [
+      ":g:`( A B C ) <g1:( A B C )>`",
+      ":g:`D <g1:D>`",
+      ":g:`/ D A / <g1:/ D A />`",
+      ":g:`/ D B / <g1:/ D B />`",
+      ":g:`/ D C / <g1:/ D C />`"
+    ],
+    "returns": [],
+    "given": ":g:`( A B C ) <g1:( A B C )>`, interior point :g:`D <g1:D>`, :g:`/ D A / <g1:/ D A />` :eq:`= <g1:/ D A / = g1:/ D B / = g1:/ D C />` :g:`/ D B / <g1:/ D B />` :eq:`= <g1:/ D A / = g1:/ D B / = g1:/ D C />` :g:`/ D C / <g1:/ D C />`",
+    "contract": ":g:`D <g1:D>` = center(:g:`( A B C ) <g1:( A B C )>`)",
+    "steps": [
+      [
+        "given",
+        [
+          "I.def.15"
+        ],
+        ":g:`( A B C ) <g1:( A B C )>`, interior point :g:`D <g1:D>`, :g:`/ D A / <g1:/ D A />` :eq:`= <g1:/ D A / = g1:/ D B / = g1:/ D C />` :g:`/ D B / <g1:/ D B />` :eq:`= <g1:/ D A / = g1:/ D B / = g1:/ D C />` :g:`/ D C / <g1:/ D C />`"
+      ],
+      [
+        "construct",
+        [
+          "I.post.1",
+          "I.10",
+          "I.post.2"
+        ],
+        "join :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, bisect at :g:`E <g1:E>`, :g:`F <g1:F>` (:g:`/ A E / <g1:/ A E />` :eq:`= <g1:/ A E / = g1:/ E B />` :g:`/ E B / <g1:/ E B />`, :g:`/ B F / <g1:/ B F />` :eq:`= <g1:/ B F / = g1:/ F C />` :g:`/ F C / <g1:/ F C />`), draw :g:`/ G K / <g1:/ G K />` through :g:`E <g1:E>`, :g:`D <g1:D>` and :g:`/ H L / <g1:/ H L />` through :g:`F <g1:F>`, :g:`D <g1:D>`"
+      ],
+      [
+        "assert",
+        [
+          "I.8",
+          "I.def.10"
+        ],
+        ":g:`< A E D > <g1:< A E D >>` ≃ :g:`< B E D > <g1:< B E D >>` → :g:`< A E D ) <g1:< A E D )>` :eq:`= <g1:< A E D ) = g1:< B E D )>` :g:`< B E D ) <g1:< B E D )>` (right) → :g:`/ G K / <g1:/ G K />` ⊥ :g:`/ A B / <g1:/ A B />`"
+      ],
+      [
+        "assert",
+        [
+          "III.1"
+        ],
+        ":g:`/ G K / <g1:/ G K />` bisects :g:`/ A B / <g1:/ A B />` ⊥ → center(:g:`( A B C ) <g1:( A B C )>`) ∈ :g:`/ G K / <g1:/ G K />`; similarly center(:g:`( A B C ) <g1:( A B C )>`) ∈ :g:`/ H L / <g1:/ H L />`"
+      ],
+      [
+        "conclude",
+        [
+          "I.def.16"
+        ],
+        ":g:`/ G K / <g1:/ G K />` ∩ :g:`/ H L / <g1:/ H L />` = :g:`D <g1:D>` → :g:`D <g1:D>` = center(:g:`( A B C ) <g1:( A B C )>`)"
+      ]
+    ]
+  }
+}

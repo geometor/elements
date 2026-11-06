@@ -1,0 +1,33 @@
+{
+  "prop_id": "BOOK II \u2022 PROP. 11",
+  "short_code": "II.11",
+  "g_id": "G.93",
+  "version": 2,
+  "enunciation": "To cut a given segment so that the rectangle contained by the whole and one of the segments is equal to the square on the remaining segment.",
+  "title_1080p": "II.11 \u2022 cut extreme and mean ratio \u2022 Euclid's Elements",
+  "title_short": "II.11 \u2022 cut extreme and mean ratio \u2022 Euclid's Elements",
+  "description": "\u201cTo cut a given segment so that the rectangle contained by the whole and one of the segments is equal to the square on the remaining segment.\u201d\n\u2014 Euclid's Elements, BOOK II \u2022 PROP. 11 (G.93)\n\n00:00 1 \u00b7 GIVEN: given segment / A B / to be cut in extreme and mean ratio\n00:19 2 \u00b7 CONSTRUCT: square \u27e8 A B D C \u27e9, midpoint E of / A C /, and diagonal / B E /\n00:30 3 \u00b7 CONSTRUCT: extend / C A / to F with / E F / = / B E /, square \u27e8 F H \u27e9, and / G K /\n00:40 4 \u00b7 ASSERT: rect(/ C F /, / F A /) + sq(/ A E /) = sq(/ E B /) \u2192 \u27e8 F K \u27e9 = \u27e8 A B D C \u27e9\n00:58 5 \u00b7 ASSERT: subtract common rectangle \u27e8 A K \u27e9 \u2192 \u27e8 F H \u27e9 = \u27e8 H D \u27e9\n01:16 6 \u00b7 \u2234: rect(/ A B /, / B H /) = sq(/ A H /) at Golden Section point H\n01:34 7 \u00b7 COMMENTARY: the Golden Section: a(a \u2212 x) = x\u00b2 and the regular pentagon\n01:53 8 \u00b7 GENEALOGY: G.93 dependency tree & symbolic model\n02:11 9 \u00b7 PARTICIPATE: explore the GEOMETOR Elements Codex & participate\n\nExplore the interactive Book Codex, symbolic model, and dependency tree:\n\u2022 Elements Codex (G.93): https://geometor.github.io/elements/elements2/G.93/\n\u2022 Heath Edition (II.11): https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/11/\n\u2022 GitHub: https://github.com/geometor/elements\n\nGEOMETOR \u2022 G.93 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid II.11",
+    "G.93",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/11/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.93/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_ii/11/II_11_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_ii/11/II_11_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_ii/11/II_11.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_ii/11/II_11_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_ii/11/II_11_short_thumb.png"
+  }
+}

@@ -2,7 +2,7 @@
 :number: 130
 :canonical_id: G.130
 :original_id: III.25
-:title: G.130 segment circle describe
+:title: G.130 complete a circle from a given segment
 :volume: II
 :book: III
 :type: prop
@@ -10,26 +10,26 @@
 :categories: problem, construction, plane-geometry, circles
 :category: problem, construction, plane-geometry, circles
 :tags: book-iii, point, segment, circle, angle, segment-of-circle, right-angle, plane-angle, straight-line, centre, semicircle, equality
-:dependencies: G.1, G.4, G.10, G.11, G.14, G.18, G.22, G.27, G.33, G.48, G.96, G.107, G.126
-:excerpt: Given a segment of a circle, to describe the complete circle of which it is a segment.
+:dependencies: G.4, G.10, G.14, G.15, G.16, G.18, G.24, G.27, G.32, G.34, G.48, G.96, G.107, G.126
+:excerpt: Given a segment of a circle, complete the full circle of which it is a segment.
 
 .. _G.130:
 .. _III.25:
 
-G.130 segment circle describe
-=============================
+G.130 complete a circle from a given segment
+============================================
 
 .. rubric:: `III.25 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/25/>`_
 
 .. enunciation::
 
-   Given a :term:`segment of a circle <G.126>`, to describe the complete :term:`circle <G.10>` of which it is a :term:`segment <G.4>`.
+   Given a :term:`segment of a circle <G.126>`, complete the full :term:`circle <G.10>` of which it is a :term:`segment <G.4>`.
 
 .. signature:: problem
 
-   | :fn:`segment_circle_describe <G.130>`\ (:g:`( A B C ) <g1:( A B C )>`) → :g:`/ E C / <g1:/ E C />`
-   | **given** :g:`( A B C ) <g1:( A B C )>` of a circle
-   | **construct** given a segment of a circle, the complete circle has been described
+   | :fn:`complete_circle_from_segment <G.130>`\ (:g:`( A B C ) <g1:( A B C )>`) → :g:`E <g1:E>`, :g:`( E A ) <g1:( A B C )>`
+   | **given** circle segment :g:`( A B C ) <g1:( A B C )>` with base chord :g:`/ A C / <g1:/ A C />`
+   | **construct** @fn(I.post.3)(:g:`E <g1:E>`, :g:`A <g1:A>`) → :g:`( E A ) <g1:( A B C )>` completing :g:`( A B C ) <g1:( A B C )>`
 
 .. picture:: g1.svg
    :alt: Diagram for Proposition 25, Case 1
@@ -40,93 +40,25 @@ G.130 segment circle describe
 .. picture:: g3.svg
    :alt: Diagram for Proposition 25, Case 3
 
-.. step:: given
+.. step:: given ∵ segment_circle_figure_def <G.126>
 
-   :g:`( A B C ) <g1:( A B C )>` of a circle
+   circle segment :g:`( A B C ) <g1:( A B C )>` on chord :g:`/ A C / <g1:/ A C />`
 
-.. step:: construct
+.. step:: construct ∵ bisect_segment, perpendicular_at, segment <G.32, G.34, G.14>
 
-   Let :g:`/ A C / <g1:/ A C />` be :eq:`bisected <g1:/ A D / = g1:/ D C />` at :g:`D <g1:D>`, let :g:`/ D B / <g1:/ D B />` be drawn from :g:`D <g1:D>` :term:`at right angles <G.33>` to :g:`/ A C / <g1:/ A C />`
+   :fn:`bisect_segment <G.32>`\ (:g:`/ A C / <g1:/ A C />`) → :g:`D <g1:D>` (:g:`/ A D / <g1:/ A D />` :eq:`= <g1:/ A D / = g1:/ D C />` :g:`/ D C / <g1:/ D C />`), :fn:`perpendicular_at <G.34>`\ (:g:`/ A C / <g1:/ A C />`, :g:`D <g1:D>`) → :g:`/ D B / <g1:/ D B />` ⊥ :g:`/ A C / <g1:/ A C />`, :fn:`segment <G.14>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`) → :g:`/ A B / <g1:/ A B />`
 
-.. step:: construct
+.. step:: construct ∵ copy_angle, extend, segment <G.48, G.18, G.14>
 
-   :fn:`segment <G.14>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`) → :g:`/ A B / <g1:/ A B />`
+   :fn:`copy_angle <G.48>`\ (:g:`/ B A / <g1:/ B A />`, :g:`A <g1:A>`, :g:`< A B D ) <g1:< A B D )>`) → :g:`< B A E ) <g1:< B A E )>` :eq:`= <g1:< B A E ) = g1:< A B D )>` :g:`< A B D ) <g1:< A B D )>`, :fn:`extend <G.18>`\ (:g:`/ D B / <g1:/ D B />`) ∩ :g:`/ A E / <g1:/ A E />` → :g:`E <g1:E>`, :fn:`segment <G.14>`\ (:g:`E <g1:E>`, :g:`C <g1:C>`) → :g:`/ E C / <g1:/ E C />`
 
-.. step:: assert
+.. step:: assert ∵ equal_angles_isosceles, sas_congruence <G.27, G.24>
 
-   :g:`< A B D ) <g1:< A B D )>` is then greater than, equal to, or less than :g:`< B A D ) <g1:< B A D )>`
+   :g:`< A B E ) <g1:< A B E )>` :eq:`= <g1:< A B E ) = g1:< B A E )>` :g:`< B A E ) <g1:< B A E )>` → :g:`/ E B / <g1:/ E B />` :eq:`= <g1:/ E B / = g1:/ E A />` :g:`/ E A / <g1:/ E A />`; in :g:`< A D E > <g1:< A D E >>`, :g:`< C D E > <g1:< C D E >>`, :g:`/ A D / <g1:/ A D />` :eq:`= <g1:/ A D / = g1:/ D C />` :g:`/ D C / <g1:/ D C />`, :g:`/ D E / <g1:/ D E />` common, :g:`< A D E ) <g1:< A D E )>` :eq:`= <g1:< A D E ) = g1:< C D E )>` :g:`< C D E ) <g1:< C D E )>` → :g:`/ A E / <g1:/ A E />` :eq:`= <g1:/ A E / = g1:/ C E />` :g:`/ C E / <g1:/ C E />`
 
-.. step:: assert
+.. step:: conclude ∵ equal_transitive, three_equal_radii_center, circle <G.16, G.107, G.15>
 
-   First let it be greater
-
-.. step:: construct
-
-   :fn:`copy_angle <G.48>`\ (:g:`/ B A / <g1:/ B A />`, :g:`A <g1:A>`, :g:`< A B D ) <g1:< A B D )>`) → :g:`< B A E ) <g1:< B A E )>` (:eq:`equal <g1:< B A E ) = g1:< A B D )>`)
-
-.. step:: construct
-
-   :fn:`extend <G.18>`\ (:g:`/ D B / <g1:/ D B />`) → :g:`E <g1:E>`
-
-.. step:: construct
-
-   :fn:`segment <G.14>`\ (:g:`E <g1:E>`, :g:`C <g1:C>`) → :g:`/ E C / <g1:/ E C />`
-
-.. step:: assert ∵ equal_angles_isosceles <G.27>
-
-   :g:`< A B E ) <g1:< A B E )>` :eq:`= <g1:< A B E ) = g1:< B A E )>` :g:`< B A E ) <g1:< B A E )>`, :g:`/ E B / <g1:/ E B />` :eq:`= <g1:/ E B / = g1:/ E A />` :g:`/ E A / <g1:/ E A />`
-
-.. step:: assert
-
-   since :g:`/ A D / <g1:/ A D />` :eq:`= <g1:/ A D / = g1:/ D C />` :g:`/ D C / <g1:/ D C />`, and :g:`/ D E / <g1:/ D E />` is common, :g:`/ A D / <g1:/ A D />`, :g:`/ D E / <g1:/ D E />` :eq:`= <g1:/ A D / = g1:/ C D />` :g:`/ C D / <g1:/ C D />`, :g:`/ D E / <g1:/ D E />`
-
-.. step:: assert
-
-   :g:`< A D E ) <g1:< A D E )>` :eq:`= <g1:< A D E ) = g1:< C D E )>` :g:`< C D E ) <g1:< C D E )>`, for each is :eq:`right <g1:< A D E ) = g1:< C D E )>`
-
-.. step:: assert
-
-   :g:`/ A E / <g1:/ A E />` :eq:`= <g1:/ A E / = g1:/ C E />` :g:`/ C E / <g1:/ C E />`
-
-.. step:: assert
-
-   :g:`/ A E / <g1:/ A E />` :eq:`= <g1:/ A E / = g1:/ B E />` :g:`/ B E / <g1:/ B E />`
-
-.. step:: assert
-
-   :g:`/ B E / <g1:/ B E />` :eq:`= <g1:/ B E / = g1:/ C E />` :g:`/ C E / <g1:/ C E />`
-
-.. step:: assert
-
-   :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />`, :g:`/ E C / <g1:/ E C />` :eq:`= <g1:/ A E / = g1:/ E B / = g1:/ E C />`
-
-.. step:: assert ∵ point_taken_within <G.107>
-
-   the circle drawn with :term:`center <G.11>` :g:`E <g1:E>` and distance one of :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />`, :g:`/ E C / <g1:/ E C />` will also pass through the remaining :term:`points <G.1>` and will have been completed
-
-.. step:: assert
-
-   given a segment of a circle, the complete circle has been described
-
-.. step:: assert
-
-   It is manifest that the segment :g:`( A B C ) <g1:( A B C )>` < a semicircle, because the center :g:`E <g1:E>` happens to be outside it
-
-.. step:: assert
-
-   Similarly, even if :g:`< A B D ) <g2:< A B D )>` :eq:`= <g2:< A B D ) = g2:< B A D )>` :g:`< B A D ) <g2:< B A D )>`, :g:`/ A D / <g2:/ A D />` being :eq:`= <g2:/ A D / = g2:/ B D / = g2:/ D C />` to each of the two :g:`/ B D / <g2:/ B D />`, :g:`/ D C / <g2:/ D C />`,
-
-.. step:: assert
-
-   :g:`/ D A / <g2:/ D A />`, :g:`/ D B / <g2:/ D B />`, :g:`/ D C / <g2:/ D C />` :eq:`= <g2:/ D A / = g2:/ D B / = g2:/ D C />`, :g:`D <g2:D>` will be the center of the completed circle, and :g:`( A B C ) <g2:( A B C )>` will clearly be a semicircle
-
-.. step:: assert
-
-   But, if :g:`< A B D ) <g3:< A B D )>` be less than :g:`< B A D ) <g3:< B A D )>`, and if we construct, on :g:`/ B A / <g3:/ B A />` and at :g:`A <g3:A>` on it, an :term:`angle <G.22>` :eq:`= <g3:< B A E ) = g3:< A B D )>` to :g:`< A B D ) <g3:< A B D )>`, the center will fall on :g:`/ D B / <g3:/ D B />` within the segment :g:`( A B C ) <g3:( A B C )>`, and the segment :g:`( A B C ) <g3:( A B C )>` will clearly be greater than a :term:`semicircle <G.96>`
-
-.. step:: conclude
-
-   given a segment of a circle, the complete circle has been described
+   :g:`/ A E / <g1:/ A E />` :eq:`= <g1:/ A E / = g1:/ E B / = g1:/ E C />` :g:`/ E B / <g1:/ E B />` :eq:`= <g1:/ A E / = g1:/ E B / = g1:/ E C />` :g:`/ E C / <g1:/ E C />` → :g:`E <g1:E>` is the center of :g:`( A B C ) <g1:( A B C )>`, :fn:`circle <G.15>`\ (:g:`E <g1:E>`, :g:`A <g1:A>`) → :g:`( E A ) <g1:( A B C )>`
 
 Dependency Graph
 ----------------
@@ -185,9 +117,9 @@ Dependency Graph
      "G.61" [label="G.61", tooltip="G.61 (I.def.17): A diameter of a circle is any segment drawn through the center and terminated in both directions by the arc of the circle; it bisects the circle.", fillcolor="#224422", URL="../G.61/index.html", target="_top"];
      "G.96" [label="G.96", tooltip="G.96 (I.def.18): A semicircle is the figure contained by a diameter and the arc cut off by it.", fillcolor="#224422", URL="../G.96/index.html", target="_top"];
      "G.98" [label="G.98", tooltip="G.98 (III.1): Find the center of a given circle.", fillcolor="#222244", URL="../G.98/index.html", target="_top"];
-     "G.107" [label="G.107", tooltip="G.107 (III.9): If a point be taken within a circle, and more than two equal segments fall from the point on the circle, the point taken is the center of the circle.", fillcolor="#222244", URL="../G.107/index.html", target="_top"];
+     "G.107" [label="G.107", tooltip="G.107 (III.9): A point within a circle from which more than two equal segments fall on the circle is the center of the circle.", fillcolor="#222244", URL="../G.107/index.html", target="_top"];
      "G.126" [label="G.126", tooltip="G.126 (III.def.6): Asegment of a circle is thefigure contained by asegment and a arc of acircle.", fillcolor="#224422", URL="../G.126/index.html", target="_top"];
-     "G.130" [label="G.130", tooltip="G.130 (III.25): Given a segment of a circle, to describe the complete circle of which it is a segment.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.130" [label="G.130", tooltip="G.130 (III.25): Given a segment of a circle, complete the full circle of which it is a segment.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -210,9 +142,7 @@ Dependency Graph
      "G.45" -> "G.1";
      "G.47" -> "G.1";
      "G.48" -> "G.1";
-     "G.98" -> "G.1";
      "G.107" -> "G.1";
-     "G.130" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
      "G.6" -> "G.2";
@@ -291,7 +221,6 @@ Dependency Graph
      "G.96" -> "G.11";
      "G.98" -> "G.11";
      "G.107" -> "G.11";
-     "G.130" -> "G.11";
      "G.13" -> "G.12";
      "G.17" -> "G.12";
      "G.20" -> "G.12";
@@ -322,16 +251,22 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
+     "G.98" -> "G.14";
+     "G.107" -> "G.14";
      "G.130" -> "G.14";
      "G.17" -> "G.15";
      "G.20" -> "G.15";
      "G.21" -> "G.15";
      "G.47" -> "G.15";
+     "G.130" -> "G.15";
      "G.17" -> "G.16";
      "G.20" -> "G.16";
      "G.21" -> "G.16";
      "G.37" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
+     "G.130" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
@@ -340,6 +275,7 @@ Dependency Graph
      "G.25" -> "G.18";
      "G.41" -> "G.18";
      "G.45" -> "G.18";
+     "G.107" -> "G.18";
      "G.130" -> "G.18";
      "G.20" -> "G.19";
      "G.25" -> "G.19";
@@ -370,21 +306,23 @@ Dependency Graph
      "G.44" -> "G.22";
      "G.45" -> "G.22";
      "G.48" -> "G.22";
-     "G.98" -> "G.22";
-     "G.130" -> "G.22";
      "G.24" -> "G.23";
      "G.29" -> "G.23";
      "G.25" -> "G.24";
      "G.27" -> "G.24";
      "G.32" -> "G.24";
      "G.41" -> "G.24";
+     "G.130" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.27" -> "G.26";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.98" -> "G.26";
      "G.130" -> "G.27";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
@@ -397,14 +335,17 @@ Dependency Graph
      "G.32" -> "G.31";
      "G.41" -> "G.32";
      "G.98" -> "G.32";
+     "G.107" -> "G.32";
+     "G.130" -> "G.32";
      "G.34" -> "G.33";
      "G.37" -> "G.33";
      "G.38" -> "G.33";
      "G.40" -> "G.33";
      "G.98" -> "G.33";
      "G.107" -> "G.33";
-     "G.130" -> "G.33";
      "G.37" -> "G.34";
+     "G.98" -> "G.34";
+     "G.130" -> "G.34";
      "G.37" -> "G.36";
      "G.40" -> "G.37";
      "G.40" -> "G.38";

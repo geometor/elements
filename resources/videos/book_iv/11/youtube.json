@@ -1,0 +1,33 @@
+{
+  "prop_id": "BOOK IV \u2022 PROP. 11",
+  "short_code": "IV.11",
+  "g_id": "G.163",
+  "version": 2,
+  "enunciation": "In a given circle to inscribe an equilateral and equiangular pentagon.",
+  "title_1080p": "IV.11 \u2022 inscribe pentagon in circle \u2022 Euclid's Elements",
+  "title_short": "IV.11 \u2022 inscribe pentagon in circle \u2022 Euclid's Elements",
+  "description": "\u201cIn a given circle to inscribe an equilateral and equiangular pentagon.\u201d\n\u2014 Euclid's Elements, BOOK IV \u2022 PROP. 11 (G.163)\n\n00:00 1 \u00b7 GIVEN: given circle ( A B C D E )\n00:15 2 \u00b7 CONSTRUCT: golden triangle \u27e8 F G H \u27e9 and equiangular inscribed \u27e8 A C D \u27e9\n00:32 3 \u00b7 CONSTRUCT: bisect \u27e8 A C D ) by / C E /, \u27e8 C D A ) by / D B /, join pentagon sides\n00:49 4 \u00b7 ASSERT: 5 equal inscribed angles \u2192 5 equal arcs \u2192 pentagon \u27e8 A B C D E \u27e9 is equilateral\n01:16 5 \u00b7 ASSERT: ( A B C D ) = ( E D C B ) \u2192 all 5 pentagon angles are equal\n01:44 6 \u00b7 \u2234: regular pentagon \u27e8 A B C D E \u27e9 is inscribed in ( A B C D E )\n02:11 7 \u00b7 COMMENTARY: the Pythagorean pentagram-star & Taylor's construction\n02:35 8 \u00b7 GENEALOGY: G.163 dependency tree & symbolic model\n03:00 9 \u00b7 PARTICIPATE: explore the GEOMETOR Elements Codex & participate\n\nExplore the interactive Book Codex, symbolic model, and dependency tree:\n\u2022 Elements Codex (G.163): https://geometor.github.io/elements/elements2/G.163/\n\u2022 Heath Edition (IV.11): https://geometor.github.io/euclid/heath/volume_I/book_iv/propositions/11/\n\u2022 GitHub: https://github.com/geometor/elements\n\nGEOMETOR \u2022 G.163 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid IV.11",
+    "G.163",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_iv/propositions/11/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.163/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iv/11/IV_11_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iv/11/IV_11_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iv/11/IV_11.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iv/11/IV_11_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iv/11/IV_11_short_thumb.png"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "prop_id": "BOOK I \u2022 PROP. 43",
+  "short_code": "I.43",
+  "g_id": "G.72",
+  "version": 2,
+  "enunciation": "In any parallelogram the complements of the parallelograms about the diameter are equal to one another.",
+  "title_1080p": "I.43 \u2022 in any parallelogram the complements of the parallelograms about the diameter are equal to...",
+  "title_short": "I.43 \u2022 in any parallelogram the complements of the parallelograms about the diameter are equal to...",
+  "description": "\u201cIn any parallelogram the complements of the parallelograms about the diameter are equal to one another.\u201d\n\u2014 Euclid's Elements, BOOK I \u2022 PROP. 43 (G.72)\n\n00:00 1 \u00b7 GIVEN: \u27e8 A B C D \u27e9, / A C /, \u27e8 A E K H \u27e9, \u27e8 K F C G \u27e9, \u27e8 E B F K \u27e9, \u27e8 H K G D \u27e9\n00:26 2 \u00b7 ASSERT: \u27e8 A B C D \u27e9, / A C / \u2192 \u27e8 A B C \u27e9 = \u27e8 A C D \u27e9\n00:41 3 \u00b7 ASSERT: \u27e8 A E K H \u27e9, \u27e8 K F C G \u27e9 \u2192 \u27e8 A E K \u27e9 = \u27e8 A H K \u27e9, \u27e8 K F C \u27e9 = \u27e8 K G C \u27e9\n00:55 4 \u00b7 ASSERT: \u27e8 A E K \u27e9 = \u27e8 A H K \u27e9, \u27e8 K F C \u27e9 = \u27e8 K G C \u27e9 \u2192 \u27e8 A E K \u27e9 + \u27e8 K F C \u27e9 = \u27e8 A H K \u27e9 + \u27e8 K G C \u27e9\n01:10 5 \u00b7 \u2234: \u27e8 A B C \u27e9 = \u27e8 A C D \u27e9 \u2192 \u27e8 E B F K \u27e9 = \u27e8 H K G D \u27e9\n\nGEOMETOR \u2022 G.72 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid I.43",
+    "G.72",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/43/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.72/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_i/43/I_43_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_i/43/I_43_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_i/43/I_43.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_i/43/I_43_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_i/43/I_43_short_thumb.png"
+  },
+  "uploads": {
+    "wide_1080p": {
+      "version": 2,
+      "video_id": "M1Be6vcXd2c",
+      "url": "https://youtu.be/M1Be6vcXd2c",
+      "studio_url": "https://studio.youtube.com/video/M1Be6vcXd2c/edit",
+      "caption_id": null,
+      "playlist_id": "PLUXlBs_QySgw",
+      "playlist_item_id": "UExVWGxCc19ReVNndy42QzdBMzlBQzQzRjQ0QkQy",
+      "privacyStatus": "private",
+      "publishAt": "2026-11-09T08:00:00Z",
+      "uploaded_at": "2026-11-05T13:17:25.859654+00:00",
+      "thumbnail_set": true,
+      "updated_at": "2026-11-06T08:09:27.708372+00:00"
+    },
+    "short": {
+      "version": 2,
+      "video_id": "hc3HyEWHc6U",
+      "url": "https://youtube.com/shorts/hc3HyEWHc6U",
+      "studio_url": "https://studio.youtube.com/video/hc3HyEWHc6U/edit",
+      "caption_id": null,
+      "playlist_id": "PLTJvna-1hErU",
+      "playlist_item_id": "UExUSnZuYS0xaEVyVS4xMzgwMzBERjQ4NjEzNUE5",
+      "privacyStatus": "private",
+      "publishAt": "2026-11-09T08:00:00Z",
+      "uploaded_at": "2026-11-05T16:59:15.844291+00:00",
+      "thumbnail_set": true,
+      "updated_at": "2026-11-06T08:09:33.748219+00:00"
+    }
+  },
+  "history": {}
+}

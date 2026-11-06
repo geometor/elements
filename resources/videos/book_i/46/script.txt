@@ -1,0 +1,22 @@
+[bell:proposition]
+[style:brisk]
+Euclid's Elements, Book One, Proposition Forty-Six. <pause>
+Construct a square on a given segment. <pause>
+Let A B be the given segment. <pause>
+We construct a square on segment A B.
+
+[bell:construction]
+[style:brisk]
+From point A on segment A B, construct segment A C at right angles to A B, <pause>
+and cut off segment A D equal to segment A B. <pause>
+Through point D construct segment D E parallel to A B, and through point B construct segment B E parallel to A D, completing parallelogram A D E B.
+
+[bell:insight]
+[style:brisk]
+In parallelogram A D E B, opposite sides are equal: A B equals D E, and A D equals B E. <pause>
+Since A B was made equal to A D, all four sides B A, A D, D E, and E B are equal to one another, so parallelogram A D E B is equilateral. <pause>
+Furthermore, since transversal A D cuts parallels A B and D E, interior angles B A D and A D E sum to two right angles. <pause>
+Because angle B A D is a right angle, angle A D E is also a right angle; <pause>
+and since opposite angles of a parallelogram are equal, angles A B E and B E D are also right angles, making A D E B right-angled. <pause>
+Since figure A D E B is both equilateral and right-angled, it is a square constructed on segment A B, <pause>
+as was required to do.

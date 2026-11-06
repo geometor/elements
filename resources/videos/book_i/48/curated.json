@@ -1,0 +1,52 @@
+{
+  "I.48": {
+    "subtype": "theorem",
+    "args": [
+      ":g:`< A B C > <g1:< A B C >>`"
+    ],
+    "returns": [],
+    "given": ":g:`< A B C > <g1:< A B C >>` (:fn:`square_on_segment <G.75>`\\ (:g:`/ B C / <g1:/ B C />`) = :fn:`square_on_segment <G.75>`\\ (:g:`/ B A / <g1:/ B A />`) + :fn:`square_on_segment <G.75>`\\ (:g:`/ A C / <g1:/ A C />`))",
+    "contract": ":g:`< B A C ) <g1:< B A C )>` = ∟",
+    "steps": [
+      [
+        "given",
+        [],
+        ":g:`< A B C > <g1:< A B C >>` (@fn(I.46)(:g:`/ B C / <g1:/ B C />`) = @fn(I.46)(:g:`/ B A / <g1:/ B A />`) + @fn(I.46)(:g:`/ A C / <g1:/ A C />`))"
+      ],
+      [
+        "construct",
+        [],
+        "@fn(I.11)(:g:`/ A C / <g1:/ A C />`, :g:`A <g1:A>`) → :g:`/ A D / <g1:/ A D />` ⊥ :g:`/ A C / <g1:/ A C />`, @fn(I.3)(:g:`/ B A / <g1:/ B A />`) → :g:`/ A D / <g1:/ A D />` (:eq:`= <g1:/ A D / = g1:/ B A />` :g:`/ B A / <g1:/ B A />`), @fn(I.post.1)(:g:`D <g1:D>`, :g:`C <g1:C>`) → :g:`/ D C / <g1:/ D C />`"
+      ],
+      [
+        "assert",
+        [
+          "I.cn.2"
+        ],
+        ":g:`/ D A / <g1:/ D A />` :eq:`= <g1:/ D A / = g1:/ A B />` :g:`/ A B / <g1:/ A B />` → @fn(I.46)(:g:`/ D A / <g1:/ D A />`) + @fn(I.46)(:g:`/ A C / <g1:/ A C />`) = @fn(I.46)(:g:`/ B A / <g1:/ B A />`) + @fn(I.46)(:g:`/ A C / <g1:/ A C />`)"
+      ],
+      [
+        "assert",
+        [
+          "I.47",
+          "I.cn.1"
+        ],
+        ":g:`< D A C ) <g1:< D A C )>` = ∟ → @fn(I.46)(:g:`/ D C / <g1:/ D C />`) = @fn(I.46)(:g:`/ D A / <g1:/ D A />`) + @fn(I.46)(:g:`/ A C / <g1:/ A C />`) = @fn(I.46)(:g:`/ B C / <g1:/ B C />`) → :g:`/ D C / <g1:/ D C />` :eq:`= <g1:/ D C / = g1:/ B C />` :g:`/ B C / <g1:/ B C />`"
+      ],
+      [
+        "assert",
+        [
+          "I.8"
+        ],
+        ":g:`/ D A / <g1:/ D A />` :eq:`= <g1:/ D A / = g1:/ B A />` :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ A C />` :g:`/ A C / <g1:/ A C />`, :g:`/ D C / <g1:/ D C />` :eq:`= <g1:/ D C / = g1:/ B C />` :g:`/ B C / <g1:/ B C />` → :g:`< D A C ) <g1:< D A C )>` :eq:`= <g1:< D A C ) = g1:< B A C )>` :g:`< B A C ) <g1:< B A C )>`"
+      ],
+      [
+        "conclude",
+        [
+          "I.cn.1"
+        ],
+        ":g:`< D A C ) <g1:< D A C )>` = ∟, :g:`< B A C ) <g1:< B A C )>` :eq:`= <g1:< B A C ) = g1:< D A C )>` :g:`< D A C ) <g1:< D A C )>` → :g:`< B A C ) <g1:< B A C )>` = ∟"
+      ]
+    ]
+  }
+}

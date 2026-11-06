@@ -1,18 +1,18 @@
 :canonical_id: G.92
 :original_id: II.10
-:title: G.92 sum of squares bisected extended
+:title: G.92 sum of squares on bisected and extended segment
 :volume: I
 :book: II
 :type: prop
 
-G.92 sum of squares bisected extended — Code
-============================================
+G.92 sum of squares on bisected and extended segment — Code
+===========================================================
 
 .. rubric:: `II.10 <https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/10/>`_
 
 .. enunciation::
 
-   If a :term:`segment <G.4>` be bisected, and a segment be added to it in a segment, the :term:`square <G.63>` on the whole with the added segment and the square on the added segment both together are double of the square on the half and of the square described on the segment made up of the half and the added segment as on one segment.
+   If a :term:`segment <G.4>` is bisected and a segment is added to it in a :term:`line <G.2>`, the sum of the :term:`squares <G.63>` on the whole with the added segment and on the added segment is double the sum of the square on the half and the square on the half with the added segment.
 
 .. picture:: g1.svg
 

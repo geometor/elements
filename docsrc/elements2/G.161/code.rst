@@ -1,18 +1,18 @@
 :canonical_id: G.161
 :original_id: IV.9
-:title: G.161 square circumscribe circle
+:title: G.161 circumscribe a circle about a square
 :volume: II
 :book: IV
 :type: prop
 
-G.161 square circumscribe circle — Code
-=======================================
+G.161 circumscribe a circle about a square — Code
+=================================================
 
 .. rubric:: `IV.9 <https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/09/>`_
 
 .. enunciation::
 
-   About a given :term:`square <G.63>` to circumscribe a :term:`circle <G.10>`.
+   :term:`Circumscribe a circle about <G.156>` a given :term:`square <G.63>`.
 
 .. picture:: g1.svg
 

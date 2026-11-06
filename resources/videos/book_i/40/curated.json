@@ -1,0 +1,46 @@
+{
+  "I.40": {
+    "subtype": "theorem",
+    "args": [
+      ":g:`< A B C > <g1:< A B C >>`",
+      ":g:`< C D E > <g1:< C D E >>`",
+      ":g:`/ B C / <g1:/ B C />`",
+      ":g:`/ C E / <g1:/ C E />`"
+    ],
+    "returns": [],
+    "given": ":g:`< A B C > <g1:< A B C >>` :eq:`= <g1:< A B C > = g1:< C D E >>` :g:`< C D E > <g1:< C D E >>`, :g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ B C / = g1:/ C E />` :g:`/ C E / <g1:/ C E />`",
+    "contract": ":g:`/ A D / <g1:/ A D />` ∥ :g:`/ B E / <g1:/ B E />`",
+    "steps": [
+      [
+        "given",
+        [],
+        ":g:`< A B C > <g1:< A B C >>` :eq:`= <g1:< A B C > = g1:< C D E >>` :g:`< C D E > <g1:< C D E >>`, :g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ B C / = g1:/ C E />` :g:`/ C E / <g1:/ C E />`"
+      ],
+      [
+        "construct",
+        [],
+        "@fn(I.post.1)(:g:`A <g1:A>`, :g:`D <g1:D>`) → :g:`/ A D / <g1:/ A D />`"
+      ],
+      [
+        "construct",
+        [],
+        "? ¬(:g:`/ A D / <g1:/ A D />` ∥ :g:`/ B E / <g1:/ B E />`) → @fn(I.31)(:g:`A <g1:A>`, :g:`/ B E / <g1:/ B E />`) → :g:`/ A F / <g1:/ A F />` ∥ :g:`/ B E / <g1:/ B E />`, @fn(I.post.1)(:g:`F <g1:F>`, :g:`E <g1:E>`) → :g:`/ F E / <g1:/ F E />`"
+      ],
+      [
+        "assert",
+        ["I.38"],
+        ":g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ B C / = g1:/ C E />` :g:`/ C E / <g1:/ C E />`, :g:`/ A F / <g1:/ A F />` ∥ :g:`/ B E / <g1:/ B E />` → :g:`< A B C > <g1:< A B C >>` :eq:`= <g1:< A B C > = g1:< F C E >>` :g:`< F C E > <g1:< F C E >>`"
+      ],
+      [
+        "assert",
+        ["I.cn.1", "I.cn.5"],
+        ":g:`< A B C > <g1:< A B C >>` :eq:`= <g1:< A B C > = g1:< D C E >>` :g:`< D C E > <g1:< D C E >>`, :g:`< A B C > <g1:< A B C >>` :eq:`= <g1:< A B C > = g1:< F C E >>` :g:`< F C E > <g1:< F C E >>` → :g:`< D C E > <g1:< D C E >>` :eq:`= <g1:< D C E > = g1:< F C E >>` :g:`< F C E > <g1:< F C E >>` ⇒⇐"
+      ],
+      [
+        "conclude",
+        ["I.def.23"],
+        ":g:`/ A D / <g1:/ A D />` ∥ :g:`/ B E / <g1:/ B E />`"
+      ]
+    ]
+  }
+}

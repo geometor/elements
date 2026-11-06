@@ -1,18 +1,18 @@
 :canonical_id: G.147
 :original_id: IV.1
-:title: G.147 fit chord in circle
+:title: G.147 fit a chord in a circle equal to a segment
 :volume: II
 :book: IV
 :type: prop
 
-G.147 fit chord in circle — Code
-================================
+G.147 fit a chord in a circle equal to a segment — Code
+=======================================================
 
 .. rubric:: `IV.1 <https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/01/>`_
 
 .. enunciation::
 
-   Into a given :term:`circle <G.10>` to fit a :term:`segment <G.4>` equal to a given segment which is not greater than the :term:`diameter <G.61>` of the circle.
+   :term:`Fit into a given circle <G.146>` a chord equal to a given :term:`segment <G.4>` not greater than the :term:`diameter <G.61>` of the :term:`circle <G.10>`.
 
 .. picture:: g1.svg
 

@@ -2,7 +2,7 @@
 :number: 98
 :canonical_id: G.98
 :original_id: III.1
-:title: G.98 find circle center
+:title: G.98 find the center of a circle
 :volume: II
 :book: III
 :type: prop
@@ -10,14 +10,14 @@
 :categories: problem, finding, plane-geometry, circles
 :category: problem, finding, plane-geometry, circles
 :tags: book-iii, point, segment, circle, angle, centre, straight-line, right-angle, plane-angle, equality, reductio-ad-absurdum, porism
-:dependencies: G.1, G.4, G.10, G.11, G.22, G.29, G.32, G.33
+:dependencies: G.4, G.10, G.11, G.14, G.26, G.29, G.32, G.33, G.34
 :excerpt: Find the center of a given circle.
 
 .. _G.98:
 .. _III.1:
 
-G.98 find circle center
-=======================
+G.98 find the center of a circle
+================================
 
 .. rubric:: `III.1 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/01/>`_
 
@@ -29,78 +29,38 @@ G.98 find circle center
 
    | :fn:`find_circle_center <G.98>`\ (:g:`( A B C ) <g1:( A B C )>`) → :g:`F <g1:F>`
    | **given** :g:`( A B C ) <g1:( A B C )>`
-   | **construct** :g:`F <g1:F>` is the center of :g:`( A B C ) <g1:( A B C )>`
+   | **construct** :g:`F <g1:F>` is the :term:`center <G.11>` of :g:`( A B C ) <g1:( A B C )>`
 
 .. picture:: g1.svg
    :alt: Proposition 1
 
-.. step:: given
+.. step:: given ∵ circle_radii <G.10>
 
    :g:`( A B C ) <g1:( A B C )>`
 
-.. step:: construct
+.. step:: construct ∵ bisect_segment, perpendicular_at <G.32, G.34>
 
-   Let a :term:`segment <G.4>` :g:`/ A B / <g1:/ A B />` be drawn through it at random
+   :g:`/ A B / <g1:/ A B />` in :g:`( A B C ) <g1:( A B C )>`, :fn:`bisect_segment <G.32>`\ (:g:`/ A B / <g1:/ A B />`) → :g:`D <g1:D>` (:g:`/ A D / <g1:/ A D />` :eq:`= <g1:/ A D / = g1:/ D B />` :g:`/ D B / <g1:/ D B />`), :fn:`perpendicular_at <G.34>`\ (:g:`/ A B / <g1:/ A B />`, :g:`D <g1:D>`) → :g:`/ C E / <g1:/ C E />` ⊥ :g:`/ A B / <g1:/ A B />`, :fn:`bisect_segment <G.32>`\ (:g:`/ C E / <g1:/ C E />`) → :g:`F <g1:F>` (:g:`/ C F / <g1:/ C F />` :eq:`= <g1:/ C F / = g1:/ F E />` :g:`/ F E / <g1:/ F E />`)
 
-.. step:: assert
+.. step:: construct ∵ segment <G.14>
 
-   Let it be :eq:`bisected <g1:/ A D / = g1:/ D B />` at :g:`D <g1:D>`
+   Suppose :g:`G <g1:G>` ≠ :g:`F <g1:F>` is the center; :fn:`segment <G.14>`\ (:g:`G <g1:G>`, :g:`A <g1:A>`, :g:`D <g1:D>`, :g:`B <g1:B>`) → :g:`/ G A / <g1:/ G A />`, :g:`/ G D / <g1:/ G D />`, :g:`/ G B / <g1:/ G B />`
 
-.. step:: construct
+.. step:: assert ∵ circle_radii, sss_congruence, right_angle_perpendicular <G.10, G.29, G.33>
 
-   From :g:`D <g1:D>` let :g:`/ D C / <g1:/ D C />` be drawn :term:`at right angles <G.33>` to :g:`/ A B / <g1:/ A B />` and let it be drawn through to :g:`E <g1:E>`
+   :g:`/ A D / <g1:/ A D />` :eq:`= <g1:/ A D / = g1:/ D B />` :g:`/ D B / <g1:/ D B />`, :g:`/ D G / <g1:/ D G />` common, :g:`/ G A / <g1:/ G A />` :eq:`= <g1:/ G A / = g1:/ G B />` :g:`/ G B / <g1:/ G B />` → :g:`< A D G ) <g1:< A D G )>` :eq:`= <g1:< A D G ) = g1:< G D B )>` :g:`< G D B ) <g1:< G D B )>` is right
 
-.. step:: construct
+.. step:: assert ∵ right_angle_perpendicular, whole_greater_than_part <G.33, G.26>
 
-   :fn:`bisect_segment <G.32>`\ (:g:`/ C E / <g1:/ C E />`) → :g:`F <g1:F>` (:eq:`bisected <g1:/ C F / = g1:/ F E />`)
+   :g:`< F D B ) <g1:< F D B )>` is right → :g:`< F D B ) <g1:< F D B )>` :eq:`= <g1:< F D B ) = g1:< G D B )>` :g:`< G D B ) <g1:< G D B )>`, the greater to the less ⇒⇐
 
-.. step:: construct
+.. step:: conclude ∵ circle_radii, circle_center <G.10, G.11>
 
-   Suppose it is not, but, if possible, let :g:`G <g1:G>` be the center, and let :g:`/ G A / <g1:/ G A />`, :g:`/ G D / <g1:/ G D />`, :g:`/ G B / <g1:/ G B />` be joined.
-
-.. step:: assert
-
-   :g:`/ A D / <g1:/ A D />` :eq:`= <g1:/ A D / = g1:/ D B />` :g:`/ D B / <g1:/ D B />`, and :g:`/ D G / <g1:/ D G />` is common → :g:`/ A D / <g1:/ A D />`, :g:`/ D G / <g1:/ D G />` :eq:`= <g1:/ A D / = g1:/ B D />` :g:`/ B D / <g1:/ B D />`, :g:`/ D G / <g1:/ D G />`
-
-.. step:: assert
-
-   :g:`/ G A / <g1:/ G A />` :eq:`= <g1:/ G A / = g1:/ G B />` :g:`/ G B / <g1:/ G B />`, for they are radii
-
-.. step:: assert ∵ sss_congruence <G.29>
-
-   :g:`< A D G ) <g1:< A D G )>` :eq:`= <g1:< A D G ) = g1:< G D B )>` :g:`< G D B ) <g1:< G D B )>`
-
-.. step:: assert ∵ right_angle_perpendicular <G.33>
-
-   But, when a segment set up on a segment makes the adjacent :term:`angles <G.22>` equal to one another, each of the equal angles is right
-
-.. step:: assert
-
-   :g:`< G D B ) <g1:< G D B )>` is right
-
-.. step:: assert
-
-   :g:`< F D B ) <g1:< F D B )>` is also right
-
-.. step:: assert
-
-   :g:`< F D B ) <g1:< F D B )>` :eq:`= <g1:< F D B ) = g1:< G D B )>` :g:`< G D B ) <g1:< G D B )>`, the greater to the less ⇒⇐
-
-.. step:: assert
-
-   :g:`G <g1:G>` is not the center of :g:`( A B C ) <g1:( A B C )>`
-
-.. step:: assert
-
-   Similarly we can prove that neither is any other :term:`point <G.1>` except :g:`F <g1:F>`
-
-.. step:: conclude ∵ circle_radii <G.10>
-
-   :g:`F <g1:F>` is the center of :g:`( A B C ) <g1:( A B C )>`
+   :g:`G <g1:G>` is not the center → :g:`F <g1:F>` is the center of :g:`( A B C ) <g1:( A B C )>`
 
 .. enunciation::
 
-   PORISM. From this it is manifest that, if in a circle a straight line cut a straight line into two equal parts and at right angles, the centre of the circle is on the cutting straight line.
+   PORISM. From this it is manifest that, if in a circle a :term:`straight line <G.4>` cut a straight line into two equal parts and :term:`at right angles <G.33>`, the centre of the circle is on the cutting straight line.
 
 Dependency Graph
 ----------------
@@ -144,6 +104,7 @@ Dependency Graph
      "G.31" [label="G.31", tooltip="G.31 (I.9): Bisect a given angle.", fillcolor="#222244", URL="../G.31/index.html", target="_top"];
      "G.32" [label="G.32", tooltip="G.32 (I.10): Bisect a given segment.", fillcolor="#222244", URL="../G.32/index.html", target="_top"];
      "G.33" [label="G.33", tooltip="G.33 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.33/index.html", target="_top"];
+     "G.34" [label="G.34", tooltip="G.34 (I.11): Construct a segment at right angles to a given line from a given point on it.", fillcolor="#222244", URL="../G.34/index.html", target="_top"];
      "G.98" [label="G.98", tooltip="G.98 (III.1): Find the center of a given circle.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
@@ -161,7 +122,7 @@ Dependency Graph
      "G.29" -> "G.1";
      "G.31" -> "G.1";
      "G.32" -> "G.1";
-     "G.98" -> "G.1";
+     "G.34" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
      "G.6" -> "G.2";
@@ -170,6 +131,7 @@ Dependency Graph
      "G.22" -> "G.2";
      "G.30" -> "G.2";
      "G.33" -> "G.2";
+     "G.34" -> "G.2";
      "G.4" -> "G.3";
      "G.6" -> "G.3";
      "G.8" -> "G.3";
@@ -194,6 +156,7 @@ Dependency Graph
      "G.31" -> "G.4";
      "G.32" -> "G.4";
      "G.33" -> "G.4";
+     "G.34" -> "G.4";
      "G.98" -> "G.4";
      "G.6" -> "G.5";
      "G.7" -> "G.5";
@@ -223,6 +186,7 @@ Dependency Graph
      "G.29" -> "G.12";
      "G.31" -> "G.12";
      "G.32" -> "G.12";
+     "G.34" -> "G.12";
      "G.17" -> "G.13";
      "G.25" -> "G.13";
      "G.17" -> "G.14";
@@ -230,6 +194,8 @@ Dependency Graph
      "G.25" -> "G.14";
      "G.28" -> "G.14";
      "G.31" -> "G.14";
+     "G.34" -> "G.14";
+     "G.98" -> "G.14";
      "G.17" -> "G.15";
      "G.20" -> "G.15";
      "G.21" -> "G.15";
@@ -239,6 +205,7 @@ Dependency Graph
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
+     "G.34" -> "G.17";
      "G.20" -> "G.18";
      "G.25" -> "G.18";
      "G.20" -> "G.19";
@@ -246,6 +213,7 @@ Dependency Graph
      "G.21" -> "G.20";
      "G.25" -> "G.21";
      "G.31" -> "G.21";
+     "G.34" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
      "G.28" -> "G.22";
@@ -254,20 +222,24 @@ Dependency Graph
      "G.31" -> "G.22";
      "G.32" -> "G.22";
      "G.33" -> "G.22";
-     "G.98" -> "G.22";
+     "G.34" -> "G.22";
      "G.24" -> "G.23";
      "G.29" -> "G.23";
      "G.25" -> "G.24";
      "G.32" -> "G.24";
      "G.28" -> "G.25";
      "G.28" -> "G.26";
+     "G.98" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
+     "G.34" -> "G.29";
      "G.98" -> "G.29";
      "G.31" -> "G.30";
      "G.32" -> "G.31";
      "G.98" -> "G.32";
+     "G.34" -> "G.33";
      "G.98" -> "G.33";
+     "G.98" -> "G.34";
    }
 
 Required for

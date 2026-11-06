@@ -1,0 +1,53 @@
+{
+  "III.34": {
+    "subtype": "problem",
+    "args": [
+      ":g:`( A B C ) <g1:( A B C )>`",
+      ":g:`< D ) <g1:< D )>`"
+    ],
+    "returns": [
+      ":g:`( B A C ) <g1:( B A C )>`"
+    ],
+    "given": ":g:`( A B C ) <g1:( A B C )>`, :g:`< D ) <g1:< D )>`",
+    "contract": ":g:`< B A C ) <g1:< B A C )>` in segment :g:`( B A C ) <g1:( B A C )>` cut off from :g:`( A B C ) <g1:( A B C )>` :eq:`= <g1:< B A C ) = g1:< D )>` :g:`< D ) <g1:< D )>`",
+    "steps": [
+      [
+        "given",
+        [
+          "I.def.15",
+          "I.def.9"
+        ],
+        "circle :g:`( A B C ) <g1:( A B C )>`, rectilineal angle :g:`< D ) <g1:< D )>`"
+      ],
+      [
+        "construct",
+        [
+          "III.16"
+        ],
+        "tangent :g:`/ E F / <g1:/ E F />` touching :g:`( A B C ) <g1:( A B C )>` at :g:`B <g1:B>`"
+      ],
+      [
+        "construct",
+        [
+          "I.23"
+        ],
+        "@fn(I.23)(:g:`/ F B / <g1:/ F B />`, :g:`B <g1:B>`, :g:`< D ) <g1:< D )>`) → :g:`< F B C ) <g1:< F B C )>` :eq:`= <g1:< F B C ) = g1:< D )>` :g:`< D ) <g1:< D )>` with chord :g:`/ B C / <g1:/ B C />`"
+      ],
+      [
+        "assert",
+        [
+          "III.32"
+        ],
+        "tangent :g:`/ E F / <g1:/ E F />` and chord :g:`/ B C / <g1:/ B C />` at :g:`B <g1:B>` → :g:`< F B C ) <g1:< F B C )>` :eq:`= <g1:< F B C ) = g1:< B A C )>` :g:`< B A C ) <g1:< B A C )>` in alternate segment :g:`( B A C ) <g1:( B A C )>`"
+      ],
+      [
+        "conclude",
+        [
+          "I.cn.1",
+          "III.def.8"
+        ],
+        ":g:`< F B C ) <g1:< F B C )>` :eq:`= <g1:< F B C ) = g1:< D )>` :g:`< D ) <g1:< D )>` → :g:`< B A C ) <g1:< B A C )>` :eq:`= <g1:< B A C ) = g1:< D )>` :g:`< D ) <g1:< D )>` in segment :g:`( B A C ) <g1:( B A C )>`"
+      ]
+    ]
+  }
+}

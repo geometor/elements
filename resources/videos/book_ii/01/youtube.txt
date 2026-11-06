@@ -1,0 +1,46 @@
+================================================================================
+YOUTUBE 1080P (16:9) TITLE
+================================================================================
+II.1 • distribute rectangle • Euclid's Elements
+
+================================================================================
+YOUTUBE SHORT (9:16) TITLE
+================================================================================
+II.1 • distribute rectangle • Euclid's Elements
+
+================================================================================
+DESCRIPTION
+================================================================================
+“If there be two segments, and one of them be cut into any number of segments whatever, the rectangle contained by the two segments is equal to the rectangles contained by the uncut segment and each of the segments.”
+— Euclid's Elements, BOOK II • PROP. 1 (G.82)
+
+00:00 1 · GIVEN: given segments A and / B C / cut at D, E
+00:21 2 · CONSTRUCT: perpendicular / B F / and / B G / = A
+00:31 3 · CONSTRUCT: parallels / G H / and / D K /, / E L /, / C H /
+00:41 4 · ASSERT: ⟨ B H ⟩ = ⟨ B K ⟩ + ⟨ D L ⟩ + ⟨ E H ⟩
+00:54 5 · ASSERT: / D K / = / E L / = / B G / = A
+01:08 6 · ∴: rect(A, / B C /) = rect(A, / B D /) + rect(A, / D E /) + rect(A, / E C /)
+01:22 7 · COMMENTARY: geometric algebra: a(b + c + d) = ab + ac + ad
+01:36 8 · GENEALOGY: G.82 dependency tree & symbolic model
+01:50 9 · PARTICIPATE: explore the GEOMETOR Elements Codex & participate
+
+Explore the interactive Book Codex, symbolic model, and dependency tree:
+• Elements Codex (G.82): https://geometor.github.io/elements/elements2/G.82/
+• Heath Edition (II.1): https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/01/
+• GitHub: https://github.com/geometor/elements
+
+GEOMETOR • G.82 • v2
+
+================================================================================
+TAGS
+================================================================================
+Euclid, Euclid's Elements, Euclid II.1, G.82, Geometry, Constructive Geometry, Compass and Straightedge, Mathematical Proof, GEOMETOR, Thomas Little Heath
+
+================================================================================
+MEDIA & CAPTIONS FILES
+================================================================================
+• 9:16 Short MP4 : II_01_short.mp4
+• 16:9 1080p MP4 : II_01_1080p.mp4
+• Closed Captions: II_01.srt
+• 16:9 Thumbnail : II_01_thumb.png
+• 9:16 Thumbnail : II_01_short_thumb.png

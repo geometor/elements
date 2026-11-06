@@ -1,18 +1,18 @@
 :canonical_id: G.141
 :original_id: III.33
-:title: G.141 describe on a given segment a segment of
+:title: G.141 construct a circle segment on a chord admitting a given angle
 :volume: II
 :book: III
 :type: prop
 
-G.141 describe on a given segment a segment of — Code
-=====================================================
+G.141 construct a circle segment on a chord admitting a given angle — Code
+==========================================================================
 
 .. rubric:: `III.33 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/33/>`_
 
 .. enunciation::
 
-   Describe on a given :term:`segment <G.4>` a :term:`segment of a circle <G.126>` admitting an :term:`angle <G.22>` equal to a given angle.
+   On a given :term:`segment <G.4>`, construct a :term:`segment of a circle <G.126>` admitting an :term:`angle <G.22>` equal to a given :term:`rectilineal angle <G.30>`.
 
 .. rubric:: ``g1.py``
 

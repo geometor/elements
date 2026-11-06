@@ -1,0 +1,19 @@
+[bell:proposition]
+[style:brisk]
+Euclid's Elements, Book One, Proposition Twenty-Eight. <pause>
+If a transversal cutting two lines makes the exterior angle equal to the opposite interior angle, or the interior angles on the same side supplementary, the lines are parallel. <pause>
+Let segment E F fall on segments A B and C D at points G and H, making exterior angle E G B equal to opposite interior angle G H D, or interior angles B G H and G H D equal to two right angles. <pause>
+We prove that segment A B is parallel to segment C D.
+
+[bell:construction]
+[style:brisk]
+First, suppose exterior angle E G B equals interior angle G H D. <pause>
+By Proposition Fifteen, vertical angles E G B and A G H are equal. <pause>
+By Common Notion One, alternate interior angles A G H and G H D are equal, and therefore by Proposition Twenty-Seven, segment A B is parallel to segment C D.
+
+[bell:insight]
+[style:brisk]
+Second, suppose interior angles B G H and G H D sum to two right angles. <pause>
+By Proposition Thirteen, adjacent angles A G H and B G H also sum to two right angles. <pause>
+Subtracting common angle B G H from each by Common Notion Three leaves alternate angles A G H and G H D equal. <pause>
+Therefore by Proposition Twenty-Seven, segment A B is parallel to segment C D, <pause> as was required to prove.

@@ -2,7 +2,7 @@
 :number: 91
 :canonical_id: G.91
 :original_id: II.9
-:title: G.91 sum of squares equal unequal
+:title: G.91 sum of squares on unequal parts
 :volume: I
 :book: II
 :type: prop
@@ -10,176 +10,53 @@
 :categories: theorem, proof, plane-geometry, geometric-algebra
 :category: theorem, proof, plane-geometry, geometric-algebra
 :tags: book-ii, point, segment, angle, straight-line, square, right-angle, parallel-straight-lines, plane-angle, equality
-:dependencies: G.1, G.4, G.14, G.22, G.27, G.33, G.34, G.56, G.59, G.62, G.63, G.79
-:excerpt: If a segment be cut into equal and unequal segments, the squares on the unequal segments of the whole are double of the square on the half and of the square on the segment between the points of section.
+:dependencies: G.1, G.4, G.14, G.16, G.21, G.25, G.27, G.34, G.36, G.56, G.58, G.59, G.62, G.63, G.79
+:excerpt: If a segment is cut into equal and unequal parts, the sum of the squares on the unequal parts is double the sum of the square on the half and the square on the segment between the points of section.
 
 .. _G.91:
 .. _II.9:
 
-G.91 sum of squares equal unequal
-=================================
+G.91 sum of squares on unequal parts
+====================================
 
 .. rubric:: `II.9 <https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/09/>`_
 
 .. enunciation::
 
-   If a :term:`segment <G.4>` be cut into equal and unequal segments, the :term:`squares <G.63>` on the unequal segments of the whole are double of the square on the half and of the square on the segment between the :term:`points <G.1>` of section.
+   If a :term:`segment <G.4>` is cut into equal and unequal parts, the sum of the :term:`squares <G.63>` on the unequal parts is double the sum of the square on the half and the square on the segment between the :term:`points <G.1>` of section.
 
 .. signature:: theorem
 
-   | :fn:`sum_of_squares_equal_unequal <G.91>`\ ()
-   | **prove** the squares on :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` are double of the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C D / <g1:/ C D />`
+   | :fn:`sum_of_squares_equal_unequal <G.91>`\ (:g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`, :g:`D <g1:D>`)
+   | **given** :g:`/ A B / <g1:/ A B />` (:g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ C B />` :g:`/ C B / <g1:/ C B />`, :g:`D <g1:D>` ∈ :g:`/ C B / <g1:/ C B />`)
+   | **prove** :fn:`square <G.63>`\ (:g:`/ A D / <g1:/ A D />`) + :fn:`square <G.63>`\ (:g:`/ D B / <g1:/ D B />`) = 2 · (:fn:`square <G.63>`\ (:g:`/ A C / <g1:/ A C />`) + :fn:`square <G.63>`\ (:g:`/ C D / <g1:/ C D />`))
 
 .. picture:: g1.svg
    :alt: Diagram
 
-.. step:: construct
+.. step:: given
 
-   Let a segment :g:`/ A B / <g1:/ A B />` be cut into :eq:`equal <g1:/ A C / = g1:/ C B />` segments at :g:`C <g1:C>`, and into unequal segments at :g:`D <g1:D>`
+   :g:`/ A B / <g1:/ A B />` cut equally at :g:`C <g1:C>` (:g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ C B />` :g:`/ C B / <g1:/ C B />`) and unequally at :g:`D <g1:D>`
 
-.. step:: construct
+.. step:: construct ∵ perpendicular_at, cut_equal_segment, segment, parallel_line <G.34, G.21, G.14, G.58>
 
-   :fn:`perpendicular_at <G.34>`\ (:g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`) → :g:`/ C E / <g1:/ C E />`
+   :fn:`perpendicular_at <G.34>`\ (:g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`) → :g:`/ C E / <g1:/ C E />` (:eq:`= <g1:/ C E / = g1:/ A C / = g1:/ C B />` :g:`/ A C / <g1:/ A C />`), join :g:`/ E A / <g1:/ E A />`, :g:`/ E B / <g1:/ E B />`, draw :g:`/ D F / <g1:/ D F />` ∥ :g:`/ C E / <g1:/ C E />`, :g:`/ F G / <g1:/ G F />` ∥ :g:`/ A B / <g1:/ A B />`, join :g:`/ A F / <g1:/ A F />`
 
-.. step:: construct
+.. step:: assert ∵ isosceles_base_angles, triangle_angle_sum, parallel_transversal_angles, equal_angles_isosceles <G.25, G.59, G.56, G.27>
 
-   Let it be made :eq:`equal <g1:/ C E / = g1:/ A C / = g1:/ C B />` to either :g:`/ A C / <g1:/ A C />` or :g:`/ C B / <g1:/ C B />`
+   :g:`< C A E ) <g1:< E A C )>` :eq:`= <g1:< E A C ) = g1:< A E C ) = g1:< C E B ) = g1:< E B C )>` :g:`< C E A ) <g1:< A E C )>` :eq:`= <g1:< A E C ) = g1:< C E B )>` :g:`< C E B ) <g1:< C E B )>` :eq:`= <g1:< C E B ) = g1:< E B C )>` :g:`< E B C ) <g1:< E B C )>` = ½ right → :g:`< A E B ) <g1:< A E B )>` is right, :g:`/ E G / <g1:/ G E />` :eq:`= <g1:/ G E / = g1:/ G F />` :g:`/ G F / <g1:/ G F />`, :g:`/ F D / <g1:/ D F />` :eq:`= <g1:/ D F / = g1:/ D B />` :g:`/ D B / <g1:/ D B />`
 
-.. step:: construct
+.. step:: assert ∵ pythagorean_theorem, parallelogram_properties <G.79, G.62>
 
-   :fn:`segment <G.14>`\ (:g:`E <g1:E>`, :g:`A <g1:A>`) → :g:`/ E A / <g1:/ E A />`, :fn:`segment <G.14>`\ (:g:`E <g1:E>`, :g:`B <g1:B>`) → :g:`/ E B / <g1:/ E B />`
+   :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ C E />` :g:`/ C E / <g1:/ C E />` → :fn:`square <G.63>`\ (:g:`/ E A / <g1:/ E A />`) = 2 · :fn:`square <G.63>`\ (:g:`/ A C / <g1:/ A C />`); :g:`/ E G / <g1:/ G E />` :eq:`= <g1:/ G E / = g1:/ G F / = g1:/ C D />` :g:`/ G F / <g1:/ G F />` :eq:`= <g1:/ G F / = g1:/ C D />` :g:`/ C D / <g1:/ C D />` → :fn:`square <G.63>`\ (:g:`/ E F / <g1:/ E F />`) = 2 · :fn:`square <G.63>`\ (:g:`/ C D / <g1:/ C D />`)
 
-.. step:: construct
+.. step:: assert ∵ pythagorean_theorem, add_equals <G.79, G.36>
 
-   :fn:`segment <G.14>`\ (:g:`D <g1:D>`, :g:`F <g1:F>`) → :g:`/ D F / <g1:/ D F />`, :fn:`segment <G.14>`\ () → :g:`D <g1:D>`, :fn:`segment <G.14>`\ (:g:`E <g1:E>`, :g:`C <g1:C>`) → :g:`/ E C / <g1:/ E C />`, :fn:`segment <G.14>`\ (:g:`F <g1:F>`, :g:`G <g1:G>`) → :g:`/ F G / <g1:/ F G />`, :fn:`segment <G.14>`\ () → :g:`F <g1:F>`, :fn:`segment <G.14>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`) → :g:`/ A B / <g1:/ A B />`, :fn:`segment <G.14>`\ (:g:`A <g1:A>`, :g:`F <g1:F>`) → :g:`/ A F / <g1:/ A F />`
+   :fn:`square <G.63>`\ (:g:`/ A F / <g1:/ A F />`) = :fn:`square <G.63>`\ (:g:`/ A E / <g1:/ E A />`) + :fn:`square <G.63>`\ (:g:`/ E F / <g1:/ E F />`) = :fn:`square <G.63>`\ (:g:`/ A D / <g1:/ A D />`) + :fn:`square <G.63>`\ (:g:`/ D F / <g1:/ D F />`) = 2 · (:fn:`square <G.63>`\ (:g:`/ A C / <g1:/ A C />`) + :fn:`square <G.63>`\ (:g:`/ C D / <g1:/ C D />`))
 
-.. step:: assert
+.. step:: conclude ∵ equal_transitive <G.16>
 
-   :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ C E />` :g:`/ C E / <g1:/ C E />`, :g:`< E A C ) <g1:< E A C )>` :eq:`= <g1:< E A C ) = g1:< A E C )>` :g:`< A E C ) <g1:< A E C )>`
-
-.. step:: assert ∵ triangle_angle_sum <G.59>
-
-   since the :term:`angle <G.22>` at :g:`C <g1:C>` is right, the remaining angles :g:`< E A C ) <g1:< E A C )>`, :g:`< A E C ) <g1:< A E C )>` are equal to one :term:`right angle <G.33>`
-
-.. step:: assert
-
-   They are :eq:`= <g1:< E A C ) = g1:< A E C )>`
-
-.. step:: assert
-
-   each of :g:`< C E A ) <g1:< C E A )>`, :g:`< C A E ) <g1:< C A E )>` is half a right angle
-
-.. step:: assert
-
-   The same reason each of :g:`< C E B ) <g1:< C E B )>`, :g:`< E B C ) <g1:< E B C )>` is also half a right angle
-
-.. step:: assert
-
-   :g:`< A E B ) <g1:< A E B )>` is right
-
-.. step:: assert ∵ parallel_transversal_angles <G.56>
-
-   since :g:`< G E F ) <g1:< G E F )>` is half a right angle, and :g:`< E G F ) <g1:< E G F )>` is :eq:`right <g1:< E G F ) = g1:< E C B )>`, for it :eq:`= <g1:< E G F ) = g1:< E C B )>` the interior and opposite angle :g:`< E C B ) <g1:< E C B )>`
-
-.. step:: assert ∵ triangle_angle_sum <G.59>
-
-   :g:`< E F G ) <g1:< E F G )>` is half a right angle
-
-.. step:: assert
-
-   :g:`< G E F ) <g1:< G E F )>` :eq:`= <g1:< G E F ) = g1:< E F G )>` :g:`< E F G ) <g1:< E F G )>`,
-
-.. step:: assert ∵ equal_angles_isosceles <G.27>
-
-   So that :g:`/ E G / <g1:/ E G />` :eq:`= <g1:/ E G / = g1:/ G F />` :g:`/ G F / <g1:/ G F />`
-
-.. step:: assert ∵ parallel_transversal_angles <G.56>
-
-   the angle at :g:`B <g1:B>` is half a right angle, and :g:`< F D B ) <g1:< F D B )>` is :eq:`right <g1:< F D B ) = g1:< E C B )>`, for it is again :eq:`= <g1:< F D B ) = g1:< E C B )>` to the interior and opposite angle :g:`< E C B ) <g1:< E C B )>`
-
-.. step:: assert ∵ triangle_angle_sum <G.59>
-
-   :g:`< B F D ) <g1:< B F D )>` is half a right angle
-
-.. step:: assert
-
-   the angle at :g:`B <g1:B>` :eq:`= <g1:< E B C ) = g1:< D F B )>` :g:`< D F B ) <g1:< D F B )>`,
-
-.. step:: assert ∵ equal_angles_isosceles <G.27>
-
-   So that :g:`/ F D / <g1:/ F D />` :eq:`= <g1:/ F D / = g1:/ D B />` :g:`/ D B / <g1:/ D B />`
-
-.. step:: assert
-
-   :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ C E />` :g:`/ C E / <g1:/ C E />`, the square on :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ C E />` the square on :g:`/ C E / <g1:/ C E />`
-
-.. step:: assert
-
-   the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C E / <g1:/ C E />` are double of the square on :g:`/ A C / <g1:/ A C />`
-
-.. step:: assert ∵ pythagorean_theorem <G.79>
-
-   The square on :g:`/ E A / <g1:/ E A />` is equal to the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C E / <g1:/ C E />`, for :g:`< A C E ) <g1:< A C E )>` is right
-
-.. step:: assert
-
-   the square on :g:`/ E A / <g1:/ E A />` is double of the square on :g:`/ A C / <g1:/ A C />`
-
-.. step:: assert
-
-   :g:`/ E G / <g1:/ E G />` :eq:`= <g1:/ E G / = g1:/ G F />` :g:`/ G F / <g1:/ G F />`, the square on :g:`/ E G / <g1:/ E G />` :eq:`= <g1:/ E G / = g1:/ G F />` the square on :g:`/ G F / <g1:/ G F />`
-
-.. step:: assert
-
-   the squares on :g:`/ E G / <g1:/ E G />`, :g:`/ G F / <g1:/ G F />` are double of the square on :g:`/ G F / <g1:/ G F />`
-
-.. step:: assert
-
-   The square on :g:`/ E F / <g1:/ E F />` is equal to the squares on :g:`/ E G / <g1:/ E G />`, :g:`/ G F / <g1:/ G F />`
-
-.. step:: assert
-
-   the square on :g:`/ E F / <g1:/ E F />` is double of the square on :g:`/ G F / <g1:/ G F />`
-
-.. step:: assert ∵ parallelogram_properties <G.62>
-
-   :g:`/ G F / <g1:/ G F />` :eq:`= <g1:/ G F / = g1:/ C D />` :g:`/ C D / <g1:/ C D />`
-
-.. step:: assert
-
-   the square on :g:`/ E F / <g1:/ E F />` is double of the square on :g:`/ C D / <g1:/ C D />`
-
-.. step:: assert
-
-   The square on :g:`/ E A / <g1:/ E A />` is also double of the square on :g:`/ A C / <g1:/ A C />`
-
-.. step:: assert
-
-   the squares on :g:`/ A E / <g1:/ A E />`, :g:`/ E F / <g1:/ E F />` are double of the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C D / <g1:/ C D />`
-
-.. step:: assert ∵ pythagorean_theorem <G.79>
-
-   The square on :g:`/ A F / <g1:/ A F />` is equal to the squares on :g:`/ A E / <g1:/ A E />`, :g:`/ E F / <g1:/ E F />`, for :g:`< A E F ) <g1:< A E F )>` is right
-
-.. step:: assert
-
-   the square on :g:`/ A F / <g1:/ A F />` is double of the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C D / <g1:/ C D />`
-
-.. step:: assert ∵ pythagorean_theorem <G.79>
-
-   The squares on :g:`/ A D / <g1:/ A D />`, :g:`/ D F / <g1:/ D F />` are equal to the square on :g:`/ A F / <g1:/ A F />`, for the angle at :g:`D <g1:D>` is right
-
-.. step:: assert
-
-   the squares on :g:`/ A D / <g1:/ A D />`, :g:`/ D F / <g1:/ D F />` are double of the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C D / <g1:/ C D />`
-
-.. step:: assert
-
-   :g:`/ D F / <g1:/ D F />` :eq:`= <g1:/ D F / = g1:/ D B />` :g:`/ D B / <g1:/ D B />`
-
-.. step:: conclude
-
-   the squares on :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` are double of the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ C D / <g1:/ C D />`
+   :g:`/ D F / <g1:/ D F />` :eq:`= <g1:/ D F / = g1:/ D B />` :g:`/ D B / <g1:/ D B />` → :fn:`square <G.63>`\ (:g:`/ A D / <g1:/ A D />`) + :fn:`square <G.63>`\ (:g:`/ D B / <g1:/ D B />`) = 2 · (:fn:`square <G.63>`\ (:g:`/ A C / <g1:/ A C />`) + :fn:`square <G.63>`\ (:g:`/ C D / <g1:/ C D />`))
 
 Dependency Graph
 ----------------
@@ -254,7 +131,7 @@ Dependency Graph
      "G.77" [label="G.77", tooltip="G.77 (I.def.12): An acute angle is less than a right angle.", fillcolor="#224422", URL="../G.77/index.html", target="_top"];
      "G.78" [label="G.78", tooltip="G.78 (I.def.21): A right-angled triangle has a right angle, an obtuse-angled triangle has an obtuse angle, and an acute-angled triangle has three acute angles.", fillcolor="#224422", URL="../G.78/index.html", target="_top"];
      "G.79" [label="G.79", tooltip="G.79 (I.47): In a right-angled triangle, the square on the hypotenuse equals the sum of the squares on the two legs (Pythagorean Theorem).", fillcolor="#222244", URL="../G.79/index.html", target="_top"];
-     "G.91" [label="G.91", tooltip="G.91 (II.9): If a segment be cut into equal and unequal segments, the squares on the unequal segments of the whole are double of the square on the half and of the square on the segment between ...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.91" [label="G.91", tooltip="G.91 (II.9): If a segment is cut into equal and unequal parts, the sum of the squares on the unequal parts is double the sum of the square on the half and the square on the segment between the ...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -408,6 +285,7 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.51" -> "G.14";
      "G.58" -> "G.14";
      "G.70" -> "G.14";
@@ -423,16 +301,24 @@ Dependency Graph
      "G.37" -> "G.16";
      "G.39" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.56" -> "G.16";
+     "G.59" -> "G.16";
      "G.64" -> "G.16";
+     "G.66" -> "G.16";
+     "G.70" -> "G.16";
+     "G.75" -> "G.16";
+     "G.91" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
      "G.34" -> "G.17";
      "G.20" -> "G.18";
      "G.25" -> "G.18";
+     "G.39" -> "G.18";
      "G.41" -> "G.18";
      "G.45" -> "G.18";
+     "G.53" -> "G.18";
      "G.58" -> "G.18";
      "G.59" -> "G.18";
      "G.66" -> "G.18";
@@ -450,7 +336,9 @@ Dependency Graph
      "G.43" -> "G.21";
      "G.45" -> "G.21";
      "G.47" -> "G.21";
+     "G.51" -> "G.21";
      "G.75" -> "G.21";
+     "G.91" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
      "G.27" -> "G.22";
@@ -483,7 +371,6 @@ Dependency Graph
      "G.77" -> "G.22";
      "G.78" -> "G.22";
      "G.79" -> "G.22";
-     "G.91" -> "G.22";
      "G.24" -> "G.23";
      "G.29" -> "G.23";
      "G.25" -> "G.24";
@@ -495,12 +382,17 @@ Dependency Graph
      "G.64" -> "G.24";
      "G.79" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
+     "G.91" -> "G.25";
      "G.27" -> "G.26";
      "G.28" -> "G.26";
+     "G.39" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.51" -> "G.26";
      "G.91" -> "G.27";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
@@ -523,15 +415,16 @@ Dependency Graph
      "G.77" -> "G.33";
      "G.78" -> "G.33";
      "G.79" -> "G.33";
-     "G.91" -> "G.33";
      "G.37" -> "G.34";
      "G.75" -> "G.34";
      "G.91" -> "G.34";
      "G.37" -> "G.36";
      "G.56" -> "G.36";
+     "G.59" -> "G.36";
      "G.62" -> "G.36";
      "G.64" -> "G.36";
      "G.79" -> "G.36";
+     "G.91" -> "G.36";
      "G.39" -> "G.37";
      "G.40" -> "G.37";
      "G.56" -> "G.37";
@@ -571,6 +464,7 @@ Dependency Graph
      "G.66" -> "G.58";
      "G.75" -> "G.58";
      "G.79" -> "G.58";
+     "G.91" -> "G.58";
      "G.91" -> "G.59";
      "G.62" -> "G.61";
      "G.66" -> "G.61";

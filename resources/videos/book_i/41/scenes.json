@@ -1,0 +1,173 @@
+[
+  {
+    "bell": "proposition",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 41",
+        "g_id": "G.70",
+        "folio": "Folio 0352 • p. 338",
+        "enunciation": "If a parallelogram have the same base with a triangle and be in the same parallels, the parallelogram is double of the triangle.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0352.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0352.g1.png",
+        "step_num": 1,
+        "total_steps": 5,
+        "step_kind": "GIVEN",
+        "symbolic": "< A B C D >, < E B C > (/ B C / ∥ / A E /)",
+        "clause_html": "<span class=\"g-tok\">&lt; A B C D &gt;</span>, <span class=\"g-tok\">&lt; E B C &gt;</span> (<span class=\"g-tok\">/ B C /</span> ∥ <span class=\"g-tok\">/ A E /</span>)",
+        "just_id": "GIVEN",
+        "just_title": "prove: < A B C D > = 2 < E B C >",
+        "visible_ids": [
+          "el-poly-ABCD", "el-poly-EBC",
+          "el-seg-AE", "el-seg-AD", "el-seg-DE", "el-seg-BC",
+          "el-seg-AB", "el-seg-CD", "el-seg-EB", "el-seg-EC",
+          "hl-poly-ABCD", "hl-poly-EBC", "hl-seg-BC", "hl-seg-AE",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E"
+        ],
+        "active_ids": [
+          "hl-poly-ABCD", "hl-poly-EBC", "hl-seg-BC", "hl-seg-AE",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E"
+        ],
+        "equal_ids": []
+      }
+    ]
+  },
+  {
+    "bell": "construction",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 41",
+        "g_id": "G.70",
+        "folio": "Folio 0352 • p. 338",
+        "enunciation": "If a parallelogram have the same base with a triangle and be in the same parallels, the parallelogram is double of the triangle.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0352.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0352.g1.png",
+        "step_num": 2,
+        "total_steps": 5,
+        "step_kind": "CONSTRUCT",
+        "symbolic": "segment(A, C) → / A C /",
+        "clause_html": "<span class=\"fn-tok\">segment</span>(<span class=\"g-tok\">A</span>, <span class=\"g-tok\">C</span>) → <span class=\"g-tok\">/ A C /</span>",
+        "just_id": "G.14 • I.Post.1",
+        "just_title": "segment",
+        "visible_ids": [
+          "el-poly-ABCD", "el-poly-EBC", "el-poly-ABC", "el-poly-ADC",
+          "el-seg-AE", "el-seg-AD", "el-seg-DE", "el-seg-BC",
+          "el-seg-AB", "el-seg-CD", "el-seg-AC", "el-seg-EB", "el-seg-EC",
+          "hl-seg-AC", "hl-poly-ABC",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E"
+        ],
+        "active_ids": [
+          "hl-seg-AC", "hl-poly-ABC",
+          "el-pt-A", "el-pt-C", "lbl-A", "lbl-C"
+        ],
+        "equal_ids": []
+      }
+    ]
+  },
+  {
+    "bell": "insight",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 41",
+        "g_id": "G.70",
+        "folio": "Folio 0352 • p. 338",
+        "enunciation": "If a parallelogram have the same base with a triangle and be in the same parallels, the parallelogram is double of the triangle.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0352.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0352.g1.png",
+        "step_num": 3,
+        "total_steps": 5,
+        "step_kind": "ASSERT",
+        "symbolic": "/ B C / ∥ / A E / → < A B C > = < E B C >",
+        "clause_html": "<span class=\"g-tok\">/ B C /</span> ∥ <span class=\"g-tok\">/ A E /</span> → <span class=\"g-tok\">&lt; A B C &gt;</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; E B C &gt;</span>",
+        "just_id": "G.66 • I.37",
+        "just_title": "triangles_same_base",
+        "visible_ids": [
+          "el-poly-ABCD", "el-poly-EBC", "el-poly-ABC", "el-poly-ADC",
+          "el-seg-AE", "el-seg-AD", "el-seg-DE", "el-seg-BC",
+          "el-seg-AB", "el-seg-CD", "el-seg-AC", "el-seg-EB", "el-seg-EC",
+          "hl-seg-BC", "hl-seg-AE", "hl-poly-ABC", "hl-poly-EBC",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E"
+        ],
+        "active_ids": [
+          "hl-seg-BC", "hl-seg-AE",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-E",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-E"
+        ],
+        "equal_ids": [
+          "hl-poly-ABC", "hl-poly-EBC"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 41",
+        "g_id": "G.70",
+        "folio": "Folio 0352 • p. 338",
+        "enunciation": "If a parallelogram have the same base with a triangle and be in the same parallels, the parallelogram is double of the triangle.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0352.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0352.g1.png",
+        "step_num": 4,
+        "total_steps": 5,
+        "step_kind": "ASSERT",
+        "symbolic": "/ A C / ∈ < A B C D > → < A B C D > = 2 < A B C >",
+        "clause_html": "<span class=\"g-tok\">/ A C /</span> ∈ <span class=\"g-tok\">&lt; A B C D &gt;</span> → <span class=\"g-tok\">&lt; A B C D &gt;</span> <span class=\"eq-tok\">=</span> 2 <span class=\"g-tok\">&lt; A B C &gt;</span>",
+        "just_id": "G.62 • I.34",
+        "just_title": "parallelogram_properties",
+        "visible_ids": [
+          "el-poly-ABCD", "el-poly-EBC", "el-poly-ABC", "el-poly-ADC",
+          "el-seg-AE", "el-seg-AD", "el-seg-DE", "el-seg-BC",
+          "el-seg-AB", "el-seg-CD", "el-seg-AC", "el-seg-EB", "el-seg-EC",
+          "hl-poly-ABCD", "hl-seg-AC", "hl-poly-ABC", "hl-poly-ADC",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E"
+        ],
+        "active_ids": [
+          "hl-poly-ABCD", "hl-seg-AC",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D"
+        ],
+        "equal_ids": [
+          "hl-poly-ABC", "hl-poly-ADC"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 41",
+        "g_id": "G.70",
+        "folio": "Folio 0352 • p. 338",
+        "enunciation": "If a parallelogram have the same base with a triangle and be in the same parallels, the parallelogram is double of the triangle.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0352.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0352.g1.png",
+        "step_num": 5,
+        "total_steps": 5,
+        "step_kind": "∴",
+        "symbolic": "< A B C D > = 2 < A B C >, < A B C > = < E B C > → < A B C D > = 2 < E B C >",
+        "clause_html": "<span class=\"g-tok\">&lt; A B C D &gt;</span> <span class=\"eq-tok\">=</span> 2 <span class=\"g-tok\">&lt; A B C &gt;</span>, <span class=\"g-tok\">&lt; A B C &gt;</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; E B C &gt;</span> → <span class=\"g-tok\">&lt; A B C D &gt;</span> <span class=\"eq-tok\">=</span> 2 <span class=\"g-tok\">&lt; E B C &gt;</span>",
+        "just_id": "G.16 • I.C.N.1",
+        "just_title": "equal_transitive",
+        "visible_ids": [
+          "el-poly-ABCD", "el-poly-EBC", "el-poly-ABC", "el-poly-ADC",
+          "el-seg-AE", "el-seg-AD", "el-seg-DE", "el-seg-BC",
+          "el-seg-AB", "el-seg-CD", "el-seg-AC", "el-seg-EB", "el-seg-EC",
+          "hl-poly-ABCD", "hl-seg-BC", "hl-seg-AE",
+          "hl-poly-ABC", "hl-poly-ADC", "hl-poly-EBC",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E"
+        ],
+        "active_ids": [
+          "hl-poly-ABCD", "hl-seg-BC", "hl-seg-AE",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E"
+        ],
+        "equal_ids": [
+          "hl-poly-ABC", "hl-poly-ADC", "hl-poly-EBC"
+        ]
+      }
+    ]
+  }
+]

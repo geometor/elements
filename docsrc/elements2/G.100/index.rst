@@ -2,7 +2,7 @@
 :number: 100
 :canonical_id: G.100
 :original_id: III.3
-:title: G.100 circle segment center
+:title: G.100 diameter bisects chord iff perpendicular
 :volume: II
 :book: III
 :type: prop
@@ -10,93 +10,53 @@
 :categories: theorem, proof, plane-geometry, circles
 :category: theorem, proof, plane-geometry, circles
 :tags: book-iii, point, segment, circle, angle, triangle, straight-line, centre, right-angle, plane-angle, trilateral, bisect, equality
-:dependencies: G.4, G.10, G.11, G.12, G.14, G.22, G.25, G.29, G.33, G.51
-:excerpt: If in a circle a segment through the center bisect a segment not through the center, it also cuts it at right angles; and if it cut it at right angles, it also bisects it.
+:dependencies: G.4, G.10, G.11, G.14, G.22, G.25, G.29, G.33, G.51
+:excerpt: A segment through the center of a circle bisects a chord not through the center if and only if it cuts the chord at right angles.
 
 .. _G.100:
 .. _III.3:
 
-G.100 circle segment center
-===========================
+G.100 diameter bisects chord iff perpendicular
+==============================================
 
 .. rubric:: `III.3 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/03/>`_
 
 .. enunciation::
 
-   If in a :term:`circle <G.10>` a :term:`segment <G.4>` through the :term:`center <G.11>` bisect a segment not through the center, it also cuts it :term:`at right angles <G.33>`; and if it cut it at right angles, it also bisects it.
+   A :term:`segment <G.4>` through the :term:`center <G.11>` of a :term:`circle <G.10>` bisects a chord not through the center if and only if it cuts the chord :term:`at right angles <G.33>`.
 
 .. signature:: theorem
 
-   | :fn:`circle_segment_center <G.100>`\ (:g:`( A B C ) <g1:( A B C )>`, :g:`/ C D / <g1:/ C D />`, :g:`/ A B / <g1:/ A B />`, :g:`F <g1:F>`)
-   | **given** :g:`( A B C ) <g1:( A B C )>` be a circle, in it let a segment :g:`/ C D / <g1:/ C D />` through the center :eq:`bisect <g1:/ A F / = g1:/ F B />` a segment :g:`/ A B / <g1:/ A B />` not through the center at :g:`F <g1:F>`
-   | **prove** it also cuts it at :eq:`right angles <g1:< A F E ) = g1:< B F E )>`; it also :eq:`bisects <g1:/ A F / = g1:/ F B />` it, that is, that :g:`/ A F / <g1:/ A F />` :eq:`= <g1:/ A F / = g1:/ F B />` :g:`/ F B / <g1:/ F B />`
+   | :fn:`diameter_bisects_chord_perpendicular <G.100>`\ (:g:`( A B C ) <g1:( A B C )>`, :g:`/ C D / <g1:/ C D />`, :g:`/ A B / <g1:/ A B />`, :g:`F <g1:F>`)
+   | **given** :g:`( A B C ) <g1:( A B C )>`, diameter :g:`/ C D / <g1:/ C D />`, chord :g:`/ A B / <g1:/ A B />` (:g:`F <g1:F>` = :g:`/ C D / <g1:/ C D />` ∩ :g:`/ A B / <g1:/ A B />`)
+   | **prove** :g:`/ A F / <g1:/ A F />` :eq:`= <g1:/ A F / = g1:/ F B />` :g:`/ F B / <g1:/ F B />` ⇔ :g:`/ C D / <g1:/ C D />` ⊥ :g:`/ A B / <g1:/ A B />`
 
 .. picture:: g1.svg
    :alt: Proposition 3
 
-.. step:: given
+.. step:: given ∵ circle_radii <G.10>
 
-   :g:`( A B C ) <g1:( A B C )>` be a circle, in it let a segment :g:`/ C D / <g1:/ C D />` through the center :eq:`bisect <g1:/ A F / = g1:/ F B />` a segment :g:`/ A B / <g1:/ A B />` not through the center at :g:`F <g1:F>`
+   :g:`( A B C ) <g1:( A B C )>`, diameter :g:`/ C D / <g1:/ C D />` through center, chord :g:`/ A B / <g1:/ A B />` not through center, :g:`F <g1:F>` = :g:`/ C D / <g1:/ C D />` ∩ :g:`/ A B / <g1:/ A B />`
 
-.. step:: construct
+.. step:: construct ∵ circle_center, segment <G.11, G.14>
 
-   Let the center of :g:`( A B C ) <g1:( A B C )>` be taken
+   Take center :g:`E <g1:E>` of :g:`( A B C ) <g1:( A B C )>`; :fn:`segment <G.14>`\ (:g:`E <g1:E>`, :g:`A <g1:A>`, :g:`B <g1:B>`) → :g:`/ E A / <g1:/ E A />`, :g:`/ E B / <g1:/ E B />`
 
-.. step:: assert
+.. step:: assert ∵ circle_radii, sss_congruence, right_angle_perpendicular <G.10, G.29, G.33>
 
-   Let it be :g:`E <g1:E>`
+   If :g:`/ A F / <g1:/ A F />` :eq:`= <g1:/ A F / = g1:/ F B />` :g:`/ F B / <g1:/ F B />`, with :g:`/ F E / <g1:/ F E />` common and :g:`/ E A / <g1:/ E A />` :eq:`= <g1:/ E A / = g1:/ E B />` :g:`/ E B / <g1:/ E B />` → :g:`< A F E ) <g1:< A F E )>` :eq:`= <g1:< A F E ) = g1:< B F E )>` :g:`< B F E ) <g1:< B F E )>` is right (:g:`/ C D / <g1:/ C D />` ⊥ :g:`/ A B / <g1:/ A B />`)
 
-.. step:: construct
+.. step:: assert ∵ circle_radii, isosceles_base_angles <G.10, G.25>
 
-   :fn:`segment <G.14>`\ (:g:`E <g1:E>`, :g:`A <g1:A>`) → :g:`/ E A / <g1:/ E A />`, :fn:`segment <G.14>`\ (:g:`E <g1:E>`, :g:`B <g1:B>`) → :g:`/ E B / <g1:/ E B />`
-
-.. step:: assert
-
-   :g:`/ A F / <g1:/ A F />` :eq:`= <g1:/ A F / = g1:/ F B />` :g:`/ F B / <g1:/ F B />`, and :g:`/ F E / <g1:/ F E />` is common → two sides :eq:`= <g1:/ A F / = g1:/ F B />` two sides
-
-.. step:: assert
-
-   :g:`/ E A / <g1:/ E A />` :eq:`= <g1:/ E A / = g1:/ E B />` :g:`/ E B / <g1:/ E B />`
-
-.. step:: assert ∵ sss_congruence <G.29>
-
-   :g:`< A F E ) <g1:< A F E )>` :eq:`= <g1:< A F E ) = g1:< B F E )>` :g:`< B F E ) <g1:< B F E )>`
-
-.. step:: assert ∵ right_angle_perpendicular <G.33>
-
-   But, when a segment set up on a segment makes the adjacent :term:`angles <G.22>` equal to one another, each of the equal angles is right
-
-.. step:: assert
-
-   each of :g:`< A F E ) <g1:< A F E )>`, :g:`< B F E ) <g1:< B F E )>` is :eq:`right <g1:< A F E ) = g1:< B F E )>`
-
-.. step:: assert
-
-   :g:`/ C D / <g1:/ C D />`, which is through the center, and :eq:`bisects <g1:/ A F / = g1:/ F B />` :g:`/ A B / <g1:/ A B />` which is not through the center, also cuts it at :eq:`right angles <g1:< A F E ) = g1:< B F E )>`
-
-.. step:: assert
-
-   Let :g:`/ C D / <g1:/ C D />` cut :g:`/ A B / <g1:/ A B />` at :eq:`right angles <g1:< A F E ) = g1:< B F E )>`
-
-.. step:: assert
-
-   With the same construction → since :g:`/ E A / <g1:/ E A />` :eq:`= <g1:/ E A / = g1:/ E B />` :g:`/ E B / <g1:/ E B />`,
-
-.. step:: assert ∵ isosceles_base_angles <G.25>
-
-   :g:`< E A F ) <g1:< E A F )>` :eq:`= <g1:< E A F ) = g1:< E B F )>` :g:`< E B F ) <g1:< E B F )>`
-
-.. step:: assert
-
-   The right angle :g:`< A F E ) <g1:< A F E )>` :eq:`= <g1:< A F E ) = g1:< B F E )>` the right angle :g:`< B F E ) <g1:< B F E )>`, therefore :g:`< E A F > <g1:< E A F >>`, :g:`< E B F > <g1:< E B F >>` are two :term:`triangles <G.12>` having two angles :eq:`= <g1:< E A F ) = g1:< E B F ); g1:< A F E ) = g1:< B F E )>` to two angles and one side equal to one side, namely :g:`/ E F / <g1:/ E F />`, which is common to them, and subtends one of the :eq:`= <g1:< E A F ) = g1:< E B F )>` angles
+   Conversely, if :g:`< A F E ) <g1:< A F E )>` :eq:`= <g1:< A F E ) = g1:< B F E )>` :g:`< B F E ) <g1:< B F E )>` are right, since :g:`/ E A / <g1:/ E A />` :eq:`= <g1:/ E A / = g1:/ E B />` :g:`/ E B / <g1:/ E B />` → :g:`< E A F ) <g1:< E A F )>` :eq:`= <g1:< E A F ) = g1:< E B F )>` :g:`< E B F ) <g1:< E B F )>`
 
 .. step:: assert ∵ asa_aas_congruence <G.51>
 
-   they will also have the remaining sides :eq:`= <g1:/ A F / = g1:/ F B /; g1:/ E A / = g1:/ E B />` to the remaining sides
+   In :g:`< E A F > <g1:< E A F >>`, :g:`< E B F > <g1:< E B F >>`, two :term:`angles <G.22>` equal two angles and :g:`/ E F / <g1:/ E F />` common → :g:`/ A F / <g1:/ A F />` :eq:`= <g1:/ A F / = g1:/ F B />` :g:`/ F B / <g1:/ F B />`
 
 .. step:: conclude
 
-   :g:`/ A F / <g1:/ A F />` :eq:`= <g1:/ A F / = g1:/ F B />` :g:`/ F B / <g1:/ F B />`
+   :g:`/ A F / <g1:/ A F />` :eq:`= <g1:/ A F / = g1:/ F B />` :g:`/ F B / <g1:/ F B />` ⇔ :g:`/ C D / <g1:/ C D />` ⊥ :g:`/ A B / <g1:/ A B />`
 
 Dependency Graph
 ----------------
@@ -147,7 +107,7 @@ Dependency Graph
      "G.40" [label="G.40", tooltip="G.40 (I.15): Intersecting lines make their vertical angles equal.", fillcolor="#222244", URL="../G.40/index.html", target="_top"];
      "G.41" [label="G.41", tooltip="G.41 (I.16): In any triangle, if one side is extended, the exterior angle is greater than either opposite interior angle.", fillcolor="#222244", URL="../G.41/index.html", target="_top"];
      "G.51" [label="G.51", tooltip="G.51 (I.26): Triangles with two angles and one corresponding side equal are congruent (ASA / AAS).", fillcolor="#222244", URL="../G.51/index.html", target="_top"];
-     "G.100" [label="G.100", tooltip="G.100 (III.3): If in a circle a segment through the center bisect a segment not through the center, it also cuts it at right angles; and if it cut it at right angles, it also bisects it.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.100" [label="G.100", tooltip="G.100 (III.3): A segment through the center of a circle bisects a chord not through the center if and only if it cuts the chord at right angles.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -238,7 +198,6 @@ Dependency Graph
      "G.34" -> "G.12";
      "G.41" -> "G.12";
      "G.51" -> "G.12";
-     "G.100" -> "G.12";
      "G.17" -> "G.13";
      "G.25" -> "G.13";
      "G.17" -> "G.14";
@@ -273,6 +232,7 @@ Dependency Graph
      "G.31" -> "G.21";
      "G.34" -> "G.21";
      "G.41" -> "G.21";
+     "G.51" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
      "G.28" -> "G.22";
@@ -297,6 +257,7 @@ Dependency Graph
      "G.100" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.51" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";

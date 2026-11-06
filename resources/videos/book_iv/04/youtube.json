@@ -1,0 +1,33 @@
+{
+  "prop_id": "BOOK IV \u2022 PROP. 4",
+  "short_code": "IV.4",
+  "g_id": "G.154",
+  "version": 2,
+  "enunciation": "In a given triangle to inscribe a circle.",
+  "title_1080p": "IV.4 \u2022 inscribe a circle in a triangle \u2022 Euclid's Elements",
+  "title_short": "IV.4 \u2022 inscribe a circle in a triangle \u2022 Euclid's Elements",
+  "description": "\u201cIn a given triangle to inscribe a circle.\u201d\n\u2014 Euclid's Elements, BOOK IV \u2022 PROP. 4 (G.154)\n\n00:00 1 \u00b7 GIVEN: given triangle \u27e8 A B C \u27e9\n00:12 2 \u00b7 CONSTRUCT: bisect \u27e8 A B C ) and \u27e8 A C B ) by / B D / and / C D / meeting at D\n00:20 3 \u00b7 CONSTRUCT: drop perpendiculars / D E /, / D F /, / D G / to / A B /, / B C /, / C A /\n00:29 4 \u00b7 ASSERT: \u27e8 E B D \u27e9 \u2243 \u27e8 F B D \u27e9 (AAS) \u2192 / D E / = / D F / = / D G /\n00:49 5 \u00b7 ASSERT: circle ( D E ) passes through E, F, G and touches / A B /, / B C /, / C A /\n01:09 6 \u00b7 \u2234: circle ( E F G ) is inscribed in triangle \u27e8 A B C \u27e9\n01:29 7 \u00b7 COMMENTARY: incenter concurrence, 4 tritangent circles, & Heron's area formula\n01:51 8 \u00b7 GENEALOGY: G.154 dependency tree & symbolic model\n02:14 9 \u00b7 PARTICIPATE: explore the GEOMETOR Elements Codex & participate\n\nExplore the interactive Book Codex, symbolic model, and dependency tree:\n\u2022 Elements Codex (G.154): https://geometor.github.io/elements/elements2/G.154/\n\u2022 Heath Edition (IV.4): https://geometor.github.io/euclid/heath/volume_I/book_iv/propositions/04/\n\u2022 GitHub: https://github.com/geometor/elements\n\nGEOMETOR \u2022 G.154 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid IV.4",
+    "G.154",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_iv/propositions/04/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.154/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iv/04/IV_04_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iv/04/IV_04_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iv/04/IV_04.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iv/04/IV_04_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iv/04/IV_04_short_thumb.png"
+  }
+}

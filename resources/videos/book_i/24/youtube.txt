@@ -1,0 +1,38 @@
+================================================================================
+YOUTUBE 1080P (16:9) TITLE
+================================================================================
+I.24 • if two triangles have the two sides equal to two sides respectively, but have the one of t...
+
+================================================================================
+YOUTUBE SHORT (9:16) TITLE
+================================================================================
+I.24 • if two triangles have the two sides equal to two sides respectively, but have the one of t...
+
+================================================================================
+DESCRIPTION
+================================================================================
+“If two triangles have the two sides equal to two sides respectively, but have the one of the angles contained by the equal straight lines greater than the other, they will also have the base greater than the base.”
+— Euclid's Elements, BOOK I • PROP. 24 (G.49)
+
+00:00 1 · GIVEN: given ⟨ A B C ⟩, ⟨ D E F ⟩ (/ A B / = / D E /, / A C / = / D F /, ⟨ B A C ) ⟩ ⟨ E D F ))
+00:23 2 · CONSTRUCT: copy_angle(/ D E /, D, ⟨ B A C )) → ⟨ E D G ) = ⟨ B A C ), cut_equal_segment(/ A C /) → / D G / = / A C /, segment(E, G) → / E G /, segment(F, G) → / F G /
+00:35 3 · ASSERT: / B A / = / E D /, / A C / = / D G /, ⟨ B A C ) = ⟨ E D G ) → / B C / = / E G /
+00:45 4 · ASSERT: / D F / = / D G / → ⟨ D G F ) = ⟨ D F G ) → ⟨ E F G ) ≫ ⟨ E G F )
+00:54 5 · ASSERT: ⟨ E F G ⟩ (⟨ E F G ) ⟩ ⟨ E G F )) → / E G / ⟩ / E F /
+01:03 6 · ∴: / B C / = / E G /, / E G / ⟩ / E F / → / B C / ⟩ / E F /
+
+GEOMETOR • G.49 • v2
+
+================================================================================
+TAGS
+================================================================================
+Euclid, Euclid's Elements, Euclid I.24, G.49, Geometry, Constructive Geometry, Compass and Straightedge, Mathematical Proof, GEOMETOR, Thomas Little Heath
+
+================================================================================
+MEDIA & CAPTIONS FILES
+================================================================================
+• 9:16 Short MP4 : I_24_short.mp4
+• 16:9 1080p MP4 : I_24_1080p.mp4
+• Closed Captions: I_24.srt
+• 16:9 Thumbnail : I_24_thumb.png
+• 9:16 Thumbnail : I_24_short_thumb.png

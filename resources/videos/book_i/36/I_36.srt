@@ -1,0 +1,43 @@
+1
+00:00:00,420 --> 00:00:03,995
+Euclid's Elements, Book One, Proposition Thirty-Six.
+
+2
+00:00:03,995 --> 00:00:09,081
+Parallelograms on equal bases and in the same parallels are equal in area.
+
+3
+00:00:09,081 --> 00:00:17,262
+Let parallelograms A B C D and E F G H stand on equal bases B C and F G and lie between the same parallels A H and B G.
+
+4
+00:00:17,262 --> 00:00:21,730
+We prove that parallelogram A B C D equals parallelogram E F G H.
+
+5
+00:00:22,150 --> 00:00:26,829
+Construct segments B E and C H joining points B and C to points E and H.
+
+6
+00:00:26,829 --> 00:00:38,200
+Since base B C equals base F G, and by Proposition Thirty-Four opposite side F G equals E H in parallelogram E F G H, Common Notion One gives segment B C equal to segment E H.
+
+7
+00:00:38,620 --> 00:00:47,132
+Segments B C and E H are both equal and parallel, and segments E B and H C join their extremities in the same directions.
+
+8
+00:00:47,132 --> 00:00:55,714
+By Proposition Thirty-Three, segments E B and H C are themselves equal and parallel, so figure E B C H is a parallelogram.
+
+9
+00:00:55,714 --> 00:01:06,196
+By Proposition Thirty-Five, parallelogram E B C H equals parallelogram A B C D, since they share the same base B C between the parallels B C and A H.
+
+10
+00:01:06,196 --> 00:01:13,512
+For the same reason, parallelogram E F G H equals the same parallelogram E B C H on the shared base E H.
+
+11
+00:01:13,512 --> 00:01:21,180
+Therefore by Common Notion One, parallelogram A B C D equals parallelogram E F G H, as was required to prove.

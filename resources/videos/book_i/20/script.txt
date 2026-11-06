@@ -1,0 +1,8 @@
+[bell:proposition]
+[style:brisk] Euclid's Elements, Book One, Proposition Twenty. <pause> In any triangle, the sum of any two sides is greater than the remaining side. <pause> Given triangle A B C, we prove that any two of its sides taken together are greater than the third side.
+
+[bell:construction]
+[style:brisk] Extend side B A to point D so that segment A D equals side A C, and construct segment D C.
+
+[bell:insight]
+[style:brisk] Since A D equals A C in isosceles triangle A D C, base angle A D C equals angle A C D. <pause> Because the whole angle B C D is greater than its part A C D, angle B C D is also greater than angle A D C. <pause> In triangle D B C, the greater angle B C D is subtended by the greater side, so D B is greater than B C. <pause> Since D B is the sum of B A and A D, and A D equals A C, sides B A and A C together are greater than B C, and similarly for the other pairs, <pause> as was required to prove.

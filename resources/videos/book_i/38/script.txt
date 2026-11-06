@@ -1,0 +1,19 @@
+[bell:proposition]
+[style:brisk]
+Euclid's Elements, Book One, Proposition Thirty-Eight. <pause>
+Triangles on equal bases and in the same parallels are equal in area. <pause>
+Let triangles A B C and D E F stand on equal bases B C and E F and lie between the same parallel lines B F and A D. <pause>
+We prove that triangle A B C is equal in area to triangle D E F.
+
+[bell:construction]
+[style:brisk]
+Extend segment A D in both directions to points G and H. <pause>
+By Proposition Thirty-One, through point B draw segment B G parallel to segment C A, and through point F draw segment F H parallel to segment D E.
+
+[bell:insight]
+[style:brisk]
+Then each of the figures G B C A and D E F H is a parallelogram on equal bases B C and E F and between the same parallels B F and G H. <pause>
+By Proposition Thirty-Six, parallelogram G B C A is equal in area to parallelogram D E F H. <pause>
+By Proposition Thirty-Four, the diagonal A B bisects parallelogram G B C A, so triangle A B C is half of parallelogram G B C A. <pause>
+Likewise, the diagonal D F bisects parallelogram D E F H, so triangle D E F is half of parallelogram D E F H. <pause>
+Since the halves of equal things are equal to one another, triangle A B C is equal in area to triangle D E F, <pause> as was required to prove.

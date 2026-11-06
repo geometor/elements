@@ -1,0 +1,55 @@
+1
+00:00:00,420 --> 00:00:02,077
+Book Two, Proposition Two.
+
+2
+00:00:02,077 --> 00:00:10,297
+If a segment be cut at random, the rectangle contained by the whole and both of the segments is equal to the square on the whole.
+
+3
+00:00:10,297 --> 00:00:13,610
+Let the segment A B be cut at random at the point C.
+
+4
+00:00:14,030 --> 00:00:18,777
+On A B, describe the square A D E B by One Forty-Six.
+
+5
+00:00:18,777 --> 00:00:24,240
+Through C, draw C F parallel to A D or B E by One Thirty-One.
+
+6
+00:00:24,660 --> 00:00:32,506
+Then the whole square A E equals the sum of the rectangles A F and C E, and A E is the square on A B.
+
+7
+00:00:32,506 --> 00:00:43,770
+Because A D equals A B, A F is the rectangle contained by A B and A C; and because B E equals A B, C E is the rectangle contained by A B and B C.
+
+8
+00:00:43,770 --> 00:00:53,713
+Therefore, the rectangle contained by A B and A C together with the rectangle contained by A B and B C equals the square on A B.
+
+9
+00:00:53,713 --> 00:00:55,500
+Which was to be proved.
+
+10
+00:00:55,920 --> 00:01:02,612
+If a whole segment a is partitioned into b and c, Proposition Two Two proves that a squared equals a b plus a c.
+
+11
+00:01:02,612 --> 00:01:17,730
+As Heath observes, Euclid already used this visual partitioning in the proof of the Pythagorean theorem, One Forty-Seven, and proves the first ten propositions of Book Two independently from first principles to reveal every identity directly to the eye.
+
+12
+00:01:17,730 --> 00:01:29,920
+In the GEOMETOR G-Index, node G eighty-three synthesizes five direct prerequisites—including square construction from One Forty-Six and parallel lines from One Thirty-One—across fifty-four ancestor nodes.
+
+13
+00:01:30,340 --> 00:01:42,484
+Explore the interactive diagram, dependency graph, and symbolic Python construction for Proposition Two Two in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+14
+00:01:42,484 --> 00:01:48,260
+Subscribe, leave a comment, and join us in mapping the logical architecture of geometry.

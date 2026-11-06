@@ -1,0 +1,63 @@
+1
+00:00:00,420 --> 00:00:02,539
+Book Three, Proposition Eighteen.
+
+2
+00:00:02,539 --> 00:00:13,517
+If a straight line touch a circle, and a straight line be joined from the center to the point of contact, the straight line so joined will be perpendicular to the tangent.
+
+3
+00:00:13,517 --> 00:00:22,634
+Let the straight line D E touch the circle A B C at the point C, let the center F of circle A B C be taken, and let F C be joined from F to C.
+
+4
+00:00:22,634 --> 00:00:25,330
+We claim that F C is perpendicular to D E.
+
+5
+00:00:25,750 --> 00:00:34,200
+For suppose it is not, and if possible, let F G be drawn from F perpendicular to D E, meeting the circle at B.
+
+6
+00:00:34,620 --> 00:00:41,677
+Then in triangle F C G, since angle F G C is right, by One Seventeen angle F C G is acute.
+
+7
+00:00:41,677 --> 00:00:49,519
+Because the greater angle is subtended by the greater side, by One Nineteen F C is greater than F G.
+
+8
+00:00:49,519 --> 00:01:00,262
+But F C equals F B as radii of circle A B C; therefore F B is also greater than F G—the part greater than the whole, which is impossible.
+
+9
+00:01:00,262 --> 00:01:08,339
+Therefore F G is not perpendicular to D E; and similarly neither is any other straight line except F C.
+
+10
+00:01:08,339 --> 00:01:12,260
+Therefore F C is perpendicular to the tangent D E.
+
+11
+00:01:12,260 --> 00:01:14,220
+As was required to prove.
+
+12
+00:01:14,640 --> 00:01:22,568
+As Heath observes, Propositions Three Sixteen, Three Eighteen, and Three Nineteen form a complete logical triad governing circular tangency.
+
+13
+00:01:22,568 --> 00:01:35,705
+Where the Porism to Three Sixteen proves that a line perpendicular to a radius at its extremity is a tangent, Three Eighteen proves the first partial converse: that the radius to the point of contact is perpendicular to the tangent.
+
+14
+00:01:35,705 --> 00:01:47,880
+In the GEOMETOR G-Index, node G one hundred twenty synthesizes nine direct rules across forty-two ancestor nodes, unlocking twenty downstream propositions including the alternate segment theorem in Three Thirty-Two.
+
+15
+00:01:48,300 --> 00:02:03,400
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Eighteen in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+16
+00:02:03,400 --> 00:02:10,780
+Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

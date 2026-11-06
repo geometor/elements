@@ -1,0 +1,69 @@
+{
+  "II.10": {
+    "subtype": "theorem",
+    "args": [
+      ":g:`/ A B / <g1:/ A B />`",
+      ":g:`C <g1:C>`",
+      ":g:`/ B D / <g1:/ B D />`"
+    ],
+    "returns": [],
+    "given": ":g:`/ A B / <g1:/ A B />` (:g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ C B />` :g:`/ C B / <g1:/ C B />`), :g:`/ B D / <g1:/ B D />`",
+    "contract": ":fn:`square_on_segment <G.75>`\\ (:g:`/ A D / <g1:/ A D />`) + :fn:`square_on_segment <G.75>`\\ (:g:`/ D B / <g1:/ D B />`) = 2 · (:fn:`square_on_segment <G.75>`\\ (:g:`/ A C / <g1:/ A C />`) + :fn:`square_on_segment <G.75>`\\ (:g:`/ C D / <g1:/ C D />`))",
+    "steps": [
+      [
+        "given",
+        [
+          "I.def.4"
+        ],
+        ":g:`/ A B / <g1:/ A B />` (:g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ C B />` :g:`/ C B / <g1:/ C B />`), :g:`/ B D / <g1:/ B D />` (:g:`/ A D / <g1:/ A D />` = :g:`/ A B / <g1:/ A B />` + :g:`/ B D / <g1:/ B D />`)"
+      ],
+      [
+        "construct",
+        [
+          "I.11",
+          "I.3",
+          "I.post.1"
+        ],
+        "@fn(I.11)(:g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`) → :g:`/ C E / <g1:/ C E />` ⊥ :g:`/ A B / <g1:/ A B />`, @fn(I.3)(:g:`/ C E / <g1:/ C E />`, :g:`/ A C / <g1:/ A C />`) → :g:`/ C E / <g1:/ C E />` :eq:`= <g1:/ C E / = g1:/ A C / = g1:/ C B />` :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ C E / = g1:/ A C / = g1:/ C B />` :g:`/ C B / <g1:/ C B />`, @fn(I.post.1)(:g:`E <g1:E>`, :g:`A <g1:A>`, :g:`B <g1:B>`) → :g:`/ E A / <g1:/ E A />`, :g:`/ E B / <g1:/ E B />`"
+      ],
+      [
+        "construct",
+        [
+          "I.31",
+          "I.29",
+          "I.post.5"
+        ],
+        "@fn(I.31)(:g:`E <g1:E>`, :g:`/ A D / <g1:/ A D />`) → :g:`/ E F / <g1:/ E F />` ∥ :g:`/ A D / <g1:/ A D />`, @fn(I.31)(:g:`D <g1:D>`, :g:`/ C E / <g1:/ C E />`) → :g:`/ F D / <g1:/ F D />` ∥ :g:`/ C E / <g1:/ C E />`, :g:`[ E B ] <g1:[ E B ]>` ∩ :g:`[ F D ] <g1:[ F D ]>` → :g:`G <g1:G>`, :g:`/ A G / <g1:/ A G />`"
+      ],
+      [
+        "assert",
+        [
+          "I.5",
+          "I.32",
+          "I.15",
+          "I.29",
+          "I.34",
+          "I.6"
+        ],
+        ":g:`< A E B ) <g1:< A E B )>` is right, :g:`< D G B ) <g1:< D G B )>` :eq:`= <g1:< D G B ) = g1:< D B G )>` :g:`< D B G ) <g1:< D B G )>` → :g:`/ G D / <g1:/ G D />` :eq:`= <g1:/ B D / = g1:/ G D />` :g:`/ B D / <g1:/ B D />`, :g:`< E G F ) <g1:< E G F )>` :eq:`= <g1:< E G F ) = g1:< F E G )>` :g:`< F E G ) <g1:< F E G )>` → :g:`/ G F / <g1:/ G F />` :eq:`= <g1:/ G F / = g1:/ E F />` :g:`/ E F / <g1:/ E F />` :eq:`= <g1:/ E F / = g1:/ C D />` :g:`/ C D / <g1:/ C D />`"
+      ],
+      [
+        "assert",
+        [
+          "I.47",
+          "I.34",
+          "I.cn.1"
+        ],
+        ":fn:`square_on_segment <G.75>`\\ (:g:`/ E A / <g1:/ E A />`) = 2 · :fn:`square_on_segment <G.75>`\\ (:g:`/ A C / <g1:/ A C />`), :fn:`square_on_segment <G.75>`\\ (:g:`/ E G / <g1:/ E G />`) = 2 · :fn:`square_on_segment <G.75>`\\ (:g:`/ E F / <g1:/ E F />`) = 2 · :fn:`square_on_segment <G.75>`\\ (:g:`/ C D / <g1:/ C D />`)"
+      ],
+      [
+        "conclude",
+        [
+          "I.47",
+          "I.cn.1"
+        ],
+        ":fn:`square_on_segment <G.75>`\\ (:g:`/ A D / <g1:/ A D />`) + :fn:`square_on_segment <G.75>`\\ (:g:`/ D B / <g1:/ D B />`) = :fn:`square_on_segment <G.75>`\\ (:g:`/ A G / <g1:/ A G />`) = 2 · (:fn:`square_on_segment <G.75>`\\ (:g:`/ A C / <g1:/ A C />`) + :fn:`square_on_segment <G.75>`\\ (:g:`/ C D / <g1:/ C D />`))"
+      ]
+    ]
+  }
+}

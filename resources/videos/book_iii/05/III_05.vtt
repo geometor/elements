@@ -1,0 +1,57 @@
+WEBVTT
+
+1
+00:00:00.420 --> 00:00:02.557
+Book Three, Proposition Five.
+
+2
+00:00:02.557 --> 00:00:07.493
+If two circles cut one another, they will not have the same center.
+
+3
+00:00:07.493 --> 00:00:12.650
+Let the circles A B C and C D G cut one another at the points B and C.
+
+4
+00:00:13.070 --> 00:00:16.644
+I say that they will not have the same center.
+
+5
+00:00:16.644 --> 00:00:27.520
+For, if possible, let their common center be E; join E C, and draw E F G through at random, meeting circle A B C at F and circle C D G at G.
+
+6
+00:00:27.940 --> 00:00:36.073
+Since the point E is the center of the circle A B C, the radius E C equals E F by Definition Fifteen.
+
+7
+00:00:36.073 --> 00:00:42.192
+Again, since E is the center of the circle C D G, the radius E C equals E G.
+
+8
+00:00:42.192 --> 00:00:51.291
+Because E C equals both E F and E G, E F is also equal to E G, the less equal to the greater—which is impossible.
+
+9
+00:00:51.291 --> 00:00:57.008
+Therefore the point E is not the center of the circles A B C and C D G.
+
+10
+00:00:57.008 --> 00:00:58.860
+Which was to be proved.
+
+11
+00:00:59.280 --> 00:01:17.615
+As Heath remarks, Propositions Three Five and Three Six express a single geometric principle: whether two distinct circles cut one another or touch one another, if their circumferences share even one point, they cannot share a center; conversely, concentric circles with a common circumference point coincide completely.
+
+12
+00:01:17.615 --> 00:01:31.480
+In the GEOMETOR G-Index, node G one hundred two rests directly on the definitions of circle and center, requiring only twelve ancestor nodes while supporting thirty-four downstream theorems across Books Three, Four, Six, Twelve, and Thirteen.
+
+13
+00:01:31.900 --> 00:01:45.147
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Five in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+14
+00:01:45.147 --> 00:01:51.740
+Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

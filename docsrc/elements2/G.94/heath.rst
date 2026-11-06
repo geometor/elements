@@ -1,12 +1,12 @@
 :canonical_id: G.94
 :original_id: II.12
-:title: G.94 law of cosines obtuse
+:title: G.94 law of cosines for obtuse triangles
 :volume: I
 :book: II
 :type: prop
 
-G.94 law of cosines obtuse — Heath
-==================================
+G.94 law of cosines for obtuse triangles — Heath
+================================================
 
 .. rubric:: `II.12 <https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/12/>`_
 
@@ -93,6 +93,7 @@ Dependency Graph
      "G.32" [label="G.32", tooltip="G.32 (I.10): Bisect a given segment.", fillcolor="#222244", URL="../G.32/index.html", target="_top"];
      "G.33" [label="G.33", tooltip="G.33 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.33/index.html", target="_top"];
      "G.34" [label="G.34", tooltip="G.34 (I.11): Construct a segment at right angles to a given line from a given point on it.", fillcolor="#222244", URL="../G.34/index.html", target="_top"];
+     "G.35" [label="G.35", tooltip="G.35 (I.12): Construct a perpendicular to a given line from a given point not on it.", fillcolor="#222244", URL="../G.35/index.html", target="_top"];
      "G.36" [label="G.36", tooltip="G.36 (I.cn.2): If equals are added to equals, the wholes are equal.", fillcolor="#442222", URL="../G.36/index.html", target="_top"];
      "G.37" [label="G.37", tooltip="G.37 (I.13): A segment standing on a line makes either two right angles or adjacent angles summing to two right angles.", fillcolor="#222244", URL="../G.37/index.html", target="_top"];
      "G.38" [label="G.38", tooltip="G.38 (I.post.4): All right angles are equal.", fillcolor="#444422", URL="../G.38/index.html", target="_top"];
@@ -116,14 +117,15 @@ Dependency Graph
      "G.64" [label="G.64", tooltip="G.64 (I.35): Parallelograms on the same base and in the same parallels are equal in area.", fillcolor="#222244", URL="../G.64/index.html", target="_top"];
      "G.66" [label="G.66", tooltip="G.66 (I.37): Triangles on the same base and in the same parallels are equal in area.", fillcolor="#222244", URL="../G.66/index.html", target="_top"];
      "G.70" [label="G.70", tooltip="G.70 (I.41): If a parallelogram shares the same base with a triangle and lies in the same parallels, the parallelogram is double the triangle.", fillcolor="#222244", URL="../G.70/index.html", target="_top"];
+     "G.72" [label="G.72", tooltip="G.72 (I.43): In any parallelogram, the complements of the parallelograms about the diagonal are equal in area.", fillcolor="#222244", URL="../G.72/index.html", target="_top"];
      "G.75" [label="G.75", tooltip="G.75 (I.46): Construct a square on a given segment.", fillcolor="#222244", URL="../G.75/index.html", target="_top"];
      "G.76" [label="G.76", tooltip="G.76 (I.def.11): An obtuse angle is greater than a right angle.", fillcolor="#224422", URL="../G.76/index.html", target="_top"];
      "G.77" [label="G.77", tooltip="G.77 (I.def.12): An acute angle is less than a right angle.", fillcolor="#224422", URL="../G.77/index.html", target="_top"];
      "G.78" [label="G.78", tooltip="G.78 (I.def.21): A right-angled triangle has a right angle, an obtuse-angled triangle has an obtuse angle, and an acute-angled triangle has three acute angles.", fillcolor="#224422", URL="../G.78/index.html", target="_top"];
      "G.79" [label="G.79", tooltip="G.79 (I.47): In a right-angled triangle, the square on the hypotenuse equals the sum of the squares on the two legs (Pythagorean Theorem).", fillcolor="#222244", URL="../G.79/index.html", target="_top"];
      "G.81" [label="G.81", tooltip="G.81 (II.def.1): Any rectangular parallelogram is said to becontained by the twosegments containing theright angle.", fillcolor="#224422", URL="../G.81/index.html", target="_top"];
-     "G.85" [label="G.85", tooltip="G.85 (II.4): If a segment be cut at random, the square on the whole is equal to the squares on the segments and twice the rectangle contained by the segments.", fillcolor="#222244", URL="../G.85/index.html", target="_top"];
-     "G.94" [label="G.94", tooltip="G.94 (II.12): In obtuse-angled triangles the square on the side subtending the obtuse angle is greater than the squares on the sides containing the obtuse angle by twice the rectangle contained ...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.85" [label="G.85", tooltip="G.85 (II.4): If a segment is cut at random, the square on the whole equals the squares on the parts together with twice the rectangle contained by the parts.", fillcolor="#222244", URL="../G.85/index.html", target="_top"];
+     "G.94" [label="G.94", tooltip="G.94 (II.12): In obtuse-angled triangles, the square on the side subtending the obtuse angle is greater than the sum of the squares on the sides containing the obtuse angle by twice the rectangl...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -141,6 +143,7 @@ Dependency Graph
      "G.31" -> "G.1";
      "G.32" -> "G.1";
      "G.34" -> "G.1";
+     "G.35" -> "G.1";
      "G.37" -> "G.1";
      "G.39" -> "G.1";
      "G.40" -> "G.1";
@@ -159,6 +162,7 @@ Dependency Graph
      "G.30" -> "G.2";
      "G.33" -> "G.2";
      "G.34" -> "G.2";
+     "G.35" -> "G.2";
      "G.37" -> "G.2";
      "G.39" -> "G.2";
      "G.40" -> "G.2";
@@ -193,6 +197,7 @@ Dependency Graph
      "G.32" -> "G.4";
      "G.33" -> "G.4";
      "G.34" -> "G.4";
+     "G.35" -> "G.4";
      "G.37" -> "G.4";
      "G.39" -> "G.4";
      "G.40" -> "G.4";
@@ -210,7 +215,6 @@ Dependency Graph
      "G.79" -> "G.4";
      "G.81" -> "G.4";
      "G.85" -> "G.4";
-     "G.94" -> "G.4";
      "G.6" -> "G.5";
      "G.7" -> "G.5";
      "G.10" -> "G.6";
@@ -226,12 +230,14 @@ Dependency Graph
      "G.17" -> "G.10";
      "G.20" -> "G.10";
      "G.21" -> "G.10";
+     "G.35" -> "G.10";
      "G.47" -> "G.10";
      "G.61" -> "G.10";
      "G.15" -> "G.11";
      "G.17" -> "G.11";
      "G.20" -> "G.11";
      "G.21" -> "G.11";
+     "G.35" -> "G.11";
      "G.47" -> "G.11";
      "G.61" -> "G.11";
      "G.13" -> "G.12";
@@ -258,6 +264,7 @@ Dependency Graph
      "G.64" -> "G.12";
      "G.66" -> "G.12";
      "G.70" -> "G.12";
+     "G.72" -> "G.12";
      "G.78" -> "G.12";
      "G.79" -> "G.12";
      "G.17" -> "G.13";
@@ -271,10 +278,12 @@ Dependency Graph
      "G.28" -> "G.14";
      "G.31" -> "G.14";
      "G.34" -> "G.14";
+     "G.35" -> "G.14";
      "G.41" -> "G.14";
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.51" -> "G.14";
      "G.58" -> "G.14";
      "G.70" -> "G.14";
@@ -283,6 +292,7 @@ Dependency Graph
      "G.17" -> "G.15";
      "G.20" -> "G.15";
      "G.21" -> "G.15";
+     "G.35" -> "G.15";
      "G.47" -> "G.15";
      "G.17" -> "G.16";
      "G.20" -> "G.16";
@@ -290,23 +300,32 @@ Dependency Graph
      "G.37" -> "G.16";
      "G.39" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.56" -> "G.16";
      "G.64" -> "G.16";
+     "G.66" -> "G.16";
+     "G.70" -> "G.16";
+     "G.75" -> "G.16";
+     "G.94" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
      "G.34" -> "G.17";
      "G.20" -> "G.18";
      "G.25" -> "G.18";
+     "G.39" -> "G.18";
      "G.41" -> "G.18";
      "G.45" -> "G.18";
+     "G.53" -> "G.18";
      "G.58" -> "G.18";
      "G.66" -> "G.18";
+     "G.94" -> "G.18";
      "G.20" -> "G.19";
      "G.25" -> "G.19";
      "G.39" -> "G.19";
      "G.40" -> "G.19";
      "G.64" -> "G.19";
+     "G.72" -> "G.19";
      "G.21" -> "G.20";
      "G.25" -> "G.21";
      "G.27" -> "G.21";
@@ -316,6 +335,7 @@ Dependency Graph
      "G.43" -> "G.21";
      "G.45" -> "G.21";
      "G.47" -> "G.21";
+     "G.51" -> "G.21";
      "G.75" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
@@ -327,6 +347,7 @@ Dependency Graph
      "G.32" -> "G.22";
      "G.33" -> "G.22";
      "G.34" -> "G.22";
+     "G.35" -> "G.22";
      "G.37" -> "G.22";
      "G.39" -> "G.22";
      "G.40" -> "G.22";
@@ -348,8 +369,6 @@ Dependency Graph
      "G.77" -> "G.22";
      "G.78" -> "G.22";
      "G.79" -> "G.22";
-     "G.85" -> "G.22";
-     "G.94" -> "G.22";
      "G.24" -> "G.23";
      "G.29" -> "G.23";
      "G.25" -> "G.24";
@@ -361,23 +380,30 @@ Dependency Graph
      "G.64" -> "G.24";
      "G.79" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.85" -> "G.25";
      "G.27" -> "G.26";
      "G.28" -> "G.26";
+     "G.39" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.51" -> "G.26";
      "G.85" -> "G.27";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
+     "G.35" -> "G.29";
      "G.48" -> "G.29";
      "G.31" -> "G.30";
      "G.48" -> "G.30";
      "G.32" -> "G.31";
+     "G.35" -> "G.32";
      "G.41" -> "G.32";
      "G.34" -> "G.33";
+     "G.35" -> "G.33";
      "G.37" -> "G.33";
      "G.38" -> "G.33";
      "G.39" -> "G.33";
@@ -390,14 +416,17 @@ Dependency Graph
      "G.78" -> "G.33";
      "G.79" -> "G.33";
      "G.81" -> "G.33";
-     "G.94" -> "G.33";
      "G.37" -> "G.34";
      "G.75" -> "G.34";
+     "G.94" -> "G.35";
      "G.37" -> "G.36";
      "G.56" -> "G.36";
      "G.62" -> "G.36";
      "G.64" -> "G.36";
+     "G.72" -> "G.36";
      "G.79" -> "G.36";
+     "G.85" -> "G.36";
+     "G.94" -> "G.36";
      "G.39" -> "G.37";
      "G.40" -> "G.37";
      "G.56" -> "G.37";
@@ -437,9 +466,11 @@ Dependency Graph
      "G.62" -> "G.61";
      "G.66" -> "G.61";
      "G.70" -> "G.61";
+     "G.72" -> "G.61";
      "G.64" -> "G.62";
      "G.66" -> "G.62";
      "G.70" -> "G.62";
+     "G.72" -> "G.62";
      "G.75" -> "G.62";
      "G.85" -> "G.62";
      "G.64" -> "G.63";
@@ -450,8 +481,10 @@ Dependency Graph
      "G.66" -> "G.64";
      "G.70" -> "G.66";
      "G.79" -> "G.70";
+     "G.85" -> "G.72";
      "G.79" -> "G.75";
      "G.85" -> "G.75";
+     "G.94" -> "G.75";
      "G.78" -> "G.76";
      "G.94" -> "G.76";
      "G.78" -> "G.77";

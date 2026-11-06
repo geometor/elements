@@ -1,0 +1,33 @@
+{
+  "prop_id": "BOOK III \u2022 PROP. 11",
+  "short_code": "III.11",
+  "g_id": "G.109",
+  "version": 2,
+  "enunciation": "If two circles touch one another internally, and their centres be taken, the straight line joining their centres, if it be also produced, will fall on the point of contact of the circles.",
+  "title_1080p": "III.11 \u2022 internally touching circles \u2022 Euclid's Elements",
+  "title_short": "III.11 \u2022 internally touching circles \u2022 Euclid's Elements",
+  "description": "\u201cIf two circles touch one another internally, and their centres be taken, the straight line joining their centres, if it be also produced, will fall on the point of contact of the circles.\u201d\n\u2014 Euclid's Elements, BOOK III \u2022 PROP. 11 (G.109)\n\n00:00 1 \u00b7 GIVEN: circles ( A B C ) and ( A D E ) touching internally at A\n00:28 2 \u00b7 CONSTRUCT: suppose / F G H / misses A; join / A F / and / A G /\n00:41 3 \u00b7 ASSERT: / A G / + / G F / \u27e9 / F A / = / F H / \u2192 / A G / \u27e9 / G H /\n00:53 4 \u00b7 ASSERT: / A G / = / G D / \u2192 / G D / \u27e9 / G H / \u21d2\u21d0\n01:06 5 \u00b7 \u2234: line of centers [ F G ] passes through contact point A\n01:18 6 \u00b7 COMMENTARY: Camerer's analysis & direct proof via III.7\n01:37 7 \u00b7 GENEALOGY: G.109 dependency tree & symbolic model\n01:55 8 \u00b7 PARTICIPATE: explore the GEOMETOR Elements Codex & participate\n\nExplore the interactive Book Codex, symbolic model, and dependency tree:\n\u2022 Elements Codex (G.109): https://geometor.github.io/elements/elements2/G.109/\n\u2022 Heath Edition (III.11): https://geometor.github.io/euclid/heath/volume_I/book_iii/propositions/11/\n\u2022 GitHub: https://github.com/geometor/elements\n\nGEOMETOR \u2022 G.109 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid III.11",
+    "G.109",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_iii/propositions/11/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.109/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/11/III_11_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/11/III_11_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/11/III_11.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/11/III_11_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/11/III_11_short_thumb.png"
+  }
+}

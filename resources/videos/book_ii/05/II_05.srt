@@ -1,0 +1,75 @@
+1
+00:00:00,420 --> 00:00:01,975
+Book Two, Proposition Five.
+
+2
+00:00:01,975 --> 00:00:14,589
+If a segment be cut into equal and unequal segments, the rectangle contained by the unequal segments of the whole together with the square on the segment between the points of section is equal to the square on the half.
+
+3
+00:00:14,589 --> 00:00:19,370
+Let the segment A B be cut into equal segments at C and into unequal segments at D.
+
+4
+00:00:19,790 --> 00:00:27,968
+On the half C B, describe the square C E F B by One Forty-Six, and join the diagonal B E.
+
+5
+00:00:27,968 --> 00:00:43,680
+Through D, draw D G parallel to C E or B F by One Thirty-One, meeting B E at H; through H, draw K M parallel to A B or E F; and through A, draw A K parallel to C L or B M.
+
+6
+00:00:44,100 --> 00:00:49,124
+By One Forty-Three, the complement C H equals the complement H F.
+
+7
+00:00:49,124 --> 00:00:54,225
+Adding the square D M to each, the whole C M equals the whole D F.
+
+8
+00:00:54,225 --> 00:01:02,185
+And since A C equals C B, parallelogram A L equals C M by One Thirty-Six, and therefore A L equals D F.
+
+9
+00:01:02,185 --> 00:01:07,441
+Adding C H to each, the whole rectangle A H equals the gnomon N O P.
+
+10
+00:01:07,441 --> 00:01:18,029
+Because D H equals D B, A H is the rectangle contained by A D and D B, so the gnomon N O P equals the rectangle contained by A D and D B.
+
+11
+00:01:18,029 --> 00:01:21,816
+Now add L G, which is the square on C D, to each.
+
+12
+00:01:21,816 --> 00:01:27,613
+Together, the gnomon N O P and L G compose the whole square C E F B on C B.
+
+13
+00:01:27,613 --> 00:01:35,882
+Therefore, the rectangle contained by A D and D B together with the square on C D equals the square on C B.
+
+14
+00:01:35,882 --> 00:01:37,660
+Which was to be proved.
+
+15
+00:01:38,080 --> 00:01:49,163
+Proposition Two Five is the geometric engine for completing the square and the difference of two squares: x y plus the square of a over two minus y equals the square of a over two.
+
+16
+00:01:49,163 --> 00:02:04,987
+By folding the rectangle A H into the L-shaped gnomon N O P inside the square on the half, Euclid solves the quadratic equation a x minus x squared equals b squared, and proves that among all rectangles of a given perimeter, the square has the maximum area.
+
+17
+00:02:04,987 --> 00:02:16,440
+In the GEOMETOR G-Index, node G eighty-seven synthesizes ten direct rules across fifty ancestor nodes, driving fifty-seven downstream theorems across Books Two, Three, Ten, and Thirteen.
+
+18
+00:02:16,860 --> 00:02:30,226
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Two Five in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+19
+00:02:30,226 --> 00:02:36,940
+Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

@@ -1,0 +1,59 @@
+1
+00:00:00,420 --> 00:00:02,943
+Book Three, Proposition Twenty-Four.
+
+2
+00:00:02,943 --> 00:00:07,919
+Similar segments of circles on equal segments are equal to one another.
+
+3
+00:00:07,919 --> 00:00:14,086
+Let A E B and C F D be similar segments of circles standing on equal chords A B and C D.
+
+4
+00:00:14,086 --> 00:00:18,010
+We are to prove that segment A E B equals segment C F D.
+
+5
+00:00:18,430 --> 00:00:26,949
+Apply the segment A E B to C F D by placing point A on point C and the straight segment A B along C D.
+
+6
+00:00:26,949 --> 00:00:31,960
+Because A B equals C D, point B also coincides with point D.
+
+7
+00:00:32,380 --> 00:00:44,372
+With base A B coinciding with base C D, if segment A E B does not coincide with C F D, it must either fall wholly within it, fall wholly outside it, or fall awry across it as C G D.
+
+8
+00:00:44,372 --> 00:00:54,641
+It cannot fall wholly inside or outside, for by Three Twenty-Three two similar and unequal circle segments cannot stand on the same chord on the same side.
+
+9
+00:00:54,641 --> 00:01:04,977
+Nor can it fall awry as C G D, for then two circles would intersect at more than two points—C, D, and their crossing point—which is impossible by Three Ten.
+
+10
+00:01:04,977 --> 00:01:17,300
+Therefore segment A E B coincides everywhere with segment C F D, and by Common Notion Four, coinciding figures are equal; so segment A E B equals segment C F D, as was required to prove.
+
+11
+00:01:17,720 --> 00:01:26,194
+Just as Book One, Proposition Eight follows from Proposition Seven by superposition, Proposition Twenty-Four follows immediately from Twenty-Three.
+
+12
+00:01:26,194 --> 00:01:40,316
+Heath highlights Euclid's Greek verb parallassein—to fall awry—which separates two distinct impossibilities: nested arcs are ruled out by Three Twenty-Three, while crossing arcs as C G D are ruled out by Three Ten's two-point intersection limit.
+
+13
+00:01:40,316 --> 00:01:51,960
+In the GEOMETOR G-Index, node G one hundred twenty-nine links thirty-six ancestor nodes to power Euclid's theorems on equal arcs, chords, and inscribed regular polygons in Books Three, Four, and Twelve.
+
+14
+00:01:52,380 --> 00:02:07,006
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Twenty-Four in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+15
+00:02:07,006 --> 00:02:14,060
+Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

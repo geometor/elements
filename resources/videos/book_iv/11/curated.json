@@ -1,0 +1,62 @@
+{
+  "IV.11": {
+    "subtype": "problem",
+    "args": [
+      ":g:`( A B C D E ) <g1:( A B C D E )>`"
+    ],
+    "returns": [
+      ":g:`< A B C D E > <g1:< A B C D E >>`"
+    ],
+    "given": ":g:`( A B C D E ) <g1:( A B C D E )>` is a given :term:`circle <G.10>`",
+    "contract": ":g:`< A B C D E > <g1:< A B C D E >>` is an :term:`equilateral <G.13>` and equiangular pentagon :term:`inscribed in <G.148>` :g:`( A B C D E ) <g1:( A B C D E )>`",
+    "steps": [
+      [
+        "given",
+        [
+          "I.def.15",
+          "IV.def.3"
+        ],
+        ":g:`( A B C D E ) <g1:( A B C D E )>` is the given circle"
+      ],
+      [
+        "construct",
+        [
+          "IV.10",
+          "IV.2"
+        ],
+        "@fn(IV.10)() → :g:`< F G H > <g1:< F G H >>` (:g:`< F G H ) <g1:< F G H )>` :eq:`= <g1:< F G H ) = g1:< F H G )>` :g:`< F H G ) <g1:< F H G )>` = 2 :g:`< G F H ) <g1:< G F H )>`), @fn(IV.2)(:g:`( A B C D E ) <g1:( A B C D E )>`, :g:`< F G H > <g1:< F G H >>`) → :g:`< A C D > <g1:< A C D >>` (:g:`< A C D ) <g1:< A C D )>` :eq:`= <g1:< A C D ) = g1:< C D A )>` :g:`< C D A ) <g1:< C D A )>` = 2 :g:`< C A D ) <g1:< C A D )>`)"
+      ],
+      [
+        "construct",
+        [
+          "I.9",
+          "I.post.1"
+        ],
+        "@fn(I.9)(:g:`< A C D ) <g1:< A C D )>`) → :g:`/ C E / <g1:/ C E />`, @fn(I.9)(:g:`< C D A ) <g1:< C D A )>`) → :g:`/ D B / <g1:/ D B />`, @fn(I.post.1)(:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`E <g1:E>`) → :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ D E / <g1:/ D E />`, :g:`/ E A / <g1:/ E A />`"
+      ],
+      [
+        "assert",
+        [
+          "III.26",
+          "III.29"
+        ],
+        ":g:`< C A D ) <g1:< C A D )>` :eq:`= <g1:< C A D ) = g1:< A C E ) = g1:< E C D ) = g1:< C D B ) = g1:< B D A )>` :g:`< A C E ) <g1:< A C E )>` = :g:`< E C D ) <g1:< E C D )>` = :g:`< C D B ) <g1:< C D B )>` = :g:`< B D A ) <g1:< B D A )>` → arcs :g:`( A B ) <g1:( A B )>` :eq:`= <g1:( A B ) = g1:( B C ) = g1:( C D ) = g1:( D E ) = g1:( E A )>` :g:`( B C ) <g1:( B C )>` = :g:`( C D ) <g1:( C D )>` = :g:`( D E ) <g1:( D E )>` = :g:`( E A ) <g1:( E A )>` → sides :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ B C / = g1:/ C D / = g1:/ D E / = g1:/ E A />` :g:`/ B C / <g1:/ B C />` = :g:`/ C D / <g1:/ C D />` = :g:`/ D E / <g1:/ D E />` = :g:`/ E A / <g1:/ E A />`"
+      ],
+      [
+        "assert",
+        [
+          "I.cn.2",
+          "III.27"
+        ],
+        ":g:`( A B ) <g1:( A B )>` :eq:`= <g1:( A B ) = g1:( D E )>` :g:`( D E ) <g1:( D E )>` + :g:`( B C D ) <g1:( B C D )>` → :g:`( A B C D ) <g1:( A B C D )>` :eq:`= <g1:( A B C D ) = g1:( E D C B )>` :g:`( E D C B ) <g1:( E D C B )>` → :g:`< A E D ) <g1:< A E D )>` :eq:`= <g1:< B A E ) = g1:< A B C ) = g1:< B C D ) = g1:< C D E ) = g1:< A E D )>` :g:`< B A E ) <g1:< B A E )>` = :g:`< A B C ) <g1:< A B C )>` = :g:`< B C D ) <g1:< B C D )>` = :g:`< C D E ) <g1:< C D E )>`"
+      ],
+      [
+        "conclude",
+        [
+          "IV.def.3"
+        ],
+        ":g:`< A B C D E > <g1:< A B C D E >>` is an equilateral and equiangular pentagon inscribed in :g:`( A B C D E ) <g1:( A B C D E )>`"
+      ]
+    ]
+  }
+}

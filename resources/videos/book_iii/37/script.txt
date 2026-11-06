@@ -1,0 +1,20 @@
+[bell:proposition] [style:brisk]
+Elements, Book three, Proposition thirty-seven. <pause>
+From a point outside a circle, if a secant cuts the circle and another line falls on the circle such that the rectangle contained by the whole secant and its external segment equals the square on the line falling on the circle, then that line touches the circle. <pause>
+From external point D, let secant D C A cut circle A B C, and let segment D B fall on the circumference at B so that the rectangle A D by C D equals the square on D B. We claim that D B is tangent to circle A B C. <pause>
+
+[bell:construction] [style:brisk]
+Using Book three Proposition seventeen, draw a tangent D E from D touching circle A B C at E. Find the center F of the circle, and join segments F E, F B, and F D. <pause>
+Because D E is tangent to the circle at E, Book three Proposition eighteen shows that radius F E is perpendicular to D E, making angle F E D a right angle. <pause>
+
+[bell:insight] [style:brisk]
+By the tangent-secant theorem in Book three Proposition thirty-six, the rectangle A D by C D equals the square on tangent D E. Since the rectangle A D by C D also equals the square on D B by hypothesis, the square on D E equals the square on D B, and therefore segment D E equals segment D B. <pause>
+In triangles F E D and F B D, radii F E and F B are equal, segments D E and D B are equal, and base F D is common. By Side-Side-Side congruence, angle D B F equals the right angle F E D. <pause>
+Since D B stands at right angles to radius F B at its extremity B on the circle, the Porism to Book three Proposition sixteen proves that D B touches circle A B C, <pause> as was required to prove. <pause>
+
+[bell:system] [style:brisk]
+Proposition thirty-seven is the final proposition of Book three, sealing the theory of circles with an algebraic criterion for tangency: instead of proving by contradiction that D B cannot cut the circle a second time, Euclid constructs an auxiliary tangent D E and transfers its right angle to B by triangle congruence. <pause>
+In the GEOMETOR dependency graph, Proposition thirty-seven crowns Book three with sixty-three ancestor nodes, and joins Proposition thirty-six to drive Book four Proposition ten—where this exact tangency criterion proves that a chord equal to the golden section of a radius is tangent to the circumcircle of the smaller triangle, unlocking the regular pentagon. <pause>
+
+[bell:resolve] [style:brisk]
+Explore the interactive construction, symbolic proof, and dependency graph at geometor dot github dot io. <pause>

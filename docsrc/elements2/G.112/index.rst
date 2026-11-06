@@ -2,7 +2,7 @@
 :number: 112
 :canonical_id: G.112
 :original_id: III.13
-:title: G.112 circle touch circle
+:title: G.112 two circles touch at most at one point
 :volume: II
 :book: III
 :type: prop
@@ -10,92 +10,53 @@
 :categories: theorem, proof, plane-geometry, circles
 :category: theorem, proof, plane-geometry, circles
 :tags: book-iii, point, segment, circle, tangent-to-circle, centre, straight-line, tangent, equality, reductio-ad-absurdum
-:dependencies: G.1, G.4, G.10, G.11, G.99, G.103, G.109, G.111
-:excerpt: A circle does not touch a circle at more points than one, whether it touch it internally or externally.
+:dependencies: G.1, G.10, G.11, G.14, G.26, G.99, G.103, G.109, G.111
+:excerpt: A circle does not touch another circle at more than one point, whether internally or externally.
 
 .. _G.112:
 .. _III.13:
 
-G.112 circle touch circle
-=========================
+G.112 two circles touch at most at one point
+============================================
 
 .. rubric:: `III.13 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/13/>`_
 
 .. enunciation::
 
-   A :term:`circle <G.10>` does not :term:`touch a circle <G.111>` at more :term:`points <G.1>` than one, whether it touch it internally or externally.
+   A :term:`circle <G.10>` does not touch another circle at more than one :term:`point <G.1>`, whether internally or externally.
 
 .. signature:: theorem
 
-   | :fn:`circle_touch_circle <G.112>`\ ()
-   | **prove** It was proved that neither does it so touch it internally
+   | :fn:`circles_touch_at_most_one_point <G.112>`\ (:g:`( A B D C ) <g1:( G B )>`, :g:`( E B F D ) <g1:( H B )>`, :g:`( A C K ) <g1:( A C K )>`)
+   | **given** circles :g:`( A B D C ) <g1:( G B )>`, :g:`( E B F D ) <g1:( H B )>` (internal) or :g:`( A B D C ) <g1:( G B )>`, :g:`( A C K ) <g1:( A C K )>` (external) touching
+   | **prove** |( C₁ ) ∩ ( C₂ )| ≤ 1
 
 .. picture:: g1.svg
    :alt: Proposition 13 diagram
 
-.. step:: assert
+.. step:: given ∵ circles_said_touch_def <G.103>
 
-   If possible, let :g:`( A B D C ) <g1:( A B D C )>` touch :g:`( E B F D ) <g1:( E B F D )>`, first internally, at more points than one, namely :g:`D <g1:D>`, :g:`B <g1:B>`
+   assume :g:`( A B D C ) <g1:( G B )>` and :g:`( E B F D ) <g1:( H B )>` touch internally at two points :g:`B <g1:B>`, :g:`D <g1:D>`
 
-.. step:: construct
+.. step:: construct ∵ circle_center, internally_touching_circles_centers <G.11, G.109>
 
-   Let the :term:`center <G.11>` :g:`G <g1:G>` of :g:`( A B D C ) <g1:( A B D C )>`, and the center :g:`H <g1:H>` of :g:`( E B F D ) <g1:( E B F D )>`, be taken.
+   :term:`center <G.11>`(:g:`( A B D C ) <g1:( G B )>`) = :g:`G <g1:G>`, center(:g:`( E B F D ) <g1:( H B )>`) = :g:`H <g1:H>` → :fn:`internally_touching_circles_centers <G.109>`\ (:g:`G <g1:G>`, :g:`H <g1:H>`) → :g:`/ B G H D / <g1:/ B D />`
 
-.. step:: assert ∵ circles_touch_internally <G.109>
+.. step:: assert ∵ circle_radii, whole_greater_than_part <G.10, G.26>
 
-   the :term:`segment <G.4>` joined from :g:`G <g1:G>` to :g:`H <g1:H>` will fall on :g:`B <g1:B>`, :g:`D <g1:D>`
+   :g:`/ B G / <g1:/ B G />` :eq:`= <g1:/ B G / = g1:/ G D />` :g:`/ G D / <g1:/ G D />` > :g:`/ H D / <g1:/ H D />` → :g:`/ B H / <g1:/ B H />` ≫ :g:`/ H D / <g1:/ H D />`, but :g:`/ B H / <g1:/ B H />` :eq:`= <g1:/ B H / = g1:/ H D />` :g:`/ H D / <g1:/ H D />` ⇒⇐
 
-.. step:: assert
+.. step:: construct ∵ segment <G.14>
 
-   Let it so fall, as :g:`/ B G H D / <g1:/ B G H D />`
+   assume :g:`( A C K ) <g1:( A C K )>` and :g:`( A B D C ) <g1:( G B )>` touch externally at two points :g:`A <g1:A>`, :g:`C <g1:C>` → :g:`/ A C / <g1:/ A C />`
 
-.. step:: assert ∵ circle_radii <G.10>
+.. step:: assert ∵ chord_inside_circle, circles_said_touch_def <G.99, G.103>
 
-   :g:`( A B C D ) <g1:( A B C D )>` → :g:`/ B G / <g1:/ B G />` :eq:`= <g1:/ B G / = g1:/ G D />` :g:`/ G D / <g1:/ G D />`
-
-.. step:: assert
-
-   :g:`/ B G / <g1:/ B G />` > :g:`/ H D / <g1:/ H D />`
-
-.. step:: assert
-
-   :g:`/ B H / <g1:/ B H />` ≫ :g:`/ H D / <g1:/ H D />`
-
-.. step:: assert ∵ circle_radii <G.10>
-
-   :g:`( E B F D ) <g1:( E B F D )>` → :g:`/ B H / <g1:/ B H />` :eq:`= <g1:/ B H / = g1:/ H D />` :g:`/ H D / <g1:/ H D />`
-
-.. step:: assert
-
-   But it was also proved much greater than it ⇒⇐
-
-.. step:: assert
-
-   a circle does not touch a circle internally at more points than one
-
-.. step:: assert
-
-   I say further that neither does it so touch it externally
-
-.. step:: construct
-
-   If possible, let :g:`( A C K ) <g1:( A C K )>` touch :g:`( A B D C ) <g1:( A B D C )>` at more points than one, namely :g:`A <g1:A>`, :g:`C <g1:C>`, and let :g:`/ A C / <g1:/ A C />` be joined.
-
-.. step:: assert ∵ arc_circle_points <G.99>
-
-   on the arc of each of :g:`( A B D C ) <g1:( A B D C )>`, :g:`( A C K ) <g1:( A C K )>` two points :g:`A <g1:A>`, :g:`C <g1:C>` have been taken at random, the segment joining the points will fall within each circle
-
-.. step:: assert ∵ circles_said_touch_def <G.103>
-
-   But it fell within :g:`( A B C D ) <g1:( A B C D )>` and outside :g:`( A C K ) <g1:( A C K )>` ⇒⇐
-
-.. step:: assert
-
-   a circle does not touch a circle externally at more points than one
+   :fn:`chord_inside_circle <G.99>`\ (:g:`A <g1:A>`, :g:`C <g1:C>`) → :g:`/ A C / <g1:/ A C />` inside both :g:`( A B D C ) <g1:( G B )>` and :g:`( A C K ) <g1:( A C K )>`, contradicting external contact ⇒⇐
 
 .. step:: conclude
 
-   It was proved that neither does it so touch it internally
+   a circle does not :term:`touch a circle <G.111>` at more points than one, whether internally or externally
 
 Dependency Graph
 ----------------
@@ -147,12 +108,13 @@ Dependency Graph
      "G.41" [label="G.41", tooltip="G.41 (I.16): In any triangle, if one side is extended, the exterior angle is greater than either opposite interior angle.", fillcolor="#222244", URL="../G.41/index.html", target="_top"];
      "G.43" [label="G.43", tooltip="G.43 (I.18): In any triangle, the greater side subtends the greater angle.", fillcolor="#222244", URL="../G.43/index.html", target="_top"];
      "G.44" [label="G.44", tooltip="G.44 (I.19): In any triangle, the greater angle is subtended by the greater side.", fillcolor="#222244", URL="../G.44/index.html", target="_top"];
+     "G.45" [label="G.45", tooltip="G.45 (I.20): In any triangle, the sum of any two sides is greater than the remaining side.", fillcolor="#222244", URL="../G.45/index.html", target="_top"];
      "G.98" [label="G.98", tooltip="G.98 (III.1): Find the center of a given circle.", fillcolor="#222244", URL="../G.98/index.html", target="_top"];
-     "G.99" [label="G.99", tooltip="G.99 (III.2): If on the arc of a circle two points be taken at random, the segment joining the points will fall within the circle.", fillcolor="#222244", URL="../G.99/index.html", target="_top"];
+     "G.99" [label="G.99", tooltip="G.99 (III.2): The segment joining any two points on the arc of a circle falls within the circle.", fillcolor="#222244", URL="../G.99/index.html", target="_top"];
      "G.103" [label="G.103", tooltip="G.103 (III.def.3): Circles are said totouch one another which, meeting one another, do not cut one another.", fillcolor="#224422", URL="../G.103/index.html", target="_top"];
-     "G.109" [label="G.109", tooltip="G.109 (III.11): If two circles touch one another internally, and their centres be taken, the segment joining their centres, if it be also produced, will fall on the point of contact of the circles...", fillcolor="#222244", URL="../G.109/index.html", target="_top"];
+     "G.109" [label="G.109", tooltip="G.109 (III.11): If two circles touch one another internally, the line joining their centers passes through the point of contact.", fillcolor="#222244", URL="../G.109/index.html", target="_top"];
      "G.111" [label="G.111", tooltip="G.111 (III.def.2): Asegment is said totouch a circle which, meeting thecircle and being produced, does not cut the circle.", fillcolor="#224422", URL="../G.111/index.html", target="_top"];
-     "G.112" [label="G.112", tooltip="G.112 (III.13): A circle does not touch a circle at more points than one, whether it touch it internally or externally.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.112" [label="G.112", tooltip="G.112 (III.13): A circle does not touch another circle at more than one point, whether internally or externally.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -172,7 +134,7 @@ Dependency Graph
      "G.34" -> "G.1";
      "G.37" -> "G.1";
      "G.40" -> "G.1";
-     "G.98" -> "G.1";
+     "G.45" -> "G.1";
      "G.99" -> "G.1";
      "G.109" -> "G.1";
      "G.112" -> "G.1";
@@ -187,6 +149,7 @@ Dependency Graph
      "G.34" -> "G.2";
      "G.37" -> "G.2";
      "G.40" -> "G.2";
+     "G.109" -> "G.2";
      "G.4" -> "G.3";
      "G.6" -> "G.3";
      "G.8" -> "G.3";
@@ -219,7 +182,6 @@ Dependency Graph
      "G.99" -> "G.4";
      "G.109" -> "G.4";
      "G.111" -> "G.4";
-     "G.112" -> "G.4";
      "G.6" -> "G.5";
      "G.7" -> "G.5";
      "G.10" -> "G.6";
@@ -258,6 +220,7 @@ Dependency Graph
      "G.41" -> "G.12";
      "G.43" -> "G.12";
      "G.44" -> "G.12";
+     "G.45" -> "G.12";
      "G.17" -> "G.13";
      "G.25" -> "G.13";
      "G.17" -> "G.14";
@@ -268,7 +231,11 @@ Dependency Graph
      "G.34" -> "G.14";
      "G.41" -> "G.14";
      "G.43" -> "G.14";
+     "G.45" -> "G.14";
+     "G.98" -> "G.14";
      "G.99" -> "G.14";
+     "G.109" -> "G.14";
+     "G.112" -> "G.14";
      "G.17" -> "G.15";
      "G.20" -> "G.15";
      "G.21" -> "G.15";
@@ -284,6 +251,8 @@ Dependency Graph
      "G.20" -> "G.18";
      "G.25" -> "G.18";
      "G.41" -> "G.18";
+     "G.45" -> "G.18";
+     "G.109" -> "G.18";
      "G.20" -> "G.19";
      "G.25" -> "G.19";
      "G.40" -> "G.19";
@@ -293,6 +262,7 @@ Dependency Graph
      "G.34" -> "G.21";
      "G.41" -> "G.21";
      "G.43" -> "G.21";
+     "G.45" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
      "G.28" -> "G.22";
@@ -307,18 +277,25 @@ Dependency Graph
      "G.41" -> "G.22";
      "G.43" -> "G.22";
      "G.44" -> "G.22";
-     "G.98" -> "G.22";
-     "G.99" -> "G.22";
+     "G.45" -> "G.22";
      "G.24" -> "G.23";
      "G.29" -> "G.23";
      "G.25" -> "G.24";
      "G.32" -> "G.24";
      "G.41" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
+     "G.45" -> "G.25";
      "G.99" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
+     "G.45" -> "G.26";
+     "G.98" -> "G.26";
+     "G.99" -> "G.26";
+     "G.109" -> "G.26";
+     "G.112" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -333,6 +310,7 @@ Dependency Graph
      "G.40" -> "G.33";
      "G.98" -> "G.33";
      "G.37" -> "G.34";
+     "G.98" -> "G.34";
      "G.37" -> "G.36";
      "G.40" -> "G.37";
      "G.40" -> "G.38";
@@ -340,7 +318,9 @@ Dependency Graph
      "G.43" -> "G.41";
      "G.99" -> "G.41";
      "G.44" -> "G.43";
+     "G.45" -> "G.44";
      "G.99" -> "G.44";
+     "G.109" -> "G.45";
      "G.99" -> "G.98";
      "G.112" -> "G.99";
      "G.109" -> "G.103";

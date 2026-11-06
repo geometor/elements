@@ -1,0 +1,19 @@
+[bell:proposition]
+[style: brisk, clear, architectural voice; steady studio cadence]
+Book Four, Proposition Eight. In a given square to inscribe a circle. <pause> Let A B C D be the given square; it is required to inscribe a circle in the given square A B C D.
+
+[bell:construction]
+[style: methodical, precise constructive cadence]
+Bisect the sides A D and A B at the points E and F respectively by One Ten. <pause> Through E draw E H parallel to A B or C D, and through F draw F K parallel to A D or B C by One Thirty-One, intersecting at G.
+
+[bell:insight]
+[style: luminous, deductive geometric clarity]
+Each of the resulting sub-figures is a parallelogram, so their opposite sides are equal by One Thirty-Four. Because A D equals A B, their halves A E and A F are equal, making the opposite sides F G and G E equal; and similarly G H and G K equal F G and G E, so all four segments G E, G F, G H, and G K are equal to one another. <pause> Therefore the circle described with center G and radius G E passes through F, H, and K; and because the angles at E, F, H, and K are right, by Three Sixteen the circle cannot cut the sides of the square, lest a line at right angles to a diameter at its extremity fall within the circle. <pause> Thus the circle touches all four sides A B, B C, C D, and D A, and has been inscribed in the given square A B C D. Which was to be done.
+
+[bell:system]
+[style: reflective, scholarly, architectural synthesis]
+Proposition Four Eight completes Euclid's quartet of circle-and-square constructions by inscribing a circle in a given square. As Heath notes in his commentary, because a quadrilateral admits an inscribed circle whenever the sums of its opposite sides are equal, a circle can be inscribed in any square or rhombus, but never in an oblong rectangle or rhomboid. <pause> In the GEOMETOR G-Index, node G one hundred sixty unites segment bisection, parallel lines, and parallelogram symmetry with the tangent criterion of Three Sixteen across forty-nine ancestor nodes.
+
+[bell:resolve]
+[style: warm, inviting, resonant studio close]
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Four Eight in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

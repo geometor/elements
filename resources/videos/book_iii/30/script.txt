@@ -1,0 +1,19 @@
+[bell:proposition]
+[style: brisk, clear, architectural voice; steady studio cadence]
+Book Three, Proposition Thirty. To bisect a given arc. <pause> Let A D B be the given arc; it is required to bisect the arc A D B.
+
+[bell:construction]
+[style: methodical, precise constructive cadence]
+Join the chord A B and bisect it at C by One Ten. <pause> From C, draw C D at right angles to A B by One Eleven, meeting the arc at D, and join A D and D B.
+
+[bell:insight]
+[style: luminous, deductive geometric clarity]
+Because A C equals C B and C D is common, the two sides A C and C D equal the two sides B C and C D, and the included angle A C D equals the angle B C D, since each is right; therefore by One Four, the base A D equals the base D B. <pause> By Three Twenty-Eight, equal chords cut off equal arcs, the greater equal to the greater and the less to the less; and since each of the arcs A D and D B is less than a semicircle, the arc A D equals the arc D B. Therefore the given arc A D B has been bisected at D, as was required to do.
+
+[bell:system]
+[style: reflective, scholarly, architectural synthesis]
+Proposition Thirty provides one of geometry's most practical constructions: bisecting a circular arc without first locating the center of the circle. Because the perpendicular bisector of chord A B passes through the center by Three One, extending C D cuts the circle into two semicircles, guaranteeing that each sub-arc A D and D B is minor and therefore equal by Three Twenty-Eight. <pause> In the GEOMETOR G-Index, node G one-thirty-seven combines six direct rules across forty-three ancestor nodes, directly powering the regular fifteen-sided polygon in Book Four, Proposition Sixteen, and the method of exhaustion in Book Twelve.
+
+[bell:resolve]
+[style: warm, inviting, resonant studio close]
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Thirty in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe to at geometor, share your thoughts in the comments, and star the repository at github dot com slash geometor.

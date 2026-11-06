@@ -1,0 +1,247 @@
+[
+  {
+    "bell": "proposition",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 32",
+        "g_id": "G.59",
+        "folio": "Folio 0330–0331 • p. 316",
+        "enunciation": "In any triangle, if one of the sides be produced, the exterior angle is equal to the two interior and opposite angles, and the three interior angles of the triangle are equal to two right angles.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0331.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0331.g1.png",
+        "step_num": 1,
+        "total_steps": 7,
+        "step_kind": "GIVEN",
+        "symbolic": "< A B C >, extend(/ B C /) → / C D /",
+        "clause_html": "<span class=\"g-tok\">&lt; A B C &gt;</span>, <span class=\"fn-tok\">extend</span>(<span class=\"g-tok\">/ B C /</span>) → <span class=\"g-tok\">/ C D /</span>",
+        "just_id": "GIVEN",
+        "just_title": "prove: < A C D ) = < C A B ) + < A B C ), < A B C ) + < B C A ) + < C A B ) = 2∟",
+        "visible_ids": [
+          "line-B-D", "line-A-B", "line-A-C",
+          "polygon-A-B-C",
+          "segment-A-B", "segment-B-C", "segment-C-D", "segment-A-C",
+          "highlight-polygon-A-B-C", "highlight-segment-C-D",
+          "wedge-A-C-D", "arc-A-C-D",
+          "A", "B", "C", "D",
+          "label-A", "label-B", "label-C", "label-D"
+        ],
+        "active_ids": [
+          "highlight-polygon-A-B-C", "highlight-segment-C-D",
+          "wedge-A-C-D", "arc-A-C-D",
+          "A", "B", "C", "D",
+          "label-A", "label-B", "label-C", "label-D"
+        ],
+        "equal_ids": []
+      }
+    ]
+  },
+  {
+    "bell": "construction",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 32",
+        "g_id": "G.59",
+        "folio": "Folio 0330–0331 • p. 316",
+        "enunciation": "In any triangle, if one of the sides be produced, the exterior angle is equal to the two interior and opposite angles, and the three interior angles of the triangle are equal to two right angles.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0331.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0331.g1.png",
+        "step_num": 2,
+        "total_steps": 7,
+        "step_kind": "CONSTRUCT",
+        "symbolic": "parallel_line(C, / A B /) → / C E / (/ C E / ∥ / A B /)",
+        "clause_html": "<span class=\"fn-tok\">parallel_line</span>(<span class=\"g-tok\">C</span>, <span class=\"g-tok\">/ A B /</span>) → <span class=\"g-tok\">/ C E /</span> (<span class=\"g-tok\">/ C E /</span> ∥ <span class=\"g-tok\">/ A B /</span>)",
+        "just_id": "G.58 • I.31",
+        "just_title": "parallel_line",
+        "visible_ids": [
+          "line-B-D", "line-A-B", "line-A-C", "line-C-E",
+          "polygon-A-B-C",
+          "segment-A-B", "segment-B-C", "segment-C-D", "segment-A-C", "segment-C-E",
+          "highlight-segment-A-B", "highlight-segment-C-E",
+          "A", "B", "C", "D", "E",
+          "label-A", "label-B", "label-C", "label-D", "label-E"
+        ],
+        "active_ids": [
+          "highlight-segment-C-E",
+          "C", "E",
+          "label-C", "label-E"
+        ],
+        "equal_ids": [
+          "highlight-segment-A-B", "highlight-segment-C-E"
+        ]
+      }
+    ]
+  },
+  {
+    "bell": "insight",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 32",
+        "g_id": "G.59",
+        "folio": "Folio 0330–0331 • p. 316",
+        "enunciation": "In any triangle, if one of the sides be produced, the exterior angle is equal to the two interior and opposite angles, and the three interior angles of the triangle are equal to two right angles.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0331.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0331.g1.png",
+        "step_num": 3,
+        "total_steps": 7,
+        "step_kind": "ASSERT",
+        "symbolic": "/ A B / ∥ / C E /, / A C / ∩ / A B /, / C E / → < C A B ) = < A C E )",
+        "clause_html": "<span class=\"g-tok\">/ A B /</span> ∥ <span class=\"g-tok\">/ C E /</span>, <span class=\"g-tok\">/ A C /</span> ∩ <span class=\"g-tok\">/ A B /</span>, <span class=\"g-tok\">/ C E /</span> → <span class=\"g-tok\">&lt; C A B )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; A C E )</span>",
+        "just_id": "G.56 • I.29",
+        "just_title": "parallel_transversal_angles",
+        "visible_ids": [
+          "line-B-D", "line-A-B", "line-A-C", "line-C-E",
+          "polygon-A-B-C",
+          "segment-A-B", "segment-B-C", "segment-C-D", "segment-A-C", "segment-C-E",
+          "highlight-segment-A-C",
+          "wedge-C-A-B", "wedge-A-C-E", "arc-C-A-B", "arc-A-C-E",
+          "A", "B", "C", "D", "E",
+          "label-A", "label-B", "label-C", "label-D", "label-E"
+        ],
+        "active_ids": [
+          "highlight-segment-A-C",
+          "A", "C",
+          "label-A", "label-C"
+        ],
+        "equal_ids": [
+          "wedge-C-A-B", "wedge-A-C-E", "arc-C-A-B", "arc-A-C-E"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 32",
+        "g_id": "G.59",
+        "folio": "Folio 0330–0331 • p. 316",
+        "enunciation": "In any triangle, if one of the sides be produced, the exterior angle is equal to the two interior and opposite angles, and the three interior angles of the triangle are equal to two right angles.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0331.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0331.g1.png",
+        "step_num": 4,
+        "total_steps": 7,
+        "step_kind": "ASSERT",
+        "symbolic": "/ A B / ∥ / C E /, / B D / ∩ / A B /, / C E / → < E C D ) = < A B C )",
+        "clause_html": "<span class=\"g-tok\">/ A B /</span> ∥ <span class=\"g-tok\">/ C E /</span>, <span class=\"g-tok\">/ B D /</span> ∩ <span class=\"g-tok\">/ A B /</span>, <span class=\"g-tok\">/ C E /</span> → <span class=\"g-tok\">&lt; E C D )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; A B C )</span>",
+        "just_id": "G.56 • I.29",
+        "just_title": "parallel_transversal_angles",
+        "visible_ids": [
+          "line-B-D", "line-A-B", "line-A-C", "line-C-E",
+          "polygon-A-B-C",
+          "segment-A-B", "segment-B-C", "segment-C-D", "segment-A-C", "segment-C-E",
+          "highlight-segment-B-D",
+          "wedge-E-C-D", "wedge-A-B-C", "arc-E-C-D", "arc-A-B-C",
+          "A", "B", "C", "D", "E",
+          "label-A", "label-B", "label-C", "label-D", "label-E"
+        ],
+        "active_ids": [
+          "highlight-segment-B-D",
+          "B", "C", "D",
+          "label-B", "label-C", "label-D"
+        ],
+        "equal_ids": [
+          "wedge-E-C-D", "wedge-A-B-C", "arc-E-C-D", "arc-A-B-C"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 32",
+        "g_id": "G.59",
+        "folio": "Folio 0330–0331 • p. 316",
+        "enunciation": "In any triangle, if one of the sides be produced, the exterior angle is equal to the two interior and opposite angles, and the three interior angles of the triangle are equal to two right angles.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0331.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0331.g1.png",
+        "step_num": 5,
+        "total_steps": 7,
+        "step_kind": "ASSERT",
+        "symbolic": "< A C E ) = < C A B ), < E C D ) = < A B C ) → < A C D ) = < C A B ) + < A B C )",
+        "clause_html": "<span class=\"g-tok\">&lt; A C E )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; C A B )</span>, <span class=\"g-tok\">&lt; E C D )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; A B C )</span> → <span class=\"g-tok\">&lt; A C D )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; C A B )</span> + <span class=\"g-tok\">&lt; A B C )</span>",
+        "just_id": "G.36 • I.C.N.2",
+        "just_title": "add_equals",
+        "visible_ids": [
+          "line-B-D", "line-A-B", "line-A-C", "line-C-E",
+          "polygon-A-B-C",
+          "segment-A-B", "segment-B-C", "segment-C-D", "segment-A-C", "segment-C-E",
+          "wedge-A-C-D", "wedge-C-A-B", "wedge-A-B-C",
+          "arc-A-C-D", "arc-C-A-B", "arc-A-B-C",
+          "A", "B", "C", "D", "E",
+          "label-A", "label-B", "label-C", "label-D", "label-E"
+        ],
+        "active_ids": [
+          "wedge-A-C-D", "arc-A-C-D",
+          "C", "label-C"
+        ],
+        "equal_ids": [
+          "wedge-C-A-B", "wedge-A-B-C", "arc-C-A-B", "arc-A-B-C"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 32",
+        "g_id": "G.59",
+        "folio": "Folio 0330–0331 • p. 316",
+        "enunciation": "In any triangle, if one of the sides be produced, the exterior angle is equal to the two interior and opposite angles, and the three interior angles of the triangle are equal to two right angles.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0331.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0331.g1.png",
+        "step_num": 6,
+        "total_steps": 7,
+        "step_kind": "ASSERT",
+        "symbolic": "< A C D ) + < B C A ) = < A B C ) + < B C A ) + < C A B )",
+        "clause_html": "<span class=\"g-tok\">&lt; A C D )</span> + <span class=\"g-tok\">&lt; B C A )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; A B C )</span> + <span class=\"g-tok\">&lt; B C A )</span> + <span class=\"g-tok\">&lt; C A B )</span>",
+        "just_id": "G.36 • I.C.N.2",
+        "just_title": "add_equals",
+        "visible_ids": [
+          "line-B-D", "line-A-B", "line-A-C", "line-C-E",
+          "polygon-A-B-C",
+          "segment-A-B", "segment-B-C", "segment-C-D", "segment-A-C", "segment-C-E",
+          "wedge-A-C-D", "wedge-B-C-A", "wedge-C-A-B", "wedge-A-B-C",
+          "arc-A-C-D", "arc-B-C-A", "arc-C-A-B", "arc-A-B-C",
+          "A", "B", "C", "D", "E",
+          "label-A", "label-B", "label-C", "label-D", "label-E"
+        ],
+        "active_ids": [
+          "wedge-B-C-A", "arc-B-C-A",
+          "C", "label-C"
+        ],
+        "equal_ids": [
+          "wedge-A-C-D", "wedge-C-A-B", "wedge-A-B-C",
+          "arc-A-C-D", "arc-C-A-B", "arc-A-B-C"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 32",
+        "g_id": "G.59",
+        "folio": "Folio 0330–0331 • p. 316",
+        "enunciation": "In any triangle, if one of the sides be produced, the exterior angle is equal to the two interior and opposite angles, and the three interior angles of the triangle are equal to two right angles.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0331.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0331.g1.png",
+        "step_num": 7,
+        "total_steps": 7,
+        "step_kind": "∴",
+        "symbolic": "< A C D ) + < B C A ) = 2∟ → < A B C ) + < B C A ) + < C A B ) = 2∟",
+        "clause_html": "<span class=\"g-tok\">&lt; A C D )</span> + <span class=\"g-tok\">&lt; B C A )</span> = 2∟ → <span class=\"g-tok\">&lt; A B C )</span> + <span class=\"g-tok\">&lt; B C A )</span> + <span class=\"g-tok\">&lt; C A B )</span> = 2∟",
+        "just_id": "G.37 • I.13, G.16 • I.C.N.1",
+        "just_title": "adjacent_angles_supplementary",
+        "visible_ids": [
+          "line-B-D", "line-A-B", "line-A-C", "line-C-E",
+          "polygon-A-B-C",
+          "segment-A-B", "segment-B-C", "segment-C-D", "segment-A-C", "segment-C-E",
+          "highlight-polygon-A-B-C",
+          "wedge-C-A-B", "wedge-A-B-C", "wedge-B-C-A",
+          "arc-C-A-B", "arc-A-B-C", "arc-B-C-A",
+          "A", "B", "C", "D", "E",
+          "label-A", "label-B", "label-C", "label-D", "label-E"
+        ],
+        "active_ids": [
+          "highlight-polygon-A-B-C",
+          "A", "B", "C",
+          "label-A", "label-B", "label-C"
+        ],
+        "equal_ids": [
+          "wedge-C-A-B", "wedge-A-B-C", "wedge-B-C-A",
+          "arc-C-A-B", "arc-A-B-C", "arc-B-C-A"
+        ]
+      }
+    ]
+  }
+]

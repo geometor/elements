@@ -1,0 +1,53 @@
+{
+  "III.10": {
+    "subtype": "theorem",
+    "args": [
+      ":g:`( A B C ) <g1:( A B C )>`",
+      ":g:`( D E F ) <g1:( D E F )>`"
+    ],
+    "returns": [],
+    "given": "circles :g:`( A B C ) <g1:( A B C )>`, :g:`( D E F ) <g1:( D E F )>`",
+    "contract": "| :g:`( A B C ) <g1:( A B C )>` ∩ :g:`( D E F ) <g1:( D E F )>` | ≤ 2",
+    "steps": [
+      [
+        "given",
+        [
+          "I.def.15"
+        ],
+        "assume :g:`( A B C ) <g1:( A B C )>` cuts :g:`( D E F ) <g1:( D E F )>` at :g:`B <g1:B>`, :g:`G <g1:G>`, :g:`F <g1:F>`, :g:`H <g1:H>`"
+      ],
+      [
+        "construct",
+        [
+          "I.post.1",
+          "I.10",
+          "I.11",
+          "I.post.2"
+        ],
+        "join :g:`/ B H / <g1:/ B H />`, :g:`/ B G / <g1:/ B G />`, bisect at :g:`K <g1:K>`, :g:`L <g1:L>` (:g:`/ B K / <g1:/ B K />` :eq:`= <g1:/ B K / = g1:/ K H />` :g:`/ K H / <g1:/ K H />`, :g:`/ B L / <g1:/ B L />` :eq:`= <g1:/ B L / = g1:/ L G />` :g:`/ L G / <g1:/ L G />`); draw :g:`/ A C / <g1:/ A C />` ⊥ :g:`/ B H / <g1:/ B H />` at :g:`K <g1:K>` and :g:`/ M E / <g1:/ M E />` ⊥ :g:`/ B G / <g1:/ B G />` at :g:`L <g1:L>`"
+      ],
+      [
+        "assert",
+        [
+          "III.1"
+        ],
+        ":g:`/ A C / <g1:/ A C />` bisects :g:`/ B H / <g1:/ B H />` ⊥ → center(:g:`( A B C ) <g1:( A B C )>`) ∈ :g:`/ A C / <g1:/ A C />`; :g:`/ N O / <g1:/ N O />` bisects :g:`/ B G / <g1:/ B G />` ⊥ → center(:g:`( A B C ) <g1:( A B C )>`) ∈ :g:`/ N O / <g1:/ N O />`"
+      ],
+      [
+        "assert",
+        [
+          "III.1",
+          "I.def.16"
+        ],
+        ":g:`/ A C / <g1:/ A C />` ∩ :g:`/ N O / <g1:/ N O />` = :g:`P <g1:P>` → :g:`P <g1:P>` = center(:g:`( A B C ) <g1:( A B C )>`) and :g:`P <g1:P>` = center(:g:`( D E F ) <g1:( D E F )>`)"
+      ],
+      [
+        "conclude",
+        [
+          "III.5"
+        ],
+        "center(:g:`( A B C ) <g1:( A B C )>`) = center(:g:`( D E F ) <g1:( D E F )>`) = :g:`P <g1:P>` ⇒⇐ (@fn(III.5)) → | :g:`( A B C ) <g1:( A B C )>` ∩ :g:`( D E F ) <g1:( D E F )>` | ≤ 2"
+      ]
+    ]
+  }
+}

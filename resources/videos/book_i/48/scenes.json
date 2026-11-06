@@ -1,0 +1,232 @@
+[
+  {
+    "bell": "proposition",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 48",
+        "g_id": "G.80",
+        "folio": "Folio 0382–0383 • p. 368",
+        "enunciation": "If in a triangle the square on one of the sides be equal to the squares on the remaining two sides of the triangle, the angle contained by the remaining two sides of the triangle is right.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0382.g2.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0382.g2.png",
+        "step_num": 1,
+        "total_steps": 6,
+        "step_kind": "GIVEN",
+        "symbolic": "< A B C > (sq(/ B C /) = sq(/ B A /) + sq(/ A C /))",
+        "clause_html": "<span class=\"g-tok\">&lt; A B C &gt;</span> (<span class=\"fn-tok\">sq</span>(<span class=\"g-tok\">/ B C /</span>) <span class=\"eq-tok\">=</span> <span class=\"fn-tok\">sq</span>(<span class=\"g-tok\">/ B A /</span>) + <span class=\"fn-tok\">sq</span>(<span class=\"g-tok\">/ A C /</span>))",
+        "just_id": "GIVEN",
+        "just_title": "prove: < B A C ) = ∟",
+        "visible_ids": [
+          "el-tri-ABC",
+          "el-seg-AB", "el-seg-AC", "el-seg-BC",
+          "hl-tri-ABC", "hl-seg-AB", "hl-seg-AC", "hl-seg-BC",
+          "hl-ang-BAC", "hl-arc-BAC",
+          "el-pt-A", "el-pt-B", "el-pt-C",
+          "lbl-A", "lbl-B", "lbl-C"
+        ],
+        "active_ids": [
+          "hl-tri-ABC", "hl-seg-AB", "hl-seg-AC", "hl-seg-BC",
+          "hl-ang-BAC", "hl-arc-BAC",
+          "el-pt-A", "el-pt-B", "el-pt-C",
+          "lbl-A", "lbl-B", "lbl-C"
+        ],
+        "equal_ids": []
+      }
+    ]
+  },
+  {
+    "bell": "construction",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 48",
+        "g_id": "G.80",
+        "folio": "Folio 0382–0383 • p. 368",
+        "enunciation": "If in a triangle the square on one of the sides be equal to the squares on the remaining two sides of the triangle, the angle contained by the remaining two sides of the triangle is right.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0382.g2.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0382.g2.png",
+        "step_num": 2,
+        "total_steps": 6,
+        "step_kind": "CONSTRUCT",
+        "symbolic": "perpendicular_at(/ A C /, A) → / A D / ⊥ / A C /, cut_equal_segment(/ B A /) → / A D / = / B A /, segment(D, C) → / D C /",
+        "clause_html": "<span class=\"fn-tok\">perpendicular_at</span>(<span class=\"g-tok\">/ A C /</span>, <span class=\"g-tok\">A</span>) → <span class=\"g-tok\">/ A D /</span> ⊥ <span class=\"g-tok\">/ A C /</span>, <span class=\"fn-tok\">cut_equal_segment</span>(<span class=\"g-tok\">/ B A /</span>) → <span class=\"g-tok\">/ A D /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ B A /</span>, <span class=\"fn-tok\">segment</span>(<span class=\"g-tok\">D</span>, <span class=\"g-tok\">C</span>) → <span class=\"g-tok\">/ D C /</span>",
+        "just_id": "G.34 • I.11, G.21 • I.3, G.14 • I.Post.1",
+        "just_title": "perpendicular_at",
+        "visible_ids": [
+          "el-line-DB",
+          "el-tri-ABC", "el-tri-ADC",
+          "el-seg-AB", "el-seg-AD", "el-seg-AC", "el-seg-BC", "el-seg-DC",
+          "hl-tri-ADC", "hl-seg-AB", "hl-seg-AD", "hl-seg-DC",
+          "hl-ang-DAC", "hl-arc-DAC",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D"
+        ],
+        "active_ids": [
+          "hl-tri-ADC", "hl-seg-AD", "hl-seg-DC",
+          "hl-ang-DAC", "hl-arc-DAC",
+          "el-pt-A", "el-pt-C", "el-pt-D",
+          "lbl-A", "lbl-C", "lbl-D"
+        ],
+        "equal_ids": [
+          "hl-seg-AD", "hl-seg-AB"
+        ],
+        "tick_ids": [
+          "hl-seg-AD", "hl-seg-AB"
+        ]
+      }
+    ]
+  },
+  {
+    "bell": "insight",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 48",
+        "g_id": "G.80",
+        "folio": "Folio 0382–0383 • p. 369",
+        "enunciation": "If in a triangle the square on one of the sides be equal to the squares on the remaining two sides of the triangle, the angle contained by the remaining two sides of the triangle is right.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0382.g2.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0382.g2.png",
+        "step_num": 3,
+        "total_steps": 6,
+        "step_kind": "ASSERT",
+        "symbolic": "/ D A / = / A B / → sq(/ D A /) + sq(/ A C /) = sq(/ B A /) + sq(/ A C /)",
+        "clause_html": "<span class=\"g-tok\">/ D A /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ A B /</span> → <span class=\"fn-tok\">sq</span>(<span class=\"g-tok\">/ D A /</span>) + <span class=\"fn-tok\">sq</span>(<span class=\"g-tok\">/ A C /</span>) <span class=\"eq-tok\">=</span> <span class=\"fn-tok\">sq</span>(<span class=\"g-tok\">/ B A /</span>) + <span class=\"fn-tok\">sq</span>(<span class=\"g-tok\">/ A C /</span>)",
+        "just_id": "G.36 • I.C.N.2",
+        "just_title": "add_equals",
+        "visible_ids": [
+          "el-line-DB",
+          "el-tri-ABC", "el-tri-ADC",
+          "el-seg-AB", "el-seg-AD", "el-seg-AC", "el-seg-BC", "el-seg-DC",
+          "hl-seg-AB", "hl-seg-AD", "hl-seg-AC",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D"
+        ],
+        "active_ids": [
+          "hl-seg-AC",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D"
+        ],
+        "equal_ids": [
+          "hl-seg-AD", "hl-seg-AB"
+        ],
+        "tick_ids": [
+          "hl-seg-AD", "hl-seg-AB"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 48",
+        "g_id": "G.80",
+        "folio": "Folio 0382–0383 • p. 369",
+        "enunciation": "If in a triangle the square on one of the sides be equal to the squares on the remaining two sides of the triangle, the angle contained by the remaining two sides of the triangle is right.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0382.g2.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0382.g2.png",
+        "step_num": 4,
+        "total_steps": 6,
+        "step_kind": "ASSERT",
+        "symbolic": "< D A C ) = ∟ → sq(/ D C /) = sq(/ D A /) + sq(/ A C /) = sq(/ B C /) → / D C / = / B C /",
+        "clause_html": "<span class=\"g-tok\">&lt; D A C )</span> <span class=\"eq-tok\">=</span> ∟ → <span class=\"fn-tok\">sq</span>(<span class=\"g-tok\">/ D C /</span>) <span class=\"eq-tok\">=</span> <span class=\"fn-tok\">sq</span>(<span class=\"g-tok\">/ D A /</span>) + <span class=\"fn-tok\">sq</span>(<span class=\"g-tok\">/ A C /</span>) <span class=\"eq-tok\">=</span> <span class=\"fn-tok\">sq</span>(<span class=\"g-tok\">/ B C /</span>) → <span class=\"g-tok\">/ D C /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ B C /</span>",
+        "just_id": "G.79 • I.47, G.16 • I.C.N.1",
+        "just_title": "pythagorean_theorem",
+        "visible_ids": [
+          "el-line-DB",
+          "el-tri-ABC", "el-tri-ADC",
+          "el-seg-AB", "el-seg-AD", "el-seg-AC", "el-seg-BC", "el-seg-DC",
+          "hl-tri-ADC", "hl-seg-AB", "hl-seg-AD", "hl-seg-AC", "hl-seg-BC", "hl-seg-DC",
+          "hl-ang-DAC", "hl-arc-DAC",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D"
+        ],
+        "active_ids": [
+          "hl-tri-ADC", "hl-ang-DAC", "hl-arc-DAC",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D"
+        ],
+        "equal_ids": [
+          "hl-seg-AD", "hl-seg-AB", "hl-seg-DC", "hl-seg-BC"
+        ],
+        "tick_ids": [
+          "hl-seg-AD", "hl-seg-AB"
+        ],
+        "tick_2_ids": [
+          "hl-seg-DC", "hl-seg-BC"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 48",
+        "g_id": "G.80",
+        "folio": "Folio 0382–0383 • p. 369",
+        "enunciation": "If in a triangle the square on one of the sides be equal to the squares on the remaining two sides of the triangle, the angle contained by the remaining two sides of the triangle is right.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0382.g2.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0382.g2.png",
+        "step_num": 5,
+        "total_steps": 6,
+        "step_kind": "ASSERT",
+        "symbolic": "/ D A / = / B A /, / A C / = / A C /, / D C / = / B C / → < D A C ) = < B A C )",
+        "clause_html": "<span class=\"g-tok\">/ D A /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ B A /</span>, <span class=\"g-tok\">/ A C /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ A C /</span>, <span class=\"g-tok\">/ D C /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ B C /</span> → <span class=\"g-tok\">&lt; D A C )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; B A C )</span>",
+        "just_id": "G.29 • I.8",
+        "just_title": "sss_congruence",
+        "visible_ids": [
+          "el-line-DB",
+          "el-tri-ABC", "el-tri-ADC",
+          "el-seg-AB", "el-seg-AD", "el-seg-AC", "el-seg-BC", "el-seg-DC",
+          "hl-tri-ABC", "hl-tri-ADC",
+          "hl-seg-AB", "hl-seg-AD", "hl-seg-AC", "hl-seg-BC", "hl-seg-DC",
+          "hl-ang-BAC", "hl-ang-DAC", "hl-arc-BAC", "hl-arc-DAC",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D"
+        ],
+        "active_ids": [
+          "hl-tri-ABC", "hl-tri-ADC", "hl-seg-AC",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D"
+        ],
+        "equal_ids": [
+          "hl-seg-AD", "hl-seg-AB", "hl-seg-DC", "hl-seg-BC",
+          "hl-ang-DAC", "hl-ang-BAC", "hl-arc-DAC", "hl-arc-BAC"
+        ],
+        "tick_ids": [
+          "hl-seg-AD", "hl-seg-AB"
+        ],
+        "tick_2_ids": [
+          "hl-seg-DC", "hl-seg-BC"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 48",
+        "g_id": "G.80",
+        "folio": "Folio 0382–0383 • p. 369",
+        "enunciation": "If in a triangle the square on one of the sides be equal to the squares on the remaining two sides of the triangle, the angle contained by the remaining two sides of the triangle is right.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0382.g2.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0382.g2.png",
+        "step_num": 6,
+        "total_steps": 6,
+        "step_kind": "∴",
+        "symbolic": "< D A C ) = ∟, < B A C ) = < D A C ) → < B A C ) = ∟",
+        "clause_html": "<span class=\"g-tok\">&lt; D A C )</span> <span class=\"eq-tok\">=</span> ∟, <span class=\"g-tok\">&lt; B A C )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; D A C )</span> → <span class=\"g-tok\">&lt; B A C )</span> <span class=\"eq-tok\">=</span> ∟",
+        "just_id": "G.16 • I.C.N.1",
+        "just_title": "equal_transitive",
+        "visible_ids": [
+          "el-tri-ABC",
+          "el-seg-AB", "el-seg-AC", "el-seg-BC",
+          "hl-tri-ABC", "hl-seg-AB", "hl-seg-AC", "hl-seg-BC",
+          "hl-ang-BAC", "hl-arc-BAC",
+          "el-pt-A", "el-pt-B", "el-pt-C",
+          "lbl-A", "lbl-B", "lbl-C"
+        ],
+        "active_ids": [
+          "hl-tri-ABC", "hl-seg-AB", "hl-seg-AC", "hl-seg-BC",
+          "el-pt-A", "el-pt-B", "el-pt-C",
+          "lbl-A", "lbl-B", "lbl-C"
+        ],
+        "equal_ids": [
+          "hl-ang-BAC", "hl-arc-BAC"
+        ]
+      }
+    ]
+  }
+]

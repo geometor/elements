@@ -1,0 +1,273 @@
+[
+  {
+    "prop_id": "BOOK III • PROP. 6",
+    "short_title": "touching circles have distinct centers",
+    "g_id": "G.104",
+    "folio": "Folio 0019 • p. 13",
+    "enunciation": "If two circles touch one another, they will not have the same center.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.104/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.104/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/06/",
+    "step_total": 8,
+    "subslides": [
+      {
+        "step_num": 1,
+        "step_kind": "GIVEN",
+        "chapter": "given circles ( A B C ) and ( C D E ) touching at C",
+        "symbolic": "( A B C )  tangent ( C D E ) at C",
+        "visible_ids": [
+          "el-circle-ABC",
+          "el-circle-CDE",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-E",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E"
+        ],
+        "active_ids": [
+          "el-circle-ABC",
+          "hl-circle-ABC",
+          "el-circle-CDE",
+          "hl-circle-CDE",
+          "el-pt-C",
+          "lbl-C"
+        ],
+        "equal_ids": [],
+        "clause_html": "<div class=\"clause-line\">Let the two circles <span class=\"g-tok\">( A B C )</span> and <span class=\"g-tok\">( C D E )</span></div><div class=\"clause-line\">touch one another at the point <span class=\"g-tok\">C</span>.</div>",
+        "just_id": "G.103 • III.def.3",
+        "just_title": "Circles are said to touch one another which, meeting one another, do not cut one another."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK III • PROP. 6",
+    "short_title": "touching circles have distinct centers",
+    "g_id": "G.104",
+    "folio": "Folio 0019 • p. 13",
+    "enunciation": "If two circles touch one another, they will not have the same center.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.104/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.104/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/06/",
+    "step_total": 8,
+    "subslides": [
+      {
+        "step_num": 2,
+        "step_kind": "CONSTRUCT",
+        "chapter": "assume common center F; join / F C / and draw / F E B /",
+        "symbolic": "segment(F, C) → / F C /, draw / F E B /",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-pt-F",
+          "lbl-F",
+          "el-seg-FC",
+          "hl-seg-FC",
+          "el-seg-FB",
+          "hl-seg-FB",
+          "el-sec-FEB",
+          "hl-sec-FEB",
+          "el-pt-E",
+          "el-pt-B",
+          "lbl-E",
+          "lbl-B"
+        ],
+        "equal_ids": [],
+        "clause_html": "<div class=\"clause-line\">Assume a common center <span class=\"g-tok\">F</span>;</div><div class=\"clause-line\"><span class=\"fn-tok\">segment</span>(<span class=\"g-tok\">F</span>, <span class=\"g-tok\">C</span>) → <span class=\"g-tok\">/ F C /</span>, and draw <span class=\"g-tok\">/ F E B /</span> at random.</div>",
+        "just_id": "G.14 • I.post.1",
+        "just_title": "Construct segment / F C / to the point of contact and draw / F E B / across both circles."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK III • PROP. 6",
+    "short_title": "touching circles have distinct centers",
+    "g_id": "G.104",
+    "folio": "Folio 0019 • p. 13",
+    "enunciation": "If two circles touch one another, they will not have the same center.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.104/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.104/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/06/",
+    "step_total": 8,
+    "subslides": [
+      {
+        "step_num": 3,
+        "step_kind": "ASSERT",
+        "chapter": "F center of ( A B C ) implies / F C / = / F B /",
+        "symbolic": "F = center(( A B C )) → / F C / = / F B /",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-circle-ABC",
+          "hl-circle-ABC",
+          "el-pt-F",
+          "lbl-F"
+        ],
+        "equal_ids": [
+          "el-seg-FC",
+          "hl-seg-FC",
+          "el-seg-FB",
+          "hl-seg-FB",
+          "el-pt-C",
+          "el-pt-B",
+          "lbl-C",
+          "lbl-B"
+        ],
+        "tick_ids": [
+          "el-seg-FC",
+          "el-seg-FB"
+        ],
+        "clause_html": "<div class=\"clause-line\">Since <span class=\"g-tok\">F</span> is the center of <span class=\"g-tok\">( A B C )</span>,</div><div class=\"clause-line\">radii <span class=\"eq-tok\">/ F C / = / F B /</span>.</div>",
+        "just_id": "G.10 • I.def.15",
+        "just_title": "All straight lines falling upon a circle from its center are equal to one another."
+      },
+      {
+        "step_num": 4,
+        "step_kind": "ASSERT",
+        "chapter": "F center of ( C D E ) implies / F C / = / F E / → / F E / = / F B / ⇒⇐",
+        "symbolic": "/ F C / = / F E / → / F E / = / F B / (< > ⇒⇐)",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-circle-CDE",
+          "hl-circle-CDE",
+          "el-seg-EB",
+          "hl-seg-EB"
+        ],
+        "equal_ids": [
+          "el-seg-FC",
+          "hl-seg-FC",
+          "el-seg-FE",
+          "hl-seg-FE",
+          "el-seg-FB",
+          "hl-seg-FB",
+          "el-pt-E",
+          "el-pt-B",
+          "lbl-E",
+          "lbl-B"
+        ],
+        "tick_ids": [
+          "el-seg-FC",
+          "el-seg-FE"
+        ],
+        "clause_html": "<div class=\"clause-line\">In <span class=\"g-tok\">( C D E )</span>, <span class=\"eq-tok\">/ F C / = / F E /</span>,</div><div class=\"clause-line\">so <span class=\"eq-tok\">/ F E / = / F B /</span> (part = whole) <span class=\"g-tok\">⇒⇐</span></div>",
+        "just_id": "G.10 • I.def.15, G.16 • I.cn.1, G.26 • I.cn.5",
+        "just_title": "Things equal to / F C / are equal to one another (I.cn.1), making the part / F E / equal to the whole / F B / (I.cn.5)."
+      },
+      {
+        "step_num": 5,
+        "step_kind": "∴",
+        "is_punchline": true,
+        "chapter": "F is not the common center of ( A B C ) and ( C D E )",
+        "symbolic": "∴ center(( A B C )) ≠ center(( C D E ))",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-circle-ABC",
+          "hl-circle-ABC",
+          "el-circle-CDE",
+          "hl-circle-CDE",
+          "el-pt-C",
+          "lbl-C"
+        ],
+        "equal_ids": [
+          "el-seg-FC",
+          "hl-seg-FC",
+          "el-seg-FE",
+          "hl-seg-FE"
+        ],
+        "clause_html": "<div class=\"clause-line\">∴ <span class=\"g-tok\">F</span> is not the common center of <span class=\"g-tok\">( A B C )</span> and <span class=\"g-tok\">( C D E )</span>;</div><div class=\"clause-line\">touching circles <span class=\"eq-tok\">do not share the same center</span>.</div>",
+        "just_id": "G.104 • III.6",
+        "just_title": "If two circles touch one another, they will not have the same center."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK III • PROP. 6",
+    "short_title": "touching circles have distinct centers",
+    "g_id": "G.104",
+    "folio": "Folio 0019 • p. 13",
+    "enunciation": "If two circles touch one another, they will not have the same center.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.104/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.104/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/06/",
+    "step_total": 8,
+    "widescreen_only": true,
+    "subslides": [
+      {
+        "step_num": 6,
+        "step_kind": "COMMENTARY",
+        "widescreen_only": true,
+        "chapter": "internal vs. external contact of circles",
+        "symbolic": "( C D E ) ⊂ ( A B C ), C ∈ ( A B C ) ∩ ( C D E )",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-circle-ABC",
+          "hl-circle-ABC",
+          "el-circle-CDE",
+          "hl-circle-CDE",
+          "el-pt-C",
+          "lbl-C"
+        ],
+        "equal_ids": [
+          "el-seg-FE",
+          "hl-seg-FE",
+          "el-seg-EB",
+          "hl-seg-EB"
+        ],
+        "clause_html": "<div class=\"clause-line\"><strong>Internal vs. External Tangency</strong></div><div class=\"clause-line\"><span class=\"eq-tok\">/ F E / &lt; / F B /</span> along any secant ray from <span class=\"g-tok\">F</span></div><div class=\"clause-line\" style=\"font-size:28px;color:#cbd5e1;\">Euclid proves the harder internal case explicitly; the word &ldquo;internally&rdquo; in later editions was a gloss inspired by the figure.</div>",
+        "just_tag": "✦ HEATH COMMENTARY",
+        "just_id": "Heath (1908) • Vol. II, p. 13",
+        "just_title": "Against Camerer's objection, internal contact requires the inner circle to pass through points inside the outer before meeting at C."
+      },
+      {
+        "step_num": 7,
+        "step_kind": "GENEALOGY",
+        "widescreen_only": true,
+        "chapter": "G.104 dependency tree & symbolic model",
+        "symbolic": "G.10, G.11, G.14, G.103 → G.104",
+        "stage_html": "<div style=\"width:100%;height:100%;display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:36px 8px 8px 8px;align-items:stretch;\"><div style=\"background:rgba(11,14,21,0.92);border:1.5px solid rgba(56,189,248,0.45);border-radius:16px;padding:22px 24px;display:flex;flex-direction:column;justify-content:space-between;\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.12em;color:#38bdf8;\">◈ G-INDEX PREREQUISITES → G.104</div><div style=\"display:flex;flex-direction:column;gap:10px;margin:12px 0;\"><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #5ec27e;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.103 (III.def.3)</span><span style=\"color:#f4f1ea;\">circles touching</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.14 (I.post.1)</span><span style=\"color:#f4f1ea;\">construct segment</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.11 (I.def.16)</span><span style=\"color:#f4f1ea;\">center of circle</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.10 (I.def.15)</span><span style=\"color:#f4f1ea;\">circle &amp; equal radii</span></div></div><div style=\"background:rgba(232,184,90,0.16);border:1.5px solid #e8b85a;border-radius:10px;padding:11px 16px;text-align:center;font-family:'JetBrains Mono',monospace;font-size:17px;font-weight:700;color:#e8b85a;\">↓ G.104 (III.6) • circles touch center</div></div><div style=\"background:rgba(11,14,21,0.92);border:1.5px solid rgba(232,184,90,0.4);border-radius:16px;padding:22px 24px;display:flex;flex-direction:column;justify-content:space-between;\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.12em;color:#e8b85a;\">⚙ GEOMETOR.MODEL • G.104/g1.py</div><pre style=\"font-family:'JetBrains Mono',monospace;font-size:14.5px;line-height:1.48;color:#e2e8f0;background:rgba(7,9,14,0.85);padding:16px;border-radius:10px;border:1px solid rgba(148,163,184,0.25);overflow:hidden;\">model = Model(&quot;III.6&quot;)\n\n# Circles ABC and CDE touching at C\nmodel.construct_circle(O1, C)\nmodel.construct_circle(O2, C)\n\n# Assumed common center F and secant FEB\nmodel.set_segment(F, C)\nmodel.set_segment(F, B)\nmodel.set_segment(F, E)\nmodel.set_segment(E, B)\nmodel.set_section([F, E, B])</pre><div style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">13 total ancestor nodes in G-Index • Companion to G.102 (III.5)</div></div></div>",
+        "clause_html": "<div class=\"clause-line\"><span class=\"coincide-tok\">G.104</span> synthesizes <span class=\"g-tok\">4 direct prerequisites</span></div><div class=\"clause-line\">across <span class=\"g-tok\">13 total ancestor nodes</span> in the G-Index</div><div class=\"clause-line\" style=\"font-size:28px;color:#cbd5e1;\">Pairing with III.5 (cutting circles) to establish that neither intersecting nor tangent circles can be concentric.</div>",
+        "just_tag": "◈ G-INDEX GENEALOGY",
+        "just_id": "G.104 • 4 Direct Rules",
+        "just_title": "Depends directly on G.10 (I.def.15), G.11 (I.def.16), G.14 (I.post.1), and G.103 (III.def.3)."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK III • PROP. 6",
+    "short_title": "touching circles have distinct centers",
+    "g_id": "G.104",
+    "folio": "Folio 0019 • p. 13",
+    "enunciation": "If two circles touch one another, they will not have the same center.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.104/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.104/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/06/",
+    "step_total": 8,
+    "widescreen_only": true,
+    "subslides": [
+      {
+        "step_num": 8,
+        "step_kind": "PARTICIPATE",
+        "widescreen_only": true,
+        "chapter": "explore the GEOMETOR Elements Codex & participate",
+        "symbolic": "geometor.github.io/elements/elements2/G.104/",
+        "stage_html": "<div style=\"width:100%;height:100%;display:flex;flex-direction:column;justify-content:space-between;padding:42px 16px 12px 16px;gap:20px;\"><div style=\"background:linear-gradient(135deg,rgba(232,184,90,0.16) 0%,rgba(16,20,29,0.95) 100%);border:2px solid rgba(232,184,90,0.55);border-radius:18px;padding:28px 32px;display:flex;flex-direction:column;gap:12px;box-shadow:0 16px 40px rgba(0,0,0,0.6);\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.16em;color:#e8b85a;\">★ INTERACTIVE DIGITAL EDITION</div><div style=\"font-family:Georgia,serif;font-size:38px;font-weight:700;color:#f8f6f0;\">GEOMETOR • Elements Codex</div><div style=\"font-family:'JetBrains Mono',monospace;font-size:22px;color:#5ec27e;font-weight:700;\">https://geometor.github.io/elements/elements2/G.104/</div></div><div style=\"display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;flex:1;\"><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#e8b85a;font-weight:700;\">01 • PSEUDOCODE</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Hover-synced symbolic steps, signatures, and interactive SVG diagrams.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 1 • G.104</span></div><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#38bdf8;font-weight:700;\">02 • PYTHON MODEL</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Executable geometor.model scripts with exact algebraic coordinates.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 2 • g1.py</span></div><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#5ec27e;font-weight:700;\">03 • HEATH (1908)</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Complete classical translation, folio plates, and historical commentary.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 3 • Folio 0019</span></div></div></div>",
+        "clause_html": "<div class=\"clause-line\">Explore the <span class=\"g-tok\">Elements Codex</span> &amp; <span class=\"eq-tok\">G-Index</span></div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Subscribe to <strong>@geometor</strong> for all 465 propositions</div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Share questions &amp; insights in the comments</div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Star &amp; contribute at <strong>github.com/geometor</strong></div>",
+        "just_tag": "★ PARTICIPATE & SUPPORT",
+        "just_id": "github.com/geometor/elements",
+        "just_title": "Open-source symbolic reconstruction of Euclid's Elements — links in the video description."
+      }
+    ]
+  }
+]

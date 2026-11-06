@@ -1,0 +1,57 @@
+WEBVTT
+
+1
+00:00:00.420 --> 00:00:02.247
+Book Two, Proposition Three.
+
+2
+00:00:02.247 --> 00:00:14.256
+If a segment be cut at random, the rectangle contained by the whole and one of the segments is equal to the rectangle contained by the segments and the square on the aforesaid segment.
+
+3
+00:00:14.256 --> 00:00:17.650
+Let the segment A B be cut at random at the point C.
+
+4
+00:00:18.070 --> 00:00:22.740
+On C B, describe the square C D E B by One Forty-Six.
+
+5
+00:00:22.740 --> 00:00:32.080
+Extend E D through to F by Postulate Two, and through A draw A F parallel to C D or B E by One Thirty-One.
+
+6
+00:00:32.500 --> 00:00:45.171
+Then the whole rectangle A E equals the rectangle A D together with the square C E; and because B E equals B C, A E is the rectangle contained by A B and B C.
+
+7
+00:00:45.171 --> 00:00:53.190
+Because D C equals C B, A D is the rectangle contained by A C and C B; and D B is the square on C B.
+
+8
+00:00:53.190 --> 00:01:03.456
+Therefore, the rectangle contained by A B and B C equals the rectangle contained by A C and C B together with the square on B C.
+
+9
+00:01:03.456 --> 00:01:05.300
+Which was to be proved.
+
+10
+00:01:05.720 --> 00:01:12.516
+In algebraic terms, if a segment is cut into a and b, the whole a plus b multiplied by a equals a squared plus a b.
+
+11
+00:01:12.516 --> 00:01:27.528
+As Heath notes, this proposition was constantly cited by Heron and Pappus, and when combined with Propositions One and Two, it immediately proves that the difference of two squares equals the rectangle contained by the sum and difference of the segments.
+
+12
+00:01:27.528 --> 00:01:38.520
+In the GEOMETOR G-Index, node G eighty-four unites six direct prerequisites—including line extension, parallel construction, and the square on a segment—across fifty-four ancestor nodes.
+
+13
+00:01:38.940 --> 00:01:51.316
+Explore the interactive diagram, dependency graph, and symbolic Python construction for Proposition Two Three in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+14
+00:01:51.316 --> 00:01:57.140
+Subscribe, leave a comment, and join us in mapping the logical architecture of geometry.

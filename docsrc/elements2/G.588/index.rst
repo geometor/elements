@@ -86,7 +86,7 @@ G.588 equilateral pentagon inscribed
 
    :g:`< A F K ) <g1:< A F K )>` :eq:`= <g1:< A F K ) = g1:< K F B )>` :g:`< K F B ) <g1:< K F B )>`
 
-.. step:: assert ∵ equal_circles_equal <G.133>
+.. step:: assert ∵ equal_angles_equal_arcs <G.133>
 
    the arc :g:`( A K ) <g1:( A K )>` :eq:`= <g1:( A K ) = g1:( K B )>` :g:`( K B ) <g1:( K B )>`; therefore the arc :g:`( A B ) <g1:( A B )>` is double of the arc :g:`( B K ) <g1:( B K )>`; therefore :g:`/ A K / <g1:/ A K />` is a side of a decagon
 
@@ -122,7 +122,7 @@ G.588 equilateral pentagon inscribed
 
    But, further, the arc :g:`( C B ) <g1:( C B )>` is also double of the arc :g:`( B K ) <g1:( B K )>`, for the arc :g:`( C B ) <g1:( C B )>` :eq:`= <g1:( C B ) = g1:( B A )>` :g:`( B A ) <g1:( B A )>`
 
-.. step:: assert ∵ equal_circles_angles_vi_33 <G.246>
+.. step:: assert ∵ equal_circles_angles <G.246>
 
    the whole arc :g:`( G B ) <g1:( G B )>` is also double of :g:`( B M ) <g1:( B M )>`; hence :g:`< G F B ) <g1:< G F B )>` is also double of :g:`< B F M ) <g1:< B F M )>`
 
@@ -261,23 +261,25 @@ Dependency Graph
      "G.70" [label="G.70", tooltip="G.70 (I.41): If a parallelogram shares the same base with a triangle and lies in the same parallels, the parallelogram is double the triangle.", fillcolor="#222244", URL="../G.70/index.html", target="_top"];
      "G.75" [label="G.75", tooltip="G.75 (I.46): Construct a square on a given segment.", fillcolor="#222244", URL="../G.75/index.html", target="_top"];
      "G.81" [label="G.81", tooltip="G.81 (II.def.1): Any rectangular parallelogram is said to becontained by the twosegments containing theright angle.", fillcolor="#224422", URL="../G.81/index.html", target="_top"];
-     "G.83" [label="G.83", tooltip="G.83 (II.2): If a segment be cut at random, the rectangle contained by the whole and both of the segments is equal to the square on the whole.", fillcolor="#222244", URL="../G.83/index.html", target="_top"];
+     "G.83" [label="G.83", tooltip="G.83 (II.2): If a segment is cut at random, the sum of the rectangles contained by the whole and each of the parts equals the square on the whole.", fillcolor="#222244", URL="../G.83/index.html", target="_top"];
      "G.98" [label="G.98", tooltip="G.98 (III.1): Find the center of a given circle.", fillcolor="#222244", URL="../G.98/index.html", target="_top"];
-     "G.102" [label="G.102", tooltip="G.102 (III.5): If two circles cut one another, they will not have the same center.", fillcolor="#222244", URL="../G.102/index.html", target="_top"];
-     "G.108" [label="G.108", tooltip="G.108 (III.10): A circle does not cut a circle at more points than two.", fillcolor="#222244", URL="../G.108/index.html", target="_top"];
+     "G.102" [label="G.102", tooltip="G.102 (III.5): Two intersecting circles do not have the same center.", fillcolor="#222244", URL="../G.102/index.html", target="_top"];
+     "G.108" [label="G.108", tooltip="G.108 (III.10): A circle does not intersect another circle at more than two points.", fillcolor="#222244", URL="../G.108/index.html", target="_top"];
      "G.122" [label="G.122", tooltip="G.122 (III.def.10): Asector of a circle is thefigure which, when anangle is constructed at thecenter of thecircle, is contained by thesegments containing the angle and the arc cut off by them.", fillcolor="#224422", URL="../G.122/index.html", target="_top"];
-     "G.123" [label="G.123", tooltip="G.123 (III.20): In a circle the angle at the center is double of the angle at the arc, when the angles have the same arc as base.", fillcolor="#222244", URL="../G.123/index.html", target="_top"];
+     "G.123" [label="G.123", tooltip="G.123 (III.20): In a circle, the angle at the center is double the angle at the circumference when the angles have the same arc as base.", fillcolor="#222244", URL="../G.123/index.html", target="_top"];
+     "G.126" [label="G.126", tooltip="G.126 (III.def.6): Asegment of a circle is thefigure contained by asegment and a arc of acircle.", fillcolor="#224422", URL="../G.126/index.html", target="_top"];
      "G.127" [label="G.127", tooltip="G.127 (III.def.11): Similar segments of circles are those which admit equalangles, or in which the angles are equal.", fillcolor="#224422", URL="../G.127/index.html", target="_top"];
-     "G.129" [label="G.129", tooltip="G.129 (III.24): Similar segments of circles on equal segments are equal.", fillcolor="#222244", URL="../G.129/index.html", target="_top"];
+     "G.128" [label="G.128", tooltip="G.128 (III.23): On the same segment and on the same side of it, there cannot be constructed two similar and unequal segments of circles.", fillcolor="#222244", URL="../G.128/index.html", target="_top"];
+     "G.129" [label="G.129", tooltip="G.129 (III.24): Similar segments of circles on equal segments are equal to one another.", fillcolor="#222244", URL="../G.129/index.html", target="_top"];
      "G.131" [label="G.131", tooltip="G.131 (III.def.1): Equal circles are those thediameters of which are equal, or the radii of which are equal.", fillcolor="#224422", URL="../G.131/index.html", target="_top"];
      "G.132" [label="G.132", tooltip="G.132 (III.def.9): And, when thesegments containing theangle cut off a arc, the angle is said tostand upon that arc.", fillcolor="#224422", URL="../G.132/index.html", target="_top"];
-     "G.133" [label="G.133", tooltip="G.133 (III.26): In equal circles equal angles stand on equal arcs, whether they stand at the centres or at the arcs.", fillcolor="#222244", URL="../G.133/index.html", target="_top"];
-     "G.134" [label="G.134", tooltip="G.134 (III.27): In equal circles angles standing on equal arcs are equal, whether they stand at the centres or at the arcs.", fillcolor="#222244", URL="../G.134/index.html", target="_top"];
-     "G.136" [label="G.136", tooltip="G.136 (III.29): In equal circles equal arcs are subtended by equal segments.", fillcolor="#222244", URL="../G.136/index.html", target="_top"];
+     "G.133" [label="G.133", tooltip="G.133 (III.26): In equal circles, equal angles stand on equal arcs, whether they stand at the centers or at the circumferences.", fillcolor="#222244", URL="../G.133/index.html", target="_top"];
+     "G.134" [label="G.134", tooltip="G.134 (III.27): In equal circles, angles standing on equal arcs are equal to one another, whether they stand at the centers or at the circumferences.", fillcolor="#222244", URL="../G.134/index.html", target="_top"];
+     "G.136" [label="G.136", tooltip="G.136 (III.29): In equal circles, equal arcs are subtended by equal chords.", fillcolor="#222244", URL="../G.136/index.html", target="_top"];
      "G.148" [label="G.148", tooltip="G.148 (IV.def.3): Apolygon is said to beinscribed in a circle when eachangle of the inscribedfigure lies on the arc of thecircle.", fillcolor="#224422", URL="../G.148/index.html", target="_top"];
      "G.150" [label="G.150", tooltip="G.150 (IV.def.4): Apolygon is said to becircumscribed about a circle, when each side of the circumscribedfigure touches the arc of thecircle.", fillcolor="#224422", URL="../G.150/index.html", target="_top"];
      "G.153" [label="G.153", tooltip="G.153 (IV.def.5): Similarly acircle is said to beinscribed in a figure when the arc of the circle touches each side of thefigure in which it is inscribed.", fillcolor="#224422", URL="../G.153/index.html", target="_top"];
-     "G.167" [label="G.167", tooltip="G.167 (IV.15): Inscribe in a given circle an equilateral and equiangular hexagon.", fillcolor="#222244", URL="../G.167/index.html", target="_top"];
+     "G.167" [label="G.167", tooltip="G.167 (IV.15): Inscribe an equilateral and equiangular hexagon in a given circle.", fillcolor="#222244", URL="../G.167/index.html", target="_top"];
      "G.169" [label="G.169", tooltip="G.169 (V.def.1): A magnitude is apart of a magnitude, the less of the greater, when it measures the greater.", fillcolor="#224422", URL="../G.169/index.html", target="_top"];
      "G.170" [label="G.170", tooltip="G.170 (V.def.2): The greater is amultiple of the less when it ismeasured by the less.", fillcolor="#224422", URL="../G.170/index.html", target="_top"];
      "G.171" [label="G.171", tooltip="G.171 (V.1): If there be any number of magnitudes whatever which are, respectively, equimultiples of any magnitudes equal in multitude, then, whatever multiple one of the magnitudes is of one, ...", fillcolor="#222244", URL="../G.171/index.html", target="_top"];
@@ -342,10 +344,8 @@ Dependency Graph
      "G.59" -> "G.1";
      "G.68" -> "G.1";
      "G.75" -> "G.1";
-     "G.98" -> "G.1";
      "G.108" -> "G.1";
      "G.129" -> "G.1";
-     "G.167" -> "G.1";
      "G.211" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
@@ -366,7 +366,6 @@ Dependency Graph
      "G.55" -> "G.2";
      "G.56" -> "G.2";
      "G.58" -> "G.2";
-     "G.65" -> "G.2";
      "G.211" -> "G.2";
      "G.4" -> "G.3";
      "G.6" -> "G.3";
@@ -417,14 +416,12 @@ Dependency Graph
      "G.81" -> "G.4";
      "G.83" -> "G.4";
      "G.98" -> "G.4";
-     "G.108" -> "G.4";
      "G.122" -> "G.4";
-     "G.123" -> "G.4";
+     "G.126" -> "G.4";
+     "G.128" -> "G.4";
      "G.129" -> "G.4";
      "G.132" -> "G.4";
-     "G.133" -> "G.4";
      "G.136" -> "G.4";
-     "G.167" -> "G.4";
      "G.211" -> "G.4";
      "G.213" -> "G.4";
      "G.225" -> "G.4";
@@ -442,6 +439,7 @@ Dependency Graph
      "G.66" -> "G.9";
      "G.67" -> "G.9";
      "G.122" -> "G.9";
+     "G.126" -> "G.9";
      "G.148" -> "G.9";
      "G.150" -> "G.9";
      "G.153" -> "G.9";
@@ -462,10 +460,8 @@ Dependency Graph
      "G.108" -> "G.10";
      "G.122" -> "G.10";
      "G.123" -> "G.10";
+     "G.126" -> "G.10";
      "G.129" -> "G.10";
-     "G.133" -> "G.10";
-     "G.134" -> "G.10";
-     "G.136" -> "G.10";
      "G.148" -> "G.10";
      "G.150" -> "G.10";
      "G.153" -> "G.10";
@@ -484,7 +480,6 @@ Dependency Graph
      "G.123" -> "G.11";
      "G.133" -> "G.11";
      "G.134" -> "G.11";
-     "G.136" -> "G.11";
      "G.167" -> "G.11";
      "G.246" -> "G.11";
      "G.588" -> "G.11";
@@ -518,7 +513,6 @@ Dependency Graph
      "G.70" -> "G.12";
      "G.148" -> "G.12";
      "G.150" -> "G.12";
-     "G.167" -> "G.12";
      "G.210" -> "G.12";
      "G.211" -> "G.12";
      "G.213" -> "G.12";
@@ -539,14 +533,18 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.51" -> "G.14";
      "G.58" -> "G.14";
      "G.60" -> "G.14";
      "G.65" -> "G.14";
      "G.68" -> "G.14";
      "G.70" -> "G.14";
+     "G.98" -> "G.14";
      "G.102" -> "G.14";
+     "G.108" -> "G.14";
      "G.123" -> "G.14";
+     "G.128" -> "G.14";
      "G.133" -> "G.14";
      "G.136" -> "G.14";
      "G.167" -> "G.14";
@@ -565,30 +563,47 @@ Dependency Graph
      "G.37" -> "G.16";
      "G.39" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
+     "G.54" -> "G.16";
      "G.56" -> "G.16";
+     "G.59" -> "G.16";
      "G.64" -> "G.16";
      "G.65" -> "G.16";
+     "G.66" -> "G.16";
+     "G.67" -> "G.16";
      "G.68" -> "G.16";
+     "G.70" -> "G.16";
+     "G.75" -> "G.16";
+     "G.83" -> "G.16";
+     "G.102" -> "G.16";
+     "G.134" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
      "G.34" -> "G.17";
      "G.20" -> "G.18";
      "G.25" -> "G.18";
+     "G.39" -> "G.18";
      "G.41" -> "G.18";
      "G.42" -> "G.18";
      "G.45" -> "G.18";
+     "G.53" -> "G.18";
      "G.58" -> "G.18";
      "G.59" -> "G.18";
      "G.66" -> "G.18";
      "G.67" -> "G.18";
+     "G.108" -> "G.18";
      "G.123" -> "G.18";
+     "G.167" -> "G.18";
      "G.210" -> "G.18";
      "G.20" -> "G.19";
      "G.25" -> "G.19";
      "G.39" -> "G.19";
      "G.40" -> "G.19";
+     "G.54" -> "G.19";
      "G.64" -> "G.19";
+     "G.123" -> "G.19";
+     "G.133" -> "G.19";
      "G.21" -> "G.20";
      "G.25" -> "G.21";
      "G.31" -> "G.21";
@@ -597,6 +612,7 @@ Dependency Graph
      "G.43" -> "G.21";
      "G.45" -> "G.21";
      "G.47" -> "G.21";
+     "G.51" -> "G.21";
      "G.75" -> "G.21";
      "G.228" -> "G.21";
      "G.24" -> "G.22";
@@ -629,14 +645,12 @@ Dependency Graph
      "G.63" -> "G.22";
      "G.64" -> "G.22";
      "G.75" -> "G.22";
-     "G.98" -> "G.22";
      "G.122" -> "G.22";
      "G.123" -> "G.22";
      "G.127" -> "G.22";
      "G.132" -> "G.22";
      "G.133" -> "G.22";
      "G.134" -> "G.22";
-     "G.136" -> "G.22";
      "G.148" -> "G.22";
      "G.167" -> "G.22";
      "G.213" -> "G.22";
@@ -647,6 +661,7 @@ Dependency Graph
      "G.588" -> "G.22";
      "G.24" -> "G.23";
      "G.29" -> "G.23";
+     "G.129" -> "G.23";
      "G.25" -> "G.24";
      "G.32" -> "G.24";
      "G.41" -> "G.24";
@@ -658,14 +673,22 @@ Dependency Graph
      "G.136" -> "G.24";
      "G.588" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.123" -> "G.25";
      "G.167" -> "G.25";
      "G.588" -> "G.25";
      "G.28" -> "G.26";
+     "G.39" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.51" -> "G.26";
+     "G.68" -> "G.26";
+     "G.98" -> "G.26";
+     "G.102" -> "G.26";
+     "G.134" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -676,6 +699,7 @@ Dependency Graph
      "G.32" -> "G.31";
      "G.41" -> "G.32";
      "G.98" -> "G.32";
+     "G.108" -> "G.32";
      "G.34" -> "G.33";
      "G.37" -> "G.33";
      "G.38" -> "G.33";
@@ -689,24 +713,29 @@ Dependency Graph
      "G.75" -> "G.33";
      "G.81" -> "G.33";
      "G.98" -> "G.33";
-     "G.108" -> "G.33";
-     "G.167" -> "G.33";
      "G.209" -> "G.33";
      "G.211" -> "G.33";
      "G.227" -> "G.33";
      "G.588" -> "G.33";
      "G.37" -> "G.34";
      "G.75" -> "G.34";
+     "G.98" -> "G.34";
+     "G.108" -> "G.34";
      "G.37" -> "G.36";
+     "G.42" -> "G.36";
      "G.56" -> "G.36";
+     "G.59" -> "G.36";
      "G.62" -> "G.36";
      "G.64" -> "G.36";
+     "G.123" -> "G.36";
+     "G.167" -> "G.36";
      "G.39" -> "G.37";
      "G.40" -> "G.37";
      "G.42" -> "G.37";
      "G.54" -> "G.37";
      "G.56" -> "G.37";
      "G.59" -> "G.37";
+     "G.167" -> "G.37";
      "G.39" -> "G.38";
      "G.40" -> "G.38";
      "G.225" -> "G.39";
@@ -714,9 +743,11 @@ Dependency Graph
      "G.54" -> "G.40";
      "G.56" -> "G.40";
      "G.167" -> "G.40";
+     "G.42" -> "G.41";
      "G.43" -> "G.41";
      "G.51" -> "G.41";
      "G.53" -> "G.41";
+     "G.128" -> "G.41";
      "G.213" -> "G.42";
      "G.44" -> "G.43";
      "G.45" -> "G.44";
@@ -797,12 +828,17 @@ Dependency Graph
      "G.588" -> "G.81";
      "G.588" -> "G.83";
      "G.108" -> "G.98";
+     "G.136" -> "G.98";
+     "G.167" -> "G.98";
      "G.108" -> "G.102";
      "G.129" -> "G.108";
      "G.123" -> "G.122";
      "G.134" -> "G.123";
+     "G.128" -> "G.126";
+     "G.128" -> "G.127";
      "G.129" -> "G.127";
      "G.133" -> "G.127";
+     "G.129" -> "G.128";
      "G.133" -> "G.129";
      "G.133" -> "G.131";
      "G.134" -> "G.131";

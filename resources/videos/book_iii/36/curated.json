@@ -1,0 +1,56 @@
+{
+  "III.36": {
+    "subtype": "theorem",
+    "args": [
+      ":g:`( A B C ) <g1:( A B C )>`",
+      ":g:`D <g1:D>`",
+      ":g:`/ D C A / <g1:/ A D />`",
+      ":g:`/ D B / <g1:/ D B />`"
+    ],
+    "returns": [],
+    "given": ":g:`D <g1:D>` outside :g:`( A B C ) <g1:( A B C )>`, secant :g:`/ D C A / <g1:/ A D />`, tangent :g:`/ D B / <g1:/ D B />`",
+    "contract": "rect(:g:`/ A D / <g1:/ A D />`, :g:`/ C D / <g1:/ C D />`) = :g:`/ D B / <g1:/ D B />`²",
+    "steps": [
+      [
+        "given",
+        [
+          "III.def.2"
+        ],
+        ":g:`D <g1:D>` outside :g:`( A B C ) <g1:( A B C )>`, secant :g:`/ D C A / <g1:/ A D />`, tangent :g:`/ D B / <g1:/ D B />` at :g:`B <g1:B>`"
+      ],
+      [
+        "construct",
+        [
+          "III.1",
+          "I.post.1",
+          "III.18"
+        ],
+        "@fn(III.1)(:g:`( A B C ) <g1:( A B C )>`) → :g:`F <g1:F>`, @fn(I.post.1)(:g:`F <g1:F>`, :g:`B <g1:B>`) → :g:`/ F B / <g1:/ F B />` ⊥ :g:`/ D B / <g1:/ D B />` (:g:`< F B D ) <g1:< F B D )>` is right)"
+      ],
+      [
+        "assert",
+        [
+          "I.def.15",
+          "II.6"
+        ],
+        ":g:`/ A F / <g1:/ A F />` :eq:`= <g1:/ A F / = g1:/ F C />` :g:`/ F C / <g1:/ F C />` → rect(:g:`/ A D / <g1:/ A D />`, :g:`/ C D / <g1:/ C D />`) + :g:`/ F C / <g1:/ F C />`² = :g:`/ F D / <g1:/ F D />`²"
+      ],
+      [
+        "assert",
+        [
+          "I.def.15",
+          "I.47"
+        ],
+        ":g:`/ F C / <g1:/ F C />` :eq:`= <g1:/ F C / = g1:/ F B />` :g:`/ F B / <g1:/ F B />` and :g:`/ F D / <g1:/ F D />`² = :g:`/ F B / <g1:/ F B />`² + :g:`/ D B / <g1:/ D B />`²"
+      ],
+      [
+        "conclude",
+        [
+          "I.cn.1",
+          "I.cn.3"
+        ],
+        "Subtracting :g:`/ F B / <g1:/ F B />`² → rect(:g:`/ A D / <g1:/ A D />`, :g:`/ C D / <g1:/ C D />`) = :g:`/ D B / <g1:/ D B />`²"
+      ]
+    ]
+  }
+}

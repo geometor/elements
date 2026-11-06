@@ -1,0 +1,63 @@
+{
+  "II.8": {
+    "subtype": "theorem",
+    "args": [
+      ":g:`/ A B / <g1:/ A B />`",
+      ":g:`C <g1:C>`"
+    ],
+    "returns": [],
+    "given": ":g:`/ A B / <g1:/ A B />` (:g:`C <g1:C>` ∈ :g:`/ A B / <g1:/ A B />`)",
+    "contract": "4 · :fn:`contained_rectangle <G.81>`\\ (:g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`) + :fn:`square <G.63>`\\ (:g:`/ A C / <g1:/ A C />`) = :fn:`square <G.63>`\\ (:g:`/ A B / <g1:/ A B />` + :g:`/ B C / <g1:/ B C />`)",
+    "steps": [
+      [
+        "given",
+        [],
+        ":g:`/ A B / <g1:/ A B />` = :g:`/ A C / <g1:/ A C />` + :g:`/ C B / <g1:/ C B />`"
+      ],
+      [
+        "construct",
+        [
+          "I.post.2",
+          "I.3",
+          "I.46",
+          "I.31"
+        ],
+        "@fn(I.3)(:g:`/ C B / <g1:/ C B />`) → :g:`/ B D / <g1:/ B D />` (:eq:`= <g1:/ B D / = g1:/ C B />` :g:`/ C B / <g1:/ C B />`), @fn(I.46)(:g:`/ A D / <g1:/ A D />`) → :g:`< A E F D > <g1:< A E F D >>`, draw :g:`/ D E / <g1:/ D E />` and parallels :g:`/ C H / <g1:/ C H />`, :g:`/ B L / <g1:/ B L />`, :g:`/ M N / <g1:/ M N />`, :g:`/ O P / <g1:/ O P />`"
+      ],
+      [
+        "assert",
+        [
+          "I.34",
+          "I.36",
+          "I.43"
+        ],
+        ":g:`/ C B / <g1:/ C B />` :eq:`= <g1:/ C B / = g1:/ B D / = g1:/ G K / = g1:/ K N />` :g:`/ B D / <g1:/ B D />` → :g:`< D K > <g1:< B D N K >>` :eq:`= <g1:< B D N K > = g1:< C B K G > = g1:< G K R Q > = g1:< K N P R >>` :g:`< C K > <g1:< C B K G >>` :eq:`= <g1:< C B K G > = g1:< G K R Q >>` :g:`< G R > <g1:< G K R Q >>` :eq:`= <g1:< G K R Q > = g1:< K N P R >>` :g:`< R N > <g1:< K N P R >>` → sum = 4 · :g:`< C K > <g1:< C B K G >>`"
+      ],
+      [
+        "assert",
+        [
+          "I.36",
+          "I.43",
+          "II.def.1",
+          "II.def.2"
+        ],
+        ":g:`< A G > <g1:< A C G M >>` :eq:`= <g1:< A C G M > = g1:< M G Q O > = g1:< Q R L H > = g1:< R P F L >>` :g:`< M Q > <g1:< M G Q O >>` :eq:`= <g1:< M G Q O > = g1:< Q R L H >>` :g:`< Q L > <g1:< Q R L H >>` :eq:`= <g1:< Q R L H > = g1:< R P F L >>` :g:`< R F > <g1:< R P F L >>` → gnomon :g:`< S T U > <g1:< S T U >>` = 4 · :g:`< A K > <g1:< A B K M >>` = 4 · @fn(II.def.1)(:g:`/ A B / <g1:/ A B />`, :g:`/ B D / <g1:/ B D />`)"
+      ],
+      [
+        "assert",
+        [
+          "I.34",
+          "I.cn.2"
+        ],
+        ":g:`< O H > <g1:< O Q H E >>` = :fn:`square <G.63>`\\ (:g:`/ A C / <g1:/ A C />`) → 4 · @fn(II.def.1)(:g:`/ A B / <g1:/ A B />`, :g:`/ B D / <g1:/ B D />`) + :fn:`square <G.63>`\\ (:g:`/ A C / <g1:/ A C />`) = :g:`< S T U > <g1:< S T U >>` + :g:`< O H > <g1:< O Q H E >>` = :g:`< A E F D > <g1:< A E F D >>`"
+      ],
+      [
+        "conclude",
+        [
+          "I.cn.1"
+        ],
+        ":g:`/ B D / <g1:/ B D />` :eq:`= <g1:/ B D / = g1:/ B C />` :g:`/ B C / <g1:/ B C />` → 4 · @fn(II.def.1)(:g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`) + :fn:`square <G.63>`\\ (:g:`/ A C / <g1:/ A C />`) = :fn:`square <G.63>`\\ (:g:`/ A D / <g1:/ A D />`) = :fn:`square <G.63>`\\ (:g:`/ A B / <g1:/ A B />` + :g:`/ B C / <g1:/ B C />`)"
+      ]
+    ]
+  }
+}

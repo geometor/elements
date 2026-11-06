@@ -1,0 +1,61 @@
+{
+  "III.8": {
+    "subtype": "theorem",
+    "args": [
+      ":g:`( A B C ) <g1:( A B C )>`",
+      ":g:`D <g1:D>`",
+      ":g:`/ D A / <g1:/ D A />`"
+    ],
+    "returns": [],
+    "given": ":g:`( A B C ) <g1:( A B C )>`, exterior point :g:`D <g1:D>`, secants :g:`/ D A / <g1:/ D A />` (through center), :g:`/ D E / <g1:/ D E />`, :g:`/ D F / <g1:/ D F />`, :g:`/ D C / <g1:/ D C />`",
+    "contract": ":g:`/ D A / <g1:/ D A />` > :g:`/ D E / <g1:/ D E />` > :g:`/ D F / <g1:/ D F />` > :g:`/ D C / <g1:/ D C />`, :g:`/ D G / <g1:/ D G />` < :g:`/ D K / <g1:/ D K />` < :g:`/ D L / <g1:/ D L />` < :g:`/ D H / <g1:/ D H />`, and :g:`/ D K / <g1:/ D K />` :eq:`= <g1:/ D K / = g1:/ D B />` :g:`/ D B / <g1:/ D B />` (unique pair)",
+    "steps": [
+      [
+        "given",
+        [
+          "I.def.15",
+          "I.def.17"
+        ],
+        ":g:`( A B C ) <g1:( A B C )>`, exterior point :g:`D <g1:D>`, secants :g:`/ D A / <g1:/ D A />` (cutting at :g:`G <g1:G>`), :g:`/ D E / <g1:/ D E />` (:g:`K <g1:K>`), :g:`/ D F / <g1:/ D F />` (:g:`L <g1:L>`), :g:`/ D C / <g1:/ D C />` (:g:`H <g1:H>`)"
+      ],
+      [
+        "construct",
+        [
+          "III.1",
+          "I.post.1",
+          "I.23"
+        ],
+        "@fn(III.1)(:g:`( A B C ) <g1:( A B C )>`) → :g:`M <g1:M>`; join radii :g:`/ M E / <g1:/ M E />`, :g:`/ M F / <g1:/ M F />`, :g:`/ M C / <g1:/ M C />`, :g:`/ M K / <g1:/ M K />`, :g:`/ M L / <g1:/ M L />`, :g:`/ M H / <g1:/ M H />`; @fn(I.23)(:g:`/ M D / <g1:/ M D />`, :g:`M <g1:M>`, :g:`< K M D ) <g1:< K M D )>`) → :g:`< D M B ) <g1:< D M B )>` :eq:`= <g1:< D M B ) = g1:< K M D )>` :g:`< K M D ) <g1:< K M D )>`, join :g:`/ D B / <g1:/ D B />`"
+      ],
+      [
+        "assert",
+        [
+          "I.20",
+          "I.24"
+        ],
+        ":g:`/ D A / <g1:/ D A />` = :g:`/ M E / <g1:/ M E />` + :g:`/ M D / <g1:/ M D />` > :g:`/ D E / <g1:/ D E />`; :g:`< E M D ) <g1:< E M D )>` > :g:`< F M D ) <g1:< F M D )>` → :g:`/ D E / <g1:/ D E />` > :g:`/ D F / <g1:/ D F />` > :g:`/ D C / <g1:/ D C />`"
+      ],
+      [
+        "assert",
+        [
+          "I.20",
+          "I.21"
+        ],
+        ":g:`/ M K / <g1:/ M K />` + :g:`/ D K / <g1:/ D K />` > :g:`/ M D / <g1:/ M D />` and :g:`/ M G / <g1:/ M G />` :eq:`= <g1:/ M G / = g1:/ M K />` :g:`/ M K / <g1:/ M K />` → :g:`/ D G / <g1:/ D G />` < :g:`/ D K / <g1:/ D K />`; :g:`/ M K / <g1:/ M K />` + :g:`/ D K / <g1:/ D K />` < :g:`/ M L / <g1:/ M L />` + :g:`/ D L / <g1:/ D L />` → :g:`/ D K / <g1:/ D K />` < :g:`/ D L / <g1:/ D L />` < :g:`/ D H / <g1:/ D H />`"
+      ],
+      [
+        "assert",
+        [
+          "I.4",
+          "I.cn.1"
+        ],
+        ":g:`< M K D > <g1:< M K D >>` ≃ :g:`< M B D > <g1:< M B D >>` → :g:`/ D K / <g1:/ D K />` :eq:`= <g1:/ D K / = g1:/ D B />` :g:`/ D B / <g1:/ D B />`; if :g:`/ D N / <g1:/ D N />` :eq:`= <g1:/ D N / = g1:/ D K />` :g:`/ D K / <g1:/ D K />` then :g:`/ D B / <g1:/ D B />` :eq:`= <g1:/ D B / = g1:/ D N />` :g:`/ D N / <g1:/ D N />` ⇒⇐"
+      ],
+      [
+        "conclude",
+        [],
+        ":g:`/ D A / <g1:/ D A />` > :g:`/ D E / <g1:/ D E />` > :g:`/ D F / <g1:/ D F />` > :g:`/ D C / <g1:/ D C />`, :g:`/ D G / <g1:/ D G />` < :g:`/ D K / <g1:/ D K />` < :g:`/ D L / <g1:/ D L />` < :g:`/ D H / <g1:/ D H />`, and only two equal segments :g:`/ D K / <g1:/ D K />` :eq:`= <g1:/ D K / = g1:/ D B />` :g:`/ D B / <g1:/ D B />` fall from :g:`D <g1:D>`"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+================================================================================
+YOUTUBE 1080P (16:9) TITLE
+================================================================================
+I.47 • in right-angled triangles the square on the side subtending the right angle is equal to th...
+
+================================================================================
+YOUTUBE SHORT (9:16) TITLE
+================================================================================
+I.47 • in right-angled triangles the square on the side subtending the right angle is equal to th...
+
+================================================================================
+DESCRIPTION
+================================================================================
+“In right-angled triangles the square on the side subtending the right angle is equal to the squares on the sides containing the right angle.”
+— Euclid's Elements, BOOK I • PROP. 47 (G.79)
+
+00:00 1 · GIVEN: ⟨ A B C ⟩ (⟨ B A C ) = ∟)
+00:18 2 · CONSTRUCT: square_on_segment(/ B C /, / B A /, / A C /) → ⟨ B D E C ⟩, ⟨ G B ⟩, ⟨ H C ⟩
+00:30 3 · CONSTRUCT: parallel_line(A, / B D /) → / A L / ∥ / B D /, segment(A, D; F, C; A, E; B, K) → / A D /, / F C /, / A E /, / B K /
+00:43 4 · ASSERT: ⟨ B A C ) + ⟨ B A G ) = 2∟ → / C A /, / A G / ∈ [ C G ], / B A /, / A H / ∈ [ B H ]
+00:59 5 · ASSERT: / D B / = / B C /, / F B / = / B A /, ⟨ D B A ) = ⟨ F B C ) → ⟨ A B D ⟩ = ⟨ F B C ⟩
+01:15 6 · ASSERT: ⟨ B L ⟩ = 2 ⟨ A B D ⟩, ⟨ G B ⟩ = 2 ⟨ F B C ⟩ → ⟨ B L ⟩ = ⟨ G B ⟩, ⟨ C L ⟩ = ⟨ H C ⟩
+01:31 7 · ∴: ⟨ B D E C ⟩ = ⟨ G B ⟩ + ⟨ H C ⟩
+
+GEOMETOR • G.79 • v2
+
+================================================================================
+TAGS
+================================================================================
+Euclid, Euclid's Elements, Euclid I.47, G.79, Geometry, Constructive Geometry, Compass and Straightedge, Mathematical Proof, GEOMETOR, Thomas Little Heath
+
+================================================================================
+MEDIA & CAPTIONS FILES
+================================================================================
+• 9:16 Short MP4 : I_47_short.mp4
+• 16:9 1080p MP4 : I_47_1080p.mp4
+• Closed Captions: I_47.srt
+• 16:9 Thumbnail : I_47_thumb.png
+• 9:16 Thumbnail : I_47_short_thumb.png

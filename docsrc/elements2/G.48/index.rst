@@ -10,8 +10,9 @@
 :categories: problem, construction, plane-geometry
 :category: problem, construction, plane-geometry
 :tags: book-i, point, segment, line, angle, triangle, straight-line, rectilineal-angle, plane-angle, trilateral, equality
-:dependencies: G.1, G.2, G.4, G.12, G.22, G.29, G.30, G.47
+:dependencies: G.1, G.2, G.4, G.12, G.14, G.22, G.29, G.30, G.47
 :excerpt: Construct on a given line at a given point an angle equal to a given angle.
+:youtube_id: PXTtjt-JxQk
 
 .. _G.48:
 .. _I.23:
@@ -28,31 +29,31 @@ G.48 construct an angle equal to a given angle
 .. signature:: problem
 
    | :fn:`copy_angle <G.48>`\ (:g:`/ A B / <g1:/ A B />`, :g:`A <g1:A>`, :g:`< D C E ) <g1:< D C E )>`) → :g:`< F A G ) <g1:< F A G )>`
-   | **given** :g:`/ A B / <g1:/ A B />` , :g:`A <g1:A>` the point on it, :g:`< D C E ) <g1:< D C E )>`
-   | **construct** on :g:`/ A B / <g1:/ A B />`, and at :g:`A <g1:A>` on it, :g:`< F A G ) <g1:< F A G )>` has been constructed :eq:`= <g1:< F A G ) = g1:< D C E )>` to :g:`< D C E ) <g1:< D C E )>`
+   | **given** :g:`/ A B / <g1:/ A B />`, :g:`A <g1:A>` ∈ :g:`/ A B / <g1:/ A B />`, :g:`< D C E ) <g1:< D C E )>`
+   | **construct** :g:`< F A G ) <g1:< F A G )>` :eq:`= <g1:< F A G ) = g1:< D C E )>` :g:`< D C E ) <g1:< D C E )>`
 
 .. picture:: g1.svg
    :alt: Folio 0308 Figure 1 - Proposition 23
 
 .. step:: given
 
-   :g:`/ A B / <g1:/ A B />` , :g:`A <g1:A>` the point on it, :g:`< D C E ) <g1:< D C E )>`
+   :g:`/ A B / <g1:/ A B />`, :g:`A <g1:A>` ∈ :g:`/ A B / <g1:/ A B />`, :g:`< D C E ) <g1:< D C E )>`
 
 .. step:: construct
 
-   **point**\ (:g:`[ C D ] <g1:[ C D ]>`, :g:`[ C E ] <g1:[ C E ]>`) → :g:`D <g1:D>`, :g:`E <g1:E>`
+   **point**\ (:g:`[ C D ] <g1:[ C D ]>`, :g:`[ C E ] <g1:[ C E ]>`) → :g:`D <g1:D>`, :g:`E <g1:E>`, :fn:`segment <G.14>`\ (:g:`D <g1:D>`, :g:`E <g1:E>`) → :g:`/ D E / <g1:/ D E />`
 
 .. step:: construct
 
-   :fn:`triangle_from_segments <G.47>`: Let :g:`/ D E / <g1:/ D E />` be joined, and out of three segments which are equal to :g:`/ C D / <g1:/ C D />`, :g:`/ D E / <g1:/ D E />`, :g:`/ C E / <g1:/ C E />` let :g:`< A F G > <g1:< A F G >>` be constructed in such a way that :g:`/ C D / <g1:/ C D />` is :eq:`equal <g1:/ C D / = g1:/ A F /; g1:/ C E / = g1:/ A G /; g1:/ D E / = g1:/ F G />` to :g:`/ A F / <g1:/ A F />`, :g:`/ C E / <g1:/ C E />` to :g:`/ A G / <g1:/ A G />`, and further :g:`/ D E / <g1:/ D E />` to :g:`/ F G / <g1:/ F G />`.
+   :fn:`triangle_from_segments <G.47>`\ (:g:`/ C D / <g1:/ C D />`, :g:`/ D E / <g1:/ D E />`, :g:`/ C E / <g1:/ C E />`) → :g:`< A F G > <g1:< A F G >>` (:g:`/ C D / <g1:/ C D />` :eq:`= <g1:/ C D / = g1:/ A F /; g1:/ C E / = g1:/ A G /; g1:/ D E / = g1:/ F G />` :g:`/ A F / <g1:/ A F />`, :g:`/ C E / <g1:/ C E />` :eq:`= <g1:/ C D / = g1:/ A F /; g1:/ C E / = g1:/ A G /; g1:/ D E / = g1:/ F G />` :g:`/ A G / <g1:/ A G />`, :g:`/ D E / <g1:/ D E />` :eq:`= <g1:/ C D / = g1:/ A F /; g1:/ C E / = g1:/ A G /; g1:/ D E / = g1:/ F G />` :g:`/ F G / <g1:/ F G />`)
 
 .. step:: assert ∵ sss_congruence <G.29>
 
-   :g:`/ D C / <g1:/ D C />`, :g:`/ C E / <g1:/ C E />` :eq:`= <g1:/ D C / = g1:/ F A /; g1:/ C E / = g1:/ A G />` :g:`/ F A / <g1:/ F A />`, :g:`/ A G / <g1:/ A G />`, and :g:`/ D E / <g1:/ D E />` :eq:`= <g1:/ D E / = g1:/ F G />` :g:`/ F G / <g1:/ F G />` → :g:`< D C E ) <g1:< D C E )>` :eq:`= <g1:< D C E ) = g1:< F A G )>` :g:`< F A G ) <g1:< F A G )>`
+   :g:`/ D C / <g1:/ D C />` :eq:`= <g1:/ D C / = g1:/ F A /; g1:/ C E / = g1:/ A G />` :g:`/ F A / <g1:/ F A />`, :g:`/ C E / <g1:/ C E />` :eq:`= <g1:/ D C / = g1:/ F A /; g1:/ C E / = g1:/ A G />` :g:`/ A G / <g1:/ A G />`, :g:`/ D E / <g1:/ D E />` :eq:`= <g1:/ D E / = g1:/ F G />` :g:`/ F G / <g1:/ F G />` → :g:`< D C E ) <g1:< D C E )>` :eq:`= <g1:< D C E ) = g1:< F A G )>` :g:`< F A G ) <g1:< F A G )>`
 
-.. step:: conclude
+.. step:: conclude ∵ sss_congruence <G.29>
 
-   on :g:`/ A B / <g1:/ A B />`, and at :g:`A <g1:A>` on it, :g:`< F A G ) <g1:< F A G )>` has been constructed :eq:`= <g1:< F A G ) = g1:< D C E )>` to :g:`< D C E ) <g1:< D C E )>`
+   :g:`< F A G ) <g1:< F A G )>` :eq:`= <g1:< F A G ) = g1:< D C E )>` :g:`< D C E ) <g1:< D C E )>`
 
 Dependency Graph
 ----------------
@@ -218,6 +219,7 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.17" -> "G.15";
      "G.20" -> "G.15";
      "G.21" -> "G.15";
@@ -227,6 +229,7 @@ Dependency Graph
      "G.21" -> "G.16";
      "G.37" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
@@ -268,10 +271,12 @@ Dependency Graph
      "G.32" -> "G.24";
      "G.41" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
@@ -305,5 +310,6 @@ Required for
 .. toctree::
    :hidden:
 
+   video
    code
    heath

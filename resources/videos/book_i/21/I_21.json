@@ -1,0 +1,61 @@
+{
+  "voice_id": "voice_xdhacg1pn1cq",
+  "audio_wav": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_i/21/I_21.wav",
+  "total_duration_sec": 74.7,
+  "segments": [
+    {
+      "index": 0,
+      "bell": "bell:proposition",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Euclid's Elements, Book One, Proposition Twenty-One. Segments constructed from the endpoints of one side of a triangle to an interior point have a lesser sum, but contain a greater angle, than the other two sides. Given triangle A B C and interior segments B D and D C meeting at point D, we prove that B D and D C together are less than B A and A C together, and that angle B D C is greater than angle B A C.",
+      "start_sec": 0.0,
+      "end_sec": 25.05,
+      "duration_sec": 25.05,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Euclid's Elements, Book One, Proposition Twenty-One. Segments constructed from the endpoints of one side of a triangle to an interior point have a lesser sum, but contain a greater angle, than the other two sides. Given triangle A B C and interior segments B D and D C meeting at point D, we prove that B D and D C together are less than B A and A C together, and that angle B D C is greater than angle B A C.",
+          "start_sec": 0.0,
+          "end_sec": 25.05,
+          "duration_sec": 25.05
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "bell": "bell:construction",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Extend segment B D continuously to meet side A C at point E.",
+      "start_sec": 25.05,
+      "end_sec": 30.12,
+      "duration_sec": 5.07,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Extend segment B D continuously to meet side A C at point E.",
+          "start_sec": 25.05,
+          "end_sec": 30.12,
+          "duration_sec": 5.07
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "bell": "bell:insight",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "In triangle A B E, two sides B A and A E together are greater than B E; adding E C to each shows that B A and A C together are greater than B E and E C together. In triangle C E D, two sides C E and E D together are greater than C D; adding D B to each shows that B E and E C together are greater than B D and D C together. Next, in triangle C D E, exterior angle B D C is greater than interior angle C E D, and in triangle A B E, exterior angle C E B is greater than angle B A C. Therefore B D and D C together are less than B A and A C together, while angle B D C is greater than angle B A C, as was required to prove.",
+      "start_sec": 30.12,
+      "end_sec": 74.7,
+      "duration_sec": 44.58,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "In triangle A B E, two sides B A and A E together are greater than B E; adding E C to each shows that B A and A C together are greater than B E and E C together. In triangle C E D, two sides C E and E D together are greater than C D; adding D B to each shows that B E and E C together are greater than B D and D C together. Next, in triangle C D E, exterior angle B D C is greater than interior angle C E D, and in triangle A B E, exterior angle C E B is greater than angle B A C. Therefore B D and D C together are less than B A and A C together, while angle B D C is greater than angle B A C, as was required to prove.",
+          "start_sec": 30.12,
+          "end_sec": 74.7,
+          "duration_sec": 44.58
+        }
+      ]
+    }
+  ]
+}

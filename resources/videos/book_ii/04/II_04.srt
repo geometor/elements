@@ -1,0 +1,75 @@
+1
+00:00:00,420 --> 00:00:02,225
+Book Two, Proposition Four.
+
+2
+00:00:02,225 --> 00:00:11,921
+If a segment be cut at random, the square on the whole is equal to the squares on the segments and twice the rectangle contained by the segments.
+
+3
+00:00:11,921 --> 00:00:14,730
+Let the segment A B be cut at random at C.
+
+4
+00:00:15,150 --> 00:00:22,574
+On A B, describe the square A D E B by One Forty-Six, and join the diagonal B D.
+
+5
+00:00:22,574 --> 00:00:34,360
+Through C, draw C F parallel to A D or B E by One Thirty-One, meeting B D at G; and through G, draw H K parallel to A B or D E.
+
+6
+00:00:34,780 --> 00:00:42,780
+Because C F is parallel to A D, the exterior angle C G B equals the interior angle A D B by One Twenty-Nine.
+
+7
+00:00:42,780 --> 00:00:47,892
+And since A B equals A D, angle A D B equals angle A B D by One Five.
+
+8
+00:00:47,892 --> 00:00:57,966
+Therefore angle C G B equals angle G B C, so side B C equals C G by One Six, and by One Thirty-Four all four sides of C G K B are equal.
+
+9
+00:00:57,966 --> 00:01:06,041
+Moreover, since C G is parallel to B K and angle K B C is right, all four angles of C G K B are right angles.
+
+10
+00:01:06,041 --> 00:01:13,597
+Thus C G K B is the square on B C, and for the same reason H F is the square on H G, which equals A C.
+
+11
+00:01:13,597 --> 00:01:25,523
+Now the complements A G and G E are equal, and since C G equals B C, each is the rectangle contained by A C and B C, so together they equal twice that rectangle.
+
+12
+00:01:25,523 --> 00:01:31,745
+Adding the two squares H F and C K, the four areas compose the whole square A D E B.
+
+13
+00:01:31,745 --> 00:01:40,116
+Therefore, the square on A B equals the squares on A C and B C plus twice the rectangle contained by A C and B C.
+
+14
+00:01:40,116 --> 00:01:41,820
+Which was to be proved.
+
+15
+00:01:42,240 --> 00:01:51,050
+Proposition Two Four is the geometric archetype of the binomial square: the square of a plus b equals a squared plus b squared plus two a b.
+
+16
+00:01:51,050 --> 00:02:00,679
+Rather than multiplying symbols, Euclid dissects the square along its diagonal into two squares about the diameter and two equal rectangular complements.
+
+17
+00:02:00,679 --> 00:02:16,600
+In the GEOMETOR G-Index, node G eighty-five unites eleven prerequisites across forty-eight ancestor nodes—combining isosceles triangle symmetry, parallel transversals, and parallelogram complements into a cornerstone of Book Ten's theory of irrationals.
+
+18
+00:02:17,020 --> 00:02:31,611
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Two Four in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+19
+00:02:31,611 --> 00:02:38,940
+Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

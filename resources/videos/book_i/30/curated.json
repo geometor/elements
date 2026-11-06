@@ -1,0 +1,16 @@
+{
+  "I.30": {
+    "subtype": "theorem",
+    "args": [":g:`/ A B / <g1:/ A B />`", ":g:`/ C D / <g1:/ C D />`", ":g:`/ E F / <g1:/ E F />`"],
+    "returns": [],
+    "given": ":g:`/ A B / <g1:/ A B />` ∥ :g:`/ E F / <g1:/ E F />`, :g:`/ C D / <g1:/ C D />` ∥ :g:`/ E F / <g1:/ E F />`",
+    "contract": ":g:`/ A B / <g1:/ A B />` ∥ :g:`/ C D / <g1:/ C D />`",
+    "steps": [
+      ["given", [], ":g:`/ A B / <g1:/ A B />` ∥ :g:`/ E F / <g1:/ E F />`, :g:`/ C D / <g1:/ C D />` ∥ :g:`/ E F / <g1:/ E F />`"],
+      ["construct", [], ":g:`/ G K / <g1:/ G K />` ∩ :g:`/ A B / <g1:/ A B />`, :g:`/ E F / <g1:/ E F />`, :g:`/ C D / <g1:/ C D />` → :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`K <g1:K>`"],
+      ["assert", ["I.29"], ":g:`/ A B / <g1:/ A B />` ∥ :g:`/ E F / <g1:/ E F />` → :g:`< A G K ) <g1:< A G K )>` :eq:`= <g1:< A G K ) = g1:< G H F )>` :g:`< G H F ) <g1:< G H F )>`"],
+      ["assert", ["I.29", "I.cn.1"], ":g:`/ E F / <g1:/ E F />` ∥ :g:`/ C D / <g1:/ C D />` → :g:`< G H F ) <g1:< G H F )>` :eq:`= <g1:< G H F ) = g1:< G K D )>` :g:`< G K D ) <g1:< G K D )>` → :g:`< A G K ) <g1:< A G K )>` :eq:`= <g1:< A G K ) = g1:< G K D )>` :g:`< G K D ) <g1:< G K D )>`"],
+      ["conclude", ["I.27"], ":g:`< A G K ) <g1:< A G K )>` :eq:`= <g1:< A G K ) = g1:< G K D )>` :g:`< G K D ) <g1:< G K D )>` → :g:`/ A B / <g1:/ A B />` ∥ :g:`/ C D / <g1:/ C D />`"]
+    ]
+  }
+}

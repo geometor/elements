@@ -1,0 +1,328 @@
+[
+  {
+    "bell": "bell:proposition",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "weight": 1.15,
+        "prop_id": "BOOK I • PROP. 13",
+        "short_title": "adjacent angles on a line sum to two right angles",
+        "g_id": "G.37",
+        "folio": "Folio 0289–0290 • p. 275",
+        "enunciation": "If a straight line set up on a straight line make angles, it will make either two right angles or angles equal to two right angles.",
+        "step_num": 1,
+        "step_total": 7,
+        "step_kind": "GIVEN",
+        "chapter": "given / A B / on / C D / → < C B A ), < A B D )",
+        "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.37/g1.svg",
+        "visible_ids": [
+          "el-line-CD",
+          "el-seg-CD",
+          "el-seg-BA",
+          "el-ang-CBA",
+          "el-ang-ABD",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D"
+        ],
+        "active_ids": [
+          "el-seg-BA",
+          "hl-seg-BA",
+          "el-seg-CD",
+          "hl-seg-CD",
+          "el-ang-CBA",
+          "hl-ang-CBA",
+          "hl-arc-CBA",
+          "el-ang-ABD",
+          "hl-ang-ABD",
+          "hl-arc-ABD",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D"
+        ],
+        "equal_ids": [],
+        "tick_ids": [],
+        "symbolic": "given: / A B / on / C D / → < C B A ), < A B D )",
+        "clause_html": "<span class=\"g-tok\">/ A B /</span> on <span class=\"g-tok\">/ C D /</span> → <span class=\"g-tok\">&lt; C B A )</span>, <span class=\"g-tok\">&lt; A B D )</span>",
+        "just_id": "G.22 • I.Def.8",
+        "just_title": "plane_angle"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 0.9,
+        "prop_id": "BOOK I • PROP. 13",
+        "short_title": "adjacent angles on a line sum to two right angles",
+        "g_id": "G.37",
+        "folio": "Folio 0289–0290 • p. 275",
+        "enunciation": "If a straight line set up on a straight line make angles, it will make either two right angles or angles equal to two right angles.",
+        "step_num": 2,
+        "step_total": 7,
+        "step_kind": "GOAL",
+        "chapter": "< C B A ) + < A B D ) = < C B E ) + < E B D )",
+        "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.37/g1.svg",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-ang-CBA",
+          "hl-ang-CBA",
+          "hl-arc-CBA",
+          "el-ang-ABD",
+          "hl-ang-ABD",
+          "hl-arc-ABD",
+          "el-seg-BA",
+          "hl-seg-BA",
+          "el-pt-A",
+          "el-pt-B",
+          "lbl-A",
+          "lbl-B"
+        ],
+        "equal_ids": [
+          "el-ang-CBE",
+          "hl-ang-CBE",
+          "hl-arc-CBE",
+          "el-ang-EBD",
+          "hl-ang-EBD",
+          "hl-arc-EBD"
+        ],
+        "tick_ids": [],
+        "symbolic": "prove: < C B A ) + < A B D ) = < C B E ) + < E B D )",
+        "clause_html": "<span class=\"g-tok\">&lt; C B A )</span> + <span class=\"g-tok\">&lt; A B D )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; C B E )</span> + <span class=\"g-tok\">&lt; E B D )</span>",
+        "just_id": "G.37 • I.13",
+        "just_title": "adjacent_angles_supplementary"
+      }
+    ]
+  },
+  {
+    "bell": "bell:construction",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "weight": 0.9,
+        "prop_id": "BOOK I • PROP. 13",
+        "short_title": "adjacent angles on a line sum to two right angles",
+        "g_id": "G.37",
+        "folio": "Folio 0289 • p. 275",
+        "enunciation": "If a straight line set up on a straight line make angles, it will make either two right angles or angles equal to two right angles.",
+        "step_num": 3,
+        "step_total": 7,
+        "step_kind": "ASSERT",
+        "chapter": "? < C B A ) = < A B D ) → / A B / ⊥ / C D /",
+        "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.37/g1.svg",
+        "visible_ids": [
+          "el-line-CD",
+          "el-seg-CD",
+          "el-seg-BA",
+          "el-ang-CBA",
+          "el-ang-ABD",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D"
+        ],
+        "active_ids": [
+          "el-seg-BA",
+          "hl-seg-BA",
+          "el-seg-CD",
+          "hl-seg-CD",
+          "el-pt-A",
+          "el-pt-B",
+          "lbl-A",
+          "lbl-B"
+        ],
+        "equal_ids": [
+          "el-ang-CBA",
+          "hl-ang-CBA",
+          "hl-arc-CBA",
+          "el-ang-ABD",
+          "hl-ang-ABD",
+          "hl-arc-ABD"
+        ],
+        "tick_ids": [],
+        "symbolic": "? < C B A ) = < A B D ) → / A B / ⊥ / C D /",
+        "clause_html": "? <span class=\"g-tok\">&lt; C B A )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; A B D )</span> → <span class=\"g-tok\">/ A B /</span> ⊥ <span class=\"g-tok\">/ C D /</span>",
+        "just_id": "G.33 • I.Def.10",
+        "just_title": "right_angle_perpendicular"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 1.1,
+        "prop_id": "BOOK I • PROP. 13",
+        "short_title": "adjacent angles on a line sum to two right angles",
+        "g_id": "G.37",
+        "folio": "Folio 0289 • p. 275",
+        "enunciation": "If a straight line set up on a straight line make angles, it will make either two right angles or angles equal to two right angles.",
+        "step_num": 4,
+        "step_total": 7,
+        "step_kind": "CONSTRUCT",
+        "chapter": "perpendicular_at(/ C D /, B) → / B E / ⊥ / C D /",
+        "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.37/g1.svg",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-seg-BE",
+          "hl-seg-BE",
+          "el-pt-B",
+          "el-pt-E",
+          "lbl-B",
+          "lbl-E"
+        ],
+        "equal_ids": [
+          "el-ang-CBE",
+          "hl-ang-CBE",
+          "hl-arc-CBE",
+          "el-ang-EBD",
+          "hl-ang-EBD",
+          "hl-arc-EBD"
+        ],
+        "tick_ids": [],
+        "symbolic": "perpendicular_at(/ C D /, B) → / B E / ⊥ / C D / (: < C B E ) = < E B D ))",
+        "clause_html": "<div class=\"clause-line\"><span class=\"fn-tok\">perpendicular_at</span>(<span class=\"g-tok\">/ C D /</span>, <span class=\"g-tok\">B</span>) → <span class=\"g-tok\">/ B E /</span> ⊥ <span class=\"g-tok\">/ C D /</span></div><div class=\"clause-line\">(<span class=\"g-tok\">&lt; C B E )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; E B D )</span>)</div>",
+        "just_id": "G.34 • I.11",
+        "just_title": "perpendicular_at(seg, pt)"
+      }
+    ]
+  },
+  {
+    "bell": "bell:insight",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "weight": 1.15,
+        "prop_id": "BOOK I • PROP. 13",
+        "short_title": "adjacent angles on a line sum to two right angles",
+        "g_id": "G.37",
+        "folio": "Folio 0289 • p. 275",
+        "enunciation": "If a straight line set up on a straight line make angles, it will make either two right angles or angles equal to two right angles.",
+        "step_num": 5,
+        "step_total": 7,
+        "step_kind": "ASSERT",
+        "chapter": "< C B E ) + < E B D ) = < C B A ) + < A B E ) + < E B D )",
+        "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.37/g1.svg",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-ang-CBE",
+          "hl-ang-CBE",
+          "hl-arc-CBE",
+          "el-ang-EBD",
+          "hl-ang-EBD",
+          "hl-arc-EBD",
+          "el-seg-BE",
+          "hl-seg-BE"
+        ],
+        "equal_ids": [
+          "el-ang-CBA",
+          "hl-ang-CBA",
+          "hl-arc-CBA",
+          "el-ang-ABE",
+          "hl-ang-ABE",
+          "hl-arc-ABE"
+        ],
+        "tick_ids": [],
+        "symbolic": "< C B E ) = < C B A ) + < A B E ) → < C B E ) + < E B D ) = < C B A ) + < A B E ) + < E B D )",
+        "clause_html": "<div class=\"clause-line\"><span class=\"g-tok\">&lt; C B E )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; C B A )</span> + <span class=\"g-tok\">&lt; A B E )</span></div><div class=\"clause-line\">→ <span class=\"g-tok\">&lt; C B E )</span> + <span class=\"g-tok\">&lt; E B D )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; C B A )</span> + <span class=\"g-tok\">&lt; A B E )</span> + <span class=\"g-tok\">&lt; E B D )</span></div>",
+        "just_id": "G.36 • I.C.N.2",
+        "just_title": "add_equals"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 1.15,
+        "prop_id": "BOOK I • PROP. 13",
+        "short_title": "adjacent angles on a line sum to two right angles",
+        "g_id": "G.37",
+        "folio": "Folio 0289 • p. 275",
+        "enunciation": "If a straight line set up on a straight line make angles, it will make either two right angles or angles equal to two right angles.",
+        "step_num": 6,
+        "step_total": 7,
+        "step_kind": "ASSERT",
+        "chapter": "< D B A ) + < A B C ) = < D B E ) + < E B A ) + < A B C )",
+        "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.37/g1.svg",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-ang-ABD",
+          "hl-ang-ABD",
+          "hl-arc-ABD",
+          "el-ang-CBA",
+          "hl-ang-CBA",
+          "hl-arc-CBA",
+          "el-seg-BA",
+          "hl-seg-BA"
+        ],
+        "equal_ids": [
+          "el-ang-EBD",
+          "hl-ang-EBD",
+          "hl-arc-EBD",
+          "el-ang-ABE",
+          "hl-ang-ABE",
+          "hl-arc-ABE"
+        ],
+        "tick_ids": [],
+        "symbolic": "< D B A ) = < D B E ) + < E B A ) → < D B A ) + < A B C ) = < D B E ) + < E B A ) + < A B C )",
+        "clause_html": "<div class=\"clause-line\"><span class=\"g-tok\">&lt; D B A )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; D B E )</span> + <span class=\"g-tok\">&lt; E B A )</span></div><div class=\"clause-line\">→ <span class=\"g-tok\">&lt; D B A )</span> + <span class=\"g-tok\">&lt; A B C )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; D B E )</span> + <span class=\"g-tok\">&lt; E B A )</span> + <span class=\"g-tok\">&lt; A B C )</span></div>",
+        "just_id": "G.36 • I.C.N.2",
+        "just_title": "add_equals"
+      },
+      {
+        "type": "euclid_step",
+        "weight": 1.25,
+        "prop_id": "BOOK I • PROP. 13",
+        "short_title": "adjacent angles on a line sum to two right angles",
+        "g_id": "G.37",
+        "folio": "Folio 0290 • ∴",
+        "enunciation": "If a straight line set up on a straight line make angles, it will make either two right angles or angles equal to two right angles.",
+        "step_num": 7,
+        "step_total": 7,
+        "step_kind": "∴",
+        "chapter": "< C B A ) + < A B D ) = < C B E ) + < E B D )",
+        "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.37/g1.svg",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-ang-CBA",
+          "hl-ang-CBA",
+          "hl-arc-CBA",
+          "el-ang-ABD",
+          "hl-ang-ABD",
+          "hl-arc-ABD",
+          "el-seg-BA",
+          "hl-seg-BA",
+          "el-seg-CD",
+          "hl-seg-CD"
+        ],
+        "equal_ids": [
+          "el-ang-CBE",
+          "hl-ang-CBE",
+          "hl-arc-CBE",
+          "el-ang-EBD",
+          "hl-ang-EBD",
+          "hl-arc-EBD"
+        ],
+        "tick_ids": [],
+        "symbolic": "< C B A ) + < A B D ) = < C B E ) + < E B D )",
+        "clause_html": "<span class=\"g-tok\">&lt; C B A )</span> + <span class=\"g-tok\">&lt; A B D )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; C B E )</span> + <span class=\"g-tok\">&lt; E B D )</span>",
+        "just_id": "G.16 • I.C.N.1",
+        "just_title": "equal_transitive"
+      }
+    ]
+  }
+]

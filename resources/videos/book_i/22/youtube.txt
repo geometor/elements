@@ -1,0 +1,39 @@
+================================================================================
+YOUTUBE 1080P (16:9) TITLE
+================================================================================
+I.22 • out of three straight lines, which are equal to three given straight lines, to construct a...
+
+================================================================================
+YOUTUBE SHORT (9:16) TITLE
+================================================================================
+I.22 • out of three straight lines, which are equal to three given straight lines, to construct a...
+
+================================================================================
+DESCRIPTION
+================================================================================
+“Out of three straight lines, which are equal to three given straight lines, to construct a triangle: thus it is necessary that two of the straight lines taken together in any manner should be greater than the remaining one.”
+— Euclid's Elements, BOOK I • PROP. 22 (G.47)
+
+00:00 1 · GIVEN: given A, B, C (A + B ⟩ C, A + C ⟩ B, B + C ⟩ A)
+00:19 2 · CONSTRUCT: cut_equal_segment([ D E ], A, B, C) → / D F / = A, / F G / = B, / G H / = C
+00:27 3 · CONSTRUCT: circle(F, D) → ( F D ), circle(G, H) → ( G H )
+00:36 4 · INTERSECT: ( F D ) ∩ ( G H ) → K, segment(K, F) → / K F /, segment(K, G) → / K G /
+00:44 5 · ASSERT: ( F D ) → / F D / = / F K / → / K F / = A
+00:54 6 · ASSERT: ( G H ) → / G H / = / G K / → / K G / = C
+01:03 7 · ∴: / K F / = A, / F G / = B, / K G / = C → ⟨ K F G ⟩
+
+GEOMETOR • G.47 • v2
+
+================================================================================
+TAGS
+================================================================================
+Euclid, Euclid's Elements, Euclid I.22, G.47, Geometry, Constructive Geometry, Compass and Straightedge, Mathematical Proof, GEOMETOR, Thomas Little Heath
+
+================================================================================
+MEDIA & CAPTIONS FILES
+================================================================================
+• 9:16 Short MP4 : I_22_short.mp4
+• 16:9 1080p MP4 : I_22_1080p.mp4
+• Closed Captions: I_22.srt
+• 16:9 Thumbnail : I_22_thumb.png
+• 9:16 Thumbnail : I_22_short_thumb.png

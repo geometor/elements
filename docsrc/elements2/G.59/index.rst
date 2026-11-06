@@ -10,8 +10,9 @@
 :categories: theorem, proof, plane-geometry
 :category: theorem, proof, plane-geometry
 :tags: book-i, point, segment, line, angle, triangle, trilateral, plane-angle, right-angle, parallel-straight-lines, straight-line, plane, equality
-:dependencies: G.1, G.4, G.12, G.18, G.22, G.33, G.37, G.52, G.56, G.58
+:dependencies: G.1, G.4, G.12, G.16, G.18, G.22, G.33, G.36, G.37, G.52, G.56, G.58
 :excerpt: In any triangle, an exterior angle equals the sum of the two opposite interior angles, and the three interior angles sum to two right angles.
+:youtube_id: w2j0ynYX_hs
 
 .. _G.59:
 .. _I.32:
@@ -27,51 +28,40 @@ G.59 exterior angle and angle sum of a triangle
 
 .. signature:: theorem
 
-   | :fn:`triangle_angle_sum <G.59>`\ ()
-   | **prove** the exterior angle :g:`< A C D ) <g1:< A C D )>` is equal to the two interior and opposite angles :g:`< C A B ) <g1:< C A B )>`, :g:`< A B C ) <g1:< A B C )>`, and the three interior angles of :g:`< A B C ) <g1:< A B C )>`, :g:`< B C A ) <g1:< B C A )>`, :g:`< C A B ) <g1:< C A B )>` are equal to two right angles
+   | :fn:`triangle_angle_sum <G.59>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`/ C D / <g1:/ C D />`)
+   | **given** :g:`< A B C > <g1:< A B C >>`, @fn(I.post.2)(:g:`/ B C / <g1:/ B C />`) → :g:`/ C D / <g1:/ C D />`
+   | **prove** :g:`< A C D ) <g1:< A C D )>` = :g:`< C A B ) <g1:< C A B )>` + :g:`< A B C ) <g1:< A B C )>`, :g:`< A B C ) <g1:< A B C )>` + :g:`< B C A ) <g1:< B C A )>` + :g:`< C A B ) <g1:< C A B )>` = 2∟
 
 .. picture:: g1.svg
    :alt: Folio 0331 Figure 1 - Proposition 32
 
+.. step:: given
+
+   :g:`< A B C > <g1:< A B C >>`, :fn:`extend <G.18>`\ (:g:`/ B C / <g1:/ B C />`) → :g:`/ C D / <g1:/ C D />`
+
 .. step:: construct
 
-   :fn:`extend <G.18>`\ (:g:`< A B C > <g1:< A B C >>` be a triangle, and let one side of it :g:`[ B D ] <g1:[ B D ]>`) → :g:`D <g1:D>`
-
-.. step:: construct
-
-   :fn:`parallel_line <G.58>`\ (:g:`C <g1:C>`, :g:`/ A B / <g1:/ A B />`) → :g:`/ C E / <g1:/ C E />`
+   :fn:`parallel_line <G.58>`\ (:g:`C <g1:C>`, :g:`/ A B / <g1:/ A B />`) → :g:`/ C E / <g1:/ C E />` (:g:`/ C E / <g1:/ C E />` ∥ :g:`/ A B / <g1:/ A B />`)
 
 .. step:: assert ∵ parallel_transversal_angles <G.56>
 
-   :g:`/ A B / <g1:/ A B />` is parallel to :g:`/ C E / <g1:/ C E />`, and :g:`/ A C / <g1:/ A C />` has fallen upon them → the alternate angles :g:`< B A C ) <g1:< B A C )>`, :g:`< A C E ) <g1:< A C E )>` :eq:`= <g1:< B A C ) = g1:< A C E )>`
+   :g:`/ A B / <g1:/ A B />` ∥ :g:`/ C E / <g1:/ C E />`, :g:`/ A C / <g1:/ A C />` ∩ :g:`/ A B / <g1:/ A B />`, :g:`/ C E / <g1:/ C E />` → :g:`< C A B ) <g1:< C A B )>` :eq:`= <g1:< C A B ) = g1:< A C E )>` :g:`< A C E ) <g1:< A C E )>`
 
 .. step:: assert ∵ parallel_transversal_angles <G.56>
 
-   :g:`/ A B / <g1:/ A B />` is parallel to :g:`/ C E / <g1:/ C E />`, and :g:`/ B D / <g1:/ B D />` has fallen upon them → the exterior angle :g:`< E C D ) <g1:< E C D )>` :eq:`= <g1:< E C D ) = g1:< A B C )>` the interior and opposite angle :g:`< A B C ) <g1:< A B C )>`
+   :g:`/ A B / <g1:/ A B />` ∥ :g:`/ C E / <g1:/ C E />`, :g:`/ B D / <g1:/ B D />` ∩ :g:`/ A B / <g1:/ A B />`, :g:`/ C E / <g1:/ C E />` → :g:`< E C D ) <g1:< E C D )>` :eq:`= <g1:< E C D ) = g1:< A B C )>` :g:`< A B C ) <g1:< A B C )>`
 
-.. step:: assert
+.. step:: assert ∵ add_equals <G.36>
 
-   :g:`< A C E ) <g1:< A C E )>` :eq:`= <g1:< A C E ) = g1:< B A C )>` :g:`< B A C ) <g1:< B A C )>`
+   :g:`< A C E ) <g1:< A C E )>` :eq:`= <g1:< A C E ) = g1:< C A B )>` :g:`< C A B ) <g1:< C A B )>`, :g:`< E C D ) <g1:< E C D )>` :eq:`= <g1:< E C D ) = g1:< A B C )>` :g:`< A B C ) <g1:< A B C )>` → :g:`< A C D ) <g1:< A C D )>` = :g:`< C A B ) <g1:< C A B )>` + :g:`< A B C ) <g1:< A B C )>`
 
-.. step:: assert
+.. step:: assert ∵ add_equals <G.36>
 
-   :g:`< A C D ) <g1:< A C D )>` is equal to the two interior and opposite angles :g:`< B A C ) <g1:< B A C )>`, :g:`< A B C ) <g1:< A B C )>`
+   :g:`< A C D ) <g1:< A C D )>` + :g:`< B C A ) <g1:< B C A )>` = :g:`< A B C ) <g1:< A B C )>` + :g:`< B C A ) <g1:< B C A )>` + :g:`< C A B ) <g1:< C A B )>`
 
-.. step:: construct
+.. step:: conclude ∵ adjacent_angles_supplementary, equal_transitive <G.37, G.16>
 
-   Let :g:`< A C B ) <g1:< A C B )>` be added to each
-
-.. step:: assert
-
-   :g:`< A C D ) <g1:< A C D )>`, :g:`< A C B ) <g1:< A C B )>` are equal to the three angles :g:`< A B C ) <g1:< A B C )>`, :g:`< B C A ) <g1:< B C A )>`, :g:`< C A B ) <g1:< C A B )>`
-
-.. step:: assert ∵ adjacent_angles_supplementary <G.37>
-
-   :g:`< A C D ) <g1:< A C D )>`, :g:`< A C B ) <g1:< A C B )>` are equal to two right angles
-
-.. step:: conclude
-
-   :g:`< A B C ) <g1:< A B C )>`, :g:`< B C A ) <g1:< B C A )>`, :g:`< C A B ) <g1:< C A B )>` are also equal to two right angles
+   :g:`< A C D ) <g1:< A C D )>` + :g:`< B C A ) <g1:< B C A )>` = 2∟ → :g:`< A B C ) <g1:< A B C )>` + :g:`< B C A ) <g1:< B C A )>` + :g:`< C A B ) <g1:< C A B )>` = 2∟
 
 Dependency Graph
 ----------------
@@ -259,6 +249,7 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.58" -> "G.14";
      "G.17" -> "G.15";
      "G.20" -> "G.15";
@@ -269,7 +260,9 @@ Dependency Graph
      "G.21" -> "G.16";
      "G.37" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.56" -> "G.16";
+     "G.59" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
@@ -278,6 +271,7 @@ Dependency Graph
      "G.25" -> "G.18";
      "G.41" -> "G.18";
      "G.45" -> "G.18";
+     "G.53" -> "G.18";
      "G.58" -> "G.18";
      "G.59" -> "G.18";
      "G.20" -> "G.19";
@@ -318,10 +312,12 @@ Dependency Graph
      "G.32" -> "G.24";
      "G.41" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
@@ -341,6 +337,7 @@ Dependency Graph
      "G.37" -> "G.34";
      "G.37" -> "G.36";
      "G.56" -> "G.36";
+     "G.59" -> "G.36";
      "G.40" -> "G.37";
      "G.56" -> "G.37";
      "G.59" -> "G.37";
@@ -372,5 +369,6 @@ Required for
 .. toctree::
    :hidden:
 
+   video
    code
    heath

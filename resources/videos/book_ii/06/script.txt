@@ -1,0 +1,19 @@
+[bell:proposition]
+[style: brisk, clear, architectural voice; steady studio cadence]
+Book Two, Proposition Six. If a segment be bisected, and a segment be added to it in a straight line, the rectangle contained by the whole with the added segment and the added segment, together with the square on the half, is equal to the square on the segment made up of the half and the added segment. <pause> Let the segment A B be bisected at C, and let B D be added to it in a straight line.
+
+[bell:construction]
+[style: methodical, precise constructive cadence]
+On C D, describe the square C E F D by One Forty-Six, and join the diagonal D E. <pause> Through B, draw B G parallel to E C or D F by One Thirty-One; through H, draw K M parallel to A B or E F; and through A, draw A K parallel to C L or D M.
+
+[bell:insight]
+[style: luminous, deductive geometric clarity]
+Because A C equals C B, the rectangle A L equals C H by One Thirty-Six. By One Forty-Three, the complements about the diagonal are equal, so C H equals H F, and therefore A L equals H F. Adding C M to each, the whole rectangle A M equals the gnomon N O P. <pause> Since D M equals D B, A M is the rectangle contained by A D and D B; thus the gnomon N O P equals the rectangle A D, D B. <pause> Add L G, which equals the square on C B, to each. Together, the gnomon N O P and L G form the whole square C E F D on C D. Therefore, the rectangle contained by A D and D B, together with the square on C B, equals the square on C D. Which was to be proved.
+
+[bell:system]
+[style: reflective, scholarly, architectural synthesis]
+Proposition Two Six is the geometric engine for solving quadratic equations by completing the square. Calling the half-segment a and the extension b, the rectangle two a plus b by b, plus a squared, equals the square on a plus b—allowing Greek geometers from Hippocrates of Chios onward to apply a rectangle exceeding by a square to solve a x plus x squared equals b squared. <pause> In the GEOMETOR G-Index, node G eighty-eight synthesizes nine direct prerequisites across fifty-four ancestor nodes, uniting Book One's complement theorem with Book Two's gnomon.
+
+[bell:resolve]
+[style: warm, inviting, resonant studio close]
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Two Six in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

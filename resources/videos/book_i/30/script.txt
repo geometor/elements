@@ -1,0 +1,17 @@
+[bell:proposition]
+[style:brisk]
+Euclid's Elements, Book One, Proposition Thirty. <pause>
+Lines parallel to the same line are also parallel to one another. <pause>
+Let each of the segments A B and C D be parallel to segment E F. <pause>
+We prove that segment A B is also parallel to segment C D.
+
+[bell:construction]
+[style:brisk]
+Let transversal segment G K fall upon segments A B, E F, and C D at points G, H, and K.
+
+[bell:insight]
+[style:brisk]
+Since segment G K falls on parallel segments A B and E F, by Proposition Twenty-Nine, alternate interior angles A G K and G H F are equal. <pause>
+Again, since segment G K falls on parallel segments E F and C D, by Proposition Twenty-Nine, exterior angle G H F equals opposite interior angle G K D. <pause>
+By Common Notion One, things equal to the same thing are equal to one another, so angle A G K equals angle G K D. <pause>
+Since these are alternate interior angles, by Proposition Twenty-Seven, segment A B is parallel to segment C D, <pause> as was required to prove.

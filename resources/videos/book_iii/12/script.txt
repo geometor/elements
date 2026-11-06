@@ -1,0 +1,19 @@
+[bell:proposition]
+[style: brisk, clear, architectural voice; steady studio cadence]
+Book Three, Proposition Twelve. If two circles touch one another externally, the straight line joining their centers will pass through the point of contact. <pause> Let the two circles A B C and A D E touch one another externally at the point A, and let the center F of circle A B C, and the center G of circle A D E, be taken. We claim that the straight line joined from F to G passes through the point of contact at A.
+
+[bell:construction]
+[style: methodical, precise constructive cadence]
+For suppose it does not, but, if possible, let it pass outside A as F C D G, meeting the two circles at C and D, and let the radii A F and A G be joined.
+
+[bell:insight]
+[style: luminous, deductive geometric clarity]
+Because F is the center of circle A B C, the radius F A equals F C. And because G is the center of circle A D E, the radius G A equals G D. Therefore, the sum of F A and A G equals the sum of F C and G D. <pause> Since C and D lie along F G with the gap C D between them, the whole segment F G is greater than F C and G D together, and therefore greater than F A and A G together. Yet in triangle F A G, by One Twenty, the single side F G is also less than the two sides F A and A G together—which is impossible. <pause> Therefore, the straight line joined from F to G cannot fail to pass through the point of contact at A; it must pass through it. As was required to prove.
+
+[bell:system]
+[style: reflective, scholarly, architectural synthesis]
+Heath notes an intriguing manuscript history for Proposition Three Twelve: Heron of Alexandria explicitly supplied the external-contact proof as a supplement to Three Eleven, and later editors elevated Heron's addition into Proposition Twelve. Together, Three Eleven and Three Twelve establish the fundamental theorem of tangent circles: whether contact is internal or external, the two centers and the point of tangency are collinear, with center distance equal to the difference or sum of the radii. <pause> In the GEOMETOR G-Index, node G one hundred ten combines the triangle inequality G forty-five with the circle radius invariant G ten across thirty-eight total ancestor nodes.
+
+[bell:resolve]
+[style: warm, inviting, resonant studio close]
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Twelve in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

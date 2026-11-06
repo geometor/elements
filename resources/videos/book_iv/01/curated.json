@@ -1,0 +1,57 @@
+{
+  "IV.1": {
+    "subtype": "problem",
+    "args": [
+      ":g:`( A B C ) <g1:( A B C )>`",
+      ":g:`D <g1:D>`"
+    ],
+    "returns": [
+      ":g:`/ C A / <g1:/ C A />`"
+    ],
+    "given": ":g:`( A B C ) <g1:( A B C )>`, :g:`D <g1:D>` not greater than the :term:`diameter <G.61>` of :g:`( A B C ) <g1:( A B C )>`",
+    "contract": ":g:`/ C A / <g1:/ C A />` is :term:`fitted into <G.146>` :g:`( A B C ) <g1:( A B C )>` with :g:`/ C A / <g1:/ C A />` :eq:`= <g1:/ C A / = g1:D>` :g:`D <g1:D>`",
+    "steps": [
+      [
+        "given",
+        [
+          "I.def.4",
+          "I.def.15",
+          "I.def.17",
+          "IV.def.7"
+        ],
+        ":g:`( A B C ) <g1:( A B C )>`, :g:`D <g1:D>` not greater than the diameter of :g:`( A B C ) <g1:( A B C )>`"
+      ],
+      [
+        "construct",
+        [
+          "I.def.17",
+          "I.3"
+        ],
+        "Draw diameter :g:`/ B C / <g1:/ B C />` of :g:`( A B C ) <g1:( A B C )>`; if :g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ B C / = g1:D>` :g:`D <g1:D>`, it is done; if :g:`/ B C / <g1:/ B C />` > :g:`D <g1:D>`, @fn(I.3)(:g:`/ B C / <g1:/ B C />`, :g:`D <g1:D>`) → :g:`/ C E / <g1:/ C E />` :eq:`= <g1:/ C E / = g1:D>` :g:`D <g1:D>`"
+      ],
+      [
+        "construct",
+        [
+          "I.post.3",
+          "I.post.1"
+        ],
+        "@fn(I.post.3)(:g:`C <g1:C>`, :g:`E <g1:E>`) → :g:`( E A F ) <g1:( E A F )>`, @fn(I.post.1)(:g:`C <g1:C>`, :g:`A <g1:A>`) → :g:`/ C A / <g1:/ C A />`"
+      ],
+      [
+        "assert",
+        [
+          "I.def.15"
+        ],
+        ":g:`C <g1:C>` is the center of :g:`( E A F ) <g1:( E A F )>` → :g:`/ C A / <g1:/ C A />` :eq:`= <g1:/ C A / = g1:/ C E />` :g:`/ C E / <g1:/ C E />`"
+      ],
+      [
+        "conclude",
+        [
+          "I.cn.1",
+          "IV.def.7"
+        ],
+        ":g:`/ C E / <g1:/ C E />` :eq:`= <g1:/ C E / = g1:D>` :g:`D <g1:D>` → :g:`/ C A / <g1:/ C A />` :eq:`= <g1:/ C A / = g1:D>` :g:`D <g1:D>` fitted into :g:`( A B C ) <g1:( A B C )>`"
+      ]
+    ]
+  }
+}

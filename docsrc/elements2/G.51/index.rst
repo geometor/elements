@@ -10,8 +10,9 @@
 :categories: theorem, proof, plane-geometry
 :category: theorem, proof, plane-geometry
 :tags: book-i, segment, angle, triangle, trilateral, plane-angle, plane, equality, reductio-ad-absurdum
-:dependencies: G.12, G.14, G.22, G.24, G.41
+:dependencies: G.12, G.14, G.21, G.22, G.24, G.26, G.41
 :excerpt: Triangles with two angles and one corresponding side equal are congruent (ASA / AAS).
+:youtube_id: sjS0EAA7r9E
 
 .. _G.51:
 .. _I.26:
@@ -27,172 +28,36 @@ G.51 congruent triangles by ASA and AAS
 
 .. signature:: theorem
 
-   | :fn:`asa_aas_congruence <G.51>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>`, :g:`< A B C ) <g1:< A B C )>`, :g:`< B C A ) <g1:< B C A )>`)
-   | **given** :g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>` , the two angles :g:`< A B C ) <g1:< A B C )>`, :g:`< B C A ) <g1:< B C A )>` :eq:`= <g1:< A B C ) = g1:< D E F ); g1:< B C A ) = g1:< E F D )>` to the two angles :g:`< D E F ) <g1:< D E F )>`, :g:`< E F D ) <g1:< E F D )>`, namely :g:`< A B C ) <g1:< A B C )>` to :g:`< D E F ) <g1:< D E F )>`, :g:`< B C A ) <g1:< B C A )>` to :g:`< E F D ) <g1:< E F D )>`
-   | **prove** they will also have the remaining sides :eq:`= <g1:/ A B / = g1:/ D E /; g1:/ A C / = g1:/ D F /; g1:< B A C ) = g1:< E D F )>` to the remaining sides, namely :g:`/ A B / <g1:/ A B />` to :g:`/ D E / <g1:/ D E />` and :g:`/ A C / <g1:/ A C />` to :g:`/ D F / <g1:/ D F />`, and the remaining angle to the remaining angle, namely :g:`< B A C ) <g1:< B A C )>` to :g:`< E D F ) <g1:< E D F )>`
+   | :fn:`asa_aas_congruence <G.51>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>`)
+   | **given** :g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>` (:g:`< A B C ) <g1:< A B C )>` :eq:`= <g1:< A B C ) = g1:< D E F ); g1:< B C A ) = g1:< E F D )>` :g:`< D E F ) <g1:< D E F )>`, :g:`< B C A ) <g1:< B C A )>` :eq:`= <g1:< A B C ) = g1:< D E F ); g1:< B C A ) = g1:< E F D )>` :g:`< E F D ) <g1:< E F D )>`, :g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ B C / = g1:/ E F />` :g:`/ E F / <g1:/ E F />` ∨ :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ D E />` :g:`/ D E / <g1:/ D E />`)
+   | **prove** :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ D E /; g1:/ A C / = g1:/ D F /; g1:< B A C ) = g1:< E D F )>` :g:`/ D E / <g1:/ D E />`, :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A B / = g1:/ D E /; g1:/ A C / = g1:/ D F /; g1:< B A C ) = g1:< E D F )>` :g:`/ D F / <g1:/ D F />`, :g:`< B A C ) <g1:< B A C )>` :eq:`= <g1:/ A B / = g1:/ D E /; g1:/ A C / = g1:/ D F /; g1:< B A C ) = g1:< E D F )>` :g:`< E D F ) <g1:< E D F )>`
 
 .. picture:: g1.svg
    :alt: Folio 0316 Figure 1 - Proposition 26
 
 .. step:: given
 
-   :g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>` , the two angles :g:`< A B C ) <g1:< A B C )>`, :g:`< B C A ) <g1:< B C A )>` :eq:`= <g1:< A B C ) = g1:< D E F ); g1:< B C A ) = g1:< E F D )>` to the two angles :g:`< D E F ) <g1:< D E F )>`, :g:`< E F D ) <g1:< E F D )>`, namely :g:`< A B C ) <g1:< A B C )>` to :g:`< D E F ) <g1:< D E F )>`, :g:`< B C A ) <g1:< B C A )>` to :g:`< E F D ) <g1:< E F D )>`
-
-.. step:: assert
-
-   let them also have one side :eq:`= <g1:/ B C / = g1:/ E F />` to one side, first that adjoining the :eq:`= <g1:< A B C ) = g1:< D E F ); g1:< B C A ) = g1:< E F D )>` angles, namely :g:`/ B C / <g1:/ B C />` to :g:`/ E F / <g1:/ E F />`
-
-.. step:: assert
-
-   If :g:`/ A B / <g1:/ A B />` ≠ :g:`/ D E / <g1:/ D E />`, one of them is greater
+   :g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>` (:g:`< A B C ) <g1:< A B C )>` :eq:`= <g1:< A B C ) = g1:< D E F ); g1:< B C A ) = g1:< E F D )>` :g:`< D E F ) <g1:< D E F )>`, :g:`< B C A ) <g1:< B C A )>` :eq:`= <g1:< A B C ) = g1:< D E F ); g1:< B C A ) = g1:< E F D )>` :g:`< E F D ) <g1:< E F D )>`, :g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ B C / = g1:/ E F />` :g:`/ E F / <g1:/ E F />`)
 
 .. step:: construct
 
-   Let :g:`/ A B / <g1:/ A B />` be greater, and let :g:`/ B G / <g1:/ B G />` be made :eq:`equal <g1:/ B G / = g1:/ D E />` to :g:`/ D E / <g1:/ D E />`
+   ? :g:`/ A B / <g1:/ A B />` > :g:`/ D E / <g1:/ D E />` → :fn:`cut_equal_segment <G.21>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ D E / <g1:/ D E />`) → :g:`/ B G / <g1:/ B G />` (:eq:`= <g1:/ B G / = g1:/ D E />` :g:`/ D E / <g1:/ D E />`), :fn:`segment <G.14>`\ (:g:`G <g1:G>`, :g:`C <g1:C>`) → :g:`/ G C / <g1:/ G C />`
+
+.. step:: assert ∵ sas_congruence, whole_greater_than_part <G.24, G.26>
+
+   :g:`< G B C > <g1:< G B C >>` :eq:`= <g1:< G B C > = g1:< D E F >>` :g:`< D E F > <g1:< D E F >>` → :g:`< G C B ) <g1:< G C B )>` :eq:`= <g1:< G C B ) = g1:< D F E )>` :g:`< D F E ) <g1:< D F E )>` :eq:`= <g1:< D F E ) = g1:< B C A )>` :g:`< B C A ) <g1:< B C A )>` ⇒⇐ → :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ D E />` :g:`/ D E / <g1:/ D E />`
 
 .. step:: construct
 
-   :fn:`segment <G.14>`\ (:g:`G <g1:G>`, :g:`C <g1:C>`) → :g:`/ G C / <g1:/ G C />`
+   ? :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ D E />` :g:`/ D E / <g1:/ D E />` ∧ :g:`/ B C / <g1:/ B C />` > :g:`/ E F / <g1:/ E F />` → :fn:`cut_equal_segment <G.21>`\ (:g:`/ B C / <g1:/ B C />`, :g:`/ E F / <g1:/ E F />`) → :g:`/ B H / <g1:/ B H />` (:eq:`= <g1:/ B H / = g1:/ E F />` :g:`/ E F / <g1:/ E F />`), :fn:`segment <G.14>`\ (:g:`A <g1:A>`, :g:`H <g1:H>`) → :g:`/ A H / <g1:/ A H />`
 
-.. step:: assert
+.. step:: assert ∵ sas_congruence, exterior_angle_greater <G.24, G.41>
 
-   :g:`/ B G / <g1:/ B G />` :eq:`= <g1:/ B G / = g1:/ D E /; g1:/ B C / = g1:/ E F />` :g:`/ D E / <g1:/ D E />`, and :g:`/ B C / <g1:/ B C />` to :g:`/ E F / <g1:/ E F />`, :g:`/ G B / <g1:/ G B />`, :g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ G B / = g1:/ D E /; g1:/ B C / = g1:/ E F />` :g:`/ D E / <g1:/ D E />`, :g:`/ E F / <g1:/ E F />`
-
-.. step:: assert
-
-   :g:`< G B C ) <g1:< G B C )>` :eq:`= <g1:< G B C ) = g1:< D E F )>` :g:`< D E F ) <g1:< D E F )>`
-
-.. step:: assert
-
-   :g:`/ G C / <g1:/ G C />` :eq:`= <g1:/ G C / = g1:/ D F />` :g:`/ D F / <g1:/ D F />`,
-
-.. step:: assert
-
-   :g:`< G B C > <g1:< G B C >>` is :eq:`equal <g1:< G B C > = g1:< D E F >>` to :g:`< D E F > <g1:< D E F >>`,
-
-.. step:: assert ∵ sas_congruence <G.24>
-
-   the remaining angles will be equal to the remaining angles, namely those which the equal sides subtend
-
-.. step:: assert
-
-   :g:`< G C B ) <g1:< G C B )>` :eq:`= <g1:< G C B ) = g1:< D F E )>` :g:`< D F E ) <g1:< D F E )>`
-
-.. step:: assert
-
-   :g:`< D F E ) <g1:< D F E )>` is by hypothesis :eq:`= <g1:< D F E ) = g1:< B C A )>` to :g:`< B C A ) <g1:< B C A )>`
-
-.. step:: assert
-
-   :g:`< B C G ) <g1:< B C G )>` :eq:`= <g1:< B C G ) = g1:< B C A )>` :g:`< B C A ) <g1:< B C A )>`,
-
-.. step:: assert
-
-   < > ⇒⇐
-
-.. step:: assert
-
-   :g:`/ A B / <g1:/ A B />` = :g:`/ D E / <g1:/ D E />`,
-
-.. step:: assert
-
-   is therefore :eq:`= <g1:/ A B / = g1:/ D E />` to it
-
-.. step:: assert
-
-   :g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ B C / = g1:/ E F />` :g:`/ E F / <g1:/ E F />`
-
-.. step:: assert
-
-   :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ A B / = g1:/ D E /; g1:/ B C / = g1:/ E F />` :g:`/ D E / <g1:/ D E />`, :g:`/ E F / <g1:/ E F />`, and :g:`< A B C ) <g1:< A B C )>` :eq:`= <g1:< A B C ) = g1:< D E F )>` :g:`< D E F ) <g1:< D E F )>`
-
-.. step:: assert
-
-   :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ D F />` :g:`/ D F / <g1:/ D F />`,
-
-.. step:: assert ∵ sas_congruence <G.24>
-
-   :g:`< B A C ) <g1:< B A C )>` :eq:`= <g1:< B A C ) = g1:< E D F )>` :g:`< E D F ) <g1:< E D F )>`
-
-.. step:: assert
-
-   Let sides subtending :eq:`= <g1:< A B C ) = g1:< D E F ); g1:< B C A ) = g1:< E F D )>` angles be :eq:`= <g1:/ A B / = g1:/ D E />`, as :g:`/ A B / <g1:/ A B />` to :g:`/ D E / <g1:/ D E />`
-
-.. step:: assert
-
-   I say again that the remaining sides :eq:`= <g1:/ A C / = g1:/ D F /; g1:/ B C / = g1:/ E F />` the remaining sides, namely :g:`/ A C / <g1:/ A C />` to :g:`/ D F / <g1:/ D F />` and :g:`/ B C / <g1:/ B C />` to :g:`/ E F / <g1:/ E F />`, and further :g:`< B A C ) <g1:< B A C )>` :eq:`= <g1:< B A C ) = g1:< E D F )>` :g:`< E D F ) <g1:< E D F )>`
-
-.. step:: assert
-
-   If :g:`/ B C / <g1:/ B C />` ≠ :g:`/ E F / <g1:/ E F />`, one of them is greater
-
-.. step:: construct
-
-   Let :g:`/ B C / <g1:/ B C />` be greater, if possible, and let :g:`/ B H / <g1:/ B H />` be made :eq:`equal <g1:/ B H / = g1:/ E F />` to :g:`/ E F / <g1:/ E F />`
-
-.. step:: construct
-
-   :fn:`segment <G.14>`\ (:g:`A <g1:A>`, :g:`H <g1:H>`) → :g:`/ A H / <g1:/ A H />`
-
-.. step:: assert
-
-   :g:`/ B H / <g1:/ B H />` :eq:`= <g1:/ B H / = g1:/ E F /; g1:/ A B / = g1:/ D E />` :g:`/ E F / <g1:/ E F />`, and :g:`/ A B / <g1:/ A B />` to :g:`/ D E / <g1:/ D E />`, :g:`/ A B / <g1:/ A B />`, :g:`/ B H / <g1:/ B H />` :eq:`= <g1:/ A B / = g1:/ D E /; g1:/ B H / = g1:/ E F />` :g:`/ D E / <g1:/ D E />`, :g:`/ E F / <g1:/ E F />`, and they contain :eq:`= <g1:< A B C ) = g1:< D E F )>` angles
-
-.. step:: assert
-
-   :g:`/ A H / <g1:/ A H />` :eq:`= <g1:/ A H / = g1:/ D F />` :g:`/ D F / <g1:/ D F />`,
-
-.. step:: assert
-
-   :g:`< A B H > <g1:< A B H >>` is :eq:`equal <g1:< A B H > = g1:< D E F >>` to :g:`< D E F > <g1:< D E F >>`,
-
-.. step:: assert ∵ sas_congruence <G.24>
-
-   the remaining angles will be equal to the remaining angles, namely those which the equal sides subtend
-
-.. step:: assert
-
-   :g:`< B H A ) <g1:< B H A )>` :eq:`= <g1:< B H A ) = g1:< E F D )>` :g:`< E F D ) <g1:< E F D )>`
-
-.. step:: assert
-
-   :g:`< E F D ) <g1:< E F D )>` :eq:`= <g1:< E F D ) = g1:< B C A )>` :g:`< B C A ) <g1:< B C A )>`
-
-.. step:: assert
-
-   in :g:`< A H C > <g1:< A H C >>`, the exterior angle :g:`< B H A ) <g1:< B H A )>` :eq:`= <g1:< B H A ) = g1:< B C A )>` the interior and opposite angle :g:`< B C A ) <g1:< B C A )>`:
-
-.. step:: assert ∵ exterior_angle_greater <G.41>
-
-   ⇒⇐
-
-.. step:: assert
-
-   :g:`/ B C / <g1:/ B C />` = :g:`/ E F / <g1:/ E F />`,
-
-.. step:: assert
-
-   is therefore :eq:`= <g1:/ B C / = g1:/ E F />` to it
-
-.. step:: assert
-
-   :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ D E />` :g:`/ D E / <g1:/ D E />`
-
-.. step:: assert
-
-   :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ A B / = g1:/ D E /; g1:/ B C / = g1:/ E F />` :g:`/ D E / <g1:/ D E />`, :g:`/ E F / <g1:/ E F />`, and they contain :eq:`= <g1:< A B C ) = g1:< D E F )>` angles
-
-.. step:: assert
-
-   :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ D F />` :g:`/ D F / <g1:/ D F />`,
-
-.. step:: assert
-
-   :g:`< A B C > <g1:< A B C >>` :eq:`equal <g1:< A B C > = g1:< D E F >>` to :g:`< D E F > <g1:< D E F >>`,
+   :g:`< A B H > <g1:< A B H >>` :eq:`= <g1:< A B H > = g1:< D E F >>` :g:`< D E F > <g1:< D E F >>` → :g:`< B H A ) <g1:< B H A )>` :eq:`= <g1:< B H A ) = g1:< E F D )>` :g:`< E F D ) <g1:< E F D )>` :eq:`= <g1:< E F D ) = g1:< B C A )>` :g:`< B C A ) <g1:< B C A )>` ⇒⇐ → :g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ B C / = g1:/ E F />` :g:`/ E F / <g1:/ E F />`
 
 .. step:: conclude ∵ sas_congruence <G.24>
 
-   :g:`< B A C ) <g1:< B A C )>` :eq:`= <g1:< B A C ) = g1:< E D F )>` to :g:`< E D F ) <g1:< E D F )>`
+   :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ D E /; g1:/ A C / = g1:/ D F /; g1:< B A C ) = g1:< E D F )>` :g:`/ D E / <g1:/ D E />`, :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A B / = g1:/ D E /; g1:/ A C / = g1:/ D F /; g1:< B A C ) = g1:< E D F )>` :g:`/ D F / <g1:/ D F />`, :g:`< B A C ) <g1:< B A C )>` :eq:`= <g1:/ A B / = g1:/ D E /; g1:/ A C / = g1:/ D F /; g1:< B A C ) = g1:< E D F )>` :g:`< E D F ) <g1:< E D F )>`
 
 Dependency Graph
 ----------------
@@ -363,6 +228,7 @@ Dependency Graph
      "G.31" -> "G.21";
      "G.34" -> "G.21";
      "G.41" -> "G.21";
+     "G.51" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
      "G.28" -> "G.22";
@@ -385,6 +251,7 @@ Dependency Graph
      "G.28" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.51" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -411,5 +278,6 @@ Required for
 .. toctree::
    :hidden:
 
+   video
    code
    heath

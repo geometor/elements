@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:00:00.420 --> 00:00:02.187
+Book Two, Proposition Thirteen.
+
+2
+00:00:02.187 --> 00:00:21.568
+In acute-angled triangles, the square on the side subtending the acute angle is less than the squares on the sides containing the acute angle by twice the rectangle contained by one of the sides about the acute angle, namely that on which the perpendicular falls, and the segment cut off within by the perpendicular towards the acute angle.
+
+3
+00:00:21.568 --> 00:00:25.330
+Let A B C be an acute-angled triangle having the angle at B acute.
+
+4
+00:00:25.750 --> 00:00:28.708
+From A, draw A D perpendicular to B C.
+
+5
+00:00:28.708 --> 00:00:42.800
+Since the segment C B has been cut at random at D, by Two Seven the squares on C B and B D are equal to twice the rectangle contained by C B and B D together with the square on D C.
+
+6
+00:00:43.220 --> 00:00:45.420
+Add the square on D A to each.
+
+7
+00:00:45.420 --> 00:00:53.780
+Then the squares on C B, B D, and D A equal twice the rectangle C B, B D together with the squares on A D and D C.
+
+8
+00:00:53.780 --> 00:01:05.587
+Because the angle at D is right, by One Forty-Seven the square on A B equals the squares on B D and D A, and the square on A C equals the squares on A D and D C.
+
+9
+00:01:05.587 --> 00:01:21.133
+Therefore, the squares on C B and B A equal the square on A C together with twice the rectangle contained by C B and B D—so the square on A C alone is less than the squares on C B and B A by twice that rectangle.
+
+10
+00:01:21.133 --> 00:01:22.820
+Which was to be proved.
+
+11
+00:01:23.240 --> 00:01:33.181
+Proposition Two Thirteen is the Euclidean Law of Cosines for acute angles: c squared plus two a times the interior projection p equals a squared plus b squared.
+
+12
+00:01:33.181 --> 00:01:45.359
+As the Greek scholiast and Heath observe, this relation holds for the side opposite any acute angle in any triangle—completing, with One Forty-Seven and Two Twelve, the metric theory of triangles.
+
+13
+00:01:45.359 --> 00:01:57.040
+In the GEOMETOR G-Index, node G ninety-five synthesizes nine direct prerequisites across fifty-three ancestor nodes, pairing the Pythagorean theorem with Book Two's square of a difference.
+
+14
+00:01:57.460 --> 00:02:10.908
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Two Thirteen in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+15
+00:02:10.908 --> 00:02:17.540
+Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

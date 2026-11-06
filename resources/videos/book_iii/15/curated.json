@@ -1,0 +1,63 @@
+{
+  "III.15": {
+    "subtype": "theorem",
+    "args": [
+      ":g:`( A B C D ) <g1:( E A )>`",
+      ":g:`/ A D / <g1:/ A D />`",
+      ":g:`/ B C / <g1:/ B C />`",
+      ":g:`/ F G / <g1:/ F G />`",
+      ":g:`E <g1:E>`"
+    ],
+    "returns": [],
+    "given": ":g:`( A B C D ) <g1:( E A )>` with center :g:`E <g1:E>`, diameter :g:`/ A D / <g1:/ A D />`, and chords :g:`/ B C / <g1:/ B C />` (nearer :g:`E <g1:E>`) and :g:`/ F G / <g1:/ F G />` (more remote)",
+    "contract": ":g:`/ A D / <g1:/ A D />` > :g:`/ B C / <g1:/ B C />` > :g:`/ F G / <g1:/ F G />`",
+    "steps": [
+      [
+        "given",
+        [
+          "I.def.17",
+          "III.def.5"
+        ],
+        ":g:`( A B C D ) <g1:( E A )>` with center :g:`E <g1:E>`, diameter :g:`/ A D / <g1:/ A D />`, and chords :g:`/ B C / <g1:/ B C />` nearer :g:`E <g1:E>` than :g:`/ F G / <g1:/ F G />`"
+      ],
+      [
+        "construct",
+        [
+          "I.12",
+          "III.def.5"
+        ],
+        ":g:`/ E H / <g1:/ E H />` ⊥ :g:`/ B C / <g1:/ B C />`, :g:`/ E K / <g1:/ E K />` ⊥ :g:`/ F G / <g1:/ F G />` → :g:`/ E K / <g1:/ E K />` > :g:`/ E H / <g1:/ E H />`"
+      ],
+      [
+        "construct",
+        [
+          "I.3",
+          "I.11",
+          "I.post.1"
+        ],
+        "@fn(I.3)(:g:`/ E K / <g1:/ E K />`, :g:`/ E H / <g1:/ E H />`) → :g:`/ E L / <g1:/ E L />` :eq:`= <g1:/ E L / = g1:/ E H />` :g:`/ E H / <g1:/ E H />`, draw :g:`/ M N / <g1:/ M N />` ⊥ :g:`/ E K / <g1:/ E K />` at :g:`L <g1:L>`, join :g:`/ M E / <g1:/ M E />`, :g:`/ E N / <g1:/ E N />`, :g:`/ F E / <g1:/ F E />`, :g:`/ E G / <g1:/ E G />`"
+      ],
+      [
+        "assert",
+        [
+          "III.14",
+          "I.def.15",
+          "I.20"
+        ],
+        "@fn(III.14)(:g:`/ E H / <g1:/ E H />` = :g:`/ E L / <g1:/ E L />`) → :g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ B C / = g1:/ M N />` :g:`/ M N / <g1:/ M N />`; :g:`/ A D / <g1:/ A D />` = :g:`/ A E / <g1:/ A E />` + :g:`/ E D / <g1:/ E D />` = :g:`/ M E / <g1:/ M E />` + :g:`/ E N / <g1:/ E N />` > :g:`/ M N / <g1:/ M N />` = :g:`/ B C / <g1:/ B C />`"
+      ],
+      [
+        "assert",
+        [
+          "I.24"
+        ],
+        "in :g:`< M E N > <g1:< M E N >>` and :g:`< F E G > <g1:< F E G >>`, :g:`/ M E / <g1:/ M E />` = :g:`/ F E / <g1:/ F E />`, :g:`/ E N / <g1:/ E N />` = :g:`/ E G / <g1:/ E G />`, :g:`< M E N ) <g1:< M E N )>` > :g:`< F E G ) <g1:< F E G )>` → :g:`/ M N / <g1:/ M N />` > :g:`/ F G / <g1:/ F G />` → :g:`/ B C / <g1:/ B C />` > :g:`/ F G / <g1:/ F G />`"
+      ],
+      [
+        "conclude",
+        [],
+        ":g:`/ A D / <g1:/ A D />` > :g:`/ B C / <g1:/ B C />` > :g:`/ F G / <g1:/ F G />`"
+      ]
+    ]
+  }
+}

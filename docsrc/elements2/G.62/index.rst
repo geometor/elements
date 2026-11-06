@@ -12,6 +12,7 @@
 :tags: book-i, segment, angle, triangle, quadrilateral, plane-angle, diameter, parallel-straight-lines, straight-line, trilateral, parallelogram, bisect, plane, equality
 :dependencies: G.4, G.12, G.22, G.24, G.36, G.51, G.52, G.56, G.61
 :excerpt: In a parallelogram, opposite sides and opposite angles are equal, and the diagonal bisects the area.
+:youtube_id: 1SolX0R4kHE
 
 .. _G.62:
 .. _I.34:
@@ -28,83 +29,35 @@ G.62 opposite sides, angles, and diagonal of a parallelogram
 .. signature:: theorem
 
    | :fn:`parallelogram_properties <G.62>`\ (:g:`< A C D B > <g1:< A C D B >>`, :g:`/ B C / <g1:/ B C />`)
-   | **given** :g:`< A C D B > <g1:< A C D B >>` be a parallelogrammic area, :g:`/ B C / <g1:/ B C />` its diameter
-   | **prove** the opposite sides and angles of the parallelogram :g:`< A C D B > <g1:< A C D B >>` :eq:`= <g1:/ A B / = g1:/ C D /; g1:/ A C / = g1:/ B D /; g1:< B A C ) = g1:< C D B ); g1:< A B D ) = g1:< A C D )>`, and the diameter :g:`/ B C / <g1:/ B C />` :eq:`bisects <g1:< A B C > = g1:< D C B >>` it
+   | **given** :g:`< A C D B > <g1:< A C D B >>` (:g:`/ A B / <g1:/ A B />` ∥ :g:`/ C D / <g1:/ C D />`, :g:`/ A C / <g1:/ A C />` ∥ :g:`/ B D / <g1:/ B D />`), :g:`/ B C / <g1:/ B C />`
+   | **prove** :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ C D /; g1:/ A C / = g1:/ B D />` :g:`/ C D / <g1:/ C D />`, :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A B / = g1:/ C D /; g1:/ A C / = g1:/ B D />` :g:`/ B D / <g1:/ B D />`, :g:`< B A C ) <g1:< B A C )>` :eq:`= <g1:< B A C ) = g1:< C D B ); g1:< A B D ) = g1:< A C D )>` :g:`< C D B ) <g1:< C D B )>`, :g:`< A B D ) <g1:< A B D )>` :eq:`= <g1:< B A C ) = g1:< C D B ); g1:< A B D ) = g1:< A C D )>` :g:`< A C D ) <g1:< A C D )>`, :g:`< A B C > <g1:< A B C >>` :eq:`= <g1:< A B C > = g1:< D C B >>` :g:`< D C B > <g1:< D C B >>`
 
 .. picture:: g1.svg
    :alt: Folio 0338 Figure 1 - Proposition 34
 
 .. step:: given
 
-   :g:`< A C D B > <g1:< A C D B >>` be a parallelogrammic area, :g:`/ B C / <g1:/ B C />` its diameter
+   :g:`< A C D B > <g1:< A C D B >>` (:g:`/ A B / <g1:/ A B />` ∥ :g:`/ C D / <g1:/ C D />`, :g:`/ A C / <g1:/ A C />` ∥ :g:`/ B D / <g1:/ B D />`), :g:`/ B C / <g1:/ B C />`
 
 .. step:: assert ∵ parallel_transversal_angles <G.56>
 
-   :g:`/ A B / <g1:/ A B />` is parallel to :g:`/ C D / <g1:/ C D />`, and :g:`/ B C / <g1:/ B C />` has fallen upon them → the alternate angles :g:`< A B C ) <g1:< A B C )>`, :g:`< B C D ) <g1:< B C D )>` :eq:`= <g1:< A B C ) = g1:< B C D )>`
+   :g:`/ A B / <g1:/ A B />` ∥ :g:`/ C D / <g1:/ C D />`, :g:`/ B C / <g1:/ B C />` ∩ :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` → :g:`< A B C ) <g1:< A B C )>` :eq:`= <g1:< A B C ) = g1:< B C D )>` :g:`< B C D ) <g1:< B C D )>`
 
 .. step:: assert ∵ parallel_transversal_angles <G.56>
 
-   :g:`/ A C / <g1:/ A C />` is parallel to :g:`/ B D / <g1:/ B D />`, and :g:`/ B C / <g1:/ B C />` has fallen upon them → the alternate angles :g:`< A C B ) <g1:< A C B )>`, :g:`< C B D ) <g1:< C B D )>` :eq:`= <g1:< A C B ) = g1:< C B D )>`
-
-.. step:: assert
-
-   :g:`< A B C > <g1:< A B C >>`, :g:`< D C B > <g1:< D C B >>` are two triangles having the two angles :g:`< A B C ) <g1:< A B C )>`, :g:`< B C A ) <g1:< B C A )>` :eq:`= <g1:< A B C ) = g1:< D C B ); g1:< B C A ) = g1:< C B D )>` to the two angles :g:`< D C B ) <g1:< D C B )>`, :g:`< C B D ) <g1:< C B D )>`, and one side :eq:`= <g1:/ B C / = g1:/ C B />` to one side, namely that adjoining the :eq:`= <g1:< A B C ) = g1:< D C B ); g1:< B C A ) = g1:< C B D )>` angles and common to both of them, :g:`/ B C / <g1:/ B C />`
+   :g:`/ A C / <g1:/ A C />` ∥ :g:`/ B D / <g1:/ B D />`, :g:`/ B C / <g1:/ B C />` ∩ :g:`/ A C / <g1:/ A C />`, :g:`/ B D / <g1:/ B D />` → :g:`< A C B ) <g1:< A C B )>` :eq:`= <g1:< A C B ) = g1:< C B D )>` :g:`< C B D ) <g1:< C B D )>`
 
 .. step:: assert ∵ asa_aas_congruence <G.51>
 
-   they will also have the remaining sides :eq:`= <g1:/ A B / = g1:/ C D /; g1:/ A C / = g1:/ B D />` to the remaining sides, and the remaining angle to the remaining angle
-
-.. step:: assert
-
-   :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ C D />` :g:`/ C D / <g1:/ C D />`,
-
-.. step:: assert
-
-   :g:`/ A C / <g1:/ A C />` to :g:`/ B D / <g1:/ B D />`,
-
-.. step:: assert
-
-   further :g:`< B A C ) <g1:< B A C )>` :eq:`= <g1:< B A C ) = g1:< C D B )>` :g:`< C D B ) <g1:< C D B )>`
-
-.. step:: assert
-
-   since :g:`< A B C ) <g1:< A B C )>` :eq:`= <g1:< A B C ) = g1:< B C D )>` :g:`< B C D ) <g1:< B C D )>`, and :g:`< C B D ) <g1:< C B D )>` to :g:`< A C B ) <g1:< A C B )>`,
+   :g:`< A B C ) <g1:< A B C )>` :eq:`= <g1:< A B C ) = g1:< D C B ); g1:< B C A ) = g1:< C B D )>` :g:`< D C B ) <g1:< D C B )>`, :g:`< B C A ) <g1:< B C A )>` :eq:`= <g1:< A B C ) = g1:< D C B ); g1:< B C A ) = g1:< C B D )>` :g:`< C B D ) <g1:< C B D )>`, :g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ B C / = g1:/ C B />` :g:`/ C B / <g1:/ C B />` → :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ C D /; g1:/ A C / = g1:/ B D />` :g:`/ C D / <g1:/ C D />`, :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A B / = g1:/ C D /; g1:/ A C / = g1:/ B D />` :g:`/ B D / <g1:/ B D />`, :g:`< B A C ) <g1:< B A C )>` :eq:`= <g1:< B A C ) = g1:< C D B )>` :g:`< C D B ) <g1:< C D B )>`
 
 .. step:: assert ∵ add_equals <G.36>
 
-   :g:`< A B D ) <g1:< A B D )>` :eq:`= <g1:< A B D ) = g1:< A C D )>` :g:`< A C D ) <g1:< A C D )>`
+   :g:`< A B C ) <g1:< A B C )>` :eq:`= <g1:< A B C ) = g1:< B C D )>` :g:`< B C D ) <g1:< B C D )>`, :g:`< C B D ) <g1:< C B D )>` :eq:`= <g1:< C B D ) = g1:< A C B )>` :g:`< A C B ) <g1:< A C B )>` → :g:`< A B D ) <g1:< A B D )>` :eq:`= <g1:< A B D ) = g1:< A C D )>` :g:`< A C D ) <g1:< A C D )>`
 
-.. step:: assert
+.. step:: conclude ∵ sas_congruence <G.24>
 
-   :g:`< B A C ) <g1:< B A C )>` :eq:`= <g1:< B A C ) = g1:< C D B )>` :g:`< C D B ) <g1:< C D B )>`
-
-.. step:: assert
-
-   in parallelogrammic areas the opposite sides and angles are equal to one another
-
-.. step:: assert
-
-   I say, next, that the :term:`diameter <G.61>` also bisects the areas
-
-.. step:: assert
-
-   :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ C D />` :g:`/ C D / <g1:/ C D />`, and :g:`/ B C / <g1:/ B C />` is common, :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ A B / = g1:/ D C /; g1:/ B C / = g1:/ C B />` :g:`/ D C / <g1:/ D C />`, :g:`/ C B / <g1:/ C B />`
-
-.. step:: assert
-
-   :g:`< A B C ) <g1:< A B C )>` :eq:`= <g1:< A B C ) = g1:< B C D )>` :g:`< B C D ) <g1:< B C D )>`
-
-.. step:: assert
-
-   :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ D B />` :g:`/ D B / <g1:/ D B />`,
-
-.. step:: assert ∵ sas_congruence <G.24>
-
-   :g:`< A B C > <g1:< A B C >>` is :eq:`equal <g1:< A B C > = g1:< D C B >>` to :g:`< D C B > <g1:< D C B >>`
-
-.. step:: conclude
-
-   the diameter :g:`/ B C / <g1:/ B C />` :eq:`bisects <g1:< A B C > = g1:< D C B >>` the parallelogram :g:`< A C D B > <g1:< A C D B >>`
+   :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ D C />; g1:/ B C / = g1:/ C B />` :g:`/ D C / <g1:/ D C />`, :g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ A B / = g1:/ D C />; g1:/ B C / = g1:/ C B />` :g:`/ C B / <g1:/ C B />`, :g:`< A B C ) <g1:< A B C )>` :eq:`= <g1:< A B C ) = g1:< B C D )>` :g:`< B C D ) <g1:< B C D )>` → :g:`< A B C > <g1:< A B C >>` :eq:`= <g1:< A B C > = g1:< D C B >>` :g:`< D C B > <g1:< D C B >>`
 
 Dependency Graph
 ----------------
@@ -293,6 +246,7 @@ Dependency Graph
      "G.31" -> "G.21";
      "G.34" -> "G.21";
      "G.41" -> "G.21";
+     "G.51" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
      "G.28" -> "G.22";
@@ -319,6 +273,7 @@ Dependency Graph
      "G.28" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.51" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -357,5 +312,6 @@ Required for
 .. toctree::
    :hidden:
 
+   video
    code
    heath

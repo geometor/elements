@@ -1,0 +1,17 @@
+[bell:proposition]
+[style:brisk]
+Euclid's Elements, Book One, Proposition Forty-One. <pause>
+If a parallelogram shares the same base with a triangle and lies in the same parallels, the parallelogram is double the triangle. <pause>
+Let parallelogram A B C D share the same base B C with triangle E B C, and let them lie in the same parallels B C and A E. <pause>
+We prove that parallelogram A B C D is double triangle B E C.
+
+[bell:construction]
+[style:brisk]
+Construct the diagonal segment A C across parallelogram A B C D, forming triangle A B C on base B C.
+
+[bell:insight]
+[style:brisk]
+Triangles A B C and E B C stand on the same base B C and lie in the same parallels B C and A E. <pause>
+By Proposition Thirty-Seven, triangle A B C is equal in area to triangle E B C. <pause>
+Yet by Proposition Thirty-Four, the diagonal A C bisects parallelogram A B C D, so parallelogram A B C D is double triangle A B C. <pause>
+Therefore parallelogram A B C D is also double triangle E B C, <pause> as was required to prove.

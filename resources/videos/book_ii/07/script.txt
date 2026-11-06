@@ -1,0 +1,19 @@
+[bell:proposition]
+[style: brisk, clear, architectural voice; steady studio cadence]
+Book Two, Proposition Seven. If a segment be cut at random, the square on the whole and that on one of the segments both together are equal to twice the rectangle contained by the whole and the said segment, and the square on the remaining segment. <pause> Let the segment A B be cut at random at C.
+
+[bell:construction]
+[style: methodical, precise constructive cadence]
+On A B, describe the square A D E B by One Forty-Six, and draw the diagonal B D. <pause> Complete the figure by drawing C N parallel to A D or B E, and through G drawing H F parallel to A B or D E.
+
+[bell:insight]
+[style: luminous, deductive geometric clarity]
+By One Forty-Three, the complement A G equals the complement G E. Add the square C F to each; then the whole rectangle A F equals the whole rectangle C E, so A F and C E together are double A F. <pause> Yet A F and C E together form the gnomon K L M plus the overlapping square C F. And because B F equals B C, A F is the rectangle contained by A B and B C; therefore the gnomon K L M and the square C F equal twice the rectangle A B, B C. <pause> Add D G, which equals the square on A C, to each. The gnomon K L M and D G form the whole square A D E B on A B, while C F is the square on B C. Therefore, the squares on A B and B C equal twice the rectangle contained by A B and B C, together with the square on A C. Which was to be proved.
+
+[bell:system]
+[style: reflective, scholarly, architectural synthesis]
+Proposition Two Seven is the geometric counterpart to the square of a difference. Calling the whole line a and the segment b, their difference is a minus b, and the diagram shows that a squared plus b squared equals two a b plus the square on a minus b—because the two full rectangles A F and C E overlap on the corner square C F. <pause> In the GEOMETOR G-Index, node G eighty-nine synthesizes seven direct prerequisites across fifty-two ancestor nodes, and later serves as a foundational engine for Book Ten's classification of apotomes and irrational magnitudes.
+
+[bell:resolve]
+[style: warm, inviting, resonant studio close]
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Two Seven in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

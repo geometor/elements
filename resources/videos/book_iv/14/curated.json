@@ -1,0 +1,55 @@
+{
+  "IV.14": {
+    "subtype": "problem",
+    "args": [
+      ":g:`< A B C D E > <g1:< A B C D E >>`"
+    ],
+    "returns": [
+      ":g:`( A B C D E ) <g1:( A B C D E )>`"
+    ],
+    "given": "Equilateral and equiangular pentagon :g:`< A B C D E > <g1:< A B C D E >>`",
+    "contract": "Circle :g:`( A B C D E ) <g1:( A B C D E )>` is :term:`circumscribed about <G.156>` regular pentagon :g:`< A B C D E > <g1:< A B C D E >>`",
+    "steps": [
+      [
+        "given",
+        [
+          "I.def.20",
+          "IV.def.6"
+        ],
+        "Equilateral and equiangular pentagon :g:`< A B C D E > <g1:< A B C D E >>`"
+      ],
+      [
+        "construct",
+        [
+          "I.9",
+          "I.post.1"
+        ],
+        "@fn(I.9)(:g:`< B C D ) <g1:< B C D )>`, :g:`< C D E ) <g1:< C D E )>`) → :g:`/ F C / <g1:/ F C />`, :g:`/ F D / <g1:/ F D />` meeting at :g:`F <g1:F>`; @fn(I.post.1)(:g:`F <g1:F>`, :g:`B <g1:B>`, :g:`A <g1:A>`, :g:`E <g1:E>`) → :g:`/ F B / <g1:/ F B />`, :g:`/ F A / <g1:/ F A />`, :g:`/ F E / <g1:/ F E />`"
+      ],
+      [
+        "assert",
+        [
+          "IV.13"
+        ],
+        "As in IV.13, :g:`/ F B / <g1:/ F B />`, :g:`/ F A / <g1:/ F A />`, :g:`/ F E / <g1:/ F E />` bisect :g:`< C B A ) <g1:< C B A )>`, :g:`< B A E ) <g1:< B A E )>`, :g:`< A E D ) <g1:< A E D )>`; and since :g:`< B C D ) <g1:< B C D )>` :eq:`= <g1:< B C D ) = g1:< C D E )>` :g:`< C D E ) <g1:< C D E )>`, their halves :g:`< F C D ) <g1:< F C D )>` :eq:`= <g1:< F C D ) = g1:< C D F )>` :g:`< C D F ) <g1:< C D F )>`"
+      ],
+      [
+        "assert",
+        [
+          "I.6"
+        ],
+        "In :g:`< F C D > <g1:< F C D >>`, :g:`< F C D ) <g1:< F C D )>` :eq:`= <g1:< F C D ) = g1:< C D F )>` :g:`< C D F ) <g1:< C D F )>` → :g:`/ F C / <g1:/ F C />` :eq:`= <g1:/ F C / = g1:/ F D />` :g:`/ F D / <g1:/ F D />`; similarly :g:`/ F A / <g1:/ F A />` :eq:`= <g1:/ F A / = g1:/ F B / = g1:/ F C / = g1:/ F D / = g1:/ F E />` :g:`/ F B / <g1:/ F B />` = :g:`/ F C / <g1:/ F C />` = :g:`/ F D / <g1:/ F D />` = :g:`/ F E / <g1:/ F E />`"
+      ],
+      [
+        "conclude",
+        [
+          "I.post.3",
+          "I.def.15",
+          "I.def.16",
+          "IV.def.6"
+        ],
+        "@fn(I.post.3)(:g:`F <g1:F>`, :g:`A <g1:A>`) → :g:`( A B C D E ) <g1:( A B C D E )>` passes through :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`E <g1:E>` → :g:`( A B C D E ) <g1:( A B C D E )>` is circumscribed about :g:`< A B C D E > <g1:< A B C D E >>`"
+      ]
+    ]
+  }
+}

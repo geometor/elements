@@ -1,0 +1,54 @@
+{
+  "III.18": {
+    "subtype": "theorem",
+    "args": [
+      ":g:`( A B C ) <g1:( A B C )>`",
+      ":g:`/ D E / <g1:/ D E />`",
+      ":g:`C <g1:C>`",
+      ":g:`F <g1:F>`"
+    ],
+    "returns": [],
+    "given": ":g:`/ D E / <g1:/ D E />` touches :g:`( A B C ) <g1:( A B C )>` at :g:`C <g1:C>`, center(:g:`( A B C ) <g1:( A B C )>`) = :g:`F <g1:F>`, radius :g:`/ F C / <g1:/ F C />`",
+    "contract": ":g:`/ F C / <g1:/ F C />` ⊥ :g:`/ D E / <g1:/ D E />`",
+    "steps": [
+      [
+        "given",
+        [
+          "III.def.2",
+          "I.def.16"
+        ],
+        ":g:`/ D E / <g1:/ D E />` touches :g:`( A B C ) <g1:( A B C )>` at :g:`C <g1:C>`, center(:g:`( A B C ) <g1:( A B C )>`) = :g:`F <g1:F>`, join :g:`/ F C / <g1:/ F C />`"
+      ],
+      [
+        "construct",
+        [
+          "I.def.10"
+        ],
+        "assume :g:`/ F C / <g1:/ F C />` is not ⊥ :g:`/ D E / <g1:/ D E />`, and draw :g:`/ F G / <g1:/ F G />` ⊥ :g:`/ D E / <g1:/ D E />` cutting :g:`( A B C ) <g1:( A B C )>` at :g:`B <g1:B>`"
+      ],
+      [
+        "assert",
+        [
+          "I.17",
+          "I.19"
+        ],
+        ":g:`< F G C ) <g1:< F G C )>` is right → :g:`< F C G ) <g1:< F C G )>` is acute → :g:`/ F C / <g1:/ F C />` > :g:`/ F G / <g1:/ F G />`"
+      ],
+      [
+        "assert",
+        [
+          "I.def.15",
+          "I.cn.5"
+        ],
+        ":g:`/ F C / <g1:/ F C />` :eq:`= <g1:/ F C / = g1:/ F B />` :g:`/ F B / <g1:/ F B />` → :g:`/ F B / <g1:/ F B />` > :g:`/ F G / <g1:/ F G />` (the less than the greater) ⇒⇐"
+      ],
+      [
+        "conclude",
+        [
+          "I.def.10"
+        ],
+        ":g:`/ F C / <g1:/ F C />` ⊥ :g:`/ D E / <g1:/ D E />`"
+      ]
+    ]
+  }
+}

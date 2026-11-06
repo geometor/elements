@@ -1,0 +1,39 @@
+================================================================================
+YOUTUBE 1080P (16:9) TITLE
+================================================================================
+I.13 • adjacent angles on a line sum to two right angles • Euclid's Elements
+
+================================================================================
+YOUTUBE SHORT (9:16) TITLE
+================================================================================
+I.13 • adjacent angles on a line sum to two right angles • Euclid's Elements
+
+================================================================================
+DESCRIPTION
+================================================================================
+“If a straight line set up on a straight line make angles, it will make either two right angles or angles equal to two right angles.”
+— Euclid's Elements, BOOK I • PROP. 13 (G.37)
+
+00:00 1 · GIVEN: given / A B / on / C D / → ⟨ C B A ), ⟨ A B D )
+00:11 2 · GOAL: ⟨ C B A ) + ⟨ A B D ) = ⟨ C B E ) + ⟨ E B D )
+00:20 3 · ASSERT: ? ⟨ C B A ) = ⟨ A B D ) → / A B / ⊥ / C D /
+00:27 4 · CONSTRUCT: perpendicular_at(/ C D /, B) → / B E / ⊥ / C D /
+00:36 5 · ASSERT: ⟨ C B E ) + ⟨ E B D ) = ⟨ C B A ) + ⟨ A B E ) + ⟨ E B D )
+00:48 6 · ASSERT: ⟨ D B A ) + ⟨ A B C ) = ⟨ D B E ) + ⟨ E B A ) + ⟨ A B C )
+00:59 7 · ∴: ⟨ C B A ) + ⟨ A B D ) = ⟨ C B E ) + ⟨ E B D )
+
+GEOMETOR • G.37 • v2
+
+================================================================================
+TAGS
+================================================================================
+Euclid, Euclid's Elements, Euclid I.13, G.37, Geometry, Constructive Geometry, Compass and Straightedge, Mathematical Proof, GEOMETOR, Thomas Little Heath
+
+================================================================================
+MEDIA & CAPTIONS FILES
+================================================================================
+• 9:16 Short MP4 : I_13_short.mp4
+• 16:9 1080p MP4 : I_13_1080p.mp4
+• Closed Captions: I_13.srt
+• 16:9 Thumbnail : I_13_thumb.png
+• 9:16 Thumbnail : I_13_short_thumb.png

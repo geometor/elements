@@ -1,0 +1,51 @@
+{
+  "II.7": {
+    "subtype": "theorem",
+    "args": [
+      ":g:`/ A B / <g1:/ A B />`",
+      ":g:`C <g1:C>`"
+    ],
+    "returns": [],
+    "given": ":g:`/ A B / <g1:/ A B />` (:g:`C <g1:C>` ∈ :g:`/ A B / <g1:/ A B />`)",
+    "contract": ":fn:`square <G.63>`\\ (:g:`/ A B / <g1:/ A B />`) + :fn:`square <G.63>`\\ (:g:`/ B C / <g1:/ B C />`) = 2 · :fn:`contained_rectangle <G.81>`\\ (:g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`) + :fn:`square <G.63>`\\ (:g:`/ C A / <g1:/ C A />`)",
+    "steps": [
+      [
+        "given",
+        [],
+        ":g:`/ A B / <g1:/ A B />` = :g:`/ A C / <g1:/ A C />` + :g:`/ C B / <g1:/ C B />`"
+      ],
+      [
+        "construct",
+        [
+          "I.46",
+          "I.def.14"
+        ],
+        "@fn(I.46)(:g:`/ A B / <g1:/ A B />`) → :g:`< A D E B > <g1:< A D E B >>`, draw :g:`/ B D / <g1:/ B D />`, :g:`/ C N / <g1:/ C N />` ∥ :g:`/ A D / <g1:/ A D />`, :g:`/ H F / <g1:/ H F />` ∥ :g:`/ A B / <g1:/ A B />`"
+      ],
+      [
+        "assert",
+        [
+          "I.43",
+          "I.cn.2"
+        ],
+        ":g:`< A G > <g1:< A G >>` :eq:`= <g1:< A G > = g1:< G E >>` :g:`< G E > <g1:< G E >>`; + :g:`< C F > <g1:< C F >>` → :g:`< A F > <g1:< A F >>` :eq:`= <g1:< A F > = g1:< C E >>` :g:`< C E > <g1:< C E >>` → :g:`< A F > <g1:< A F >>` + :g:`< C E > <g1:< C E >>` = 2 · :g:`< A F > <g1:< A F >>`"
+      ],
+      [
+        "assert",
+        [
+          "II.def.1",
+          "II.def.2"
+        ],
+        ":g:`< A F > <g1:< A F >>` + :g:`< C E > <g1:< C E >>` = :g:`< K L M > <g1:< K L M >>` + :g:`< C F > <g1:< C F >>`, :g:`/ B F / <g1:/ B F />` :eq:`= <g1:/ B F / = g1:/ B C />` :g:`/ B C / <g1:/ B C />` → :g:`< K L M > <g1:< K L M >>` + :g:`< C F > <g1:< C F >>` = 2 · @fn(II.def.1)(:g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`)"
+      ],
+      [
+        "conclude",
+        [
+          "I.cn.2",
+          "I.def.22"
+        ],
+        "+ :g:`< D G > <g1:< D G >>` (= @fn(I.def.22)(:g:`/ A C / <g1:/ A C />`)) → @fn(I.def.22)(:g:`/ A B / <g1:/ A B />`) + @fn(I.def.22)(:g:`/ B C / <g1:/ B C />`) = 2 · @fn(II.def.1)(:g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`) + @fn(I.def.22)(:g:`/ A C / <g1:/ A C />`)"
+      ]
+    ]
+  }
+}

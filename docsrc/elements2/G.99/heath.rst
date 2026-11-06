@@ -1,12 +1,12 @@
 :canonical_id: G.99
 :original_id: III.2
-:title: G.99 arc circle points
+:title: G.99 chord of a circle lies within the circle
 :volume: II
 :book: III
 :type: prop
 
-G.99 arc circle points — Heath
-==============================
+G.99 chord of a circle lies within the circle — Heath
+=====================================================
 
 .. rubric:: `III.2 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/02/>`_
 
@@ -122,7 +122,7 @@ Dependency Graph
      "G.43" [label="G.43", tooltip="G.43 (I.18): In any triangle, the greater side subtends the greater angle.", fillcolor="#222244", URL="../G.43/index.html", target="_top"];
      "G.44" [label="G.44", tooltip="G.44 (I.19): In any triangle, the greater angle is subtended by the greater side.", fillcolor="#222244", URL="../G.44/index.html", target="_top"];
      "G.98" [label="G.98", tooltip="G.98 (III.1): Find the center of a given circle.", fillcolor="#222244", URL="../G.98/index.html", target="_top"];
-     "G.99" [label="G.99", tooltip="G.99 (III.2): If on the arc of a circle two points be taken at random, the segment joining the points will fall within the circle.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.99" [label="G.99", tooltip="G.99 (III.2): The segment joining any two points on the arc of a circle falls within the circle.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -142,7 +142,6 @@ Dependency Graph
      "G.34" -> "G.1";
      "G.37" -> "G.1";
      "G.40" -> "G.1";
-     "G.98" -> "G.1";
      "G.99" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
@@ -228,6 +227,7 @@ Dependency Graph
      "G.34" -> "G.14";
      "G.41" -> "G.14";
      "G.43" -> "G.14";
+     "G.98" -> "G.14";
      "G.99" -> "G.14";
      "G.17" -> "G.15";
      "G.20" -> "G.15";
@@ -267,18 +267,20 @@ Dependency Graph
      "G.41" -> "G.22";
      "G.43" -> "G.22";
      "G.44" -> "G.22";
-     "G.98" -> "G.22";
-     "G.99" -> "G.22";
      "G.24" -> "G.23";
      "G.29" -> "G.23";
      "G.25" -> "G.24";
      "G.32" -> "G.24";
      "G.41" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.99" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
+     "G.98" -> "G.26";
+     "G.99" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -293,6 +295,7 @@ Dependency Graph
      "G.40" -> "G.33";
      "G.98" -> "G.33";
      "G.37" -> "G.34";
+     "G.98" -> "G.34";
      "G.37" -> "G.36";
      "G.40" -> "G.37";
      "G.40" -> "G.38";

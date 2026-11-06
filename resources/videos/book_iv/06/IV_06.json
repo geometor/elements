@@ -1,0 +1,97 @@
+{
+  "voice_id": "voice_xdhacg1pn1cq",
+  "audio_wav": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iv/06/IV_06.wav",
+  "total_duration_sec": 121.62,
+  "segments": [
+    {
+      "index": 0,
+      "bell": "bell:proposition",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: brisk, clear, architectural voice; steady studio cadence] Book Four, Proposition Six. In a given circle to inscribe a square. Let A B C D be the given circle; it is required to inscribe a square in the circle A B C D.",
+      "start_sec": 0.0,
+      "end_sec": 10.89,
+      "duration_sec": 10.89,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: brisk, clear, architectural voice; steady studio cadence] Book Four, Proposition Six. In a given circle to inscribe a square. Let A B C D be the given circle; it is required to inscribe a square in the circle A B C D.",
+          "start_sec": 0.0,
+          "end_sec": 10.89,
+          "duration_sec": 10.89
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "bell": "bell:construction",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: methodical, precise constructive cadence] Draw two diameters A C and B D of the circle A B C D at right angles to one another through the center E. Join the chords A B, B C, C D, and D A.",
+      "start_sec": 10.89,
+      "end_sec": 23.36,
+      "duration_sec": 12.47,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: methodical, precise constructive cadence] Draw two diameters A C and B D of the circle A B C D at right angles to one another through the center E. Join the chords A B, B C, C D, and D A.",
+          "start_sec": 10.89,
+          "end_sec": 23.36,
+          "duration_sec": 12.47
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "bell": "bell:insight",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: luminous, deductive geometric clarity] Because B E equals E D, since E is the center, and E A is common and at right angles, by Side-Angle-Side congruence the base A B equals the base A D. For the same reason, B C and C D are also equal to A B and A D, so the quadrilateral A B C D is equilateral. Next, because B D is a diameter, B A D is a semicircle; therefore by Three Thirty-One the angle B A D is right, and for the same reason angles A B C, B C D, and C D A are also right. Being both equilateral and right-angled, A B C D is a square by Definition Twenty-Two, and it has been inscribed in the given circle A B C D. Which was to be done.",
+      "start_sec": 23.36,
+      "end_sec": 69.62,
+      "duration_sec": 46.26,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: luminous, deductive geometric clarity] Because B E equals E D, since E is the center, and E A is common and at right angles, by Side-Angle-Side congruence the base A B equals the base A D. For the same reason, B C and C D are also equal to A B and A D, so the quadrilateral A B C D is equilateral. Next, because B D is a diameter, B A D is a semicircle; therefore by Three Thirty-One the angle B A D is right, and for the same reason angles A B C, B C D, and C D A are also right. Being both equilateral and right-angled, A B C D is a square by Definition Twenty-Two, and it has been inscribed in the given circle A B C D. Which was to be done.",
+          "start_sec": 23.36,
+          "end_sec": 69.62,
+          "duration_sec": 46.26
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "bell": "bell:system",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: reflective, scholarly, architectural synthesis] With Proposition Four Six, Euclid shifts from general triangles to regular polygons. As Heath explains, while any triangle can be inscribed in a circle up to similarity, an equiangular quadrilateral inscribed in a circle is indeterminate in form unless the given quadrilateral is a square. In the GEOMETOR G-Index, node G one hundred fifty-eight pairs Side-Angle-Side congruence for equal sides with Thales' semicircle theorem for right angles, becoming the foundational exhaustion step for cones and cylinders in Book Twelve, Propositions Ten through Fifteen.",
+      "start_sec": 69.62,
+      "end_sec": 100.84,
+      "duration_sec": 31.22,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: reflective, scholarly, architectural synthesis] With Proposition Four Six, Euclid shifts from general triangles to regular polygons. As Heath explains, while any triangle can be inscribed in a circle up to similarity, an equiangular quadrilateral inscribed in a circle is indeterminate in form unless the given quadrilateral is a square. In the GEOMETOR G-Index, node G one hundred fifty-eight pairs Side-Angle-Side congruence for equal sides with Thales' semicircle theorem for right angles, becoming the foundational exhaustion step for cones and cylinders in Book Twelve, Propositions Ten through Fifteen.",
+          "start_sec": 69.62,
+          "end_sec": 100.84,
+          "duration_sec": 31.22
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "bell": "bell:resolve",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: warm, inviting, resonant studio close] You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Four Six in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.",
+      "start_sec": 100.84,
+      "end_sec": 121.62,
+      "duration_sec": 20.78,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: warm, inviting, resonant studio close] You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Four Six in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.",
+          "start_sec": 100.84,
+          "end_sec": 121.62,
+          "duration_sec": 20.78
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "IV.15": {
+    "subtype": "problem",
+    "args": [
+      ":g:`( A B C D E F ) <g1:( A B C D E F )>`"
+    ],
+    "returns": [
+      ":g:`< A B C D E F > <g1:< A B C D E F >>`"
+    ],
+    "given": "Circle :g:`( A B C D E F ) <g1:( A B C D E F )>`",
+    "contract": "Hexagon :g:`< A B C D E F > <g1:< A B C D E F >>` is :term:`equilateral <G.13>`, equiangular, and :term:`inscribed in <G.148>` :g:`( A B C D E F ) <g1:( A B C D E F )>`",
+    "steps": [
+      [
+        "given",
+        [
+          "I.def.15",
+          "IV.def.3"
+        ],
+        "Circle :g:`( A B C D E F ) <g1:( A B C D E F )>`"
+      ],
+      [
+        "construct",
+        [
+          "I.def.17",
+          "III.1",
+          "I.post.3"
+        ],
+        "Draw diameter :g:`/ A D / <g1:/ A D />`, @fn(III.1)(:g:`( A B C D E F ) <g1:( A B C D E F )>`) → center :g:`G <g1:G>`, @fn(I.post.3)(:g:`D <g1:D>`, :g:`G <g1:G>`) → :g:`( E G C H ) <g1:( E G C H )>`"
+      ],
+      [
+        "construct",
+        [
+          "I.post.1",
+          "I.post.2"
+        ],
+        "Join :g:`/ G E / <g1:/ G E />`, :g:`/ G C / <g1:/ G C />` and produce to :g:`B <g1:B>`, :g:`F <g1:F>` (:g:`/ B E / <g1:/ B E />`, :g:`/ C F / <g1:/ C F />`); join :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ C D / <g1:/ C D />`, :g:`/ D E / <g1:/ D E />`, :g:`/ E F / <g1:/ E F />`, :g:`/ F A / <g1:/ F A />`"
+      ],
+      [
+        "assert",
+        [
+          "I.def.15",
+          "I.def.20",
+          "I.5",
+          "I.32",
+          "I.13",
+          "I.15"
+        ],
+        "Radii :g:`/ G E / <g1:/ G E />` :eq:`= <g1:/ G E / = g1:/ G D / = g1:/ D E />` :g:`/ G D / <g1:/ G D />` = :g:`/ D E / <g1:/ D E />` → :g:`< E G D > <g1:< E G D >>`, :g:`< D G C > <g1:< D G C >>` equilateral → all six central angles :g:`< E G D ) <g1:< E G D )>` :eq:`= <g1:< E G D ) = g1:< D G C ) = g1:< C G B ) = g1:< B G A ) = g1:< A G F ) = g1:< F G E )>` :g:`< D G C ) <g1:< D G C )>` = :g:`< C G B ) <g1:< C G B )>` = :g:`< B G A ) <g1:< B G A )>` = :g:`< A G F ) <g1:< A G F )>` = :g:`< F G E ) <g1:< F G E )>`"
+      ],
+      [
+        "assert",
+        [
+          "III.26",
+          "III.29"
+        ],
+        "Equal central angles subtend equal arcs :g:`( A B ) <g1:( A B )>` :eq:`= <g1:( A B ) = g1:( B C ) = g1:( C D ) = g1:( D E ) = g1:( E F ) = g1:( F A )>` :g:`( B C ) <g1:( B C )>` = :g:`( C D ) <g1:( C D )>` = :g:`( D E ) <g1:( D E )>` = :g:`( E F ) <g1:( E F )>` = :g:`( F A ) <g1:( F A )>` → :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ B C / = g1:/ C D / = g1:/ D E / = g1:/ E F / = g1:/ F A />` :g:`/ B C / <g1:/ B C />` = :g:`/ C D / <g1:/ C D />` = :g:`/ D E / <g1:/ D E />` = :g:`/ E F / <g1:/ E F />` = :g:`/ F A / <g1:/ F A />` (:g:`< A B C D E F > <g1:< A B C D E F >>` is equilateral)"
+      ],
+      [
+        "conclude",
+        [
+          "I.cn.2",
+          "III.27",
+          "IV.def.3"
+        ],
+        ":g:`( F A B C D ) <g1:( F A B C D )>` :eq:`= <g1:( F A B C D ) = g1:( E D C B A )>` :g:`( E D C B A ) <g1:( E D C B A )>` → :g:`< F E D ) <g1:< F E D )>` :eq:`= <g1:< F E D ) = g1:< A F E )>` :g:`< A F E ) <g1:< A F E )>` and all 6 interior angles equal → :g:`< A B C D E F > <g1:< A B C D E F >>` is an equilateral and equiangular hexagon inscribed in :g:`( A B C D E F ) <g1:( A B C D E F )>` (Porism: side = radius :g:`/ G D / <g1:/ G D />`)"
+      ]
+    ]
+  }
+}

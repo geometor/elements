@@ -1,0 +1,19 @@
+[bell:proposition]
+[style: brisk, clear, architectural voice; steady studio cadence]
+Book Two, Proposition Ten. If a segment be bisected, and a segment be added to it in a segment, the square on the whole with the added segment and the square on the added segment both together are double of the square on the half and of the square described on the segment made up of the half and the added segment as on one segment. <pause> Let segment A B be bisected at C, and let segment B D be added to it in a straight line.
+
+[bell:construction]
+[style: methodical, precise constructive cadence]
+From C, draw C E at right angles to A B by One Eleven, make it equal to A C or C B by One Three, and join E A and E B. <pause> Through E draw E F parallel to A D, and through D draw F D parallel to C E by One Thirty-One. Since angles F E B and E F D are less than two right angles, produce E B and F D by Postulate Five to meet at G, and join A G.
+
+[bell:insight]
+[style: luminous, deductive geometric clarity]
+In the isosceles right triangles A C E and E C B, each base angle is half a right angle by One Five and One Thirty-Two, so angle A E B is right. By One Fifteen, One Twenty-Nine, One Thirty-Four, and One Six, triangles B D G and E F G are also isosceles right triangles, so G D equals B D, and G F equals E F, which equals C D. <pause> By the Pythagorean Theorem, One Forty-Seven, since C E equals A C, the square on E A is double the square on A C; and since F G equals E F, the square on E G is double the square on E F, and therefore double the square on C D. <pause> Applying One Forty-Seven to right triangles A E G and A D G, the squares on A D and D G equal the square on A G, which equals the squares on E A and E G. Since D G equals D B, the squares on A D and D B are double the squares on A C and C D. Which was to be proved.
+
+[bell:system]
+[style: reflective, scholarly, architectural synthesis]
+Proposition Two Ten proves the algebraic identity: the quantity two a plus b squared, plus b squared, equals twice the sum of a squared and a plus b squared. As Proclus and Theon of Smyrna record, the Pythagoreans used this exact theorem to generate successive side and diagonal numbers—one and one, two and three, five and seven, twelve and seventeen—satisfying two x squared minus y squared equals plus or minus one, and converging to the square root of two. <pause> In the GEOMETOR G-Index, node G ninety-two synthesizes nineteen direct prerequisites across sixty-three ancestor nodes, uniting the parallel postulate, isosceles angle chasing, and the Pythagorean theorem.
+
+[bell:resolve]
+[style: warm, inviting, resonant studio close]
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Two Ten in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

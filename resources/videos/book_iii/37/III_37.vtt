@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:00:00.420 --> 00:00:03.335
+Elements, Book three, Proposition thirty-seven.
+
+2
+00:00:03.335 --> 00:00:19.583
+From a point outside a circle, if a secant cuts the circle and another line falls on the circle such that the rectangle contained by the whole secant and its external segment equals the square on the line falling on the circle, then that line touches the circle.
+
+3
+00:00:19.583 --> 00:00:29.939
+From external point D, let secant D C A cut circle A B C, and let segment D B fall on the circumference at B so that the rectangle A D by C D equals the square on D B.
+
+4
+00:00:29.939 --> 00:00:32.730
+We claim that D B is tangent to circle A B C.
+
+5
+00:00:33.150 --> 00:00:39.079
+Using Book three Proposition seventeen, draw a tangent D E from D touching circle A B C at E.
+
+6
+00:00:39.079 --> 00:00:43.478
+Find the center F of the circle, and join segments F E, F B, and F D.
+
+7
+00:00:43.478 --> 00:00:53.360
+Because D E is tangent to the circle at E, Book three Proposition eighteen shows that radius F E is perpendicular to D E, making angle F E D a right angle.
+
+8
+00:00:53.780 --> 00:01:02.276
+By the tangent-secant theorem in Book three Proposition thirty-six, the rectangle A D by C D equals the square on tangent D E.
+
+9
+00:01:02.276 --> 00:01:13.402
+Since the rectangle A D by C D also equals the square on D B by hypothesis, the square on D E equals the square on D B, and therefore segment D E equals segment D B.
+
+10
+00:01:13.402 --> 00:01:21.089
+In triangles F E D and F B D, radii F E and F B are equal, segments D E and D B are equal, and base F D is common.
+
+11
+00:01:21.089 --> 00:01:25.876
+By Side-Side-Side congruence, angle D B F equals the right angle F E D.
+
+12
+00:01:25.876 --> 00:01:38.620
+Since D B stands at right angles to radius F B at its extremity B on the circle, the Porism to Book three Proposition sixteen proves that D B touches circle A B C, as was required to prove.
+
+13
+00:01:39.040 --> 00:01:55.825
+Proposition thirty-seven is the final proposition of Book three, sealing the theory of circles with an algebraic criterion for tangency: instead of proving by contradiction that D B cannot cut the circle a second time, Euclid constructs an auxiliary tangent D E and transfers its right angle to B by triangle congruence.
+
+14
+00:01:55.825 --> 00:02:14.760
+In the GEOMETOR dependency graph, Proposition thirty-seven crowns Book three with sixty-three ancestor nodes, and joins Proposition thirty-six to drive Book four Proposition ten—where this exact tangency criterion proves that a chord equal to the golden section of a radius is tangent to the circumcircle of the smaller triangle, unlocking the regular pentagon.
+
+15
+00:02:15.180 --> 00:02:20.340
+Explore the interactive construction, symbolic proof, and dependency graph at geometor dot github dot io.

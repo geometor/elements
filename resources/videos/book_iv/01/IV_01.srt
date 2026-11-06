@@ -1,0 +1,63 @@
+1
+00:00:00,420 --> 00:00:02,089
+Book Four, Proposition One.
+
+2
+00:00:02,089 --> 00:00:09,195
+Into a given circle to fit a segment equal to a given segment which is not greater than the diameter of the circle.
+
+3
+00:00:09,195 --> 00:00:20,010
+Let A B C be the given circle, and D the given segment not greater than the diameter of the circle; it is required to fit into the circle A B C a chord equal to the segment D.
+
+4
+00:00:20,430 --> 00:00:23,688
+Draw a diameter B C of the circle A B C.
+
+5
+00:00:23,688 --> 00:00:28,169
+If B C equals D, that which was enjoined has been done.
+
+6
+00:00:28,169 --> 00:00:33,545
+But if B C is greater than D, cut off C E equal to D by One Three.
+
+7
+00:00:33,545 --> 00:00:43,320
+With center C and defining radius point E, describe the circle E A F, cutting the circle A B C at A and F, and join C A.
+
+8
+00:00:43,740 --> 00:00:52,217
+Because the point C is the center of the circle E A F, the radius C A equals the radius C E by Definition Fifteen.
+
+9
+00:00:52,217 --> 00:00:58,611
+Yet C E was constructed equal to D; therefore by Common Notion One, C A also equals D.
+
+10
+00:00:58,611 --> 00:01:05,898
+Thus into the given circle A B C there has been fitted the chord C A equal to the given segment D.
+
+11
+00:01:05,898 --> 00:01:07,460
+Which was to be done.
+
+12
+00:01:07,880 --> 00:01:14,334
+Proposition Four One launches Book Four's study of figures inscribed in and circumscribed about circles.
+
+13
+00:01:14,334 --> 00:01:34,937
+From any chosen point C on the circumference, the auxiliary circle E A F yields two symmetric chords C A and C F, while varying C around the circle generates a family of equal chords tangent to a concentric inner circle—the basis of Pappus's parallel-chord construction and Apollonius's celebrated neusis, or verging-chord, problem.
+
+14
+00:01:34,937 --> 00:01:53,120
+In the GEOMETOR G-Index, node G one hundred forty-seven joins circle radii and diameter properties with Definition Four Seven, becoming a foundational tool for ninety-nine downstream propositions across Books Four, Ten, Eleven, and Thirteen, including the golden triangle and regular pentagon.
+
+15
+00:01:53,540 --> 00:02:07,545
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Four One in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+16
+00:02:07,545 --> 00:02:14,580
+Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

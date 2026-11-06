@@ -1,0 +1,19 @@
+[bell:proposition]
+[style: brisk, clear, architectural voice; steady studio cadence]
+Book Two, Proposition Nine. If a segment be cut into equal and unequal segments, the squares on the unequal segments of the whole are double of the square on the half and of the square on the segment between the points of section. <pause> Let the segment A B be cut into equal segments at C, and into unequal segments at D.
+
+[bell:construction]
+[style: methodical, precise constructive cadence]
+From C, draw C E at right angles to A B by One Eleven, make C E equal to A C or C B by One Three, and join E A and E B. Through D, draw D F parallel to E C, and through F, draw F G parallel to A B by One Thirty-One, and join A F.
+
+[bell:insight]
+[style: luminous, deductive geometric clarity]
+Because A C equals C E and the angle at C is right, the angles C A E and C E A are each half a right angle by One Five and One Thirty-Two. For the same reason, C E B and E B C are each half a right angle, so the whole angle A E B is right. By One Twenty-Nine and One Six, the small right triangles E G F and F D B are also isosceles, giving E G equal to G F, and F D equal to D B. <pause> By the Pythagorean theorem, One Forty-Seven, in right triangle A C E, the square on E A is double of the square on A C. And in right triangle E G F, the square on E F is double of the square on G F—which equals C D by One Thirty-Four. <pause> Therefore, the squares on A E and E F are double of the squares on A C and C D. Since angle A E F is right, the square on A F equals the squares on A E and E F; and since the angle at D is right, the squares on A D and D F also equal the square on A F. <pause> Because D F equals D B, the squares on A D and D B are double of the squares on A C and C D. Which was to be proved.
+
+[bell:system]
+[style: reflective, scholarly, architectural synthesis]
+Proposition Two Nine marks a structural turning point in Book Two: where the first eight propositions rely purely on dissecting rectangles and gnomons, Euclid now invokes the Pythagorean theorem, One Forty-Seven, to prove the algebraic identity that the square of a plus b plus the square of a minus b equals twice the sum of a squared and b squared. <pause> In the GEOMETOR G-Index, node G ninety-one synthesizes twelve direct prerequisites across sixty-three ancestor nodes, uniting isosceles angle chasing, parallel transversals, and right-triangle squares.
+
+[bell:resolve]
+[style: warm, inviting, resonant studio close]
+You can explore the interactive right-triangle diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Two Nine in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

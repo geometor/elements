@@ -1,0 +1,56 @@
+{
+  "III.37": {
+    "subtype": "theorem",
+    "args": [
+      ":g:`( A B C ) <g1:( A B C )>`",
+      ":g:`D <g1:D>`",
+      ":g:`/ D C A / <g1:/ A D />`",
+      ":g:`/ D B / <g1:/ D B />`"
+    ],
+    "returns": [],
+    "given": ":g:`D <g1:D>` outside :g:`( A B C ) <g1:( A B C )>`, secant :g:`/ D C A / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` with rect(:g:`/ A D / <g1:/ A D />`, :g:`/ C D / <g1:/ C D />`) = :g:`/ D B / <g1:/ D B />`²",
+    "contract": ":g:`/ D B / <g1:/ D B />` touches :g:`( A B C ) <g1:( A B C )>` at :g:`B <g1:B>`",
+    "steps": [
+      [
+        "given",
+        [
+          "I.def.15"
+        ],
+        "rect(:g:`/ A D / <g1:/ A D />`, :g:`/ C D / <g1:/ C D />`) = :g:`/ D B / <g1:/ D B />`²"
+      ],
+      [
+        "construct",
+        [
+          "III.17",
+          "III.1",
+          "I.post.1"
+        ],
+        "@fn(III.17)(:g:`D <g1:D>`, :g:`( A B C ) <g1:( A B C )>`) → tangent :g:`/ D E / <g1:/ D E />`, @fn(III.1)(:g:`( A B C ) <g1:( A B C )>`) → :g:`F <g1:F>`, @fn(I.post.1)(:g:`F <g1:F>`, :g:`E <g1:E>`, :g:`B <g1:B>`, :g:`D <g1:D>`) → :g:`/ F E / <g1:/ F E />`, :g:`/ F B / <g1:/ F B />`, :g:`/ F D / <g1:/ F D />`"
+      ],
+      [
+        "assert",
+        [
+          "III.18",
+          "III.36",
+          "I.cn.1"
+        ],
+        ":g:`< F E D ) <g1:< F E D )>` is right and rect(:g:`/ A D / <g1:/ A D />`, :g:`/ C D / <g1:/ C D />`) = :g:`/ D E / <g1:/ D E />`² → :g:`/ D B / <g1:/ D B />` :eq:`= <g1:/ D B / = g1:/ D E />` :g:`/ D E / <g1:/ D E />`"
+      ],
+      [
+        "assert",
+        [
+          "I.def.15",
+          "I.8"
+        ],
+        ":g:`/ F B / <g1:/ F B />` :eq:`= <g1:/ F B / = g1:/ F E />` :g:`/ F E / <g1:/ F E />`, :g:`/ F D / <g1:/ F D />` common, :g:`/ D B / <g1:/ D B />` :eq:`= <g1:/ D B / = g1:/ D E />` :g:`/ D E / <g1:/ D E />` → :g:`< D B F ) <g1:< D B F )>` :eq:`= <g1:< D B F ) = g1:< F E D )>` :g:`< F E D ) <g1:< F E D )>` is right"
+      ],
+      [
+        "conclude",
+        [
+          "III.16"
+        ],
+        ":g:`/ D B / <g1:/ D B />` ⊥ :g:`/ F B / <g1:/ F B />` at extremity :g:`B <g1:B>` → :g:`/ D B / <g1:/ D B />` touches :g:`( A B C ) <g1:( A B C )>`"
+      ]
+    ]
+  }
+}

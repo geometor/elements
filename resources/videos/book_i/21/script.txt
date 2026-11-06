@@ -1,0 +1,8 @@
+[bell:proposition]
+[style:brisk] Euclid's Elements, Book One, Proposition Twenty-One. <pause> Segments constructed from the endpoints of one side of a triangle to an interior point have a lesser sum, but contain a greater angle, than the other two sides. <pause> Given triangle A B C and interior segments B D and D C meeting at point D, we prove that B D and D C together are less than B A and A C together, and that angle B D C is greater than angle B A C.
+
+[bell:construction]
+[style:brisk] Extend segment B D continuously to meet side A C at point E.
+
+[bell:insight]
+[style:brisk] In triangle A B E, two sides B A and A E together are greater than B E; adding E C to each shows that B A and A C together are greater than B E and E C together. <pause> In triangle C E D, two sides C E and E D together are greater than C D; adding D B to each shows that B E and E C together are greater than B D and D C together. <pause> Next, in triangle C D E, exterior angle B D C is greater than interior angle C E D, and in triangle A B E, exterior angle C E B is greater than angle B A C. <pause> Therefore B D and D C together are less than B A and A C together, while angle B D C is greater than angle B A C, <pause> as was required to prove.

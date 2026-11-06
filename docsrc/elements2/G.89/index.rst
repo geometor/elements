@@ -2,7 +2,7 @@
 :number: 89
 :canonical_id: G.89
 :original_id: II.7
-:title: G.89 square of difference
+:title: G.89 square of a difference
 :volume: I
 :book: II
 :type: prop
@@ -10,92 +10,49 @@
 :categories: theorem, proof, plane-geometry, geometric-algebra
 :category: theorem, proof, plane-geometry, geometric-algebra
 :tags: book-ii, point, segment, triangle, quadrilateral, polygon, straight-line, square, contained-rectangle, figure, gnomon, rectangle, equality
-:dependencies: G.4, G.9, G.63, G.72, G.75, G.81, G.86
-:excerpt: If a segment be cut at random, the square on the whole and that on one of the segments both together are equal to twice the rectangle contained by the whole and the said segment and the square on the remaining segment.
+:dependencies: G.4, G.9, G.36, G.63, G.72, G.75, G.81, G.86
+:excerpt: If a segment is cut at random, the sum of the squares on the whole and on one of the parts equals twice the rectangle contained by the whole and that part together with the square on the remaining part.
 
 .. _G.89:
 .. _II.7:
 
-G.89 square of difference
-=========================
+G.89 square of a difference
+===========================
 
 .. rubric:: `II.7 <https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/07/>`_
 
 .. enunciation::
 
-   If a :term:`segment <G.4>` be cut at random, the :term:`square <G.63>` on the whole and that on one of the segments both together are equal to twice the :term:`rectangle contained <G.81>` by the whole and the said segment and the square on the remaining segment.
+   If a :term:`segment <G.4>` is cut at random, the sum of the :term:`squares <G.63>` on the whole and on one of the parts equals twice the :term:`rectangle contained <G.81>` by the whole and that part together with the square on the remaining part.
 
 .. signature:: theorem
 
-   | :fn:`square_of_difference <G.89>`\ ()
-   | **prove** the squares on :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are equal to twice the rectangle contained by :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` and the square on :g:`/ C A / <g1:/ C A />`
+   | :fn:`square_of_difference <G.89>`\ (:g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`)
+   | **given** :g:`/ A B / <g1:/ A B />` (:g:`C <g1:C>` ∈ :g:`/ A B / <g1:/ A B />`)
+   | **prove** :fn:`square <G.63>`\ (:g:`/ A B / <g1:/ A B />`) + :fn:`square <G.63>`\ (:g:`/ B C / <g1:/ B C />`) = 2 · :fn:`contained_rectangle <G.81>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`) + :fn:`square <G.63>`\ (:g:`/ C A / <g1:/ C A />`)
 
 .. picture:: g1.svg
    :alt: Diagram
 
-.. step:: construct
+.. step:: given
 
-   Let a segment :g:`/ A B / <g1:/ A B />` be cut at random at :g:`C <g1:C>`
+   :g:`/ A B / <g1:/ A B />` = :g:`/ A C / <g1:/ A C />` + :g:`/ C B / <g1:/ C B />`
 
-.. step:: construct
+.. step:: construct ∵ square_on_segment, figure_def <G.75, G.9>
 
-   :fn:`square_on_segment <G.75>`: Let the square :g:`< A D E B > <g1:< A D E B >>` be described on :g:`/ A B / <g1:/ A B />`.
+   :fn:`square_on_segment <G.75>`\ (:g:`/ A B / <g1:/ A B />`) → :g:`< A D E B > <g1:< A D E B >>`, draw :g:`/ B D / <g1:/ B D />`, :g:`/ C N / <g1:/ C N />` ∥ :g:`/ A D / <g1:/ A D />`, :g:`/ H F / <g1:/ H F />` ∥ :g:`/ A B / <g1:/ A B />`
 
-.. step:: construct
+.. step:: assert ∵ parallelogram_complements, add_equals <G.72, G.36>
 
-   And let the :term:`figure <G.9>` be drawn.
+   :g:`< A G > <g1:< A G >>` :eq:`= <g1:< A G > = g1:< G E >>` :g:`< G E > <g1:< G E >>`; + :g:`< C F > <g1:< C F >>` → :g:`< A F > <g1:< A F >>` :eq:`= <g1:< A F > = g1:< C E >>` :g:`< C E > <g1:< C E >>` → :g:`< A F > <g1:< A F >>` + :g:`< C E > <g1:< C E >>` = 2 · :g:`< A F > <g1:< A F >>`
 
-.. step:: assert ∵ parallelogram_complements <G.72>
+.. step:: assert ∵ rectangular_parallelogram_said_def, parallelogrammic_area_whatever_def <G.81, G.86>
 
-   :g:`< A G > <g1:< A G >>` is :eq:`equal <g1:< A G > = g1:< G E >>` to :g:`< G E > <g1:< G E >>`
+   :g:`< A F > <g1:< A F >>` + :g:`< C E > <g1:< C E >>` = :g:`< K L M > <g1:< K L M >>` + :g:`< C F > <g1:< C F >>`, :g:`/ B F / <g1:/ B F />` :eq:`= <g1:/ B F / = g1:/ B C />` :g:`/ B C / <g1:/ B C />` → :g:`< K L M > <g1:< K L M >>` + :g:`< C F > <g1:< C F >>` = 2 · :fn:`rectangular_parallelogram_said_def <G.81>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`)
 
-.. step:: construct
+.. step:: conclude ∵ add_equals, quadrilateral_def <G.36, G.63>
 
-   Let :g:`< C F > <g1:< C F >>` be added to each
-
-.. step:: assert
-
-   :g:`< A F > <g1:< A F >>` is :eq:`equal <g1:< A F > = g1:< C E >>` to :g:`< C E > <g1:< C E >>`
-
-.. step:: assert
-
-   :g:`< A F > <g1:< A F >>`, :g:`< C E > <g1:< C E >>` are double of :g:`< A F > <g1:< A F >>`
-
-.. step:: assert
-
-   :g:`< A F > <g1:< A F >>`, :g:`< C E > <g1:< C E >>` are the gnomon :g:`< K L M > <g1:< K L M >>` and the square :g:`< C F > <g1:< C F >>`
-
-.. step:: assert
-
-   the :term:`gnomon <G.86>` :g:`< K L M > <g1:< K L M >>` and the square :g:`< C F > <g1:< C F >>` are double of :g:`< A F > <g1:< A F >>`
-
-.. step:: assert
-
-   Twice the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` is also double of :g:`< A F > <g1:< A F >>`
-
-.. step:: assert
-
-   For :g:`/ B F / <g1:/ B F />` :eq:`= <g1:/ B F / = g1:/ B C />` :g:`/ B C / <g1:/ B C />`
-
-.. step:: assert
-
-   the gnomon :g:`< K L M > <g1:< K L M >>` and the square :g:`< C F > <g1:< C F >>` are equal to twice the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`
-
-.. step:: construct
-
-   Let :g:`< D G > <g1:< D G >>`, which is the square on :g:`/ A C / <g1:/ A C />`, be added to each
-
-.. step:: assert
-
-   the gnomon :g:`< K L M > <g1:< K L M >>` and the squares :g:`< B G > <g1:< B G >>`, :g:`< G D > <g1:< G D >>` are equal to twice the rectangle contained by :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` and the square on :g:`/ A C / <g1:/ A C />`
-
-.. step:: assert
-
-   The gnomon :g:`< K L M > <g1:< K L M >>` and the squares :g:`< B G > <g1:< B G >>`, :g:`< G D > <g1:< G D >>` are :g:`< A D E B > <g1:< A D E B >>` and :g:`< C F > <g1:< C F >>`, which are squares described on :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`
-
-.. step:: conclude
-
-   the squares on :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are equal to twice the rectangle contained by :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` together with the square on :g:`/ A C / <g1:/ A C />`
+   + :g:`< D G > <g1:< D G >>` (= :fn:`quadrilateral_def <G.63>`\ (:g:`/ A C / <g1:/ A C />`)) → :fn:`quadrilateral_def <G.63>`\ (:g:`/ A B / <g1:/ A B />`) + :fn:`quadrilateral_def <G.63>`\ (:g:`/ B C / <g1:/ B C />`) = 2 · :fn:`rectangular_parallelogram_said_def <G.81>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`) + :fn:`quadrilateral_def <G.63>`\ (:g:`/ A C / <g1:/ A C />`)
 
 Dependency Graph
 ----------------
@@ -163,7 +120,7 @@ Dependency Graph
      "G.75" [label="G.75", tooltip="G.75 (I.46): Construct a square on a given segment.", fillcolor="#222244", URL="../G.75/index.html", target="_top"];
      "G.81" [label="G.81", tooltip="G.81 (II.def.1): Any rectangular parallelogram is said to becontained by the twosegments containing theright angle.", fillcolor="#224422", URL="../G.81/index.html", target="_top"];
      "G.86" [label="G.86", tooltip="G.86 (II.def.2): And in any parallelogrammic area let any one whatever of the parallelograms about itsdiameter with the two complements be called agnomon.", fillcolor="#224422", URL="../G.86/index.html", target="_top"];
-     "G.89" [label="G.89", tooltip="G.89 (II.7): If a segment be cut at random, the square on the whole and that on one of the segments both together are equal to twice the rectangle contained by the whole and the said segment an...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.89" [label="G.89", tooltip="G.89 (II.7): If a segment is cut at random, the sum of the squares on the whole and on one of the parts equals twice the rectangle contained by the whole and that part together with the square ...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -303,6 +260,7 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.51" -> "G.14";
      "G.58" -> "G.14";
      "G.17" -> "G.15";
@@ -314,7 +272,9 @@ Dependency Graph
      "G.21" -> "G.16";
      "G.37" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.56" -> "G.16";
+     "G.75" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
@@ -323,6 +283,7 @@ Dependency Graph
      "G.25" -> "G.18";
      "G.41" -> "G.18";
      "G.45" -> "G.18";
+     "G.53" -> "G.18";
      "G.58" -> "G.18";
      "G.20" -> "G.19";
      "G.25" -> "G.19";
@@ -336,6 +297,7 @@ Dependency Graph
      "G.43" -> "G.21";
      "G.45" -> "G.21";
      "G.47" -> "G.21";
+     "G.51" -> "G.21";
      "G.75" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
@@ -369,11 +331,14 @@ Dependency Graph
      "G.51" -> "G.24";
      "G.62" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.51" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -396,6 +361,7 @@ Dependency Graph
      "G.56" -> "G.36";
      "G.62" -> "G.36";
      "G.72" -> "G.36";
+     "G.89" -> "G.36";
      "G.40" -> "G.37";
      "G.56" -> "G.37";
      "G.40" -> "G.38";

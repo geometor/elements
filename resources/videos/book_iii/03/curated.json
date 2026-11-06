@@ -1,0 +1,60 @@
+{
+  "III.3": {
+    "subtype": "theorem",
+    "args": [
+      ":g:`( A B C ) <g1:( A B C )>`",
+      ":g:`/ C D / <g1:/ C D />`",
+      ":g:`/ A B / <g1:/ A B />`",
+      ":g:`F <g1:F>`"
+    ],
+    "returns": [],
+    "given": ":g:`( A B C ) <g1:( A B C )>`, diameter :g:`/ C D / <g1:/ C D />`, chord :g:`/ A B / <g1:/ A B />` (:g:`F <g1:F>` = :g:`/ C D / <g1:/ C D />` ∩ :g:`/ A B / <g1:/ A B />`)",
+    "contract": ":g:`/ A F / <g1:/ A F />` :eq:`= <g1:/ A F / = g1:/ F B />` :g:`/ F B / <g1:/ F B />` ⇔ :g:`/ C D / <g1:/ C D />` ⊥ :g:`/ A B / <g1:/ A B />`",
+    "steps": [
+      [
+        "given",
+        [
+          "I.def.15"
+        ],
+        ":g:`( A B C ) <g1:( A B C )>`, diameter :g:`/ C D / <g1:/ C D />` through center, chord :g:`/ A B / <g1:/ A B />` not through center, :g:`F <g1:F>` = :g:`/ C D / <g1:/ C D />` ∩ :g:`/ A B / <g1:/ A B />`"
+      ],
+      [
+        "construct",
+        [
+          "I.def.16",
+          "I.post.1"
+        ],
+        "Take center :g:`E <g1:E>` of :g:`( A B C ) <g1:( A B C )>`; @fn(I.post.1)(:g:`E <g1:E>`, :g:`A <g1:A>`, :g:`B <g1:B>`) → :g:`/ E A / <g1:/ E A />`, :g:`/ E B / <g1:/ E B />`"
+      ],
+      [
+        "assert",
+        [
+          "I.def.15",
+          "I.8",
+          "I.def.10"
+        ],
+        "If :g:`/ A F / <g1:/ A F />` :eq:`= <g1:/ A F / = g1:/ F B />` :g:`/ F B / <g1:/ F B />`, with :g:`/ F E / <g1:/ F E />` common and :g:`/ E A / <g1:/ E A />` :eq:`= <g1:/ E A / = g1:/ E B />` :g:`/ E B / <g1:/ E B />` → :g:`< A F E ) <g1:< A F E )>` :eq:`= <g1:< A F E ) = g1:< B F E )>` :g:`< B F E ) <g1:< B F E )>` is right (:g:`/ C D / <g1:/ C D />` ⊥ :g:`/ A B / <g1:/ A B />`)"
+      ],
+      [
+        "assert",
+        [
+          "I.def.15",
+          "I.5"
+        ],
+        "Conversely, if :g:`< A F E ) <g1:< A F E )>` :eq:`= <g1:< A F E ) = g1:< B F E )>` :g:`< B F E ) <g1:< B F E )>` are right, since :g:`/ E A / <g1:/ E A />` :eq:`= <g1:/ E A / = g1:/ E B />` :g:`/ E B / <g1:/ E B />` → :g:`< E A F ) <g1:< E A F )>` :eq:`= <g1:< E A F ) = g1:< E B F )>` :g:`< E B F ) <g1:< E B F )>`"
+      ],
+      [
+        "assert",
+        [
+          "I.26"
+        ],
+        "In :g:`< E A F > <g1:< E A F >>`, :g:`< E B F > <g1:< E B F >>`, two angles equal two angles and :g:`/ E F / <g1:/ E F />` common → :g:`/ A F / <g1:/ A F />` :eq:`= <g1:/ A F / = g1:/ F B />` :g:`/ F B / <g1:/ F B />`"
+      ],
+      [
+        "conclude",
+        [],
+        ":g:`/ A F / <g1:/ A F />` :eq:`= <g1:/ A F / = g1:/ F B />` :g:`/ F B / <g1:/ F B />` ⇔ :g:`/ C D / <g1:/ C D />` ⊥ :g:`/ A B / <g1:/ A B />`"
+      ]
+    ]
+  }
+}

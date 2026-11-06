@@ -1,0 +1,59 @@
+1
+00:00:00,420 --> 00:00:02,964
+Book Three, Proposition Twenty-Six.
+
+2
+00:00:02,964 --> 00:00:10,304
+In equal circles, equal angles stand on equal arcs, whether they stand at the centers or at the arcs.
+
+3
+00:00:10,304 --> 00:00:20,987
+Let A B C and D E F be equal circles with centers G and H, having equal central angles B G C and E H F, and equal inscribed angles B A C and E D F.
+
+4
+00:00:20,987 --> 00:00:24,330
+We must prove that arc B K C equals arc E L F.
+
+5
+00:00:24,750 --> 00:00:28,040
+Join the chords B C and E F.
+
+6
+00:00:28,460 --> 00:00:35,907
+Because the circles A B C and D E F are equal, their radii B G, G C, E H, and H F are all equal.
+
+7
+00:00:35,907 --> 00:00:46,613
+And since the included central angle B G C equals E H F, triangles B G C and E H F are congruent by One Four, so base B C equals base E F.
+
+8
+00:00:46,613 --> 00:00:56,853
+Furthermore, because the inscribed angle B A C equals E D F, the circular segments B A C and E D F are similar by Definition Eleven.
+
+9
+00:00:56,853 --> 00:01:05,696
+And standing on equal chords B C and E F, similar circular segments are equal to one another by Three Twenty-Four.
+
+10
+00:01:05,696 --> 00:01:17,100
+Subtracting these equal circular segments from the equal whole circles leaves the remaining arc B K C equal to arc E L F, as was required to prove.
+
+11
+00:01:17,520 --> 00:01:24,382
+Proposition Twenty-Six opens the great quartet of circle symmetry theorems, linking angles, arcs, and chords.
+
+12
+00:01:24,382 --> 00:01:39,996
+As Heath notes, Euclid's diagram assumes the inscribed angle is acute; if the angle at the arc is right or obtuse, bisecting the angle—or applying Three Twenty-Two to the opposite quadrilateral angle—reduces the proof immediately to the acute case.
+
+13
+00:01:39,996 --> 00:01:53,280
+In the GEOMETOR G-Index, node G one-thirty-three synthesizes ten direct prerequisites across forty ancestor nodes, uniting Book One's side-angle-side congruence with Book Three's similarity of circular segments.
+
+14
+00:01:53,700 --> 00:02:09,274
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Twenty-Six in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+15
+00:02:09,274 --> 00:02:17,580
+Subscribe to at geometor, share your thoughts in the comments, and star the repository at github dot com slash geometor.

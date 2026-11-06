@@ -1,0 +1,71 @@
+1
+00:00:00,420 --> 00:00:02,117
+Book Four, Proposition Two.
+
+2
+00:00:02,117 --> 00:00:06,830
+In a given circle to inscribe a triangle equiangular with a given triangle.
+
+3
+00:00:06,830 --> 00:00:16,570
+Let A B C be the given circle, and D E F the given triangle; it is required to inscribe in the circle A B C a triangle equiangular with the triangle D E F.
+
+4
+00:00:16,990 --> 00:00:24,087
+Draw the straight line G H touching the circle A B C at A by the Porism to Three Sixteen.
+
+5
+00:00:24,087 --> 00:00:37,085
+On A H at the point A, construct the angle H A C equal to the angle D E F by One Twenty-Three; and on A G at A, construct the angle G A B equal to the angle D F E.
+
+6
+00:00:37,085 --> 00:00:38,600
+Join the chord B C.
+
+7
+00:00:39,020 --> 00:00:54,138
+Because A H touches the circle A B C and the chord A C is drawn across from the point of contact A, by Three Thirty-Two the tangent-chord angle H A C equals the angle A B C in the alternate segment of the circle.
+
+8
+00:00:54,138 --> 00:01:00,699
+Since angle H A C was constructed equal to angle D E F, angle A B C also equals angle D E F.
+
+9
+00:01:00,699 --> 00:01:08,472
+For the same reason, angle G A B equals the alternate-segment angle A C B, so angle A C B equals angle D F E.
+
+10
+00:01:08,472 --> 00:01:14,819
+Therefore, by One Thirty-Two, the remaining angle B A C equals the remaining angle E D F.
+
+11
+00:01:14,819 --> 00:01:23,162
+Thus in the given circle A B C there has been inscribed the triangle A B C equiangular with the given triangle D E F.
+
+12
+00:01:23,162 --> 00:01:24,660
+Which was to be done.
+
+13
+00:01:25,080 --> 00:01:33,888
+Proposition Four Two converts the alternate-segment theorem of Book Three into an instrument for transferring any triangular form into any circle.
+
+14
+00:01:33,888 --> 00:01:44,505
+Once a point of contact A is chosen, six congruent orientations of the inscribed triangle arise by permuting which vertex angle is placed at A and which way the other two face.
+
+15
+00:01:44,505 --> 00:01:56,208
+As De Morgan noted, combined with One One, this construction immediately inscribes an equilateral triangle in any circle—a step Euclid assumes without separate proof in Proposition Four Sixteen.
+
+16
+00:01:56,208 --> 00:02:09,480
+In the GEOMETOR G-Index, node G one hundred forty-nine unites eleven direct prerequisites across sixty-nine ancestor nodes, directly enabling the regular pentagon and icosahedron constructions in Books Four and Thirteen.
+
+17
+00:02:09,900 --> 00:02:23,186
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Four Two in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+18
+00:02:23,186 --> 00:02:29,860
+Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

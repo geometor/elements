@@ -1,0 +1,33 @@
+{
+  "prop_id": "BOOK III \u2022 PROP. 35",
+  "short_code": "III.35",
+  "g_id": "G.143",
+  "version": 2,
+  "enunciation": "If in a circle two straight lines cut one another, the rectangle contained by the segments of the one is equal to the rectangle contained by the segments of the other.",
+  "title_1080p": "III.35 \u2022 if in a circle two straight lines cut one another, the rectangle contained by the segmen...",
+  "title_short": "III.35 \u2022 if in a circle two straight lines cut one another, the rectangle contained by the segmen...",
+  "description": "\u201cIf in a circle two straight lines cut one another, the rectangle contained by the segments of the one is equal to the rectangle contained by the segments of the other.\u201d\n\u2014 Euclid's Elements, BOOK III \u2022 PROP. 35 (G.143)\n\n00:00 1 \u00b7 GIVEN: ( A B C D ), E = / A C / \u2229 / B D / \u2192 rect(/ A E /, / E C /) = rect(/ D E /, / E B /)\n00:33 2 \u00b7 CONSTRUCT: F = find_circle_center(( A B C D )), / F G / \u22a5 / A C /, / F H / \u22a5 / B D /\n00:41 3 \u00b7 CONSTRUCT: / F B /, / F C /, / F E / = segment(F, B), segment(F, C), segment(F, E)\n00:50 4 \u00b7 ASSERT: / A G / = / G C / \u2192 rect(/ A E /, / E C /) + sq(/ E G /) = sq(/ G C /)\n01:06 5 \u00b7 ASSERT: rect(/ A E /, / E C /) + sq(/ F E /) = sq(/ F C /), rect(/ D E /, / E B /) + sq(/ F E /) = sq(/ F B /)\n01:23 6 \u00b7 \u2234: rect(/ A E /, / E C /) = rect(/ D E /, / E B /)\n01:40 7 \u00b7 COMMENTARY: rect(/ A E /, / E C /) = rect(/ D E /, / E B /) = sq(R) \u2212 sq(/ F E /)\n02:00 8 \u00b7 GENEALOGY: G.79 (I.47), G.87 (II.5), G.100 (III.3) \u2192 G.143 (III.35)\n02:21 9 \u00b7 PARTICIPATE: geometor.github.io/elements/elements2/G.143/\n\nExplore the interactive Book Codex, symbolic model, and dependency tree:\n\u2022 Elements Codex (G.143): https://geometor.github.io/elements/elements2/G.143/\n\u2022 Heath Edition (III.35): https://geometor.github.io/euclid/heath/volume_I/book_iii/propositions/35/\n\u2022 GitHub: https://github.com/geometor/elements\n\nGEOMETOR \u2022 G.143 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid III.35",
+    "G.143",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_iii/propositions/35/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.143/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/35/III_35_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/35/III_35_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/35/III_35.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/35/III_35_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/35/III_35_short_thumb.png"
+  }
+}

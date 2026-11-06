@@ -1,0 +1,46 @@
+================================================================================
+YOUTUBE 1080P (16:9) TITLE
+================================================================================
+II.9 • sum of squares equal unequal • Euclid's Elements
+
+================================================================================
+YOUTUBE SHORT (9:16) TITLE
+================================================================================
+II.9 • sum of squares equal unequal • Euclid's Elements
+
+================================================================================
+DESCRIPTION
+================================================================================
+“If a segment be cut into equal and unequal segments, the squares on the unequal segments of the whole are double of the square on the half and of the square on the segment between the points of section.”
+— Euclid's Elements, BOOK II • PROP. 9 (G.91)
+
+00:00 1 · GIVEN: given / A B / cut equally at C and unequally at D
+00:19 2 · CONSTRUCT: perpendicular / C E / = / A C /, parallels / D F /, / F G /, join / A F /
+00:41 3 · ASSERT: half-right angles → ⟨ A E B ) is right, / E G / = / G F /, / F D / = / D B /
+00:57 4 · ASSERT: sq(/ E A /) = 2·sq(/ A C /) and sq(/ E F /) = 2·sq(/ C D /)
+01:13 5 · ASSERT: sq(/ A D /) + sq(/ D F /) = sq(/ A F /) = 2·(sq(/ A C /) + sq(/ C D /))
+01:29 6 · ∴: sq(/ A D /) + sq(/ D B /) = 2·(sq(/ A C /) + sq(/ C D /))
+01:45 7 · COMMENTARY: geometric algebra: (a + b)² + (a − b)² = 2(a² + b²)
+02:01 8 · GENEALOGY: G.91 dependency tree & symbolic model
+02:18 9 · PARTICIPATE: explore the GEOMETOR Elements Codex & participate
+
+Explore the interactive Book Codex, symbolic model, and dependency tree:
+• Elements Codex (G.91): https://geometor.github.io/elements/elements2/G.91/
+• Heath Edition (II.9): https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/09/
+• GitHub: https://github.com/geometor/elements
+
+GEOMETOR • G.91 • v2
+
+================================================================================
+TAGS
+================================================================================
+Euclid, Euclid's Elements, Euclid II.9, G.91, Geometry, Constructive Geometry, Compass and Straightedge, Mathematical Proof, GEOMETOR, Thomas Little Heath
+
+================================================================================
+MEDIA & CAPTIONS FILES
+================================================================================
+• 9:16 Short MP4 : II_09_short.mp4
+• 16:9 1080p MP4 : II_09_1080p.mp4
+• Closed Captions: II_09.srt
+• 16:9 Thumbnail : II_09_thumb.png
+• 9:16 Thumbnail : II_09_short_thumb.png

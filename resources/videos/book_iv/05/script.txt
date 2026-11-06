@@ -1,0 +1,19 @@
+[bell:proposition]
+[style: brisk, clear, architectural voice; steady studio cadence]
+Book Four, Proposition Five. About a given triangle to circumscribe a circle. <pause> Let A B C be the given triangle; it is required to circumscribe a circle about the triangle A B C.
+
+[bell:construction]
+[style: methodical, precise constructive cadence]
+Bisect the sides A B and A C at the points D and E by One Ten, and from D and E draw D F and E F at right angles to A B and A C. <pause> They will meet either within the triangle A B C, or on the line B C, or outside B C. Join F A, F B, and F C.
+
+[bell:insight]
+[style: luminous, deductive geometric clarity]
+Because A D equals D B, and D F is common and at right angles, by Side-Angle-Side congruence the base A F equals F B. <pause> By the exact same reasoning on side A C, C F also equals A F, so the three segments F A, F B, and F C are all equal to one another. <pause> Therefore the circle described with center F and radius F A passes through A, B, and C, and is circumscribed about the triangle A B C—with angle B A C acute when F falls inside, right when F lies on B C, and obtuse when F falls outside. Which was to be done.
+
+[bell:system]
+[style: reflective, scholarly, architectural synthesis]
+Proposition Four Five establishes the circumcenter of any triangle as the intersection of two perpendicular bisectors, unifying all three cases—acute, right, and obtuse—under Thales' semicircle theorem, Three Thirty-One. As Simson and Todhunter observed, the perpendicular bisectors of two non-collinear sides must always meet because lines perpendicular to intersecting lines cannot be parallel. <pause> In the GEOMETOR G-Index, node G one hundred fifty-seven synthesizes fourteen direct prerequisites across fifty-one ancestor nodes, directly powering the regular pentagon and golden triangle constructions of Propositions Four Ten, Eleven, and Twelve.
+
+[bell:resolve]
+[style: warm, inviting, resonant studio close]
+You can explore the three-case interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Four Five in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

@@ -1,0 +1,20 @@
+[bell:proposition] [style:brisk]
+Elements, Book three, Proposition thirty-six. <pause>
+From a point outside a circle, if a secant line cuts the circle and a tangent line touches it, the rectangle contained by the whole secant and its external segment equals the square on the tangent. <pause>
+Let point D be taken outside circle A B C, let secant D C A cut the circle at C and A, and let D B touch the circle at B. We claim that the rectangle A D by C D equals the square on tangent D B. <pause>
+
+[bell:construction] [style:brisk]
+When secant D C A passes through the center F, join radius F B from the center to the point of contact B. <pause>
+By Book three Proposition eighteen, the radius F B is perpendicular to the tangent D B, making angle F B D a right angle. <pause>
+
+[bell:insight] [style:brisk]
+Since diameter A C is bisected at the center F and extended in a straight line by C D, Book two Proposition six states that the rectangle A D by C D plus the square on F C equals the square on F D. <pause>
+Because radii F C and F B are equal, we can substitute the square on F B, so the rectangle A D by C D plus the square on F B equals the square on F D. <pause>
+By the Pythagorean theorem on right triangle F B D, the square on F B plus the square on D B also equals the square on hypotenuse F D. Subtracting the common square on F B leaves the rectangle A D by C D equal to the square on tangent D B, <pause> as was required to prove. <pause>
+
+[bell:system] [style:brisk]
+When the secant does not pass through the center, Euclid drops a perpendicular from the center to bisect chord A C and applies the Pythagorean theorem twice to reach the exact same identity. Together with Proposition thirty-five, this completes the exterior Power of a Point theorem: for any secant from D, the product A D by C D equals the square on tangent D B—and therefore any two secants from the same external point contain equal rectangles. <pause>
+In the GEOMETOR dependency graph, Proposition thirty-six unites sixty ancestor nodes across Books one, two, and three, and directly powers both its converse in Proposition thirty-seven and the golden-triangle construction for the regular pentagon in Book four Proposition ten. <pause>
+
+[bell:resolve] [style:brisk]
+Explore the interactive construction, symbolic proof, and dependency graph at geometor dot github dot io. <pause>

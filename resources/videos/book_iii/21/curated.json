@@ -1,0 +1,53 @@
+{
+  "III.21": {
+    "subtype": "theorem",
+    "args": [
+      ":g:`( A B C D ) <g1:( A B C D )>`",
+      ":g:`< B A E D ) <g1:< B A E D )>`",
+      ":g:`< B A D ) <g1:< B A D )>`",
+      ":g:`< B E D ) <g1:< B E D )>`"
+    ],
+    "returns": [],
+    "given": ":g:`( A B C D ) <g1:( A B C D )>`, :g:`< B A D ) <g1:< B A D )>`, :g:`< B E D ) <g1:< B E D )>` ∈ :g:`< B A E D ) <g1:< B A E D )>`",
+    "contract": ":g:`< B A D ) <g1:< B A D )>` :eq:`= <g1:< B A D ) = g1:< B E D )>` :g:`< B E D ) <g1:< B E D )>`",
+    "steps": [
+      [
+        "given",
+        [
+          "I.def.15",
+          "III.def.8"
+        ],
+        ":g:`( A B C D ) <g1:( A B C D )>`, :g:`< B A D ) <g1:< B A D )>`, :g:`< B E D ) <g1:< B E D )>` ∈ :g:`< B A E D ) <g1:< B A E D )>`"
+      ],
+      [
+        "construct",
+        [
+          "III.1",
+          "I.post.1"
+        ],
+        "@fn(III.1)(:g:`( A B C D ) <g1:( A B C D )>`) → :g:`F <g1:F>`, @fn(I.post.1)(:g:`B <g1:B>`, :g:`F <g1:F>`) → :g:`/ B F / <g1:/ B F />`, @fn(I.post.1)(:g:`F <g1:F>`, :g:`D <g1:D>`) → :g:`/ F D / <g1:/ F D />`"
+      ],
+      [
+        "assert",
+        [
+          "III.20"
+        ],
+        ":g:`< B F D ) <g1:< B F D )>` at center :g:`F <g1:F>`, :g:`< B A D ) <g1:< B A D )>` on arc with base :g:`( B C D ) <g1:( B C D )>` → :g:`< B F D ) <g1:< B F D )>` = 2 · :g:`< B A D ) <g1:< B A D )>`"
+      ],
+      [
+        "assert",
+        [
+          "III.20"
+        ],
+        ":g:`< B F D ) <g1:< B F D )>` at center :g:`F <g1:F>`, :g:`< B E D ) <g1:< B E D )>` on arc with base :g:`( B C D ) <g1:( B C D )>` → :g:`< B F D ) <g1:< B F D )>` = 2 · :g:`< B E D ) <g1:< B E D )>`"
+      ],
+      [
+        "conclude",
+        [
+          "I.cn.1"
+        ],
+        ":g:`< B A D ) <g1:< B A D )>` :eq:`= <g1:< B A D ) = g1:< B E D )>` :g:`< B E D ) <g1:< B E D )>`"
+      ]
+    ]
+  }
+}

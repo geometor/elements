@@ -1,0 +1,33 @@
+WEBVTT
+
+1
+00:00:00.420 --> 00:00:03.235
+Euclid's Elements, Book One, Proposition Twenty.
+
+2
+00:00:03.235 --> 00:00:07.751
+In any triangle, the sum of any two sides is greater than the remaining side.
+
+3
+00:00:07.751 --> 00:00:13.850
+Given triangle A B C, we prove that any two of its sides taken together are greater than the third side.
+
+4
+00:00:14.270 --> 00:00:21.760
+Extend side B A to point D so that segment A D equals side A C, and construct segment D C.
+
+5
+00:00:22.180 --> 00:00:28.265
+Since A D equals A C in isosceles triangle A D C, base angle A D C equals angle A C D.
+
+6
+00:00:28.265 --> 00:00:35.836
+Because the whole angle B C D is greater than its part A C D, angle B C D is also greater than angle A D C.
+
+7
+00:00:35.836 --> 00:00:43.195
+In triangle D B C, the greater angle B C D is subtended by the greater side, so D B is greater than B C.
+
+8
+00:00:43.195 --> 00:00:54.940
+Since D B is the sum of B A and A D, and A D equals A C, sides B A and A C together are greater than B C, and similarly for the other pairs, as was required to prove.

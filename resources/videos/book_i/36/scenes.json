@@ -1,0 +1,238 @@
+[
+  {
+    "bell": "proposition",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 36",
+        "g_id": "G.65",
+        "folio": "Folio 0345 • p. 331",
+        "enunciation": "Parallelograms which are on equal bases and in the same parallels are equal to one another.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0345.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0345.g1.png",
+        "step_num": 1,
+        "total_steps": 6,
+        "step_kind": "GIVEN",
+        "symbolic": "< A B C D >, < E F G H > (/ B C / = / F G /, / A H / ∥ / B G /)",
+        "clause_html": "<span class=\"g-tok\">&lt; A B C D &gt;</span>, <span class=\"g-tok\">&lt; E F G H &gt;</span> (<span class=\"g-tok\">/ B C /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ F G /</span>, <span class=\"g-tok\">/ A H /</span> ∥ <span class=\"g-tok\">/ B G /</span>)",
+        "just_id": "GIVEN",
+        "just_title": "prove: < A B C D > = < E F G H >",
+        "visible_ids": [
+          "el-poly-ABCD", "el-poly-EFGH",
+          "el-seg-AH", "el-seg-AD", "el-seg-DE", "el-seg-EH",
+          "el-seg-BG", "el-seg-BC", "el-seg-CF", "el-seg-FG",
+          "el-seg-AB", "el-seg-DC", "el-seg-EF", "el-seg-HG",
+          "hl-poly-ABCD", "hl-poly-EFGH", "hl-seg-AH", "hl-seg-BG", "hl-seg-BC", "hl-seg-FG",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E", "el-pt-F", "el-pt-G", "el-pt-H",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E", "lbl-F", "lbl-G", "lbl-H"
+        ],
+        "active_ids": [
+          "hl-poly-ABCD", "hl-poly-EFGH", "hl-seg-AH", "hl-seg-BG",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E", "el-pt-F", "el-pt-G", "el-pt-H",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E", "lbl-F", "lbl-G", "lbl-H"
+        ],
+        "equal_ids": [
+          "hl-seg-BC", "hl-seg-FG"
+        ],
+        "tick_ids": [
+          "hl-seg-BC", "hl-seg-FG"
+        ]
+      }
+    ]
+  },
+  {
+    "bell": "construction",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 36",
+        "g_id": "G.65",
+        "folio": "Folio 0345 • p. 331",
+        "enunciation": "Parallelograms which are on equal bases and in the same parallels are equal to one another.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0345.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0345.g1.png",
+        "step_num": 2,
+        "total_steps": 6,
+        "step_kind": "CONSTRUCT",
+        "symbolic": "segment(B, E) → / B E /, segment(C, H) → / C H /",
+        "clause_html": "<span class=\"fn-tok\">segment</span>(<span class=\"g-tok\">B</span>, <span class=\"g-tok\">E</span>) → <span class=\"g-tok\">/ B E /</span>, <span class=\"fn-tok\">segment</span>(<span class=\"g-tok\">C</span>, <span class=\"g-tok\">H</span>) → <span class=\"g-tok\">/ C H /</span>",
+        "just_id": "G.14 • I.Post.1",
+        "just_title": "segment",
+        "visible_ids": [
+          "el-poly-ABCD", "el-poly-EFGH",
+          "el-seg-AH", "el-seg-AD", "el-seg-DE", "el-seg-EH",
+          "el-seg-BG", "el-seg-BC", "el-seg-CF", "el-seg-FG",
+          "el-seg-AB", "el-seg-DC", "el-seg-EF", "el-seg-HG",
+          "el-seg-BE", "el-seg-CH",
+          "hl-seg-BE", "hl-seg-CH", "hl-seg-BC", "hl-seg-FG",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E", "el-pt-F", "el-pt-G", "el-pt-H",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E", "lbl-F", "lbl-G", "lbl-H"
+        ],
+        "active_ids": [
+          "hl-seg-BE", "hl-seg-CH",
+          "el-pt-B", "el-pt-C", "el-pt-E", "el-pt-H",
+          "lbl-B", "lbl-C", "lbl-E", "lbl-H"
+        ],
+        "equal_ids": [
+          "hl-seg-BC", "hl-seg-FG"
+        ],
+        "tick_ids": [
+          "hl-seg-BC", "hl-seg-FG"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 36",
+        "g_id": "G.65",
+        "folio": "Folio 0345 • p. 331",
+        "enunciation": "Parallelograms which are on equal bases and in the same parallels are equal to one another.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0345.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0345.g1.png",
+        "step_num": 3,
+        "total_steps": 6,
+        "step_kind": "ASSERT",
+        "symbolic": "/ B C / = / F G /, / F G / = / E H / → / B C / = / E H /",
+        "clause_html": "<span class=\"g-tok\">/ B C /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ F G /</span>, <span class=\"g-tok\">/ F G /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ E H /</span> → <span class=\"g-tok\">/ B C /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ E H /</span>",
+        "just_id": "G.62 • I.34, G.16 • I.C.N.1",
+        "just_title": "equal_transitive",
+        "visible_ids": [
+          "el-poly-ABCD", "el-poly-EFGH",
+          "el-seg-AH", "el-seg-AD", "el-seg-DE", "el-seg-EH",
+          "el-seg-BG", "el-seg-BC", "el-seg-CF", "el-seg-FG",
+          "el-seg-AB", "el-seg-DC", "el-seg-EF", "el-seg-HG",
+          "el-seg-BE", "el-seg-CH",
+          "hl-poly-EFGH", "hl-seg-BC", "hl-seg-FG", "hl-seg-EH",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E", "el-pt-F", "el-pt-G", "el-pt-H",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E", "lbl-F", "lbl-G", "lbl-H"
+        ],
+        "active_ids": [
+          "hl-poly-EFGH",
+          "el-pt-E", "el-pt-F", "el-pt-G", "el-pt-H",
+          "lbl-E", "lbl-F", "lbl-G", "lbl-H"
+        ],
+        "equal_ids": [
+          "hl-seg-BC", "hl-seg-FG", "hl-seg-EH"
+        ],
+        "tick_ids": [
+          "hl-seg-BC", "hl-seg-FG", "hl-seg-EH"
+        ]
+      }
+    ]
+  },
+  {
+    "bell": "insight",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 36",
+        "g_id": "G.65",
+        "folio": "Folio 0345 • p. 331",
+        "enunciation": "Parallelograms which are on equal bases and in the same parallels are equal to one another.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0345.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0345.g1.png",
+        "step_num": 4,
+        "total_steps": 6,
+        "step_kind": "ASSERT",
+        "symbolic": "/ B C / = / E H /, / B C / ∥ / E H / → / E B / = / H C /, / E B / ∥ / H C / → < E B C H >",
+        "clause_html": "<span class=\"g-tok\">/ B C /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ E H /</span>, <span class=\"g-tok\">/ B C /</span> ∥ <span class=\"g-tok\">/ E H /</span> → <span class=\"g-tok\">/ E B /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ H C /</span>, <span class=\"g-tok\">/ E B /</span> ∥ <span class=\"g-tok\">/ H C /</span> → <span class=\"g-tok\">&lt; E B C H &gt;</span>",
+        "just_id": "G.60 • I.33, G.62 • I.34",
+        "just_title": "join_equal_parallels",
+        "visible_ids": [
+          "el-poly-EBCH",
+          "el-seg-AH", "el-seg-AD", "el-seg-DE", "el-seg-EH",
+          "el-seg-BG", "el-seg-BC", "el-seg-CF", "el-seg-FG",
+          "el-seg-AB", "el-seg-DC", "el-seg-EF", "el-seg-HG",
+          "el-seg-BE", "el-seg-CH",
+          "hl-poly-EBCH", "hl-seg-BC", "hl-seg-EH", "hl-seg-BE", "hl-seg-CH",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E", "el-pt-F", "el-pt-G", "el-pt-H",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E", "lbl-F", "lbl-G", "lbl-H"
+        ],
+        "active_ids": [
+          "hl-poly-EBCH",
+          "el-pt-B", "el-pt-C", "el-pt-E", "el-pt-H",
+          "lbl-B", "lbl-C", "lbl-E", "lbl-H"
+        ],
+        "equal_ids": [
+          "hl-seg-BC", "hl-seg-EH", "hl-seg-BE", "hl-seg-CH"
+        ],
+        "tick_ids": [
+          "hl-seg-BC", "hl-seg-EH"
+        ],
+        "tick_2_ids": [
+          "hl-seg-BE", "hl-seg-CH"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 36",
+        "g_id": "G.65",
+        "folio": "Folio 0345 • p. 331",
+        "enunciation": "Parallelograms which are on equal bases and in the same parallels are equal to one another.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0345.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0345.g1.png",
+        "step_num": 5,
+        "total_steps": 6,
+        "step_kind": "ASSERT",
+        "symbolic": "< A B C D > = < E B C H >, < E F G H > = < E B C H >",
+        "clause_html": "<span class=\"g-tok\">&lt; A B C D &gt;</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; E B C H &gt;</span>, <span class=\"g-tok\">&lt; E F G H &gt;</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; E B C H &gt;</span>",
+        "just_id": "G.64 • I.35",
+        "just_title": "parallelograms_same_base",
+        "visible_ids": [
+          "el-poly-ABCD", "el-poly-EFGH", "el-poly-EBCH",
+          "el-seg-AH", "el-seg-AD", "el-seg-DE", "el-seg-EH",
+          "el-seg-BG", "el-seg-BC", "el-seg-CF", "el-seg-FG",
+          "el-seg-AB", "el-seg-DC", "el-seg-EF", "el-seg-HG",
+          "el-seg-BE", "el-seg-CH",
+          "hl-poly-EBCH", "hl-poly-ABCD", "hl-poly-EFGH", "hl-seg-BC", "hl-seg-EH",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E", "el-pt-F", "el-pt-G", "el-pt-H",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E", "lbl-F", "lbl-G", "lbl-H"
+        ],
+        "active_ids": [
+          "hl-poly-EBCH", "hl-seg-BC", "hl-seg-EH",
+          "el-pt-B", "el-pt-C", "el-pt-E", "el-pt-H",
+          "lbl-B", "lbl-C", "lbl-E", "lbl-H"
+        ],
+        "equal_ids": [
+          "hl-poly-ABCD", "hl-poly-EFGH"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 36",
+        "g_id": "G.65",
+        "folio": "Folio 0345 • p. 331",
+        "enunciation": "Parallelograms which are on equal bases and in the same parallels are equal to one another.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0345.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0345.g1.png",
+        "step_num": 6,
+        "total_steps": 6,
+        "step_kind": "∴",
+        "symbolic": "< A B C D > = < E B C H >, < E F G H > = < E B C H > → < A B C D > = < E F G H >",
+        "clause_html": "<span class=\"g-tok\">&lt; A B C D &gt;</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; E B C H &gt;</span>, <span class=\"g-tok\">&lt; E F G H &gt;</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; E B C H &gt;</span> → <span class=\"g-tok\">&lt; A B C D &gt;</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; E F G H &gt;</span>",
+        "just_id": "G.16 • I.C.N.1",
+        "just_title": "equal_transitive",
+        "visible_ids": [
+          "el-poly-ABCD", "el-poly-EFGH",
+          "el-seg-AH", "el-seg-AD", "el-seg-DE", "el-seg-EH",
+          "el-seg-BG", "el-seg-BC", "el-seg-CF", "el-seg-FG",
+          "el-seg-AB", "el-seg-DC", "el-seg-EF", "el-seg-HG",
+          "el-seg-BE", "el-seg-CH",
+          "hl-poly-ABCD", "hl-poly-EFGH", "hl-seg-BC", "hl-seg-FG",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E", "el-pt-F", "el-pt-G", "el-pt-H",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E", "lbl-F", "lbl-G", "lbl-H"
+        ],
+        "active_ids": [
+          "hl-seg-BC", "hl-seg-FG",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E", "el-pt-F", "el-pt-G", "el-pt-H",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E", "lbl-F", "lbl-G", "lbl-H"
+        ],
+        "equal_ids": [
+          "hl-poly-ABCD", "hl-poly-EFGH"
+        ],
+        "tick_ids": [
+          "hl-seg-BC", "hl-seg-FG"
+        ]
+      }
+    ]
+  }
+]

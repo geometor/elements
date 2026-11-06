@@ -1,0 +1,203 @@
+[
+  {
+    "bell": "proposition",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 31",
+        "g_id": "G.58",
+        "folio": "Folio 0329–0330 • p. 315",
+        "enunciation": "Through a given point to draw a straight line parallel to a given straight line.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0330.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0330.g1.png",
+        "step_num": 1,
+        "total_steps": 6,
+        "step_kind": "GIVEN",
+        "symbolic": "A, / B C /",
+        "clause_html": "<span class=\"g-tok\">A</span>, <span class=\"g-tok\">/ B C /</span>",
+        "just_id": "GIVEN",
+        "just_title": "construct: / E F / ∥ / B C / (A ∈ / E F /)",
+        "visible_ids": [
+          "line-B-C",
+          "segment-B-C",
+          "highlight-segment-B-C",
+          "A", "B", "C",
+          "label-A", "label-B", "label-C"
+        ],
+        "active_ids": [
+          "highlight-segment-B-C",
+          "A", "B", "C",
+          "label-A", "label-B", "label-C"
+        ],
+        "equal_ids": []
+      }
+    ]
+  },
+  {
+    "bell": "construction",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 31",
+        "g_id": "G.58",
+        "folio": "Folio 0329–0330 • p. 315",
+        "enunciation": "Through a given point to draw a straight line parallel to a given straight line.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0330.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0330.g1.png",
+        "step_num": 2,
+        "total_steps": 6,
+        "step_kind": "CONSTRUCT",
+        "symbolic": "point(/ B C /) → D, segment(A, D) → / A D /",
+        "clause_html": "<span class=\"fn-tok\">point</span>(<span class=\"g-tok\">/ B C /</span>) → <span class=\"g-tok\">D</span>, <span class=\"fn-tok\">segment</span>(<span class=\"g-tok\">A</span>, <span class=\"g-tok\">D</span>) → <span class=\"g-tok\">/ A D /</span>",
+        "just_id": "G.14 • I.Post.1",
+        "just_title": "segment",
+        "visible_ids": [
+          "line-B-C", "line-A-D",
+          "segment-B-C", "segment-A-D",
+          "highlight-segment-A-D",
+          "A", "B", "C", "D",
+          "label-A", "label-B", "label-C", "label-D"
+        ],
+        "active_ids": [
+          "highlight-segment-A-D",
+          "A", "D",
+          "label-A", "label-D"
+        ],
+        "equal_ids": []
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 31",
+        "g_id": "G.58",
+        "folio": "Folio 0329–0330 • p. 315",
+        "enunciation": "Through a given point to draw a straight line parallel to a given straight line.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0330.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0330.g1.png",
+        "step_num": 3,
+        "total_steps": 6,
+        "step_kind": "CONSTRUCT",
+        "symbolic": "copy_angle(/ D A /, A, < A D C )) → < D A E ) (< D A E ) = < A D C ))",
+        "clause_html": "<span class=\"fn-tok\">copy_angle</span>(<span class=\"g-tok\">/ D A /</span>, <span class=\"g-tok\">A</span>, <span class=\"g-tok\">&lt; A D C )</span>) → <span class=\"g-tok\">&lt; D A E )</span> (<span class=\"g-tok\">&lt; D A E )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; A D C )</span>)",
+        "just_id": "G.48 • I.23",
+        "just_title": "copy_angle",
+        "visible_ids": [
+          "line-B-C", "line-A-D",
+          "segment-B-C", "segment-A-D", "segment-E-A",
+          "highlight-segment-E-A",
+          "wedge-D-A-E", "wedge-A-D-C", "arc-D-A-E", "arc-A-D-C",
+          "A", "B", "C", "D", "E",
+          "label-A", "label-B", "label-C", "label-D", "label-E"
+        ],
+        "active_ids": [
+          "highlight-segment-E-A",
+          "A", "E",
+          "label-A", "label-E"
+        ],
+        "equal_ids": [
+          "wedge-D-A-E", "wedge-A-D-C", "arc-D-A-E", "arc-A-D-C"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 31",
+        "g_id": "G.58",
+        "folio": "Folio 0329–0330 • p. 315",
+        "enunciation": "Through a given point to draw a straight line parallel to a given straight line.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0330.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0330.g1.png",
+        "step_num": 4,
+        "total_steps": 6,
+        "step_kind": "CONSTRUCT",
+        "symbolic": "extend(/ E A /) → / A F /",
+        "clause_html": "<span class=\"fn-tok\">extend</span>(<span class=\"g-tok\">/ E A /</span>) → <span class=\"g-tok\">/ A F /</span>",
+        "just_id": "G.18 • I.Post.2",
+        "just_title": "extend",
+        "visible_ids": [
+          "line-E-F", "line-B-C", "line-A-D",
+          "segment-E-F", "segment-E-A", "segment-A-F", "segment-B-C", "segment-A-D",
+          "highlight-segment-A-F",
+          "wedge-D-A-E", "wedge-A-D-C", "arc-D-A-E", "arc-A-D-C",
+          "A", "B", "C", "D", "E", "F",
+          "label-A", "label-B", "label-C", "label-D", "label-E", "label-F"
+        ],
+        "active_ids": [
+          "highlight-segment-A-F",
+          "A", "F",
+          "label-A", "label-F"
+        ],
+        "equal_ids": [
+          "wedge-D-A-E", "wedge-A-D-C", "arc-D-A-E", "arc-A-D-C"
+        ]
+      }
+    ]
+  },
+  {
+    "bell": "insight",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 31",
+        "g_id": "G.58",
+        "folio": "Folio 0329–0330 • p. 315",
+        "enunciation": "Through a given point to draw a straight line parallel to a given straight line.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0330.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0330.g1.png",
+        "step_num": 5,
+        "total_steps": 6,
+        "step_kind": "ASSERT",
+        "symbolic": "/ A D / ∩ / B C /, / E F / (< D A E ) = < A D C )) → / E F / ∥ / B C /",
+        "clause_html": "<span class=\"g-tok\">/ A D /</span> ∩ <span class=\"g-tok\">/ B C /</span>, <span class=\"g-tok\">/ E F /</span> (<span class=\"g-tok\">&lt; D A E )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; A D C )</span>) → <span class=\"g-tok\">/ E F /</span> ∥ <span class=\"g-tok\">/ B C /</span>",
+        "just_id": "G.53 • I.27",
+        "just_title": "alternate_angles_parallel",
+        "visible_ids": [
+          "line-E-F", "line-B-C", "line-A-D",
+          "segment-E-F", "segment-B-C", "segment-A-D",
+          "highlight-segment-A-D",
+          "wedge-D-A-E", "wedge-A-D-C", "arc-D-A-E", "arc-A-D-C",
+          "A", "B", "C", "D", "E", "F",
+          "label-A", "label-B", "label-C", "label-D", "label-E", "label-F"
+        ],
+        "active_ids": [
+          "highlight-segment-A-D",
+          "A", "D",
+          "label-A", "label-D"
+        ],
+        "equal_ids": [
+          "wedge-D-A-E", "wedge-A-D-C", "arc-D-A-E", "arc-A-D-C"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 31",
+        "g_id": "G.58",
+        "folio": "Folio 0329–0330 • p. 315",
+        "enunciation": "Through a given point to draw a straight line parallel to a given straight line.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0330.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0330.g1.png",
+        "step_num": 6,
+        "total_steps": 6,
+        "step_kind": "∴",
+        "symbolic": "A ∈ / E F /, / E F / ∥ / B C /",
+        "clause_html": "<span class=\"g-tok\">A</span> ∈ <span class=\"g-tok\">/ E F /</span>, <span class=\"g-tok\">/ E F /</span> ∥ <span class=\"g-tok\">/ B C /</span>",
+        "just_id": "G.53 • I.27",
+        "just_title": "alternate_angles_parallel",
+        "visible_ids": [
+          "line-E-F", "line-B-C", "line-A-D",
+          "segment-E-F", "segment-B-C", "segment-A-D",
+          "highlight-segment-E-F", "highlight-segment-B-C",
+          "wedge-D-A-E", "wedge-A-D-C", "arc-D-A-E", "arc-A-D-C",
+          "A", "B", "C", "D", "E", "F",
+          "label-A", "label-B", "label-C", "label-D", "label-E", "label-F"
+        ],
+        "active_ids": [
+          "highlight-segment-E-F", "highlight-segment-B-C",
+          "A", "B", "C", "E", "F",
+          "label-A", "label-B", "label-C", "label-E", "label-F"
+        ],
+        "equal_ids": [
+          "wedge-D-A-E", "wedge-A-D-C", "arc-D-A-E", "arc-A-D-C"
+        ]
+      }
+    ]
+  }
+]

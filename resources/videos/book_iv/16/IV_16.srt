@@ -1,0 +1,63 @@
+1
+00:00:00,420 --> 00:00:02,488
+Book Four, Proposition Sixteen.
+
+2
+00:00:02,488 --> 00:00:09,294
+In a given circle to inscribe a fifteen-angled figure which shall be both equilateral and equiangular.
+
+3
+00:00:09,294 --> 00:00:19,570
+Let A B C D be the given circle; it is required to inscribe in the circle A B C D a fifteen-angled figure which shall be both equilateral and equiangular.
+
+4
+00:00:19,990 --> 00:00:33,812
+In the circle A B C D, from vertex A, inscribe a side A C of the equilateral triangle inscribed in it by Four Two, and a side A B of an equilateral pentagon by Four Eleven.
+
+5
+00:00:33,812 --> 00:00:40,080
+Then bisect the arc B C at E by Three Thirty, and join the chords B E and E C.
+
+6
+00:00:40,500 --> 00:00:45,701
+Suppose the circumference of the circle A B C D divided into fifteen equal parts.
+
+7
+00:00:45,701 --> 00:01:00,596
+Because the equilateral triangle divides the circle into thirds, the arc A B C contains five of those fifteen parts; and because the regular pentagon divides the circle into fifths, the arc A B contains three of those fifteen parts.
+
+8
+00:01:00,596 --> 00:01:04,834
+Therefore the remainder, arc B C, contains two of the equal parts.
+
+9
+00:01:04,834 --> 00:01:11,126
+Since arc B C is bisected at E, each of the arcs B E and E C is one-fifteenth of the whole circle.
+
+10
+00:01:11,126 --> 00:01:24,032
+If therefore we join B E and E C and fit straight lines equal to them continuously around the circle A B C D, a fifteen-angled figure which is both equilateral and equiangular has been inscribed in it.
+
+11
+00:01:24,032 --> 00:01:25,380
+Which was to be done.
+
+12
+00:01:25,800 --> 00:01:36,263
+Proposition Four Sixteen crowns Book Four by combining the equilateral triangle and the golden-ratio pentagon through the harmonic identity one-third minus one-fifth equals two-fifteenths.
+
+13
+00:01:36,263 --> 00:01:48,229
+As Proclus records, ancient astronomers prized the fifteen-angled figure because its central angle of twenty-four degrees measured the obliquity of the ecliptic—the tilt between the celestial equator and the zodiac.
+
+14
+00:01:48,229 --> 00:02:12,440
+Together with continual arc bisection, Euclid's constructions of the three-gon, four-gon, five-gon, and fifteen-gon exhausted all known constructible regular polygons for over two millennia, until Carl Friedrich Gauss proved in seventeen ninety-six that a regular n-gon is constructible by straightedge and compass if and only if its odd prime factors are distinct Fermat primes—beginning with three and five, whose product is fifteen.
+
+15
+00:02:12,860 --> 00:02:27,513
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Four Sixteen in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+16
+00:02:27,513 --> 00:02:34,740
+Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

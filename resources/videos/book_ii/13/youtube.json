@@ -1,0 +1,33 @@
+{
+  "prop_id": "BOOK II \u2022 PROP. 13",
+  "short_code": "II.13",
+  "g_id": "G.95",
+  "version": 2,
+  "enunciation": "In acute-angled triangles the square on the side subtending the acute angle is less than the squares on the sides containing the acute angle by twice the rectangle contained by one of the sides about the acute angle, namely that on which the perpendicular falls, and the segment cut off within by the perpendicular towards the acute angle.",
+  "title_1080p": "II.13 \u2022 law of cosines acute \u2022 Euclid's Elements",
+  "title_short": "II.13 \u2022 law of cosines acute \u2022 Euclid's Elements",
+  "description": "\u201cIn acute-angled triangles the square on the side subtending the acute angle is less than the squares on the sides containing the acute angle by twice the rectangle contained by one of the sides about the acute angle, namely that on which the perpendicular falls, and the segment cut off within by the perpendicular towards the acute angle.\u201d\n\u2014 Euclid's Elements, BOOK II \u2022 PROP. 13 (G.95)\n\n00:00 1 \u00b7 GIVEN: given acute triangle \u27e8 A B C \u27e9 with \u27e8 A B C ) \u27e8 \u221f\n00:25 2 \u00b7 CONSTRUCT: drop altitude / A D / \u22a5 / B C /\n00:34 3 \u00b7 ASSERT: sq(/ C B /) + sq(/ B D /) = 2\u00b7rect(/ C B /, / B D /) + sq(/ D C /)\n00:42 4 \u00b7 ASSERT: add sq(/ D A /) to both sides\n00:56 5 \u00b7 ASSERT: right triangles \u27e8 A B D \u27e9 and \u27e8 A D C \u27e9 by I.47\n01:09 6 \u00b7 \u2234: sq(/ A C /) + 2\u00b7rect(/ C B /, / B D /) = sq(/ C B /) + sq(/ B A /)\n01:22 7 \u00b7 COMMENTARY: Euclidean Law of Cosines (acute): c\u00b2 + 2ap = a\u00b2 + b\u00b2\n01:39 8 \u00b7 GENEALOGY: G.95 dependency tree & symbolic model\n01:57 9 \u00b7 PARTICIPATE: explore the GEOMETOR Elements Codex & participate\n\nExplore the interactive Book Codex, symbolic model, and dependency tree:\n\u2022 Elements Codex (G.95): https://geometor.github.io/elements/elements2/G.95/\n\u2022 Heath Edition (II.13): https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/13/\n\u2022 GitHub: https://github.com/geometor/elements\n\nGEOMETOR \u2022 G.95 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid II.13",
+    "G.95",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/13/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.95/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_ii/13/II_13_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_ii/13/II_13_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_ii/13/II_13.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_ii/13/II_13_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_ii/13/II_13_short_thumb.png"
+  }
+}

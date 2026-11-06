@@ -1,0 +1,62 @@
+{
+  "IV.4": {
+    "subtype": "problem",
+    "args": [
+      ":g:`< A B C > <g1:< A B C >>`"
+    ],
+    "returns": [
+      ":g:`( E F G ) <g1:( E F G )>`"
+    ],
+    "given": ":g:`< A B C > <g1:< A B C >>`",
+    "contract": ":g:`( E F G ) <g1:( E F G )>` is :term:`inscribed in <G.153>` :g:`< A B C > <g1:< A B C >>`",
+    "steps": [
+      [
+        "given",
+        [
+          "I.def.15",
+          "I.def.19",
+          "IV.def.5"
+        ],
+        ":g:`< A B C > <g1:< A B C >>`"
+      ],
+      [
+        "construct",
+        [
+          "I.9"
+        ],
+        "@fn(I.9)(:g:`< A B C ) <g1:< A B C )>`, :g:`< A C B ) <g1:< A C B )>`) → bisectors :g:`/ B D / <g1:/ B D />`, :g:`/ C D / <g1:/ C D />` meeting at :g:`D <g1:D>`"
+      ],
+      [
+        "construct",
+        [
+          "I.12",
+          "I.def.10"
+        ],
+        "@fn(I.12)(:g:`D <g1:D>`, :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ C A / <g1:/ C A />`) → :g:`/ D E / <g1:/ D E />` ⊥ :g:`/ A B / <g1:/ A B />`, :g:`/ D F / <g1:/ D F />` ⊥ :g:`/ B C / <g1:/ B C />`, :g:`/ D G / <g1:/ D G />` ⊥ :g:`/ C A / <g1:/ C A />`"
+      ],
+      [
+        "assert",
+        [
+          "I.26",
+          "I.cn.1"
+        ],
+        "In :g:`< E B D > <g1:< E B D >>`, :g:`< F B D > <g1:< F B D >>`: :g:`< A B D ) <g1:< A B D )>` :eq:`= <g1:< A B D ) = g1:< C B D )>` :g:`< C B D ) <g1:< C B D )>`, right :g:`< B E D ) <g1:< B E D )>` :eq:`= <g1:< B E D ) = g1:< B F D )>` :g:`< B F D ) <g1:< B F D )>`, :g:`/ B D / <g1:/ B D />` common → :g:`/ D E / <g1:/ D E />` :eq:`= <g1:/ D E / = g1:/ D F />` :g:`/ D F / <g1:/ D F />`; similarly :g:`/ D G / <g1:/ D G />` :eq:`= <g1:/ D G / = g1:/ D F />` :g:`/ D F / <g1:/ D F />`, so :g:`/ D E / <g1:/ D E />` :eq:`= <g1:/ D E / = g1:/ D F / = g1:/ D G />` :g:`/ D F / <g1:/ D F />` :eq:`= <g1:/ D E / = g1:/ D F / = g1:/ D G />` :g:`/ D G / <g1:/ D G />`"
+      ],
+      [
+        "assert",
+        [
+          "III.16"
+        ],
+        "Angles at :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>` are right → circle with center :g:`D <g1:D>` and radius :g:`/ D E / <g1:/ D E />` passes through :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`G <g1:G>` and touches :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ C A / <g1:/ C A />` without cutting them"
+      ],
+      [
+        "conclude",
+        [
+          "I.post.3",
+          "IV.def.5"
+        ],
+        "@fn(I.post.3)(:g:`D <g1:D>`, :g:`E <g1:E>`) → :g:`( E F G ) <g1:( E F G )>` is inscribed in :g:`< A B C > <g1:< A B C >>`"
+      ]
+    ]
+  }
+}

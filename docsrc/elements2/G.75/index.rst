@@ -10,8 +10,9 @@
 :categories: problem, construction, plane-geometry
 :category: problem, construction, plane-geometry
 :tags: book-i, point, segment, angle, quadrilateral, straight-line, square, right-angle, parallel-straight-lines, plane-angle, equilateral-triangle, equality
-:dependencies: G.1, G.4, G.13, G.21, G.22, G.33, G.34, G.52, G.56, G.58, G.62, G.63
+:dependencies: G.1, G.4, G.13, G.16, G.21, G.22, G.33, G.34, G.52, G.56, G.58, G.62, G.63
 :excerpt: Construct a square on a given segment.
+:youtube_id: LAWqbbTl7ms
 
 .. _G.75:
 .. _I.46:
@@ -27,9 +28,9 @@ G.75 construct a square on a segment
 
 .. signature:: problem
 
-   | :fn:`square_on_segment <G.75>`\ (:g:`/ A B / <g1:/ A B />`) → :g:`/ B E / <g1:/ B E />`
+   | :fn:`square_on_segment <G.75>`\ (:g:`/ A B / <g1:/ A B />`) → :g:`< A D E B > <g1:< A D E B >>`
    | **given** :g:`/ A B / <g1:/ A B />`
-   | **construct** it is a square; and it is described on :g:`/ A B / <g1:/ A B />`
+   | **construct** :g:`< A D E B > <g1:< A D E B >>` (:g:`/ B A / <g1:/ B A />` :eq:`= <g1:/ B A / = g1:/ A D / = g1:/ D E / = g1:/ E B />` :g:`/ A D / <g1:/ A D />` :eq:`= <g1:/ B A / = g1:/ A D / = g1:/ D E / = g1:/ E B />` :g:`/ D E / <g1:/ D E />` :eq:`= <g1:/ B A / = g1:/ A D / = g1:/ D E / = g1:/ E B />` :g:`/ E B / <g1:/ E B />`, :g:`< B A D ) <g1:< B A D )>` :eq:`= <g1:< B A D ) = g1:< A D E ) = g1:< A B E ) = g1:< B E D )>` :g:`< A D E ) <g1:< A D E )>` :eq:`= <g1:< B A D ) = g1:< A D E ) = g1:< A B E ) = g1:< B E D )>` :g:`< A B E ) <g1:< A B E )>` :eq:`= <g1:< B A D ) = g1:< A D E ) = g1:< A B E ) = g1:< B E D )>` :g:`< B E D ) <g1:< B E D )>` = ∟)
 
 .. picture:: g1.svg
    :alt: Folio 0361 Figure 1 - Proposition 46
@@ -40,75 +41,23 @@ G.75 construct a square on a segment
 
 .. step:: construct
 
-   :fn:`perpendicular_at <G.34>`\ (:g:`/ A B / <g1:/ A B />`, :g:`A <g1:A>`) → :g:`/ A C / <g1:/ A C />`
+   :fn:`perpendicular_at <G.34>`\ (:g:`/ A B / <g1:/ A B />`, :g:`A <g1:A>`) → :g:`/ A C / <g1:/ A C />` ⊥ :g:`/ A B / <g1:/ A B />`, :fn:`cut_equal_segment <G.21>`\ (:g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />`) → :g:`/ A D / <g1:/ A D />` (:eq:`= <g1:/ A D / = g1:/ A B />` :g:`/ A B / <g1:/ A B />`)
 
 .. step:: construct
 
-   :fn:`cut_equal_segment <G.21>`\ (:g:`/ A B / <g1:/ A B />`) → :g:`/ A D / <g1:/ A D />` (:eq:`equal <g1:/ A D / = g1:/ A B />`)
+   :fn:`parallel_line <G.58>`\ (:g:`D <g1:D>`, :g:`/ A B / <g1:/ A B />`) → :g:`/ D E / <g1:/ D E />` ∥ :g:`/ A B / <g1:/ A B />`, :fn:`parallel_line <G.58>`\ (:g:`B <g1:B>`, :g:`/ A D / <g1:/ A D />`) → :g:`/ B E / <g1:/ B E />` ∥ :g:`/ A D / <g1:/ A D />` → :g:`< A D E B > <g1:< A D E B >>`
 
-.. step:: construct
+.. step:: assert ∵ parallelogram_properties, equal_transitive <G.62, G.16>
 
-   :fn:`parallel_line <G.58>`\ (:g:`D <g1:D>`, :g:`/ A B / <g1:/ A B />`) → :g:`/ D E / <g1:/ D E />`
+   :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ D E /; g1:/ A D / = g1:/ B E />` :g:`/ D E / <g1:/ D E />`, :g:`/ A D / <g1:/ A D />` :eq:`= <g1:/ A B / = g1:/ D E /; g1:/ A D / = g1:/ B E />` :g:`/ B E / <g1:/ B E />`, :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ A D />` :g:`/ A D / <g1:/ A D />` → :g:`/ B A / <g1:/ B A />` :eq:`= <g1:/ B A / = g1:/ A D / = g1:/ D E / = g1:/ E B />` :g:`/ A D / <g1:/ A D />` :eq:`= <g1:/ B A / = g1:/ A D / = g1:/ D E / = g1:/ E B />` :g:`/ D E / <g1:/ D E />` :eq:`= <g1:/ B A / = g1:/ A D / = g1:/ D E / = g1:/ E B />` :g:`/ E B / <g1:/ E B />`
 
-.. step:: construct
+.. step:: assert ∵ parallel_transversal_angles, parallelogram_properties <G.56, G.62>
 
-   :fn:`parallel_line <G.58>`\ (:g:`B <g1:B>`, :g:`/ A D / <g1:/ A D />`) → :g:`/ B E / <g1:/ B E />`
+   :g:`< B A D ) <g1:< B A D )>` + :g:`< A D E ) <g1:< A D E )>` = 2∟, :g:`< B A D ) <g1:< B A D )>` = ∟ → :g:`< B A D ) <g1:< B A D )>` :eq:`= <g1:< B A D ) = g1:< A D E ) = g1:< A B E ) = g1:< B E D )>` :g:`< A D E ) <g1:< A D E )>` :eq:`= <g1:< B A D ) = g1:< A D E ) = g1:< A B E ) = g1:< B E D )>` :g:`< A B E ) <g1:< A B E )>` :eq:`= <g1:< B A D ) = g1:< A D E ) = g1:< A B E ) = g1:< B E D )>` :g:`< B E D ) <g1:< B E D )>` = ∟
 
-.. step:: assert
+.. step:: conclude ∵ quadrilateral_def <G.63>
 
-   :g:`< A D E B > <g1:< A D E B >>` is a parallelogram
-
-.. step:: assert ∵ parallelogram_properties <G.62>
-
-   :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ D E /; g1:/ A D / = g1:/ B E />` :g:`/ D E / <g1:/ D E />`, and :g:`/ A D / <g1:/ A D />` to :g:`/ B E / <g1:/ B E />`
-
-.. step:: assert
-
-   :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ A D />` :g:`/ A D / <g1:/ A D />`
-
-.. step:: assert
-
-   the four segments :g:`/ B A / <g1:/ B A />`, :g:`/ A D / <g1:/ A D />`, :g:`/ D E / <g1:/ D E />`, :g:`/ E B / <g1:/ E B />` :eq:`= <g1:/ B A / = g1:/ A D / = g1:/ D E / = g1:/ E B />`
-
-.. step:: assert
-
-   the parallelogram :g:`< A D E B > <g1:< A D E B >>` is :eq:`equilateral <g1:/ B A / = g1:/ A D / = g1:/ D E / = g1:/ E B />`
-
-.. step:: assert
-
-   I say next that it is also right-angled
-
-.. step:: assert ∵ parallel_transversal_angles <G.56>
-
-   :g:`/ A D / <g1:/ A D />` falls upon the parallels :g:`/ A B / <g1:/ A B />`, :g:`/ D E / <g1:/ D E />` → :g:`< B A D ) <g1:< B A D )>`, :g:`< A D E ) <g1:< A D E )>` are equal to two right angles
-
-.. step:: assert
-
-   :g:`< B A D ) <g1:< B A D )>` is right
-
-.. step:: assert
-
-   :g:`< A D E ) <g1:< A D E )>` is also :eq:`right <g1:< A D E ) = g1:< B A D )>`
-
-.. step:: assert ∵ parallelogram_properties <G.62>
-
-   In parallelogrammic areas the opposite sides and :term:`angles <G.22>` are equal to one another
-
-.. step:: assert
-
-   each of the opposite angles :g:`< A B E ) <g1:< A B E )>`, :g:`< B E D ) <g1:< B E D )>` is also :eq:`right <g1:< A B E ) = g1:< B E D ) = g1:< B A D ) = g1:< A D E )>`
-
-.. step:: assert
-
-   :g:`< A D E B > <g1:< A D E B >>` is :eq:`right-angled <g1:< B A D ) = g1:< A D E ) = g1:< A B E ) = g1:< B E D )>`
-
-.. step:: assert
-
-   It was also proved :term:`equilateral <G.13>`
-
-.. step:: conclude
-
-   it is a square; and it is described on :g:`/ A B / <g1:/ A B />`
+   :g:`/ B A / <g1:/ B A />` :eq:`= <g1:/ B A / = g1:/ A D / = g1:/ D E / = g1:/ E B />` :g:`/ A D / <g1:/ A D />` :eq:`= <g1:/ B A / = g1:/ A D / = g1:/ D E / = g1:/ E B />` :g:`/ D E / <g1:/ D E />` :eq:`= <g1:/ B A / = g1:/ A D / = g1:/ D E / = g1:/ E B />` :g:`/ E B / <g1:/ E B />`, :g:`< B A D ) <g1:< B A D )>` :eq:`= <g1:< B A D ) = g1:< A D E ) = g1:< A B E ) = g1:< B E D )>` :g:`< A D E ) <g1:< A D E )>` :eq:`= <g1:< B A D ) = g1:< A D E ) = g1:< A B E ) = g1:< B E D )>` :g:`< A B E ) <g1:< A B E )>` :eq:`= <g1:< B A D ) = g1:< A D E ) = g1:< A B E ) = g1:< B E D )>` :g:`< B E D ) <g1:< B E D )>` = ∟ → :g:`< A D E B > <g1:< A D E B >>`
 
 Dependency Graph
 ----------------
@@ -308,6 +257,7 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.51" -> "G.14";
      "G.58" -> "G.14";
      "G.17" -> "G.15";
@@ -319,7 +269,9 @@ Dependency Graph
      "G.21" -> "G.16";
      "G.37" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.56" -> "G.16";
+     "G.75" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
@@ -328,6 +280,7 @@ Dependency Graph
      "G.25" -> "G.18";
      "G.41" -> "G.18";
      "G.45" -> "G.18";
+     "G.53" -> "G.18";
      "G.58" -> "G.18";
      "G.20" -> "G.19";
      "G.25" -> "G.19";
@@ -340,6 +293,7 @@ Dependency Graph
      "G.43" -> "G.21";
      "G.45" -> "G.21";
      "G.47" -> "G.21";
+     "G.51" -> "G.21";
      "G.75" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
@@ -373,11 +327,14 @@ Dependency Graph
      "G.51" -> "G.24";
      "G.62" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.51" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -435,5 +392,6 @@ Required for
 .. toctree::
    :hidden:
 
+   video
    code
    heath

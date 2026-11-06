@@ -1,0 +1,8 @@
+[bell:proposition]
+[style:brisk] Euclid's Elements, Book One, Proposition Twenty-Three. <pause> Construct on a given line at a given point an angle equal to a given angle. <pause> Given segment A B, point A on it, and angle D C E, we construct at point A on segment A B an angle equal to angle D C E.
+
+[bell:construction]
+[style:brisk] On lines C D and C E, take random points D and E, and construct segment D E. <pause> Then, from three segments equal to C D, D E, and C E, construct triangle A F G on segment A B so that A F equals C D, A G equals C E, and F G equals D E.
+
+[bell:insight]
+[style:brisk] In triangles D C E and F A G, sides D C and C E equal sides F A and A G respectively, and base D E equals base F G. <pause> By side-side-side congruence, angle D C E equals angle F A G. <pause> Therefore on the given segment A B and at the given point A on it, angle F A G has been constructed equal to angle D C E, <pause> as was required to do.

@@ -1,0 +1,52 @@
+{
+  "III.22": {
+    "subtype": "theorem",
+    "args": [
+      ":g:`( A B C D ) <g1:( A B C D )>`",
+      ":g:`< A B C D > <g1:< A B C D >>`"
+    ],
+    "returns": [],
+    "given": ":g:`< A B C D > <g1:< A B C D >>` inscribed in :g:`( A B C D ) <g1:( A B C D )>`",
+    "contract": ":g:`< A B C ) <g1:< A B C )>` + :g:`< A D C ) <g1:< A D C )>` = 2∟, :g:`< B A D ) <g1:< B A D )>` + :g:`< D C B ) <g1:< D C B )>` = 2∟",
+    "steps": [
+      [
+        "given",
+        [
+          "I.def.15",
+          "I.def.19"
+        ],
+        ":g:`( A B C D ) <g1:( A B C D )>`, quadrilateral :g:`< A B C D > <g1:< A B C D >>` inscribed in :g:`( A B C D ) <g1:( A B C D )>`"
+      ],
+      [
+        "construct",
+        [
+          "I.post.1"
+        ],
+        "@fn(I.post.1)(:g:`A <g1:A>`, :g:`C <g1:C>`) → :g:`/ A C / <g1:/ A C />`, @fn(I.post.1)(:g:`B <g1:B>`, :g:`D <g1:D>`) → :g:`/ B D / <g1:/ B D />`"
+      ],
+      [
+        "assert",
+        [
+          "I.32"
+        ],
+        "in :g:`< A B C > <g1:< A B C >>`, :g:`< C A B ) <g1:< C A B )>` + :g:`< A B C ) <g1:< A B C )>` + :g:`< B C A ) <g1:< B C A )>` = 2∟"
+      ],
+      [
+        "assert",
+        [
+          "III.21",
+          "I.cn.2"
+        ],
+        ":g:`< C A B ) <g1:< C A B )>` :eq:`= <g1:< C A B ) = g1:< B D C )>` :g:`< B D C ) <g1:< B D C )>` in :g:`( B A D C ) <g1:( B A D C )>`, :g:`< A C B ) <g1:< A C B )>` :eq:`= <g1:< A C B ) = g1:< A D B )>` :g:`< A D B ) <g1:< A D B )>` in :g:`( A D C B ) <g1:( A D C B )>` → :g:`< A D C ) <g1:< A D C )>` = :g:`< B A C ) <g1:< B A C )>` + :g:`< A C B ) <g1:< A C B )>`"
+      ],
+      [
+        "conclude",
+        [
+          "I.cn.2",
+          "I.cn.1"
+        ],
+        ":g:`< A B C ) <g1:< A B C )>` + :g:`< A D C ) <g1:< A D C )>` = :g:`< A B C ) <g1:< A B C )>` + :g:`< B A C ) <g1:< B A C )>` + :g:`< A C B ) <g1:< A C B )>` = 2∟, and :g:`< B A D ) <g1:< B A D )>` + :g:`< D C B ) <g1:< D C B )>` = 2∟"
+      ]
+    ]
+  }
+}

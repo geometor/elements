@@ -1,0 +1,97 @@
+{
+  "voice_id": "voice_xdhacg1pn1cq",
+  "audio_wav": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/05/III_05.wav",
+  "total_duration_sec": 111.74,
+  "segments": [
+    {
+      "index": 0,
+      "bell": "bell:proposition",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: brisk, clear, architectural voice; steady studio cadence] Book Three, Proposition Five. If two circles cut one another, they will not have the same center. Let the circles A B C and C D G cut one another at the points B and C.",
+      "start_sec": 0.0,
+      "end_sec": 12.65,
+      "duration_sec": 12.65,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: brisk, clear, architectural voice; steady studio cadence] Book Three, Proposition Five. If two circles cut one another, they will not have the same center. Let the circles A B C and C D G cut one another at the points B and C.",
+          "start_sec": 0.0,
+          "end_sec": 12.65,
+          "duration_sec": 12.65
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "bell": "bell:construction",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: methodical, precise constructive cadence] I say that they will not have the same center. For, if possible, let their common center be E; join E C, and draw E F G through at random, meeting circle A B C at F and circle C D G at G.",
+      "start_sec": 12.65,
+      "end_sec": 27.52,
+      "duration_sec": 14.87,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: methodical, precise constructive cadence] I say that they will not have the same center. For, if possible, let their common center be E; join E C, and draw E F G through at random, meeting circle A B C at F and circle C D G at G.",
+          "start_sec": 12.65,
+          "end_sec": 27.52,
+          "duration_sec": 14.87
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "bell": "bell:insight",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: luminous, deductive geometric clarity] Since the point E is the center of the circle A B C, the radius E C equals E F by Definition Fifteen. Again, since E is the center of the circle C D G, the radius E C equals E G. Because E C equals both E F and E G, E F is also equal to E G, the less equal to the greater\u2014which is impossible. Therefore the point E is not the center of the circles A B C and C D G. Which was to be proved.",
+      "start_sec": 27.52,
+      "end_sec": 58.86,
+      "duration_sec": 31.34,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: luminous, deductive geometric clarity] Since the point E is the center of the circle A B C, the radius E C equals E F by Definition Fifteen. Again, since E is the center of the circle C D G, the radius E C equals E G. Because E C equals both E F and E G, E F is also equal to E G, the less equal to the greater\u2014which is impossible. Therefore the point E is not the center of the circles A B C and C D G. Which was to be proved.",
+          "start_sec": 27.52,
+          "end_sec": 58.86,
+          "duration_sec": 31.34
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "bell": "bell:system",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: reflective, scholarly, architectural synthesis] As Heath remarks, Propositions Three Five and Three Six express a single geometric principle: whether two distinct circles cut one another or touch one another, if their circumferences share even one point, they cannot share a center; conversely, concentric circles with a common circumference point coincide completely. In the GEOMETOR G-Index, node G one hundred two rests directly on the definitions of circle and center, requiring only twelve ancestor nodes while supporting thirty-four downstream theorems across Books Three, Four, Six, Twelve, and Thirteen.",
+      "start_sec": 58.86,
+      "end_sec": 91.48,
+      "duration_sec": 32.62,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: reflective, scholarly, architectural synthesis] As Heath remarks, Propositions Three Five and Three Six express a single geometric principle: whether two distinct circles cut one another or touch one another, if their circumferences share even one point, they cannot share a center; conversely, concentric circles with a common circumference point coincide completely. In the GEOMETOR G-Index, node G one hundred two rests directly on the definitions of circle and center, requiring only twelve ancestor nodes while supporting thirty-four downstream theorems across Books Three, Four, Six, Twelve, and Thirteen.",
+          "start_sec": 58.86,
+          "end_sec": 91.48,
+          "duration_sec": 32.62
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "bell": "bell:resolve",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: warm, inviting, resonant studio close] You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Five in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.",
+      "start_sec": 91.48,
+      "end_sec": 111.74,
+      "duration_sec": 20.26,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: warm, inviting, resonant studio close] You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Five in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.",
+          "start_sec": 91.48,
+          "end_sec": 111.74,
+          "duration_sec": 20.26
+        }
+      ]
+    }
+  ]
+}

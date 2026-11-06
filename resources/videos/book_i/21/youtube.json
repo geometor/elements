@@ -1,0 +1,62 @@
+{
+  "prop_id": "BOOK I \u2022 PROP. 21",
+  "short_code": "I.21",
+  "g_id": "G.46",
+  "version": 2,
+  "enunciation": "If on one of the sides of a triangle, from its extremities, there be constructed two straight lines meeting within the triangle, the straight lines so constructed will be less than the remaining two sides of the triangle, but will contain a greater angle.",
+  "title_1080p": "I.21 \u2022 if on one of the sides of a triangle, from its extremities, there be constructed two strai...",
+  "title_short": "I.21 \u2022 if on one of the sides of a triangle, from its extremities, there be constructed two strai...",
+  "description": "\u201cIf on one of the sides of a triangle, from its extremities, there be constructed two straight lines meeting within the triangle, the straight lines so constructed will be less than the remaining two sides of the triangle, but will contain a greater angle.\u201d\n\u2014 Euclid's Elements, BOOK I \u2022 PROP. 21 (G.46)\n\n00:00 1 \u00b7 GIVEN: \u27e8 A B C \u27e9, / B D /, / D C / (D \u2208 \u27e8 A B C \u27e9)\n00:25 2 \u00b7 CONSTRUCT: extend(/ B D /) \u2192 / D E /\n00:30 3 \u00b7 ASSERT: \u27e8 A B E \u27e9 \u2192 / B A / + / A E / \u27e9 / B E / \u2192 / B A / + / A C / \u27e9 / B E / + / E C /\n00:41 4 \u00b7 ASSERT: \u27e8 C E D \u27e9 \u2192 / C E / + / E D / \u27e9 / C D / \u2192 / B E / + / E C / \u27e9 / B D / + / D C /\n00:52 5 \u00b7 ASSERT: \u27e8 C D E \u27e9 \u2192 \u27e8 B D C ) \u27e9 \u27e8 C E D ), \u27e8 A B E \u27e9 \u2192 \u27e8 C E B ) \u27e9 \u27e8 B A C )\n01:03 6 \u00b7 \u2234: / B D / + / D C / \u27e8 / B A / + / A C /, \u27e8 B D C ) \u27e9 \u27e8 B A C )\n\nGEOMETOR \u2022 G.46 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid I.21",
+    "G.46",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/21/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.46/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_i/21/I_21_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_i/21/I_21_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_i/21/I_21.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_i/21/I_21_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_i/21/I_21_short_thumb.png"
+  },
+  "uploads": {
+    "wide_1080p": {
+      "version": 2,
+      "video_id": "7cLVNc_4Qpk",
+      "url": "https://youtu.be/7cLVNc_4Qpk",
+      "studio_url": "https://studio.youtube.com/video/7cLVNc_4Qpk/edit",
+      "caption_id": "AUieDabuSmI0RAN6hnAv6kYSRvB7zmRFsGuHwuPTbuGypYvytW_30hrg",
+      "playlist_id": "PLUXlBs_QySgw",
+      "playlist_item_id": "UExVWGxCc19ReVNndy5GNDg1Njc1QzZERjlFRjE5",
+      "privacyStatus": "private",
+      "publishAt": "2026-11-05T16:00:00Z",
+      "uploaded_at": "2026-11-05T12:39:58.488398+00:00",
+      "thumbnail_set": true
+    },
+    "short": {
+      "version": 2,
+      "video_id": "aAOZqK1eyC0",
+      "url": "https://youtube.com/shorts/aAOZqK1eyC0",
+      "studio_url": "https://studio.youtube.com/video/aAOZqK1eyC0/edit",
+      "caption_id": "AUieDabuerFwpRB5P83IPklXICHkuu2f9Tk7AIk2WHBZC5f8M-0GGJgS",
+      "playlist_id": "PLTJvna-1hErU",
+      "playlist_item_id": "UExUSnZuYS0xaEVyVS44Mjc5REFBRUE2MTdFRDU0",
+      "privacyStatus": "private",
+      "publishAt": "2026-11-05T16:00:00Z",
+      "uploaded_at": "2026-11-05T12:40:31.249672+00:00",
+      "thumbnail_set": true
+    }
+  },
+  "history": {}
+}

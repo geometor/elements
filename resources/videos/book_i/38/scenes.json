@@ -1,0 +1,220 @@
+[
+  {
+    "bell": "proposition",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 38",
+        "g_id": "G.67",
+        "folio": "Folio 0347–0348 • p. 333",
+        "enunciation": "Triangles which are on equal bases and in the same parallels are equal to one another.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0347.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0347.g1.png",
+        "step_num": 1,
+        "total_steps": 6,
+        "step_kind": "GIVEN",
+        "symbolic": "< A B C >, < D E F > (/ B C / = / E F /, / A D / ∥ / B F /)",
+        "clause_html": "<span class=\"g-tok\">&lt; A B C &gt;</span>, <span class=\"g-tok\">&lt; D E F &gt;</span> (<span class=\"g-tok\">/ B C /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ E F /</span>, <span class=\"g-tok\">/ A D /</span> ∥ <span class=\"g-tok\">/ B F /</span>)",
+        "just_id": "GIVEN",
+        "just_title": "prove: < A B C > = < D E F >",
+        "visible_ids": [
+          "el-poly-ABC", "el-poly-DEF",
+          "el-seg-AD", "el-seg-BF", "el-seg-BC", "el-seg-CE", "el-seg-EF", "el-seg-AB", "el-seg-CA", "el-seg-DE", "el-seg-DF",
+          "hl-poly-ABC", "hl-poly-DEF", "hl-seg-AD", "hl-seg-BF", "hl-seg-BC", "hl-seg-EF",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E", "el-pt-F",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E", "lbl-F"
+        ],
+        "active_ids": [
+          "hl-poly-ABC", "hl-poly-DEF", "hl-seg-AD", "hl-seg-BF",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E", "el-pt-F",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E", "lbl-F"
+        ],
+        "equal_ids": [
+          "hl-seg-BC", "hl-seg-EF"
+        ],
+        "tick_ids": [
+          "hl-seg-BC", "hl-seg-EF"
+        ]
+      }
+    ]
+  },
+  {
+    "bell": "construction",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 38",
+        "g_id": "G.67",
+        "folio": "Folio 0347–0348 • p. 333",
+        "enunciation": "Triangles which are on equal bases and in the same parallels are equal to one another.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0347.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0347.g1.png",
+        "step_num": 2,
+        "total_steps": 6,
+        "step_kind": "CONSTRUCT",
+        "symbolic": "extend(/ A D /) → / G A /, / D H /",
+        "clause_html": "<span class=\"fn-tok\">extend</span>(<span class=\"g-tok\">/ A D /</span>) → <span class=\"g-tok\">/ G A /</span>, <span class=\"g-tok\">/ D H /</span>",
+        "just_id": "G.18 • I.Post.2",
+        "just_title": "extend",
+        "visible_ids": [
+          "el-poly-ABC", "el-poly-DEF",
+          "el-seg-GH", "el-seg-GA", "el-seg-AD", "el-seg-DH", "el-seg-BF", "el-seg-BC", "el-seg-CE", "el-seg-EF", "el-seg-AB", "el-seg-CA", "el-seg-DE", "el-seg-DF",
+          "hl-seg-GA", "hl-seg-DH", "hl-seg-BC", "hl-seg-EF",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E", "el-pt-F", "el-pt-G", "el-pt-H",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E", "lbl-F", "lbl-G", "lbl-H"
+        ],
+        "active_ids": [
+          "hl-seg-GA", "hl-seg-DH",
+          "el-pt-G", "el-pt-H", "lbl-G", "lbl-H"
+        ],
+        "equal_ids": [
+          "hl-seg-BC", "hl-seg-EF"
+        ],
+        "tick_ids": [
+          "hl-seg-BC", "hl-seg-EF"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 38",
+        "g_id": "G.67",
+        "folio": "Folio 0347–0348 • p. 333",
+        "enunciation": "Triangles which are on equal bases and in the same parallels are equal to one another.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0347.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0347.g1.png",
+        "step_num": 3,
+        "total_steps": 6,
+        "step_kind": "CONSTRUCT",
+        "symbolic": "parallel_line(B, / C A /) → / B G /, parallel_line(F, / D E /) → / F H /",
+        "clause_html": "<span class=\"fn-tok\">parallel_line</span>(<span class=\"g-tok\">B</span>, <span class=\"g-tok\">/ C A /</span>) → <span class=\"g-tok\">/ B G /</span>, <span class=\"fn-tok\">parallel_line</span>(<span class=\"g-tok\">F</span>, <span class=\"g-tok\">/ D E /</span>) → <span class=\"g-tok\">/ F H /</span>",
+        "just_id": "G.58 • I.31",
+        "just_title": "parallel_line",
+        "visible_ids": [
+          "el-poly-ABC", "el-poly-DEF", "el-poly-GBCA", "el-poly-DEFH",
+          "el-seg-GH", "el-seg-GA", "el-seg-AD", "el-seg-DH", "el-seg-BF", "el-seg-BC", "el-seg-CE", "el-seg-EF", "el-seg-BG", "el-seg-AB", "el-seg-CA", "el-seg-DE", "el-seg-DF", "el-seg-FH",
+          "hl-seg-BG", "hl-seg-FH", "hl-seg-BC", "hl-seg-EF",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E", "el-pt-F", "el-pt-G", "el-pt-H",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E", "lbl-F", "lbl-G", "lbl-H"
+        ],
+        "active_ids": [
+          "hl-seg-BG", "hl-seg-FH",
+          "el-pt-B", "el-pt-F", "el-pt-G", "el-pt-H",
+          "lbl-B", "lbl-F", "lbl-G", "lbl-H"
+        ],
+        "equal_ids": [
+          "hl-seg-BC", "hl-seg-EF"
+        ],
+        "tick_ids": [
+          "hl-seg-BC", "hl-seg-EF"
+        ]
+      }
+    ]
+  },
+  {
+    "bell": "insight",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 38",
+        "g_id": "G.67",
+        "folio": "Folio 0347–0348 • p. 333",
+        "enunciation": "Triangles which are on equal bases and in the same parallels are equal to one another.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0347.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0347.g1.png",
+        "step_num": 4,
+        "total_steps": 6,
+        "step_kind": "ASSERT",
+        "symbolic": "/ B C / = / E F /, / B F / ∥ / G H / → < G B C A > = < D E F H >",
+        "clause_html": "<span class=\"g-tok\">/ B C /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ E F /</span>, <span class=\"g-tok\">/ B F /</span> ∥ <span class=\"g-tok\">/ G H /</span> → <span class=\"g-tok\">&lt; G B C A &gt;</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; D E F H &gt;</span>",
+        "just_id": "G.65 • I.36",
+        "just_title": "parallelograms_equal_bases",
+        "visible_ids": [
+          "el-poly-ABC", "el-poly-DEF", "el-poly-GBCA", "el-poly-DEFH",
+          "el-seg-GH", "el-seg-GA", "el-seg-AD", "el-seg-DH", "el-seg-BF", "el-seg-BC", "el-seg-CE", "el-seg-EF", "el-seg-BG", "el-seg-AB", "el-seg-CA", "el-seg-DE", "el-seg-DF", "el-seg-FH",
+          "hl-poly-GBCA", "hl-poly-DEFH", "hl-seg-BC", "hl-seg-EF", "hl-seg-BF", "hl-seg-GH",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E", "el-pt-F", "el-pt-G", "el-pt-H",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E", "lbl-F", "lbl-G", "lbl-H"
+        ],
+        "active_ids": [
+          "hl-seg-BF", "hl-seg-GH",
+          "el-pt-B", "el-pt-C", "el-pt-E", "el-pt-F", "el-pt-G", "el-pt-H",
+          "lbl-B", "lbl-C", "lbl-E", "lbl-F", "lbl-G", "lbl-H"
+        ],
+        "equal_ids": [
+          "hl-poly-GBCA", "hl-poly-DEFH", "hl-seg-BC", "hl-seg-EF"
+        ],
+        "tick_ids": [
+          "hl-seg-BC", "hl-seg-EF"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 38",
+        "g_id": "G.67",
+        "folio": "Folio 0347–0348 • p. 333",
+        "enunciation": "Triangles which are on equal bases and in the same parallels are equal to one another.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0347.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0347.g1.png",
+        "step_num": 5,
+        "total_steps": 6,
+        "step_kind": "ASSERT",
+        "symbolic": "< G A B > = < A B C >, < D E F > = < D H F >",
+        "clause_html": "<span class=\"g-tok\">&lt; G A B &gt;</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; A B C &gt;</span>, <span class=\"g-tok\">&lt; D E F &gt;</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; D H F &gt;</span>",
+        "just_id": "G.62 • I.34",
+        "just_title": "parallelogram_properties",
+        "visible_ids": [
+          "el-poly-ABC", "el-poly-DEF", "el-poly-GBCA", "el-poly-DEFH", "el-poly-GAB", "el-poly-DHF",
+          "el-seg-GH", "el-seg-GA", "el-seg-AD", "el-seg-DH", "el-seg-BF", "el-seg-BC", "el-seg-CE", "el-seg-EF", "el-seg-BG", "el-seg-AB", "el-seg-CA", "el-seg-DE", "el-seg-DF", "el-seg-FH",
+          "hl-poly-ABC", "hl-poly-GAB", "hl-poly-DEF", "hl-poly-DHF", "hl-seg-AB", "hl-seg-DF", "hl-seg-BC", "hl-seg-EF",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E", "el-pt-F", "el-pt-G", "el-pt-H",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E", "lbl-F", "lbl-G", "lbl-H"
+        ],
+        "active_ids": [
+          "hl-seg-AB", "hl-seg-DF",
+          "el-pt-A", "el-pt-B", "el-pt-D", "el-pt-F",
+          "lbl-A", "lbl-B", "lbl-D", "lbl-F"
+        ],
+        "equal_ids": [
+          "hl-poly-ABC", "hl-poly-GAB", "hl-poly-DEF", "hl-poly-DHF", "hl-seg-BC", "hl-seg-EF"
+        ],
+        "tick_ids": [
+          "hl-seg-BC", "hl-seg-EF"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 38",
+        "g_id": "G.67",
+        "folio": "Folio 0347–0348 • p. 333",
+        "enunciation": "Triangles which are on equal bases and in the same parallels are equal to one another.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0347.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0347.g1.png",
+        "step_num": 6,
+        "total_steps": 6,
+        "step_kind": "∴",
+        "symbolic": "< A B C > = < D E F >",
+        "clause_html": "<span class=\"g-tok\">&lt; A B C &gt;</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; D E F &gt;</span>",
+        "just_id": "G.16 • I.C.N.1",
+        "just_title": "equal_transitive",
+        "visible_ids": [
+          "el-poly-ABC", "el-poly-DEF", "el-poly-GBCA", "el-poly-DEFH",
+          "el-seg-GH", "el-seg-GA", "el-seg-AD", "el-seg-DH", "el-seg-BF", "el-seg-BC", "el-seg-CE", "el-seg-EF", "el-seg-BG", "el-seg-AB", "el-seg-CA", "el-seg-DE", "el-seg-DF", "el-seg-FH",
+          "hl-poly-ABC", "hl-poly-DEF", "hl-seg-BC", "hl-seg-EF", "hl-seg-AD", "hl-seg-BF",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E", "el-pt-F", "el-pt-G", "el-pt-H",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E", "lbl-F", "lbl-G", "lbl-H"
+        ],
+        "active_ids": [
+          "hl-seg-AD", "hl-seg-BF",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E", "el-pt-F",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E", "lbl-F"
+        ],
+        "equal_ids": [
+          "hl-poly-ABC", "hl-poly-DEF", "hl-seg-BC", "hl-seg-EF"
+        ],
+        "tick_ids": [
+          "hl-seg-BC", "hl-seg-EF"
+        ]
+      }
+    ]
+  }
+]

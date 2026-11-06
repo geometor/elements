@@ -1,0 +1,67 @@
+1
+00:00:00,420 --> 00:00:01,947
+Book Two, Proposition Ten.
+
+2
+00:00:01,947 --> 00:00:19,921
+If a segment be bisected, and a segment be added to it in a segment, the square on the whole with the added segment and the square on the added segment both together are double of the square on the half and of the square described on the segment made up of the half and the added segment as on one segment.
+
+3
+00:00:19,921 --> 00:00:25,090
+Let segment A B be bisected at C, and let segment B D be added to it in a straight line.
+
+4
+00:00:25,510 --> 00:00:35,248
+From C, draw C E at right angles to A B by One Eleven, make it equal to A C or C B by One Three, and join E A and E B.
+
+5
+00:00:35,248 --> 00:00:42,922
+Through E draw E F parallel to A D, and through D draw F D parallel to C E by One Thirty-One.
+
+6
+00:00:42,922 --> 00:00:53,320
+Since angles F E B and E F D are less than two right angles, produce E B and F D by Postulate Five to meet at G, and join A G.
+
+7
+00:00:53,740 --> 00:01:03,703
+In the isosceles right triangles A C E and E C B, each base angle is half a right angle by One Five and One Thirty-Two, so angle A E B is right.
+
+8
+00:01:03,703 --> 00:01:16,226
+By One Fifteen, One Twenty-Nine, One Thirty-Four, and One Six, triangles B D G and E F G are also isosceles right triangles, so G D equals B D, and G F equals E F, which equals C D.
+
+9
+00:01:16,226 --> 00:01:31,863
+By the Pythagorean Theorem, One Forty-Seven, since C E equals A C, the square on E A is double the square on A C; and since F G equals E F, the square on E G is double the square on E F, and therefore double the square on C D.
+
+10
+00:01:31,863 --> 00:01:42,449
+Applying One Forty-Seven to right triangles A E G and A D G, the squares on A D and D G equal the square on A G, which equals the squares on E A and E G.
+
+11
+00:01:42,449 --> 00:01:48,469
+Since D G equals D B, the squares on A D and D B are double the squares on A C and C D.
+
+12
+00:01:48,469 --> 00:01:50,060
+Which was to be proved.
+
+13
+00:01:50,480 --> 00:02:00,297
+Proposition Two Ten proves the algebraic identity: the quantity two a plus b squared, plus b squared, equals twice the sum of a squared and a plus b squared.
+
+14
+00:02:00,297 --> 00:02:19,181
+As Proclus and Theon of Smyrna record, the Pythagoreans used this exact theorem to generate successive side and diagonal numbers—one and one, two and three, five and seven, twelve and seventeen—satisfying two x squared minus y squared equals plus or minus one, and converging to the square root of two.
+
+15
+00:02:19,181 --> 00:02:32,000
+In the GEOMETOR G-Index, node G ninety-two synthesizes nineteen direct prerequisites across sixty-three ancestor nodes, uniting the parallel postulate, isosceles angle chasing, and the Pythagorean theorem.
+
+16
+00:02:32,420 --> 00:02:46,005
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Two Ten in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+17
+00:02:46,005 --> 00:02:52,860
+Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

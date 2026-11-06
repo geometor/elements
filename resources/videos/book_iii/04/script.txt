@@ -1,0 +1,19 @@
+[bell:proposition]
+[style: brisk, clear, architectural voice; steady studio cadence]
+Book Three, Proposition Four. If in a circle two segments cut one another which are not through the center, they do not bisect one another. <pause> Let A B C D be a circle, and in it let two chords A C and B D, which are not through the center, cut one another at E.
+
+[bell:construction]
+[style: methodical, precise constructive cadence]
+I say that A C and B D do not bisect one another. For, if possible, let them bisect one another, so that A E equals E C, and B E equals E D. <pause> Take the center F of the circle A B C D by Three One, and join F E.
+
+[bell:insight]
+[style: luminous, deductive geometric clarity]
+Since the segment F E through the center bisects the chord A C not through the center, by Three Three it also cuts it at right angles; therefore angle F E A is right. <pause> Again, since F E bisects the chord B D not through the center, by Three Three it also cuts B D at right angles; therefore angle F E B is right. <pause> But angle F E A was also proved right; therefore angle F E A equals angle F E B, the less equal to the greater—which is impossible. Therefore the chords A C and B D do not bisect one another. Which was to be proved.
+
+[bell:system]
+[style: reflective, scholarly, architectural synthesis]
+Proposition Three Four is an immediate, crystalline consequence of Three One and Three Three: at any non-central point E inside a circle, only one chord can be perpendicular to the radial segment F E, so at most one chord through E can be bisected there. Only diameters passing through the center itself mutually bisect one another. <pause> In the GEOMETOR G-Index, node G one hundred one synthesizes seven direct rules across forty ancestor nodes, applying the perpendicular-bisector equivalence of G one hundred twice at the same intersection point.
+
+[bell:resolve]
+[style: warm, inviting, resonant studio close]
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Four in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

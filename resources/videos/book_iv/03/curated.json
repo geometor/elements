@@ -1,0 +1,65 @@
+{
+  "IV.3": {
+    "subtype": "problem",
+    "args": [
+      ":g:`( A B C ) <g1:( A B C )>`",
+      ":g:`< D E F > <g1:< D E F >>`"
+    ],
+    "returns": [
+      ":g:`< L M N > <g1:< L M N >>`"
+    ],
+    "given": ":g:`( A B C ) <g1:( A B C )>`, :g:`< D E F > <g1:< D E F >>`",
+    "contract": ":g:`< L M N > <g1:< L M N >>` is :term:`circumscribed about <G.150>` :g:`( A B C ) <g1:( A B C )>` and equiangular with :g:`< D E F > <g1:< D E F >>`",
+    "steps": [
+      [
+        "given",
+        [
+          "I.def.15",
+          "I.def.19",
+          "IV.def.4"
+        ],
+        ":g:`( A B C ) <g1:( A B C )>`, :g:`< D E F > <g1:< D E F >>`"
+      ],
+      [
+        "construct",
+        [
+          "I.post.2",
+          "III.1",
+          "I.23"
+        ],
+        "@fn(I.post.2)(:g:`/ E F / <g1:/ E F />`) → :g:`/ H G / <g1:/ H G />`, @fn(III.1)(:g:`( A B C ) <g1:( A B C )>`) → center :g:`K <g1:K>`, draw :g:`/ K B / <g1:/ K B />`, @fn(I.23)(:g:`/ K B / <g1:/ K B />`, :g:`K <g1:K>`) → :g:`< B K A ) <g1:< B K A )>` :eq:`= <g1:< B K A ) = g1:< D E G )>` :g:`< D E G ) <g1:< D E G )>`, :g:`< B K C ) <g1:< B K C )>` :eq:`= <g1:< B K C ) = g1:< D F H )>` :g:`< D F H ) <g1:< D F H )>`"
+      ],
+      [
+        "construct",
+        [
+          "III.16"
+        ],
+        "@fn(III.16)(:g:`( A B C ) <g1:( A B C )>`, :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`) → tangents :g:`/ L A M / <g1:/ L A M />`, :g:`/ M B N / <g1:/ M B N />`, :g:`/ N C L / <g1:/ N C L />` forming :g:`< L M N > <g1:< L M N >>`"
+      ],
+      [
+        "assert",
+        [
+          "III.18",
+          "I.32"
+        ],
+        "Radii :g:`/ K A / <g1:/ K A />`, :g:`/ K B / <g1:/ K B />`, :g:`/ K C / <g1:/ K C />` ⊥ tangents → :g:`< K A M ) <g1:< K A M )>`, :g:`< K B M ) <g1:< K B M )>` are right; in :g:`< A M B K > <g1:< A M B K >>`, :g:`< A K B ) <g1:< A K B )>` + :g:`< A M B ) <g1:< A M B )>` = 2 right angles"
+      ],
+      [
+        "assert",
+        [
+          "I.13",
+          "I.cn.3"
+        ],
+        ":g:`< D E G ) <g1:< D E G )>` + :g:`< D E F ) <g1:< D E F )>` = 2 right angles and :g:`< A K B ) <g1:< A K B )>` :eq:`= <g1:< A K B ) = g1:< D E G )>` :g:`< D E G ) <g1:< D E G )>` → :g:`< A M B ) <g1:< A M B )>` :eq:`= <g1:< A M B ) = g1:< D E F )>` :g:`< D E F ) <g1:< D E F )>`; similarly :g:`< L N B ) <g1:< L N B )>` :eq:`= <g1:< L N B ) = g1:< D F E )>` :g:`< D F E ) <g1:< D F E )>`"
+      ],
+      [
+        "conclude",
+        [
+          "I.32",
+          "IV.def.4"
+        ],
+        "Remaining :g:`< M L N ) <g1:< M L N )>` :eq:`= <g1:< M L N ) = g1:< E D F )>` :g:`< E D F ) <g1:< E D F )>` → :g:`< L M N > <g1:< L M N >>` is circumscribed about :g:`( A B C ) <g1:( A B C )>` equiangular with :g:`< D E F > <g1:< D E F >>`"
+      ]
+    ]
+  }
+}

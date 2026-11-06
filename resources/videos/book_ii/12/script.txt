@@ -1,0 +1,19 @@
+[bell:proposition]
+[style: brisk, clear, architectural voice; steady studio cadence]
+Book Two, Proposition Twelve. In obtuse-angled triangles, the square on the side subtending the obtuse angle is greater than the squares on the sides containing the obtuse angle by twice the rectangle contained by one of the sides about the obtuse angle, namely that on which the perpendicular falls, and the segment cut off outside by the perpendicular towards the obtuse angle. <pause> Let A B C be an obtuse-angled triangle having the angle B A C obtuse.
+
+[bell:construction]
+[style: methodical, precise constructive cadence]
+Produce C A in a straight line, and from B draw B D perpendicular to C A produced. <pause> Since the segment C D has been cut at random at A, by Two Four the square on C D equals the squares on C A and A D together with twice the rectangle contained by C A and A D.
+
+[bell:insight]
+[style: luminous, deductive geometric clarity]
+Add the square on D B to each. Then the squares on C D and D B equal the squares on C A, A D, and D B together with twice the rectangle C A, A D. <pause> Because the angle at D is right, by One Forty-Seven the square on C B equals the squares on C D and D B, and the square on A B equals the squares on A D and D B. <pause> Therefore, the square on B C equals the squares on B A and A C together with twice the rectangle contained by C A and A D—and so exceeds the squares on B A and A C by twice that rectangle. Which was to be proved.
+
+[bell:system]
+[style: reflective, scholarly, architectural synthesis]
+Proposition Two Twelve is the Euclidean Law of Cosines for obtuse triangles: c squared equals a squared plus b squared plus two a times the exterior projection p. As Heath notes, Gregory of Saint Vincent also proved this theorem directly by the area-shearing method of One Forty-Seven, while Heron established its converse. <pause> In the GEOMETOR G-Index, node G ninety-four synthesizes nine foundational rules across fifty-two ancestor nodes, uniting Book One's Pythagorean theorem with Book Two's square of a sum.
+
+[bell:resolve]
+[style: warm, inviting, resonant studio close]
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Two Twelve in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

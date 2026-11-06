@@ -1,0 +1,19 @@
+[bell:proposition]
+[style: brisk, clear, architectural voice; steady studio cadence]
+Book Two, Proposition Eleven. To cut a given segment so that the rectangle contained by the whole and one of the segments is equal to the square on the remaining segment. <pause> Let A B be the given segment to be cut at a point H so that the rectangle A B, B H equals the square on A H.
+
+[bell:construction]
+[style: methodical, precise constructive cadence]
+On A B, describe the square A B D C by One Forty-Six. Bisect A C at E by One Ten, and join B E. <pause> Produce C A to F, make E F equal to B E by One Three, describe the square F H on A F by One Forty-Six, and draw G H through to K.
+
+[bell:insight]
+[style: luminous, deductive geometric clarity]
+Since A C is bisected at E and F A is added to it, by Two Six the rectangle C F, F A together with the square on A E equals the square on E F, which equals the square on E B. By One Forty-Seven, the square on E B equals the squares on A B and A E; subtracting the square on A E from each leaves the rectangle F K equal to the square A B D C. <pause> Subtract the common rectangle A K from each; then the remaining square F H equals the remaining rectangle H D. <pause> Because A B equals B D, H D is the rectangle contained by A B and B H, and F H is the square on A H. Therefore, A B has been cut at H so that the rectangle contained by A B and B H equals the square on A H. Which was to be done.
+
+[bell:system]
+[style: reflective, scholarly, architectural synthesis]
+Proposition Two Eleven is Euclid's compass-and-straightedge construction of the Golden Section—later called extreme and mean ratio in Book Six, Proposition Thirty. Algebraically, it solves the quadratic equation a times the quantity a minus x equals x squared, or x squared plus a x equals a squared, without irrational numbers—unlocking the Pythagorean construction of the regular pentagon in Book Four. <pause> In the GEOMETOR G-Index, node G ninety-three synthesizes ten direct prerequisites across sixty-eight ancestor nodes, combining Proposition Two Six with the Pythagorean theorem.
+
+[bell:resolve]
+[style: warm, inviting, resonant studio close]
+You can explore the interactive Golden Section diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Two Eleven in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

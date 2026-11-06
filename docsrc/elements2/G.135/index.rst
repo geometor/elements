@@ -2,7 +2,7 @@
 :number: 135
 :canonical_id: G.135
 :original_id: III.28
-:title: G.135 equal circles equal
+:title: G.135 equal chords cut off equal arcs
 :volume: II
 :book: III
 :type: prop
@@ -10,73 +10,49 @@
 :categories: theorem, proof, plane-geometry, circles
 :category: theorem, proof, plane-geometry, circles
 :tags: book-iii, point, segment, circle, angle, equal-circles, straight-line, centre, plane-angle, stand-upon-circumference, arc, equality
-:dependencies: G.4, G.10, G.11, G.14, G.22, G.29, G.131, G.133
-:excerpt: In equal circles equal segments cut off equal arcs, the greater equal to the greater and the less to the less.
+:dependencies: G.4, G.14, G.19, G.29, G.98, G.131, G.133
+:excerpt: In equal circles, equal chords cut off equal arcs, the greater equal to the greater and the less to the less.
 
 .. _G.135:
 .. _III.28:
 
-G.135 equal circles equal
-=========================
+G.135 equal chords cut off equal arcs
+=====================================
 
 .. rubric:: `III.28 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/28/>`_
 
 .. enunciation::
 
-   In :term:`equal circles <G.131>` equal :term:`segments <G.4>` cut off equal arcs, the greater equal to the greater and the less to the less.
+   In :term:`equal circles <G.131>`, equal chords cut off equal arcs, the greater equal to the greater and the less to the less.
 
 .. signature:: theorem
 
-   | :fn:`equal_circles_equal_iii_28 <G.135>`\ (:g:`( A B C ) <g1:( A B C )>`, :g:`( D E F ) <g1:( D E F )>`, :g:`/ A B / <g1:/ A B />`, :g:`/ D E / <g1:/ D E />`)
-   | **given** :g:`( A B C ) <g1:( A B C )>`, :g:`( D E F ) <g1:( D E F )>` be :eq:`= <g1:( A B C ) = g1:( D E F )>` circles, in the circles let :g:`/ A B / <g1:/ A B />`, :g:`/ D E / <g1:/ D E />` be :eq:`= <g1:/ A B / = g1:/ D E />` segments cutting off :g:`( A C B ) <g1:( A C B )>`, :g:`( D F E ) <g1:( D F E )>` as greater arcs and :g:`( A G B ) <g1:( A G B )>`, :g:`( D H E ) <g1:( D H E )>` as lesser
-   | **prove** the greater arc :g:`( A C B ) <g1:( A C B )>` :eq:`= <g1:( A C B ) = g1:( D F E ); g1:( A G B ) = g1:( D H E )>` the greater arc :g:`( D F E ) <g1:( D F E )>`, and the less arc :g:`( A G B ) <g1:( A G B )>` to :g:`( D H E ) <g1:( D H E )>`
+   | :fn:`equal_chords_equal_arcs <G.135>`\ (:g:`( A B C ) <g1:( A B C )>`, :g:`( D E F ) <g1:( D E F )>`, :g:`/ A B / <g1:/ A B />`, :g:`/ D E / <g1:/ D E />`)
+   | **given** :g:`( A B C ) <g1:( A B C )>` :eq:`= <g1:( A B C ) = g1:( D E F )>` :g:`( D E F ) <g1:( D E F )>`, :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ D E />` :g:`/ D E / <g1:/ D E />`
+   | **prove** :g:`( A C B ) <g1:( A C B )>` :eq:`= <g1:( A C B ) = g1:( D F E )>` :g:`( D F E ) <g1:( D F E )>`, :g:`( A G B ) <g1:( A G B )>` :eq:`= <g1:( A G B ) = g1:( D H E )>` :g:`( D H E ) <g1:( D H E )>`
 
 .. picture:: g1.svg
    :alt: Diagram
 
-.. step:: given
+.. step:: given ∵ equal_circles_diameters_def, segment_def <G.131, G.4>
 
-   :g:`( A B C ) <g1:( A B C )>`, :g:`( D E F ) <g1:( D E F )>` be :eq:`= <g1:( A B C ) = g1:( D E F )>` circles, in the circles let :g:`/ A B / <g1:/ A B />`, :g:`/ D E / <g1:/ D E />` be :eq:`= <g1:/ A B / = g1:/ D E />` segments cutting off :g:`( A C B ) <g1:( A C B )>`, :g:`( D F E ) <g1:( D F E )>` as greater arcs and :g:`( A G B ) <g1:( A G B )>`, :g:`( D H E ) <g1:( D H E )>` as lesser
+   :g:`( A B C ) <g1:( A B C )>` :eq:`= <g1:( A B C ) = g1:( D E F )>` :g:`( D E F ) <g1:( D E F )>`, :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ D E />` :g:`/ D E / <g1:/ D E />` cutting off greater arcs :g:`( A C B ) <g1:( A C B )>`, :g:`( D F E ) <g1:( D F E )>` and lesser arcs :g:`( A G B ) <g1:( A G B )>`, :g:`( D H E ) <g1:( D H E )>`
 
-.. step:: construct
+.. step:: construct ∵ find_circle_center, segment <G.98, G.14>
 
-   Let the :term:`centres <G.11>` :g:`K <g1:K>`, :g:`L <g1:L>` of the :term:`circles <G.10>` be taken
+   :fn:`find_circle_center <G.98>`\ (:g:`( A B C ) <g1:( A B C )>`) → :g:`K <g1:K>`, :fn:`find_circle_center <G.98>`\ (:g:`( D E F ) <g1:( D E F )>`) → :g:`L <g1:L>`, :fn:`segment <G.14>`\ (:g:`A <g1:A>`, :g:`K <g1:K>`, :g:`B <g1:B>`) → :g:`/ A K / <g1:/ A K />`, :g:`/ K B / <g1:/ K B />`, :fn:`segment <G.14>`\ (:g:`D <g1:D>`, :g:`L <g1:L>`, :g:`E <g1:E>`) → :g:`/ D L / <g1:/ D L />`, :g:`/ L E / <g1:/ L E />`
 
-.. step:: construct
+.. step:: assert ∵ equal_circles_diameters_def, sss_congruence <G.131, G.29>
 
-   :fn:`segment <G.14>`\ (:g:`A <g1:A>`, :g:`K <g1:K>`) → :g:`/ A K / <g1:/ A K />`, :fn:`segment <G.14>`\ (:g:`K <g1:K>`, :g:`B <g1:B>`) → :g:`/ K B / <g1:/ K B />`, :fn:`segment <G.14>`\ (:g:`D <g1:D>`, :g:`L <g1:L>`) → :g:`/ D L / <g1:/ D L />`, :fn:`segment <G.14>`\ (:g:`L <g1:L>`, :g:`E <g1:E>`) → :g:`/ L E / <g1:/ L E />`
+   :g:`/ A K / <g1:/ A K />` :eq:`= <g1:/ A K / = g1:/ K B / = g1:/ D L / = g1:/ L E />` :g:`/ K B / <g1:/ K B />` :eq:`= <g1:/ A K / = g1:/ K B / = g1:/ D L / = g1:/ L E />` :g:`/ D L / <g1:/ D L />` :eq:`= <g1:/ A K / = g1:/ K B / = g1:/ D L / = g1:/ L E />` :g:`/ L E / <g1:/ L E />`, :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ D E />` :g:`/ D E / <g1:/ D E />` → :g:`< A K B ) <g1:< A K B )>` :eq:`= <g1:< A K B ) = g1:< D L E )>` :g:`< D L E ) <g1:< D L E )>`
 
-.. step:: assert
+.. step:: assert ∵ equal_angles_equal_arcs <G.133>
 
-   the circles are :eq:`= <g1:( A B C ) = g1:( D E F )>` → the radii are also :eq:`= <g1:/ A K / = g1:/ K B / = g1:/ D L / = g1:/ L E />`; therefore :g:`/ A K / <g1:/ A K />`, :g:`/ K B / <g1:/ K B />` :eq:`= <g1:/ A K / = g1:/ D L /; g1:/ K B / = g1:/ L E />` the two
+   :g:`< A K B ) <g1:< A K B )>` :eq:`= <g1:< A K B ) = g1:< D L E )>` :g:`< D L E ) <g1:< D L E )>` → :g:`( A G B ) <g1:( A G B )>` :eq:`= <g1:( A G B ) = g1:( D H E )>` :g:`( D H E ) <g1:( D H E )>`
 
-.. step:: assert
+.. step:: conclude ∵ subtract_equals <G.19>
 
-   Sides :g:`/ D L / <g1:/ D L />`, :g:`/ L E / <g1:/ L E />`
-
-.. step:: assert
-
-   :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ D E />` :g:`/ D E / <g1:/ D E />`
-
-.. step:: assert ∵ sss_congruence <G.29>
-
-   :g:`< A K B ) <g1:< A K B )>` :eq:`= <g1:< A K B ) = g1:< D L E )>` :g:`< D L E ) <g1:< D L E )>`
-
-.. step:: assert ∵ equal_circles_equal <G.133>
-
-   Equal :term:`angles <G.22>` stand on equal arcs, when they are at the centres
-
-.. step:: assert
-
-   the arc :g:`( A G B ) <g1:( A G B )>` :eq:`= <g1:( A G B ) = g1:( D H E )>` :g:`( D H E ) <g1:( D H E )>`
-
-.. step:: assert
-
-   The whole circle :g:`( A B C ) <g1:( A B C )>` :eq:`= <g1:( A B C ) = g1:( D E F )>` the whole circle :g:`( D E F ) <g1:( D E F )>`
-
-.. step:: conclude
-
-   the arc :g:`( A C B ) <g1:( A C B )>` which remains :eq:`= <g1:( A C B ) = g1:( D F E )>` the arc :g:`( D F E ) <g1:( D F E )>` which remains
+   :g:`( A B C ) <g1:( A B C )>` :eq:`= <g1:( A B C ) = g1:( D E F )>` :g:`( D E F ) <g1:( D E F )>`, :g:`( A G B ) <g1:( A G B )>` :eq:`= <g1:( A G B ) = g1:( D H E )>` :g:`( D H E ) <g1:( D H E )>` → :g:`( A C B ) <g1:( A C B )>` :eq:`= <g1:( A C B ) = g1:( D F E )>` :g:`( D F E ) <g1:( D F E )>`
 
 Dependency Graph
 ----------------
@@ -120,16 +96,24 @@ Dependency Graph
      "G.31" [label="G.31", tooltip="G.31 (I.9): Bisect a given angle.", fillcolor="#222244", URL="../G.31/index.html", target="_top"];
      "G.32" [label="G.32", tooltip="G.32 (I.10): Bisect a given segment.", fillcolor="#222244", URL="../G.32/index.html", target="_top"];
      "G.33" [label="G.33", tooltip="G.33 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.33/index.html", target="_top"];
+     "G.34" [label="G.34", tooltip="G.34 (I.11): Construct a segment at right angles to a given line from a given point on it.", fillcolor="#222244", URL="../G.34/index.html", target="_top"];
+     "G.36" [label="G.36", tooltip="G.36 (I.cn.2): If equals are added to equals, the wholes are equal.", fillcolor="#442222", URL="../G.36/index.html", target="_top"];
+     "G.37" [label="G.37", tooltip="G.37 (I.13): A segment standing on a line makes either two right angles or adjacent angles summing to two right angles.", fillcolor="#222244", URL="../G.37/index.html", target="_top"];
+     "G.38" [label="G.38", tooltip="G.38 (I.post.4): All right angles are equal.", fillcolor="#444422", URL="../G.38/index.html", target="_top"];
+     "G.40" [label="G.40", tooltip="G.40 (I.15): Intersecting lines make their vertical angles equal.", fillcolor="#222244", URL="../G.40/index.html", target="_top"];
+     "G.41" [label="G.41", tooltip="G.41 (I.16): In any triangle, if one side is extended, the exterior angle is greater than either opposite interior angle.", fillcolor="#222244", URL="../G.41/index.html", target="_top"];
      "G.61" [label="G.61", tooltip="G.61 (I.def.17): A diameter of a circle is any segment drawn through the center and terminated in both directions by the arc of the circle; it bisects the circle.", fillcolor="#224422", URL="../G.61/index.html", target="_top"];
      "G.98" [label="G.98", tooltip="G.98 (III.1): Find the center of a given circle.", fillcolor="#222244", URL="../G.98/index.html", target="_top"];
-     "G.102" [label="G.102", tooltip="G.102 (III.5): If two circles cut one another, they will not have the same center.", fillcolor="#222244", URL="../G.102/index.html", target="_top"];
-     "G.108" [label="G.108", tooltip="G.108 (III.10): A circle does not cut a circle at more points than two.", fillcolor="#222244", URL="../G.108/index.html", target="_top"];
+     "G.102" [label="G.102", tooltip="G.102 (III.5): Two intersecting circles do not have the same center.", fillcolor="#222244", URL="../G.102/index.html", target="_top"];
+     "G.108" [label="G.108", tooltip="G.108 (III.10): A circle does not intersect another circle at more than two points.", fillcolor="#222244", URL="../G.108/index.html", target="_top"];
+     "G.126" [label="G.126", tooltip="G.126 (III.def.6): Asegment of a circle is thefigure contained by asegment and a arc of acircle.", fillcolor="#224422", URL="../G.126/index.html", target="_top"];
      "G.127" [label="G.127", tooltip="G.127 (III.def.11): Similar segments of circles are those which admit equalangles, or in which the angles are equal.", fillcolor="#224422", URL="../G.127/index.html", target="_top"];
-     "G.129" [label="G.129", tooltip="G.129 (III.24): Similar segments of circles on equal segments are equal.", fillcolor="#222244", URL="../G.129/index.html", target="_top"];
+     "G.128" [label="G.128", tooltip="G.128 (III.23): On the same segment and on the same side of it, there cannot be constructed two similar and unequal segments of circles.", fillcolor="#222244", URL="../G.128/index.html", target="_top"];
+     "G.129" [label="G.129", tooltip="G.129 (III.24): Similar segments of circles on equal segments are equal to one another.", fillcolor="#222244", URL="../G.129/index.html", target="_top"];
      "G.131" [label="G.131", tooltip="G.131 (III.def.1): Equal circles are those thediameters of which are equal, or the radii of which are equal.", fillcolor="#224422", URL="../G.131/index.html", target="_top"];
      "G.132" [label="G.132", tooltip="G.132 (III.def.9): And, when thesegments containing theangle cut off a arc, the angle is said tostand upon that arc.", fillcolor="#224422", URL="../G.132/index.html", target="_top"];
-     "G.133" [label="G.133", tooltip="G.133 (III.26): In equal circles equal angles stand on equal arcs, whether they stand at the centres or at the arcs.", fillcolor="#222244", URL="../G.133/index.html", target="_top"];
-     "G.135" [label="G.135", tooltip="G.135 (III.28): In equal circles equal segments cut off equal arcs, the greater equal to the greater and the less to the less.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.133" [label="G.133", tooltip="G.133 (III.26): In equal circles, equal angles stand on equal arcs, whether they stand at the centers or at the circumferences.", fillcolor="#222244", URL="../G.133/index.html", target="_top"];
+     "G.135" [label="G.135", tooltip="G.135 (III.28): In equal circles, equal chords cut off equal arcs, the greater equal to the greater and the less to the less.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -146,7 +130,9 @@ Dependency Graph
      "G.29" -> "G.1";
      "G.31" -> "G.1";
      "G.32" -> "G.1";
-     "G.98" -> "G.1";
+     "G.34" -> "G.1";
+     "G.37" -> "G.1";
+     "G.40" -> "G.1";
      "G.108" -> "G.1";
      "G.129" -> "G.1";
      "G.3" -> "G.2";
@@ -157,6 +143,9 @@ Dependency Graph
      "G.22" -> "G.2";
      "G.30" -> "G.2";
      "G.33" -> "G.2";
+     "G.34" -> "G.2";
+     "G.37" -> "G.2";
+     "G.40" -> "G.2";
      "G.4" -> "G.3";
      "G.6" -> "G.3";
      "G.8" -> "G.3";
@@ -181,12 +170,16 @@ Dependency Graph
      "G.31" -> "G.4";
      "G.32" -> "G.4";
      "G.33" -> "G.4";
+     "G.34" -> "G.4";
+     "G.37" -> "G.4";
+     "G.40" -> "G.4";
+     "G.41" -> "G.4";
      "G.61" -> "G.4";
      "G.98" -> "G.4";
-     "G.108" -> "G.4";
+     "G.126" -> "G.4";
+     "G.128" -> "G.4";
      "G.129" -> "G.4";
      "G.132" -> "G.4";
-     "G.133" -> "G.4";
      "G.135" -> "G.4";
      "G.6" -> "G.5";
      "G.7" -> "G.5";
@@ -196,6 +189,7 @@ Dependency Graph
      "G.9" -> "G.8";
      "G.10" -> "G.9";
      "G.12" -> "G.9";
+     "G.126" -> "G.9";
      "G.11" -> "G.10";
      "G.15" -> "G.10";
      "G.17" -> "G.10";
@@ -205,9 +199,8 @@ Dependency Graph
      "G.98" -> "G.10";
      "G.102" -> "G.10";
      "G.108" -> "G.10";
+     "G.126" -> "G.10";
      "G.129" -> "G.10";
-     "G.133" -> "G.10";
-     "G.135" -> "G.10";
      "G.15" -> "G.11";
      "G.17" -> "G.11";
      "G.20" -> "G.11";
@@ -217,7 +210,6 @@ Dependency Graph
      "G.102" -> "G.11";
      "G.108" -> "G.11";
      "G.133" -> "G.11";
-     "G.135" -> "G.11";
      "G.13" -> "G.12";
      "G.17" -> "G.12";
      "G.20" -> "G.12";
@@ -227,6 +219,8 @@ Dependency Graph
      "G.29" -> "G.12";
      "G.31" -> "G.12";
      "G.32" -> "G.12";
+     "G.34" -> "G.12";
+     "G.41" -> "G.12";
      "G.17" -> "G.13";
      "G.25" -> "G.13";
      "G.17" -> "G.14";
@@ -234,7 +228,12 @@ Dependency Graph
      "G.25" -> "G.14";
      "G.28" -> "G.14";
      "G.31" -> "G.14";
+     "G.34" -> "G.14";
+     "G.41" -> "G.14";
+     "G.98" -> "G.14";
      "G.102" -> "G.14";
+     "G.108" -> "G.14";
+     "G.128" -> "G.14";
      "G.133" -> "G.14";
      "G.135" -> "G.14";
      "G.17" -> "G.15";
@@ -243,16 +242,27 @@ Dependency Graph
      "G.17" -> "G.16";
      "G.20" -> "G.16";
      "G.21" -> "G.16";
+     "G.37" -> "G.16";
+     "G.40" -> "G.16";
+     "G.102" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
+     "G.34" -> "G.17";
      "G.20" -> "G.18";
      "G.25" -> "G.18";
+     "G.41" -> "G.18";
+     "G.108" -> "G.18";
      "G.20" -> "G.19";
      "G.25" -> "G.19";
+     "G.40" -> "G.19";
+     "G.133" -> "G.19";
+     "G.135" -> "G.19";
      "G.21" -> "G.20";
      "G.25" -> "G.21";
      "G.31" -> "G.21";
+     "G.34" -> "G.21";
+     "G.41" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
      "G.28" -> "G.22";
@@ -261,33 +271,58 @@ Dependency Graph
      "G.31" -> "G.22";
      "G.32" -> "G.22";
      "G.33" -> "G.22";
-     "G.98" -> "G.22";
+     "G.34" -> "G.22";
+     "G.37" -> "G.22";
+     "G.40" -> "G.22";
+     "G.41" -> "G.22";
      "G.127" -> "G.22";
      "G.132" -> "G.22";
      "G.133" -> "G.22";
-     "G.135" -> "G.22";
      "G.24" -> "G.23";
      "G.29" -> "G.23";
+     "G.129" -> "G.23";
      "G.25" -> "G.24";
      "G.32" -> "G.24";
+     "G.41" -> "G.24";
      "G.133" -> "G.24";
      "G.28" -> "G.25";
      "G.28" -> "G.26";
+     "G.41" -> "G.26";
+     "G.98" -> "G.26";
+     "G.102" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
+     "G.34" -> "G.29";
      "G.98" -> "G.29";
      "G.135" -> "G.29";
      "G.31" -> "G.30";
      "G.32" -> "G.31";
+     "G.41" -> "G.32";
      "G.98" -> "G.32";
+     "G.108" -> "G.32";
+     "G.34" -> "G.33";
+     "G.37" -> "G.33";
+     "G.38" -> "G.33";
+     "G.40" -> "G.33";
      "G.98" -> "G.33";
-     "G.108" -> "G.33";
+     "G.37" -> "G.34";
+     "G.98" -> "G.34";
+     "G.108" -> "G.34";
+     "G.37" -> "G.36";
+     "G.40" -> "G.37";
+     "G.40" -> "G.38";
+     "G.41" -> "G.40";
+     "G.128" -> "G.41";
      "G.131" -> "G.61";
      "G.108" -> "G.98";
+     "G.135" -> "G.98";
      "G.108" -> "G.102";
      "G.129" -> "G.108";
+     "G.128" -> "G.126";
+     "G.128" -> "G.127";
      "G.129" -> "G.127";
      "G.133" -> "G.127";
+     "G.129" -> "G.128";
      "G.133" -> "G.129";
      "G.133" -> "G.131";
      "G.135" -> "G.131";

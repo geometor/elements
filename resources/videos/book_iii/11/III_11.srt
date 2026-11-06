@@ -1,0 +1,63 @@
+1
+00:00:00,420 --> 00:00:02,343
+Book Three, Proposition Eleven.
+
+2
+00:00:02,343 --> 00:00:13,946
+If two circles touch one another internally, and their centers be taken, the straight line joining their centers, if it be also produced, will fall on the point of contact of the circles.
+
+3
+00:00:13,946 --> 00:00:23,997
+Let the two circles A B C and A D E touch one another internally at the point A, and let the center F of circle A B C, and the center G of circle A D E, be taken.
+
+4
+00:00:23,997 --> 00:00:28,650
+We claim that the straight line joined from G to F and produced falls on A.
+
+5
+00:00:29,070 --> 00:00:41,160
+For suppose it does not, but, if possible, let it fall outside as F G H, meeting the inner circle at D and the outer circle at H, and let the radii A F and A G be joined.
+
+6
+00:00:41,580 --> 00:00:53,138
+In triangle A F G, by One Twenty, any two sides are greater than the remaining side, so A G and G F together are greater than F A—that is, greater than the outer radius F H.
+
+7
+00:00:53,138 --> 00:00:59,686
+Subtracting the common segment F G from each, the remainder A G is greater than the remainder G H.
+
+8
+00:00:59,686 --> 00:01:04,429
+But A G and G D are radii of the inner circle A D E, so A G equals G D.
+
+9
+00:01:04,429 --> 00:01:10,242
+Therefore G D is greater than G H—the part greater than the whole, which is impossible.
+
+10
+00:01:10,242 --> 00:01:17,190
+Therefore, the line joined from F through G cannot fall outside the point of contact; it must fall on A.
+
+11
+00:01:17,190 --> 00:01:18,860
+As was required to prove.
+
+12
+00:01:19,280 --> 00:01:26,269
+Proposition Three Eleven establishes the collinearity of centers and point of contact for internally tangent circles.
+
+13
+00:01:26,269 --> 00:01:43,294
+As Heath and Camerer observe, Euclid's diagram places G D inside G H along the line of centers because the inner circle lies wholly within the outer circle; combined with Three Seven, G H is the minimum segment from G to the outer circle, immediately forbidding G D from exceeding G H.
+
+14
+00:01:43,294 --> 00:01:55,600
+In the GEOMETOR G-Index, node G one hundred nine connects Definition Three Three—circles touching without cutting—with the radius invariants of Book One, preparing the ground for Proposition Three Thirteen.
+
+15
+00:01:56,020 --> 00:02:08,530
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Eleven in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+16
+00:02:08,530 --> 00:02:14,700
+Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

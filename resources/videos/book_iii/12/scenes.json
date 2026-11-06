@@ -1,0 +1,308 @@
+[
+  {
+    "prop_id": "BOOK III • PROP. 12",
+    "short_title": "externally touching circles",
+    "g_id": "G.110",
+    "folio": "Folios 0033–0034 • pp. 27–28",
+    "enunciation": "If two circles touch one another externally, the straight line joining their centres will pass through the point of contact.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.110/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.110/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/12/",
+    "step_total": 8,
+    "subslides": [
+      {
+        "step_num": 1,
+        "step_kind": "GIVEN",
+        "chapter": "circles ( A B C ) and ( A D E ) touching externally at A",
+        "symbolic": "( A B C ) tangent_ex ( A D E ) at A, centers F, G",
+        "visible_ids": [
+          "el-circle-ABC",
+          "el-circle-ADE",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-E",
+          "el-pt-F",
+          "el-pt-G",
+          "lbl-A",
+          "lbl-B",
+          "lbl-E",
+          "lbl-F",
+          "lbl-G"
+        ],
+        "active_ids": [
+          "el-circle-ABC",
+          "hl-circle-ABC",
+          "el-circle-ADE",
+          "hl-circle-ADE",
+          "el-pt-A",
+          "el-pt-F",
+          "el-pt-G",
+          "lbl-A",
+          "lbl-F",
+          "lbl-G"
+        ],
+        "equal_ids": [],
+        "clause_html": "<div class=\"clause-line\">Let circles <span class=\"g-tok\">( A B C )</span> and <span class=\"g-tok\">( A D E )</span> touch externally at <span class=\"g-tok\">A</span>,</div><div class=\"clause-line\">with centers <span class=\"g-tok\">F</span> and <span class=\"g-tok\">G</span>.</div>",
+        "just_id": "G.103 • III.def.3, G.11 • I.def.16",
+        "just_title": "Two circles touch externally at A when they meet from outside without cutting one another."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK III • PROP. 12",
+    "short_title": "externally touching circles",
+    "g_id": "G.110",
+    "folio": "Folios 0033–0034 • pp. 27–28",
+    "enunciation": "If two circles touch one another externally, the straight line joining their centres will pass through the point of contact.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.110/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.110/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/12/",
+    "step_total": 8,
+    "subslides": [
+      {
+        "step_num": 2,
+        "step_kind": "CONSTRUCT",
+        "chapter": "suppose / F C D G / misses A; join / F A / and / G A /",
+        "symbolic": "assume A ∉ / F G / → / F C D G /, / F A /, / G A /",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-seg-FC",
+          "hl-seg-FC",
+          "el-seg-CD",
+          "hl-seg-CD",
+          "el-seg-DG",
+          "hl-seg-DG",
+          "el-seg-FG",
+          "hl-seg-FG",
+          "el-seg-FA",
+          "hl-seg-FA",
+          "el-seg-GA",
+          "hl-seg-GA",
+          "el-pt-C",
+          "el-pt-D",
+          "lbl-C",
+          "lbl-D"
+        ],
+        "equal_ids": [],
+        "clause_html": "<div class=\"clause-line\">Suppose <span class=\"g-tok\">/ F G /</span> misses <span class=\"g-tok\">A</span> and passes as <span class=\"g-tok\">/ F C D G /</span>;</div><div class=\"clause-line\">join the radii <span class=\"g-tok\">/ F A /</span> and <span class=\"g-tok\">/ A G /</span>.</div>",
+        "just_id": "G.14 • I.post.1",
+        "just_title": "Assume for reductio ad absurdum that the segment joining the centers cuts the circles at C and D outside A."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK III • PROP. 12",
+    "short_title": "externally touching circles",
+    "g_id": "G.110",
+    "folio": "Folios 0033–0034 • pp. 27–28",
+    "enunciation": "If two circles touch one another externally, the straight line joining their centres will pass through the point of contact.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.110/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.110/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/12/",
+    "step_total": 8,
+    "subslides": [
+      {
+        "step_num": 3,
+        "step_kind": "ASSERT",
+        "chapter": "/ F A / = / F C / and / G A / = / G D /",
+        "symbolic": "/ F A / = / F C /, / G A / = / G D / → / F A / + / A G / = / F C / + / G D /",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-circle-ABC",
+          "el-circle-ADE",
+          "el-pt-F",
+          "el-pt-G",
+          "el-pt-A",
+          "el-pt-C",
+          "el-pt-D"
+        ],
+        "equal_ids": [
+          "el-seg-FA",
+          "hl-seg-FA",
+          "el-seg-FC",
+          "hl-seg-FC",
+          "el-seg-GA",
+          "hl-seg-GA",
+          "el-seg-DG",
+          "hl-seg-DG"
+        ],
+        "tick_ids": [
+          "el-seg-FA",
+          "el-seg-FC"
+        ],
+        "tick_2_ids": [
+          "el-seg-GA",
+          "el-seg-DG"
+        ],
+        "clause_html": "<div class=\"clause-line\">As radii, <span class=\"eq-tok\">/ F A / = / F C /</span> and <span class=\"eq-tok\">/ G A / = / G D /</span>;</div><div class=\"clause-line\">therefore <span class=\"eq-tok\">/ F A / + / A G / = / F C / + / G D /</span>.</div>",
+        "just_id": "G.10 • I.def.15, G.36 • I.cn.2",
+        "just_title": "Radii of the same circle are equal (I.def.15), and equals added to equals give equal sums (I.cn.2)."
+      },
+      {
+        "step_num": 4,
+        "step_kind": "ASSERT",
+        "chapter": "/ F G / > / F A / + / A G / contradicts triangle inequality",
+        "symbolic": "/ F G / > / F C / + / G D / = / F A / + / A G /, but / F G / < / F A / + / A G / ⇒⇐",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-tri-FAG",
+          "hl-tri-FAG",
+          "el-seg-CD",
+          "hl-seg-CD",
+          "el-seg-FG",
+          "hl-seg-FG"
+        ],
+        "equal_ids": [
+          "el-seg-FA",
+          "hl-seg-FA",
+          "el-seg-FC",
+          "hl-seg-FC",
+          "el-seg-GA",
+          "hl-seg-GA",
+          "el-seg-DG",
+          "hl-seg-DG"
+        ],
+        "tick_ids": [
+          "el-seg-FA",
+          "el-seg-FC"
+        ],
+        "tick_2_ids": [
+          "el-seg-GA",
+          "el-seg-DG"
+        ],
+        "clause_html": "<div class=\"clause-line\">Thus the whole <span class=\"g-tok\">/ F G / &gt; / F A / + / A G /</span>,</div><div class=\"clause-line\">but in <span class=\"g-tok\">&lt; F A G &gt;</span>, <span class=\"g-tok\">/ F G / &lt; / F A / + / A G /</span> <span class=\"eq-tok\">⇒⇐</span></div>",
+        "just_id": "G.26 • I.cn.5, G.45 • I.20",
+        "just_title": "The whole / F G / exceeds its parts / F C / + / G D /, violating the triangle inequality in < F A G > (I.20)."
+      },
+      {
+        "step_num": 5,
+        "step_kind": "∴",
+        "is_punchline": true,
+        "chapter": "segment / F G / passes through point of contact A",
+        "symbolic": "∴ A ∈ / F G /",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-circle-ABC",
+          "hl-circle-ABC",
+          "el-circle-ADE",
+          "hl-circle-ADE",
+          "el-pt-A",
+          "el-pt-F",
+          "el-pt-G",
+          "lbl-A",
+          "lbl-F",
+          "lbl-G"
+        ],
+        "equal_ids": [
+          "el-seg-FA",
+          "hl-seg-FA",
+          "el-seg-GA",
+          "hl-seg-GA"
+        ],
+        "tick_ids": [
+          "el-seg-FA"
+        ],
+        "tick_2_ids": [
+          "el-seg-GA"
+        ],
+        "clause_html": "<div class=\"clause-line\">∴ The segment <span class=\"g-tok\">/ F G /</span> joining the centers</div><div class=\"clause-line\">must pass through the point of contact <span class=\"eq-tok\">A</span>.</div>",
+        "just_id": "G.110 • III.12",
+        "just_title": "The straight line joining the centers of externally touching circles passes through their point of contact (Q.E.D.)."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK III • PROP. 12",
+    "short_title": "externally touching circles",
+    "g_id": "G.110",
+    "folio": "Folios 0033–0034 • pp. 27–28",
+    "enunciation": "If two circles touch one another externally, the straight line joining their centres will pass through the point of contact.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.110/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.110/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/12/",
+    "step_total": 8,
+    "widescreen_only": true,
+    "subslides": [
+      {
+        "step_num": 6,
+        "step_kind": "COMMENTARY",
+        "widescreen_only": true,
+        "chapter": "Heron's supplement & the 5 circle-distance regimes",
+        "symbolic": "/ F G / = r₁ + r₂ (external) vs. |r₁ − r₂| (internal)",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-circle-ABC",
+          "hl-circle-ABC",
+          "el-circle-ADE",
+          "hl-circle-ADE",
+          "el-pt-A",
+          "lbl-A"
+        ],
+        "equal_ids": [
+          "el-seg-FA",
+          "hl-seg-FA",
+          "el-seg-GA",
+          "hl-seg-GA"
+        ],
+        "tick_ids": [
+          "el-seg-FA"
+        ],
+        "tick_2_ids": [
+          "el-seg-GA"
+        ],
+        "clause_html": "<div class=\"clause-line\"><strong>Heron's Addition &amp; Center-Distance Classification</strong></div><div class=\"clause-line\"><span class=\"eq-tok\">/ F G / = / F A / + / A G / = r₁ + r₂</span></div><div class=\"clause-line\" style=\"font-size:28px;color:#cbd5e1;\">Originated by Heron of Alexandria to complement III.11, and expanded by Enriques and Amaldi into the five metric regimes comparing center distance d against r₁ + r₂ and |r₁ − r₂|.</div>",
+        "just_tag": "✦ HEATH COMMENTARY",
+        "just_id": "Heath (1908) • Vol. II, pp. 28–32",
+        "just_title": "Neither Heron nor an-Nairīzī had III.12 as a separate proposition in Euclid's original text; Campanus numbers III.13 as 12."
+      },
+      {
+        "step_num": 7,
+        "step_kind": "GENEALOGY",
+        "widescreen_only": true,
+        "chapter": "G.110 dependency tree & symbolic model",
+        "symbolic": "G.1, G.4, G.10, G.11, G.45, G.103 → G.110",
+        "stage_html": "<div style=\"width:100%;height:100%;display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:36px 8px 8px 8px;align-items:stretch;\"><div style=\"background:rgba(11,14,21,0.92);border:1.5px solid rgba(56,189,248,0.45);border-radius:16px;padding:22px 24px;display:flex;flex-direction:column;justify-content:space-between;\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.12em;color:#38bdf8;\">◈ G-INDEX PREREQUISITES → G.110</div><div style=\"display:flex;flex-direction:column;gap:10px;margin:12px 0;\"><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #5ec27e;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.103 (III.def.3)</span><span style=\"color:#f4f1ea;\">circles touching</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.45 (I.20)</span><span style=\"color:#f4f1ea;\">triangle inequality</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.11 (I.def.16)</span><span style=\"color:#f4f1ea;\">center of circle</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.10 (I.def.15)</span><span style=\"color:#f4f1ea;\">circle &amp; equal radii</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.4 (I.def.4)</span><span style=\"color:#f4f1ea;\">straight line segment</span></div></div><div style=\"background:rgba(232,184,90,0.16);border:1.5px solid #e8b85a;border-radius:10px;padding:11px 16px;text-align:center;font-family:'JetBrains Mono',monospace;font-size:17px;font-weight:700;color:#e8b85a;\">↓ G.110 (III.12) • circles touch externally</div></div><div style=\"background:rgba(11,14,21,0.92);border:1.5px solid rgba(232,184,90,0.4);border-radius:16px;padding:22px 24px;display:flex;flex-direction:column;justify-content:space-between;\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.12em;color:#e8b85a;\">⚙ GEOMETOR.MODEL • G.110/g1.py</div><pre style=\"font-family:'JetBrains Mono',monospace;font-size:14.5px;line-height:1.48;color:#e2e8f0;background:rgba(7,9,14,0.85);padding:16px;border-radius:10px;border:1px solid rgba(148,163,184,0.25);overflow:hidden;\">model = Model(&quot;III.12&quot;)\nA = model.set_point(0, 0, ID=&quot;A&quot;)\nmodel.construct_circle(O1, A)\nmodel.construct_circle(O2, A)\n\nF = model.set_point(-53, 12, ID=&quot;F&quot;)\nG = model.set_point(47, -52, ID=&quot;G&quot;)\nmodel.construct_line(F, G)\nmodel.set_segment(F, A)\nmodel.set_segment(G, A)\nmodel.set_polygon([F, A, G])</pre><div style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">43 total ancestor nodes in G-Index • Depth 13</div></div></div>",
+        "clause_html": "<div class=\"clause-line\"><span class=\"coincide-tok\">G.110</span> synthesizes <span class=\"g-tok\">6 direct prerequisites</span></div><div class=\"clause-line\">across <span class=\"g-tok\">43 total ancestor nodes</span> in the G-Index</div><div class=\"clause-line\" style=\"font-size:28px;color:#cbd5e1;\">Uniting Book I's triangle inequality (G.45) with Book III's tangency definition (G.103).</div>",
+        "just_tag": "◈ G-INDEX GENEALOGY",
+        "just_id": "G.110 • 6 Direct Rules",
+        "just_title": "Depends on G.1 (I.def.1), G.4 (I.def.4), G.10 (I.def.15), G.11 (I.def.16), G.45 (I.20), and G.103 (III.def.3)."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK III • PROP. 12",
+    "short_title": "externally touching circles",
+    "g_id": "G.110",
+    "folio": "Folios 0033–0034 • pp. 27–28",
+    "enunciation": "If two circles touch one another externally, the straight line joining their centres will pass through the point of contact.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.110/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.110/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/12/",
+    "step_total": 8,
+    "widescreen_only": true,
+    "subslides": [
+      {
+        "step_num": 8,
+        "step_kind": "PARTICIPATE",
+        "widescreen_only": true,
+        "chapter": "explore the GEOMETOR Elements Codex & participate",
+        "symbolic": "geometor.github.io/elements",
+        "stage_html": "<div style=\"width:100%;height:100%;display:flex;flex-direction:column;justify-content:space-between;padding:42px 16px 12px 16px;gap:20px;\"><div style=\"background:linear-gradient(135deg,rgba(232,184,90,0.16) 0%,rgba(16,20,29,0.95) 100%);border:2px solid rgba(232,184,90,0.55);border-radius:18px;padding:28px 32px;display:flex;flex-direction:column;gap:12px;box-shadow:0 16px 40px rgba(0,0,0,0.6);\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.16em;color:#e8b85a;\">★ INTERACTIVE DIGITAL EDITION</div><div style=\"font-family:Georgia,serif;font-size:38px;font-weight:700;color:#f8f6f0;\">GEOMETOR • Elements Codex</div><div style=\"font-family:'JetBrains Mono',monospace;font-size:22px;color:#5ec27e;font-weight:700;\">https://geometor.github.io/elements/elements2/G.110/</div></div><div style=\"display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;flex:1;\"><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#e8b85a;font-weight:700;\">01 • PSEUDOCODE</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Hover-synced symbolic steps, signatures, and interactive SVG diagrams.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 1 • G.110</span></div><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#38bdf8;font-weight:700;\">02 • PYTHON MODEL</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Executable geometor.model scripts with exact algebraic coordinates.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 2 • g1.py</span></div><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#5ec27e;font-weight:700;\">03 • HEATH (1908)</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Complete classical translation, folio plates, and historical commentary.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 3 • Folios 0033–0034</span></div></div></div>",
+        "clause_html": "<div class=\"clause-line\">Explore the <span class=\"g-tok\">Elements Codex</span> &amp; <span class=\"eq-tok\">G-Index</span></div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Subscribe to <strong>@geometor</strong> for all 465 propositions</div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Share questions &amp; insights in the comments</div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Star &amp; contribute at <strong>github.com/geometor</strong></div>",
+        "just_tag": "★ PARTICIPATE & SUPPORT",
+        "just_id": "github.com/geometor/elements",
+        "just_title": "Open-source symbolic reconstruction of Euclid's Elements — links in the video description."
+      }
+    ]
+  }
+]

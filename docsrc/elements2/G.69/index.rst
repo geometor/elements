@@ -10,8 +10,9 @@
 :categories: theorem, proof, plane-geometry
 :category: theorem, proof, plane-geometry
 :tags: book-i, point, segment, triangle, trilateral, parallel-straight-lines, straight-line, parallel, equality, reductio-ad-absurdum
-:dependencies: G.4, G.12, G.14, G.16, G.52, G.58, G.67
+:dependencies: G.4, G.12, G.14, G.16, G.26, G.52, G.58, G.67
 :excerpt: Equal triangles on equal bases and on the same side lie in the same parallels.
+:youtube_id: hmuAh4DuitI
 
 .. _G.69:
 .. _I.40:
@@ -28,15 +29,15 @@ G.69 equal triangles on equal bases are in the same parallels
 .. signature:: theorem
 
    | :fn:`equal_triangles_equal_bases_parallel <G.69>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`< C D E > <g1:< C D E >>`, :g:`/ B C / <g1:/ B C />`, :g:`/ C E / <g1:/ C E />`)
-   | **given** :g:`< A B C > <g1:< A B C >>`, :g:`< C D E > <g1:< C D E >>` be :eq:`equal <g1:< A B C > = g1:< C D E >>` triangles on :eq:`= <g1:/ B C / = g1:/ C E />` bases :g:`/ B C / <g1:/ B C />`, :g:`/ C E / <g1:/ C E />` and on the same side
-   | **prove** they are also in the same parallels; :g:`/ A D / <g1:/ A D />` is parallel to :g:`/ B E / <g1:/ B E />`
+   | **given** :g:`< A B C > <g1:< A B C >>` :eq:`= <g1:< A B C > = g1:< C D E >>` :g:`< C D E > <g1:< C D E >>`, :g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ B C / = g1:/ C E />` :g:`/ C E / <g1:/ C E />`
+   | **prove** :g:`/ A D / <g1:/ A D />` ∥ :g:`/ B E / <g1:/ B E />`
 
 .. picture:: g1.svg
    :alt: Folio 0351 Figure 1 - Proposition 40
 
 .. step:: given
 
-   :g:`< A B C > <g1:< A B C >>`, :g:`< C D E > <g1:< C D E >>` be :eq:`equal <g1:< A B C > = g1:< C D E >>` triangles on :eq:`= <g1:/ B C / = g1:/ C E />` bases :g:`/ B C / <g1:/ B C />`, :g:`/ C E / <g1:/ C E />` and on the same side
+   :g:`< A B C > <g1:< A B C >>` :eq:`= <g1:< A B C > = g1:< C D E >>` :g:`< C D E > <g1:< C D E >>`, :g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ B C / = g1:/ C E />` :g:`/ C E / <g1:/ C E />`
 
 .. step:: construct
 
@@ -44,39 +45,19 @@ G.69 equal triangles on equal bases are in the same parallels
 
 .. step:: construct
 
-   :fn:`parallel_line <G.58>`: If not, let :g:`/ A F / <g1:/ A F />` be drawn through :g:`A <g1:A>` parallel to :g:`/ B E / <g1:/ B E />`
-
-.. step:: construct
-
-   :fn:`segment <G.14>`\ (:g:`F <g1:F>`, :g:`E <g1:E>`) → :g:`/ F E / <g1:/ F E />`
-
-.. step:: assert
-
-   :g:`< A B C > <g1:< A B C >>` is :eq:`equal <g1:< A B C > = g1:< F C E >>` to :g:`< F C E > <g1:< F C E >>`
+   ? ¬(:g:`/ A D / <g1:/ A D />` ∥ :g:`/ B E / <g1:/ B E />`) → :fn:`parallel_line <G.58>`\ (:g:`A <g1:A>`, :g:`/ B E / <g1:/ B E />`) → :g:`/ A F / <g1:/ A F />` ∥ :g:`/ B E / <g1:/ B E />`, :fn:`segment <G.14>`\ (:g:`F <g1:F>`, :g:`E <g1:E>`) → :g:`/ F E / <g1:/ F E />`
 
 .. step:: assert ∵ triangles_equal_bases <G.67>
 
-   For they are on :eq:`= <g1:/ B C / = g1:/ C E />` bases :g:`/ B C / <g1:/ B C />`, :g:`/ C E / <g1:/ C E />` and in the same parallels :g:`/ B E / <g1:/ B E />`, :g:`/ A F / <g1:/ A F />`
+   :g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ B C / = g1:/ C E />` :g:`/ C E / <g1:/ C E />`, :g:`/ A F / <g1:/ A F />` ∥ :g:`/ B E / <g1:/ B E />` → :g:`< A B C > <g1:< A B C >>` :eq:`= <g1:< A B C > = g1:< F C E >>` :g:`< F C E > <g1:< F C E >>`
 
-.. step:: assert
+.. step:: assert ∵ equal_transitive, whole_greater_than_part <G.16, G.26>
 
-   :g:`< A B C > <g1:< A B C >>` is :eq:`equal <g1:< A B C > = g1:< D C E >>` to :g:`< D C E > <g1:< D C E >>`
+   :g:`< A B C > <g1:< A B C >>` :eq:`= <g1:< A B C > = g1:< D C E >>` :g:`< D C E > <g1:< D C E >>`, :g:`< A B C > <g1:< A B C >>` :eq:`= <g1:< A B C > = g1:< F C E >>` :g:`< F C E > <g1:< F C E >>` → :g:`< D C E > <g1:< D C E >>` :eq:`= <g1:< D C E > = g1:< F C E >>` :g:`< F C E > <g1:< F C E >>` ⇒⇐
 
-.. step:: assert ∵ equal_transitive <G.16>
+.. step:: conclude ∵ parallel_lines_def <G.52>
 
-   :g:`< D C E > <g1:< D C E >>` is also :eq:`equal <g1:< D C E > = g1:< F C E >>` to :g:`< F C E > <g1:< F C E >>`, the greater to the less ⇒⇐
-
-.. step:: assert
-
-   :g:`/ A F / <g1:/ A F />` is not parallel to :g:`/ B E / <g1:/ B E />`
-
-.. step:: assert
-
-   Similarly we can prove that neither is any other :term:`segment <G.4>` except :g:`/ A D / <g1:/ A D />`
-
-.. step:: conclude
-
-   :g:`/ A D / <g1:/ A D />` is parallel to :g:`/ B E / <g1:/ B E />`
+   :g:`/ A D / <g1:/ A D />` ∥ :g:`/ B E / <g1:/ B E />`
 
 Dependency Graph
 ----------------
@@ -185,7 +166,6 @@ Dependency Graph
      "G.55" -> "G.2";
      "G.56" -> "G.2";
      "G.58" -> "G.2";
-     "G.65" -> "G.2";
      "G.4" -> "G.3";
      "G.6" -> "G.3";
      "G.8" -> "G.3";
@@ -288,6 +268,7 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.51" -> "G.14";
      "G.58" -> "G.14";
      "G.60" -> "G.14";
@@ -302,9 +283,11 @@ Dependency Graph
      "G.21" -> "G.16";
      "G.37" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.56" -> "G.16";
      "G.64" -> "G.16";
      "G.65" -> "G.16";
+     "G.67" -> "G.16";
      "G.69" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
@@ -314,6 +297,7 @@ Dependency Graph
      "G.25" -> "G.18";
      "G.41" -> "G.18";
      "G.45" -> "G.18";
+     "G.53" -> "G.18";
      "G.58" -> "G.18";
      "G.67" -> "G.18";
      "G.20" -> "G.19";
@@ -328,6 +312,7 @@ Dependency Graph
      "G.43" -> "G.21";
      "G.45" -> "G.21";
      "G.47" -> "G.21";
+     "G.51" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
      "G.28" -> "G.22";
@@ -363,11 +348,15 @@ Dependency Graph
      "G.62" -> "G.24";
      "G.64" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.51" -> "G.26";
+     "G.69" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -433,5 +422,6 @@ Dependency Graph
 .. toctree::
    :hidden:
 
+   video
    code
    heath

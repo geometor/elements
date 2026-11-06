@@ -1,0 +1,39 @@
+================================================================================
+YOUTUBE 1080P (16:9) TITLE
+================================================================================
+I.45 • to construct, in a given rectilineal angle, a parallelogram equal to a given rectilineal f...
+
+================================================================================
+YOUTUBE SHORT (9:16) TITLE
+================================================================================
+I.45 • to construct, in a given rectilineal angle, a parallelogram equal to a given rectilineal f...
+
+================================================================================
+DESCRIPTION
+================================================================================
+“To construct, in a given rectilineal angle, a parallelogram equal to a given rectilineal figure.”
+— Euclid's Elements, BOOK I • PROP. 45 (G.74)
+
+00:00 1 · GIVEN: ⟨ A B C D ⟩, ⟨ E )
+00:20 2 · CONSTRUCT: segment(D, B) → / D B /, parallelogram_from_triangle(⟨ A B D ⟩, ⟨ E )) → ⟨ F K H G ⟩ (= ⟨ A B D ⟩, ⟨ H K F ) = ⟨ E ))
+00:32 3 · CONSTRUCT: apply_parallelogram_on_segment(/ G H /, ⟨ D B C ⟩, ⟨ E )) → ⟨ G H M L ⟩ (= ⟨ D B C ⟩, ⟨ G H M ) = ⟨ E ))
+00:44 4 · ASSERT: ⟨ H K F ) = ⟨ G H M ) → ⟨ K H G ) + ⟨ G H M ) = ⟨ F K H ) + ⟨ K H G ) = 2∟ → / K H /, / H M / ∈ [ K M ]
+01:05 5 · ASSERT: ⟨ M H G ) = ⟨ H G F ) → ⟨ H G F ) + ⟨ H G L ) = ⟨ M H G ) + ⟨ H G L ) = 2∟ → / F G /, / G L / ∈ [ F L ]
+01:25 6 · ASSERT: / F K / = / H G / = / M L /, / F K / ∥ / H G / ∥ / M L / → / K M / = / F L /, / K M / ∥ / F L / → ⟨ K F L M ⟩
+01:46 7 · ∴: ⟨ A B D ⟩ = ⟨ F K H G ⟩, ⟨ D B C ⟩ = ⟨ G H M L ⟩ → ⟨ K F L M ⟩ = ⟨ A B C D ⟩ (⟨ F K M ) = ⟨ E ))
+
+GEOMETOR • G.74 • v2
+
+================================================================================
+TAGS
+================================================================================
+Euclid, Euclid's Elements, Euclid I.45, G.74, Geometry, Constructive Geometry, Compass and Straightedge, Mathematical Proof, GEOMETOR, Thomas Little Heath
+
+================================================================================
+MEDIA & CAPTIONS FILES
+================================================================================
+• 9:16 Short MP4 : I_45_short.mp4
+• 16:9 1080p MP4 : I_45_1080p.mp4
+• Closed Captions: I_45.srt
+• 16:9 Thumbnail : I_45_thumb.png
+• 9:16 Thumbnail : I_45_short_thumb.png

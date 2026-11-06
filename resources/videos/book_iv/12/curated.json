@@ -1,0 +1,70 @@
+{
+  "IV.12": {
+    "subtype": "problem",
+    "args": [
+      ":g:`( A B C D E ) <g1:( A B C D E )>`"
+    ],
+    "returns": [
+      ":g:`< G H K L M > <g1:< G H K L M >>`"
+    ],
+    "given": ":g:`( A B C D E ) <g1:( A B C D E )>` is a given :term:`circle <G.10>`",
+    "contract": ":g:`< G H K L M > <g1:< G H K L M >>` is an :term:`equilateral <G.13>` and equiangular pentagon :term:`circumscribed about <G.150>` :g:`( A B C D E ) <g1:( A B C D E )>`",
+    "steps": [
+      [
+        "given",
+        [
+          "I.def.15",
+          "IV.def.4"
+        ],
+        ":g:`( A B C D E ) <g1:( A B C D E )>` is the given circle"
+      ],
+      [
+        "construct",
+        [
+          "IV.11",
+          "III.16"
+        ],
+        "@fn(IV.11)(:g:`( A B C D E ) <g1:( A B C D E )>`) → vertices :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`E <g1:E>` with equal arcs :g:`( A B ) <g1:( A B )>` :eq:`= <g1:( A B ) = g1:( B C ) = g1:( C D ) = g1:( D E ) = g1:( E A )>` :g:`( B C ) <g1:( B C )>` = :g:`( C D ) <g1:( C D )>` = :g:`( D E ) <g1:( D E )>` = :g:`( E A ) <g1:( E A )>`, @fn(III.16)(:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`E <g1:E>`) → tangents :g:`/ G H / <g1:/ G H />`, :g:`/ H K / <g1:/ H K />`, :g:`/ K L / <g1:/ K L />`, :g:`/ L M / <g1:/ L M />`, :g:`/ M G / <g1:/ M G />`"
+      ],
+      [
+        "construct",
+        [
+          "III.1",
+          "I.post.1"
+        ],
+        "@fn(III.1)(:g:`( A B C D E ) <g1:( A B C D E )>`) → center :g:`F <g1:F>`, @fn(I.post.1)(:g:`F <g1:F>`, :g:`B <g1:B>`, :g:`K <g1:K>`, :g:`C <g1:C>`, :g:`L <g1:L>`, :g:`D <g1:D>`) → :g:`/ F B / <g1:/ F B />`, :g:`/ F K / <g1:/ F K />`, :g:`/ F C / <g1:/ F C />`, :g:`/ F L / <g1:/ F L />`, :g:`/ F D / <g1:/ F D />`"
+      ],
+      [
+        "assert",
+        [
+          "III.18",
+          "I.47",
+          "I.8"
+        ],
+        ":g:`/ F B / <g1:/ F B />` ⊥ :g:`/ H K / <g1:/ H K />`, :g:`/ F C / <g1:/ F C />` ⊥ :g:`/ K L / <g1:/ K L />`, :g:`/ F D / <g1:/ F D />` ⊥ :g:`/ L M / <g1:/ L M />` → :g:`< F C >` + :g:`< C K >` = :g:`< F K >` = :g:`< F B >` + :g:`< B K >` → :g:`/ B K / <g1:/ B K />` :eq:`= <g1:/ B K / = g1:/ K C />` :g:`/ C K / <g1:/ K C />` → :g:`< B F K ) <g1:< B F K )>` :eq:`= <g1:< B F K ) = g1:< K F C )>` :g:`< K F C ) <g1:< K F C )>` and :g:`< B K F ) <g1:< B K F )>` :eq:`= <g1:< B K F ) = g1:< F K C )>` :g:`< F K C ) <g1:< F K C )>`"
+      ],
+      [
+        "assert",
+        [
+          "III.27",
+          "I.26"
+        ],
+        ":g:`( B C ) <g1:( B C )>` :eq:`= <g1:( B C ) = g1:( C D )>` :g:`( C D ) <g1:( C D )>` → :g:`< B F C ) <g1:< B F C )>` :eq:`= <g1:< B F C ) = g1:< C F D )>` :g:`< C F D ) <g1:< C F D )>` → halves :g:`< K F C ) <g1:< K F C )>` :eq:`= <g1:< K F C ) = g1:< C F L )>` :g:`< L F C ) <g1:< C F L )>`, with :g:`< F C K ) <g1:< F C K )>` :eq:`= <g1:< F C K ) = g1:< F C L )>` :g:`< F C L ) <g1:< F C L )>` and :g:`/ F C / <g1:/ F C />` common → :g:`/ K C / <g1:/ K C />` :eq:`= <g1:/ K C / = g1:/ C L />` :g:`/ C L / <g1:/ C L />` and :g:`< F K C ) <g1:< F K C )>` :eq:`= <g1:< F K C ) = g1:< F L C )>` :g:`< F L C ) <g1:< F L C )>`"
+      ],
+      [
+        "assert",
+        [
+          "I.cn.1"
+        ],
+        ":g:`/ K L / <g1:/ K L />` = 2 :g:`/ K C / <g1:/ K C />` = 2 :g:`/ B K / <g1:/ B K />` = :g:`/ H K / <g1:/ H K />` → :g:`/ G H / <g1:/ G H />` :eq:`= <g1:/ G H / = g1:/ H K / = g1:/ K L / = g1:/ L M / = g1:/ M G />` :g:`/ H K / <g1:/ H K />` = :g:`/ K L / <g1:/ K L />` = :g:`/ L M / <g1:/ L M />` = :g:`/ M G / <g1:/ M G />`, and doubles :g:`< G H K ) <g1:< K H G )>` :eq:`= <g1:< K H G ) = g1:< B K C ) = g1:< D L C ) = g1:< G M L ) = g1:< H G M )>` :g:`< H K L ) <g1:< B K C )>` = :g:`< K L M ) <g1:< D L C )>` = :g:`< L M G ) <g1:< G M L )>` = :g:`< M G H ) <g1:< H G M )>`"
+      ],
+      [
+        "conclude",
+        [
+          "IV.def.4"
+        ],
+        ":g:`< G H K L M > <g1:< G H K L M >>` is an equilateral and equiangular pentagon circumscribed about :g:`( A B C D E ) <g1:( A B C D E )>`"
+      ]
+    ]
+  }
+}

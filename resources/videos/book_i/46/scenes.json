@@ -1,0 +1,245 @@
+[
+  {
+    "bell": "proposition",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 46",
+        "g_id": "G.75",
+        "folio": "Folio 0361–0362 • p. 347",
+        "title": "construct a square on a segment",
+        "enunciation": "On a given straight line to describe a square.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0361.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0361.g1.png",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0361.g1.png",
+        "step_num": 1,
+        "total_steps": 6,
+        "step_kind": "GIVEN",
+        "symbolic": "/ A B /",
+        "clause_html": "<span class=\"g-tok\">/ A B /</span>",
+        "just_id": "GIVEN",
+        "just_title": "construct: < A D E B > (/ B A / = / A D / = / D E / = / E B /, < B A D ) = ∟)",
+        "visible_ids": [
+          "el-seg-AB",
+          "hl-seg-AB",
+          "el-pt-A", "el-pt-B",
+          "lbl-A", "lbl-B"
+        ],
+        "active_ids": [
+          "hl-seg-AB",
+          "el-pt-A", "el-pt-B",
+          "lbl-A", "lbl-B"
+        ],
+        "equal_ids": [],
+        "tick_ids": []
+      }
+    ]
+  },
+  {
+    "bell": "construction",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 46",
+        "g_id": "G.75",
+        "folio": "Folio 0361–0362 • p. 347",
+        "title": "construct a square on a segment",
+        "enunciation": "On a given straight line to describe a square.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0361.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0361.g1.png",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0361.g1.png",
+        "step_num": 2,
+        "total_steps": 6,
+        "step_kind": "CONSTRUCT",
+        "symbolic": "perpendicular_at(/ A B /, A) → / A C / ⊥ / A B /, cut_equal_segment(/ A C /, / A B /) → / A D / = / A B /",
+        "clause_html": "<span class=\"fn-tok\">perpendicular_at</span>(<span class=\"g-tok\">/ A B /</span>, <span class=\"g-tok\">A</span>) → <span class=\"g-tok\">/ A C /</span> ⊥ <span class=\"g-tok\">/ A B /</span>, <span class=\"fn-tok\">cut_equal_segment</span>(<span class=\"g-tok\">/ A C /</span>, <span class=\"g-tok\">/ A B /</span>) → <span class=\"g-tok\">/ A D /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ A B /</span>",
+        "just_id": "G.34 • I.11, G.21 • I.3",
+        "just_title": "perpendicular_at",
+        "visible_ids": [
+          "el-seg-AB", "el-seg-AC", "el-seg-AD", "el-seg-DC",
+          "el-ang-BAD",
+          "hl-seg-AB", "hl-seg-AC", "hl-seg-AD",
+          "hl-ang-BAD", "hl-arc-BAD",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D"
+        ],
+        "active_ids": [
+          "hl-seg-AC", "hl-ang-BAD", "hl-arc-BAD",
+          "el-pt-A", "el-pt-C", "el-pt-D",
+          "lbl-A", "lbl-C", "lbl-D"
+        ],
+        "equal_ids": [
+          "hl-seg-AB", "hl-seg-AD"
+        ],
+        "tick_ids": [
+          "hl-seg-AB", "hl-seg-AD"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 46",
+        "g_id": "G.75",
+        "folio": "Folio 0361–0362 • p. 347",
+        "title": "construct a square on a segment",
+        "enunciation": "On a given straight line to describe a square.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0361.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0361.g1.png",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0361.g1.png",
+        "step_num": 3,
+        "total_steps": 6,
+        "step_kind": "CONSTRUCT",
+        "symbolic": "parallel_line(D, / A B /) → / D E / ∥ / A B /, parallel_line(B, / A D /) → / B E / ∥ / A D / → < A D E B >",
+        "clause_html": "<span class=\"fn-tok\">parallel_line</span>(<span class=\"g-tok\">D</span>, <span class=\"g-tok\">/ A B /</span>) → <span class=\"g-tok\">/ D E /</span> ∥ <span class=\"g-tok\">/ A B /</span>, <span class=\"fn-tok\">parallel_line</span>(<span class=\"g-tok\">B</span>, <span class=\"g-tok\">/ A D /</span>) → <span class=\"g-tok\">/ B E /</span> ∥ <span class=\"g-tok\">/ A D /</span> → <span class=\"g-tok\">&lt; A D E B &gt;</span>",
+        "just_id": "G.58 • I.31",
+        "just_title": "parallel_line",
+        "visible_ids": [
+          "el-poly-ADEB",
+          "el-seg-AB", "el-seg-AC", "el-seg-AD", "el-seg-DC", "el-seg-DE", "el-seg-BE",
+          "el-ang-BAD",
+          "hl-poly-ADEB",
+          "hl-seg-AB", "hl-seg-AD", "hl-seg-DE", "hl-seg-BE",
+          "hl-ang-BAD", "hl-arc-BAD",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E"
+        ],
+        "active_ids": [
+          "hl-poly-ADEB", "hl-seg-DE", "hl-seg-BE",
+          "el-pt-D", "el-pt-B", "el-pt-E",
+          "lbl-D", "lbl-B", "lbl-E"
+        ],
+        "equal_ids": [
+          "hl-seg-AB", "hl-seg-AD"
+        ],
+        "tick_ids": [
+          "hl-seg-AB", "hl-seg-AD"
+        ]
+      }
+    ]
+  },
+  {
+    "bell": "insight",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 46",
+        "g_id": "G.75",
+        "folio": "Folio 0361–0362 • p. 347",
+        "title": "construct a square on a segment",
+        "enunciation": "On a given straight line to describe a square.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0361.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0361.g1.png",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0361.g1.png",
+        "step_num": 4,
+        "total_steps": 6,
+        "step_kind": "ASSERT",
+        "symbolic": "/ A B / = / D E /, / A D / = / B E /, / A B / = / A D / → / B A / = / A D / = / D E / = / E B /",
+        "clause_html": "<span class=\"g-tok\">/ A B /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ D E /</span>, <span class=\"g-tok\">/ A D /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ B E /</span>, <span class=\"g-tok\">/ A B /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ A D /</span> → <span class=\"g-tok\">/ B A /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ A D /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ D E /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ E B /</span>",
+        "just_id": "G.62 • I.34, G.16 • I.C.N.1",
+        "just_title": "parallelogram_properties",
+        "visible_ids": [
+          "el-poly-ADEB",
+          "el-seg-AB", "el-seg-AC", "el-seg-AD", "el-seg-DC", "el-seg-DE", "el-seg-BE",
+          "hl-poly-ADEB",
+          "hl-seg-AB", "hl-seg-AD", "hl-seg-DE", "hl-seg-BE",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E"
+        ],
+        "active_ids": [
+          "hl-poly-ADEB",
+          "el-pt-A", "el-pt-D", "el-pt-E", "el-pt-B",
+          "lbl-A", "lbl-D", "lbl-E", "lbl-B"
+        ],
+        "equal_ids": [
+          "hl-seg-AB", "hl-seg-AD", "hl-seg-DE", "hl-seg-BE"
+        ],
+        "tick_ids": [
+          "hl-seg-AB", "hl-seg-AD", "hl-seg-DE", "hl-seg-BE"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 46",
+        "g_id": "G.75",
+        "folio": "Folio 0361–0362 • p. 347",
+        "title": "construct a square on a segment",
+        "enunciation": "On a given straight line to describe a square.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0361.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0361.g1.png",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0361.g1.png",
+        "step_num": 5,
+        "total_steps": 6,
+        "step_kind": "ASSERT",
+        "symbolic": "< B A D ) + < A D E ) = 2∟, < B A D ) = ∟ → < B A D ) = < A D E ) = < A B E ) = < B E D ) = ∟",
+        "clause_html": "<span class=\"g-tok\">&lt; B A D )</span> + <span class=\"g-tok\">&lt; A D E )</span> = 2∟, <span class=\"g-tok\">&lt; B A D )</span> <span class=\"eq-tok\">=</span> ∟ → <span class=\"g-tok\">&lt; B A D )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; A D E )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; A B E )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; B E D )</span> <span class=\"eq-tok\">=</span> ∟",
+        "just_id": "G.56 • I.29, G.62 • I.34",
+        "just_title": "parallel_transversal_angles",
+        "visible_ids": [
+          "el-poly-ADEB",
+          "el-seg-AB", "el-seg-AC", "el-seg-AD", "el-seg-DC", "el-seg-DE", "el-seg-BE",
+          "el-ang-BAD", "el-ang-ADE", "el-ang-ABE", "el-ang-BED",
+          "hl-seg-AD", "hl-seg-AB", "hl-seg-DE",
+          "hl-ang-BAD", "hl-arc-BAD", "hl-ang-ADE", "hl-arc-ADE",
+          "hl-ang-ABE", "hl-arc-ABE", "hl-ang-BED", "hl-arc-BED",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E"
+        ],
+        "active_ids": [
+          "hl-seg-AD", "hl-seg-AB", "hl-seg-DE",
+          "el-pt-A", "el-pt-D", "el-pt-E", "el-pt-B",
+          "lbl-A", "lbl-D", "lbl-E", "lbl-B"
+        ],
+        "equal_ids": [
+          "hl-ang-BAD", "hl-arc-BAD",
+          "hl-ang-ADE", "hl-arc-ADE",
+          "hl-ang-ABE", "hl-arc-ABE",
+          "hl-ang-BED", "hl-arc-BED"
+        ],
+        "tick_ids": []
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 46",
+        "g_id": "G.75",
+        "folio": "Folio 0361–0362 • p. 347",
+        "title": "construct a square on a segment",
+        "enunciation": "On a given straight line to describe a square.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0361.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0361.g1.png",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0361.g1.png",
+        "step_num": 6,
+        "total_steps": 6,
+        "step_kind": "∴",
+        "symbolic": "/ B A / = / A D / = / D E / = / E B /, < B A D ) = < A D E ) = < A B E ) = < B E D ) = ∟ → < A D E B >",
+        "clause_html": "<span class=\"g-tok\">/ B A /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ A D /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ D E /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ E B /</span>, <span class=\"g-tok\">&lt; B A D )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; A D E )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; A B E )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; B E D )</span> <span class=\"eq-tok\">=</span> ∟ → <span class=\"g-tok\">&lt; A D E B &gt;</span>",
+        "just_id": "G.63 • I.Def.22",
+        "just_title": "quadrilateral_def",
+        "visible_ids": [
+          "el-poly-ADEB",
+          "el-seg-AB", "el-seg-AC", "el-seg-AD", "el-seg-DC", "el-seg-DE", "el-seg-BE",
+          "el-ang-BAD", "el-ang-ADE", "el-ang-ABE", "el-ang-BED",
+          "hl-poly-ADEB",
+          "hl-seg-AB", "hl-seg-AD", "hl-seg-DE", "hl-seg-BE",
+          "hl-ang-BAD", "hl-arc-BAD", "hl-ang-ADE", "hl-arc-ADE",
+          "hl-ang-ABE", "hl-arc-ABE", "hl-ang-BED", "hl-arc-BED",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E"
+        ],
+        "active_ids": [
+          "hl-poly-ADEB",
+          "el-pt-A", "el-pt-D", "el-pt-E", "el-pt-B",
+          "lbl-A", "lbl-D", "lbl-E", "lbl-B"
+        ],
+        "equal_ids": [
+          "hl-seg-AB", "hl-seg-AD", "hl-seg-DE", "hl-seg-BE",
+          "hl-ang-BAD", "hl-arc-BAD",
+          "hl-ang-ADE", "hl-arc-ADE",
+          "hl-ang-ABE", "hl-arc-ABE",
+          "hl-ang-BED", "hl-arc-BED"
+        ],
+        "tick_ids": [
+          "hl-seg-AB", "hl-seg-AD", "hl-seg-DE", "hl-seg-BE"
+        ]
+      }
+    ]
+  }
+]

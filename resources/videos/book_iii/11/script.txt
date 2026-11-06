@@ -1,0 +1,19 @@
+[bell:proposition]
+[style: brisk, clear, architectural voice; steady studio cadence]
+Book Three, Proposition Eleven. If two circles touch one another internally, and their centers be taken, the straight line joining their centers, if it be also produced, will fall on the point of contact of the circles. <pause> Let the two circles A B C and A D E touch one another internally at the point A, and let the center F of circle A B C, and the center G of circle A D E, be taken. We claim that the straight line joined from G to F and produced falls on A.
+
+[bell:construction]
+[style: methodical, precise constructive cadence]
+For suppose it does not, but, if possible, let it fall outside as F G H, meeting the inner circle at D and the outer circle at H, and let the radii A F and A G be joined.
+
+[bell:insight]
+[style: luminous, deductive geometric clarity]
+In triangle A F G, by One Twenty, any two sides are greater than the remaining side, so A G and G F together are greater than F A—that is, greater than the outer radius F H. Subtracting the common segment F G from each, the remainder A G is greater than the remainder G H. <pause> But A G and G D are radii of the inner circle A D E, so A G equals G D. Therefore G D is greater than G H—the part greater than the whole, which is impossible. <pause> Therefore, the line joined from F through G cannot fall outside the point of contact; it must fall on A. As was required to prove.
+
+[bell:system]
+[style: reflective, scholarly, architectural synthesis]
+Proposition Three Eleven establishes the collinearity of centers and point of contact for internally tangent circles. As Heath and Camerer observe, Euclid's diagram places G D inside G H along the line of centers because the inner circle lies wholly within the outer circle; combined with Three Seven, G H is the minimum segment from G to the outer circle, immediately forbidding G D from exceeding G H. <pause> In the GEOMETOR G-Index, node G one hundred nine connects Definition Three Three—circles touching without cutting—with the radius invariants of Book One, preparing the ground for Proposition Three Thirteen.
+
+[bell:resolve]
+[style: warm, inviting, resonant studio close]
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Eleven in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

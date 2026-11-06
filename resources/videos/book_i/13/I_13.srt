@@ -1,0 +1,43 @@
+1
+00:00:00,420 --> 00:00:03,427
+Euclid's Elements, Book One, Proposition Thirteen.
+
+2
+00:00:03,427 --> 00:00:09,803
+A segment standing on a line makes either two right angles or adjacent angles summing to two right angles.
+
+3
+00:00:09,803 --> 00:00:20,570
+Given segment A B standing on segment C D at point B, making angles C B A and A B D, we prove that angles C B A and A B D are either two right angles or equal to two right angles.
+
+4
+00:00:20,990 --> 00:00:27,850
+First, if angle C B A equals angle A B D, then by Definition Ten they are already two right angles.
+
+5
+00:00:27,850 --> 00:00:36,720
+Otherwise, from point B on C D, construct segment B E perpendicular to C D, so that angles C B E and E B D are two right angles.
+
+6
+00:00:37,140 --> 00:00:42,898
+Since angle C B E equals the sum of angles C B A and A B E, add angle E B D to each.
+
+7
+00:00:42,898 --> 00:00:48,999
+Then the two right angles C B E and E B D equal the three angles C B A, A B E, and E B D.
+
+8
+00:00:48,999 --> 00:00:55,237
+Again, since angle D B A equals the sum of angles D B E and E B A, add angle A B C to each.
+
+9
+00:00:55,237 --> 00:01:00,309
+Then the adjacent angles D B A and A B C also equal the same three angles.
+
+10
+00:01:00,309 --> 00:01:03,737
+Things equal to the same are equal to one another.
+
+11
+00:01:03,737 --> 00:01:11,620
+Therefore the adjacent angles C B A and A B D equal the two right angles C B E and E B D, as was required to prove.

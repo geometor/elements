@@ -1,0 +1,472 @@
+[
+  {
+    "bell": "proposition",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "step_num": 1,
+        "step_kind": "given",
+        "prop_id": "BOOK I • PROP. 22",
+        "g_id": "G.47",
+        "folio": "Folio 0306–0307 • p. 292",
+        "title": "construct a triangle from three segments",
+        "enunciation": "Out of three straight lines, which are equal to three given straight lines, to construct a triangle: thus it is necessary that two of the straight lines taken together in any manner should be greater than the remaining one.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0306.g1.svg",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0306.g1.png",
+        "visible_ids": [
+          "el-seg-A",
+          "el-seg-B",
+          "el-seg-C",
+          "lbl-givenA",
+          "lbl-givenB",
+          "lbl-givenC"
+        ],
+        "active_ids": [
+          "hl-seg-A",
+          "hl-seg-B",
+          "hl-seg-C",
+          "lbl-givenA",
+          "lbl-givenB",
+          "lbl-givenC"
+        ],
+        "equal_ids": [],
+        "tick_ids": [],
+        "symbolic": "given A, B, C (A + B > C, A + C > B, B + C > A)",
+        "clause_html": "Given segments <span class=\"g-tok\">A</span>, <span class=\"g-tok\">B</span>, <span class=\"g-tok\">C</span> : <span class=\"g-tok\">A</span> + <span class=\"g-tok\">B</span> &gt; <span class=\"g-tok\">C</span>, <span class=\"g-tok\">A</span> + <span class=\"g-tok\">C</span> &gt; <span class=\"g-tok\">B</span>, <span class=\"g-tok\">B</span> + <span class=\"g-tok\">C</span> &gt; <span class=\"g-tok\">A</span>",
+        "just_id": "G.45 • I.20",
+        "just_title": "triangle_inequality"
+      }
+    ]
+  },
+  {
+    "bell": "construction",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "step_num": 2,
+        "step_kind": "construct",
+        "prop_id": "BOOK I • PROP. 22",
+        "g_id": "G.47",
+        "folio": "Folio 0306–0307 • p. 292",
+        "title": "construct a triangle from three segments",
+        "enunciation": "Out of three straight lines, which are equal to three given straight lines, to construct a triangle: thus it is necessary that two of the straight lines taken together in any manner should be greater than the remaining one.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0306.g1.svg",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0306.g1.png",
+        "visible_ids": [
+          "el-seg-A",
+          "el-seg-B",
+          "el-seg-C",
+          "el-seg-DE",
+          "el-seg-DF",
+          "el-seg-FG",
+          "el-seg-GH",
+          "el-pt-D",
+          "el-pt-F",
+          "el-pt-G",
+          "el-pt-H",
+          "lbl-givenA",
+          "lbl-givenB",
+          "lbl-givenC",
+          "lbl-D",
+          "lbl-F",
+          "lbl-G",
+          "lbl-H",
+          "lbl-E"
+        ],
+        "active_ids": [
+          "hl-seg-DE",
+          "el-pt-D",
+          "el-pt-F",
+          "el-pt-G",
+          "el-pt-H",
+          "lbl-D",
+          "lbl-F",
+          "lbl-G",
+          "lbl-H",
+          "lbl-E"
+        ],
+        "equal_ids": [
+          "hl-seg-DF",
+          "hl-seg-A",
+          "hl-seg-FG",
+          "hl-seg-B",
+          "hl-seg-GH",
+          "hl-seg-C"
+        ],
+        "tick_ids": [
+          "hl-seg-DF",
+          "hl-seg-A"
+        ],
+        "tick_2_ids": [
+          "hl-seg-FG",
+          "hl-seg-B"
+        ],
+        "tick_3_ids": [
+          "hl-seg-GH",
+          "hl-seg-C"
+        ],
+        "symbolic": "cut_equal_segment([ D E ], A, B, C) → / D F / = A, / F G / = B, / G H / = C",
+        "clause_html": "<span class=\"fn-tok\">cut_equal_segment</span>(<span class=\"g-tok\">[ D E ]</span>, <span class=\"g-tok\">A</span>, <span class=\"g-tok\">B</span>, <span class=\"g-tok\">C</span>) → <span class=\"g-tok\">/ D F /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">A</span>, <span class=\"g-tok\">/ F G /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">B</span>, <span class=\"g-tok\">/ G H /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">C</span>",
+        "just_id": "G.21 • I.3",
+        "just_title": "cut_equal_segment"
+      },
+      {
+        "type": "euclid_step",
+        "step_num": 3,
+        "step_kind": "construct",
+        "prop_id": "BOOK I • PROP. 22",
+        "g_id": "G.47",
+        "folio": "Folio 0306–0307 • p. 292",
+        "title": "construct a triangle from three segments",
+        "enunciation": "Out of three straight lines, which are equal to three given straight lines, to construct a triangle: thus it is necessary that two of the straight lines taken together in any manner should be greater than the remaining one.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0306.g1.svg",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0306.g1.png",
+        "visible_ids": [
+          "el-seg-A",
+          "el-seg-B",
+          "el-seg-C",
+          "el-seg-DE",
+          "el-seg-DF",
+          "el-seg-FG",
+          "el-seg-GH",
+          "el-circ-DKL",
+          "el-circ-KLH",
+          "el-pt-D",
+          "el-pt-F",
+          "el-pt-G",
+          "el-pt-H",
+          "el-pt-K",
+          "el-pt-L",
+          "lbl-givenA",
+          "lbl-givenB",
+          "lbl-givenC",
+          "lbl-D",
+          "lbl-F",
+          "lbl-G",
+          "lbl-H",
+          "lbl-E",
+          "lbl-K",
+          "lbl-L"
+        ],
+        "active_ids": [
+          "hl-circ-DKL",
+          "hl-circ-KLH",
+          "el-pt-F",
+          "el-pt-D",
+          "el-pt-G",
+          "el-pt-H",
+          "lbl-F",
+          "lbl-D",
+          "lbl-G",
+          "lbl-H"
+        ],
+        "equal_ids": [
+          "hl-seg-DF",
+          "hl-seg-A",
+          "hl-seg-FG",
+          "hl-seg-B",
+          "hl-seg-GH",
+          "hl-seg-C"
+        ],
+        "tick_ids": [
+          "hl-seg-DF",
+          "hl-seg-A"
+        ],
+        "tick_2_ids": [
+          "hl-seg-FG",
+          "hl-seg-B"
+        ],
+        "tick_3_ids": [
+          "hl-seg-GH",
+          "hl-seg-C"
+        ],
+        "symbolic": "circle(F, D) → ( F D ), circle(G, H) → ( G H )",
+        "clause_html": "<span class=\"fn-tok\">circle</span>(<span class=\"g-tok\">F</span>, <span class=\"g-tok\">D</span>) → <span class=\"g-tok\">( F D )</span>, <span class=\"fn-tok\">circle</span>(<span class=\"g-tok\">G</span>, <span class=\"g-tok\">H</span>) → <span class=\"g-tok\">( G H )</span>",
+        "just_id": "G.15 • I.Post.3",
+        "just_title": "circle(center, radius_pt)"
+      },
+      {
+        "type": "euclid_step",
+        "step_num": 4,
+        "step_kind": "intersect",
+        "prop_id": "BOOK I • PROP. 22",
+        "g_id": "G.47",
+        "folio": "Folio 0306–0307 • p. 292",
+        "title": "construct a triangle from three segments",
+        "enunciation": "Out of three straight lines, which are equal to three given straight lines, to construct a triangle: thus it is necessary that two of the straight lines taken together in any manner should be greater than the remaining one.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0306.g1.svg",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0306.g1.png",
+        "visible_ids": [
+          "el-seg-A",
+          "el-seg-B",
+          "el-seg-C",
+          "el-seg-DE",
+          "el-seg-DF",
+          "el-seg-FG",
+          "el-seg-GH",
+          "el-circ-DKL",
+          "el-circ-KLH",
+          "el-seg-KF",
+          "el-seg-KG",
+          "el-tri-KFG",
+          "el-pt-D",
+          "el-pt-F",
+          "el-pt-G",
+          "el-pt-H",
+          "el-pt-K",
+          "el-pt-L",
+          "lbl-givenA",
+          "lbl-givenB",
+          "lbl-givenC",
+          "lbl-D",
+          "lbl-F",
+          "lbl-G",
+          "lbl-H",
+          "lbl-E",
+          "lbl-K",
+          "lbl-L"
+        ],
+        "active_ids": [
+          "el-pt-K",
+          "hl-seg-KF",
+          "hl-seg-KG",
+          "lbl-K"
+        ],
+        "equal_ids": [
+          "hl-seg-DF",
+          "hl-seg-A",
+          "hl-seg-FG",
+          "hl-seg-B",
+          "hl-seg-GH",
+          "hl-seg-C"
+        ],
+        "tick_ids": [
+          "hl-seg-DF",
+          "hl-seg-A"
+        ],
+        "tick_2_ids": [
+          "hl-seg-FG",
+          "hl-seg-B"
+        ],
+        "tick_3_ids": [
+          "hl-seg-GH",
+          "hl-seg-C"
+        ],
+        "symbolic": "( F D ) ∩ ( G H ) → K, segment(K, F) → / K F /, segment(K, G) → / K G /",
+        "clause_html": "<span class=\"g-tok\">( F D )</span> ∩ <span class=\"g-tok\">( G H )</span> → <span class=\"g-tok\">K</span>, <span class=\"fn-tok\">segment</span>(<span class=\"g-tok\">K</span>, <span class=\"g-tok\">F</span>) → <span class=\"g-tok\">/ K F /</span>, <span class=\"fn-tok\">segment</span>(<span class=\"g-tok\">K</span>, <span class=\"g-tok\">G</span>) → <span class=\"g-tok\">/ K G /</span>",
+        "just_id": "G.14 • I.Post.1",
+        "just_title": "segment(pt, pt)"
+      }
+    ]
+  },
+  {
+    "bell": "insight",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "step_num": 5,
+        "step_kind": "assert",
+        "prop_id": "BOOK I • PROP. 22",
+        "g_id": "G.47",
+        "folio": "Folio 0306–0307 • p. 292",
+        "title": "construct a triangle from three segments",
+        "enunciation": "Out of three straight lines, which are equal to three given straight lines, to construct a triangle: thus it is necessary that two of the straight lines taken together in any manner should be greater than the remaining one.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0306.g1.svg",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0306.g1.png",
+        "visible_ids": [
+          "el-seg-A",
+          "el-seg-B",
+          "el-seg-C",
+          "el-seg-DE",
+          "el-seg-DF",
+          "el-seg-FG",
+          "el-seg-GH",
+          "el-circ-DKL",
+          "el-circ-KLH",
+          "el-seg-KF",
+          "el-seg-KG",
+          "el-tri-KFG",
+          "el-pt-D",
+          "el-pt-F",
+          "el-pt-G",
+          "el-pt-H",
+          "el-pt-K",
+          "el-pt-L",
+          "lbl-givenA",
+          "lbl-givenB",
+          "lbl-givenC",
+          "lbl-D",
+          "lbl-F",
+          "lbl-G",
+          "lbl-H",
+          "lbl-E",
+          "lbl-K",
+          "lbl-L"
+        ],
+        "active_ids": [
+          "hl-circ-DKL",
+          "el-pt-F",
+          "lbl-F"
+        ],
+        "equal_ids": [
+          "hl-seg-KF",
+          "hl-seg-DF",
+          "hl-seg-A"
+        ],
+        "tick_ids": [
+          "hl-seg-KF",
+          "hl-seg-DF",
+          "hl-seg-A"
+        ],
+        "symbolic": "( F D ) → / F D / = / F K / → / K F / = A",
+        "clause_html": "<span class=\"g-tok\">( F D )</span> → <span class=\"g-tok\">/ F D /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ F K /</span> → <span class=\"g-tok\">/ K F /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">A</span>",
+        "just_id": "G.10 • I.Def.15",
+        "just_title": "circle_radii"
+      },
+      {
+        "type": "euclid_step",
+        "step_num": 6,
+        "step_kind": "assert",
+        "prop_id": "BOOK I • PROP. 22",
+        "g_id": "G.47",
+        "folio": "Folio 0306–0307 • p. 292",
+        "title": "construct a triangle from three segments",
+        "enunciation": "Out of three straight lines, which are equal to three given straight lines, to construct a triangle: thus it is necessary that two of the straight lines taken together in any manner should be greater than the remaining one.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0306.g1.svg",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0306.g1.png",
+        "visible_ids": [
+          "el-seg-A",
+          "el-seg-B",
+          "el-seg-C",
+          "el-seg-DE",
+          "el-seg-DF",
+          "el-seg-FG",
+          "el-seg-GH",
+          "el-circ-DKL",
+          "el-circ-KLH",
+          "el-seg-KF",
+          "el-seg-KG",
+          "el-tri-KFG",
+          "el-pt-D",
+          "el-pt-F",
+          "el-pt-G",
+          "el-pt-H",
+          "el-pt-K",
+          "el-pt-L",
+          "lbl-givenA",
+          "lbl-givenB",
+          "lbl-givenC",
+          "lbl-D",
+          "lbl-F",
+          "lbl-G",
+          "lbl-H",
+          "lbl-E",
+          "lbl-K",
+          "lbl-L"
+        ],
+        "active_ids": [
+          "hl-circ-KLH",
+          "el-pt-G",
+          "lbl-G"
+        ],
+        "equal_ids": [
+          "hl-seg-KF",
+          "hl-seg-DF",
+          "hl-seg-A",
+          "hl-seg-KG",
+          "hl-seg-GH",
+          "hl-seg-C"
+        ],
+        "tick_ids": [
+          "hl-seg-KF",
+          "hl-seg-DF",
+          "hl-seg-A"
+        ],
+        "tick_3_ids": [
+          "hl-seg-KG",
+          "hl-seg-GH",
+          "hl-seg-C"
+        ],
+        "symbolic": "( G H ) → / G H / = / G K / → / K G / = C",
+        "clause_html": "<span class=\"g-tok\">( G H )</span> → <span class=\"g-tok\">/ G H /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ G K /</span> → <span class=\"g-tok\">/ K G /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">C</span>",
+        "just_id": "G.10 • I.Def.15",
+        "just_title": "circle_radii"
+      },
+      {
+        "type": "euclid_step",
+        "step_num": 7,
+        "step_kind": "∴",
+        "prop_id": "BOOK I • PROP. 22",
+        "g_id": "G.47",
+        "folio": "Folio 0306–0307 • p. 292",
+        "title": "construct a triangle from three segments",
+        "enunciation": "Out of three straight lines, which are equal to three given straight lines, to construct a triangle: thus it is necessary that two of the straight lines taken together in any manner should be greater than the remaining one.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0306.g1.svg",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0306.g1.png",
+        "visible_ids": [
+          "el-seg-A",
+          "el-seg-B",
+          "el-seg-C",
+          "el-seg-DE",
+          "el-seg-DF",
+          "el-seg-FG",
+          "el-seg-GH",
+          "el-circ-DKL",
+          "el-circ-KLH",
+          "el-seg-KF",
+          "el-seg-KG",
+          "el-tri-KFG",
+          "el-pt-D",
+          "el-pt-F",
+          "el-pt-G",
+          "el-pt-H",
+          "el-pt-K",
+          "el-pt-L",
+          "lbl-givenA",
+          "lbl-givenB",
+          "lbl-givenC",
+          "lbl-D",
+          "lbl-F",
+          "lbl-G",
+          "lbl-H",
+          "lbl-E",
+          "lbl-K",
+          "lbl-L"
+        ],
+        "active_ids": [
+          "hl-tri-KFG",
+          "el-pt-K",
+          "el-pt-F",
+          "el-pt-G",
+          "lbl-K",
+          "lbl-F",
+          "lbl-G"
+        ],
+        "equal_ids": [
+          "hl-seg-KF",
+          "hl-seg-A",
+          "hl-seg-FG",
+          "hl-seg-B",
+          "hl-seg-KG",
+          "hl-seg-C"
+        ],
+        "tick_ids": [
+          "hl-seg-KF",
+          "hl-seg-A"
+        ],
+        "tick_2_ids": [
+          "hl-seg-FG",
+          "hl-seg-B"
+        ],
+        "tick_3_ids": [
+          "hl-seg-KG",
+          "hl-seg-C"
+        ],
+        "symbolic": "/ K F / = A, / F G / = B, / K G / = C → < K F G >",
+        "clause_html": "<span class=\"g-tok\">/ K F /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">A</span>, <span class=\"g-tok\">/ F G /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">B</span>, <span class=\"g-tok\">/ K G /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">C</span> → <span class=\"g-tok\">&lt; K F G &gt;</span>",
+        "just_id": "G.16 • I.C.N.1",
+        "just_title": "equal_transitive"
+      }
+    ]
+  }
+]

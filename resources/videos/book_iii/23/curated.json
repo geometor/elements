@@ -1,0 +1,49 @@
+{
+  "III.23": {
+    "subtype": "theorem",
+    "args": [
+      ":g:`/ A B / <g1:/ A B />`",
+      ":g:`( A C B ) <g1:( A C B )>`",
+      ":g:`( A D B ) <g1:( A D B )>`"
+    ],
+    "returns": [],
+    "given": "similar circle segments :g:`( A C B ) <g1:( A C B )>`, :g:`( A D B ) <g1:( A D B )>` on the same side of :g:`/ A B / <g1:/ A B />`",
+    "contract": "¬(:g:`( A C B ) <g1:( A C B )>` ≠ :g:`( A D B ) <g1:( A D B )>`)",
+    "steps": [
+      [
+        "given",
+        [
+          "III.def.6",
+          "III.def.11"
+        ],
+        "assume similar and unequal circle segments :g:`( A C B ) <g1:( A C B )>`, :g:`( A D B ) <g1:( A D B )>` on the same side of :g:`/ A B / <g1:/ A B />`"
+      ],
+      [
+        "construct",
+        [
+          "I.post.1"
+        ],
+        "draw :g:`/ A C D / <g1:/ A C D />` through both arcs, @fn(I.post.1)(:g:`C <g1:C>`, :g:`B <g1:B>`) → :g:`/ C B / <g1:/ C B />`, @fn(I.post.1)(:g:`D <g1:D>`, :g:`B <g1:B>`) → :g:`/ D B / <g1:/ D B />`"
+      ],
+      [
+        "assert",
+        [
+          "III.def.11"
+        ],
+        ":g:`( A C B ) <g1:( A C B )>` ~ :g:`( A D B ) <g1:( A D B )>` → :g:`< A C B ) <g1:< A C B )>` :eq:`= <g1:< A C B ) = g1:< A D B )>` :g:`< A D B ) <g1:< A D B )>`"
+      ],
+      [
+        "assert",
+        [
+          "I.16"
+        ],
+        "in :g:`< C D B > <g1:< C D B >>`, exterior :g:`< A C B ) <g1:< A C B )>` > interior :g:`< A D B ) <g1:< A D B )>` ⇒⇐"
+      ],
+      [
+        "conclude",
+        [],
+        "on :g:`/ A B / <g1:/ A B />`, two similar and unequal circle segments cannot be constructed on the same side"
+      ]
+    ]
+  }
+}

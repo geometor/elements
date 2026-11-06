@@ -1,0 +1,293 @@
+[
+  {
+    "prop_id": "BOOK III • PROP. 18",
+    "short_title": "radius to point of contact is perpendicular to tangent",
+    "g_id": "G.120",
+    "folio": "Folios 0050–0051 • pp. 44–45",
+    "enunciation": "If a straight line touch a circle, and a straight line be joined from the centre to the point of contact, the straight line so joined will be perpendicular to the tangent.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.120/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.120/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/18/",
+    "step_total": 8,
+    "subslides": [
+      {
+        "step_num": 1,
+        "step_kind": "GIVEN",
+        "chapter": "tangent / D E / touching circle ( A B C ) at C, radius / F C / from center F",
+        "symbolic": "/ D E / touches ( A B C ) at C, center F, radius / F C /",
+        "visible_ids": [
+          "el-circle-ABC",
+          "el-line-DE",
+          "el-seg-DE",
+          "el-seg-CE",
+          "el-seg-FC",
+          "el-pt-A",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-E",
+          "el-pt-F",
+          "lbl-A",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E",
+          "lbl-F"
+        ],
+        "active_ids": [
+          "el-circle-ABC",
+          "hl-circle-ABC",
+          "el-line-DE",
+          "el-seg-DE",
+          "hl-seg-DE",
+          "el-seg-FC",
+          "hl-seg-FC",
+          "el-pt-C",
+          "el-pt-F",
+          "lbl-C",
+          "lbl-F"
+        ],
+        "equal_ids": [],
+        "clause_html": "<div class=\"clause-line\">Let <span class=\"g-tok\">/ D E /</span> touch circle <span class=\"g-tok\">( A B C )</span> at <span class=\"g-tok\">C</span>,</div><div class=\"clause-line\">and join <span class=\"g-tok\">/ F C /</span> from the center <span class=\"g-tok\">F</span> to <span class=\"g-tok\">C</span>.</div>",
+        "just_id": "G.111 • III.def.2, G.11 • I.def.16",
+        "just_title": "Given a circle ( A B C ) with center F, tangent / D E / at contact point C, and radius / F C /."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK III • PROP. 18",
+    "short_title": "radius to point of contact is perpendicular to tangent",
+    "g_id": "G.120",
+    "folio": "Folios 0050–0051 • pp. 44–45",
+    "enunciation": "If a straight line touch a circle, and a straight line be joined from the centre to the point of contact, the straight line so joined will be perpendicular to the tangent.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.120/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.120/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/18/",
+    "step_total": 8,
+    "subslides": [
+      {
+        "step_num": 2,
+        "step_kind": "CONSTRUCT",
+        "chapter": "suppose / F C / is not ⊥ / D E /; draw / F G / ⊥ / D E /",
+        "symbolic": "assume / F G / ⊥ / D E / (B = / F G / ∩ ( A B C ))",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-seg-FG",
+          "hl-seg-FG",
+          "el-seg-FB",
+          "hl-seg-FB",
+          "el-seg-BG",
+          "hl-seg-BG",
+          "el-tri-FCG",
+          "hl-tri-FCG",
+          "el-ang-FGC",
+          "hl-ang-FGC",
+          "el-pt-B",
+          "el-pt-G",
+          "lbl-B",
+          "lbl-G"
+        ],
+        "equal_ids": [],
+        "clause_html": "<div class=\"clause-line\">Suppose <span class=\"g-tok\">/ F C /</span> is not perpendicular to <span class=\"g-tok\">/ D E /</span>,</div><div class=\"clause-line\">and let <span class=\"g-tok\">/ F G / ⊥ / D E /</span> be drawn from <span class=\"g-tok\">F</span>.</div>",
+        "just_id": "G.33 • I.def.10, G.35 • I.12",
+        "just_title": "Assume for reductio ad absurdum that another line / F G / from F is perpendicular to / D E /."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK III • PROP. 18",
+    "short_title": "radius to point of contact is perpendicular to tangent",
+    "g_id": "G.120",
+    "folio": "Folios 0050–0051 • pp. 44–45",
+    "enunciation": "If a straight line touch a circle, and a straight line be joined from the centre to the point of contact, the straight line so joined will be perpendicular to the tangent.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.120/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.120/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/18/",
+    "step_total": 8,
+    "subslides": [
+      {
+        "step_num": 3,
+        "step_kind": "ASSERT",
+        "chapter": "< F G C ) is right → < F C G ) is acute → / F C / > / F G /",
+        "symbolic": "< F G C ) = ∟ > < F C G ) → / F C / > / F G /",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-tri-FCG",
+          "hl-tri-FCG",
+          "el-seg-FC",
+          "hl-seg-FC",
+          "el-seg-FG",
+          "hl-seg-FG",
+          "el-ang-FGC",
+          "hl-ang-FGC",
+          "el-ang-FCG",
+          "hl-ang-FCG"
+        ],
+        "equal_ids": [],
+        "clause_html": "<div class=\"clause-line\">Since <span class=\"g-tok\">&lt; F G C )</span> is right, <span class=\"g-tok\">&lt; F C G )</span> is acute;</div><div class=\"clause-line\">therefore <span class=\"g-tok\">/ F C / &gt; / F G /</span>.</div>",
+        "just_id": "G.42 • I.17, G.44 • I.19",
+        "just_title": "In < F C G >, two angles are less than two right angles (I.17), and the greater angle subtends the greater side (I.19)."
+      },
+      {
+        "step_num": 4,
+        "step_kind": "ASSERT",
+        "chapter": "/ F C / = / F B / → / F B / > / F G / (part > whole) ⇒⇐",
+        "symbolic": "/ F C / = / F B / → / F B / > / F G / ⇒⇐",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-seg-FG",
+          "hl-seg-FG",
+          "el-seg-BG",
+          "hl-seg-BG",
+          "el-pt-F",
+          "el-pt-B",
+          "el-pt-G",
+          "lbl-F",
+          "lbl-B",
+          "lbl-G"
+        ],
+        "equal_ids": [
+          "el-seg-FC",
+          "hl-seg-FC",
+          "el-seg-FB",
+          "hl-seg-FB"
+        ],
+        "tick_ids": [
+          "el-seg-FC",
+          "el-seg-FB"
+        ],
+        "clause_html": "<div class=\"clause-line\">But <span class=\"eq-tok\">/ F C / = / F B /</span> as radii of <span class=\"g-tok\">( A B C )</span>;</div><div class=\"clause-line\">therefore <span class=\"g-tok\">/ F B / &gt; / F G /</span> (part &gt; whole) <span class=\"eq-tok\">⇒⇐</span></div>",
+        "just_id": "G.10 • I.def.15, G.26 • I.cn.5",
+        "just_title": "Since G lies outside the circle on tangent / D E /, radius / F B / is part of / F G / and cannot exceed it."
+      },
+      {
+        "step_num": 5,
+        "step_kind": "∴",
+        "is_punchline": true,
+        "chapter": "radius / F C / to the point of contact is perpendicular to tangent / D E /",
+        "symbolic": "∴ / F C / ⊥ / D E /",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-circle-ABC",
+          "hl-circle-ABC",
+          "el-line-DE",
+          "el-seg-DE",
+          "hl-seg-DE",
+          "el-seg-FC",
+          "hl-seg-FC",
+          "el-pt-C",
+          "el-pt-F",
+          "lbl-C",
+          "lbl-F"
+        ],
+        "equal_ids": [
+          "el-seg-FC",
+          "hl-seg-FC",
+          "el-seg-FB",
+          "hl-seg-FB"
+        ],
+        "tick_ids": [
+          "el-seg-FC",
+          "el-seg-FB"
+        ],
+        "clause_html": "<div class=\"clause-line\">∴ No other line from <span class=\"g-tok\">F</span> is perpendicular to <span class=\"g-tok\">/ D E /</span>;</div><div class=\"clause-line\">therefore <span class=\"eq-tok\">/ F C / ⊥ / D E /</span>.</div>",
+        "just_id": "G.120 • III.18",
+        "just_title": "The straight line joined from the center to the point of contact is perpendicular to the tangent (Q.E.D.)."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK III • PROP. 18",
+    "short_title": "radius to point of contact is perpendicular to tangent",
+    "g_id": "G.120",
+    "folio": "Folios 0050–0051 • pp. 44–45",
+    "enunciation": "If a straight line touch a circle, and a straight line be joined from the centre to the point of contact, the straight line so joined will be perpendicular to the tangent.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.120/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.120/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/18/",
+    "step_total": 8,
+    "widescreen_only": true,
+    "subslides": [
+      {
+        "step_num": 6,
+        "step_kind": "COMMENTARY",
+        "widescreen_only": true,
+        "chapter": "the triad of circular tangency: III.16 Por., III.18, and III.19",
+        "symbolic": "(1) tangent, (2) radius to contact, (3) right angle: any 2 ⇒ 3rd",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-circle-ABC",
+          "hl-circle-ABC",
+          "el-seg-DE",
+          "hl-seg-DE",
+          "el-seg-FC",
+          "hl-seg-FC",
+          "el-pt-C",
+          "el-pt-F",
+          "lbl-C",
+          "lbl-F"
+        ],
+        "equal_ids": [
+          "el-seg-FC",
+          "hl-seg-FC",
+          "el-seg-FB",
+          "hl-seg-FB"
+        ],
+        "tick_ids": [
+          "el-seg-FC",
+          "el-seg-FB"
+        ],
+        "clause_html": "<div class=\"clause-line\"><strong>The Triad of Circular Tangency</strong></div><div class=\"clause-line\"><span class=\"eq-tok\">(1) Tangent + (2) Radius ⇒ (3) Perpendicular</span></div><div class=\"clause-line\" style=\"font-size:28px;color:#cbd5e1;\">Heath highlights the symmetry across III.16–19: given (1) a tangent at C, (2) a line through center F and C, and (3) right angles at C, III.16 Porism proves (2)&amp;(3)⇒(1), III.18 proves (1)&amp;(2)⇒(3), and III.19 proves (1)&amp;(3)⇒(2).</div>",
+        "just_tag": "✦ HEATH COMMENTARY",
+        "just_id": "Heath (1908) • Vol. II, p. 45",
+        "just_title": "Parallels the three-way symmetry of chord bisection in III.1 Porism and III.3."
+      },
+      {
+        "step_num": 7,
+        "step_kind": "GENEALOGY",
+        "widescreen_only": true,
+        "chapter": "G.120 dependency tree & symbolic model",
+        "symbolic": "G.1, G.4, G.11, G.22, G.33, G.42, G.44, G.77, G.111 → G.120",
+        "stage_html": "<div style=\"width:100%;height:100%;display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:36px 8px 8px 8px;align-items:stretch;\"><div style=\"background:rgba(11,14,21,0.92);border:1.5px solid rgba(56,189,248,0.45);border-radius:16px;padding:22px 24px;display:flex;flex-direction:column;justify-content:space-between;\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.12em;color:#38bdf8;\">◈ G-INDEX PREREQUISITES → G.120</div><div style=\"display:flex;flex-direction:column;gap:10px;margin:12px 0;\"><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #5ec27e;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.111 (III.def.2)</span><span style=\"color:#f4f1ea;\">tangent to circle</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.44 (I.19)</span><span style=\"color:#f4f1ea;\">greater angle → greater side</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.42 (I.17)</span><span style=\"color:#f4f1ea;\">two angles &lt; two right</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.33 (I.def.10)</span><span style=\"color:#f4f1ea;\">perpendicular &amp; right angle</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.11 (I.def.16)</span><span style=\"color:#f4f1ea;\">center of circle</span></div></div><div style=\"background:rgba(232,184,90,0.16);border:1.5px solid #e8b85a;border-radius:10px;padding:11px 16px;text-align:center;font-family:'JetBrains Mono',monospace;font-size:17px;font-weight:700;color:#e8b85a;\">↓ G.120 (III.18) • segment touch circle</div></div><div style=\"background:rgba(11,14,21,0.92);border:1.5px solid rgba(232,184,90,0.4);border-radius:16px;padding:22px 24px;display:flex;flex-direction:column;justify-content:space-between;\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.12em;color:#e8b85a;\">⚙ GEOMETOR.MODEL • G.120/g1.py</div><pre style=\"font-family:'JetBrains Mono',monospace;font-size:14.5px;line-height:1.48;color:#e2e8f0;background:rgba(7,9,14,0.85);padding:16px;border-radius:10px;border:1px solid rgba(148,163,184,0.25);overflow:hidden;\">model = Model(&quot;III.18&quot;)\nF = model.set_point(0, 0, ID=&quot;F&quot;)\nC = model.set_point(4/5, -3/5, label=&quot;C&quot;)\nmodel.construct_circle(F, C)\n\n# Tangent DE at C and radius FC\nmodel.construct_line(D, E)\nmodel.set_segment(F, C)\n\n# Reductio triangle FCG\nmodel.set_section([F, B, G])\nmodel.set_polygon([F, C, G])</pre><div style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">42 total ancestor nodes in G-Index • Unlocks 20 downstream propositions</div></div></div>",
+        "clause_html": "<div class=\"clause-line\"><span class=\"coincide-tok\">G.120</span> synthesizes <span class=\"g-tok\">9 direct prerequisites</span></div><div class=\"clause-line\">across <span class=\"g-tok\">42 total ancestor nodes</span> in the G-Index</div><div class=\"clause-line\" style=\"font-size:28px;color:#cbd5e1;\">Unlocks 20 downstream propositions including G.121 (III.19), G.140 (III.32), and G.144 (III.36).</div>",
+        "just_tag": "◈ G-INDEX GENEALOGY",
+        "just_id": "G.120 • 9 Direct Rules",
+        "just_title": "Depends on G.1, G.4, G.11, G.22, G.33, G.42, G.44, G.77, and G.111."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK III • PROP. 18",
+    "short_title": "radius to point of contact is perpendicular to tangent",
+    "g_id": "G.120",
+    "folio": "Folios 0050–0051 • pp. 44–45",
+    "enunciation": "If a straight line touch a circle, and a straight line be joined from the centre to the point of contact, the straight line so joined will be perpendicular to the tangent.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.120/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.120/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/18/",
+    "step_total": 8,
+    "widescreen_only": true,
+    "subslides": [
+      {
+        "step_num": 8,
+        "step_kind": "PARTICIPATE",
+        "widescreen_only": true,
+        "chapter": "explore the GEOMETOR Elements Codex & participate",
+        "symbolic": "geometor.github.io/elements",
+        "stage_html": "<div style=\"width:100%;height:100%;display:flex;flex-direction:column;justify-content:space-between;padding:42px 16px 12px 16px;gap:20px;\"><div style=\"background:linear-gradient(135deg,rgba(232,184,90,0.16) 0%,rgba(16,20,29,0.95) 100%);border:2px solid rgba(232,184,90,0.55);border-radius:18px;padding:28px 32px;display:flex;flex-direction:column;gap:12px;box-shadow:0 16px 40px rgba(0,0,0,0.6);\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.16em;color:#e8b85a;\">★ INTERACTIVE DIGITAL EDITION</div><div style=\"font-family:Georgia,serif;font-size:38px;font-weight:700;color:#f8f6f0;\">GEOMETOR • Elements Codex</div><div style=\"font-family:'JetBrains Mono',monospace;font-size:22px;color:#5ec27e;font-weight:700;\">https://geometor.github.io/elements/elements2/G.120/</div></div><div style=\"display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;flex:1;\"><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#e8b85a;font-weight:700;\">01 • PSEUDOCODE</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Hover-synced symbolic steps, signatures, and interactive SVG diagrams.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 1 • G.120</span></div><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#38bdf8;font-weight:700;\">02 • PYTHON MODEL</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Executable geometor.model scripts with exact algebraic coordinates.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 2 • g1.py</span></div><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#5ec27e;font-weight:700;\">03 • HEATH (1908)</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Complete classical translation, folio plates, and historical commentary.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 3 • Folios 0050–0051</span></div></div></div>",
+        "clause_html": "<div class=\"clause-line\">Explore the <span class=\"g-tok\">Elements Codex</span> &amp; <span class=\"eq-tok\">G-Index</span></div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Subscribe to <strong>@geometor</strong> for all 465 propositions</div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Share questions &amp; insights in the comments</div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Star &amp; contribute at <strong>github.com/geometor</strong></div>",
+        "just_tag": "★ PARTICIPATE & SUPPORT",
+        "just_id": "github.com/geometor/elements",
+        "just_title": "Open-source symbolic reconstruction of Euclid's Elements — links in the video description."
+      }
+    ]
+  }
+]

@@ -1,0 +1,61 @@
+{
+  "voice_id": "voice_xdhacg1pn1cq",
+  "audio_wav": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_i/26/I_26.wav",
+  "total_duration_sec": 92.82,
+  "segments": [
+    {
+      "index": 0,
+      "bell": "bell:proposition",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Euclid's Elements, Book One, Proposition Twenty-Six. Triangles with two angles and one corresponding side equal are congruent. Given triangles A B C and D E F with angle A B C equal to angle D E F, angle B C A equal to angle E F D, and either the included side B C equal to E F, or a side subtending an equal angle such as A B equal to D E, we prove that the remaining sides and the remaining angle are equal.",
+      "start_sec": 0.0,
+      "end_sec": 25.29,
+      "duration_sec": 25.29,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Euclid's Elements, Book One, Proposition Twenty-Six. Triangles with two angles and one corresponding side equal are congruent. Given triangles A B C and D E F with angle A B C equal to angle D E F, angle B C A equal to angle E F D, and either the included side B C equal to E F, or a side subtending an equal angle such as A B equal to D E, we prove that the remaining sides and the remaining angle are equal.",
+          "start_sec": 0.0,
+          "end_sec": 25.29,
+          "duration_sec": 25.29
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "bell": "bell:construction",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "First, let the included side B C equal E F. If side A B were greater than D E, cut off segment B G equal to D E and construct segment G C. Second, let the opposite side A B equal D E. If base B C were greater than E F, cut off segment B H equal to E F and construct segment A H.",
+      "start_sec": 25.29,
+      "end_sec": 47.6,
+      "duration_sec": 22.31,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "First, let the included side B C equal E F. If side A B were greater than D E, cut off segment B G equal to D E and construct segment G C. Second, let the opposite side A B equal D E. If base B C were greater than E F, cut off segment B H equal to E F and construct segment A H.",
+          "start_sec": 25.29,
+          "end_sec": 47.6,
+          "duration_sec": 22.31
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "bell": "bell:insight",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "In the first case, side-angle-side congruence makes triangle G B C equal to triangle D E F, so angle G C B equals angle D F E, which equals the whole angle B C A \u2014 the part equal to the whole, which is impossible. Thus A B equals D E, and by side-angle-side congruence A C equals D F and angle B A C equals angle E D F. In the second case, side-angle-side congruence makes triangle A B H equal to triangle D E F, so exterior angle B H A of triangle A H C equals the opposite interior angle B C A, violating Proposition Sixteen. Therefore B C equals E F, and the remaining sides and angle are equal, as was required to prove.",
+      "start_sec": 47.6,
+      "end_sec": 92.82,
+      "duration_sec": 45.22,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "In the first case, side-angle-side congruence makes triangle G B C equal to triangle D E F, so angle G C B equals angle D F E, which equals the whole angle B C A \u2014 the part equal to the whole, which is impossible. Thus A B equals D E, and by side-angle-side congruence A C equals D F and angle B A C equals angle E D F. In the second case, side-angle-side congruence makes triangle A B H equal to triangle D E F, so exterior angle B H A of triangle A H C equals the opposite interior angle B C A, violating Proposition Sixteen. Therefore B C equals E F, and the remaining sides and angle are equal, as was required to prove.",
+          "start_sec": 47.6,
+          "end_sec": 92.82,
+          "duration_sec": 45.22
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+[bell:proposition]
+[style: brisk, clear, architectural voice; steady studio cadence]
+Book Three, Proposition Three. If in a circle a segment through the center bisect a segment not through the center, it also cuts it at right angles; and if it cut it at right angles, it also bisects it. <pause> Let A B C be a circle, and in it let a diameter C D through the center meet a chord A B not through the center at F.
+
+[bell:construction]
+[style: methodical, precise constructive cadence]
+Take the center E of the circle A B C, and join the radii E A and E B.
+
+[bell:insight]
+[style: luminous, deductive geometric clarity]
+First, let C D bisect A B at F. Since A F equals F B, F E is common, and the radii E A and E B are equal, by One Eight the adjacent angles A F E and B F E are equal. Therefore each is a right angle by Definition Ten, and C D cuts A B at right angles. <pause> Conversely, let C D cut A B at right angles at F. Since the radii E A and E B are equal, by One Five the base angles E A F and E B F are equal. <pause> In triangles E A F and E B F, two angles equal two angles and the common side E F subtends equal angles; therefore by One Twenty-Six the remaining sides are equal, so A F equals F B. <pause> Thus a line through the center bisects a chord if and only if it is perpendicular to it. Which was to be proved.
+
+[bell:system]
+[style: reflective, scholarly, architectural synthesis]
+As Heath observes, Proposition Three Three establishes the two partial converses of the Porism to Three One. Together they form a complete triad of circle symmetry: for any line meeting a chord, any two of the three conditions—passing through the center, bisecting the chord, and cutting at right angles—imply the third. <pause> In the GEOMETOR G-Index, node G one hundred pairs Side-Side-Side congruence in the forward direction with Angle-Angle-Side congruence in the converse, serving ten major theorems including the intersecting chords theorem, Three Thirty-Five, and regular pentagon construction in Book Four.
+
+[bell:resolve]
+[style: warm, inviting, resonant studio close]
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Three in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

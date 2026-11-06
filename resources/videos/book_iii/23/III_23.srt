@@ -1,0 +1,47 @@
+1
+00:00:00,420 --> 00:00:02,711
+Book Three, Proposition Twenty-Three.
+
+2
+00:00:02,711 --> 00:00:10,203
+On the same segment, and on the same side of it, there cannot be constructed two similar and unequal segments of circles.
+
+3
+00:00:10,203 --> 00:00:18,810
+For, if possible, on the same segment A B and on the same side, let two similar and unequal circle segments A C B and A D B be constructed.
+
+4
+00:00:19,230 --> 00:00:27,720
+Draw the line A C D cutting through both arcs at C and D, and join the segments C B and D B by Postulate One.
+
+5
+00:00:28,140 --> 00:00:43,669
+Because circle segment A C B is similar to circle segment A D B, and by Book Three, Definition Eleven similar segments of circles are those which admit equal angles, the inscribed angle A C B equals the inscribed angle A D B.
+
+6
+00:00:43,669 --> 00:00:57,128
+Yet in triangle C D B, angle A C B is an exterior angle and angle A D B is its opposite interior angle; so an exterior angle equals an opposite interior angle, which is impossible by One Sixteen.
+
+7
+00:00:57,128 --> 00:01:06,860
+Therefore, on the same segment and on the same side, two similar and unequal circle segments cannot be constructed, as was required to prove.
+
+8
+00:01:07,280 --> 00:01:20,041
+Proposition Twenty-Three is the circular counterpart of Book One, Proposition Seven: just as side lengths uniquely rigidify a triangle on a base, the inscribed angle uniquely determines the circle segment on a chord.
+
+9
+00:01:20,041 --> 00:01:34,692
+As Robert Simson noted in Heath's commentary, because the two circles already intersect at A and B, Three Ten guarantees they cannot cross again—forcing one arc wholly inside the other and setting up the exterior-angle contradiction of One Sixteen.
+
+10
+00:01:34,692 --> 00:01:45,680
+In the GEOMETOR G-Index, node G one hundred twenty-eight synthesizes forty ancestor nodes, bridging Definition Eleven's similar circle segments with Book One's exterior angle inequality.
+
+11
+00:01:46,100 --> 00:02:00,206
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Twenty-Three in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+12
+00:02:00,206 --> 00:02:06,980
+Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

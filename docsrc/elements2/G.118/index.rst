@@ -2,7 +2,7 @@
 :number: 118
 :canonical_id: G.118
 :original_id: III.16
-:title: G.118 segment drawn right
+:title: G.118 perpendicular at extremity of a diameter is tangent
 :volume: II
 :book: III
 :type: prop
@@ -10,113 +10,49 @@
 :categories: theorem, proof, plane-geometry, circles
 :category: theorem, proof, plane-geometry, circles
 :tags: book-iii, point, segment, circle, angle, triangle, straight-line, right-angle, diameter, extremity, angle-of-segment, plane-angle, acute-angle, rectilineal-angle, centre, trilateral, tangent-to-circle, semicircle, arc, plane, equality, reductio-ad-absurdum, porism
-:dependencies: G.3, G.4, G.10, G.22, G.25, G.30, G.33, G.42, G.44, G.61, G.77, G.111, G.117
-:excerpt: The segment drawn at right angles to the diameter of a circle from its extremity will fall outside the circle, and into the space between the segment and the arc another segment cannot be interposed; further the angle of the semicircle is greater, and the remaining angle less, than any acute angle.
+:dependencies: G.2, G.3, G.4, G.10, G.14, G.22, G.25, G.30, G.33, G.42, G.44, G.61, G.77, G.96, G.111, G.117
+:excerpt: The line drawn at right angles to the diameter of a circle from its extremity falls outside the circle, no other line can be interposed between it and the arc, and the angle of the semicircle is greater than any acute rectilineal angle.
 
 .. _G.118:
 .. _III.16:
 
-G.118 segment drawn right
-=========================
+G.118 perpendicular at extremity of a diameter is tangent
+=========================================================
 
 .. rubric:: `III.16 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/16/>`_
 
 .. enunciation::
 
-   The :term:`segment <G.4>` drawn :term:`at right angles <G.33>` to the :term:`diameter <G.61>` of a :term:`circle <G.10>` from its :term:`extremity <G.3>` will fall outside the circle, and into the space between the segment and the arc another segment cannot be interposed; further the :term:`angle of the semicircle <G.117>` is greater, and the remaining :term:`angle <G.22>` less, than any :term:`acute angle <G.77>`.
+   The :term:`line <G.2>` drawn :term:`at right angles <G.33>` to the :term:`diameter <G.61>` of a :term:`circle <G.10>` from its :term:`extremity <G.3>` falls outside the circle, no other line can be interposed between it and the arc, and the :term:`angle of the semicircle <G.117>` is greater than any :term:`acute <G.77>` :term:`rectilineal angle <G.30>`.
 
 .. signature:: theorem
 
-   | :fn:`segment_drawn_right <G.118>`\ (:g:`( A B C ) <g1:( A B C )>`, :g:`D <g1:D>`, :g:`/ A B / <g1:/ A B />`)
-   | **given** :g:`( A B C ) <g1:( A B C )>` be a circle about :g:`D <g1:D>` as center and :g:`/ A B / <g1:/ A B />` as diameter
-   | **prove** the segment drawn from :g:`A <g1:A>` at right angles to :g:`/ A B / <g1:/ A B />` from its extremity will fall outside the circle
+   | :fn:`perpendicular_at_diameter_extremity_tangent <G.118>`\ (:g:`( A B C ) <g1:( A B C )>`, :g:`D <g1:D>`, :g:`/ A B / <g1:/ A B />`)
+   | **given** :g:`( A B C ) <g1:( A B C )>` about center :g:`D <g1:D>` with diameter :g:`/ A B / <g1:/ A B />`
+   | **prove** :g:`/ A E / <g1:/ A E />` ⊥ :g:`/ A B / <g1:/ A B />` falls outside :g:`( A B C ) <g1:( A B C )>`, no segment interposed between :g:`/ A E / <g1:/ A E />` and :g:`( C H A ) <g1:( C H A )>`, :g:`/ A E / <g1:/ A E />` touches :g:`( A B C ) <g1:( A B C )>`
 
 .. picture:: g1.svg
    :alt: Diagram for Proposition 16
 
-.. step:: given
+.. step:: given ∵ circle_radii, circle_diameter <G.10, G.61>
 
-   :g:`( A B C ) <g1:( A B C )>` be a circle about :g:`D <g1:D>` as center and :g:`/ A B / <g1:/ A B />` as diameter
+   :g:`( A B C ) <g1:( A B C )>` about center :g:`D <g1:D>` with diameter :g:`/ A B / <g1:/ A B />`
 
-.. step:: construct
+.. step:: construct ∵ right_angle_perpendicular, segment <G.33, G.14>
 
-   Suppose it does not, but, if possible, let it fall within as :g:`/ C A / <g1:/ C A />`, and let :g:`/ D C / <g1:/ D C />` be joined.
+   assume perpendicular at :g:`A <g1:A>` falls within as :g:`/ C A / <g1:/ C A />`, join :g:`/ D C / <g1:/ D C />`
 
-.. step:: assert ∵ isosceles_base_angles <G.25>
+.. step:: assert ∵ isosceles_base_angles, two_angles_less_than_two_right <G.25, G.42>
 
-   :g:`/ D A / <g1:/ D A />` :eq:`= <g1:/ D A / = g1:/ D C />` :g:`/ D C / <g1:/ D C />`, :g:`< D A C ) <g1:< D A C )>` :eq:`= <g1:< D A C ) = g1:< A C D )>` :g:`< A C D ) <g1:< A C D )>`
+   :g:`/ D A / <g1:/ D A />` :eq:`= <g1:/ D A / = g1:/ D C />` :g:`/ D C / <g1:/ D C />` → :g:`< D A C ) <g1:< D A C )>` :eq:`= <g1:< D A C ) = g1:< A C D )>` :g:`< A C D ) <g1:< A C D )>` = right angle ⇒⇐, so perpendicular falls outside as :g:`/ A E / <g1:/ A E />`
 
-.. step:: assert
+.. step:: assert ∵ greater_angle_greater_side, circle_radii <G.44, G.10>
 
-   :g:`< D A C ) <g1:< D A C )>` is right
+   assume :g:`/ F A / <g1:/ F A />` interposed and :g:`/ D G / <g1:/ D G />` ⊥ :g:`/ F A / <g1:/ F A />` → :g:`/ D A / <g1:/ D A />` > :g:`/ D G / <g1:/ D G />`, and :g:`/ D A / <g1:/ D A />` :eq:`= <g1:/ D A / = g1:/ D H />` :g:`/ D H / <g1:/ D H />` → :g:`/ D H / <g1:/ D H />` > :g:`/ D G / <g1:/ D G />` ⇒⇐
 
-.. step:: assert
+.. step:: conclude ∵ angle_segment_contained_def, segment_said_touch_def <G.117, G.111>
 
-   :g:`< A C D ) <g1:< A C D )>` is also right:
-
-.. step:: assert ∵ two_angles_less_than_two_right <G.42>
-
-   in :g:`< A C D > <g1:< A C D >>`, the two angles :g:`< D A C ) <g1:< D A C )>`, :g:`< A C D ) <g1:< A C D )>` are equal to two right angles ⇒⇐
-
-.. step:: assert
-
-   the segment drawn from :g:`A <g1:A>` at right angles to :g:`/ B A / <g1:/ B A />` will not fall within the circle
-
-.. step:: assert
-
-   Similarly we can prove that neither will it fall on the arc
-
-.. step:: assert
-
-   it will fall outside
-
-.. step:: assert
-
-   Let it fall as :g:`/ A E / <g1:/ A E />`
-
-.. step:: assert
-
-   I say next that into the space between :g:`/ A E / <g1:/ A E />` and the arc :g:`( C H A ) <g1:( C H A )>` another segment cannot be interposed
-
-.. step:: construct
-
-   If possible, let another segment be so interposed, as :g:`/ F A / <g1:/ F A />`, and let :g:`/ D G / <g1:/ D G />` be drawn from :g:`D <g1:D>` perpendicular to :g:`/ F A / <g1:/ F A />`.
-
-.. step:: assert
-
-   :g:`< A G D ) <g1:< A G D )>` is right → and :g:`< D A G ) <g1:< D A G )>` < a right angle,
-
-.. step:: assert ∵ greater_angle_greater_side <G.44>
-
-   :g:`/ A D / <g1:/ A D />` > :g:`/ D G / <g1:/ D G />`
-
-.. step:: assert
-
-   :g:`/ D A / <g1:/ D A />` :eq:`= <g1:/ D A / = g1:/ D H />` :g:`/ D H / <g1:/ D H />`
-
-.. step:: assert
-
-   :g:`/ D H / <g1:/ D H />` > :g:`/ D G / <g1:/ D G />`, the less than the greater ⇒⇐
-
-.. step:: assert
-
-   another segment cannot be interposed into the space between the segment and the arc
-
-.. step:: assert
-
-   I say further that the angle of the semicircle contained by :g:`/ B A / <g1:/ B A />` and the arc :g:`( C H A ) <g1:( C H A )>` > any acute :term:`rectilineal angle <G.30>`, and the remaining angle contained by the arc :g:`( C H A ) <g1:( C H A )>` and :g:`/ A E / <g1:/ A E />` < any acute rectilineal angle
-
-.. step:: assert
-
-   If there is any rectilineal angle greater than the angle contained by :g:`/ B A / <g1:/ B A />` and the arc :g:`( C H A ) <g1:( C H A )>`, and any rectilineal angle less than the angle contained by the arc :g:`( C H A ) <g1:( C H A )>` and :g:`/ A E / <g1:/ A E />`, then into the space between the arc and :g:`/ A E / <g1:/ A E />` a segment will be interposed such as will make an angle contained by segments which > the angle contained by :g:`/ B A / <g1:/ B A />` and the arc :g:`( C H A ) <g1:( C H A )>`, and another angle contained by segments which < the angle contained by the arc :g:`( C H A ) <g1:( C H A )>` and :g:`/ A E / <g1:/ A E />`
-
-.. step:: assert
-
-   Such a segment cannot be interposed
-
-.. step:: conclude
-
-   there will not be any acute angle contained by segments which > the angle contained by :g:`/ B A / <g1:/ B A />` and the arc :g:`( C H A ) <g1:( C H A )>`, nor yet any acute angle contained by segments which < the angle contained by the arc :g:`( C H A ) <g1:( C H A )>` and :g:`/ A E / <g1:/ A E />`.—
+   no :term:`segment <G.4>` interposed between :g:`/ A E / <g1:/ A E />` and :g:`( C H A ) <g1:( C H A )>`; :term:`semicircle <G.96>` :term:`angle <G.22>` > any acute angle > horn-like angle; :g:`/ A E / <g1:/ A E />` touches :g:`( A B C ) <g1:( A B C )>`
 
 .. porism::
 
@@ -177,9 +113,10 @@ Dependency Graph
      "G.44" [label="G.44", tooltip="G.44 (I.19): In any triangle, the greater angle is subtended by the greater side.", fillcolor="#222244", URL="../G.44/index.html", target="_top"];
      "G.61" [label="G.61", tooltip="G.61 (I.def.17): A diameter of a circle is any segment drawn through the center and terminated in both directions by the arc of the circle; it bisects the circle.", fillcolor="#224422", URL="../G.61/index.html", target="_top"];
      "G.77" [label="G.77", tooltip="G.77 (I.def.12): An acute angle is less than a right angle.", fillcolor="#224422", URL="../G.77/index.html", target="_top"];
+     "G.96" [label="G.96", tooltip="G.96 (I.def.18): A semicircle is the figure contained by a diameter and the arc cut off by it.", fillcolor="#224422", URL="../G.96/index.html", target="_top"];
      "G.111" [label="G.111", tooltip="G.111 (III.def.2): Asegment is said totouch a circle which, meeting thecircle and being produced, does not cut the circle.", fillcolor="#224422", URL="../G.111/index.html", target="_top"];
      "G.117" [label="G.117", tooltip="G.117 (III.def.7): Anangle of a segment is that contained by asegment and a arc of acircle.", fillcolor="#224422", URL="../G.117/index.html", target="_top"];
-     "G.118" [label="G.118", tooltip="G.118 (III.16): The segment drawn at right angles to the diameter of a circle from its extremity will fall outside the circle, and into the space between the segment and the arc another segment ca...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.118" [label="G.118", tooltip="G.118 (III.16): The line drawn at right angles to the diameter of a circle from its extremity falls outside the circle, no other line can be interposed between it and the arc, and the angle of the...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -210,6 +147,7 @@ Dependency Graph
      "G.34" -> "G.2";
      "G.37" -> "G.2";
      "G.40" -> "G.2";
+     "G.118" -> "G.2";
      "G.4" -> "G.3";
      "G.6" -> "G.3";
      "G.8" -> "G.3";
@@ -251,12 +189,14 @@ Dependency Graph
      "G.9" -> "G.8";
      "G.10" -> "G.9";
      "G.12" -> "G.9";
+     "G.96" -> "G.9";
      "G.11" -> "G.10";
      "G.15" -> "G.10";
      "G.17" -> "G.10";
      "G.20" -> "G.10";
      "G.21" -> "G.10";
      "G.61" -> "G.10";
+     "G.96" -> "G.10";
      "G.111" -> "G.10";
      "G.117" -> "G.10";
      "G.118" -> "G.10";
@@ -265,6 +205,7 @@ Dependency Graph
      "G.20" -> "G.11";
      "G.21" -> "G.11";
      "G.61" -> "G.11";
+     "G.96" -> "G.11";
      "G.13" -> "G.12";
      "G.17" -> "G.12";
      "G.20" -> "G.12";
@@ -289,6 +230,7 @@ Dependency Graph
      "G.34" -> "G.14";
      "G.41" -> "G.14";
      "G.43" -> "G.14";
+     "G.118" -> "G.14";
      "G.17" -> "G.15";
      "G.20" -> "G.15";
      "G.21" -> "G.15";
@@ -337,10 +279,12 @@ Dependency Graph
      "G.32" -> "G.24";
      "G.41" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.118" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -357,16 +301,20 @@ Dependency Graph
      "G.118" -> "G.33";
      "G.37" -> "G.34";
      "G.37" -> "G.36";
+     "G.42" -> "G.36";
      "G.40" -> "G.37";
      "G.42" -> "G.37";
      "G.40" -> "G.38";
      "G.41" -> "G.40";
+     "G.42" -> "G.41";
      "G.43" -> "G.41";
      "G.118" -> "G.42";
      "G.44" -> "G.43";
      "G.118" -> "G.44";
+     "G.96" -> "G.61";
      "G.118" -> "G.61";
      "G.118" -> "G.77";
+     "G.118" -> "G.96";
      "G.118" -> "G.111";
      "G.118" -> "G.117";
    }

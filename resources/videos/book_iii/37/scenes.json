@@ -1,0 +1,578 @@
+[
+  {
+    "id": "proposition",
+    "title": "Elements \u2022 Book III \u2022 Proposition 37",
+    "subtitle": "Converse of the Tangent-Secant Theorem",
+    "Visual description": "Given circle ABC, external point D, secant DCA, and segment DB falling on the circle at B such that rect(AD, CD) = sq(DB).",
+    " narration": "Elements, Book three, Proposition thirty-seven. From a point outside a circle, if a secant cuts the circle and another line falls on the circle such that the rectangle contained by the whole secant and its external segment equals the square on the line falling on the circle, then that line touches the circle. From external point D, let secant D C A cut circle A B C, and let segment D B fall on the circumference at B so that the rectangle A D by C D equals the square on D B. We claim that D B is tangent to circle A B C.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.145/g1.svg",
+    "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_II/book_iii/propositions/0082.g1.png",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "step_num": 1,
+        "total_steps": 6,
+        "step_kind": "GIVEN",
+        "prop_id": "BOOK III \u2022 PROP. 37",
+        "g_id": "G.145",
+        "folio": "Folios 0081\u20130082 \u2022 pp. 75\u201376",
+        "enunciation": "If a point be taken outside a circle and from the point there fall on the circle two straight lines, if one of them cut the circle, and the other fall on it, and if further the rectangle contained by the whole of the straight line which cuts the circle and the straight line intercepted on it outside between the point and the convex circumference be equal to the square on the straight line which falls on the circle, the straight line which falls on it will touch the circle.",
+        "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.145/g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_II/book_iii/propositions/0082.g1.png",
+        "narration": "Elements, Book three, Proposition thirty-seven. From a point outside a circle, if a secant cuts the circle and another line falls on the circle such that the rectangle contained by the whole secant and its external segment equals the square on the line falling on the circle, then that line touches the circle. From external point D, let secant D C A cut circle A B C, and let segment D B fall on the circumference at B so that the rectangle A D by C D equals the square on D B. We claim that D B is tangent to circle A B C.",
+        "symbolic": "rect(/ A D /, / C D /) = sq(/ D B /) \u2192 tangent(/ D B /, ( A B C ))",
+        "clause_html": "<span class=\"fn-tok\">rect</span>(<span class=\"g-tok\">/ A D /</span>, <span class=\"g-tok\">/ C D /</span>) <span class=\"eq-tok\">=</span> <span class=\"fn-tok\">sq</span>(<span class=\"g-tok\">/ D B /</span>) <span class=\"eq-tok\">\u2192</span> <span class=\"fn-tok\">tangent</span>(<span class=\"g-tok\">/ D B /</span>, <span class=\"g-tok\">( A B C )</span>)",
+        "just_id": "GIVEN",
+        "just_title": "hypothesis",
+        "visible_ids": [
+          "el-circle-ABC",
+          "el-seg-AD",
+          "el-seg-AC",
+          "el-seg-CD",
+          "el-seg-DB",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D"
+        ],
+        "active_ids": [
+          "el-circle-ABC",
+          "el-seg-AD",
+          "el-seg-CD",
+          "el-pt-A",
+          "el-pt-C",
+          "el-pt-D"
+        ],
+        "equal_ids": [
+          "el-seg-DB",
+          "el-pt-B"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "construction",
+    "title": "Auxiliary Tangent & Radii",
+    "subtitle": "Construction",
+    "Visual description": "Draw tangent DE touching circle ABC at E, find center F, and join FE, FB, and FD; by III.18, angle FED is a right angle.",
+    " narration": "Using Book three Proposition seventeen, draw a tangent D E from D touching circle A B C at E. Find the center F of the circle, and join segments F E, F B, and F D. Because D E is tangent to the circle at E, Book three Proposition eighteen shows that radius F E is perpendicular to D E, making angle F E D a right angle.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.145/g1.svg",
+    "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_II/book_iii/propositions/0082.g1.png",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "step_num": 2,
+        "total_steps": 6,
+        "step_kind": "CONSTRUCT",
+        "prop_id": "BOOK III \u2022 PROP. 37",
+        "g_id": "G.145",
+        "folio": "Folios 0081\u20130082 \u2022 pp. 75\u201376",
+        "enunciation": "If a point be taken outside a circle and from the point there fall on the circle two straight lines, if one of them cut the circle, and the other fall on it, and if further the rectangle contained by the whole of the straight line which cuts the circle and the straight line intercepted on it outside between the point and the convex circumference be equal to the square on the straight line which falls on the circle, the straight line which falls on it will touch the circle.",
+        "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.145/g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_II/book_iii/propositions/0082.g1.png",
+        "narration": "Using Book three Proposition seventeen, draw a tangent D E from D touching circle A B C at E. Find the center F of the circle, and join segments F E, F B, and F D.",
+        "symbolic": "/ D E / = tangent_to_circle(D, ( A B C )), F = find_circle_center(( A B C )), / F E /, / F B /, / F D /",
+        "clause_html": "<span class=\"g-tok\">/ D E /</span> <span class=\"eq-tok\">=</span> <span class=\"fn-tok\">tangent_to_circle</span>(D, <span class=\"g-tok\">( A B C )</span>), F <span class=\"eq-tok\">=</span> <span class=\"fn-tok\">find_circle_center</span>(<span class=\"g-tok\">( A B C )</span>), <span class=\"g-tok\">/ F E /</span>, <span class=\"g-tok\">/ F B /</span>, <span class=\"g-tok\">/ F D /</span>",
+        "just_id": "G.119 \u2022 III.17, G.98 \u2022 III.1, G.14 \u2022 I.post.1",
+        "just_title": "tangent_to_circle",
+        "visible_ids": [
+          "el-circle-ABC",
+          "el-seg-AD",
+          "el-seg-AC",
+          "el-seg-CD",
+          "el-seg-DB",
+          "el-seg-DE",
+          "el-seg-FE",
+          "el-seg-FB",
+          "el-seg-FD",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-E",
+          "el-pt-F",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E",
+          "lbl-F"
+        ],
+        "active_ids": [
+          "el-seg-DE",
+          "el-seg-FE",
+          "el-seg-FB",
+          "el-seg-FD",
+          "el-pt-D",
+          "el-pt-E",
+          "el-pt-F"
+        ],
+        "equal_ids": [
+          "el-seg-FE",
+          "el-seg-FB"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "step_num": 3,
+        "total_steps": 6,
+        "step_kind": "ASSERT",
+        "prop_id": "BOOK III \u2022 PROP. 37",
+        "g_id": "G.145",
+        "folio": "Folios 0081\u20130082 \u2022 pp. 75\u201376",
+        "enunciation": "If a point be taken outside a circle and from the point there fall on the circle two straight lines, if one of them cut the circle, and the other fall on it, and if further the rectangle contained by the whole of the straight line which cuts the circle and the straight line intercepted on it outside between the point and the convex circumference be equal to the square on the straight line which falls on the circle, the straight line which falls on it will touch the circle.",
+        "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.145/g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_II/book_iii/propositions/0082.g1.png",
+        "narration": "Because D E is tangent to the circle at E, Book three Proposition eighteen shows that radius F E is perpendicular to D E, making angle F E D a right angle.",
+        "symbolic": "/ F E / \u22a5 / D E / \u2192 < F E D ) = right",
+        "clause_html": "<span class=\"g-tok\">/ F E /</span> <span class=\"eq-tok\">\u22a5</span> <span class=\"g-tok\">/ D E /</span> <span class=\"eq-tok\">\u2192</span> <span class=\"g-tok\">&lt; F E D )</span> <span class=\"eq-tok\">=</span> right",
+        "just_id": "G.120 \u2022 III.18",
+        "just_title": "radius_perpendicular_to_tangent",
+        "visible_ids": [
+          "el-circle-ABC",
+          "el-ang-FED",
+          "el-seg-AD",
+          "el-seg-AC",
+          "el-seg-CD",
+          "el-seg-DB",
+          "el-seg-DE",
+          "el-seg-FE",
+          "el-seg-FB",
+          "el-seg-FD",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-E",
+          "el-pt-F",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E",
+          "lbl-F"
+        ],
+        "active_ids": [
+          "el-ang-FED",
+          "el-seg-FE",
+          "el-seg-DE",
+          "el-pt-E"
+        ],
+        "equal_ids": []
+      }
+    ]
+  },
+  {
+    "id": "insight",
+    "title": "Congruence & Right Angle at the Circumference",
+    "subtitle": "Demonstration",
+    "Visual description": "By III.36, rect(AD, CD) = sq(DE) = sq(DB), so DE = DB; by SSS (I.8), <FBD ≃ <FED so <DBF = right, and by III.16 Porism DB touches the circle.",
+    " narration": "By the tangent-secant theorem in Book three Proposition thirty-six, the rectangle A D by C D equals the square on tangent D E. Since the rectangle A D by C D also equals the square on D B by hypothesis, the square on D E equals the square on D B, and therefore segment D E equals segment D B. In triangles F E D and F B D, radii F E and F B are equal, segments D E and D B are equal, and base F D is common. By Side-Side-Side congruence, angle D B F equals the right angle F E D. Since D B stands at right angles to radius F B at its extremity B on the circle, the Porism to Book three Proposition sixteen proves that D B touches circle A B C, as was required to prove.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.145/g1.svg",
+    "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_II/book_iii/propositions/0082.g1.png",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "step_num": 4,
+        "total_steps": 6,
+        "step_kind": "ASSERT",
+        "prop_id": "BOOK III \u2022 PROP. 37",
+        "g_id": "G.145",
+        "folio": "Folios 0081\u20130082 \u2022 pp. 75\u201376",
+        "enunciation": "If a point be taken outside a circle and from the point there fall on the circle two straight lines, if one of them cut the circle, and the other fall on it, and if further the rectangle contained by the whole of the straight line which cuts the circle and the straight line intercepted on it outside between the point and the convex circumference be equal to the square on the straight line which falls on the circle, the straight line which falls on it will touch the circle.",
+        "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.145/g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_II/book_iii/propositions/0082.g1.png",
+        "narration": "By the tangent-secant theorem in Book three Proposition thirty-six, the rectangle A D by C D equals the square on tangent D E. Since the rectangle A D by C D also equals the square on D B by hypothesis, the square on D E equals the square on D B, and therefore segment D E equals segment D B.",
+        "symbolic": "rect(/ A D /, / C D /) = sq(/ D E /) = sq(/ D B /) \u2192 / D E / = / D B /",
+        "clause_html": "<span class=\"fn-tok\">rect</span>(<span class=\"g-tok\">/ A D /</span>, <span class=\"g-tok\">/ C D /</span>) <span class=\"eq-tok\">=</span> <span class=\"fn-tok\">sq</span>(<span class=\"g-tok\">/ D E /</span>) <span class=\"eq-tok\">=</span> <span class=\"fn-tok\">sq</span>(<span class=\"g-tok\">/ D B /</span>) <span class=\"eq-tok\">\u2192</span> <span class=\"g-tok\">/ D E /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ D B /</span>",
+        "just_id": "G.144 \u2022 III.36, G.16 \u2022 I.cn.1",
+        "just_title": "tangent_secant_theorem",
+        "visible_ids": [
+          "el-circle-ABC",
+          "el-ang-FED",
+          "el-seg-AD",
+          "el-seg-AC",
+          "el-seg-CD",
+          "el-seg-DB",
+          "el-seg-DE",
+          "el-seg-FE",
+          "el-seg-FB",
+          "el-seg-FD",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-E",
+          "el-pt-F",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E",
+          "lbl-F"
+        ],
+        "active_ids": [
+          "el-seg-AD",
+          "el-seg-CD",
+          "el-pt-A",
+          "el-pt-C",
+          "el-pt-D"
+        ],
+        "equal_ids": [
+          "el-seg-DE",
+          "el-seg-DB",
+          "el-pt-B",
+          "el-pt-E"
+        ],
+        "tick_ids": [
+          "el-seg-DE",
+          "el-seg-DB"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "step_num": 5,
+        "total_steps": 6,
+        "step_kind": "ASSERT",
+        "prop_id": "BOOK III \u2022 PROP. 37",
+        "g_id": "G.145",
+        "folio": "Folios 0081\u20130082 \u2022 pp. 75\u201376",
+        "enunciation": "If a point be taken outside a circle and from the point there fall on the circle two straight lines, if one of them cut the circle, and the other fall on it, and if further the rectangle contained by the whole of the straight line which cuts the circle and the straight line intercepted on it outside between the point and the convex circumference be equal to the square on the straight line which falls on the circle, the straight line which falls on it will touch the circle.",
+        "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.145/g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_II/book_iii/propositions/0082.g1.png",
+        "narration": "In triangles F E D and F B D, radii F E and F B are equal, segments D E and D B are equal, and base F D is common. By Side-Side-Side congruence, angle D B F equals the right angle F E D.",
+        "symbolic": "/ F E / = / F B /, / D E / = / D B / \u2192 < F B D > \u2243 < F E D >, < D B F ) = < F E D ) = right",
+        "clause_html": "<span class=\"g-tok\">/ F E /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ F B /</span>, <span class=\"g-tok\">/ D E /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ D B /</span> <span class=\"eq-tok\">\u2192</span> <span class=\"g-tok\">&lt; F B D &gt;</span> <span class=\"eq-tok\">\u2243</span> <span class=\"g-tok\">&lt; F E D &gt;</span>, <span class=\"g-tok\">&lt; D B F )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; F E D )</span> <span class=\"eq-tok\">=</span> right",
+        "just_id": "G.10 \u2022 I.def.15, G.29 \u2022 I.8",
+        "just_title": "sss_congruence",
+        "visible_ids": [
+          "el-circle-ABC",
+          "el-tri-FED",
+          "el-tri-FBD",
+          "el-ang-FED",
+          "el-ang-DBF",
+          "el-seg-AD",
+          "el-seg-AC",
+          "el-seg-CD",
+          "el-seg-DB",
+          "el-seg-DE",
+          "el-seg-FE",
+          "el-seg-FB",
+          "el-seg-FD",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-E",
+          "el-pt-F",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E",
+          "lbl-F"
+        ],
+        "active_ids": [
+          "el-tri-FED",
+          "el-tri-FBD",
+          "el-seg-FD"
+        ],
+        "equal_ids": [
+          "el-ang-FED",
+          "el-ang-DBF",
+          "el-seg-FE",
+          "el-seg-FB",
+          "el-seg-DE",
+          "el-seg-DB"
+        ],
+        "tick_ids": [
+          "el-seg-FE",
+          "el-seg-FB"
+        ],
+        "tick_2_ids": [
+          "el-seg-DE",
+          "el-seg-DB"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "step_num": 6,
+        "total_steps": 6,
+        "step_kind": "\u2234",
+        "is_punchline": true,
+        "prop_id": "BOOK III \u2022 PROP. 37",
+        "g_id": "G.145",
+        "folio": "Folios 0081\u20130082 \u2022 pp. 75\u201376",
+        "enunciation": "If a point be taken outside a circle and from the point there fall on the circle two straight lines, if one of them cut the circle, and the other fall on it, and if further the rectangle contained by the whole of the straight line which cuts the circle and the straight line intercepted on it outside between the point and the convex circumference be equal to the square on the straight line which falls on the circle, the straight line which falls on it will touch the circle.",
+        "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.145/g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_II/book_iii/propositions/0082.g1.png",
+        "narration": "Since D B stands at right angles to radius F B at its extremity B on the circle, the Porism to Book three Proposition sixteen proves that D B touches circle A B C, as was required to prove.",
+        "symbolic": "< D B F ) = right \u2192 tangent(/ D B /, ( A B C ))",
+        "clause_html": "<span class=\"g-tok\">&lt; D B F )</span> <span class=\"eq-tok\">=</span> right <span class=\"eq-tok\">\u2192</span> <span class=\"fn-tok\">tangent</span>(<span class=\"g-tok\">/ D B /</span>, <span class=\"g-tok\">( A B C )</span>)",
+        "just_id": "G.118 \u2022 III.16",
+        "just_title": "perpendicular_at_diameter_extremity_tangent",
+        "visible_ids": [
+          "el-circle-ABC",
+          "el-ang-DBF",
+          "el-seg-AD",
+          "el-seg-AC",
+          "el-seg-CD",
+          "el-seg-DB",
+          "el-seg-FB",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-F",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-F"
+        ],
+        "active_ids": [
+          "el-circle-ABC",
+          "el-ang-DBF",
+          "el-seg-FB"
+        ],
+        "equal_ids": [
+          "el-seg-DB",
+          "el-pt-B",
+          "el-pt-D"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "system",
+    "title": "Constructive Converse & Dependency Graph",
+    "subtitle": "Commentary & Genealogy",
+    "widescreen_only": true,
+    "Visual description": "Commentary on Euclid's constructive converse method (avoiding reductio ad absurdum) and the G.145 genealogy card.",
+    " narration": "Proposition thirty-seven is the final proposition of Book three, sealing the theory of circles with an algebraic criterion for tangency: instead of proving by contradiction that D B cannot cut the circle a second time, Euclid constructs an auxiliary tangent D E and transfers its right angle to B by triangle congruence. In the GEOMETOR dependency graph, Proposition thirty-seven crowns Book three with sixty-three ancestor nodes, and joins Proposition thirty-six to drive Book four Proposition ten\u2014where this exact tangency criterion proves that a chord equal to the golden section of a radius is tangent to the circumcircle of the smaller triangle, unlocking the regular pentagon.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.145/g1.svg",
+    "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_II/book_iii/propositions/0082.g1.png",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "step_num": 7,
+        "total_steps": 9,
+        "step_kind": "COMMENTARY",
+        "widescreen_only": true,
+        "prop_id": "BOOK III \u2022 PROP. 37",
+        "g_id": "G.145",
+        "folio": "Folios 0081\u20130082 \u2022 pp. 75\u201376",
+        "enunciation": "If a point be taken outside a circle and from the point there fall on the circle two straight lines, if one of them cut the circle, and the other fall on it, and if further the rectangle contained by the whole of the straight line which cuts the circle and the straight line intercepted on it outside between the point and the convex circumference be equal to the square on the straight line which falls on the circle, the straight line which falls on it will touch the circle.",
+        "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.145/g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_II/book_iii/propositions/0082.g1.png",
+        "narration": "Proposition thirty-seven is the final proposition of Book three, sealing the theory of circles with an algebraic criterion for tangency: instead of proving by contradiction that D B cannot cut the circle a second time, Euclid constructs an auxiliary tangent D E and transfers its right angle to B by triangle congruence.",
+        "symbolic": "rect(/ A D /, / C D /) = sq(/ D B /) \u27f7 tangent(/ D B /, ( A B C ))",
+        "clause_html": "<span class=\"fn-tok\">rect</span>(<span class=\"g-tok\">/ A D /</span>, <span class=\"g-tok\">/ C D /</span>) <span class=\"eq-tok\">=</span> <span class=\"fn-tok\">sq</span>(<span class=\"g-tok\">/ D B /</span>) <span class=\"eq-tok\">\u27f7</span> <span class=\"fn-tok\">tangent</span>(<span class=\"g-tok\">/ D B /</span>, <span class=\"g-tok\">( A B C )</span>)",
+        "just_id": "HEATH \u2022 VOL. II p. 76",
+        "just_title": "constructive_converse_method",
+        "commentary_title": "Direct Converse via Auxiliary Tangent (Like I.48)",
+        "commentary_body": "Just as Euclid proves the converse of the Pythagorean theorem (<span class=\"g-tok\">I.48</span>) by constructing an auxiliary right angle rather than using proof by contradiction, here he constructs an auxiliary tangent <span class=\"g-tok\">/ D E /</span> (<span class=\"g-tok\">III.17</span>), deduces <span class=\"g-tok\">/ D E / = / D B /</span> via <span class=\"g-tok\">III.36</span>, and transfers the right angle at <span class=\"g-tok\">E</span> to <span class=\"g-tok\">B</span> by <span class=\"g-tok\">I.8</span> regardless of whether <span class=\"g-tok\">/ D C A /</span> passes through the center.",
+        "visible_ids": [
+          "el-circle-ABC",
+          "el-tri-FED",
+          "el-tri-FBD",
+          "el-ang-FED",
+          "el-ang-DBF",
+          "el-seg-AD",
+          "el-seg-AC",
+          "el-seg-CD",
+          "el-seg-DB",
+          "el-seg-DE",
+          "el-seg-FE",
+          "el-seg-FB",
+          "el-seg-FD",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-E",
+          "el-pt-F",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E",
+          "lbl-F"
+        ],
+        "active_ids": [
+          "el-tri-FED",
+          "el-tri-FBD"
+        ],
+        "equal_ids": [
+          "el-seg-DE",
+          "el-seg-DB"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "step_num": 8,
+        "total_steps": 9,
+        "step_kind": "GENEALOGY",
+        "widescreen_only": true,
+        "prop_id": "BOOK III \u2022 PROP. 37",
+        "g_id": "G.145",
+        "folio": "Folios 0081\u20130082 \u2022 pp. 75\u201376",
+        "enunciation": "If a point be taken outside a circle and from the point there fall on the circle two straight lines, if one of them cut the circle, and the other fall on it, and if further the rectangle contained by the whole of the straight line which cuts the circle and the straight line intercepted on it outside between the point and the convex circumference be equal to the square on the straight line which falls on the circle, the straight line which falls on it will touch the circle.",
+        "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.145/g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_II/book_iii/propositions/0082.g1.png",
+        "narration": "In the GEOMETOR dependency graph, Proposition thirty-seven crowns Book three with sixty-three ancestor nodes, and joins Proposition thirty-six to drive Book four Proposition ten\u2014where this exact tangency criterion proves that a chord equal to the golden section of a radius is tangent to the circumcircle of the smaller triangle, unlocking the regular pentagon.",
+        "symbolic": "G.29 (I.8), G.118 (III.16), G.144 (III.36) \u2192 G.145 (III.37) \u2192 G.156 (IV.10)",
+        "clause_html": "<span class=\"g-tok\">G.29 (I.8)</span>, <span class=\"g-tok\">G.118 (III.16)</span>, <span class=\"g-tok\">G.144 (III.36)</span> <span class=\"eq-tok\">\u2192</span> <span class=\"fn-tok\">G.145 (III.37)</span> <span class=\"eq-tok\">\u2192</span> <span class=\"g-tok\">G.156 (IV.10)</span>",
+        "just_id": "G-INDEX \u2022 63 ANCESTORS \u2022 1 DEPENDENT",
+        "just_title": "dependency_graph",
+        "genealogy_ancestors": [
+          {
+            "id": "G.10 \u2022 I.def.15",
+            "title": "circle_radii"
+          },
+          {
+            "id": "G.29 \u2022 I.8",
+            "title": "sss_congruence"
+          },
+          {
+            "id": "G.81 \u2022 II.def.1",
+            "title": "contained_rectangle"
+          },
+          {
+            "id": "G.111 \u2022 III.def.2",
+            "title": "line_tangent_to_circle"
+          },
+          {
+            "id": "G.118 \u2022 III.16",
+            "title": "perpendicular_at_diameter_extremity_tangent"
+          },
+          {
+            "id": "G.119 \u2022 III.17",
+            "title": "tangent_to_circle"
+          },
+          {
+            "id": "G.120 \u2022 III.18",
+            "title": "radius_perpendicular_to_tangent"
+          },
+          {
+            "id": "G.144 \u2022 III.36",
+            "title": "tangent_secant_theorem"
+          }
+        ],
+        "genealogy_dependents": [
+          {
+            "id": "G.156 \u2022 IV.10",
+            "title": "construct_golden_isosceles_triangle"
+          }
+        ],
+        "genealogy_Stats": "63 total ancestor nodes across 13 dependency layers; the finale of Book III and key to Book IV Proposition 10.",
+        "visible_ids": [
+          "el-circle-ABC",
+          "el-tri-FED",
+          "el-tri-FBD",
+          "el-ang-FED",
+          "el-ang-DBF",
+          "el-seg-AD",
+          "el-seg-AC",
+          "el-seg-CD",
+          "el-seg-DB",
+          "el-seg-DE",
+          "el-seg-FE",
+          "el-seg-FB",
+          "el-seg-FD",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-E",
+          "el-pt-F",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E",
+          "lbl-F"
+        ],
+        "active_ids": [
+          "el-circle-ABC",
+          "el-seg-AD",
+          "el-seg-CD"
+        ],
+        "equal_ids": [
+          "el-seg-DB"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "resolve",
+    "title": "Explore GEOMETOR Elements",
+    "subtitle": "Interactive Digital Edition",
+    "widescreen_only": true,
+    "Visual description": "Closing participation callout with links to the interactive G.145 page and Heath Book III Proposition 37 edition.",
+    " narration": "Explore the interactive construction, symbolic proof, and dependency graph at geometor dot github dot io.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.145/g1.svg",
+    "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_II/book_iii/propositions/0082.g1.png",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "step_num": 9,
+        "total_steps": 9,
+        "step_kind": "PARTICIPATE",
+        "widescreen_only": true,
+        "prop_id": "BOOK III \u2022 PROP. 37",
+        "g_id": "G.145",
+        "folio": "Folios 0081\u20130082 \u2022 pp. 75\u201376",
+        "enunciation": "If a point be taken outside a circle and from the point there fall on the circle two straight lines, if one of them cut the circle, and the other fall on it, and if further the rectangle contained by the whole of the straight line which cuts the circle and the straight line intercepted on it outside between the point and the convex circumference be equal to the square on the straight line which falls on the circle, the straight line which falls on it will touch the circle.",
+        "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.145/g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_II/book_iii/propositions/0082.g1.png",
+        "narration": "Explore the interactive construction, symbolic proof, and dependency graph at geometor dot github dot io.",
+        "symbolic": "geometor.github.io/elements/elements2/G.145/",
+        "clause_html": "<span class=\"fn-tok\">geometor.github.io/elements/elements2/G.145/</span>",
+        "just_id": "GEOMETOR \u2022 ELEMENTS",
+        "just_title": "interactive_edition",
+        "elements_url": "https://geometor.github.io/elements/elements2/G.145/",
+        "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/37/",
+        "visible_ids": [
+          "el-circle-ABC",
+          "el-tri-FED",
+          "el-tri-FBD",
+          "el-ang-FED",
+          "el-ang-DBF",
+          "el-seg-AD",
+          "el-seg-AC",
+          "el-seg-CD",
+          "el-seg-DB",
+          "el-seg-DE",
+          "el-seg-FE",
+          "el-seg-FB",
+          "el-seg-FD",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-E",
+          "el-pt-F",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E",
+          "lbl-F"
+        ],
+        "active_ids": [
+          "el-circle-ABC",
+          "el-seg-AD",
+          "el-seg-CD"
+        ],
+        "equal_ids": [
+          "el-seg-DB"
+        ]
+      }
+    ]
+  }
+]

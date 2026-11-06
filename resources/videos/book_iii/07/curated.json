@@ -1,0 +1,60 @@
+{
+  "III.7": {
+    "subtype": "theorem",
+    "args": [
+      ":g:`( A B C D ) <g1:( A B C D )>`",
+      ":g:`/ A D / <g1:/ A D />`",
+      ":g:`E <g1:E>`",
+      ":g:`F <g1:F>`"
+    ],
+    "returns": [],
+    "given": ":g:`( A B C D ) <g1:( A B C D )>` with center :g:`E <g1:E>`, diameter :g:`/ A D / <g1:/ A D />`, and point :g:`F <g1:F>` ∈ :g:`/ E D / <g1:/ E D />` (:g:`F <g1:F>` ≠ :g:`E <g1:E>`)",
+    "contract": ":g:`/ F A / <g1:/ F A />` > :g:`/ F B / <g1:/ F B />` > :g:`/ F C / <g1:/ F C />` > :g:`/ F G / <g1:/ F G />` > :g:`/ F D / <g1:/ F D />`, and :g:`/ F G / <g1:/ F G />` :eq:`= <g1:/ F G / = g1:/ F H />` :g:`/ F H / <g1:/ F H />` (unique pair)",
+    "steps": [
+      [
+        "given",
+        [
+          "I.def.15",
+          "I.def.17"
+        ],
+        ":g:`( A B C D ) <g1:( A B C D )>`, diameter :g:`/ A D / <g1:/ A D />`, center :g:`E <g1:E>`, eccentric point :g:`F <g1:F>`, segments :g:`/ F B / <g1:/ F B />`, :g:`/ F C / <g1:/ F C />`, :g:`/ F G / <g1:/ F G />`"
+      ],
+      [
+        "construct",
+        [
+          "I.post.1",
+          "I.23"
+        ],
+        "@fn(I.post.1)(:g:`E <g1:E>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`G <g1:G>`) → :g:`/ E B / <g1:/ E B />`, :g:`/ E C / <g1:/ E C />`, :g:`/ E G / <g1:/ E G />`; @fn(I.23)(:g:`/ E F / <g1:/ E F />`, :g:`E <g1:E>`, :g:`< G E F ) <g1:< G E F )>`) → :g:`< F E H ) <g1:< F E H )>` :eq:`= <g1:< F E H ) = g1:< G E F )>` :g:`< G E F ) <g1:< G E F )>`, join :g:`/ F H / <g1:/ F H />`"
+      ],
+      [
+        "assert",
+        [
+          "I.20",
+          "I.24"
+        ],
+        ":g:`/ E B / <g1:/ E B />` + :g:`/ E F / <g1:/ E F />` > :g:`/ F B / <g1:/ F B />`, :g:`/ A E / <g1:/ A E />` :eq:`= <g1:/ A E / = g1:/ E B />` :g:`/ E B / <g1:/ E B />` → :g:`/ F A / <g1:/ F A />` > :g:`/ F B / <g1:/ F B />`; :g:`< B E F ) <g1:< B E F )>` > :g:`< C E F ) <g1:< C E F )>` → :g:`/ F B / <g1:/ F B />` > :g:`/ F C / <g1:/ F C />` > :g:`/ F G / <g1:/ F G />`"
+      ],
+      [
+        "assert",
+        [
+          "I.20"
+        ],
+        ":g:`/ F G / <g1:/ F G />` + :g:`/ E F / <g1:/ E F />` > :g:`/ E G / <g1:/ E G />` :eq:`= <g1:/ E G / = g1:/ E D />` :g:`/ E D / <g1:/ E D />` → :g:`/ F G / <g1:/ F G />` > :g:`/ F D / <g1:/ F D />`"
+      ],
+      [
+        "assert",
+        [
+          "I.4",
+          "I.cn.1"
+        ],
+        ":g:`< G E F > <g1:< G E F >>` ≃ :g:`< H E F > <g1:< H E F >>` → :g:`/ F G / <g1:/ F G />` :eq:`= <g1:/ F G / = g1:/ F H />` :g:`/ F H / <g1:/ F H />`; if :g:`/ F K / <g1:/ F K />` :eq:`= <g1:/ F K / = g1:/ F G />` :g:`/ F G / <g1:/ F G />` then :g:`/ F K / <g1:/ F K />` :eq:`= <g1:/ F K / = g1:/ F H />` :g:`/ F H / <g1:/ F H />` ⇒⇐"
+      ],
+      [
+        "conclude",
+        [],
+        ":g:`/ F A / <g1:/ F A />` > :g:`/ F B / <g1:/ F B />` > :g:`/ F C / <g1:/ F C />` > :g:`/ F G / <g1:/ F G />` > :g:`/ F D / <g1:/ F D />`, and only two equal segments :g:`/ F G / <g1:/ F G />` :eq:`= <g1:/ F G / = g1:/ F H />` :g:`/ F H / <g1:/ F H />` fall from :g:`F <g1:F>`"
+      ]
+    ]
+  }
+}

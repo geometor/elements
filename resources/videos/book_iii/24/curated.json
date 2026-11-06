@@ -1,0 +1,52 @@
+{
+  "III.24": {
+    "subtype": "theorem",
+    "args": [
+      ":g:`( A E B ) <g1:( A E B )>`",
+      ":g:`( C F D ) <g1:( C F D )>`",
+      ":g:`/ A B / <g1:/ A B />`",
+      ":g:`/ C D / <g1:/ C D />`"
+    ],
+    "returns": [],
+    "given": ":g:`( A E B ) <g1:( A E B )>` ~ :g:`( C F D ) <g1:( C F D )>`, :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ C D />` :g:`/ C D / <g1:/ C D />`",
+    "contract": ":g:`( A E B ) <g1:( A E B )>` :eq:`= <g1:( A E B ) = g1:( C F D )>` :g:`( C F D ) <g1:( C F D )>`",
+    "steps": [
+      [
+        "given",
+        [
+          "III.def.11",
+          "I.def.4"
+        ],
+        ":g:`( A E B ) <g1:( A E B )>` ~ :g:`( C F D ) <g1:( C F D )>` on equal chords :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ C D />` :g:`/ C D / <g1:/ C D />`"
+      ],
+      [
+        "construct",
+        [
+          "I.cn.4"
+        ],
+        "apply :g:`( A E B ) <g1:( A E B )>` to :g:`( C F D ) <g1:( C F D )>` with :g:`A <g1:A>` :coincide:`≃ <g1:A ≡ g1:C>` :g:`C <g1:C>` and :g:`/ A B / <g1:/ A B />` along :g:`/ C D / <g1:/ C D />` → :g:`B <g1:B>` :coincide:`≃ <g1:B ≡ g1:D>` :g:`D <g1:D>`"
+      ],
+      [
+        "assert",
+        [
+          "III.23"
+        ],
+        ":g:`/ A B / <g1:/ A B />` :coincide:`≃ <g1:/ A B / ≡ g1:/ C D />` :g:`/ C D / <g1:/ C D />` → :g:`( A E B ) <g1:( A E B )>` cannot fall wholly inside or outside :g:`( C F D ) <g1:( C F D )>`"
+      ],
+      [
+        "assert",
+        [
+          "III.10"
+        ],
+        "if :g:`( A E B ) <g1:( A E B )>` falls awry as :g:`( C G D ) <g1:( C G D )>`, two circles cut at more than two points ⇒⇐"
+      ],
+      [
+        "conclude",
+        [
+          "I.cn.4"
+        ],
+        ":g:`( A E B ) <g1:( A E B )>` :coincide:`≃ <g1:( A E B ) ≡ g1:( C F D )>` :g:`( C F D ) <g1:( C F D )>` → :g:`( A E B ) <g1:( A E B )>` :eq:`= <g1:( A E B ) = g1:( C F D )>` :g:`( C F D ) <g1:( C F D )>`"
+      ]
+    ]
+  }
+}

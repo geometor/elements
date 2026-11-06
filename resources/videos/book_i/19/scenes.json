@@ -1,0 +1,243 @@
+[
+  {
+    "bell": "proposition",
+    "title": "BOOK I • PROPOSITION 19",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 19",
+        "g_id": "G.44",
+        "folio": "Folio 0298 • p. 284",
+        "enunciation": "In any triangle the greater angle is subtended by the greater side.",
+        "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.44/g1.svg",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0298.g1.png",
+        "step_num": 1,
+        "total_steps": 5,
+        "step_kind": "GIVEN",
+        "symbolic": "< A B C > (< A B C ) > < B C A ))",
+        "clause_html": "<span class=\"g-tok\">&lt; A B C &gt;</span> (<span class=\"g-tok\">&lt; A B C )</span> &gt; <span class=\"g-tok\">&lt; B C A )</span>)",
+        "just_id": "GIVEN • HYPOTHESIS",
+        "just_title": "given(< A B C >, < A B C ) > < B C A ))",
+        "visible_ids": [
+          "el-tri-ABC",
+          "el-ang-ABC",
+          "el-ang-ACB",
+          "el-seg-AC",
+          "el-seg-AB",
+          "el-seg-BC",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C"
+        ],
+        "active_ids": [
+          "hl-tri-ABC",
+          "hl-ang-ABC",
+          "hl-arc-ABC",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C"
+        ],
+        "equal_ids": [
+          "hl-ang-ACB",
+          "hl-arc-ACB"
+        ],
+        "tick_ids": [],
+        "tick_2_ids": []
+      }
+    ]
+  },
+  {
+    "bell": "construction",
+    "title": "REDUCTIO HYPOTHESIS",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 19",
+        "g_id": "G.44",
+        "folio": "Folio 0298 • p. 284",
+        "enunciation": "In any triangle the greater angle is subtended by the greater side.",
+        "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.44/g1.svg",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0298.g1.png",
+        "step_num": 2,
+        "total_steps": 5,
+        "step_kind": "CONSTRUCT",
+        "symbolic": "? / A C / ≤ / A B / → / A C / = / A B / ∨ / A C / < / A B /",
+        "clause_html": "? <span class=\"g-tok\">/ A C /</span> ≤ <span class=\"g-tok\">/ A B /</span> → <span class=\"g-tok\">/ A C /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ A B /</span> ∨ <span class=\"g-tok\">/ A C /</span> &lt; <span class=\"g-tok\">/ A B /</span>",
+        "just_id": "REDUCTIO • HYPOTHESIS",
+        "just_title": "trichotomy(/ A C /, / A B /)",
+        "visible_ids": [
+          "el-tri-ABC",
+          "el-ang-ABC",
+          "el-ang-ACB",
+          "el-seg-AC",
+          "el-seg-AB",
+          "el-seg-BC",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C"
+        ],
+        "active_ids": [
+          "hl-seg-AC",
+          "hl-seg-AB",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C"
+        ],
+        "equal_ids": [],
+        "tick_ids": [],
+        "tick_2_ids": []
+      }
+    ]
+  },
+  {
+    "bell": "insight",
+    "title": "PROOF & INSIGHT",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 19",
+        "g_id": "G.44",
+        "folio": "Folio 0298 • p. 284",
+        "enunciation": "In any triangle the greater angle is subtended by the greater side.",
+        "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.44/g1.svg",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0298.g1.png",
+        "step_num": 3,
+        "total_steps": 5,
+        "step_kind": "ASSERT",
+        "symbolic": "? / A C / = / A B / → < A B C ) = < A C B ) ⇒⇐ → / A C / ≠ / A B /",
+        "clause_html": "? <span class=\"g-tok\">/ A C /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ A B /</span> → <span class=\"g-tok\">&lt; A B C )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; A C B )</span> ⇒⇐ → <span class=\"g-tok\">/ A C /</span> ≠ <span class=\"g-tok\">/ A B /</span>",
+        "just_id": "G.25 • I.5",
+        "just_title": "isosceles_base_angles",
+        "visible_ids": [
+          "el-tri-ABC",
+          "el-ang-ABC",
+          "el-ang-ACB",
+          "el-seg-AC",
+          "el-seg-AB",
+          "el-seg-BC",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C"
+        ],
+        "active_ids": [
+          "hl-ang-ABC",
+          "hl-ang-ACB",
+          "hl-arc-ABC",
+          "hl-arc-ACB"
+        ],
+        "equal_ids": [
+          "hl-seg-AC",
+          "hl-seg-AB"
+        ],
+        "tick_ids": [
+          "hl-seg-AC",
+          "hl-seg-AB"
+        ],
+        "tick_2_ids": []
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 19",
+        "g_id": "G.44",
+        "folio": "Folio 0298 • p. 284",
+        "enunciation": "In any triangle the greater angle is subtended by the greater side.",
+        "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.44/g1.svg",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0298.g1.png",
+        "step_num": 4,
+        "total_steps": 5,
+        "step_kind": "ASSERT",
+        "symbolic": "? / A C / < / A B / → < A B C ) < < A C B ) ⇒⇐ → / A C / ≮ / A B /",
+        "clause_html": "? <span class=\"g-tok\">/ A C /</span> &lt; <span class=\"g-tok\">/ A B /</span> → <span class=\"g-tok\">&lt; A B C )</span> &lt; <span class=\"g-tok\">&lt; A C B )</span> ⇒⇐ → <span class=\"g-tok\">/ A C /</span> ≮ <span class=\"g-tok\">/ A B /</span>",
+        "just_id": "G.43 • I.18",
+        "just_title": "greater_side_greater_angle",
+        "visible_ids": [
+          "el-tri-ABC",
+          "el-ang-ABC",
+          "el-ang-ACB",
+          "el-seg-AC",
+          "el-seg-AB",
+          "el-seg-BC",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C"
+        ],
+        "active_ids": [
+          "hl-seg-AB",
+          "hl-ang-ACB",
+          "hl-arc-ACB"
+        ],
+        "equal_ids": [
+          "hl-seg-AC",
+          "hl-ang-ABC",
+          "hl-arc-ABC"
+        ],
+        "tick_ids": [],
+        "tick_2_ids": []
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 19",
+        "g_id": "G.44",
+        "folio": "Folio 0298 • p. 284",
+        "enunciation": "In any triangle the greater angle is subtended by the greater side.",
+        "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.44/g1.svg",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0298.g1.png",
+        "step_num": 5,
+        "total_steps": 5,
+        "step_kind": "∴",
+        "symbolic": "/ A C / > / A B /",
+        "clause_html": "<span class=\"g-tok\">/ A C /</span> &gt; <span class=\"g-tok\">/ A B /</span>",
+        "just_id": "G.43 • I.18",
+        "just_title": "greater_side_greater_angle",
+        "visible_ids": [
+          "el-tri-ABC",
+          "el-ang-ABC",
+          "el-ang-ACB",
+          "el-seg-AC",
+          "el-seg-AB",
+          "el-seg-BC",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C"
+        ],
+        "active_ids": [
+          "hl-seg-AC",
+          "hl-ang-ABC",
+          "hl-arc-ABC",
+          "el-pt-A",
+          "el-pt-C",
+          "lbl-A",
+          "lbl-C"
+        ],
+        "equal_ids": [
+          "hl-seg-AB",
+          "hl-ang-ACB",
+          "hl-arc-ACB"
+        ],
+        "tick_ids": [],
+        "tick_2_ids": []
+      }
+    ]
+  }
+]

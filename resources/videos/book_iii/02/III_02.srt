@@ -1,0 +1,67 @@
+1
+00:00:00,420 --> 00:00:02,071
+Book Three, Proposition Two.
+
+2
+00:00:02,071 --> 00:00:09,502
+If on the circumference of a circle two points be taken at random, the segment joining the points will fall within the circle.
+
+3
+00:00:09,502 --> 00:00:14,810
+Let A B C be a circle, and let two points A and B be taken at random on its circumference.
+
+4
+00:00:15,230 --> 00:00:20,204
+I say that the segment joined from A to B will fall within the circle.
+
+5
+00:00:20,204 --> 00:00:25,391
+For suppose it does not, but, if possible, let it fall outside, as A E B.
+
+6
+00:00:25,391 --> 00:00:35,480
+Take the center D of the circle A B C by Three One, join D A and D B, and draw D F E through to meet the circumference at F and the line at E.
+
+7
+00:00:35,900 --> 00:00:42,211
+Since the radii D A and D B are equal, by One Five the angles D A E and D B E are equal.
+
+8
+00:00:42,211 --> 00:00:53,971
+And since one side A E B of triangle D A E is produced, by One Sixteen the exterior angle D E B is greater than angle D A E, and therefore greater than angle D B E.
+
+9
+00:00:53,971 --> 00:01:02,146
+In triangle D B E, the greater angle is subtended by the greater side by One Nineteen, so D B is greater than D E.
+
+10
+00:01:02,146 --> 00:01:10,178
+Yet D B equals the radius D F; therefore D F is greater than D E, the less than the greater—which is impossible.
+
+11
+00:01:10,178 --> 00:01:17,851
+Neither will the segment fall on the circumference itself; therefore the chord A B falls within the circle.
+
+12
+00:01:17,851 --> 00:01:19,500
+Which was to be proved.
+
+13
+00:01:19,920 --> 00:01:23,974
+Proposition Three Two establishes the strict convexity of the circle.
+
+14
+00:01:23,974 --> 00:01:40,659
+As Heath and De Morgan note, the same exterior-angle chain proves directly that every interior point of a chord lies closer to the center than the radius, while every point on the chord produced lies outside—confirming that a straight line cannot cut a circle in more than two points.
+
+15
+00:01:40,659 --> 00:01:51,880
+In the GEOMETOR G-Index, node G ninety-nine combines Three One's center finder with Book One's triangle inequalities, One Five, One Sixteen, and One Nineteen, across forty-one ancestor nodes.
+
+16
+00:01:52,300 --> 00:02:05,367
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Two in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+17
+00:02:05,367 --> 00:02:11,900
+Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

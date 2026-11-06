@@ -1,18 +1,18 @@
 :canonical_id: G.105
 :original_id: III.7
-:title: G.105 diameter circle point
+:title: G.105 distances to a circle from an eccentric diameter point
 :volume: II
 :book: III
 :type: prop
 
-G.105 diameter circle point — Code
-==================================
+G.105 distances to a circle from an eccentric diameter point — Code
+===================================================================
 
 .. rubric:: `III.7 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/07/>`_
 
 .. enunciation::
 
-   If on the :term:`diameter <G.61>` of a :term:`circle <G.10>` a :term:`point <G.1>` be taken which is not the :term:`center <G.11>` of the circle, and from the point :term:`segments <G.4>` fall upon the circle, that is greatest on which the center is, the remainder of the same diameter is least, and of the rest the nearer to the segment through the center is always greater than the more remote, and only two equal segments will fall from the point on the circle, one on each side of the least segment.
+   From an eccentric :term:`point <G.1>` on the :term:`diameter <G.61>` of a :term:`circle <G.10>`, the greatest :term:`segment <G.4>` to the arc passes through the :term:`center <G.11>`, the least is the remainder of the diameter, and segments nearer the center are greater than those more remote, with at most two equal segments on opposite sides.
 
 .. picture:: g1.svg
 

@@ -1,0 +1,305 @@
+[
+  {
+    "prop_id": "BOOK III • PROP. 5",
+    "short_title": "intersecting circles have distinct centers",
+    "g_id": "G.102",
+    "folio": "Folio 0018 • p. 12",
+    "enunciation": "If two circles cut one another, they will not have the same centre.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.102/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.102/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/05/",
+    "step_total": 9,
+    "subslides": [
+      {
+        "step_num": 1,
+        "step_kind": "GIVEN",
+        "chapter": "circles ( A B C ) and ( C D G ) cutting at B, C",
+        "symbolic": "( A B C ) ∩ ( C D G ) = {B, C}",
+        "visible_ids": [
+          "el-circle-ABC",
+          "el-circle-CDG",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D"
+        ],
+        "active_ids": [
+          "el-circle-ABC",
+          "hl-circle-ABC",
+          "el-circle-CDG",
+          "hl-circle-CDG",
+          "el-pt-B",
+          "el-pt-C",
+          "lbl-B",
+          "lbl-C"
+        ],
+        "equal_ids": [],
+        "clause_html": "<div class=\"clause-line\">Let circles <span class=\"g-tok\">( A B C )</span> and <span class=\"g-tok\">( C D G )</span></div><div class=\"clause-line\">cut one another at points <span class=\"g-tok\">B</span> and <span class=\"g-tok\">C</span>.</div>",
+        "just_id": "G.10 • I.def.15",
+        "just_title": "Given two distinct circles ( A B C ) and ( C D G ) intersecting at points B and C."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK III • PROP. 5",
+    "short_title": "intersecting circles have distinct centers",
+    "g_id": "G.102",
+    "folio": "Folio 0018 • p. 12",
+    "enunciation": "If two circles cut one another, they will not have the same centre.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.102/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.102/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/05/",
+    "step_total": 9,
+    "subslides": [
+      {
+        "step_num": 2,
+        "step_kind": "CONSTRUCT",
+        "chapter": "suppose common center E; join / E C / and draw / E F G /",
+        "symbolic": "suppose common center E; join / E C /, draw / E F G /",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-seg-EC",
+          "hl-seg-EC",
+          "el-seg-EG",
+          "hl-seg-EG",
+          "el-pt-E",
+          "el-pt-F",
+          "el-pt-G",
+          "lbl-E",
+          "lbl-F",
+          "lbl-G"
+        ],
+        "equal_ids": [],
+        "clause_html": "<div class=\"clause-line\">Suppose, if possible, <span class=\"g-tok\">E</span> is their common center;</div><div class=\"clause-line\">join <span class=\"g-tok\">/ E C /</span> and draw <span class=\"g-tok\">/ E F G /</span> through at random.</div>",
+        "just_id": "G.14 • I.post.1",
+        "just_title": "Join / E C / to the intersection C and draw ray / E F G / meeting ( A B C ) at F and ( C D G ) at G."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK III • PROP. 5",
+    "short_title": "intersecting circles have distinct centers",
+    "g_id": "G.102",
+    "folio": "Folio 0018 • p. 12",
+    "enunciation": "If two circles cut one another, they will not have the same centre.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.102/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.102/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/05/",
+    "step_total": 9,
+    "subslides": [
+      {
+        "step_num": 3,
+        "step_kind": "ASSERT",
+        "chapter": "E center of ( A B C ) → / E C / = / E F /",
+        "symbolic": "center(( A B C )) = E → / E C / = / E F /",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-circle-ABC",
+          "hl-circle-ABC",
+          "el-pt-E",
+          "el-pt-C",
+          "el-pt-F",
+          "lbl-E",
+          "lbl-C",
+          "lbl-F"
+        ],
+        "equal_ids": [
+          "el-seg-EC",
+          "hl-seg-EC",
+          "el-seg-EF",
+          "hl-seg-EF"
+        ],
+        "tick_ids": [
+          "el-seg-EC",
+          "el-seg-EF"
+        ],
+        "clause_html": "<div class=\"clause-line\">Since <span class=\"g-tok\">E</span> is center of <span class=\"g-tok\">( A B C )</span>,</div><div class=\"clause-line\">radii <span class=\"eq-tok\">/ E C / = / E F /</span>.</div>",
+        "just_id": "G.10 • I.def.15",
+        "just_title": "All straight lines falling from the center of circle ( A B C ) upon its circumference are equal."
+      },
+      {
+        "step_num": 4,
+        "step_kind": "ASSERT",
+        "chapter": "E center of ( C D G ) → / E C / = / E G /",
+        "symbolic": "center(( C D G )) = E → / E C / = / E G /",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-circle-CDG",
+          "hl-circle-CDG",
+          "el-pt-E",
+          "el-pt-C",
+          "el-pt-G",
+          "lbl-E",
+          "lbl-C",
+          "lbl-G"
+        ],
+        "equal_ids": [
+          "el-seg-EC",
+          "hl-seg-EC",
+          "el-seg-EG",
+          "hl-seg-EG"
+        ],
+        "tick_ids": [
+          "el-seg-EC",
+          "el-seg-EG"
+        ],
+        "clause_html": "<div class=\"clause-line\">Again, since <span class=\"g-tok\">E</span> is center of <span class=\"g-tok\">( C D G )</span>,</div><div class=\"clause-line\">radii <span class=\"eq-tok\">/ E C / = / E G /</span>.</div>",
+        "just_id": "G.10 • I.def.15",
+        "just_title": "All straight lines falling from the center of circle ( C D G ) upon its circumference are equal."
+      },
+      {
+        "step_num": 5,
+        "step_kind": "ASSERT",
+        "chapter": "/ E F / = / E G / (less = greater) ⇒⇐",
+        "symbolic": "/ E F / = / E C / = / E G /  ⇒⇐",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-seg-FG",
+          "hl-seg-FG",
+          "el-pt-E",
+          "el-pt-F",
+          "el-pt-G",
+          "lbl-E",
+          "lbl-F",
+          "lbl-G"
+        ],
+        "equal_ids": [
+          "el-seg-EC",
+          "hl-seg-EC",
+          "el-seg-EF",
+          "hl-seg-EF",
+          "el-seg-EG",
+          "hl-seg-EG"
+        ],
+        "tick_ids": [
+          "el-seg-EC",
+          "el-seg-EF",
+          "el-seg-EG"
+        ],
+        "clause_html": "<div class=\"clause-line\">Both equal <span class=\"g-tok\">/ E C /</span> → <span class=\"eq-tok\">/ E F / = / E G /</span></div><div class=\"clause-line\">The less equal to the greater — impossible (<span class=\"eq-tok\">⇒⇐</span>)</div>",
+        "just_id": "G.16 • I.cn.1, G.26 • I.cn.5",
+        "just_title": "Things equal to / E C / are equal to one another (I.cn.1), making part / E F / equal whole / E G / (I.cn.5)."
+      },
+      {
+        "step_num": 6,
+        "step_kind": "∴",
+        "is_punchline": true,
+        "chapter": "circles ( A B C ) and ( C D G ) do not have the same center",
+        "symbolic": "∴ center(( A B C )) ≠ center(( C D G ))",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-circle-ABC",
+          "hl-circle-ABC",
+          "el-circle-CDG",
+          "hl-circle-CDG",
+          "el-pt-B",
+          "el-pt-C",
+          "lbl-B",
+          "lbl-C"
+        ],
+        "equal_ids": [],
+        "clause_html": "<div class=\"clause-line\">∴ <span class=\"g-tok\">E</span> is not the center of both circles;</div><div class=\"clause-line\"><span class=\"eq-tok\">intersecting circles do not have the same center</span>.</div>",
+        "just_id": "G.102 • III.5",
+        "just_title": "Two circles that cut one another cannot have the same center (Q.E.D.)."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK III • PROP. 5",
+    "short_title": "intersecting circles have distinct centers",
+    "g_id": "G.102",
+    "folio": "Folio 0018 • p. 12",
+    "enunciation": "If two circles cut one another, they will not have the same centre.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.102/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.102/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/05/",
+    "step_total": 9,
+    "widescreen_only": true,
+    "subslides": [
+      {
+        "step_num": 7,
+        "step_kind": "COMMENTARY",
+        "widescreen_only": true,
+        "chapter": "unifying III.5 (cutting circles) and III.6 (touching circles)",
+        "symbolic": "C ∈ ( O₁ ) ∩ ( O₂ ) & O₁ = O₂  ⇒  ( O₁ ) ≡ ( O₂ )",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-circle-ABC",
+          "hl-circle-ABC",
+          "el-circle-CDG",
+          "hl-circle-CDG",
+          "el-seg-EC",
+          "hl-seg-EC",
+          "el-seg-EG",
+          "hl-seg-EG"
+        ],
+        "equal_ids": [
+          "el-seg-EF",
+          "hl-seg-EF"
+        ],
+        "tick_ids": [
+          "el-seg-EC",
+          "el-seg-EF"
+        ],
+        "clause_html": "<div class=\"clause-line\"><strong>Concentric Circles &amp; Shared Points</strong></div><div class=\"clause-line\"><span class=\"eq-tok\">C ∈ ( O₁ ) ∩ ( O₂ ) &amp; O₁ = O₂ &nbsp;⇒&nbsp; ( O₁ ) ≡ ( O₂ )</span></div><div class=\"clause-line\" style=\"font-size:28px;color:#cbd5e1;\">Heath: III.5 and III.6 can be combined—whether two distinct circles cut or touch, sharing any circumference point rules out a common center.</div>",
+        "just_tag": "✦ HEATH COMMENTARY",
+        "just_id": "Heath (1908) • Vol. II, p. 12",
+        "just_title": "Conversely, if two circles have the same center and share even one point on their circumferences, they coincide completely."
+      },
+      {
+        "step_num": 8,
+        "step_kind": "GENEALOGY",
+        "widescreen_only": true,
+        "chapter": "G.102 dependency tree & symbolic model",
+        "symbolic": "G.10, G.11, G.14 → G.102",
+        "stage_html": "<div style=\"width:100%;height:100%;display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:36px 8px 8px 8px;align-items:stretch;\"><div style=\"background:rgba(11,14,21,0.92);border:1.5px solid rgba(56,189,248,0.45);border-radius:16px;padding:22px 24px;display:flex;flex-direction:column;justify-content:space-between;\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.12em;color:#38bdf8;\">◈ G-INDEX PREREQUISITES → G.102</div><div style=\"display:flex;flex-direction:column;gap:10px;margin:12px 0;\"><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #e8b85a;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.14 (I.post.1)</span><span style=\"color:#f4f1ea;\">construct segment</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #5ec27e;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.11 (I.def.16)</span><span style=\"color:#f4f1ea;\">center of circle</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #5ec27e;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.10 (I.def.15)</span><span style=\"color:#f4f1ea;\">circle &amp; equal radii</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #f87171;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.26 (I.cn.5)</span><span style=\"color:#f4f1ea;\">whole greater than part</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #f87171;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.16 (I.cn.1)</span><span style=\"color:#f4f1ea;\">transitivity of equality</span></div></div><div style=\"background:rgba(232,184,90,0.16);border:1.5px solid #e8b85a;border-radius:10px;padding:11px 16px;text-align:center;font-family:'JetBrains Mono',monospace;font-size:17px;font-weight:700;color:#e8b85a;\">↓ G.102 (III.5) • circles cut center</div></div><div style=\"background:rgba(11,14,21,0.92);border:1.5px solid rgba(232,184,90,0.4);border-radius:16px;padding:22px 24px;display:flex;flex-direction:column;justify-content:space-between;\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.12em;color:#e8b85a;\">⚙ GEOMETOR.MODEL • G.102/g1.py</div><pre style=\"font-family:'JetBrains Mono',monospace;font-size:14.5px;line-height:1.48;color:#e2e8f0;background:rgba(7,9,14,0.85);padding:16px;border-radius:10px;border:1px solid rgba(148,163,184,0.25);overflow:hidden;\">model = Model(&quot;III.5&quot;)\n# Intersecting circles ABC and CDG\nmodel.construct_circle(O1, C)\nmodel.construct_circle(O2, C)\n\n# Trial common center E, radius EC &amp; ray EFG\nmodel.set_segment(E, C)\nmodel.set_segment(E, F)\nmodel.set_segment(E, G)\nmodel.set_section([E, F, G])</pre><div style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">12 total ancestor nodes in G-Index • Required for 34 propositions</div></div></div>",
+        "clause_html": "<div class=\"clause-line\"><span class=\"coincide-tok\">G.102</span> synthesizes <span class=\"g-tok\">3 direct prerequisites</span></div><div class=\"clause-line\">across only <span class=\"g-tok\">12 total ancestor nodes</span> in the G-Index</div><div class=\"clause-line\" style=\"font-size:28px;color:#cbd5e1;\">Purely definitional proof independent of Book I triangle congruences, supporting 34 propositions.</div>",
+        "just_tag": "◈ G-INDEX GENEALOGY",
+        "just_id": "G.102 • 3 Direct Rules",
+        "just_title": "Depends directly on G.10 (I.def.15), G.11 (I.def.16), and G.14 (I.post.1)."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK III • PROP. 5",
+    "short_title": "intersecting circles have distinct centers",
+    "g_id": "G.102",
+    "folio": "Folio 0018 • p. 12",
+    "enunciation": "If two circles cut one another, they will not have the same centre.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.102/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.102/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/05/",
+    "step_total": 9,
+    "widescreen_only": true,
+    "subslides": [
+      {
+        "step_num": 9,
+        "step_kind": "PARTICIPATE",
+        "widescreen_only": true,
+        "chapter": "explore the GEOMETOR Elements Codex & participate",
+        "symbolic": "geometor.github.io/elements",
+        "stage_html": "<div style=\"width:100%;height:100%;display:flex;flex-direction:column;justify-content:space-between;padding:42px 16px 12px 16px;gap:20px;\"><div style=\"background:linear-gradient(135deg,rgba(232,184,90,0.16) 0%,rgba(16,20,29,0.95) 100%);border:2px solid rgba(232,184,90,0.55);border-radius:18px;padding:28px 32px;display:flex;flex-direction:column;gap:12px;box-shadow:0 16px 40px rgba(0,0,0,0.6);\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.16em;color:#e8b85a;\">★ INTERACTIVE DIGITAL EDITION</div><div style=\"font-family:Georgia,serif;font-size:38px;font-weight:700;color:#f8f6f0;\">GEOMETOR • Elements Codex</div><div style=\"font-family:'JetBrains Mono',monospace;font-size:22px;color:#5ec27e;font-weight:700;\">https://geometor.github.io/elements/elements2/G.102/</div></div><div style=\"display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;flex:1;\"><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#e8b85a;font-weight:700;\">01 • PSEUDOCODE</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Hover-synced symbolic steps, signatures, and interactive SVG diagrams.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 1 • G.102</span></div><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#38bdf8;font-weight:700;\">02 • PYTHON MODEL</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Executable geometor.model scripts with exact algebraic coordinates.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 2 • g1.py</span></div><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#5ec27e;font-weight:700;\">03 • HEATH (1908)</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Complete classical translation, folio plates, and historical commentary.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 3 • Folio 0018</span></div></div></div>",
+        "clause_html": "<div class=\"clause-line\">Explore the <span class=\"g-tok\">Elements Codex</span> &amp; <span class=\"eq-tok\">G-Index</span></div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Subscribe to <strong>@geometor</strong> for all 465 propositions</div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Share questions &amp; insights in the comments</div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Star &amp; contribute at <strong>github.com/geometor</strong></div>",
+        "just_tag": "★ PARTICIPATE & SUPPORT",
+        "just_id": "github.com/geometor/elements",
+        "just_title": "Open-source symbolic reconstruction of Euclid's Elements — links in the video description."
+      }
+    ]
+  }
+]

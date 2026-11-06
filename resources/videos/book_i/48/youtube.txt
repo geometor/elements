@@ -1,0 +1,38 @@
+================================================================================
+YOUTUBE 1080P (16:9) TITLE
+================================================================================
+I.48 • if in a triangle the square on one of the sides be equal to the squares on the remaining t...
+
+================================================================================
+YOUTUBE SHORT (9:16) TITLE
+================================================================================
+I.48 • if in a triangle the square on one of the sides be equal to the squares on the remaining t...
+
+================================================================================
+DESCRIPTION
+================================================================================
+“If in a triangle the square on one of the sides be equal to the squares on the remaining two sides of the triangle, the angle contained by the remaining two sides of the triangle is right.”
+— Euclid's Elements, BOOK I • PROP. 48 (G.80)
+
+00:00 1 · GIVEN: ⟨ A B C ⟩ (sq(/ B C /) = sq(/ B A /) + sq(/ A C /))
+00:21 2 · CONSTRUCT: perpendicular_at(/ A C /, A) → / A D / ⊥ / A C /, cut_equal_segment(/ B A /) → / A D / = / B A /, segment(D, C) → / D C /
+00:35 3 · ASSERT: / D A / = / A B / → sq(/ D A /) + sq(/ A C /) = sq(/ B A /) + sq(/ A C /)
+00:48 4 · ASSERT: ⟨ D A C ) = ∟ → sq(/ D C /) = sq(/ D A /) + sq(/ A C /) = sq(/ B C /) → / D C / = / B C /
+01:01 5 · ASSERT: / D A / = / B A /, / A C / = / A C /, / D C / = / B C / → ⟨ D A C ) = ⟨ B A C )
+01:13 6 · ∴: ⟨ D A C ) = ∟, ⟨ B A C ) = ⟨ D A C ) → ⟨ B A C ) = ∟
+
+GEOMETOR • G.80 • v2
+
+================================================================================
+TAGS
+================================================================================
+Euclid, Euclid's Elements, Euclid I.48, G.80, Geometry, Constructive Geometry, Compass and Straightedge, Mathematical Proof, GEOMETOR, Thomas Little Heath
+
+================================================================================
+MEDIA & CAPTIONS FILES
+================================================================================
+• 9:16 Short MP4 : I_48_short.mp4
+• 16:9 1080p MP4 : I_48_1080p.mp4
+• Closed Captions: I_48.srt
+• 16:9 Thumbnail : I_48_thumb.png
+• 9:16 Thumbnail : I_48_short_thumb.png

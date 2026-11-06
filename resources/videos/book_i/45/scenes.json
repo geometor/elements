@@ -1,0 +1,313 @@
+[
+  {
+    "bell": "proposition",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 45",
+        "g_id": "G.74",
+        "folio": "Folio 0359–0360 • p. 345",
+        "title": "construct a parallelogram equal to a polygon",
+        "enunciation": "To construct, in a given rectilineal angle, a parallelogram equal to a given rectilineal figure.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0359.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0359.g1.png",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0359.g1.png",
+        "step_num": 1,
+        "total_steps": 7,
+        "step_kind": "GIVEN",
+        "symbolic": "< A B C D >, < E )",
+        "clause_html": "<span class=\"g-tok\">&lt; A B C D &gt;</span>, <span class=\"g-tok\">&lt; E )</span>",
+        "just_id": "GIVEN",
+        "just_title": "construct: < K F L M > = < A B C D > (< F K M ) = < E ))",
+        "visible_ids": [
+          "el-poly-ABCD",
+          "el-seg-AB", "el-seg-BC", "el-seg-DC", "el-seg-AD",
+          "el-seg-EE1", "el-seg-EE2", "el-ang-E1EE2",
+          "hl-poly-ABCD",
+          "hl-seg-AB", "hl-seg-BC", "hl-seg-DC", "hl-seg-AD",
+          "hl-seg-EE1", "hl-seg-EE2", "hl-ang-E1EE2", "hl-arc-E1EE2",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E"
+        ],
+        "active_ids": [
+          "hl-poly-ABCD",
+          "hl-seg-AB", "hl-seg-BC", "hl-seg-DC", "hl-seg-AD",
+          "hl-seg-EE1", "hl-seg-EE2", "hl-ang-E1EE2", "hl-arc-E1EE2",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E"
+        ],
+        "equal_ids": [],
+        "tick_ids": []
+      }
+    ]
+  },
+  {
+    "bell": "construction",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 45",
+        "g_id": "G.74",
+        "folio": "Folio 0359–0360 • p. 345",
+        "title": "construct a parallelogram equal to a polygon",
+        "enunciation": "To construct, in a given rectilineal angle, a parallelogram equal to a given rectilineal figure.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0359.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0359.g1.png",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0359.g1.png",
+        "step_num": 2,
+        "total_steps": 7,
+        "step_kind": "CONSTRUCT",
+        "symbolic": "segment(D, B) → / D B /, parallelogram_from_triangle(< A B D >, < E )) → < F K H G > (= < A B D >, < H K F ) = < E ))",
+        "clause_html": "<span class=\"fn-tok\">segment</span>(<span class=\"g-tok\">D</span>, <span class=\"g-tok\">B</span>) → <span class=\"g-tok\">/ D B /</span>, <span class=\"fn-tok\">parallelogram_from_triangle</span>(<span class=\"g-tok\">&lt; A B D &gt;</span>, <span class=\"g-tok\">&lt; E )</span>) → <span class=\"g-tok\">&lt; F K H G &gt;</span> (<span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; A B D &gt;</span>, <span class=\"g-tok\">&lt; H K F )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; E )</span>)",
+        "just_id": "G.14 • I.Post.1, G.71 • I.42",
+        "just_title": "parallelogram_from_triangle",
+        "visible_ids": [
+          "el-poly-ABCD", "el-poly-ABD", "el-poly-DBC", "el-poly-FKHG",
+          "el-seg-AB", "el-seg-BC", "el-seg-DC", "el-seg-AD", "el-seg-DB",
+          "el-seg-EE1", "el-seg-EE2", "el-ang-E1EE2",
+          "el-seg-FK", "el-seg-KH", "el-seg-GH", "el-seg-FG", "el-ang-HKF",
+          "hl-poly-ABD", "hl-poly-FKHG",
+          "hl-seg-DB", "hl-seg-FK", "hl-seg-KH", "hl-seg-GH", "hl-seg-FG",
+          "hl-ang-E1EE2", "hl-arc-E1EE2", "hl-ang-HKF", "hl-arc-HKF",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E",
+          "el-pt-F", "el-pt-K", "el-pt-H", "el-pt-G",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E",
+          "lbl-F", "lbl-K", "lbl-H", "lbl-G"
+        ],
+        "active_ids": [
+          "hl-seg-DB", "hl-poly-FKHG",
+          "hl-seg-FK", "hl-seg-KH", "hl-seg-GH", "hl-seg-FG",
+          "el-pt-D", "el-pt-B", "el-pt-F", "el-pt-K", "el-pt-H", "el-pt-G",
+          "lbl-D", "lbl-B", "lbl-F", "lbl-K", "lbl-H", "lbl-G"
+        ],
+        "equal_ids": [
+          "hl-poly-ABD",
+          "hl-ang-E1EE2", "hl-arc-E1EE2",
+          "hl-ang-HKF", "hl-arc-HKF"
+        ],
+        "tick_ids": []
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 45",
+        "g_id": "G.74",
+        "folio": "Folio 0359–0360 • p. 345",
+        "title": "construct a parallelogram equal to a polygon",
+        "enunciation": "To construct, in a given rectilineal angle, a parallelogram equal to a given rectilineal figure.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0359.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0359.g1.png",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0359.g1.png",
+        "step_num": 3,
+        "total_steps": 7,
+        "step_kind": "CONSTRUCT",
+        "symbolic": "apply_parallelogram_on_segment(/ G H /, < D B C >, < E )) → < G H M L > (= < D B C >, < G H M ) = < E ))",
+        "clause_html": "<span class=\"fn-tok\">apply_parallelogram_on_segment</span>(<span class=\"g-tok\">/ G H /</span>, <span class=\"g-tok\">&lt; D B C &gt;</span>, <span class=\"g-tok\">&lt; E )</span>) → <span class=\"g-tok\">&lt; G H M L &gt;</span> (<span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; D B C &gt;</span>, <span class=\"g-tok\">&lt; G H M )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; E )</span>)",
+        "just_id": "G.73 • I.44",
+        "just_title": "apply_parallelogram_on_segment",
+        "visible_ids": [
+          "el-poly-ABCD", "el-poly-ABD", "el-poly-DBC", "el-poly-FKHG", "el-poly-GHML",
+          "el-seg-AB", "el-seg-BC", "el-seg-DC", "el-seg-AD", "el-seg-DB",
+          "el-seg-EE1", "el-seg-EE2", "el-ang-E1EE2",
+          "el-seg-FK", "el-seg-KH", "el-seg-GH", "el-seg-FG", "el-ang-HKF",
+          "el-seg-HM", "el-seg-LM", "el-seg-GL", "el-ang-GHM",
+          "hl-poly-DBC", "hl-poly-GHML",
+          "hl-seg-GH", "hl-seg-HM", "hl-seg-LM", "hl-seg-GL",
+          "hl-ang-E1EE2", "hl-arc-E1EE2", "hl-ang-GHM", "hl-arc-GHM",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E",
+          "el-pt-F", "el-pt-K", "el-pt-H", "el-pt-G", "el-pt-M", "el-pt-L",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E",
+          "lbl-F", "lbl-K", "lbl-H", "lbl-G", "lbl-M", "lbl-L"
+        ],
+        "active_ids": [
+          "hl-seg-GH", "hl-poly-GHML",
+          "hl-seg-HM", "hl-seg-LM", "hl-seg-GL",
+          "el-pt-G", "el-pt-H", "el-pt-M", "el-pt-L",
+          "lbl-G", "lbl-H", "lbl-M", "lbl-L"
+        ],
+        "equal_ids": [
+          "hl-poly-DBC",
+          "hl-ang-E1EE2", "hl-arc-E1EE2",
+          "hl-ang-GHM", "hl-arc-GHM"
+        ],
+        "tick_ids": []
+      }
+    ]
+  },
+  {
+    "bell": "insight",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 45",
+        "g_id": "G.74",
+        "folio": "Folio 0359–0360 • p. 345",
+        "title": "construct a parallelogram equal to a polygon",
+        "enunciation": "To construct, in a given rectilineal angle, a parallelogram equal to a given rectilineal figure.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0359.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0359.g1.png",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0359.g1.png",
+        "step_num": 4,
+        "total_steps": 7,
+        "step_kind": "ASSERT",
+        "symbolic": "< H K F ) = < G H M ) → < K H G ) + < G H M ) = < F K H ) + < K H G ) = 2∟ → / K H /, / H M / ∈ [ K M ]",
+        "clause_html": "<span class=\"g-tok\">&lt; H K F )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; G H M )</span> → <span class=\"g-tok\">&lt; K H G )</span> + <span class=\"g-tok\">&lt; G H M )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; F K H )</span> + <span class=\"g-tok\">&lt; K H G )</span> = 2∟ → <span class=\"g-tok\">/ K H /</span>, <span class=\"g-tok\">/ H M /</span> ∈ <span class=\"g-tok\">[ K M ]</span>",
+        "just_id": "G.56 • I.29, G.39 • I.14",
+        "just_title": "supplementary_angles_collinear",
+        "visible_ids": [
+          "el-poly-ABCD", "el-poly-ABD", "el-poly-DBC", "el-poly-FKHG", "el-poly-GHML",
+          "el-seg-AB", "el-seg-BC", "el-seg-DC", "el-seg-AD", "el-seg-DB",
+          "el-seg-EE1", "el-seg-EE2", "el-ang-E1EE2",
+          "el-seg-FK", "el-seg-KH", "el-seg-GH", "el-seg-FG", "el-ang-HKF", "el-ang-KHG",
+          "el-seg-HM", "el-seg-KM", "el-seg-LM", "el-seg-GL", "el-ang-GHM",
+          "hl-seg-KM", "hl-seg-KH", "hl-seg-HM", "hl-seg-GH",
+          "hl-ang-HKF", "hl-arc-HKF", "hl-ang-GHM", "hl-arc-GHM", "hl-ang-KHG", "hl-arc-KHG",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E",
+          "el-pt-F", "el-pt-K", "el-pt-H", "el-pt-G", "el-pt-M", "el-pt-L",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E",
+          "lbl-F", "lbl-K", "lbl-H", "lbl-G", "lbl-M", "lbl-L"
+        ],
+        "active_ids": [
+          "hl-seg-KM", "hl-ang-KHG", "hl-arc-KHG",
+          "el-pt-K", "el-pt-H", "el-pt-M",
+          "lbl-K", "lbl-H", "lbl-M"
+        ],
+        "equal_ids": [
+          "hl-ang-HKF", "hl-arc-HKF",
+          "hl-ang-GHM", "hl-arc-GHM"
+        ],
+        "tick_ids": []
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 45",
+        "g_id": "G.74",
+        "folio": "Folio 0359–0360 • p. 345",
+        "title": "construct a parallelogram equal to a polygon",
+        "enunciation": "To construct, in a given rectilineal angle, a parallelogram equal to a given rectilineal figure.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0359.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0359.g1.png",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0359.g1.png",
+        "step_num": 5,
+        "total_steps": 7,
+        "step_kind": "ASSERT",
+        "symbolic": "< M H G ) = < H G F ) → < H G F ) + < H G L ) = < M H G ) + < H G L ) = 2∟ → / F G /, / G L / ∈ [ F L ]",
+        "clause_html": "<span class=\"g-tok\">&lt; M H G )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; H G F )</span> → <span class=\"g-tok\">&lt; H G F )</span> + <span class=\"g-tok\">&lt; H G L )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; M H G )</span> + <span class=\"g-tok\">&lt; H G L )</span> = 2∟ → <span class=\"g-tok\">/ F G /</span>, <span class=\"g-tok\">/ G L /</span> ∈ <span class=\"g-tok\">[ F L ]</span>",
+        "just_id": "G.56 • I.29, G.39 • I.14",
+        "just_title": "supplementary_angles_collinear",
+        "visible_ids": [
+          "el-poly-ABCD", "el-poly-ABD", "el-poly-DBC", "el-poly-FKHG", "el-poly-GHML",
+          "el-seg-AB", "el-seg-BC", "el-seg-DC", "el-seg-AD", "el-seg-DB",
+          "el-seg-EE1", "el-seg-EE2", "el-ang-E1EE2",
+          "el-seg-FK", "el-seg-KH", "el-seg-GH", "el-seg-FG", "el-ang-HGF",
+          "el-seg-HM", "el-seg-KM", "el-seg-LM", "el-seg-GL", "el-seg-FL", "el-ang-GHM", "el-ang-HGL",
+          "hl-seg-FL", "hl-seg-FG", "hl-seg-GL", "hl-seg-GH",
+          "hl-ang-GHM", "hl-arc-GHM", "hl-ang-HGF", "hl-arc-HGF", "hl-ang-HGL", "hl-arc-HGL",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E",
+          "el-pt-F", "el-pt-K", "el-pt-H", "el-pt-G", "el-pt-M", "el-pt-L",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E",
+          "lbl-F", "lbl-K", "lbl-H", "lbl-G", "lbl-M", "lbl-L"
+        ],
+        "active_ids": [
+          "hl-seg-FL", "hl-ang-HGL", "hl-arc-HGL",
+          "el-pt-F", "el-pt-G", "el-pt-L",
+          "lbl-F", "lbl-G", "lbl-L"
+        ],
+        "equal_ids": [
+          "hl-ang-GHM", "hl-arc-GHM",
+          "hl-ang-HGF", "hl-arc-HGF"
+        ],
+        "tick_ids": []
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 45",
+        "g_id": "G.74",
+        "folio": "Folio 0359–0360 • p. 345",
+        "title": "construct a parallelogram equal to a polygon",
+        "enunciation": "To construct, in a given rectilineal angle, a parallelogram equal to a given rectilineal figure.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0359.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0359.g1.png",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0359.g1.png",
+        "step_num": 6,
+        "total_steps": 7,
+        "step_kind": "ASSERT",
+        "symbolic": "/ F K / = / H G / = / M L /, / F K / ∥ / H G / ∥ / M L / → / K M / = / F L /, / K M / ∥ / F L / → < K F L M >",
+        "clause_html": "<span class=\"g-tok\">/ F K /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ H G /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ M L /</span>, <span class=\"g-tok\">/ F K /</span> ∥ <span class=\"g-tok\">/ H G /</span> ∥ <span class=\"g-tok\">/ M L /</span> → <span class=\"g-tok\">/ K M /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ F L /</span>, <span class=\"g-tok\">/ K M /</span> ∥ <span class=\"g-tok\">/ F L /</span> → <span class=\"g-tok\">&lt; K F L M &gt;</span>",
+        "just_id": "G.62 • I.34, G.57 • I.30, G.60 • I.33",
+        "just_title": "join_equal_parallels",
+        "visible_ids": [
+          "el-poly-ABCD", "el-poly-ABD", "el-poly-DBC", "el-poly-FKHG", "el-poly-GHML", "el-poly-KFLM",
+          "el-seg-AB", "el-seg-BC", "el-seg-DC", "el-seg-AD", "el-seg-DB",
+          "el-seg-EE1", "el-seg-EE2", "el-ang-E1EE2",
+          "el-seg-FK", "el-seg-KH", "el-seg-GH", "el-seg-FG",
+          "el-seg-HM", "el-seg-KM", "el-seg-LM", "el-seg-GL", "el-seg-FL",
+          "hl-poly-KFLM",
+          "hl-seg-FK", "hl-seg-GH", "hl-seg-LM", "hl-seg-KM", "hl-seg-FL",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E",
+          "el-pt-F", "el-pt-K", "el-pt-H", "el-pt-G", "el-pt-M", "el-pt-L",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E",
+          "lbl-F", "lbl-K", "lbl-H", "lbl-G", "lbl-M", "lbl-L"
+        ],
+        "active_ids": [
+          "hl-poly-KFLM",
+          "el-pt-K", "el-pt-F", "el-pt-L", "el-pt-M",
+          "lbl-K", "lbl-F", "lbl-L", "lbl-M"
+        ],
+        "equal_ids": [
+          "hl-seg-FK", "hl-seg-GH", "hl-seg-LM",
+          "hl-seg-KM", "hl-seg-FL"
+        ],
+        "tick_ids": [
+          "hl-seg-FK", "hl-seg-GH", "hl-seg-LM"
+        ],
+        "tick_2_ids": [
+          "hl-seg-KM", "hl-seg-FL"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 45",
+        "g_id": "G.74",
+        "folio": "Folio 0359–0360 • p. 345",
+        "title": "construct a parallelogram equal to a polygon",
+        "enunciation": "To construct, in a given rectilineal angle, a parallelogram equal to a given rectilineal figure.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0359.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0359.g1.png",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0359.g1.png",
+        "step_num": 7,
+        "total_steps": 7,
+        "step_kind": "∴",
+        "symbolic": "< A B D > = < F K H G >, < D B C > = < G H M L > → < K F L M > = < A B C D > (< F K M ) = < E ))",
+        "clause_html": "<span class=\"g-tok\">&lt; A B D &gt;</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; F K H G &gt;</span>, <span class=\"g-tok\">&lt; D B C &gt;</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; G H M L &gt;</span> → <span class=\"g-tok\">&lt; K F L M &gt;</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; A B C D &gt;</span> (<span class=\"g-tok\">&lt; F K M )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; E )</span>)",
+        "just_id": "G.36 • I.C.N.2",
+        "just_title": "add_equals",
+        "visible_ids": [
+          "el-poly-ABCD", "el-poly-ABD", "el-poly-DBC", "el-poly-FKHG", "el-poly-GHML", "el-poly-KFLM",
+          "el-seg-AB", "el-seg-BC", "el-seg-DC", "el-seg-AD", "el-seg-DB",
+          "el-seg-EE1", "el-seg-EE2", "el-ang-E1EE2",
+          "el-seg-FK", "el-seg-KH", "el-seg-GH", "el-seg-FG", "el-ang-HKF",
+          "el-seg-HM", "el-seg-KM", "el-seg-LM", "el-seg-GL", "el-seg-FL",
+          "hl-poly-ABCD", "hl-poly-KFLM",
+          "hl-seg-FK", "hl-seg-KM", "hl-seg-LM", "hl-seg-FL",
+          "hl-ang-E1EE2", "hl-arc-E1EE2", "hl-ang-HKF", "hl-arc-HKF",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E",
+          "el-pt-F", "el-pt-K", "el-pt-H", "el-pt-G", "el-pt-M", "el-pt-L",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E",
+          "lbl-F", "lbl-K", "lbl-H", "lbl-G", "lbl-M", "lbl-L"
+        ],
+        "active_ids": [
+          "hl-poly-KFLM",
+          "hl-seg-FK", "hl-seg-KM", "hl-seg-LM", "hl-seg-FL",
+          "el-pt-K", "el-pt-F", "el-pt-L", "el-pt-M",
+          "lbl-K", "lbl-F", "lbl-L", "lbl-M"
+        ],
+        "equal_ids": [
+          "hl-poly-ABCD",
+          "hl-ang-HKF", "hl-arc-HKF",
+          "hl-ang-E1EE2", "hl-arc-E1EE2"
+        ],
+        "tick_ids": []
+      }
+    ]
+  }
+]

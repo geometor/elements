@@ -1,0 +1,33 @@
+{
+  "prop_id": "BOOK III \u2022 PROP. 36",
+  "short_code": "III.36",
+  "g_id": "G.144",
+  "version": 2,
+  "enunciation": "If a point be taken outside a circle and from it there fall on the circle two straight lines, and if one of them cut the circle and the other touch it, the rectangle contained by the whole of the straight line which cuts the circle and the straight line intercepted on it outside between the point and the convex circumference will be equal to the square on the tangent.",
+  "title_1080p": "III.36 \u2022 if a point be taken outside a circle and from it there fall on the circle two straight l...",
+  "title_short": "III.36 \u2022 if a point be taken outside a circle and from it there fall on the circle two straight l...",
+  "description": "\u201cIf a point be taken outside a circle and from it there fall on the circle two straight lines, and if one of them cut the circle and the other touch it, the rectangle contained by the whole of the straight line which cuts the circle and the straight line intercepted on it outside between the point and the convex circumference will be equal to the square on the tangent.\u201d\n\u2014 Euclid's Elements, BOOK III \u2022 PROP. 36 (G.144)\n\n00:00 1 \u00b7 GIVEN: ( A B C ), / D C A /, / D B / \u2192 rect(/ A D /, / C D /) = sq(/ D B /)\n00:25 2 \u00b7 CONSTRUCT: F = find_circle_center(( A B C )), / F B / = segment(F, B)\n00:33 3 \u00b7 ASSERT: / F B / \u22a5 / D B / \u2192 \u27e8 F B D ) = right\n00:40 4 \u00b7 ASSERT: / A F / = / F C / \u2192 rect(/ A D /, / C D /) + sq(/ F C /) = sq(/ F D /)\n00:54 5 \u00b7 ASSERT: / F C / = / F B / \u2192 rect(/ A D /, / C D /) + sq(/ F B /) = sq(/ F D /)\n01:08 6 \u00b7 \u2234: sq(/ F B /) + sq(/ D B /) = sq(/ F D /) \u2192 rect(/ A D /, / C D /) = sq(/ D B /)\n01:22 7 \u00b7 COMMENTARY: rect(/ A D /, / C D /) = sq(/ D B /) = sq(/ F D /) \u2212 sq(R)\n01:42 8 \u00b7 GENEALOGY: G.79 (I.47), G.88 (II.6), G.120 (III.18) \u2192 G.144 (III.36) \u2192 G.145 (III.37), G.156 (IV.10)\n02:01 9 \u00b7 PARTICIPATE: geometor.github.io/elements/elements2/G.144/\n\nExplore the interactive Book Codex, symbolic model, and dependency tree:\n\u2022 Elements Codex (G.144): https://geometor.github.io/elements/elements2/G.144/\n\u2022 Heath Edition (III.36): https://geometor.github.io/euclid/heath/volume_I/book_iii/propositions/36/\n\u2022 GitHub: https://github.com/geometor/elements\n\nGEOMETOR \u2022 G.144 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid III.36",
+    "G.144",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_iii/propositions/36/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.144/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/36/III_36_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/36/III_36_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/36/III_36.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/36/III_36_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/36/III_36_short_thumb.png"
+  }
+}

@@ -1,0 +1,69 @@
+WEBVTT
+
+1
+00:00:00.420 --> 00:00:02.177
+Book Three, Proposition Sixteen.
+
+2
+00:00:02.177 --> 00:00:20.848
+The straight line drawn at right angles to the diameter of a circle from its extremity will fall outside the circle, and into the space between the straight line and the circumference another straight line cannot be interposed; further, the angle of the semicircle is greater, and the remaining angle less, than any acute rectilineal angle.
+
+3
+00:00:20.848 --> 00:00:24.143
+Let A B C be a circle about D as center and A B as diameter.
+
+4
+00:00:24.143 --> 00:00:29.250
+We claim that the straight line drawn from A at right angles to A B falls outside the circle.
+
+5
+00:00:29.670 --> 00:00:36.880
+For suppose it does not, but, if possible, let it fall within as C A, and let the radius D C be joined.
+
+6
+00:00:37.300 --> 00:00:43.126
+Since D A equals D C, by One Five the base angle D A C equals the base angle A C D.
+
+7
+00:00:43.126 --> 00:00:53.796
+But angle D A C is right, so angle A C D is also right; thus in triangle A C D, two angles equal two right angles, which by One Seventeen is impossible.
+
+8
+00:00:53.796 --> 00:01:02.009
+Therefore the perpendicular at A cannot fall within the circle, nor on the circumference, so it falls outside as A E.
+
+9
+00:01:02.009 --> 00:01:13.030
+Next, suppose another straight line F A could be interposed between A E and the arc C H A, and from D draw D G perpendicular to F A, meeting the circle at H.
+
+10
+00:01:13.030 --> 00:01:22.577
+In right triangle A G D, the right angle A G D exceeds the acute angle D A G, so by One Nineteen the hypotenuse D A is greater than D G.
+
+11
+00:01:22.577 --> 00:01:30.790
+Since D A equals the radius D H, D H would be greater than D G, the part greater than the whole, which is impossible.
+
+12
+00:01:30.790 --> 00:01:50.305
+Therefore no straight line can be interposed between A E and the arc; the angle of the semicircle is greater, and the remaining horn-like angle less, than any acute rectilineal angle; and as the Porism states, the perpendicular at the extremity of a diameter touches the circle.
+
+13
+00:01:50.305 --> 00:01:52.060
+As was required to prove.
+
+14
+00:01:52.480 --> 00:02:19.759
+Proposition Three Sixteen sparked two millennia of debate—from Democritus and Proclus to Campanus, Peletier, Clavius, Vieta, and John Wallis—over the nature of the horn-like angle of contact between the tangent A E and the arc C H A, a non-Archimedean magnitude smaller than any rectilineal angle that Wallis ultimately resolved as degree of curvature rather than inclination.
+
+15
+00:02:19.759 --> 00:02:34.560
+In the GEOMETOR G-Index, node G one hundred eighteen synthesizes thirteen prerequisites across forty-five ancestor nodes, uniting Book One's triangle inequalities with Book Three's definition of tangency.
+
+16
+00:02:34.980 --> 00:02:50.379
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Sixteen in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+17
+00:02:50.379 --> 00:02:57.940
+Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

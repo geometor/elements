@@ -1,0 +1,81 @@
+WEBVTT
+
+1
+00:00:00.420 --> 00:00:02.342
+Book Three, Proposition Fourteen.
+
+2
+00:00:02.342 --> 00:00:10.901
+In a circle equal straight lines are equally distant from the center, and those which are equally distant from the center are equal to one another.
+
+3
+00:00:10.901 --> 00:00:14.453
+Let A B D C be a circle, and let A B and C D be chords in it.
+
+4
+00:00:14.453 --> 00:00:19.810
+We claim that A B and C D are equal if and only if they are equally distant from the center.
+
+5
+00:00:20.230 --> 00:00:24.400
+Take the center E of circle A B D C by Three One.
+
+6
+00:00:24.400 --> 00:00:31.720
+From E, draw E F and E G perpendicular to A B and C D, and join the radii A E and E C.
+
+7
+00:00:32.140 --> 00:00:44.097
+By Three Three, since E F through the center cuts the chord A B at right angles, it bisects it, so A B is double of A F; and for the same reason C D is double of C G.
+
+8
+00:00:44.097 --> 00:00:49.356
+Thus A B equals C D if and only if the half-chords A F and C G are equal.
+
+9
+00:00:49.356 --> 00:00:54.038
+Because the radii A E and E C are equal, their squares are equal.
+
+10
+00:00:54.038 --> 00:01:07.796
+By One Forty-Seven, the Pythagorean theorem in the right triangles E F A and E G C, the squares on A F and E F equal the square on A E, and the squares on C G and E G equal the square on E C.
+
+11
+00:01:07.796 --> 00:01:14.567
+Therefore, the sum of the squares on A F and E F equals the sum of the squares on C G and E G.
+
+12
+00:01:14.567 --> 00:01:24.435
+When A B equals C D, subtracting the equal squares on A F and C G leaves the square on E F equal to the square on E G, so E F equals E G.
+
+13
+00:01:24.435 --> 00:01:33.583
+Conversely, when E F equals E G, subtracting their equal squares leaves A F equal to C G, so the doubles A B and C D are equal.
+
+14
+00:01:33.583 --> 00:01:42.659
+Therefore, in a circle equal chords are equally distant from the center, and chords equally distant from the center are equal.
+
+15
+00:01:42.659 --> 00:01:44.460
+As was required to prove.
+
+16
+00:01:44.880 --> 00:01:53.760
+Proposition Three Fourteen is the first theorem in Book Three to deploy the Pythagorean theorem, Book One Proposition Forty-Seven, inside the circle.
+
+17
+00:01:53.760 --> 00:02:10.446
+By forming the right triangle of half-chord, central perpendicular, and radius, Euclid establishes the fundamental invariant $a^2 + d^2 = R^2$: because the hypotenuse $R$ is constant around the circle, the half-chord $a$ and the central distance $d$ determine each other uniquely.
+
+18
+00:02:10.446 --> 00:02:23.080
+In the GEOMETOR G-Index, node G one hundred fourteen synthesizes ten direct prerequisites across fifty-eight ancestor nodes, directly unlocking Three Fifteen on the comparative lengths of chords and the diameter.
+
+19
+00:02:23.500 --> 00:02:37.793
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Fourteen in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+20
+00:02:37.793 --> 00:02:44.780
+Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

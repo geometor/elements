@@ -1,0 +1,8 @@
+[bell:proposition]
+[style:brisk] Euclid's Elements, Book One, Proposition Seventeen. <pause> In any triangle, the sum of any two angles is less than two right angles. <pause> Given triangle A B C, we prove that any two of its angles taken together are less than two right angles.
+
+[bell:construction]
+[style:brisk] Extend side B C continuously to point D.
+
+[bell:insight]
+[style:brisk] Since angle A C D is an exterior angle of triangle A B C, it is greater than the interior and opposite angle A B C. <pause> Add angle A C B to each, so angles A C D and A C B together are greater than angles A B C and B C A together. <pause> Yet since segment A C stands on line B D, adjacent angles A C D and A C B sum to two right angles. <pause> Therefore angles A B C and B C A together are less than two right angles, and similarly for the other pairs, <pause> as was required to prove.

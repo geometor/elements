@@ -1,0 +1,393 @@
+[
+  {
+    "prop_id": "BOOK IV • PROP. 9",
+    "short_title": "square circumscribe circle",
+    "g_id": "G.161",
+    "folio": "Folio 0101 • p. 95",
+    "enunciation": "About a given square to circumscribe a circle.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.161/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.161/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/09/",
+    "step_total": 8,
+    "subslides": [
+      {
+        "step_num": 1,
+        "step_kind": "GIVEN",
+        "chapter": "given square < A B C D >",
+        "symbolic": "< A B C D > → circumscribe ( A B C D )",
+        "visible_ids": [
+          "el-sq-ABCD",
+          "el-seg-AB",
+          "el-seg-BC",
+          "el-seg-CD",
+          "el-seg-DA",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D"
+        ],
+        "active_ids": [
+          "el-sq-ABCD",
+          "hl-sq-ABCD",
+          "el-seg-AB",
+          "hl-seg-AB",
+          "el-seg-BC",
+          "hl-seg-BC",
+          "el-seg-CD",
+          "hl-seg-CD",
+          "el-seg-DA",
+          "hl-seg-DA",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D"
+        ],
+        "equal_ids": [],
+        "clause_html": "<div class=\"clause-line\">Let <span class=\"g-tok\">&lt; A B C D &gt;</span> be the given square;</div><div class=\"clause-line\">it is required to circumscribe a circle <span class=\"eq-tok\">( A B C D )</span> about <span class=\"g-tok\">&lt; A B C D &gt;</span>.</div>",
+        "just_id": "G.63 • I.def.22, G.156 • IV.def.6",
+        "just_title": "A square is equilateral and right-angled; a circle is circumscribed about a figure when its circumference passes through each vertex."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK IV • PROP. 9",
+    "short_title": "square circumscribe circle",
+    "g_id": "G.161",
+    "folio": "Folio 0101 • p. 95",
+    "enunciation": "About a given square to circumscribe a circle.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.161/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.161/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/09/",
+    "step_total": 8,
+    "subslides": [
+      {
+        "step_num": 2,
+        "step_kind": "CONSTRUCT",
+        "chapter": "join diagonals / A C / and / B D / meeting at E",
+        "symbolic": "/ A C / ∩ / B D / → E",
+        "visible_ids": [
+          "el-sq-ABCD",
+          "el-seg-AB",
+          "el-seg-BC",
+          "el-seg-CD",
+          "el-seg-DA",
+          "el-seg-AC",
+          "el-seg-BD",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-E",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E"
+        ],
+        "active_ids": [
+          "el-seg-AC",
+          "hl-seg-AC",
+          "el-seg-BD",
+          "hl-seg-BD",
+          "el-pt-E",
+          "lbl-E"
+        ],
+        "equal_ids": [],
+        "clause_html": "<div class=\"clause-line\">Join diagonals <span class=\"g-tok\">/ A C /</span> and <span class=\"g-tok\">/ B D /</span>,</div><div class=\"clause-line\">and let them cut one another at <span class=\"eq-tok\">E</span>.</div>",
+        "just_id": "G.14 • I.post.1",
+        "just_title": "Draw the two diagonals / A C / and / B D / between opposite vertices of the square, intersecting at point E."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK IV • PROP. 9",
+    "short_title": "square circumscribe circle",
+    "g_id": "G.161",
+    "folio": "Folio 0101 • p. 95",
+    "enunciation": "About a given square to circumscribe a circle.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.161/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.161/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/09/",
+    "step_total": 8,
+    "subslides": [
+      {
+        "step_num": 3,
+        "step_kind": "ASSERT",
+        "chapter": "/ A C / and / B D / bisect the four corner angles",
+        "symbolic": "/ D A / = / A B /, / D C / = / B C / → < D A C ) = < B A C )",
+        "visible_ids": [
+          "el-sq-ABCD",
+          "el-seg-AB",
+          "el-seg-BC",
+          "el-seg-CD",
+          "el-seg-DA",
+          "el-seg-AC",
+          "el-seg-BD",
+          "el-ang-DAC",
+          "el-ang-BAC",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-E",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E"
+        ],
+        "active_ids": [
+          "el-seg-AC",
+          "hl-seg-AC",
+          "el-seg-BD",
+          "hl-seg-BD",
+          "el-pt-A",
+          "lbl-A"
+        ],
+        "equal_ids": [
+          "el-seg-AB",
+          "hl-seg-AB",
+          "el-seg-BC",
+          "hl-seg-BC",
+          "el-seg-CD",
+          "hl-seg-CD",
+          "el-seg-DA",
+          "hl-seg-DA",
+          "el-ang-DAC",
+          "hl-ang-DAC",
+          "hl-arc-DAC",
+          "el-ang-BAC",
+          "hl-ang-BAC",
+          "hl-arc-BAC"
+        ],
+        "tick_ids": [
+          "el-seg-AB",
+          "el-seg-BC",
+          "el-seg-CD",
+          "el-seg-DA"
+        ],
+        "clause_html": "<div class=\"clause-line\"><span class=\"eq-tok\">/ D A / = / A B /</span>, <span class=\"g-tok\">/ A C /</span> common, <span class=\"eq-tok\">/ D C / = / B C /</span> → <span class=\"eq-tok\">&lt; D A C ) = &lt; B A C )</span></div><div class=\"clause-line\">Similarly <span class=\"g-tok\">/ A C /</span>, <span class=\"g-tok\">/ B D /</span> bisect <span class=\"g-tok\">&lt; A B C )</span>, <span class=\"g-tok\">&lt; B C D )</span>, <span class=\"g-tok\">&lt; C D A )</span></div>",
+        "just_id": "G.29 • I.8, G.63 • I.def.22",
+        "just_title": "By SSS congruence (I.8), diagonal / A C / bisects corner angle < D A B ), and both diagonals bisect all four right angles."
+      },
+      {
+        "step_num": 4,
+        "step_kind": "ASSERT",
+        "chapter": "< E A B ) = < E B A ) → / E A / = / E B / = / E C / = / E D /",
+        "symbolic": "< E A B ) = < E B A ) → / E A / = / E B / = / E C / = / E D /",
+        "visible_ids": [
+          "el-sq-ABCD",
+          "el-seg-AB",
+          "el-seg-BC",
+          "el-seg-CD",
+          "el-seg-DA",
+          "el-seg-AC",
+          "el-seg-BD",
+          "el-seg-EA",
+          "el-seg-EB",
+          "el-seg-EC",
+          "el-seg-ED",
+          "el-ang-BAC",
+          "el-ang-EBA",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-E",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E"
+        ],
+        "active_ids": [
+          "el-pt-E",
+          "lbl-E",
+          "el-seg-AB",
+          "hl-seg-AB"
+        ],
+        "equal_ids": [
+          "el-ang-BAC",
+          "hl-ang-BAC",
+          "hl-arc-BAC",
+          "el-ang-EBA",
+          "hl-ang-EBA",
+          "hl-arc-EBA",
+          "el-seg-EA",
+          "hl-seg-EA",
+          "el-seg-EB",
+          "hl-seg-EB",
+          "el-seg-EC",
+          "hl-seg-EC",
+          "el-seg-ED",
+          "hl-seg-ED"
+        ],
+        "tick_ids": [
+          "el-seg-EA",
+          "el-seg-EB",
+          "el-seg-EC",
+          "el-seg-ED"
+        ],
+        "clause_html": "<div class=\"clause-line\">Since <span class=\"eq-tok\">&lt; D A B ) = &lt; A B C )</span>, their halves <span class=\"eq-tok\">&lt; E A B ) = &lt; E B A )</span></div><div class=\"clause-line\">→ <span class=\"eq-tok\">/ E A / = / E B / = / E C / = / E D /</span></div>",
+        "just_id": "G.27 • I.6",
+        "just_title": "Halves of equal right angles are equal, so by I.6 the four semi-diagonals / E A /, / E B /, / E C /, / E D / are equal."
+      },
+      {
+        "step_num": 5,
+        "step_kind": "∴",
+        "is_punchline": true,
+        "chapter": "circle ( A B C D ) with center E circumscribes < A B C D >",
+        "symbolic": "∴ ( E A ) = ( A B C D ) circumscribes < A B C D >",
+        "visible_ids": [
+          "el-circle-ABCD",
+          "el-sq-ABCD",
+          "el-seg-AB",
+          "el-seg-BC",
+          "el-seg-CD",
+          "el-seg-DA",
+          "el-seg-AC",
+          "el-seg-BD",
+          "el-seg-EA",
+          "el-seg-EB",
+          "el-seg-EC",
+          "el-seg-ED",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-E",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E"
+        ],
+        "active_ids": [
+          "el-circle-ABCD",
+          "hl-circle-ABCD",
+          "el-sq-ABCD",
+          "hl-sq-ABCD",
+          "el-pt-E",
+          "lbl-E"
+        ],
+        "equal_ids": [
+          "el-seg-EA",
+          "hl-seg-EA",
+          "el-seg-EB",
+          "hl-seg-EB",
+          "el-seg-EC",
+          "hl-seg-EC",
+          "el-seg-ED",
+          "hl-seg-ED"
+        ],
+        "tick_ids": [
+          "el-seg-EA",
+          "el-seg-EB",
+          "el-seg-EC",
+          "el-seg-ED"
+        ],
+        "clause_html": "<div class=\"clause-line\">Describe circle <span class=\"g-tok\">( E A )</span> with center <span class=\"g-tok\">E</span> and radius <span class=\"g-tok\">/ E A /</span>;</div><div class=\"clause-line\">∴ <span class=\"eq-tok\">circle ( A B C D ) circumscribes square &lt; A B C D &gt;</span>.</div>",
+        "just_id": "G.10 • I.def.15, G.156 • IV.def.6",
+        "just_title": "Because / E A / = / E B / = / E C / = / E D /, circle ( E A ) passes through A, B, C, D and circumscribes square < A B C D >."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK IV • PROP. 9",
+    "short_title": "square circumscribe circle",
+    "g_id": "G.161",
+    "folio": "Folio 0101 • p. 95",
+    "enunciation": "About a given square to circumscribe a circle.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.161/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.161/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/09/",
+    "step_total": 8,
+    "widescreen_only": true,
+    "subslides": [
+      {
+        "step_num": 6,
+        "step_kind": "COMMENTARY",
+        "widescreen_only": true,
+        "chapter": "completing the square–circle quartet (IV.6–IV.9)",
+        "symbolic": "IV.6–IV.9 : square ⇄ circle duality",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-circle-ABCD",
+          "hl-circle-ABCD",
+          "el-sq-ABCD",
+          "hl-sq-ABCD",
+          "el-pt-E",
+          "lbl-E"
+        ],
+        "equal_ids": [
+          "el-seg-EA",
+          "hl-seg-EA",
+          "el-seg-EB",
+          "hl-seg-EB",
+          "el-seg-EC",
+          "hl-seg-EC",
+          "el-seg-ED",
+          "hl-seg-ED"
+        ],
+        "tick_ids": [
+          "el-seg-EA",
+          "el-seg-EB",
+          "el-seg-EC",
+          "el-seg-ED"
+        ],
+        "clause_html": "<div class=\"clause-line\"><strong>The Square–Circle Quartet (IV.6–IV.9)</strong></div><div class=\"clause-line\"><span class=\"eq-tok\">/ E A / = / E B / = / E C / = / E D / &nbsp;⇒&nbsp; unique circumcenter E</span></div><div class=\"clause-line\" style=\"font-size:28px;color:#cbd5e1;\">Heath notes that while Props. 2–5 apply to any triangle, Props. 6–9 restrict quadrilaterals to the square, where diagonals bisect the right angles into four congruent 45°–45°–90° triangles.</div>",
+        "just_tag": "✦ HEATH COMMENTARY",
+        "just_id": "Heath (1908) • Vol. II, pp. 91–95",
+        "just_title": "Closes the four-sided cycle before Euclid ascends to the Pythagorean construction of the regular pentagon in IV.10–12."
+      },
+      {
+        "step_num": 7,
+        "step_kind": "GENEALOGY",
+        "widescreen_only": true,
+        "chapter": "G.161 dependency tree & symbolic model",
+        "symbolic": "G.10, G.14, G.27, G.29, G.63, G.156 → G.161",
+        "stage_html": "<div style=\"width:100%;height:100%;display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:36px 8px 8px 8px;align-items:stretch;\"><div style=\"background:rgba(11,14,21,0.92);border:1.5px solid rgba(56,189,248,0.45);border-radius:16px;padding:22px 24px;display:flex;flex-direction:column;justify-content:space-between;\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.12em;color:#38bdf8;\">◈ G-INDEX PREREQUISITES → G.161</div><div style=\"display:flex;flex-direction:column;gap:10px;margin:12px 0;\"><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #5ec27e;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.156 (IV.def.6)</span><span style=\"color:#f4f1ea;\">circle circumscribed about figure</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #5ec27e;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.63 (I.def.22)</span><span style=\"color:#f4f1ea;\">square (equilateral &amp; right-angled)</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.29 (I.8)</span><span style=\"color:#f4f1ea;\">SSS triangle congruence</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.27 (I.6)</span><span style=\"color:#f4f1ea;\">equal angles → equal opposite sides</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #5ec27e;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.10 (I.def.15)</span><span style=\"color:#f4f1ea;\">circle &amp; equal radii</span></div></div><div style=\"background:rgba(232,184,90,0.16);border:1.5px solid #e8b85a;border-radius:10px;padding:11px 16px;text-align:center;font-family:'JetBrains Mono',monospace;font-size:17px;font-weight:700;color:#e8b85a;\">↓ G.161 (IV.9) • square circumscribe circle</div></div><div style=\"background:rgba(11,14,21,0.92);border:1.5px solid rgba(232,184,90,0.4);border-radius:16px;padding:22px 24px;display:flex;flex-direction:column;justify-content:space-between;\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.12em;color:#e8b85a;\">⚙ GEOMETOR.MODEL • G.161/g1.py</div><pre style=\"font-family:'JetBrains Mono',monospace;font-size:14.5px;line-height:1.48;color:#e2e8f0;background:rgba(7,9,14,0.85);padding:16px;border-radius:10px;border:1px solid rgba(148,163,184,0.25);overflow:hidden;\">model = Model(&quot;IV.9&quot;)\nmodel.set_polygon([A, B, C, D])\n\n# Diagonals AC and BD meet at center E\nmodel.construct_line(A, C)\nmodel.construct_line(B, D)\nmodel.set_segment(E, A)\nmodel.set_segment(E, B)\n\n# Circumscribed circle (E, A)\nmodel.construct_circle(E, A)</pre><div style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">10 direct dependencies • 32 total ancestor nodes in G-Index</div></div></div>",
+        "clause_html": "<div class=\"clause-line\"><span class=\"coincide-tok\">G.161</span> synthesizes <span class=\"g-tok\">10 direct prerequisites</span></div><div class=\"clause-line\">across <span class=\"g-tok\">32 total ancestor nodes</span> in the G-Index</div><div class=\"clause-line\" style=\"font-size:28px;color:#cbd5e1;\">Unites Book I triangle congruence (I.6, I.8) with Book IV circumscription definitions.</div>",
+        "just_tag": "◈ G-INDEX GENEALOGY",
+        "just_id": "G.161 • 10 Direct Rules",
+        "just_title": "Depends on G.1, G.4, G.10, G.11, G.14, G.27 (I.6), G.29 (I.8), G.63 (I.def.22), G.155, and G.156 (IV.def.6)."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK IV • PROP. 9",
+    "short_title": "square circumscribe circle",
+    "g_id": "G.161",
+    "folio": "Folio 0101 • p. 95",
+    "enunciation": "About a given square to circumscribe a circle.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.161/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.161/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/09/",
+    "step_total": 8,
+    "widescreen_only": true,
+    "subslides": [
+      {
+        "step_num": 8,
+        "step_kind": "PARTICIPATE",
+        "widescreen_only": true,
+        "chapter": "explore the GEOMETOR Elements Codex & participate",
+        "symbolic": "geometor.github.io/elements",
+        "stage_html": "<div style=\"width:100%;height:100%;display:flex;flex-direction:column;justify-content:space-between;padding:42px 16px 12px 16px;gap:20px;\"><div style=\"background:linear-gradient(135deg,rgba(232,184,90,0.16) 0%,rgba(16,20,29,0.95) 100%);border:2px solid rgba(232,184,90,0.55);border-radius:18px;padding:28px 32px;display:flex;flex-direction:column;gap:12px;box-shadow:0 16px 40px rgba(0,0,0,0.6);\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.16em;color:#e8b85a;\">★ INTERACTIVE DIGITAL EDITION</div><div style=\"font-family:Georgia,serif;font-size:38px;font-weight:700;color:#f8f6f0;\">GEOMETOR • Elements Codex</div><div style=\"font-family:'JetBrains Mono',monospace;font-size:22px;color:#5ec27e;font-weight:700;\">https://geometor.github.io/elements/elements2/G.161/</div></div><div style=\"display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;flex:1;\"><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#e8b85a;font-weight:700;\">01 • PSEUDOCODE</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Hover-synced symbolic steps, signatures, and interactive SVG diagrams.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 1 • G.161</span></div><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#38bdf8;font-weight:700;\">02 • PYTHON MODEL</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Executable geometor.model scripts with exact algebraic coordinates.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 2 • g1.py</span></div><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#5ec27e;font-weight:700;\">03 • HEATH (1908)</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Complete classical translation, folio plates, and historical commentary.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 3 • Folio 0101</span></div></div></div>",
+        "clause_html": "<div class=\"clause-line\">Explore the <span class=\"g-tok\">Elements Codex</span> &amp; <span class=\"eq-tok\">G-Index</span></div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Subscribe to <strong>@geometor</strong> for all 465 propositions</div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Share questions &amp; insights in the comments</div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Star &amp; contribute at <strong>github.com/geometor</strong></div>",
+        "just_tag": "★ PARTICIPATE & SUPPORT",
+        "just_id": "github.com/geometor/elements",
+        "just_title": "Open-source symbolic reconstruction of Euclid's Elements — links in the video description."
+      }
+    ]
+  }
+]

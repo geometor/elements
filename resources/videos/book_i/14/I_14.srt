@@ -1,0 +1,35 @@
+1
+00:00:00,420 --> 00:00:03,231
+Euclid's Elements, Book One, Proposition Fourteen.
+
+2
+00:00:03,231 --> 00:00:10,879
+If two segments at a point on a line on opposite sides make adjacent angles summing to two right angles, the two segments are collinear.
+
+3
+00:00:10,879 --> 00:00:21,450
+Given segment A B and segments B C and B D at point B on opposite sides, making adjacent angles A B C and A B D equal to two right angles, we prove that B D is in a straight line with C B.
+
+4
+00:00:21,870 --> 00:00:27,910
+Suppose B D is not in a straight line with B C, and let B E be in a straight line with C B.
+
+5
+00:00:27,910 --> 00:00:37,800
+Since segment A B stands on the straight line C B E, Proposition Thirteen guarantees that the adjacent angles A B C and A B E equal two right angles.
+
+6
+00:00:38,220 --> 00:00:49,755
+Because angles A B C and A B D also equal two right angles, and all right angles are equal by Postulate Four, the sum of angles C B A and A B E equals the sum of angles C B A and A B D.
+
+7
+00:00:49,755 --> 00:00:58,484
+Subtracting the common angle C B A from each leaves angle A B E equal to angle A B D — the lesser equal to the greater, which is impossible.
+
+8
+00:00:58,484 --> 00:01:04,345
+Therefore B E is not in a straight line with C B, and neither is any other segment except B D.
+
+9
+00:01:04,345 --> 00:01:08,460
+Thus C B is in a straight line with B D, as was required to prove.

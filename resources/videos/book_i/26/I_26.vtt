@@ -1,0 +1,45 @@
+WEBVTT
+
+1
+00:00:00.420 --> 00:00:03.597
+Euclid's Elements, Book One, Proposition Twenty-Six.
+
+2
+00:00:03.597 --> 00:00:08.058
+Triangles with two angles and one corresponding side equal are congruent.
+
+3
+00:00:08.058 --> 00:00:25.290
+Given triangles A B C and D E F with angle A B C equal to angle D E F, angle B C A equal to angle E F D, and either the included side B C equal to E F, or a side subtending an equal angle such as A B equal to D E, we prove that the remaining sides and the remaining angle are equal.
+
+4
+00:00:25.710 --> 00:00:29.133
+First, let the included side B C equal E F.
+
+5
+00:00:29.133 --> 00:00:36.615
+If side A B were greater than D E, cut off segment B G equal to D E and construct segment G C.
+
+6
+00:00:36.615 --> 00:00:40.118
+Second, let the opposite side A B equal D E.
+
+7
+00:00:40.118 --> 00:00:47.600
+If base B C were greater than E F, cut off segment B H equal to E F and construct segment A H.
+
+8
+00:00:48.020 --> 00:01:03.386
+In the first case, side-angle-side congruence makes triangle G B C equal to triangle D E F, so angle G C B equals angle D F E, which equals the whole angle B C A — the part equal to the whole, which is impossible.
+
+9
+00:01:03.386 --> 00:01:10.961
+Thus A B equals D E, and by side-angle-side congruence A C equals D F and angle B A C equals angle E D F.
+
+10
+00:01:10.961 --> 00:01:25.894
+In the second case, side-angle-side congruence makes triangle A B H equal to triangle D E F, so exterior angle B H A of triangle A H C equals the opposite interior angle B C A, violating Proposition Sixteen.
+
+11
+00:01:25.894 --> 00:01:32.820
+Therefore B C equals E F, and the remaining sides and angle are equal, as was required to prove.

@@ -1,0 +1,69 @@
+WEBVTT
+
+1
+00:00:00.420 --> 00:00:03.527
+Elements, Book three, Proposition thirty-five.
+
+2
+00:00:03.527 --> 00:00:13.928
+If two chords intersect inside a circle, the rectangle contained by the segments of one chord equals the rectangle contained by the segments of the other.
+
+3
+00:00:13.928 --> 00:00:18.183
+In circle A B C D, let chords A C and B D intersect at point E.
+
+4
+00:00:18.183 --> 00:00:22.979
+We claim that the rectangle A E by E C equals the rectangle D E by E B.
+
+5
+00:00:22.979 --> 00:00:33.650
+If both chords pass through the center E, all four segments A E, E C, D E, and E B are equal radii, so the rectangles contained by them are immediately equal.
+
+6
+00:00:34.070 --> 00:00:37.726
+Now suppose the chords do not pass through the center.
+
+7
+00:00:37.726 --> 00:00:43.617
+Find the center F of circle A B C D, and draw perpendiculars F G to A C and F H to B D.
+
+8
+00:00:43.617 --> 00:00:50.320
+Join the radii F B and F C, and join segment F E from the center to the intersection of the chords.
+
+9
+00:00:50.740 --> 00:00:56.722
+Because F G passes through the center perpendicular to chord A C, it bisects A C at G.
+
+10
+00:00:56.722 --> 00:01:07.852
+Since A C is cut equally at G and unequally at E, Book two Proposition five shows that the rectangle A E by E C plus the square on E G equals the square on G C.
+
+11
+00:01:07.852 --> 00:01:19.539
+Adding the square on F G to both sides, the Pythagorean theorem on right triangles F G E and F G C turns those sums into the square on F E and the square on radius F C.
+
+12
+00:01:19.539 --> 00:01:28.026
+By the exact same reasoning on chord B D, the rectangle D E by E B plus the square on F E equals the square on radius F B.
+
+13
+00:01:28.026 --> 00:01:40.060
+Since radii F C and F B have equal squares, subtracting the common square on F E leaves the rectangle A E by E C equal to the rectangle D E by E B, as was required to prove.
+
+14
+00:01:40.480 --> 00:01:49.272
+Euclid proves four cases depending on whether one or neither chord passes through the center, while Campanus condensed the proof into this single general case.
+
+15
+00:01:49.272 --> 00:02:02.931
+Together with Proposition thirty-six, it establishes the interior Power of a Point theorem: for any point E inside a circle of radius R at distance d from the center, the product of the chord segments through E is always R squared minus d squared.
+
+16
+00:02:02.931 --> 00:02:21.400
+In the GEOMETOR dependency graph, Proposition thirty-five synthesizes fifty-seven ancestor nodes across Books one, two, and three—combining chord bisection from Book three Proposition three, the difference-of-squares rectangle identity from Book two Proposition five, and the Pythagorean theorem from Book one Proposition forty-seven.
+
+17
+00:02:21.820 --> 00:02:27.580
+Explore the interactive construction, symbolic proof, and dependency graph at geometor dot github dot io.

@@ -1,0 +1,63 @@
+1
+00:00:00,420 --> 00:00:02,558
+Book Three, Proposition Ten.
+
+2
+00:00:02,558 --> 00:00:06,759
+A circle does not cut a circle at more points than two.
+
+3
+00:00:06,759 --> 00:00:14,930
+For, if possible, let the circle A B C cut the circle D E F at more points than two, namely B, G, F, and H.
+
+4
+00:00:15,350 --> 00:00:23,460
+Join the common chords B H and B G by Postulate One, and bisect them at the points K and L by One Ten.
+
+5
+00:00:23,460 --> 00:00:33,160
+From K and L, draw K C and L M at right angles to B H and B G by One Eleven, and carry them through to the points A and E.
+
+6
+00:00:33,580 --> 00:00:43,723
+Because in the circle A B C the segment A C bisects the chord B H at right angles, the center of A B C lies on A C by the Porism to Three One.
+
+7
+00:00:43,723 --> 00:00:52,509
+And because in the same circle the segment N O bisects the chord B G at right angles, the center of A B C also lies on N O.
+
+8
+00:00:52,509 --> 00:00:59,937
+Since the segments A C and N O meet at no point except P, the point P is the center of the circle A B C.
+
+9
+00:00:59,937 --> 00:01:07,794
+By the exact same reasoning on the common chords B H and B G, P is also the center of the second circle D E F.
+
+10
+00:01:07,794 --> 00:01:16,080
+Thus the two circles A B C and D E F which cut one another have the same center P—which is impossible by Three Five.
+
+11
+00:01:16,080 --> 00:01:20,794
+Therefore, a circle does not cut a circle at more points than two.
+
+12
+00:01:20,794 --> 00:01:22,580
+As was required to prove.
+
+13
+00:01:23,000 --> 00:01:37,013
+As Sir Thomas Heath observes, Euclid's proof of Three Ten never assumes that the circles cross one another—it proves universally that two distinct circles cannot share more than two common points, whether they intersect or touch.
+
+14
+00:01:37,013 --> 00:01:53,840
+In the GEOMETOR G-Index, node G one-hundred-eight combines the chord-bisector porism of Three One with the non-concentricity theorem of Three Five, serving as a foundational prerequisite for thirty-three later propositions across Books Three, Four, Six, Twelve, and Thirteen.
+
+15
+00:01:54,260 --> 00:02:08,555
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Ten in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+16
+00:02:08,555 --> 00:02:16,620
+Subscribe to at geometor, share your questions in the comments, and star our repositories at github dot com slash geometor.

@@ -1,0 +1,57 @@
+WEBVTT
+
+1
+00:00:00.420 --> 00:00:03.059
+Elements, Book three, Proposition thirty-six.
+
+2
+00:00:03.059 --> 00:00:14.612
+From a point outside a circle, if a secant line cuts the circle and a tangent line touches it, the rectangle contained by the whole secant and its external segment equals the square on the tangent.
+
+3
+00:00:14.612 --> 00:00:21.708
+Let point D be taken outside circle A B C, let secant D C A cut the circle at C and A, and let D B touch the circle at B.
+
+4
+00:00:21.708 --> 00:00:25.930
+We claim that the rectangle A D by C D equals the square on tangent D B.
+
+5
+00:00:26.350 --> 00:00:32.859
+When secant D C A passes through the center F, join radius F B from the center to the point of contact B.
+
+6
+00:00:32.859 --> 00:00:40.360
+By Book three Proposition eighteen, the radius F B is perpendicular to the tangent D B, making angle F B D a right angle.
+
+7
+00:00:40.780 --> 00:00:54.244
+Since diameter A C is bisected at the center F and extended in a straight line by C D, Book two Proposition six states that the rectangle A D by C D plus the square on F C equals the square on F D.
+
+8
+00:00:54.244 --> 00:01:04.496
+Because radii F C and F B are equal, we can substitute the square on F B, so the rectangle A D by C D plus the square on F B equals the square on F D.
+
+9
+00:01:04.496 --> 00:01:13.655
+By the Pythagorean theorem on right triangle F B D, the square on F B plus the square on D B also equals the square on hypotenuse F D.
+
+10
+00:01:13.655 --> 00:01:22.540
+Subtracting the common square on F B leaves the rectangle A D by C D equal to the square on tangent D B, as was required to prove.
+
+11
+00:01:22.960 --> 00:01:33.202
+When the secant does not pass through the center, Euclid drops a perpendicular from the center to bisect chord A C and applies the Pythagorean theorem twice to reach the exact same identity.
+
+12
+00:01:33.202 --> 00:01:47.002
+Together with Proposition thirty-five, this completes the exterior Power of a Point theorem: for any secant from D, the product A D by C D equals the square on tangent D B—and therefore any two secants from the same external point contain equal rectangles.
+
+13
+00:01:47.002 --> 00:02:01.880
+In the GEOMETOR dependency graph, Proposition thirty-six unites sixty ancestor nodes across Books one, two, and three, and directly powers both its converse in Proposition thirty-seven and the golden-triangle construction for the regular pentagon in Book four Proposition ten.
+
+14
+00:02:02.300 --> 00:02:07.620
+Explore the interactive construction, symbolic proof, and dependency graph at geometor dot github dot io.

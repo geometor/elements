@@ -1,0 +1,45 @@
+{
+  "I.39": {
+    "subtype": "theorem",
+    "args": [
+      ":g:`< A B C > <g1:< A B C >>`",
+      ":g:`< D B C > <g1:< D B C >>`",
+      ":g:`/ B C / <g1:/ B C />`"
+    ],
+    "returns": [],
+    "given": ":g:`< A B C > <g1:< A B C >>` :eq:`= <g1:< A B C > = g1:< D B C >>` :g:`< D B C > <g1:< D B C >>` on :g:`/ B C / <g1:/ B C />`",
+    "contract": ":g:`/ A D / <g1:/ A D />` ∥ :g:`/ B C / <g1:/ B C />`",
+    "steps": [
+      [
+        "given",
+        [],
+        ":g:`< A B C > <g1:< A B C >>` :eq:`= <g1:< A B C > = g1:< D B C >>` :g:`< D B C > <g1:< D B C >>` on :g:`/ B C / <g1:/ B C />`"
+      ],
+      [
+        "construct",
+        [],
+        "@fn(I.post.1)(:g:`A <g1:A>`, :g:`D <g1:D>`) → :g:`/ A D / <g1:/ A D />`"
+      ],
+      [
+        "construct",
+        [],
+        "? ¬(:g:`/ A D / <g1:/ A D />` ∥ :g:`/ B C / <g1:/ B C />`) → @fn(I.31)(:g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />`) → :g:`/ A E / <g1:/ A E />` ∥ :g:`/ B C / <g1:/ B C />`, @fn(I.post.1)(:g:`E <g1:E>`, :g:`C <g1:C>`) → :g:`/ E C / <g1:/ E C />`"
+      ],
+      [
+        "assert",
+        ["I.37"],
+        ":g:`/ A E / <g1:/ A E />` ∥ :g:`/ B C / <g1:/ B C />` → :g:`< A B C > <g1:< A B C >>` :eq:`= <g1:< A B C > = g1:< E B C >>` :g:`< E B C > <g1:< E B C >>`"
+      ],
+      [
+        "assert",
+        ["I.cn.1", "I.cn.5"],
+        ":g:`< A B C > <g1:< A B C >>` :eq:`= <g1:< A B C > = g1:< D B C >>` :g:`< D B C > <g1:< D B C >>`, :g:`< A B C > <g1:< A B C >>` :eq:`= <g1:< A B C > = g1:< E B C >>` :g:`< E B C > <g1:< E B C >>` → :g:`< D B C > <g1:< D B C >>` :eq:`= <g1:< D B C > = g1:< E B C >>` :g:`< E B C > <g1:< E B C >>` ⇒⇐"
+      ],
+      [
+        "conclude",
+        ["I.def.23"],
+        ":g:`/ A D / <g1:/ A D />` ∥ :g:`/ B C / <g1:/ B C />`"
+      ]
+    ]
+  }
+}

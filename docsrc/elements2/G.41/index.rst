@@ -12,6 +12,7 @@
 :tags: book-i, point, segment, angle, triangle, trilateral, plane-angle, straight-line, plane, equality
 :dependencies: G.4, G.12, G.14, G.18, G.21, G.22, G.24, G.26, G.32, G.40
 :excerpt: In any triangle, if one side is extended, the exterior angle is greater than either opposite interior angle.
+:youtube_id: _AmGRJEBJdQ
 
 .. _G.41:
 .. _I.16:
@@ -27,75 +28,40 @@ G.41 exterior angle of a triangle is greater than interior
 
 .. signature:: theorem
 
-   | :fn:`exterior_angle_greater <G.41>`\ ()
-   | **prove** the exterior angle :g:`< A C D ) <g1:< A C D )>` > either of the interior and opposite angles :g:`< C B A ) <g1:< C B A )>`, :g:`< B A C ) <g1:< B A C )>`
+   | :fn:`exterior_angle_greater <G.41>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`/ B C / <g1:/ B C />`)
+   | **given** :g:`< A B C > <g1:< A B C >>`, @fn(I.post.2)(:g:`/ B C / <g1:/ B C />`) → :g:`/ C D / <g1:/ C D />`
+   | **prove** :g:`< A C D ) <g1:< A C D )>` > :g:`< B A C ) <g1:< B A C )>`, :g:`< A C D ) <g1:< A C D )>` > :g:`< C B A ) <g1:< C B A )>`
 
 .. picture:: g1.svg
    :alt: Proposition 16 figure
 
-.. step:: construct
+.. step:: given
 
-   :fn:`extend <G.18>`\ (:g:`< A B C > <g1:< A B C >>` be a triangle, and let one side of it :g:`/ B C / <g1:/ B C />`) → :g:`D <g1:D>`
-
-.. step:: construct
-
-   :fn:`bisect_segment <G.32>`\ (:g:`/ A C / <g1:/ A C />`) → :g:`E <g1:E>` (:eq:`bisected <g1:/ A E / = g1:/ E C />`)
+   :g:`< A B C > <g1:< A B C >>`, :fn:`extend <G.18>`\ (:g:`/ B C / <g1:/ B C />`) → :g:`/ C D / <g1:/ C D />`
 
 .. step:: construct
 
-   :fn:`segment <G.14>`\ (:g:`B <g1:B>`, :g:`E <g1:E>`) → :g:`/ B E / <g1:/ B E />`, :fn:`extend <G.18>`\ (:g:`/ B E / <g1:/ B E />`) → :g:`F <g1:F>`
+   :fn:`bisect_segment <G.32>`\ (:g:`/ A C / <g1:/ A C />`) → :g:`E <g1:E>` (:g:`/ A E / <g1:/ A E />` :eq:`= <g1:/ A E / = g1:/ E C />` :g:`/ E C / <g1:/ E C />`)
 
 .. step:: construct
 
-   :fn:`cut_equal_segment <G.21>`\ (:g:`/ B E / <g1:/ B E />`) → :g:`/ E F / <g1:/ E F />` (:eq:`equal <g1:/ E F / = g1:/ B E />`)
-
-.. step:: construct
-
-   :fn:`segment <G.14>`\ (:g:`F <g1:F>`, :g:`C <g1:C>`) → :g:`/ F C / <g1:/ F C />`
-
-.. step:: construct
-
-   :fn:`extend <G.18>`\ (:g:`/ A C / <g1:/ A C />`) → :g:`G <g1:G>`
-
-.. step:: assert
-
-   :g:`/ A E / <g1:/ A E />` :eq:`= <g1:/ A E / = g1:/ E C /; g1:/ B E / = g1:/ E F />` :g:`/ E C / <g1:/ E C />`, and :g:`/ B E / <g1:/ B E />` to :g:`/ E F / <g1:/ E F />` → :g:`/ A E / <g1:/ A E />`, :g:`/ E B / <g1:/ E B />` :eq:`= <g1:/ A E / = g1:/ C E /; g1:/ E B / = g1:/ E F />` :g:`/ C E / <g1:/ C E />`, :g:`/ E F / <g1:/ E F />`
-
-.. step:: assert
-
-   :g:`< A E B ) <g1:< A E B )>` :eq:`= <g1:< A E B ) = g1:< F E C )>` :g:`< F E C ) <g1:< F E C )>`,
+   :fn:`segment <G.14>`\ (:g:`B <g1:B>`, :g:`E <g1:E>`) → :g:`/ B E / <g1:/ B E />`, :fn:`extend <G.18>`\ (:g:`/ B E / <g1:/ B E />`), :fn:`cut_equal_segment <G.21>`\ (:g:`/ B E / <g1:/ B E />`) → :g:`/ E F / <g1:/ E F />` (:eq:`= <g1:/ E F / = g1:/ B E />` :g:`/ B E / <g1:/ B E />`), :fn:`segment <G.14>`\ (:g:`F <g1:F>`, :g:`C <g1:C>`) → :g:`/ F C / <g1:/ F C />`, :fn:`extend <G.18>`\ (:g:`/ A C / <g1:/ A C />`) → :g:`/ C G / <g1:/ C G />`
 
 .. step:: assert ∵ vertical_angles_equal <G.40>
 
-   For they are vertical angles
-
-.. step:: assert
-
-   :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ F C />` :g:`/ F C / <g1:/ F C />`,
-
-.. step:: assert
-
-   :g:`< A B E > <g1:< A B E >>` is :eq:`equal <g1:< A B E > = g1:< C F E >>` to :g:`< C F E > <g1:< C F E >>`,
+   :g:`/ A C / <g1:/ A C />` ∩ :g:`/ B F / <g1:/ B F />` → :g:`< A E B ) <g1:< A E B )>` :eq:`= <g1:< A E B ) = g1:< F E C )>` :g:`< F E C ) <g1:< F E C )>`
 
 .. step:: assert ∵ sas_congruence <G.24>
 
-   the remaining angles are equal to the remaining angles, namely those which the equal sides subtend
-
-.. step:: assert
-
-   :g:`< B A E ) <g1:< B A E )>` :eq:`= <g1:< B A E ) = g1:< E C F )>` :g:`< E C F ) <g1:< E C F )>`
+   :g:`/ A E / <g1:/ A E />` :eq:`= <g1:/ A E / = g1:/ E C />` :g:`/ E C / <g1:/ E C />`, :g:`/ E B / <g1:/ E B />` :eq:`= <g1:/ E B / = g1:/ E F />` :g:`/ E F / <g1:/ E F />`, :g:`< A E B ) <g1:< A E B )>` :eq:`= <g1:< A E B ) = g1:< F E C )>` :g:`< F E C ) <g1:< F E C )>` → :g:`< A B E > <g1:< A B E >>` :eq:`= <g1:< A B E > = g1:< C F E >>` :g:`< C F E > <g1:< C F E >>`, :g:`< B A E ) <g1:< B A E )>` :eq:`= <g1:< B A E ) = g1:< E C F )>` :g:`< E C F ) <g1:< E C F )>`
 
 .. step:: assert ∵ whole_greater_than_part <G.26>
 
-   :g:`< E C D ) <g1:< E C D )>` > :g:`< E C F ) <g1:< E C F )>`
+   :g:`< E C D ) <g1:< E C D )>` > :g:`< E C F ) <g1:< E C F )>` → :g:`< A C D ) <g1:< A C D )>` > :g:`< B A E ) <g1:< B A E )>`
 
-.. step:: assert
+.. step:: conclude ∵ bisect_segment, vertical_angles_equal <G.32, G.40>
 
-   :g:`< A C D ) <g1:< A C D )>` > :g:`< B A E ) <g1:< B A E )>`
-
-.. step:: conclude
-
-   Similarly also, if :g:`/ B C / <g1:/ B C />` be bisected, :g:`< B C G ) <g1:< B C G )>`, that is, :g:`< A C D ) <g1:< A C D )>` [I. 15], can be proved greater than :g:`< A B C ) <g1:< A B C )>` as well
+   :g:`< A C D ) <g1:< A C D )>` > :g:`< B A C ) <g1:< B A C )>`, :g:`< A C D ) <g1:< A C D )>` :eq:`= <g1:< A C D ) = g1:< B C G )>` :g:`< B C G ) <g1:< B C G )>` > :g:`< C B A ) <g1:< C B A )>`
 
 Dependency Graph
 ----------------
@@ -308,5 +274,6 @@ Required for
 .. toctree::
    :hidden:
 
+   video
    code
    heath

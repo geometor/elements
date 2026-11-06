@@ -1,0 +1,81 @@
+WEBVTT
+
+1
+00:00:00.420 --> 00:00:02.786
+Book Three, Proposition Thirteen.
+
+2
+00:00:02.786 --> 00:00:10.169
+A circle does not touch a circle at more points than one, whether it touch it internally or externally.
+
+3
+00:00:10.169 --> 00:00:19.130
+For, if possible, let the circle A B D C touch the circle E B F D, first internally, at more points than one, namely B and D.
+
+4
+00:00:19.550 --> 00:00:26.517
+Let the center G of circle A B D C, and the center H of circle E B F D, be taken.
+
+5
+00:00:26.517 --> 00:00:37.440
+By Three Eleven, the straight line joined from G to H and produced falls on the points of internal contact B and D, as B G H D.
+
+6
+00:00:37.860 --> 00:00:42.649
+Because G is the center of circle A B D C, the radius B G equals G D.
+
+7
+00:00:42.649 --> 00:00:50.283
+Since G D contains H D, B G is greater than H D, and therefore the whole segment B H is much greater than H D.
+
+8
+00:00:50.283 --> 00:00:55.974
+Yet H is the center of circle E B F D, so B H also equals H D—which is impossible.
+
+9
+00:00:55.974 --> 00:01:00.415
+Thus two circles cannot touch internally at more than one point.
+
+10
+00:01:00.415 --> 00:01:03.469
+Nor can they touch externally at two points.
+
+11
+00:01:03.469 --> 00:01:09.368
+For if circle A C K touches circle A B D C externally at A and C, join the chord A C.
+
+12
+00:01:09.368 --> 00:01:21.166
+By Three Two, the chord joining two points on a circle falls within each circle; yet because the circles touch externally, A C falls outside circle A C K—which is absurd.
+
+13
+00:01:21.166 --> 00:01:28.245
+Therefore, a circle does not touch a circle at more points than one, whether internally or externally.
+
+14
+00:01:28.245 --> 00:01:29.980
+As was required to prove.
+
+15
+00:01:30.400 --> 00:01:34.919
+Proposition Three Thirteen completes Euclid's trilogy on tangent circles.
+
+16
+00:01:34.919 --> 00:01:47.051
+Where Three Ten proved that two circles cannot intersect at more than two points, Three Thirteen proves that when intersection collapses into tangency, at most a single point of contact can exist.
+
+17
+00:01:47.051 --> 00:01:59.988
+Heath contrasts Euclid's collinear-radius reductio with Robert Simson's perpendicular-bisector proof, showing that both rely on the symmetry of the line of centers established in Three Eleven and Three Twelve.
+
+18
+00:01:59.988 --> 00:02:09.520
+In the GEOMETOR G-Index, node G one hundred twelve unites Three Two—chord interiority—with Three Eleven's line of centers across forty-two ancestor nodes.
+
+19
+00:02:09.940 --> 00:02:23.293
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Thirteen in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+20
+00:02:23.293 --> 00:02:29.820
+Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

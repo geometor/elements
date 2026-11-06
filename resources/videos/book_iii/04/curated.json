@@ -1,0 +1,58 @@
+{
+  "III.4": {
+    "subtype": "theorem",
+    "args": [
+      ":g:`( A B C D ) <g1:( A B C D )>`",
+      ":g:`/ A C / <g1:/ A C />`",
+      ":g:`/ B D / <g1:/ B D />`",
+      ":g:`E <g1:E>`"
+    ],
+    "returns": [],
+    "given": ":g:`( A B C D ) <g1:( A B C D )>`, non-central chords :g:`/ A C / <g1:/ A C />`, :g:`/ B D / <g1:/ B D />` (:g:`E <g1:E>` = :g:`/ A C / <g1:/ A C />` ∩ :g:`/ B D / <g1:/ B D />`)",
+    "contract": "¬(:g:`/ A E / <g1:/ A E />` = :g:`/ E C / <g1:/ E C />` ∧ :g:`/ B E / <g1:/ B E />` = :g:`/ E D / <g1:/ E D />`)",
+    "steps": [
+      [
+        "given",
+        [
+          "I.def.15"
+        ],
+        ":g:`( A B C D ) <g1:( A B C D )>`, chords :g:`/ A C / <g1:/ A C />`, :g:`/ B D / <g1:/ B D />` not through center, :g:`E <g1:E>` = :g:`/ A C / <g1:/ A C />` ∩ :g:`/ B D / <g1:/ B D />`"
+      ],
+      [
+        "construct",
+        [
+          "III.1",
+          "I.post.1"
+        ],
+        "Suppose :g:`/ A E / <g1:/ A E />` :eq:`= <g1:/ A E / = g1:/ E C />` :g:`/ E C / <g1:/ E C />` and :g:`/ B E / <g1:/ B E />` :eq:`= <g1:/ B E / = g1:/ E D />` :g:`/ E D / <g1:/ E D />`; @fn(III.1)(:g:`( A B C D ) <g1:( A B C D )>`) → :g:`F <g1:F>`, @fn(I.post.1)(:g:`F <g1:F>`, :g:`E <g1:E>`) → :g:`/ F E / <g1:/ F E />`"
+      ],
+      [
+        "assert",
+        [
+          "III.3"
+        ],
+        ":g:`/ F E / <g1:/ F E />` through center bisects :g:`/ A C / <g1:/ A C />` (:g:`/ A E / <g1:/ A E />` :eq:`= <g1:/ A E / = g1:/ E C />` :g:`/ E C / <g1:/ E C />`) → :g:`< F E A ) <g1:< F E A )>` is right"
+      ],
+      [
+        "assert",
+        [
+          "III.3"
+        ],
+        ":g:`/ F E / <g1:/ F E />` through center bisects :g:`/ B D / <g1:/ B D />` (:g:`/ B E / <g1:/ B E />` :eq:`= <g1:/ B E / = g1:/ E D />` :g:`/ E D / <g1:/ E D />`) → :g:`< F E B ) <g1:< F E B )>` is right"
+      ],
+      [
+        "assert",
+        [
+          "I.post.4",
+          "I.cn.5"
+        ],
+        ":g:`< F E A ) <g1:< F E A )>` :eq:`= <g1:< F E A ) = g1:< F E B )>` :g:`< F E B ) <g1:< F E B )>`, the less to the greater ⇒⇐"
+      ],
+      [
+        "conclude",
+        [],
+        ":g:`/ A C / <g1:/ A C />` and :g:`/ B D / <g1:/ B D />` do not bisect one another"
+      ]
+    ]
+  }
+}

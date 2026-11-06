@@ -1,0 +1,83 @@
+1
+00:00:00,420 --> 00:00:02,594
+Book Four, Proposition Twelve.
+
+2
+00:00:02,594 --> 00:00:08,173
+About a given circle to circumscribe an equilateral and equiangular pentagon.
+
+3
+00:00:08,173 --> 00:00:17,810
+Let A B C D E be the given circle; it is required to circumscribe an equilateral and equiangular pentagon about the circle A B C D E.
+
+4
+00:00:18,230 --> 00:00:31,365
+By Four Eleven, let A, B, C, D, and E be the vertices of an inscribed regular pentagon, so that the arcs A B, B C, C D, D E, and E A are equal.
+
+5
+00:00:31,365 --> 00:00:41,653
+Through A, B, C, D, and E draw G H, H K, K L, L M, and M G tangent to the circle by the Porism to Three Sixteen.
+
+6
+00:00:41,653 --> 00:00:49,920
+By Three One, take the center F of circle A B C D E, and join F B, F K, F C, F L, and F D.
+
+7
+00:00:50,340 --> 00:00:59,903
+By Three Eighteen, each radius to a point of contact is perpendicular to its tangent, so the angles at B, C, and D are right angles.
+
+8
+00:00:59,903 --> 00:01:10,335
+In right triangles F B K and F C K, by One Forty-Seven the square on F K equals the squares on F C and C K, and also the squares on F B and B K.
+
+9
+00:01:10,335 --> 00:01:17,652
+Since radii F C and F B are equal, the remaining squares on C K and B K are equal, so B K equals C K.
+
+10
+00:01:17,652 --> 00:01:34,169
+By One Eight, triangles F B K and F C K are congruent, making central angle B F C double angle K F C, and corner angle B K C double angle F K C; similarly angle C F D is double angle C F L, and angle D L C is double angle F L C.
+
+11
+00:01:34,169 --> 00:01:44,528
+Because arc B C equals arc C D, by Three Twenty-Seven central angle B F C equals angle C F D, so their halves—angles K F C and L F C—are equal.
+
+12
+00:01:44,528 --> 00:01:58,003
+Since right angles F C K and F C L are also equal and side F C is common, by One Twenty-Six triangles F K C and F L C are congruent, so K C equals C L and angle F K C equals angle F L C.
+
+13
+00:01:58,003 --> 00:02:04,378
+Because K C equals C L, tangent side K L is double K C, and similarly H K is double B K.
+
+14
+00:02:04,378 --> 00:02:13,216
+Since B K equals K C, side H K equals K L, and by the same reasoning all five sides G H, H K, K L, L M, and M G are equal.
+
+15
+00:02:13,216 --> 00:02:24,590
+Moreover, since angle F K C equals angle F L C, their doubles—interior angles H K L and K L M—are equal, and all five angles of pentagon G H K L M are equal.
+
+16
+00:02:24,590 --> 00:02:34,660
+Therefore an equilateral and equiangular pentagon G H K L M has been circumscribed about the given circle A B C D E, as was required to do.
+
+17
+00:02:35,080 --> 00:02:40,790
+Proposition Four Twelve establishes Euclid's universal dualization method for regular polygons.
+
+18
+00:02:40,790 --> 00:03:02,069
+As De Morgan and Heath observe, once any regular polygon is inscribed in a circle, drawing tangents at its vertices and pairing the radial right triangles via the Pythagorean Theorem and Angle-Side-Angle congruence circumscribes a regular polygon of the same number of sides—a general principle Euclid explicitly invokes in Four Fifteen and Four Sixteen.
+
+19
+00:03:02,069 --> 00:03:19,320
+In the GEOMETOR G-Index, node G one hundred sixty-four synthesizes fifteen direct prerequisites across one hundred ten ancestor nodes, uniting the Pythagorean Theorem, SSS and ASA congruence, circle center-finding, and tangent perpendicularity with the inscribed pentagon of Four Eleven.
+
+20
+00:03:19,740 --> 00:03:32,632
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Four Twelve in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+21
+00:03:32,632 --> 00:03:39,020
+Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

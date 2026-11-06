@@ -1,0 +1,411 @@
+[
+  {
+    "prop_id": "BOOK III • PROP. 15",
+    "short_title": "diameter & chord inequality",
+    "g_id": "G.116",
+    "folio": "Folios 0042–0043 • pp. 36–37",
+    "enunciation": "Of straight lines in a circle the diameter is greatest, and of the rest the nearer to the centre is always greater than the more remote.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.116/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.116/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/15/",
+    "step_total": 9,
+    "subslides": [
+      {
+        "step_num": 1,
+        "step_kind": "GIVEN",
+        "chapter": "circle ( A B C D ), diameter / A D /, nearer chord / B C /, remote chord / F G /",
+        "symbolic": "diameter / A D /, chords / B C / (nearer E), / F G / (more remote)",
+        "visible_ids": [
+          "el-circle-ABCD",
+          "el-seg-AE",
+          "el-seg-ED",
+          "el-seg-AD",
+          "el-seg-BH",
+          "el-seg-HC",
+          "el-seg-BC",
+          "el-seg-FK",
+          "el-seg-KG",
+          "el-seg-FG",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-E",
+          "el-pt-F",
+          "el-pt-G",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E",
+          "lbl-F",
+          "lbl-G"
+        ],
+        "active_ids": [
+          "el-circle-ABCD",
+          "hl-circle-ABCD",
+          "el-seg-AD",
+          "hl-seg-AD",
+          "el-seg-BC",
+          "hl-seg-BC",
+          "el-seg-FG",
+          "hl-seg-FG",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-E",
+          "el-pt-F",
+          "el-pt-G",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E",
+          "lbl-F",
+          "lbl-G"
+        ],
+        "equal_ids": [],
+        "clause_html": "<div class=\"clause-line\">Let <span class=\"g-tok\">/ A D /</span> be the diameter of <span class=\"g-tok\">( A B C D )</span> with center <span class=\"g-tok\">E</span>,</div><div class=\"clause-line\">and let chord <span class=\"g-tok\">/ B C /</span> be nearer <span class=\"g-tok\">E</span> than <span class=\"g-tok\">/ F G /</span>.</div>",
+        "just_id": "G.61 • I.def.17, G.115 • III.def.5",
+        "just_title": "Given diameter / A D / and two chords / B C /, / F G / at unequal distances from the center E."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK III • PROP. 15",
+    "short_title": "diameter & chord inequality",
+    "g_id": "G.116",
+    "folio": "Folios 0042–0043 • pp. 36–37",
+    "enunciation": "Of straight lines in a circle the diameter is greatest, and of the rest the nearer to the centre is always greater than the more remote.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.116/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.116/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/15/",
+    "step_total": 9,
+    "subslides": [
+      {
+        "step_num": 2,
+        "step_kind": "CONSTRUCT",
+        "chapter": "perpendiculars / E H / ⊥ / B C / and / E K / ⊥ / F G / with / E K / > / E H /",
+        "symbolic": "/ E H / ⊥ / B C /, / E K / ⊥ / F G / → / E K / > / E H /",
+        "visible_ids": [
+          "el-circle-ABCD",
+          "el-seg-AE",
+          "el-seg-ED",
+          "el-seg-AD",
+          "el-seg-BH",
+          "el-seg-HC",
+          "el-seg-BC",
+          "el-seg-FK",
+          "el-seg-KG",
+          "el-seg-FG",
+          "el-seg-EH",
+          "el-seg-EL",
+          "el-seg-LK",
+          "el-seg-EK",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-E",
+          "el-pt-F",
+          "el-pt-G",
+          "el-pt-H",
+          "el-pt-K",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E",
+          "lbl-F",
+          "lbl-G",
+          "lbl-H",
+          "lbl-K"
+        ],
+        "active_ids": [
+          "el-seg-EH",
+          "hl-seg-EH",
+          "el-seg-EK",
+          "hl-seg-EK",
+          "el-pt-H",
+          "el-pt-K",
+          "lbl-H",
+          "lbl-K"
+        ],
+        "equal_ids": [],
+        "clause_html": "<div class=\"clause-line\">Draw <span class=\"g-tok\">/ E H / ⊥ / B C /</span> and <span class=\"g-tok\">/ E K / ⊥ / F G /</span>;</div><div class=\"clause-line\">since <span class=\"g-tok\">/ F G /</span> is more remote, <span class=\"g-tok\">/ E K / &gt; / E H /</span>.</div>",
+        "just_id": "G.35 • I.12, G.115 • III.def.5",
+        "just_title": "That chord is said to be at a greater distance on which the greater perpendicular from the center falls (III.def.5)."
+      },
+      {
+        "step_num": 3,
+        "step_kind": "CONSTRUCT",
+        "chapter": "cut / E L / = / E H /, draw / M N / ⊥ / E K /, and join radii",
+        "symbolic": "/ E L / = / E H /, / M N / ⊥ / E K /, join / M E /, / E N /, / F E /, / E G /",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-seg-ML",
+          "hl-seg-ML",
+          "el-seg-LN",
+          "hl-seg-LN",
+          "el-seg-MN",
+          "hl-seg-MN",
+          "el-seg-ME",
+          "hl-seg-ME",
+          "el-seg-EN",
+          "hl-seg-EN",
+          "el-seg-FE",
+          "hl-seg-FE",
+          "el-seg-EG",
+          "hl-seg-EG",
+          "el-pt-L",
+          "el-pt-M",
+          "el-pt-N",
+          "lbl-L",
+          "lbl-M",
+          "lbl-N"
+        ],
+        "equal_ids": [
+          "el-seg-EH",
+          "hl-seg-EH",
+          "el-seg-EL",
+          "hl-seg-EL"
+        ],
+        "tick_ids": [
+          "el-seg-EH",
+          "el-seg-EL"
+        ],
+        "clause_html": "<div class=\"clause-line\"><span class=\"g-tok\">cut_equal_segment</span>(<span class=\"g-tok\">/ E K /</span>, <span class=\"g-tok\">/ E H /</span>) → <span class=\"eq-tok\">/ E L / = / E H /</span></div><div class=\"clause-line\">Draw <span class=\"g-tok\">/ M N / ⊥ / E K /</span> at <span class=\"g-tok\">L</span>; join <span class=\"g-tok\">/ M E /</span>, <span class=\"g-tok\">/ E N /</span>, <span class=\"g-tok\">/ F E /</span>, <span class=\"g-tok\">/ E G /</span>.</div>",
+        "just_id": "G.21 • I.3, G.34 • I.11, G.14 • I.post.1",
+        "just_title": "Cut off / E L / = / E H / along / E K / (I.3) and erect the perpendicular chord / M N / (I.11)."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK III • PROP. 15",
+    "short_title": "diameter & chord inequality",
+    "g_id": "G.116",
+    "folio": "Folios 0042–0043 • pp. 36–37",
+    "enunciation": "Of straight lines in a circle the diameter is greatest, and of the rest the nearer to the centre is always greater than the more remote.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.116/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.116/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/15/",
+    "step_total": 9,
+    "subslides": [
+      {
+        "step_num": 4,
+        "step_kind": "ASSERT",
+        "chapter": "/ B C / = / M N / and / A D / = / M E / + / E N / > / M N / = / B C /",
+        "symbolic": "/ B C / = / M N /, / A D / = / M E / + / E N / > / M N / → / A D / > / B C /",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-tri-MEN",
+          "hl-tri-MEN",
+          "el-seg-AD",
+          "hl-seg-AD"
+        ],
+        "equal_ids": [
+          "el-seg-BC",
+          "hl-seg-BC",
+          "el-seg-MN",
+          "hl-seg-MN",
+          "el-seg-AE",
+          "hl-seg-AE",
+          "el-seg-ED",
+          "hl-seg-ED",
+          "el-seg-ME",
+          "hl-seg-ME",
+          "el-seg-EN",
+          "hl-seg-EN"
+        ],
+        "tick_ids": [
+          "el-seg-EH",
+          "el-seg-EL"
+        ],
+        "tick_2_ids": [
+          "el-seg-AE",
+          "el-seg-ED",
+          "el-seg-ME",
+          "el-seg-EN"
+        ],
+        "clause_html": "<div class=\"clause-line\">Since <span class=\"eq-tok\">/ E H / = / E L /</span>, <span class=\"eq-tok\">/ B C / = / M N /</span> by <span class=\"g-tok\">III.14</span>;</div><div class=\"clause-line\"><span class=\"eq-tok\">/ A D / = / M E / + / E N /</span> &gt; <span class=\"g-tok\">/ M N /</span> → <span class=\"g-tok\">/ A D / &gt; / B C /</span>.</div>",
+        "just_id": "G.114 • III.14, G.45 • I.20",
+        "just_title": "Chords equally distant from E are equal (III.14), and two sides of < M E N > exceed the third (I.20)."
+      },
+      {
+        "step_num": 5,
+        "step_kind": "ASSERT",
+        "chapter": "< M E N ) > < F E G ) → / M N / > / F G / → / B C / > / F G /",
+        "symbolic": "< M E N ) > < F E G ) → / M N / > / F G / → / B C / > / F G /",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-tri-MEN",
+          "hl-tri-MEN",
+          "el-tri-FEG",
+          "hl-tri-FEG",
+          "el-ang-MEN",
+          "hl-ang-MEN",
+          "el-ang-FEG",
+          "hl-ang-FEG",
+          "el-seg-FG",
+          "hl-seg-FG"
+        ],
+        "equal_ids": [
+          "el-seg-ME",
+          "hl-seg-ME",
+          "el-seg-EN",
+          "hl-seg-EN",
+          "el-seg-FE",
+          "hl-seg-FE",
+          "el-seg-EG",
+          "hl-seg-EG",
+          "el-seg-MN",
+          "hl-seg-MN",
+          "el-seg-BC",
+          "hl-seg-BC"
+        ],
+        "tick_2_ids": [
+          "el-seg-ME",
+          "el-seg-EN",
+          "el-seg-FE",
+          "el-seg-EG"
+        ],
+        "clause_html": "<div class=\"clause-line\">In <span class=\"g-tok\">&lt; M E N &gt;</span> and <span class=\"g-tok\">&lt; F E G &gt;</span>, <span class=\"g-tok\">&lt; M E N ) &gt; &lt; F E G )</span>;</div><div class=\"clause-line\">by <span class=\"g-tok\">I.24</span>, <span class=\"g-tok\">/ M N / &gt; / F G /</span>, so <span class=\"g-tok\">/ B C / &gt; / F G /</span>.</div>",
+        "just_id": "G.49 • I.24",
+        "just_title": "By the Hinge Theorem (I.24), equal radii containing the greater central angle < M E N ) subtend the greater chord."
+      },
+      {
+        "step_num": 6,
+        "step_kind": "∴",
+        "is_punchline": true,
+        "chapter": "diameter / A D / is greatest, and / B C / > / F G /",
+        "symbolic": "∴ / A D / > / B C / > / F G /",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-circle-ABCD",
+          "hl-circle-ABCD",
+          "el-seg-AD",
+          "hl-seg-AD",
+          "el-seg-FG",
+          "hl-seg-FG",
+          "el-pt-A",
+          "el-pt-D",
+          "el-pt-E"
+        ],
+        "equal_ids": [
+          "el-seg-BC",
+          "hl-seg-BC",
+          "el-seg-MN",
+          "hl-seg-MN",
+          "el-seg-EH",
+          "hl-seg-EH",
+          "el-seg-EL",
+          "hl-seg-EL"
+        ],
+        "tick_ids": [
+          "el-seg-EH",
+          "el-seg-EL"
+        ],
+        "clause_html": "<div class=\"clause-line\">∴ The diameter <span class=\"eq-tok\">/ A D /</span> is greatest,</div><div class=\"clause-line\">and the nearer chord <span class=\"eq-tok\">/ B C / &gt; / F G /</span>.</div>",
+        "just_id": "G.116 • III.15",
+        "just_title": "Of straight lines in a circle the diameter is greatest, and the nearer to the center exceeds the more remote (Q.E.D.)."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK III • PROP. 15",
+    "short_title": "diameter & chord inequality",
+    "g_id": "G.116",
+    "folio": "Folios 0042–0043 • pp. 36–37",
+    "enunciation": "Of straight lines in a circle the diameter is greatest, and of the rest the nearer to the centre is always greater than the more remote.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.116/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.116/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/15/",
+    "step_total": 9,
+    "widescreen_only": true,
+    "subslides": [
+      {
+        "step_num": 7,
+        "step_kind": "COMMENTARY",
+        "widescreen_only": true,
+        "chapter": "Euclid's rotational transfer / M N / vs. Simson's square comparison",
+        "symbolic": "Euclid (III.14 + I.24) vs. Simson (I.47: d₁ < d₂ ⇔ c₁ > c₂)",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-tri-MEN",
+          "hl-tri-MEN",
+          "el-tri-FEG",
+          "hl-tri-FEG",
+          "el-seg-FG",
+          "hl-seg-FG"
+        ],
+        "equal_ids": [
+          "el-seg-BC",
+          "hl-seg-BC",
+          "el-seg-MN",
+          "hl-seg-MN",
+          "el-seg-EH",
+          "hl-seg-EH",
+          "el-seg-EL",
+          "hl-seg-EL"
+        ],
+        "tick_ids": [
+          "el-seg-EH",
+          "el-seg-EL"
+        ],
+        "clause_html": "<div class=\"clause-line\"><strong>Rotational Transfer vs. Quadratic Inequality</strong></div><div class=\"clause-line\"><span class=\"eq-tok\">/ E H / = / E L / &lt; / E K / ⇒ / B C / = / M N / &gt; / F G /</span></div><div class=\"clause-line\" style=\"font-size:28px;color:#cbd5e1;\">Where Simson (following Theodosius, Sphaerica I.6) compares squares via I.47, Euclid rotates / B C / to the auxiliary chord / M N / perpendicular to / E K / so the Hinge Theorem (I.24) applies directly.</div>",
+        "just_tag": "✦ HEATH COMMENTARY",
+        "just_id": "Heath (1908) • Vol. II, p. 37",
+        "just_title": "Simson also supplies the converse: the greater chord in a circle lies nearer to the center."
+      },
+      {
+        "step_num": 8,
+        "step_kind": "GENEALOGY",
+        "widescreen_only": true,
+        "chapter": "G.116 dependency tree & symbolic model",
+        "symbolic": "G.4, G.10, G.11, G.14, G.21, G.33, G.45, G.49, G.61, G.114, G.115 → G.116",
+        "stage_html": "<div style=\"width:100%;height:100%;display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:36px 8px 8px 8px;align-items:stretch;\"><div style=\"background:rgba(11,14,21,0.92);border:1.5px solid rgba(56,189,248,0.45);border-radius:16px;padding:22px 24px;display:flex;flex-direction:column;justify-content:space-between;\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.12em;color:#38bdf8;\">◈ G-INDEX PREREQUISITES → G.116</div><div style=\"display:flex;flex-direction:column;gap:10px;margin:12px 0;\"><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.114 (III.14)</span><span style=\"color:#f4f1ea;\">equal chords equidistant</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #5ec27e;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.115 (III.def.5)</span><span style=\"color:#f4f1ea;\">greater distance from center</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.49 (I.24)</span><span style=\"color:#f4f1ea;\">hinge theorem</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.45 (I.20)</span><span style=\"color:#f4f1ea;\">triangle inequality</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #5ec27e;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.61 (I.def.17)</span><span style=\"color:#f4f1ea;\">diameter of circle</span></div></div><div style=\"background:rgba(232,184,90,0.16);border:1.5px solid #e8b85a;border-radius:10px;padding:11px 16px;text-align:center;font-family:'JetBrains Mono',monospace;font-size:17px;font-weight:700;color:#e8b85a;\">↓ G.116 (III.15) • segments circle diameter</div></div><div style=\"background:rgba(11,14,21,0.92);border:1.5px solid rgba(232,184,90,0.4);border-radius:16px;padding:22px 24px;display:flex;flex-direction:column;justify-content:space-between;\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.12em;color:#e8b85a;\">⚙ GEOMETOR.MODEL • G.116/g1.py</div><pre style=\"font-family:'JetBrains Mono',monospace;font-size:14.5px;line-height:1.48;color:#e2e8f0;background:rgba(7,9,14,0.85);padding:16px;border-radius:10px;border:1px solid rgba(148,163,184,0.25);overflow:hidden;\">model = Model(&quot;III.15&quot;)\nE = model.set_point(0, 0, ID=&quot;E&quot;)\nA = model.set_point(0, 1, ID=&quot;A&quot;)\nD = model.set_point(0, -1, ID=&quot;D&quot;)\nmodel.construct_circle(E, A)\n\n# Cut EL = EH along EK and draw MN ⊥ EK\nL = model.set_point(K.x * len_EH / len_EK, ...)\nmodel.set_polygon([M, E, N])\nmodel.set_polygon([F, E, G])</pre><div style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">67 total ancestor nodes in G-Index • Depth 16</div></div></div>",
+        "clause_html": "<div class=\"clause-line\"><span class=\"coincide-tok\">G.116</span> synthesizes <span class=\"g-tok\">11 direct prerequisites</span></div><div class=\"clause-line\">across <span class=\"g-tok\">67 total ancestor nodes</span> in the G-Index</div><div class=\"clause-line\" style=\"font-size:28px;color:#cbd5e1;\">Uniting III.14 (equidistant chords) with Book I's triangle inequality (G.45) and hinge theorem (G.49).</div>",
+        "just_tag": "◈ G-INDEX GENEALOGY",
+        "just_id": "G.116 • 11 Direct Rules",
+        "just_title": "Depends on G.4, G.10, G.11, G.14, G.21 (I.3), G.33, G.45 (I.20), G.49 (I.24), G.61 (I.def.17), G.114 (III.14), and G.115 (III.def.5)."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK III • PROP. 15",
+    "short_title": "diameter & chord inequality",
+    "g_id": "G.116",
+    "folio": "Folios 0042–0043 • pp. 36–37",
+    "enunciation": "Of straight lines in a circle the diameter is greatest, and of the rest the nearer to the centre is always greater than the more remote.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.116/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.116/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/15/",
+    "step_total": 9,
+    "widescreen_only": true,
+    "subslides": [
+      {
+        "step_num": 9,
+        "step_kind": "PARTICIPATE",
+        "widescreen_only": true,
+        "chapter": "explore the GEOMETOR Elements Codex & participate",
+        "symbolic": "geometor.github.io/elements",
+        "stage_html": "<div style=\"width:100%;height:100%;display:flex;flex-direction:column;justify-content:space-between;padding:42px 16px 12px 16px;gap:20px;\"><div style=\"background:linear-gradient(135deg,rgba(232,184,90,0.16) 0%,rgba(16,20,29,0.95) 100%);border:2px solid rgba(232,184,90,0.55);border-radius:18px;padding:28px 32px;display:flex;flex-direction:column;gap:12px;box-shadow:0 16px 40px rgba(0,0,0,0.6);\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.16em;color:#e8b85a;\">★ INTERACTIVE DIGITAL EDITION</div><div style=\"font-family:Georgia,serif;font-size:38px;font-weight:700;color:#f8f6f0;\">GEOMETOR • Elements Codex</div><div style=\"font-family:'JetBrains Mono',monospace;font-size:22px;color:#5ec27e;font-weight:700;\">https://geometor.github.io/elements/elements2/G.116/</div></div><div style=\"display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;flex:1;\"><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#e8b85a;font-weight:700;\">01 • PSEUDOCODE</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Hover-synced symbolic steps, signatures, and interactive SVG diagrams.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 1 • G.116</span></div><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#38bdf8;font-weight:700;\">02 • PYTHON MODEL</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Executable geometor.model scripts with exact algebraic coordinates.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 2 • g1.py</span></div><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#5ec27e;font-weight:700;\">03 • HEATH (1908)</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Complete classical translation, folio plates, and historical commentary.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 3 • Folios 0042–0043</span></div></div></div>",
+        "clause_html": "<div class=\"clause-line\">Explore the <span class=\"g-tok\">Elements Codex</span> &amp; <span class=\"eq-tok\">G-Index</span></div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Subscribe to <strong>@geometor</strong> for all 465 propositions</div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Share questions &amp; insights in the comments</div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Star &amp; contribute at <strong>github.com/geometor</strong></div>",
+        "just_tag": "★ PARTICIPATE & SUPPORT",
+        "just_id": "github.com/geometor/elements",
+        "just_title": "Open-source symbolic reconstruction of Euclid's Elements — links in the video description."
+      }
+    ]
+  }
+]

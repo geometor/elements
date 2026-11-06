@@ -1,0 +1,63 @@
+{
+  "IV.13": {
+    "subtype": "problem",
+    "args": [
+      ":g:`< A B C D E > <g1:< A B C D E >>`"
+    ],
+    "returns": [
+      ":g:`( G H K L M ) <g1:( G H K L M )>`"
+    ],
+    "given": "Equilateral and equiangular pentagon :g:`< A B C D E > <g1:< A B C D E >>`",
+    "contract": "Circle :g:`( G H K L M ) <g1:( G H K L M )>` is :term:`inscribed in <G.153>` regular pentagon :g:`< A B C D E > <g1:< A B C D E >>`",
+    "steps": [
+      [
+        "given",
+        [
+          "I.def.20",
+          "IV.def.5"
+        ],
+        "Equilateral and equiangular pentagon :g:`< A B C D E > <g1:< A B C D E >>`"
+      ],
+      [
+        "construct",
+        [
+          "I.9",
+          "I.post.1"
+        ],
+        "@fn(I.9)(:g:`< B C D ) <g1:< B C D )>`, :g:`< C D E ) <g1:< C D E )>`) → :g:`/ F C / <g1:/ F C />`, :g:`/ F D / <g1:/ F D />` meeting at :g:`F <g1:F>`; @fn(I.post.1)(:g:`F <g1:F>`, :g:`B <g1:B>`, :g:`A <g1:A>`, :g:`E <g1:E>`) → :g:`/ F B / <g1:/ F B />`, :g:`/ F A / <g1:/ F A />`, :g:`/ F E / <g1:/ F E />`"
+      ],
+      [
+        "construct",
+        [
+          "I.12"
+        ],
+        "@fn(I.12)(:g:`F <g1:F>`, :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ C D / <g1:/ C D />`, :g:`/ D E / <g1:/ D E />`, :g:`/ E A / <g1:/ E A />`) → perpendiculars :g:`/ F G / <g1:/ F G />`, :g:`/ F H / <g1:/ F H />`, :g:`/ F K / <g1:/ F K />`, :g:`/ F L / <g1:/ F L />`, :g:`/ F M / <g1:/ F M />`"
+      ],
+      [
+        "assert",
+        [
+          "I.4"
+        ],
+        ":g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ B C / = g1:/ C D />` :g:`/ C D / <g1:/ C D />`, :g:`/ F C / <g1:/ F C />` common, :g:`< B C F ) <g1:< B C F )>` :eq:`= <g1:< B C F ) = g1:< D C F )>` :g:`< D C F ) <g1:< D C F )>` → :g:`< C B F ) <g1:< C B F )>` :eq:`= <g1:< C B F ) = g1:< C D F )>` :g:`< C D F ) <g1:< C D F )>` → :g:`< A B F ) <g1:< A B F )>` :eq:`= <g1:< A B F ) = g1:< C B F )>` :g:`< C B F ) <g1:< C B F )>`, and :g:`/ F B / <g1:/ F B />`, :g:`/ F A / <g1:/ F A />`, :g:`/ F E / <g1:/ F E />` bisect :g:`< A B C ) <g1:< A B C )>`, :g:`< B A E ) <g1:< B A E )>`, :g:`< A E D ) <g1:< A E D )>`"
+      ],
+      [
+        "assert",
+        [
+          "I.def.10",
+          "I.26"
+        ],
+        "In :g:`< F H C > <g1:< F H C >>`, :g:`< F K C > <g1:< F K C >>`: :g:`< B C F ) <g1:< B C F )>` :eq:`= <g1:< B C F ) = g1:< D C F )>` :g:`< D C F ) <g1:< D C F )>`, right angles :g:`< F H C ) <g1:< F H C )>` :eq:`= <g1:< F H C ) = g1:< F K C )>` :g:`< F K C ) <g1:< F K C )>`, :g:`/ F C / <g1:/ F C />` common → :g:`/ F G / <g1:/ F G />` :eq:`= <g1:/ F G / = g1:/ F H / = g1:/ F K / = g1:/ F L / = g1:/ F M />` :g:`/ F H / <g1:/ F H />` = :g:`/ F K / <g1:/ F K />` = :g:`/ F L / <g1:/ F L />` = :g:`/ F M / <g1:/ F M />`"
+      ],
+      [
+        "conclude",
+        [
+          "I.post.3",
+          "I.def.15",
+          "III.16",
+          "IV.def.5"
+        ],
+        "@fn(I.post.3)(:g:`F <g1:F>`, :g:`G <g1:G>`) → :g:`( G H K L M ) <g1:( G H K L M )>` passes through :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`K <g1:K>`, :g:`L <g1:L>`, :g:`M <g1:M>` and touches all five sides → :g:`( G H K L M ) <g1:( G H K L M )>` is inscribed in :g:`< A B C D E > <g1:< A B C D E >>`"
+      ]
+    ]
+  }
+}

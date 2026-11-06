@@ -1,0 +1,61 @@
+{
+  "voice_id": "voice_xdhacg1pn1cq",
+  "audio_wav": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_i/32/I_32.wav",
+  "total_duration_sec": 90.98,
+  "segments": [
+    {
+      "index": 0,
+      "bell": "bell:proposition",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Euclid's Elements, Book One, Proposition Thirty-Two. In any triangle, an exterior angle equals the sum of the two opposite interior angles, and the three interior angles sum to two right angles. Let A B C be a triangle, and let side B C be extended to D. We prove that the exterior angle A C D equals the sum of the opposite interior angles C A B and A B C, and that the three interior angles A B C, B C A, and C A B sum to two right angles.",
+      "start_sec": 0.0,
+      "end_sec": 27.29,
+      "duration_sec": 27.29,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Euclid's Elements, Book One, Proposition Thirty-Two. In any triangle, an exterior angle equals the sum of the two opposite interior angles, and the three interior angles sum to two right angles. Let A B C be a triangle, and let side B C be extended to D. We prove that the exterior angle A C D equals the sum of the opposite interior angles C A B and A B C, and that the three interior angles A B C, B C A, and C A B sum to two right angles.",
+          "start_sec": 0.0,
+          "end_sec": 27.29,
+          "duration_sec": 27.29
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "bell": "bell:construction",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "By Proposition Thirty-One, through point C, construct segment C E parallel to segment A B.",
+      "start_sec": 27.29,
+      "end_sec": 34.0,
+      "duration_sec": 6.71,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "By Proposition Thirty-One, through point C, construct segment C E parallel to segment A B.",
+          "start_sec": 27.29,
+          "end_sec": 34.0,
+          "duration_sec": 6.71
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "bell": "bell:insight",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Since segment A B is parallel to segment C E and transversal A C falls upon them, by Proposition Twenty-Nine, the alternate interior angles C A B and A C E are equal. Again, since segment A B is parallel to segment C E and line B D falls upon them, the exterior angle E C D equals the opposite interior angle A B C. Adding these equals, the whole exterior angle A C D equals the sum of the two opposite interior angles C A B and A B C. Now add the interior angle B C A to each. Then the sum of angles A C D and B C A equals the sum of the three interior angles A B C, B C A, and C A B. Yet by Proposition Thirteen, the adjacent angles A C D and B C A on line B D sum to two right angles. Therefore the three interior angles of triangle A B C equal two right angles, as was required to prove.",
+      "start_sec": 34.0,
+      "end_sec": 90.98,
+      "duration_sec": 56.98,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Since segment A B is parallel to segment C E and transversal A C falls upon them, by Proposition Twenty-Nine, the alternate interior angles C A B and A C E are equal. Again, since segment A B is parallel to segment C E and line B D falls upon them, the exterior angle E C D equals the opposite interior angle A B C. Adding these equals, the whole exterior angle A C D equals the sum of the two opposite interior angles C A B and A B C. Now add the interior angle B C A to each. Then the sum of angles A C D and B C A equals the sum of the three interior angles A B C, B C A, and C A B. Yet by Proposition Thirteen, the adjacent angles A C D and B C A on line B D sum to two right angles. Therefore the three interior angles of triangle A B C equal two right angles, as was required to prove.",
+          "start_sec": 34.0,
+          "end_sec": 90.98,
+          "duration_sec": 56.98
+        }
+      ]
+    }
+  ]
+}

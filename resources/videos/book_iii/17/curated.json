@@ -1,0 +1,57 @@
+{
+  "III.17": {
+    "subtype": "problem",
+    "args": [
+      ":g:`A <g1:A>`",
+      ":g:`( B C D ) <g1:( B C D )>`"
+    ],
+    "returns": [
+      ":g:`/ A B / <g1:/ A B />`"
+    ],
+    "given": ":g:`A <g1:A>`, :g:`( B C D ) <g1:( B C D )>`",
+    "contract": ":g:`/ A B / <g1:/ A B />` touches :g:`( B C D ) <g1:( B C D )>` at :g:`B <g1:B>`",
+    "steps": [
+      [
+        "given",
+        [
+          "I.def.1",
+          "I.def.15"
+        ],
+        ":g:`A <g1:A>`, :g:`( B C D ) <g1:( B C D )>`"
+      ],
+      [
+        "construct",
+        [
+          "III.1",
+          "I.post.1",
+          "I.post.3"
+        ],
+        "@fn(III.1)(:g:`( B C D ) <g1:( B C D )>`) → :g:`E <g1:E>`, @fn(I.post.1)(:g:`A <g1:A>`, :g:`E <g1:E>`) → :g:`/ A E / <g1:/ A E />` (:g:`D <g1:D>` = :g:`/ A E / <g1:/ A E />` ∩ :g:`( B C D ) <g1:( B C D )>`), @fn(I.post.3)(:g:`E <g1:E>`, :g:`A <g1:A>`) → :g:`( A F G ) <g1:( A F G )>`"
+      ],
+      [
+        "construct",
+        [
+          "I.11",
+          "I.post.1"
+        ],
+        ":g:`/ D F / <g1:/ D F />` ⊥ :g:`/ E A / <g1:/ E A />` (:g:`F <g1:F>` ∈ :g:`( A F G ) <g1:( A F G )>`), @fn(I.post.1)(:g:`E <g1:E>`, :g:`F <g1:F>`) → :g:`/ E F / <g1:/ E F />` (:g:`B <g1:B>` = :g:`/ E F / <g1:/ E F />` ∩ :g:`( B C D ) <g1:( B C D )>`), @fn(I.post.1)(:g:`A <g1:A>`, :g:`B <g1:B>`) → :g:`/ A B / <g1:/ A B />`"
+      ],
+      [
+        "assert",
+        [
+          "I.def.15",
+          "I.4"
+        ],
+        ":g:`/ E A / <g1:/ E A />` :eq:`= <g1:/ E A / = g1:/ E F />` :g:`/ E F / <g1:/ E F />`, :g:`/ E D / <g1:/ E D />` :eq:`= <g1:/ E D / = g1:/ E B />` :g:`/ E B / <g1:/ E B />`, common :g:`< D E F ) <g1:< D E F )>` → :g:`< D E F > <g1:< D E F >>` ≃ :g:`< B E A > <g1:< B E A >>`, :g:`< E B A ) <g1:< E B A )>` :eq:`= <g1:< E D F ) = g1:< E B A )>` :g:`< E D F ) <g1:< E D F )>` = right angle"
+      ],
+      [
+        "conclude",
+        [
+          "III.16",
+          "III.def.2"
+        ],
+        ":g:`/ E B / <g1:/ E B />` is a radius and :g:`< E B A ) <g1:< E B A )>` is right → :g:`/ A B / <g1:/ A B />` touches :g:`( B C D ) <g1:( B C D )>` at :g:`B <g1:B>`"
+      ]
+    ]
+  }
+}

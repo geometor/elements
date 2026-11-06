@@ -1,0 +1,66 @@
+{
+  "III.33": {
+    "subtype": "problem",
+    "args": [
+      ":g:`/ A B / <g1:/ A B />`",
+      ":g:`< C ) <g1:< C )>`"
+    ],
+    "returns": [
+      ":g:`( A E B ) <g1:( A E B )>`"
+    ],
+    "given": ":g:`/ A B / <g1:/ A B />`, :g:`< C ) <g1:< C )>`",
+    "contract": ":g:`< A E B ) <g1:< A E B )>` in segment :g:`( A E B ) <g1:( A E B )>` on :g:`/ A B / <g1:/ A B />` :eq:`= <g1:< A E B ) = g1:< C )>` :g:`< C ) <g1:< C )>`",
+    "steps": [
+      [
+        "given",
+        [
+          "I.def.4",
+          "I.def.9",
+          "III.def.6"
+        ],
+        ":g:`/ A B / <g1:/ A B />`, rectilineal angle :g:`< C ) <g1:< C )>`"
+      ],
+      [
+        "construct",
+        [
+          "I.23",
+          "I.11",
+          "I.10",
+          "I.post.1"
+        ],
+        "@fn(I.23)(:g:`/ A B / <g1:/ A B />`, :g:`A <g1:A>`, :g:`< C ) <g1:< C )>`) → :g:`< B A D ) <g1:< B A D )>` :eq:`= <g1:< B A D ) = g1:< C )>` :g:`< C ) <g1:< C )>`, @fn(I.11)(:g:`/ D A / <g1:/ D A />`, :g:`A <g1:A>`) → :g:`/ A E / <g1:/ A E />` ⊥ :g:`/ D A / <g1:/ D A />`, @fn(I.10)(:g:`/ A B / <g1:/ A B />`) → :g:`F <g1:F>`, @fn(I.11)(:g:`/ A B / <g1:/ A B />`, :g:`F <g1:F>`) → :g:`/ F G / <g1:/ F G />` ⊥ :g:`/ A B / <g1:/ A B />`, @fn(I.post.1)(:g:`G <g1:G>`, :g:`B <g1:B>`) → :g:`/ G B / <g1:/ G B />`"
+      ],
+      [
+        "construct",
+        [
+          "I.4",
+          "I.post.3",
+          "I.post.1"
+        ],
+        ":g:`/ A F / <g1:/ A F />` :eq:`= <g1:/ A F / = g1:/ F B />` :g:`/ F B / <g1:/ F B />`, :g:`< A F G ) <g1:< A F G )>` :eq:`= <g1:< A F G ) = g1:< B F G )>` :g:`< B F G ) <g1:< B F G )>` → :g:`/ A G / <g1:/ A G />` :eq:`= <g1:/ A G / = g1:/ G B />` :g:`/ G B / <g1:/ G B />`; @fn(I.post.3)(:g:`G <g1:G>`, :g:`A <g1:A>`) → :g:`( A B E ) <g1:( A B E )>`, @fn(I.post.1)(:g:`E <g1:E>`, :g:`B <g1:B>`) → :g:`/ E B / <g1:/ E B />`"
+      ],
+      [
+        "assert",
+        [
+          "III.16"
+        ],
+        ":g:`/ A D / <g1:/ A D />` ⊥ diameter :g:`/ A E / <g1:/ A E />` at :g:`A <g1:A>` → :g:`/ A D / <g1:/ A D />` touches :g:`( A B E ) <g1:( A B E )>` at :g:`A <g1:A>`"
+      ],
+      [
+        "assert",
+        [
+          "III.32"
+        ],
+        "tangent :g:`/ A D / <g1:/ A D />` and chord :g:`/ A B / <g1:/ A B />` at :g:`A <g1:A>` → :g:`< D A B ) <g1:< B A D )>` :eq:`= <g1:< B A D ) = g1:< A E B )>` :g:`< A E B ) <g1:< A E B )>` in alternate segment :g:`( A E B ) <g1:( A E B )>`"
+      ],
+      [
+        "conclude",
+        [
+          "I.cn.1",
+          "III.31"
+        ],
+        ":g:`< B A D ) <g1:< B A D )>` :eq:`= <g1:< B A D ) = g1:< C )>` :g:`< C ) <g1:< C )>` → :g:`< A E B ) <g1:< A E B )>` :eq:`= <g1:< A E B ) = g1:< C )>` :g:`< C ) <g1:< C )>` in segment :g:`( A E B ) <g1:( A E B )>` on :g:`/ A B / <g1:/ A B />`"
+      ]
+    ]
+  }
+}

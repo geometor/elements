@@ -1,0 +1,33 @@
+{
+  "prop_id": "BOOK III \u2022 PROP. 37",
+  "short_code": "III.37",
+  "g_id": "G.145",
+  "version": 2,
+  "enunciation": "If a point be taken outside a circle and from the point there fall on the circle two straight lines, if one of them cut the circle, and the other fall on it, and if further the rectangle contained by the whole of the straight line which cuts the circle and the straight line intercepted on it outside between the point and the convex circumference be equal to the square on the straight line which falls on the circle, the straight line which falls on it will touch the circle.",
+  "title_1080p": "III.37 \u2022 if a point be taken outside a circle and from the point there fall on the circle two str...",
+  "title_short": "III.37 \u2022 if a point be taken outside a circle and from the point there fall on the circle two str...",
+  "description": "\u201cIf a point be taken outside a circle and from the point there fall on the circle two straight lines, if one of them cut the circle, and the other fall on it, and if further the rectangle contained by the whole of the straight line which cuts the circle and the straight line intercepted on it outside between the point and the convex circumference be equal to the square on the straight line which falls on the circle, the straight line which falls on it will touch the circle.\u201d\n\u2014 Euclid's Elements, BOOK III \u2022 PROP. 37 (G.145)\n\n00:00 1 \u00b7 GIVEN: rect(/ A D /, / C D /) = sq(/ D B /) \u2192 tangent(/ D B /, ( A B C ))\n00:32 2 \u00b7 CONSTRUCT: / D E / = tangent_to_circle(D, ( A B C )), F = find_circle_center(( A B C )), / F E /, / F B /, / F D /\n00:43 3 \u00b7 ASSERT: / F E / \u22a5 / D E / \u2192 \u27e8 F E D ) = right\n00:53 4 \u00b7 ASSERT: rect(/ A D /, / C D /) = sq(/ D E /) = sq(/ D B /) \u2192 / D E / = / D B /\n01:08 5 \u00b7 ASSERT: / F E / = / F B /, / D E / = / D B / \u2192 \u27e8 F B D \u27e9 \u2243 \u27e8 F E D \u27e9, \u27e8 D B F ) = \u27e8 F E D ) = right\n01:23 6 \u00b7 \u2234: \u27e8 D B F ) = right \u2192 tangent(/ D B /, ( A B C ))\n01:38 7 \u00b7 COMMENTARY: rect(/ A D /, / C D /) = sq(/ D B /) \u27f7 tangent(/ D B /, ( A B C ))\n01:56 8 \u00b7 GENEALOGY: G.29 (I.8), G.118 (III.16), G.144 (III.36) \u2192 G.145 (III.37) \u2192 G.156 (IV.10)\n02:14 9 \u00b7 PARTICIPATE: geometor.github.io/elements/elements2/G.145/\n\nExplore the interactive Book Codex, symbolic model, and dependency tree:\n\u2022 Elements Codex (G.145): https://geometor.github.io/elements/elements2/G.145/\n\u2022 Heath Edition (III.37): https://geometor.github.io/euclid/heath/volume_I/book_iii/propositions/37/\n\u2022 GitHub: https://github.com/geometor/elements\n\nGEOMETOR \u2022 G.145 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid III.37",
+    "G.145",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_iii/propositions/37/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.145/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/37/III_37_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/37/III_37_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/37/III_37.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/37/III_37_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/37/III_37_short_thumb.png"
+  }
+}

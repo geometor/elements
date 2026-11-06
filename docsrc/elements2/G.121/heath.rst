@@ -1,12 +1,12 @@
 :canonical_id: G.121
 :original_id: III.19
-:title: G.121 segment touch circle
+:title: G.121 perpendicular to tangent at contact passes through center
 :volume: II
 :book: III
 :type: prop
 
-G.121 segment touch circle — Heath
-==================================
+G.121 perpendicular to tangent at contact passes through center — Heath
+=======================================================================
 
 .. rubric:: `III.19 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/19/>`_
 
@@ -104,8 +104,8 @@ Dependency Graph
      "G.44" [label="G.44", tooltip="G.44 (I.19): In any triangle, the greater angle is subtended by the greater side.", fillcolor="#222244", URL="../G.44/index.html", target="_top"];
      "G.77" [label="G.77", tooltip="G.77 (I.def.12): An acute angle is less than a right angle.", fillcolor="#224422", URL="../G.77/index.html", target="_top"];
      "G.111" [label="G.111", tooltip="G.111 (III.def.2): Asegment is said totouch a circle which, meeting thecircle and being produced, does not cut the circle.", fillcolor="#224422", URL="../G.111/index.html", target="_top"];
-     "G.120" [label="G.120", tooltip="G.120 (III.18): If a segment touch a circle, and a segment be joined from the center to the point of contact, the segment so joined is perpendicular to the tangent.", fillcolor="#222244", URL="../G.120/index.html", target="_top"];
-     "G.121" [label="G.121", tooltip="G.121 (III.19): If a segment touch a circle, and from the point of contact a segment be drawn at right angles to the tangent, the center of the circle is on the segment so drawn.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.120" [label="G.120", tooltip="G.120 (III.18): If a line touches a circle, the segment joined from the center to the point of contact is perpendicular to the tangent.", fillcolor="#222244", URL="../G.120/index.html", target="_top"];
+     "G.121" [label="G.121", tooltip="G.121 (III.19): If a line touches a circle, the line drawn at right angles to the tangent from the point of contact passes through the center of the circle.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -138,6 +138,8 @@ Dependency Graph
      "G.34" -> "G.2";
      "G.37" -> "G.2";
      "G.40" -> "G.2";
+     "G.120" -> "G.2";
+     "G.121" -> "G.2";
      "G.4" -> "G.3";
      "G.6" -> "G.3";
      "G.8" -> "G.3";
@@ -183,6 +185,7 @@ Dependency Graph
      "G.20" -> "G.10";
      "G.21" -> "G.10";
      "G.111" -> "G.10";
+     "G.120" -> "G.10";
      "G.121" -> "G.10";
      "G.15" -> "G.11";
      "G.17" -> "G.11";
@@ -214,6 +217,7 @@ Dependency Graph
      "G.34" -> "G.14";
      "G.41" -> "G.14";
      "G.43" -> "G.14";
+     "G.121" -> "G.14";
      "G.17" -> "G.15";
      "G.20" -> "G.15";
      "G.21" -> "G.15";
@@ -255,16 +259,19 @@ Dependency Graph
      "G.43" -> "G.22";
      "G.44" -> "G.22";
      "G.77" -> "G.22";
-     "G.120" -> "G.22";
      "G.24" -> "G.23";
      "G.29" -> "G.23";
      "G.25" -> "G.24";
      "G.32" -> "G.24";
      "G.41" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
+     "G.120" -> "G.26";
+     "G.121" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -281,10 +288,13 @@ Dependency Graph
      "G.121" -> "G.33";
      "G.37" -> "G.34";
      "G.37" -> "G.36";
+     "G.42" -> "G.36";
      "G.40" -> "G.37";
      "G.42" -> "G.37";
      "G.40" -> "G.38";
+     "G.121" -> "G.38";
      "G.41" -> "G.40";
+     "G.42" -> "G.41";
      "G.43" -> "G.41";
      "G.120" -> "G.42";
      "G.44" -> "G.43";

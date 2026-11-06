@@ -1,0 +1,75 @@
+1
+00:00:00,420 --> 00:00:02,115
+Book Three, Proposition Seven.
+
+2
+00:00:02,115 --> 00:00:26,290
+If on the diameter of a circle a point be taken which is not the center of the circle, and from the point segments fall upon the circle, that will be greatest on which the center is, the remainder of the same diameter will be least, of the rest the nearer to the segment through the center is always greater than the more remote, and only two equal segments will fall from the point on the circle, one on each side of the least.
+
+3
+00:00:26,290 --> 00:00:34,650
+Let A B C D be a circle with diameter A D and center E, let F be a point on A D other than E, and from F let F B, F C, and F G fall upon the circle.
+
+4
+00:00:35,070 --> 00:00:39,473
+Join the radii B E, C E, and G E by Postulate One.
+
+5
+00:00:39,473 --> 00:00:49,160
+Then on E F at the center E, construct the angle F E H equal to angle G E F by One Twenty-Three, and join F H.
+
+6
+00:00:49,580 --> 00:00:55,349
+In triangle B E F, the two sides E B and E F are greater than B F by One Twenty.
+
+7
+00:00:55,349 --> 00:01:02,489
+Since radius A E equals E B, the whole segment F A equals E B plus E F, so F A is greater than F B.
+
+8
+00:01:02,489 --> 00:01:19,797
+Moreover, in triangles B E F and C E F, radii B E and C E are equal, E F is common, and angle B E F is greater than angle C E F; by the Hinge Theorem, One Twenty-Four, F B is greater than F C, and by the same reason F C is greater than F G.
+
+9
+00:01:19,797 --> 00:01:25,783
+Next, in triangle G E F, G F plus F E is greater than radius E G, which equals E D.
+
+10
+00:01:25,783 --> 00:01:31,048
+Subtracting E F from each leaves F G greater than F D; thus F D is least.
+
+11
+00:01:31,048 --> 00:01:41,577
+Because G E equals E H, E F is common, and angle G E F equals angle F E H, triangles G E F and H E F are congruent by One Four, so F G equals F H.
+
+12
+00:01:41,577 --> 00:01:53,981
+If any third segment F K were also equal to F G, then F K would equal F H—making the nearer to the segment through the center equal to the more remote, which is impossible.
+
+13
+00:01:53,981 --> 00:02:06,097
+Therefore, F A is greatest, F D is least, nearer segments exceed more remote ones, and only two equal segments fall from F on the circle, one on each side of the least.
+
+14
+00:02:06,097 --> 00:02:07,900
+As was required to prove.
+
+15
+00:02:08,320 --> 00:02:17,125
+Proposition Three Seven establishes the strict monotonicity and bilateral symmetry of distance from an interior eccentric point to a circle.
+
+16
+00:02:17,125 --> 00:02:27,063
+As Heath and De Morgan observe, Euclid reduces circular distance comparison to the triangle inequality of One Twenty and the Hinge Theorem of One Twenty-Four.
+
+17
+00:02:27,063 --> 00:02:37,000
+In the GEOMETOR G-Index, node G one-hundred-five unites forty-five ancestor nodes from Book One into a single metric law for eccentric points within a circle.
+
+18
+00:02:37,420 --> 00:02:51,120
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Seven in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+19
+00:02:51,120 --> 00:02:58,780
+Subscribe to at geometor, share your questions in the comments, and star our repositories at github dot com slash geometor.

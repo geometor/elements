@@ -1,0 +1,33 @@
+{
+  "prop_id": "BOOK III \u2022 PROP. 17",
+  "short_code": "III.17",
+  "g_id": "G.119",
+  "version": 2,
+  "enunciation": "From a given point to draw a straight line touching a given circle.",
+  "title_1080p": "III.17 \u2022 draw a tangent to a circle from a point \u2022 Euclid's Elements",
+  "title_short": "III.17 \u2022 draw a tangent to a circle from a point \u2022 Euclid's Elements",
+  "description": "\u201cFrom a given point to draw a straight line touching a given circle.\u201d\n\u2014 Euclid's Elements, BOOK III \u2022 PROP. 17 (G.119)\n\n00:00 1 \u00b7 GIVEN: given point A and circle ( B C D )\n00:16 2 \u00b7 CONSTRUCT: find center E, join / A E /, and describe concentric circle ( A F G )\n00:26 3 \u00b7 CONSTRUCT: draw / D F / \u22a5 / E A /; join / E F / cutting ( B C D ) at B, and join / A B /\n00:36 4 \u00b7 ASSERT: / E A / = / E F /, / E B / = / E D / \u2192 \u27e8 D E F \u27e9 \u2243 \u27e8 B E A \u27e9 \u2192 \u27e8 E B A ) = right\n00:58 5 \u00b7 \u2234: from A, segment / A B / has been drawn touching circle ( B C D )\n01:20 6 \u00b7 COMMENTARY: Heron's twin tangents & the III.31 semicircle shortcut\n01:40 7 \u00b7 GENEALOGY: G.119 dependency tree & symbolic model\n02:00 8 \u00b7 PARTICIPATE: explore the GEOMETOR Elements Codex & participate\n\nExplore the interactive Book Codex, symbolic model, and dependency tree:\n\u2022 Elements Codex (G.119): https://geometor.github.io/elements/elements2/G.119/\n\u2022 Heath Edition (III.17): https://geometor.github.io/euclid/heath/volume_I/book_iii/propositions/17/\n\u2022 GitHub: https://github.com/geometor/elements\n\nGEOMETOR \u2022 G.119 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid III.17",
+    "G.119",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_iii/propositions/17/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.119/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/17/III_17_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/17/III_17_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/17/III_17.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/17/III_17_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/17/III_17_short_thumb.png"
+  }
+}

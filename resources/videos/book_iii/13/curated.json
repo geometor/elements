@@ -1,0 +1,58 @@
+{
+  "III.13": {
+    "subtype": "theorem",
+    "args": [
+      ":g:`( A B D C ) <g1:( G B )>`",
+      ":g:`( E B F D ) <g1:( H B )>`",
+      ":g:`( A C K ) <g1:( A C K )>`"
+    ],
+    "returns": [],
+    "given": "circles :g:`( A B D C ) <g1:( G B )>`, :g:`( E B F D ) <g1:( H B )>` (internal) or :g:`( A B D C ) <g1:( G B )>`, :g:`( A C K ) <g1:( A C K )>` (external) touching",
+    "contract": "|( C₁ ) ∩ ( C₂ )| ≤ 1",
+    "steps": [
+      [
+        "given",
+        [
+          "III.def.3"
+        ],
+        "assume :g:`( A B D C ) <g1:( G B )>` and :g:`( E B F D ) <g1:( H B )>` touch internally at two points :g:`B <g1:B>`, :g:`D <g1:D>`"
+      ],
+      [
+        "construct",
+        [
+          "I.def.16",
+          "III.11"
+        ],
+        "center(:g:`( A B D C ) <g1:( G B )>`) = :g:`G <g1:G>`, center(:g:`( E B F D ) <g1:( H B )>`) = :g:`H <g1:H>` → @fn(III.11)(:g:`G <g1:G>`, :g:`H <g1:H>`) → :g:`/ B G H D / <g1:/ B D />`"
+      ],
+      [
+        "assert",
+        [
+          "I.def.15",
+          "I.cn.5"
+        ],
+        ":g:`/ B G / <g1:/ B G />` :eq:`= <g1:/ B G / = g1:/ G D />` :g:`/ G D / <g1:/ G D />` > :g:`/ H D / <g1:/ H D />` → :g:`/ B H / <g1:/ B H />` ≫ :g:`/ H D / <g1:/ H D />`, but :g:`/ B H / <g1:/ B H />` :eq:`= <g1:/ B H / = g1:/ H D />` :g:`/ H D / <g1:/ H D />` ⇒⇐"
+      ],
+      [
+        "construct",
+        [
+          "I.post.1"
+        ],
+        "assume :g:`( A C K ) <g1:( A C K )>` and :g:`( A B D C ) <g1:( G B )>` touch externally at two points :g:`A <g1:A>`, :g:`C <g1:C>` → :g:`/ A C / <g1:/ A C />`"
+      ],
+      [
+        "assert",
+        [
+          "III.2",
+          "III.def.3"
+        ],
+        "@fn(III.2)(:g:`A <g1:A>`, :g:`C <g1:C>`) → :g:`/ A C / <g1:/ A C />` inside both :g:`( A B D C ) <g1:( G B )>` and :g:`( A C K ) <g1:( A C K )>`, contradicting external contact ⇒⇐"
+      ],
+      [
+        "conclude",
+        [],
+        "a circle does not touch a circle at more points than one, whether internally or externally"
+      ]
+    ]
+  }
+}

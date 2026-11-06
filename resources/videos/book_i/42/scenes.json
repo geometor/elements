@@ -1,0 +1,263 @@
+[
+  {
+    "bell": "proposition",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 42",
+        "g_id": "G.71",
+        "folio": "Folio 0353–0354 • p. 339",
+        "enunciation": "To construct, in a given rectilineal angle, a parallelogram equal to a given triangle.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0353.g2.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0353.g2.png",
+        "step_num": 1,
+        "total_steps": 7,
+        "step_kind": "GIVEN",
+        "symbolic": "< A B C >, < D )",
+        "clause_html": "<span class=\"g-tok\">&lt; A B C &gt;</span>, <span class=\"g-tok\">&lt; D )</span>",
+        "just_id": "GIVEN",
+        "just_title": "construct: < F E C G > = < A B C >",
+        "visible_ids": [
+          "el-poly-ABC",
+          "el-seg-AB", "el-seg-BC", "el-seg-AC",
+          "el-seg-DD1", "el-seg-DD2", "el-ang-D1DD2",
+          "hl-poly-ABC", "hl-seg-AB", "hl-seg-BC", "hl-seg-AC",
+          "hl-seg-DD1", "hl-seg-DD2", "hl-ang-D1DD2", "hl-arc-D1DD2",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D"
+        ],
+        "active_ids": [
+          "hl-poly-ABC", "hl-seg-AB", "hl-seg-BC", "hl-seg-AC",
+          "hl-seg-DD1", "hl-seg-DD2", "hl-ang-D1DD2", "hl-arc-D1DD2",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D"
+        ],
+        "equal_ids": []
+      }
+    ]
+  },
+  {
+    "bell": "construction",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 42",
+        "g_id": "G.71",
+        "folio": "Folio 0353–0354 • p. 339",
+        "enunciation": "To construct, in a given rectilineal angle, a parallelogram equal to a given triangle.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0353.g2.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0353.g2.png",
+        "step_num": 2,
+        "total_steps": 7,
+        "step_kind": "CONSTRUCT",
+        "symbolic": "bisect_segment(/ B C /) → E (/ B E / = / E C /), segment(A, E) → / A E /",
+        "clause_html": "<span class=\"fn-tok\">bisect_segment</span>(<span class=\"g-tok\">/ B C /</span>) → <span class=\"g-tok\">E</span> (<span class=\"g-tok\">/ B E /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ E C /</span>), <span class=\"fn-tok\">segment</span>(<span class=\"g-tok\">A</span>, <span class=\"g-tok\">E</span>) → <span class=\"g-tok\">/ A E /</span>",
+        "just_id": "G.32 • I.10, G.14 • I.Post.1",
+        "just_title": "bisect_segment",
+        "visible_ids": [
+          "el-poly-ABC", "el-poly-ABE", "el-poly-AEC",
+          "el-seg-AB", "el-seg-BC", "el-seg-BE", "el-seg-EC", "el-seg-AC", "el-seg-AE",
+          "el-seg-DD1", "el-seg-DD2", "el-ang-D1DD2",
+          "hl-seg-AE", "hl-seg-BE", "hl-seg-EC",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-E", "el-pt-D",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-E", "lbl-D"
+        ],
+        "active_ids": [
+          "hl-seg-AE",
+          "el-pt-A", "el-pt-E", "lbl-A", "lbl-E"
+        ],
+        "equal_ids": [
+          "hl-seg-BE", "hl-seg-EC"
+        ],
+        "tick_ids": [
+          "hl-seg-BE", "hl-seg-EC"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 42",
+        "g_id": "G.71",
+        "folio": "Folio 0353–0354 • p. 339",
+        "enunciation": "To construct, in a given rectilineal angle, a parallelogram equal to a given triangle.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0353.g2.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0353.g2.png",
+        "step_num": 3,
+        "total_steps": 7,
+        "step_kind": "CONSTRUCT",
+        "symbolic": "copy_angle(/ E C /, E, < D )) → < C E F ) (< C E F ) = < D ))",
+        "clause_html": "<span class=\"fn-tok\">copy_angle</span>(<span class=\"g-tok\">/ E C /</span>, <span class=\"g-tok\">E</span>, <span class=\"g-tok\">&lt; D )</span>) → <span class=\"g-tok\">&lt; C E F )</span> (<span class=\"g-tok\">&lt; C E F )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; D )</span>)",
+        "just_id": "G.48 • I.23",
+        "just_title": "copy_angle",
+        "visible_ids": [
+          "el-poly-ABC", "el-poly-ABE", "el-poly-AEC",
+          "el-seg-AB", "el-seg-BC", "el-seg-BE", "el-seg-EC", "el-seg-AC", "el-seg-AE", "el-seg-EF",
+          "el-seg-DD1", "el-seg-DD2", "el-ang-D1DD2", "el-ang-CEF",
+          "hl-seg-EF", "hl-seg-EC", "hl-seg-BE",
+          "hl-ang-CEF", "hl-ang-D1DD2", "hl-arc-CEF", "hl-arc-D1DD2",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-E", "el-pt-F", "el-pt-D",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-E", "lbl-F", "lbl-D"
+        ],
+        "active_ids": [
+          "hl-seg-EF", "hl-seg-EC",
+          "el-pt-E", "el-pt-F", "lbl-E", "lbl-F", "lbl-D"
+        ],
+        "equal_ids": [
+          "hl-ang-CEF", "hl-ang-D1DD2", "hl-arc-CEF", "hl-arc-D1DD2",
+          "hl-seg-BE", "hl-seg-EC"
+        ],
+        "tick_ids": [
+          "hl-seg-BE", "hl-seg-EC"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 42",
+        "g_id": "G.71",
+        "folio": "Folio 0353–0354 • p. 339",
+        "enunciation": "To construct, in a given rectilineal angle, a parallelogram equal to a given triangle.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0353.g2.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0353.g2.png",
+        "step_num": 4,
+        "total_steps": 7,
+        "step_kind": "CONSTRUCT",
+        "symbolic": "parallel_line(A, / E C /) → / A G /, parallel_line(C, / E F /) → / C G / → < F E C G >",
+        "clause_html": "<span class=\"fn-tok\">parallel_line</span>(<span class=\"g-tok\">A</span>, <span class=\"g-tok\">/ E C /</span>) → <span class=\"g-tok\">/ A G /</span>, <span class=\"fn-tok\">parallel_line</span>(<span class=\"g-tok\">C</span>, <span class=\"g-tok\">/ E F /</span>) → <span class=\"g-tok\">/ C G /</span> → <span class=\"g-tok\">&lt; F E C G &gt;</span>",
+        "just_id": "G.58 • I.31",
+        "just_title": "parallel_line",
+        "visible_ids": [
+          "el-poly-ABC", "el-poly-ABE", "el-poly-AEC", "el-poly-FECG",
+          "el-seg-AB", "el-seg-BC", "el-seg-BE", "el-seg-EC", "el-seg-AC", "el-seg-AE",
+          "el-seg-EF", "el-seg-AG", "el-seg-AF", "el-seg-FG", "el-seg-CG",
+          "el-seg-DD1", "el-seg-DD2", "el-ang-D1DD2", "el-ang-CEF",
+          "hl-poly-FECG", "hl-seg-AG", "hl-seg-CG", "hl-seg-BE", "hl-seg-EC",
+          "hl-ang-CEF", "hl-ang-D1DD2", "hl-arc-CEF", "hl-arc-D1DD2",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-E", "el-pt-F", "el-pt-G", "el-pt-D",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-E", "lbl-F", "lbl-G", "lbl-D"
+        ],
+        "active_ids": [
+          "hl-poly-FECG", "hl-seg-AG", "hl-seg-CG",
+          "el-pt-A", "el-pt-C", "el-pt-F", "el-pt-G",
+          "lbl-A", "lbl-C", "lbl-F", "lbl-G"
+        ],
+        "equal_ids": [
+          "hl-ang-CEF", "hl-ang-D1DD2", "hl-arc-CEF", "hl-arc-D1DD2",
+          "hl-seg-BE", "hl-seg-EC"
+        ],
+        "tick_ids": [
+          "hl-seg-BE", "hl-seg-EC"
+        ]
+      }
+    ]
+  },
+  {
+    "bell": "insight",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 42",
+        "g_id": "G.71",
+        "folio": "Folio 0353–0354 • p. 339",
+        "enunciation": "To construct, in a given rectilineal angle, a parallelogram equal to a given triangle.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0353.g2.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0353.g2.png",
+        "step_num": 5,
+        "total_steps": 7,
+        "step_kind": "ASSERT",
+        "symbolic": "/ B E / = / E C /, / B C / ∥ / A G / → < A B E > = < A E C > → < A B C > = 2 < A E C >",
+        "clause_html": "<span class=\"g-tok\">/ B E /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ E C /</span>, <span class=\"g-tok\">/ B C /</span> ∥ <span class=\"g-tok\">/ A G /</span> → <span class=\"g-tok\">&lt; A B E &gt;</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; A E C &gt;</span> → <span class=\"g-tok\">&lt; A B C &gt;</span> <span class=\"eq-tok\">=</span> 2 <span class=\"g-tok\">&lt; A E C &gt;</span>",
+        "just_id": "G.67 • I.38",
+        "just_title": "triangles_equal_bases",
+        "visible_ids": [
+          "el-poly-ABC", "el-poly-ABE", "el-poly-AEC", "el-poly-FECG",
+          "el-seg-AB", "el-seg-BC", "el-seg-BE", "el-seg-EC", "el-seg-AC", "el-seg-AE",
+          "el-seg-EF", "el-seg-AG", "el-seg-AF", "el-seg-FG", "el-seg-CG",
+          "el-seg-DD1", "el-seg-DD2", "el-ang-D1DD2", "el-ang-CEF",
+          "hl-poly-ABC", "hl-poly-ABE", "hl-poly-AEC",
+          "hl-seg-AG", "hl-seg-BC", "hl-seg-BE", "hl-seg-EC",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-E", "el-pt-F", "el-pt-G", "el-pt-D",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-E", "lbl-F", "lbl-G", "lbl-D"
+        ],
+        "active_ids": [
+          "hl-poly-ABC", "hl-seg-AG", "hl-seg-BC",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-E",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-E"
+        ],
+        "equal_ids": [
+          "hl-poly-ABE", "hl-poly-AEC", "hl-seg-BE", "hl-seg-EC"
+        ],
+        "tick_ids": [
+          "hl-seg-BE", "hl-seg-EC"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 42",
+        "g_id": "G.71",
+        "folio": "Folio 0353–0354 • p. 339",
+        "enunciation": "To construct, in a given rectilineal angle, a parallelogram equal to a given triangle.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0353.g2.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0353.g2.png",
+        "step_num": 6,
+        "total_steps": 7,
+        "step_kind": "ASSERT",
+        "symbolic": "/ E C / ∥ / A G / → < F E C G > = 2 < A E C >",
+        "clause_html": "<span class=\"g-tok\">/ E C /</span> ∥ <span class=\"g-tok\">/ A G /</span> → <span class=\"g-tok\">&lt; F E C G &gt;</span> <span class=\"eq-tok\">=</span> 2 <span class=\"g-tok\">&lt; A E C &gt;</span>",
+        "just_id": "G.70 • I.41",
+        "just_title": "parallelogram_double_triangle",
+        "visible_ids": [
+          "el-poly-ABC", "el-poly-ABE", "el-poly-AEC", "el-poly-FECG",
+          "el-seg-AB", "el-seg-BC", "el-seg-BE", "el-seg-EC", "el-seg-AC", "el-seg-AE",
+          "el-seg-EF", "el-seg-AG", "el-seg-AF", "el-seg-FG", "el-seg-CG",
+          "el-seg-DD1", "el-seg-DD2", "el-ang-D1DD2", "el-ang-CEF",
+          "hl-poly-FECG", "hl-poly-AEC", "hl-seg-EC", "hl-seg-AG",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-E", "el-pt-F", "el-pt-G", "el-pt-D",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-E", "lbl-F", "lbl-G", "lbl-D"
+        ],
+        "active_ids": [
+          "hl-poly-FECG", "hl-seg-EC", "hl-seg-AG",
+          "el-pt-A", "el-pt-E", "el-pt-C", "el-pt-F", "el-pt-G",
+          "lbl-A", "lbl-E", "lbl-C", "lbl-F", "lbl-G"
+        ],
+        "equal_ids": [
+          "hl-poly-AEC"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 42",
+        "g_id": "G.71",
+        "folio": "Folio 0353–0354 • p. 339",
+        "enunciation": "To construct, in a given rectilineal angle, a parallelogram equal to a given triangle.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0353.g2.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0353.g2.png",
+        "step_num": 7,
+        "total_steps": 7,
+        "step_kind": "∴",
+        "symbolic": "< F E C G > = < A B C >, < C E F ) = < D )",
+        "clause_html": "<span class=\"g-tok\">&lt; F E C G &gt;</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; A B C &gt;</span>, <span class=\"g-tok\">&lt; C E F )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; D )</span>",
+        "just_id": "G.16 • I.C.N.1",
+        "just_title": "equal_transitive",
+        "visible_ids": [
+          "el-poly-ABC", "el-poly-ABE", "el-poly-AEC", "el-poly-FECG",
+          "el-seg-AB", "el-seg-BC", "el-seg-BE", "el-seg-EC", "el-seg-AC", "el-seg-AE",
+          "el-seg-EF", "el-seg-AG", "el-seg-AF", "el-seg-FG", "el-seg-CG",
+          "el-seg-DD1", "el-seg-DD2", "el-ang-D1DD2", "el-ang-CEF",
+          "hl-poly-FECG", "hl-poly-ABC",
+          "hl-seg-EF", "hl-seg-FG", "hl-seg-CG", "hl-seg-EC",
+          "hl-ang-CEF", "hl-ang-D1DD2", "hl-arc-CEF", "hl-arc-D1DD2",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-E", "el-pt-F", "el-pt-G", "el-pt-D",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-E", "lbl-F", "lbl-G", "lbl-D"
+        ],
+        "active_ids": [
+          "hl-seg-EF", "hl-seg-FG", "hl-seg-CG", "hl-seg-EC",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-E", "el-pt-F", "el-pt-G", "el-pt-D",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-E", "lbl-F", "lbl-G", "lbl-D"
+        ],
+        "equal_ids": [
+          "hl-poly-FECG", "hl-poly-ABC",
+          "hl-ang-CEF", "hl-ang-D1DD2", "hl-arc-CEF", "hl-arc-D1DD2"
+        ]
+      }
+    ]
+  }
+]

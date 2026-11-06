@@ -1,0 +1,19 @@
+[bell:proposition]
+[style: brisk, clear, architectural voice; steady studio cadence]
+Book Three, Proposition Twenty-Six. In equal circles, equal angles stand on equal arcs, whether they stand at the centers or at the arcs. <pause> Let A B C and D E F be equal circles with centers G and H, having equal central angles B G C and E H F, and equal inscribed angles B A C and E D F. We must prove that arc B K C equals arc E L F.
+
+[bell:construction]
+[style: methodical, precise constructive cadence]
+Join the chords B C and E F.
+
+[bell:insight]
+[style: luminous, deductive geometric clarity]
+Because the circles A B C and D E F are equal, their radii B G, G C, E H, and H F are all equal. And since the included central angle B G C equals E H F, triangles B G C and E H F are congruent by One Four, so base B C equals base E F. <pause> Furthermore, because the inscribed angle B A C equals E D F, the circular segments B A C and E D F are similar by Definition Eleven. And standing on equal chords B C and E F, similar circular segments are equal to one another by Three Twenty-Four. <pause> Subtracting these equal circular segments from the equal whole circles leaves the remaining arc B K C equal to arc E L F, as was required to prove.
+
+[bell:system]
+[style: reflective, scholarly, architectural synthesis]
+Proposition Twenty-Six opens the great quartet of circle symmetry theorems, linking angles, arcs, and chords. As Heath notes, Euclid's diagram assumes the inscribed angle is acute; if the angle at the arc is right or obtuse, bisecting the angle—or applying Three Twenty-Two to the opposite quadrilateral angle—reduces the proof immediately to the acute case. <pause> In the GEOMETOR G-Index, node G one-thirty-three synthesizes ten direct prerequisites across forty ancestor nodes, uniting Book One's side-angle-side congruence with Book Three's similarity of circular segments.
+
+[bell:resolve]
+[style: warm, inviting, resonant studio close]
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Twenty-Six in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe to at geometor, share your thoughts in the comments, and star the repository at github dot com slash geometor.

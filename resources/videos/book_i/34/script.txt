@@ -1,0 +1,19 @@
+[bell:proposition]
+[style:brisk]
+Euclid's Elements, Book One, Proposition Thirty-Four. <pause>
+In a parallelogram, opposite sides and opposite angles are equal, and the diagonal bisects the area. <pause>
+Let A C D B be a parallelogram, with A B parallel to C D and A C parallel to B D, and let B C be its diagonal. <pause>
+We prove that the opposite sides and opposite angles of parallelogram A C D B are equal, and that the diagonal B C bisects the area.
+
+[bell:construction]
+[style:brisk]
+Since segment A B is parallel to segment C D, and the transversal B C falls upon them, <pause> by Proposition Twenty-Nine, the alternate interior angles A B C and B C D are equal. <pause>
+Again, since segment A C is parallel to segment B D, and B C falls upon them, <pause> by Proposition Twenty-Nine, the alternate interior angles A C B and C B D are also equal.
+
+[bell:insight]
+[style:brisk]
+Thus triangles A B C and D C B have the two angles A B C and B C A equal to the two angles D C B and C B D respectively, and the adjoining side B C common. <pause>
+By Proposition Twenty-Six, angle-side-angle congruence, their remaining sides and angles are equal: <pause> side A B equals side C D, side A C equals side B D, and angle B A C equals angle C D B. <pause>
+Furthermore, since angle A B C equals angle B C D and angle C B D equals angle A C B, <pause> by Common Notion Two, adding equals to equals, the whole angle A B D equals the whole angle A C D. <pause>
+Finally, since side A B equals side D C, side B C is common, and angle A B C equals angle B C D, <pause> by Proposition Four, triangle A B C equals triangle D C B. <pause>
+Therefore in any parallelogram, opposite sides and opposite angles are equal, and the diagonal bisects the area, <pause> as was required to prove.

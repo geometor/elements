@@ -1,0 +1,41 @@
+WEBVTT
+
+1
+00:00:00.420 --> 00:00:03.914
+Euclid's Elements, Book One, Proposition Forty-Two.
+
+2
+00:00:03.914 --> 00:00:09.326
+Construct, in a given angle, a parallelogram equal in area to a given triangle.
+
+3
+00:00:09.326 --> 00:00:17.410
+Given triangle A B C and rectilineal angle D, we construct in angle D a parallelogram equal in area to triangle A B C.
+
+4
+00:00:17.830 --> 00:00:24.096
+Bisect base B C at point E so that segment B E equals segment E C, and construct segment A E.
+
+5
+00:00:24.096 --> 00:00:29.217
+On segment E C at point E, construct angle C E F equal to the given angle D.
+
+6
+00:00:29.217 --> 00:00:38.920
+Through point A construct segment A G parallel to E C, and through point C construct segment C G parallel to E F, forming parallelogram F E C G.
+
+7
+00:00:39.340 --> 00:00:47.897
+Since base B E equals base E C, triangles A B E and A E C stand on equal bases and in the same parallels B C and A G.
+
+8
+00:00:47.897 --> 00:00:57.478
+By Proposition Thirty-Eight, triangle A B E equals triangle A E C, and therefore the whole triangle A B C is double triangle A E C.
+
+9
+00:00:57.478 --> 00:01:08.229
+By Proposition Forty-One, parallelogram F E C G is also double triangle A E C, since they share base E C and lie in the same parallels E C and A G.
+
+10
+00:01:08.229 --> 00:01:18.980
+Therefore by Common Notion One, parallelogram F E C G equals triangle A B C, and has angle C E F equal to the given angle D, as was required to do.

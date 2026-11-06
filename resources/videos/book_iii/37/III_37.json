@@ -1,0 +1,97 @@
+{
+  "voice_id": "voice_xdhacg1pn1cq",
+  "audio_wav": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/37/III_37.wav",
+  "total_duration_sec": 140.34,
+  "segments": [
+    {
+      "index": 0,
+      "bell": "bell:proposition",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Elements, Book three, Proposition thirty-seven. From a point outside a circle, if a secant cuts the circle and another line falls on the circle such that the rectangle contained by the whole secant and its external segment equals the square on the line falling on the circle, then that line touches the circle. From external point D, let secant D C A cut circle A B C, and let segment D B fall on the circumference at B so that the rectangle A D by C D equals the square on D B. We claim that D B is tangent to circle A B C.",
+      "start_sec": 0.0,
+      "end_sec": 32.73,
+      "duration_sec": 32.73,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Elements, Book three, Proposition thirty-seven. From a point outside a circle, if a secant cuts the circle and another line falls on the circle such that the rectangle contained by the whole secant and its external segment equals the square on the line falling on the circle, then that line touches the circle. From external point D, let secant D C A cut circle A B C, and let segment D B fall on the circumference at B so that the rectangle A D by C D equals the square on D B. We claim that D B is tangent to circle A B C.",
+          "start_sec": 0.0,
+          "end_sec": 32.73,
+          "duration_sec": 32.73
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "bell": "bell:construction",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Using Book three Proposition seventeen, draw a tangent D E from D touching circle A B C at E. Find the center F of the circle, and join segments F E, F B, and F D. Because D E is tangent to the circle at E, Book three Proposition eighteen shows that radius F E is perpendicular to D E, making angle F E D a right angle.",
+      "start_sec": 32.73,
+      "end_sec": 53.36,
+      "duration_sec": 20.63,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Using Book three Proposition seventeen, draw a tangent D E from D touching circle A B C at E. Find the center F of the circle, and join segments F E, F B, and F D. Because D E is tangent to the circle at E, Book three Proposition eighteen shows that radius F E is perpendicular to D E, making angle F E D a right angle.",
+          "start_sec": 32.73,
+          "end_sec": 53.36,
+          "duration_sec": 20.63
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "bell": "bell:insight",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "By the tangent-secant theorem in Book three Proposition thirty-six, the rectangle A D by C D equals the square on tangent D E. Since the rectangle A D by C D also equals the square on D B by hypothesis, the square on D E equals the square on D B, and therefore segment D E equals segment D B. In triangles F E D and F B D, radii F E and F B are equal, segments D E and D B are equal, and base F D is common. By Side-Side-Side congruence, angle D B F equals the right angle F E D. Since D B stands at right angles to radius F B at its extremity B on the circle, the Porism to Book three Proposition sixteen proves that D B touches circle A B C, as was required to prove.",
+      "start_sec": 53.36,
+      "end_sec": 98.62,
+      "duration_sec": 45.26,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "By the tangent-secant theorem in Book three Proposition thirty-six, the rectangle A D by C D equals the square on tangent D E. Since the rectangle A D by C D also equals the square on D B by hypothesis, the square on D E equals the square on D B, and therefore segment D E equals segment D B. In triangles F E D and F B D, radii F E and F B are equal, segments D E and D B are equal, and base F D is common. By Side-Side-Side congruence, angle D B F equals the right angle F E D. Since D B stands at right angles to radius F B at its extremity B on the circle, the Porism to Book three Proposition sixteen proves that D B touches circle A B C, as was required to prove.",
+          "start_sec": 53.36,
+          "end_sec": 98.62,
+          "duration_sec": 45.26
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "bell": "bell:system",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Proposition thirty-seven is the final proposition of Book three, sealing the theory of circles with an algebraic criterion for tangency: instead of proving by contradiction that D B cannot cut the circle a second time, Euclid constructs an auxiliary tangent D E and transfers its right angle to B by triangle congruence. In the GEOMETOR dependency graph, Proposition thirty-seven crowns Book three with sixty-three ancestor nodes, and joins Proposition thirty-six to drive Book four Proposition ten\u2014where this exact tangency criterion proves that a chord equal to the golden section of a radius is tangent to the circumcircle of the smaller triangle, unlocking the regular pentagon.",
+      "start_sec": 98.62,
+      "end_sec": 134.76,
+      "duration_sec": 36.14,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Proposition thirty-seven is the final proposition of Book three, sealing the theory of circles with an algebraic criterion for tangency: instead of proving by contradiction that D B cannot cut the circle a second time, Euclid constructs an auxiliary tangent D E and transfers its right angle to B by triangle congruence. In the GEOMETOR dependency graph, Proposition thirty-seven crowns Book three with sixty-three ancestor nodes, and joins Proposition thirty-six to drive Book four Proposition ten\u2014where this exact tangency criterion proves that a chord equal to the golden section of a radius is tangent to the circumcircle of the smaller triangle, unlocking the regular pentagon.",
+          "start_sec": 98.62,
+          "end_sec": 134.76,
+          "duration_sec": 36.14
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "bell": "bell:resolve",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Explore the interactive construction, symbolic proof, and dependency graph at geometor dot github dot io.",
+      "start_sec": 134.76,
+      "end_sec": 140.34,
+      "duration_sec": 5.58,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Explore the interactive construction, symbolic proof, and dependency graph at geometor dot github dot io.",
+          "start_sec": 134.76,
+          "end_sec": 140.34,
+          "duration_sec": 5.58
+        }
+      ]
+    }
+  ]
+}

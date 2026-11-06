@@ -1,0 +1,65 @@
+WEBVTT
+
+1
+00:00:00.420 --> 00:00:02.752
+Book Three, Proposition Twenty-Two.
+
+2
+00:00:02.752 --> 00:00:08.016
+The opposite angles of quadrilaterals in circles are equal to two right angles.
+
+3
+00:00:08.016 --> 00:00:13.079
+Let A B C D be a circle, and let A B C D be a quadrilateral inscribed in it.
+
+4
+00:00:13.079 --> 00:00:17.410
+We are to prove that its opposite angles sum to two right angles.
+
+5
+00:00:17.830 --> 00:00:22.040
+Join the diagonals A C and B D by Postulate One.
+
+6
+00:00:22.460 --> 00:00:35.845
+By One Thirty-Two, in any triangle the three interior angles sum to two right angles; so in triangle A B C, angles C A B, A B C, and B C A together equal two right angles.
+
+7
+00:00:35.845 --> 00:00:49.074
+By Three Twenty-One, angle C A B equals angle B D C, for both lie in the circle segment B A D C; and angle A C B equals angle A D B, for both lie in the segment A D C B.
+
+8
+00:00:49.074 --> 00:00:54.788
+Therefore the whole angle A D C equals the sum of angles B A C and A C B.
+
+9
+00:00:54.788 --> 00:00:56.667
+Add angle A B C to each.
+
+10
+00:00:56.667 --> 00:01:04.730
+Then angles A B C and A D C together equal angles A B C, B A C, and A C B—which equal two right angles.
+
+11
+00:01:04.730 --> 00:01:13.340
+By the same reasoning, opposite angles B A D and D C B also sum to two right angles, as was required to prove.
+
+12
+00:01:13.760 --> 00:01:25.622
+Proposition Twenty-Two reveals how a circle constrains any inscribed four-sided polygon: its two diagonals partition one pair of opposite angles into four inscribed angles that reassemble inside a single triangle.
+
+13
+00:01:25.622 --> 00:01:37.652
+As Heath and Todhunter emphasize, the converse is equally powerful: any quadrilateral whose opposite angles are supplementary is cyclic—a circle circumscribed about three of its vertices must pass through the fourth.
+
+14
+00:01:37.652 --> 00:01:49.960
+In the GEOMETOR G-Index, node G one hundred twenty-five unites Book One's triangle angle-sum theorem, G fifty-nine, with Three Twenty-One's equal-segment angles, G one hundred twenty-four, across fifty-one ancestor nodes.
+
+15
+00:01:50.380 --> 00:02:03.422
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Twenty-Two in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+16
+00:02:03.422 --> 00:02:09.740
+Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

@@ -1,0 +1,20 @@
+[bell:proposition]
+[style:brisk]
+Euclid's Elements, Book One, Proposition Thirty-Two. <pause>
+In any triangle, an exterior angle equals the sum of the two opposite interior angles, and the three interior angles sum to two right angles. <pause>
+Let A B C be a triangle, and let side B C be extended to D. <pause>
+We prove that the exterior angle A C D equals the sum of the opposite interior angles C A B and A B C, <pause> and that the three interior angles A B C, B C A, and C A B sum to two right angles.
+
+[bell:construction]
+[style:brisk]
+By Proposition Thirty-One, through point C, construct segment C E parallel to segment A B.
+
+[bell:insight]
+[style:brisk]
+Since segment A B is parallel to segment C E and transversal A C falls upon them, <pause> by Proposition Twenty-Nine, the alternate interior angles C A B and A C E are equal. <pause>
+Again, since segment A B is parallel to segment C E and line B D falls upon them, <pause> the exterior angle E C D equals the opposite interior angle A B C. <pause>
+Adding these equals, the whole exterior angle A C D equals the sum of the two opposite interior angles C A B and A B C. <pause>
+Now add the interior angle B C A to each. <pause>
+Then the sum of angles A C D and B C A equals the sum of the three interior angles A B C, B C A, and C A B. <pause>
+Yet by Proposition Thirteen, the adjacent angles A C D and B C A on line B D sum to two right angles. <pause>
+Therefore the three interior angles of triangle A B C equal two right angles, <pause> as was required to prove.

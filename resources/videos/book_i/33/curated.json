@@ -1,0 +1,41 @@
+{
+  "I.33": {
+    "subtype": "theorem",
+    "args": [
+      ":g:`/ A B / <g1:/ A B />`",
+      ":g:`/ C D / <g1:/ C D />`",
+      ":g:`/ A C / <g1:/ A C />`",
+      ":g:`/ B D / <g1:/ B D />`"
+    ],
+    "returns": [],
+    "given": ":g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ C D />` :g:`/ C D / <g1:/ C D />`, :g:`/ A B / <g1:/ A B />` ∥ :g:`/ C D / <g1:/ C D />`, :g:`/ A C / <g1:/ A C />`, :g:`/ B D / <g1:/ B D />`",
+    "contract": ":g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ B D />` :g:`/ B D / <g1:/ B D />`, :g:`/ A C / <g1:/ A C />` ∥ :g:`/ B D / <g1:/ B D />`",
+    "steps": [
+      [
+        "given",
+        [],
+        ":g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ C D />` :g:`/ C D / <g1:/ C D />`, :g:`/ A B / <g1:/ A B />` ∥ :g:`/ C D / <g1:/ C D />`, :g:`/ A C / <g1:/ A C />`, :g:`/ B D / <g1:/ B D />`"
+      ],
+      [
+        "construct",
+        [],
+        "@fn(I.post.1)(:g:`B <g1:B>`, :g:`C <g1:C>`) → :g:`/ B C / <g1:/ B C />`"
+      ],
+      [
+        "assert",
+        ["I.29"],
+        ":g:`/ A B / <g1:/ A B />` ∥ :g:`/ C D / <g1:/ C D />`, :g:`/ B C / <g1:/ B C />` ∩ :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` → :g:`< A B C ) <g1:< A B C )>` :eq:`= <g1:< A B C ) = g1:< B C D )>` :g:`< B C D ) <g1:< B C D )>`"
+      ],
+      [
+        "assert",
+        ["I.4"],
+        ":g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ D C />; g1:/ B C / = g1:/ C B />` :g:`/ D C / <g1:/ D C />`, :g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ A B / = g1:/ D C />; g1:/ B C / = g1:/ C B />` :g:`/ C B / <g1:/ C B />`, :g:`< A B C ) <g1:< A B C )>` :eq:`= <g1:< A B C ) = g1:< B C D )>` :g:`< B C D ) <g1:< B C D )>` → :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ B D />` :g:`/ B D / <g1:/ B D />`, :g:`< A B C > <g1:< A B C >>` :eq:`= <g1:< A B C > = g1:< D C B >>` :g:`< D C B > <g1:< D C B >>`, :g:`< A C B ) <g1:< A C B )>` :eq:`= <g1:< A C B ) = g1:< C B D )>` :g:`< C B D ) <g1:< C B D )>`"
+      ],
+      [
+        "conclude",
+        ["I.27"],
+        ":g:`< A C B ) <g1:< A C B )>` :eq:`= <g1:< A C B ) = g1:< C B D )>` :g:`< C B D ) <g1:< C B D )>` → :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ B D />` :g:`/ B D / <g1:/ B D />`, :g:`/ A C / <g1:/ A C />` ∥ :g:`/ B D / <g1:/ B D />`"
+      ]
+    ]
+  }
+}

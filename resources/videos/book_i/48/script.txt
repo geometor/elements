@@ -1,0 +1,19 @@
+[bell:proposition]
+[style:brisk]
+Euclid's Elements, Book One, Proposition Forty-Eight. <pause>
+If the square on one side of a triangle equals the sum of the squares on the other two sides, the angle contained by those two sides is right. <pause>
+In triangle A B C, let the square on segment B C equal the sum of the squares on segments B A and A C. <pause>
+We prove that angle B A C is a right angle.
+
+[bell:construction]
+[style:brisk]
+By Proposition Eleven, from point A draw segment A D at right angles to segment A C. <pause>
+By Proposition Three, make segment A D equal to segment B A, and join segment D C, forming right-angled triangle A D C.
+
+[bell:insight]
+[style:brisk]
+Since segment D A equals segment A B, the square on D A equals the square on A B; adding the square on A C to each, the squares on D A and A C equal the squares on B A and A C. <pause>
+Because angle D A C is right, by Proposition Forty-Seven, the square on D C equals the squares on D A and A C, while by hypothesis the square on B C equals the squares on B A and A C. <pause>
+Thus the square on D C equals the square on B C, so side D C equals side B C. <pause>
+Since side D A equals side A B, side A C is common, and base D C equals base B C, by Proposition Eight, angle D A C equals angle B A C. <pause>
+Because angle D A C is a right angle, angle B A C is also a right angle, <pause> as was required to prove.

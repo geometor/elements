@@ -1,0 +1,46 @@
+================================================================================
+YOUTUBE 1080P (16:9) TITLE
+================================================================================
+III.35 • if in a circle two straight lines cut one another, the rectangle contained by the segmen...
+
+================================================================================
+YOUTUBE SHORT (9:16) TITLE
+================================================================================
+III.35 • if in a circle two straight lines cut one another, the rectangle contained by the segmen...
+
+================================================================================
+DESCRIPTION
+================================================================================
+“If in a circle two straight lines cut one another, the rectangle contained by the segments of the one is equal to the rectangle contained by the segments of the other.”
+— Euclid's Elements, BOOK III • PROP. 35 (G.143)
+
+00:00 1 · GIVEN: ( A B C D ), E = / A C / ∩ / B D / → rect(/ A E /, / E C /) = rect(/ D E /, / E B /)
+00:33 2 · CONSTRUCT: F = find_circle_center(( A B C D )), / F G / ⊥ / A C /, / F H / ⊥ / B D /
+00:41 3 · CONSTRUCT: / F B /, / F C /, / F E / = segment(F, B), segment(F, C), segment(F, E)
+00:50 4 · ASSERT: / A G / = / G C / → rect(/ A E /, / E C /) + sq(/ E G /) = sq(/ G C /)
+01:06 5 · ASSERT: rect(/ A E /, / E C /) + sq(/ F E /) = sq(/ F C /), rect(/ D E /, / E B /) + sq(/ F E /) = sq(/ F B /)
+01:23 6 · ∴: rect(/ A E /, / E C /) = rect(/ D E /, / E B /)
+01:40 7 · COMMENTARY: rect(/ A E /, / E C /) = rect(/ D E /, / E B /) = sq(R) − sq(/ F E /)
+02:00 8 · GENEALOGY: G.79 (I.47), G.87 (II.5), G.100 (III.3) → G.143 (III.35)
+02:21 9 · PARTICIPATE: geometor.github.io/elements/elements2/G.143/
+
+Explore the interactive Book Codex, symbolic model, and dependency tree:
+• Elements Codex (G.143): https://geometor.github.io/elements/elements2/G.143/
+• Heath Edition (III.35): https://geometor.github.io/euclid/heath/volume_I/book_iii/propositions/35/
+• GitHub: https://github.com/geometor/elements
+
+GEOMETOR • G.143 • v2
+
+================================================================================
+TAGS
+================================================================================
+Euclid, Euclid's Elements, Euclid III.35, G.143, Geometry, Constructive Geometry, Compass and Straightedge, Mathematical Proof, GEOMETOR, Thomas Little Heath
+
+================================================================================
+MEDIA & CAPTIONS FILES
+================================================================================
+• 9:16 Short MP4 : III_35_short.mp4
+• 16:9 1080p MP4 : III_35_1080p.mp4
+• Closed Captions: III_35.srt
+• 16:9 Thumbnail : III_35_thumb.png
+• 9:16 Thumbnail : III_35_short_thumb.png

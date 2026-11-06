@@ -1,0 +1,33 @@
+{
+  "prop_id": "BOOK III \u2022 PROP. 1",
+  "short_code": "III.1",
+  "g_id": "G.98",
+  "version": 2,
+  "enunciation": "To find the centre of a given circle.",
+  "title_1080p": "III.1 \u2022 find circle center \u2022 Euclid's Elements",
+  "title_short": "III.1 \u2022 find circle center \u2022 Euclid's Elements",
+  "description": "\u201cTo find the centre of a given circle.\u201d\n\u2014 Euclid's Elements, BOOK III \u2022 PROP. 1 (G.98)\n\n00:00 1 \u00b7 GIVEN: given circle ( A B C )\n00:11 2 \u00b7 CONSTRUCT: chord / A B /, perpendicular / C E /, midpoint F\n00:23 3 \u00b7 CONSTRUCT: suppose G \u2260 F is center; join / G A /, / G D /, / G B /\n00:35 4 \u00b7 ASSERT: \u27e8 A D G ) = \u27e8 G D B ) \u2192 \u27e8 G D B ) is right\n00:47 5 \u00b7 ASSERT: \u27e8 F D B ) = \u27e8 G D B ) (greater = less) \u21d2\u21d0\n00:59 6 \u00b7 \u2234: F is the center of circle ( A B C )\n01:11 7 \u00b7 COMMENTARY: Porism & De Morgan's perpendicular bisector method\n01:27 8 \u00b7 GENEALOGY: G.98 dependency tree & symbolic model\n01:43 9 \u00b7 PARTICIPATE: explore the GEOMETOR Elements Codex & participate\n\nExplore the interactive Book Codex, symbolic model, and dependency tree:\n\u2022 Elements Codex (G.98): https://geometor.github.io/elements/elements2/G.98/\n\u2022 Heath Edition (III.1): https://geometor.github.io/euclid/heath/volume_I/book_iii/propositions/01/\n\u2022 GitHub: https://github.com/geometor/elements\n\nGEOMETOR \u2022 G.98 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid III.1",
+    "G.98",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_iii/propositions/01/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.98/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/01/III_01_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/01/III_01_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/01/III_01.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/01/III_01_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/01/III_01_short_thumb.png"
+  }
+}

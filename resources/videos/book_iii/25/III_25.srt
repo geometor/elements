@@ -1,0 +1,67 @@
+1
+00:00:00,420 --> 00:00:02,755
+Book Three, Proposition Twenty-Five.
+
+2
+00:00:02,755 --> 00:00:08,332
+Given a segment of a circle, to describe the complete circle of which it is a segment.
+
+3
+00:00:08,332 --> 00:00:11,121
+Let A B C be the given segment of a circle.
+
+4
+00:00:11,121 --> 00:00:16,050
+It is required to construct the complete circle of which A B C is a segment.
+
+5
+00:00:16,470 --> 00:00:26,746
+Bisect the chord A C at D by One Ten, draw D B from D at right angles to A C by One Eleven, and join A B by Postulate One.
+
+6
+00:00:26,746 --> 00:00:33,147
+Angle A B D is then either greater than, equal to, or less than angle B A D.
+
+7
+00:00:33,147 --> 00:00:35,168
+First let it be greater.
+
+8
+00:00:35,168 --> 00:00:48,560
+On B A at point A, construct angle B A E equal to angle A B D by One Twenty-Three; extend D B to meet A E at E by Postulate Two, and join E C by Postulate One.
+
+9
+00:00:48,980 --> 00:00:55,449
+Because angle A B E equals angle B A E, in triangle A B E the sides E B and E A are equal by One Six.
+
+10
+00:00:55,449 --> 00:01:06,081
+Next compare triangles A D E and C D E: A D equals D C, D E is common, and the right angles A D E and C D E are equal; so by One Four the bases A E and C E are equal.
+
+11
+00:01:06,081 --> 00:01:11,590
+Since A E equals both E B and E C, the three segments E A, E B, and E C are all equal.
+
+12
+00:01:11,590 --> 00:01:30,100
+By Three Nine, point E—from which three equal segments fall on the arc—is the center of the circle; and constructing circle E A, with center E and defining radius point A, completes the circle whether the segment is less than, equal to, or greater than a semicircle, as was required to do.
+
+13
+00:01:30,520 --> 00:01:48,395
+Euclid's trichotomy of angle A B D versus angle B A D simultaneously locates the center E and classifies the given arc: E falls outside the segment when it is less than a semicircle, coincides with midpoint D when it is a semicircle, and falls inside on D B when it is greater than a semicircle.
+
+14
+00:01:48,395 --> 00:02:03,845
+As Heath notes, while later editors found E by intersecting the perpendicular bisectors of two chords, Euclid's proof explicitly establishes E A equal to E B and E C so that Three Nine guarantees the constructed circle coincides with the entire given arc.
+
+15
+00:02:03,845 --> 00:02:11,480
+In the GEOMETOR G-Index, node G one hundred thirty synthesizes thirteen direct prerequisites across forty-nine ancestor nodes.
+
+16
+00:02:11,900 --> 00:02:25,932
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Twenty-Five in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+17
+00:02:25,932 --> 00:02:32,700
+Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

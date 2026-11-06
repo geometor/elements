@@ -1,0 +1,8 @@
+[bell:proposition]
+[style:brisk] Euclid's Elements, Book One, Proposition Twenty-Five. <pause> If two triangles have two sides equal to two sides respectively, the one with the greater base has the greater included angle. <pause> Given triangles A B C and D E F with segment A B equal to D E, segment A C equal to D F, and base B C greater than base E F, we prove that angle B A C is greater than angle E D F.
+
+[bell:construction]
+[style:brisk] Suppose angle B A C is not greater than angle E D F. <pause> Then angle B A C is either equal to angle E D F, or less than it.
+
+[bell:insight]
+[style:brisk] First, angle B A C cannot equal angle E D F, because by side-angle-side congruence base B C would equal base E F, which it does not. <pause> Second, angle B A C cannot be less than angle E D F, because by the Hinge Theorem base B C would be less than base E F, which it is not. <pause> Since angle B A C is neither equal to nor less than angle E D F, angle B A C is greater than angle E D F, <pause> as was required to prove.

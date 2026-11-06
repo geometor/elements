@@ -1,0 +1,33 @@
+{
+  "prop_id": "BOOK II \u2022 PROP. 10",
+  "short_code": "II.10",
+  "g_id": "G.92",
+  "version": 2,
+  "enunciation": "If a segment be bisected, and a segment be added to it in a segment, the square on the whole with the added segment and the square on the added segment both together are double of the square on the half and of the square described on the segment made up of the half and the added segment as on one segment.",
+  "title_1080p": "II.10 \u2022 sum of squares bisected extended \u2022 Euclid's Elements",
+  "title_short": "II.10 \u2022 sum of squares bisected extended \u2022 Euclid's Elements",
+  "description": "\u201cIf a segment be bisected, and a segment be added to it in a segment, the square on the whole with the added segment and the square on the added segment both together are double of the square on the half and of the square described on the segment made up of the half and the added segment as on one segment.\u201d\n\u2014 Euclid's Elements, BOOK II \u2022 PROP. 10 (G.92)\n\n00:00 1 \u00b7 GIVEN: given / A B / bisected at C and extended by / B D /\n00:25 2 \u00b7 CONSTRUCT: perpendicular / C E / = / A C / and join / E A /, / E B /\n00:39 3 \u00b7 CONSTRUCT: parallels / E F /, / F D / and intersection G\n00:53 4 \u00b7 ASSERT: \u27e8 A E B ) is right; / G D / = / B D / and / G F / = / E F / = / C D /\n01:12 5 \u00b7 ASSERT: sq(/ E A /) = 2\u00b7sq(/ A C /) and sq(/ E G /) = 2\u00b7sq(/ C D /)\n01:31 6 \u00b7 \u2234: sq(/ A D /) + sq(/ D B /) = 2 \u00b7 (sq(/ A C /) + sq(/ C D /))\n01:50 7 \u00b7 COMMENTARY: geometric algebra & Pythagorean side-and-diagonal numbers\n02:11 8 \u00b7 GENEALOGY: G.92 dependency tree & symbolic model\n02:32 9 \u00b7 PARTICIPATE: explore the GEOMETOR Elements Codex & participate\n\nExplore the interactive Book Codex, symbolic model, and dependency tree:\n\u2022 Elements Codex (G.92): https://geometor.github.io/elements/elements2/G.92/\n\u2022 Heath Edition (II.10): https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/10/\n\u2022 GitHub: https://github.com/geometor/elements\n\nGEOMETOR \u2022 G.92 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid II.10",
+    "G.92",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/10/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.92/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_ii/10/II_10_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_ii/10/II_10_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_ii/10/II_10.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_ii/10/II_10_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_ii/10/II_10_short_thumb.png"
+  }
+}

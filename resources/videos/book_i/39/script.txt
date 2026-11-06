@@ -1,0 +1,20 @@
+[bell:proposition]
+[style:brisk]
+Euclid's Elements, Book One, Proposition Thirty-Nine. <pause>
+Equal triangles on the same base and on the same side lie in the same parallels. <pause>
+Let triangles A B C and D B C be equal in area, standing on the same base B C and on the same side of it. <pause>
+We prove that the segment A D joining their vertices is parallel to base B C.
+
+[bell:construction]
+[style:brisk]
+Join point A to point D with segment A D. <pause>
+Suppose segment A D is not parallel to segment B C. <pause>
+Then by Proposition Thirty-One, through point A draw segment A E parallel to segment B C, meeting segment B D at point E, and join point E to point C.
+
+[bell:insight]
+[style:brisk]
+Since triangles A B C and E B C stand on the same base B C and lie in the same parallels B C and A E, <pause> by Proposition Thirty-Seven, triangle A B C equals triangle E B C. <pause>
+Yet by hypothesis, triangle A B C equals triangle D B C. <pause>
+By Common Notion One, things equal to the same thing are equal to one another, <pause> so triangle D B C equals triangle E B C, the greater equal to the less, which is impossible. <pause>
+Thus segment A E cannot be parallel to segment B C, nor can any other line through point A except segment A D. <pause>
+Therefore segment A D is parallel to segment B C, <pause> as was required to prove.

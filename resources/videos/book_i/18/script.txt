@@ -1,0 +1,8 @@
+[bell:proposition]
+[style:brisk] Euclid's Elements, Book One, Proposition Eighteen. <pause> In any triangle, the greater side subtends the greater angle. <pause> Given triangle A B C with side A C greater than side A B, we prove that angle A B C is greater than angle B C A.
+
+[bell:construction]
+[style:brisk] Since side A C is greater than A B, cut off segment A D from A C equal to A B. <pause> Then construct segment B D.
+
+[bell:insight]
+[style:brisk] Since angle A D B is an exterior angle of triangle B C D, it is greater than the interior and opposite angle D C B. <pause> Yet because A B equals A D in isosceles triangle A B D, base angle A D B equals angle A B D, so angle A B D is also greater than angle A C B. <pause> Since the whole angle A B C is greater than its part A B D, angle A B C is much greater than angle B C A, <pause> as was required to prove.

@@ -1,0 +1,19 @@
+[bell:proposition]
+[style:brisk]
+Euclid's Elements, Book One, Proposition Forty-Three. <pause>
+In any parallelogram, the complements of the parallelograms about the diagonal are equal in area. <pause>
+Let A B C D be a parallelogram and A C its diameter. <pause>
+About A C, let A E K H and K F C G be parallelograms, and let E B F K and H K G D be the complements. <pause>
+We prove that complement E B F K equals complement H K G D.
+
+[bell:construction]
+[style:brisk]
+Because A B C D is a parallelogram and A C is its diameter, Proposition Thirty-Four establishes that the diameter bisects the area, so triangle A B C equals triangle A C D. <pause>
+Again, because A E K H is a parallelogram with diameter A K, triangle A E K equals triangle A H K. <pause>
+For the same reason, in parallelogram K F C G with diameter K C, triangle K F C equals triangle K G C.
+
+[bell:insight]
+[style:brisk]
+Since triangle A E K equals triangle A H K, and triangle K F C equals triangle K G C, adding equals to equals shows that triangles A E K and K F C together equal triangles A H K and K G C together. <pause>
+Yet the whole triangle A B C also equals the whole triangle A C D. <pause>
+Subtracting these equal pairs of triangles from the equal whole triangles, the remaining complement E B F K equals the remaining complement H K G D, <pause> as was required to prove.

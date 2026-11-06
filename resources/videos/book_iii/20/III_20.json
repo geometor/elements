@@ -1,0 +1,97 @@
+{
+  "voice_id": "voice_xdhacg1pn1cq",
+  "audio_wav": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/20/III_20.wav",
+  "total_duration_sec": 156.02,
+  "segments": [
+    {
+      "index": 0,
+      "bell": "bell:proposition",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: brisk, clear, architectural voice; steady studio cadence] Book Three, Proposition Twenty. In a circle, the angle at the center is double of the angle at the circumference, when the angles have the same circumference as base. Let A B C be a circle, let the angle B E C be an angle at its center E, and the angle B A C an angle at the circumference, having the same arc B C as base. We claim that angle B E C is double of angle B A C.",
+      "start_sec": 0.0,
+      "end_sec": 24.33,
+      "duration_sec": 24.33,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: brisk, clear, architectural voice; steady studio cadence] Book Three, Proposition Twenty. In a circle, the angle at the center is double of the angle at the circumference, when the angles have the same circumference as base. Let A B C be a circle, let the angle B E C be an angle at its center E, and the angle B A C an angle at the circumference, having the same arc B C as base. We claim that angle B E C is double of angle B A C.",
+          "start_sec": 0.0,
+          "end_sec": 24.33,
+          "duration_sec": 24.33
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "bell": "bell:construction",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: methodical, precise constructive cadence] Join A E and draw it through to F. And for the second case, let another angle B D C be inflected at the circumference, and join D E and produce it to G.",
+      "start_sec": 24.33,
+      "end_sec": 36.16,
+      "duration_sec": 11.83,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: methodical, precise constructive cadence] Join A E and draw it through to F. And for the second case, let another angle B D C be inflected at the circumference, and join D E and produce it to G.",
+          "start_sec": 24.33,
+          "end_sec": 36.16,
+          "duration_sec": 11.83
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "bell": "bell:insight",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: luminous, deductive geometric clarity] Since the radius E A equals the radius E B, by One Five the base angle E A B equals the base angle E B A; therefore the sum of angles E A B and E B A is double of angle E A B. But by One Thirty-Two, the exterior angle B E F of triangle E A B equals the sum of the two opposite interior angles E A B and E B A; therefore angle B E F is double of angle E A B. For the same reason, in triangle E A C, the exterior angle F E C is double of angle E A C. Therefore the whole central angle B E C is double of the whole inscribed angle B A C. Again, for the inflected angle B D C, angle G E C is similarly double of angle E D C, of which angle G E B is double of angle E D B; therefore the remaining angle B E C is double of the remaining angle B D C. As was required to prove.",
+      "start_sec": 36.16,
+      "end_sec": 98.18,
+      "duration_sec": 62.02,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: luminous, deductive geometric clarity] Since the radius E A equals the radius E B, by One Five the base angle E A B equals the base angle E B A; therefore the sum of angles E A B and E B A is double of angle E A B. But by One Thirty-Two, the exterior angle B E F of triangle E A B equals the sum of the two opposite interior angles E A B and E B A; therefore angle B E F is double of angle E A B. For the same reason, in triangle E A C, the exterior angle F E C is double of angle E A C. Therefore the whole central angle B E C is double of the whole inscribed angle B A C. Again, for the inflected angle B D C, angle G E C is similarly double of angle E D C, of which angle G E B is double of angle E D B; therefore the remaining angle B E C is double of the remaining angle B D C. As was required to prove.",
+          "start_sec": 36.16,
+          "end_sec": 98.18,
+          "duration_sec": 62.02
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "bell": "bell:system",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: reflective, scholarly, architectural synthesis] Proposition Three Twenty is the celebrated Inscribed Angle Theorem, one of the most fertile hubs in all of Euclid's Elements. Because classical Greek geometry restricted plane angles to inclinations less than two right angles, Heron of Alexandria later supplied the extension to segments smaller than a semicircle by summing the remaining angles around the center. In the GEOMETOR G-Index, node G one hundred twenty-three unites the isosceles triangle theorem One Five and exterior angle theorem One Thirty-Two with circular sectors, directly powering one hundred thirty-seven downstream propositions across Books Three, Four, Six, Ten, Twelve, and Thirteen.",
+      "start_sec": 98.18,
+      "end_sec": 136.6,
+      "duration_sec": 38.42,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: reflective, scholarly, architectural synthesis] Proposition Three Twenty is the celebrated Inscribed Angle Theorem, one of the most fertile hubs in all of Euclid's Elements. Because classical Greek geometry restricted plane angles to inclinations less than two right angles, Heron of Alexandria later supplied the extension to segments smaller than a semicircle by summing the remaining angles around the center. In the GEOMETOR G-Index, node G one hundred twenty-three unites the isosceles triangle theorem One Five and exterior angle theorem One Thirty-Two with circular sectors, directly powering one hundred thirty-seven downstream propositions across Books Three, Four, Six, Ten, Twelve, and Thirteen.",
+          "start_sec": 98.18,
+          "end_sec": 136.6,
+          "duration_sec": 38.42
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "bell": "bell:resolve",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: warm, inviting, resonant studio close] You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Twenty in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.",
+      "start_sec": 136.6,
+      "end_sec": 156.02,
+      "duration_sec": 19.42,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: warm, inviting, resonant studio close] You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Twenty in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.",
+          "start_sec": 136.6,
+          "end_sec": 156.02,
+          "duration_sec": 19.42
+        }
+      ]
+    }
+  ]
+}

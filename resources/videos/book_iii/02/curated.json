@@ -1,0 +1,59 @@
+{
+  "III.2": {
+    "subtype": "theorem",
+    "args": [
+      ":g:`( A B C ) <g1:( A B C )>`",
+      ":g:`A <g1:A>`",
+      ":g:`B <g1:B>`"
+    ],
+    "returns": [],
+    "given": ":g:`( A B C ) <g1:( A B C )>`, :g:`A <g1:A>`, :g:`B <g1:B>` ∈ :g:`( A B C ) <g1:( A B C )>`",
+    "contract": ":g:`/ A B / <g1:/ A E B />` falls within :g:`( A B C ) <g1:( A B C )>`",
+    "steps": [
+      [
+        "given",
+        [
+          "I.def.15"
+        ],
+        ":g:`( A B C ) <g1:( A B C )>`, :g:`A <g1:A>`, :g:`B <g1:B>` ∈ :g:`( A B C ) <g1:( A B C )>`"
+      ],
+      [
+        "construct",
+        [
+          "III.1",
+          "I.post.1"
+        ],
+        "Suppose :g:`/ A E B / <g1:/ A E B />` falls outside :g:`( A B C ) <g1:( A B C )>`; @fn(III.1)(:g:`( A B C ) <g1:( A B C )>`) → :g:`D <g1:D>`, @fn(I.post.1)(:g:`D <g1:D>`, :g:`A <g1:A>`, :g:`B <g1:B>`) → :g:`/ D A / <g1:/ D A />`, :g:`/ D B / <g1:/ D B />`, draw :g:`/ D F E / <g1:/ D F E />`"
+      ],
+      [
+        "assert",
+        [
+          "I.def.15",
+          "I.5",
+          "I.16"
+        ],
+        ":g:`/ D A / <g1:/ D A />` :eq:`= <g1:/ D A / = g1:/ D B />` :g:`/ D B / <g1:/ D B />` → :g:`< D A E ) <g1:< D A E )>` :eq:`= <g1:< D A E ) = g1:< D B E )>` :g:`< D B E ) <g1:< D B E )>`, and exterior :g:`< D E B ) <g1:< D E B )>` > :g:`< D A E ) <g1:< D A E )>` → :g:`< D E B ) <g1:< D E B )>` > :g:`< D B E ) <g1:< D B E )>`"
+      ],
+      [
+        "assert",
+        [
+          "I.19"
+        ],
+        ":g:`< D E B ) <g1:< D E B )>` > :g:`< D B E ) <g1:< D B E )>` in :g:`< D B E > <g1:< D B E >>` → :g:`/ D B / <g1:/ D B />` > :g:`/ D E / <g1:/ D E />`"
+      ],
+      [
+        "assert",
+        [
+          "I.def.15",
+          "I.cn.5"
+        ],
+        ":g:`/ D B / <g1:/ D B />` :eq:`= <g1:/ D B / = g1:/ D F />` :g:`/ D F / <g1:/ D F />` → :g:`/ D F / <g1:/ D F />` > :g:`/ D E / <g1:/ D E />`, the less than the greater ⇒⇐"
+      ],
+      [
+        "conclude",
+        [],
+        ":g:`/ A B / <g1:/ A E B />` does not fall outside or on :g:`( A B C ) <g1:( A B C )>` → :g:`/ A B / <g1:/ A E B />` falls within :g:`( A B C ) <g1:( A B C )>`"
+      ]
+    ]
+  }
+}

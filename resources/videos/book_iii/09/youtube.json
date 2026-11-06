@@ -1,0 +1,33 @@
+{
+  "prop_id": "BOOK III \u2022 PROP. 9",
+  "short_code": "III.9",
+  "g_id": "G.107",
+  "version": 2,
+  "enunciation": "If a point be taken within a circle, and more than two equal segments fall from the point on the circle, the point taken is the center of the circle.",
+  "title_1080p": "III.9 \u2022 point with three equal segments to a circle is the center \u2022 Euclid's Elements",
+  "title_short": "III.9 \u2022 point with three equal segments to a circle is the center \u2022 Euclid's Elements",
+  "description": "\u201cIf a point be taken within a circle, and more than two equal segments fall from the point on the circle, the point taken is the center of the circle.\u201d\n\u2014 Euclid's Elements, BOOK III \u2022 PROP. 9 (G.107)\n\n00:00 1 \u00b7 GIVEN: circle ( A B C ), interior point D, equal segments / D A / = / D B / = / D C /\n00:26 2 \u00b7 CONSTRUCT: join chords / A B /, / B C /, bisect at E, F, and draw / G K /, / H L / through D\n00:41 3 \u00b7 ASSERT: \u27e8 A E D \u27e9 \u2243 \u27e8 B E D \u27e9 (SSS) \u2192 \u27e8 A E D ) = \u27e8 B E D ) (right angles)\n00:55 4 \u00b7 ASSERT: center of ( A B C ) lies on both perpendicular bisectors / G K / and / H L /\n01:10 5 \u00b7 \u2234: / G K / \u2229 / H L / = D implies D is the center of ( A B C )\n01:25 6 \u00b7 COMMENTARY: contrapositive of III.7 & Euclid's genuine bisector proof\n01:41 7 \u00b7 GENEALOGY: G.107 dependency tree & symbolic model\n01:57 8 \u00b7 PARTICIPATE: explore the GEOMETOR Elements Codex & participate\n\nExplore the interactive Book Codex, symbolic model, and dependency tree:\n\u2022 Elements Codex (G.107): https://geometor.github.io/elements/elements2/G.107/\n\u2022 Heath Edition (III.9): https://geometor.github.io/euclid/heath/volume_I/book_iii/propositions/09/\n\u2022 GitHub: https://github.com/geometor/elements\n\nGEOMETOR \u2022 G.107 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid III.9",
+    "G.107",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_iii/propositions/09/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.107/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/09/III_09_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/09/III_09_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/09/III_09.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/09/III_09_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/09/III_09_short_thumb.png"
+  }
+}

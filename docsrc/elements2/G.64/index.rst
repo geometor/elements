@@ -12,6 +12,7 @@
 :tags: book-i, segment, angle, triangle, quadrilateral, parallel-straight-lines, plane-angle, trilateral, trapezium, parallel, parallelogram, equality
 :dependencies: G.12, G.16, G.19, G.22, G.24, G.36, G.52, G.56, G.62, G.63
 :excerpt: Parallelograms on the same base and in the same parallels are equal in area.
+:youtube_id: VrJwSnNr7pI
 
 .. _G.64:
 .. _I.35:
@@ -28,71 +29,35 @@ G.64 parallelograms on the same base in the same parallels
 .. signature:: theorem
 
    | :fn:`parallelograms_same_base <G.64>`\ (:g:`< A B C D > <g1:< A B C D >>`, :g:`< E B C F > <g1:< E B C F >>`, :g:`/ B C / <g1:/ B C />`, :g:`/ A F / <g1:/ A F />`)
-   | **given** :g:`< A B C D > <g1:< A B C D >>`, :g:`< E B C F > <g1:< E B C F >>` be parallelograms on the same base :g:`/ B C / <g1:/ B C />` and in the same parallels :g:`/ A F / <g1:/ A F />`, :g:`/ B C / <g1:/ B C />`
-   | **prove** :g:`< A B C D > <g1:< A B C D >>` is :eq:`equal <g1:< A B C D > = g1:< E B C F >>` to the parallelogram :g:`< E B C F > <g1:< E B C F >>`
+   | **given** :g:`< A B C D > <g1:< A B C D >>`, :g:`< E B C F > <g1:< E B C F >>` on :g:`/ B C / <g1:/ B C />` (:g:`/ A F / <g1:/ A F />` ∥ :g:`/ B C / <g1:/ B C />`)
+   | **prove** :g:`< A B C D > <g1:< A B C D >>` :eq:`= <g1:< A B C D > = g1:< E B C F >>` :g:`< E B C F > <g1:< E B C F >>`
 
 .. picture:: g1.svg
    :alt: Folio 0341 Figure 1 - Proposition 35
 
 .. step:: given
 
-   :g:`< A B C D > <g1:< A B C D >>`, :g:`< E B C F > <g1:< E B C F >>` be parallelograms on the same base :g:`/ B C / <g1:/ B C />` and in the same parallels :g:`/ A F / <g1:/ A F />`, :g:`/ B C / <g1:/ B C />`
+   :g:`< A B C D > <g1:< A B C D >>`, :g:`< E B C F > <g1:< E B C F >>` on :g:`/ B C / <g1:/ B C />` (:g:`/ A F / <g1:/ A F />` ∥ :g:`/ B C / <g1:/ B C />`)
 
-.. step:: assert ∵ parallelogram_properties <G.62>
+.. step:: assert ∵ parallelogram_properties, equal_transitive <G.62, G.16>
 
-   :g:`< A B C D > <g1:< A B C D >>` is a parallelogram, :g:`/ A D / <g1:/ A D />` :eq:`= <g1:/ A D / = g1:/ B C />` :g:`/ B C / <g1:/ B C />`
-
-.. step:: assert
-
-   The same reason also :g:`/ E F / <g1:/ E F />` :eq:`= <g1:/ E F / = g1:/ B C />` :g:`/ B C / <g1:/ B C />`,
-
-.. step:: assert ∵ equal_transitive <G.16>
-
-   So that :g:`/ A D / <g1:/ A D />` :eq:`= <g1:/ A D / = g1:/ E F />` :g:`/ E F / <g1:/ E F />`
-
-.. step:: assert
-
-   :g:`/ D E / <g1:/ D E />` is common
+   :g:`/ A D / <g1:/ A D />` :eq:`= <g1:/ A D / = g1:/ B C />` :g:`/ B C / <g1:/ B C />`, :g:`/ E F / <g1:/ E F />` :eq:`= <g1:/ E F / = g1:/ B C />` :g:`/ B C / <g1:/ B C />` → :g:`/ A D / <g1:/ A D />` :eq:`= <g1:/ A D / = g1:/ E F />` :g:`/ E F / <g1:/ E F />`
 
 .. step:: assert ∵ add_equals <G.36>
 
-   :g:`/ A E / <g1:/ A E />` :eq:`= <g1:/ A E / = g1:/ D F />` :g:`/ D F / <g1:/ D F />`
+   :g:`/ A D / <g1:/ A D />` + :g:`/ D E / <g1:/ D E />` :eq:`= <g1:/ A E / = g1:/ D F />` :g:`/ D E / <g1:/ D E />` + :g:`/ E F / <g1:/ E F />` → :g:`/ A E / <g1:/ A E />` :eq:`= <g1:/ A E / = g1:/ D F />` :g:`/ D F / <g1:/ D F />`
 
-.. step:: assert ∵ parallelogram_properties <G.62>
+.. step:: assert ∵ parallel_transversal_angles, sas_congruence <G.56, G.24>
 
-   :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ D C />` :g:`/ D C / <g1:/ D C />`
-
-.. step:: assert
-
-   :g:`/ E A / <g1:/ E A />`, :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ E A / = g1:/ F D /; g1:/ A B / = g1:/ D C />` :g:`/ F D / <g1:/ F D />`, :g:`/ D C / <g1:/ D C />`,
-
-.. step:: assert ∵ parallel_transversal_angles <G.56>
-
-   :g:`< F D C ) <g1:< F D C )>` :eq:`= <g1:< F D C ) = g1:< E A B )>` :g:`< E A B ) <g1:< E A B )>`, the exterior to the interior
-
-.. step:: assert
-
-   :g:`/ E B / <g1:/ E B />` :eq:`= <g1:/ E B / = g1:/ F C />` :g:`/ F C / <g1:/ F C />`,
-
-.. step:: assert ∵ sas_congruence <G.24>
-
-   :g:`< E A B > <g1:< E A B >>` will be :eq:`equal <g1:< E A B > = g1:< F D C >>` to :g:`< F D C > <g1:< F D C >>`
-
-.. step:: construct
-
-   Let :g:`< D G E > <g1:< D G E >>` be subtracted from each
+   :g:`/ E A / <g1:/ E A />` :eq:`= <g1:/ E A / = g1:/ F D />; g1:/ A B / = g1:/ D C />` :g:`/ F D / <g1:/ F D />`, :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ E A / = g1:/ F D />; g1:/ A B / = g1:/ D C />` :g:`/ D C / <g1:/ D C />`, :g:`< E A B ) <g1:< E A B )>` :eq:`= <g1:< F D C ) = g1:< E A B )>` :g:`< F D C ) <g1:< F D C )>` → :g:`< E A B > <g1:< E A B >>` :eq:`= <g1:< E A B > = g1:< F D C >>` :g:`< F D C > <g1:< F D C >>`
 
 .. step:: assert ∵ subtract_equals <G.19>
 
-   the :term:`trapezium <G.63>` :g:`< A B G D > <g1:< A B G D >>` which remains is :eq:`equal <g1:< A B G D > = g1:< E G C F >>` to the trapezium :g:`< E G C F > <g1:< E G C F >>` which remains
-
-.. step:: construct
-
-   Let :g:`< G B C > <g1:< G B C >>` be added to each
+   :g:`< E A B > <g1:< E A B >>` − :g:`< D G E > <g1:< D G E >>` :eq:`= <g1:< A B G D > = g1:< E G C F >>` :g:`< F D C > <g1:< F D C >>` − :g:`< D G E > <g1:< D G E >>` → :g:`< A B G D > <g1:< A B G D >>` :eq:`= <g1:< A B G D > = g1:< E G C F >>` :g:`< E G C F > <g1:< E G C F >>`
 
 .. step:: conclude ∵ add_equals <G.36>
 
-   the whole parallelogram :g:`< A B C D > <g1:< A B C D >>` is :eq:`equal <g1:< A B C D > = g1:< E B C F >>` to the whole parallelogram :g:`< E B C F > <g1:< E B C F >>`
+   :g:`< A B G D > <g1:< A B G D >>` + :g:`< G B C > <g1:< G B C >>` :eq:`= <g1:< A B C D > = g1:< E B C F >>` :g:`< E G C F > <g1:< E G C F >>` + :g:`< G B C > <g1:< G B C >>` → :g:`< A B C D > <g1:< A B C D >>` :eq:`= <g1:< A B C D > = g1:< E B C F >>` :g:`< E B C F > <g1:< E B C F >>`
 
 Dependency Graph
 ----------------
@@ -288,6 +253,7 @@ Dependency Graph
      "G.31" -> "G.21";
      "G.34" -> "G.21";
      "G.41" -> "G.21";
+     "G.51" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
      "G.28" -> "G.22";
@@ -317,6 +283,7 @@ Dependency Graph
      "G.28" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.51" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -360,5 +327,6 @@ Required for
 .. toctree::
    :hidden:
 
+   video
    code
    heath

@@ -1,0 +1,75 @@
+1
+00:00:00,420 --> 00:00:02,058
+Book Three, Proposition Eight.
+
+2
+00:00:02,058 --> 00:00:32,359
+If a point be taken outside a circle and from the point segments be drawn through to the circle, one of which is through the center and the others at random, then of the segments falling on the concave arc, that through the center is greatest and the nearer to it is always greater than the more remote; while of those falling on the convex arc, that between the point and the diameter is least, the nearer to the least is always less than the more remote, and only two equal segments will fall on the circle from the point, one on each side of the least.
+
+3
+00:00:32,359 --> 00:00:40,330
+Let A B C be a circle and D an exterior point, with secants D A through the center and D E, D F, and D C meeting the convex arc at G, K, L, and H.
+
+4
+00:00:40,750 --> 00:00:50,392
+Take the center M of the circle A B C by Three One, and join the radii M E, M F, M C, M K, M L, and M H.
+
+5
+00:00:50,392 --> 00:00:59,200
+Then on M D at M, construct angle D M B equal to angle K M D by One Twenty-Three, and join D B.
+
+6
+00:00:59,620 --> 00:01:07,029
+On the concave arc, radius A M equals E M, so D A equals E M plus M D, which exceeds D E by One Twenty.
+
+7
+00:01:07,029 --> 00:01:20,410
+Since radii M E and M F are equal, M D is common, and angle E M D exceeds angle F M D, the Hinge Theorem, One Twenty-Four, gives D E greater than D F, and similarly D F greater than D C.
+
+8
+00:01:20,410 --> 00:01:30,409
+On the convex arc, in triangle M K D, M K plus K D exceeds M D by One Twenty; subtracting equal radii M K and M G leaves D G less than D K.
+
+9
+00:01:30,409 --> 00:01:44,148
+And because M K and K D meet inside triangle M L D, their sum is less than M L plus L D by One Twenty-One; subtracting equal radii M K and M L leaves D K less than D L, and D L less than D H.
+
+10
+00:01:44,148 --> 00:01:49,328
+By One Four, triangles M K D and M B D are congruent, so D K equals D B.
+
+11
+00:01:49,328 --> 00:01:56,953
+Any third equal segment D N would force D B to equal D N—nearer equal to more remote, which is impossible.
+
+12
+00:01:56,953 --> 00:02:09,902
+Therefore, D A is greatest on the concave arc, D G is least on the convex arc, distances vary monotonically with inclination, and only two equal segments fall from D on the circle.
+
+13
+00:02:09,902 --> 00:02:11,700
+As was required to prove.
+
+14
+00:02:12,120 --> 00:02:15,970
+Proposition Three Eight is the exterior counterpart to Three Seven.
+
+15
+00:02:15,970 --> 00:02:21,315
+Together they govern every secant and distance drawn to a circle from any point in the plane.
+
+16
+00:02:21,315 --> 00:02:28,900
+Notably, Euclid deploys Proposition One Twenty-One—the interior triangle inequality—to order the segments falling on the convex arc.
+
+17
+00:02:28,900 --> 00:02:38,440
+In the GEOMETOR G-Index, node G one-hundred-six combines circle center finding from Three One with Book One's triangle inequalities across forty-seven ancestor nodes.
+
+18
+00:02:38,860 --> 00:02:52,612
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Eight in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+19
+00:02:52,612 --> 00:03:00,300
+Subscribe to at geometor, share your questions in the comments, and star our repositories at github dot com slash geometor.

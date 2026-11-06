@@ -1,0 +1,317 @@
+[
+  {
+    "prop_id": "BOOK III • PROP. 17",
+    "short_title": "draw a tangent to a circle from a point",
+    "g_id": "G.119",
+    "folio": "Folio 0049 • p. 43",
+    "enunciation": "From a given point to draw a straight line touching a given circle.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.119/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.119/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/17/",
+    "step_total": 8,
+    "subslides": [
+      {
+        "step_num": 1,
+        "step_kind": "GIVEN",
+        "chapter": "given point A and circle ( B C D )",
+        "symbolic": "A, ( B C D ) → draw tangent / A B /",
+        "visible_ids": [
+          "el-circle-BCD",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D"
+        ],
+        "active_ids": [
+          "el-circle-BCD",
+          "hl-circle-BCD",
+          "el-pt-A",
+          "lbl-A"
+        ],
+        "equal_ids": [],
+        "clause_html": "<div class=\"clause-line\">Let <span class=\"g-tok\">A</span> be the given external point,</div><div class=\"clause-line\">and <span class=\"g-tok\">( B C D )</span> the given circle.</div>",
+        "just_id": "G.1 • I.def.1, G.10 • I.def.15",
+        "just_title": "Given a point A outside a circle ( B C D ), required to construct a tangent from A to ( B C D )."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK III • PROP. 17",
+    "short_title": "draw a tangent to a circle from a point",
+    "g_id": "G.119",
+    "folio": "Folio 0049 • p. 43",
+    "enunciation": "From a given point to draw a straight line touching a given circle.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.119/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.119/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/17/",
+    "step_total": 8,
+    "subslides": [
+      {
+        "step_num": 2,
+        "step_kind": "CONSTRUCT",
+        "chapter": "find center E, join / A E /, and describe concentric circle ( A F G )",
+        "symbolic": "center(( B C D )) → E; / A E /; circle(E, A) → ( A F G )",
+        "visible_ids": [
+          "el-circle-BCD",
+          "el-circle-AFG",
+          "el-seg-ED",
+          "el-seg-DA",
+          "el-seg-AE",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-E",
+          "el-pt-G",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E",
+          "lbl-G"
+        ],
+        "active_ids": [
+          "el-circle-AFG",
+          "hl-circle-AFG",
+          "el-seg-AE",
+          "hl-seg-AE",
+          "el-pt-E",
+          "el-pt-D",
+          "el-pt-G",
+          "lbl-E",
+          "lbl-D",
+          "lbl-G"
+        ],
+        "equal_ids": [],
+        "clause_html": "<div class=\"clause-line\"><span class=\"g-tok\">find_circle_center</span>(<span class=\"g-tok\">( B C D )</span>) → <span class=\"g-tok\">E</span>; join <span class=\"g-tok\">/ A E /</span></div><div class=\"clause-line\"><span class=\"g-tok\">circle</span>(<span class=\"g-tok\">E</span>, <span class=\"g-tok\">A</span>) → <span class=\"g-tok\">( A F G )</span></div>",
+        "just_id": "G.98 • III.1, G.14 • I.post.1, G.15 • I.post.3",
+        "just_title": "Find center E of ( B C D ) (III.1), join / A E / cutting ( B C D ) at D, and describe circle ( E A )."
+      },
+      {
+        "step_num": 3,
+        "step_kind": "CONSTRUCT",
+        "chapter": "draw / D F / ⊥ / E A /; join / E F / cutting ( B C D ) at B, and join / A B /",
+        "symbolic": "/ D F / ⊥ / E A /; / E F / ∩ ( B C D ) → B; join / A B /",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-seg-DF",
+          "hl-seg-DF",
+          "el-seg-EF",
+          "hl-seg-EF",
+          "el-seg-AB",
+          "hl-seg-AB",
+          "el-ang-EDF",
+          "hl-ang-EDF",
+          "el-pt-F",
+          "el-pt-B",
+          "lbl-F",
+          "lbl-B"
+        ],
+        "equal_ids": [],
+        "clause_html": "<div class=\"clause-line\">Draw <span class=\"g-tok\">/ D F / ⊥ / E A /</span> meeting <span class=\"g-tok\">( A F G )</span> at <span class=\"g-tok\">F</span>;</div><div class=\"clause-line\">join <span class=\"g-tok\">/ E F /</span> cutting <span class=\"g-tok\">( B C D )</span> at <span class=\"g-tok\">B</span>, and join <span class=\"g-tok\">/ A B /</span>.</div>",
+        "just_id": "G.34 • I.11, G.14 • I.post.1",
+        "just_title": "Construct / D F / at right angles to / E A / from D (I.11), and join / E F / and / A B /."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK III • PROP. 17",
+    "short_title": "draw a tangent to a circle from a point",
+    "g_id": "G.119",
+    "folio": "Folio 0049 • p. 43",
+    "enunciation": "From a given point to draw a straight line touching a given circle.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.119/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.119/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/17/",
+    "step_total": 8,
+    "subslides": [
+      {
+        "step_num": 4,
+        "step_kind": "ASSERT",
+        "chapter": "/ E A / = / E F /, / E B / = / E D / → < D E F > ≃ < B E A > → < E B A ) = right",
+        "symbolic": "< D E F > ≃ < B E A > → < E B A ) = < E D F ) = ∟",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-tri-DEF",
+          "hl-tri-DEF",
+          "el-tri-BEA",
+          "hl-tri-BEA",
+          "el-ang-DEF",
+          "hl-ang-DEF"
+        ],
+        "equal_ids": [
+          "el-seg-AE",
+          "hl-seg-AE",
+          "el-seg-EF",
+          "hl-seg-EF",
+          "el-seg-ED",
+          "hl-seg-ED",
+          "el-seg-EB",
+          "hl-seg-EB",
+          "el-ang-EDF",
+          "hl-ang-EDF",
+          "hl-arc-EDF",
+          "el-ang-EBA",
+          "hl-ang-EBA",
+          "hl-arc-EBA"
+        ],
+        "tick_ids": [
+          "el-seg-ED",
+          "el-seg-EB"
+        ],
+        "tick_2_ids": [
+          "el-seg-DA",
+          "el-seg-BF"
+        ],
+        "clause_html": "<div class=\"clause-line\"><span class=\"eq-tok\">/ E A / = / E F /</span>, <span class=\"eq-tok\">/ E B / = / E D /</span>, common <span class=\"g-tok\">&lt; D E F )</span></div><div class=\"clause-line\">→ <span class=\"eq-tok\">&lt; D E F &gt; ≃ &lt; B E A &gt;</span>, so <span class=\"eq-tok\">&lt; E B A ) = &lt; E D F ) = right</span></div>",
+        "just_id": "G.10 • I.def.15, G.24 • I.4",
+        "just_title": "By SAS congruence (I.4) on concentric radii, < E B A ) equals the constructed right angle < E D F )."
+      },
+      {
+        "step_num": 5,
+        "step_kind": "∴",
+        "is_punchline": true,
+        "chapter": "from A, segment / A B / has been drawn touching circle ( B C D )",
+        "symbolic": "∴ / A B / ⊥ / E B / touches ( B C D ) at B",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-circle-BCD",
+          "hl-circle-BCD",
+          "el-seg-AB",
+          "hl-seg-AB",
+          "el-seg-EB",
+          "hl-seg-EB",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-E",
+          "lbl-A",
+          "lbl-B",
+          "lbl-E"
+        ],
+        "equal_ids": [
+          "el-ang-EBA",
+          "hl-ang-EBA",
+          "hl-arc-EBA",
+          "el-ang-EDF",
+          "hl-ang-EDF",
+          "hl-arc-EDF",
+          "el-seg-AB",
+          "hl-seg-AB",
+          "el-seg-DF",
+          "hl-seg-DF"
+        ],
+        "tick_ids": [
+          "el-seg-AB",
+          "el-seg-DF"
+        ],
+        "clause_html": "<div class=\"clause-line\">∴ Since <span class=\"g-tok\">/ E B /</span> is a radius and <span class=\"eq-tok\">&lt; E B A ) is right</span>,</div><div class=\"clause-line\"><span class=\"eq-tok\">/ A B /</span> touches <span class=\"g-tok\">( B C D )</span> at <span class=\"g-tok\">B</span>.</div>",
+        "just_id": "G.118 • III.16 Por., G.111 • III.def.2",
+        "just_title": "By III.16 Porism, the perpendicular at the extremity of radius / E B / touches circle ( B C D ) (Q.E.F.)."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK III • PROP. 17",
+    "short_title": "draw a tangent to a circle from a point",
+    "g_id": "G.119",
+    "folio": "Folio 0049 • p. 43",
+    "enunciation": "From a given point to draw a straight line touching a given circle.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.119/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.119/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/17/",
+    "step_total": 8,
+    "widescreen_only": true,
+    "subslides": [
+      {
+        "step_num": 6,
+        "step_kind": "COMMENTARY",
+        "widescreen_only": true,
+        "chapter": "Heron's twin tangents & the III.31 semicircle shortcut",
+        "symbolic": "/ A B / = / A B' /, < E A B ) = < E A B' )",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-circle-BCD",
+          "hl-circle-BCD",
+          "el-seg-AB",
+          "hl-seg-AB",
+          "el-seg-AE",
+          "hl-seg-AE",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-E",
+          "lbl-A",
+          "lbl-B",
+          "lbl-E"
+        ],
+        "equal_ids": [
+          "el-tri-BEA",
+          "hl-tri-BEA",
+          "el-tri-DEF",
+          "hl-tri-DEF",
+          "el-seg-AB",
+          "hl-seg-AB",
+          "el-seg-DF",
+          "hl-seg-DF"
+        ],
+        "tick_ids": [
+          "el-seg-AB",
+          "el-seg-DF"
+        ],
+        "clause_html": "<div class=\"clause-line\"><strong>Twin Tangents &amp; Architectural Order</strong></div><div class=\"clause-line\"><span class=\"eq-tok\">/ A B / = / D F /</span> • Symmetric across <span class=\"g-tok\">/ A E /</span></div><div class=\"clause-line\" style=\"font-size:28px;color:#cbd5e1;\">Heron notes that extending / D F / across / A E / yields two equal tangents from A equally inclined to / A E /. Euclid uses concentric circles here because Thales' theorem (III.31) has not yet been proved.</div>",
+        "just_tag": "✦ HEATH COMMENTARY",
+        "just_id": "Heath (1908) • Vol. II, p. 44",
+        "just_title": "Once III.31 is proved, the circle on diameter / A E / cuts ( B C D ) directly in the two points of contact."
+      },
+      {
+        "step_num": 7,
+        "step_kind": "GENEALOGY",
+        "widescreen_only": true,
+        "chapter": "G.119 dependency tree & symbolic model",
+        "symbolic": "G.14, G.15, G.24, G.33, G.98, G.111, G.118 → G.119",
+        "stage_html": "<div style=\"width:100%;height:100%;display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:36px 8px 8px 8px;align-items:stretch;\"><div style=\"background:rgba(11,14,21,0.92);border:1.5px solid rgba(56,189,248,0.45);border-radius:16px;padding:22px 24px;display:flex;flex-direction:column;justify-content:space-between;\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.12em;color:#38bdf8;\">◈ G-INDEX PREREQUISITES → G.119</div><div style=\"display:flex;flex-direction:column;gap:10px;margin:12px 0;\"><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #5ec27e;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.118 (III.16)</span><span style=\"color:#f4f1ea;\">perpendicular is tangent</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #5ec27e;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.98 (III.1)</span><span style=\"color:#f4f1ea;\">find circle center</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.33 (I.def.10)</span><span style=\"color:#f4f1ea;\">right angle &amp; perpendicular</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.24 (I.4)</span><span style=\"color:#f4f1ea;\">SAS triangle congruence</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.15 (I.post.3)</span><span style=\"color:#f4f1ea;\">construct circle ( E A )</span></div></div><div style=\"background:rgba(232,184,90,0.16);border:1.5px solid #e8b85a;border-radius:10px;padding:11px 16px;text-align:center;font-family:'JetBrains Mono',monospace;font-size:17px;font-weight:700;color:#e8b85a;\">↓ G.119 (III.17) • tangent to circle</div></div><div style=\"background:rgba(11,14,21,0.92);border:1.5px solid rgba(232,184,90,0.4);border-radius:16px;padding:22px 24px;display:flex;flex-direction:column;justify-content:space-between;\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.12em;color:#e8b85a;\">⚙ GEOMETOR.MODEL • G.119/g1.py</div><pre style=\"font-family:'JetBrains Mono',monospace;font-size:14.5px;line-height:1.48;color:#e2e8f0;background:rgba(7,9,14,0.85);padding:16px;border-radius:10px;border:1px solid rgba(148,163,184,0.25);overflow:hidden;\">model = Model(&quot;III.17&quot;)\ncircle_BCD = model.construct_circle(E, D)\ncircle_AFG = model.construct_circle(E, A)\n\n# DF ⊥ EA meeting (E A) at F\nmodel.set_segment(D, F)\nmodel.set_section([E, B, F])\nmodel.set_segment(A, B)\n\nmodel.set_polygon([D, E, F])\nmodel.set_polygon([B, E, A])</pre><div style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">46 total ancestor nodes in G-Index • Constructive tangent solver</div></div></div>",
+        "clause_html": "<div class=\"clause-line\"><span class=\"coincide-tok\">G.119</span> synthesizes <span class=\"g-tok\">12 direct prerequisites</span></div><div class=\"clause-line\">across <span class=\"g-tok\">46 total ancestor nodes</span> in the G-Index</div><div class=\"clause-line\" style=\"font-size:28px;color:#cbd5e1;\">Transforms the existence theorem of III.16 into an explicit compass-and-straightedge tangent construction.</div>",
+        "just_tag": "◈ G-INDEX GENEALOGY",
+        "just_id": "G.119 • 12 Direct Rules",
+        "just_title": "Depends on G.1, G.3, G.4, G.10, G.14, G.15, G.24, G.33, G.61, G.98, G.111, and G.118."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK III • PROP. 17",
+    "short_title": "draw a tangent to a circle from a point",
+    "g_id": "G.119",
+    "folio": "Folio 0049 • p. 43",
+    "enunciation": "From a given point to draw a straight line touching a given circle.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.119/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.119/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/17/",
+    "step_total": 8,
+    "widescreen_only": true,
+    "subslides": [
+      {
+        "step_num": 8,
+        "step_kind": "PARTICIPATE",
+        "widescreen_only": true,
+        "chapter": "explore the GEOMETOR Elements Codex & participate",
+        "symbolic": "geometor.github.io/elements",
+        "stage_html": "<div style=\"width:100%;height:100%;display:flex;flex-direction:column;justify-content:space-between;padding:42px 16px 12px 16px;gap:20px;\"><div style=\"background:linear-gradient(135deg,rgba(232,184,90,0.16) 0%,rgba(16,20,29,0.95) 100%);border:2px solid rgba(232,184,90,0.55);border-radius:18px;padding:28px 32px;display:flex;flex-direction:column;gap:12px;box-shadow:0 16px 40px rgba(0,0,0,0.6);\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.16em;color:#e8b85a;\">★ INTERACTIVE DIGITAL EDITION</div><div style=\"font-family:Georgia,serif;font-size:38px;font-weight:700;color:#f8f6f0;\">GEOMETOR • Elements Codex</div><div style=\"font-family:'JetBrains Mono',monospace;font-size:22px;color:#5ec27e;font-weight:700;\">https://geometor.github.io/elements/elements2/G.119/</div></div><div style=\"display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;flex:1;\"><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#e8b85a;font-weight:700;\">01 • PSEUDOCODE</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Hover-synced symbolic steps, signatures, and interactive SVG diagrams.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 1 • G.119</span></div><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#38bdf8;font-weight:700;\">02 • PYTHON MODEL</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Executable geometor.model scripts with exact algebraic coordinates.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 2 • g1.py</span></div><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#5ec27e;font-weight:700;\">03 • HEATH (1908)</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Complete classical translation, folio plates, and historical commentary.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 3 • Folio 0049</span></div></div></div>",
+        "clause_html": "<div class=\"clause-line\">Explore the <span class=\"g-tok\">Elements Codex</span> &amp; <span class=\"eq-tok\">G-Index</span></div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Subscribe to <strong>@geometor</strong> for all 465 propositions</div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Share questions &amp; insights in the comments</div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Star &amp; contribute at <strong>github.com/geometor</strong></div>",
+        "just_tag": "★ PARTICIPATE & SUPPORT",
+        "just_id": "github.com/geometor/elements",
+        "just_title": "Open-source symbolic reconstruction of Euclid's Elements — links in the video description."
+      }
+    ]
+  }
+]

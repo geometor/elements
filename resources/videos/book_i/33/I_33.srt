@@ -1,0 +1,43 @@
+1
+00:00:00,420 --> 00:00:03,583
+Euclid's Elements, Book One, Proposition Thirty-Three.
+
+2
+00:00:03,583 --> 00:00:10,553
+Segments joining the endpoints of equal and parallel segments in the same directions are themselves equal and parallel.
+
+3
+00:00:10,553 --> 00:00:17,640
+Let segments A B and C D be equal and parallel, and let segments A C and B D join their endpoints in the same directions.
+
+4
+00:00:17,640 --> 00:00:21,330
+We prove that segments A C and B D are also equal and parallel.
+
+5
+00:00:21,750 --> 00:00:25,360
+Join point B to point C with the diagonal segment B C.
+
+6
+00:00:25,780 --> 00:00:37,561
+Since segment A B is parallel to segment C D, and the transversal B C falls upon them, by Proposition Twenty-Nine, the alternate interior angles A B C and B C D are equal.
+
+7
+00:00:37,561 --> 00:00:46,104
+In triangles A B C and D C B, side A B equals side D C, side B C is common, and the included angle A B C equals angle B C D.
+
+8
+00:00:46,104 --> 00:00:58,849
+By Proposition Four, side-angle-side congruence, the base A C equals the base B D, triangle A B C equals triangle D C B, and the remaining angles subtended by the equal sides are equal.
+
+9
+00:00:58,849 --> 00:01:02,018
+In particular, angle A C B equals angle C B D.
+
+10
+00:01:02,018 --> 00:01:14,764
+Since the transversal B C falling on segments A C and B D makes the alternate interior angles A C B and C B D equal, by Proposition Twenty-Seven, segment A C is parallel to segment B D.
+
+11
+00:01:14,764 --> 00:01:20,620
+Therefore segments A C and B D are both equal and parallel, as was required to prove.

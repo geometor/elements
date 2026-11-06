@@ -1,0 +1,55 @@
+1
+00:00:00,420 --> 00:00:02,671
+Book Three, Proposition Thirty-Four.
+
+2
+00:00:02,671 --> 00:00:08,674
+From a given circle, to cut off a segment admitting an angle equal to a given rectilineal angle.
+
+3
+00:00:08,674 --> 00:00:13,677
+Let A B C be the given circle and the angle at D be the given rectilineal angle.
+
+4
+00:00:13,677 --> 00:00:18,930
+It is required to cut off from circle A B C a segment admitting an angle equal to D.
+
+5
+00:00:19,350 --> 00:00:23,994
+Draw the straight line E F touching the circle A B C at the point B.
+
+6
+00:00:23,994 --> 00:00:34,920
+On the line F B, and at the point B on it, construct the angle F B C equal to the given angle D by One Twenty-Three, with the chord B C cutting the circle at C.
+
+7
+00:00:35,340 --> 00:00:50,938
+Because the straight line E F touches the circle A B C, and the chord B C is drawn across from the point of contact at B, by Three Thirty-Two the angle F B C equals the angle B A C constructed in the alternate segment B A C.
+
+8
+00:00:50,938 --> 00:01:01,175
+But the angle F B C was constructed equal to the angle at D; therefore, by Common Notion One, the angle in the segment B A C equals the angle at D.
+
+9
+00:01:01,175 --> 00:01:11,620
+Thus from the given circle A B C, the segment B A C has been cut off admitting an angle equal to the given rectilineal angle D, as was required to do.
+
+10
+00:01:12,040 --> 00:01:23,514
+Proposition Three Thirty-Four is the dual of Three Thirty-Three: instead of constructing a circle on a given chord, we slice a given circle with a chord at a prescribed angle to its tangent.
+
+11
+00:01:23,514 --> 00:01:37,524
+As Heath notes, one could alternatively construct a central angle double the given angle D, or simply draw a diameter when D is right; yet Euclid's tangent-chord construction requires only copying the single angle D at the boundary.
+
+12
+00:01:37,524 --> 00:01:52,320
+In the GEOMETOR G-Index, node G one hundred forty-two combines One Twenty-Three and Three Thirty-Two into a surgical tool used immediately in Book Four, Proposition Two, to inscribe a triangle equiangular with any given triangle inside a circle.
+
+13
+00:01:52,740 --> 00:02:06,494
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Thirty-Four in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+14
+00:02:06,494 --> 00:02:13,980
+Subscribe to at geometor, share your questions in the comments, and star our repositories at github dot com slash geometor.

@@ -1,0 +1,19 @@
+[bell:proposition]
+[style: brisk, clear, architectural voice; steady studio cadence]
+Book Three, Proposition Thirty-Four. From a given circle, to cut off a segment admitting an angle equal to a given rectilineal angle. <pause> Let A B C be the given circle and the angle at D be the given rectilineal angle. It is required to cut off from circle A B C a segment admitting an angle equal to D.
+
+[bell:construction]
+[style: methodical, precise constructive cadence]
+Draw the straight line E F touching the circle A B C at the point B. <pause> On the line F B, and at the point B on it, construct the angle F B C equal to the given angle D by One Twenty-Three, with the chord B C cutting the circle at C.
+
+[bell:insight]
+[style: luminous, deductive geometric clarity]
+Because the straight line E F touches the circle A B C, and the chord B C is drawn across from the point of contact at B, by Three Thirty-Two the angle F B C equals the angle B A C constructed in the alternate segment B A C. <pause> But the angle F B C was constructed equal to the angle at D; therefore, by Common Notion One, the angle in the segment B A C equals the angle at D. Thus from the given circle A B C, the segment B A C has been cut off admitting an angle equal to the given rectilineal angle D, as was required to do.
+
+[bell:system]
+[style: reflective, scholarly, architectural synthesis]
+Proposition Three Thirty-Four is the dual of Three Thirty-Three: instead of constructing a circle on a given chord, we slice a given circle with a chord at a prescribed angle to its tangent. As Heath notes, one could alternatively construct a central angle double the given angle D, or simply draw a diameter when D is right; yet Euclid's tangent-chord construction requires only copying the single angle D at the boundary. <pause> In the GEOMETOR G-Index, node G one hundred forty-two combines One Twenty-Three and Three Thirty-Two into a surgical tool used immediately in Book Four, Proposition Two, to inscribe a triangle equiangular with any given triangle inside a circle.
+
+[bell:resolve]
+[style: warm, inviting, resonant studio close]
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Thirty-Four in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe to at geometor, share your questions in the comments, and star our repositories at github dot com slash geometor.

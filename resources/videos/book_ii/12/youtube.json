@@ -1,0 +1,33 @@
+{
+  "prop_id": "BOOK II \u2022 PROP. 12",
+  "short_code": "II.12",
+  "g_id": "G.94",
+  "version": 2,
+  "enunciation": "In obtuse-angled triangles the square on the side subtending the obtuse angle is greater than the squares on the sides containing the obtuse angle by twice the rectangle contained by one of the sides about the obtuse angle, namely that on which the perpendicular falls, and the segment cut off outside by the perpendicular towards the obtuse angle.",
+  "title_1080p": "II.12 \u2022 law of cosines obtuse \u2022 Euclid's Elements",
+  "title_short": "II.12 \u2022 law of cosines obtuse \u2022 Euclid's Elements",
+  "description": "\u201cIn obtuse-angled triangles the square on the side subtending the obtuse angle is greater than the squares on the sides containing the obtuse angle by twice the rectangle contained by one of the sides about the obtuse angle, namely that on which the perpendicular falls, and the segment cut off outside by the perpendicular towards the obtuse angle.\u201d\n\u2014 Euclid's Elements, BOOK II \u2022 PROP. 12 (G.94)\n\n00:00 1 \u00b7 GIVEN: given obtuse triangle \u27e8 A B C \u27e9 with \u27e8 B A C ) \u27e9 \u221f\n00:25 2 \u00b7 CONSTRUCT: extend / C A / and drop altitude / B D / \u22a5 [ C A ]\n00:35 3 \u00b7 ASSERT: sq(/ C D /) = sq(/ C A /) + sq(/ A D /) + 2\u00b7rect(/ C A /, / A D /)\n00:44 4 \u00b7 ASSERT: add sq(/ D B /) to both sides\n00:57 5 \u00b7 ASSERT: right triangles \u27e8 C B D \u27e9 and \u27e8 A B D \u27e9 by I.47\n01:10 6 \u00b7 \u2234: sq(/ B C /) = sq(/ B A /) + sq(/ A C /) + 2\u00b7rect(/ C A /, / A D /)\n01:23 7 \u00b7 COMMENTARY: Euclidean Law of Cosines (obtuse): c\u00b2 = a\u00b2 + b\u00b2 + 2ap\n01:38 8 \u00b7 GENEALOGY: G.94 dependency tree & symbolic model\n01:53 9 \u00b7 PARTICIPATE: explore the GEOMETOR Elements Codex & participate\n\nExplore the interactive Book Codex, symbolic model, and dependency tree:\n\u2022 Elements Codex (G.94): https://geometor.github.io/elements/elements2/G.94/\n\u2022 Heath Edition (II.12): https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/12/\n\u2022 GitHub: https://github.com/geometor/elements\n\nGEOMETOR \u2022 G.94 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid II.12",
+    "G.94",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/12/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.94/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_ii/12/II_12_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_ii/12/II_12_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_ii/12/II_12.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_ii/12/II_12_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_ii/12/II_12_short_thumb.png"
+  }
+}

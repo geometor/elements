@@ -1,12 +1,12 @@
 :canonical_id: G.128
 :original_id: III.23
-:title: G.128 segment there constructed
+:title: G.128 no two similar unequal circle segments on the same chord
 :volume: II
 :book: III
 :type: prop
 
-G.128 segment there constructed — Heath
-=======================================
+G.128 no two similar unequal circle segments on the same chord — Heath
+======================================================================
 
 .. rubric:: `III.23 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/23/>`_
 
@@ -85,7 +85,7 @@ Dependency Graph
      "G.41" [label="G.41", tooltip="G.41 (I.16): In any triangle, if one side is extended, the exterior angle is greater than either opposite interior angle.", fillcolor="#222244", URL="../G.41/index.html", target="_top"];
      "G.126" [label="G.126", tooltip="G.126 (III.def.6): Asegment of a circle is thefigure contained by asegment and a arc of acircle.", fillcolor="#224422", URL="../G.126/index.html", target="_top"];
      "G.127" [label="G.127", tooltip="G.127 (III.def.11): Similar segments of circles are those which admit equalangles, or in which the angles are equal.", fillcolor="#224422", URL="../G.127/index.html", target="_top"];
-     "G.128" [label="G.128", tooltip="G.128 (III.23): On the same segment there cannot be constructed two similar and unequal segments of circles on the same side.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.128" [label="G.128", tooltip="G.128 (III.23): On the same segment and on the same side of it, there cannot be constructed two similar and unequal segments of circles.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -222,7 +222,6 @@ Dependency Graph
      "G.40" -> "G.22";
      "G.41" -> "G.22";
      "G.127" -> "G.22";
-     "G.128" -> "G.22";
      "G.24" -> "G.23";
      "G.29" -> "G.23";
      "G.25" -> "G.24";

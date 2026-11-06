@@ -1,0 +1,59 @@
+1
+00:00:00,420 --> 00:00:02,221
+Book Four, Proposition Six.
+
+2
+00:00:02,221 --> 00:00:04,821
+In a given circle to inscribe a square.
+
+3
+00:00:04,821 --> 00:00:10,890
+Let A B C D be the given circle; it is required to inscribe a square in the circle A B C D.
+
+4
+00:00:11,310 --> 00:00:20,096
+Draw two diameters A C and B D of the circle A B C D at right angles to one another through the center E.
+
+5
+00:00:20,096 --> 00:00:23,360
+Join the chords A B, B C, C D, and D A.
+
+6
+00:00:23,780 --> 00:00:35,145
+Because B E equals E D, since E is the center, and E A is common and at right angles, by Side-Angle-Side congruence the base A B equals the base A D.
+
+7
+00:00:35,145 --> 00:00:43,382
+For the same reason, B C and C D are also equal to A B and A D, so the quadrilateral A B C D is equilateral.
+
+8
+00:00:43,382 --> 00:00:57,264
+Next, because B D is a diameter, B A D is a semicircle; therefore by Three Thirty-One the angle B A D is right, and for the same reason angles A B C, B C D, and C D A are also right.
+
+9
+00:00:57,264 --> 00:01:08,018
+Being both equilateral and right-angled, A B C D is a square by Definition Twenty-Two, and it has been inscribed in the given circle A B C D.
+
+10
+00:01:08,018 --> 00:01:09,620
+Which was to be done.
+
+11
+00:01:10,040 --> 00:01:14,677
+With Proposition Four Six, Euclid shifts from general triangles to regular polygons.
+
+12
+00:01:14,677 --> 00:01:25,937
+As Heath explains, while any triangle can be inscribed in a circle up to similarity, an equiangular quadrilateral inscribed in a circle is indeterminate in form unless the given quadrilateral is a square.
+
+13
+00:01:25,937 --> 00:01:40,840
+In the GEOMETOR G-Index, node G one hundred fifty-eight pairs Side-Angle-Side congruence for equal sides with Thales' semicircle theorem for right angles, becoming the foundational exhaustion step for cones and cylinders in Book Twelve, Propositions Ten through Fifteen.
+
+14
+00:01:41,260 --> 00:01:54,813
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Four Six in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+15
+00:01:54,813 --> 00:02:01,620
+Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

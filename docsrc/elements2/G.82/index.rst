@@ -2,7 +2,7 @@
 :number: 82
 :canonical_id: G.82
 :original_id: II.1
-:title: G.82 distribute rectangle
+:title: G.82 distributive law of rectangles
 :volume: I
 :book: II
 :type: prop
@@ -10,72 +10,53 @@
 :categories: theorem, proof, plane-geometry, geometric-algebra
 :category: theorem, proof, plane-geometry, geometric-algebra
 :tags: book-ii, point, segment, polygon, straight-line, contained-rectangle, right-angle, parallel-straight-lines, rectangle, number, equality
-:dependencies: G.4, G.21, G.34, G.52, G.58, G.62, G.81
-:excerpt: If there be two segments, and one of them be cut into any number of segments whatever, the rectangle contained by the two segments is equal to the rectangles contained by the uncut segment and each of the segments.
+:dependencies: G.4, G.16, G.21, G.34, G.58, G.62, G.81
+:excerpt: If one of two segments is cut into any number of parts, the rectangle contained by the two segments equals the sum of the rectangles contained by the uncut segment and each of the parts.
 
 .. _G.82:
 .. _II.1:
 
-G.82 distribute rectangle
-=========================
+G.82 distributive law of rectangles
+===================================
 
 .. rubric:: `II.1 <https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/01/>`_
 
 .. enunciation::
 
-   If there be two :term:`segments <G.4>`, and one of them be cut into any number of segments whatever, the :term:`rectangle contained <G.81>` by the two segments is equal to the rectangles contained by the uncut segment and each of the segments.
+   If one of two :term:`segments <G.4>` is cut into any number of parts, the :term:`rectangle contained <G.81>` by the two segments equals the sum of the rectangles contained by the uncut segment and each of the parts.
 
 .. signature:: theorem
 
-   | :fn:`distribute_rectangle <G.82>`\ ()
-   | **prove** the rectangle contained by :g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />` is equal to the rectangle contained by :g:`A <g1:A>`, :g:`/ B D / <g1:/ B D />`, that contained by :g:`A <g1:A>`, :g:`/ D E / <g1:/ D E />` and that contained by :g:`A <g1:A>`, :g:`/ E C / <g1:/ E C />`
+   | :fn:`distribute_rectangle <G.82>`\ (:g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />`, :g:`D <g1:D>`, :g:`E <g1:E>`)
+   | **given** :g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />` (:g:`D <g1:D>`, :g:`E <g1:E>` ∈ :g:`/ B C / <g1:/ B C />`)
+   | **prove** :fn:`contained_rectangle <G.81>`\ (:g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />`) = :fn:`contained_rectangle <G.81>`\ (:g:`A <g1:A>`, :g:`/ B D / <g1:/ B D />`) + :fn:`contained_rectangle <G.81>`\ (:g:`A <g1:A>`, :g:`/ D E / <g1:/ D E />`) + :fn:`contained_rectangle <G.81>`\ (:g:`A <g1:A>`, :g:`/ E C / <g1:/ E C />`)
 
 .. picture:: g1.svg
    :alt: Diagram
 
-.. step:: construct
+.. step:: given
 
-   Let :g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />` be two segments, and let :g:`/ B C / <g1:/ B C />` be cut at random at :g:`D <g1:D>`, :g:`E <g1:E>`
-
-.. step:: construct
-
-   :fn:`perpendicular_at <G.34>`\ (:g:`/ B C / <g1:/ B C />`, :g:`B <g1:B>`) → :g:`/ B F / <g1:/ B F />`
+   :g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />` (:g:`/ B C / <g1:/ B C />` = :g:`/ B D / <g1:/ B D />` + :g:`/ D E / <g1:/ D E />` + :g:`/ E C / <g1:/ E C />`)
 
 .. step:: construct
 
-   :fn:`cut_equal_segment <G.21>`\ (:g:`A <g1:A>`) → :g:`/ B G / <g1:/ B G />` (:eq:`equal <g1:/ B G / = g1:A>`)
+   :fn:`perpendicular_at <G.34>`\ (:g:`/ B C / <g1:/ B C />`, :g:`B <g1:B>`) → :g:`/ B F / <g1:/ B F />` ⊥ :g:`/ B C / <g1:/ B C />`, :fn:`cut_equal_segment <G.21>`\ (:g:`/ B F / <g1:/ B F />`, :g:`A <g1:A>`) → :g:`/ B G / <g1:/ B G />` (:eq:`= <g1:/ B G / = g1:A>` :g:`A <g1:A>`)
 
-.. step:: construct
+.. step:: construct ∵ parallel_line <G.58>
 
-   :fn:`parallel_line <G.58>`\ (:g:`G <g1:G>`, :g:`/ B C / <g1:/ B C />`) → :g:`/ G H / <g1:/ G H />`
+   :fn:`parallel_line <G.58>`\ (:g:`G <g1:G>`, :g:`/ B C / <g1:/ B C />`) → :g:`/ G H / <g1:/ G H />` ∥ :g:`/ B C / <g1:/ B C />`, :fn:`parallel_line <G.58>`\ (:g:`D <g1:D>`, :g:`E <g1:E>`, :g:`C <g1:C>`, :g:`/ B G / <g1:/ B G />`) → :g:`/ D K / <g1:/ D K />` ∥ :g:`/ E L / <g1:/ E L />` ∥ :g:`/ C H / <g1:/ C H />` ∥ :g:`/ B G / <g1:/ B G />`
 
-.. step:: construct
+.. step:: assert ∵ rectangular_parallelogram_said_def <G.81>
 
-   And through :g:`D <g1:D>`, :g:`E <g1:E>`, :g:`C <g1:C>` let :g:`/ D K / <g1:/ D K />`, :g:`/ E L / <g1:/ E L />`, :g:`/ C H / <g1:/ C H />` be drawn :term:`parallel <G.52>` to :g:`/ B G / <g1:/ B G />`.
+   :g:`< B H > <g1:< B H >>` = :g:`< B K > <g1:< B K >>` + :g:`< D L > <g1:< D L >>` + :g:`< E H > <g1:< E H >>`, :g:`/ B G / <g1:/ B G />` :eq:`= <g1:/ B G / = g1:A>` :g:`A <g1:A>` → :g:`< B H > <g1:< B H >>` = :fn:`rectangular_parallelogram_said_def <G.81>`\ (:g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />`), :g:`< B K > <g1:< B K >>` = :fn:`rectangular_parallelogram_said_def <G.81>`\ (:g:`A <g1:A>`, :g:`/ B D / <g1:/ B D />`)
 
-.. step:: assert
+.. step:: assert ∵ parallelogram_properties, rectangular_parallelogram_said_def <G.62, G.81>
 
-   Then :g:`< B H > <g1:< B H >>` is equal to :g:`< B K > <g1:< B K >>`, :g:`< D L > <g1:< D L >>`, :g:`< E H > <g1:< E H >>`
+   :g:`/ D K / <g1:/ D K />` :eq:`= <g1:/ D K / = g1:/ B G / = g1:A>` :g:`/ E L / <g1:/ E L />` :eq:`= <g1:/ E L / = g1:/ B G / = g1:A>` :g:`/ B G / <g1:/ B G />` :eq:`= <g1:/ B G / = g1:A>` :g:`A <g1:A>` → :g:`< D L > <g1:< D L >>` = :fn:`rectangular_parallelogram_said_def <G.81>`\ (:g:`A <g1:A>`, :g:`/ D E / <g1:/ D E />`), :g:`< E H > <g1:< E H >>` = :fn:`rectangular_parallelogram_said_def <G.81>`\ (:g:`A <g1:A>`, :g:`/ E C / <g1:/ E C />`)
 
-.. step:: assert
+.. step:: conclude ∵ equal_transitive <G.16>
 
-   Now :g:`< B H > <g1:< B H >>` is the rectangle :g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />`, for it is contained by :g:`/ B G / <g1:/ B G />`, :g:`/ B C / <g1:/ B C />`, and :g:`/ B G / <g1:/ B G />` :eq:`= <g1:/ B G / = g1:A>` :g:`A <g1:A>`
-
-.. step:: assert
-
-   :g:`< B K > <g1:< B K >>` is the rectangle :g:`A <g1:A>`, :g:`/ B D / <g1:/ B D />`, for it is contained by :g:`/ B G / <g1:/ B G />`, :g:`/ B D / <g1:/ B D />`, and :g:`/ B G / <g1:/ B G />` :eq:`= <g1:/ B G / = g1:A>` :g:`A <g1:A>`
-
-.. step:: assert ∵ parallelogram_properties <G.62>
-
-   :g:`< D L > <g1:< D L >>` is the rectangle :g:`A <g1:A>`, :g:`/ D E / <g1:/ D E />`, for :g:`/ D K / <g1:/ D K />`, that is :g:`/ B G / <g1:/ B G />`, :eq:`= <g1:/ D K / = g1:/ B G / = g1:A>` :g:`A <g1:A>`
-
-.. step:: assert
-
-   Similarly also :g:`< E H > <g1:< E H >>` is the rectangle :g:`A <g1:A>`, :g:`/ E C / <g1:/ E C />`
-
-.. step:: conclude
-
-   the rectangle :g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />` is equal to the rectangle :g:`A <g1:A>`, :g:`/ B D / <g1:/ B D />`, the rectangle :g:`A <g1:A>`, :g:`/ D E / <g1:/ D E />` and the rectangle :g:`A <g1:A>`, :g:`/ E C / <g1:/ E C />`
+   :fn:`rectangular_parallelogram_said_def <G.81>`\ (:g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />`) = :fn:`rectangular_parallelogram_said_def <G.81>`\ (:g:`A <g1:A>`, :g:`/ B D / <g1:/ B D />`) + :fn:`rectangular_parallelogram_said_def <G.81>`\ (:g:`A <g1:A>`, :g:`/ D E / <g1:/ D E />`) + :fn:`rectangular_parallelogram_said_def <G.81>`\ (:g:`A <g1:A>`, :g:`/ E C / <g1:/ E C />`)
 
 Dependency Graph
 ----------------
@@ -139,7 +120,7 @@ Dependency Graph
      "G.61" [label="G.61", tooltip="G.61 (I.def.17): A diameter of a circle is any segment drawn through the center and terminated in both directions by the arc of the circle; it bisects the circle.", fillcolor="#224422", URL="../G.61/index.html", target="_top"];
      "G.62" [label="G.62", tooltip="G.62 (I.34): In a parallelogram, opposite sides and opposite angles are equal, and the diagonal bisects the area.", fillcolor="#222244", URL="../G.62/index.html", target="_top"];
      "G.81" [label="G.81", tooltip="G.81 (II.def.1): Any rectangular parallelogram is said to becontained by the twosegments containing theright angle.", fillcolor="#224422", URL="../G.81/index.html", target="_top"];
-     "G.82" [label="G.82", tooltip="G.82 (II.1): If there be two segments, and one of them be cut into any number of segments whatever, the rectangle contained by the two segments is equal to the rectangles contained by the uncut...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.82" [label="G.82", tooltip="G.82 (II.1): If one of two segments is cut into any number of parts, the rectangle contained by the two segments equals the sum of the rectangles contained by the uncut segment and each of the ...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -272,6 +253,7 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.51" -> "G.14";
      "G.58" -> "G.14";
      "G.17" -> "G.15";
@@ -283,7 +265,9 @@ Dependency Graph
      "G.21" -> "G.16";
      "G.37" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.56" -> "G.16";
+     "G.82" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
@@ -292,6 +276,7 @@ Dependency Graph
      "G.25" -> "G.18";
      "G.41" -> "G.18";
      "G.45" -> "G.18";
+     "G.53" -> "G.18";
      "G.58" -> "G.18";
      "G.20" -> "G.19";
      "G.25" -> "G.19";
@@ -304,6 +289,7 @@ Dependency Graph
      "G.43" -> "G.21";
      "G.45" -> "G.21";
      "G.47" -> "G.21";
+     "G.51" -> "G.21";
      "G.82" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
@@ -335,11 +321,14 @@ Dependency Graph
      "G.51" -> "G.24";
      "G.62" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.51" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -378,7 +367,6 @@ Dependency Graph
      "G.56" -> "G.52";
      "G.58" -> "G.52";
      "G.62" -> "G.52";
-     "G.82" -> "G.52";
      "G.58" -> "G.53";
      "G.56" -> "G.55";
      "G.62" -> "G.56";

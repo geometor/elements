@@ -1,12 +1,12 @@
 :canonical_id: G.130
 :original_id: III.25
-:title: G.130 segment circle describe
+:title: G.130 complete a circle from a given segment
 :volume: II
 :book: III
 :type: prop
 
-G.130 segment circle describe — Heath
-=====================================
+G.130 complete a circle from a given segment — Heath
+====================================================
 
 .. rubric:: `III.25 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/25/>`_
 
@@ -155,9 +155,9 @@ Dependency Graph
      "G.61" [label="G.61", tooltip="G.61 (I.def.17): A diameter of a circle is any segment drawn through the center and terminated in both directions by the arc of the circle; it bisects the circle.", fillcolor="#224422", URL="../G.61/index.html", target="_top"];
      "G.96" [label="G.96", tooltip="G.96 (I.def.18): A semicircle is the figure contained by a diameter and the arc cut off by it.", fillcolor="#224422", URL="../G.96/index.html", target="_top"];
      "G.98" [label="G.98", tooltip="G.98 (III.1): Find the center of a given circle.", fillcolor="#222244", URL="../G.98/index.html", target="_top"];
-     "G.107" [label="G.107", tooltip="G.107 (III.9): If a point be taken within a circle, and more than two equal segments fall from the point on the circle, the point taken is the center of the circle.", fillcolor="#222244", URL="../G.107/index.html", target="_top"];
+     "G.107" [label="G.107", tooltip="G.107 (III.9): A point within a circle from which more than two equal segments fall on the circle is the center of the circle.", fillcolor="#222244", URL="../G.107/index.html", target="_top"];
      "G.126" [label="G.126", tooltip="G.126 (III.def.6): Asegment of a circle is thefigure contained by asegment and a arc of acircle.", fillcolor="#224422", URL="../G.126/index.html", target="_top"];
-     "G.130" [label="G.130", tooltip="G.130 (III.25): Given a segment of a circle, to describe the complete circle of which it is a segment.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.130" [label="G.130", tooltip="G.130 (III.25): Given a segment of a circle, complete the full circle of which it is a segment.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -180,9 +180,7 @@ Dependency Graph
      "G.45" -> "G.1";
      "G.47" -> "G.1";
      "G.48" -> "G.1";
-     "G.98" -> "G.1";
      "G.107" -> "G.1";
-     "G.130" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
      "G.6" -> "G.2";
@@ -261,7 +259,6 @@ Dependency Graph
      "G.96" -> "G.11";
      "G.98" -> "G.11";
      "G.107" -> "G.11";
-     "G.130" -> "G.11";
      "G.13" -> "G.12";
      "G.17" -> "G.12";
      "G.20" -> "G.12";
@@ -292,16 +289,22 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
+     "G.98" -> "G.14";
+     "G.107" -> "G.14";
      "G.130" -> "G.14";
      "G.17" -> "G.15";
      "G.20" -> "G.15";
      "G.21" -> "G.15";
      "G.47" -> "G.15";
+     "G.130" -> "G.15";
      "G.17" -> "G.16";
      "G.20" -> "G.16";
      "G.21" -> "G.16";
      "G.37" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
+     "G.130" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
@@ -310,6 +313,7 @@ Dependency Graph
      "G.25" -> "G.18";
      "G.41" -> "G.18";
      "G.45" -> "G.18";
+     "G.107" -> "G.18";
      "G.130" -> "G.18";
      "G.20" -> "G.19";
      "G.25" -> "G.19";
@@ -340,21 +344,23 @@ Dependency Graph
      "G.44" -> "G.22";
      "G.45" -> "G.22";
      "G.48" -> "G.22";
-     "G.98" -> "G.22";
-     "G.130" -> "G.22";
      "G.24" -> "G.23";
      "G.29" -> "G.23";
      "G.25" -> "G.24";
      "G.27" -> "G.24";
      "G.32" -> "G.24";
      "G.41" -> "G.24";
+     "G.130" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.27" -> "G.26";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.98" -> "G.26";
      "G.130" -> "G.27";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
@@ -367,14 +373,17 @@ Dependency Graph
      "G.32" -> "G.31";
      "G.41" -> "G.32";
      "G.98" -> "G.32";
+     "G.107" -> "G.32";
+     "G.130" -> "G.32";
      "G.34" -> "G.33";
      "G.37" -> "G.33";
      "G.38" -> "G.33";
      "G.40" -> "G.33";
      "G.98" -> "G.33";
      "G.107" -> "G.33";
-     "G.130" -> "G.33";
      "G.37" -> "G.34";
+     "G.98" -> "G.34";
+     "G.130" -> "G.34";
      "G.37" -> "G.36";
      "G.40" -> "G.37";
      "G.40" -> "G.38";

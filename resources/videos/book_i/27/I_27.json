@@ -1,0 +1,61 @@
+{
+  "voice_id": "voice_xdhacg1pn1cq",
+  "audio_wav": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_i/27/I_27.wav",
+  "total_duration_sec": 70.26,
+  "segments": [
+    {
+      "index": 0,
+      "bell": "bell:proposition",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Euclid's Elements, Book One, Proposition Twenty-Seven. If a transversal cutting two lines makes the alternate interior angles equal, the lines are parallel. Let segment E F fall on segments A B and C D so that the alternate interior angles A E F and E F D are equal. We prove that segment A B is parallel to segment C D.",
+      "start_sec": 0.0,
+      "end_sec": 18.89,
+      "duration_sec": 18.89,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Euclid's Elements, Book One, Proposition Twenty-Seven. If a transversal cutting two lines makes the alternate interior angles equal, the lines are parallel. Let segment E F fall on segments A B and C D so that the alternate interior angles A E F and E F D are equal. We prove that segment A B is parallel to segment C D.",
+          "start_sec": 0.0,
+          "end_sec": 18.89,
+          "duration_sec": 18.89
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "bell": "bell:construction",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Suppose segment A B is not parallel to segment C D. Then when extended in both directions, they must meet either toward B and D, or toward A and C. Let them be extended and meet toward B and D at point G, forming triangle G E F.",
+      "start_sec": 18.89,
+      "end_sec": 34.32,
+      "duration_sec": 15.43,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Suppose segment A B is not parallel to segment C D. Then when extended in both directions, they must meet either toward B and D, or toward A and C. Let them be extended and meet toward B and D at point G, forming triangle G E F.",
+          "start_sec": 18.89,
+          "end_sec": 34.32,
+          "duration_sec": 15.43
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "bell": "bell:insight",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "In triangle G E F, angle A E F is an exterior angle, and angle E F G is the opposite interior angle. By hypothesis, angle A E F equals angle E F G. Yet by Proposition Sixteen, the exterior angle of a triangle is strictly greater than either opposite interior angle, which is impossible. Thus segments A B and C D cannot meet toward B and D, nor similarly toward A and C. By Definition Twenty-Three, lines in the same plane that never meet in either direction are parallel. Therefore segment A B is parallel to segment C D, as was required to prove.",
+      "start_sec": 34.32,
+      "end_sec": 70.26,
+      "duration_sec": 35.94,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "In triangle G E F, angle A E F is an exterior angle, and angle E F G is the opposite interior angle. By hypothesis, angle A E F equals angle E F G. Yet by Proposition Sixteen, the exterior angle of a triangle is strictly greater than either opposite interior angle, which is impossible. Thus segments A B and C D cannot meet toward B and D, nor similarly toward A and C. By Definition Twenty-Three, lines in the same plane that never meet in either direction are parallel. Therefore segment A B is parallel to segment C D, as was required to prove.",
+          "start_sec": 34.32,
+          "end_sec": 70.26,
+          "duration_sec": 35.94
+        }
+      ]
+    }
+  ]
+}

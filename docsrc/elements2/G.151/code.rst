@@ -1,12 +1,12 @@
 :canonical_id: G.151
 :original_id: IV.3
-:title: G.151 circumscribe triangle about circle
+:title: G.151 circumscribe a triangle about a circle equiangular with a triangle
 :volume: II
 :book: IV
 :type: prop
 
-G.151 circumscribe triangle about circle — Code
-===============================================
+G.151 circumscribe a triangle about a circle equiangular with a triangle — Code
+===============================================================================
 
 .. rubric:: `IV.3 <https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/03/>`_
 

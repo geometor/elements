@@ -1,0 +1,412 @@
+[
+  {
+    "prop_id": "BOOK IV • PROP. 3",
+    "short_title": "circumscribe a triangle about a circle equiangular with a triangle",
+    "g_id": "G.151",
+    "folio": "Folios 0089–0090 • pp. 83–84",
+    "enunciation": "About a given circle to circumscribe a triangle equiangular with a given triangle.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.151/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.151/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/03/",
+    "step_total": 9,
+    "subslides": [
+      {
+        "step_num": 1,
+        "step_kind": "GIVEN",
+        "chapter": "given circle ( A B C ) and triangle < D E F >",
+        "symbolic": "( A B C ), < D E F > → circumscribe equiangular < L M N >",
+        "visible_ids": [
+          "el-circle-ABC",
+          "el-tri-DEF",
+          "el-seg-DE",
+          "el-seg-EF",
+          "el-seg-FD",
+          "el-pt-D",
+          "el-pt-E",
+          "el-pt-F",
+          "lbl-D",
+          "lbl-E",
+          "lbl-F"
+        ],
+        "active_ids": [
+          "el-circle-ABC",
+          "hl-circle-ABC",
+          "el-tri-DEF",
+          "hl-tri-DEF",
+          "el-seg-DE",
+          "hl-seg-DE",
+          "el-seg-EF",
+          "hl-seg-EF",
+          "el-seg-FD",
+          "hl-seg-FD",
+          "el-pt-D",
+          "el-pt-E",
+          "el-pt-F",
+          "lbl-D",
+          "lbl-E",
+          "lbl-F"
+        ],
+        "equal_ids": [],
+        "clause_html": "<div class=\"clause-line\">Let <span class=\"g-tok\">( A B C )</span> be the given circle and <span class=\"g-tok\">&lt; D E F &gt;</span> the given triangle;</div><div class=\"clause-line\">it is required to circumscribe about <span class=\"g-tok\">( A B C )</span> an equiangular <span class=\"eq-tok\">&lt; L M N &gt;</span>.</div>",
+        "just_id": "G.10 • I.def.15, G.150 • IV.def.4",
+        "just_title": "A rectilineal figure is circumscribed about a circle when each side of the figure touches the circumference."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK IV • PROP. 3",
+    "short_title": "circumscribe a triangle about a circle equiangular with a triangle",
+    "g_id": "G.151",
+    "folio": "Folios 0089–0090 • pp. 83–84",
+    "enunciation": "About a given circle to circumscribe a triangle equiangular with a given triangle.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.151/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.151/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/03/",
+    "step_total": 9,
+    "subslides": [
+      {
+        "step_num": 2,
+        "step_kind": "CONSTRUCT",
+        "chapter": "extend / E F / to G, H; find center K; copy < B K A ) = < D E G ), < B K C ) = < D F H )",
+        "symbolic": "center K, < B K A ) = < D E G ), < B K C ) = < D F H )",
+        "visible_ids": [
+          "el-circle-ABC",
+          "el-seg-KA",
+          "el-seg-KB",
+          "el-seg-KC",
+          "el-tri-DEF",
+          "el-seg-DE",
+          "el-seg-EF",
+          "el-seg-FD",
+          "el-seg-HG",
+          "el-seg-EG",
+          "el-seg-FH",
+          "el-pt-K",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-E",
+          "el-pt-F",
+          "el-pt-G",
+          "el-pt-H",
+          "lbl-K",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E",
+          "lbl-F",
+          "lbl-G",
+          "lbl-H"
+        ],
+        "active_ids": [
+          "el-seg-KA",
+          "hl-seg-KA",
+          "el-seg-KB",
+          "hl-seg-KB",
+          "el-seg-KC",
+          "hl-seg-KC",
+          "el-seg-HG",
+          "hl-seg-HG",
+          "el-pt-K",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-G",
+          "el-pt-H",
+          "lbl-K",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-G",
+          "lbl-H"
+        ],
+        "equal_ids": [
+          "el-ang-BKA",
+          "hl-ang-BKA",
+          "hl-arc-BKA",
+          "el-ang-DEG",
+          "hl-ang-DEG",
+          "hl-arc-DEG",
+          "el-ang-BKC",
+          "hl-ang-BKC",
+          "hl-arc-BKC",
+          "el-ang-DFH",
+          "hl-ang-DFH",
+          "hl-arc-DFH"
+        ],
+        "clause_html": "<div class=\"clause-line\">Produce <span class=\"g-tok\">/ E F /</span> to <span class=\"g-tok\">G, H</span>; find center <span class=\"g-tok\">K</span> and draw <span class=\"g-tok\">/ K B /</span>;</div><div class=\"clause-line\">construct <span class=\"eq-tok\">&lt; B K A ) = &lt; D E G )</span> and <span class=\"eq-tok\">&lt; B K C ) = &lt; D F H )</span>.</div>",
+        "just_id": "G.18 • I.post.2, G.98 • III.1, G.48 • I.23",
+        "just_title": "Extend base / E F / to form exterior angles, find center K (III.1), and copy the exterior angles at K (I.23)."
+      },
+      {
+        "step_num": 3,
+        "step_kind": "CONSTRUCT",
+        "chapter": "draw tangents / L A M /, / M B N /, / N C L / at A, B, C",
+        "symbolic": "tangents at A, B, C → circumscribed < L M N >",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-tri-LMN",
+          "hl-tri-LMN",
+          "el-seg-LM",
+          "hl-seg-LM",
+          "el-seg-MN",
+          "hl-seg-MN",
+          "el-seg-NL",
+          "hl-seg-NL",
+          "el-pt-L",
+          "el-pt-M",
+          "el-pt-N",
+          "lbl-L",
+          "lbl-M",
+          "lbl-N"
+        ],
+        "equal_ids": [
+          "el-ang-BKA",
+          "hl-ang-BKA",
+          "hl-arc-BKA",
+          "el-ang-DEG",
+          "hl-ang-DEG",
+          "hl-arc-DEG",
+          "el-ang-BKC",
+          "hl-ang-BKC",
+          "hl-arc-BKC",
+          "el-ang-DFH",
+          "hl-ang-DFH",
+          "hl-arc-DFH"
+        ],
+        "clause_html": "<div class=\"clause-line\">Through <span class=\"g-tok\">A, B, C</span> draw tangents <span class=\"g-tok\">/ L A M /</span>, <span class=\"g-tok\">/ M B N /</span>, <span class=\"g-tok\">/ N C L /</span></div><div class=\"clause-line\">touching circle <span class=\"g-tok\">( A B C )</span> to form <span class=\"g-tok\">&lt; L M N &gt;</span>.</div>",
+        "just_id": "G.118 • III.16 Por.",
+        "just_title": "Lines drawn at right angles to radii / K A /, / K B /, / K C / at their extremities touch circle ( A B C )."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK IV • PROP. 3",
+    "short_title": "circumscribe a triangle about a circle equiangular with a triangle",
+    "g_id": "G.151",
+    "folio": "Folios 0089–0090 • pp. 83–84",
+    "enunciation": "About a given circle to circumscribe a triangle equiangular with a given triangle.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.151/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.151/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/03/",
+    "step_total": 9,
+    "subslides": [
+      {
+        "step_num": 4,
+        "step_kind": "ASSERT",
+        "chapter": "in quadrilateral < A M B K >, < K A M ) & < K B M ) are right → < A K B ) + < A M B ) = 2R",
+        "symbolic": "< K A M ) = < K B M ) = right → < A K B ) + < A M B ) = 2 right angles",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-quad-AMBK",
+          "hl-quad-AMBK",
+          "el-seg-KA",
+          "hl-seg-KA",
+          "el-seg-KB",
+          "hl-seg-KB",
+          "el-seg-AM",
+          "hl-seg-AM",
+          "el-seg-MB",
+          "hl-seg-MB",
+          "el-ang-BKA",
+          "hl-ang-BKA",
+          "el-ang-AMB",
+          "hl-ang-AMB"
+        ],
+        "equal_ids": [
+          "el-ang-KAM",
+          "hl-ang-KAM",
+          "hl-arc-KAM",
+          "el-ang-KBM",
+          "hl-ang-KBM",
+          "hl-arc-KBM"
+        ],
+        "clause_html": "<div class=\"clause-line\">By III.18, <span class=\"eq-tok\">&lt; K A M ) and &lt; K B M ) are right</span>;</div><div class=\"clause-line\">in <span class=\"g-tok\">&lt; A M B K &gt;</span>, remaining <span class=\"eq-tok\">&lt; A K B ) + &lt; A M B ) = 2 right angles</span>.</div>",
+        "just_id": "G.120 • III.18, G.59 • I.32",
+        "just_title": "Quadrilateral < A M B K > divides into two triangles (4 right angles); subtracting 2 right angles leaves 2 right angles."
+      },
+      {
+        "step_num": 5,
+        "step_kind": "ASSERT",
+        "chapter": "< A M B ) = < D E F ) and similarly < L N B ) = < D F E )",
+        "symbolic": "< A K B ) = < D E G ) → < A M B ) = < D E F ); < L N B ) = < D F E )",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-seg-LM",
+          "hl-seg-LM",
+          "el-seg-MN",
+          "hl-seg-MN",
+          "el-seg-NL",
+          "hl-seg-NL",
+          "el-pt-M",
+          "el-pt-N",
+          "el-pt-E",
+          "el-pt-F",
+          "lbl-M",
+          "lbl-N",
+          "lbl-E",
+          "lbl-F"
+        ],
+        "equal_ids": [
+          "el-ang-AMB",
+          "hl-ang-AMB",
+          "hl-arc-AMB",
+          "el-ang-DEF",
+          "hl-ang-DEF",
+          "hl-arc-DEF",
+          "el-ang-LNB",
+          "hl-ang-LNB",
+          "hl-arc-LNB",
+          "el-ang-DFE",
+          "hl-ang-DFE",
+          "hl-arc-DFE"
+        ],
+        "clause_html": "<div class=\"clause-line\">Since <span class=\"g-tok\">&lt; D E G ) + &lt; D E F ) = 2R</span> and <span class=\"eq-tok\">&lt; A K B ) = &lt; D E G )</span>,</div><div class=\"clause-line\">remaining <span class=\"eq-tok\">&lt; A M B ) = &lt; D E F )</span>; similarly <span class=\"eq-tok\">&lt; L N B ) = &lt; D F E )</span>.</div>",
+        "just_id": "G.37 • I.13, G.19 • I.cn.3",
+        "just_title": "Subtracting equal angles < A K B ) and < D E G ) from two right angles leaves < A M B ) equal to < D E F )."
+      },
+      {
+        "step_num": 6,
+        "step_kind": "∴",
+        "is_punchline": true,
+        "chapter": "< M L N ) = < E D F ) → < L M N > circumscribed about ( A B C )",
+        "symbolic": "∴ < M L N ) = < E D F ) & < L M N > circumscribed about ( A B C )",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-circle-ABC",
+          "hl-circle-ABC",
+          "el-tri-LMN",
+          "hl-tri-LMN",
+          "el-tri-DEF",
+          "hl-tri-DEF",
+          "el-seg-LM",
+          "hl-seg-LM",
+          "el-seg-MN",
+          "hl-seg-MN",
+          "el-seg-NL",
+          "hl-seg-NL"
+        ],
+        "equal_ids": [
+          "el-ang-MLN",
+          "hl-ang-MLN",
+          "hl-arc-MLN",
+          "el-ang-EDF",
+          "hl-ang-EDF",
+          "hl-arc-EDF",
+          "el-ang-AMB",
+          "hl-ang-AMB",
+          "hl-arc-AMB",
+          "el-ang-DEF",
+          "hl-ang-DEF",
+          "hl-arc-DEF",
+          "el-ang-LNB",
+          "hl-ang-LNB",
+          "hl-arc-LNB",
+          "el-ang-DFE",
+          "hl-ang-DFE",
+          "hl-arc-DFE"
+        ],
+        "clause_html": "<div class=\"clause-line\">By I.32, remaining <span class=\"eq-tok\">&lt; M L N ) = &lt; E D F )</span>;</div><div class=\"clause-line\">∴ <span class=\"eq-tok\">&lt; L M N &gt; is circumscribed about ( A B C )</span> equiangular with <span class=\"g-tok\">&lt; D E F &gt;</span>.</div>",
+        "just_id": "G.59 • I.32, G.150 • IV.def.4",
+        "just_title": "The third angle < M L N ) equals < E D F ), and all three sides touch circle ( A B C ) (Q.E.F.)."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK IV • PROP. 3",
+    "short_title": "circumscribe a triangle about a circle equiangular with a triangle",
+    "g_id": "G.151",
+    "folio": "Folios 0089–0090 • pp. 83–84",
+    "enunciation": "About a given circle to circumscribe a triangle equiangular with a given triangle.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.151/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.151/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/03/",
+    "step_total": 9,
+    "widescreen_only": true,
+    "subslides": [
+      {
+        "step_num": 7,
+        "step_kind": "COMMENTARY",
+        "widescreen_only": true,
+        "chapter": "convergence of tangents & Peletier–Borelli 8-triangle configuration",
+        "symbolic": "3 pairs of parallel tangents ⇒ 2 circumscribed + 6 escribed triangles",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-circle-ABC",
+          "hl-circle-ABC",
+          "el-tri-LMN",
+          "hl-tri-LMN",
+          "el-quad-AMBK",
+          "hl-quad-AMBK",
+          "el-pt-K",
+          "lbl-K"
+        ],
+        "equal_ids": [
+          "el-ang-BKA",
+          "hl-ang-BKA",
+          "hl-arc-BKA",
+          "el-ang-BKC",
+          "hl-ang-BKC",
+          "hl-arc-BKC",
+          "el-ang-CKA",
+          "hl-ang-CKA",
+          "hl-arc-CKA"
+        ],
+        "clause_html": "<div class=\"clause-line\"><strong>Peletier &amp; Borelli on IV.3</strong>: Circumscribed &amp; Escribed Triangles</div><div class=\"clause-line\"><span class=\"eq-tok\">&lt; A K B ), &lt; B K C ), &lt; C K A ) &lt; 2R</span> ⇒ tangents meet</div><div class=\"clause-line\" style=\"font-size:28px;color:#cbd5e1;\">Drawing tangents parallel to an inscribed IV.2 triangle yields 8 triangles: 2 circumscribed about ( A B C ) and 6 for which ( A B C ) is an escribed circle.</div>",
+        "just_tag": "✦ HEATH COMMENTARY",
+        "just_id": "Heath (1908) • Vol. II, pp. 84–85",
+        "just_title": "Proves that the three tangents intersect and analyzes the 8 triangles formed by three pairs of parallel tangents."
+      },
+      {
+        "step_num": 8,
+        "step_kind": "GENEALOGY",
+        "widescreen_only": true,
+        "chapter": "G.151 dependency tree & symbolic model",
+        "symbolic": "G.37, G.48, G.59, G.98, G.118, G.120, G.150 → G.151",
+        "stage_html": "<div style=\"width:100%;height:100%;display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:36px 8px 8px 8px;align-items:stretch;\"><div style=\"background:rgba(11,14,21,0.92);border:1.5px solid rgba(56,189,248,0.45);border-radius:16px;padding:22px 24px;display:flex;flex-direction:column;justify-content:space-between;\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.12em;color:#38bdf8;\">◈ G-INDEX PREREQUISITES → G.151</div><div style=\"display:flex;flex-direction:column;gap:10px;margin:12px 0;\"><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #5ec27e;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.150 (IV.def.4)</span><span style=\"color:#f4f1ea;\">circumscribed about circle</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.120 (III.18)</span><span style=\"color:#f4f1ea;\">radius ⊥ tangent</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.118 (III.16)</span><span style=\"color:#f4f1ea;\">tangent at diameter extremity</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.98 (III.1)</span><span style=\"color:#f4f1ea;\">find center of circle</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.37 (I.13) &amp; G.59 (I.32)</span><span style=\"color:#f4f1ea;\">supplementary &amp; triangle angles</span></div></div><div style=\"background:rgba(232,184,90,0.16);border:1.5px solid #e8b85a;border-radius:10px;padding:11px 16px;text-align:center;font-family:'JetBrains Mono',monospace;font-size:17px;font-weight:700;color:#e8b85a;\">↓ G.151 (IV.3) • circumscribe triangle about circle</div></div><div style=\"background:rgba(11,14,21,0.92);border:1.5px solid rgba(232,184,90,0.4);border-radius:16px;padding:22px 24px;display:flex;flex-direction:column;justify-content:space-between;\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.12em;color:#e8b85a;\">⚙ GEOMETOR.MODEL • G.151/g1.py</div><pre style=\"font-family:'JetBrains Mono',monospace;font-size:14.5px;line-height:1.48;color:#e2e8f0;background:rgba(7,9,14,0.85);padding:16px;border-radius:10px;border:1px solid rgba(148,163,184,0.25);overflow:hidden;\">model = Model(&quot;IV.3&quot;)\nmodel.construct_circle(K, A)\nmodel.construct_line(L, M)\nmodel.construct_line(M, N)\nmodel.construct_line(N, L)\n\n# Circumscribed LMN, given DEF, quad AMBK\nmodel.set_polygon([L, M, N])\nmodel.set_polygon([D, E, F])\nmodel.set_polygon([A, M, B, K])</pre><div style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">59 total ancestor nodes in G-Index • Dual of Proposition IV.2</div></div></div>",
+        "clause_html": "<div class=\"clause-line\"><span class=\"coincide-tok\">G.151</span> synthesizes <span class=\"g-tok\">12 direct prerequisites</span></div><div class=\"clause-line\">across <span class=\"g-tok\">59 total ancestor nodes</span> in the G-Index</div><div class=\"clause-line\" style=\"font-size:28px;color:#cbd5e1;\">Unites III.1 center-finding and III.18 tangent perpendicularity with quadrilateral angle-sum duality.</div>",
+        "just_tag": "◈ G-INDEX GENEALOGY",
+        "just_id": "G.151 • 12 Direct Rules",
+        "just_title": "Depends on G.10, G.12, G.18, G.22, G.33, G.37 (I.13), G.48 (I.23), G.59 (I.32), G.98 (III.1), G.118 (III.16), G.120 (III.18), and G.150 (IV.def.4)."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK IV • PROP. 3",
+    "short_title": "circumscribe a triangle about a circle equiangular with a triangle",
+    "g_id": "G.151",
+    "folio": "Folios 0089–0090 • pp. 83–84",
+    "enunciation": "About a given circle to circumscribe a triangle equiangular with a given triangle.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.151/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.151/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/03/",
+    "step_total": 9,
+    "widescreen_only": true,
+    "subslides": [
+      {
+        "step_num": 9,
+        "step_kind": "PARTICIPATE",
+        "widescreen_only": true,
+        "chapter": "explore the GEOMETOR Elements Codex & participate",
+        "symbolic": "geometor.github.io/elements",
+        "stage_html": "<div style=\"width:100%;height:100%;display:flex;flex-direction:column;justify-content:space-between;padding:42px 16px 12px 16px;gap:20px;\"><div style=\"background:linear-gradient(135deg,rgba(232,184,90,0.16) 0%,rgba(16,20,29,0.95) 100%);border:2px solid rgba(232,184,90,0.55);border-radius:18px;padding:28px 32px;display:flex;flex-direction:column;gap:12px;box-shadow:0 16px 40px rgba(0,0,0,0.6);\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.16em;color:#e8b85a;\">★ INTERACTIVE DIGITAL EDITION</div><div style=\"font-family:Georgia,serif;font-size:38px;font-weight:700;color:#f8f6f0;\">GEOMETOR • Elements Codex</div><div style=\"font-family:'JetBrains Mono',monospace;font-size:22px;color:#5ec27e;font-weight:700;\">https://geometor.github.io/elements/elements2/G.151/</div></div><div style=\"display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;flex:1;\"><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#e8b85a;font-weight:700;\">01 • PSEUDOCODE</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Hover-synced symbolic steps, signatures, and interactive SVG diagrams.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 1 • G.151</span></div><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#38bdf8;font-weight:700;\">02 • PYTHON MODEL</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Executable geometor.model scripts with exact algebraic coordinates.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 2 • g1.py</span></div><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#5ec27e;font-weight:700;\">03 • HEATH (1908)</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Complete classical translation, folio plates, and historical commentary.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 3 • Folios 0089–0090</span></div></div></div>",
+        "clause_html": "<div class=\"clause-line\">Explore the <span class=\"g-tok\">Elements Codex</span> &amp; <span class=\"eq-tok\">G-Index</span></div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Subscribe to <strong>@geometor</strong> for all 465 propositions</div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Share questions &amp; insights in the comments</div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Star &amp; contribute at <strong>github.com/geometor</strong></div>",
+        "just_tag": "★ PARTICIPATE & SUPPORT",
+        "just_id": "github.com/geometor/elements",
+        "just_title": "Open-source symbolic reconstruction of Euclid's Elements — links in the video description."
+      }
+    ]
+  }
+]

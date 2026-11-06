@@ -1,0 +1,81 @@
+WEBVTT
+
+1
+00:00:00.420 --> 00:00:02.663
+Book Three, Proposition Fifteen.
+
+2
+00:00:02.663 --> 00:00:12.198
+Of straight lines in a circle the diameter is greatest, and of the rest the nearer to the center is always greater than the more remote.
+
+3
+00:00:12.198 --> 00:00:21.732
+Let A B C D be a circle, let A D be its diameter and E the center, and let the chord B C be nearer to the center E, and F G more remote.
+
+4
+00:00:21.732 --> 00:00:27.130
+We claim that the diameter A D is greatest, and that B C is greater than F G.
+
+5
+00:00:27.550 --> 00:00:33.461
+From the center E, draw E H and E K perpendicular to B C and F G.
+
+6
+00:00:33.461 --> 00:00:44.647
+Since B C is nearer to the center and F G more remote, by Definition Three Five, the perpendicular E K is greater than E H.
+
+7
+00:00:44.647 --> 00:00:48.830
+On E K, cut off E L equal to E H by One Three.
+
+8
+00:00:48.830 --> 00:00:57.560
+Through L, draw the chord M N at right angles to E K, and join the radii M E, E N, F E, and E G.
+
+9
+00:00:57.980 --> 00:01:06.712
+Because the perpendiculars E H and E L are equal, by Three Fourteen the chords B C and M N are also equal.
+
+10
+00:01:06.712 --> 00:01:14.538
+Now the radii A E and E D equal M E and E N, so the diameter A D equals the sum of M E and E N.
+
+11
+00:01:14.538 --> 00:01:27.141
+By One Twenty, in triangle M E N, the two sides M E and E N together are greater than M N—and since M N equals B C, the diameter A D is greater than B C.
+
+12
+00:01:27.141 --> 00:01:41.310
+Furthermore, in triangles M E N and F E G, the two radii M E and E N equal the two radii F E and E G, while the central angle M E N is greater than the central angle F E G.
+
+13
+00:01:41.310 --> 00:01:52.184
+By One Twenty-Four, the hinge theorem, the base M N is greater than the base F G; and since B C equals M N, B C is greater than F G.
+
+14
+00:01:52.184 --> 00:02:01.081
+Therefore, the diameter A D is greatest, and the nearer chord B C is greater than the more remote chord F G.
+
+15
+00:02:01.081 --> 00:02:03.140
+As was required to prove.
+
+16
+00:02:03.560 --> 00:02:22.959
+Heath highlights the elegance of Euclid's construction in Proposition Three Fifteen: rather than comparing the squares on the half-chords directly via One Forty-Seven—as Theodosius and Robert Simson later did—Euclid transfers the nearer chord B C by rotation to the auxiliary chord M N perpendicular to E K.
+
+17
+00:02:22.959 --> 00:02:32.310
+Once B C is aligned with F G along the same central ray E K, the comparison reduces immediately to Book One's triangle inequality and hinge theorem.
+
+18
+00:02:32.310 --> 00:02:44.000
+In the GEOMETOR G-Index, node G one hundred sixteen unites eleven direct prerequisites across sixty-five ancestor nodes, completing the foundational chord-metric theorems of Book Three.
+
+19
+00:02:44.420 --> 00:02:58.049
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Fifteen in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+20
+00:02:58.049 --> 00:03:04.740
+Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

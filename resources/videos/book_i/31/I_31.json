@@ -1,0 +1,61 @@
+{
+  "voice_id": "voice_xdhacg1pn1cq",
+  "audio_wav": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_i/31/I_31.wav",
+  "total_duration_sec": 52.54,
+  "segments": [
+    {
+      "index": 0,
+      "bell": "bell:proposition",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Euclid's Elements, Book One, Proposition Thirty-One. Construct through a given point a line parallel to a given line. Let A be the given point, and segment B C the given line. We construct through point A a line parallel to segment B C.",
+      "start_sec": 0.0,
+      "end_sec": 14.33,
+      "duration_sec": 14.33,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Euclid's Elements, Book One, Proposition Thirty-One. Construct through a given point a line parallel to a given line. Let A be the given point, and segment B C the given line. We construct through point A a line parallel to segment B C.",
+          "start_sec": 0.0,
+          "end_sec": 14.33,
+          "duration_sec": 14.33
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "bell": "bell:construction",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Take a point D at random on segment B C, and construct segment A D. By Proposition Twenty-Three, on segment D A and at point A on it, construct angle D A E equal to angle A D C. Then extend segment E A in a straight line to A F.",
+      "start_sec": 14.33,
+      "end_sec": 31.96,
+      "duration_sec": 17.63,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Take a point D at random on segment B C, and construct segment A D. By Proposition Twenty-Three, on segment D A and at point A on it, construct angle D A E equal to angle A D C. Then extend segment E A in a straight line to A F.",
+          "start_sec": 14.33,
+          "end_sec": 31.96,
+          "duration_sec": 17.63
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "bell": "bell:insight",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Since transversal A D falling on segments B C and E F makes the alternate interior angles D A E and A D C equal, by Proposition Twenty-Seven, segment E F is parallel to segment B C. Therefore through the given point A, line E A F has been constructed parallel to the given line B C, as was required to do.",
+      "start_sec": 31.96,
+      "end_sec": 52.54,
+      "duration_sec": 20.58,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Since transversal A D falling on segments B C and E F makes the alternate interior angles D A E and A D C equal, by Proposition Twenty-Seven, segment E F is parallel to segment B C. Therefore through the given point A, line E A F has been constructed parallel to the given line B C, as was required to do.",
+          "start_sec": 31.96,
+          "end_sec": 52.54,
+          "duration_sec": 20.58
+        }
+      ]
+    }
+  ]
+}

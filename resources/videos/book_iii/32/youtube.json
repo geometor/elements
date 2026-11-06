@@ -1,0 +1,33 @@
+{
+  "prop_id": "BOOK III \u2022 PROP. 32",
+  "short_code": "III.32",
+  "g_id": "G.140",
+  "version": 2,
+  "enunciation": "If a straight line touch a circle, and from the point of contact there be drawn across, in the circle, a straight line cutting the circle, the angles which it makes with the tangent will be equal to the angles in the alternate segments of the circle.",
+  "title_1080p": "III.32 \u2022 alternate segment theorem \u2022 Euclid's Elements",
+  "title_short": "III.32 \u2022 alternate segment theorem \u2022 Euclid's Elements",
+  "description": "\u201cIf a straight line touch a circle, and from the point of contact there be drawn across, in the circle, a straight line cutting the circle, the angles which it makes with the tangent will be equal to the angles in the alternate segments of the circle.\u201d\n\u2014 Euclid's Elements, BOOK III \u2022 PROP. 32 (G.140)\n\n00:00 1 \u00b7 GIVEN: tangent / E F / at B and secant chord / B D /\n00:23 2 \u00b7 CONSTRUCT: draw / B A / \u22a5 / E F / and join / A D /, / D C /, / C B /\n00:34 3 \u00b7 ASSERT: / B A / is a diameter and \u27e8 A D B ) is right\n00:51 4 \u00b7 ASSERT: \u27e8 D B F ) = \u27e8 B A D ) in the alternate segment\n01:08 5 \u00b7 ASSERT: cyclic quadrilateral \u27e8 A B C D \u27e9 opposite angles\n01:25 6 \u00b7 \u2234: tangent-chord angles equal alternate segment angles\n01:42 7 \u00b7 COMMENTARY: converse tangency test & Pappus's tangent circles\n02:02 8 \u00b7 GENEALOGY: G.140 dependency tree & symbolic model\n02:21 9 \u00b7 PARTICIPATE: explore the GEOMETOR Elements Codex & participate\n\nExplore the interactive Book Codex, symbolic model, and dependency tree:\n\u2022 Elements Codex (G.140): https://geometor.github.io/elements/elements2/G.140/\n\u2022 Heath Edition (III.32): https://geometor.github.io/euclid/heath/volume_I/book_iii/propositions/32/\n\u2022 GitHub: https://github.com/geometor/elements\n\nGEOMETOR \u2022 G.140 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid III.32",
+    "G.140",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_iii/propositions/32/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.140/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/32/III_32_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/32/III_32_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/32/III_32.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/32/III_32_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/32/III_32_short_thumb.png"
+  }
+}

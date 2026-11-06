@@ -1,0 +1,62 @@
+{
+  "III.1": {
+    "subtype": "problem",
+    "args": [
+      ":g:`( A B C ) <g1:( A B C )>`"
+    ],
+    "returns": [
+      ":g:`F <g1:F>`"
+    ],
+    "given": ":g:`( A B C ) <g1:( A B C )>`",
+    "contract": ":g:`F <g1:F>` is the :term:`center <G.11>` of :g:`( A B C ) <g1:( A B C )>`",
+    "steps": [
+      [
+        "given",
+        [
+          "I.def.15"
+        ],
+        ":g:`( A B C ) <g1:( A B C )>`"
+      ],
+      [
+        "construct",
+        [
+          "I.10",
+          "I.11"
+        ],
+        ":g:`/ A B / <g1:/ A B />` in :g:`( A B C ) <g1:( A B C )>`, @fn(I.10)(:g:`/ A B / <g1:/ A B />`) → :g:`D <g1:D>` (:g:`/ A D / <g1:/ A D />` :eq:`= <g1:/ A D / = g1:/ D B />` :g:`/ D B / <g1:/ D B />`), @fn(I.11)(:g:`/ A B / <g1:/ A B />`, :g:`D <g1:D>`) → :g:`/ C E / <g1:/ C E />` ⊥ :g:`/ A B / <g1:/ A B />`, @fn(I.10)(:g:`/ C E / <g1:/ C E />`) → :g:`F <g1:F>` (:g:`/ C F / <g1:/ C F />` :eq:`= <g1:/ C F / = g1:/ F E />` :g:`/ F E / <g1:/ F E />`)"
+      ],
+      [
+        "construct",
+        [
+          "I.post.1"
+        ],
+        "Suppose :g:`G <g1:G>` ≠ :g:`F <g1:F>` is the center; @fn(I.post.1)(:g:`G <g1:G>`, :g:`A <g1:A>`, :g:`D <g1:D>`, :g:`B <g1:B>`) → :g:`/ G A / <g1:/ G A />`, :g:`/ G D / <g1:/ G D />`, :g:`/ G B / <g1:/ G B />`"
+      ],
+      [
+        "assert",
+        [
+          "I.def.15",
+          "I.8",
+          "I.def.10"
+        ],
+        ":g:`/ A D / <g1:/ A D />` :eq:`= <g1:/ A D / = g1:/ D B />` :g:`/ D B / <g1:/ D B />`, :g:`/ D G / <g1:/ D G />` common, :g:`/ G A / <g1:/ G A />` :eq:`= <g1:/ G A / = g1:/ G B />` :g:`/ G B / <g1:/ G B />` → :g:`< A D G ) <g1:< A D G )>` :eq:`= <g1:< A D G ) = g1:< G D B )>` :g:`< G D B ) <g1:< G D B )>` is right"
+      ],
+      [
+        "assert",
+        [
+          "I.def.10",
+          "I.cn.5"
+        ],
+        ":g:`< F D B ) <g1:< F D B )>` is right → :g:`< F D B ) <g1:< F D B )>` :eq:`= <g1:< F D B ) = g1:< G D B )>` :g:`< G D B ) <g1:< G D B )>`, the greater to the less ⇒⇐"
+      ],
+      [
+        "conclude",
+        [
+          "I.def.15",
+          "I.def.16"
+        ],
+        ":g:`G <g1:G>` is not the center → :g:`F <g1:F>` is the center of :g:`( A B C ) <g1:( A B C )>`"
+      ]
+    ]
+  }
+}

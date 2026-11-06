@@ -12,6 +12,7 @@
 :tags: book-i, segment, angle, triangle, trilateral, plane-angle, plane, equality, reductio-ad-absurdum
 :dependencies: G.12, G.22, G.25, G.43
 :excerpt: In any triangle, the greater angle is subtended by the greater side.
+:youtube_id: 3cDzSbewWi4
 
 .. _G.44:
 .. _I.19:
@@ -27,54 +28,30 @@ G.44 greater angle is subtended by greater side
 
 .. signature:: theorem
 
-   | :fn:`greater_angle_greater_side <G.44>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`< A B C ) <g1:< A B C )>`, :g:`< B C A ) <g1:< B C A )>`)
-   | **given** :g:`< A B C > <g1:< A B C >>` , :g:`< A B C ) <g1:< A B C )>` greater than :g:`< B C A ) <g1:< B C A )>`
-   | **prove** :g:`/ A C / <g1:/ A C />` is also greater than :g:`/ A B / <g1:/ A B />`
+   | :fn:`greater_angle_greater_side <G.44>`\ (:g:`< A B C > <g1:< A B C >>`)
+   | **given** :g:`< A B C > <g1:< A B C >>` (:g:`< A B C ) <g1:< A B C )>` > :g:`< B C A ) <g1:< B C A )>`)
+   | **prove** :g:`/ A C / <g1:/ A C />` > :g:`/ A B / <g1:/ A B />`
 
 .. picture:: g1.svg
    :alt: Proposition 19 figure
 
 .. step:: given
 
-   :g:`< A B C > <g1:< A B C >>` , :g:`< A B C ) <g1:< A B C )>` greater than :g:`< B C A ) <g1:< B C A )>`
+   :g:`< A B C > <g1:< A B C >>` (:g:`< A B C ) <g1:< A B C )>` > :g:`< B C A ) <g1:< B C A )>`)
 
-.. step:: assert
+.. step:: construct
 
-   If not, :g:`/ A C / <g1:/ A C />` is either :eq:`= <g1:/ A C / = g1:/ A B />` to :g:`/ A B / <g1:/ A B />` or less
-
-.. step:: assert
-
-   Now :g:`/ A C / <g1:/ A C />` is not :eq:`= <g1:/ A C / = g1:/ A B />` to :g:`/ A B / <g1:/ A B />`
+   ? :g:`/ A C / <g1:/ A C />` ≤ :g:`/ A B / <g1:/ A B />` → :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ A B />` :g:`/ A B / <g1:/ A B />` ∨ :g:`/ A C / <g1:/ A C />` < :g:`/ A B / <g1:/ A B />`
 
 .. step:: assert ∵ isosceles_base_angles <G.25>
 
-   For then :g:`< A B C ) <g1:< A B C )>` would also have been :eq:`= <g1:< A B C ) = g1:< A C B )>` to :g:`< A C B ) <g1:< A C B )>`
-
-.. step:: assert
-
-   But it is not
-
-.. step:: assert
-
-   :g:`/ A C / <g1:/ A C />` is not :eq:`= <g1:/ A C / = g1:/ A B />` to :g:`/ A B / <g1:/ A B />`
+   ? :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ A B />` :g:`/ A B / <g1:/ A B />` → :g:`< A B C ) <g1:< A B C )>` :eq:`= <g1:< A B C ) = g1:< A C B )>` :g:`< A C B ) <g1:< A C B )>` ⇒⇐ → :g:`/ A C / <g1:/ A C />` ≠ :g:`/ A B / <g1:/ A B />`
 
 .. step:: assert ∵ greater_side_greater_angle <G.43>
 
-   Neither is :g:`/ A C / <g1:/ A C />` less than :g:`/ A B / <g1:/ A B />`, for then :g:`< A B C ) <g1:< A B C )>` would also have been less than :g:`< A C B ) <g1:< A C B )>`
+   ? :g:`/ A C / <g1:/ A C />` < :g:`/ A B / <g1:/ A B />` → :g:`< A B C ) <g1:< A B C )>` < :g:`< A C B ) <g1:< A C B )>` ⇒⇐ → :g:`/ A C / <g1:/ A C />` ≮ :g:`/ A B / <g1:/ A B />`
 
-.. step:: assert
-
-   But it is not
-
-.. step:: assert
-
-   :g:`/ A C / <g1:/ A C />` is not less than :g:`/ A B / <g1:/ A B />`
-
-.. step:: assert
-
-   It was proved that it is not :eq:`= <g1:/ A C / = g1:/ A B />` either
-
-.. step:: conclude
+.. step:: conclude ∵ isosceles_base_angles, greater_side_greater_angle <G.25, G.43>
 
    :g:`/ A C / <g1:/ A C />` > :g:`/ A B / <g1:/ A B />`
 
@@ -270,9 +247,11 @@ Dependency Graph
      "G.32" -> "G.24";
      "G.41" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -300,5 +279,6 @@ Required for
 .. toctree::
    :hidden:
 
+   video
    code
    heath

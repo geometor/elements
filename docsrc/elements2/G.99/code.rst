@@ -1,18 +1,18 @@
 :canonical_id: G.99
 :original_id: III.2
-:title: G.99 arc circle points
+:title: G.99 chord of a circle lies within the circle
 :volume: II
 :book: III
 :type: prop
 
-G.99 arc circle points — Code
-=============================
+G.99 chord of a circle lies within the circle — Code
+====================================================
 
 .. rubric:: `III.2 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/02/>`_
 
 .. enunciation::
 
-   If on the arc of a :term:`circle <G.10>` two :term:`points <G.1>` be taken at random, the :term:`segment <G.4>` joining the points will fall within the circle.
+   The :term:`segment <G.4>` joining any two :term:`points <G.1>` on the arc of a :term:`circle <G.10>` falls within the circle.
 
 .. picture:: g1.svg
 

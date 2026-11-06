@@ -1,0 +1,75 @@
+1
+00:00:00,420 --> 00:00:02,023
+Book Four, Proposition Ten.
+
+2
+00:00:02,023 --> 00:00:08,020
+To construct an isosceles triangle having each of the angles at the base double of the remaining one.
+
+3
+00:00:08,020 --> 00:00:18,410
+Let any straight line A B be set out; it is required to construct on A B an isosceles triangle A B D having each of the angles at the base B D double of the vertex angle at A.
+
+4
+00:00:18,830 --> 00:00:29,422
+By Two Eleven, cut A B at C in golden section so that the rectangle contained by A B and B C equals the square on C A.
+
+5
+00:00:29,422 --> 00:00:42,079
+Describe circle A B—shown as B D E—with center A and defining radius point B, and by Four One fit into the circle the chord B D equal to A C.
+
+6
+00:00:42,079 --> 00:00:49,440
+Join A D and D C, and by Four Five circumscribe circle A C D about triangle A C D.
+
+7
+00:00:49,860 --> 00:00:58,441
+Because rectangle A B, B C equals the square on A C, and A C equals B D, rectangle A B, B C equals the square on B D.
+
+8
+00:00:58,441 --> 00:01:10,689
+Therefore by Three Thirty-Seven, B D is tangent to circle A C D at D, and by Three Thirty-Two the tangent-chord angle B D C equals the alternate inscribed angle D A C.
+
+9
+00:01:10,689 --> 00:01:21,323
+Add angle C D A to each: the whole angle B D A equals the sum of angles C D A and D A C, which by One Thirty-Two equals the exterior angle B C D.
+
+10
+00:01:21,323 --> 00:01:33,131
+And because radii A D and A B are equal, by One Five base angles B D A and D B A are equal, making all three angles B D A, D B A, and B C D equal to one another.
+
+11
+00:01:33,131 --> 00:01:39,952
+In triangle B C D, equal angles at B and C give D C equal to B D, and therefore equal to C A.
+
+12
+00:01:39,952 --> 00:01:48,239
+Hence in isosceles triangle A C D, angle C D A equals angle D A C, so exterior angle B C D is double angle D A C.
+
+13
+00:01:48,239 --> 00:01:58,140
+Therefore in isosceles triangle A B D, each of the base angles B D A and D B A is double the vertex angle D A B, as was required to do.
+
+14
+00:01:58,560 --> 00:02:07,565
+Proposition Four Ten is the architectural hinge of Book Four: the construction of the golden thirty-six, seventy-two, seventy-two degree triangle.
+
+15
+00:02:07,565 --> 00:02:22,614
+As Heath details, this triangle arises directly from the Pythagorean pentagram—their badge of recognition called Health—and bridges Book Two's golden section in Two Eleven with Book Three's tangent-secant power of a point in Three Thirty-Seven.
+
+16
+00:02:22,614 --> 00:02:34,456
+Because the vertex angle is thirty-six degrees, its bisection divides the right angle into five equal parts, while chord B D is already the side of a regular decagon inscribed in circle B D E.
+
+17
+00:02:34,456 --> 00:02:49,320
+In the GEOMETOR G-Index, node G one hundred sixty-two unites seventeen direct prerequisites across ninety-five ancestor nodes, powering the regular pentagon, decagon, fifteen-gon, and the cosmic dodecahedron and icosahedron of Book Thirteen.
+
+18
+00:02:49,740 --> 00:03:02,946
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Four Ten in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+19
+00:03:02,946 --> 00:03:09,580
+Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

@@ -1,0 +1,38 @@
+================================================================================
+YOUTUBE 1080P (16:9) TITLE
+================================================================================
+I.26 • if two triangles have the two angles equal to two angles respectively, and one side equal ...
+
+================================================================================
+YOUTUBE SHORT (9:16) TITLE
+================================================================================
+I.26 • if two triangles have the two angles equal to two angles respectively, and one side equal ...
+
+================================================================================
+DESCRIPTION
+================================================================================
+“If two triangles have the two angles equal to two angles respectively, and one side equal to one side, namely, either the side adjoining the equal angles, or that subtending one of the equal angles, they will also have the remaining sides equal to the remaining sides and the remaining angle to the remaining angle.”
+— Euclid's Elements, BOOK I • PROP. 26 (G.51)
+
+00:00 1 · GIVEN: given ⟨ A B C ⟩, ⟨ D E F ⟩ (⟨ A B C ) = ⟨ D E F ), ⟨ B C A ) = ⟨ E F D ), / B C / = / E F / ∨ / A B / = / D E /)
+00:25 2 · CONSTRUCT: ? / A B / ⟩ / D E / → cut_equal_segment(/ A B /, / D E /) → / B G / = / D E /, segment(G, C) → / G C /
+00:36 3 · CONSTRUCT: ? / B C / ⟩ / E F / → cut_equal_segment(/ B C /, / E F /) → / B H / = / E F /, segment(A, H) → / A H /
+00:47 4 · ASSERT: ⟨ G B C ⟩ = ⟨ D E F ⟩ → ⟨ G C B ) = ⟨ D F E ) = ⟨ B C A ) ⇒⇐ → / A B / = / D E /
+01:02 5 · ASSERT: ⟨ A B H ⟩ = ⟨ D E F ⟩ → ⟨ B H A ) = ⟨ E F D ) = ⟨ B C A ) ⇒⇐ → / B C / = / E F /
+01:17 6 · ∴: / A B / = / D E /, / A C / = / D F /, / B C / = / E F /, ⟨ B A C ) = ⟨ E D F )
+
+GEOMETOR • G.51 • v2
+
+================================================================================
+TAGS
+================================================================================
+Euclid, Euclid's Elements, Euclid I.26, G.51, Geometry, Constructive Geometry, Compass and Straightedge, Mathematical Proof, GEOMETOR, Thomas Little Heath
+
+================================================================================
+MEDIA & CAPTIONS FILES
+================================================================================
+• 9:16 Short MP4 : I_26_short.mp4
+• 16:9 1080p MP4 : I_26_1080p.mp4
+• Closed Captions: I_26.srt
+• 16:9 Thumbnail : I_26_thumb.png
+• 9:16 Thumbnail : I_26_short_thumb.png

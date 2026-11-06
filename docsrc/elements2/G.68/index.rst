@@ -10,8 +10,9 @@
 :categories: theorem, proof, plane-geometry
 :category: theorem, proof, plane-geometry
 :tags: book-i, point, segment, triangle, trilateral, parallel-straight-lines, straight-line, parallel, equality, reductio-ad-absurdum
-:dependencies: G.1, G.4, G.12, G.14, G.16, G.52, G.58, G.66
+:dependencies: G.1, G.4, G.12, G.14, G.16, G.26, G.52, G.58, G.66
 :excerpt: Equal triangles on the same base and on the same side lie in the same parallels.
+:youtube_id: re4abUYEZqg
 
 .. _G.68:
 .. _I.39:
@@ -28,15 +29,15 @@ G.68 equal triangles on the same base are in the same parallels
 .. signature:: theorem
 
    | :fn:`equal_triangles_same_base_parallel <G.68>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`< D B C > <g1:< D B C >>`, :g:`/ B C / <g1:/ B C />`)
-   | **given** :g:`< A B C > <g1:< A B C >>`, :g:`< D B C > <g1:< D B C >>` be :eq:`equal <g1:< A B C > = g1:< D B C >>` triangles which are on the same base :g:`/ B C / <g1:/ B C />` and on the same side of it
-   | **prove** :g:`/ A D / <g1:/ A D />` is parallel to :g:`/ B C / <g1:/ B C />`
+   | **given** :g:`< A B C > <g1:< A B C >>` :eq:`= <g1:< A B C > = g1:< D B C >>` :g:`< D B C > <g1:< D B C >>` on :g:`/ B C / <g1:/ B C />`
+   | **prove** :g:`/ A D / <g1:/ A D />` ∥ :g:`/ B C / <g1:/ B C />`
 
 .. picture:: g1.svg
    :alt: Folio 0350 Figure 2 - Proposition 39
 
 .. step:: given
 
-   :g:`< A B C > <g1:< A B C >>`, :g:`< D B C > <g1:< D B C >>` be :eq:`equal <g1:< A B C > = g1:< D B C >>` triangles which are on the same base :g:`/ B C / <g1:/ B C />` and on the same side of it
+   :g:`< A B C > <g1:< A B C >>` :eq:`= <g1:< A B C > = g1:< D B C >>` :g:`< D B C > <g1:< D B C >>` on :g:`/ B C / <g1:/ B C />`
 
 .. step:: construct
 
@@ -44,39 +45,19 @@ G.68 equal triangles on the same base are in the same parallels
 
 .. step:: construct
 
-   :fn:`parallel_line <G.58>`: If not, let :g:`/ A E / <g1:/ A E />` be drawn through :g:`A <g1:A>` parallel to :g:`/ B C / <g1:/ B C />`.
-
-.. step:: construct
-
-   :fn:`segment <G.14>`\ (:g:`E <g1:E>`, :g:`C <g1:C>`) → :g:`/ E C / <g1:/ E C />`
-
-.. step:: assert
-
-   :g:`< A B C > <g1:< A B C >>` is :eq:`equal <g1:< A B C > = g1:< E B C >>` to :g:`< E B C > <g1:< E B C >>`
+   ? ¬(:g:`/ A D / <g1:/ A D />` ∥ :g:`/ B C / <g1:/ B C />`) → :fn:`parallel_line <G.58>`\ (:g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />`) → :g:`/ A E / <g1:/ A E />` ∥ :g:`/ B C / <g1:/ B C />`, :fn:`segment <G.14>`\ (:g:`E <g1:E>`, :g:`C <g1:C>`) → :g:`/ E C / <g1:/ E C />`
 
 .. step:: assert ∵ triangles_same_base <G.66>
 
-   For it is on the same base :g:`/ B C / <g1:/ B C />` with it and in the same parallels
+   :g:`/ A E / <g1:/ A E />` ∥ :g:`/ B C / <g1:/ B C />` → :g:`< A B C > <g1:< A B C >>` :eq:`= <g1:< A B C > = g1:< E B C >>` :g:`< E B C > <g1:< E B C >>`
 
-.. step:: assert
+.. step:: assert ∵ equal_transitive, whole_greater_than_part <G.16, G.26>
 
-   :g:`< A B C > <g1:< A B C >>` is :eq:`equal <g1:< A B C > = g1:< D B C >>` to :g:`< D B C > <g1:< D B C >>`
+   :g:`< A B C > <g1:< A B C >>` :eq:`= <g1:< A B C > = g1:< D B C >>` :g:`< D B C > <g1:< D B C >>`, :g:`< A B C > <g1:< A B C >>` :eq:`= <g1:< A B C > = g1:< E B C >>` :g:`< E B C > <g1:< E B C >>` → :g:`< D B C > <g1:< D B C >>` :eq:`= <g1:< D B C > = g1:< E B C >>` :g:`< E B C > <g1:< E B C >>` ⇒⇐
 
-.. step:: assert ∵ equal_transitive <G.16>
+.. step:: conclude ∵ parallel_lines_def <G.52>
 
-   :g:`< D B C > <g1:< D B C >>` is also :eq:`equal <g1:< D B C > = g1:< E B C >>` to :g:`< E B C > <g1:< E B C >>`, the greater to the less ⇒⇐
-
-.. step:: assert
-
-   :g:`/ A E / <g1:/ A E />` is not parallel to :g:`/ B C / <g1:/ B C />`
-
-.. step:: assert
-
-   Similarly we can prove that neither is any other :term:`segment <G.4>` except :g:`/ A D / <g1:/ A D />`
-
-.. step:: conclude
-
-   :g:`/ A D / <g1:/ A D />` is parallel to :g:`/ B C / <g1:/ B C />`
+   :g:`/ A D / <g1:/ A D />` ∥ :g:`/ B C / <g1:/ B C />`
 
 Dependency Graph
 ----------------
@@ -281,6 +262,7 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.51" -> "G.14";
      "G.58" -> "G.14";
      "G.68" -> "G.14";
@@ -293,8 +275,10 @@ Dependency Graph
      "G.21" -> "G.16";
      "G.37" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.56" -> "G.16";
      "G.64" -> "G.16";
+     "G.66" -> "G.16";
      "G.68" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
@@ -304,6 +288,7 @@ Dependency Graph
      "G.25" -> "G.18";
      "G.41" -> "G.18";
      "G.45" -> "G.18";
+     "G.53" -> "G.18";
      "G.58" -> "G.18";
      "G.66" -> "G.18";
      "G.20" -> "G.19";
@@ -318,6 +303,7 @@ Dependency Graph
      "G.43" -> "G.21";
      "G.45" -> "G.21";
      "G.47" -> "G.21";
+     "G.51" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
      "G.28" -> "G.22";
@@ -351,11 +337,15 @@ Dependency Graph
      "G.62" -> "G.24";
      "G.64" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.51" -> "G.26";
+     "G.68" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -419,5 +409,6 @@ Required for
 .. toctree::
    :hidden:
 
+   video
    code
    heath

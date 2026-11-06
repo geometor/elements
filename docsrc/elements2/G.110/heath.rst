@@ -1,12 +1,12 @@
 :canonical_id: G.110
 :original_id: III.12
-:title: G.110 circles touch externally
+:title: G.110 line of centers of externally touching circles
 :volume: II
 :book: III
 :type: prop
 
-G.110 circles touch externally — Heath
-======================================
+G.110 line of centers of externally touching circles — Heath
+============================================================
 
 .. rubric:: `III.12 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/12/>`_
 
@@ -109,7 +109,7 @@ Dependency Graph
      "G.44" [label="G.44", tooltip="G.44 (I.19): In any triangle, the greater angle is subtended by the greater side.", fillcolor="#222244", URL="../G.44/index.html", target="_top"];
      "G.45" [label="G.45", tooltip="G.45 (I.20): In any triangle, the sum of any two sides is greater than the remaining side.", fillcolor="#222244", URL="../G.45/index.html", target="_top"];
      "G.103" [label="G.103", tooltip="G.103 (III.def.3): Circles are said totouch one another which, meeting one another, do not cut one another.", fillcolor="#224422", URL="../G.103/index.html", target="_top"];
-     "G.110" [label="G.110", tooltip="G.110 (III.12): If two circles touch one another externally, the segment joining their centres will pass through the point of contact.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.110" [label="G.110", tooltip="G.110 (III.12): If two circles touch one another externally, the segment joining their centers passes through the point of contact.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -215,6 +215,7 @@ Dependency Graph
      "G.41" -> "G.14";
      "G.43" -> "G.14";
      "G.45" -> "G.14";
+     "G.110" -> "G.14";
      "G.17" -> "G.15";
      "G.20" -> "G.15";
      "G.21" -> "G.15";
@@ -262,11 +263,14 @@ Dependency Graph
      "G.32" -> "G.24";
      "G.41" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.110" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -279,6 +283,7 @@ Dependency Graph
      "G.40" -> "G.33";
      "G.37" -> "G.34";
      "G.37" -> "G.36";
+     "G.110" -> "G.36";
      "G.40" -> "G.37";
      "G.40" -> "G.38";
      "G.41" -> "G.40";

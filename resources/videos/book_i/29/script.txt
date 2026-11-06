@@ -1,0 +1,21 @@
+[bell:proposition]
+[style:brisk]
+Euclid's Elements, Book One, Proposition Twenty-Nine. <pause>
+A transversal cutting parallel lines makes the alternate interior angles equal, the exterior angle equal to the opposite interior angle, and the interior angles on the same side supplementary. <pause>
+Let segment E F fall on parallel segments A B and C D at points G and H. <pause>
+We prove that alternate angles A G H and G H D are equal, exterior angle E G B equals interior angle G H D, and interior angles B G H and G H D sum to two right angles.
+
+[bell:construction]
+[style:brisk]
+Suppose angle A G H is not equal to angle G H D, and let angle A G H be greater. <pause>
+Adding angle B G H to each, the sum of angles A G H and B G H is greater than the sum of angles B G H and G H D. <pause>
+By Proposition Thirteen, adjacent angles A G H and B G H equal two right angles, so angles B G H and G H D sum to less than two right angles. <pause>
+By Postulate Five, lines extended from interior angles summing to less than two right angles must meet, contradicting that segments A B and C D are parallel. <pause>
+Thus alternate angles A G H and G H D are equal.
+
+[bell:insight]
+[style:brisk]
+Again, by Proposition Fifteen, vertical angles A G H and E G B are equal. <pause>
+By Common Notion One, exterior angle E G B also equals interior angle G H D. <pause>
+Adding angle B G H to each by Common Notion Two, the sum of angles E G B and B G H equals the sum of angles B G H and G H D. <pause>
+Since adjacent angles E G B and B G H equal two right angles by Proposition Thirteen, interior angles B G H and G H D also equal two right angles, <pause> as was required to prove.

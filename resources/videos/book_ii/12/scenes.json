@@ -1,0 +1,303 @@
+[
+  {
+    "prop_id": "BOOK II • PROP. 12",
+    "short_title": "law of cosines obtuse",
+    "g_id": "G.94",
+    "folio": "Folios 0417–0418 • pp. 403–404",
+    "enunciation": "In obtuse-angled triangles the square on the side subtending the obtuse angle is greater than the squares on the sides containing the obtuse angle by twice the rectangle contained by one of the sides about the obtuse angle, namely that on which the perpendicular falls, and the segment cut off outside by the perpendicular towards the obtuse angle.",
+    "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_ii/propositions/0418.g1.svg",
+    "step_total": 9,
+    "subslides": [
+      {
+        "step_num": 1,
+        "step_kind": "GIVEN",
+        "chapter": "given obtuse triangle < A B C > with < B A C ) > ∟",
+        "symbolic": "< A B C >, < B A C ) > ∟",
+        "visible_ids": [
+          "el-tri-ABC",
+          "el-ang-BAC",
+          "el-seg-CA",
+          "el-seg-BA",
+          "el-seg-BC",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C"
+        ],
+        "active_ids": [
+          "el-tri-ABC",
+          "hl-tri-ABC",
+          "el-ang-BAC",
+          "hl-ang-BAC",
+          "el-seg-CA",
+          "hl-seg-CA",
+          "el-seg-BA",
+          "hl-seg-BA",
+          "el-seg-BC",
+          "hl-seg-BC",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C"
+        ],
+        "equal_ids": [],
+        "clause_html": "<div class=\"clause-line\">Let <span class=\"g-tok\">&lt; A B C &gt;</span> be an obtuse-angled triangle</div><div class=\"clause-line\">having the angle <span class=\"g-tok\">&lt; B A C )</span> obtuse (<span class=\"g-tok\">&gt; ∟</span>).</div>",
+        "just_id": "G.76 • I.def.11, G.78 • I.def.21",
+        "just_title": "An obtuse-angled triangle is that which has an obtuse angle, greater than a right angle."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK II • PROP. 12",
+    "short_title": "law of cosines obtuse",
+    "g_id": "G.94",
+    "folio": "Folios 0417–0418 • pp. 403–404",
+    "enunciation": "In obtuse-angled triangles the square on the side subtending the obtuse angle is greater than the squares on the sides containing the obtuse angle by twice the rectangle contained by one of the sides about the obtuse angle, namely that on which the perpendicular falls, and the segment cut off outside by the perpendicular towards the obtuse angle.",
+    "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_ii/propositions/0418.g1.svg",
+    "step_total": 9,
+    "subslides": [
+      {
+        "step_num": 2,
+        "step_kind": "CONSTRUCT",
+        "chapter": "extend / C A / and drop altitude / B D / ⊥ [ C A ]",
+        "symbolic": "/ B D / ⊥ [ C A ], < C D B ) = ∟",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-line-CA",
+          "hl-line-CA",
+          "el-seg-DA",
+          "hl-seg-DA",
+          "el-seg-BD",
+          "hl-seg-BD",
+          "el-ang-CDB",
+          "hl-ang-CDB",
+          "el-pt-D",
+          "lbl-D"
+        ],
+        "equal_ids": [],
+        "clause_html": "<div class=\"clause-line\"><span class=\"g-tok\">extend</span>(<span class=\"g-tok\">/ C A /</span>) → <span class=\"g-tok\">[ C A ]</span></div><div class=\"clause-line\"><span class=\"g-tok\">perpendicular_from</span>(<span class=\"g-tok\">[ C A ]</span>, <span class=\"g-tok\">B</span>) → <span class=\"g-tok\">/ B D /</span> ⊥ <span class=\"g-tok\">[ C A ]</span> (<span class=\"eq-tok\">&lt; C D B ) = ∟</span>)</div>",
+        "just_id": "G.18 • I.post.2, G.35 • I.12",
+        "just_title": "Extend / C A / continuously and draw / B D / perpendicular to [ C A ] produced from point B."
+      },
+      {
+        "step_num": 3,
+        "step_kind": "ASSERT",
+        "chapter": "sq(/ C D /) = sq(/ C A /) + sq(/ A D /) + 2·rect(/ C A /, / A D /)",
+        "symbolic": "sq(/ C D /) = sq(/ C A /) + sq(/ A D /) + 2·rect(/ C A /, / A D /)",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-sec-DAC",
+          "hl-sec-DAC",
+          "el-seg-CD",
+          "hl-seg-CD",
+          "el-pt-C",
+          "el-pt-A",
+          "el-pt-D",
+          "lbl-C",
+          "lbl-A",
+          "lbl-D"
+        ],
+        "equal_ids": [
+          "el-seg-CA",
+          "hl-seg-CA",
+          "el-seg-DA",
+          "hl-seg-DA"
+        ],
+        "clause_html": "<div class=\"clause-line\"><span class=\"g-tok\">/ C D / = / C A / + / A D /</span> → <span class=\"eq-tok\">sq(/ C D /)</span> =</div><div class=\"clause-line\"><span class=\"eq-tok\">sq(/ C A /) + sq(/ A D /) + 2·rect(/ C A /, / A D /)</span></div>",
+        "just_id": "G.85 • II.4",
+        "just_title": "If a segment be cut at random, the square on the whole equals the squares on the segments plus twice the rectangle contained by them."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK II • PROP. 12",
+    "short_title": "law of cosines obtuse",
+    "g_id": "G.94",
+    "folio": "Folios 0417–0418 • pp. 403–404",
+    "enunciation": "In obtuse-angled triangles the square on the side subtending the obtuse angle is greater than the squares on the sides containing the obtuse angle by twice the rectangle contained by one of the sides about the obtuse angle, namely that on which the perpendicular falls, and the segment cut off outside by the perpendicular towards the obtuse angle.",
+    "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_ii/propositions/0418.g1.svg",
+    "step_total": 9,
+    "subslides": [
+      {
+        "step_num": 4,
+        "step_kind": "ASSERT",
+        "chapter": "add sq(/ D B /) to both sides",
+        "symbolic": "sq(/ C D /) + sq(/ D B /) = sq(/ C A /) + sq(/ A D /) + sq(/ D B /) + 2·rect(/ C A /, / A D /)",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-seg-BD",
+          "hl-seg-BD",
+          "el-pt-B",
+          "el-pt-D",
+          "lbl-B",
+          "lbl-D"
+        ],
+        "equal_ids": [
+          "el-seg-CD",
+          "hl-seg-CD",
+          "el-seg-CA",
+          "hl-seg-CA",
+          "el-seg-DA",
+          "hl-seg-DA"
+        ],
+        "clause_html": "<div class=\"clause-line\">Add <span class=\"g-tok\">sq(/ D B /)</span> to each: <span class=\"eq-tok\">sq(/ C D /) + sq(/ D B /)</span> =</div><div class=\"clause-line\"><span class=\"eq-tok\">sq(/ C A /) + sq(/ A D /) + sq(/ D B /) + 2·rect(/ C A /, / A D /)</span></div>",
+        "just_id": "G.36 • I.cn.2",
+        "just_title": "If equals be added to equals, the wholes are equal."
+      },
+      {
+        "step_num": 5,
+        "step_kind": "ASSERT",
+        "chapter": "right triangles < C B D > and < A B D > by I.47",
+        "symbolic": "sq(/ C B /) = sq(/ C D /) + sq(/ D B /), sq(/ A B /) = sq(/ A D /) + sq(/ D B /)",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-tri-CBD",
+          "hl-tri-CBD",
+          "el-tri-ABD",
+          "hl-tri-ABD",
+          "el-ang-CDB",
+          "hl-ang-CDB",
+          "el-seg-CD",
+          "hl-seg-CD",
+          "el-seg-DA",
+          "hl-seg-DA",
+          "el-seg-BD",
+          "hl-seg-BD"
+        ],
+        "equal_ids": [
+          "el-seg-BC",
+          "hl-seg-BC",
+          "el-seg-BA",
+          "hl-seg-BA"
+        ],
+        "clause_html": "<div class=\"clause-line\"><span class=\"g-tok\">&lt; C D B ) = ∟</span> → <span class=\"eq-tok\">sq(/ C B /) = sq(/ C D /) + sq(/ D B /)</span></div><div class=\"clause-line\">and <span class=\"eq-tok\">sq(/ A B /) = sq(/ A D /) + sq(/ D B /)</span></div>",
+        "just_id": "G.79 • I.47",
+        "just_title": "In right-angled triangles the square on the hypotenuse equals the sum of the squares on the two legs."
+      },
+      {
+        "step_num": 6,
+        "step_kind": "∴",
+        "is_punchline": true,
+        "chapter": "sq(/ B C /) = sq(/ B A /) + sq(/ A C /) + 2·rect(/ C A /, / A D /)",
+        "symbolic": "∴ sq(/ B C /) = sq(/ B A /) + sq(/ A C /) + 2·rect(/ C A /, / A D /)",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-tri-ABC",
+          "hl-tri-ABC",
+          "el-ang-BAC",
+          "hl-ang-BAC",
+          "el-seg-BC",
+          "hl-seg-BC",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C"
+        ],
+        "equal_ids": [
+          "el-seg-BA",
+          "hl-seg-BA",
+          "el-seg-CA",
+          "hl-seg-CA",
+          "el-seg-DA",
+          "hl-seg-DA"
+        ],
+        "clause_html": "<div class=\"clause-line\">∴ <span class=\"eq-tok\">sq(/ B C /)</span> = <span class=\"eq-tok\">sq(/ B A /) + sq(/ A C /)</span></div><div class=\"clause-line\">+ <span class=\"eq-tok\">2·rect(/ C A /, / A D /)</span></div>",
+        "just_id": "G.16 • I.cn.1",
+        "just_title": "The square on / B C / exceeds the squares on / B A /, / A C / by twice the rectangle / C A /, / A D / (Q.E.D.)."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK II • PROP. 12",
+    "short_title": "law of cosines obtuse",
+    "g_id": "G.94",
+    "folio": "Folios 0417–0418 • pp. 403–404",
+    "enunciation": "In obtuse-angled triangles the square on the side subtending the obtuse angle is greater than the squares on the sides containing the obtuse angle by twice the rectangle contained by one of the sides about the obtuse angle, namely that on which the perpendicular falls, and the segment cut off outside by the perpendicular towards the obtuse angle.",
+    "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_ii/propositions/0418.g1.svg",
+    "step_total": 9,
+    "widescreen_only": true,
+    "subslides": [
+      {
+        "step_num": 7,
+        "step_kind": "COMMENTARY",
+        "widescreen_only": true,
+        "chapter": "Euclidean Law of Cosines (obtuse): c² = a² + b² + 2ap",
+        "symbolic": "c² = a² + b² + 2a·p  (p = −b cos A)",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-seg-BC",
+          "hl-seg-BC",
+          "el-ang-BAC",
+          "hl-ang-BAC",
+          "el-seg-BD",
+          "hl-seg-BD"
+        ],
+        "equal_ids": [
+          "el-tri-ABC",
+          "hl-tri-ABC",
+          "el-seg-BA",
+          "hl-seg-BA",
+          "el-seg-CA",
+          "hl-seg-CA",
+          "el-seg-DA",
+          "hl-seg-DA"
+        ],
+        "clause_html": "<div class=\"clause-line\"><strong>Euclidean Law of Cosines (Obtuse)</strong></div><div class=\"clause-line\"><span class=\"eq-tok\">c² = a² + b² + 2a·p = a² + b² − 2ab cos A</span></div><div class=\"clause-line\" style=\"font-size:28px;color:#cbd5e1;\">Gregory of St. Vincent (1647) proved II.12 directly via I.47 area-shearing; Heron (in an-Nairīzī) proved the converse via I.25.</div>",
+        "just_tag": "✦ HEATH COMMENTARY",
+        "just_id": "Heath (1908) • Vol. I, pp. 404–406",
+        "just_title": "Shows also that rect(/ B A /, / A N /) = rect(/ C A /, / A M /), anticipating the secant theorem III.35."
+      },
+      {
+        "step_num": 8,
+        "step_kind": "GENEALOGY",
+        "widescreen_only": true,
+        "chapter": "G.94 dependency tree & symbolic model",
+        "symbolic": "G.4, G.22, G.33, G.63, G.76, G.78, G.79, G.81, G.85 → G.94",
+        "stage_html": "<div style=\"width:100%;height:100%;display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:36px 8px 8px 8px;align-items:stretch;\"><div style=\"background:rgba(11,14,21,0.92);border:1.5px solid rgba(56,189,248,0.45);border-radius:16px;padding:22px 24px;display:flex;flex-direction:column;justify-content:space-between;\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.12em;color:#38bdf8;\">◈ G-INDEX PREREQUISITES → G.94</div><div style=\"display:flex;flex-direction:column;gap:10px;margin:12px 0;\"><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #5ec27e;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.85 (II.4)</span><span style=\"color:#f4f1ea;\">square of sum</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.79 (I.47)</span><span style=\"color:#f4f1ea;\">Pythagorean theorem</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #5ec27e;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.81 (II.def.1)</span><span style=\"color:#f4f1ea;\">contained rectangle</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.78 (I.def.21)</span><span style=\"color:#f4f1ea;\">obtuse-angled triangle</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.63 (I.def.22)</span><span style=\"color:#f4f1ea;\">square</span></div></div><div style=\"background:rgba(232,184,90,0.16);border:1.5px solid #e8b85a;border-radius:10px;padding:11px 16px;text-align:center;font-family:'JetBrains Mono',monospace;font-size:17px;font-weight:700;color:#e8b85a;\">↓ G.94 (II.12) • law of cosines obtuse</div></div><div style=\"background:rgba(11,14,21,0.92);border:1.5px solid rgba(232,184,90,0.4);border-radius:16px;padding:22px 24px;display:flex;flex-direction:column;justify-content:space-between;\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.12em;color:#e8b85a;\">⚙ GEOMETOR.MODEL • G.94/g1.py</div><pre style=\"font-family:'JetBrains Mono',monospace;font-size:14.5px;line-height:1.48;color:#e2e8f0;background:rgba(7,9,14,0.85);padding:16px;border-radius:10px;border:1px solid rgba(148,163,184,0.25);overflow:hidden;\">model = Model(&quot;II.12&quot;)\nD = model.set_point(0, 0, ID=&quot;D&quot;)\nA = model.set_point(3, 0, classes=[&quot;given&quot;], ID=&quot;A&quot;)\nC = model.set_point(7, 0, classes=[&quot;given&quot;], ID=&quot;C&quot;)\nB = model.set_point(0, 4, classes=[&quot;given&quot;], ID=&quot;B&quot;)\n\nmodel.construct_line(C, A)\nmodel.set_section([D, A, C])\nmodel.set_polygon([A, B, C])\nmodel.set_polygon([A, B, D])\nmodel.set_polygon([C, B, D])</pre><div style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">52 total ancestor nodes in G-Index • Depth 16</div></div></div>",
+        "clause_html": "<div class=\"clause-line\"><span class=\"coincide-tok\">G.94</span> synthesizes <span class=\"g-tok\">9 direct prerequisites</span></div><div class=\"clause-line\">across <span class=\"g-tok\">52 total ancestor nodes</span> in the G-Index</div><div class=\"clause-line\" style=\"font-size:28px;color:#cbd5e1;\">Uniting Book I's Pythagorean theorem (I.47) with Book II's binomial square expansion (II.4).</div>",
+        "just_tag": "◈ G-INDEX GENEALOGY",
+        "just_id": "G.94 • 9 Direct Rules",
+        "just_title": "Depends on G.4 (I.def.4), G.22 (I.def.8), G.33 (I.def.10), G.63 (I.def.22), G.76 (I.def.11), G.78 (I.def.21), G.79 (I.47), G.81 (II.def.1), and G.85 (II.4)."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK II • PROP. 12",
+    "short_title": "law of cosines obtuse",
+    "g_id": "G.94",
+    "folio": "Folios 0417–0418 • pp. 403–404",
+    "enunciation": "In obtuse-angled triangles the square on the side subtending the obtuse angle is greater than the squares on the sides containing the obtuse angle by twice the rectangle contained by one of the sides about the obtuse angle, namely that on which the perpendicular falls, and the segment cut off outside by the perpendicular towards the obtuse angle.",
+    "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_ii/propositions/0418.g1.svg",
+    "step_total": 9,
+    "widescreen_only": true,
+    "subslides": [
+      {
+        "step_num": 9,
+        "step_kind": "PARTICIPATE",
+        "widescreen_only": true,
+        "chapter": "explore the GEOMETOR Elements Codex & participate",
+        "symbolic": "geometor.github.io/elements",
+        "stage_html": "<div style=\"width:100%;height:100%;display:flex;flex-direction:column;justify-content:space-between;padding:42px 16px 12px 16px;gap:20px;\"><div style=\"background:linear-gradient(135deg,rgba(232,184,90,0.16) 0%,rgba(16,20,29,0.95) 100%);border:2px solid rgba(232,184,90,0.55);border-radius:18px;padding:28px 32px;display:flex;flex-direction:column;gap:12px;box-shadow:0 16px 40px rgba(0,0,0,0.6);\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.16em;color:#e8b85a;\">★ INTERACTIVE DIGITAL EDITION</div><div style=\"font-family:Georgia,serif;font-size:38px;font-weight:700;color:#f8f6f0;\">GEOMETOR • Elements Codex</div><div style=\"font-family:'JetBrains Mono',monospace;font-size:22px;color:#5ec27e;font-weight:700;\">https://geometor.github.io/elements/elements2/G.94/</div></div><div style=\"display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;flex:1;\"><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#e8b85a;font-weight:700;\">01 • PSEUDOCODE</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Hover-synced symbolic steps, signatures, and interactive SVG diagrams.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 1 • G.94</span></div><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#38bdf8;font-weight:700;\">02 • PYTHON MODEL</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Executable geometor.model scripts with exact algebraic coordinates.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 2 • g1.py</span></div><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#5ec27e;font-weight:700;\">03 • HEATH (1908)</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Complete classical translation, folio plates, and historical commentary.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 3 • Folios 0417–0418</span></div></div></div>",
+        "clause_html": "<div class=\"clause-line\">Explore the <span class=\"g-tok\">Elements Codex</span> &amp; <span class=\"eq-tok\">G-Index</span></div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Subscribe to <strong>@geometor</strong> for all 465 propositions</div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Share questions &amp; insights in the comments</div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Star &amp; contribute at <strong>github.com/geometor</strong></div>",
+        "just_tag": "★ PARTICIPATE & SUPPORT",
+        "just_id": "github.com/geometor/elements",
+        "just_title": "Open-source symbolic reconstruction of Euclid's Elements — links in the video description."
+      }
+    ]
+  }
+]

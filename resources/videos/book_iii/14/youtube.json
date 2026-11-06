@@ -1,0 +1,33 @@
+{
+  "prop_id": "BOOK III \u2022 PROP. 14",
+  "short_code": "III.14",
+  "g_id": "G.114",
+  "version": 2,
+  "enunciation": "In a circle equal straight lines are equally distant from the centre, and those which are equally distant from the centre are equal to one another.",
+  "title_1080p": "III.14 \u2022 equal chords & center distance \u2022 Euclid's Elements",
+  "title_short": "III.14 \u2022 equal chords & center distance \u2022 Euclid's Elements",
+  "description": "\u201cIn a circle equal straight lines are equally distant from the centre, and those which are equally distant from the centre are equal to one another.\u201d\n\u2014 Euclid's Elements, BOOK III \u2022 PROP. 14 (G.114)\n\n00:00 1 \u00b7 GIVEN: circle ( A B D C ) with chords / A B / and / C D /\n00:19 2 \u00b7 CONSTRUCT: center E, perpendiculars / E F /, / E G /, and radii / A E /, / E C /\n00:31 3 \u00b7 ASSERT: / E F / bisects / A B / and / E G / bisects / C D /\n00:49 4 \u00b7 ASSERT: sq(/ A F /) + sq(/ E F /) = sq(/ A E /) = sq(/ E C /) = sq(/ C G /) + sq(/ E G /)\n01:08 5 \u00b7 ASSERT: subtracting equal squares proves both directions\n01:26 6 \u00b7 \u2234: / A B / = / C D / \u21d4 / E F / = / E G /\n01:44 7 \u00b7 COMMENTARY: the Pythagorean circle invariant a\u00b2 + d\u00b2 = R\u00b2\n02:03 8 \u00b7 GENEALOGY: G.114 dependency tree & symbolic model\n02:23 9 \u00b7 PARTICIPATE: explore the GEOMETOR Elements Codex & participate\n\nExplore the interactive Book Codex, symbolic model, and dependency tree:\n\u2022 Elements Codex (G.114): https://geometor.github.io/elements/elements2/G.114/\n\u2022 Heath Edition (III.14): https://geometor.github.io/euclid/heath/volume_I/book_iii/propositions/14/\n\u2022 GitHub: https://github.com/geometor/elements\n\nGEOMETOR \u2022 G.114 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid III.14",
+    "G.114",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_iii/propositions/14/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.114/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/14/III_14_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/14/III_14_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/14/III_14.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/14/III_14_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/14/III_14_short_thumb.png"
+  }
+}

@@ -1,0 +1,19 @@
+[bell:proposition]
+[style: brisk, clear, architectural voice; steady studio cadence]
+Book Two, Proposition Thirteen. In acute-angled triangles, the square on the side subtending the acute angle is less than the squares on the sides containing the acute angle by twice the rectangle contained by one of the sides about the acute angle, namely that on which the perpendicular falls, and the segment cut off within by the perpendicular towards the acute angle. <pause> Let A B C be an acute-angled triangle having the angle at B acute.
+
+[bell:construction]
+[style: methodical, precise constructive cadence]
+From A, draw A D perpendicular to B C. <pause> Since the segment C B has been cut at random at D, by Two Seven the squares on C B and B D are equal to twice the rectangle contained by C B and B D together with the square on D C.
+
+[bell:insight]
+[style: luminous, deductive geometric clarity]
+Add the square on D A to each. Then the squares on C B, B D, and D A equal twice the rectangle C B, B D together with the squares on A D and D C. <pause> Because the angle at D is right, by One Forty-Seven the square on A B equals the squares on B D and D A, and the square on A C equals the squares on A D and D C. <pause> Therefore, the squares on C B and B A equal the square on A C together with twice the rectangle contained by C B and B D—so the square on A C alone is less than the squares on C B and B A by twice that rectangle. Which was to be proved.
+
+[bell:system]
+[style: reflective, scholarly, architectural synthesis]
+Proposition Two Thirteen is the Euclidean Law of Cosines for acute angles: c squared plus two a times the interior projection p equals a squared plus b squared. As the Greek scholiast and Heath observe, this relation holds for the side opposite any acute angle in any triangle—completing, with One Forty-Seven and Two Twelve, the metric theory of triangles. <pause> In the GEOMETOR G-Index, node G ninety-five synthesizes nine direct prerequisites across fifty-three ancestor nodes, pairing the Pythagorean theorem with Book Two's square of a difference.
+
+[bell:resolve]
+[style: warm, inviting, resonant studio close]
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Two Thirteen in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

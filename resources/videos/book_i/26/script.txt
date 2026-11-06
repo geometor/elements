@@ -1,0 +1,8 @@
+[bell:proposition]
+[style:brisk] Euclid's Elements, Book One, Proposition Twenty-Six. <pause> Triangles with two angles and one corresponding side equal are congruent. <pause> Given triangles A B C and D E F with angle A B C equal to angle D E F, angle B C A equal to angle E F D, and either the included side B C equal to E F, or a side subtending an equal angle such as A B equal to D E, we prove that the remaining sides and the remaining angle are equal.
+
+[bell:construction]
+[style:brisk] First, let the included side B C equal E F. <pause> If side A B were greater than D E, cut off segment B G equal to D E and construct segment G C. <pause> Second, let the opposite side A B equal D E. <pause> If base B C were greater than E F, cut off segment B H equal to E F and construct segment A H.
+
+[bell:insight]
+[style:brisk] In the first case, side-angle-side congruence makes triangle G B C equal to triangle D E F, so angle G C B equals angle D F E, which equals the whole angle B C A — the part equal to the whole, which is impossible. <pause> Thus A B equals D E, and by side-angle-side congruence A C equals D F and angle B A C equals angle E D F. <pause> In the second case, side-angle-side congruence makes triangle A B H equal to triangle D E F, so exterior angle B H A of triangle A H C equals the opposite interior angle B C A, violating Proposition Sixteen. <pause> Therefore B C equals E F, and the remaining sides and angle are equal, <pause> as was required to prove.

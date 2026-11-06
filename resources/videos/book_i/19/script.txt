@@ -1,0 +1,8 @@
+[bell:proposition]
+[style:brisk] Euclid's Elements, Book One, Proposition Nineteen. <pause> In any triangle, the greater angle is subtended by the greater side. <pause> Given triangle A B C with angle A B C greater than angle B C A, we prove that side A C is greater than side A B.
+
+[bell:construction]
+[style:brisk] Suppose side A C is not greater than side A B. <pause> Then A C is either equal to A B or less than A B.
+
+[bell:insight]
+[style:brisk] Side A C cannot equal A B, for then base angle A B C would equal angle A C B, contradicting our hypothesis. <pause> Nor can side A C be less than A B, for then angle A B C would be less than angle A C B, since the greater side subtends the greater angle. <pause> Since side A C is neither equal to nor less than A B, side A C is greater than side A B, <pause> as was required to prove.

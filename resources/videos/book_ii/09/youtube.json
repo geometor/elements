@@ -1,0 +1,33 @@
+{
+  "prop_id": "BOOK II \u2022 PROP. 9",
+  "short_code": "II.9",
+  "g_id": "G.91",
+  "version": 2,
+  "enunciation": "If a segment be cut into equal and unequal segments, the squares on the unequal segments of the whole are double of the square on the half and of the square on the segment between the points of section.",
+  "title_1080p": "II.9 \u2022 sum of squares equal unequal \u2022 Euclid's Elements",
+  "title_short": "II.9 \u2022 sum of squares equal unequal \u2022 Euclid's Elements",
+  "description": "\u201cIf a segment be cut into equal and unequal segments, the squares on the unequal segments of the whole are double of the square on the half and of the square on the segment between the points of section.\u201d\n\u2014 Euclid's Elements, BOOK II \u2022 PROP. 9 (G.91)\n\n00:00 1 \u00b7 GIVEN: given / A B / cut equally at C and unequally at D\n00:19 2 \u00b7 CONSTRUCT: perpendicular / C E / = / A C /, parallels / D F /, / F G /, join / A F /\n00:41 3 \u00b7 ASSERT: half-right angles \u2192 \u27e8 A E B ) is right, / E G / = / G F /, / F D / = / D B /\n00:57 4 \u00b7 ASSERT: sq(/ E A /) = 2\u00b7sq(/ A C /) and sq(/ E F /) = 2\u00b7sq(/ C D /)\n01:13 5 \u00b7 ASSERT: sq(/ A D /) + sq(/ D F /) = sq(/ A F /) = 2\u00b7(sq(/ A C /) + sq(/ C D /))\n01:29 6 \u00b7 \u2234: sq(/ A D /) + sq(/ D B /) = 2\u00b7(sq(/ A C /) + sq(/ C D /))\n01:45 7 \u00b7 COMMENTARY: geometric algebra: (a + b)\u00b2 + (a \u2212 b)\u00b2 = 2(a\u00b2 + b\u00b2)\n02:01 8 \u00b7 GENEALOGY: G.91 dependency tree & symbolic model\n02:18 9 \u00b7 PARTICIPATE: explore the GEOMETOR Elements Codex & participate\n\nExplore the interactive Book Codex, symbolic model, and dependency tree:\n\u2022 Elements Codex (G.91): https://geometor.github.io/elements/elements2/G.91/\n\u2022 Heath Edition (II.9): https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/09/\n\u2022 GitHub: https://github.com/geometor/elements\n\nGEOMETOR \u2022 G.91 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid II.9",
+    "G.91",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/09/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.91/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_ii/09/II_09_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_ii/09/II_09_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_ii/09/II_09.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_ii/09/II_09_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_ii/09/II_09_short_thumb.png"
+  }
+}

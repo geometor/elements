@@ -1,12 +1,12 @@
 :canonical_id: G.91
 :original_id: II.9
-:title: G.91 sum of squares equal unequal
+:title: G.91 sum of squares on unequal parts
 :volume: I
 :book: II
 :type: prop
 
-G.91 sum of squares equal unequal — Heath
-=========================================
+G.91 sum of squares on unequal parts — Heath
+============================================
 
 .. rubric:: `II.9 <https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/09/>`_
 
@@ -195,7 +195,7 @@ Dependency Graph
      "G.77" [label="G.77", tooltip="G.77 (I.def.12): An acute angle is less than a right angle.", fillcolor="#224422", URL="../G.77/index.html", target="_top"];
      "G.78" [label="G.78", tooltip="G.78 (I.def.21): A right-angled triangle has a right angle, an obtuse-angled triangle has an obtuse angle, and an acute-angled triangle has three acute angles.", fillcolor="#224422", URL="../G.78/index.html", target="_top"];
      "G.79" [label="G.79", tooltip="G.79 (I.47): In a right-angled triangle, the square on the hypotenuse equals the sum of the squares on the two legs (Pythagorean Theorem).", fillcolor="#222244", URL="../G.79/index.html", target="_top"];
-     "G.91" [label="G.91", tooltip="G.91 (II.9): If a segment be cut into equal and unequal segments, the squares on the unequal segments of the whole are double of the square on the half and of the square on the segment between ...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.91" [label="G.91", tooltip="G.91 (II.9): If a segment is cut into equal and unequal parts, the sum of the squares on the unequal parts is double the sum of the square on the half and the square on the segment between the ...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -349,6 +349,7 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.51" -> "G.14";
      "G.58" -> "G.14";
      "G.70" -> "G.14";
@@ -364,16 +365,24 @@ Dependency Graph
      "G.37" -> "G.16";
      "G.39" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.56" -> "G.16";
+     "G.59" -> "G.16";
      "G.64" -> "G.16";
+     "G.66" -> "G.16";
+     "G.70" -> "G.16";
+     "G.75" -> "G.16";
+     "G.91" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
      "G.34" -> "G.17";
      "G.20" -> "G.18";
      "G.25" -> "G.18";
+     "G.39" -> "G.18";
      "G.41" -> "G.18";
      "G.45" -> "G.18";
+     "G.53" -> "G.18";
      "G.58" -> "G.18";
      "G.59" -> "G.18";
      "G.66" -> "G.18";
@@ -391,7 +400,9 @@ Dependency Graph
      "G.43" -> "G.21";
      "G.45" -> "G.21";
      "G.47" -> "G.21";
+     "G.51" -> "G.21";
      "G.75" -> "G.21";
+     "G.91" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
      "G.27" -> "G.22";
@@ -424,7 +435,6 @@ Dependency Graph
      "G.77" -> "G.22";
      "G.78" -> "G.22";
      "G.79" -> "G.22";
-     "G.91" -> "G.22";
      "G.24" -> "G.23";
      "G.29" -> "G.23";
      "G.25" -> "G.24";
@@ -436,12 +446,17 @@ Dependency Graph
      "G.64" -> "G.24";
      "G.79" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
+     "G.91" -> "G.25";
      "G.27" -> "G.26";
      "G.28" -> "G.26";
+     "G.39" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.51" -> "G.26";
      "G.91" -> "G.27";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
@@ -464,15 +479,16 @@ Dependency Graph
      "G.77" -> "G.33";
      "G.78" -> "G.33";
      "G.79" -> "G.33";
-     "G.91" -> "G.33";
      "G.37" -> "G.34";
      "G.75" -> "G.34";
      "G.91" -> "G.34";
      "G.37" -> "G.36";
      "G.56" -> "G.36";
+     "G.59" -> "G.36";
      "G.62" -> "G.36";
      "G.64" -> "G.36";
      "G.79" -> "G.36";
+     "G.91" -> "G.36";
      "G.39" -> "G.37";
      "G.40" -> "G.37";
      "G.56" -> "G.37";
@@ -512,6 +528,7 @@ Dependency Graph
      "G.66" -> "G.58";
      "G.75" -> "G.58";
      "G.79" -> "G.58";
+     "G.91" -> "G.58";
      "G.91" -> "G.59";
      "G.62" -> "G.61";
      "G.66" -> "G.61";

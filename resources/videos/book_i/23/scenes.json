@@ -1,0 +1,311 @@
+[
+  {
+    "bell": "proposition",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "step_num": 1,
+        "step_kind": "given",
+        "prop_id": "BOOK I • PROP. 23",
+        "g_id": "G.48",
+        "folio": "Folio 0308–0309 • p. 294",
+        "title": "construct an angle equal to a given angle",
+        "enunciation": "On a given straight line and at a point on it to construct a rectilineal angle equal to a given rectilineal angle.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0308.g1.svg",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0308.g1.png",
+        "visible_ids": [
+          "el-seg-AB",
+          "el-line-CD",
+          "el-line-CE",
+          "el-ang-DCE",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C"
+        ],
+        "active_ids": [
+          "hl-seg-AB",
+          "hl-line-CD",
+          "hl-line-CE",
+          "hl-ang-DCE",
+          "el-pt-A",
+          "el-pt-C",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C"
+        ],
+        "equal_ids": [],
+        "tick_ids": [],
+        "symbolic": "given / A B /, A ∈ / A B /, < D C E )",
+        "clause_html": "Given <span class=\"g-tok\">/ A B /</span>, <span class=\"g-tok\">A</span> ∈ <span class=\"g-tok\">/ A B /</span>, <span class=\"g-tok\">&lt; D C E )</span>",
+        "just_id": "G.22 • I.Def.8",
+        "just_title": "angle_def"
+      }
+    ]
+  },
+  {
+    "bell": "construction",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "step_num": 2,
+        "step_kind": "construct",
+        "prop_id": "BOOK I • PROP. 23",
+        "g_id": "G.48",
+        "folio": "Folio 0308–0309 • p. 294",
+        "title": "construct an angle equal to a given angle",
+        "enunciation": "On a given straight line and at a point on it to construct a rectilineal angle equal to a given rectilineal angle.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0308.g1.svg",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0308.g1.png",
+        "visible_ids": [
+          "el-seg-AB",
+          "el-line-CD",
+          "el-line-CE",
+          "el-seg-CD",
+          "el-seg-CE",
+          "el-seg-DE",
+          "el-tri-CDE",
+          "el-ang-DCE",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-E",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E"
+        ],
+        "active_ids": [
+          "hl-seg-DE",
+          "el-pt-D",
+          "el-pt-E",
+          "lbl-D",
+          "lbl-E"
+        ],
+        "equal_ids": [],
+        "tick_ids": [],
+        "symbolic": "point([ C D ], [ C E ]) → D, E, segment(D, E) → / D E /",
+        "clause_html": "<span class=\"fn-tok\">point</span>(<span class=\"g-tok\">[ C D ]</span>, <span class=\"g-tok\">[ C E ]</span>) → <span class=\"g-tok\">D</span>, <span class=\"g-tok\">E</span>, <span class=\"fn-tok\">segment</span>(<span class=\"g-tok\">D</span>, <span class=\"g-tok\">E</span>) → <span class=\"g-tok\">/ D E /</span>",
+        "just_id": "G.14 • I.Post.1",
+        "just_title": "segment(pt, pt)"
+      },
+      {
+        "type": "euclid_step",
+        "step_num": 3,
+        "step_kind": "construct",
+        "prop_id": "BOOK I • PROP. 23",
+        "g_id": "G.48",
+        "folio": "Folio 0308–0309 • p. 294",
+        "title": "construct an angle equal to a given angle",
+        "enunciation": "On a given straight line and at a point on it to construct a rectilineal angle equal to a given rectilineal angle.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0308.g1.svg",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0308.g1.png",
+        "visible_ids": [
+          "el-seg-AB",
+          "el-seg-AG",
+          "el-seg-AF",
+          "el-seg-FG",
+          "el-tri-AFG",
+          "el-line-CD",
+          "el-line-CE",
+          "el-seg-CD",
+          "el-seg-CE",
+          "el-seg-DE",
+          "el-tri-CDE",
+          "el-ang-DCE",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-E",
+          "el-pt-F",
+          "el-pt-G",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E",
+          "lbl-F",
+          "lbl-G"
+        ],
+        "active_ids": [
+          "hl-tri-AFG",
+          "el-pt-A",
+          "el-pt-F",
+          "el-pt-G",
+          "lbl-A",
+          "lbl-F",
+          "lbl-G"
+        ],
+        "equal_ids": [
+          "hl-seg-CD",
+          "hl-seg-AF",
+          "hl-seg-CE",
+          "hl-seg-AG",
+          "hl-seg-DE",
+          "hl-seg-FG"
+        ],
+        "tick_ids": [
+          "hl-seg-CD",
+          "hl-seg-AF"
+        ],
+        "tick_2_ids": [
+          "hl-seg-CE",
+          "hl-seg-AG"
+        ],
+        "tick_3_ids": [
+          "hl-seg-DE",
+          "hl-seg-FG"
+        ],
+        "symbolic": "triangle_from_segments(/ C D /, / D E /, / C E /) → < A F G > (/ C D / = / A F /, / C E / = / A G /, / D E / = / F G /)",
+        "clause_html": "<span class=\"fn-tok\">triangle_from_segments</span>(<span class=\"g-tok\">/ C D /</span>, <span class=\"g-tok\">/ D E /</span>, <span class=\"g-tok\">/ C E /</span>) → <span class=\"g-tok\">&lt; A F G &gt;</span> (<span class=\"g-tok\">/ C D /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ A F /</span>, <span class=\"g-tok\">/ C E /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ A G /</span>, <span class=\"g-tok\">/ D E /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ F G /</span>)",
+        "just_id": "G.47 • I.22",
+        "just_title": "triangle_from_segments"
+      }
+    ]
+  },
+  {
+    "bell": "insight",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "step_num": 4,
+        "step_kind": "assert",
+        "prop_id": "BOOK I • PROP. 23",
+        "g_id": "G.48",
+        "folio": "Folio 0308–0309 • p. 294",
+        "title": "construct an angle equal to a given angle",
+        "enunciation": "On a given straight line and at a point on it to construct a rectilineal angle equal to a given rectilineal angle.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0308.g1.svg",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0308.g1.png",
+        "visible_ids": [
+          "el-seg-AB",
+          "el-seg-AG",
+          "el-seg-AF",
+          "el-seg-FG",
+          "el-tri-AFG",
+          "el-line-CD",
+          "el-line-CE",
+          "el-seg-CD",
+          "el-seg-CE",
+          "el-seg-DE",
+          "el-tri-CDE",
+          "el-ang-DCE",
+          "el-ang-FAG",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-E",
+          "el-pt-F",
+          "el-pt-G",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E",
+          "lbl-F",
+          "lbl-G"
+        ],
+        "active_ids": [
+          "hl-tri-CDE",
+          "hl-tri-AFG",
+          "el-pt-C",
+          "el-pt-A",
+          "lbl-C",
+          "lbl-A"
+        ],
+        "equal_ids": [
+          "hl-seg-CD",
+          "hl-seg-AF",
+          "hl-seg-CE",
+          "hl-seg-AG",
+          "hl-seg-DE",
+          "hl-seg-FG",
+          "hl-ang-DCE",
+          "hl-ang-FAG"
+        ],
+        "tick_ids": [
+          "hl-seg-CD",
+          "hl-seg-AF"
+        ],
+        "tick_2_ids": [
+          "hl-seg-CE",
+          "hl-seg-AG"
+        ],
+        "tick_3_ids": [
+          "hl-seg-DE",
+          "hl-seg-FG"
+        ],
+        "symbolic": "/ D C / = / F A /, / C E / = / A G /, / D E / = / F G / → < D C E ) = < F A G )",
+        "clause_html": "<span class=\"g-tok\">/ D C /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ F A /</span>, <span class=\"g-tok\">/ C E /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ A G /</span>, <span class=\"g-tok\">/ D E /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ F G /</span> → <span class=\"g-tok\">&lt; D C E )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; F A G )</span>",
+        "just_id": "G.29 • I.8",
+        "just_title": "sss_congruence"
+      },
+      {
+        "type": "euclid_step",
+        "step_num": 5,
+        "step_kind": "∴",
+        "prop_id": "BOOK I • PROP. 23",
+        "g_id": "G.48",
+        "folio": "Folio 0308–0309 • p. 294",
+        "title": "construct an angle equal to a given angle",
+        "enunciation": "On a given straight line and at a point on it to construct a rectilineal angle equal to a given rectilineal angle.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0308.g1.svg",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0308.g1.png",
+        "visible_ids": [
+          "el-seg-AB",
+          "el-seg-AG",
+          "el-seg-AF",
+          "el-seg-FG",
+          "el-tri-AFG",
+          "el-line-CD",
+          "el-line-CE",
+          "el-seg-CD",
+          "el-seg-CE",
+          "el-seg-DE",
+          "el-tri-CDE",
+          "el-ang-DCE",
+          "el-ang-FAG",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-E",
+          "el-pt-F",
+          "el-pt-G",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E",
+          "lbl-F",
+          "lbl-G"
+        ],
+        "active_ids": [
+          "hl-seg-AB",
+          "hl-seg-AF",
+          "el-pt-A",
+          "lbl-A",
+          "lbl-F",
+          "lbl-G"
+        ],
+        "equal_ids": [
+          "hl-ang-FAG",
+          "hl-ang-DCE",
+          "hl-arc-FAG",
+          "hl-arc-DCE"
+        ],
+        "tick_ids": [],
+        "symbolic": "< F A G ) = < D C E )",
+        "clause_html": "<span class=\"g-tok\">&lt; F A G )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; D C E )</span>",
+        "just_id": "G.29 • I.8",
+        "just_title": "sss_congruence"
+      }
+    ]
+  }
+]

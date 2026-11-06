@@ -1,0 +1,64 @@
+{
+  "prop_id": "BOOK I \u2022 PROP. 29",
+  "short_code": "I.29",
+  "g_id": "G.56",
+  "version": 2,
+  "enunciation": "A straight line falling on parallel straight lines makes the alternate angles equal to one another, the exterior angle equal to the interior and opposite angle, and the interior angles on the same side equal to two right angles.",
+  "title_1080p": "I.29 \u2022 a straight line falling on parallel straight lines makes the alternate angles equal to one...",
+  "title_short": "I.29 \u2022 a straight line falling on parallel straight lines makes the alternate angles equal to one...",
+  "description": "\u201cA straight line falling on parallel straight lines makes the alternate angles equal to one another, the exterior angle equal to the interior and opposite angle, and the interior angles on the same side equal to two right angles.\u201d\n\u2014 Euclid's Elements, BOOK I \u2022 PROP. 29 (G.56)\n\n00:00 1 \u00b7 GIVEN: / A B / \u2225 / C D /, / E F / \u2229 / A B /, / C D / \u2192 G, H\n00:32 2 \u00b7 ASSERT: ? \u27e8 A G H ) \u27e9 \u27e8 G H D ) \u2192 \u27e8 A G H ) + \u27e8 B G H ) = 2\u221f \u27e9 \u27e8 B G H ) + \u27e8 G H D )\n00:47 3 \u00b7 ASSERT: \u27e8 B G H ) + \u27e8 G H D ) \u27e8 2\u221f \u2192 [ A B ] \u2229 [ C D ] \u2260 \u2205 \u21d2\u21d0 \u2192 \u27e8 A G H ) = \u27e8 G H D )\n01:02 4 \u00b7 ASSERT: \u27e8 A G H ) = \u27e8 E G B ), \u27e8 A G H ) = \u27e8 G H D ) \u2192 \u27e8 E G B ) = \u27e8 G H D )\n01:19 5 \u00b7 \u2234: \u27e8 E G B ) + \u27e8 B G H ) = 2\u221f \u2192 \u27e8 B G H ) + \u27e8 G H D ) = 2\u221f\n\nGEOMETOR \u2022 G.56 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid I.29",
+    "G.56",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/29/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.56/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_i/29/I_29_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_i/29/I_29_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_i/29/I_29.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_i/29/I_29_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_i/29/I_29_short_thumb.png"
+  },
+  "uploads": {
+    "wide_1080p": {
+      "version": 2,
+      "video_id": "Om2mQVvq45M",
+      "url": "https://youtu.be/Om2mQVvq45M",
+      "studio_url": "https://studio.youtube.com/video/Om2mQVvq45M/edit",
+      "caption_id": null,
+      "playlist_id": "PLUXlBs_QySgw",
+      "playlist_item_id": "UExVWGxCc19ReVNndy40QzRDOEU0QUYwNUIxN0M1",
+      "privacyStatus": "private",
+      "publishAt": "2026-11-07T00:00:00Z",
+      "uploaded_at": "2026-11-05T12:53:14.275983+00:00",
+      "thumbnail_set": true,
+      "updated_at": "2026-11-06T08:06:55.547150+00:00"
+    },
+    "short": {
+      "version": 2,
+      "video_id": "pBWBQy7uAe4",
+      "url": "https://youtube.com/shorts/pBWBQy7uAe4",
+      "studio_url": "https://studio.youtube.com/video/pBWBQy7uAe4/edit",
+      "caption_id": null,
+      "playlist_id": "PLTJvna-1hErU",
+      "playlist_item_id": "UExUSnZuYS0xaEVyVS5BRjJDODk5REM0NjkzMUIy",
+      "privacyStatus": "private",
+      "publishAt": "2026-11-07T00:00:00Z",
+      "uploaded_at": "2026-11-05T12:54:02.334017+00:00",
+      "thumbnail_set": true,
+      "updated_at": "2026-11-06T08:06:59.338075+00:00"
+    }
+  },
+  "history": {}
+}

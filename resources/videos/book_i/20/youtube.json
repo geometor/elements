@@ -1,0 +1,63 @@
+{
+  "prop_id": "BOOK I \u2022 PROP. 20",
+  "short_code": "I.20",
+  "g_id": "G.45",
+  "version": 2,
+  "enunciation": "In any triangle two sides taken together in any manner are greater than the remaining one.",
+  "title_1080p": "I.20 \u2022 in any triangle two sides taken together in any manner are greater than the remaining one ...",
+  "title_short": "I.20 \u2022 in any triangle two sides taken together in any manner are greater than the remaining one ...",
+  "description": "\u201cIn any triangle two sides taken together in any manner are greater than the remaining one.\u201d\n\u2014 Euclid's Elements, BOOK I \u2022 PROP. 20 (G.45)\n\n00:00 1 \u00b7 GIVEN: \u27e8 A B C \u27e9\n00:13 2 \u00b7 CONSTRUCT: extend(/ B A /), cut_equal_segment(/ C A /) \u2192 / A D / (= / A C /), segment(D, C) \u2192 / D C /\n00:21 3 \u00b7 ASSERT: / D A / = / A C / \u2192 \u27e8 A D C ) = \u27e8 A C D )\n00:30 4 \u00b7 ASSERT: \u27e8 B C D ) \u27e9 \u27e8 A C D ) \u2192 \u27e8 B C D ) \u27e9 \u27e8 A D C )\n00:38 5 \u00b7 ASSERT: \u27e8 B C D ) \u27e9 \u27e8 B D C ) \u2192 / D B / \u27e9 / B C /\n00:46 6 \u00b7 \u2234: / B A / + / A C / \u27e9 / B C /, / A B / + / B C / \u27e9 / A C /, / B C / + / C A / \u27e9 / A B /\n\nGEOMETOR \u2022 G.45 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid I.20",
+    "G.45",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/20/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.45/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_i/20/I_20_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_i/20/I_20_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_i/20/I_20.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_i/20/I_20_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_i/20/I_20_short_thumb.png"
+  },
+  "uploads": {
+    "wide_1080p": {
+      "version": 2,
+      "video_id": "BN5O-4X3lo4",
+      "url": "https://youtu.be/BN5O-4X3lo4",
+      "studio_url": "https://studio.youtube.com/video/BN5O-4X3lo4/edit",
+      "caption_id": "AUieDabD7CQ9MrY8XmBkBR8dnyrOFk1SOwqZx8z9BagFiLIBHhaGnt_8",
+      "playlist_id": "PLUXlBs_QySgw",
+      "playlist_item_id": "UExVWGxCc19ReVNndy4xOTEzQzhBQzU3MDNDNjcz",
+      "privacyStatus": "public",
+      "uploaded_at": "2026-11-04T16:29:49.384071+00:00",
+      "published_at": "2026-11-04T16:34:40.682148+00:00",
+      "thumbnail_set": true
+    },
+    "short": {
+      "version": 2,
+      "video_id": "jKjRzSnLTNY",
+      "url": "https://youtube.com/shorts/jKjRzSnLTNY",
+      "studio_url": "https://studio.youtube.com/video/jKjRzSnLTNY/edit",
+      "caption_id": "AUieDaYzNEiDblvQLWuah0jbrzda6WtrrgOXOGYZd50TtrqkkFXBCrJz",
+      "playlist_id": "PLTJvna-1hErU",
+      "playlist_item_id": "UExUSnZuYS0xaEVyVS5DMkU4NTY1QUFGQTYwMDE3",
+      "privacyStatus": "public",
+      "uploaded_at": "2026-11-04T16:34:25.426113+00:00",
+      "published_at": "2026-11-05T12:38:30.581809+00:00",
+      "thumbnail_set": true,
+      "updated_at": "2026-11-06T11:24:10.799624+00:00"
+    }
+  },
+  "history": {}
+}

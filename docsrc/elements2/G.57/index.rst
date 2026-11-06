@@ -10,8 +10,9 @@
 :categories: theorem, proof, plane-geometry
 :category: theorem, proof, plane-geometry
 :tags: book-i, segment, angle, straight-line, parallel-straight-lines, plane-angle, parallel, equality
-:dependencies: G.2, G.4, G.16, G.22, G.52, G.56
+:dependencies: G.2, G.4, G.16, G.22, G.52, G.53, G.56
 :excerpt: Lines parallel to the same line are parallel to one another.
+:youtube_id: JopP5Vlcj3E
 
 .. _G.57:
 .. _I.30:
@@ -28,43 +29,31 @@ G.57 lines parallel to the same line are parallel
 .. signature:: theorem
 
    | :fn:`parallel_transitive <G.57>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`, :g:`/ E F / <g1:/ E F />`)
-   | **given** each of :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` be parallel to :g:`/ E F / <g1:/ E F />`
-   | **prove** :g:`/ A B / <g1:/ A B />` is also parallel to :g:`/ C D / <g1:/ C D />`
+   | **given** :g:`/ A B / <g1:/ A B />` ∥ :g:`/ E F / <g1:/ E F />`, :g:`/ C D / <g1:/ C D />` ∥ :g:`/ E F / <g1:/ E F />`
+   | **prove** :g:`/ A B / <g1:/ A B />` ∥ :g:`/ C D / <g1:/ C D />`
 
 .. picture:: g1.svg
    :alt: Folio 0328 Figure 1 - Proposition 30
 
 .. step:: given
 
-   each of :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` be parallel to :g:`/ E F / <g1:/ E F />`
+   :g:`/ A B / <g1:/ A B />` ∥ :g:`/ E F / <g1:/ E F />`, :g:`/ C D / <g1:/ C D />` ∥ :g:`/ E F / <g1:/ E F />`
 
-.. step:: assert
+.. step:: construct
 
-   Let :g:`/ G K / <g1:/ G K />` fall upon them
-
-.. step:: assert ∵ parallel_transversal_angles <G.56>
-
-   :g:`/ G K / <g1:/ G K />` has fallen on the parallel lines :g:`/ A B / <g1:/ A B />`, :g:`/ E F / <g1:/ E F />` → :g:`< A G K ) <g1:< A G K )>` :eq:`= <g1:< A G K ) = g1:< G H F )>` :g:`< G H F ) <g1:< G H F )>`
+   :g:`/ G K / <g1:/ G K />` ∩ :g:`/ A B / <g1:/ A B />`, :g:`/ E F / <g1:/ E F />`, :g:`/ C D / <g1:/ C D />` → :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`K <g1:K>`
 
 .. step:: assert ∵ parallel_transversal_angles <G.56>
 
-   :g:`/ G K / <g1:/ G K />` has fallen on the parallel lines :g:`/ E F / <g1:/ E F />`, :g:`/ C D / <g1:/ C D />` → :g:`< G H F ) <g1:< G H F )>` :eq:`= <g1:< G H F ) = g1:< G K D )>` :g:`< G K D ) <g1:< G K D )>`
+   :g:`/ A B / <g1:/ A B />` ∥ :g:`/ E F / <g1:/ E F />` → :g:`< A G K ) <g1:< A G K )>` :eq:`= <g1:< A G K ) = g1:< G H F )>` :g:`< G H F ) <g1:< G H F )>`
 
-.. step:: assert
+.. step:: assert ∵ parallel_transversal_angles, equal_transitive <G.56, G.16>
 
-   :g:`< A G K ) <g1:< A G K )>` :eq:`= <g1:< A G K ) = g1:< G H F )>` :g:`< G H F ) <g1:< G H F )>`
+   :g:`/ E F / <g1:/ E F />` ∥ :g:`/ C D / <g1:/ C D />` → :g:`< G H F ) <g1:< G H F )>` :eq:`= <g1:< G H F ) = g1:< G K D )>` :g:`< G K D ) <g1:< G K D )>` → :g:`< A G K ) <g1:< A G K )>` :eq:`= <g1:< A G K ) = g1:< G K D )>` :g:`< G K D ) <g1:< G K D )>`
 
-.. step:: assert ∵ equal_transitive <G.16>
+.. step:: conclude ∵ alternate_angles_parallel <G.53>
 
-   :g:`< A G K ) <g1:< A G K )>` :eq:`= <g1:< A G K ) = g1:< G K D )>` :g:`< G K D ) <g1:< G K D )>`
-
-.. step:: assert
-
-   they are alternate
-
-.. step:: conclude
-
-   :g:`/ A B / <g1:/ A B />` is parallel to :g:`/ C D / <g1:/ C D />`
+   :g:`< A G K ) <g1:< A G K )>` :eq:`= <g1:< A G K ) = g1:< G K D )>` :g:`< G K D ) <g1:< G K D )>` → :g:`/ A B / <g1:/ A B />` ∥ :g:`/ C D / <g1:/ C D />`
 
 Dependency Graph
 ----------------
@@ -104,13 +93,18 @@ Dependency Graph
      "G.26" [label="G.26", tooltip="G.26 (I.cn.5): The whole is greater than the part.", fillcolor="#442222", URL="../G.26/index.html", target="_top"];
      "G.28" [label="G.28", tooltip="G.28 (I.7): On the same segment and on the same side, there cannot be constructed two distinct triangles with both pairs of conterminous sides equal.", fillcolor="#222244", URL="../G.28/index.html", target="_top"];
      "G.29" [label="G.29", tooltip="G.29 (I.8): Triangles with all three corresponding sides equal have their corresponding angles equal (SSS).", fillcolor="#222244", URL="../G.29/index.html", target="_top"];
+     "G.30" [label="G.30", tooltip="G.30 (I.def.9): A rectilineal angle is contained by two segments or lines.", fillcolor="#224422", URL="../G.30/index.html", target="_top"];
+     "G.31" [label="G.31", tooltip="G.31 (I.9): Bisect a given angle.", fillcolor="#222244", URL="../G.31/index.html", target="_top"];
+     "G.32" [label="G.32", tooltip="G.32 (I.10): Bisect a given segment.", fillcolor="#222244", URL="../G.32/index.html", target="_top"];
      "G.33" [label="G.33", tooltip="G.33 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.33/index.html", target="_top"];
      "G.34" [label="G.34", tooltip="G.34 (I.11): Construct a segment at right angles to a given line from a given point on it.", fillcolor="#222244", URL="../G.34/index.html", target="_top"];
      "G.36" [label="G.36", tooltip="G.36 (I.cn.2): If equals are added to equals, the wholes are equal.", fillcolor="#442222", URL="../G.36/index.html", target="_top"];
      "G.37" [label="G.37", tooltip="G.37 (I.13): A segment standing on a line makes either two right angles or adjacent angles summing to two right angles.", fillcolor="#222244", URL="../G.37/index.html", target="_top"];
      "G.38" [label="G.38", tooltip="G.38 (I.post.4): All right angles are equal.", fillcolor="#444422", URL="../G.38/index.html", target="_top"];
      "G.40" [label="G.40", tooltip="G.40 (I.15): Intersecting lines make their vertical angles equal.", fillcolor="#222244", URL="../G.40/index.html", target="_top"];
+     "G.41" [label="G.41", tooltip="G.41 (I.16): In any triangle, if one side is extended, the exterior angle is greater than either opposite interior angle.", fillcolor="#222244", URL="../G.41/index.html", target="_top"];
      "G.52" [label="G.52", tooltip="G.52 (I.def.23): Parallel lines are lines in the same plane which, extended indefinitely in both directions, do not meet.", fillcolor="#224422", URL="../G.52/index.html", target="_top"];
+     "G.53" [label="G.53", tooltip="G.53 (I.27): If a transversal cutting two lines makes the alternate interior angles equal, the lines are parallel.", fillcolor="#222244", URL="../G.53/index.html", target="_top"];
      "G.55" [label="G.55", tooltip="G.55 (I.post.5): Two lines intersected by a transversal with interior angles on one side summing to less than two right angles meet on that side.", fillcolor="#444422", URL="../G.55/index.html", target="_top"];
      "G.56" [label="G.56", tooltip="G.56 (I.29): A transversal cutting parallel lines makes alternate interior angles equal, exterior and opposite interior angles equal, and same-side interior angles supplementary.", fillcolor="#222244", URL="../G.56/index.html", target="_top"];
      "G.57" [label="G.57", tooltip="G.57 (I.30): Lines parallel to the same line are parallel to one another.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
@@ -128,6 +122,8 @@ Dependency Graph
      "G.25" -> "G.1";
      "G.28" -> "G.1";
      "G.29" -> "G.1";
+     "G.31" -> "G.1";
+     "G.32" -> "G.1";
      "G.34" -> "G.1";
      "G.37" -> "G.1";
      "G.40" -> "G.1";
@@ -137,11 +133,13 @@ Dependency Graph
      "G.7" -> "G.2";
      "G.18" -> "G.2";
      "G.22" -> "G.2";
+     "G.30" -> "G.2";
      "G.33" -> "G.2";
      "G.34" -> "G.2";
      "G.37" -> "G.2";
      "G.40" -> "G.2";
      "G.52" -> "G.2";
+     "G.53" -> "G.2";
      "G.55" -> "G.2";
      "G.56" -> "G.2";
      "G.57" -> "G.2";
@@ -165,11 +163,16 @@ Dependency Graph
      "G.25" -> "G.4";
      "G.28" -> "G.4";
      "G.29" -> "G.4";
+     "G.30" -> "G.4";
+     "G.31" -> "G.4";
+     "G.32" -> "G.4";
      "G.33" -> "G.4";
      "G.34" -> "G.4";
      "G.37" -> "G.4";
      "G.40" -> "G.4";
+     "G.41" -> "G.4";
      "G.52" -> "G.4";
+     "G.53" -> "G.4";
      "G.55" -> "G.4";
      "G.56" -> "G.4";
      "G.57" -> "G.4";
@@ -198,14 +201,20 @@ Dependency Graph
      "G.25" -> "G.12";
      "G.28" -> "G.12";
      "G.29" -> "G.12";
+     "G.31" -> "G.12";
+     "G.32" -> "G.12";
      "G.34" -> "G.12";
+     "G.41" -> "G.12";
+     "G.53" -> "G.12";
      "G.17" -> "G.13";
      "G.25" -> "G.13";
      "G.17" -> "G.14";
      "G.20" -> "G.14";
      "G.25" -> "G.14";
      "G.28" -> "G.14";
+     "G.31" -> "G.14";
      "G.34" -> "G.14";
+     "G.41" -> "G.14";
      "G.17" -> "G.15";
      "G.20" -> "G.15";
      "G.21" -> "G.15";
@@ -217,33 +226,51 @@ Dependency Graph
      "G.56" -> "G.16";
      "G.57" -> "G.16";
      "G.20" -> "G.17";
+     "G.31" -> "G.17";
+     "G.32" -> "G.17";
      "G.34" -> "G.17";
      "G.20" -> "G.18";
      "G.25" -> "G.18";
+     "G.41" -> "G.18";
+     "G.53" -> "G.18";
      "G.20" -> "G.19";
      "G.25" -> "G.19";
      "G.40" -> "G.19";
      "G.21" -> "G.20";
      "G.25" -> "G.21";
+     "G.31" -> "G.21";
      "G.34" -> "G.21";
+     "G.41" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
      "G.28" -> "G.22";
      "G.29" -> "G.22";
+     "G.30" -> "G.22";
+     "G.31" -> "G.22";
+     "G.32" -> "G.22";
      "G.33" -> "G.22";
      "G.34" -> "G.22";
      "G.37" -> "G.22";
      "G.40" -> "G.22";
+     "G.41" -> "G.22";
+     "G.53" -> "G.22";
      "G.55" -> "G.22";
      "G.56" -> "G.22";
      "G.57" -> "G.22";
      "G.24" -> "G.23";
      "G.29" -> "G.23";
      "G.25" -> "G.24";
+     "G.32" -> "G.24";
+     "G.41" -> "G.24";
      "G.28" -> "G.25";
      "G.28" -> "G.26";
+     "G.41" -> "G.26";
      "G.29" -> "G.28";
+     "G.31" -> "G.29";
      "G.34" -> "G.29";
+     "G.31" -> "G.30";
+     "G.32" -> "G.31";
+     "G.41" -> "G.32";
      "G.34" -> "G.33";
      "G.37" -> "G.33";
      "G.38" -> "G.33";
@@ -256,9 +283,13 @@ Dependency Graph
      "G.40" -> "G.37";
      "G.56" -> "G.37";
      "G.40" -> "G.38";
+     "G.41" -> "G.40";
      "G.56" -> "G.40";
+     "G.53" -> "G.41";
+     "G.53" -> "G.52";
      "G.56" -> "G.52";
      "G.57" -> "G.52";
+     "G.57" -> "G.53";
      "G.56" -> "G.55";
      "G.57" -> "G.56";
    }
@@ -271,5 +302,6 @@ Required for
 .. toctree::
    :hidden:
 
+   video
    code
    heath

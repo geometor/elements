@@ -1,0 +1,57 @@
+WEBVTT
+
+1
+00:00:00.420 --> 00:00:02.998
+Book Three, Proposition Twenty-Eight.
+
+2
+00:00:02.998 --> 00:00:10.732
+In equal circles, equal segments cut off equal arcs, the greater equal to the greater and the less to the less.
+
+3
+00:00:10.732 --> 00:00:20.975
+Let A B C and D E F be equal circles, and let equal chords A B and D E cut off A C B and D F E as greater arcs, and A G B and D H E as lesser arcs.
+
+4
+00:00:20.975 --> 00:00:26.410
+We must prove that arc A C B equals arc D F E, and arc A G B equals arc D H E.
+
+5
+00:00:26.830 --> 00:00:34.000
+Take the centers K and L of the two circles, and join the radii A K, K B, D L, and L E.
+
+6
+00:00:34.420 --> 00:00:39.868
+Because the circles are equal, their radii A K, K B, D L, and L E are all equal.
+
+7
+00:00:39.868 --> 00:00:52.261
+And since the base A B equals the base D E, the three sides of triangle A K B equal the three sides of triangle D L E, so central angle A K B equals central angle D L E by One Eight.
+
+8
+00:00:52.261 --> 00:01:00.569
+By Three Twenty-Six, equal angles at the centers stand on equal arcs, so the lesser arc A G B equals the lesser arc D H E.
+
+9
+00:01:00.569 --> 00:01:13.780
+And since the whole circle A B C equals the whole circle D E F, subtracting the equal lesser arcs leaves the remaining greater arc A C B equal to the greater arc D F E, as was required to prove.
+
+10
+00:01:14.200 --> 00:01:19.311
+Proposition Twenty-Eight translates linear equality of chords into curved equality of arcs.
+
+11
+00:01:19.311 --> 00:01:32.511
+As Heath observes, if one of the equal chords passes through the center as a diameter, the other chord must also be a diameter by Three Fifteen, since the diameter is the greatest chord in a circle; thus both cut off equal semicircles.
+
+12
+00:01:32.511 --> 00:01:45.880
+In the GEOMETOR G-Index, node G one-thirty-five connects Book One's side-side-side congruence with Three Twenty-Six across forty-one ancestor nodes, powering the arc bisection in Three Thirty and regular polygon inscriptions in Book Four.
+
+13
+00:01:46.300 --> 00:01:59.802
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Twenty-Eight in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+14
+00:01:59.802 --> 00:02:06.940
+Subscribe to at geometor, share your thoughts in the comments, and star the repository at github dot com slash geometor.

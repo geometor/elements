@@ -1,0 +1,69 @@
+WEBVTT
+
+1
+00:00:00.420 --> 00:00:02.323
+Book Three, Proposition Three.
+
+2
+00:00:02.323 --> 00:00:13.171
+If in a circle a segment through the center bisect a segment not through the center, it also cuts it at right angles; and if it cut it at right angles, it also bisects it.
+
+3
+00:00:13.171 --> 00:00:20.530
+Let A B C be a circle, and in it let a diameter C D through the center meet a chord A B not through the center at F.
+
+4
+00:00:20.950 --> 00:00:28.000
+Take the center E of the circle A B C, and join the radii E A and E B.
+
+5
+00:00:28.420 --> 00:00:30.800
+First, let C D bisect A B at F.
+
+6
+00:00:30.800 --> 00:00:41.012
+Since A F equals F B, F E is common, and the radii E A and E B are equal, by One Eight the adjacent angles A F E and B F E are equal.
+
+7
+00:00:41.012 --> 00:00:47.461
+Therefore each is a right angle by Definition Ten, and C D cuts A B at right angles.
+
+8
+00:00:47.461 --> 00:00:51.223
+Conversely, let C D cut A B at right angles at F.
+
+9
+00:00:51.223 --> 00:00:58.364
+Since the radii E A and E B are equal, by One Five the base angles E A F and E B F are equal.
+
+10
+00:00:58.364 --> 00:01:12.338
+In triangles E A F and E B F, two angles equal two angles and the common side E F subtends equal angles; therefore by One Twenty-Six the remaining sides are equal, so A F equals F B.
+
+11
+00:01:12.338 --> 00:01:19.094
+Thus a line through the center bisects a chord if and only if it is perpendicular to it.
+
+12
+00:01:19.094 --> 00:01:20.860
+Which was to be proved.
+
+13
+00:01:21.280 --> 00:01:26.983
+As Heath observes, Proposition Three Three establishes the two partial converses of the Porism to Three One.
+
+14
+00:01:26.983 --> 00:01:38.125
+Together they form a complete triad of circle symmetry: for any line meeting a chord, any two of the three conditions—passing through the center, bisecting the chord, and cutting at right angles—imply the third.
+
+15
+00:01:38.125 --> 00:01:53.280
+In the GEOMETOR G-Index, node G one hundred pairs Side-Side-Side congruence in the forward direction with Angle-Angle-Side congruence in the converse, serving ten major theorems including the intersecting chords theorem, Three Thirty-Five, and regular pentagon construction in Book Four.
+
+16
+00:01:53.700 --> 00:02:06.592
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Three in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+17
+00:02:06.592 --> 00:02:12.980
+Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

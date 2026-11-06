@@ -1,0 +1,55 @@
+1
+00:00:00,420 --> 00:00:04,106
+Euclid's Elements, Book One, Proposition Forty-Five.
+
+2
+00:00:04,106 --> 00:00:09,635
+Construct, in a given angle, a parallelogram equal in area to a given polygon.
+
+3
+00:00:09,635 --> 00:00:14,385
+Let A B C D be the given polygon and E the given rectilineal angle.
+
+4
+00:00:14,385 --> 00:00:20,410
+We construct a parallelogram equal in area to polygon A B C D in an angle equal to E.
+
+5
+00:00:20,830 --> 00:00:26,309
+Construct segment D B, dividing polygon A B C D into triangles A B D and D B C.
+
+6
+00:00:26,309 --> 00:00:34,770
+By Proposition Forty-Two, construct parallelogram F K H G equal in area to triangle A B D in angle H K F equal to angle E.
+
+7
+00:00:34,770 --> 00:00:44,480
+Then, by Proposition Forty-Four, apply to segment G H parallelogram G H M L equal in area to triangle D B C in angle G H M equal to angle E.
+
+8
+00:00:44,900 --> 00:00:51,081
+Since angle E equals both angle H K F and angle G H M, angle H K F equals angle G H M.
+
+9
+00:00:51,081 --> 00:00:56,974
+Add angle K H G to each; then angles F K H and K H G equal angles K H G and G H M.
+
+10
+00:00:56,974 --> 00:01:14,797
+By Proposition Twenty-Nine, interior angles F K H and K H G between parallels F K and G H sum to two right angles, so angles K H G and G H M also sum to two right angles; thus by Proposition Fourteen, K H and H M form a single straight segment K M.
+
+11
+00:01:14,797 --> 00:01:21,984
+Again, since transversal H G cuts parallels K M and F G, alternate angles M H G and H G F are equal.
+
+12
+00:01:21,984 --> 00:01:35,710
+Add angle H G L to each; since interior angles M H G and H G L sum to two right angles, angles H G F and H G L also sum to two right angles, so F G and G L form a single straight segment F L.
+
+13
+00:01:35,710 --> 00:01:50,874
+Because F K and M L are each equal and parallel to H G, they are equal and parallel to one another, and segments K M and F L joining their extremities are also equal and parallel, making K F L M a parallelogram.
+
+14
+00:01:50,874 --> 00:02:07,260
+Finally, since triangle A B D equals parallelogram F K H G and triangle D B C equals parallelogram G H M L, the whole polygon A B C D equals the whole parallelogram K F L M in angle F K M equal to angle E, as was required to do.

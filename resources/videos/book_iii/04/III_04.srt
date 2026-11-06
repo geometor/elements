@@ -1,0 +1,63 @@
+1
+00:00:00,420 --> 00:00:02,372
+Book Three, Proposition Four.
+
+2
+00:00:02,372 --> 00:00:09,708
+If in a circle two segments cut one another which are not through the center, they do not bisect one another.
+
+3
+00:00:09,708 --> 00:00:17,650
+Let A B C D be a circle, and in it let two chords A C and B D, which are not through the center, cut one another at E.
+
+4
+00:00:18,070 --> 00:00:22,173
+I say that A C and B D do not bisect one another.
+
+5
+00:00:22,173 --> 00:00:29,710
+For, if possible, let them bisect one another, so that A E equals E C, and B E equals E D.
+
+6
+00:00:29,710 --> 00:00:35,320
+Take the center F of the circle A B C D by Three One, and join F E.
+
+7
+00:00:35,740 --> 00:00:46,005
+Since the segment F E through the center bisects the chord A C not through the center, by Three Three it also cuts it at right angles; therefore angle F E A is right.
+
+8
+00:00:46,005 --> 00:00:54,848
+Again, since F E bisects the chord B D not through the center, by Three Three it also cuts B D at right angles; therefore angle F E B is right.
+
+9
+00:00:54,848 --> 00:01:02,949
+But angle F E A was also proved right; therefore angle F E A equals angle F E B, the less equal to the greater—which is impossible.
+
+10
+00:01:02,949 --> 00:01:06,598
+Therefore the chords A C and B D do not bisect one another.
+
+11
+00:01:06,598 --> 00:01:08,020
+Which was to be proved.
+
+12
+00:01:08,440 --> 00:01:23,314
+Proposition Three Four is an immediate, crystalline consequence of Three One and Three Three: at any non-central point E inside a circle, only one chord can be perpendicular to the radial segment F E, so at most one chord through E can be bisected there.
+
+13
+00:01:23,314 --> 00:01:27,823
+Only diameters passing through the center itself mutually bisect one another.
+
+14
+00:01:27,823 --> 00:01:40,120
+In the GEOMETOR G-Index, node G one hundred one synthesizes seven direct rules across forty ancestor nodes, applying the perpendicular-bisector equivalence of G one hundred twice at the same intersection point.
+
+15
+00:01:40,540 --> 00:01:54,455
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Four in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+16
+00:01:54,455 --> 00:02:01,380
+Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

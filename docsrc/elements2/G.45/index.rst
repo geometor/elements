@@ -12,6 +12,7 @@
 :tags: book-i, point, segment, line, angle, triangle, trilateral, plane-angle, equality
 :dependencies: G.1, G.12, G.14, G.18, G.21, G.22, G.25, G.26, G.44
 :excerpt: In any triangle, the sum of any two sides is greater than the remaining side.
+:youtube_id: BN5O-4X3lo4
 
 .. _G.45:
 .. _I.20:
@@ -27,67 +28,36 @@ G.45 triangle inequality
 
 .. signature:: theorem
 
-   | :fn:`triangle_inequality <G.45>`\ ()
-   | **prove** in :g:`< A B C > <g1:< A B C >>` two sides taken together in any manner are greater than the remaining one, namely
+   | :fn:`triangle_inequality <G.45>`\ (:g:`< A B C > <g1:< A B C >>`)
+   | **given** :g:`< A B C > <g1:< A B C >>`
+   | **prove** :g:`/ B A / <g1:/ B A />` + :g:`/ A C / <g1:/ A C />` > :g:`/ B C / <g1:/ B C />`, :g:`/ A B / <g1:/ A B />` + :g:`/ B C / <g1:/ B C />` > :g:`/ A C / <g1:/ A C />`, :g:`/ B C / <g1:/ B C />` + :g:`/ C A / <g1:/ C A />` > :g:`/ A B / <g1:/ A B />`
 
 .. picture:: g1.svg
    :alt: Proposition 20 figure
 
-.. step:: assert
+.. step:: given
 
-   Let :g:`< A B C > <g1:< A B C >>` be a triangle
-
-.. step:: assert
-
-   :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />` greater than :g:`/ B C / <g1:/ B C />`,
-
-.. step:: assert
-
-   :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` greater than :g:`/ A C / <g1:/ A C />`,
-
-.. step:: assert
-
-   :g:`/ B C / <g1:/ B C />`, :g:`/ C A / <g1:/ C A />` greater than :g:`/ A B / <g1:/ A B />`
+   :g:`< A B C > <g1:< A B C >>`
 
 .. step:: construct
 
-   :fn:`extend <G.18>`\ (:g:`[ B A ] <g1:[ B A ]>`) → :g:`D <g1:D>`
-
-.. step:: construct
-
-   :fn:`cut_equal_segment <G.21>`\ (:g:`/ C A / <g1:/ C A />`) → :g:`/ D A / <g1:/ D A />` (:eq:`equal <g1:/ D A / = g1:/ C A />`)
-
-.. step:: construct
-
-   :fn:`segment <G.14>`\ (:g:`D <g1:D>`, :g:`C <g1:C>`) → :g:`/ D C / <g1:/ D C />`
+   :fn:`extend <G.18>`\ (:g:`/ B A / <g1:/ B A />`), :fn:`cut_equal_segment <G.21>`\ (:g:`/ C A / <g1:/ C A />`) → :g:`/ A D / <g1:/ A D />` (:eq:`= <g1:/ A D / = g1:/ A C />` :g:`/ A C / <g1:/ A C />`), :fn:`segment <G.14>`\ (:g:`D <g1:D>`, :g:`C <g1:C>`) → :g:`/ D C / <g1:/ D C />`
 
 .. step:: assert ∵ isosceles_base_angles <G.25>
 
-   :g:`/ D A / <g1:/ D A />` :eq:`= <g1:/ D A / = g1:/ A C />` :g:`/ A C / <g1:/ A C />`, :g:`< A D C ) <g1:< A D C )>` :eq:`= <g1:< A D C ) = g1:< A C D )>` :g:`< A C D ) <g1:< A C D )>`
+   :g:`/ D A / <g1:/ D A />` :eq:`= <g1:/ D A / = g1:/ A C />` :g:`/ A C / <g1:/ A C />` → :g:`< A D C ) <g1:< A D C )>` :eq:`= <g1:< A D C ) = g1:< A C D )>` :g:`< A C D ) <g1:< A C D )>`
 
 .. step:: assert ∵ whole_greater_than_part <G.26>
 
-   :g:`< B C D ) <g1:< B C D )>` > :g:`< A D C ) <g1:< A D C )>`
+   :g:`< B C D ) <g1:< B C D )>` > :g:`< A C D ) <g1:< A C D )>` → :g:`< B C D ) <g1:< B C D )>` > :g:`< A D C ) <g1:< A D C )>`
 
 .. step:: assert ∵ greater_angle_greater_side <G.44>
 
-   since :g:`< D C B > <g1:< D C B >>` is a triangle having :g:`< B C D ) <g1:< B C D )>` greater than :g:`< B D C ) <g1:< B D C )>`, and the greater :term:`angle <G.22>` is subtended by the greater side
+   :g:`< B C D ) <g1:< B C D )>` > :g:`< B D C ) <g1:< B D C )>` → :g:`/ D B / <g1:/ D B />` > :g:`/ B C / <g1:/ B C />`
 
-.. step:: assert
+.. step:: conclude ∵ greater_angle_greater_side <G.44>
 
-   :g:`/ D B / <g1:/ D B />` > :g:`/ B C / <g1:/ B C />`
-
-.. step:: assert
-
-   :g:`/ D A / <g1:/ D A />` :eq:`= <g1:/ D A / = g1:/ A C />` :g:`/ A C / <g1:/ A C />`
-
-.. step:: assert
-
-   :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />` are greater than :g:`/ B C / <g1:/ B C />`
-
-.. step:: conclude
-
-   Similarly we can prove that :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` are also greater than :g:`/ C A / <g1:/ C A />`, and :g:`/ B C / <g1:/ B C />`, :g:`/ C A / <g1:/ C A />` than :g:`/ A B / <g1:/ A B />`
+   :g:`/ B A / <g1:/ B A />` + :g:`/ A C / <g1:/ A C />` > :g:`/ B C / <g1:/ B C />`, :g:`/ A B / <g1:/ A B />` + :g:`/ B C / <g1:/ B C />` > :g:`/ A C / <g1:/ A C />`, :g:`/ B C / <g1:/ B C />` + :g:`/ C A / <g1:/ C A />` > :g:`/ A B / <g1:/ A B />`
 
 Dependency Graph
 ----------------
@@ -288,10 +258,12 @@ Dependency Graph
      "G.32" -> "G.24";
      "G.41" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
@@ -321,5 +293,6 @@ Required for
 .. toctree::
    :hidden:
 
+   video
    code
    heath

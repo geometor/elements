@@ -1,0 +1,60 @@
+{
+  "I.32": {
+    "subtype": "theorem",
+    "args": [
+      ":g:`< A B C > <g1:< A B C >>`",
+      ":g:`/ C D / <g1:/ C D />`"
+    ],
+    "returns": [],
+    "given": ":g:`< A B C > <g1:< A B C >>`, @fn(I.post.2)(:g:`/ B C / <g1:/ B C />`) → :g:`/ C D / <g1:/ C D />`",
+    "contract": ":g:`< A C D ) <g1:< A C D )>` = :g:`< C A B ) <g1:< C A B )>` + :g:`< A B C ) <g1:< A B C )>`, :g:`< A B C ) <g1:< A B C )>` + :g:`< B C A ) <g1:< B C A )>` + :g:`< C A B ) <g1:< C A B )>` = 2∟",
+    "steps": [
+      [
+        "given",
+        [],
+        ":g:`< A B C > <g1:< A B C >>`, @fn(I.post.2)(:g:`/ B C / <g1:/ B C />`) → :g:`/ C D / <g1:/ C D />`"
+      ],
+      [
+        "construct",
+        [],
+        "@fn(I.31)(:g:`C <g1:C>`, :g:`/ A B / <g1:/ A B />`) → :g:`/ C E / <g1:/ C E />` (:g:`/ C E / <g1:/ C E />` ∥ :g:`/ A B / <g1:/ A B />`)"
+      ],
+      [
+        "assert",
+        [
+          "I.29"
+        ],
+        ":g:`/ A B / <g1:/ A B />` ∥ :g:`/ C E / <g1:/ C E />`, :g:`/ A C / <g1:/ A C />` ∩ :g:`/ A B / <g1:/ A B />`, :g:`/ C E / <g1:/ C E />` → :g:`< C A B ) <g1:< C A B )>` :eq:`= <g1:< C A B ) = g1:< A C E )>` :g:`< A C E ) <g1:< A C E )>`"
+      ],
+      [
+        "assert",
+        [
+          "I.29"
+        ],
+        ":g:`/ A B / <g1:/ A B />` ∥ :g:`/ C E / <g1:/ C E />`, :g:`/ B D / <g1:/ B D />` ∩ :g:`/ A B / <g1:/ A B />`, :g:`/ C E / <g1:/ C E />` → :g:`< E C D ) <g1:< E C D )>` :eq:`= <g1:< E C D ) = g1:< A B C )>` :g:`< A B C ) <g1:< A B C )>`"
+      ],
+      [
+        "assert",
+        [
+          "I.cn.2"
+        ],
+        ":g:`< A C E ) <g1:< A C E )>` :eq:`= <g1:< A C E ) = g1:< C A B )>` :g:`< C A B ) <g1:< C A B )>`, :g:`< E C D ) <g1:< E C D )>` :eq:`= <g1:< E C D ) = g1:< A B C )>` :g:`< A B C ) <g1:< A B C )>` → :g:`< A C D ) <g1:< A C D )>` = :g:`< C A B ) <g1:< C A B )>` + :g:`< A B C ) <g1:< A B C )>`"
+      ],
+      [
+        "assert",
+        [
+          "I.cn.2"
+        ],
+        ":g:`< A C D ) <g1:< A C D )>` + :g:`< B C A ) <g1:< B C A )>` = :g:`< A B C ) <g1:< A B C )>` + :g:`< B C A ) <g1:< B C A )>` + :g:`< C A B ) <g1:< C A B )>`"
+      ],
+      [
+        "conclude",
+        [
+          "I.13",
+          "I.cn.1"
+        ],
+        ":g:`< A C D ) <g1:< A C D )>` + :g:`< B C A ) <g1:< B C A )>` = 2∟ → :g:`< A B C ) <g1:< A B C )>` + :g:`< B C A ) <g1:< B C A )>` + :g:`< C A B ) <g1:< C A B )>` = 2∟"
+      ]
+    ]
+  }
+}

@@ -2,7 +2,7 @@
 :number: 161
 :canonical_id: G.161
 :original_id: IV.9
-:title: G.161 square circumscribe circle
+:title: G.161 circumscribe a circle about a square
 :volume: II
 :book: IV
 :type: prop
@@ -10,93 +10,49 @@
 :categories: problem, construction, plane-geometry, circles, polygons
 :category: problem, construction, plane-geometry, circles, polygons
 :tags: book-iv, point, segment, circle, angle, quadrilateral, square, circumscribed-about-figure, plane-angle, straight-line, centre, circumscribed, equality
-:dependencies: G.1, G.4, G.10, G.11, G.14, G.27, G.29, G.63, G.155, G.156
-:excerpt: About a given square to circumscribe a circle.
+:dependencies: G.10, G.14, G.15, G.27, G.29, G.63, G.155, G.156
+:excerpt: Circumscribe a circle about a given square.
 
 .. _G.161:
 .. _IV.9:
 
-G.161 square circumscribe circle
-================================
+G.161 circumscribe a circle about a square
+==========================================
 
 .. rubric:: `IV.9 <https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/09/>`_
 
 .. enunciation::
 
-   About a given :term:`square <G.63>` to circumscribe a :term:`circle <G.10>`.
+   :term:`Circumscribe a circle about <G.156>` a given :term:`square <G.63>`.
 
 .. signature:: problem
 
-   | :fn:`square_circumscribe_circle <G.161>`\ (:g:`< A B C D > <g1:< A B C D >>`)
-   | **given** :g:`< A B C D > <g1:< A B C D >>` be the given square
-   | **construct** about the given square a circle has been circumscribed
+   | :fn:`circumscribe_circle_about_square <G.161>`\ (:g:`< A B C D > <g1:< A B C D >>`) → :g:`( A B C D ) <g1:( A B C D )>`
+   | **given** :g:`< A B C D > <g1:< A B C D >>` is a :term:`square <G.63>`
+   | **construct** :g:`( A B C D ) <g1:( A B C D )>` is :term:`circumscribed about <G.156>` :g:`< A B C D > <g1:< A B C D >>`
 
 .. picture:: g1.svg
    :alt: Proposition IV. 9 Diagram
 
-.. step:: given
+.. step:: given ∵ quadrilateral_def, circle_said_circumscribed_def <G.63, G.156>
 
-   :g:`< A B C D > <g1:< A B C D >>` be the given square
+   :g:`< A B C D > <g1:< A B C D >>` is the given :term:`square <G.63>`
 
-.. step:: construct
+.. step:: construct ∵ segment <G.14>
 
-   :fn:`segment <G.14>`\ (:g:`A <g1:A>`, :g:`C <g1:C>`) → :g:`/ A C / <g1:/ A C />`, :fn:`segment <G.14>`\ (:g:`B <g1:B>`, :g:`D <g1:D>`) → :g:`/ B D / <g1:/ B D />`
+   :fn:`segment <G.14>`\ (:g:`A <g1:A>`, :g:`C <g1:C>`) → :g:`/ A C / <g1:/ A C />`, :fn:`segment <G.14>`\ (:g:`B <g1:B>`, :g:`D <g1:D>`) → :g:`/ B D / <g1:/ B D />`, :g:`/ A C / <g1:/ A C />` ∩ :g:`/ B D / <g1:/ B D />` → :g:`E <g1:E>`
 
-.. step:: intersect
+.. step:: assert ∵ quadrilateral_def, sss_congruence <G.63, G.29>
 
-   Let them cut one another at :g:`E <g1:E>`.
+   :g:`/ D A / <g1:/ D A />` :eq:`= <g1:/ D A / = g1:/ A B />` :g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />` common, :g:`/ D C / <g1:/ D C />` :eq:`= <g1:/ D C / = g1:/ B C />` :g:`/ B C / <g1:/ B C />` → :g:`< D A C ) <g1:< D A C )>` :eq:`= <g1:< D A C ) = g1:< B A C )>` :g:`< B A C ) <g1:< B A C )>`; similarly :g:`/ A C / <g1:/ A C />`, :g:`/ B D / <g1:/ B D />` bisect :g:`< A B C ) <g1:< A B C )>`, :g:`< B C D ) <g1:< B C D )>`, :g:`< C D A ) <g1:< C D A )>`
 
-.. step:: assert
+.. step:: assert ∵ quadrilateral_def, equal_angles_isosceles <G.63, G.27>
 
-   :g:`/ D A / <g1:/ D A />` :eq:`= <g1:/ D A / = g1:/ A B />` :g:`/ A B / <g1:/ A B />`, and :g:`/ A C / <g1:/ A C />` is common, therefore :g:`/ D A / <g1:/ D A />`, :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ D A / = g1:/ B A /; g1:/ A C / = g1:/ A C />` :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />`
+   :g:`< D A B ) <g1:< D A B )>` :eq:`= <g1:< D A B ) = g1:< A B C )>` :g:`< A B C ) <g1:< A B C )>` → halves :g:`< E A B ) <g1:< B A C )>` :eq:`= <g1:< B A C ) = g1:< E B A )>` :g:`< E B A ) <g1:< E B A )>` → :g:`/ E A / <g1:/ E A />` :eq:`= <g1:/ E A / = g1:/ E B />` :g:`/ E B / <g1:/ E B />`; similarly :g:`/ E A / <g1:/ E A />` :eq:`= <g1:/ E A / = g1:/ E B / = g1:/ E C / = g1:/ E D />` :g:`/ E B / <g1:/ E B />` = :g:`/ E C / <g1:/ E C />` = :g:`/ E D / <g1:/ E D />`
 
-.. step:: assert
+.. step:: conclude ∵ circle, circle_radii, circle_said_circumscribed_def <G.15, G.10, G.156>
 
-   :g:`/ D C / <g1:/ D C />` :eq:`= <g1:/ D C / = g1:/ B C />` :g:`/ B C / <g1:/ B C />`
-
-.. step:: assert ∵ sss_congruence <G.29>
-
-   :g:`< D A C ) <g1:< D A C )>` :eq:`= <g1:< D A C ) = g1:< B A C )>` :g:`< B A C ) <g1:< B A C )>`
-
-.. step:: assert
-
-   :g:`< D A B ) <g1:< D A B )>` is :eq:`bisected <g1:< D A C ) = g1:< B A C )>` by :g:`/ A C / <g1:/ A C />`
-
-.. step:: assert
-
-   Similarly we can prove that each of :g:`< A B C ) <g1:< A B C )>`, :g:`< B C D ) <g1:< B C D )>`, :g:`< C D A ) <g1:< C D A )>` is bisected by :g:`/ A C / <g1:/ A C />`, :g:`/ D B / <g1:/ D B />`
-
-.. step:: assert
-
-   :g:`< D A B ) <g1:< D A B )>` :eq:`= <g1:< D A B ) = g1:< A B C )>` :g:`< A B C ) <g1:< A B C )>`, and :g:`< E A B ) <g1:< E A B )>` is half :g:`< D A B ) <g1:< D A B )>`, and :g:`< E B A ) <g1:< E B A )>` half :g:`< A B C ) <g1:< A B C )>`, therefore :g:`< E A B ) <g1:< E A B )>` :eq:`= <g1:< E A B ) = g1:< E B A )>` :g:`< E B A ) <g1:< E B A )>`
-
-.. step:: assert ∵ equal_angles_isosceles <G.27>
-
-   So that :g:`/ E A / <g1:/ E A />` :eq:`= <g1:/ E A / = g1:/ E B />` :g:`/ E B / <g1:/ E B />`
-
-.. step:: assert
-
-   Similarly we can prove that each of :g:`/ E A / <g1:/ E A />`, :g:`/ E B / <g1:/ E B />` :eq:`= <g1:/ E A / = g1:/ E B / = g1:/ E C / = g1:/ E D />` each of :g:`/ E C / <g1:/ E C />`, :g:`/ E D / <g1:/ E D />`
-
-.. step:: assert
-
-   the four :term:`segments <G.4>` :g:`/ E A / <g1:/ E A />`, :g:`/ E B / <g1:/ E B />`, :g:`/ E C / <g1:/ E C />`, :g:`/ E D / <g1:/ E D />` :eq:`= <g1:/ E A / = g1:/ E B / = g1:/ E C / = g1:/ E D />`
-
-.. step:: assert
-
-   the circle described with :term:`center <G.11>` :g:`E <g1:E>` and distance one of :g:`/ E A / <g1:/ E A />`, :g:`/ E B / <g1:/ E B />`, :g:`/ E C / <g1:/ E C />`, :g:`/ E D / <g1:/ E D />` will pass also through the remaining :term:`points <G.1>`
-
-.. step:: assert
-
-   it will have been :term:`circumscribed about the square <G.155>` :g:`< A B C D > <g1:< A B C D >>`
-
-.. step:: construct
-
-   Let it be circumscribed, as :g:`( A B C D ) <g1:( A B C D )>`.
-
-.. step:: conclude
-
-   about the given square a circle has been circumscribed
+   :fn:`circle <G.15>`\ (:g:`E <g1:E>`, :g:`A <g1:A>`) → :g:`( A B C D ) <g1:( A B C D )>` passes through :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` and is circumscribed about square :g:`< A B C D > <g1:< A B C D >>`
 
 Dependency Graph
 ----------------
@@ -140,7 +96,7 @@ Dependency Graph
      "G.63" [label="G.63", tooltip="G.63 (I.def.22): Of quadrilateral figures, a square is equilateral and right-angled; an oblong is right-angled but not equilateral; a rhombus is equilateral but not right-angled; a rhomboid has opp...", fillcolor="#224422", URL="../G.63/index.html", target="_top"];
      "G.155" [label="G.155", tooltip="G.155 (IV.def.2): Similarly afigure is said to becircumscribed about a figure when the respective sides of the circumscribed figure pass through the respectiveangles of that about which it is circum...", fillcolor="#224422", URL="../G.155/index.html", target="_top"];
      "G.156" [label="G.156", tooltip="G.156 (IV.def.6): Acircle is said to becircumscribed about a figure when the arc of the circle passes through eachangle of thefigure about which it is circumscribed.", fillcolor="#224422", URL="../G.156/index.html", target="_top"];
-     "G.161" [label="G.161", tooltip="G.161 (IV.9): About a given square to circumscribe a circle.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.161" [label="G.161", tooltip="G.161 (IV.9): Circumscribe a circle about a given square.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -155,7 +111,6 @@ Dependency Graph
      "G.25" -> "G.1";
      "G.28" -> "G.1";
      "G.29" -> "G.1";
-     "G.161" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
      "G.6" -> "G.2";
@@ -182,7 +137,6 @@ Dependency Graph
      "G.25" -> "G.4";
      "G.28" -> "G.4";
      "G.29" -> "G.4";
-     "G.161" -> "G.4";
      "G.6" -> "G.5";
      "G.7" -> "G.5";
      "G.10" -> "G.6";
@@ -204,7 +158,6 @@ Dependency Graph
      "G.17" -> "G.11";
      "G.20" -> "G.11";
      "G.21" -> "G.11";
-     "G.161" -> "G.11";
      "G.13" -> "G.12";
      "G.17" -> "G.12";
      "G.20" -> "G.12";
@@ -226,6 +179,7 @@ Dependency Graph
      "G.17" -> "G.15";
      "G.20" -> "G.15";
      "G.21" -> "G.15";
+     "G.161" -> "G.15";
      "G.17" -> "G.16";
      "G.20" -> "G.16";
      "G.21" -> "G.16";

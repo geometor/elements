@@ -1,0 +1,61 @@
+{
+  "voice_id": "voice_xdhacg1pn1cq",
+  "audio_wav": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_i/28/I_28.wav",
+  "total_duration_sec": 72.06,
+  "segments": [
+    {
+      "index": 0,
+      "bell": "bell:proposition",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Euclid's Elements, Book One, Proposition Twenty-Eight. If a transversal cutting two lines makes the exterior angle equal to the opposite interior angle, or the interior angles on the same side supplementary, the lines are parallel. Let segment E F fall on segments A B and C D at points G and H, making exterior angle E G B equal to opposite interior angle G H D, or interior angles B G H and G H D equal to two right angles. We prove that segment A B is parallel to segment C D.",
+      "start_sec": 0.0,
+      "end_sec": 29.13,
+      "duration_sec": 29.13,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Euclid's Elements, Book One, Proposition Twenty-Eight. If a transversal cutting two lines makes the exterior angle equal to the opposite interior angle, or the interior angles on the same side supplementary, the lines are parallel. Let segment E F fall on segments A B and C D at points G and H, making exterior angle E G B equal to opposite interior angle G H D, or interior angles B G H and G H D equal to two right angles. We prove that segment A B is parallel to segment C D.",
+          "start_sec": 0.0,
+          "end_sec": 29.13,
+          "duration_sec": 29.13
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "bell": "bell:construction",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "First, suppose exterior angle E G B equals interior angle G H D. By Proposition Fifteen, vertical angles E G B and A G H are equal. By Common Notion One, alternate interior angles A G H and G H D are equal, and therefore by Proposition Twenty-Seven, segment A B is parallel to segment C D.",
+      "start_sec": 29.13,
+      "end_sec": 47.6,
+      "duration_sec": 18.47,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "First, suppose exterior angle E G B equals interior angle G H D. By Proposition Fifteen, vertical angles E G B and A G H are equal. By Common Notion One, alternate interior angles A G H and G H D are equal, and therefore by Proposition Twenty-Seven, segment A B is parallel to segment C D.",
+          "start_sec": 29.13,
+          "end_sec": 47.6,
+          "duration_sec": 18.47
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "bell": "bell:insight",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Second, suppose interior angles B G H and G H D sum to two right angles. By Proposition Thirteen, adjacent angles A G H and B G H also sum to two right angles. Subtracting common angle B G H from each by Common Notion Three leaves alternate angles A G H and G H D equal. Therefore by Proposition Twenty-Seven, segment A B is parallel to segment C D, as was required to prove.",
+      "start_sec": 47.6,
+      "end_sec": 72.06,
+      "duration_sec": 24.46,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Second, suppose interior angles B G H and G H D sum to two right angles. By Proposition Thirteen, adjacent angles A G H and B G H also sum to two right angles. Subtracting common angle B G H from each by Common Notion Three leaves alternate angles A G H and G H D equal. Therefore by Proposition Twenty-Seven, segment A B is parallel to segment C D, as was required to prove.",
+          "start_sec": 47.6,
+          "end_sec": 72.06,
+          "duration_sec": 24.46
+        }
+      ]
+    }
+  ]
+}

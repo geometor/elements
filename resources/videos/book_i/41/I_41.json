@@ -1,0 +1,61 @@
+{
+  "voice_id": "voice_xdhacg1pn1cq",
+  "audio_wav": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_i/41/I_41.wav",
+  "total_duration_sec": 61.74,
+  "segments": [
+    {
+      "index": 0,
+      "bell": "bell:proposition",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Euclid's Elements, Book One, Proposition Forty-One. If a parallelogram shares the same base with a triangle and lies in the same parallels, the parallelogram is double the triangle. Let parallelogram A B C D share the same base B C with triangle E B C, and let them lie in the same parallels B C and A E. We prove that parallelogram A B C D is double triangle B E C.",
+      "start_sec": 0.0,
+      "end_sec": 23.81,
+      "duration_sec": 23.81,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Euclid's Elements, Book One, Proposition Forty-One. If a parallelogram shares the same base with a triangle and lies in the same parallels, the parallelogram is double the triangle. Let parallelogram A B C D share the same base B C with triangle E B C, and let them lie in the same parallels B C and A E. We prove that parallelogram A B C D is double triangle B E C.",
+          "start_sec": 0.0,
+          "end_sec": 23.81,
+          "duration_sec": 23.81
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "bell": "bell:construction",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Construct the diagonal segment A C across parallelogram A B C D, forming triangle A B C on base B C.",
+      "start_sec": 23.81,
+      "end_sec": 31.84,
+      "duration_sec": 8.03,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Construct the diagonal segment A C across parallelogram A B C D, forming triangle A B C on base B C.",
+          "start_sec": 23.81,
+          "end_sec": 31.84,
+          "duration_sec": 8.03
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "bell": "bell:insight",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Triangles A B C and E B C stand on the same base B C and lie in the same parallels B C and A E. By Proposition Thirty-Seven, triangle A B C is equal in area to triangle E B C. Yet by Proposition Thirty-Four, the diagonal A C bisects parallelogram A B C D, so parallelogram A B C D is double triangle A B C. Therefore parallelogram A B C D is also double triangle E B C, as was required to prove.",
+      "start_sec": 31.84,
+      "end_sec": 61.74,
+      "duration_sec": 29.9,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Triangles A B C and E B C stand on the same base B C and lie in the same parallels B C and A E. By Proposition Thirty-Seven, triangle A B C is equal in area to triangle E B C. Yet by Proposition Thirty-Four, the diagonal A C bisects parallelogram A B C D, so parallelogram A B C D is double triangle A B C. Therefore parallelogram A B C D is also double triangle E B C, as was required to prove.",
+          "start_sec": 31.84,
+          "end_sec": 61.74,
+          "duration_sec": 29.9
+        }
+      ]
+    }
+  ]
+}

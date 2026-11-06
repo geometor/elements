@@ -1,0 +1,61 @@
+{
+  "voice_id": "voice_xdhacg1pn1cq",
+  "audio_wav": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_i/15/I_15.wav",
+  "total_duration_sec": 60.1,
+  "segments": [
+    {
+      "index": 0,
+      "bell": "bell:proposition",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Euclid's Elements, Book One, Proposition Fifteen. Intersecting lines make their vertical angles equal. Given segments A B and C D intersecting at point E, we prove that vertical angle A E C equals angle D E B, and angle C E B equals angle A E D.",
+      "start_sec": 0.0,
+      "end_sec": 17.29,
+      "duration_sec": 17.29,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Euclid's Elements, Book One, Proposition Fifteen. Intersecting lines make their vertical angles equal. Given segments A B and C D intersecting at point E, we prove that vertical angle A E C equals angle D E B, and angle C E B equals angle A E D.",
+          "start_sec": 0.0,
+          "end_sec": 17.29,
+          "duration_sec": 17.29
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "bell": "bell:construction",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Since segment A E stands on segment C D, Proposition Thirteen shows that the adjacent angles C E A and A E D equal two right angles. Again, since segment D E stands on segment A B, the adjacent angles A E D and D E B also equal two right angles.",
+      "start_sec": 17.29,
+      "end_sec": 34.6,
+      "duration_sec": 17.31,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Since segment A E stands on segment C D, Proposition Thirteen shows that the adjacent angles C E A and A E D equal two right angles. Again, since segment D E stands on segment A B, the adjacent angles A E D and D E B also equal two right angles.",
+          "start_sec": 17.29,
+          "end_sec": 34.6,
+          "duration_sec": 17.31
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "bell": "bell:insight",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Because all right angles are equal by Postulate Four, the sum of angles C E A and A E D equals the sum of angles A E D and D E B. Subtracting the common angle A E D from each leaves angle C E A equal to angle B E D. By the same reasoning, angle C E B equals angle D E A. Therefore intersecting lines make their vertical angles equal, as was required to prove.",
+      "start_sec": 34.6,
+      "end_sec": 60.1,
+      "duration_sec": 25.5,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Because all right angles are equal by Postulate Four, the sum of angles C E A and A E D equals the sum of angles A E D and D E B. Subtracting the common angle A E D from each leaves angle C E A equal to angle B E D. By the same reasoning, angle C E B equals angle D E A. Therefore intersecting lines make their vertical angles equal, as was required to prove.",
+          "start_sec": 34.6,
+          "end_sec": 60.1,
+          "duration_sec": 25.5
+        }
+      ]
+    }
+  ]
+}

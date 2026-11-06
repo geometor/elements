@@ -1,0 +1,19 @@
+[bell:proposition]
+[style: brisk, clear, architectural voice; steady studio cadence]
+Book Three, Proposition Two. If on the circumference of a circle two points be taken at random, the segment joining the points will fall within the circle. <pause> Let A B C be a circle, and let two points A and B be taken at random on its circumference.
+
+[bell:construction]
+[style: methodical, precise constructive cadence]
+I say that the segment joined from A to B will fall within the circle. For suppose it does not, but, if possible, let it fall outside, as A E B. <pause> Take the center D of the circle A B C by Three One, join D A and D B, and draw D F E through to meet the circumference at F and the line at E.
+
+[bell:insight]
+[style: luminous, deductive geometric clarity]
+Since the radii D A and D B are equal, by One Five the angles D A E and D B E are equal. And since one side A E B of triangle D A E is produced, by One Sixteen the exterior angle D E B is greater than angle D A E, and therefore greater than angle D B E. <pause> In triangle D B E, the greater angle is subtended by the greater side by One Nineteen, so D B is greater than D E. <pause> Yet D B equals the radius D F; therefore D F is greater than D E, the less than the greater—which is impossible. Neither will the segment fall on the circumference itself; therefore the chord A B falls within the circle. Which was to be proved.
+
+[bell:system]
+[style: reflective, scholarly, architectural synthesis]
+Proposition Three Two establishes the strict convexity of the circle. As Heath and De Morgan note, the same exterior-angle chain proves directly that every interior point of a chord lies closer to the center than the radius, while every point on the chord produced lies outside—confirming that a straight line cannot cut a circle in more than two points. <pause> In the GEOMETOR G-Index, node G ninety-nine combines Three One's center finder with Book One's triangle inequalities, One Five, One Sixteen, and One Nineteen, across forty-one ancestor nodes.
+
+[bell:resolve]
+[style: warm, inviting, resonant studio close]
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Two in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

@@ -1,0 +1,234 @@
+[
+  {
+    "bell": "proposition",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 34",
+        "g_id": "G.62",
+        "folio": "Folio 0337–0339 • p. 323",
+        "enunciation": "In parallelogrammic areas the opposite sides and angles are equal to one another, and the diameter bisects the areas.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0338.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0338.g1.png",
+        "step_num": 1,
+        "total_steps": 6,
+        "step_kind": "GIVEN",
+        "symbolic": "< A C D B > (/ A B / ∥ / C D /, / A C / ∥ / B D /), / B C /",
+        "clause_html": "<span class=\"g-tok\">&lt; A C D B &gt;</span> (<span class=\"g-tok\">/ A B /</span> ∥ <span class=\"g-tok\">/ C D /</span>, <span class=\"g-tok\">/ A C /</span> ∥ <span class=\"g-tok\">/ B D /</span>), <span class=\"g-tok\">/ B C /</span>",
+        "just_id": "GIVEN",
+        "just_title": "prove: / A B / = / C D /, / A C / = / B D /, < A B C > = < D C B >",
+        "visible_ids": [
+          "el-poly-ACDB",
+          "el-seg-AB", "el-seg-CD", "el-seg-AC", "el-seg-BD", "el-seg-BC",
+          "hl-poly-ACDB", "hl-seg-BC",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D"
+        ],
+        "active_ids": [
+          "hl-poly-ACDB", "hl-seg-BC",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D"
+        ],
+        "equal_ids": []
+      }
+    ]
+  },
+  {
+    "bell": "construction",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 34",
+        "g_id": "G.62",
+        "folio": "Folio 0337–0339 • p. 323",
+        "enunciation": "In parallelogrammic areas the opposite sides and angles are equal to one another, and the diameter bisects the areas.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0338.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0338.g1.png",
+        "step_num": 2,
+        "total_steps": 6,
+        "step_kind": "ASSERT",
+        "symbolic": "/ A B / ∥ / C D /, / B C / ∩ / A B /, / C D / → < A B C ) = < B C D )",
+        "clause_html": "<span class=\"g-tok\">/ A B /</span> ∥ <span class=\"g-tok\">/ C D /</span>, <span class=\"g-tok\">/ B C /</span> ∩ <span class=\"g-tok\">/ A B /</span>, <span class=\"g-tok\">/ C D /</span> → <span class=\"g-tok\">&lt; A B C )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; B C D )</span>",
+        "just_id": "G.56 • I.29",
+        "just_title": "parallel_transversal_angles",
+        "visible_ids": [
+          "el-poly-ACDB",
+          "el-seg-AB", "el-seg-CD", "el-seg-AC", "el-seg-BD", "el-seg-BC",
+          "hl-seg-AB", "hl-seg-CD", "hl-seg-BC",
+          "hl-ang-ABC", "hl-ang-BCD", "hl-arc-ABC", "hl-arc-BCD",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D"
+        ],
+        "active_ids": [
+          "hl-seg-AB", "hl-seg-CD", "hl-seg-BC",
+          "el-pt-B", "el-pt-C", "lbl-B", "lbl-C"
+        ],
+        "equal_ids": [
+          "hl-ang-ABC", "hl-ang-BCD", "hl-arc-ABC", "hl-arc-BCD"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 34",
+        "g_id": "G.62",
+        "folio": "Folio 0337–0339 • p. 323",
+        "enunciation": "In parallelogrammic areas the opposite sides and angles are equal to one another, and the diameter bisects the areas.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0338.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0338.g1.png",
+        "step_num": 3,
+        "total_steps": 6,
+        "step_kind": "ASSERT",
+        "symbolic": "/ A C / ∥ / B D /, / B C / ∩ / A C /, / B D / → < A C B ) = < C B D )",
+        "clause_html": "<span class=\"g-tok\">/ A C /</span> ∥ <span class=\"g-tok\">/ B D /</span>, <span class=\"g-tok\">/ B C /</span> ∩ <span class=\"g-tok\">/ A C /</span>, <span class=\"g-tok\">/ B D /</span> → <span class=\"g-tok\">&lt; A C B )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; C B D )</span>",
+        "just_id": "G.56 • I.29",
+        "just_title": "parallel_transversal_angles",
+        "visible_ids": [
+          "el-poly-ACDB",
+          "el-seg-AB", "el-seg-CD", "el-seg-AC", "el-seg-BD", "el-seg-BC",
+          "hl-seg-AC", "hl-seg-BD", "hl-seg-BC",
+          "hl-ang-ABC", "hl-ang-BCD", "hl-arc-ABC", "hl-arc-BCD",
+          "hl-ang-ACB", "hl-ang-CBD", "hl-arc-ACB", "hl-arc-CBD",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D"
+        ],
+        "active_ids": [
+          "hl-seg-AC", "hl-seg-BD", "hl-seg-BC",
+          "el-pt-B", "el-pt-C", "lbl-B", "lbl-C"
+        ],
+        "equal_ids": [
+          "hl-ang-ACB", "hl-ang-CBD", "hl-arc-ACB", "hl-arc-CBD"
+        ]
+      }
+    ]
+  },
+  {
+    "bell": "insight",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 34",
+        "g_id": "G.62",
+        "folio": "Folio 0337–0339 • p. 323",
+        "enunciation": "In parallelogrammic areas the opposite sides and angles are equal to one another, and the diameter bisects the areas.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0338.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0338.g1.png",
+        "step_num": 4,
+        "total_steps": 6,
+        "step_kind": "ASSERT",
+        "symbolic": "< A B C ) = < D C B ), < B C A ) = < C B D ), / B C / = / C B / → / A B / = / C D /, / A C / = / B D /, < B A C ) = < C D B )",
+        "clause_html": "<span class=\"g-tok\">&lt; A B C )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; D C B )</span>, <span class=\"g-tok\">&lt; B C A )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; C B D )</span>, <span class=\"g-tok\">/ B C /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ C B /</span> → <span class=\"g-tok\">/ A B /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ C D /</span>, <span class=\"g-tok\">/ A C /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ B D /</span>, <span class=\"g-tok\">&lt; B A C )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; C D B )</span>",
+        "just_id": "G.51 • I.26",
+        "just_title": "asa_aas_congruence",
+        "visible_ids": [
+          "el-poly-ABC", "el-poly-DCB",
+          "el-seg-AB", "el-seg-CD", "el-seg-AC", "el-seg-BD", "el-seg-BC",
+          "hl-poly-ABC", "hl-poly-DCB",
+          "hl-seg-AB", "hl-seg-CD", "hl-seg-AC", "hl-seg-BD", "hl-seg-BC",
+          "hl-ang-BAC", "hl-ang-CDB", "hl-arc-BAC", "hl-arc-CDB",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D"
+        ],
+        "active_ids": [
+          "hl-poly-ABC", "hl-poly-DCB", "hl-seg-BC",
+          "el-pt-A", "el-pt-D", "lbl-A", "lbl-D"
+        ],
+        "equal_ids": [
+          "hl-seg-AB", "hl-seg-CD",
+          "hl-seg-AC", "hl-seg-BD",
+          "hl-ang-BAC", "hl-ang-CDB", "hl-arc-BAC", "hl-arc-CDB"
+        ],
+        "tick_ids": [
+          "hl-seg-AB", "hl-seg-CD"
+        ],
+        "tick_2_ids": [
+          "hl-seg-AC", "hl-seg-BD"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 34",
+        "g_id": "G.62",
+        "folio": "Folio 0337–0339 • p. 323",
+        "enunciation": "In parallelogrammic areas the opposite sides and angles are equal to one another, and the diameter bisects the areas.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0338.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0338.g1.png",
+        "step_num": 5,
+        "total_steps": 6,
+        "step_kind": "ASSERT",
+        "symbolic": "< A B C ) = < B C D ), < C B D ) = < A C B ) → < A B D ) = < A C D )",
+        "clause_html": "<span class=\"g-tok\">&lt; A B C )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; B C D )</span>, <span class=\"g-tok\">&lt; C B D )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; A C B )</span> → <span class=\"g-tok\">&lt; A B D )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; A C D )</span>",
+        "just_id": "G.36 • I.C.N.2",
+        "just_title": "add_equals",
+        "visible_ids": [
+          "el-poly-ACDB",
+          "el-seg-AB", "el-seg-CD", "el-seg-AC", "el-seg-BD", "el-seg-BC",
+          "hl-seg-AB", "hl-seg-CD", "hl-seg-AC", "hl-seg-BD",
+          "hl-ang-BAC", "hl-ang-CDB", "hl-arc-BAC", "hl-arc-CDB",
+          "hl-ang-ABD", "hl-ang-ACD", "hl-arc-ABD", "hl-arc-ACD",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D"
+        ],
+        "active_ids": [
+          "hl-ang-ABD", "hl-ang-ACD",
+          "el-pt-B", "el-pt-C", "lbl-B", "lbl-C"
+        ],
+        "equal_ids": [
+          "hl-seg-AB", "hl-seg-CD",
+          "hl-seg-AC", "hl-seg-BD",
+          "hl-ang-BAC", "hl-ang-CDB", "hl-arc-BAC", "hl-arc-CDB",
+          "hl-arc-ABD", "hl-arc-ACD"
+        ],
+        "tick_ids": [
+          "hl-seg-AB", "hl-seg-CD"
+        ],
+        "tick_2_ids": [
+          "hl-seg-AC", "hl-seg-BD"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 34",
+        "g_id": "G.62",
+        "folio": "Folio 0337–0339 • p. 323",
+        "enunciation": "In parallelogrammic areas the opposite sides and angles are equal to one another, and the diameter bisects the areas.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0338.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0338.g1.png",
+        "step_num": 6,
+        "total_steps": 6,
+        "step_kind": "∴",
+        "symbolic": "/ A B / = / D C /, / B C / = / C B /, < A B C ) = < B C D ) → < A B C > = < D C B >",
+        "clause_html": "<span class=\"g-tok\">/ A B /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ D C /</span>, <span class=\"g-tok\">/ B C /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ C B /</span>, <span class=\"g-tok\">&lt; A B C )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; B C D )</span> → <span class=\"g-tok\">&lt; A B C &gt;</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; D C B &gt;</span>",
+        "just_id": "G.24 • I.4",
+        "just_title": "sas_congruence",
+        "visible_ids": [
+          "el-poly-ABC", "el-poly-DCB",
+          "el-seg-AB", "el-seg-CD", "el-seg-AC", "el-seg-BD", "el-seg-BC",
+          "hl-poly-ABC", "hl-poly-DCB",
+          "hl-seg-AB", "hl-seg-CD", "hl-seg-AC", "hl-seg-BD", "hl-seg-BC",
+          "hl-ang-BAC", "hl-ang-CDB", "hl-arc-BAC", "hl-arc-CDB",
+          "hl-arc-ABD", "hl-arc-ACD",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D"
+        ],
+        "active_ids": [
+          "hl-seg-BC",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D"
+        ],
+        "equal_ids": [
+          "hl-poly-ABC", "hl-poly-DCB",
+          "hl-seg-AB", "hl-seg-CD",
+          "hl-seg-AC", "hl-seg-BD",
+          "hl-arc-BAC", "hl-arc-CDB",
+          "hl-arc-ABD", "hl-arc-ACD"
+        ],
+        "tick_ids": [
+          "hl-seg-AB", "hl-seg-CD"
+        ],
+        "tick_2_ids": [
+          "hl-seg-AC", "hl-seg-BD"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,46 @@
+================================================================================
+YOUTUBE 1080P (16:9) TITLE
+================================================================================
+III.37 • if a point be taken outside a circle and from the point there fall on the circle two str...
+
+================================================================================
+YOUTUBE SHORT (9:16) TITLE
+================================================================================
+III.37 • if a point be taken outside a circle and from the point there fall on the circle two str...
+
+================================================================================
+DESCRIPTION
+================================================================================
+“If a point be taken outside a circle and from the point there fall on the circle two straight lines, if one of them cut the circle, and the other fall on it, and if further the rectangle contained by the whole of the straight line which cuts the circle and the straight line intercepted on it outside between the point and the convex circumference be equal to the square on the straight line which falls on the circle, the straight line which falls on it will touch the circle.”
+— Euclid's Elements, BOOK III • PROP. 37 (G.145)
+
+00:00 1 · GIVEN: rect(/ A D /, / C D /) = sq(/ D B /) → tangent(/ D B /, ( A B C ))
+00:32 2 · CONSTRUCT: / D E / = tangent_to_circle(D, ( A B C )), F = find_circle_center(( A B C )), / F E /, / F B /, / F D /
+00:43 3 · ASSERT: / F E / ⊥ / D E / → ⟨ F E D ) = right
+00:53 4 · ASSERT: rect(/ A D /, / C D /) = sq(/ D E /) = sq(/ D B /) → / D E / = / D B /
+01:08 5 · ASSERT: / F E / = / F B /, / D E / = / D B / → ⟨ F B D ⟩ ≃ ⟨ F E D ⟩, ⟨ D B F ) = ⟨ F E D ) = right
+01:23 6 · ∴: ⟨ D B F ) = right → tangent(/ D B /, ( A B C ))
+01:38 7 · COMMENTARY: rect(/ A D /, / C D /) = sq(/ D B /) ⟷ tangent(/ D B /, ( A B C ))
+01:56 8 · GENEALOGY: G.29 (I.8), G.118 (III.16), G.144 (III.36) → G.145 (III.37) → G.156 (IV.10)
+02:14 9 · PARTICIPATE: geometor.github.io/elements/elements2/G.145/
+
+Explore the interactive Book Codex, symbolic model, and dependency tree:
+• Elements Codex (G.145): https://geometor.github.io/elements/elements2/G.145/
+• Heath Edition (III.37): https://geometor.github.io/euclid/heath/volume_I/book_iii/propositions/37/
+• GitHub: https://github.com/geometor/elements
+
+GEOMETOR • G.145 • v2
+
+================================================================================
+TAGS
+================================================================================
+Euclid, Euclid's Elements, Euclid III.37, G.145, Geometry, Constructive Geometry, Compass and Straightedge, Mathematical Proof, GEOMETOR, Thomas Little Heath
+
+================================================================================
+MEDIA & CAPTIONS FILES
+================================================================================
+• 9:16 Short MP4 : III_37_short.mp4
+• 16:9 1080p MP4 : III_37_1080p.mp4
+• Closed Captions: III_37.srt
+• 16:9 Thumbnail : III_37_thumb.png
+• 9:16 Thumbnail : III_37_short_thumb.png

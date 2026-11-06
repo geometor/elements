@@ -2,7 +2,7 @@
 :number: 157
 :canonical_id: G.157
 :original_id: IV.5
-:title: G.157 circumscribe circle about triangle
+:title: G.157 circumscribe a circle about a triangle
 :volume: II
 :book: IV
 :type: prop
@@ -10,125 +10,53 @@
 :categories: problem, construction, plane-geometry, circles, polygons
 :category: problem, construction, plane-geometry, circles, polygons
 :tags: book-iv, point, segment, circle, angle, triangle, trilateral, circumscribed-about-figure, straight-line, right-angle, centre, figure, plane-angle, semicircle, circumscribed, equality
-:dependencies: G.1, G.4, G.9, G.10, G.11, G.12, G.14, G.24, G.32, G.33, G.96, G.139, G.155, G.156
-:excerpt: Circumscribe about a given triangle a circle.
+:dependencies: G.10, G.12, G.14, G.15, G.16, G.24, G.32, G.33, G.34, G.139, G.155, G.156
+:excerpt: Circumscribe a circle about a given triangle.
 
 .. _G.157:
 .. _IV.5:
 
-G.157 circumscribe circle about triangle
-========================================
+G.157 circumscribe a circle about a triangle
+============================================
 
 .. rubric:: `IV.5 <https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/05/>`_
 
 .. enunciation::
 
-   Circumscribe about a given :term:`triangle <G.12>` a :term:`circle <G.10>`.
+   :term:`Circumscribe a circle about <G.156>` a given :term:`triangle <G.12>`.
 
 .. signature:: problem
 
-   | :fn:`circumscribe_circle_about_triangle <G.157>`\ (:g:`< A B C > <g1:< A B C >>`) → :g:`< B A C ) <g1:< B A C )>`
+   | :fn:`circumscribe_circle_about_triangle <G.157>`\ (:g:`< A B C > <g1:< A B C >>`) → :g:`( A B C ) <g1:( A B C )>`
    | **given** :g:`< A B C > <g1:< A B C >>`
-   | **construct** when the center of the circle falls outside the triangle, :g:`< B A C ) <g1:< B A C )>`, being in a segment less than the semicircle, > a right angle
+   | **construct** :g:`( A B C ) <g1:( A B C )>` is :term:`circumscribed about <G.156>` :g:`< A B C > <g1:< A B C >>`
 
 .. picture:: g1.svg
    :alt: Proposition 5 diagrams
 
-.. step:: given
+.. step:: given ∵ polygon_def, circle_said_circumscribed_def <G.12, G.156>
 
    :g:`< A B C > <g1:< A B C >>`
 
-.. step:: construct
+.. step:: construct ∵ bisect_segment, perpendicular_at <G.32, G.34>
 
-   :fn:`bisect_segment <G.32>`: Let :g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />` be bisected at :g:`D <g1:D>`, :g:`E <g1:E>`, and from :g:`D <g1:D>`, :g:`E <g1:E>` let :g:`/ D F / <g1:/ D F />`, :g:`/ E F / <g1:/ E F />` be drawn at right angles to :g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />`
+   :fn:`bisect_segment <G.32>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />`) → :g:`D <g1:D>` (:g:`/ A D / <g1:/ A D />` :eq:`= <g1:/ A D / = g1:/ D B />` :g:`/ D B / <g1:/ D B />`), :g:`E <g1:E>` (:g:`/ A E / <g1:/ A E />` :eq:`= <g1:/ A E / = g1:/ E C />` :g:`/ E C / <g1:/ E C />`); :fn:`perpendicular_at <G.34>`\ (:g:`D <g1:D>`, :g:`E <g1:E>`) → :g:`/ D F / <g1:/ D F />` ⊥ :g:`/ A B / <g1:/ A B />`, :g:`/ E F / <g1:/ E F />` ⊥ :g:`/ A C / <g1:/ A C />` meeting at :g:`F <g1:F>`
 
-.. step:: assert
+.. step:: construct ∵ segment <G.14>
 
-   They will then meet within :g:`< A B C > <g1:< A B C >>`, or on :g:`/ B C / <g1:/ B C />`, or outside :g:`/ B C / <g1:/ B C />`
+   Whether :g:`F <g1:F>` falls within :g:`< A B C > <g1:< A B C >>`, on :g:`/ B C / <g1:/ B C />`, or outside :g:`/ B C / <g1:/ B C />`, :fn:`segment <G.14>`\ (:g:`F <g1:F>`, :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`) → :g:`/ F A / <g1:/ F A />`, :g:`/ F B / <g1:/ F B />`, :g:`/ F C / <g1:/ F C />`
 
-.. step:: construct
+.. step:: assert ∵ right_angle_perpendicular, sas_congruence, equal_transitive <G.33, G.24, G.16>
 
-   First let them meet within at :g:`F <g1:F>`, and let :g:`/ F B / <g1:/ F B />`, :g:`/ F C / <g1:/ F C />`, :g:`/ F A / <g1:/ F A />` be joined.
+   :g:`/ A D / <g1:/ A D />` :eq:`= <g1:/ A D / = g1:/ D B />` :g:`/ D B / <g1:/ D B />`, :g:`/ D F / <g1:/ D F />` common ⊥ :g:`/ A B / <g1:/ A B />` → :g:`/ A F / <g1:/ A F />` :eq:`= <g1:/ A F / = g1:/ F B />` :g:`/ F B / <g1:/ F B />`; similarly :g:`/ C F / <g1:/ C F />` :eq:`= <g1:/ C F / = g1:/ A F />` :g:`/ A F / <g1:/ A F />` → :g:`/ F A / <g1:/ F A />` :eq:`= <g1:/ F A / = g1:/ F B / = g1:/ F C />` :g:`/ F B / <g1:/ F B />` :eq:`= <g1:/ F A / = g1:/ F B / = g1:/ F C />` :g:`/ F C / <g1:/ F C />`
 
-.. step:: assert ∵ sas_congruence <G.24>
+.. step:: construct ∵ circle, circle_radii, circle_said_circumscribed_def <G.15, G.10, G.156>
 
-   :g:`/ A D / <g1:/ A D />` :eq:`= <g1:/ A D / = g1:/ D B />` :g:`/ D B / <g1:/ D B />`, and :g:`/ D F / <g1:/ D F />` is common and at right angles, therefore :g:`/ A F / <g1:/ A F />` :eq:`= <g1:/ A F / = g1:/ F B />` :g:`/ F B / <g1:/ F B />`
+   :fn:`circle <G.15>`\ (:g:`F <g1:F>`, :g:`A <g1:A>`) → :g:`( A B C ) <g1:( A B C )>` passing through :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`
 
-.. step:: assert
+.. step:: conclude ∵ thales_semicircle_theorem, circle_said_circumscribed_def <G.139, G.156>
 
-   Similarly we can prove that
-
-.. step:: assert
-
-   :g:`/ C F / <g1:/ C F />` :eq:`= <g1:/ C F / = g1:/ A F />` :g:`/ A F / <g1:/ A F />`
-
-.. step:: assert
-
-   So that :g:`/ F B / <g1:/ F B />` :eq:`= <g1:/ F B / = g1:/ F C />` :g:`/ F C / <g1:/ F C />`
-
-.. step:: assert
-
-   :g:`/ F A / <g1:/ F A />`, :g:`/ F B / <g1:/ F B />`, :g:`/ F C / <g1:/ F C />` :eq:`= <g1:/ F A / = g1:/ F B / = g1:/ F C />`
-
-.. step:: assert
-
-   the circle described with :term:`center <G.11>` :g:`F <g1:F>` and distance one of :g:`/ F A / <g1:/ F A />`, :g:`/ F B / <g1:/ F B />`, :g:`/ F C / <g1:/ F C />` will pass also through the remaining :term:`points <G.1>`, and the circle will have been circumscribed about :g:`< A B C > <g1:< A B C >>`
-
-.. step:: construct
-
-   Let it be circumscribed, as :g:`( A B C ) <g1:( A B C )>`.
-
-.. step:: assert
-
-   Next, let :g:`/ D F / <g1:/ D F />`, :g:`/ E F / <g1:/ E F />` meet on :g:`/ B C / <g1:/ B C />` at :g:`F <g1:F>`, as is the case in the second :term:`figure <G.9>`
-
-.. step:: construct
-
-   :fn:`segment <G.14>`\ (:g:`A <g1:A>`, :g:`F <g1:F>`) → :g:`/ A F / <g1:/ A F />`
-
-.. step:: assert ∵ circle_radii <G.10>
-
-   Similarly, we shall prove that :g:`F <g1:F>` is the center of the circle circumscribed about :g:`< A B C > <g1:< A B C >>`
-
-.. step:: construct
-
-   :fn:`segment <G.14>`\ (:g:`D <g1:D>`, :g:`F <g1:F>`) → :g:`/ D F / <g1:/ D F />`, :fn:`segment <G.14>`\ (:g:`E <g1:E>`, :g:`F <g1:F>`) → :g:`/ E F / <g1:/ E F />`, :fn:`segment <G.14>`\ () → :g:`< A B C > <g1:< A B C >>`, :fn:`segment <G.14>`\ () → :g:`F <g1:F>`, :fn:`segment <G.14>`\ (:g:`A <g1:A>`, :g:`F <g1:F>`) → :g:`/ A F / <g1:/ A F />`, :fn:`segment <G.14>`\ (:g:`B <g1:B>`, :g:`F <g1:F>`) → :g:`/ B F / <g1:/ B F />`, :fn:`segment <G.14>`\ (:g:`C <g1:C>`, :g:`F <g1:F>`) → :g:`/ C F / <g1:/ C F />`
-
-.. step:: assert ∵ sas_congruence <G.24>
-
-   Then again, since :g:`/ A D / <g1:/ A D />` :eq:`= <g1:/ A D / = g1:/ D B />` :g:`/ D B / <g1:/ D B />`, and :g:`/ D F / <g1:/ D F />` is common and :term:`at right angles <G.33>`, therefore :g:`/ A F / <g1:/ A F />` :eq:`= <g1:/ A F / = g1:/ F B />` :g:`/ F B / <g1:/ F B />`
-
-.. step:: assert
-
-   Similarly we can prove that
-
-.. step:: assert
-
-   :g:`/ C F / <g1:/ C F />` :eq:`= <g1:/ C F / = g1:/ A F />` :g:`/ A F / <g1:/ A F />`
-
-.. step:: assert
-
-   So that :g:`/ B F / <g1:/ B F />` :eq:`= <g1:/ B F / = g1:/ F C />` :g:`/ F C / <g1:/ F C />`
-
-.. step:: assert
-
-   the circle described with center :g:`F <g1:F>` and distance one of :g:`/ F A / <g1:/ F A />`, :g:`/ F B / <g1:/ F B />`, :g:`/ F C / <g1:/ F C />` will pass also through the remaining points, and will have been circumscribed about :g:`< A B C > <g1:< A B C >>`
-
-.. step:: assert
-
-   about the given triangle a circle has been circumscribed
-
-.. step:: assert
-
-   It is manifest that, when the center of the circle falls within the triangle, :g:`< B A C ) <g1:< B A C )>`, being in a :term:`segment <G.4>` greater than the :term:`semicircle <G.96>`, < a right angle
-
-.. step:: assert
-
-   When the center falls on :g:`/ B C / <g1:/ B C />`, :g:`< B A C ) <g1:< B A C )>`, being in a semicircle, is right
-
-.. step:: conclude ∵ thales_semicircle_theorem <G.139>
-
-   when the center of the circle falls outside the triangle, :g:`< B A C ) <g1:< B A C )>`, being in a segment less than the semicircle, > a right angle
+   :g:`( A B C ) <g1:( A B C )>` is circumscribed about :g:`< A B C > <g1:< A B C >>` (:g:`F <g1:F>` inside ⇒ :g:`< B A C ) <g1:< B A C )>` acute; :g:`F <g1:F>` on :g:`/ B C / <g1:/ B C />` ⇒ right; :g:`F <g1:F>` outside ⇒ obtuse)
 
 Dependency Graph
 ----------------
@@ -191,16 +119,19 @@ Dependency Graph
      "G.58" [label="G.58", tooltip="G.58 (I.31): Construct through a given point a line parallel to a given line.", fillcolor="#222244", URL="../G.58/index.html", target="_top"];
      "G.59" [label="G.59", tooltip="G.59 (I.32): In any triangle, an exterior angle equals the sum of the two opposite interior angles, and the three interior angles sum to two right angles.", fillcolor="#222244", URL="../G.59/index.html", target="_top"];
      "G.61" [label="G.61", tooltip="G.61 (I.def.17): A diameter of a circle is any segment drawn through the center and terminated in both directions by the arc of the circle; it bisects the circle.", fillcolor="#224422", URL="../G.61/index.html", target="_top"];
+     "G.76" [label="G.76", tooltip="G.76 (I.def.11): An obtuse angle is greater than a right angle.", fillcolor="#224422", URL="../G.76/index.html", target="_top"];
+     "G.77" [label="G.77", tooltip="G.77 (I.def.12): An acute angle is less than a right angle.", fillcolor="#224422", URL="../G.77/index.html", target="_top"];
      "G.96" [label="G.96", tooltip="G.96 (I.def.18): A semicircle is the figure contained by a diameter and the arc cut off by it.", fillcolor="#224422", URL="../G.96/index.html", target="_top"];
+     "G.98" [label="G.98", tooltip="G.98 (III.1): Find the center of a given circle.", fillcolor="#222244", URL="../G.98/index.html", target="_top"];
      "G.122" [label="G.122", tooltip="G.122 (III.def.10): Asector of a circle is thefigure which, when anangle is constructed at thecenter of thecircle, is contained by thesegments containing the angle and the arc cut off by them.", fillcolor="#224422", URL="../G.122/index.html", target="_top"];
-     "G.123" [label="G.123", tooltip="G.123 (III.20): In a circle the angle at the center is double of the angle at the arc, when the angles have the same arc as base.", fillcolor="#222244", URL="../G.123/index.html", target="_top"];
-     "G.124" [label="G.124", tooltip="G.124 (III.21): In a circle the angles in the same segment are equal.", fillcolor="#222244", URL="../G.124/index.html", target="_top"];
-     "G.125" [label="G.125", tooltip="G.125 (III.22): The opposite angles of quadrilaterals in circles are equal to two right angles.", fillcolor="#222244", URL="../G.125/index.html", target="_top"];
+     "G.123" [label="G.123", tooltip="G.123 (III.20): In a circle, the angle at the center is double the angle at the circumference when the angles have the same arc as base.", fillcolor="#222244", URL="../G.123/index.html", target="_top"];
+     "G.124" [label="G.124", tooltip="G.124 (III.21): In a circle, angles in the same segment are equal to one another.", fillcolor="#222244", URL="../G.124/index.html", target="_top"];
+     "G.125" [label="G.125", tooltip="G.125 (III.22): The opposite angles of any quadrilateral inscribed in a circle sum to two right angles.", fillcolor="#222244", URL="../G.125/index.html", target="_top"];
      "G.138" [label="G.138", tooltip="G.138 (III.def.8): Anangle in a segment is theangle which, when apoint is taken on the arc of the segment andsegments are joined from it to theextremities of the segment which is thebase of the segme...", fillcolor="#224422", URL="../G.138/index.html", target="_top"];
-     "G.139" [label="G.139", tooltip="G.139 (III.31): In a circle the angle in the semicircle is right, that in a greater segment less than a right angle, and that in a less segment greater than a right angle; and further the angle of...", fillcolor="#222244", URL="../G.139/index.html", target="_top"];
+     "G.139" [label="G.139", tooltip="G.139 (III.31): In a circle, the angle in a semicircle is right, the angle in a greater segment is acute, and the angle in a lesser segment is obtuse.", fillcolor="#222244", URL="../G.139/index.html", target="_top"];
      "G.155" [label="G.155", tooltip="G.155 (IV.def.2): Similarly afigure is said to becircumscribed about a figure when the respective sides of the circumscribed figure pass through the respectiveangles of that about which it is circum...", fillcolor="#224422", URL="../G.155/index.html", target="_top"];
      "G.156" [label="G.156", tooltip="G.156 (IV.def.6): Acircle is said to becircumscribed about a figure when the arc of the circle passes through eachangle of thefigure about which it is circumscribed.", fillcolor="#224422", URL="../G.156/index.html", target="_top"];
-     "G.157" [label="G.157", tooltip="G.157 (IV.5): Circumscribe about a given triangle a circle.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.157" [label="G.157", tooltip="G.157 (IV.5): Circumscribe a circle about a given triangle.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -226,7 +157,6 @@ Dependency Graph
      "G.58" -> "G.1";
      "G.59" -> "G.1";
      "G.138" -> "G.1";
-     "G.157" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
      "G.6" -> "G.2";
@@ -282,12 +212,11 @@ Dependency Graph
      "G.58" -> "G.4";
      "G.59" -> "G.4";
      "G.61" -> "G.4";
+     "G.98" -> "G.4";
      "G.122" -> "G.4";
-     "G.123" -> "G.4";
      "G.124" -> "G.4";
      "G.138" -> "G.4";
      "G.139" -> "G.4";
-     "G.157" -> "G.4";
      "G.6" -> "G.5";
      "G.7" -> "G.5";
      "G.10" -> "G.6";
@@ -302,7 +231,6 @@ Dependency Graph
      "G.122" -> "G.9";
      "G.155" -> "G.9";
      "G.156" -> "G.9";
-     "G.157" -> "G.9";
      "G.11" -> "G.10";
      "G.15" -> "G.10";
      "G.17" -> "G.10";
@@ -311,6 +239,7 @@ Dependency Graph
      "G.47" -> "G.10";
      "G.61" -> "G.10";
      "G.96" -> "G.10";
+     "G.98" -> "G.10";
      "G.122" -> "G.10";
      "G.123" -> "G.10";
      "G.124" -> "G.10";
@@ -325,10 +254,9 @@ Dependency Graph
      "G.47" -> "G.11";
      "G.61" -> "G.11";
      "G.96" -> "G.11";
+     "G.98" -> "G.11";
      "G.122" -> "G.11";
      "G.123" -> "G.11";
-     "G.124" -> "G.11";
-     "G.157" -> "G.11";
      "G.13" -> "G.12";
      "G.17" -> "G.12";
      "G.20" -> "G.12";
@@ -349,7 +277,6 @@ Dependency Graph
      "G.53" -> "G.12";
      "G.59" -> "G.12";
      "G.125" -> "G.12";
-     "G.139" -> "G.12";
      "G.157" -> "G.12";
      "G.17" -> "G.13";
      "G.25" -> "G.13";
@@ -363,7 +290,9 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.58" -> "G.14";
+     "G.98" -> "G.14";
      "G.123" -> "G.14";
      "G.124" -> "G.14";
      "G.125" -> "G.14";
@@ -373,12 +302,19 @@ Dependency Graph
      "G.20" -> "G.15";
      "G.21" -> "G.15";
      "G.47" -> "G.15";
+     "G.157" -> "G.15";
      "G.17" -> "G.16";
      "G.20" -> "G.16";
      "G.21" -> "G.16";
      "G.37" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.56" -> "G.16";
+     "G.59" -> "G.16";
+     "G.124" -> "G.16";
+     "G.125" -> "G.16";
+     "G.139" -> "G.16";
+     "G.157" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
@@ -388,12 +324,15 @@ Dependency Graph
      "G.41" -> "G.18";
      "G.42" -> "G.18";
      "G.45" -> "G.18";
+     "G.53" -> "G.18";
      "G.58" -> "G.18";
      "G.59" -> "G.18";
      "G.123" -> "G.18";
+     "G.139" -> "G.18";
      "G.20" -> "G.19";
      "G.25" -> "G.19";
      "G.40" -> "G.19";
+     "G.123" -> "G.19";
      "G.21" -> "G.20";
      "G.25" -> "G.21";
      "G.31" -> "G.21";
@@ -424,6 +363,8 @@ Dependency Graph
      "G.56" -> "G.22";
      "G.58" -> "G.22";
      "G.59" -> "G.22";
+     "G.76" -> "G.22";
+     "G.77" -> "G.22";
      "G.122" -> "G.22";
      "G.123" -> "G.22";
      "G.124" -> "G.22";
@@ -439,21 +380,27 @@ Dependency Graph
      "G.41" -> "G.24";
      "G.157" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.123" -> "G.25";
      "G.139" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.98" -> "G.26";
+     "G.139" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
      "G.48" -> "G.29";
+     "G.98" -> "G.29";
      "G.31" -> "G.30";
      "G.48" -> "G.30";
      "G.32" -> "G.31";
      "G.41" -> "G.32";
+     "G.98" -> "G.32";
      "G.157" -> "G.32";
      "G.34" -> "G.33";
      "G.37" -> "G.33";
@@ -463,12 +410,22 @@ Dependency Graph
      "G.55" -> "G.33";
      "G.56" -> "G.33";
      "G.59" -> "G.33";
+     "G.76" -> "G.33";
+     "G.77" -> "G.33";
+     "G.98" -> "G.33";
      "G.125" -> "G.33";
      "G.139" -> "G.33";
      "G.157" -> "G.33";
      "G.37" -> "G.34";
+     "G.98" -> "G.34";
+     "G.157" -> "G.34";
      "G.37" -> "G.36";
+     "G.42" -> "G.36";
      "G.56" -> "G.36";
+     "G.59" -> "G.36";
+     "G.123" -> "G.36";
+     "G.125" -> "G.36";
+     "G.139" -> "G.36";
      "G.40" -> "G.37";
      "G.42" -> "G.37";
      "G.56" -> "G.37";
@@ -476,6 +433,7 @@ Dependency Graph
      "G.40" -> "G.38";
      "G.41" -> "G.40";
      "G.56" -> "G.40";
+     "G.42" -> "G.41";
      "G.43" -> "G.41";
      "G.53" -> "G.41";
      "G.139" -> "G.42";
@@ -497,8 +455,10 @@ Dependency Graph
      "G.139" -> "G.59";
      "G.96" -> "G.61";
      "G.139" -> "G.61";
+     "G.139" -> "G.76";
+     "G.139" -> "G.77";
      "G.139" -> "G.96";
-     "G.157" -> "G.96";
+     "G.124" -> "G.98";
      "G.123" -> "G.122";
      "G.124" -> "G.123";
      "G.125" -> "G.124";

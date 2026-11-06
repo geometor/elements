@@ -1,0 +1,61 @@
+{
+  "voice_id": "voice_xdhacg1pn1cq",
+  "audio_wav": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_i/17/I_17.wav",
+  "total_duration_sec": 50.94,
+  "segments": [
+    {
+      "index": 0,
+      "bell": "bell:proposition",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Euclid's Elements, Book One, Proposition Seventeen. In any triangle, the sum of any two angles is less than two right angles. Given triangle A B C, we prove that any two of its angles taken together are less than two right angles.",
+      "start_sec": 0.0,
+      "end_sec": 13.97,
+      "duration_sec": 13.97,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Euclid's Elements, Book One, Proposition Seventeen. In any triangle, the sum of any two angles is less than two right angles. Given triangle A B C, we prove that any two of its angles taken together are less than two right angles.",
+          "start_sec": 0.0,
+          "end_sec": 13.97,
+          "duration_sec": 13.97
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "bell": "bell:construction",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Extend side B C continuously to point D.",
+      "start_sec": 13.97,
+      "end_sec": 17.76,
+      "duration_sec": 3.79,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Extend side B C continuously to point D.",
+          "start_sec": 13.97,
+          "end_sec": 17.76,
+          "duration_sec": 3.79
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "bell": "bell:insight",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Since angle A C D is an exterior angle of triangle A B C, it is greater than the interior and opposite angle A B C. Add angle A C B to each, so angles A C D and A C B together are greater than angles A B C and B C A together. Yet since segment A C stands on line B D, adjacent angles A C D and A C B sum to two right angles. Therefore angles A B C and B C A together are less than two right angles, and similarly for the other pairs, as was required to prove.",
+      "start_sec": 17.76,
+      "end_sec": 50.94,
+      "duration_sec": 33.18,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Since angle A C D is an exterior angle of triangle A B C, it is greater than the interior and opposite angle A B C. Add angle A C B to each, so angles A C D and A C B together are greater than angles A B C and B C A together. Yet since segment A C stands on line B D, adjacent angles A C D and A C B sum to two right angles. Therefore angles A B C and B C A together are less than two right angles, and similarly for the other pairs, as was required to prove.",
+          "start_sec": 17.76,
+          "end_sec": 50.94,
+          "duration_sec": 33.18
+        }
+      ]
+    }
+  ]
+}

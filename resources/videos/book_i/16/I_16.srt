@@ -1,0 +1,39 @@
+1
+00:00:00,420 --> 00:00:03,852
+Euclid's Elements, Book One, Proposition Sixteen.
+
+2
+00:00:03,852 --> 00:00:11,415
+In any triangle, if one side is extended, the exterior angle is greater than either opposite interior angle.
+
+3
+00:00:11,415 --> 00:00:22,130
+Given triangle A B C with side B C extended to point D, we prove that exterior angle A C D is greater than either opposite interior angle B A C or C B A.
+
+4
+00:00:22,550 --> 00:00:28,340
+Using Proposition Ten, bisect segment A C at point E so that A E equals E C.
+
+5
+00:00:28,340 --> 00:00:34,968
+Join segment B E and extend it to F, cutting off E F equal to B E by Proposition Three.
+
+6
+00:00:34,968 --> 00:00:39,920
+Then join segment F C, and extend segment A C through to point G.
+
+7
+00:00:40,340 --> 00:00:44,927
+By Proposition Fifteen, vertical angles A E B and F E C are equal.
+
+8
+00:00:44,927 --> 00:00:55,561
+Since sides A E and E B equal sides C E and E F, Proposition Four proves that triangles A B E and C F E are congruent, so angle B A E equals angle E C F.
+
+9
+00:00:55,561 --> 00:01:03,902
+Because the whole exterior angle E C D is greater than its part E C F, exterior angle A C D is greater than angle B A C.
+
+10
+00:01:03,902 --> 00:01:13,980
+Similarly, bisecting B C proves that vertical angle B C G, and therefore angle A C D, is also greater than angle C B A, as was required to prove.

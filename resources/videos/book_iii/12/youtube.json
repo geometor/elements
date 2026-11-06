@@ -1,0 +1,33 @@
+{
+  "prop_id": "BOOK III \u2022 PROP. 12",
+  "short_code": "III.12",
+  "g_id": "G.110",
+  "version": 2,
+  "enunciation": "If two circles touch one another externally, the straight line joining their centres will pass through the point of contact.",
+  "title_1080p": "III.12 \u2022 externally touching circles \u2022 Euclid's Elements",
+  "title_short": "III.12 \u2022 externally touching circles \u2022 Euclid's Elements",
+  "description": "\u201cIf two circles touch one another externally, the straight line joining their centres will pass through the point of contact.\u201d\n\u2014 Euclid's Elements, BOOK III \u2022 PROP. 12 (G.110)\n\n00:00 1 \u00b7 GIVEN: circles ( A B C ) and ( A D E ) touching externally at A\n00:25 2 \u00b7 CONSTRUCT: suppose / F C D G / misses A; join / F A / and / G A /\n00:39 3 \u00b7 ASSERT: / F A / = / F C / and / G A / = / G D /\n00:56 4 \u00b7 ASSERT: / F G / \u27e9 / F A / + / A G / contradicts triangle inequality\n01:13 5 \u00b7 \u2234: segment / F G / passes through point of contact A\n01:29 6 \u00b7 COMMENTARY: Heron's supplement & the 5 circle-distance regimes\n01:48 7 \u00b7 GENEALOGY: G.110 dependency tree & symbolic model\n02:07 8 \u00b7 PARTICIPATE: explore the GEOMETOR Elements Codex & participate\n\nExplore the interactive Book Codex, symbolic model, and dependency tree:\n\u2022 Elements Codex (G.110): https://geometor.github.io/elements/elements2/G.110/\n\u2022 Heath Edition (III.12): https://geometor.github.io/euclid/heath/volume_I/book_iii/propositions/12/\n\u2022 GitHub: https://github.com/geometor/elements\n\nGEOMETOR \u2022 G.110 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid III.12",
+    "G.110",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_iii/propositions/12/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.110/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/12/III_12_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/12/III_12_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/12/III_12.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/12/III_12_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/12/III_12_short_thumb.png"
+  }
+}

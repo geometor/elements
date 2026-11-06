@@ -1,0 +1,322 @@
+[
+  {
+    "prop_id": "BOOK III • PROP. 2",
+    "short_title": "chord falls within circle",
+    "g_id": "G.99",
+    "folio": "Folios 0014–0015 • pp. 8–9",
+    "enunciation": "If on the circumference of a circle two points be taken at random, the straight line joining the points will fall within the circle.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.99/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.99/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/02/",
+    "step_total": 9,
+    "subslides": [
+      {
+        "step_num": 1,
+        "step_kind": "GIVEN",
+        "chapter": "circle ( A B C ) with points A, B on circumference",
+        "symbolic": "A, B ∈ ( A B C ) → / A B / inside ( A B C )",
+        "visible_ids": [
+          "el-circle-ABC",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C"
+        ],
+        "active_ids": [
+          "el-circle-ABC",
+          "hl-circle-ABC",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C"
+        ],
+        "equal_ids": [],
+        "clause_html": "<div class=\"clause-line\">Let <span class=\"g-tok\">( A B C )</span> be a circle, and let two points <span class=\"g-tok\">A</span>, <span class=\"g-tok\">B</span></div><div class=\"clause-line\">be taken at random on its circumference.</div>",
+        "just_id": "G.10 • I.def.15",
+        "just_title": "Given any circle ( A B C ) and two distinct points A, B on its circumference."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK III • PROP. 2",
+    "short_title": "chord falls within circle",
+    "g_id": "G.99",
+    "folio": "Folios 0014–0015 • pp. 8–9",
+    "enunciation": "If on the circumference of a circle two points be taken at random, the straight line joining the points will fall within the circle.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.99/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.99/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/02/",
+    "step_total": 9,
+    "subslides": [
+      {
+        "step_num": 2,
+        "step_kind": "CONSTRUCT",
+        "chapter": "suppose / A E B / falls outside; center D, join / D A /, / D B /, / D F E /",
+        "symbolic": "find_center(( A B C )) → D; join / D A /, / D B /, / D F E /",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-sec-AEB",
+          "hl-sec-AEB",
+          "el-seg-DA",
+          "hl-seg-DA",
+          "el-seg-DB",
+          "hl-seg-DB",
+          "el-seg-DE",
+          "hl-seg-DE",
+          "el-pt-D",
+          "el-pt-F",
+          "el-pt-E",
+          "lbl-D",
+          "lbl-F",
+          "lbl-E"
+        ],
+        "equal_ids": [],
+        "clause_html": "<div class=\"clause-line\">Suppose <span class=\"g-tok\">/ A E B /</span> falls outside; find center <span class=\"g-tok\">D</span> (<span class=\"g-tok\">III.1</span>)</div><div class=\"clause-line\">Join <span class=\"g-tok\">/ D A /</span>, <span class=\"g-tok\">/ D B /</span> and draw <span class=\"g-tok\">/ D F E /</span> through <span class=\"g-tok\">F</span> to <span class=\"g-tok\">E</span></div>",
+        "just_id": "G.98 • III.1, G.14 • I.post.1",
+        "just_title": "Find the center D of circle ( A B C ) (III.1), join radii / D A /, / D B /, and draw / D F E / to the supposed exterior line."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK III • PROP. 2",
+    "short_title": "chord falls within circle",
+    "g_id": "G.99",
+    "folio": "Folios 0014–0015 • pp. 8–9",
+    "enunciation": "If on the circumference of a circle two points be taken at random, the straight line joining the points will fall within the circle.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.99/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.99/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/02/",
+    "step_total": 9,
+    "subslides": [
+      {
+        "step_num": 3,
+        "step_kind": "ASSERT",
+        "chapter": "< D A E ) = < D B E ) and exterior < D E B ) > < D B E )",
+        "symbolic": "/ D A / = / D B / → < D A E ) = < D B E ); < D E B ) > < D A E ) = < D B E )",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-tri-DAE",
+          "hl-tri-DAE",
+          "el-ang-DEB",
+          "hl-ang-DEB",
+          "hl-arc-DEB"
+        ],
+        "equal_ids": [
+          "el-seg-DA",
+          "hl-seg-DA",
+          "el-seg-DB",
+          "hl-seg-DB",
+          "el-ang-DAE",
+          "hl-ang-DAE",
+          "hl-arc-DAE",
+          "el-ang-DBE",
+          "hl-ang-DBE",
+          "hl-arc-DBE"
+        ],
+        "tick_ids": [
+          "el-seg-DA",
+          "el-seg-DB"
+        ],
+        "clause_html": "<div class=\"clause-line\">Radii <span class=\"eq-tok\">/ D A / = / D B /</span> → <span class=\"eq-tok\">&lt; D A E ) = &lt; D B E )</span></div><div class=\"clause-line\">Exterior <span class=\"g-tok\">&lt; D E B ) &gt; &lt; D A E )</span> → <span class=\"eq-tok\">&lt; D E B ) &gt; &lt; D B E )</span></div>",
+        "just_id": "G.25 • I.5, G.41 • I.16",
+        "just_title": "Base angles of isosceles < D A B > are equal (I.5), and exterior angle < D E B ) of < D A E > exceeds < D A E ) (I.16)."
+      },
+      {
+        "step_num": 4,
+        "step_kind": "ASSERT",
+        "chapter": "< D E B ) > < D B E ) → / D B / > / D E /",
+        "symbolic": "< D E B ) > < D B E ) → / D B / > / D E /",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-tri-DBE",
+          "hl-tri-DBE",
+          "el-seg-DE",
+          "hl-seg-DE",
+          "el-ang-DEB",
+          "hl-ang-DEB",
+          "hl-arc-DEB"
+        ],
+        "equal_ids": [
+          "el-seg-DB",
+          "hl-seg-DB",
+          "el-ang-DBE",
+          "hl-ang-DBE",
+          "hl-arc-DBE"
+        ],
+        "tick_ids": [
+          "el-seg-DA",
+          "el-seg-DB"
+        ],
+        "clause_html": "<div class=\"clause-line\">In <span class=\"g-tok\">&lt; D B E &gt;</span>, <span class=\"g-tok\">&lt; D E B ) &gt; &lt; D B E )</span></div><div class=\"clause-line\">→ greater side subtends greater angle: <span class=\"eq-tok\">/ D B / &gt; / D E /</span></div>",
+        "just_id": "G.44 • I.19",
+        "just_title": "In any triangle, the greater angle is subtended by the greater side (I.19)."
+      },
+      {
+        "step_num": 5,
+        "step_kind": "ASSERT",
+        "chapter": "/ D B / = / D F / → / D F / > / D E / (less > greater) ⇒⇐",
+        "symbolic": "/ D B / = / D F / → / D F / > / D E /  ⇒⇐",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-seg-DE",
+          "hl-seg-DE",
+          "el-seg-FE",
+          "hl-seg-FE",
+          "el-pt-F",
+          "el-pt-E",
+          "lbl-F",
+          "lbl-E"
+        ],
+        "equal_ids": [
+          "el-seg-DB",
+          "hl-seg-DB",
+          "el-seg-DF",
+          "hl-seg-DF"
+        ],
+        "tick_ids": [
+          "el-seg-DA",
+          "el-seg-DB",
+          "el-seg-DF"
+        ],
+        "clause_html": "<div class=\"clause-line\">But radius <span class=\"eq-tok\">/ D B / = / D F /</span> → <span class=\"eq-tok\">/ D F / &gt; / D E /</span></div><div class=\"clause-line\">The less greater than the greater — impossible (<span class=\"eq-tok\">⇒⇐</span>)</div>",
+        "just_id": "G.10 • I.def.15, G.26 • I.cn.5",
+        "just_title": "Radius / D F / is a proper part of / D E /, so / D F / > / D E / contradicts Common Notion 5."
+      },
+      {
+        "step_num": 6,
+        "step_kind": "∴",
+        "is_punchline": true,
+        "chapter": "chord / A B / falls within circle ( A B C )",
+        "symbolic": "∴ / A B / falls within ( A B C )",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-circle-ABC",
+          "hl-circle-ABC",
+          "el-tri-DAB",
+          "hl-tri-DAB",
+          "el-pt-A",
+          "el-pt-B",
+          "lbl-A",
+          "lbl-B"
+        ],
+        "equal_ids": [
+          "el-seg-DA",
+          "hl-seg-DA",
+          "el-seg-DB",
+          "hl-seg-DB",
+          "el-seg-DF",
+          "hl-seg-DF"
+        ],
+        "tick_ids": [
+          "el-seg-DA",
+          "el-seg-DB",
+          "el-seg-DF"
+        ],
+        "clause_html": "<div class=\"clause-line\"><span class=\"g-tok\">/ A B /</span> falls neither outside nor on the circumference;</div><div class=\"clause-line\">∴ <span class=\"eq-tok\">chord / A B / falls within circle ( A B C )</span>.</div>",
+        "just_id": "G.99 • III.2",
+        "just_title": "Every chord joining two points on a circle's circumference lies strictly inside the circle (Q.E.D.)."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK III • PROP. 2",
+    "short_title": "chord falls within circle",
+    "g_id": "G.99",
+    "folio": "Folios 0014–0015 • pp. 8–9",
+    "enunciation": "If on the circumference of a circle two points be taken at random, the straight line joining the points will fall within the circle.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.99/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.99/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/02/",
+    "step_total": 9,
+    "widescreen_only": true,
+    "subslides": [
+      {
+        "step_num": 7,
+        "step_kind": "COMMENTARY",
+        "widescreen_only": true,
+        "chapter": "convexity of the circle & at most two intersections with a line",
+        "symbolic": "E ∈ / A B /  ⇒  / D E / < / D A / = R",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-circle-ABC",
+          "hl-circle-ABC",
+          "el-tri-DAB",
+          "hl-tri-DAB",
+          "el-seg-DE",
+          "hl-seg-DE"
+        ],
+        "equal_ids": [
+          "el-seg-DA",
+          "hl-seg-DA",
+          "el-seg-DB",
+          "hl-seg-DB",
+          "el-seg-DF",
+          "hl-seg-DF"
+        ],
+        "tick_ids": [
+          "el-seg-DA",
+          "el-seg-DB",
+          "el-seg-DF"
+        ],
+        "clause_html": "<div class=\"clause-line\"><strong>Circle Convexity &amp; Line Intersection</strong></div><div class=\"clause-line\"><span class=\"eq-tok\">E ∈ / A B / &nbsp;⇒&nbsp; / D E / &lt; / D A / = R</span></div><div class=\"clause-line\" style=\"font-size:28px;color:#cbd5e1;\">De Morgan &amp; Camerer: interior points of / A B / lie inside the circle, points on [ A B ] produced lie outside, so a line cuts a circle in at most two points.</div>",
+        "just_tag": "✦ HEATH COMMENTARY",
+        "just_id": "Heath (1908) • Vol. II, pp. 9–10",
+        "just_title": "A direct proof shows / D E / < / D A / for any point E between A and B without requiring a curved line / A E B /."
+      },
+      {
+        "step_num": 8,
+        "step_kind": "GENEALOGY",
+        "widescreen_only": true,
+        "chapter": "G.99 dependency tree & symbolic model",
+        "symbolic": "G.1, G.4, G.10, G.14, G.22, G.25, G.41, G.44, G.98 → G.99",
+        "stage_html": "<div style=\"width:100%;height:100%;display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:36px 8px 8px 8px;align-items:stretch;\"><div style=\"background:rgba(11,14,21,0.92);border:1.5px solid rgba(56,189,248,0.45);border-radius:16px;padding:22px 24px;display:flex;flex-direction:column;justify-content:space-between;\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.12em;color:#38bdf8;\">◈ G-INDEX PREREQUISITES → G.99</div><div style=\"display:flex;flex-direction:column;gap:10px;margin:12px 0;\"><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.98 (III.1)</span><span style=\"color:#f4f1ea;\">find circle center</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.44 (I.19)</span><span style=\"color:#f4f1ea;\">greater angle → greater side</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.41 (I.16)</span><span style=\"color:#f4f1ea;\">exterior angle inequality</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.25 (I.5)</span><span style=\"color:#f4f1ea;\">isosceles base angles</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #5ec27e;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.10 (I.def.15)</span><span style=\"color:#f4f1ea;\">circle &amp; equal radii</span></div></div><div style=\"background:rgba(232,184,90,0.16);border:1.5px solid #e8b85a;border-radius:10px;padding:11px 16px;text-align:center;font-family:'JetBrains Mono',monospace;font-size:17px;font-weight:700;color:#e8b85a;\">↓ G.99 (III.2) • chord falls within circle</div></div><div style=\"background:rgba(11,14,21,0.92);border:1.5px solid rgba(232,184,90,0.4);border-radius:16px;padding:22px 24px;display:flex;flex-direction:column;justify-content:space-between;\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.12em;color:#e8b85a;\">⚙ GEOMETOR.MODEL • G.99/g1.py</div><pre style=\"font-family:'JetBrains Mono',monospace;font-size:14.5px;line-height:1.48;color:#e2e8f0;background:rgba(7,9,14,0.85);padding:16px;border-radius:10px;border:1px solid rgba(148,163,184,0.25);overflow:hidden;\">model = Model(&quot;III.2&quot;)\nmodel.construct_circle(D, A)\n\n# Radii DA, DB and secant ray DFE\nmodel.set_segment(D, A)\nmodel.set_segment(D, B)\nmodel.set_section([D, F, E])\n\n# Triangles DAE, DBE &amp; exterior angle DEB\nmodel.set_polygon([D, A, E])\nmodel.set_polygon([D, B, E])\nmodel.set_wedge(E, D, D, B)</pre><div style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">41 total ancestor nodes in G-Index • Required for G.112 (III.13)</div></div></div>",
+        "clause_html": "<div class=\"clause-line\"><span class=\"coincide-tok\">G.99</span> synthesizes <span class=\"g-tok\">9 direct prerequisites</span></div><div class=\"clause-line\">across <span class=\"g-tok\">41 total ancestor nodes</span> in the G-Index</div><div class=\"clause-line\" style=\"font-size:28px;color:#cbd5e1;\">Uniting III.1's center construction with Book I's exterior-angle and side-angle inequalities.</div>",
+        "just_tag": "◈ G-INDEX GENEALOGY",
+        "just_id": "G.99 • 9 Direct Rules",
+        "just_title": "Depends on G.1, G.4, G.10 (I.def.15), G.14 (I.post.1), G.22, G.25 (I.5), G.41 (I.16), G.44 (I.19), and G.98 (III.1)."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK III • PROP. 2",
+    "short_title": "chord falls within circle",
+    "g_id": "G.99",
+    "folio": "Folios 0014–0015 • pp. 8–9",
+    "enunciation": "If on the circumference of a circle two points be taken at random, the straight line joining the points will fall within the circle.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.99/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.99/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/02/",
+    "step_total": 9,
+    "widescreen_only": true,
+    "subslides": [
+      {
+        "step_num": 9,
+        "step_kind": "PARTICIPATE",
+        "widescreen_only": true,
+        "chapter": "explore the GEOMETOR Elements Codex & participate",
+        "symbolic": "geometor.github.io/elements",
+        "stage_html": "<div style=\"width:100%;height:100%;display:flex;flex-direction:column;justify-content:space-between;padding:42px 16px 12px 16px;gap:20px;\"><div style=\"background:linear-gradient(135deg,rgba(232,184,90,0.16) 0%,rgba(16,20,29,0.95) 100%);border:2px solid rgba(232,184,90,0.55);border-radius:18px;padding:28px 32px;display:flex;flex-direction:column;gap:12px;box-shadow:0 16px 40px rgba(0,0,0,0.6);\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.16em;color:#e8b85a;\">★ INTERACTIVE DIGITAL EDITION</div><div style=\"font-family:Georgia,serif;font-size:38px;font-weight:700;color:#f8f6f0;\">GEOMETOR • Elements Codex</div><div style=\"font-family:'JetBrains Mono',monospace;font-size:22px;color:#5ec27e;font-weight:700;\">https://geometor.github.io/elements/elements2/G.99/</div></div><div style=\"display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;flex:1;\"><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#e8b85a;font-weight:700;\">01 • PSEUDOCODE</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Hover-synced symbolic steps, signatures, and interactive SVG diagrams.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 1 • G.99</span></div><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#38bdf8;font-weight:700;\">02 • PYTHON MODEL</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Executable geometor.model scripts with exact algebraic coordinates.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 2 • g1.py</span></div><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#5ec27e;font-weight:700;\">03 • HEATH (1908)</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Complete classical translation, folio plates, and historical commentary.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 3 • Folios 0014–0015</span></div></div></div>",
+        "clause_html": "<div class=\"clause-line\">Explore the <span class=\"g-tok\">Elements Codex</span> &amp; <span class=\"eq-tok\">G-Index</span></div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Subscribe to <strong>@geometor</strong> for all 465 propositions</div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Share questions &amp; insights in the comments</div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Star &amp; contribute at <strong>github.com/geometor</strong></div>",
+        "just_tag": "★ PARTICIPATE & SUPPORT",
+        "just_id": "github.com/geometor/elements",
+        "just_title": "Open-source symbolic reconstruction of Euclid's Elements — links in the video description."
+      }
+    ]
+  }
+]

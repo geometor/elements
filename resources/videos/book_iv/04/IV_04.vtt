@@ -1,0 +1,65 @@
+WEBVTT
+
+1
+00:00:00.420 --> 00:00:02.490
+Book Four, Proposition Four.
+
+2
+00:00:02.490 --> 00:00:05.522
+In a given triangle to inscribe a circle.
+
+3
+00:00:05.522 --> 00:00:12.250
+Let A B C be the given triangle; it is required to inscribe a circle in the triangle A B C.
+
+4
+00:00:12.670 --> 00:00:22.881
+Bisect the angles A B C and A C B by the straight lines B D and C D by One Nine, and let them meet one another at the point D.
+
+5
+00:00:22.881 --> 00:00:29.040
+From D, draw D E, D F, and D G perpendicular to the sides A B, B C, and C A.
+
+6
+00:00:29.460 --> 00:00:46.619
+Because angle A B D equals angle C B D, the right angle B E D equals the right angle B F D, and the hypotenuse B D is common, by One Twenty-Six the triangles E B D and F B D have their remaining sides equal, so D E equals D F.
+
+7
+00:00:46.619 --> 00:00:55.730
+For the same reason, D G also equals D F; therefore all three perpendiculars D E, D F, and D G are equal to one another.
+
+8
+00:00:55.730 --> 00:01:19.190
+Hence the circle described with center D and distance D E passes through F and G, and touches A B, B C, and C A because the angles at E, F, and G are right—for if it cut them, a line drawn at right angles to a diameter from its extremity would fall within the circle, which was proved absurd in Three Sixteen.
+
+9
+00:01:19.190 --> 00:01:27.466
+Let the circle E F G be described; therefore in the given triangle A B C the circle E F G has been inscribed.
+
+10
+00:01:27.466 --> 00:01:29.060
+Which was to be done.
+
+11
+00:01:29.480 --> 00:01:33.781
+Proposition Four Four constructs the incenter and incircle of any triangle.
+
+12
+00:01:33.781 --> 00:01:47.886
+Because D E equals D G, joining D A proves that all three internal angle bisectors concur at D; and as Heath notes, bisecting the exterior supplementary angles yields the three escribed circles, giving four circles tangent to the three sidelines.
+
+13
+00:01:47.886 --> 00:02:02.221
+In the Metrica, Heron of Alexandria used this exact diagram to decompose the triangle into three pairs of congruent right triangles around the incenter D, proving that the area equals the semiperimeter times the inradius and deriving Heron's formula.
+
+14
+00:02:02.221 --> 00:02:14.320
+In the GEOMETOR G-Index, node G one hundred fifty-four unites fourteen direct prerequisites across fifty ancestor nodes, linking Book One angle bisection and Angle-Angle-Side congruence with Book Three tangency.
+
+15
+00:02:14.740 --> 00:02:27.700
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Four Four in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+16
+00:02:27.700 --> 00:02:34.180
+Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

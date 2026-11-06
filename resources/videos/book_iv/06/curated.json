@@ -1,0 +1,64 @@
+{
+  "IV.6": {
+    "subtype": "problem",
+    "args": [
+      ":g:`( A B C D ) <g1:( A B C D )>`"
+    ],
+    "returns": [
+      ":g:`< A B C D > <g1:< A B C D >>`"
+    ],
+    "given": ":g:`( A B C D ) <g1:( A B C D )>`",
+    "contract": ":g:`< A B C D > <g1:< A B C D >>` is a :term:`square <G.63>` :term:`inscribed in <G.148>` :g:`( A B C D ) <g1:( A B C D )>`",
+    "steps": [
+      [
+        "given",
+        [
+          "I.def.15",
+          "IV.def.3"
+        ],
+        ":g:`( A B C D ) <g1:( A B C D )>`"
+      ],
+      [
+        "construct",
+        [
+          "III.1",
+          "I.11"
+        ],
+        "Draw two diameters :g:`/ A C / <g1:/ A C />` and :g:`/ B D / <g1:/ B D />` of :g:`( A B C D ) <g1:( A B C D )>` at right angles to one another through center :g:`E <g1:E>` (:g:`/ A C / <g1:/ A C />` ⊥ :g:`/ B D / <g1:/ B D />`)"
+      ],
+      [
+        "construct",
+        [
+          "I.post.1"
+        ],
+        "@fn(I.post.1)(:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`) → :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ C D / <g1:/ C D />`, :g:`/ D A / <g1:/ D A />`"
+      ],
+      [
+        "assert",
+        [
+          "I.def.15",
+          "I.def.10",
+          "I.4"
+        ],
+        ":g:`/ B E / <g1:/ B E />` :eq:`= <g1:/ B E / = g1:/ E D />` :g:`/ E D / <g1:/ E D />` (center :g:`E <g1:E>`), :g:`/ E A / <g1:/ E A />` common ⊥ :g:`/ B D / <g1:/ B D />` → :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ D A />` :g:`/ D A / <g1:/ D A />`; similarly :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ B C / = g1:/ C D / = g1:/ D A />` :g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ A B / = g1:/ B C / = g1:/ C D / = g1:/ D A />` :g:`/ C D / <g1:/ C D />` :eq:`= <g1:/ A B / = g1:/ B C / = g1:/ C D / = g1:/ D A />` :g:`/ D A / <g1:/ D A />` (equilateral)"
+      ],
+      [
+        "assert",
+        [
+          "I.def.17",
+          "I.def.18",
+          "III.31"
+        ],
+        ":g:`/ B D / <g1:/ B D />` is a diameter → :g:`( B A D ) <g1:( B A D )>` is a semicircle → :g:`< B A D ) <g1:< B A D )>` is right; similarly :g:`< A B C ) <g1:< A B C )>`, :g:`< B C D ) <g1:< B C D )>`, :g:`< C D A ) <g1:< C D A )>` are :eq:`right <g1:< B A D ) = g1:< A B C ) = g1:< B C D ) = g1:< C D A )>` (right-angled)"
+      ],
+      [
+        "conclude",
+        [
+          "I.def.22",
+          "IV.def.3"
+        ],
+        ":g:`< A B C D > <g1:< A B C D >>` is both equilateral and right-angled → square :g:`< A B C D > <g1:< A B C D >>` is inscribed in :g:`( A B C D ) <g1:( A B C D )>`"
+      ]
+    ]
+  }
+}

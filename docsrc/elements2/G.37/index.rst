@@ -12,6 +12,7 @@
 :tags: book-i, point, segment, angle, straight-line, plane-angle, right-angle, plane, equality
 :dependencies: G.1, G.2, G.4, G.16, G.22, G.33, G.34, G.36
 :excerpt: A segment standing on a line makes either two right angles or adjacent angles summing to two right angles.
+:youtube_id: -Yxl0fsvneo
 
 .. _G.37:
 .. _I.13:
@@ -27,59 +28,36 @@ G.37 adjacent angles on a line sum to two right angles
 
 .. signature:: theorem
 
-   | :fn:`adjacent_angles_supplementary <G.37>`\ ()
-   | **prove** :g:`< C B A ) <g1:< C B A )>`, :g:`< A B D ) <g1:< A B D )>` are either two right angles or equal to two right angles
+   | :fn:`adjacent_angles_supplementary <G.37>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`)
+   | **given** :g:`/ A B / <g1:/ A B />` on :g:`/ C D / <g1:/ C D />` → :g:`< C B A ) <g1:< C B A )>`, :g:`< A B D ) <g1:< A B D )>`
+   | **prove** :g:`< C B A ) <g1:< C B A )>` + :g:`< A B D ) <g1:< A B D )>` :eq:`= <g1:< C B E ) = g1:< E B D )>` :g:`< C B E ) <g1:< C B E )>` + :g:`< E B D ) <g1:< E B D )>`
 
 .. picture:: g1.svg
    :alt: Proposition 13 figure
 
-.. step:: assert
+.. step:: given
 
-   Let any segment :g:`/ A B / <g1:/ A B />` set up on :g:`/ C D / <g1:/ C D />` make :g:`< C B A ) <g1:< C B A )>`, :g:`< A B D ) <g1:< A B D )>`
+   :g:`/ A B / <g1:/ A B />` on :g:`/ C D / <g1:/ C D />` → :g:`< C B A ) <g1:< C B A )>`, :g:`< A B D ) <g1:< A B D )>`
 
 .. step:: assert ∵ right_angle_perpendicular <G.33>
 
-   If :g:`< C B A ) <g1:< C B A )>` :eq:`= <g1:< C B A ) = g1:< A B D )>` :g:`< A B D ) <g1:< A B D )>` → they are :eq:`two right angles <g1:< C B A ) = g1:< A B D )>`
+   ? :g:`< C B A ) <g1:< C B A )>` :eq:`= <g1:< C B A ) = g1:< A B D )>` :g:`< A B D ) <g1:< A B D )>` → :g:`/ A B / <g1:/ A B />` ⊥ :g:`/ C D / <g1:/ C D />`
 
 .. step:: construct
 
-   :fn:`perpendicular_at <G.34>`\ (:g:`/ C D / <g1:/ C D />`, :g:`B <g1:B>`) → :g:`/ B E / <g1:/ B E />`
-
-.. step:: assert
-
-   :g:`< C B E ) <g1:< C B E )>`, :g:`< E B D ) <g1:< E B D )>` are :eq:`two right angles <g1:< C B E ) = g1:< E B D )>`
-
-.. step:: assert
-
-   :g:`< C B E ) <g1:< C B E )>` is equal to the two angles :g:`< C B A ) <g1:< C B A )>`, :g:`< A B E ) <g1:< A B E )>` → let :g:`< E B D ) <g1:< E B D )>` be added to each
+   :fn:`perpendicular_at <G.34>`\ (:g:`/ C D / <g1:/ C D />`, :g:`B <g1:B>`) → :g:`/ B E / <g1:/ B E />` ⊥ :g:`/ C D / <g1:/ C D />` (:g:`< C B E ) <g1:< C B E )>` :eq:`= <g1:< C B E ) = g1:< E B D )>` :g:`< E B D ) <g1:< E B D )>`)
 
 .. step:: assert ∵ add_equals <G.36>
 
-   :g:`< C B E ) <g1:< C B E )>`, :g:`< E B D ) <g1:< E B D )>` are equal to the three angles :g:`< C B A ) <g1:< C B A )>`, :g:`< A B E ) <g1:< A B E )>`, :g:`< E B D ) <g1:< E B D )>`
-
-.. step:: assert
-
-   :g:`< D B A ) <g1:< D B A )>` is equal to the two angles :g:`< D B E ) <g1:< D B E )>`, :g:`< E B A ) <g1:< E B A )>` → let :g:`< A B C ) <g1:< A B C )>` be added to each
+   :g:`< C B E ) <g1:< C B E )>` = :g:`< C B A ) <g1:< C B A )>` + :g:`< A B E ) <g1:< A B E )>` → :g:`< C B E ) <g1:< C B E )>` + :g:`< E B D ) <g1:< E B D )>` = :g:`< C B A ) <g1:< C B A )>` + :g:`< A B E ) <g1:< A B E )>` + :g:`< E B D ) <g1:< E B D )>`
 
 .. step:: assert ∵ add_equals <G.36>
 
-   :g:`< D B A ) <g1:< D B A )>`, :g:`< A B C ) <g1:< A B C )>` are equal to the three angles :g:`< D B E ) <g1:< D B E )>`, :g:`< E B A ) <g1:< E B A )>`, :g:`< A B C ) <g1:< A B C )>`
+   :g:`< D B A ) <g1:< D B A )>` = :g:`< D B E ) <g1:< D B E )>` + :g:`< E B A ) <g1:< E B A )>` → :g:`< D B A ) <g1:< D B A )>` + :g:`< A B C ) <g1:< A B C )>` = :g:`< D B E ) <g1:< D B E )>` + :g:`< E B A ) <g1:< E B A )>` + :g:`< A B C ) <g1:< A B C )>`
 
-.. step:: assert
+.. step:: conclude ∵ equal_transitive <G.16>
 
-   :g:`< C B E ) <g1:< C B E )>`, :g:`< E B D ) <g1:< E B D )>` were also proved equal to the same three angles
-
-.. step:: assert ∵ equal_transitive <G.16>
-
-   :g:`< C B E ) <g1:< C B E )>`, :g:`< E B D ) <g1:< E B D )>` are also equal to :g:`< D B A ) <g1:< D B A )>`, :g:`< A B C ) <g1:< A B C )>`
-
-.. step:: assert
-
-   :g:`< C B E ) <g1:< C B E )>`, :g:`< E B D ) <g1:< E B D )>` are :eq:`two right angles <g1:< C B E ) = g1:< E B D )>`
-
-.. step:: conclude
-
-   :g:`< D B A ) <g1:< D B A )>`, :g:`< A B C ) <g1:< A B C )>` are also equal to two right angles
+   :g:`< C B A ) <g1:< C B A )>` + :g:`< A B D ) <g1:< A B D )>` :eq:`= <g1:< C B E ) = g1:< E B D )>` :g:`< C B E ) <g1:< C B E )>` + :g:`< E B D ) <g1:< E B D )>`
 
 Dependency Graph
 ----------------
@@ -247,5 +225,6 @@ Required for
 .. toctree::
    :hidden:
 
+   video
    code
    heath

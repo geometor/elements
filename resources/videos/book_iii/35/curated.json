@@ -1,0 +1,56 @@
+{
+  "III.35": {
+    "subtype": "theorem",
+    "args": [
+      ":g:`( A B C D ) <g1:( A B C D )>`",
+      ":g:`/ A C / <g1:/ A C />`",
+      ":g:`/ B D / <g1:/ B D />`"
+    ],
+    "returns": [],
+    "given": ":g:`/ A C / <g1:/ A C />`, :g:`/ B D / <g1:/ B D />` in :g:`( A B C D ) <g1:( A B C D )>` intersecting at :g:`E <g1:E>`",
+    "contract": "rect(:g:`/ A E / <g1:/ A E />`, :g:`/ E C / <g1:/ E C />`) :eq:`= <g1:/ A E / = g1:/ D E />, g1:/ E C / = g1:/ E B />` rect(:g:`/ D E / <g1:/ D E />`, :g:`/ E B / <g1:/ E B />`)",
+    "steps": [
+      [
+        "given",
+        [
+          "I.def.15"
+        ],
+        ":g:`/ A C / <g1:/ A C />` ∩ :g:`/ B D / <g1:/ B D />` → :g:`E <g1:E>` inside :g:`( A B C D ) <g1:( A B C D )>`"
+      ],
+      [
+        "construct",
+        [
+          "III.1",
+          "I.12",
+          "I.post.1"
+        ],
+        "@fn(III.1)(:g:`( A B C D ) <g2:( A B C D )>`) → :g:`F <g2:F>`, @fn(I.12)(:g:`/ A C / <g2:/ A C />`, :g:`F <g2:F>`) → :g:`/ F G / <g2:/ F G />` ⊥ :g:`/ A C / <g2:/ A C />`, @fn(I.12)(:g:`/ B D / <g2:/ B D />`, :g:`F <g2:F>`) → :g:`/ F H / <g2:/ F H />` ⊥ :g:`/ B D / <g2:/ B D />`, @fn(I.post.1)(:g:`F <g2:F>`, :g:`B <g2:B>`, :g:`C <g2:C>`, :g:`E <g2:E>`) → :g:`/ F B / <g2:/ F B />`, :g:`/ F C / <g2:/ F C />`, :g:`/ F E / <g2:/ F E />`"
+      ],
+      [
+        "assert",
+        [
+          "III.3",
+          "II.5"
+        ],
+        ":g:`/ A G / <g2:/ A G />` :eq:`= <g2:/ A G / = g2:/ G C />` :g:`/ G C / <g2:/ G C />` → rect(:g:`/ A E / <g2:/ A E />`, :g:`/ E C / <g2:/ E C />`) + :g:`/ E G / <g2:/ E G />`² = :g:`/ G C / <g2:/ G C />`²"
+      ],
+      [
+        "assert",
+        [
+          "I.cn.2",
+          "I.47"
+        ],
+        "rect(:g:`/ A E / <g2:/ A E />`, :g:`/ E C / <g2:/ E C />`) + :g:`/ F E / <g2:/ F E />`² = :g:`/ F C / <g2:/ F C />`² and rect(:g:`/ D E / <g2:/ D E />`, :g:`/ E B / <g2:/ E B />`) + :g:`/ F E / <g2:/ F E />`² = :g:`/ F B / <g2:/ F B />`²"
+      ],
+      [
+        "conclude",
+        [
+          "I.def.15",
+          "I.cn.1",
+          "I.cn.3"
+        ],
+        ":g:`/ F C / <g2:/ F C />` :eq:`= <g2:/ F C / = g2:/ F B />` :g:`/ F B / <g2:/ F B />` → rect(:g:`/ A E / <g1:/ A E />`, :g:`/ E C / <g1:/ E C />`) = rect(:g:`/ D E / <g1:/ D E />`, :g:`/ E B / <g1:/ E B />`)"
+      ]
+    ]
+  }
+}

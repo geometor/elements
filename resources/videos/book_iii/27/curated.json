@@ -1,0 +1,57 @@
+{
+  "III.27": {
+    "subtype": "theorem",
+    "args": [
+      ":g:`( A B C ) <g1:( A B C )>`",
+      ":g:`( D E F ) <g1:( D E F )>`",
+      ":g:`( B C ) <g1:( B C )>`",
+      ":g:`( E F ) <g1:( E F )>`",
+      ":g:`< B G C ) <g1:< B G C )>`",
+      ":g:`< E H F ) <g1:< E H F )>`",
+      ":g:`< B A C ) <g1:< B A C )>`",
+      ":g:`< E D F ) <g1:< E D F )>`"
+    ],
+    "returns": [],
+    "given": ":g:`( A B C ) <g1:( A B C )>` :eq:`= <g1:( A B C ) = g1:( D E F )>` :g:`( D E F ) <g1:( D E F )>`, :g:`( B C ) <g1:( B C )>` :eq:`= <g1:( B C ) = g1:( E F )>` :g:`( E F ) <g1:( E F )>`",
+    "contract": ":g:`< B G C ) <g1:< B G C )>` :eq:`= <g1:< B G C ) = g1:< E H F )>` :g:`< E H F ) <g1:< E H F )>`, :g:`< B A C ) <g1:< B A C )>` :eq:`= <g1:< B A C ) = g1:< E D F )>` :g:`< E D F ) <g1:< E D F )>`",
+    "steps": [
+      [
+        "given",
+        [
+          "III.def.1",
+          "III.def.9"
+        ],
+        ":g:`( A B C ) <g1:( A B C )>` :eq:`= <g1:( A B C ) = g1:( D E F )>` :g:`( D E F ) <g1:( D E F )>`, :g:`( B C ) <g1:( B C )>` :eq:`= <g1:( B C ) = g1:( E F )>` :g:`( E F ) <g1:( E F )>`, :g:`< B G C ) <g1:< B G C )>`, :g:`< E H F ) <g1:< E H F )>` at centers :g:`G <g1:G>`, :g:`H <g1:H>`, :g:`< B A C ) <g1:< B A C )>`, :g:`< E D F ) <g1:< E D F )>` at arcs"
+      ],
+      [
+        "construct",
+        [
+          "I.23"
+        ],
+        "assume :g:`< B G C ) <g1:< B G C )>` > :g:`< E H F ) <g1:< E H F )>` → @fn(I.23)(:g:`/ B G / <g1:/ B G />`, :g:`G <g1:G>`, :g:`< E H F ) <g1:< E H F )>`) → :g:`< B G K ) <g1:< B G K )>` (:eq:`= <g1:< B G K ) = g1:< E H F )>` :g:`< E H F ) <g1:< E H F )>`)"
+      ],
+      [
+        "assert",
+        [
+          "III.26"
+        ],
+        ":g:`< B G K ) <g1:< B G K )>` :eq:`= <g1:< B G K ) = g1:< E H F )>` :g:`< E H F ) <g1:< E H F )>` → :g:`( B K ) <g1:( B K )>` :eq:`= <g1:( B K ) = g1:( E F )>` :g:`( E F ) <g1:( E F )>`"
+      ],
+      [
+        "assert",
+        [
+          "I.cn.1",
+          "I.cn.5"
+        ],
+        ":g:`( B K ) <g1:( B K )>` :eq:`= <g1:( B K ) = g1:( E F )>` :g:`( E F ) <g1:( E F )>` :eq:`= <g1:( E F ) = g1:( B C )>` :g:`( B C ) <g1:( B C )>` ⇒⇐ → :g:`< B G C ) <g1:< B G C )>` :eq:`= <g1:< B G C ) = g1:< E H F )>` :g:`< E H F ) <g1:< E H F )>`"
+      ],
+      [
+        "conclude",
+        [
+          "III.20"
+        ],
+        ":g:`< B A C ) <g1:< B A C )>` = ½ :g:`< B G C ) <g1:< B G C )>`, :g:`< E D F ) <g1:< E D F )>` = ½ :g:`< E H F ) <g1:< E H F )>` → :g:`< B A C ) <g1:< B A C )>` :eq:`= <g1:< B A C ) = g1:< E D F )>` :g:`< E D F ) <g1:< E D F )>`"
+      ]
+    ]
+  }
+}

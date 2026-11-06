@@ -2,7 +2,7 @@
 :number: 105
 :canonical_id: G.105
 :original_id: III.7
-:title: G.105 diameter circle point
+:title: G.105 distances to a circle from an eccentric diameter point
 :volume: II
 :book: III
 :type: prop
@@ -10,145 +10,53 @@
 :categories: theorem, proof, plane-geometry, circles
 :category: theorem, proof, plane-geometry, circles
 :tags: book-iii, point, segment, circle, angle, diameter, centre, straight-line, trilateral, plane-angle, equality, reductio-ad-absurdum
-:dependencies: G.1, G.4, G.10, G.11, G.12, G.14, G.24, G.45, G.48, G.49, G.61
-:excerpt: If on the diameter of a circle a point be taken which is not the center of the circle, and from the point segments fall upon the circle, that is greatest on which the center is, the remainder of the same diameter is least, and of the rest the nearer to the segment through the center is always greater than the more remote, and only two equal segments will fall from the point on the circle, one on each side of the least segment.
+:dependencies: G.1, G.4, G.10, G.11, G.14, G.16, G.24, G.45, G.48, G.49, G.61
+:excerpt: From an eccentric point on the diameter of a circle, the greatest segment to the arc passes through the center, the least is the remainder of the diameter, and segments nearer the center are greater than those more remote, with at most two equal segments on opposite sides.
 
 .. _G.105:
 .. _III.7:
 
-G.105 diameter circle point
-===========================
+G.105 distances to a circle from an eccentric diameter point
+============================================================
 
 .. rubric:: `III.7 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/07/>`_
 
 .. enunciation::
 
-   If on the :term:`diameter <G.61>` of a :term:`circle <G.10>` a :term:`point <G.1>` be taken which is not the :term:`center <G.11>` of the circle, and from the point :term:`segments <G.4>` fall upon the circle, that is greatest on which the center is, the remainder of the same diameter is least, and of the rest the nearer to the segment through the center is always greater than the more remote, and only two equal segments will fall from the point on the circle, one on each side of the least segment.
+   From an eccentric :term:`point <G.1>` on the :term:`diameter <G.61>` of a :term:`circle <G.10>`, the greatest :term:`segment <G.4>` to the arc passes through the :term:`center <G.11>`, the least is the remainder of the diameter, and segments nearer the center are greater than those more remote, with at most two equal segments on opposite sides.
 
 .. signature:: theorem
 
-   | :fn:`diameter_circle_point <G.105>`\ (:g:`( A B C D ) <g1:( A B C D )>`, :g:`/ A D / <g1:/ A D />`)
-   | **given** :g:`( A B C D ) <g1:( A B C D )>` be a circle, let :g:`/ A D / <g1:/ A D />` be a diameter of it
-   | **prove** :g:`/ F A / <g1:/ F A />` is greatest, :g:`/ F D / <g1:/ F D />` is least, and of the rest :g:`/ F B / <g1:/ F B />` > :g:`/ F C / <g1:/ F C />`, and :g:`/ F C / <g1:/ F C />` than :g:`/ F G / <g1:/ F G />`
+   | :fn:`eccentric_diameter_distances <G.105>`\ (:g:`( A B C D ) <g1:( A B C D )>`, :g:`/ A D / <g1:/ A D />`, :g:`E <g1:E>`, :g:`F <g1:F>`)
+   | **given** :g:`( A B C D ) <g1:( A B C D )>` with center :g:`E <g1:E>`, diameter :g:`/ A D / <g1:/ A D />`, and point :g:`F <g1:F>` ∈ :g:`/ E D / <g1:/ E D />` (:g:`F <g1:F>` ≠ :g:`E <g1:E>`)
+   | **prove** :g:`/ F A / <g1:/ F A />` > :g:`/ F B / <g1:/ F B />` > :g:`/ F C / <g1:/ F C />` > :g:`/ F G / <g1:/ F G />` > :g:`/ F D / <g1:/ F D />`, and :g:`/ F G / <g1:/ F G />` :eq:`= <g1:/ F G / = g1:/ F H />` :g:`/ F H / <g1:/ F H />` (unique pair)
 
 .. picture:: g1.svg
    :alt: Proposition 7 Diagram
 
-.. step:: given
+.. step:: given ∵ circle_radii, circle_diameter <G.10, G.61>
 
-   :g:`( A B C D ) <g1:( A B C D )>` be a circle, let :g:`/ A D / <g1:/ A D />` be a diameter of it
+   :g:`( A B C D ) <g1:( A B C D )>`, diameter :g:`/ A D / <g1:/ A D />`, center :g:`E <g1:E>`, eccentric point :g:`F <g1:F>`, segments :g:`/ F B / <g1:/ F B />`, :g:`/ F C / <g1:/ F C />`, :g:`/ F G / <g1:/ F G />`
 
-.. step:: construct
+.. step:: construct ∵ segment, copy_angle <G.14, G.48>
 
-   On :g:`/ A D / <g1:/ A D />` let a point :g:`F <g1:F>` be taken which is not the center of the circle
+   :fn:`segment <G.14>`\ (:g:`E <g1:E>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`G <g1:G>`) → :g:`/ E B / <g1:/ E B />`, :g:`/ E C / <g1:/ E C />`, :g:`/ E G / <g1:/ E G />`; :fn:`copy_angle <G.48>`\ (:g:`/ E F / <g1:/ E F />`, :g:`E <g1:E>`, :g:`< G E F ) <g1:< G E F )>`) → :g:`< F E H ) <g1:< F E H )>` :eq:`= <g1:< F E H ) = g1:< G E F )>` :g:`< G E F ) <g1:< G E F )>`, join :g:`/ F H / <g1:/ F H />`
 
-.. step:: assert
+.. step:: assert ∵ triangle_inequality, hinge_theorem <G.45, G.49>
 
-   Let :g:`E <g1:E>` be the center of the circle, and from :g:`F <g1:F>` let segments :g:`/ F B / <g1:/ F B />`, :g:`/ F C / <g1:/ F C />`, :g:`/ F G / <g1:/ F G />` fall upon :g:`( A B C D ) <g1:( A B C D )>`
-
-.. step:: construct
-
-   :fn:`segment <G.14>`\ (:g:`B <g1:B>`, :g:`E <g1:E>`) → :g:`/ B E / <g1:/ B E />`, :fn:`segment <G.14>`\ (:g:`C <g1:C>`, :g:`E <g1:E>`) → :g:`/ C E / <g1:/ C E />`, :fn:`segment <G.14>`\ (:g:`G <g1:G>`, :g:`E <g1:E>`) → :g:`/ G E / <g1:/ G E />`
+   :g:`/ E B / <g1:/ E B />` + :g:`/ E F / <g1:/ E F />` > :g:`/ F B / <g1:/ F B />`, :g:`/ A E / <g1:/ A E />` :eq:`= <g1:/ A E / = g1:/ E B />` :g:`/ E B / <g1:/ E B />` → :g:`/ F A / <g1:/ F A />` > :g:`/ F B / <g1:/ F B />`; :g:`< B E F ) <g1:< B E F )>` > :g:`< C E F ) <g1:< C E F )>` → :g:`/ F B / <g1:/ F B />` > :g:`/ F C / <g1:/ F C />` > :g:`/ F G / <g1:/ F G />`
 
 .. step:: assert ∵ triangle_inequality <G.45>
 
-   in any :term:`triangle <G.12>` two sides are greater than the remaining one
+   :g:`/ F G / <g1:/ F G />` + :g:`/ E F / <g1:/ E F />` > :g:`/ E G / <g1:/ E G />` :eq:`= <g1:/ E G / = g1:/ E D />` :g:`/ E D / <g1:/ E D />` → :g:`/ F G / <g1:/ F G />` > :g:`/ F D / <g1:/ F D />`
 
-.. step:: assert
+.. step:: assert ∵ sas_congruence, equal_transitive <G.24, G.16>
 
-   :g:`/ E B / <g1:/ E B />`, :g:`/ E F / <g1:/ E F />` are greater than :g:`/ B F / <g1:/ B F />`
-
-.. step:: assert
-
-   :g:`/ A E / <g1:/ A E />` :eq:`= <g1:/ A E / = g1:/ B E />` :g:`/ B E / <g1:/ B E />`
-
-.. step:: assert
-
-   :g:`/ A F / <g1:/ A F />` > :g:`/ B F / <g1:/ B F />`
-
-.. step:: assert
-
-   :g:`/ B E / <g1:/ B E />` :eq:`= <g1:/ B E / = g1:/ C E />` :g:`/ C E / <g1:/ C E />`, and :g:`/ F E / <g1:/ F E />` is common, :g:`/ B E / <g1:/ B E />`, :g:`/ E F / <g1:/ E F />` :eq:`= <g1:/ B E / = g1:/ C E />` :g:`/ C E / <g1:/ C E />`, :g:`/ E F / <g1:/ E F />`
-
-.. step:: assert
-
-   :g:`< B E F ) <g1:< B E F )>` is also greater than :g:`< C E F ) <g1:< C E F )>`
-
-.. step:: assert ∵ hinge_theorem <G.49>
-
-   :g:`/ B F / <g1:/ B F />` > :g:`/ C F / <g1:/ C F />`
-
-.. step:: assert
-
-   The same reason
-
-.. step:: assert
-
-   :g:`/ C F / <g1:/ C F />` is also greater than :g:`/ F G / <g1:/ F G />`
-
-.. step:: assert
-
-   :g:`/ G F / <g1:/ G F />`, :g:`/ F E / <g1:/ F E />` are greater than :g:`/ E G / <g1:/ E G />`, and :g:`/ E G / <g1:/ E G />` :eq:`= <g1:/ E G / = g1:/ E D />` :g:`/ E D / <g1:/ E D />` → :g:`/ G F / <g1:/ G F />`, :g:`/ F E / <g1:/ F E />` are greater than :g:`/ E D / <g1:/ E D />`
-
-.. step:: construct
-
-   Let :g:`/ E F / <g1:/ E F />` be subtracted from each
-
-.. step:: assert
-
-   :g:`/ G F / <g1:/ G F />` > :g:`/ F D / <g1:/ F D />`
-
-.. step:: assert
-
-   :g:`/ F A / <g1:/ F A />` is greatest, :g:`/ F D / <g1:/ F D />` is least, and :g:`/ F B / <g1:/ F B />` > :g:`/ F C / <g1:/ F C />`, and :g:`/ F C / <g1:/ F C />` than :g:`/ F G / <g1:/ F G />`
-
-.. step:: assert
-
-   I say also that from :g:`F <g1:F>` only two equal segments will fall on :g:`( A B C D ) <g1:( A B C D )>`, one on each side of the least :g:`/ F D / <g1:/ F D />`
-
-.. step:: construct
-
-   :fn:`copy_angle <G.48>`\ (:g:`/ E F / <g1:/ E F />`, :g:`E <g1:E>`, :g:`< G E F ) <g1:< G E F )>`) → :g:`< F E H ) <g1:< F E H )>` (:eq:`equal <g1:< F E H ) = g1:< G E F )>`)
-
-.. step:: construct
-
-   :fn:`segment <G.14>`\ (:g:`F <g1:F>`, :g:`H <g1:H>`) → :g:`/ F H / <g1:/ F H />`
-
-.. step:: assert
-
-   :g:`/ G E / <g1:/ G E />` :eq:`= <g1:/ G E / = g1:/ E H />` :g:`/ E H / <g1:/ E H />`, and :g:`/ E F / <g1:/ E F />` is common → :g:`/ G E / <g1:/ G E />`, :g:`/ E F / <g1:/ E F />` :eq:`= <g1:/ G E / = g1:/ H E />` :g:`/ H E / <g1:/ H E />`, :g:`/ E F / <g1:/ E F />`
-
-.. step:: assert
-
-   :g:`< G E F ) <g1:< G E F )>` :eq:`= <g1:< G E F ) = g1:< H E F )>` :g:`< H E F ) <g1:< H E F )>`
-
-.. step:: assert ∵ sas_congruence <G.24>
-
-   :g:`/ F G / <g1:/ F G />` :eq:`= <g1:/ F G / = g1:/ F H />` :g:`/ F H / <g1:/ F H />`
-
-.. step:: assert
-
-   I say again that another segment equal to :g:`/ F G / <g1:/ F G />` will not fall on the circle from :g:`F <g1:F>`
-
-.. step:: assert
-
-   If possible, let :g:`/ F K / <g1:/ F K />` so fall
-
-.. step:: assert
-
-   :g:`/ F K / <g1:/ F K />` :eq:`= <g1:/ F K / = g1:/ F G /; g1:/ F H / = g1:/ F G />` :g:`/ F G / <g1:/ F G />`, and :g:`/ F H / <g1:/ F H />` to :g:`/ F G / <g1:/ F G />` → :g:`/ F K / <g1:/ F K />` :eq:`= <g1:/ F K / = g1:/ F H />` :g:`/ F H / <g1:/ F H />`,
-
-.. step:: assert
-
-   The nearer to the segment through the center being thus equal to the more remote ⇒⇐
-
-.. step:: assert
-
-   another segment equal to :g:`/ G F / <g1:/ G F />` will not fall from :g:`F <g1:F>` upon the circle
+   :g:`< G E F > <g1:< G E F >>` ≃ :g:`< H E F > <g1:< H E F >>` → :g:`/ F G / <g1:/ F G />` :eq:`= <g1:/ F G / = g1:/ F H />` :g:`/ F H / <g1:/ F H />`; if :g:`/ F K / <g1:/ F K />` :eq:`= <g1:/ F K / = g1:/ F G />` :g:`/ F G / <g1:/ F G />` then :g:`/ F K / <g1:/ F K />` :eq:`= <g1:/ F K / = g1:/ F H />` :g:`/ F H / <g1:/ F H />` ⇒⇐
 
 .. step:: conclude
 
-   only one segment will so fall
+   :g:`/ F A / <g1:/ F A />` > :g:`/ F B / <g1:/ F B />` > :g:`/ F C / <g1:/ F C />` > :g:`/ F G / <g1:/ F G />` > :g:`/ F D / <g1:/ F D />`, and only two equal segments :g:`/ F G / <g1:/ F G />` :eq:`= <g1:/ F G / = g1:/ F H />` :g:`/ F H / <g1:/ F H />` fall from :g:`F <g1:F>`
 
 Dependency Graph
 ----------------
@@ -205,7 +113,7 @@ Dependency Graph
      "G.48" [label="G.48", tooltip="G.48 (I.23): Construct on a given line at a given point an angle equal to a given angle.", fillcolor="#222244", URL="../G.48/index.html", target="_top"];
      "G.49" [label="G.49", tooltip="G.49 (I.24): If two triangles have two sides equal to two sides respectively, the one with the greater included angle has the greater base.", fillcolor="#222244", URL="../G.49/index.html", target="_top"];
      "G.61" [label="G.61", tooltip="G.61 (I.def.17): A diameter of a circle is any segment drawn through the center and terminated in both directions by the arc of the circle; it bisects the circle.", fillcolor="#224422", URL="../G.61/index.html", target="_top"];
-     "G.105" [label="G.105", tooltip="G.105 (III.7): If on the diameter of a circle a point be taken which is not the center of the circle, and from the point segments fall upon the circle, that is greatest on which the center is, th...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.105" [label="G.105", tooltip="G.105 (III.7): From an eccentric point on the diameter of a circle, the greatest segment to the arc passes through the center, the least is the remainder of the diameter, and segments nearer the ...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -315,7 +223,6 @@ Dependency Graph
      "G.47" -> "G.12";
      "G.48" -> "G.12";
      "G.49" -> "G.12";
-     "G.105" -> "G.12";
      "G.17" -> "G.13";
      "G.25" -> "G.13";
      "G.17" -> "G.14";
@@ -328,6 +235,7 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.49" -> "G.14";
      "G.105" -> "G.14";
      "G.17" -> "G.15";
@@ -339,6 +247,8 @@ Dependency Graph
      "G.21" -> "G.16";
      "G.37" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
+     "G.105" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
@@ -358,6 +268,7 @@ Dependency Graph
      "G.43" -> "G.21";
      "G.45" -> "G.21";
      "G.47" -> "G.21";
+     "G.49" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
      "G.28" -> "G.22";
@@ -383,12 +294,15 @@ Dependency Graph
      "G.49" -> "G.24";
      "G.105" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.49" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.49" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";

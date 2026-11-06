@@ -1,0 +1,63 @@
+{
+  "IV.7": {
+    "subtype": "problem",
+    "args": [
+      ":g:`( A B C D ) <g1:( A B C D )>`"
+    ],
+    "returns": [
+      ":g:`< F G H K > <g1:< F G H K >>`"
+    ],
+    "given": ":g:`( A B C D ) <g1:( A B C D )>`",
+    "contract": ":g:`< F G H K > <g1:< F G H K >>` is a :term:`square <G.63>` :term:`circumscribed about <G.150>` :g:`( A B C D ) <g1:( A B C D )>`",
+    "steps": [
+      [
+        "given",
+        [
+          "I.def.15",
+          "IV.def.4"
+        ],
+        ":g:`( A B C D ) <g1:( A B C D )>`"
+      ],
+      [
+        "construct",
+        [
+          "I.11",
+          "III.16"
+        ],
+        "Draw diameters :g:`/ A C / <g1:/ A C />` ⊥ :g:`/ B D / <g1:/ B D />` through center :g:`E <g1:E>`; through :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` draw tangents :g:`/ F G / <g1:/ F G />`, :g:`/ G H / <g1:/ G H />`, :g:`/ H K / <g1:/ H K />`, :g:`/ K F / <g1:/ K F />` touching :g:`( A B C D ) <g1:( A B C D )>`"
+      ],
+      [
+        "assert",
+        [
+          "III.18",
+          "I.28",
+          "I.30"
+        ],
+        "Angles at :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` are right (:g:`< A E B ) <g1:< A E B )>` :eq:`= <g1:< A E B ) = g1:< E B G )>` :g:`< E B G ) <g1:< E B G )>`) → :g:`/ G H / <g1:/ G H />` ∥ :g:`/ A C / <g1:/ A C />` ∥ :g:`/ K F / <g1:/ K F />` and :g:`/ F G / <g1:/ F G />` ∥ :g:`/ B D / <g1:/ B D />` ∥ :g:`/ H K / <g1:/ H K />`"
+      ],
+      [
+        "assert",
+        [
+          "I.34",
+          "I.def.15"
+        ],
+        ":g:`< G H C A > <g1:< G H C A >>`, :g:`< A C K F > <g1:< A C K F >>`, :g:`< F G B D > <g1:< F G B D >>`, :g:`< B H K D > <g1:< B H K D >>` are parallelograms and :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ B D />` :g:`/ B D / <g1:/ B D />` → :g:`/ F G / <g1:/ F G />` :eq:`= <g1:/ F G / = g1:/ G H / = g1:/ H K / = g1:/ K F />` :g:`/ G H / <g1:/ G H />` :eq:`= <g1:/ F G / = g1:/ G H / = g1:/ H K / = g1:/ K F />` :g:`/ H K / <g1:/ H K />` :eq:`= <g1:/ F G / = g1:/ G H / = g1:/ H K / = g1:/ K F />` :g:`/ K F / <g1:/ K F />` (equilateral)"
+      ],
+      [
+        "assert",
+        [
+          "I.34"
+        ],
+        "In parallelogram :g:`< G B E A > <g1:< G B E A >>`, :g:`< A E B ) <g1:< A E B )>` is right → opposite angle :g:`< A G B ) <g1:< A G B )>` is :eq:`right <g1:< A E B ) = g1:< A G B ) = g1:< G H K ) = g1:< H K F ) = g1:< K F G )>`, and similarly :g:`< G H K ) <g1:< G H K )>`, :g:`< H K F ) <g1:< H K F )>`, :g:`< K F G ) <g1:< K F G )>` are right (right-angled)"
+      ],
+      [
+        "conclude",
+        [
+          "I.def.22",
+          "IV.def.4"
+        ],
+        ":g:`< F G H K > <g1:< F G H K >>` is both equilateral and right-angled → square :g:`< F G H K > <g1:< F G H K >>` is circumscribed about :g:`( A B C D ) <g1:( A B C D )>`"
+      ]
+    ]
+  }
+}

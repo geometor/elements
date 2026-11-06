@@ -10,8 +10,9 @@
 :categories: theorem, proof, plane-geometry
 :category: theorem, proof, plane-geometry
 :tags: book-i, point, segment, angle, triangle, trilateral, square, plane-angle, right-angle, straight-line, plane, equality
-:dependencies: G.1, G.4, G.12, G.14, G.21, G.22, G.29, G.33, G.34, G.63, G.79
+:dependencies: G.1, G.4, G.12, G.14, G.16, G.21, G.22, G.29, G.33, G.34, G.36, G.63, G.75, G.79
 :excerpt: If the square on one side of a triangle equals the sum of the squares on the other two sides, the angle contained by those two sides is right.
+:youtube_id: iY8gSIR3v2I
 
 .. _G.80:
 .. _I.48:
@@ -27,71 +28,36 @@ G.80 converse of the Pythagorean theorem
 
 .. signature:: theorem
 
-   | :fn:`converse_pythagorean <G.80>`\ ()
-   | **prove** :g:`< B A C ) <g1:< B A C )>` is right
+   | :fn:`converse_pythagorean <G.80>`\ (:g:`< A B C > <g1:< A B C >>`)
+   | **given** :g:`< A B C > <g1:< A B C >>` (:fn:`square_on_segment <G.75>`\ (:g:`/ B C / <g1:/ B C />`) = :fn:`square_on_segment <G.75>`\ (:g:`/ B A / <g1:/ B A />`) + :fn:`square_on_segment <G.75>`\ (:g:`/ A C / <g1:/ A C />`))
+   | **prove** :g:`< B A C ) <g1:< B A C )>` = ∟
 
 .. picture:: g1.svg
    :alt: Folio 0382 Figure 2 - Proposition 48
 
-.. step:: assert
+.. step:: given
 
-   In :g:`< A B C > <g1:< A B C >>` let the square on one side :g:`/ B C / <g1:/ B C />` be equal to the squares on the sides :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />`
-
-.. step:: construct
-
-   :fn:`perpendicular_at <G.34>`\ (:g:`/ A C / <g1:/ A C />`, :g:`A <g1:A>`) → :g:`/ A D / <g1:/ A D />`
+   :g:`< A B C > <g1:< A B C >>` (:fn:`square_on_segment <G.75>`\ (:g:`/ B C / <g1:/ B C />`) = :fn:`square_on_segment <G.75>`\ (:g:`/ B A / <g1:/ B A />`) + :fn:`square_on_segment <G.75>`\ (:g:`/ A C / <g1:/ A C />`))
 
 .. step:: construct
 
-   :fn:`cut_equal_segment <G.21>`\ (:g:`/ B A / <g1:/ B A />`) → :g:`/ A D / <g1:/ A D />` (:eq:`equal <g1:/ A D / = g1:/ B A />`)
+   :fn:`perpendicular_at <G.34>`\ (:g:`/ A C / <g1:/ A C />`, :g:`A <g1:A>`) → :g:`/ A D / <g1:/ A D />` ⊥ :g:`/ A C / <g1:/ A C />`, :fn:`cut_equal_segment <G.21>`\ (:g:`/ B A / <g1:/ B A />`) → :g:`/ A D / <g1:/ A D />` (:eq:`= <g1:/ A D / = g1:/ B A />` :g:`/ B A / <g1:/ B A />`), :fn:`segment <G.14>`\ (:g:`D <g1:D>`, :g:`C <g1:C>`) → :g:`/ D C / <g1:/ D C />`
 
-.. step:: construct
+.. step:: assert ∵ add_equals <G.36>
 
-   :fn:`segment <G.14>`\ (:g:`D <g1:D>`, :g:`C <g1:C>`) → :g:`/ D C / <g1:/ D C />`
+   :g:`/ D A / <g1:/ D A />` :eq:`= <g1:/ D A / = g1:/ A B />` :g:`/ A B / <g1:/ A B />` → :fn:`square_on_segment <G.75>`\ (:g:`/ D A / <g1:/ D A />`) + :fn:`square_on_segment <G.75>`\ (:g:`/ A C / <g1:/ A C />`) = :fn:`square_on_segment <G.75>`\ (:g:`/ B A / <g1:/ B A />`) + :fn:`square_on_segment <G.75>`\ (:g:`/ A C / <g1:/ A C />`)
 
-.. step:: assert
+.. step:: assert ∵ pythagorean_theorem, equal_transitive <G.79, G.16>
 
-   :g:`/ D A / <g1:/ D A />` :eq:`= <g1:/ D A / = g1:/ A B />` :g:`/ A B / <g1:/ A B />`, the square on :g:`/ D A / <g1:/ D A />` is also equal to the square on :g:`/ A B / <g1:/ A B />`
-
-.. step:: construct
-
-   Let the square on :g:`/ A C / <g1:/ A C />` be added to each
-
-.. step:: assert
-
-   the squares on :g:`/ D A / <g1:/ D A />`, :g:`/ A C / <g1:/ A C />` are equal to the squares on :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />`
-
-.. step:: assert ∵ pythagorean_theorem <G.79>
-
-   The square on :g:`/ D C / <g1:/ D C />` is equal to the squares on :g:`/ D A / <g1:/ D A />`, :g:`/ A C / <g1:/ A C />`, for :g:`< D A C ) <g1:< D A C )>` is right
-
-.. step:: assert
-
-   the square on :g:`/ B C / <g1:/ B C />` is equal to the squares on :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />`, for this is the hypothesis
-
-.. step:: assert
-
-   the square on :g:`/ D C / <g1:/ D C />` is equal to the square on :g:`/ B C / <g1:/ B C />`, so that :g:`/ D C / <g1:/ D C />` :eq:`= <g1:/ D C / = g1:/ B C />` :g:`/ B C / <g1:/ B C />`
-
-.. step:: assert
-
-   since :g:`/ D A / <g1:/ D A />` :eq:`= <g1:/ D A / = g1:/ A B />` :g:`/ A B / <g1:/ A B />`, and :g:`/ A C / <g1:/ A C />` is common, :g:`/ D A / <g1:/ D A />`, :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ D A / = g1:/ B A />` :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />`
-
-.. step:: assert
-
-   :g:`/ D C / <g1:/ D C />` :eq:`= <g1:/ D C / = g1:/ B C />` :g:`/ B C / <g1:/ B C />`
+   :g:`< D A C ) <g1:< D A C )>` = ∟ → :fn:`square_on_segment <G.75>`\ (:g:`/ D C / <g1:/ D C />`) = :fn:`square_on_segment <G.75>`\ (:g:`/ D A / <g1:/ D A />`) + :fn:`square_on_segment <G.75>`\ (:g:`/ A C / <g1:/ A C />`) = :fn:`square_on_segment <G.75>`\ (:g:`/ B C / <g1:/ B C />`) → :g:`/ D C / <g1:/ D C />` :eq:`= <g1:/ D C / = g1:/ B C />` :g:`/ B C / <g1:/ B C />`
 
 .. step:: assert ∵ sss_congruence <G.29>
 
-   :g:`< D A C ) <g1:< D A C )>` :eq:`= <g1:< D A C ) = g1:< B A C )>` :g:`< B A C ) <g1:< B A C )>`
+   :g:`/ D A / <g1:/ D A />` :eq:`= <g1:/ D A / = g1:/ B A />` :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ A C />` :g:`/ A C / <g1:/ A C />`, :g:`/ D C / <g1:/ D C />` :eq:`= <g1:/ D C / = g1:/ B C />` :g:`/ B C / <g1:/ B C />` → :g:`< D A C ) <g1:< D A C )>` :eq:`= <g1:< D A C ) = g1:< B A C )>` :g:`< B A C ) <g1:< B A C )>`
 
-.. step:: assert
+.. step:: conclude ∵ equal_transitive <G.16>
 
-   :g:`< D A C ) <g1:< D A C )>` is right
-
-.. step:: conclude
-
-   :g:`< B A C ) <g1:< B A C )>` is also :eq:`right <g1:< B A C ) = g1:< D A C )>`
+   :g:`< D A C ) <g1:< D A C )>` = ∟, :g:`< B A C ) <g1:< B A C )>` :eq:`= <g1:< B A C ) = g1:< D A C )>` :g:`< D A C ) <g1:< D A C )>` → :g:`< B A C ) <g1:< B A C )>` = ∟
 
 Dependency Graph
 ----------------
@@ -314,6 +280,7 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.51" -> "G.14";
      "G.58" -> "G.14";
      "G.70" -> "G.14";
@@ -329,16 +296,23 @@ Dependency Graph
      "G.37" -> "G.16";
      "G.39" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.56" -> "G.16";
      "G.64" -> "G.16";
+     "G.66" -> "G.16";
+     "G.70" -> "G.16";
+     "G.75" -> "G.16";
+     "G.80" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
      "G.34" -> "G.17";
      "G.20" -> "G.18";
      "G.25" -> "G.18";
+     "G.39" -> "G.18";
      "G.41" -> "G.18";
      "G.45" -> "G.18";
+     "G.53" -> "G.18";
      "G.58" -> "G.18";
      "G.66" -> "G.18";
      "G.20" -> "G.19";
@@ -354,6 +328,7 @@ Dependency Graph
      "G.43" -> "G.21";
      "G.45" -> "G.21";
      "G.47" -> "G.21";
+     "G.51" -> "G.21";
      "G.75" -> "G.21";
      "G.80" -> "G.21";
      "G.24" -> "G.22";
@@ -397,11 +372,15 @@ Dependency Graph
      "G.64" -> "G.24";
      "G.79" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.28" -> "G.26";
+     "G.39" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.51" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -432,6 +411,7 @@ Dependency Graph
      "G.62" -> "G.36";
      "G.64" -> "G.36";
      "G.79" -> "G.36";
+     "G.80" -> "G.36";
      "G.39" -> "G.37";
      "G.40" -> "G.37";
      "G.56" -> "G.37";
@@ -481,6 +461,7 @@ Dependency Graph
      "G.70" -> "G.66";
      "G.79" -> "G.70";
      "G.79" -> "G.75";
+     "G.80" -> "G.75";
      "G.78" -> "G.76";
      "G.78" -> "G.77";
      "G.79" -> "G.78";
@@ -495,5 +476,6 @@ Required for
 .. toctree::
    :hidden:
 
+   video
    code
    heath

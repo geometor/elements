@@ -1,0 +1,69 @@
+WEBVTT
+
+1
+00:00:00.420 --> 00:00:02.593
+Book Four, Proposition Thirteen.
+
+2
+00:00:02.593 --> 00:00:08.026
+In a given pentagon, which is equilateral and equiangular, to inscribe a circle.
+
+3
+00:00:08.026 --> 00:00:16.650
+Let A B C D E be the given equilateral and equiangular pentagon; it is required to inscribe a circle in the pentagon A B C D E.
+
+4
+00:00:17.070 --> 00:00:29.238
+Bisect the adjacent angles B C D and C D E by the straight lines C F and D F, and from the point F where they meet, join F B, F A, and F E.
+
+5
+00:00:29.238 --> 00:00:38.080
+From F, draw F G, F H, F K, F L, and F M perpendicular to the five sides A B, B C, C D, D E, and E A.
+
+6
+00:00:38.500 --> 00:00:51.304
+Because B C equals C D, C F is common, and angle B C F equals angle D C F, by One Four triangles B C F and D C F are congruent, so angle C B F equals angle C D F.
+
+7
+00:00:51.304 --> 00:01:04.504
+Since angle A B C equals angle C D E, which is double angle C D F, angle A B C is also double angle C B F; thus F B—and similarly F A and F E—bisects its vertex angle.
+
+8
+00:01:04.504 --> 00:01:15.491
+Now in right triangles F H C and F K C, the angles at C are equal, the right angles at H and K are equal, and the hypotenuse F C is common.
+
+9
+00:01:15.491 --> 00:01:25.212
+By One Twenty-Six, F H equals F K, and by the same reasoning all five perpendiculars F G, F H, F K, F L, and F M are equal.
+
+10
+00:01:25.212 --> 00:01:37.385
+Therefore the circle described with center F and radius F G passes through G, H, K, L, and M, and by Three Sixteen touches all five sides at right angles.
+
+11
+00:01:37.385 --> 00:01:42.680
+Thus circle G H K L M has been inscribed in the pentagon A B C D E.
+
+12
+00:01:42.680 --> 00:01:44.340
+Which was to be done.
+
+13
+00:01:44.760 --> 00:01:51.318
+Proposition Four Thirteen generalizes the triangle incenter construction of Four Four to the regular pentagon.
+
+14
+00:01:51.318 --> 00:02:03.598
+As Augustus De Morgan observed, Euclid's proof works for any regular polygon: bisecting two adjacent angles determines the symmetry center F, and dropping perpendicular apothems yields the inscribed circle.
+
+15
+00:02:03.598 --> 00:02:15.760
+In the GEOMETOR G-Index, node G one hundred sixty-five combines Side-Angle-Side and Angle-Angle-Side triangle congruence with the tangent criterion of Three Sixteen, building on forty-five ancestor nodes.
+
+16
+00:02:16.180 --> 00:02:30.265
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Four Thirteen in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+17
+00:02:30.265 --> 00:02:37.180
+Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

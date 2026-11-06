@@ -1,0 +1,290 @@
+[
+  {
+    "bell": "proposition",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 47",
+        "g_id": "G.79",
+        "folio": "Folio 0363–0364 • p. 349",
+        "enunciation": "In right-angled triangles the square on the side subtending the right angle is equal to the squares on the sides containing the right angle.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0363.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0363.g1.png",
+        "step_num": 1,
+        "total_steps": 7,
+        "step_kind": "GIVEN",
+        "symbolic": "< A B C > (< B A C ) = ∟)",
+        "clause_html": "<span class=\"g-tok\">&lt; A B C &gt;</span> (<span class=\"g-tok\">&lt; B A C )</span> <span class=\"eq-tok\">=</span> ∟)",
+        "just_id": "GIVEN",
+        "just_title": "prove: < B D E C > = < G B > + < H C >",
+        "visible_ids": [
+          "el-tri-ABC",
+          "el-seg-BC", "el-seg-BA", "el-seg-AC",
+          "hl-tri-ABC", "hl-seg-BC", "hl-seg-BA", "hl-seg-AC",
+          "hl-ang-BAC", "hl-arc-BAC",
+          "el-pt-A", "el-pt-B", "el-pt-C",
+          "lbl-A", "lbl-B", "lbl-C"
+        ],
+        "active_ids": [
+          "hl-tri-ABC", "hl-seg-BC", "hl-seg-BA", "hl-seg-AC",
+          "el-pt-A", "el-pt-B", "el-pt-C",
+          "lbl-A", "lbl-B", "lbl-C"
+        ],
+        "equal_ids": [
+          "hl-ang-BAC", "hl-arc-BAC"
+        ]
+      }
+    ]
+  },
+  {
+    "bell": "construction",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 47",
+        "g_id": "G.79",
+        "folio": "Folio 0363–0364 • p. 349",
+        "enunciation": "In right-angled triangles the square on the side subtending the right angle is equal to the squares on the sides containing the right angle.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0363.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0363.g1.png",
+        "step_num": 2,
+        "total_steps": 7,
+        "step_kind": "CONSTRUCT",
+        "symbolic": "square_on_segment(/ B C /, / B A /, / A C /) → < B D E C >, < G B >, < H C >",
+        "clause_html": "<span class=\"fn-tok\">square_on_segment</span>(<span class=\"g-tok\">/ B C /</span>, <span class=\"g-tok\">/ B A /</span>, <span class=\"g-tok\">/ A C /</span>) → <span class=\"g-tok\">&lt; B D E C &gt;</span>, <span class=\"g-tok\">&lt; G B &gt;</span>, <span class=\"g-tok\">&lt; H C &gt;</span>",
+        "just_id": "G.75 • I.46",
+        "just_title": "square_on_segment",
+        "visible_ids": [
+          "el-tri-ABC", "el-sq-BDEC", "el-sq-BAGF", "el-sq-ACKH",
+          "el-seg-BC", "el-seg-BA", "el-seg-AC",
+          "el-seg-BD", "el-seg-DE", "el-seg-CE",
+          "el-seg-BF", "el-seg-FG", "el-seg-AG",
+          "el-seg-AH", "el-seg-HK", "el-seg-CK",
+          "hl-sq-BDEC", "hl-sq-BAGF", "hl-sq-ACKH",
+          "hl-seg-BD", "hl-seg-DE", "hl-seg-CE",
+          "hl-seg-BF", "hl-seg-FG", "hl-seg-AG",
+          "hl-seg-AH", "hl-seg-HK", "hl-seg-CK",
+          "hl-ang-BAC", "hl-arc-BAC",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E", "el-pt-F", "el-pt-G", "el-pt-H", "el-pt-K",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E", "lbl-F", "lbl-G", "lbl-H", "lbl-K"
+        ],
+        "active_ids": [
+          "hl-sq-BDEC", "hl-sq-BAGF", "hl-sq-ACKH",
+          "hl-seg-BD", "hl-seg-DE", "hl-seg-CE",
+          "hl-seg-BF", "hl-seg-FG", "hl-seg-AG",
+          "hl-seg-AH", "hl-seg-HK", "hl-seg-CK",
+          "el-pt-D", "el-pt-E", "el-pt-F", "el-pt-G", "el-pt-H", "el-pt-K",
+          "lbl-D", "lbl-E", "lbl-F", "lbl-G", "lbl-H", "lbl-K"
+        ],
+        "equal_ids": [
+          "hl-ang-BAC", "hl-arc-BAC"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 47",
+        "g_id": "G.79",
+        "folio": "Folio 0363–0364 • p. 349",
+        "enunciation": "In right-angled triangles the square on the side subtending the right angle is equal to the squares on the sides containing the right angle.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0363.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0363.g1.png",
+        "step_num": 3,
+        "total_steps": 7,
+        "step_kind": "CONSTRUCT",
+        "symbolic": "parallel_line(A, / B D /) → / A L / ∥ / B D /, segment(A, D; F, C; A, E; B, K) → / A D /, / F C /, / A E /, / B K /",
+        "clause_html": "<span class=\"fn-tok\">parallel_line</span>(<span class=\"g-tok\">A</span>, <span class=\"g-tok\">/ B D /</span>) → <span class=\"g-tok\">/ A L /</span> ∥ <span class=\"g-tok\">/ B D /</span>, <span class=\"fn-tok\">segment</span>(<span class=\"g-tok\">A</span>, <span class=\"g-tok\">D</span>; <span class=\"g-tok\">F</span>, <span class=\"g-tok\">C</span>; <span class=\"g-tok\">A</span>, <span class=\"g-tok\">E</span>; <span class=\"g-tok\">B</span>, <span class=\"g-tok\">K</span>) → <span class=\"g-tok\">/ A D /</span>, <span class=\"g-tok\">/ F C /</span>, <span class=\"g-tok\">/ A E /</span>, <span class=\"g-tok\">/ B K /</span>",
+        "just_id": "G.58 • I.31, G.14 • I.Post.1",
+        "just_title": "parallel_line",
+        "visible_ids": [
+          "el-line-AL",
+          "el-tri-ABC", "el-sq-BDEC", "el-sq-BAGF", "el-sq-ACKH",
+          "el-rect-BDLM", "el-rect-CELM",
+          "el-seg-BC", "el-seg-BA", "el-seg-AC",
+          "el-seg-BD", "el-seg-DE", "el-seg-CE",
+          "el-seg-BF", "el-seg-FG", "el-seg-AG",
+          "el-seg-AH", "el-seg-HK", "el-seg-CK",
+          "el-seg-AL", "el-seg-AD", "el-seg-FC", "el-seg-AE", "el-seg-BK",
+          "hl-seg-AL", "hl-seg-AD", "hl-seg-FC", "hl-seg-AE", "hl-seg-BK",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E", "el-pt-L", "el-pt-M", "el-pt-F", "el-pt-G", "el-pt-H", "el-pt-K",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E", "lbl-L", "lbl-F", "lbl-G", "lbl-H", "lbl-K"
+        ],
+        "active_ids": [
+          "hl-seg-AL", "hl-seg-AD", "hl-seg-FC", "hl-seg-AE", "hl-seg-BK",
+          "el-pt-A", "el-pt-L", "el-pt-M", "el-pt-D", "el-pt-F", "el-pt-C", "el-pt-E", "el-pt-B", "el-pt-K",
+          "lbl-A", "lbl-L", "lbl-D", "lbl-F", "lbl-C", "lbl-E", "lbl-B", "lbl-K"
+        ],
+        "equal_ids": []
+      }
+    ]
+  },
+  {
+    "bell": "insight",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 47",
+        "g_id": "G.79",
+        "folio": "Folio 0363–0364 • p. 349",
+        "enunciation": "In right-angled triangles the square on the side subtending the right angle is equal to the squares on the sides containing the right angle.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0363.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0363.g1.png",
+        "step_num": 4,
+        "total_steps": 7,
+        "step_kind": "ASSERT",
+        "symbolic": "< B A C ) + < B A G ) = 2∟ → / C A /, / A G / ∈ [ C G ], / B A /, / A H / ∈ [ B H ]",
+        "clause_html": "<span class=\"g-tok\">&lt; B A C )</span> + <span class=\"g-tok\">&lt; B A G )</span> <span class=\"eq-tok\">=</span> 2∟ → <span class=\"g-tok\">/ C A /</span>, <span class=\"g-tok\">/ A G /</span> ∈ <span class=\"g-tok\">[ C G ]</span>, <span class=\"g-tok\">/ B A /</span>, <span class=\"g-tok\">/ A H /</span> ∈ <span class=\"g-tok\">[ B H ]</span>",
+        "just_id": "G.39 • I.14",
+        "just_title": "supplementary_angles_collinear",
+        "visible_ids": [
+          "el-line-AL", "el-line-CAG", "el-line-BAH",
+          "el-tri-ABC", "el-sq-BDEC", "el-sq-BAGF", "el-sq-ACKH",
+          "el-seg-BC", "el-seg-BA", "el-seg-AC",
+          "el-seg-BD", "el-seg-DE", "el-seg-CE",
+          "el-seg-BF", "el-seg-FG", "el-seg-AG", "el-seg-GC",
+          "el-seg-AH", "el-seg-BH", "el-seg-HK", "el-seg-CK",
+          "el-seg-AL", "el-seg-AD", "el-seg-FC",
+          "hl-seg-GC", "hl-seg-BH",
+          "hl-ang-BAC", "hl-ang-BAG", "hl-ang-CAH",
+          "hl-arc-BAC", "hl-arc-BAG", "hl-arc-CAH",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E", "el-pt-L", "el-pt-M", "el-pt-F", "el-pt-G", "el-pt-H", "el-pt-K",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E", "lbl-L", "lbl-F", "lbl-G", "lbl-H", "lbl-K"
+        ],
+        "active_ids": [
+          "hl-seg-GC", "hl-seg-BH",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-G", "el-pt-H",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-G", "lbl-H"
+        ],
+        "equal_ids": [
+          "hl-ang-BAC", "hl-ang-BAG", "hl-ang-CAH",
+          "hl-arc-BAC", "hl-arc-BAG", "hl-arc-CAH"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 47",
+        "g_id": "G.79",
+        "folio": "Folio 0363–0364 • p. 350",
+        "enunciation": "In right-angled triangles the square on the side subtending the right angle is equal to the squares on the sides containing the right angle.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0363.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0363.g1.png",
+        "step_num": 5,
+        "total_steps": 7,
+        "step_kind": "ASSERT",
+        "symbolic": "/ D B / = / B C /, / F B / = / B A /, < D B A ) = < F B C ) → < A B D > = < F B C >",
+        "clause_html": "<span class=\"g-tok\">/ D B /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ B C /</span>, <span class=\"g-tok\">/ F B /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ B A /</span>, <span class=\"g-tok\">&lt; D B A )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; F B C )</span> → <span class=\"g-tok\">&lt; A B D &gt;</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; F B C &gt;</span>",
+        "just_id": "G.36 • I.C.N.2, G.24 • I.4",
+        "just_title": "sas_congruence",
+        "visible_ids": [
+          "el-line-AL", "el-line-CAG", "el-line-BAH",
+          "el-tri-ABC", "el-tri-ABD", "el-tri-FBC",
+          "el-sq-BDEC", "el-sq-BAGF", "el-sq-ACKH",
+          "el-seg-BC", "el-seg-BA", "el-seg-AC",
+          "el-seg-BD", "el-seg-DE", "el-seg-CE",
+          "el-seg-BF", "el-seg-FG", "el-seg-AG",
+          "el-seg-AH", "el-seg-HK", "el-seg-CK",
+          "el-seg-AL", "el-seg-AD", "el-seg-FC",
+          "hl-tri-ABD", "hl-tri-FBC",
+          "hl-seg-BD", "hl-seg-BC", "hl-seg-BF", "hl-seg-BA", "hl-seg-AD", "hl-seg-FC",
+          "hl-ang-DBA", "hl-ang-FBC", "hl-arc-DBA", "hl-arc-FBC",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E", "el-pt-L", "el-pt-M", "el-pt-F", "el-pt-G", "el-pt-H", "el-pt-K",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E", "lbl-L", "lbl-F", "lbl-G", "lbl-H", "lbl-K"
+        ],
+        "active_ids": [
+          "hl-seg-AD", "hl-seg-FC",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-F",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-F"
+        ],
+        "equal_ids": [
+          "hl-tri-ABD", "hl-tri-FBC",
+          "hl-seg-BD", "hl-seg-BC", "hl-seg-BF", "hl-seg-BA",
+          "hl-ang-DBA", "hl-ang-FBC", "hl-arc-DBA", "hl-arc-FBC"
+        ],
+        "tick_ids": [
+          "hl-seg-BD", "hl-seg-BC"
+        ],
+        "tick_2_ids": [
+          "hl-seg-BF", "hl-seg-BA"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 47",
+        "g_id": "G.79",
+        "folio": "Folio 0363–0364 • p. 350",
+        "enunciation": "In right-angled triangles the square on the side subtending the right angle is equal to the squares on the sides containing the right angle.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0363.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0363.g1.png",
+        "step_num": 6,
+        "total_steps": 7,
+        "step_kind": "ASSERT",
+        "symbolic": "< B L > = 2 < A B D >, < G B > = 2 < F B C > → < B L > = < G B >, < C L > = < H C >",
+        "clause_html": "<span class=\"g-tok\">&lt; B L &gt;</span> <span class=\"eq-tok\">=</span> 2 <span class=\"g-tok\">&lt; A B D &gt;</span>, <span class=\"g-tok\">&lt; G B &gt;</span> <span class=\"eq-tok\">=</span> 2 <span class=\"g-tok\">&lt; F B C &gt;</span> → <span class=\"g-tok\">&lt; B L &gt;</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; G B &gt;</span>, <span class=\"g-tok\">&lt; C L &gt;</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; H C &gt;</span>",
+        "just_id": "G.70 • I.41",
+        "just_title": "parallelogram_double_triangle",
+        "visible_ids": [
+          "el-line-AL", "el-line-CAG", "el-line-BAH",
+          "el-tri-ABC", "el-tri-ABD", "el-tri-FBC", "el-tri-ACE", "el-tri-KCB",
+          "el-sq-BDEC", "el-sq-BAGF", "el-sq-ACKH",
+          "el-rect-BDLM", "el-rect-CELM",
+          "el-seg-BC", "el-seg-BA", "el-seg-AC",
+          "el-seg-BD", "el-seg-DE", "el-seg-CE",
+          "el-seg-BF", "el-seg-FG", "el-seg-AG", "el-seg-GC",
+          "el-seg-AH", "el-seg-BH", "el-seg-HK", "el-seg-CK",
+          "el-seg-AL", "el-seg-AD", "el-seg-FC", "el-seg-AE", "el-seg-BK",
+          "hl-rect-BDLM", "hl-sq-BAGF", "hl-rect-CELM", "hl-sq-ACKH",
+          "hl-seg-BD", "hl-seg-AL", "hl-seg-BF", "hl-seg-GC",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E", "el-pt-L", "el-pt-M", "el-pt-F", "el-pt-G", "el-pt-H", "el-pt-K",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E", "lbl-L", "lbl-F", "lbl-G", "lbl-H", "lbl-K"
+        ],
+        "active_ids": [
+          "hl-rect-CELM", "hl-sq-ACKH",
+          "el-pt-A", "el-pt-C", "el-pt-E", "el-pt-L", "el-pt-H", "el-pt-K",
+          "lbl-A", "lbl-C", "lbl-E", "lbl-L", "lbl-H", "lbl-K"
+        ],
+        "equal_ids": [
+          "hl-rect-BDLM", "hl-sq-BAGF",
+          "hl-seg-BD", "hl-seg-AL", "hl-seg-BF", "hl-seg-GC"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 47",
+        "g_id": "G.79",
+        "folio": "Folio 0363–0364 • p. 350",
+        "enunciation": "In right-angled triangles the square on the side subtending the right angle is equal to the squares on the sides containing the right angle.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0363.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0363.g1.png",
+        "step_num": 7,
+        "total_steps": 7,
+        "step_kind": "∴",
+        "symbolic": "< B D E C > = < G B > + < H C >",
+        "clause_html": "<span class=\"g-tok\">&lt; B D E C &gt;</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; G B &gt;</span> + <span class=\"g-tok\">&lt; H C &gt;</span>",
+        "just_id": "G.36 • I.C.N.2",
+        "just_title": "add_equals",
+        "visible_ids": [
+          "el-line-AL", "el-line-CAG", "el-line-BAH",
+          "el-tri-ABC", "el-sq-BDEC", "el-sq-BAGF", "el-sq-ACKH",
+          "el-seg-BC", "el-seg-BA", "el-seg-AC",
+          "el-seg-BD", "el-seg-DE", "el-seg-CE",
+          "el-seg-BF", "el-seg-FG", "el-seg-AG",
+          "el-seg-AH", "el-seg-HK", "el-seg-CK",
+          "el-seg-AL", "el-seg-AD", "el-seg-FC", "el-seg-AE", "el-seg-BK",
+          "hl-tri-ABC", "hl-sq-BDEC", "hl-sq-BAGF", "hl-sq-ACKH",
+          "hl-seg-BC", "hl-seg-BA", "hl-seg-AC",
+          "hl-ang-BAC", "hl-arc-BAC",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E", "el-pt-L", "el-pt-M", "el-pt-F", "el-pt-G", "el-pt-H", "el-pt-K",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E", "lbl-L", "lbl-F", "lbl-G", "lbl-H", "lbl-K"
+        ],
+        "active_ids": [
+          "hl-tri-ABC", "hl-ang-BAC", "hl-arc-BAC",
+          "hl-seg-BC", "hl-seg-BA", "hl-seg-AC",
+          "el-pt-A", "el-pt-B", "el-pt-C",
+          "lbl-A", "lbl-B", "lbl-C"
+        ],
+        "equal_ids": [
+          "hl-sq-BDEC", "hl-sq-BAGF", "hl-sq-ACKH"
+        ]
+      }
+    ]
+  }
+]

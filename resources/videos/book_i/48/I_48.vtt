@@ -1,0 +1,45 @@
+WEBVTT
+
+1
+00:00:00.420 --> 00:00:03.673
+Euclid's Elements, Book One, Proposition Forty-Eight.
+
+2
+00:00:03.673 --> 00:00:12.390
+If the square on one side of a triangle equals the sum of the squares on the other two sides, the angle contained by those two sides is right.
+
+3
+00:00:12.390 --> 00:00:18.651
+In triangle A B C, let the square on segment B C equal the sum of the squares on segments B A and A C.
+
+4
+00:00:18.651 --> 00:00:21.290
+We prove that angle B A C is a right angle.
+
+5
+00:00:21.710 --> 00:00:27.491
+By Proposition Eleven, from point A draw segment A D at right angles to segment A C.
+
+6
+00:00:27.491 --> 00:00:35.680
+By Proposition Three, make segment A D equal to segment B A, and join segment D C, forming right-angled triangle A D C.
+
+7
+00:00:36.100 --> 00:00:49.391
+Since segment D A equals segment A B, the square on D A equals the square on A B; adding the square on A C to each, the squares on D A and A C equal the squares on B A and A C.
+
+8
+00:00:49.391 --> 00:01:03.210
+Because angle D A C is right, by Proposition Forty-Seven, the square on D C equals the squares on D A and A C, while by hypothesis the square on B C equals the squares on B A and A C.
+
+9
+00:01:03.210 --> 00:01:09.025
+Thus the square on D C equals the square on B C, so side D C equals side B C.
+
+10
+00:01:09.025 --> 00:01:19.219
+Since side D A equals side A B, side A C is common, and base D C equals base B C, by Proposition Eight, angle D A C equals angle B A C.
+
+11
+00:01:19.219 --> 00:01:26.620
+Because angle D A C is a right angle, angle B A C is also a right angle, as was required to prove.

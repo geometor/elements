@@ -1,0 +1,206 @@
+[
+  {
+    "bell": "proposition",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 43",
+        "g_id": "G.72",
+        "folio": "Folio 0354–0355 • p. 340",
+        "title": "complements of parallelograms about the diagonal are equal",
+        "enunciation": "In any parallelogram the complements of the parallelograms about the diameter are equal to one another.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0354.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0354.g1.png",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0354.g1.png",
+        "step_num": 1,
+        "total_steps": 5,
+        "step_kind": "GIVEN",
+        "symbolic": "< A B C D >, / A C /, < A E K H >, < K F C G >, < E B F K >, < H K G D >",
+        "clause_html": "<span class=\"g-tok\">&lt; A B C D &gt;</span>, <span class=\"g-tok\">/ A C /</span>, <span class=\"g-tok\">&lt; A E K H &gt;</span>, <span class=\"g-tok\">&lt; K F C G &gt;</span>, <span class=\"g-tok\">&lt; E B F K &gt;</span>, <span class=\"g-tok\">&lt; H K G D &gt;</span>",
+        "just_id": "GIVEN",
+        "just_title": "prove: < E B F K > = < H K G D >",
+        "visible_ids": [
+          "el-poly-ABCD", "el-poly-AEKH", "el-poly-KFCG", "el-poly-EBFK", "el-poly-HKGD",
+          "el-seg-AD", "el-seg-AH", "el-seg-HD",
+          "el-seg-BC", "el-seg-BF", "el-seg-FC",
+          "el-seg-AB", "el-seg-AE", "el-seg-EB",
+          "el-seg-DC", "el-seg-DG", "el-seg-GC",
+          "el-seg-AC", "el-seg-AK", "el-seg-KC",
+          "el-seg-EG", "el-seg-EK", "el-seg-KG",
+          "el-seg-HF", "el-seg-HK", "el-seg-KF",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E", "el-pt-F", "el-pt-G", "el-pt-H", "el-pt-K",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E", "lbl-F", "lbl-G", "lbl-H", "lbl-K"
+        ],
+        "active_ids": [
+          "hl-poly-EBFK", "hl-poly-HKGD", "hl-seg-AC",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E", "el-pt-F", "el-pt-G", "el-pt-H", "el-pt-K",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E", "lbl-F", "lbl-G", "lbl-H", "lbl-K"
+        ],
+        "equal_ids": []
+      }
+    ]
+  },
+  {
+    "bell": "construction",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 43",
+        "g_id": "G.72",
+        "folio": "Folio 0354–0355 • p. 340",
+        "title": "complements of parallelograms about the diagonal are equal",
+        "enunciation": "In any parallelogram the complements of the parallelograms about the diameter are equal to one another.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0354.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0354.g1.png",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0354.g1.png",
+        "step_num": 2,
+        "total_steps": 5,
+        "step_kind": "ASSERT",
+        "symbolic": "< A B C D >, / A C / → < A B C > = < A C D >",
+        "clause_html": "<span class=\"g-tok\">&lt; A B C D &gt;</span>, <span class=\"g-tok\">/ A C /</span> → <span class=\"g-tok\">&lt; A B C &gt;</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; A C D &gt;</span>",
+        "just_id": "G.62 • I.34",
+        "just_title": "parallelogram_properties",
+        "visible_ids": [
+          "el-poly-ABCD", "el-poly-ABC", "el-poly-ACD",
+          "el-seg-AD", "el-seg-AH", "el-seg-HD",
+          "el-seg-BC", "el-seg-BF", "el-seg-FC",
+          "el-seg-AB", "el-seg-AE", "el-seg-EB",
+          "el-seg-DC", "el-seg-DG", "el-seg-GC",
+          "el-seg-AC", "el-seg-AK", "el-seg-KC",
+          "el-seg-EG", "el-seg-EK", "el-seg-KG",
+          "el-seg-HF", "el-seg-HK", "el-seg-KF",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E", "el-pt-F", "el-pt-G", "el-pt-H", "el-pt-K",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E", "lbl-F", "lbl-G", "lbl-H", "lbl-K"
+        ],
+        "active_ids": [
+          "hl-seg-AC",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D"
+        ],
+        "equal_ids": [
+          "hl-poly-ABC", "hl-poly-ACD"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 43",
+        "g_id": "G.72",
+        "folio": "Folio 0354–0355 • p. 340",
+        "title": "complements of parallelograms about the diagonal are equal",
+        "enunciation": "In any parallelogram the complements of the parallelograms about the diameter are equal to one another.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0354.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0354.g1.png",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0354.g1.png",
+        "step_num": 3,
+        "total_steps": 5,
+        "step_kind": "ASSERT",
+        "symbolic": "< A E K H >, < K F C G > → < A E K > = < A H K >, < K F C > = < K G C >",
+        "clause_html": "<span class=\"g-tok\">&lt; A E K H &gt;</span>, <span class=\"g-tok\">&lt; K F C G &gt;</span> → <span class=\"g-tok\">&lt; A E K &gt;</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; A H K &gt;</span>, <span class=\"g-tok\">&lt; K F C &gt;</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; K G C &gt;</span>",
+        "just_id": "G.62 • I.34",
+        "just_title": "parallelogram_properties",
+        "visible_ids": [
+          "el-poly-ABCD", "el-poly-AEKH", "el-poly-KFCG",
+          "el-poly-AEK", "el-poly-AHK", "el-poly-KFC", "el-poly-KGC",
+          "el-seg-AD", "el-seg-AH", "el-seg-HD",
+          "el-seg-BC", "el-seg-BF", "el-seg-FC",
+          "el-seg-AB", "el-seg-AE", "el-seg-EB",
+          "el-seg-DC", "el-seg-DG", "el-seg-GC",
+          "el-seg-AC", "el-seg-AK", "el-seg-KC",
+          "el-seg-EG", "el-seg-EK", "el-seg-KG",
+          "el-seg-HF", "el-seg-HK", "el-seg-KF",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E", "el-pt-F", "el-pt-G", "el-pt-H", "el-pt-K",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E", "lbl-F", "lbl-G", "lbl-H", "lbl-K"
+        ],
+        "active_ids": [
+          "hl-seg-AK", "hl-seg-KC",
+          "el-pt-A", "el-pt-E", "el-pt-H", "el-pt-K", "el-pt-F", "el-pt-G", "el-pt-C",
+          "lbl-A", "lbl-E", "lbl-H", "lbl-K", "lbl-F", "lbl-G", "lbl-C"
+        ],
+        "equal_ids": [
+          "hl-poly-AEK", "hl-poly-AHK", "hl-poly-KFC", "hl-poly-KGC"
+        ]
+      }
+    ]
+  },
+  {
+    "bell": "insight",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 43",
+        "g_id": "G.72",
+        "folio": "Folio 0354–0355 • p. 340",
+        "title": "complements of parallelograms about the diagonal are equal",
+        "enunciation": "In any parallelogram the complements of the parallelograms about the diameter are equal to one another.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0354.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0354.g1.png",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0354.g1.png",
+        "step_num": 4,
+        "total_steps": 5,
+        "step_kind": "ASSERT",
+        "symbolic": "< A E K > = < A H K >, < K F C > = < K G C > → < A E K > + < K F C > = < A H K > + < K G C >",
+        "clause_html": "<span class=\"g-tok\">&lt; A E K &gt;</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; A H K &gt;</span>, <span class=\"g-tok\">&lt; K F C &gt;</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; K G C &gt;</span> → <span class=\"g-tok\">&lt; A E K &gt;</span> + <span class=\"g-tok\">&lt; K F C &gt;</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; A H K &gt;</span> + <span class=\"g-tok\">&lt; K G C &gt;</span>",
+        "just_id": "G.36 • I.C.N.2",
+        "just_title": "add_equals",
+        "visible_ids": [
+          "el-poly-ABCD", "el-poly-AEK", "el-poly-AHK", "el-poly-KFC", "el-poly-KGC",
+          "el-seg-AD", "el-seg-AH", "el-seg-HD",
+          "el-seg-BC", "el-seg-BF", "el-seg-FC",
+          "el-seg-AB", "el-seg-AE", "el-seg-EB",
+          "el-seg-DC", "el-seg-DG", "el-seg-GC",
+          "el-seg-AC", "el-seg-AK", "el-seg-KC",
+          "el-seg-EG", "el-seg-EK", "el-seg-KG",
+          "el-seg-HF", "el-seg-HK", "el-seg-KF",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E", "el-pt-F", "el-pt-G", "el-pt-H", "el-pt-K",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E", "lbl-F", "lbl-G", "lbl-H", "lbl-K"
+        ],
+        "active_ids": [
+          "hl-poly-AEK", "hl-poly-KFC",
+          "el-pt-A", "el-pt-E", "el-pt-K", "el-pt-F", "el-pt-C",
+          "lbl-A", "lbl-E", "lbl-K", "lbl-F", "lbl-C"
+        ],
+        "equal_ids": [
+          "hl-poly-AHK", "hl-poly-KGC"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 43",
+        "g_id": "G.72",
+        "folio": "Folio 0354–0355 • p. 340",
+        "title": "complements of parallelograms about the diagonal are equal",
+        "enunciation": "In any parallelogram the complements of the parallelograms about the diameter are equal to one another.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0354.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0354.g1.png",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0354.g1.png",
+        "step_num": 5,
+        "total_steps": 5,
+        "step_kind": "∴",
+        "symbolic": "< A B C > = < A C D > → < E B F K > = < H K G D >",
+        "clause_html": "<span class=\"g-tok\">&lt; A B C &gt;</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; A C D &gt;</span> → <span class=\"g-tok\">&lt; E B F K &gt;</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; H K G D &gt;</span>",
+        "just_id": "G.19 • I.C.N.3",
+        "just_title": "subtract_equals",
+        "visible_ids": [
+          "el-poly-ABCD", "el-poly-AEKH", "el-poly-KFCG", "el-poly-EBFK", "el-poly-HKGD",
+          "el-seg-AD", "el-seg-AH", "el-seg-HD",
+          "el-seg-BC", "el-seg-BF", "el-seg-FC",
+          "el-seg-AB", "el-seg-AE", "el-seg-EB",
+          "el-seg-DC", "el-seg-DG", "el-seg-GC",
+          "el-seg-AC", "el-seg-AK", "el-seg-KC",
+          "el-seg-EG", "el-seg-EK", "el-seg-KG",
+          "el-seg-HF", "el-seg-HK", "el-seg-KF",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E", "el-pt-F", "el-pt-G", "el-pt-H", "el-pt-K",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E", "lbl-F", "lbl-G", "lbl-H", "lbl-K"
+        ],
+        "active_ids": [
+          "hl-poly-ABCD", "hl-seg-AC",
+          "el-pt-A", "el-pt-B", "el-pt-C", "el-pt-D", "el-pt-E", "el-pt-F", "el-pt-G", "el-pt-H", "el-pt-K",
+          "lbl-A", "lbl-B", "lbl-C", "lbl-D", "lbl-E", "lbl-F", "lbl-G", "lbl-H", "lbl-K"
+        ],
+        "equal_ids": [
+          "hl-poly-EBFK", "hl-poly-HKGD"
+        ]
+      }
+    ]
+  }
+]

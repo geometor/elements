@@ -1,0 +1,19 @@
+[bell:proposition]
+[style: brisk, clear, architectural voice; steady studio cadence]
+Book Two, Proposition Five. If a segment be cut into equal and unequal segments, the rectangle contained by the unequal segments of the whole together with the square on the segment between the points of section is equal to the square on the half. <pause> Let the segment A B be cut into equal segments at C and into unequal segments at D.
+
+[bell:construction]
+[style: methodical, precise constructive cadence]
+On the half C B, describe the square C E F B by One Forty-Six, and join the diagonal B E. <pause> Through D, draw D G parallel to C E or B F by One Thirty-One, meeting B E at H; through H, draw K M parallel to A B or E F; and through A, draw A K parallel to C L or B M.
+
+[bell:insight]
+[style: luminous, deductive geometric clarity]
+By One Forty-Three, the complement C H equals the complement H F. Adding the square D M to each, the whole C M equals the whole D F. And since A C equals C B, parallelogram A L equals C M by One Thirty-Six, and therefore A L equals D F. <pause> Adding C H to each, the whole rectangle A H equals the gnomon N O P. Because D H equals D B, A H is the rectangle contained by A D and D B, so the gnomon N O P equals the rectangle contained by A D and D B. <pause> Now add L G, which is the square on C D, to each. Together, the gnomon N O P and L G compose the whole square C E F B on C B. Therefore, the rectangle contained by A D and D B together with the square on C D equals the square on C B. Which was to be proved.
+
+[bell:system]
+[style: reflective, scholarly, architectural synthesis]
+Proposition Two Five is the geometric engine for completing the square and the difference of two squares: x y plus the square of a over two minus y equals the square of a over two. By folding the rectangle A H into the L-shaped gnomon N O P inside the square on the half, Euclid solves the quadratic equation a x minus x squared equals b squared, and proves that among all rectangles of a given perimeter, the square has the maximum area. <pause> In the GEOMETOR G-Index, node G eighty-seven synthesizes ten direct rules across fifty ancestor nodes, driving fifty-seven downstream theorems across Books Two, Three, Ten, and Thirteen.
+
+[bell:resolve]
+[style: warm, inviting, resonant studio close]
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Two Five in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

@@ -10,8 +10,9 @@
 :categories: problem, construction, plane-geometry
 :category: problem, construction, plane-geometry
 :tags: book-i, point, segment, angle, triangle, quadrilateral, rectilineal-angle, trilateral, straight-line, plane-angle, parallel-straight-lines, parallelogram, equality
-:dependencies: G.1, G.4, G.12, G.14, G.22, G.30, G.48, G.52, G.58, G.67, G.70
+:dependencies: G.1, G.4, G.12, G.14, G.16, G.22, G.30, G.32, G.48, G.52, G.58, G.67, G.70
 :excerpt: Construct, in a given angle, a parallelogram equal in area to a given triangle.
+:youtube_id: s7alGYVX1pI
 
 .. _G.71:
 .. _I.42:
@@ -27,9 +28,9 @@ G.71 construct a parallelogram equal to a triangle
 
 .. signature:: problem
 
-   | :fn:`parallelogram_from_triangle <G.71>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`< D ) <g1:< D )>`) → :g:`< C E F ) <g1:< C E F )>`
+   | :fn:`parallelogram_from_triangle <G.71>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`< D ) <g1:< D )>`) → :g:`< F E C G > <g1:< F E C G >>`
    | **given** :g:`< A B C > <g1:< A B C >>`, :g:`< D ) <g1:< D )>`
-   | **construct** construct in :g:`< D ) <g1:< D )>` a parallelogram :eq:`equal <g1:< F E C G > = g1:< A B C >>` to :g:`< A B C > <g1:< A B C >>`
+   | **construct** :g:`< F E C G > <g1:< F E C G >>` (:g:`< F E C G > <g1:< F E C G >>` :eq:`= <g1:< F E C G > = g1:< A B C >>` :g:`< A B C > <g1:< A B C >>`, :g:`< C E F ) <g1:< C E F )>` :eq:`= <g1:< C E F ) = g1:< D )>` :g:`< D ) <g1:< D )>`)
 
 .. picture:: g1.svg
    :alt: Folio 0353 Figure 2 - Proposition 42
@@ -40,43 +41,27 @@ G.71 construct a parallelogram equal to a triangle
 
 .. step:: construct
 
-   :fn:`segment <G.14>`\ (:g:`B <g1:B>`, :g:`C <g1:C>`) → :g:`/ B C / <g1:/ B C />`, :fn:`segment <G.14>`\ () → :g:`E <g1:E>`, :fn:`segment <G.14>`\ (:g:`A <g1:A>`, :g:`E <g1:E>`) → :g:`/ A E / <g1:/ A E />`
+   :fn:`bisect_segment <G.32>`\ (:g:`/ B C / <g1:/ B C />`) → :g:`E <g1:E>` (:g:`/ B E / <g1:/ B E />` :eq:`= <g1:/ B E / = g1:/ E C />` :g:`/ E C / <g1:/ E C />`), :fn:`segment <G.14>`\ (:g:`A <g1:A>`, :g:`E <g1:E>`) → :g:`/ A E / <g1:/ A E />`
 
 .. step:: construct
 
-   :fn:`copy_angle <G.48>`\ (:g:`/ E C / <g1:/ E C />`, :g:`E <g1:E>`, :g:`< D ) <g1:< D )>`) → :g:`< C E F ) <g1:< C E F )>` (:eq:`equal <g1:< C E F ) = g1:< D )>`)
+   :fn:`copy_angle <G.48>`\ (:g:`/ E C / <g1:/ E C />`, :g:`E <g1:E>`, :g:`< D ) <g1:< D )>`) → :g:`< C E F ) <g1:< C E F )>` (:g:`< C E F ) <g1:< C E F )>` :eq:`= <g1:< C E F ) = g1:< D )>` :g:`< D ) <g1:< D )>`)
 
 .. step:: construct
 
-   :fn:`parallel_line <G.58>`\ (:g:`A <g1:A>`, :g:`/ E C / <g1:/ E C />`) → :g:`/ A G / <g1:/ A G />`
-
-.. step:: construct
-
-   :fn:`parallel_line <G.58>`\ (:g:`C <g1:C>`, :g:`/ E F / <g1:/ E F />`) → :g:`/ C G / <g1:/ C G />`
-
-.. step:: assert
-
-   Then :g:`< F E C G > <g1:< F E C G >>` is a parallelogram
+   :fn:`parallel_line <G.58>`\ (:g:`A <g1:A>`, :g:`/ E C / <g1:/ E C />`) → :g:`/ A G / <g1:/ A G />`, :fn:`parallel_line <G.58>`\ (:g:`C <g1:C>`, :g:`/ E F / <g1:/ E F />`) → :g:`/ C G / <g1:/ C G />` → :g:`< F E C G > <g1:< F E C G >>`
 
 .. step:: assert ∵ triangles_equal_bases <G.67>
 
-   since :g:`/ B E / <g1:/ B E />` :eq:`= <g1:/ B E / = g1:/ E C />` :g:`/ E C / <g1:/ E C />`, :g:`< A B E > <g1:< A B E >>` is also :eq:`equal <g1:< A B E > = g1:< A E C >>` to :g:`< A E C > <g1:< A E C >>`, for they are on :eq:`= <g1:/ B E / = g1:/ E C />` bases :g:`/ B E / <g1:/ B E />`, :g:`/ E C / <g1:/ E C />` and in the same :term:`parallels <G.52>` :g:`/ B C / <g1:/ B C />`, :g:`/ A G / <g1:/ A G />`
-
-.. step:: assert
-
-   :g:`< A B C > <g1:< A B C >>` is double of :g:`< A E C > <g1:< A E C >>`
+   :g:`/ B E / <g1:/ B E />` :eq:`= <g1:/ B E / = g1:/ E C />` :g:`/ E C / <g1:/ E C />`, :g:`/ B C / <g1:/ B C />` ∥ :g:`/ A G / <g1:/ A G />` → :g:`< A B E > <g1:< A B E >>` :eq:`= <g1:< A B E > = g1:< A E C >>` :g:`< A E C > <g1:< A E C >>` → :g:`< A B C > <g1:< A B C >>` :eq:`= <g1:< A B E > = g1:< A E C >>` 2 :g:`< A E C > <g1:< A E C >>`
 
 .. step:: assert ∵ parallelogram_double_triangle <G.70>
 
-   The parallelogram :g:`< F E C G > <g1:< F E C G >>` is also double of :g:`< A E C > <g1:< A E C >>`, for it has the same base with it and is in the same parallels with it
+   :g:`/ E C / <g1:/ E C />` ∥ :g:`/ A G / <g1:/ A G />` → :g:`< F E C G > <g1:< F E C G >>` :eq:`= <g1:< F E C G > = g1:< A E C >>` 2 :g:`< A E C > <g1:< A E C >>`
 
-.. step:: assert
+.. step:: conclude ∵ equal_transitive <G.16>
 
-   the parallelogram :g:`< F E C G > <g1:< F E C G >>` is :eq:`equal <g1:< F E C G > = g1:< A B C >>` to :g:`< A B C > <g1:< A B C >>`
-
-.. step:: conclude
-
-   It has :g:`< C E F ) <g1:< C E F )>` :eq:`= <g1:< C E F ) = g1:< D )>` to the given angle :g:`< D ) <g1:< D )>`
+   :g:`< F E C G > <g1:< F E C G >>` :eq:`= <g1:< F E C G > = g1:< A B C >>` :g:`< A B C > <g1:< A B C >>`, :g:`< C E F ) <g1:< C E F )>` :eq:`= <g1:< C E F ) = g1:< D )>` :g:`< D ) <g1:< D )>`
 
 Dependency Graph
 ----------------
@@ -188,7 +173,6 @@ Dependency Graph
      "G.55" -> "G.2";
      "G.56" -> "G.2";
      "G.58" -> "G.2";
-     "G.65" -> "G.2";
      "G.4" -> "G.3";
      "G.6" -> "G.3";
      "G.8" -> "G.3";
@@ -294,6 +278,7 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.51" -> "G.14";
      "G.58" -> "G.14";
      "G.60" -> "G.14";
@@ -309,9 +294,14 @@ Dependency Graph
      "G.21" -> "G.16";
      "G.37" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.56" -> "G.16";
      "G.64" -> "G.16";
      "G.65" -> "G.16";
+     "G.66" -> "G.16";
+     "G.67" -> "G.16";
+     "G.70" -> "G.16";
+     "G.71" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
@@ -320,6 +310,7 @@ Dependency Graph
      "G.25" -> "G.18";
      "G.41" -> "G.18";
      "G.45" -> "G.18";
+     "G.53" -> "G.18";
      "G.58" -> "G.18";
      "G.66" -> "G.18";
      "G.67" -> "G.18";
@@ -335,6 +326,7 @@ Dependency Graph
      "G.43" -> "G.21";
      "G.45" -> "G.21";
      "G.47" -> "G.21";
+     "G.51" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
      "G.28" -> "G.22";
@@ -371,11 +363,14 @@ Dependency Graph
      "G.62" -> "G.24";
      "G.64" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.51" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -385,6 +380,7 @@ Dependency Graph
      "G.71" -> "G.30";
      "G.32" -> "G.31";
      "G.41" -> "G.32";
+     "G.71" -> "G.32";
      "G.34" -> "G.33";
      "G.37" -> "G.33";
      "G.38" -> "G.33";
@@ -458,5 +454,6 @@ Required for
 .. toctree::
    :hidden:
 
+   video
    code
    heath

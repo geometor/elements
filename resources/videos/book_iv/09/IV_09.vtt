@@ -1,0 +1,57 @@
+WEBVTT
+
+1
+00:00:00.420 --> 00:00:02.515
+Book Four, Proposition Nine.
+
+2
+00:00:02.515 --> 00:00:05.957
+About a given square to circumscribe a circle.
+
+3
+00:00:05.957 --> 00:00:13.290
+Let A B C D be the given square; it is required to circumscribe a circle about the square A B C D.
+
+4
+00:00:13.710 --> 00:00:19.760
+Join the diagonals A C and B D, and let them cut one another at E.
+
+5
+00:00:20.180 --> 00:00:32.484
+Because D A equals A B, A C is common, and base D C equals base B C, by One Eight angle D A C equals angle B A C, so angle D A B is bisected by A C.
+
+6
+00:00:32.484 --> 00:00:40.382
+Similarly, each of the angles A B C, B C D, and C D A is bisected by the diagonals A C and B D.
+
+7
+00:00:40.382 --> 00:00:51.107
+Since angle D A B equals angle A B C, their halves—angles E A B and E B A—are also equal, so by One Six side E A equals side E B.
+
+8
+00:00:51.107 --> 00:00:58.506
+By the same reasoning, all four segments E A, E B, E C, and E D are equal to one another.
+
+9
+00:00:58.506 --> 00:01:12.140
+Therefore the circle E A, described with center E and defining radius point A, passes through B, C, and D, circumscribing the square A B C D, as was required to do.
+
+10
+00:01:12.560 --> 00:01:19.702
+Proposition Four Nine completes Euclid's four-part duality between the square and the circle across Propositions Six through Nine.
+
+11
+00:01:19.702 --> 00:01:37.064
+As Heath observes, while any triangle admits both an inscribed and a circumscribed circle, a general quadrilateral does not: only through the symmetry of the square do the diagonals bisect the right-angled corners into forty-five-degree isosceles triangles whose common vertex E is equidistant from all four corners.
+
+12
+00:01:37.064 --> 00:01:50.360
+In the GEOMETOR G-Index, node G one hundred sixty-one synthesizes ten direct prerequisites across thirty-two ancestor nodes, uniting Side-Side-Side congruence and the converse isosceles theorem with the definitions of square and circumcircle.
+
+13
+00:01:50.780 --> 00:02:05.660
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Four Nine in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+14
+00:02:05.660 --> 00:02:13.100
+Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

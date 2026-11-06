@@ -1,18 +1,18 @@
 :canonical_id: G.154
 :original_id: IV.4
-:title: G.154 inscribe circle in triangle
+:title: G.154 inscribe a circle in a triangle
 :volume: II
 :book: IV
 :type: prop
 
-G.154 inscribe circle in triangle — Code
-========================================
+G.154 inscribe a circle in a triangle — Code
+============================================
 
 .. rubric:: `IV.4 <https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/04/>`_
 
 .. enunciation::
 
-   Inscribe in a given :term:`triangle <G.12>` a :term:`circle <G.10>`.
+   :term:`Inscribe a circle in <G.153>` a given :term:`triangle <G.12>`.
 
 .. picture:: g1.svg
 

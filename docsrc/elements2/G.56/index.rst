@@ -12,6 +12,7 @@
 :tags: book-i, segment, angle, straight-line, parallel-straight-lines, plane-angle, right-angle, parallel, plane, equality
 :dependencies: G.2, G.4, G.16, G.22, G.33, G.36, G.37, G.40, G.52, G.55
 :excerpt: A transversal cutting parallel lines makes alternate interior angles equal, exterior and opposite interior angles equal, and same-side interior angles supplementary.
+:youtube_id: Om2mQVvq45M
 
 .. _G.56:
 .. _I.29:
@@ -27,83 +28,32 @@ G.56 transversal angles of parallel lines
 
 .. signature:: theorem
 
-   | :fn:`parallel_transversal_angles <G.56>`\ ()
-   | **prove** it makes the alternate angles :g:`< A G H ) <g1:< A G H )>`, :g:`< G H D ) <g1:< G H D )>` :eq:`= <g1:< A G H ) = g1:< G H D )>`, the exterior angle :g:`< E G B ) <g1:< E G B )>` :eq:`= <g1:< E G B ) = g1:< G H D )>` to the interior and opposite angle :g:`< G H D ) <g1:< G H D )>`, and the interior angles on the same side, namely :g:`< B G H ) <g1:< B G H )>`, :g:`< G H D ) <g1:< G H D )>`, equal to two right angles
+   | :fn:`parallel_transversal_angles <G.56>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`, :g:`/ E F / <g1:/ E F />`)
+   | **given** :g:`/ A B / <g1:/ A B />` ∥ :g:`/ C D / <g1:/ C D />`, :g:`/ E F / <g1:/ E F />` ∩ :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` → :g:`G <g1:G>`, :g:`H <g1:H>`
+   | **prove** :g:`< A G H ) <g1:< A G H )>` :eq:`= <g1:< A G H ) = g1:< G H D )>` :g:`< G H D ) <g1:< G H D )>`, :g:`< E G B ) <g1:< E G B )>` :eq:`= <g1:< E G B ) = g1:< G H D )>` :g:`< G H D ) <g1:< G H D )>`, :g:`< B G H ) <g1:< B G H )>` + :g:`< G H D ) <g1:< G H D )>` = 2∟
 
 .. picture:: g1.svg
    :alt: Folio 0325 Figure 1 - Proposition 29
 
-.. step:: assert
+.. step:: given
 
-   Let :g:`/ E F / <g1:/ E F />` fall on the parallel lines :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`
+   :g:`/ A B / <g1:/ A B />` ∥ :g:`/ C D / <g1:/ C D />`, :g:`/ E F / <g1:/ E F />` ∩ :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` → :g:`G <g1:G>`, :g:`H <g1:H>`
 
-.. step:: assert
+.. step:: assert ∵ adjacent_angles_supplementary, add_equals <G.37, G.36>
 
-   If :g:`< A G H ) <g1:< A G H )>` ≠ :g:`< G H D ) <g1:< G H D )>`, one of them is greater
+   ? :g:`< A G H ) <g1:< A G H )>` > :g:`< G H D ) <g1:< G H D )>` → :g:`< A G H ) <g1:< A G H )>` + :g:`< B G H ) <g1:< B G H )>` = 2∟ > :g:`< B G H ) <g1:< B G H )>` + :g:`< G H D ) <g1:< G H D )>`
 
-.. step:: assert
+.. step:: assert ∵ parallel_postulate, parallel_lines_def <G.55, G.52>
 
-   Let :g:`< A G H ) <g1:< A G H )>` be greater
+   :g:`< B G H ) <g1:< B G H )>` + :g:`< G H D ) <g1:< G H D )>` < 2∟ → :g:`[ A B ] <g1:[ A B ]>` ∩ :g:`[ C D ] <g1:[ C D ]>` ≠ ∅ ⇒⇐ → :g:`< A G H ) <g1:< A G H )>` :eq:`= <g1:< A G H ) = g1:< G H D )>` :g:`< G H D ) <g1:< G H D )>`
 
-.. step:: construct
+.. step:: assert ∵ vertical_angles_equal, equal_transitive <G.40, G.16>
 
-   Let :g:`< B G H ) <g1:< B G H )>` be added to each
+   :g:`< A G H ) <g1:< A G H )>` :eq:`= <g1:< A G H ) = g1:< E G B )>` :g:`< E G B ) <g1:< E G B )>`, :g:`< A G H ) <g1:< A G H )>` :eq:`= <g1:< A G H ) = g1:< G H D )>` :g:`< G H D ) <g1:< G H D )>` → :g:`< E G B ) <g1:< E G B )>` :eq:`= <g1:< E G B ) = g1:< G H D )>` :g:`< G H D ) <g1:< G H D )>`
 
-.. step:: assert
+.. step:: conclude ∵ add_equals, adjacent_angles_supplementary <G.36, G.37>
 
-   :g:`< A G H ) <g1:< A G H )>`, :g:`< B G H ) <g1:< B G H )>` are greater than :g:`< B G H ) <g1:< B G H )>`, :g:`< G H D ) <g1:< G H D )>`
-
-.. step:: assert ∵ adjacent_angles_supplementary <G.37>
-
-   :g:`< A G H ) <g1:< A G H )>`, :g:`< B G H ) <g1:< B G H )>` are equal to two right angles
-
-.. step:: assert
-
-   :g:`< B G H ) <g1:< B G H )>`, :g:`< G H D ) <g1:< G H D )>` are less than two right angles
-
-.. step:: assert ∵ parallel_postulate <G.55>
-
-   :term:`Segments <G.4>` produced indefinitely from angles less than two :term:`right angles <G.33>` meet
-
-.. step:: assert
-
-   :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`, if produced indefinitely, will meet
-
-.. step:: assert
-
-   But they do not meet, because they are by hypothesis parallel
-
-.. step:: assert
-
-   :g:`< A G H ) <g1:< A G H )>` = :g:`< G H D ) <g1:< G H D )>`,
-
-.. step:: assert
-
-   is therefore :eq:`= <g1:< A G H ) = g1:< G H D )>` to it
-
-.. step:: assert ∵ vertical_angles_equal <G.40>
-
-   :g:`< A G H ) <g1:< A G H )>` :eq:`= <g1:< A G H ) = g1:< E G B )>` :g:`< E G B ) <g1:< E G B )>`
-
-.. step:: assert ∵ equal_transitive <G.16>
-
-   :g:`< E G B ) <g1:< E G B )>` :eq:`= <g1:< E G B ) = g1:< G H D )>` :g:`< G H D ) <g1:< G H D )>`
-
-.. step:: construct
-
-   Let :g:`< B G H ) <g1:< B G H )>` be added to each
-
-.. step:: assert ∵ add_equals <G.36>
-
-   :g:`< E G B ) <g1:< E G B )>`, :g:`< B G H ) <g1:< B G H )>` are equal to :g:`< B G H ) <g1:< B G H )>`, :g:`< G H D ) <g1:< G H D )>`
-
-.. step:: assert ∵ adjacent_angles_supplementary <G.37>
-
-   :g:`< E G B ) <g1:< E G B )>`, :g:`< B G H ) <g1:< B G H )>` are equal to two right angles
-
-.. step:: conclude
-
-   :g:`< B G H ) <g1:< B G H )>`, :g:`< G H D ) <g1:< G H D )>` are also equal to two right angles
+   :g:`< E G B ) <g1:< E G B )>` + :g:`< B G H ) <g1:< B G H )>` = 2∟ → :g:`< B G H ) <g1:< B G H )>` + :g:`< G H D ) <g1:< G H D )>` = 2∟
 
 Dependency Graph
 ----------------
@@ -303,5 +253,6 @@ Required for
 .. toctree::
    :hidden:
 
+   video
    code
    heath

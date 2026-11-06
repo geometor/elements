@@ -1,0 +1,79 @@
+1
+00:00:00,420 --> 00:00:02,767
+Book Three, Proposition Thirty-Three.
+
+2
+00:00:02,767 --> 00:00:09,619
+On a given segment, to describe a segment of a circle admitting an angle equal to a given rectilineal angle.
+
+3
+00:00:09,619 --> 00:00:14,631
+Let A B be the given segment and the angle at C be the given rectilineal angle.
+
+4
+00:00:14,631 --> 00:00:19,770
+It is required to describe on A B a circle segment admitting an angle equal to C.
+
+5
+00:00:20,190 --> 00:00:26,906
+At point A on A B, construct angle B A D equal to angle C by One Twenty-Three.
+
+6
+00:00:26,906 --> 00:00:31,556
+From A, draw A E at right angles to D A by One Eleven.
+
+7
+00:00:31,556 --> 00:00:39,391
+Bisect A B at F by One Ten, draw F G at right angles to A B meeting A E at G, and join G B.
+
+8
+00:00:39,391 --> 00:00:52,049
+Because A F equals F B, F G is common, and the right angles at F are equal, triangles A F G and B F G are congruent by One Four, so A G equals G B.
+
+9
+00:00:52,049 --> 00:01:00,745
+Construct circle G A, with center G and defining radius point A; it passes through B as circle A B E.
+
+10
+00:01:00,745 --> 00:01:01,520
+Join E B.
+
+11
+00:01:01,940 --> 00:01:11,580
+Because A D is drawn from the extremity A of diameter A E at right angles to A E, the line A D touches the circle A B E at A by the Porism to Three Sixteen.
+
+12
+00:01:11,580 --> 00:01:24,249
+Since the tangent A D touches the circle at A and the chord A B is drawn across from the point of contact, by Three Thirty-Two the angle D A B equals the angle A E B in the alternate segment of the circle.
+
+13
+00:01:24,249 --> 00:01:30,552
+But angle D A B was constructed equal to the given angle C; therefore angle A E B also equals angle C.
+
+14
+00:01:30,552 --> 00:01:36,670
+And if C is a right angle, the semicircle on A B admits a right angle directly by Three Thirty-One.
+
+15
+00:01:36,670 --> 00:01:44,580
+Thus on the given segment A B, the circle segment A E B has been described admitting an angle equal to C, as was required to do.
+
+16
+00:01:45,000 --> 00:02:05,352
+Proposition Three Thirty-Three is the constructive inverse of the Alternate Segment Theorem: by laying off the target angle C between the chord A B and a line A D that will become the tangent, the center G of the required circle is uniquely determined as the intersection of the normal to A D at A and the perpendicular bisector of A B.
+
+17
+00:02:05,352 --> 00:02:16,134
+As Robert Simson noted, the acute and obtuse cases share this identical construction, while Clavius observed that the right-angle case reduces immediately to a semicircle on A B.
+
+18
+00:02:16,134 --> 00:02:27,400
+In the GEOMETOR G-Index, node G one hundred forty-one synthesizes nineteen rules across Books One and Three into a single locus tool—the arc of constant subtended angle on a fixed chord.
+
+19
+00:02:27,820 --> 00:02:41,388
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Thirty-Three in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+20
+00:02:41,388 --> 00:02:48,740
+Subscribe to at geometor, share your questions in the comments, and star our repositories at github dot com slash geometor.

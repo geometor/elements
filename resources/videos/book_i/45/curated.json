@@ -1,0 +1,51 @@
+{
+  "I.45": {
+    "subtype": "problem",
+    "args": [
+      ":g:`< A B C D > <g1:< A B C D >>`",
+      ":g:`< E ) <g1:< E )>`"
+    ],
+    "returns": [
+      ":g:`< K F L M > <g1:< K F L M >>`"
+    ],
+    "given": ":g:`< A B C D > <g1:< A B C D >>`, :g:`< E ) <g1:< E )>`",
+    "contract": ":g:`< K F L M > <g1:< K F L M >>` :eq:`= <g1:< K F L M > = g1:< A B C D >>` :g:`< A B C D > <g1:< A B C D >>` (:g:`< F K M ) <g1:< F K M )>` :eq:`= <g1:< F K M ) = g1:< E )>` :g:`< E ) <g1:< E )>`)",
+    "steps": [
+      [
+        "given",
+        [],
+        ":g:`< A B C D > <g1:< A B C D >>`, :g:`< E ) <g1:< E )>`"
+      ],
+      [
+        "construct",
+        [],
+        "@fn(I.post.1)(:g:`D <g1:D>`, :g:`B <g1:B>`) → :g:`/ D B / <g1:/ D B />`, @fn(I.42)(:g:`< A B D > <g1:< A B D >>`, :g:`< E ) <g1:< E )>`) → :g:`< F K H G > <g1:< F K H G >>` (:eq:`= <g1:< F K H G > = g1:< A B D >>` :g:`< A B D > <g1:< A B D >>`, :g:`< H K F ) <g1:< H K F )>` :eq:`= <g1:< H K F ) = g1:< E )>` :g:`< E ) <g1:< E )>`)"
+      ],
+      [
+        "construct",
+        [],
+        "@fn(I.44)(:g:`/ G H / <g1:/ G H />`, :g:`< D B C > <g1:< D B C >>`, :g:`< E ) <g1:< E )>`) → :g:`< G H M L > <g1:< G H M L >>` (:eq:`= <g1:< G H M L > = g1:< D B C >>` :g:`< D B C > <g1:< D B C >>`, :g:`< G H M ) <g1:< G H M )>` :eq:`= <g1:< G H M ) = g1:< E )>` :g:`< E ) <g1:< E )>`)"
+      ],
+      [
+        "assert",
+        ["I.cn.1", "I.cn.2", "I.29", "I.14"],
+        ":g:`< H K F ) <g1:< H K F )>` :eq:`= <g1:< H K F ) = g1:< G H M )>` :g:`< G H M ) <g1:< G H M )>` → :g:`< K H G ) <g1:< K H G )>` + :g:`< G H M ) <g1:< G H M )>` = :g:`< F K H ) <g1:< F K H )>` + :g:`< K H G ) <g1:< K H G )>` = 2∟ → :g:`/ K H / <g1:/ K H />`, :g:`/ H M / <g1:/ H M />` ∈ :g:`[ K M ] <g1:/ K M />`"
+      ],
+      [
+        "assert",
+        ["I.29", "I.cn.2", "I.14"],
+        ":g:`< M H G ) <g1:< M H G )>` :eq:`= <g1:< M H G ) = g1:< H G F )>` :g:`< H G F ) <g1:< H G F )>` → :g:`< H G F ) <g1:< H G F )>` + :g:`< H G L ) <g1:< H G L )>` = :g:`< M H G ) <g1:< M H G )>` + :g:`< H G L ) <g1:< H G L )>` = 2∟ → :g:`/ F G / <g1:/ F G />`, :g:`/ G L / <g1:/ G L />` ∈ :g:`[ F L ] <g1:/ F L />`"
+      ],
+      [
+        "assert",
+        ["I.34", "I.cn.1", "I.30", "I.33"],
+        ":g:`/ F K / <g1:/ F K />` :eq:`= <g1:/ F K / = g1:/ H G / = g1:/ M L />` :g:`/ H G / <g1:/ H G />` :eq:`= <g1:/ F K / = g1:/ H G / = g1:/ M L />` :g:`/ M L / <g1:/ M L />`, :g:`/ F K / <g1:/ F K />` ∥ :g:`/ H G / <g1:/ H G />` ∥ :g:`/ M L / <g1:/ M L />` → :g:`/ K M / <g1:/ K M />` :eq:`= <g1:/ K M / = g1:/ F L />` :g:`/ F L / <g1:/ F L />`, :g:`/ K M / <g1:/ K M />` ∥ :g:`/ F L / <g1:/ F L />` → :g:`< K F L M > <g1:< K F L M >>`"
+      ],
+      [
+        "conclude",
+        ["I.cn.2"],
+        ":g:`< A B D > <g1:< A B D >>` :eq:`= <g1:< A B D > = g1:< F K H G >; g1:< D B C > = g1:< G H M L >>` :g:`< F K H G > <g1:< F K H G >>`, :g:`< D B C > <g1:< D B C >>` :eq:`= <g1:< A B D > = g1:< F K H G >; g1:< D B C > = g1:< G H M L >>` :g:`< G H M L > <g1:< G H M L >>` → :g:`< K F L M > <g1:< K F L M >>` :eq:`= <g1:< K F L M > = g1:< A B C D >>` :g:`< A B C D > <g1:< A B C D >>` (:g:`< F K M ) <g1:< F K M )>` :eq:`= <g1:< F K M ) = g1:< E )>` :g:`< E ) <g1:< E )>`)"
+      ]
+    ]
+  }
+}

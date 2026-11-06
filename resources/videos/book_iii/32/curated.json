@@ -1,0 +1,62 @@
+{
+  "III.32": {
+    "subtype": "theorem",
+    "args": [
+      ":g:`( A B C D ) <g1:( A B C D )>`",
+      ":g:`/ E F / <g1:/ E F />`",
+      ":g:`/ B D / <g1:/ B D />`"
+    ],
+    "returns": [],
+    "given": "tangent :g:`/ E F / <g1:/ E F />` touching :g:`( A B C D ) <g1:( A B C D )>` at :g:`B <g1:B>`, chord :g:`/ B D / <g1:/ B D />`",
+    "contract": ":g:`< F B D ) <g1:< F B D )>` :eq:`= <g1:< F B D ) = g1:< B A D )>` :g:`< B A D ) <g1:< B A D )>`, :g:`< E B D ) <g1:< E B D )>` :eq:`= <g1:< E B D ) = g1:< B C D )>` :g:`< D C B ) <g1:< B C D )>`",
+    "steps": [
+      [
+        "given",
+        [
+          "III.def.2",
+          "III.def.6"
+        ],
+        "tangent :g:`/ E F / <g1:/ E F />` touching :g:`( A B C D ) <g1:( A B C D )>` at :g:`B <g1:B>`, chord :g:`/ B D / <g1:/ B D />` cutting :g:`( A B C D ) <g1:( A B C D )>` into segments :g:`( B A D ) <g1:( B A D )>`, :g:`( D C B ) <g1:( D C B )>`"
+      ],
+      [
+        "construct",
+        [
+          "I.11",
+          "I.post.1"
+        ],
+        "@fn(I.11)(:g:`/ E F / <g1:/ E F />`, :g:`B <g1:B>`) → :g:`/ B A / <g1:/ B A />` ⊥ :g:`/ E F / <g1:/ E F />`, point :g:`C <g1:C>` ∈ :g:`( D C B ) <g1:( D C B )>`, @fn(I.post.1)(:g:`A <g1:A>`, :g:`D <g1:D>`, :g:`C <g1:C>`, :g:`B <g1:B>`) → :g:`/ A D / <g1:/ A D />`, :g:`/ D C / <g1:/ D C />`, :g:`/ C B / <g1:/ C B />`"
+      ],
+      [
+        "assert",
+        [
+          "III.19",
+          "III.31"
+        ],
+        ":g:`/ B A / <g1:/ B A />` ⊥ :g:`/ E F / <g1:/ E F />` at :g:`B <g1:B>` → :g:`/ B A / <g1:/ B A />` is a diameter of :g:`( A B C D ) <g1:( A B C D )>` → :g:`< A D B ) <g1:< A D B )>` = ∟"
+      ],
+      [
+        "assert",
+        [
+          "I.32",
+          "I.cn.3"
+        ],
+        ":g:`< B A D ) <g1:< B A D )>` + :g:`< A B D ) <g1:< A B D )>` = ∟ = :g:`< A B F ) <g1:< A B F )>` = :g:`< D B F ) <g1:< F B D )>` + :g:`< A B D ) <g1:< A B D )>` → :g:`< D B F ) <g1:< F B D )>` :eq:`= <g1:< F B D ) = g1:< B A D )>` :g:`< B A D ) <g1:< B A D )>`"
+      ],
+      [
+        "assert",
+        [
+          "III.22",
+          "I.13"
+        ],
+        ":g:`< B A D ) <g1:< B A D )>` + :g:`< B C D ) <g1:< B C D )>` = 2∟ = :g:`< D B F ) <g1:< F B D )>` + :g:`< D B E ) <g1:< E B D )>`"
+      ],
+      [
+        "conclude",
+        [
+          "I.cn.3"
+        ],
+        ":g:`< F B D ) <g1:< F B D )>` :eq:`= <g1:< F B D ) = g1:< B A D )>` :g:`< B A D ) <g1:< B A D )>`, :g:`< E B D ) <g1:< E B D )>` :eq:`= <g1:< E B D ) = g1:< B C D )>` :g:`< D C B ) <g1:< B C D )>`"
+      ]
+    ]
+  }
+}

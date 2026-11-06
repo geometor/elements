@@ -1,0 +1,33 @@
+{
+  "prop_id": "BOOK III \u2022 PROP. 19",
+  "short_code": "III.19",
+  "g_id": "G.121",
+  "version": 2,
+  "enunciation": "If a straight line touch a circle, and from the point of contact a straight line be drawn at right angles to the tangent, the centre of the circle will be on the straight line so drawn.",
+  "title_1080p": "III.19 \u2022 perpendicular to tangent at contact passes through center \u2022 Euclid's Elements",
+  "title_short": "III.19 \u2022 perpendicular to tangent at contact passes through center \u2022 Euclid's Elements",
+  "description": "\u201cIf a straight line touch a circle, and from the point of contact a straight line be drawn at right angles to the tangent, the centre of the circle will be on the straight line so drawn.\u201d\n\u2014 Euclid's Elements, BOOK III \u2022 PROP. 19 (G.121)\n\n00:00 1 \u00b7 GIVEN: tangent / D E / touching circle ( A B C ) at C, perpendicular / C A / \u22a5 / D E /\n00:22 2 \u00b7 CONSTRUCT: suppose center F lies outside / A C /; join / C F /\n00:31 3 \u00b7 ASSERT: by III.18, / F C / \u22a5 / D E /, so \u27e8 F C E ) is a right angle\n00:44 4 \u00b7 ASSERT: since \u27e8 A C E ) is also right, \u27e8 F C E ) = \u27e8 A C E ) (less = greater) \u21d2\u21d0\n00:57 5 \u00b7 \u2234: the center of circle ( A B C ) lies on the perpendicular / A C /\n01:10 6 \u00b7 COMMENTARY: completing the tangency triad & common tangent to touching circles\n01:27 7 \u00b7 GENEALOGY: G.121 dependency tree & symbolic model\n01:44 8 \u00b7 PARTICIPATE: explore the GEOMETOR Elements Codex & participate\n\nExplore the interactive Book Codex, symbolic model, and dependency tree:\n\u2022 Elements Codex (G.121): https://geometor.github.io/elements/elements2/G.121/\n\u2022 Heath Edition (III.19): https://geometor.github.io/euclid/heath/volume_I/book_iii/propositions/19/\n\u2022 GitHub: https://github.com/geometor/elements\n\nGEOMETOR \u2022 G.121 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid III.19",
+    "G.121",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_iii/propositions/19/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.121/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/19/III_19_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/19/III_19_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/19/III_19.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/19/III_19_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/19/III_19_short_thumb.png"
+  }
+}

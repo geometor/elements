@@ -1,0 +1,46 @@
+{
+  "I.38": {
+    "subtype": "theorem",
+    "args": [
+      ":g:`< A B C > <g1:< A B C >>`",
+      ":g:`< D E F > <g1:< D E F >>`",
+      ":g:`/ B C / <g1:/ B C />`",
+      ":g:`/ E F / <g1:/ E F />`"
+    ],
+    "returns": [],
+    "given": ":g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>` (:g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ B C / = g1:/ E F />` :g:`/ E F / <g1:/ E F />`, :g:`/ A D / <g1:/ A D />` ∥ :g:`/ B F / <g1:/ B F />`)",
+    "contract": ":g:`< A B C > <g1:< A B C >>` :eq:`= <g1:< A B C > = g1:< D E F >>` :g:`< D E F > <g1:< D E F >>`",
+    "steps": [
+      [
+        "given",
+        [],
+        ":g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>` (:g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ B C / = g1:/ E F />` :g:`/ E F / <g1:/ E F />`, :g:`/ A D / <g1:/ A D />` ∥ :g:`/ B F / <g1:/ B F />`)"
+      ],
+      [
+        "construct",
+        [],
+        "@fn(I.post.2)(:g:`/ A D / <g1:/ A D />`) → :g:`/ G A / <g1:/ G A />`, :g:`/ D H / <g1:/ D H />`"
+      ],
+      [
+        "construct",
+        [],
+        "@fn(I.31)(:g:`B <g1:B>`, :g:`/ C A / <g1:/ C A />`) → :g:`/ B G / <g1:/ B G />`, @fn(I.31)(:g:`F <g1:F>`, :g:`/ D E / <g1:/ D E />`) → :g:`/ F H / <g1:/ F H />`"
+      ],
+      [
+        "assert",
+        ["I.36"],
+        ":g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ B C / = g1:/ E F />` :g:`/ E F / <g1:/ E F />`, :g:`/ B F / <g1:/ B F />` ∥ :g:`/ G H / <g1:/ G H />` → :g:`< G B C A > <g1:< G B C A >>` :eq:`= <g1:< G B C A > = g1:< D E F H >>` :g:`< D E F H > <g1:< D E F H >>`"
+      ],
+      [
+        "assert",
+        ["I.34"],
+        ":g:`/ A B / <g1:/ A B />` → :g:`< G A B > <g1:< G A B >>` :eq:`= <g1:< G A B > = g1:< A B C >>` :g:`< A B C > <g1:< A B C >>`, :g:`/ D F / <g1:/ D F />` → :g:`< D E F > <g1:< D E F >>` :eq:`= <g1:< D E F > = g1:< D H F >>` :g:`< D H F > <g1:< D H F >>`"
+      ],
+      [
+        "conclude",
+        ["I.cn.1"],
+        ":g:`< G B C A > <g1:< G B C A >>` :eq:`= <g1:< G B C A > = g1:< D E F H >>` :g:`< D E F H > <g1:< D E F H >>` → :g:`< A B C > <g1:< A B C >>` :eq:`= <g1:< A B C > = g1:< D E F >>` :g:`< D E F > <g1:< D E F >>`"
+      ]
+    ]
+  }
+}

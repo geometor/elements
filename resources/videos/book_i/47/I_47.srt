@@ -1,0 +1,47 @@
+1
+00:00:00,420 --> 00:00:03,377
+Euclid's Elements, Book One, Proposition Forty-Seven.
+
+2
+00:00:03,377 --> 00:00:09,124
+In a right-angled triangle, the square on the hypotenuse equals the sum of the squares on the two legs.
+
+3
+00:00:09,124 --> 00:00:13,085
+Let triangle A B C be a right-angled triangle having angle B A C right.
+
+4
+00:00:13,085 --> 00:00:18,330
+We prove that the square on segment B C equals the sum of the squares on segments B A and A C.
+
+5
+00:00:18,750 --> 00:00:28,840
+By Proposition Forty-Six, construct square B D E C on segment B C, square B A G F on segment B A, and square A C K H on segment A C.
+
+6
+00:00:28,840 --> 00:00:43,440
+By Proposition Thirty-One, through point A draw segment A L parallel to segments B D and C E, dividing the square on B C into rectangles B L and C L, and join segments A D, F C, A E, and B K.
+
+7
+00:00:43,860 --> 00:00:56,614
+Since angles B A C and B A G are both right angles, by Proposition Fourteen, segment C A is collinear with segment A G, and similarly segment B A is collinear with segment A H.
+
+8
+00:00:56,614 --> 00:01:04,222
+Right angles D B C and F B A are equal; adding common angle A B C makes angle D B A equal to angle F B C.
+
+9
+00:01:04,222 --> 00:01:13,063
+Because sides D B and B A equal sides B C and F B respectively, by Proposition Four, triangle A B D equals triangle F B C.
+
+10
+00:01:13,063 --> 00:01:26,976
+By Proposition Forty-One, rectangle B L is double triangle A B D on base B D between parallels B D and A L, while square G B is double triangle F B C on base F B between parallels F B and G C.
+
+11
+00:01:26,976 --> 00:01:36,613
+Therefore rectangle B L equals square G B, and by the same reasoning with triangles A C E and K C B, rectangle C L equals square H C.
+
+12
+00:01:36,613 --> 00:01:47,700
+Adding equals to equals, the whole square B D E C on segment B C equals the sum of squares G B and H C on segments B A and A C, as was required to prove.

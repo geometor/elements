@@ -1,0 +1,39 @@
+================================================================================
+YOUTUBE 1080P (16:9) TITLE
+================================================================================
+I.16 • exterior angle of a triangle is greater than interior • Euclid's Elements
+
+================================================================================
+YOUTUBE SHORT (9:16) TITLE
+================================================================================
+I.16 • exterior angle of a triangle is greater than interior • Euclid's Elements
+
+================================================================================
+DESCRIPTION
+================================================================================
+“In any triangle, if one of the sides be produced, the exterior angle is greater than either of the interior and opposite angles.”
+— Euclid's Elements, BOOK I • PROP. 16 (G.41)
+
+00:00 1 · GIVEN: ⟨ A B C ⟩, extend(/ B C /) → / C D /
+00:22 2 · CONSTRUCT: bisect_segment(/ A C /) → E (/ A E / = / E C /)
+00:30 3 · CONSTRUCT: segment(B, E), cut_equal_segment(/ B E /) → / E F /, segment(F, C), extend(/ A C /) → / C G /
+00:39 4 · ASSERT: / A C / ∩ / B F / → ⟨ A E B ) = ⟨ F E C )
+00:47 5 · ASSERT: ⟨ A B E ⟩ = ⟨ C F E ⟩ → ⟨ B A E ) = ⟨ E C F )
+00:56 6 · ASSERT: ⟨ E C D ) ⟩ ⟨ E C F ) → ⟨ A C D ) ⟩ ⟨ B A E )
+01:04 7 · ∴: ∴ ⟨ A C D ) ⟩ ⟨ B A C ), ⟨ A C D ) = ⟨ B C G ) ⟩ ⟨ C B A )
+
+GEOMETOR • G.41 • v2
+
+================================================================================
+TAGS
+================================================================================
+Euclid, Euclid's Elements, Euclid I.16, G.41, Geometry, Constructive Geometry, Compass and Straightedge, Mathematical Proof, GEOMETOR, Thomas Little Heath
+
+================================================================================
+MEDIA & CAPTIONS FILES
+================================================================================
+• 9:16 Short MP4 : I_16_short.mp4
+• 16:9 1080p MP4 : I_16_1080p.mp4
+• Closed Captions: I_16.srt
+• 16:9 Thumbnail : I_16_thumb.png
+• 9:16 Thumbnail : I_16_short_thumb.png

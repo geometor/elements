@@ -18,12 +18,32 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 import json
 import os
 from pathlib import Path
+import subprocess
+import socket
 import sys
 import time
 import urllib.error
 import urllib.parse
 import urllib.request
 import webbrowser
+
+_orig_getaddrinfo = socket.getaddrinfo
+_GOOGLE_DNS_FALLBACK = {
+    "www.googleapis.com": "172.217.117.4",
+    "oauth2.googleapis.com": "172.217.116.10",
+}
+
+
+def _resilient_getaddrinfo(host, port, family=0, type=0, proto=0, flags=0):
+  try:
+    return _orig_getaddrinfo(host, port, family, type, proto, flags)
+  except socket.gaierror:
+    if host in _GOOGLE_DNS_FALLBACK:
+      return _orig_getaddrinfo(_GOOGLE_DNS_FALLBACK[host], port, family, type, proto, flags)
+    raise
+
+
+socket.getaddrinfo = _resilient_getaddrinfo
 
 CONFIG_DIR = Path.home() / ".config" / "geometor"
 DEFAULT_CLIENT_SECRET = CONFIG_DIR / "youtube_client_secret.json"
@@ -243,9 +263,16 @@ def upload_video_resumable(
     tags: list[str],
     category_id: str = "27",
     privacy_status: str = "unlisted",
+    publish_at: str | None = None,
 ) -> str:
   """Uploads an MP4 via YouTube Data API v3 resumable upload protocol and returns video_id."""
   file_size = mp4_path.stat().st_size
+  status_dict: dict[str, object] = {
+      "privacyStatus": "private" if publish_at else privacy_status,
+      "selfDeclaredMadeForKids": False,
+  }
+  if publish_at:
+    status_dict["publishAt"] = publish_at
   metadata = {
       "snippet": {
           "title": title,
@@ -255,10 +282,7 @@ def upload_video_resumable(
           "defaultLanguage": "en",
           "defaultAudioLanguage": "en",
       },
-      "status": {
-          "privacyStatus": privacy_status,
-          "selfDeclaredMadeForKids": False,
-      },
+      "status": status_dict,
   }
   body_bytes = json.dumps(metadata).encode("utf-8")
 
@@ -278,7 +302,7 @@ def upload_video_resumable(
       method="POST",
   )
   try:
-    with urllib.request.urlopen(init_req) as resp:
+    with urllib.request.urlopen(init_req, timeout=30) as resp:
       upload_url = resp.headers.get("Location")
   except urllib.error.HTTPError as e:
     err_body = e.read().decode("utf-8", errors="replace")
@@ -288,24 +312,117 @@ def upload_video_resumable(
     raise RuntimeError("YouTube resumable upload did not return a Location header.")
 
   video_bytes = mp4_path.read_bytes()
-  put_req = urllib.request.Request(
-      upload_url,
-      data=video_bytes,
-      headers={
-          "Authorization": f"Bearer {access_token}",
-          "Content-Length": str(file_size),
-          "Content-Type": "video/mp4",
-      },
-      method="PUT",
-  )
+  chunk_size = 256 * 1024  # 256 KB (minimum Google resumable chunk size, ~75s at 3.2 KB/s)
+  offset = 0
+  retries = 0
+  tmp_chunk = mp4_path.parent / f".tmp_chunk_{mp4_path.stem}.bin"
+  tmp_hdr = mp4_path.parent / f".tmp_hdr_{mp4_path.stem}.txt"
   try:
-    with urllib.request.urlopen(put_req) as resp:
-      result = json.loads(resp.read().decode("utf-8"))
-  except urllib.error.HTTPError as e:
-    err_body = e.read().decode("utf-8", errors="replace")
-    raise RuntimeError(f"Failed uploading MP4 bytes ({e.code}): {err_body}") from e
+    while offset < file_size:
+      end = min(offset + chunk_size, file_size) - 1
+      chunk = video_bytes[offset : end + 1]
+      tmp_chunk.write_bytes(chunk)
+      tmp_hdr.unlink(missing_ok=True)
+      proc = subprocess.run(
+          [
+              "curl",
+              "-4",
+              "--resolve",
+              "www.googleapis.com:443:172.217.117.4",
+              "--http1.1",
+              "--max-time",
+              "240",
+              "-sS",
+              "-D",
+              str(tmp_hdr),
+              "-X",
+              "PUT",
+              "-H",
+              f"Authorization: Bearer {access_token}",
+              "-H",
+              "Content-Type: video/mp4",
+              "-H",
+              f"Content-Range: bytes {offset}-{end}/{file_size}",
+              "--data-binary",
+              f"@{tmp_chunk}",
+              upload_url,
+          ],
+          capture_output=True,
+          text=True,
+          check=False,
+      )
+      hdr_text = tmp_hdr.read_text(encoding="utf-8", errors="replace") if tmp_hdr.exists() else ""
+      if proc.returncode == 0 and proc.stdout.strip().startswith("{"):
+        result = json.loads(proc.stdout)
+        if "id" in result:
+          print(f"    [100%] Uploaded {file_size / (1024*1024):.1f} MB -> {result['id']}", flush=True)
+          return result["id"]
+      if " 308" in hdr_text:
+        m_rng = None
+        for line in hdr_text.splitlines():
+          if line.lower().startswith("range:") and "-" in line:
+            m_rng = int(line.split("-")[-1].strip())
+        offset = (m_rng + 1) if m_rng is not None else (end + 1)
+        pct = int(offset * 100 / file_size)
+        print(f"    [{pct:3d}%] {offset / (1024*1024):.2f} / {file_size / (1024*1024):.2f} MB", flush=True)
+        retries = 0
+        continue
+      # Query server for how many bytes were received before timeout
+      tmp_hdr.unlink(missing_ok=True)
+      chk = subprocess.run(
+          [
+              "curl",
+              "-4",
+              "--resolve",
+              "www.googleapis.com:443:172.217.117.4",
+              "--http1.1",
+              "--max-time",
+              "30",
+              "-sS",
+              "-D",
+              str(tmp_hdr),
+              "-X",
+              "PUT",
+              "-H",
+              f"Authorization: Bearer {access_token}",
+              "-H",
+              "Content-Length: 0",
+              "-H",
+              f"Content-Range: bytes */{file_size}",
+              upload_url,
+          ],
+          capture_output=True,
+          text=True,
+          check=False,
+      )
+      chk_hdr = tmp_hdr.read_text(encoding="utf-8", errors="replace") if tmp_hdr.exists() else ""
+      if chk.returncode == 0 and chk.stdout.strip().startswith("{"):
+        result = json.loads(chk.stdout)
+        if "id" in result:
+          print(f"    [100%] Uploaded {file_size / (1024*1024):.1f} MB -> {result['id']}", flush=True)
+          return result["id"]
+      if " 308" in chk_hdr:
+        for line in chk_hdr.splitlines():
+          if line.lower().startswith("range:") and "-" in line:
+            new_off = int(line.split("-")[-1].strip()) + 1
+            if new_off > offset:
+              offset = new_off
+              pct = int(offset * 100 / file_size)
+              print(f"    [{pct:3d}%] Resumed at {offset / (1024*1024):.2f} / {file_size / (1024*1024):.2f} MB", flush=True)
+              retries = 0
+              break
+      retries += 1
+      print(f"    [RETRY {retries}/8] at {offset / (1024*1024):.2f} MB (rc={proc.returncode})", flush=True)
+      if retries > 8:
+        raise RuntimeError(
+            f"curl chunk upload failed after 8 retries at {offset}/{file_size}: {proc.stderr or proc.stdout[:300]}"
+        )
+      time.sleep(2)
+  finally:
+    tmp_chunk.unlink(missing_ok=True)
+    tmp_hdr.unlink(missing_ok=True)
 
-  return result["id"]
+  raise RuntimeError("Upload loop exited without receiving video_id.")
 
 
 def update_video_metadata(
@@ -316,8 +433,15 @@ def update_video_metadata(
     tags: list[str],
     category_id: str = "27",
     privacy_status: str = "unlisted",
+    publish_at: str | None = None,
 ) -> None:
   """Updates title, description, tags, and privacy status of an existing YouTube video."""
+  status_dict: dict[str, object] = {
+      "privacyStatus": "private" if publish_at else privacy_status,
+      "selfDeclaredMadeForKids": False,
+  }
+  if publish_at:
+    status_dict["publishAt"] = publish_at
   metadata = {
       "id": video_id,
       "snippet": {
@@ -328,10 +452,7 @@ def update_video_metadata(
           "defaultLanguage": "en",
           "defaultAudioLanguage": "en",
       },
-      "status": {
-          "privacyStatus": privacy_status,
-          "selfDeclaredMadeForKids": False,
-      },
+      "status": status_dict,
   }
   url = "https://www.googleapis.com/youtube/v3/videos?part=snippet,status"
   req = urllib.request.Request(
@@ -344,7 +465,7 @@ def update_video_metadata(
       method="PUT",
   )
   try:
-    with urllib.request.urlopen(req) as resp:
+    with urllib.request.urlopen(req, timeout=30) as resp:
       resp.read()
   except urllib.error.HTTPError as e:
     err_body = e.read().decode("utf-8", errors="replace")
@@ -357,31 +478,55 @@ def upload_thumbnail(
     access_token: str,
     video_id: str,
     png_path: Path,
-) -> None:
-  """Uploads a custom PNG thumbnail for video_id."""
+) -> bool:
+  """Uploads a custom thumbnail for video_id (compressed to JPEG so it transfers in ~20s)."""
   if not png_path or not png_path.exists():
-    return
-  img_bytes = png_path.read_bytes()
+    return False
+  jpg_path = png_path.with_suffix(".jpg")
+  content_type = "image/png"
+  upload_path = png_path
+  try:
+    subprocess.run(
+        ["/usr/bin/ffmpeg", "-y", "-i", str(png_path), "-q:v", "4", str(jpg_path)],
+        check=True,
+        capture_output=True,
+    )
+    if jpg_path.exists():
+      upload_path = jpg_path
+      content_type = "image/jpeg"
+  except Exception:
+    pass
   url = (
       "https://www.googleapis.com/upload/youtube/v3/thumbnails/set"
       f"?videoId={urllib.parse.quote(video_id)}&uploadType=media"
   )
-  req = urllib.request.Request(
-      url,
-      data=img_bytes,
-      headers={
-          "Authorization": f"Bearer {access_token}",
-          "Content-Type": "image/png",
-          "Content-Length": str(len(img_bytes)),
-      },
-      method="POST",
+  proc = subprocess.run(
+      [
+          "curl",
+          "-4",
+          "--resolve",
+          "www.googleapis.com:443:172.217.117.4",
+          "--max-time",
+          "180",
+          "-sS",
+          "-X",
+          "POST",
+          "-H",
+          f"Authorization: Bearer {access_token}",
+          "-H",
+          f"Content-Type: {content_type}",
+          "--data-binary",
+          f"@{upload_path}",
+          url,
+      ],
+      capture_output=True,
+      text=True,
+      check=False,
   )
-  try:
-    with urllib.request.urlopen(req) as resp:
-      resp.read()
-  except urllib.error.HTTPError as e:
-    err_body = e.read().decode("utf-8", errors="replace")
-    print(f"  [!] Thumbnail upload warning for {video_id} ({e.code}): {err_body}")
+  if proc.returncode != 0 or '"error"' in proc.stdout:
+    print(f"  [!] Thumbnail upload warning for {video_id}: {proc.stderr or proc.stdout[:300]}", flush=True)
+    return False
+  return True
 
 
 def upload_captions_srt(
@@ -421,23 +566,37 @@ def upload_captions_srt(
       "https://www.googleapis.com/upload/youtube/v3/captions"
       "?uploadType=multipart&part=snippet"
   )
-  req = urllib.request.Request(
-      url,
-      data=body,
-      headers={
-          "Authorization": f"Bearer {access_token}",
-          "Content-Type": f'multipart/related; boundary="{boundary}"',
-          "Content-Length": str(len(body)),
-      },
-      method="POST",
+  proc = subprocess.run(
+      [
+          "curl",
+          "-4",
+          "--resolve",
+          "www.googleapis.com:443:172.217.117.4",
+          "--max-time",
+          "120",
+          "-sS",
+          "-X",
+          "POST",
+          "-H",
+          f"Authorization: Bearer {access_token}",
+          "-H",
+          f'Content-Type: multipart/related; boundary="{boundary}"',
+          "--data-binary",
+          "@-",
+          url,
+      ],
+      input=body,
+      capture_output=True,
+      check=False,
   )
+  if proc.returncode != 0:
+    print(f"  [!] Captions upload warning for {video_id}: {proc.stderr.decode('utf-8', errors='replace')}")
+    return None
   try:
-    with urllib.request.urlopen(req) as resp:
-      data = json.loads(resp.read().decode("utf-8"))
-      return data.get("id")
-  except urllib.error.HTTPError as e:
-    err_body = e.read().decode("utf-8", errors="replace")
-    print(f"  [!] Captions upload warning for {video_id} ({e.code}): {err_body}")
+    data = json.loads(proc.stdout.decode("utf-8", errors="replace"))
+    return data.get("id")
+  except Exception as e:
+    print(f"  [!] Captions parse warning for {video_id}: {e}")
     return None
 
 
@@ -666,6 +825,7 @@ def process_proposition_dir(
     access_token: str | None,
     target: str = "both",
     privacy_override: str | None = None,
+    publish_at: str | None = None,
     playlist_1080p: str | None = None,
     playlist_short: str | None = None,
     update_meta_only: bool = False,
@@ -684,7 +844,11 @@ def process_proposition_dir(
   meta = json.loads(yt_json_path.read_text(encoding="utf-8"))
   short_code = meta.get("short_code", prop_dir.name)
   files = meta.get("files", {})
-  privacy = privacy_override or meta.get("privacyStatus", "unlisted")
+  privacy = (
+      "private"
+      if publish_at
+      else (privacy_override or meta.get("privacyStatus", "unlisted"))
+  )
   category_id = str(meta.get("categoryId", "27"))
   tags = meta.get("tags", [])
   description = meta.get("description", "")
@@ -744,7 +908,7 @@ def process_proposition_dir(
       print(f"    MP4       : {v['mp4'].name} ({v['mp4'].stat().st_size / 1024:.1f} KB)")
       print(f"    Thumbnail : {v['thumb'].name if v['thumb'] else 'None'}")
       print(f"    Captions  : {srt_path.name if (srt_path and not skip_captions) else 'None'}")
-      print(f"    Privacy   : {privacy}")
+      print(f"    Privacy   : {privacy}" + (f" (publishAt: {publish_at})" if publish_at else ""))
       if existing_vid:
         action = (
             f"REPLACE & UNLIST [v{old_version}]"
@@ -762,9 +926,10 @@ def process_proposition_dir(
         print(f"  [SKIP] {v['label']} has not been uploaded yet; cannot --sync-missing.")
         continue
       print(f"  [SYNC] Syncing missing thumbnail/captions/playlist for {v['label']} ({existing_vid}) ...")
-      if v["thumb"] and v["thumb"].exists():
+      if not existing.get("thumbnail_set") and v["thumb"] and v["thumb"].exists():
         print(f"  [THUMB] Setting custom thumbnail: {v['thumb'].name} ...")
-        upload_thumbnail(access_token, existing_vid, v["thumb"])
+        if upload_thumbnail(access_token, existing_vid, v["thumb"]):
+          existing["thumbnail_set"] = True
       if not skip_captions and not existing.get("caption_id") and srt_path and srt_path.exists():
         print(f"  [CC] Uploading closed captions: {srt_path.name} ...")
         existing["caption_id"] = upload_captions_srt(access_token, existing_vid, srt_path)
@@ -828,10 +993,14 @@ def process_proposition_dir(
           tags=tags,
           category_id=category_id,
           privacy_status=privacy,
+          publish_at=publish_at,
       )
       if update_thumb and v["thumb"]:
-        upload_thumbnail(access_token, existing_vid, v["thumb"])
+        if upload_thumbnail(access_token, existing_vid, v["thumb"]):
+          existing["thumbnail_set"] = True
       existing["privacyStatus"] = privacy
+      if publish_at:
+        existing["publishAt"] = publish_at
       existing["updated_at"] = datetime.now(timezone.utc).isoformat()
       yt_json_path.write_text(json.dumps(meta, indent=2) + "\n", encoding="utf-8")
       print(f"  [OK] Updated {existing.get('url')}")
@@ -844,7 +1013,7 @@ def process_proposition_dir(
       )
       continue
 
-    print(f"  [UPLOAD] Uploading {v['label']} (v{new_version}): {v['mp4'].name} ...")
+    print(f"  [UPLOAD] Uploading {v['label']} (v{new_version}): {v['mp4'].name} ...", flush=True)
     try:
       vid = upload_video_resumable(
           access_token=access_token,
@@ -854,6 +1023,7 @@ def process_proposition_dir(
           tags=tags,
           category_id=category_id,
           privacy_status=privacy,
+          publish_at=publish_at,
       )
     except RuntimeError as e:
       if "uploadLimitExceeded" in str(e):
@@ -890,19 +1060,22 @@ def process_proposition_dir(
         "video_id": vid,
         "url": url,
         "studio_url": f"https://studio.youtube.com/video/{vid}/edit",
+        "thumbnail_set": False,
         "caption_id": None,
         "playlist_id": v["playlist"],
         "playlist_item_id": None,
         "privacyStatus": privacy,
+        **({"publishAt": publish_at} if publish_at else {}),
         "uploaded_at": now_iso,
     }
     yt_json_path.write_text(json.dumps(meta, indent=2) + "\n", encoding="utf-8")
 
     access_token = get_valid_access_token()
 
+    thumb_ok = False
     if v["thumb"] and v["thumb"].exists():
       print(f"  [THUMB] Setting custom thumbnail: {v['thumb'].name} ...")
-      upload_thumbnail(access_token, vid, v["thumb"])
+      thumb_ok = upload_thumbnail(access_token, vid, v["thumb"])
 
     caption_id = None
     if not skip_captions and srt_path and srt_path.exists():
@@ -949,6 +1122,7 @@ def process_proposition_dir(
       except Exception as e:
         print(f"  [!] Warning unlisting {existing_vid}: {e}")
 
+    uploads[key]["thumbnail_set"] = thumb_ok
     uploads[key]["caption_id"] = caption_id
     uploads[key]["playlist_item_id"] = pl_item_id
     yt_json_path.write_text(json.dumps(meta, indent=2) + "\n", encoding="utf-8")
@@ -1322,6 +1496,8 @@ def _parse_prop_range(spec: str) -> list[int]:
 
 
 def main() -> None:
+  if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(line_buffering=True)
   parser = argparse.ArgumentParser(
       description="Upload GEOMETOR Euclid 16:9 1080p videos and 9:16 Shorts to YouTube."
   )
@@ -1373,6 +1549,20 @@ def main() -> None:
       help="Override privacyStatus from youtube.json.",
   )
   parser.add_argument(
+      "--publish-at",
+      help="ISO-8601 UTC timestamp for scheduled publishing (e.g. '2026-11-05T16:00:00Z'); automatically sets privacyStatus='private'.",
+  )
+  parser.add_argument(
+      "--schedule-start",
+      help="ISO-8601 UTC start timestamp when scheduling a batch of propositions at regular intervals.",
+  )
+  parser.add_argument(
+      "--schedule-step-hours",
+      type=float,
+      default=24.0,
+      help="Hours between scheduled proposition releases when using --schedule-start (default: 24.0).",
+  )
+  parser.add_argument(
       "--playlist-1080p",
       help="Optional YouTube Playlist ID for 16:9 1080p videos.",
   )
@@ -1388,7 +1578,14 @@ def main() -> None:
   parser.add_argument(
       "--no-captions",
       action="store_true",
-      help="Skip .srt caption upload (saves 400 API quota units per video).",
+      default=True,
+      help="Skip .srt caption upload (default: True; saves 400 API quota units per video).",
+  )
+  parser.add_argument(
+      "--with-captions",
+      dest="no_captions",
+      action="store_false",
+      help="Upload .srt caption file (costs 400 API quota units per video).",
   )
   parser.add_argument(
       "--update-meta",
@@ -1470,7 +1667,7 @@ def main() -> None:
     parser.print_help()
     sys.exit(1)
 
-  if args.status or (args.publish and not (args.replace or args.force)):
+  if args.status:
     check_and_publish_propositions(
         prop_dirs=prop_dirs,
         client_secret_path=args.client_secret,
@@ -1507,12 +1704,23 @@ def main() -> None:
     pl_1080p = pl_1080p or auto_1080p
     pl_short = pl_short or auto_short
 
-  for pdir in prop_dirs:
+  from datetime import timedelta
+
+  base_sched_dt = None
+  if args.schedule_start:
+    base_sched_dt = datetime.fromisoformat(args.schedule_start.replace("Z", "+00:00")).astimezone(timezone.utc)
+
+  for idx, pdir in enumerate(prop_dirs):
+    item_publish_at = args.publish_at
+    if base_sched_dt is not None:
+      dt = base_sched_dt + timedelta(hours=idx * args.schedule_step_hours)
+      item_publish_at = dt.strftime("%Y-%m-%dT%H:%M:%SZ")
     ok = process_proposition_dir(
         prop_dir=pdir,
         access_token=access_token,
         target=args.target,
         privacy_override=args.privacy,
+        publish_at=item_publish_at,
         playlist_1080p=pl_1080p,
         playlist_short=pl_short,
         update_meta_only=args.update_meta,

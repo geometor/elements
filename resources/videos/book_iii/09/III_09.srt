@@ -1,0 +1,63 @@
+1
+00:00:00,420 --> 00:00:02,427
+Book Three, Proposition Nine.
+
+2
+00:00:02,427 --> 00:00:12,741
+If a point be taken within a circle, and more than two equal segments fall from the point on the circle, the point taken is the center of the circle.
+
+3
+00:00:12,741 --> 00:00:22,640
+Let A B C be a circle and D a point within it, and from D let more than two equal segments, namely D A, D B, and D C, fall on the circle A B C.
+
+4
+00:00:22,640 --> 00:00:26,170
+I say that the point D is the center of the circle.
+
+5
+00:00:26,590 --> 00:00:34,237
+Join the chords A B and B C by Postulate One, and bisect them at the points E and F by One Ten.
+
+6
+00:00:34,237 --> 00:00:41,160
+Then join E D and F D, and extend them across the circle to the points G, K, H, and L.
+
+7
+00:00:41,580 --> 00:00:50,426
+Because A E equals E B, E D is common, and base D A equals base D B, the triangles A E D and B E D are congruent by One Eight.
+
+8
+00:00:50,426 --> 00:00:59,694
+Therefore angle A E D equals angle B E D, so each is a right angle by Definition Ten, and G K bisects the chord A B at right angles.
+
+9
+00:00:59,694 --> 00:01:10,015
+By the Porism to Three One, the perpendicular bisector of any chord passes through the center of the circle; hence the center of A B C lies on G K.
+
+10
+00:01:10,015 --> 00:01:14,929
+By the exact same reasoning on chord B C, the center also lies on H L.
+
+11
+00:01:14,929 --> 00:01:23,425
+Since the two straight lines G K and H L have no point in common except D, the point D is the center of the circle A B C.
+
+12
+00:01:23,425 --> 00:01:25,180
+As was required to prove.
+
+13
+00:01:25,600 --> 00:01:40,253
+Already cited by Aristotle in the Meteorologica, Proposition Three Nine is the logical contrapositive of Three Seven: since no eccentric point can send three equal segments to a circle, any point that does must be the center.
+
+14
+00:01:40,253 --> 00:01:57,120
+Rather than relying on indirect proof from Three Seven as Simson later did, Heiberg's critical edition preserves Euclid's direct constructive proof—intersecting two perpendicular chord bisectors from Three One across thirty-four ancestor nodes in the G-Index.
+
+15
+00:01:57,540 --> 00:02:11,525
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Nine in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+16
+00:02:11,525 --> 00:02:19,380
+Subscribe to at geometor, share your questions in the comments, and star our repositories at github dot com slash geometor.

@@ -1,0 +1,73 @@
+WEBVTT
+
+1
+00:00:00.420 --> 00:00:02.415
+Book Four, Proposition Eleven.
+
+2
+00:00:02.415 --> 00:00:07.070
+In a given circle to inscribe an equilateral and equiangular pentagon.
+
+3
+00:00:07.070 --> 00:00:15.450
+Let A B C D E be the given circle; it is required to inscribe in the circle A B C D E an equilateral and equiangular pentagon.
+
+4
+00:00:15.870 --> 00:00:26.437
+By Four Ten, set out the golden isosceles triangle F G H having each of its base angles at G and H double the vertex angle at F.
+
+5
+00:00:26.437 --> 00:00:40.306
+By Four Two, inscribe in circle A B C D E the triangle A C D equiangular with triangle F G H, so that each of the base angles A C D and C D A is double the angle C A D.
+
+6
+00:00:40.306 --> 00:00:49.800
+By One Nine, bisect angles A C D and C D A respectively by the chords C E and D B, and join A B, B C, D E, and E A.
+
+7
+00:00:50.220 --> 00:01:07.422
+Because each of the angles A C D and C D A is double angle C A D and has been bisected by C E and D B, the five inscribed angles D A C, A C E, E C D, C D B, and B D A are all equal to one another.
+
+8
+00:01:07.422 --> 00:01:28.135
+By Three Twenty-Six, equal inscribed angles stand on equal arcs, so the five arcs A B, B C, C D, D E, and E A are equal; and by Three Twenty-Nine, equal arcs are subtended by equal chords, so sides A B, B C, C D, D E, and E A are equal.
+
+9
+00:01:28.135 --> 00:01:32.348
+Therefore the pentagon A B C D E is equilateral.
+
+10
+00:01:32.348 --> 00:01:42.177
+Next, because arc A B equals arc D E, add arc B C D to each: the whole arc A B C D equals the whole arc E D C B.
+
+11
+00:01:42.177 --> 00:02:00.433
+By Three Twenty-Seven, the inscribed angles A E D and B A E standing on those arcs are equal, and by the same reasoning all five interior angles B A E, A B C, B C D, C D E, and A E D are equal to one another.
+
+12
+00:02:00.433 --> 00:02:11.140
+Therefore an equilateral and equiangular pentagon A B C D E has been inscribed in the given circle, as was required to do.
+
+13
+00:02:11.560 --> 00:02:16.761
+Proposition Four Eleven crowns the Pythagorean theory of regular polygons in the circle.
+
+14
+00:02:16.761 --> 00:02:33.367
+As Heath remarks against De Morgan, rather than stepping off a decagon around the circumference, Euclid inscribes the golden triangle A C D and bisects its base angles with chords C E and D B—tracing four of the five lines of the Pythagorean pentagram-star right inside the circle.
+
+15
+00:02:33.367 --> 00:02:44.773
+Each of the five thirty-six-degree inscribed angles intercepts one-fifth of the circumference, while each interior pentagon angle spans three-fifths of the circle, or one hundred eight degrees.
+
+16
+00:02:44.773 --> 00:03:00.080
+In the GEOMETOR G-Index, node G one hundred sixty-three unites twelve direct rules across one hundred eight ancestor nodes, directly enabling the circumscribed pentagon in Four Twelve, the fifteen-gon in Four Sixteen, and the Platonic solids of Book Thirteen.
+
+17
+00:03:00.500 --> 00:03:14.623
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Four Eleven in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+18
+00:03:14.623 --> 00:03:21.620
+Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

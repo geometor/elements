@@ -1,0 +1,63 @@
+1
+00:00:00,420 --> 00:00:02,205
+Book Two, Proposition One.
+
+2
+00:00:02,205 --> 00:00:16,896
+If there be two segments, and one of them be cut into any number of segments whatever, the rectangle contained by the two segments is equal to the rectangles contained by the uncut segment and each of the segments.
+
+3
+00:00:16,896 --> 00:00:21,770
+Let A and B C be two segments, and let B C be cut at random at D and E.
+
+4
+00:00:22,190 --> 00:00:30,611
+From B, draw B F at right angles to B C by One Eleven, and cut off B G equal to A by One Three.
+
+5
+00:00:30,611 --> 00:00:41,160
+Through G, draw G H parallel to B C by One Thirty-One; and through D, E, and C, draw D K, E L, and C H parallel to B G.
+
+6
+00:00:41,580 --> 00:00:47,622
+Then the whole rectangle B H equals the sum of the rectangles B K, D L, and E H.
+
+7
+00:00:47,622 --> 00:00:55,250
+Because B G equals A, B H is the rectangle contained by A and B C, and B K is contained by A and B D.
+
+8
+00:00:55,250 --> 00:01:04,161
+By One Thirty-Four, opposite sides of a parallelogram are equal, so D K and E L each equal B G, and therefore equal A.
+
+9
+00:01:04,161 --> 00:01:10,505
+Thus D L is the rectangle contained by A and D E, and E H is contained by A and E C.
+
+10
+00:01:10,505 --> 00:01:20,323
+Therefore, the rectangle contained by A and B C equals the sum of the rectangles contained by A and B D, A and D E, and A and E C.
+
+11
+00:01:20,323 --> 00:01:22,060
+Which was to be proved.
+
+12
+00:01:22,480 --> 00:01:25,155
+Book Two opens Euclid's geometric algebra.
+
+13
+00:01:25,155 --> 00:01:37,320
+Where modern algebra writes the distributive law—a times the sum of b, c, and d equals a b plus a c plus a d—Euclid proves it directly as an identity of area, free of numerical approximation.
+
+14
+00:01:37,320 --> 00:01:50,440
+In the GEOMETOR G-Index, node G eighty-two synthesizes seven foundational rules from Book One—perpendiculars, parallels, and parallelogram equality—with Book Two's first definition, the contained rectangle.
+
+15
+00:01:50,860 --> 00:02:05,641
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Two One in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+16
+00:02:05,641 --> 00:02:13,100
+Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

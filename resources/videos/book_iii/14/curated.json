@@ -1,0 +1,59 @@
+{
+  "III.14": {
+    "subtype": "theorem",
+    "args": [
+      ":g:`( A B D C ) <g1:( E A )>`",
+      ":g:`/ A B / <g1:/ A B />`",
+      ":g:`/ C D / <g1:/ C D />`"
+    ],
+    "returns": [],
+    "given": ":g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` chords in :g:`( A B D C ) <g1:( E A )>`",
+    "contract": ":g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ C D />` :g:`/ C D / <g1:/ C D />` ⇔ :g:`/ E F / <g1:/ E F />` :eq:`= <g1:/ E F / = g1:/ E G />` :g:`/ E G / <g1:/ E G />`",
+    "steps": [
+      [
+        "given",
+        [
+          "III.def.4"
+        ],
+        ":g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` chords in :g:`( A B D C ) <g1:( E A )>`, first with :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ C D />` :g:`/ C D / <g1:/ C D />`"
+      ],
+      [
+        "construct",
+        [
+          "III.1",
+          "I.12",
+          "I.post.1"
+        ],
+        "@fn(III.1)(:g:`( A B D C ) <g1:( E A )>`) → :g:`E <g1:E>`, :g:`/ E F / <g1:/ E F />` ⊥ :g:`/ A B / <g1:/ A B />`, :g:`/ E G / <g1:/ E G />` ⊥ :g:`/ C D / <g1:/ C D />`, join :g:`/ A E / <g1:/ A E />`, :g:`/ E C / <g1:/ E C />`"
+      ],
+      [
+        "assert",
+        [
+          "III.3"
+        ],
+        "@fn(III.3)(:g:`/ E F / <g1:/ E F />`, :g:`/ A B / <g1:/ A B />`) → :g:`/ A F / <g1:/ A F />` :eq:`= <g1:/ A F / = g1:/ F B />` :g:`/ F B / <g1:/ F B />`, :g:`/ C G / <g1:/ C G />` :eq:`= <g1:/ C G / = g1:/ G D />` :g:`/ G D / <g1:/ G D />` → (:g:`/ A B / <g1:/ A B />` = :g:`/ C D / <g1:/ C D />` ⇔ :g:`/ A F / <g1:/ A F />` :eq:`= <g1:/ A F / = g1:/ C G />` :g:`/ C G / <g1:/ C G />`)"
+      ],
+      [
+        "assert",
+        [
+          "I.def.15",
+          "I.47"
+        ],
+        ":g:`/ A E / <g1:/ A E />` :eq:`= <g1:/ A E / = g1:/ E C />` :g:`/ E C / <g1:/ E C />` → sq(:g:`/ A F / <g1:/ A F />`) + sq(:g:`/ E F / <g1:/ E F />`) = sq(:g:`/ A E / <g1:/ A E />`) = sq(:g:`/ E C / <g1:/ E C />`) = sq(:g:`/ C G / <g1:/ C G />`) + sq(:g:`/ E G / <g1:/ E G />`)"
+      ],
+      [
+        "assert",
+        [
+          "I.cn.3",
+          "III.def.4"
+        ],
+        ":g:`/ A F / <g1:/ A F />` :eq:`= <g1:/ A F / = g1:/ C G />` :g:`/ C G / <g1:/ C G />` ⇒ sq(:g:`/ E F / <g1:/ E F />`) = sq(:g:`/ E G / <g1:/ E G />`) ⇒ :g:`/ E F / <g1:/ E F />` :eq:`= <g1:/ E F / = g1:/ E G />` :g:`/ E G / <g1:/ E G />` (and conversely :g:`/ E F / <g1:/ E F />` = :g:`/ E G / <g1:/ E G />` ⇒ :g:`/ A F / <g1:/ A F />` = :g:`/ C G / <g1:/ C G />` ⇒ :g:`/ A B / <g1:/ A B />` = :g:`/ C D / <g1:/ C D />`)"
+      ],
+      [
+        "conclude",
+        [],
+        ":g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ C D />` :g:`/ C D / <g1:/ C D />` ⇔ :g:`/ E F / <g1:/ E F />` :eq:`= <g1:/ E F / = g1:/ E G />` :g:`/ E G / <g1:/ E G />`"
+      ]
+    ]
+  }
+}

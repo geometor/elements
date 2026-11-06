@@ -1,0 +1,19 @@
+[bell:proposition]
+[style: brisk, clear, architectural voice; steady studio cadence]
+Book Three, Proposition Thirty-Three. On a given segment, to describe a segment of a circle admitting an angle equal to a given rectilineal angle. <pause> Let A B be the given segment and the angle at C be the given rectilineal angle. It is required to describe on A B a circle segment admitting an angle equal to C.
+
+[bell:construction]
+[style: methodical, precise constructive cadence]
+At point A on A B, construct angle B A D equal to angle C by One Twenty-Three. From A, draw A E at right angles to D A by One Eleven. Bisect A B at F by One Ten, draw F G at right angles to A B meeting A E at G, and join G B. <pause> Because A F equals F B, F G is common, and the right angles at F are equal, triangles A F G and B F G are congruent by One Four, so A G equals G B. Construct circle G A, with center G and defining radius point A; it passes through B as circle A B E. Join E B.
+
+[bell:insight]
+[style: luminous, deductive geometric clarity]
+Because A D is drawn from the extremity A of diameter A E at right angles to A E, the line A D touches the circle A B E at A by the Porism to Three Sixteen. <pause> Since the tangent A D touches the circle at A and the chord A B is drawn across from the point of contact, by Three Thirty-Two the angle D A B equals the angle A E B in the alternate segment of the circle. <pause> But angle D A B was constructed equal to the given angle C; therefore angle A E B also equals angle C. And if C is a right angle, the semicircle on A B admits a right angle directly by Three Thirty-One. Thus on the given segment A B, the circle segment A E B has been described admitting an angle equal to C, as was required to do.
+
+[bell:system]
+[style: reflective, scholarly, architectural synthesis]
+Proposition Three Thirty-Three is the constructive inverse of the Alternate Segment Theorem: by laying off the target angle C between the chord A B and a line A D that will become the tangent, the center G of the required circle is uniquely determined as the intersection of the normal to A D at A and the perpendicular bisector of A B. As Robert Simson noted, the acute and obtuse cases share this identical construction, while Clavius observed that the right-angle case reduces immediately to a semicircle on A B. <pause> In the GEOMETOR G-Index, node G one hundred forty-one synthesizes nineteen rules across Books One and Three into a single locus tool—the arc of constant subtended angle on a fixed chord.
+
+[bell:resolve]
+[style: warm, inviting, resonant studio close]
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Thirty-Three in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe to at geometor, share your questions in the comments, and star our repositories at github dot com slash geometor.

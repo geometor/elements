@@ -1,0 +1,57 @@
+{
+  "IV.16": {
+    "subtype": "problem",
+    "args": [
+      ":g:`( A B C D ) <g1:( A B C D )>`"
+    ],
+    "returns": [
+      ":g:`< A B E C D > <g1:< A B E C D >>`"
+    ],
+    "given": "Circle :g:`( A B C D ) <g1:( A B C D )>`",
+    "contract": "Fifteen-angled figure :g:`< A B E C D > <g1:< A B E C D >>` is :term:`equilateral <G.13>`, equiangular, and :term:`inscribed in <G.148>` :g:`( A B C D ) <g1:( A B C D )>`",
+    "steps": [
+      [
+        "given",
+        [
+          "I.def.14",
+          "I.def.15",
+          "IV.def.3"
+        ],
+        "Circle :g:`( A B C D ) <g1:( A B C D )>`"
+      ],
+      [
+        "construct",
+        [
+          "IV.2",
+          "IV.11"
+        ],
+        "In :g:`( A B C D ) <g1:( A B C D )>` inscribe side :g:`/ A C / <g1:/ A C />` of equilateral triangle :g:`< A C D > <g1:< A C D >>` (@fn(IV.2)) and side :g:`/ A B / <g1:/ A B />` of regular pentagon (@fn(IV.11))"
+      ],
+      [
+        "construct",
+        [
+          "III.30",
+          "I.post.1"
+        ],
+        "@fn(III.30)(:g:`( B C ) <g1:( B C )>`) → :g:`E <g1:E>` (:g:`( B E ) <g1:( B E )>` :eq:`= <g1:( B E ) = g1:( E C )>` :g:`( E C ) <g1:( E C )>`); @fn(I.post.1)(:g:`B <g1:B>`, :g:`E <g1:E>`, :g:`C <g1:C>`) → :g:`/ B E / <g1:/ B E />`, :g:`/ E C / <g1:/ E C />`"
+      ],
+      [
+        "assert",
+        [
+          "I.cn.3"
+        ],
+        "Of 15 equal parts of :g:`( A B C D ) <g1:( A B C D )>`, arc :g:`( A B C ) <g1:( A B C )>` (⅓ of circle) contains 5 and arc :g:`( A B ) <g1:( A B )>` (⅕ of circle) contains 3 → remainder arc :g:`( B C ) <g1:( B C )>` contains 5 − 3 = 2 parts"
+      ],
+      [
+        "conclude",
+        [
+          "III.29",
+          "IV.1",
+          "IV.def.3",
+          "IV.def.7"
+        ],
+        "Bisecting :g:`( B C ) <g1:( B C )>` at :g:`E <g1:E>` makes each of :g:`( B E ) <g1:( B E )>`, :g:`( E C ) <g1:( E C )>` equal to 1/15 of :g:`( A B C D ) <g1:( A B C D )>`; fitting chords equal to :g:`/ B E / <g1:/ B E />`, :g:`/ E C / <g1:/ E C />` continuously around :g:`( A B C D ) <g1:( A B C D )>` inscribes the regular fifteen-angled figure :g:`< A B E C D > <g1:< A B E C D >>`"
+      ]
+    ]
+  }
+}

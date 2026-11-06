@@ -1,0 +1,438 @@
+[
+  {
+    "prop_id": "BOOK III • PROP. 8",
+    "short_title": "distances to a circle from an exterior point",
+    "g_id": "G.106",
+    "folio": "Folios 0023–0025 • pp. 17–19",
+    "enunciation": "If a point be taken outside a circle and from the point segments be drawn through to the circle, one of which is through the center and the others are drawn at random, then, of the segments which fall on the concave arc, that through the center is greatest, while of the rest the nearer to that through the center is always greater than the more remote, but, of the segments falling on the convex arc, that between the point and the diameter is least, while of the rest the nearer to the least is always less than the more remote, and only two equal segments will fall on the circle from the point, one on each side of the least.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.106/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.106/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/08/",
+    "step_total": 9,
+    "subslides": [
+      {
+        "step_num": 1,
+        "step_kind": "GIVEN",
+        "chapter": "circle ( A B C ), exterior point D, secants / D A /, / D E /, / D F /, / D C /",
+        "symbolic": "( A B C ), D exterior, secants / D A /, / D E /, / D F /, / D C /",
+        "visible_ids": [
+          "el-circle-ABC",
+          "el-seg-DG",
+          "el-seg-GM",
+          "el-seg-MA",
+          "el-seg-DA",
+          "el-seg-DK",
+          "el-seg-KE",
+          "el-seg-DE",
+          "el-seg-DL",
+          "el-seg-LF",
+          "el-seg-DF",
+          "el-seg-DH",
+          "el-seg-HC",
+          "el-seg-DC",
+          "el-pt-A",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-E",
+          "el-pt-F",
+          "el-pt-G",
+          "el-pt-H",
+          "el-pt-K",
+          "el-pt-L",
+          "lbl-A",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E",
+          "lbl-F",
+          "lbl-G",
+          "lbl-H",
+          "lbl-K",
+          "lbl-L"
+        ],
+        "active_ids": [
+          "el-circle-ABC",
+          "hl-circle-ABC",
+          "el-seg-DA",
+          "hl-seg-DA",
+          "el-seg-DE",
+          "hl-seg-DE",
+          "el-seg-DF",
+          "hl-seg-DF",
+          "el-seg-DC",
+          "hl-seg-DC",
+          "el-pt-D",
+          "lbl-D"
+        ],
+        "equal_ids": [],
+        "clause_html": "<div class=\"clause-line\">From exterior point <span class=\"g-tok\">D</span> draw secants <span class=\"g-tok\">/ D A /</span> (through center),</div><div class=\"clause-line\"><span class=\"g-tok\">/ D E /</span>, <span class=\"g-tok\">/ D F /</span>, <span class=\"g-tok\">/ D C /</span> cutting the convex arc at <span class=\"g-tok\">G, K, L, H</span>.</div>",
+        "just_id": "G.10 • I.def.15, G.61 • I.def.17",
+        "just_title": "Secants from an exterior point D meet the convex circumference first (G, K, L, H) and the concave circumference second (A, E, F, C)."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK III • PROP. 8",
+    "short_title": "distances to a circle from an exterior point",
+    "g_id": "G.106",
+    "folio": "Folios 0023–0025 • pp. 17–19",
+    "enunciation": "If a point be taken outside a circle and from the point segments be drawn through to the circle, one of which is through the center and the others are drawn at random, then, of the segments which fall on the concave arc, that through the center is greatest, while of the rest the nearer to that through the center is always greater than the more remote, but, of the segments falling on the convex arc, that between the point and the diameter is least, while of the rest the nearer to the least is always less than the more remote, and only two equal segments will fall on the circle from the point, one on each side of the least.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.106/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.106/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/08/",
+    "step_total": 9,
+    "subslides": [
+      {
+        "step_num": 2,
+        "step_kind": "CONSTRUCT",
+        "chapter": "find center M, join radii, and construct < D M B ) = < K M D )",
+        "symbolic": "find_circle_center → M; copy_angle → < D M B ) = < K M D )",
+        "visible_ids": [
+          "el-circle-ABC",
+          "el-seg-DG",
+          "el-seg-GM",
+          "el-seg-MA",
+          "el-seg-DA",
+          "el-seg-DK",
+          "el-seg-KE",
+          "el-seg-DE",
+          "el-seg-DL",
+          "el-seg-LF",
+          "el-seg-DF",
+          "el-seg-DH",
+          "el-seg-HC",
+          "el-seg-DC",
+          "el-seg-DB",
+          "el-seg-ME",
+          "el-seg-MF",
+          "el-seg-MC",
+          "el-seg-MK",
+          "el-seg-ML",
+          "el-seg-MH",
+          "el-seg-MB",
+          "el-ang-KMD",
+          "el-ang-DMB",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-E",
+          "el-pt-F",
+          "el-pt-G",
+          "el-pt-H",
+          "el-pt-K",
+          "el-pt-L",
+          "el-pt-M",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D",
+          "lbl-E",
+          "lbl-F",
+          "lbl-G",
+          "lbl-H",
+          "lbl-K",
+          "lbl-L",
+          "lbl-M"
+        ],
+        "active_ids": [
+          "el-pt-M",
+          "lbl-M",
+          "el-seg-ME",
+          "hl-seg-ME",
+          "el-seg-MF",
+          "hl-seg-MF",
+          "el-seg-MC",
+          "hl-seg-MC",
+          "el-seg-MK",
+          "hl-seg-MK",
+          "el-seg-ML",
+          "hl-seg-ML",
+          "el-seg-MH",
+          "hl-seg-MH",
+          "el-seg-MB",
+          "hl-seg-MB",
+          "el-seg-DB",
+          "hl-seg-DB",
+          "el-pt-B",
+          "lbl-B"
+        ],
+        "equal_ids": [
+          "el-ang-KMD",
+          "hl-ang-KMD",
+          "hl-arc-KMD",
+          "el-ang-DMB",
+          "hl-ang-DMB",
+          "hl-arc-DMB"
+        ],
+        "clause_html": "<div class=\"clause-line\"><span class=\"fn-tok\">find_circle_center</span>(<span class=\"g-tok\">( A B C )</span>) → <span class=\"g-tok\">M</span>; join radii to <span class=\"g-tok\">M</span>;</div><div class=\"clause-line\"><span class=\"fn-tok\">copy_angle</span>(<span class=\"g-tok\">/ M D /</span>, <span class=\"g-tok\">M</span>, <span class=\"g-tok\">&lt; K M D )</span>) → <span class=\"eq-tok\">&lt; D M B ) = &lt; K M D )</span>.</div>",
+        "just_id": "G.98 • III.1, G.14 • I.post.1, G.48 • I.23",
+        "just_title": "Find the center M (III.1), join radii from M (I.post.1), and construct < D M B ) equal to < K M D ) (I.23)."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK III • PROP. 8",
+    "short_title": "distances to a circle from an exterior point",
+    "g_id": "G.106",
+    "folio": "Folios 0023–0025 • pp. 17–19",
+    "enunciation": "If a point be taken outside a circle and from the point segments be drawn through to the circle, one of which is through the center and the others are drawn at random, then, of the segments which fall on the concave arc, that through the center is greatest, while of the rest the nearer to that through the center is always greater than the more remote, but, of the segments falling on the convex arc, that between the point and the diameter is least, while of the rest the nearer to the least is always less than the more remote, and only two equal segments will fall on the circle from the point, one on each side of the least.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.106/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.106/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/08/",
+    "step_total": 9,
+    "subslides": [
+      {
+        "step_num": 3,
+        "step_kind": "ASSERT",
+        "chapter": "concave arc: / D A / > / D E / > / D F / > / D C / by I.20 and I.24",
+        "symbolic": "/ D A / > / D E / > / D F / > / D C /",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-tri-EMD",
+          "hl-tri-EMD",
+          "el-tri-FMD",
+          "hl-tri-FMD",
+          "el-ang-EMD",
+          "hl-ang-EMD",
+          "el-ang-FMD",
+          "hl-ang-FMD",
+          "el-seg-DA",
+          "hl-seg-DA",
+          "el-seg-DE",
+          "hl-seg-DE",
+          "el-seg-DF",
+          "hl-seg-DF",
+          "el-seg-DC",
+          "hl-seg-DC"
+        ],
+        "equal_ids": [
+          "el-seg-MA",
+          "hl-seg-MA",
+          "el-seg-ME",
+          "hl-seg-ME",
+          "el-seg-MF",
+          "hl-seg-MF"
+        ],
+        "tick_ids": [
+          "el-seg-MA",
+          "el-seg-ME",
+          "el-seg-MF"
+        ],
+        "clause_html": "<div class=\"clause-line\">On the concave arc, <span class=\"eq-tok\">/ D A / = / M E / + / M D /</span> &gt; <span class=\"g-tok\">/ D E /</span>;</div><div class=\"clause-line\"><span class=\"g-tok\">&lt; E M D )</span> &gt; <span class=\"g-tok\">&lt; F M D )</span> → <span class=\"eq-tok\">/ D E / &gt; / D F / &gt; / D C /</span>.</div>",
+        "just_id": "G.45 • I.20, G.49 • I.24",
+        "just_title": "By I.20, / D A / exceeds / D E /; by the Hinge Theorem (I.24), greater central angles subtend greater secants."
+      },
+      {
+        "step_num": 4,
+        "step_kind": "ASSERT",
+        "chapter": "convex arc: / D G / < / D K / < / D L / < / D H / by I.20 and I.21",
+        "symbolic": "/ D G / < / D K / < / D L / < / D H /",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-tri-MKD",
+          "hl-tri-MKD",
+          "el-tri-MLD",
+          "hl-tri-MLD",
+          "el-seg-DG",
+          "hl-seg-DG",
+          "el-seg-DK",
+          "hl-seg-DK",
+          "el-seg-DL",
+          "hl-seg-DL",
+          "el-seg-DH",
+          "hl-seg-DH"
+        ],
+        "equal_ids": [
+          "el-seg-GM",
+          "hl-seg-GM",
+          "el-seg-MK",
+          "hl-seg-MK",
+          "el-seg-ML",
+          "hl-seg-ML",
+          "el-seg-MH",
+          "hl-seg-MH"
+        ],
+        "tick_ids": [
+          "el-seg-GM",
+          "el-seg-MK",
+          "el-seg-ML",
+          "el-seg-MH"
+        ],
+        "clause_html": "<div class=\"clause-line\">By I.20, <span class=\"g-tok\">/ M K / + / D K /</span> &gt; <span class=\"g-tok\">/ M D /</span> → <span class=\"eq-tok\">/ D G / &lt; / D K /</span>;</div><div class=\"clause-line\">by I.21 in <span class=\"g-tok\">&lt; M L D &gt;</span>, <span class=\"eq-tok\">/ D K / &lt; / D L / &lt; / D H /</span>.</div>",
+        "just_id": "G.45 • I.20, G.46 • I.21",
+        "just_title": "Interior triangle segments / M K / + / D K / are less than / M L / + / D L / (I.21); subtracting equal radii orders the convex distances."
+      },
+      {
+        "step_num": 5,
+        "step_kind": "ASSERT",
+        "chapter": "< M K D > ≃ < M B D > → / D K / = / D B /; third equal / D N / impossible",
+        "symbolic": "< M K D > ≃ < M B D > → / D K / = / D B /; / D N / = / D K / ⇒⇐",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-tri-MKD",
+          "hl-tri-MKD",
+          "el-tri-MBD",
+          "hl-tri-MBD",
+          "el-seg-DN",
+          "hl-seg-DN",
+          "el-seg-MN",
+          "hl-seg-MN",
+          "el-pt-N",
+          "lbl-N"
+        ],
+        "equal_ids": [
+          "el-seg-DK",
+          "hl-seg-DK",
+          "el-seg-DB",
+          "hl-seg-DB",
+          "el-ang-KMD",
+          "hl-ang-KMD",
+          "hl-arc-KMD",
+          "el-ang-DMB",
+          "hl-ang-DMB",
+          "hl-arc-DMB"
+        ],
+        "tick_ids": [
+          "el-seg-DK",
+          "el-seg-DB"
+        ],
+        "clause_html": "<div class=\"clause-line\">By SAS, <span class=\"eq-tok\">&lt; M K D &gt; ≃ &lt; M B D &gt;</span> → <span class=\"eq-tok\">/ D K / = / D B /</span>;</div><div class=\"clause-line\">any third equal <span class=\"g-tok\">/ D N /</span> gives <span class=\"eq-tok\">/ D B / = / D N /</span> <span class=\"g-tok\">⇒⇐</span></div>",
+        "just_id": "G.24 • I.4, G.16 • I.cn.1",
+        "just_title": "SAS congruence (I.4) gives / D K / = / D B /; a third equal segment / D N / contradicts strict monotonicity on the convex arc."
+      },
+      {
+        "step_num": 6,
+        "step_kind": "∴",
+        "is_punchline": true,
+        "chapter": "/ D A / greatest, / D G / least, monotonic arcs, unique equal pairs",
+        "symbolic": "∴ / D A / > / D E / > / D F / > / D C /, / D G / < / D K / = / D B / < / D L / < / D H /",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-circle-ABC",
+          "hl-circle-ABC",
+          "el-seg-DA",
+          "hl-seg-DA",
+          "el-seg-DE",
+          "hl-seg-DE",
+          "el-seg-DF",
+          "hl-seg-DF",
+          "el-seg-DC",
+          "hl-seg-DC",
+          "el-seg-DG",
+          "hl-seg-DG"
+        ],
+        "equal_ids": [
+          "el-seg-DK",
+          "hl-seg-DK",
+          "el-seg-DB",
+          "hl-seg-DB",
+          "el-pt-K",
+          "el-pt-B",
+          "lbl-K",
+          "lbl-B"
+        ],
+        "tick_ids": [
+          "el-seg-DK",
+          "el-seg-DB"
+        ],
+        "clause_html": "<div class=\"clause-line\">∴ <span class=\"eq-tok\">/ D A / &gt; / D E / &gt; / D F / &gt; / D C /</span> and <span class=\"eq-tok\">/ D G / &lt; / D K / &lt; / D L / &lt; / D H /</span>,</div><div class=\"clause-line\">with only two equal segments <span class=\"eq-tok\">/ D K / = / D B /</span> from <span class=\"g-tok\">D</span>.</div>",
+        "just_id": "G.106 • III.8",
+        "just_title": "From an exterior point D, / D A / is greatest, / D G / is least, and at most two equal segments fall on the circle."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK III • PROP. 8",
+    "short_title": "distances to a circle from an exterior point",
+    "g_id": "G.106",
+    "folio": "Folios 0023–0025 • pp. 17–19",
+    "enunciation": "If a point be taken outside a circle and from the point segments be drawn through to the circle, one of which is through the center and the others are drawn at random, then, of the segments which fall on the concave arc, that through the center is greatest, while of the rest the nearer to that through the center is always greater than the more remote, but, of the segments falling on the convex arc, that between the point and the diameter is least, while of the rest the nearer to the least is always less than the more remote, and only two equal segments will fall on the circle from the point, one on each side of the least.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.106/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.106/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/08/",
+    "step_total": 9,
+    "widescreen_only": true,
+    "subslides": [
+      {
+        "step_num": 7,
+        "step_kind": "COMMENTARY",
+        "widescreen_only": true,
+        "chapter": "interior triangle bounds (I.21) & converses of III.7–8",
+        "symbolic": "< M K D > ⊂ < M L D > → / M K / + / D K / < / M L / + / D L /",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-tri-MKD",
+          "hl-tri-MKD",
+          "el-tri-MLD",
+          "hl-tri-MLD",
+          "el-seg-DK",
+          "hl-seg-DK",
+          "el-seg-DL",
+          "hl-seg-DL"
+        ],
+        "equal_ids": [
+          "el-seg-MK",
+          "hl-seg-MK",
+          "el-seg-ML",
+          "hl-seg-ML"
+        ],
+        "tick_ids": [
+          "el-seg-MK",
+          "el-seg-ML"
+        ],
+        "clause_html": "<div class=\"clause-line\"><strong>Convex vs. Concave Arcs &amp; I.21</strong></div><div class=\"clause-line\"><span class=\"eq-tok\">/ M K / + / D K / &lt; / M L / + / D L / → / D K / &lt; / D L /</span></div><div class=\"clause-line\" style=\"font-size:28px;color:#cbd5e1;\">Euclid uses I.21 for the convex arc while Heron's alternative requires anticipating III.36 (power of an exterior point).</div>",
+        "just_tag": "✦ HEATH COMMENTARY",
+        "just_id": "Heath (1908) • Vol. II, pp. 20–21",
+        "just_title": "The converses of III.7 and III.8 locate the center of a circle along the line of maximum or minimum distance from any point."
+      },
+      {
+        "step_num": 8,
+        "step_kind": "GENEALOGY",
+        "widescreen_only": true,
+        "chapter": "G.106 dependency tree & symbolic model",
+        "symbolic": "G.24, G.45, G.46, G.48, G.49, G.98 → G.106",
+        "stage_html": "<div style=\"width:100%;height:100%;display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:36px 8px 8px 8px;align-items:stretch;\"><div style=\"background:rgba(11,14,21,0.92);border:1.5px solid rgba(56,189,248,0.45);border-radius:16px;padding:22px 24px;display:flex;flex-direction:column;justify-content:space-between;\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.12em;color:#38bdf8;\">◈ G-INDEX PREREQUISITES → G.106</div><div style=\"display:flex;flex-direction:column;gap:10px;margin:12px 0;\"><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #5ec27e;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.98 (III.1)</span><span style=\"color:#f4f1ea;\">find circle center</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.49 (I.24)</span><span style=\"color:#f4f1ea;\">hinge theorem</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.46 (I.21)</span><span style=\"color:#f4f1ea;\">interior triangle bounds</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.45 (I.20)</span><span style=\"color:#f4f1ea;\">triangle inequality</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.24 (I.4)</span><span style=\"color:#f4f1ea;\">SAS congruence</span></div></div><div style=\"background:rgba(232,184,90,0.16);border:1.5px solid #e8b85a;border-radius:10px;padding:11px 16px;text-align:center;font-family:'JetBrains Mono',monospace;font-size:17px;font-weight:700;color:#e8b85a;\">↓ G.106 (III.8) • point taken outside</div></div><div style=\"background:rgba(11,14,21,0.92);border:1.5px solid rgba(232,184,90,0.4);border-radius:16px;padding:22px 24px;display:flex;flex-direction:column;justify-content:space-between;\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.12em;color:#e8b85a;\">⚙ GEOMETOR.MODEL • G.106/g1.py</div><pre style=\"font-family:'JetBrains Mono',monospace;font-size:14.5px;line-height:1.48;color:#e2e8f0;background:rgba(7,9,14,0.85);padding:16px;border-radius:10px;border:1px solid rgba(148,163,184,0.25);overflow:hidden;\">model = Model(&quot;III.8&quot;)\nmodel.construct_circle(M, P_unit)\nmodel.construct_line(D, A)\n\n# Secants D-K-E, D-L-F, D-H-C\nfor P_near, P_far in [(K, E), (L, F), (H, C)]:\n    model.set_segment(D, P_near)\n    model.set_segment(D, P_far)\n    model.set_section([D, P_near, P_far])\n\nfor P in [E, F, C, K, L, H, B, N]:\n    model.set_polygon([D, M, P])</pre><div style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">47 total ancestor nodes in G-Index • 13 direct dependencies</div></div></div>",
+        "clause_html": "<div class=\"clause-line\"><span class=\"coincide-tok\">G.106</span> synthesizes <span class=\"g-tok\">13 direct prerequisites</span></div><div class=\"clause-line\">across <span class=\"g-tok\">47 total ancestor nodes</span> in the G-Index</div><div class=\"clause-line\" style=\"font-size:28px;color:#cbd5e1;\">Uniting III.1 (circle center) with I.20, I.21, and I.24 to order all secants from an exterior point.</div>",
+        "just_tag": "◈ G-INDEX GENEALOGY",
+        "just_id": "G.106 • 13 Direct Rules",
+        "just_title": "Depends on G.1, G.4, G.10, G.11, G.12, G.14, G.24 (I.4), G.45 (I.20), G.46 (I.21), G.48 (I.23), G.49 (I.24), G.61, and G.98 (III.1)."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK III • PROP. 8",
+    "short_title": "distances to a circle from an exterior point",
+    "g_id": "G.106",
+    "folio": "Folios 0023–0025 • pp. 17–19",
+    "enunciation": "If a point be taken outside a circle and from the point segments be drawn through to the circle, one of which is through the center and the others are drawn at random, then, of the segments which fall on the concave arc, that through the center is greatest, while of the rest the nearer to that through the center is always greater than the more remote, but, of the segments falling on the convex arc, that between the point and the diameter is least, while of the rest the nearer to the least is always less than the more remote, and only two equal segments will fall on the circle from the point, one on each side of the least.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.106/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.106/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/08/",
+    "step_total": 9,
+    "widescreen_only": true,
+    "subslides": [
+      {
+        "step_num": 9,
+        "step_kind": "PARTICIPATE",
+        "widescreen_only": true,
+        "chapter": "explore the GEOMETOR Elements Codex & participate",
+        "symbolic": "geometor.github.io/elements/elements2/G.106/",
+        "stage_html": "<div style=\"width:100%;height:100%;display:flex;flex-direction:column;justify-content:space-between;padding:42px 16px 12px 16px;gap:20px;\"><div style=\"background:linear-gradient(135deg,rgba(232,184,90,0.16) 0%,rgba(16,20,29,0.95) 100%);border:2px solid rgba(232,184,90,0.55);border-radius:18px;padding:28px 32px;display:flex;flex-direction:column;gap:12px;box-shadow:0 16px 40px rgba(0,0,0,0.6);\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.16em;color:#e8b85a;\">★ INTERACTIVE DIGITAL EDITION</div><div style=\"font-family:Georgia,serif;font-size:38px;font-weight:700;color:#f8f6f0;\">GEOMETOR • Elements Codex</div><div style=\"font-family:'JetBrains Mono',monospace;font-size:22px;color:#5ec27e;font-weight:700;\">https://geometor.github.io/elements/elements2/G.106/</div></div><div style=\"display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;flex:1;\"><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#e8b85a;font-weight:700;\">01 • PSEUDOCODE</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Hover-synced symbolic steps, signatures, and interactive SVG diagrams.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 1 • G.106</span></div><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#38bdf8;font-weight:700;\">02 • PYTHON MODEL</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Executable geometor.model scripts with exact algebraic coordinates.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 2 • g1.py</span></div><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#5ec27e;font-weight:700;\">03 • HEATH (1908)</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Complete classical translation, folio plates, and historical commentary.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 3 • Folios 0023–0025</span></div></div></div>",
+        "clause_html": "<div class=\"clause-line\">Explore the <span class=\"g-tok\">Elements Codex</span> &amp; <span class=\"eq-tok\">G-Index</span></div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Subscribe to <strong>@geometor</strong> for all 465 propositions</div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Share questions &amp; insights in the comments</div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Star &amp; contribute at <strong>github.com/geometor</strong></div>",
+        "just_tag": "★ PARTICIPATE & SUPPORT",
+        "just_id": "github.com/geometor/elements",
+        "just_title": "Open-source symbolic reconstruction of Euclid's Elements — links in the video description."
+      }
+    ]
+  }
+]

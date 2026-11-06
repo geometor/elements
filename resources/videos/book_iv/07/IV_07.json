@@ -1,0 +1,97 @@
+{
+  "voice_id": "voice_xdhacg1pn1cq",
+  "audio_wav": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iv/07/IV_07.wav",
+  "total_duration_sec": 136.1,
+  "segments": [
+    {
+      "index": 0,
+      "bell": "bell:proposition",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: brisk, clear, architectural voice; steady studio cadence] Book Four, Proposition Seven. About a given circle to circumscribe a square. Let A B C D be the given circle; it is required to circumscribe a square about the circle A B C D.",
+      "start_sec": 0.0,
+      "end_sec": 12.69,
+      "duration_sec": 12.69,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: brisk, clear, architectural voice; steady studio cadence] Book Four, Proposition Seven. About a given circle to circumscribe a square. Let A B C D be the given circle; it is required to circumscribe a square about the circle A B C D.",
+          "start_sec": 0.0,
+          "end_sec": 12.69,
+          "duration_sec": 12.69
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "bell": "bell:construction",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: methodical, precise constructive cadence] Draw two diameters A C and B D of the circle A B C D at right angles to one another through the center E. Through the points A, B, C, and D draw F G, G H, H K, and K F touching the circle A B C D by the Porism to Three Sixteen.",
+      "start_sec": 12.69,
+      "end_sec": 31.8,
+      "duration_sec": 19.11,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: methodical, precise constructive cadence] Draw two diameters A C and B D of the circle A B C D at right angles to one another through the center E. Through the points A, B, C, and D draw F G, G H, H K, and K F touching the circle A B C D by the Porism to Three Sixteen.",
+          "start_sec": 12.69,
+          "end_sec": 31.8,
+          "duration_sec": 19.11
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "bell": "bell:insight",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: luminous, deductive geometric clarity] Because F G touches the circle and radius E A is joined to the point of contact, by Three Eighteen the angles at A are right; for the same reason the angles at B, C, and D are also right. Since angles A E B and E B G are both right, by One Twenty-Eight and One Thirty the tangents G H and F K are parallel to diameter A C, while F G and H K are parallel to diameter B D. Thus the figures are parallelograms, so by One Thirty-Four each side equals the equal diameters A C and B D, making F G H K equilateral; and because opposite angles in parallelogram G B E A are equal, angle A G B and the angles at H, K, and F are all right. Therefore F G H K is a square circumscribed about the circle A B C D. Which was to be done.",
+      "start_sec": 31.8,
+      "end_sec": 81.26,
+      "duration_sec": 49.46,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: luminous, deductive geometric clarity] Because F G touches the circle and radius E A is joined to the point of contact, by Three Eighteen the angles at A are right; for the same reason the angles at B, C, and D are also right. Since angles A E B and E B G are both right, by One Twenty-Eight and One Thirty the tangents G H and F K are parallel to diameter A C, while F G and H K are parallel to diameter B D. Thus the figures are parallelograms, so by One Thirty-Four each side equals the equal diameters A C and B D, making F G H K equilateral; and because opposite angles in parallelogram G B E A are equal, angle A G B and the angles at H, K, and F are all right. Therefore F G H K is a square circumscribed about the circle A B C D. Which was to be done.",
+          "start_sec": 31.8,
+          "end_sec": 81.26,
+          "duration_sec": 49.46
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "bell": "bell:system",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: reflective, scholarly, architectural synthesis] Proposition Four Seven is the tangent dual of Four Six. As Heath remarks in his commentary, any quadrilateral circumscribed about a circle must have the sum of one pair of opposite sides equal to the sum of the other pair\u2014Pitot's theorem\u2014so among equiangular quadrilaterals only a square is similar to a given rectangle when circumscribed about a circle. In the GEOMETOR G-Index, node G one hundred fifty-nine unites Book Three tangent theory with Book One parallelogram theorems across forty-nine ancestor nodes, serving alongside Four Six in the exhaustion proofs of Book Twelve.",
+      "start_sec": 81.26,
+      "end_sec": 115.04,
+      "duration_sec": 33.78,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: reflective, scholarly, architectural synthesis] Proposition Four Seven is the tangent dual of Four Six. As Heath remarks in his commentary, any quadrilateral circumscribed about a circle must have the sum of one pair of opposite sides equal to the sum of the other pair\u2014Pitot's theorem\u2014so among equiangular quadrilaterals only a square is similar to a given rectangle when circumscribed about a circle. In the GEOMETOR G-Index, node G one hundred fifty-nine unites Book Three tangent theory with Book One parallelogram theorems across forty-nine ancestor nodes, serving alongside Four Six in the exhaustion proofs of Book Twelve.",
+          "start_sec": 81.26,
+          "end_sec": 115.04,
+          "duration_sec": 33.78
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "bell": "bell:resolve",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: warm, inviting, resonant studio close] You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Four Seven in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.",
+      "start_sec": 115.04,
+      "end_sec": 136.1,
+      "duration_sec": 21.06,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: warm, inviting, resonant studio close] You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Four Seven in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.",
+          "start_sec": 115.04,
+          "end_sec": 136.1,
+          "duration_sec": 21.06
+        }
+      ]
+    }
+  ]
+}

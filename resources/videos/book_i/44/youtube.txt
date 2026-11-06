@@ -1,0 +1,39 @@
+================================================================================
+YOUTUBE 1080P (16:9) TITLE
+================================================================================
+I.44 • to a given straight line to apply, in a given rectilineal angle, a parallelogram equal to ...
+
+================================================================================
+YOUTUBE SHORT (9:16) TITLE
+================================================================================
+I.44 • to a given straight line to apply, in a given rectilineal angle, a parallelogram equal to ...
+
+================================================================================
+DESCRIPTION
+================================================================================
+“To a given straight line to apply, in a given rectilineal angle, a parallelogram equal to a given triangle.”
+— Euclid's Elements, BOOK I • PROP. 44 (G.73)
+
+00:00 1 · GIVEN: / A B /, ⟨ C ⟩, ⟨ D )
+00:22 2 · CONSTRUCT: parallelogram_from_triangle(⟨ C ⟩, ⟨ D )) → ⟨ B E F G ⟩, parallel_line(A, / B G /) → / A H /, segment(H, B) → / H B /
+00:35 3 · ASSERT: / A H / ∥ / E F / → ⟨ A H F ) + ⟨ H F E ) = 2∟ → ⟨ B H G ) + ⟨ G F E ) ⟨ 2∟ → [ H B ] ∩ [ F E ] ≠ ∅
+00:48 4 · CONSTRUCT: extend(/ H B /, / F E /) → K, parallel_line(K, / E A /) → / K L /, extend(/ H A /, / G B /) → L, M
+01:00 5 · ASSERT: ⟨ H L K F ⟩, / H K / → ⟨ A B M L ⟩ = ⟨ B E F G ⟩ = ⟨ C ⟩ → ⟨ A B M L ⟩ = ⟨ C ⟩
+01:15 6 · ASSERT: ⟨ A B M ) = ⟨ E B G ) = ⟨ D ) → ⟨ A B M ) = ⟨ D )
+01:29 7 · ∴: ⟨ A B M L ⟩ = ⟨ C ⟩, ⟨ A B M ) = ⟨ D )
+
+GEOMETOR • G.73 • v2
+
+================================================================================
+TAGS
+================================================================================
+Euclid, Euclid's Elements, Euclid I.44, G.73, Geometry, Constructive Geometry, Compass and Straightedge, Mathematical Proof, GEOMETOR, Thomas Little Heath
+
+================================================================================
+MEDIA & CAPTIONS FILES
+================================================================================
+• 9:16 Short MP4 : I_44_short.mp4
+• 16:9 1080p MP4 : I_44_1080p.mp4
+• Closed Captions: I_44.srt
+• 16:9 Thumbnail : I_44_thumb.png
+• 9:16 Thumbnail : I_44_short_thumb.png

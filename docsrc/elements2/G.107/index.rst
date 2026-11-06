@@ -2,7 +2,7 @@
 :number: 107
 :canonical_id: G.107
 :original_id: III.9
-:title: G.107 point taken within
+:title: G.107 point with three equal segments to a circle is the center
 :volume: II
 :book: III
 :type: prop
@@ -10,81 +10,49 @@
 :categories: theorem, proof, plane-geometry, circles
 :category: theorem, proof, plane-geometry, circles
 :tags: book-iii, point, segment, circle, angle, straight-line, centre, plane-angle, right-angle, equality
-:dependencies: G.1, G.4, G.10, G.11, G.29, G.33, G.98
-:excerpt: If a point be taken within a circle, and more than two equal segments fall from the point on the circle, the point taken is the center of the circle.
+:dependencies: G.1, G.4, G.10, G.11, G.14, G.18, G.29, G.32, G.33, G.98
+:excerpt: A point within a circle from which more than two equal segments fall on the circle is the center of the circle.
 
 .. _G.107:
 .. _III.9:
 
-G.107 point taken within
-========================
+G.107 point with three equal segments to a circle is the center
+===============================================================
 
 .. rubric:: `III.9 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/09/>`_
 
 .. enunciation::
 
-   If a :term:`point <G.1>` be taken within a :term:`circle <G.10>`, and more than two equal :term:`segments <G.4>` fall from the point on the circle, the point taken is the :term:`center <G.11>` of the circle.
+   A :term:`point <G.1>` within a :term:`circle <G.10>` from which more than two equal :term:`segments <G.4>` fall on the circle is the :term:`center <G.11>` of the circle.
 
 .. signature:: theorem
 
-   | :fn:`point_taken_within <G.107>`\ (:g:`( A B C ) <g1:( A B C )>`, :g:`D <g1:D>`, :g:`/ D A / <g1:/ D A />`, :g:`/ D B / <g1:/ D B />`)
-   | **given** :g:`( A B C ) <g1:( A B C )>` be a circle and :g:`D <g1:D>` a point within it, from :g:`D <g1:D>` let more than two :eq:`= <g1:/ D A / = g1:/ D B / = g1:/ D C />` segments, namely :g:`/ D A / <g1:/ D A />`, :g:`/ D B / <g1:/ D B />`, :g:`/ D C / <g1:/ D C />`, fall on :g:`( A B C ) <g1:( A B C )>`
-   | **prove** :g:`D <g1:D>` is the center of :g:`( A B C ) <g1:( A B C )>`
+   | :fn:`three_equal_radii_center <G.107>`\ (:g:`( A B C ) <g1:( A B C )>`, :g:`D <g1:D>`, :g:`/ D A / <g1:/ D A />`, :g:`/ D B / <g1:/ D B />`, :g:`/ D C / <g1:/ D C />`)
+   | **given** :g:`( A B C ) <g1:( A B C )>`, interior point :g:`D <g1:D>`, :g:`/ D A / <g1:/ D A />` :eq:`= <g1:/ D A / = g1:/ D B / = g1:/ D C />` :g:`/ D B / <g1:/ D B />` :eq:`= <g1:/ D A / = g1:/ D B / = g1:/ D C />` :g:`/ D C / <g1:/ D C />`
+   | **prove** :g:`D <g1:D>` = center(:g:`( A B C ) <g1:( A B C )>`)
 
 .. picture:: g1.svg
    :alt: Diagram for Proposition 9
 
-.. step:: given
+.. step:: given ∵ circle_radii <G.10>
 
-   :g:`( A B C ) <g1:( A B C )>` be a circle and :g:`D <g1:D>` a point within it, from :g:`D <g1:D>` let more than two :eq:`= <g1:/ D A / = g1:/ D B / = g1:/ D C />` segments, namely :g:`/ D A / <g1:/ D A />`, :g:`/ D B / <g1:/ D B />`, :g:`/ D C / <g1:/ D C />`, fall on :g:`( A B C ) <g1:( A B C )>`
+   :g:`( A B C ) <g1:( A B C )>`, interior point :g:`D <g1:D>`, :g:`/ D A / <g1:/ D A />` :eq:`= <g1:/ D A / = g1:/ D B / = g1:/ D C />` :g:`/ D B / <g1:/ D B />` :eq:`= <g1:/ D A / = g1:/ D B / = g1:/ D C />` :g:`/ D C / <g1:/ D C />`
 
-.. step:: construct
+.. step:: construct ∵ segment, bisect_segment, extend <G.14, G.32, G.18>
 
-   Let :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` be joined and :eq:`bisected <g1:/ A E / = g1:/ E B /; g1:/ B F / = g1:/ F C />` at :g:`E <g1:E>`, :g:`F <g1:F>`, and let :g:`/ E D / <g1:/ E D />`, :g:`/ F D / <g1:/ F D />` be joined and drawn through to :g:`G <g1:G>`, :g:`K <g1:K>`, :g:`H <g1:H>`, :g:`L <g1:L>`.
+   join :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, bisect at :g:`E <g1:E>`, :g:`F <g1:F>` (:g:`/ A E / <g1:/ A E />` :eq:`= <g1:/ A E / = g1:/ E B />` :g:`/ E B / <g1:/ E B />`, :g:`/ B F / <g1:/ B F />` :eq:`= <g1:/ B F / = g1:/ F C />` :g:`/ F C / <g1:/ F C />`), draw :g:`/ G K / <g1:/ G K />` through :g:`E <g1:E>`, :g:`D <g1:D>` and :g:`/ H L / <g1:/ H L />` through :g:`F <g1:F>`, :g:`D <g1:D>`
 
-.. step:: assert
+.. step:: assert ∵ sss_congruence, right_angle_perpendicular <G.29, G.33>
 
-   :g:`/ A E / <g1:/ A E />` :eq:`= <g1:/ A E / = g1:/ E B />` :g:`/ E B / <g1:/ E B />`, and :g:`/ E D / <g1:/ E D />` is common → :g:`/ A E / <g1:/ A E />`, :g:`/ E D / <g1:/ E D />` :eq:`= <g1:/ A E / = g1:/ B E />` :g:`/ B E / <g1:/ B E />`, :g:`/ E D / <g1:/ E D />`
-
-.. step:: assert
-
-   :g:`/ D A / <g1:/ D A />` :eq:`= <g1:/ D A / = g1:/ D B />` :g:`/ D B / <g1:/ D B />`
-
-.. step:: assert ∵ sss_congruence <G.29>
-
-   :g:`< A E D ) <g1:< A E D )>` :eq:`= <g1:< A E D ) = g1:< B E D )>` :g:`< B E D ) <g1:< B E D )>`
-
-.. step:: assert ∵ right_angle_perpendicular <G.33>
-
-   each of :g:`< A E D ) <g1:< A E D )>`, :g:`< B E D ) <g1:< B E D )>` is :eq:`right <g1:< A E D ) = g1:< B E D )>`
-
-.. step:: assert
-
-   :g:`/ G K / <g1:/ G K />` cuts :g:`/ A B / <g1:/ A B />` into two :eq:`= <g1:/ A E / = g1:/ E B />` parts and at :eq:`right angles <g1:< A E D ) = g1:< B E D )>`
+   :g:`< A E D > <g1:< A E D >>` ≃ :g:`< B E D > <g1:< B E D >>` → :g:`< A E D ) <g1:< A E D )>` :eq:`= <g1:< A E D ) = g1:< B E D )>` :g:`< B E D ) <g1:< B E D )>` (right) → :g:`/ G K / <g1:/ G K />` ⊥ :g:`/ A B / <g1:/ A B />`
 
 .. step:: assert ∵ find_circle_center <G.98>
 
-   Since, if in a circle a segment cut a segment into two equal parts and :term:`at right angles <G.33>`, the center of the circle is on the cutting segment
+   :g:`/ G K / <g1:/ G K />` bisects :g:`/ A B / <g1:/ A B />` ⊥ → center(:g:`( A B C ) <g1:( A B C )>`) ∈ :g:`/ G K / <g1:/ G K />`; similarly center(:g:`( A B C ) <g1:( A B C )>`) ∈ :g:`/ H L / <g1:/ H L />`
 
-.. step:: assert
+.. step:: conclude ∵ circle_center <G.11>
 
-   The center of the circle is on :g:`/ G K / <g1:/ G K />`
-
-.. step:: assert
-
-   The same reason
-
-.. step:: assert
-
-   The center of :g:`( A B C ) <g1:( A B C )>` is also on :g:`/ H L / <g1:/ H L />`
-
-.. step:: assert
-
-   :g:`/ G K / <g1:/ G K />`, :g:`/ H L / <g1:/ H L />` have no other point common but :g:`D <g1:D>`
-
-.. step:: conclude ∵ circle_radii <G.10>
-
-   :g:`D <g1:D>` is the center of :g:`( A B C ) <g1:( A B C )>`
+   :g:`/ G K / <g1:/ G K />` ∩ :g:`/ H L / <g1:/ H L />` = :g:`D <g1:D>` → :g:`D <g1:D>` = center(:g:`( A B C ) <g1:( A B C )>`)
 
 Dependency Graph
 ----------------
@@ -128,8 +96,9 @@ Dependency Graph
      "G.31" [label="G.31", tooltip="G.31 (I.9): Bisect a given angle.", fillcolor="#222244", URL="../G.31/index.html", target="_top"];
      "G.32" [label="G.32", tooltip="G.32 (I.10): Bisect a given segment.", fillcolor="#222244", URL="../G.32/index.html", target="_top"];
      "G.33" [label="G.33", tooltip="G.33 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.33/index.html", target="_top"];
+     "G.34" [label="G.34", tooltip="G.34 (I.11): Construct a segment at right angles to a given line from a given point on it.", fillcolor="#222244", URL="../G.34/index.html", target="_top"];
      "G.98" [label="G.98", tooltip="G.98 (III.1): Find the center of a given circle.", fillcolor="#222244", URL="../G.98/index.html", target="_top"];
-     "G.107" [label="G.107", tooltip="G.107 (III.9): If a point be taken within a circle, and more than two equal segments fall from the point on the circle, the point taken is the center of the circle.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.107" [label="G.107", tooltip="G.107 (III.9): A point within a circle from which more than two equal segments fall on the circle is the center of the circle.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -146,7 +115,7 @@ Dependency Graph
      "G.29" -> "G.1";
      "G.31" -> "G.1";
      "G.32" -> "G.1";
-     "G.98" -> "G.1";
+     "G.34" -> "G.1";
      "G.107" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
@@ -156,6 +125,7 @@ Dependency Graph
      "G.22" -> "G.2";
      "G.30" -> "G.2";
      "G.33" -> "G.2";
+     "G.34" -> "G.2";
      "G.4" -> "G.3";
      "G.6" -> "G.3";
      "G.8" -> "G.3";
@@ -180,6 +150,7 @@ Dependency Graph
      "G.31" -> "G.4";
      "G.32" -> "G.4";
      "G.33" -> "G.4";
+     "G.34" -> "G.4";
      "G.98" -> "G.4";
      "G.107" -> "G.4";
      "G.6" -> "G.5";
@@ -212,6 +183,7 @@ Dependency Graph
      "G.29" -> "G.12";
      "G.31" -> "G.12";
      "G.32" -> "G.12";
+     "G.34" -> "G.12";
      "G.17" -> "G.13";
      "G.25" -> "G.13";
      "G.17" -> "G.14";
@@ -219,6 +191,9 @@ Dependency Graph
      "G.25" -> "G.14";
      "G.28" -> "G.14";
      "G.31" -> "G.14";
+     "G.34" -> "G.14";
+     "G.98" -> "G.14";
+     "G.107" -> "G.14";
      "G.17" -> "G.15";
      "G.20" -> "G.15";
      "G.21" -> "G.15";
@@ -228,13 +203,16 @@ Dependency Graph
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
+     "G.34" -> "G.17";
      "G.20" -> "G.18";
      "G.25" -> "G.18";
+     "G.107" -> "G.18";
      "G.20" -> "G.19";
      "G.25" -> "G.19";
      "G.21" -> "G.20";
      "G.25" -> "G.21";
      "G.31" -> "G.21";
+     "G.34" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
      "G.28" -> "G.22";
@@ -243,22 +221,27 @@ Dependency Graph
      "G.31" -> "G.22";
      "G.32" -> "G.22";
      "G.33" -> "G.22";
-     "G.98" -> "G.22";
+     "G.34" -> "G.22";
      "G.24" -> "G.23";
      "G.29" -> "G.23";
      "G.25" -> "G.24";
      "G.32" -> "G.24";
      "G.28" -> "G.25";
      "G.28" -> "G.26";
+     "G.98" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
+     "G.34" -> "G.29";
      "G.98" -> "G.29";
      "G.107" -> "G.29";
      "G.31" -> "G.30";
      "G.32" -> "G.31";
      "G.98" -> "G.32";
+     "G.107" -> "G.32";
+     "G.34" -> "G.33";
      "G.98" -> "G.33";
      "G.107" -> "G.33";
+     "G.98" -> "G.34";
      "G.107" -> "G.98";
    }
 

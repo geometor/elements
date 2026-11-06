@@ -1,18 +1,18 @@
 :canonical_id: G.160
 :original_id: IV.8
-:title: G.160 square inscribe circle
+:title: G.160 inscribe a circle in a square
 :volume: II
 :book: IV
 :type: prop
 
-G.160 square inscribe circle — Code
-===================================
+G.160 inscribe a circle in a square — Code
+==========================================
 
 .. rubric:: `IV.8 <https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/08/>`_
 
 .. enunciation::
 
-   In a given :term:`square <G.63>` to inscribe a :term:`circle <G.10>`.
+   :term:`Inscribe a circle in <G.153>` a given :term:`square <G.63>`.
 
 .. picture:: g1.svg
 

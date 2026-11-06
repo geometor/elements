@@ -1,0 +1,64 @@
+{
+  "prop_id": "BOOK I \u2022 PROP. 34",
+  "short_code": "I.34",
+  "g_id": "G.62",
+  "version": 2,
+  "enunciation": "In parallelogrammic areas the opposite sides and angles are equal to one another, and the diameter bisects the areas.",
+  "title_1080p": "I.34 \u2022 in parallelogrammic areas the opposite sides and angles are equal to one another, and the ...",
+  "title_short": "I.34 \u2022 in parallelogrammic areas the opposite sides and angles are equal to one another, and the ...",
+  "description": "\u201cIn parallelogrammic areas the opposite sides and angles are equal to one another, and the diameter bisects the areas.\u201d\n\u2014 Euclid's Elements, BOOK I \u2022 PROP. 34 (G.62)\n\n00:00 1 \u00b7 GIVEN: \u27e8 A C D B \u27e9 (/ A B / \u2225 / C D /, / A C / \u2225 / B D /), / B C /\n00:24 2 \u00b7 ASSERT: / A B / \u2225 / C D /, / B C / \u2229 / A B /, / C D / \u2192 \u27e8 A B C ) = \u27e8 B C D )\n00:36 3 \u00b7 ASSERT: / A C / \u2225 / B D /, / B C / \u2229 / A C /, / B D / \u2192 \u27e8 A C B ) = \u27e8 C B D )\n00:47 4 \u00b7 ASSERT: \u27e8 A B C ) = \u27e8 D C B ), \u27e8 B C A ) = \u27e8 C B D ), / B C / = / C B / \u2192 / A B / = / C D /, / A C / = / B D /, \u27e8 B A C ) = \u27e8 C D B )\n01:05 5 \u00b7 ASSERT: \u27e8 A B C ) = \u27e8 B C D ), \u27e8 C B D ) = \u27e8 A C B ) \u2192 \u27e8 A B D ) = \u27e8 A C D )\n01:24 6 \u00b7 \u2234: / A B / = / D C /, / B C / = / C B /, \u27e8 A B C ) = \u27e8 B C D ) \u2192 \u27e8 A B C \u27e9 = \u27e8 D C B \u27e9\n\nGEOMETOR \u2022 G.62 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid I.34",
+    "G.62",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/34/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.62/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_i/34/I_34_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_i/34/I_34_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_i/34/I_34.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_i/34/I_34_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_i/34/I_34_short_thumb.png"
+  },
+  "uploads": {
+    "wide_1080p": {
+      "version": 2,
+      "video_id": "1SolX0R4kHE",
+      "url": "https://youtu.be/1SolX0R4kHE",
+      "studio_url": "https://studio.youtube.com/video/1SolX0R4kHE/edit",
+      "caption_id": null,
+      "playlist_id": "PLUXlBs_QySgw",
+      "playlist_item_id": "UExVWGxCc19ReVNndy4zMEQ1MEIyRTFGNzhDQzFB",
+      "privacyStatus": "private",
+      "publishAt": "2026-11-07T20:00:00Z",
+      "uploaded_at": "2026-11-05T13:01:12.556499+00:00",
+      "thumbnail_set": true,
+      "updated_at": "2026-11-06T08:07:50.836454+00:00"
+    },
+    "short": {
+      "version": 2,
+      "video_id": "GM5Zp9ePDpk",
+      "url": "https://youtube.com/shorts/GM5Zp9ePDpk",
+      "studio_url": "https://studio.youtube.com/video/GM5Zp9ePDpk/edit",
+      "caption_id": null,
+      "playlist_id": "PLTJvna-1hErU",
+      "playlist_item_id": "UExUSnZuYS0xaEVyVS5DNkMwRUI2MkI4QkI4NDFG",
+      "privacyStatus": "private",
+      "publishAt": "2026-11-07T20:00:00Z",
+      "uploaded_at": "2026-11-05T13:02:03.734741+00:00",
+      "thumbnail_set": true,
+      "updated_at": "2026-11-06T08:07:58.212436+00:00"
+    }
+  },
+  "history": {}
+}

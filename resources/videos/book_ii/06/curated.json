@@ -1,0 +1,60 @@
+{
+  "II.6": {
+    "subtype": "theorem",
+    "args": [
+      ":g:`/ A B / <g1:/ A B />`",
+      ":g:`C <g1:C>`",
+      ":g:`/ B D / <g1:/ B D />`"
+    ],
+    "returns": [],
+    "given": ":g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ C B />` :g:`/ C B / <g1:/ C B />`, :g:`/ A D / <g1:/ A D />` = :g:`/ A B / <g1:/ A B />` + :g:`/ B D / <g1:/ B D />`",
+    "contract": ":fn:`contained_rectangle <G.81>`\\ (:g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />`) + :fn:`square <G.63>`\\ (:g:`/ C B / <g1:/ C B />`) = :fn:`square <G.63>`\\ (:g:`/ C D / <g1:/ C D />`)",
+    "steps": [
+      [
+        "given",
+        [],
+        ":g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ C B />` :g:`/ C B / <g1:/ C B />`, :g:`/ A D / <g1:/ A D />` = :g:`/ A B / <g1:/ A B />` + :g:`/ B D / <g1:/ B D />`"
+      ],
+      [
+        "construct",
+        [
+          "I.46",
+          "I.post.1"
+        ],
+        "@fn(I.46)(:g:`/ C D / <g1:/ C D />`) → :g:`< C E F D > <g1:< C E F D >>`, @fn(I.post.1)(:g:`D <g1:D>`, :g:`E <g1:E>`) → :g:`/ D E / <g1:/ D E />`"
+      ],
+      [
+        "construct",
+        [
+          "I.31"
+        ],
+        "@fn(I.31)(:g:`B <g1:B>`, :g:`/ E C / <g1:/ E C />`) → :g:`/ B G / <g1:/ B G />` ∥ :g:`/ E C / <g1:/ E C />`, @fn(I.31)(:g:`H <g1:H>`, :g:`/ A B / <g1:/ A B />`) → :g:`/ K M / <g1:/ K M />` ∥ :g:`/ A B / <g1:/ A B />`, @fn(I.31)(:g:`A <g1:A>`, :g:`/ C L / <g1:/ C L />`) → :g:`/ A K / <g1:/ A K />` ∥ :g:`/ C L / <g1:/ C L />`"
+      ],
+      [
+        "assert",
+        [
+          "I.36",
+          "I.43",
+          "I.cn.2"
+        ],
+        ":g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ C B />` :g:`/ C B / <g1:/ C B />` → :g:`< A L > <g1:< A L >>` :eq:`= <g1:< A L > = g1:< C H >>` :g:`< C H > <g1:< C H >>` :eq:`= <g1:< C H > = g1:< H F >>` :g:`< H F > <g1:< H F >>`; + :g:`< C M > <g1:< C M >>` → :g:`< A M > <g1:< A M >>` :eq:`= <g1:< A M > = g1:< N O P >>` :g:`< N O P > <g1:< N O P >>`"
+      ],
+      [
+        "assert",
+        [
+          "II.def.1",
+          "II.def.2"
+        ],
+        ":g:`/ D M / <g1:/ D M />` :eq:`= <g1:/ D M / = g1:/ D B />` :g:`/ D B / <g1:/ D B />` → :g:`< A M > <g1:< A M >>` = @fn(II.def.1)(:g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />`) = :g:`< N O P > <g1:< N O P >>`"
+      ],
+      [
+        "conclude",
+        [
+          "I.cn.2",
+          "I.def.22"
+        ],
+        "+ :g:`< L G > <g1:< L G >>` (= @fn(I.def.22)(:g:`/ C B / <g1:/ C B />`)) → @fn(II.def.1)(:g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />`) + @fn(I.def.22)(:g:`/ C B / <g1:/ C B />`) = :g:`< N O P > <g1:< N O P >>` + :g:`< L G > <g1:< L G >>` = @fn(I.def.22)(:g:`/ C D / <g1:/ C D />`)"
+      ]
+    ]
+  }
+}

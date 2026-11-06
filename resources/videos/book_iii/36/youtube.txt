@@ -1,0 +1,46 @@
+================================================================================
+YOUTUBE 1080P (16:9) TITLE
+================================================================================
+III.36 • if a point be taken outside a circle and from it there fall on the circle two straight l...
+
+================================================================================
+YOUTUBE SHORT (9:16) TITLE
+================================================================================
+III.36 • if a point be taken outside a circle and from it there fall on the circle two straight l...
+
+================================================================================
+DESCRIPTION
+================================================================================
+“If a point be taken outside a circle and from it there fall on the circle two straight lines, and if one of them cut the circle and the other touch it, the rectangle contained by the whole of the straight line which cuts the circle and the straight line intercepted on it outside between the point and the convex circumference will be equal to the square on the tangent.”
+— Euclid's Elements, BOOK III • PROP. 36 (G.144)
+
+00:00 1 · GIVEN: ( A B C ), / D C A /, / D B / → rect(/ A D /, / C D /) = sq(/ D B /)
+00:25 2 · CONSTRUCT: F = find_circle_center(( A B C )), / F B / = segment(F, B)
+00:33 3 · ASSERT: / F B / ⊥ / D B / → ⟨ F B D ) = right
+00:40 4 · ASSERT: / A F / = / F C / → rect(/ A D /, / C D /) + sq(/ F C /) = sq(/ F D /)
+00:54 5 · ASSERT: / F C / = / F B / → rect(/ A D /, / C D /) + sq(/ F B /) = sq(/ F D /)
+01:08 6 · ∴: sq(/ F B /) + sq(/ D B /) = sq(/ F D /) → rect(/ A D /, / C D /) = sq(/ D B /)
+01:22 7 · COMMENTARY: rect(/ A D /, / C D /) = sq(/ D B /) = sq(/ F D /) − sq(R)
+01:42 8 · GENEALOGY: G.79 (I.47), G.88 (II.6), G.120 (III.18) → G.144 (III.36) → G.145 (III.37), G.156 (IV.10)
+02:01 9 · PARTICIPATE: geometor.github.io/elements/elements2/G.144/
+
+Explore the interactive Book Codex, symbolic model, and dependency tree:
+• Elements Codex (G.144): https://geometor.github.io/elements/elements2/G.144/
+• Heath Edition (III.36): https://geometor.github.io/euclid/heath/volume_I/book_iii/propositions/36/
+• GitHub: https://github.com/geometor/elements
+
+GEOMETOR • G.144 • v2
+
+================================================================================
+TAGS
+================================================================================
+Euclid, Euclid's Elements, Euclid III.36, G.144, Geometry, Constructive Geometry, Compass and Straightedge, Mathematical Proof, GEOMETOR, Thomas Little Heath
+
+================================================================================
+MEDIA & CAPTIONS FILES
+================================================================================
+• 9:16 Short MP4 : III_36_short.mp4
+• 16:9 1080p MP4 : III_36_1080p.mp4
+• Closed Captions: III_36.srt
+• 16:9 Thumbnail : III_36_thumb.png
+• 9:16 Thumbnail : III_36_short_thumb.png

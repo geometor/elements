@@ -1,0 +1,174 @@
+[
+  {
+    "bell": "proposition",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 29",
+        "g_id": "G.56",
+        "folio": "Folio 0325–0326 • p. 311",
+        "enunciation": "A straight line falling on parallel straight lines makes the alternate angles equal to one another, the exterior angle equal to the interior and opposite angle, and the interior angles on the same side equal to two right angles.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0325.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0325.g1.png",
+        "step_num": 1,
+        "total_steps": 5,
+        "step_kind": "GIVEN",
+        "symbolic": "/ A B / ∥ / C D /, / E F / ∩ / A B /, / C D / → G, H",
+        "clause_html": "<span class=\"g-tok\">/ A B /</span> ∥ <span class=\"g-tok\">/ C D /</span>, <span class=\"g-tok\">/ E F /</span> ∩ <span class=\"g-tok\">/ A B /</span>, <span class=\"g-tok\">/ C D /</span> → <span class=\"g-tok\">G</span>, <span class=\"g-tok\">H</span>",
+        "just_id": "GIVEN",
+        "just_title": "prove: < A G H ) = < G H D ), < E G B ) = < G H D ), < B G H ) + < G H D ) = 2∟",
+        "visible_ids": [
+          "line-A-B", "line-C-D", "line-E-F",
+          "segment-A-B", "segment-C-D", "segment-E-F",
+          "highlight-segment-A-B", "highlight-segment-C-D", "highlight-segment-E-F",
+          "wedge-A-G-H", "wedge-G-H-D", "arc-A-G-H", "arc-G-H-D",
+          "A", "B", "C", "D", "E", "F", "G", "H",
+          "label-A", "label-B", "label-C", "label-D", "label-E", "label-F", "label-G", "label-H"
+        ],
+        "active_ids": [
+          "highlight-segment-A-B", "highlight-segment-C-D", "highlight-segment-E-F",
+          "A", "B", "C", "D", "E", "F", "G", "H",
+          "label-A", "label-B", "label-C", "label-D", "label-E", "label-F", "label-G", "label-H"
+        ],
+        "equal_ids": [
+          "wedge-A-G-H", "wedge-G-H-D", "arc-A-G-H", "arc-G-H-D"
+        ]
+      }
+    ]
+  },
+  {
+    "bell": "construction",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 29",
+        "g_id": "G.56",
+        "folio": "Folio 0325–0326 • p. 311",
+        "enunciation": "A straight line falling on parallel straight lines makes the alternate angles equal to one another, the exterior angle equal to the interior and opposite angle, and the interior angles on the same side equal to two right angles.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0325.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0325.g1.png",
+        "step_num": 2,
+        "total_steps": 5,
+        "step_kind": "ASSERT",
+        "symbolic": "? < A G H ) > < G H D ) → < A G H ) + < B G H ) = 2∟ > < B G H ) + < G H D )",
+        "clause_html": "? <span class=\"g-tok\">&lt; A G H )</span> &gt; <span class=\"g-tok\">&lt; G H D )</span> → <span class=\"g-tok\">&lt; A G H )</span> + <span class=\"g-tok\">&lt; B G H )</span> = 2∟ &gt; <span class=\"g-tok\">&lt; B G H )</span> + <span class=\"g-tok\">&lt; G H D )</span>",
+        "just_id": "G.37 • I.13, G.36 • I.C.N.2",
+        "just_title": "adjacent_angles_supplementary",
+        "visible_ids": [
+          "line-A-B", "line-C-D", "line-E-F",
+          "segment-A-B", "segment-C-D", "segment-E-F",
+          "wedge-A-G-H", "wedge-B-G-H", "wedge-G-H-D",
+          "arc-A-G-H", "arc-B-G-H", "arc-G-H-D",
+          "A", "B", "C", "D", "E", "F", "G", "H",
+          "label-A", "label-B", "label-C", "label-D", "label-E", "label-F", "label-G", "label-H"
+        ],
+        "active_ids": [
+          "wedge-A-G-H", "wedge-B-G-H", "arc-A-G-H", "arc-B-G-H",
+          "A", "B", "G", "H", "label-A", "label-B", "label-G", "label-H"
+        ],
+        "equal_ids": [
+          "wedge-G-H-D", "arc-G-H-D"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 29",
+        "g_id": "G.56",
+        "folio": "Folio 0325–0326 • p. 311",
+        "enunciation": "A straight line falling on parallel straight lines makes the alternate angles equal to one another, the exterior angle equal to the interior and opposite angle, and the interior angles on the same side equal to two right angles.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0325.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0325.g1.png",
+        "step_num": 3,
+        "total_steps": 5,
+        "step_kind": "ASSERT",
+        "symbolic": "< B G H ) + < G H D ) < 2∟ → [ A B ] ∩ [ C D ] ≠ ∅ ⇒⇐ → < A G H ) = < G H D )",
+        "clause_html": "<span class=\"g-tok\">&lt; B G H )</span> + <span class=\"g-tok\">&lt; G H D )</span> &lt; 2∟ → <span class=\"g-tok\">[ A B ]</span> ∩ <span class=\"g-tok\">[ C D ]</span> ≠ ∅ ⇒⇐ → <span class=\"g-tok\">&lt; A G H )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; G H D )</span>",
+        "just_id": "G.55 • I.Post.5, G.52 • I.Def.23",
+        "just_title": "parallel_postulate",
+        "visible_ids": [
+          "line-A-B", "line-C-D", "line-E-F",
+          "segment-A-B", "segment-C-D", "segment-E-F",
+          "highlight-segment-A-B", "highlight-segment-C-D",
+          "wedge-A-G-H", "wedge-G-H-D", "arc-A-G-H", "arc-G-H-D",
+          "A", "B", "C", "D", "E", "F", "G", "H",
+          "label-A", "label-B", "label-C", "label-D", "label-E", "label-F", "label-G", "label-H"
+        ],
+        "active_ids": [
+          "highlight-segment-A-B", "highlight-segment-C-D",
+          "A", "B", "C", "D", "G", "H", "label-A", "label-B", "label-C", "label-D", "label-G", "label-H"
+        ],
+        "equal_ids": [
+          "wedge-A-G-H", "wedge-G-H-D", "arc-A-G-H", "arc-G-H-D"
+        ]
+      }
+    ]
+  },
+  {
+    "bell": "insight",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 29",
+        "g_id": "G.56",
+        "folio": "Folio 0325–0326 • p. 311",
+        "enunciation": "A straight line falling on parallel straight lines makes the alternate angles equal to one another, the exterior angle equal to the interior and opposite angle, and the interior angles on the same side equal to two right angles.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0325.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0325.g1.png",
+        "step_num": 4,
+        "total_steps": 5,
+        "step_kind": "ASSERT",
+        "symbolic": "< A G H ) = < E G B ), < A G H ) = < G H D ) → < E G B ) = < G H D )",
+        "clause_html": "<span class=\"g-tok\">&lt; A G H )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; E G B )</span>, <span class=\"g-tok\">&lt; A G H )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; G H D )</span> → <span class=\"g-tok\">&lt; E G B )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; G H D )</span>",
+        "just_id": "G.40 • I.15, G.16 • I.C.N.1",
+        "just_title": "vertical_angles_equal",
+        "visible_ids": [
+          "line-A-B", "line-C-D", "line-E-F",
+          "segment-A-B", "segment-C-D", "segment-E-F",
+          "wedge-A-G-H", "wedge-E-G-B", "wedge-G-H-D",
+          "arc-A-G-H", "arc-E-G-B", "arc-G-H-D",
+          "A", "B", "C", "D", "E", "F", "G", "H",
+          "label-A", "label-B", "label-C", "label-D", "label-E", "label-F", "label-G", "label-H"
+        ],
+        "active_ids": [
+          "wedge-A-G-H", "arc-A-G-H",
+          "E", "G", "H", "label-E", "label-G", "label-H"
+        ],
+        "equal_ids": [
+          "wedge-E-G-B", "wedge-G-H-D", "arc-E-G-B", "arc-G-H-D"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 29",
+        "g_id": "G.56",
+        "folio": "Folio 0325–0326 • p. 311",
+        "enunciation": "A straight line falling on parallel straight lines makes the alternate angles equal to one another, the exterior angle equal to the interior and opposite angle, and the interior angles on the same side equal to two right angles.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0325.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0325.g1.png",
+        "step_num": 5,
+        "total_steps": 5,
+        "step_kind": "∴",
+        "symbolic": "< E G B ) + < B G H ) = 2∟ → < B G H ) + < G H D ) = 2∟",
+        "clause_html": "<span class=\"g-tok\">&lt; E G B )</span> + <span class=\"g-tok\">&lt; B G H )</span> = 2∟ → <span class=\"g-tok\">&lt; B G H )</span> + <span class=\"g-tok\">&lt; G H D )</span> = 2∟",
+        "just_id": "G.36 • I.C.N.2, G.37 • I.13",
+        "just_title": "add_equals",
+        "visible_ids": [
+          "line-A-B", "line-C-D", "line-E-F",
+          "segment-A-B", "segment-C-D", "segment-E-F",
+          "highlight-segment-A-B", "highlight-segment-C-D", "highlight-segment-E-F",
+          "wedge-B-G-H", "wedge-G-H-D", "wedge-A-G-H", "wedge-E-G-B",
+          "arc-B-G-H", "arc-G-H-D", "arc-A-G-H", "arc-E-G-B",
+          "A", "B", "C", "D", "E", "F", "G", "H",
+          "label-A", "label-B", "label-C", "label-D", "label-E", "label-F", "label-G", "label-H"
+        ],
+        "active_ids": [
+          "wedge-B-G-H", "wedge-G-H-D", "arc-B-G-H", "arc-G-H-D",
+          "B", "D", "G", "H", "label-B", "label-D", "label-G", "label-H"
+        ],
+        "equal_ids": [
+          "wedge-A-G-H", "wedge-E-G-B", "arc-A-G-H", "arc-E-G-B"
+        ]
+      }
+    ]
+  }
+]

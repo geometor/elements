@@ -1,0 +1,33 @@
+{
+  "prop_id": "BOOK IV \u2022 PROP. 9",
+  "short_code": "IV.9",
+  "g_id": "G.161",
+  "version": 2,
+  "enunciation": "About a given square to circumscribe a circle.",
+  "title_1080p": "IV.9 \u2022 square circumscribe circle \u2022 Euclid's Elements",
+  "title_short": "IV.9 \u2022 square circumscribe circle \u2022 Euclid's Elements",
+  "description": "\u201cAbout a given square to circumscribe a circle.\u201d\n\u2014 Euclid's Elements, BOOK IV \u2022 PROP. 9 (G.161)\n\n00:00 1 \u00b7 GIVEN: given square \u27e8 A B C D \u27e9\n00:13 2 \u00b7 CONSTRUCT: join diagonals / A C / and / B D / meeting at E\n00:19 3 \u00b7 ASSERT: / A C / and / B D / bisect the four corner angles\n00:37 4 \u00b7 ASSERT: \u27e8 E A B ) = \u27e8 E B A ) \u2192 / E A / = / E B / = / E C / = / E D /\n00:54 5 \u00b7 \u2234: circle ( A B C D ) with center E circumscribes \u27e8 A B C D \u27e9\n01:12 6 \u00b7 COMMENTARY: completing the square\u2013circle quartet (IV.6\u2013IV.9)\n01:31 7 \u00b7 GENEALOGY: G.161 dependency tree & symbolic model\n01:50 8 \u00b7 PARTICIPATE: explore the GEOMETOR Elements Codex & participate\n\nExplore the interactive Book Codex, symbolic model, and dependency tree:\n\u2022 Elements Codex (G.161): https://geometor.github.io/elements/elements2/G.161/\n\u2022 Heath Edition (IV.9): https://geometor.github.io/euclid/heath/volume_I/book_iv/propositions/09/\n\u2022 GitHub: https://github.com/geometor/elements\n\nGEOMETOR \u2022 G.161 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid IV.9",
+    "G.161",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_iv/propositions/09/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.161/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iv/09/IV_09_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iv/09/IV_09_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iv/09/IV_09.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iv/09/IV_09_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iv/09/IV_09_short_thumb.png"
+  }
+}

@@ -1,0 +1,19 @@
+[bell:proposition]
+[style: brisk, clear, architectural voice; steady studio cadence]
+Book Three, Proposition Eighteen. If a straight line touch a circle, and a straight line be joined from the center to the point of contact, the straight line so joined will be perpendicular to the tangent. <pause> Let the straight line D E touch the circle A B C at the point C, let the center F of circle A B C be taken, and let F C be joined from F to C. We claim that F C is perpendicular to D E.
+
+[bell:construction]
+[style: methodical, precise constructive cadence]
+For suppose it is not, and if possible, let F G be drawn from F perpendicular to D E, meeting the circle at B.
+
+[bell:insight]
+[style: luminous, deductive geometric clarity]
+Then in triangle F C G, since angle F G C is right, by One Seventeen angle F C G is acute. Because the greater angle is subtended by the greater side, by One Nineteen F C is greater than F G. <pause> But F C equals F B as radii of circle A B C; therefore F B is also greater than F G—the part greater than the whole, which is impossible. <pause> Therefore F G is not perpendicular to D E; and similarly neither is any other straight line except F C. Therefore F C is perpendicular to the tangent D E. As was required to prove.
+
+[bell:system]
+[style: reflective, scholarly, architectural synthesis]
+As Heath observes, Propositions Three Sixteen, Three Eighteen, and Three Nineteen form a complete logical triad governing circular tangency. Where the Porism to Three Sixteen proves that a line perpendicular to a radius at its extremity is a tangent, Three Eighteen proves the first partial converse: that the radius to the point of contact is perpendicular to the tangent. <pause> In the GEOMETOR G-Index, node G one hundred twenty synthesizes nine direct rules across forty-two ancestor nodes, unlocking twenty downstream propositions including the alternate segment theorem in Three Thirty-Two.
+
+[bell:resolve]
+[style: warm, inviting, resonant studio close]
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Eighteen in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

@@ -1,0 +1,312 @@
+[
+  {
+    "prop_id": "BOOK III • PROP. 30",
+    "short_title": "bisect a given arc",
+    "g_id": "G.137",
+    "folio": "Folio 0067 • p. 61",
+    "enunciation": "To bisect a given arc.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.137/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.137/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/30/",
+    "step_total": 8,
+    "subslides": [
+      {
+        "step_num": 1,
+        "step_kind": "GIVEN",
+        "chapter": "given arc ( A D B )",
+        "symbolic": "given arc ( A D B )",
+        "visible_ids": [
+          "el-arc-ADB",
+          "el-pt-A",
+          "el-pt-B",
+          "lbl-A",
+          "lbl-B"
+        ],
+        "active_ids": [
+          "el-arc-ADB",
+          "hl-arc-ADB",
+          "el-pt-A",
+          "el-pt-B",
+          "lbl-A",
+          "lbl-B"
+        ],
+        "equal_ids": [],
+        "clause_html": "<div class=\"clause-line\">Let <span class=\"g-tok\">( A D B )</span> be the given arc;</div><div class=\"clause-line\">it is required to bisect <span class=\"g-tok\">( A D B )</span>.</div>",
+        "just_id": "G.10 • I.def.15",
+        "just_title": "An arc ( A D B ) of a circle is given by its endpoints A and B and its curved path."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK III • PROP. 30",
+    "short_title": "bisect a given arc",
+    "g_id": "G.137",
+    "folio": "Folio 0067 • p. 61",
+    "enunciation": "To bisect a given arc.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.137/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.137/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/30/",
+    "step_total": 8,
+    "subslides": [
+      {
+        "step_num": 2,
+        "step_kind": "CONSTRUCT",
+        "chapter": "join chord / A B / and bisect at C",
+        "symbolic": "segment(A, B) → / A B /, bisect_segment(/ A B /) → C (/ A C / = / C B /)",
+        "visible_ids": [
+          "el-arc-ADB",
+          "el-seg-AB",
+          "el-seg-AC",
+          "el-seg-CB",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C"
+        ],
+        "active_ids": [
+          "el-seg-AB",
+          "hl-seg-AB",
+          "el-pt-C",
+          "lbl-C"
+        ],
+        "equal_ids": [
+          "el-seg-AC",
+          "hl-seg-AC",
+          "el-seg-CB",
+          "hl-seg-CB"
+        ],
+        "tick_ids": [
+          "el-seg-AC",
+          "el-seg-CB"
+        ],
+        "clause_html": "<div class=\"clause-line\"><span class=\"fn-tok\">segment</span>(<span class=\"g-tok\">A</span>, <span class=\"g-tok\">B</span>) → <span class=\"g-tok\">/ A B /</span></div><div class=\"clause-line\"><span class=\"fn-tok\">bisect_segment</span>(<span class=\"g-tok\">/ A B /</span>) → <span class=\"g-tok\">C</span> with <span class=\"eq-tok\">/ A C / = / C B /</span></div>",
+        "just_id": "G.14 • I.post.1, G.32 • I.10",
+        "just_title": "Join the chord / A B / (I.post.1) and bisect it at point C (I.10)."
+      },
+      {
+        "step_num": 3,
+        "step_kind": "CONSTRUCT",
+        "chapter": "draw perpendicular / C D / ⊥ / A B / and join / A D /, / D B /",
+        "symbolic": "perpendicular_at(/ A B /, C) → / C D / ⊥ / A B /, join / A D /, / D B /",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-seg-CD",
+          "hl-seg-CD",
+          "el-seg-AD",
+          "hl-seg-AD",
+          "el-seg-DB",
+          "hl-seg-DB",
+          "el-pt-D",
+          "lbl-D"
+        ],
+        "equal_ids": [
+          "el-ang-ACD",
+          "hl-ang-ACD",
+          "hl-arc-ACD",
+          "el-ang-BCD",
+          "hl-ang-BCD",
+          "hl-arc-BCD",
+          "el-seg-AC",
+          "hl-seg-AC",
+          "el-seg-CB",
+          "hl-seg-CB"
+        ],
+        "tick_ids": [
+          "el-seg-AC",
+          "el-seg-CB"
+        ],
+        "clause_html": "<div class=\"clause-line\"><span class=\"fn-tok\">perpendicular_at</span>(<span class=\"g-tok\">/ A B /</span>, <span class=\"g-tok\">C</span>) → <span class=\"g-tok\">/ C D /</span> ⊥ <span class=\"g-tok\">/ A B /</span></div><div class=\"clause-line\">Join chords <span class=\"g-tok\">/ A D /</span> and <span class=\"g-tok\">/ D B /</span></div>",
+        "just_id": "G.34 • I.11, G.14 • I.post.1",
+        "just_title": "Draw / C D / at right angles to / A B / from C (I.11) meeting the arc at D, and join / A D / and / D B /."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK III • PROP. 30",
+    "short_title": "bisect a given arc",
+    "g_id": "G.137",
+    "folio": "Folio 0067 • p. 61",
+    "enunciation": "To bisect a given arc.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.137/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.137/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/30/",
+    "step_total": 8,
+    "subslides": [
+      {
+        "step_num": 4,
+        "step_kind": "ASSERT",
+        "chapter": "< A C D > ≃ < B C D > → / A D / = / D B /",
+        "symbolic": "/ A C / = / C B /, / C D / common, < A C D ) = < B C D ) → / A D / = / D B /",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-tri-ACD",
+          "hl-tri-ACD",
+          "el-tri-BCD",
+          "hl-tri-BCD",
+          "el-seg-CD",
+          "hl-seg-CD",
+          "el-ang-ACD",
+          "hl-ang-ACD",
+          "el-ang-BCD",
+          "hl-ang-BCD"
+        ],
+        "equal_ids": [
+          "el-seg-AC",
+          "hl-seg-AC",
+          "el-seg-CB",
+          "hl-seg-CB",
+          "el-seg-AD",
+          "hl-seg-AD",
+          "el-seg-DB",
+          "hl-seg-DB"
+        ],
+        "tick_ids": [
+          "el-seg-AC",
+          "el-seg-CB"
+        ],
+        "tick_2_ids": [
+          "el-seg-AD",
+          "el-seg-DB"
+        ],
+        "clause_html": "<div class=\"clause-line\"><span class=\"eq-tok\">/ A C / = / C B /</span>, <span class=\"g-tok\">/ C D /</span> common, right angles <span class=\"eq-tok\">&lt; A C D ) = &lt; B C D )</span></div><div class=\"clause-line\">→ <span class=\"eq-tok\">&lt; A C D &gt; ≃ &lt; B C D &gt;</span> and <span class=\"eq-tok\">/ A D / = / D B /</span></div>",
+        "just_id": "G.33 • I.def.10, G.24 • I.4",
+        "just_title": "By SAS congruence (I.4), triangles < A C D > and < B C D > have equal hypotenuses / A D / and / D B /."
+      },
+      {
+        "step_num": 5,
+        "step_kind": "∴",
+        "is_punchline": true,
+        "chapter": "equal chords cut off equal minor arcs ( A D ) = ( D B )",
+        "symbolic": "∴ ( A D ) = ( D B )",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-pt-D",
+          "lbl-D",
+          "el-seg-CD",
+          "hl-seg-CD"
+        ],
+        "equal_ids": [
+          "el-arc-AD",
+          "hl-arc-AD",
+          "el-arc-DB",
+          "hl-arc-DB",
+          "el-seg-AD",
+          "hl-seg-AD",
+          "el-seg-DB",
+          "hl-seg-DB",
+          "el-seg-AC",
+          "hl-seg-AC",
+          "el-seg-CB",
+          "hl-seg-CB"
+        ],
+        "tick_ids": [
+          "el-seg-AC",
+          "el-seg-CB"
+        ],
+        "tick_2_ids": [
+          "el-seg-AD",
+          "el-seg-DB"
+        ],
+        "clause_html": "<div class=\"clause-line\">Equal chords <span class=\"eq-tok\">/ A D / = / D B /</span> cut off equal minor arcs</div><div class=\"clause-line\">∴ <span class=\"eq-tok\">( A D ) = ( D B )</span>, bisecting <span class=\"g-tok\">( A D B )</span> at <span class=\"g-tok\">D</span></div>",
+        "just_id": "G.96 • I.def.18, G.135 • III.28",
+        "just_title": "Each sub-arc ( A D ), ( D B ) is less than a semicircle (I.def.18); by III.28, equal chords cut off equal minor arcs."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK III • PROP. 30",
+    "short_title": "bisect a given arc",
+    "g_id": "G.137",
+    "folio": "Folio 0067 • p. 61",
+    "enunciation": "To bisect a given arc.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.137/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.137/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/30/",
+    "step_total": 8,
+    "widescreen_only": true,
+    "subslides": [
+      {
+        "step_num": 6,
+        "step_kind": "COMMENTARY",
+        "widescreen_only": true,
+        "chapter": "center-free arc bisection & polygon doubling",
+        "symbolic": "/ C D / ⊥ / A B / → ( A D ) = ( D B ) < semicircle",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-seg-CD",
+          "hl-seg-CD",
+          "el-seg-AB",
+          "hl-seg-AB",
+          "el-pt-C",
+          "el-pt-D"
+        ],
+        "equal_ids": [
+          "el-arc-AD",
+          "hl-arc-AD",
+          "el-arc-DB",
+          "hl-arc-DB",
+          "el-seg-AD",
+          "hl-seg-AD",
+          "el-seg-DB",
+          "hl-seg-DB"
+        ],
+        "tick_2_ids": [
+          "el-seg-AD",
+          "el-seg-DB"
+        ],
+        "clause_html": "<div class=\"clause-line\"><strong>Center-Free Bisection &amp; Polygon Doubling</strong></div><div class=\"clause-line\"><span class=\"eq-tok\">/ A D / = / D B / → ( A D ) = ( D B )</span></div><div class=\"clause-line\" style=\"font-size:28px;color:#cbd5e1;\">Because the perpendicular bisector / C D / passes through the circle's center (III.1), it forms a diameter, ensuring both ( A D ) and ( D B ) are less than a semicircle.</div>",
+        "just_tag": "✦ ARCHITECTURAL INSIGHT",
+        "just_id": "Book IV.16 & XII.2 • Polygon Doubling",
+        "just_title": "Repeatedly applying III.30 doubles the number of sides of any inscribed regular polygon (4→8→16…, 15→30…)."
+      },
+      {
+        "step_num": 7,
+        "step_kind": "GENEALOGY",
+        "widescreen_only": true,
+        "chapter": "G.137 dependency tree & symbolic model",
+        "symbolic": "G.14, G.24, G.32, G.33, G.34, G.96, G.135 → G.137",
+        "stage_html": "<div style=\"width:100%;height:100%;display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:36px 8px 8px 8px;align-items:stretch;\"><div style=\"background:rgba(11,14,21,0.92);border:1.5px solid rgba(56,189,248,0.45);border-radius:16px;padding:22px 24px;display:flex;flex-direction:column;justify-content:space-between;\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.12em;color:#38bdf8;\">◈ G-INDEX PREREQUISITES → G.137</div><div style=\"display:flex;flex-direction:column;gap:10px;margin:12px 0;\"><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.135 (III.28)</span><span style=\"color:#f4f1ea;\">equal chords cut equal arcs</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #5ec27e;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.96 (I.def.18)</span><span style=\"color:#f4f1ea;\">semicircle definition</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.34 (I.11)</span><span style=\"color:#f4f1ea;\">perpendicular at point</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.32 (I.10)</span><span style=\"color:#f4f1ea;\">bisect segment</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.24 (I.4)</span><span style=\"color:#f4f1ea;\">SAS triangle congruence</span></div></div><div style=\"background:rgba(232,184,90,0.16);border:1.5px solid #e8b85a;border-radius:10px;padding:11px 16px;text-align:center;font-family:'JetBrains Mono',monospace;font-size:17px;font-weight:700;color:#e8b85a;\">↓ G.137 (III.30) • bisect a given arc</div></div><div style=\"background:rgba(11,14,21,0.92);border:1.5px solid rgba(232,184,90,0.4);border-radius:16px;padding:22px 24px;display:flex;flex-direction:column;justify-content:space-between;\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.12em;color:#e8b85a;\">⚙ GEOMETOR.MODEL • G.137/g1.py</div><pre style=\"font-family:'JetBrains Mono',monospace;font-size:14.5px;line-height:1.48;color:#e2e8f0;background:rgba(7,9,14,0.85);padding:16px;border-radius:10px;border:1px solid rgba(148,163,184,0.25);overflow:hidden;\">model = Model(&quot;III.30&quot;)\nmodel.construct_circle(O, A)\n\n# Chord AB, midpoint C, perpendicular CD\nmodel.set_segment(A, B)\nmodel.set_segment(C, D)\nmodel.set_segment(A, D)\nmodel.set_segment(D, B)\nmodel.set_polygon([A, C, D])\nmodel.set_polygon([B, C, D])</pre><div style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">43 total ancestor nodes in G-Index • Required for G.168 (IV.16)</div></div></div>",
+        "clause_html": "<div class=\"clause-line\"><span class=\"coincide-tok\">G.137</span> synthesizes <span class=\"g-tok\">6 direct prerequisites</span></div><div class=\"clause-line\">across <span class=\"g-tok\">43 total ancestor nodes</span> in the G-Index</div><div class=\"clause-line\" style=\"font-size:28px;color:#cbd5e1;\">Unites Book I's perpendicular bisector (I.10, I.11, I.4) with Book III's chord-arc theorem (III.28).</div>",
+        "just_tag": "◈ G-INDEX GENEALOGY",
+        "just_id": "G.137 • 6 Direct Rules",
+        "just_title": "Depends on G.4 (I.def.4), G.14 (I.post.1), G.24 (I.4), G.33 (I.def.10), G.96 (I.def.18), and G.135 (III.28)."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK III • PROP. 30",
+    "short_title": "bisect a given arc",
+    "g_id": "G.137",
+    "folio": "Folio 0067 • p. 61",
+    "enunciation": "To bisect a given arc.",
+    "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.137/g1.svg",
+    "elements_url": "https://geometor.github.io/elements/elements2/G.137/",
+    "euclid_url": "https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/30/",
+    "step_total": 8,
+    "widescreen_only": true,
+    "subslides": [
+      {
+        "step_num": 8,
+        "step_kind": "PARTICIPATE",
+        "widescreen_only": true,
+        "chapter": "explore the GEOMETOR Elements Codex & participate",
+        "symbolic": "geometor.github.io/elements",
+        "stage_html": "<div style=\"width:100%;height:100%;display:flex;flex-direction:column;justify-content:space-between;padding:42px 16px 12px 16px;gap:20px;\"><div style=\"background:linear-gradient(135deg,rgba(232,184,90,0.16) 0%,rgba(16,20,29,0.95) 100%);border:2px solid rgba(232,184,90,0.55);border-radius:18px;padding:28px 32px;display:flex;flex-direction:column;gap:12px;box-shadow:0 16px 40px rgba(0,0,0,0.6);\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.16em;color:#e8b85a;\">★ INTERACTIVE DIGITAL EDITION</div><div style=\"font-family:Georgia,serif;font-size:38px;font-weight:700;color:#f8f6f0;\">GEOMETOR • Elements Codex</div><div style=\"font-family:'JetBrains Mono',monospace;font-size:22px;color:#5ec27e;font-weight:700;\">https://geometor.github.io/elements/elements2/G.137/</div></div><div style=\"display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;flex:1;\"><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#e8b85a;font-weight:700;\">01 • PSEUDOCODE</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Hover-synced symbolic steps, signatures, and interactive SVG diagrams.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 1 • G.137</span></div><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#38bdf8;font-weight:700;\">02 • PYTHON MODEL</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Executable geometor.model scripts with exact algebraic coordinates.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 2 • g1.py</span></div><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#5ec27e;font-weight:700;\">03 • HEATH (1908)</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Complete classical translation, folio plates, and historical commentary.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 3 • Folio 0067</span></div></div></div>",
+        "clause_html": "<div class=\"clause-line\">Explore the <span class=\"g-tok\">Elements Codex</span> &amp; <span class=\"eq-tok\">G-Index</span></div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Subscribe to <strong>@geometor</strong> for all 465 propositions</div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Share questions &amp; insights in the comments</div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Star &amp; contribute at <strong>github.com/geometor</strong></div>",
+        "just_tag": "★ PARTICIPATE & SUPPORT",
+        "just_id": "github.com/geometor/elements",
+        "just_title": "Open-source symbolic reconstruction of Euclid's Elements — links in the video description."
+      }
+    ]
+  }
+]

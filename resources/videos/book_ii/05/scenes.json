@@ -1,0 +1,413 @@
+[
+  {
+    "prop_id": "BOOK II • PROP. 5",
+    "short_title": "difference of squares equal unequal",
+    "g_id": "G.87",
+    "folio": "Folios 0396–0397 • pp. 382–383",
+    "enunciation": "If a segment be cut into equal and unequal segments, the rectangle contained by the unequal segments of the whole together with the square on the segment between the points of section is equal to the square on the half.",
+    "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_ii/propositions/0396.g1.svg",
+    "step_total": 9,
+    "subslides": [
+      {
+        "step_num": 1,
+        "step_kind": "GIVEN",
+        "chapter": "segment / A B / bisected at C and cut unequally at D",
+        "symbolic": "/ A C / = / C B /, / A B / = / A D / + / D B /",
+        "visible_ids": [
+          "el-seg-AB",
+          "el-seg-AC",
+          "el-seg-CD",
+          "el-seg-DB",
+          "el-seg-AD",
+          "el-seg-CB",
+          "el-pt-A",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-B",
+          "lbl-A",
+          "lbl-C",
+          "lbl-D",
+          "lbl-B"
+        ],
+        "active_ids": [
+          "el-seg-AD",
+          "hl-seg-AD",
+          "el-seg-DB",
+          "hl-seg-DB",
+          "el-seg-CD",
+          "hl-seg-CD",
+          "el-pt-A",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-B",
+          "lbl-A",
+          "lbl-C",
+          "lbl-D",
+          "lbl-B"
+        ],
+        "equal_ids": [
+          "el-seg-AC",
+          "hl-seg-AC",
+          "el-seg-CB",
+          "hl-seg-CB"
+        ],
+        "tick_ids": [
+          "el-seg-AC",
+          "el-seg-CB"
+        ],
+        "clause_html": "<div class=\"clause-line\">Let segment <span class=\"g-tok\">/ A B /</span> be cut equally at <span class=\"g-tok\">C</span> (<span class=\"eq-tok\">/ A C / = / C B /</span>)</div><div class=\"clause-line\">and into unequal segments <span class=\"g-tok\">/ A D /</span>, <span class=\"g-tok\">/ D B /</span> at <span class=\"g-tok\">D</span>.</div>",
+        "just_id": "G.1 • I.def.1, G.4 • I.def.4",
+        "just_title": "Segment / A B / is bisected at C and divided unequally at D, with / C D / between the points of section."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK II • PROP. 5",
+    "short_title": "difference of squares equal unequal",
+    "g_id": "G.87",
+    "folio": "Folios 0396–0397 • pp. 382–383",
+    "enunciation": "If a segment be cut into equal and unequal segments, the rectangle contained by the unequal segments of the whole together with the square on the segment between the points of section is equal to the square on the half.",
+    "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_ii/propositions/0396.g1.svg",
+    "step_total": 9,
+    "subslides": [
+      {
+        "step_num": 2,
+        "step_kind": "CONSTRUCT",
+        "chapter": "square < C E F B > on half / C B / and diagonal / B E /",
+        "symbolic": "sq(/ C B /) → < C E F B >, join / B E /",
+        "visible_ids": [
+          "el-sq-CEFB",
+          "el-seg-AB",
+          "el-seg-AC",
+          "el-seg-CD",
+          "el-seg-DB",
+          "el-seg-AD",
+          "el-seg-CB",
+          "el-seg-CE",
+          "el-seg-EF",
+          "el-seg-BF",
+          "el-seg-BE",
+          "el-pt-A",
+          "el-pt-C",
+          "el-pt-D",
+          "el-pt-B",
+          "el-pt-E",
+          "el-pt-F",
+          "lbl-A",
+          "lbl-C",
+          "lbl-D",
+          "lbl-B",
+          "lbl-E",
+          "lbl-F"
+        ],
+        "active_ids": [
+          "el-sq-CEFB",
+          "hl-sq-CEFB",
+          "el-seg-BE",
+          "hl-seg-BE",
+          "el-pt-E",
+          "el-pt-F",
+          "lbl-E",
+          "lbl-F"
+        ],
+        "equal_ids": [
+          "el-seg-AC",
+          "hl-seg-AC",
+          "el-seg-CB",
+          "hl-seg-CB",
+          "el-seg-CE",
+          "hl-seg-CE",
+          "el-seg-EF",
+          "hl-seg-EF",
+          "el-seg-BF",
+          "hl-seg-BF"
+        ],
+        "tick_ids": [
+          "el-seg-AC",
+          "el-seg-CB",
+          "el-seg-CE",
+          "el-seg-EF",
+          "el-seg-BF"
+        ],
+        "clause_html": "<div class=\"clause-line\"><span class=\"g-tok\">square_on_segment</span>(<span class=\"g-tok\">/ C B /</span>) → <span class=\"eq-tok\">&lt; C E F B &gt;</span></div><div class=\"clause-line\"><span class=\"g-tok\">segment</span>(<span class=\"g-tok\">B</span>, <span class=\"g-tok\">E</span>) → <span class=\"g-tok\">/ B E /</span></div>",
+        "just_id": "G.75 • I.46, G.14 • I.post.1",
+        "just_title": "Describe the square < C E F B > on the half / C B / (I.46) and join the diagonal / B E / (I.post.1)."
+      },
+      {
+        "step_num": 3,
+        "step_kind": "CONSTRUCT",
+        "chapter": "parallels / D G /, / K M /, and / A K /",
+        "symbolic": "/ D G / ∥ / C E /, / K M / ∥ / A B /, / A K / ∥ / C L /",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-seg-DG",
+          "hl-seg-DG",
+          "el-seg-KM",
+          "hl-seg-KM",
+          "el-seg-AK",
+          "hl-seg-AK",
+          "el-pt-H",
+          "el-pt-G",
+          "el-pt-K",
+          "el-pt-L",
+          "el-pt-M",
+          "lbl-H",
+          "lbl-G",
+          "lbl-K",
+          "lbl-L",
+          "lbl-M"
+        ],
+        "equal_ids": [
+          "el-seg-AC",
+          "el-seg-CB"
+        ],
+        "tick_ids": [
+          "el-seg-AC",
+          "el-seg-CB"
+        ],
+        "clause_html": "<div class=\"clause-line\"><span class=\"g-tok\">parallel_line</span>(<span class=\"g-tok\">D</span>, <span class=\"g-tok\">/ C E /</span>) → <span class=\"g-tok\">/ D G /</span> (<span class=\"g-tok\">H</span> = <span class=\"g-tok\">/ D G /</span> ∩ <span class=\"g-tok\">/ B E /</span>)</div><div class=\"clause-line\">Draw <span class=\"g-tok\">/ K M /</span> ∥ <span class=\"g-tok\">/ A B /</span> through <span class=\"g-tok\">H</span>, and <span class=\"g-tok\">/ A K /</span> ∥ <span class=\"g-tok\">/ C L /</span> through <span class=\"g-tok\">A</span></div>",
+        "just_id": "G.58 • I.31",
+        "just_title": "Construct parallel lines through D, H, and A to partition the square and extend the rectangle to A."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK II • PROP. 5",
+    "short_title": "difference of squares equal unequal",
+    "g_id": "G.87",
+    "folio": "Folios 0396–0397 • pp. 382–383",
+    "enunciation": "If a segment be cut into equal and unequal segments, the rectangle contained by the unequal segments of the whole together with the square on the segment between the points of section is equal to the square on the half.",
+    "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_ii/propositions/0396.g1.svg",
+    "step_total": 9,
+    "subslides": [
+      {
+        "step_num": 4,
+        "step_kind": "ASSERT",
+        "chapter": "< C H > = < H F > → < C M > = < D F > → < A L > = < D F >",
+        "symbolic": "< C H > = < H F >, < C M > = < D F > = < A L >",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-rect-CDHL",
+          "hl-rect-CDHL",
+          "el-rect-HMGF",
+          "hl-rect-HMGF",
+          "el-sq-DBMH",
+          "hl-sq-DBMH"
+        ],
+        "equal_ids": [
+          "el-rect-ACLK",
+          "hl-rect-ACLK",
+          "el-rect-CBML",
+          "hl-rect-CBML",
+          "el-rect-DBFG",
+          "hl-rect-DBFG",
+          "el-seg-AC",
+          "hl-seg-AC",
+          "el-seg-CB",
+          "hl-seg-CB"
+        ],
+        "tick_ids": [
+          "el-seg-AC",
+          "el-seg-CB"
+        ],
+        "clause_html": "<div class=\"clause-line\"><span class=\"eq-tok\">&lt; C H &gt; = &lt; H F &gt;</span> (+ <span class=\"g-tok\">&lt; D M &gt;</span>) → <span class=\"eq-tok\">&lt; C M &gt; = &lt; D F &gt;</span></div><div class=\"clause-line\"><span class=\"eq-tok\">/ A C / = / C B /</span> → <span class=\"eq-tok\">&lt; A L &gt; = &lt; C M &gt; = &lt; D F &gt;</span></div>",
+        "just_id": "G.72 • I.43, G.65 • I.36",
+        "just_title": "Complements < C H > and < H F > are equal (I.43), and parallelograms < A L > and < C M > on equal bases are equal (I.36)."
+      },
+      {
+        "step_num": 5,
+        "step_kind": "ASSERT",
+        "chapter": "< A H > = gnomon < N O P > = rect(/ A D /, / D B /)",
+        "symbolic": "< A H > = < N O P > = rect(/ A D /, / D B /)",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-rect-CDHL",
+          "hl-rect-CDHL",
+          "el-seg-AD",
+          "hl-seg-AD",
+          "el-seg-DB",
+          "hl-seg-DB",
+          "el-seg-DH",
+          "hl-seg-DH",
+          "lbl-N",
+          "lbl-O",
+          "lbl-P"
+        ],
+        "equal_ids": [
+          "el-rect-ADHK",
+          "hl-rect-ADHK",
+          "el-gnomon-NOP",
+          "hl-gnomon-NOP",
+          "el-arc-NOP",
+          "hl-arc-NOP",
+          "el-seg-DB",
+          "el-seg-DH"
+        ],
+        "tick_ids": [
+          "el-seg-AC",
+          "el-seg-CB"
+        ],
+        "tick_2_ids": [
+          "el-seg-DB",
+          "el-seg-DH",
+          "el-seg-BM",
+          "el-seg-HM"
+        ],
+        "clause_html": "<div class=\"clause-line\"><span class=\"eq-tok\">&lt; A L &gt; + &lt; C H &gt; = &lt; D F &gt; + &lt; C H &gt;</span> → <span class=\"eq-tok\">&lt; A H &gt; = &lt; N O P &gt;</span></div><div class=\"clause-line\"><span class=\"eq-tok\">/ D H / = / D B /</span> → <span class=\"eq-tok\">&lt; N O P &gt; = rect(/ A D /, / D B /)</span></div>",
+        "just_id": "G.36 • I.cn.2, G.81 • II.def.1, G.86 • II.def.2",
+        "just_title": "Adding < C H > to < A L > and < D F > equates rectangle < A H > = rect(/ A D /, / D B /) to the gnomon < N O P >."
+      },
+      {
+        "step_num": 6,
+        "step_kind": "∴",
+        "is_punchline": true,
+        "chapter": "rect(/ A D /, / D B /) + sq(/ C D /) = sq(/ C B /)",
+        "symbolic": "∴ rect(/ A D /, / D B /) + sq(/ C D /) = sq(/ C B /)",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-sq-LHGE",
+          "hl-sq-LHGE",
+          "el-seg-CD",
+          "hl-seg-CD",
+          "el-seg-LH",
+          "hl-seg-LH",
+          "el-seg-CB",
+          "hl-seg-CB",
+          "lbl-N",
+          "lbl-O",
+          "lbl-P"
+        ],
+        "equal_ids": [
+          "el-rect-ADHK",
+          "hl-rect-ADHK",
+          "el-gnomon-NOP",
+          "hl-gnomon-NOP",
+          "el-arc-NOP",
+          "hl-arc-NOP"
+        ],
+        "tick_ids": [
+          "el-seg-AC",
+          "el-seg-CB"
+        ],
+        "tick_2_ids": [
+          "el-seg-DB",
+          "el-seg-DH"
+        ],
+        "tick_3_ids": [
+          "el-seg-CD",
+          "el-seg-LH",
+          "el-seg-HG",
+          "el-seg-EG",
+          "el-seg-LE"
+        ],
+        "clause_html": "<div class=\"clause-line\"><span class=\"eq-tok\">&lt; N O P &gt; + &lt; L G &gt; = &lt; C E F B &gt;</span></div><div class=\"clause-line\">∴ <span class=\"eq-tok\">rect(/ A D /, / D B /) + sq(/ C D /) = sq(/ C B /)</span></div>",
+        "just_id": "G.36 • I.cn.2",
+        "just_title": "Adding square < L G > = sq(/ C D /) to the gnomon < N O P > completes the square < C E F B > on / C B / (Q.E.D.)."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK II • PROP. 5",
+    "short_title": "difference of squares equal unequal",
+    "g_id": "G.87",
+    "folio": "Folios 0396–0397 • pp. 382–383",
+    "enunciation": "If a segment be cut into equal and unequal segments, the rectangle contained by the unequal segments of the whole together with the square on the segment between the points of section is equal to the square on the half.",
+    "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_ii/propositions/0396.g1.svg",
+    "step_total": 9,
+    "widescreen_only": true,
+    "subslides": [
+      {
+        "step_num": 7,
+        "step_kind": "COMMENTARY",
+        "widescreen_only": true,
+        "chapter": "geometric algebra: xy + (a/2 − y)² = (a/2)² & gnomon",
+        "symbolic": "xy + (a/2 − y)² = (a/2)²  •  (u + v)(u − v) = u² − v²",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-sq-LHGE",
+          "hl-sq-LHGE",
+          "el-seg-CD",
+          "hl-seg-CD",
+          "el-seg-CB",
+          "hl-seg-CB",
+          "lbl-N",
+          "lbl-O",
+          "lbl-P"
+        ],
+        "equal_ids": [
+          "el-rect-ADHK",
+          "hl-rect-ADHK",
+          "el-gnomon-NOP",
+          "hl-gnomon-NOP",
+          "el-arc-NOP",
+          "hl-arc-NOP"
+        ],
+        "tick_ids": [
+          "el-seg-AC",
+          "el-seg-CB"
+        ],
+        "tick_2_ids": [
+          "el-seg-DB",
+          "el-seg-DH"
+        ],
+        "tick_3_ids": [
+          "el-seg-CD",
+          "el-seg-LH",
+          "el-seg-HG",
+          "el-seg-EG",
+          "el-seg-LE"
+        ],
+        "clause_html": "<div class=\"clause-line\"><strong>Geometric Algebra</strong>: Difference of Squares &amp; Completing the Square</div><div class=\"clause-line\"><span class=\"eq-tok\">xy + (a/2 − y)² = (a/2)²</span> &nbsp;•&nbsp; <span class=\"eq-tok\">(u + v)(u − v) = u² − v²</span></div><div class=\"clause-line\" style=\"font-size:28px;color:#cbd5e1;\">Folds rectangle <span class=\"eq-tok\">&lt; A H &gt;</span> into the L-shaped gnomon <span class=\"eq-tok\">&lt; N O P &gt;</span>, leaving the deficit square <span class=\"g-tok\">&lt; L G &gt;</span> = <span class=\"g-tok\">sq(/ C D /)</span>.</div>",
+        "just_tag": "✦ HEATH COMMENTARY",
+        "just_id": "Heath (1908) • Vol. I, pp. 383–385",
+        "just_title": "Solves the quadratic ax − x² = b², proves the square maximizes area for given perimeter, and generates Pythagorean triples."
+      },
+      {
+        "step_num": 8,
+        "step_kind": "GENEALOGY",
+        "widescreen_only": true,
+        "chapter": "G.87 dependency tree & symbolic model",
+        "symbolic": "G.1, G.4, G.14, G.58, G.63, G.65, G.72, G.75, G.81, G.86 → G.87",
+        "stage_html": "<div style=\"width:100%;height:100%;display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:36px 8px 8px 8px;align-items:stretch;\"><div style=\"background:rgba(11,14,21,0.92);border:1.5px solid rgba(56,189,248,0.45);border-radius:16px;padding:22px 24px;display:flex;flex-direction:column;justify-content:space-between;\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.12em;color:#38bdf8;\">◈ G-INDEX PREREQUISITES → G.87</div><div style=\"display:flex;flex-direction:column;gap:10px;margin:12px 0;\"><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #5ec27e;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.86 (II.def.2)</span><span style=\"color:#f4f1ea;\">gnomon</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #5ec27e;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.81 (II.def.1)</span><span style=\"color:#f4f1ea;\">contained rectangle</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.75 (I.46)</span><span style=\"color:#f4f1ea;\">square on segment</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.72 (I.43)</span><span style=\"color:#f4f1ea;\">parallelogram complements</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.65 (I.36)</span><span style=\"color:#f4f1ea;\">parallelograms on equal bases</span></div></div><div style=\"background:rgba(232,184,90,0.16);border:1.5px solid #e8b85a;border-radius:10px;padding:11px 16px;text-align:center;font-family:'JetBrains Mono',monospace;font-size:17px;font-weight:700;color:#e8b85a;\">↓ G.87 (II.5) • difference of squares</div></div><div style=\"background:rgba(11,14,21,0.92);border:1.5px solid rgba(232,184,90,0.4);border-radius:16px;padding:22px 24px;display:flex;flex-direction:column;justify-content:space-between;\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.12em;color:#e8b85a;\">⚙ GEOMETOR.MODEL • G.87/g1.py</div><pre style=\"font-family:'JetBrains Mono',monospace;font-size:14.5px;line-height:1.48;color:#e2e8f0;background:rgba(7,9,14,0.85);padding:16px;border-radius:10px;border:1px solid rgba(148,163,184,0.25);overflow:hidden;\">model = Model(&quot;II.5&quot;)\nA, C, D, B = given_equal_unequal_cuts()\n\n# I.46: Square CEFB on half CB &amp; diagonal BE\nmodel.set_polygon([C, E, F, B])\nmodel.construct_line(B, E)\n\n# I.31: Parallels DG, KM, AK\nmodel.construct_line(D, G)\nmodel.construct_line(K, M)\nmodel.set_polygon([A, D, H, K])          # rect(AD, DB)\nmodel.set_polygon([L, H, G, E])          # sq(CD)\nmodel.set_polygon([C, B, F, G, H, L])    # gnomon NOP</pre><div style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">50 total ancestor nodes in G-Index • Required for 57 propositions</div></div></div>",
+        "clause_html": "<div class=\"clause-line\"><span class=\"coincide-tok\">G.87</span> synthesizes <span class=\"g-tok\">10 direct prerequisites</span></div><div class=\"clause-line\">across <span class=\"g-tok\">50 total ancestor nodes</span> in the G-Index</div><div class=\"clause-line\" style=\"font-size:28px;color:#cbd5e1;\">Directly drives II.14 (quadrature), III.35 (intersecting chords), and 50+ theorems in Books X &amp; XIII.</div>",
+        "just_tag": "◈ G-INDEX GENEALOGY",
+        "just_id": "G.87 • 10 Direct Rules",
+        "just_title": "Depends on G.1, G.4, G.14, G.58 (I.31), G.63 (I.def.22), G.65 (I.36), G.72 (I.43), G.75 (I.46), G.81 (II.def.1), and G.86 (II.def.2)."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK II • PROP. 5",
+    "short_title": "difference of squares equal unequal",
+    "g_id": "G.87",
+    "folio": "Folios 0396–0397 • pp. 382–383",
+    "enunciation": "If a segment be cut into equal and unequal segments, the rectangle contained by the unequal segments of the whole together with the square on the segment between the points of section is equal to the square on the half.",
+    "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_ii/propositions/0396.g1.svg",
+    "step_total": 9,
+    "widescreen_only": true,
+    "subslides": [
+      {
+        "step_num": 9,
+        "step_kind": "PARTICIPATE",
+        "widescreen_only": true,
+        "chapter": "explore the GEOMETOR Elements Codex & participate",
+        "symbolic": "geometor.github.io/elements",
+        "stage_html": "<div style=\"width:100%;height:100%;display:flex;flex-direction:column;justify-content:space-between;padding:42px 16px 12px 16px;gap:20px;\"><div style=\"background:linear-gradient(135deg,rgba(232,184,90,0.16) 0%,rgba(16,20,29,0.95) 100%);border:2px solid rgba(232,184,90,0.55);border-radius:18px;padding:28px 32px;display:flex;flex-direction:column;gap:12px;box-shadow:0 16px 40px rgba(0,0,0,0.6);\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.16em;color:#e8b85a;\">★ INTERACTIVE DIGITAL EDITION</div><div style=\"font-family:Georgia,serif;font-size:38px;font-weight:700;color:#f8f6f0;\">GEOMETOR • Elements Codex</div><div style=\"font-family:'JetBrains Mono',monospace;font-size:22px;color:#5ec27e;font-weight:700;\">https://geometor.github.io/elements/elements2/G.87/</div></div><div style=\"display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;flex:1;\"><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#e8b85a;font-weight:700;\">01 • PSEUDOCODE</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Hover-synced symbolic steps, signatures, and interactive SVG diagrams.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 1 • G.87</span></div><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#38bdf8;font-weight:700;\">02 • PYTHON MODEL</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Executable geometor.model scripts with exact algebraic coordinates.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 2 • g1.py</span></div><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#5ec27e;font-weight:700;\">03 • HEATH (1908)</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Complete classical translation, folio plates, and historical commentary.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 3 • Folios 0396–0397</span></div></div></div>",
+        "clause_html": "<div class=\"clause-line\">Explore the <span class=\"g-tok\">Elements Codex</span> &amp; <span class=\"eq-tok\">G-Index</span></div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Subscribe to <strong>@geometor</strong> for all 465 propositions</div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Share questions &amp; insights in the comments</div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Star &amp; contribute at <strong>github.com/geometor</strong></div>",
+        "just_tag": "★ PARTICIPATE & SUPPORT",
+        "just_id": "github.com/geometor/elements",
+        "just_title": "Open-source symbolic reconstruction of Euclid's Elements — links in the video description."
+      }
+    ]
+  }
+]

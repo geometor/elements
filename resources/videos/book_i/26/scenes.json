@@ -1,0 +1,440 @@
+[
+  {
+    "bell": "proposition",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "step_num": 1,
+        "step_kind": "given",
+        "prop_id": "BOOK I • PROP. 26",
+        "g_id": "G.51",
+        "folio": "Folio 0315–0317 • p. 301",
+        "title": "congruent triangles by ASA and AAS",
+        "enunciation": "If two triangles have the two angles equal to two angles respectively, and one side equal to one side, namely, either the side adjoining the equal angles, or that subtending one of the equal angles, they will also have the remaining sides equal to the remaining sides and the remaining angle to the remaining angle.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0316.g1.svg",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0316.g1.png",
+        "visible_ids": [
+          "polygon-A-B-C",
+          "polygon-D-E-F",
+          "segment-A-B",
+          "segment-A-C",
+          "segment-B-C",
+          "segment-D-E",
+          "segment-D-F",
+          "segment-E-F",
+          "wedge-A-B-C",
+          "wedge-D-E-F",
+          "wedge-B-C-A",
+          "wedge-E-F-D",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "label-A",
+          "label-B",
+          "label-C",
+          "label-D",
+          "label-E",
+          "label-F"
+        ],
+        "active_ids": [
+          "highlight-polygon-A-B-C",
+          "highlight-polygon-D-E-F",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "label-A",
+          "label-B",
+          "label-C",
+          "label-D",
+          "label-E",
+          "label-F"
+        ],
+        "equal_ids": [
+          "wedge-A-B-C",
+          "wedge-D-E-F",
+          "wedge-B-C-A",
+          "wedge-E-F-D",
+          "highlight-segment-B-C",
+          "highlight-segment-E-F"
+        ],
+        "tick_ids": [
+          "highlight-segment-B-C",
+          "highlight-segment-E-F"
+        ],
+        "symbolic": "given < A B C >, < D E F > (< A B C ) = < D E F ), < B C A ) = < E F D ), / B C / = / E F / ∨ / A B / = / D E /)",
+        "clause_html": "Given <span class=\"g-tok\">&lt; A B C &gt;</span>, <span class=\"g-tok\">&lt; D E F &gt;</span> : <span class=\"g-tok\">&lt; A B C )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; D E F )</span>, <span class=\"g-tok\">&lt; B C A )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; E F D )</span>, <span class=\"g-tok\">/ B C /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ E F /</span> ∨ <span class=\"g-tok\">/ A B /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ D E /</span>",
+        "just_id": "G.12 • I.Def.19",
+        "just_title": "rectilinear_def"
+      }
+    ]
+  },
+  {
+    "bell": "construction",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "step_num": 2,
+        "step_kind": "construct",
+        "prop_id": "BOOK I • PROP. 26",
+        "g_id": "G.51",
+        "folio": "Folio 0315–0317 • p. 301",
+        "title": "congruent triangles by ASA and AAS",
+        "enunciation": "If two triangles have the two angles equal to two angles respectively, and one side equal to one side, namely, either the side adjoining the equal angles, or that subtending one of the equal angles, they will also have the remaining sides equal to the remaining sides and the remaining angle to the remaining angle.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0316.g1.svg",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0316.g1.png",
+        "visible_ids": [
+          "polygon-A-B-C",
+          "polygon-D-E-F",
+          "polygon-G-B-C",
+          "segment-A-B",
+          "segment-A-C",
+          "segment-B-C",
+          "segment-G-C",
+          "segment-D-E",
+          "segment-D-F",
+          "segment-E-F",
+          "wedge-A-B-C",
+          "wedge-D-E-F",
+          "A",
+          "B",
+          "C",
+          "G",
+          "D",
+          "E",
+          "F",
+          "label-A",
+          "label-B",
+          "label-C",
+          "label-G",
+          "label-D",
+          "label-E",
+          "label-F"
+        ],
+        "active_ids": [
+          "highlight-segment-G-C",
+          "G",
+          "C",
+          "label-G",
+          "label-C"
+        ],
+        "equal_ids": [
+          "highlight-segment-G-B",
+          "highlight-segment-D-E",
+          "highlight-segment-B-C",
+          "highlight-segment-E-F"
+        ],
+        "tick_ids": [
+          "highlight-segment-B-C",
+          "highlight-segment-E-F"
+        ],
+        "tick_2_ids": [
+          "highlight-segment-G-B",
+          "highlight-segment-D-E"
+        ],
+        "symbolic": "? / A B / > / D E / → cut_equal_segment(/ A B /, / D E /) → / B G / = / D E /, segment(G, C) → / G C /",
+        "clause_html": "? <span class=\"g-tok\">/ A B /</span> &gt; <span class=\"g-tok\">/ D E /</span> → <span class=\"fn-tok\">cut_equal_segment</span>(<span class=\"g-tok\">/ A B /</span>, <span class=\"g-tok\">/ D E /</span>) → <span class=\"g-tok\">/ B G /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ D E /</span>, <span class=\"fn-tok\">segment</span>(<span class=\"g-tok\">G</span>, <span class=\"g-tok\">C</span>) → <span class=\"g-tok\">/ G C /</span>",
+        "just_id": "G.21 • I.3",
+        "just_title": "cut_equal_segment"
+      },
+      {
+        "type": "euclid_step",
+        "step_num": 3,
+        "step_kind": "construct",
+        "prop_id": "BOOK I • PROP. 26",
+        "g_id": "G.51",
+        "folio": "Folio 0315–0317 • p. 301",
+        "title": "congruent triangles by ASA and AAS",
+        "enunciation": "If two triangles have the two angles equal to two angles respectively, and one side equal to one side, namely, either the side adjoining the equal angles, or that subtending one of the equal angles, they will also have the remaining sides equal to the remaining sides and the remaining angle to the remaining angle.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0316.g1.svg",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0316.g1.png",
+        "visible_ids": [
+          "polygon-A-B-C",
+          "polygon-D-E-F",
+          "polygon-A-B-H",
+          "polygon-A-H-C",
+          "segment-A-B",
+          "segment-A-C",
+          "segment-B-C",
+          "segment-A-H",
+          "segment-D-E",
+          "segment-D-F",
+          "segment-E-F",
+          "wedge-A-B-C",
+          "wedge-D-E-F",
+          "A",
+          "B",
+          "C",
+          "H",
+          "D",
+          "E",
+          "F",
+          "label-A",
+          "label-B",
+          "label-C",
+          "label-H",
+          "label-D",
+          "label-E",
+          "label-F"
+        ],
+        "active_ids": [
+          "highlight-segment-A-H",
+          "A",
+          "H",
+          "label-A",
+          "label-H"
+        ],
+        "equal_ids": [
+          "highlight-segment-A-B",
+          "highlight-segment-D-E",
+          "highlight-segment-B-H",
+          "highlight-segment-E-F"
+        ],
+        "tick_ids": [
+          "highlight-segment-B-H",
+          "highlight-segment-E-F"
+        ],
+        "tick_2_ids": [
+          "highlight-segment-A-B",
+          "highlight-segment-D-E"
+        ],
+        "symbolic": "? / B C / > / E F / → cut_equal_segment(/ B C /, / E F /) → / B H / = / E F /, segment(A, H) → / A H /",
+        "clause_html": "? <span class=\"g-tok\">/ B C /</span> &gt; <span class=\"g-tok\">/ E F /</span> → <span class=\"fn-tok\">cut_equal_segment</span>(<span class=\"g-tok\">/ B C /</span>, <span class=\"g-tok\">/ E F /</span>) → <span class=\"g-tok\">/ B H /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ E F /</span>, <span class=\"fn-tok\">segment</span>(<span class=\"g-tok\">A</span>, <span class=\"g-tok\">H</span>) → <span class=\"g-tok\">/ A H /</span>",
+        "just_id": "G.21 • I.3",
+        "just_title": "cut_equal_segment"
+      }
+    ]
+  },
+  {
+    "bell": "insight",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "step_num": 4,
+        "step_kind": "assert",
+        "prop_id": "BOOK I • PROP. 26",
+        "g_id": "G.51",
+        "folio": "Folio 0315–0317 • p. 301",
+        "title": "congruent triangles by ASA and AAS",
+        "enunciation": "If two triangles have the two angles equal to two angles respectively, and one side equal to one side, namely, either the side adjoining the equal angles, or that subtending one of the equal angles, they will also have the remaining sides equal to the remaining sides and the remaining angle to the remaining angle.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0316.g1.svg",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0316.g1.png",
+        "visible_ids": [
+          "polygon-A-B-C",
+          "polygon-D-E-F",
+          "polygon-G-B-C",
+          "segment-A-B",
+          "segment-A-C",
+          "segment-B-C",
+          "segment-G-C",
+          "segment-D-E",
+          "segment-D-F",
+          "segment-E-F",
+          "wedge-G-C-B",
+          "wedge-B-C-A",
+          "wedge-E-F-D",
+          "A",
+          "B",
+          "C",
+          "G",
+          "D",
+          "E",
+          "F",
+          "label-A",
+          "label-B",
+          "label-C",
+          "label-G",
+          "label-D",
+          "label-E",
+          "label-F"
+        ],
+        "active_ids": [
+          "highlight-polygon-G-B-C",
+          "highlight-polygon-D-E-F",
+          "wedge-G-C-B",
+          "wedge-B-C-A",
+          "C",
+          "F",
+          "label-C",
+          "label-F"
+        ],
+        "equal_ids": [
+          "highlight-segment-G-B",
+          "highlight-segment-D-E",
+          "highlight-segment-B-C",
+          "highlight-segment-E-F",
+          "wedge-E-F-D"
+        ],
+        "tick_ids": [
+          "highlight-segment-B-C",
+          "highlight-segment-E-F"
+        ],
+        "tick_2_ids": [
+          "highlight-segment-G-B",
+          "highlight-segment-D-E"
+        ],
+        "symbolic": "< G B C > = < D E F > → < G C B ) = < D F E ) = < B C A ) ⇒⇐ → / A B / = / D E /",
+        "clause_html": "<span class=\"g-tok\">&lt; G B C &gt;</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; D E F &gt;</span> → <span class=\"g-tok\">&lt; G C B )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; D F E )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; B C A )</span> ⇒⇐ → <span class=\"g-tok\">/ A B /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ D E /</span>",
+        "just_id": "G.24 • I.4",
+        "just_title": "sas_congruence"
+      },
+      {
+        "type": "euclid_step",
+        "step_num": 5,
+        "step_kind": "assert",
+        "prop_id": "BOOK I • PROP. 26",
+        "g_id": "G.51",
+        "folio": "Folio 0315–0317 • p. 301",
+        "title": "congruent triangles by ASA and AAS",
+        "enunciation": "If two triangles have the two angles equal to two angles respectively, and one side equal to one side, namely, either the side adjoining the equal angles, or that subtending one of the equal angles, they will also have the remaining sides equal to the remaining sides and the remaining angle to the remaining angle.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0316.g1.svg",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0316.g1.png",
+        "visible_ids": [
+          "polygon-A-B-C",
+          "polygon-D-E-F",
+          "polygon-A-B-H",
+          "polygon-A-H-C",
+          "segment-A-B",
+          "segment-A-C",
+          "segment-B-C",
+          "segment-A-H",
+          "segment-D-E",
+          "segment-D-F",
+          "segment-E-F",
+          "wedge-B-H-A",
+          "wedge-B-C-A",
+          "wedge-E-F-D",
+          "A",
+          "B",
+          "C",
+          "H",
+          "D",
+          "E",
+          "F",
+          "label-A",
+          "label-B",
+          "label-C",
+          "label-H",
+          "label-D",
+          "label-E",
+          "label-F"
+        ],
+        "active_ids": [
+          "highlight-polygon-A-H-C",
+          "wedge-B-H-A",
+          "wedge-B-C-A",
+          "H",
+          "C",
+          "label-H",
+          "label-C"
+        ],
+        "equal_ids": [
+          "highlight-segment-A-B",
+          "highlight-segment-D-E",
+          "highlight-segment-B-H",
+          "highlight-segment-E-F",
+          "wedge-E-F-D"
+        ],
+        "tick_ids": [
+          "highlight-segment-B-H",
+          "highlight-segment-E-F"
+        ],
+        "tick_2_ids": [
+          "highlight-segment-A-B",
+          "highlight-segment-D-E"
+        ],
+        "symbolic": "< A B H > = < D E F > → < B H A ) = < E F D ) = < B C A ) ⇒⇐ → / B C / = / E F /",
+        "clause_html": "<span class=\"g-tok\">&lt; A B H &gt;</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; D E F &gt;</span> → <span class=\"g-tok\">&lt; B H A )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; E F D )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; B C A )</span> ⇒⇐ → <span class=\"g-tok\">/ B C /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ E F /</span>",
+        "just_id": "G.41 • I.16",
+        "just_title": "exterior_angle_greater"
+      },
+      {
+        "type": "euclid_step",
+        "step_num": 6,
+        "step_kind": "∴",
+        "prop_id": "BOOK I • PROP. 26",
+        "g_id": "G.51",
+        "folio": "Folio 0315–0317 • p. 301",
+        "title": "congruent triangles by ASA and AAS",
+        "enunciation": "If two triangles have the two angles equal to two angles respectively, and one side equal to one side, namely, either the side adjoining the equal angles, or that subtending one of the equal angles, they will also have the remaining sides equal to the remaining sides and the remaining angle to the remaining angle.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0316.g1.svg",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0316.g1.png",
+        "visible_ids": [
+          "polygon-A-B-C",
+          "polygon-D-E-F",
+          "segment-A-B",
+          "segment-A-C",
+          "segment-B-C",
+          "segment-D-E",
+          "segment-D-F",
+          "segment-E-F",
+          "wedge-A-B-C",
+          "wedge-D-E-F",
+          "wedge-B-C-A",
+          "wedge-E-F-D",
+          "wedge-B-A-C",
+          "wedge-E-D-F",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "label-A",
+          "label-B",
+          "label-C",
+          "label-D",
+          "label-E",
+          "label-F"
+        ],
+        "active_ids": [
+          "highlight-polygon-A-B-C",
+          "highlight-polygon-D-E-F",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "label-A",
+          "label-B",
+          "label-C",
+          "label-D",
+          "label-E",
+          "label-F"
+        ],
+        "equal_ids": [
+          "highlight-segment-B-C",
+          "highlight-segment-E-F",
+          "highlight-segment-A-B",
+          "highlight-segment-D-E",
+          "highlight-segment-A-C",
+          "highlight-segment-D-F",
+          "wedge-B-A-C",
+          "wedge-E-D-F"
+        ],
+        "tick_ids": [
+          "highlight-segment-B-C",
+          "highlight-segment-E-F"
+        ],
+        "tick_2_ids": [
+          "highlight-segment-A-B",
+          "highlight-segment-D-E"
+        ],
+        "tick_3_ids": [
+          "highlight-segment-A-C",
+          "highlight-segment-D-F"
+        ],
+        "symbolic": "/ A B / = / D E /, / A C / = / D F /, / B C / = / E F /, < B A C ) = < E D F )",
+        "clause_html": "<span class=\"g-tok\">/ A B /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ D E /</span>, <span class=\"g-tok\">/ A C /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ D F /</span>, <span class=\"g-tok\">/ B C /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ E F /</span>, <span class=\"g-tok\">&lt; B A C )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; E D F )</span>",
+        "just_id": "G.24 • I.4",
+        "just_title": "sas_congruence"
+      }
+    ]
+  }
+]

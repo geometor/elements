@@ -1,0 +1,176 @@
+[
+  {
+    "bell": "proposition",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 27",
+        "g_id": "G.53",
+        "folio": "Folio 0321–0322 • p. 307",
+        "enunciation": "If a straight line falling on two straight lines make the alternate angles equal to one another, the straight lines will be parallel to one another.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0321.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0321.g1.png",
+        "step_num": 1,
+        "total_steps": 5,
+        "step_kind": "GIVEN",
+        "symbolic": "/ E F / ∩ / A B /, / C D / (< A E F ) = < E F D ))",
+        "clause_html": "<span class=\"g-tok\">/ E F /</span> ∩ <span class=\"g-tok\">/ A B /</span>, <span class=\"g-tok\">/ C D /</span> (<span class=\"g-tok\">&lt; A E F )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; E F D )</span>)",
+        "just_id": "GIVEN",
+        "just_title": "prove: / A B / ∥ / C D /",
+        "visible_ids": [
+          "line-A-B", "line-C-D", "line-E-F",
+          "segment-A-B", "segment-C-D", "segment-E-F",
+          "highlight-segment-A-B", "highlight-segment-C-D", "highlight-segment-E-F",
+          "wedge-A-E-F", "wedge-E-F-D", "arc-A-E-F", "arc-E-F-D",
+          "A", "B", "C", "D", "E", "F",
+          "label-A", "label-B", "label-C", "label-D", "label-E", "label-F"
+        ],
+        "active_ids": [
+          "highlight-segment-A-B", "highlight-segment-C-D", "highlight-segment-E-F",
+          "A", "B", "C", "D", "E", "F",
+          "label-A", "label-B", "label-C", "label-D", "label-E", "label-F"
+        ],
+        "equal_ids": [
+          "wedge-A-E-F", "wedge-E-F-D", "arc-A-E-F", "arc-E-F-D"
+        ]
+      }
+    ]
+  },
+  {
+    "bell": "construction",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 27",
+        "g_id": "G.53",
+        "folio": "Folio 0321–0322 • p. 307",
+        "enunciation": "If a straight line falling on two straight lines make the alternate angles equal to one another, the straight lines will be parallel to one another.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0321.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0321.g1.png",
+        "step_num": 2,
+        "total_steps": 5,
+        "step_kind": "CONSTRUCT",
+        "symbolic": "? ¬(/ A B / ∥ / C D /) → extend(/ A B /, / C D /) → [ A B ] ∩ [ C D ] → G",
+        "clause_html": "? ¬(<span class=\"g-tok\">/ A B /</span> ∥ <span class=\"g-tok\">/ C D /</span>) → <span class=\"fn-tok\">extend</span>(<span class=\"g-tok\">/ A B /</span>, <span class=\"g-tok\">/ C D /</span>) → <span class=\"g-tok\">[ A B ]</span> ∩ <span class=\"g-tok\">[ C D ]</span> → <span class=\"g-tok\">G</span>",
+        "just_id": "G.18 • I.Post.2",
+        "just_title": "extend",
+        "visible_ids": [
+          "line-A-B", "line-C-D", "line-B-G", "line-D-G", "line-E-F",
+          "polygon-G-E-F",
+          "segment-A-B", "segment-C-D", "segment-B-G", "segment-D-G", "segment-E-F",
+          "highlight-segment-B-G", "highlight-segment-D-G", "highlight-polygon-G-E-F",
+          "wedge-A-E-F", "wedge-E-F-D", "arc-A-E-F", "arc-E-F-D",
+          "A", "B", "C", "D", "E", "F", "G",
+          "label-A", "label-B", "label-C", "label-D", "label-E", "label-F", "label-G"
+        ],
+        "active_ids": [
+          "highlight-segment-B-G", "highlight-segment-D-G", "highlight-polygon-G-E-F",
+          "G", "label-G"
+        ],
+        "equal_ids": [
+          "wedge-A-E-F", "wedge-E-F-D", "arc-A-E-F", "arc-E-F-D"
+        ]
+      }
+    ]
+  },
+  {
+    "bell": "insight",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 27",
+        "g_id": "G.53",
+        "folio": "Folio 0321–0322 • p. 307",
+        "enunciation": "If a straight line falling on two straight lines make the alternate angles equal to one another, the straight lines will be parallel to one another.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0321.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0321.g1.png",
+        "step_num": 3,
+        "total_steps": 5,
+        "step_kind": "ASSERT",
+        "symbolic": "< G E F > → < A E F ) = < E F G )",
+        "clause_html": "<span class=\"g-tok\">&lt; G E F &gt;</span> → <span class=\"g-tok\">&lt; A E F )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; E F G )</span>",
+        "just_id": "G.12 • I.Def.19",
+        "just_title": "rectilinear_figures_def",
+        "visible_ids": [
+          "line-A-B", "line-C-D", "line-B-G", "line-D-G", "line-E-F",
+          "polygon-G-E-F",
+          "segment-A-B", "segment-C-D", "segment-B-G", "segment-D-G", "segment-E-F",
+          "highlight-polygon-G-E-F",
+          "wedge-A-E-F", "wedge-E-F-G", "arc-A-E-F", "arc-E-F-G",
+          "A", "B", "C", "D", "E", "F", "G",
+          "label-A", "label-B", "label-C", "label-D", "label-E", "label-F", "label-G"
+        ],
+        "active_ids": [
+          "highlight-polygon-G-E-F",
+          "E", "F", "G", "label-E", "label-F", "label-G"
+        ],
+        "equal_ids": [
+          "wedge-A-E-F", "wedge-E-F-G", "arc-A-E-F", "arc-E-F-G"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 27",
+        "g_id": "G.53",
+        "folio": "Folio 0321–0322 • p. 307",
+        "enunciation": "If a straight line falling on two straight lines make the alternate angles equal to one another, the straight lines will be parallel to one another.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0321.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0321.g1.png",
+        "step_num": 4,
+        "total_steps": 5,
+        "step_kind": "ASSERT",
+        "symbolic": "< G E F > → < A E F ) > < E F G ) ⇒⇐ → [ A B ] ∩ [ C D ] = ∅",
+        "clause_html": "<span class=\"g-tok\">&lt; G E F &gt;</span> → <span class=\"g-tok\">&lt; A E F )</span> &gt; <span class=\"g-tok\">&lt; E F G )</span> ⇒⇐ → <span class=\"g-tok\">[ A B ]</span> ∩ <span class=\"g-tok\">[ C D ]</span> = ∅",
+        "just_id": "G.41 • I.16",
+        "just_title": "exterior_angle_greater",
+        "visible_ids": [
+          "line-A-B", "line-C-D", "line-B-G", "line-D-G", "line-E-F",
+          "polygon-G-E-F",
+          "segment-A-B", "segment-C-D", "segment-B-G", "segment-D-G", "segment-E-F",
+          "highlight-segment-E-G", "highlight-segment-F-G", "highlight-polygon-G-E-F",
+          "wedge-A-E-F", "wedge-E-F-G", "arc-A-E-F", "arc-E-F-G",
+          "A", "B", "C", "D", "E", "F", "G",
+          "label-A", "label-B", "label-C", "label-D", "label-E", "label-F", "label-G"
+        ],
+        "active_ids": [
+          "wedge-A-E-F", "arc-A-E-F", "highlight-polygon-G-E-F",
+          "A", "E", "F", "G", "label-A", "label-E", "label-F", "label-G"
+        ],
+        "equal_ids": [
+          "wedge-E-F-G", "arc-E-F-G"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 27",
+        "g_id": "G.53",
+        "folio": "Folio 0321–0322 • p. 307",
+        "enunciation": "If a straight line falling on two straight lines make the alternate angles equal to one another, the straight lines will be parallel to one another.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0321.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0321.g1.png",
+        "step_num": 5,
+        "total_steps": 5,
+        "step_kind": "∴",
+        "symbolic": "/ A B / ∥ / C D /",
+        "clause_html": "<span class=\"g-tok\">/ A B /</span> ∥ <span class=\"g-tok\">/ C D /</span>",
+        "just_id": "G.52 • I.Def.23",
+        "just_title": "parallel_lines_def",
+        "visible_ids": [
+          "line-A-B", "line-C-D", "line-E-F",
+          "segment-A-B", "segment-C-D", "segment-E-F",
+          "highlight-segment-A-B", "highlight-segment-C-D", "highlight-segment-E-F",
+          "wedge-A-E-F", "wedge-E-F-D", "arc-A-E-F", "arc-E-F-D",
+          "A", "B", "C", "D", "E", "F",
+          "label-A", "label-B", "label-C", "label-D", "label-E", "label-F"
+        ],
+        "active_ids": [
+          "highlight-segment-A-B", "highlight-segment-C-D",
+          "A", "B", "C", "D", "label-A", "label-B", "label-C", "label-D"
+        ],
+        "equal_ids": [
+          "wedge-A-E-F", "wedge-E-F-D", "arc-A-E-F", "arc-E-F-D"
+        ]
+      }
+    ]
+  }
+]

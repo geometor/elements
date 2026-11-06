@@ -30,10 +30,27 @@ def main():
   parser.add_argument("prop_dir", type=Path, help="Path to proposition video directory (e.g. resources/videos/book_i/01)")
   parser.add_argument("--prefix", help="Optional filename prefix (defaults to <BOOK>_<NN>, e.g. I_01)")
   parser.add_argument("--tts", action="store_true", help="Synthesize <prefix>.wav and <prefix>.json from script.txt first")
+  parser.add_argument("--keep-scratch", action="store_true", help="Keep Tier 3 scratch (*_stage.html, slides_*/)")
   args = parser.parse_args()
 
   prop_dir = args.prop_dir.resolve()
   prefix = args.prefix or infer_prefix(prop_dir)
+
+  studio_src = Path("/home/phi/PROJECTS/photon-platform/studio/src")
+  if studio_src.exists():
+    sys.path.insert(0, str(studio_src))
+    from photon_platform.studio.render import render_package
+
+    res = render_package(
+        prop_dir,
+        prefix=prefix,
+        tts=args.tts,
+        purge_scratch=not args.keep_scratch,
+    )
+    if res.get("status") != "ok":
+      raise SystemExit(f"Render/verification failed: {res}")
+    return
+
   script_txt = prop_dir / "script.txt"
   scenes_json = prop_dir / "scenes.json"
   wav_path = prop_dir / f"{prefix}.wav"
@@ -69,3 +86,4 @@ def main():
 
 if __name__ == "__main__":
   main()
+

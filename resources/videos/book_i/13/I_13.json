@@ -1,0 +1,61 @@
+{
+  "voice_id": "voice_xdhacg1pn1cq",
+  "audio_wav": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_i/13/I_13.wav",
+  "total_duration_sec": 71.62,
+  "segments": [
+    {
+      "index": 0,
+      "bell": "bell:proposition",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Euclid's Elements, Book One, Proposition Thirteen. A segment standing on a line makes either two right angles or adjacent angles summing to two right angles. Given segment A B standing on segment C D at point B, making angles C B A and A B D, we prove that angles C B A and A B D are either two right angles or equal to two right angles.",
+      "start_sec": 0.0,
+      "end_sec": 20.57,
+      "duration_sec": 20.57,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Euclid's Elements, Book One, Proposition Thirteen. A segment standing on a line makes either two right angles or adjacent angles summing to two right angles. Given segment A B standing on segment C D at point B, making angles C B A and A B D, we prove that angles C B A and A B D are either two right angles or equal to two right angles.",
+          "start_sec": 0.0,
+          "end_sec": 20.57,
+          "duration_sec": 20.57
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "bell": "bell:construction",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "First, if angle C B A equals angle A B D, then by Definition Ten they are already two right angles. Otherwise, from point B on C D, construct segment B E perpendicular to C D, so that angles C B E and E B D are two right angles.",
+      "start_sec": 20.57,
+      "end_sec": 36.72,
+      "duration_sec": 16.15,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "First, if angle C B A equals angle A B D, then by Definition Ten they are already two right angles. Otherwise, from point B on C D, construct segment B E perpendicular to C D, so that angles C B E and E B D are two right angles.",
+          "start_sec": 20.57,
+          "end_sec": 36.72,
+          "duration_sec": 16.15
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "bell": "bell:insight",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Since angle C B E equals the sum of angles C B A and A B E, add angle E B D to each. Then the two right angles C B E and E B D equal the three angles C B A, A B E, and E B D. Again, since angle D B A equals the sum of angles D B E and E B A, add angle A B C to each. Then the adjacent angles D B A and A B C also equal the same three angles. Things equal to the same are equal to one another. Therefore the adjacent angles C B A and A B D equal the two right angles C B E and E B D, as was required to prove.",
+      "start_sec": 36.72,
+      "end_sec": 71.62,
+      "duration_sec": 34.9,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Since angle C B E equals the sum of angles C B A and A B E, add angle E B D to each. Then the two right angles C B E and E B D equal the three angles C B A, A B E, and E B D. Again, since angle D B A equals the sum of angles D B E and E B A, add angle A B C to each. Then the adjacent angles D B A and A B C also equal the same three angles. Things equal to the same are equal to one another. Therefore the adjacent angles C B A and A B D equal the two right angles C B E and E B D, as was required to prove.",
+          "start_sec": 36.72,
+          "end_sec": 71.62,
+          "duration_sec": 34.9
+        }
+      ]
+    }
+  ]
+}

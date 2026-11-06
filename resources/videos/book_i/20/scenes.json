@@ -1,0 +1,338 @@
+[
+  {
+    "bell": "proposition",
+    "title": "BOOK I • PROPOSITION 20",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 20",
+        "g_id": "G.45",
+        "folio": "Folio 0300–0301 • p. 286",
+        "enunciation": "In any triangle two sides taken together in any manner are greater than the remaining one.",
+        "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.45/g1.svg",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0300.g2.png",
+        "step_num": 1,
+        "total_steps": 6,
+        "step_kind": "GIVEN",
+        "symbolic": "< A B C >",
+        "clause_html": "<span class=\"g-tok\">&lt; A B C &gt;</span>",
+        "just_id": "GIVEN • HYPOTHESIS",
+        "just_title": "given(< A B C >)",
+        "visible_ids": [
+          "el-tri-ABC",
+          "el-seg-BC",
+          "el-seg-BA",
+          "el-seg-AC",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C"
+        ],
+        "active_ids": [
+          "hl-tri-ABC",
+          "hl-seg-BC",
+          "hl-seg-BA",
+          "hl-seg-AC",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C"
+        ],
+        "equal_ids": [],
+        "tick_ids": [],
+        "tick_2_ids": []
+      }
+    ]
+  },
+  {
+    "bell": "construction",
+    "title": "CONSTRUCTION",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 20",
+        "g_id": "G.45",
+        "folio": "Folio 0300–0301 • p. 286",
+        "enunciation": "In any triangle two sides taken together in any manner are greater than the remaining one.",
+        "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.45/g1.svg",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0300.g2.png",
+        "step_num": 2,
+        "total_steps": 6,
+        "step_kind": "CONSTRUCT",
+        "symbolic": "extend(/ B A /), cut_equal_segment(/ C A /) → / A D / (= / A C /), segment(D, C) → / D C /",
+        "clause_html": "<span class=\"fn-tok\">extend</span>(<span class=\"g-tok\">/ B A /</span>) → <span class=\"g-tok\">/ A D /</span> (<span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ A C /</span>), <span class=\"fn-tok\">segment</span>(<span class=\"g-tok\">D</span>, <span class=\"g-tok\">C</span>) → <span class=\"g-tok\">/ D C /</span>",
+        "just_id": "G.18 • G.21 • G.14",
+        "just_title": "extend, cut_equal_segment, segment",
+        "visible_ids": [
+          "el-line-BA",
+          "el-tri-ABC",
+          "el-tri-ADC",
+          "el-tri-DBC",
+          "el-seg-BC",
+          "el-seg-BD",
+          "el-seg-BA",
+          "el-seg-AD",
+          "el-seg-AC",
+          "el-seg-DC",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D"
+        ],
+        "active_ids": [
+          "hl-seg-AD",
+          "hl-seg-DC",
+          "el-pt-D",
+          "lbl-D"
+        ],
+        "equal_ids": [
+          "hl-seg-AD",
+          "hl-seg-AC"
+        ],
+        "tick_ids": [
+          "hl-seg-AD",
+          "hl-seg-AC"
+        ],
+        "tick_2_ids": []
+      }
+    ]
+  },
+  {
+    "bell": "insight",
+    "title": "PROOF & INSIGHT",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 20",
+        "g_id": "G.45",
+        "folio": "Folio 0300–0301 • p. 286",
+        "enunciation": "In any triangle two sides taken together in any manner are greater than the remaining one.",
+        "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.45/g1.svg",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0300.g2.png",
+        "step_num": 3,
+        "total_steps": 6,
+        "step_kind": "ASSERT",
+        "symbolic": "/ D A / = / A C / → < A D C ) = < A C D )",
+        "clause_html": "<span class=\"g-tok\">/ D A /</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">/ A C /</span> → <span class=\"g-tok\">&lt; A D C )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; A C D )</span>",
+        "just_id": "G.25 • I.5",
+        "just_title": "isosceles_base_angles",
+        "visible_ids": [
+          "el-line-BA",
+          "el-tri-ABC",
+          "el-tri-ADC",
+          "el-tri-DBC",
+          "el-ang-ADC",
+          "el-ang-ACD",
+          "el-seg-BC",
+          "el-seg-BD",
+          "el-seg-BA",
+          "el-seg-AD",
+          "el-seg-AC",
+          "el-seg-DC",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D"
+        ],
+        "active_ids": [
+          "hl-tri-ADC",
+          "el-pt-A",
+          "el-pt-C",
+          "el-pt-D",
+          "lbl-A",
+          "lbl-C",
+          "lbl-D"
+        ],
+        "equal_ids": [
+          "hl-seg-AD",
+          "hl-seg-AC",
+          "hl-ang-ADC",
+          "hl-ang-ACD",
+          "hl-arc-ADC",
+          "hl-arc-ACD"
+        ],
+        "tick_ids": [
+          "hl-seg-AD",
+          "hl-seg-AC"
+        ],
+        "tick_2_ids": []
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 20",
+        "g_id": "G.45",
+        "folio": "Folio 0300–0301 • p. 286",
+        "enunciation": "In any triangle two sides taken together in any manner are greater than the remaining one.",
+        "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.45/g1.svg",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0300.g2.png",
+        "step_num": 4,
+        "total_steps": 6,
+        "step_kind": "ASSERT",
+        "symbolic": "< B C D ) > < A C D ) → < B C D ) > < A D C )",
+        "clause_html": "<span class=\"g-tok\">&lt; B C D )</span> &gt; <span class=\"g-tok\">&lt; A C D )</span> → <span class=\"g-tok\">&lt; B C D )</span> &gt; <span class=\"g-tok\">&lt; A D C )</span>",
+        "just_id": "G.26 • I.C.N.5",
+        "just_title": "whole_greater_than_part",
+        "visible_ids": [
+          "el-line-BA",
+          "el-tri-ABC",
+          "el-tri-ADC",
+          "el-tri-DBC",
+          "el-ang-ADC",
+          "el-ang-ACD",
+          "el-ang-BCD",
+          "el-seg-BC",
+          "el-seg-BD",
+          "el-seg-BA",
+          "el-seg-AD",
+          "el-seg-AC",
+          "el-seg-DC",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D"
+        ],
+        "active_ids": [
+          "hl-ang-BCD",
+          "hl-arc-BCD",
+          "el-pt-C",
+          "lbl-C"
+        ],
+        "equal_ids": [
+          "hl-seg-AD",
+          "hl-seg-AC",
+          "hl-ang-ADC",
+          "hl-arc-ADC"
+        ],
+        "tick_ids": [
+          "hl-seg-AD",
+          "hl-seg-AC"
+        ],
+        "tick_2_ids": []
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 20",
+        "g_id": "G.45",
+        "folio": "Folio 0300–0301 • p. 286",
+        "enunciation": "In any triangle two sides taken together in any manner are greater than the remaining one.",
+        "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.45/g1.svg",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0300.g2.png",
+        "step_num": 5,
+        "total_steps": 6,
+        "step_kind": "ASSERT",
+        "symbolic": "< B C D ) > < B D C ) → / D B / > / B C /",
+        "clause_html": "<span class=\"g-tok\">&lt; B C D )</span> &gt; <span class=\"g-tok\">&lt; B D C )</span> → <span class=\"g-tok\">/ D B /</span> &gt; <span class=\"g-tok\">/ B C /</span>",
+        "just_id": "G.44 • I.19",
+        "just_title": "greater_angle_greater_side",
+        "visible_ids": [
+          "el-line-BA",
+          "el-tri-ABC",
+          "el-tri-ADC",
+          "el-tri-DBC",
+          "el-ang-ADC",
+          "el-ang-BCD",
+          "el-seg-BC",
+          "el-seg-BD",
+          "el-seg-BA",
+          "el-seg-AD",
+          "el-seg-AC",
+          "el-seg-DC",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D"
+        ],
+        "active_ids": [
+          "hl-tri-DBC",
+          "hl-seg-BD",
+          "hl-ang-BCD",
+          "hl-arc-BCD"
+        ],
+        "equal_ids": [
+          "hl-seg-BC",
+          "hl-ang-ADC",
+          "hl-arc-ADC"
+        ],
+        "tick_ids": [],
+        "tick_2_ids": []
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 20",
+        "g_id": "G.45",
+        "folio": "Folio 0300–0301 • p. 286",
+        "enunciation": "In any triangle two sides taken together in any manner are greater than the remaining one.",
+        "svg_path": "/home/phi/PROJECTS/geometor/elements/docsrc/elements2/G.45/g1.svg",
+        "png_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0300.g2.png",
+        "step_num": 6,
+        "total_steps": 6,
+        "step_kind": "∴",
+        "symbolic": "/ B A / + / A C / > / B C /, / A B / + / B C / > / A C /, / B C / + / C A / > / A B /",
+        "clause_html": "<span class=\"g-tok\">/ B A /</span> + <span class=\"g-tok\">/ A C /</span> &gt; <span class=\"g-tok\">/ B C /</span>, <span class=\"g-tok\">/ A B /</span> + <span class=\"g-tok\">/ B C /</span> &gt; <span class=\"g-tok\">/ A C /</span>, <span class=\"g-tok\">/ B C /</span> + <span class=\"g-tok\">/ C A /</span> &gt; <span class=\"g-tok\">/ A B /</span>",
+        "just_id": "G.44 • I.19",
+        "just_title": "greater_angle_greater_side",
+        "visible_ids": [
+          "el-line-BA",
+          "el-tri-ABC",
+          "el-tri-ADC",
+          "el-tri-DBC",
+          "el-seg-BC",
+          "el-seg-BD",
+          "el-seg-BA",
+          "el-seg-AD",
+          "el-seg-AC",
+          "el-seg-DC",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "el-pt-D",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C",
+          "lbl-D"
+        ],
+        "active_ids": [
+          "hl-tri-ABC",
+          "hl-seg-BA",
+          "hl-seg-AC",
+          "el-pt-A",
+          "el-pt-B",
+          "el-pt-C",
+          "lbl-A",
+          "lbl-B",
+          "lbl-C"
+        ],
+        "equal_ids": [
+          "hl-seg-AD",
+          "hl-seg-AC",
+          "hl-seg-BC"
+        ],
+        "tick_ids": [
+          "hl-seg-AD",
+          "hl-seg-AC"
+        ],
+        "tick_2_ids": []
+      }
+    ]
+  }
+]

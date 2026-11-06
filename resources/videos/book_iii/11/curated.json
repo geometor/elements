@@ -1,0 +1,54 @@
+{
+  "III.11": {
+    "subtype": "theorem",
+    "args": [
+      ":g:`( A B C ) <g1:( A B C )>`",
+      ":g:`( A D E ) <g1:( A D E )>`",
+      ":g:`A <g1:A>`",
+      ":g:`F <g1:F>`",
+      ":g:`G <g1:G>`"
+    ],
+    "returns": [],
+    "given": ":g:`( A B C ) <g1:( A B C )>`, :g:`( A D E ) <g1:( A D E )>` touch internally at :g:`A <g1:A>`, center(:g:`( A B C ) <g1:( A B C )>`) = :g:`F <g1:F>`, center(:g:`( A D E ) <g1:( A D E )>`) = :g:`G <g1:G>`",
+    "contract": ":g:`A <g1:A>` ∈ :g:`[ F G ] <g1:[ F H ]>`",
+    "steps": [
+      [
+        "given",
+        [
+          "III.def.3",
+          "I.def.16"
+        ],
+        ":g:`( A B C ) <g1:( A B C )>`, :g:`( A D E ) <g1:( A D E )>` touch internally at :g:`A <g1:A>`, center(:g:`( A B C ) <g1:( A B C )>`) = :g:`F <g1:F>`, center(:g:`( A D E ) <g1:( A D E )>`) = :g:`G <g1:G>`"
+      ],
+      [
+        "construct",
+        [
+          "I.post.1",
+          "I.post.2"
+        ],
+        "assume :g:`A <g1:A>` ∉ :g:`[ F G ] <g1:[ F H ]>` → :g:`/ F G H / <g1:/ F H />`, :g:`/ A F / <g1:/ A F />`, :g:`/ A G / <g1:/ A G />`"
+      ],
+      [
+        "assert",
+        [
+          "I.20",
+          "I.def.15"
+        ],
+        "in :g:`< A F G > <g1:< A F G >>`, :g:`/ A G / <g1:/ A G />` + :g:`/ G F / <g1:/ G F />` > :g:`/ F A / <g1:/ F A />` :eq:`= <g1:/ A F / = g1:/ F H />` :g:`/ F H / <g1:/ F H />` → :g:`/ A G / <g1:/ A G />` > :g:`/ G H / <g1:/ G H />`"
+      ],
+      [
+        "assert",
+        [
+          "I.def.15",
+          "I.cn.5"
+        ],
+        ":g:`/ A G / <g1:/ A G />` :eq:`= <g1:/ A G / = g1:/ G D />` :g:`/ G D / <g1:/ G D />` → :g:`/ G D / <g1:/ G D />` > :g:`/ G H / <g1:/ G H />` (the less than the greater) ⇒⇐"
+      ],
+      [
+        "conclude",
+        [],
+        ":g:`A <g1:A>` ∈ :g:`[ F G ] <g1:[ F H ]>`"
+      ]
+    ]
+  }
+}

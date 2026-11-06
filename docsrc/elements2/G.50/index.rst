@@ -12,6 +12,7 @@
 :tags: book-i, segment, angle, triangle, trilateral, plane-angle, straight-line, plane, equality, reductio-ad-absurdum
 :dependencies: G.4, G.12, G.22, G.24, G.49
 :excerpt: If two triangles have two sides equal to two sides respectively, the one with the greater base has the greater included angle.
+:youtube_id: Th83YMKED1Y
 
 .. _G.50:
 .. _I.25:
@@ -27,62 +28,30 @@ G.50 converse hinge theorem
 
 .. signature:: theorem
 
-   | :fn:`converse_hinge_theorem <G.50>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>`, :g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />`)
-   | **given** :g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>` , :g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A B / = g1:/ D E /; g1:/ A C / = g1:/ D F />` to :g:`/ D E / <g1:/ D E />`, :g:`/ D F / <g1:/ D F />`, namely :g:`/ A B / <g1:/ A B />` to :g:`/ D E / <g1:/ D E />`, :g:`/ A C / <g1:/ A C />` to :g:`/ D F / <g1:/ D F />`
-   | **prove** :g:`< B A C ) <g1:< B A C )>` is also greater than :g:`< E D F ) <g1:< E D F )>`
+   | :fn:`converse_hinge_theorem <G.50>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>`)
+   | **given** :g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>` (:g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ D E /; g1:/ A C / = g1:/ D F />` :g:`/ D E / <g1:/ D E />`, :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A B / = g1:/ D E /; g1:/ A C / = g1:/ D F />` :g:`/ D F / <g1:/ D F />`, :g:`/ B C / <g1:/ B C />` > :g:`/ E F / <g1:/ E F />`)
+   | **prove** :g:`< B A C ) <g1:< B A C )>` > :g:`< E D F ) <g1:< E D F )>`
 
 .. picture:: g1.svg
    :alt: Folio 0313 Figure 1 - Proposition 25
 
 .. step:: given
 
-   :g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>` , :g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A B / = g1:/ D E /; g1:/ A C / = g1:/ D F />` to :g:`/ D E / <g1:/ D E />`, :g:`/ D F / <g1:/ D F />`, namely :g:`/ A B / <g1:/ A B />` to :g:`/ D E / <g1:/ D E />`, :g:`/ A C / <g1:/ A C />` to :g:`/ D F / <g1:/ D F />`
+   :g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>` (:g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ D E /; g1:/ A C / = g1:/ D F />` :g:`/ D E / <g1:/ D E />`, :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A B / = g1:/ D E /; g1:/ A C / = g1:/ D F />` :g:`/ D F / <g1:/ D F />`, :g:`/ B C / <g1:/ B C />` > :g:`/ E F / <g1:/ E F />`)
 
-.. step:: assert
+.. step:: construct
 
-   let :g:`/ B C / <g1:/ B C />` be greater than :g:`/ E F / <g1:/ E F />`
-
-.. step:: assert
-
-   If not, it is either :eq:`= <g1:< B A C ) = g1:< E D F )>` to it or less
-
-.. step:: assert
-
-   Now :g:`< B A C ) <g1:< B A C )>` is not :eq:`= <g1:< B A C ) = g1:< E D F )>` to :g:`< E D F ) <g1:< E D F )>`
+   ? :g:`< B A C ) <g1:< B A C )>` ≤ :g:`< E D F ) <g1:< E D F )>` → :g:`< B A C ) <g1:< B A C )>` :eq:`= <g1:< B A C ) = g1:< E D F )>` :g:`< E D F ) <g1:< E D F )>` ∨ :g:`< B A C ) <g1:< B A C )>` < :g:`< E D F ) <g1:< E D F )>`
 
 .. step:: assert ∵ sas_congruence <G.24>
 
-   For then :g:`/ B C / <g1:/ B C />` would also have been :eq:`= <g1:/ B C / = g1:/ E F />` to :g:`/ E F / <g1:/ E F />`,
-
-.. step:: assert
-
-   But it is not
-
-.. step:: assert
-
-   :g:`< B A C ) <g1:< B A C )>` is not :eq:`= <g1:< B A C ) = g1:< E D F )>` to :g:`< E D F ) <g1:< E D F )>`
-
-.. step:: assert
-
-   Neither again is :g:`< B A C ) <g1:< B A C )>` less than :g:`< E D F ) <g1:< E D F )>`
+   ? :g:`< B A C ) <g1:< B A C )>` :eq:`= <g1:< B A C ) = g1:< E D F )>` :g:`< E D F ) <g1:< E D F )>` → :g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ B C / = g1:/ E F />` :g:`/ E F / <g1:/ E F />` ⇒⇐ → :g:`< B A C ) <g1:< B A C )>` ≠ :g:`< E D F ) <g1:< E D F )>`
 
 .. step:: assert ∵ hinge_theorem <G.49>
 
-   For then :g:`/ B C / <g1:/ B C />` would also have been less than :g:`/ E F / <g1:/ E F />`,
+   ? :g:`< B A C ) <g1:< B A C )>` < :g:`< E D F ) <g1:< E D F )>` → :g:`/ B C / <g1:/ B C />` < :g:`/ E F / <g1:/ E F />` ⇒⇐ → :g:`< B A C ) <g1:< B A C )>` ≮ :g:`< E D F ) <g1:< E D F )>`
 
-.. step:: assert
-
-   But it is not
-
-.. step:: assert
-
-   :g:`< B A C ) <g1:< B A C )>` is not less than :g:`< E D F ) <g1:< E D F )>`
-
-.. step:: assert
-
-   It was proved that it is not :eq:`= <g1:< B A C ) = g1:< E D F )>` either
-
-.. step:: conclude
+.. step:: conclude ∵ sas_congruence, hinge_theorem <G.24, G.49>
 
    :g:`< B A C ) <g1:< B A C )>` > :g:`< E D F ) <g1:< E D F )>`
 
@@ -257,6 +226,7 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.49" -> "G.14";
      "G.17" -> "G.15";
      "G.20" -> "G.15";
@@ -267,6 +237,7 @@ Dependency Graph
      "G.21" -> "G.16";
      "G.37" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
@@ -286,6 +257,7 @@ Dependency Graph
      "G.43" -> "G.21";
      "G.45" -> "G.21";
      "G.47" -> "G.21";
+     "G.49" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
      "G.28" -> "G.22";
@@ -312,12 +284,15 @@ Dependency Graph
      "G.49" -> "G.24";
      "G.50" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.49" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.49" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -353,5 +328,6 @@ Required for
 .. toctree::
    :hidden:
 
+   video
    code
    heath

@@ -1,0 +1,21 @@
+[bell:proposition]
+[style:brisk]
+Euclid's Elements, Book One, Proposition Forty-Four. <pause>
+Apply to a given segment, in a given angle, a parallelogram equal in area to a given triangle. <pause>
+Let A B be the given segment, C the given triangle, and D the given angle. <pause>
+We apply to segment A B, in an angle equal to D, a parallelogram equal in area to triangle C.
+
+[bell:construction]
+[style:brisk]
+By Proposition Forty-Two, construct parallelogram B E F G equal in area to triangle C in angle E B G equal to angle D, placed so that B E is in a line with A B. <pause>
+Extend F G to H, draw A H through A parallel to B G, and construct segment H B. <pause>
+Because transversal H F falls on parallels A H and E F, interior angles A H F and H F E equal two right angles. <pause>
+Thus angles B H G and G F E are less than two right angles, so by the Fifth Postulate, H B and F E extended will meet. <pause>
+Extend them to meet at K, draw K L through K parallel to E A, and extend H A and G B to points L and M.
+
+[bell:insight]
+[style:brisk]
+Now H L K F is a parallelogram with diameter H K, having parallelograms H A B G and B M K E about H K, and complements A B M L and B E F G. <pause>
+By Proposition Forty-Three, complement A B M L equals complement B E F G, which was constructed equal to triangle C; therefore A B M L equals triangle C. <pause>
+Moreover, by Proposition Fifteen, vertical angle A B M equals angle E B G, which equals angle D; so angle A B M equals angle D. <pause>
+Therefore parallelogram A B M L, equal to triangle C, has been applied to segment A B in angle A B M equal to angle D, <pause> as was required to do.

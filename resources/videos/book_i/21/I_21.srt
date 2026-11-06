@@ -1,0 +1,31 @@
+1
+00:00:00,420 --> 00:00:03,567
+Euclid's Elements, Book One, Proposition Twenty-One.
+
+2
+00:00:03,567 --> 00:00:13,249
+Segments constructed from the endpoints of one side of a triangle to an interior point have a lesser sum, but contain a greater angle, than the other two sides.
+
+3
+00:00:13,249 --> 00:00:25,050
+Given triangle A B C and interior segments B D and D C meeting at point D, we prove that B D and D C together are less than B A and A C together, and that angle B D C is greater than angle B A C.
+
+4
+00:00:25,470 --> 00:00:30,120
+Extend segment B D continuously to meet side A C at point E.
+
+5
+00:00:30,540 --> 00:00:42,063
+In triangle A B E, two sides B A and A E together are greater than B E; adding E C to each shows that B A and A C together are greater than B E and E C together.
+
+6
+00:00:42,063 --> 00:00:53,586
+In triangle C E D, two sides C E and E D together are greater than C D; adding D B to each shows that B E and E C together are greater than B D and D C together.
+
+7
+00:00:53,586 --> 00:01:04,751
+Next, in triangle C D E, exterior angle B D C is greater than interior angle C E D, and in triangle A B E, exterior angle C E B is greater than angle B A C.
+
+8
+00:01:04,751 --> 00:01:14,700
+Therefore B D and D C together are less than B A and A C together, while angle B D C is greater than angle B A C, as was required to prove.

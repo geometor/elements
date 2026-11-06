@@ -1,0 +1,170 @@
+[
+  {
+    "bell": "proposition",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 30",
+        "g_id": "G.57",
+        "folio": "Folio 0328 • p. 314",
+        "enunciation": "Straight lines parallel to the same straight line are also parallel to one another.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0328.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0328.g1.png",
+        "step_num": 1,
+        "total_steps": 5,
+        "step_kind": "GIVEN",
+        "symbolic": "/ A B / ∥ / E F /, / C D / ∥ / E F /",
+        "clause_html": "<span class=\"g-tok\">/ A B /</span> ∥ <span class=\"g-tok\">/ E F /</span>, <span class=\"g-tok\">/ C D /</span> ∥ <span class=\"g-tok\">/ E F /</span>",
+        "just_id": "GIVEN",
+        "just_title": "prove: / A B / ∥ / C D /",
+        "visible_ids": [
+          "line-A-B", "line-E-F", "line-C-D",
+          "segment-A-B", "segment-E-F", "segment-C-D",
+          "highlight-segment-A-B", "highlight-segment-E-F", "highlight-segment-C-D",
+          "A", "B", "C", "D", "E", "F",
+          "label-A", "label-B", "label-C", "label-D", "label-E", "label-F"
+        ],
+        "active_ids": [
+          "highlight-segment-A-B", "highlight-segment-C-D",
+          "A", "B", "C", "D", "label-A", "label-B", "label-C", "label-D"
+        ],
+        "equal_ids": [
+          "highlight-segment-E-F",
+          "E", "F", "label-E", "label-F"
+        ]
+      }
+    ]
+  },
+  {
+    "bell": "construction",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 30",
+        "g_id": "G.57",
+        "folio": "Folio 0328 • p. 314",
+        "enunciation": "Straight lines parallel to the same straight line are also parallel to one another.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0328.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0328.g1.png",
+        "step_num": 2,
+        "total_steps": 5,
+        "step_kind": "CONSTRUCT",
+        "symbolic": "/ G K / ∩ / A B /, / E F /, / C D / → G, H, K",
+        "clause_html": "<span class=\"g-tok\">/ G K /</span> ∩ <span class=\"g-tok\">/ A B /</span>, <span class=\"g-tok\">/ E F /</span>, <span class=\"g-tok\">/ C D /</span> → <span class=\"g-tok\">G</span>, <span class=\"g-tok\">H</span>, <span class=\"g-tok\">K</span>",
+        "just_id": "G.14 • I.Post.1",
+        "just_title": "segment",
+        "visible_ids": [
+          "line-A-B", "line-E-F", "line-C-D", "line-L-M",
+          "segment-A-B", "segment-E-F", "segment-C-D", "segment-G-K",
+          "highlight-segment-G-K",
+          "A", "B", "C", "D", "E", "F", "G", "H", "K",
+          "label-A", "label-B", "label-C", "label-D", "label-E", "label-F", "label-G", "label-H", "label-K"
+        ],
+        "active_ids": [
+          "highlight-segment-G-K",
+          "G", "H", "K", "label-G", "label-H", "label-K"
+        ],
+        "equal_ids": []
+      }
+    ]
+  },
+  {
+    "bell": "insight",
+    "subslides": [
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 30",
+        "g_id": "G.57",
+        "folio": "Folio 0328 • p. 314",
+        "enunciation": "Straight lines parallel to the same straight line are also parallel to one another.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0328.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0328.g1.png",
+        "step_num": 3,
+        "total_steps": 5,
+        "step_kind": "ASSERT",
+        "symbolic": "/ A B / ∥ / E F / → < A G K ) = < G H F )",
+        "clause_html": "<span class=\"g-tok\">/ A B /</span> ∥ <span class=\"g-tok\">/ E F /</span> → <span class=\"g-tok\">&lt; A G K )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; G H F )</span>",
+        "just_id": "G.56 • I.29",
+        "just_title": "parallel_transversal_angles",
+        "visible_ids": [
+          "line-A-B", "line-E-F", "line-C-D", "line-L-M",
+          "segment-A-B", "segment-E-F", "segment-C-D", "segment-G-K",
+          "highlight-segment-A-B", "highlight-segment-E-F",
+          "wedge-A-G-K", "wedge-G-H-F", "arc-A-G-K", "arc-G-H-F",
+          "A", "B", "C", "D", "E", "F", "G", "H", "K",
+          "label-A", "label-B", "label-C", "label-D", "label-E", "label-F", "label-G", "label-H", "label-K"
+        ],
+        "active_ids": [
+          "highlight-segment-A-B", "highlight-segment-E-F",
+          "A", "B", "E", "F", "G", "H", "label-A", "label-B", "label-E", "label-F", "label-G", "label-H"
+        ],
+        "equal_ids": [
+          "wedge-A-G-K", "wedge-G-H-F", "arc-A-G-K", "arc-G-H-F"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 30",
+        "g_id": "G.57",
+        "folio": "Folio 0328 • p. 314",
+        "enunciation": "Straight lines parallel to the same straight line are also parallel to one another.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0328.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0328.g1.png",
+        "step_num": 4,
+        "total_steps": 5,
+        "step_kind": "ASSERT",
+        "symbolic": "/ E F / ∥ / C D / → < G H F ) = < G K D ) → < A G K ) = < G K D )",
+        "clause_html": "<span class=\"g-tok\">/ E F /</span> ∥ <span class=\"g-tok\">/ C D /</span> → <span class=\"g-tok\">&lt; G H F )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; G K D )</span> → <span class=\"g-tok\">&lt; A G K )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; G K D )</span>",
+        "just_id": "G.56 • I.29, G.16 • I.C.N.1",
+        "just_title": "parallel_transversal_angles",
+        "visible_ids": [
+          "line-A-B", "line-E-F", "line-C-D", "line-L-M",
+          "segment-A-B", "segment-E-F", "segment-C-D", "segment-G-K",
+          "highlight-segment-E-F", "highlight-segment-C-D",
+          "wedge-A-G-K", "wedge-G-H-F", "wedge-G-K-D",
+          "arc-A-G-K", "arc-G-H-F", "arc-G-K-D",
+          "A", "B", "C", "D", "E", "F", "G", "H", "K",
+          "label-A", "label-B", "label-C", "label-D", "label-E", "label-F", "label-G", "label-H", "label-K"
+        ],
+        "active_ids": [
+          "wedge-G-H-F", "arc-G-H-F", "highlight-segment-E-F", "highlight-segment-C-D",
+          "E", "F", "C", "D", "H", "K", "label-E", "label-F", "label-C", "label-D", "label-H", "label-K"
+        ],
+        "equal_ids": [
+          "wedge-A-G-K", "wedge-G-K-D", "arc-A-G-K", "arc-G-K-D"
+        ]
+      },
+      {
+        "type": "euclid_step",
+        "prop_id": "BOOK I • PROP. 30",
+        "g_id": "G.57",
+        "folio": "Folio 0328 • p. 314",
+        "enunciation": "Straight lines parallel to the same straight line are also parallel to one another.",
+        "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0328.g1.svg",
+        "woodcut_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_i/propositions/0328.g1.png",
+        "step_num": 5,
+        "total_steps": 5,
+        "step_kind": "∴",
+        "symbolic": "< A G K ) = < G K D ) → / A B / ∥ / C D /",
+        "clause_html": "<span class=\"g-tok\">&lt; A G K )</span> <span class=\"eq-tok\">=</span> <span class=\"g-tok\">&lt; G K D )</span> → <span class=\"g-tok\">/ A B /</span> ∥ <span class=\"g-tok\">/ C D /</span>",
+        "just_id": "G.53 • I.27",
+        "just_title": "alternate_angles_parallel",
+        "visible_ids": [
+          "line-A-B", "line-E-F", "line-C-D", "line-L-M",
+          "segment-A-B", "segment-E-F", "segment-C-D", "segment-G-K",
+          "highlight-segment-A-B", "highlight-segment-C-D",
+          "wedge-A-G-K", "wedge-G-K-D", "arc-A-G-K", "arc-G-K-D",
+          "A", "B", "C", "D", "E", "F", "G", "H", "K",
+          "label-A", "label-B", "label-C", "label-D", "label-E", "label-F", "label-G", "label-H", "label-K"
+        ],
+        "active_ids": [
+          "highlight-segment-A-B", "highlight-segment-C-D",
+          "A", "B", "C", "D", "label-A", "label-B", "label-C", "label-D"
+        ],
+        "equal_ids": [
+          "wedge-A-G-K", "wedge-G-K-D", "arc-A-G-K", "arc-G-K-D"
+        ]
+      }
+    ]
+  }
+]

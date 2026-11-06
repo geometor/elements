@@ -1,0 +1,38 @@
+================================================================================
+YOUTUBE 1080P (16:9) TITLE
+================================================================================
+I.20 • in any triangle two sides taken together in any manner are greater than the remaining one ...
+
+================================================================================
+YOUTUBE SHORT (9:16) TITLE
+================================================================================
+I.20 • in any triangle two sides taken together in any manner are greater than the remaining one ...
+
+================================================================================
+DESCRIPTION
+================================================================================
+“In any triangle two sides taken together in any manner are greater than the remaining one.”
+— Euclid's Elements, BOOK I • PROP. 20 (G.45)
+
+00:00 1 · GIVEN: ⟨ A B C ⟩
+00:13 2 · CONSTRUCT: extend(/ B A /), cut_equal_segment(/ C A /) → / A D / (= / A C /), segment(D, C) → / D C /
+00:21 3 · ASSERT: / D A / = / A C / → ⟨ A D C ) = ⟨ A C D )
+00:30 4 · ASSERT: ⟨ B C D ) ⟩ ⟨ A C D ) → ⟨ B C D ) ⟩ ⟨ A D C )
+00:38 5 · ASSERT: ⟨ B C D ) ⟩ ⟨ B D C ) → / D B / ⟩ / B C /
+00:46 6 · ∴: / B A / + / A C / ⟩ / B C /, / A B / + / B C / ⟩ / A C /, / B C / + / C A / ⟩ / A B /
+
+GEOMETOR • G.45 • v2
+
+================================================================================
+TAGS
+================================================================================
+Euclid, Euclid's Elements, Euclid I.20, G.45, Geometry, Constructive Geometry, Compass and Straightedge, Mathematical Proof, GEOMETOR, Thomas Little Heath
+
+================================================================================
+MEDIA & CAPTIONS FILES
+================================================================================
+• 9:16 Short MP4 : I_20_short.mp4
+• 16:9 1080p MP4 : I_20_1080p.mp4
+• Closed Captions: I_20.srt
+• 16:9 Thumbnail : I_20_thumb.png
+• 9:16 Thumbnail : I_20_short_thumb.png

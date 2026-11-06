@@ -10,8 +10,9 @@
 :categories: theorem, proof, plane-geometry
 :category: theorem, proof, plane-geometry
 :tags: book-i, segment, triangle, quadrilateral, trilateral, parallel-straight-lines, diameter, parallel, parallelogram, equality
-:dependencies: G.12, G.14, G.52, G.61, G.62, G.66
+:dependencies: G.12, G.14, G.16, G.52, G.61, G.62, G.66
 :excerpt: If a parallelogram shares the same base with a triangle and lies in the same parallels, the parallelogram is double the triangle.
+:youtube_id: -o5C3XftNFY
 
 .. _G.70:
 .. _I.41:
@@ -27,35 +28,32 @@ G.70 parallelogram is double a triangle on the same base
 
 .. signature:: theorem
 
-   | :fn:`parallelogram_double_triangle <G.70>`\ ()
-   | **prove** the parallelogram :g:`< A B C D > <g1:< A B C D >>` is double of :g:`< B E C > <g1:< B E C >>`
+   | :fn:`parallelogram_double_triangle <G.70>`\ (:g:`< A B C D > <g1:< A B C D >>`, :g:`< E B C > <g1:< E B C >>`)
+   | **given** :g:`< A B C D > <g1:< A B C D >>`, :g:`< E B C > <g1:< E B C >>` (:g:`/ B C / <g1:/ B C />` ∥ :g:`/ A E / <g1:/ A E />`)
+   | **prove** :g:`< A B C D > <g1:< A B C D >>` :eq:`= <g1:< A B C D > = g1:< E B C >>` 2 :g:`< E B C > <g1:< E B C >>`
 
 .. picture:: g1.svg
    :alt: Folio 0352 Figure 1 - Proposition 41
 
-.. step:: assert
+.. step:: given
 
-   Let the parallelogram :g:`< A B C D > <g1:< A B C D >>` have the same base :g:`/ B C / <g1:/ B C />` with :g:`< E B C > <g1:< E B C >>`, and let it be in the same parallels :g:`/ B C / <g1:/ B C />`, :g:`/ A E / <g1:/ A E />`
+   :g:`< A B C D > <g1:< A B C D >>`, :g:`< E B C > <g1:< E B C >>` (:g:`/ B C / <g1:/ B C />` ∥ :g:`/ A E / <g1:/ A E />`)
 
 .. step:: construct
 
    :fn:`segment <G.14>`\ (:g:`A <g1:A>`, :g:`C <g1:C>`) → :g:`/ A C / <g1:/ A C />`
 
-.. step:: assert
-
-   Then :g:`< A B C > <g1:< A B C >>` is :eq:`equal <g1:< A B C > = g1:< E B C >>` to :g:`< E B C > <g1:< E B C >>`
-
 .. step:: assert ∵ triangles_same_base <G.66>
 
-   For it is on the same base :g:`/ B C / <g1:/ B C />` with it and in the same parallels :g:`/ B C / <g1:/ B C />`, :g:`/ A E / <g1:/ A E />`
+   :g:`/ B C / <g1:/ B C />` ∥ :g:`/ A E / <g1:/ A E />` → :g:`< A B C > <g1:< A B C >>` :eq:`= <g1:< A B C > = g1:< E B C >>` :g:`< E B C > <g1:< E B C >>`
 
 .. step:: assert ∵ parallelogram_properties <G.62>
 
-   The parallelogram :g:`< A B C D > <g1:< A B C D >>` is double of :g:`< A B C > <g1:< A B C >>`; for the :term:`diameter <G.61>` :g:`/ A C / <g1:/ A C />` bisects it
+   :g:`/ A C / <g1:/ A C />` ∈ :g:`< A B C D > <g1:< A B C D >>` → :g:`< A B C D > <g1:< A B C D >>` :eq:`= <g1:< A B C > = g1:< A D C >>` 2 :g:`< A B C > <g1:< A B C >>`
 
-.. step:: conclude
+.. step:: conclude ∵ equal_transitive <G.16>
 
-   So that the parallelogram :g:`< A B C D > <g1:< A B C D >>` is also double of :g:`< E B C > <g1:< E B C >>`
+   :g:`< A B C D > <g1:< A B C D >>` :eq:`= <g1:< A B C > = g1:< A D C >>` 2 :g:`< A B C > <g1:< A B C >>`, :g:`< A B C > <g1:< A B C >>` :eq:`= <g1:< A B C > = g1:< E B C >>` :g:`< E B C > <g1:< E B C >>` → :g:`< A B C D > <g1:< A B C D >>` :eq:`= <g1:< A B C D > = g1:< E B C >>` 2 :g:`< E B C > <g1:< E B C >>`
 
 Dependency Graph
 ----------------
@@ -258,6 +256,7 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.51" -> "G.14";
      "G.58" -> "G.14";
      "G.70" -> "G.14";
@@ -270,8 +269,11 @@ Dependency Graph
      "G.21" -> "G.16";
      "G.37" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.56" -> "G.16";
      "G.64" -> "G.16";
+     "G.66" -> "G.16";
+     "G.70" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
@@ -280,6 +282,7 @@ Dependency Graph
      "G.25" -> "G.18";
      "G.41" -> "G.18";
      "G.45" -> "G.18";
+     "G.53" -> "G.18";
      "G.58" -> "G.18";
      "G.66" -> "G.18";
      "G.20" -> "G.19";
@@ -294,6 +297,7 @@ Dependency Graph
      "G.43" -> "G.21";
      "G.45" -> "G.21";
      "G.47" -> "G.21";
+     "G.51" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
      "G.28" -> "G.22";
@@ -327,11 +331,14 @@ Dependency Graph
      "G.62" -> "G.24";
      "G.64" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.51" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -396,5 +403,6 @@ Required for
 .. toctree::
    :hidden:
 
+   video
    code
    heath

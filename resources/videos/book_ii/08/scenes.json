@@ -1,0 +1,348 @@
+[
+  {
+    "prop_id": "BOOK II • PROP. 8",
+    "short_title": "four rectangles plus square",
+    "g_id": "G.90",
+    "folio": "Folios 0403–0405 • pp. 389–391",
+    "enunciation": "If a segment be cut at random, four times the rectangle contained by the whole and one of the segments together with the square on the remaining segment is equal to the square described on the whole and the aforesaid segment as on one segment.",
+    "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_ii/propositions/0404.g1.svg",
+    "step_total": 9,
+    "subslides": [
+      {
+        "step_num": 1,
+        "step_kind": "GIVEN",
+        "chapter": "given segment / A B / cut at random at C",
+        "symbolic": "/ A B / = / A C / + / C B /",
+        "visible_ids": [
+          "el-seg-AB",
+          "el-seg-AC",
+          "el-seg-CB",
+          "el-pt-A",
+          "el-pt-C",
+          "el-pt-B",
+          "lbl-A",
+          "lbl-C",
+          "lbl-B"
+        ],
+        "active_ids": [
+          "el-seg-AB",
+          "hl-seg-AB",
+          "el-seg-AC",
+          "hl-seg-AC",
+          "el-seg-CB",
+          "hl-seg-CB",
+          "el-pt-A",
+          "el-pt-C",
+          "el-pt-B",
+          "lbl-A",
+          "lbl-C",
+          "lbl-B"
+        ],
+        "equal_ids": [],
+        "clause_html": "<div class=\"clause-line\">Let a segment <span class=\"g-tok\">/ A B /</span> be cut at random at <span class=\"g-tok\">C</span>;</div><div class=\"clause-line\">to prove <span class=\"eq-tok\">4·rect(/ A B /, / B C /) + sq(/ A C /) = sq(/ A B / + / B C /)</span>.</div>",
+        "just_id": "G.4 • I.def.4",
+        "just_title": "A segment / A B / is partitioned at interior point C into / A C / and / C B /."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK II • PROP. 8",
+    "short_title": "four rectangles plus square",
+    "g_id": "G.90",
+    "folio": "Folios 0403–0405 • pp. 389–391",
+    "enunciation": "If a segment be cut at random, four times the rectangle contained by the whole and one of the segments together with the square on the remaining segment is equal to the square described on the whole and the aforesaid segment as on one segment.",
+    "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_ii/propositions/0404.g1.svg",
+    "step_total": 9,
+    "subslides": [
+      {
+        "step_num": 2,
+        "step_kind": "CONSTRUCT",
+        "chapter": "extend / B D / = / C B / and draw double figure on < A E F D >",
+        "symbolic": "/ B D / = / C B /, sq(/ A D /) = < A E F D >",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-poly-AEFD",
+          "hl-poly-AEFD",
+          "el-seg-DE",
+          "el-seg-CH",
+          "el-seg-BL",
+          "el-seg-MN",
+          "el-seg-OP",
+          "el-pt-D",
+          "el-pt-E",
+          "el-pt-F",
+          "lbl-D",
+          "lbl-E",
+          "lbl-F"
+        ],
+        "equal_ids": [
+          "el-seg-CB",
+          "hl-seg-CB",
+          "el-seg-BD",
+          "hl-seg-BD"
+        ],
+        "tick_ids": [
+          "el-seg-CB",
+          "el-seg-BD"
+        ],
+        "clause_html": "<div class=\"clause-line\">Produce <span class=\"g-tok\">/ A B /</span> to <span class=\"g-tok\">D</span> with <span class=\"eq-tok\">/ B D / = / C B /</span></div><div class=\"clause-line\">Describe square <span class=\"g-tok\">&lt; A E F D &gt;</span> on <span class=\"g-tok\">/ A D /</span> and draw the double figure.</div>",
+        "just_id": "G.21 • I.3, G.75 • I.46, G.58 • I.31",
+        "just_title": "Cut off / B D / equal to / C B / (I.3), construct square < A E F D > on / A D / (I.46), and draw the parallel grid (I.31)."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK II • PROP. 8",
+    "short_title": "four rectangles plus square",
+    "g_id": "G.90",
+    "folio": "Folios 0403–0405 • pp. 389–391",
+    "enunciation": "If a segment be cut at random, four times the rectangle contained by the whole and one of the segments together with the square on the remaining segment is equal to the square described on the whole and the aforesaid segment as on one segment.",
+    "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_ii/propositions/0404.g1.svg",
+    "step_total": 9,
+    "subslides": [
+      {
+        "step_num": 3,
+        "step_kind": "ASSERT",
+        "chapter": "four equal squares < D K > = < C K > = < G R > = < R N >",
+        "symbolic": "< D K > = < C K > = < G R > = < R N > → sum = 4 · < C K >",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-poly-CDPQ",
+          "hl-poly-CDPQ",
+          "el-seg-DK",
+          "el-seg-KQ"
+        ],
+        "equal_ids": [
+          "el-poly-CBKG",
+          "hl-poly-CBKG",
+          "el-poly-BDNK",
+          "hl-poly-BDNK",
+          "el-poly-GKRQ",
+          "hl-poly-GKRQ",
+          "el-poly-KNPR",
+          "hl-poly-KNPR",
+          "el-seg-CB",
+          "hl-seg-CB",
+          "el-seg-BD",
+          "hl-seg-BD",
+          "el-seg-GK",
+          "hl-seg-GK",
+          "el-seg-KN",
+          "hl-seg-KN"
+        ],
+        "tick_ids": [
+          "el-seg-CB",
+          "el-seg-BD",
+          "el-seg-GK",
+          "el-seg-KN"
+        ],
+        "clause_html": "<div class=\"clause-line\"><span class=\"eq-tok\">/ C B / = / B D / = / G K / = / K N /</span></div><div class=\"clause-line\">→ <span class=\"eq-tok\">&lt; D K &gt; = &lt; C K &gt; = &lt; G R &gt; = &lt; R N &gt;</span> (quadruple of <span class=\"eq-tok\">&lt; C K &gt;</span>)</div>",
+        "just_id": "G.65 • I.36, G.72 • I.43",
+        "just_title": "Parallelograms on equal bases are equal (I.36), and complements about the diagonal of < C P > are equal (I.43)."
+      },
+      {
+        "step_num": 4,
+        "step_kind": "ASSERT",
+        "chapter": "gnomon < S T U > = 4 · < A K > = 4 · rect(/ A B /, / B D /)",
+        "symbolic": "< A G > = < M Q > = < Q L > = < R F > → < S T U > = 4 · < A K >",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-poly-ABKM",
+          "hl-poly-ABKM",
+          "el-arc-STU",
+          "lbl-S",
+          "lbl-T",
+          "lbl-U"
+        ],
+        "equal_ids": [
+          "el-poly-ACGM",
+          "hl-poly-ACGM",
+          "el-poly-MGQO",
+          "hl-poly-MGQO",
+          "el-poly-QRLH",
+          "hl-poly-QRLH",
+          "el-poly-RPFL",
+          "hl-poly-RPFL",
+          "el-poly-CBKG",
+          "hl-poly-CBKG",
+          "el-poly-BDNK",
+          "hl-poly-BDNK",
+          "el-poly-GKRQ",
+          "hl-poly-GKRQ",
+          "el-poly-KNPR",
+          "hl-poly-KNPR",
+          "el-seg-CG",
+          "hl-seg-CG",
+          "el-seg-GQ",
+          "hl-seg-GQ",
+          "el-seg-BK",
+          "hl-seg-BK",
+          "el-seg-BD",
+          "hl-seg-BD"
+        ],
+        "tick_ids": [
+          "el-seg-CG",
+          "el-seg-GQ",
+          "el-seg-BK",
+          "el-seg-BD"
+        ],
+        "clause_html": "<div class=\"clause-line\"><span class=\"eq-tok\">&lt; A G &gt; = &lt; M Q &gt; = &lt; Q L &gt; = &lt; R F &gt;</span> (quadruple of <span class=\"eq-tok\">&lt; A G &gt;</span>)</div><div class=\"clause-line\">→ gnomon <span class=\"eq-tok\">&lt; S T U &gt; = 4 · &lt; A K &gt; = 4 · rect(/ A B /, / B D /)</span></div>",
+        "just_id": "G.65 • I.36, G.72 • I.43, G.86 • II.def.2",
+        "just_title": "The four oblongs and four corner squares form the gnomon < S T U >, which is quadruple of rectangle < A K >."
+      },
+      {
+        "step_num": 5,
+        "step_kind": "ASSERT",
+        "chapter": "add inner square < O H > = sq(/ A C /) to complete < A E F D >",
+        "symbolic": "< S T U > + < O H > = < A E F D > = sq(/ A D /)",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-poly-OQHE",
+          "hl-poly-OQHE",
+          "el-seg-AC",
+          "hl-seg-AC",
+          "el-seg-OQ"
+        ],
+        "equal_ids": [
+          "el-poly-STU",
+          "hl-poly-STU",
+          "el-arc-STU",
+          "lbl-S",
+          "lbl-T",
+          "lbl-U"
+        ],
+        "clause_html": "<div class=\"clause-line\">Add <span class=\"g-tok\">&lt; O H &gt;</span> = <span class=\"eq-tok\">sq(/ A C /)</span> to both sides</div><div class=\"clause-line\">→ <span class=\"eq-tok\">4·rect(/ A B /, / B D /) + sq(/ A C /) = &lt; S T U &gt; + &lt; O H &gt; = &lt; A E F D &gt;</span></div>",
+        "just_id": "G.36 • I.cn.2, G.63 • I.def.22",
+        "just_title": "Adding the square < O H > on / A C / to the gnomon < S T U > completes the whole square < A E F D > on / A D /."
+      },
+      {
+        "step_num": 6,
+        "step_kind": "∴",
+        "is_punchline": true,
+        "chapter": "4·rect(/ A B /, / B C /) + sq(/ A C /) = sq(/ A B / + / B C /)",
+        "symbolic": "∴ 4·rect(/ A B /, / B C /) + sq(/ A C /) = sq(/ A B / + / B C /)",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-poly-OQHE",
+          "hl-poly-OQHE",
+          "el-seg-AC",
+          "hl-seg-AC",
+          "el-seg-AD",
+          "hl-seg-AD"
+        ],
+        "equal_ids": [
+          "el-poly-STU",
+          "hl-poly-STU",
+          "el-arc-STU",
+          "lbl-S",
+          "lbl-T",
+          "lbl-U",
+          "el-seg-CB",
+          "hl-seg-CB",
+          "el-seg-BD",
+          "hl-seg-BD"
+        ],
+        "tick_ids": [
+          "el-seg-CB",
+          "el-seg-BD"
+        ],
+        "clause_html": "<div class=\"clause-line\">∴ <span class=\"eq-tok\">4 · rect(/ A B /, / B C /) + sq(/ A C /)</span></div><div class=\"clause-line\">= <span class=\"eq-tok\">sq(/ A D /) = sq(/ A B / + / B C /)</span></div>",
+        "just_id": "G.16 • I.cn.1",
+        "just_title": "Four times the rectangle on the whole and one segment plus the square on the remaining segment equals the square on the whole and that segment (Q.E.D.)."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK II • PROP. 8",
+    "short_title": "four rectangles plus square",
+    "g_id": "G.90",
+    "folio": "Folios 0403–0405 • pp. 389–391",
+    "enunciation": "If a segment be cut at random, four times the rectangle contained by the whole and one of the segments together with the square on the remaining segment is equal to the square described on the whole and the aforesaid segment as on one segment.",
+    "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_ii/propositions/0404.g1.svg",
+    "step_total": 9,
+    "widescreen_only": true,
+    "subslides": [
+      {
+        "step_num": 7,
+        "step_kind": "COMMENTARY",
+        "widescreen_only": true,
+        "chapter": "geometric algebra: 4ab + (a − b)² = (a + b)²",
+        "symbolic": "4ab + (a − b)² = (a + b)²",
+        "visible_ids": [
+          "*"
+        ],
+        "active_ids": [
+          "el-poly-OQHE",
+          "hl-poly-OQHE",
+          "el-seg-AC",
+          "hl-seg-AC",
+          "el-seg-AB",
+          "hl-seg-AB"
+        ],
+        "equal_ids": [
+          "el-poly-STU",
+          "hl-poly-STU",
+          "el-arc-STU",
+          "el-seg-CB",
+          "hl-seg-CB",
+          "el-seg-BD",
+          "hl-seg-BD"
+        ],
+        "tick_ids": [
+          "el-seg-CB",
+          "el-seg-BD"
+        ],
+        "clause_html": "<div class=\"clause-line\"><strong>Geometric Algebra</strong>: Square of Sum vs. Difference</div><div class=\"clause-line\"><span class=\"eq-tok\">4·a·b + (a − b)² = (a + b)²</span></div><div class=\"clause-line\" style=\"font-size:28px;color:#cbd5e1;\">Used in Euclid's <em>Data</em> (Prop. 86), cited by Pappus, and fundamental to deriving the symptom of the parabola.</div>",
+        "just_tag": "✦ HEATH COMMENTARY",
+        "just_id": "Heath (1908) • Vol. I, pp. 391–392",
+        "just_title": "Also follows semi-algebraically by combining II.4 on / A D / with II.7 on / A B /, / B C /, or by four pinwheel rectangles around sq(/ A C /)."
+      },
+      {
+        "step_num": 8,
+        "step_kind": "GENEALOGY",
+        "widescreen_only": true,
+        "chapter": "G.90 dependency tree & symbolic model",
+        "symbolic": "G.4, G.9, G.21, G.63, G.65, G.72, G.81, G.86 → G.90",
+        "stage_html": "<div style=\"width:100%;height:100%;display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:36px 8px 8px 8px;align-items:stretch;\"><div style=\"background:rgba(11,14,21,0.92);border:1.5px solid rgba(56,189,248,0.45);border-radius:16px;padding:22px 24px;display:flex;flex-direction:column;justify-content:space-between;\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.12em;color:#38bdf8;\">◈ G-INDEX PREREQUISITES → G.90</div><div style=\"display:flex;flex-direction:column;gap:10px;margin:12px 0;\"><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #5ec27e;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.86 (II.def.2)</span><span style=\"color:#f4f1ea;\">gnomon definition</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #5ec27e;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.81 (II.def.1)</span><span style=\"color:#f4f1ea;\">contained rectangle</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.72 (I.43)</span><span style=\"color:#f4f1ea;\">parallelogram complements</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.65 (I.36)</span><span style=\"color:#f4f1ea;\">parallelograms equal bases</span></div><div style=\"display:flex;justify-content:space-between;background:rgba(30,41,59,0.7);padding:9px 14px;border-radius:8px;border-left:4px solid #38bdf8;font-family:'JetBrains Mono',monospace;font-size:15px;\"><span style=\"color:#e8b85a;font-weight:700;\">G.21 (I.3)</span><span style=\"color:#f4f1ea;\">cut equal segment</span></div></div><div style=\"background:rgba(232,184,90,0.16);border:1.5px solid #e8b85a;border-radius:10px;padding:11px 16px;text-align:center;font-family:'JetBrains Mono',monospace;font-size:17px;font-weight:700;color:#e8b85a;\">↓ G.90 (II.8) • four rectangles plus square</div></div><div style=\"background:rgba(11,14,21,0.92);border:1.5px solid rgba(232,184,90,0.4);border-radius:16px;padding:22px 24px;display:flex;flex-direction:column;justify-content:space-between;\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.12em;color:#e8b85a;\">⚙ GEOMETOR.MODEL • G.90/g1.py</div><pre style=\"font-family:'JetBrains Mono',monospace;font-size:14.5px;line-height:1.48;color:#e2e8f0;background:rgba(7,9,14,0.85);padding:16px;border-radius:10px;border:1px solid rgba(148,163,184,0.25);overflow:hidden;\">model = Model(&quot;II.8&quot;)\n# Given A, C, B and extension BD = CB\nmodel.set_segment(A, D)\nmodel.set_polygon([A, E, F, D])\n\n# Double parallel grid &amp; diagonal DE\nmodel.set_segment(D, E)\nmodel.set_polygon([O, Q, H, E])  # sq(AC)\nmodel.set_polygon([A, B, K, M])  # rect(AB, BD)\nmodel.set_polygon([A, D, F, H, Q, O])  # gnomon STU</pre><div style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">51 total ancestor nodes in G-Index • Depth 16</div></div></div>",
+        "clause_html": "<div class=\"clause-line\"><span class=\"coincide-tok\">G.90</span> synthesizes <span class=\"g-tok\">8 direct prerequisites</span></div><div class=\"clause-line\">across <span class=\"g-tok\">51 total ancestor nodes</span> in the G-Index</div><div class=\"clause-line\" style=\"font-size:28px;color:#cbd5e1;\">Culminating the pure gnomon proofs of Book II before the introduction of the Pythagorean theorem in II.9.</div>",
+        "just_tag": "◈ G-INDEX GENEALOGY",
+        "just_id": "G.90 • 8 Direct Rules",
+        "just_title": "Depends on G.4 (I.def.4), G.9 (I.def.14), G.21 (I.3), G.63 (I.def.22), G.65 (I.36), G.72 (I.43), G.81 (II.def.1), and G.86 (II.def.2)."
+      }
+    ]
+  },
+  {
+    "prop_id": "BOOK II • PROP. 8",
+    "short_title": "four rectangles plus square",
+    "g_id": "G.90",
+    "folio": "Folios 0403–0405 • pp. 389–391",
+    "enunciation": "If a segment be cut at random, four times the rectangle contained by the whole and one of the segments together with the square on the remaining segment is equal to the square described on the whole and the aforesaid segment as on one segment.",
+    "svg_path": "/home/phi/PROJECTS/geometor/euclid/resources/heath/volume_I/book_ii/propositions/0404.g1.svg",
+    "step_total": 9,
+    "widescreen_only": true,
+    "subslides": [
+      {
+        "step_num": 9,
+        "step_kind": "PARTICIPATE",
+        "widescreen_only": true,
+        "chapter": "explore the GEOMETOR Elements Codex & participate",
+        "symbolic": "geometor.github.io/elements",
+        "stage_html": "<div style=\"width:100%;height:100%;display:flex;flex-direction:column;justify-content:space-between;padding:42px 16px 12px 16px;gap:20px;\"><div style=\"background:linear-gradient(135deg,rgba(232,184,90,0.16) 0%,rgba(16,20,29,0.95) 100%);border:2px solid rgba(232,184,90,0.55);border-radius:18px;padding:28px 32px;display:flex;flex-direction:column;gap:12px;box-shadow:0 16px 40px rgba(0,0,0,0.6);\"><div style=\"font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;letter-spacing:0.16em;color:#e8b85a;\">★ INTERACTIVE DIGITAL EDITION</div><div style=\"font-family:Georgia,serif;font-size:38px;font-weight:700;color:#f8f6f0;\">GEOMETOR • Elements Codex</div><div style=\"font-family:'JetBrains Mono',monospace;font-size:22px;color:#5ec27e;font-weight:700;\">https://geometor.github.io/elements/elements2/G.90/</div></div><div style=\"display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;flex:1;\"><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#e8b85a;font-weight:700;\">01 • PSEUDOCODE</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Hover-synced symbolic steps, signatures, and interactive SVG diagrams.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 1 • G.90</span></div><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#38bdf8;font-weight:700;\">02 • PYTHON MODEL</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Executable geometor.model scripts with exact algebraic coordinates.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 2 • g1.py</span></div><div style=\"background:rgba(11,14,21,0.9);border:1px solid rgba(148,163,184,0.3);border-radius:14px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:14px;color:#5ec27e;font-weight:700;\">03 • HEATH (1908)</span><span style=\"font-size:18px;color:#cbd5e1;line-height:1.4;\">Complete classical translation, folio plates, and historical commentary.</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:13px;color:#94a3b8;\">Track 3 • Folios 0403–0405</span></div></div></div>",
+        "clause_html": "<div class=\"clause-line\">Explore the <span class=\"g-tok\">Elements Codex</span> &amp; <span class=\"eq-tok\">G-Index</span></div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Subscribe to <strong>@geometor</strong> for all 465 propositions</div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Share questions &amp; insights in the comments</div><div class=\"clause-line\" style=\"font-size:30px;color:#cbd5e1;\">• Star &amp; contribute at <strong>github.com/geometor</strong></div>",
+        "just_tag": "★ PARTICIPATE & SUPPORT",
+        "just_id": "github.com/geometor/elements",
+        "just_title": "Open-source symbolic reconstruction of Euclid's Elements — links in the video description."
+      }
+    ]
+  }
+]

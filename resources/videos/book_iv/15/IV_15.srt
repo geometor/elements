@@ -1,0 +1,63 @@
+1
+00:00:00,420 --> 00:00:02,612
+Book Four, Proposition Fifteen.
+
+2
+00:00:02,612 --> 00:00:07,490
+In a given circle to inscribe an equilateral and equiangular hexagon.
+
+3
+00:00:07,490 --> 00:00:16,610
+Let A B C D E F be the given circle; it is required to inscribe an equilateral and equiangular hexagon in the circle A B C D E F.
+
+4
+00:00:17,030 --> 00:00:27,058
+Draw the diameter A D of the circle, take the center G, and with center D and radius D G describe the circle E G C H.
+
+5
+00:00:27,058 --> 00:00:35,800
+Join E G and C G, carry them through to the points B and F, and join A B, B C, C D, D E, E F, and F A.
+
+6
+00:00:36,220 --> 00:00:45,867
+Because G is the center of circle A B C D E F and D is the center of circle E G C H, the segments G E, G D, and D E are all equal.
+
+7
+00:00:45,867 --> 00:00:58,112
+Thus triangle E G D—and similarly triangle D G C—is equilateral, so by One Five and One Thirty-Two the angles E G D and D G C are each one-third of two right angles.
+
+8
+00:00:58,112 --> 00:01:17,851
+Since C G standing on E B makes adjacent angles equal to two right angles, the remaining angle C G B is also one-third of two right angles, and by One Fifteen the vertical angles B G A, A G F, and F G E are equal to them; hence all six central angles at G are equal.
+
+9
+00:01:17,851 --> 00:01:33,138
+By Three Twenty-Six, equal central angles stand on equal arcs A B, B C, C D, D E, E F, and F A; and by Three Twenty-Nine, equal arcs are subtended by equal chords, so the hexagon A B C D E F is equilateral.
+
+10
+00:01:33,138 --> 00:01:47,757
+Finally, adding arc A B C D to the equal arcs F A and D E makes arc F A B C D equal to arc E D C B A, so by Three Twenty-Seven angle F E D equals angle A F E, and all six interior angles are equal.
+
+11
+00:01:47,757 --> 00:01:57,182
+Therefore the equilateral and equiangular hexagon A B C D E F has been inscribed in the circle, and its side equals the radius.
+
+12
+00:01:57,182 --> 00:01:58,740
+Which was to be done.
+
+13
+00:01:59,160 --> 00:02:16,554
+Proposition Four Fifteen contains the celebrated Porism—cited by Proclus as the quintessential porism to a problem—that the side of the regular hexagon equals the radius of its circumscribed circle, dividing the circle into six equilateral triangles via a Vesica Piscis on radius G D.
+
+14
+00:02:16,554 --> 00:02:35,480
+In the GEOMETOR G-Index, node G one hundred sixty-seven synthesizes twenty direct prerequisites across sixty-eight ancestor nodes, and powers the Book Thirteen golden-section theorems of Thirteen Nine and Thirteen Ten, where the squares on the hexagon and decagon sides sum to the square on the pentagon side.
+
+15
+00:02:35,900 --> 00:02:49,642
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Four Fifteen in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+16
+00:02:49,642 --> 00:02:56,420
+Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

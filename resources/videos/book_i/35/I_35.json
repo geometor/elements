@@ -1,0 +1,61 @@
+{
+  "voice_id": "voice_xdhacg1pn1cq",
+  "audio_wav": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_i/35/I_35.wav",
+  "total_duration_sec": 81.94,
+  "segments": [
+    {
+      "index": 0,
+      "bell": "bell:proposition",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Euclid's Elements, Book One, Proposition Thirty-Five. Parallelograms on the same base and in the same parallels are equal in area. Let parallelograms A B C D and E B C F stand on the same base B C and lie between the same parallels A F and B C. We prove that parallelogram A B C D equals parallelogram E B C F.",
+      "start_sec": 0.0,
+      "end_sec": 21.89,
+      "duration_sec": 21.89,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Euclid's Elements, Book One, Proposition Thirty-Five. Parallelograms on the same base and in the same parallels are equal in area. Let parallelograms A B C D and E B C F stand on the same base B C and lie between the same parallels A F and B C. We prove that parallelogram A B C D equals parallelogram E B C F.",
+          "start_sec": 0.0,
+          "end_sec": 21.89,
+          "duration_sec": 21.89
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "bell": "bell:construction",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "By Proposition Thirty-Four, opposite sides of a parallelogram are equal, so segment A D equals base B C, and segment E F also equals base B C. By Common Notion One, segment A D equals segment E F. Adding the common segment D E to each, Common Notion Two gives the whole segment A E equal to the whole segment D F.",
+      "start_sec": 21.89,
+      "end_sec": 44.88,
+      "duration_sec": 22.99,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "By Proposition Thirty-Four, opposite sides of a parallelogram are equal, so segment A D equals base B C, and segment E F also equals base B C. By Common Notion One, segment A D equals segment E F. Adding the common segment D E to each, Common Notion Two gives the whole segment A E equal to the whole segment D F.",
+          "start_sec": 21.89,
+          "end_sec": 44.88,
+          "duration_sec": 22.99
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "bell": "bell:insight",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Again by Proposition Thirty-Four, opposite sides A B and D C are equal. Since segment A F falls on the parallels A B and D C, Proposition Twenty-Nine makes the exterior angle F D C equal to the interior angle E A B. By Proposition Four, side-angle-side congruence, triangle E A B equals triangle F D C. Subtracting the common triangle D G E from each, Common Notion Three leaves trapezium A B G D equal to trapezium E G C F. Adding the common triangle G B C to each, Common Notion Two makes the whole parallelogram A B C D equal to the whole parallelogram E B C F, as was required to prove.",
+      "start_sec": 44.88,
+      "end_sec": 81.94,
+      "duration_sec": 37.06,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Again by Proposition Thirty-Four, opposite sides A B and D C are equal. Since segment A F falls on the parallels A B and D C, Proposition Twenty-Nine makes the exterior angle F D C equal to the interior angle E A B. By Proposition Four, side-angle-side congruence, triangle E A B equals triangle F D C. Subtracting the common triangle D G E from each, Common Notion Three leaves trapezium A B G D equal to trapezium E G C F. Adding the common triangle G B C to each, Common Notion Two makes the whole parallelogram A B C D equal to the whole parallelogram E B C F, as was required to prove.",
+          "start_sec": 44.88,
+          "end_sec": 81.94,
+          "duration_sec": 37.06
+        }
+      ]
+    }
+  ]
+}

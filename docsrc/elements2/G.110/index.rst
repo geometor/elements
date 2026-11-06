@@ -2,7 +2,7 @@
 :number: 110
 :canonical_id: G.110
 :original_id: III.12
-:title: G.110 circles touch externally
+:title: G.110 line of centers of externally touching circles
 :volume: II
 :book: III
 :type: prop
@@ -10,68 +10,49 @@
 :categories: theorem, proof, plane-geometry, circles
 :category: theorem, proof, plane-geometry, circles
 :tags: book-iii, point, segment, circle, circles-touching, straight-line, centre, tangent, equality, reductio-ad-absurdum
-:dependencies: G.1, G.4, G.10, G.11, G.45, G.103
-:excerpt: If two circles touch one another externally, the segment joining their centres will pass through the point of contact.
+:dependencies: G.1, G.4, G.10, G.11, G.14, G.26, G.36, G.45, G.103
+:excerpt: If two circles touch one another externally, the segment joining their centers passes through the point of contact.
 
 .. _G.110:
 .. _III.12:
 
-G.110 circles touch externally
-==============================
+G.110 line of centers of externally touching circles
+====================================================
 
 .. rubric:: `III.12 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/12/>`_
 
 .. enunciation::
 
-   If two :term:`circles <G.10>` :term:`touch one another <G.103>` externally, the :term:`segment <G.4>` joining their :term:`centres <G.11>` will pass through the :term:`point <G.1>` of contact.
+   If two :term:`circles <G.10>` :term:`touch one another <G.103>` externally, the :term:`segment <G.4>` joining their :term:`centers <G.11>` passes through the :term:`point <G.1>` of contact.
 
 .. signature:: theorem
 
-   | :fn:`circles_touch_externally <G.110>`\ ()
-   | **prove** the segment joined from :g:`F <g1:F>` to :g:`G <g1:G>` will pass through the point of contact at :g:`A <g1:A>`
+   | :fn:`externally_touching_circles_centers <G.110>`\ (:g:`( A B C ) <g1:( F A )>`, :g:`( A D E ) <g1:( G A )>`, :g:`A <g1:A>`, :g:`F <g1:F>`, :g:`G <g1:G>`)
+   | **given** :g:`( A B C ) <g1:( F A )>`, :g:`( A D E ) <g1:( G A )>` touch externally at :g:`A <g1:A>`, center(:g:`( A B C ) <g1:( F A )>`) = :g:`F <g1:F>`, center(:g:`( A D E ) <g1:( G A )>`) = :g:`G <g1:G>`
+   | **prove** :g:`A <g1:A>` ∈ :g:`/ F G / <g1:/ F G />`
 
 .. picture:: g1.svg
    :alt: Diagram for Proposition 12 showing two circles ABC and ADE touching externally at A
 
-.. step:: construct
+.. step:: given ∵ circles_said_touch_def, circle_center <G.103, G.11>
 
-   Let the two circles :g:`( A B C ) <g1:( A B C )>`, :g:`( A D E ) <g1:( A D E )>` touch one another externally at :g:`A <g1:A>`, and let the center :g:`F <g1:F>` of :g:`( A B C ) <g1:( A B C )>`, and the center :g:`G <g1:G>` of :g:`( A D E ) <g1:( A D E )>`, be taken
+   :g:`( A B C ) <g1:( F A )>`, :g:`( A D E ) <g1:( G A )>` touch externally at :g:`A <g1:A>`, center(:g:`( A B C ) <g1:( F A )>`) = :g:`F <g1:F>`, center(:g:`( A D E ) <g1:( G A )>`) = :g:`G <g1:G>`
 
-.. step:: construct
+.. step:: construct ∵ segment <G.14>
 
-   Suppose it does not, but, if possible, let it pass as :g:`/ F C D G / <g1:/ F C D G />`, and let :g:`/ A F / <g1:/ A F />`, :g:`/ A G / <g1:/ A G />` be joined.
+   assume :g:`A <g1:A>` ∉ :g:`/ F G / <g1:/ F G />` → :g:`/ F C D G / <g1:/ F G />`, :g:`/ F A / <g1:/ F A />`, :g:`/ A G / <g1:/ G A />`
 
-.. step:: assert ∵ circle_radii <G.10>
+.. step:: assert ∵ circle_radii, add_equals <G.10, G.36>
 
-   :g:`( A B C ) <g1:( A B C )>` → :g:`/ F A / <g1:/ F A />` :eq:`= <g1:/ F A / = g1:/ F C />` :g:`/ F C / <g1:/ F C />`
+   :g:`/ F A / <g1:/ F A />` :eq:`= <g1:/ F A / = g1:/ F C />` :g:`/ F C / <g1:/ F C />`, :g:`/ G A / <g1:/ G A />` :eq:`= <g1:/ G A / = g1:/ G D />` :g:`/ G D / <g1:/ G D />` → :g:`/ F A / <g1:/ F A />` + :g:`/ A G / <g1:/ G A />` = :g:`/ F C / <g1:/ F C />` + :g:`/ G D / <g1:/ G D />`
 
-.. step:: assert ∵ circle_radii <G.10>
+.. step:: assert ∵ whole_greater_than_part, triangle_inequality <G.26, G.45>
 
-   :g:`( A D E ) <g1:( A D E )>` → :g:`/ G A / <g1:/ G A />` :eq:`= <g1:/ G A / = g1:/ G D />` :g:`/ G D / <g1:/ G D />`
-
-.. step:: assert
-
-   :g:`/ F A / <g1:/ F A />` :eq:`= <g1:/ F A / = g1:/ F C />` :g:`/ F C / <g1:/ F C />`
-
-.. step:: assert
-
-   :g:`/ F A / <g1:/ F A />`, :g:`/ A G / <g1:/ A G />` are equal to :g:`/ F C / <g1:/ F C />`, :g:`/ G D / <g1:/ G D />`,
-
-.. step:: assert
-
-   So that :g:`/ F G / <g1:/ F G />` > :g:`/ F A / <g1:/ F A />`, :g:`/ A G / <g1:/ A G />`
-
-.. step:: assert ∵ triangle_inequality <G.45>
-
-   But it is also less ⇒⇐
-
-.. step:: assert
-
-   the segment joined from :g:`F <g1:F>` to :g:`G <g1:G>` will not fail to pass through the point of contact at :g:`A <g1:A>`
+   :g:`/ F G / <g1:/ F G />` > :g:`/ F C / <g1:/ F C />` + :g:`/ G D / <g1:/ G D />` = :g:`/ F A / <g1:/ F A />` + :g:`/ A G / <g1:/ G A />`, but in :g:`< F A G > <g1:< F A G >>`, :g:`/ F G / <g1:/ F G />` < :g:`/ F A / <g1:/ F A />` + :g:`/ A G / <g1:/ G A />` ⇒⇐
 
 .. step:: conclude
 
-   it will pass through it
+   :g:`A <g1:A>` ∈ :g:`/ F G / <g1:/ F G />`
 
 Dependency Graph
 ----------------
@@ -125,7 +106,7 @@ Dependency Graph
      "G.44" [label="G.44", tooltip="G.44 (I.19): In any triangle, the greater angle is subtended by the greater side.", fillcolor="#222244", URL="../G.44/index.html", target="_top"];
      "G.45" [label="G.45", tooltip="G.45 (I.20): In any triangle, the sum of any two sides is greater than the remaining side.", fillcolor="#222244", URL="../G.45/index.html", target="_top"];
      "G.103" [label="G.103", tooltip="G.103 (III.def.3): Circles are said totouch one another which, meeting one another, do not cut one another.", fillcolor="#224422", URL="../G.103/index.html", target="_top"];
-     "G.110" [label="G.110", tooltip="G.110 (III.12): If two circles touch one another externally, the segment joining their centres will pass through the point of contact.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.110" [label="G.110", tooltip="G.110 (III.12): If two circles touch one another externally, the segment joining their centers passes through the point of contact.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -231,6 +212,7 @@ Dependency Graph
      "G.41" -> "G.14";
      "G.43" -> "G.14";
      "G.45" -> "G.14";
+     "G.110" -> "G.14";
      "G.17" -> "G.15";
      "G.20" -> "G.15";
      "G.21" -> "G.15";
@@ -278,11 +260,14 @@ Dependency Graph
      "G.32" -> "G.24";
      "G.41" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.110" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -295,6 +280,7 @@ Dependency Graph
      "G.40" -> "G.33";
      "G.37" -> "G.34";
      "G.37" -> "G.36";
+     "G.110" -> "G.36";
      "G.40" -> "G.37";
      "G.40" -> "G.38";
      "G.41" -> "G.40";

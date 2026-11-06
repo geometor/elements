@@ -12,7 +12,7 @@ G.123 inscribed angle theorem — Code
 
 .. enunciation::
 
-   In a :term:`circle <G.10>` the :term:`angle <G.22>` at the :term:`center <G.11>` is double of the angle at the arc, when the angles have the same arc as base.
+   In a :term:`circle <G.10>`, the :term:`angle <G.22>` at the :term:`center <G.11>` is double the angle at the circumference when the angles have the same arc as base.
 
 .. picture:: g1.svg
 

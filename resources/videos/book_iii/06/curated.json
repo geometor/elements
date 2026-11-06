@@ -1,0 +1,51 @@
+{
+  "III.6": {
+    "subtype": "theorem",
+    "args": [
+      ":g:`( A B C ) <g1:( A B C )>`",
+      ":g:`( C D E ) <g1:( C D E )>`",
+      ":g:`C <g1:C>`"
+    ],
+    "returns": [],
+    "given": ":g:`( A B C ) <g1:( A B C )>`, :g:`( C D E ) <g1:( C D E )>` touching at :g:`C <g1:C>`",
+    "contract": "center(:g:`( A B C ) <g1:( A B C )>`) ≠ center(:g:`( C D E ) <g1:( C D E )>`)",
+    "steps": [
+      [
+        "given",
+        [
+          "III.def.3"
+        ],
+        ":g:`( A B C ) <g1:( A B C )>`, :g:`( C D E ) <g1:( C D E )>` touching at :g:`C <g1:C>`"
+      ],
+      [
+        "construct",
+        [
+          "I.post.1"
+        ],
+        "assume common center :g:`F <g1:F>`; @fn(I.post.1)(:g:`F <g1:F>`, :g:`C <g1:C>`) → :g:`/ F C / <g1:/ F C />`, draw :g:`/ F E B / <g1:/ F E B />`"
+      ],
+      [
+        "assert",
+        [
+          "I.def.15",
+          "I.def.16"
+        ],
+        ":g:`F <g1:F>` = center(:g:`( A B C ) <g1:( A B C )>`) → :g:`/ F C / <g1:/ F C />` :eq:`= <g1:/ F C / = g1:/ F B />` :g:`/ F B / <g1:/ F B />`"
+      ],
+      [
+        "assert",
+        [
+          "I.def.15",
+          "I.cn.1",
+          "I.cn.5"
+        ],
+        ":g:`F <g1:F>` = center(:g:`( C D E ) <g1:( C D E )>`) → :g:`/ F C / <g1:/ F C />` :eq:`= <g1:/ F C / = g1:/ F E />` :g:`/ F E / <g1:/ F E />` → :g:`/ F E / <g1:/ F E />` :eq:`= <g1:/ F E / = g1:/ F B />` :g:`/ F B / <g1:/ F B />` (< > ⇒⇐)"
+      ],
+      [
+        "conclude",
+        [],
+        "center(:g:`( A B C ) <g1:( A B C )>`) ≠ center(:g:`( C D E ) <g1:( C D E )>`)"
+      ]
+    ]
+  }
+}

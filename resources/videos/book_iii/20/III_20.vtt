@@ -1,0 +1,69 @@
+WEBVTT
+
+1
+00:00:00.420 --> 00:00:02.418
+Book Three, Proposition Twenty.
+
+2
+00:00:02.418 --> 00:00:11.054
+In a circle, the angle at the center is double of the angle at the circumference, when the angles have the same circumference as base.
+
+3
+00:00:11.054 --> 00:00:21.043
+Let A B C be a circle, let the angle B E C be an angle at its center E, and the angle B A C an angle at the circumference, having the same arc B C as base.
+
+4
+00:00:21.043 --> 00:00:24.330
+We claim that angle B E C is double of angle B A C.
+
+5
+00:00:24.750 --> 00:00:27.319
+Join A E and draw it through to F.
+
+6
+00:00:27.319 --> 00:00:36.160
+And for the second case, let another angle B D C be inflected at the circumference, and join D E and produce it to G.
+
+7
+00:00:36.580 --> 00:00:50.690
+Since the radius E A equals the radius E B, by One Five the base angle E A B equals the base angle E B A; therefore the sum of angles E A B and E B A is double of angle E A B.
+
+8
+00:00:50.690 --> 00:01:05.284
+But by One Thirty-Two, the exterior angle B E F of triangle E A B equals the sum of the two opposite interior angles E A B and E B A; therefore angle B E F is double of angle E A B.
+
+9
+00:01:05.284 --> 00:01:12.540
+For the same reason, in triangle E A C, the exterior angle F E C is double of angle E A C.
+
+10
+00:01:12.540 --> 00:01:19.394
+Therefore the whole central angle B E C is double of the whole inscribed angle B A C.
+
+11
+00:01:19.394 --> 00:01:36.164
+Again, for the inflected angle B D C, angle G E C is similarly double of angle E D C, of which angle G E B is double of angle E D B; therefore the remaining angle B E C is double of the remaining angle B D C.
+
+12
+00:01:36.164 --> 00:01:38.180
+As was required to prove.
+
+13
+00:01:38.600 --> 00:01:45.841
+Proposition Three Twenty is the celebrated Inscribed Angle Theorem, one of the most fertile hubs in all of Euclid's Elements.
+
+14
+00:01:45.841 --> 00:01:59.627
+Because classical Greek geometry restricted plane angles to inclinations less than two right angles, Heron of Alexandria later supplied the extension to segments smaller than a semicircle by summing the remaining angles around the center.
+
+15
+00:01:59.627 --> 00:02:16.600
+In the GEOMETOR G-Index, node G one hundred twenty-three unites the isosceles triangle theorem One Five and exterior angle theorem One Thirty-Two with circular sectors, directly powering one hundred thirty-seven downstream propositions across Books Three, Four, Six, Ten, Twelve, and Thirteen.
+
+16
+00:02:17.020 --> 00:02:29.744
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Twenty in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+17
+00:02:29.744 --> 00:02:36.020
+Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

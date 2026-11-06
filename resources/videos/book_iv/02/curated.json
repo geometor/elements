@@ -1,0 +1,64 @@
+{
+  "IV.2": {
+    "subtype": "problem",
+    "args": [
+      ":g:`( A B C ) <g1:( A B C )>`",
+      ":g:`< D E F > <g1:< D E F >>`"
+    ],
+    "returns": [
+      ":g:`< A B C > <g1:< A B C >>`"
+    ],
+    "given": ":g:`( A B C ) <g1:( A B C )>`, :g:`< D E F > <g1:< D E F >>`",
+    "contract": ":g:`< A B C > <g1:< A B C >>` is :term:`inscribed in <G.148>` :g:`( A B C ) <g1:( A B C )>` and equiangular with :g:`< D E F > <g1:< D E F >>`",
+    "steps": [
+      [
+        "given",
+        [
+          "I.def.15",
+          "I.def.19",
+          "IV.def.3"
+        ],
+        ":g:`( A B C ) <g1:( A B C )>`, :g:`< D E F > <g1:< D E F >>`"
+      ],
+      [
+        "construct",
+        [
+          "III.16"
+        ],
+        "@fn(III.16)(:g:`( A B C ) <g1:( A B C )>`, :g:`A <g1:A>`) → tangent :g:`/ G H / <g1:/ G H />` touching :g:`( A B C ) <g1:( A B C )>` at :g:`A <g1:A>`"
+      ],
+      [
+        "construct",
+        [
+          "I.23",
+          "I.post.1"
+        ],
+        "@fn(I.23)(:g:`/ A H / <g1:/ A H />`, :g:`A <g1:A>`, :g:`< D E F ) <g1:< D E F )>`) → :g:`< H A C ) <g1:< H A C )>` :eq:`= <g1:< H A C ) = g1:< D E F )>` :g:`< D E F ) <g1:< D E F )>`, @fn(I.23)(:g:`/ A G / <g1:/ A G />`, :g:`A <g1:A>`, :g:`< D F E ) <g1:< D F E )>`) → :g:`< G A B ) <g1:< G A B )>` :eq:`= <g1:< G A B ) = g1:< D F E )>` :g:`< D F E ) <g1:< D F E )>`, @fn(I.post.1)(:g:`B <g1:B>`, :g:`C <g1:C>`) → :g:`/ B C / <g1:/ B C />`"
+      ],
+      [
+        "assert",
+        [
+          "III.32",
+          "I.cn.1"
+        ],
+        "Tangent :g:`/ A H / <g1:/ A H />` and chord :g:`/ A C / <g1:/ A C />` → :g:`< H A C ) <g1:< H A C )>` :eq:`= <g1:< H A C ) = g1:< A B C )>` :g:`< A B C ) <g1:< A B C )>`, and :g:`< H A C ) <g1:< H A C )>` :eq:`= <g1:< H A C ) = g1:< D E F )>` :g:`< D E F ) <g1:< D E F )>` → :g:`< A B C ) <g1:< A B C )>` :eq:`= <g1:< A B C ) = g1:< D E F )>` :g:`< D E F ) <g1:< D E F )>`"
+      ],
+      [
+        "assert",
+        [
+          "III.32",
+          "I.cn.1"
+        ],
+        "Similarly, tangent :g:`/ A G / <g1:/ A G />` and chord :g:`/ A B / <g1:/ A B />` → :g:`< G A B ) <g1:< G A B )>` :eq:`= <g1:< G A B ) = g1:< A C B )>` :g:`< A C B ) <g1:< A C B )>` :eq:`= <g1:< A C B ) = g1:< D F E )>` :g:`< D F E ) <g1:< D F E )>`"
+      ],
+      [
+        "conclude",
+        [
+          "I.32",
+          "IV.def.3"
+        ],
+        "Remaining :g:`< B A C ) <g1:< B A C )>` :eq:`= <g1:< B A C ) = g1:< E D F )>` :g:`< E D F ) <g1:< E D F )>` → :g:`< A B C > <g1:< A B C >>` is inscribed in :g:`( A B C ) <g1:( A B C )>` equiangular with :g:`< D E F > <g1:< D E F >>`"
+      ]
+    ]
+  }
+}

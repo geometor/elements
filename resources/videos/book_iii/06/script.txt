@@ -1,0 +1,19 @@
+[bell:proposition]
+[style: brisk, clear, architectural voice; steady studio cadence]
+Book Three, Proposition Six. If two circles touch one another, they will not have the same center. <pause> Let the two circles A B C and C D E touch one another at the point C. I say that they do not have the same center.
+
+[bell:construction]
+[style: methodical, precise constructive cadence]
+For, if possible, let their common center be F. Join F C by Postulate One, and draw the straight line F E B through at random, meeting the inner circle at E and the outer circle at B.
+
+[bell:insight]
+[style: luminous, deductive geometric clarity]
+Because F is the center of the circle A B C, the radius F C equals the radius F B. <pause> Again, because F is the center of the circle C D E, the radius F C equals the radius F E. Since F C equals both F B and F E, F E equals F B—the part equal to the whole, the less to the greater, which is impossible. <pause> Therefore, F is not the common center of the circles A B C and C D E; touching circles cannot share the same center. As was required to prove.
+
+[bell:system]
+[style: reflective, scholarly, architectural synthesis]
+As Sir Thomas Heath notes, English editions often restricted this proposition to circles touching internally, because Euclid's diagram depicts internal contact. In fact, Euclid deliberately chose the more subtle internal case for demonstration, leaving the self-evident external case to the reader. <pause> In the GEOMETOR G-Index, node G one-hundred-four rests directly on the fundamental definitions of circle, center, and tangency—demonstrating by pure reductio ad absurdum that any two tangent circles must have distinct centers.
+
+[bell:resolve]
+[style: warm, inviting, resonant studio close]
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Six in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe to at geometor, share your questions in the comments, and star our repositories at github dot com slash geometor.

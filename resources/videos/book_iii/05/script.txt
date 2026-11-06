@@ -1,0 +1,19 @@
+[bell:proposition]
+[style: brisk, clear, architectural voice; steady studio cadence]
+Book Three, Proposition Five. If two circles cut one another, they will not have the same center. <pause> Let the circles A B C and C D G cut one another at the points B and C.
+
+[bell:construction]
+[style: methodical, precise constructive cadence]
+I say that they will not have the same center. For, if possible, let their common center be E; join E C, and draw E F G through at random, meeting circle A B C at F and circle C D G at G.
+
+[bell:insight]
+[style: luminous, deductive geometric clarity]
+Since the point E is the center of the circle A B C, the radius E C equals E F by Definition Fifteen. <pause> Again, since E is the center of the circle C D G, the radius E C equals E G. <pause> Because E C equals both E F and E G, E F is also equal to E G, the less equal to the greater—which is impossible. Therefore the point E is not the center of the circles A B C and C D G. Which was to be proved.
+
+[bell:system]
+[style: reflective, scholarly, architectural synthesis]
+As Heath remarks, Propositions Three Five and Three Six express a single geometric principle: whether two distinct circles cut one another or touch one another, if their circumferences share even one point, they cannot share a center; conversely, concentric circles with a common circumference point coincide completely. <pause> In the GEOMETOR G-Index, node G one hundred two rests directly on the definitions of circle and center, requiring only twelve ancestor nodes while supporting thirty-four downstream theorems across Books Three, Four, Six, Twelve, and Thirteen.
+
+[bell:resolve]
+[style: warm, inviting, resonant studio close]
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Five in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

@@ -12,6 +12,7 @@
 :tags: book-i, point, segment, angle, triangle, quadrilateral, polygon, right-angled-triangle, square, right-angle, plane-angle, parallel-straight-lines, straight-line, trilateral, equality
 :dependencies: G.1, G.4, G.12, G.14, G.22, G.24, G.33, G.36, G.39, G.52, G.58, G.63, G.70, G.75, G.78
 :excerpt: In a right-angled triangle, the square on the hypotenuse equals the sum of the squares on the two legs (Pythagorean Theorem).
+:youtube_id: ClCEc3RCGNI
 
 .. _G.79:
 .. _I.47:
@@ -28,91 +29,39 @@ G.79 Pythagorean theorem
 .. signature:: theorem
 
    | :fn:`pythagorean_theorem <G.79>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`< B A C ) <g1:< B A C )>`)
-   | **given** :g:`< A B C > <g1:< A B C >>` be a right-angled triangle having :g:`< B A C ) <g1:< B A C )>` right
-   | **prove** the square on :g:`/ B C / <g1:/ B C />` is equal to the squares on :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />`
+   | **given** :g:`< A B C > <g1:< A B C >>` (:g:`< B A C ) <g1:< B A C )>` = ∟)
+   | **prove** :g:`< B D E C > <g1:< B D E C >>` = :g:`< G B > <g1:< G B >>` + :g:`< H C > <g1:< H C >>`
 
 .. picture:: g1.svg
    :alt: Folio 0363 Figure 1 - Proposition 47
 
 .. step:: given
 
-   :g:`< A B C > <g1:< A B C >>` be a right-angled triangle having :g:`< B A C ) <g1:< B A C )>` right
+   :g:`< A B C > <g1:< A B C >>` (:g:`< B A C ) <g1:< B A C )>` = ∟)
 
 .. step:: construct
 
-   :fn:`square_on_segment <G.75>`\ (:g:`/ B C / <g1:/ B C />`) → :g:`< B D E C > <g1:< B D E C >>`, :fn:`square_on_segment <G.75>`\ (:g:`/ B A / <g1:/ B A />`) → :g:`< G B > <g1:< G B >>`, :fn:`square_on_segment <G.75>`\ (:g:`/ A C / <g1:/ A C />`) → :g:`< H C > <g1:< H C >>`
+   :fn:`square_on_segment <G.75>`\ (:g:`/ B C / <g1:/ B C />`, :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />`) → :g:`< B D E C > <g1:< B D E C >>`, :g:`< G B > <g1:< G B >>`, :g:`< H C > <g1:< H C >>`
 
 .. step:: construct
 
-   :fn:`parallel_line <G.58>`\ (:g:`A <g1:A>`, :g:`/ B D / <g1:/ B D />` or :g:`/ C E / <g1:/ C E />`) → :g:`/ A L / <g1:/ A L />`
-
-.. step:: construct
-
-   :fn:`segment <G.14>`\ (:g:`A <g1:A>`, :g:`D <g1:D>`) → :g:`/ A D / <g1:/ A D />`, :fn:`segment <G.14>`\ (:g:`F <g1:F>`, :g:`C <g1:C>`) → :g:`/ F C / <g1:/ F C />`
-
-.. step:: assert
-
-   each of :g:`< B A C ) <g1:< B A C )>`, :g:`< B A G ) <g1:< B A G )>` is :eq:`right <g1:< B A C ) = g1:< B A G )>`, it follows that with a :term:`segment <G.4>` :g:`/ B A / <g1:/ B A />`, and at :g:`A <g1:A>` on it, :g:`/ A C / <g1:/ A C />`, :g:`/ A G / <g1:/ A G />` not lying on the same side make the adjacent :term:`angles <G.22>` equal to two :term:`right angles <G.33>`
+   :fn:`parallel_line <G.58>`\ (:g:`A <g1:A>`, :g:`/ B D / <g1:/ B D />`) → :g:`/ A L / <g1:/ A L />` ∥ :g:`/ B D / <g1:/ B D />`, :fn:`segment <G.14>`\ (:g:`A <g1:A>`, :g:`D <g1:D>`) → :g:`/ A D / <g1:/ A D />`, :fn:`segment <G.14>`\ (:g:`F <g1:F>`, :g:`C <g1:C>`) → :g:`/ F C / <g1:/ F C />`, :fn:`segment <G.14>`\ (:g:`A <g1:A>`, :g:`E <g1:E>`) → :g:`/ A E / <g1:/ A E />`, :fn:`segment <G.14>`\ (:g:`B <g1:B>`, :g:`K <g1:K>`) → :g:`/ B K / <g1:/ B K />`
 
 .. step:: assert ∵ supplementary_angles_collinear <G.39>
 
-   :g:`/ C A / <g1:/ C A />` is in a segment with :g:`/ A G / <g1:/ A G />`
+   :g:`< B A C ) <g1:< B A C )>` :eq:`= <g1:< B A C ) = g1:< B A G )>` :g:`< B A G ) <g1:< B A G )>` = ∟ → :g:`/ C A / <g1:/ C A />`, :g:`/ A G / <g1:/ A G />` ∈ :g:`[ C G ] <g1:[ C A ]>`, :g:`/ B A / <g1:/ B A />`, :g:`/ A H / <g1:/ A H />` ∈ :g:`[ B H ] <g1:[ B A ]>`
 
-.. step:: assert
+.. step:: assert ∵ add_equals, sas_congruence <G.36, G.24>
 
-   For the same reason :g:`/ B A / <g1:/ B A />` is also in a segment with :g:`/ A H / <g1:/ A H />`
-
-.. step:: construct
-
-   And, since :g:`< D B C ) <g1:< D B C )>` is :eq:`equal <g1:< D B C ) = g1:< F B A )>` to :g:`< F B A ) <g1:< F B A )>`: for each is right: let :g:`< A B C ) <g1:< A B C )>` be added to each
-
-.. step:: assert ∵ add_equals <G.36>
-
-   :g:`< D B A ) <g1:< D B A )>` :eq:`= <g1:< D B A ) = g1:< F B C )>` :g:`< F B C ) <g1:< F B C )>`
-
-.. step:: assert
-
-   since :g:`/ D B / <g1:/ D B />` :eq:`= <g1:/ D B / = g1:/ B C /; g1:/ F B / = g1:/ B A />` :g:`/ B C / <g1:/ B C />`, and :g:`/ F B / <g1:/ F B />` to :g:`/ B A / <g1:/ B A />`, :g:`/ A B / <g1:/ A B />`, :g:`/ B D / <g1:/ B D />` :eq:`= <g1:/ A B / = g1:/ F B /; g1:/ B D / = g1:/ B C />` :g:`/ F B / <g1:/ F B />`, :g:`/ B C / <g1:/ B C />`, and :g:`< A B D ) <g1:< A B D )>` :eq:`= <g1:< A B D ) = g1:< F B C )>` :g:`< F B C ) <g1:< F B C )>`
-
-.. step:: assert
-
-   :g:`/ A D / <g1:/ A D />` :eq:`= <g1:/ A D / = g1:/ F C />` :g:`/ F C / <g1:/ F C />`,
-
-.. step:: assert ∵ sas_congruence <G.24>
-
-   :g:`< A B D > <g1:< A B D >>` is :eq:`equal <g1:< A B D > = g1:< F B C >>` to :g:`< F B C > <g1:< F B C >>`
+   :g:`< D B C ) <g1:< D B C )>` :eq:`= <g1:< D B C ) = g1:< F B A )>` :g:`< F B A ) <g1:< F B A )>` → :g:`< D B A ) <g1:< D B A )>` :eq:`= <g1:< D B A ) = g1:< F B C )>` :g:`< F B C ) <g1:< F B C )>`, :g:`/ D B / <g1:/ D B />` :eq:`= <g1:/ D B / = g1:/ B C /; g1:/ F B / = g1:/ B A />` :g:`/ B C / <g1:/ B C />`, :g:`/ F B / <g1:/ F B />` :eq:`= <g1:/ D B / = g1:/ B C /; g1:/ F B / = g1:/ B A />` :g:`/ B A / <g1:/ B A />` → :g:`< A B D > <g1:< A B D >>` :eq:`= <g1:< A B D > = g1:< F B C >>` :g:`< F B C > <g1:< F B C >>`
 
 .. step:: assert ∵ parallelogram_double_triangle <G.70>
 
-   Now the parallelogram :g:`< B L > <g1:< B L >>` is double of :g:`< A B D > <g1:< A B D >>`, for they have the same base :g:`/ B D / <g1:/ B D />` and are in the same :term:`parallels <G.52>` :g:`/ B D / <g1:/ B D />`, :g:`/ A L / <g1:/ A L />`
+   :g:`< B L > <g1:< B L >>` = 2 :g:`< A B D > <g1:< A B D >>`, :g:`< G B > <g1:< G B >>` = 2 :g:`< F B C > <g1:< F B C >>` → :g:`< B L > <g1:< B L >>` :eq:`= <g1:< B L > = g1:< G B >>` :g:`< G B > <g1:< G B >>`, :g:`< C L > <g1:< C L >>` :eq:`= <g1:< C L > = g1:< H C >>` :g:`< H C > <g1:< H C >>`
 
-.. step:: assert ∵ parallelogram_double_triangle <G.70>
+.. step:: conclude ∵ add_equals <G.36>
 
-   The square :g:`< G B > <g1:< G B >>` is double of :g:`< F B C > <g1:< F B C >>`, for they again have the same base :g:`/ F B / <g1:/ F B />` and are in the same parallels :g:`/ F B / <g1:/ F B />`, :g:`/ G C / <g1:/ G C />`
-
-.. step:: assert
-
-   [But the doubles of equals are equal to one another.]
-
-.. step:: assert
-
-   the parallelogram :g:`< B L > <g1:< B L >>` is also :eq:`equal <g1:< B L > = g1:< G B >>` to the square :g:`< G B > <g1:< G B >>`
-
-.. step:: assert
-
-   Similarly, if :g:`/ A E / <g1:/ A E />`, :g:`/ B K / <g1:/ B K />` be joined, the parallelogram :g:`< C L > <g1:< C L >>` can also be proved :eq:`equal <g1:< C L > = g1:< H C >>` to the square :g:`< H C > <g1:< H C >>`
-
-.. step:: assert ∵ add_equals <G.36>
-
-   the whole square :g:`< B D E C > <g1:< B D E C >>` is equal to the two squares :g:`< G B > <g1:< G B >>`, :g:`< H C > <g1:< H C >>`
-
-.. step:: assert
-
-   The square :g:`< B D E C > <g1:< B D E C >>` is described on :g:`/ B C / <g1:/ B C />`, and the squares :g:`< G B > <g1:< G B >>`, :g:`< H C > <g1:< H C >>` on :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />`
-
-.. step:: conclude
-
-   the square on :g:`/ B C / <g1:/ B C />` is equal to the squares on the sides :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />`
+   :g:`< B D E C > <g1:< B D E C >>` = :g:`< G B > <g1:< G B >>` + :g:`< H C > <g1:< H C >>`
 
 Dependency Graph
 ----------------
@@ -331,6 +280,7 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.51" -> "G.14";
      "G.58" -> "G.14";
      "G.70" -> "G.14";
@@ -345,16 +295,22 @@ Dependency Graph
      "G.37" -> "G.16";
      "G.39" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.56" -> "G.16";
      "G.64" -> "G.16";
+     "G.66" -> "G.16";
+     "G.70" -> "G.16";
+     "G.75" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
      "G.34" -> "G.17";
      "G.20" -> "G.18";
      "G.25" -> "G.18";
+     "G.39" -> "G.18";
      "G.41" -> "G.18";
      "G.45" -> "G.18";
+     "G.53" -> "G.18";
      "G.58" -> "G.18";
      "G.66" -> "G.18";
      "G.20" -> "G.19";
@@ -370,6 +326,7 @@ Dependency Graph
      "G.43" -> "G.21";
      "G.45" -> "G.21";
      "G.47" -> "G.21";
+     "G.51" -> "G.21";
      "G.75" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
@@ -411,11 +368,15 @@ Dependency Graph
      "G.64" -> "G.24";
      "G.79" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.28" -> "G.26";
+     "G.39" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.51" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -504,5 +465,6 @@ Required for
 .. toctree::
    :hidden:
 
+   video
    code
    heath

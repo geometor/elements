@@ -1,0 +1,61 @@
+{
+  "voice_id": "voice_xdhacg1pn1cq",
+  "audio_wav": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_i/30/I_30.wav",
+  "total_duration_sec": 60.18,
+  "segments": [
+    {
+      "index": 0,
+      "bell": "bell:proposition",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Euclid's Elements, Book One, Proposition Thirty. Lines parallel to the same line are also parallel to one another. Let each of the segments A B and C D be parallel to segment E F. We prove that segment A B is also parallel to segment C D.",
+      "start_sec": 0.0,
+      "end_sec": 15.81,
+      "duration_sec": 15.81,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Euclid's Elements, Book One, Proposition Thirty. Lines parallel to the same line are also parallel to one another. Let each of the segments A B and C D be parallel to segment E F. We prove that segment A B is also parallel to segment C D.",
+          "start_sec": 0.0,
+          "end_sec": 15.81,
+          "duration_sec": 15.81
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "bell": "bell:construction",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Let transversal segment G K fall upon segments A B, E F, and C D at points G, H, and K.",
+      "start_sec": 15.81,
+      "end_sec": 23.12,
+      "duration_sec": 7.31,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Let transversal segment G K fall upon segments A B, E F, and C D at points G, H, and K.",
+          "start_sec": 15.81,
+          "end_sec": 23.12,
+          "duration_sec": 7.31
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "bell": "bell:insight",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Since segment G K falls on parallel segments A B and E F, by Proposition Twenty-Nine, alternate interior angles A G K and G H F are equal. Again, since segment G K falls on parallel segments E F and C D, by Proposition Twenty-Nine, exterior angle G H F equals opposite interior angle G K D. By Common Notion One, things equal to the same thing are equal to one another, so angle A G K equals angle G K D. Since these are alternate interior angles, by Proposition Twenty-Seven, segment A B is parallel to segment C D, as was required to prove.",
+      "start_sec": 23.12,
+      "end_sec": 60.18,
+      "duration_sec": 37.06,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Since segment G K falls on parallel segments A B and E F, by Proposition Twenty-Nine, alternate interior angles A G K and G H F are equal. Again, since segment G K falls on parallel segments E F and C D, by Proposition Twenty-Nine, exterior angle G H F equals opposite interior angle G K D. By Common Notion One, things equal to the same thing are equal to one another, so angle A G K equals angle G K D. Since these are alternate interior angles, by Proposition Twenty-Seven, segment A B is parallel to segment C D, as was required to prove.",
+          "start_sec": 23.12,
+          "end_sec": 60.18,
+          "duration_sec": 37.06
+        }
+      ]
+    }
+  ]
+}

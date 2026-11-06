@@ -1,0 +1,33 @@
+{
+  "prop_id": "BOOK IV \u2022 PROP. 3",
+  "short_code": "IV.3",
+  "g_id": "G.151",
+  "version": 2,
+  "enunciation": "About a given circle to circumscribe a triangle equiangular with a given triangle.",
+  "title_1080p": "IV.3 \u2022 circumscribe a triangle about a circle equiangular with a triangle \u2022 Euclid's Elements",
+  "title_short": "IV.3 \u2022 circumscribe a triangle about a circle equiangular with a triangle \u2022 Euclid's Elements",
+  "description": "\u201cAbout a given circle to circumscribe a triangle equiangular with a given triangle.\u201d\n\u2014 Euclid's Elements, BOOK IV \u2022 PROP. 3 (G.151)\n\n00:00 1 \u00b7 GIVEN: given circle ( A B C ) and triangle \u27e8 D E F \u27e9\n00:18 2 \u00b7 CONSTRUCT: extend / E F / to G, H; find center K; copy \u27e8 B K A ) = \u27e8 D E G ), \u27e8 B K C ) = \u27e8 D F H )\n00:34 3 \u00b7 CONSTRUCT: draw tangents / L A M /, / M B N /, / N C L / at A, B, C\n00:51 4 \u00b7 ASSERT: in quadrilateral \u27e8 A M B K \u27e9, \u27e8 K A M ) & \u27e8 K B M ) are right \u2192 \u27e8 A K B ) + \u27e8 A M B ) = 2R\n01:11 5 \u00b7 ASSERT: \u27e8 A M B ) = \u27e8 D E F ) and similarly \u27e8 L N B ) = \u27e8 D F E )\n01:32 6 \u00b7 \u2234: \u27e8 M L N ) = \u27e8 E D F ) \u2192 \u27e8 L M N \u27e9 circumscribed about ( A B C )\n01:52 7 \u00b7 COMMENTARY: convergence of tangents & Peletier\u2013Borelli 8-triangle configuration\n02:17 8 \u00b7 GENEALOGY: G.151 dependency tree & symbolic model\n02:42 9 \u00b7 PARTICIPATE: explore the GEOMETOR Elements Codex & participate\n\nExplore the interactive Book Codex, symbolic model, and dependency tree:\n\u2022 Elements Codex (G.151): https://geometor.github.io/elements/elements2/G.151/\n\u2022 Heath Edition (IV.3): https://geometor.github.io/euclid/heath/volume_I/book_iv/propositions/03/\n\u2022 GitHub: https://github.com/geometor/elements\n\nGEOMETOR \u2022 G.151 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid IV.3",
+    "G.151",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_iv/propositions/03/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.151/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iv/03/IV_03_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iv/03/IV_03_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iv/03/IV_03.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iv/03/IV_03_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iv/03/IV_03_short_thumb.png"
+  }
+}

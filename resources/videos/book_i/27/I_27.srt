@@ -1,0 +1,51 @@
+1
+00:00:00,420 --> 00:00:03,566
+Euclid's Elements, Book One, Proposition Twenty-Seven.
+
+2
+00:00:03,566 --> 00:00:09,451
+If a transversal cutting two lines makes the alternate interior angles equal, the lines are parallel.
+
+3
+00:00:09,451 --> 00:00:15,802
+Let segment E F fall on segments A B and C D so that the alternate interior angles A E F and E F D are equal.
+
+4
+00:00:15,802 --> 00:00:18,890
+We prove that segment A B is parallel to segment C D.
+
+5
+00:00:19,310 --> 00:00:22,697
+Suppose segment A B is not parallel to segment C D.
+
+6
+00:00:22,697 --> 00:00:29,007
+Then when extended in both directions, they must meet either toward B and D, or toward A and C.
+
+7
+00:00:29,007 --> 00:00:34,320
+Let them be extended and meet toward B and D at point G, forming triangle G E F.
+
+8
+00:00:34,740 --> 00:00:41,281
+In triangle G E F, angle A E F is an exterior angle, and angle E F G is the opposite interior angle.
+
+9
+00:00:41,281 --> 00:00:44,290
+By hypothesis, angle A E F equals angle E F G.
+
+10
+00:00:44,290 --> 00:00:53,318
+Yet by Proposition Sixteen, the exterior angle of a triangle is strictly greater than either opposite interior angle, which is impossible.
+
+11
+00:00:53,318 --> 00:00:58,747
+Thus segments A B and C D cannot meet toward B and D, nor similarly toward A and C.
+
+12
+00:00:58,747 --> 00:01:05,354
+By Definition Twenty-Three, lines in the same plane that never meet in either direction are parallel.
+
+13
+00:01:05,354 --> 00:01:10,260
+Therefore segment A B is parallel to segment C D, as was required to prove.

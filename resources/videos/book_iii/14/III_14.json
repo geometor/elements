@@ -1,0 +1,97 @@
+{
+  "voice_id": "voice_xdhacg1pn1cq",
+  "audio_wav": "/home/phi/PROJECTS/geometor/elements/resources/videos/book_iii/14/III_14.wav",
+  "total_duration_sec": 164.78,
+  "segments": [
+    {
+      "index": 0,
+      "bell": "bell:proposition",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: brisk, clear, architectural voice; steady studio cadence] Book Three, Proposition Fourteen. In a circle equal straight lines are equally distant from the center, and those which are equally distant from the center are equal to one another. Let A B D C be a circle, and let A B and C D be chords in it. We claim that A B and C D are equal if and only if they are equally distant from the center.",
+      "start_sec": 0.0,
+      "end_sec": 19.81,
+      "duration_sec": 19.81,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: brisk, clear, architectural voice; steady studio cadence] Book Three, Proposition Fourteen. In a circle equal straight lines are equally distant from the center, and those which are equally distant from the center are equal to one another. Let A B D C be a circle, and let A B and C D be chords in it. We claim that A B and C D are equal if and only if they are equally distant from the center.",
+          "start_sec": 0.0,
+          "end_sec": 19.81,
+          "duration_sec": 19.81
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "bell": "bell:construction",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: methodical, precise constructive cadence] Take the center E of circle A B D C by Three One. From E, draw E F and E G perpendicular to A B and C D, and join the radii A E and E C.",
+      "start_sec": 19.81,
+      "end_sec": 31.72,
+      "duration_sec": 11.91,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: methodical, precise constructive cadence] Take the center E of circle A B D C by Three One. From E, draw E F and E G perpendicular to A B and C D, and join the radii A E and E C.",
+          "start_sec": 19.81,
+          "end_sec": 31.72,
+          "duration_sec": 11.91
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "bell": "bell:insight",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: luminous, deductive geometric clarity] By Three Three, since E F through the center cuts the chord A B at right angles, it bisects it, so A B is double of A F; and for the same reason C D is double of C G. Thus A B equals C D if and only if the half-chords A F and C G are equal. Because the radii A E and E C are equal, their squares are equal. By One Forty-Seven, the Pythagorean theorem in the right triangles E F A and E G C, the squares on A F and E F equal the square on A E, and the squares on C G and E G equal the square on E C. Therefore, the sum of the squares on A F and E F equals the sum of the squares on C G and E G. When A B equals C D, subtracting the equal squares on A F and C G leaves the square on E F equal to the square on E G, so E F equals E G. Conversely, when E F equals E G, subtracting their equal squares leaves A F equal to C G, so the doubles A B and C D are equal. Therefore, in a circle equal chords are equally distant from the center, and chords equally distant from the center are equal. As was required to prove.",
+      "start_sec": 31.72,
+      "end_sec": 104.46,
+      "duration_sec": 72.74,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: luminous, deductive geometric clarity] By Three Three, since E F through the center cuts the chord A B at right angles, it bisects it, so A B is double of A F; and for the same reason C D is double of C G. Thus A B equals C D if and only if the half-chords A F and C G are equal. Because the radii A E and E C are equal, their squares are equal. By One Forty-Seven, the Pythagorean theorem in the right triangles E F A and E G C, the squares on A F and E F equal the square on A E, and the squares on C G and E G equal the square on E C. Therefore, the sum of the squares on A F and E F equals the sum of the squares on C G and E G. When A B equals C D, subtracting the equal squares on A F and C G leaves the square on E F equal to the square on E G, so E F equals E G. Conversely, when E F equals E G, subtracting their equal squares leaves A F equal to C G, so the doubles A B and C D are equal. Therefore, in a circle equal chords are equally distant from the center, and chords equally distant from the center are equal. As was required to prove.",
+          "start_sec": 31.72,
+          "end_sec": 104.46,
+          "duration_sec": 72.74
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "bell": "bell:system",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: reflective, scholarly, architectural synthesis] Proposition Three Fourteen is the first theorem in Book Three to deploy the Pythagorean theorem, Book One Proposition Forty-Seven, inside the circle. By forming the right triangle of half-chord, central perpendicular, and radius, Euclid establishes the fundamental invariant $a^2 + d^2 = R^2$: because the hypotenuse $R$ is constant around the circle, the half-chord $a$ and the central distance $d$ determine each other uniquely. In the GEOMETOR G-Index, node G one hundred fourteen synthesizes ten direct prerequisites across fifty-eight ancestor nodes, directly unlocking Three Fifteen on the comparative lengths of chords and the diameter.",
+      "start_sec": 104.46,
+      "end_sec": 143.08,
+      "duration_sec": 38.62,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: reflective, scholarly, architectural synthesis] Proposition Three Fourteen is the first theorem in Book Three to deploy the Pythagorean theorem, Book One Proposition Forty-Seven, inside the circle. By forming the right triangle of half-chord, central perpendicular, and radius, Euclid establishes the fundamental invariant $a^2 + d^2 = R^2$: because the hypotenuse $R$ is constant around the circle, the half-chord $a$ and the central distance $d$ determine each other uniquely. In the GEOMETOR G-Index, node G one hundred fourteen synthesizes ten direct prerequisites across fifty-eight ancestor nodes, directly unlocking Three Fifteen on the comparative lengths of chords and the diameter.",
+          "start_sec": 104.46,
+          "end_sec": 143.08,
+          "duration_sec": 38.62
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "bell": "bell:resolve",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: warm, inviting, resonant studio close] You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Fourteen in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.",
+      "start_sec": 143.08,
+      "end_sec": 164.78,
+      "duration_sec": 21.7,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: warm, inviting, resonant studio close] You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Fourteen in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.",
+          "start_sec": 143.08,
+          "end_sec": 164.78,
+          "duration_sec": 21.7
+        }
+      ]
+    }
+  ]
+}

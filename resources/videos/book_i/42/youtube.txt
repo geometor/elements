@@ -1,0 +1,39 @@
+================================================================================
+YOUTUBE 1080P (16:9) TITLE
+================================================================================
+I.42 • to construct, in a given rectilineal angle, a parallelogram equal to a given triangle • Eu...
+
+================================================================================
+YOUTUBE SHORT (9:16) TITLE
+================================================================================
+I.42 • to construct, in a given rectilineal angle, a parallelogram equal to a given triangle • Eu...
+
+================================================================================
+DESCRIPTION
+================================================================================
+“To construct, in a given rectilineal angle, a parallelogram equal to a given triangle.”
+— Euclid's Elements, BOOK I • PROP. 42 (G.71)
+
+00:00 1 · GIVEN: ⟨ A B C ⟩, ⟨ D )
+00:17 2 · CONSTRUCT: bisect_segment(/ B C /) → E (/ B E / = / E C /), segment(A, E) → / A E /
+00:24 3 · CONSTRUCT: copy_angle(/ E C /, E, ⟨ D )) → ⟨ C E F ) (⟨ C E F ) = ⟨ D ))
+00:31 4 · CONSTRUCT: parallel_line(A, / E C /) → / A G /, parallel_line(C, / E F /) → / C G / → ⟨ F E C G ⟩
+00:38 5 · ASSERT: / B E / = / E C /, / B C / ∥ / A G / → ⟨ A B E ⟩ = ⟨ A E C ⟩ → ⟨ A B C ⟩ = 2 ⟨ A E C ⟩
+00:52 6 · ASSERT: / E C / ∥ / A G / → ⟨ F E C G ⟩ = 2 ⟨ A E C ⟩
+01:05 7 · ∴: ⟨ F E C G ⟩ = ⟨ A B C ⟩, ⟨ C E F ) = ⟨ D )
+
+GEOMETOR • G.71 • v2
+
+================================================================================
+TAGS
+================================================================================
+Euclid, Euclid's Elements, Euclid I.42, G.71, Geometry, Constructive Geometry, Compass and Straightedge, Mathematical Proof, GEOMETOR, Thomas Little Heath
+
+================================================================================
+MEDIA & CAPTIONS FILES
+================================================================================
+• 9:16 Short MP4 : I_42_short.mp4
+• 16:9 1080p MP4 : I_42_1080p.mp4
+• Closed Captions: I_42.srt
+• 16:9 Thumbnail : I_42_thumb.png
+• 9:16 Thumbnail : I_42_short_thumb.png

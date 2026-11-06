@@ -1,0 +1,73 @@
+WEBVTT
+
+1
+00:00:00.420 --> 00:00:02.151
+Book Two, Proposition Seven.
+
+2
+00:00:02.151 --> 00:00:15.693
+If a segment be cut at random, the square on the whole and that on one of the segments both together are equal to twice the rectangle contained by the whole and the said segment, and the square on the remaining segment.
+
+3
+00:00:15.693 --> 00:00:18.290
+Let the segment A B be cut at random at C.
+
+4
+00:00:18.710 --> 00:00:25.897
+On A B, describe the square A D E B by One Forty-Six, and draw the diagonal B D.
+
+5
+00:00:25.897 --> 00:00:35.600
+Complete the figure by drawing C N parallel to A D or B E, and through G drawing H F parallel to A B or D E.
+
+6
+00:00:36.020 --> 00:00:40.723
+By One Forty-Three, the complement A G equals the complement G E.
+
+7
+00:00:40.723 --> 00:00:49.983
+Add the square C F to each; then the whole rectangle A F equals the whole rectangle C E, so A F and C E together are double A F.
+
+8
+00:00:49.983 --> 00:00:55.698
+Yet A F and C E together form the gnomon K L M plus the overlapping square C F.
+
+9
+00:00:55.698 --> 00:01:06.984
+And because B F equals B C, A F is the rectangle contained by A B and B C; therefore the gnomon K L M and the square C F equal twice the rectangle A B, B C.
+
+10
+00:01:06.984 --> 00:01:10.529
+Add D G, which equals the square on A C, to each.
+
+11
+00:01:10.529 --> 00:01:17.330
+The gnomon K L M and D G form the whole square A D E B on A B, while C F is the square on B C.
+
+12
+00:01:17.330 --> 00:01:26.156
+Therefore, the squares on A B and B C equal twice the rectangle contained by A B and B C, together with the square on A C.
+
+13
+00:01:26.156 --> 00:01:27.820
+Which was to be proved.
+
+14
+00:01:28.240 --> 00:01:33.190
+Proposition Two Seven is the geometric counterpart to the square of a difference.
+
+15
+00:01:33.190 --> 00:01:48.348
+Calling the whole line a and the segment b, their difference is a minus b, and the diagram shows that a squared plus b squared equals two a b plus the square on a minus b—because the two full rectangles A F and C E overlap on the corner square C F.
+
+16
+00:01:48.348 --> 00:02:02.160
+In the GEOMETOR G-Index, node G eighty-nine synthesizes seven direct prerequisites across fifty-two ancestor nodes, and later serves as a foundational engine for Book Ten's classification of apotomes and irrational magnitudes.
+
+17
+00:02:02.580 --> 00:02:15.380
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Two Seven in the GEOMETOR Elements codex at geometor dot github dot i o slash elements.
+
+18
+00:02:15.380 --> 00:02:21.780
+Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

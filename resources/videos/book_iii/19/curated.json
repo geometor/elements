@@ -1,0 +1,54 @@
+{
+  "III.19": {
+    "subtype": "theorem",
+    "args": [
+      ":g:`( A B C ) <g1:( A B C )>`",
+      ":g:`/ D E / <g1:/ D E />`",
+      ":g:`C <g1:C>`",
+      ":g:`/ C A / <g1:/ C A />`"
+    ],
+    "returns": [],
+    "given": ":g:`/ D E / <g1:/ D E />` touches :g:`( A B C ) <g1:( A B C )>` at :g:`C <g1:C>`, :g:`/ C A / <g1:/ C A />` ⊥ :g:`/ D E / <g1:/ D E />`",
+    "contract": "center(:g:`( A B C ) <g1:( A B C )>`) ∈ :g:`/ A C / <g1:/ A C />`",
+    "steps": [
+      [
+        "given",
+        [
+          "III.def.2",
+          "I.def.10"
+        ],
+        ":g:`/ D E / <g1:/ D E />` touches :g:`( A B C ) <g1:( A B C )>` at :g:`C <g1:C>`, :g:`/ C A / <g1:/ C A />` ⊥ :g:`/ D E / <g1:/ D E />`"
+      ],
+      [
+        "construct",
+        [
+          "I.def.16",
+          "I.post.1"
+        ],
+        "assume center(:g:`( A B C ) <g1:( A B C )>`) = :g:`F <g1:F>` ∉ :g:`/ A C / <g1:/ A C />`, join :g:`/ C F / <g1:/ C F />`"
+      ],
+      [
+        "assert",
+        [
+          "III.18"
+        ],
+        ":g:`/ D E / <g1:/ D E />` touches :g:`( A B C ) <g1:( A B C )>` at :g:`C <g1:C>` and :g:`F <g1:F>` is center → :g:`/ F C / <g1:/ F C />` ⊥ :g:`/ D E / <g1:/ D E />` → :g:`< F C E ) <g1:< F C E )>` is right"
+      ],
+      [
+        "assert",
+        [
+          "I.post.4",
+          "I.cn.5"
+        ],
+        ":g:`< A C E ) <g1:< A C E )>` is right → :g:`< F C E ) <g1:< F C E )>` :eq:`= <g1:< F C E ) = g1:< A C E )>` :g:`< A C E ) <g1:< A C E )>` (the less to the greater) ⇒⇐"
+      ],
+      [
+        "conclude",
+        [
+          "I.def.16"
+        ],
+        "center(:g:`( A B C ) <g1:( A B C )>`) ∈ :g:`/ A C / <g1:/ A C />`"
+      ]
+    ]
+  }
+}

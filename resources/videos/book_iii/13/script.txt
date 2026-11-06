@@ -1,0 +1,19 @@
+[bell:proposition]
+[style: brisk, clear, architectural voice; steady studio cadence]
+Book Three, Proposition Thirteen. A circle does not touch a circle at more points than one, whether it touch it internally or externally. <pause> For, if possible, let the circle A B D C touch the circle E B F D, first internally, at more points than one, namely B and D.
+
+[bell:construction]
+[style: methodical, precise constructive cadence]
+Let the center G of circle A B D C, and the center H of circle E B F D, be taken. By Three Eleven, the straight line joined from G to H and produced falls on the points of internal contact B and D, as B G H D.
+
+[bell:insight]
+[style: luminous, deductive geometric clarity]
+Because G is the center of circle A B D C, the radius B G equals G D. Since G D contains H D, B G is greater than H D, and therefore the whole segment B H is much greater than H D. Yet H is the center of circle E B F D, so B H also equals H D—which is impossible. Thus two circles cannot touch internally at more than one point. <pause> Nor can they touch externally at two points. For if circle A C K touches circle A B D C externally at A and C, join the chord A C. By Three Two, the chord joining two points on a circle falls within each circle; yet because the circles touch externally, A C falls outside circle A C K—which is absurd. <pause> Therefore, a circle does not touch a circle at more points than one, whether internally or externally. As was required to prove.
+
+[bell:system]
+[style: reflective, scholarly, architectural synthesis]
+Proposition Three Thirteen completes Euclid's trilogy on tangent circles. Where Three Ten proved that two circles cannot intersect at more than two points, Three Thirteen proves that when intersection collapses into tangency, at most a single point of contact can exist. Heath contrasts Euclid's collinear-radius reductio with Robert Simson's perpendicular-bisector proof, showing that both rely on the symmetry of the line of centers established in Three Eleven and Three Twelve. <pause> In the GEOMETOR G-Index, node G one hundred twelve unites Three Two—chord interiority—with Three Eleven's line of centers across forty-two ancestor nodes.
+
+[bell:resolve]
+[style: warm, inviting, resonant studio close]
+You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Thirteen in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.

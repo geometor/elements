@@ -1,18 +1,18 @@
 :canonical_id: G.130
 :original_id: III.25
-:title: G.130 segment circle describe
+:title: G.130 complete a circle from a given segment
 :volume: II
 :book: III
 :type: prop
 
-G.130 segment circle describe — Code
-====================================
+G.130 complete a circle from a given segment — Code
+===================================================
 
 .. rubric:: `III.25 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/25/>`_
 
 .. enunciation::
 
-   Given a :term:`segment of a circle <G.126>`, to describe the complete :term:`circle <G.10>` of which it is a :term:`segment <G.4>`.
+   Given a :term:`segment of a circle <G.126>`, complete the full :term:`circle <G.10>` of which it is a :term:`segment <G.4>`.
 
 .. rubric:: ``g1.py``
 

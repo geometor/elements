@@ -1,0 +1,46 @@
+================================================================================
+YOUTUBE 1080P (16:9) TITLE
+================================================================================
+II.2 • square sum rectangles • Euclid's Elements
+
+================================================================================
+YOUTUBE SHORT (9:16) TITLE
+================================================================================
+II.2 • square sum rectangles • Euclid's Elements
+
+================================================================================
+DESCRIPTION
+================================================================================
+“If a segment be cut at random, the rectangle contained by the whole and both of the segments is equal to the square on the whole.”
+— Euclid's Elements, BOOK II • PROP. 2 (G.83)
+
+00:00 1 · GIVEN: given segment / A B / cut at random at C
+00:13 2 · CONSTRUCT: describe square ⟨ A D E B ⟩ on / A B /
+00:18 3 · CONSTRUCT: draw / C F / parallel to / A D /, / B E /
+00:24 4 · ASSERT: ⟨ A E ⟩ = ⟨ A F ⟩ + ⟨ C E ⟩ = sq(/ A B /)
+00:34 5 · ASSERT: ⟨ A F ⟩ = rect(/ A B /, / A C /), ⟨ C E ⟩ = rect(/ A B /, / B C /)
+00:45 6 · ∴: rect(/ A B /, / A C /) + rect(/ A B /, / B C /) = sq(/ A B /)
+00:55 7 · COMMENTARY: geometric algebra: a² = ab + ac (with a = b + c)
+01:12 8 · GENEALOGY: G.83 dependency tree & symbolic model
+01:29 9 · PARTICIPATE: explore the GEOMETOR Elements Codex & participate
+
+Explore the interactive Book Codex, symbolic model, and dependency tree:
+• Elements Codex (G.83): https://geometor.github.io/elements/elements2/G.83/
+• Heath Edition (II.2): https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/02/
+• GitHub: https://github.com/geometor/elements
+
+GEOMETOR • G.83 • v2
+
+================================================================================
+TAGS
+================================================================================
+Euclid, Euclid's Elements, Euclid II.2, G.83, Geometry, Constructive Geometry, Compass and Straightedge, Mathematical Proof, GEOMETOR, Thomas Little Heath
+
+================================================================================
+MEDIA & CAPTIONS FILES
+================================================================================
+• 9:16 Short MP4 : II_02_short.mp4
+• 16:9 1080p MP4 : II_02_1080p.mp4
+• Closed Captions: II_02.srt
+• 16:9 Thumbnail : II_02_thumb.png
+• 9:16 Thumbnail : II_02_short_thumb.png
