@@ -1,12 +1,12 @@
 :canonical_id: G.85
 :original_id: II.4
-:title: G.85 square of sum
+:title: G.85 square of a sum
 :volume: I
 :book: II
 :type: prop
 
-G.85 square of sum — Heath
-==========================
+G.85 square of a sum — Heath
+============================
 
 .. rubric:: `II.4 <https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/04/>`_
 
@@ -151,9 +151,10 @@ Dependency Graph
      "G.61" [label="G.61", tooltip="G.61 (I.def.17): A diameter of a circle is any segment drawn through the center and terminated in both directions by the arc of the circle; it bisects the circle.", fillcolor="#224422", URL="../G.61/index.html", target="_top"];
      "G.62" [label="G.62", tooltip="G.62 (I.34): In a parallelogram, opposite sides and opposite angles are equal, and the diagonal bisects the area.", fillcolor="#222244", URL="../G.62/index.html", target="_top"];
      "G.63" [label="G.63", tooltip="G.63 (I.def.22): Of quadrilateral figures, a square is equilateral and right-angled; an oblong is right-angled but not equilateral; a rhombus is equilateral but not right-angled; a rhomboid has opp...", fillcolor="#224422", URL="../G.63/index.html", target="_top"];
+     "G.72" [label="G.72", tooltip="G.72 (I.43): In any parallelogram, the complements of the parallelograms about the diagonal are equal in area.", fillcolor="#222244", URL="../G.72/index.html", target="_top"];
      "G.75" [label="G.75", tooltip="G.75 (I.46): Construct a square on a given segment.", fillcolor="#222244", URL="../G.75/index.html", target="_top"];
      "G.81" [label="G.81", tooltip="G.81 (II.def.1): Any rectangular parallelogram is said to becontained by the twosegments containing theright angle.", fillcolor="#224422", URL="../G.81/index.html", target="_top"];
-     "G.85" [label="G.85", tooltip="G.85 (II.4): If a segment be cut at random, the square on the whole is equal to the squares on the segments and twice the rectangle contained by the segments.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.85" [label="G.85", tooltip="G.85 (II.4): If a segment is cut at random, the square on the whole equals the squares on the parts together with twice the rectangle contained by the parts.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -278,6 +279,7 @@ Dependency Graph
      "G.53" -> "G.12";
      "G.62" -> "G.12";
      "G.63" -> "G.12";
+     "G.72" -> "G.12";
      "G.17" -> "G.13";
      "G.25" -> "G.13";
      "G.63" -> "G.13";
@@ -293,6 +295,7 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.51" -> "G.14";
      "G.58" -> "G.14";
      "G.85" -> "G.14";
@@ -305,7 +308,9 @@ Dependency Graph
      "G.21" -> "G.16";
      "G.37" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.56" -> "G.16";
+     "G.75" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
@@ -314,10 +319,12 @@ Dependency Graph
      "G.25" -> "G.18";
      "G.41" -> "G.18";
      "G.45" -> "G.18";
+     "G.53" -> "G.18";
      "G.58" -> "G.18";
      "G.20" -> "G.19";
      "G.25" -> "G.19";
      "G.40" -> "G.19";
+     "G.72" -> "G.19";
      "G.21" -> "G.20";
      "G.25" -> "G.21";
      "G.27" -> "G.21";
@@ -327,6 +334,7 @@ Dependency Graph
      "G.43" -> "G.21";
      "G.45" -> "G.21";
      "G.47" -> "G.21";
+     "G.51" -> "G.21";
      "G.75" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
@@ -353,7 +361,6 @@ Dependency Graph
      "G.62" -> "G.22";
      "G.63" -> "G.22";
      "G.75" -> "G.22";
-     "G.85" -> "G.22";
      "G.24" -> "G.23";
      "G.29" -> "G.23";
      "G.25" -> "G.24";
@@ -363,13 +370,16 @@ Dependency Graph
      "G.51" -> "G.24";
      "G.62" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.85" -> "G.25";
      "G.27" -> "G.26";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.51" -> "G.26";
      "G.85" -> "G.27";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
@@ -392,6 +402,8 @@ Dependency Graph
      "G.37" -> "G.36";
      "G.56" -> "G.36";
      "G.62" -> "G.36";
+     "G.72" -> "G.36";
+     "G.85" -> "G.36";
      "G.40" -> "G.37";
      "G.56" -> "G.37";
      "G.40" -> "G.38";
@@ -419,10 +431,13 @@ Dependency Graph
      "G.75" -> "G.58";
      "G.85" -> "G.58";
      "G.62" -> "G.61";
+     "G.72" -> "G.61";
+     "G.72" -> "G.62";
      "G.75" -> "G.62";
      "G.85" -> "G.62";
      "G.75" -> "G.63";
      "G.85" -> "G.63";
+     "G.85" -> "G.72";
      "G.85" -> "G.75";
      "G.85" -> "G.81";
    }

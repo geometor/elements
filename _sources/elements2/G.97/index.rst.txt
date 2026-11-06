@@ -2,7 +2,7 @@
 :number: 97
 :canonical_id: G.97
 :original_id: II.14
-:title: G.97 square from polygon
+:title: G.97 construct a square equal to a polygon
 :volume: I
 :book: II
 :type: prop
@@ -10,121 +10,53 @@
 :categories: problem, construction, plane-geometry, geometric-algebra
 :category: problem, construction, plane-geometry, geometric-algebra
 :tags: book-ii, point, segment, line, circle, quadrilateral, square, rectilineal-figure, contained-rectangle, straight-line, centre, semicircle, equality
-:dependencies: G.11, G.12, G.14, G.18, G.21, G.32, G.63, G.74, G.79, G.81, G.87, G.96
-:excerpt: Construct a square equal to a given polygon.
+:dependencies: G.10, G.12, G.14, G.16, G.18, G.19, G.21, G.32, G.63, G.74, G.75, G.79, G.81, G.87, G.96
+:excerpt: Construct a square equal in area to a given rectilineal figure.
 
 .. _G.97:
 .. _II.14:
 
-G.97 square from polygon
-========================
+G.97 construct a square equal to a polygon
+==========================================
 
 .. rubric:: `II.14 <https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/14/>`_
 
 .. enunciation::
 
-   Construct a :term:`square <G.63>` equal to a given polygon.
+   Construct a :term:`square <G.63>` equal in area to a given :term:`rectilineal figure <G.12>`.
 
 .. signature:: problem
 
    | :fn:`square_from_polygon <G.97>`\ (:g:`A <g1:A>`) → :g:`/ E H / <g1:/ E H />`
-   | **given** :g:`A <g1:A>` be the given rectilineal figure
-   | **construct** a square, namely that which can be described on :g:`/ E H / <g1:/ E H />`, has been constructed :eq:`= <g1:/ E H / = g1:A>` to the given rectilineal figure :g:`A <g1:A>`
+   | **given** :g:`A <g1:A>`
+   | **construct** :fn:`square_on_segment <G.75>`\ (:g:`/ E H / <g1:/ E H />`) :eq:`= <g1:/ E H / = g1:A>` :g:`A <g1:A>`
 
 .. picture:: g1.svg
    :alt: Diagram
 
 .. step:: given
 
-   :g:`A <g1:A>` be the given rectilineal figure
+   :g:`A <g1:A>`
 
-.. step:: construct
+.. step:: construct ∵ parallelogram_from_polygon, extend, cut_equal_segment <G.74, G.18, G.21>
 
-   :fn:`parallelogram_from_polygon <G.74>`: Let there be constructed the rectangular parallelogram :g:`< B D E C > <g1:< B D E C >>` :eq:`equal <g1:< B D E C > = g1:A>` to the rectilineal figure :g:`A <g1:A>`.
+   :fn:`parallelogram_from_polygon <G.74>`\ (:g:`A <g1:A>`) → :g:`< B D E C > <g1:< B D E C >>` (:eq:`= <g1:< B D E C > = g1:A>` :g:`A <g1:A>`), ? ¬(:g:`/ B E / <g1:/ B E />` :eq:`= <g1:/ B E / = g1:/ E D />` :g:`/ E D / <g1:/ E D />`) → :fn:`extend <G.18>`\ (:g:`/ B E / <g1:/ B E />`) → :g:`[ B F ] <g1:[ B E ]>`, :fn:`cut_equal_segment <G.21>`\ (:g:`[ B F ] <g1:[ B E ]>`, :g:`/ E D / <g1:/ E D />`) → :g:`/ E F / <g1:/ E F />` (:eq:`= <g1:/ E F / = g1:/ E D />` :g:`/ E D / <g1:/ E D />`)
 
-.. step:: assert
+.. step:: construct ∵ bisect_segment, semicircle_def, extend, segment <G.32, G.96, G.18, G.14>
 
-   If :g:`/ B E / <g1:/ B E />` :eq:`= <g1:/ B E / = g1:/ E D />` :g:`/ E D / <g1:/ E D />`, that which was enjoined will have been done
+   :fn:`bisect_segment <G.32>`\ (:g:`/ B F / <g1:/ B F />`) → :g:`G <g1:G>` (:g:`/ G B / <g1:/ G B />` :eq:`= <g1:/ G B / = g1:/ G F />` :g:`/ G F / <g1:/ G F />`), :fn:`semicircle_def <G.96>`\ (:g:`G <g1:G>`, :g:`/ G B / <g1:/ G B />`) → :g:`( B H F ) <g1:( B H F )>`, :fn:`extend <G.18>`\ (:g:`/ D E / <g1:/ E D />`) ∩ :g:`( B H F ) <g1:( B H F )>` → :g:`H <g1:H>`, :fn:`segment <G.14>`\ (:g:`G <g1:G>`, :g:`H <g1:H>`) → :g:`/ G H / <g1:/ G H />`
 
-.. step:: assert
+.. step:: assert ∵ difference_of_squares_equal_unequal, circle_radii <G.87, G.10>
 
-   For a square :g:`< B D E C > <g1:< B D E C >>` has been constructed :eq:`equal <g1:< B D E C > = g1:A>` to the :term:`rectilineal figure <G.12>` :g:`A <g1:A>`
+   :g:`/ G B / <g1:/ G B />` :eq:`= <g1:/ G B / = g1:/ G F />` :g:`/ G F / <g1:/ G F />` → :fn:`rectangular_parallelogram_said_def <G.81>`\ (:g:`/ B E / <g1:/ B E />`, :g:`/ E F / <g1:/ E F />`) + :fn:`square_on_segment <G.75>`\ (:g:`/ E G / <g1:/ E G />`) = :fn:`square_on_segment <G.75>`\ (:g:`/ G F / <g1:/ G F />`), :g:`/ G F / <g1:/ G F />` :eq:`= <g1:/ G F / = g1:/ G H />` :g:`/ G H / <g1:/ G H />` → :fn:`rectangular_parallelogram_said_def <G.81>`\ (:g:`/ B E / <g1:/ B E />`, :g:`/ E F / <g1:/ E F />`) + :fn:`square_on_segment <G.75>`\ (:g:`/ E G / <g1:/ E G />`) = :fn:`square_on_segment <G.75>`\ (:g:`/ G H / <g1:/ G H />`)
 
-.. step:: assert
+.. step:: assert ∵ pythagorean_theorem, equal_transitive, subtract_equals <G.79, G.16, G.19>
 
-   But, if not, one of :g:`/ B E / <g1:/ B E />`, :g:`/ E D / <g1:/ E D />` is greater
+   :fn:`square_on_segment <G.75>`\ (:g:`/ E H / <g1:/ E H />`) + :fn:`square_on_segment <G.75>`\ (:g:`/ E G / <g1:/ E G />`) = :fn:`square_on_segment <G.75>`\ (:g:`/ G H / <g1:/ G H />`) → :fn:`rectangular_parallelogram_said_def <G.81>`\ (:g:`/ B E / <g1:/ B E />`, :g:`/ E F / <g1:/ E F />`) + :fn:`square_on_segment <G.75>`\ (:g:`/ E G / <g1:/ E G />`) = :fn:`square_on_segment <G.75>`\ (:g:`/ E H / <g1:/ E H />`) + :fn:`square_on_segment <G.75>`\ (:g:`/ E G / <g1:/ E G />`) → :fn:`rectangular_parallelogram_said_def <G.81>`\ (:g:`/ B E / <g1:/ B E />`, :g:`/ E F / <g1:/ E F />`) = :fn:`square_on_segment <G.75>`\ (:g:`/ E H / <g1:/ E H />`)
 
-.. step:: construct
+.. step:: conclude ∵ rectangular_parallelogram_said_def, equal_transitive <G.81, G.16>
 
-   :fn:`extend <G.18>`\ (:g:`/ B E / <g1:/ B E />` be greater, and let it) → :g:`F <g1:F>`
-
-.. step:: construct
-
-   :fn:`cut_equal_segment <G.21>`\ (:g:`/ E D / <g1:/ E D />`) → :g:`/ E F / <g1:/ E F />` (:eq:`equal <g1:/ E F / = g1:/ E D />`)
-
-.. step:: construct
-
-   :fn:`bisect_segment <G.32>`\ (:g:`/ B F / <g1:/ B F />`) → :g:`G <g1:G>` (:eq:`bisected <g1:/ G B / = g1:/ G F />`)
-
-.. step:: construct
-
-   With :term:`center <G.11>` :g:`G <g1:G>` and distance one of :g:`/ G B / <g1:/ G B />`, :g:`/ G F / <g1:/ G F />` let the :term:`semicircle <G.96>` :g:`( B H F ) <g1:( B H F )>` be described
-
-.. step:: construct
-
-   :fn:`extend <G.18>`\ (:g:`[ D E ] <g1:[ D E ]>`) → :g:`H <g1:H>`
-
-.. step:: construct
-
-   :fn:`segment <G.14>`\ (:g:`G <g1:G>`, :g:`H <g1:H>`) → :g:`/ G H / <g1:/ G H />`
-
-.. step:: assert ∵ difference_of_squares_equal_unequal <G.87>
-
-   :g:`/ B F / <g1:/ B F />` has been cut into :eq:`= <g1:/ G B / = g1:/ G F />` segments at :g:`G <g1:G>`, and into unequal segments at :g:`E <g1:E>` → the rectangle contained by :g:`/ B E / <g1:/ B E />`, :g:`/ E F / <g1:/ E F />` together with the square on :g:`/ E G / <g1:/ E G />` is equal to the square on :g:`/ G F / <g1:/ G F />`
-
-.. step:: assert
-
-   :g:`/ G F / <g1:/ G F />` :eq:`= <g1:/ G F / = g1:/ G H />` :g:`/ G H / <g1:/ G H />`
-
-.. step:: assert
-
-   the :term:`rectangle <G.81>` :g:`/ B E / <g1:/ B E />`, :g:`/ E F / <g1:/ E F />` together with the square on :g:`/ G E / <g1:/ G E />` is equal to the square on :g:`/ G H / <g1:/ G H />`
-
-.. step:: assert ∵ pythagorean_theorem <G.79>
-
-   The squares on :g:`/ H E / <g1:/ H E />`, :g:`/ E G / <g1:/ E G />` are equal to the square on :g:`/ G H / <g1:/ G H />`
-
-.. step:: assert
-
-   the rectangle :g:`/ B E / <g1:/ B E />`, :g:`/ E F / <g1:/ E F />` together with the square on :g:`/ G E / <g1:/ G E />` is equal to the squares on :g:`/ H E / <g1:/ H E />`, :g:`/ E G / <g1:/ E G />`
-
-.. step:: construct
-
-   Let the square on :g:`/ G E / <g1:/ G E />` be subtracted from each
-
-.. step:: assert
-
-   the rectangle contained by :g:`/ B E / <g1:/ B E />`, :g:`/ E F / <g1:/ E F />` which remains is equal to the square on :g:`/ E H / <g1:/ E H />`
-
-.. step:: assert
-
-   The rectangle :g:`/ B E / <g1:/ B E />`, :g:`/ E F / <g1:/ E F />` is :g:`< B D E C > <g1:< B D E C >>`, for :g:`/ E F / <g1:/ E F />` :eq:`= <g1:/ E F / = g1:/ E D />` :g:`/ E D / <g1:/ E D />`
-
-.. step:: assert
-
-   the parallelogram :g:`< B D E C > <g1:< B D E C >>` is :eq:`equal <g1:< B D E C > = g1:/ H E />` to the square on :g:`/ H E / <g1:/ H E />`
-
-.. step:: assert
-
-   :g:`< B D E C > <g1:< B D E C >>` is :eq:`equal <g1:< B D E C > = g1:A>` to the rectilineal figure :g:`A <g1:A>`
-
-.. step:: assert
-
-   the rectilineal figure :g:`A <g1:A>` :eq:`= <g1:A = g1:/ E H />` the square which can be described on :g:`/ E H / <g1:/ E H />`
-
-.. step:: conclude
-
-   a square, namely that which can be described on :g:`/ E H / <g1:/ E H />`, has been constructed :eq:`= <g1:/ E H / = g1:A>` to the given rectilineal figure :g:`A <g1:A>`
+   :g:`/ E F / <g1:/ E F />` :eq:`= <g1:/ E F / = g1:/ E D />` :g:`/ E D / <g1:/ E D />` → :g:`< B D E C > <g1:< B D E C >>` = :fn:`rectangular_parallelogram_said_def <G.81>`\ (:g:`/ B E / <g1:/ B E />`, :g:`/ E F / <g1:/ E F />`) = :fn:`square_on_segment <G.75>`\ (:g:`/ E H / <g1:/ E H />`), :g:`< B D E C > <g1:< B D E C >>` :eq:`= <g1:< B D E C > = g1:A>` :g:`A <g1:A>` → :fn:`square_on_segment <G.75>`\ (:g:`/ E H / <g1:/ E H />`) :eq:`= <g1:/ E H / = g1:A>` :g:`A <g1:A>`
 
 Dependency Graph
 ----------------
@@ -207,9 +139,9 @@ Dependency Graph
      "G.79" [label="G.79", tooltip="G.79 (I.47): In a right-angled triangle, the square on the hypotenuse equals the sum of the squares on the two legs (Pythagorean Theorem).", fillcolor="#222244", URL="../G.79/index.html", target="_top"];
      "G.81" [label="G.81", tooltip="G.81 (II.def.1): Any rectangular parallelogram is said to becontained by the twosegments containing theright angle.", fillcolor="#224422", URL="../G.81/index.html", target="_top"];
      "G.86" [label="G.86", tooltip="G.86 (II.def.2): And in any parallelogrammic area let any one whatever of the parallelograms about itsdiameter with the two complements be called agnomon.", fillcolor="#224422", URL="../G.86/index.html", target="_top"];
-     "G.87" [label="G.87", tooltip="G.87 (II.5): If a segment be cut into equal and unequal segments, the rectangle contained by the unequal segments of the whole together with the square on the segment between the points of sect...", fillcolor="#222244", URL="../G.87/index.html", target="_top"];
+     "G.87" [label="G.87", tooltip="G.87 (II.5): If a segment is cut into equal and unequal parts, the rectangle contained by the unequal parts together with the square on the segment between the points of section equals the squa...", fillcolor="#222244", URL="../G.87/index.html", target="_top"];
      "G.96" [label="G.96", tooltip="G.96 (I.def.18): A semicircle is the figure contained by a diameter and the arc cut off by it.", fillcolor="#224422", URL="../G.96/index.html", target="_top"];
-     "G.97" [label="G.97", tooltip="G.97 (II.14): Construct a square equal to a given polygon.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.97" [label="G.97", tooltip="G.97 (II.14): Construct a square equal in area to a given rectilineal figure.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -259,7 +191,6 @@ Dependency Graph
      "G.56" -> "G.2";
      "G.57" -> "G.2";
      "G.58" -> "G.2";
-     "G.65" -> "G.2";
      "G.4" -> "G.3";
      "G.6" -> "G.3";
      "G.8" -> "G.3";
@@ -331,6 +262,7 @@ Dependency Graph
      "G.47" -> "G.10";
      "G.61" -> "G.10";
      "G.96" -> "G.10";
+     "G.97" -> "G.10";
      "G.15" -> "G.11";
      "G.17" -> "G.11";
      "G.20" -> "G.11";
@@ -338,7 +270,6 @@ Dependency Graph
      "G.47" -> "G.11";
      "G.61" -> "G.11";
      "G.96" -> "G.11";
-     "G.97" -> "G.11";
      "G.13" -> "G.12";
      "G.17" -> "G.12";
      "G.20" -> "G.12";
@@ -385,6 +316,7 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.51" -> "G.14";
      "G.58" -> "G.14";
      "G.60" -> "G.14";
@@ -406,20 +338,30 @@ Dependency Graph
      "G.37" -> "G.16";
      "G.39" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.56" -> "G.16";
      "G.57" -> "G.16";
      "G.64" -> "G.16";
      "G.65" -> "G.16";
+     "G.66" -> "G.16";
+     "G.67" -> "G.16";
+     "G.70" -> "G.16";
+     "G.71" -> "G.16";
      "G.73" -> "G.16";
      "G.74" -> "G.16";
+     "G.75" -> "G.16";
+     "G.87" -> "G.16";
+     "G.97" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
      "G.34" -> "G.17";
      "G.20" -> "G.18";
      "G.25" -> "G.18";
+     "G.39" -> "G.18";
      "G.41" -> "G.18";
      "G.45" -> "G.18";
+     "G.53" -> "G.18";
      "G.58" -> "G.18";
      "G.66" -> "G.18";
      "G.67" -> "G.18";
@@ -431,6 +373,7 @@ Dependency Graph
      "G.40" -> "G.19";
      "G.64" -> "G.19";
      "G.72" -> "G.19";
+     "G.97" -> "G.19";
      "G.21" -> "G.20";
      "G.25" -> "G.21";
      "G.31" -> "G.21";
@@ -439,6 +382,7 @@ Dependency Graph
      "G.43" -> "G.21";
      "G.45" -> "G.21";
      "G.47" -> "G.21";
+     "G.51" -> "G.21";
      "G.75" -> "G.21";
      "G.97" -> "G.21";
      "G.24" -> "G.22";
@@ -487,11 +431,15 @@ Dependency Graph
      "G.64" -> "G.24";
      "G.79" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.28" -> "G.26";
+     "G.39" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.51" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -503,6 +451,7 @@ Dependency Graph
      "G.74" -> "G.30";
      "G.32" -> "G.31";
      "G.41" -> "G.32";
+     "G.71" -> "G.32";
      "G.97" -> "G.32";
      "G.34" -> "G.33";
      "G.37" -> "G.33";
@@ -528,6 +477,7 @@ Dependency Graph
      "G.72" -> "G.36";
      "G.74" -> "G.36";
      "G.79" -> "G.36";
+     "G.87" -> "G.36";
      "G.39" -> "G.37";
      "G.40" -> "G.37";
      "G.56" -> "G.37";
@@ -564,6 +514,7 @@ Dependency Graph
      "G.74" -> "G.52";
      "G.75" -> "G.52";
      "G.79" -> "G.52";
+     "G.57" -> "G.53";
      "G.58" -> "G.53";
      "G.60" -> "G.53";
      "G.56" -> "G.55";
@@ -622,6 +573,7 @@ Dependency Graph
      "G.97" -> "G.74";
      "G.79" -> "G.75";
      "G.87" -> "G.75";
+     "G.97" -> "G.75";
      "G.78" -> "G.76";
      "G.78" -> "G.77";
      "G.79" -> "G.78";

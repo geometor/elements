@@ -12,6 +12,7 @@
 :tags: book-i, point, segment, angle, quadrilateral, polygon, straight-line, rectilineal-angle, trilateral, plane-angle, parallel-straight-lines, right-angle, diameter, parallelogram, equality
 :dependencies: G.1, G.4, G.12, G.14, G.16, G.18, G.22, G.30, G.33, G.40, G.52, G.55, G.56, G.58, G.61, G.71, G.72
 :excerpt: Apply to a given segment, in a given angle, a parallelogram equal in area to a given triangle.
+:youtube_id: P_7dqpeLLys
 
 .. _G.73:
 .. _I.44:
@@ -27,92 +28,40 @@ G.73 apply a parallelogram equal to a triangle on a segment
 
 .. signature:: problem
 
-   | :fn:`apply_parallelogram_on_segment <G.73>`\ (:g:`/ A B / <g1:/ A B />`, :g:`< C > <g1:< C >>`, :g:`< D ) <g1:< D )>`) → :g:`< A B M ) <g1:< A B M )>`
-   | **given** :g:`/ A B / <g1:/ A B />` , :g:`< C > <g1:< C >>` and :g:`< D ) <g1:< D )>`
-   | **construct** apply to :g:`/ A B / <g1:/ A B />`, in an angle :eq:`= <g1:< A B M ) = g1:< D )>` to :g:`< D ) <g1:< D )>`, a parallelogram :eq:`equal <g1:< A B M L > = g1:< C >>` to the given triangle :g:`< C > <g1:< C >>`
+   | :fn:`apply_parallelogram_on_segment <G.73>`\ (:g:`/ A B / <g1:/ A B />`, :g:`< C > <g1:< C >>`, :g:`< D ) <g1:< D )>`) → :g:`< A B M L > <g1:< A B M L >>`
+   | **given** :g:`/ A B / <g1:/ A B />`, :g:`< C > <g1:< C >>`, :g:`< D ) <g1:< D )>`
+   | **construct** :g:`< A B M L > <g1:< A B M L >>` :eq:`= <g1:< A B M L > = g1:< C >>` :g:`< C > <g1:< C >>`, :g:`< A B M ) <g1:< A B M )>` :eq:`= <g1:< A B M ) = g1:< D )>` :g:`< D ) <g1:< D )>`
 
 .. picture:: g1.svg
    :alt: Folio 0356 Figure 1 - Proposition 44
 
 .. step:: given
 
-   :g:`/ A B / <g1:/ A B />` , :g:`< C > <g1:< C >>` and :g:`< D ) <g1:< D )>`
+   :g:`/ A B / <g1:/ A B />`, :g:`< C > <g1:< C >>`, :g:`< D ) <g1:< D )>`
 
 .. step:: construct
 
-   :fn:`parallelogram_from_triangle <G.71>`\ (:g:`< C > <g1:< C >>`, :g:`< D ) <g1:< D )>`) → :g:`< B E F G > <g1:< B E F G >>` (:eq:`equal <g1:< B E F G > = g1:< C >>`, :g:`< E B G ) <g1:< E B G )>` :eq:`equal <g1:< E B G ) = g1:< D )>`)
+   :fn:`parallelogram_from_triangle <G.71>`\ (:g:`< C > <g1:< C >>`, :g:`< D ) <g1:< D )>`) → :g:`< B E F G > <g1:< B E F G >>` (:eq:`= <g1:< B E F G > = g1:< C >>` :g:`< C > <g1:< C >>`, :g:`< E B G ) <g1:< E B G )>` :eq:`= <g1:< E B G ) = g1:< D )>` :g:`< D ) <g1:< D )>`), :fn:`extend <G.18>`\ (:g:`/ F G / <g1:/ F G />`) → :g:`H <g1:H>`, :fn:`parallel_line <G.58>`\ (:g:`A <g1:A>`, :g:`/ B G / <g1:/ B G />`) → :g:`/ A H / <g1:/ A H />`, :fn:`segment <G.14>`\ (:g:`H <g1:H>`, :g:`B <g1:B>`) → :g:`/ H B / <g1:/ H B />`
+
+.. step:: assert ∵ parallel_transversal_angles, parallel_postulate <G.56, G.55>
+
+   :g:`/ A H / <g1:/ A H />` ∥ :g:`/ E F / <g1:/ E F />` → :g:`< A H F ) <g1:< A H F )>` + :g:`< H F E ) <g1:< H F E )>` = 2∟ → :g:`< B H G ) <g1:< B H G )>` + :g:`< G F E ) <g1:< G F E )>` < 2∟ → :g:`[ H B ] <g1:/ H K />` ∩ :g:`[ F E ] <g1:/ F K />` ≠ ∅
 
 .. step:: construct
 
-   Let it be placed so that :g:`/ B E / <g1:/ B E />` is in a segment with :g:`/ A B / <g1:/ A B />`
+   :fn:`extend <G.18>`\ (:g:`/ H B / <g1:/ H B />`, :g:`/ F E / <g1:/ F E />`) → :g:`K <g1:K>`, :fn:`parallel_line <G.58>`\ (:g:`K <g1:K>`, :g:`/ E A / <g1:/ E A />`) → :g:`/ K L / <g1:/ K L />`, :fn:`extend <G.18>`\ (:g:`/ H A / <g1:/ H A />`, :g:`/ G B / <g1:/ G B />`) → :g:`L <g1:L>`, :g:`M <g1:M>`
 
-.. step:: construct
+.. step:: assert ∵ parallelogram_complements, equal_transitive <G.72, G.16>
 
-   :fn:`extend <G.18>`\ (:g:`/ F G / <g1:/ F G />`) → :g:`H <g1:H>`
+   :g:`< H L K F > <g1:< H L K F >>`, :g:`/ H K / <g1:/ H K />` → :g:`< A B M L > <g1:< A B M L >>` :eq:`= <g1:< A B M L > = g1:< B E F G >>` :g:`< B E F G > <g1:< B E F G >>` :eq:`= <g1:< B E F G > = g1:< C >>` :g:`< C > <g1:< C >>` → :g:`< A B M L > <g1:< A B M L >>` :eq:`= <g1:< A B M L > = g1:< C >>` :g:`< C > <g1:< C >>`
 
-.. step:: construct
+.. step:: assert ∵ vertical_angles_equal, equal_transitive <G.40, G.16>
 
-   :fn:`parallel_line <G.58>`\ (:g:`A <g1:A>`, :g:`/ B G / <g1:/ B G />` or :g:`/ E F / <g1:/ E F />`) → :g:`/ A H / <g1:/ A H />`
+   :g:`< A B M ) <g1:< A B M )>` :eq:`= <g1:< G B E ) = g1:< A B M )>` :g:`< E B G ) <g1:< E B G )>` :eq:`= <g1:< G B E ) = g1:< D )>` :g:`< D ) <g1:< D )>` → :g:`< A B M ) <g1:< A B M )>` :eq:`= <g1:< A B M ) = g1:< D )>` :g:`< D ) <g1:< D )>`
 
-.. step:: construct
+.. step:: conclude ∵ parallelogram_complements <G.72>
 
-   :fn:`segment <G.14>`\ (:g:`H <g1:H>`, :g:`B <g1:B>`) → :g:`/ H B / <g1:/ H B />`
-
-.. step:: assert ∵ parallel_transversal_angles <G.56>
-
-   :g:`/ H F / <g1:/ H F />` falls upon the parallels :g:`/ A H / <g1:/ A H />`, :g:`/ E F / <g1:/ E F />` → :g:`< A H F ) <g1:< A H F )>`, :g:`< H F E ) <g1:< H F E )>` are equal to two right angles
-
-.. step:: assert
-
-   :g:`< B H G ) <g1:< B H G )>`, :g:`< G F E ) <g1:< G F E )>` are less than two right angles
-
-.. step:: assert ∵ parallel_postulate <G.55>
-
-   segments produced indefinitely from angles less than two :term:`right angles <G.33>` meet
-
-.. step:: assert
-
-   :g:`/ H B / <g1:/ H B />`, :g:`/ F E / <g1:/ F E />`, when produced, will meet
-
-.. step:: construct
-
-   Let them be produced and meet at :g:`K <g1:K>`
-
-.. step:: construct
-
-   :fn:`parallel_line <G.58>`\ (:g:`K <g1:K>`, :g:`/ E A / <g1:/ E A />` or :g:`/ F H / <g1:/ F H />`) → :g:`/ K L / <g1:/ K L />`
-
-.. step:: construct
-
-   :fn:`extend <G.18>`\ (:g:`/ H A / <g1:/ H A />`, :g:`/ G B / <g1:/ G B />`) → :g:`L <g1:L>`, :g:`M <g1:M>`
-
-.. step:: assert
-
-   Then :g:`< H L K F > <g1:< H L K F >>` is a parallelogram, :g:`/ H K / <g1:/ H K />` is its :term:`diameter <G.61>`, and :g:`< H A B G > <g1:< H A B G >>`, :g:`< B M K E > <g1:< B M K E >>` are parallelograms, and :g:`< A B M L > <g1:< A B M L >>`, :g:`< B E F G > <g1:< B E F G >>` the so-called complements, about :g:`/ H K / <g1:/ H K />`
-
-.. step:: assert ∵ parallelogram_complements <G.72>
-
-   :g:`< A B M L > <g1:< A B M L >>` is :eq:`equal <g1:< A B M L > = g1:< B E F G >>` to :g:`< B E F G > <g1:< B E F G >>`
-
-.. step:: assert
-
-   :g:`< B E F G > <g1:< B E F G >>` is :eq:`equal <g1:< B E F G > = g1:< C >>` to :g:`< C > <g1:< C >>`
-
-.. step:: assert ∵ equal_transitive <G.16>
-
-   :g:`< A B M L > <g1:< A B M L >>` is also :eq:`equal <g1:< A B M L > = g1:< C >>` to :g:`< C > <g1:< C >>`
-
-.. step:: assert ∵ vertical_angles_equal <G.40>
-
-   since :g:`< G B E ) <g1:< G B E )>` :eq:`= <g1:< G B E ) = g1:< A B M )>` :g:`< A B M ) <g1:< A B M )>`
-
-.. step:: assert
-
-   While :g:`< G B E ) <g1:< G B E )>` :eq:`= <g1:< G B E ) = g1:< D )>` :g:`< D ) <g1:< D )>`,
-
-.. step:: conclude
-
-   :g:`< A B M ) <g1:< A B M )>` :eq:`= <g1:< A B M ) = g1:< D )>` :g:`< D ) <g1:< D )>`
+   :g:`< A B M L > <g1:< A B M L >>` :eq:`= <g1:< A B M L > = g1:< C >>` :g:`< C > <g1:< C >>`, :g:`< A B M ) <g1:< A B M )>` :eq:`= <g1:< A B M ) = g1:< D )>` :g:`< D ) <g1:< D )>`
 
 Dependency Graph
 ----------------
@@ -227,7 +176,6 @@ Dependency Graph
      "G.55" -> "G.2";
      "G.56" -> "G.2";
      "G.58" -> "G.2";
-     "G.65" -> "G.2";
      "G.4" -> "G.3";
      "G.6" -> "G.3";
      "G.8" -> "G.3";
@@ -336,6 +284,7 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.51" -> "G.14";
      "G.58" -> "G.14";
      "G.60" -> "G.14";
@@ -352,9 +301,14 @@ Dependency Graph
      "G.21" -> "G.16";
      "G.37" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.56" -> "G.16";
      "G.64" -> "G.16";
      "G.65" -> "G.16";
+     "G.66" -> "G.16";
+     "G.67" -> "G.16";
+     "G.70" -> "G.16";
+     "G.71" -> "G.16";
      "G.73" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
@@ -364,6 +318,7 @@ Dependency Graph
      "G.25" -> "G.18";
      "G.41" -> "G.18";
      "G.45" -> "G.18";
+     "G.53" -> "G.18";
      "G.58" -> "G.18";
      "G.66" -> "G.18";
      "G.67" -> "G.18";
@@ -381,6 +336,7 @@ Dependency Graph
      "G.43" -> "G.21";
      "G.45" -> "G.21";
      "G.47" -> "G.21";
+     "G.51" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
      "G.28" -> "G.22";
@@ -418,11 +374,14 @@ Dependency Graph
      "G.62" -> "G.24";
      "G.64" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.51" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -433,6 +392,7 @@ Dependency Graph
      "G.73" -> "G.30";
      "G.32" -> "G.31";
      "G.41" -> "G.32";
+     "G.71" -> "G.32";
      "G.34" -> "G.33";
      "G.37" -> "G.33";
      "G.38" -> "G.33";
@@ -518,5 +478,6 @@ Required for
 .. toctree::
    :hidden:
 
+   video
    code
    heath

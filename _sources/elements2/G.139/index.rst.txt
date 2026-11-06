@@ -2,7 +2,7 @@
 :number: 139
 :canonical_id: G.139
 :original_id: III.31
-:title: G.139 thales semicircle theorem
+:title: G.139 Thales' theorem and angles in circle segments
 :volume: II
 :book: III
 :type: prop
@@ -10,108 +10,53 @@
 :categories: theorem, proof, plane-geometry, circles
 :category: theorem, proof, plane-geometry, circles
 :tags: book-iii, point, segment, circle, angle, triangle, quadrilateral, angle-in-segment, right-angle, plane-angle, diameter, centre, semicircle, trilateral, line, straight-line, plane, equality
-:dependencies: G.4, G.10, G.12, G.14, G.22, G.25, G.33, G.42, G.59, G.61, G.96, G.125, G.138
-:excerpt: In a circle the angle in the semicircle is right, that in a greater segment less than a right angle, and that in a less segment greater than a right angle; and further the angle of the greater segment is greater than a right angle, and the angle of the less segment less than a right angle.
+:dependencies: G.4, G.10, G.14, G.16, G.18, G.22, G.25, G.26, G.33, G.36, G.42, G.59, G.61, G.76, G.77, G.96, G.125, G.138
+:excerpt: In a circle, the angle in a semicircle is right, the angle in a greater segment is acute, and the angle in a lesser segment is obtuse.
 
 .. _G.139:
 .. _III.31:
 
-G.139 thales semicircle theorem
-===============================
+G.139 Thales' theorem and angles in circle segments
+===================================================
 
 .. rubric:: `III.31 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/31/>`_
 
 .. enunciation::
 
-   In a :term:`circle <G.10>` the :term:`angle in the semicircle <G.138>` is right, that in a greater :term:`segment <G.4>` less than a :term:`right angle <G.33>`, and that in a less segment greater than a right angle; and further the :term:`angle <G.22>` of the greater segment is greater than a right angle, and the angle of the less segment less than a right angle.
+   In a :term:`circle <G.10>`, the :term:`angle in a semicircle <G.138>` is right, the :term:`angle <G.22>` in a greater :term:`segment <G.4>` is :term:`acute <G.77>`, and the angle in a lesser segment is :term:`obtuse <G.76>`.
 
 .. signature:: theorem
 
-   | :fn:`thales_semicircle_theorem <G.139>`\ ()
-   | **prove** :g:`< B A C ) <g1:< B A C )>` in the semicircle :g:`( B A C ) <g1:( B A C )>` is right, :g:`< A B C ) <g1:< A B C )>` in the segment :g:`( A B C ) <g1:( A B C )>` greater than the semicircle < a right angle, and :g:`< A D C ) <g1:< A D C )>` in the segment :g:`( A D C ) <g1:( A D C )>` less than the semicircle > a right angle
+   | :fn:`thales_semicircle_theorem <G.139>`\ (:g:`( A B C D ) <g1:( A B C D )>`, :g:`/ B C / <g1:/ B C />`, :g:`E <g1:E>`)
+   | **given** :g:`( A B C D ) <g1:( A B C D )>`, diameter :g:`/ B C / <g1:/ B C />`, center :g:`E <g1:E>`, chords :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />`, :g:`/ A D / <g1:/ A D />`, :g:`/ D C / <g1:/ D C />`
+   | **prove** :g:`< B A C ) <g1:< B A C )>` = ∟, :g:`< A B C ) <g1:< A B C )>` < ∟, :g:`< A D C ) <g1:< A D C )>` > ∟
 
 .. picture:: g1.svg
    :alt: Diagram
 
-.. step:: construct
+.. step:: given ∵ circle_radii, circle_diameter, semicircle_def, angle_segment_angle_def <G.10, G.61, G.96, G.138>
 
-   :fn:`segment <G.14>`\ () → :g:`( A B C D ) <g1:( A B C D )>`, :fn:`segment <G.14>`\ (:g:`B <g1:B>`, :g:`C <g1:C>`) → :g:`/ B C / <g1:/ B C />`, :fn:`segment <G.14>`\ () → :g:`E <g1:E>`, :fn:`segment <G.14>`\ (:g:`B <g1:B>`, :g:`A <g1:A>`) → :g:`/ B A / <g1:/ B A />`, :fn:`segment <G.14>`\ (:g:`A <g1:A>`, :g:`C <g1:C>`) → :g:`/ A C / <g1:/ A C />`, :fn:`segment <G.14>`\ (:g:`A <g1:A>`, :g:`D <g1:D>`) → :g:`/ A D / <g1:/ A D />`, :fn:`segment <G.14>`\ (:g:`D <g1:D>`, :g:`C <g1:C>`) → :g:`/ D C / <g1:/ D C />`
+   :g:`( A B C D ) <g1:( A B C D )>`, diameter :g:`/ B C / <g1:/ B C />`, center :g:`E <g1:E>`, semicircle :g:`( B A C ) <g1:( B A C )>`, greater segment :g:`( A B C ) <g1:( A B C )>`, lesser segment :g:`( A D C ) <g1:( A D C )>`
 
-.. step:: construct
+.. step:: construct ∵ segment, extend <G.14, G.18>
 
-   :fn:`segment <G.14>`\ (:g:`A <g1:A>`, :g:`E <g1:E>`) → :g:`/ A E / <g1:/ A E />`
+   :fn:`segment <G.14>`\ (:g:`A <g1:A>`, :g:`E <g1:E>`) → :g:`/ A E / <g1:/ A E />`, :fn:`extend <G.18>`\ (:g:`/ B A / <g1:/ B A />`, :g:`F <g1:F>`) → :g:`/ B F / <g1:/ B F />`
 
-.. step:: assert
+.. step:: assert ∵ circle_radii, isosceles_base_angles, add_equals <G.10, G.25, G.36>
 
-   Let :g:`/ B A / <g1:/ B A />` be carried through to :g:`F <g1:F>`
+   :g:`/ B E / <g1:/ B E />` :eq:`= <g1:/ B E / = g1:/ E A />` :g:`/ E A / <g1:/ E A />` :eq:`= <g1:/ C E / = g1:/ E A />` :g:`/ C E / <g1:/ C E />` → :g:`< A B E ) <g1:< A B E )>` :eq:`= <g1:< A B E ) = g1:< B A E )>` :g:`< B A E ) <g1:< B A E )>`, :g:`< A C E ) <g1:< A C E )>` :eq:`= <g1:< A C E ) = g1:< C A E )>` :g:`< C A E ) <g1:< C A E )>` → :g:`< B A C ) <g1:< B A C )>` = :g:`< A B C ) <g1:< A B C )>` + :g:`< A C B ) <g1:< A C B )>`
 
-.. step:: assert ∵ isosceles_base_angles <G.25>
+.. step:: assert ∵ triangle_angle_sum, equal_transitive, right_angle_perpendicular <G.59, G.16, G.33>
 
-   :g:`/ B E / <g1:/ B E />` :eq:`= <g1:/ B E / = g1:/ E A />` :g:`/ E A / <g1:/ E A />` → :g:`< A B E ) <g1:< A B E )>` :eq:`= <g1:< A B E ) = g1:< B A E )>` :g:`< B A E ) <g1:< B A E )>`
+   :g:`< F A C ) <g1:< F A C )>` = :g:`< A B C ) <g1:< A B C )>` + :g:`< A C B ) <g1:< A C B )>` → :g:`< B A C ) <g1:< B A C )>` :eq:`= <g1:< B A C ) = g1:< F A C )>` :g:`< F A C ) <g1:< F A C )>` = ∟
 
-.. step:: assert ∵ isosceles_base_angles <G.25>
+.. step:: assert ∵ two_angles_less_than_two_right, cyclic_quadrilateral_opposite_angles <G.42, G.125>
 
-   :g:`/ C E / <g1:/ C E />` :eq:`= <g1:/ C E / = g1:/ E A />` :g:`/ E A / <g1:/ E A />` → :g:`< A C E ) <g1:< A C E )>` :eq:`= <g1:< A C E ) = g1:< C A E )>` :g:`< C A E ) <g1:< C A E )>`
+   :g:`< B A C ) <g1:< B A C )>` + :g:`< A B C ) <g1:< A B C )>` < 2∟ → :g:`< A B C ) <g1:< A B C )>` < ∟; :g:`< A B C ) <g1:< A B C )>` + :g:`< A D C ) <g1:< A D C )>` = 2∟ → :g:`< A D C ) <g1:< A D C )>` > ∟
 
-.. step:: assert
+.. step:: conclude ∵ whole_greater_than_part <G.26>
 
-   :g:`< B A C ) <g1:< B A C )>` is equal to the two angles :g:`< A B C ) <g1:< A B C )>`, :g:`< A C B ) <g1:< A C B )>`
-
-.. step:: assert ∵ triangle_angle_sum <G.59>
-
-   :g:`< F A C ) <g1:< F A C )>` exterior to :g:`< A B C > <g1:< A B C >>` is also equal to the two angles :g:`< A B C ) <g1:< A B C )>`, :g:`< A C B ) <g1:< A C B )>`
-
-.. step:: assert
-
-   :g:`< B A C ) <g1:< B A C )>` :eq:`= <g1:< B A C ) = g1:< F A C )>` :g:`< F A C ) <g1:< F A C )>`
-
-.. step:: assert ∵ right_angle_perpendicular <G.33>
-
-   each is right
-
-.. step:: assert
-
-   :g:`< B A C ) <g1:< B A C )>` in the semicircle :g:`( B A C ) <g1:( B A C )>` is right
-
-.. step:: assert ∵ two_angles_less_than_two_right <G.42>
-
-   Next, since in :g:`< A B C > <g1:< A B C >>` the two angles :g:`< A B C ) <g1:< A B C )>`, :g:`< B A C ) <g1:< B A C )>` are less than two right angles, and :g:`< B A C ) <g1:< B A C )>` is a right angle
-
-.. step:: assert
-
-   :g:`< A B C ) <g1:< A B C )>` < a right angle
-
-.. step:: assert
-
-   it is the angle in the segment :g:`( A B C ) <g1:( A B C )>` greater than the :term:`semicircle <G.96>`
-
-.. step:: assert ∵ opposite_angles_quadrilaterals <G.125>
-
-   Next, since :g:`< A B C D > <g1:< A B C D >>` is a :term:`quadrilateral <G.12>` in a circle, and the opposite angles of quadrilaterals in circles are equal to two right angles, while :g:`< A B C ) <g1:< A B C )>` < a right angle, therefore :g:`< A D C ) <g1:< A D C )>` which remains > a right angle
-
-.. step:: assert
-
-   it is the angle in the segment :g:`( A D C ) <g1:( A D C )>` less than the semicircle
-
-.. step:: assert
-
-   I say further that the angle of the greater segment, namely that contained by the arc :g:`( A B C ) <g1:( A B C )>` and :g:`/ A C / <g1:/ A C />`, > a right angle
-
-.. step:: assert
-
-   the angle of the less segment, namely that contained by the arc :g:`( A D C ) <g1:( A D C )>` and :g:`/ A C / <g1:/ A C />`, < a right angle
-
-.. step:: assert
-
-   This is at once manifest
-
-.. step:: assert
-
-   the angle contained by :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />` is right → the angle contained by the arc :g:`( A B C ) <g1:( A B C )>` and :g:`/ A C / <g1:/ A C />` > a right angle
-
-.. step:: conclude
-
-   the angle contained by :g:`/ A C / <g1:/ A C />`, :g:`/ A F / <g1:/ A F />` is right → the angle contained by :g:`/ C A / <g1:/ C A />` and the arc :g:`( A D C ) <g1:( A D C )>` < a right angle
+   :g:`< B A C ) <g1:< B A C )>` = ∟, :g:`< A B C ) <g1:< A B C )>` < ∟, :g:`< A D C ) <g1:< A D C )>` > ∟; angle(:g:`( A B C ) <g1:( A B C )>`, :g:`/ A C / <g1:/ A C />`) > ∟, angle(:g:`( A D C ) <g1:( A D C )>`, :g:`/ C A / <g1:/ C A />`) < ∟
 
 Dependency Graph
 ----------------
@@ -174,13 +119,16 @@ Dependency Graph
      "G.58" [label="G.58", tooltip="G.58 (I.31): Construct through a given point a line parallel to a given line.", fillcolor="#222244", URL="../G.58/index.html", target="_top"];
      "G.59" [label="G.59", tooltip="G.59 (I.32): In any triangle, an exterior angle equals the sum of the two opposite interior angles, and the three interior angles sum to two right angles.", fillcolor="#222244", URL="../G.59/index.html", target="_top"];
      "G.61" [label="G.61", tooltip="G.61 (I.def.17): A diameter of a circle is any segment drawn through the center and terminated in both directions by the arc of the circle; it bisects the circle.", fillcolor="#224422", URL="../G.61/index.html", target="_top"];
+     "G.76" [label="G.76", tooltip="G.76 (I.def.11): An obtuse angle is greater than a right angle.", fillcolor="#224422", URL="../G.76/index.html", target="_top"];
+     "G.77" [label="G.77", tooltip="G.77 (I.def.12): An acute angle is less than a right angle.", fillcolor="#224422", URL="../G.77/index.html", target="_top"];
      "G.96" [label="G.96", tooltip="G.96 (I.def.18): A semicircle is the figure contained by a diameter and the arc cut off by it.", fillcolor="#224422", URL="../G.96/index.html", target="_top"];
+     "G.98" [label="G.98", tooltip="G.98 (III.1): Find the center of a given circle.", fillcolor="#222244", URL="../G.98/index.html", target="_top"];
      "G.122" [label="G.122", tooltip="G.122 (III.def.10): Asector of a circle is thefigure which, when anangle is constructed at thecenter of thecircle, is contained by thesegments containing the angle and the arc cut off by them.", fillcolor="#224422", URL="../G.122/index.html", target="_top"];
-     "G.123" [label="G.123", tooltip="G.123 (III.20): In a circle the angle at the center is double of the angle at the arc, when the angles have the same arc as base.", fillcolor="#222244", URL="../G.123/index.html", target="_top"];
-     "G.124" [label="G.124", tooltip="G.124 (III.21): In a circle the angles in the same segment are equal.", fillcolor="#222244", URL="../G.124/index.html", target="_top"];
-     "G.125" [label="G.125", tooltip="G.125 (III.22): The opposite angles of quadrilaterals in circles are equal to two right angles.", fillcolor="#222244", URL="../G.125/index.html", target="_top"];
+     "G.123" [label="G.123", tooltip="G.123 (III.20): In a circle, the angle at the center is double the angle at the circumference when the angles have the same arc as base.", fillcolor="#222244", URL="../G.123/index.html", target="_top"];
+     "G.124" [label="G.124", tooltip="G.124 (III.21): In a circle, angles in the same segment are equal to one another.", fillcolor="#222244", URL="../G.124/index.html", target="_top"];
+     "G.125" [label="G.125", tooltip="G.125 (III.22): The opposite angles of any quadrilateral inscribed in a circle sum to two right angles.", fillcolor="#222244", URL="../G.125/index.html", target="_top"];
      "G.138" [label="G.138", tooltip="G.138 (III.def.8): Anangle in a segment is theangle which, when apoint is taken on the arc of the segment andsegments are joined from it to theextremities of the segment which is thebase of the segme...", fillcolor="#224422", URL="../G.138/index.html", target="_top"];
-     "G.139" [label="G.139", tooltip="G.139 (III.31): In a circle the angle in the semicircle is right, that in a greater segment less than a right angle, and that in a less segment greater than a right angle; and further the angle of...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.139" [label="G.139", tooltip="G.139 (III.31): In a circle, the angle in a semicircle is right, the angle in a greater segment is acute, and the angle in a lesser segment is obtuse.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -261,8 +209,8 @@ Dependency Graph
      "G.58" -> "G.4";
      "G.59" -> "G.4";
      "G.61" -> "G.4";
+     "G.98" -> "G.4";
      "G.122" -> "G.4";
-     "G.123" -> "G.4";
      "G.124" -> "G.4";
      "G.138" -> "G.4";
      "G.139" -> "G.4";
@@ -286,6 +234,7 @@ Dependency Graph
      "G.47" -> "G.10";
      "G.61" -> "G.10";
      "G.96" -> "G.10";
+     "G.98" -> "G.10";
      "G.122" -> "G.10";
      "G.123" -> "G.10";
      "G.124" -> "G.10";
@@ -298,9 +247,9 @@ Dependency Graph
      "G.47" -> "G.11";
      "G.61" -> "G.11";
      "G.96" -> "G.11";
+     "G.98" -> "G.11";
      "G.122" -> "G.11";
      "G.123" -> "G.11";
-     "G.124" -> "G.11";
      "G.13" -> "G.12";
      "G.17" -> "G.12";
      "G.20" -> "G.12";
@@ -321,7 +270,6 @@ Dependency Graph
      "G.53" -> "G.12";
      "G.59" -> "G.12";
      "G.125" -> "G.12";
-     "G.139" -> "G.12";
      "G.17" -> "G.13";
      "G.25" -> "G.13";
      "G.17" -> "G.14";
@@ -334,7 +282,9 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.58" -> "G.14";
+     "G.98" -> "G.14";
      "G.123" -> "G.14";
      "G.124" -> "G.14";
      "G.125" -> "G.14";
@@ -348,7 +298,12 @@ Dependency Graph
      "G.21" -> "G.16";
      "G.37" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.56" -> "G.16";
+     "G.59" -> "G.16";
+     "G.124" -> "G.16";
+     "G.125" -> "G.16";
+     "G.139" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
@@ -358,12 +313,15 @@ Dependency Graph
      "G.41" -> "G.18";
      "G.42" -> "G.18";
      "G.45" -> "G.18";
+     "G.53" -> "G.18";
      "G.58" -> "G.18";
      "G.59" -> "G.18";
      "G.123" -> "G.18";
+     "G.139" -> "G.18";
      "G.20" -> "G.19";
      "G.25" -> "G.19";
      "G.40" -> "G.19";
+     "G.123" -> "G.19";
      "G.21" -> "G.20";
      "G.25" -> "G.21";
      "G.31" -> "G.21";
@@ -394,6 +352,8 @@ Dependency Graph
      "G.56" -> "G.22";
      "G.58" -> "G.22";
      "G.59" -> "G.22";
+     "G.76" -> "G.22";
+     "G.77" -> "G.22";
      "G.122" -> "G.22";
      "G.123" -> "G.22";
      "G.124" -> "G.22";
@@ -406,21 +366,27 @@ Dependency Graph
      "G.32" -> "G.24";
      "G.41" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.123" -> "G.25";
      "G.139" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.98" -> "G.26";
+     "G.139" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
      "G.48" -> "G.29";
+     "G.98" -> "G.29";
      "G.31" -> "G.30";
      "G.48" -> "G.30";
      "G.32" -> "G.31";
      "G.41" -> "G.32";
+     "G.98" -> "G.32";
      "G.34" -> "G.33";
      "G.37" -> "G.33";
      "G.38" -> "G.33";
@@ -429,11 +395,20 @@ Dependency Graph
      "G.55" -> "G.33";
      "G.56" -> "G.33";
      "G.59" -> "G.33";
+     "G.76" -> "G.33";
+     "G.77" -> "G.33";
+     "G.98" -> "G.33";
      "G.125" -> "G.33";
      "G.139" -> "G.33";
      "G.37" -> "G.34";
+     "G.98" -> "G.34";
      "G.37" -> "G.36";
+     "G.42" -> "G.36";
      "G.56" -> "G.36";
+     "G.59" -> "G.36";
+     "G.123" -> "G.36";
+     "G.125" -> "G.36";
+     "G.139" -> "G.36";
      "G.40" -> "G.37";
      "G.42" -> "G.37";
      "G.56" -> "G.37";
@@ -441,6 +416,7 @@ Dependency Graph
      "G.40" -> "G.38";
      "G.41" -> "G.40";
      "G.56" -> "G.40";
+     "G.42" -> "G.41";
      "G.43" -> "G.41";
      "G.53" -> "G.41";
      "G.139" -> "G.42";
@@ -462,7 +438,10 @@ Dependency Graph
      "G.139" -> "G.59";
      "G.96" -> "G.61";
      "G.139" -> "G.61";
+     "G.139" -> "G.76";
+     "G.139" -> "G.77";
      "G.139" -> "G.96";
+     "G.124" -> "G.98";
      "G.123" -> "G.122";
      "G.124" -> "G.123";
      "G.125" -> "G.124";

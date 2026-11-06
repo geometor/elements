@@ -1,12 +1,12 @@
 :canonical_id: G.90
 :original_id: II.8
-:title: G.90 four rectangles plus square
+:title: G.90 four rectangles plus square on difference
 :volume: I
 :book: II
 :type: prop
 
-G.90 four rectangles plus square — Heath
-========================================
+G.90 four rectangles plus square on difference — Heath
+======================================================
 
 .. rubric:: `II.8 <https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/08/>`_
 
@@ -140,11 +140,17 @@ Dependency Graph
      "G.38" [label="G.38", tooltip="G.38 (I.post.4): All right angles are equal.", fillcolor="#444422", URL="../G.38/index.html", target="_top"];
      "G.40" [label="G.40", tooltip="G.40 (I.15): Intersecting lines make their vertical angles equal.", fillcolor="#222244", URL="../G.40/index.html", target="_top"];
      "G.41" [label="G.41", tooltip="G.41 (I.16): In any triangle, if one side is extended, the exterior angle is greater than either opposite interior angle.", fillcolor="#222244", URL="../G.41/index.html", target="_top"];
+     "G.43" [label="G.43", tooltip="G.43 (I.18): In any triangle, the greater side subtends the greater angle.", fillcolor="#222244", URL="../G.43/index.html", target="_top"];
+     "G.44" [label="G.44", tooltip="G.44 (I.19): In any triangle, the greater angle is subtended by the greater side.", fillcolor="#222244", URL="../G.44/index.html", target="_top"];
+     "G.45" [label="G.45", tooltip="G.45 (I.20): In any triangle, the sum of any two sides is greater than the remaining side.", fillcolor="#222244", URL="../G.45/index.html", target="_top"];
+     "G.47" [label="G.47", tooltip="G.47 (I.22): Construct a triangle from three segments equal to three given segments satisfying the triangle inequality.", fillcolor="#222244", URL="../G.47/index.html", target="_top"];
+     "G.48" [label="G.48", tooltip="G.48 (I.23): Construct on a given line at a given point an angle equal to a given angle.", fillcolor="#222244", URL="../G.48/index.html", target="_top"];
      "G.51" [label="G.51", tooltip="G.51 (I.26): Triangles with two angles and one corresponding side equal are congruent (ASA / AAS).", fillcolor="#222244", URL="../G.51/index.html", target="_top"];
      "G.52" [label="G.52", tooltip="G.52 (I.def.23): Parallel lines are lines in the same plane which, extended indefinitely in both directions, do not meet.", fillcolor="#224422", URL="../G.52/index.html", target="_top"];
      "G.53" [label="G.53", tooltip="G.53 (I.27): If a transversal cutting two lines makes the alternate interior angles equal, the lines are parallel.", fillcolor="#222244", URL="../G.53/index.html", target="_top"];
      "G.55" [label="G.55", tooltip="G.55 (I.post.5): Two lines intersected by a transversal with interior angles on one side summing to less than two right angles meet on that side.", fillcolor="#444422", URL="../G.55/index.html", target="_top"];
      "G.56" [label="G.56", tooltip="G.56 (I.29): A transversal cutting parallel lines makes alternate interior angles equal, exterior and opposite interior angles equal, and same-side interior angles supplementary.", fillcolor="#222244", URL="../G.56/index.html", target="_top"];
+     "G.58" [label="G.58", tooltip="G.58 (I.31): Construct through a given point a line parallel to a given line.", fillcolor="#222244", URL="../G.58/index.html", target="_top"];
      "G.60" [label="G.60", tooltip="G.60 (I.33): Segments joining the endpoints of equal and parallel segments in the same directions are themselves equal and parallel.", fillcolor="#222244", URL="../G.60/index.html", target="_top"];
      "G.61" [label="G.61", tooltip="G.61 (I.def.17): A diameter of a circle is any segment drawn through the center and terminated in both directions by the arc of the circle; it bisects the circle.", fillcolor="#224422", URL="../G.61/index.html", target="_top"];
      "G.62" [label="G.62", tooltip="G.62 (I.34): In a parallelogram, opposite sides and opposite angles are equal, and the diagonal bisects the area.", fillcolor="#222244", URL="../G.62/index.html", target="_top"];
@@ -152,9 +158,10 @@ Dependency Graph
      "G.64" [label="G.64", tooltip="G.64 (I.35): Parallelograms on the same base and in the same parallels are equal in area.", fillcolor="#222244", URL="../G.64/index.html", target="_top"];
      "G.65" [label="G.65", tooltip="G.65 (I.36): Parallelograms on equal bases and in the same parallels are equal in area.", fillcolor="#222244", URL="../G.65/index.html", target="_top"];
      "G.72" [label="G.72", tooltip="G.72 (I.43): In any parallelogram, the complements of the parallelograms about the diagonal are equal in area.", fillcolor="#222244", URL="../G.72/index.html", target="_top"];
+     "G.75" [label="G.75", tooltip="G.75 (I.46): Construct a square on a given segment.", fillcolor="#222244", URL="../G.75/index.html", target="_top"];
      "G.81" [label="G.81", tooltip="G.81 (II.def.1): Any rectangular parallelogram is said to becontained by the twosegments containing theright angle.", fillcolor="#224422", URL="../G.81/index.html", target="_top"];
      "G.86" [label="G.86", tooltip="G.86 (II.def.2): And in any parallelogrammic area let any one whatever of the parallelograms about itsdiameter with the two complements be called agnomon.", fillcolor="#224422", URL="../G.86/index.html", target="_top"];
-     "G.90" [label="G.90", tooltip="G.90 (II.8): If a segment be cut at random, four times the rectangle contained by the whole and one of the segments together with the square on the remaining segment is equal to the square desc...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.90" [label="G.90", tooltip="G.90 (II.8): If a segment is cut at random, four times the rectangle contained by the whole and one of the parts together with the square on the remaining part equals the square on the whole an...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -174,6 +181,11 @@ Dependency Graph
      "G.34" -> "G.1";
      "G.37" -> "G.1";
      "G.40" -> "G.1";
+     "G.45" -> "G.1";
+     "G.47" -> "G.1";
+     "G.48" -> "G.1";
+     "G.58" -> "G.1";
+     "G.75" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
      "G.6" -> "G.2";
@@ -185,11 +197,12 @@ Dependency Graph
      "G.34" -> "G.2";
      "G.37" -> "G.2";
      "G.40" -> "G.2";
+     "G.48" -> "G.2";
      "G.52" -> "G.2";
      "G.53" -> "G.2";
      "G.55" -> "G.2";
      "G.56" -> "G.2";
-     "G.65" -> "G.2";
+     "G.58" -> "G.2";
      "G.4" -> "G.3";
      "G.6" -> "G.3";
      "G.8" -> "G.3";
@@ -220,14 +233,18 @@ Dependency Graph
      "G.37" -> "G.4";
      "G.40" -> "G.4";
      "G.41" -> "G.4";
+     "G.47" -> "G.4";
+     "G.48" -> "G.4";
      "G.52" -> "G.4";
      "G.53" -> "G.4";
      "G.55" -> "G.4";
      "G.56" -> "G.4";
+     "G.58" -> "G.4";
      "G.60" -> "G.4";
      "G.61" -> "G.4";
      "G.62" -> "G.4";
      "G.65" -> "G.4";
+     "G.75" -> "G.4";
      "G.81" -> "G.4";
      "G.90" -> "G.4";
      "G.6" -> "G.5";
@@ -239,17 +256,18 @@ Dependency Graph
      "G.9" -> "G.8";
      "G.10" -> "G.9";
      "G.12" -> "G.9";
-     "G.90" -> "G.9";
      "G.11" -> "G.10";
      "G.15" -> "G.10";
      "G.17" -> "G.10";
      "G.20" -> "G.10";
      "G.21" -> "G.10";
+     "G.47" -> "G.10";
      "G.61" -> "G.10";
      "G.15" -> "G.11";
      "G.17" -> "G.11";
      "G.20" -> "G.11";
      "G.21" -> "G.11";
+     "G.47" -> "G.11";
      "G.61" -> "G.11";
      "G.13" -> "G.12";
      "G.17" -> "G.12";
@@ -262,6 +280,11 @@ Dependency Graph
      "G.32" -> "G.12";
      "G.34" -> "G.12";
      "G.41" -> "G.12";
+     "G.43" -> "G.12";
+     "G.44" -> "G.12";
+     "G.45" -> "G.12";
+     "G.47" -> "G.12";
+     "G.48" -> "G.12";
      "G.51" -> "G.12";
      "G.53" -> "G.12";
      "G.60" -> "G.12";
@@ -272,6 +295,7 @@ Dependency Graph
      "G.17" -> "G.13";
      "G.25" -> "G.13";
      "G.63" -> "G.13";
+     "G.75" -> "G.13";
      "G.17" -> "G.14";
      "G.20" -> "G.14";
      "G.25" -> "G.14";
@@ -279,20 +303,29 @@ Dependency Graph
      "G.31" -> "G.14";
      "G.34" -> "G.14";
      "G.41" -> "G.14";
+     "G.43" -> "G.14";
+     "G.45" -> "G.14";
+     "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.51" -> "G.14";
+     "G.58" -> "G.14";
      "G.60" -> "G.14";
      "G.65" -> "G.14";
      "G.17" -> "G.15";
      "G.20" -> "G.15";
      "G.21" -> "G.15";
+     "G.47" -> "G.15";
      "G.17" -> "G.16";
      "G.20" -> "G.16";
      "G.21" -> "G.16";
      "G.37" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.56" -> "G.16";
      "G.64" -> "G.16";
      "G.65" -> "G.16";
+     "G.75" -> "G.16";
+     "G.90" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
@@ -300,6 +333,10 @@ Dependency Graph
      "G.20" -> "G.18";
      "G.25" -> "G.18";
      "G.41" -> "G.18";
+     "G.45" -> "G.18";
+     "G.53" -> "G.18";
+     "G.58" -> "G.18";
+     "G.90" -> "G.18";
      "G.20" -> "G.19";
      "G.25" -> "G.19";
      "G.40" -> "G.19";
@@ -310,6 +347,11 @@ Dependency Graph
      "G.31" -> "G.21";
      "G.34" -> "G.21";
      "G.41" -> "G.21";
+     "G.43" -> "G.21";
+     "G.45" -> "G.21";
+     "G.47" -> "G.21";
+     "G.51" -> "G.21";
+     "G.75" -> "G.21";
      "G.90" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
@@ -323,14 +365,20 @@ Dependency Graph
      "G.37" -> "G.22";
      "G.40" -> "G.22";
      "G.41" -> "G.22";
+     "G.43" -> "G.22";
+     "G.44" -> "G.22";
+     "G.45" -> "G.22";
+     "G.48" -> "G.22";
      "G.51" -> "G.22";
      "G.53" -> "G.22";
      "G.55" -> "G.22";
      "G.56" -> "G.22";
+     "G.58" -> "G.22";
      "G.60" -> "G.22";
      "G.62" -> "G.22";
      "G.63" -> "G.22";
      "G.64" -> "G.22";
+     "G.75" -> "G.22";
      "G.24" -> "G.23";
      "G.29" -> "G.23";
      "G.25" -> "G.24";
@@ -341,12 +389,20 @@ Dependency Graph
      "G.62" -> "G.24";
      "G.64" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
+     "G.44" -> "G.25";
+     "G.45" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
+     "G.45" -> "G.26";
+     "G.51" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
+     "G.48" -> "G.29";
      "G.31" -> "G.30";
+     "G.48" -> "G.30";
      "G.32" -> "G.31";
      "G.41" -> "G.32";
      "G.34" -> "G.33";
@@ -355,32 +411,47 @@ Dependency Graph
      "G.40" -> "G.33";
      "G.55" -> "G.33";
      "G.56" -> "G.33";
+     "G.75" -> "G.33";
      "G.81" -> "G.33";
      "G.37" -> "G.34";
+     "G.75" -> "G.34";
      "G.37" -> "G.36";
      "G.56" -> "G.36";
      "G.62" -> "G.36";
      "G.64" -> "G.36";
      "G.72" -> "G.36";
+     "G.90" -> "G.36";
      "G.40" -> "G.37";
      "G.56" -> "G.37";
      "G.40" -> "G.38";
      "G.41" -> "G.40";
      "G.56" -> "G.40";
+     "G.43" -> "G.41";
      "G.51" -> "G.41";
      "G.53" -> "G.41";
+     "G.44" -> "G.43";
+     "G.45" -> "G.44";
+     "G.47" -> "G.45";
+     "G.48" -> "G.47";
+     "G.58" -> "G.48";
      "G.62" -> "G.51";
      "G.53" -> "G.52";
      "G.56" -> "G.52";
+     "G.58" -> "G.52";
      "G.60" -> "G.52";
      "G.62" -> "G.52";
      "G.64" -> "G.52";
      "G.65" -> "G.52";
+     "G.75" -> "G.52";
+     "G.58" -> "G.53";
      "G.60" -> "G.53";
      "G.56" -> "G.55";
      "G.60" -> "G.56";
      "G.62" -> "G.56";
      "G.64" -> "G.56";
+     "G.75" -> "G.56";
+     "G.75" -> "G.58";
+     "G.90" -> "G.58";
      "G.65" -> "G.60";
      "G.62" -> "G.61";
      "G.72" -> "G.61";
@@ -388,11 +459,15 @@ Dependency Graph
      "G.64" -> "G.62";
      "G.65" -> "G.62";
      "G.72" -> "G.62";
+     "G.75" -> "G.62";
+     "G.90" -> "G.62";
      "G.64" -> "G.63";
+     "G.75" -> "G.63";
      "G.90" -> "G.63";
      "G.65" -> "G.64";
      "G.90" -> "G.65";
      "G.90" -> "G.72";
+     "G.90" -> "G.75";
      "G.90" -> "G.81";
      "G.90" -> "G.86";
    }

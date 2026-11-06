@@ -2,7 +2,7 @@
 :number: 142
 :canonical_id: G.142
 :original_id: III.34
-:title: G.142 circle cut off
+:title: G.142 cut off a circle segment admitting a given angle
 :volume: II
 :book: III
 :type: prop
@@ -10,57 +10,49 @@
 :categories: problem, construction, plane-geometry, circles
 :category: problem, construction, plane-geometry, circles
 :tags: book-iii, point, segment, circle, angle, plane-angle, rectilineal-angle, straight-line, tangent-to-circle, angle-in-segment, plane, equality
-:dependencies: G.1, G.4, G.10, G.22, G.30, G.48, G.138, G.140
-:excerpt: From a given circle to cut off a segment admitting an angle equal to a given angle.
+:dependencies: G.4, G.10, G.16, G.22, G.30, G.48, G.118, G.138, G.140
+:excerpt: From a given circle, cut off a segment admitting an angle equal to a given rectilineal angle.
 
 .. _G.142:
 .. _III.34:
 
-G.142 circle cut off
-====================
+G.142 cut off a circle segment admitting a given angle
+======================================================
 
 .. rubric:: `III.34 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/34/>`_
 
 .. enunciation::
 
-   From a given :term:`circle <G.10>` to cut off a :term:`segment <G.4>` admitting an :term:`angle <G.22>` equal to a given angle.
+   From a given :term:`circle <G.10>`, cut off a :term:`segment <G.4>` admitting an :term:`angle <G.22>` equal to a given :term:`rectilineal angle <G.30>`.
 
 .. signature:: problem
 
-   | :fn:`circle_cut_off <G.142>`\ (:g:`( A B C ) <g1:( A B C )>`, :g:`< D ) <g1:< D )>`) → :g:`( B A C ) <g1:( B A C )>`
-   | **given** :g:`( A B C ) <g1:( A B C )>`, the angle at :g:`< D ) <g1:< D )>`
-   | **construct** from the given circle :g:`( A B C ) <g1:( A B C )>` the segment :g:`( B A C ) <g1:( B A C )>` has been cut off admitting an angle equal to the given rectilineal angle, the angle at :g:`< D ) <g1:< D )>`
+   | :fn:`cut_circle_segment_with_angle <G.142>`\ (:g:`( A B C ) <g1:( A B C )>`, :g:`< D ) <g1:< D )>`) → :g:`( B A C ) <g1:( B A C )>`
+   | **given** :g:`( A B C ) <g1:( A B C )>`, :g:`< D ) <g1:< D )>`
+   | **construct** :g:`< B A C ) <g1:< B A C )>` in segment :g:`( B A C ) <g1:( B A C )>` cut off from :g:`( A B C ) <g1:( A B C )>` :eq:`= <g1:< B A C ) = g1:< D )>` :g:`< D ) <g1:< D )>`
 
 .. picture:: g1.svg
    :alt: Proposition 34 diagram
 
-.. step:: given
+.. step:: given ∵ circle_radii, rectilineal_angle_def <G.10, G.30>
 
-   :g:`( A B C ) <g1:( A B C )>`, the angle at :g:`< D ) <g1:< D )>`
+   circle :g:`( A B C ) <g1:( A B C )>`, rectilineal angle :g:`< D ) <g1:< D )>`
 
-.. step:: construct
+.. step:: construct ∵ perpendicular_at_diameter_extremity_tangent <G.118>
 
-   Let :g:`/ E F / <g1:/ E F />` be drawn touching :g:`( A B C ) <g1:( A B C )>` at :g:`B <g1:B>`
+   tangent :g:`/ E F / <g1:/ E F />` touching :g:`( A B C ) <g1:( A B C )>` at :g:`B <g1:B>`
 
-.. step:: construct
+.. step:: construct ∵ copy_angle <G.48>
 
-   :fn:`copy_angle <G.48>`: On :g:`/ F B / <g1:/ F B />`, and at :g:`B <g1:B>` on it, let :g:`< F B C ) <g1:< F B C )>` be constructed :eq:`equal <g1:< F B C ) = g1:< D )>` to the angle at :g:`< D ) <g1:< D )>`.
+   :fn:`copy_angle <G.48>`\ (:g:`/ F B / <g1:/ F B />`, :g:`B <g1:B>`, :g:`< D ) <g1:< D )>`) → :g:`< F B C ) <g1:< F B C )>` :eq:`= <g1:< F B C ) = g1:< D )>` :g:`< D ) <g1:< D )>` with chord :g:`/ B C / <g1:/ B C />`
 
-.. step:: assert ∵ segment_touch_circle_iii_32 <G.140>
+.. step:: assert ∵ alternate_segment_theorem <G.140>
 
-   a segment :g:`/ E F / <g1:/ E F />` touches :g:`( A B C ) <g1:( A B C )>`, and :g:`/ B C / <g1:/ B C />` has been drawn across from the :term:`point <G.1>` of contact at :g:`B <g1:B>`, :g:`< F B C ) <g1:< F B C )>` is equal to the angle constructed in the alternate segment :g:`( B A C ) <g1:( B A C )>`
+   tangent :g:`/ E F / <g1:/ E F />` and chord :g:`/ B C / <g1:/ B C />` at :g:`B <g1:B>` → :g:`< F B C ) <g1:< F B C )>` :eq:`= <g1:< F B C ) = g1:< B A C )>` :g:`< B A C ) <g1:< B A C )>` in alternate segment :g:`( B A C ) <g1:( B A C )>`
 
-.. step:: assert
+.. step:: conclude ∵ equal_transitive, angle_segment_angle_def <G.16, G.138>
 
-   :g:`< F B C ) <g1:< F B C )>` :eq:`= <g1:< F B C ) = g1:< D )>` the angle at :g:`< D ) <g1:< D )>`
-
-.. step:: assert
-
-   the :term:`angle in the segment <G.138>` :g:`( B A C ) <g1:( B A C )>` is equal to the angle at :g:`< D ) <g1:< D )>`
-
-.. step:: conclude
-
-   from the given circle :g:`( A B C ) <g1:( A B C )>` the segment :g:`( B A C ) <g1:( B A C )>` has been cut off admitting an angle equal to the given :term:`rectilineal angle <G.30>`, the angle at :g:`< D ) <g1:< D )>`
+   :g:`< F B C ) <g1:< F B C )>` :eq:`= <g1:< F B C ) = g1:< D )>` :g:`< D ) <g1:< D )>` → :g:`< B A C ) <g1:< B A C )>` :eq:`= <g1:< B A C ) = g1:< D )>` :g:`< D ) <g1:< D )>` in segment :g:`( B A C ) <g1:( B A C )>`
 
 Dependency Graph
 ----------------
@@ -123,20 +115,24 @@ Dependency Graph
      "G.58" [label="G.58", tooltip="G.58 (I.31): Construct through a given point a line parallel to a given line.", fillcolor="#222244", URL="../G.58/index.html", target="_top"];
      "G.59" [label="G.59", tooltip="G.59 (I.32): In any triangle, an exterior angle equals the sum of the two opposite interior angles, and the three interior angles sum to two right angles.", fillcolor="#222244", URL="../G.59/index.html", target="_top"];
      "G.61" [label="G.61", tooltip="G.61 (I.def.17): A diameter of a circle is any segment drawn through the center and terminated in both directions by the arc of the circle; it bisects the circle.", fillcolor="#224422", URL="../G.61/index.html", target="_top"];
+     "G.76" [label="G.76", tooltip="G.76 (I.def.11): An obtuse angle is greater than a right angle.", fillcolor="#224422", URL="../G.76/index.html", target="_top"];
      "G.77" [label="G.77", tooltip="G.77 (I.def.12): An acute angle is less than a right angle.", fillcolor="#224422", URL="../G.77/index.html", target="_top"];
      "G.96" [label="G.96", tooltip="G.96 (I.def.18): A semicircle is the figure contained by a diameter and the arc cut off by it.", fillcolor="#224422", URL="../G.96/index.html", target="_top"];
+     "G.98" [label="G.98", tooltip="G.98 (III.1): Find the center of a given circle.", fillcolor="#222244", URL="../G.98/index.html", target="_top"];
      "G.111" [label="G.111", tooltip="G.111 (III.def.2): Asegment is said totouch a circle which, meeting thecircle and being produced, does not cut the circle.", fillcolor="#224422", URL="../G.111/index.html", target="_top"];
-     "G.120" [label="G.120", tooltip="G.120 (III.18): If a segment touch a circle, and a segment be joined from the center to the point of contact, the segment so joined is perpendicular to the tangent.", fillcolor="#222244", URL="../G.120/index.html", target="_top"];
-     "G.121" [label="G.121", tooltip="G.121 (III.19): If a segment touch a circle, and from the point of contact a segment be drawn at right angles to the tangent, the center of the circle is on the segment so drawn.", fillcolor="#222244", URL="../G.121/index.html", target="_top"];
+     "G.117" [label="G.117", tooltip="G.117 (III.def.7): Anangle of a segment is that contained by asegment and a arc of acircle.", fillcolor="#224422", URL="../G.117/index.html", target="_top"];
+     "G.118" [label="G.118", tooltip="G.118 (III.16): The line drawn at right angles to the diameter of a circle from its extremity falls outside the circle, no other line can be interposed between it and the arc, and the angle of the...", fillcolor="#222244", URL="../G.118/index.html", target="_top"];
+     "G.120" [label="G.120", tooltip="G.120 (III.18): If a line touches a circle, the segment joined from the center to the point of contact is perpendicular to the tangent.", fillcolor="#222244", URL="../G.120/index.html", target="_top"];
+     "G.121" [label="G.121", tooltip="G.121 (III.19): If a line touches a circle, the line drawn at right angles to the tangent from the point of contact passes through the center of the circle.", fillcolor="#222244", URL="../G.121/index.html", target="_top"];
      "G.122" [label="G.122", tooltip="G.122 (III.def.10): Asector of a circle is thefigure which, when anangle is constructed at thecenter of thecircle, is contained by thesegments containing the angle and the arc cut off by them.", fillcolor="#224422", URL="../G.122/index.html", target="_top"];
-     "G.123" [label="G.123", tooltip="G.123 (III.20): In a circle the angle at the center is double of the angle at the arc, when the angles have the same arc as base.", fillcolor="#222244", URL="../G.123/index.html", target="_top"];
-     "G.124" [label="G.124", tooltip="G.124 (III.21): In a circle the angles in the same segment are equal.", fillcolor="#222244", URL="../G.124/index.html", target="_top"];
-     "G.125" [label="G.125", tooltip="G.125 (III.22): The opposite angles of quadrilaterals in circles are equal to two right angles.", fillcolor="#222244", URL="../G.125/index.html", target="_top"];
+     "G.123" [label="G.123", tooltip="G.123 (III.20): In a circle, the angle at the center is double the angle at the circumference when the angles have the same arc as base.", fillcolor="#222244", URL="../G.123/index.html", target="_top"];
+     "G.124" [label="G.124", tooltip="G.124 (III.21): In a circle, angles in the same segment are equal to one another.", fillcolor="#222244", URL="../G.124/index.html", target="_top"];
+     "G.125" [label="G.125", tooltip="G.125 (III.22): The opposite angles of any quadrilateral inscribed in a circle sum to two right angles.", fillcolor="#222244", URL="../G.125/index.html", target="_top"];
      "G.126" [label="G.126", tooltip="G.126 (III.def.6): Asegment of a circle is thefigure contained by asegment and a arc of acircle.", fillcolor="#224422", URL="../G.126/index.html", target="_top"];
      "G.138" [label="G.138", tooltip="G.138 (III.def.8): Anangle in a segment is theangle which, when apoint is taken on the arc of the segment andsegments are joined from it to theextremities of the segment which is thebase of the segme...", fillcolor="#224422", URL="../G.138/index.html", target="_top"];
-     "G.139" [label="G.139", tooltip="G.139 (III.31): In a circle the angle in the semicircle is right, that in a greater segment less than a right angle, and that in a less segment greater than a right angle; and further the angle of...", fillcolor="#222244", URL="../G.139/index.html", target="_top"];
-     "G.140" [label="G.140", tooltip="G.140 (III.32): If a segment touch a circle, and from the point of contact there be drawn across, in the circle, a segment cutting the circle, the angles which it makes with the tangent will equal...", fillcolor="#222244", URL="../G.140/index.html", target="_top"];
-     "G.142" [label="G.142", tooltip="G.142 (III.34): From a given circle to cut off a segment admitting an angle equal to a given angle.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.139" [label="G.139", tooltip="G.139 (III.31): In a circle, the angle in a semicircle is right, the angle in a greater segment is acute, and the angle in a lesser segment is obtuse.", fillcolor="#222244", URL="../G.139/index.html", target="_top"];
+     "G.140" [label="G.140", tooltip="G.140 (III.32): If a line touches a circle and a chord is drawn from the point of contact, the angles which the chord makes with the tangent equal the angles in the alternate segments of the circl...", fillcolor="#222244", URL="../G.140/index.html", target="_top"];
+     "G.142" [label="G.142", tooltip="G.142 (III.34): From a given circle, cut off a segment admitting an angle equal to a given rectilineal angle.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -165,7 +161,6 @@ Dependency Graph
      "G.121" -> "G.1";
      "G.138" -> "G.1";
      "G.140" -> "G.1";
-     "G.142" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
      "G.6" -> "G.2";
@@ -183,12 +178,17 @@ Dependency Graph
      "G.55" -> "G.2";
      "G.56" -> "G.2";
      "G.58" -> "G.2";
+     "G.118" -> "G.2";
+     "G.120" -> "G.2";
+     "G.121" -> "G.2";
+     "G.140" -> "G.2";
      "G.4" -> "G.3";
      "G.6" -> "G.3";
      "G.8" -> "G.3";
      "G.20" -> "G.3";
      "G.28" -> "G.3";
      "G.29" -> "G.3";
+     "G.118" -> "G.3";
      "G.138" -> "G.3";
      "G.7" -> "G.4";
      "G.10" -> "G.4";
@@ -221,11 +221,13 @@ Dependency Graph
      "G.58" -> "G.4";
      "G.59" -> "G.4";
      "G.61" -> "G.4";
+     "G.98" -> "G.4";
      "G.111" -> "G.4";
+     "G.117" -> "G.4";
+     "G.118" -> "G.4";
      "G.120" -> "G.4";
      "G.121" -> "G.4";
      "G.122" -> "G.4";
-     "G.123" -> "G.4";
      "G.124" -> "G.4";
      "G.126" -> "G.4";
      "G.138" -> "G.4";
@@ -253,7 +255,11 @@ Dependency Graph
      "G.47" -> "G.10";
      "G.61" -> "G.10";
      "G.96" -> "G.10";
+     "G.98" -> "G.10";
      "G.111" -> "G.10";
+     "G.117" -> "G.10";
+     "G.118" -> "G.10";
+     "G.120" -> "G.10";
      "G.121" -> "G.10";
      "G.122" -> "G.10";
      "G.123" -> "G.10";
@@ -270,12 +276,11 @@ Dependency Graph
      "G.47" -> "G.11";
      "G.61" -> "G.11";
      "G.96" -> "G.11";
+     "G.98" -> "G.11";
      "G.120" -> "G.11";
      "G.121" -> "G.11";
      "G.122" -> "G.11";
      "G.123" -> "G.11";
-     "G.124" -> "G.11";
-     "G.140" -> "G.11";
      "G.13" -> "G.12";
      "G.17" -> "G.12";
      "G.20" -> "G.12";
@@ -296,8 +301,6 @@ Dependency Graph
      "G.53" -> "G.12";
      "G.59" -> "G.12";
      "G.125" -> "G.12";
-     "G.139" -> "G.12";
-     "G.140" -> "G.12";
      "G.17" -> "G.13";
      "G.25" -> "G.13";
      "G.17" -> "G.14";
@@ -310,7 +313,11 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.58" -> "G.14";
+     "G.98" -> "G.14";
+     "G.118" -> "G.14";
+     "G.121" -> "G.14";
      "G.123" -> "G.14";
      "G.124" -> "G.14";
      "G.125" -> "G.14";
@@ -325,7 +332,13 @@ Dependency Graph
      "G.21" -> "G.16";
      "G.37" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.56" -> "G.16";
+     "G.59" -> "G.16";
+     "G.124" -> "G.16";
+     "G.125" -> "G.16";
+     "G.139" -> "G.16";
+     "G.142" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
@@ -335,12 +348,16 @@ Dependency Graph
      "G.41" -> "G.18";
      "G.42" -> "G.18";
      "G.45" -> "G.18";
+     "G.53" -> "G.18";
      "G.58" -> "G.18";
      "G.59" -> "G.18";
      "G.123" -> "G.18";
+     "G.139" -> "G.18";
      "G.20" -> "G.19";
      "G.25" -> "G.19";
      "G.40" -> "G.19";
+     "G.123" -> "G.19";
+     "G.140" -> "G.19";
      "G.21" -> "G.20";
      "G.25" -> "G.21";
      "G.31" -> "G.21";
@@ -371,8 +388,9 @@ Dependency Graph
      "G.56" -> "G.22";
      "G.58" -> "G.22";
      "G.59" -> "G.22";
+     "G.76" -> "G.22";
      "G.77" -> "G.22";
-     "G.120" -> "G.22";
+     "G.118" -> "G.22";
      "G.122" -> "G.22";
      "G.123" -> "G.22";
      "G.124" -> "G.22";
@@ -387,22 +405,32 @@ Dependency Graph
      "G.32" -> "G.24";
      "G.41" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
+     "G.118" -> "G.25";
      "G.123" -> "G.25";
      "G.139" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.98" -> "G.26";
+     "G.120" -> "G.26";
+     "G.121" -> "G.26";
+     "G.139" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
      "G.48" -> "G.29";
+     "G.98" -> "G.29";
      "G.31" -> "G.30";
      "G.48" -> "G.30";
+     "G.118" -> "G.30";
      "G.142" -> "G.30";
      "G.32" -> "G.31";
      "G.41" -> "G.32";
+     "G.98" -> "G.32";
      "G.34" -> "G.33";
      "G.37" -> "G.33";
      "G.38" -> "G.33";
@@ -411,29 +439,42 @@ Dependency Graph
      "G.55" -> "G.33";
      "G.56" -> "G.33";
      "G.59" -> "G.33";
+     "G.76" -> "G.33";
      "G.77" -> "G.33";
+     "G.98" -> "G.33";
+     "G.118" -> "G.33";
      "G.120" -> "G.33";
      "G.121" -> "G.33";
      "G.125" -> "G.33";
      "G.139" -> "G.33";
-     "G.140" -> "G.33";
      "G.37" -> "G.34";
+     "G.98" -> "G.34";
      "G.140" -> "G.34";
      "G.37" -> "G.36";
+     "G.42" -> "G.36";
      "G.56" -> "G.36";
+     "G.59" -> "G.36";
+     "G.123" -> "G.36";
+     "G.125" -> "G.36";
+     "G.139" -> "G.36";
      "G.40" -> "G.37";
      "G.42" -> "G.37";
      "G.56" -> "G.37";
      "G.59" -> "G.37";
+     "G.140" -> "G.37";
      "G.40" -> "G.38";
+     "G.121" -> "G.38";
      "G.41" -> "G.40";
      "G.56" -> "G.40";
+     "G.42" -> "G.41";
      "G.43" -> "G.41";
      "G.53" -> "G.41";
+     "G.118" -> "G.42";
      "G.120" -> "G.42";
      "G.139" -> "G.42";
      "G.44" -> "G.43";
      "G.45" -> "G.44";
+     "G.118" -> "G.44";
      "G.120" -> "G.44";
      "G.47" -> "G.45";
      "G.48" -> "G.47";
@@ -452,12 +493,21 @@ Dependency Graph
      "G.139" -> "G.59";
      "G.140" -> "G.59";
      "G.96" -> "G.61";
+     "G.118" -> "G.61";
      "G.139" -> "G.61";
+     "G.139" -> "G.76";
+     "G.118" -> "G.77";
      "G.120" -> "G.77";
+     "G.139" -> "G.77";
+     "G.118" -> "G.96";
      "G.139" -> "G.96";
+     "G.124" -> "G.98";
+     "G.118" -> "G.111";
      "G.120" -> "G.111";
      "G.121" -> "G.111";
      "G.140" -> "G.111";
+     "G.118" -> "G.117";
+     "G.142" -> "G.118";
      "G.121" -> "G.120";
      "G.140" -> "G.121";
      "G.123" -> "G.122";

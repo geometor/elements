@@ -1,12 +1,12 @@
 :canonical_id: G.87
 :original_id: II.5
-:title: G.87 difference of squares equal unequal
+:title: G.87 rectangle on unequal parts plus square on difference
 :volume: I
 :book: II
 :type: prop
 
-G.87 difference of squares equal unequal — Heath
-================================================
+G.87 rectangle on unequal parts plus square on difference — Heath
+=================================================================
 
 .. rubric:: `II.5 <https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/05/>`_
 
@@ -142,7 +142,7 @@ Dependency Graph
      "G.75" [label="G.75", tooltip="G.75 (I.46): Construct a square on a given segment.", fillcolor="#222244", URL="../G.75/index.html", target="_top"];
      "G.81" [label="G.81", tooltip="G.81 (II.def.1): Any rectangular parallelogram is said to becontained by the twosegments containing theright angle.", fillcolor="#224422", URL="../G.81/index.html", target="_top"];
      "G.86" [label="G.86", tooltip="G.86 (II.def.2): And in any parallelogrammic area let any one whatever of the parallelograms about itsdiameter with the two complements be called agnomon.", fillcolor="#224422", URL="../G.86/index.html", target="_top"];
-     "G.87" [label="G.87", tooltip="G.87 (II.5): If a segment be cut into equal and unequal segments, the rectangle contained by the unequal segments of the whole together with the square on the segment between the points of sect...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.87" [label="G.87", tooltip="G.87 (II.5): If a segment is cut into equal and unequal parts, the rectangle contained by the unequal parts together with the square on the segment between the points of section equals the squa...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -185,7 +185,6 @@ Dependency Graph
      "G.55" -> "G.2";
      "G.56" -> "G.2";
      "G.58" -> "G.2";
-     "G.65" -> "G.2";
      "G.4" -> "G.3";
      "G.6" -> "G.3";
      "G.8" -> "G.3";
@@ -289,6 +288,7 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.51" -> "G.14";
      "G.58" -> "G.14";
      "G.60" -> "G.14";
@@ -303,9 +303,12 @@ Dependency Graph
      "G.21" -> "G.16";
      "G.37" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.56" -> "G.16";
      "G.64" -> "G.16";
      "G.65" -> "G.16";
+     "G.75" -> "G.16";
+     "G.87" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
@@ -314,6 +317,7 @@ Dependency Graph
      "G.25" -> "G.18";
      "G.41" -> "G.18";
      "G.45" -> "G.18";
+     "G.53" -> "G.18";
      "G.58" -> "G.18";
      "G.20" -> "G.19";
      "G.25" -> "G.19";
@@ -328,6 +332,7 @@ Dependency Graph
      "G.43" -> "G.21";
      "G.45" -> "G.21";
      "G.47" -> "G.21";
+     "G.51" -> "G.21";
      "G.75" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
@@ -365,11 +370,14 @@ Dependency Graph
      "G.62" -> "G.24";
      "G.64" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.51" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -393,6 +401,7 @@ Dependency Graph
      "G.62" -> "G.36";
      "G.64" -> "G.36";
      "G.72" -> "G.36";
+     "G.87" -> "G.36";
      "G.40" -> "G.37";
      "G.56" -> "G.37";
      "G.40" -> "G.38";

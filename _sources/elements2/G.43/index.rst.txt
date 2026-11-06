@@ -10,8 +10,9 @@
 :categories: theorem, proof, plane-geometry
 :category: theorem, proof, plane-geometry
 :tags: book-i, segment, angle, triangle, trilateral, plane-angle, plane, equality
-:dependencies: G.12, G.14, G.21, G.22, G.41
+:dependencies: G.12, G.14, G.21, G.22, G.25, G.26, G.41
 :excerpt: In any triangle, the greater side subtends the greater angle.
+:youtube_id: a7wWErlWEHs
 
 .. _G.43:
 .. _I.18:
@@ -27,19 +28,20 @@ G.43 greater side subtends greater angle
 
 .. signature:: theorem
 
-   | :fn:`greater_side_greater_angle <G.43>`\ ()
-   | **prove** :g:`< A B C ) <g1:< A B C )>` is also greater than :g:`< B C A ) <g1:< B C A )>`
+   | :fn:`greater_side_greater_angle <G.43>`\ (:g:`< A B C > <g1:< A B C >>`)
+   | **given** :g:`< A B C > <g1:< A B C >>` (:g:`/ A C / <g1:/ A C />` > :g:`/ A B / <g1:/ A B />`)
+   | **prove** :g:`< A B C ) <g1:< A B C )>` > :g:`< B C A ) <g1:< B C A )>`
 
 .. picture:: g1.svg
    :alt: Proposition 18 figure
 
-.. step:: assert
+.. step:: given
 
-   Let :g:`< A B C > <g1:< A B C >>` be a triangle having :g:`/ A C / <g1:/ A C />` greater than :g:`/ A B / <g1:/ A B />`
+   :g:`< A B C > <g1:< A B C >>` (:g:`/ A C / <g1:/ A C />` > :g:`/ A B / <g1:/ A B />`)
 
 .. step:: construct
 
-   :fn:`cut_equal_segment <G.21>`: Since :g:`/ A C / <g1:/ A C />` is greater than :g:`/ A B / <g1:/ A B />`, let :g:`/ A D / <g1:/ A D />` be made :eq:`equal <g1:/ A D / = g1:/ A B />` to :g:`/ A B / <g1:/ A B />`
+   :fn:`cut_equal_segment <G.21>`\ (:g:`/ A C / <g1:/ A C />`, :g:`/ A B / <g1:/ A B />`) → :g:`/ A D / <g1:/ A D />` (:eq:`= <g1:/ A D / = g1:/ A B />` :g:`/ A B / <g1:/ A B />`)
 
 .. step:: construct
 
@@ -47,23 +49,15 @@ G.43 greater side subtends greater angle
 
 .. step:: assert ∵ exterior_angle_greater <G.41>
 
-   :g:`< A D B ) <g1:< A D B )>` is an exterior angle of :g:`< B C D > <g1:< B C D >>` → it > the interior and opposite angle :g:`< D C B ) <g1:< D C B )>`
+   :g:`< A D B ) <g1:< A D B )>` > :g:`< D C B ) <g1:< D C B )>`
 
-.. step:: assert
+.. step:: assert ∵ isosceles_base_angles <G.25>
 
-   :g:`< A D B ) <g1:< A D B )>` :eq:`= <g1:< A D B ) = g1:< A B D )>` :g:`< A B D ) <g1:< A B D )>`,
+   :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ A D />` :g:`/ A D / <g1:/ A D />` → :g:`< A D B ) <g1:< A D B )>` :eq:`= <g1:< A D B ) = g1:< A B D )>` :g:`< A B D ) <g1:< A B D )>` → :g:`< A B D ) <g1:< A B D )>` > :g:`< A C B ) <g1:< A C B )>`
 
-.. step:: assert
+.. step:: conclude ∵ whole_greater_than_part <G.26>
 
-   :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ A D />` :g:`/ A D / <g1:/ A D />`
-
-.. step:: assert
-
-   :g:`< A B D ) <g1:< A B D )>` is also greater than :g:`< A C B ) <g1:< A C B )>`
-
-.. step:: conclude
-
-   :g:`< A B C ) <g1:< A B C )>` ≫ :g:`< A C B ) <g1:< A C B )>`
+   :g:`< A B C ) <g1:< A B C )>` > :g:`< A B D ) <g1:< A B D )>` → :g:`< A B C ) <g1:< A B C )>` > :g:`< B C A ) <g1:< B C A )>`
 
 Dependency Graph
 ----------------
@@ -254,8 +248,10 @@ Dependency Graph
      "G.32" -> "G.24";
      "G.41" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -282,5 +278,6 @@ Required for
 .. toctree::
    :hidden:
 
+   video
    code
    heath

@@ -2,7 +2,7 @@
 :number: 83
 :canonical_id: G.83
 :original_id: II.2
-:title: G.83 square sum rectangles
+:title: G.83 square equals sum of rectangles on parts
 :volume: I
 :book: II
 :type: prop
@@ -10,60 +10,53 @@
 :categories: theorem, proof, plane-geometry, geometric-algebra
 :category: theorem, proof, plane-geometry, geometric-algebra
 :tags: book-ii, point, segment, quadrilateral, polygon, straight-line, contained-rectangle, square, parallel-straight-lines, rectangle, equality
-:dependencies: G.4, G.58, G.63, G.75, G.81
-:excerpt: If a segment be cut at random, the rectangle contained by the whole and both of the segments is equal to the square on the whole.
+:dependencies: G.4, G.16, G.58, G.63, G.75, G.81
+:excerpt: If a segment is cut at random, the sum of the rectangles contained by the whole and each of the parts equals the square on the whole.
 
 .. _G.83:
 .. _II.2:
 
-G.83 square sum rectangles
-==========================
+G.83 square equals sum of rectangles on parts
+=============================================
 
 .. rubric:: `II.2 <https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/02/>`_
 
 .. enunciation::
 
-   If a :term:`segment <G.4>` be cut at random, the :term:`rectangle contained <G.81>` by the whole and both of the segments is equal to the :term:`square <G.63>` on the whole.
+   If a :term:`segment <G.4>` is cut at random, the sum of the :term:`rectangles contained <G.81>` by the whole and each of the parts equals the :term:`square <G.63>` on the whole.
 
 .. signature:: theorem
 
-   | :fn:`square_sum_rectangles <G.83>`\ ()
-   | **prove** the rectangle contained by :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` together with the rectangle contained by :g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />` is equal to the square on :g:`/ A B / <g1:/ A B />`
+   | :fn:`square_sum_rectangles <G.83>`\ (:g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`)
+   | **given** :g:`/ A B / <g1:/ A B />` (:g:`C <g1:C>` ∈ :g:`/ A B / <g1:/ A B />`)
+   | **prove** :fn:`contained_rectangle <G.81>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`) + :fn:`contained_rectangle <G.81>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />`) = :fn:`square <G.63>`\ (:g:`/ A B / <g1:/ A B />`)
 
 .. picture:: g1.svg
    :alt: Diagram
 
-.. step:: construct
+.. step:: given
 
-   Let :g:`/ A B / <g1:/ A B />` be cut at random at :g:`C <g1:C>`
+   :g:`/ A B / <g1:/ A B />` (:g:`/ A B / <g1:/ A B />` = :g:`/ A C / <g1:/ A C />` + :g:`/ B C / <g1:/ B C />`)
 
-.. step:: construct
+.. step:: construct ∵ square_on_segment <G.75>
 
-   :fn:`square_on_segment <G.75>`: Let the square :g:`< A D E B > <g1:< A D E B >>` be described on :g:`/ A B / <g1:/ A B />`
+   :fn:`square_on_segment <G.75>`\ (:g:`/ A B / <g1:/ A B />`) → :g:`< A D E B > <g1:< A D E B >>` (:g:`/ A D / <g1:/ A D />` :eq:`= <g1:/ A D / = g1:/ A B />` :g:`/ B E / <g1:/ B E />` :eq:`= <g1:/ B E / = g1:/ A B />` :g:`/ A B / <g1:/ A B />`)
 
-.. step:: construct
+.. step:: construct ∵ parallel_line <G.58>
 
-   :fn:`parallel_line <G.58>`\ (:g:`C <g1:C>`, :g:`/ A D / <g1:/ A D />` or :g:`/ B E / <g1:/ B E />`) → :g:`/ C F / <g1:/ C F />`
+   :fn:`parallel_line <G.58>`\ (:g:`C <g1:C>`, :g:`/ A D / <g1:/ A D />`) → :g:`/ C F / <g1:/ C F />` ∥ :g:`/ A D / <g1:/ A D />`, :g:`/ B E / <g1:/ B E />`
 
-.. step:: assert
+.. step:: assert ∵ quadrilateral_def <G.63>
 
-   Then :g:`< A E > <g1:< A E >>` is equal to :g:`< A F > <g1:< A F >>`, :g:`< C E > <g1:< C E >>`
+   :g:`< A E > <g1:< A E >>` = :g:`< A F > <g1:< A F >>` + :g:`< C E > <g1:< C E >>`, :g:`< A E > <g1:< A E >>` = :fn:`quadrilateral_def <G.63>`\ (:g:`/ A B / <g1:/ A B />`)
 
-.. step:: assert
+.. step:: assert ∵ quadrilateral_def, rectangular_parallelogram_said_def <G.63, G.81>
 
-   Now :g:`< A E > <g1:< A E >>` is the square on :g:`/ A B / <g1:/ A B />`
+   :g:`/ A D / <g1:/ A D />` :eq:`= <g1:/ A D / = g1:/ A B />` :g:`/ A B / <g1:/ A B />` → :g:`< A F > <g1:< A F >>` = :fn:`rectangular_parallelogram_said_def <G.81>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />`), :g:`/ B E / <g1:/ B E />` :eq:`= <g1:/ B E / = g1:/ A B />` :g:`/ A B / <g1:/ A B />` → :g:`< C E > <g1:< C E >>` = :fn:`rectangular_parallelogram_said_def <G.81>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`)
 
-.. step:: assert
+.. step:: conclude ∵ equal_transitive <G.16>
 
-   :g:`< A F > <g1:< A F >>` is the rectangle contained by :g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />`, for it is contained by :g:`/ A D / <g1:/ A D />`, :g:`/ A C / <g1:/ A C />`, and :g:`/ A D / <g1:/ A D />` :eq:`= <g1:/ A D / = g1:/ A B />` :g:`/ A B / <g1:/ A B />`
-
-.. step:: assert
-
-   :g:`< C E > <g1:< C E >>` is the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, for :g:`/ B E / <g1:/ B E />` :eq:`= <g1:/ B E / = g1:/ A B />` :g:`/ A B / <g1:/ A B />`
-
-.. step:: conclude
-
-   the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />` together with the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` is equal to the square on :g:`/ A B / <g1:/ A B />`
+   :fn:`rectangular_parallelogram_said_def <G.81>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />`) + :fn:`rectangular_parallelogram_said_def <G.81>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`) = :fn:`quadrilateral_def <G.63>`\ (:g:`/ A B / <g1:/ A B />`)
 
 Dependency Graph
 ----------------
@@ -129,7 +122,7 @@ Dependency Graph
      "G.63" [label="G.63", tooltip="G.63 (I.def.22): Of quadrilateral figures, a square is equilateral and right-angled; an oblong is right-angled but not equilateral; a rhombus is equilateral but not right-angled; a rhomboid has opp...", fillcolor="#224422", URL="../G.63/index.html", target="_top"];
      "G.75" [label="G.75", tooltip="G.75 (I.46): Construct a square on a given segment.", fillcolor="#222244", URL="../G.75/index.html", target="_top"];
      "G.81" [label="G.81", tooltip="G.81 (II.def.1): Any rectangular parallelogram is said to becontained by the twosegments containing theright angle.", fillcolor="#224422", URL="../G.81/index.html", target="_top"];
-     "G.83" [label="G.83", tooltip="G.83 (II.2): If a segment be cut at random, the rectangle contained by the whole and both of the segments is equal to the square on the whole.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.83" [label="G.83", tooltip="G.83 (II.2): If a segment is cut at random, the sum of the rectangles contained by the whole and each of the parts equals the square on the whole.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -267,6 +260,7 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.51" -> "G.14";
      "G.58" -> "G.14";
      "G.17" -> "G.15";
@@ -278,7 +272,10 @@ Dependency Graph
      "G.21" -> "G.16";
      "G.37" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.56" -> "G.16";
+     "G.75" -> "G.16";
+     "G.83" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
@@ -287,6 +284,7 @@ Dependency Graph
      "G.25" -> "G.18";
      "G.41" -> "G.18";
      "G.45" -> "G.18";
+     "G.53" -> "G.18";
      "G.58" -> "G.18";
      "G.20" -> "G.19";
      "G.25" -> "G.19";
@@ -299,6 +297,7 @@ Dependency Graph
      "G.43" -> "G.21";
      "G.45" -> "G.21";
      "G.47" -> "G.21";
+     "G.51" -> "G.21";
      "G.75" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
@@ -332,11 +331,14 @@ Dependency Graph
      "G.51" -> "G.24";
      "G.62" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.51" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";

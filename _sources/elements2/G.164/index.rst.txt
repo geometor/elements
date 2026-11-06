@@ -2,7 +2,7 @@
 :number: 164
 :canonical_id: G.164
 :original_id: IV.12
-:title: G.164 circumscribe about a given circle an equilateral and
+:title: G.164 circumscribe a regular pentagon about a circle
 :volume: II
 :book: IV
 :type: prop
@@ -10,205 +10,57 @@
 :categories: problem, construction, plane-geometry, circles, polygons
 :category: problem, construction, plane-geometry, circles, polygons
 :tags: book-iv, point, segment, circle, angle, triangle, polygon, equilateral-triangle, centre, straight-line, tangent-to-circle, perpendicular, plane-angle, square, trilateral, circumscribed-about-circle, equilateral, circumscribed, pentagon, equality
-:dependencies: G.1, G.10, G.13, G.14, G.22, G.29, G.51, G.63, G.79, G.98, G.118, G.120, G.134, G.150, G.163
-:excerpt: Circumscribe about a given circle an equilateral and equiangular pentagon.
+:dependencies: G.10, G.13, G.14, G.16, G.29, G.51, G.79, G.98, G.118, G.120, G.134, G.150, G.163
+:excerpt: Circumscribe an equilateral and equiangular pentagon about a given circle.
 
 .. _G.164:
 .. _IV.12:
 
-G.164 circumscribe about a given circle an equilateral and
-==========================================================
+G.164 circumscribe a regular pentagon about a circle
+====================================================
 
 .. rubric:: `IV.12 <https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/12/>`_
 
 .. enunciation::
 
-   :term:`Circumscribe about a given circle <G.150>` an :term:`equilateral <G.13>` and equiangular pentagon.
+   Circumscribe an :term:`equilateral <G.13>` and equiangular pentagon about a given :term:`circle <G.10>`.
 
 .. signature:: problem
 
-   | :fn:`circumscribe_circle_equilateral <G.164>`\ (:g:`( A B C D E ) <g1:( A B C D E )>`) → :g:`/ F B / <g1:/ F B />`
-   | **given** :g:`( A B C D E ) <g1:( A B C D E )>`
-   | **construct** It was also proved :eq:`equilateral <g1:/ G H / = g1:/ H K / = g1:/ K L / = g1:/ L M / = g1:/ M G />`, and it has been circumscribed about :g:`( A B C D E ) <g1:( A B C D E )>`
+   | :fn:`circumscribe_pentagon_about_circle <G.164>`\ (:g:`( A B C D E ) <g1:( A B C D E )>`) → :g:`< G H K L M > <g1:< G H K L M >>`
+   | **given** :g:`( A B C D E ) <g1:( A B C D E )>` is a given :term:`circle <G.10>`
+   | **construct** :g:`< G H K L M > <g1:< G H K L M >>` is an :term:`equilateral <G.13>` and equiangular pentagon :term:`circumscribed about <G.150>` :g:`( A B C D E ) <g1:( A B C D E )>`
 
 .. picture:: g1.svg
    :alt: Proposition 12 diagram
 
-.. step:: given
+.. step:: given ∵ circle_radii, polygon_said_circumscribed_def <G.10, G.150>
 
-   :g:`( A B C D E ) <g1:( A B C D E )>`
+   :g:`( A B C D E ) <g1:( A B C D E )>` is the given circle
 
-.. step:: assert ∵ inscribe_pentagon_in_circle <G.163>
+.. step:: construct ∵ inscribe_pentagon_in_circle, perpendicular_at_diameter_extremity_tangent <G.163, G.118>
 
-   Let :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`E <g1:E>` be conceived to be the angular :term:`points <G.1>` of the inscribed pentagon, so that the arcs :g:`( A B ) <g1:( A B )>`, :g:`( B C ) <g1:( B C )>`, :g:`( C D ) <g1:( C D )>`, :g:`( D E ) <g1:( D E )>`, :g:`( E A ) <g1:( E A )>` are :eq:`= <g1:( A B ) = g1:( B C ) = g1:( C D ) = g1:( D E ) = g1:( E A )>`
+   :fn:`inscribe_pentagon_in_circle <G.163>`\ (:g:`( A B C D E ) <g1:( A B C D E )>`) → vertices :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`E <g1:E>` with equal arcs :g:`( A B ) <g1:( A B )>` :eq:`= <g1:( A B ) = g1:( B C ) = g1:( C D ) = g1:( D E ) = g1:( E A )>` :g:`( B C ) <g1:( B C )>` = :g:`( C D ) <g1:( C D )>` = :g:`( D E ) <g1:( D E )>` = :g:`( E A ) <g1:( E A )>`, :fn:`perpendicular_at_diameter_extremity_tangent <G.118>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`E <g1:E>`) → tangents :g:`/ G H / <g1:/ G H />`, :g:`/ H K / <g1:/ H K />`, :g:`/ K L / <g1:/ K L />`, :g:`/ L M / <g1:/ L M />`, :g:`/ M G / <g1:/ M G />`
 
-.. step:: construct
+.. step:: construct ∵ find_circle_center, segment <G.98, G.14>
 
-   :fn:`segment_drawn_right <G.118>`: Through :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>`, :g:`E <g1:E>` let :g:`/ G H / <g1:/ G H />`, :g:`/ H K / <g1:/ H K />`, :g:`/ K L / <g1:/ K L />`, :g:`/ L M / <g1:/ L M />`, :g:`/ M G / <g1:/ M G />` be drawn touching the circle
+   :fn:`find_circle_center <G.98>`\ (:g:`( A B C D E ) <g1:( A B C D E )>`) → center :g:`F <g1:F>`, :fn:`segment <G.14>`\ (:g:`F <g1:F>`, :g:`B <g1:B>`, :g:`K <g1:K>`, :g:`C <g1:C>`, :g:`L <g1:L>`, :g:`D <g1:D>`) → :g:`/ F B / <g1:/ F B />`, :g:`/ F K / <g1:/ F K />`, :g:`/ F C / <g1:/ F C />`, :g:`/ F L / <g1:/ F L />`, :g:`/ F D / <g1:/ F D />`
 
-.. step:: construct
+.. step:: assert ∵ radius_perpendicular_to_tangent, pythagorean_theorem, sss_congruence <G.120, G.79, G.29>
 
-   :fn:`find_circle_center <G.98>`: Let the center :g:`F <g1:F>` of :g:`( A B C D E ) <g1:( A B C D E )>` be taken
+   :g:`/ F B / <g1:/ F B />` ⊥ :g:`/ H K / <g1:/ H K />`, :g:`/ F C / <g1:/ F C />` ⊥ :g:`/ K L / <g1:/ K L />`, :g:`/ F D / <g1:/ F D />` ⊥ :g:`/ L M / <g1:/ L M />` → :g:`< F C >` + :g:`< C K >` = :g:`< F K >` = :g:`< F B >` + :g:`< B K >` → :g:`/ B K / <g1:/ B K />` :eq:`= <g1:/ B K / = g1:/ K C />` :g:`/ C K / <g1:/ K C />` → :g:`< B F K ) <g1:< B F K )>` :eq:`= <g1:< B F K ) = g1:< K F C )>` :g:`< K F C ) <g1:< K F C )>` and :g:`< B K F ) <g1:< B K F )>` :eq:`= <g1:< B K F ) = g1:< F K C )>` :g:`< F K C ) <g1:< F K C )>`
 
-.. step:: construct
+.. step:: assert ∵ equal_arcs_equal_angles, asa_aas_congruence <G.134, G.51>
 
-   :fn:`segment <G.14>`\ (:g:`F <g1:F>`, :g:`B <g1:B>`) → :g:`/ F B / <g1:/ F B />`, :fn:`segment <G.14>`\ (:g:`F <g1:F>`, :g:`K <g1:K>`) → :g:`/ F K / <g1:/ F K />`, :fn:`segment <G.14>`\ (:g:`F <g1:F>`, :g:`C <g1:C>`) → :g:`/ F C / <g1:/ F C />`, :fn:`segment <G.14>`\ (:g:`F <g1:F>`, :g:`L <g1:L>`) → :g:`/ F L / <g1:/ F L />`, :fn:`segment <G.14>`\ (:g:`F <g1:F>`, :g:`D <g1:D>`) → :g:`/ F D / <g1:/ F D />`
+   :g:`( B C ) <g1:( B C )>` :eq:`= <g1:( B C ) = g1:( C D )>` :g:`( C D ) <g1:( C D )>` → :g:`< B F C ) <g1:< B F C )>` :eq:`= <g1:< B F C ) = g1:< C F D )>` :g:`< C F D ) <g1:< C F D )>` → halves :g:`< K F C ) <g1:< K F C )>` :eq:`= <g1:< K F C ) = g1:< C F L )>` :g:`< L F C ) <g1:< C F L )>`, with :g:`< F C K ) <g1:< F C K )>` :eq:`= <g1:< F C K ) = g1:< F C L )>` :g:`< F C L ) <g1:< F C L )>` and :g:`/ F C / <g1:/ F C />` common → :g:`/ K C / <g1:/ K C />` :eq:`= <g1:/ K C / = g1:/ C L />` :g:`/ C L / <g1:/ C L />` and :g:`< F K C ) <g1:< F K C )>` :eq:`= <g1:< F K C ) = g1:< F L C )>` :g:`< F L C ) <g1:< F L C )>`
 
-.. step:: assert ∵ segment_touch_circle <G.120>
+.. step:: assert ∵ equal_transitive <G.16>
 
-   :g:`/ K L / <g1:/ K L />` touches :g:`( A B C D E ) <g1:( A B C D E )>` at :g:`C <g1:C>`, and :g:`/ F C / <g1:/ F C />` has been joined from the center :g:`F <g1:F>` to the point of contact at :g:`C <g1:C>` → therefore :g:`/ F C / <g1:/ F C />` is perpendicular to :g:`/ K L / <g1:/ K L />`
+   :g:`/ K L / <g1:/ K L />` = 2 :g:`/ K C / <g1:/ K C />` = 2 :g:`/ B K / <g1:/ B K />` = :g:`/ H K / <g1:/ H K />` → :g:`/ G H / <g1:/ G H />` :eq:`= <g1:/ G H / = g1:/ H K / = g1:/ K L / = g1:/ L M / = g1:/ M G />` :g:`/ H K / <g1:/ H K />` = :g:`/ K L / <g1:/ K L />` = :g:`/ L M / <g1:/ L M />` = :g:`/ M G / <g1:/ M G />`, and doubles :g:`< G H K ) <g1:< K H G )>` :eq:`= <g1:< K H G ) = g1:< B K C ) = g1:< D L C ) = g1:< G M L ) = g1:< H G M )>` :g:`< H K L ) <g1:< B K C )>` = :g:`< K L M ) <g1:< D L C )>` = :g:`< L M G ) <g1:< G M L )>` = :g:`< M G H ) <g1:< H G M )>`
 
-.. step:: assert
+.. step:: conclude ∵ polygon_said_circumscribed_def <G.150>
 
-   each of the :term:`angles <G.22>` at :g:`< K C L ) <g1:< K C L )>` is right
-
-.. step:: assert
-
-   The same reason
-
-.. step:: assert
-
-   The angles at :g:`< F B K ) <g1:< F B K )>`, :g:`< F D L ) <g1:< F D L )>` are also :eq:`right <g1:< F B K ) = g1:< F D L )>`
-
-.. step:: assert
-
-   since :g:`< F C K ) <g1:< F C K )>` is right,
-
-.. step:: assert
-
-   the :term:`square <G.63>` on :g:`/ F K / <g1:/ F K />` is equal to the squares on :g:`/ F C / <g1:/ F C />`, :g:`/ C K / <g1:/ C K />`
-
-.. step:: assert ∵ pythagorean_theorem <G.79>
-
-   The same reason
-
-.. step:: assert
-
-   The square on :g:`/ F K / <g1:/ F K />` is also equal to the squares on :g:`/ F B / <g1:/ F B />`, :g:`/ B K / <g1:/ B K />`
-
-.. step:: assert
-
-   So that the squares on :g:`/ F C / <g1:/ F C />`, :g:`/ C K / <g1:/ C K />` are equal to the squares on :g:`/ F B / <g1:/ F B />`, :g:`/ B K / <g1:/ B K />`,
-
-.. step:: assert
-
-   Of which the square on :g:`/ F C / <g1:/ F C />` :eq:`= <g1:/ F C / = g1:/ F B />` the square on :g:`/ F B / <g1:/ F B />`
-
-.. step:: assert
-
-   the square on :g:`/ C K / <g1:/ C K />` which remains :eq:`= <g1:/ C K / = g1:/ B K />` the square on :g:`/ B K / <g1:/ B K />`
-
-.. step:: assert
-
-   :g:`/ B K / <g1:/ B K />` :eq:`= <g1:/ B K / = g1:/ C K />` :g:`/ C K / <g1:/ C K />`
-
-.. step:: assert
-
-   since :g:`/ F B / <g1:/ F B />` :eq:`= <g1:/ F B / = g1:/ F C />` :g:`/ F C / <g1:/ F C />`, and :g:`/ F K / <g1:/ F K />` common, :g:`/ B F / <g1:/ B F />`, :g:`/ F K / <g1:/ F K />` :eq:`= <g1:/ B F / = g1:/ C F /; g1:/ F K / = g1:/ F K />` :g:`/ C F / <g1:/ C F />`, :g:`/ F K / <g1:/ F K />`
-
-.. step:: assert
-
-   :g:`/ B K / <g1:/ B K />` :eq:`= <g1:/ B K / = g1:/ C K />` to :g:`/ C K / <g1:/ C K />`
-
-.. step:: assert ∵ sss_congruence <G.29>
-
-   :g:`< B F K ) <g1:< B F K )>` :eq:`= <g1:< B F K ) = g1:< K F C )>` :g:`< K F C ) <g1:< K F C )>`, and :g:`< B K F ) <g1:< B K F )>` :eq:`to <g1:< B K F ) = g1:< F K C )>` :g:`< F K C ) <g1:< F K C )>`
-
-.. step:: assert
-
-   :g:`< B F C ) <g1:< B F C )>` is double of :g:`< K F C ) <g1:< K F C )>`, and :g:`< B K C ) <g1:< B K C )>` of :g:`< F K C ) <g1:< F K C )>`
-
-.. step:: assert
-
-   The same reason
-
-.. step:: assert
-
-   :g:`< C F D ) <g1:< C F D )>` is also double of :g:`< C F L ) <g1:< C F L )>`, and :g:`< D L C ) <g1:< D L C )>` of :g:`< F L C ) <g1:< F L C )>`
-
-.. step:: assert ∵ equal_circles_angles <G.134>
-
-   the arc :g:`( B C ) <g1:( B C )>` :eq:`= <g1:( B C ) = g1:( C D )>` :g:`( C D ) <g1:( C D )>` → :g:`< B F C ) <g1:< B F C )>` :eq:`= <g1:< B F C ) = g1:< C F D )>` :g:`< C F D ) <g1:< C F D )>`
-
-.. step:: assert
-
-   :g:`< B F C ) <g1:< B F C )>` is double of :g:`< K F C ) <g1:< K F C )>`, and :g:`< D F C ) <g1:< D F C )>` of :g:`< L F C ) <g1:< L F C )>`
-
-.. step:: assert
-
-   :g:`< K F C ) <g1:< K F C )>` :eq:`= <g1:< K F C ) = g1:< L F C )>` :g:`< L F C ) <g1:< L F C )>`
-
-.. step:: assert
-
-   :g:`< F C K ) <g1:< F C K )>` :eq:`= <g1:< F C K ) = g1:< F C L )>` :g:`< F C L ) <g1:< F C L )>`
-
-.. step:: assert
-
-   :g:`< F K C > <g1:< F K C >>`, :g:`< F L C > <g1:< F L C >>` are two triangles having two angles equal to two angles and one side equal to one side, namely :g:`/ F C / <g1:/ F C />` which is common to them
-
-.. step:: assert ∵ asa_aas_congruence <G.51>
-
-   they will also have the remaining sides equal to the remaining sides, and the remaining angle to the remaining angle
-
-.. step:: assert
-
-   :g:`/ K C / <g1:/ K C />` :eq:`= <g1:/ K C / = g1:/ C L />` :g:`/ C L / <g1:/ C L />`, and :g:`< F K C ) <g1:< F K C )>` :eq:`to <g1:< F K C ) = g1:< F L C )>` :g:`< F L C ) <g1:< F L C )>`
-
-.. step:: assert
-
-   since :g:`/ K C / <g1:/ K C />` :eq:`= <g1:/ K C / = g1:/ C L />` :g:`/ C L / <g1:/ C L />`,
-
-.. step:: assert
-
-   :g:`/ K L / <g1:/ K L />` is double of :g:`/ K C / <g1:/ K C />`
-
-.. step:: assert
-
-   The same reason it can be proved that
-
-.. step:: assert
-
-   :g:`/ H K / <g1:/ H K />` is also double of :g:`/ B K / <g1:/ B K />`
-
-.. step:: assert
-
-   :g:`/ B K / <g1:/ B K />` :eq:`= <g1:/ B K / = g1:/ K C />` :g:`/ K C / <g1:/ K C />`
-
-.. step:: assert
-
-   :g:`/ H K / <g1:/ H K />` :eq:`= <g1:/ H K / = g1:/ K L />` :g:`/ K L / <g1:/ K L />`
-
-.. step:: assert
-
-   Similarly each of :g:`/ H G / <g1:/ H G />`, :g:`/ G M / <g1:/ G M />`, :g:`/ M L / <g1:/ M L />` can also :eq:`= <g1:/ H G / = g1:/ G M / = g1:/ M L / = g1:/ H K / = g1:/ K L />` each of :g:`/ H K / <g1:/ H K />`, :g:`/ K L / <g1:/ K L />`
-
-.. step:: assert
-
-   the pentagon :g:`< G H K L M > <g1:< G H K L M >>` is :eq:`equilateral <g1:/ G H / = g1:/ H K / = g1:/ K L / = g1:/ L M / = g1:/ M G />`
-
-.. step:: assert
-
-   I say next that it is also :eq:`equiangular <g1:< G H K ) = g1:< H K L ) = g1:< K L M ) = g1:< L M G ) = g1:< M G H )>`
-
-.. step:: assert
-
-   :g:`< F K C ) <g1:< F K C )>` :eq:`= <g1:< F K C ) = g1:< F L C )>` :g:`< F L C ) <g1:< F L C )>`, and :g:`< H K L ) <g1:< H K L )>` was proved double of :g:`< F K C ) <g1:< F K C )>`, and :g:`< K L M ) <g1:< K L M )>` double of :g:`< F L C ) <g1:< F L C )>` → therefore :g:`< H K L ) <g1:< H K L )>` :eq:`= <g1:< H K L ) = g1:< K L M )>` :g:`< K L M ) <g1:< K L M )>`
-
-.. step:: assert
-
-   Similarly each of :g:`< K H G ) <g1:< K H G )>`, :g:`< H G M ) <g1:< H G M )>`, :g:`< G M L ) <g1:< G M L )>` can also :eq:`= <g1:< K H G ) = g1:< H G M ) = g1:< G M L ) = g1:< H K L ) = g1:< K L M )>` each of :g:`< H K L ) <g1:< H K L )>`, :g:`< K L M ) <g1:< K L M )>`
-
-.. step:: assert
-
-   the five angles :g:`< G H K ) <g1:< G H K )>`, :g:`< H K L ) <g1:< H K L )>`, :g:`< K L M ) <g1:< K L M )>`, :g:`< L M G ) <g1:< L M G )>`, :g:`< M G H ) <g1:< M G H )>` :eq:`= <g1:< G H K ) = g1:< H K L ) = g1:< K L M ) = g1:< L M G ) = g1:< M G H )>`
-
-.. step:: assert
-
-   the pentagon :g:`< G H K L M > <g1:< G H K L M >>` is :eq:`equiangular <g1:< G H K ) = g1:< H K L ) = g1:< K L M ) = g1:< L M G ) = g1:< M G H )>`
-
-.. step:: conclude
-
-   It was also proved :eq:`equilateral <g1:/ G H / = g1:/ H K / = g1:/ K L / = g1:/ L M / = g1:/ M G />`, and it has been circumscribed about :g:`( A B C D E ) <g1:( A B C D E )>`
+   :g:`< G H K L M > <g1:< G H K L M >>` is an equilateral and equiangular pentagon circumscribed about :g:`( A B C D E ) <g1:( A B C D E )>`
 
 Dependency Graph
 ----------------
@@ -289,46 +141,48 @@ Dependency Graph
      "G.79" [label="G.79", tooltip="G.79 (I.47): In a right-angled triangle, the square on the hypotenuse equals the sum of the squares on the two legs (Pythagorean Theorem).", fillcolor="#222244", URL="../G.79/index.html", target="_top"];
      "G.81" [label="G.81", tooltip="G.81 (II.def.1): Any rectangular parallelogram is said to becontained by the twosegments containing theright angle.", fillcolor="#224422", URL="../G.81/index.html", target="_top"];
      "G.86" [label="G.86", tooltip="G.86 (II.def.2): And in any parallelogrammic area let any one whatever of the parallelograms about itsdiameter with the two complements be called agnomon.", fillcolor="#224422", URL="../G.86/index.html", target="_top"];
-     "G.88" [label="G.88", tooltip="G.88 (II.6): If a segment be bisected and a segment be added to it in a segment, the rectangle contained by the whole with the added segment and the added segment together with the square on th...", fillcolor="#222244", URL="../G.88/index.html", target="_top"];
-     "G.93" [label="G.93", tooltip="G.93 (II.11): Cut a given segment so that the rectangle contained by the whole and one of the segments is equal to the square on the remaining segment.", fillcolor="#222244", URL="../G.93/index.html", target="_top"];
+     "G.88" [label="G.88", tooltip="G.88 (II.6): If a segment is bisected and a segment is added to it in a line, the rectangle contained by the whole with the added segment and the added segment together with the square on the h...", fillcolor="#222244", URL="../G.88/index.html", target="_top"];
+     "G.93" [label="G.93", tooltip="G.93 (II.11): Cut a given segment so that the rectangle contained by the whole and one of the segments equals the square on the remaining segment.", fillcolor="#222244", URL="../G.93/index.html", target="_top"];
      "G.96" [label="G.96", tooltip="G.96 (I.def.18): A semicircle is the figure contained by a diameter and the arc cut off by it.", fillcolor="#224422", URL="../G.96/index.html", target="_top"];
      "G.98" [label="G.98", tooltip="G.98 (III.1): Find the center of a given circle.", fillcolor="#222244", URL="../G.98/index.html", target="_top"];
-     "G.100" [label="G.100", tooltip="G.100 (III.3): If in a circle a segment through the center bisect a segment not through the center, it also cuts it at right angles; and if it cut it at right angles, it also bisects it.", fillcolor="#222244", URL="../G.100/index.html", target="_top"];
-     "G.102" [label="G.102", tooltip="G.102 (III.5): If two circles cut one another, they will not have the same center.", fillcolor="#222244", URL="../G.102/index.html", target="_top"];
-     "G.108" [label="G.108", tooltip="G.108 (III.10): A circle does not cut a circle at more points than two.", fillcolor="#222244", URL="../G.108/index.html", target="_top"];
+     "G.100" [label="G.100", tooltip="G.100 (III.3): A segment through the center of a circle bisects a chord not through the center if and only if it cuts the chord at right angles.", fillcolor="#222244", URL="../G.100/index.html", target="_top"];
+     "G.102" [label="G.102", tooltip="G.102 (III.5): Two intersecting circles do not have the same center.", fillcolor="#222244", URL="../G.102/index.html", target="_top"];
+     "G.108" [label="G.108", tooltip="G.108 (III.10): A circle does not intersect another circle at more than two points.", fillcolor="#222244", URL="../G.108/index.html", target="_top"];
      "G.111" [label="G.111", tooltip="G.111 (III.def.2): Asegment is said totouch a circle which, meeting thecircle and being produced, does not cut the circle.", fillcolor="#224422", URL="../G.111/index.html", target="_top"];
      "G.117" [label="G.117", tooltip="G.117 (III.def.7): Anangle of a segment is that contained by asegment and a arc of acircle.", fillcolor="#224422", URL="../G.117/index.html", target="_top"];
-     "G.118" [label="G.118", tooltip="G.118 (III.16): The segment drawn at right angles to the diameter of a circle from its extremity will fall outside the circle, and into the space between the segment and the arc another segment ca...", fillcolor="#222244", URL="../G.118/index.html", target="_top"];
-     "G.120" [label="G.120", tooltip="G.120 (III.18): If a segment touch a circle, and a segment be joined from the center to the point of contact, the segment so joined is perpendicular to the tangent.", fillcolor="#222244", URL="../G.120/index.html", target="_top"];
-     "G.121" [label="G.121", tooltip="G.121 (III.19): If a segment touch a circle, and from the point of contact a segment be drawn at right angles to the tangent, the center of the circle is on the segment so drawn.", fillcolor="#222244", URL="../G.121/index.html", target="_top"];
+     "G.118" [label="G.118", tooltip="G.118 (III.16): The line drawn at right angles to the diameter of a circle from its extremity falls outside the circle, no other line can be interposed between it and the arc, and the angle of the...", fillcolor="#222244", URL="../G.118/index.html", target="_top"];
+     "G.119" [label="G.119", tooltip="G.119 (III.17): From a given point, construct a line tangent to a given circle.", fillcolor="#222244", URL="../G.119/index.html", target="_top"];
+     "G.120" [label="G.120", tooltip="G.120 (III.18): If a line touches a circle, the segment joined from the center to the point of contact is perpendicular to the tangent.", fillcolor="#222244", URL="../G.120/index.html", target="_top"];
+     "G.121" [label="G.121", tooltip="G.121 (III.19): If a line touches a circle, the line drawn at right angles to the tangent from the point of contact passes through the center of the circle.", fillcolor="#222244", URL="../G.121/index.html", target="_top"];
      "G.122" [label="G.122", tooltip="G.122 (III.def.10): Asector of a circle is thefigure which, when anangle is constructed at thecenter of thecircle, is contained by thesegments containing the angle and the arc cut off by them.", fillcolor="#224422", URL="../G.122/index.html", target="_top"];
-     "G.123" [label="G.123", tooltip="G.123 (III.20): In a circle the angle at the center is double of the angle at the arc, when the angles have the same arc as base.", fillcolor="#222244", URL="../G.123/index.html", target="_top"];
-     "G.124" [label="G.124", tooltip="G.124 (III.21): In a circle the angles in the same segment are equal.", fillcolor="#222244", URL="../G.124/index.html", target="_top"];
-     "G.125" [label="G.125", tooltip="G.125 (III.22): The opposite angles of quadrilaterals in circles are equal to two right angles.", fillcolor="#222244", URL="../G.125/index.html", target="_top"];
+     "G.123" [label="G.123", tooltip="G.123 (III.20): In a circle, the angle at the center is double the angle at the circumference when the angles have the same arc as base.", fillcolor="#222244", URL="../G.123/index.html", target="_top"];
+     "G.124" [label="G.124", tooltip="G.124 (III.21): In a circle, angles in the same segment are equal to one another.", fillcolor="#222244", URL="../G.124/index.html", target="_top"];
+     "G.125" [label="G.125", tooltip="G.125 (III.22): The opposite angles of any quadrilateral inscribed in a circle sum to two right angles.", fillcolor="#222244", URL="../G.125/index.html", target="_top"];
      "G.126" [label="G.126", tooltip="G.126 (III.def.6): Asegment of a circle is thefigure contained by asegment and a arc of acircle.", fillcolor="#224422", URL="../G.126/index.html", target="_top"];
      "G.127" [label="G.127", tooltip="G.127 (III.def.11): Similar segments of circles are those which admit equalangles, or in which the angles are equal.", fillcolor="#224422", URL="../G.127/index.html", target="_top"];
-     "G.129" [label="G.129", tooltip="G.129 (III.24): Similar segments of circles on equal segments are equal.", fillcolor="#222244", URL="../G.129/index.html", target="_top"];
+     "G.128" [label="G.128", tooltip="G.128 (III.23): On the same segment and on the same side of it, there cannot be constructed two similar and unequal segments of circles.", fillcolor="#222244", URL="../G.128/index.html", target="_top"];
+     "G.129" [label="G.129", tooltip="G.129 (III.24): Similar segments of circles on equal segments are equal to one another.", fillcolor="#222244", URL="../G.129/index.html", target="_top"];
      "G.131" [label="G.131", tooltip="G.131 (III.def.1): Equal circles are those thediameters of which are equal, or the radii of which are equal.", fillcolor="#224422", URL="../G.131/index.html", target="_top"];
      "G.132" [label="G.132", tooltip="G.132 (III.def.9): And, when thesegments containing theangle cut off a arc, the angle is said tostand upon that arc.", fillcolor="#224422", URL="../G.132/index.html", target="_top"];
-     "G.133" [label="G.133", tooltip="G.133 (III.26): In equal circles equal angles stand on equal arcs, whether they stand at the centres or at the arcs.", fillcolor="#222244", URL="../G.133/index.html", target="_top"];
-     "G.134" [label="G.134", tooltip="G.134 (III.27): In equal circles angles standing on equal arcs are equal, whether they stand at the centres or at the arcs.", fillcolor="#222244", URL="../G.134/index.html", target="_top"];
-     "G.136" [label="G.136", tooltip="G.136 (III.29): In equal circles equal arcs are subtended by equal segments.", fillcolor="#222244", URL="../G.136/index.html", target="_top"];
+     "G.133" [label="G.133", tooltip="G.133 (III.26): In equal circles, equal angles stand on equal arcs, whether they stand at the centers or at the circumferences.", fillcolor="#222244", URL="../G.133/index.html", target="_top"];
+     "G.134" [label="G.134", tooltip="G.134 (III.27): In equal circles, angles standing on equal arcs are equal to one another, whether they stand at the centers or at the circumferences.", fillcolor="#222244", URL="../G.134/index.html", target="_top"];
+     "G.136" [label="G.136", tooltip="G.136 (III.29): In equal circles, equal arcs are subtended by equal chords.", fillcolor="#222244", URL="../G.136/index.html", target="_top"];
      "G.138" [label="G.138", tooltip="G.138 (III.def.8): Anangle in a segment is theangle which, when apoint is taken on the arc of the segment andsegments are joined from it to theextremities of the segment which is thebase of the segme...", fillcolor="#224422", URL="../G.138/index.html", target="_top"];
-     "G.139" [label="G.139", tooltip="G.139 (III.31): In a circle the angle in the semicircle is right, that in a greater segment less than a right angle, and that in a less segment greater than a right angle; and further the angle of...", fillcolor="#222244", URL="../G.139/index.html", target="_top"];
-     "G.140" [label="G.140", tooltip="G.140 (III.32): If a segment touch a circle, and from the point of contact there be drawn across, in the circle, a segment cutting the circle, the angles which it makes with the tangent will equal...", fillcolor="#222244", URL="../G.140/index.html", target="_top"];
-     "G.144" [label="G.144", tooltip="G.144 (III.36): If a point be taken outside a circle and from it there fall on the circle two segments, and if one of them cut the circle and the other touch it, the rectangle contained by the who...", fillcolor="#222244", URL="../G.144/index.html", target="_top"];
-     "G.145" [label="G.145", tooltip="G.145 (III.37): If a point be taken outside a circle and from the point there fall on the circle two segments, if one of them cut the circle, and the other fall on it, and if further the rectangle...", fillcolor="#222244", URL="../G.145/index.html", target="_top"];
+     "G.139" [label="G.139", tooltip="G.139 (III.31): In a circle, the angle in a semicircle is right, the angle in a greater segment is acute, and the angle in a lesser segment is obtuse.", fillcolor="#222244", URL="../G.139/index.html", target="_top"];
+     "G.140" [label="G.140", tooltip="G.140 (III.32): If a line touches a circle and a chord is drawn from the point of contact, the angles which the chord makes with the tangent equal the angles in the alternate segments of the circl...", fillcolor="#222244", URL="../G.140/index.html", target="_top"];
+     "G.144" [label="G.144", tooltip="G.144 (III.36): If from a point outside a circle a secant and a tangent are drawn, the rectangle contained by the whole secant and its external segment equals the square on the tangent.", fillcolor="#222244", URL="../G.144/index.html", target="_top"];
+     "G.145" [label="G.145", tooltip="G.145 (III.37): If from a point outside a circle a secant and a segment to the circle are drawn such that the rectangle on the whole secant and its external part equals the square on the segment, ...", fillcolor="#222244", URL="../G.145/index.html", target="_top"];
      "G.146" [label="G.146", tooltip="G.146 (IV.def.7): Asegment is said to befitted into a circle when itsextremities are on the arc of thecircle.", fillcolor="#224422", URL="../G.146/index.html", target="_top"];
-     "G.147" [label="G.147", tooltip="G.147 (IV.1): Into a given circle to fit a segment equal to a given segment which is not greater than the diameter of the circle.", fillcolor="#222244", URL="../G.147/index.html", target="_top"];
+     "G.147" [label="G.147", tooltip="G.147 (IV.1): Fit into a given circle a chord equal to a given segment not greater than the diameter of the circle.", fillcolor="#222244", URL="../G.147/index.html", target="_top"];
      "G.148" [label="G.148", tooltip="G.148 (IV.def.3): Apolygon is said to beinscribed in a circle when eachangle of the inscribedfigure lies on the arc of thecircle.", fillcolor="#224422", URL="../G.148/index.html", target="_top"];
      "G.149" [label="G.149", tooltip="G.149 (IV.2): Inscribe in a given circle a triangle equiangular with a given triangle.", fillcolor="#222244", URL="../G.149/index.html", target="_top"];
      "G.150" [label="G.150", tooltip="G.150 (IV.def.4): Apolygon is said to becircumscribed about a circle, when each side of the circumscribedfigure touches the arc of thecircle.", fillcolor="#224422", URL="../G.150/index.html", target="_top"];
      "G.155" [label="G.155", tooltip="G.155 (IV.def.2): Similarly afigure is said to becircumscribed about a figure when the respective sides of the circumscribed figure pass through the respectiveangles of that about which it is circum...", fillcolor="#224422", URL="../G.155/index.html", target="_top"];
      "G.156" [label="G.156", tooltip="G.156 (IV.def.6): Acircle is said to becircumscribed about a figure when the arc of the circle passes through eachangle of thefigure about which it is circumscribed.", fillcolor="#224422", URL="../G.156/index.html", target="_top"];
-     "G.157" [label="G.157", tooltip="G.157 (IV.5): Circumscribe about a given triangle a circle.", fillcolor="#222244", URL="../G.157/index.html", target="_top"];
-     "G.162" [label="G.162", tooltip="G.162 (IV.10): Construct an isosceles triangle having each of the angles at the base double of the remaining one.", fillcolor="#222244", URL="../G.162/index.html", target="_top"];
-     "G.163" [label="G.163", tooltip="G.163 (IV.11): Inscribe in a given circle an equilateral and equiangular pentagon.", fillcolor="#222244", URL="../G.163/index.html", target="_top"];
-     "G.164" [label="G.164", tooltip="G.164 (IV.12): Circumscribe about a given circle an equilateral and equiangular pentagon.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.157" [label="G.157", tooltip="G.157 (IV.5): Circumscribe a circle about a given triangle.", fillcolor="#222244", URL="../G.157/index.html", target="_top"];
+     "G.162" [label="G.162", tooltip="G.162 (IV.10): Construct an isosceles triangle having each of the angles at the base double the remaining angle.", fillcolor="#222244", URL="../G.162/index.html", target="_top"];
+     "G.163" [label="G.163", tooltip="G.163 (IV.11): Inscribe an equilateral and equiangular pentagon in a given circle.", fillcolor="#222244", URL="../G.163/index.html", target="_top"];
+     "G.164" [label="G.164", tooltip="G.164 (IV.12): Circumscribe an equilateral and equiangular pentagon about a given circle.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -356,8 +210,8 @@ Dependency Graph
      "G.59" -> "G.1";
      "G.75" -> "G.1";
      "G.79" -> "G.1";
-     "G.98" -> "G.1";
      "G.108" -> "G.1";
+     "G.119" -> "G.1";
      "G.120" -> "G.1";
      "G.121" -> "G.1";
      "G.129" -> "G.1";
@@ -365,10 +219,6 @@ Dependency Graph
      "G.140" -> "G.1";
      "G.144" -> "G.1";
      "G.145" -> "G.1";
-     "G.149" -> "G.1";
-     "G.157" -> "G.1";
-     "G.162" -> "G.1";
-     "G.164" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
      "G.6" -> "G.2";
@@ -387,7 +237,12 @@ Dependency Graph
      "G.55" -> "G.2";
      "G.56" -> "G.2";
      "G.58" -> "G.2";
-     "G.65" -> "G.2";
+     "G.88" -> "G.2";
+     "G.118" -> "G.2";
+     "G.119" -> "G.2";
+     "G.120" -> "G.2";
+     "G.121" -> "G.2";
+     "G.140" -> "G.2";
      "G.4" -> "G.3";
      "G.6" -> "G.3";
      "G.8" -> "G.3";
@@ -398,7 +253,6 @@ Dependency Graph
      "G.65" -> "G.3";
      "G.118" -> "G.3";
      "G.138" -> "G.3";
-     "G.145" -> "G.3";
      "G.146" -> "G.3";
      "G.7" -> "G.4";
      "G.10" -> "G.4";
@@ -442,19 +296,18 @@ Dependency Graph
      "G.93" -> "G.4";
      "G.98" -> "G.4";
      "G.100" -> "G.4";
-     "G.108" -> "G.4";
      "G.111" -> "G.4";
      "G.117" -> "G.4";
      "G.118" -> "G.4";
+     "G.119" -> "G.4";
      "G.120" -> "G.4";
      "G.121" -> "G.4";
      "G.122" -> "G.4";
-     "G.123" -> "G.4";
      "G.124" -> "G.4";
      "G.126" -> "G.4";
+     "G.128" -> "G.4";
      "G.129" -> "G.4";
      "G.132" -> "G.4";
-     "G.133" -> "G.4";
      "G.136" -> "G.4";
      "G.138" -> "G.4";
      "G.139" -> "G.4";
@@ -463,9 +316,7 @@ Dependency Graph
      "G.145" -> "G.4";
      "G.146" -> "G.4";
      "G.147" -> "G.4";
-     "G.149" -> "G.4";
-     "G.157" -> "G.4";
-     "G.163" -> "G.4";
+     "G.162" -> "G.4";
      "G.6" -> "G.5";
      "G.7" -> "G.5";
      "G.10" -> "G.6";
@@ -485,7 +336,6 @@ Dependency Graph
      "G.150" -> "G.9";
      "G.155" -> "G.9";
      "G.156" -> "G.9";
-     "G.157" -> "G.9";
      "G.11" -> "G.10";
      "G.15" -> "G.10";
      "G.17" -> "G.10";
@@ -501,6 +351,8 @@ Dependency Graph
      "G.111" -> "G.10";
      "G.117" -> "G.10";
      "G.118" -> "G.10";
+     "G.119" -> "G.10";
+     "G.120" -> "G.10";
      "G.121" -> "G.10";
      "G.122" -> "G.10";
      "G.123" -> "G.10";
@@ -508,9 +360,6 @@ Dependency Graph
      "G.125" -> "G.10";
      "G.126" -> "G.10";
      "G.129" -> "G.10";
-     "G.133" -> "G.10";
-     "G.134" -> "G.10";
-     "G.136" -> "G.10";
      "G.139" -> "G.10";
      "G.140" -> "G.10";
      "G.144" -> "G.10";
@@ -539,14 +388,8 @@ Dependency Graph
      "G.121" -> "G.11";
      "G.122" -> "G.11";
      "G.123" -> "G.11";
-     "G.124" -> "G.11";
      "G.133" -> "G.11";
      "G.134" -> "G.11";
-     "G.136" -> "G.11";
-     "G.140" -> "G.11";
-     "G.144" -> "G.11";
-     "G.145" -> "G.11";
-     "G.157" -> "G.11";
      "G.13" -> "G.12";
      "G.17" -> "G.12";
      "G.20" -> "G.12";
@@ -577,10 +420,7 @@ Dependency Graph
      "G.72" -> "G.12";
      "G.78" -> "G.12";
      "G.79" -> "G.12";
-     "G.100" -> "G.12";
      "G.125" -> "G.12";
-     "G.139" -> "G.12";
-     "G.140" -> "G.12";
      "G.148" -> "G.12";
      "G.149" -> "G.12";
      "G.150" -> "G.12";
@@ -603,6 +443,7 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.51" -> "G.14";
      "G.58" -> "G.14";
      "G.60" -> "G.14";
@@ -611,11 +452,17 @@ Dependency Graph
      "G.79" -> "G.14";
      "G.88" -> "G.14";
      "G.93" -> "G.14";
+     "G.98" -> "G.14";
      "G.100" -> "G.14";
      "G.102" -> "G.14";
+     "G.108" -> "G.14";
+     "G.118" -> "G.14";
+     "G.119" -> "G.14";
+     "G.121" -> "G.14";
      "G.123" -> "G.14";
      "G.124" -> "G.14";
      "G.125" -> "G.14";
+     "G.128" -> "G.14";
      "G.133" -> "G.14";
      "G.136" -> "G.14";
      "G.139" -> "G.14";
@@ -632,7 +479,9 @@ Dependency Graph
      "G.20" -> "G.15";
      "G.21" -> "G.15";
      "G.47" -> "G.15";
+     "G.119" -> "G.15";
      "G.147" -> "G.15";
+     "G.157" -> "G.15";
      "G.162" -> "G.15";
      "G.17" -> "G.16";
      "G.20" -> "G.16";
@@ -640,29 +489,54 @@ Dependency Graph
      "G.37" -> "G.16";
      "G.39" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.56" -> "G.16";
+     "G.59" -> "G.16";
      "G.64" -> "G.16";
      "G.65" -> "G.16";
+     "G.66" -> "G.16";
+     "G.70" -> "G.16";
+     "G.75" -> "G.16";
+     "G.102" -> "G.16";
+     "G.124" -> "G.16";
+     "G.125" -> "G.16";
+     "G.134" -> "G.16";
+     "G.139" -> "G.16";
+     "G.144" -> "G.16";
+     "G.145" -> "G.16";
+     "G.147" -> "G.16";
+     "G.149" -> "G.16";
+     "G.157" -> "G.16";
+     "G.164" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
      "G.34" -> "G.17";
      "G.20" -> "G.18";
      "G.25" -> "G.18";
+     "G.39" -> "G.18";
      "G.41" -> "G.18";
      "G.42" -> "G.18";
      "G.45" -> "G.18";
+     "G.53" -> "G.18";
      "G.58" -> "G.18";
      "G.59" -> "G.18";
      "G.66" -> "G.18";
      "G.93" -> "G.18";
+     "G.108" -> "G.18";
      "G.123" -> "G.18";
+     "G.139" -> "G.18";
      "G.20" -> "G.19";
      "G.25" -> "G.19";
      "G.39" -> "G.19";
      "G.40" -> "G.19";
      "G.64" -> "G.19";
      "G.72" -> "G.19";
+     "G.93" -> "G.19";
+     "G.123" -> "G.19";
+     "G.133" -> "G.19";
+     "G.140" -> "G.19";
+     "G.144" -> "G.19";
      "G.21" -> "G.20";
      "G.25" -> "G.21";
      "G.27" -> "G.21";
@@ -672,8 +546,10 @@ Dependency Graph
      "G.43" -> "G.21";
      "G.45" -> "G.21";
      "G.47" -> "G.21";
+     "G.51" -> "G.21";
      "G.75" -> "G.21";
      "G.93" -> "G.21";
+     "G.147" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
      "G.27" -> "G.22";
@@ -708,11 +584,8 @@ Dependency Graph
      "G.77" -> "G.22";
      "G.78" -> "G.22";
      "G.79" -> "G.22";
-     "G.93" -> "G.22";
-     "G.98" -> "G.22";
      "G.100" -> "G.22";
      "G.118" -> "G.22";
-     "G.120" -> "G.22";
      "G.122" -> "G.22";
      "G.123" -> "G.22";
      "G.124" -> "G.22";
@@ -721,7 +594,6 @@ Dependency Graph
      "G.132" -> "G.22";
      "G.133" -> "G.22";
      "G.134" -> "G.22";
-     "G.136" -> "G.22";
      "G.138" -> "G.22";
      "G.139" -> "G.22";
      "G.140" -> "G.22";
@@ -729,10 +601,9 @@ Dependency Graph
      "G.155" -> "G.22";
      "G.156" -> "G.22";
      "G.162" -> "G.22";
-     "G.163" -> "G.22";
-     "G.164" -> "G.22";
      "G.24" -> "G.23";
      "G.29" -> "G.23";
+     "G.129" -> "G.23";
      "G.25" -> "G.24";
      "G.27" -> "G.24";
      "G.32" -> "G.24";
@@ -742,10 +613,12 @@ Dependency Graph
      "G.62" -> "G.24";
      "G.64" -> "G.24";
      "G.79" -> "G.24";
+     "G.119" -> "G.24";
      "G.133" -> "G.24";
      "G.136" -> "G.24";
      "G.157" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.100" -> "G.25";
@@ -755,8 +628,17 @@ Dependency Graph
      "G.162" -> "G.25";
      "G.27" -> "G.26";
      "G.28" -> "G.26";
+     "G.39" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.51" -> "G.26";
+     "G.98" -> "G.26";
+     "G.102" -> "G.26";
+     "G.120" -> "G.26";
+     "G.121" -> "G.26";
+     "G.134" -> "G.26";
+     "G.139" -> "G.26";
      "G.162" -> "G.27";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
@@ -772,7 +654,9 @@ Dependency Graph
      "G.32" -> "G.31";
      "G.163" -> "G.31";
      "G.41" -> "G.32";
+     "G.93" -> "G.32";
      "G.98" -> "G.32";
+     "G.108" -> "G.32";
      "G.157" -> "G.32";
      "G.34" -> "G.33";
      "G.37" -> "G.33";
@@ -791,38 +675,50 @@ Dependency Graph
      "G.81" -> "G.33";
      "G.98" -> "G.33";
      "G.100" -> "G.33";
-     "G.108" -> "G.33";
      "G.118" -> "G.33";
      "G.120" -> "G.33";
      "G.121" -> "G.33";
      "G.125" -> "G.33";
      "G.139" -> "G.33";
-     "G.140" -> "G.33";
-     "G.144" -> "G.33";
-     "G.145" -> "G.33";
      "G.157" -> "G.33";
      "G.37" -> "G.34";
      "G.75" -> "G.34";
+     "G.98" -> "G.34";
+     "G.108" -> "G.34";
+     "G.119" -> "G.34";
      "G.140" -> "G.34";
+     "G.157" -> "G.34";
      "G.37" -> "G.36";
+     "G.42" -> "G.36";
      "G.56" -> "G.36";
+     "G.59" -> "G.36";
      "G.62" -> "G.36";
      "G.64" -> "G.36";
      "G.72" -> "G.36";
      "G.79" -> "G.36";
+     "G.88" -> "G.36";
+     "G.123" -> "G.36";
+     "G.125" -> "G.36";
+     "G.139" -> "G.36";
+     "G.162" -> "G.36";
+     "G.163" -> "G.36";
      "G.39" -> "G.37";
      "G.40" -> "G.37";
      "G.42" -> "G.37";
      "G.56" -> "G.37";
      "G.59" -> "G.37";
+     "G.140" -> "G.37";
      "G.39" -> "G.38";
      "G.40" -> "G.38";
+     "G.121" -> "G.38";
      "G.79" -> "G.39";
      "G.41" -> "G.40";
      "G.56" -> "G.40";
+     "G.42" -> "G.41";
      "G.43" -> "G.41";
      "G.51" -> "G.41";
      "G.53" -> "G.41";
+     "G.128" -> "G.41";
      "G.118" -> "G.42";
      "G.120" -> "G.42";
      "G.139" -> "G.42";
@@ -879,9 +775,7 @@ Dependency Graph
      "G.118" -> "G.61";
      "G.131" -> "G.61";
      "G.139" -> "G.61";
-     "G.145" -> "G.61";
      "G.147" -> "G.61";
-     "G.162" -> "G.61";
      "G.64" -> "G.62";
      "G.65" -> "G.62";
      "G.66" -> "G.62";
@@ -895,8 +789,6 @@ Dependency Graph
      "G.93" -> "G.63";
      "G.144" -> "G.63";
      "G.145" -> "G.63";
-     "G.162" -> "G.63";
-     "G.164" -> "G.63";
      "G.65" -> "G.64";
      "G.66" -> "G.64";
      "G.88" -> "G.65";
@@ -907,9 +799,11 @@ Dependency Graph
      "G.88" -> "G.75";
      "G.93" -> "G.75";
      "G.78" -> "G.76";
+     "G.139" -> "G.76";
      "G.78" -> "G.77";
      "G.118" -> "G.77";
      "G.120" -> "G.77";
+     "G.139" -> "G.77";
      "G.79" -> "G.78";
      "G.93" -> "G.79";
      "G.144" -> "G.79";
@@ -918,27 +812,34 @@ Dependency Graph
      "G.93" -> "G.81";
      "G.144" -> "G.81";
      "G.145" -> "G.81";
-     "G.162" -> "G.81";
      "G.88" -> "G.86";
      "G.93" -> "G.88";
      "G.144" -> "G.88";
      "G.162" -> "G.93";
+     "G.118" -> "G.96";
      "G.139" -> "G.96";
-     "G.157" -> "G.96";
      "G.108" -> "G.98";
+     "G.119" -> "G.98";
+     "G.124" -> "G.98";
+     "G.136" -> "G.98";
+     "G.144" -> "G.98";
+     "G.145" -> "G.98";
      "G.164" -> "G.98";
      "G.144" -> "G.100";
      "G.108" -> "G.102";
      "G.129" -> "G.108";
      "G.118" -> "G.111";
+     "G.119" -> "G.111";
      "G.120" -> "G.111";
      "G.121" -> "G.111";
      "G.140" -> "G.111";
-     "G.145" -> "G.111";
+     "G.144" -> "G.111";
      "G.118" -> "G.117";
+     "G.119" -> "G.118";
      "G.145" -> "G.118";
      "G.149" -> "G.118";
      "G.164" -> "G.118";
+     "G.145" -> "G.119";
      "G.121" -> "G.120";
      "G.144" -> "G.120";
      "G.145" -> "G.120";
@@ -950,11 +851,12 @@ Dependency Graph
      "G.125" -> "G.124";
      "G.139" -> "G.125";
      "G.140" -> "G.125";
+     "G.128" -> "G.126";
      "G.140" -> "G.126";
-     "G.149" -> "G.126";
-     "G.162" -> "G.126";
+     "G.128" -> "G.127";
      "G.129" -> "G.127";
      "G.133" -> "G.127";
+     "G.129" -> "G.128";
      "G.133" -> "G.129";
      "G.133" -> "G.131";
      "G.134" -> "G.131";

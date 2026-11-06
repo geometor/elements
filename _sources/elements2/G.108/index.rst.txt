@@ -2,7 +2,7 @@
 :number: 108
 :canonical_id: G.108
 :original_id: III.10
-:title: G.108 circle cut circle
+:title: G.108 two circles intersect in at most two points
 :volume: II
 :book: III
 :type: prop
@@ -10,60 +10,49 @@
 :categories: theorem, proof, plane-geometry, circles
 :category: theorem, proof, plane-geometry, circles
 :tags: book-iii, point, segment, circle, right-angle, straight-line, centre, equality, reductio-ad-absurdum
-:dependencies: G.1, G.4, G.10, G.11, G.33, G.98, G.102
-:excerpt: A circle does not cut a circle at more points than two.
+:dependencies: G.1, G.10, G.11, G.14, G.18, G.32, G.34, G.98, G.102
+:excerpt: A circle does not intersect another circle at more than two points.
 
 .. _G.108:
 .. _III.10:
 
-G.108 circle cut circle
-=======================
+G.108 two circles intersect in at most two points
+=================================================
 
 .. rubric:: `III.10 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/10/>`_
 
 .. enunciation::
 
-   A :term:`circle <G.10>` does not cut a circle at more :term:`points <G.1>` than two.
+   A :term:`circle <G.10>` does not intersect another circle at more than two :term:`points <G.1>`.
 
 .. signature:: theorem
 
-   | :fn:`circle_cut_circle <G.108>`\ ()
-   | **prove** the two circles :g:`( A B C ) <g1:( A B C )>`, :g:`( D E F ) <g1:( D E F )>` which cut one another have the same center :g:`P <g1:P>` ⇒⇐
+   | :fn:`circles_intersect_at_most_two_points <G.108>`\ (:g:`( A B C ) <g1:( A B C )>`, :g:`( D E F ) <g1:( D E F )>`)
+   | **given** circles :g:`( A B C ) <g1:( A B C )>`, :g:`( D E F ) <g1:( D E F )>`
+   | **prove** | :g:`( A B C ) <g1:( A B C )>` ∩ :g:`( D E F ) <g1:( D E F )>` | ≤ 2
 
 .. picture:: g1.svg
    :alt: Diagram for Proposition 10
 
-.. step:: assert
+.. step:: given ∵ circle_radii <G.10>
 
-   If possible, let :g:`( A B C ) <g1:( A B C )>` cut :g:`( D E F ) <g1:( D E F )>` at more points than two, namely :g:`B <g1:B>`, :g:`G <g1:G>`, :g:`F <g1:F>`, :g:`H <g1:H>`
+   assume :g:`( A B C ) <g1:( A B C )>` cuts :g:`( D E F ) <g1:( D E F )>` at :g:`B <g1:B>`, :g:`G <g1:G>`, :g:`F <g1:F>`, :g:`H <g1:H>`
 
-.. step:: construct
+.. step:: construct ∵ segment, bisect_segment, perpendicular_at, extend <G.14, G.32, G.34, G.18>
 
-   Let :g:`/ B H / <g1:/ B H />`, :g:`/ B G / <g1:/ B G />` be joined and :eq:`bisected <g1:/ B K / = g1:/ K H /; g1:/ B L / = g1:/ L G />` at :g:`K <g1:K>`, :g:`L <g1:L>`, and from :g:`K <g1:K>`, :g:`L <g1:L>` let :g:`/ K C / <g1:/ K C />`, :g:`/ L M / <g1:/ L M />` be drawn :term:`at right angles <G.33>` to :g:`/ B H / <g1:/ B H />`, :g:`/ B G / <g1:/ B G />` and carried through to :g:`A <g1:A>`, :g:`E <g1:E>`.
+   join :g:`/ B H / <g1:/ B H />`, :g:`/ B G / <g1:/ B G />`, bisect at :g:`K <g1:K>`, :g:`L <g1:L>` (:g:`/ B K / <g1:/ B K />` :eq:`= <g1:/ B K / = g1:/ K H />` :g:`/ K H / <g1:/ K H />`, :g:`/ B L / <g1:/ B L />` :eq:`= <g1:/ B L / = g1:/ L G />` :g:`/ L G / <g1:/ L G />`); draw :g:`/ A C / <g1:/ A C />` ⊥ :g:`/ B H / <g1:/ B H />` at :g:`K <g1:K>` and :g:`/ M E / <g1:/ M E />` ⊥ :g:`/ B G / <g1:/ B G />` at :g:`L <g1:L>`
 
 .. step:: assert ∵ find_circle_center <G.98>
 
-   in :g:`( A B C ) <g1:( A B C )>` a :term:`segment <G.4>` :g:`/ A C / <g1:/ A C />` cuts a segment :g:`/ B H / <g1:/ B H />` into two :eq:`= <g1:/ B K / = g1:/ K H />` parts and at right angles → the :term:`center <G.11>` of :g:`( A B C ) <g1:( A B C )>` is on :g:`/ A C / <g1:/ A C />`
+   :g:`/ A C / <g1:/ A C />` bisects :g:`/ B H / <g1:/ B H />` ⊥ → center(:g:`( A B C ) <g1:( A B C )>`) ∈ :g:`/ A C / <g1:/ A C />`; :g:`/ N O / <g1:/ N O />` bisects :g:`/ B G / <g1:/ B G />` ⊥ → center(:g:`( A B C ) <g1:( A B C )>`) ∈ :g:`/ N O / <g1:/ N O />`
 
-.. step:: assert
+.. step:: assert ∵ find_circle_center, circle_center <G.98, G.11>
 
-   in the same circle :g:`( A B C ) <g1:( A B C )>` a segment :g:`/ N O / <g1:/ N O />` cuts a segment :g:`/ B G / <g1:/ B G />` into two :eq:`= <g1:/ B L / = g1:/ L G />` parts and at right angles → the center of :g:`( A B C ) <g1:( A B C )>` is on :g:`/ N O / <g1:/ N O />`
+   :g:`/ A C / <g1:/ A C />` ∩ :g:`/ N O / <g1:/ N O />` = :g:`P <g1:P>` → :g:`P <g1:P>` = center(:g:`( A B C ) <g1:( A B C )>`) and :g:`P <g1:P>` = center(:g:`( D E F ) <g1:( D E F )>`)
 
-.. step:: intersect
+.. step:: conclude ∵ intersecting_circles_distinct_centers <G.102>
 
-   It was also proved to be on :g:`/ A C / <g1:/ A C />`, and :g:`/ A C / <g1:/ A C />`, :g:`/ N O / <g1:/ N O />` meet at no point except at :g:`P <g1:P>`
-
-.. step:: assert ∵ circle_radii <G.10>
-
-   :g:`P <g1:P>` is the center of :g:`( A B C ) <g1:( A B C )>`
-
-.. step:: assert
-
-   Similarly we can prove that :g:`P <g1:P>` is also the center of :g:`( D E F ) <g1:( D E F )>`
-
-.. step:: conclude ∵ circles_cut_center <G.102>
-
-   the two circles :g:`( A B C ) <g1:( A B C )>`, :g:`( D E F ) <g1:( D E F )>` which cut one another have the same center :g:`P <g1:P>` ⇒⇐
+   :term:`center <G.11>`(:g:`( A B C ) <g1:( A B C )>`) = center(:g:`( D E F ) <g1:( D E F )>`) = :g:`P <g1:P>` ⇒⇐ (:fn:`intersecting_circles_distinct_centers <G.102>`\ ) → | :g:`( A B C ) <g1:( A B C )>` ∩ :g:`( D E F ) <g1:( D E F )>` | ≤ 2
 
 Dependency Graph
 ----------------
@@ -107,9 +96,10 @@ Dependency Graph
      "G.31" [label="G.31", tooltip="G.31 (I.9): Bisect a given angle.", fillcolor="#222244", URL="../G.31/index.html", target="_top"];
      "G.32" [label="G.32", tooltip="G.32 (I.10): Bisect a given segment.", fillcolor="#222244", URL="../G.32/index.html", target="_top"];
      "G.33" [label="G.33", tooltip="G.33 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.33/index.html", target="_top"];
+     "G.34" [label="G.34", tooltip="G.34 (I.11): Construct a segment at right angles to a given line from a given point on it.", fillcolor="#222244", URL="../G.34/index.html", target="_top"];
      "G.98" [label="G.98", tooltip="G.98 (III.1): Find the center of a given circle.", fillcolor="#222244", URL="../G.98/index.html", target="_top"];
-     "G.102" [label="G.102", tooltip="G.102 (III.5): If two circles cut one another, they will not have the same center.", fillcolor="#222244", URL="../G.102/index.html", target="_top"];
-     "G.108" [label="G.108", tooltip="G.108 (III.10): A circle does not cut a circle at more points than two.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.102" [label="G.102", tooltip="G.102 (III.5): Two intersecting circles do not have the same center.", fillcolor="#222244", URL="../G.102/index.html", target="_top"];
+     "G.108" [label="G.108", tooltip="G.108 (III.10): A circle does not intersect another circle at more than two points.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -126,7 +116,7 @@ Dependency Graph
      "G.29" -> "G.1";
      "G.31" -> "G.1";
      "G.32" -> "G.1";
-     "G.98" -> "G.1";
+     "G.34" -> "G.1";
      "G.108" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
@@ -136,6 +126,7 @@ Dependency Graph
      "G.22" -> "G.2";
      "G.30" -> "G.2";
      "G.33" -> "G.2";
+     "G.34" -> "G.2";
      "G.4" -> "G.3";
      "G.6" -> "G.3";
      "G.8" -> "G.3";
@@ -160,8 +151,8 @@ Dependency Graph
      "G.31" -> "G.4";
      "G.32" -> "G.4";
      "G.33" -> "G.4";
+     "G.34" -> "G.4";
      "G.98" -> "G.4";
-     "G.108" -> "G.4";
      "G.6" -> "G.5";
      "G.7" -> "G.5";
      "G.10" -> "G.6";
@@ -194,6 +185,7 @@ Dependency Graph
      "G.29" -> "G.12";
      "G.31" -> "G.12";
      "G.32" -> "G.12";
+     "G.34" -> "G.12";
      "G.17" -> "G.13";
      "G.25" -> "G.13";
      "G.17" -> "G.14";
@@ -201,23 +193,30 @@ Dependency Graph
      "G.25" -> "G.14";
      "G.28" -> "G.14";
      "G.31" -> "G.14";
+     "G.34" -> "G.14";
+     "G.98" -> "G.14";
      "G.102" -> "G.14";
+     "G.108" -> "G.14";
      "G.17" -> "G.15";
      "G.20" -> "G.15";
      "G.21" -> "G.15";
      "G.17" -> "G.16";
      "G.20" -> "G.16";
      "G.21" -> "G.16";
+     "G.102" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
+     "G.34" -> "G.17";
      "G.20" -> "G.18";
      "G.25" -> "G.18";
+     "G.108" -> "G.18";
      "G.20" -> "G.19";
      "G.25" -> "G.19";
      "G.21" -> "G.20";
      "G.25" -> "G.21";
      "G.31" -> "G.21";
+     "G.34" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
      "G.28" -> "G.22";
@@ -226,21 +225,27 @@ Dependency Graph
      "G.31" -> "G.22";
      "G.32" -> "G.22";
      "G.33" -> "G.22";
-     "G.98" -> "G.22";
+     "G.34" -> "G.22";
      "G.24" -> "G.23";
      "G.29" -> "G.23";
      "G.25" -> "G.24";
      "G.32" -> "G.24";
      "G.28" -> "G.25";
      "G.28" -> "G.26";
+     "G.98" -> "G.26";
+     "G.102" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
+     "G.34" -> "G.29";
      "G.98" -> "G.29";
      "G.31" -> "G.30";
      "G.32" -> "G.31";
      "G.98" -> "G.32";
+     "G.108" -> "G.32";
+     "G.34" -> "G.33";
      "G.98" -> "G.33";
-     "G.108" -> "G.33";
+     "G.98" -> "G.34";
+     "G.108" -> "G.34";
      "G.108" -> "G.98";
      "G.108" -> "G.102";
    }

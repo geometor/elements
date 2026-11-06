@@ -1,12 +1,12 @@
 :canonical_id: G.145
 :original_id: III.37
-:title: G.145 point taken outside
+:title: G.145 converse of the tangent-secant theorem
 :volume: II
 :book: III
 :type: prop
 
-G.145 point taken outside — Heath
-=================================
+G.145 converse of the tangent-secant theorem — Heath
+====================================================
 
 .. rubric:: `III.37 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/37/>`_
 
@@ -155,14 +155,17 @@ Dependency Graph
      "G.79" [label="G.79", tooltip="G.79 (I.47): In a right-angled triangle, the square on the hypotenuse equals the sum of the squares on the two legs (Pythagorean Theorem).", fillcolor="#222244", URL="../G.79/index.html", target="_top"];
      "G.81" [label="G.81", tooltip="G.81 (II.def.1): Any rectangular parallelogram is said to becontained by the twosegments containing theright angle.", fillcolor="#224422", URL="../G.81/index.html", target="_top"];
      "G.86" [label="G.86", tooltip="G.86 (II.def.2): And in any parallelogrammic area let any one whatever of the parallelograms about itsdiameter with the two complements be called agnomon.", fillcolor="#224422", URL="../G.86/index.html", target="_top"];
-     "G.88" [label="G.88", tooltip="G.88 (II.6): If a segment be bisected and a segment be added to it in a segment, the rectangle contained by the whole with the added segment and the added segment together with the square on th...", fillcolor="#222244", URL="../G.88/index.html", target="_top"];
-     "G.100" [label="G.100", tooltip="G.100 (III.3): If in a circle a segment through the center bisect a segment not through the center, it also cuts it at right angles; and if it cut it at right angles, it also bisects it.", fillcolor="#222244", URL="../G.100/index.html", target="_top"];
+     "G.88" [label="G.88", tooltip="G.88 (II.6): If a segment is bisected and a segment is added to it in a line, the rectangle contained by the whole with the added segment and the added segment together with the square on the h...", fillcolor="#222244", URL="../G.88/index.html", target="_top"];
+     "G.96" [label="G.96", tooltip="G.96 (I.def.18): A semicircle is the figure contained by a diameter and the arc cut off by it.", fillcolor="#224422", URL="../G.96/index.html", target="_top"];
+     "G.98" [label="G.98", tooltip="G.98 (III.1): Find the center of a given circle.", fillcolor="#222244", URL="../G.98/index.html", target="_top"];
+     "G.100" [label="G.100", tooltip="G.100 (III.3): A segment through the center of a circle bisects a chord not through the center if and only if it cuts the chord at right angles.", fillcolor="#222244", URL="../G.100/index.html", target="_top"];
      "G.111" [label="G.111", tooltip="G.111 (III.def.2): Asegment is said totouch a circle which, meeting thecircle and being produced, does not cut the circle.", fillcolor="#224422", URL="../G.111/index.html", target="_top"];
      "G.117" [label="G.117", tooltip="G.117 (III.def.7): Anangle of a segment is that contained by asegment and a arc of acircle.", fillcolor="#224422", URL="../G.117/index.html", target="_top"];
-     "G.118" [label="G.118", tooltip="G.118 (III.16): The segment drawn at right angles to the diameter of a circle from its extremity will fall outside the circle, and into the space between the segment and the arc another segment ca...", fillcolor="#222244", URL="../G.118/index.html", target="_top"];
-     "G.120" [label="G.120", tooltip="G.120 (III.18): If a segment touch a circle, and a segment be joined from the center to the point of contact, the segment so joined is perpendicular to the tangent.", fillcolor="#222244", URL="../G.120/index.html", target="_top"];
-     "G.144" [label="G.144", tooltip="G.144 (III.36): If a point be taken outside a circle and from it there fall on the circle two segments, and if one of them cut the circle and the other touch it, the rectangle contained by the who...", fillcolor="#222244", URL="../G.144/index.html", target="_top"];
-     "G.145" [label="G.145", tooltip="G.145 (III.37): If a point be taken outside a circle and from the point there fall on the circle two segments, if one of them cut the circle, and the other fall on it, and if further the rectangle...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.118" [label="G.118", tooltip="G.118 (III.16): The line drawn at right angles to the diameter of a circle from its extremity falls outside the circle, no other line can be interposed between it and the arc, and the angle of the...", fillcolor="#222244", URL="../G.118/index.html", target="_top"];
+     "G.119" [label="G.119", tooltip="G.119 (III.17): From a given point, construct a line tangent to a given circle.", fillcolor="#222244", URL="../G.119/index.html", target="_top"];
+     "G.120" [label="G.120", tooltip="G.120 (III.18): If a line touches a circle, the segment joined from the center to the point of contact is perpendicular to the tangent.", fillcolor="#222244", URL="../G.120/index.html", target="_top"];
+     "G.144" [label="G.144", tooltip="G.144 (III.36): If from a point outside a circle a secant and a tangent are drawn, the rectangle contained by the whole secant and its external segment equals the square on the tangent.", fillcolor="#222244", URL="../G.144/index.html", target="_top"];
+     "G.145" [label="G.145", tooltip="G.145 (III.37): If from a point outside a circle a secant and a segment to the circle are drawn such that the rectangle on the whole secant and its external part equals the square on the segment, ...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -189,6 +192,7 @@ Dependency Graph
      "G.58" -> "G.1";
      "G.75" -> "G.1";
      "G.79" -> "G.1";
+     "G.119" -> "G.1";
      "G.120" -> "G.1";
      "G.144" -> "G.1";
      "G.145" -> "G.1";
@@ -210,7 +214,10 @@ Dependency Graph
      "G.55" -> "G.2";
      "G.56" -> "G.2";
      "G.58" -> "G.2";
-     "G.65" -> "G.2";
+     "G.88" -> "G.2";
+     "G.118" -> "G.2";
+     "G.119" -> "G.2";
+     "G.120" -> "G.2";
      "G.4" -> "G.3";
      "G.6" -> "G.3";
      "G.8" -> "G.3";
@@ -220,7 +227,6 @@ Dependency Graph
      "G.60" -> "G.3";
      "G.65" -> "G.3";
      "G.118" -> "G.3";
-     "G.145" -> "G.3";
      "G.7" -> "G.4";
      "G.10" -> "G.4";
      "G.11" -> "G.4";
@@ -259,10 +265,12 @@ Dependency Graph
      "G.79" -> "G.4";
      "G.81" -> "G.4";
      "G.88" -> "G.4";
+     "G.98" -> "G.4";
      "G.100" -> "G.4";
      "G.111" -> "G.4";
      "G.117" -> "G.4";
      "G.118" -> "G.4";
+     "G.119" -> "G.4";
      "G.120" -> "G.4";
      "G.144" -> "G.4";
      "G.145" -> "G.4";
@@ -276,6 +284,7 @@ Dependency Graph
      "G.10" -> "G.9";
      "G.12" -> "G.9";
      "G.66" -> "G.9";
+     "G.96" -> "G.9";
      "G.11" -> "G.10";
      "G.15" -> "G.10";
      "G.17" -> "G.10";
@@ -283,10 +292,14 @@ Dependency Graph
      "G.21" -> "G.10";
      "G.47" -> "G.10";
      "G.61" -> "G.10";
+     "G.96" -> "G.10";
+     "G.98" -> "G.10";
      "G.100" -> "G.10";
      "G.111" -> "G.10";
      "G.117" -> "G.10";
      "G.118" -> "G.10";
+     "G.119" -> "G.10";
+     "G.120" -> "G.10";
      "G.144" -> "G.10";
      "G.145" -> "G.10";
      "G.15" -> "G.11";
@@ -295,10 +308,10 @@ Dependency Graph
      "G.21" -> "G.11";
      "G.47" -> "G.11";
      "G.61" -> "G.11";
+     "G.96" -> "G.11";
+     "G.98" -> "G.11";
      "G.100" -> "G.11";
      "G.120" -> "G.11";
-     "G.144" -> "G.11";
-     "G.145" -> "G.11";
      "G.13" -> "G.12";
      "G.17" -> "G.12";
      "G.20" -> "G.12";
@@ -327,7 +340,6 @@ Dependency Graph
      "G.72" -> "G.12";
      "G.78" -> "G.12";
      "G.79" -> "G.12";
-     "G.100" -> "G.12";
      "G.17" -> "G.13";
      "G.25" -> "G.13";
      "G.63" -> "G.13";
@@ -342,6 +354,7 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.51" -> "G.14";
      "G.58" -> "G.14";
      "G.60" -> "G.14";
@@ -349,31 +362,43 @@ Dependency Graph
      "G.70" -> "G.14";
      "G.79" -> "G.14";
      "G.88" -> "G.14";
+     "G.98" -> "G.14";
      "G.100" -> "G.14";
+     "G.118" -> "G.14";
+     "G.119" -> "G.14";
      "G.144" -> "G.14";
      "G.145" -> "G.14";
      "G.17" -> "G.15";
      "G.20" -> "G.15";
      "G.21" -> "G.15";
      "G.47" -> "G.15";
+     "G.119" -> "G.15";
      "G.17" -> "G.16";
      "G.20" -> "G.16";
      "G.21" -> "G.16";
      "G.37" -> "G.16";
      "G.39" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.56" -> "G.16";
      "G.64" -> "G.16";
      "G.65" -> "G.16";
+     "G.66" -> "G.16";
+     "G.70" -> "G.16";
+     "G.75" -> "G.16";
+     "G.144" -> "G.16";
+     "G.145" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
      "G.34" -> "G.17";
      "G.20" -> "G.18";
      "G.25" -> "G.18";
+     "G.39" -> "G.18";
      "G.41" -> "G.18";
      "G.42" -> "G.18";
      "G.45" -> "G.18";
+     "G.53" -> "G.18";
      "G.58" -> "G.18";
      "G.66" -> "G.18";
      "G.20" -> "G.19";
@@ -382,6 +407,7 @@ Dependency Graph
      "G.40" -> "G.19";
      "G.64" -> "G.19";
      "G.72" -> "G.19";
+     "G.144" -> "G.19";
      "G.21" -> "G.20";
      "G.25" -> "G.21";
      "G.31" -> "G.21";
@@ -390,6 +416,7 @@ Dependency Graph
      "G.43" -> "G.21";
      "G.45" -> "G.21";
      "G.47" -> "G.21";
+     "G.51" -> "G.21";
      "G.75" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
@@ -425,7 +452,6 @@ Dependency Graph
      "G.79" -> "G.22";
      "G.100" -> "G.22";
      "G.118" -> "G.22";
-     "G.120" -> "G.22";
      "G.24" -> "G.23";
      "G.29" -> "G.23";
      "G.25" -> "G.24";
@@ -436,18 +462,26 @@ Dependency Graph
      "G.62" -> "G.24";
      "G.64" -> "G.24";
      "G.79" -> "G.24";
+     "G.119" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.100" -> "G.25";
      "G.118" -> "G.25";
      "G.28" -> "G.26";
+     "G.39" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.51" -> "G.26";
+     "G.98" -> "G.26";
+     "G.120" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
      "G.48" -> "G.29";
+     "G.98" -> "G.29";
      "G.100" -> "G.29";
      "G.145" -> "G.29";
      "G.31" -> "G.30";
@@ -455,6 +489,7 @@ Dependency Graph
      "G.118" -> "G.30";
      "G.32" -> "G.31";
      "G.41" -> "G.32";
+     "G.98" -> "G.32";
      "G.34" -> "G.33";
      "G.37" -> "G.33";
      "G.38" -> "G.33";
@@ -469,19 +504,22 @@ Dependency Graph
      "G.78" -> "G.33";
      "G.79" -> "G.33";
      "G.81" -> "G.33";
+     "G.98" -> "G.33";
      "G.100" -> "G.33";
      "G.118" -> "G.33";
      "G.120" -> "G.33";
-     "G.144" -> "G.33";
-     "G.145" -> "G.33";
      "G.37" -> "G.34";
      "G.75" -> "G.34";
+     "G.98" -> "G.34";
+     "G.119" -> "G.34";
      "G.37" -> "G.36";
+     "G.42" -> "G.36";
      "G.56" -> "G.36";
      "G.62" -> "G.36";
      "G.64" -> "G.36";
      "G.72" -> "G.36";
      "G.79" -> "G.36";
+     "G.88" -> "G.36";
      "G.39" -> "G.37";
      "G.40" -> "G.37";
      "G.42" -> "G.37";
@@ -491,6 +529,7 @@ Dependency Graph
      "G.79" -> "G.39";
      "G.41" -> "G.40";
      "G.56" -> "G.40";
+     "G.42" -> "G.41";
      "G.43" -> "G.41";
      "G.51" -> "G.41";
      "G.53" -> "G.41";
@@ -533,8 +572,8 @@ Dependency Graph
      "G.70" -> "G.61";
      "G.72" -> "G.61";
      "G.86" -> "G.61";
+     "G.96" -> "G.61";
      "G.118" -> "G.61";
-     "G.145" -> "G.61";
      "G.64" -> "G.62";
      "G.65" -> "G.62";
      "G.66" -> "G.62";
@@ -566,12 +605,19 @@ Dependency Graph
      "G.145" -> "G.81";
      "G.88" -> "G.86";
      "G.144" -> "G.88";
+     "G.118" -> "G.96";
+     "G.119" -> "G.98";
+     "G.144" -> "G.98";
+     "G.145" -> "G.98";
      "G.144" -> "G.100";
      "G.118" -> "G.111";
+     "G.119" -> "G.111";
      "G.120" -> "G.111";
-     "G.145" -> "G.111";
+     "G.144" -> "G.111";
      "G.118" -> "G.117";
+     "G.119" -> "G.118";
      "G.145" -> "G.118";
+     "G.145" -> "G.119";
      "G.144" -> "G.120";
      "G.145" -> "G.120";
      "G.145" -> "G.144";

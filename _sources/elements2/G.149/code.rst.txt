@@ -1,12 +1,12 @@
 :canonical_id: G.149
 :original_id: IV.2
-:title: G.149 inscribe triangle in circle
+:title: G.149 inscribe a triangle in a circle equiangular with a triangle
 :volume: II
 :book: IV
 :type: prop
 
-G.149 inscribe triangle in circle — Code
-========================================
+G.149 inscribe a triangle in a circle equiangular with a triangle — Code
+========================================================================
 
 .. rubric:: `IV.2 <https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/02/>`_
 

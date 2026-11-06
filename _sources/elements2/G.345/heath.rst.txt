@@ -180,10 +180,11 @@ Dependency Graph
      "G.61" [label="G.61", tooltip="G.61 (I.def.17): A diameter of a circle is any segment drawn through the center and terminated in both directions by the arc of the circle; it bisects the circle.", fillcolor="#224422", URL="../G.61/index.html", target="_top"];
      "G.62" [label="G.62", tooltip="G.62 (I.34): In a parallelogram, opposite sides and opposite angles are equal, and the diagonal bisects the area.", fillcolor="#222244", URL="../G.62/index.html", target="_top"];
      "G.63" [label="G.63", tooltip="G.63 (I.def.22): Of quadrilateral figures, a square is equilateral and right-angled; an oblong is right-angled but not equilateral; a rhombus is equilateral but not right-angled; a rhomboid has opp...", fillcolor="#224422", URL="../G.63/index.html", target="_top"];
+     "G.72" [label="G.72", tooltip="G.72 (I.43): In any parallelogram, the complements of the parallelograms about the diagonal are equal in area.", fillcolor="#222244", URL="../G.72/index.html", target="_top"];
      "G.75" [label="G.75", tooltip="G.75 (I.46): Construct a square on a given segment.", fillcolor="#222244", URL="../G.75/index.html", target="_top"];
      "G.81" [label="G.81", tooltip="G.81 (II.def.1): Any rectangular parallelogram is said to becontained by the twosegments containing theright angle.", fillcolor="#224422", URL="../G.81/index.html", target="_top"];
-     "G.84" [label="G.84", tooltip="G.84 (II.3): If a segment be cut at random, the rectangle contained by the whole and one of the segments is equal to the rectangle contained by the segments and the square on the aforesaid segm...", fillcolor="#222244", URL="../G.84/index.html", target="_top"];
-     "G.85" [label="G.85", tooltip="G.85 (II.4): If a segment be cut at random, the square on the whole is equal to the squares on the segments and twice the rectangle contained by the segments.", fillcolor="#222244", URL="../G.85/index.html", target="_top"];
+     "G.84" [label="G.84", tooltip="G.84 (II.3): If a segment is cut at random, the rectangle contained by the whole and one of the parts equals the rectangle contained by the parts together with the square on that part.", fillcolor="#222244", URL="../G.84/index.html", target="_top"];
+     "G.85" [label="G.85", tooltip="G.85 (II.4): If a segment is cut at random, the square on the whole equals the squares on the parts together with twice the rectangle contained by the parts.", fillcolor="#222244", URL="../G.85/index.html", target="_top"];
      "G.169" [label="G.169", tooltip="G.169 (V.def.1): A magnitude is apart of a magnitude, the less of the greater, when it measures the greater.", fillcolor="#224422", URL="../G.169/index.html", target="_top"];
      "G.170" [label="G.170", tooltip="G.170 (V.def.2): The greater is amultiple of the less when it ismeasured by the less.", fillcolor="#224422", URL="../G.170/index.html", target="_top"];
      "G.171" [label="G.171", tooltip="G.171 (V.1): If there be any number of magnitudes whatever which are, respectively, equimultiples of any magnitudes equal in multitude, then, whatever multiple one of the magnitudes is of one, ...", fillcolor="#222244", URL="../G.171/index.html", target="_top"];
@@ -362,6 +363,7 @@ Dependency Graph
      "G.53" -> "G.12";
      "G.62" -> "G.12";
      "G.63" -> "G.12";
+     "G.72" -> "G.12";
      "G.17" -> "G.13";
      "G.25" -> "G.13";
      "G.63" -> "G.13";
@@ -377,6 +379,7 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.51" -> "G.14";
      "G.58" -> "G.14";
      "G.85" -> "G.14";
@@ -389,7 +392,10 @@ Dependency Graph
      "G.21" -> "G.16";
      "G.37" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.56" -> "G.16";
+     "G.75" -> "G.16";
+     "G.84" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
@@ -398,11 +404,13 @@ Dependency Graph
      "G.25" -> "G.18";
      "G.41" -> "G.18";
      "G.45" -> "G.18";
+     "G.53" -> "G.18";
      "G.58" -> "G.18";
      "G.84" -> "G.18";
      "G.20" -> "G.19";
      "G.25" -> "G.19";
      "G.40" -> "G.19";
+     "G.72" -> "G.19";
      "G.21" -> "G.20";
      "G.25" -> "G.21";
      "G.27" -> "G.21";
@@ -412,6 +420,7 @@ Dependency Graph
      "G.43" -> "G.21";
      "G.45" -> "G.21";
      "G.47" -> "G.21";
+     "G.51" -> "G.21";
      "G.75" -> "G.21";
      "G.279" -> "G.21";
      "G.24" -> "G.22";
@@ -439,7 +448,6 @@ Dependency Graph
      "G.62" -> "G.22";
      "G.63" -> "G.22";
      "G.75" -> "G.22";
-     "G.85" -> "G.22";
      "G.24" -> "G.23";
      "G.29" -> "G.23";
      "G.25" -> "G.24";
@@ -449,13 +457,16 @@ Dependency Graph
      "G.51" -> "G.24";
      "G.62" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.85" -> "G.25";
      "G.27" -> "G.26";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.51" -> "G.26";
      "G.85" -> "G.27";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
@@ -478,6 +489,8 @@ Dependency Graph
      "G.37" -> "G.36";
      "G.56" -> "G.36";
      "G.62" -> "G.36";
+     "G.72" -> "G.36";
+     "G.85" -> "G.36";
      "G.40" -> "G.37";
      "G.56" -> "G.37";
      "G.40" -> "G.38";
@@ -506,6 +519,8 @@ Dependency Graph
      "G.84" -> "G.58";
      "G.85" -> "G.58";
      "G.62" -> "G.61";
+     "G.72" -> "G.61";
+     "G.72" -> "G.62";
      "G.75" -> "G.62";
      "G.85" -> "G.62";
      "G.75" -> "G.63";
@@ -513,6 +528,7 @@ Dependency Graph
      "G.85" -> "G.63";
      "G.297" -> "G.63";
      "G.345" -> "G.63";
+     "G.85" -> "G.72";
      "G.84" -> "G.75";
      "G.85" -> "G.75";
      "G.84" -> "G.81";

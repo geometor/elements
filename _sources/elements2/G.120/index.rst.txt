@@ -2,7 +2,7 @@
 :number: 120
 :canonical_id: G.120
 :original_id: III.18
-:title: G.120 segment touch circle
+:title: G.120 radius to point of contact is perpendicular to tangent
 :volume: II
 :book: III
 :type: prop
@@ -10,72 +10,49 @@
 :categories: theorem, proof, plane-geometry, circles
 :category: theorem, proof, plane-geometry, circles
 :tags: book-iii, point, segment, circle, angle, straight-line, tangent-to-circle, centre, perpendicular, plane-angle, acute-angle, line, tangent, equality, reductio-ad-absurdum
-:dependencies: G.1, G.4, G.11, G.22, G.33, G.42, G.44, G.77, G.111
-:excerpt: If a segment touch a circle, and a segment be joined from the center to the point of contact, the segment so joined is perpendicular to the tangent.
+:dependencies: G.1, G.2, G.4, G.10, G.11, G.26, G.33, G.42, G.44, G.77, G.111
+:excerpt: If a line touches a circle, the segment joined from the center to the point of contact is perpendicular to the tangent.
 
 .. _G.120:
 .. _III.18:
 
-G.120 segment touch circle
-==========================
+G.120 radius to point of contact is perpendicular to tangent
+============================================================
 
 .. rubric:: `III.18 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/18/>`_
 
 .. enunciation::
 
-   If a :term:`segment <G.4>` :term:`touch a circle <G.111>`, and a segment be joined from the :term:`center <G.11>` to the :term:`point <G.1>` of contact, the segment so joined is :term:`perpendicular <G.33>` to the tangent.
+   If a :term:`line <G.2>` :term:`touches a circle <G.111>`, the :term:`segment <G.4>` joined from the :term:`center <G.11>` to the :term:`point <G.1>` of contact is :term:`perpendicular <G.33>` to the tangent.
 
 .. signature:: theorem
 
-   | :fn:`segment_touch_circle <G.120>`\ ()
-   | **prove** :g:`/ F C / <g1:/ F C />` is perpendicular to :g:`/ D E / <g1:/ D E />`
+   | :fn:`radius_perpendicular_to_tangent <G.120>`\ (:g:`( A B C ) <g1:( A B C )>`, :g:`/ D E / <g1:/ D E />`, :g:`C <g1:C>`, :g:`F <g1:F>`)
+   | **given** :g:`/ D E / <g1:/ D E />` touches :g:`( A B C ) <g1:( A B C )>` at :g:`C <g1:C>`, center(:g:`( A B C ) <g1:( A B C )>`) = :g:`F <g1:F>`, radius :g:`/ F C / <g1:/ F C />`
+   | **prove** :g:`/ F C / <g1:/ F C />` ⊥ :g:`/ D E / <g1:/ D E />`
 
 .. picture:: g1.svg
    :alt: Diagram for Proposition 18
 
-.. step:: construct
+.. step:: given ∵ segment_said_touch_def, circle_center <G.111, G.11>
 
-   Let a segment :g:`/ D E / <g1:/ D E />` touch :g:`( A B C ) <g1:( A B C )>` at :g:`C <g1:C>`, let the center :g:`F <g1:F>` of :g:`( A B C ) <g1:( A B C )>` be taken
+   :g:`/ D E / <g1:/ D E />` touches :g:`( A B C ) <g1:( A B C )>` at :g:`C <g1:C>`, center(:g:`( A B C ) <g1:( A B C )>`) = :g:`F <g1:F>`, join :g:`/ F C / <g1:/ F C />`
 
-.. step:: construct
+.. step:: construct ∵ right_angle_perpendicular <G.33>
 
-   Let :g:`/ F C / <g1:/ F C />` be joined from :g:`F <g1:F>` to :g:`C <g1:C>`
+   assume :g:`/ F C / <g1:/ F C />` is not ⊥ :g:`/ D E / <g1:/ D E />`, and draw :g:`/ F G / <g1:/ F G />` ⊥ :g:`/ D E / <g1:/ D E />` cutting :g:`( A B C ) <g1:( A B C )>` at :g:`B <g1:B>`
 
-.. step:: construct
+.. step:: assert ∵ two_angles_less_than_two_right, greater_angle_greater_side <G.42, G.44>
 
-   If not, let :g:`/ F G / <g1:/ F G />` be drawn from :g:`F <g1:F>` perpendicular to :g:`/ D E / <g1:/ D E />`.
+   :g:`< F G C ) <g1:< F G C )>` is right → :g:`< F C G ) <g1:< F C G )>` is acute → :g:`/ F C / <g1:/ F C />` > :g:`/ F G / <g1:/ F G />`
 
-.. step:: assert ∵ two_angles_less_than_two_right <G.42>
+.. step:: assert ∵ circle_radii, whole_greater_than_part <G.10, G.26>
 
-   :g:`< F G C ) <g1:< F G C )>` is right → :g:`< F C G ) <g1:< F C G )>` is acute
+   :g:`/ F C / <g1:/ F C />` :eq:`= <g1:/ F C / = g1:/ F B />` :g:`/ F B / <g1:/ F B />` → :g:`/ F B / <g1:/ F B />` > :g:`/ F G / <g1:/ F G />` (the less than the greater) ⇒⇐
 
-.. step:: assert ∵ greater_angle_greater_side <G.44>
+.. step:: conclude ∵ right_angle_perpendicular <G.33>
 
-   the greater :term:`angle <G.22>` is subtended by the greater side
-
-.. step:: assert
-
-   :g:`/ F C / <g1:/ F C />` > :g:`/ F G / <g1:/ F G />`
-
-.. step:: assert
-
-   :g:`/ F C / <g1:/ F C />` :eq:`= <g1:/ F C / = g1:/ F B />` :g:`/ F B / <g1:/ F B />`
-
-.. step:: assert
-
-   :g:`/ F B / <g1:/ F B />` is also greater than :g:`/ F G / <g1:/ F G />`, the less than the greater ⇒⇐
-
-.. step:: assert
-
-   :g:`/ F G / <g1:/ F G />` is not perpendicular to :g:`/ D E / <g1:/ D E />`
-
-.. step:: assert
-
-   Similarly we can prove that neither is any other segment except :g:`/ F C / <g1:/ F C />`
-
-.. step:: conclude
-
-   :g:`/ F C / <g1:/ F C />` is perpendicular to :g:`/ D E / <g1:/ D E />`
+   :g:`/ F C / <g1:/ F C />` ⊥ :g:`/ D E / <g1:/ D E />`
 
 Dependency Graph
 ----------------
@@ -130,7 +107,7 @@ Dependency Graph
      "G.44" [label="G.44", tooltip="G.44 (I.19): In any triangle, the greater angle is subtended by the greater side.", fillcolor="#222244", URL="../G.44/index.html", target="_top"];
      "G.77" [label="G.77", tooltip="G.77 (I.def.12): An acute angle is less than a right angle.", fillcolor="#224422", URL="../G.77/index.html", target="_top"];
      "G.111" [label="G.111", tooltip="G.111 (III.def.2): Asegment is said totouch a circle which, meeting thecircle and being produced, does not cut the circle.", fillcolor="#224422", URL="../G.111/index.html", target="_top"];
-     "G.120" [label="G.120", tooltip="G.120 (III.18): If a segment touch a circle, and a segment be joined from the center to the point of contact, the segment so joined is perpendicular to the tangent.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.120" [label="G.120", tooltip="G.120 (III.18): If a line touches a circle, the segment joined from the center to the point of contact is perpendicular to the tangent.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -162,6 +139,7 @@ Dependency Graph
      "G.34" -> "G.2";
      "G.37" -> "G.2";
      "G.40" -> "G.2";
+     "G.120" -> "G.2";
      "G.4" -> "G.3";
      "G.6" -> "G.3";
      "G.8" -> "G.3";
@@ -206,6 +184,7 @@ Dependency Graph
      "G.20" -> "G.10";
      "G.21" -> "G.10";
      "G.111" -> "G.10";
+     "G.120" -> "G.10";
      "G.15" -> "G.11";
      "G.17" -> "G.11";
      "G.20" -> "G.11";
@@ -276,16 +255,18 @@ Dependency Graph
      "G.43" -> "G.22";
      "G.44" -> "G.22";
      "G.77" -> "G.22";
-     "G.120" -> "G.22";
      "G.24" -> "G.23";
      "G.29" -> "G.23";
      "G.25" -> "G.24";
      "G.32" -> "G.24";
      "G.41" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
+     "G.120" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -301,10 +282,12 @@ Dependency Graph
      "G.120" -> "G.33";
      "G.37" -> "G.34";
      "G.37" -> "G.36";
+     "G.42" -> "G.36";
      "G.40" -> "G.37";
      "G.42" -> "G.37";
      "G.40" -> "G.38";
      "G.41" -> "G.40";
+     "G.42" -> "G.41";
      "G.43" -> "G.41";
      "G.120" -> "G.42";
      "G.44" -> "G.43";

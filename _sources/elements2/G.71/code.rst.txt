@@ -4,6 +4,7 @@
 :volume: I
 :book: I
 :type: prop
+:youtube_id: s7alGYVX1pI
 
 G.71 construct a parallelogram equal to a triangle — Code
 =========================================================

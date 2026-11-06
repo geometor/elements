@@ -10,8 +10,9 @@
 :categories: theorem, proof, plane-geometry
 :category: theorem, proof, plane-geometry
 :tags: book-i, segment, angle, straight-line, plane-angle, right-angle, parallel-straight-lines, parallel, plane, equality
-:dependencies: G.2, G.4, G.22, G.33, G.37, G.40, G.52, G.53
+:dependencies: G.2, G.4, G.16, G.19, G.22, G.33, G.37, G.40, G.52, G.53
 :excerpt: If a transversal cutting two lines makes the exterior angle equal to the opposite interior angle, or interior angles on the same side supplementary, the lines are parallel.
+:youtube_id: MvpWh3KdICk
 
 .. _G.54:
 .. _I.28:
@@ -27,55 +28,32 @@ G.54 equal corresponding angles imply parallel lines
 
 .. signature:: theorem
 
-   | :fn:`corresponding_angles_parallel <G.54>`\ ()
-   | **prove** :g:`/ A B / <g1:/ A B />` is parallel to :g:`/ C D / <g1:/ C D />`
+   | :fn:`corresponding_angles_parallel <G.54>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`, :g:`/ E F / <g1:/ E F />`)
+   | **given** :g:`/ E F / <g1:/ E F />` ∩ :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` (:g:`< E G B ) <g1:< E G B )>` :eq:`= <g1:< E G B ) = g1:< G H D )>` :g:`< G H D ) <g1:< G H D )>` ∨ :g:`< B G H ) <g1:< B G H )>` + :g:`< G H D ) <g1:< G H D )>` = 2∟)
+   | **prove** :g:`/ A B / <g1:/ A B />` ∥ :g:`/ C D / <g1:/ C D />`
 
 .. picture:: g1.svg
    :alt: Folio 0324 Figure 1 - Proposition 28
 
-.. step:: assert
+.. step:: given
 
-   Let :g:`/ E F / <g1:/ E F />` falling on :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` make the exterior angle :g:`< E G B ) <g1:< E G B )>` :eq:`= <g1:< E G B ) = g1:< G H D )>` to the interior and opposite angle :g:`< G H D ) <g1:< G H D )>`, or the interior angles on the same side, namely :g:`< B G H ) <g1:< B G H )>`, :g:`< G H D ) <g1:< G H D )>`, equal to two :term:`right angles <G.33>`
+   :g:`/ E F / <g1:/ E F />` ∩ :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` (:g:`< E G B ) <g1:< E G B )>` :eq:`= <g1:< E G B ) = g1:< G H D )>` :g:`< G H D ) <g1:< G H D )>` ∨ :g:`< B G H ) <g1:< B G H )>` + :g:`< G H D ) <g1:< G H D )>` = 2∟)
 
-.. step:: assert ∵ vertical_angles_equal <G.40>
+.. step:: assert ∵ vertical_angles_equal, equal_transitive <G.40, G.16>
 
-   :g:`< E G B ) <g1:< E G B )>` :eq:`= <g1:< E G B ) = g1:< G H D )>` :g:`< G H D ) <g1:< G H D )>`, while :g:`< E G B ) <g1:< E G B )>` :eq:`= <g1:< E G B ) = g1:< A G H )>` :g:`< A G H ) <g1:< A G H )>`
-
-.. step:: assert
-
-   :g:`< A G H ) <g1:< A G H )>` :eq:`= <g1:< A G H ) = g1:< G H D )>` :g:`< G H D ) <g1:< G H D )>`
-
-.. step:: assert
-
-   they are alternate
+   :g:`< E G B ) <g1:< E G B )>` :eq:`= <g1:< E G B ) = g1:< G H D )>` :g:`< G H D ) <g1:< G H D )>`, :g:`< E G B ) <g1:< E G B )>` :eq:`= <g1:< E G B ) = g1:< A G H )>` :g:`< A G H ) <g1:< A G H )>` → :g:`< A G H ) <g1:< A G H )>` :eq:`= <g1:< A G H ) = g1:< G H D )>` :g:`< G H D ) <g1:< G H D )>`
 
 .. step:: assert ∵ alternate_angles_parallel <G.53>
 
-   :g:`/ A B / <g1:/ A B />` is parallel to :g:`/ C D / <g1:/ C D />`
+   :g:`< A G H ) <g1:< A G H )>` :eq:`= <g1:< A G H ) = g1:< G H D )>` :g:`< G H D ) <g1:< G H D )>` → :g:`/ A B / <g1:/ A B />` ∥ :g:`/ C D / <g1:/ C D />`
 
-.. step:: assert ∵ adjacent_angles_supplementary <G.37>
+.. step:: assert ∵ adjacent_angles_supplementary, subtract_equals <G.37, G.19>
 
-   :g:`< B G H ) <g1:< B G H )>`, :g:`< G H D ) <g1:< G H D )>` are equal to two right angles, and :g:`< A G H ) <g1:< A G H )>`, :g:`< B G H ) <g1:< B G H )>` are also equal to two right angles
-
-.. step:: assert
-
-   :g:`< A G H ) <g1:< A G H )>`, :g:`< B G H ) <g1:< B G H )>` are equal to :g:`< B G H ) <g1:< B G H )>`, :g:`< G H D ) <g1:< G H D )>`
-
-.. step:: construct
-
-   Let :g:`< B G H ) <g1:< B G H )>` be subtracted from each
-
-.. step:: assert
-
-   :g:`< A G H ) <g1:< A G H )>` :eq:`= <g1:< A G H ) = g1:< G H D )>` :g:`< G H D ) <g1:< G H D )>`
-
-.. step:: assert
-
-   they are alternate
+   :g:`< B G H ) <g1:< B G H )>` + :g:`< G H D ) <g1:< G H D )>` = 2∟ = :g:`< A G H ) <g1:< A G H )>` + :g:`< B G H ) <g1:< B G H )>` → :g:`< A G H ) <g1:< A G H )>` :eq:`= <g1:< A G H ) = g1:< G H D )>` :g:`< G H D ) <g1:< G H D )>`
 
 .. step:: conclude ∵ alternate_angles_parallel <G.53>
 
-   :g:`/ A B / <g1:/ A B />` is parallel to :g:`/ C D / <g1:/ C D />`
+   :g:`< A G H ) <g1:< A G H )>` :eq:`= <g1:< A G H ) = g1:< G H D )>` :g:`< G H D ) <g1:< G H D )>` → :g:`/ A B / <g1:/ A B />` ∥ :g:`/ C D / <g1:/ C D />`
 
 Dependency Graph
 ----------------
@@ -239,6 +217,7 @@ Dependency Graph
      "G.21" -> "G.16";
      "G.37" -> "G.16";
      "G.40" -> "G.16";
+     "G.54" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
@@ -246,9 +225,11 @@ Dependency Graph
      "G.20" -> "G.18";
      "G.25" -> "G.18";
      "G.41" -> "G.18";
+     "G.53" -> "G.18";
      "G.20" -> "G.19";
      "G.25" -> "G.19";
      "G.40" -> "G.19";
+     "G.54" -> "G.19";
      "G.21" -> "G.20";
      "G.25" -> "G.21";
      "G.31" -> "G.21";
@@ -308,5 +289,6 @@ Required for
 .. toctree::
    :hidden:
 
+   video
    code
    heath

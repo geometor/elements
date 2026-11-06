@@ -1,12 +1,12 @@
 :canonical_id: G.88
 :original_id: II.6
-:title: G.88 bisected and extended segment
+:title: G.88 rectangle on bisected and extended segment
 :volume: I
 :book: II
 :type: prop
 
-G.88 bisected and extended segment — Heath
-==========================================
+G.88 rectangle on bisected and extended segment — Heath
+=======================================================
 
 .. rubric:: `II.6 <https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/06/>`_
 
@@ -137,7 +137,7 @@ Dependency Graph
      "G.75" [label="G.75", tooltip="G.75 (I.46): Construct a square on a given segment.", fillcolor="#222244", URL="../G.75/index.html", target="_top"];
      "G.81" [label="G.81", tooltip="G.81 (II.def.1): Any rectangular parallelogram is said to becontained by the twosegments containing theright angle.", fillcolor="#224422", URL="../G.81/index.html", target="_top"];
      "G.86" [label="G.86", tooltip="G.86 (II.def.2): And in any parallelogrammic area let any one whatever of the parallelograms about itsdiameter with the two complements be called agnomon.", fillcolor="#224422", URL="../G.86/index.html", target="_top"];
-     "G.88" [label="G.88", tooltip="G.88 (II.6): If a segment be bisected and a segment be added to it in a segment, the rectangle contained by the whole with the added segment and the added segment together with the square on th...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.88" [label="G.88", tooltip="G.88 (II.6): If a segment is bisected and a segment is added to it in a line, the rectangle contained by the whole with the added segment and the added segment together with the square on the h...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -179,7 +179,7 @@ Dependency Graph
      "G.55" -> "G.2";
      "G.56" -> "G.2";
      "G.58" -> "G.2";
-     "G.65" -> "G.2";
+     "G.88" -> "G.2";
      "G.4" -> "G.3";
      "G.6" -> "G.3";
      "G.8" -> "G.3";
@@ -283,6 +283,7 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.51" -> "G.14";
      "G.58" -> "G.14";
      "G.60" -> "G.14";
@@ -297,9 +298,11 @@ Dependency Graph
      "G.21" -> "G.16";
      "G.37" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.56" -> "G.16";
      "G.64" -> "G.16";
      "G.65" -> "G.16";
+     "G.75" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
@@ -308,6 +311,7 @@ Dependency Graph
      "G.25" -> "G.18";
      "G.41" -> "G.18";
      "G.45" -> "G.18";
+     "G.53" -> "G.18";
      "G.58" -> "G.18";
      "G.20" -> "G.19";
      "G.25" -> "G.19";
@@ -322,6 +326,7 @@ Dependency Graph
      "G.43" -> "G.21";
      "G.45" -> "G.21";
      "G.47" -> "G.21";
+     "G.51" -> "G.21";
      "G.75" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
@@ -359,11 +364,14 @@ Dependency Graph
      "G.62" -> "G.24";
      "G.64" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.51" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -387,6 +395,7 @@ Dependency Graph
      "G.62" -> "G.36";
      "G.64" -> "G.36";
      "G.72" -> "G.36";
+     "G.88" -> "G.36";
      "G.40" -> "G.37";
      "G.56" -> "G.37";
      "G.40" -> "G.38";

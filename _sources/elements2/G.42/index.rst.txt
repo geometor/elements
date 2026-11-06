@@ -10,8 +10,9 @@
 :categories: theorem, proof, plane-geometry
 :category: theorem, proof, plane-geometry
 :tags: book-i, point, segment, angle, triangle, trilateral, plane-angle, right-angle, plane
-:dependencies: G.12, G.18, G.22, G.33, G.37
+:dependencies: G.12, G.18, G.22, G.33, G.36, G.37, G.41
 :excerpt: In any triangle, the sum of any two angles is less than two right angles.
+:youtube_id: yhFj0tJDKjM
 
 .. _G.42:
 .. _I.17:
@@ -28,43 +29,35 @@ G.42 two angles of a triangle are less than two right angles
 .. signature:: theorem
 
    | :fn:`two_angles_less_than_two_right <G.42>`\ (:g:`< A B C > <g1:< A B C >>`)
-   | **given** :g:`< A B C > <g1:< A B C >>` be a triangle
-   | **prove** two angles of :g:`< A B C > <g1:< A B C >>` taken together in any manner are less than two right angles
+   | **given** :g:`< A B C > <g1:< A B C >>`
+   | **prove** :g:`< A B C ) <g1:< A B C )>` + :g:`< B C A ) <g1:< B C A )>` < 2∟, :g:`< B A C ) <g1:< B A C )>` + :g:`< A C B ) <g1:< A C B )>` < 2∟, :g:`< C A B ) <g1:< C A B )>` + :g:`< A B C ) <g1:< A B C )>` < 2∟
 
 .. picture:: g1.svg
    :alt: Proposition 17 figure
 
 .. step:: given
 
-   :g:`< A B C > <g1:< A B C >>` be a triangle
+   :g:`< A B C > <g1:< A B C >>`
 
 .. step:: construct
 
-   :fn:`extend <G.18>`\ (:g:`/ B C / <g1:/ B C />`) → :g:`D <g1:D>`
+   :fn:`extend <G.18>`\ (:g:`/ B C / <g1:/ B C />`) → :g:`/ C D / <g1:/ C D />`
 
-.. step:: assert
+.. step:: assert ∵ exterior_angle_greater <G.41>
 
-   :g:`< A C D ) <g1:< A C D )>` is an exterior angle of :g:`< A B C > <g1:< A B C >>` → it > the interior and opposite angle :g:`< A B C ) <g1:< A B C )>`
+   :g:`< A C D ) <g1:< A C D )>` > :g:`< A B C ) <g1:< A B C )>`
 
-.. step:: construct
+.. step:: assert ∵ add_equals <G.36>
 
-   Let :g:`< A C B ) <g1:< A C B )>` be added to each;
-
-.. step:: assert
-
-   :g:`< A C D ) <g1:< A C D )>`, :g:`< A C B ) <g1:< A C B )>` are greater than :g:`< A B C ) <g1:< A B C )>`, :g:`< B C A ) <g1:< B C A )>`
+   :g:`< A C D ) <g1:< A C D )>` > :g:`< A B C ) <g1:< A B C )>` → :g:`< A C D ) <g1:< A C D )>` + :g:`< A C B ) <g1:< A C B )>` > :g:`< A B C ) <g1:< A B C )>` + :g:`< B C A ) <g1:< B C A )>`
 
 .. step:: assert ∵ adjacent_angles_supplementary <G.37>
 
-   :g:`< A C D ) <g1:< A C D )>`, :g:`< A C B ) <g1:< A C B )>` are equal to two right angles
+   :g:`/ A C / <g1:/ A C />` on :g:`/ B D / <g1:/ B D />` → :g:`< A C D ) <g1:< A C D )>` + :g:`< A C B ) <g1:< A C B )>` = 2∟
 
-.. step:: assert
+.. step:: conclude ∵ adjacent_angles_supplementary <G.37>
 
-   :g:`< A B C ) <g1:< A B C )>`, :g:`< B C A ) <g1:< B C A )>` are less than two right angles
-
-.. step:: conclude
-
-   Similarly we can prove that :g:`< B A C ) <g1:< B A C )>`, :g:`< A C B ) <g1:< A C B )>` are also less than two right angles, and so are :g:`< C A B ) <g1:< C A B )>`, :g:`< A B C ) <g1:< A B C )>` as well
+   :g:`< A B C ) <g1:< A B C )>` + :g:`< B C A ) <g1:< B C A )>` < 2∟, :g:`< B A C ) <g1:< B A C )>` + :g:`< A C B ) <g1:< A C B )>` < 2∟, :g:`< C A B ) <g1:< C A B )>` + :g:`< A B C ) <g1:< A B C )>` < 2∟
 
 Dependency Graph
 ----------------
@@ -104,10 +97,16 @@ Dependency Graph
      "G.26" [label="G.26", tooltip="G.26 (I.cn.5): The whole is greater than the part.", fillcolor="#442222", URL="../G.26/index.html", target="_top"];
      "G.28" [label="G.28", tooltip="G.28 (I.7): On the same segment and on the same side, there cannot be constructed two distinct triangles with both pairs of conterminous sides equal.", fillcolor="#222244", URL="../G.28/index.html", target="_top"];
      "G.29" [label="G.29", tooltip="G.29 (I.8): Triangles with all three corresponding sides equal have their corresponding angles equal (SSS).", fillcolor="#222244", URL="../G.29/index.html", target="_top"];
+     "G.30" [label="G.30", tooltip="G.30 (I.def.9): A rectilineal angle is contained by two segments or lines.", fillcolor="#224422", URL="../G.30/index.html", target="_top"];
+     "G.31" [label="G.31", tooltip="G.31 (I.9): Bisect a given angle.", fillcolor="#222244", URL="../G.31/index.html", target="_top"];
+     "G.32" [label="G.32", tooltip="G.32 (I.10): Bisect a given segment.", fillcolor="#222244", URL="../G.32/index.html", target="_top"];
      "G.33" [label="G.33", tooltip="G.33 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.33/index.html", target="_top"];
      "G.34" [label="G.34", tooltip="G.34 (I.11): Construct a segment at right angles to a given line from a given point on it.", fillcolor="#222244", URL="../G.34/index.html", target="_top"];
      "G.36" [label="G.36", tooltip="G.36 (I.cn.2): If equals are added to equals, the wholes are equal.", fillcolor="#442222", URL="../G.36/index.html", target="_top"];
      "G.37" [label="G.37", tooltip="G.37 (I.13): A segment standing on a line makes either two right angles or adjacent angles summing to two right angles.", fillcolor="#222244", URL="../G.37/index.html", target="_top"];
+     "G.38" [label="G.38", tooltip="G.38 (I.post.4): All right angles are equal.", fillcolor="#444422", URL="../G.38/index.html", target="_top"];
+     "G.40" [label="G.40", tooltip="G.40 (I.15): Intersecting lines make their vertical angles equal.", fillcolor="#222244", URL="../G.40/index.html", target="_top"];
+     "G.41" [label="G.41", tooltip="G.41 (I.16): In any triangle, if one side is extended, the exterior angle is greater than either opposite interior angle.", fillcolor="#222244", URL="../G.41/index.html", target="_top"];
      "G.42" [label="G.42", tooltip="G.42 (I.17): In any triangle, the sum of any two angles is less than two right angles.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
@@ -123,17 +122,22 @@ Dependency Graph
      "G.25" -> "G.1";
      "G.28" -> "G.1";
      "G.29" -> "G.1";
+     "G.31" -> "G.1";
+     "G.32" -> "G.1";
      "G.34" -> "G.1";
      "G.37" -> "G.1";
+     "G.40" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
      "G.6" -> "G.2";
      "G.7" -> "G.2";
      "G.18" -> "G.2";
      "G.22" -> "G.2";
+     "G.30" -> "G.2";
      "G.33" -> "G.2";
      "G.34" -> "G.2";
      "G.37" -> "G.2";
+     "G.40" -> "G.2";
      "G.4" -> "G.3";
      "G.6" -> "G.3";
      "G.8" -> "G.3";
@@ -154,9 +158,14 @@ Dependency Graph
      "G.25" -> "G.4";
      "G.28" -> "G.4";
      "G.29" -> "G.4";
+     "G.30" -> "G.4";
+     "G.31" -> "G.4";
+     "G.32" -> "G.4";
      "G.33" -> "G.4";
      "G.34" -> "G.4";
      "G.37" -> "G.4";
+     "G.40" -> "G.4";
+     "G.41" -> "G.4";
      "G.6" -> "G.5";
      "G.7" -> "G.5";
      "G.10" -> "G.6";
@@ -181,7 +190,10 @@ Dependency Graph
      "G.25" -> "G.12";
      "G.28" -> "G.12";
      "G.29" -> "G.12";
+     "G.31" -> "G.12";
+     "G.32" -> "G.12";
      "G.34" -> "G.12";
+     "G.41" -> "G.12";
      "G.42" -> "G.12";
      "G.17" -> "G.13";
      "G.25" -> "G.13";
@@ -189,7 +201,9 @@ Dependency Graph
      "G.20" -> "G.14";
      "G.25" -> "G.14";
      "G.28" -> "G.14";
+     "G.31" -> "G.14";
      "G.34" -> "G.14";
+     "G.41" -> "G.14";
      "G.17" -> "G.15";
      "G.20" -> "G.15";
      "G.21" -> "G.15";
@@ -197,37 +211,63 @@ Dependency Graph
      "G.20" -> "G.16";
      "G.21" -> "G.16";
      "G.37" -> "G.16";
+     "G.40" -> "G.16";
      "G.20" -> "G.17";
+     "G.31" -> "G.17";
+     "G.32" -> "G.17";
      "G.34" -> "G.17";
      "G.20" -> "G.18";
      "G.25" -> "G.18";
+     "G.41" -> "G.18";
      "G.42" -> "G.18";
      "G.20" -> "G.19";
      "G.25" -> "G.19";
+     "G.40" -> "G.19";
      "G.21" -> "G.20";
      "G.25" -> "G.21";
+     "G.31" -> "G.21";
      "G.34" -> "G.21";
+     "G.41" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
      "G.28" -> "G.22";
      "G.29" -> "G.22";
+     "G.30" -> "G.22";
+     "G.31" -> "G.22";
+     "G.32" -> "G.22";
      "G.33" -> "G.22";
      "G.34" -> "G.22";
      "G.37" -> "G.22";
+     "G.40" -> "G.22";
+     "G.41" -> "G.22";
      "G.42" -> "G.22";
      "G.24" -> "G.23";
      "G.29" -> "G.23";
      "G.25" -> "G.24";
+     "G.32" -> "G.24";
+     "G.41" -> "G.24";
      "G.28" -> "G.25";
      "G.28" -> "G.26";
+     "G.41" -> "G.26";
      "G.29" -> "G.28";
+     "G.31" -> "G.29";
      "G.34" -> "G.29";
+     "G.31" -> "G.30";
+     "G.32" -> "G.31";
+     "G.41" -> "G.32";
      "G.34" -> "G.33";
      "G.37" -> "G.33";
+     "G.38" -> "G.33";
+     "G.40" -> "G.33";
      "G.42" -> "G.33";
      "G.37" -> "G.34";
      "G.37" -> "G.36";
+     "G.42" -> "G.36";
+     "G.40" -> "G.37";
      "G.42" -> "G.37";
+     "G.40" -> "G.38";
+     "G.41" -> "G.40";
+     "G.42" -> "G.41";
    }
 
 Required for
@@ -238,5 +278,6 @@ Required for
 .. toctree::
    :hidden:
 
+   video
    code
    heath

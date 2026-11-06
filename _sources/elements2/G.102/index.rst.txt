@@ -2,7 +2,7 @@
 :number: 102
 :canonical_id: G.102
 :original_id: III.5
-:title: G.102 circles cut center
+:title: G.102 intersecting circles have distinct centers
 :volume: II
 :book: III
 :type: prop
@@ -10,64 +10,53 @@
 :categories: theorem, proof, plane-geometry, circles
 :category: theorem, proof, plane-geometry, circles
 :tags: book-iii, point, segment, circle, centre, equality, reductio-ad-absurdum
-:dependencies: G.10, G.11, G.14
-:excerpt: If two circles cut one another, they will not have the same center.
+:dependencies: G.10, G.11, G.14, G.16, G.26
+:excerpt: Two intersecting circles do not have the same center.
 
 .. _G.102:
 .. _III.5:
 
-G.102 circles cut center
-========================
+G.102 intersecting circles have distinct centers
+================================================
 
 .. rubric:: `III.5 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/05/>`_
 
 .. enunciation::
 
-   If two :term:`circles <G.10>` cut one another, they will not have the same :term:`center <G.11>`.
+   Two intersecting :term:`circles <G.10>` do not have the same :term:`center <G.11>`.
 
 .. signature:: theorem
 
-   | :fn:`circles_cut_center <G.102>`\ ()
-   | **prove** they will not have the same center
+   | :fn:`intersecting_circles_distinct_centers <G.102>`\ (:g:`( A B C ) <g1:( A B C )>`, :g:`( C D G ) <g1:( C D G )>`, :g:`B <g1:B>`, :g:`C <g1:C>`)
+   | **given** :g:`( A B C ) <g1:( A B C )>` ∩ :g:`( C D G ) <g1:( C D G )>` = {:g:`B <g1:B>`, :g:`C <g1:C>`}
+   | **prove** center(:g:`( A B C ) <g1:( A B C )>`) ≠ center(:g:`( C D G ) <g1:( C D G )>`)
 
 .. picture:: g1.svg
    :alt: Proposition 5 Diagram
 
-.. step:: intersect
+.. step:: given ∵ circle_radii <G.10>
 
-   Let :g:`( A B C ) <g1:( A B C )>`, :g:`( C D G ) <g1:( C D G )>` cut one another at :g:`B <g1:B>`, :g:`C <g1:C>`
+   :g:`( A B C ) <g1:( A B C )>` and :g:`( C D G ) <g1:( C D G )>` cut one another at :g:`B <g1:B>`, :g:`C <g1:C>`
 
-.. step:: assert
+.. step:: construct ∵ circle_center, segment <G.11, G.14>
 
-   If possible, let it be :g:`E <g1:E>`
-
-.. step:: construct
-
-   :fn:`segment <G.14>`\ (:g:`E <g1:E>`, :g:`C <g1:C>`) → :g:`/ E C / <g1:/ E C />`
-
-.. step:: construct
-
-   Let :g:`/ E F G / <g1:/ E F G />` be drawn through at random.
+   Suppose :g:`E <g1:E>` is their common center; :fn:`segment <G.14>`\ (:g:`E <g1:E>`, :g:`C <g1:C>`) → :g:`/ E C / <g1:/ E C />`, draw :g:`/ E F G / <g1:/ E F G />` through at random
 
 .. step:: assert ∵ circle_radii <G.10>
 
-   :g:`( A B C ) <g1:( A B C )>` → :g:`/ E C / <g1:/ E C />` :eq:`= <g1:/ E C / = g1:/ E F />` :g:`/ E F / <g1:/ E F />`
+   :g:`E <g1:E>` is center of :g:`( A B C ) <g1:( A B C )>` → :g:`/ E C / <g1:/ E C />` :eq:`= <g1:/ E C / = g1:/ E F />` :g:`/ E F / <g1:/ E F />`
 
 .. step:: assert ∵ circle_radii <G.10>
 
-   :g:`( C D G ) <g1:( C D G )>` → :g:`/ E C / <g1:/ E C />` :eq:`= <g1:/ E C / = g1:/ E G />` :g:`/ E G / <g1:/ E G />`
+   :g:`E <g1:E>` is center of :g:`( C D G ) <g1:( C D G )>` → :g:`/ E C / <g1:/ E C />` :eq:`= <g1:/ E C / = g1:/ E G />` :g:`/ E G / <g1:/ E G />`
 
-.. step:: assert
+.. step:: assert ∵ equal_transitive, whole_greater_than_part <G.16, G.26>
 
-   :g:`/ E C / <g1:/ E C />` :eq:`= <g1:/ E C / = g1:/ E F />` :g:`/ E F / <g1:/ E F />` also
+   :g:`/ E F / <g1:/ E F />` :eq:`= <g1:/ E F / = g1:/ E G />` :g:`/ E G / <g1:/ E G />`, the less to the greater ⇒⇐
 
-.. step:: assert
+.. step:: conclude ∵ circle_center <G.11>
 
-   :g:`/ E F / <g1:/ E F />` :eq:`= <g1:/ E F / = g1:/ E G />` :g:`/ E G / <g1:/ E G />`, < > ⇒⇐
-
-.. step:: conclude
-
-   :g:`E <g1:E>` is not the center of :g:`( A B C ) <g1:( A B C )>`, :g:`( C D G ) <g1:( C D G )>`
+   :g:`E <g1:E>` is not the common center of :g:`( A B C ) <g1:( A B C )>` and :g:`( C D G ) <g1:( C D G )>`
 
 Dependency Graph
 ----------------
@@ -91,7 +80,9 @@ Dependency Graph
      "G.10" [label="G.10", tooltip="G.10 (I.def.15): A circle ( A B ) is a plane figure contained by one arc defined by a center A and a point B establishing its defining radius / A B /, such that all segments / A B /, / A C /, / A D...", fillcolor="#224422", URL="../G.10/index.html", target="_top"];
      "G.11" [label="G.11", tooltip="G.11 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
      "G.14" [label="G.14", tooltip="G.14 (I.post.1): Construct a segment / A B / between any two points A, B.", fillcolor="#444422", URL="../G.14/index.html", target="_top"];
-     "G.102" [label="G.102", tooltip="G.102 (III.5): If two circles cut one another, they will not have the same center.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.16" [label="G.16", tooltip="G.16 (I.cn.1): Things equal to the same thing are equal to one another.", fillcolor="#442222", URL="../G.16/index.html", target="_top"];
+     "G.26" [label="G.26", tooltip="G.26 (I.cn.5): The whole is greater than the part.", fillcolor="#442222", URL="../G.26/index.html", target="_top"];
+     "G.102" [label="G.102", tooltip="G.102 (III.5): Two intersecting circles do not have the same center.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -119,6 +110,8 @@ Dependency Graph
      "G.102" -> "G.10";
      "G.102" -> "G.11";
      "G.102" -> "G.14";
+     "G.102" -> "G.16";
+     "G.102" -> "G.26";
    }
 
 Required for

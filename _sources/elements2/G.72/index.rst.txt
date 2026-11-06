@@ -12,6 +12,7 @@
 :tags: book-i, segment, triangle, quadrilateral, diameter, trilateral, parallelogram, equality
 :dependencies: G.12, G.19, G.36, G.61, G.62
 :excerpt: In any parallelogram, the complements of the parallelograms about the diagonal are equal in area.
+:youtube_id: M1Be6vcXd2c
 
 .. _G.72:
 .. _I.43:
@@ -28,43 +29,31 @@ G.72 complements of parallelograms about the diagonal are equal
 .. signature:: theorem
 
    | :fn:`parallelogram_complements <G.72>`\ (:g:`< A B C D > <g1:< A B C D >>`, :g:`/ A C / <g1:/ A C />`)
-   | **given** :g:`< A B C D > <g1:< A B C D >>` be a parallelogram, :g:`/ A C / <g1:/ A C />` its diameter
-   | **prove** the complement :g:`< E B F K > <g1:< E B F K >>` is :eq:`equal <g1:< E B F K > = g1:< H K G D >>` to the complement :g:`< H K G D > <g1:< H K G D >>`
+   | **given** :g:`< A B C D > <g1:< A B C D >>`, :g:`/ A C / <g1:/ A C />`, :g:`< A E K H > <g1:< A E K H >>`, :g:`< K F C G > <g1:< K F C G >>`, :g:`< E B F K > <g1:< E B F K >>`, :g:`< H K G D > <g1:< H K G D >>`
+   | **prove** :g:`< E B F K > <g1:< E B F K >>` :eq:`= <g1:< E B F K > = g1:< H K G D >>` :g:`< H K G D > <g1:< H K G D >>`
 
 .. picture:: g1.svg
    :alt: Folio 0354 Figure 1 - Proposition 43
 
 .. step:: given
 
-   :g:`< A B C D > <g1:< A B C D >>` be a parallelogram, :g:`/ A C / <g1:/ A C />` its diameter
-
-.. step:: assert
-
-   about :g:`/ A C / <g1:/ A C />` let :g:`< A E K H > <g1:< A E K H >>`, :g:`< K F C G > <g1:< K F C G >>` be parallelograms, and :g:`< E B F K > <g1:< E B F K >>`, :g:`< H K G D > <g1:< H K G D >>` the so-called complements
+   :g:`< A B C D > <g1:< A B C D >>`, :g:`/ A C / <g1:/ A C />`, :g:`< A E K H > <g1:< A E K H >>`, :g:`< K F C G > <g1:< K F C G >>`, :g:`< E B F K > <g1:< E B F K >>`, :g:`< H K G D > <g1:< H K G D >>`
 
 .. step:: assert ∵ parallelogram_properties <G.62>
 
-   :g:`< A B C D > <g1:< A B C D >>` is a parallelogram, and :g:`/ A C / <g1:/ A C />` its diameter, :g:`< A B C > <g1:< A B C >>` is :eq:`equal <g1:< A B C > = g1:< A C D >>` to :g:`< A C D > <g1:< A C D >>`
+   :g:`< A B C D > <g1:< A B C D >>`, :g:`/ A C / <g1:/ A C />` → :g:`< A B C > <g1:< A B C >>` :eq:`= <g1:< A B C > = g1:< A C D >>` :g:`< A C D > <g1:< A C D >>`
 
-.. step:: assert
+.. step:: assert ∵ parallelogram_properties <G.62>
 
-   :g:`< A E K H > <g1:< A E K H >>` is a parallelogram, and :g:`/ A K / <g1:/ A K />` is its diameter, :g:`< A E K > <g1:< A E K >>` is :eq:`equal <g1:< A E K > = g1:< A H K >>` to :g:`< A H K > <g1:< A H K >>`
-
-.. step:: assert
-
-   The same reason :g:`< K F C > <g1:< K F C >>` is also :eq:`equal <g1:< K F C > = g1:< K G C >>` to :g:`< K G C > <g1:< K G C >>`
+   :g:`< A E K H > <g1:< A E K H >>`, :g:`< K F C G > <g1:< K F C G >>` → :g:`< A E K > <g1:< A E K >>` :eq:`= <g1:< A E K > = g1:< A H K >; g1:< K F C > = g1:< K G C >>` :g:`< A H K > <g1:< A H K >>`, :g:`< K F C > <g1:< K F C >>` :eq:`= <g1:< A E K > = g1:< A H K >; g1:< K F C > = g1:< K G C >>` :g:`< K G C > <g1:< K G C >>`
 
 .. step:: assert ∵ add_equals <G.36>
 
-   :g:`< A E K > <g1:< A E K >>` is :eq:`equal <g1:< A E K > = g1:< A H K >; g1:< K F C > = g1:< K G C >>` to :g:`< A H K > <g1:< A H K >>`, and :g:`< K F C > <g1:< K F C >>` to :g:`< K G C > <g1:< K G C >>` → :g:`< A E K > <g1:< A E K >>` together with :g:`< K G C > <g1:< K G C >>` is equal to :g:`< A H K > <g1:< A H K >>` together with :g:`< K F C > <g1:< K F C >>`
-
-.. step:: assert
-
-   :g:`< A B C > <g1:< A B C >>` is also :eq:`equal <g1:< A B C > = g1:< A D C >>` to :g:`< A D C > <g1:< A D C >>`
+   :g:`< A E K > <g1:< A E K >>` :eq:`= <g1:< A E K > = g1:< A H K >; g1:< K F C > = g1:< K G C >>` :g:`< A H K > <g1:< A H K >>`, :g:`< K F C > <g1:< K F C >>` :eq:`= <g1:< A E K > = g1:< A H K >; g1:< K F C > = g1:< K G C >>` :g:`< K G C > <g1:< K G C >>` → :g:`< A E K > <g1:< A E K >>` + :g:`< K F C > <g1:< K F C >>` = :g:`< A H K > <g1:< A H K >>` + :g:`< K G C > <g1:< K G C >>`
 
 .. step:: conclude ∵ subtract_equals <G.19>
 
-   the complement :g:`< E B F K > <g1:< E B F K >>` which remains is :eq:`equal <g1:< E B F K > = g1:< H K G D >>` to the complement :g:`< H K G D > <g1:< H K G D >>` which remains
+   :g:`< A B C > <g1:< A B C >>` :eq:`= <g1:< A B C > = g1:< A C D >>` :g:`< A C D > <g1:< A C D >>` → :g:`< E B F K > <g1:< E B F K >>` :eq:`= <g1:< E B F K > = g1:< H K G D >>` :g:`< H K G D > <g1:< H K G D >>`
 
 Dependency Graph
 ----------------
@@ -256,6 +245,7 @@ Dependency Graph
      "G.31" -> "G.21";
      "G.34" -> "G.21";
      "G.41" -> "G.21";
+     "G.51" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
      "G.28" -> "G.22";
@@ -282,6 +272,7 @@ Dependency Graph
      "G.28" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.51" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -323,5 +314,6 @@ Required for
 .. toctree::
    :hidden:
 
+   video
    code
    heath

@@ -10,8 +10,9 @@
 :categories: problem, construction, plane-geometry
 :category: problem, construction, plane-geometry
 :tags: book-i, point, segment, line, circle, triangle, straight-line, trilateral, centre, equality
-:dependencies: G.1, G.4, G.10, G.11, G.12, G.14, G.15, G.21, G.45
+:dependencies: G.1, G.4, G.10, G.11, G.12, G.14, G.15, G.16, G.21, G.45
 :excerpt: Construct a triangle from three segments equal to three given segments satisfying the triangle inequality.
+:youtube_id: XUk5Gi6FhVQ
 
 .. _G.47:
 .. _I.22:
@@ -27,80 +28,40 @@ G.47 construct a triangle from three segments
 
 .. signature:: problem
 
-   | :fn:`triangle_from_segments <G.47>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`) → :g:`/ K F / <g1:/ K F />`, :g:`/ F G / <g1:/ F G />`
-   | **given** the three be :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, of these let two taken together in any manner be greater than the remaining one, namely
-   | **construct** :g:`< K F G > <g1:< K F G >>` has been constructed out of three segments :eq:`= <g1:/ K F / = g1:A; g1:/ F G / = g1:B; g1:/ K G / = g1:C>` to :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`
+   | :fn:`triangle_from_segments <G.47>`\ (:g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`) → :g:`< K F G > <g1:< K F G >>`
+   | **given** :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` (:g:`A <g1:A>` + :g:`B <g1:B>` > :g:`C <g1:C>`, :g:`A <g1:A>` + :g:`C <g1:C>` > :g:`B <g1:B>`, :g:`B <g1:B>` + :g:`C <g1:C>` > :g:`A <g1:A>`)
+   | **construct** :g:`< K F G > <g1:< K F G >>` (:g:`/ K F / <g1:/ K F />` :eq:`= <g1:/ K F / = g1:A; g1:/ F G / = g1:B; g1:/ K G / = g1:C>` :g:`A <g1:A>`, :g:`/ F G / <g1:/ F G />` :eq:`= <g1:/ K F / = g1:A; g1:/ F G / = g1:B; g1:/ K G / = g1:C>` :g:`B <g1:B>`, :g:`/ K G / <g1:/ K G />` :eq:`= <g1:/ K F / = g1:A; g1:/ F G / = g1:B; g1:/ K G / = g1:C>` :g:`C <g1:C>`)
 
 .. picture:: g1.svg
    :alt: Folio 0306 Figure 1 - Proposition 22
 
 .. step:: given
 
-   the three be :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, of these let two taken together in any manner be greater than the remaining one, namely
-
-.. step:: assert
-
-   :g:`A <g1:A>`, :g:`B <g1:B>` greater than :g:`C <g1:C>`,
-
-.. step:: assert
-
-   :g:`A <g1:A>`, :g:`C <g1:C>` greater than :g:`B <g1:B>`,
-
-.. step:: assert
-
-   :g:`B <g1:B>`, :g:`C <g1:C>` greater than :g:`A <g1:A>`
+   :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` (:g:`A <g1:A>` + :g:`B <g1:B>` > :g:`C <g1:C>`, :g:`A <g1:A>` + :g:`C <g1:C>` > :g:`B <g1:B>`, :g:`B <g1:B>` + :g:`C <g1:C>` > :g:`A <g1:A>`)
 
 .. step:: construct
 
-   :fn:`cut_equal_segment <G.21>`: Let there be set out a segment :g:`[ D E ] <g1:[ D E ]>`, terminated at :g:`D <g1:D>` but of infinite length in the direction of :g:`E <g1:E>`, and let :g:`/ D F / <g1:/ D F />` be made :eq:`equal <g1:/ D F / = g1:A>` to :g:`A <g1:A>`, :g:`/ F G / <g1:/ F G />` :eq:`equal <g1:/ F G / = g1:B>` to :g:`B <g1:B>`, and :g:`/ G H / <g1:/ G H />` :eq:`equal <g1:/ G H / = g1:C>` to :g:`C <g1:C>`.
+   :fn:`cut_equal_segment <G.21>`\ (:g:`[ D E ] <g1:[ D E ]>`, :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`) → :g:`/ D F / <g1:/ D F />` :eq:`= <g1:/ D F / = g1:A>` :g:`A <g1:A>`, :g:`/ F G / <g1:/ F G />` :eq:`= <g1:/ F G / = g1:B>` :g:`B <g1:B>`, :g:`/ G H / <g1:/ G H />` :eq:`= <g1:/ G H / = g1:C>` :g:`C <g1:C>`
 
 .. step:: construct
 
-   :fn:`circle <G.15>`\ (:g:`F <g1:F>`, :g:`D <g1:D>`) → :g:`( F D ) <g1:( D K L )>`
+   :fn:`circle <G.15>`\ (:g:`F <g1:F>`, :g:`D <g1:D>`) → :g:`( F D ) <g1:( D K L )>`, :fn:`circle <G.15>`\ (:g:`G <g1:G>`, :g:`H <g1:H>`) → :g:`( G H ) <g1:( K L H )>`
 
-.. step:: construct
+.. step:: intersect
 
-   :fn:`circle <G.15>`\ (:g:`G <g1:G>`, :g:`H <g1:H>`) → :g:`( G H ) <g1:( K L H )>`
+   :g:`( F D ) <g1:( D K L )>` ∩ :g:`( G H ) <g1:( K L H )>` → :g:`K <g1:K>`, :fn:`segment <G.14>`\ (:g:`K <g1:K>`, :g:`F <g1:F>`) → :g:`/ K F / <g1:/ K F />`, :fn:`segment <G.14>`\ (:g:`K <g1:K>`, :g:`G <g1:G>`) → :g:`/ K G / <g1:/ K G />`
 
-.. step:: construct
+.. step:: assert ∵ circle_radii, equal_transitive <G.10, G.16>
 
-   :fn:`segment <G.14>`\ (:g:`K <g1:K>`, :g:`F <g1:F>`) → :g:`/ K F / <g1:/ K F />`, :fn:`segment <G.14>`\ (:g:`K <g1:K>`, :g:`G <g1:G>`) → :g:`/ K G / <g1:/ K G />`
+   :g:`( F D ) <g1:( D K L )>` → :g:`/ F D / <g1:/ F D />` :eq:`= <g1:/ F D / = g1:/ F K />` :g:`/ F K / <g1:/ F K />` → :g:`/ K F / <g1:/ K F />` :eq:`= <g1:/ K F / = g1:A>` :g:`A <g1:A>`
 
-.. step:: assert ∵ circle_radii <G.10>
+.. step:: assert ∵ circle_radii, equal_transitive <G.10, G.16>
 
-   :g:`( F D ) <g1:( D K L )>` → :g:`/ F D / <g1:/ F D />` :eq:`= <g1:/ F D / = g1:/ F K />` :g:`/ F K / <g1:/ F K />`
+   :g:`( G H ) <g1:( L K H )>` → :g:`/ G H / <g1:/ G H />` :eq:`= <g1:/ G H / = g1:/ G K />` :g:`/ G K / <g1:/ G K />` → :g:`/ K G / <g1:/ K G />` :eq:`= <g1:/ K G / = g1:C>` :g:`C <g1:C>`
 
-.. step:: assert
+.. step:: conclude ∵ equal_transitive <G.16>
 
-   :g:`/ F D / <g1:/ F D />` :eq:`= <g1:/ F D / = g1:A>` :g:`A <g1:A>`
-
-.. step:: assert
-
-   :g:`/ K F / <g1:/ K F />` :eq:`= <g1:/ K F / = g1:A>` :g:`A <g1:A>`
-
-.. step:: assert ∵ circle_radii <G.10>
-
-   :g:`( G H ) <g1:( L K H )>` → :g:`/ G H / <g1:/ G H />` :eq:`= <g1:/ G H / = g1:/ G K />` :g:`/ G K / <g1:/ G K />`
-
-.. step:: assert
-
-   :g:`/ G H / <g1:/ G H />` :eq:`= <g1:/ G H / = g1:C>` :g:`C <g1:C>`
-
-.. step:: assert
-
-   :g:`/ K G / <g1:/ K G />` :eq:`= <g1:/ K G / = g1:C>` :g:`C <g1:C>`
-
-.. step:: assert
-
-   :g:`/ F G / <g1:/ F G />` :eq:`= <g1:/ F G / = g1:B>` :g:`B <g1:B>`
-
-.. step:: assert
-
-   :g:`/ K F / <g1:/ K F />`, :g:`/ F G / <g1:/ F G />`, :g:`/ G K / <g1:/ G K />` :eq:`= <g1:/ K F / = g1:A; g1:/ F G / = g1:B; g1:/ G K / = g1:C>` :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`
-
-.. step:: conclude
-
-   out of :g:`/ K F / <g1:/ K F />`, :g:`/ F G / <g1:/ F G />`, :g:`/ G K / <g1:/ G K />`, which :eq:`= <g1:/ K F / = g1:A; g1:/ F G / = g1:B; g1:/ G K / = g1:C>` the three given segments :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`< K F G > <g1:< K F G >>` has been constructed
+   :g:`/ K F / <g1:/ K F />` :eq:`= <g1:/ K F / = g1:A; g1:/ F G / = g1:B; g1:/ K G / = g1:C>` :g:`A <g1:A>`, :g:`/ F G / <g1:/ F G />` :eq:`= <g1:/ K F / = g1:A; g1:/ F G / = g1:B; g1:/ K G / = g1:C>` :g:`B <g1:B>`, :g:`/ K G / <g1:/ K G />` :eq:`= <g1:/ K F / = g1:A; g1:/ F G / = g1:B; g1:/ K G / = g1:C>` :g:`C <g1:C>` → :g:`< K F G > <g1:< K F G >>`
 
 Dependency Graph
 ----------------
@@ -270,6 +231,7 @@ Dependency Graph
      "G.21" -> "G.16";
      "G.37" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
@@ -310,10 +272,12 @@ Dependency Graph
      "G.32" -> "G.24";
      "G.41" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
@@ -344,5 +308,6 @@ Required for
 .. toctree::
    :hidden:
 
+   video
    code
    heath

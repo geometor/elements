@@ -2,7 +2,7 @@
 :number: 85
 :canonical_id: G.85
 :original_id: II.4
-:title: G.85 square of sum
+:title: G.85 square of a sum
 :volume: I
 :book: II
 :type: prop
@@ -10,144 +10,57 @@
 :categories: theorem, proof, plane-geometry, geometric-algebra
 :category: theorem, proof, plane-geometry, geometric-algebra
 :tags: book-ii, point, segment, angle, quadrilateral, polygon, straight-line, square, contained-rectangle, parallel-straight-lines, plane-angle, right-angle, rectangle, equality
-:dependencies: G.4, G.14, G.22, G.25, G.27, G.56, G.58, G.62, G.63, G.75, G.81
-:excerpt: If a segment be cut at random, the square on the whole is equal to the squares on the segments and twice the rectangle contained by the segments.
+:dependencies: G.4, G.14, G.25, G.27, G.36, G.56, G.58, G.62, G.63, G.72, G.75, G.81
+:excerpt: If a segment is cut at random, the square on the whole equals the squares on the parts together with twice the rectangle contained by the parts.
 
 .. _G.85:
 .. _II.4:
 
-G.85 square of sum
-==================
+G.85 square of a sum
+====================
 
 .. rubric:: `II.4 <https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/04/>`_
 
 .. enunciation::
 
-   If a :term:`segment <G.4>` be cut at random, the :term:`square <G.63>` on the whole is equal to the squares on the segments and twice the :term:`rectangle contained <G.81>` by the segments.
+   If a :term:`segment <G.4>` is cut at random, the :term:`square <G.63>` on the whole equals the squares on the parts together with twice the :term:`rectangle contained <G.81>` by the parts.
 
 .. signature:: theorem
 
-   | :fn:`square_of_sum <G.85>`\ ()
-   | **prove** the square on :g:`/ A B / <g1:/ A B />` is equal to the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ B C / <g1:/ B C />` and twice the rectangle contained by :g:`/ A C / <g1:/ A C />`, :g:`/ B C / <g1:/ B C />`
+   | :fn:`square_of_sum <G.85>`\ (:g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`)
+   | **given** :g:`/ A B / <g1:/ A B />` (:g:`C <g1:C>` ∈ :g:`/ A B / <g1:/ A B />`)
+   | **prove** :fn:`square_on_segment <G.75>`\ (:g:`/ A B / <g1:/ A B />`) = :fn:`square_on_segment <G.75>`\ (:g:`/ A C / <g1:/ A C />`) + :fn:`square_on_segment <G.75>`\ (:g:`/ B C / <g1:/ B C />`) + 2 · :fn:`contained_rectangle <G.81>`\ (:g:`/ A C / <g1:/ A C />`, :g:`/ B C / <g1:/ B C />`)
 
 .. picture:: g1.svg
    :alt: Diagram
 
-.. step:: construct
+.. step:: given
 
-   Let :g:`/ A B / <g1:/ A B />` be cut at random at :g:`C <g1:C>`
+   :g:`/ A B / <g1:/ A B />` (:g:`/ A B / <g1:/ A B />` = :g:`/ A C / <g1:/ A C />` + :g:`/ B C / <g1:/ B C />`)
 
-.. step:: construct
+.. step:: construct ∵ square_on_segment, segment <G.75, G.14>
 
-   :fn:`square_on_segment <G.75>`: Let the square :g:`< A D E B > <g1:< A D E B >>` be described on :g:`/ A B / <g1:/ A B />`.
+   :fn:`square_on_segment <G.75>`\ (:g:`/ A B / <g1:/ A B />`) → :g:`< A D E B > <g1:< A D E B >>`, :fn:`segment <G.14>`\ (:g:`B <g1:B>`, :g:`D <g1:D>`) → :g:`/ B D / <g1:/ B D />`
 
-.. step:: construct
+.. step:: construct ∵ parallel_line <G.58>
 
-   :fn:`segment <G.14>`\ (:g:`B <g1:B>`, :g:`D <g1:D>`) → :g:`/ B D / <g1:/ B D />`
+   :fn:`parallel_line <G.58>`\ (:g:`C <g1:C>`, :g:`/ A D / <g1:/ A D />`) → :g:`/ C F / <g1:/ C F />` ∥ :g:`/ A D / <g1:/ A D />`, :g:`/ C F / <g1:/ C F />` ∩ :g:`/ B D / <g1:/ B D />` → :g:`G <g1:G>`, :fn:`parallel_line <G.58>`\ (:g:`G <g1:G>`, :g:`/ A B / <g1:/ A B />`) → :g:`/ H K / <g1:/ H K />` ∥ :g:`/ A B / <g1:/ A B />`
 
-.. step:: construct
+.. step:: assert ∵ parallel_transversal_angles, isosceles_base_angles, equal_angles_isosceles, parallelogram_properties <G.56, G.25, G.27, G.62>
 
-   :fn:`parallel_line <G.58>`\ (:g:`C <g1:C>`, :g:`/ A D / <g1:/ A D />` or :g:`/ B E / <g1:/ B E />`) → :g:`/ C F / <g1:/ C F />`
+   :g:`< C G B ) <g1:< C G B )>` :eq:`= <g1:< C G B ) = g1:< A D B )>` :g:`< A D B ) <g1:< A D B )>` :eq:`= <g1:< A D B ) = g1:< A B D )>` :g:`< A B D ) <g1:< A B D )>` → :g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ B C / = g1:/ C G / = g1:/ G K / = g1:/ B K />` :g:`/ C G / <g1:/ C G />` :eq:`= <g1:/ B C / = g1:/ C G / = g1:/ G K / = g1:/ B K />` :g:`/ G K / <g1:/ G K />` :eq:`= <g1:/ B C / = g1:/ C G / = g1:/ G K / = g1:/ B K />` :g:`/ B K / <g1:/ B K />`
 
-.. step:: construct
+.. step:: assert ∵ parallel_transversal_angles, parallelogram_properties, quadrilateral_def <G.56, G.62, G.63>
 
-   :fn:`parallel_line <G.58>`\ (:g:`G <g1:G>`, :g:`/ A B / <g1:/ A B />` or :g:`/ D E / <g1:/ D E />`) → :g:`/ H K / <g1:/ H K />`
+   :g:`< K B C ) <g1:< K B C )>` :eq:`= <g1:< C G K ) = g1:< G K B ) = g1:< K B C ) = g1:< G C B )>` :g:`< G C B ) <g1:< G C B )>` :eq:`= <g1:< C G K ) = g1:< G K B ) = g1:< K B C ) = g1:< G C B )>` :g:`< C G K ) <g1:< C G K )>` :eq:`= <g1:< C G K ) = g1:< G K B ) = g1:< K B C ) = g1:< G C B )>` :g:`< G K B ) <g1:< G K B )>` → :g:`< C G K B > <g1:< C G K B >>` = :fn:`square_on_segment <G.75>`\ (:g:`/ B C / <g1:/ B C />`), :g:`< H F > <g1:< H F >>` = :fn:`square_on_segment <G.75>`\ (:g:`/ A C / <g1:/ A C />`)
 
-.. step:: assert ∵ parallel_transversal_angles <G.56>
+.. step:: assert ∵ parallelogram_complements, rectangular_parallelogram_said_def <G.72, G.81>
 
-   :g:`/ C F / <g1:/ C F />` is parallel to :g:`/ A D / <g1:/ A D />`, and :g:`/ B D / <g1:/ B D />` has fallen on them, the exterior angle :g:`< C G B ) <g1:< C G B )>` :eq:`= <g1:< C G B ) = g1:< A D B )>` the interior and opposite angle :g:`< A D B ) <g1:< A D B )>`
+   :g:`< A G > <g1:< A G >>` :eq:`= <g1:< A G > = g1:< G E >>` :g:`< G E > <g1:< G E >>` = :fn:`rectangular_parallelogram_said_def <G.81>`\ (:g:`/ A C / <g1:/ A C />`, :g:`/ B C / <g1:/ B C />`) → :g:`< A G > <g1:< A G >>` + :g:`< G E > <g1:< G E >>` = 2 · :fn:`rectangular_parallelogram_said_def <G.81>`\ (:g:`/ A C / <g1:/ A C />`, :g:`/ B C / <g1:/ B C />`)
 
-.. step:: assert ∵ isosceles_base_angles <G.25>
+.. step:: conclude ∵ add_equals <G.36>
 
-   :g:`< A D B ) <g1:< A D B )>` :eq:`= <g1:< A D B ) = g1:< A B D )>` :g:`< A B D ) <g1:< A B D )>`, since :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ A D />` :g:`/ A D / <g1:/ A D />`
-
-.. step:: assert ∵ equal_angles_isosceles <G.27>
-
-   :g:`< C G B ) <g1:< C G B )>` :eq:`= <g1:< C G B ) = g1:< G B C )>` :g:`< G B C ) <g1:< G B C )>`, so that :g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ B C / = g1:/ C G />` :g:`/ C G / <g1:/ C G />`
-
-.. step:: assert ∵ parallelogram_properties <G.62>
-
-   :g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ B C / = g1:/ G K /; g1:/ C G / = g1:/ B K />` :g:`/ G K / <g1:/ G K />`, and :g:`/ C G / <g1:/ C G />` to :g:`/ B K / <g1:/ B K />`
-
-.. step:: assert
-
-   :g:`/ G K / <g1:/ G K />` :eq:`= <g1:/ G K / = g1:/ B K />` :g:`/ B K / <g1:/ B K />`
-
-.. step:: assert
-
-   :g:`< C G K B > <g1:< C G K B >>` is :eq:`equilateral <g1:/ B C / = g1:/ C G / = g1:/ G K / = g1:/ B K />`
-
-.. step:: assert
-
-   I say next that it is also right-angled
-
-.. step:: assert ∵ parallel_transversal_angles <G.56>
-
-   :g:`/ C G / <g1:/ C G />` is parallel to :g:`/ B K / <g1:/ B K />`, :g:`< K B C ) <g1:< K B C )>`, :g:`< G C B ) <g1:< G C B )>` are equal to two right angles
-
-.. step:: assert
-
-   :g:`< K B C ) <g1:< K B C )>` is right
-
-.. step:: assert
-
-   :g:`< G C B ) <g1:< G C B )>` is also :eq:`right <g1:< G C B ) = g1:< K B C )>`,
-
-.. step:: assert ∵ parallelogram_properties <G.62>
-
-   So that the opposite :term:`angles <G.22>` :g:`< C G K ) <g1:< C G K )>`, :g:`< G K B ) <g1:< G K B )>` are also :eq:`right <g1:< C G K ) = g1:< G K B ) = g1:< K B C ) = g1:< G C B )>`
-
-.. step:: assert
-
-   :g:`< C G K B > <g1:< C G K B >>` is right-angled
-
-.. step:: assert
-
-   it was also proved :eq:`equilateral <g1:/ B C / = g1:/ C G / = g1:/ G K / = g1:/ B K />`
-
-.. step:: assert
-
-   it is a square
-
-.. step:: assert
-
-   it is described on :g:`/ B C / <g1:/ B C />`
-
-.. step:: assert
-
-   For the same reason :g:`< H F > <g1:< H F >>` is also a square
-
-.. step:: assert ∵ parallelogram_properties <G.62>
-
-   it is described on :g:`/ H G / <g1:/ H G />`, that is :g:`/ A C / <g1:/ A C />`
-
-.. step:: assert
-
-   the squares :g:`< H F > <g1:< H F >>`, :g:`< K C > <g1:< K C >>` are the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ B C / <g1:/ B C />`
-
-.. step:: assert
-
-   :g:`< A G > <g1:< A G >>` is :eq:`equal <g1:< A G > = g1:< G E >>` to :g:`< G E > <g1:< G E >>`, and :g:`< A G > <g1:< A G >>` is the rectangle :g:`/ A C / <g1:/ A C />`, :g:`/ B C / <g1:/ B C />`, for :g:`/ C G / <g1:/ C G />` :eq:`= <g1:/ C G / = g1:/ B C />` :g:`/ B C / <g1:/ B C />`, therefore :g:`< G E > <g1:< G E >>` is also equal to the rectangle :g:`/ A C / <g1:/ A C />`, :g:`/ B C / <g1:/ B C />`
-
-.. step:: assert
-
-   :g:`< A G > <g1:< A G >>`, :g:`< G E > <g1:< G E >>` are equal to twice the rectangle :g:`/ A C / <g1:/ A C />`, :g:`/ B C / <g1:/ B C />`
-
-.. step:: assert
-
-   The squares :g:`< H F > <g1:< H F >>`, :g:`< C K > <g1:< C K >>` are also the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ B C / <g1:/ B C />`
-
-.. step:: assert
-
-   the four areas :g:`< H F > <g1:< H F >>`, :g:`< C K > <g1:< C K >>`, :g:`< A G > <g1:< A G >>`, :g:`< G E > <g1:< G E >>` are equal to the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ B C / <g1:/ B C />` and twice the rectangle contained by :g:`/ A C / <g1:/ A C />`, :g:`/ B C / <g1:/ B C />`
-
-.. step:: assert
-
-   :g:`< H F > <g1:< H F >>`, :g:`< C K > <g1:< C K >>`, :g:`< A G > <g1:< A G >>`, :g:`< G E > <g1:< G E >>` are :g:`< A D E B > <g1:< A D E B >>`, which is the square on :g:`/ A B / <g1:/ A B />`
-
-.. step:: conclude
-
-   the square on :g:`/ A B / <g1:/ A B />` is equal to the squares on :g:`/ A C / <g1:/ A C />`, :g:`/ B C / <g1:/ B C />` and twice the rectangle contained by :g:`/ A C / <g1:/ A C />`, :g:`/ B C / <g1:/ B C />`
+   :fn:`square_on_segment <G.75>`\ (:g:`/ A B / <g1:/ A B />`) = :fn:`square_on_segment <G.75>`\ (:g:`/ A C / <g1:/ A C />`) + :fn:`square_on_segment <G.75>`\ (:g:`/ B C / <g1:/ B C />`) + 2 · :fn:`rectangular_parallelogram_said_def <G.81>`\ (:g:`/ A C / <g1:/ A C />`, :g:`/ B C / <g1:/ B C />`)
 
 Dependency Graph
 ----------------
@@ -212,9 +125,10 @@ Dependency Graph
      "G.61" [label="G.61", tooltip="G.61 (I.def.17): A diameter of a circle is any segment drawn through the center and terminated in both directions by the arc of the circle; it bisects the circle.", fillcolor="#224422", URL="../G.61/index.html", target="_top"];
      "G.62" [label="G.62", tooltip="G.62 (I.34): In a parallelogram, opposite sides and opposite angles are equal, and the diagonal bisects the area.", fillcolor="#222244", URL="../G.62/index.html", target="_top"];
      "G.63" [label="G.63", tooltip="G.63 (I.def.22): Of quadrilateral figures, a square is equilateral and right-angled; an oblong is right-angled but not equilateral; a rhombus is equilateral but not right-angled; a rhomboid has opp...", fillcolor="#224422", URL="../G.63/index.html", target="_top"];
+     "G.72" [label="G.72", tooltip="G.72 (I.43): In any parallelogram, the complements of the parallelograms about the diagonal are equal in area.", fillcolor="#222244", URL="../G.72/index.html", target="_top"];
      "G.75" [label="G.75", tooltip="G.75 (I.46): Construct a square on a given segment.", fillcolor="#222244", URL="../G.75/index.html", target="_top"];
      "G.81" [label="G.81", tooltip="G.81 (II.def.1): Any rectangular parallelogram is said to becontained by the twosegments containing theright angle.", fillcolor="#224422", URL="../G.81/index.html", target="_top"];
-     "G.85" [label="G.85", tooltip="G.85 (II.4): If a segment be cut at random, the square on the whole is equal to the squares on the segments and twice the rectangle contained by the segments.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.85" [label="G.85", tooltip="G.85 (II.4): If a segment is cut at random, the square on the whole equals the squares on the parts together with twice the rectangle contained by the parts.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -339,6 +253,7 @@ Dependency Graph
      "G.53" -> "G.12";
      "G.62" -> "G.12";
      "G.63" -> "G.12";
+     "G.72" -> "G.12";
      "G.17" -> "G.13";
      "G.25" -> "G.13";
      "G.63" -> "G.13";
@@ -354,6 +269,7 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.51" -> "G.14";
      "G.58" -> "G.14";
      "G.85" -> "G.14";
@@ -366,7 +282,9 @@ Dependency Graph
      "G.21" -> "G.16";
      "G.37" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.56" -> "G.16";
+     "G.75" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
@@ -375,10 +293,12 @@ Dependency Graph
      "G.25" -> "G.18";
      "G.41" -> "G.18";
      "G.45" -> "G.18";
+     "G.53" -> "G.18";
      "G.58" -> "G.18";
      "G.20" -> "G.19";
      "G.25" -> "G.19";
      "G.40" -> "G.19";
+     "G.72" -> "G.19";
      "G.21" -> "G.20";
      "G.25" -> "G.21";
      "G.27" -> "G.21";
@@ -388,6 +308,7 @@ Dependency Graph
      "G.43" -> "G.21";
      "G.45" -> "G.21";
      "G.47" -> "G.21";
+     "G.51" -> "G.21";
      "G.75" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
@@ -414,7 +335,6 @@ Dependency Graph
      "G.62" -> "G.22";
      "G.63" -> "G.22";
      "G.75" -> "G.22";
-     "G.85" -> "G.22";
      "G.24" -> "G.23";
      "G.29" -> "G.23";
      "G.25" -> "G.24";
@@ -424,13 +344,16 @@ Dependency Graph
      "G.51" -> "G.24";
      "G.62" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.85" -> "G.25";
      "G.27" -> "G.26";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.51" -> "G.26";
      "G.85" -> "G.27";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
@@ -453,6 +376,8 @@ Dependency Graph
      "G.37" -> "G.36";
      "G.56" -> "G.36";
      "G.62" -> "G.36";
+     "G.72" -> "G.36";
+     "G.85" -> "G.36";
      "G.40" -> "G.37";
      "G.56" -> "G.37";
      "G.40" -> "G.38";
@@ -480,10 +405,13 @@ Dependency Graph
      "G.75" -> "G.58";
      "G.85" -> "G.58";
      "G.62" -> "G.61";
+     "G.72" -> "G.61";
+     "G.72" -> "G.62";
      "G.75" -> "G.62";
      "G.85" -> "G.62";
      "G.75" -> "G.63";
      "G.85" -> "G.63";
+     "G.85" -> "G.72";
      "G.85" -> "G.75";
      "G.85" -> "G.81";
    }

@@ -98,10 +98,11 @@ Dependency Graph
      "G.52" [label="G.52", tooltip="G.52 (I.def.23): Parallel lines are lines in the same plane which, extended indefinitely in both directions, do not meet.", fillcolor="#224422", URL="../G.52/index.html", target="_top"];
      "G.61" [label="G.61", tooltip="G.61 (I.def.17): A diameter of a circle is any segment drawn through the center and terminated in both directions by the arc of the circle; it bisects the circle.", fillcolor="#224422", URL="../G.61/index.html", target="_top"];
      "G.77" [label="G.77", tooltip="G.77 (I.def.12): An acute angle is less than a right angle.", fillcolor="#224422", URL="../G.77/index.html", target="_top"];
-     "G.100" [label="G.100", tooltip="G.100 (III.3): If in a circle a segment through the center bisect a segment not through the center, it also cuts it at right angles; and if it cut it at right angles, it also bisects it.", fillcolor="#222244", URL="../G.100/index.html", target="_top"];
+     "G.96" [label="G.96", tooltip="G.96 (I.def.18): A semicircle is the figure contained by a diameter and the arc cut off by it.", fillcolor="#224422", URL="../G.96/index.html", target="_top"];
+     "G.100" [label="G.100", tooltip="G.100 (III.3): A segment through the center of a circle bisects a chord not through the center if and only if it cuts the chord at right angles.", fillcolor="#222244", URL="../G.100/index.html", target="_top"];
      "G.111" [label="G.111", tooltip="G.111 (III.def.2): Asegment is said totouch a circle which, meeting thecircle and being produced, does not cut the circle.", fillcolor="#224422", URL="../G.111/index.html", target="_top"];
      "G.117" [label="G.117", tooltip="G.117 (III.def.7): Anangle of a segment is that contained by asegment and a arc of acircle.", fillcolor="#224422", URL="../G.117/index.html", target="_top"];
-     "G.118" [label="G.118", tooltip="G.118 (III.16): The segment drawn at right angles to the diameter of a circle from its extremity will fall outside the circle, and into the space between the segment and the arc another segment ca...", fillcolor="#222244", URL="../G.118/index.html", target="_top"];
+     "G.118" [label="G.118", tooltip="G.118 (III.16): The line drawn at right angles to the diameter of a circle from its extremity falls outside the circle, no other line can be interposed between it and the arc, and the angle of the...", fillcolor="#222244", URL="../G.118/index.html", target="_top"];
      "G.146" [label="G.146", tooltip="G.146 (IV.def.7): Asegment is said to befitted into a circle when itsextremities are on the arc of thecircle.", fillcolor="#224422", URL="../G.146/index.html", target="_top"];
      "G.148" [label="G.148", tooltip="G.148 (IV.def.3): Apolygon is said to beinscribed in a circle when eachangle of the inscribedfigure lies on the arc of thecircle.", fillcolor="#224422", URL="../G.148/index.html", target="_top"];
      "G.169" [label="G.169", tooltip="G.169 (V.def.1): A magnitude is apart of a magnitude, the less of the greater, when it measures the greater.", fillcolor="#224422", URL="../G.169/index.html", target="_top"];
@@ -145,6 +146,7 @@ Dependency Graph
      "G.37" -> "G.2";
      "G.40" -> "G.2";
      "G.52" -> "G.2";
+     "G.118" -> "G.2";
      "G.4" -> "G.3";
      "G.6" -> "G.3";
      "G.8" -> "G.3";
@@ -192,6 +194,7 @@ Dependency Graph
      "G.9" -> "G.8";
      "G.10" -> "G.9";
      "G.12" -> "G.9";
+     "G.96" -> "G.9";
      "G.148" -> "G.9";
      "G.11" -> "G.10";
      "G.15" -> "G.10";
@@ -199,6 +202,7 @@ Dependency Graph
      "G.20" -> "G.10";
      "G.21" -> "G.10";
      "G.61" -> "G.10";
+     "G.96" -> "G.10";
      "G.100" -> "G.10";
      "G.111" -> "G.10";
      "G.117" -> "G.10";
@@ -211,6 +215,7 @@ Dependency Graph
      "G.20" -> "G.11";
      "G.21" -> "G.11";
      "G.61" -> "G.11";
+     "G.96" -> "G.11";
      "G.100" -> "G.11";
      "G.574" -> "G.11";
      "G.13" -> "G.12";
@@ -228,7 +233,6 @@ Dependency Graph
      "G.43" -> "G.12";
      "G.44" -> "G.12";
      "G.51" -> "G.12";
-     "G.100" -> "G.12";
      "G.148" -> "G.12";
      "G.17" -> "G.13";
      "G.25" -> "G.13";
@@ -243,6 +247,7 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.51" -> "G.14";
      "G.100" -> "G.14";
+     "G.118" -> "G.14";
      "G.574" -> "G.14";
      "G.17" -> "G.15";
      "G.20" -> "G.15";
@@ -269,6 +274,7 @@ Dependency Graph
      "G.34" -> "G.21";
      "G.41" -> "G.21";
      "G.43" -> "G.21";
+     "G.51" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
      "G.28" -> "G.22";
@@ -297,11 +303,14 @@ Dependency Graph
      "G.51" -> "G.24";
      "G.574" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.100" -> "G.25";
      "G.118" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
+     "G.51" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -321,10 +330,12 @@ Dependency Graph
      "G.574" -> "G.33";
      "G.37" -> "G.34";
      "G.37" -> "G.36";
+     "G.42" -> "G.36";
      "G.40" -> "G.37";
      "G.42" -> "G.37";
      "G.40" -> "G.38";
      "G.41" -> "G.40";
+     "G.42" -> "G.41";
      "G.43" -> "G.41";
      "G.51" -> "G.41";
      "G.118" -> "G.42";
@@ -332,8 +343,10 @@ Dependency Graph
      "G.118" -> "G.44";
      "G.100" -> "G.51";
      "G.574" -> "G.52";
+     "G.96" -> "G.61";
      "G.118" -> "G.61";
      "G.118" -> "G.77";
+     "G.118" -> "G.96";
      "G.574" -> "G.100";
      "G.118" -> "G.111";
      "G.118" -> "G.117";

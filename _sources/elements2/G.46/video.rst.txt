@@ -1,0 +1,20 @@
+:canonical_id: G.46
+:original_id: I.21
+:title: G.46 interior segments of a triangle
+:volume: I
+:book: I
+:type: prop
+:youtube_id: 7cLVNc_4Qpk
+
+G.46 interior segments of a triangle — Video
+============================================
+
+.. rubric:: `I.21 <https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/21/>`_
+
+.. enunciation::
+
+   :term:`Segments <G.4>` constructed from the endpoints of one side of a :term:`triangle <G.12>` to an interior :term:`point <G.1>` have a lesser sum but contain a greater :term:`angle <G.22>` than the other two sides.
+
+.. youtube:: 7cLVNc_4Qpk
+   :aspect: 16:9
+   :width: 100%

@@ -4,6 +4,7 @@
 :volume: I
 :book: I
 :type: prop
+:youtube_id: ul73yfZKrDg
 
 G.53 equal alternate interior angles imply parallel lines — Heath
 =================================================================
@@ -213,6 +214,7 @@ Dependency Graph
      "G.20" -> "G.18";
      "G.25" -> "G.18";
      "G.41" -> "G.18";
+     "G.53" -> "G.18";
      "G.20" -> "G.19";
      "G.25" -> "G.19";
      "G.40" -> "G.19";

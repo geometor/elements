@@ -2,7 +2,7 @@
 :number: 99
 :canonical_id: G.99
 :original_id: III.2
-:title: G.99 arc circle points
+:title: G.99 chord of a circle lies within the circle
 :volume: II
 :book: III
 :type: prop
@@ -10,104 +10,53 @@
 :categories: theorem, proof, plane-geometry, circles
 :category: theorem, proof, plane-geometry, circles
 :tags: book-iii, point, segment, circle, angle, triangle, straight-line, centre, plane-angle, trilateral, arc, equality, reductio-ad-absurdum
-:dependencies: G.1, G.4, G.10, G.14, G.22, G.25, G.41, G.44, G.98
-:excerpt: If on the arc of a circle two points be taken at random, the segment joining the points will fall within the circle.
+:dependencies: G.1, G.4, G.10, G.14, G.25, G.26, G.41, G.44, G.98
+:excerpt: The segment joining any two points on the arc of a circle falls within the circle.
 
 .. _G.99:
 .. _III.2:
 
-G.99 arc circle points
-======================
+G.99 chord of a circle lies within the circle
+=============================================
 
 .. rubric:: `III.2 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/02/>`_
 
 .. enunciation::
 
-   If on the arc of a :term:`circle <G.10>` two :term:`points <G.1>` be taken at random, the :term:`segment <G.4>` joining the points will fall within the circle.
+   The :term:`segment <G.4>` joining any two :term:`points <G.1>` on the arc of a :term:`circle <G.10>` falls within the circle.
 
 .. signature:: theorem
 
-   | :fn:`arc_circle_points <G.99>`\ ()
-   | **prove** the segment joined from :g:`A <g1:A>` to :g:`B <g1:B>` will fall within the circle
+   | :fn:`chord_inside_circle <G.99>`\ (:g:`( A B C ) <g1:( A B C )>`, :g:`A <g1:A>`, :g:`B <g1:B>`)
+   | **given** :g:`( A B C ) <g1:( A B C )>`, :g:`A <g1:A>`, :g:`B <g1:B>` ∈ :g:`( A B C ) <g1:( A B C )>`
+   | **prove** :g:`/ A B / <g1:/ A E B />` falls within :g:`( A B C ) <g1:( A B C )>`
 
 .. picture:: g1.svg
    :alt: Proposition 2
 
-.. step:: construct
+.. step:: given ∵ circle_radii <G.10>
 
-   Let :g:`( A B C ) <g1:( A B C )>` be a circle, and let two points :g:`A <g1:A>`, :g:`B <g1:B>` be taken at random on its arc
+   :g:`( A B C ) <g1:( A B C )>`, :g:`A <g1:A>`, :g:`B <g1:B>` ∈ :g:`( A B C ) <g1:( A B C )>`
 
-.. step:: assert
+.. step:: construct ∵ find_circle_center, segment <G.98, G.14>
 
-   Suppose it does not, but, if possible, let it fall outside, as :g:`/ A E B / <g1:/ A E B />`
+   Suppose :g:`/ A E B / <g1:/ A E B />` falls outside :g:`( A B C ) <g1:( A B C )>`; :fn:`find_circle_center <G.98>`\ (:g:`( A B C ) <g1:( A B C )>`) → :g:`D <g1:D>`, :fn:`segment <G.14>`\ (:g:`D <g1:D>`, :g:`A <g1:A>`, :g:`B <g1:B>`) → :g:`/ D A / <g1:/ D A />`, :g:`/ D B / <g1:/ D B />`, draw :g:`/ D F E / <g1:/ D F E />`
 
-.. step:: construct
+.. step:: assert ∵ circle_radii, isosceles_base_angles, exterior_angle_greater <G.10, G.25, G.41>
 
-   :fn:`find_circle_center <G.98>`: Let the center of :g:`( A B C ) <g1:( A B C )>` be taken
-
-.. step:: assert
-
-   Let it be :g:`D <g1:D>`
-
-.. step:: construct
-
-   :fn:`segment <G.14>`\ (:g:`D <g1:D>`, :g:`A <g1:A>`) → :g:`/ D A / <g1:/ D A />`, :fn:`segment <G.14>`\ (:g:`D <g1:D>`, :g:`B <g1:B>`) → :g:`/ D B / <g1:/ D B />`
-
-.. step:: construct
-
-   Let :g:`/ D F E / <g1:/ D F E />` be drawn through.
-
-.. step:: assert ∵ isosceles_base_angles <G.25>
-
-   :g:`/ D A / <g1:/ D A />` :eq:`= <g1:/ D A / = g1:/ D B />` :g:`/ D B / <g1:/ D B />` → :g:`< D A E ) <g1:< D A E )>` :eq:`= <g1:< D A E ) = g1:< D B E )>` :g:`< D B E ) <g1:< D B E )>`
-
-.. step:: assert
-
-   since one side :g:`/ A E B / <g1:/ A E B />` of :g:`< D A E > <g1:< D A E >>` is produced,
-
-.. step:: assert ∵ exterior_angle_greater <G.41>
-
-   :g:`< D E B ) <g1:< D E B )>` > :g:`< D A E ) <g1:< D A E )>`
-
-.. step:: assert
-
-   :g:`< D A E ) <g1:< D A E )>` :eq:`= <g1:< D A E ) = g1:< D B E )>` :g:`< D B E ) <g1:< D B E )>`
-
-.. step:: assert
-
-   :g:`< D E B ) <g1:< D E B )>` > :g:`< D B E ) <g1:< D B E )>`
+   :g:`/ D A / <g1:/ D A />` :eq:`= <g1:/ D A / = g1:/ D B />` :g:`/ D B / <g1:/ D B />` → :g:`< D A E ) <g1:< D A E )>` :eq:`= <g1:< D A E ) = g1:< D B E )>` :g:`< D B E ) <g1:< D B E )>`, and exterior :g:`< D E B ) <g1:< D E B )>` > :g:`< D A E ) <g1:< D A E )>` → :g:`< D E B ) <g1:< D E B )>` > :g:`< D B E ) <g1:< D B E )>`
 
 .. step:: assert ∵ greater_angle_greater_side <G.44>
 
-   The greater :term:`angle <G.22>` is subtended by the greater side
+   :g:`< D E B ) <g1:< D E B )>` > :g:`< D B E ) <g1:< D B E )>` in :g:`< D B E > <g1:< D B E >>` → :g:`/ D B / <g1:/ D B />` > :g:`/ D E / <g1:/ D E />`
 
-.. step:: assert
+.. step:: assert ∵ circle_radii, whole_greater_than_part <G.10, G.26>
 
-   :g:`/ D B / <g1:/ D B />` > :g:`/ D E / <g1:/ D E />`
-
-.. step:: assert
-
-   :g:`/ D B / <g1:/ D B />` :eq:`= <g1:/ D B / = g1:/ D F />` :g:`/ D F / <g1:/ D F />`
-
-.. step:: assert
-
-   :g:`/ D F / <g1:/ D F />` > :g:`/ D E / <g1:/ D E />`,
-
-.. step:: assert
-
-   The less than the greater ⇒⇐
-
-.. step:: assert
-
-   the segment joined from :g:`A <g1:A>` to :g:`B <g1:B>` will not fall outside the circle
-
-.. step:: assert
-
-   Similarly we can prove that neither will it fall on the arc itself
+   :g:`/ D B / <g1:/ D B />` :eq:`= <g1:/ D B / = g1:/ D F />` :g:`/ D F / <g1:/ D F />` → :g:`/ D F / <g1:/ D F />` > :g:`/ D E / <g1:/ D E />`, the less than the greater ⇒⇐
 
 .. step:: conclude
 
-   it will fall within
+   :g:`/ A B / <g1:/ A E B />` does not fall outside or on :g:`( A B C ) <g1:( A B C )>` → :g:`/ A B / <g1:/ A E B />` falls within :g:`( A B C ) <g1:( A B C )>`
 
 Dependency Graph
 ----------------
@@ -160,7 +109,7 @@ Dependency Graph
      "G.43" [label="G.43", tooltip="G.43 (I.18): In any triangle, the greater side subtends the greater angle.", fillcolor="#222244", URL="../G.43/index.html", target="_top"];
      "G.44" [label="G.44", tooltip="G.44 (I.19): In any triangle, the greater angle is subtended by the greater side.", fillcolor="#222244", URL="../G.44/index.html", target="_top"];
      "G.98" [label="G.98", tooltip="G.98 (III.1): Find the center of a given circle.", fillcolor="#222244", URL="../G.98/index.html", target="_top"];
-     "G.99" [label="G.99", tooltip="G.99 (III.2): If on the arc of a circle two points be taken at random, the segment joining the points will fall within the circle.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.99" [label="G.99", tooltip="G.99 (III.2): The segment joining any two points on the arc of a circle falls within the circle.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -180,7 +129,6 @@ Dependency Graph
      "G.34" -> "G.1";
      "G.37" -> "G.1";
      "G.40" -> "G.1";
-     "G.98" -> "G.1";
      "G.99" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
@@ -266,6 +214,7 @@ Dependency Graph
      "G.34" -> "G.14";
      "G.41" -> "G.14";
      "G.43" -> "G.14";
+     "G.98" -> "G.14";
      "G.99" -> "G.14";
      "G.17" -> "G.15";
      "G.20" -> "G.15";
@@ -305,18 +254,20 @@ Dependency Graph
      "G.41" -> "G.22";
      "G.43" -> "G.22";
      "G.44" -> "G.22";
-     "G.98" -> "G.22";
-     "G.99" -> "G.22";
      "G.24" -> "G.23";
      "G.29" -> "G.23";
      "G.25" -> "G.24";
      "G.32" -> "G.24";
      "G.41" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.99" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
+     "G.98" -> "G.26";
+     "G.99" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -331,6 +282,7 @@ Dependency Graph
      "G.40" -> "G.33";
      "G.98" -> "G.33";
      "G.37" -> "G.34";
+     "G.98" -> "G.34";
      "G.37" -> "G.36";
      "G.40" -> "G.37";
      "G.40" -> "G.38";

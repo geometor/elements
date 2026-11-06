@@ -1,12 +1,12 @@
 :canonical_id: G.106
 :original_id: III.8
-:title: G.106 point taken outside
+:title: G.106 distances to a circle from an exterior point
 :volume: II
 :book: III
 :type: prop
 
-G.106 point taken outside — Heath
-=================================
+G.106 distances to a circle from an exterior point — Heath
+==========================================================
 
 .. rubric:: `III.8 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/08/>`_
 
@@ -164,7 +164,7 @@ Dependency Graph
      "G.49" [label="G.49", tooltip="G.49 (I.24): If two triangles have two sides equal to two sides respectively, the one with the greater included angle has the greater base.", fillcolor="#222244", URL="../G.49/index.html", target="_top"];
      "G.61" [label="G.61", tooltip="G.61 (I.def.17): A diameter of a circle is any segment drawn through the center and terminated in both directions by the arc of the circle; it bisects the circle.", fillcolor="#224422", URL="../G.61/index.html", target="_top"];
      "G.98" [label="G.98", tooltip="G.98 (III.1): Find the center of a given circle.", fillcolor="#222244", URL="../G.98/index.html", target="_top"];
-     "G.106" [label="G.106", tooltip="G.106 (III.8): If a point be taken outside a circle and from the point segments be drawn through to the circle, one of which is through the center and the others are drawn at random, then, of the...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.106" [label="G.106", tooltip="G.106 (III.8): From a point outside a circle, of segments falling on the concave arc the greatest passes through the center and nearer ones are greater, while on the convex arc the least lies bet...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -189,7 +189,6 @@ Dependency Graph
      "G.47" -> "G.1";
      "G.48" -> "G.1";
      "G.49" -> "G.1";
-     "G.98" -> "G.1";
      "G.106" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
@@ -282,7 +281,6 @@ Dependency Graph
      "G.47" -> "G.12";
      "G.48" -> "G.12";
      "G.49" -> "G.12";
-     "G.106" -> "G.12";
      "G.17" -> "G.13";
      "G.25" -> "G.13";
      "G.17" -> "G.14";
@@ -295,7 +293,9 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.49" -> "G.14";
+     "G.98" -> "G.14";
      "G.106" -> "G.14";
      "G.17" -> "G.15";
      "G.20" -> "G.15";
@@ -306,6 +306,8 @@ Dependency Graph
      "G.21" -> "G.16";
      "G.37" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
+     "G.106" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
@@ -326,6 +328,7 @@ Dependency Graph
      "G.43" -> "G.21";
      "G.45" -> "G.21";
      "G.47" -> "G.21";
+     "G.49" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
      "G.28" -> "G.22";
@@ -344,7 +347,6 @@ Dependency Graph
      "G.46" -> "G.22";
      "G.48" -> "G.22";
      "G.49" -> "G.22";
-     "G.98" -> "G.22";
      "G.24" -> "G.23";
      "G.29" -> "G.23";
      "G.25" -> "G.24";
@@ -353,12 +355,16 @@ Dependency Graph
      "G.49" -> "G.24";
      "G.106" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.49" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.49" -> "G.26";
+     "G.98" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -375,6 +381,7 @@ Dependency Graph
      "G.40" -> "G.33";
      "G.98" -> "G.33";
      "G.37" -> "G.34";
+     "G.98" -> "G.34";
      "G.37" -> "G.36";
      "G.40" -> "G.37";
      "G.40" -> "G.38";

@@ -2,7 +2,7 @@
 :number: 88
 :canonical_id: G.88
 :original_id: II.6
-:title: G.88 bisected and extended segment
+:title: G.88 rectangle on bisected and extended segment
 :volume: I
 :book: II
 :type: prop
@@ -10,92 +10,53 @@
 :categories: theorem, proof, plane-geometry, geometric-algebra
 :category: theorem, proof, plane-geometry, geometric-algebra
 :tags: book-ii, point, segment, triangle, quadrilateral, polygon, straight-line, contained-rectangle, square, parallel-straight-lines, gnomon, rectangle, bisect, equality
-:dependencies: G.4, G.14, G.58, G.63, G.65, G.72, G.75, G.81, G.86
-:excerpt: If a segment be bisected and a segment be added to it in a segment, the rectangle contained by the whole with the added segment and the added segment together with the square on the half is equal to the square on the segment made up of the half and the added segment.
+:dependencies: G.2, G.4, G.14, G.36, G.58, G.63, G.65, G.72, G.75, G.81, G.86
+:excerpt: If a segment is bisected and a segment is added to it in a line, the rectangle contained by the whole with the added segment and the added segment together with the square on the half equals the square on the segment made up of the half and the added segment.
 
 .. _G.88:
 .. _II.6:
 
-G.88 bisected and extended segment
-==================================
+G.88 rectangle on bisected and extended segment
+===============================================
 
 .. rubric:: `II.6 <https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/06/>`_
 
 .. enunciation::
 
-   If a :term:`segment <G.4>` be bisected and a segment be added to it in a segment, the :term:`rectangle contained <G.81>` by the whole with the added segment and the added segment together with the :term:`square <G.63>` on the half is equal to the square on the segment made up of the half and the added segment.
+   If a :term:`segment <G.4>` is bisected and a segment is added to it in a :term:`line <G.2>`, the :term:`rectangle contained <G.81>` by the whole with the added segment and the added segment together with the :term:`square <G.63>` on the half equals the square on the segment made up of the half and the added segment.
 
 .. signature:: theorem
 
-   | :fn:`bisected_and_extended_segment <G.88>`\ ()
-   | **prove** the rectangle contained by :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` together with the square on :g:`/ C B / <g1:/ C B />` is equal to the square on :g:`/ C D / <g1:/ C D />`
+   | :fn:`bisected_and_extended_segment <G.88>`\ (:g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`, :g:`/ B D / <g1:/ B D />`)
+   | **given** :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ C B />` :g:`/ C B / <g1:/ C B />`, :g:`/ A D / <g1:/ A D />` = :g:`/ A B / <g1:/ A B />` + :g:`/ B D / <g1:/ B D />`
+   | **prove** :fn:`contained_rectangle <G.81>`\ (:g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />`) + :fn:`square <G.63>`\ (:g:`/ C B / <g1:/ C B />`) = :fn:`square <G.63>`\ (:g:`/ C D / <g1:/ C D />`)
 
 .. picture:: g1.svg
    :alt: Diagram
 
-.. step:: construct
+.. step:: given
 
-   Let a segment :g:`/ A B / <g1:/ A B />` be :eq:`bisected <g1:/ A C / = g1:/ C B />` at :g:`C <g1:C>`, and let a segment :g:`/ B D / <g1:/ B D />` be added to it in a segment
+   :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ C B />` :g:`/ C B / <g1:/ C B />`, :g:`/ A D / <g1:/ A D />` = :g:`/ A B / <g1:/ A B />` + :g:`/ B D / <g1:/ B D />`
 
-.. step:: construct
+.. step:: construct ∵ square_on_segment, segment <G.75, G.14>
 
-   :fn:`square_on_segment <G.75>`: Let the square :g:`< C E F D > <g1:< C E F D >>` be described on :g:`/ C D / <g1:/ C D />`.
+   :fn:`square_on_segment <G.75>`\ (:g:`/ C D / <g1:/ C D />`) → :g:`< C E F D > <g1:< C E F D >>`, :fn:`segment <G.14>`\ (:g:`D <g1:D>`, :g:`E <g1:E>`) → :g:`/ D E / <g1:/ D E />`
 
-.. step:: construct
+.. step:: construct ∵ parallel_line <G.58>
 
-   :fn:`segment <G.14>`\ (:g:`D <g1:D>`, :g:`E <g1:E>`) → :g:`/ D E / <g1:/ D E />`
+   :fn:`parallel_line <G.58>`\ (:g:`B <g1:B>`, :g:`/ E C / <g1:/ E C />`) → :g:`/ B G / <g1:/ B G />` ∥ :g:`/ E C / <g1:/ E C />`, :fn:`parallel_line <G.58>`\ (:g:`H <g1:H>`, :g:`/ A B / <g1:/ A B />`) → :g:`/ K M / <g1:/ K M />` ∥ :g:`/ A B / <g1:/ A B />`, :fn:`parallel_line <G.58>`\ (:g:`A <g1:A>`, :g:`/ C L / <g1:/ C L />`) → :g:`/ A K / <g1:/ A K />` ∥ :g:`/ C L / <g1:/ C L />`
 
-.. step:: construct
+.. step:: assert ∵ parallelograms_equal_bases, parallelogram_complements, add_equals <G.65, G.72, G.36>
 
-   :fn:`parallel_line <G.58>`\ (:g:`B <g1:B>`, :g:`/ E C / <g1:/ E C />` or :g:`/ D F / <g1:/ D F />`) → :g:`/ B G / <g1:/ B G />`
+   :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ C B />` :g:`/ C B / <g1:/ C B />` → :g:`< A L > <g1:< A L >>` :eq:`= <g1:< A L > = g1:< C H >>` :g:`< C H > <g1:< C H >>` :eq:`= <g1:< C H > = g1:< H F >>` :g:`< H F > <g1:< H F >>`; + :g:`< C M > <g1:< C M >>` → :g:`< A M > <g1:< A M >>` :eq:`= <g1:< A M > = g1:< N O P >>` :g:`< N O P > <g1:< N O P >>`
 
-.. step:: construct
+.. step:: assert ∵ rectangular_parallelogram_said_def, parallelogrammic_area_whatever_def <G.81, G.86>
 
-   :fn:`parallel_line <G.58>`\ (:g:`H <g1:H>`, :g:`/ A B / <g1:/ A B />` or :g:`/ E F / <g1:/ E F />`, and further through :g:`A <g1:A>` let :g:`/ A K / <g1:/ A K />` be drawn parallel to either :g:`/ C L / <g1:/ C L />` or :g:`/ D M / <g1:/ D M />`) → :g:`/ K M / <g1:/ K M />`
+   :g:`/ D M / <g1:/ D M />` :eq:`= <g1:/ D M / = g1:/ D B />` :g:`/ D B / <g1:/ D B />` → :g:`< A M > <g1:< A M >>` = :fn:`rectangular_parallelogram_said_def <G.81>`\ (:g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />`) = :g:`< N O P > <g1:< N O P >>`
 
-.. step:: assert ∵ parallelograms_equal_bases <G.65>
+.. step:: conclude ∵ add_equals, quadrilateral_def <G.36, G.63>
 
-   :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ C B />` :g:`/ C B / <g1:/ C B />` → :g:`< A L > <g1:< A L >>` is also :eq:`equal <g1:< A L > = g1:< C H >>` to :g:`< C H > <g1:< C H >>`
-
-.. step:: assert ∵ parallelogram_complements <G.72>
-
-   :g:`< C H > <g1:< C H >>` is :eq:`equal <g1:< C H > = g1:< H F >>` to :g:`< H F > <g1:< H F >>`
-
-.. step:: assert
-
-   :g:`< A L > <g1:< A L >>` is also :eq:`equal <g1:< A L > = g1:< H F >>` to :g:`< H F > <g1:< H F >>`
-
-.. step:: construct
-
-   Let :g:`< C M > <g1:< C M >>` be added to each
-
-.. step:: assert
-
-   :g:`< A M > <g1:< A M >>` is :eq:`equal <g1:< A M > = g1:< N O P >>` to the gnomon :g:`< N O P > <g1:< N O P >>`
-
-.. step:: assert
-
-   :g:`< A M > <g1:< A M >>` is the rectangle :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />`, for :g:`/ D M / <g1:/ D M />` :eq:`= <g1:/ D M / = g1:/ D B />` :g:`/ D B / <g1:/ D B />`
-
-.. step:: assert
-
-   the :term:`gnomon <G.86>` :g:`< N O P > <g1:< N O P >>` is also equal to the rectangle :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />`
-
-.. step:: construct
-
-   Let :g:`< L G > <g1:< L G >>`, which is equal to the square on :g:`/ B C / <g1:/ B C />`, be added to each
-
-.. step:: assert
-
-   the rectangle contained by :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` together with the square on :g:`/ C B / <g1:/ C B />` is equal to the gnomon :g:`< N O P > <g1:< N O P >>` and :g:`< L G > <g1:< L G >>`
-
-.. step:: assert
-
-   The gnomon :g:`< N O P > <g1:< N O P >>` and :g:`< L G > <g1:< L G >>` are the whole square :g:`< C E F D > <g1:< C E F D >>`, which is described on :g:`/ C D / <g1:/ C D />`
-
-.. step:: conclude
-
-   the rectangle contained by :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` together with the square on :g:`/ C B / <g1:/ C B />` is equal to the square on :g:`/ C D / <g1:/ C D />`
+   + :g:`< L G > <g1:< L G >>` (= :fn:`quadrilateral_def <G.63>`\ (:g:`/ C B / <g1:/ C B />`)) → :fn:`rectangular_parallelogram_said_def <G.81>`\ (:g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />`) + :fn:`quadrilateral_def <G.63>`\ (:g:`/ C B / <g1:/ C B />`) = :g:`< N O P > <g1:< N O P >>` + :g:`< L G > <g1:< L G >>` = :fn:`quadrilateral_def <G.63>`\ (:g:`/ C D / <g1:/ C D />`)
 
 Dependency Graph
 ----------------
@@ -166,7 +127,7 @@ Dependency Graph
      "G.75" [label="G.75", tooltip="G.75 (I.46): Construct a square on a given segment.", fillcolor="#222244", URL="../G.75/index.html", target="_top"];
      "G.81" [label="G.81", tooltip="G.81 (II.def.1): Any rectangular parallelogram is said to becontained by the twosegments containing theright angle.", fillcolor="#224422", URL="../G.81/index.html", target="_top"];
      "G.86" [label="G.86", tooltip="G.86 (II.def.2): And in any parallelogrammic area let any one whatever of the parallelograms about itsdiameter with the two complements be called agnomon.", fillcolor="#224422", URL="../G.86/index.html", target="_top"];
-     "G.88" [label="G.88", tooltip="G.88 (II.6): If a segment be bisected and a segment be added to it in a segment, the rectangle contained by the whole with the added segment and the added segment together with the square on th...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.88" [label="G.88", tooltip="G.88 (II.6): If a segment is bisected and a segment is added to it in a line, the rectangle contained by the whole with the added segment and the added segment together with the square on the h...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -208,7 +169,7 @@ Dependency Graph
      "G.55" -> "G.2";
      "G.56" -> "G.2";
      "G.58" -> "G.2";
-     "G.65" -> "G.2";
+     "G.88" -> "G.2";
      "G.4" -> "G.3";
      "G.6" -> "G.3";
      "G.8" -> "G.3";
@@ -312,6 +273,7 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.51" -> "G.14";
      "G.58" -> "G.14";
      "G.60" -> "G.14";
@@ -326,9 +288,11 @@ Dependency Graph
      "G.21" -> "G.16";
      "G.37" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.56" -> "G.16";
      "G.64" -> "G.16";
      "G.65" -> "G.16";
+     "G.75" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
@@ -337,6 +301,7 @@ Dependency Graph
      "G.25" -> "G.18";
      "G.41" -> "G.18";
      "G.45" -> "G.18";
+     "G.53" -> "G.18";
      "G.58" -> "G.18";
      "G.20" -> "G.19";
      "G.25" -> "G.19";
@@ -351,6 +316,7 @@ Dependency Graph
      "G.43" -> "G.21";
      "G.45" -> "G.21";
      "G.47" -> "G.21";
+     "G.51" -> "G.21";
      "G.75" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
@@ -388,11 +354,14 @@ Dependency Graph
      "G.62" -> "G.24";
      "G.64" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.51" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -416,6 +385,7 @@ Dependency Graph
      "G.62" -> "G.36";
      "G.64" -> "G.36";
      "G.72" -> "G.36";
+     "G.88" -> "G.36";
      "G.40" -> "G.37";
      "G.56" -> "G.37";
      "G.40" -> "G.38";

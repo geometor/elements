@@ -12,6 +12,7 @@
 :tags: book-i, point, segment, angle, straight-line, plane-angle, right-angle, plane, equality, porism
 :dependencies: G.1, G.2, G.4, G.16, G.19, G.22, G.33, G.37, G.38
 :excerpt: Intersecting lines make their vertical angles equal.
+:youtube_id: nFrx20yWwJs
 
 .. _G.40:
 .. _I.15:
@@ -27,43 +28,36 @@ G.40 vertical angles are equal
 
 .. signature:: theorem
 
-   | :fn:`vertical_angles_equal <G.40>`\ ()
-   | **prove** :g:`< A E C ) <g1:< A E C )>` :eq:`= <g1:< A E C ) = g1:< D E B ); g1:< C E B ) = g1:< A E D )>` :g:`< D E B ) <g1:< D E B )>`, and :g:`< C E B ) <g1:< C E B )>` to :g:`< A E D ) <g1:< A E D )>`
+   | :fn:`vertical_angles_equal <G.40>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`)
+   | **given** :g:`/ A B / <g1:/ A B />` ∩ :g:`/ C D / <g1:/ C D />` → :g:`E <g1:E>`
+   | **prove** :g:`< A E C ) <g1:< A E C )>` :eq:`= <g1:< A E C ) = g1:< D E B )>` :g:`< D E B ) <g1:< D E B )>`, :g:`< C E B ) <g1:< C E B )>` :eq:`= <g1:< C E B ) = g1:< A E D )>` :g:`< A E D ) <g1:< A E D )>`
 
 .. picture:: g1.svg
    :alt: Proposition 15 figure
 
 .. step:: intersect
 
-   Let :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` cut one another at :g:`E <g1:E>`
+   :g:`/ A B / <g1:/ A B />` ∩ :g:`/ C D / <g1:/ C D />` → :g:`E <g1:E>`
 
 .. step:: assert ∵ adjacent_angles_supplementary <G.37>
 
-   :g:`/ A E / <g1:/ A E />` stands on :g:`/ C D / <g1:/ C D />`, making :g:`< C E A ) <g1:< C E A )>`, :g:`< A E D ) <g1:< A E D )>` → :g:`< C E A ) <g1:< C E A )>`, :g:`< A E D ) <g1:< A E D )>` are equal to two right angles
+   :g:`/ A E / <g1:/ A E />` on :g:`/ C D / <g1:/ C D />` → :g:`< C E A ) <g1:< C E A )>` + :g:`< A E D ) <g1:< A E D )>` = 2∟
 
 .. step:: assert ∵ adjacent_angles_supplementary <G.37>
 
-   :g:`/ D E / <g1:/ D E />` stands on :g:`/ A B / <g1:/ A B />`, making :g:`< A E D ) <g1:< A E D )>`, :g:`< D E B ) <g1:< D E B )>` → :g:`< A E D ) <g1:< A E D )>`, :g:`< D E B ) <g1:< D E B )>` are equal to two right angles
-
-.. step:: assert
-
-   :g:`< C E A ) <g1:< C E A )>`, :g:`< A E D ) <g1:< A E D )>` were also proved equal to two right angles
+   :g:`/ D E / <g1:/ D E />` on :g:`/ A B / <g1:/ A B />` → :g:`< A E D ) <g1:< A E D )>` + :g:`< D E B ) <g1:< D E B )>` = 2∟
 
 .. step:: assert ∵ right_angles_equal, equal_transitive <G.38, G.16>
 
-   :g:`< C E A ) <g1:< C E A )>`, :g:`< A E D ) <g1:< A E D )>` are equal to :g:`< A E D ) <g1:< A E D )>` :g:`< D E B ) <g1:< D E B )>`
-
-.. step:: construct
-
-   Let :g:`< A E D ) <g1:< A E D )>` be subtracted from each;
+   :g:`< C E A ) <g1:< C E A )>` + :g:`< A E D ) <g1:< A E D )>` = :g:`< A E D ) <g1:< A E D )>` + :g:`< D E B ) <g1:< D E B )>`
 
 .. step:: assert ∵ subtract_equals <G.19>
 
-   :g:`< C E A ) <g1:< C E A )>` :eq:`= <g1:< C E A ) = g1:< B E D )>` :g:`< B E D ) <g1:< B E D )>`
+   (:g:`< C E A ) <g1:< C E A )>` + :g:`< A E D ) <g1:< A E D )>`) − :g:`< A E D ) <g1:< A E D )>` = (:g:`< A E D ) <g1:< A E D )>` + :g:`< D E B ) <g1:< D E B )>`) − :g:`< A E D ) <g1:< A E D )>` → :g:`< C E A ) <g1:< C E A )>` :eq:`= <g1:< C E A ) = g1:< B E D )>` :g:`< B E D ) <g1:< B E D )>`
 
-.. step:: conclude
+.. step:: conclude ∵ subtract_equals <G.19>
 
-   Similarly it can be proved that :g:`< C E B ) <g1:< C E B )>`, :g:`< D E A ) <g1:< D E A )>` are also :eq:`= <g1:< C E B ) = g1:< D E A )>`
+   :g:`< A E C ) <g1:< A E C )>` :eq:`= <g1:< A E C ) = g1:< D E B )>` :g:`< D E B ) <g1:< D E B )>`, :g:`< C E B ) <g1:< C E B )>` :eq:`= <g1:< C E B ) = g1:< A E D )>` :g:`< A E D ) <g1:< A E D )>`
 
 .. porism::
 
@@ -247,5 +241,6 @@ Required for
 .. toctree::
    :hidden:
 
+   video
    code
    heath

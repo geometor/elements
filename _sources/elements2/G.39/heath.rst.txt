@@ -4,6 +4,7 @@
 :volume: I
 :book: I
 :type: prop
+:youtube_id: XIN3I267WUA
 
 G.39 supplementary adjacent angles form a line — Heath
 ======================================================
@@ -194,6 +195,7 @@ Dependency Graph
      "G.34" -> "G.17";
      "G.20" -> "G.18";
      "G.25" -> "G.18";
+     "G.39" -> "G.18";
      "G.20" -> "G.19";
      "G.25" -> "G.19";
      "G.39" -> "G.19";
@@ -213,6 +215,7 @@ Dependency Graph
      "G.25" -> "G.24";
      "G.28" -> "G.25";
      "G.28" -> "G.26";
+     "G.39" -> "G.26";
      "G.29" -> "G.28";
      "G.34" -> "G.29";
      "G.34" -> "G.33";

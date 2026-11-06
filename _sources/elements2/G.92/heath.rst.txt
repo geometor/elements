@@ -1,12 +1,12 @@
 :canonical_id: G.92
 :original_id: II.10
-:title: G.92 sum of squares bisected extended
+:title: G.92 sum of squares on bisected and extended segment
 :volume: I
 :book: II
 :type: prop
 
-G.92 sum of squares bisected extended — Heath
-=============================================
+G.92 sum of squares on bisected and extended segment — Heath
+============================================================
 
 .. rubric:: `II.10 <https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/10/>`_
 
@@ -203,7 +203,7 @@ Dependency Graph
      "G.77" [label="G.77", tooltip="G.77 (I.def.12): An acute angle is less than a right angle.", fillcolor="#224422", URL="../G.77/index.html", target="_top"];
      "G.78" [label="G.78", tooltip="G.78 (I.def.21): A right-angled triangle has a right angle, an obtuse-angled triangle has an obtuse angle, and an acute-angled triangle has three acute angles.", fillcolor="#224422", URL="../G.78/index.html", target="_top"];
      "G.79" [label="G.79", tooltip="G.79 (I.47): In a right-angled triangle, the square on the hypotenuse equals the sum of the squares on the two legs (Pythagorean Theorem).", fillcolor="#222244", URL="../G.79/index.html", target="_top"];
-     "G.92" [label="G.92", tooltip="G.92 (II.10): If a segment be bisected, and a segment be added to it in a segment, the square on the whole with the added segment and the square on the added segment both together are double of ...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.92" [label="G.92", tooltip="G.92 (II.10): If a segment is bisected and a segment is added to it in a line, the sum of the squares on the whole with the added segment and on the added segment is double the sum of the square...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -357,6 +357,7 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.51" -> "G.14";
      "G.58" -> "G.14";
      "G.70" -> "G.14";
@@ -372,8 +373,13 @@ Dependency Graph
      "G.37" -> "G.16";
      "G.39" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.56" -> "G.16";
+     "G.59" -> "G.16";
      "G.64" -> "G.16";
+     "G.66" -> "G.16";
+     "G.70" -> "G.16";
+     "G.75" -> "G.16";
      "G.92" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
@@ -381,8 +387,10 @@ Dependency Graph
      "G.34" -> "G.17";
      "G.20" -> "G.18";
      "G.25" -> "G.18";
+     "G.39" -> "G.18";
      "G.41" -> "G.18";
      "G.45" -> "G.18";
+     "G.53" -> "G.18";
      "G.58" -> "G.18";
      "G.59" -> "G.18";
      "G.66" -> "G.18";
@@ -400,6 +408,7 @@ Dependency Graph
      "G.43" -> "G.21";
      "G.45" -> "G.21";
      "G.47" -> "G.21";
+     "G.51" -> "G.21";
      "G.75" -> "G.21";
      "G.92" -> "G.21";
      "G.24" -> "G.22";
@@ -434,7 +443,6 @@ Dependency Graph
      "G.77" -> "G.22";
      "G.78" -> "G.22";
      "G.79" -> "G.22";
-     "G.92" -> "G.22";
      "G.24" -> "G.23";
      "G.29" -> "G.23";
      "G.25" -> "G.24";
@@ -446,13 +454,17 @@ Dependency Graph
      "G.64" -> "G.24";
      "G.79" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.92" -> "G.25";
      "G.27" -> "G.26";
      "G.28" -> "G.26";
+     "G.39" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.51" -> "G.26";
      "G.92" -> "G.27";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
@@ -475,12 +487,12 @@ Dependency Graph
      "G.77" -> "G.33";
      "G.78" -> "G.33";
      "G.79" -> "G.33";
-     "G.92" -> "G.33";
      "G.37" -> "G.34";
      "G.75" -> "G.34";
      "G.92" -> "G.34";
      "G.37" -> "G.36";
      "G.56" -> "G.36";
+     "G.59" -> "G.36";
      "G.62" -> "G.36";
      "G.64" -> "G.36";
      "G.79" -> "G.36";
@@ -513,7 +525,6 @@ Dependency Graph
      "G.70" -> "G.52";
      "G.75" -> "G.52";
      "G.79" -> "G.52";
-     "G.92" -> "G.52";
      "G.58" -> "G.53";
      "G.56" -> "G.55";
      "G.92" -> "G.55";
@@ -544,6 +555,7 @@ Dependency Graph
      "G.70" -> "G.66";
      "G.79" -> "G.70";
      "G.79" -> "G.75";
+     "G.92" -> "G.75";
      "G.78" -> "G.76";
      "G.78" -> "G.77";
      "G.79" -> "G.78";

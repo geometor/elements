@@ -4,6 +4,7 @@
 :volume: I
 :book: I
 :type: prop
+:youtube_id: XUk5Gi6FhVQ
 
 G.47 construct a triangle from three segments — Code
 ====================================================

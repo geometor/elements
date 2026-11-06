@@ -1,12 +1,12 @@
 :canonical_id: G.98
 :original_id: III.1
-:title: G.98 find circle center
+:title: G.98 find the center of a circle
 :volume: II
 :book: III
 :type: prop
 
-G.98 find circle center — Code
-==============================
+G.98 find the center of a circle — Code
+=======================================
 
 .. rubric:: `III.1 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/01/>`_
 

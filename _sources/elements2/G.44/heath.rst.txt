@@ -4,6 +4,7 @@
 :volume: I
 :book: I
 :type: prop
+:youtube_id: 3cDzSbewWi4
 
 G.44 greater angle is subtended by greater side — Heath
 =======================================================
@@ -241,9 +242,11 @@ Dependency Graph
      "G.32" -> "G.24";
      "G.41" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";

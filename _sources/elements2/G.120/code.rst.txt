@@ -1,18 +1,18 @@
 :canonical_id: G.120
 :original_id: III.18
-:title: G.120 segment touch circle
+:title: G.120 radius to point of contact is perpendicular to tangent
 :volume: II
 :book: III
 :type: prop
 
-G.120 segment touch circle — Code
-=================================
+G.120 radius to point of contact is perpendicular to tangent — Code
+===================================================================
 
 .. rubric:: `III.18 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/18/>`_
 
 .. enunciation::
 
-   If a :term:`segment <G.4>` :term:`touch a circle <G.111>`, and a segment be joined from the :term:`center <G.11>` to the :term:`point <G.1>` of contact, the segment so joined is :term:`perpendicular <G.33>` to the tangent.
+   If a :term:`line <G.2>` :term:`touches a circle <G.111>`, the :term:`segment <G.4>` joined from the :term:`center <G.11>` to the :term:`point <G.1>` of contact is :term:`perpendicular <G.33>` to the tangent.
 
 .. picture:: g1.svg
 

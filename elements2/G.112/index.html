@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>G.112 circle touch circle &mdash; Elements 2.0 (G Index)</title>
+  <title>G.112 two circles touch at most at one point &mdash; Elements 2.0 (G Index)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
@@ -88,14 +88,15 @@
         </div>
       </header>
       <div class="content body book-content folio-book-page" role="main">
-        <section class="level-1" id="g-112-circle-touch-circle">
-        <span id="iii-13"></span><span id="g-112"></span><h1>G.112 circle touch circle<a class="headerlink" href="#g-112-circle-touch-circle" title="Link to this heading">¶</a></h1>
-        <p class="rubric"><a class="reference external" href="https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/13/" title="III.13: A circle does not touch a circle at more points than one, whether it touch it internally or externally.">III.13</a></p>
-        <div class="enunciation">A <a class="term-ref glossary-term" id="occ-term-g-10-1" href="../G.10/index.html#g-10" data-term="G.10" title="G.10: A circle ( A B ) is a plane figure contained by one arc defined by a center A and a point B establishing its defining radius / A B /, such that all segments / A B /, / A C /, / A…">circle</a> does not <a class="term-ref glossary-term" id="occ-term-g-111-1" href="../G.111/index.html#g-111" data-term="G.111" title="G.111: Asegment is said totouch a circle which, meeting thecircle and being produced, does not cut the circle.">touch a circle</a> at more <a class="term-ref glossary-term" id="occ-term-g-1-1" href="../G.1/index.html#g-1" data-term="G.1" title="G.1: A point A is that which has no part.">points</a> than one, whether it touch it internally or externally.</div>
+        <section class="level-1" id="g-112-two-circles-touch-at-most-at-one-point">
+        <span id="iii-13"></span><span id="g-112"></span><h1>G.112 two circles touch at most at one point<a class="headerlink" href="#g-112-two-circles-touch-at-most-at-one-point" title="Link to this heading">¶</a></h1>
+        <p class="rubric"><a class="reference external" href="https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/13/" title="III.13: A circle does not touch another circle at more than one point, whether internally or externally.">III.13</a></p>
+        <div class="enunciation">A <a class="term-ref glossary-term" id="occ-term-g-10-1" href="../G.10/index.html#g-10" data-term="G.10" title="G.10: A circle ( A B ) is a plane figure contained by one arc defined by a center A and a point B establishing its defining radius / A B /, such that all segments / A B /, / A C /, / A…">circle</a> does not touch another circle at more than one <a class="term-ref glossary-term" id="occ-term-g-1-1" href="../G.1/index.html#g-1" data-term="G.1" title="G.1: A point A is that which has no part.">point</a>, whether internally or externally.</div>
         <div class="geom-signature geom-signature-theorem">
         <div class="line-block">
-        <div class="line"><span class="geom-fn geom-fn-def" data-ref-target="G.112" title="G.112: A circle does not touch a circle at more points than one, whether it touch it internally or externally.">circle_touch_circle</span>()</div>
-        <div class="line"><strong>prove</strong> It was proved that neither does it so touch it internally</div>
+        <div class="line"><span class="geom-fn geom-fn-def" data-ref-target="G.112" title="G.112: A circle does not touch another circle at more than one point, whether internally or externally.">circles_touch_at_most_one_point</span>(<span class="geom-ref" data-ref="g1:( G B )" title="( G B )">( A B D C )</span>, <span class="geom-ref" data-ref="g1:( H B )" title="( H B )">( E B F D )</span>, <span class="geom-ref" data-ref="g1:( A C K )" title="( A C K )">( A C K )</span>)</div>
+        <div class="line"><strong>given</strong> circles <span class="geom-ref" data-ref="g1:( G B )" title="( G B )">( A B D C )</span>, <span class="geom-ref" data-ref="g1:( H B )" title="( H B )">( E B F D )</span> (internal) or <span class="geom-ref" data-ref="g1:( G B )" title="( G B )">( A B D C )</span>, <span class="geom-ref" data-ref="g1:( A C K )" title="( A C K )">( A C K )</span> (external) touching</div>
+        <div class="line"><strong>prove</strong> <a href="#id2"><span class="problematic" id="id3">|( C₁ ) ∩ ( C₂ )|</span></a> ≤ 1</div>
         </div>
         </div>
         <figure class="photon-picture photon-svg">
@@ -166,25 +167,15 @@
           </g>
         </svg>
         </figure>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> If possible, let <span class="geom-ref" data-ref="g1:( A B D C )" title="( A B D C )">( A B D C )</span> touch <span class="geom-ref" data-ref="g1:( E B F D )" title="( E B F D )">( E B F D )</span>, first internally, at more points than one, namely <span class="geom-ref" data-ref="g1:D" title="D">D</span>, <span class="geom-ref" data-ref="g1:B" title="B">B</span></div>
-        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> Let the <a class="term-ref glossary-term" id="occ-term-g-11-1" href="../G.11/index.html#g-11" data-term="G.11" title="G.11: The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.">center</a> <span class="geom-ref" data-ref="g1:G" title="G">G</span> of <span class="geom-ref" data-ref="g1:( A B D C )" title="( A B D C )">( A B D C )</span>, and the center <span class="geom-ref" data-ref="g1:H" title="H">H</span> of <span class="geom-ref" data-ref="g1:( E B F D )" title="( E B F D )">( E B F D )</span>, be taken.</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.109/index.html#g-109" data-ref-target="G.109" title="G.109: If two circles touch one another internally, and their centres be taken, the segment joining their centres, if it be also produced, will fall on the point of contact of the…">circles_touch_internally</a></span><span class="geom-step-badge geom-badge-assert">assert</span> the <a class="term-ref glossary-term" id="occ-term-g-4-1" href="../G.4/index.html#g-4" data-term="G.4" title="G.4: A segment / A B / is a portion of a line [ A B ] between two points A, B on the line.">segment</a> joined from <span class="geom-ref" data-ref="g1:G" title="G">G</span> to <span class="geom-ref" data-ref="g1:H" title="H">H</span> will fall on <span class="geom-ref" data-ref="g1:B" title="B">B</span>, <span class="geom-ref" data-ref="g1:D" title="D">D</span></div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Let it so fall, as <span class="geom-ref" data-ref="g1:/ B G H D /" title="/ B G H D /">/ B G H D /</span></div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.10/index.html#g-10" data-ref-target="G.10" title="G.10: A circle ( A B ) is a plane figure contained by one arc defined by a center A and a point B establishing its defining radius / A B /, such that all segments / A B /, / A C /, / A…">circle_radii</a></span><span class="geom-step-badge geom-badge-assert">assert</span> <span class="geom-ref" data-ref="g1:( A B C D )" title="( A B C D )">( A B C D )</span> → <span class="geom-ref" data-ref="g1:/ B G /" title="/ B G /">/ B G /</span> <span class="geom-eq-ref" data-assert-equal="g1:/ B G / = g1:/ G D /" title="/ B G / = / G D /">=</span> <span class="geom-ref" data-ref="g1:/ G D /" title="/ G D /">/ G D /</span></div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> <span class="geom-ref" data-ref="g1:/ B G /" title="/ B G /">/ B G /</span> &gt; <span class="geom-ref" data-ref="g1:/ H D /" title="/ H D /">/ H D /</span></div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> <span class="geom-ref" data-ref="g1:/ B H /" title="/ B H /">/ B H /</span> ≫ <span class="geom-ref" data-ref="g1:/ H D /" title="/ H D /">/ H D /</span></div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.10/index.html#g-10" data-ref-target="G.10" title="G.10: A circle ( A B ) is a plane figure contained by one arc defined by a center A and a point B establishing its defining radius / A B /, such that all segments / A B /, / A C /, / A…">circle_radii</a></span><span class="geom-step-badge geom-badge-assert">assert</span> <span class="geom-ref" data-ref="g1:( E B F D )" title="( E B F D )">( E B F D )</span> → <span class="geom-ref" data-ref="g1:/ B H /" title="/ B H /">/ B H /</span> <span class="geom-eq-ref" data-assert-equal="g1:/ B H / = g1:/ H D /" title="/ B H / = / H D /">=</span> <span class="geom-ref" data-ref="g1:/ H D /" title="/ H D /">/ H D /</span></div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> But it was also proved much greater than it ⇒⇐</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> a circle does not touch a circle internally at more points than one</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> I say further that neither does it so touch it externally</div>
-        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> If possible, let <span class="geom-ref" data-ref="g1:( A C K )" title="( A C K )">( A C K )</span> touch <span class="geom-ref" data-ref="g1:( A B D C )" title="( A B D C )">( A B D C )</span> at more points than one, namely <span class="geom-ref" data-ref="g1:A" title="A">A</span>, <span class="geom-ref" data-ref="g1:C" title="C">C</span>, and let <span class="geom-ref" data-ref="g1:/ A C /" title="/ A C /">/ A C /</span> be joined.</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.99/index.html#g-99" data-ref-target="G.99" title="G.99: If on the arc of a circle two points be taken at random, the segment joining the points will fall within the circle.">arc_circle_points</a></span><span class="geom-step-badge geom-badge-assert">assert</span> on the arc of each of <span class="geom-ref" data-ref="g1:( A B D C )" title="( A B D C )">( A B D C )</span>, <span class="geom-ref" data-ref="g1:( A C K )" title="( A C K )">( A C K )</span> two points <span class="geom-ref" data-ref="g1:A" title="A">A</span>, <span class="geom-ref" data-ref="g1:C" title="C">C</span> have been taken at random, the segment joining the points will fall within each circle</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.103/index.html#g-103" data-ref-target="G.103" title="G.103: Circles are said totouch one another which, meeting one another, do not cut one another.">circles_said_touch_def</a></span><span class="geom-step-badge geom-badge-assert">assert</span> But it fell within <span class="geom-ref" data-ref="g1:( A B C D )" title="( A B C D )">( A B C D )</span> and outside <span class="geom-ref" data-ref="g1:( A C K )" title="( A C K )">( A C K )</span> ⇒⇐</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> a circle does not touch a circle externally at more points than one</div>
-        <div class="geom-step geom-step-conclude" data-step-kind="conclude"><span class="geom-step-badge geom-badge-conclude" title="conclude">∴</span> It was proved that neither does it so touch it internally</div>
+        <div class="geom-step geom-step-given" data-step-kind="given"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.103/index.html#g-103" data-ref-target="G.103" title="G.103: Circles are said totouch one another which, meeting one another, do not cut one another.">circles_said_touch_def</a></span><span class="geom-step-badge geom-badge-given">given</span> assume <span class="geom-ref" data-ref="g1:( G B )" title="( G B )">( A B D C )</span> and <span class="geom-ref" data-ref="g1:( H B )" title="( H B )">( E B F D )</span> touch internally at two points <span class="geom-ref" data-ref="g1:B" title="B">B</span>, <span class="geom-ref" data-ref="g1:D" title="D">D</span></div>
+        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.11/index.html#g-11" data-ref-target="G.11" title="G.11: The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.">circle_center</a>, <a class="justification-link geom-rule" href="../G.109/index.html#g-109" data-ref-target="G.109" title="G.109: If two circles touch one another internally, the line joining their centers passes through the point of contact.">internally_touching_circles_centers</a></span><span class="geom-step-badge geom-badge-construct">construct</span> <span class="glossary-term" data-term="g1:( G B )" title="Term: g1:( G B )">center &lt;G.11&gt;`(:g:`( A B D C )</span>) = <span class="geom-ref" data-ref="g1:G" title="G">G</span>, center(<span class="geom-ref" data-ref="g1:( H B )" title="( H B )">( E B F D )</span>) = <span class="geom-ref" data-ref="g1:H" title="H">H</span> → <a class="geom-fn" href="../G.109/index.html#g-109" data-ref-target="G.109" title="G.109: If two circles touch one another internally, the line joining their centers passes through the point of contact.">internally_touching_circles_centers</a>(<span class="geom-ref" data-ref="g1:G" title="G">G</span>, <span class="geom-ref" data-ref="g1:H" title="H">H</span>) → <span class="geom-ref" data-ref="g1:/ B D /" title="/ B D /">/ B G H D /</span></div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.10/index.html#g-10" data-ref-target="G.10" title="G.10: A circle ( A B ) is a plane figure contained by one arc defined by a center A and a point B establishing its defining radius / A B /, such that all segments / A B /, / A C /, / A…">circle_radii</a>, <a class="justification-link geom-rule" href="../G.26/index.html#g-26" data-ref-target="G.26" title="G.26: The whole is greater than the part.">whole_greater_than_part</a></span><span class="geom-step-badge geom-badge-assert">assert</span> <span class="geom-ref" data-ref="g1:/ B G /" title="/ B G /">/ B G /</span> <span class="geom-eq-ref" data-assert-equal="g1:/ B G / = g1:/ G D /" title="/ B G / = / G D /">=</span> <span class="geom-ref" data-ref="g1:/ G D /" title="/ G D /">/ G D /</span> &gt; <span class="geom-ref" data-ref="g1:/ H D /" title="/ H D /">/ H D /</span> → <span class="geom-ref" data-ref="g1:/ B H /" title="/ B H /">/ B H /</span> ≫ <span class="geom-ref" data-ref="g1:/ H D /" title="/ H D /">/ H D /</span>, but <span class="geom-ref" data-ref="g1:/ B H /" title="/ B H /">/ B H /</span> <span class="geom-eq-ref" data-assert-equal="g1:/ B H / = g1:/ H D /" title="/ B H / = / H D /">=</span> <span class="geom-ref" data-ref="g1:/ H D /" title="/ H D /">/ H D /</span> ⇒⇐</div>
+        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.14/index.html#g-14" data-ref-target="G.14" title="G.14: Construct a segment / A B / between any two points A, B.">segment</a></span><span class="geom-step-badge geom-badge-construct">construct</span> assume <span class="geom-ref" data-ref="g1:( A C K )" title="( A C K )">( A C K )</span> and <span class="geom-ref" data-ref="g1:( G B )" title="( G B )">( A B D C )</span> touch externally at two points <span class="geom-ref" data-ref="g1:A" title="A">A</span>, <span class="geom-ref" data-ref="g1:C" title="C">C</span> → <span class="geom-ref" data-ref="g1:/ A C /" title="/ A C /">/ A C /</span></div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.99/index.html#g-99" data-ref-target="G.99" title="G.99: The segment joining any two points on the arc of a circle falls within the circle.">chord_inside_circle</a>, <a class="justification-link geom-rule" href="../G.103/index.html#g-103" data-ref-target="G.103" title="G.103: Circles are said totouch one another which, meeting one another, do not cut one another.">circles_said_touch_def</a></span><span class="geom-step-badge geom-badge-assert">assert</span> <a class="geom-fn" href="../G.99/index.html#g-99" data-ref-target="G.99" title="G.99: The segment joining any two points on the arc of a circle falls within the circle.">chord_inside_circle</a>(<span class="geom-ref" data-ref="g1:A" title="A">A</span>, <span class="geom-ref" data-ref="g1:C" title="C">C</span>) → <span class="geom-ref" data-ref="g1:/ A C /" title="/ A C /">/ A C /</span> inside both <span class="geom-ref" data-ref="g1:( G B )" title="( G B )">( A B D C )</span> and <span class="geom-ref" data-ref="g1:( A C K )" title="( A C K )">( A C K )</span>, contradicting external contact ⇒⇐</div>
+        <div class="geom-step geom-step-conclude" data-step-kind="conclude"><span class="geom-step-badge geom-badge-conclude" title="conclude">∴</span> a circle does not <a class="term-ref glossary-term" id="occ-term-g-111-1" href="../G.111/index.html#g-111" data-term="G.111" title="G.111: Asegment is said totouch a circle which, meeting thecircle and being produced, does not cut the circle.">touch a circle</a> at more points than one, whether internally or externally</div>
         <section class="level-2" id="dependency-graph">
         <h2>Dependency Graph<a class="headerlink" href="#dependency-graph" title="Link to this heading">¶</a></h2>
-        <div class="graphviz"><object data="../../_images/graphviz-a2582bdfc7a1afd82dbd7f3364110b7f7c937d7c.svg" type="image/svg+xml" class="graphviz">
+        <div class="graphviz"><object data="../../_images/graphviz-9471f3195aab18f2895a8f9bae66a47e98290d4d.svg" type="image/svg+xml" class="graphviz">
         <p class="warning">digraph {
           bgcolor=&quot;transparent&quot;;
           node [shape=box, style=&quot;rounded,filled&quot;, fontname=&quot;Helvetica&quot;, fontsize=11, color=&quot;#d6d3cd&quot;, fontcolor=&quot;#ffffff&quot;];
@@ -230,12 +221,13 @@
           &quot;G.41&quot; [label=&quot;G.41&quot;, tooltip=&quot;G.41 (I.16): In any triangle, if one side is extended, the exterior angle is greater than either opposite interior angle.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.41/index.html&quot;, target=&quot;_top&quot;];
           &quot;G.43&quot; [label=&quot;G.43&quot;, tooltip=&quot;G.43 (I.18): In any triangle, the greater side subtends the greater angle.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.43/index.html&quot;, target=&quot;_top&quot;];
           &quot;G.44&quot; [label=&quot;G.44&quot;, tooltip=&quot;G.44 (I.19): In any triangle, the greater angle is subtended by the greater side.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.44/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.45&quot; [label=&quot;G.45&quot;, tooltip=&quot;G.45 (I.20): In any triangle, the sum of any two sides is greater than the remaining side.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.45/index.html&quot;, target=&quot;_top&quot;];
           &quot;G.98&quot; [label=&quot;G.98&quot;, tooltip=&quot;G.98 (III.1): Find the center of a given circle.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.98/index.html&quot;, target=&quot;_top&quot;];
-          &quot;G.99&quot; [label=&quot;G.99&quot;, tooltip=&quot;G.99 (III.2): If on the arc of a circle two points be taken at random, the segment joining the points will fall within the circle.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.99/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.99&quot; [label=&quot;G.99&quot;, tooltip=&quot;G.99 (III.2): The segment joining any two points on the arc of a circle falls within the circle.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.99/index.html&quot;, target=&quot;_top&quot;];
           &quot;G.103&quot; [label=&quot;G.103&quot;, tooltip=&quot;G.103 (III.def.3): Circles are said totouch one another which, meeting one another, do not cut one another.&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.103/index.html&quot;, target=&quot;_top&quot;];
-          &quot;G.109&quot; [label=&quot;G.109&quot;, tooltip=&quot;G.109 (III.11): If two circles touch one another internally, and their centres be taken, the segment joining their centres, if it be also produced, will fall on the point of contact of the circles...&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.109/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.109&quot; [label=&quot;G.109&quot;, tooltip=&quot;G.109 (III.11): If two circles touch one another internally, the line joining their centers passes through the point of contact.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.109/index.html&quot;, target=&quot;_top&quot;];
           &quot;G.111&quot; [label=&quot;G.111&quot;, tooltip=&quot;G.111 (III.def.2): Asegment is said totouch a circle which, meeting thecircle and being produced, does not cut the circle.&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.111/index.html&quot;, target=&quot;_top&quot;];
-          &quot;G.112&quot; [label=&quot;G.112&quot;, tooltip=&quot;G.112 (III.13): A circle does not touch a circle at more points than one, whether it touch it internally or externally.&quot;, penwidth=2.5, color=&quot;#e8b85a&quot;, fillcolor=&quot;#4a453b&quot;, URL=&quot;index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.112&quot; [label=&quot;G.112&quot;, tooltip=&quot;G.112 (III.13): A circle does not touch another circle at more than one point, whether internally or externally.&quot;, penwidth=2.5, color=&quot;#e8b85a&quot;, fillcolor=&quot;#4a453b&quot;, URL=&quot;index.html&quot;, target=&quot;_top&quot;];
           &quot;G.2&quot; -&gt; &quot;G.1&quot;;
           &quot;G.3&quot; -&gt; &quot;G.1&quot;;
           &quot;G.4&quot; -&gt; &quot;G.1&quot;;
@@ -255,7 +247,7 @@
           &quot;G.34&quot; -&gt; &quot;G.1&quot;;
           &quot;G.37&quot; -&gt; &quot;G.1&quot;;
           &quot;G.40&quot; -&gt; &quot;G.1&quot;;
-          &quot;G.98&quot; -&gt; &quot;G.1&quot;;
+          &quot;G.45&quot; -&gt; &quot;G.1&quot;;
           &quot;G.99&quot; -&gt; &quot;G.1&quot;;
           &quot;G.109&quot; -&gt; &quot;G.1&quot;;
           &quot;G.112&quot; -&gt; &quot;G.1&quot;;
@@ -270,6 +262,7 @@
           &quot;G.34&quot; -&gt; &quot;G.2&quot;;
           &quot;G.37&quot; -&gt; &quot;G.2&quot;;
           &quot;G.40&quot; -&gt; &quot;G.2&quot;;
+          &quot;G.109&quot; -&gt; &quot;G.2&quot;;
           &quot;G.4&quot; -&gt; &quot;G.3&quot;;
           &quot;G.6&quot; -&gt; &quot;G.3&quot;;
           &quot;G.8&quot; -&gt; &quot;G.3&quot;;
@@ -302,7 +295,6 @@
           &quot;G.99&quot; -&gt; &quot;G.4&quot;;
           &quot;G.109&quot; -&gt; &quot;G.4&quot;;
           &quot;G.111&quot; -&gt; &quot;G.4&quot;;
-          &quot;G.112&quot; -&gt; &quot;G.4&quot;;
           &quot;G.6&quot; -&gt; &quot;G.5&quot;;
           &quot;G.7&quot; -&gt; &quot;G.5&quot;;
           &quot;G.10&quot; -&gt; &quot;G.6&quot;;
@@ -341,6 +333,7 @@
           &quot;G.41&quot; -&gt; &quot;G.12&quot;;
           &quot;G.43&quot; -&gt; &quot;G.12&quot;;
           &quot;G.44&quot; -&gt; &quot;G.12&quot;;
+          &quot;G.45&quot; -&gt; &quot;G.12&quot;;
           &quot;G.17&quot; -&gt; &quot;G.13&quot;;
           &quot;G.25&quot; -&gt; &quot;G.13&quot;;
           &quot;G.17&quot; -&gt; &quot;G.14&quot;;
@@ -351,7 +344,11 @@
           &quot;G.34&quot; -&gt; &quot;G.14&quot;;
           &quot;G.41&quot; -&gt; &quot;G.14&quot;;
           &quot;G.43&quot; -&gt; &quot;G.14&quot;;
+          &quot;G.45&quot; -&gt; &quot;G.14&quot;;
+          &quot;G.98&quot; -&gt; &quot;G.14&quot;;
           &quot;G.99&quot; -&gt; &quot;G.14&quot;;
+          &quot;G.109&quot; -&gt; &quot;G.14&quot;;
+          &quot;G.112&quot; -&gt; &quot;G.14&quot;;
           &quot;G.17&quot; -&gt; &quot;G.15&quot;;
           &quot;G.20&quot; -&gt; &quot;G.15&quot;;
           &quot;G.21&quot; -&gt; &quot;G.15&quot;;
@@ -367,6 +364,8 @@
           &quot;G.20&quot; -&gt; &quot;G.18&quot;;
           &quot;G.25&quot; -&gt; &quot;G.18&quot;;
           &quot;G.41&quot; -&gt; &quot;G.18&quot;;
+          &quot;G.45&quot; -&gt; &quot;G.18&quot;;
+          &quot;G.109&quot; -&gt; &quot;G.18&quot;;
           &quot;G.20&quot; -&gt; &quot;G.19&quot;;
           &quot;G.25&quot; -&gt; &quot;G.19&quot;;
           &quot;G.40&quot; -&gt; &quot;G.19&quot;;
@@ -376,6 +375,7 @@
           &quot;G.34&quot; -&gt; &quot;G.21&quot;;
           &quot;G.41&quot; -&gt; &quot;G.21&quot;;
           &quot;G.43&quot; -&gt; &quot;G.21&quot;;
+          &quot;G.45&quot; -&gt; &quot;G.21&quot;;
           &quot;G.24&quot; -&gt; &quot;G.22&quot;;
           &quot;G.25&quot; -&gt; &quot;G.22&quot;;
           &quot;G.28&quot; -&gt; &quot;G.22&quot;;
@@ -390,18 +390,25 @@
           &quot;G.41&quot; -&gt; &quot;G.22&quot;;
           &quot;G.43&quot; -&gt; &quot;G.22&quot;;
           &quot;G.44&quot; -&gt; &quot;G.22&quot;;
-          &quot;G.98&quot; -&gt; &quot;G.22&quot;;
-          &quot;G.99&quot; -&gt; &quot;G.22&quot;;
+          &quot;G.45&quot; -&gt; &quot;G.22&quot;;
           &quot;G.24&quot; -&gt; &quot;G.23&quot;;
           &quot;G.29&quot; -&gt; &quot;G.23&quot;;
           &quot;G.25&quot; -&gt; &quot;G.24&quot;;
           &quot;G.32&quot; -&gt; &quot;G.24&quot;;
           &quot;G.41&quot; -&gt; &quot;G.24&quot;;
           &quot;G.28&quot; -&gt; &quot;G.25&quot;;
+          &quot;G.43&quot; -&gt; &quot;G.25&quot;;
           &quot;G.44&quot; -&gt; &quot;G.25&quot;;
+          &quot;G.45&quot; -&gt; &quot;G.25&quot;;
           &quot;G.99&quot; -&gt; &quot;G.25&quot;;
           &quot;G.28&quot; -&gt; &quot;G.26&quot;;
           &quot;G.41&quot; -&gt; &quot;G.26&quot;;
+          &quot;G.43&quot; -&gt; &quot;G.26&quot;;
+          &quot;G.45&quot; -&gt; &quot;G.26&quot;;
+          &quot;G.98&quot; -&gt; &quot;G.26&quot;;
+          &quot;G.99&quot; -&gt; &quot;G.26&quot;;
+          &quot;G.109&quot; -&gt; &quot;G.26&quot;;
+          &quot;G.112&quot; -&gt; &quot;G.26&quot;;
           &quot;G.29&quot; -&gt; &quot;G.28&quot;;
           &quot;G.31&quot; -&gt; &quot;G.29&quot;;
           &quot;G.34&quot; -&gt; &quot;G.29&quot;;
@@ -416,6 +423,7 @@
           &quot;G.40&quot; -&gt; &quot;G.33&quot;;
           &quot;G.98&quot; -&gt; &quot;G.33&quot;;
           &quot;G.37&quot; -&gt; &quot;G.34&quot;;
+          &quot;G.98&quot; -&gt; &quot;G.34&quot;;
           &quot;G.37&quot; -&gt; &quot;G.36&quot;;
           &quot;G.40&quot; -&gt; &quot;G.37&quot;;
           &quot;G.40&quot; -&gt; &quot;G.38&quot;;
@@ -423,7 +431,9 @@
           &quot;G.43&quot; -&gt; &quot;G.41&quot;;
           &quot;G.99&quot; -&gt; &quot;G.41&quot;;
           &quot;G.44&quot; -&gt; &quot;G.43&quot;;
+          &quot;G.45&quot; -&gt; &quot;G.44&quot;;
           &quot;G.99&quot; -&gt; &quot;G.44&quot;;
+          &quot;G.109&quot; -&gt; &quot;G.45&quot;;
           &quot;G.99&quot; -&gt; &quot;G.98&quot;;
           &quot;G.112&quot; -&gt; &quot;G.99&quot;;
           &quot;G.109&quot; -&gt; &quot;G.103&quot;;

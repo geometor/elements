@@ -2,7 +2,7 @@
 :number: 128
 :canonical_id: G.128
 :original_id: III.23
-:title: G.128 segment there constructed
+:title: G.128 no two similar unequal circle segments on the same chord
 :volume: II
 :book: III
 :type: prop
@@ -10,44 +10,49 @@
 :categories: theorem, proof, plane-geometry, circles
 :category: theorem, proof, plane-geometry, circles
 :tags: book-iii, segment, circle, angle, straight-line, segment-of-circle, similar-segments-of-circles, plane-angle, similar, equality, reductio-ad-absurdum
-:dependencies: G.4, G.14, G.22, G.41, G.126, G.127
-:excerpt: On the same segment there cannot be constructed two similar and unequal segments of circles on the same side.
+:dependencies: G.4, G.14, G.41, G.126, G.127
+:excerpt: On the same segment and on the same side of it, there cannot be constructed two similar and unequal segments of circles.
 
 .. _G.128:
 .. _III.23:
 
-G.128 segment there constructed
-===============================
+G.128 no two similar unequal circle segments on the same chord
+==============================================================
 
 .. rubric:: `III.23 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/23/>`_
 
 .. enunciation::
 
-   On the same :term:`segment <G.4>` there cannot be constructed two similar and unequal :term:`segments of circles <G.126>` on the same side.
+   On the same :term:`segment <G.4>` and on the same side of it, there cannot be constructed two similar and unequal :term:`segments of circles <G.126>`.
 
 .. signature:: theorem
 
-   | :fn:`segment_there_constructed <G.128>`\ ()
-   | **prove** the segment :g:`( A C B ) <g1:( A C B )>` is similar to the segment :g:`( A D B ) <g1:( A D B )>`, and similar segments of circles are those which admit equal angles, :g:`< A C B ) <g1:< A C B )>` :eq:`= <g1:< A C B ) = g1:< A D B )>` :g:`< A D B ) <g1:< A D B )>`, the exterior to the interior ⇒⇐
+   | :fn:`unique_similar_circle_segment <G.128>`\ (:g:`/ A B / <g1:/ A B />`, :g:`( A C B ) <g1:( A C B )>`, :g:`( A D B ) <g1:( A D B )>`)
+   | **given** similar circle segments :g:`( A C B ) <g1:( A C B )>`, :g:`( A D B ) <g1:( A D B )>` on the same side of :g:`/ A B / <g1:/ A B />`
+   | **prove** ¬(:g:`( A C B ) <g1:( A C B )>` ≠ :g:`( A D B ) <g1:( A D B )>`)
 
 .. picture:: g1.svg
    :alt: Diagram for Proposition 23
 
-.. step:: construct
+.. step:: given ∵ segment_circle_figure_def, similar_segments_circles_def <G.126, G.127>
 
-   If possible, on the same segment :g:`/ A B / <g1:/ A B />` let two similar and unequal segments of circles :g:`( A C B ) <g1:( A C B )>`, :g:`( A D B ) <g1:( A D B )>` be constructed on the same side
+   assume similar and unequal circle segments :g:`( A C B ) <g1:( A C B )>`, :g:`( A D B ) <g1:( A D B )>` on the same side of :g:`/ A B / <g1:/ A B />`
 
-.. step:: construct
+.. step:: construct ∵ segment <G.14>
 
-   Let :g:`/ A C D / <g1:/ A C D />` be drawn through
+   draw :g:`/ A C D / <g1:/ A C D />` through both arcs, :fn:`segment <G.14>`\ (:g:`C <g1:C>`, :g:`B <g1:B>`) → :g:`/ C B / <g1:/ C B />`, :fn:`segment <G.14>`\ (:g:`D <g1:D>`, :g:`B <g1:B>`) → :g:`/ D B / <g1:/ D B />`
 
-.. step:: construct
+.. step:: assert ∵ similar_segments_circles_def <G.127>
 
-   :fn:`segment <G.14>`\ (:g:`C <g1:C>`, :g:`B <g1:B>`) → :g:`/ C B / <g1:/ C B />`, :fn:`segment <G.14>`\ (:g:`D <g1:D>`, :g:`B <g1:B>`) → :g:`/ D B / <g1:/ D B />`
+   :g:`( A C B ) <g1:( A C B )>` ~ :g:`( A D B ) <g1:( A D B )>` → :g:`< A C B ) <g1:< A C B )>` :eq:`= <g1:< A C B ) = g1:< A D B )>` :g:`< A D B ) <g1:< A D B )>`
 
-.. step:: conclude ∵ similar_segments_circles_def, exterior_angle_greater <G.127, G.41>
+.. step:: assert ∵ exterior_angle_greater <G.41>
 
-   the segment :g:`( A C B ) <g1:( A C B )>` is similar to the segment :g:`( A D B ) <g1:( A D B )>`, and :term:`similar segments of circles <G.127>` are those which admit equal :term:`angles <G.22>`, :g:`< A C B ) <g1:< A C B )>` :eq:`= <g1:< A C B ) = g1:< A D B )>` :g:`< A D B ) <g1:< A D B )>`, the exterior to the interior ⇒⇐
+   in :g:`< C D B > <g1:< C D B >>`, exterior :g:`< A C B ) <g1:< A C B )>` > interior :g:`< A D B ) <g1:< A D B )>` ⇒⇐
+
+.. step:: conclude
+
+   on :g:`/ A B / <g1:/ A B />`, two similar and unequal circle segments cannot be constructed on the same side
 
 Dependency Graph
 ----------------
@@ -99,7 +104,7 @@ Dependency Graph
      "G.41" [label="G.41", tooltip="G.41 (I.16): In any triangle, if one side is extended, the exterior angle is greater than either opposite interior angle.", fillcolor="#222244", URL="../G.41/index.html", target="_top"];
      "G.126" [label="G.126", tooltip="G.126 (III.def.6): Asegment of a circle is thefigure contained by asegment and a arc of acircle.", fillcolor="#224422", URL="../G.126/index.html", target="_top"];
      "G.127" [label="G.127", tooltip="G.127 (III.def.11): Similar segments of circles are those which admit equalangles, or in which the angles are equal.", fillcolor="#224422", URL="../G.127/index.html", target="_top"];
-     "G.128" [label="G.128", tooltip="G.128 (III.23): On the same segment there cannot be constructed two similar and unequal segments of circles on the same side.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.128" [label="G.128", tooltip="G.128 (III.23): On the same segment and on the same side of it, there cannot be constructed two similar and unequal segments of circles.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -236,7 +241,6 @@ Dependency Graph
      "G.40" -> "G.22";
      "G.41" -> "G.22";
      "G.127" -> "G.22";
-     "G.128" -> "G.22";
      "G.24" -> "G.23";
      "G.29" -> "G.23";
      "G.25" -> "G.24";

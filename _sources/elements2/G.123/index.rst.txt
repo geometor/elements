@@ -10,8 +10,8 @@
 :categories: theorem, proof, plane-geometry, circles
 :category: theorem, proof, plane-geometry, circles
 :tags: book-iii, point, segment, circle, angle, sector-of-circle, plane-angle, centre, straight-line, arc, sector, plane, equality
-:dependencies: G.4, G.10, G.11, G.14, G.18, G.22, G.25, G.59, G.122
-:excerpt: In a circle the angle at the center is double of the angle at the arc, when the angles have the same arc as base.
+:dependencies: G.10, G.11, G.14, G.18, G.19, G.22, G.25, G.36, G.59, G.122
+:excerpt: In a circle, the angle at the center is double the angle at the circumference when the angles have the same arc as base.
 
 .. _G.123:
 .. _III.20:
@@ -23,72 +23,36 @@ G.123 inscribed angle theorem
 
 .. enunciation::
 
-   In a :term:`circle <G.10>` the :term:`angle <G.22>` at the :term:`center <G.11>` is double of the angle at the arc, when the angles have the same arc as base.
+   In a :term:`circle <G.10>`, the :term:`angle <G.22>` at the :term:`center <G.11>` is double the angle at the circumference when the angles have the same arc as base.
 
 .. signature:: theorem
 
    | :fn:`inscribed_angle_theorem <G.123>`\ (:g:`( A B C ) <g1:( A B C )>`, :g:`< B E C ) <g1:< B E C )>`, :g:`< B A C ) <g1:< B A C )>`, :g:`( B C ) <g1:( B C )>`)
-   | **given** :g:`( A B C ) <g1:( A B C )>` be a circle, let :g:`< B E C ) <g1:< B E C )>` be an angle at its center, :g:`< B A C ) <g1:< B A C )>` an angle at the arc, let them have the same arc :g:`( B C ) <g1:( B C )>` as base
-   | **prove** :g:`< B E C ) <g1:< B E C )>` is double of :g:`< B A C ) <g1:< B A C )>`
+   | **given** :g:`( A B C ) <g1:( A B C )>` with center :g:`E <g1:E>`, central angle :g:`< B E C ) <g1:< B E C )>` and inscribed angle :g:`< B A C ) <g1:< B A C )>` on base arc :g:`( B C ) <g1:( B C )>`
+   | **prove** :g:`< B E C ) <g1:< B E C )>` = 2 · :g:`< B A C ) <g1:< B A C )>`
 
 .. picture:: g1.svg
    :alt: Diagram for Proposition 20
 
-.. step:: given
+.. step:: given ∵ circle_radii, sector_circle_figure_def <G.10, G.122>
 
-   :g:`( A B C ) <g1:( A B C )>` be a circle, let :g:`< B E C ) <g1:< B E C )>` be an angle at its center, :g:`< B A C ) <g1:< B A C )>` an angle at the arc, let them have the same arc :g:`( B C ) <g1:( B C )>` as base
+   :g:`( A B C ) <g1:( A B C )>` with center :g:`E <g1:E>`, central angle :g:`< B E C ) <g1:< B E C )>` and inscribed angle :g:`< B A C ) <g1:< B A C )>` on base arc :g:`( B C ) <g1:( B C )>`
 
-.. step:: construct
+.. step:: construct ∵ segment, extend <G.14, G.18>
 
-   Let :g:`/ A E / <g1:/ A E />` be joined and drawn through to :g:`F <g1:F>`.
+   :fn:`segment <G.14>`\ (:g:`A <g1:A>`, :g:`E <g1:E>`) → :g:`/ A E / <g1:/ A E />`, :fn:`extend <G.18>`\ (:g:`/ A E / <g1:/ A E />`) → :g:`/ A F / <g1:/ A F />`
 
-.. step:: assert ∵ isosceles_base_angles <G.25>
+.. step:: assert ∵ isosceles_base_angles, triangle_angle_sum <G.25, G.59>
 
-   :g:`/ E A / <g1:/ E A />` :eq:`= <g1:/ E A / = g1:/ E B />` :g:`/ E B / <g1:/ E B />` → :g:`< E A B ) <g1:< E A B )>` :eq:`= <g1:< E A B ) = g1:< E B A )>` :g:`< E B A ) <g1:< E B A )>`
+   :g:`/ E A / <g1:/ E A />` :eq:`= <g1:/ E A / = g1:/ E B />` :g:`/ E B / <g1:/ E B />` → :g:`< E A B ) <g1:< E A B )>` :eq:`= <g1:< E A B ) = g1:< E B A )>` :g:`< E B A ) <g1:< E B A )>` → :g:`< B E F ) <g1:< B E F )>` = :g:`< E A B ) <g1:< E A B )>` + :g:`< E B A ) <g1:< E B A )>` = 2 · :g:`< E A B ) <g1:< E A B )>`
 
-.. step:: assert
+.. step:: assert ∵ isosceles_base_angles, triangle_angle_sum, add_equals <G.25, G.59, G.36>
 
-   :g:`< E A B ) <g1:< E A B )>`, :g:`< E B A ) <g1:< E B A )>` are double of :g:`< E A B ) <g1:< E A B )>`
+   similarly :g:`< F E C ) <g1:< F E C )>` = 2 · :g:`< E A C ) <g1:< E A C )>` → whole :g:`< B E C ) <g1:< B E C )>` = 2 · :g:`< B A C ) <g1:< B A C )>`
 
-.. step:: assert ∵ triangle_angle_sum <G.59>
+.. step:: conclude ∵ triangle_angle_sum, subtract_equals <G.59, G.19>
 
-   :g:`< B E F ) <g1:< B E F )>` is equal to :g:`< E A B ) <g1:< E A B )>`, :g:`< E B A ) <g1:< E B A )>`
-
-.. step:: assert
-
-   :g:`< B E F ) <g1:< B E F )>` is also double of :g:`< E A B ) <g1:< E A B )>`
-
-.. step:: assert
-
-   The same reason
-
-.. step:: assert
-
-   :g:`< F E C ) <g1:< F E C )>` is also double of :g:`< E A C ) <g1:< E A C )>`
-
-.. step:: assert
-
-   :g:`< B E C ) <g1:< B E C )>` is double of :g:`< B A C ) <g1:< B A C )>`
-
-.. step:: assert
-
-   Again let another :term:`segment <G.4>` be inflected, and let there be another angle :g:`< B D C ) <g1:< B D C )>`
-
-.. step:: construct
-
-   :fn:`segment <G.14>`\ (:g:`D <g1:D>`, :g:`E <g1:E>`) → :g:`/ D E / <g1:/ D E />`, :fn:`extend <G.18>`\ (:g:`/ D E / <g1:/ D E />`) → :g:`G <g1:G>`
-
-.. step:: assert
-
-   Similarly then we can prove that :g:`< G E C ) <g1:< G E C )>` is double of :g:`< E D C ) <g1:< E D C )>`,
-
-.. step:: assert
-
-   Of which :g:`< G E B ) <g1:< G E B )>` is double of :g:`< E D B ) <g1:< E D B )>`; therefore :g:`< B E C ) <g1:< B E C )>` which remains is double of the
-
-.. step:: conclude
-
-   Angle :g:`< B D C ) <g1:< B D C )>`
+   for inflected :g:`< B D C ) <g1:< B D C )>` with :g:`/ D E G / <g1:/ D G />`, :g:`< G E C ) <g1:< G E C )>` = 2 · :g:`< E D C ) <g1:< E D C )>` and :g:`< G E B ) <g1:< G E B )>` = 2 · :g:`< E D B ) <g1:< E D B )>` → remainder :g:`< B E C ) <g1:< B E C )>` = 2 · :g:`< B D C ) <g1:< B D C )>`
 
 Dependency Graph
 ----------------
@@ -150,7 +114,7 @@ Dependency Graph
      "G.58" [label="G.58", tooltip="G.58 (I.31): Construct through a given point a line parallel to a given line.", fillcolor="#222244", URL="../G.58/index.html", target="_top"];
      "G.59" [label="G.59", tooltip="G.59 (I.32): In any triangle, an exterior angle equals the sum of the two opposite interior angles, and the three interior angles sum to two right angles.", fillcolor="#222244", URL="../G.59/index.html", target="_top"];
      "G.122" [label="G.122", tooltip="G.122 (III.def.10): Asector of a circle is thefigure which, when anangle is constructed at thecenter of thecircle, is contained by thesegments containing the angle and the arc cut off by them.", fillcolor="#224422", URL="../G.122/index.html", target="_top"];
-     "G.123" [label="G.123", tooltip="G.123 (III.20): In a circle the angle at the center is double of the angle at the arc, when the angles have the same arc as base.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.123" [label="G.123", tooltip="G.123 (III.20): In a circle, the angle at the center is double the angle at the circumference when the angles have the same arc as base.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -229,7 +193,6 @@ Dependency Graph
      "G.58" -> "G.4";
      "G.59" -> "G.4";
      "G.122" -> "G.4";
-     "G.123" -> "G.4";
      "G.6" -> "G.5";
      "G.7" -> "G.5";
      "G.10" -> "G.6";
@@ -285,6 +248,7 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.58" -> "G.14";
      "G.123" -> "G.14";
      "G.17" -> "G.15";
@@ -296,7 +260,9 @@ Dependency Graph
      "G.21" -> "G.16";
      "G.37" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.56" -> "G.16";
+     "G.59" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
@@ -305,12 +271,14 @@ Dependency Graph
      "G.25" -> "G.18";
      "G.41" -> "G.18";
      "G.45" -> "G.18";
+     "G.53" -> "G.18";
      "G.58" -> "G.18";
      "G.59" -> "G.18";
      "G.123" -> "G.18";
      "G.20" -> "G.19";
      "G.25" -> "G.19";
      "G.40" -> "G.19";
+     "G.123" -> "G.19";
      "G.21" -> "G.20";
      "G.25" -> "G.21";
      "G.31" -> "G.21";
@@ -348,11 +316,13 @@ Dependency Graph
      "G.32" -> "G.24";
      "G.41" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.123" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
@@ -372,6 +342,8 @@ Dependency Graph
      "G.37" -> "G.34";
      "G.37" -> "G.36";
      "G.56" -> "G.36";
+     "G.59" -> "G.36";
+     "G.123" -> "G.36";
      "G.40" -> "G.37";
      "G.56" -> "G.37";
      "G.59" -> "G.37";

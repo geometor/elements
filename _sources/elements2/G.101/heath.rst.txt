@@ -1,12 +1,12 @@
 :canonical_id: G.101
 :original_id: III.4
-:title: G.101 circle segments cut
+:title: G.101 intersecting chords not through the center do not bisect
 :volume: II
 :book: III
 :type: prop
 
-G.101 circle segments cut — Heath
-=================================
+G.101 intersecting chords not through the center do not bisect — Heath
+======================================================================
 
 .. rubric:: `III.4 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/04/>`_
 
@@ -103,8 +103,8 @@ Dependency Graph
      "G.41" [label="G.41", tooltip="G.41 (I.16): In any triangle, if one side is extended, the exterior angle is greater than either opposite interior angle.", fillcolor="#222244", URL="../G.41/index.html", target="_top"];
      "G.51" [label="G.51", tooltip="G.51 (I.26): Triangles with two angles and one corresponding side equal are congruent (ASA / AAS).", fillcolor="#222244", URL="../G.51/index.html", target="_top"];
      "G.98" [label="G.98", tooltip="G.98 (III.1): Find the center of a given circle.", fillcolor="#222244", URL="../G.98/index.html", target="_top"];
-     "G.100" [label="G.100", tooltip="G.100 (III.3): If in a circle a segment through the center bisect a segment not through the center, it also cuts it at right angles; and if it cut it at right angles, it also bisects it.", fillcolor="#222244", URL="../G.100/index.html", target="_top"];
-     "G.101" [label="G.101", tooltip="G.101 (III.4): If in a circle two segments cut one another which are not through the center, they do not bisect one another.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.100" [label="G.100", tooltip="G.100 (III.3): A segment through the center of a circle bisects a chord not through the center if and only if it cuts the chord at right angles.", fillcolor="#222244", URL="../G.100/index.html", target="_top"];
+     "G.101" [label="G.101", tooltip="G.101 (III.4): In a circle, two intersecting chords that do not both pass through the center do not bisect one another.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -124,7 +124,6 @@ Dependency Graph
      "G.34" -> "G.1";
      "G.37" -> "G.1";
      "G.40" -> "G.1";
-     "G.98" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
      "G.6" -> "G.2";
@@ -202,7 +201,6 @@ Dependency Graph
      "G.34" -> "G.12";
      "G.41" -> "G.12";
      "G.51" -> "G.12";
-     "G.100" -> "G.12";
      "G.17" -> "G.13";
      "G.25" -> "G.13";
      "G.17" -> "G.14";
@@ -213,6 +211,7 @@ Dependency Graph
      "G.34" -> "G.14";
      "G.41" -> "G.14";
      "G.51" -> "G.14";
+     "G.98" -> "G.14";
      "G.100" -> "G.14";
      "G.101" -> "G.14";
      "G.17" -> "G.15";
@@ -238,6 +237,7 @@ Dependency Graph
      "G.31" -> "G.21";
      "G.34" -> "G.21";
      "G.41" -> "G.21";
+     "G.51" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
      "G.28" -> "G.22";
@@ -251,7 +251,6 @@ Dependency Graph
      "G.40" -> "G.22";
      "G.41" -> "G.22";
      "G.51" -> "G.22";
-     "G.98" -> "G.22";
      "G.100" -> "G.22";
      "G.24" -> "G.23";
      "G.29" -> "G.23";
@@ -263,6 +262,9 @@ Dependency Graph
      "G.100" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.51" -> "G.26";
+     "G.98" -> "G.26";
+     "G.101" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -278,11 +280,12 @@ Dependency Graph
      "G.40" -> "G.33";
      "G.98" -> "G.33";
      "G.100" -> "G.33";
-     "G.101" -> "G.33";
      "G.37" -> "G.34";
+     "G.98" -> "G.34";
      "G.37" -> "G.36";
      "G.40" -> "G.37";
      "G.40" -> "G.38";
+     "G.101" -> "G.38";
      "G.41" -> "G.40";
      "G.51" -> "G.41";
      "G.100" -> "G.51";

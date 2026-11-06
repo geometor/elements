@@ -2,7 +2,7 @@
 :number: 125
 :canonical_id: G.125
 :original_id: III.22
-:title: G.125 opposite angles quadrilaterals
+:title: G.125 opposite angles of a cyclic quadrilateral are supplementary
 :volume: II
 :book: III
 :type: prop
@@ -10,73 +10,49 @@
 :categories: theorem, proof, plane-geometry, circles
 :category: theorem, proof, plane-geometry, circles
 :tags: book-iii, segment, circle, angle, triangle, quadrilateral, plane-angle, right-angle, plane, equality
-:dependencies: G.10, G.12, G.14, G.22, G.33, G.59, G.124
-:excerpt: The opposite angles of quadrilaterals in circles are equal to two right angles.
+:dependencies: G.10, G.12, G.14, G.16, G.22, G.33, G.36, G.59, G.124
+:excerpt: The opposite angles of any quadrilateral inscribed in a circle sum to two right angles.
 
 .. _G.125:
 .. _III.22:
 
-G.125 opposite angles quadrilaterals
-====================================
+G.125 opposite angles of a cyclic quadrilateral are supplementary
+=================================================================
 
 .. rubric:: `III.22 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/22/>`_
 
 .. enunciation::
 
-   The opposite :term:`angles <G.22>` of :term:`quadrilaterals <G.12>` in :term:`circles <G.10>` are equal to two :term:`right angles <G.33>`.
+   The opposite :term:`angles <G.22>` of any :term:`quadrilateral <G.12>` inscribed in a :term:`circle <G.10>` sum to two :term:`right angles <G.33>`.
 
 .. signature:: theorem
 
-   | :fn:`opposite_angles_quadrilaterals <G.125>`\ (:g:`( A B C D ) <g1:( A B C D )>`, :g:`< A B C D > <g1:< A B C D >>`)
-   | **given** :g:`( A B C D ) <g1:( A B C D )>` be a circle, let :g:`< A B C D > <g1:< A B C D >>` be a quadrilateral in it
-   | **prove** the opposite angles are equal to two right angles
+   | :fn:`cyclic_quadrilateral_opposite_angles <G.125>`\ (:g:`( A B C D ) <g1:( A B C D )>`, :g:`< A B C D > <g1:< A B C D >>`)
+   | **given** :g:`< A B C D > <g1:< A B C D >>` inscribed in :g:`( A B C D ) <g1:( A B C D )>`
+   | **prove** :g:`< A B C ) <g1:< A B C )>` + :g:`< A D C ) <g1:< A D C )>` = 2∟, :g:`< B A D ) <g1:< B A D )>` + :g:`< D C B ) <g1:< D C B )>` = 2∟
 
 .. picture:: g1.svg
    :alt: Diagram for Proposition 22
 
-.. step:: given
+.. step:: given ∵ circle_radii, polygon_def <G.10, G.12>
 
-   :g:`( A B C D ) <g1:( A B C D )>` be a circle, let :g:`< A B C D > <g1:< A B C D >>` be a quadrilateral in it
+   :g:`( A B C D ) <g1:( A B C D )>`, quadrilateral :g:`< A B C D > <g1:< A B C D >>` inscribed in :g:`( A B C D ) <g1:( A B C D )>`
 
-.. step:: construct
+.. step:: construct ∵ segment <G.14>
 
    :fn:`segment <G.14>`\ (:g:`A <g1:A>`, :g:`C <g1:C>`) → :g:`/ A C / <g1:/ A C />`, :fn:`segment <G.14>`\ (:g:`B <g1:B>`, :g:`D <g1:D>`) → :g:`/ B D / <g1:/ B D />`
 
 .. step:: assert ∵ triangle_angle_sum <G.59>
 
-   in any triangle the three angles are equal to two right angles, the three angles :g:`< C A B ) <g1:< C A B )>`, :g:`< A B C ) <g1:< A B C )>`, :g:`< B C A ) <g1:< B C A )>` of :g:`< A B C > <g1:< A B C >>` are equal to two right angles
+   in :g:`< A B C > <g1:< A B C >>`, :g:`< C A B ) <g1:< C A B )>` + :g:`< A B C ) <g1:< A B C )>` + :g:`< B C A ) <g1:< B C A )>` = 2∟
 
-.. step:: assert ∵ circle_angles_segment <G.124>
+.. step:: assert ∵ angles_in_same_segment_equal, add_equals <G.124, G.36>
 
-   :g:`< C A B ) <g1:< C A B )>` :eq:`= <g1:< C A B ) = g1:< B D C )>` :g:`< B D C ) <g1:< B D C )>`, for they are in the same segment :g:`( B A D C ) <g1:( B A D C )>`
+   :g:`< C A B ) <g1:< C A B )>` :eq:`= <g1:< C A B ) = g1:< B D C )>` :g:`< B D C ) <g1:< B D C )>` in :g:`( B A D C ) <g1:( B A D C )>`, :g:`< A C B ) <g1:< A C B )>` :eq:`= <g1:< A C B ) = g1:< A D B )>` :g:`< A D B ) <g1:< A D B )>` in :g:`( A D C B ) <g1:( A D C B )>` → :g:`< A D C ) <g1:< A D C )>` = :g:`< B A C ) <g1:< B A C )>` + :g:`< A C B ) <g1:< A C B )>`
 
-.. step:: assert
+.. step:: conclude ∵ add_equals, equal_transitive <G.36, G.16>
 
-   :g:`< A C B ) <g1:< A C B )>` :eq:`= <g1:< A C B ) = g1:< A D B )>` :g:`< A D B ) <g1:< A D B )>`, for they are in the same segment :g:`( A D C B ) <g1:( A D C B )>`
-
-.. step:: assert
-
-   :g:`< A D C ) <g1:< A D C )>` is equal to :g:`< B A C ) <g1:< B A C )>`, :g:`< A C B ) <g1:< A C B )>`
-
-.. step:: construct
-
-   Let :g:`< A B C ) <g1:< A B C )>` be added to each
-
-.. step:: assert
-
-   :g:`< A B C ) <g1:< A B C )>`, :g:`< B A C ) <g1:< B A C )>`, :g:`< A C B ) <g1:< A C B )>` are equal to :g:`< A B C ) <g1:< A B C )>`, :g:`< A D C ) <g1:< A D C )>`
-
-.. step:: assert
-
-   :g:`< A B C ) <g1:< A B C )>`, :g:`< B A C ) <g1:< B A C )>`, :g:`< A C B ) <g1:< A C B )>` are equal to two right angles
-
-.. step:: assert
-
-   :g:`< A B C ) <g1:< A B C )>`, :g:`< A D C ) <g1:< A D C )>` are also equal to two right angles
-
-.. step:: conclude
-
-   Similarly we can prove that :g:`< B A D ) <g1:< B A D )>`, :g:`< D C B ) <g1:< D C B )>` are also equal to two right angles
+   :g:`< A B C ) <g1:< A B C )>` + :g:`< A D C ) <g1:< A D C )>` = :g:`< A B C ) <g1:< A B C )>` + :g:`< B A C ) <g1:< B A C )>` + :g:`< A C B ) <g1:< A C B )>` = 2∟, and :g:`< B A D ) <g1:< B A D )>` + :g:`< D C B ) <g1:< D C B )>` = 2∟
 
 Dependency Graph
 ----------------
@@ -137,10 +113,11 @@ Dependency Graph
      "G.56" [label="G.56", tooltip="G.56 (I.29): A transversal cutting parallel lines makes alternate interior angles equal, exterior and opposite interior angles equal, and same-side interior angles supplementary.", fillcolor="#222244", URL="../G.56/index.html", target="_top"];
      "G.58" [label="G.58", tooltip="G.58 (I.31): Construct through a given point a line parallel to a given line.", fillcolor="#222244", URL="../G.58/index.html", target="_top"];
      "G.59" [label="G.59", tooltip="G.59 (I.32): In any triangle, an exterior angle equals the sum of the two opposite interior angles, and the three interior angles sum to two right angles.", fillcolor="#222244", URL="../G.59/index.html", target="_top"];
+     "G.98" [label="G.98", tooltip="G.98 (III.1): Find the center of a given circle.", fillcolor="#222244", URL="../G.98/index.html", target="_top"];
      "G.122" [label="G.122", tooltip="G.122 (III.def.10): Asector of a circle is thefigure which, when anangle is constructed at thecenter of thecircle, is contained by thesegments containing the angle and the arc cut off by them.", fillcolor="#224422", URL="../G.122/index.html", target="_top"];
-     "G.123" [label="G.123", tooltip="G.123 (III.20): In a circle the angle at the center is double of the angle at the arc, when the angles have the same arc as base.", fillcolor="#222244", URL="../G.123/index.html", target="_top"];
-     "G.124" [label="G.124", tooltip="G.124 (III.21): In a circle the angles in the same segment are equal.", fillcolor="#222244", URL="../G.124/index.html", target="_top"];
-     "G.125" [label="G.125", tooltip="G.125 (III.22): The opposite angles of quadrilaterals in circles are equal to two right angles.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.123" [label="G.123", tooltip="G.123 (III.20): In a circle, the angle at the center is double the angle at the circumference when the angles have the same arc as base.", fillcolor="#222244", URL="../G.123/index.html", target="_top"];
+     "G.124" [label="G.124", tooltip="G.124 (III.21): In a circle, angles in the same segment are equal to one another.", fillcolor="#222244", URL="../G.124/index.html", target="_top"];
+     "G.125" [label="G.125", tooltip="G.125 (III.22): The opposite angles of any quadrilateral inscribed in a circle sum to two right angles.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -218,8 +195,8 @@ Dependency Graph
      "G.56" -> "G.4";
      "G.58" -> "G.4";
      "G.59" -> "G.4";
+     "G.98" -> "G.4";
      "G.122" -> "G.4";
-     "G.123" -> "G.4";
      "G.124" -> "G.4";
      "G.6" -> "G.5";
      "G.7" -> "G.5";
@@ -237,6 +214,7 @@ Dependency Graph
      "G.20" -> "G.10";
      "G.21" -> "G.10";
      "G.47" -> "G.10";
+     "G.98" -> "G.10";
      "G.122" -> "G.10";
      "G.123" -> "G.10";
      "G.124" -> "G.10";
@@ -246,9 +224,9 @@ Dependency Graph
      "G.20" -> "G.11";
      "G.21" -> "G.11";
      "G.47" -> "G.11";
+     "G.98" -> "G.11";
      "G.122" -> "G.11";
      "G.123" -> "G.11";
-     "G.124" -> "G.11";
      "G.13" -> "G.12";
      "G.17" -> "G.12";
      "G.20" -> "G.12";
@@ -280,7 +258,9 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.58" -> "G.14";
+     "G.98" -> "G.14";
      "G.123" -> "G.14";
      "G.124" -> "G.14";
      "G.125" -> "G.14";
@@ -293,7 +273,11 @@ Dependency Graph
      "G.21" -> "G.16";
      "G.37" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.56" -> "G.16";
+     "G.59" -> "G.16";
+     "G.124" -> "G.16";
+     "G.125" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
@@ -302,12 +286,14 @@ Dependency Graph
      "G.25" -> "G.18";
      "G.41" -> "G.18";
      "G.45" -> "G.18";
+     "G.53" -> "G.18";
      "G.58" -> "G.18";
      "G.59" -> "G.18";
      "G.123" -> "G.18";
      "G.20" -> "G.19";
      "G.25" -> "G.19";
      "G.40" -> "G.19";
+     "G.123" -> "G.19";
      "G.21" -> "G.20";
      "G.25" -> "G.21";
      "G.31" -> "G.21";
@@ -347,20 +333,25 @@ Dependency Graph
      "G.32" -> "G.24";
      "G.41" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.123" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.98" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
      "G.48" -> "G.29";
+     "G.98" -> "G.29";
      "G.31" -> "G.30";
      "G.48" -> "G.30";
      "G.32" -> "G.31";
      "G.41" -> "G.32";
+     "G.98" -> "G.32";
      "G.34" -> "G.33";
      "G.37" -> "G.33";
      "G.38" -> "G.33";
@@ -368,10 +359,15 @@ Dependency Graph
      "G.55" -> "G.33";
      "G.56" -> "G.33";
      "G.59" -> "G.33";
+     "G.98" -> "G.33";
      "G.125" -> "G.33";
      "G.37" -> "G.34";
+     "G.98" -> "G.34";
      "G.37" -> "G.36";
      "G.56" -> "G.36";
+     "G.59" -> "G.36";
+     "G.123" -> "G.36";
+     "G.125" -> "G.36";
      "G.40" -> "G.37";
      "G.56" -> "G.37";
      "G.59" -> "G.37";
@@ -395,6 +391,7 @@ Dependency Graph
      "G.59" -> "G.58";
      "G.123" -> "G.59";
      "G.125" -> "G.59";
+     "G.124" -> "G.98";
      "G.123" -> "G.122";
      "G.124" -> "G.123";
      "G.125" -> "G.124";

@@ -2,7 +2,7 @@
 :number: 151
 :canonical_id: G.151
 :original_id: IV.3
-:title: G.151 circumscribe triangle about circle
+:title: G.151 circumscribe a triangle about a circle equiangular with a triangle
 :volume: II
 :book: IV
 :type: prop
@@ -10,14 +10,14 @@
 :categories: problem, construction, plane-geometry, circles, polygons
 :category: problem, construction, plane-geometry, circles, polygons
 :tags: book-iv, point, segment, circle, angle, triangle, quadrilateral, trilateral, circumscribed-about-circle, centre, straight-line, plane-angle, tangent-to-circle, right-angle, circumscribed, equality
-:dependencies: G.10, G.12, G.18, G.22, G.33, G.37, G.48, G.59, G.98, G.118, G.120, G.150
+:dependencies: G.10, G.12, G.18, G.19, G.33, G.37, G.48, G.59, G.98, G.118, G.120, G.150
 :excerpt: Circumscribe about a given circle a triangle equiangular with a given triangle.
 
 .. _G.151:
 .. _IV.3:
 
-G.151 circumscribe triangle about circle
-========================================
+G.151 circumscribe a triangle about a circle equiangular with a triangle
+========================================================================
 
 .. rubric:: `IV.3 <https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/03/>`_
 
@@ -27,76 +27,36 @@ G.151 circumscribe triangle about circle
 
 .. signature:: problem
 
-   | :fn:`circumscribe_triangle_about_circle <G.151>`\ (:g:`( A B C ) <g1:( A B C )>`, :g:`< D E F > <g1:< D E F >>`)
+   | :fn:`circumscribe_triangle_about_circle <G.151>`\ (:g:`( A B C ) <g1:( A B C )>`, :g:`< D E F > <g1:< D E F >>`) → :g:`< L M N > <g1:< L M N >>`
    | **given** :g:`( A B C ) <g1:( A B C )>`, :g:`< D E F > <g1:< D E F >>`
-   | **construct** about a given circle there has been circumscribed a triangle equiangular with the given triangle
+   | **construct** :g:`< L M N > <g1:< L M N >>` is :term:`circumscribed about <G.150>` :g:`( A B C ) <g1:( A B C )>` and equiangular with :g:`< D E F > <g1:< D E F >>`
 
 .. picture:: g1.svg
    :alt: Diagram for Proposition 3
 
-.. step:: given
+.. step:: given ∵ circle_radii, polygon_def, polygon_said_circumscribed_def <G.10, G.12, G.150>
 
    :g:`( A B C ) <g1:( A B C )>`, :g:`< D E F > <g1:< D E F >>`
 
-.. step:: construct
+.. step:: construct ∵ extend, find_circle_center, copy_angle <G.18, G.98, G.48>
 
-   :fn:`extend <G.18>`\ (:g:`/ E F / <g1:/ E F />`) → :g:`G <g1:G>`, :g:`H <g1:H>`, let the center :g:`K <g1:K>` of :g:`( A B C ) <g1:( A B C )>` be taken
+   :fn:`extend <G.18>`\ (:g:`/ E F / <g1:/ E F />`) → :g:`/ H G / <g1:/ H G />`, :fn:`find_circle_center <G.98>`\ (:g:`( A B C ) <g1:( A B C )>`) → center :g:`K <g1:K>`, draw :g:`/ K B / <g1:/ K B />`, :fn:`copy_angle <G.48>`\ (:g:`/ K B / <g1:/ K B />`, :g:`K <g1:K>`) → :g:`< B K A ) <g1:< B K A )>` :eq:`= <g1:< B K A ) = g1:< D E G )>` :g:`< D E G ) <g1:< D E G )>`, :g:`< B K C ) <g1:< B K C )>` :eq:`= <g1:< B K C ) = g1:< D F H )>` :g:`< D F H ) <g1:< D F H )>`
 
-.. step:: construct
+.. step:: construct ∵ perpendicular_at_diameter_extremity_tangent <G.118>
 
-   Let :g:`/ K B / <g1:/ K B />` be drawn across at random
+   :fn:`perpendicular_at_diameter_extremity_tangent <G.118>`\ (:g:`( A B C ) <g1:( A B C )>`, :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`) → tangents :g:`/ L A M / <g1:/ L A M />`, :g:`/ M B N / <g1:/ M B N />`, :g:`/ N C L / <g1:/ N C L />` forming :g:`< L M N > <g1:< L M N >>`
 
-.. step:: construct
+.. step:: assert ∵ radius_perpendicular_to_tangent, triangle_angle_sum <G.120, G.59>
 
-   :fn:`copy_angle <G.48>`: On :g:`/ K B / <g1:/ K B />`, and at :g:`K <g1:K>` on it, let :g:`< B K A ) <g1:< B K A )>` be constructed :eq:`equal <g1:< B K A ) = g1:< D E G )>` to :g:`< D E G ) <g1:< D E G )>`, and :g:`< B K C ) <g1:< B K C )>` :eq:`equal <g1:< B K C ) = g1:< D F H )>` to :g:`< D F H ) <g1:< D F H )>`
+   Radii :g:`/ K A / <g1:/ K A />`, :g:`/ K B / <g1:/ K B />`, :g:`/ K C / <g1:/ K C />` ⊥ tangents → :g:`< K A M ) <g1:< K A M )>`, :g:`< K B M ) <g1:< K B M )>` are right; in :g:`< A M B K > <g1:< A M B K >>`, :g:`< A K B ) <g1:< A K B )>` + :g:`< A M B ) <g1:< A M B )>` = 2 :term:`right angles <G.33>`
 
-.. step:: construct
+.. step:: assert ∵ adjacent_angles_supplementary, subtract_equals <G.37, G.19>
 
-   :fn:`segment_drawn_right <G.118>`: And through :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` let :g:`/ L A M / <g1:/ L A M />`, :g:`/ M B N / <g1:/ M B N />`, :g:`/ N C L / <g1:/ N C L />` be drawn touching :g:`( A B C ) <g1:( A B C )>`.
+   :g:`< D E G ) <g1:< D E G )>` + :g:`< D E F ) <g1:< D E F )>` = 2 right angles and :g:`< A K B ) <g1:< A K B )>` :eq:`= <g1:< A K B ) = g1:< D E G )>` :g:`< D E G ) <g1:< D E G )>` → :g:`< A M B ) <g1:< A M B )>` :eq:`= <g1:< A M B ) = g1:< D E F )>` :g:`< D E F ) <g1:< D E F )>`; similarly :g:`< L N B ) <g1:< L N B )>` :eq:`= <g1:< L N B ) = g1:< D F E )>` :g:`< D F E ) <g1:< D F E )>`
 
-.. step:: assert ∵ segment_touch_circle <G.120>
+.. step:: conclude ∵ triangle_angle_sum, polygon_said_circumscribed_def <G.59, G.150>
 
-   :g:`/ L M / <g1:/ L M />`, :g:`/ M N / <g1:/ M N />`, :g:`/ N L / <g1:/ N L />` touch :g:`( A B C ) <g1:( A B C )>` at :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, and :g:`/ K A / <g1:/ K A />`, :g:`/ K B / <g1:/ K B />`, :g:`/ K C / <g1:/ K C />` have been joined from the center :g:`K <g1:K>` to :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, therefore the angles at :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>` are right
-
-.. step:: assert
-
-   since the four :term:`angles <G.22>` of the quadrilateral :g:`< A M B K > <g1:< A M B K >>` are equal to four :term:`right angles <G.33>`, inasmuch as :g:`< A M B K > <g1:< A M B K >>` is in fact divisible into two triangles,
-
-.. step:: assert
-
-   :g:`< K A M ) <g1:< K A M )>`, :g:`< K B M ) <g1:< K B M )>` are right,
-
-.. step:: assert
-
-   the remaining angles :g:`< A K B ) <g1:< A K B )>`, :g:`< A M B ) <g1:< A M B )>` are equal to two right angles
-
-.. step:: assert ∵ adjacent_angles_supplementary <G.37>
-
-   :g:`< D E G ) <g1:< D E G )>`, :g:`< D E F ) <g1:< D E F )>` are also equal to two right angles
-
-.. step:: assert
-
-   :g:`< A K B ) <g1:< A K B )>`, :g:`< A M B ) <g1:< A M B )>` are equal to :g:`< D E G ) <g1:< D E G )>`, :g:`< D E F ) <g1:< D E F )>`, of which :g:`< A K B ) <g1:< A K B )>` :eq:`= <g1:< A K B ) = g1:< D E G )>` :g:`< D E G ) <g1:< D E G )>`
-
-.. step:: assert
-
-   :g:`< A M B ) <g1:< A M B )>` which remains :eq:`= <g1:< A M B ) = g1:< D E F )>` :g:`< D E F ) <g1:< D E F )>` which remains
-
-.. step:: assert
-
-   Similarly it can be proved that :g:`< L N B ) <g1:< L N B )>` :eq:`= <g1:< L N B ) = g1:< D F E )>` :g:`< D F E ) <g1:< D F E )>`
-
-.. step:: assert ∵ triangle_angle_sum <G.59>
-
-   :g:`< M L N ) <g1:< M L N )>` :eq:`= <g1:< M L N ) = g1:< E D F )>` :g:`< E D F ) <g1:< E D F )>`
-
-.. step:: assert
-
-   :g:`< L M N > <g1:< L M N >>` is :eq:`equiangular <g1:< A M B ) = g1:< D E F ); g1:< L N B ) = g1:< D F E ); g1:< M L N ) = g1:< E D F )>` with :g:`< D E F > <g1:< D E F >>`, and it has been circumscribed about :g:`( A B C ) <g1:( A B C )>`
-
-.. step:: conclude
-
-   about a given :term:`circle <G.10>` there has been circumscribed a triangle equiangular with the given triangle
+   Remaining :g:`< M L N ) <g1:< M L N )>` :eq:`= <g1:< M L N ) = g1:< E D F )>` :g:`< E D F ) <g1:< E D F )>` → :g:`< L M N > <g1:< L M N >>` is circumscribed about :g:`( A B C ) <g1:( A B C )>` equiangular with :g:`< D E F > <g1:< D E F >>`
 
 Dependency Graph
 ----------------
@@ -160,11 +120,12 @@ Dependency Graph
      "G.59" [label="G.59", tooltip="G.59 (I.32): In any triangle, an exterior angle equals the sum of the two opposite interior angles, and the three interior angles sum to two right angles.", fillcolor="#222244", URL="../G.59/index.html", target="_top"];
      "G.61" [label="G.61", tooltip="G.61 (I.def.17): A diameter of a circle is any segment drawn through the center and terminated in both directions by the arc of the circle; it bisects the circle.", fillcolor="#224422", URL="../G.61/index.html", target="_top"];
      "G.77" [label="G.77", tooltip="G.77 (I.def.12): An acute angle is less than a right angle.", fillcolor="#224422", URL="../G.77/index.html", target="_top"];
+     "G.96" [label="G.96", tooltip="G.96 (I.def.18): A semicircle is the figure contained by a diameter and the arc cut off by it.", fillcolor="#224422", URL="../G.96/index.html", target="_top"];
      "G.98" [label="G.98", tooltip="G.98 (III.1): Find the center of a given circle.", fillcolor="#222244", URL="../G.98/index.html", target="_top"];
      "G.111" [label="G.111", tooltip="G.111 (III.def.2): Asegment is said totouch a circle which, meeting thecircle and being produced, does not cut the circle.", fillcolor="#224422", URL="../G.111/index.html", target="_top"];
      "G.117" [label="G.117", tooltip="G.117 (III.def.7): Anangle of a segment is that contained by asegment and a arc of acircle.", fillcolor="#224422", URL="../G.117/index.html", target="_top"];
-     "G.118" [label="G.118", tooltip="G.118 (III.16): The segment drawn at right angles to the diameter of a circle from its extremity will fall outside the circle, and into the space between the segment and the arc another segment ca...", fillcolor="#222244", URL="../G.118/index.html", target="_top"];
-     "G.120" [label="G.120", tooltip="G.120 (III.18): If a segment touch a circle, and a segment be joined from the center to the point of contact, the segment so joined is perpendicular to the tangent.", fillcolor="#222244", URL="../G.120/index.html", target="_top"];
+     "G.118" [label="G.118", tooltip="G.118 (III.16): The line drawn at right angles to the diameter of a circle from its extremity falls outside the circle, no other line can be interposed between it and the arc, and the angle of the...", fillcolor="#222244", URL="../G.118/index.html", target="_top"];
+     "G.120" [label="G.120", tooltip="G.120 (III.18): If a line touches a circle, the segment joined from the center to the point of contact is perpendicular to the tangent.", fillcolor="#222244", URL="../G.120/index.html", target="_top"];
      "G.150" [label="G.150", tooltip="G.150 (IV.def.4): Apolygon is said to becircumscribed about a circle, when each side of the circumscribedfigure touches the arc of thecircle.", fillcolor="#224422", URL="../G.150/index.html", target="_top"];
      "G.151" [label="G.151", tooltip="G.151 (IV.3): Circumscribe about a given circle a triangle equiangular with a given triangle.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
@@ -191,7 +152,6 @@ Dependency Graph
      "G.48" -> "G.1";
      "G.58" -> "G.1";
      "G.59" -> "G.1";
-     "G.98" -> "G.1";
      "G.120" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
@@ -210,6 +170,8 @@ Dependency Graph
      "G.55" -> "G.2";
      "G.56" -> "G.2";
      "G.58" -> "G.2";
+     "G.118" -> "G.2";
+     "G.120" -> "G.2";
      "G.4" -> "G.3";
      "G.6" -> "G.3";
      "G.8" -> "G.3";
@@ -262,6 +224,7 @@ Dependency Graph
      "G.9" -> "G.8";
      "G.10" -> "G.9";
      "G.12" -> "G.9";
+     "G.96" -> "G.9";
      "G.150" -> "G.9";
      "G.11" -> "G.10";
      "G.15" -> "G.10";
@@ -270,10 +233,12 @@ Dependency Graph
      "G.21" -> "G.10";
      "G.47" -> "G.10";
      "G.61" -> "G.10";
+     "G.96" -> "G.10";
      "G.98" -> "G.10";
      "G.111" -> "G.10";
      "G.117" -> "G.10";
      "G.118" -> "G.10";
+     "G.120" -> "G.10";
      "G.150" -> "G.10";
      "G.151" -> "G.10";
      "G.15" -> "G.11";
@@ -282,6 +247,7 @@ Dependency Graph
      "G.21" -> "G.11";
      "G.47" -> "G.11";
      "G.61" -> "G.11";
+     "G.96" -> "G.11";
      "G.98" -> "G.11";
      "G.120" -> "G.11";
      "G.13" -> "G.12";
@@ -317,7 +283,10 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.58" -> "G.14";
+     "G.98" -> "G.14";
+     "G.118" -> "G.14";
      "G.17" -> "G.15";
      "G.20" -> "G.15";
      "G.21" -> "G.15";
@@ -327,7 +296,9 @@ Dependency Graph
      "G.21" -> "G.16";
      "G.37" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.56" -> "G.16";
+     "G.59" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
@@ -337,12 +308,14 @@ Dependency Graph
      "G.41" -> "G.18";
      "G.42" -> "G.18";
      "G.45" -> "G.18";
+     "G.53" -> "G.18";
      "G.58" -> "G.18";
      "G.59" -> "G.18";
      "G.151" -> "G.18";
      "G.20" -> "G.19";
      "G.25" -> "G.19";
      "G.40" -> "G.19";
+     "G.151" -> "G.19";
      "G.21" -> "G.20";
      "G.25" -> "G.21";
      "G.31" -> "G.21";
@@ -374,22 +347,23 @@ Dependency Graph
      "G.58" -> "G.22";
      "G.59" -> "G.22";
      "G.77" -> "G.22";
-     "G.98" -> "G.22";
      "G.118" -> "G.22";
-     "G.120" -> "G.22";
-     "G.151" -> "G.22";
      "G.24" -> "G.23";
      "G.29" -> "G.23";
      "G.25" -> "G.24";
      "G.32" -> "G.24";
      "G.41" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.118" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.98" -> "G.26";
+     "G.120" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -415,8 +389,11 @@ Dependency Graph
      "G.120" -> "G.33";
      "G.151" -> "G.33";
      "G.37" -> "G.34";
+     "G.98" -> "G.34";
      "G.37" -> "G.36";
+     "G.42" -> "G.36";
      "G.56" -> "G.36";
+     "G.59" -> "G.36";
      "G.40" -> "G.37";
      "G.42" -> "G.37";
      "G.56" -> "G.37";
@@ -425,6 +402,7 @@ Dependency Graph
      "G.40" -> "G.38";
      "G.41" -> "G.40";
      "G.56" -> "G.40";
+     "G.42" -> "G.41";
      "G.43" -> "G.41";
      "G.53" -> "G.41";
      "G.118" -> "G.42";
@@ -446,9 +424,11 @@ Dependency Graph
      "G.59" -> "G.56";
      "G.59" -> "G.58";
      "G.151" -> "G.59";
+     "G.96" -> "G.61";
      "G.118" -> "G.61";
      "G.118" -> "G.77";
      "G.120" -> "G.77";
+     "G.118" -> "G.96";
      "G.151" -> "G.98";
      "G.118" -> "G.111";
      "G.120" -> "G.111";

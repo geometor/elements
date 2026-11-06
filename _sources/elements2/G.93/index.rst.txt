@@ -2,7 +2,7 @@
 :number: 93
 :canonical_id: G.93
 :original_id: II.11
-:title: G.93 cut extreme and mean ratio
+:title: G.93 cut a segment in extreme and mean ratio
 :volume: I
 :book: II
 :type: prop
@@ -10,121 +10,53 @@
 :categories: problem, construction, plane-geometry, geometric-algebra
 :category: problem, construction, plane-geometry, geometric-algebra
 :tags: book-ii, point, segment, angle, quadrilateral, polygon, straight-line, contained-rectangle, square, plane-angle, rectangle, equality
-:dependencies: G.4, G.14, G.18, G.21, G.22, G.63, G.75, G.79, G.81, G.88
-:excerpt: Cut a given segment so that the rectangle contained by the whole and one of the segments is equal to the square on the remaining segment.
+:dependencies: G.4, G.14, G.18, G.19, G.21, G.32, G.63, G.75, G.79, G.81, G.88
+:excerpt: Cut a given segment so that the rectangle contained by the whole and one of the segments equals the square on the remaining segment.
 
 .. _G.93:
 .. _II.11:
 
-G.93 cut extreme and mean ratio
-===============================
+G.93 cut a segment in extreme and mean ratio
+============================================
 
 .. rubric:: `II.11 <https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/11/>`_
 
 .. enunciation::
 
-   Cut a given :term:`segment <G.4>` so that the :term:`rectangle contained <G.81>` by the whole and one of the segments is equal to the :term:`square <G.63>` on the remaining segment.
+   Cut a given :term:`segment <G.4>` so that the :term:`rectangle contained <G.81>` by the whole and one of the segments equals the :term:`square <G.63>` on the remaining segment.
 
 .. signature:: problem
 
-   | :fn:`cut_extreme_and_mean_ratio <G.93>`\ (:g:`/ A B / <g1:/ A B />`) → :g:`H <g1:H>`, :g:`/ B H / <g1:/ B H />`
+   | :fn:`cut_extreme_and_mean_ratio <G.93>`\ (:g:`/ A B / <g1:/ A B />`) → :g:`H <g1:H>`
    | **given** :g:`/ A B / <g1:/ A B />`
-   | **construct** :g:`/ A B / <g1:/ A B />` has been cut at :g:`H <g1:H>` so as to make the rectangle contained by :g:`/ A B / <g1:/ A B />`, :g:`/ B H / <g1:/ B H />` :eq:`equal <g1:< H B D K > = g1:< A F G H >>` to the square on :g:`/ A H / <g1:/ A H />`
+   | **construct** :fn:`contained_rectangle <G.81>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ B H / <g1:/ B H />`) :eq:`= <g1:< H B D K > = g1:< A F G H >>` :fn:`square_on_segment <G.75>`\ (:g:`/ A H / <g1:/ A H />`)
 
 .. picture:: g1.svg
    :alt: 0416.g1
 
-.. step:: given
+.. step:: given ∵ segment_def <G.4>
 
    :g:`/ A B / <g1:/ A B />`
 
-.. step:: construct
+.. step:: construct ∵ square_on_segment, bisect_segment, segment <G.75, G.32, G.14>
 
-   :fn:`square_on_segment <G.75>`: Let the square :g:`< A B D C > <g1:< A B D C >>` be described on :g:`/ A B / <g1:/ A B />`
+   :fn:`square_on_segment <G.75>`\ (:g:`/ A B / <g1:/ A B />`) → :g:`< A B D C > <g1:< A B D C >>`, :fn:`bisect_segment <G.32>`\ (:g:`/ A C / <g1:/ A C />`) → :g:`E <g1:E>` (:g:`/ A E / <g1:/ A E />` :eq:`= <g1:/ A E / = g1:/ E C />` :g:`/ E C / <g1:/ E C />`), :fn:`segment <G.14>`\ (:g:`B <g1:B>`, :g:`E <g1:E>`) → :g:`/ B E / <g1:/ B E />`
 
-.. step:: construct
+.. step:: construct ∵ extend, cut_equal_segment, square_on_segment <G.18, G.21, G.75>
 
-   :fn:`segment <G.14>`\ (:g:`A <g1:A>`, :g:`C <g1:C>`) → :g:`/ A C / <g1:/ A C />`, :fn:`segment <G.14>`\ () → :g:`E <g1:E>`, :fn:`segment <G.14>`\ (:g:`B <g1:B>`, :g:`E <g1:E>`) → :g:`/ B E / <g1:/ B E />`
+   :fn:`extend <G.18>`\ (:g:`/ C A / <g1:/ C A />`) → :g:`F <g1:F>`, :fn:`cut_equal_segment <G.21>`\ (:g:`/ E F / <g1:/ E F />`, :g:`/ B E / <g1:/ B E />`) → :g:`/ E F / <g1:/ E F />` :eq:`= <g1:/ E F / = g1:/ B E />` :g:`/ B E / <g1:/ B E />`, :fn:`square_on_segment <G.75>`\ (:g:`/ A F / <g1:/ A F />`) → :g:`< F H > <g1:< F H >>`, :fn:`extend <G.18>`\ (:g:`/ G H / <g1:/ G H />`) → :g:`K <g1:K>`
 
-.. step:: construct
+.. step:: assert ∵ bisected_and_extended_segment, pythagorean_theorem, subtract_equals <G.88, G.79, G.19>
 
-   :fn:`extend <G.18>`\ (:g:`/ C A / <g1:/ C A />`) → :g:`F <g1:F>`
+   :fn:`rectangular_parallelogram_said_def <G.81>`\ (:g:`/ C F / <g1:/ C F />`, :g:`/ F A / <g1:/ F A />`) + :fn:`square_on_segment <G.75>`\ (:g:`/ A E / <g1:/ A E />`) = :fn:`square_on_segment <G.75>`\ (:g:`/ E F / <g1:/ E F />`) = :fn:`square_on_segment <G.75>`\ (:g:`/ E B / <g1:/ E B />`) = :fn:`square_on_segment <G.75>`\ (:g:`/ A B / <g1:/ A B />`) + :fn:`square_on_segment <G.75>`\ (:g:`/ A E / <g1:/ A E />`) → :g:`< F K > <g1:< C F G K >>` :eq:`= <g1:< C F G K > = g1:< A B D C >>` :g:`< A B D C > <g1:< A B D C >>`
 
-.. step:: construct
+.. step:: assert ∵ subtract_equals <G.19>
 
-   :fn:`cut_equal_segment <G.21>`\ (:g:`/ B E / <g1:/ B E />`) → :g:`/ E F / <g1:/ E F />` (:eq:`equal <g1:/ E F / = g1:/ B E />`)
+   :g:`< F K > <g1:< C F G K >>` − :g:`< A K > <g1:< A H K C >>` = :g:`< A B D C > <g1:< A B D C >>` − :g:`< A K > <g1:< A H K C >>` → :g:`< F H > <g1:< A F G H >>` :eq:`= <g1:< A F G H > = g1:< H B D K >>` :g:`< H D > <g1:< H B D K >>`
 
-.. step:: construct
+.. step:: conclude ∵ quadrilateral_def, rectangular_parallelogram_said_def <G.63, G.81>
 
-   Let the square :g:`< F H > <g1:< F H >>` be described on :g:`/ A F / <g1:/ A F />`
-
-.. step:: construct
-
-   :fn:`extend <G.18>`\ (:g:`/ G H / <g1:/ G H />`) → :g:`K <g1:K>`
-
-.. step:: assert ∵ bisected_and_extended_segment <G.88>
-
-   :g:`/ A C / <g1:/ A C />` has been :eq:`bisected <g1:/ A E / = g1:/ E C />` at :g:`E <g1:E>`, and :g:`/ F A / <g1:/ F A />` is added to it → the rectangle contained by :g:`/ C F / <g1:/ C F />`, :g:`/ F A / <g1:/ F A />` together with the square on :g:`/ A E / <g1:/ A E />` is equal to the square on :g:`/ E F / <g1:/ E F />`
-
-.. step:: assert
-
-   :g:`/ E F / <g1:/ E F />` :eq:`= <g1:/ E F / = g1:/ E B />` :g:`/ E B / <g1:/ E B />`
-
-.. step:: assert
-
-   the rectangle :g:`/ C F / <g1:/ C F />`, :g:`/ F A / <g1:/ F A />` together with the square on :g:`/ A E / <g1:/ A E />` is equal to the square on :g:`/ E B / <g1:/ E B />`
-
-.. step:: assert ∵ pythagorean_theorem <G.79>
-
-   The squares on :g:`/ B A / <g1:/ B A />`, :g:`/ A E / <g1:/ A E />` are equal to the square on :g:`/ E B / <g1:/ E B />`, for the :term:`angle <G.22>` at :g:`< B A E ) <g1:< B A E )>` is right:
-
-.. step:: assert
-
-   the rectangle :g:`/ C F / <g1:/ C F />`, :g:`/ F A / <g1:/ F A />` together with the square on :g:`/ A E / <g1:/ A E />` is equal to the squares on :g:`/ B A / <g1:/ B A />`, :g:`/ A E / <g1:/ A E />`
-
-.. step:: construct
-
-   Let the square on :g:`/ A E / <g1:/ A E />` be subtracted from each
-
-.. step:: assert
-
-   the rectangle :g:`/ C F / <g1:/ C F />`, :g:`/ F A / <g1:/ F A />` which remains is :eq:`equal <g1:< C F G K > = g1:< A B D C >>` to the square on :g:`/ A B / <g1:/ A B />`
-
-.. step:: assert
-
-   Now the rectangle :g:`/ C F / <g1:/ C F />`, :g:`/ F A / <g1:/ F A />` is :g:`< C F G K > <g1:< C F G K >>`, for :g:`/ A F / <g1:/ A F />` :eq:`= <g1:/ A F / = g1:/ F G />` :g:`/ F G / <g1:/ F G />`
-
-.. step:: assert
-
-   the square on :g:`/ A B / <g1:/ A B />` is :g:`< A B D C > <g1:< A B D C >>`
-
-.. step:: assert
-
-   :g:`< C F G K > <g1:< C F G K >>` is :eq:`equal <g1:< C F G K > = g1:< A B D C >>` to :g:`< A B D C > <g1:< A B D C >>`
-
-.. step:: construct
-
-   Let :g:`< A H K C > <g1:< A H K C >>` be subtracted from each
-
-.. step:: assert
-
-   :g:`< A F G H > <g1:< A F G H >>` which remains is :eq:`equal <g1:< A F G H > = g1:< H B D K >>` to :g:`< H B D K > <g1:< H B D K >>`
-
-.. step:: assert
-
-   :g:`< H B D K > <g1:< H B D K >>` is the rectangle :g:`/ A B / <g1:/ A B />`, :g:`/ B H / <g1:/ B H />`, for :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ B D />` :g:`/ B D / <g1:/ B D />`
-
-.. step:: assert
-
-   :g:`< A F G H > <g1:< A F G H >>` is the square on :g:`/ A H / <g1:/ A H />`
-
-.. step:: assert
-
-   the rectangle contained by :g:`/ A B / <g1:/ A B />`, :g:`/ B H / <g1:/ B H />` is :eq:`equal <g1:< H B D K > = g1:< A F G H >>` to the square on :g:`/ H A / <g1:/ H A />`
-
-.. step:: conclude
-
-   :g:`/ A B / <g1:/ A B />` has been cut at :g:`H <g1:H>` so as to make the rectangle contained by :g:`/ A B / <g1:/ A B />`, :g:`/ B H / <g1:/ B H />` :eq:`equal <g1:< H B D K > = g1:< A F G H >>` to the square on :g:`/ H A / <g1:/ H A />`
+   :fn:`contained_rectangle <G.81>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ B H / <g1:/ B H />`) :eq:`= <g1:< H B D K > = g1:< A F G H >>` :fn:`square_on_segment <G.75>`\ (:g:`/ A H / <g1:/ A H />`)
 
 Dependency Graph
 ----------------
@@ -202,8 +134,8 @@ Dependency Graph
      "G.79" [label="G.79", tooltip="G.79 (I.47): In a right-angled triangle, the square on the hypotenuse equals the sum of the squares on the two legs (Pythagorean Theorem).", fillcolor="#222244", URL="../G.79/index.html", target="_top"];
      "G.81" [label="G.81", tooltip="G.81 (II.def.1): Any rectangular parallelogram is said to becontained by the twosegments containing theright angle.", fillcolor="#224422", URL="../G.81/index.html", target="_top"];
      "G.86" [label="G.86", tooltip="G.86 (II.def.2): And in any parallelogrammic area let any one whatever of the parallelograms about itsdiameter with the two complements be called agnomon.", fillcolor="#224422", URL="../G.86/index.html", target="_top"];
-     "G.88" [label="G.88", tooltip="G.88 (II.6): If a segment be bisected and a segment be added to it in a segment, the rectangle contained by the whole with the added segment and the added segment together with the square on th...", fillcolor="#222244", URL="../G.88/index.html", target="_top"];
-     "G.93" [label="G.93", tooltip="G.93 (II.11): Cut a given segment so that the rectangle contained by the whole and one of the segments is equal to the square on the remaining segment.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.88" [label="G.88", tooltip="G.88 (II.6): If a segment is bisected and a segment is added to it in a line, the rectangle contained by the whole with the added segment and the added segment together with the square on the h...", fillcolor="#222244", URL="../G.88/index.html", target="_top"];
+     "G.93" [label="G.93", tooltip="G.93 (II.11): Cut a given segment so that the rectangle contained by the whole and one of the segments equals the square on the remaining segment.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -248,7 +180,7 @@ Dependency Graph
      "G.55" -> "G.2";
      "G.56" -> "G.2";
      "G.58" -> "G.2";
-     "G.65" -> "G.2";
+     "G.88" -> "G.2";
      "G.4" -> "G.3";
      "G.6" -> "G.3";
      "G.8" -> "G.3";
@@ -360,6 +292,7 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.51" -> "G.14";
      "G.58" -> "G.14";
      "G.60" -> "G.14";
@@ -378,17 +311,23 @@ Dependency Graph
      "G.37" -> "G.16";
      "G.39" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.56" -> "G.16";
      "G.64" -> "G.16";
      "G.65" -> "G.16";
+     "G.66" -> "G.16";
+     "G.70" -> "G.16";
+     "G.75" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
      "G.34" -> "G.17";
      "G.20" -> "G.18";
      "G.25" -> "G.18";
+     "G.39" -> "G.18";
      "G.41" -> "G.18";
      "G.45" -> "G.18";
+     "G.53" -> "G.18";
      "G.58" -> "G.18";
      "G.66" -> "G.18";
      "G.93" -> "G.18";
@@ -398,6 +337,7 @@ Dependency Graph
      "G.40" -> "G.19";
      "G.64" -> "G.19";
      "G.72" -> "G.19";
+     "G.93" -> "G.19";
      "G.21" -> "G.20";
      "G.25" -> "G.21";
      "G.31" -> "G.21";
@@ -406,6 +346,7 @@ Dependency Graph
      "G.43" -> "G.21";
      "G.45" -> "G.21";
      "G.47" -> "G.21";
+     "G.51" -> "G.21";
      "G.75" -> "G.21";
      "G.93" -> "G.21";
      "G.24" -> "G.22";
@@ -439,7 +380,6 @@ Dependency Graph
      "G.77" -> "G.22";
      "G.78" -> "G.22";
      "G.79" -> "G.22";
-     "G.93" -> "G.22";
      "G.24" -> "G.23";
      "G.29" -> "G.23";
      "G.25" -> "G.24";
@@ -451,11 +391,15 @@ Dependency Graph
      "G.64" -> "G.24";
      "G.79" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.28" -> "G.26";
+     "G.39" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.51" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -464,6 +408,7 @@ Dependency Graph
      "G.48" -> "G.30";
      "G.32" -> "G.31";
      "G.41" -> "G.32";
+     "G.93" -> "G.32";
      "G.34" -> "G.33";
      "G.37" -> "G.33";
      "G.38" -> "G.33";
@@ -485,6 +430,7 @@ Dependency Graph
      "G.64" -> "G.36";
      "G.72" -> "G.36";
      "G.79" -> "G.36";
+     "G.88" -> "G.36";
      "G.39" -> "G.37";
      "G.40" -> "G.37";
      "G.56" -> "G.37";

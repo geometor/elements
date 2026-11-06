@@ -12,6 +12,7 @@
 :tags: book-i, segment, angle, triangle, straight-line, parallel-straight-lines, extremity, plane-angle, trilateral, parallel, equality
 :dependencies: G.3, G.4, G.12, G.14, G.22, G.24, G.52, G.53, G.56
 :excerpt: Segments joining the endpoints of equal and parallel segments in the same directions are themselves equal and parallel.
+:youtube_id: rz1JXaUQCJc
 
 .. _G.60:
 .. _I.33:
@@ -27,16 +28,16 @@ G.60 segments joining equal and parallel segments
 
 .. signature:: theorem
 
-   | :fn:`join_equal_parallels <G.60>`\ (:g:`/ A B /; g1:/ A B / <g1:/ A B /; g1:/ A B />`, :g:`/ C D /; g1:/ C D / <g1:/ C D /; g1:/ C D />`, :g:`/ A C /; g1:/ A C / <g1:/ A C /; g1:/ A C />`, :g:`/ B D /; g1:/ B D / <g1:/ B D /; g1:/ B D />`)
-   | **given** :g:`/ A B /; g1:/ A B / <g1:/ A B /; g1:/ A B />`, :g:`/ C D /; g1:/ C D / <g1:/ C D /; g1:/ C D />` be :eq:`= <g1:/ A B / = g1:/ C D />` and parallel, let :g:`/ A C /; g1:/ A C / <g1:/ A C /; g1:/ A C />`, :g:`/ B D /; g1:/ B D / <g1:/ B D /; g1:/ B D />` join them (at the extremities which are) in the same directions (respectively)
-   | **prove** :g:`/ A C / <g1:/ A C />`, :g:`/ B D / <g1:/ B D />` are also :eq:`= <g1:/ A C / = g1:/ B D />` and parallel
+   | :fn:`join_equal_parallels <G.60>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`, :g:`/ A C / <g1:/ A C />`, :g:`/ B D / <g1:/ B D />`)
+   | **given** :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ C D />` :g:`/ C D / <g1:/ C D />`, :g:`/ A B / <g1:/ A B />` ∥ :g:`/ C D / <g1:/ C D />`, :g:`/ A C / <g1:/ A C />`, :g:`/ B D / <g1:/ B D />`
+   | **prove** :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ B D />` :g:`/ B D / <g1:/ B D />`, :g:`/ A C / <g1:/ A C />` ∥ :g:`/ B D / <g1:/ B D />`
 
 .. picture:: g1.svg
    :alt: Folio 0337 Figure 1 - Proposition 33
 
 .. step:: given
 
-   :g:`/ A B /; g1:/ A B / <g1:/ A B /; g1:/ A B />`, :g:`/ C D /; g1:/ C D / <g1:/ C D /; g1:/ C D />` be :eq:`= <g1:/ A B / = g1:/ C D />` and parallel, let :g:`/ A C /; g1:/ A C / <g1:/ A C /; g1:/ A C />`, :g:`/ B D /; g1:/ B D / <g1:/ B D /; g1:/ B D />` join them (at the extremities which are) in the same directions (respectively)
+   :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ C D />` :g:`/ C D / <g1:/ C D />`, :g:`/ A B / <g1:/ A B />` ∥ :g:`/ C D / <g1:/ C D />`, :g:`/ A C / <g1:/ A C />`, :g:`/ B D / <g1:/ B D />`
 
 .. step:: construct
 
@@ -44,43 +45,15 @@ G.60 segments joining equal and parallel segments
 
 .. step:: assert ∵ parallel_transversal_angles <G.56>
 
-   :g:`/ A B / <g1:/ A B />` is parallel to :g:`/ C D / <g1:/ C D />`, and :g:`/ B C / <g1:/ B C />` has fallen upon them → the alternate angles :g:`< A B C ) <g1:< A B C )>`, :g:`< B C D ) <g1:< B C D )>` :eq:`= <g1:< A B C ) = g1:< B C D )>`
-
-.. step:: assert
-
-   since :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ C D />` :g:`/ C D / <g1:/ C D />`, and :g:`/ B C / <g1:/ B C />` is common, :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ A B / = g1:/ D C /; g1:/ B C / = g1:/ C B />` :g:`/ D C / <g1:/ D C />`, :g:`/ C B / <g1:/ C B />`
-
-.. step:: assert
-
-   :g:`< A B C ) <g1:< A B C )>` :eq:`= <g1:< A B C ) = g1:< B C D )>` :g:`< B C D ) <g1:< B C D )>`
-
-.. step:: assert
-
-   :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ B D />` :g:`/ B D / <g1:/ B D />`,
-
-.. step:: assert
-
-   :g:`< A B C > <g1:< A B C >>` is :eq:`equal <g1:< A B C > = g1:< D C B >>` to :g:`< D C B > <g1:< D C B >>`,
+   :g:`/ A B / <g1:/ A B />` ∥ :g:`/ C D / <g1:/ C D />`, :g:`/ B C / <g1:/ B C />` ∩ :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` → :g:`< A B C ) <g1:< A B C )>` :eq:`= <g1:< A B C ) = g1:< B C D )>` :g:`< B C D ) <g1:< B C D )>`
 
 .. step:: assert ∵ sas_congruence <G.24>
 
-   the remaining :term:`angles <G.22>` :eq:`= <g1:< A C B ) = g1:< C B D ); g1:< B A C ) = g1:< C D B )>` the remaining angles, namely those which the :eq:`= <g1:/ A B / = g1:/ C D /; g1:/ B C / = g1:/ C B />` sides subtend
+   :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ D C />; g1:/ B C / = g1:/ C B />` :g:`/ D C / <g1:/ D C />`, :g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ A B / = g1:/ D C />; g1:/ B C / = g1:/ C B />` :g:`/ C B / <g1:/ C B />`, :g:`< A B C ) <g1:< A B C )>` :eq:`= <g1:< A B C ) = g1:< B C D )>` :g:`< B C D ) <g1:< B C D )>` → :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ B D />` :g:`/ B D / <g1:/ B D />`, :g:`< A B C > <g1:< A B C >>` :eq:`= <g1:< A B C > = g1:< D C B >>` :g:`< D C B > <g1:< D C B >>`, :g:`< A C B ) <g1:< A C B )>` :eq:`= <g1:< A C B ) = g1:< C B D )>` :g:`< C B D ) <g1:< C B D )>`
 
-.. step:: assert
+.. step:: conclude ∵ alternate_angles_parallel <G.53>
 
-   :g:`< A C B ) <g1:< A C B )>` :eq:`= <g1:< A C B ) = g1:< C B D )>` :g:`< C B D ) <g1:< C B D )>`
-
-.. step:: assert
-
-   since :g:`/ B C / <g1:/ B C />` falling on :g:`/ A C / <g1:/ A C />`, :g:`/ B D / <g1:/ B D />` has made the alternate angles :eq:`= <g1:< A C B ) = g1:< C B D )>` to one another,
-
-.. step:: assert ∵ alternate_angles_parallel <G.53>
-
-   :g:`/ A C / <g1:/ A C />` is parallel to :g:`/ B D / <g1:/ B D />`
-
-.. step:: conclude
-
-   It :eq:`= <g1:/ A C / = g1:/ B D />`
+   :g:`< A C B ) <g1:< A C B )>` :eq:`= <g1:< A C B ) = g1:< C B D )>` :g:`< C B D ) <g1:< C B D )>` → :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ B D />` :g:`/ B D / <g1:/ B D />`, :g:`/ A C / <g1:/ A C />` ∥ :g:`/ B D / <g1:/ B D />`
 
 Dependency Graph
 ----------------
@@ -260,6 +233,7 @@ Dependency Graph
      "G.20" -> "G.18";
      "G.25" -> "G.18";
      "G.41" -> "G.18";
+     "G.53" -> "G.18";
      "G.20" -> "G.19";
      "G.25" -> "G.19";
      "G.40" -> "G.19";
@@ -330,5 +304,6 @@ Required for
 .. toctree::
    :hidden:
 
+   video
    code
    heath

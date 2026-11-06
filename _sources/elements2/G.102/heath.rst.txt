@@ -1,12 +1,12 @@
 :canonical_id: G.102
 :original_id: III.5
-:title: G.102 circles cut center
+:title: G.102 intersecting circles have distinct centers
 :volume: II
 :book: III
 :type: prop
 
-G.102 circles cut center — Heath
-================================
+G.102 intersecting circles have distinct centers — Heath
+========================================================
 
 .. rubric:: `III.5 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/05/>`_
 
@@ -67,7 +67,9 @@ Dependency Graph
      "G.10" [label="G.10", tooltip="G.10 (I.def.15): A circle ( A B ) is a plane figure contained by one arc defined by a center A and a point B establishing its defining radius / A B /, such that all segments / A B /, / A C /, / A D...", fillcolor="#224422", URL="../G.10/index.html", target="_top"];
      "G.11" [label="G.11", tooltip="G.11 (I.def.16): The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.", fillcolor="#224422", URL="../G.11/index.html", target="_top"];
      "G.14" [label="G.14", tooltip="G.14 (I.post.1): Construct a segment / A B / between any two points A, B.", fillcolor="#444422", URL="../G.14/index.html", target="_top"];
-     "G.102" [label="G.102", tooltip="G.102 (III.5): If two circles cut one another, they will not have the same center.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.16" [label="G.16", tooltip="G.16 (I.cn.1): Things equal to the same thing are equal to one another.", fillcolor="#442222", URL="../G.16/index.html", target="_top"];
+     "G.26" [label="G.26", tooltip="G.26 (I.cn.5): The whole is greater than the part.", fillcolor="#442222", URL="../G.26/index.html", target="_top"];
+     "G.102" [label="G.102", tooltip="G.102 (III.5): Two intersecting circles do not have the same center.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -95,6 +97,8 @@ Dependency Graph
      "G.102" -> "G.10";
      "G.102" -> "G.11";
      "G.102" -> "G.14";
+     "G.102" -> "G.16";
+     "G.102" -> "G.26";
    }
 
 Required for

@@ -2,7 +2,7 @@
 :number: 160
 :canonical_id: G.160
 :original_id: IV.8
-:title: G.160 square inscribe circle
+:title: G.160 inscribe a circle in a square
 :volume: II
 :book: IV
 :type: prop
@@ -10,89 +10,53 @@
 :categories: problem, construction, plane-geometry, circles, polygons
 :category: problem, construction, plane-geometry, circles, polygons
 :tags: book-iv, point, segment, quadrilateral, square, circle, circle-inscribed-in-figure, straight-line, parallel-straight-lines, figure, centre, plane-angle, line, right-angle, diameter, extremity, inscribed, equality
-:dependencies: G.1, G.3, G.4, G.9, G.10, G.11, G.22, G.32, G.33, G.58, G.61, G.62, G.63, G.118, G.152, G.153
-:excerpt: In a given square to inscribe a circle.
+:dependencies: G.3, G.10, G.15, G.22, G.32, G.33, G.58, G.61, G.62, G.63, G.118, G.152, G.153
+:excerpt: Inscribe a circle in a given square.
 
 .. _G.160:
 .. _IV.8:
 
-G.160 square inscribe circle
-============================
+G.160 inscribe a circle in a square
+===================================
 
 .. rubric:: `IV.8 <https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/08/>`_
 
 .. enunciation::
 
-   In a given :term:`square <G.63>` to inscribe a :term:`circle <G.10>`.
+   :term:`Inscribe a circle in <G.153>` a given :term:`square <G.63>`.
 
 .. signature:: problem
 
-   | :fn:`square_inscribe_circle <G.160>`\ (:g:`< A B C D > <g1:< A B C D >>`) → :g:`/ F K / <g1:/ F K />`
-   | **given** :g:`< A B C D > <g1:< A B C D >>` be the given square
-   | **construct** in the given square a circle has been inscribed
+   | :fn:`inscribe_circle_in_square <G.160>`\ (:g:`< A B C D > <g1:< A B C D >>`) → :g:`( E F H K ) <g1:( E F H K )>`
+   | **given** :g:`< A B C D > <g1:< A B C D >>`
+   | **construct** :g:`( E F H K ) <g1:( E F H K )>` is :term:`inscribed in <G.153>` the square :g:`< A B C D > <g1:< A B C D >>`
 
 .. picture:: g1.svg
    :alt: Proposition IV. 8 Diagram
 
-.. step:: given
+.. step:: given ∵ quadrilateral_def, similarly_circle_said_def <G.63, G.153>
 
-   :g:`< A B C D > <g1:< A B C D >>` be the given square
+   :g:`< A B C D > <g1:< A B C D >>`
 
-.. step:: construct
+.. step:: construct ∵ bisect_segment, parallel_line <G.32, G.58>
 
-   :fn:`bisect_segment <G.32>`: Let :g:`/ A D / <g1:/ A D />`, :g:`/ A B / <g1:/ A B />` be bisected at :g:`E <g1:E>`, :g:`F <g1:F>` respectively, through :g:`E <g1:E>` let :g:`/ E H / <g1:/ E H />` be drawn parallel to either :g:`/ A B / <g1:/ A B />` or :g:`/ C D / <g1:/ C D />`
+   :fn:`bisect_segment <G.32>`\ (:g:`/ A D / <g1:/ A D />`, :g:`/ A B / <g1:/ A B />`) → :g:`E <g1:E>` (:g:`/ A E / <g1:/ A E />` :eq:`= <g1:/ A E / = g1:/ E D />` :g:`/ E D / <g1:/ E D />`), :g:`F <g1:F>` (:g:`/ A F / <g1:/ A F />` :eq:`= <g1:/ A F / = g1:/ F B />` :g:`/ F B / <g1:/ F B />`); :fn:`parallel_line <G.58>`\ (:g:`E <g1:E>`, :g:`F <g1:F>`) → :g:`/ E H / <g1:/ E H />` ∥ :g:`/ A B / <g1:/ A B />`, :g:`/ F K / <g1:/ F K />` ∥ :g:`/ A D / <g1:/ A D />` meeting at :g:`G <g1:G>`
 
-.. step:: construct
+.. step:: assert ∵ parallelogram_properties, quadrilateral_def <G.62, G.63>
 
-   :fn:`parallel_line <G.58>`\ (:g:`F <g1:F>`, :g:`/ A D / <g1:/ A D />` or :g:`/ B C / <g1:/ B C />`) → :g:`/ F K / <g1:/ F K />`
+   :g:`/ A D / <g1:/ A D />` :eq:`= <g1:/ A D / = g1:/ A B />` :g:`/ A B / <g1:/ A B />` → halves :g:`/ A E / <g1:/ A E />` :eq:`= <g1:/ A E / = g1:/ A F />` :g:`/ A F / <g1:/ A F />`; in parallelogram :g:`< A F G E > <g1:< A F G E >>` and its neighbors, opposite sides are equal → :g:`/ G E / <g1:/ G E />` :eq:`= <g1:/ G E / = g1:/ G F / = g1:/ G H / = g1:/ G K />` :g:`/ G F / <g1:/ G F />` :eq:`= <g1:/ G E / = g1:/ G F / = g1:/ G H / = g1:/ G K />` :g:`/ G H / <g1:/ G H />` :eq:`= <g1:/ G E / = g1:/ G F / = g1:/ G H / = g1:/ G K />` :g:`/ G K / <g1:/ G K />`
 
-.. step:: assert ∵ parallelogram_properties <G.62>
+.. step:: construct ∵ circle, circle_radii <G.15, G.10>
 
-   each of the :term:`figures <G.9>` :g:`< A F K D > <g1:< A F K D >>`, :g:`< F B C K > <g1:< F B C K >>`, :g:`< A B H E > <g1:< A B H E >>`, :g:`< E H C D > <g1:< E H C D >>`, :g:`< A F G E > <g1:< A F G E >>`, :g:`< G H C K > <g1:< G H C K >>`, :g:`< F B H G > <g1:< F B H G >>`, :g:`< E G K D > <g1:< E G K D >>` is a parallelogram, and their opposite sides are evidently equal
+   :fn:`circle <G.15>`\ (:g:`G <g1:G>`, :g:`E <g1:E>`) → :g:`( E F H K ) <g1:( E F H K )>` passing through :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`H <g1:H>`, :g:`K <g1:K>`
 
-.. step:: assert
+.. step:: assert ∵ perpendicular_at_diameter_extremity_tangent <G.118>
 
-   :g:`/ A D / <g1:/ A D />` :eq:`= <g1:/ A D / = g1:/ A B />` :g:`/ A B / <g1:/ A B />`, and :g:`/ A E / <g1:/ A E />` is half of :g:`/ A D / <g1:/ A D />`, and :g:`/ A F / <g1:/ A F />` half of :g:`/ A B / <g1:/ A B />` → therefore :g:`/ A E / <g1:/ A E />` :eq:`= <g1:/ A E / = g1:/ A F />` :g:`/ A F / <g1:/ A F />`,
+   :term:`Angles <G.22>` at :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`H <g1:H>`, :g:`K <g1:K>` are right → if :g:`( E F H K ) <g1:( E F H K )>` cut any side of :g:`< A B C D > <g1:< A B C D >>`, the :term:`perpendicular <G.33>` to the :term:`diameter <G.61>` at its :term:`extremity <G.3>` would fall inside the :term:`circle <G.10>` ⇒⇐
 
-.. step:: assert
+.. step:: conclude ∵ perpendicular_at_diameter_extremity_tangent, similarly_circle_said_def <G.118, G.153>
 
-   So that the opposite sides are also equal
-
-.. step:: assert
-
-   :g:`/ F G / <g1:/ F G />` :eq:`= <g1:/ F G / = g1:/ G E />` :g:`/ G E / <g1:/ G E />`
-
-.. step:: assert
-
-   Similarly we can prove that each of :g:`/ G H / <g1:/ G H />`, :g:`/ G K / <g1:/ G K />` :eq:`= <g1:/ G H / = g1:/ G K / = g1:/ F G / = g1:/ G E />` each of :g:`/ F G / <g1:/ F G />`, :g:`/ G E / <g1:/ G E />`
-
-.. step:: assert
-
-   the four :term:`segments <G.4>` :g:`/ G E / <g1:/ G E />`, :g:`/ G F / <g1:/ G F />`, :g:`/ G H / <g1:/ G H />`, :g:`/ G K / <g1:/ G K />` :eq:`= <g1:/ G E / = g1:/ G F / = g1:/ G H / = g1:/ G K />`
-
-.. step:: assert
-
-   the circle described with :term:`center <G.11>` :g:`G <g1:G>` and distance one of :g:`/ G E / <g1:/ G E />`, :g:`/ G F / <g1:/ G F />`, :g:`/ G H / <g1:/ G H />`, :g:`/ G K / <g1:/ G K />` will pass also through the remaining :term:`points <G.1>`
-
-.. step:: assert
-
-   It will touch :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ C D / <g1:/ C D />`, :g:`/ D A / <g1:/ D A />`, because the :term:`angles <G.22>` at :g:`E <g1:E>`, :g:`F <g1:F>`, :g:`H <g1:H>`, :g:`K <g1:K>` are right
-
-.. step:: assert ∵ segment_drawn_right <G.118>
-
-   If the circle cuts :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ C D / <g1:/ C D />`, :g:`/ D A / <g1:/ D A />`, the segment drawn :term:`at right angles <G.33>` to the :term:`diameter <G.61>` of the circle from its :term:`extremity <G.3>` will fall within the circle: which was proved absurd
-
-.. step:: assert
-
-   the circle described with center :g:`G <g1:G>` and distance one of :g:`/ G E / <g1:/ G E />`, :g:`/ G F / <g1:/ G F />`, :g:`/ G H / <g1:/ G H />`, :g:`/ G K / <g1:/ G K />` will not cut :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ C D / <g1:/ C D />`, :g:`/ D A / <g1:/ D A />`
-
-.. step:: assert
-
-   it will touch them, and will have been :term:`inscribed in the square <G.152>` :g:`< A B C D > <g1:< A B C D >>`
-
-.. step:: conclude
-
-   in the given square a circle has been inscribed
+   :g:`( E F H K ) <g1:( E F H K )>` touches :g:`/ A B / <g1:/ A B />`, :g:`/ B C / <g1:/ B C />`, :g:`/ C D / <g1:/ C D />`, :g:`/ D A / <g1:/ D A />` → circle :g:`( E F H K ) <g1:( E F H K )>` is inscribed in square :g:`< A B C D > <g1:< A B C D >>`
 
 Dependency Graph
 ----------------
@@ -158,12 +122,13 @@ Dependency Graph
      "G.62" [label="G.62", tooltip="G.62 (I.34): In a parallelogram, opposite sides and opposite angles are equal, and the diagonal bisects the area.", fillcolor="#222244", URL="../G.62/index.html", target="_top"];
      "G.63" [label="G.63", tooltip="G.63 (I.def.22): Of quadrilateral figures, a square is equilateral and right-angled; an oblong is right-angled but not equilateral; a rhombus is equilateral but not right-angled; a rhomboid has opp...", fillcolor="#224422", URL="../G.63/index.html", target="_top"];
      "G.77" [label="G.77", tooltip="G.77 (I.def.12): An acute angle is less than a right angle.", fillcolor="#224422", URL="../G.77/index.html", target="_top"];
+     "G.96" [label="G.96", tooltip="G.96 (I.def.18): A semicircle is the figure contained by a diameter and the arc cut off by it.", fillcolor="#224422", URL="../G.96/index.html", target="_top"];
      "G.111" [label="G.111", tooltip="G.111 (III.def.2): Asegment is said totouch a circle which, meeting thecircle and being produced, does not cut the circle.", fillcolor="#224422", URL="../G.111/index.html", target="_top"];
      "G.117" [label="G.117", tooltip="G.117 (III.def.7): Anangle of a segment is that contained by asegment and a arc of acircle.", fillcolor="#224422", URL="../G.117/index.html", target="_top"];
-     "G.118" [label="G.118", tooltip="G.118 (III.16): The segment drawn at right angles to the diameter of a circle from its extremity will fall outside the circle, and into the space between the segment and the arc another segment ca...", fillcolor="#222244", URL="../G.118/index.html", target="_top"];
+     "G.118" [label="G.118", tooltip="G.118 (III.16): The line drawn at right angles to the diameter of a circle from its extremity falls outside the circle, no other line can be interposed between it and the arc, and the angle of the...", fillcolor="#222244", URL="../G.118/index.html", target="_top"];
      "G.152" [label="G.152", tooltip="G.152 (IV.def.1): Apolygon is said to beinscribed in a polygon when the respectiveangles of the inscribedfigure lie on the respective sides of that in which it is inscribed.", fillcolor="#224422", URL="../G.152/index.html", target="_top"];
      "G.153" [label="G.153", tooltip="G.153 (IV.def.5): Similarly acircle is said to beinscribed in a figure when the arc of the circle touches each side of thefigure in which it is inscribed.", fillcolor="#224422", URL="../G.153/index.html", target="_top"];
-     "G.160" [label="G.160", tooltip="G.160 (IV.8): In a given square to inscribe a circle.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.160" [label="G.160", tooltip="G.160 (IV.8): Inscribe a circle in a given square.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -187,7 +152,6 @@ Dependency Graph
      "G.47" -> "G.1";
      "G.48" -> "G.1";
      "G.58" -> "G.1";
-     "G.160" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
      "G.6" -> "G.2";
@@ -205,6 +169,7 @@ Dependency Graph
      "G.55" -> "G.2";
      "G.56" -> "G.2";
      "G.58" -> "G.2";
+     "G.118" -> "G.2";
      "G.4" -> "G.3";
      "G.6" -> "G.3";
      "G.8" -> "G.3";
@@ -247,7 +212,6 @@ Dependency Graph
      "G.111" -> "G.4";
      "G.117" -> "G.4";
      "G.118" -> "G.4";
-     "G.160" -> "G.4";
      "G.6" -> "G.5";
      "G.7" -> "G.5";
      "G.10" -> "G.6";
@@ -257,9 +221,9 @@ Dependency Graph
      "G.9" -> "G.8";
      "G.10" -> "G.9";
      "G.12" -> "G.9";
+     "G.96" -> "G.9";
      "G.152" -> "G.9";
      "G.153" -> "G.9";
-     "G.160" -> "G.9";
      "G.11" -> "G.10";
      "G.15" -> "G.10";
      "G.17" -> "G.10";
@@ -267,6 +231,7 @@ Dependency Graph
      "G.21" -> "G.10";
      "G.47" -> "G.10";
      "G.61" -> "G.10";
+     "G.96" -> "G.10";
      "G.111" -> "G.10";
      "G.117" -> "G.10";
      "G.118" -> "G.10";
@@ -278,7 +243,7 @@ Dependency Graph
      "G.21" -> "G.11";
      "G.47" -> "G.11";
      "G.61" -> "G.11";
-     "G.160" -> "G.11";
+     "G.96" -> "G.11";
      "G.13" -> "G.12";
      "G.17" -> "G.12";
      "G.20" -> "G.12";
@@ -314,17 +279,21 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.51" -> "G.14";
      "G.58" -> "G.14";
+     "G.118" -> "G.14";
      "G.17" -> "G.15";
      "G.20" -> "G.15";
      "G.21" -> "G.15";
      "G.47" -> "G.15";
+     "G.160" -> "G.15";
      "G.17" -> "G.16";
      "G.20" -> "G.16";
      "G.21" -> "G.16";
      "G.37" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.56" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
@@ -335,6 +304,7 @@ Dependency Graph
      "G.41" -> "G.18";
      "G.42" -> "G.18";
      "G.45" -> "G.18";
+     "G.53" -> "G.18";
      "G.58" -> "G.18";
      "G.20" -> "G.19";
      "G.25" -> "G.19";
@@ -347,6 +317,7 @@ Dependency Graph
      "G.43" -> "G.21";
      "G.45" -> "G.21";
      "G.47" -> "G.21";
+     "G.51" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
      "G.28" -> "G.22";
@@ -383,12 +354,15 @@ Dependency Graph
      "G.51" -> "G.24";
      "G.62" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.118" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.51" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -411,6 +385,7 @@ Dependency Graph
      "G.160" -> "G.33";
      "G.37" -> "G.34";
      "G.37" -> "G.36";
+     "G.42" -> "G.36";
      "G.56" -> "G.36";
      "G.62" -> "G.36";
      "G.40" -> "G.37";
@@ -419,6 +394,7 @@ Dependency Graph
      "G.40" -> "G.38";
      "G.41" -> "G.40";
      "G.56" -> "G.40";
+     "G.42" -> "G.41";
      "G.43" -> "G.41";
      "G.51" -> "G.41";
      "G.53" -> "G.41";
@@ -439,11 +415,13 @@ Dependency Graph
      "G.62" -> "G.56";
      "G.160" -> "G.58";
      "G.62" -> "G.61";
+     "G.96" -> "G.61";
      "G.118" -> "G.61";
      "G.160" -> "G.61";
      "G.160" -> "G.62";
      "G.160" -> "G.63";
      "G.118" -> "G.77";
+     "G.118" -> "G.96";
      "G.118" -> "G.111";
      "G.118" -> "G.117";
      "G.160" -> "G.118";

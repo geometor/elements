@@ -1,12 +1,12 @@
 :canonical_id: G.82
 :original_id: II.1
-:title: G.82 distribute rectangle
+:title: G.82 distributive law of rectangles
 :volume: I
 :book: II
 :type: prop
 
-G.82 distribute rectangle — Heath
-=================================
+G.82 distributive law of rectangles — Heath
+===========================================
 
 .. rubric:: `II.1 <https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/01/>`_
 
@@ -117,7 +117,7 @@ Dependency Graph
      "G.61" [label="G.61", tooltip="G.61 (I.def.17): A diameter of a circle is any segment drawn through the center and terminated in both directions by the arc of the circle; it bisects the circle.", fillcolor="#224422", URL="../G.61/index.html", target="_top"];
      "G.62" [label="G.62", tooltip="G.62 (I.34): In a parallelogram, opposite sides and opposite angles are equal, and the diagonal bisects the area.", fillcolor="#222244", URL="../G.62/index.html", target="_top"];
      "G.81" [label="G.81", tooltip="G.81 (II.def.1): Any rectangular parallelogram is said to becontained by the twosegments containing theright angle.", fillcolor="#224422", URL="../G.81/index.html", target="_top"];
-     "G.82" [label="G.82", tooltip="G.82 (II.1): If there be two segments, and one of them be cut into any number of segments whatever, the rectangle contained by the two segments is equal to the rectangles contained by the uncut...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.82" [label="G.82", tooltip="G.82 (II.1): If one of two segments is cut into any number of parts, the rectangle contained by the two segments equals the sum of the rectangles contained by the uncut segment and each of the ...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -250,6 +250,7 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.51" -> "G.14";
      "G.58" -> "G.14";
      "G.17" -> "G.15";
@@ -261,7 +262,9 @@ Dependency Graph
      "G.21" -> "G.16";
      "G.37" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.56" -> "G.16";
+     "G.82" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
@@ -270,6 +273,7 @@ Dependency Graph
      "G.25" -> "G.18";
      "G.41" -> "G.18";
      "G.45" -> "G.18";
+     "G.53" -> "G.18";
      "G.58" -> "G.18";
      "G.20" -> "G.19";
      "G.25" -> "G.19";
@@ -282,6 +286,7 @@ Dependency Graph
      "G.43" -> "G.21";
      "G.45" -> "G.21";
      "G.47" -> "G.21";
+     "G.51" -> "G.21";
      "G.82" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
@@ -313,11 +318,14 @@ Dependency Graph
      "G.51" -> "G.24";
      "G.62" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.51" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -356,7 +364,6 @@ Dependency Graph
      "G.56" -> "G.52";
      "G.58" -> "G.52";
      "G.62" -> "G.52";
-     "G.82" -> "G.52";
      "G.58" -> "G.53";
      "G.56" -> "G.55";
      "G.62" -> "G.56";

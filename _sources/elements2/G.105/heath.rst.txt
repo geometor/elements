@@ -1,12 +1,12 @@
 :canonical_id: G.105
 :original_id: III.7
-:title: G.105 diameter circle point
+:title: G.105 distances to a circle from an eccentric diameter point
 :volume: II
 :book: III
 :type: prop
 
-G.105 diameter circle point — Heath
-===================================
+G.105 distances to a circle from an eccentric diameter point — Heath
+====================================================================
 
 .. rubric:: `III.7 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/07/>`_
 
@@ -160,7 +160,7 @@ Dependency Graph
      "G.48" [label="G.48", tooltip="G.48 (I.23): Construct on a given line at a given point an angle equal to a given angle.", fillcolor="#222244", URL="../G.48/index.html", target="_top"];
      "G.49" [label="G.49", tooltip="G.49 (I.24): If two triangles have two sides equal to two sides respectively, the one with the greater included angle has the greater base.", fillcolor="#222244", URL="../G.49/index.html", target="_top"];
      "G.61" [label="G.61", tooltip="G.61 (I.def.17): A diameter of a circle is any segment drawn through the center and terminated in both directions by the arc of the circle; it bisects the circle.", fillcolor="#224422", URL="../G.61/index.html", target="_top"];
-     "G.105" [label="G.105", tooltip="G.105 (III.7): If on the diameter of a circle a point be taken which is not the center of the circle, and from the point segments fall upon the circle, that is greatest on which the center is, th...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.105" [label="G.105", tooltip="G.105 (III.7): From an eccentric point on the diameter of a circle, the greatest segment to the arc passes through the center, the least is the remainder of the diameter, and segments nearer the ...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -270,7 +270,6 @@ Dependency Graph
      "G.47" -> "G.12";
      "G.48" -> "G.12";
      "G.49" -> "G.12";
-     "G.105" -> "G.12";
      "G.17" -> "G.13";
      "G.25" -> "G.13";
      "G.17" -> "G.14";
@@ -283,6 +282,7 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.49" -> "G.14";
      "G.105" -> "G.14";
      "G.17" -> "G.15";
@@ -294,6 +294,8 @@ Dependency Graph
      "G.21" -> "G.16";
      "G.37" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
+     "G.105" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
@@ -313,6 +315,7 @@ Dependency Graph
      "G.43" -> "G.21";
      "G.45" -> "G.21";
      "G.47" -> "G.21";
+     "G.49" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
      "G.28" -> "G.22";
@@ -338,12 +341,15 @@ Dependency Graph
      "G.49" -> "G.24";
      "G.105" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.49" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.49" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";

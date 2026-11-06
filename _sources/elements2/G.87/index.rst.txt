@@ -2,7 +2,7 @@
 :number: 87
 :canonical_id: G.87
 :original_id: II.5
-:title: G.87 difference of squares equal unequal
+:title: G.87 rectangle on unequal parts plus square on difference
 :volume: I
 :book: II
 :type: prop
@@ -10,104 +10,53 @@
 :categories: theorem, proof, plane-geometry, geometric-algebra
 :category: theorem, proof, plane-geometry, geometric-algebra
 :tags: book-ii, point, segment, triangle, quadrilateral, polygon, straight-line, contained-rectangle, square, parallel-straight-lines, gnomon, rectangle, equality
-:dependencies: G.1, G.4, G.14, G.58, G.63, G.65, G.72, G.75, G.81, G.86
-:excerpt: If a segment be cut into equal and unequal segments, the rectangle contained by the unequal segments of the whole together with the square on the segment between the points of section is equal to the square on the half.
+:dependencies: G.1, G.4, G.14, G.16, G.36, G.58, G.63, G.65, G.72, G.75, G.81, G.86
+:excerpt: If a segment is cut into equal and unequal parts, the rectangle contained by the unequal parts together with the square on the segment between the points of section equals the square on the half.
 
 .. _G.87:
 .. _II.5:
 
-G.87 difference of squares equal unequal
-========================================
+G.87 rectangle on unequal parts plus square on difference
+=========================================================
 
 .. rubric:: `II.5 <https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/05/>`_
 
 .. enunciation::
 
-   If a :term:`segment <G.4>` be cut into equal and unequal segments, the :term:`rectangle contained <G.81>` by the unequal segments of the whole together with the :term:`square <G.63>` on the segment between the :term:`points <G.1>` of section is equal to the square on the half.
+   If a :term:`segment <G.4>` is cut into equal and unequal parts, the :term:`rectangle contained <G.81>` by the unequal parts together with the :term:`square <G.63>` on the segment between the :term:`points <G.1>` of section equals the square on the half.
 
 .. signature:: theorem
 
-   | :fn:`difference_of_squares_equal_unequal <G.87>`\ ()
-   | **prove** the rectangle contained by :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` together with the square on :g:`/ C D / <g1:/ C D />` is equal to the square on :g:`/ C B / <g1:/ C B />`
+   | :fn:`difference_of_squares_equal_unequal <G.87>`\ (:g:`/ A B / <g1:/ A B />`, :g:`C <g1:C>`, :g:`D <g1:D>`)
+   | **given** :g:`/ A B / <g1:/ A B />` (:g:`C <g1:C>`, :g:`D <g1:D>` ∈ :g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ C B />` :g:`/ C B / <g1:/ C B />`)
+   | **prove** :fn:`contained_rectangle <G.81>`\ (:g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />`) + :fn:`square_on_segment <G.75>`\ (:g:`/ C D / <g1:/ C D />`) = :fn:`square_on_segment <G.75>`\ (:g:`/ C B / <g1:/ C B />`)
 
 .. picture:: g1.svg
    :alt: 0396.g1
 
-.. step:: construct
+.. step:: given
 
-   Let a segment :g:`/ A B / <g1:/ A B />` be cut into :eq:`equal <g1:/ A C / = g1:/ C B />` segments at :g:`C <g1:C>` and into unequal segments at :g:`D <g1:D>`
+   :g:`/ A B / <g1:/ A B />` (:g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ C B />` :g:`/ C B / <g1:/ C B />`, :g:`/ A B / <g1:/ A B />` = :g:`/ A D / <g1:/ A D />` + :g:`/ D B / <g1:/ D B />`)
 
-.. step:: construct
+.. step:: construct ∵ square_on_segment, segment <G.75, G.14>
 
-   :fn:`square_on_segment <G.75>`: Let the square :g:`< C E F B > <g1:< C E F B >>` be described on :g:`/ C B / <g1:/ C B />`.
+   :fn:`square_on_segment <G.75>`\ (:g:`/ C B / <g1:/ C B />`) → :g:`< C E F B > <g1:< C E F B >>`, :fn:`segment <G.14>`\ (:g:`B <g1:B>`, :g:`E <g1:E>`) → :g:`/ B E / <g1:/ B E />`
 
-.. step:: construct
+.. step:: construct ∵ parallel_line <G.58>
 
-   :fn:`segment <G.14>`\ (:g:`B <g1:B>`, :g:`E <g1:E>`) → :g:`/ B E / <g1:/ B E />`
+   :fn:`parallel_line <G.58>`\ (:g:`D <g1:D>`, :g:`/ C E / <g1:/ C E />`) → :g:`/ D G / <g1:/ D G />` ∥ :g:`/ C E / <g1:/ C E />`, :fn:`parallel_line <G.58>`\ (:g:`H <g1:H>`, :g:`/ A B / <g1:/ A B />`) → :g:`/ K M / <g1:/ K M />` ∥ :g:`/ A B / <g1:/ A B />`, :fn:`parallel_line <G.58>`\ (:g:`A <g1:A>`, :g:`/ C L / <g1:/ C L />`) → :g:`/ A K / <g1:/ A K />` ∥ :g:`/ C L / <g1:/ C L />`
 
-.. step:: construct
+.. step:: assert ∵ parallelogram_complements, add_equals, parallelograms_equal_bases, equal_transitive <G.72, G.36, G.65, G.16>
 
-   :fn:`parallel_line <G.58>`\ (:g:`D <g1:D>`, :g:`/ C E / <g1:/ C E />` or :g:`/ B F / <g1:/ B F />`) → :g:`/ D G / <g1:/ D G />`
+   :g:`< C H > <g1:< C H >>` :eq:`= <g1:< C H > = g1:< H F >>` :g:`< H F > <g1:< H F >>` → :g:`< C M > <g1:< C M >>` :eq:`= <g1:< C M > = g1:< D F >>` :g:`< D F > <g1:< D F >>`, :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ C B />` :g:`/ C B / <g1:/ C B />` → :g:`< A L > <g1:< A L >>` :eq:`= <g1:< C M > = g1:< A L >>` :g:`< C M > <g1:< C M >>` :eq:`= <g1:< A L > = g1:< D F >>` :g:`< D F > <g1:< D F >>`
 
-.. step:: construct
+.. step:: assert ∵ add_equals, rectangular_parallelogram_said_def, parallelogrammic_area_whatever_def <G.36, G.81, G.86>
 
-   :fn:`parallel_line <G.58>`: Through :g:`H <g1:H>` again let :g:`/ K M / <g1:/ K M />` be drawn parallel to either :g:`/ A B / <g1:/ A B />` or :g:`/ E F / <g1:/ E F />`, and again through :g:`A <g1:A>` let :g:`/ A K / <g1:/ A K />` be drawn parallel to either :g:`/ C L / <g1:/ C L />` or :g:`/ B M / <g1:/ B M />`.
+   :g:`< A L > <g1:< A L >>` + :g:`< C H > <g1:< C H >>` = :g:`< D F > <g1:< D F >>` + :g:`< C H > <g1:< C H >>` → :g:`< A H > <g1:< A H >>` :eq:`= <g1:< A H > = g1:< N O P >>` :g:`< N O P > <g1:< N O P >>` = :fn:`rectangular_parallelogram_said_def <G.81>`\ (:g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />`)
 
-.. step:: assert ∵ parallelogram_complements <G.72>
+.. step:: conclude ∵ add_equals <G.36>
 
-   the complement :g:`< C H > <g1:< C H >>` is :eq:`equal <g1:< C H > = g1:< H F >>` to the complement :g:`< H F > <g1:< H F >>`
-
-.. step:: construct
-
-   Let :g:`< D M > <g1:< D M >>` be added to each
-
-.. step:: assert
-
-   :g:`< C M > <g1:< C M >>` is :eq:`equal <g1:< C M > = g1:< D F >>` to :g:`< D F > <g1:< D F >>`
-
-.. step:: assert
-
-   :g:`< C M > <g1:< C M >>` is :eq:`equal <g1:< C M > = g1:< A L >>` to :g:`< A L > <g1:< A L >>`,
-
-.. step:: assert ∵ parallelograms_equal_bases <G.65>
-
-   :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ C B />` :g:`/ C B / <g1:/ C B />`
-
-.. step:: assert
-
-   :g:`< A L > <g1:< A L >>` is also :eq:`equal <g1:< A L > = g1:< D F >>` to :g:`< D F > <g1:< D F >>`
-
-.. step:: construct
-
-   Let :g:`< C H > <g1:< C H >>` be added to each
-
-.. step:: assert
-
-   :g:`< A H > <g1:< A H >>` is :eq:`equal <g1:< A H > = g1:< N O P >>` to the gnomon :g:`< N O P > <g1:< N O P >>`
-
-.. step:: assert
-
-   :g:`< A H > <g1:< A H >>` is the rectangle :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />`, for :g:`/ D H / <g1:/ D H />` :eq:`= <g1:/ D H / = g1:/ D B />` :g:`/ D B / <g1:/ D B />`,
-
-.. step:: assert
-
-   the :term:`gnomon <G.86>` :g:`< N O P > <g1:< N O P >>` is also equal to the rectangle :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />`
-
-.. step:: construct
-
-   Let :g:`< L G > <g1:< L G >>`, which is equal to the square on :g:`/ C D / <g1:/ C D />`, be added to each
-
-.. step:: assert
-
-   the gnomon :g:`< N O P > <g1:< N O P >>` and :g:`< L G > <g1:< L G >>` are equal to the rectangle contained by :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` and the square on :g:`/ C D / <g1:/ C D />`
-
-.. step:: assert
-
-   The gnomon :g:`< N O P > <g1:< N O P >>` and :g:`< L G > <g1:< L G >>` are the whole square :g:`< C E F B > <g1:< C E F B >>`, which is described on :g:`/ C B / <g1:/ C B />`
-
-.. step:: conclude
-
-   the rectangle contained by :g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />` together with the square on :g:`/ C D / <g1:/ C D />` is equal to the square on :g:`/ C B / <g1:/ C B />`
+   :g:`< N O P > <g1:< N O P >>` + :g:`< L G > <g1:< L G >>` = :g:`< C E F B > <g1:< C E F B >>` → :fn:`rectangular_parallelogram_said_def <G.81>`\ (:g:`/ A D / <g1:/ A D />`, :g:`/ D B / <g1:/ D B />`) + :fn:`square_on_segment <G.75>`\ (:g:`/ C D / <g1:/ C D />`) = :fn:`square_on_segment <G.75>`\ (:g:`/ C B / <g1:/ C B />`)
 
 Dependency Graph
 ----------------
@@ -178,7 +127,7 @@ Dependency Graph
      "G.75" [label="G.75", tooltip="G.75 (I.46): Construct a square on a given segment.", fillcolor="#222244", URL="../G.75/index.html", target="_top"];
      "G.81" [label="G.81", tooltip="G.81 (II.def.1): Any rectangular parallelogram is said to becontained by the twosegments containing theright angle.", fillcolor="#224422", URL="../G.81/index.html", target="_top"];
      "G.86" [label="G.86", tooltip="G.86 (II.def.2): And in any parallelogrammic area let any one whatever of the parallelograms about itsdiameter with the two complements be called agnomon.", fillcolor="#224422", URL="../G.86/index.html", target="_top"];
-     "G.87" [label="G.87", tooltip="G.87 (II.5): If a segment be cut into equal and unequal segments, the rectangle contained by the unequal segments of the whole together with the square on the segment between the points of sect...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.87" [label="G.87", tooltip="G.87 (II.5): If a segment is cut into equal and unequal parts, the rectangle contained by the unequal parts together with the square on the segment between the points of section equals the squa...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -221,7 +170,6 @@ Dependency Graph
      "G.55" -> "G.2";
      "G.56" -> "G.2";
      "G.58" -> "G.2";
-     "G.65" -> "G.2";
      "G.4" -> "G.3";
      "G.6" -> "G.3";
      "G.8" -> "G.3";
@@ -325,6 +273,7 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.51" -> "G.14";
      "G.58" -> "G.14";
      "G.60" -> "G.14";
@@ -339,9 +288,12 @@ Dependency Graph
      "G.21" -> "G.16";
      "G.37" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.56" -> "G.16";
      "G.64" -> "G.16";
      "G.65" -> "G.16";
+     "G.75" -> "G.16";
+     "G.87" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
@@ -350,6 +302,7 @@ Dependency Graph
      "G.25" -> "G.18";
      "G.41" -> "G.18";
      "G.45" -> "G.18";
+     "G.53" -> "G.18";
      "G.58" -> "G.18";
      "G.20" -> "G.19";
      "G.25" -> "G.19";
@@ -364,6 +317,7 @@ Dependency Graph
      "G.43" -> "G.21";
      "G.45" -> "G.21";
      "G.47" -> "G.21";
+     "G.51" -> "G.21";
      "G.75" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
@@ -401,11 +355,14 @@ Dependency Graph
      "G.62" -> "G.24";
      "G.64" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.51" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -429,6 +386,7 @@ Dependency Graph
      "G.62" -> "G.36";
      "G.64" -> "G.36";
      "G.72" -> "G.36";
+     "G.87" -> "G.36";
      "G.40" -> "G.37";
      "G.56" -> "G.37";
      "G.40" -> "G.38";

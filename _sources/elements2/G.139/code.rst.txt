@@ -1,18 +1,18 @@
 :canonical_id: G.139
 :original_id: III.31
-:title: G.139 thales semicircle theorem
+:title: G.139 Thales' theorem and angles in circle segments
 :volume: II
 :book: III
 :type: prop
 
-G.139 thales semicircle theorem — Code
-======================================
+G.139 Thales' theorem and angles in circle segments — Code
+==========================================================
 
 .. rubric:: `III.31 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/31/>`_
 
 .. enunciation::
 
-   In a :term:`circle <G.10>` the :term:`angle in the semicircle <G.138>` is right, that in a greater :term:`segment <G.4>` less than a :term:`right angle <G.33>`, and that in a less segment greater than a right angle; and further the :term:`angle <G.22>` of the greater segment is greater than a right angle, and the angle of the less segment less than a right angle.
+   In a :term:`circle <G.10>`, the :term:`angle in a semicircle <G.138>` is right, the :term:`angle <G.22>` in a greater :term:`segment <G.4>` is :term:`acute <G.77>`, and the angle in a lesser segment is :term:`obtuse <G.76>`.
 
 .. picture:: g1.svg
 

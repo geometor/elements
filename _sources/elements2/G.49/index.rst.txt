@@ -10,8 +10,9 @@
 :categories: theorem, proof, plane-geometry
 :category: theorem, proof, plane-geometry
 :tags: book-i, point, segment, angle, triangle, trilateral, plane-angle, straight-line, plane, equality
-:dependencies: G.1, G.4, G.12, G.14, G.22, G.24, G.25, G.44, G.48
+:dependencies: G.1, G.4, G.12, G.14, G.21, G.22, G.24, G.25, G.26, G.44, G.48
 :excerpt: If two triangles have two sides equal to two sides respectively, the one with the greater included angle has the greater base.
+:youtube_id: LJDYdckD-Sk
 
 .. _G.49:
 .. _I.24:
@@ -27,68 +28,36 @@ G.49 hinge theorem
 
 .. signature:: theorem
 
-   | :fn:`hinge_theorem <G.49>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>`, :g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />`)
-   | **given** :g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>` , :g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A B / = g1:/ D E /; g1:/ A C / = g1:/ D F />` to :g:`/ D E / <g1:/ D E />`, :g:`/ D F / <g1:/ D F />`, namely :g:`/ A B / <g1:/ A B />` to :g:`/ D E / <g1:/ D E />`, :g:`/ A C / <g1:/ A C />` to :g:`/ D F / <g1:/ D F />`, let the angle at :g:`< B A C ) <g1:< B A C )>` be greater than the angle at :g:`< E D F ) <g1:< E D F )>`
-   | **prove** :g:`/ B C / <g1:/ B C />` is also greater than :g:`/ E F / <g1:/ E F />`
+   | :fn:`hinge_theorem <G.49>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>`)
+   | **given** :g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>` (:g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ D E /; g1:/ A C / = g1:/ D F />` :g:`/ D E / <g1:/ D E />`, :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A B / = g1:/ D E /; g1:/ A C / = g1:/ D F />` :g:`/ D F / <g1:/ D F />`, :g:`< B A C ) <g1:< B A C )>` > :g:`< E D F ) <g1:< E D F )>`)
+   | **prove** :g:`/ B C / <g1:/ B C />` > :g:`/ E F / <g1:/ E F />`
 
 .. picture:: g1.svg
    :alt: Folio 0310 Figure 2 - Proposition 24
 
 .. step:: given
 
-   :g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>` , :g:`/ A B / <g1:/ A B />`, :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A B / = g1:/ D E /; g1:/ A C / = g1:/ D F />` to :g:`/ D E / <g1:/ D E />`, :g:`/ D F / <g1:/ D F />`, namely :g:`/ A B / <g1:/ A B />` to :g:`/ D E / <g1:/ D E />`, :g:`/ A C / <g1:/ A C />` to :g:`/ D F / <g1:/ D F />`, let the angle at :g:`< B A C ) <g1:< B A C )>` be greater than the angle at :g:`< E D F ) <g1:< E D F )>`
+   :g:`< A B C > <g1:< A B C >>`, :g:`< D E F > <g1:< D E F >>` (:g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ D E /; g1:/ A C / = g1:/ D F />` :g:`/ D E / <g1:/ D E />`, :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A B / = g1:/ D E /; g1:/ A C / = g1:/ D F />` :g:`/ D F / <g1:/ D F />`, :g:`< B A C ) <g1:< B A C )>` > :g:`< E D F ) <g1:< E D F )>`)
 
 .. step:: construct
 
-   :fn:`copy_angle <G.48>`: Since :g:`< B A C ) <g1:< B A C )>` is greater than :g:`< E D F ) <g1:< E D F )>`, let there be constructed, on :g:`/ D E / <g1:/ D E />`, and at :g:`D <g1:D>` on it, :g:`< E D G ) <g1:< E D G )>` :eq:`equal <g1:< E D G ) = g1:< B A C )>` to :g:`< B A C ) <g1:< B A C )>`
-
-.. step:: construct
-
-   :fn:`segment <G.14>`\ (:g:`D <g1:D>`, :g:`G <g1:G>`) → :g:`/ D G / <g1:/ D G />`, :fn:`segment <G.14>`\ (:g:`A <g1:A>`, :g:`C <g1:C>`) → :g:`/ A C / <g1:/ A C />`, :fn:`segment <G.14>`\ (:g:`D <g1:D>`, :g:`F <g1:F>`) → :g:`/ D F / <g1:/ D F />`, :fn:`segment <G.14>`\ (:g:`E <g1:E>`, :g:`G <g1:G>`) → :g:`/ E G / <g1:/ E G />`, :fn:`segment <G.14>`\ (:g:`F <g1:F>`, :g:`G <g1:G>`) → :g:`/ F G / <g1:/ F G />`
-
-.. step:: assert
-
-   :g:`/ A B / <g1:/ A B />` :eq:`= <g1:/ A B / = g1:/ D E /; g1:/ A C / = g1:/ D G />` :g:`/ D E / <g1:/ D E />`, and :g:`/ A C / <g1:/ A C />` to :g:`/ D G / <g1:/ D G />`, :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ B A / = g1:/ E D /; g1:/ A C / = g1:/ D G />` :g:`/ E D / <g1:/ E D />`, :g:`/ D G / <g1:/ D G />`,
-
-.. step:: assert
-
-   :g:`< B A C ) <g1:< B A C )>` :eq:`= <g1:< B A C ) = g1:< E D G )>` :g:`< E D G ) <g1:< E D G )>`
+   :fn:`copy_angle <G.48>`\ (:g:`/ D E / <g1:/ D E />`, :g:`D <g1:D>`, :g:`< B A C ) <g1:< B A C )>`) → :g:`< E D G ) <g1:< E D G )>` (:eq:`= <g1:< E D G ) = g1:< B A C )>` :g:`< B A C ) <g1:< B A C )>`), :fn:`cut_equal_segment <G.21>`\ (:g:`/ A C / <g1:/ A C />`) → :g:`/ D G / <g1:/ D G />` (:eq:`= <g1:/ D G / = g1:/ A C />; g1:/ D G / = g1:/ D F />` :g:`/ A C / <g1:/ A C />`), :fn:`segment <G.14>`\ (:g:`E <g1:E>`, :g:`G <g1:G>`) → :g:`/ E G / <g1:/ E G />`, :fn:`segment <G.14>`\ (:g:`F <g1:F>`, :g:`G <g1:G>`) → :g:`/ F G / <g1:/ F G />`
 
 .. step:: assert ∵ sas_congruence <G.24>
 
-   :g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ B C / = g1:/ E G />` :g:`/ E G / <g1:/ E G />`
+   :g:`/ B A / <g1:/ B A />` :eq:`= <g1:/ B A / = g1:/ E D />; g1:/ A C / = g1:/ D G />` :g:`/ E D / <g1:/ E D />`, :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ B A / = g1:/ E D />; g1:/ A C / = g1:/ D G />` :g:`/ D G / <g1:/ D G />`, :g:`< B A C ) <g1:< B A C )>` :eq:`= <g1:< B A C ) = g1:< E D G )>` :g:`< E D G ) <g1:< E D G )>` → :g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ B C / = g1:/ E G />` :g:`/ E G / <g1:/ E G />`
 
-.. step:: assert ∵ isosceles_base_angles <G.25>
+.. step:: assert ∵ isosceles_base_angles, whole_greater_than_part <G.25, G.26>
 
-   :g:`/ D F / <g1:/ D F />` :eq:`= <g1:/ D F / = g1:/ D G />` :g:`/ D G / <g1:/ D G />` → :g:`< D G F ) <g1:< D G F )>` :eq:`= <g1:< D G F ) = g1:< D F G )>` :g:`< D F G ) <g1:< D F G )>`
-
-.. step:: assert
-
-   :g:`< D F G ) <g1:< D F G )>` > :g:`< E G F ) <g1:< E G F )>`
-
-.. step:: assert
-
-   :g:`< E F G ) <g1:< E F G )>` ≫ :g:`< E G F ) <g1:< E G F )>`
-
-.. step:: assert
-
-   since :g:`< E F G > <g1:< E F G >>` is a triangle having :g:`< E F G ) <g1:< E F G )>` greater than :g:`< E G F ) <g1:< E G F )>`,
+   :g:`/ D F / <g1:/ D F />` :eq:`= <g1:/ D F / = g1:/ D G />` :g:`/ D G / <g1:/ D G />` → :g:`< D G F ) <g1:< D G F )>` :eq:`= <g1:< D G F ) = g1:< D F G )>` :g:`< D F G ) <g1:< D F G )>` → :g:`< E F G ) <g1:< E F G )>` ≫ :g:`< E G F ) <g1:< E G F )>`
 
 .. step:: assert ∵ greater_angle_greater_side <G.44>
 
-   the greater angle is subtended by the greater side,
+   :g:`< E F G > <g1:< E F G >>` (:g:`< E F G ) <g1:< E F G )>` > :g:`< E G F ) <g1:< E G F )>`) → :g:`/ E G / <g1:/ E G />` > :g:`/ E F / <g1:/ E F />`
 
-.. step:: assert
+.. step:: conclude ∵ sas_congruence, greater_angle_greater_side <G.24, G.44>
 
-   :g:`/ E G / <g1:/ E G />` is also greater than :g:`/ E F / <g1:/ E F />`
-
-.. step:: assert
-
-   :g:`/ E G / <g1:/ E G />` :eq:`= <g1:/ E G / = g1:/ B C />` :g:`/ B C / <g1:/ B C />`
-
-.. step:: conclude
-
-   :g:`/ B C / <g1:/ B C />` is also greater than :g:`/ E F / <g1:/ E F />`
+   :g:`/ B C / <g1:/ B C />` :eq:`= <g1:/ B C / = g1:/ E G />` :g:`/ E G / <g1:/ E G />`, :g:`/ E G / <g1:/ E G />` > :g:`/ E F / <g1:/ E F />` → :g:`/ B C / <g1:/ B C />` > :g:`/ E F / <g1:/ E F />`
 
 Dependency Graph
 ----------------
@@ -258,6 +227,7 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.49" -> "G.14";
      "G.17" -> "G.15";
      "G.20" -> "G.15";
@@ -268,6 +238,7 @@ Dependency Graph
      "G.21" -> "G.16";
      "G.37" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
@@ -287,6 +258,7 @@ Dependency Graph
      "G.43" -> "G.21";
      "G.45" -> "G.21";
      "G.47" -> "G.21";
+     "G.49" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
      "G.28" -> "G.22";
@@ -311,12 +283,15 @@ Dependency Graph
      "G.41" -> "G.24";
      "G.49" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.49" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.49" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -351,5 +326,6 @@ Required for
 .. toctree::
    :hidden:
 
+   video
    code
    heath

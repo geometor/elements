@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>G.99 arc circle points &mdash; Elements 2.0 (G Index)</title>
+  <title>G.99 chord of a circle lies within the circle &mdash; Elements 2.0 (G Index)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
@@ -71,7 +71,7 @@
         </div>
         <div class="book-header-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="../G.98/index.html" title="G.98 find circle center">&larr; <span class="nav-label">Prev</span></a>
+            <a class="book-nav-btn" href="../G.98/index.html" title="G.98 find the center of a circle">&larr; <span class="nav-label">Prev</span></a>
           </div>
           <div class="book-nav-center">
             <nav class="book-tracks-nav" aria-label="Document Tracks">
@@ -83,19 +83,20 @@
             </nav>
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="../G.100/index.html" title="G.100 circle segment center"><span class="nav-label">Next</span> &rarr;</a>
+            <a class="book-nav-btn" href="../G.100/index.html" title="G.100 diameter bisects chord iff perpendicular"><span class="nav-label">Next</span> &rarr;</a>
           </div>
         </div>
       </header>
       <div class="content body book-content folio-book-page" role="main">
-        <section class="level-1" id="g-99-arc-circle-points">
-        <span id="iii-2"></span><span id="g-99"></span><h1>G.99 arc circle points<a class="headerlink" href="#g-99-arc-circle-points" title="Link to this heading">¶</a></h1>
-        <p class="rubric"><a class="reference external" href="https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/02/" title="III.2: If on the arc of a circle two points be taken at random, the segment joining the points will fall within the circle.">III.2</a></p>
-        <div class="enunciation">If on the arc of a <a class="term-ref glossary-term" id="occ-term-g-10-1" href="../G.10/index.html#g-10" data-term="G.10" title="G.10: A circle ( A B ) is a plane figure contained by one arc defined by a center A and a point B establishing its defining radius / A B /, such that all segments / A B /, / A C /, / A…">circle</a> two <a class="term-ref glossary-term" id="occ-term-g-1-1" href="../G.1/index.html#g-1" data-term="G.1" title="G.1: A point A is that which has no part.">points</a> be taken at random, the <a class="term-ref glossary-term" id="occ-term-g-4-1" href="../G.4/index.html#g-4" data-term="G.4" title="G.4: A segment / A B / is a portion of a line [ A B ] between two points A, B on the line.">segment</a> joining the points will fall within the circle.</div>
+        <section class="level-1" id="g-99-chord-of-a-circle-lies-within-the-circle">
+        <span id="iii-2"></span><span id="g-99"></span><h1>G.99 chord of a circle lies within the circle<a class="headerlink" href="#g-99-chord-of-a-circle-lies-within-the-circle" title="Link to this heading">¶</a></h1>
+        <p class="rubric"><a class="reference external" href="https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/02/" title="III.2: The segment joining any two points on the arc of a circle falls within the circle.">III.2</a></p>
+        <div class="enunciation">The <a class="term-ref glossary-term" id="occ-term-g-4-1" href="../G.4/index.html#g-4" data-term="G.4" title="G.4: A segment / A B / is a portion of a line [ A B ] between two points A, B on the line.">segment</a> joining any two <a class="term-ref glossary-term" id="occ-term-g-1-1" href="../G.1/index.html#g-1" data-term="G.1" title="G.1: A point A is that which has no part.">points</a> on the arc of a <a class="term-ref glossary-term" id="occ-term-g-10-1" href="../G.10/index.html#g-10" data-term="G.10" title="G.10: A circle ( A B ) is a plane figure contained by one arc defined by a center A and a point B establishing its defining radius / A B /, such that all segments / A B /, / A C /, / A…">circle</a> falls within the circle.</div>
         <div class="geom-signature geom-signature-theorem">
         <div class="line-block">
-        <div class="line"><span class="geom-fn geom-fn-def" data-ref-target="G.99" title="G.99: If on the arc of a circle two points be taken at random, the segment joining the points will fall within the circle.">arc_circle_points</span>()</div>
-        <div class="line"><strong>prove</strong> the segment joined from <span class="geom-ref" data-ref="g1:A" title="A">A</span> to <span class="geom-ref" data-ref="g1:B" title="B">B</span> will fall within the circle</div>
+        <div class="line"><span class="geom-fn geom-fn-def" data-ref-target="G.99" title="G.99: The segment joining any two points on the arc of a circle falls within the circle.">chord_inside_circle</span>(<span class="geom-ref" data-ref="g1:( A B C )" title="( A B C )">( A B C )</span>, <span class="geom-ref" data-ref="g1:A" title="A">A</span>, <span class="geom-ref" data-ref="g1:B" title="B">B</span>)</div>
+        <div class="line"><strong>given</strong> <span class="geom-ref" data-ref="g1:( A B C )" title="( A B C )">( A B C )</span>, <span class="geom-ref" data-ref="g1:A" title="A">A</span>, <span class="geom-ref" data-ref="g1:B" title="B">B</span> ∈ <span class="geom-ref" data-ref="g1:( A B C )" title="( A B C )">( A B C )</span></div>
+        <div class="line"><strong>prove</strong> <span class="geom-ref" data-ref="g1:/ A E B /" title="/ A E B /">/ A B /</span> falls within <span class="geom-ref" data-ref="g1:( A B C )" title="( A B C )">( A B C )</span></div>
         </div>
         </div>
         <figure class="photon-picture photon-svg">
@@ -173,28 +174,15 @@
           </g>
         </svg>
         </figure>
-        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> Let <span class="geom-ref" data-ref="g1:( A B C )" title="( A B C )">( A B C )</span> be a circle, and let two points <span class="geom-ref" data-ref="g1:A" title="A">A</span>, <span class="geom-ref" data-ref="g1:B" title="B">B</span> be taken at random on its arc</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Suppose it does not, but, if possible, let it fall outside, as <span class="geom-ref" data-ref="g1:/ A E B /" title="/ A E B /">/ A E B /</span></div>
-        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> <a class="geom-fn" href="../G.98/index.html#g-98" data-ref-target="G.98" title="G.98: Find the center of a given circle.">find_circle_center</a>: Let the center of <span class="geom-ref" data-ref="g1:( A B C )" title="( A B C )">( A B C )</span> be taken</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Let it be <span class="geom-ref" data-ref="g1:D" title="D">D</span></div>
-        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> <a class="geom-fn" href="../G.14/index.html#g-14" data-ref-target="G.14" title="G.14: Construct a segment / A B / between any two points A, B.">segment</a>(<span class="geom-ref" data-ref="g1:D" title="D">D</span>, <span class="geom-ref" data-ref="g1:A" title="A">A</span>) → <span class="geom-ref" data-ref="g1:/ D A /" title="/ D A /">/ D A /</span>, <a class="geom-fn" href="../G.14/index.html#g-14" data-ref-target="G.14" title="G.14: Construct a segment / A B / between any two points A, B.">segment</a>(<span class="geom-ref" data-ref="g1:D" title="D">D</span>, <span class="geom-ref" data-ref="g1:B" title="B">B</span>) → <span class="geom-ref" data-ref="g1:/ D B /" title="/ D B /">/ D B /</span></div>
-        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> Let <span class="geom-ref" data-ref="g1:/ D F E /" title="/ D F E /">/ D F E /</span> be drawn through.</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.25/index.html#g-25" data-ref-target="G.25" title="G.25: In an isosceles triangle, the angles at the base are equal, and if the equal sides are extended, the angles under the base are equal.">isosceles_base_angles</a></span><span class="geom-step-badge geom-badge-assert">assert</span> <span class="geom-ref" data-ref="g1:/ D A /" title="/ D A /">/ D A /</span> <span class="geom-eq-ref" data-assert-equal="g1:/ D A / = g1:/ D B /" title="/ D A / = / D B /">=</span> <span class="geom-ref" data-ref="g1:/ D B /" title="/ D B /">/ D B /</span> → <span class="geom-ref" data-ref="g1:&lt; D A E )" title="&lt; D A E )">&lt; D A E )</span> <span class="geom-eq-ref" data-assert-equal="g1:&lt; D A E ) = g1:&lt; D B E )" title="&lt; D A E ) = &lt; D B E )">=</span> <span class="geom-ref" data-ref="g1:&lt; D B E )" title="&lt; D B E )">&lt; D B E )</span></div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> since one side <span class="geom-ref" data-ref="g1:/ A E B /" title="/ A E B /">/ A E B /</span> of <span class="geom-ref" data-ref="g1:&lt; D A E &gt;" title="&lt; D A E &gt;">&lt; D A E &gt;</span> is produced,</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.41/index.html#g-41" data-ref-target="G.41" title="G.41: In any triangle, if one side is extended, the exterior angle is greater than either opposite interior angle.">exterior_angle_greater</a></span><span class="geom-step-badge geom-badge-assert">assert</span> <span class="geom-ref" data-ref="g1:&lt; D E B )" title="&lt; D E B )">&lt; D E B )</span> &gt; <span class="geom-ref" data-ref="g1:&lt; D A E )" title="&lt; D A E )">&lt; D A E )</span></div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> <span class="geom-ref" data-ref="g1:&lt; D A E )" title="&lt; D A E )">&lt; D A E )</span> <span class="geom-eq-ref" data-assert-equal="g1:&lt; D A E ) = g1:&lt; D B E )" title="&lt; D A E ) = &lt; D B E )">=</span> <span class="geom-ref" data-ref="g1:&lt; D B E )" title="&lt; D B E )">&lt; D B E )</span></div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> <span class="geom-ref" data-ref="g1:&lt; D E B )" title="&lt; D E B )">&lt; D E B )</span> &gt; <span class="geom-ref" data-ref="g1:&lt; D B E )" title="&lt; D B E )">&lt; D B E )</span></div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.44/index.html#g-44" data-ref-target="G.44" title="G.44: In any triangle, the greater angle is subtended by the greater side.">greater_angle_greater_side</a></span><span class="geom-step-badge geom-badge-assert">assert</span> The greater <a class="term-ref glossary-term" id="occ-term-g-22-1" href="../G.22/index.html#g-22" data-term="G.22" title="G.22: A plane angle is the inclination to one another of two lines or arcs in a plane that meet and do not lie on the same line.">angle</a> is subtended by the greater side</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> <span class="geom-ref" data-ref="g1:/ D B /" title="/ D B /">/ D B /</span> &gt; <span class="geom-ref" data-ref="g1:/ D E /" title="/ D E /">/ D E /</span></div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> <span class="geom-ref" data-ref="g1:/ D B /" title="/ D B /">/ D B /</span> <span class="geom-eq-ref" data-assert-equal="g1:/ D B / = g1:/ D F /" title="/ D B / = / D F /">=</span> <span class="geom-ref" data-ref="g1:/ D F /" title="/ D F /">/ D F /</span></div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> <span class="geom-ref" data-ref="g1:/ D F /" title="/ D F /">/ D F /</span> &gt; <span class="geom-ref" data-ref="g1:/ D E /" title="/ D E /">/ D E /</span>,</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> The less than the greater ⇒⇐</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> the segment joined from <span class="geom-ref" data-ref="g1:A" title="A">A</span> to <span class="geom-ref" data-ref="g1:B" title="B">B</span> will not fall outside the circle</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> Similarly we can prove that neither will it fall on the arc itself</div>
-        <div class="geom-step geom-step-conclude" data-step-kind="conclude"><span class="geom-step-badge geom-badge-conclude" title="conclude">∴</span> it will fall within</div>
+        <div class="geom-step geom-step-given" data-step-kind="given"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.10/index.html#g-10" data-ref-target="G.10" title="G.10: A circle ( A B ) is a plane figure contained by one arc defined by a center A and a point B establishing its defining radius / A B /, such that all segments / A B /, / A C /, / A…">circle_radii</a></span><span class="geom-step-badge geom-badge-given">given</span> <span class="geom-ref" data-ref="g1:( A B C )" title="( A B C )">( A B C )</span>, <span class="geom-ref" data-ref="g1:A" title="A">A</span>, <span class="geom-ref" data-ref="g1:B" title="B">B</span> ∈ <span class="geom-ref" data-ref="g1:( A B C )" title="( A B C )">( A B C )</span></div>
+        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.98/index.html#g-98" data-ref-target="G.98" title="G.98: Find the center of a given circle.">find_circle_center</a>, <a class="justification-link geom-rule" href="../G.14/index.html#g-14" data-ref-target="G.14" title="G.14: Construct a segment / A B / between any two points A, B.">segment</a></span><span class="geom-step-badge geom-badge-construct">construct</span> Suppose <span class="geom-ref" data-ref="g1:/ A E B /" title="/ A E B /">/ A E B /</span> falls outside <span class="geom-ref" data-ref="g1:( A B C )" title="( A B C )">( A B C )</span>; <a class="geom-fn" href="../G.98/index.html#g-98" data-ref-target="G.98" title="G.98: Find the center of a given circle.">find_circle_center</a>(<span class="geom-ref" data-ref="g1:( A B C )" title="( A B C )">( A B C )</span>) → <span class="geom-ref" data-ref="g1:D" title="D">D</span>, <a class="geom-fn" href="../G.14/index.html#g-14" data-ref-target="G.14" title="G.14: Construct a segment / A B / between any two points A, B.">segment</a>(<span class="geom-ref" data-ref="g1:D" title="D">D</span>, <span class="geom-ref" data-ref="g1:A" title="A">A</span>, <span class="geom-ref" data-ref="g1:B" title="B">B</span>) → <span class="geom-ref" data-ref="g1:/ D A /" title="/ D A /">/ D A /</span>, <span class="geom-ref" data-ref="g1:/ D B /" title="/ D B /">/ D B /</span>, draw <span class="geom-ref" data-ref="g1:/ D F E /" title="/ D F E /">/ D F E /</span></div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.10/index.html#g-10" data-ref-target="G.10" title="G.10: A circle ( A B ) is a plane figure contained by one arc defined by a center A and a point B establishing its defining radius / A B /, such that all segments / A B /, / A C /, / A…">circle_radii</a>, <a class="justification-link geom-rule" href="../G.25/index.html#g-25" data-ref-target="G.25" title="G.25: In an isosceles triangle, the angles at the base are equal, and if the equal sides are extended, the angles under the base are equal.">isosceles_base_angles</a>, <a class="justification-link geom-rule" href="../G.41/index.html#g-41" data-ref-target="G.41" title="G.41: In any triangle, if one side is extended, the exterior angle is greater than either opposite interior angle.">exterior_angle_greater</a></span><span class="geom-step-badge geom-badge-assert">assert</span> <span class="geom-ref" data-ref="g1:/ D A /" title="/ D A /">/ D A /</span> <span class="geom-eq-ref" data-assert-equal="g1:/ D A / = g1:/ D B /" title="/ D A / = / D B /">=</span> <span class="geom-ref" data-ref="g1:/ D B /" title="/ D B /">/ D B /</span> → <span class="geom-ref" data-ref="g1:&lt; D A E )" title="&lt; D A E )">&lt; D A E )</span> <span class="geom-eq-ref" data-assert-equal="g1:&lt; D A E ) = g1:&lt; D B E )" title="&lt; D A E ) = &lt; D B E )">=</span> <span class="geom-ref" data-ref="g1:&lt; D B E )" title="&lt; D B E )">&lt; D B E )</span>, and exterior <span class="geom-ref" data-ref="g1:&lt; D E B )" title="&lt; D E B )">&lt; D E B )</span> &gt; <span class="geom-ref" data-ref="g1:&lt; D A E )" title="&lt; D A E )">&lt; D A E )</span> → <span class="geom-ref" data-ref="g1:&lt; D E B )" title="&lt; D E B )">&lt; D E B )</span> &gt; <span class="geom-ref" data-ref="g1:&lt; D B E )" title="&lt; D B E )">&lt; D B E )</span></div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.44/index.html#g-44" data-ref-target="G.44" title="G.44: In any triangle, the greater angle is subtended by the greater side.">greater_angle_greater_side</a></span><span class="geom-step-badge geom-badge-assert">assert</span> <span class="geom-ref" data-ref="g1:&lt; D E B )" title="&lt; D E B )">&lt; D E B )</span> &gt; <span class="geom-ref" data-ref="g1:&lt; D B E )" title="&lt; D B E )">&lt; D B E )</span> in <span class="geom-ref" data-ref="g1:&lt; D B E &gt;" title="&lt; D B E &gt;">&lt; D B E &gt;</span> → <span class="geom-ref" data-ref="g1:/ D B /" title="/ D B /">/ D B /</span> &gt; <span class="geom-ref" data-ref="g1:/ D E /" title="/ D E /">/ D E /</span></div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.10/index.html#g-10" data-ref-target="G.10" title="G.10: A circle ( A B ) is a plane figure contained by one arc defined by a center A and a point B establishing its defining radius / A B /, such that all segments / A B /, / A C /, / A…">circle_radii</a>, <a class="justification-link geom-rule" href="../G.26/index.html#g-26" data-ref-target="G.26" title="G.26: The whole is greater than the part.">whole_greater_than_part</a></span><span class="geom-step-badge geom-badge-assert">assert</span> <span class="geom-ref" data-ref="g1:/ D B /" title="/ D B /">/ D B /</span> <span class="geom-eq-ref" data-assert-equal="g1:/ D B / = g1:/ D F /" title="/ D B / = / D F /">=</span> <span class="geom-ref" data-ref="g1:/ D F /" title="/ D F /">/ D F /</span> → <span class="geom-ref" data-ref="g1:/ D F /" title="/ D F /">/ D F /</span> &gt; <span class="geom-ref" data-ref="g1:/ D E /" title="/ D E /">/ D E /</span>, the less than the greater ⇒⇐</div>
+        <div class="geom-step geom-step-conclude" data-step-kind="conclude"><span class="geom-step-badge geom-badge-conclude" title="conclude">∴</span> <span class="geom-ref" data-ref="g1:/ A E B /" title="/ A E B /">/ A B /</span> does not fall outside or on <span class="geom-ref" data-ref="g1:( A B C )" title="( A B C )">( A B C )</span> → <span class="geom-ref" data-ref="g1:/ A E B /" title="/ A E B /">/ A B /</span> falls within <span class="geom-ref" data-ref="g1:( A B C )" title="( A B C )">( A B C )</span></div>
         <section class="level-2" id="dependency-graph">
         <h2>Dependency Graph<a class="headerlink" href="#dependency-graph" title="Link to this heading">¶</a></h2>
-        <div class="graphviz"><object data="../../_images/graphviz-4ba267e62b06331891971d98bee4e103fad96a56.svg" type="image/svg+xml" class="graphviz">
+        <div class="graphviz"><object data="../../_images/graphviz-8a7a180e5d55e849832c28d99769f41fe727769c.svg" type="image/svg+xml" class="graphviz">
         <p class="warning">digraph {
           bgcolor=&quot;transparent&quot;;
           node [shape=box, style=&quot;rounded,filled&quot;, fontname=&quot;Helvetica&quot;, fontsize=11, color=&quot;#d6d3cd&quot;, fontcolor=&quot;#ffffff&quot;];
@@ -241,7 +229,7 @@
           &quot;G.43&quot; [label=&quot;G.43&quot;, tooltip=&quot;G.43 (I.18): In any triangle, the greater side subtends the greater angle.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.43/index.html&quot;, target=&quot;_top&quot;];
           &quot;G.44&quot; [label=&quot;G.44&quot;, tooltip=&quot;G.44 (I.19): In any triangle, the greater angle is subtended by the greater side.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.44/index.html&quot;, target=&quot;_top&quot;];
           &quot;G.98&quot; [label=&quot;G.98&quot;, tooltip=&quot;G.98 (III.1): Find the center of a given circle.&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.98/index.html&quot;, target=&quot;_top&quot;];
-          &quot;G.99&quot; [label=&quot;G.99&quot;, tooltip=&quot;G.99 (III.2): If on the arc of a circle two points be taken at random, the segment joining the points will fall within the circle.&quot;, penwidth=2.5, color=&quot;#e8b85a&quot;, fillcolor=&quot;#4a453b&quot;, URL=&quot;index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.99&quot; [label=&quot;G.99&quot;, tooltip=&quot;G.99 (III.2): The segment joining any two points on the arc of a circle falls within the circle.&quot;, penwidth=2.5, color=&quot;#e8b85a&quot;, fillcolor=&quot;#4a453b&quot;, URL=&quot;index.html&quot;, target=&quot;_top&quot;];
           &quot;G.2&quot; -&gt; &quot;G.1&quot;;
           &quot;G.3&quot; -&gt; &quot;G.1&quot;;
           &quot;G.4&quot; -&gt; &quot;G.1&quot;;
@@ -261,7 +249,6 @@
           &quot;G.34&quot; -&gt; &quot;G.1&quot;;
           &quot;G.37&quot; -&gt; &quot;G.1&quot;;
           &quot;G.40&quot; -&gt; &quot;G.1&quot;;
-          &quot;G.98&quot; -&gt; &quot;G.1&quot;;
           &quot;G.99&quot; -&gt; &quot;G.1&quot;;
           &quot;G.3&quot; -&gt; &quot;G.2&quot;;
           &quot;G.4&quot; -&gt; &quot;G.2&quot;;
@@ -347,6 +334,7 @@
           &quot;G.34&quot; -&gt; &quot;G.14&quot;;
           &quot;G.41&quot; -&gt; &quot;G.14&quot;;
           &quot;G.43&quot; -&gt; &quot;G.14&quot;;
+          &quot;G.98&quot; -&gt; &quot;G.14&quot;;
           &quot;G.99&quot; -&gt; &quot;G.14&quot;;
           &quot;G.17&quot; -&gt; &quot;G.15&quot;;
           &quot;G.20&quot; -&gt; &quot;G.15&quot;;
@@ -386,18 +374,20 @@
           &quot;G.41&quot; -&gt; &quot;G.22&quot;;
           &quot;G.43&quot; -&gt; &quot;G.22&quot;;
           &quot;G.44&quot; -&gt; &quot;G.22&quot;;
-          &quot;G.98&quot; -&gt; &quot;G.22&quot;;
-          &quot;G.99&quot; -&gt; &quot;G.22&quot;;
           &quot;G.24&quot; -&gt; &quot;G.23&quot;;
           &quot;G.29&quot; -&gt; &quot;G.23&quot;;
           &quot;G.25&quot; -&gt; &quot;G.24&quot;;
           &quot;G.32&quot; -&gt; &quot;G.24&quot;;
           &quot;G.41&quot; -&gt; &quot;G.24&quot;;
           &quot;G.28&quot; -&gt; &quot;G.25&quot;;
+          &quot;G.43&quot; -&gt; &quot;G.25&quot;;
           &quot;G.44&quot; -&gt; &quot;G.25&quot;;
           &quot;G.99&quot; -&gt; &quot;G.25&quot;;
           &quot;G.28&quot; -&gt; &quot;G.26&quot;;
           &quot;G.41&quot; -&gt; &quot;G.26&quot;;
+          &quot;G.43&quot; -&gt; &quot;G.26&quot;;
+          &quot;G.98&quot; -&gt; &quot;G.26&quot;;
+          &quot;G.99&quot; -&gt; &quot;G.26&quot;;
           &quot;G.29&quot; -&gt; &quot;G.28&quot;;
           &quot;G.31&quot; -&gt; &quot;G.29&quot;;
           &quot;G.34&quot; -&gt; &quot;G.29&quot;;
@@ -412,6 +402,7 @@
           &quot;G.40&quot; -&gt; &quot;G.33&quot;;
           &quot;G.98&quot; -&gt; &quot;G.33&quot;;
           &quot;G.37&quot; -&gt; &quot;G.34&quot;;
+          &quot;G.98&quot; -&gt; &quot;G.34&quot;;
           &quot;G.37&quot; -&gt; &quot;G.36&quot;;
           &quot;G.40&quot; -&gt; &quot;G.37&quot;;
           &quot;G.40&quot; -&gt; &quot;G.38&quot;;
@@ -425,7 +416,7 @@
         </section>
         <section class="level-2" id="required-for">
         <h2>Required for<a class="headerlink" href="#required-for" title="Link to this heading">¶</a></h2>
-        <p><a class="reference internal" href="../G.112/index.html#g-112" title="G.112: A circle does not touch a circle at more points than one, whether it touch it internally or externally."><span class="std std-ref">G.112</span></a></p>
+        <p><a class="reference internal" href="../G.112/index.html#g-112" title="G.112: A circle does not touch another circle at more than one point, whether internally or externally."><span class="std std-ref">G.112</span></a></p>
         <div class="toctree-wrapper compound">
         </div>
         </section>
@@ -460,13 +451,13 @@
         <div class="book-footer-ornament">&#10086;</div>
         <div class="book-footer-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="../G.98/index.html" title="G.98 find circle center">&larr; <span class="nav-label">G.98 find circle center</span></a>
+            <a class="book-nav-btn" href="../G.98/index.html" title="G.98 find the center of a circle">&larr; <span class="nav-label">G.98 find the center of a circle</span></a>
           </div>
           <div class="book-nav-center">
             <a class="book-toc-link" href="../index.html">Elements 2.0 (G Index)</a>
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="../G.100/index.html" title="G.100 circle segment center"><span class="nav-label">G.100 circle segment center</span> &rarr;</a>
+            <a class="book-nav-btn" href="../G.100/index.html" title="G.100 diameter bisects chord iff perpendicular"><span class="nav-label">G.100 diameter bisects chord iff perpendicular</span> &rarr;</a>
           </div>
         </div>
       </footer>

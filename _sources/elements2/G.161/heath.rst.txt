@@ -1,12 +1,12 @@
 :canonical_id: G.161
 :original_id: IV.9
-:title: G.161 square circumscribe circle
+:title: G.161 circumscribe a circle about a square
 :volume: II
 :book: IV
 :type: prop
 
-G.161 square circumscribe circle — Heath
-========================================
+G.161 circumscribe a circle about a square — Heath
+==================================================
 
 .. rubric:: `IV.9 <https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/09/>`_
 
@@ -103,7 +103,7 @@ Dependency Graph
      "G.63" [label="G.63", tooltip="G.63 (I.def.22): Of quadrilateral figures, a square is equilateral and right-angled; an oblong is right-angled but not equilateral; a rhombus is equilateral but not right-angled; a rhomboid has opp...", fillcolor="#224422", URL="../G.63/index.html", target="_top"];
      "G.155" [label="G.155", tooltip="G.155 (IV.def.2): Similarly afigure is said to becircumscribed about a figure when the respective sides of the circumscribed figure pass through the respectiveangles of that about which it is circum...", fillcolor="#224422", URL="../G.155/index.html", target="_top"];
      "G.156" [label="G.156", tooltip="G.156 (IV.def.6): Acircle is said to becircumscribed about a figure when the arc of the circle passes through eachangle of thefigure about which it is circumscribed.", fillcolor="#224422", URL="../G.156/index.html", target="_top"];
-     "G.161" [label="G.161", tooltip="G.161 (IV.9): About a given square to circumscribe a circle.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.161" [label="G.161", tooltip="G.161 (IV.9): Circumscribe a circle about a given square.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -118,7 +118,6 @@ Dependency Graph
      "G.25" -> "G.1";
      "G.28" -> "G.1";
      "G.29" -> "G.1";
-     "G.161" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
      "G.6" -> "G.2";
@@ -145,7 +144,6 @@ Dependency Graph
      "G.25" -> "G.4";
      "G.28" -> "G.4";
      "G.29" -> "G.4";
-     "G.161" -> "G.4";
      "G.6" -> "G.5";
      "G.7" -> "G.5";
      "G.10" -> "G.6";
@@ -167,7 +165,6 @@ Dependency Graph
      "G.17" -> "G.11";
      "G.20" -> "G.11";
      "G.21" -> "G.11";
-     "G.161" -> "G.11";
      "G.13" -> "G.12";
      "G.17" -> "G.12";
      "G.20" -> "G.12";
@@ -189,6 +186,7 @@ Dependency Graph
      "G.17" -> "G.15";
      "G.20" -> "G.15";
      "G.21" -> "G.15";
+     "G.161" -> "G.15";
      "G.17" -> "G.16";
      "G.20" -> "G.16";
      "G.21" -> "G.16";

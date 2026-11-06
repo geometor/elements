@@ -1,12 +1,12 @@
 :canonical_id: G.154
 :original_id: IV.4
-:title: G.154 inscribe circle in triangle
+:title: G.154 inscribe a circle in a triangle
 :volume: II
 :book: IV
 :type: prop
 
-G.154 inscribe circle in triangle — Heath
-=========================================
+G.154 inscribe a circle in a triangle — Heath
+=============================================
 
 .. rubric:: `IV.4 <https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/04/>`_
 
@@ -118,6 +118,7 @@ Dependency Graph
      "G.32" [label="G.32", tooltip="G.32 (I.10): Bisect a given segment.", fillcolor="#222244", URL="../G.32/index.html", target="_top"];
      "G.33" [label="G.33", tooltip="G.33 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.33/index.html", target="_top"];
      "G.34" [label="G.34", tooltip="G.34 (I.11): Construct a segment at right angles to a given line from a given point on it.", fillcolor="#222244", URL="../G.34/index.html", target="_top"];
+     "G.35" [label="G.35", tooltip="G.35 (I.12): Construct a perpendicular to a given line from a given point not on it.", fillcolor="#222244", URL="../G.35/index.html", target="_top"];
      "G.36" [label="G.36", tooltip="G.36 (I.cn.2): If equals are added to equals, the wholes are equal.", fillcolor="#442222", URL="../G.36/index.html", target="_top"];
      "G.37" [label="G.37", tooltip="G.37 (I.13): A segment standing on a line makes either two right angles or adjacent angles summing to two right angles.", fillcolor="#222244", URL="../G.37/index.html", target="_top"];
      "G.38" [label="G.38", tooltip="G.38 (I.post.4): All right angles are equal.", fillcolor="#444422", URL="../G.38/index.html", target="_top"];
@@ -129,12 +130,13 @@ Dependency Graph
      "G.51" [label="G.51", tooltip="G.51 (I.26): Triangles with two angles and one corresponding side equal are congruent (ASA / AAS).", fillcolor="#222244", URL="../G.51/index.html", target="_top"];
      "G.61" [label="G.61", tooltip="G.61 (I.def.17): A diameter of a circle is any segment drawn through the center and terminated in both directions by the arc of the circle; it bisects the circle.", fillcolor="#224422", URL="../G.61/index.html", target="_top"];
      "G.77" [label="G.77", tooltip="G.77 (I.def.12): An acute angle is less than a right angle.", fillcolor="#224422", URL="../G.77/index.html", target="_top"];
+     "G.96" [label="G.96", tooltip="G.96 (I.def.18): A semicircle is the figure contained by a diameter and the arc cut off by it.", fillcolor="#224422", URL="../G.96/index.html", target="_top"];
      "G.111" [label="G.111", tooltip="G.111 (III.def.2): Asegment is said totouch a circle which, meeting thecircle and being produced, does not cut the circle.", fillcolor="#224422", URL="../G.111/index.html", target="_top"];
      "G.117" [label="G.117", tooltip="G.117 (III.def.7): Anangle of a segment is that contained by asegment and a arc of acircle.", fillcolor="#224422", URL="../G.117/index.html", target="_top"];
-     "G.118" [label="G.118", tooltip="G.118 (III.16): The segment drawn at right angles to the diameter of a circle from its extremity will fall outside the circle, and into the space between the segment and the arc another segment ca...", fillcolor="#222244", URL="../G.118/index.html", target="_top"];
+     "G.118" [label="G.118", tooltip="G.118 (III.16): The line drawn at right angles to the diameter of a circle from its extremity falls outside the circle, no other line can be interposed between it and the arc, and the angle of the...", fillcolor="#222244", URL="../G.118/index.html", target="_top"];
      "G.152" [label="G.152", tooltip="G.152 (IV.def.1): Apolygon is said to beinscribed in a polygon when the respectiveangles of the inscribedfigure lie on the respective sides of that in which it is inscribed.", fillcolor="#224422", URL="../G.152/index.html", target="_top"];
      "G.153" [label="G.153", tooltip="G.153 (IV.def.5): Similarly acircle is said to beinscribed in a figure when the arc of the circle touches each side of thefigure in which it is inscribed.", fillcolor="#224422", URL="../G.153/index.html", target="_top"];
-     "G.154" [label="G.154", tooltip="G.154 (IV.4): Inscribe in a given triangle a circle.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.154" [label="G.154", tooltip="G.154 (IV.4): Inscribe a circle in a given triangle.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -152,9 +154,9 @@ Dependency Graph
      "G.31" -> "G.1";
      "G.32" -> "G.1";
      "G.34" -> "G.1";
+     "G.35" -> "G.1";
      "G.37" -> "G.1";
      "G.40" -> "G.1";
-     "G.154" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
      "G.6" -> "G.2";
@@ -164,8 +166,10 @@ Dependency Graph
      "G.30" -> "G.2";
      "G.33" -> "G.2";
      "G.34" -> "G.2";
+     "G.35" -> "G.2";
      "G.37" -> "G.2";
      "G.40" -> "G.2";
+     "G.118" -> "G.2";
      "G.4" -> "G.3";
      "G.6" -> "G.3";
      "G.8" -> "G.3";
@@ -173,7 +177,6 @@ Dependency Graph
      "G.28" -> "G.3";
      "G.29" -> "G.3";
      "G.118" -> "G.3";
-     "G.154" -> "G.3";
      "G.7" -> "G.4";
      "G.10" -> "G.4";
      "G.11" -> "G.4";
@@ -193,6 +196,7 @@ Dependency Graph
      "G.32" -> "G.4";
      "G.33" -> "G.4";
      "G.34" -> "G.4";
+     "G.35" -> "G.4";
      "G.37" -> "G.4";
      "G.40" -> "G.4";
      "G.41" -> "G.4";
@@ -200,7 +204,6 @@ Dependency Graph
      "G.111" -> "G.4";
      "G.117" -> "G.4";
      "G.118" -> "G.4";
-     "G.154" -> "G.4";
      "G.6" -> "G.5";
      "G.7" -> "G.5";
      "G.10" -> "G.6";
@@ -209,6 +212,7 @@ Dependency Graph
      "G.9" -> "G.8";
      "G.10" -> "G.9";
      "G.12" -> "G.9";
+     "G.96" -> "G.9";
      "G.152" -> "G.9";
      "G.153" -> "G.9";
      "G.11" -> "G.10";
@@ -216,7 +220,9 @@ Dependency Graph
      "G.17" -> "G.10";
      "G.20" -> "G.10";
      "G.21" -> "G.10";
+     "G.35" -> "G.10";
      "G.61" -> "G.10";
+     "G.96" -> "G.10";
      "G.111" -> "G.10";
      "G.117" -> "G.10";
      "G.118" -> "G.10";
@@ -226,7 +232,9 @@ Dependency Graph
      "G.17" -> "G.11";
      "G.20" -> "G.11";
      "G.21" -> "G.11";
+     "G.35" -> "G.11";
      "G.61" -> "G.11";
+     "G.96" -> "G.11";
      "G.154" -> "G.11";
      "G.13" -> "G.12";
      "G.17" -> "G.12";
@@ -253,17 +261,22 @@ Dependency Graph
      "G.28" -> "G.14";
      "G.31" -> "G.14";
      "G.34" -> "G.14";
+     "G.35" -> "G.14";
      "G.41" -> "G.14";
      "G.43" -> "G.14";
      "G.51" -> "G.14";
+     "G.118" -> "G.14";
      "G.17" -> "G.15";
      "G.20" -> "G.15";
      "G.21" -> "G.15";
+     "G.35" -> "G.15";
+     "G.154" -> "G.15";
      "G.17" -> "G.16";
      "G.20" -> "G.16";
      "G.21" -> "G.16";
      "G.37" -> "G.16";
      "G.40" -> "G.16";
+     "G.154" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
@@ -281,6 +294,7 @@ Dependency Graph
      "G.34" -> "G.21";
      "G.41" -> "G.21";
      "G.43" -> "G.21";
+     "G.51" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
      "G.28" -> "G.22";
@@ -290,6 +304,7 @@ Dependency Graph
      "G.32" -> "G.22";
      "G.33" -> "G.22";
      "G.34" -> "G.22";
+     "G.35" -> "G.22";
      "G.37" -> "G.22";
      "G.40" -> "G.22";
      "G.41" -> "G.22";
@@ -308,19 +323,25 @@ Dependency Graph
      "G.41" -> "G.24";
      "G.51" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.118" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
+     "G.51" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
+     "G.35" -> "G.29";
      "G.31" -> "G.30";
      "G.118" -> "G.30";
      "G.32" -> "G.31";
      "G.154" -> "G.31";
+     "G.35" -> "G.32";
      "G.41" -> "G.32";
      "G.34" -> "G.33";
+     "G.35" -> "G.33";
      "G.37" -> "G.33";
      "G.38" -> "G.33";
      "G.40" -> "G.33";
@@ -329,20 +350,24 @@ Dependency Graph
      "G.118" -> "G.33";
      "G.154" -> "G.33";
      "G.37" -> "G.34";
+     "G.154" -> "G.35";
      "G.37" -> "G.36";
+     "G.42" -> "G.36";
      "G.40" -> "G.37";
      "G.42" -> "G.37";
      "G.40" -> "G.38";
      "G.41" -> "G.40";
+     "G.42" -> "G.41";
      "G.43" -> "G.41";
      "G.51" -> "G.41";
      "G.118" -> "G.42";
      "G.44" -> "G.43";
      "G.118" -> "G.44";
      "G.154" -> "G.51";
+     "G.96" -> "G.61";
      "G.118" -> "G.61";
-     "G.154" -> "G.61";
      "G.118" -> "G.77";
+     "G.118" -> "G.96";
      "G.118" -> "G.111";
      "G.118" -> "G.117";
      "G.154" -> "G.118";

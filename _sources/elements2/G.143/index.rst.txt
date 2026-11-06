@@ -2,7 +2,7 @@
 :number: 143
 :canonical_id: G.143
 :original_id: III.35
-:title: G.143 circle segments cut
+:title: G.143 intersecting chords theorem
 :volume: II
 :book: III
 :type: prop
@@ -10,25 +10,26 @@
 :categories: theorem, proof, plane-geometry, circles
 :category: theorem, proof, plane-geometry, circles
 :tags: book-iii, point, segment, circle, straight-line, contained-rectangle, centre, perpendicular, plane-angle, square, rectangle, equality
-:dependencies: G.4, G.10, G.11, G.33, G.63, G.79, G.81, G.87, G.100
-:excerpt: If in a circle two segments cut one another, the rectangle contained by the segments of the one is equal to the rectangle contained by the segments of the other.
+:dependencies: G.4, G.10, G.14, G.16, G.19, G.35, G.36, G.79, G.81, G.87, G.98, G.100
+:excerpt: If two chords in a circle intersect one another, the rectangle contained by the segments of one equals the rectangle contained by the segments of the other.
 
 .. _G.143:
 .. _III.35:
 
-G.143 circle segments cut
-=========================
+G.143 intersecting chords theorem
+=================================
 
 .. rubric:: `III.35 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/35/>`_
 
 .. enunciation::
 
-   If in a :term:`circle <G.10>` two :term:`segments <G.4>` cut one another, the :term:`rectangle contained <G.81>` by the segments of the one is equal to the rectangle contained by the segments of the other.
+   If two chords in a :term:`circle <G.10>` intersect one another, the :term:`rectangle contained <G.81>` by the :term:`segments <G.4>` of one equals the rectangle contained by the segments of the other.
 
 .. signature:: theorem
 
-   | :fn:`circle_segments_cut_iii_35 <G.143>`\ ()
-   | **prove** the rectangle contained by :g:`/ A E / <g1:/ A E />`, :g:`/ E C / <g1:/ E C />` is equal to the rectangle contained by :g:`/ D E / <g1:/ D E />`, :g:`/ E B / <g1:/ E B />`
+   | :fn:`intersecting_chords_theorem <G.143>`\ (:g:`( A B C D ) <g1:( A B C D )>`, :g:`/ A C / <g1:/ A C />`, :g:`/ B D / <g1:/ B D />`)
+   | **given** :g:`/ A C / <g1:/ A C />`, :g:`/ B D / <g1:/ B D />` in :g:`( A B C D ) <g1:( A B C D )>` intersecting at :g:`E <g1:E>`
+   | **prove** rect(:g:`/ A E / <g1:/ A E />`, :g:`/ E C / <g1:/ E C />`) :eq:`= <g1:/ A E / = g1:/ D E />, g1:/ E C / = g1:/ E B />` rect(:g:`/ D E / <g1:/ D E />`, :g:`/ E B / <g1:/ E B />`)
 
 .. picture:: g1.svg
    :alt: Proposition 35 Case 1 diagram
@@ -36,85 +37,25 @@ G.143 circle segments cut
 .. picture:: g2.svg
    :alt: Proposition 35 Case 2 diagram
 
-.. step:: intersect
+.. step:: given ∵ circle_radii <G.10>
 
-   In :g:`( A B C D ) <g1:( A B C D )>` let :g:`/ A C / <g1:/ A C />`, :g:`/ B D / <g1:/ B D />` cut one another at :g:`E <g1:E>`
+   :g:`/ A C / <g1:/ A C />` ∩ :g:`/ B D / <g1:/ B D />` → :g:`E <g1:E>` inside :g:`( A B C D ) <g1:( A B C D )>`
 
-.. step:: assert ∵ circle_radii <G.10>
+.. step:: construct ∵ find_circle_center, perpendicular_from, segment <G.98, G.35, G.14>
 
-   If now :g:`/ A C / <g1:/ A C />`, :g:`/ B D / <g1:/ B D />` are through the :term:`center <G.11>`, so that :g:`E <g1:E>` is the center of :g:`( A B C D ) <g1:( A B C D )>`, it is manifest that, :g:`/ A E / <g1:/ A E />`, :g:`/ E C / <g1:/ E C />`, :g:`/ D E / <g1:/ D E />`, :g:`/ E B / <g1:/ E B />` being :eq:`= <g1:/ A E / = g1:/ E C / = g1:/ D E / = g1:/ E B />`, the rectangle contained by :g:`/ A E / <g1:/ A E />`, :g:`/ E C / <g1:/ E C />` is also equal to the rectangle contained by :g:`/ D E / <g1:/ D E />`, :g:`/ E B / <g1:/ E B />`
+   :fn:`find_circle_center <G.98>`\ (:g:`( A B C D ) <g2:( A B C D )>`) → :g:`F <g2:F>`, :fn:`perpendicular_from <G.35>`\ (:g:`/ A C / <g2:/ A C />`, :g:`F <g2:F>`) → :g:`/ F G / <g2:/ F G />` ⊥ :g:`/ A C / <g2:/ A C />`, :fn:`perpendicular_from <G.35>`\ (:g:`/ B D / <g2:/ B D />`, :g:`F <g2:F>`) → :g:`/ F H / <g2:/ F H />` ⊥ :g:`/ B D / <g2:/ B D />`, :fn:`segment <G.14>`\ (:g:`F <g2:F>`, :g:`B <g2:B>`, :g:`C <g2:C>`, :g:`E <g2:E>`) → :g:`/ F B / <g2:/ F B />`, :g:`/ F C / <g2:/ F C />`, :g:`/ F E / <g2:/ F E />`
 
-.. step:: assert
+.. step:: assert ∵ diameter_bisects_chord_perpendicular, difference_of_squares_equal_unequal <G.100, G.87>
 
-   Next let :g:`/ A C / <g2:/ A C />`, :g:`/ D B / <g2:/ D B />` not be through the center
+   :g:`/ A G / <g2:/ A G />` :eq:`= <g2:/ A G / = g2:/ G C />` :g:`/ G C / <g2:/ G C />` → rect(:g:`/ A E / <g2:/ A E />`, :g:`/ E C / <g2:/ E C />`) + :g:`/ E G / <g2:/ E G />`² = :g:`/ G C / <g2:/ G C />`²
 
-.. step:: construct
+.. step:: assert ∵ add_equals, pythagorean_theorem <G.36, G.79>
 
-   Let the center of :g:`( A B C D ) <g2:( A B C D )>` be taken
+   rect(:g:`/ A E / <g2:/ A E />`, :g:`/ E C / <g2:/ E C />`) + :g:`/ F E / <g2:/ F E />`² = :g:`/ F C / <g2:/ F C />`² and rect(:g:`/ D E / <g2:/ D E />`, :g:`/ E B / <g2:/ E B />`) + :g:`/ F E / <g2:/ F E />`² = :g:`/ F B / <g2:/ F B />`²
 
-.. step:: assert
+.. step:: conclude ∵ circle_radii, equal_transitive, subtract_equals <G.10, G.16, G.19>
 
-   Let it be :g:`F <g2:F>`
-
-.. step:: construct
-
-   From :g:`F <g2:F>` let :g:`/ F G / <g2:/ F G />`, :g:`/ F H / <g2:/ F H />` be drawn :term:`perpendicular <G.33>` to :g:`/ A C / <g2:/ A C />`, :g:`/ D B / <g2:/ D B />`, and let :g:`/ F B / <g2:/ F B />`, :g:`/ F C / <g2:/ F C />`, :g:`/ F E / <g2:/ F E />` be joined.
-
-.. step:: assert ∵ circle_segment_center <G.100>
-
-   a segment :g:`/ G F / <g2:/ G F />` through the center cuts a segment :g:`/ A C / <g2:/ A C />` not through the center at right angles → it also bisects it
-
-.. step:: assert
-
-   :g:`/ A G / <g2:/ A G />` :eq:`= <g2:/ A G / = g2:/ G C />` :g:`/ G C / <g2:/ G C />`
-
-.. step:: assert ∵ difference_of_squares_equal_unequal <G.87>
-
-   Since, then, :g:`/ A C / <g2:/ A C />` has been cut into equal parts at :g:`G <g2:G>` and into unequal parts at :g:`E <g2:E>`, the rectangle contained by :g:`/ A E / <g2:/ A E />`, :g:`/ E C / <g2:/ E C />` together with the :term:`square <G.63>` on :g:`/ E G / <g2:/ E G />` is equal to the square on :g:`/ G C / <g2:/ G C />`
-
-.. step:: construct
-
-   Let the square on :g:`/ G F / <g2:/ G F />` be added
-
-.. step:: assert
-
-   the rectangle :g:`/ A E / <g2:/ A E />`, :g:`/ E C / <g2:/ E C />` together with the squares on :g:`/ G E / <g2:/ G E />`, :g:`/ G F / <g2:/ G F />` is equal to the squares on :g:`/ C G / <g2:/ C G />`, :g:`/ G F / <g2:/ G F />`
-
-.. step:: assert ∵ pythagorean_theorem <G.79>
-
-   The square on :g:`/ F E / <g2:/ F E />` is equal to the squares on :g:`/ E G / <g2:/ E G />`, :g:`/ G F / <g2:/ G F />`, and the square on :g:`/ F C / <g2:/ F C />` is equal to the squares on :g:`/ C G / <g2:/ C G />`, :g:`/ G F / <g2:/ G F />`
-
-.. step:: assert
-
-   the rectangle :g:`/ A E / <g2:/ A E />`, :g:`/ E C / <g2:/ E C />` together with the square on :g:`/ F E / <g2:/ F E />` is equal to the square on :g:`/ F C / <g2:/ F C />`
-
-.. step:: assert
-
-   :g:`/ F C / <g2:/ F C />` :eq:`= <g2:/ F C / = g2:/ F B />` :g:`/ F B / <g2:/ F B />`
-
-.. step:: assert
-
-   the rectangle :g:`/ A E / <g2:/ A E />`, :g:`/ E C / <g2:/ E C />` together with the square on :g:`/ E F / <g2:/ E F />` is equal to the square on :g:`/ F B / <g2:/ F B />`
-
-.. step:: assert
-
-   The same reason, also, the rectangle :g:`/ D E / <g2:/ D E />`, :g:`/ E B / <g2:/ E B />` together with the square on :g:`/ F E / <g2:/ F E />` is equal to the square on :g:`/ F B / <g2:/ F B />`
-
-.. step:: assert
-
-   The rectangle :g:`/ A E / <g2:/ A E />`, :g:`/ E C / <g2:/ E C />` together with the square on :g:`/ F E / <g2:/ F E />` was also proved equal to the square on :g:`/ F B / <g2:/ F B />`
-
-.. step:: assert
-
-   the rectangle :g:`/ A E / <g2:/ A E />`, :g:`/ E C / <g2:/ E C />` together with the square on :g:`/ F E / <g2:/ F E />` is equal to the rectangle :g:`/ D E / <g2:/ D E />`, :g:`/ E B / <g2:/ E B />` together with the square on :g:`/ F E / <g2:/ F E />`
-
-.. step:: construct
-
-   Let the square on :g:`/ F E / <g2:/ F E />` be subtracted from each
-
-.. step:: conclude
-
-   the rectangle contained by :g:`/ A E / <g2:/ A E />`, :g:`/ E C / <g2:/ E C />` which remains is equal to the rectangle contained by :g:`/ D E / <g2:/ D E />`, :g:`/ E B / <g2:/ E B />`
+   :g:`/ F C / <g2:/ F C />` :eq:`= <g2:/ F C / = g2:/ F B />` :g:`/ F B / <g2:/ F B />` → rect(:g:`/ A E / <g1:/ A E />`, :g:`/ E C / <g1:/ E C />`) = rect(:g:`/ D E / <g1:/ D E />`, :g:`/ E B / <g1:/ E B />`)
 
 Dependency Graph
 ----------------
@@ -159,6 +100,7 @@ Dependency Graph
      "G.32" [label="G.32", tooltip="G.32 (I.10): Bisect a given segment.", fillcolor="#222244", URL="../G.32/index.html", target="_top"];
      "G.33" [label="G.33", tooltip="G.33 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.33/index.html", target="_top"];
      "G.34" [label="G.34", tooltip="G.34 (I.11): Construct a segment at right angles to a given line from a given point on it.", fillcolor="#222244", URL="../G.34/index.html", target="_top"];
+     "G.35" [label="G.35", tooltip="G.35 (I.12): Construct a perpendicular to a given line from a given point not on it.", fillcolor="#222244", URL="../G.35/index.html", target="_top"];
      "G.36" [label="G.36", tooltip="G.36 (I.cn.2): If equals are added to equals, the wholes are equal.", fillcolor="#442222", URL="../G.36/index.html", target="_top"];
      "G.37" [label="G.37", tooltip="G.37 (I.13): A segment standing on a line makes either two right angles or adjacent angles summing to two right angles.", fillcolor="#222244", URL="../G.37/index.html", target="_top"];
      "G.38" [label="G.38", tooltip="G.38 (I.post.4): All right angles are equal.", fillcolor="#444422", URL="../G.38/index.html", target="_top"];
@@ -192,9 +134,10 @@ Dependency Graph
      "G.79" [label="G.79", tooltip="G.79 (I.47): In a right-angled triangle, the square on the hypotenuse equals the sum of the squares on the two legs (Pythagorean Theorem).", fillcolor="#222244", URL="../G.79/index.html", target="_top"];
      "G.81" [label="G.81", tooltip="G.81 (II.def.1): Any rectangular parallelogram is said to becontained by the twosegments containing theright angle.", fillcolor="#224422", URL="../G.81/index.html", target="_top"];
      "G.86" [label="G.86", tooltip="G.86 (II.def.2): And in any parallelogrammic area let any one whatever of the parallelograms about itsdiameter with the two complements be called agnomon.", fillcolor="#224422", URL="../G.86/index.html", target="_top"];
-     "G.87" [label="G.87", tooltip="G.87 (II.5): If a segment be cut into equal and unequal segments, the rectangle contained by the unequal segments of the whole together with the square on the segment between the points of sect...", fillcolor="#222244", URL="../G.87/index.html", target="_top"];
-     "G.100" [label="G.100", tooltip="G.100 (III.3): If in a circle a segment through the center bisect a segment not through the center, it also cuts it at right angles; and if it cut it at right angles, it also bisects it.", fillcolor="#222244", URL="../G.100/index.html", target="_top"];
-     "G.143" [label="G.143", tooltip="G.143 (III.35): If in a circle two segments cut one another, the rectangle contained by the segments of the one is equal to the rectangle contained by the segments of the other.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.87" [label="G.87", tooltip="G.87 (II.5): If a segment is cut into equal and unequal parts, the rectangle contained by the unequal parts together with the square on the segment between the points of section equals the squa...", fillcolor="#222244", URL="../G.87/index.html", target="_top"];
+     "G.98" [label="G.98", tooltip="G.98 (III.1): Find the center of a given circle.", fillcolor="#222244", URL="../G.98/index.html", target="_top"];
+     "G.100" [label="G.100", tooltip="G.100 (III.3): A segment through the center of a circle bisects a chord not through the center if and only if it cuts the chord at right angles.", fillcolor="#222244", URL="../G.100/index.html", target="_top"];
+     "G.143" [label="G.143", tooltip="G.143 (III.35): If two chords in a circle intersect one another, the rectangle contained by the segments of one equals the rectangle contained by the segments of the other.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -212,6 +155,7 @@ Dependency Graph
      "G.31" -> "G.1";
      "G.32" -> "G.1";
      "G.34" -> "G.1";
+     "G.35" -> "G.1";
      "G.37" -> "G.1";
      "G.39" -> "G.1";
      "G.40" -> "G.1";
@@ -231,6 +175,7 @@ Dependency Graph
      "G.30" -> "G.2";
      "G.33" -> "G.2";
      "G.34" -> "G.2";
+     "G.35" -> "G.2";
      "G.37" -> "G.2";
      "G.39" -> "G.2";
      "G.40" -> "G.2";
@@ -240,7 +185,6 @@ Dependency Graph
      "G.55" -> "G.2";
      "G.56" -> "G.2";
      "G.58" -> "G.2";
-     "G.65" -> "G.2";
      "G.4" -> "G.3";
      "G.6" -> "G.3";
      "G.8" -> "G.3";
@@ -268,6 +212,7 @@ Dependency Graph
      "G.32" -> "G.4";
      "G.33" -> "G.4";
      "G.34" -> "G.4";
+     "G.35" -> "G.4";
      "G.37" -> "G.4";
      "G.39" -> "G.4";
      "G.40" -> "G.4";
@@ -287,6 +232,7 @@ Dependency Graph
      "G.79" -> "G.4";
      "G.81" -> "G.4";
      "G.87" -> "G.4";
+     "G.98" -> "G.4";
      "G.100" -> "G.4";
      "G.143" -> "G.4";
      "G.6" -> "G.5";
@@ -304,18 +250,21 @@ Dependency Graph
      "G.17" -> "G.10";
      "G.20" -> "G.10";
      "G.21" -> "G.10";
+     "G.35" -> "G.10";
      "G.47" -> "G.10";
      "G.61" -> "G.10";
+     "G.98" -> "G.10";
      "G.100" -> "G.10";
      "G.143" -> "G.10";
      "G.15" -> "G.11";
      "G.17" -> "G.11";
      "G.20" -> "G.11";
      "G.21" -> "G.11";
+     "G.35" -> "G.11";
      "G.47" -> "G.11";
      "G.61" -> "G.11";
+     "G.98" -> "G.11";
      "G.100" -> "G.11";
-     "G.143" -> "G.11";
      "G.13" -> "G.12";
      "G.17" -> "G.12";
      "G.20" -> "G.12";
@@ -343,7 +292,6 @@ Dependency Graph
      "G.72" -> "G.12";
      "G.78" -> "G.12";
      "G.79" -> "G.12";
-     "G.100" -> "G.12";
      "G.17" -> "G.13";
      "G.25" -> "G.13";
      "G.63" -> "G.13";
@@ -354,10 +302,12 @@ Dependency Graph
      "G.28" -> "G.14";
      "G.31" -> "G.14";
      "G.34" -> "G.14";
+     "G.35" -> "G.14";
      "G.41" -> "G.14";
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.51" -> "G.14";
      "G.58" -> "G.14";
      "G.60" -> "G.14";
@@ -365,10 +315,13 @@ Dependency Graph
      "G.70" -> "G.14";
      "G.79" -> "G.14";
      "G.87" -> "G.14";
+     "G.98" -> "G.14";
      "G.100" -> "G.14";
+     "G.143" -> "G.14";
      "G.17" -> "G.15";
      "G.20" -> "G.15";
      "G.21" -> "G.15";
+     "G.35" -> "G.15";
      "G.47" -> "G.15";
      "G.17" -> "G.16";
      "G.20" -> "G.16";
@@ -376,17 +329,25 @@ Dependency Graph
      "G.37" -> "G.16";
      "G.39" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.56" -> "G.16";
      "G.64" -> "G.16";
      "G.65" -> "G.16";
+     "G.66" -> "G.16";
+     "G.70" -> "G.16";
+     "G.75" -> "G.16";
+     "G.87" -> "G.16";
+     "G.143" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
      "G.34" -> "G.17";
      "G.20" -> "G.18";
      "G.25" -> "G.18";
+     "G.39" -> "G.18";
      "G.41" -> "G.18";
      "G.45" -> "G.18";
+     "G.53" -> "G.18";
      "G.58" -> "G.18";
      "G.66" -> "G.18";
      "G.20" -> "G.19";
@@ -395,6 +356,7 @@ Dependency Graph
      "G.40" -> "G.19";
      "G.64" -> "G.19";
      "G.72" -> "G.19";
+     "G.143" -> "G.19";
      "G.21" -> "G.20";
      "G.25" -> "G.21";
      "G.31" -> "G.21";
@@ -403,6 +365,7 @@ Dependency Graph
      "G.43" -> "G.21";
      "G.45" -> "G.21";
      "G.47" -> "G.21";
+     "G.51" -> "G.21";
      "G.75" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
@@ -413,6 +376,7 @@ Dependency Graph
      "G.32" -> "G.22";
      "G.33" -> "G.22";
      "G.34" -> "G.22";
+     "G.35" -> "G.22";
      "G.37" -> "G.22";
      "G.39" -> "G.22";
      "G.40" -> "G.22";
@@ -447,22 +411,32 @@ Dependency Graph
      "G.64" -> "G.24";
      "G.79" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.100" -> "G.25";
      "G.28" -> "G.26";
+     "G.39" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.51" -> "G.26";
+     "G.98" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
+     "G.35" -> "G.29";
      "G.48" -> "G.29";
+     "G.98" -> "G.29";
      "G.100" -> "G.29";
      "G.31" -> "G.30";
      "G.48" -> "G.30";
      "G.32" -> "G.31";
+     "G.35" -> "G.32";
      "G.41" -> "G.32";
+     "G.98" -> "G.32";
      "G.34" -> "G.33";
+     "G.35" -> "G.33";
      "G.37" -> "G.33";
      "G.38" -> "G.33";
      "G.39" -> "G.33";
@@ -475,16 +449,20 @@ Dependency Graph
      "G.78" -> "G.33";
      "G.79" -> "G.33";
      "G.81" -> "G.33";
+     "G.98" -> "G.33";
      "G.100" -> "G.33";
-     "G.143" -> "G.33";
      "G.37" -> "G.34";
      "G.75" -> "G.34";
+     "G.98" -> "G.34";
+     "G.143" -> "G.35";
      "G.37" -> "G.36";
      "G.56" -> "G.36";
      "G.62" -> "G.36";
      "G.64" -> "G.36";
      "G.72" -> "G.36";
      "G.79" -> "G.36";
+     "G.87" -> "G.36";
+     "G.143" -> "G.36";
      "G.39" -> "G.37";
      "G.40" -> "G.37";
      "G.56" -> "G.37";
@@ -541,7 +519,6 @@ Dependency Graph
      "G.75" -> "G.63";
      "G.79" -> "G.63";
      "G.87" -> "G.63";
-     "G.143" -> "G.63";
      "G.65" -> "G.64";
      "G.66" -> "G.64";
      "G.87" -> "G.65";
@@ -558,6 +535,7 @@ Dependency Graph
      "G.143" -> "G.81";
      "G.87" -> "G.86";
      "G.143" -> "G.87";
+     "G.143" -> "G.98";
      "G.143" -> "G.100";
    }
 

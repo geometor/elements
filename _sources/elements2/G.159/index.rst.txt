@@ -2,7 +2,7 @@
 :number: 159
 :canonical_id: G.159
 :original_id: IV.7
-:title: G.159 circumscribe about a given circle a square
+:title: G.159 circumscribe a square about a circle
 :volume: II
 :book: IV
 :type: prop
@@ -10,133 +10,53 @@
 :categories: problem, construction, plane-geometry, circles, polygons
 :category: problem, construction, plane-geometry, circles, polygons
 :tags: book-iv, point, segment, circle, angle, quadrilateral, square, diameter, right-angle, tangent-to-circle, centre, plane-angle, parallel-straight-lines, straight-line, circumscribed-about-circle, circumscribed, equality
-:dependencies: G.10, G.12, G.22, G.33, G.52, G.54, G.57, G.61, G.62, G.63, G.118, G.120, G.150
-:excerpt: Circumscribe about a given circle a square.
+:dependencies: G.10, G.11, G.22, G.34, G.54, G.57, G.61, G.62, G.63, G.118, G.120, G.150
+:excerpt: Circumscribe a square about a given circle.
 
 .. _G.159:
 .. _IV.7:
 
-G.159 circumscribe about a given circle a square
-================================================
+G.159 circumscribe a square about a circle
+==========================================
 
 .. rubric:: `IV.7 <https://geometor.github.io/euclid/heath/volume_II/book_iv/propositions/07/>`_
 
 .. enunciation::
 
-   :term:`Circumscribe about a given circle <G.150>` a :term:`square <G.63>`.
+   Circumscribe a :term:`square <G.63>` about a given :term:`circle <G.10>`.
 
 .. signature:: problem
 
-   | :fn:`circumscribe_circle_square <G.159>`\ (:g:`( A B C D ) <g1:( A B C D )>`)
+   | :fn:`circumscribe_square_about_circle <G.159>`\ (:g:`( A B C D ) <g1:( A B C D )>`) → :g:`< F G H K > <g1:< F G H K >>`
    | **given** :g:`( A B C D ) <g1:( A B C D )>`
-   | **construct** about the given circle a square has been circumscribed
+   | **construct** :g:`< F G H K > <g1:< F G H K >>` is a :term:`square <G.63>` :term:`circumscribed about <G.150>` :g:`( A B C D ) <g1:( A B C D )>`
 
 .. picture:: g1.svg
    :alt: Proposition IV. 7 Diagram
 
-.. step:: given
+.. step:: given ∵ circle_radii, polygon_said_circumscribed_def <G.10, G.150>
 
    :g:`( A B C D ) <g1:( A B C D )>`
 
-.. step:: construct
+.. step:: construct ∵ perpendicular_at, perpendicular_at_diameter_extremity_tangent <G.34, G.118>
 
-   Let two :term:`diameters <G.61>` :g:`/ A C / <g1:/ A C />`, :g:`/ B D / <g1:/ B D />` of :g:`( A B C D ) <g1:( A B C D )>` be drawn :term:`at right angles <G.33>` to one another
+   Draw :term:`diameters <G.61>` :g:`/ A C / <g1:/ A C />` ⊥ :g:`/ B D / <g1:/ B D />` through :term:`center <G.11>` :g:`E <g1:E>`; through :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` draw tangents :g:`/ F G / <g1:/ F G />`, :g:`/ G H / <g1:/ G H />`, :g:`/ H K / <g1:/ H K />`, :g:`/ K F / <g1:/ K F />` touching :g:`( A B C D ) <g1:( A B C D )>`
 
-.. step:: construct
+.. step:: assert ∵ radius_perpendicular_to_tangent, corresponding_angles_parallel, parallel_transitive <G.120, G.54, G.57>
 
-   :fn:`segment_drawn_right <G.118>`: Through :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` let :g:`/ F G / <g1:/ F G />`, :g:`/ G H / <g1:/ G H />`, :g:`/ H K / <g1:/ H K />`, :g:`/ K F / <g1:/ K F />` be drawn touching :g:`( A B C D ) <g1:( A B C D )>`.
+   :term:`Angles <G.22>` at :g:`A <g1:A>`, :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` are right (:g:`< A E B ) <g1:< A E B )>` :eq:`= <g1:< A E B ) = g1:< E B G )>` :g:`< E B G ) <g1:< E B G )>`) → :g:`/ G H / <g1:/ G H />` ∥ :g:`/ A C / <g1:/ A C />` ∥ :g:`/ K F / <g1:/ K F />` and :g:`/ F G / <g1:/ F G />` ∥ :g:`/ B D / <g1:/ B D />` ∥ :g:`/ H K / <g1:/ H K />`
 
-.. step:: assert ∵ segment_touch_circle <G.120>
+.. step:: assert ∵ parallelogram_properties, circle_radii <G.62, G.10>
 
-   :g:`/ F G / <g1:/ F G />` touches :g:`( A B C D ) <g1:( A B C D )>`, and :g:`/ E A / <g1:/ E A />` has been joined from the center :g:`E <g1:E>` to the point of contact at :g:`A <g1:A>` → therefore the angles at :g:`A <g1:A>` are right
-
-.. step:: assert
-
-   The same reason
-
-.. step:: assert
-
-   The :term:`angles <G.22>` at :g:`B <g1:B>`, :g:`C <g1:C>`, :g:`D <g1:D>` are also right
-
-.. step:: assert ∵ corresponding_angles_parallel <G.54>
-
-   :g:`< A E B ) <g1:< A E B )>` is right, and :g:`< E B G ) <g1:< E B G )>` is also :eq:`right <g1:< A E B ) = g1:< E B G )>` → therefore :g:`/ G H / <g1:/ G H />` is parallel to :g:`/ A C / <g1:/ A C />`
-
-.. step:: assert
-
-   The same reason
-
-.. step:: assert
-
-   :g:`/ A C / <g1:/ A C />` is also parallel to :g:`/ F K / <g1:/ F K />`,
-
-.. step:: assert ∵ parallel_transitive <G.57>
-
-   So that :g:`/ G H / <g1:/ G H />` is also :term:`parallel <G.52>` to :g:`/ F K / <g1:/ F K />`
-
-.. step:: assert
-
-   Similarly we can prove that
-
-.. step:: assert
-
-   Each of :g:`/ G F / <g1:/ G F />`, :g:`/ H K / <g1:/ H K />` is parallel to :g:`/ B E D / <g1:/ B E D />`
-
-.. step:: assert
-
-   :g:`< F G H K > <g1:< F G H K >>`, :g:`< G H C A > <g1:< G H C A >>`, :g:`< A C K F > <g1:< A C K F >>`, :g:`< F G B D > <g1:< F G B D >>`, :g:`< B H K D > <g1:< B H K D >>` are parallelograms
+   :g:`< G H C A > <g1:< G H C A >>`, :g:`< A C K F > <g1:< A C K F >>`, :g:`< F G B D > <g1:< F G B D >>`, :g:`< B H K D > <g1:< B H K D >>` are parallelograms and :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ B D />` :g:`/ B D / <g1:/ B D />` → :g:`/ F G / <g1:/ F G />` :eq:`= <g1:/ F G / = g1:/ G H / = g1:/ H K / = g1:/ K F />` :g:`/ G H / <g1:/ G H />` :eq:`= <g1:/ F G / = g1:/ G H / = g1:/ H K / = g1:/ K F />` :g:`/ H K / <g1:/ H K />` :eq:`= <g1:/ F G / = g1:/ G H / = g1:/ H K / = g1:/ K F />` :g:`/ K F / <g1:/ K F />` (equilateral)
 
 .. step:: assert ∵ parallelogram_properties <G.62>
 
-   :g:`/ G F / <g1:/ G F />` :eq:`= <g1:/ G F / = g1:/ H K />` :g:`/ H K / <g1:/ H K />`, and :g:`/ G H / <g1:/ G H />` :eq:`to <g1:/ G H / = g1:/ F K />` :g:`/ F K / <g1:/ F K />`
+   In parallelogram :g:`< G B E A > <g1:< G B E A >>`, :g:`< A E B ) <g1:< A E B )>` is right → opposite angle :g:`< A G B ) <g1:< A G B )>` is :eq:`right <g1:< A E B ) = g1:< A G B ) = g1:< G H K ) = g1:< H K F ) = g1:< K F G )>`, and similarly :g:`< G H K ) <g1:< G H K )>`, :g:`< H K F ) <g1:< H K F )>`, :g:`< K F G ) <g1:< K F G )>` are right (right-angled)
 
-.. step:: assert
+.. step:: conclude ∵ quadrilateral_def, polygon_said_circumscribed_def <G.63, G.150>
 
-   since :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ B D />` :g:`/ B D / <g1:/ B D />`, and :g:`/ A C / <g1:/ A C />` :eq:`= <g1:/ A C / = g1:/ G H / = g1:/ F K />` each of :g:`/ G H / <g1:/ G H />`, :g:`/ F K / <g1:/ F K />`,
-
-.. step:: assert ∵ parallelogram_properties <G.62>
-
-   While :g:`/ B D / <g1:/ B D />` :eq:`= <g1:/ B D / = g1:/ G F / = g1:/ H K />` each of :g:`/ G F / <g1:/ G F />`, :g:`/ H K / <g1:/ H K />`,
-
-.. step:: assert
-
-   the :term:`quadrilateral <G.12>` :g:`< F G H K > <g1:< F G H K >>` is :eq:`equilateral <g1:/ G F / = g1:/ G H / = g1:/ H K / = g1:/ F K />`
-
-.. step:: assert
-
-   I say next that it is also right-angled
-
-.. step:: assert ∵ parallelogram_properties <G.62>
-
-   :g:`< G B E A > <g1:< G B E A >>` is a parallelogram, and :g:`< A E B ) <g1:< A E B )>` is right, therefore :g:`< A G B ) <g1:< A G B )>` is also :eq:`right <g1:< A E B ) = g1:< A G B )>`
-
-.. step:: assert
-
-   Similarly we can prove that
-
-.. step:: assert
-
-   The angles at :g:`< G H K ) <g1:< G H K )>`, :g:`< H K F ) <g1:< H K F )>`, :g:`< K F G ) <g1:< K F G )>` are also :eq:`right <g1:< A G B ) = g1:< G H K ) = g1:< H K F ) = g1:< K F G )>`
-
-.. step:: assert
-
-   :g:`< F G H K > <g1:< F G H K >>` is right-angled
-
-.. step:: assert
-
-   It was also proved :eq:`equilateral <g1:/ G F / = g1:/ G H / = g1:/ H K / = g1:/ F K />`
-
-.. step:: assert
-
-   it is a square
-
-.. step:: assert
-
-   it has been circumscribed about :g:`( A B C D ) <g1:( A B C D )>`
-
-.. step:: conclude
-
-   about the given :term:`circle <G.10>` a square has been circumscribed
+   :g:`< F G H K > <g1:< F G H K >>` is both equilateral and right-angled → square :g:`< F G H K > <g1:< F G H K >>` is circumscribed about :g:`( A B C D ) <g1:( A B C D )>`
 
 Dependency Graph
 ----------------
@@ -200,12 +120,13 @@ Dependency Graph
      "G.62" [label="G.62", tooltip="G.62 (I.34): In a parallelogram, opposite sides and opposite angles are equal, and the diagonal bisects the area.", fillcolor="#222244", URL="../G.62/index.html", target="_top"];
      "G.63" [label="G.63", tooltip="G.63 (I.def.22): Of quadrilateral figures, a square is equilateral and right-angled; an oblong is right-angled but not equilateral; a rhombus is equilateral but not right-angled; a rhomboid has opp...", fillcolor="#224422", URL="../G.63/index.html", target="_top"];
      "G.77" [label="G.77", tooltip="G.77 (I.def.12): An acute angle is less than a right angle.", fillcolor="#224422", URL="../G.77/index.html", target="_top"];
+     "G.96" [label="G.96", tooltip="G.96 (I.def.18): A semicircle is the figure contained by a diameter and the arc cut off by it.", fillcolor="#224422", URL="../G.96/index.html", target="_top"];
      "G.111" [label="G.111", tooltip="G.111 (III.def.2): Asegment is said totouch a circle which, meeting thecircle and being produced, does not cut the circle.", fillcolor="#224422", URL="../G.111/index.html", target="_top"];
      "G.117" [label="G.117", tooltip="G.117 (III.def.7): Anangle of a segment is that contained by asegment and a arc of acircle.", fillcolor="#224422", URL="../G.117/index.html", target="_top"];
-     "G.118" [label="G.118", tooltip="G.118 (III.16): The segment drawn at right angles to the diameter of a circle from its extremity will fall outside the circle, and into the space between the segment and the arc another segment ca...", fillcolor="#222244", URL="../G.118/index.html", target="_top"];
-     "G.120" [label="G.120", tooltip="G.120 (III.18): If a segment touch a circle, and a segment be joined from the center to the point of contact, the segment so joined is perpendicular to the tangent.", fillcolor="#222244", URL="../G.120/index.html", target="_top"];
+     "G.118" [label="G.118", tooltip="G.118 (III.16): The line drawn at right angles to the diameter of a circle from its extremity falls outside the circle, no other line can be interposed between it and the arc, and the angle of the...", fillcolor="#222244", URL="../G.118/index.html", target="_top"];
+     "G.120" [label="G.120", tooltip="G.120 (III.18): If a line touches a circle, the segment joined from the center to the point of contact is perpendicular to the tangent.", fillcolor="#222244", URL="../G.120/index.html", target="_top"];
      "G.150" [label="G.150", tooltip="G.150 (IV.def.4): Apolygon is said to becircumscribed about a circle, when each side of the circumscribedfigure touches the arc of thecircle.", fillcolor="#224422", URL="../G.150/index.html", target="_top"];
-     "G.159" [label="G.159", tooltip="G.159 (IV.7): Circumscribe about a given circle a square.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.159" [label="G.159", tooltip="G.159 (IV.7): Circumscribe a square about a given circle.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -243,6 +164,8 @@ Dependency Graph
      "G.55" -> "G.2";
      "G.56" -> "G.2";
      "G.57" -> "G.2";
+     "G.118" -> "G.2";
+     "G.120" -> "G.2";
      "G.4" -> "G.3";
      "G.6" -> "G.3";
      "G.8" -> "G.3";
@@ -293,6 +216,7 @@ Dependency Graph
      "G.9" -> "G.8";
      "G.10" -> "G.9";
      "G.12" -> "G.9";
+     "G.96" -> "G.9";
      "G.150" -> "G.9";
      "G.11" -> "G.10";
      "G.15" -> "G.10";
@@ -300,9 +224,11 @@ Dependency Graph
      "G.20" -> "G.10";
      "G.21" -> "G.10";
      "G.61" -> "G.10";
+     "G.96" -> "G.10";
      "G.111" -> "G.10";
      "G.117" -> "G.10";
      "G.118" -> "G.10";
+     "G.120" -> "G.10";
      "G.150" -> "G.10";
      "G.159" -> "G.10";
      "G.15" -> "G.11";
@@ -310,7 +236,9 @@ Dependency Graph
      "G.20" -> "G.11";
      "G.21" -> "G.11";
      "G.61" -> "G.11";
+     "G.96" -> "G.11";
      "G.120" -> "G.11";
+     "G.159" -> "G.11";
      "G.13" -> "G.12";
      "G.17" -> "G.12";
      "G.20" -> "G.12";
@@ -330,7 +258,6 @@ Dependency Graph
      "G.62" -> "G.12";
      "G.63" -> "G.12";
      "G.150" -> "G.12";
-     "G.159" -> "G.12";
      "G.17" -> "G.13";
      "G.25" -> "G.13";
      "G.63" -> "G.13";
@@ -343,6 +270,7 @@ Dependency Graph
      "G.41" -> "G.14";
      "G.43" -> "G.14";
      "G.51" -> "G.14";
+     "G.118" -> "G.14";
      "G.17" -> "G.15";
      "G.20" -> "G.15";
      "G.21" -> "G.15";
@@ -351,6 +279,7 @@ Dependency Graph
      "G.21" -> "G.16";
      "G.37" -> "G.16";
      "G.40" -> "G.16";
+     "G.54" -> "G.16";
      "G.56" -> "G.16";
      "G.57" -> "G.16";
      "G.20" -> "G.17";
@@ -361,15 +290,18 @@ Dependency Graph
      "G.25" -> "G.18";
      "G.41" -> "G.18";
      "G.42" -> "G.18";
+     "G.53" -> "G.18";
      "G.20" -> "G.19";
      "G.25" -> "G.19";
      "G.40" -> "G.19";
+     "G.54" -> "G.19";
      "G.21" -> "G.20";
      "G.25" -> "G.21";
      "G.31" -> "G.21";
      "G.34" -> "G.21";
      "G.41" -> "G.21";
      "G.43" -> "G.21";
+     "G.51" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
      "G.28" -> "G.22";
@@ -395,7 +327,6 @@ Dependency Graph
      "G.63" -> "G.22";
      "G.77" -> "G.22";
      "G.118" -> "G.22";
-     "G.120" -> "G.22";
      "G.159" -> "G.22";
      "G.24" -> "G.23";
      "G.29" -> "G.23";
@@ -405,10 +336,14 @@ Dependency Graph
      "G.51" -> "G.24";
      "G.62" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.118" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
+     "G.51" -> "G.26";
+     "G.120" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -427,9 +362,10 @@ Dependency Graph
      "G.77" -> "G.33";
      "G.118" -> "G.33";
      "G.120" -> "G.33";
-     "G.159" -> "G.33";
      "G.37" -> "G.34";
+     "G.159" -> "G.34";
      "G.37" -> "G.36";
+     "G.42" -> "G.36";
      "G.56" -> "G.36";
      "G.62" -> "G.36";
      "G.40" -> "G.37";
@@ -440,6 +376,7 @@ Dependency Graph
      "G.41" -> "G.40";
      "G.54" -> "G.40";
      "G.56" -> "G.40";
+     "G.42" -> "G.41";
      "G.43" -> "G.41";
      "G.51" -> "G.41";
      "G.53" -> "G.41";
@@ -454,20 +391,22 @@ Dependency Graph
      "G.56" -> "G.52";
      "G.57" -> "G.52";
      "G.62" -> "G.52";
-     "G.159" -> "G.52";
      "G.54" -> "G.53";
+     "G.57" -> "G.53";
      "G.159" -> "G.54";
      "G.56" -> "G.55";
      "G.57" -> "G.56";
      "G.62" -> "G.56";
      "G.159" -> "G.57";
      "G.62" -> "G.61";
+     "G.96" -> "G.61";
      "G.118" -> "G.61";
      "G.159" -> "G.61";
      "G.159" -> "G.62";
      "G.159" -> "G.63";
      "G.118" -> "G.77";
      "G.120" -> "G.77";
+     "G.118" -> "G.96";
      "G.118" -> "G.111";
      "G.120" -> "G.111";
      "G.118" -> "G.117";

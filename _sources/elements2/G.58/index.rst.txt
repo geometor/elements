@@ -12,6 +12,7 @@
 :tags: book-i, point, segment, line, angle, straight-line, parallel-straight-lines, plane-angle, parallel, equality
 :dependencies: G.1, G.2, G.4, G.14, G.18, G.22, G.48, G.52, G.53
 :excerpt: Construct through a given point a line parallel to a given line.
+:youtube_id: u4_jwhhffVk
 
 .. _G.58:
 .. _I.31:
@@ -27,9 +28,9 @@ G.58 construct a line parallel to a given line
 
 .. signature:: problem
 
-   | :fn:`parallel_line <G.58>`\ (:g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />`) → :g:`/ E A F / <g1:/ E A F />`
+   | :fn:`parallel_line <G.58>`\ (:g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />`) → :g:`/ E F / <g1:/ E F />`
    | **given** :g:`A <g1:A>`, :g:`/ B C / <g1:/ B C />`
-   | **construct** through :g:`A <g1:A>` :g:`/ E A F / <g1:/ E A F />` has been drawn parallel to :g:`/ B C / <g1:/ B C />`
+   | **construct** :g:`A <g1:A>` ∈ :g:`/ E F / <g1:/ E F />`, :g:`/ E F / <g1:/ E F />` ∥ :g:`/ B C / <g1:/ B C />`
 
 .. picture:: g1.svg
    :alt: Folio 0330 Figure 1 - Proposition 31
@@ -40,15 +41,11 @@ G.58 construct a line parallel to a given line
 
 .. step:: construct
 
-   **point**\ (:g:`/ B C / <g1:/ B C />`) → :g:`D <g1:D>`
+   **point**\ (:g:`/ B C / <g1:/ B C />`) → :g:`D <g1:D>`, :fn:`segment <G.14>`\ (:g:`A <g1:A>`, :g:`D <g1:D>`) → :g:`/ A D / <g1:/ A D />`
 
 .. step:: construct
 
-   :fn:`segment <G.14>`\ (:g:`A <g1:A>`, :g:`D <g1:D>`) → :g:`/ A D / <g1:/ A D />`
-
-.. step:: construct
-
-   :fn:`copy_angle <G.48>`\ (:g:`/ D A / <g1:/ D A />`, :g:`A <g1:A>`, :g:`< A D C ) <g1:< A D C )>`) → :g:`< D A E ) <g1:< D A E )>` (:eq:`equal <g1:< D A E ) = g1:< A D C )>`)
+   :fn:`copy_angle <G.48>`\ (:g:`/ D A / <g1:/ D A />`, :g:`A <g1:A>`, :g:`< A D C ) <g1:< A D C )>`) → :g:`< D A E ) <g1:< D A E )>` (:g:`< D A E ) <g1:< D A E )>` :eq:`= <g1:< D A E ) = g1:< A D C )>` :g:`< A D C ) <g1:< A D C )>`)
 
 .. step:: construct
 
@@ -56,11 +53,11 @@ G.58 construct a line parallel to a given line
 
 .. step:: assert ∵ alternate_angles_parallel <G.53>
 
-   :g:`/ A D / <g1:/ A D />` falling on :g:`/ B C / <g1:/ B C />`, :g:`[ E F ] <g1:[ E F ]>` has made the alternate angles :g:`< E A D ) <g1:< E A D )>`, :g:`< A D C ) <g1:< A D C )>` :eq:`= <g1:< E A D ) = g1:< A D C )>` to one another → therefore :g:`/ E A F / <g1:/ E A F />` is parallel to :g:`/ B C / <g1:/ B C />`
+   :g:`/ A D / <g1:/ A D />` ∩ :g:`/ B C / <g1:/ B C />`, :g:`/ E F / <g1:/ E F />` (:g:`< D A E ) <g1:< D A E )>` :eq:`= <g1:< D A E ) = g1:< A D C )>` :g:`< A D C ) <g1:< A D C )>`) → :g:`/ E F / <g1:/ E F />` ∥ :g:`/ B C / <g1:/ B C />`
 
-.. step:: conclude
+.. step:: conclude ∵ alternate_angles_parallel <G.53>
 
-   through :g:`A <g1:A>` :g:`/ E A F / <g1:/ E A F />` has been drawn parallel to :g:`/ B C / <g1:/ B C />`
+   :g:`A <g1:A>` ∈ :g:`/ E F / <g1:/ E F />`, :g:`/ E F / <g1:/ E F />` ∥ :g:`/ B C / <g1:/ B C />`
 
 Dependency Graph
 ----------------
@@ -238,6 +235,7 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.58" -> "G.14";
      "G.17" -> "G.15";
      "G.20" -> "G.15";
@@ -248,6 +246,7 @@ Dependency Graph
      "G.21" -> "G.16";
      "G.37" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
@@ -256,6 +255,7 @@ Dependency Graph
      "G.25" -> "G.18";
      "G.41" -> "G.18";
      "G.45" -> "G.18";
+     "G.53" -> "G.18";
      "G.58" -> "G.18";
      "G.20" -> "G.19";
      "G.25" -> "G.19";
@@ -292,10 +292,12 @@ Dependency Graph
      "G.32" -> "G.24";
      "G.41" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
@@ -334,5 +336,6 @@ Required for
 .. toctree::
    :hidden:
 
+   video
    code
    heath

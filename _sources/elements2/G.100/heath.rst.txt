@@ -1,12 +1,12 @@
 :canonical_id: G.100
 :original_id: III.3
-:title: G.100 circle segment center
+:title: G.100 diameter bisects chord iff perpendicular
 :volume: II
 :book: III
 :type: prop
 
-G.100 circle segment center — Heath
-===================================
+G.100 diameter bisects chord iff perpendicular — Heath
+======================================================
 
 .. rubric:: `III.3 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/03/>`_
 
@@ -116,7 +116,7 @@ Dependency Graph
      "G.40" [label="G.40", tooltip="G.40 (I.15): Intersecting lines make their vertical angles equal.", fillcolor="#222244", URL="../G.40/index.html", target="_top"];
      "G.41" [label="G.41", tooltip="G.41 (I.16): In any triangle, if one side is extended, the exterior angle is greater than either opposite interior angle.", fillcolor="#222244", URL="../G.41/index.html", target="_top"];
      "G.51" [label="G.51", tooltip="G.51 (I.26): Triangles with two angles and one corresponding side equal are congruent (ASA / AAS).", fillcolor="#222244", URL="../G.51/index.html", target="_top"];
-     "G.100" [label="G.100", tooltip="G.100 (III.3): If in a circle a segment through the center bisect a segment not through the center, it also cuts it at right angles; and if it cut it at right angles, it also bisects it.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.100" [label="G.100", tooltip="G.100 (III.3): A segment through the center of a circle bisects a chord not through the center if and only if it cuts the chord at right angles.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -207,7 +207,6 @@ Dependency Graph
      "G.34" -> "G.12";
      "G.41" -> "G.12";
      "G.51" -> "G.12";
-     "G.100" -> "G.12";
      "G.17" -> "G.13";
      "G.25" -> "G.13";
      "G.17" -> "G.14";
@@ -242,6 +241,7 @@ Dependency Graph
      "G.31" -> "G.21";
      "G.34" -> "G.21";
      "G.41" -> "G.21";
+     "G.51" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
      "G.28" -> "G.22";
@@ -266,6 +266,7 @@ Dependency Graph
      "G.100" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.51" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";

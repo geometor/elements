@@ -12,6 +12,7 @@
 :tags: book-i, point, segment, line, angle, triangle, trilateral, extremity, straight-line, plane-angle, plane
 :dependencies: G.1, G.3, G.4, G.12, G.18, G.22, G.41, G.45
 :excerpt: Segments constructed from the endpoints of one side of a triangle to an interior point have a lesser sum but contain a greater angle than the other two sides.
+:youtube_id: 7cLVNc_4Qpk
 
 .. _G.46:
 .. _I.21:
@@ -27,83 +28,36 @@ G.46 interior segments of a triangle
 
 .. signature:: theorem
 
-   | :fn:`interior_triangle_bounds <G.46>`\ ()
-   | **prove** :g:`/ B D / <g1:/ B D />`, :g:`/ D C / <g1:/ D C />` are less than the remaining two sides of :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />`, but contain an angle :g:`< B D C ) <g1:< B D C )>` greater than :g:`< B A C ) <g1:< B A C )>`
+   | :fn:`interior_triangle_bounds <G.46>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`/ B D / <g1:/ B D />`, :g:`/ D C / <g1:/ D C />`)
+   | **given** :g:`< A B C > <g1:< A B C >>`, :g:`/ B D / <g1:/ B D />`, :g:`/ D C / <g1:/ D C />` (:g:`D <g1:D>` ∈ :g:`< A B C > <g1:< A B C >>`)
+   | **prove** :g:`/ B D / <g1:/ B D />` + :g:`/ D C / <g1:/ D C />` < :g:`/ B A / <g1:/ B A />` + :g:`/ A C / <g1:/ A C />`, :g:`< B D C ) <g1:< B D C )>` > :g:`< B A C ) <g1:< B A C )>`
 
 .. picture:: g1.svg
    :alt: Folio 0303 Figure 1 - Proposition 21
 
+.. step:: given
+
+   :g:`< A B C > <g1:< A B C >>`, :g:`/ B D / <g1:/ B D />`, :g:`/ D C / <g1:/ D C />` (:g:`D <g1:D>` ∈ :g:`< A B C > <g1:< A B C >>`)
+
 .. step:: construct
 
-   On :g:`/ B C / <g1:/ B C />`, one of the sides of :g:`< A B C > <g1:< A B C >>`, from its :term:`extremities <G.3>` :g:`B <g1:B>`, :g:`C <g1:C>`, let :g:`/ B D / <g1:/ B D />`, :g:`/ D C / <g1:/ D C />` be constructed meeting within the triangle
-
-.. step:: construct
-
-   :fn:`extend <G.18>`\ (:g:`[ B D ] <g1:[ B D ]>`) → :g:`E <g1:E>`
+   :fn:`extend <G.18>`\ (:g:`/ B D / <g1:/ B D />`) → :g:`/ D E / <g1:/ D E />`
 
 .. step:: assert ∵ triangle_inequality <G.45>
 
-   in any triangle two sides are greater than the remaining one
+   :g:`< A B E > <g1:< A B E >>` → :g:`/ B A / <g1:/ B A />` + :g:`/ A E / <g1:/ A E />` > :g:`/ B E / <g1:/ B E />` → :g:`/ B A / <g1:/ B A />` + :g:`/ A C / <g1:/ A C />` > :g:`/ B E / <g1:/ B E />` + :g:`/ E C / <g1:/ E C />`
 
-.. step:: assert
+.. step:: assert ∵ triangle_inequality <G.45>
 
-   in :g:`< A B E > <g1:< A B E >>`, :g:`/ A B / <g1:/ A B />`, :g:`/ A E / <g1:/ A E />` are greater than :g:`/ B E / <g1:/ B E />`
-
-.. step:: construct
-
-   Let :g:`/ E C / <g1:/ E C />` be added to each;
-
-.. step:: assert
-
-   :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />` are greater than :g:`/ B E / <g1:/ B E />`, :g:`/ E C / <g1:/ E C />`
-
-.. step:: assert
-
-   Since, in :g:`< C E D > <g1:< C E D >>` → :g:`/ C E / <g1:/ C E />`, :g:`/ E D / <g1:/ E D />` are greater than :g:`/ C D / <g1:/ C D />`,
-
-.. step:: construct
-
-   Let :g:`/ D B / <g1:/ D B />` be added to each;
-
-.. step:: assert
-
-   :g:`/ C E / <g1:/ C E />`, :g:`/ E B / <g1:/ E B />` are greater than :g:`/ C D / <g1:/ C D />`, :g:`/ D B / <g1:/ D B />`
-
-.. step:: assert
-
-   :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />` were proved greater than :g:`/ B E / <g1:/ B E />`, :g:`/ E C / <g1:/ E C />`
-
-.. step:: assert
-
-   :g:`/ B A / <g1:/ B A />`, :g:`/ A C / <g1:/ A C />` are much greater than :g:`/ B D / <g1:/ B D />`, :g:`/ D C / <g1:/ D C />`
+   :g:`< C E D > <g1:< C E D >>` → :g:`/ C E / <g1:/ C E />` + :g:`/ E D / <g1:/ E D />` > :g:`/ C D / <g1:/ C D />` → :g:`/ B E / <g1:/ B E />` + :g:`/ E C / <g1:/ E C />` > :g:`/ B D / <g1:/ B D />` + :g:`/ D C / <g1:/ D C />`
 
 .. step:: assert ∵ exterior_angle_greater <G.41>
 
-   in any triangle the exterior angle > the interior and opposite angle
+   :g:`< C D E > <g1:< C D E >>` → :g:`< B D C ) <g1:< B D C )>` > :g:`< C E D ) <g1:< C E D )>`, :g:`< A B E > <g1:< A B E >>` → :g:`< C E B ) <g1:< C E B )>` > :g:`< B A C ) <g1:< B A C )>`
 
-.. step:: assert
+.. step:: conclude ∵ exterior_angle_greater, triangle_inequality <G.41, G.45>
 
-   in :g:`< C D E > <g1:< C D E >>`,
-
-.. step:: assert
-
-   The exterior angle :g:`< B D C ) <g1:< B D C )>` > :g:`< C E D ) <g1:< C E D )>`
-
-.. step:: assert
-
-   The same reason, moreover, in :g:`< A B E > <g1:< A B E >>` also,
-
-.. step:: assert
-
-   The exterior angle :g:`< C E B ) <g1:< C E B )>` > :g:`< B A C ) <g1:< B A C )>`
-
-.. step:: assert
-
-   :g:`< B D C ) <g1:< B D C )>` was proved greater than :g:`< C E B ) <g1:< C E B )>`
-
-.. step:: conclude
-
-   :g:`< B D C ) <g1:< B D C )>` ≫ :g:`< B A C ) <g1:< B A C )>`
+   :g:`/ B D / <g1:/ B D />` + :g:`/ D C / <g1:/ D C />` < :g:`/ B A / <g1:/ B A />` + :g:`/ A C / <g1:/ A C />`, :g:`< B D C ) <g1:< B D C )>` > :g:`< B A C ) <g1:< B A C )>`
 
 Dependency Graph
 ----------------
@@ -311,10 +265,12 @@ Dependency Graph
      "G.32" -> "G.24";
      "G.41" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
@@ -346,5 +302,6 @@ Required for
 .. toctree::
    :hidden:
 
+   video
    code
    heath

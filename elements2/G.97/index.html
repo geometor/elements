@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>G.97 square from polygon &mdash; Elements 2.0 (G Index)</title>
+  <title>G.97 construct a square equal to a polygon &mdash; Elements 2.0 (G Index)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
@@ -83,20 +83,20 @@
             </nav>
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="../G.98/index.html" title="G.98 find circle center"><span class="nav-label">Next</span> &rarr;</a>
+            <a class="book-nav-btn" href="../G.98/index.html" title="G.98 find the center of a circle"><span class="nav-label">Next</span> &rarr;</a>
           </div>
         </div>
       </header>
       <div class="content body book-content folio-book-page" role="main">
-        <section class="level-1" id="g-97-square-from-polygon">
-        <span id="ii-14"></span><span id="g-97"></span><h1>G.97 square from polygon<a class="headerlink" href="#g-97-square-from-polygon" title="Link to this heading">¶</a></h1>
-        <p class="rubric"><a class="reference external" href="https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/14/" title="II.14: Construct a square equal to a given polygon.">II.14</a></p>
-        <div class="enunciation">Construct a <a class="term-ref glossary-term" id="occ-term-g-63-1" href="../G.63/index.html#g-63" data-term="G.63" title="G.63: Of quadrilateral figures, a square is equilateral and right-angled; an oblong is right-angled but not equilateral; a rhombus is equilateral but not right-angled; a rhomboid has…">square</a> equal to a given polygon.</div>
+        <section class="level-1" id="g-97-construct-a-square-equal-to-a-polygon">
+        <span id="ii-14"></span><span id="g-97"></span><h1>G.97 construct a square equal to a polygon<a class="headerlink" href="#g-97-construct-a-square-equal-to-a-polygon" title="Link to this heading">¶</a></h1>
+        <p class="rubric"><a class="reference external" href="https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/14/" title="II.14: Construct a square equal in area to a given rectilineal figure.">II.14</a></p>
+        <div class="enunciation">Construct a <a class="term-ref glossary-term" id="occ-term-g-63-1" href="../G.63/index.html#g-63" data-term="G.63" title="G.63: Of quadrilateral figures, a square is equilateral and right-angled; an oblong is right-angled but not equilateral; a rhombus is equilateral but not right-angled; a rhomboid has…">square</a> equal in area to a given <a class="term-ref glossary-term" id="occ-term-g-12-1" href="../G.12/index.html#g-12" data-term="G.12" title="G.12: Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.">rectilineal figure</a>.</div>
         <div class="geom-signature geom-signature-problem">
         <div class="line-block">
-        <div class="line"><span class="geom-fn geom-fn-def" data-ref-target="G.97" title="G.97: Construct a square equal to a given polygon.">square_from_polygon</span>(<span class="geom-ref" data-ref="g1:A" title="A">A</span>) → <span class="geom-ref" data-ref="g1:/ E H /" title="/ E H /">/ E H /</span></div>
-        <div class="line"><strong>given</strong> <span class="geom-ref" data-ref="g1:A" title="A">A</span> be the given rectilineal figure</div>
-        <div class="line"><strong>construct</strong> a square, namely that which can be described on <span class="geom-ref" data-ref="g1:/ E H /" title="/ E H /">/ E H /</span>, has been constructed <span class="geom-eq-ref" data-assert-equal="g1:/ E H / = g1:A" title="/ E H / = A">=</span> to the given rectilineal figure <span class="geom-ref" data-ref="g1:A" title="A">A</span></div>
+        <div class="line"><span class="geom-fn geom-fn-def" data-ref-target="G.97" title="G.97: Construct a square equal in area to a given rectilineal figure.">square_from_polygon</span>(<span class="geom-ref" data-ref="g1:A" title="A">A</span>) → <span class="geom-ref" data-ref="g1:/ E H /" title="/ E H /">/ E H /</span></div>
+        <div class="line"><strong>given</strong> <span class="geom-ref" data-ref="g1:A" title="A">A</span></div>
+        <div class="line"><strong>construct</strong> <a class="geom-fn" href="../G.75/index.html#g-75" data-ref-target="G.75" title="G.75: Construct a square on a given segment.">square_on_segment</a>(<span class="geom-ref" data-ref="g1:/ E H /" title="/ E H /">/ E H /</span>) <span class="geom-eq-ref" data-assert-equal="g1:/ E H / = g1:A" title="/ E H / = A">=</span> <span class="geom-ref" data-ref="g1:A" title="A">A</span></div>
         </div>
         </div>
         <figure class="photon-picture photon-svg">
@@ -184,32 +184,15 @@
           </g>
         </svg>
         </figure>
-        <div class="geom-step geom-step-given" data-step-kind="given"><span class="geom-step-badge geom-badge-given">given</span> <span class="geom-ref" data-ref="g1:A" title="A">A</span> be the given rectilineal figure</div>
-        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> <a class="geom-fn" href="../G.74/index.html#g-74" data-ref-target="G.74" title="G.74: Construct, in a given angle, a parallelogram equal in area to a given polygon.">parallelogram_from_polygon</a>: Let there be constructed the rectangular parallelogram <span class="geom-ref" data-ref="g1:&lt; B D E C &gt;" title="&lt; B D E C &gt;">&lt; B D E C &gt;</span> <span class="geom-eq-ref" data-assert-equal="g1:&lt; B D E C &gt; = g1:A" title="&lt; B D E C &gt; = A">equal</span> to the rectilineal figure <span class="geom-ref" data-ref="g1:A" title="A">A</span>.</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> If <span class="geom-ref" data-ref="g1:/ B E /" title="/ B E /">/ B E /</span> <span class="geom-eq-ref" data-assert-equal="g1:/ B E / = g1:/ E D /" title="/ B E / = / E D /">=</span> <span class="geom-ref" data-ref="g1:/ E D /" title="/ E D /">/ E D /</span>, that which was enjoined will have been done</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> For a square <span class="geom-ref" data-ref="g1:&lt; B D E C &gt;" title="&lt; B D E C &gt;">&lt; B D E C &gt;</span> has been constructed <span class="geom-eq-ref" data-assert-equal="g1:&lt; B D E C &gt; = g1:A" title="&lt; B D E C &gt; = A">equal</span> to the <a class="term-ref glossary-term" id="occ-term-g-12-1" href="../G.12/index.html#g-12" data-term="G.12" title="G.12: Rectilineal figures are contained by segments: trilateral by three, quadrilateral by four, and multilateral by more than four.">rectilineal figure</a> <span class="geom-ref" data-ref="g1:A" title="A">A</span></div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> But, if not, one of <span class="geom-ref" data-ref="g1:/ B E /" title="/ B E /">/ B E /</span>, <span class="geom-ref" data-ref="g1:/ E D /" title="/ E D /">/ E D /</span> is greater</div>
-        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> <a class="geom-fn" href="../G.18/index.html#g-18" data-ref-target="G.18" title="G.18: Extend a segment / A B / continuously along a line [ A B ] to / B C /.">extend</a>(<span class="geom-ref" data-ref="g1:/ B E /" title="/ B E /">/ B E /</span> be greater, and let it) → <span class="geom-ref" data-ref="g1:F" title="F">F</span></div>
-        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> <a class="geom-fn" href="../G.21/index.html#g-21" data-ref-target="G.21" title="G.21: Cut off from the greater of two unequal segments a segment equal to the less.">cut_equal_segment</a>(<span class="geom-ref" data-ref="g1:/ E D /" title="/ E D /">/ E D /</span>) → <span class="geom-ref" data-ref="g1:/ E F /" title="/ E F /">/ E F /</span> (<span class="geom-eq-ref" data-assert-equal="g1:/ E F / = g1:/ E D /" title="/ E F / = / E D /">equal</span>)</div>
-        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> <a class="geom-fn" href="../G.32/index.html#g-32" data-ref-target="G.32" title="G.32: Bisect a given segment.">bisect_segment</a>(<span class="geom-ref" data-ref="g1:/ B F /" title="/ B F /">/ B F /</span>) → <span class="geom-ref" data-ref="g1:G" title="G">G</span> (<span class="geom-eq-ref" data-assert-equal="g1:/ G B / = g1:/ G F /" title="/ G B / = / G F /">bisected</span>)</div>
-        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> With <a class="term-ref glossary-term" id="occ-term-g-11-1" href="../G.11/index.html#g-11" data-term="G.11" title="G.11: The point A within the circle ( A B ) from which all segments / A B /, / A C / to the arc are equal is called the center of the circle.">center</a> <span class="geom-ref" data-ref="g1:G" title="G">G</span> and distance one of <span class="geom-ref" data-ref="g1:/ G B /" title="/ G B /">/ G B /</span>, <span class="geom-ref" data-ref="g1:/ G F /" title="/ G F /">/ G F /</span> let the <a class="term-ref glossary-term" id="occ-term-g-96-1" href="../G.96/index.html#g-96" data-term="G.96" title="G.96: A semicircle is the figure contained by a diameter and the arc cut off by it.">semicircle</a> <span class="geom-ref" data-ref="g1:( B H F )" title="( B H F )">( B H F )</span> be described</div>
-        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> <a class="geom-fn" href="../G.18/index.html#g-18" data-ref-target="G.18" title="G.18: Extend a segment / A B / continuously along a line [ A B ] to / B C /.">extend</a>(<span class="geom-ref" data-ref="g1:[ D E ]" title="[ D E ]">[ D E ]</span>) → <span class="geom-ref" data-ref="g1:H" title="H">H</span></div>
-        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> <a class="geom-fn" href="../G.14/index.html#g-14" data-ref-target="G.14" title="G.14: Construct a segment / A B / between any two points A, B.">segment</a>(<span class="geom-ref" data-ref="g1:G" title="G">G</span>, <span class="geom-ref" data-ref="g1:H" title="H">H</span>) → <span class="geom-ref" data-ref="g1:/ G H /" title="/ G H /">/ G H /</span></div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.87/index.html#g-87" data-ref-target="G.87" title="G.87: If a segment be cut into equal and unequal segments, the rectangle contained by the unequal segments of the whole together with the square on the segment between the points of…">difference_of_squares_equal_unequal</a></span><span class="geom-step-badge geom-badge-assert">assert</span> <span class="geom-ref" data-ref="g1:/ B F /" title="/ B F /">/ B F /</span> has been cut into <span class="geom-eq-ref" data-assert-equal="g1:/ G B / = g1:/ G F /" title="/ G B / = / G F /">=</span> segments at <span class="geom-ref" data-ref="g1:G" title="G">G</span>, and into unequal segments at <span class="geom-ref" data-ref="g1:E" title="E">E</span> → the rectangle contained by <span class="geom-ref" data-ref="g1:/ B E /" title="/ B E /">/ B E /</span>, <span class="geom-ref" data-ref="g1:/ E F /" title="/ E F /">/ E F /</span> together with the square on <span class="geom-ref" data-ref="g1:/ E G /" title="/ E G /">/ E G /</span> is equal to the square on <span class="geom-ref" data-ref="g1:/ G F /" title="/ G F /">/ G F /</span></div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> <span class="geom-ref" data-ref="g1:/ G F /" title="/ G F /">/ G F /</span> <span class="geom-eq-ref" data-assert-equal="g1:/ G F / = g1:/ G H /" title="/ G F / = / G H /">=</span> <span class="geom-ref" data-ref="g1:/ G H /" title="/ G H /">/ G H /</span></div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> the <a class="term-ref glossary-term" id="occ-term-g-81-1" href="../G.81/index.html#g-81" data-term="G.81" title="G.81: Any rectangular parallelogram is said to becontained by the twosegments containing theright angle.">rectangle</a> <span class="geom-ref" data-ref="g1:/ B E /" title="/ B E /">/ B E /</span>, <span class="geom-ref" data-ref="g1:/ E F /" title="/ E F /">/ E F /</span> together with the square on <span class="geom-ref" data-ref="g1:/ G E /" title="/ G E /">/ G E /</span> is equal to the square on <span class="geom-ref" data-ref="g1:/ G H /" title="/ G H /">/ G H /</span></div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.79/index.html#g-79" data-ref-target="G.79" title="G.79: In a right-angled triangle, the square on the hypotenuse equals the sum of the squares on the two legs (Pythagorean Theorem).">pythagorean_theorem</a></span><span class="geom-step-badge geom-badge-assert">assert</span> The squares on <span class="geom-ref" data-ref="g1:/ H E /" title="/ H E /">/ H E /</span>, <span class="geom-ref" data-ref="g1:/ E G /" title="/ E G /">/ E G /</span> are equal to the square on <span class="geom-ref" data-ref="g1:/ G H /" title="/ G H /">/ G H /</span></div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> the rectangle <span class="geom-ref" data-ref="g1:/ B E /" title="/ B E /">/ B E /</span>, <span class="geom-ref" data-ref="g1:/ E F /" title="/ E F /">/ E F /</span> together with the square on <span class="geom-ref" data-ref="g1:/ G E /" title="/ G E /">/ G E /</span> is equal to the squares on <span class="geom-ref" data-ref="g1:/ H E /" title="/ H E /">/ H E /</span>, <span class="geom-ref" data-ref="g1:/ E G /" title="/ E G /">/ E G /</span></div>
-        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="geom-step-badge geom-badge-construct">construct</span> Let the square on <span class="geom-ref" data-ref="g1:/ G E /" title="/ G E /">/ G E /</span> be subtracted from each</div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> the rectangle contained by <span class="geom-ref" data-ref="g1:/ B E /" title="/ B E /">/ B E /</span>, <span class="geom-ref" data-ref="g1:/ E F /" title="/ E F /">/ E F /</span> which remains is equal to the square on <span class="geom-ref" data-ref="g1:/ E H /" title="/ E H /">/ E H /</span></div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> The rectangle <span class="geom-ref" data-ref="g1:/ B E /" title="/ B E /">/ B E /</span>, <span class="geom-ref" data-ref="g1:/ E F /" title="/ E F /">/ E F /</span> is <span class="geom-ref" data-ref="g1:&lt; B D E C &gt;" title="&lt; B D E C &gt;">&lt; B D E C &gt;</span>, for <span class="geom-ref" data-ref="g1:/ E F /" title="/ E F /">/ E F /</span> <span class="geom-eq-ref" data-assert-equal="g1:/ E F / = g1:/ E D /" title="/ E F / = / E D /">=</span> <span class="geom-ref" data-ref="g1:/ E D /" title="/ E D /">/ E D /</span></div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> the parallelogram <span class="geom-ref" data-ref="g1:&lt; B D E C &gt;" title="&lt; B D E C &gt;">&lt; B D E C &gt;</span> is <span class="geom-eq-ref" data-assert-equal="g1:&lt; B D E C &gt; = g1:/ H E /" title="&lt; B D E C &gt; = / H E /">equal</span> to the square on <span class="geom-ref" data-ref="g1:/ H E /" title="/ H E /">/ H E /</span></div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> <span class="geom-ref" data-ref="g1:&lt; B D E C &gt;" title="&lt; B D E C &gt;">&lt; B D E C &gt;</span> is <span class="geom-eq-ref" data-assert-equal="g1:&lt; B D E C &gt; = g1:A" title="&lt; B D E C &gt; = A">equal</span> to the rectilineal figure <span class="geom-ref" data-ref="g1:A" title="A">A</span></div>
-        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="geom-step-badge geom-badge-assert">assert</span> the rectilineal figure <span class="geom-ref" data-ref="g1:A" title="A">A</span> <span class="geom-eq-ref" data-assert-equal="g1:A = g1:/ E H /" title="A = / E H /">=</span> the square which can be described on <span class="geom-ref" data-ref="g1:/ E H /" title="/ E H /">/ E H /</span></div>
-        <div class="geom-step geom-step-conclude" data-step-kind="conclude"><span class="geom-step-badge geom-badge-conclude" title="conclude">∴</span> a square, namely that which can be described on <span class="geom-ref" data-ref="g1:/ E H /" title="/ E H /">/ E H /</span>, has been constructed <span class="geom-eq-ref" data-assert-equal="g1:/ E H / = g1:A" title="/ E H / = A">=</span> to the given rectilineal figure <span class="geom-ref" data-ref="g1:A" title="A">A</span></div>
+        <div class="geom-step geom-step-given" data-step-kind="given"><span class="geom-step-badge geom-badge-given">given</span> <span class="geom-ref" data-ref="g1:A" title="A">A</span></div>
+        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.74/index.html#g-74" data-ref-target="G.74" title="G.74: Construct, in a given angle, a parallelogram equal in area to a given polygon.">parallelogram_from_polygon</a>, <a class="justification-link geom-rule" href="../G.18/index.html#g-18" data-ref-target="G.18" title="G.18: Extend a segment / A B / continuously along a line [ A B ] to / B C /.">extend</a>, <a class="justification-link geom-rule" href="../G.21/index.html#g-21" data-ref-target="G.21" title="G.21: Cut off from the greater of two unequal segments a segment equal to the less.">cut_equal_segment</a></span><span class="geom-step-badge geom-badge-construct">construct</span> <a class="geom-fn" href="../G.74/index.html#g-74" data-ref-target="G.74" title="G.74: Construct, in a given angle, a parallelogram equal in area to a given polygon.">parallelogram_from_polygon</a>(<span class="geom-ref" data-ref="g1:A" title="A">A</span>) → <span class="geom-ref" data-ref="g1:&lt; B D E C &gt;" title="&lt; B D E C &gt;">&lt; B D E C &gt;</span> (<span class="geom-eq-ref" data-assert-equal="g1:&lt; B D E C &gt; = g1:A" title="&lt; B D E C &gt; = A">=</span> <span class="geom-ref" data-ref="g1:A" title="A">A</span>), ? ¬(<span class="geom-ref" data-ref="g1:/ B E /" title="/ B E /">/ B E /</span> <span class="geom-eq-ref" data-assert-equal="g1:/ B E / = g1:/ E D /" title="/ B E / = / E D /">=</span> <span class="geom-ref" data-ref="g1:/ E D /" title="/ E D /">/ E D /</span>) → <a class="geom-fn" href="../G.18/index.html#g-18" data-ref-target="G.18" title="G.18: Extend a segment / A B / continuously along a line [ A B ] to / B C /.">extend</a>(<span class="geom-ref" data-ref="g1:/ B E /" title="/ B E /">/ B E /</span>) → <span class="geom-ref" data-ref="g1:[ B E ]" title="[ B E ]">[ B F ]</span>, <a class="geom-fn" href="../G.21/index.html#g-21" data-ref-target="G.21" title="G.21: Cut off from the greater of two unequal segments a segment equal to the less.">cut_equal_segment</a>(<span class="geom-ref" data-ref="g1:[ B E ]" title="[ B E ]">[ B F ]</span>, <span class="geom-ref" data-ref="g1:/ E D /" title="/ E D /">/ E D /</span>) → <span class="geom-ref" data-ref="g1:/ E F /" title="/ E F /">/ E F /</span> (<span class="geom-eq-ref" data-assert-equal="g1:/ E F / = g1:/ E D /" title="/ E F / = / E D /">=</span> <span class="geom-ref" data-ref="g1:/ E D /" title="/ E D /">/ E D /</span>)</div>
+        <div class="geom-step geom-step-construct" data-step-kind="construct"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.32/index.html#g-32" data-ref-target="G.32" title="G.32: Bisect a given segment.">bisect_segment</a>, <a class="justification-link geom-rule" href="../G.96/index.html#g-96" data-ref-target="G.96" title="G.96: A semicircle is the figure contained by a diameter and the arc cut off by it.">semicircle_def</a>, <a class="justification-link geom-rule" href="../G.18/index.html#g-18" data-ref-target="G.18" title="G.18: Extend a segment / A B / continuously along a line [ A B ] to / B C /.">extend</a>, <a class="justification-link geom-rule" href="../G.14/index.html#g-14" data-ref-target="G.14" title="G.14: Construct a segment / A B / between any two points A, B.">segment</a></span><span class="geom-step-badge geom-badge-construct">construct</span> <a class="geom-fn" href="../G.32/index.html#g-32" data-ref-target="G.32" title="G.32: Bisect a given segment.">bisect_segment</a>(<span class="geom-ref" data-ref="g1:/ B F /" title="/ B F /">/ B F /</span>) → <span class="geom-ref" data-ref="g1:G" title="G">G</span> (<span class="geom-ref" data-ref="g1:/ G B /" title="/ G B /">/ G B /</span> <span class="geom-eq-ref" data-assert-equal="g1:/ G B / = g1:/ G F /" title="/ G B / = / G F /">=</span> <span class="geom-ref" data-ref="g1:/ G F /" title="/ G F /">/ G F /</span>), <a class="geom-fn" href="../G.96/index.html#g-96" data-ref-target="G.96" title="G.96: A semicircle is the figure contained by a diameter and the arc cut off by it.">semicircle_def</a>(<span class="geom-ref" data-ref="g1:G" title="G">G</span>, <span class="geom-ref" data-ref="g1:/ G B /" title="/ G B /">/ G B /</span>) → <span class="geom-ref" data-ref="g1:( B H F )" title="( B H F )">( B H F )</span>, <a class="geom-fn" href="../G.18/index.html#g-18" data-ref-target="G.18" title="G.18: Extend a segment / A B / continuously along a line [ A B ] to / B C /.">extend</a>(<span class="geom-ref" data-ref="g1:/ E D /" title="/ E D /">/ D E /</span>) ∩ <span class="geom-ref" data-ref="g1:( B H F )" title="( B H F )">( B H F )</span> → <span class="geom-ref" data-ref="g1:H" title="H">H</span>, <a class="geom-fn" href="../G.14/index.html#g-14" data-ref-target="G.14" title="G.14: Construct a segment / A B / between any two points A, B.">segment</a>(<span class="geom-ref" data-ref="g1:G" title="G">G</span>, <span class="geom-ref" data-ref="g1:H" title="H">H</span>) → <span class="geom-ref" data-ref="g1:/ G H /" title="/ G H /">/ G H /</span></div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.87/index.html#g-87" data-ref-target="G.87" title="G.87: If a segment is cut into equal and unequal parts, the rectangle contained by the unequal parts together with the square on the segment between the points of section equals the…">difference_of_squares_equal_unequal</a>, <a class="justification-link geom-rule" href="../G.10/index.html#g-10" data-ref-target="G.10" title="G.10: A circle ( A B ) is a plane figure contained by one arc defined by a center A and a point B establishing its defining radius / A B /, such that all segments / A B /, / A C /, / A…">circle_radii</a></span><span class="geom-step-badge geom-badge-assert">assert</span> <span class="geom-ref" data-ref="g1:/ G B /" title="/ G B /">/ G B /</span> <span class="geom-eq-ref" data-assert-equal="g1:/ G B / = g1:/ G F /" title="/ G B / = / G F /">=</span> <span class="geom-ref" data-ref="g1:/ G F /" title="/ G F /">/ G F /</span> → <a class="geom-fn" href="../G.81/index.html#g-81" data-ref-target="G.81" title="G.81: Any rectangular parallelogram is said to becontained by the twosegments containing theright angle.">rectangular_parallelogram_said_def</a>(<span class="geom-ref" data-ref="g1:/ B E /" title="/ B E /">/ B E /</span>, <span class="geom-ref" data-ref="g1:/ E F /" title="/ E F /">/ E F /</span>) + <a class="geom-fn" href="../G.75/index.html#g-75" data-ref-target="G.75" title="G.75: Construct a square on a given segment.">square_on_segment</a>(<span class="geom-ref" data-ref="g1:/ E G /" title="/ E G /">/ E G /</span>) = <a class="geom-fn" href="../G.75/index.html#g-75" data-ref-target="G.75" title="G.75: Construct a square on a given segment.">square_on_segment</a>(<span class="geom-ref" data-ref="g1:/ G F /" title="/ G F /">/ G F /</span>), <span class="geom-ref" data-ref="g1:/ G F /" title="/ G F /">/ G F /</span> <span class="geom-eq-ref" data-assert-equal="g1:/ G F / = g1:/ G H /" title="/ G F / = / G H /">=</span> <span class="geom-ref" data-ref="g1:/ G H /" title="/ G H /">/ G H /</span> → <a class="geom-fn" href="../G.81/index.html#g-81" data-ref-target="G.81" title="G.81: Any rectangular parallelogram is said to becontained by the twosegments containing theright angle.">rectangular_parallelogram_said_def</a>(<span class="geom-ref" data-ref="g1:/ B E /" title="/ B E /">/ B E /</span>, <span class="geom-ref" data-ref="g1:/ E F /" title="/ E F /">/ E F /</span>) + <a class="geom-fn" href="../G.75/index.html#g-75" data-ref-target="G.75" title="G.75: Construct a square on a given segment.">square_on_segment</a>(<span class="geom-ref" data-ref="g1:/ E G /" title="/ E G /">/ E G /</span>) = <a class="geom-fn" href="../G.75/index.html#g-75" data-ref-target="G.75" title="G.75: Construct a square on a given segment.">square_on_segment</a>(<span class="geom-ref" data-ref="g1:/ G H /" title="/ G H /">/ G H /</span>)</div>
+        <div class="geom-step geom-step-assert" data-step-kind="assert"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.79/index.html#g-79" data-ref-target="G.79" title="G.79: In a right-angled triangle, the square on the hypotenuse equals the sum of the squares on the two legs (Pythagorean Theorem).">pythagorean_theorem</a>, <a class="justification-link geom-rule" href="../G.16/index.html#g-16" data-ref-target="G.16" title="G.16: Things equal to the same thing are equal to one another.">equal_transitive</a>, <a class="justification-link geom-rule" href="../G.19/index.html#g-19" data-ref-target="G.19" title="G.19: If equals are subtracted from equals, the remainders are equal.">subtract_equals</a></span><span class="geom-step-badge geom-badge-assert">assert</span> <a class="geom-fn" href="../G.75/index.html#g-75" data-ref-target="G.75" title="G.75: Construct a square on a given segment.">square_on_segment</a>(<span class="geom-ref" data-ref="g1:/ E H /" title="/ E H /">/ E H /</span>) + <a class="geom-fn" href="../G.75/index.html#g-75" data-ref-target="G.75" title="G.75: Construct a square on a given segment.">square_on_segment</a>(<span class="geom-ref" data-ref="g1:/ E G /" title="/ E G /">/ E G /</span>) = <a class="geom-fn" href="../G.75/index.html#g-75" data-ref-target="G.75" title="G.75: Construct a square on a given segment.">square_on_segment</a>(<span class="geom-ref" data-ref="g1:/ G H /" title="/ G H /">/ G H /</span>) → <a class="geom-fn" href="../G.81/index.html#g-81" data-ref-target="G.81" title="G.81: Any rectangular parallelogram is said to becontained by the twosegments containing theright angle.">rectangular_parallelogram_said_def</a>(<span class="geom-ref" data-ref="g1:/ B E /" title="/ B E /">/ B E /</span>, <span class="geom-ref" data-ref="g1:/ E F /" title="/ E F /">/ E F /</span>) + <a class="geom-fn" href="../G.75/index.html#g-75" data-ref-target="G.75" title="G.75: Construct a square on a given segment.">square_on_segment</a>(<span class="geom-ref" data-ref="g1:/ E G /" title="/ E G /">/ E G /</span>) = <a class="geom-fn" href="../G.75/index.html#g-75" data-ref-target="G.75" title="G.75: Construct a square on a given segment.">square_on_segment</a>(<span class="geom-ref" data-ref="g1:/ E H /" title="/ E H /">/ E H /</span>) + <a class="geom-fn" href="../G.75/index.html#g-75" data-ref-target="G.75" title="G.75: Construct a square on a given segment.">square_on_segment</a>(<span class="geom-ref" data-ref="g1:/ E G /" title="/ E G /">/ E G /</span>) → <a class="geom-fn" href="../G.81/index.html#g-81" data-ref-target="G.81" title="G.81: Any rectangular parallelogram is said to becontained by the twosegments containing theright angle.">rectangular_parallelogram_said_def</a>(<span class="geom-ref" data-ref="g1:/ B E /" title="/ B E /">/ B E /</span>, <span class="geom-ref" data-ref="g1:/ E F /" title="/ E F /">/ E F /</span>) = <a class="geom-fn" href="../G.75/index.html#g-75" data-ref-target="G.75" title="G.75: Construct a square on a given segment.">square_on_segment</a>(<span class="geom-ref" data-ref="g1:/ E H /" title="/ E H /">/ E H /</span>)</div>
+        <div class="geom-step geom-step-conclude" data-step-kind="conclude"><span class="justification geom-rule-just"><span class="geom-because">∵</span> <a class="justification-link geom-rule" href="../G.81/index.html#g-81" data-ref-target="G.81" title="G.81: Any rectangular parallelogram is said to becontained by the twosegments containing theright angle.">rectangular_parallelogram_said_def</a>, <a class="justification-link geom-rule" href="../G.16/index.html#g-16" data-ref-target="G.16" title="G.16: Things equal to the same thing are equal to one another.">equal_transitive</a></span><span class="geom-step-badge geom-badge-conclude" title="conclude">∴</span> <span class="geom-ref" data-ref="g1:/ E F /" title="/ E F /">/ E F /</span> <span class="geom-eq-ref" data-assert-equal="g1:/ E F / = g1:/ E D /" title="/ E F / = / E D /">=</span> <span class="geom-ref" data-ref="g1:/ E D /" title="/ E D /">/ E D /</span> → <span class="geom-ref" data-ref="g1:&lt; B D E C &gt;" title="&lt; B D E C &gt;">&lt; B D E C &gt;</span> = <a class="geom-fn" href="../G.81/index.html#g-81" data-ref-target="G.81" title="G.81: Any rectangular parallelogram is said to becontained by the twosegments containing theright angle.">rectangular_parallelogram_said_def</a>(<span class="geom-ref" data-ref="g1:/ B E /" title="/ B E /">/ B E /</span>, <span class="geom-ref" data-ref="g1:/ E F /" title="/ E F /">/ E F /</span>) = <a class="geom-fn" href="../G.75/index.html#g-75" data-ref-target="G.75" title="G.75: Construct a square on a given segment.">square_on_segment</a>(<span class="geom-ref" data-ref="g1:/ E H /" title="/ E H /">/ E H /</span>), <span class="geom-ref" data-ref="g1:&lt; B D E C &gt;" title="&lt; B D E C &gt;">&lt; B D E C &gt;</span> <span class="geom-eq-ref" data-assert-equal="g1:&lt; B D E C &gt; = g1:A" title="&lt; B D E C &gt; = A">=</span> <span class="geom-ref" data-ref="g1:A" title="A">A</span> → <a class="geom-fn" href="../G.75/index.html#g-75" data-ref-target="G.75" title="G.75: Construct a square on a given segment.">square_on_segment</a>(<span class="geom-ref" data-ref="g1:/ E H /" title="/ E H /">/ E H /</span>) <span class="geom-eq-ref" data-assert-equal="g1:/ E H / = g1:A" title="/ E H / = A">=</span> <span class="geom-ref" data-ref="g1:A" title="A">A</span></div>
         <section class="level-2" id="dependency-graph">
         <h2>Dependency Graph<a class="headerlink" href="#dependency-graph" title="Link to this heading">¶</a></h2>
-        <div class="graphviz"><object data="../../_images/graphviz-088a069ef556e052d052219d1fe04068f48ab6a9.svg" type="image/svg+xml" class="graphviz">
+        <div class="graphviz"><object data="../../_images/graphviz-bec3c3f34e373e3cc69105f3836ec60c47c6d8a2.svg" type="image/svg+xml" class="graphviz">
         <p class="warning">digraph {
           bgcolor=&quot;transparent&quot;;
           node [shape=box, style=&quot;rounded,filled&quot;, fontname=&quot;Helvetica&quot;, fontsize=11, color=&quot;#d6d3cd&quot;, fontcolor=&quot;#ffffff&quot;];
@@ -286,9 +269,9 @@
           &quot;G.79&quot; [label=&quot;G.79&quot;, tooltip=&quot;G.79 (I.47): In a right-angled triangle, the square on the hypotenuse equals the sum of the squares on the two legs (Pythagorean Theorem).&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.79/index.html&quot;, target=&quot;_top&quot;];
           &quot;G.81&quot; [label=&quot;G.81&quot;, tooltip=&quot;G.81 (II.def.1): Any rectangular parallelogram is said to becontained by the twosegments containing theright angle.&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.81/index.html&quot;, target=&quot;_top&quot;];
           &quot;G.86&quot; [label=&quot;G.86&quot;, tooltip=&quot;G.86 (II.def.2): And in any parallelogrammic area let any one whatever of the parallelograms about itsdiameter with the two complements be called agnomon.&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.86/index.html&quot;, target=&quot;_top&quot;];
-          &quot;G.87&quot; [label=&quot;G.87&quot;, tooltip=&quot;G.87 (II.5): If a segment be cut into equal and unequal segments, the rectangle contained by the unequal segments of the whole together with the square on the segment between the points of sect...&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.87/index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.87&quot; [label=&quot;G.87&quot;, tooltip=&quot;G.87 (II.5): If a segment is cut into equal and unequal parts, the rectangle contained by the unequal parts together with the square on the segment between the points of section equals the squa...&quot;, fillcolor=&quot;#222244&quot;, URL=&quot;../G.87/index.html&quot;, target=&quot;_top&quot;];
           &quot;G.96&quot; [label=&quot;G.96&quot;, tooltip=&quot;G.96 (I.def.18): A semicircle is the figure contained by a diameter and the arc cut off by it.&quot;, fillcolor=&quot;#224422&quot;, URL=&quot;../G.96/index.html&quot;, target=&quot;_top&quot;];
-          &quot;G.97&quot; [label=&quot;G.97&quot;, tooltip=&quot;G.97 (II.14): Construct a square equal to a given polygon.&quot;, penwidth=2.5, color=&quot;#e8b85a&quot;, fillcolor=&quot;#4a453b&quot;, URL=&quot;index.html&quot;, target=&quot;_top&quot;];
+          &quot;G.97&quot; [label=&quot;G.97&quot;, tooltip=&quot;G.97 (II.14): Construct a square equal in area to a given rectilineal figure.&quot;, penwidth=2.5, color=&quot;#e8b85a&quot;, fillcolor=&quot;#4a453b&quot;, URL=&quot;index.html&quot;, target=&quot;_top&quot;];
           &quot;G.2&quot; -&gt; &quot;G.1&quot;;
           &quot;G.3&quot; -&gt; &quot;G.1&quot;;
           &quot;G.4&quot; -&gt; &quot;G.1&quot;;
@@ -338,7 +321,6 @@
           &quot;G.56&quot; -&gt; &quot;G.2&quot;;
           &quot;G.57&quot; -&gt; &quot;G.2&quot;;
           &quot;G.58&quot; -&gt; &quot;G.2&quot;;
-          &quot;G.65&quot; -&gt; &quot;G.2&quot;;
           &quot;G.4&quot; -&gt; &quot;G.3&quot;;
           &quot;G.6&quot; -&gt; &quot;G.3&quot;;
           &quot;G.8&quot; -&gt; &quot;G.3&quot;;
@@ -410,6 +392,7 @@
           &quot;G.47&quot; -&gt; &quot;G.10&quot;;
           &quot;G.61&quot; -&gt; &quot;G.10&quot;;
           &quot;G.96&quot; -&gt; &quot;G.10&quot;;
+          &quot;G.97&quot; -&gt; &quot;G.10&quot;;
           &quot;G.15&quot; -&gt; &quot;G.11&quot;;
           &quot;G.17&quot; -&gt; &quot;G.11&quot;;
           &quot;G.20&quot; -&gt; &quot;G.11&quot;;
@@ -417,7 +400,6 @@
           &quot;G.47&quot; -&gt; &quot;G.11&quot;;
           &quot;G.61&quot; -&gt; &quot;G.11&quot;;
           &quot;G.96&quot; -&gt; &quot;G.11&quot;;
-          &quot;G.97&quot; -&gt; &quot;G.11&quot;;
           &quot;G.13&quot; -&gt; &quot;G.12&quot;;
           &quot;G.17&quot; -&gt; &quot;G.12&quot;;
           &quot;G.20&quot; -&gt; &quot;G.12&quot;;
@@ -464,6 +446,7 @@
           &quot;G.43&quot; -&gt; &quot;G.14&quot;;
           &quot;G.45&quot; -&gt; &quot;G.14&quot;;
           &quot;G.47&quot; -&gt; &quot;G.14&quot;;
+          &quot;G.48&quot; -&gt; &quot;G.14&quot;;
           &quot;G.51&quot; -&gt; &quot;G.14&quot;;
           &quot;G.58&quot; -&gt; &quot;G.14&quot;;
           &quot;G.60&quot; -&gt; &quot;G.14&quot;;
@@ -485,20 +468,30 @@
           &quot;G.37&quot; -&gt; &quot;G.16&quot;;
           &quot;G.39&quot; -&gt; &quot;G.16&quot;;
           &quot;G.40&quot; -&gt; &quot;G.16&quot;;
+          &quot;G.47&quot; -&gt; &quot;G.16&quot;;
           &quot;G.56&quot; -&gt; &quot;G.16&quot;;
           &quot;G.57&quot; -&gt; &quot;G.16&quot;;
           &quot;G.64&quot; -&gt; &quot;G.16&quot;;
           &quot;G.65&quot; -&gt; &quot;G.16&quot;;
+          &quot;G.66&quot; -&gt; &quot;G.16&quot;;
+          &quot;G.67&quot; -&gt; &quot;G.16&quot;;
+          &quot;G.70&quot; -&gt; &quot;G.16&quot;;
+          &quot;G.71&quot; -&gt; &quot;G.16&quot;;
           &quot;G.73&quot; -&gt; &quot;G.16&quot;;
           &quot;G.74&quot; -&gt; &quot;G.16&quot;;
+          &quot;G.75&quot; -&gt; &quot;G.16&quot;;
+          &quot;G.87&quot; -&gt; &quot;G.16&quot;;
+          &quot;G.97&quot; -&gt; &quot;G.16&quot;;
           &quot;G.20&quot; -&gt; &quot;G.17&quot;;
           &quot;G.31&quot; -&gt; &quot;G.17&quot;;
           &quot;G.32&quot; -&gt; &quot;G.17&quot;;
           &quot;G.34&quot; -&gt; &quot;G.17&quot;;
           &quot;G.20&quot; -&gt; &quot;G.18&quot;;
           &quot;G.25&quot; -&gt; &quot;G.18&quot;;
+          &quot;G.39&quot; -&gt; &quot;G.18&quot;;
           &quot;G.41&quot; -&gt; &quot;G.18&quot;;
           &quot;G.45&quot; -&gt; &quot;G.18&quot;;
+          &quot;G.53&quot; -&gt; &quot;G.18&quot;;
           &quot;G.58&quot; -&gt; &quot;G.18&quot;;
           &quot;G.66&quot; -&gt; &quot;G.18&quot;;
           &quot;G.67&quot; -&gt; &quot;G.18&quot;;
@@ -510,6 +503,7 @@
           &quot;G.40&quot; -&gt; &quot;G.19&quot;;
           &quot;G.64&quot; -&gt; &quot;G.19&quot;;
           &quot;G.72&quot; -&gt; &quot;G.19&quot;;
+          &quot;G.97&quot; -&gt; &quot;G.19&quot;;
           &quot;G.21&quot; -&gt; &quot;G.20&quot;;
           &quot;G.25&quot; -&gt; &quot;G.21&quot;;
           &quot;G.31&quot; -&gt; &quot;G.21&quot;;
@@ -518,6 +512,7 @@
           &quot;G.43&quot; -&gt; &quot;G.21&quot;;
           &quot;G.45&quot; -&gt; &quot;G.21&quot;;
           &quot;G.47&quot; -&gt; &quot;G.21&quot;;
+          &quot;G.51&quot; -&gt; &quot;G.21&quot;;
           &quot;G.75&quot; -&gt; &quot;G.21&quot;;
           &quot;G.97&quot; -&gt; &quot;G.21&quot;;
           &quot;G.24&quot; -&gt; &quot;G.22&quot;;
@@ -566,11 +561,15 @@
           &quot;G.64&quot; -&gt; &quot;G.24&quot;;
           &quot;G.79&quot; -&gt; &quot;G.24&quot;;
           &quot;G.28&quot; -&gt; &quot;G.25&quot;;
+          &quot;G.43&quot; -&gt; &quot;G.25&quot;;
           &quot;G.44&quot; -&gt; &quot;G.25&quot;;
           &quot;G.45&quot; -&gt; &quot;G.25&quot;;
           &quot;G.28&quot; -&gt; &quot;G.26&quot;;
+          &quot;G.39&quot; -&gt; &quot;G.26&quot;;
           &quot;G.41&quot; -&gt; &quot;G.26&quot;;
+          &quot;G.43&quot; -&gt; &quot;G.26&quot;;
           &quot;G.45&quot; -&gt; &quot;G.26&quot;;
+          &quot;G.51&quot; -&gt; &quot;G.26&quot;;
           &quot;G.29&quot; -&gt; &quot;G.28&quot;;
           &quot;G.31&quot; -&gt; &quot;G.29&quot;;
           &quot;G.34&quot; -&gt; &quot;G.29&quot;;
@@ -582,6 +581,7 @@
           &quot;G.74&quot; -&gt; &quot;G.30&quot;;
           &quot;G.32&quot; -&gt; &quot;G.31&quot;;
           &quot;G.41&quot; -&gt; &quot;G.32&quot;;
+          &quot;G.71&quot; -&gt; &quot;G.32&quot;;
           &quot;G.97&quot; -&gt; &quot;G.32&quot;;
           &quot;G.34&quot; -&gt; &quot;G.33&quot;;
           &quot;G.37&quot; -&gt; &quot;G.33&quot;;
@@ -607,6 +607,7 @@
           &quot;G.72&quot; -&gt; &quot;G.36&quot;;
           &quot;G.74&quot; -&gt; &quot;G.36&quot;;
           &quot;G.79&quot; -&gt; &quot;G.36&quot;;
+          &quot;G.87&quot; -&gt; &quot;G.36&quot;;
           &quot;G.39&quot; -&gt; &quot;G.37&quot;;
           &quot;G.40&quot; -&gt; &quot;G.37&quot;;
           &quot;G.56&quot; -&gt; &quot;G.37&quot;;
@@ -643,6 +644,7 @@
           &quot;G.74&quot; -&gt; &quot;G.52&quot;;
           &quot;G.75&quot; -&gt; &quot;G.52&quot;;
           &quot;G.79&quot; -&gt; &quot;G.52&quot;;
+          &quot;G.57&quot; -&gt; &quot;G.53&quot;;
           &quot;G.58&quot; -&gt; &quot;G.53&quot;;
           &quot;G.60&quot; -&gt; &quot;G.53&quot;;
           &quot;G.56&quot; -&gt; &quot;G.55&quot;;
@@ -701,6 +703,7 @@
           &quot;G.97&quot; -&gt; &quot;G.74&quot;;
           &quot;G.79&quot; -&gt; &quot;G.75&quot;;
           &quot;G.87&quot; -&gt; &quot;G.75&quot;;
+          &quot;G.97&quot; -&gt; &quot;G.75&quot;;
           &quot;G.78&quot; -&gt; &quot;G.76&quot;;
           &quot;G.78&quot; -&gt; &quot;G.77&quot;;
           &quot;G.79&quot; -&gt; &quot;G.78&quot;;
@@ -755,7 +758,7 @@
             <a class="book-toc-link" href="../index.html">Elements 2.0 (G Index)</a>
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="../G.98/index.html" title="G.98 find circle center"><span class="nav-label">G.98 find circle center</span> &rarr;</a>
+            <a class="book-nav-btn" href="../G.98/index.html" title="G.98 find the center of a circle"><span class="nav-label">G.98 find the center of a circle</span> &rarr;</a>
           </div>
         </div>
       </footer>

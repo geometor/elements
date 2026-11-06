@@ -1,12 +1,12 @@
 :canonical_id: G.97
 :original_id: II.14
-:title: G.97 square from polygon
+:title: G.97 construct a square equal to a polygon
 :volume: I
 :book: II
 :type: prop
 
-G.97 square from polygon — Heath
-================================
+G.97 construct a square equal to a polygon — Heath
+==================================================
 
 .. rubric:: `II.14 <https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/14/>`_
 
@@ -154,9 +154,9 @@ Dependency Graph
      "G.79" [label="G.79", tooltip="G.79 (I.47): In a right-angled triangle, the square on the hypotenuse equals the sum of the squares on the two legs (Pythagorean Theorem).", fillcolor="#222244", URL="../G.79/index.html", target="_top"];
      "G.81" [label="G.81", tooltip="G.81 (II.def.1): Any rectangular parallelogram is said to becontained by the twosegments containing theright angle.", fillcolor="#224422", URL="../G.81/index.html", target="_top"];
      "G.86" [label="G.86", tooltip="G.86 (II.def.2): And in any parallelogrammic area let any one whatever of the parallelograms about itsdiameter with the two complements be called agnomon.", fillcolor="#224422", URL="../G.86/index.html", target="_top"];
-     "G.87" [label="G.87", tooltip="G.87 (II.5): If a segment be cut into equal and unequal segments, the rectangle contained by the unequal segments of the whole together with the square on the segment between the points of sect...", fillcolor="#222244", URL="../G.87/index.html", target="_top"];
+     "G.87" [label="G.87", tooltip="G.87 (II.5): If a segment is cut into equal and unequal parts, the rectangle contained by the unequal parts together with the square on the segment between the points of section equals the squa...", fillcolor="#222244", URL="../G.87/index.html", target="_top"];
      "G.96" [label="G.96", tooltip="G.96 (I.def.18): A semicircle is the figure contained by a diameter and the arc cut off by it.", fillcolor="#224422", URL="../G.96/index.html", target="_top"];
-     "G.97" [label="G.97", tooltip="G.97 (II.14): Construct a square equal to a given polygon.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.97" [label="G.97", tooltip="G.97 (II.14): Construct a square equal in area to a given rectilineal figure.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -206,7 +206,6 @@ Dependency Graph
      "G.56" -> "G.2";
      "G.57" -> "G.2";
      "G.58" -> "G.2";
-     "G.65" -> "G.2";
      "G.4" -> "G.3";
      "G.6" -> "G.3";
      "G.8" -> "G.3";
@@ -278,6 +277,7 @@ Dependency Graph
      "G.47" -> "G.10";
      "G.61" -> "G.10";
      "G.96" -> "G.10";
+     "G.97" -> "G.10";
      "G.15" -> "G.11";
      "G.17" -> "G.11";
      "G.20" -> "G.11";
@@ -285,7 +285,6 @@ Dependency Graph
      "G.47" -> "G.11";
      "G.61" -> "G.11";
      "G.96" -> "G.11";
-     "G.97" -> "G.11";
      "G.13" -> "G.12";
      "G.17" -> "G.12";
      "G.20" -> "G.12";
@@ -332,6 +331,7 @@ Dependency Graph
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.51" -> "G.14";
      "G.58" -> "G.14";
      "G.60" -> "G.14";
@@ -353,20 +353,30 @@ Dependency Graph
      "G.37" -> "G.16";
      "G.39" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.56" -> "G.16";
      "G.57" -> "G.16";
      "G.64" -> "G.16";
      "G.65" -> "G.16";
+     "G.66" -> "G.16";
+     "G.67" -> "G.16";
+     "G.70" -> "G.16";
+     "G.71" -> "G.16";
      "G.73" -> "G.16";
      "G.74" -> "G.16";
+     "G.75" -> "G.16";
+     "G.87" -> "G.16";
+     "G.97" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
      "G.34" -> "G.17";
      "G.20" -> "G.18";
      "G.25" -> "G.18";
+     "G.39" -> "G.18";
      "G.41" -> "G.18";
      "G.45" -> "G.18";
+     "G.53" -> "G.18";
      "G.58" -> "G.18";
      "G.66" -> "G.18";
      "G.67" -> "G.18";
@@ -378,6 +388,7 @@ Dependency Graph
      "G.40" -> "G.19";
      "G.64" -> "G.19";
      "G.72" -> "G.19";
+     "G.97" -> "G.19";
      "G.21" -> "G.20";
      "G.25" -> "G.21";
      "G.31" -> "G.21";
@@ -386,6 +397,7 @@ Dependency Graph
      "G.43" -> "G.21";
      "G.45" -> "G.21";
      "G.47" -> "G.21";
+     "G.51" -> "G.21";
      "G.75" -> "G.21";
      "G.97" -> "G.21";
      "G.24" -> "G.22";
@@ -434,11 +446,15 @@ Dependency Graph
      "G.64" -> "G.24";
      "G.79" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.28" -> "G.26";
+     "G.39" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.51" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -450,6 +466,7 @@ Dependency Graph
      "G.74" -> "G.30";
      "G.32" -> "G.31";
      "G.41" -> "G.32";
+     "G.71" -> "G.32";
      "G.97" -> "G.32";
      "G.34" -> "G.33";
      "G.37" -> "G.33";
@@ -475,6 +492,7 @@ Dependency Graph
      "G.72" -> "G.36";
      "G.74" -> "G.36";
      "G.79" -> "G.36";
+     "G.87" -> "G.36";
      "G.39" -> "G.37";
      "G.40" -> "G.37";
      "G.56" -> "G.37";
@@ -511,6 +529,7 @@ Dependency Graph
      "G.74" -> "G.52";
      "G.75" -> "G.52";
      "G.79" -> "G.52";
+     "G.57" -> "G.53";
      "G.58" -> "G.53";
      "G.60" -> "G.53";
      "G.56" -> "G.55";
@@ -569,6 +588,7 @@ Dependency Graph
      "G.97" -> "G.74";
      "G.79" -> "G.75";
      "G.87" -> "G.75";
+     "G.97" -> "G.75";
      "G.78" -> "G.76";
      "G.78" -> "G.77";
      "G.79" -> "G.78";

@@ -2,7 +2,7 @@
 :number: 95
 :canonical_id: G.95
 :original_id: II.13
-:title: G.95 law of cosines acute
+:title: G.95 law of cosines for acute triangles
 :volume: I
 :book: II
 :type: prop
@@ -10,60 +10,53 @@
 :categories: theorem, proof, plane-geometry, geometric-algebra
 :category: theorem, proof, plane-geometry, geometric-algebra
 :tags: book-ii, point, segment, angle, triangle, acute-angled-triangle, square, acute-angle, contained-rectangle, straight-line, perpendicular, plane-angle, rectangle
-:dependencies: G.4, G.22, G.33, G.63, G.77, G.78, G.79, G.81, G.89
-:excerpt: In acute-angled triangles the square on the side subtending the acute angle is less than the squares on the sides containing the acute angle by twice the rectangle contained by one of the sides about the acute angle, namely that on which the perpendicular falls, and the segment cut off within by the perpendicular towards the acute angle.
+:dependencies: G.4, G.16, G.33, G.35, G.36, G.63, G.75, G.77, G.78, G.79, G.81, G.89
+:excerpt: In acute-angled triangles, the square on the side subtending an acute angle is less than the sum of the squares on the sides containing the acute angle by twice the rectangle contained by one of those sides and the projection of the other upon it.
 
 .. _G.95:
 .. _II.13:
 
-G.95 law of cosines acute
-=========================
+G.95 law of cosines for acute triangles
+=======================================
 
 .. rubric:: `II.13 <https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/13/>`_
 
 .. enunciation::
 
-   In :term:`acute-angled triangles <G.78>` the :term:`square <G.63>` on the side subtending the :term:`acute angle <G.77>` is less than the squares on the sides containing the acute angle by twice the :term:`rectangle contained <G.81>` by one of the sides about the acute angle, namely that on which the :term:`perpendicular <G.33>` falls, and the :term:`segment <G.4>` cut off within by the perpendicular towards the acute angle.
+   In :term:`acute-angled triangles <G.78>`, the :term:`square <G.63>` on the side subtending an :term:`acute angle <G.77>` is less than the sum of the squares on the sides containing the acute angle by twice the :term:`rectangle contained <G.81>` by one of those sides and the projection of the other upon it.
 
 .. signature:: theorem
 
-   | :fn:`law_of_cosines_acute <G.95>`\ ()
-   | **prove** the square on :g:`/ A C / <g1:/ A C />` < the squares on :g:`/ C B / <g1:/ C B />`, :g:`/ B A / <g1:/ B A />` by twice the rectangle contained by :g:`/ C B / <g1:/ C B />`, :g:`/ B D / <g1:/ B D />`
+   | :fn:`law_of_cosines_acute <G.95>`\ (:g:`< A B C > <g1:< A B C >>`, :g:`/ A D / <g1:/ A D />`)
+   | **given** :g:`< A B C > <g1:< A B C >>` (:g:`< A B C ) <g1:< A B C )>` < ∟), :g:`/ A D / <g1:/ A D />` ⊥ :g:`/ B C / <g1:/ B C />`
+   | **prove** :fn:`square_on_segment <G.75>`\ (:g:`/ A C / <g1:/ A C />`) + 2 :fn:`contained_rectangle <G.81>`\ (:g:`/ C B / <g1:/ C B />`, :g:`/ B D / <g1:/ B D />`) = :fn:`square_on_segment <G.75>`\ (:g:`/ C B / <g1:/ C B />`) + :fn:`square_on_segment <G.75>`\ (:g:`/ B A / <g1:/ B A />`)
 
 .. picture:: g1.svg
    :alt: Diagram
 
-.. step:: construct
+.. step:: given ∵ acute_angle_def, triangle_angles_def <G.77, G.78>
 
-   Let :g:`< A B C > <g1:< A B C >>` be an acute-angled triangle having the :term:`angle <G.22>` at :g:`< A B C ) <g1:< A B C )>` acute, and let :g:`/ A D / <g1:/ A D />` be drawn from :g:`A <g1:A>` perpendicular to :g:`/ B C / <g1:/ B C />`
+   :g:`< A B C > <g1:< A B C >>` (:g:`< A B C ) <g1:< A B C )>` < ∟)
+
+.. step:: construct ∵ perpendicular_from <G.35>
+
+   :fn:`perpendicular_from <G.35>`\ (:g:`/ B C / <g1:/ B C />`, :g:`A <g1:A>`) → :g:`/ A D / <g1:/ A D />` ⊥ :g:`/ B C / <g1:/ B C />` (:g:`< A D B ) <g1:< A D B )>` = ∟)
 
 .. step:: assert ∵ square_of_difference <G.89>
 
-   :g:`/ C B / <g1:/ C B />` has been cut at random at :g:`D <g1:D>`, the squares on :g:`/ C B / <g1:/ C B />`, :g:`/ B D / <g1:/ B D />` are equal to twice the rectangle contained by :g:`/ C B / <g1:/ C B />`, :g:`/ B D / <g1:/ B D />` and the square on :g:`/ D C / <g1:/ D C />`
+   :g:`/ C B / <g1:/ C B />` = :g:`/ B D / <g1:/ B D />` + :g:`/ D C / <g1:/ D C />` → :fn:`square_on_segment <G.75>`\ (:g:`/ C B / <g1:/ C B />`) + :fn:`square_on_segment <G.75>`\ (:g:`/ B D / <g1:/ B D />`) = 2 :fn:`rectangular_parallelogram_said_def <G.81>`\ (:g:`/ C B / <g1:/ C B />`, :g:`/ B D / <g1:/ B D />`) + :fn:`square_on_segment <G.75>`\ (:g:`/ D C / <g1:/ D C />`)
 
-.. step:: construct
+.. step:: assert ∵ add_equals <G.36>
 
-   Let the square on :g:`/ D A / <g1:/ D A />` be added to each
-
-.. step:: assert
-
-   the squares on :g:`/ C B / <g1:/ C B />`, :g:`/ B D / <g1:/ B D />`, :g:`/ D A / <g1:/ D A />` are equal to twice the rectangle contained by :g:`/ C B / <g1:/ C B />`, :g:`/ B D / <g1:/ B D />` and the squares on :g:`/ A D / <g1:/ A D />`, :g:`/ D C / <g1:/ D C />`
+   :fn:`square_on_segment <G.75>`\ (:g:`/ C B / <g1:/ C B />`) + :fn:`square_on_segment <G.75>`\ (:g:`/ B D / <g1:/ B D />`) + :fn:`square_on_segment <G.75>`\ (:g:`/ D A / <g1:/ D A />`) = 2 :fn:`rectangular_parallelogram_said_def <G.81>`\ (:g:`/ C B / <g1:/ C B />`, :g:`/ B D / <g1:/ B D />`) + :fn:`square_on_segment <G.75>`\ (:g:`/ A D / <g1:/ A D />`) + :fn:`square_on_segment <G.75>`\ (:g:`/ D C / <g1:/ D C />`)
 
 .. step:: assert ∵ pythagorean_theorem <G.79>
 
-   The square on :g:`/ A B / <g1:/ A B />` is equal to the squares on :g:`/ B D / <g1:/ B D />`, :g:`/ D A / <g1:/ D A />`, for the angle at :g:`< A D B ) <g1:< A D B )>` is right
+   :g:`< A D B ) <g1:< A D B )>` = ∟ → :fn:`square_on_segment <G.75>`\ (:g:`/ A B / <g1:/ A B />`) = :fn:`square_on_segment <G.75>`\ (:g:`/ B D / <g1:/ B D />`) + :fn:`square_on_segment <G.75>`\ (:g:`/ D A / <g1:/ D A />`), :fn:`square_on_segment <G.75>`\ (:g:`/ A C / <g1:/ A C />`) = :fn:`square_on_segment <G.75>`\ (:g:`/ A D / <g1:/ A D />`) + :fn:`square_on_segment <G.75>`\ (:g:`/ D C / <g1:/ D C />`)
 
-.. step:: assert
+.. step:: conclude ∵ equal_transitive <G.16>
 
-   the square on :g:`/ A C / <g1:/ A C />` is equal to the squares on :g:`/ A D / <g1:/ A D />`, :g:`/ D C / <g1:/ D C />`
-
-.. step:: assert
-
-   the squares on :g:`/ C B / <g1:/ C B />`, :g:`/ B A / <g1:/ B A />` are equal to the square on :g:`/ A C / <g1:/ A C />` and twice the rectangle :g:`/ C B / <g1:/ C B />`, :g:`/ B D / <g1:/ B D />`,
-
-.. step:: conclude
-
-   So that the square on :g:`/ A C / <g1:/ A C />` alone < the squares on :g:`/ C B / <g1:/ C B />`, :g:`/ B A / <g1:/ B A />` by twice the rectangle contained by :g:`/ C B / <g1:/ C B />`, :g:`/ B D / <g1:/ B D />`
+   :fn:`square_on_segment <G.75>`\ (:g:`/ C B / <g1:/ C B />`) + :fn:`square_on_segment <G.75>`\ (:g:`/ B A / <g1:/ B A />`) = :fn:`square_on_segment <G.75>`\ (:g:`/ A C / <g1:/ A C />`) + 2 :fn:`rectangular_parallelogram_said_def <G.81>`\ (:g:`/ C B / <g1:/ C B />`, :g:`/ B D / <g1:/ B D />`)
 
 Dependency Graph
 ----------------
@@ -108,6 +101,7 @@ Dependency Graph
      "G.32" [label="G.32", tooltip="G.32 (I.10): Bisect a given segment.", fillcolor="#222244", URL="../G.32/index.html", target="_top"];
      "G.33" [label="G.33", tooltip="G.33 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.33/index.html", target="_top"];
      "G.34" [label="G.34", tooltip="G.34 (I.11): Construct a segment at right angles to a given line from a given point on it.", fillcolor="#222244", URL="../G.34/index.html", target="_top"];
+     "G.35" [label="G.35", tooltip="G.35 (I.12): Construct a perpendicular to a given line from a given point not on it.", fillcolor="#222244", URL="../G.35/index.html", target="_top"];
      "G.36" [label="G.36", tooltip="G.36 (I.cn.2): If equals are added to equals, the wholes are equal.", fillcolor="#442222", URL="../G.36/index.html", target="_top"];
      "G.37" [label="G.37", tooltip="G.37 (I.13): A segment standing on a line makes either two right angles or adjacent angles summing to two right angles.", fillcolor="#222244", URL="../G.37/index.html", target="_top"];
      "G.38" [label="G.38", tooltip="G.38 (I.post.4): All right angles are equal.", fillcolor="#444422", URL="../G.38/index.html", target="_top"];
@@ -139,8 +133,8 @@ Dependency Graph
      "G.79" [label="G.79", tooltip="G.79 (I.47): In a right-angled triangle, the square on the hypotenuse equals the sum of the squares on the two legs (Pythagorean Theorem).", fillcolor="#222244", URL="../G.79/index.html", target="_top"];
      "G.81" [label="G.81", tooltip="G.81 (II.def.1): Any rectangular parallelogram is said to becontained by the twosegments containing theright angle.", fillcolor="#224422", URL="../G.81/index.html", target="_top"];
      "G.86" [label="G.86", tooltip="G.86 (II.def.2): And in any parallelogrammic area let any one whatever of the parallelograms about itsdiameter with the two complements be called agnomon.", fillcolor="#224422", URL="../G.86/index.html", target="_top"];
-     "G.89" [label="G.89", tooltip="G.89 (II.7): If a segment be cut at random, the square on the whole and that on one of the segments both together are equal to twice the rectangle contained by the whole and the said segment an...", fillcolor="#222244", URL="../G.89/index.html", target="_top"];
-     "G.95" [label="G.95", tooltip="G.95 (II.13): In acute-angled triangles the square on the side subtending the acute angle is less than the squares on the sides containing the acute angle by twice the rectangle contained by one...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.89" [label="G.89", tooltip="G.89 (II.7): If a segment is cut at random, the sum of the squares on the whole and on one of the parts equals twice the rectangle contained by the whole and that part together with the square ...", fillcolor="#222244", URL="../G.89/index.html", target="_top"];
+     "G.95" [label="G.95", tooltip="G.95 (II.13): In acute-angled triangles, the square on the side subtending an acute angle is less than the sum of the squares on the sides containing the acute angle by twice the rectangle conta...", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -158,6 +152,7 @@ Dependency Graph
      "G.31" -> "G.1";
      "G.32" -> "G.1";
      "G.34" -> "G.1";
+     "G.35" -> "G.1";
      "G.37" -> "G.1";
      "G.39" -> "G.1";
      "G.40" -> "G.1";
@@ -176,6 +171,7 @@ Dependency Graph
      "G.30" -> "G.2";
      "G.33" -> "G.2";
      "G.34" -> "G.2";
+     "G.35" -> "G.2";
      "G.37" -> "G.2";
      "G.39" -> "G.2";
      "G.40" -> "G.2";
@@ -210,6 +206,7 @@ Dependency Graph
      "G.32" -> "G.4";
      "G.33" -> "G.4";
      "G.34" -> "G.4";
+     "G.35" -> "G.4";
      "G.37" -> "G.4";
      "G.39" -> "G.4";
      "G.40" -> "G.4";
@@ -244,12 +241,14 @@ Dependency Graph
      "G.17" -> "G.10";
      "G.20" -> "G.10";
      "G.21" -> "G.10";
+     "G.35" -> "G.10";
      "G.47" -> "G.10";
      "G.61" -> "G.10";
      "G.15" -> "G.11";
      "G.17" -> "G.11";
      "G.20" -> "G.11";
      "G.21" -> "G.11";
+     "G.35" -> "G.11";
      "G.47" -> "G.11";
      "G.61" -> "G.11";
      "G.13" -> "G.12";
@@ -288,10 +287,12 @@ Dependency Graph
      "G.28" -> "G.14";
      "G.31" -> "G.14";
      "G.34" -> "G.14";
+     "G.35" -> "G.14";
      "G.41" -> "G.14";
      "G.43" -> "G.14";
      "G.45" -> "G.14";
      "G.47" -> "G.14";
+     "G.48" -> "G.14";
      "G.51" -> "G.14";
      "G.58" -> "G.14";
      "G.70" -> "G.14";
@@ -299,6 +300,7 @@ Dependency Graph
      "G.17" -> "G.15";
      "G.20" -> "G.15";
      "G.21" -> "G.15";
+     "G.35" -> "G.15";
      "G.47" -> "G.15";
      "G.17" -> "G.16";
      "G.20" -> "G.16";
@@ -306,16 +308,23 @@ Dependency Graph
      "G.37" -> "G.16";
      "G.39" -> "G.16";
      "G.40" -> "G.16";
+     "G.47" -> "G.16";
      "G.56" -> "G.16";
      "G.64" -> "G.16";
+     "G.66" -> "G.16";
+     "G.70" -> "G.16";
+     "G.75" -> "G.16";
+     "G.95" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
      "G.34" -> "G.17";
      "G.20" -> "G.18";
      "G.25" -> "G.18";
+     "G.39" -> "G.18";
      "G.41" -> "G.18";
      "G.45" -> "G.18";
+     "G.53" -> "G.18";
      "G.58" -> "G.18";
      "G.66" -> "G.18";
      "G.20" -> "G.19";
@@ -332,6 +341,7 @@ Dependency Graph
      "G.43" -> "G.21";
      "G.45" -> "G.21";
      "G.47" -> "G.21";
+     "G.51" -> "G.21";
      "G.75" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
@@ -342,6 +352,7 @@ Dependency Graph
      "G.32" -> "G.22";
      "G.33" -> "G.22";
      "G.34" -> "G.22";
+     "G.35" -> "G.22";
      "G.37" -> "G.22";
      "G.39" -> "G.22";
      "G.40" -> "G.22";
@@ -363,7 +374,6 @@ Dependency Graph
      "G.77" -> "G.22";
      "G.78" -> "G.22";
      "G.79" -> "G.22";
-     "G.95" -> "G.22";
      "G.24" -> "G.23";
      "G.29" -> "G.23";
      "G.25" -> "G.24";
@@ -374,20 +384,27 @@ Dependency Graph
      "G.64" -> "G.24";
      "G.79" -> "G.24";
      "G.28" -> "G.25";
+     "G.43" -> "G.25";
      "G.44" -> "G.25";
      "G.45" -> "G.25";
      "G.28" -> "G.26";
+     "G.39" -> "G.26";
      "G.41" -> "G.26";
+     "G.43" -> "G.26";
      "G.45" -> "G.26";
+     "G.51" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
+     "G.35" -> "G.29";
      "G.48" -> "G.29";
      "G.31" -> "G.30";
      "G.48" -> "G.30";
      "G.32" -> "G.31";
+     "G.35" -> "G.32";
      "G.41" -> "G.32";
      "G.34" -> "G.33";
+     "G.35" -> "G.33";
      "G.37" -> "G.33";
      "G.38" -> "G.33";
      "G.39" -> "G.33";
@@ -403,12 +420,15 @@ Dependency Graph
      "G.95" -> "G.33";
      "G.37" -> "G.34";
      "G.75" -> "G.34";
+     "G.95" -> "G.35";
      "G.37" -> "G.36";
      "G.56" -> "G.36";
      "G.62" -> "G.36";
      "G.64" -> "G.36";
      "G.72" -> "G.36";
      "G.79" -> "G.36";
+     "G.89" -> "G.36";
+     "G.95" -> "G.36";
      "G.39" -> "G.37";
      "G.40" -> "G.37";
      "G.56" -> "G.37";
@@ -464,6 +484,7 @@ Dependency Graph
      "G.89" -> "G.72";
      "G.79" -> "G.75";
      "G.89" -> "G.75";
+     "G.95" -> "G.75";
      "G.78" -> "G.76";
      "G.78" -> "G.77";
      "G.95" -> "G.77";

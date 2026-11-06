@@ -2,7 +2,7 @@
 :number: 101
 :canonical_id: G.101
 :original_id: III.4
-:title: G.101 circle segments cut
+:title: G.101 intersecting chords not through the center do not bisect
 :volume: II
 :book: III
 :type: prop
@@ -10,77 +10,53 @@
 :categories: theorem, proof, plane-geometry, circles
 :category: theorem, proof, plane-geometry, circles
 :tags: book-iii, point, segment, circle, angle, straight-line, centre, right-angle, plane-angle, bisect, equality, reductio-ad-absurdum
-:dependencies: G.4, G.10, G.11, G.14, G.33, G.98, G.100
-:excerpt: If in a circle two segments cut one another which are not through the center, they do not bisect one another.
+:dependencies: G.4, G.10, G.11, G.14, G.26, G.38, G.98, G.100
+:excerpt: In a circle, two intersecting chords that do not both pass through the center do not bisect one another.
 
 .. _G.101:
 .. _III.4:
 
-G.101 circle segments cut
-=========================
+G.101 intersecting chords not through the center do not bisect
+==============================================================
 
 .. rubric:: `III.4 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/04/>`_
 
 .. enunciation::
 
-   If in a :term:`circle <G.10>` two :term:`segments <G.4>` cut one another which are not through the :term:`center <G.11>`, they do not bisect one another.
+   In a :term:`circle <G.10>`, two intersecting chords that do not both pass through the :term:`center <G.11>` do not bisect one another.
 
 .. signature:: theorem
 
-   | :fn:`circle_segments_cut <G.101>`\ (:g:`( A B C D ) <g1:( A B C D )>`, :g:`/ A C / <g1:/ A C />`, :g:`/ B D / <g1:/ B D />`, :g:`E <g1:E>`)
-   | **given** :g:`( A B C D ) <g1:( A B C D )>` be a circle, in it let :g:`/ A C / <g1:/ A C />`, :g:`/ B D / <g1:/ B D />`, which are not through the center, cut one another at :g:`E <g1:E>`
-   | **prove** they do not bisect one another
+   | :fn:`chords_not_bisecting <G.101>`\ (:g:`( A B C D ) <g1:( A B C D )>`, :g:`/ A C / <g1:/ A C />`, :g:`/ B D / <g1:/ B D />`, :g:`E <g1:E>`)
+   | **given** :g:`( A B C D ) <g1:( A B C D )>`, non-central chords :g:`/ A C / <g1:/ A C />`, :g:`/ B D / <g1:/ B D />` (:g:`E <g1:E>` = :g:`/ A C / <g1:/ A C />` ∩ :g:`/ B D / <g1:/ B D />`)
+   | **prove** ¬(:g:`/ A E / <g1:/ A E />` = :g:`/ E C / <g1:/ E C />` ∧ :g:`/ B E / <g1:/ B E />` = :g:`/ E D / <g1:/ E D />`)
 
 .. picture:: g1.svg
    :alt: Proposition 4
 
-.. step:: given
+.. step:: given ∵ circle_radii <G.10>
 
-   :g:`( A B C D ) <g1:( A B C D )>` be a circle, in it let :g:`/ A C / <g1:/ A C />`, :g:`/ B D / <g1:/ B D />`, which are not through the center, cut one another at :g:`E <g1:E>`
+   :g:`( A B C D ) <g1:( A B C D )>`, chords :g:`/ A C / <g1:/ A C />`, :g:`/ B D / <g1:/ B D />` not through center, :g:`E <g1:E>` = :g:`/ A C / <g1:/ A C />` ∩ :g:`/ B D / <g1:/ B D />`
 
-.. step:: assert
+.. step:: construct ∵ find_circle_center, segment <G.98, G.14>
 
-   If possible, let them :eq:`bisect <g1:/ A E / = g1:/ E C /; g1:/ B E / = g1:/ E D />` one another, so that :g:`/ A E / <g1:/ A E />` :eq:`= <g1:/ A E / = g1:/ E C /; g1:/ B E / = g1:/ E D />` :g:`/ E C / <g1:/ E C />`, and :g:`/ B E / <g1:/ B E />` to :g:`/ E D / <g1:/ E D />`
+   Suppose :g:`/ A E / <g1:/ A E />` :eq:`= <g1:/ A E / = g1:/ E C />` :g:`/ E C / <g1:/ E C />` and :g:`/ B E / <g1:/ B E />` :eq:`= <g1:/ B E / = g1:/ E D />` :g:`/ E D / <g1:/ E D />`; :fn:`find_circle_center <G.98>`\ (:g:`( A B C D ) <g1:( A B C D )>`) → :g:`F <g1:F>`, :fn:`segment <G.14>`\ (:g:`F <g1:F>`, :g:`E <g1:E>`) → :g:`/ F E / <g1:/ F E />`
 
-.. step:: construct
+.. step:: assert ∵ diameter_bisects_chord_perpendicular <G.100>
 
-   :fn:`find_circle_center <G.98>`: Let the center of :g:`( A B C D ) <g1:( A B C D )>` be taken
+   :g:`/ F E / <g1:/ F E />` through center bisects :g:`/ A C / <g1:/ A C />` (:g:`/ A E / <g1:/ A E />` :eq:`= <g1:/ A E / = g1:/ E C />` :g:`/ E C / <g1:/ E C />`) → :g:`< F E A ) <g1:< F E A )>` is right
 
-.. step:: assert
+.. step:: assert ∵ diameter_bisects_chord_perpendicular <G.100>
 
-   Let it be :g:`F <g1:F>`
+   :g:`/ F E / <g1:/ F E />` through center bisects :g:`/ B D / <g1:/ B D />` (:g:`/ B E / <g1:/ B E />` :eq:`= <g1:/ B E / = g1:/ E D />` :g:`/ E D / <g1:/ E D />`) → :g:`< F E B ) <g1:< F E B )>` is right
 
-.. step:: construct
+.. step:: assert ∵ right_angles_equal, whole_greater_than_part <G.38, G.26>
 
-   :fn:`segment <G.14>`\ (:g:`F <g1:F>`, :g:`E <g1:E>`) → :g:`/ F E / <g1:/ F E />`
-
-.. step:: assert ∵ circle_segment_center <G.100>
-
-   a segment :g:`/ F E / <g1:/ F E />` through the center :eq:`bisects <g1:/ A E / = g1:/ E C />` a segment :g:`/ A C / <g1:/ A C />` not through the center → it also cuts it :term:`at right angles <G.33>`
-
-.. step:: assert
-
-   :g:`< F E A ) <g1:< F E A )>` is right
-
-.. step:: assert ∵ circle_segment_center <G.100>
-
-   a segment :g:`/ F E / <g1:/ F E />` :eq:`bisects <g1:/ B E / = g1:/ E D />` a segment :g:`/ B D / <g1:/ B D />` → it also cuts it at right angles
-
-.. step:: assert
-
-   :g:`< F E B ) <g1:< F E B )>` is right
-
-.. step:: assert
-
-   :g:`< F E A ) <g1:< F E A )>` was also proved right
-
-.. step:: assert
-
-   :g:`< F E A ) <g1:< F E A )>` :eq:`= <g1:< F E A ) = g1:< F E B )>` :g:`< F E B ) <g1:< F E B )>`, < > ⇒⇐
+   :g:`< F E A ) <g1:< F E A )>` :eq:`= <g1:< F E A ) = g1:< F E B )>` :g:`< F E B ) <g1:< F E B )>`, the less to the greater ⇒⇐
 
 .. step:: conclude
 
-   :g:`/ A C / <g1:/ A C />`, :g:`/ B D / <g1:/ B D />` do not bisect one another
+   :g:`/ A C / <g1:/ A C />` and :g:`/ B D / <g1:/ B D />` do not bisect one another
 
 Dependency Graph
 ----------------
@@ -132,8 +108,8 @@ Dependency Graph
      "G.41" [label="G.41", tooltip="G.41 (I.16): In any triangle, if one side is extended, the exterior angle is greater than either opposite interior angle.", fillcolor="#222244", URL="../G.41/index.html", target="_top"];
      "G.51" [label="G.51", tooltip="G.51 (I.26): Triangles with two angles and one corresponding side equal are congruent (ASA / AAS).", fillcolor="#222244", URL="../G.51/index.html", target="_top"];
      "G.98" [label="G.98", tooltip="G.98 (III.1): Find the center of a given circle.", fillcolor="#222244", URL="../G.98/index.html", target="_top"];
-     "G.100" [label="G.100", tooltip="G.100 (III.3): If in a circle a segment through the center bisect a segment not through the center, it also cuts it at right angles; and if it cut it at right angles, it also bisects it.", fillcolor="#222244", URL="../G.100/index.html", target="_top"];
-     "G.101" [label="G.101", tooltip="G.101 (III.4): If in a circle two segments cut one another which are not through the center, they do not bisect one another.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.100" [label="G.100", tooltip="G.100 (III.3): A segment through the center of a circle bisects a chord not through the center if and only if it cuts the chord at right angles.", fillcolor="#222244", URL="../G.100/index.html", target="_top"];
+     "G.101" [label="G.101", tooltip="G.101 (III.4): In a circle, two intersecting chords that do not both pass through the center do not bisect one another.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -153,7 +129,6 @@ Dependency Graph
      "G.34" -> "G.1";
      "G.37" -> "G.1";
      "G.40" -> "G.1";
-     "G.98" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
      "G.6" -> "G.2";
@@ -231,7 +206,6 @@ Dependency Graph
      "G.34" -> "G.12";
      "G.41" -> "G.12";
      "G.51" -> "G.12";
-     "G.100" -> "G.12";
      "G.17" -> "G.13";
      "G.25" -> "G.13";
      "G.17" -> "G.14";
@@ -242,6 +216,7 @@ Dependency Graph
      "G.34" -> "G.14";
      "G.41" -> "G.14";
      "G.51" -> "G.14";
+     "G.98" -> "G.14";
      "G.100" -> "G.14";
      "G.101" -> "G.14";
      "G.17" -> "G.15";
@@ -267,6 +242,7 @@ Dependency Graph
      "G.31" -> "G.21";
      "G.34" -> "G.21";
      "G.41" -> "G.21";
+     "G.51" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
      "G.28" -> "G.22";
@@ -280,7 +256,6 @@ Dependency Graph
      "G.40" -> "G.22";
      "G.41" -> "G.22";
      "G.51" -> "G.22";
-     "G.98" -> "G.22";
      "G.100" -> "G.22";
      "G.24" -> "G.23";
      "G.29" -> "G.23";
@@ -292,6 +267,9 @@ Dependency Graph
      "G.100" -> "G.25";
      "G.28" -> "G.26";
      "G.41" -> "G.26";
+     "G.51" -> "G.26";
+     "G.98" -> "G.26";
+     "G.101" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
      "G.34" -> "G.29";
@@ -307,11 +285,12 @@ Dependency Graph
      "G.40" -> "G.33";
      "G.98" -> "G.33";
      "G.100" -> "G.33";
-     "G.101" -> "G.33";
      "G.37" -> "G.34";
+     "G.98" -> "G.34";
      "G.37" -> "G.36";
      "G.40" -> "G.37";
      "G.40" -> "G.38";
+     "G.101" -> "G.38";
      "G.41" -> "G.40";
      "G.51" -> "G.41";
      "G.100" -> "G.51";

@@ -10,8 +10,9 @@
 :categories: theorem, proof, plane-geometry
 :category: theorem, proof, plane-geometry
 :tags: book-i, point, segment, angle, triangle, straight-line, plane-angle, parallel-straight-lines, trilateral, parallel, plane, equality, reductio-ad-absurdum
-:dependencies: G.2, G.4, G.12, G.22, G.41, G.52
+:dependencies: G.2, G.4, G.12, G.18, G.22, G.41, G.52
 :excerpt: If a transversal cutting two lines makes the alternate interior angles equal, the lines are parallel.
+:youtube_id: ul73yfZKrDg
 
 .. _G.53:
 .. _I.27:
@@ -27,47 +28,32 @@ G.53 equal alternate interior angles imply parallel lines
 
 .. signature:: theorem
 
-   | :fn:`alternate_angles_parallel <G.53>`\ ()
-   | **prove** :g:`/ A B / <g1:/ A B />` is parallel to :g:`/ C D / <g1:/ C D />`
+   | :fn:`alternate_angles_parallel <G.53>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`, :g:`/ E F / <g1:/ E F />`)
+   | **given** :g:`/ E F / <g1:/ E F />` ∩ :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` (:g:`< A E F ) <g1:< A E F )>` :eq:`= <g1:< A E F ) = g1:< E F D )>` :g:`< E F D ) <g1:< E F D )>`)
+   | **prove** :g:`/ A B / <g1:/ A B />` ∥ :g:`/ C D / <g1:/ C D />`
 
 .. picture:: g1.svg
    :alt: Folio 0321 Figure 1 - Proposition 27
 
-.. step:: assert
+.. step:: given
 
-   Let :g:`/ E F / <g1:/ E F />` falling on :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` make the alternate angles :g:`< A E F ) <g1:< A E F )>`, :g:`< E F D ) <g1:< E F D )>` :eq:`= <g1:< A E F ) = g1:< E F D )>` to one another
-
-.. step:: assert
-
-   If not, :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` when produced will meet either in the direction of :g:`B <g1:B>`, :g:`D <g1:D>` or towards :g:`A <g1:A>`, :g:`C <g1:C>`
+   :g:`/ E F / <g1:/ E F />` ∩ :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` (:g:`< A E F ) <g1:< A E F )>` :eq:`= <g1:< A E F ) = g1:< E F D )>` :g:`< E F D ) <g1:< E F D )>`)
 
 .. step:: construct
 
-   Let them be produced and meet, in the direction of :g:`B <g1:B>`, :g:`D <g1:D>`, at :g:`G <g1:G>`.
+   ? ¬(:g:`/ A B / <g1:/ A B />` ∥ :g:`/ C D / <g1:/ C D />`) → :fn:`extend <G.18>`\ (:g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />`) → :g:`[ A B ] <g1:[ A B ]>` ∩ :g:`[ C D ] <g1:[ C D ]>` → :g:`G <g1:G>`
 
 .. step:: assert
 
-   In :g:`< G E F > <g1:< G E F >>`, the exterior angle :g:`< A E F ) <g1:< A E F )>` :eq:`= <g1:< A E F ) = g1:< E F G )>` the interior and opposite angle :g:`< E F G ) <g1:< E F G )>`:
+   :g:`< G E F > <g1:< G E F >>` → :g:`< A E F ) <g1:< A E F )>` :eq:`= <g1:< A E F ) = g1:< E F G )>` :g:`< E F G ) <g1:< E F G )>`
 
 .. step:: assert ∵ exterior_angle_greater <G.41>
 
-   ⇒⇐
+   :g:`< G E F > <g1:< G E F >>` → :g:`< A E F ) <g1:< A E F )>` > :g:`< E F G ) <g1:< E F G )>` ⇒⇐ → :g:`[ A B ] <g1:[ A B ]>` ∩ :g:`[ C D ] <g1:[ C D ]>` = ∅
 
-.. step:: assert
+.. step:: conclude ∵ parallel_lines_def <G.52>
 
-   :g:`/ A B / <g1:/ A B />`, :g:`/ C D / <g1:/ C D />` when produced will not meet in the direction of :g:`B <g1:B>`, :g:`D <g1:D>`
-
-.. step:: assert
-
-   Similarly it can be proved that neither will they meet towards :g:`A <g1:A>`, :g:`C <g1:C>`
-
-.. step:: assert ∵ parallel_lines_def <G.52>
-
-   :term:`Segments <G.4>` which do not meet in either direction are parallel
-
-.. step:: conclude
-
-   :g:`/ A B / <g1:/ A B />` is parallel to :g:`/ C D / <g1:/ C D />`
+   :g:`/ A B / <g1:/ A B />` ∥ :g:`/ C D / <g1:/ C D />`
 
 Dependency Graph
 ----------------
@@ -235,6 +221,7 @@ Dependency Graph
      "G.20" -> "G.18";
      "G.25" -> "G.18";
      "G.41" -> "G.18";
+     "G.53" -> "G.18";
      "G.20" -> "G.19";
      "G.25" -> "G.19";
      "G.40" -> "G.19";
@@ -291,5 +278,6 @@ Required for
 .. toctree::
    :hidden:
 
+   video
    code
    heath

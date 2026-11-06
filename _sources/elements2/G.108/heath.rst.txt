@@ -1,12 +1,12 @@
 :canonical_id: G.108
 :original_id: III.10
-:title: G.108 circle cut circle
+:title: G.108 two circles intersect in at most two points
 :volume: II
 :book: III
 :type: prop
 
-G.108 circle cut circle — Heath
-===============================
+G.108 two circles intersect in at most two points — Heath
+=========================================================
 
 .. rubric:: `III.10 <https://geometor.github.io/euclid/heath/volume_II/book_iii/propositions/10/>`_
 
@@ -89,9 +89,10 @@ Dependency Graph
      "G.31" [label="G.31", tooltip="G.31 (I.9): Bisect a given angle.", fillcolor="#222244", URL="../G.31/index.html", target="_top"];
      "G.32" [label="G.32", tooltip="G.32 (I.10): Bisect a given segment.", fillcolor="#222244", URL="../G.32/index.html", target="_top"];
      "G.33" [label="G.33", tooltip="G.33 (I.def.10): When a segment standing on a line makes the adjacent angles equal, each of the equal angles is a right angle, and the standing segment is perpendicular to the line.", fillcolor="#224422", URL="../G.33/index.html", target="_top"];
+     "G.34" [label="G.34", tooltip="G.34 (I.11): Construct a segment at right angles to a given line from a given point on it.", fillcolor="#222244", URL="../G.34/index.html", target="_top"];
      "G.98" [label="G.98", tooltip="G.98 (III.1): Find the center of a given circle.", fillcolor="#222244", URL="../G.98/index.html", target="_top"];
-     "G.102" [label="G.102", tooltip="G.102 (III.5): If two circles cut one another, they will not have the same center.", fillcolor="#222244", URL="../G.102/index.html", target="_top"];
-     "G.108" [label="G.108", tooltip="G.108 (III.10): A circle does not cut a circle at more points than two.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
+     "G.102" [label="G.102", tooltip="G.102 (III.5): Two intersecting circles do not have the same center.", fillcolor="#222244", URL="../G.102/index.html", target="_top"];
+     "G.108" [label="G.108", tooltip="G.108 (III.10): A circle does not intersect another circle at more than two points.", penwidth=2.5, color="#e8b85a", fillcolor="#4a453b", URL="index.html", target="_top"];
      "G.2" -> "G.1";
      "G.3" -> "G.1";
      "G.4" -> "G.1";
@@ -108,7 +109,7 @@ Dependency Graph
      "G.29" -> "G.1";
      "G.31" -> "G.1";
      "G.32" -> "G.1";
-     "G.98" -> "G.1";
+     "G.34" -> "G.1";
      "G.108" -> "G.1";
      "G.3" -> "G.2";
      "G.4" -> "G.2";
@@ -118,6 +119,7 @@ Dependency Graph
      "G.22" -> "G.2";
      "G.30" -> "G.2";
      "G.33" -> "G.2";
+     "G.34" -> "G.2";
      "G.4" -> "G.3";
      "G.6" -> "G.3";
      "G.8" -> "G.3";
@@ -142,8 +144,8 @@ Dependency Graph
      "G.31" -> "G.4";
      "G.32" -> "G.4";
      "G.33" -> "G.4";
+     "G.34" -> "G.4";
      "G.98" -> "G.4";
-     "G.108" -> "G.4";
      "G.6" -> "G.5";
      "G.7" -> "G.5";
      "G.10" -> "G.6";
@@ -176,6 +178,7 @@ Dependency Graph
      "G.29" -> "G.12";
      "G.31" -> "G.12";
      "G.32" -> "G.12";
+     "G.34" -> "G.12";
      "G.17" -> "G.13";
      "G.25" -> "G.13";
      "G.17" -> "G.14";
@@ -183,23 +186,30 @@ Dependency Graph
      "G.25" -> "G.14";
      "G.28" -> "G.14";
      "G.31" -> "G.14";
+     "G.34" -> "G.14";
+     "G.98" -> "G.14";
      "G.102" -> "G.14";
+     "G.108" -> "G.14";
      "G.17" -> "G.15";
      "G.20" -> "G.15";
      "G.21" -> "G.15";
      "G.17" -> "G.16";
      "G.20" -> "G.16";
      "G.21" -> "G.16";
+     "G.102" -> "G.16";
      "G.20" -> "G.17";
      "G.31" -> "G.17";
      "G.32" -> "G.17";
+     "G.34" -> "G.17";
      "G.20" -> "G.18";
      "G.25" -> "G.18";
+     "G.108" -> "G.18";
      "G.20" -> "G.19";
      "G.25" -> "G.19";
      "G.21" -> "G.20";
      "G.25" -> "G.21";
      "G.31" -> "G.21";
+     "G.34" -> "G.21";
      "G.24" -> "G.22";
      "G.25" -> "G.22";
      "G.28" -> "G.22";
@@ -208,21 +218,27 @@ Dependency Graph
      "G.31" -> "G.22";
      "G.32" -> "G.22";
      "G.33" -> "G.22";
-     "G.98" -> "G.22";
+     "G.34" -> "G.22";
      "G.24" -> "G.23";
      "G.29" -> "G.23";
      "G.25" -> "G.24";
      "G.32" -> "G.24";
      "G.28" -> "G.25";
      "G.28" -> "G.26";
+     "G.98" -> "G.26";
+     "G.102" -> "G.26";
      "G.29" -> "G.28";
      "G.31" -> "G.29";
+     "G.34" -> "G.29";
      "G.98" -> "G.29";
      "G.31" -> "G.30";
      "G.32" -> "G.31";
      "G.98" -> "G.32";
+     "G.108" -> "G.32";
+     "G.34" -> "G.33";
      "G.98" -> "G.33";
-     "G.108" -> "G.33";
+     "G.98" -> "G.34";
+     "G.108" -> "G.34";
      "G.108" -> "G.98";
      "G.108" -> "G.102";
    }
