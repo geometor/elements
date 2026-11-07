@@ -14,8 +14,8 @@ from pathlib import Path
 import subprocess
 import sys
 
-SPEAK_PY = Path("/home/phi/.gemini/config/skills/dialogue/scripts/speak.py")
-SHORTS_PY = Path("/home/phi/.gemini/config/skills/shorts/scripts/shorts.py")
+SPEAK_PY = Path("/home/phi/.gemini/config/skills/studio/scripts/speak.py")
+SHORTS_PY = Path("/home/phi/.gemini/config/skills/studio/scripts/shorts.py")
 
 
 def infer_prefix(prop_dir: Path) -> str:
