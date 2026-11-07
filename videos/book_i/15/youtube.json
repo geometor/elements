@@ -1,0 +1,63 @@
+{
+  "prop_id": "BOOK I \u2022 PROP. 15",
+  "short_code": "I.15",
+  "g_id": "G.40",
+  "version": 2,
+  "enunciation": "If two straight lines cut one another, they make the vertical angles equal to one another.",
+  "title_1080p": "I.15 \u2022 vertical angles are equal \u2022 Euclid's Elements",
+  "title_short": "I.15 \u2022 vertical angles are equal \u2022 Euclid's Elements",
+  "description": "\u201cIf two straight lines cut one another, they make the vertical angles equal to one another.\u201d\n\u2014 Euclid's Elements, BOOK I \u2022 PROP. 15 (G.40)\n\n00:00 1 \u00b7 INTERSECT: / A B / \u2229 / C D / \u2192 E\n00:17 2 \u00b7 ASSERT: / A E / on / C D / \u2192 \u27e8 C E A ) + \u27e8 A E D ) = 2\u221f\n00:25 3 \u00b7 ASSERT: / D E / on / A B / \u2192 \u27e8 A E D ) + \u27e8 D E B ) = 2\u221f\n00:34 4 \u00b7 ASSERT: \u27e8 C E A ) + \u27e8 A E D ) = \u27e8 A E D ) + \u27e8 D E B )\n00:42 5 \u00b7 ASSERT: \u27e8 C E A ) = \u27e8 B E D )\n00:50 6 \u00b7 \u2234: \u2234 \u27e8 A E C ) = \u27e8 D E B ), \u27e8 C E B ) = \u27e8 A E D )\n\nGEOMETOR \u2022 G.40 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid I.15",
+    "G.40",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/15/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.40/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/videos/book_i/15/I_15_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/videos/book_i/15/I_15_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/videos/book_i/15/I_15.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/videos/book_i/15/I_15_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/videos/book_i/15/I_15_short_thumb.png"
+  },
+  "uploads": {
+    "wide_1080p": {
+      "version": 2,
+      "video_id": "nFrx20yWwJs",
+      "url": "https://youtu.be/nFrx20yWwJs",
+      "studio_url": "https://studio.youtube.com/video/nFrx20yWwJs/edit",
+      "caption_id": "AUieDaY-LKyawarwLJNt-Ikysp458BQbNZ6FcVujXw6rdBKHQwCXLQ5_",
+      "playlist_id": "PLUXlBs_QySgw",
+      "playlist_item_id": "UExVWGxCc19ReVNndy5CMEQ2Mjk5NTc3NDZFRUNB",
+      "privacyStatus": "public",
+      "uploaded_at": "2026-11-04T15:01:44.198546+00:00",
+      "published_at": "2026-11-04T15:08:57.536354+00:00",
+      "thumbnail_set": true
+    },
+    "short": {
+      "version": 2,
+      "video_id": "iFQD7IShwSY",
+      "url": "https://youtube.com/shorts/iFQD7IShwSY",
+      "studio_url": "https://studio.youtube.com/video/iFQD7IShwSY/edit",
+      "caption_id": "AUieDaYIOrWbVDKrXCfjWjU1xR6uX1uATn_6uzw9fZgh2BJ0lCnDVoDa",
+      "playlist_id": "PLTJvna-1hErU",
+      "playlist_item_id": "UExUSnZuYS0xaEVyVS45NzUwQkI1M0UxNThBMkU0",
+      "privacyStatus": "public",
+      "uploaded_at": "2026-11-04T15:08:40.763707+00:00",
+      "published_at": "2026-11-04T15:09:21.289871+00:00",
+      "thumbnail_set": true,
+      "updated_at": "2026-11-06T11:23:39.668000+00:00"
+    }
+  },
+  "history": {}
+}

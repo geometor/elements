@@ -1,0 +1,61 @@
+{
+  "voice_id": "voice_xdhacg1pn1cq",
+  "audio_wav": "/home/phi/PROJECTS/geometor/elements/videos/book_i/45/I_45.wav",
+  "total_duration_sec": 127.26,
+  "segments": [
+    {
+      "index": 0,
+      "bell": "bell:proposition",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Euclid's Elements, Book One, Proposition Forty-Five. Construct, in a given angle, a parallelogram equal in area to a given polygon. Let A B C D be the given polygon and E the given rectilineal angle. We construct a parallelogram equal in area to polygon A B C D in an angle equal to E.",
+      "start_sec": 0.0,
+      "end_sec": 20.41,
+      "duration_sec": 20.41,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Euclid's Elements, Book One, Proposition Forty-Five. Construct, in a given angle, a parallelogram equal in area to a given polygon. Let A B C D be the given polygon and E the given rectilineal angle. We construct a parallelogram equal in area to polygon A B C D in an angle equal to E.",
+          "start_sec": 0.0,
+          "end_sec": 20.41,
+          "duration_sec": 20.41
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "bell": "bell:construction",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Construct segment D B, dividing polygon A B C D into triangles A B D and D B C. By Proposition Forty-Two, construct parallelogram F K H G equal in area to triangle A B D in angle H K F equal to angle E. Then, by Proposition Forty-Four, apply to segment G H parallelogram G H M L equal in area to triangle D B C in angle G H M equal to angle E.",
+      "start_sec": 20.41,
+      "end_sec": 44.48,
+      "duration_sec": 24.07,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Construct segment D B, dividing polygon A B C D into triangles A B D and D B C. By Proposition Forty-Two, construct parallelogram F K H G equal in area to triangle A B D in angle H K F equal to angle E. Then, by Proposition Forty-Four, apply to segment G H parallelogram G H M L equal in area to triangle D B C in angle G H M equal to angle E.",
+          "start_sec": 20.41,
+          "end_sec": 44.48,
+          "duration_sec": 24.07
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "bell": "bell:insight",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Since angle E equals both angle H K F and angle G H M, angle H K F equals angle G H M. Add angle K H G to each; then angles F K H and K H G equal angles K H G and G H M. By Proposition Twenty-Nine, interior angles F K H and K H G between parallels F K and G H sum to two right angles, so angles K H G and G H M also sum to two right angles; thus by Proposition Fourteen, K H and H M form a single straight segment K M. Again, since transversal H G cuts parallels K M and F G, alternate angles M H G and H G F are equal. Add angle H G L to each; since interior angles M H G and H G L sum to two right angles, angles H G F and H G L also sum to two right angles, so F G and G L form a single straight segment F L. Because F K and M L are each equal and parallel to H G, they are equal and parallel to one another, and segments K M and F L joining their extremities are also equal and parallel, making K F L M a parallelogram. Finally, since triangle A B D equals parallelogram F K H G and triangle D B C equals parallelogram G H M L, the whole polygon A B C D equals the whole parallelogram K F L M in angle F K M equal to angle E, as was required to do.",
+      "start_sec": 44.48,
+      "end_sec": 127.26,
+      "duration_sec": 82.78,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Since angle E equals both angle H K F and angle G H M, angle H K F equals angle G H M. Add angle K H G to each; then angles F K H and K H G equal angles K H G and G H M. By Proposition Twenty-Nine, interior angles F K H and K H G between parallels F K and G H sum to two right angles, so angles K H G and G H M also sum to two right angles; thus by Proposition Fourteen, K H and H M form a single straight segment K M. Again, since transversal H G cuts parallels K M and F G, alternate angles M H G and H G F are equal. Add angle H G L to each; since interior angles M H G and H G L sum to two right angles, angles H G F and H G L also sum to two right angles, so F G and G L form a single straight segment F L. Because F K and M L are each equal and parallel to H G, they are equal and parallel to one another, and segments K M and F L joining their extremities are also equal and parallel, making K F L M a parallelogram. Finally, since triangle A B D equals parallelogram F K H G and triangle D B C equals parallelogram G H M L, the whole polygon A B C D equals the whole parallelogram K F L M in angle F K M equal to angle E, as was required to do.",
+          "start_sec": 44.48,
+          "end_sec": 127.26,
+          "duration_sec": 82.78
+        }
+      ]
+    }
+  ]
+}

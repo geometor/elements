@@ -1,0 +1,61 @@
+{
+  "voice_id": "voice_xdhacg1pn1cq",
+  "audio_wav": "/home/phi/PROJECTS/geometor/elements/videos/book_i/29/I_29.wav",
+  "total_duration_sec": 96.66,
+  "segments": [
+    {
+      "index": 0,
+      "bell": "bell:proposition",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Euclid's Elements, Book One, Proposition Twenty-Nine. A transversal cutting parallel lines makes the alternate interior angles equal, the exterior angle equal to the opposite interior angle, and the interior angles on the same side supplementary. Let segment E F fall on parallel segments A B and C D at points G and H. We prove that alternate angles A G H and G H D are equal, exterior angle E G B equals interior angle G H D, and interior angles B G H and G H D sum to two right angles.",
+      "start_sec": 0.0,
+      "end_sec": 32.21,
+      "duration_sec": 32.21,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Euclid's Elements, Book One, Proposition Twenty-Nine. A transversal cutting parallel lines makes the alternate interior angles equal, the exterior angle equal to the opposite interior angle, and the interior angles on the same side supplementary. Let segment E F fall on parallel segments A B and C D at points G and H. We prove that alternate angles A G H and G H D are equal, exterior angle E G B equals interior angle G H D, and interior angles B G H and G H D sum to two right angles.",
+          "start_sec": 0.0,
+          "end_sec": 32.21,
+          "duration_sec": 32.21
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "bell": "bell:construction",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Suppose angle A G H is not equal to angle G H D, and let angle A G H be greater. Adding angle B G H to each, the sum of angles A G H and B G H is greater than the sum of angles B G H and G H D. By Proposition Thirteen, adjacent angles A G H and B G H equal two right angles, so angles B G H and G H D sum to less than two right angles. By Postulate Five, lines extended from interior angles summing to less than two right angles must meet, contradicting that segments A B and C D are parallel. Thus alternate angles A G H and G H D are equal.",
+      "start_sec": 32.21,
+      "end_sec": 62.96,
+      "duration_sec": 30.75,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Suppose angle A G H is not equal to angle G H D, and let angle A G H be greater. Adding angle B G H to each, the sum of angles A G H and B G H is greater than the sum of angles B G H and G H D. By Proposition Thirteen, adjacent angles A G H and B G H equal two right angles, so angles B G H and G H D sum to less than two right angles. By Postulate Five, lines extended from interior angles summing to less than two right angles must meet, contradicting that segments A B and C D are parallel. Thus alternate angles A G H and G H D are equal.",
+          "start_sec": 32.21,
+          "end_sec": 62.96,
+          "duration_sec": 30.75
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "bell": "bell:insight",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Again, by Proposition Fifteen, vertical angles A G H and E G B are equal. By Common Notion One, exterior angle E G B also equals interior angle G H D. Adding angle B G H to each by Common Notion Two, the sum of angles E G B and B G H equals the sum of angles B G H and G H D. Since adjacent angles E G B and B G H equal two right angles by Proposition Thirteen, interior angles B G H and G H D also equal two right angles, as was required to prove.",
+      "start_sec": 62.96,
+      "end_sec": 96.66,
+      "duration_sec": 33.7,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Again, by Proposition Fifteen, vertical angles A G H and E G B are equal. By Common Notion One, exterior angle E G B also equals interior angle G H D. Adding angle B G H to each by Common Notion Two, the sum of angles E G B and B G H equals the sum of angles B G H and G H D. Since adjacent angles E G B and B G H equal two right angles by Proposition Thirteen, interior angles B G H and G H D also equal two right angles, as was required to prove.",
+          "start_sec": 62.96,
+          "end_sec": 96.66,
+          "duration_sec": 33.7
+        }
+      ]
+    }
+  ]
+}

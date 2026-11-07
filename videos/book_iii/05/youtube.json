@@ -1,0 +1,33 @@
+{
+  "prop_id": "BOOK III \u2022 PROP. 5",
+  "short_code": "III.5",
+  "g_id": "G.102",
+  "version": 2,
+  "enunciation": "If two circles cut one another, they will not have the same centre.",
+  "title_1080p": "III.5 \u2022 intersecting circles have distinct centers \u2022 Euclid's Elements",
+  "title_short": "III.5 \u2022 intersecting circles have distinct centers \u2022 Euclid's Elements",
+  "description": "\u201cIf two circles cut one another, they will not have the same centre.\u201d\n\u2014 Euclid's Elements, BOOK III \u2022 PROP. 5 (G.102)\n\n00:00 1 \u00b7 GIVEN: circles ( A B C ) and ( C D G ) cutting at B, C\n00:12 2 \u00b7 CONSTRUCT: suppose common center E; join / E C / and draw / E F G /\n00:27 3 \u00b7 ASSERT: E center of ( A B C ) \u2192 / E C / = / E F /\n00:35 4 \u00b7 ASSERT: E center of ( C D G ) \u2192 / E C / = / E G /\n00:43 5 \u00b7 ASSERT: / E F / = / E G / (less = greater) \u21d2\u21d0\n00:51 6 \u00b7 \u2234: circles ( A B C ) and ( C D G ) do not have the same center\n00:58 7 \u00b7 COMMENTARY: unifying III.5 (cutting circles) and III.6 (touching circles)\n01:15 8 \u00b7 GENEALOGY: G.102 dependency tree & symbolic model\n01:31 9 \u00b7 PARTICIPATE: explore the GEOMETOR Elements Codex & participate\n\nExplore the interactive Book Codex, symbolic model, and dependency tree:\n\u2022 Elements Codex (G.102): https://geometor.github.io/elements/elements2/G.102/\n\u2022 Heath Edition (III.5): https://geometor.github.io/euclid/heath/volume_I/book_iii/propositions/05/\n\u2022 GitHub: https://github.com/geometor/elements\n\nGEOMETOR \u2022 G.102 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid III.5",
+    "G.102",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_iii/propositions/05/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.102/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/videos/book_iii/05/III_05_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/videos/book_iii/05/III_05_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/videos/book_iii/05/III_05.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/videos/book_iii/05/III_05_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/videos/book_iii/05/III_05_short_thumb.png"
+  }
+}

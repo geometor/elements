@@ -1,0 +1,97 @@
+{
+  "voice_id": "voice_xdhacg1pn1cq",
+  "audio_wav": "/home/phi/PROJECTS/geometor/elements/videos/book_ii/14/II_14.wav",
+  "total_duration_sec": 150.66,
+  "segments": [
+    {
+      "index": 0,
+      "bell": "bell:proposition",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: brisk, clear, architectural voice; steady studio cadence] Book Two, Proposition Fourteen. To construct a square equal to a given rectilineal figure. Let A be the given rectilineal figure; it is required to construct a square equal to A.",
+      "start_sec": 0.0,
+      "end_sec": 12.61,
+      "duration_sec": 12.61,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: brisk, clear, architectural voice; steady studio cadence] Book Two, Proposition Fourteen. To construct a square equal to a given rectilineal figure. Let A be the given rectilineal figure; it is required to construct a square equal to A.",
+          "start_sec": 0.0,
+          "end_sec": 12.61,
+          "duration_sec": 12.61
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "bell": "bell:construction",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: methodical, precise constructive cadence] By One Forty-Five, construct the rectangular parallelogram B D E C equal to the rectilineal figure A. If B E equals E D, B D E C is already a square; if not, let B E be greater, extend B E to F, and cut off E F equal to E D by One Three. Bisect B F at G by One Ten. With center G and radius G B or G F, describe the semicircle B H F; extend D E to meet the semicircle at H, and join G H.",
+      "start_sec": 12.61,
+      "end_sec": 43.36,
+      "duration_sec": 30.75,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: methodical, precise constructive cadence] By One Forty-Five, construct the rectangular parallelogram B D E C equal to the rectilineal figure A. If B E equals E D, B D E C is already a square; if not, let B E be greater, extend B E to F, and cut off E F equal to E D by One Three. Bisect B F at G by One Ten. With center G and radius G B or G F, describe the semicircle B H F; extend D E to meet the semicircle at H, and join G H.",
+          "start_sec": 12.61,
+          "end_sec": 43.36,
+          "duration_sec": 30.75
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "bell": "bell:insight",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: luminous, deductive geometric clarity] Because the segment B F is cut into equal segments at G and unequal segments at E, by Two Five the rectangle contained by B E and E F together with the square on E G equals the square on G F, and therefore equals the square on radius G H. By the Pythagorean Theorem, One Forty-Seven, on right triangle G E H, the squares on E H and E G also equal the square on G H. Subtracting the common square on E G leaves the rectangle contained by B E and E F equal to the square on E H. Since E F equals E D, the rectangle contained by B E and E F is the rectangle B D E C, which equals A. Therefore, the square described on E H equals the given rectilineal figure A. Which was to be done.",
+      "start_sec": 43.36,
+      "end_sec": 94.14,
+      "duration_sec": 50.78,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: luminous, deductive geometric clarity] Because the segment B F is cut into equal segments at G and unequal segments at E, by Two Five the rectangle contained by B E and E F together with the square on E G equals the square on G F, and therefore equals the square on radius G H. By the Pythagorean Theorem, One Forty-Seven, on right triangle G E H, the squares on E H and E G also equal the square on G H. Subtracting the common square on E G leaves the rectangle contained by B E and E F equal to the square on E H. Since E F equals E D, the rectangle contained by B E and E F is the rectangle B D E C, which equals A. Therefore, the square described on E H equals the given rectilineal figure A. Which was to be done.",
+          "start_sec": 43.36,
+          "end_sec": 94.14,
+          "duration_sec": 50.78
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "bell": "bell:system",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: reflective, scholarly, architectural synthesis] Proposition Two Fourteen crowns Book Two, completing the quadrature of any polygon and extracting the geometric mean\u2014x squared equals a b\u2014entirely through Book One and Two area transformations, before Book Six introduces proportions. As Heath notes, Aristotle cited this very construction in De Anima as discovering the cause of squaring an oblong through the mean proportional. In the GEOMETOR G-Index, node G ninety-seven unites twelve direct rules across sixty-four ancestor nodes, fusing One Forty-Five, One Forty-Seven, and Two Five into a single constructive algorithm.",
+      "start_sec": 94.14,
+      "end_sec": 130.6,
+      "duration_sec": 36.46,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: reflective, scholarly, architectural synthesis] Proposition Two Fourteen crowns Book Two, completing the quadrature of any polygon and extracting the geometric mean\u2014x squared equals a b\u2014entirely through Book One and Two area transformations, before Book Six introduces proportions. As Heath notes, Aristotle cited this very construction in De Anima as discovering the cause of squaring an oblong through the mean proportional. In the GEOMETOR G-Index, node G ninety-seven unites twelve direct rules across sixty-four ancestor nodes, fusing One Forty-Five, One Forty-Seven, and Two Five into a single constructive algorithm.",
+          "start_sec": 94.14,
+          "end_sec": 130.6,
+          "duration_sec": 36.46
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "bell": "bell:resolve",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: warm, inviting, resonant studio close] You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Two Fourteen in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.",
+      "start_sec": 130.6,
+      "end_sec": 150.66,
+      "duration_sec": 20.06,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: warm, inviting, resonant studio close] You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Two Fourteen in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.",
+          "start_sec": 130.6,
+          "end_sec": 150.66,
+          "duration_sec": 20.06
+        }
+      ]
+    }
+  ]
+}

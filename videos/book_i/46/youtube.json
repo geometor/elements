@@ -1,0 +1,64 @@
+{
+  "prop_id": "BOOK I \u2022 PROP. 46",
+  "short_code": "I.46",
+  "g_id": "G.75",
+  "version": 2,
+  "enunciation": "On a given straight line to describe a square.",
+  "title_1080p": "I.46 \u2022 on a given straight line to describe a square \u2022 Euclid's Elements",
+  "title_short": "I.46 \u2022 on a given straight line to describe a square \u2022 Euclid's Elements",
+  "description": "\u201cOn a given straight line to describe a square.\u201d\n\u2014 Euclid's Elements, BOOK I \u2022 PROP. 46 (G.75)\n\n00:00 1 \u00b7 GIVEN: / A B /\n00:11 2 \u00b7 CONSTRUCT: perpendicular_at(/ A B /, A) \u2192 / A C / \u22a5 / A B /, cut_equal_segment(/ A C /, / A B /) \u2192 / A D / = / A B /\n00:21 3 \u00b7 CONSTRUCT: parallel_line(D, / A B /) \u2192 / D E / \u2225 / A B /, parallel_line(B, / A D /) \u2192 / B E / \u2225 / A D / \u2192 \u27e8 A D E B \u27e9\n00:31 4 \u00b7 ASSERT: / A B / = / D E /, / A D / = / B E /, / A B / = / A D / \u2192 / B A / = / A D / = / D E / = / E B /\n00:47 5 \u00b7 ASSERT: \u27e8 B A D ) + \u27e8 A D E ) = 2\u221f, \u27e8 B A D ) = \u221f \u2192 \u27e8 B A D ) = \u27e8 A D E ) = \u27e8 A B E ) = \u27e8 B E D ) = \u221f\n01:03 6 \u00b7 \u2234: / B A / = / A D / = / D E / = / E B /, \u27e8 B A D ) = \u27e8 A D E ) = \u27e8 A B E ) = \u27e8 B E D ) = \u221f \u2192 \u27e8 A D E B \u27e9\n\nGEOMETOR \u2022 G.75 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid I.46",
+    "G.75",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/46/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.75/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/videos/book_i/46/I_46_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/videos/book_i/46/I_46_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/videos/book_i/46/I_46.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/videos/book_i/46/I_46_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/videos/book_i/46/I_46_short_thumb.png"
+  },
+  "uploads": {
+    "wide_1080p": {
+      "version": 2,
+      "video_id": "LAWqbbTl7ms",
+      "url": "https://youtu.be/LAWqbbTl7ms",
+      "studio_url": "https://studio.youtube.com/video/LAWqbbTl7ms/edit",
+      "caption_id": null,
+      "playlist_id": "PLUXlBs_QySgw",
+      "playlist_item_id": "UExVWGxCc19ReVNndy5CNTZFOTNGQzZEODg1RUQx",
+      "privacyStatus": "private",
+      "publishAt": "2026-11-09T20:00:00Z",
+      "uploaded_at": "2026-11-05T17:06:48.300582+00:00",
+      "thumbnail_set": true,
+      "updated_at": "2026-11-06T08:09:59.597466+00:00"
+    },
+    "short": {
+      "version": 2,
+      "video_id": "m6hPINuPGGI",
+      "url": "https://youtube.com/shorts/m6hPINuPGGI",
+      "studio_url": "https://studio.youtube.com/video/m6hPINuPGGI/edit",
+      "caption_id": null,
+      "playlist_id": "PLTJvna-1hErU",
+      "playlist_item_id": "UExUSnZuYS0xaEVyVS41NTZEOThBNThFOUVGQkVB",
+      "privacyStatus": "private",
+      "publishAt": "2026-11-09T20:00:00Z",
+      "uploaded_at": "2026-11-05T17:07:24.219309+00:00",
+      "thumbnail_set": true,
+      "updated_at": "2026-11-06T08:10:04.393276+00:00"
+    }
+  },
+  "history": {}
+}

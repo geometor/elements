@@ -1,0 +1,63 @@
+{
+  "prop_id": "BOOK I \u2022 PROP. 9",
+  "short_code": "I.9",
+  "g_id": "G.31",
+  "version": 2,
+  "enunciation": "To bisect a given rectilineal angle.",
+  "title_1080p": "I.9 \u2022 bisect an angle \u2022 Euclid's Elements",
+  "title_short": "I.9 \u2022 bisect an angle \u2022 Euclid's Elements",
+  "description": "\u201cTo bisect a given rectilineal angle.\u201d\n\u2014 Euclid's Elements, BOOK I \u2022 PROP. 9 (G.31)\n\n00:00 1 \u00b7 GIVEN: angle BAC\n00:03 2 \u00b7 GOAL: bisector AF of angle BAC\n00:07 3 \u00b7 CONSTRUCT: point D on AB and AE = AD on AC\n00:14 4 \u00b7 CONSTRUCT: segment DE\n00:18 5 \u00b7 CONSTRUCT: equilateral triangle DEF\n00:22 6 \u00b7 CONSTRUCT: segment AF\n00:27 7 \u00b7 ASSERT: three pairs of equal sides in DAF and EAF\n00:38 8 \u00b7 \u2234: angle DAF = angle EAF\n\nGEOMETOR \u2022 G.31 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid I.9",
+    "G.31",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/09/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.31/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/videos/book_i/09/I_09_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/videos/book_i/09/I_09_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/videos/book_i/09/I_09.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/videos/book_i/09/I_09_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/videos/book_i/09/I_09_short_thumb.png"
+  },
+  "uploads": {
+    "wide_1080p": {
+      "version": 2,
+      "video_id": "0gvTcszVB9U",
+      "url": "https://youtu.be/0gvTcszVB9U",
+      "studio_url": "https://studio.youtube.com/video/0gvTcszVB9U/edit",
+      "caption_id": null,
+      "playlist_id": "PLUXlBs_QySgw",
+      "playlist_item_id": "UExVWGxCc19ReVNndy4yQUE2Q0JEMTk4NTM3RTZC",
+      "privacyStatus": "public",
+      "uploaded_at": "2026-11-03T02:57:17.065417+00:00",
+      "published_at": "2026-11-03T03:11:16.339115+00:00",
+      "thumbnail_set": true
+    },
+    "short": {
+      "version": 2,
+      "video_id": "hmbWR1WLg9c",
+      "url": "https://youtube.com/shorts/hmbWR1WLg9c",
+      "studio_url": "https://studio.youtube.com/video/hmbWR1WLg9c/edit",
+      "caption_id": null,
+      "playlist_id": "PLTJvna-1hErU",
+      "playlist_item_id": "UExUSnZuYS0xaEVyVS41QTY1Q0UxMTVCODczNThE",
+      "privacyStatus": "public",
+      "uploaded_at": "2026-11-03T02:58:12.704016+00:00",
+      "published_at": "2026-11-03T03:11:17.648288+00:00",
+      "thumbnail_set": true,
+      "updated_at": "2026-11-06T11:23:04.231643+00:00"
+    }
+  },
+  "history": {}
+}

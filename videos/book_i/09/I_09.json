@@ -1,0 +1,61 @@
+{
+  "voice_id": "voice_xdhacg1pn1cq",
+  "audio_wav": "/home/phi/PROJECTS/geometor/euclid/videos/book_i/09/I_09.wav",
+  "total_duration_sec": 49.06,
+  "segments": [
+    {
+      "index": 0,
+      "bell": "bell:proposition",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Euclid's Elements, Book One, Proposition Nine. Bisect a given angle. Given angle B A C, we are to bisect it.",
+      "start_sec": 0.0,
+      "end_sec": 7.89,
+      "duration_sec": 7.89,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Euclid's Elements, Book One, Proposition Nine. Bisect a given angle. Given angle B A C, we are to bisect it.",
+          "start_sec": 0.0,
+          "end_sec": 7.89,
+          "duration_sec": 7.89
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "bell": "bell:construction",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Take a point D on segment A B. From segment A C, cut off segment A E equal to segment A D. Construct segment D E between points D and E. On segment D E, construct the equilateral triangle D E F. Next, construct segment A F from vertex A to point F.",
+      "start_sec": 7.89,
+      "end_sec": 27.04,
+      "duration_sec": 19.15,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Take a point D on segment A B. From segment A C, cut off segment A E equal to segment A D. Construct segment D E between points D and E. On segment D E, construct the equilateral triangle D E F. Next, construct segment A F from vertex A to point F.",
+          "start_sec": 7.89,
+          "end_sec": 27.04,
+          "duration_sec": 19.15
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "bell": "bell:insight",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "In triangles D A F and E A F, side D A equals side E A, segment A F is common, and base D F equals base E F from our equilateral triangle. Since all three pairs of corresponding sides are equal, angle D A F equals angle E A F. Therefore angle B A C has been bisected by segment A F, as was required to do.",
+      "start_sec": 27.04,
+      "end_sec": 49.06,
+      "duration_sec": 22.02,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "In triangles D A F and E A F, side D A equals side E A, segment A F is common, and base D F equals base E F from our equilateral triangle. Since all three pairs of corresponding sides are equal, angle D A F equals angle E A F. Therefore angle B A C has been bisected by segment A F, as was required to do.",
+          "start_sec": 27.04,
+          "end_sec": 49.06,
+          "duration_sec": 22.02
+        }
+      ]
+    }
+  ]
+}

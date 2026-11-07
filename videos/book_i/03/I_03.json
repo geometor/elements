@@ -1,0 +1,61 @@
+{
+  "voice_id": "voice_xdhacg1pn1cq",
+  "audio_wav": "/home/phi/PROJECTS/geometor/euclid/videos/book_i/03/I_03.wav",
+  "total_duration_sec": 48.74,
+  "segments": [
+    {
+      "index": 0,
+      "bell": "bell:proposition",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Euclid's Elements, Book One, Proposition Three. Cut off from the greater of two unequal segments a segment equal to the less. Given two unequal segments A B and C, where A B is greater, we are to cut off from A B a segment equal to C.",
+      "start_sec": 0.0,
+      "end_sec": 15.05,
+      "duration_sec": 15.05,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Euclid's Elements, Book One, Proposition Three. Cut off from the greater of two unequal segments a segment equal to the less. Given two unequal segments A B and C, where A B is greater, we are to cut off from A B a segment equal to C.",
+          "start_sec": 0.0,
+          "end_sec": 15.05,
+          "duration_sec": 15.05
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "bell": "bell:construction",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "At point A, construct segment A D equal to segment C. Next, construct circle A D, with center A and defining radius point D, intersecting segment A B at point E.",
+      "start_sec": 15.05,
+      "end_sec": 26.52,
+      "duration_sec": 11.47,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "At point A, construct segment A D equal to segment C. Next, construct circle A D, with center A and defining radius point D, intersecting segment A B at point E.",
+          "start_sec": 15.05,
+          "end_sec": 26.52,
+          "duration_sec": 11.47
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "bell": "bell:insight",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Since A is the center of circle A D, segment A E equals segment A D. And segment C also equals segment A D by construction. Because both A E and C equal A D, things equal to the same thing are equal to one another. Therefore segment A E has been cut off from the greater segment A B equal to the lesser segment C, as was required to do.",
+      "start_sec": 26.52,
+      "end_sec": 48.74,
+      "duration_sec": 22.22,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Since A is the center of circle A D, segment A E equals segment A D. And segment C also equals segment A D by construction. Because both A E and C equal A D, things equal to the same thing are equal to one another. Therefore segment A E has been cut off from the greater segment A B equal to the lesser segment C, as was required to do.",
+          "start_sec": 26.52,
+          "end_sec": 48.74,
+          "duration_sec": 22.22
+        }
+      ]
+    }
+  ]
+}

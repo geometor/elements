@@ -1,0 +1,64 @@
+{
+  "prop_id": "BOOK I \u2022 PROP. 47",
+  "short_code": "I.47",
+  "g_id": "G.79",
+  "version": 2,
+  "enunciation": "In right-angled triangles the square on the side subtending the right angle is equal to the squares on the sides containing the right angle.",
+  "title_1080p": "I.47 \u2022 in right-angled triangles the square on the side subtending the right angle is equal to th...",
+  "title_short": "I.47 \u2022 in right-angled triangles the square on the side subtending the right angle is equal to th...",
+  "description": "\u201cIn right-angled triangles the square on the side subtending the right angle is equal to the squares on the sides containing the right angle.\u201d\n\u2014 Euclid's Elements, BOOK I \u2022 PROP. 47 (G.79)\n\n00:00 1 \u00b7 GIVEN: \u27e8 A B C \u27e9 (\u27e8 B A C ) = \u221f)\n00:18 2 \u00b7 CONSTRUCT: square_on_segment(/ B C /, / B A /, / A C /) \u2192 \u27e8 B D E C \u27e9, \u27e8 G B \u27e9, \u27e8 H C \u27e9\n00:30 3 \u00b7 CONSTRUCT: parallel_line(A, / B D /) \u2192 / A L / \u2225 / B D /, segment(A, D; F, C; A, E; B, K) \u2192 / A D /, / F C /, / A E /, / B K /\n00:43 4 \u00b7 ASSERT: \u27e8 B A C ) + \u27e8 B A G ) = 2\u221f \u2192 / C A /, / A G / \u2208 [ C G ], / B A /, / A H / \u2208 [ B H ]\n00:59 5 \u00b7 ASSERT: / D B / = / B C /, / F B / = / B A /, \u27e8 D B A ) = \u27e8 F B C ) \u2192 \u27e8 A B D \u27e9 = \u27e8 F B C \u27e9\n01:15 6 \u00b7 ASSERT: \u27e8 B L \u27e9 = 2 \u27e8 A B D \u27e9, \u27e8 G B \u27e9 = 2 \u27e8 F B C \u27e9 \u2192 \u27e8 B L \u27e9 = \u27e8 G B \u27e9, \u27e8 C L \u27e9 = \u27e8 H C \u27e9\n01:31 7 \u00b7 \u2234: \u27e8 B D E C \u27e9 = \u27e8 G B \u27e9 + \u27e8 H C \u27e9\n\nGEOMETOR \u2022 G.79 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid I.47",
+    "G.79",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/47/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.79/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/videos/book_i/47/I_47_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/videos/book_i/47/I_47_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/videos/book_i/47/I_47.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/videos/book_i/47/I_47_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/videos/book_i/47/I_47_short_thumb.png"
+  },
+  "uploads": {
+    "wide_1080p": {
+      "version": 2,
+      "video_id": "ClCEc3RCGNI",
+      "url": "https://youtu.be/ClCEc3RCGNI",
+      "studio_url": "https://studio.youtube.com/video/ClCEc3RCGNI/edit",
+      "caption_id": null,
+      "playlist_id": "PLUXlBs_QySgw",
+      "playlist_item_id": "UExVWGxCc19ReVNndy5CNTcxMDQ0NThBNzMxODYz",
+      "privacyStatus": "private",
+      "publishAt": "2026-11-10T00:00:00Z",
+      "uploaded_at": "2026-11-05T17:09:14.716857+00:00",
+      "thumbnail_set": true,
+      "updated_at": "2026-11-06T08:10:08.266806+00:00"
+    },
+    "short": {
+      "version": 2,
+      "video_id": "p1Na2m6nYt4",
+      "url": "https://youtube.com/shorts/p1Na2m6nYt4",
+      "studio_url": "https://studio.youtube.com/video/p1Na2m6nYt4/edit",
+      "caption_id": null,
+      "playlist_id": "PLTJvna-1hErU",
+      "playlist_item_id": "UExUSnZuYS0xaEVyVS43NERCMDIzQzFBMERCMEE3",
+      "privacyStatus": "private",
+      "publishAt": "2026-11-10T00:00:00Z",
+      "uploaded_at": "2026-11-05T17:10:37.322001+00:00",
+      "thumbnail_set": true,
+      "updated_at": "2026-11-06T08:10:12.668707+00:00"
+    }
+  },
+  "history": {}
+}

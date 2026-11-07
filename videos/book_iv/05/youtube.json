@@ -1,0 +1,33 @@
+{
+  "prop_id": "BOOK IV \u2022 PROP. 5",
+  "short_code": "IV.5",
+  "g_id": "G.157",
+  "version": 2,
+  "enunciation": "About a given triangle to circumscribe a circle.",
+  "title_1080p": "IV.5 \u2022 circumscribe circle about triangle \u2022 Euclid's Elements",
+  "title_short": "IV.5 \u2022 circumscribe circle about triangle \u2022 Euclid's Elements",
+  "description": "\u201cAbout a given triangle to circumscribe a circle.\u201d\n\u2014 Euclid's Elements, BOOK IV \u2022 PROP. 5 (G.157)\n\n00:00 1 \u00b7 GIVEN: given triangle \u27e8 A B C \u27e9 (three cases)\n00:11 2 \u00b7 CONSTRUCT: perpendicular bisectors / D F / \u22a5 / A B /, / E F / \u22a5 / A C /\n00:22 3 \u00b7 CONSTRUCT: join / F A /, / F B /, / F C / in all three cases\n00:32 4 \u00b7 ASSERT: SAS on / A B /: / A F / = / F B /\n00:45 5 \u00b7 ASSERT: SAS on / A C /: / F A / = / F B / = / F C /\n00:58 6 \u00b7 \u2234: circle ( A B C ) circumscribed about \u27e8 A B C \u27e9\n01:11 7 \u00b7 COMMENTARY: Simson, Todhunter & the three circumcenter cases\n01:31 8 \u00b7 GENEALOGY: G.157 dependency tree & symbolic model\n01:51 9 \u00b7 PARTICIPATE: explore the GEOMETOR Elements Codex & participate\n\nExplore the interactive Book Codex, symbolic model, and dependency tree:\n\u2022 Elements Codex (G.157): https://geometor.github.io/elements/elements2/G.157/\n\u2022 Heath Edition (IV.5): https://geometor.github.io/euclid/heath/volume_I/book_iv/propositions/05/\n\u2022 GitHub: https://github.com/geometor/elements\n\nGEOMETOR \u2022 G.157 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid IV.5",
+    "G.157",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_iv/propositions/05/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.157/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/videos/book_iv/05/IV_05_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/videos/book_iv/05/IV_05_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/videos/book_iv/05/IV_05.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/videos/book_iv/05/IV_05_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/videos/book_iv/05/IV_05_short_thumb.png"
+  }
+}

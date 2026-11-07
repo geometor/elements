@@ -1,0 +1,61 @@
+{
+  "voice_id": "voice_xdhacg1pn1cq",
+  "audio_wav": "/home/phi/PROJECTS/geometor/euclid/videos/book_i/01/I_01.wav",
+  "total_duration_sec": 48.22,
+  "segments": [
+    {
+      "index": 0,
+      "bell": "bell:proposition",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Euclid's Elements, Book One, Proposition One. Construct an equilateral triangle on a given segment. Given segment A B, we are to construct an equilateral triangle on it.",
+      "start_sec": 0.0,
+      "end_sec": 10.57,
+      "duration_sec": 10.57,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Euclid's Elements, Book One, Proposition One. Construct an equilateral triangle on a given segment. Given segment A B, we are to construct an equilateral triangle on it.",
+          "start_sec": 0.0,
+          "end_sec": 10.57,
+          "duration_sec": 10.57
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "bell": "bell:construction",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Construct circle A B, with center A and defining radius point B. Then construct circle B A, with center B and defining radius point A. From point C, where the circles intersect, construct segments C A and C B.",
+      "start_sec": 10.57,
+      "end_sec": 24.88,
+      "duration_sec": 14.31,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Construct circle A B, with center A and defining radius point B. Then construct circle B A, with center B and defining radius point A. From point C, where the circles intersect, construct segments C A and C B.",
+          "start_sec": 10.57,
+          "end_sec": 24.88,
+          "duration_sec": 14.31
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "bell": "bell:insight",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Since A is the center of circle A B, segment A C equals segment A B. Since B is the center of circle B A, segment B C equals segment B A. By Common Notion One, things equal to the same thing are equal to one another, so A C, A B, and B C are all equal. Therefore triangle A B C is equilateral, and has been constructed on the given segment A B, as was required to do.",
+      "start_sec": 24.88,
+      "end_sec": 48.22,
+      "duration_sec": 23.34,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Since A is the center of circle A B, segment A C equals segment A B. Since B is the center of circle B A, segment B C equals segment B A. By Common Notion One, things equal to the same thing are equal to one another, so A C, A B, and B C are all equal. Therefore triangle A B C is equilateral, and has been constructed on the given segment A B, as was required to do.",
+          "start_sec": 24.88,
+          "end_sec": 48.22,
+          "duration_sec": 23.34
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "prop_id": "BOOK I \u2022 PROP. 23",
+  "short_code": "I.23",
+  "g_id": "G.48",
+  "version": 2,
+  "enunciation": "On a given straight line and at a point on it to construct a rectilineal angle equal to a given rectilineal angle.",
+  "title_1080p": "I.23 \u2022 on a given straight line and at a point on it to construct a rectilineal angle equal to a ...",
+  "title_short": "I.23 \u2022 on a given straight line and at a point on it to construct a rectilineal angle equal to a ...",
+  "description": "\u201cOn a given straight line and at a point on it to construct a rectilineal angle equal to a given rectilineal angle.\u201d\n\u2014 Euclid's Elements, BOOK I \u2022 PROP. 23 (G.48)\n\n00:00 1 \u00b7 GIVEN: given / A B /, A \u2208 / A B /, \u27e8 D C E )\n00:17 2 \u00b7 CONSTRUCT: point([ C D ], [ C E ]) \u2192 D, E, segment(D, E) \u2192 / D E /\n00:27 3 \u00b7 CONSTRUCT: triangle_from_segments(/ C D /, / D E /, / C E /) \u2192 \u27e8 A F G \u27e9 (/ C D / = / A F /, / C E / = / A G /, / D E / = / F G /)\n00:37 4 \u00b7 ASSERT: / D C / = / F A /, / C E / = / A G /, / D E / = / F G / \u2192 \u27e8 D C E ) = \u27e8 F A G )\n00:49 5 \u00b7 \u2234: \u27e8 F A G ) = \u27e8 D C E )\n\nGEOMETOR \u2022 G.48 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid I.23",
+    "G.48",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/23/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.48/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/videos/book_i/23/I_23_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/videos/book_i/23/I_23_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/videos/book_i/23/I_23.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/videos/book_i/23/I_23_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/videos/book_i/23/I_23_short_thumb.png"
+  },
+  "uploads": {
+    "wide_1080p": {
+      "version": 2,
+      "video_id": "PXTtjt-JxQk",
+      "url": "https://youtu.be/PXTtjt-JxQk",
+      "studio_url": "https://studio.youtube.com/video/PXTtjt-JxQk/edit",
+      "caption_id": "AUieDaY1nbf4jvryIW07XH6WHNLIBNGgi08ChJQB52X9e3vLh6EgPv9D",
+      "playlist_id": "PLUXlBs_QySgw",
+      "playlist_item_id": "UExVWGxCc19ReVNndy45NkVENTkxRDdCQUFBMDY4",
+      "privacyStatus": "private",
+      "publishAt": "2026-11-06T00:00:00Z",
+      "uploaded_at": "2026-11-05T12:42:33.482160+00:00",
+      "thumbnail_set": true
+    },
+    "short": {
+      "version": 2,
+      "video_id": "Cf9qGl5hTeE",
+      "url": "https://youtube.com/shorts/Cf9qGl5hTeE",
+      "studio_url": "https://studio.youtube.com/video/Cf9qGl5hTeE/edit",
+      "caption_id": "AUieDaYwaZSNfjrlYZrHcI3ei5wEpe7-mIkjkwP1ZXfaZFRk-UmFer23",
+      "playlist_id": "PLTJvna-1hErU",
+      "playlist_item_id": "UExUSnZuYS0xaEVyVS41QUZGQTY5OTE4QTREQUU4",
+      "privacyStatus": "private",
+      "publishAt": "2026-11-06T00:00:00Z",
+      "uploaded_at": "2026-11-05T12:43:05.384389+00:00",
+      "thumbnail_set": true
+    }
+  },
+  "history": {}
+}

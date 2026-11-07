@@ -1,0 +1,61 @@
+{
+  "voice_id": "voice_xdhacg1pn1cq",
+  "audio_wav": "/home/phi/PROJECTS/geometor/elements/videos/book_i/22/I_22.wav",
+  "total_duration_sec": 73.34,
+  "segments": [
+    {
+      "index": 0,
+      "bell": "bell:proposition",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Euclid's Elements, Book One, Proposition Twenty-Two. Construct a triangle from three segments equal to three given segments satisfying the triangle inequality. Given three segments A, B, and C, such that the sum of any two is greater than the remaining one, we construct a triangle whose sides equal A, B, and C.",
+      "start_sec": 0.0,
+      "end_sec": 19.05,
+      "duration_sec": 19.05,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Euclid's Elements, Book One, Proposition Twenty-Two. Construct a triangle from three segments equal to three given segments satisfying the triangle inequality. Given three segments A, B, and C, such that the sum of any two is greater than the remaining one, we construct a triangle whose sides equal A, B, and C.",
+          "start_sec": 0.0,
+          "end_sec": 19.05,
+          "duration_sec": 19.05
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "bell": "bell:construction",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Set out line D E, terminated at point D and unlimited toward E. Cut off segment D F equal to A, segment F G equal to B, and segment G H equal to C. Next, construct circle F D with center F and defining radius point D, and construct circle G H with center G and defining radius point H. From point K where the two circles intersect, construct segments K F and K G.",
+      "start_sec": 19.05,
+      "end_sec": 44.92,
+      "duration_sec": 25.87,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Set out line D E, terminated at point D and unlimited toward E. Cut off segment D F equal to A, segment F G equal to B, and segment G H equal to C. Next, construct circle F D with center F and defining radius point D, and construct circle G H with center G and defining radius point H. From point K where the two circles intersect, construct segments K F and K G.",
+          "start_sec": 19.05,
+          "end_sec": 44.92,
+          "duration_sec": 25.87
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "bell": "bell:insight",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Because F is the center of circle F D, segment F K equals segment F D, which equals A. Likewise, because G is the center of circle G H, segment G K equals segment G H, which equals C. Since segment F G was made equal to B, the three sides K F, F G, and G K equal the three given segments A, B, and C. Therefore triangle K F G has been constructed from three segments equal to A, B, and C, as was required to do.",
+      "start_sec": 44.92,
+      "end_sec": 73.34,
+      "duration_sec": 28.42,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Because F is the center of circle F D, segment F K equals segment F D, which equals A. Likewise, because G is the center of circle G H, segment G K equals segment G H, which equals C. Since segment F G was made equal to B, the three sides K F, F G, and G K equal the three given segments A, B, and C. Therefore triangle K F G has been constructed from three segments equal to A, B, and C, as was required to do.",
+          "start_sec": 44.92,
+          "end_sec": 73.34,
+          "duration_sec": 28.42
+        }
+      ]
+    }
+  ]
+}

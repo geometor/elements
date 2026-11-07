@@ -1,0 +1,61 @@
+{
+  "voice_id": "voice_xdhacg1pn1cq",
+  "audio_wav": "/home/phi/PROJECTS/geometor/euclid/videos/book_i/08/I_08.wav",
+  "total_duration_sec": 71.02,
+  "segments": [
+    {
+      "index": 0,
+      "bell": "bell:proposition",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Euclid's Elements, Book One, Proposition Eight. Triangles with all three corresponding sides equal have their corresponding angles equal. Given triangles A B C and D E F with side A B equal to D E, side A C equal to D F, and base B C equal to E F, we prove that angle B A C equals angle E D F.",
+      "start_sec": 0.0,
+      "end_sec": 22.21,
+      "duration_sec": 22.21,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Euclid's Elements, Book One, Proposition Eight. Triangles with all three corresponding sides equal have their corresponding angles equal. Given triangles A B C and D E F with side A B equal to D E, side A C equal to D F, and base B C equal to E F, we prove that angle B A C equals angle E D F.",
+          "start_sec": 0.0,
+          "end_sec": 22.21,
+          "duration_sec": 22.21
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "bell": "bell:construction",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Apply triangle A B C to triangle D E F, placing point B on point E and segment B C along E F. Because B C equals E F, point C coincides with point F, and base B C coincides with base E F. Now suppose sides B A and A C do not coincide with E D and D F, but fall beside them as E G and G F.",
+      "start_sec": 22.21,
+      "end_sec": 43.84,
+      "duration_sec": 21.63,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Apply triangle A B C to triangle D E F, placing point B on point E and segment B C along E F. Because B C equals E F, point C coincides with point F, and base B C coincides with base E F. Now suppose sides B A and A C do not coincide with E D and D F, but fall beside them as E G and G F.",
+          "start_sec": 22.21,
+          "end_sec": 43.84,
+          "duration_sec": 21.63
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "bell": "bell:insight",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Then on the same base E F and on the same side, two distinct triangles E D F and E G F would have E G equal to B A, which equals E D, and G F equal to A C, which equals D F. But this is impossible by Proposition Seven. Thus sides B A and A C must coincide with E D and D F. Therefore angle B A C coincides with angle E D F and equals it, as was required to prove.",
+      "start_sec": 43.84,
+      "end_sec": 71.02,
+      "duration_sec": 27.18,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Then on the same base E F and on the same side, two distinct triangles E D F and E G F would have E G equal to B A, which equals E D, and G F equal to A C, which equals D F. But this is impossible by Proposition Seven. Thus sides B A and A C must coincide with E D and D F. Therefore angle B A C coincides with angle E D F and equals it, as was required to prove.",
+          "start_sec": 43.84,
+          "end_sec": 71.02,
+          "duration_sec": 27.18
+        }
+      ]
+    }
+  ]
+}

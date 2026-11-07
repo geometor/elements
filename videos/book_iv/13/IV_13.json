@@ -1,0 +1,97 @@
+{
+  "voice_id": "voice_xdhacg1pn1cq",
+  "audio_wav": "/home/phi/PROJECTS/geometor/elements/videos/book_iv/13/IV_13.wav",
+  "total_duration_sec": 157.18,
+  "segments": [
+    {
+      "index": 0,
+      "bell": "bell:proposition",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: brisk, clear, architectural voice; steady studio cadence] Book Four, Proposition Thirteen. In a given pentagon, which is equilateral and equiangular, to inscribe a circle. Let A B C D E be the given equilateral and equiangular pentagon; it is required to inscribe a circle in the pentagon A B C D E.",
+      "start_sec": 0.0,
+      "end_sec": 16.65,
+      "duration_sec": 16.65,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: brisk, clear, architectural voice; steady studio cadence] Book Four, Proposition Thirteen. In a given pentagon, which is equilateral and equiangular, to inscribe a circle. Let A B C D E be the given equilateral and equiangular pentagon; it is required to inscribe a circle in the pentagon A B C D E.",
+          "start_sec": 0.0,
+          "end_sec": 16.65,
+          "duration_sec": 16.65
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "bell": "bell:construction",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: methodical, precise constructive cadence] Bisect the adjacent angles B C D and C D E by the straight lines C F and D F, and from the point F where they meet, join F B, F A, and F E. From F, draw F G, F H, F K, F L, and F M perpendicular to the five sides A B, B C, C D, D E, and E A.",
+      "start_sec": 16.65,
+      "end_sec": 38.08,
+      "duration_sec": 21.43,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: methodical, precise constructive cadence] Bisect the adjacent angles B C D and C D E by the straight lines C F and D F, and from the point F where they meet, join F B, F A, and F E. From F, draw F G, F H, F K, F L, and F M perpendicular to the five sides A B, B C, C D, D E, and E A.",
+          "start_sec": 16.65,
+          "end_sec": 38.08,
+          "duration_sec": 21.43
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "bell": "bell:insight",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: luminous, deductive geometric clarity] Because B C equals C D, C F is common, and angle B C F equals angle D C F, by One Four triangles B C F and D C F are congruent, so angle C B F equals angle C D F. Since angle A B C equals angle C D E, which is double angle C D F, angle A B C is also double angle C B F; thus F B\u2014and similarly F A and F E\u2014bisects its vertex angle. Now in right triangles F H C and F K C, the angles at C are equal, the right angles at H and K are equal, and the hypotenuse F C is common. By One Twenty-Six, F H equals F K, and by the same reasoning all five perpendiculars F G, F H, F K, F L, and F M are equal. Therefore the circle described with center F and radius F G passes through G, H, K, L, and M, and by Three Sixteen touches all five sides at right angles. Thus circle G H K L M has been inscribed in the pentagon A B C D E. Which was to be done.",
+      "start_sec": 38.08,
+      "end_sec": 104.34,
+      "duration_sec": 66.26,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: luminous, deductive geometric clarity] Because B C equals C D, C F is common, and angle B C F equals angle D C F, by One Four triangles B C F and D C F are congruent, so angle C B F equals angle C D F. Since angle A B C equals angle C D E, which is double angle C D F, angle A B C is also double angle C B F; thus F B\u2014and similarly F A and F E\u2014bisects its vertex angle. Now in right triangles F H C and F K C, the angles at C are equal, the right angles at H and K are equal, and the hypotenuse F C is common. By One Twenty-Six, F H equals F K, and by the same reasoning all five perpendiculars F G, F H, F K, F L, and F M are equal. Therefore the circle described with center F and radius F G passes through G, H, K, L, and M, and by Three Sixteen touches all five sides at right angles. Thus circle G H K L M has been inscribed in the pentagon A B C D E. Which was to be done.",
+          "start_sec": 38.08,
+          "end_sec": 104.34,
+          "duration_sec": 66.26
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "bell": "bell:system",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: reflective, scholarly, architectural synthesis] Proposition Four Thirteen generalizes the triangle incenter construction of Four Four to the regular pentagon. As Augustus De Morgan observed, Euclid's proof works for any regular polygon: bisecting two adjacent angles determines the symmetry center F, and dropping perpendicular apothems yields the inscribed circle. In the GEOMETOR G-Index, node G one hundred sixty-five combines Side-Angle-Side and Angle-Angle-Side triangle congruence with the tangent criterion of Three Sixteen, building on forty-five ancestor nodes.",
+      "start_sec": 104.34,
+      "end_sec": 135.76,
+      "duration_sec": 31.42,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: reflective, scholarly, architectural synthesis] Proposition Four Thirteen generalizes the triangle incenter construction of Four Four to the regular pentagon. As Augustus De Morgan observed, Euclid's proof works for any regular polygon: bisecting two adjacent angles determines the symmetry center F, and dropping perpendicular apothems yields the inscribed circle. In the GEOMETOR G-Index, node G one hundred sixty-five combines Side-Angle-Side and Angle-Angle-Side triangle congruence with the tangent criterion of Three Sixteen, building on forty-five ancestor nodes.",
+          "start_sec": 104.34,
+          "end_sec": 135.76,
+          "duration_sec": 31.42
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "bell": "bell:resolve",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: warm, inviting, resonant studio close] You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Four Thirteen in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.",
+      "start_sec": 135.76,
+      "end_sec": 157.18,
+      "duration_sec": 21.42,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: warm, inviting, resonant studio close] You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Four Thirteen in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.",
+          "start_sec": 135.76,
+          "end_sec": 157.18,
+          "duration_sec": 21.42
+        }
+      ]
+    }
+  ]
+}

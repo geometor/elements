@@ -1,0 +1,33 @@
+{
+  "prop_id": "BOOK III \u2022 PROP. 6",
+  "short_code": "III.6",
+  "g_id": "G.104",
+  "version": 2,
+  "enunciation": "If two circles touch one another, they will not have the same center.",
+  "title_1080p": "III.6 \u2022 touching circles have distinct centers \u2022 Euclid's Elements",
+  "title_short": "III.6 \u2022 touching circles have distinct centers \u2022 Euclid's Elements",
+  "description": "\u201cIf two circles touch one another, they will not have the same center.\u201d\n\u2014 Euclid's Elements, BOOK III \u2022 PROP. 6 (G.104)\n\n00:00 1 \u00b7 GIVEN: given circles ( A B C ) and ( C D E ) touching at C\n00:13 2 \u00b7 CONSTRUCT: assume common center F; join / F C / and draw / F E B /\n00:27 3 \u00b7 ASSERT: F center of ( A B C ) implies / F C / = / F B /\n00:38 4 \u00b7 ASSERT: F center of ( C D E ) implies / F C / = / F E / \u2192 / F E / = / F B / \u21d2\u21d0\n00:49 5 \u00b7 \u2234: F is not the common center of ( A B C ) and ( C D E )\n01:00 6 \u00b7 COMMENTARY: internal vs. external contact of circles\n01:16 7 \u00b7 GENEALOGY: G.104 dependency tree & symbolic model\n01:32 8 \u00b7 PARTICIPATE: explore the GEOMETOR Elements Codex & participate\n\nExplore the interactive Book Codex, symbolic model, and dependency tree:\n\u2022 Elements Codex (G.104): https://geometor.github.io/elements/elements2/G.104/\n\u2022 Heath Edition (III.6): https://geometor.github.io/euclid/heath/volume_I/book_iii/propositions/06/\n\u2022 GitHub: https://github.com/geometor/elements\n\nGEOMETOR \u2022 G.104 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid III.6",
+    "G.104",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_iii/propositions/06/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.104/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/videos/book_iii/06/III_06_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/videos/book_iii/06/III_06_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/videos/book_iii/06/III_06.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/videos/book_iii/06/III_06_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/videos/book_iii/06/III_06_short_thumb.png"
+  }
+}

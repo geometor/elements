@@ -1,0 +1,61 @@
+{
+  "voice_id": "voice_xdhacg1pn1cq",
+  "audio_wav": "/home/phi/PROJECTS/geometor/elements/videos/book_i/42/I_42.wav",
+  "total_duration_sec": 78.98,
+  "segments": [
+    {
+      "index": 0,
+      "bell": "bell:proposition",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Euclid's Elements, Book One, Proposition Forty-Two. Construct, in a given angle, a parallelogram equal in area to a given triangle. Given triangle A B C and rectilineal angle D, we construct in angle D a parallelogram equal in area to triangle A B C.",
+      "start_sec": 0.0,
+      "end_sec": 17.41,
+      "duration_sec": 17.41,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Euclid's Elements, Book One, Proposition Forty-Two. Construct, in a given angle, a parallelogram equal in area to a given triangle. Given triangle A B C and rectilineal angle D, we construct in angle D a parallelogram equal in area to triangle A B C.",
+          "start_sec": 0.0,
+          "end_sec": 17.41,
+          "duration_sec": 17.41
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "bell": "bell:construction",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Bisect base B C at point E so that segment B E equals segment E C, and construct segment A E. On segment E C at point E, construct angle C E F equal to the given angle D. Through point A construct segment A G parallel to E C, and through point C construct segment C G parallel to E F, forming parallelogram F E C G.",
+      "start_sec": 17.41,
+      "end_sec": 38.92,
+      "duration_sec": 21.51,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Bisect base B C at point E so that segment B E equals segment E C, and construct segment A E. On segment E C at point E, construct angle C E F equal to the given angle D. Through point A construct segment A G parallel to E C, and through point C construct segment C G parallel to E F, forming parallelogram F E C G.",
+          "start_sec": 17.41,
+          "end_sec": 38.92,
+          "duration_sec": 21.51
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "bell": "bell:insight",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Since base B E equals base E C, triangles A B E and A E C stand on equal bases and in the same parallels B C and A G. By Proposition Thirty-Eight, triangle A B E equals triangle A E C, and therefore the whole triangle A B C is double triangle A E C. By Proposition Forty-One, parallelogram F E C G is also double triangle A E C, since they share base E C and lie in the same parallels E C and A G. Therefore by Common Notion One, parallelogram F E C G equals triangle A B C, and has angle C E F equal to the given angle D, as was required to do.",
+      "start_sec": 38.92,
+      "end_sec": 78.98,
+      "duration_sec": 40.06,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Since base B E equals base E C, triangles A B E and A E C stand on equal bases and in the same parallels B C and A G. By Proposition Thirty-Eight, triangle A B E equals triangle A E C, and therefore the whole triangle A B C is double triangle A E C. By Proposition Forty-One, parallelogram F E C G is also double triangle A E C, since they share base E C and lie in the same parallels E C and A G. Therefore by Common Notion One, parallelogram F E C G equals triangle A B C, and has angle C E F equal to the given angle D, as was required to do.",
+          "start_sec": 38.92,
+          "end_sec": 78.98,
+          "duration_sec": 40.06
+        }
+      ]
+    }
+  ]
+}

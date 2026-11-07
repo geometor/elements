@@ -1,0 +1,97 @@
+{
+  "voice_id": "voice_xdhacg1pn1cq",
+  "audio_wav": "/home/phi/PROJECTS/geometor/elements/videos/book_iii/29/III_29.wav",
+  "total_duration_sec": 116.7,
+  "segments": [
+    {
+      "index": 0,
+      "bell": "bell:proposition",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: brisk, clear, architectural voice; steady studio cadence] Book Three, Proposition Twenty-Nine. In equal circles, equal arcs are subtended by equal segments. Let A B C and D E F be equal circles, and in them let equal arcs B G C and E H F be cut off, and let the chords B C and E F be joined. We must prove that B C equals E F.",
+      "start_sec": 0.0,
+      "end_sec": 21.61,
+      "duration_sec": 21.61,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: brisk, clear, architectural voice; steady studio cadence] Book Three, Proposition Twenty-Nine. In equal circles, equal arcs are subtended by equal segments. Let A B C and D E F be equal circles, and in them let equal arcs B G C and E H F be cut off, and let the chords B C and E F be joined. We must prove that B C equals E F.",
+          "start_sec": 0.0,
+          "end_sec": 21.61,
+          "duration_sec": 21.61
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "bell": "bell:construction",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: methodical, precise constructive cadence] Take the centers K and L of the two circles, and join the radii B K, K C, E L, and L F.",
+      "start_sec": 21.61,
+      "end_sec": 29.48,
+      "duration_sec": 7.87,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: methodical, precise constructive cadence] Take the centers K and L of the two circles, and join the radii B K, K C, E L, and L F.",
+          "start_sec": 21.61,
+          "end_sec": 29.48,
+          "duration_sec": 7.87
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "bell": "bell:insight",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: luminous, deductive geometric clarity] Because arc B G C equals arc E H F, the central angle B K C equals the central angle E L F by Three Twenty-Seven. And because the circles A B C and D E F are equal, their radii B K, K C, E L, and L F are all equal. Thus the two sides B K and K C equal the two sides E L and L F, and they contain equal angles; therefore by One Four, the base B C equals the base E F, as was required to prove.",
+      "start_sec": 29.48,
+      "end_sec": 62.42,
+      "duration_sec": 32.94,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: luminous, deductive geometric clarity] Because arc B G C equals arc E H F, the central angle B K C equals the central angle E L F by Three Twenty-Seven. And because the circles A B C and D E F are equal, their radii B K, K C, E L, and L F are all equal. Thus the two sides B K and K C equal the two sides E L and L F, and they contain equal angles; therefore by One Four, the base B C equals the base E F, as was required to prove.",
+          "start_sec": 29.48,
+          "end_sec": 62.42,
+          "duration_sec": 32.94
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "bell": "bell:system",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: reflective, scholarly, architectural synthesis] Proposition Twenty-Nine completes the quartet begun in Three Twenty-Six. Across these four theorems, Euclid proves that in equal circles\u2014or within the same circle, as Heath emphasizes\u2014equal central angles, equal inscribed angles, equal arcs, and equal chords are all mutually equivalent. In the GEOMETOR G-Index, node G one-thirty-six synthesizes eight direct prerequisites across sixty-one ancestor nodes, serving as the primary bridge from equal arcs to equal polygon sides in Books Four and Thirteen.",
+      "start_sec": 62.42,
+      "end_sec": 95.04,
+      "duration_sec": 32.62,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: reflective, scholarly, architectural synthesis] Proposition Twenty-Nine completes the quartet begun in Three Twenty-Six. Across these four theorems, Euclid proves that in equal circles\u2014or within the same circle, as Heath emphasizes\u2014equal central angles, equal inscribed angles, equal arcs, and equal chords are all mutually equivalent. In the GEOMETOR G-Index, node G one-thirty-six synthesizes eight direct prerequisites across sixty-one ancestor nodes, serving as the primary bridge from equal arcs to equal polygon sides in Books Four and Thirteen.",
+          "start_sec": 62.42,
+          "end_sec": 95.04,
+          "duration_sec": 32.62
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "bell": "bell:resolve",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: warm, inviting, resonant studio close] You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Twenty-Nine in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe to at geometor, share your thoughts in the comments, and star the repository at github dot com slash geometor.",
+      "start_sec": 95.04,
+      "end_sec": 116.7,
+      "duration_sec": 21.66,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: warm, inviting, resonant studio close] You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Twenty-Nine in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe to at geometor, share your thoughts in the comments, and star the repository at github dot com slash geometor.",
+          "start_sec": 95.04,
+          "end_sec": 116.7,
+          "duration_sec": 21.66
+        }
+      ]
+    }
+  ]
+}

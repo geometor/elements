@@ -1,0 +1,64 @@
+{
+  "prop_id": "BOOK I \u2022 PROP. 40",
+  "short_code": "I.40",
+  "g_id": "G.69",
+  "version": 2,
+  "enunciation": "Equal triangles which are on equal bases and on the same side are also in the same parallels.",
+  "title_1080p": "I.40 \u2022 equal triangles which are on equal bases and on the same side are also in the same paralle...",
+  "title_short": "I.40 \u2022 equal triangles which are on equal bases and on the same side are also in the same paralle...",
+  "description": "\u201cEqual triangles which are on equal bases and on the same side are also in the same parallels.\u201d\n\u2014 Euclid's Elements, BOOK I \u2022 PROP. 40 (G.69)\n\n00:00 1 \u00b7 GIVEN: \u27e8 A B C \u27e9 = \u27e8 C D E \u27e9, / B C / = / C E /\n00:22 2 \u00b7 CONSTRUCT: segment(A, D) \u2192 / A D /\n00:30 3 \u00b7 CONSTRUCT: ? \u00ac(/ A D / \u2225 / B E /) \u2192 parallel_line(A, / B E /) \u2192 / A F / \u2225 / B E /, segment(F, E) \u2192 / F E /\n00:38 4 \u00b7 ASSERT: / B C / = / C E /, / A F / \u2225 / B E / \u2192 \u27e8 A B C \u27e9 = \u27e8 F C E \u27e9\n00:52 5 \u00b7 ASSERT: \u27e8 A B C \u27e9 = \u27e8 D C E \u27e9, \u27e8 A B C \u27e9 = \u27e8 F C E \u27e9 \u2192 \u27e8 D C E \u27e9 = \u27e8 F C E \u27e9 \u21d2\u21d0\n01:05 6 \u00b7 \u2234: / A D / \u2225 / B E /\n\nGEOMETOR \u2022 G.69 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid I.40",
+    "G.69",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/40/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.69/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/videos/book_i/40/I_40_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/videos/book_i/40/I_40_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/videos/book_i/40/I_40.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/videos/book_i/40/I_40_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/videos/book_i/40/I_40_short_thumb.png"
+  },
+  "uploads": {
+    "wide_1080p": {
+      "version": 2,
+      "video_id": "hmuAh4DuitI",
+      "url": "https://youtu.be/hmuAh4DuitI",
+      "studio_url": "https://studio.youtube.com/video/hmuAh4DuitI/edit",
+      "caption_id": null,
+      "playlist_id": "PLUXlBs_QySgw",
+      "playlist_item_id": "UExVWGxCc19ReVNndy4wNEU1MTI4NkZEMzVBN0JF",
+      "privacyStatus": "private",
+      "publishAt": "2026-11-08T20:00:00Z",
+      "uploaded_at": "2026-11-05T13:12:32.514304+00:00",
+      "thumbnail_set": true,
+      "updated_at": "2026-11-06T08:08:56.129165+00:00"
+    },
+    "short": {
+      "version": 2,
+      "video_id": "pAprq9zcEiY",
+      "url": "https://youtube.com/shorts/pAprq9zcEiY",
+      "studio_url": "https://studio.youtube.com/video/pAprq9zcEiY/edit",
+      "caption_id": null,
+      "playlist_id": "PLTJvna-1hErU",
+      "playlist_item_id": "UExUSnZuYS0xaEVyVS41RTNBREYwMkI5QzU3RkY2",
+      "privacyStatus": "private",
+      "publishAt": "2026-11-08T20:00:00Z",
+      "uploaded_at": "2026-11-05T13:13:38.986324+00:00",
+      "thumbnail_set": true,
+      "updated_at": "2026-11-06T08:09:02.442215+00:00"
+    }
+  },
+  "history": {}
+}

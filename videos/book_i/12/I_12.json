@@ -1,0 +1,61 @@
+{
+  "voice_id": "voice_xdhacg1pn1cq",
+  "audio_wav": "/home/phi/PROJECTS/geometor/euclid/videos/book_i/12/I_12.wav",
+  "total_duration_sec": 81.34,
+  "segments": [
+    {
+      "index": 0,
+      "bell": "bell:proposition",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Euclid's Elements, Book One, Proposition Twelve. Construct a perpendicular to a given line from a given point not on it. Given line A B and point C not on it, we are to construct from C a segment perpendicular to line A B.",
+      "start_sec": 0.0,
+      "end_sec": 13.37,
+      "duration_sec": 13.37,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Euclid's Elements, Book One, Proposition Twelve. Construct a perpendicular to a given line from a given point not on it. Given line A B and point C not on it, we are to construct from C a segment perpendicular to line A B.",
+          "start_sec": 0.0,
+          "end_sec": 13.37,
+          "duration_sec": 13.37
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "bell": "bell:construction",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "First, take a point D on the other side of line A B, and by Postulate Three, construct circle C D, with center C and defining radius point D. Circle C D intersects line A B at two points, E and G. Next, by Proposition Ten, bisect segment E G at point H, so that G H equals H E. Finally, by Postulate One, construct segments C G, C H, and C E.",
+      "start_sec": 13.37,
+      "end_sec": 40.12,
+      "duration_sec": 26.75,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "First, take a point D on the other side of line A B, and by Postulate Three, construct circle C D, with center C and defining radius point D. Circle C D intersects line A B at two points, E and G. Next, by Proposition Ten, bisect segment E G at point H, so that G H equals H E. Finally, by Postulate One, construct segments C G, C H, and C E.",
+          "start_sec": 13.37,
+          "end_sec": 40.12,
+          "duration_sec": 26.75
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "bell": "bell:insight",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Since point C is the center of circle C D, Definition Fifteen guarantees that radius C G equals radius C E. Now compare triangles C H G and C H E: side G H equals side E H, side H C is common to both, and base C G equals base C E\u2014so by Proposition Eight, Side-Side-Side congruence, the adjacent angles C H G and E H C are equal. And by Definition Ten, when a segment standing on a line makes the adjacent angles equal, each angle is a right angle and the standing segment is perpendicular to the line. Therefore segment C H has been constructed perpendicular to line A B from point C not on it, as was required to do.",
+      "start_sec": 40.12,
+      "end_sec": 81.34,
+      "duration_sec": 41.22,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Since point C is the center of circle C D, Definition Fifteen guarantees that radius C G equals radius C E. Now compare triangles C H G and C H E: side G H equals side E H, side H C is common to both, and base C G equals base C E\u2014so by Proposition Eight, Side-Side-Side congruence, the adjacent angles C H G and E H C are equal. And by Definition Ten, when a segment standing on a line makes the adjacent angles equal, each angle is a right angle and the standing segment is perpendicular to the line. Therefore segment C H has been constructed perpendicular to line A B from point C not on it, as was required to do.",
+          "start_sec": 40.12,
+          "end_sec": 81.34,
+          "duration_sec": 41.22
+        }
+      ]
+    }
+  ]
+}

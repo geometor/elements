@@ -1,0 +1,33 @@
+{
+  "prop_id": "BOOK III \u2022 PROP. 3",
+  "short_code": "III.3",
+  "g_id": "G.100",
+  "version": 2,
+  "enunciation": "If in a circle a straight line through the centre bisect a straight line not through the centre, it also cuts it at right angles; and if it cut it at right angles, it also bisects it.",
+  "title_1080p": "III.3 \u2022 diameter bisects chord iff perpendicular \u2022 Euclid's Elements",
+  "title_short": "III.3 \u2022 diameter bisects chord iff perpendicular \u2022 Euclid's Elements",
+  "description": "\u201cIf in a circle a straight line through the centre bisect a straight line not through the centre, it also cuts it at right angles; and if it cut it at right angles, it also bisects it.\u201d\n\u2014 Euclid's Elements, BOOK III \u2022 PROP. 3 (G.100)\n\n00:00 1 \u00b7 GIVEN: circle ( A B C ), diameter / C D /, chord / A B / meeting at F\n00:20 2 \u00b7 CONSTRUCT: take center E and join radii / E A /, / E B /\n00:28 3 \u00b7 ASSERT: Part 1: / A F / = / F B / \u2192 \u27e8 A F E ) = \u27e8 B F E ) = right\n00:41 4 \u00b7 ASSERT: Part 2: \u27e8 A F E ) = \u27e8 B F E ) right, / E A / = / E B / \u2192 \u27e8 E A F ) = \u27e8 E B F )\n00:54 5 \u00b7 ASSERT: AAS congruence on \u27e8 E A F \u27e9, \u27e8 E B F \u27e9 \u2192 / A F / = / F B /\n01:07 6 \u00b7 \u2234: / A F / = / F B / \u21d4 / C D / \u22a5 / A B /\n01:20 7 \u00b7 COMMENTARY: partial converses of III.1 Porism: the 3-way chord symmetry\n01:37 8 \u00b7 GENEALOGY: G.100 dependency tree & symbolic model\n01:53 9 \u00b7 PARTICIPATE: explore the GEOMETOR Elements Codex & participate\n\nExplore the interactive Book Codex, symbolic model, and dependency tree:\n\u2022 Elements Codex (G.100): https://geometor.github.io/elements/elements2/G.100/\n\u2022 Heath Edition (III.3): https://geometor.github.io/euclid/heath/volume_I/book_iii/propositions/03/\n\u2022 GitHub: https://github.com/geometor/elements\n\nGEOMETOR \u2022 G.100 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid III.3",
+    "G.100",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_iii/propositions/03/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.100/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/videos/book_iii/03/III_03_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/videos/book_iii/03/III_03_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/videos/book_iii/03/III_03.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/videos/book_iii/03/III_03_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/videos/book_iii/03/III_03_short_thumb.png"
+  }
+}

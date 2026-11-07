@@ -1,0 +1,33 @@
+{
+  "prop_id": "BOOK III \u2022 PROP. 33",
+  "short_code": "III.33",
+  "g_id": "G.141",
+  "version": 2,
+  "enunciation": "On a given straight line to describe a segment of a circle admitting an angle equal to a given rectilineal angle.",
+  "title_1080p": "III.33 \u2022 construct a circle segment on a chord admitting a given angle \u2022 Euclid's Elements",
+  "title_short": "III.33 \u2022 construct a circle segment on a chord admitting a given angle \u2022 Euclid's Elements",
+  "description": "\u201cOn a given straight line to describe a segment of a circle admitting an angle equal to a given rectilineal angle.\u201d\n\u2014 Euclid's Elements, BOOK III \u2022 PROP. 33 (G.141)\n\n00:00 1 \u00b7 GIVEN: given segment / A B / and rectilineal angle \u27e8 C )\n00:19 2 \u00b7 CONSTRUCT: copy \u27e8 B A D ) = \u27e8 C ), draw / A E / \u22a5 / D A / and / F G / \u22a5 / A B /\n00:40 3 \u00b7 CONSTRUCT: / A G / = / G B / \u2192 construct circle ( G A ) as ( A B E )\n01:01 4 \u00b7 ASSERT: / A D / \u22a5 diameter / A E / \u2192 / A D / touches circle ( A B E )\n01:15 5 \u00b7 ASSERT: alternate segment theorem: \u27e8 D A B ) = \u27e8 A E B )\n01:30 6 \u00b7 \u2234: segment ( A E B ) on / A B / admits \u27e8 A E B ) = \u27e8 C )\n01:44 7 \u00b7 COMMENTARY: Simson & Clavius on the unified three-case locus construction\n02:05 8 \u00b7 GENEALOGY: G.141 dependency tree & symbolic model\n02:27 9 \u00b7 PARTICIPATE: explore the GEOMETOR Elements Codex & participate\n\nExplore the interactive Book Codex, symbolic model, and dependency tree:\n\u2022 Elements Codex (G.141): https://geometor.github.io/elements/elements2/G.141/\n\u2022 Heath Edition (III.33): https://geometor.github.io/euclid/heath/volume_I/book_iii/propositions/33/\n\u2022 GitHub: https://github.com/geometor/elements\n\nGEOMETOR \u2022 G.141 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid III.33",
+    "G.141",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_iii/propositions/33/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.141/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/videos/book_iii/33/III_33_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/videos/book_iii/33/III_33_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/videos/book_iii/33/III_33.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/videos/book_iii/33/III_33_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/videos/book_iii/33/III_33_short_thumb.png"
+  }
+}

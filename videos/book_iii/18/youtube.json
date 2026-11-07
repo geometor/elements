@@ -1,0 +1,33 @@
+{
+  "prop_id": "BOOK III \u2022 PROP. 18",
+  "short_code": "III.18",
+  "g_id": "G.120",
+  "version": 2,
+  "enunciation": "If a straight line touch a circle, and a straight line be joined from the centre to the point of contact, the straight line so joined will be perpendicular to the tangent.",
+  "title_1080p": "III.18 \u2022 radius to point of contact is perpendicular to tangent \u2022 Euclid's Elements",
+  "title_short": "III.18 \u2022 radius to point of contact is perpendicular to tangent \u2022 Euclid's Elements",
+  "description": "\u201cIf a straight line touch a circle, and a straight line be joined from the centre to the point of contact, the straight line so joined will be perpendicular to the tangent.\u201d\n\u2014 Euclid's Elements, BOOK III \u2022 PROP. 18 (G.120)\n\n00:00 1 \u00b7 GIVEN: tangent / D E / touching circle ( A B C ) at C, radius / F C / from center F\n00:25 2 \u00b7 CONSTRUCT: suppose / F C / is not \u22a5 / D E /; draw / F G / \u22a5 / D E /\n00:34 3 \u00b7 ASSERT: \u27e8 F G C ) is right \u2192 \u27e8 F C G ) is acute \u2192 / F C / \u27e9 / F G /\n00:47 4 \u00b7 ASSERT: / F C / = / F B / \u2192 / F B / \u27e9 / F G / (part \u27e9 whole) \u21d2\u21d0\n01:00 5 \u00b7 \u2234: radius / F C / to the point of contact is perpendicular to tangent / D E /\n01:14 6 \u00b7 COMMENTARY: the triad of circular tangency: III.16 Por., III.18, and III.19\n01:31 7 \u00b7 GENEALOGY: G.120 dependency tree & symbolic model\n01:47 8 \u00b7 PARTICIPATE: explore the GEOMETOR Elements Codex & participate\n\nExplore the interactive Book Codex, symbolic model, and dependency tree:\n\u2022 Elements Codex (G.120): https://geometor.github.io/elements/elements2/G.120/\n\u2022 Heath Edition (III.18): https://geometor.github.io/euclid/heath/volume_I/book_iii/propositions/18/\n\u2022 GitHub: https://github.com/geometor/elements\n\nGEOMETOR \u2022 G.120 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid III.18",
+    "G.120",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_iii/propositions/18/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.120/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/videos/book_iii/18/III_18_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/videos/book_iii/18/III_18_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/videos/book_iii/18/III_18.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/videos/book_iii/18/III_18_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/videos/book_iii/18/III_18_short_thumb.png"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "voice_id": "voice_xdhacg1pn1cq",
+  "audio_wav": "/home/phi/PROJECTS/geometor/euclid/videos/book_i/02/I_02.wav",
+  "total_duration_sec": 69.82,
+  "segments": [
+    {
+      "index": 0,
+      "bell": "bell:proposition",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Euclid's Elements, Book One, Proposition Two. Construct at a given point a segment equal to a given segment. Given point A and segment B C, we are to construct at point A a segment equal to B C.",
+      "start_sec": 0.0,
+      "end_sec": 13.45,
+      "duration_sec": 13.45,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Euclid's Elements, Book One, Proposition Two. Construct at a given point a segment equal to a given segment. Given point A and segment B C, we are to construct at point A a segment equal to B C.",
+          "start_sec": 0.0,
+          "end_sec": 13.45,
+          "duration_sec": 13.45
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "bell": "bell:construction",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "From point A to point B, construct segment A B. On segment A B, construct the equilateral triangle D A B. Next, extend segments D A and D B continuously to E and F. Construct circle B C, with center B and defining radius point C, intersecting D F at G. Next, construct circle D G, with center D and defining radius point G, intersecting D E at L.",
+      "start_sec": 13.45,
+      "end_sec": 36.96,
+      "duration_sec": 23.51,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "From point A to point B, construct segment A B. On segment A B, construct the equilateral triangle D A B. Next, extend segments D A and D B continuously to E and F. Construct circle B C, with center B and defining radius point C, intersecting D F at G. Next, construct circle D G, with center D and defining radius point G, intersecting D E at L.",
+          "start_sec": 13.45,
+          "end_sec": 36.96,
+          "duration_sec": 23.51
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "bell": "bell:insight",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Since B is the center of circle B C, segment B C equals segment B G. Again, since D is the center of circle D G, segment D L equals segment D G. Within these, D A equals D B from our equilateral triangle, so subtracting equals from equals, the remainder A L equals the remainder B G. Because both A L and B C equal B G, things equal to the same thing are equal to one another. Therefore segment A L equals segment B C, and has been constructed at the given point A, as was required to do.",
+      "start_sec": 36.96,
+      "end_sec": 69.82,
+      "duration_sec": 32.86,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Since B is the center of circle B C, segment B C equals segment B G. Again, since D is the center of circle D G, segment D L equals segment D G. Within these, D A equals D B from our equilateral triangle, so subtracting equals from equals, the remainder A L equals the remainder B G. Because both A L and B C equal B G, things equal to the same thing are equal to one another. Therefore segment A L equals segment B C, and has been constructed at the given point A, as was required to do.",
+          "start_sec": 36.96,
+          "end_sec": 69.82,
+          "duration_sec": 32.86
+        }
+      ]
+    }
+  ]
+}

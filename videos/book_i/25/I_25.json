@@ -1,0 +1,61 @@
+{
+  "voice_id": "voice_xdhacg1pn1cq",
+  "audio_wav": "/home/phi/PROJECTS/geometor/elements/videos/book_i/25/I_25.wav",
+  "total_duration_sec": 56.26,
+  "segments": [
+    {
+      "index": 0,
+      "bell": "bell:proposition",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Euclid's Elements, Book One, Proposition Twenty-Five. If two triangles have two sides equal to two sides respectively, the one with the greater base has the greater included angle. Given triangles A B C and D E F with segment A B equal to D E, segment A C equal to D F, and base B C greater than base E F, we prove that angle B A C is greater than angle E D F.",
+      "start_sec": 0.0,
+      "end_sec": 21.53,
+      "duration_sec": 21.53,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Euclid's Elements, Book One, Proposition Twenty-Five. If two triangles have two sides equal to two sides respectively, the one with the greater base has the greater included angle. Given triangles A B C and D E F with segment A B equal to D E, segment A C equal to D F, and base B C greater than base E F, we prove that angle B A C is greater than angle E D F.",
+          "start_sec": 0.0,
+          "end_sec": 21.53,
+          "duration_sec": 21.53
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "bell": "bell:construction",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Suppose angle B A C is not greater than angle E D F. Then angle B A C is either equal to angle E D F, or less than it.",
+      "start_sec": 21.53,
+      "end_sec": 30.6,
+      "duration_sec": 9.07,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Suppose angle B A C is not greater than angle E D F. Then angle B A C is either equal to angle E D F, or less than it.",
+          "start_sec": 21.53,
+          "end_sec": 30.6,
+          "duration_sec": 9.07
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "bell": "bell:insight",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "First, angle B A C cannot equal angle E D F, because by side-angle-side congruence base B C would equal base E F, which it does not. Second, angle B A C cannot be less than angle E D F, because by the Hinge Theorem base B C would be less than base E F, which it is not. Since angle B A C is neither equal to nor less than angle E D F, angle B A C is greater than angle E D F, as was required to prove.",
+      "start_sec": 30.6,
+      "end_sec": 56.26,
+      "duration_sec": 25.66,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "First, angle B A C cannot equal angle E D F, because by side-angle-side congruence base B C would equal base E F, which it does not. Second, angle B A C cannot be less than angle E D F, because by the Hinge Theorem base B C would be less than base E F, which it is not. Since angle B A C is neither equal to nor less than angle E D F, angle B A C is greater than angle E D F, as was required to prove.",
+          "start_sec": 30.6,
+          "end_sec": 56.26,
+          "duration_sec": 25.66
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "prop_id": "BOOK II \u2022 PROP. 3",
+  "short_code": "II.3",
+  "g_id": "G.84",
+  "version": 2,
+  "enunciation": "If a segment be cut at random, the rectangle contained by the whole and one of the segments is equal to the rectangle contained by the segments and the square on the aforesaid segment.",
+  "title_1080p": "II.3 \u2022 rectangle whole and part \u2022 Euclid's Elements",
+  "title_short": "II.3 \u2022 rectangle whole and part \u2022 Euclid's Elements",
+  "description": "\u201cIf a segment be cut at random, the rectangle contained by the whole and one of the segments is equal to the rectangle contained by the segments and the square on the aforesaid segment.\u201d\n\u2014 Euclid's Elements, BOOK II \u2022 PROP. 3 (G.84)\n\n00:00 1 \u00b7 GIVEN: given segment / A B / cut at random at C\n00:17 2 \u00b7 CONSTRUCT: describe square \u27e8 C D E B \u27e9 on / B C /\n00:24 3 \u00b7 CONSTRUCT: extend / E D / to F and draw / A F / \u2225 / C D /\n00:32 4 \u00b7 ASSERT: \u27e8 A E \u27e9 = \u27e8 A D \u27e9 + \u27e8 C E \u27e9 = rect(/ A B /, / B C /)\n00:43 5 \u00b7 ASSERT: \u27e8 A D \u27e9 = rect(/ A C /, / B C /), \u27e8 D B \u27e9 = sq(/ B C /)\n00:54 6 \u00b7 \u2234: rect(/ A B /, / B C /) = rect(/ A C /, / B C /) + sq(/ B C /)\n01:05 7 \u00b7 COMMENTARY: geometric algebra: a(a + b) = a\u00b2 + ab\n01:21 8 \u00b7 GENEALOGY: G.84 dependency tree & symbolic model\n01:38 9 \u00b7 PARTICIPATE: explore the GEOMETOR Elements Codex & participate\n\nExplore the interactive Book Codex, symbolic model, and dependency tree:\n\u2022 Elements Codex (G.84): https://geometor.github.io/elements/elements2/G.84/\n\u2022 Heath Edition (II.3): https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/03/\n\u2022 GitHub: https://github.com/geometor/elements\n\nGEOMETOR \u2022 G.84 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid II.3",
+    "G.84",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/03/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.84/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/videos/book_ii/03/II_03_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/videos/book_ii/03/II_03_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/videos/book_ii/03/II_03.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/videos/book_ii/03/II_03_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/videos/book_ii/03/II_03_short_thumb.png"
+  }
+}

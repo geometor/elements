@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Rebuild or synthesize + render a proposition video folder in resources/videos/book_<b>/<nn>/.
+"""Rebuild or synthesize + render a proposition video folder in videos/book_<b>/<nn>/.
 
 Usage:
   # Render 9:16 Short + 16:9 1080p + .srt/.vtt + youtube.txt from existing <prefix>.wav/.json:
-  python3 scripts/build_prop_video.py resources/videos/book_i/01
+  python3 scripts/build_prop_video.py videos/book_i/01
 
   # Also re-synthesize <prefix>.wav from script.txt via Gemini TTS API:
-  python3 scripts/build_prop_video.py resources/videos/book_i/01 --tts
+  python3 scripts/build_prop_video.py videos/book_i/01 --tts
 """
 
 import argparse
@@ -27,7 +27,7 @@ def infer_prefix(prop_dir: Path) -> str:
 
 def main():
   parser = argparse.ArgumentParser(description="Build proposition 9:16 + 16:9 videos, CC, and YouTube metadata.")
-  parser.add_argument("prop_dir", type=Path, help="Path to proposition video directory (e.g. resources/videos/book_i/01)")
+  parser.add_argument("prop_dir", type=Path, help="Path to proposition video directory (e.g. videos/book_i/01)")
   parser.add_argument("--prefix", help="Optional filename prefix (defaults to <BOOK>_<NN>, e.g. I_01)")
   parser.add_argument("--tts", action="store_true", help="Synthesize <prefix>.wav and <prefix>.json from script.txt first")
   parser.add_argument("--keep-scratch", action="store_true", help="Keep Tier 3 scratch (*_stage.html, slides_*/)")

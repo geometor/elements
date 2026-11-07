@@ -1,0 +1,97 @@
+{
+  "voice_id": "voice_xdhacg1pn1cq",
+  "audio_wav": "/home/phi/PROJECTS/geometor/elements/videos/book_iii/17/III_17.wav",
+  "total_duration_sec": 145.66,
+  "segments": [
+    {
+      "index": 0,
+      "bell": "bell:proposition",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Book Three, Proposition Seventeen. From a given point, a straight line is drawn touching a given circle. Let A be the given external point, and let B C D be the given circle; we seek the straight line from the point A that touches the circle B C D.",
+      "start_sec": 0.0,
+      "end_sec": 16.21,
+      "duration_sec": 16.21,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Book Three, Proposition Seventeen. From a given point, a straight line is drawn touching a given circle. Let A be the given external point, and let B C D be the given circle; we seek the straight line from the point A that touches the circle B C D.",
+          "start_sec": 0.0,
+          "end_sec": 16.21,
+          "duration_sec": 16.21
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "bell": "bell:construction",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "By Three One, we take the center E of the circle B C D, join A E cutting the circle at D, and with center E and radius E A describe the concentric circle A F G. From D, we raise D F at right angles to E A meeting circle A F G at F, join E F cutting circle B C D at B, and join A B.",
+      "start_sec": 16.21,
+      "end_sec": 36.72,
+      "duration_sec": 20.51,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "By Three One, we take the center E of the circle B C D, join A E cutting the circle at D, and with center E and radius E A describe the concentric circle A F G. From D, we raise D F at right angles to E A meeting circle A F G at F, join E F cutting circle B C D at B, and join A B.",
+          "start_sec": 16.21,
+          "end_sec": 36.72,
+          "duration_sec": 20.51
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "bell": "bell:insight",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Because E is the common center of circles B C D and A F G, the outer radii E A and E F are equal, and the inner radii E D and E B are equal. Since sides A E and E B equal sides F E and E D and contain the common angle at E, by One Four triangles D E F and B E A are congruent, so angle E B A equals angle E D F. But angle E D F was constructed right; therefore angle E B A is also a right angle. Now E B is a radius, and by the Porism of Three Sixteen, the straight line at right angles to the diameter of a circle from its extremity touches the circle. Therefore A B has been drawn from the given point A touching the circle B C D, as was required to do.",
+      "start_sec": 36.72,
+      "end_sec": 80.34,
+      "duration_sec": 43.62,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Because E is the common center of circles B C D and A F G, the outer radii E A and E F are equal, and the inner radii E D and E B are equal. Since sides A E and E B equal sides F E and E D and contain the common angle at E, by One Four triangles D E F and B E A are congruent, so angle E B A equals angle E D F. But angle E D F was constructed right; therefore angle E B A is also a right angle. Now E B is a radius, and by the Porism of Three Sixteen, the straight line at right angles to the diameter of a circle from its extremity touches the circle. Therefore A B has been drawn from the given point A touching the circle B C D, as was required to do.",
+          "start_sec": 36.72,
+          "end_sec": 80.34,
+          "duration_sec": 43.62
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "bell": "bell:system",
+      "style": "speaking with a warm, composed, slightly measured cadence",
+      "text": "Euclid's concentric-circle construction in Three Seventeen ingeniously avoids using the inscribed right angle in a semicircle, which is not proved until Three Thirty-One. As Heron and Heath note, extending D F to both sides of E A immediately yields two equal tangents from A equally inclined to the line of centers. In the GEOMETOR G-Index, node G one hundred nineteen combines circle center finding from Three One, SAS congruence from One Four, and the tangent criterion of Three Sixteen across forty-six ancestor nodes.",
+      "start_sec": 80.34,
+      "end_sec": 120.24,
+      "duration_sec": 39.9,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Euclid's concentric-circle construction in Three Seventeen ingeniously avoids using the inscribed right angle in a semicircle, which is not proved until Three Thirty-One. As Heron and Heath note, extending D F to both sides of E A immediately yields two equal tangents from A equally inclined to the line of centers. In the GEOMETOR G-Index, node G one hundred nineteen combines circle center finding from Three One, SAS congruence from One Four, and the tangent criterion of Three Sixteen across forty-six ancestor nodes.",
+          "start_sec": 80.34,
+          "end_sec": 120.24,
+          "duration_sec": 39.9
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "bell": "bell:resolve",
+      "style": "speaking with a warm, composed, slightly measured cadence",
+      "text": "You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Seventeen in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.",
+      "start_sec": 120.24,
+      "end_sec": 145.66,
+      "duration_sec": 25.42,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Three Seventeen in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.",
+          "start_sec": 120.24,
+          "end_sec": 145.66,
+          "duration_sec": 25.42
+        }
+      ]
+    }
+  ]
+}

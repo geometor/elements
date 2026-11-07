@@ -1,0 +1,33 @@
+{
+  "prop_id": "BOOK II \u2022 PROP. 5",
+  "short_code": "II.5",
+  "g_id": "G.87",
+  "version": 2,
+  "enunciation": "If a segment be cut into equal and unequal segments, the rectangle contained by the unequal segments of the whole together with the square on the segment between the points of section is equal to the square on the half.",
+  "title_1080p": "II.5 \u2022 difference of squares equal unequal \u2022 Euclid's Elements",
+  "title_short": "II.5 \u2022 difference of squares equal unequal \u2022 Euclid's Elements",
+  "description": "\u201cIf a segment be cut into equal and unequal segments, the rectangle contained by the unequal segments of the whole together with the square on the segment between the points of section is equal to the square on the half.\u201d\n\u2014 Euclid's Elements, BOOK II \u2022 PROP. 5 (G.87)\n\n00:00 1 \u00b7 GIVEN: segment / A B / bisected at C and cut unequally at D\n00:19 2 \u00b7 CONSTRUCT: square \u27e8 C E F B \u27e9 on half / C B / and diagonal / B E /\n00:31 3 \u00b7 CONSTRUCT: parallels / D G /, / K M /, and / A K /\n00:43 4 \u00b7 ASSERT: \u27e8 C H \u27e9 = \u27e8 H F \u27e9 \u2192 \u27e8 C M \u27e9 = \u27e8 D F \u27e9 \u2192 \u27e8 A L \u27e9 = \u27e8 D F \u27e9\n01:01 5 \u00b7 ASSERT: \u27e8 A H \u27e9 = gnomon \u27e8 N O P \u27e9 = rect(/ A D /, / D B /)\n01:19 6 \u00b7 \u2234: rect(/ A D /, / D B /) + sq(/ C D /) = sq(/ C B /)\n01:37 7 \u00b7 COMMENTARY: geometric algebra: xy + (a/2 \u2212 y)\u00b2 = (a/2)\u00b2 & gnomon\n01:57 8 \u00b7 GENEALOGY: G.87 dependency tree & symbolic model\n02:16 9 \u00b7 PARTICIPATE: explore the GEOMETOR Elements Codex & participate\n\nExplore the interactive Book Codex, symbolic model, and dependency tree:\n\u2022 Elements Codex (G.87): https://geometor.github.io/elements/elements2/G.87/\n\u2022 Heath Edition (II.5): https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/05/\n\u2022 GitHub: https://github.com/geometor/elements\n\nGEOMETOR \u2022 G.87 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid II.5",
+    "G.87",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_ii/propositions/05/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.87/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/videos/book_ii/05/II_05_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/videos/book_ii/05/II_05_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/videos/book_ii/05/II_05.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/videos/book_ii/05/II_05_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/videos/book_ii/05/II_05_short_thumb.png"
+  }
+}

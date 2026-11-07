@@ -1,0 +1,33 @@
+{
+  "prop_id": "BOOK IV \u2022 PROP. 7",
+  "short_code": "IV.7",
+  "g_id": "G.159",
+  "version": 2,
+  "enunciation": "About a given circle to circumscribe a square.",
+  "title_1080p": "IV.7 \u2022 circumscribe square about circle \u2022 Euclid's Elements",
+  "title_short": "IV.7 \u2022 circumscribe square about circle \u2022 Euclid's Elements",
+  "description": "\u201cAbout a given circle to circumscribe a square.\u201d\n\u2014 Euclid's Elements, BOOK IV \u2022 PROP. 7 (G.159)\n\n00:00 1 \u00b7 GIVEN: given circle ( A B C D )\n00:12 2 \u00b7 CONSTRUCT: orthogonal diameters / A C / \u22a5 / B D / & tangents / F G /, / G H /, / H K /, / K F /\n00:31 3 \u00b7 ASSERT: right angles at contact points \u2192 parallel tangents & diameters\n00:44 4 \u00b7 ASSERT: parallelograms on equal diameters \u2192 \u27e8 F G H K \u27e9 is equilateral\n00:56 5 \u00b7 ASSERT: opposite angles in \u27e8 G B E A \u27e9 \u2192 \u27e8 F G H K \u27e9 is right-angled\n01:08 6 \u00b7 \u2234: square \u27e8 F G H K \u27e9 circumscribed about circle ( A B C D )\n01:21 7 \u00b7 COMMENTARY: Pitot's condition for tangential quadrilaterals\n01:38 8 \u00b7 GENEALOGY: G.159 dependency tree & symbolic model\n01:55 9 \u00b7 PARTICIPATE: explore the GEOMETOR Elements Codex & participate\n\nExplore the interactive Book Codex, symbolic model, and dependency tree:\n\u2022 Elements Codex (G.159): https://geometor.github.io/elements/elements2/G.159/\n\u2022 Heath Edition (IV.7): https://geometor.github.io/euclid/heath/volume_I/book_iv/propositions/07/\n\u2022 GitHub: https://github.com/geometor/elements\n\nGEOMETOR \u2022 G.159 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid IV.7",
+    "G.159",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_iv/propositions/07/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.159/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/videos/book_iv/07/IV_07_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/videos/book_iv/07/IV_07_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/videos/book_iv/07/IV_07.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/videos/book_iv/07/IV_07_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/videos/book_iv/07/IV_07_short_thumb.png"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "prop_id": "BOOK I \u2022 PROP. 17",
+  "short_code": "I.17",
+  "g_id": "G.42",
+  "version": 2,
+  "enunciation": "In any triangle two angles taken together in any manner are less than two right angles.",
+  "title_1080p": "I.17 \u2022 in any triangle two angles taken together in any manner are less than two right angles \u2022 E...",
+  "title_short": "I.17 \u2022 in any triangle two angles taken together in any manner are less than two right angles \u2022 E...",
+  "description": "\u201cIn any triangle two angles taken together in any manner are less than two right angles.\u201d\n\u2014 Euclid's Elements, BOOK I \u2022 PROP. 17 (G.42)\n\n00:00 1 \u00b7 GIVEN: \u27e8 A B C \u27e9\n00:13 2 \u00b7 CONSTRUCT: extend(/ B C /) \u2192 / C D /\n00:17 3 \u00b7 ASSERT: \u27e8 A C D ) \u27e9 \u27e8 A B C )\n00:26 4 \u00b7 ASSERT: \u27e8 A C D ) \u27e9 \u27e8 A B C ) \u2192 \u27e8 A C D ) + \u27e8 A C B ) \u27e9 \u27e8 A B C ) + \u27e8 B C A )\n00:34 5 \u00b7 ASSERT: / A C / on / B D / \u2192 \u27e8 A C D ) + \u27e8 A C B ) = 2\u221f\n00:42 6 \u00b7 \u2234: \u27e8 A B C ) + \u27e8 B C A ) \u27e8 2\u221f, \u27e8 B A C ) + \u27e8 A C B ) \u27e8 2\u221f, \u27e8 C A B ) + \u27e8 A B C ) \u27e8 2\u221f\n\nGEOMETOR \u2022 G.42 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid I.17",
+    "G.42",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/17/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.42/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/videos/book_i/17/I_17_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/videos/book_i/17/I_17_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/videos/book_i/17/I_17.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/videos/book_i/17/I_17_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/videos/book_i/17/I_17_short_thumb.png"
+  },
+  "uploads": {
+    "wide_1080p": {
+      "version": 2,
+      "video_id": "yhFj0tJDKjM",
+      "url": "https://youtu.be/yhFj0tJDKjM",
+      "studio_url": "https://studio.youtube.com/video/yhFj0tJDKjM/edit",
+      "caption_id": "AUieDabfelW9h99_3Fnta8YEYgnetg3x_1sWIWV-_aonmdIzZZdFUZlw",
+      "playlist_id": "PLUXlBs_QySgw",
+      "playlist_item_id": "UExVWGxCc19ReVNndy45RjNFMDhGQ0Q2RkFCQTc1",
+      "privacyStatus": "public",
+      "uploaded_at": "2026-11-04T15:53:53.926112+00:00",
+      "published_at": "2026-11-04T15:55:18.442729+00:00",
+      "thumbnail_set": true
+    },
+    "short": {
+      "version": 2,
+      "video_id": "dQuy_XKqpns",
+      "url": "https://youtube.com/shorts/dQuy_XKqpns",
+      "studio_url": "https://studio.youtube.com/video/dQuy_XKqpns/edit",
+      "caption_id": "AUieDaZg6468I6Pajs_4D1wVw7ruLyADSzJXN1BVaixuUuNkZKInw2WJ",
+      "playlist_id": "PLTJvna-1hErU",
+      "playlist_item_id": "UExUSnZuYS0xaEVyVS43MTI1NDIwOTMwQjIxMzNG",
+      "privacyStatus": "public",
+      "uploaded_at": "2026-11-04T15:55:07.970154+00:00",
+      "published_at": "2026-11-04T15:55:41.367911+00:00",
+      "thumbnail_set": true,
+      "updated_at": "2026-11-06T11:23:49.694324+00:00"
+    }
+  },
+  "history": {}
+}

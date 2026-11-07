@@ -1,0 +1,61 @@
+{
+  "voice_id": "voice_xdhacg1pn1cq",
+  "audio_wav": "/home/phi/PROJECTS/geometor/elements/videos/book_i/37/I_37.wav",
+  "total_duration_sec": 73.82,
+  "segments": [
+    {
+      "index": 0,
+      "bell": "bell:proposition",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Euclid's Elements, Book One, Proposition Thirty-Seven. Triangles on the same base and in the same parallels are equal in area. Let triangles A B C and D B C stand on the same base B C and lie between the same parallel lines A D and B C. We prove that triangle A B C is equal in area to triangle D B C.",
+      "start_sec": 0.0,
+      "end_sec": 19.61,
+      "duration_sec": 19.61,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Euclid's Elements, Book One, Proposition Thirty-Seven. Triangles on the same base and in the same parallels are equal in area. Let triangles A B C and D B C stand on the same base B C and lie between the same parallel lines A D and B C. We prove that triangle A B C is equal in area to triangle D B C.",
+          "start_sec": 0.0,
+          "end_sec": 19.61,
+          "duration_sec": 19.61
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "bell": "bell:construction",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Extend segment A D in both directions to points E and F. By Proposition Thirty-One, through point B draw segment B E parallel to segment C A, and through point C draw segment C F parallel to segment B D.",
+      "start_sec": 19.61,
+      "end_sec": 33.84,
+      "duration_sec": 14.23,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Extend segment A D in both directions to points E and F. By Proposition Thirty-One, through point B draw segment B E parallel to segment C A, and through point C draw segment C F parallel to segment B D.",
+          "start_sec": 19.61,
+          "end_sec": 33.84,
+          "duration_sec": 14.23
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "bell": "bell:insight",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Then each of the figures E B C A and D B C F is a parallelogram on the same base B C and between the same parallels B C and E F. By Proposition Thirty-Five, parallelogram E B C A is equal in area to parallelogram D B C F. By Proposition Thirty-Four, the diagonal A B bisects parallelogram E B C A, so triangle A B C is half of parallelogram E B C A. Likewise, the diagonal D C bisects parallelogram D B C F, so triangle D B C is half of parallelogram D B C F. Since the halves of equal things are equal to one another, triangle A B C is equal in area to triangle D B C, as was required to prove.",
+      "start_sec": 33.84,
+      "end_sec": 73.82,
+      "duration_sec": 39.98,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Then each of the figures E B C A and D B C F is a parallelogram on the same base B C and between the same parallels B C and E F. By Proposition Thirty-Five, parallelogram E B C A is equal in area to parallelogram D B C F. By Proposition Thirty-Four, the diagonal A B bisects parallelogram E B C A, so triangle A B C is half of parallelogram E B C A. Likewise, the diagonal D C bisects parallelogram D B C F, so triangle D B C is half of parallelogram D B C F. Since the halves of equal things are equal to one another, triangle A B C is equal in area to triangle D B C, as was required to prove.",
+          "start_sec": 33.84,
+          "end_sec": 73.82,
+          "duration_sec": 39.98
+        }
+      ]
+    }
+  ]
+}

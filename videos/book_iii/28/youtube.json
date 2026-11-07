@@ -1,0 +1,33 @@
+{
+  "prop_id": "BOOK III \u2022 PROP. 28",
+  "short_code": "III.28",
+  "g_id": "G.135",
+  "version": 2,
+  "enunciation": "In equal circles equal segments cut off equal arcs, the greater equal to the greater and the less to the less.",
+  "title_1080p": "III.28 \u2022 equal chords cut equal arcs \u2022 Euclid's Elements",
+  "title_short": "III.28 \u2022 equal chords cut equal arcs \u2022 Euclid's Elements",
+  "description": "\u201cIn equal circles equal segments cut off equal arcs, the greater equal to the greater and the less to the less.\u201d\n\u2014 Euclid's Elements, BOOK III \u2022 PROP. 28 (G.135)\n\n00:00 1 \u00b7 GIVEN: equal circles ( A B C ) = ( D E F ) and equal chords / A B / = / D E /\n00:26 2 \u00b7 CONSTRUCT: take centers K, L and join radii / A K /, / K B /, / D L /, / L E /\n00:34 3 \u00b7 ASSERT: \u27e8 A K B \u27e9 \u2243 \u27e8 D L E \u27e9 \u2192 \u27e8 A K B ) = \u27e8 D L E )\n00:47 4 \u00b7 ASSERT: \u27e8 A K B ) = \u27e8 D L E ) \u2192 lesser arcs ( A G B ) = ( D H E )\n01:00 5 \u00b7 \u2234: greater arcs ( A C B ) = ( D F E ) and lesser arcs ( A G B ) = ( D H E )\n01:13 6 \u00b7 COMMENTARY: the diameter case & chord-to-arc symmetry\n01:29 7 \u00b7 GENEALOGY: G.135 dependency tree & symbolic model\n01:45 8 \u00b7 PARTICIPATE: explore the GEOMETOR Elements Codex & participate\n\nExplore the interactive Book Codex, symbolic model, and dependency tree:\n\u2022 Elements Codex (G.135): https://geometor.github.io/elements/elements2/G.135/\n\u2022 Heath Edition (III.28): https://geometor.github.io/euclid/heath/volume_I/book_iii/propositions/28/\n\u2022 GitHub: https://github.com/geometor/elements\n\nGEOMETOR \u2022 G.135 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid III.28",
+    "G.135",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_iii/propositions/28/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.135/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/videos/book_iii/28/III_28_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/videos/book_iii/28/III_28_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/videos/book_iii/28/III_28.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/videos/book_iii/28/III_28_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/videos/book_iii/28/III_28_short_thumb.png"
+  }
+}

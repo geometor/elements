@@ -1,0 +1,64 @@
+{
+  "prop_id": "BOOK I \u2022 PROP. 45",
+  "short_code": "I.45",
+  "g_id": "G.74",
+  "version": 2,
+  "enunciation": "To construct, in a given rectilineal angle, a parallelogram equal to a given rectilineal figure.",
+  "title_1080p": "I.45 \u2022 to construct, in a given rectilineal angle, a parallelogram equal to a given rectilineal f...",
+  "title_short": "I.45 \u2022 to construct, in a given rectilineal angle, a parallelogram equal to a given rectilineal f...",
+  "description": "\u201cTo construct, in a given rectilineal angle, a parallelogram equal to a given rectilineal figure.\u201d\n\u2014 Euclid's Elements, BOOK I \u2022 PROP. 45 (G.74)\n\n00:00 1 \u00b7 GIVEN: \u27e8 A B C D \u27e9, \u27e8 E )\n00:20 2 \u00b7 CONSTRUCT: segment(D, B) \u2192 / D B /, parallelogram_from_triangle(\u27e8 A B D \u27e9, \u27e8 E )) \u2192 \u27e8 F K H G \u27e9 (= \u27e8 A B D \u27e9, \u27e8 H K F ) = \u27e8 E ))\n00:32 3 \u00b7 CONSTRUCT: apply_parallelogram_on_segment(/ G H /, \u27e8 D B C \u27e9, \u27e8 E )) \u2192 \u27e8 G H M L \u27e9 (= \u27e8 D B C \u27e9, \u27e8 G H M ) = \u27e8 E ))\n00:44 4 \u00b7 ASSERT: \u27e8 H K F ) = \u27e8 G H M ) \u2192 \u27e8 K H G ) + \u27e8 G H M ) = \u27e8 F K H ) + \u27e8 K H G ) = 2\u221f \u2192 / K H /, / H M / \u2208 [ K M ]\n01:05 5 \u00b7 ASSERT: \u27e8 M H G ) = \u27e8 H G F ) \u2192 \u27e8 H G F ) + \u27e8 H G L ) = \u27e8 M H G ) + \u27e8 H G L ) = 2\u221f \u2192 / F G /, / G L / \u2208 [ F L ]\n01:25 6 \u00b7 ASSERT: / F K / = / H G / = / M L /, / F K / \u2225 / H G / \u2225 / M L / \u2192 / K M / = / F L /, / K M / \u2225 / F L / \u2192 \u27e8 K F L M \u27e9\n01:46 7 \u00b7 \u2234: \u27e8 A B D \u27e9 = \u27e8 F K H G \u27e9, \u27e8 D B C \u27e9 = \u27e8 G H M L \u27e9 \u2192 \u27e8 K F L M \u27e9 = \u27e8 A B C D \u27e9 (\u27e8 F K M ) = \u27e8 E ))\n\nGEOMETOR \u2022 G.74 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid I.45",
+    "G.74",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/45/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.74/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/videos/book_i/45/I_45_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/videos/book_i/45/I_45_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/videos/book_i/45/I_45.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/videos/book_i/45/I_45_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/videos/book_i/45/I_45_short_thumb.png"
+  },
+  "uploads": {
+    "wide_1080p": {
+      "version": 2,
+      "video_id": "nzPEPnBX8Ek",
+      "url": "https://youtu.be/nzPEPnBX8Ek",
+      "studio_url": "https://studio.youtube.com/video/nzPEPnBX8Ek/edit",
+      "caption_id": null,
+      "playlist_id": "PLUXlBs_QySgw",
+      "playlist_item_id": "UExVWGxCc19ReVNndy4wRjhFM0MxMTU1MEUzQ0VB",
+      "privacyStatus": "private",
+      "publishAt": "2026-11-09T16:00:00Z",
+      "uploaded_at": "2026-11-05T17:03:21.031666+00:00",
+      "thumbnail_set": true,
+      "updated_at": "2026-11-06T08:09:47.584949+00:00"
+    },
+    "short": {
+      "version": 2,
+      "video_id": "c2LxdEkWn9Y",
+      "url": "https://youtube.com/shorts/c2LxdEkWn9Y",
+      "studio_url": "https://studio.youtube.com/video/c2LxdEkWn9Y/edit",
+      "caption_id": null,
+      "playlist_id": "PLTJvna-1hErU",
+      "playlist_item_id": "UExUSnZuYS0xaEVyVS42Qzk5MkEzQjVFQjYwRDA4",
+      "privacyStatus": "private",
+      "publishAt": "2026-11-09T16:00:00Z",
+      "uploaded_at": "2026-11-05T17:05:25.588646+00:00",
+      "thumbnail_set": true,
+      "updated_at": "2026-11-06T08:09:52.917933+00:00"
+    }
+  },
+  "history": {}
+}

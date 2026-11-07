@@ -1,0 +1,97 @@
+{
+  "voice_id": "voice_xdhacg1pn1cq",
+  "audio_wav": "/home/phi/PROJECTS/geometor/elements/videos/book_iii/36/III_36.wav",
+  "total_duration_sec": 127.62,
+  "segments": [
+    {
+      "index": 0,
+      "bell": "bell:proposition",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Elements, Book three, Proposition thirty-six. From a point outside a circle, if a secant line cuts the circle and a tangent line touches it, the rectangle contained by the whole secant and its external segment equals the square on the tangent. Let point D be taken outside circle A B C, let secant D C A cut the circle at C and A, and let D B touch the circle at B. We claim that the rectangle A D by C D equals the square on tangent D B.",
+      "start_sec": 0.0,
+      "end_sec": 25.93,
+      "duration_sec": 25.93,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Elements, Book three, Proposition thirty-six. From a point outside a circle, if a secant line cuts the circle and a tangent line touches it, the rectangle contained by the whole secant and its external segment equals the square on the tangent. Let point D be taken outside circle A B C, let secant D C A cut the circle at C and A, and let D B touch the circle at B. We claim that the rectangle A D by C D equals the square on tangent D B.",
+          "start_sec": 0.0,
+          "end_sec": 25.93,
+          "duration_sec": 25.93
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "bell": "bell:construction",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "When secant D C A passes through the center F, join radius F B from the center to the point of contact B. By Book three Proposition eighteen, the radius F B is perpendicular to the tangent D B, making angle F B D a right angle.",
+      "start_sec": 25.93,
+      "end_sec": 40.36,
+      "duration_sec": 14.43,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "When secant D C A passes through the center F, join radius F B from the center to the point of contact B. By Book three Proposition eighteen, the radius F B is perpendicular to the tangent D B, making angle F B D a right angle.",
+          "start_sec": 25.93,
+          "end_sec": 40.36,
+          "duration_sec": 14.43
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "bell": "bell:insight",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Since diameter A C is bisected at the center F and extended in a straight line by C D, Book two Proposition six states that the rectangle A D by C D plus the square on F C equals the square on F D. Because radii F C and F B are equal, we can substitute the square on F B, so the rectangle A D by C D plus the square on F B equals the square on F D. By the Pythagorean theorem on right triangle F B D, the square on F B plus the square on D B also equals the square on hypotenuse F D. Subtracting the common square on F B leaves the rectangle A D by C D equal to the square on tangent D B, as was required to prove.",
+      "start_sec": 40.36,
+      "end_sec": 82.54,
+      "duration_sec": 42.18,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Since diameter A C is bisected at the center F and extended in a straight line by C D, Book two Proposition six states that the rectangle A D by C D plus the square on F C equals the square on F D. Because radii F C and F B are equal, we can substitute the square on F B, so the rectangle A D by C D plus the square on F B equals the square on F D. By the Pythagorean theorem on right triangle F B D, the square on F B plus the square on D B also equals the square on hypotenuse F D. Subtracting the common square on F B leaves the rectangle A D by C D equal to the square on tangent D B, as was required to prove.",
+          "start_sec": 40.36,
+          "end_sec": 82.54,
+          "duration_sec": 42.18
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "bell": "bell:system",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "When the secant does not pass through the center, Euclid drops a perpendicular from the center to bisect chord A C and applies the Pythagorean theorem twice to reach the exact same identity. Together with Proposition thirty-five, this completes the exterior Power of a Point theorem: for any secant from D, the product A D by C D equals the square on tangent D B\u2014and therefore any two secants from the same external point contain equal rectangles. In the GEOMETOR dependency graph, Proposition thirty-six unites sixty ancestor nodes across Books one, two, and three, and directly powers both its converse in Proposition thirty-seven and the golden-triangle construction for the regular pentagon in Book four Proposition ten.",
+      "start_sec": 82.54,
+      "end_sec": 121.88,
+      "duration_sec": 39.34,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "When the secant does not pass through the center, Euclid drops a perpendicular from the center to bisect chord A C and applies the Pythagorean theorem twice to reach the exact same identity. Together with Proposition thirty-five, this completes the exterior Power of a Point theorem: for any secant from D, the product A D by C D equals the square on tangent D B\u2014and therefore any two secants from the same external point contain equal rectangles. In the GEOMETOR dependency graph, Proposition thirty-six unites sixty ancestor nodes across Books one, two, and three, and directly powers both its converse in Proposition thirty-seven and the golden-triangle construction for the regular pentagon in Book four Proposition ten.",
+          "start_sec": 82.54,
+          "end_sec": 121.88,
+          "duration_sec": 39.34
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "bell": "bell:resolve",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Explore the interactive construction, symbolic proof, and dependency graph at geometor dot github dot io.",
+      "start_sec": 121.88,
+      "end_sec": 127.62,
+      "duration_sec": 5.74,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Explore the interactive construction, symbolic proof, and dependency graph at geometor dot github dot io.",
+          "start_sec": 121.88,
+          "end_sec": 127.62,
+          "duration_sec": 5.74
+        }
+      ]
+    }
+  ]
+}

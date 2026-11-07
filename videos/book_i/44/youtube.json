@@ -1,0 +1,64 @@
+{
+  "prop_id": "BOOK I \u2022 PROP. 44",
+  "short_code": "I.44",
+  "g_id": "G.73",
+  "version": 2,
+  "enunciation": "To a given straight line to apply, in a given rectilineal angle, a parallelogram equal to a given triangle.",
+  "title_1080p": "I.44 \u2022 to a given straight line to apply, in a given rectilineal angle, a parallelogram equal to ...",
+  "title_short": "I.44 \u2022 to a given straight line to apply, in a given rectilineal angle, a parallelogram equal to ...",
+  "description": "\u201cTo a given straight line to apply, in a given rectilineal angle, a parallelogram equal to a given triangle.\u201d\n\u2014 Euclid's Elements, BOOK I \u2022 PROP. 44 (G.73)\n\n00:00 1 \u00b7 GIVEN: / A B /, \u27e8 C \u27e9, \u27e8 D )\n00:22 2 \u00b7 CONSTRUCT: parallelogram_from_triangle(\u27e8 C \u27e9, \u27e8 D )) \u2192 \u27e8 B E F G \u27e9, parallel_line(A, / B G /) \u2192 / A H /, segment(H, B) \u2192 / H B /\n00:35 3 \u00b7 ASSERT: / A H / \u2225 / E F / \u2192 \u27e8 A H F ) + \u27e8 H F E ) = 2\u221f \u2192 \u27e8 B H G ) + \u27e8 G F E ) \u27e8 2\u221f \u2192 [ H B ] \u2229 [ F E ] \u2260 \u2205\n00:48 4 \u00b7 CONSTRUCT: extend(/ H B /, / F E /) \u2192 K, parallel_line(K, / E A /) \u2192 / K L /, extend(/ H A /, / G B /) \u2192 L, M\n01:00 5 \u00b7 ASSERT: \u27e8 H L K F \u27e9, / H K / \u2192 \u27e8 A B M L \u27e9 = \u27e8 B E F G \u27e9 = \u27e8 C \u27e9 \u2192 \u27e8 A B M L \u27e9 = \u27e8 C \u27e9\n01:15 6 \u00b7 ASSERT: \u27e8 A B M ) = \u27e8 E B G ) = \u27e8 D ) \u2192 \u27e8 A B M ) = \u27e8 D )\n01:29 7 \u00b7 \u2234: \u27e8 A B M L \u27e9 = \u27e8 C \u27e9, \u27e8 A B M ) = \u27e8 D )\n\nGEOMETOR \u2022 G.73 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid I.44",
+    "G.73",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/44/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.73/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/videos/book_i/44/I_44_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/videos/book_i/44/I_44_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/videos/book_i/44/I_44.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/videos/book_i/44/I_44_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/videos/book_i/44/I_44_short_thumb.png"
+  },
+  "uploads": {
+    "wide_1080p": {
+      "version": 2,
+      "video_id": "P_7dqpeLLys",
+      "url": "https://youtu.be/P_7dqpeLLys",
+      "studio_url": "https://studio.youtube.com/video/P_7dqpeLLys/edit",
+      "caption_id": null,
+      "playlist_id": "PLUXlBs_QySgw",
+      "playlist_item_id": "UExVWGxCc19ReVNndy41OURENDc2NEM1MDI5Mjky",
+      "privacyStatus": "private",
+      "publishAt": "2026-11-09T12:00:00Z",
+      "uploaded_at": "2026-11-05T17:00:49.829469+00:00",
+      "thumbnail_set": true,
+      "updated_at": "2026-11-06T08:09:38.374062+00:00"
+    },
+    "short": {
+      "version": 2,
+      "video_id": "ugHMlKGhHoI",
+      "url": "https://youtube.com/shorts/ugHMlKGhHoI",
+      "studio_url": "https://studio.youtube.com/video/ugHMlKGhHoI/edit",
+      "caption_id": null,
+      "playlist_id": "PLTJvna-1hErU",
+      "playlist_item_id": "UExUSnZuYS0xaEVyVS4zMEQ1MEIyRTFGNzhDQzFB",
+      "privacyStatus": "private",
+      "publishAt": "2026-11-09T12:00:00Z",
+      "uploaded_at": "2026-11-05T17:01:58.018030+00:00",
+      "thumbnail_set": true,
+      "updated_at": "2026-11-06T08:09:43.072422+00:00"
+    }
+  },
+  "history": {}
+}

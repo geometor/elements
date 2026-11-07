@@ -10,7 +10,7 @@ def main() -> None:
     txt = p.read_text(encoding="utf-8")
     lines = []
     merged_keys = []
-    for cpath in sorted(pathlib.Path("resources/videos").glob("book_*/*/curated.json")):
+    for cpath in sorted(pathlib.Path("videos").glob("book_*/*/curated.json")):
         raw = cpath.read_text(encoding="utf-8")
         cleaned = re.sub(r'\\{2,}(?= )', r'\\\\', raw)
         cleaned = re.sub(r'(?<!\\)\\(?![/\"\\bfnrtu])', r'\\\\', cleaned)

@@ -1,0 +1,97 @@
+{
+  "voice_id": "voice_xdhacg1pn1cq",
+  "audio_wav": "/home/phi/PROJECTS/geometor/elements/videos/book_iv/15/IV_15.wav",
+  "total_duration_sec": 176.42,
+  "segments": [
+    {
+      "index": 0,
+      "bell": "bell:proposition",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: brisk, clear, architectural voice; steady studio cadence] Book Four, Proposition Fifteen. In a given circle to inscribe an equilateral and equiangular hexagon. Let A B C D E F be the given circle; it is required to inscribe an equilateral and equiangular hexagon in the circle A B C D E F.",
+      "start_sec": 0.0,
+      "end_sec": 16.61,
+      "duration_sec": 16.61,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: brisk, clear, architectural voice; steady studio cadence] Book Four, Proposition Fifteen. In a given circle to inscribe an equilateral and equiangular hexagon. Let A B C D E F be the given circle; it is required to inscribe an equilateral and equiangular hexagon in the circle A B C D E F.",
+          "start_sec": 0.0,
+          "end_sec": 16.61,
+          "duration_sec": 16.61
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "bell": "bell:construction",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: methodical, precise constructive cadence] Draw the diameter A D of the circle, take the center G, and with center D and radius D G describe the circle E G C H. Join E G and C G, carry them through to the points B and F, and join A B, B C, C D, D E, E F, and F A.",
+      "start_sec": 16.61,
+      "end_sec": 35.8,
+      "duration_sec": 19.19,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: methodical, precise constructive cadence] Draw the diameter A D of the circle, take the center G, and with center D and radius D G describe the circle E G C H. Join E G and C G, carry them through to the points B and F, and join A B, B C, C D, D E, E F, and F A.",
+          "start_sec": 16.61,
+          "end_sec": 35.8,
+          "duration_sec": 19.19
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "bell": "bell:insight",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: luminous, deductive geometric clarity] Because G is the center of circle A B C D E F and D is the center of circle E G C H, the segments G E, G D, and D E are all equal. Thus triangle E G D\u2014and similarly triangle D G C\u2014is equilateral, so by One Five and One Thirty-Two the angles E G D and D G C are each one-third of two right angles. Since C G standing on E B makes adjacent angles equal to two right angles, the remaining angle C G B is also one-third of two right angles, and by One Fifteen the vertical angles B G A, A G F, and F G E are equal to them; hence all six central angles at G are equal. By Three Twenty-Six, equal central angles stand on equal arcs A B, B C, C D, D E, E F, and F A; and by Three Twenty-Nine, equal arcs are subtended by equal chords, so the hexagon A B C D E F is equilateral. Finally, adding arc A B C D to the equal arcs F A and D E makes arc F A B C D equal to arc E D C B A, so by Three Twenty-Seven angle F E D equals angle A F E, and all six interior angles are equal. Therefore the equilateral and equiangular hexagon A B C D E F has been inscribed in the circle, and its side equals the radius. Which was to be done.",
+      "start_sec": 35.8,
+      "end_sec": 118.74,
+      "duration_sec": 82.94,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: luminous, deductive geometric clarity] Because G is the center of circle A B C D E F and D is the center of circle E G C H, the segments G E, G D, and D E are all equal. Thus triangle E G D\u2014and similarly triangle D G C\u2014is equilateral, so by One Five and One Thirty-Two the angles E G D and D G C are each one-third of two right angles. Since C G standing on E B makes adjacent angles equal to two right angles, the remaining angle C G B is also one-third of two right angles, and by One Fifteen the vertical angles B G A, A G F, and F G E are equal to them; hence all six central angles at G are equal. By Three Twenty-Six, equal central angles stand on equal arcs A B, B C, C D, D E, E F, and F A; and by Three Twenty-Nine, equal arcs are subtended by equal chords, so the hexagon A B C D E F is equilateral. Finally, adding arc A B C D to the equal arcs F A and D E makes arc F A B C D equal to arc E D C B A, so by Three Twenty-Seven angle F E D equals angle A F E, and all six interior angles are equal. Therefore the equilateral and equiangular hexagon A B C D E F has been inscribed in the circle, and its side equals the radius. Which was to be done.",
+          "start_sec": 35.8,
+          "end_sec": 118.74,
+          "duration_sec": 82.94
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "bell": "bell:system",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: reflective, scholarly, architectural synthesis] Proposition Four Fifteen contains the celebrated Porism\u2014cited by Proclus as the quintessential porism to a problem\u2014that the side of the regular hexagon equals the radius of its circumscribed circle, dividing the circle into six equilateral triangles via a Vesica Piscis on radius G D. In the GEOMETOR G-Index, node G one hundred sixty-seven synthesizes twenty direct prerequisites across sixty-eight ancestor nodes, and powers the Book Thirteen golden-section theorems of Thirteen Nine and Thirteen Ten, where the squares on the hexagon and decagon sides sum to the square on the pentagon side.",
+      "start_sec": 118.74,
+      "end_sec": 155.48,
+      "duration_sec": 36.74,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: reflective, scholarly, architectural synthesis] Proposition Four Fifteen contains the celebrated Porism\u2014cited by Proclus as the quintessential porism to a problem\u2014that the side of the regular hexagon equals the radius of its circumscribed circle, dividing the circle into six equilateral triangles via a Vesica Piscis on radius G D. In the GEOMETOR G-Index, node G one hundred sixty-seven synthesizes twenty direct prerequisites across sixty-eight ancestor nodes, and powers the Book Thirteen golden-section theorems of Thirteen Nine and Thirteen Ten, where the squares on the hexagon and decagon sides sum to the square on the pentagon side.",
+          "start_sec": 118.74,
+          "end_sec": 155.48,
+          "duration_sec": 36.74
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "bell": "bell:resolve",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "[style: warm, inviting, resonant studio close] You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Four Fifteen in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.",
+      "start_sec": 155.48,
+      "end_sec": 176.42,
+      "duration_sec": 20.94,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "[style: warm, inviting, resonant studio close] You can explore the interactive diagram, trace the full dependency graph, and run the symbolic Python construction for Proposition Four Fifteen in the GEOMETOR Elements codex at geometor dot github dot i o slash elements. Subscribe, share your questions in the comments, and join us in mapping the logical architecture of geometry.",
+          "start_sec": 155.48,
+          "end_sec": 176.42,
+          "duration_sec": 20.94
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "prop_id": "BOOK I \u2022 PROP. 11",
+  "short_code": "I.11",
+  "g_id": "G.34",
+  "version": 2,
+  "enunciation": "To draw a straight line at right angles to a given straight line from a given point on it.",
+  "title_1080p": "I.11 \u2022 construct a perpendicular at a point on a line \u2022 Euclid's Elements",
+  "title_short": "I.11 \u2022 construct a perpendicular at a point on a line \u2022 Euclid's Elements",
+  "description": "\u201cTo draw a straight line at right angles to a given straight line from a given point on it.\u201d\n\u2014 Euclid's Elements, BOOK I \u2022 PROP. 11 (G.34)\n\n00:00 1 \u00b7 GIVEN: segment AB and point C on AB\n00:07 2 \u00b7 GOAL: construct CF \u22a5 AB at C\n00:13 3 \u00b7 CONSTRUCT: take point D on AC\n00:18 4 \u00b7 CONSTRUCT: cut off CE = CD on CB\n00:24 5 \u00b7 CONSTRUCT: equilateral triangle FDE on DE\n00:29 6 \u00b7 CONSTRUCT: segment FC\n00:35 7 \u00b7 ASSERT: angle DCF = angle ECF by SSS\n00:52 8 \u00b7 \u2234: CF \u22a5 AB at point C\n\nGEOMETOR \u2022 G.34 \u2022 v2",
+  "tags": [
+    "Euclid",
+    "Euclid's Elements",
+    "Euclid I.11",
+    "G.34",
+    "Geometry",
+    "Constructive Geometry",
+    "Compass and Straightedge",
+    "Mathematical Proof",
+    "GEOMETOR",
+    "Thomas Little Heath"
+  ],
+  "categoryId": "27",
+  "privacyStatus": "unlisted",
+  "euclid_url": "https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/11/",
+  "elements_url": "https://geometor.github.io/elements/elements2/G.34/",
+  "files": {
+    "short_mp4": "/home/phi/PROJECTS/geometor/elements/videos/book_i/11/I_11_short.mp4",
+    "wide_1080p_mp4": "/home/phi/PROJECTS/geometor/elements/videos/book_i/11/I_11_1080p.mp4",
+    "captions_srt": "/home/phi/PROJECTS/geometor/elements/videos/book_i/11/I_11.srt",
+    "thumbnail_16x9_png": "/home/phi/PROJECTS/geometor/elements/videos/book_i/11/I_11_thumb.png",
+    "thumbnail_9x16_png": "/home/phi/PROJECTS/geometor/elements/videos/book_i/11/I_11_short_thumb.png"
+  },
+  "uploads": {
+    "wide_1080p": {
+      "version": 2,
+      "video_id": "nS_nF0U6PZs",
+      "url": "https://youtu.be/nS_nF0U6PZs",
+      "studio_url": "https://studio.youtube.com/video/nS_nF0U6PZs/edit",
+      "caption_id": null,
+      "playlist_id": "PLUXlBs_QySgw",
+      "playlist_item_id": "UExVWGxCc19ReVNndy44Mjc5REFBRUE2MTdFRDU0",
+      "privacyStatus": "public",
+      "uploaded_at": "2026-11-03T03:05:03.600826+00:00",
+      "published_at": "2026-11-03T03:11:21.339508+00:00",
+      "thumbnail_set": true
+    },
+    "short": {
+      "version": 2,
+      "video_id": "dVjQ-qk0vaY",
+      "url": "https://youtube.com/shorts/dVjQ-qk0vaY",
+      "studio_url": "https://studio.youtube.com/video/dVjQ-qk0vaY/edit",
+      "caption_id": null,
+      "playlist_id": "PLTJvna-1hErU",
+      "playlist_item_id": "UExUSnZuYS0xaEVyVS45RTgxNDRBMzUwRjQ0MDhC",
+      "privacyStatus": "public",
+      "uploaded_at": "2026-11-03T03:06:33.568237+00:00",
+      "published_at": "2026-11-03T03:11:22.482343+00:00",
+      "thumbnail_set": true,
+      "updated_at": "2026-11-06T11:23:16.223328+00:00"
+    }
+  },
+  "history": {}
+}

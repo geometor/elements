@@ -1,0 +1,61 @@
+{
+  "voice_id": "voice_xdhacg1pn1cq",
+  "audio_wav": "/home/phi/PROJECTS/geometor/elements/videos/book_i/39/I_39.wav",
+  "total_duration_sec": 74.66,
+  "segments": [
+    {
+      "index": 0,
+      "bell": "bell:proposition",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Euclid's Elements, Book One, Proposition Thirty-Nine. Equal triangles on the same base and on the same side lie in the same parallels. Let triangles A B C and D B C be equal in area, standing on the same base B C and on the same side of it. We prove that the segment A D joining their vertices is parallel to base B C.",
+      "start_sec": 0.0,
+      "end_sec": 20.37,
+      "duration_sec": 20.37,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Euclid's Elements, Book One, Proposition Thirty-Nine. Equal triangles on the same base and on the same side lie in the same parallels. Let triangles A B C and D B C be equal in area, standing on the same base B C and on the same side of it. We prove that the segment A D joining their vertices is parallel to base B C.",
+          "start_sec": 0.0,
+          "end_sec": 20.37,
+          "duration_sec": 20.37
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "bell": "bell:construction",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Join point A to point D with segment A D. Suppose segment A D is not parallel to segment B C. Then by Proposition Thirty-One, through point A draw segment A E parallel to segment B C, meeting segment B D at point E, and join point E to point C.",
+      "start_sec": 20.37,
+      "end_sec": 36.08,
+      "duration_sec": 15.71,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Join point A to point D with segment A D. Suppose segment A D is not parallel to segment B C. Then by Proposition Thirty-One, through point A draw segment A E parallel to segment B C, meeting segment B D at point E, and join point E to point C.",
+          "start_sec": 20.37,
+          "end_sec": 36.08,
+          "duration_sec": 15.71
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "bell": "bell:insight",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Since triangles A B C and E B C stand on the same base B C and lie in the same parallels B C and A E, by Proposition Thirty-Seven, triangle A B C equals triangle E B C. Yet by hypothesis, triangle A B C equals triangle D B C. By Common Notion One, things equal to the same thing are equal to one another, so triangle D B C equals triangle E B C, the greater equal to the less, which is impossible. Thus segment A E cannot be parallel to segment B C, nor can any other line through point A except segment A D. Therefore segment A D is parallel to segment B C, as was required to prove.",
+      "start_sec": 36.08,
+      "end_sec": 74.66,
+      "duration_sec": 38.58,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Since triangles A B C and E B C stand on the same base B C and lie in the same parallels B C and A E, by Proposition Thirty-Seven, triangle A B C equals triangle E B C. Yet by hypothesis, triangle A B C equals triangle D B C. By Common Notion One, things equal to the same thing are equal to one another, so triangle D B C equals triangle E B C, the greater equal to the less, which is impossible. Thus segment A E cannot be parallel to segment B C, nor can any other line through point A except segment A D. Therefore segment A D is parallel to segment B C, as was required to prove.",
+          "start_sec": 36.08,
+          "end_sec": 74.66,
+          "duration_sec": 38.58
+        }
+      ]
+    }
+  ]
+}
