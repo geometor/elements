@@ -14,18 +14,23 @@ DESCRIPTION
 “On a given finite straight line to construct an equilateral triangle.”
 — Euclid's Elements, BOOK I • PROP. 1 (G.17)
 
-00:00 1 · GIVEN: given / A B /
-00:06 2 · GOAL: equilateral_triangle(/ A B /) → ⟨ A B C ⟩
+00:00 1 · GIVEN: given: / A B /
+00:05 2 · GOAL: equilateral_triangle(/ A B /) → ⟨ A B C ⟩
 00:10 3 · CONSTRUCT: circle(A, B) → ( A B )
-00:14 4 · CONSTRUCT: circle(B, A) → ( B A )
+00:15 4 · CONSTRUCT: circle(B, A) → ( B A )
 00:19 5 · INTERSECT: ( A B ) ∩ ( B A ) → C
-00:21 6 · CONSTRUCT: segment(C, A) → / C A /, segment(C, B) → / C B /
-00:24 7 · ASSERT: ( A B ) → / A C / = / A B /
-00:29 8 · ASSERT: ( B A ) → / B C / = / B A /
-00:34 9 · ASSERT: / C A / = / A B /, / B C / = / A B / → / C A / = / B C /
-00:41 10 · ∴: / C A / = / A B / = / B C / → ⟨ A B C ⟩
+00:22 6 · CONSTRUCT: segment(C, A) → / C A /, segment(C, B) → / C B /
+00:26 7 · ASSERT: ( A B ) → / A C / = / A B /
+00:32 8 · ASSERT: ( B A ) → / B C / = / B A /
+00:38 9 · ASSERT: / C A / = / A B /, / B C / = / A B / → / C A / = / B C /
+00:45 10 · ∴: / C A / = / A B / = / B C / → ⟨ A B C ⟩
 
-GEOMETOR • G.17 • v5
+Explore the interactive Book Codex, symbolic model, and dependency tree:
+• Elements Codex (G.17): https://geometor.github.io/elements/elements2/G.17/
+• Heath Edition (I.1): https://geometor.github.io/euclid/heath/volume_I/book_i/propositions/01/
+• GitHub: https://github.com/geometor/elements
+
+GEOMETOR • G.17 • v6
 
 ================================================================================
 TAGS

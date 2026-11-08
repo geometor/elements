@@ -1,41 +1,49 @@
 WEBVTT
 
 1
-00:00:00.420 --> 00:00:03.155
-Euclid's Elements, Book One, Proposition One.
+00:00:00.420 --> 00:00:01.802
+Euclid's Elements.
 
 2
-00:00:03.155 --> 00:00:06.376
-Construct an equilateral triangle on a given segment.
+00:00:01.802 --> 00:00:03.797
+Book One, Proposition One.
 
 3
-00:00:06.376 --> 00:00:10.570
-Given segment A B, we are to construct an equilateral triangle on it.
+00:00:03.797 --> 00:00:05.870
+Given a finite segment A B,
 
 4
-00:00:10.990 --> 00:00:15.284
-Construct circle A B, with center A and defining radius point B.
+00:00:06.020 --> 00:00:10.190
+construct an equilateral triangle A B C upon it.
 
 5
-00:00:15.284 --> 00:00:19.914
-Then construct circle B A, with center B and defining radius point A.
+00:00:10.610 --> 00:00:15.040
+With center A and radius A B, describe circle A B.
 
 6
-00:00:19.914 --> 00:00:24.880
-From point C, where the circles intersect, construct segments C A and C B.
+00:00:15.190 --> 00:00:19.720
+With center B and radius B A, describe circle B A.
 
 7
-00:00:25.300 --> 00:00:29.582
-Since A is the center of circle A B, segment A C equals segment A B.
+00:00:19.870 --> 00:00:22.960
+Mark point C where the two circles intersect,
 
 8
-00:00:29.582 --> 00:00:33.864
-Since B is the center of circle B A, segment B C equals segment B A.
+00:00:23.110 --> 00:00:26.160
+and join segments C A and C B.
 
 9
-00:00:33.864 --> 00:00:41.042
-By Common Notion One, things equal to the same thing are equal to one another, so A C, A B, and B C are all equal.
+00:00:26.580 --> 00:00:32.540
+Since A is the center of circle A B, segment A C equals segment A B.
 
 10
-00:00:41.042 --> 00:00:48.220
-Therefore triangle A B C is equilateral, and has been constructed on the given segment A B, as was required to do.
+00:00:32.690 --> 00:00:38.120
+Since B is the center of circle B A, segment B C also equals segment B A.
+
+11
+00:00:38.270 --> 00:00:45.180
+Things equal to the same thing are equal to one another, so A C, A B, and B C are all equal.
+
+12
+00:00:45.330 --> 00:00:51.620
+Therefore triangle A B C is equilateral, constructed on the given segment A B, as was required to do.
