@@ -1,108 +1,237 @@
 {
   "voice_id": "voice_xdhacg1pn1cq",
   "audio_wav": "/home/phi/PROJECTS/geometor/elements/videos/book_i/01/I_01.wav",
-  "total_duration_sec": 51.62,
+  "total_duration_sec": 47.682,
   "segments": [
     {
       "index": 0,
+      "section_id": "intro",
+      "folder_name": "00_intro",
       "bell": "bell:proposition",
       "style": "speaking briskly, nimble, crisp, and composed",
-      "text": "Euclid's Elements. Book One, Proposition One. Given a finite segment A B, construct an equilateral triangle A B C upon it.",
+      "text": "Book One. Proposition One. of Euclid's Elements Construct an equilateral triangle.",
       "start_sec": 0.0,
-      "end_sec": 10.19,
-      "duration_sec": 10.19,
+      "end_sec": 5.45,
+      "duration_sec": 5.45,
       "subsegments": [
         {
           "index": 0,
-          "text": "Euclid's Elements. Book One, Proposition One. Given a finite segment A B,",
+          "text": "Book One. Proposition One. of Euclid's Elements Construct an equilateral triangle.",
           "start_sec": 0.0,
-          "end_sec": 5.87,
-          "duration_sec": 5.87
-        },
-        {
-          "index": 1,
-          "text": "construct an equilateral triangle A B C upon it.",
-          "start_sec": 5.87,
-          "end_sec": 10.19,
-          "duration_sec": 4.32
+          "end_sec": 5.45,
+          "duration_sec": 5.45
         }
       ]
     },
     {
       "index": 1,
-      "bell": "bell:construction",
+      "section_id": "enunciation",
+      "folder_name": "01_enunciation",
+      "bell": null,
       "style": "speaking briskly, nimble, crisp, and composed",
-      "text": "With center A and radius A B, describe circle A B. With center B and radius B A, describe circle B A. Mark point C where the two circles intersect, and join segments C A and C B.",
-      "start_sec": 10.19,
-      "end_sec": 26.16,
-      "duration_sec": 15.97,
+      "text": "Given segment A B, construct equilateral triangle A B C.",
+      "start_sec": 5.45,
+      "end_sec": 10.81,
+      "duration_sec": 5.36,
       "subsegments": [
         {
           "index": 0,
-          "text": "With center A and radius A B, describe circle A B.",
-          "start_sec": 10.19,
-          "end_sec": 15.04,
-          "duration_sec": 4.85
+          "text": "Given segment A B,",
+          "start_sec": 5.45,
+          "end_sec": 7.45,
+          "duration_sec": 2.0
         },
         {
           "index": 1,
-          "text": "With center B and radius B A, describe circle B A.",
-          "start_sec": 15.04,
-          "end_sec": 19.72,
-          "duration_sec": 4.68
-        },
-        {
-          "index": 2,
-          "text": "Mark point C where the two circles intersect,",
-          "start_sec": 19.72,
-          "end_sec": 22.96,
-          "duration_sec": 3.24
-        },
-        {
-          "index": 3,
-          "text": "and join segments C A and C B.",
-          "start_sec": 22.96,
-          "end_sec": 26.16,
-          "duration_sec": 3.2
+          "text": "construct equilateral triangle A B C.",
+          "start_sec": 7.45,
+          "end_sec": 10.81,
+          "duration_sec": 3.36
         }
       ]
     },
     {
       "index": 2,
-      "bell": "bell:insight",
+      "section_id": "construction",
+      "folder_name": "02_construction",
+      "bell": "bell:construction",
       "style": "speaking briskly, nimble, crisp, and composed",
-      "text": "Since A is the center of circle A B, segment A C equals segment A B. Since B is the center of circle B A, segment B C also equals segment B A. Things equal to the same thing are equal to one another, so A C, A B, and B C are all equal. Therefore triangle A B C is equilateral, constructed on the given segment A B, as was required to do.",
-      "start_sec": 26.16,
-      "end_sec": 51.62,
-      "duration_sec": 25.46,
+      "text": "Construct circle A B. Construct circle B A. Mark intersection C. Construct segments C A and C B.",
+      "start_sec": 10.81,
+      "end_sec": 21.18,
+      "duration_sec": 10.37,
       "subsegments": [
         {
           "index": 0,
-          "text": "Since A is the center of circle A B, segment A C equals segment A B.",
-          "start_sec": 26.16,
-          "end_sec": 32.54,
-          "duration_sec": 6.38
+          "text": "Construct circle A B.",
+          "start_sec": 10.81,
+          "end_sec": 13.7,
+          "duration_sec": 2.89
         },
         {
           "index": 1,
-          "text": "Since B is the center of circle B A, segment B C also equals segment B A.",
-          "start_sec": 32.54,
-          "end_sec": 38.12,
-          "duration_sec": 5.58
+          "text": "Construct circle B A.",
+          "start_sec": 13.7,
+          "end_sec": 16.14,
+          "duration_sec": 2.44
         },
         {
           "index": 2,
-          "text": "Things equal to the same thing are equal to one another, so A C, A B, and B C are all equal.",
-          "start_sec": 38.12,
-          "end_sec": 45.18,
-          "duration_sec": 7.06
+          "text": "Mark intersection C.",
+          "start_sec": 16.14,
+          "end_sec": 18.22,
+          "duration_sec": 2.08
         },
         {
           "index": 3,
-          "text": "Therefore triangle A B C is equilateral, constructed on the given segment A B, as was required to do.",
-          "start_sec": 45.18,
-          "end_sec": 51.62,
-          "duration_sec": 6.44
+          "text": "Construct segments C A and C B.",
+          "start_sec": 18.22,
+          "end_sec": 21.18,
+          "duration_sec": 2.96
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "section_id": "demonstration",
+      "folder_name": "03_demonstration",
+      "bell": "bell:insight",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "Radii A C and A B are equal. Radii B C and B A are equal. Therefore A C, A B, and B C are all equal. Triangle A B C is equilateral.",
+      "start_sec": 21.18,
+      "end_sec": 35.36,
+      "duration_sec": 14.18,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "Radii A C and A B are equal.",
+          "start_sec": 21.18,
+          "end_sec": 24.92,
+          "duration_sec": 3.74
+        },
+        {
+          "index": 1,
+          "text": "Radii B C and B A are equal.",
+          "start_sec": 24.92,
+          "end_sec": 28.26,
+          "duration_sec": 3.34
+        },
+        {
+          "index": 2,
+          "text": "Therefore A C, A B, and B C are all equal.",
+          "start_sec": 28.26,
+          "end_sec": 32.32,
+          "duration_sec": 4.06
+        },
+        {
+          "index": 3,
+          "text": "Triangle A B C is equilateral.",
+          "start_sec": 32.32,
+          "end_sec": 35.36,
+          "duration_sec": 3.04
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "section_id": "review",
+      "folder_name": "04_review",
+      "bell": "bell:construction",
+      "style": "harmonic_review",
+      "text": "\ud83d\udd0a Sound-Only Replay \u2022 [bell:construction] [sfx:segment] \ud83d\udd0a Sound-Only Replay \u2022 [sfx:qed] \ud83d\udd0a Sound-Only Replay \u2022 [sfx:circle] \ud83d\udd0a Sound-Only Replay \u2022 [sfx:circle] \ud83d\udd0a Sound-Only Replay \u2022 [sfx:intersect] \ud83d\udd0a Sound-Only Replay \u2022 [sfx:segment] \ud83d\udd0a Sound-Only Replay \u2022 [sfx:equal] \ud83d\udd0a Sound-Only Replay \u2022 [sfx:equal] \ud83d\udd0a Sound-Only Replay \u2022 [sfx:equal] \ud83d\udd0a Sound-Only Replay \u2022 [sfx:qed]",
+      "start_sec": 35.36,
+      "end_sec": 44.482,
+      "duration_sec": 9.122,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "\ud83d\udd0a Sound-Only Replay \u2022 [bell:construction] [sfx:segment]",
+          "start_sec": 35.36,
+          "end_sec": 36.45,
+          "duration_sec": 1.09
+        },
+        {
+          "index": 1,
+          "text": "\ud83d\udd0a Sound-Only Replay \u2022 [sfx:qed]",
+          "start_sec": 36.45,
+          "end_sec": 37.3,
+          "duration_sec": 0.85
+        },
+        {
+          "index": 2,
+          "text": "\ud83d\udd0a Sound-Only Replay \u2022 [sfx:circle]",
+          "start_sec": 37.3,
+          "end_sec": 38.15,
+          "duration_sec": 0.85
+        },
+        {
+          "index": 3,
+          "text": "\ud83d\udd0a Sound-Only Replay \u2022 [sfx:circle]",
+          "start_sec": 38.15,
+          "end_sec": 39.0,
+          "duration_sec": 0.85
+        },
+        {
+          "index": 4,
+          "text": "\ud83d\udd0a Sound-Only Replay \u2022 [sfx:intersect]",
+          "start_sec": 39.0,
+          "end_sec": 39.85,
+          "duration_sec": 0.85
+        },
+        {
+          "index": 5,
+          "text": "\ud83d\udd0a Sound-Only Replay \u2022 [sfx:segment]",
+          "start_sec": 39.85,
+          "end_sec": 40.7,
+          "duration_sec": 0.85
+        },
+        {
+          "index": 6,
+          "text": "\ud83d\udd0a Sound-Only Replay \u2022 [sfx:equal]",
+          "start_sec": 40.7,
+          "end_sec": 41.55,
+          "duration_sec": 0.85
+        },
+        {
+          "index": 7,
+          "text": "\ud83d\udd0a Sound-Only Replay \u2022 [sfx:equal]",
+          "start_sec": 41.55,
+          "end_sec": 42.4,
+          "duration_sec": 0.85
+        },
+        {
+          "index": 8,
+          "text": "\ud83d\udd0a Sound-Only Replay \u2022 [sfx:equal]",
+          "start_sec": 42.4,
+          "end_sec": 43.25,
+          "duration_sec": 0.85
+        },
+        {
+          "index": 9,
+          "text": "\ud83d\udd0a Sound-Only Replay \u2022 [sfx:qed]",
+          "start_sec": 43.25,
+          "end_sec": 44.482,
+          "duration_sec": 1.232
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "section_id": "outro",
+      "folder_name": "05_outro",
+      "bell": "bell:insight",
+      "style": "speaking briskly, nimble, crisp, and composed",
+      "text": "\ud83d\udd14 Subscribe to @geometor \u2022 Like, Comment & Explore the Codex",
+      "start_sec": 44.482,
+      "end_sec": 47.682,
+      "duration_sec": 3.2,
+      "subsegments": [
+        {
+          "index": 0,
+          "text": "\ud83d\udd14 Subscribe to @geometor \u2022 Like, Comment & Explore the Codex",
+          "start_sec": 44.482,
+          "end_sec": 47.682,
+          "duration_sec": 3.2
         }
       ]
     }

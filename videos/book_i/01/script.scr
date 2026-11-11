@@ -5,9 +5,20 @@ folio: Folio 0255–0256 • p. 241–242
 enunciation: On a given finite straight line to construct an equilateral triangle.
 svg: 0255.g1.svg
 hide: D, E
+next: I.2 | Place an equal segment at a given point
+
+=== intro ===
+[bell:proposition]
+[style:brisk]
+
+[screen: INTRO]
+show: *
+active: < A B C >
+equal: / C A /, / A B /, / C B /
+symbolic: I.1 • equilateral_triangle(/ A B /) → < A B C >
+say: Book One. Proposition One. of Euclid's Elements <pause> Construct an equilateral triangle. <pause>
 
 === enunciation ===
-[bell:proposition]
 [style:brisk]
 
 [screen: GIVEN]
@@ -16,16 +27,16 @@ active: / A B /
 symbolic: given: / A B /
 clause: / A B /
 just: G.4 • I.Def.4 | segment / A B /
-say: Euclid's Elements. <pause> Book One, Proposition One. <pause> [sfx:segment] Given a finite segment A B,
+say: [sfx:segment] Given segment A B,
 
 [screen: GOAL]
 show: / A B /, / C A /, / C B /, < A B C >
 active: < A B C >
 equal: / A B /, / C A /, / C B /
 symbolic: equilateral_triangle(/ A B /) → < A B C >
-clause: equilateral_triangle(/ A B /) → < A B C > : / C A / = / A B / = / B C /
+clause: equilateral_triangle(/ A B /) → < A B C >
 just: G.17 • I.1 | equilateral_triangle(/ A B /) → < A B C >
-say: [sfx:qed] construct an equilateral triangle A B C upon it. <pause>
+say: [sfx:qed] construct equilateral triangle A B C. <pause>
 
 === construction ===
 [bell:construction]
@@ -37,7 +48,7 @@ active: ( A B )
 symbolic: circle(A, B) → ( A B )
 clause: circle(A, B) → ( A B )
 just: G.15 • I.Post.3 | circle(center, radius_pt)
-say: [sfx:circle] With center A and radius A B, describe circle A B. <pause>
+say: [sfx:circle] Construct circle A B. <pause>
 
 [screen: CONSTRUCT]
 show: / A B /, ( A B ), ( B A )
@@ -45,7 +56,7 @@ active: ( B A )
 symbolic: circle(B, A) → ( B A )
 clause: circle(B, A) → ( B A )
 just: G.15 • I.Post.3 | circle(center, radius_pt)
-say: [sfx:circle] With center B and radius B A, describe circle B A. <pause>
+say: [sfx:circle] Construct circle B A. <pause>
 
 [screen: INTERSECT]
 show: / A B /, ( A B ), ( B A ), C
@@ -53,7 +64,7 @@ active: C
 symbolic: ( A B ) ∩ ( B A ) → C
 clause: ( A B ) ∩ ( B A ) → C
 just: ∩ • INTERSECT | ( A B ) ∩ ( B A ) → C
-say: [sfx:intersect] Mark point C where the two circles intersect, <pause>
+say: [sfx:intersect] Mark intersection C. <pause>
 
 [screen: CONSTRUCT]
 show: *
@@ -61,7 +72,7 @@ active: / C A /, / C B /
 symbolic: segment(C, A) → / C A /, segment(C, B) → / C B /
 clause: segment(C, A) → / C A / | segment(C, B) → / C B /
 just: G.14 • I.Post.1 | segment(pt, pt)
-say: [sfx:segment] and join segments C A and C B. <pause>
+say: [sfx:segment] Construct segments C A and C B. <pause>
 
 === demonstration ===
 [bell:insight]
@@ -74,7 +85,7 @@ equal: / C A /, / A B /
 symbolic: ( A B ) → / A C / = / A B /
 clause: ( A B ) → / A C / = / A B /
 just: G.10 • I.Def.15 | circle_radii
-say: [sfx:equal] Since A is the center of circle A B, segment A C equals segment A B. <pause>
+say: [sfx:equal] Radii A C and A B are equal. <pause>
 
 [screen: ASSERT]
 show: *
@@ -83,7 +94,7 @@ equal: / C B /, / A B /
 symbolic: ( B A ) → / B C / = / B A /
 clause: ( B A ) → / B C / = / B A /
 just: G.10 • I.Def.15 | circle_radii
-say: [sfx:equal] Since B is the center of circle B A, segment B C also equals segment B A. <pause>
+say: [sfx:equal] Radii B C and B A are equal. <pause>
 
 [screen: ASSERT]
 show: *
@@ -93,7 +104,7 @@ ticks: / C A /, / A B /, / C B /
 symbolic: / C A / = / A B /, / B C / = / A B / → / C A / = / B C /
 clause: / C A / = / A B /, / B C / = / A B / | → / C A / = / B C /
 just: G.16 • I.C.N.1 | equal_transitive
-say: [sfx:equal] Things equal to the same thing are equal to one another, so A C, A B, and B C are all equal. <pause>
+say: [sfx:equal] Therefore A C, A B, and B C are all equal. <pause>
 
 [screen: ∴ | punchline: true]
 show: *
@@ -102,4 +113,19 @@ equal: / C A /, / A B /, / C B /
 symbolic: / C A / = / A B / = / B C / → < A B C >
 clause: / C A / = / A B / = / B C / → < A B C >
 just: G.13 • I.Def.20 | triangle_sides_def
-say: [sfx:qed] Therefore triangle A B C is equilateral, constructed on the given segment A B, <pause> as was required to do.
+say: [sfx:qed] Triangle A B C is equilateral.
+
+=== review ===
+[bell:construction]
+[review: auto | pace: 0.85]
+
+=== outro ===
+[bell:insight]
+
+[screen: OUTRO]
+show: *
+active: < A B C >
+equal: / C A /, / A B /, / C B /
+symbolic: @geometor • Subscribe, Like & Explore the Elements Codex
+say: [sfx:qed]
+
