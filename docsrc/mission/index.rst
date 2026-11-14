@@ -1,12 +1,14 @@
 :navigation: header
 :order: 10
+:nav_title: Mission
 
-mission
+=======
+Mission
 =======
 
     reconstruct Euclid's Elements as a structured, digital knowledge base
 
-goals
+Goals
 -----
 
 .. collection::
