@@ -7,14 +7,13 @@ GEOMETOR • elements
    :maxdepth: 2
    :hidden:
 
+   about/index
    elements2/index
    persons
    bibliography
-   mission/index
    usage/index
    log/index
    modules/index
-   about
 
 ----
 

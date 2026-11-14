@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>G-Index mapping &mdash; GEOMETOR • elements</title>
+  <title>About &mdash; GEOMETOR • elements</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
@@ -46,7 +46,7 @@
           <a href="../bibliography.html"  >Bibliography</a>
         </li>
         <li>
-          <a href="index.html" class="is-active" aria-selected="true" >Mission</a>
+          <a href="#" class="is-active" aria-selected="true" aria-current="page">About</a>
         </li>
         <li>
           <a href="../usage/index.html"  >Usage</a>
@@ -70,27 +70,55 @@
             <span class="book-header-sep">/</span>
             <a class="book-title-link" href="../index.html">GEOMETOR • elements</a>
           </div>
-          <div class="book-header-breadcrumbs book-header-badges" role="navigation" aria-label="Breadcrumbs">
-            <a class="book-crumb-link" href="index.html">Mission</a>
-          </div>
         </div>
         <div class="book-header-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="digital_reconstruction.html" title="logical codification">&larr; <span class="nav-label">Prev</span></a>
+            <a class="book-nav-btn" href="../index.html" title="GEOMETOR • elements">&larr; <span class="nav-label">Prev</span></a>
           </div>
           <div class="book-nav-center">
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="diagram_extraction.html" title="symbolic visualization"><span class="nav-label">Next</span> &rarr;</a>
+            <a class="book-nav-btn" href="../elements2/index.html" title="Elements 2.0"><span class="nav-label">Next</span> &rarr;</a>
           </div>
         </div>
       </header>
       <div class="content body book-content" role="main">
-        <section class="level-1" id="g-index-mapping">
-        <h1>G-Index mapping<a class="headerlink" href="#g-index-mapping" title="Link to this heading">¶</a></h1>
-        <blockquote>
-        <div><p>model logical dependencies as a Directed Acyclic Graph (DAG) to trace the genealogy of truth</p>
-        </div></blockquote>
+        <section class="level-1" id="about-elements">
+        <span id="about-index"></span><span id="about"></span><span id="id1"></span><h1>About<a class="headerlink" href="#about-elements" title="Link to this heading">¶</a></h1>
+        <p class="rubric">Extracting Historical Semantic Knowledge &amp; Repurposing It for Exact Symbolic Reasoning</p>
+        <section class="level-2" id="about-this-edition">
+        <h2>About This Edition<a class="headerlink" href="#about-this-edition" title="Link to this heading">¶</a></h2>
+        <p><strong>GEOMETOR • elements</strong> is the computable G-Index compilation layer and symbolic dependency mapping engine for <strong>Euclid of Alexandria’s</strong> <em>Elements</em> (c. 300 BCE). Created and maintained by <strong>phi ARCHITECT</strong>, the edition sequences the definitions, postulates, common notions, and propositions across all thirteen books into a computable directed acyclic graph (DAG) spanning <strong>G.1 through G.601</strong>. By mapping every theorem back to its axiomatic roots, the repository recovers the transparent genealogy of deductive truth underpinning the foundation of mathematics.</p>
+        <p>Each node in the G-Index is extracted into machine-addressable semantic elements presented through a synchronized four-track Book Codex:
+        1. <strong>Pseudocode Track</strong>: Enunciations tightened into formal, fact-oriented mathematical specifications, explicit <code class="docutils literal notranslate"><span class="pre">given</span></code> / <code class="docutils literal notranslate"><span class="pre">construct</span></code> / <code class="docutils literal notranslate"><span class="pre">prove</span></code> signatures, interactive vector diagrams, and step-by-step deductive chains with explicit <code class="docutils literal notranslate"><span class="pre">∵</span> <span class="pre">G.&lt;k&gt;</span></code> justification links.
+        2. <strong>Video Track</strong>: High-definition animated construction playbacks dynamically unveiling geometric derivations.
+        3. <strong>Code Track</strong>: Standalone, reproducible Python builder functions executing on <code class="xref py py-mod docutils literal notranslate"><span class="pre">geometor.model</span></code> and <a class="reference external" href="https://www.sympy.org">SymPy</a>, accompanied by proposition-specific dependency DAG subgraphs.
+        4. <strong>Heath Track</strong>: Sir Thomas Little Heath’s definitive English translation (Cambridge, 1908) enriched with GEOMETOR symbolic indicators and deep bi-directional links.</p>
+        <p>Within the GEOMETOR Digital Scriptorium, <code class="docutils literal notranslate"><span class="pre">geometor.elements</span></code> serves as the central computational grammar connecting historical treatises to modern symbolic geometry. It acts as the algorithmic twin to <code class="docutils literal notranslate"><span class="pre">geometor.euclid</span></code>, which preserves the unabridged three-volume historical apparatus and manuscript folios. In turn, it feeds computable axiomatic constructions directly into the golden ratio discovery canon <code class="docutils literal notranslate"><span class="pre">geometor.divine</span></code>, Luca Pacioli’s <code class="docutils literal notranslate"><span class="pre">geometor.pacioli</span></code> (<em>De Divina Proportione</em>), and Albrecht Dürer’s <code class="docutils literal notranslate"><span class="pre">geometor.durer</span></code> (<em>Underweysung der Messung</em>).</p>
+        </section>
+        <section class="level-2" id="the-geometor-mission">
+        <h2>The GEOMETOR Mission<a class="headerlink" href="#the-geometor-mission" title="Link to this heading">¶</a></h2>
+        <p>Founded by <strong>phi ARCHITECT</strong>, the GEOMETOR project is dedicated to three foundational pillars:</p>
+        <dl class="simple">
+        <dt>Extracting Historical Semantic Knowledge</dt><dd><p>Moving beyond passive page scans and OCR to recover the living deductive structure of 2,300+ years of geometric, axiomatic, and philosophical treatises. GEOMETOR elevates prose, marginal citations, primary-source folios (via <code class="docutils literal notranslate"><span class="pre">publish</span> <span class="pre">folio</span></code>), and calibrated Ink-to-Vector <code class="docutils literal notranslate"><span class="pre">.euclid-graphic</span></code> diagrams into structured, machine-addressable semantic graphs.</p>
+        </dd>
+        <dt>Exact Symbolic Grounding (<code class="docutils literal notranslate"><span class="pre">geometor.model</span></code>)</dt><dd><p>Anchoring geometric constructions in 100% exact symbolic algebra (<a class="reference external" href="https://www.sympy.org">SymPy</a>) and Rational Trigonometry invariants (quadrance, spread, cross-ratio) over exact algebraic number fields rather than floating-point approximations. Every geometric theorem and construction is mathematically verified and permanently reproducible.</p>
+        </dd>
+        <dt>Repurposing Knowledge Across Mediums</dt><dd><p>Re-deploying extracted semantic and algebraic structures across synchronized multi-track <strong>Book Codices</strong> and EPUB 3 editions (<code class="docutils literal notranslate"><span class="pre">photon-platform/publish</span></code>), computable deductive canons (<code class="docutils literal notranslate"><span class="pre">geometor.elements</span></code>, <code class="docutils literal notranslate"><span class="pre">geometor.etc</span></code>, <code class="docutils literal notranslate"><span class="pre">geometor.pappus</span></code>, <code class="docutils literal notranslate"><span class="pre">geometor.divine</span></code>), interactive SVG laboratories (<code class="docutils literal notranslate"><span class="pre">geometor.explorer</span></code>), QHD visual broadcasts, and neuro-symbolic program synthesis (<code class="docutils literal notranslate"><span class="pre">geometor.seer</span></code>) across <a class="reference external" href="https://geometor.com">geometor.com</a>.</p>
+        </dd>
+        </dl>
+        </section>
+        <section class="level-2" id="sources-provenance-methodology">
+        <h2>Sources, Provenance &amp; Methodology<a class="headerlink" href="#sources-provenance-methodology" title="Link to this heading">¶</a></h2>
+        <p>The G-Index formalization and textual apparatus are grounded in authoritative historical witnesses and critical scholarship:</p>
+        <ul class="simple">
+        <li><p><strong>Primary Translation &amp; Commentary</strong>: Sir Thomas Little Heath, <em>The Thirteen Books of Euclid’s Elements</em>, 3 vols. (Cambridge University Press, 1908; 2nd ed. 1926; Dover Publications reprint).</p></li>
+        <li><p><strong>Greek Critical Text</strong>: Johan Ludvig Heiberg, <em>Euclidis Elementa</em>, 5 vols. in <em>Euclidis Opera Omnia</em> (Leipzig: B.G. Teubner, 1883–1888).</p></li>
+        <li><p><strong>Archival Manuscript Witnesses</strong>: Collation against <em>Codex Vaticanus Graecus 190</em> (Vatican Library, 10th c.) and <em>Codex Bodleianus MS. D’Orville 301</em> (Bodleian Library, Oxford, copied 888 CE by Stephen the Clerk).</p></li>
+        <li><p><strong>Ancient Commentators</strong>: Proclus Diadochus (<em>Commentary on the First Book of Euclid’s Elements</em>), Pappus of Alexandria (<em>Collection</em>, Book VII), and Hero of Alexandria.</p></li>
+        <li><p><strong>Digital Scriptorium Methodology</strong>: Every proposition is codified into a formal algebraic pipeline within <a class="reference internal" href="../modules/index.html#module-geometor.elements" title="geometor.elements"><code class="xref py py-mod docutils literal notranslate"><span class="pre">geometor.elements</span></code></a>, generating interactive SVG graphics, complete dependency trees, and executable verification suites compiled via the Photon Publisher framework.</p></li>
+        </ul>
+        </section>
         </section>
 
       </div>
@@ -98,13 +126,13 @@
         <div class="book-footer-ornament">&#10086;</div>
         <div class="book-footer-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="digital_reconstruction.html" title="logical codification">&larr; <span class="nav-label">logical codification</span></a>
+            <a class="book-nav-btn" href="../index.html" title="GEOMETOR • elements">&larr; <span class="nav-label">GEOMETOR • elements</span></a>
           </div>
           <div class="book-nav-center">
             <a class="book-toc-link" href="../index.html">GEOMETOR • elements</a>
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="diagram_extraction.html" title="symbolic visualization"><span class="nav-label">symbolic visualization</span> &rarr;</a>
+            <a class="book-nav-btn" href="../elements2/index.html" title="Elements 2.0"><span class="nav-label">Elements 2.0</span> &rarr;</a>
           </div>
         </div>
       </footer>
@@ -387,7 +415,6 @@
   <footer>
     <div class="footer-nav">
       <ul>
-        <li><a href="../about.html"  >About</a></li>
         <li><a href="../connect.html"  >Connect</a></li>
         <li><a href="../todos/index.html"  >Todos</a></li>
         <li><a href="../changelog.html"  >Changelog</a></li>
@@ -403,7 +430,7 @@
 
   <script src="../_static/jquery.js?v=5d32c60e"></script>
   <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../_static/documentation_options.js?v=c87aa342"></script>
+  <script src="../_static/documentation_options.js?v=ff822928"></script>
   <script src="../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../_static/js/collection_controls.js?v=b6b5297a"></script>
