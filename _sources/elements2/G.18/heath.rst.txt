@@ -14,6 +14,9 @@ G.18 extend a segment — Heath
 
    To produce a :term:`finite straight line <G.4>` continuously in a straight line.
 
+.. picture:: g1.svg
+   :alt: G.18 extend a segment figure
+
 Dependency Graph
 ----------------
 

@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=8713e751" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=99410eb1" />
   <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -98,6 +98,63 @@
         <h1>G.3 extremities of a segment — Heath<a class="headerlink" href="#g-3-extremities-of-a-segment-heath" title="Link to this heading">¶</a></h1>
         <p class="rubric"><a class="reference external" href="https://geometor.github.io/euclid/heath/volume_I/book_i/definitions/#i-def-3" title="I.def.3: The extremities of a segment / A B / are points A, B.">I.def.3</a></p>
         <div class="enunciation">The <span class="glossary-term" data-term="extremity" title="extremities (extremity): Book I: 3. The extremities of a line are points."><strong>extremities</strong></span> of a <a class="term-ref glossary-term" id="occ-term-g-2-1" href="../G.2/index.html#g-2" data-term="G.2" title="G.2: A line [ A B ] is a projection of a relationship of two points A, B.">line</a> are <a class="term-ref glossary-term" id="occ-term-g-1-1" href="../G.1/index.html#g-1" data-term="G.1" title="G.1: A point A is that which has no part.">points</a>.</div>
+        <figure class="photon-picture photon-svg">
+            <svg class="euclid-graphic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 110" width="280" height="110" data-graphic-id="g1" data-graphic="g1" data-proposition="I.def.3" data-svg-scope="s-e6fdc1d8">
+          <style>
+            svg[data-svg-scope="s-e6fdc1d8"] { font-family: 'Fira Sans Condensed', 'Fira Sans', sans-serif; font-style: normal; font-weight: 700 }
+            svg[data-svg-scope="s-e6fdc1d8"] .geom-line { stroke: var(--geom-fg); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; fill: none; transition: stroke 0.15s, stroke-width 0.15s }
+            svg[data-svg-scope="s-e6fdc1d8"] .geom-bold { stroke: var(--geom-fg); stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; fill: none; transition: stroke 0.15s, stroke-width 0.15s }
+            svg[data-svg-scope="s-e6fdc1d8"] .geom-circle, svg[data-svg-scope="s-e6fdc1d8"] .geom-curve, svg[data-svg-scope="s-e6fdc1d8"] .geom-ellipse { stroke: var(--geom-fg); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; fill: none; transition: stroke 0.15s, stroke-width 0.15s }
+            svg[data-svg-scope="s-e6fdc1d8"] .geom-arc { stroke: var(--geom-fg); stroke-width: 1.6; stroke-linecap: round; fill: none; transition: stroke 0.15s, stroke-width 0.15s }
+            svg[data-svg-scope="s-e6fdc1d8"] .geom-dashed, svg[data-svg-scope="s-e6fdc1d8"] .geom-line-dashed, svg[data-svg-scope="s-e6fdc1d8"] .geom-arc-dashed, svg[data-svg-scope="s-e6fdc1d8"] .geom-aux, svg[data-svg-scope="s-e6fdc1d8"] .geom-Auxiliary, svg[data-svg-scope="s-e6fdc1d8"] .geom-construction { stroke: var(--geom-fg); stroke-width: 1.5; stroke-dasharray: 4, 3; stroke-linecap: round; stroke-linejoin: round; fill: none; opacity: 0.7; transition: stroke 0.15s, stroke-width 0.15s, opacity 0.15s }
+            svg[data-svg-scope="s-e6fdc1d8"] .geom-tick-mark { stroke: var(--geom-assert); stroke-width: 2; stroke-linecap: round; fill: none }
+            svg[data-svg-scope="s-e6fdc1d8"] .geom-polygon { fill: var(--geom-poly-fill); fill-opacity: 0.04; stroke: none; transition: fill-opacity 0.15s, stroke 0.15s }
+            svg[data-svg-scope="s-e6fdc1d8"] .geom-point { fill: var(--geom-fg); stroke: var(--geom-point-stroke); stroke-width: 1; transition: fill 0.15s, r 0.15s }
+            svg[data-svg-scope="s-e6fdc1d8"] .geom-label { font-family: 'Fira Sans Condensed', 'Fira Sans', sans-serif; font-size: 14.5px; font-weight: 700; font-style: normal; fill: var(--geom-fg); user-select: none }
+            svg[data-svg-scope="s-e6fdc1d8"] .geom-overlay { opacity: 0; pointer-events: none; transition: opacity 0.12s ease }
+            svg[data-svg-scope="s-e6fdc1d8"] [data-ref]:hover, svg[data-svg-scope="s-e6fdc1d8"] .highlight, svg[data-svg-scope="s-e6fdc1d8"] .geom-highlight-active { opacity: 1 !important; stroke: var(--geom-accent) !important; cursor: pointer }
+            svg[data-svg-scope="s-e6fdc1d8"] text[data-ref]:hover, svg[data-svg-scope="s-e6fdc1d8"] text.highlight, svg[data-svg-scope="s-e6fdc1d8"] text.geom-highlight-active, svg[data-svg-scope="s-e6fdc1d8"] text.geom-highlight-secondary, svg[data-svg-scope="s-e6fdc1d8"] text.geom-highlight-active *, svg[data-svg-scope="s-e6fdc1d8"] text.geom-highlight-secondary * { opacity: 1 !important; fill: var(--geom-accent) !important; stroke: none !important }
+            svg[data-svg-scope="s-e6fdc1d8"] .geom-polygon:hover, svg[data-svg-scope="s-e6fdc1d8"] .geom-polygon.highlight, svg[data-svg-scope="s-e6fdc1d8"] polygon.geom-highlight-active, svg[data-svg-scope="s-e6fdc1d8"] path.geom-polygon.geom-highlight-active { opacity: 1 !important; fill-opacity: 0.24 !important; fill: var(--geom-accent) !important; stroke: var(--geom-accent) !important }
+            svg[data-svg-scope="s-e6fdc1d8"] .geom-point:hover, svg[data-svg-scope="s-e6fdc1d8"] .geom-point.highlight, svg[data-svg-scope="s-e6fdc1d8"] circle.geom-point.geom-highlight-active, svg[data-svg-scope="s-e6fdc1d8"] circle.geom-highlight-active { opacity: 1 !important; fill: var(--geom-accent) !important; stroke: none !important }
+            svg[data-svg-scope="s-e6fdc1d8"] .geom-assert-active { opacity: 1 !important; stroke: var(--geom-assert) !important }
+            svg[data-svg-scope="s-e6fdc1d8"] text.geom-assert-active, svg[data-svg-scope="s-e6fdc1d8"] text.geom-assert-secondary, svg[data-svg-scope="s-e6fdc1d8"] text.geom-assert-active *, svg[data-svg-scope="s-e6fdc1d8"] text.geom-assert-secondary * { opacity: 1 !important; fill: var(--geom-assert) !important; stroke: none !important }
+            svg[data-svg-scope="s-e6fdc1d8"] polygon.geom-assert-active, svg[data-svg-scope="s-e6fdc1d8"] path.geom-polygon.geom-assert-active { opacity: 1 !important; fill-opacity: 0.22 !important; fill: var(--geom-assert) !important; stroke: var(--geom-assert) !important }
+            svg[data-svg-scope="s-e6fdc1d8"] circle.geom-point.geom-assert-active, svg[data-svg-scope="s-e6fdc1d8"] circle.geom-assert-active { opacity: 1 !important; fill: var(--geom-assert) !important; stroke: none !important }
+            svg[data-svg-scope="s-e6fdc1d8"] path.geom-assert-active.geom-tick-1 { marker-mid: url(#geom-tick-1) }
+            svg[data-svg-scope="s-e6fdc1d8"] path.geom-assert-active.geom-tick-2 { marker-mid: url(#geom-tick-2) }
+            svg[data-svg-scope="s-e6fdc1d8"] path.geom-assert-active.geom-tick-3 { marker-mid: url(#geom-tick-3) }
+          </style>
+          <defs>
+            <marker id="geom-tick-1" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker id="geom-tick-2" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker id="geom-tick-3" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g id="elements"></g>
+          <g id="graphics">
+            <path id="el-seg-AB" data-ref="/ A B /" data-type="segment" class="geom-line" d="M 76 58 L 140 58 L 204 58" />
+          </g>
+          <g id="highlights" style="pointer-events: none;">
+            <path id="hl-seg-AB" data-ref="/ A B /" class="geom-line geom-overlay" d="M 76 58 L 140 58 L 204 58" />
+          </g>
+          <g id="points">
+            <circle id="el-pt-A" data-ref="A" data-type="point" cx="76" cy="58" r="4" class="geom-point" />
+            <circle id="el-pt-B" data-ref="B" data-type="point" cx="204" cy="58" r="4" class="geom-point" />
+          </g>
+          <g id="labels">
+            <text id="lbl-A" data-ref="A" x="76" y="42" text-anchor="middle" class="geom-label">A</text>
+            <text id="lbl-B" data-ref="B" x="204" y="42" text-anchor="middle" class="geom-label">B</text>
+          </g>
+        </svg>
+        </figure>
         <section class="level-2" id="dependency-graph">
         <h2>Dependency Graph<a class="headerlink" href="#dependency-graph" title="Link to this heading">¶</a></h2>
         <div class="graphviz"><object data="../../_images/graphviz-cdb926e4f2ad63c28f30475d2be80ef73e024dc8.svg" type="image/svg+xml" class="graphviz">
@@ -429,7 +486,7 @@
 
   <script src="../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../_static/documentation_options.js?v=ff822928"></script>
+  <script src="../../_static/documentation_options.js?v=5bfaad31"></script>
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>

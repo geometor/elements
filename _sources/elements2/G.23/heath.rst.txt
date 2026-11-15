@@ -14,6 +14,9 @@ G.23 coinciding things are equal — Heath
 
    Things which coincide with one another are equal to one another.
 
+.. picture:: g1.svg
+   :alt: G.23 coinciding things are equal figure
+
 Required for
 ------------
 

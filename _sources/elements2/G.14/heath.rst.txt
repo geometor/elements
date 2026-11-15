@@ -14,6 +14,9 @@ G.14 construct a segment — Heath
 
    To draw a :term:`straight line <G.4>` from any :term:`point <G.1>` to any point.
 
+.. picture:: g1.svg
+   :alt: G.14 construct a segment figure
+
 Dependency Graph
 ----------------
 

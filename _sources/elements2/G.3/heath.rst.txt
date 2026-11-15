@@ -14,6 +14,9 @@ G.3 extremities of a segment — Heath
 
    The :term:`**extremities** <extremity>` of a :term:`line <G.2>` are :term:`points <G.1>`.
 
+.. picture:: g1.svg
+   :alt: G.3 extremities of a segment figure
+
 Dependency Graph
 ----------------
 
