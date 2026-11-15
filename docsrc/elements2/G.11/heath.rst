@@ -14,6 +14,9 @@ G.11 center of a circle — Heath
 
    And the :term:`point <G.1>` is called the :term:`**centre** <centre>` of the :term:`circle <G.10>`.
 
+.. picture:: g1.svg
+   :alt: G.11 center of a circle figure
+
 Dependency Graph
 ----------------
 

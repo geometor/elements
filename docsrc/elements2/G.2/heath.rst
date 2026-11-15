@@ -14,6 +14,9 @@ G.2 line — Heath
 
    A :term:`**line** <line>` is breadthless length.
 
+.. picture:: g1.svg
+   :alt: G.2 line figure
+
 Dependency Graph
 ----------------
 

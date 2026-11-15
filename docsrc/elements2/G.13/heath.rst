@@ -14,6 +14,9 @@ G.13 equilateral, isosceles, and scalene triangles — Heath
 
    Of :term:`trilateral figures <G.12>`, an :term:`**equilateral triangle** <equilateral-triangle>` is that which has its three sides equal, an :term:`**isosceles triangle** <isosceles-triangle>` that which has two of its sides alone equal, and a :term:`**scalene triangle** <scalene-triangle>` that which has its three sides unequal.
 
+.. picture:: g1.svg
+   :alt: G.13 equilateral, isosceles, and scalene triangles figure
+
 Dependency Graph
 ----------------
 

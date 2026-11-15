@@ -14,6 +14,9 @@ G.1 point — Heath
 
    A :term:`**point** <point>` is that which has no part.
 
+.. picture:: g1.svg
+   :alt: G.1 point figure
+
 Required for
 ------------
 

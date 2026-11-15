@@ -14,6 +14,9 @@ G.15 construct a circle — Heath
 
    To describe a :term:`circle <G.10>` with any :term:`centre <G.11>` and distance.
 
+.. picture:: g1.svg
+   :alt: G.15 construct a circle figure
+
 Dependency Graph
 ----------------
 

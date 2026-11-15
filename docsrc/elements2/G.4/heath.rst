@@ -14,6 +14,9 @@ G.4 segment — Heath
 
    A :term:`**straight line** <straight-line>` is a :term:`line <G.2>` which lies evenly with the :term:`points <G.1>` on itself.
 
+.. picture:: g1.svg
+   :alt: G.4 segment figure
+
 Dependency Graph
 ----------------
 
