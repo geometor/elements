@@ -1,6 +1,12 @@
 changelog
 =========
 
+0.4.3
+-----
+*2026-11-15*
+
+- Added ``.. picture:: g1.svg`` figures to the 11 illustrated Book I definition Heath pages (``G.1``–``G.4``, ``G.10``–``G.11``, ``G.13``–``G.15``, ``G.18``, ``G.23``) and rebuilt inline SVGs with explicit ``viewBox`` dimensions (``publish`` ``v0.4.6``).
+
 0.4.2
 -----
 *2026-11-14*

@@ -14,6 +14,9 @@ G.10 circle — Heath
 
    A :term:`**circle** <circle>` is a :term:`plane figure <G.7>` :term:`contained by one line <G.6>` such that all the :term:`straight lines <G.4>` falling upon it from one :term:`point <G.1>` among those lying within the :term:`figure <G.9>` are equal to one another ;
 
+.. picture:: g1.svg
+   :alt: G.10 circle figure
+
 Dependency Graph
 ----------------
 
