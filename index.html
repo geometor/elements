@@ -6,12 +6,32 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GEOMETOR • elements &mdash; GEOMETOR • elements</title>
+
+  <title>Constructive Elements • GEOMETOR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="canonical" href="https://geometor.github.io/elements/" />
+  <meta name="description" content="Symbolic dependency mapping, formal pseudocode, and G-Index generation (G.1–G.601) for Euclid’s Elements." />
+  <meta property="og:site_name" content="GEOMETOR" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Constructive Elements • GEOMETOR" />
+  <meta property="og:description" content="Symbolic dependency mapping, formal pseudocode, and G-Index generation (G.1–G.601) for Euclid’s Elements." />
+  <meta property="og:url" content="https://geometor.github.io/elements/" />
+  <meta property="og:image" content="https://geometor.github.io/elements/_static/social/banner.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Constructive Elements — GEOMETOR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Constructive Elements • GEOMETOR" />
+  <meta name="twitter:description" content="Symbolic dependency mapping, formal pseudocode, and G-Index generation (G.1–G.601) for Euclid’s Elements." />
+  <meta name="twitter:image" content="https://geometor.github.io/elements/_static/social/banner.png" />
+  <meta name="twitter:image:alt" content="Constructive Elements — GEOMETOR" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="_static/css/styles.css?v=99410eb1" />
+  <link rel="stylesheet" type="text/css" href="_static/css/styles.css?v=81e79cc0" />
   <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -23,14 +43,14 @@
 <body class="book-theme-classical-serif">
   <header>
     <div class="logo">
-      <a href="#">
-        <img src="_static/logo.png" class="logo" alt="Logo"/>
+      <a href="#" title="Home">
+        <img src="_static/logo.png" class="logo" alt="GEOMETOR elements"/>
+        <div class="org-repo">
+          <span class="org">GEOMETOR</span>
+          <span class="sep" aria-hidden="true">&bull;</span>
+          <span class="repo">elements</span>
+        </div>
       </a>
-      <div class="org-repo">
-        <span class="org">GEOMETOR</span>
-        •
-        <span class="repo">elements</span>
-      </div>
     </div>
     <nav aria-label="Header">
       <input type="checkbox" id="nav-Header-toggle" >
@@ -63,48 +83,79 @@
   </header>
   <main class="book-main">
     <article class="book-layout book-reading-pane">
-      <header class="book-header">
-        <div class="book-header-bar">
-          <div class="book-header-identity">
-            <a class="book-title-link" href="#">GEOMETOR • elements</a>
-          </div>
+      <div class="content body book-content is-home-page" role="main">
+        <section class="level-1" id="constructive-elements">
+        <h1>Constructive Elements<a class="headerlink" href="#constructive-elements" title="Link to this heading">¶</a></h1>
+        <p>Symbolic dependency mapping, formal pseudocode, and G-Index generation (<code class="docutils literal notranslate"><span class="pre">G.1</span></code>–<code class="docutils literal notranslate"><span class="pre">G.601</span></code>) for Euclid’s <em>Elements</em>.</p>
+            <section class="collection ">
+              <article class="excerpt">
+                <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="elements2/index.html" aria-label="Elements 2.0">
+                      <svg class="euclid-graphic euclid-thumbnail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 110" width="240" height="110" data-graphic-id="g1" data-graphic="g1" data-proposition="I.def.1" data-svg-scope="s-4015bdc2">
+          <style>
+            svg[data-svg-scope="s-4015bdc2"] { font-family: 'Fira Sans Condensed', 'Fira Sans', sans-serif; font-style: normal; font-weight: 700 }
+            svg[data-svg-scope="s-4015bdc2"] .geom-line { stroke: var(--geom-fg); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; fill: none; transition: stroke 0.15s, stroke-width 0.15s }
+            svg[data-svg-scope="s-4015bdc2"] .geom-bold { stroke: var(--geom-fg); stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; fill: none; transition: stroke 0.15s, stroke-width 0.15s }
+            svg[data-svg-scope="s-4015bdc2"] .geom-circle, svg[data-svg-scope="s-4015bdc2"] .geom-curve, svg[data-svg-scope="s-4015bdc2"] .geom-ellipse { stroke: var(--geom-fg); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; fill: none; transition: stroke 0.15s, stroke-width 0.15s }
+            svg[data-svg-scope="s-4015bdc2"] .geom-arc { stroke: var(--geom-fg); stroke-width: 1.6; stroke-linecap: round; fill: none; transition: stroke 0.15s, stroke-width 0.15s }
+            svg[data-svg-scope="s-4015bdc2"] .geom-dashed, svg[data-svg-scope="s-4015bdc2"] .geom-line-dashed, svg[data-svg-scope="s-4015bdc2"] .geom-arc-dashed, svg[data-svg-scope="s-4015bdc2"] .geom-aux, svg[data-svg-scope="s-4015bdc2"] .geom-Auxiliary, svg[data-svg-scope="s-4015bdc2"] .geom-construction { stroke: var(--geom-fg); stroke-width: 1.5; stroke-dasharray: 4, 3; stroke-linecap: round; stroke-linejoin: round; fill: none; opacity: 0.7; transition: stroke 0.15s, stroke-width 0.15s, opacity 0.15s }
+            svg[data-svg-scope="s-4015bdc2"] .geom-tick-mark { stroke: var(--geom-assert); stroke-width: 2; stroke-linecap: round; fill: none }
+            svg[data-svg-scope="s-4015bdc2"] .geom-polygon { fill: var(--geom-poly-fill); fill-opacity: 0.04; stroke: none; transition: fill-opacity 0.15s, stroke 0.15s }
+            svg[data-svg-scope="s-4015bdc2"] .geom-point { fill: var(--geom-fg); stroke: var(--geom-point-stroke); stroke-width: 1; transition: fill 0.15s, r 0.15s }
+            svg[data-svg-scope="s-4015bdc2"] .geom-label { font-family: 'Fira Sans Condensed', 'Fira Sans', sans-serif; font-size: 14.5px; font-weight: 700; font-style: normal; fill: var(--geom-fg); user-select: none }
+            svg[data-svg-scope="s-4015bdc2"] .geom-overlay { opacity: 0; pointer-events: none; transition: opacity 0.12s ease }
+            svg[data-svg-scope="s-4015bdc2"] [data-ref]:hover, svg[data-svg-scope="s-4015bdc2"] .highlight, svg[data-svg-scope="s-4015bdc2"] .geom-highlight-active { opacity: 1 !important; stroke: var(--geom-accent) !important; cursor: pointer }
+            svg[data-svg-scope="s-4015bdc2"] text[data-ref]:hover, svg[data-svg-scope="s-4015bdc2"] text.highlight, svg[data-svg-scope="s-4015bdc2"] text.geom-highlight-active, svg[data-svg-scope="s-4015bdc2"] text.geom-highlight-secondary, svg[data-svg-scope="s-4015bdc2"] text.geom-highlight-active *, svg[data-svg-scope="s-4015bdc2"] text.geom-highlight-secondary * { opacity: 1 !important; fill: var(--geom-accent) !important; stroke: none !important }
+            svg[data-svg-scope="s-4015bdc2"] .geom-polygon:hover, svg[data-svg-scope="s-4015bdc2"] .geom-polygon.highlight, svg[data-svg-scope="s-4015bdc2"] polygon.geom-highlight-active, svg[data-svg-scope="s-4015bdc2"] path.geom-polygon.geom-highlight-active { opacity: 1 !important; fill-opacity: 0.24 !important; fill: var(--geom-accent) !important; stroke: var(--geom-accent) !important }
+            svg[data-svg-scope="s-4015bdc2"] .geom-point:hover, svg[data-svg-scope="s-4015bdc2"] .geom-point.highlight, svg[data-svg-scope="s-4015bdc2"] circle.geom-point.geom-highlight-active, svg[data-svg-scope="s-4015bdc2"] circle.geom-highlight-active { opacity: 1 !important; fill: var(--geom-accent) !important; stroke: none !important }
+            svg[data-svg-scope="s-4015bdc2"] .geom-assert-active { opacity: 1 !important; stroke: var(--geom-assert) !important }
+            svg[data-svg-scope="s-4015bdc2"] text.geom-assert-active, svg[data-svg-scope="s-4015bdc2"] text.geom-assert-secondary, svg[data-svg-scope="s-4015bdc2"] text.geom-assert-active *, svg[data-svg-scope="s-4015bdc2"] text.geom-assert-secondary * { opacity: 1 !important; fill: var(--geom-assert) !important; stroke: none !important }
+            svg[data-svg-scope="s-4015bdc2"] polygon.geom-assert-active, svg[data-svg-scope="s-4015bdc2"] path.geom-polygon.geom-assert-active { opacity: 1 !important; fill-opacity: 0.22 !important; fill: var(--geom-assert) !important; stroke: var(--geom-assert) !important }
+            svg[data-svg-scope="s-4015bdc2"] circle.geom-point.geom-assert-active, svg[data-svg-scope="s-4015bdc2"] circle.geom-assert-active { opacity: 1 !important; fill: var(--geom-assert) !important; stroke: none !important }
+            svg[data-svg-scope="s-4015bdc2"] path.geom-assert-active.geom-tick-1 { marker-mid: url(#geom-tick-1) }
+            svg[data-svg-scope="s-4015bdc2"] path.geom-assert-active.geom-tick-2 { marker-mid: url(#geom-tick-2) }
+            svg[data-svg-scope="s-4015bdc2"] path.geom-assert-active.geom-tick-3 { marker-mid: url(#geom-tick-3) }
+          </style>
+          <defs>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-1.8" y1="-4.5" x2="-1.8" y2="4.5" class="geom-tick-mark" />
+              <line x1="1.8" y1="-4.5" x2="1.8" y2="4.5" class="geom-tick-mark" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+              <line x1="-3.2" y1="-4.5" x2="-3.2" y2="4.5" class="geom-tick-mark" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" class="geom-tick-mark" />
+              <line x1="3.2" y1="-4.5" x2="3.2" y2="4.5" class="geom-tick-mark" />
+            </marker>
+          </defs>
+          <g></g>
+          <g></g>
+          <g>
+            <circle cx="120" cy="58" r="4" class="geom-point" />
+          </g>
+          <g>
+            <text x="120" y="42" text-anchor="middle" class="geom-label">A</text>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
+                  <section>
+                    <h2><a href="elements2/index.html">Elements 2.0</a></h2>
+                      <p>Computable constructive dependency DAG and exact symbolic proofs for Euclid’s Elements.</p>
+                  </section>
+                </div>
+                <footer>
+
+                <div class="meta">
+                  <span class="author">Euclid of Alexandria</span>
+                </div>
+                </footer>
+              </article>
+            </section><div class="toctree-wrapper compound">
         </div>
-        <div class="book-header-nav">
-          <div class="book-nav-prev">
-          </div>
-          <div class="book-nav-center">
-          </div>
-          <div class="book-nav-next">
-            <a class="book-nav-btn" href="about/index.html" title="About"><span class="nav-label">Next</span> &rarr;</a>
-          </div>
-        </div>
-      </header>
-      <div class="content body book-content" role="main">
-        <section class="level-1" id="geometor-elements">
-        <h1>GEOMETOR • elements<a class="headerlink" href="#geometor-elements" title="Link to this heading">¶</a></h1>
-        <p><strong>Symbolic dependency mapping, formal pseudocode, and G-Index generation (`G.1`–`G.601`) for Euclid’s *Elements*.</strong></p>
-        <p>The <strong>G-Index</strong> is a symbolic and logical codification of Euclid’s <em>Elements</em>. While the sister repository <a class="reference external" href="https://geometor.github.io/euclid">GEOMETOR • euclid</a> compiles the three-volume Heath Edition and critical apparatus, <code class="docutils literal notranslate"><span class="pre">geometor.elements</span></code> sequences the definitions, postulates, common notions, and propositions into a computable directed acyclic dependency graph (<cite>G.1</cite> through <cite>G.601</cite>) rendered as an interactive <strong>Book Codex</strong> via <code class="docutils literal notranslate"><span class="pre">photon-platform/publish</span></code>.</p>
-        <hr class="docutils" />
-        <section class="level-2" id="core-edition-gateways">
-        <h2>Core Edition Gateways<a class="headerlink" href="#core-edition-gateways" title="Link to this heading">¶</a></h2>
-        <ul class="simple">
-        <li><p><a class="reference internal" href="elements2/index.html"><span class="doc">Elements 2.0 — The G-Index (G.1–G.601)</span></a>: The complete computational dependency sequence across all thirteen books of the <em>Elements</em>, featuring synchronized reading tracks:</p>
-        <ol class="arabic simple">
-        <li><p><strong>Pseudocode Track (`index.rst`)</strong>: Tightened, fact-oriented enunciations, formal <code class="docutils literal notranslate"><span class="pre">given</span></code> / <code class="docutils literal notranslate"><span class="pre">construct</span></code> / <code class="docutils literal notranslate"><span class="pre">prove</span></code> signatures, interactive vector diagrams, and step-by-step deductive chains with <code class="docutils literal notranslate"><span class="pre">∵</span> <span class="pre">G.&lt;k&gt;</span></code> justification links.</p></li>
-        <li><p><strong>Video Track (`video.rst`)</strong>: High-definition construction playback demonstrating geometric derivations.</p></li>
-        <li><p><strong>Code Track (`code.rst`)</strong>: Callable Python functions, standalone reproducible construction scripts using <code class="docutils literal notranslate"><span class="pre">geometor.model</span></code>, and dependency DAG diagrams.</p></li>
-        <li><p><strong>Heath Track (`heath.rst`)</strong>: Sir Thomas Little Heath’s classical English translation enriched with GEOMETOR symbolic indications and cross-links to <a class="reference external" href="https://geometor.github.io/euclid">GEOMETOR • euclid</a>.</p></li>
-        </ol>
-        </li>
-        <li><p><a class="reference internal" href="persons.html"><span class="doc">People</span></a>: Biographical register documenting primary authors, translators, and ancient/modern commentators, including <a class="person-ref" id="occ-person-euclid-1" href="persons.html#person-euclid" data-person="euclid" title="Euclid of Alexandria (fl. c. 300 BC) — Alexandrian Geometer; Author of the Elements">Euclid of Alexandria</a>, <a class="person-ref" id="occ-person-heath-1" href="persons.html#person-heath" data-person="heath" title="Person: heath">Sir Thomas Little Heath</a>, <a class="person-ref" id="occ-person-proclus-1" href="persons.html#person-proclus" data-person="proclus" title="Proclus Lycius Diadochus (412 – 485 AD) — Neoplatonic Philosopher &amp; Commentator on Euclid Book I">Proclus Diadochus</a>, <a class="person-ref" id="occ-person-pappus-1" href="persons.html#person-pappus" data-person="pappus" title="Pappus of Alexandria (fl. c. 320 AD) — Alexandrian Geometer &amp; Commentator">Pappus of Alexandria</a>, <a class="person-ref" id="occ-person-heiberg-1" href="persons.html#person-heiberg" data-person="heiberg" title="Johan Ludvig Heiberg (1854 – 1928) — Danish Classical Philologist &amp; Editor of the Critical Greek Text of Euclid">Johan Ludvig Heiberg</a>, and <a class="person-ref" id="occ-person-phi-architect-1" href="persons.html#person-phi-architect" data-person="phi-architect" title="Person: phi-architect">phi ARCHITECT</a>.</p></li>
-        <li><p><a class="reference internal" href="bibliography.html"><span class="doc">Bibliography</span></a>: Catalogue of Greek critical editions (Heiberg’s Teubner text), English editions (Heath, Simson), archival manuscript witnesses (<em>Codex Vaticanus Graecus 190</em>, <em>Codex Bodleianus D’Orville 301</em>), and cited classical works.</p></li>
-        <li><p><a class="reference internal" href="usage/index.html"><span class="doc">Using This Edition (Reader’s Guide)</span></a>: Detailed walkthrough of track switching, interactive diagram element highlighting, search with term highlighting, and Python API graph queries.</p></li>
-        <li><p><a class="reference internal" href="design.html"><span class="doc">Design &amp; Symbolic Grammar</span></a>: Specification of GEOMETOR symbolic indications (segments, lines, circles, angles, polygons), step contracts, and composable functions.</p></li>
-        <li><p><a class="reference internal" href="book-notes.html"><span class="doc">Book Notes</span></a>: Structural overview and dependency notes across Books I–XIII.</p></li>
-        </ul>
-        <div class="toctree-wrapper compound">
-        </div>
-        </section>
         <hr class="docutils" />
         <section class="level-2" id="indices">
         <h2>Indices<a class="headerlink" href="#indices" title="Link to this heading">¶</a></h2>
@@ -121,16 +172,6 @@
       </div>
       <footer class="book-footer">
         <div class="book-footer-ornament">&#10086;</div>
-        <div class="book-footer-nav">
-          <div class="book-nav-prev">
-          </div>
-          <div class="book-nav-center">
-            <a class="book-toc-link" href="#">GEOMETOR • elements</a>
-          </div>
-          <div class="book-nav-next">
-            <a class="book-nav-btn" href="about/index.html" title="About"><span class="nav-label">About</span> &rarr;</a>
-          </div>
-        </div>
       </footer>
     </article>
   </main>
@@ -399,6 +440,7 @@
     <aside class="aside-types">
       <h3>Types</h3>
       <ul>
+        <li><a href="types/book.html">book</a></li>
         <li><a href="types/cn.html">cn</a></li>
         <li><a href="types/def.html">def</a></li>
         <li><a href="types/log.html">log</a></li>
