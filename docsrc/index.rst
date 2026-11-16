@@ -1,7 +1,12 @@
-GEOMETOR • elements
-===================
+=====================
+Constructive Elements
+=====================
 
-.. include:: intro.rst
+Symbolic dependency mapping, formal pseudocode, and G-Index generation (``G.1``–``G.601``) for Euclid's *Elements*.
+
+.. collection::
+   :type: book
+   :sort: order
 
 .. toctree::
    :maxdepth: 2

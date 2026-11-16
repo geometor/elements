@@ -16,5 +16,9 @@ repo_name = "elements"
 
 setup_globals(org, org_name, repo, repo_name)
 
+site_title = "Constructive Elements"
+project = site_title
+html_title = f"{site_title} • {org_name}"
+
 html_theme = "foundation"
 
