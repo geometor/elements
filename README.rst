@@ -3,6 +3,11 @@ GEOMETOR • elements
 
 **Visit the Online Archive:** https://geometor.github.io/elements/
 
+.. image:: docsrc/elements2/G.1/g1.svg
+   :alt: GEOMETOR • elements featured geometric construction
+   :target: https://geometor.github.io/elements/
+   :align: center
+
 **Elements 2.0 • Constructive G-Index (G.1–G.601) of Euclid's Elements • semantic digital archive**
 
 Mission
