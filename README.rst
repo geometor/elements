@@ -20,16 +20,6 @@ Catalogs in This Archive
 
 - `Elements 2.0 (G-Index) <https://geometor.github.io/elements/elements2/>`_ — Computable constructive dependency DAG, formal pseudocode, and exact symbolic proofs across all 601 Euclidean definitions, postulates, common notions, and propositions.
 
-Python Package & Modules
-------------------------
-
-The ``geometor-elements`` Python package (``import geometor.elements``) provides the executable symbolic geometry, construction, and compilation modules powering this archive:
-
-- ``g_index.py`` — Generate the G-Index for Euclid's Elements.
-- ``graph.py`` — Graph construction and semantic metadata extraction for GEOMETOR Elements.
-- ``pseudocode.py`` — Pseudocode, formal signature, and tightened enunciation generator for GEOMETOR Elements 2.0.
-
-See the `API Reference <https://geometor.github.io/elements/modules/>`_ for full module documentation.
 
 Repository Contents
 -------------------
