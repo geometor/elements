@@ -60,7 +60,7 @@
           <a href="elements2/index.html"  >Elements 2.0</a>
         </li>
         <li>
-          <a href="persons.html"  >People</a>
+          <a href="people/index.html"  >People</a>
         </li>
         <li>
           <a href="bibliography.html"  >Bibliography</a>
@@ -89,6 +89,16 @@
             <span class="book-crumb-current is-section-root" aria-current="page">Core Edition Gateways</span>
           </nav>
         </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="design.html" title="G-Index Design">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="modules/api/index.html" title="API Reference"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
       </header>
       <div class="content body book-content" role="main">
         <p><strong>Symbolic dependency mapping, formal pseudocode, and G-Index generation (`G.1`–`G.601`) for Euclid’s *Elements*.</strong></p>
@@ -105,7 +115,7 @@
         <li><p><strong>Heath Track (`heath.rst`)</strong>: Sir Thomas Little Heath’s classical English translation enriched with GEOMETOR symbolic indications and cross-links to <a class="reference external" href="https://geometor.github.io/euclid">GEOMETOR • euclid</a>.</p></li>
         </ol>
         </li>
-        <li><p><a class="reference internal" href="persons.html"><span class="doc">People</span></a>: Biographical register documenting primary authors, translators, and ancient/modern commentators, including <a class="person-ref" id="occ-person-euclid-1" href="persons.html#person-euclid" data-person="euclid" title="Euclid of Alexandria (fl. c. 300 BC) — Alexandrian Geometer; Author of the Elements">Euclid of Alexandria</a>, <a class="person-ref" id="occ-person-heath-1" href="persons.html#person-heath" data-person="heath" title="Person: heath">Sir Thomas Little Heath</a>, <a class="person-ref" id="occ-person-proclus-1" href="persons.html#person-proclus" data-person="proclus" title="Proclus Lycius Diadochus (412 – 485 AD) — Neoplatonic Philosopher &amp; Commentator on Euclid Book I">Proclus Diadochus</a>, <a class="person-ref" id="occ-person-pappus-1" href="persons.html#person-pappus" data-person="pappus" title="Pappus of Alexandria (fl. c. 320 AD) — Alexandrian Geometer &amp; Commentator">Pappus of Alexandria</a>, <a class="person-ref" id="occ-person-heiberg-1" href="persons.html#person-heiberg" data-person="heiberg" title="Johan Ludvig Heiberg (1854 – 1928) — Danish Classical Philologist &amp; Editor of the Critical Greek Text of Euclid">Johan Ludvig Heiberg</a>, and <a class="person-ref" id="occ-person-phi-architect-1" href="persons.html#person-phi-architect" data-person="phi-architect" title="Person: phi-architect">phi ARCHITECT</a>.</p></li>
+        <li><p><a class="reference internal" href="people/index.html"><span class="doc">People</span></a>: Biographical register documenting primary authors, translators, and ancient/modern commentators, including <a class="person-ref" id="occ-person-euclid-1" href="people/euclid.html#person-euclid" data-person="euclid" title="Euclid of Alexandria (fl. c. 300 BC) — Alexandrian Geometer; Author of the Elements">Euclid of Alexandria</a>, <a class="person-ref" id="occ-person-heath-1" href="people/heath.html#person-heath" data-person="heath" title="Person: heath">Sir Thomas Little Heath</a>, <a class="person-ref" id="occ-person-proclus-1" href="people/proclus.html#person-proclus" data-person="proclus" title="Proclus Lycius Diadochus (412 – 485 AD) — Neoplatonic Philosopher &amp; Commentator on Euclid Book I">Proclus Diadochus</a>, <a class="person-ref" id="occ-person-pappus-1" href="people/pappus.html#person-pappus" data-person="pappus" title="Pappus of Alexandria (fl. c. 320 AD) — Alexandrian Geometer &amp; Commentator">Pappus of Alexandria</a>, <a class="person-ref" id="occ-person-heiberg-1" href="people/heiberg.html#person-heiberg" data-person="heiberg" title="Johan Ludvig Heiberg (1854 – 1928) — Danish Classical Philologist &amp; Editor of the Critical Greek Text of Euclid">Johan Ludvig Heiberg</a>, and <a class="person-ref" id="occ-person-phi-architect-1" href="people/phi-architect.html#person-phi-architect" data-person="phi-architect" title="Person: phi-architect">phi ARCHITECT</a>.</p></li>
         <li><p><a class="reference internal" href="bibliography.html"><span class="doc">Bibliography</span></a>: Catalogue of Greek critical editions (Heiberg’s Teubner text), English editions (Heath, Simson), archival manuscript witnesses (<em>Codex Vaticanus Graecus 190</em>, <em>Codex Bodleianus D’Orville 301</em>), and cited classical works.</p></li>
         <li><p><a class="reference internal" href="usage/index.html"><span class="doc">Using This Edition (Reader’s Guide)</span></a>: Detailed walkthrough of track switching, interactive diagram element highlighting, search with term highlighting, and Python API graph queries.</p></li>
         <li><p><a class="reference internal" href="design.html"><span class="doc">Design &amp; Symbolic Grammar</span></a>: Specification of GEOMETOR symbolic indications (segments, lines, circles, angles, polygons), step contracts, and composable functions.</p></li>
@@ -118,11 +128,13 @@
         <div class="book-footer-ornament">&#10086;</div>
         <div class="book-footer-nav">
           <div class="book-nav-prev">
+            <a class="book-nav-btn" href="design.html" title="G-Index Design">&larr; <span class="nav-label">Prev</span></a>
           </div>
           <div class="book-nav-center">
             <a class="book-toc-link" href="index.html">Constructive Elements</a>
           </div>
           <div class="book-nav-next">
+            <a class="book-nav-btn" href="modules/api/index.html" title="API Reference"><span class="nav-label">Next</span> &rarr;</a>
           </div>
         </div>
       </footer>
@@ -398,6 +410,7 @@
         <li><a href="types/def.html">def</a></li>
         <li><a href="types/log.html">log</a></li>
         <li><a href="types/orphans.html">orphans</a></li>
+        <li><a href="types/person.html">person</a></li>
         <li><a href="types/post.html">post</a></li>
         <li><a href="types/prop.html">prop</a></li>
       </ul>
@@ -425,6 +438,7 @@
   <script src="_static/doctools.js?v=fd6eb6e6"></script>
   <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="_static/js/collection_directory.js?v=f242906c"></script>
   <script src="_static/js/geometor_interactive.js?v=b2892320"></script>
   <script src="_static/js/search_highlight.js"></script>
 
