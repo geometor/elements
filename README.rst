@@ -18,7 +18,7 @@ Mission
 Catalogs in This Archive
 ------------------------
 
-- **`Elements 2.0 (G-Index) <https://geometor.github.io/elements/elements2/>`_** — Computable constructive dependency DAG, formal pseudocode, and exact symbolic proofs across all 601 Euclidean definitions, postulates, common notions, and propositions.
+- `Elements 2.0 (G-Index) <https://geometor.github.io/elements/elements2/>`_ — Computable constructive dependency DAG, formal pseudocode, and exact symbolic proofs across all 601 Euclidean definitions, postulates, common notions, and propositions.
 
 Repository Contents
 -------------------
