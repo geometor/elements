@@ -1,13 +1,13 @@
+.. image:: docsrc/_static/logo.png
+   :alt: GEOMETOR • elements Medallion
+   :target: https://geometor.github.io/elements/
+   :width: 150px
+   :align: right
+
 GEOMETOR • elements
 ===================
 
 **Visit the Online Archive:** https://geometor.github.io/elements/
-
-.. image:: docsrc/_static/logo.png
-   :alt: GEOMETOR • elements Medallion
-   :target: https://geometor.github.io/elements/
-   :width: 180px
-   :align: center
 
 .. image:: docsrc/elements2/G.1/g1.svg
    :alt: GEOMETOR • elements featured geometric construction
