@@ -7,6 +7,9 @@
 :book_title: Elements 2.0 (G-Index)
 :book_subtitle: Computable Constructive Dependency DAG & Exact Symbolic Proofs for Euclid's Elements
 :author: Euclid of Alexandria
+:year: -300
+:year_label: ca. 300 BCE
+:edition_year: 2026
 :excerpt: Computable constructive dependency DAG and exact symbolic proofs for Euclid's Elements.
 
 Elements 2.0
