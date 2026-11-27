@@ -183,11 +183,11 @@ Let the square on :g:`/ N / <g1:/ N />` be equal to that by which the square on 
 
 .. assertion::
 
-   therefore the square on :g:`/ B K / <g1:/ B K />` has to the square on :g:`/ K M / <g1:/ K M />` the ratio which $5$ has to $1$.
+   therefore the square on :g:`/ B K / <g1:/ B K />` has to the square on :g:`/ K M / <g1:/ K M />` the ratio which :math:`5` has to :math:`1`.
 
 .. assertion::
 
-   Therefore, :term:`*convertendo* <G.200>`, the square on :g:`/ B K / <g1:/ B K />` has to the square on :g:`/ N / <g1:/ N />` the ratio which $5$ has to $4$ :just:`[G.201] <G.201>`, and this is not the ratio which a square number has to a square number; therefore :g:`/ B K / <g1:/ B K />` is incommensurable with :g:`/ N / <g1:/ N />`; :just:`[G.381] <G.381>` therefore the square on :g:`/ B K / <g1:/ B K />` is greater than the square on :g:`/ K M / <g1:/ K M />` by the square on a straight line incommensurable with :g:`/ B K / <g1:/ B K />`.
+   Therefore, :term:`*convertendo* <G.200>`, the square on :g:`/ B K / <g1:/ B K />` has to the square on :g:`/ N / <g1:/ N />` the ratio which :math:`5` has to :math:`4` :just:`[G.201] <G.201>`, and this is not the ratio which a square number has to a square number; therefore :g:`/ B K / <g1:/ B K />` is incommensurable with :g:`/ N / <g1:/ N />`; :just:`[G.381] <G.381>` therefore the square on :g:`/ B K / <g1:/ B K />` is greater than the square on :g:`/ K M / <g1:/ K M />` by the square on a straight line incommensurable with :g:`/ B K / <g1:/ B K />`.
 
 .. subclause::
 

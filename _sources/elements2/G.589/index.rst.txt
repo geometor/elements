@@ -219,11 +219,11 @@ G.589 circle diameter rational
 
 .. step:: assert
 
-   the square on :g:`/ B K / <g1:/ B K />` has to the square on :g:`/ K M / <g1:/ K M />` the ratio which $5$ has to $1$
+   the square on :g:`/ B K / <g1:/ B K />` has to the square on :g:`/ K M / <g1:/ K M />` the ratio which :math:`5` has to :math:`1`
 
 .. step:: assert ∵ whole_whole_part, squares_segments_commensurable <G.201, G.381>
 
-   *:term:`convertendo <G.200>`*, the square on :g:`/ B K / <g1:/ B K />` has to the square on :g:`/ N / <g1:/ N />` the ratio which $5$ has to $4$, and this is not the ratio which a square number has to a square number; therefore :g:`/ B K / <g1:/ B K />` is incommensurable with :g:`/ N / <g1:/ N />`; therefore the square on :g:`/ B K / <g1:/ B K />` > the square on :g:`/ K M / <g1:/ K M />` by the square on a segment incommensurable with :g:`/ B K / <g1:/ B K />`
+   *:term:`convertendo <G.200>`*, the square on :g:`/ B K / <g1:/ B K />` has to the square on :g:`/ N / <g1:/ N />` the ratio which :math:`5` has to :math:`4`, and this is not the ratio which a square number has to a square number; therefore :g:`/ B K / <g1:/ B K />` is incommensurable with :g:`/ N / <g1:/ N />`; therefore the square on :g:`/ B K / <g1:/ B K />` > the square on :g:`/ K M / <g1:/ K M />` by the square on a segment incommensurable with :g:`/ B K / <g1:/ B K />`
 
 .. step:: assert
 

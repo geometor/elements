@@ -72,27 +72,29 @@ G.313 there many numbers
 
 .. step:: assert
 
-   If $a, b, c \dots$ be a series in geometrical progression, then
+   If :math:`a, b, c \dots` be a series in geometrical progression, then
 
 .. step:: assert
 
-   $$\left. \begin{array}{l} a^2,\
+   .. math::
 
-.. step:: assert
+      \left. \begin{array}{l} a^2,\
 
-   B^2,\
+      .. step:: assert
 
-.. step:: assert
+      B^2,\
 
-   C^2 \dots \\ a^3,\
+      .. step:: assert
 
-.. step:: assert
+      C^2 \dots \\ a^3,\
 
-   B^3,\
+      .. step:: assert
 
-.. step:: assert
+      B^3,\
 
-   C^3 \dots \end{array} \right\} \text{are also in geometrical progression.}$$
+      .. step:: assert
+
+      C^3 \dots \end{array} \right\} \text{are also in geometrical progression.}
 
 .. step:: assert
 
@@ -100,7 +102,7 @@ G.313 there many numbers
 
 .. step:: assert
 
-   Euclid forms, besides the :term:`squares <G.63>` and cubes of the given numbers, the products $ab$, $a^2b$, $ab^2$, $bc$, $b^2c$, $bc^2$. When he says that “we prove in manner similar to the foregoing,” he indicates successive uses of VII. 17, 18 as in VIII. 12
+   Euclid forms, besides the :term:`squares <G.63>` and cubes of the given numbers, the products :math:`ab`, :math:`a^2b`, :math:`ab^2`, :math:`bc`, :math:`b^2c`, :math:`bc^2`. When he says that “we prove in manner similar to the foregoing,” he indicates successive uses of VII. 17, 18 as in VIII. 12
 
 .. step:: assert
 
@@ -108,27 +110,29 @@ G.313 there many numbers
 
 .. step:: assert
 
-   To prove that $a^n, b^n, c^n \dots$ are in geometrical progression
+   To prove that :math:`a^n, b^n, c^n \dots` are in geometrical progression
 
 .. step:: assert
 
-   Form all the means between $a^n, b^n$, and set out the series
+   Form all the means between :math:`a^n, b^n`, and set out the series
 
 .. step:: assert
 
-   $$a^n,\quad a^{n-1}b,\quad a^{n-2}b^2\
+   .. math::
+
+      a^n,\quad a^{n-1}b,\quad a^{n-2}b^2\
+
+      .. step:: assert
+
+      \dots\
+
+      .. step:: assert
+
+      Ab^{n-1},\quad b^n.
 
 .. step:: assert
 
-   \dots\
-
-.. step:: assert
-
-   Ab^{n-1},\quad b^n.$$
-
-.. step:: assert
-
-   The common ratio of one term to the next is $a : b$
+   The common ratio of one term to the next is :math:`a : b`
 
 .. step:: assert
 
@@ -136,19 +140,21 @@ G.313 there many numbers
 
 .. step:: assert
 
-   $$b^n,\quad b^{n-1}c,\quad b^{n-2}c^2\
+   .. math::
+
+      b^n,\quad b^{n-1}c,\quad b^{n-2}c^2\
+
+      .. step:: assert
+
+      \dots\
+
+      .. step:: assert
+
+      Bc^{n-1},\quad c^n,
 
 .. step:: assert
 
-   \dots\
-
-.. step:: assert
-
-   Bc^{n-1},\quad c^n,$$
-
-.. step:: assert
-
-   The common ratio of which is $b : c$
+   The common ratio of which is :math:`b : c`
 
 .. step:: assert
 
@@ -160,7 +166,9 @@ G.313 there many numbers
 
 .. step:: assert
 
-   $$a : b = b : c = \dots$$
+   .. math::
+
+      a : b = b : c = \dots
 
 .. step:: assert
 
@@ -168,7 +176,7 @@ G.313 there many numbers
 
 .. step:: assert
 
-   The number of terms in each is the same, namely $(n + 1)$
+   The number of terms in each is the same, namely :math:`(n + 1)`
 
 .. step:: assert
 
@@ -176,7 +184,9 @@ G.313 there many numbers
 
 .. step:: conclude
 
-   $$a^n : b^n = b^n : c^n = c^n : d^n = \dots$$
+   .. math::
+
+      a^n : b^n = b^n : c^n = c^n : d^n = \dots
 
 Dependency Graph
 ----------------
