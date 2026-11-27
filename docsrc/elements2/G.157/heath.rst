@@ -16,7 +16,7 @@ G.157 circumscribe a circle about a triangle — Heath
 
 Let :g:`< A B C > <g1:< A B C >>` be the given triangle;
 thus it is required to :term:`circumscribe a circle about <G.155>` the given
-triangle $ABC$.
+triangle :math:`ABC`.
 
 .. picture:: g1.svg
    :alt: Proposition 5 diagrams

@@ -14,7 +14,7 @@ G.198 magnitudes proportional componendo — Heath
 
    If magnitudes be :term:`proportional <G.180>` :term:`componendo <G.196>`, they will also be proportional separando.
 
-Let $AB$, :g:`/ E B / <g1:/ E B />`, :g:`/ C D / <g1:/ C D />`, :g:`/ F D / <g1:/ F D />` be magnitudes proportional *componendo*, so that, as :g:`/ A B / <g1:/ A B />` is to :g:`/ E B / <g1:/ E B />`, so is :g:`/ C D / <g1:/ C D />` to :g:`/ F D / <g1:/ F D />`;
+Let :math:`AB`, :g:`/ E B / <g1:/ E B />`, :g:`/ C D / <g1:/ C D />`, :g:`/ F D / <g1:/ F D />` be magnitudes proportional *componendo*, so that, as :g:`/ A B / <g1:/ A B />` is to :g:`/ E B / <g1:/ E B />`, so is :g:`/ C D / <g1:/ C D />` to :g:`/ F D / <g1:/ F D />`;
 
 I say that they will also be proportional :term:`*separando* <G.197>`, that is, as :g:`/ A E / <g1:/ A E />` is to :g:`/ E B / <g1:/ E B />`, so is :g:`/ C F / <g1:/ C F />` to :g:`/ F D / <g1:/ F D />`.
 

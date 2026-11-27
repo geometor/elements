@@ -83,7 +83,9 @@ G.495 medial area rational
 
 .. step:: assert
 
-   $$\sqrt{\sqrt{k} \cdot \rho^2 - \lambda\rho^2}.$$
+   .. math::
+
+      \sqrt{\sqrt{k} \cdot \rho^2 - \lambda\rho^2}.
 
 .. step:: assert
 
@@ -91,19 +93,23 @@ G.495 medial area rational
 
 .. step:: assert
 
-   $$\sigma u = \sqrt{k} \cdot \rho^2,$$
+   .. math::
+
+      \sigma u = \sqrt{k} \cdot \rho^2,
 
 .. step:: assert
 
-   $$\sigma v = \lambda\rho^2.$$
+   .. math::
+
+      \sigma v = \lambda\rho^2.
 
 .. step:: assert
 
-   $\sigma u$ being medial and $\sigma v$ rational, $u$ is rational and $\smile \sigma$, while $v$ is rational and $\mathbin{\Cap} \sigma$
+   :math:`\sigma u` being medial and :math:`\sigma v` rational, :math:`u` is rational and :math:`\smile \sigma`, while :math:`v` is rational and :math:`\mathbin{\Cap} \sigma`
 
 .. step:: assert
 
-   as before, $u, v$ are rational and $\sim$, so that $(u - v)$ is an apotome
+   as before, :math:`u, v` are rational and :math:`\sim`, so that :math:`(u - v)` is an apotome
 
 .. step:: assert
 
@@ -111,11 +117,11 @@ G.495 medial area rational
 
 .. step:: assert
 
-   (1) $\sqrt{u^2 - v^2} \mathbin{\Cap} u$, or (2) $\sqrt{u^2 - v^2} \smile u$, while in both cases $v$ is commensurable with $\sigma$
+   (1) :math:`\sqrt{u^2 - v^2} \mathbin{\Cap} u`, or (2) :math:`\sqrt{u^2 - v^2} \smile u`, while in both cases :math:`v` is commensurable with :math:`\sigma`
 
 .. step:: conclude ∵ area_contained_rational_x_92, area_contained_rational_x_95 <G.478, G.481>
 
-   $(u - v)$ is either (1) a :term:`second apotome <G.456>`, or (2) a :term:`fifth apotome <G.473>`, and hence in case (1) $\sqrt{\sigma (u - v)}$ is the *first apotome of a medial segment*, and in case (2) $\sqrt{\sigma (u - v)}$ is the "*side" of a medial, minus a rational, area*
+   :math:`(u - v)` is either (1) a :term:`second apotome <G.456>`, or (2) a :term:`fifth apotome <G.473>`, and hence in case (1) :math:`\sqrt{\sigma (u - v)}` is the *first apotome of a medial segment*, and in case (2) :math:`\sqrt{\sigma (u - v)}` is the "*side" of a medial, minus a rational, area*
 
 Dependency Graph
 ----------------

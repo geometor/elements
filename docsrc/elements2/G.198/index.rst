@@ -28,7 +28,7 @@ G.198 magnitudes proportional componendo
 .. signature:: theorem
 
    | :fn:`magnitudes_proportional_componendo <G.198>`\ (:g:`/ E B / <g1:/ E B />`, :g:`/ C D / <g1:/ C D />`, :g:`/ F D / <g1:/ F D />`, :g:`/ A B / <g1:/ A B />`)
-   | **given** $AB$, :g:`/ E B / <g1:/ E B />`, :g:`/ C D / <g1:/ C D />`, :g:`/ F D / <g1:/ F D />` be magnitudes proportional *componendo*, so that, as :g:`/ A B / <g1:/ A B />` is to :g:`/ E B / <g1:/ E B />`, so is :g:`/ C D / <g1:/ C D />` to :g:`/ F D / <g1:/ F D />`
+   | **given** :math:`AB`, :g:`/ E B / <g1:/ E B />`, :g:`/ C D / <g1:/ C D />`, :g:`/ F D / <g1:/ F D />` be magnitudes proportional *componendo*, so that, as :g:`/ A B / <g1:/ A B />` is to :g:`/ E B / <g1:/ E B />`, so is :g:`/ C D / <g1:/ C D />` to :g:`/ F D / <g1:/ F D />`
    | **prove** they will also be proportional *separando*, that is, as :g:`/ A E / <g1:/ A E />` is to :g:`/ E B / <g1:/ E B />`, so is :g:`/ C F / <g1:/ C F />` to :g:`/ F D / <g1:/ F D />`
 
 .. picture:: g1.svg
@@ -36,7 +36,7 @@ G.198 magnitudes proportional componendo
 
 .. step:: given
 
-   $AB$, :g:`/ E B / <g1:/ E B />`, :g:`/ C D / <g1:/ C D />`, :g:`/ F D / <g1:/ F D />` be magnitudes proportional *componendo*, so that, as :g:`/ A B / <g1:/ A B />` is to :g:`/ E B / <g1:/ E B />`, so is :g:`/ C D / <g1:/ C D />` to :g:`/ F D / <g1:/ F D />`
+   :math:`AB`, :g:`/ E B / <g1:/ E B />`, :g:`/ C D / <g1:/ C D />`, :g:`/ F D / <g1:/ F D />` be magnitudes proportional *componendo*, so that, as :g:`/ A B / <g1:/ A B />` is to :g:`/ E B / <g1:/ E B />`, so is :g:`/ C D / <g1:/ C D />` to :g:`/ F D / <g1:/ F D />`
 
 .. step:: construct
 

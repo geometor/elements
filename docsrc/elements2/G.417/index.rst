@@ -60,19 +60,23 @@ G.417 bimedial segment divided
 
 .. step:: assert
 
-   $$x + y = x' + y',$$
+   .. math::
+
+      x + y = x' + y',
 
 .. step:: assert
 
-   $x', y'$ are more nearly equal than $x, y$, we have as before
+   :math:`x', y'` are more nearly equal than :math:`x, y`, we have as before
 
 .. step:: assert
 
-   $$(x^2 + y^2) - (x'^2 + y'^2) = 2x'y' - 2xy.$$
+   .. math::
+
+      (x^2 + y^2) - (x'^2 + y'^2) = 2x'y' - 2xy.
 
 .. step:: assert
 
-   But, from the given properties of $x, y$, and $x', y'$, it follows that $2xy, 2x'y'$ are *rational*, and $(x^2 + y^2), (x'^2 + y'^2)$ medial, areas
+   But, from the given properties of :math:`x, y`, and :math:`x', y'`, it follows that :math:`2xy, 2x'y'` are *rational*, and :math:`(x^2 + y^2), (x'^2 + y'^2)` medial, areas
 
 .. step:: conclude
 
